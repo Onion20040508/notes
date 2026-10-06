@@ -20,7 +20,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > [!remark] Remark: What Quotient Spaces Represent
 > The quotient construction is topology's version of “gluing” and “collapsing.” Given a space $X$ and an equivalence relation $\sim$, we declare certain points to be “the same” and ask: what topology does the resulting space inherit?
 >
-> This is arguably the most powerful construction in topology. Circles, tori, projective spaces, and spheres all arise as quotient spaces. But it is also the *trickiest*: the quotient topology can behave unexpectedly. A quotient map need not be open (the image of an open set need not be open), and quotient spaces of Hausdorff spaces can fail to be Hausdorff. Developing intuition for when quotients are well-behaved is a recurring theme—particularly important when computing fundamental groups in the second half of this course.
+> This is arguably the most powerful construction in topology. Circles, tori, projective spaces, and spheres all arise as quotient spaces. But it is also the *trickiest*: the quotient topology can behave unexpectedly. A quotient map need not be open (the image of an open set need not be open), and quotient spaces of Hausdorff spaces can fail to be Hausdorff. Developing intuition for when quotients are well-behaved is a recurring theme—particularly important when computing [[§23 The Fundamental Group#^def-23-2|fundamental groups]] in the second half of this course.
 
 ^rem-12-1
 

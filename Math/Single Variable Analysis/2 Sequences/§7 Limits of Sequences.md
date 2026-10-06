@@ -135,7 +135,7 @@ The first property of limits — and our first theorem with a real proof about t
 > [!proof]+ Proof
 > Suppose not: $s \neq t$. Then $s - t \neq 0$, hence $|s - t| > 0$. We look for a contradiction.
 >
-> Take $\varepsilon$ with $0 < \varepsilon < \tfrac12 |s - t|$. By the definition of $s_n \to s$, there exists $N_1$ such that $|s_n - s| < \varepsilon$ for $n \geq N_1$. Similarly, there exists $N_2$ such that $|s_n - t| < \varepsilon$ for $n \geq N_2$. Take $N = \max\{N_1, N_2\}$; then for $n \geq N$ *both* inequalities hold. By the [[Triangle inequality|triangle inequality]], for any such $n$,
+> Take $\varepsilon$ with $0 < \varepsilon < \tfrac12 |s - t|$. By the definition of $s_n \to s$, there exists $N_1$ such that $|s_n - s| < \varepsilon$ for $n \geq N_1$. Similarly, there exists $N_2$ such that $|s_n - t| < \varepsilon$ for $n \geq N_2$. Take $N = \max\{N_1, N_2\}$; then for $n \geq N$ *both* inequalities hold. By the [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]], for any such $n$,
 >
 > $$
 > |s - t| = |(s - s_n) - (t - s_n)| \leq |s - s_n| + |t - s_n| < \varepsilon + \varepsilon = 2\varepsilon < |s - t|.

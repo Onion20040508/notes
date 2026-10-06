@@ -11,7 +11,7 @@ tags: [chapter, calculus]
 
 **Builds on:** [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (1), [[· 5 Integrals|5 Integrals]] (12), [[· 7 Techniques of Integration|7 Techniques of Integration]] (1)
 **Used by:** [[· 7 Techniques of Integration|7 Techniques of Integration]] (1), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (3), [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (1), [[· 15 Multiple Integrals|15 Multiple Integrals]] (4), [[· 17 Background from the Appendices|17 Background from the Appendices]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Measure Theory]] (1), [[Multivariable Analysis]] (3)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Measure Theory]] (2), [[Multivariable Analysis]] (3), [[Ordinary Differential Equations]] (1)
 
 ## Sections
 - [[§39 Areas Between Curves]] — Stewart 6.1

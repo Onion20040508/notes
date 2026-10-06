@@ -17,7 +17,6 @@ tags: [logic-and-proofs, hub]
 
 ## Used in (Logic and Proofs)
 - [[§12★ Counting Functions and Subsets#^ex-12-5|Example §12.5: Derangements]]
-- [[§12★ Counting Functions and Subsets#^cor-12-11|Corollary §12.11: The Row Sum Again]]
 
 ## Connections
 - See [[§10 Counting]] for context and examples.

@@ -168,7 +168,7 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 *Uses:* [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§16 The Euclidean Algorithm#^lem-16-1|§16.1]], [[§16 The Euclidean Algorithm#^lem-16-2|§16.2]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]] (induction)
 
 > [!remark]- Connections
-> - The gcd in group theory: [[§8 Invertibility and Unit Groups#^def-8-1|493 Def. §8.1]]. There the algorithm, run backwards, computes an inverse modulo $26$: [[§8 Invertibility and Unit Groups#^ex-8-3|493 Ex. §8.3]].
+> - The gcd in group theory: [[§8 Invertibility and Unit Groups#^def-8-1|493 Def. §8.1]]. There the algorithm, run backwards, computes an [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|inverse]] modulo $26$: [[§8 Invertibility and Unit Groups#^ex-8-3|493 Ex. §8.3]].
 
 > [!example] Example §16.3: Four gcd Computations
 > Applying the Euclidean algorithm:

@@ -152,7 +152,7 @@ Here $\mathbb{F}$ is regarded as a one-dimensional linear space over itself, so 
 ^ex-2-2
 
 > [!remark]- Connections
-> - The finite-dimensional Riesz representation: [[Riesz representation theorem|LADR 6.42]]; for bounded functionals on a Hilbert space: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]].
+> - The finite-dimensional Riesz representation: [[Riesz representation theorem|LADR 6.42]]; for bounded functionals on a [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|Hilbert space]]: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]].
 
 > [!remark] Remark: Why Abstract Tools are Needed
 > On $\mathbb{R}^n$ linear functionals are completely explicit because a basis is available. On a general linear space $X$ there is no such description: we do not even know the dimension, and there is no canonical way to write down a linear functional. The [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach theorem]] below is the basic tool for *constructing* linear functionals on a general $X$.

@@ -19,7 +19,6 @@ tags: [ordinary-differential-equations, hub]
 - [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-1|Proposition §8.1: Solution of the Exponential Growth Model]]
 - [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|Theorem §14.8: Abel's Theorem]]
 - [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|Theorem §30.3: Abel's Theorem]]
-- [[§34★ Repeated Eigenvalues#^ex-34-3|Example §34.3: The Jordan Form of A and exp(Jt)]]
 
 ## Connections
 - Rigorous ingredients: the antiderivative $\int_{t_0}^t \mu g\,ds$ of a continuous function is [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II), and "same derivative on an interval implies they differ by a constant" is [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]]. The integrating factor itself appears in 451 as a trick for Rolle's Theorem: [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]].

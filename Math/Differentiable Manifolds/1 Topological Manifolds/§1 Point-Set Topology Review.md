@@ -227,7 +227,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]]
 
 > [!remark]- Connections
-> - The same argument in 590: [[§18 Countability Axioms#^rem-18-2|590 §18, remark after Def. 18.3]]; it is part (1) of [[§1 Point-Set Topology Review#^prop-1-3|§1.3]] with a countable basis.
+> - The same argument in 590: [[§18 Countability Axioms#^rem-18-2|590 §18, remark after Def. §18.3]]; it is part (1) of [[§1 Point-Set Topology Review#^prop-1-3|§1.3]] with a countable basis.
 
 > [!remark] Remark
 > The contrapositive is the useful direction: to prove a space is *not* second countable it suffices to exhibit one point at which it is not first countable. That is how [[§4 Quotient Spaces and Open Maps#^ex-4-4|Example §4.4]] below shows a quotient of $\mathbb{R}$ fails second countability. The converse of the proposition is false: $\mathbb{R}$ with the discrete topology ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]) is first countable—$\{\{x\}\}$ is a one-element basis of neighborhoods at $x$—but not second countable.

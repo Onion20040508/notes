@@ -8,8 +8,8 @@ tags: [chapter, measure-theory]
 ↑ [[Measure Theory]]
 
 **Builds on:** [[· 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (7), [[· 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (16)
-**Used by:** [[· 4 Integration Theory|4 Integration Theory]] (59), [[· 5 Differentiation and the FTC|5 Differentiation and the FTC]] (26), [[· 6 Lᵖ Spaces|6 Lᵖ Spaces]] (9)
-**Builds on (other subjects):** [[Single Variable Analysis]] (19), [[Topology]] (6)
+**Used by:** [[· 4 Integration Theory|4 Integration Theory]] (59), [[· 5 Differentiation and the FTC|5 Differentiation and the FTC]] (26), [[· 6 Lᵖ Spaces|6 Lᵖ Spaces]] (10)
+**Builds on (other subjects):** [[Single Variable Analysis]] (19), [[Topology]] (6), [[Multivariable Analysis]] (3)
 
 ## Sections
 - [[§9 Lebesgue Outer Measure]]

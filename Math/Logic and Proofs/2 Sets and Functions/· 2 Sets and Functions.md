@@ -10,8 +10,8 @@ tags: [chapter, logic-and-proofs]
 *Eccles, Chapters 6–9.*
 
 **Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (20)
-**Used by:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (2), [[· 3 Numbers and Counting|3 Numbers and Counting]] (17), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (5), [[· 6 Prime Numbers|6 Prime Numbers]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (8), [[Linear Algebra]] (4), [[Group Theory]] (1), [[Measure Theory]] (7), [[Topology]] (1)
+**Used by:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (2), [[· 3 Numbers and Counting|3 Numbers and Counting]] (18), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (7), [[· 6 Prime Numbers|6 Prime Numbers]] (1)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (10), [[Linear Algebra]] (4), [[Group Theory]] (1), [[Measure Theory]] (7), [[Topology]] (1)
 
 ## Sections
 - [[§6 The Language of Set Theory]]

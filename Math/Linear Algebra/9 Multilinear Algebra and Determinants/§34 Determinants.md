@@ -133,7 +133,7 @@ tags: [linear-algebra]
 *Uses:* [[§9 Matrices#^ladr-3-43|3.43]]
 
 > [!remark]- Connections
-> - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]]; composed with permutation matrices it is the sign, [[The Sign Homomorphism]].
+> - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]]; composed with permutation matrices ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|493 Def. §20.5]]) it is the sign, [[The Sign Homomorphism]].
 > - Computational version: [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] ($\det AB=(\det A)(\det B)$).
 
 > [!theorem] Theorem 9.50: Invertible ⟺ nonzero determinant

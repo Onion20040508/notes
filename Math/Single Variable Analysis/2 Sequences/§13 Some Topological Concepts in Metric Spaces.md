@@ -9,7 +9,7 @@ tags: [real-analysis, math451]
 
 ## Metric Spaces
 
-When we defined convergence of sequences of real numbers, the crucial thing was the absolute value $|s_n - s|$: it measures *how close* $s_n$ is to $s$. As noted in §3, the absolute value gives a distance $d(a,b) = |a - b|$, whose triangle property $d(a,b) \leq d(a,c) + d(c,b)$ reflects the [[Triangle inequality|triangle inequality]] $|a+b| \leq |a| + |b|$. So the crucial structure is the notion of *distance*. Abstracting it gives the notion of a metric space.
+When we defined convergence of sequences of real numbers, the crucial thing was the absolute value $|s_n - s|$: it measures *how close* $s_n$ is to $s$. As noted in §3, the absolute value gives a distance $d(a,b) = |a - b|$, whose triangle property $d(a,b) \leq d(a,c) + d(c,b)$ reflects the [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]] $|a+b| \leq |a| + |b|$. So the crucial structure is the notion of *distance*. Abstracting it gives the notion of a metric space.
 
 > [!definition] Definition §13.1: Metric Space
 > A **metric space** is a set $X$ with a function $d: X \times X \to \mathbb{R}$ satisfying three conditions:
@@ -71,7 +71,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 > d(x,y) = \sqrt{(x_1 - y_1)^2 + \cdots + (x_n - y_n)^2}.
 > $$
 >
-> Again (1), (2) are easy and (3) is not (its proof goes through the Cauchy–Schwarz inequality; we defer it). When we identify $\mathbb{C} = \mathbb{R}^2$, this agrees with the distance on $\mathbb{C}$ above.
+> Again (1), (2) are easy and (3) is not (its proof goes through the [[Cauchy–Schwarz inequality]]; we defer it). When we identify $\mathbb{C} = \mathbb{R}^2$, this agrees with the distance on $\mathbb{C}$ above.
 
 ^ex-13-3
 

@@ -228,14 +228,14 @@ The procedure of [[§17 Nonhomogeneous Equations; Method of Undetermined Coeffic
 > | $P_n(t)e^{\alpha t}$ | $t^s(A_0t^n + A_1t^{n-1} + \cdots + A_n)e^{\alpha t}$ |
 > | $P_n(t)e^{\alpha t}\sin\beta t$ or $P_n(t)e^{\alpha t}\cos\beta t$ | $t^s\big[(A_0t^n + A_1t^{n-1} + \cdots + A_n)e^{\alpha t}\cos\beta t + (B_0t^n + B_1t^{n-1} + \cdots + B_n)e^{\alpha t}\sin\beta t\big]$ |
 >
-> Here $s$ is the smallest nonnegative integer ($s = 0$, $1$ or $2$) that ensures that no term in $Y_i(t)$ is a solution of the corresponding homogeneous equation. Equivalently, for the three cases, $s$ is the number of times $0$ is a root of the characteristic equation, $\alpha$ is a root of the characteristic equation, and $\alpha + i\beta$ is a root of the characteristic equation, respectively.
+> Here $s$ is the smallest nonnegative integer ($s = 0$, $1$ or $2$) that ensures that no term in $Y_i(t)$ is a solution of the corresponding homogeneous equation. Equivalently, for the three cases, $s$ is the number of times $0$ is a root of the [[§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4|characteristic equation]], $\alpha$ is a root of the characteristic equation, and $\alpha + i\beta$ is a root of the characteristic equation, respectively.
 >
 > *BDP: Table 3.5.1*
 
 ^thm-17-4
 
 > [!remark] Remark: Why It Works
-> BDP motivates the factor $t^s$ by its Example 3.5.5, $y'' - 3y' - 4y = 2e^{-t}$ (20). The guess $Y = Ae^{-t}$ gives $Y'' - 3Y' - 4Y = (A + 3A - 4A)e^{-t} = 0$, and $0 = 2e^{-t}$ is impossible. The reason: the roots of $r^2 - 3r - 4 = (r + 1)(r - 4)$ are $-1$ and $4$, so $e^{-t}$ solves the homogeneous equation, and no multiple of it can produce $2e^{-t}$. The first-order analog $y' + y = 2e^{-t}$ shows the way: with the integrating factor $e^t$, $(e^ty)' = 2$, so $y = 2te^{-t} + ce^{-t}$, and the particular part carries an extra factor $t$. Accordingly, try $Y = Ate^{-t}$: then $Y' = Ae^{-t} - Ate^{-t}$, $Y'' = -2Ae^{-t} + Ate^{-t}$, and
+> BDP motivates the factor $t^s$ by its Example 3.5.5, $y'' - 3y' - 4y = 2e^{-t}$ (20). The guess $Y = Ae^{-t}$ gives $Y'' - 3Y' - 4Y = (A + 3A - 4A)e^{-t} = 0$, and $0 = 2e^{-t}$ is impossible. The reason: the roots of $r^2 - 3r - 4 = (r + 1)(r - 4)$ are $-1$ and $4$, so $e^{-t}$ solves the homogeneous equation, and no multiple of it can produce $2e^{-t}$. The first-order analog $y' + y = 2e^{-t}$ shows the way: with the [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|integrating factor]] $e^t$, $(e^ty)' = 2$, so $y = 2te^{-t} + ce^{-t}$, and the particular part carries an extra factor $t$. Accordingly, try $Y = Ate^{-t}$: then $Y' = Ae^{-t} - Ate^{-t}$, $Y'' = -2Ae^{-t} + Ate^{-t}$, and
 >
 > $$
 > Y'' - 3Y' - 4Y = (-2A - 3A)e^{-t} + (A + 3A - 4A)te^{-t} = -5Ae^{-t} = 2e^{-t} ,

@@ -67,7 +67,7 @@ An ancient problem, solved completely by Brahmagupta in the seventh century: **g
 Positivity is not used: the same proof works for any integers $a, b$, not both zero, and any $c$ (Eccles Exercise 18.2 does a case with a minus sign; see [[§18★ Linear Diophantine Equations#^ex-18-4|Example §18.4]]). For instance, [[§4 Proof by Contradiction#^prop-4-1|Proposition §4.1]] (Eccles Proposition 4.1.1) showed that $14m + 20n = 101$ has no integer solutions, because $2$ divides $14m + 20n$ but not $101$. In the language of the theorem, $\gcd(14, 20) = 2 \nmid 101$.
 
 > [!example] Example §18.1: One Solution of 140m + 63n = 35
-> Applying the Euclidean algorithm to $140$ and $63$, and carrying the multipliers along as in [[§17 Consequences of the Euclidean Algorithm#^ex-17-1|Example §17.1]]:
+> Applying the [[§16 The Euclidean Algorithm#^thm-16-3|Euclidean algorithm]] to $140$ and $63$, and carrying the multipliers along as in [[§17 Consequences of the Euclidean Algorithm#^ex-17-1|Example §17.1]]:
 >
 > | $a_k$ | $= 140 \times m_k$ | $+\ 63 \times n_k$ | quotient |
 > |---|---|---|---|

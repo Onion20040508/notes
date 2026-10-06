@@ -20,7 +20,6 @@ tags: [complex-variables, hub]
 - [[§93 Argument Principle#^lem-93-3|Lemma §93.3: Finitely Many Zeros and Poles]]
 
 ## Used in (Complex Variables)
-- [[§82 Zeros of Analytic Functions#^ex-82-3|Example §82.3: Finitely Many Zeros and Poles in a Closed Region]]
 - [[§94 Rouché's Theorem#^thm-94-1|Theorem §94.1: Rouché's Theorem]]
 - [[§128★ Schwarz–Christoffel Transformation#^thm-128-4|Theorem §128.4: Schwarz–Christoffel Transformation]]
 

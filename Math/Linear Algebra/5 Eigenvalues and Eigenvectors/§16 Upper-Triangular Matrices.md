@@ -88,7 +88,7 @@ tags: [linear-algebra]
 ^ladr-5-40
 
 > [!remark] Remark: Cayley–Hamilton preview
-> The polynomial $(z-\lambda_1)\cdots(z-\lambda_n)$ is the characteristic polynomial; over $\C$ this is already Cayley–Hamilton ([[Cayley–Hamilton theorem|8.29]]).
+> The polynomial $(z-\lambda_1)\cdots(z-\lambda_n)$ is the [[§34 Determinants#^ladr-9-63|characteristic polynomial]]; over $\C$ this is already Cayley–Hamilton ([[Cayley–Hamilton theorem|8.29]]).
 
 > [!proof]+ Proof
 > Let $v_1,\dots,v_n$ be the basis. We show by induction on $k$ that $(T-\lambda_1I)\cdots(T-\lambda_kI)$ kills $v_1,\dots,v_k$. For $k=1$: $Tv_1=\lambda_1v_1$. For the step, $(T-\lambda_kI)v_k\in\Span(v_1,\dots,v_{k-1})$ (the diagonal entry cancels), which the first $k-1$ factors kill; and they kill $v_1,\dots,v_{k-1}$ already. Since the factors commute ([[§14 Invariant Subspaces#^ladr-5-17|5.17]]), adding more factors on the left keeps these vectors killed. For $k=n$ the product vanishes on a basis, hence is $0$.

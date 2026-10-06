@@ -9,7 +9,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (41), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (12), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (41), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (13), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (38), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (40), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (8)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (21), [[Multivariable Analysis]] (14)
 

@@ -157,7 +157,7 @@ The method is most useful for nonhomogeneous equations (from [[§23 Step Functio
 > 3. Nonhomogeneous equations are handled exactly like homogeneous ones; there is no need to solve the homogeneous equation first.
 > 4. The method works the same way for higher-order equations, provided the solution satisfies the conditions of [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]] for the appropriate $n$.
 >
-> The denominator $as^2 + bs + c$ in (16) is the characteristic polynomial of (14). Partial fractions require factoring it, so the transform does not avoid finding the roots of the characteristic equation (for higher-order equations this may require numerical approximation).
+> The denominator $as^2 + bs + c$ in (16) is the characteristic polynomial of (14). Partial fractions require factoring it, so the transform does not avoid finding the roots of the [[§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4|characteristic equation]] (for higher-order equations this may require numerical approximation).
 
 ^rem-22-1
 
@@ -332,7 +332,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 > [!remark]- Connections
 > - See also: [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (Heaviside's formula: when the denominator has only simple roots, real or complex, the inverse transform is $\sum_k \frac{q(r_k)}{p'(r_k)}e^{r_kt}$, with no constants to solve for).
-> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (part (a) proves the partial fraction decomposition by principal parts and Liouville's theorem) and [[§95★ Inverse Laplace Transforms#^rem-95-2|342 Remark: Method — Inverse Laplace Transforms by Residues]] (inverting a rational transform by residues).
+> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (part (a) proves the partial fraction decomposition by principal parts and [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Liouville's theorem]]) and [[§95★ Inverse Laplace Transforms#^rem-95-2|342 Remark: Method — Inverse Laplace Transforms by Residues]] (inverting a rational transform by residues).
 
 > [!example] Example §22.2: A Forced Undamped Oscillator
 > Solve $y'' + y = \sin(2t)$, $y(0) = 2$, $y'(0) = 1$. (19), (20)

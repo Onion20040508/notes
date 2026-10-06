@@ -22,7 +22,6 @@ tags: [applied-linear-algebra, hub]
 - [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|Corollary §40.8: The Double Complement]]
 - [[§43 The Gram–Schmidt Process#^thm-43-1|Theorem §43.1: The Gram–Schmidt Process]]
 - [[§46 Inner Product Spaces#^thm-46-2|Theorem §46.2: Orthogonal Bases and Projections in an Inner Product Space]]
-- [[§48★ Diagonalization of Symmetric Matrices#^ex-48-2|Example §48.2: A Repeated Eigenvalue]]
 - [[§51★ The Singular Value Decomposition#^thm-51-5|Theorem §51.5: Orthonormal Bases for the Four Fundamental Subspaces]]
 
 ## Connections

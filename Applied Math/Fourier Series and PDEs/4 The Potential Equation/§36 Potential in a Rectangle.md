@@ -167,7 +167,7 @@ $$
 > u\Big(\frac a2, \frac b2\Big) = \frac{8}{\pi^2}\sum_{n \text{ odd}}\frac{1}{n^2\cosh\big(\frac{n\pi b}{2a}\big)} \approx \begin{cases} 0.325, & b = a, \\ 0.070, & b = 2a, \\ 0.630, & b = a/2. \end{cases}
 > $$
 >
-> The terms decrease very fast: for $b = a$ the first term alone gives $0.323$. The center is a saddle point of $u$, as the maximum principle requires: $u$ increases toward the top and bottom edges, where the data are largest, and decreases toward the sides, where $u = 0$ (figure below).
+> The terms decrease very fast: for $b = a$ the first term alone gives $0.323$. The center is a saddle point of $u$, as the [[§39 Potential in a Disk#^thm-39-5|maximum principle]] requires: $u$ increases toward the top and bottom edges, where the data are largest, and decreases toward the sides, where $u = 0$ (figure below).
 >
 > *Powers: 4.2, Example; Exercises 4.2.2 and 4.2.3*
 

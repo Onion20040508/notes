@@ -213,7 +213,7 @@ To change between two nonstandard bases of $\mathbb{R}^n$ we need the coordinate
 > \qquad P_{\mathcal B \leftarrow \mathcal C} = \begin{bmatrix} 5 & 3 \\ 6 & 4 \end{bmatrix} .
 > $$
 >
-> **(b)** By Theorem §29.2 with $\mathcal{B}$ and $\mathcal{C}$ interchanged, and the $2 \times 2$ inverse formula ($\det = 20 - 18 = 2$):
+> **(b)** By Theorem §29.2 with $\mathcal{B}$ and $\mathcal{C}$ interchanged, and the $2 \times 2$ [[§12 The Inverse of a Matrix#^thm-12-2|inverse formula]] ($\det = 20 - 18 = 2$):
 >
 > $$
 > P_{\mathcal C \leftarrow \mathcal B} = (P_{\mathcal B \leftarrow \mathcal C})^{-1} = \frac12 \begin{bmatrix} 4 & -3 \\ -6 & 5 \end{bmatrix} = \begin{bmatrix} 2 & -3/2 \\ -3 & 5/2 \end{bmatrix} .

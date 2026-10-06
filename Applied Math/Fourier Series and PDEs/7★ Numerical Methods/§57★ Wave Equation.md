@@ -23,7 +23,7 @@ $$
 $$
 
 > [!definition] Definition §57.1: Central-Difference Scheme for the Wave Equation
-> With mesh points $x_i = i\,\Delta x$ ($\Delta x = 1/n$), times $t_m = m\,\Delta t$ and $u_i(m) \cong u(x_i, t_m)$, both second derivatives are replaced by **central differences**:
+> With [[§55★ Boundary Value Problems#^def-55-1|mesh points]] $x_i = i\,\Delta x$ ($\Delta x = 1/n$), times $t_m = m\,\Delta t$ and $u_i(m) \cong u(x_i, t_m)$, both second derivatives are replaced by **central differences**:
 >
 > $$
 > \frac{\partial^2u}{\partial x^2} \to \frac{u_{i+1}(m) - 2u_i(m) + u_{i-1}(m)}{(\Delta x)^2}, \qquad

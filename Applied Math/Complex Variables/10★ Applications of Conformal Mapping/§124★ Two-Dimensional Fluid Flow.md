@@ -151,7 +151,7 @@ Under these assumptions it can be shown that the fluid pressure $P(x, y)$ satisf
 *Uses:* [[§124★ Two-Dimensional Fluid Flow#^def-124-2|Def. §124.2]], [[§115★ Harmonic Conjugates#^lem-115-3|§115.3]]
 
 > [!definition] Definition §124.3: Velocity Potential; Equipotentials
-> The function $\phi(x, y)$ of (5) is the **velocity potential** of the flow, and its level curves $\phi(x, y) = c_1$ are the **equipotentials**. By (6) the velocity $V = p + iq$ is the gradient of $\phi$; the directional derivative of $\phi$ in any direction is the component of the velocity in that direction, and $V$ is normal to the equipotential through any point where $V \ne 0$.
+> The function $\phi(x, y)$ of (5) is the **velocity potential** of the flow, and its level curves $\phi(x, y) = c_1$ are the **equipotentials**. By (6) the velocity $V = p + iq$ is the gradient of $\phi$; the [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] of $\phi$ in any direction is the component of the velocity in that direction, and $V$ is normal to the equipotential through any point where $V \ne 0$.
 >
 > *B&C: Sec. 124 (text)*
 

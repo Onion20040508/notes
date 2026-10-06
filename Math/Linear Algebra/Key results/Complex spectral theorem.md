@@ -17,7 +17,6 @@ tags: [linear-algebra, hub]
 - [[§24 Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
 - [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-55|7.55 Description of unitary operators on complex inner product spaces]]
 - [[§26 Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
-- [[§27 Consequences of Singular Value Decomposition#^ladr-7-92|7.92 Best approximation by linear map whose range has dimension ≤ k]]
 - [[§34 Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
 
 ## Connections

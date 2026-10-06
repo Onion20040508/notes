@@ -16,7 +16,6 @@ tags: [applied-linear-algebra, hub]
 - [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|Theorem §40.5: Basic Facts About the Orthogonal Complement]]
 
 ## Used in (Applied Linear Algebra)
-- [[§28 Rank#^ex-28-3|Example §28.3: The Four Subspaces of a 3 × 3 Matrix]]
 - [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7: Dimension of the Orthogonal Complement]]
 - [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|Corollary §40.8: The Double Complement]]
 - [[§44 Least-Squares Problems#^thm-44-1|Theorem §44.1: Least Squares via the Normal Equations]]

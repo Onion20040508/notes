@@ -46,7 +46,7 @@ An equation $M(x, y) + N(x, y)\,y' = 0$ is exact when its left side is the $x$-d
 > \psi(x, y) = x^2 + xy^2 = c , \qquad (5)
 > $$
 >
-> with $c$ an arbitrary constant. The level curves of $\psi$ are the integral curves of (1), and (5) defines its solutions implicitly.
+> with $c$ an arbitrary constant. The level curves of $\psi$ are the [[§2 Solutions of Some Differential Equations#^def-2-2|integral curves]] of (1), and (5) defines its solutions implicitly.
 >
 > *BDP: Example 2.6.1*
 

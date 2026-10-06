@@ -48,7 +48,7 @@ tags: [topology, math590]
 > j_1: \pi_1(A, p) \to \pi_1(A \cup B, p) \qquad \text{and} \qquad j_2: \pi_1(B, p) \to \pi_1(A \cup B, p).
 > $$
 >
-> Concretely: given a word $a_1 b_1 \cdots a_n b_n \in \pi_1(A) * \pi_1(B)$, we can concatenate the loops to get a loop in $A \cup B$, and $\hat{j}$ takes its path homotopy class.
+> Concretely: given a word $a_1 b_1 \cdots a_n b_n \in \pi_1(A) * \pi_1(B)$, we can concatenate the loops to get a loop in $A \cup B$, and $\hat{j}$ takes its [[§22 Homotopy of Paths#^def-22-5|path homotopy class]].
 >
 > We must show $\hat{j}$ descends to an isomorphism $(G * H)/N \xrightarrow{\;\cong\;} \pi_1(X, p)$, i.e., $\hat{j}$ is surjective and $\ker(\hat{j}) = N$.
 >
@@ -200,7 +200,7 @@ tags: [topology, math590]
 ^ex-29-3
 
 > [!example] Example §29.4: $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ via van Kampen
-> This gives an alternative proof to the [[§23 The Fundamental Group#^cor-23-8|product formula]]. Write $T^2$ as $A \cup B$ where:
+> This gives an alternative proof to the [[§23 The Fundamental Group#^cor-23-8|product-formula computation]]. Write $T^2$ as $A \cup B$ where:
 > - $A$ = the torus minus a point $q$ ([[§26 Deformation Retracts and Homotopy Type#^ex-26-9|deformation retracts onto a figure eight]], so $\pi_1(A) \cong F_2 = \langle a, b \rangle$).
 > - $B$ = a small open disk around $q$ (contractible, so $\pi_1(B) = 0$).
 >

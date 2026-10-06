@@ -18,7 +18,6 @@ tags: [real-analysis, hub]
 - [[§29 The Mean Value Theorem#^cor-29-4|Corollary §29.4: Vanishing Derivative Means Constant]]
 - [[§29 The Mean Value Theorem#^cor-29-7|Corollary §29.7: Sign of the Derivative and Monotonicity]]
 - [[§29 The Mean Value Theorem#^prop-29-8|Proposition §29.8: Mean Value Inequality]]
-- [[§30 L'Hospital's Rule#^thm-30-2|Theorem §30.2: Generalized Mean Value Theorem]]
 - [[§34 Fundamental Theorem of Calculus#^thm-34-1|Theorem §34.1: Fundamental Theorem of Calculus I]]
 
 ## Used in (Multivariable Analysis)

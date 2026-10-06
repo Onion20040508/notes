@@ -26,7 +26,6 @@ tags: [measure-theory, hub]
 - [[§18 Differentiation Theory#^def-18-1|Definition §18.1: Vitali Covering]]
 - [[§18 Differentiation Theory#^thm-18-2|Theorem §18.2: Vitali Covering Theorem]]
 - [[§18 Differentiation Theory#^def-18-3|Definition §18.3: Dini Derivatives]]
-- [[§18 Differentiation Theory#^rem-18-3|Remark: Relationship to Differentiability]]
 
 ## Used in (Measure Theory)
 - [[§18 Differentiation Theory#^cor-18-10|Corollary §18.10: BV Functions are Differentiable A.E.]]

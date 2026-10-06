@@ -30,9 +30,9 @@ In [[§29 Summary of Curve Sketching|§29]] the graph was the end product of a c
 > f'(x) = 12x^5 + 15x^4 + 9x^2 - 4x = x\,(12x^4 + 15x^3 + 9x - 4), \qquad f''(x) = 60x^4 + 60x^3 + 18x - 4 .
 > $$
 >
-> **Critical numbers.** $x = 0$ is one. The quartic factor has two real zeros, $x \approx -1.62$ and $x \approx 0.35$ (read from the graph of $f'$, or found by Newton's method). $f'$ changes from negative to positive at $-1.62$, from positive to negative at $0$, and from negative to positive at $0.35$. So by the First Derivative Test:
+> **Critical numbers.** $x = 0$ is one. The quartic factor has two real zeros, $x \approx -1.62$ and $x \approx 0.35$ (read from the graph of $f'$, or found by Newton's method). $f'$ changes from negative to positive at $-1.62$, from positive to negative at $0$, and from negative to positive at $0.35$. So by the [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-2|First Derivative Test]]:
 > - an absolute minimum $f(-1.62) \approx -15.33$;
-> - a local maximum $f(0) = 0$ (confirmed by the Second Derivative Test, since $f'(0) = 0$ and $f''(0) = -4 < 0$);
+> - a local maximum $f(0) = 0$ (confirmed by the [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-4|Second Derivative Test]], since $f'(0) = 0$ and $f''(0) = -4 < 0$);
 > - a local minimum $f(0.35) \approx -0.1$.
 >
 > The last two were invisible in the second window; zooming in to $[-1, 1]$ by $[-1, 1]$ shows them.

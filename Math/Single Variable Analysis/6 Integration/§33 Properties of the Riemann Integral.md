@@ -123,7 +123,7 @@ It is often not easy to check integrability from the definitions — we need pro
 > M(|f|, I) - m(|f|, I) \ \leq\ M(f, I) - m(f, I)
 > $$
 >
-> — *taking absolute values decreases the variation*. Indeed, for any $x, y \in I$, the reverse [[Triangle inequality|triangle inequality]] gives
+> — *taking absolute values decreases the variation*. Indeed, for any $x, y \in I$, the reverse [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]] gives
 >
 > $$
 > \bigl| |f(x)| - |f(y)| \bigr| \leq |f(x) - f(y)| \leq M(f,I) - m(f,I),

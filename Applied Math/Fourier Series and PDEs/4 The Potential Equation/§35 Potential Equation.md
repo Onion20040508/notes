@@ -91,7 +91,7 @@ Harmonic functions have many special properties. The most important one, the **m
 > u \ \text{given}, \qquad \frac{\partial u}{\partial n} \ \text{given}, \qquad \text{or} \qquad \alpha u + \beta\frac{\partial u}{\partial n} \ \text{given} ,
 > $$
 >
-> where $\partial u/\partial n$ is the **normal derivative**, the directional derivative in the direction normal (perpendicular) to the boundary. When $u$ is specified along the whole boundary, the problem is called **Dirichlet's problem**; when $\partial u/\partial n$ is specified along the whole boundary, it is **Neumann's problem**.
+> where $\partial u/\partial n$ is the **normal derivative**, the [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] in the direction normal (perpendicular) to the boundary. When $u$ is specified along the whole boundary, the problem is called **Dirichlet's problem**; when $\partial u/\partial n$ is specified along the whole boundary, it is **Neumann's problem**.
 >
 > *Powers: 4.1 (text)*
 

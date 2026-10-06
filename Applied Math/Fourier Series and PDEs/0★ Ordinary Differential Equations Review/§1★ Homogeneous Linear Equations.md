@@ -180,7 +180,7 @@ It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substi
 This is [[§24 Hyperbolic Functions#^def-24-1|Calc Def. §24.1]]; the derivatives $(\sinh A)' = \cosh A$, $(\cosh A)' = \sinh A$ and the identity $\cosh^2 A - \sinh^2 A = 1$ are [[§24 Hyperbolic Functions#^thm-24-2|Calc Thm. §24.2]] and [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]]. For complex arguments the same formulas define [[§39★ Hyperbolic Functions#^def-39-1|342 Def. §39.1]], used in [[§53★ Partial Differential Equations#^lem-53-2|Lemma §53.2]].
 
 > [!example] Example §1.1: The Two Workhorse Equations
-> The equations $u'' + \lambda^2u = 0$ and $u'' - \lambda^2u = 0$, with $\lambda$ a constant, arise in nearly every separation of variables in this subject.
+> The equations $u'' + \lambda^2u = 0$ and $u'' - \lambda^2u = 0$, with $\lambda$ a constant, arise in nearly every [[§19 Example꞉ Fixed End Temperatures#^def-19-1|separation of variables]] in this subject.
 >
 > **$u'' + \lambda^2u = 0$ (12).** The characteristic equation $m^2 + \lambda^2 = 0$ has roots $m = \pm i\lambda$. If $\lambda \ne 0$, the third case of Theorem §1.4 applies with $\alpha = 0$, $\beta = \lambda$:
 >

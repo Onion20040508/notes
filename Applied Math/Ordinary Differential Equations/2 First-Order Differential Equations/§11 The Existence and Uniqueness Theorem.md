@@ -192,13 +192,13 @@ The uniqueness argument rests on an inequality that BDP proves inside Example 1;
 > \sum_{k=1}^{\infty} \frac{t^{2k}}{k!} , \qquad (15)
 > $$
 >
-> so $\lim_{n\to\infty} \phi_n(t)$ exists if and only if (15) converges. By the ratio test, for each $t \ne 0$,
+> so $\lim_{n\to\infty} \phi_n(t)$ exists if and only if (15) converges. By the [[§74 The Ratio and Root Tests#^thm-74-1|ratio test]], for each $t \ne 0$,
 >
 > $$
 > \left| \frac{t^{2k+2}}{(k+1)!} \cdot \frac{k!}{t^{2k}} \right| = \frac{t^2}{k + 1} \to 0 \quad\text{as } k \to \infty , \qquad (16)
 > $$
 >
-> so (15) converges for every $t$: its sum $\phi(t)$ is the limit of $\{\phi_n(t)\}$ for every $t$. Since (15) is a power series converging on the whole line, it can be differentiated and integrated term by term, and direct computation shows that $\phi(t) = \sum_{k \ge 1} t^{2k}/k!$ satisfies (9) (or, substituting into (8), the initial value problem). Here the series can even be identified: $\sum_{k \ge 0} u^k/k! = e^u$ with $u = t^2$ gives
+> so (15) converges for every $t$: its sum $\phi(t)$ is the limit of $\{\phi_n(t)\}$ for every $t$. Since (15) is a power series converging on the whole line, it can be [[§77 Representations of Functions as Power Series#^thm-77-1|differentiated and integrated term by term]], and direct computation shows that $\phi(t) = \sum_{k \ge 1} t^{2k}/k!$ satisfies (9) (or, substituting into (8), the initial value problem). Here the series can even be identified: $\sum_{k \ge 0} u^k/k! = e^u$ with $u = t^2$ gives
 >
 > $$
 > \phi(t) = e^{t^2} - 1 ,

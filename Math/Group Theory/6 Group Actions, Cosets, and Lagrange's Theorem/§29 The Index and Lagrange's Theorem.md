@@ -55,7 +55,7 @@ tags: [group-theory, math493]
 *Lagrange in one picture: the left cosets (columns) are disjoint and cover $G$, and $h \mapsto g_2h$ (red) is a bijection $H \to g_2H$, so every column has exactly $|H|$ elements. Counting the dots gives $|G| = |H| \cdot [G:H]$.*
 
 > [!remark]- Connections
-> - MATH 590 states this without proof: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 §21.1 (3)]].
+> - MATH 590 states this without proof: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 Prop. §21.1 (3)]].
 > - Generalized to orbits: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer, §30.3]]; the homomorphism version: [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]].
 > - Elementary instance: Gauss's proof of Fermat in [[§24★ Congruence Modulo a Prime#^rem-24-1|250 Remark §24.1]] (three proofs of Fermat) is this argument for the powers of $a$ among the nonzero residues modulo $p$.
 

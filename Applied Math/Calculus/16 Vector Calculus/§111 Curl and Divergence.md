@@ -323,7 +323,7 @@ Equation 12 is the planar model of Stokes' Theorem ([[§114 Stokes' Theorem#^thm
 ^thm-111-5
 
 > [!proof]+ Proof
-> Let $C$ be given by $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, $a \le t \le b$, positively oriented. The unit tangent vector is
+> Let $C$ be given by $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, $a \le t \le b$, positively oriented. The [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|unit tangent vector]] is
 >
 > $$
 > \mathbf{T}(t) = \frac{x'(t)}{|\mathbf{r}'(t)|}\,\mathbf{i} + \frac{y'(t)}{|\mathbf{r}'(t)|}\,\mathbf{j}, \qquad\text{and}\qquad \mathbf{n}(t) = \frac{y'(t)}{|\mathbf{r}'(t)|}\,\mathbf{i} - \frac{x'(t)}{|\mathbf{r}'(t)|}\,\mathbf{j}

@@ -9,9 +9,9 @@ tags: [chapter, ordinary-differential-equations]
 
 *Boyce–DiPrima, Chapter 6.*
 
-**Builds on:** [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (2), [[· 7 Systems of First-Order Linear Equations|7 Systems of First-Order Linear Equations]] (2)
+**Builds on:** [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (3), [[· 7 Systems of First-Order Linear Equations|7 Systems of First-Order Linear Equations]] (2)
 **Used by:** [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (1), [[· 7 Systems of First-Order Linear Equations|7 Systems of First-Order Linear Equations]] (2)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Calculus]] (4), [[Measure Theory]] (3), [[Functional Analysis]] (1), [[Fourier Series and PDEs]] (11), [[Complex Variables]] (7)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Calculus]] (4), [[Measure Theory]] (3), [[Functional Analysis]] (1), [[Fourier Series and PDEs]] (11), [[Complex Variables]] (9)
 
 ## Sections
 - [[§21 Definition of the Laplace Transform]] — BDP 6.1

@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 5.1.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-This section derives the equation of a vibrating membrane, such as a drumhead or a soap film stretched over a frame. Newton's second law for a small rectangle of membrane, pulled along its four edges by the surface tension, gives $u_{xx} + u_{yy} = u_{tt}/c^2$ with $c^2 = \sigma/\rho$. It is the two-dimensional version of the vibrating string of [[§29 The Vibrating String|§29]], and the derivation makes the same assumption of small slopes, so the equation describes small vibrations. The membrane problem is solved on a rectangle at the end of [[§43 Two-Dimensional Heat Equation꞉ Solution|§43]], and on a disk, where Bessel functions appear, in [[§47★ Vibrations of a Circular Membrane#^prop-47-4|Proposition §47.4]].
+This section derives the equation of a vibrating membrane, such as a drumhead or a soap film stretched over a frame. Newton's second law for a small rectangle of membrane, pulled along its four edges by the surface tension, gives $u_{xx} + u_{yy} = u_{tt}/c^2$ with $c^2 = \sigma/\rho$. It is the two-dimensional version of the vibrating string of [[§29 The Vibrating String|§29]], and the derivation makes the same assumption of small slopes, so the equation describes small vibrations. The membrane problem is solved on a rectangle at the end of [[§43 Two-Dimensional Heat Equation꞉ Solution#^rem-43-3|§43]], and on a disk, where Bessel functions appear, in [[§47★ Vibrations of a Circular Membrane#^prop-47-4|Proposition §47.4]].
 
 ## The Membrane
 

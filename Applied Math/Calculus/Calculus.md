@@ -42,6 +42,7 @@ graph TD
   X2["Multivariable Analysis (452)"]
   X3["Linear Algebra (LADR)"]
   X4["Measure Theory (551)"]
+  X5["Topology (590)"]
   X6["Applied Linear Algebra (235)"]
   X9["Fourier Series and PDEs (341)"]
   X8["Ordinary Differential Equations (331)"]
@@ -92,30 +93,33 @@ graph TD
   C1 -.->|3| X3
   C1 -.->|12| X0
   C1 -.->|12| X1
-  C2 -.->|46| X1
-  C3 -.->|5| X10
+  C2 -.->|47| X1
+  C2 -.->|3| X5
+  C3 -.->|7| X10
   C3 -.->|5| X2
   C3 -.->|7| X8
   C3 -.->|11| X1
-  C4 -.->|15| X1
-  C5 -.->|3| X4
-  C5 -.->|14| X1
+  C4 -.->|3| X4
+  C4 -.->|18| X1
+  C5 -.->|4| X4
+  C5 -.->|15| X1
   C6 -.->|3| X2
   C6 -.->|3| X1
   C7 -.->|3| X10
   C7 -.->|4| X9
+  C7 -.->|3| X2
   C7 -.->|6| X8
   C7 -.->|6| X1
   C8 -.->|6| X2
-  C8 -.->|10| X1
+  C8 -.->|11| X1
   C9 -.->|39| X8
   C9 -.->|12| X1
   C10 -.->|6| X2
   C11 -.->|5| X6
-  C11 -.->|7| X10
+  C11 -.->|10| X10
   C11 -.->|3| X9
   C11 -.->|4| X8
-  C11 -.->|43| X1
+  C11 -.->|48| X1
   C12 -.->|20| X6
   C12 -.->|15| X3
   C12 -.->|3| X2
@@ -125,17 +129,18 @@ graph TD
   C14 -.->|4| X6
   C14 -.->|4| X10
   C14 -.->|5| X9
-  C14 -.->|41| X2
+  C14 -.->|3| X3
+  C14 -.->|42| X2
   C14 -.->|3| X1
   C15 -.->|3| X6
   C15 -.->|8| X9
-  C15 -.->|8| X4
+  C15 -.->|10| X4
   C15 -.->|26| X2
-  C16 -.->|11| X10
+  C16 -.->|12| X10
   C16 -.->|56| X2
   C16 -.->|4| X8
   C17 -.->|4| X6
-  C17 -.->|6| X10
+  C17 -.->|7| X10
   C17 -.->|4| X3
   C17 -.->|7| X0
   C17 -.->|13| X1
@@ -191,4 +196,4 @@ graph TD
 Prerequisite: MATH 132 (Calculus II); Chapters 1–11 are included as the single-variable foundation.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Ordinary Differential Equations]] (62), [[Complex Variables]] (44), [[Applied Linear Algebra]] (43), [[Fourier Series and PDEs]] (28), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (203), [[Multivariable Analysis]] (163), [[Ordinary Differential Equations]] (63), [[Complex Variables]] (52), [[Applied Linear Algebra]] (43), [[Linear Algebra]] (28), [[Fourier Series and PDEs]] (28), [[Measure Theory]] (20), [[Logic and Proofs]] (19), [[Topology]] (7), [[Differentiable Manifolds]] (2).

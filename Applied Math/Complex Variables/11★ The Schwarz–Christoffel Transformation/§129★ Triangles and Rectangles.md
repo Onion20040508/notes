@@ -136,7 +136,7 @@ The integrals in (1) and (2) do not represent elementary functions unless the tr
 > -g(s) = \frac1a(1 - s^2)^{-1/2}\Big(1 - \frac{s^2}{a^2}\Big)^{-1/2} \qquad (s \in H) ,
 > $$
 >
-> and (9) is $\frac1a$ times the elliptic integral with $k = 1/a$ (beyond $H$, its analytic continuation into the upper half plane); the form (8) of the integrand shows more clearly which branches are involved.
+> and (9) is $\frac1a$ times the elliptic integral with $k = 1/a$ (beyond $H$, its [[§28★ Uniquely Determined Analytic Functions#^def-28-1|analytic continuation]] into the upper half plane); the form (8) of the integrand shows more clearly which branches are involved.
 
 ^pf-129-2
 

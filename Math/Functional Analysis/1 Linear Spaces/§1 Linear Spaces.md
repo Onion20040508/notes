@@ -516,7 +516,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 > [!remark]- Connections
 > - In finite dimensions it gives the dimension count of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]].
-> - The orthogonal version for Hilbert spaces: [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]].
+> - The orthogonal version for [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|Hilbert spaces]]: [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]].
 
 > [!theorem] Corollary §1.12: A Complement is a Model of the Quotient
 > If $W$ is a complement of $Y$, then the restricted quotient map $W \to X/Y$, $w \mapsto [w]$, is an isomorphism. In particular all complements of $Y$ are isomorphic to one another.

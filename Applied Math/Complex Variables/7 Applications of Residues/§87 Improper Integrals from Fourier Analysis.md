@@ -132,7 +132,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 ^ex-87-2
 
 > [!remark]- Connections
-> - Read with $a = |x|$ and the integration variable $\lambda$, this is $e^{-|x|} = \frac2\pi\int_0^\infty\frac{\cos\lambda x}{1 + \lambda^2}\,d\lambda$, the Fourier integral representation of [[§14 Fourier Integral#^ex-14-4|341 Ex. §14.4]](a), which 341 obtains from the Fourier integral theorem; here it is verified directly, for every $x$.
+> - Read with $a = |x|$ and the integration variable $\lambda$, this is $e^{-|x|} = \frac2\pi\int_0^\infty\frac{\cos\lambda x}{1 + \lambda^2}\,d\lambda$, the Fourier integral representation of [[§14 Fourier Integral#^ex-14-4|341 Ex. §14.4]](a), which 341 obtains from the [[Fourier Integral Theorem|Fourier integral theorem]]; here it is verified directly, for every $x$.
 
 > [!example] Example §87.3: A Double Pole
 > Prove that for all $a > 0$ and $b > 0$,

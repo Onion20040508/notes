@@ -64,7 +64,7 @@ These examples display the general pattern:
 > - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|342 Thm. §69.1]] and [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (complex power series converge inside a circle of convergence and diverge outside it).
 
 > [!example] Example §23.2: The Extreme Cases
-> $\sum_{n=0}^\infty \dfrac{x^n}{n!}$ converges for *all* $x$: by the ratio test at fixed $x$, $\left|\tfrac{a_{n+1}x^{n+1}}{a_n x^n}\right| = \tfrac{|x|}{n+1} \to 0 < 1$ (this is $\sum \tfrac{|x|^n}{n!}$-type convergence from §9). $\sum_{n=0}^\infty n!\, x^n$ converges *only* for $x = 0$: for $x \neq 0$, $(n!)^{1/n} \to +\infty$, so $\limsup |n! x^n|^{1/n} = +\infty > 1$ and the root test gives divergence.
+> $\sum_{n=0}^\infty \dfrac{x^n}{n!}$ converges for *all* $x$: by the [[§14 Series#^thm-14-9|ratio test]] at fixed $x$, $\left|\tfrac{a_{n+1}x^{n+1}}{a_n x^n}\right| = \tfrac{|x|}{n+1} \to 0 < 1$ (this is $\sum \tfrac{|x|^n}{n!}$-type convergence from §9). $\sum_{n=0}^\infty n!\, x^n$ converges *only* for $x = 0$: for $x \neq 0$, $(n!)^{1/n} \to +\infty$, so $\limsup |n! x^n|^{1/n} = +\infty > 1$ and the root test gives divergence.
 
 ^ex-23-2
 

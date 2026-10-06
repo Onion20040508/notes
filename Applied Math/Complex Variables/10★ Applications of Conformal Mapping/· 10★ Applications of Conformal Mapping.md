@@ -9,9 +9,9 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 10 · ★ beyond MAT 342.*
 
-**Builds on:** [[· 2 Analytic Functions|2 Analytic Functions]] (6), [[· 3 Elementary Functions|3 Elementary Functions]] (3), [[· 4 Integrals|4 Integrals]] (3), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (8), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (20), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (1)
+**Builds on:** [[· 2 Analytic Functions|2 Analytic Functions]] (6), [[· 3 Elementary Functions|3 Elementary Functions]] (3), [[· 4 Integrals|4 Integrals]] (5), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (10), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (26), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (1)
 **Used by:** [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (4), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (3)
-**Developed further in (other subjects):** [[Multivariable Analysis]] (3), [[Fourier Series and PDEs]] (9), [[Calculus]] (8)
+**Developed further in (other subjects):** [[Multivariable Analysis]] (3), [[Fourier Series and PDEs]] (12), [[Calculus]] (8)
 
 ## Sections
 - [[§118★ Steady Temperatures]] — B&C Sec. 118 ★

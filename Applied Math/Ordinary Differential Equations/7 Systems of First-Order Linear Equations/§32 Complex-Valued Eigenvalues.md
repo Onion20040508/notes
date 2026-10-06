@@ -275,7 +275,7 @@ So the two complex solutions carry the same information, and either one yields t
 > \mathbf{Y}(t) = c_1e^{-3t}\begin{pmatrix} 2\cos 4t \\ -\cos 4t - 2\sin 4t \end{pmatrix} + c_2e^{-3t}\begin{pmatrix} 2\sin 4t \\ -\sin 4t + 2\cos 4t \end{pmatrix} .
 > $$
 >
-> Check with Abel's formula: the Wronskian of the two solutions is $4e^{-6t}$, and indeed $\operatorname{tr}\mathbf{A} = -6$.
+> Check with [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|Abel's formula]]: the Wronskian of the two solutions is $4e^{-6t}$, and indeed $\operatorname{tr}\mathbf{A} = -6$.
 >
 > *Source: 331 Written HW 6, Problems 2(b), 2(c) and 4*
 
@@ -408,7 +408,7 @@ With $y_1 = x_1$, $y_2 = x_2$, $y_3 = x_1'$, $y_4 = x_2'$ this becomes the first
 > - The terms with $c_1$, $c_2$ have frequency $1$ and period $2\pi$, with $y_2 = \frac23y_1$ and $y_4 = \frac23y_3$: the masses move back and forth together, in the same direction, the second moving two-thirds as far and as fast as the first. For $\mathbf{u}^{(1)}$, the projections onto the $y_1y_3$- and $y_2y_4$-planes are circles of radius $3$ and $2$, both traversed clockwise: the origin is a center in each plane.
 > - The terms with $c_3$, $c_4$ have frequency $2$ and period $\pi$, with $y_2 = -\frac43y_1$ and $y_4 = -\frac43y_3$: the masses always move in opposite directions, the second four-thirds as far and as fast as the first (a phase difference of $\pi$). The projections of $\mathbf{u}^{(2)}$ are the ellipses $4y_1^2 + y_3^2 = 36$ and $4y_2^2 + y_4^2 = 64$.
 >
-> These two motions are the **fundamental modes** of the system. The first occurs only when $c_3 = c_4 = 0$, that is, for initial conditions with $3y_2(0) = 2y_1(0)$ and $3y_4(0) = 2y_3(0)$; the second only when $c_1 = c_2 = 0$, that is, $3y_2(0) = -4y_1(0)$ and $3y_4(0) = -4y_3(0)$. Any other solution is a superposition of the two modes. Its projection onto the $y_1y_3$-plane may cross itself, but the trajectory in four dimensions cannot, by the uniqueness theorem.
+> These two motions are the **fundamental modes** of the system. The first occurs only when $c_3 = c_4 = 0$, that is, for initial conditions with $3y_2(0) = 2y_1(0)$ and $3y_4(0) = 2y_3(0)$; the second only when $c_1 = c_2 = 0$, that is, $3y_2(0) = -4y_1(0)$ and $3y_4(0) = -4y_3(0)$. Any other solution is a superposition of the two modes. Its projection onto the $y_1y_3$-plane may cross itself, but the trajectory in four dimensions cannot, by the [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|uniqueness theorem]].
 >
 > *BDP: Example 7.6.3*
 

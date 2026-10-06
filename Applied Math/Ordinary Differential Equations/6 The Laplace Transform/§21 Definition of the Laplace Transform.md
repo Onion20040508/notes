@@ -59,7 +59,7 @@ Mechanical and electrical systems are often driven by discontinuous or impulsive
 > 1. $f$ is continuous on each open subinterval $t_{i-1} < t < t_i$, and
 > 2. $f$ approaches a finite limit as the endpoints of each subinterval are approached from within the subinterval.
 >
-> That is, $f$ is continuous on $[\alpha, \beta]$ except for finitely many jump discontinuities. If $f$ is piecewise continuous on $\alpha \le t \le \beta$ for every $\beta > \alpha$, it is **piecewise continuous on $t \ge \alpha$**. (The interval may also be open at one or both ends.)
+> That is, $f$ is continuous on $[\alpha, \beta]$ except for finitely many [[§10 Continuity#^def-10-3|jump discontinuities]]. If $f$ is piecewise continuous on $\alpha \le t \le \beta$ for every $\beta > \alpha$, it is **piecewise continuous on $t \ge \alpha$**. (The interval may also be open at one or both ends.)
 >
 > The integral of such an $f$ over $[\alpha, \beta]$ is the sum of the integrals over the subintervals,
 >
@@ -175,7 +175,7 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 *Uses:* [[§21 Definition of the Laplace Transform#^def-21-2|Def. §21.2]], [[§21 Definition of the Laplace Transform#^ex-21-1|Ex. §21.1]], [[§21 Definition of the Laplace Transform#^thm-21-1|§21.1]]
 
 > [!remark]- Connections
-> - For complex $s$ the same comparison, with $\operatorname{Re}s$ in place of $s$, gives absolute convergence for $\operatorname{Re}s > a$; this is where the Bromwich inversion formula of [[§95★ Inverse Laplace Transforms|342 §95★]] starts.
+> - For complex $s$ the same comparison, with $\operatorname{Re}s$ in place of $s$, gives absolute convergence for $\operatorname{Re}s > a$; this is where the Bromwich inversion formula of [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]] starts.
 
 Functions satisfying the hypotheses of [[§21 Definition of the Laplace Transform#^thm-21-2|Theorem §21.2]] are called **piecewise continuous and of exponential order**. Except in [[§25 Impulse Functions|§25]] (BDP 6.5), the chapter deals almost exclusively with such functions.
 

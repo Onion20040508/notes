@@ -15,7 +15,6 @@ tags: [fourier-series-and-pdes, hub]
 - [[§28★ The Error Function#^prop-28-1|Proposition §28.1: Properties of the Error Function]]
 
 ## Used in (Fourier Series and PDEs)
-- [[§15★ Complex Methods#^ex-15-4|Example §15.4: Solving the Heat Equation by Fourier Transform]]
 - [[§27 Infinite Rod#^thm-27-2|Theorem §27.2: Fourier Integral Solution of the Infinite Rod Problem]]
 - [[§27 Infinite Rod#^prop-27-4|Proposition §27.4: The Semi-Infinite Rod in Heat Kernel Form]]
 - [[§28★ The Error Function#^thm-28-2|Theorem §28.2: The Solution with Initial Temperature sgn x]]

@@ -298,7 +298,7 @@ With [[§25 Impulse Functions#^thm-25-2|Theorem §25.2]], an impulse in the forc
 > y(t) = k\,u_3(t)\,(t - 3)\,e^{-(t - 3)} .
 > $$
 >
-> The system is critically damped (repeated root $-1$), so after the impulse it rises once and decays without oscillating.
+> The system is [[§19 Mechanical and Electrical Vibrations#^def-19-4|critically damped]] (repeated root $-1$), so after the impulse it rises once and decays without oscillating.
 >
 > **(b)** For $t > 3$, $y'(t) = k\,e^{-(t - 3)}\big(1 - (t - 3)\big)$, which is zero only at $t = 4$; $y' > 0$ before and $y' < 0$ after (for $k > 0$). So the peak is $y(4) = k\,e^{-1}$. Setting $k/e = 7$ gives $k = 7e$.
 >

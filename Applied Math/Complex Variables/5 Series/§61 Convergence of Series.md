@@ -256,7 +256,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 >
 > **Check.** $r = 0.6$, $\theta = 1.1$: the cosine sum is $-0.107692$ and the sine sum $0.655553$, by direct summation and by the formulas.
 >
-> Doubling the first formula and adding $1$ gives $1 + 2\sum_{n \ge 1} r^n\cos n\theta = \dfrac{1 - r^2}{1 - 2r\cos\theta + r^2}$, the Poisson kernel of the unit disk ([[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], step (e) of the proof).
+> Doubling the first formula and adding $1$ gives $1 + 2\sum_{n \ge 1} r^n\cos n\theta = \dfrac{1 - r^2}{1 - 2r\cos\theta + r^2}$, the [[§134★ Poisson Integral Formula#^def-134-2|Poisson kernel]] of the unit disk ([[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], step (e) of the proof).
 >
 > *B&C: Sec. 61, Exercise 4; Source: 342 HW 9 (optional exercises, p. 185)*
 

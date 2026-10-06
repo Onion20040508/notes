@@ -14,9 +14,7 @@ tags: [fourier-series-and-pdes, hub]
 - (no proof in the notes)
 
 ## Used in (Fourier Series and PDEs)
-- [[§7 Arbitrary Period and Half-Range Expansions#^ex-7-4|Example §7.4: Odd and Even Extensions of x²]]
 - [[§9 Uniform Convergence#^thm-9-4|Theorem §9.4: Uniform Convergence on −a ≤ x ≤ a]]
-- [[§14 Fourier Integral#^ex-14-3|Example §14.3: A Triangular Pulse]]
 
 ## Connections
 - See [[§9 Uniform Convergence]] for context and examples.

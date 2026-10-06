@@ -26,7 +26,7 @@ tags: [multivariable-analysis, math452]
 > Definition §1.1 is convergence in the metric space $(\mathbb{R}^n, d)$ with the Euclidean distance, which MATH 451 treated in [[§13 Some Topological Concepts in Metric Spaces|451 §13]]. Three facts proved there apply here unchanged:
 > - **Coordinatewise criterion.** $a_k \to A$ in $\mathbb{R}^n$ if and only if each coordinate sequence converges to the corresponding coordinate of $A$. This follows from $\max_i |x_i - y_i| \le |x - y| \le \sqrt{n}\,\max_i |x_i - y_i|$, [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 Prop. §13.1]]; Example §1.1 below checks the definition directly instead.
 > - **Completeness.** Every Cauchy sequence in $\mathbb{R}^n$ converges, [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 Thm. §13.2]].
-> - **Bolzano–Weierstrass.** Every bounded sequence in $\mathbb{R}^n$ has a convergent subsequence, [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 Thm. §13.3]]. With closedness it makes every closed bounded set sequentially compact; the open-cover form of this is the [[Heine–Borel Theorem]] ([[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]]).
+> - **Bolzano–Weierstrass.** Every bounded sequence in $\mathbb{R}^n$ has a convergent subsequence, [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 Thm. §13.3]]. With closedness it makes every closed bounded set [[§16 Limit Point Compactness#^def-16-3|sequentially compact]] (590 Def. §16.3); the open-cover form of this is the [[Heine–Borel Theorem]] ([[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]]).
 
 ^rem-1-1
 

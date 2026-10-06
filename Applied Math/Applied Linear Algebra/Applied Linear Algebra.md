@@ -56,21 +56,21 @@ graph TD
   C1 -.->|28| X1
   C1 -.->|3| X3
   C2 -.->|3| X2
-  C2 -.->|24| X1
+  C2 -.->|29| X1
   C2 -.->|4| X3
   C3 -.->|5| X6
-  C3 -.->|3| X2
+  C3 -.->|4| X2
   C3 -.->|13| X1
   C4 -.->|4| X6
-  C4 -.->|4| X4
+  C4 -.->|5| X4
   C4 -.->|41| X1
-  C4 -.->|5| X3
-  C5 -.->|23| X1
+  C4 -.->|6| X3
+  C5 -.->|31| X1
   C6 -.->|10| X6
-  C6 -.->|16| X4
-  C6 -.->|29| X1
+  C6 -.->|18| X4
+  C6 -.->|32| X1
   C7 -.->|3| X6
-  C7 -.->|33| X1
+  C7 -.->|35| X1
   C7 -.->|5| X5
   C8 -.->|6| X1
 ```
@@ -120,4 +120,4 @@ The instructor's lectures in the course folder, and where they are in these note
 Exams: three (20%, 20%, 25%); online homework and quizzes on MyMathLab (35%). The instructor's section checklist covers Chapters 2–4.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math subject: [[Linear Algebra]] (197), [[Calculus]] (25), [[Functional Analysis]] (20), [[Logic and Proofs]] (12), [[Group Theory]] (8), [[Multivariable Analysis]] (8).
+Number of *Connections* links from these notes to each Math subject: [[Linear Algebra]] (215), [[Calculus]] (25), [[Functional Analysis]] (24), [[Logic and Proofs]] (13), [[Group Theory]] (11), [[Multivariable Analysis]] (8), [[Topology]] (2), [[Measure Theory]] (1).

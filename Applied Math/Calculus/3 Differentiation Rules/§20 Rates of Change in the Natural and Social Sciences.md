@@ -131,7 +131,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 
 
 ^ex-20-2
 
-Other rates of change in physics include power (the rate at which work is done), the rate of heat flow, the temperature gradient (the rate of change of temperature with respect to position), and the rate of decay of a radioactive substance ([[§21 Exponential Growth and Decay#^def-21-3|Definition §21.3]]).
+Other rates of change in physics include power (the rate at which work is done), the rate of heat flow, the temperature gradient (the rate of change of temperature with respect to position), and the rate of decay of a radioactive substance ([[§21 Exponential Growth and Decay#^def-21-1|Definition §21.1]]).
 
 ## Chemistry
 

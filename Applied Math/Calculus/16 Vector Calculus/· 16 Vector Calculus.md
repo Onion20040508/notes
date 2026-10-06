@@ -9,9 +9,9 @@ tags: [chapter, calculus]
 
 *Stewart, Chapter 16 · MATH 233 (UMass, Spring 2023).*
 
-**Builds on:** [[· 5 Integrals|5 Integrals]] (6), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (1), [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (4), [[· 13 Vector Functions|13 Vector Functions]] (4), [[· 14 Partial Derivatives|14 Partial Derivatives]] (11), [[· 15 Multiple Integrals|15 Multiple Integrals]] (11)
-**Used by:** [[· 7 Techniques of Integration|7 Techniques of Integration]] (3)
-**Developed further in (other subjects):** [[Topology]] (1), [[Multivariable Analysis]] (56), [[Fourier Series and PDEs]] (2), [[Ordinary Differential Equations]] (4), [[Complex Variables]] (11)
+**Builds on:** [[· 3 Differentiation Rules|3 Differentiation Rules]] (1), [[· 5 Integrals|5 Integrals]] (6), [[· 7 Techniques of Integration|7 Techniques of Integration]] (1), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (1), [[· 12 Vectors and the Geometry of Space|12 Vectors and the Geometry of Space]] (5), [[· 13 Vector Functions|13 Vector Functions]] (6), [[· 14 Partial Derivatives|14 Partial Derivatives]] (12), [[· 15 Multiple Integrals|15 Multiple Integrals]] (11)
+**Used by:** [[· 7 Techniques of Integration|7 Techniques of Integration]] (4)
+**Developed further in (other subjects):** [[Topology]] (1), [[Multivariable Analysis]] (56), [[Fourier Series and PDEs]] (2), [[Ordinary Differential Equations]] (4), [[Complex Variables]] (12)
 
 ## Sections
 - [[§107 Vector Fields]] — Stewart 16.1

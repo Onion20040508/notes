@@ -16,7 +16,7 @@ Congruence modulo $m$ can be seen in two ways: as a *relation* between integers,
 ## 22.1 Partitions
 
 > [!definition] Definition §22.1: Partition
-> Let $X$ be a set and $\mathcal{P}(X)$ its power set, the set of all subsets of $X$. A **partition** of $X$ is a subset $\Pi \subseteq \mathcal{P}(X)$, i.e. a set of subsets of $X$, such that
+> Let $X$ be a set and $\mathcal{P}(X)$ its [[§6 The Language of Set Theory#^def-6-9|power set]], the set of all subsets of $X$. A **partition** of $X$ is a subset $\Pi \subseteq \mathcal{P}(X)$, i.e. a set of subsets of $X$, such that
 > 1. the subsets in $\Pi$ are non-empty: $A \in \Pi \Rightarrow A \neq \varnothing$;
 > 2. the subsets in $\Pi$ are disjoint: $\forall A_1, A_2 \in \Pi,\ (A_1 \neq A_2 \Rightarrow A_1 \cap A_2 = \varnothing)$;
 > 3. the subsets in $\Pi$ cover $X$: $\forall x \in X,\ \exists A \in \Pi,\ x \in A$.
@@ -93,7 +93,7 @@ Partitions are usually described by a property of the elements — the remainder
 A partition starts from the whole set. The same idea seen from the elements: if a set of people is partitioned into rooms, nobody need know the overall picture, but everyone can see who is in the same room. So a partition determines a *relation*: two elements are related if they lie in the same part.
 
 > [!definition] Definition §22.2: Relation
-> A **relation** on a set $X$ is determined by a property that each ordered pair $(a, b) \in X \times X$ may or may not satisfy. If $(a, b)$ satisfies it we say $a$ and $b$ are **related** and write $a \sim b$; otherwise we write $a \not\sim b$. Formally, a relation on $X$ *is* the subset $R = \{(a, b) \in X \times X \mid a \sim b\}$ of $X \times X$, and $a \sim b$ means $(a, b) \in R$.
+> A **relation** on a set $X$ is determined by a property that each [[§7 Quantifiers#^def-7-5|ordered pair]] $(a, b) \in X \times X$ may or may not satisfy. If $(a, b)$ satisfies it we say $a$ and $b$ are **related** and write $a \sim b$; otherwise we write $a \not\sim b$. Formally, a relation on $X$ *is* the subset $R = \{(a, b) \in X \times X \mid a \sim b\}$ of $X \times X$, and $a \sim b$ means $(a, b) \in R$.
 >
 > *Eccles: §22.2 (text before Proposition 22.2.1)*
 > *Source: Sundstrom §7.1 (relation as a subset of $A \times A$)*
@@ -645,4 +645,4 @@ Identifying $n \in \mathbb{N}$ with $j(n)$ gives $\mathbb{N} \subseteq \mathbb{Z
 
 > [!remark]- Connections
 > - The starting point, Peano's axioms: [[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]]; the informal passage $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q}$ via semigroup, ring and field: [[§2 The Set ℚ of Rational Numbers#^def-2-3|451 Def. §2.3]] (ring), [[§2 The Set ℚ of Rational Numbers#^def-2-4|451 Def. §2.4]] (field).
-> - $\mathbb{Z}$ under $+$ as a group: [[§3 Basic Examples of Groups#^def-3-1|493 Def. §3.1]]; the completion of $\mathbb{Q}$ to $\mathbb{R}$: [[Completeness Axiom]].
+> - $\mathbb{Z}$ under $+$ as a group: [[§3 Basic Examples of Groups#^def-3-1|493 Def. §3.1]]; the completion of $\mathbb{Q}$ to $\mathbb{R}$: [[§6 Dedekind Cuts#^def-6-1|451 Def. §6.1]] (Dedekind cuts), which yields the [[Completeness Axiom]].

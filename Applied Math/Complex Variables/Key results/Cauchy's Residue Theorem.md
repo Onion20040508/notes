@@ -16,7 +16,6 @@ tags: [complex-variables, hub]
 - [[§75 Residues#^thm-75-1|Theorem §75.1: An Integral Is 2πi Times a Residue]]
 
 ## Used in (Complex Variables)
-- [[§44 Contour Integrals#^ex-44-4|Example §44.4: Integrands That Agree on the Contour]]
 - [[§77★ Residue at Infinity#^cor-77-3|Corollary §77.3: The Residues Add Up to Zero]]
 - [[§85 Evaluation of Improper Integrals#^thm-85-3|Theorem §85.3: Improper Integrals of Rational Functions by Residues]]
 - [[§87 Improper Integrals from Fourier Analysis#^prop-87-1|Proposition §87.1: Fourier-Type Integrals of Rational Functions]]
@@ -25,7 +24,6 @@ tags: [complex-variables, hub]
 - [[§93 Argument Principle#^thm-93-4|Theorem §93.4: Argument Principle]]
 - [[§95★ Inverse Laplace Transforms#^thm-95-2|Theorem §95.2: Inverse Transform as a Sum of Residues]]
 - [[§95★ Inverse Laplace Transforms#^thm-95-3|Theorem §95.3: Inverse Transform as a Series of Residues]]
-- [[§138★ Schwarz Integral Formula#^ex-138-2|Example §138.2: Formula (3) by Residues]]
 
 ## Connections
 - The Cauchy–Goursat theorem for multiply connected domains, which carries the proof, is the complex form of Green's theorem for a region with holes, [[§110 Green's Theorem#^thm-110-4|Calc Thm. §110.4]] (the rigorous [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]] is stated for a region bounded by one simple closed curve and extends to holes by the same cutting into pieces), applied to $u$ and $v$ when their partial derivatives are continuous: the Cauchy–Riemann equations make the double integrals vanish. The residue theorem says that all the circulation of $f$ around $C$ is concentrated at the singular points.

@@ -18,7 +18,6 @@ tags: [differentiable-manifolds, hub]
 - [[§4 Quotient Spaces and Open Maps#^prop-4-1|Proposition §4.1: The Quotient Topology Is the Finest Making π Continuous]]
 - [[§4 Quotient Spaces and Open Maps#^def-4-3|Definition §4.3: Open Equivalence Relation]]
 - [[§6 Open Quotients#^def-6-1|Definition §6.1: Graph of a Relation]]
-- [[§6 Open Quotients#^thm-6-3|Theorem §6.3: Second Countability of Open Quotients]]
 
 ## Used in (Differentiable Manifolds)
 - [[§6 Open Quotients#^ex-6-1|Example §6.1: The Line with Two Origins — via the Criterion]]

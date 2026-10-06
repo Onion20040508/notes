@@ -29,7 +29,7 @@ An indentation can also step around a **branch point**. To evaluate $\int_0^\inf
 > f(z) = \frac{z^a}{(z^2 + 1)^2} = \frac{\exp(a\log z)}{(z^2 + 1)^2} \qquad \Big(|z| > 0,\ -\frac\pi2 < \arg z < \frac{3\pi}{2}\Big),
 > $$
 >
-> whose branch cut is the origin together with the negative imaginary axis ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]), and the indented contour of the figure below: $L_1$ from $\rho$ to $R$, the semicircle $C_R$ counterclockwise, $L_2$ from $-R$ to $-\rho$, and the semicircle $C_\rho$ clockwise, with $\rho < 1 < R$. The function $f$ is analytic inside and on this contour except at $z = i$. By the residue theorem,
+> whose branch cut is the origin together with the negative imaginary axis ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]), and the indented contour of the figure below: $L_1$ from $\rho$ to $R$, the semicircle $C_R$ counterclockwise, $L_2$ from $-R$ to $-\rho$, and the semicircle $C_\rho$ clockwise, with $\rho < 1 < R$. The function $f$ is analytic inside and on this contour except at $z = i$. By the [[§76 Cauchy's Residue Theorem#^thm-76-1|residue theorem]],
 >
 > $$
 > \int_{L_1} f(z)\,dz + \int_{L_2} f(z)\,dz = 2\pi i\operatorname{Res}_{z=i} f(z) - \int_{C_\rho} f(z)\,dz - \int_{C_R} f(z)\,dz . \qquad (2)

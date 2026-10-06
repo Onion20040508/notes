@@ -20,7 +20,6 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Proposition §12.1: Conjugation Relabels a Cycle]]
 - [[§12 Multiplying and Conjugating Cycles#^prop-12-2|Proposition §12.2: Every Permutation Is a Product of Transpositions]]
-- [[§33 Conjugacy Classes#^lem-33-1|Lemma §33.1: Conjugation Relabels the Entries]]
 - [[§33 Conjugacy Classes#^thm-33-3|Theorem §33.3: Conjugacy Classes in Sₙ Are Cycle Types]]
 
 ## Connections

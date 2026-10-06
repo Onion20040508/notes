@@ -18,14 +18,10 @@ tags: [complex-variables, hub]
 - [[§78 The Three Types of Isolated Singular Points#^def-78-4|Definition §78.4: Pole of Order m]]
 
 ## Used in (Complex Variables)
-- [[§82 Zeros of Analytic Functions#^ex-82-3|Example §82.3: Finitely Many Zeros and Poles in a Closed Region]]
 - [[§83 Zeros and Poles#^thm-83-1|Theorem §83.1: A Zero of Order m in the Denominator Is a Pole of Order m]]
 - [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2: Residue of p/q at a Simple Zero of q]]
 - [[§83 Zeros and Poles#^prop-83-3|Proposition §83.3: A Pole of Order m Comes From a Zero of Order m]]
 - [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|Theorem §84.4: A Function Tends to Infinity at a Pole]]
-- [[§85 Evaluation of Improper Integrals#^ex-85-2|Example §85.2: A Double Pole]]
-- [[§87 Improper Integrals from Fourier Analysis#^ex-87-1|Example §87.1: The Integral of cos 2x/(x² + 4)²]]
-- [[§90★ An Indentation Around a Branch Point#^ex-90-1|Example §90.1: The Integral of xᵃ/(x² + 1)²]]
 - [[§93 Argument Principle#^thm-93-4|Theorem §93.4: Argument Principle]]
 
 ## Connections

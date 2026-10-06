@@ -10,8 +10,8 @@ tags: [chapter, complex-variables]
 *Brown–Churchill, Chapter 2.*
 
 **Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (22), [[· 3 Elementary Functions|3 Elementary Functions]] (9), [[· 4 Integrals|4 Integrals]] (5), [[· 5 Series|5 Series]] (1), [[· 6 Residues and Poles|6 Residues and Poles]] (2)
-**Used by:** [[· 3 Elementary Functions|3 Elementary Functions]] (29), [[· 4 Integrals|4 Integrals]] (26), [[· 5 Series|5 Series]] (9), [[· 6 Residues and Poles|6 Residues and Poles]] (9), [[· 7 Applications of Residues|7 Applications of Residues]] (4), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (7), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (25), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (6), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (6)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (12), [[Multivariable Analysis]] (16), [[Topology]] (8), [[Applied Linear Algebra]] (4), [[Fourier Series and PDEs]] (3), [[Calculus]] (3)
+**Used by:** [[· 3 Elementary Functions|3 Elementary Functions]] (32), [[· 4 Integrals|4 Integrals]] (29), [[· 5 Series|5 Series]] (9), [[· 6 Residues and Poles|6 Residues and Poles]] (9), [[· 7 Applications of Residues|7 Applications of Residues]] (4), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (8), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (25), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (6), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (1), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (6)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (13), [[Multivariable Analysis]] (17), [[Topology]] (8), [[Applied Linear Algebra]] (4), [[Fourier Series and PDEs]] (3), [[Calculus]] (3)
 
 ## Sections
 - [[§13 Functions and Mappings]] — B&C Sec. 13
@@ -40,6 +40,6 @@ tags: [chapter, complex-variables]
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§16 Theorems on Limits#^thm-16-1|Theorem §16.1: Limits of the Real and Imaginary Parts]]: 161 later results
+- [[§15 Limits#^thm-15-1|Theorem §15.1: Uniqueness of Limits]]: 136 later results
 - [[§16 Theorems on Limits#^thm-16-2|Theorem §16.2: Limits of Sums, Products and Quotients]]: 136 later results
-- [[§16 Theorems on Limits#^cor-16-3|Corollary §16.3: Limits of Polynomials and Rational Functions]]: 134 later results
-- [[§15 Limits#^thm-15-1|Theorem §15.1: Uniqueness of Limits]]: 131 later results
+- [[§15 Limits#^cor-15-2|Corollary §15.2: Two-Path Test]]: 135 later results

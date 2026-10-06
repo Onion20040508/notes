@@ -20,8 +20,6 @@ tags: [ordinary-differential-equations, hub]
 ## Used in (Ordinary Differential Equations)
 - [[§33★ Fundamental Matrices#^prop-33-6|Proposition §33.6: The Exponential Law]]
 - [[§33★ Fundamental Matrices#^thm-33-8|Theorem §33.8: Fundamental Matrix by Diagonalization]]
-- [[§34★ Repeated Eigenvalues#^ex-34-2|Example §34.2: Ψ and Φ = exp(At) for Example §34.1]]
-- [[§34★ Repeated Eigenvalues#^ex-34-3|Example §34.3: The Jordan Form of A and exp(Jt)]]
 - [[§35★ Nonhomogeneous Linear Systems#^cor-35-4|Corollary §35.4: Variation of Parameters with Constant A]]
 
 ## Connections

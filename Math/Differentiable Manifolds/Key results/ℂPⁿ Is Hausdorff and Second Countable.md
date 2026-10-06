@@ -23,7 +23,6 @@ tags: [differentiable-manifolds, hub]
 - [[§6 Open Quotients#^thm-6-1|Theorem §6.1: Hausdorff Criterion]]
 - [[§6 Open Quotients#^thm-6-3|Theorem §6.3: Second Countability of Open Quotients]]
 - [[§9 Complex Projective Space#^def-9-1|Definition §9.1: Complex Projective Space ℂPⁿ]]
-- [[§12 Group Actions and Orbit Spaces#^cor-12-4|Corollary §12.4: Compact Group and Compact Hausdorff Space]]
 
 ## Its proof uses (other subjects)
 - [[Compact Subspace of a Hausdorff Space is Closed]] (Topology)
@@ -34,7 +33,6 @@ tags: [differentiable-manifolds, hub]
 - [[§16 Limit Point Compactness#^thm-16-2|590 §16.2: Equivalence for Metrizable Spaces]]
 
 ## Used in (Differentiable Manifolds)
-- [[§12 Group Actions and Orbit Spaces#^ex-12-3|Example §12.3: ℂPⁿ Is an Orbit Space]]
 - [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|Theorem §17.2: The Standard Atlas Is Smooth]]
 - [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|Proposition §17.4: ℂP¹ Is the Riemann Sphere]]
 - [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|Corollary §17.5: Real Projective Space]]

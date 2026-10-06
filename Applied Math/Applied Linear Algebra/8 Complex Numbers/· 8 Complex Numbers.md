@@ -18,7 +18,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§53 Complex Numbers#^thm-53-1|Theorem §53.1: The Laws of Arithmetic Hold in ℂ]]: 95 later results
-- [[§53 Complex Numbers#^prop-53-2|Proposition §53.2: z Times Its Conjugate]]: 94 later results
-- [[§53 Complex Numbers#^thm-53-3|Theorem §53.3: Properties of Conjugates and Absolute Value]]: 93 later results
+- [[§53 Complex Numbers#^thm-53-1|Theorem §53.1: The Laws of Arithmetic Hold in ℂ]]: 102 later results
+- [[§53 Complex Numbers#^prop-53-2|Proposition §53.2: z Times Its Conjugate]]: 101 later results
+- [[§53 Complex Numbers#^thm-53-3|Theorem §53.3: Properties of Conjugates and Absolute Value]]: 100 later results
 - [[§53 Complex Numbers#^prop-53-4|Proposition §53.4: Reciprocals and Quotients]]: 2 later results

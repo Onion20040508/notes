@@ -22,7 +22,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 ^def-24-1
 
 > [!remark]- Connections
-> - MATH 590 uses equivalence relations to build quotient spaces: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).
+> - MATH 590 uses equivalence relations to build quotient spaces: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 Def. §12.3).
 > - Group-theoretic instances: [[§27 Orbits#^prop-27-2|The Orbit Relation]], [[§28 Left and Right Cosets#^def-28-1|Congruence Modulo a Subgroup]].
 > - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]], with relations as subsets of $X \times X$ in [[§22 Partitions and Equivalence Relations#^def-22-2|250 Def. §22.2]].
 
@@ -66,7 +66,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 *Proposition §24.1: the equivalence classes cut $X$ into disjoint pieces. If $x_1 \sim x_2$, their classes coincide (blue); a point $x_3$ not related to $x_1$ has a class (red) disjoint from it. No two classes partially overlap, and every point lies in its own class.*
 
 > [!remark]- Connections
-> - The same pattern in linear algebra: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]] (LADR 3.101); in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).
+> - The same pattern in linear algebra: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]] (LADR 3.101); in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 Def. §12.3).
 > - Applied to orbits and cosets: [[§27 Orbits#^prop-27-2|The Orbit Relation]], [[§28 Left and Right Cosets#^prop-28-2|Cosets Are the Equivalence Classes]].
 > - Elementary version: [[§22 Partitions and Equivalence Relations#^thm-22-3|250 Thm. §22.3]] (classes are equal or disjoint) and [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
 

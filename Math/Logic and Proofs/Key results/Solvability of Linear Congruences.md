@@ -11,7 +11,6 @@ tags: [logic-and-proofs, hub]
 - [[§20 Linear Congruences#^thm-20-4|Theorem §20.4: Solvability and Number of Solutions]], in [[§20 Linear Congruences]]
 
 ## Its proof uses
-- [[§11 Properties of Finite Sets#^prop-11-10|Proposition §11.10: Dividing Out the gcd]]
 - [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1: The gcd Is an Integral Linear Combination]]
 - [[§19 Congruence of Integers#^prop-19-4|Proposition §19.4: Each Integer Has a Unique Remainder]]
 - [[§19 Congruence of Integers#^prop-19-6|Proposition §19.6: Dividing by a Divisor of the Modulus]]
@@ -19,7 +18,6 @@ tags: [logic-and-proofs, hub]
 - [[§20 Linear Congruences#^thm-20-3|Theorem §20.3: Coprime Coefficient]]
 
 ## Used in (Logic and Proofs)
-- [[§20 Linear Congruences#^ex-20-5|Example §20.5: A Coefficient Not Coprime to the Modulus]]
 - [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9|Corollary §21.9: Invertible If and Only If Coprime]]
 
 ## Connections

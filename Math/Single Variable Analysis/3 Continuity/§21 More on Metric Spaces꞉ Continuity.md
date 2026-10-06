@@ -10,7 +10,7 @@ tags: [real-analysis, math451]
 The next two sections generalize what we have learned to metric spaces. (They are important, but discussing them in full would take many lectures; the lecture touched only the key definitions and one theorem.)
 
 > [!definition] Definition §21.1: Continuous Maps Between Metric Spaces
-> Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. A map $f: X \to Y$ is **continuous at $x_0 \in X$** if for every $\varepsilon > 0$ there exists $\delta > 0$ such that for every $x \in X$,
+> Let $(X, d_X)$ and $(Y, d_Y)$ be [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|metric spaces]]. A map $f: X \to Y$ is **continuous at $x_0 \in X$** if for every $\varepsilon > 0$ there exists $\delta > 0$ such that for every $x \in X$,
 >
 > $$
 > d_X(x, x_0) < \delta \quad \Longrightarrow \quad d_Y\bigl(f(x), f(x_0)\bigr) < \varepsilon.

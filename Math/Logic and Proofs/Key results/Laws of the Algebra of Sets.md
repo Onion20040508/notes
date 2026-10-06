@@ -15,8 +15,8 @@ tags: [logic-and-proofs, hub]
 - [[§1 The Language of Mathematics#^thm-1-2|Theorem §1.2: Excluded Middle, Non-Contradiction, Identity and Annihilation]]
 - [[§6 The Language of Set Theory#^def-6-3|Definition §6.3: Equality of Sets]]
 - [[§6 The Language of Set Theory#^def-6-6|Definition §6.6: Intersection; Disjoint Sets]]
-- [[§6 The Language of Set Theory#^ex-6-7|Example §6.7: Distributivity by Truth Table]]
 - [[§6 The Language of Set Theory#^def-6-7|Definition §6.7: Union]]
+- [[§6 The Language of Set Theory#^ex-6-7|Example §6.7: Distributivity by Truth Table]]
 - [[§6 The Language of Set Theory#^def-6-10|Definition §6.10: Universal Set; Complement]]
 
 ## Used in (Logic and Proofs)

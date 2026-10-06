@@ -82,7 +82,7 @@ When writing $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f
 ^rem-35-2
 
 > [!theorem] Theorem §35.1: Continuous Functions Are Integrable
-> If $f$ is continuous on $[a, b]$, or if $f$ has only a finite number of jump discontinuities, then $f$ is integrable on $[a, b]$; that is, the definite integral $\int_a^b f(x)\,dx$ exists.
+> If $f$ is continuous on $[a, b]$, or if $f$ has only a finite number of [[§10 Continuity#^def-10-3|jump discontinuities]], then $f$ is integrable on $[a, b]$; that is, the definite integral $\int_a^b f(x)\,dx$ exists.
 >
 > *Stewart: 5.2, Theorem 3*
 

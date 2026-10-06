@@ -232,7 +232,7 @@ A physicist often simplifies a function by keeping only the first two or three t
 > \frac{n_1}{\ell_o} + \frac{n_2}{\ell_i} = \frac1R \left( \frac{n_2 s_i}{\ell_i} - \frac{n_1 s_o}{\ell_o} \right) , \qquad (1)
 > $$
 >
-> and the Law of Cosines in triangles $ACS$ and $ACP$ (with $\cos(\pi - \phi) = -\cos\phi$) gives
+> and the [[§119 Trigonometry#^thm-119-11|Law of Cosines]] in triangles $ACS$ and $ACP$ (with $\cos(\pi - \phi) = -\cos\phi$) gives
 >
 > $$
 > \ell_o = \sqrt{R^2 + (s_o + R)^2 - 2R(s_o + R)\cos\phi} , \qquad \ell_i = \sqrt{R^2 + (s_i - R)^2 + 2R(s_i - R)\cos\phi} . \qquad (2)

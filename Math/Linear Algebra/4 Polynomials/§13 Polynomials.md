@@ -177,7 +177,7 @@ tags: [linear-algebra]
 > - In 235: stated without proof, in factored form, in [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (an n × n matrix has n complex eigenvalues, counting multiplicities).
 > - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (proof by Liouville's theorem) and [[§94 Rouché's Theorem#^ex-94-2|342 Ex. §94.2]] (proof by Rouché's theorem, giving exactly n zeros in a large disk). The minimum argument here is the polynomial case of the minimum modulus principle, [[§59 Maximum Modulus Principle#^ex-59-2|342 Ex. §59.2]].
 > - The k-th roots step, in exponential form: [[§10 Roots of Complex Numbers#^thm-10-2|342 Thm. §10.2]].
-> - Analytic input, in topological terms: a closed disk in $\C=\R^2$ is compact ([[Heine–Borel Theorem]]) and its image under the continuous $|p|$ is compact ([[Continuous Image of a Compact Space is Compact]]), so $|p|$ attains a minimum; the interval case is 451's [[Extreme Value Theorem]]. A proof by the fundamental group of the circle: [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]].
+> - Analytic input, in topological terms: a closed disk in $\C=\R^2$ is compact ([[Heine–Borel Theorem]]) and its image under the continuous $|p|$ is compact ([[Continuous Image of a Compact Space is Compact]]), so $|p|$ attains a minimum; the interval case is 451's [[Extreme Value Theorem]]. A proof by the fundamental group of the circle ([[Fundamental Group of the Circle|590 Thm. §24.10]]): [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]].
 
 > [!theorem] Theorem 4.13: Fundamental theorem of algebra, second version
 > A nonconstant $p\in\Poly(\C)$ has a factorization, unique up to the order of the factors,

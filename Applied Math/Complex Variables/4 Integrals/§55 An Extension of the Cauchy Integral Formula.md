@@ -188,7 +188,7 @@ The procedure is the one of [[§54 Cauchy Integral Formula#^rem-54-1|Remark: Met
 > g(z) = \frac{2\pi i}{2!}f''(z) = \pi i \cdot 6z = 6\pi iz .
 > $$
 >
-> **$z$ outside $C$.** As a function of $s$, the integrand is analytic except at $s = z$, which is exterior to $C$; so it is analytic at all points interior to and on $C$, and $g(z) = 0$ by the Cauchy–Goursat theorem. (For $z$ on $C$ the integral is not defined.)
+> **$z$ outside $C$.** As a function of $s$, the integrand is analytic except at $s = z$, which is exterior to $C$; so it is analytic at all points interior to and on $C$, and $g(z) = 0$ by the [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Cauchy–Goursat theorem]]. (For $z$ on $C$ the integral is not defined.)
 >
 > (Check with $C$ the circle $|s| = 1.5$: quadrature gives $g(0.3 + 0.4i) = -7.5398 + 5.6549i = 6\pi i(0.3 + 0.4i)$ and $g(2 + i) = 0$.)
 >

@@ -159,7 +159,7 @@ The success of separation of variables depends on having homogeneous boundary co
 > [!remark] Remark: Method — Splitting a Rectangle Problem
 > To solve the potential equation in a rectangle with nonhomogeneous conditions on adjacent sides:
 > 1. Write $u = u_1 + u_2$. For $u_1$, **zero the conditions on two facing sides** and **copy the rest**; for $u_2$, zero the conditions on the other pair of facing sides and copy the rest. A condition is "zeroed" by keeping its type and replacing its data by $0$: $u = g$ becomes $u = 0$, $\partial u/\partial n = g$ becomes $\partial u/\partial n = 0$.
-> 2. Check the sum: the potential equation is linear and homogeneous, so $u_1 + u_2$ satisfies it (Principle of Superposition); derivatives of a sum are sums of derivatives, so on each side the conditions of $u_1$ and $u_2$ add up to the original condition.
+> 2. Check the sum: the potential equation is linear and homogeneous, so $u_1 + u_2$ satisfies it ([[§19 Example꞉ Fixed End Temperatures#^thm-19-4|Principle of Superposition]]); derivatives of a sum are sums of derivatives, so on each side the conditions of $u_1$ and $u_2$ add up to the original condition.
 > 3. Solve each part by separation of variables; the zeroed pair of sides gives the eigenvalue problem.
 > 4. Before splitting, see whether a harmonic polynomial ([[§35 Potential Equation#^prop-35-2|Proposition §35.2]]) satisfies some of the conditions: if nonhomogeneous conditions on adjacent sides are constants or first-degree polynomials in one variable, subtracting a polynomial may leave a problem that needs only one series (Example §37.4).
 

@@ -9,9 +9,9 @@ tags: [chapter, fourier-series-and-pdes]
 
 *Powers, Chapter 2.*
 
-**Builds on:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (1), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (13), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (2)
-**Used by:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (2), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (6), [[· 3 The Wave Equation|3 The Wave Equation]] (6), [[· 4 The Potential Equation|4 The Potential Equation]] (6), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (13), [[· 6★ Laplace Transform|6★ Laplace Transform]] (2), [[· 7★ Numerical Methods|7★ Numerical Methods]] (1)
-**Developed further in (other subjects):** [[Functional Analysis]] (10), [[Single Variable Analysis]] (6), [[Measure Theory]] (3), [[Multivariable Analysis]] (4), [[Linear Algebra]] (5), [[Applied Linear Algebra]] (11), [[Ordinary Differential Equations]] (3), [[Calculus]] (4)
+**Builds on:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (1), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (14), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (2)
+**Used by:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (3), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (11), [[· 3 The Wave Equation|3 The Wave Equation]] (6), [[· 4 The Potential Equation|4 The Potential Equation]] (6), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (13), [[· 6★ Laplace Transform|6★ Laplace Transform]] (2), [[· 7★ Numerical Methods|7★ Numerical Methods]] (1)
+**Developed further in (other subjects):** [[Functional Analysis]] (10), [[Single Variable Analysis]] (6), [[Measure Theory]] (3), [[Multivariable Analysis]] (5), [[Linear Algebra]] (5), [[Applied Linear Algebra]] (11), [[Ordinary Differential Equations]] (3), [[Calculus]] (4)
 
 ## Sections
 - [[§17 Derivation and Boundary Conditions]] — Powers 2.1

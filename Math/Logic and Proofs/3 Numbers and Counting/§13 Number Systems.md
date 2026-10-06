@@ -74,7 +74,7 @@ For example $\langle 2/3 \rangle = \langle 8/12 \rangle = \langle (-14)/(-21) \r
 
 *Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§11 Properties of Finite Sets#^prop-11-10|§11.10]], [[§13 Number Systems#^def-13-2|Def. §13.2]]
 
-The lowest-terms fraction is in fact unique; this needs Euclid's lemma and is proved later, in [[§17 Consequences of the Euclidean Algorithm#^ex-17-7|Example §17.7]] (Eccles Exercise 17.6). Nothing before §17 uses the uniqueness.
+The lowest-terms fraction is in fact unique; this needs [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Euclid's lemma]] and is proved later, in [[§17 Consequences of the Euclidean Algorithm#^ex-17-7|Example §17.7]] (Eccles Exercise 17.6). Nothing before §17 uses the uniqueness.
 
 To see how sums look in terms of fractions, let $q_1 = \langle a/b \rangle$ and $q_2 = \langle c/d \rangle$, so $bq_1 = a$ and $dq_2 = c$. Then $bdq_1 = ad$ and $bdq_2 = bc$, so by distributivity $bd(q_1 + q_2) = ad + bc$: $q_1 + q_2$ is represented by $(ad + bc)/bd$. Similarly $bd\,q_1 q_2 = ac$, so $q_1 q_2$ is represented by $ac/bd$.
 

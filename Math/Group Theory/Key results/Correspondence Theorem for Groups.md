@@ -11,11 +11,10 @@ tags: [group-theory, hub]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|Theorem §42.3: The Correspondence Theorem]], in [[§42 The Correspondence and Third Isomorphism Theorems]]
 
 ## Its proof uses
-- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|Proposition §42.1: Images of Subgroups Containing N]]
-- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|Proposition §42.2: Preimages of Subgroups of G/N]]
+- (only definitions)
 
 ## Used in (Group Theory)
-- [[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Example §45.2: The Correspondence for S_4 and V]]
+- (not cited later in the course)
 
 ## Connections
 - **How.** Push subgroups down with π and pull them back with π⁻¹ ([[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]]); the hypothesis N ⊆ A is what makes π⁻¹(π(A)) = A, and it is used exactly once, for “normal downstairs ⇒ normal upstairs”.

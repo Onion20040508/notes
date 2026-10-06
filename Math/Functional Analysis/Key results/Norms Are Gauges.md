@@ -12,8 +12,8 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§4 Statement and Motivation#^def-4-1|Definition §4.1: Positive Homogeneous; Subadditive]]
-- [[§6 Convex Sets and the Gauge#^prop-6-1|Proposition §6.1: Positive Homogeneous Subadditive p Gives a Convex Set]]
 - [[§6 Convex Sets and the Gauge#^def-6-1|Definition §6.1: Interior Point]]
+- [[§6 Convex Sets and the Gauge#^prop-6-1|Proposition §6.1: Positive Homogeneous Subadditive p Gives a Convex Set]]
 - [[§6 Convex Sets and the Gauge#^def-6-2|Definition §6.2: Gauge]]
 - [[§6 Convex Sets and the Gauge#^prop-6-5|Proposition §6.5: Values of the Gauge]]
 - [[§6 Convex Sets and the Gauge#^prop-6-6|Proposition §6.6: The Gauge is Positive Homogeneous and Subadditive]]

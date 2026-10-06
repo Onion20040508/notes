@@ -48,20 +48,20 @@ graph TD
   C2 -.->|4| X9
   C2 -.->|7| X2
   C2 -.->|11| X1
-  C3 -.->|14| X4
-  C3 -.->|5| X5
+  C3 -.->|18| X4
+  C3 -.->|8| X5
   C3 -.->|5| X10
-  C3 -.->|19| X9
+  C3 -.->|22| X9
   C3 -.->|5| X3
   C6 -.->|4| X5
-  C6 -.->|7| X10
+  C6 -.->|9| X10
   C6 -.->|11| X9
   C6 -.->|3| X6
   C6 -.->|3| X1
-  C7 -.->|45| X4
-  C7 -.->|7| X5
+  C7 -.->|48| X4
+  C7 -.->|10| X5
   C7 -.->|6| X9
-  C7 -.->|3| X7
+  C7 -.->|4| X7
   C7 -.->|30| X3
 ```
 
@@ -108,4 +108,4 @@ Asynchronous video lectures (no lecture notes in the course folder). Grading: fi
 Examples marked *Source: 331 …* come from the written homework, the Summer 2023 midterm and earlier UMass exams (Spring 2020 midterm, Fall 2021 and Fall 2022 finals).
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each other subject: [[Applied Linear Algebra]] (64), [[Calculus]] (57), [[Fourier Series and PDEs]] (40), [[Linear Algebra]] (36), [[Single Variable Analysis]] (19), [[Complex Variables]] (12), [[Multivariable Analysis]] (7), [[Functional Analysis]] (5), [[Measure Theory]] (3), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each other subject: [[Applied Linear Algebra]] (71), [[Calculus]] (63), [[Fourier Series and PDEs]] (43), [[Linear Algebra]] (36), [[Single Variable Analysis]] (19), [[Complex Variables]] (14), [[Multivariable Analysis]] (7), [[Functional Analysis]] (7), [[Measure Theory]] (3), [[Differentiable Manifolds]] (2), [[Topology]] (1).

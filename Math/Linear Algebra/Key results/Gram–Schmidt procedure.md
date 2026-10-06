@@ -27,6 +27,6 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - Existence of orthonormal bases [[§20 Orthonormal Bases#^ladr-6-35|6.35]]; triangular form [[§20 Orthonormal Bases#^ladr-6-37|6.37]]; QR factorization is Gram–Schmidt in matrix form ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|QR factorization]]).
-- Applied to $1,x,x^2,\dots$ with $\int_{-1}^1pq$ it produces the Legendre polynomials ([[§20 Orthonormal Bases#^ladr-6-34|6.34]]), the angular part of multipole expansions.
+- Applied to $1,x,x^2,\dots$ with $\int_{-1}^1pq$ it produces the Legendre polynomials ([[§20 Orthonormal Bases#^ladr-6-34|6.34]]; in general [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|341 Def. §49.3]]), the angular part of multipole expansions.
 - Same procedure for an infinite linearly independent sequence: [[§24 Orthonormal Sets and Bases#^lem-24-14|556 Lemma §24.14]], used to show that separable Hilbert spaces have countable orthonormal bases.
 - **Also in [[Applied Linear Algebra]]:** [[§43 The Gram–Schmidt Process#^thm-43-1|235 Thm. §43.1]] (the process in $\mathbb R^n$, with worked examples and the QR factorization).

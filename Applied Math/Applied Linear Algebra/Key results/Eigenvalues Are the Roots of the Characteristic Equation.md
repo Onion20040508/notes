@@ -13,7 +13,6 @@ tags: [applied-linear-algebra, hub]
 ## Its proof uses
 - [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1: The Invertible Matrix Theorem]]
 - [[§32 Eigenvectors and Eigenvalues#^def-32-1|Definition §32.1: Eigenvector and Eigenvalue]]
-- [[§32 Eigenvectors and Eigenvalues#^def-32-2|Definition §32.2: Eigenspace]]
 - [[§33 The Characteristic Equation#^thm-33-3|Theorem §33.3: Properties of Determinants]]
 
 ## Used in (Applied Linear Algebra)

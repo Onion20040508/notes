@@ -16,7 +16,6 @@ tags: [ordinary-differential-equations, hub]
 - [[§26★ The Convolution Integral#^def-26-1|Definition §26.1: Convolution]]
 
 ## Used in (Ordinary Differential Equations)
-- [[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6: Table of Elementary Laplace Transforms]]
 - [[§26★ The Convolution Integral#^thm-26-3|Theorem §26.3: Structure of the Solution of an Input–Output Problem]]
 
 ## Connections

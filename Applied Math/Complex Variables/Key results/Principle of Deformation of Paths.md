@@ -16,8 +16,6 @@ tags: [complex-variables, hub]
 
 ## Used in (Complex Variables)
 - [[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1: Cauchy Integral Formula]]
-- [[§66 Laurent Series#^ex-66-1|Example §66.1: The Inverse z-Transform]]
-- [[§67 Proof of Laurent's Theorem#^ex-67-1|Example §67.1: One Function, Three Domains]]
 - [[§67 Proof of Laurent's Theorem#^thm-67-1|Theorem §67.1: Laurent's Theorem]]
 - [[§77★ Residue at Infinity#^prop-77-1|Proposition §77.1: Computing the Residue at Infinity]]
 - [[§128★ Schwarz–Christoffel Transformation#^thm-128-4|Theorem §128.4: Schwarz–Christoffel Transformation]]

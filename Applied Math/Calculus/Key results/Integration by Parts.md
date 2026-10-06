@@ -17,9 +17,7 @@ tags: [calculus, hub]
 
 ## Used in (Calculus)
 - [[§44 Integration by Parts#^prop-44-3|Proposition §44.3: Reduction Formula for Powers of Sine]]
-- [[§45 Trigonometric Integrals#^ex-45-4|Example §45.4: The Integral of Secant Cubed]]
 - [[§49 Integration Using Tables and Technology#^prop-49-1|Proposition §49.1: Reduction Formulas for a Power Times Sine or Cosine]]
-- [[§61 Linear Equations#^ex-61-5|Example §61.5: A Circuit with a Generator]]
 
 ## Connections
 - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]], the definite form ([[§44 Integration by Parts#^thm-44-2|Theorem §44.2]] here), under weaker hypotheses ($u$, $v$ continuous on $[a, b]$, differentiable inside, with integrable derivatives), by the same proof.

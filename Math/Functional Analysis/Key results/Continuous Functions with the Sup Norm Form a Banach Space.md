@@ -21,7 +21,6 @@ tags: [functional-analysis, hub]
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8: Cauchy Implies Convergent]]
 
 ## Used in (Functional Analysis)
-- [[§11 Completeness#^ex-11-2|Example §11.2: C²[a,b] with a C¹ Norm]]
 - [[§11 Completeness#^prop-11-7|Proposition §11.7: (C²[a,b], ∣·∣_X) is Not Complete]]
 - [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-5|Proposition §17.5: Continuous Functions are Not Dense in L^∞]]
 - [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ[a,b] as a Completion]]

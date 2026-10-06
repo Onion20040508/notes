@@ -74,7 +74,7 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 >
 > Check: $-3 + 2 \cdot 4 = 5$ and $3(-3) + 4 \cdot 4 = 7$.
 >
-> **(b)** Systems whose coefficients involve a parameter $s$ arise when Laplace transforms turn linear differential equations (electrical engineering, control theory) into algebraic equations. For which $s$ does
+> **(b)** Systems whose coefficients involve a parameter $s$ arise when [[§21 Definition of the Laplace Transform#^def-21-4|Laplace transforms]] turn linear differential equations (electrical engineering, control theory) into algebraic equations. For which $s$ does
 >
 > $$
 > \begin{cases} 3s\,x_1 - 2x_2 = 4 \\ -6x_1 + s\,x_2 = 1 \end{cases}

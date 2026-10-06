@@ -105,13 +105,13 @@ $$
 >
 > In the inner integral $x$ and $y$ are held fixed, so $u_1(x, y)$ and $u_2(x, y)$ are constants. In particular:
 >
-> - if $D$ is a type I plane region, $E = \{(x, y, z) \mid a \le x \le b,\ g_1(x) \le y \le g_2(x),\ u_1(x, y) \le z \le u_2(x, y)\}$ and
+> - if $D$ is a [[§99 Double Integrals Over General Regions#^def-99-2|type I plane region]], $E = \{(x, y, z) \mid a \le x \le b,\ g_1(x) \le y \le g_2(x),\ u_1(x, y) \le z \le u_2(x, y)\}$ and
 >
 > $$
 > \iiint_E f(x, y, z)\,dV = \int_a^b \int_{g_1(x)}^{g_2(x)} \int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z)\,dz\,dy\,dx ; \qquad (7)
 > $$
 >
-> - if $D$ is a type II plane region, $E = \{(x, y, z) \mid c \le y \le d,\ h_1(y) \le x \le h_2(y),\ u_1(x, y) \le z \le u_2(x, y)\}$ and
+> - if $D$ is a [[§99 Double Integrals Over General Regions#^def-99-3|type II plane region]], $E = \{(x, y, z) \mid c \le y \le d,\ h_1(y) \le x \le h_2(y),\ u_1(x, y) \le z \le u_2(x, y)\}$ and
 >
 > $$
 > \iiint_E f(x, y, z)\,dV = \int_c^d \int_{h_1(y)}^{h_2(y)} \int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z)\,dz\,dx\,dy . \qquad (8)
@@ -367,7 +367,7 @@ All the applications of double integrals in [[§101 Applications of Double Integ
 > I_x = \iiint_E (y^2 + z^2)\rho\,dV , \qquad I_y = \iiint_E (x^2 + z^2)\rho\,dV , \qquad I_z = \iiint_E (x^2 + y^2)\rho\,dV . \qquad (16)
 > $$
 >
-> Likewise, a charge density $\sigma(x, y, z)$ gives the total **electric charge** $Q = \iiint_E \sigma\,dV$, and the **joint density function** of three continuous random variables $X$, $Y$, $Z$ is a function $f \ge 0$ with $P\big((X, Y, Z) \in E\big) = \iiint_E f\,dV$ and $\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dz\,dy\,dx = 1$; in particular $P(a \le X \le b,\ c \le Y \le d,\ r \le Z \le s) = \int_a^b \int_c^d \int_r^s f\,dz\,dy\,dx$.
+> Likewise, a charge density $\sigma(x, y, z)$ gives the total **electric charge** $Q = \iiint_E \sigma\,dV$, and the **joint density function** of three [[§56 Probability#^def-56-1|continuous random variables]] $X$, $Y$, $Z$ is a function $f \ge 0$ with $P\big((X, Y, Z) \in E\big) = \iiint_E f\,dV$ and $\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dz\,dy\,dx = 1$; in particular $P(a \le X \le b,\ c \le Y \le d,\ r \le Z \le s) = \int_a^b \int_c^d \int_r^s f\,dz\,dy\,dx$.
 >
 > *Stewart: 15.6, Equations 13, 14, 15 and 16*
 

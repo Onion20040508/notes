@@ -31,7 +31,7 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 ^def-74-1
 
 > [!remark]- Connections
-> - "Isolated" is meant in the topological sense: an isolated singular point is not a limit point (accumulation point) of the other singular points, [[§7 Interior and Closure#^def-7-3|590 Def. §7.3]]. In [[§74 Isolated Singular Points#^ex-74-3|Example §74.3]] the origin is a limit point of the singular points $1/n$, and that is exactly why it is not isolated.
+> - "Isolated" is meant in the topological sense: an isolated singular point is not a limit point ([[§12★ Regions in the Complex Plane#^def-12-6|accumulation point]]) of the other singular points, [[§7 Interior and Closure#^def-7-3|590 Def. §7.3]]. In [[§74 Isolated Singular Points#^ex-74-3|Example §74.3]] the origin is a limit point of the singular points $1/n$, and that is exactly why it is not isolated.
 
 > [!example] Example §74.1: A Rational Function
 > The function

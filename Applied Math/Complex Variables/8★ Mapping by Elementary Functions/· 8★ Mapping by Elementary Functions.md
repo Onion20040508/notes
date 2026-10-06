@@ -9,8 +9,8 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 8 · ★ beyond MAT 342.*
 
-**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (5), [[· 2 Analytic Functions|2 Analytic Functions]] (7), [[· 3 Elementary Functions|3 Elementary Functions]] (12), [[· 4 Integrals|4 Integrals]] (1)
-**Used by:** [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (5), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (8), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (2), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (2)
+**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (8), [[· 2 Analytic Functions|2 Analytic Functions]] (8), [[· 3 Elementary Functions|3 Elementary Functions]] (12), [[· 4 Integrals|4 Integrals]] (1)
+**Used by:** [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (5), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (10), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (2), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (2)
 **Developed further in (other subjects):** [[Topology]] (5), [[Applied Linear Algebra]] (1), [[Group Theory]] (1), [[Differentiable Manifolds]] (1)
 
 ## Sections

@@ -19,7 +19,7 @@ tags: [complex-variables, math342, extension]
 B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here it comes first. Identify a plane vector $(a, b)$ with the complex number $a + ib$. Then the dot product of two vectors is $\operatorname{Re}(\alpha\bar\beta)$, and the gradients are $\nabla H = H_x + iH_y$ and $\nabla h = h_u + ih_v$.
 
 > [!theorem] Lemma §117.1: Gradients and Directional Derivatives Are Scaled by |f′(z)|
-> Let $w = f(z) = u(x, y) + iv(x, y)$ be a conformal mapping of a smooth arc $C$ onto a smooth arc $\Gamma$, let $h(u, v)$ be differentiable near $\Gamma$, and put $H(x, y) = h[u(x, y), v(x, y)]$. At a point $(x, y)$ of $C$ with image $(u, v)$ on $\Gamma$:
+> Let $w = f(z) = u(x, y) + iv(x, y)$ be a conformal mapping of a [[§43 Contours#^def-43-4|smooth arc]] $C$ onto a smooth arc $\Gamma$, let $h(u, v)$ be differentiable near $\Gamma$, and put $H(x, y) = h[u(x, y), v(x, y)]$. At a point $(x, y)$ of $C$ with image $(u, v)$ on $\Gamma$:
 >
 > **(a)** $\nabla H = \overline{f'(z)}\,\nabla h$; in particular
 >

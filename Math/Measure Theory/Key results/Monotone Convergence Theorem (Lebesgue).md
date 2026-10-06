@@ -33,10 +33,6 @@ tags: [measure-theory, hub]
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|Theorem §17.11: The Subgraph Theorem]]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|Corollary §19.12: Minkowski for Nonnegative Series]]
 
-## Used in (Functional Analysis)
-- [[§17 The Function Spaces Lᵖ(Ω)#^rem-17-2|Remark: What “Integrable” Means Here]]
-- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
-
 ## Connections
 - **Not the 451 theorem.** The MATH 451 [[Monotone Convergence Theorem]] says bounded monotone sequences of reals converge. This theorem exchanges limit and integral for 0 ≤ f_k ↑ f. It uses the 451 result in Step 1, to know that lim ∫f_k exists.
 - **Proof idea.** ∫f_k ≤ ∫f by monotonicity. For the reverse, fix a simple h ≤ f and c ∈ (0, 1). The sets {f_k ≥ c·h} increase to E, so [[§14 The Lebesgue Integral for Simple Functions#^lem-14-5|Lemma §14.5]] (from [[Continuity of Measure]]) gives lim ∫f_k ≥ c∫h.

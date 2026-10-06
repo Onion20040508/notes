@@ -18,12 +18,9 @@ tags: [complex-variables, hub]
 ## Used in (Complex Variables)
 - [[§35 The Power Function#^thm-35-2|Theorem §35.2: Derivative of a Branch of z^c]]
 - [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-3|Proposition §40.3: Derivatives of the Inverse Trigonometric Functions]]
-- [[§48 Antiderivatives#^ex-48-2|Example §48.2: 1/z² Has an Antiderivative on the Punctured Plane, 1/z Does Not]]
-- [[§49 Proof of the Theorem (Antiderivatives)#^ex-49-1|Example §49.1: Powers of z − z₀ Around Closed Contours]]
 - [[§91★ Integration Along a Branch Cut#^prop-91-1|Proposition §91.1: The Residue Theorem on the Keyhole]]
 - [[§93 Argument Principle#^prop-93-2|Proposition §93.2: Winding Number Zero Off a Ray]]
 - [[§108★ Mappings by Branches of z^(1∕2)#^prop-108-3|Proposition §108.3: Branches of z^(1/n)]]
-- [[§114★ Local Inverses#^ex-114-1|Example §114.1: Local Inverses of the Exponential Function]]
 
 ## Connections
 - The derivative $1/z$ restricts on the positive real axis to $\frac{d}{dx}\ln x = \frac1x$, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|Calc Cor. §19.3]]. The real proof differentiates an inverse function; the same route works here, [[§33 Branches and Derivatives of Logarithms#^ex-33-3|Example §33.3]].

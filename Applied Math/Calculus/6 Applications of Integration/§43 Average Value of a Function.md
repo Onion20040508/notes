@@ -95,7 +95,7 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 *Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§43 Average Value of a Function#^def-43-1|Def. §43.1]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]] proves it with the Intermediate Value Theorem instead (the average lies between the minimum and maximum of $f$), [[§33 Properties of the Riemann Integral#^prop-33-11|451 Prop. §33.11]] shows that $c$ can be taken in $(a, b)$, and [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] is the weighted version.
+> - Rigorous treatment: [[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]] proves it with the [[§10 Continuity#^thm-10-10|Intermediate Value Theorem]] instead (the average lies between the minimum and maximum of $f$), [[§33 Properties of the Riemann Integral#^prop-33-11|451 Prop. §33.11]] shows that $c$ can be taken in $(a, b)$, and [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] is the weighted version.
 
 > [!example] Example §43.2: Where f Equals Its Average
 > $f(x) = 1 + x^2$ is continuous on $[-1, 2]$, so by Theorem §43.1 there is a number $c$ in $[-1, 2]$ such that

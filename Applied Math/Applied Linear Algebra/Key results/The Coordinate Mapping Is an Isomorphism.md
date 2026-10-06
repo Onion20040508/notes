@@ -18,7 +18,6 @@ tags: [applied-linear-algebra, hub]
 ## Used in (Applied Linear Algebra)
 - [[§26 Coordinate Systems#^cor-26-4|Corollary §26.4: Coordinates Preserve Independence and Spanning]]
 - [[§27 The Dimension of a Vector Space#^thm-27-1|Theorem §27.1: More Vectors Than the Basis Means Dependence]]
-- [[§29 Change of Basis#^ex-29-1|Example §29.1: Two Coordinate Systems for One Space]]
 - [[§29 Change of Basis#^thm-29-1|Theorem §29.1: The Change-of-Coordinates Matrix]]
 - [[§29 Change of Basis#^thm-29-2|Theorem §29.2: The Change-of-Coordinates Matrix Is Invertible]]
 - [[§35 Eigenvectors and Linear Transformations#^thm-35-1|Theorem §35.1: The Matrix for T Relative to B and C]]

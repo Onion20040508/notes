@@ -53,19 +53,19 @@ graph TD
   C5 -.->|on credit| C4
   C0 -.->|4| X5
   C0 -.->|7| X4
-  C1 -.->|8| X6
-  C1 -.->|7| X8
-  C1 -.->|13| X10
-  C1 -.->|15| X1
+  C1 -.->|10| X6
+  C1 -.->|8| X8
+  C1 -.->|15| X10
+  C1 -.->|18| X1
   C1 -.->|4| X5
-  C1 -.->|5| X3
+  C1 -.->|6| X3
   C1 -.->|17| X2
   C2 -.->|11| X6
   C2 -.->|4| X8
   C2 -.->|10| X1
   C2 -.->|5| X5
   C2 -.->|3| X3
-  C2 -.->|4| X4
+  C2 -.->|5| X4
   C2 -.->|3| X7
   C2 -.->|6| X2
   C3 -.->|4| X6
@@ -78,7 +78,7 @@ graph TD
   C5 -.->|10| X4
   C5 -.->|3| X7
   C5 -.->|3| X2
-  C6 -.->|7| X10
+  C6 -.->|13| X10
   C6 -.->|3| X3
   C6 -.->|6| X7
   C7 -.->|5| X7
@@ -130,4 +130,4 @@ Two lectures a week (handwritten lecture notes, weeks 1–13; week 11 missing), 
 Examples marked *Source: 341 …* come from the lectures, homework, midterms and practice problems.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each other subject: [[Complex Variables]] (49), [[Multivariable Analysis]] (36), [[Applied Linear Algebra]] (30), [[Functional Analysis]] (30), [[Calculus]] (29), [[Single Variable Analysis]] (29), [[Ordinary Differential Equations]] (21), [[Linear Algebra]] (20), [[Measure Theory]] (12).
+Number of *Connections* links from these notes to each other subject: [[Complex Variables]] (57), [[Multivariable Analysis]] (37), [[Functional Analysis]] (33), [[Applied Linear Algebra]] (32), [[Calculus]] (30), [[Single Variable Analysis]] (29), [[Ordinary Differential Equations]] (21), [[Linear Algebra]] (20), [[Measure Theory]] (13).

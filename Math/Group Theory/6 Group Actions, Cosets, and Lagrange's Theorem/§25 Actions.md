@@ -30,7 +30,7 @@ tags: [group-theory, math493]
 ^def-25-1
 
 > [!remark]- Connections
-> - Same definition in 591, [[§12 Group Actions and Orbit Spaces#^def-12-1|591 Def. §12.1]]; for a topological group acting on a space one also asks that the action map be continuous, [[§12 Group Actions and Orbit Spaces#^def-12-2|591 Def. §12.2]].
+> - Same definition in 591, [[§12 Group Actions and Orbit Spaces#^def-12-1|591 Def. §12.1]]; for a [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|topological group]] acting on a space one also asks that the action map be continuous, [[§12 Group Actions and Orbit Spaces#^def-12-2|591 Def. §12.2]].
 
 > [!definition] Definition §25.2: Arrow Notation
 > - $f: X \to Y$ denotes a **function** from the set $X$ to the set $Y$; the arrow $\to$ goes between *sets*.

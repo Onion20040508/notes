@@ -26,7 +26,6 @@ tags: [complex-variables, hub]
 ## Used in (Complex Variables)
 - [[§128★ Schwarz–Christoffel Transformation#^cor-128-5|Corollary §128.5: All Prevertices Finite]]
 - [[§129★ Triangles and Rectangles#^cor-129-1|Corollary §129.1: Mapping onto a Triangle]]
-- [[§129★ Triangles and Rectangles#^ex-129-5|Example §129.5: A Square]]
 
 ## Connections
 - See [[§128★ Schwarz–Christoffel Transformation]] for context and examples.

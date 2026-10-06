@@ -15,10 +15,7 @@ tags: [complex-variables, hub]
 - [[§57 Some Consequences of the Extension#^thm-57-4|Theorem §57.4: Cauchy's Inequality]]
 
 ## Used in (Complex Variables)
-- [[§37 The Trigonometric Functions sin z and cos z#^ex-37-3|Example §37.3: sin z Is Unbounded]]
-- [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^ex-58-2|Example §58.2: Entire Functions of Linear Growth]]
 - [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|Theorem §58.2: Fundamental Theorem of Algebra]]
-- [[§94 Rouché's Theorem#^ex-94-2|Example §94.2: The Fundamental Theorem of Algebra]]
 - [[§95★ Inverse Laplace Transforms#^thm-95-6|Theorem §95.6: Inverse Transform of a Rational Function]]
 
 ## Connections

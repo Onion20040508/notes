@@ -19,7 +19,6 @@ tags: [differentiable-manifolds, hub]
 - [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5: Basis Theorem]]
 
 ## Used in (Differentiable Manifolds)
-- [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Corollary §27.7: Consequences]]
 - [[§33 Submanifolds#^prop-33-8|Proposition §33.8: The Old and New Versions Agree]]
 
 ## Connections

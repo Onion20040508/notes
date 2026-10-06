@@ -20,9 +20,9 @@ tags: [measure-theory, hub]
 - [[§15 The General Lebesgue Integral#^thm-15-7|Theorem §15.7: Reverse Fatou's Lemma]]
 
 ## Its proof uses (other subjects)
+- [[Squeeze Theorem]] (Single Variable Analysis)
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6: Convergence via Lim Sup and Lim Inf]]
 - [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3: Properties of the Absolute Value]]
-- [[Squeeze Theorem]] (Single Variable Analysis)
 
 ## Used in (Measure Theory)
 - [[§15 The General Lebesgue Integral#^cor-15-9|Corollary §15.9: Absolute Convergence in L¹]]
@@ -32,12 +32,6 @@ tags: [measure-theory, hub]
 - [[§16 The L¹ Space and Density Theorems#^thm-16-5|Theorem §16.5: Simple Functions are Dense in L¹]]
 - [[§18 Differentiation Theory#^cor-18-14|Corollary §18.14: Term-by-Term Differentiation of AC Series]]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19: Density in Lᵖ]]
-
-## Used in (Functional Analysis)
-- [[§17 The Function Spaces Lᵖ(Ω)#^rem-17-2|Remark: What “Integrable” Means Here]]
-- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
-- [[§26 Boundedness and Continuity#^ex-26-2|Example §26.2: The Fourier Transform from L¹ to L^∞]]
-- [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-5|Proposition §32.5: The Spectral Projections of Position]]
 
 ## Connections
 - **Proof idea.** Fatou applied to F + f_k gives the [[§15 The General Lebesgue Integral#^thm-15-6|dominated]] Fatou lemma (§15.6); the [[§15 The General Lebesgue Integral#^thm-15-7|reverse]] one (§15.7) is proved in the notes by applying the decreasing and increasing MCT to the positive and negative parts of g_l = sup_{k≥l} f_k (Fatou applied to F − f_k gives it too). Together they give ∫f ≤ liminf ∫f_k ≤ limsup ∫f_k ≤ ∫f, and [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]] finishes. The alternative proof applies [[Fatou's Lemma]] to 2F − |f_k − f| and gets ∫|f_k − f| → 0 ([[§15 The General Lebesgue Integral#^rem-15-4|Rem. §15.4]]). It is the last link of MCT → Fatou → DCT.

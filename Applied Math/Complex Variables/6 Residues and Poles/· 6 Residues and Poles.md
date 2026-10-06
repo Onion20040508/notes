@@ -9,9 +9,9 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 6.*
 
-**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (2), [[· 2 Analytic Functions|2 Analytic Functions]] (9), [[· 3 Elementary Functions|3 Elementary Functions]] (11), [[· 4 Integrals|4 Integrals]] (10), [[· 5 Series|5 Series]] (22), [[· 7 Applications of Residues|7 Applications of Residues]] (2)
-**Used by:** [[· 2 Analytic Functions|2 Analytic Functions]] (2), [[· 4 Integrals|4 Integrals]] (1), [[· 5 Series|5 Series]] (4), [[· 7 Applications of Residues|7 Applications of Residues]] (22), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (1), [[Topology]] (3), [[Fourier Series and PDEs]] (5), [[Calculus]] (2)
+**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (5), [[· 2 Analytic Functions|2 Analytic Functions]] (9), [[· 3 Elementary Functions|3 Elementary Functions]] (13), [[· 4 Integrals|4 Integrals]] (13), [[· 5 Series|5 Series]] (22), [[· 7 Applications of Residues|7 Applications of Residues]] (2)
+**Used by:** [[· 2 Analytic Functions|2 Analytic Functions]] (2), [[· 4 Integrals|4 Integrals]] (1), [[· 5 Series|5 Series]] (4), [[· 7 Applications of Residues|7 Applications of Residues]] (28), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (2)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (1), [[Topology]] (3), [[Fourier Series and PDEs]] (5), [[Calculus]] (3)
 
 ## Sections
 - [[§74 Isolated Singular Points]] — B&C Sec. 74
@@ -35,5 +35,5 @@ tags: [chapter, complex-variables]
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1: Factoring Out a Zero]]: 25 later results
 - [[§82 Zeros of Analytic Functions#^thm-82-2|Theorem §82.2: Zeros Are Isolated]]: 23 later results
-- [[§75 Residues#^thm-75-1|Theorem §75.1: An Integral Is 2πi Times a Residue]]: 19 later results
+- [[§75 Residues#^thm-75-1|Theorem §75.1: An Integral Is 2πi Times a Residue]]: 20 later results
 - [[§82 Zeros of Analytic Functions#^thm-82-3|Theorem §82.3: Vanishing on a Domain or Segment Through z₀]]: 18 later results

@@ -14,7 +14,6 @@ tags: [real-analysis, hub]
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Theorem §10.6: Convergence via Lim Sup and Lim Inf]]
 - [[§11 Subsequences#^thm-11-5|Theorem §11.5: Bolzano–Weierstrass]]
 - [[§18 Properties of Continuous Functions#^thm-18-1|Theorem §18.1: Extreme Value Theorem]]
-- [[§29 The Mean Value Theorem#^prop-29-8|Proposition §29.8: Mean Value Inequality]]
 
 ## Used in (Multivariable Analysis)
 - [[§15 Multivariable Integration#^thm-15-3|Theorem §15.3: Additivity in the Integrand]]

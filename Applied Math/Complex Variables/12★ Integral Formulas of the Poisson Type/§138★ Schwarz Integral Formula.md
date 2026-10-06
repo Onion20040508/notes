@@ -52,7 +52,7 @@ This is the half-plane analog of [[§134★ Poisson Integral Formula|§134★]].
 
 ^pf-138-1
 
-*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]] (principal value), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (comparison for improper integrals)
+*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]] (principal value), [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (comparison for improper integrals), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (improper integrals of nonnegative functions)
 
 > [!theorem] Theorem §138.2: Schwarz Integral Formula
 > Let $f = u + iv$ satisfy the hypotheses of Theorem §138.1, and let $z = x + iy$ with $y > 0$. For every complex constant $c$,

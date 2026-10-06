@@ -51,7 +51,7 @@ For the cylinder above, the grid curves with $u$ constant are horizontal lines a
 > [!example] Example §112.1: A Plane
 > Find a vector function that represents the plane that passes through the point $P_0$ with position vector $\mathbf{r}_0$ and contains two nonparallel vectors $\mathbf{a}$ and $\mathbf{b}$.
 >
-> If $P$ is any point in the plane, we can get from $P_0$ to $P$ by moving a certain distance in the direction of $\mathbf{a}$ and another distance in the direction of $\mathbf{b}$ (Parallelogram Law): there are scalars $u$ and $v$ with $\overrightarrow{P_0P} = u\,\mathbf{a} + v\,\mathbf{b}$. If $\mathbf{r}$ is the position vector of $P$, then $\mathbf{r} = \overrightarrow{OP_0} + \overrightarrow{P_0P}$, so the vector equation of the plane is
+> If $P$ is any point in the plane, we can get from $P_0$ to $P$ by moving a certain distance in the direction of $\mathbf{a}$ and another distance in the direction of $\mathbf{b}$ ([[§81 Vectors#^thm-81-1|Parallelogram Law]]): there are scalars $u$ and $v$ with $\overrightarrow{P_0P} = u\,\mathbf{a} + v\,\mathbf{b}$. If $\mathbf{r}$ is the position vector of $P$, then $\mathbf{r} = \overrightarrow{OP_0} + \overrightarrow{P_0P}$, so the vector equation of the plane is
 >
 > $$
 > \mathbf{r}(u, v) = \mathbf{r}_0 + u\,\mathbf{a} + v\,\mathbf{b}, \qquad u, v \in \mathbb{R} .

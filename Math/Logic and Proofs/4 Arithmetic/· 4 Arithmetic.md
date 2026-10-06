@@ -11,7 +11,7 @@ tags: [chapter, logic-and-proofs]
 
 **Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (8), [[· 3 Numbers and Counting|3 Numbers and Counting]] (9)
 **Used by:** [[· 3 Numbers and Counting|3 Numbers and Counting]] (1), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (9), [[· 6 Prime Numbers|6 Prime Numbers]] (5)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Linear Algebra]] (1), [[Group Theory]] (15)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Linear Algebra]] (2), [[Group Theory]] (17)
 
 ## Sections
 - [[§15 The Division Theorem]]

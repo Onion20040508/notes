@@ -23,8 +23,6 @@ tags: [complex-variables, hub]
 - [[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1: Taylor's Theorem]]
 - [[§71★ Integration and Differentiation of Power Series#^thm-71-4|Theorem §71.4: Term-by-Term Differentiation]]
 - [[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1: Uniqueness of Taylor Series]]
-- [[§76 Cauchy's Residue Theorem#^ex-76-2|Example §76.2: Residue Theorem Versus Cauchy's Integral Formula]]
-- [[§80 Residues at Poles#^ex-80-3|Example §80.3: The Residue Formula from Cauchy's Integral Formula]]
 
 ## Connections
 - Steps 4–5 of the [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^pf-56-1|proof of Theorem §56.1]] are the complex form of integration by parts, [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]]: there the boundary term $[FG]_a^b$ survives, while around a closed contour it vanishes, so $n$ integrations by parts move all $n$ derivatives from $f$ onto $1/(s - z)$ at no cost.

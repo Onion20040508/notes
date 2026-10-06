@@ -37,7 +37,7 @@ Read backwards, the geometric series $\sum x^n = \frac{1}{1-x}$ says that the fu
 > \frac{1}{1 + x^2} = \frac{1}{1 - (-x^2)} = \sum_{n=0}^{\infty} (-x^2)^n = \sum_{n=0}^{\infty} (-1)^n x^{2n} = 1 - x^2 + x^4 - x^6 + x^8 - \cdots
 > $$
 >
-> This is a geometric series, so it converges when $|-x^2| < 1$, that is, $x^2 < 1$, or $|x| < 1$. The interval of convergence is $(-1, 1)$. (The Ratio Test would give the same, with more work.)
+> This is a geometric series, so it converges when $|-x^2| < 1$, that is, $x^2 < 1$, or $|x| < 1$. The interval of convergence is $(-1, 1)$. (The [[§74 The Ratio and Root Tests#^thm-74-1|Ratio Test]] would give the same, with more work.)
 >
 > **(b)** Find a power series representation for $1/(x + 2)$.
 >
@@ -201,7 +201,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 >
 > This series converges for $|-x^7| < 1$, that is, for $|x| < 1$.
 >
-> **(b)** In the Fundamental Theorem of Calculus any antiderivative will do, so use the one from (a) with $C = 0$:
+> **(b)** In the [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Fundamental Theorem of Calculus]] any antiderivative will do, so use the one from (a) with $C = 0$:
 >
 > $$
 > \int_0^{0.5} \frac{1}{1 + x^7}\,dx = \left[ x - \frac{x^8}{8} + \frac{x^{15}}{15} - \frac{x^{22}}{22} + \cdots \right]_0^{1/2} = \frac12 - \frac{1}{8 \cdot 2^8} + \frac{1}{15 \cdot 2^{15}} - \frac{1}{22 \cdot 2^{22}} + \cdots + \frac{(-1)^n}{(7n + 1) 2^{7n+1}} + \cdots

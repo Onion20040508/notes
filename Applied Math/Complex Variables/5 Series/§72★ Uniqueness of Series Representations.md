@@ -127,7 +127,7 @@ The proof for Laurent series needs [[§71★ Integration and Differentiation of 
 > \int_C g(z)S_2(z)\,dz = \sum_{n=1}^{N}b_n\int_C\frac{g(z)}{(z - z_0)^n}\,dz + \int_C g(z)\tau_N(z)\,dz ,
 > $$
 >
-> all integrands being continuous on $C$. If $M = \max_C|g|$ and $L$ is the length of $C$, uniform convergence gives, for each $\varepsilon > 0$, an $N_\varepsilon$ with $|\tau_N(z)| < \varepsilon$ for all $z$ on $C$ when $N > N_\varepsilon$, and so $\big|\int_C g\tau_N\,dz\big| \le M\varepsilon L$. Letting $N \to \infty$ gives the second formula.
+> all integrands being continuous on $C$. If $M = \max_C|g|$ and $L$ is the length of $C$, [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2|uniform convergence]] gives, for each $\varepsilon > 0$, an $N_\varepsilon$ with $|\tau_N(z)| < \varepsilon$ for all $z$ on $C$ when $N > N_\varepsilon$, and so $\big|\int_C g\tau_N\,dz\big| \le M\varepsilon L$. Letting $N \to \infty$ gives the second formula.
 >
 > **$S$.** Add the two formulas. The right side is the sum of the two convergent series, which is what the doubly infinite series means ([[§66 Laurent Series#^def-66-1|Definition §66.1]]).
 

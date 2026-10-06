@@ -11,8 +11,8 @@ tags: [logic-and-proofs, hub]
 - [[§12★ Counting Functions and Subsets#^thm-12-10|Theorem §12.10: The Binomial Theorem]], in [[§12★ Counting Functions and Subsets]]
 
 ## Its proof uses
-- [[§5 The Induction Principle#^thm-5-3|Theorem §5.3: Induction from Any Base Case]]
 - [[§5 The Induction Principle#^def-5-3|Definition §5.3: Powers]]
+- [[§5 The Induction Principle#^thm-5-3|Theorem §5.3: Induction from Any Base Case]]
 - [[§12★ Counting Functions and Subsets#^prop-12-6|Proposition §12.6: Basic Binomial Coefficients]]
 - [[§12★ Counting Functions and Subsets#^prop-12-8|Proposition §12.8: Pascal's Rule]]
 

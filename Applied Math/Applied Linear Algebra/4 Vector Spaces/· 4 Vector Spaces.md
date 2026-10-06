@@ -9,9 +9,9 @@ tags: [chapter, applied-linear-algebra]
 
 *Lay, Chapter 4.*
 
-**Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (16), [[· 2 Matrix Algebra|2 Matrix Algebra]] (11), [[· 3 Determinants|3 Determinants]] (3), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (3), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (1)
+**Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (16), [[· 2 Matrix Algebra|2 Matrix Algebra]] (12), [[· 3 Determinants|3 Determinants]] (3), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (3), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (1)
 **Used by:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (4), [[· 2 Matrix Algebra|2 Matrix Algebra]] (2), [[· 3 Determinants|3 Determinants]] (1), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (16), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (7), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (6)
-**Developed further in (other subjects):** [[Linear Algebra]] (41), [[Logic and Proofs]] (5), [[Functional Analysis]] (4), [[Calculus]] (4)
+**Developed further in (other subjects):** [[Linear Algebra]] (41), [[Logic and Proofs]] (6), [[Functional Analysis]] (5), [[Calculus]] (4)
 
 ## Sections
 - [[§23 Vector Spaces and Subspaces]] — Lay 4.1
@@ -32,7 +32,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§23 Vector Spaces and Subspaces#^prop-23-1|Proposition §23.1: The Zero Vector and Negatives Are Unique]]: 115 later results
-- [[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2: Arithmetic with Zero and Negatives]]: 114 later results
-- [[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1: Characterization of Linearly Dependent Sets]]: 105 later results
-- [[§26 Coordinate Systems#^thm-26-1|Theorem §26.1: The Unique Representation Theorem]]: 105 later results
+- [[§23 Vector Spaces and Subspaces#^prop-23-1|Proposition §23.1: The Zero Vector and Negatives Are Unique]]: 122 later results
+- [[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2: Arithmetic with Zero and Negatives]]: 121 later results
+- [[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1: Characterization of Linearly Dependent Sets]]: 112 later results
+- [[§26 Coordinate Systems#^thm-26-1|Theorem §26.1: The Unique Representation Theorem]]: 112 later results

@@ -108,7 +108,7 @@ For some functions the sequential definition is not so easy to check directly �
 >
 > **Case $x_0 = 0$.** The proof above fails — why? We divided by $\sqrt{x_0} = 0$. Handle it directly: $f(0) = 0$, and we want $|\sqrt x| < \varepsilon$, which simplifies to $|x| < \varepsilon^2$. So take $\delta = \varepsilon^2$, and go back to verify.
 >
-> It is important to note that $\delta$ depends on $\varepsilon$ *and also on $x_0$* — here $\delta = \varepsilon\sqrt{x_0}$ shrinks as $x_0$ approaches $0$. We will return to this point (uniform continuity).
+> It is important to note that $\delta$ depends on $\varepsilon$ *and also on $x_0$* — here $\delta = \varepsilon\sqrt{x_0}$ shrinks as $x_0$ approaches $0$. We will return to this point ([[§19 Uniform Continuity#^def-19-1|uniform continuity]]).
 
 ^ex-17-3
 
@@ -158,7 +158,7 @@ For some functions the sequential definition is not so easy to check directly �
 ^thm-17-2
 
 > [!proof]+ Proof
-> By the reverse [[Triangle inequality|triangle inequality]],
+> By the reverse [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]],
 >
 > $$
 > \bigl| |f(x)| - |f(x_0)| \bigr| \leq |f(x) - f(x_0)|,

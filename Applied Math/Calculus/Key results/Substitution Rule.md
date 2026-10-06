@@ -23,7 +23,6 @@ tags: [calculus, hub]
 - [[§45 Trigonometric Integrals#^thm-45-3|Theorem §45.3: Integral of Secant]]
 - [[§46 Trigonometric Substitution#^thm-46-1|Theorem §46.1: Inverse Substitution Rule]]
 - [[§48 Strategy for Integration#^thm-48-1|Theorem §48.1: Table of Integration Formulas]]
-- [[§61 Linear Equations#^ex-61-1|Example §61.1: A First Linear Equation]]
 
 ## Connections
 - Rigorous treatment: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]] proves the definite form from FTC and the Chain Rule for a $C^1$ bijection $g$ with $g' \ne 0$, written with $|g'(t)|$ so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals ([[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]]; [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]).

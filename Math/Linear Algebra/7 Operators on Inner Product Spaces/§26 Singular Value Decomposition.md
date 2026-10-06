@@ -23,7 +23,7 @@ tags: [linear-algebra]
 *Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|6.51]], [[Fundamental theorem of linear maps|3.21]]
 
 > [!remark]- Connections
-> - Row rank = column rank once more (d). Least squares: normal equations $T^*Tx=T^*b$, computational version [[Least Squares via the Normal Equations|235 Thm. §44.1]].
+> - [[§9 Matrices#^ladr-3-57|Row rank = column rank]] once more (d). Least squares: normal equations $T^*Tx=T^*b$, computational version [[Least Squares via the Normal Equations|235 Thm. §44.1]].
 > - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-1|235 Prop. §51.1]] ($A^TA$ is symmetric with eigenvalues $\|A\mathbf v_i\|^2\ge0$).
 
 > [!definition] Definition 7.65: Singular values

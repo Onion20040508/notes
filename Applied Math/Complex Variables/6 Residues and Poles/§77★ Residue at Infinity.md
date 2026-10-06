@@ -99,7 +99,7 @@ The value does not depend on the choice of $R_0 > R_1$: two such circles bound a
 *The residue at infinity. All singular points of $f$ (black dots) lie inside $C$ (blue), which lies inside the circle $|z| = R_1$ (dashed). The circle $C_0$, $|z| = R_0 > R_1$ (red), is traversed clockwise, so that the region "outside", which contains $\infty$, is on its left. Between $C$ and $C_0$ the function is analytic, which is why $\int_C f\,dz = -\int_{C_0} f\,dz$.*
 
 > [!remark]- Connections
-> - Adding a point $\infty$ to $\mathbb{C}$, with the complements of compact sets as its neighborhoods, is the one-point compactification, [[§17 Local Compactness#^def-17-2|590 Def. §17.2]]: the Riemann sphere. The substitution $z \mapsto 1/z$ is the chart at $\infty$, and the factor $1/z^2$ is $-\frac{d}{dz}(1/z)$, the change of variable for $dz$; this is why the residue at infinity is not simply the residue of $f(1/z)$ at $0$.
+> - Adding a point $\infty$ to $\mathbb{C}$, with the complements of compact sets as its neighborhoods, is the one-point compactification, [[§17 Local Compactness#^def-17-2|590 Def. §17.2]]: the [[§17 Limits Involving the Point at Infinity#^def-17-1|Riemann sphere]]. The substitution $z \mapsto 1/z$ is the chart at $\infty$, and the factor $1/z^2$ is $-\frac{d}{dz}(1/z)$, the change of variable for $dz$; this is why the residue at infinity is not simply the residue of $f(1/z)$ at $0$.
 
 With equations (2) and (6), the following theorem is established. It is sometimes more efficient to use than Cauchy's residue theorem, since it involves only one residue.
 

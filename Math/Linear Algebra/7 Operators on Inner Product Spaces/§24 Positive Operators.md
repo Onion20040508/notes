@@ -22,7 +22,7 @@ tags: [linear-algebra]
 
 > [!example] Example 7.35: Positive operators (p. 251)
 > - (a) $\mathcal{M}(T)=\begin{pmatrix}2&-1\\-1&1\end{pmatrix}$ is self-adjoint and $\langle T(w,z),(w,z)\rangle=2|w|^2-2\operatorname{Re}(w\bar z)+|z|^2=|w-z|^2+|w|^2\ge0$: positive.
-> - (b) Every orthogonal projection $P_U$ is positive: $\langle P_Uv,v\rangle=\langle P_Uv,P_Uv+(v-P_Uv)\rangle=\|P_Uv\|^2\ge0$, and $P_U$ is self-adjoint.
+> - (b) Every [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|orthogonal projection]] $P_U$ is positive: $\langle P_Uv,v\rangle=\langle P_Uv,P_Uv+(v-P_Uv)\rangle=\|P_Uv\|^2\ge0$, and $P_U$ is self-adjoint.
 > - (c) For self-adjoint $T$ and $b^2<4c$, $T^2+bT+cI$ is positive (the proof of [[§23 Spectral Theorem#^ladr-7-26|7.26]]).
 
 ^ladr-7-35

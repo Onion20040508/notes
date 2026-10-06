@@ -16,7 +16,7 @@ The basic way to recognize a pole and find its residue is to write out the Laure
 ## The Theorem
 
 > [!theorem] Theorem §80.1: Poles and Their Residues
-> Let $z_0$ be an isolated singular point of a function $f$. The following two statements are equivalent:
+> Let $z_0$ be an [[§74 Isolated Singular Points#^def-74-1|isolated singular point]] of a function $f$. The following two statements are equivalent:
 >
 > **(a)** $z_0$ is a pole of order $m$ ($m = 1, 2, \ldots$) of $f$;
 >

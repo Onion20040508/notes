@@ -10,7 +10,7 @@ tags: [chapter, applied-linear-algebra]
 *Lay, Chapter 1.*
 
 **Builds on:** [[· 4 Vector Spaces|4 Vector Spaces]] (4), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (1)
-**Used by:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (29), [[· 3 Determinants|3 Determinants]] (1), [[· 4 Vector Spaces|4 Vector Spaces]] (16), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (5), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (5)
+**Used by:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (30), [[· 3 Determinants|3 Determinants]] (1), [[· 4 Vector Spaces|4 Vector Spaces]] (16), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (5), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (5)
 **Developed further in (other subjects):** [[Linear Algebra]] (28), [[Group Theory]] (1), [[Logic and Proofs]] (3), [[Multivariable Analysis]] (1), [[Calculus]] (2)
 
 ## Sections
@@ -31,7 +31,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§3 Vector Equations#^thm-3-2|Theorem §3.2: Algebraic Properties of ℝⁿ]]: 149 later results
-- [[§4 The Matrix Equation Ax = b#^prop-4-4|Proposition §4.4: Row–Vector Rule for Computing Ax]]: 123 later results
-- [[§1 Systems of Linear Equations#^prop-1-1|Proposition §1.1: Row Operations Are Reversible]]: 122 later results
-- [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5: Linearity of the Matrix–Vector Product]]: 121 later results
+- [[§3 Vector Equations#^thm-3-2|Theorem §3.2: Algebraic Properties of ℝⁿ]]: 157 later results
+- [[§1 Systems of Linear Equations#^prop-1-1|Proposition §1.1: Row Operations Are Reversible]]: 129 later results
+- [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5: Linearity of the Matrix–Vector Product]]: 129 later results
+- [[§4 The Matrix Equation Ax = b#^prop-4-4|Proposition §4.4: Row–Vector Rule for Computing Ax]]: 128 later results

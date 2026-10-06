@@ -14,7 +14,7 @@ tags: [linear-algebra, hub]
 - [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
 
 ## Used in (Linear Algebra)
-- [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57 Properties of orthogonal projection PU]]
+- (not cited later in the course)
 
 ## Connections
 - Revisited as a bijection $V\to V'$ (conjugate-linear over $\C$): [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]. Defines the adjoint in Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]).

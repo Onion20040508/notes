@@ -21,7 +21,7 @@ tags: [measure-theory, hub]
 
 ## Its proof uses (other subjects)
 - [[Archimedean Property]] (Single Variable Analysis)
-- [[§14 Series#^ex-14-4|451 §14.4: The geometric series]]
+- [[§14 Series#^ex-14-4|451 §14.4: The Geometric Series]]
 
 ## Used in (Measure Theory)
 - (not cited later in the course)

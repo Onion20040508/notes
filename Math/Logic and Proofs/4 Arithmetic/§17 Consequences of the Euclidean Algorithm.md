@@ -266,7 +266,7 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 *Uses:* [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
 
 > [!remark]- Connections
-> - Read modulo $n$, $am + nk = 1$ says $am \equiv 1 \pmod n$: [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (a class $[a]$ is invertible modulo $n$ iff $\gcd(a, n) = 1$) is this proposition in that language.
+> - Read modulo $n$, $am + nk = 1$ says $am \equiv 1 \pmod n$: [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (a class $[a]$ is [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|invertible]] modulo $n$ iff $\gcd(a, n) = 1$; in these notes [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9|Corollary §21.9]]) is this proposition in that language.
 
 > [!theorem] Theorem §17.4: Coprime Divisor of a Product
 > Let $a$, $b$ and $c$ be integers with $a$ and $b$ coprime. Then

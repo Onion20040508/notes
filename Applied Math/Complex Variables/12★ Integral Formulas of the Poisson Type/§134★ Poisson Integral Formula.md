@@ -225,7 +225,7 @@ So far $f$ has been assumed analytic on $C_0$ as well as inside, so that $u$ is 
 > \int_0^{2\pi}\frac{d\phi}{r_0^2 - 2r_0r\cos\phi + r^2} = \int_C\frac{dz}{i(r_0 - rz)(r_0z - r)} .
 > $$
 >
-> The only singular point inside $C$ is the simple pole $z = r/r_0$, with residue $\dfrac{1}{i(r_0 - r^2/r_0)r_0} = \dfrac{1}{i(r_0^2 - r^2)}$ (the other pole, $z = r_0/r$, is outside). By the residue theorem the integral is $2\pi i\cdot\frac{1}{i(r_0^2 - r^2)} = \frac{2\pi}{r_0^2 - r^2}$, and multiplying by $(r_0^2 - r^2)/(2\pi)$ gives property (f). The Poisson formula contains this residue computation: it is (6) for $u \equiv 1$.
+> The only singular point inside $C$ is the simple pole $z = r/r_0$, with residue $\dfrac{1}{i(r_0 - r^2/r_0)r_0} = \dfrac{1}{i(r_0^2 - r^2)}$ (the other pole, $z = r_0/r$, is outside). By the [[§76 Cauchy's Residue Theorem#^thm-76-1|residue theorem]] the integral is $2\pi i\cdot\frac{1}{i(r_0^2 - r^2)} = \frac{2\pi}{r_0^2 - r^2}$, and multiplying by $(r_0^2 - r^2)/(2\pi)$ gives property (f). The Poisson formula contains this residue computation: it is (6) for $u \equiv 1$.
 >
 > *B&C: Sec. 134, property (f)*
 

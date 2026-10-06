@@ -14,9 +14,7 @@ tags: [applied-linear-algebra, hub]
 - (no proof in the notes)
 
 ## Used in (Applied Linear Algebra)
-- [[§10 Linear Models in Business, Science, and Engineering#^ex-10-3|Example §10.3: City and Suburbs]]
-- [[§33 The Characteristic Equation#^ex-33-4|Example §33.4: Long-Term Behavior of a Markov Chain]]
-- [[§34 Diagonalization#^ex-34-5|Example §34.5: The Limit of the Powers of a Stochastic Matrix]]
+- (not cited later in the course)
 
 ## Connections
 - See [[§31 Applications to Markov Chains]] for context and examples.

@@ -215,7 +215,7 @@ tags: [linear-algebra]
 ^ladr-7-18
 
 > [!remark]- Connections
-> - Characterized by $\|Tv\|=\|T^*v\|$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]). Over $\C$: exactly the orthonormally diagonalizable operators ([[Complex spectral theorem|7.31]]). Unitary operators are normal.
+> - Characterized by $\|Tv\|=\|T^*v\|$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]). Over $\C$: exactly the orthonormally diagonalizable operators ([[Complex spectral theorem|7.31]]). [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|Unitary operators]] are normal.
 
 > [!example] Example 7.19: An operator that is normal but not self-adjoint (p. 235)
 > $\mathcal{M}(T)=\begin{pmatrix}2&-3\\3&2\end{pmatrix}$, i.e. $T(w,z)=(2w-3z,\ 3w+2z)$. Not self-adjoint ($3\ne\overline{-3}$), but

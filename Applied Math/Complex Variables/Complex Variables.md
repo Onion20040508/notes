@@ -64,40 +64,43 @@ graph TD
   C6 -.->|on credit| C5
   C7 -.->|on credit| C4
   C7 -.->|on credit| C6
+  C12 -.->|on credit| C5
   C12 -.->|on credit| C10
   C1 -.->|14| X5
-  C1 -.->|15| X4
+  C1 -.->|3| X8
+  C1 -.->|16| X4
   C1 -.->|3| X2
   C1 -.->|5| X3
   C2 -.->|4| X5
   C2 -.->|3| X8
   C2 -.->|3| X7
-  C2 -.->|16| X2
-  C2 -.->|12| X1
+  C2 -.->|17| X2
+  C2 -.->|13| X1
   C2 -.->|8| X3
   C3 -.->|3| X5
-  C3 -.->|21| X8
+  C3 -.->|24| X8
   C3 -.->|3| X6
-  C4 -.->|14| X8
-  C4 -.->|8| X7
+  C4 -.->|16| X8
+  C4 -.->|10| X7
   C4 -.->|4| X4
-  C4 -.->|4| X2
+  C4 -.->|5| X2
   C4 -.->|7| X1
   C4 -.->|9| X3
   C5 -.->|11| X8
   C5 -.->|4| X7
   C5 -.->|31| X1
+  C6 -.->|3| X8
   C6 -.->|5| X7
   C6 -.->|3| X3
-  C7 -.->|13| X7
+  C7 -.->|14| X7
   C7 -.->|4| X6
   C7 -.->|3| X1
-  C7 -.->|5| X3
+  C7 -.->|7| X3
   C8 -.->|5| X3
   C9 -.->|6| X7
   C9 -.->|7| X2
   C10 -.->|8| X8
-  C10 -.->|9| X7
+  C10 -.->|12| X7
   C10 -.->|3| X2
   C12 -.->|13| X7
   C12 -.->|4| X2
@@ -161,4 +164,4 @@ Twice-weekly lectures (no lecture notes in the course folder), weekly homework (
 Examples marked *Source: 342 …* come from the homework (most of it Brown–Churchill exercises) and past finals.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each other subject: [[Calculus]] (65), [[Fourier Series and PDEs]] (61), [[Single Variable Analysis]] (56), [[Multivariable Analysis]] (40), [[Topology]] (37), [[Applied Linear Algebra]] (23), [[Linear Algebra]] (20), [[Ordinary Differential Equations]] (10), [[Differentiable Manifolds]] (2), [[Logic and Proofs]] (1), [[Group Theory]] (1).
+Number of *Connections* links from these notes to each other subject: [[Calculus]] (72), [[Fourier Series and PDEs]] (67), [[Single Variable Analysis]] (58), [[Multivariable Analysis]] (42), [[Topology]] (39), [[Applied Linear Algebra]] (23), [[Linear Algebra]] (21), [[Ordinary Differential Equations]] (10), [[Differentiable Manifolds]] (2), [[Logic and Proofs]] (1), [[Functional Analysis]] (1), [[Group Theory]] (1).

@@ -109,7 +109,7 @@ or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and as
 ^ex-108-1
 
 > [!definition] Definition §108.3: Mass and Center of Mass of a Wire
-> If $\rho(x, y)$ is the linear density at the point $(x, y)$ of a thin wire shaped like a curve $C$, the **mass** of the wire is
+> If $\rho(x, y)$ is the [[§20 Rates of Change in the Natural and Social Sciences#^def-20-3|linear density]] at the point $(x, y)$ of a thin wire shaped like a curve $C$, the **mass** of the wire is
 >
 > $$
 > m = \lim_{n \to \infty} \sum_{i=1}^{n} \rho(x_i^*, y_i^*)\,\Delta s_i = \int_C \rho(x, y)\,ds ,
@@ -356,7 +356,7 @@ When setting up a line integral, the hardest step is often finding a parametric 
 ## Line Integrals of Vector Fields; Work
 
 > [!remark] Remark: Where the Work Integral Comes From
-> A constant force $\mathbf{F}$ moving an object along the displacement $\mathbf{D}$ does work $\mathbf{F} \cdot \mathbf{D}$ ([[§82 The Dot Product#^prop-82-7|Proposition §82.7]]). Now let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ be a continuous force field on $\mathbb{R}^3$ and $C$ a smooth curve, divided into subarcs $P_{i-1}P_i$ of lengths $\Delta s_i$ as before. If $\Delta s_i$ is small, the particle moving from $P_{i-1}$ to $P_i$ proceeds approximately in the direction of $\mathbf{T}(t_i^*)$, the unit tangent vector at $P_i^*$, so the work done along that subarc is approximately
+> A constant force $\mathbf{F}$ moving an object along the displacement $\mathbf{D}$ does work $\mathbf{F} \cdot \mathbf{D}$ ([[§82 The Dot Product#^prop-82-7|Proposition §82.7]]). Now let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ be a continuous force field on $\mathbb{R}^3$ and $C$ a smooth curve, divided into subarcs $P_{i-1}P_i$ of lengths $\Delta s_i$ as before. If $\Delta s_i$ is small, the particle moving from $P_{i-1}$ to $P_i$ proceeds approximately in the direction of $\mathbf{T}(t_i^*)$, the [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|unit tangent vector]] at $P_i^*$, so the work done along that subarc is approximately
 >
 > $$
 > \mathbf{F}(x_i^*, y_i^*, z_i^*) \cdot \big[\Delta s_i\,\mathbf{T}(t_i^*)\big] = \big[\mathbf{F}(x_i^*, y_i^*, z_i^*) \cdot \mathbf{T}(t_i^*)\big]\,\Delta s_i ,

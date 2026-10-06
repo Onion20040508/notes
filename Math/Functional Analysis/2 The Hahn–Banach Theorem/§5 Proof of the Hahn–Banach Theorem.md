@@ -21,7 +21,7 @@ Before the proof, two remarks on why the set of linear functionals on $X$ is wor
 ^rem-5-1
 
 > [!remark]- Connections
-> - Every functional on $\mathbb{R}^n$ is a dot product: [[§2 Linear Maps, Convexity, and Linear Functionals#^ex-2-2|Ex. §2.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on Hilbert spaces (bounded functionals) [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]].
+> - Every functional on $\mathbb{R}^n$ is a dot product: [[§2 Linear Maps, Convexity, and Linear Functionals#^ex-2-2|Ex. §2.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|Hilbert spaces]] (bounded functionals) [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]].
 
 > [!remark] Remark: Convergence Without Topology
 > A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course ([[§18 Compactness and the Unit Ball#^rem-18-4|weak convergence]]).

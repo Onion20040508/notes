@@ -262,7 +262,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 > \begin{bmatrix} v_2 \\ i_2 \end{bmatrix} = A\begin{bmatrix} v_1 \\ i_1 \end{bmatrix},
 > $$
 >
-> is the **transfer matrix** of the circuit. A **ladder network** connects circuits in series, so that the output of one is the input of the next. A **series circuit** has one resistor $R_1$ (ohms) in the line; a **shunt circuit** has one resistor $R_2$ across the two lines. By Ohm's law and Kirchhoff's laws, their transfer matrices are
+> is the **transfer matrix** of the circuit. A **ladder network** connects circuits in series, so that the output of one is the input of the next. A **series circuit** has one resistor $R_1$ (ohms) in the line; a **shunt circuit** has one resistor $R_2$ across the two lines. By [[§10 Linear Models in Business, Science, and Engineering#^def-10-1|Ohm's law and Kirchhoff's laws]], their transfer matrices are
 >
 > $$
 > \underbrace{\begin{bmatrix} 1 & -R_1 \\ 0 & 1 \end{bmatrix}}_{\text{series circuit}} \qquad\text{and}\qquad \underbrace{\begin{bmatrix} 1 & 0 \\ -1/R_2 & 1 \end{bmatrix}}_{\text{shunt circuit}} .

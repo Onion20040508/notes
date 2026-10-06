@@ -273,7 +273,7 @@ For instance, an equilateral triangle with side $a$ has all angles $\pi/3$, so i
 
 > [!remark]- Connections
 > - Matrix version: [[§11 Matrix Operations#^ex-11-3|235 Ex. §11.3]](b) (the product of the rotation matrices $R_\theta R_\varphi$ is $R_{\theta + \varphi}$; its entries are the two addition formulas). See also: [[§53 Complex Numbers#^thm-53-5|235 Thm. §53.5]] (multiplying complex numbers in polar form multiplies absolute values and adds arguments, proved from these formulas).
-> - Complex-variables version: [[§37 The Trigonometric Functions sin z and cos z#^thm-37-3|342 Thm. §37.3]] (the same formulas for all complex arguments, from the law of exponents).
+> - Complex-variables version: [[§37 The Trigonometric Functions sin z and cos z#^thm-37-3|342 Thm. §37.3]] (the same formulas for all complex arguments, from the [[§30 The Exponential Function#^thm-30-2|law of exponents]]).
 
 > [!theorem] Corollary §119.7: Subtraction Formulas and Tangent Formulas
 > $$

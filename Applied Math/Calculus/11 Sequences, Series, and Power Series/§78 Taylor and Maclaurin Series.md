@@ -425,7 +425,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 > - Rigorous treatment of (11), (15) and (16): [[§31 Taylor's Theorem#^ex-31-1|451 Ex. §31.1]] (cosine and $e^x$ through the remainder, as here). In 451 the series can instead serve as *definitions* of sine and cosine: [[§26 Differentiation and Integration of Power Series#^ex-26-8|451 Ex. §26.8]].
 > - See also: [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]] ($e^{i\varphi} = \cos\varphi + i\sin\varphi$ by splitting the series (11) at $x = i\varphi$ into the series (16) and (15)), and [[§38 Applications to Differential Equations#^def-38-3|235 Def. §38.3]] (the complex exponential $e^{(a+bi)t} = e^{at}(\cos bt + i\sin bt)$, used for complex eigenvalues of $\mathbf{x}' = A\mathbf{x}$).
 > - ODE version: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (Euler's formula, motivated by these three series in [[§15 Complex Roots of the Characteristic Equation#^rem-15-1|331 Remark: Where Euler's Formula Comes From]]) and [[§33★ Fundamental Matrices#^def-33-3|331 Def. §33.3]] (the matrix exponential, the series (11) with $\mathbf{A}t$ in place of $x$, which converges and satisfies $\Phi' = \mathbf{A}\Phi$ by [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]]).
-> - Complex-variables version: [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]] (the series (11), (15) and (16) for complex $z$, proved by Taylor's theorem for analytic functions); splitting (11) at $z = i\theta$ gives Euler's formula, [[§7 Exponential Form#^def-7-2|342 Def. §7.2]].
+> - Complex-variables version: [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]] (the series (11), (15) and (16) for complex $z$, proved by [[Taylor's Theorem for Analytic Functions|Taylor's theorem for analytic functions]]); splitting (11) at $z = i\theta$ gives Euler's formula, [[§7 Exponential Form#^def-7-2|342 Def. §7.2]].
 
 These series, found by Newton by other methods, say that everything about $e^x$, $\sin x$ and $\cos x$ is determined by their derivatives at the single number $0$.
 
@@ -621,7 +621,7 @@ By Corollary §78.2, however a power series representation of $f$ is obtained, i
 > \lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \frac{1}{2!} + 0 + 0 + \cdots = \frac12 .
 > $$
 >
-> (L'Hospital's Rule, applied twice, gives the same.)
+> ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|L'Hospital's Rule]], applied twice, gives the same.)
 >
 > *Stewart: Examples 11.10.13 and 11.10.14*
 

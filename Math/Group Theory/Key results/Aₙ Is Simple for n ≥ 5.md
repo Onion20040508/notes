@@ -17,7 +17,6 @@ tags: [group-theory, hub]
 - [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|Theorem §21.9: Generators of Aₙ]]
 - [[§38 Normal Subgroups#^def-38-1|Definition §38.1: Normal Subgroup]]
 - [[§43 Simple Groups#^def-43-1|Definition §43.1: Simple Group]]
-- [[§43 Simple Groups#^rem-43-5|Remark: The Course Handout “Simplicity of Aₙ”]]
 - [[§43 Simple Groups#^lem-43-8|Lemma §43.8: 3-Cycles Are Conjugate in Aₙ for n ≥ 5]]
 
 ## Used in (Group Theory)

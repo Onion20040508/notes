@@ -16,7 +16,7 @@ tags: [topology, math590]
 > - Fixing $t$ gives a single path $F(\cdot, t): I \to X$ (one frame of the movie).
 > - Fixing $s$ gives a trajectory $F(s, \cdot): I \to X$ (how one point moves over time).
 >
-> Requiring $F$ to be continuous on $I \times I$ (in the product topology) ensures the deformation is smooth in *both* directions simultaneously—nearby $(s, t)$ values give nearby points in $X$, so there are no “jumps” in space or time. The compactness of $I = [0,1]$ is also essential: paths have definite start and end points, deformations have a definite “before” and “after,” and key arguments ([[Lebesgue Number Lemma|Lebesgue number lemma]], [[Pasting Lemma|pasting lemma]]) rely on working with compact domains.
+> Requiring $F$ to be continuous on $I \times I$ (in the [[§4 Product Topology#^def-4-1|product topology]]) ensures the deformation is smooth in *both* directions simultaneously—nearby $(s, t)$ values give nearby points in $X$, so there are no “jumps” in space or time. The compactness of $I = [0,1]$ is also essential: paths have definite start and end points, deformations have a definite “before” and “after,” and key arguments ([[Lebesgue Number Lemma|Lebesgue number lemma]], [[Pasting Lemma|pasting lemma]]) rely on working with compact domains.
 
 ^rem-22-1
 

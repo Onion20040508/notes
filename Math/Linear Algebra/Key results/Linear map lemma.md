@@ -14,10 +14,7 @@ tags: [linear-algebra, hub]
 - [[§5 Bases#^ladr-2-28|2.28]]
 
 ## Used in (Linear Algebra)
-- [[§8 Null Spaces and Ranges#^ladr-3-28|3.28 Inhomogeneous system of linear equations]]
 - [[Dimension shows whether vector spaces are isomorphic|3.70 Dimension shows whether vector spaces are isomorphic]]
-- [[§12 Duality#^ladr-3-111|3.111 Dim V′ = dim V]]
-- [[§24 Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
 - [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|9.7 Change-of-basis formula]]
 - [[§35 Tensor Products#^ladr-9-74|9.74 Basis of V⊗ W]]
 - [[§35 Tensor Products#^ladr-9-79|9.79 Converting bilinear maps to linear maps]]

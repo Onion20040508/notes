@@ -14,7 +14,6 @@ tags: [applied-linear-algebra, hub]
 - (no proof in the notes)
 
 ## Used in (Applied Linear Algebra)
-- [[§19 Dimension and Rank#^ex-19-4|Example §19.4: Bases, Dimensions and Coordinates]]
 - [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2: Determinant of a Triangular Matrix]]
 - [[§21 Properties of Determinants#^thm-21-1|Theorem §21.1: Row Operations]]
 - [[§21 Properties of Determinants#^thm-21-6|Theorem §21.6: The Determinant of the Transpose]]

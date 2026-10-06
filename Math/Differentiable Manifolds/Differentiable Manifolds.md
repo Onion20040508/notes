@@ -166,7 +166,7 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Single Variable Analysis]]**
 - [[§28 Basic Properties of the Derivative#^thm-28-2|Theorem §28.2: Arithmetic of Derivatives]] (1)
-- [[§31 Taylor's Theorem#^ex-31-3|Example §31.3: A smooth function that is not its Taylor series]] (1)
+- [[§31 Taylor's Theorem#^ex-31-3|Example §31.3: A Smooth Function That Is Not Its Taylor Series]] (1)
 - [[Fundamental Theorem of Calculus]] (1)
 - [[§29 The Mean Value Theorem#^thm-29-3|Theorem §29.3: Mean Value Theorem]] (1)
 

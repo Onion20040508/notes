@@ -615,7 +615,7 @@ For a closed surface $\partial V$ bounding a volume $V$:
 >
 > **General domains:** If $V$ is not simple, we **decompose** $V$ into finitely many simple solid regions $V_1, \ldots, V_N$ with disjoint interiors. Apply the theorem on each $V_k$ and sum. The boundary integrals on the *internal cuts* (where $V_k$ meets $V_{k+1}$) cancel in pairs: the two sides of a cut have opposite outward normals, so their contributions are equal and opposite.
 >
-> This is the same cancellation mechanism as in the 2D case ([[Green's Theorem|Section 16, Green's theorem]]), and parallel to how we handled general regions for Fubini's theorem in [[§15 Multivariable Integration|Section 15]]: there we needed Type I / Type II regions ([[§15 Multivariable Integration#^def-15-12|Def. §15.12]]) for iterated integrals and subdivided general [[§15 Multivariable Integration#^def-15-14|Jordan measurable]] domains. Same idea, one dimension up.
+> This is the same cancellation mechanism as in the 2D case ([[Green's Theorem|Section 16, Green's theorem]]), and parallel to how we handled general regions for [[Fubini's Theorem|Fubini's theorem]] in [[§15 Multivariable Integration|Section 15]]: there we needed Type I / Type II regions ([[§15 Multivariable Integration#^def-15-12|Def. §15.12]]) for iterated integrals and subdivided general [[§15 Multivariable Integration#^def-15-14|Jordan measurable]] domains. Same idea, one dimension up.
 
 ^rem-18-8
 

@@ -17,7 +17,6 @@ tags: [applied-linear-algebra, hub]
 
 ## Used in (Applied Linear Algebra)
 - [[§2 Row Reduction and Echelon Forms#^cor-2-4|Corollary §2.4: No Solution, One Solution, or Infinitely Many]]
-- [[§3 Vector Equations#^ex-3-2|Example §3.2: In the Span or Not?]]
 - [[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3: When Ax = b Is Solvable for Every b]]
 - [[§5 Solution Sets of Linear Systems#^cor-5-1|Corollary §5.1: Nontrivial Solutions and Free Variables]]
 - [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1: The Invertible Matrix Theorem]]

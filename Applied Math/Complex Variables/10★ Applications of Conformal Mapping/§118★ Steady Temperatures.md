@@ -77,7 +77,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 ## Isotherms and Lines of Flow
 
 > [!definition] Definition §118.2: Isotherms; Lines of Flow
-> The surfaces $T(x, y) = c_1$, $c_1$ a real constant, are the **isotherms** within the solid. They can also be regarded as curves in the $xy$ plane: then $T(x, y)$ is the temperature at a point $(x, y)$ of a thin sheet of material in that plane whose faces are thermally insulated, and the isotherms are the level curves of $T$. If $S$ is a harmonic conjugate of $T$, the curves $S(x, y) = c_2$ are the **lines of flow** of heat.
+> The surfaces $T(x, y) = c_1$, $c_1$ a real constant, are the **isotherms** within the solid. They can also be regarded as curves in the $xy$ plane: then $T(x, y)$ is the temperature at a point $(x, y)$ of a thin sheet of material in that plane whose faces are thermally insulated, and the isotherms are the level curves of $T$. If $S$ is a [[§115★ Harmonic Conjugates#^def-115-1|harmonic conjugate]] of $T$, the curves $S(x, y) = c_2$ are the **lines of flow** of heat.
 >
 > *B&C: Sec. 118 (text)*
 
@@ -90,7 +90,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 >
 > **(b)** At each point where the analytic function $T(x, y) + iS(x, y)$ is conformal, the curve $S(x, y) = c_2$ through the point has $\operatorname{grad} T$ as a tangent vector.
 >
-> **(c)** Along a smooth arc $C$ with unit tangent $\mathbf t$ and unit normal $\mathbf N$ obtained by turning $\mathbf t$ through $+\pi/2$,
+> **(c)** Along a [[§43 Contours#^def-43-4|smooth arc]] $C$ with unit tangent $\mathbf t$ and unit normal $\mathbf N$ obtained by turning $\mathbf t$ through $+\pi/2$,
 >
 > $$
 > \frac{dS}{ds} = -\frac{dT}{dN} = \frac{\Phi}{K} ,

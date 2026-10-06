@@ -17,7 +17,6 @@ tags: [complex-variables, hub]
 - [[§112★ Preservation of Angles and Scale Factors#^def-112-1|Definition §112.1: Angle of Rotation]]
 
 ## Used in (Complex Variables)
-- [[§113★ Further Examples (Preservation of Angles and Scale Factors)#^ex-113-3|Example §113.3: Angles of Rotation and Scale Factors]]
 - [[§117★ Transformations of Boundary Conditions#^lem-117-1|Lemma §117.1: Gradients and Directional Derivatives Are Scaled by ∣f′(z)∣]]
 - [[§117★ Transformations of Boundary Conditions#^thm-117-2|Theorem §117.2: Constant Values and Zero Normal Derivatives Are Preserved]]
 - [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-1|Proposition §127.1: Constant Argument Gives a Straight Image]]

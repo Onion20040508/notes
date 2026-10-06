@@ -166,7 +166,7 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 > \operatorname{Res}_{z=c}\frac{1}{z^3 + 1} = \frac{1}{3c^2} = \frac{c}{3c^3} = -\frac{e^{i\pi/3}}{3} .
 > $$
 >
-> **The three sides.** On the segment $z = x$ $(0 \le x \le R)$ the integral is $\int_0^R dx/(x^3 + 1)$. On the returning ray, $z = re^{i2\pi/3}$ with $r$ from $R$ to $0$, $z^3 = r^3e^{i2\pi} = r^3$ and $dz = e^{i2\pi/3}\,dr$, so its integral is $-e^{i2\pi/3}\int_0^R dr/(r^3 + 1)$. By the residue theorem,
+> **The three sides.** On the segment $z = x$ $(0 \le x \le R)$ the integral is $\int_0^R dx/(x^3 + 1)$. On the returning ray, $z = re^{i2\pi/3}$ with $r$ from $R$ to $0$, $z^3 = r^3e^{i2\pi} = r^3$ and $dz = e^{i2\pi/3}\,dr$, so its integral is $-e^{i2\pi/3}\int_0^R dr/(r^3 + 1)$. By the [[§76 Cauchy's Residue Theorem#^thm-76-1|residue theorem]],
 >
 > $$
 > \big(1 - e^{i2\pi/3}\big)\int_0^R\frac{dx}{x^3 + 1} = 2\pi i\Big(-\frac{e^{i\pi/3}}{3}\Big) - \int_{C_R}\frac{dz}{z^3 + 1} ,

@@ -12,8 +12,6 @@ tags: [topology, hub]
 
 ## Its proof uses
 - [[§16 Limit Point Compactness#^lem-16-3|Lemma §16.3: Lebesgue Number Lemma]]
-- [[§21 Algebra Prerequisites꞉ Groups#^def-21-12|Definition §21.12: Normal Subgroup]]
-- [[§23 The Fundamental Group#^def-23-4|Definition §23.4: Induced Homomorphism]]
 - [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]
 
 ## Its proof uses (other subjects)

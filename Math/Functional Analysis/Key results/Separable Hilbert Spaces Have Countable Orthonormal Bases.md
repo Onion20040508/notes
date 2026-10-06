@@ -18,7 +18,6 @@ tags: [functional-analysis, hub]
 - [[§24 Orthonormal Sets and Bases#^prop-24-6|Proposition §24.6: The Orthonormal Expansion Converges]]
 - [[§24 Orthonormal Sets and Bases#^thm-24-8|Theorem §24.8: Characterizations of an Orthonormal Basis]]
 - [[§24 Orthonormal Sets and Bases#^lem-24-14|Lemma §24.14: Gram–Schmidt]]
-- [[§25 Sequence and Function Spaces#^prop-25-1|Proposition §25.1: ℓ^p is Separable for 1 ≤ p < ∞]]
 
 ## Its proof uses (other subjects)
 - [[Countable Union of Countable Sets is Countable]] (Measure Theory)

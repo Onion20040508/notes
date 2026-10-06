@@ -88,7 +88,7 @@ For example, if $S$ is oriented upward, $C$ is traversed counterclockwise as vie
 > - Rigorous treatment: [[§20 Stokes' Theorem in ℝ³#^thm-20-1|452 Thm. §20.1]], proved there first for graphs exactly as above and then for parametrized surfaces (hub [[Stokes' Theorem in ℝ³]]; orientation convention [[§20 Stokes' Theorem in ℝ³#^rem-20-1|452 Remark: Orientation Convention]]). With Green's Theorem, the Divergence Theorem and the Fundamental Theorem for Line Integrals it is a case of the [[Generalized Stokes' Theorem]], [[§23 The Generalized Stokes' Theorem#^thm-23-1|452 Thm. §23.1]].
 
 > [!remark] Remark: Green's Theorem as a Special Case
-> Stokes' Theorem, Green's Theorem and the Fundamental Theorem of Calculus are analogous: on the left of (1) is an integral involving derivatives ($\operatorname{curl}\mathbf{F}$ is a sort of derivative of $\mathbf{F}$), and on the right only the values of $\mathbf{F}$ on the *boundary* of $S$. In fact, if $S$ is flat and lies in the $xy$-plane with upward orientation, the unit normal is $\mathbf{k}$, the surface integral becomes a double integral, and Stokes' Theorem becomes
+> Stokes' Theorem, Green's Theorem and the [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Fundamental Theorem of Calculus]] are analogous: on the left of (1) is an integral involving derivatives ($\operatorname{curl}\mathbf{F}$ is a sort of derivative of $\mathbf{F}$), and on the right only the values of $\mathbf{F}$ on the *boundary* of $S$. In fact, if $S$ is flat and lies in the $xy$-plane with upward orientation, the unit normal is $\mathbf{k}$, the surface integral becomes a double integral, and Stokes' Theorem becomes
 >
 > $$
 > \int_C \mathbf{F} \cdot d\mathbf{r} = \iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S} = \iint_S (\operatorname{curl}\mathbf{F}) \cdot \mathbf{k}\,dA ,
@@ -317,7 +317,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 Stokes' Theorem supplies the proof, announced in §111 after [[§111 Curl and Divergence#^cor-111-2|Corollary §111.2]] (of which it is a partial converse), of the three-dimensional test for conservative fields.
 
 > [!theorem] Theorem §114.4: Curl-Free Fields on ℝ³ Are Conservative
-> If $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is a conservative vector field.
+> If $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is a [[§107 Vector Fields#^def-107-4|conservative vector field]].
 >
 > *Stewart: 16.5, Theorem 4 (proof sketched in 16.8)*
 

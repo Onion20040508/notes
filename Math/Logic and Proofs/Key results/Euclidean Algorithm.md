@@ -17,7 +17,6 @@ tags: [logic-and-proofs, hub]
 - [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2: Replacing a by the Remainder]]
 
 ## Used in (Logic and Proofs)
-- [[§16 The Euclidean Algorithm#^ex-16-5|Example §16.5: Consecutive Fibonacci Numbers]]
 - [[§16 The Euclidean Algorithm#^ex-16-6|Example §16.6: Lamé's Theorem]]
 - [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1: The gcd Is an Integral Linear Combination]]
 

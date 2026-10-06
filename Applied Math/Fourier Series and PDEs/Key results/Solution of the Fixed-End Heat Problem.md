@@ -20,15 +20,11 @@ tags: [fourier-series-and-pdes, hub]
 - [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|Theorem §19.4: Principle of Superposition]]
 
 ## Used in (Fourier Series and PDEs)
-- [[§10 Operations on Fourier Series#^ex-10-5|Example §10.5: Rapidly Decaying Coefficients; a Heat Series]]
 - [[§20 Example꞉ Insulated Bar#^thm-20-2|Theorem §20.2: Solution of the Insulated-Bar Problem]]
-- [[§21 Example꞉ Different Boundary Conditions#^ex-21-1|Example §21.1: Initial Temperature Constant]]
 - [[§21 Example꞉ Different Boundary Conditions#^thm-21-4|Theorem §21.4: Solution of the Fixed–Insulated Problem]]
 - [[§22 Example꞉ Convection#^thm-22-3|Theorem §22.3: Coefficients and Solution]]
 - [[§25 Generalities on the Heat Conduction Problem#^thm-25-3|Theorem §25.3: Solution of the General Heat Conduction Problem]]
 - [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-4|Theorem §43.4: Solution of the Heat Problem in a Rectangle]]
-- [[§46★ Temperature in a Cylinder#^prop-46-4|Proposition §46.4: Temperature in a Cylinder]]
-- [[§56★ Heat Problems#^ex-56-1|Example §56.1: A Bar with Initial Temperature x]]
 
 ## Connections
 - The M-test and term-by-term integration of a uniformly convergent series: [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]].

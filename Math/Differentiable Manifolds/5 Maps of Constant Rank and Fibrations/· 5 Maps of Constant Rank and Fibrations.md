@@ -7,7 +7,7 @@ tags: [chapter, differentiable-manifolds]
 # 5 Maps of Constant Rank and Fibrations
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (30), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (40), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (52)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (30), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (8), [[· 3 Smooth Structures|3 Smooth Structures]] (40), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (52)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (6)
 **Builds on (other subjects):** [[Linear Algebra]] (15), [[Topology]] (44), [[Multivariable Analysis]] (6)
 

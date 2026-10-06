@@ -466,7 +466,7 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 > H: X \times I \to X, \qquad H(x, y, z, t) = (x, y, z(1-t)).
 > $$
 >
-> This collapses the $z$-coordinate to $0$ while preserving $(x, y) \neq (0,0)$. So $\mathbb{R}^2 \setminus \{0\}$ is a [[§26 Deformation Retracts and Homotopy Type#^cor-26-12|deformation retract]] of $X$, and
+> This collapses the $z$-coordinate to $0$ while preserving $(x, y) \neq (0,0)$. So $\mathbb{R}^2 \setminus \{0\}$ is a [[§26 Deformation Retracts and Homotopy Type#^def-26-3|deformation retract]] of $X$, and by [[§26 Deformation Retracts and Homotopy Type#^cor-26-12|Corollary §26.12]]
 >
 > $$
 > \pi_1(\mathbb{R}^3 \setminus \{z\text{-axis}\}) \cong \pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1) \cong \mathbb{Z}.

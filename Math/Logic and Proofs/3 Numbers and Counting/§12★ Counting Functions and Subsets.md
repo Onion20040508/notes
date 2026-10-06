@@ -403,6 +403,7 @@ A **binomial** is a sum of two terms, such as $a + b$. The binomial coefficients
 
 > [!remark]- Connections
 > - Computational version: [[§3 Further Algebraic Properties#^thm-3-4|342 Thm. §3.4]] (the binomial formula for complex numbers, proved by the same induction).
+> - See also: [[§78 Taylor and Maclaurin Series#^thm-78-9|Calc Thm. §78.9]] (the binomial series: Newton's infinite-series version for any real exponent $k$, valid for $|x| < 1$).
 
 The same proof works for complex $a$ and $b$. For negative or non-integer exponents there are versions in which the finite sum becomes an infinite series (Newton).
 

@@ -19,7 +19,7 @@ The first application of the method of [[§117★ Transformations of Boundary Co
 > [!example] Example §119.1: A Half Plane with a Heated Segment
 > Find the steady temperatures $T(x, y)$ in a thin semi-infinite plate $y \ge 0$ whose faces are insulated and whose edge $y = 0$ is kept at temperature $0$, except on the segment $-1 < x < 1$, where it is kept at temperature $1$ (B&C's Fig. 155). $T$ is to be bounded. (This is natural if the plate is regarded as the limit of plates $0 \le y \le y_0$ whose upper edge is kept at a fixed temperature, as $y_0 \to \infty$; it would even be reasonable to require $T \to 0$ as $y \to \infty$.)
 >
-> **The Dirichlet problem.**
+> **The [[§116★ Transformations of Harmonic Functions#^def-116-1|Dirichlet problem]].**
 >
 > $$
 > T_{xx}(x, y) + T_{yy}(x, y) = 0 \quad (-\infty < x < \infty,\ y > 0), \qquad (1)

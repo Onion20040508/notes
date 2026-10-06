@@ -27,7 +27,7 @@ $$
 where $\phi$ is the velocity potential; when $V \ne 0$ it is normal to the equipotential through $(x, y)$.
 
 > [!definition] Definition §125.1: Stream Function; Streamlines; Complex Potential
-> Let $\phi$ be the velocity potential of an irrotational flow of an incompressible fluid in a simply connected domain, and let $\psi(x, y)$ be a harmonic conjugate of $\phi$ ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]). Then $\psi$ is the **stream function** of the flow, the curves $\psi(x, y) = c_2$ are the **streamlines**, and the analytic function
+> Let $\phi$ be the velocity potential of an irrotational flow of an incompressible fluid in a [[§52 Simply Connected Domains#^def-52-1|simply connected domain]], and let $\psi(x, y)$ be a harmonic conjugate of $\phi$ ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]). Then $\psi$ is the **stream function** of the flow, the curves $\psi(x, y) = c_2$ are the **streamlines**, and the analytic function
 >
 > $$
 > F(z) = \phi(x, y) + i\psi(x, y)

@@ -384,7 +384,7 @@ This computation finds the *formula* but presupposes the differentiability of $f
 ^ex-29-6
 
 > [!example] Example §29.7: Arctangent (HW)
-> The same machine, one branch simpler. On $I = \left( -\tfrac\pi2, \tfrac\pi2 \right)$, $f(x) = \tan x$ has (quotient rule, Pythagoras)
+> The same machine, one branch simpler. On $I = \left( -\tfrac\pi2, \tfrac\pi2 \right)$, $f(x) = \tan x$ has ([[§28 Basic Properties of the Derivative#^thm-28-2|quotient rule]], Pythagoras)
 >
 > $$
 > f'(x) = \frac{\cos^2 x + \sin^2 x}{\cos^2 x} = \frac{1}{\cos^2 x} > 0,

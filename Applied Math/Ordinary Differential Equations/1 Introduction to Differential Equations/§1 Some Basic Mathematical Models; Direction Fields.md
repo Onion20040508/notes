@@ -72,7 +72,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 ^def-1-2
 
 > [!remark]- Connections
-> - See also: [[§58 Direction Fields and Euler's Method#^def-58-1|Calc Def. §58.1]] (Stewart's treatment, with the direction field of $y' = x^2 + y^2 - 1$) and its [[§58 Direction Fields and Euler's Method#^rem-58-1|Remark: Method — Sketching Solution Curves]]. The same tangent segments, followed step by step, give Euler's method ([[§10 Numerical Approximations꞉ Euler's Method#^def-10-1|Definition §10.1]]).
+> - See also: [[§58 Direction Fields and Euler's Method#^def-58-1|Calc Def. §58.1]] (Stewart's treatment, with the direction field of $y' = x^2 + y^2 - 1$) and its [[§58 Direction Fields and Euler's Method#^rem-58-1|Calc Remark: Method — Sketching Solution Curves from a Direction Field]]. The same tangent segments, followed step by step, give Euler's method ([[§10 Numerical Approximations꞉ Euler's Method#^def-10-1|Definition §10.1]]).
 > - Equilibrium solutions ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-3|Definition §1.3]] below) in Stewart: [[§57 Modeling with Differential Equations#^def-57-3|Calc Def. §57.3]].
 
 > [!definition] Definition §1.3: Equilibrium Solution

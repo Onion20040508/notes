@@ -26,7 +26,7 @@ A degenerate polygon has one or more vertices at infinity: a half strip, a strip
 > -\frac\pi2 \le u \le \frac\pi2, \qquad v \ge 0 .
 > $$
 >
-> **Angles.** Consider the strip as the limiting form of a triangle with vertices $w_1 = -\pi/2$, $w_2 = \pi/2$ and $w_3$, as the imaginary part of $w_3$ tends to infinity. The limiting exterior angles are
+> **Angles.** Consider the strip as the limiting form of a triangle with vertices $w_1 = -\pi/2$, $w_2 = \pi/2$ and $w_3$, as the imaginary part of $w_3$ tends to infinity. The limiting [[§127★ Mapping the Real Axis onto a Polygon#^def-127-1|exterior angles]] are
 >
 > $$
 > k_1\pi = k_2\pi = \frac\pi2 \qquad\text{and}\qquad k_3\pi = \pi .
@@ -88,7 +88,7 @@ A degenerate polygon has one or more vertices at infinity: a half strip, a strip
 ^ex-130-2
 
 > [!example] Example §130.3: A Wedge
-> Use the Schwarz–Christoffel transformation to arrive at $w = z^m$ ($0 < m < 1$), which maps the half plane $y \ge 0$ onto the wedge $|w| \ge 0$, $0 \le \arg w \le m\pi$, and transforms $z = 1$ into $w = 1$.
+> Use the [[§128★ Schwarz–Christoffel Transformation#^thm-128-4|Schwarz–Christoffel transformation]] to arrive at $w = z^m$ ($0 < m < 1$), which maps the half plane $y \ge 0$ onto the wedge $|w| \ge 0$, $0 \le \arg w \le m\pi$, and transforms $z = 1$ into $w = 1$.
 >
 > **Angles.** B&C views the wedge as a limit of triangles with one vertex at $w = 0$ and a side along the positive $u$ axis (its Fig. 186). In the limit the only finite vertex is $w_1 = 0$, with interior angle $m\pi$, so $k_1 = 1 - m$; the other vertex has gone to infinity, and the point $w = 1$ is an ordinary point of a side.
 >

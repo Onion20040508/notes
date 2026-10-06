@@ -24,11 +24,6 @@ tags: [measure-theory, hub]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-7|Proposition §19.7: Interpolation of Lᵖ Norms]]
 - [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9|Theorem §19.9: Minkowski's Inequality]]
 
-## Used in (Functional Analysis)
-- [[§14 Means and Young's Inequality#^prop-14-1|Proposition §14.1: Cauchy–Schwarz in ℝⁿ]]
-- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-1|Theorem §17.1: Hölder's Inequality for Functions]]
-- [[§17 The Function Spaces Lᵖ(Ω)#^rem-17-2|Remark: What “Integrable” Means Here]]
-
 ## Connections
 - **Proof idea.** Normalize both norms to 1 and apply [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Young's inequality]] a^θ b^(1−θ) ≤ θa + (1 − θ)b pointwise, with θ = 1/p, a = |f|ᵖ and b = |g|^p′, then integrate. For p = 1, p′ = ∞, use |g| ≤ ‖g‖∞ a.e. ([[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]]).
 - **Linear algebra.** p = p′ = 2 is the [[Cauchy–Schwarz inequality]] (LADR 6.14) for the L² inner product ⟨f, g⟩ = ∫fg ([[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|Rem. §19.1]]). Its Riemann-integral form for continuous functions is [[§19 Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].

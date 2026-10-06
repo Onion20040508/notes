@@ -17,7 +17,7 @@ Two parallel grounded conducting planes with a semi-infinite plate at potential 
 > [!example] Example §133.1: Mapping the Upper Half Plane onto the Divided Strip
 > Two parallel conducting plates of infinite extent are kept at potential $V = 0$, and a parallel semi-infinite plate placed midway between them is kept at $V = 1$. The coordinate system and unit of length are chosen so that the plates lie in the planes $v = 0$, $v = \pi$ and $v = \pi/2$ ($u \ge 0$). Find a conformal map of the upper half plane onto the region between the plates.
 >
-> **Angles.** The cross section has the limiting form of a quadrilateral with vertices $w_1$ and $w_3$ moving out to the right (between the plates, below and above the middle plate) and $w_4$ moving to the left; $w_2 = \pi i/2$ is the edge of the middle plate. Let $x_4 = \infty$ correspond to $w_4$, choose $x_1 = -1$, $x_3 = 1$, and leave $x_2$ to be determined. The limiting exterior angles are
+> **Angles.** The cross section has the limiting form of a quadrilateral with vertices $w_1$ and $w_3$ moving out to the right (between the plates, below and above the middle plate) and $w_4$ moving to the left; $w_2 = \pi i/2$ is the edge of the middle plate. Let $x_4 = \infty$ correspond to $w_4$, choose $x_1 = -1$, $x_3 = 1$, and leave $x_2$ to be determined. The limiting [[§127★ Mapping the Real Axis onto a Polygon#^def-127-1|exterior angles]] are
 >
 > $$
 > k_1\pi = \pi, \qquad k_2\pi = -\pi, \qquad k_3\pi = k_4\pi = \pi .

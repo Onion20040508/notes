@@ -12,8 +12,8 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§26 Stabilizers and Fixed Points#^def-26-1|Definition §26.1: Stabilizer; Fixed Points]]
-- [[§27 Orbits#^prop-27-1|Proposition §27.1: Orbits Partition X]]
 - [[§27 Orbits#^def-27-1|Definition §27.1: Orbit; Orbit Space]]
+- [[§27 Orbits#^prop-27-1|Proposition §27.1: Orbits Partition X]]
 - [[§30 Orbit–Stabilizer#^thm-30-3|Theorem §30.3: Orbit–Stabilizer]]
 
 ## Used in (Group Theory)

@@ -18,7 +18,7 @@ tags: [calculus, hub]
 - [[§110 Green's Theorem#^thm-110-1|Theorem §110.1: Green's Theorem]]
 
 ## Used in (Calculus)
-- [[§109 The Fundamental Theorem for Line Integrals#^ex-109-2|Example §109.2: Testing for a Conservative Field]]
+- (not cited later in the course)
 
 ## Connections
 - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). [[§110 Green's Theorem#^ex-110-5|Example §110.5]] shows that some hypothesis on the region is needed.

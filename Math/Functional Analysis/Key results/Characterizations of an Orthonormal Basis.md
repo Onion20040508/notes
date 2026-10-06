@@ -17,7 +17,6 @@ tags: [functional-analysis, hub]
 - [[§24 Orthonormal Sets and Bases#^lem-24-7|Lemma §24.7: Coefficients and Norm of the Expansion]]
 
 ## Used in (Functional Analysis)
-- [[§24 Orthonormal Sets and Bases#^ex-24-1|Example §24.1: The Standard Basis of ell²]]
 - [[§24 Orthonormal Sets and Bases#^prop-24-9|Proposition §24.9: Lax's Definition of Orthonormal Base Agrees]]
 - [[§24 Orthonormal Sets and Bases#^prop-24-10|Proposition §24.10: Small Perturbations of a Complete Orthonormal Set]]
 - [[§24 Orthonormal Sets and Bases#^thm-24-11|Theorem §24.11: The Fourier Basis of L²[0,2π]]]
@@ -25,7 +24,6 @@ tags: [functional-analysis, hub]
 - [[§24 Orthonormal Sets and Bases#^thm-24-13|Theorem §24.13: Separable Hilbert Spaces and Countable Bases]]
 - [[§24 Orthonormal Sets and Bases#^thm-24-15|Theorem §24.15: Classification of Separable Hilbert Spaces]]
 - [[§31 The Completeness Relation#^thm-31-2|Theorem §31.2: The Completeness Relation]]
-- [[§31 The Completeness Relation#^cor-31-4|Corollary §31.4: Inserting a Complete Set of States]]
 - [[§32 Position Eigenstates and Continuous Resolutions#^thm-32-2|Theorem §32.2: L²(ℝⁿ) is Separable]]
 - [[§33 Bound States Need Not Be Complete꞉ Hydrogen#^cor-33-2|Corollary §33.2: Bound States are Not Complete]]
 

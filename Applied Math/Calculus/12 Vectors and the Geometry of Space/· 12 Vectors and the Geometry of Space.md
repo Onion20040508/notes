@@ -10,7 +10,7 @@ tags: [chapter, calculus]
 *Stewart, Chapter 12 · MATH 233 (UMass, Spring 2023).*
 
 **Builds on:** [[· 6 Applications of Integration|6 Applications of Integration]] (1), [[· 14 Partial Derivatives|14 Partial Derivatives]] (1), [[· 17 Background from the Appendices|17 Background from the Appendices]] (1)
-**Used by:** [[· 13 Vector Functions|13 Vector Functions]] (20), [[· 14 Partial Derivatives|14 Partial Derivatives]] (11), [[· 15 Multiple Integrals|15 Multiple Integrals]] (2), [[· 16 Vector Calculus|16 Vector Calculus]] (4)
+**Used by:** [[· 13 Vector Functions|13 Vector Functions]] (20), [[· 14 Partial Derivatives|14 Partial Derivatives]] (11), [[· 15 Multiple Integrals|15 Multiple Integrals]] (2), [[· 16 Vector Calculus|16 Vector Calculus]] (5)
 **Developed further in (other subjects):** [[Linear Algebra]] (15), [[Multivariable Analysis]] (3), [[Applied Linear Algebra]] (20)
 
 ## Sections

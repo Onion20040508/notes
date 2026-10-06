@@ -11,8 +11,8 @@ tags: [functional-analysis, hub]
 - [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|Theorem §16.5: ℓ^p is a Banach Space]], in [[§16 Minkowski's Inequality and the Spaces ℓᵖ]]
 
 ## Its proof uses
-- [[§10 Normed Linear Spaces#^prop-10-5|Proposition §10.5: Limits are Unique; Convergent Sequences are Cauchy]]
 - [[§10 Normed Linear Spaces#^def-10-5|Definition §10.5: Cauchy Sequence]]
+- [[§10 Normed Linear Spaces#^prop-10-5|Proposition §10.5: Limits are Unique; Convergent Sequences are Cauchy]]
 - [[§11 Completeness#^def-11-2|Definition §11.2: Banach Space]]
 - [[§12 New Normed Spaces from Old#^cor-12-4|Corollary §12.4: Finite-Dimensional Normed Spaces are Complete]]
 - [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-3|Proposition §16.3: ℓ^p is a Normed Linear Space]]
@@ -22,8 +22,7 @@ tags: [functional-analysis, hub]
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8: Cauchy Implies Convergent]]
 
 ## Used in (Functional Analysis)
-- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
-- [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-1|Example §21.1: Hilbert Spaces]]
+- (not cited later in the course)
 
 ## Connections
 - **How.** The candidate comes from coordinates: each coordinate is Cauchy in 𝔽, or equivalently the truncations are Cauchy in 𝔽ᵏ, which is complete ([[§12 New Normed Spaces from Old#^cor-12-4|§12.4]]). To close, keep the Cauchy condition with the full infinite sum and N fixed, truncate to k terms, let m → ∞ term by term, and only then let k → ∞ ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]], [[Functional Analysis Problem-Solving Techniques#^rem-t6|Technique 6]]). Choosing n depending on k would fail ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^rem-16-4|Remark §16]]). Membership is bookkeeping, a = a^(N) + (a − a^(N)), unlike for [[Continuous Functions with the Sup Norm Form a Banach Space]].

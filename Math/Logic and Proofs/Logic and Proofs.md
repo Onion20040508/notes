@@ -45,16 +45,17 @@ graph TD
   C1 -.->|14| X1
   C2 -.->|4| X4
   C2 -.->|7| X3
-  C2 -.->|8| X1
+  C2 -.->|10| X1
   C3 -.->|5| X2
   C3 -.->|2| X4
-  C3 -.->|11| X3
-  C3 -.->|18| X1
-  C4 -.->|15| X2
+  C3 -.->|12| X3
+  C3 -.->|20| X1
+  C4 -.->|17| X2
+  C4 -.->|2| X4
   C5 -.->|31| X2
-  C5 -.->|2| X3
-  C5 -.->|6| X1
-  C6 -.->|10| X2
+  C5 -.->|3| X3
+  C5 -.->|7| X1
+  C6 -.->|11| X2
   C6 -.->|2| X1
   C7 -.->|14| X5
 ```
@@ -108,4 +109,4 @@ MAT 250 had no published schedule. The left column is the MAT 200 weekly plan (t
 | 14–15 | Finite sets, inclusion–exclusion, pigeonhole; countable sets, Cantor, Cantor–Schröder–Bernstein (10–11, 14) | — |
 
 ## Developed further in
-Number of *Connections* links from these notes to each subject: [[Group Theory]] (64), [[Single Variable Analysis]] (49), [[Measure Theory]] (20), [[Topology]] (16), [[Linear Algebra]] (8).
+Number of *Connections* links from these notes to each subject: [[Group Theory]] (67), [[Single Variable Analysis]] (54), [[Measure Theory]] (22), [[Topology]] (16), [[Linear Algebra]] (9).

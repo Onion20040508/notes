@@ -10,8 +10,8 @@ tags: [chapter, calculus]
 *Stewart, Chapter 2.*
 
 **Builds on:** [[· 1 Functions and Models|1 Functions and Models]] (9), [[· 3 Differentiation Rules|3 Differentiation Rules]] (1), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (2), [[· 17 Background from the Appendices|17 Background from the Appendices]] (4)
-**Used by:** [[· 1 Functions and Models|1 Functions and Models]] (3), [[· 3 Differentiation Rules|3 Differentiation Rules]] (42), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (15), [[· 5 Integrals|5 Integrals]] (6), [[· 9 Differential Equations|9 Differential Equations]] (1), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (9), [[· 13 Vector Functions|13 Vector Functions]] (3), [[· 14 Partial Derivatives|14 Partial Derivatives]] (3), [[· 17 Background from the Appendices|17 Background from the Appendices]] (7)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (46), [[Topology]] (2), [[Multivariable Analysis]] (2)
+**Used by:** [[· 1 Functions and Models|1 Functions and Models]] (3), [[· 3 Differentiation Rules|3 Differentiation Rules]] (42), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (15), [[· 5 Integrals|5 Integrals]] (7), [[· 9 Differential Equations|9 Differential Equations]] (1), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (9), [[· 13 Vector Functions|13 Vector Functions]] (3), [[· 14 Partial Derivatives|14 Partial Derivatives]] (3), [[· 17 Background from the Appendices|17 Background from the Appendices]] (7)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (47), [[Topology]] (3), [[Multivariable Analysis]] (2), [[Complex Variables]] (1)
 
 ## Sections
 - [[§6 The Tangent and Velocity Problems]] — Stewart 2.1

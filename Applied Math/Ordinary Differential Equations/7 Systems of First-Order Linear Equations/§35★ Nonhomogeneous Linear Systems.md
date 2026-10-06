@@ -109,7 +109,7 @@ where $\mathbf{A}$ is an $n \times n$ diagonalizable constant matrix. Diagonaliz
 > [!remark] Remark: Method — Diagonalization
 > To find the general solution of $\mathbf{x}' = \mathbf{A}\mathbf{x} + \mathbf{g}(t)$ with $\mathbf{A}$ constant and diagonalizable:
 > 1. **Find the eigenvalues** $r_j$ and **independent eigenvectors** $\boldsymbol{\xi}^{(j)}$ of $\mathbf{A}$; form $\mathbf{T}$ and $\mathbf{D}$.
-> 2. **Find $\mathbf{T}^{-1}$.** If $\mathbf{A}$ is Hermitian (real symmetric), normalize the eigenvectors so that $(\boldsymbol{\xi}^{(j)}, \boldsymbol{\xi}^{(j)}) = 1$; then $\mathbf{T}^{-1} = \mathbf{T}^{\ast}$ ($= \mathbf{T}^T$ for real $\mathbf{T}$) needs no calculation ([[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]](b)).
+> 2. **Find $\mathbf{T}^{-1}$.** If $\mathbf{A}$ is [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-6|Hermitian]] (real symmetric), normalize the eigenvectors so that $(\boldsymbol{\xi}^{(j)}, \boldsymbol{\xi}^{(j)}) = 1$; then $\mathbf{T}^{-1} = \mathbf{T}^{\ast}$ ($= \mathbf{T}^T$ for real $\mathbf{T}$) needs no calculation ([[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]](b)).
 > 3. **Compute** $\mathbf{h} = \mathbf{T}^{-1}\mathbf{g}$ and solve each scalar equation $y_j' - r_jy_j = h_j$ by an integrating factor.
 > 4. **Transform back:** $\mathbf{x} = \mathbf{T}\mathbf{y}$.
 >

@@ -2,7 +2,7 @@
 
 My mathematics and physics notes, kept as an [Obsidian](https://obsidian.md) vault. Each subject is organized by chapter and section, written in LaTeX-style callouts, and densely cross-linked, so a theorem links to the results its proof uses and, through backlinks, to every place it is used later.
 
-**815 notes · 443 sections · 195 key results · ~800 figures · 25,000+ links**
+**1,900+ notes · 1,239 sections · 328 key results · ~1,400 figures · 89,000+ links**
 
 ---
 
@@ -48,7 +48,7 @@ Physics subjects are built in levels: **A** introductory, **B** upper-level, **C
 | [Quantum Mechanics](Physics/Quantum%20Mechanics) | Griffiths · Sakurai | level A in progress |
 | [Quantum Field Theory](Physics/Quantum%20Field%20Theory) | PHY 513 · Peskin & Schroeder · Yu | level C in progress |
 
-Sign, unit and Fourier conventions are recorded in [`Physics/Conventions`](Physics/Conventions), and each physics note names the convention it follows.
+Sign, unit and Fourier conventions are recorded in [`Physics/· Conventions`](Physics/·%20Conventions.md), and each physics note names the convention it follows.
 
 ---
 

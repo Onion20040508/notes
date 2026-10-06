@@ -172,7 +172,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 
 > [!remark]- Connections
 > - The derivative of $\int_{t_0}^t h(s)\,ds$ for continuous $h$: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II).
-> - The same method for systems $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, with a fundamental matrix in place of $y_1, y_2$: [[§35★ Nonhomogeneous Linear Systems#^thm-35-3|Theorem §35.3]] (BDP 7.9). BDP's footnote points there (Problems 7.9.17–19) for a more natural derivation of the extra condition (21): it is the first row of the system form.
+> - The same method for systems $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$, with a [[§33★ Fundamental Matrices#^def-33-1|fundamental matrix]] in place of $y_1, y_2$: [[§35★ Nonhomogeneous Linear Systems#^thm-35-3|Theorem §35.3]] (BDP 7.9). BDP's footnote points there (Problems 7.9.17–19) for a more natural derivation of the extra condition (21): it is the first row of the system form.
 > - See also: [[§2★ Nonhomogeneous Linear Equations#^thm-2-6|341 Thm. §2.6]] (the same method in Powers' review); it solves the radial equations of Poisson's equation in a disk in [[§39 Potential in a Disk#^ex-39-3|341 Ex. §39.3]].
 
 > [!remark] Remark: Method — Variation of Parameters

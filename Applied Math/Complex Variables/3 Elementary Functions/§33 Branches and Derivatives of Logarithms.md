@@ -104,7 +104,7 @@ $$
 ## Branches, Branch Cuts, Branch Points
 
 > [!definition] Definition §33.2: Branch of a Multiple-Valued Function; Principal Branch
-> A **branch** of a multiple-valued function $f$ is any single-valued function $F$ that is analytic in some domain at each point $z$ of which the value $F(z)$ is one of the values of $f$. (The requirement of analyticity prevents $F$ from taking a random selection of the values of $f$.)
+> A **branch** of a [[§13 Functions and Mappings#^def-13-4|multiple-valued function]] $f$ is any single-valued function $F$ that is analytic in some domain at each point $z$ of which the value $F(z)$ is one of the values of $f$. (The requirement of analyticity prevents $F$ from taking a random selection of the values of $f$.)
 >
 > For each fixed $\alpha$, the function (2) is a branch of the multiple-valued function (1). The function
 >

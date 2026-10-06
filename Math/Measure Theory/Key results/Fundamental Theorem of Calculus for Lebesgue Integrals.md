@@ -20,7 +20,6 @@ tags: [measure-theory, hub]
 
 ## Used in (Measure Theory)
 - [[§18 Differentiation Theory#^cor-18-14|Corollary §18.14: Term-by-Term Differentiation of AC Series]]
-- [[§18 Differentiation Theory#^thm-18-15|Theorem §18.15: Lebesgue Decomposition of Increasing Functions]]
 - [[§18 Differentiation Theory#^thm-18-19|Theorem §18.19: AC Functions Map Null Sets to Null Sets]]
 
 ## Connections

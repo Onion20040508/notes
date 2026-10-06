@@ -9,7 +9,7 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 5.*
 
-**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (10), [[· 2 Analytic Functions|2 Analytic Functions]] (9), [[· 3 Elementary Functions|3 Elementary Functions]] (8), [[· 4 Integrals|4 Integrals]] (25), [[· 6 Residues and Poles|6 Residues and Poles]] (4)
+**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (11), [[· 2 Analytic Functions|2 Analytic Functions]] (9), [[· 3 Elementary Functions|3 Elementary Functions]] (8), [[· 4 Integrals|4 Integrals]] (26), [[· 6 Residues and Poles|6 Residues and Poles]] (4), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (1)
 **Used by:** [[· 2 Analytic Functions|2 Analytic Functions]] (1), [[· 4 Integrals|4 Integrals]] (2), [[· 6 Residues and Poles|6 Residues and Poles]] (22), [[· 7 Applications of Residues|7 Applications of Residues]] (5), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (2), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (1), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (2)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (31), [[Multivariable Analysis]] (1), [[Fourier Series and PDEs]] (4), [[Calculus]] (11)
 

@@ -17,7 +17,7 @@ A multiple-valued function such as $\log z$ or $z^{1/2}$ becomes single-valued i
 ## The Idea
 
 > [!definition] Definition §110.1: Riemann Surface
-> A **Riemann surface** for a multiple-valued function is a generalization of the complex plane consisting of more than one sheet, the sheets being joined along cuts, such that at each point of the surface only one value of the function is assigned. Once a Riemann surface is devised for a given function, the function is single-valued on the surface, and the theory of single-valued functions applies there.
+> A **Riemann surface** for a [[§13 Functions and Mappings#^def-13-4|multiple-valued function]] is a generalization of the complex plane consisting of more than one sheet, the sheets being joined along cuts, such that at each point of the surface only one value of the function is assigned. Once a Riemann surface is devised for a given function, the function is single-valued on the surface, and the theory of single-valued functions applies there.
 >
 > *B&C: Sec. 110 (text)*
 

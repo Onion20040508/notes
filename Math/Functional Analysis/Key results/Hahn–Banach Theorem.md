@@ -16,7 +16,6 @@ tags: [functional-analysis, hub]
 - [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|Theorem §5.2: Zorn's Lemma]]
 
 ## Used in (Functional Analysis)
-- [[§5 Proof of the Hahn–Banach Theorem#^ex-5-1|Example §5.1: Extending from a Line]]
 - [[§7 The Hyperplane Separation Theorem#^thm-7-1|Theorem §7.1: Hyperplane Separation; Geometric Hahn–Banach]]
 - [[§8 The Complex Hahn–Banach Theorem#^thm-8-1|Theorem §8.1: Complex Hahn–Banach]]
 

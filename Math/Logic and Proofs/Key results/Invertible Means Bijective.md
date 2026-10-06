@@ -17,8 +17,6 @@ tags: [logic-and-proofs, hub]
 - [[§9 Injections, Surjections and Bijections#^def-9-3|Definition §9.3: Invertible Function; Inverse]]
 
 ## Used in (Logic and Proofs)
-- [[§9 Injections, Surjections and Bijections#^ex-9-4|Example §9.4: Four Functions on the Reals]]
-- [[§9 Injections, Surjections and Bijections#^ex-9-9|Example §9.9: The Inverse of a Composite]]
 - [[§10 Counting#^prop-10-1|Proposition §10.1: Cardinality Is Well Defined]]
 - [[§10 Counting#^prop-10-3|Proposition §10.3: Equal Cardinality Means a Bijection]]
 - [[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4: Subsets of Finite Sets]]

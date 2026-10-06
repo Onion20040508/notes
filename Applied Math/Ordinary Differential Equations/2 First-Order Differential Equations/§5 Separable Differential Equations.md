@@ -97,7 +97,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 *Uses:* [[§5 Separable Differential Equations#^def-5-1|Def. §5.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (zero derivative on an interval), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (FTC I)
 
 > [!remark]- Connections
-> - See also: [[§59 Separable Equations#^def-59-1|Calc Def. §59.1]] and [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]] (Stewart's treatment, in the form $h(y)\,dy/dx = g(x)$) and its [[§59 Separable Equations#^rem-59-1|Remark: Method]].
+> - See also: [[§59 Separable Equations#^def-59-1|Calc Def. §59.1]] and [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]] (Stewart's treatment, in the form $h(y)\,dy/dx = g(x)$) and its [[§59 Separable Equations#^rem-59-1|Calc Remark: Method — Solving a Separable Equation]].
 > - When does (16) actually define $y$ as a differentiable function of $x$? Put $F(x, y) = \int_{x_0}^{x} M + \int_{y_0}^{y} N$. Then $F_y = N(y)$, and if $N(y_0) \ne 0$ the [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]] (Implicit Function Theorem) gives a unique differentiable $\phi$ near $x_0$ with $F(x, \phi(x)) = 0$ and $\phi' = -F_x/F_y = -M/N$, which is (4). Where $N(y) = 0$ the integral curve can have a vertical tangent, and the solution ends there ([[§5 Separable Differential Equations#^ex-5-1|Examples §5.1]] and [[§5 Separable Differential Equations#^ex-5-2|§5.2]]). The generalization to $M(x, y)\,dx + N(x, y)\,dy = 0$ is the exact equations of [[§9 Exact Differential Equations and Integrating Factors#^def-9-1|Definition §9.1]].
 
 > [!remark] Remark: Method — Separation of Variables

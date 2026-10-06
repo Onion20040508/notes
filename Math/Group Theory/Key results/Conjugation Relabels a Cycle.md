@@ -17,10 +17,8 @@ tags: [group-theory, hub]
 - [[§11 Disjoint Cycle Decomposition#^thm-11-3|Theorem §11.3: Disjoint Cycle Decomposition]]
 
 ## Used in (Group Theory)
-- [[§13 The Symmetric Group S₃#^ex-13-1|Example §13.1: The Mixed Hypothesis of WS 1.1, Revisited]]
 - [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|Lemma §21.6: Adjacent Transpositions from (1 j)'s]]
 - [[§33 Conjugacy Classes#^lem-33-1|Lemma §33.1: Conjugation Relabels the Entries]]
-- [[§38 Normal Subgroups#^ex-38-1|Example §38.1: A Non-Normal Subgroup of S_3]]
 - [[§43 Simple Groups#^lem-43-8|Lemma §43.8: 3-Cycles Are Conjugate in Aₙ for n ≥ 5]]
 - [[§43 Simple Groups#^thm-43-9|Theorem §43.9: Aₙ Is Simple for n ≥ 5]]
 

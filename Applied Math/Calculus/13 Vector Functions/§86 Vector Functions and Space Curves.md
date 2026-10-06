@@ -117,7 +117,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 > \frac{t^2}{\sqrt{2t^4 + 1}} = \frac{1}{\sqrt{2 + 1/t^4}} \to \frac{1}{\sqrt2}, \qquad \frac{t + 1}{e^t} \to 0, \qquad \arctan t \to \frac{\pi}{2} ,
 > $$
 >
-> (the middle one by l'Hospital's Rule, $\lim (t + 1)/e^t = \lim 1/e^t = 0$), so $\lim_{t \to \infty}\Big\langle \dfrac{t^2}{\sqrt{2t^4 + 1}}, \dfrac{t + 1}{e^t}, \arctan t \Big\rangle = \Big\langle \dfrac{1}{\sqrt2}, 0, \dfrac{\pi}{2} \Big\rangle$.
+> (the middle one by [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|l'Hospital's Rule]], $\lim (t + 1)/e^t = \lim 1/e^t = 0$), so $\lim_{t \to \infty}\Big\langle \dfrac{t^2}{\sqrt{2t^4 + 1}}, \dfrac{t + 1}{e^t}, \arctan t \Big\rangle = \Big\langle \dfrac{1}{\sqrt2}, 0, \dfrac{\pi}{2} \Big\rangle$.
 >
 > *Stewart: Examples 13.1.1 and 13.1.2*
 > *Source: 233 Exam 1 Review, Q10(a)–(b); 233 Midterm 1 Practice Questions, Q19*

@@ -51,7 +51,7 @@ tags: [topology, math590]
 *The evenly covered neighborhood from the proof: $U = B(x,\varepsilon)\cap S^2$ (dark red) and its antipodal copy $a(U)$ (light red, on the far side of the sphere) are disjoint because $\varepsilon < 1$ while $d(x,-x) = 2$ (dotted diameter). $p$ maps each of them homeomorphically onto the same set $p(U) \subseteq P^2$: two sheets over $p(U)$.*
 
 > [!remark]- Connections
-> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: [[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|591 Ex. §37.1]].
+> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one [[§31 Local Diffeomorphisms#^def-31-1|local diffeomorphism]]: [[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|591 Ex. §37.1]].
 
 > [!theorem] Theorem §28.2: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$
 > The fundamental group of the projective plane is the cyclic group of order $2$.
@@ -158,7 +158,7 @@ tags: [topology, math590]
 > [!remark] Remark: Wedge Sum vs. Product
 > The wedge sum $X \vee Y$ and the product $X \times Y$ are very different constructions:
 > - **Topologically:** $X \vee Y$ glues $X$ and $Y$ at a single point; $X \times Y$ takes all pairs $(x, y)$. The wedge sum has $\dim(X \vee Y) = \max(\dim X, \dim Y)$, while $\dim(X \times Y) = \dim X + \dim Y$.
-> - **For $\pi_1$:** The product gives $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], always abelian if the factors are; [[§23 The Fundamental Group#^thm-23-7|proved in §23]]). The wedge sum gives $\pi_1(X \vee Y) \cong \pi_1(X) \ast  \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) when $X$ and $Y$ are “nice” — but proving this requires the [[§29 The Seifert–van Kampen Theorem#^cor-29-2|Seifert-van Kampen theorem (§29)]]. For now, we prove a weaker result: $\pi_1(S^1 \vee S^1)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]).
+> - **For $\pi_1$:** The product gives $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], always abelian if the factors are; [[§23 The Fundamental Group#^thm-23-7|proved in §23]]). The wedge sum gives $\pi_1(X \vee Y) \cong \pi_1(X) \ast  \pi_1(Y)$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) when $X$ and $Y$ are “nice” — but proving this requires the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]] ([[§29 The Seifert–van Kampen Theorem#^cor-29-2|Cor. §29.2]]). For now, we prove a weaker result: $\pi_1(S^1 \vee S^1)$ is non-abelian ([[§28 Fundamental Group of Some Surfaces#^thm-28-4|§28.4]]).
 
 ^rem-28-3
 
@@ -175,7 +175,7 @@ tags: [topology, math590]
 ![[m590-28-3.svg]]
 *The figure eight $X = A \cup B$: the circles $A$ (blue, traversed by $f$) and $B$ (red, traversed by $g$) meet only at $x_0$. A basic neighborhood of $x_0$ (green, open ends hollow) contains a small open arc of each circle through $x_0$: the cross of Example §28.1.*
 
-We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem, §29]]). But using covering spaces, we can prove the key fact that $\pi_1(X)$ is **non-abelian**: $[f] \ast  [g] \neq [g] \ast  [f]$ for the generators.
+We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]], [[§29 The Seifert–van Kampen Theorem#^ex-29-2|Ex. §29.2]]). But using covering spaces, we can prove the key fact that $\pi_1(X)$ is **non-abelian**: $[f] \ast  [g] \neq [g] \ast  [f]$ for the generators.
 
 > [!theorem] Theorem §28.4: $\pi_1$ of the Figure Eight is Non-Abelian
 > Let $X = A \cup B$ be the figure eight, with $A, B$ circles meeting at $x_0$. Let $f$ be a loop traversing $A$ once and $g$ a loop traversing $B$ once. Then $f * g \not\simeq_p g * f$.
@@ -264,7 +264,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 *The covering $p: E \to X$ from the proof. The $x$-axis and the circles on the $y$-axis lie over $A$ (blue); the $y$-axis and the circles on the $x$-axis lie over $B$ (red). The lift of $f\ast g$ from $e_0$ runs along the $x$-axis to $(1,0)$ and then around the red circle there, so it ends at $(1,0)$. The lift of $g\ast f$ runs up to $(0,1)$ and around the blue circle, so it ends at $(0,1)$. Different endpoints, so $f\ast g \not\simeq_p g\ast f$.*
 
 > [!remark] Remark
-> This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[§23 The Fundamental Group#^cor-23-8|torus]], $S^1$ ([[Fundamental Group of the Circle|§24.10]]), or any $S^n$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]])). The full result $\pi_1(X) \cong F_2$ (the [[§21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[§29 The Seifert–van Kampen Theorem#^ex-29-2|Seifert-van Kampen theorem (§29)]].
+> This proves $\pi_1(X)$ is non-abelian, which already distinguishes the figure eight from any space with abelian $\pi_1$ (such as the [[§23 The Fundamental Group#^cor-23-8|torus]], $S^1$ ([[Fundamental Group of the Circle|§24.10]]), or any $S^n$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]])). The full result $\pi_1(X) \cong F_2$ (the [[§21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators — meaning not only non-abelian, but with *no relations at all* between $[f]$ and $[g]$) requires the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]] ([[§29 The Seifert–van Kampen Theorem#^ex-29-2|Ex. §29.2]]).
 
 ^rem-28-4
 

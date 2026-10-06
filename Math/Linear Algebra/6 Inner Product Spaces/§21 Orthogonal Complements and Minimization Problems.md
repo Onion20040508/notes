@@ -106,7 +106,7 @@ tags: [linear-algebra]
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]
 
 > [!remark]- Connections
-> - For any subset of a Hilbert space the double complement is the closed linear span: [[§22 Projection and Orthogonal Decomposition#^thm-22-6|556 Thm. §22.6]].
+> - For any subset of a Hilbert space the double complement is the closed linear span ([[§10 Normed Linear Spaces#^def-10-8|556 Def. §10.8]]): [[§22 Projection and Orthogonal Decomposition#^thm-22-6|556 Thm. §22.6]].
 > - Computational version: [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|235 Cor. §40.8]] (including $(\operatorname{Nul}A)^\perp=\operatorname{Row}A$).
 
 > [!theorem] Theorem 6.54: U⟂ = {0} ⟺ U = V (for U a finite-dimensional subspace of V)

@@ -120,7 +120,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 > [!remark] Remark: Interpretation of $d^2f$
 > The second differential $d^2f$ is a **[[§32 Bilinear Forms and Quadratic Forms#^ladr-9-18|quadratic form]]** in $(h, k)$. It captures the **curvature** or second-order behavior of $f$:
 > - It appears in the [[§9 Taylor's Theorem for Multivariable Functions#^ex-9-2|second-order Taylor expansion]] of $f$.
-> - It [[Second Derivative Test in Several Variables|determines]] whether a critical point is a local max, local min, or saddle point.
+> - It determines whether a critical point is a local max, local min, or saddle point ([[Second Derivative Test in Several Variables|§14.4]]).
 
 ^rem-8-4
 

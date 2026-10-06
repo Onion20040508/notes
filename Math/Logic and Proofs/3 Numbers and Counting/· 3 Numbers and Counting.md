@@ -9,9 +9,9 @@ tags: [chapter, logic-and-proofs]
 
 *Eccles, Chapters 10–14.*
 
-**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (28), [[· 2 Sets and Functions|2 Sets and Functions]] (17), [[· 4 Arithmetic|4 Arithmetic]] (1)
+**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (28), [[· 2 Sets and Functions|2 Sets and Functions]] (18), [[· 4 Arithmetic|4 Arithmetic]] (1)
 **Used by:** [[· 4 Arithmetic|4 Arithmetic]] (9), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (7), [[· 6 Prime Numbers|6 Prime Numbers]] (7)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (18), [[Linear Algebra]] (2), [[Group Theory]] (5), [[Measure Theory]] (11)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (20), [[Linear Algebra]] (2), [[Group Theory]] (5), [[Measure Theory]] (12)
 
 ## Sections
 - [[§10 Counting]]

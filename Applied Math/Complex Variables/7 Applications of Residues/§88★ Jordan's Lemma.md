@@ -113,7 +113,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 > \phi(z) = \frac{z\exp(i2z)}{z + \sqrt3 i}, \qquad \phi(\sqrt3 i) = \frac12\exp(-2\sqrt3) \ne 0 ,
 > $$
 >
-> so the residue is $B = \frac12\exp(-2\sqrt3)$. The residue theorem gives
+> so the residue is $B = \frac12\exp(-2\sqrt3)$. The [[§76 Cauchy's Residue Theorem#^thm-76-1|residue theorem]] gives
 >
 > $$
 > \int_{-R}^{R}\frac{xe^{i2x}}{x^2 + 3}\,dx = i\pi\exp(-2\sqrt3) - \int_{C_R} f(z)e^{i2z}\,dz , \qquad (4)

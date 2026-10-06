@@ -16,7 +16,7 @@ Part 2 of the Fundamental Theorem of Calculus says $\int_a^b F'(x)\,dx = F(b) - 
 ## The Fundamental Theorem for Line Integrals
 
 > [!theorem] Theorem §109.1: The Fundamental Theorem for Line Integrals
-> Let $C$ be a smooth curve given by the vector function $\mathbf{r}(t)$, $a \le t \le b$. Let $f$ be a differentiable function of two or three variables whose gradient vector $\nabla f$ is continuous on $C$. Then
+> Let $C$ be a [[§88 Arc Length and Curvature#^def-88-3|smooth curve]] given by the vector function $\mathbf{r}(t)$, $a \le t \le b$. Let $f$ be a differentiable function of two or three variables whose gradient vector $\nabla f$ is continuous on $C$. Then
 >
 > $$
 > \int_C \nabla f \cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a)) .

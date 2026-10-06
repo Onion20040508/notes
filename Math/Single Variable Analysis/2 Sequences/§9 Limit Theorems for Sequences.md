@@ -17,7 +17,7 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 ^thm-9-1
 
 > [!proof]+ Proof
-> Let $s = \lim_{n\to\infty} s_n$. Take $\varepsilon = 1$ in the definition: there exists $N$ such that $|s_n - s| < 1$ for all $n \geq N$. By the [[Triangle inequality|triangle inequality]], for such $n$,
+> Let $s = \lim_{n\to\infty} s_n$. Take $\varepsilon = 1$ in the definition: there exists $N$ such that $|s_n - s| < 1$ for all $n \geq N$. By the [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]], for such $n$,
 >
 > $$
 > |s_n| = |(s_n - s) + s| \leq |s_n - s| + |s| < |s| + 1.

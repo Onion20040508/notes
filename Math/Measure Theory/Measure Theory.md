@@ -27,6 +27,7 @@ graph TD
   X1["Single Variable Analysis (451)"]
   X2["Topology (590)"]
   X3["Linear Algebra (LADR)"]
+  X4["Multivariable Analysis (452)"]
   C1 --> C2
   C2 --> C3
   C3 --> C4
@@ -34,6 +35,7 @@ graph TD
   C5 --> C6
   C6 -.->|on credit| C5
   X3 -.->|3| C5
+  X4 -.->|3| C3
   X1 -.->|13| C2
   X1 -.->|19| C3
   X1 -.->|15| C4
@@ -65,7 +67,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Characterization of the Supremum]] (3)
 - [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|Definition §10.3: Lim Sup and Lim Inf]] (3)
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Theorem §10.6: Convergence via Lim Sup and Lim Inf]] (3)
-- [[§14 Series#^ex-14-4|Example §14.4: The geometric series]] (3)
+- [[§14 Series#^ex-14-4|Example §14.4: The Geometric Series]] (3)
 - [[Monotone Convergence Theorem]] (2)
 
 **[[Topology]]**
@@ -81,9 +83,13 @@ The results from other subjects that this course's proofs and definitions cite m
 **[[Linear Algebra]]**
 - [[Triangle inequality]] (1)
 - [[Invertible ⟺ nonzero determinant]] (1)
-- [[§34 Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
-- [[§34 Determinants#^ladr-9-61|9.61 T changes volume by factor of |det T|]] (1)
-- [[§2 Definition of Vector Space#^ladr-1-20|1.20 Vector space]] (1)
+- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (1)
+- [[§34 Determinants#^ladr-9-61|Theorem 9.61: T changes volume by factor of |det T|]] (1)
+- [[§2 Definition of Vector Space#^ladr-1-20|Definition 1.20: Vector space]] (1)
+
+**[[Multivariable Analysis]]**
+- [[§2 Open and Closed Sets#^def-2-3|Definition §2.3: Interior, Exterior, and Boundary Points]] (2)
+- [[§2 Open and Closed Sets#^def-2-5|Definition §2.5: Closure]] (1)
 
 ## Workhorse examples
 - [[Cantor set and Cantor function]]

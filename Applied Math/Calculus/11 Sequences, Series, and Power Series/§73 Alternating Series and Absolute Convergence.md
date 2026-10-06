@@ -180,7 +180,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 > \text{(ii)}\ \ 0 < \frac{1}{n!} \le \frac1n \to 0 , \text{ so } b_n \to 0
 > $$
 >
-> by the Squeeze Theorem. So the series converges by the Alternating Series Test.
+> by the [[§69 Sequences#^thm-69-4|Squeeze Theorem]]. So the series converges by the Alternating Series Test.
 >
 > **How many terms.** Write out the first terms:
 >

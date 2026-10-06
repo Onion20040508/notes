@@ -21,7 +21,6 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§5 A Zoo of Subgroups#^cor-5-2|Corollary §5.2: Generated Subgroups of ℤ, and Bézout]]
-- [[§17 Cyclic Groups#^thm-17-4|Theorem §17.4: Subgroups of Cyclic Groups Are Cyclic]]
 
 ## Connections
 - **Used for.** [[Bézout's Identity]] (aℤ + bℤ = gcd(a, b)ℤ), and through it [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1|The Dependency Chain in ℤ]]. Also [[Subgroups of Cyclic Groups Are Cyclic]], and the fact that the exponents killing g form ord(g)ℤ ([[§4 Subgroups#^rem-4-4|Where Finiteness Enters]], [[§17 Cyclic Groups#^prop-17-3|§17.3]]).

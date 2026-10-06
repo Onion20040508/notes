@@ -9,7 +9,7 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 11 · ★ beyond MAT 342.*
 
-**Builds on:** [[· 4 Integrals|4 Integrals]] (6), [[· 5 Series|5 Series]] (1), [[· 7 Applications of Residues|7 Applications of Residues]] (2), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (2), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (6), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (4)
+**Builds on:** [[· 2 Analytic Functions|2 Analytic Functions]] (1), [[· 3 Elementary Functions|3 Elementary Functions]] (1), [[· 4 Integrals|4 Integrals]] (6), [[· 5 Series|5 Series]] (1), [[· 7 Applications of Residues|7 Applications of Residues]] (2), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (2), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (6), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (4)
 **Used by:** —
 **Developed further in (other subjects):** —
 

@@ -13,8 +13,8 @@ tags: [applied-linear-algebra, hub]
 ## Its proof uses
 - [[§41 Orthogonal Sets#^thm-41-4|Theorem §41.4: Orthonormal Columns]]
 - [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|Theorem §48.2: Orthogonally Diagonalizable Means Symmetric]]
-- [[§49★ Quadratic Forms#^prop-49-1|Proposition §49.1: Change of Variable in a Quadratic Form]]
 - [[§49★ Quadratic Forms#^ex-49-1|Example §49.1: From a Matrix to a Form and Back]]
+- [[§49★ Quadratic Forms#^prop-49-1|Proposition §49.1: Change of Variable in a Quadratic Form]]
 
 ## Used in (Applied Linear Algebra)
 - [[§49★ Quadratic Forms#^prop-49-3|Proposition §49.3: Level Curves of a Quadratic Form in Two Variables]]

@@ -204,7 +204,7 @@ tags: [linear-algebra]
 *Uses:* [[Gram–Schmidt procedure|6.32]], [[§20 Orthonormal Bases#^ladr-6-28|6.28]]
 
 > [!remark]- Connections
-> - Every Hilbert space has an orthonormal basis ([[§24 Orthonormal Sets and Bases#^thm-24-12|556 Thm. §24.12]], by Zorn's lemma), and a countable one exactly when it is separable ([[§24 Orthonormal Sets and Bases#^thm-24-13|556 Thm. §24.13]]).
+> - Every Hilbert space has an orthonormal basis ([[§24 Orthonormal Sets and Bases#^thm-24-12|556 Thm. §24.12]], by Zorn's lemma, [[Zorn's Lemma|556 Thm. §5.2]]), and a countable one exactly when it is separable ([[§24 Orthonormal Sets and Bases#^thm-24-13|556 Thm. §24.13]]).
 > - Computational version: [[§43 The Gram–Schmidt Process#^cor-43-2|235 Cor. §43.2]] (every nonzero subspace of $\mathbb R^n$ has an orthonormal basis).
 
 > [!theorem] Theorem 6.36: Every orthonormal list extends to an orthonormal basis

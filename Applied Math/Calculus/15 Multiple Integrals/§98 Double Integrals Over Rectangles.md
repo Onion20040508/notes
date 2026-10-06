@@ -302,7 +302,7 @@ Evaluating a double integral from its definition is even harder than for single 
 > \iint_R y \sin(xy)\,dA = \int_0^{\pi} \int_1^2 y \sin(xy)\,dx\,dy = \int_0^{\pi} \Big[ -\cos(xy) \Big]_{x=1}^{x=2} dy = \int_0^{\pi} (-\cos 2y + \cos y)\,dy = \Big[ -\tfrac12 \sin 2y + \sin y \Big]_0^{\pi} = 0 .
 > $$
 >
-> In the other order, $\int_1^2 \int_0^{\pi} y \sin(xy)\,dy\,dx$, the inner integral needs integration by parts, and the outer one then needs it again. When evaluating double integrals it is wise to choose the order that gives simpler integrals.
+> In the other order, $\int_1^2 \int_0^{\pi} y \sin(xy)\,dy\,dx$, the inner integral needs [[§44 Integration by Parts#^thm-44-1|integration by parts]], and the outer one then needs it again. When evaluating double integrals it is wise to choose the order that gives simpler integrals.
 >
 > The value $0$ means that the volume $V_1$ above $R$ and below the graph equals the volume $V_2$ below $R$ and above the graph: for a function of both signs, $\iint_R f\,dA = V_1 - V_2$.
 >

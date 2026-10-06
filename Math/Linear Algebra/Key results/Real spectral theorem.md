@@ -16,7 +16,6 @@ tags: [linear-algebra, hub]
 ## Used in (Linear Algebra)
 - [[§24 Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
 - [[§26 Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
-- [[§27 Consequences of Singular Value Decomposition#^ladr-7-92|7.92 Best approximation by linear map whose range has dimension ≤ k]]
 - [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|9.13 Diagonalization of a symmetric bilinear form by an orthonormal basis]]
 - [[§34 Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
 

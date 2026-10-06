@@ -30,7 +30,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Stabilizers enter [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; fixed points enter [[§30 Orbit–Stabilizer#^thm-30-6|Burnside's Lemma]]; under conjugation the stabilizer is the [[§34 Conjugation as an Action and the Class Equation#^def-34-1|centralizer]].
-> - Called the isotropy subgroup in 591, [[§13 Homogeneous Spaces#^def-13-2|591 Def. §13.2]]; for a continuous action on a space whose points are closed it is a closed subgroup, [[§13 Homogeneous Spaces#^thm-13-2|591 Thm. §13.2]].
+> - Called the isotropy subgroup in 591, [[§13 Homogeneous Spaces#^def-13-2|591 Def. §13.2]]; for a [[§12 Group Actions and Orbit Spaces#^def-12-2|continuous action]] on a space whose points are closed it is a closed subgroup, [[§13 Homogeneous Spaces#^thm-13-2|591 Thm. §13.2]].
 > - Used in Quantum Field Theory: the stabilizer of a particle's standard momentum under the Lorentz group is its little group, $SO(3)$ for a massive particle, whose representations are the particle's spin — [[§C3.5★ Particle States and the Little Group#^def-c3-5-1|QFT Def. §C3.5.1]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-7|QFT Theorem §C3.5.7]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-8|QFT Theorem §C3.5.8]].
 
 > [!theorem] Proposition §26.1: The Stabilizer Is a Subgroup

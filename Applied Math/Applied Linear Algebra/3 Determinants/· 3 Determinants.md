@@ -11,7 +11,7 @@ tags: [chapter, applied-linear-algebra]
 
 **Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (1), [[· 2 Matrix Algebra|2 Matrix Algebra]] (10), [[· 4 Vector Spaces|4 Vector Spaces]] (1), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (1)
 **Used by:** [[· 2 Matrix Algebra|2 Matrix Algebra]] (3), [[· 4 Vector Spaces|4 Vector Spaces]] (3), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (3), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (6), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (3)
-**Developed further in (other subjects):** [[Linear Algebra]] (13), [[Group Theory]] (3), [[Multivariable Analysis]] (1), [[Calculus]] (5)
+**Developed further in (other subjects):** [[Linear Algebra]] (13), [[Group Theory]] (4), [[Multivariable Analysis]] (1), [[Measure Theory]] (1), [[Calculus]] (5)
 
 ## Sections
 - [[§20 Introduction to Determinants]] — Lay 3.1
@@ -26,7 +26,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Cofactor Expansion|Theorem §20.1: Cofactor Expansion Along Any Row or Column]]: 98 later results
-- [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2: Determinant of a Triangular Matrix]]: 94 later results
-- [[§21 Properties of Determinants#^thm-21-1|Theorem §21.1: Row Operations]]: 93 later results
-- [[§21 Properties of Determinants#^prop-21-2|Proposition §21.2: The Determinant from an Echelon Form]]: 91 later results
+- [[Cofactor Expansion|Theorem §20.1: Cofactor Expansion Along Any Row or Column]]: 99 later results
+- [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2: Determinant of a Triangular Matrix]]: 98 later results
+- [[§21 Properties of Determinants#^thm-21-1|Theorem §21.1: Row Operations]]: 98 later results
+- [[§21 Properties of Determinants#^prop-21-2|Proposition §21.2: The Determinant from an Echelon Form]]: 98 later results

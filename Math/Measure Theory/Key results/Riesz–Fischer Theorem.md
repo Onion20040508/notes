@@ -25,11 +25,6 @@ tags: [measure-theory, hub]
 ## Used in (Measure Theory)
 - (not cited later in the course)
 
-## Used in (Functional Analysis)
-- [[§17 The Function Spaces Lᵖ(Ω)#^rem-17-2|Remark: What “Integrable” Means Here]]
-- [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|Theorem §17.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
-- [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ[a,b] as a Completion]]
-
 ## Connections
 - **Proof idea.** A Cauchy sequence has a subsequence whose consecutive differences have summable Lᵖ norms. By the absolute series test ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|Lemma §19.16]]), the subsequence converges a.e. to some f. [[Fatou's Lemma]] then bounds the Lᵖ distance from f_k to f by the liminf over j of the distance from f_k to the j-th subsequence term, which is small. For p = ∞, the convergence is uniform off a null set ([[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Cauchy implies convergent]]).
 - **Chain.** Hölder → [[Minkowski's Inequality]] → Riesz–Fischer. The engine is “absolutely convergent series converge”, built on the [[Monotone Convergence Theorem (Lebesgue)|MCT]] ([[§15 The General Lebesgue Integral#^cor-15-9|§15.9]] for p = 1). This is the Lᵖ analogue of [[§14 Series#^prop-14-6|451 §14.6]], and in a normed space it is equivalent to completeness.

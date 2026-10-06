@@ -167,7 +167,7 @@ This is what the example $s_n = (-1)^n$ leads us to expect.
 ^ex-11-3
 
 > [!example] Example §11.4: All of an Interval
-> The set of rational numbers in $[0,1]$ is countable (§2); make a list $(s_n)$ of them. Then $S = [0,1]$.
+> The set of rational numbers in $[0,1]$ is countable ([[§2 The Set ℚ of Rational Numbers#^thm-2-5|Theorem §2.5]]); make a list $(s_n)$ of them. Then $S = [0,1]$.
 >
 > Two things to prove. *Every subsequence limit belongs to $[0,1]$:* all terms lie in $[0,1]$, and limits preserve the inequalities $0 \leq s_{n_k} \leq 1$. *Every $x \in [0,1]$ is a subsequence limit*, by the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4): for each $k$, the interval $(x - \tfrac1k,\, x + \tfrac1k) \cap [0,1]$ contains infinitely many rationals, hence contains terms $s_n$ with $n$ arbitrarily large; choose inductively $n_k > n_{k-1}$ with $|s_{n_k} - x| < \tfrac1k$. Then $s_{n_k} \to x$.
 

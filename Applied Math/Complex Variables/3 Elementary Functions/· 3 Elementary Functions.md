@@ -9,9 +9,9 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 3.*
 
-**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (17), [[· 2 Analytic Functions|2 Analytic Functions]] (29), [[· 4 Integrals|4 Integrals]] (1)
-**Used by:** [[· 2 Analytic Functions|2 Analytic Functions]] (9), [[· 4 Integrals|4 Integrals]] (10), [[· 5 Series|5 Series]] (8), [[· 6 Residues and Poles|6 Residues and Poles]] (11), [[· 7 Applications of Residues|7 Applications of Residues]] (11), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (12), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (5), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (3)
-**Developed further in (other subjects):** [[Topology]] (2), [[Applied Linear Algebra]] (3), [[Ordinary Differential Equations]] (3), [[Calculus]] (21)
+**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (17), [[· 2 Analytic Functions|2 Analytic Functions]] (32), [[· 4 Integrals|4 Integrals]] (1)
+**Used by:** [[· 2 Analytic Functions|2 Analytic Functions]] (9), [[· 4 Integrals|4 Integrals]] (12), [[· 5 Series|5 Series]] (8), [[· 6 Residues and Poles|6 Residues and Poles]] (13), [[· 7 Applications of Residues|7 Applications of Residues]] (11), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (12), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (5), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (3), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (1)
+**Developed further in (other subjects):** [[Topology]] (2), [[Applied Linear Algebra]] (3), [[Ordinary Differential Equations]] (3), [[Calculus]] (24)
 
 ## Sections
 - [[§30 The Exponential Function]] — B&C Sec. 30

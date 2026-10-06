@@ -125,7 +125,7 @@ tags: [topology, math590]
 *The covering $p: \mathbb{R} \to S^1$ drawn as a helix over the circle: each $x \in \mathbb{R}$ sits directly above $p(x)$, one full turn per unit length. The right half-circle $U$ (red, open, hollow endpoints) is evenly covered. Its preimage is the stack of disjoint red slices $V_n = (n - \tfrac14, n + \tfrac14)$, each carried homeomorphically onto $U$ by $p$. The fiber over $b_0 = (1,0)$ is $\mathbb{Z}$ (black dots), one point in each slice.*
 
 > [!remark]- Connections
-> - Complex form: z ↦ eᶻ covers ℂ ∖ {0}, and the branches of log z are its local inverses on slit planes, [[§33 Branches and Derivatives of Logarithms#^thm-33-1|342 Thm. §33.1]]; the whole covering is the Riemann surface of log z, [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]].
+> - Complex form: z ↦ eᶻ covers ℂ ∖ {0}, and the branches of log z are its [[§114★ Local Inverses#^def-114-1|local inverses]] on slit planes, [[§33 Branches and Derivatives of Logarithms#^thm-33-1|342 Thm. §33.1]]; the whole covering is the Riemann surface of log z, [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]].
 
 > [!remark] Remark
 > This covering map is the key to computing $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]). The idea: $\mathbb{R}$ is simply connected, and the covering map $p: \mathbb{R} \to S^1$ “unwinds” loops on $S^1$ into paths in $\mathbb{R}$. A loop that winds $n$ times around $S^1$ lifts to a path in $\mathbb{R}$ from $0$ to $n$. The integer $n$ is the winding number, and this gives the isomorphism $\pi_1(S^1) \cong \mathbb{Z}$.

@@ -274,7 +274,7 @@ The recipe is always the same: differentiate each coefficient, wedge the result 
 > df = f_x \, dx + f_y \, dy + f_z \, dz.
 > $$
 >
-> That is, the coefficients of the 1-form $df$ are the components of $\nabla f = (f_x, f_y, f_z)$. The differential from [[§8 The Differential#^def-8-1|§8]] and the gradient from [[Directional Derivative Formula|§7]] are the same object: one is a 1-form, the other is the corresponding vector field.
+> That is, the coefficients of the 1-form $df$ are the components of $\nabla f = (f_x, f_y, f_z)$. The differential from [[§8 The Differential#^def-8-1|§8]] and the gradient from [[§7 Directional Derivatives#^rem-7-2|§7]] are the same object: one is a 1-form, the other is the corresponding vector field.
 
 ^prop-22-2
 
@@ -461,7 +461,7 @@ Curl and divergence are **not** at the same level: curl goes from degree 1 to de
 > - Rung $0 \to 1 \to 2$: $d(df) = 0$, i.e., $\nabla \times (\nabla f) = \mathbf{0}$. The curl of a gradient is zero.
 > - Rung $1 \to 2 \to 3$: $d(d\omega) = 0$ for a 1-form, i.e., $\nabla \cdot (\nabla \times \mathbf{F}) = 0$. The divergence of a curl is zero.
 >
-> These are not two separate computational accidents — they are the *same* identity $d \circ d = 0$ applied at different points on the ladder. This also explains why the flux of a curl through a closed surface $S$ vanishes: by [[Stokes' Theorem in ℝ³|Stokes']], $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \int_S d\omega = \int_{\partial S} \omega = 0$ since $\partial S = \emptyset$ (equivalently, by the Divergence Theorem, since $\nabla \cdot (\nabla \times \mathbf{F}) = 0$).
+> These are not two separate computational accidents — they are the *same* identity $d \circ d = 0$ applied at different points on the ladder. This also explains why the flux of a curl through a closed surface $S$ vanishes: by [[Stokes' Theorem in ℝ³|Stokes']], $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \int_S d\omega = \int_{\partial S} \omega = 0$ since $\partial S = \emptyset$ (equivalently, by the [[Divergence Theorem in ℝ³|Divergence Theorem]], since $\nabla \cdot (\nabla \times \mathbf{F}) = 0$).
 
 ^rem-22-5
 
@@ -606,7 +606,7 @@ To understand what $d$ can and cannot do, we need to revisit what “derivative�
 Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\mathbf{p} \in \mathbb{R}^n$ if there exists a linear map $Df_{\mathbf{p}}: \mathbb{R}^n \to \mathbb{R}$ satisfying $f(\mathbf{p} + \mathbf{h}) = f(\mathbf{p}) + Df_{\mathbf{p}}(\mathbf{h}) + o(|\mathbf{h}|)$, where $\mathbf{p} = (x_0, y_0, \ldots)$ and $\mathbf{h} = (h, k, \ldots)$ are vectors in $\mathbb{R}^n$.
 
 > [!theorem] Proposition §22.6: Gradient = Differential = 1-Form
-> The total derivative $Df_{\mathbf{p}}$ from [[§6 Differentiability#^def-6-2|§6]], the differential $df$ from [[§8 The Differential#^def-8-1|§8]], and the gradient $\nabla f$ from [[Directional Derivative Formula|§7]] are three notations for the same linear map on tangent vectors:
+> The total derivative $Df_{\mathbf{p}}$ from [[§6 Differentiability#^def-6-2|§6]], the differential $df$ from [[§8 The Differential#^def-8-1|§8]], and the gradient $\nabla f$ from [[§7 Directional Derivatives#^rem-7-2|§7]] are three notations for the same linear map on tangent vectors:
 >
 > $$
 > Df_{\mathbf{p}}(\mathbf{v}) = df(\mathbf{v}) = \nabla f \cdot \mathbf{v} = f_x v_1 + f_y v_2 + f_z v_3.
@@ -629,7 +629,7 @@ Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\m
 > D^2f_{\mathbf{p}}(\mathbf{u}, \mathbf{v}) = \lim_{t \to 0} \frac{Df_{\mathbf{p}+t\mathbf{u}}(\mathbf{v}) - Df_{\mathbf{p}}(\mathbf{v})}{t}.
 > $$
 >
-> It measures how the directional derivative $Df(\mathbf{v})$ changes as you move in direction $\mathbf{u}$.
+> It measures how the [[§7 Directional Derivatives#^def-7-1|directional derivative]] $Df(\mathbf{v})$ changes as you move in direction $\mathbf{u}$.
 
 ^def-22-7
 
@@ -652,7 +652,7 @@ $$
 f(\mathbf{p}+\mathbf{h}) = f(\mathbf{p}) + \underbrace{Df_{\mathbf{p}}(\mathbf{h})}_{\text{linear: gradient}} + \frac{1}{2}\underbrace{D^2f_{\mathbf{p}}(\mathbf{h}, \mathbf{h})}_{\text{bilinear: Hessian}} + o(|\mathbf{h}|^2).
 $$
 
-The second derivative test in [[Second Derivative Test in Several Variables|§14]] (checking whether $\mathbf{h}^T H_f \mathbf{h} > 0$ for all $\mathbf{h}$) was asking: is this bilinear form positive definite?
+The second derivative test in [[Second Derivative Test in Several Variables|§14]] (checking whether $\mathbf{h}^T H_f \mathbf{h} > 0$ for all $\mathbf{h}$) was asking: is this bilinear form [[§14 Optimization and Lagrange Multipliers#^def-14-3|positive definite]]?
 
 ### Why $d^2 = 0$: Symmetry Kills Antisymmetry
 

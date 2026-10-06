@@ -10,8 +10,8 @@ tags: [chapter, ordinary-differential-equations]
 *Boyce–DiPrima, Chapter 3.*
 
 **Builds on:** [[· 2 First-Order Differential Equations|2 First-Order Differential Equations]] (2), [[· 6 The Laplace Transform|6 The Laplace Transform]] (1)
-**Used by:** [[· 1 Introduction to Differential Equations|1 Introduction to Differential Equations]] (1), [[· 2 First-Order Differential Equations|2 First-Order Differential Equations]] (1), [[· 6 The Laplace Transform|6 The Laplace Transform]] (2), [[· 7 Systems of First-Order Linear Equations|7 Systems of First-Order Linear Equations]] (7)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Linear Algebra]] (5), [[Applied Linear Algebra]] (14), [[Calculus]] (5), [[Fourier Series and PDEs]] (19), [[Complex Variables]] (5)
+**Used by:** [[· 1 Introduction to Differential Equations|1 Introduction to Differential Equations]] (1), [[· 2 First-Order Differential Equations|2 First-Order Differential Equations]] (1), [[· 6 The Laplace Transform|6 The Laplace Transform]] (3), [[· 7 Systems of First-Order Linear Equations|7 Systems of First-Order Linear Equations]] (8)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Linear Algebra]] (5), [[Applied Linear Algebra]] (18), [[Calculus]] (8), [[Fourier Series and PDEs]] (22), [[Complex Variables]] (5)
 
 ## Sections
 - [[§13 Homogeneous Differential Equations with Constant Coefficients]] — BDP 3.1

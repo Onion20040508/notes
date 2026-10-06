@@ -12,9 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§3 Subspaces and Products#^def-3-1|Definition §3.1: Subspace Topology]]
-- [[§35 Immersions#^def-35-1|Definition §35.1: Immersions]]
 - [[§36 Embeddings#^def-36-1|Definition §36.1: Embedding]]
-- [[§36 Embeddings#^def-36-2|Definition §36.2: Proper Map]]
 - [[§36 Embeddings#^prop-36-4|Proposition §36.4: Proper Maps into Manifolds Are Closed]]
 
 ## Its proof uses (other subjects)

@@ -43,7 +43,7 @@ for any positively oriented simple closed contour $C$ around $z_0$ that lies in 
 ^def-75-1
 
 > [!theorem] Theorem §75.1: An Integral Is 2πi Times a Residue
-> Let $z_0$ be an isolated singular point of $f$, with $f$ analytic in $0 < |z - z_0| < R_2$, and let $C$ be a positively oriented simple closed contour around $z_0$ lying in that punctured disk. Then
+> Let $z_0$ be an isolated singular point of $f$, with $f$ analytic in $0 < |z - z_0| < R_2$, and let $C$ be a positively oriented [[§43 Contours#^def-43-5|simple closed contour]] around $z_0$ lying in that punctured disk. Then
 >
 > $$
 > \int_C f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_0} f(z) . \qquad (3)
@@ -74,7 +74,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > 3. **Read off** the coefficient of $1/(z - z_0)$. Only the terms that can produce $(z - z_0)^{-1}$ need to be computed: if $f(z) = (z - z_0)^{-k}g(z)$, it is the coefficient of $(z - z_0)^{k-1}$ in $g$.
 > 4. **Integrate.** If $C$ is positively oriented and encloses $z_0$ and no other singular point, $\int_C f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_0} f(z)$ (Theorem §75.1). Several singular points inside $C$: [[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]].
 >
-> Faster rules at poles come in [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] and [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]; the Laurent series is the method of last resort and the only one at essential singular points.
+> Faster rules at poles come in [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] and [[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]; the Laurent series is the method of last resort and the only one at [[§78 The Three Types of Isolated Singular Points#^def-78-3|essential singular points]].
 
 ^rem-75-1
 

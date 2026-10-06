@@ -17,11 +17,7 @@ tags: [calculus, hub]
 - [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|Theorem §28.1: Cauchy's Mean Value Theorem]]
 
 ## Used in (Calculus)
-- [[§51 Improper Integrals#^ex-51-2|Example §51.2: Evaluating Type 1 Integrals]]
-- [[§56 Probability#^ex-56-3|Example §56.3: The Mean of an Exponential Density]]
-- [[§64 Calculus with Parametric Curves#^ex-64-2|Example §64.2: Tangents to the Cycloid]]
-- [[§66 Calculus in Polar Coordinates#^ex-66-5|Example §66.5: Tangents to the Cardioid]]
-- [[§69 Sequences#^ex-69-2|Example §69.2: Passing to a Function of a Real Variable]]
+- (not cited later in the course)
 
 ## Connections
 - Rigorous treatment: [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]], with an $\varepsilon$-proof of the case $\frac00$, $x \to a^-$, by the same route (Generalized Mean Value Theorem, then letting the second point tend to $a$).

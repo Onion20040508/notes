@@ -154,7 +154,7 @@ The conclusion is an "and" statement, but the first part follows from the second
 *Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!theorem] Theorem §10.6: The Multiplication Principle
-> Let $X$ and $Y$ be finite sets with $|X| = n$ and $|Y| = m$. Then the Cartesian product $X \times Y$ is finite and $|X \times Y| = mn$.
+> Let $X$ and $Y$ be finite sets with $|X| = n$ and $|Y| = m$. Then the [[§7 Quantifiers#^def-7-5|Cartesian product]] $X \times Y$ is finite and $|X \times Y| = mn$.
 >
 > *Eccles: Theorem 10.2.3*
 

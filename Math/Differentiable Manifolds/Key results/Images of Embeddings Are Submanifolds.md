@@ -16,18 +16,15 @@ tags: [differentiable-manifolds, hub]
 - [[§33 Submanifolds#^def-33-1|Definition §33.1: Submanifold and Adapted Charts]]
 - [[§35 Immersions#^thm-35-1|Theorem §35.1: Local Normal Form for Immersions]]
 - [[§35 Immersions#^cor-35-2|Corollary §35.2: The Local Image of an Immersion]]
-- [[§36 Embeddings#^rem-36-1|Remark: Where Is Injectivity Used?]]
 - [[§36 Embeddings#^def-36-1|Definition §36.1: Embedding]]
 
 ## Its proof uses (other subjects)
 - [[§9 Continuous Functions#^prop-9-2|590 §9.2: Equivalent Definition of Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
-- [[§36 Embeddings#^prop-36-2|Proposition §36.2: Immersions That Are Open onto Their Images]]
 - [[§36 Embeddings#^cor-36-3|Corollary §36.3: An Embedding Is a Diffeomorphism onto Its Image]]
 - [[§36 Embeddings#^prop-36-7|Proposition §36.7: Images of Embeddings Are Locally Closed]]
 - [[§36 Embeddings#^cor-36-8|Corollary §36.8: Dense Submanifolds Are Open]]
-- [[§36 Embeddings#^prop-36-11|Proposition §36.11: The Irrational Line on the Torus]]
 - [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|Proposition §38.5: S³ Is SU(2)]]
 
 ## Connections

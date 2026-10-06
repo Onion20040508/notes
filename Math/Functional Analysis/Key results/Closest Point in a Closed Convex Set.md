@@ -17,7 +17,6 @@ tags: [functional-analysis, hub]
 - [[§10 Normed Linear Spaces#^def-10-6|Definition §10.6: Closed Subset]]
 - [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|Definition §21.1: Hilbert Space]]
 - [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3|Proposition §21.3: Parallelogram Law and Polarization]]
-- [[§22 Projection and Orthogonal Decomposition#^lem-22-1|Lemma §22.1: The Inner Product is Continuous]]
 
 ## Used in (Functional Analysis)
 - [[§22 Projection and Orthogonal Decomposition#^thm-22-4|Theorem §22.4: Orthogonal Decomposition]]

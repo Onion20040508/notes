@@ -392,7 +392,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 *Uses:* [[§54 Applications to Physics and Engineering#^thm-54-5|§54.5]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§39 Areas Between Curves#^thm-39-1|§39.1]] (area between curves)
 
 > [!remark]- Connections
-> - These are iterated integrals in disguise: with $\mathcal{R}$ a type I region, $\int_{g(x)}^{f(x)} x\,dy = x[f(x) - g(x)]$ and $\int_{g(x)}^{f(x)} y\,dy = \frac12\{[f(x)]^2 - [g(x)]^2\}$, so by Fubini's theorem [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]], $A\bar x = \iint_{\mathcal{R}} x\,dA$ and $A\bar y = \iint_{\mathcal{R}} y\,dA$. That is the definition used for plates of variable density in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].
+> - These are [[§98 Double Integrals Over Rectangles#^def-98-4|iterated integrals]] in disguise: with $\mathcal{R}$ a [[§99 Double Integrals Over General Regions#^def-99-2|type I region]], $\int_{g(x)}^{f(x)} x\,dy = x[f(x) - g(x)]$ and $\int_{g(x)}^{f(x)} y\,dy = \frac12\{[f(x)]^2 - [g(x)]^2\}$, so by Fubini's theorem [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]], $A\bar x = \iint_{\mathcal{R}} x\,dA$ and $A\bar y = \iint_{\mathcal{R}} y\,dA$. That is the definition used for plates of variable density in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].
 
 > [!example] Example §54.4: Region Between a Line and a Parabola
 > Find the centroid of the region bounded by the line $y = x$ and the parabola $y = x^2$.

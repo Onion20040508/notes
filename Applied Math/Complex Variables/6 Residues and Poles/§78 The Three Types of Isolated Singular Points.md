@@ -96,7 +96,7 @@ There are two extremes: the case in which every coefficient in the principal par
 > f(z) = \sum_{n=0}^{\infty} a_n(z - z_0)^n + \frac{b_1}{z - z_0} + \frac{b_2}{(z - z_0)^2} + \cdots + \frac{b_m}{(z - z_0)^m} \qquad (0 < |z - z_0| < R_2), \qquad (4)
 > $$
 >
-> where $b_m \ne 0$. In this case the isolated singular point $z_0$ is called a **pole of order $m$**. A pole of order $m = 1$ is usually referred to as a **simple pole**.
+> where $b_m \ne 0$. In this case the [[§74 Isolated Singular Points#^def-74-1|isolated singular point]] $z_0$ is called a **pole of order $m$**. A pole of order $m = 1$ is usually referred to as a **simple pole**.
 >
 > *B&C: Sec. 78 (c)*
 

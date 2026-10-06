@@ -15,7 +15,6 @@ tags: [ordinary-differential-equations, hub]
 - [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|Theorem §14.3: Solvability of the Initial Conditions]]
 
 ## Used in (Ordinary Differential Equations)
-- [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|Theorem §13.2: Distinct Real Roots]]
 - [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-5|Theorem §14.5: A Fundamental Set Always Exists]]
 - [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|Theorem §15.2: General Solution for Complex Roots]]
 - [[§16 Repeated Roots; Reduction of Order#^thm-16-1|Theorem §16.1: Repeated Roots]]

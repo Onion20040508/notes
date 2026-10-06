@@ -123,7 +123,7 @@ The supremum also admits a *sequential* characterization — the limit-language 
 >
 > By the Monotone Convergence Theorem, $s = \lim s_n$ exists.
 >
-> **What is the value?** From $s_{n+1} = \sqrt{1 + s_n}$ we get $s_{n+1}^2 = 1 + s_n$. One step deserves care before taking limits (HW): the shifted sequence $(s_{n+1})_n$ converges to the *same* limit $s$ — any $N$ witnessing the definition for $(s_n)$ works for the shift, since $n \geq N$ implies $n + 1 \geq N$. Granting this, the product rule gives $s_{n+1}^2 \to s^2$ and the sum rule gives $1 + s_n \to 1 + s$, so $s^2 = 1 + s$, i.e. $s^2 - s - 1 = 0$, so
+> **What is the value?** From $s_{n+1} = \sqrt{1 + s_n}$ we get $s_{n+1}^2 = 1 + s_n$. One step deserves care before taking limits (HW): the shifted sequence $(s_{n+1})_n$ converges to the *same* limit $s$ — any $N$ witnessing the definition for $(s_n)$ works for the shift, since $n \geq N$ implies $n + 1 \geq N$. Granting this, the [[§9 Limit Theorems for Sequences#^thm-9-3|product rule]] gives $s_{n+1}^2 \to s^2$ and the sum rule gives $1 + s_n \to 1 + s$, so $s^2 = 1 + s$, i.e. $s^2 - s - 1 = 0$, so
 >
 > $$
 > s = \frac{1 \pm \sqrt{1 + 4}}{2} = \frac{1 \pm \sqrt5}{2} \quad \text{--- two values.}
@@ -378,7 +378,7 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 > [!example] Example §10.3: A Contraction-Type Estimate
 > Assume $(s_n)$ satisfies $|s_{n+1} - s_n| < 2^{-n}$ for all $n \geq 1$. Prove $(s_n)$ is a Cauchy sequence, and hence convergent.
 >
-> We need to see how big $|s_m - s_n|$ is for $m > n$. Telescope through the intermediate terms and apply the [[Triangle inequality|triangle inequality]]:
+> We need to see how big $|s_m - s_n|$ is for $m > n$. Telescope through the intermediate terms and apply the [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]]:
 >
 > $$
 > |s_m - s_n| \leq |s_m - s_{m-1}| + |s_{m-1} - s_{m-2}| + \cdots + |s_{n+1} - s_n|
@@ -419,7 +419,7 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 ^rem-10-3
 
 > [!remark] Remark: Cauchy Sequences and the Construction of the Reals
-> Cauchy sequences can be used to construct $\mathbb{R}$ from $\mathbb{Q}$: real numbers can be identified with equivalence classes of Cauchy sequences of rational numbers (two sequences being equivalent when their difference tends to $0$). This is the second standard construction of $\mathbb{R}$, alongside the Dedekind cuts of §6. Note the logical order in this course, however: we *assumed* $\mathbb{R}$ with completeness, and the theorem above (Cauchy $\Rightarrow$ convergent) is a *consequence* — indeed an equivalent form — of the [[Completeness Axiom|completeness axiom]].
+> Cauchy sequences can be used to construct $\mathbb{R}$ from $\mathbb{Q}$: real numbers can be identified with equivalence classes of Cauchy sequences of rational numbers (two sequences being equivalent when their difference tends to $0$). This is the second standard construction of $\mathbb{R}$, alongside the [[§6 Dedekind Cuts#^def-6-1|Dedekind cuts]] of §6. Note the logical order in this course, however: we *assumed* $\mathbb{R}$ with completeness, and the theorem above (Cauchy $\Rightarrow$ convergent) is a *consequence* — indeed an equivalent form — of the [[Completeness Axiom|completeness axiom]].
 >
 > ★ The construction is carried out, with proofs, in [[§6★ ℝ from Cauchy Sequences of Rationals]].
 

@@ -17,7 +17,7 @@ The second physical interpretation of harmonic functions: electrostatics. In a r
 ## Potential and Field Intensity
 
 > [!definition] Definition §122.1: Field Intensity; Electrostatic Potential
-> In an electrostatic force field, the **field intensity** at a point is the vector representing the force exerted on a unit positive charge placed at that point. The **electrostatic potential** is a scalar function of the space coordinates such that, at each point, its directional derivative in any direction is the negative of the component of the field intensity in that direction.
+> In an electrostatic force field, the **field intensity** at a point is the vector representing the force exerted on a unit positive charge placed at that point. The **electrostatic potential** is a scalar function of the space coordinates such that, at each point, its [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] in any direction is the negative of the component of the field intensity in that direction.
 >
 > *B&C: Sec. 122 (text)*
 
@@ -41,7 +41,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 *B&C omits the proof (it is physics: the inverse-square law and superposition). The mathematical core, that $1/r$ is harmonic in space away from the origin, is [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Rem. §19.2]]; in the plane the corresponding potential of a line charge is $\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]] (Example §122.1).*
 
 > [!definition] Definition §122.2: Equipotentials; Flux Lines
-> A surface along which $V(x, y)$ is constant is an **equipotential surface** (in the $xy$ plane, an equipotential curve $V(x, y) = c_1$). If $U$ is a harmonic conjugate of $V$, the curves $U(x, y) = c_2$ in the $xy$ plane are the **flux lines**.
+> A surface along which $V(x, y)$ is constant is an **equipotential surface** (in the $xy$ plane, an equipotential curve $V(x, y) = c_1$). If $U$ is a [[§115★ Harmonic Conjugates#^def-115-1|harmonic conjugate]] of $V$, the curves $U(x, y) = c_2$ in the $xy$ plane are the **flux lines**.
 >
 > *B&C: Sec. 122 (text)*
 

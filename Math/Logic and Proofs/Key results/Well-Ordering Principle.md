@@ -16,7 +16,6 @@ tags: [logic-and-proofs, hub]
 - [[§5 The Induction Principle#^thm-5-6|Theorem §5.6: The Strong Induction Principle]]
 
 ## Used in (Logic and Proofs)
-- [[§4 Proof by Contradiction#^ex-4-7|Example §4.7: No Smallest Positive Real Number]]
 - [[§5 The Induction Principle#^ex-5-9|Example §5.9: Strong Induction for Subsets]]
 - [[§11 Properties of Finite Sets#^ex-11-3|Example §11.3: Maxima and Minima]]
 - [[§11 Properties of Finite Sets#^thm-11-6|Theorem §11.6: No Surjection onto a Larger Set]]

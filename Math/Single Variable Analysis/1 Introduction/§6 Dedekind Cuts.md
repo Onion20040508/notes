@@ -172,7 +172,7 @@ Recall the logical gap flagged above: the compatibility statements for $S_{r_1},
 >
 >   is a cut; multiplication extends to all cuts by the usual sign rules (with $S_0$ absorbing), handled case by case.
 >
-> - (iii) With these operations and the order $\subseteq$, the set $\mathcal{R}$ satisfies all the field axioms A1–A6 and order axioms O1–O5 of §3: $\mathcal{R}$ is an ordered field.
+> - (iii) With these operations and the order $\subseteq$, the set $\mathcal{R}$ satisfies all the [[§3 The Set ℝ of Real Numbers#^def-3-1|field axioms]] A1–A6 and [[§3 The Set ℝ of Real Numbers#^def-3-2|order axioms]] O1–O5 of §3: $\mathcal{R}$ is an ordered field.
 >
 > - (iv) $\mathcal{R}$ satisfies the [[Completeness Axiom|completeness axiom]]: if $\mathcal{S} \subseteq \mathcal{R}$ is nonempty and bounded above (under $\subseteq$), then
 >

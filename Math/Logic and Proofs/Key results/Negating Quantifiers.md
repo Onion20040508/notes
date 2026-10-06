@@ -17,9 +17,7 @@ tags: [logic-and-proofs, hub]
 - [[§7 Quantifiers#^def-7-2|Definition §7.2: Existential Statement]]
 
 ## Used in (Logic and Proofs)
-- [[§5 The Induction Principle#^ex-5-9|Example §5.9: Strong Induction for Subsets]]
 - [[§7 Quantifiers#^prop-7-3|Proposition §7.3: −1 Has No Real Square Root]]
-- [[§7 Quantifiers#^ex-7-13|Example §7.13: Quantifiers With a Parameter]]
 
 ## Connections
 - See [[§7 Quantifiers]] for context and examples.

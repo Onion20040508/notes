@@ -32,7 +32,7 @@ tags: [topology, math590]
 ^rem-5-1
 
 > [!remark]- Connections
-> - Compactness in subspaces: [[§15 Compact Spaces#^lem-15-1|Compactness in Subspaces]]; connectedness: [[§13 Connected Spaces#^rem-13-4|Limit Points in X vs. Y]].
+> - Compactness in subspaces: [[§15 Compact Spaces#^lem-15-1|Compactness in Subspaces]]; connectedness: [[§13 Connected Spaces#^lem-13-2|Separation Characterization]] (with [[§13 Connected Spaces#^rem-13-4|Limit Points in X vs. Y]]).
 
 > [!example] Example §5.1
 > $[0,1) \subseteq \mathbb{R}$. Is $[0, \frac{1}{2}) \subseteq \mathbb{R}$ open in $\mathbb{R}$? No. If $0 \in B \in \mathcal{B}$, then $B \subseteq [0, \frac{1}{2})$ is impossible since $B$ must contain points less than $0$.

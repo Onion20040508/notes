@@ -9,8 +9,8 @@ tags: [chapter, fourier-series-and-pdes]
 
 *Powers, Chapter 0 · ★ beyond MAT 341.*
 
-**Builds on:** [[· 2 The Heat Equation|2 The Heat Equation]] (2), [[· 4 The Potential Equation|4 The Potential Equation]] (1), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (1)
-**Used by:** [[· 2 The Heat Equation|2 The Heat Equation]] (1), [[· 4 The Potential Equation|4 The Potential Equation]] (5), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (2)
+**Builds on:** [[· 2 The Heat Equation|2 The Heat Equation]] (3), [[· 4 The Potential Equation|4 The Potential Equation]] (1), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (1)
+**Used by:** [[· 2 The Heat Equation|2 The Heat Equation]] (1), [[· 4 The Potential Equation|4 The Potential Equation]] (5), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (3)
 **Developed further in (other subjects):** [[Multivariable Analysis]] (7), [[Linear Algebra]] (4), [[Applied Linear Algebra]] (2), [[Ordinary Differential Equations]] (1)
 
 ## Sections

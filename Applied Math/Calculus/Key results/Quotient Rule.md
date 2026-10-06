@@ -20,7 +20,6 @@ tags: [calculus, hub]
 - [[§16 Derivatives of Trigonometric Functions#^thm-16-3|Theorem §16.3: Derivative of Tangent]]
 - [[§16 Derivatives of Trigonometric Functions#^thm-16-4|Theorem §16.4: Derivatives of the Trigonometric Functions]]
 - [[§24 Hyperbolic Functions#^thm-24-2|Theorem §24.2: Derivatives of Hyperbolic Functions]]
-- [[§57 Modeling with Differential Equations#^ex-57-2|Example §57.2: A Family of Solutions]]
 
 ## Connections
 - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]], which states the quotient rule with the product rule and says it is proved similarly (or from the product rule and the derivative of $1/g$).

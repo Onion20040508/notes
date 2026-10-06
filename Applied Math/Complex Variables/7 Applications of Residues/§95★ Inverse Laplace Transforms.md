@@ -87,7 +87,7 @@ $$
 This is Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]]) turned through a right angle: there $e^{iaz}$ decays in the upper half plane, here $e^{st}$ decays in the left half plane. As there, $M_R \to 0$ suffices; the length $\pi R$ of the semicircle does not enter.
 
 > [!theorem] Theorem §95.2: Inverse Transform as a Sum of Residues
-> Let $F$ be analytic in the finite plane except for isolated singular points $s_1, \ldots, s_N$, all with $\operatorname{Re}s_n < \gamma$, and suppose that $|F(s)| \le M_R$ on $C_R$ with $M_R \to 0$ as $R \to \infty$. Then for every $t > 0$ the limit (1) exists, and
+> Let $F$ be analytic in the finite plane except for [[§74 Isolated Singular Points#^def-74-1|isolated singular points]] $s_1, \ldots, s_N$, all with $\operatorname{Re}s_n < \gamma$, and suppose that $|F(s)| \le M_R$ on $C_R$ with $M_R \to 0$ as $R \to \infty$. Then for every $t > 0$ the limit (1) exists, and
 >
 > $$
 > f(t) = \sum_{n=1}^{N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] \qquad (t > 0) . \qquad (6)
@@ -225,7 +225,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > F(s) = \sum_{n=1}^{N}\sum_{k=1}^{m_n}\frac{c_{n,k}}{(s - s_n)^k} ,
 > $$
 >
-> where $\sum_k c_{n,k}(s - s_n)^{-k}$ is the principal part of $F$ at $s_n$.
+> where $\sum_k c_{n,k}(s - s_n)^{-k}$ is the [[§78 The Three Types of Isolated Singular Points#^def-78-1|principal part]] of $F$ at $s_n$.
 >
 > **(b)** For all real $t$,
 >

@@ -12,7 +12,6 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§20 Linear Algebra Toolkit#^prop-20-1|Proposition §20.1: Standing Facts from Linear Algebra]]
-- [[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
 - [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|Theorem §26.6: The Chain Rule]]
 - [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4|Theorem §29.4: The Tangent Space of a Product]]
 - [[§32 Submersions#^def-32-2|Definition §32.2: Regular Points and Critical Points]]

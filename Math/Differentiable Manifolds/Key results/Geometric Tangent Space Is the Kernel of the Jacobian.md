@@ -23,8 +23,6 @@ tags: [differentiable-manifolds, hub]
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
 
 ## Used in (Differentiable Manifolds)
-- [[§23 The Geometric Tangent Space#^ex-23-2|Example §23.2: The Orthogonal Group]]
-- [[§23 The Geometric Tangent Space#^ex-23-3|Example §23.3: The Unitary Group]]
 - [[§23 The Geometric Tangent Space#^cor-23-4|Corollary §23.4: Three Descriptions of the Geometric Tangent Space]]
 - [[§23 The Geometric Tangent Space#^thm-23-5|Theorem §23.5: The Classical Groups]]
 - [[§23 The Geometric Tangent Space#^thm-23-7|Theorem §23.7: Dimension of the Geometric Tangent Space]]
@@ -34,7 +32,6 @@ tags: [differentiable-manifolds, hub]
 - [[§24 Transversality#^prop-24-4|Proposition §24.4: Transverse Intersections]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|Theorem §27.6: Ambient and Abstract Agree]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Corollary §27.7: Consequences]]
-- [[§33 Submanifolds#^thm-33-6|Theorem §33.6: The Regular Value Theorem for Manifolds]]
 - [[§33 Submanifolds#^prop-33-8|Proposition §33.8: The Old and New Versions Agree]]
 
 ## Connections

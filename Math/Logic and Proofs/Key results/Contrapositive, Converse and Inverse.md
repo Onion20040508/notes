@@ -20,7 +20,6 @@ tags: [logic-and-proofs, hub]
 - [[§2 Implications#^ex-2-8|Example §2.8: Converse, Inverse and Contrapositive]]
 - [[§2 Implications#^ex-2-10|Example §2.10: A Necessary Condition for Convergence]]
 - [[§4 Proof by Contradiction#^ex-4-5|Example §4.5: The Triangle Inequality]]
-- [[§6 The Language of Set Theory#^ex-6-9|Example §6.9: Inclusion in Terms of the Operations]]
 - [[§24★ Congruence Modulo a Prime#^cor-24-6|Corollary §24.6: A Compositeness Test]]
 
 ## Connections

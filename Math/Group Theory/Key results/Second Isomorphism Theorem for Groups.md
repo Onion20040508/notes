@@ -13,7 +13,6 @@ tags: [group-theory, hub]
 ## Its proof uses
 - [[§15 Homomorphisms#^def-15-2|Definition §15.2: Image and Kernel]]
 - [[§39 Sources of Normal Subgroups#^prop-39-2|Proposition §39.2: Kernels Are Normal]]
-- [[§40 Quotient Groups#^def-40-1|Definition §40.1: Quotient Group]]
 - [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]
 - [[§41 The First and Second Isomorphism Theorems#^def-41-1|Definition §41.1: The Product Set HN]]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
@@ -22,7 +21,6 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-7|Corollary §41.7: Subgroup Representatives, Again]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Corollary §41.8: Index of an Intersection, Normal Case]]
-- [[§45 S₃, S₄, A₄ and A₅#^ex-45-3|Example §45.3: GL_2^+(ℝ), SL_2(ℝ) and the Scalars]]
 
 ## Connections
 - **How.** Two applications of the [[First Isomorphism Theorem for Groups]] to the projection π : G → G/N: restricted to H it has kernel H ∩ N, restricted to HN kernel N, and the two images agree, π(H) = π(HN) ([[§41 The First and Second Isomorphism Theorems#^pf-41-4|proof of §41.4]]).

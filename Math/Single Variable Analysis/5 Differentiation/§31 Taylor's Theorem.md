@@ -150,7 +150,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 > |R_n(x)| = \left| \frac{\cos^{(n)}(c)}{n!}\, x^n \right| \leq \frac{|x|^n}{n!} \longrightarrow 0,
 > $$
 >
-> since $\tfrac{|x|^n}{n!}$ is the general term of a series convergent by the ratio test (ratio $\tfrac{|x|}{n+1} \to 0$), and terms of a convergent series tend to zero (§14). So $\cos x$ equals its Taylor series for *all* $x \in \mathbb{R}$ — and, since the derivative bound was all we used, the identical estimate with the bound $e^{|x|}$ in place of $1$ gives $e^x = \sum_{n\geq0} \tfrac{x^n}{n!}$ on all of $\mathbb{R}$ as well; adding and subtracting the series for $e^{\pm x}$ then yields $\cosh x = \sum \tfrac{x^{2n}}{(2n)!}$ and $\sinh x = \sum \tfrac{x^{2n+1}}{(2n+1)!}$ (HW).
+> since $\tfrac{|x|^n}{n!}$ is the general term of a series convergent by the [[§14 Series#^thm-14-9|ratio test]] (ratio $\tfrac{|x|}{n+1} \to 0$), and [[§14 Series#^cor-14-2|terms of a convergent series tend to zero]] (§14). So $\cos x$ equals its Taylor series for *all* $x \in \mathbb{R}$ — and, since the derivative bound was all we used, the identical estimate with the bound $e^{|x|}$ in place of $1$ gives $e^x = \sum_{n\geq0} \tfrac{x^n}{n!}$ on all of $\mathbb{R}$ as well; adding and subtracting the series for $e^{\pm x}$ then yields $\cosh x = \sum \tfrac{x^{2n}}{(2n)!}$ and $\sinh x = \sum \tfrac{x^{2n+1}}{(2n+1)!}$ (HW).
 
 ^ex-31-1
 

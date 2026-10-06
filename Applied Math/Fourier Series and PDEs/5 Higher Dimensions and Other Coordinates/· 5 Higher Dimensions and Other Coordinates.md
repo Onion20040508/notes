@@ -9,7 +9,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 *Powers, Chapter 5.*
 
-**Builds on:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (2), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (3), [[· 2 The Heat Equation|2 The Heat Equation]] (13), [[· 3 The Wave Equation|3 The Wave Equation]] (3), [[· 4 The Potential Equation|4 The Potential Equation]] (4)
+**Builds on:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (3), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (3), [[· 2 The Heat Equation|2 The Heat Equation]] (13), [[· 3 The Wave Equation|3 The Wave Equation]] (3), [[· 4 The Potential Equation|4 The Potential Equation]] (4)
 **Used by:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (1), [[· 2 The Heat Equation|2 The Heat Equation]] (2), [[· 3 The Wave Equation|3 The Wave Equation]] (1), [[· 4 The Potential Equation|4 The Potential Equation]] (1), [[· 7★ Numerical Methods|7★ Numerical Methods]] (2)
 **Developed further in (other subjects):** [[Functional Analysis]] (5), [[Single Variable Analysis]] (3), [[Measure Theory]] (1), [[Multivariable Analysis]] (10), [[Linear Algebra]] (6), [[Applied Linear Algebra]] (1), [[Ordinary Differential Equations]] (3), [[Calculus]] (12), [[Complex Variables]] (1)
 

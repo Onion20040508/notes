@@ -25,9 +25,7 @@ tags: [linear-algebra, hub]
 - [[§12 Duality#^ladr-3-130|3.130 The range of T]]
 - [[§15 The Minimal Polynomial#^ladr-5-34|5.34 Operators on odd-dimensional vector spaces have eigenvalues]]
 - [[§17 Diagonalizable Operators#^ladr-5-62|5.62 Necessary and sufficient condition for diagonalizability]]
-- [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57 Properties of orthogonal projection PU]]
 - [[§26 Singular Value Decomposition#^ladr-7-64|7.64 Properties of T∗T]]
-- [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3 Null spaces stop growing]]
 - [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45 Every nilpotent operator has a Jordan basis]]
 
 ## Used in (Group Theory)

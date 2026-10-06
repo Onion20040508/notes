@@ -12,11 +12,9 @@ tags: [complex-variables, hub]
 
 ## Its proof uses
 - [[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4: Connected Set, Domain, Region]]
-- [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1: Vanishing on a Subdomain or Segment]]
 - [[§59 Maximum Modulus Principle#^lem-59-2|Lemma §59.2: Local Maximum of the Modulus]]
 
 ## Used in (Complex Variables)
-- [[§27★ Harmonic Functions#^ex-27-5|Example §27.5: No Analytic f with ∣f∣² = 4 − ∣z∣²]]
 - [[§59 Maximum Modulus Principle#^cor-59-4|Corollary §59.4: The Maximum Is on the Boundary]]
 
 ## Connections

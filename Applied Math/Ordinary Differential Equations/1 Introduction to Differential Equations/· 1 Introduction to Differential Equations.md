@@ -10,7 +10,7 @@ tags: [chapter, ordinary-differential-equations]
 *Boyce–DiPrima, Chapter 1.*
 
 **Builds on:** [[· 2 First-Order Differential Equations|2 First-Order Differential Equations]] (1), [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (1)
-**Used by:** [[· 2 First-Order Differential Equations|2 First-Order Differential Equations]] (7)
+**Used by:** [[· 2 First-Order Differential Equations|2 First-Order Differential Equations]] (8)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Linear Algebra]] (1), [[Applied Linear Algebra]] (1), [[Calculus]] (16)
 
 ## Sections

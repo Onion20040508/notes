@@ -54,7 +54,7 @@ tags: [topology, math590]
 ^ex-17-3
 
 > [!example] Example §17.4
-> A simply ordered set $X$ with the [[§14 Connected Subspaces of ℝ#^def-14-1|l.u.b. property]] is locally compact (in the order topology).
+> A simply ordered set $X$ with the [[§14 Connected Subspaces of ℝ#^def-14-1|l.u.b. property]] is locally compact (in the [[§3 Order Topology#^def-3-4|order topology]]).
 >
 > Given any basis element $(a, b)$, we have $[a, b] \subseteq X$ which is [[§15 Compact Spaces#^thm-15-10|compact]], and $(a, b) \subseteq [a, b]$.
 

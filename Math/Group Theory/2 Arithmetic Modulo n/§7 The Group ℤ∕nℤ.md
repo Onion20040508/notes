@@ -75,7 +75,7 @@ tags: [group-theory, math493]
 *The Descent Lemma: $f$ factors as $f = \bar f \circ \pi$ through the projection $\pi(k) = [k]$ exactly when $f(k) = f(k+n)$ for all $k$. The dashed red arrow is the one whose existence (and uniqueness) the lemma asserts.*
 
 > [!remark]- Connections
-> - Topological analogue: [[Universal Property of Quotient Maps]] (590 §12.3), same factorization triangle.
+> - Topological analogue: [[Universal Property of Quotient Maps]] (590 Thm. §12.3), same factorization triangle.
 > - Generalized to arbitrary normal subgroups by the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]].
 > - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
 

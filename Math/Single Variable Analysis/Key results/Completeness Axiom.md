@@ -16,7 +16,6 @@ tags: [real-analysis, hub]
 - [[§6 Dedekind Cuts#^prop-6-5|Proposition §6.5: Completion of the Construction –- Exercises]]
 - [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13: Cauchy Classes and Dedekind Cuts]] ★
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|Theorem §10.1: Monotone Convergence Theorem]]
-- [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|Theorem §13.2: Completeness of Euclidean Space]]
 - [[§18 Properties of Continuous Functions#^thm-18-1|Theorem §18.1: Extreme Value Theorem]]
 - [[§18 Properties of Continuous Functions#^thm-18-3|Theorem §18.3: Intermediate Value Theorem]]
 

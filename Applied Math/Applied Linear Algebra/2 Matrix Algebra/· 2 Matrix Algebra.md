@@ -9,9 +9,9 @@ tags: [chapter, applied-linear-algebra]
 
 *Lay, Chapter 2.*
 
-**Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (29), [[· 3 Determinants|3 Determinants]] (3), [[· 4 Vector Spaces|4 Vector Spaces]] (2), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (1), [[· 8 Complex Numbers|8 Complex Numbers]] (1)
-**Used by:** [[· 3 Determinants|3 Determinants]] (10), [[· 4 Vector Spaces|4 Vector Spaces]] (11), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (11), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (10), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (10)
-**Developed further in (other subjects):** [[Linear Algebra]] (24), [[Group Theory]] (3), [[Logic and Proofs]] (4), [[Multivariable Analysis]] (1), [[Calculus]] (1)
+**Builds on:** [[· 1 Linear Equations in Linear Algebra|1 Linear Equations in Linear Algebra]] (30), [[· 3 Determinants|3 Determinants]] (3), [[· 4 Vector Spaces|4 Vector Spaces]] (2), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (1), [[· 8 Complex Numbers|8 Complex Numbers]] (1)
+**Used by:** [[· 3 Determinants|3 Determinants]] (10), [[· 4 Vector Spaces|4 Vector Spaces]] (12), [[· 5 Matrix Eigenvalues and Eigenvectors|5 Matrix Eigenvalues and Eigenvectors]] (11), [[· 6 Orthogonality and Least Squares|6 Orthogonality and Least Squares]] (10), [[· 7★ Symmetric Matrices and Quadratic Forms|7★ Symmetric Matrices and Quadratic Forms]] (10)
+**Developed further in (other subjects):** [[Linear Algebra]] (29), [[Group Theory]] (3), [[Logic and Proofs]] (4), [[Functional Analysis]] (1), [[Multivariable Analysis]] (1), [[Calculus]] (1)
 
 ## Sections
 - [[§11 Matrix Operations]] — Lay 2.1
@@ -29,7 +29,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§11 Matrix Operations#^prop-11-4|Proposition §11.4: Row–Column Rule for Computing AB]]: 122 later results
-- [[§11 Matrix Operations#^thm-11-2|Theorem §11.2: Multiplication of Matrices Is Composition]]: 113 later results
-- [[§11 Matrix Operations#^thm-11-7|Theorem §11.7: Properties of the Transpose]]: 109 later results
-- [[§11 Matrix Operations#^thm-11-6|Theorem §11.6: Properties of Matrix Multiplication]]: 108 later results
+- [[§11 Matrix Operations#^prop-11-4|Proposition §11.4: Row–Column Rule for Computing AB]]: 127 later results
+- [[§11 Matrix Operations#^thm-11-2|Theorem §11.2: Multiplication of Matrices Is Composition]]: 121 later results
+- [[§11 Matrix Operations#^thm-11-7|Theorem §11.7: Properties of the Transpose]]: 117 later results
+- [[§11 Matrix Operations#^thm-11-6|Theorem §11.6: Properties of Matrix Multiplication]]: 116 later results

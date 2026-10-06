@@ -957,7 +957,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Fubini's Theorem (Lebesgue)|§17.6]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[Properties of Lebesgue Outer Measure|§9.1]]
 
 > [!remark]- Connections
-> - The formula $m(T(R)) = \vert\det T\vert\, m(R)$ is [[§34 Determinants#^ladr-9-61|LADR 9.61]] (a linear map scales volume by the absolute value of its determinant), which LADR proves via singular values rather than elementary operations.
+> - The formula $m(T(R)) = \vert\det T\vert\, m(R)$ is [[§34 Determinants#^ladr-9-61|LADR 9.61]] (a linear map scales volume by the absolute value of its determinant), which LADR proves via singular values ([[§27 Consequences of Singular Value Decomposition#^ladr-7-111|LADR 7.111]]) rather than elementary operations.
 > - In MATH 452 it is [[§15 Multivariable Integration#^prop-15-19|Determinants Measure Volume Distortion]] (452 §15.19), the linear case of the [[Change of Variables Formula (multiple integrals)]].
 
 > [!theorem] Corollary §18.23: Composition with Invertible Linear Maps Preserves Measurability

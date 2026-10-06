@@ -9,8 +9,8 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 12 · ★ beyond MAT 342.*
 
-**Builds on:** [[· 2 Analytic Functions|2 Analytic Functions]] (6), [[· 4 Integrals|4 Integrals]] (6), [[· 5 Series|5 Series]] (2), [[· 6 Residues and Poles|6 Residues and Poles]] (1), [[· 7 Applications of Residues|7 Applications of Residues]] (2), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (2), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (1), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (3)
-**Used by:** [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (1)
+**Builds on:** [[· 2 Analytic Functions|2 Analytic Functions]] (6), [[· 4 Integrals|4 Integrals]] (6), [[· 5 Series|5 Series]] (2), [[· 6 Residues and Poles|6 Residues and Poles]] (2), [[· 7 Applications of Residues|7 Applications of Residues]] (2), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (2), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (1), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (3)
+**Used by:** [[· 5 Series|5 Series]] (1), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (1)
 **Developed further in (other subjects):** [[Multivariable Analysis]] (4), [[Fourier Series and PDEs]] (13)
 
 ## Sections

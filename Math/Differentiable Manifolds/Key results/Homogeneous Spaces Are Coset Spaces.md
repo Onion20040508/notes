@@ -23,8 +23,6 @@ tags: [differentiable-manifolds, hub]
 - [[Continuous Image of a Compact Space is Compact]] (Topology)
 
 ## Used in (Differentiable Manifolds)
-- [[§14 The Topology of G∕H and Real Grassmannians#^ex-14-1|Example §14.1: The Circle as ℝ/ℤ]]
-- [[§14 The Topology of G∕H and Real Grassmannians#^ex-14-2|Example §14.2: A Continuous Bijection That Is Not a Homeomorphism]]
 - [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|Proposition §17.6: The Two Topologies on ℝPⁿ Agree]]
 
 ## Connections

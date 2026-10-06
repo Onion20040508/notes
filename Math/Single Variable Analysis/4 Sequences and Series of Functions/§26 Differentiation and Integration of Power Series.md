@@ -288,7 +288,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > c'(x) = \sum_{n=1}^\infty \frac{(-1)^n}{(2n-1)!}\, x^{2n-1} = \sum_{m=0}^\infty \frac{(-1)^{m+1}}{(2m+1)!}\, x^{2m+1} = -s(x).
 > $$
 >
-> *Pythagoras.* Let $F = s^2 + c^2$; by the product rule and the two identities,
+> *Pythagoras.* Let $F = s^2 + c^2$; by the [[§28 Basic Properties of the Derivative#^thm-28-2|product rule]] and the two identities,
 >
 > $$
 > F' = 2ss' + 2cc' = 2sc - 2cs = 0 \quad \text{on } \mathbb{R}.

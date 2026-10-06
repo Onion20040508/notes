@@ -21,7 +21,7 @@ A channel whose breadth changes abruptly from $\pi$ to $h\pi$ is a degenerate qu
 > Q = \pi V_0 . \qquad (1)
 > $$
 >
-> **The map.** The cross section is the limit of the quadrilateral with vertices $w_1$ (far left on the top wall), $w_2 = 0$ (the foot of the step), $w_3$ (the top of the step) and $w_4$ (far right), as $w_1$ and $w_4$ move infinitely far to the left and right. The limiting exterior angles are
+> **The map.** The cross section is the limit of the quadrilateral with vertices $w_1$ (far left on the top wall), $w_2 = 0$ (the foot of the step), $w_3$ (the top of the step) and $w_4$ (far right), as $w_1$ and $w_4$ move infinitely far to the left and right. The limiting [[§127★ Mapping the Real Axis onto a Polygon#^def-127-1|exterior angles]] are
 >
 > $$
 > k_1\pi = \pi, \qquad k_2\pi = \frac\pi2, \qquad k_3\pi = -\frac\pi2, \qquad k_4\pi = \pi .

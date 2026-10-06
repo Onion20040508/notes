@@ -238,7 +238,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > |a_n| + \cdots + |a_m| < \varepsilon \qquad (m \geq n \geq N).
 > $$
 >
-> *Claim:* this implies $\sum a_n$ satisfies the Cauchy criterion too. Why? The [[Triangle inequality|triangle inequality]]:
+> *Claim:* this implies $\sum a_n$ satisfies the Cauchy criterion too. Why? The [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]]:
 >
 > $$
 > |a_n + \cdots + a_m| \leq |a_n| + \cdots + |a_m| < \varepsilon.
@@ -303,7 +303,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 *Uses:* [[§14 Series#^thm-14-7|§14.7]]
 
 > [!remark] Remark
-> Three remarks. (1) Taking $b_n \equiv 1$ recovers “absolute convergence implies convergence” — the proposition above becomes a special case. (2) This is the series analogue of the sequence fact “null times bounded is null” (§8). (3) It is also the germ of the *Weierstrass M-test* of §25: there, $a_n$ becomes a convergent numerical majorant $M_n$ and $b_n$ a bounded family of function values, and the Cauchy-tail estimate $\left|\sum_{k=n+1}^m a_k b_k\right| \leq M \sum_{k=n+1}^m |a_k|$ — an equally valid proof of this proposition — reappears verbatim as the M-test's proof.
+> Three remarks. (1) Taking $b_n \equiv 1$ recovers “absolute convergence implies convergence” — the proposition above becomes a special case. (2) This is the series analogue of the sequence fact “null times bounded is null” (§8). (3) It is also the germ of the *[[§25 More on Uniform Convergence#^thm-25-3|Weierstrass M-test]]* of §25: there, $a_n$ becomes a convergent numerical majorant $M_n$ and $b_n$ a bounded family of function values, and the Cauchy-tail estimate $\left|\sum_{k=n+1}^m a_k b_k\right| \leq M \sum_{k=n+1}^m |a_k|$ — an equally valid proof of this proposition — reappears verbatim as the M-test's proof.
 
 ^rem-14-5
 

@@ -10,8 +10,8 @@ tags: [chapter, calculus]
 *Stewart, Chapter 8.*
 
 **Builds on:** [[· 3 Differentiation Rules|3 Differentiation Rules]] (1), [[· 4 Applications of Differentiation|4 Applications of Differentiation]] (3), [[· 5 Integrals|5 Integrals]] (16), [[· 6 Applications of Integration|6 Applications of Integration]] (3), [[· 7 Techniques of Integration|7 Techniques of Integration]] (8), [[· 15 Multiple Integrals|15 Multiple Integrals]] (2)
-**Used by:** [[· 3 Differentiation Rules|3 Differentiation Rules]] (1), [[· 7 Techniques of Integration|7 Techniques of Integration]] (2), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (7), [[· 13 Vector Functions|13 Vector Functions]] (1), [[· 15 Multiple Integrals|15 Multiple Integrals]] (4), [[· 16 Vector Calculus|16 Vector Calculus]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (10), [[Multivariable Analysis]] (6)
+**Used by:** [[· 3 Differentiation Rules|3 Differentiation Rules]] (1), [[· 7 Techniques of Integration|7 Techniques of Integration]] (2), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (7), [[· 13 Vector Functions|13 Vector Functions]] (1), [[· 15 Multiple Integrals|15 Multiple Integrals]] (5), [[· 16 Vector Calculus|16 Vector Calculus]] (1)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (6)
 
 ## Sections
 - [[§52 Arc Length]] — Stewart 8.1

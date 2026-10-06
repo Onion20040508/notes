@@ -17,7 +17,6 @@ tags: [calculus, hub]
 
 ## Used in (Calculus)
 - [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1: Solutions of dy/dt = ky]]
-- [[§25 Maximum and Minimum Values#^ex-25-3|Example §25.3: Finding Critical Numbers]]
 - [[§44 Integration by Parts#^thm-44-1|Theorem §44.1: Integration by Parts]]
 - [[§44 Integration by Parts#^thm-44-2|Theorem §44.2: Integration by Parts for Definite Integrals]]
 - [[§61 Linear Equations#^thm-61-1|Theorem §61.1: Solving a Linear Equation]]

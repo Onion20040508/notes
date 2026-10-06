@@ -23,7 +23,7 @@ This section turns the derivative of [[§127★ Mapping the Real Axis onto a Pol
 > f'(z) = A(z - x_1)^{-k_1}(z - x_2)^{-k_2}\cdots(z - x_{n-1})^{-k_{n-1}} \qquad (1)
 > $$
 >
-> denotes the branch of the power function with branch cut extending below the $x$ axis:
+> denotes the branch of the [[§35 The Power Function#^def-35-1|power function]] with branch cut extending below the $x$ axis:
 >
 > $$
 > (z - x_j)^{-k_j} = \exp\big[-k_j\log(z - x_j)\big] = |z - x_j|^{-k_j}\exp(-ik_j\theta_j) \qquad \Big(-\frac\pi2 < \theta_j < \frac{3\pi}{2}\Big) , \qquad (2)
