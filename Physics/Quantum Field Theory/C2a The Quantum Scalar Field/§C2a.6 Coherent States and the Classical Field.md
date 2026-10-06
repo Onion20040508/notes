@@ -176,7 +176,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 *Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|Theorem §C2a.6.8]]
 
 > [!theorem] Theorem §C2a.6.5: Coherent States Stay Coherent
-> Under the free evolution, $e^{-i{:}H{:}\,t}\,|\{\eta_{\mathbf k}\}\rangle = |\{\eta_{\mathbf k}e^{-iE_{\mathbf k}t}\}\rangle$, with the same $\bar N$; the mean field of the evolved state, $\langle\{\eta(t)\}|\phi(\mathbf x)|\{\eta(t)\}\rangle$, is $\bar\phi(t, \mathbf x)$ of [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]]: it follows the classical solution for all time.
+> Under the free evolution, $e^{-i:\!H\!:\,t}\,|\{\eta_{\mathbf k}\}\rangle = |\{\eta_{\mathbf k}e^{-iE_{\mathbf k}t}\}\rangle$, with the same $\bar N$; the mean field of the evolved state, $\langle\{\eta(t)\}|\phi(\mathbf x)|\{\eta(t)\}\rangle$, is $\bar\phi(t, \mathbf x)$ of [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]]: it follows the classical solution for all time.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, Derivation "Three senses …", part 3*
 

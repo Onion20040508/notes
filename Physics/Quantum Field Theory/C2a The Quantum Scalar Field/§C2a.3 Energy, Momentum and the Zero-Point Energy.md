@@ -289,6 +289,8 @@ What are the energy and momentum of the free real field? With the mode expansion
 > :\!H\!: = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,a^\dagger_{\mathbf p}a_{\mathbf p}, \qquad :\!H\!:|0\rangle = 0 .
 > $$
 >
+> *Notation:* the colons $:\!X\!:$ are those of the user's PHY 513 notes (Ch. 6, $\hat\phi(x)\hat\phi(y) = \,:\!\hat\phi(x)\hat\phi(y)\!:\, + D_W(x - y)$); PS (§4.3) and Yu (§6.3.1, "normal product") write $N(X)$, and the operation is also called Wick ordering. These notes use the colons only.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6 (Caution "The zero-point energy") · PHY 513 Lecture 4, Part C · PS §2.3, after eq. (2.31)*
 
 ^def-c2a-3-1

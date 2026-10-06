@@ -46,7 +46,7 @@ $$
 >
 > real fields becoming Hermitian operators, and take as Hamiltonian the classical $H[\phi, \pi]$ read as an operator.
 >
-> *Domain:* bosonic fields with a Hamiltonian formulation; Schrödinger-picture operators, or Heisenberg-picture operators at a common time. Fermion fields take anticommutators instead ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-2|Principle §C5b.1.2]]). The operator ordering in $H$ is not fixed by this principle ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]).
+> *Domain:* bosonic fields with a Hamiltonian formulation; Schrödinger-picture operators, or Heisenberg-picture operators at a common time. Fermion fields take anticommutators instead ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]). The operator ordering in $H$ is not fixed by this principle ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.2 (Principle "Canonical commutators for a field") · PHY 513 Lecture 4, Part B · PS §2.3, eq. (2.20) · Yu §2.2, eq. (2.76)*
 

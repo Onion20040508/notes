@@ -44,7 +44,7 @@ What do the states of the free real field describe? The ladder relations of [[§
 > **1. Positivity.** For any state $|\psi\rangle$, $\langle\psi|a^\dagger_{\mathbf p}a_{\mathbf p}|\psi\rangle = \|a_{\mathbf p}\psi\|^2 \ge 0$, and $E_{\mathbf p} \ge m > 0$ (for a wave-packet state $\psi$, $a_{\mathbf p}\psi$ is a vector for each $\mathbf p$, a Schwartz function of $\mathbf p$, so the integral below converges: [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], 2), so
 >
 > $$
-> \langle\psi|{:}H{:}|\psi\rangle = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\|a_{\mathbf p}\psi\|^2 \ge 0 ,
+> \langle\psi|:\!H\!:|\psi\rangle = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\|a_{\mathbf p}\psi\|^2 \ge 0 ,
 > $$
 >
 > with equality iff $a_{\mathbf p}|\psi\rangle = 0$ for (almost) all $\mathbf p$, i.e. $|\psi\rangle \propto |0\rangle$ by the uniqueness in [[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|Principle §C2a.4.1]].
@@ -115,7 +115,7 @@ What do the states of the free real field describe? The ladder relations of [[§
 
 > [!remark] Remark: What the spectrum says
 > - **The Lagrangian's $m$ is the particle's mass.** $a^\dagger_{\mathbf p}|0\rangle$ has exactly the energy and momentum of a relativistic particle of mass $m$ ([[§B2.1 Four-Velocity, Four-Momentum and Collisions#^thm-b2-1-3|REL Theorem §B2.1.3]]), and the label $\mathbf p$, introduced as a Fourier variable, is the eigenvalue of $\mathbf P$. The isolated hyperbola in the figure is how a particle is recognized in a spectrum; with interactions it returns as an isolated pole of the two-point function ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-7|★ Remark: With interactions, the Källén–Lehmann representation]]; QFT C10, planned).
-> - **Statistics were not imposed.** Bose symmetry ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]) comes from $[\phi(\mathbf x), \phi(\mathbf y)] = 0$, inherited by the $a^\dagger$'s; fermions need anticommutators, a different quantization ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-2|Principle §C5b.1.2]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]]). Many quanta in one mode, $(a^\dagger_{\mathbf p})^N|0\rangle$, is the beginning of the laser; whether such a state is a classical wave is [[§C2a.6 Coherent States and the Classical Field|§C2a.6]].
+> - **Statistics were not imposed.** Bose symmetry ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]) comes from $[\phi(\mathbf x), \phi(\mathbf y)] = 0$, inherited by the $a^\dagger$'s; fermions need anticommutators, a different quantization ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]]). Many quanta in one mode, $(a^\dagger_{\mathbf p})^N|0\rangle$, is the beginning of the laser; whether such a state is a classical wave is [[§C2a.6 Coherent States and the Classical Field|§C2a.6]].
 > - **One field, any number of particles.** This is the reason for field theory: particle number is not conserved in relativistic processes, and one field operator creates and destroys any number of quanta. In $\phi$ the plane wave $e^{-ip\cdot x}$ (the wave) multiplies $a_{\mathbf p}$ (the particle): wave–particle duality in one expression.
 > - **Not a density.** $\mathbf x$ is a label on the field operator, not an eigenvalue; there is a momentum operator and a Hamiltonian but no position or time operator.
 >

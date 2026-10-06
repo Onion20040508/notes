@@ -23,12 +23,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C5b.9 Spin and Statistics]] — 
 
 ## Principles
-- [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-2|§C5b.1.2]] Equal-Time Canonical Anticommutation Relations
-- [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-3|§C5b.1.3]] The Spin–Statistics Theorem
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|§C5b.1.6]] Equal-Time Canonical Anticommutation Relations
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|§C5b.1.7]] The Spin–Statistics Theorem
 - [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^pr-c5b-4-1|§C5b.4.1]] The Dirac Vacuum and the Fermionic Fock Space
 
 ## Theorems
-- [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|§C5b.1.4]] The Anticommutators Are Identities after Smearing; Smeared Fermi Fields Are Bounded
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|§C5b.1.8]] The Anticommutators Are Identities after Smearing; Smeared Fermi Fields Are Bounded
 - [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|§C5b.2.1]] Mode Expansion of the Dirac Field
 - [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|§C5b.2.2]] The Conjugate Field
 - [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|§C5b.2.3]] Mode Extraction
@@ -64,4 +64,4 @@ tags: [chapter, quantum-field-theory]
 - [[§C5b.9 Spin and Statistics#^thm-c5b-9-1|§C5b.9.1]] The Free Fields of the Course Obey the Spin–Statistics Theorem
 
 ## Models
-- [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-1|§C5b.1.1]] The Free Dirac Field as a Canonical System
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|§C5b.1.2]] The Free Dirac Field as a Canonical System

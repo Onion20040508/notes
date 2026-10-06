@@ -21,7 +21,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 > With the Hamiltonian of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-4|Theorem §C5b.3.4]]:
 > 1. $e^{iHt}a^s_{\mathbf p}e^{-iHt} = a^s_{\mathbf p}e^{-iE_{\mathbf p}t}$ and $e^{iHt}b^{s\dagger}_{\mathbf p}e^{-iHt} = b^{s\dagger}_{\mathbf p}e^{iE_{\mathbf p}t}$ (and the adjoints).
 > 2. The Heisenberg field ([[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]]) is the expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] with time-independent operators and the exponentials $e^{\mp ip\cdot x}$, $p^0 = E_{\mathbf p}$; at $t = 0$ it is the Schrödinger field.
-> 3. The equal-time anticommutators of [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-2|Principle §C5b.1.2]] hold at every common time $t$.
+> 3. The equal-time anticommutators of [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]] hold at every common time $t$.
 >
 > *Scalar analogue:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]] and part 1 of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]].
 > *Source: Lecture 10, slide 10 ("Field in Heisenberg representation") · the user's PHY 513 notes, Ch. 10 §10.3 · PS §3.5, eqs. (3.99), (3.104) · worked out here as in PS §2.4, eqs. (2.46)–(2.47)*
@@ -46,7 +46,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 *Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-4|Theorem §C5b.3.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]
 
 > [!theorem] Theorem §C5b.6.2: The Heisenberg Equation Is the Dirac Equation
-> With the equal-time anticommutators ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], 3) and $H = \int d^3y\,\psi^\dagger H_{\text{s.p.}}\psi$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]]), the Heisenberg equation $i\partial_t\psi_a = [\psi_a, H]$ ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]]) gives $i\partial_t\psi = H_{\text{s.p.}}\psi$, that is the operator Dirac equation
+> With the equal-time anticommutators ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], 3) and $H = \int d^3y\,\psi^\dagger H_{\text{s.p.}}\psi$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]), the Heisenberg equation $i\partial_t\psi_a = [\psi_a, H]$ ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]]) gives $i\partial_t\psi = H_{\text{s.p.}}\psi$, that is the operator Dirac equation
 >
 > $$
 > (i\slashed{\partial} - m)\,\psi(x) = 0 .
@@ -68,14 +68,14 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 >
 > **5. The Dirac equation.** $i\partial_t\psi = H_{\text{s.p.}}\psi = \gamma^0(-i\gamma^j\partial_j + m)\psi$. Multiply by $\gamma^0$ on the left, $(\gamma^0)^2 = 1$: $i\gamma^0\partial_0\psi = (-i\gamma^j\partial_j + m)\psi$, i.e. $(i\gamma^\mu\partial_\mu - m)\psi = 0$ — Steps 1–2 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-1|Derivation §C5b.3.1]] read backwards.
 >
-> ⚑ By-product: with commutators, $[A, BC] = [A, B]C + B[A, C]$ and the provisional relations of [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-3|§C5b.1, Caution: The provisional commutator quantization]] give the same result → [[§C5b.6 The Heisenberg Dirac Field#^rem-c5b-6-1|Remark: The field equation does not choose the statistics]].
+> ⚑ By-product: with commutators, $[A, BC] = [A, B]C + B[A, C]$ and the provisional relations of [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-2|§C5b.1, Caution: The provisional commutator quantization]] give the same result → [[§C5b.6 The Heisenberg Dirac Field#^rem-c5b-6-1|Remark: The field equation does not choose the statistics]].
 >
 > **What the derivation shows**
 > - The canonical structure (π = iψ†, H, anticommutators) reproduces the classical field equation as an operator equation, as for the scalar; the mode expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] solves it, which is the "field first" route meeting the "oscillators first" one ([[§C2b.1 Heisenberg Fields#^rem-c2b-1-3|§C2b.1, Remark: Two routes that meet]]).
 
 ^der-c5b-6-2
 
-*Uses:* [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-1|Def. §C5b.1.1]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]
+*Uses:* [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-1|Def. §C5b.1.1]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]
 
 > [!remark] Remark: The field equation does not choose the statistics
 > [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]] holds with commutators as well: $[\psi_a, \psi^\dagger_bC_b] = [\psi_a, \psi^\dagger_b]C_b + \psi^\dagger_b[\psi_a, C_b] = \delta_{ab}\delta^3\,C_b + 0$ with the provisional relations. The dynamics is the Dirac equation either way. What decides between commutators and anticommutators is the spectrum ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]) and causality ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]), not the equation of motion; this is why Lecture 10 could write down the mode expansion before saying which bracket its oscillators obey ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-1|§C5b.2, Remark: Reading the expansion]]).
