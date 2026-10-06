@@ -26,14 +26,22 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 > - Linear maps between linear spaces, without topology: [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]]; finite-dimensional home [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]].
 > - Continuity between topological spaces: [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]]; for metric spaces it is equivalent to the sequential condition used here, [[§12 Metric Topology#^thm-12-9|590 Thm. §12.9]].
 
-> [!definition] Definition §30.2: Bounded Linear Map; Operator Norm
+> [!definition] Definition §30.2: Bounded Linear Map
 > A linear map $T : X \to Y$ is **bounded** if there is $M \ge 0$ with
 >
 > $$
 > \|T x\|_Y \le M\, \|x\|_X \qquad \text{for all } x \in X .
 > $$
 >
-> For a bounded $T$ (and $X \neq \{0\}$) its **norm** is
+> *Lax: §15.1, (2) and ($2'$)*
+
+^def-30-2
+
+> [!remark]- Connections
+> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$ in the companion chapter: [[§35 The Completeness Relation#^def-35-1|Def. §35.1]].
+
+> [!definition] Definition §30.3: Operator Norm
+> For a bounded $T : X \to Y$ (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]), and $X \neq \{0\}$, its **norm** is
 >
 > $$
 > \|T\| = \sup_{\substack{x \in X \\ x \neq 0}} \frac{\|T x\|_Y}{\|x\|_X} ;
@@ -43,11 +51,11 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 >
 > *Lax: §15.1, (2) and ($2'$)*
 
-^def-30-2
+^def-30-3
 
 > [!remark]- Connections
 > - Finite-dimensional home (where the sup is a max): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
-> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$ in the companion chapter: [[§35 The Completeness Relation#^def-35-1|Def. §35.1]].
+> - The case $Y = \mathbb{F}$ is the dual norm, [[§34 Bras, Kets, and the Riesz Map#^def-34-2|Def. §34.2]]; the case $X = Y = H$ in the companion chapter: [[§35 The Completeness Relation#^def-35-2|Def. §35.2]].
 
 > [!theorem] Proposition §30.1: The Operator Norm
 > Let $T : X \to Y$ be a bounded linear map, $X \neq \{0\}$. Then
@@ -68,7 +76,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 ^pf-30-1
 
-*Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
+*Uses:* [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 ![[m556-21-2.svg]]
 *The operator norm of a linear map $T$ of the Euclidean plane: the unit circle of $X$ (blue, left) is mapped onto an ellipse (right). By (a), $\|T\|$ is the largest $\|Tu\|_Y$ over unit vectors $u$ — here the long semi-axis, attained at $u_0$ (red). By (b) and (c), the circle $\|y\|_Y = \|T\|$ (red, dashed) is the smallest circle about $0$ containing the image: every $Tu$ lies inside it, and a smaller $M$ would cut off $Tu_0$.*
@@ -124,7 +132,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to points that all stay outside the unit ball, so $Ty_n \not\to T0$.
 
 > [!remark] Remark
-> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§34 Bras, Kets, and the Riesz Map#^def-34-1|§34.1]]. The companion chapter's bounded operators on $H$ (Definition [[§35 The Completeness Relation#^def-35-1|§35.1]]) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
+> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§34 Bras, Kets, and the Riesz Map#^def-34-2|§34.2]]. The companion chapter's bounded operators on $H$ (Definition [[§35 The Completeness Relation#^def-35-1|§35.1]]) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
 
 ^rem-30-1
 
@@ -235,7 +243,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 > - Finite-dimensional home (inner product spaces, where the operator norm is a maximum): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 
 > [!definition] Definition §30.4: The Space $\mathcal{L}(X, Y)$
-> $\mathcal{L}(X, Y)$ is the set of all bounded linear maps $T : X \to Y$, with the pointwise operations $(T_1 + T_2)x = T_1 x + T_2 x$ and $(aT)x = a\, Tx$, and the norm $\|T\|$ of Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]].
+> $\mathcal{L}(X, Y)$ is the set of all bounded linear maps $T : X \to Y$, with the pointwise operations $(T_1 + T_2)x = T_1 x + T_2 x$ and $(aT)x = a\, Tx$, and the norm $\|T\|$ of Definition [[§30 Boundedness and Continuity#^def-30-3|§30.3]].
 >
 > *Lax: §15.1, definition of $\mathcal{L}(X, U)$*
 

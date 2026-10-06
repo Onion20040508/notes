@@ -52,36 +52,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 
 ## The Riesz Representation Theorem
 
-> [!theorem] Theorem §26.4: Riesz Representation Theorem
-> Let $H$ be a Hilbert space over $\mathbb{F}$.
-> - (1) For every $a \in H$, the map $\ell_a : H \to \mathbb{F}$, $\ell_a(x) = (x, a)$, is a bounded linear functional on $H$.
-> - (2) Conversely, for every bounded linear functional $\ell : H \to \mathbb{F}$ there is a unique $a \in H$ such that
->
-> $$
-> \ell(x) = (x, a) \qquad \text{for all } x \in H .
-> $$
->
-> *Lax: §6.3, Thm 4*
-
-^thm-26-4
-
-> [!remark]- Connections
-> - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
-> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]].
-
-> [!remark] Remark: Reading the Statement
-> Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$. Wu's example: on $L^2$, every bounded linear functional is $f \mapsto \int f\,\bar{g}$ for a unique $g \in L^2$. The vector is on the *second* slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
-
-^rem-26-3
-
-> [!proof]+ Proof of (1)
-> Linearity of $\ell_a$ in $x$ is linearity of the inner product in its first argument. Boundedness is Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]): $|\ell_a(x)| = |(x, a)| \le \|a\|\,\|x\|$, so $c = \|a\|$ works.
-
-^pf-26-4
-
-*Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]
-
-The idea of the proof comes from $\mathbb{R}^n$: there $\ell(x) = x \cdot a$, the set $\{\ell = 0\}$ is a hyperplane, and $a$ is a normal vector to it. So one studies the null set of $\ell$ and looks for a vector perpendicular to it. Two facts about the null set are needed first; they are separated out as lemmas.
+The idea of the proof of the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]] below) comes from $\mathbb{R}^n$: there $\ell(x) = x \cdot a$, the set $\{\ell = 0\}$ is a hyperplane, and $a$ is a normal vector to it. So one studies the null set of $\ell$ and looks for a vector perpendicular to it. Two facts about the null set are needed first; they are separated out as lemmas.
 
 > [!theorem] Lemma §26.2: The Kernel of a Bounded Functional is Closed
 > Let $\ell$ be a bounded linear functional on a normed linear space $X$. Then its **kernel** (or null set)
@@ -139,6 +110,30 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 
 ^rem-26-2
 
+> [!theorem] Theorem §26.4: Riesz Representation Theorem
+> Let $H$ be a Hilbert space over $\mathbb{F}$.
+> - (1) For every $a \in H$, the map $\ell_a : H \to \mathbb{F}$, $\ell_a(x) = (x, a)$, is a bounded linear functional on $H$.
+> - (2) Conversely, for every bounded linear functional $\ell : H \to \mathbb{F}$ there is a unique $a \in H$ such that
+>
+> $$
+> \ell(x) = (x, a) \qquad \text{for all } x \in H .
+> $$
+>
+> *Lax: §6.3, Thm 4*
+
+^thm-26-4
+
+> [!remark]- Connections
+> - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
+> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]].
+
+> [!proof]+ Proof of (1)
+> Linearity of $\ell_a$ in $x$ is linearity of the inner product in its first argument. Boundedness is Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]): $|\ell_a(x)| = |(x, a)| \le \|a\|\,\|x\|$, so $c = \|a\|$ works.
+
+^pf-26-4
+
+*Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]
+
 > [!proof]+ Proof of (2)
 > If $\ell = 0$, then $\ell(x) = (x, 0)$ for all $x$, so $a = 0$ works. Assume $\ell \neq 0$, let $N = \ker \ell$, and fix $0 \neq x_0 \in N^\perp$ (Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]]).
 >
@@ -172,6 +167,11 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 *The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*
 
 The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal vector to $N$, a multiple of $x_0$. The level sets $\{\ell = c\}$ are the translates of $N$, and $\ell(x)$ records only which translate $x$ lies on, i.e. the $N^\perp$-component $kx_0$ of $x$.
+
+> [!remark] Remark: Reading the Statement
+> Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$. Wu's example: on $L^2$, every bounded linear functional is $f \mapsto \int f\,\bar{g}$ for a unique $g \in L^2$. The vector is on the *second* slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
+
+^rem-26-3
 
 > [!remark] Remark
 > Wu on method: “when we try to prove a big theorem, very often the simple examples we learned, like in linear algebra, give the answer; start with simple examples and go from there.” Here the finite-dimensional picture dictated both the object to study ($\ker \ell$) and the candidate ($a$ normal to it); the analysis consisted of making the orthogonal decomposition available, which is where completeness of $H$ and boundedness of $\ell$ enter.

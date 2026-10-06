@@ -9,14 +9,14 @@ tags: [group-theory, math493]
 
 *Reference: Pinter Ch. 13, Ex. J.*
 
-> [!definition] Definition §27.1: Orbit; Orbit Space
+> [!definition] Definition §27.1: Orbit
 > Let $G$ [[§25 Actions#^def-25-1|act]] on $X$. For $x \in X$, the **orbit** of $x$ is
 >
 > $$
 > Gx := \{ g \star x : g \in G \} \subseteq X,
 > $$
 >
-> the set of points reachable from $x$. The set of all orbits is written $G \backslash X$ (for a right action, $X/G$). The action is **transitive** if there is only one orbit, i.e. $Gx = X$ for some (equivalently every) $x$.
+> the set of points reachable from $x$.
 >
 > *Source: WS 4*
 
@@ -24,8 +24,28 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Orbit size is the index of the stabilizer: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; cosets are orbits: [[§28 Left and Right Cosets#^prop-28-1|Cosets Are Orbits]].
+> - With topologies: orbits as in [[§13 Group Actions and Orbit Spaces#^def-13-3|591 Def. §13.3]].
+
+> [!definition] Definition §27.2: Orbit Space
+> The set of all orbits is written $G \backslash X$ (for a right action, $X/G$).
+>
+> *Source: WS 4*
+
+^def-27-2
+
+> [!remark]- Connections
 > - The orbit-space notation is restated from lecture in [[§27 Orbits#^def-27-4|Orbit Space Notation, Def. §27.4]].
-> - With topologies: the orbit space X/G with the quotient topology, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]] (orbits as in [[§13 Group Actions and Orbit Spaces#^def-13-3|591 Def. §13.3]]; e.g. complex projective space as an orbit space, [[§13 Group Actions and Orbit Spaces#^ex-13-3|591 Ex. §13.3]]); a continuous transitive action makes X a homogeneous space, [[§14 Homogeneous Spaces#^def-14-2|591 Def. §14.2]].
+> - With topologies: the orbit space X/G with the quotient topology, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]] (e.g. complex projective space as an orbit space, [[§13 Group Actions and Orbit Spaces#^ex-13-3|591 Ex. §13.3]]).
+
+> [!definition] Definition §27.3: Transitive Action
+> The action is **transitive** if there is only one orbit, i.e. $Gx = X$ for some (equivalently every) $x$.
+>
+> *Source: WS 4*
+
+^def-27-3
+
+> [!remark]- Connections
+> - With topologies: a continuous transitive action makes X a homogeneous space, [[§14 Homogeneous Spaces#^def-14-2|591 Def. §14.2]].
 
 > [!theorem] Proposition §27.1: Orbits Partition $X$
 > Let $G$ act on $X$ and $x, y \in X$. Then either $Gx = Gy$ or $Gx \cap Gy = \varnothing$. Hence $X$ is the disjoint union of the distinct orbits.
@@ -79,5 +99,5 @@ The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right
 *The orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin, the origin itself being a one-point orbit; the orbit of $x$ (red) is the sphere of radius $|x|$. The ray $\mathbb{R}_{\geq 0}$ (blue) meets each orbit exactly once, which is the bijection $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$.*
 
 > [!remark]- Connections
-> - Same notion as the orbit space of [[§27 Orbits#^def-27-1|Def. §27.1]] (worksheet form).
+> - Same notion as the orbit space of [[§27 Orbits#^def-27-2|Def. §27.2]] (worksheet form).
 > - “Like a quotient”: the quotient-set notation $X/{\sim}$ of MATH 590, [[§13 Quotient Topology#^def-13-3|Quotient Space]] (590 Def. §13.3); the coset spaces $G/H$ of [[§28 Left and Right Cosets#^def-28-2|Def. §28.2]] and quotient groups [[§40 Quotient Groups#^def-40-1|Def. §40.1]].

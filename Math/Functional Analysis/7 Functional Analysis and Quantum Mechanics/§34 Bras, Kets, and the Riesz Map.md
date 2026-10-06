@@ -22,18 +22,26 @@ tags: [functional-analysis, math556, companion]
 
 ## The Dual Space
 
-> [!definition] Definition §34.1: Dual Space and Dual Norm
-> Let $X$ be a normed linear space over $\mathbb{F}$. The **dual space** $X^{\ast}$ is the set of bounded linear functionals on $X$ (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]), with pointwise addition and scalar multiplication. For $\ell \in X^{\ast}$, its **norm** is
->
-> $$
-> \|\ell\| = \inf\{ c \ge 0 : |\ell(x)| \le c\,\|x\| \text{ for all } x \in X \} .
-> $$
+> [!definition] Definition §34.1: Dual Space
+> Let $X$ be a normed linear space over $\mathbb{F}$. The **dual space** $X^{\ast}$ is the set of bounded linear functionals on $X$ (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]), with pointwise addition and scalar multiplication.
 
 ^def-34-1
 
 > [!remark]- Connections
 > - The same space in Chapter 6: $X^* = \mathcal{L}(X, \mathbb{F})$, [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] with [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]].
 > - The algebraic dual (no boundedness) in finite dimensions: [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]].
+
+> [!definition] Definition §34.2: Dual Norm
+> For $\ell \in X^{\ast}$ (Definition [[§34 Bras, Kets, and the Riesz Map#^def-34-1|§34.1]]), its **norm** is
+>
+> $$
+> \|\ell\| = \inf\{ c \ge 0 : |\ell(x)| \le c\,\|x\| \text{ for all } x \in X \} .
+> $$
+
+^def-34-2
+
+> [!remark]- Connections
+> - The same norm in Chapter 6: the operator norm for $Y = \mathbb{F}$, [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]].
 
 > [!theorem] Lemma §34.1: The Dual Norm
 > For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
@@ -45,7 +53,7 @@ tags: [functional-analysis, math556, companion]
 
 ^pf-34-1
 
-*Uses:* [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
+*Uses:* [[§34 Bras, Kets, and the Riesz Map#^def-34-2|Def. §34.2]], [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 > [!remark]- Connections
 > - The same statement for all bounded linear maps: [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-5|§30.5]].
@@ -69,7 +77,7 @@ tags: [functional-analysis, math556, companion]
 
 ^pf-34-2
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]]
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]], [[§34 Bras, Kets, and the Riesz Map#^def-34-2|Def. §34.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
@@ -84,20 +92,23 @@ tags: [functional-analysis, math556, companion]
 
 ## Dirac Notation
 
-> [!definition] Definition §34.3: Kets, Bras, and Outer Products
+> [!definition] Definition §34.3: Kets and Bras
 > Let $H$ be a Hilbert space. For $a \in H$, the **ket** $|a\rangle$ denotes $a$ itself, and the **bra** $\langle a|$ denotes the functional $R(a) = \ell_a \in H^{\ast}$, so that
 >
 > $$
 > \langle a | x \rangle := \langle a|\,(x) = (x, a) .
 > $$
->
-> For $a, b \in H$, the **outer product** $|a\rangle\langle b|$ is the map
+
+^def-34-3
+
+> [!definition] Definition §34.4: Outer Products
+> Let $H$ be a Hilbert space, with kets and bras as in Definition [[§34 Bras, Kets, and the Riesz Map#^def-34-3|§34.3]]. For $a, b \in H$, the **outer product** $|a\rangle\langle b|$ is the map
 >
 > $$
 > |a\rangle\langle b| : H \to H, \qquad x \mapsto \langle b | x \rangle\, a = (x, b)\, a .
 > $$
 
-^def-34-3
+^def-34-4
 
 > [!remark] Remark
 > Theorem [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is linear in $x$, has range in $\operatorname{span}\{a\}$, and satisfies $\|\,|a\rangle\langle b|\,x\| \le \|a\|\,\|b\|\,\|x\|$ by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]; it is a bounded operator of rank at most one.
@@ -105,4 +116,4 @@ tags: [functional-analysis, math556, companion]
 ^rem-34-3
 
 > [!remark]- Connections
-> - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]] and Definition [[§34 Bras, Kets, and the Riesz Map#^def-34-3|§34.3]] are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].
+> - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]] and Definitions [[§34 Bras, Kets, and the Riesz Map#^def-34-3|§34.3]] and [[§34 Bras, Kets, and the Riesz Map#^def-34-4|§34.4]] are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].

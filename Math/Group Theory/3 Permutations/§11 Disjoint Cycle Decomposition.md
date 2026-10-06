@@ -24,7 +24,7 @@ tags: [group-theory, math493]
 
 ^pf-11-1
 
-*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
+*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-2|Def. §10.2]], [[§4 Subgroups#^def-4-7|Def. §4.7]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
 > [!theorem] Lemma §11.2: Disjoint Cycles Commute
 > If $c$ and $d$ are disjoint cycles, then $cd = dc$.
@@ -36,7 +36,7 @@ tags: [group-theory, math493]
 
 ^pf-11-2
 
-*Uses:* [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]]
+*Uses:* [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§10 Cycle Notation and the Group S₃#^def-10-2|Def. §10.2]]
 
 > [!theorem] Theorem §11.3: Disjoint Cycle Decomposition
 > Every $\sigma \in S_n$ is a product of disjoint cycles. The decomposition is unique up to the order of the factors and the choice of starting point within each cycle (with fixed points either omitted or written as $1$-cycles).
@@ -52,7 +52,7 @@ tags: [group-theory, math493]
 
 ^pf-11-3
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§4 Subgroups#^lem-4-4|§4.4]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§10 Cycle Notation and the Group S₃#^def-10-2|Def. §10.2]], [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§4 Subgroups#^lem-4-4|§4.4]]
 
 > [!remark]- Connections
 > - The multiset of cycle lengths is the [[§33 Conjugacy Classes#^def-33-2|Cycle Type]], which classifies conjugacy: [[§33 Conjugacy Classes#^thm-33-3|Conjugacy Classes in Sₙ Are Cycle Types]].
@@ -83,4 +83,4 @@ tags: [group-theory, math493]
 
 ^pf-11-4
 
-*Uses:* [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§2 First Consequences of the Axioms#^cor-2-5|§2.5]]
+*Uses:* [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-7|Def. §4.7]], [[§2 First Consequences of the Axioms#^cor-2-5|§2.5]]

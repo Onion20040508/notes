@@ -7,7 +7,7 @@ tags: [functional-analysis, math556]
 ---
 ← [[§24 The Parallelogram Law and Jordan–von Neumann]] · ↑ [[· 5 Inner Product Spaces]] · [[§26 Bounded Linear Functionals and the Riesz Representation Theorem]] →
 
-*Stage: inner products — Threads meet: convexity $\times$ completeness. Closest points; the orthogonal complement replaces the quotient of [[§1 Linear Spaces#Quotient Spaces|§1]].*
+*Stage: inner products — Threads meet: convexity $\times$ completeness. Closest points; the orthogonal complement replaces the quotient of [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]].*
 
 Everything from here on uses completeness, and the results are the ones for which Hilbert spaces are named. Wu's comment on the method: much of what is proved below is familiar from $\mathbb{R}^n$, and the proofs there never used finite-dimensionality — so they go through unchanged. The one new ingredient is that a closest point must be *produced* as a limit, which is where completeness enters.
 
@@ -127,8 +127,19 @@ Everything from here on uses completeness, and the results are the ones for whic
 
 ## Orthogonal Complements
 
-> [!definition] Definition §25.1: Orthogonality; Orthogonal Complement
-> Let $(X, (\cdot,\cdot))$ be an inner product space. Two vectors $x, y \in X$ are **orthogonal** (or perpendicular), written $x \perp y$, if $(x, y) = 0$. For a subset $M \subset X$, the **orthogonal complement** of $M$ is
+> [!definition] Definition §25.1: Orthogonality
+> Let $(X, (\cdot,\cdot))$ be an inner product space. Two vectors $x, y \in X$ are **orthogonal** (or perpendicular), written $x \perp y$, if $(x, y) = 0$.
+>
+> *Lax: §6.1 and §6.2, definitions*
+
+^def-25-1
+
+> [!remark]- Connections
+> - The finite-dimensional home: [[§20 Inner Products and Norms#^ladr-6-10|LADR 6.10]] (orthogonal).
+> - Computational version: [[§49 Inner Product, Length, and Orthogonality#^def-49-5|235 Def. §49.5]] (orthogonal vectors).
+
+> [!definition] Definition §25.2: Orthogonal Complement
+> Let $(X, (\cdot,\cdot))$ be an inner product space. For a subset $M \subset X$, the **orthogonal complement** of $M$ is
 >
 > $$
 > M^\perp = \{ v \in X : (v, y) = 0 \text{ for all } y \in M \} .
@@ -136,11 +147,11 @@ Everything from here on uses completeness, and the results are the ones for whic
 >
 > *Lax: §6.1 and §6.2, definitions*
 
-^def-25-1
+^def-25-2
 
 > [!remark]- Connections
-> - The finite-dimensional home: [[§20 Inner Products and Norms#^ladr-6-10|LADR 6.10]] (orthogonal), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]] (orthogonal complement).
-> - Computational version: [[§49 Inner Product, Length, and Orthogonality#^def-49-5|235 Def. §49.5]] (orthogonal vectors), [[§50 Orthogonal Complements and Angles#^def-50-1|235 Def. §50.1]] (orthogonal complement of a subspace of ℝⁿ).
+> - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]] (orthogonal complement).
+> - Computational version: [[§50 Orthogonal Complements and Angles#^def-50-1|235 Def. §50.1]] (orthogonal complement of a subspace of ℝⁿ).
 
 Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ iff $y \perp x$ by skew-symmetry.
 
@@ -173,7 +184,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - Axler's definition: [[§3 Subspaces#^ladr-1-41|LADR 1.41]]; for two subspaces, [[§3 Subspaces#^ladr-1-46|LADR 1.46]] (and [[Condition for a direct sum|LADR 1.45]]).
 
 > [!remark] Remark: Internal and External
-> By Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]], $X = Y_1 \oplus Y_2$ holds iff $Y_1 + Y_2 = X$ and $Y_1 \cap Y_2 = \{0\}$, and then $(y_1, y_2) \mapsto y_1 + y_2$ is an isomorphism from the external direct sum of Definition [[§1 Linear Spaces#^def-1-4|§1.4]] onto $X$; so the same symbol for the two notions causes no harm. This is the definition of Axler raised as a question in the first lecture; Wu introduced it here because the theorem below needs it. In the language of [[§1 Linear Spaces#Complements and the Isomorphism X ≅ X/Y ⊕ Y|§1]], $X = Y \oplus W$ says exactly that $W$ is a complement of $Y$.
+> By Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]], $X = Y_1 \oplus Y_2$ holds iff $Y_1 + Y_2 = X$ and $Y_1 \cap Y_2 = \{0\}$, and then $(y_1, y_2) \mapsto y_1 + y_2$ is an isomorphism from the external direct sum of Definition [[§1 Linear Spaces#^def-1-4|§1.4]] onto $X$; so the same symbol for the two notions causes no harm. This is the definition of Axler raised as a question in the first lecture; Wu introduced it here because the theorem below needs it. In the language of [[§2 Quotient Spaces and Complements#Complements and the Isomorphism X ≅ X/Y ⊕ Y|§2]], $X = Y \oplus W$ says exactly that $W$ is a complement of $Y$.
 
 ^rem-25-4
 
@@ -239,7 +250,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
-> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§1 Linear Spaces#Quotient Spaces|§1]] suggested; the [[§2 Quotient Spaces and Complements#^rem-2-5|remark following Corollary §1.13]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]]).
+> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the [[§2 Quotient Spaces and Complements#^rem-2-5|remark following Corollary §1.13]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]]).
 
 ^rem-25-5
 

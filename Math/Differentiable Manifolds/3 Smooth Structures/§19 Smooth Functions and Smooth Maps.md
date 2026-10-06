@@ -58,14 +58,14 @@ tags: [differentiable-manifolds, math591]
 
 To compare two smooth manifolds one needs smooth *maps* between them.
 
-> [!definition] Definition §19.3: Smooth Map and Diffeomorphism
+> [!definition] Definition §19.3: Smooth Map
 > Let $(M, \mathcal{A}_M)$ and $(N, \mathcal{A}_N)$ be smooth manifolds of dimensions $m$ and $n$. A map $F : M \to N$ is **smooth** if it is continuous and for every $p \in M$ there are charts $(U,\varphi) \in \mathcal{A}_M$ with $p \in U$ and $(V,\psi) \in \mathcal{A}_N$ with $F(U) \subseteq V$ such that the **coordinate representation**
 >
 > $$
 > \psi \circ F \circ \varphi^{-1} : \varphi(U) \longrightarrow \psi(V) \subseteq \mathbb{R}^n
 > $$
 >
-> is smooth. $F$ is a **diffeomorphism** if it is a smooth bijection with smooth inverse — generalizing [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], with which it agrees on open subsets of Euclidean space ([[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]).
+> is smooth.
 >
 > *Lee: Ch. 2, Smooth Functions and Smooth Maps*
 
@@ -73,6 +73,13 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ![[m591-8-8.svg]]
 *The top row is the map one cares about, between spaces where “smooth” has no meaning; the bottom row is its coordinate representation, between open subsets of Euclidean spaces where it does. The two vertical arrows are charts, so they are homeomorphisms, and the square commutes by construction. Smoothness of $F$ is defined by smoothness of the bottom arrow, and [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]] says this does not depend on which charts are used to build it.*
+
+> [!definition] Definition §19.4: Diffeomorphism
+> Let $(M, \mathcal{A}_M)$ and $(N, \mathcal{A}_N)$ be smooth manifolds. A map $F : M \to N$ is a **diffeomorphism** if it is a smooth bijection with smooth inverse ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Definition §19.3]]) — generalizing [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], with which it agrees on open subsets of Euclidean space ([[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]).
+>
+> *Lee: Ch. 2, Smooth Functions and Smooth Maps*
+
+^def-19-4
 
 > [!remark]- Connections
 > - The Euclidean notion it generalizes: [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]; local diffeomorphisms and the bijective case: [[§33 Local Diffeomorphisms#^def-33-1|Def. §33.1]], [[§33 Local Diffeomorphisms#^cor-33-3|§33.3]].
@@ -111,7 +118,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 ^rem-19-2
 
 > [!theorem] Proposition §19.3: The Two Notions of Diffeomorphism Agree
-> Give open sets $A \subseteq \mathbb{R}^m$ and $B \subseteq \mathbb{R}^n$ their standard smooth structures, determined by the charts $(A, \mathrm{id}_A)$ and $(B, \mathrm{id}_B)$. Then a map $F : A \to B$ is smooth in the sense of [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]] if and only if it is smooth in the Euclidean sense. Consequently, for $m = n$, $F$ is a diffeomorphism in the sense of [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]] if and only if it is one in the sense of [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], and $A$ and $B$ are diffeomorphic in the sense of [[§19 Smooth Functions and Smooth Maps#^def-19-5|Def. §19.5]] if and only if they are in the sense of [[§17 Differentiable Structures#^def-17-3|Def. §17.3]].
+> Give open sets $A \subseteq \mathbb{R}^m$ and $B \subseteq \mathbb{R}^n$ their standard smooth structures, determined by the charts $(A, \mathrm{id}_A)$ and $(B, \mathrm{id}_B)$. Then a map $F : A \to B$ is smooth in the sense of [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]] if and only if it is smooth in the Euclidean sense. Consequently, for $m = n$, $F$ is a diffeomorphism in the sense of [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]] if and only if it is one in the sense of [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], and $A$ and $B$ are diffeomorphic in the sense of [[§19 Smooth Functions and Smooth Maps#^def-19-5|Def. §19.5]] if and only if they are in the sense of [[§17 Differentiable Structures#^def-17-3|Def. §17.3]].
 
 ^prop-19-3
 
@@ -129,7 +136,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-5|Def. §19.5]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark] Remark
-> Not stated in lecture. The word is defined twice because the logic needs it twice: [[§17 Differentiable Structures#^def-17-3|Def. §17.3]] must exist before smooth manifolds do, since compatibility of charts is phrased with it, and [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]] is the general notion. The proposition is what licenses using one word for both. A third notion, the *local* diffeomorphism of [[§33 Local Diffeomorphisms|§33]], is genuinely different; [[§33 Local Diffeomorphisms#^cor-33-3|§33.3]] relates it to the other two.
+> Not stated in lecture. The word is defined twice because the logic needs it twice: [[§17 Differentiable Structures#^def-17-3|Def. §17.3]] must exist before smooth manifolds do, since compatibility of charts is phrased with it, and [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]] is the general notion. The proposition is what licenses using one word for both. A third notion, the *local* diffeomorphism of [[§33 Local Diffeomorphisms|§33]], is genuinely different; [[§33 Local Diffeomorphisms#^cor-33-3|§33.3]] relates it to the other two.
 
 ^rem-19-3
 
@@ -354,13 +361,18 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 > - Product topology in 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; the tangent space of a product: [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]].
 
 > [!definition] Definition §19.7: Product Manifold
-> The **product manifold** $M_1 \times M_2$ is the product space with the smooth structure generated by the product charts ([[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]). If $\varphi_1 = (x^1, \ldots, x^{m_1})$ and $\varphi_2 = (y^1, \ldots, y^{m_2})$, the coordinate functions of the product chart are $x^i \circ \pi_1$ and $y^j \circ \pi_2$, written again $x^i$, $y^j$: “the $x$'s and then the $y$'s”. For $p_2 \in M_2$ and $p_1 \in M_1$, the **slice inclusions** are
+> The **product manifold** $M_1 \times M_2$ is the product space with the smooth structure generated by the product charts ([[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]). If $\varphi_1 = (x^1, \ldots, x^{m_1})$ and $\varphi_2 = (y^1, \ldots, y^{m_2})$, the coordinate functions of the product chart are $x^i \circ \pi_1$ and $y^j \circ \pi_2$, written again $x^i$, $y^j$: “the $x$'s and then the $y$'s”.
+
+^def-19-7
+
+> [!definition] Definition §19.8: Slice Inclusions
+> For $p_2 \in M_2$ and $p_1 \in M_1$, the **slice inclusions** into the product manifold $M_1 \times M_2$ ([[§19 Smooth Functions and Smooth Maps#^def-19-7|Definition §19.7]]) are
 >
 > $$
 > \iota^{p_2} : M_1 \to M_1 \times M_2, \ q \mapsto (q, p_2), \qquad\qquad \iota^{p_1} : M_2 \to M_1 \times M_2, \ q \mapsto (p_1, q).
 > $$
 
-^def-19-7
+^def-19-8
 
 > [!theorem] Proposition §19.9: Projections and Slice Inclusions Are Smooth
 > The projections $\pi_1 : M_1 \times M_2 \to M_1$, $\pi_2 : M_1 \times M_2 \to M_2$ and the slice inclusions $\iota^{p_2}$, $\iota^{p_1}$ are smooth. In product charts their coordinate representations are

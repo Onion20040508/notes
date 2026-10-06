@@ -139,6 +139,20 @@ tags: [group-theory, math493]
 
 ^ex-41-2
 
+> [!theorem] Lemma §41.4: Restricting a Homomorphism
+> Let $f: X \to Y$ be a [[§15 Homomorphisms#^def-15-1|homomorphism]] and $X' \leq X$ a subgroup. Then the restriction $f|_{X'}: X' \to Y$ is a homomorphism with $\operatorname{Ker}(f|_{X'}) = \operatorname{Ker}(f) \cap X'$.
+>
+> *Source: lecture 10/5*
+
+^lem-41-4
+
+> [!proof]+ Proof
+> The restriction preserves products because $f$ does. For $x \in X'$, $f|_{X'}(x) = e_Y$ iff $f(x) = e_Y$ iff $x \in \operatorname{Ker} f$; so the kernel is $\operatorname{Ker} f \cap X'$.
+
+^pf-41-4
+
+*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
+
 > [!theorem] Theorem §41.5: Second Isomorphism Theorem
 > Let $G$ be a group, $N \trianglelefteq G$, $H \leq G$, and $\pi: G \to G/N$ the [[§40 Quotient Groups#^def-40-1|projection]]. Then $H \cap N \trianglelefteq H$, $N \trianglelefteq HN$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]), $\pi(H) = \pi(HN)$, and
 >
@@ -157,27 +171,13 @@ tags: [group-theory, math493]
 
 ^pf-41-5
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§15 Homomorphisms#^def-15-3|Def. §15.3]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
 
 ![[m493-38-3.svg]]
 *The “diamond” picture of the Second Isomorphism Theorem: lines denote inclusion, and the two marked quotients on opposite sides agree, $HN/N \cong H/(H \cap N)$.*
 
-> [!theorem] Lemma §41.4: Restricting a Homomorphism
-> Let $f: X \to Y$ be a [[§15 Homomorphisms#^def-15-1|homomorphism]] and $X' \leq X$ a subgroup. Then the restriction $f|_{X'}: X' \to Y$ is a homomorphism with $\operatorname{Ker}(f|_{X'}) = \operatorname{Ker}(f) \cap X'$.
->
-> *Source: lecture 10/5*
-
-^lem-41-4
-
-> [!proof]+ Proof
-> The restriction preserves products because $f$ does. For $x \in X'$, $f|_{X'}(x) = e_Y$ iff $f(x) = e_Y$ iff $x \in \operatorname{Ker} f$; so the kernel is $\operatorname{Ker} f \cap X'$.
-
-^pf-41-4
-
-*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
-
 > [!remark] Remark: The Second Isomorphism Theorem Revisited
-> The lemma is exactly what the proof of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] uses: with $\pi: G \to G/N$, the restriction to $SN$ has kernel $N \cap SN = N$, the restriction to $S$ has kernel $N \cap S$, and both have the same image $\pi(SN) = \pi(S)$. So
+> The lemma ([[§41 The First and Second Isomorphism Theorems#^lem-41-4|Lemma §41.4]]) is exactly what the proof of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] uses: with $\pi: G \to G/N$, the restriction to $SN$ has kernel $N \cap SN = N$, the restriction to $S$ has kernel $N \cap S$, and both have the same image $\pi(SN) = \pi(S)$. So
 >
 > $$ SN/N \;\cong\; \pi(SN) \;=\; \pi(S) \;\cong\; S/(S \cap N), $$
 >

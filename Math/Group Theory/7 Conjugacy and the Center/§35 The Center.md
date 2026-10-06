@@ -9,12 +9,19 @@ tags: [group-theory, math493]
 
 *Reference: Pinter Ch. 15, Exs. F–G.*
 
-> [!definition] Definition §35.1: Central Elements; The Center $Z(G)$
-> Let $G$ be a group and $z \in G$. We say $z$ is **central** in $G$ if $zg = gz$ for all $g \in G$. The set of all central elements in $G$ is called the **center** of $G$ and written $Z(G)$.
+> [!definition] Definition §35.1: Central Elements
+> Let $G$ be a group and $z \in G$. We say $z$ is **central** in $G$ if $zg = gz$ for all $g \in G$.
 >
 > *Source: WS 3*
 
 ^def-35-1
+
+> [!definition] Definition §35.2: The Center $Z(G)$
+> The set of all central elements in $G$ is called the **center** of $G$ and written $Z(G)$.
+>
+> *Source: WS 3*
+
+^def-35-2
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: the kernel $\{\pm1\}$ of $SU(2) \to SO(3)$ is the center of $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
@@ -55,7 +62,7 @@ tags: [group-theory, math493]
 
 ^pf-35-2
 
-*Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]]
+*Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]]
 
 > [!remark] Remark: A Second Proof
 > $Z(G)$ is the kernel of the homomorphism $G \to S_G$ given by the conjugation action ([[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]]), and kernels are subgroups ([[§15 Homomorphisms#^prop-15-2|§15.2]]) — indeed normal subgroups ([[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]).

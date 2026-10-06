@@ -116,7 +116,7 @@ tags: [group-theory, math493]
 
 ^pf-16-4
 
-*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§4 Subgroups#^def-4-2|Def. §4.2]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
+*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§4 Subgroups#^def-4-2|Def. §4.2]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-7|Def. §4.7]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
 > [!theorem] Proposition §16.5: Isomorphism Invariants
 > Let $\varphi: G \to H$ be an isomorphism. Then:
@@ -133,7 +133,7 @@ tags: [group-theory, math493]
 
 ^pf-16-5
 
-*Uses:* [[§16 Isomorphisms#^prop-16-3|§16.3]], [[§16 Isomorphisms#^prop-16-4|§16.4]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§4 Subgroups#^def-4-3|Def. §4.3]], [[§4 Subgroups#^def-4-6|Def. §4.6]]
+*Uses:* [[§16 Isomorphisms#^prop-16-3|§16.3]], [[§16 Isomorphisms#^prop-16-4|§16.4]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§4 Subgroups#^def-4-3|Def. §4.3]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§4 Subgroups#^def-4-7|Def. §4.7]], [[§4 Subgroups#^def-4-8|Def. §4.8]]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|Isomorphisms Preserve All Algebraic Properties]] (590 §21.6).
@@ -165,7 +165,7 @@ tags: [group-theory, math493]
 
 ^pf-16-6
 
-*Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^prop-15-4|§15.4]]
+*Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^prop-15-4|§15.4]]
 
 > [!remark] Remark: Using These to Distinguish Groups
 > Both give non-isomorphism tests. For instance $|Z(\mathbb{Z}/6\mathbb{Z})| = 6$ while $|Z(S_3)| = 1$ ([[§35 The Center#^def-35-1|§35]]), re-proving $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ without invoking commutativity directly. And since the subgroup lattices correspond, a group with no proper nontrivial subgroup cannot be isomorphic to one that has such a subgroup: $\mathbb{Z}/4\mathbb{Z}$ has the subgroup $\{[0],[2]\}$ and $U_8$ has $\{1,3\}$, whereas $\mathbb{Z}/5\mathbb{Z}$, of prime order, has none ([[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]]).

@@ -57,11 +57,11 @@ tags: [group-theory, math493]
 ^cor-5-2
 
 > [!proof]+ Proof
-> In additive notation, the [[§4 Subgroups#^def-4-4|words of the generated subgroup]] are sums of copies of $\pm a$ and $\pm b$, so $\langle a, b \rangle = \{ax + by : x, y \in \mathbb{Z}\} = a\mathbb{Z} + b\mathbb{Z}$. This is a nonzero subgroup of $\mathbb{Z}$, so by [[§5 A Zoo of Subgroups#^prop-5-1|the classification]] it equals $e\mathbb{Z}$ for a unique $e > 0$. We show $e = d$. Since $a, b \in e\mathbb{Z}$, $e$ is a common divisor of $a$ and $b$, so $e \leq d$. Since $e \in a\mathbb{Z} + b\mathbb{Z}$, write $e = ax + by$; as $d \mid a$ and $d \mid b$, $d \mid e$, so $d \leq e$. Hence $e = d$, and $d = ax + by$ is Bézout. Finally $d\mathbb{Z} = \mathbb{Z}$ iff $d = 1$.
+> In additive notation, the [[§4 Subgroups#^def-4-5|words of the generated subgroup]] are sums of copies of $\pm a$ and $\pm b$, so $\langle a, b \rangle = \{ax + by : x, y \in \mathbb{Z}\} = a\mathbb{Z} + b\mathbb{Z}$. This is a nonzero subgroup of $\mathbb{Z}$, so by [[§5 A Zoo of Subgroups#^prop-5-1|the classification]] it equals $e\mathbb{Z}$ for a unique $e > 0$. We show $e = d$. Since $a, b \in e\mathbb{Z}$, $e$ is a common divisor of $a$ and $b$, so $e \leq d$. Since $e \in a\mathbb{Z} + b\mathbb{Z}$, write $e = ax + by$; as $d \mid a$ and $d \mid b$, $d \mid e$, so $d \leq e$. Hence $e = d$, and $d = ax + by$ is Bézout. Finally $d\mathbb{Z} = \mathbb{Z}$ iff $d = 1$.
 
 ^pf-5-2
 
-*Uses:* [[§4 Subgroups#^def-4-4|Def. §4.4]], [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]], [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]]
+*Uses:* [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]], [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]]
 
 > [!remark]- Connections
 > - Bézout is what makes the [[§8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]] and [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Euclid's Lemma]] work.
@@ -156,8 +156,8 @@ tags: [group-theory, math493]
 > - **Invertible upper-triangular matrices**  (the product of upper-triangulars is upper-triangular; the inverse of an invertible upper-triangular matrix is upper-triangular — solve $AX = I$ by back-substitution, column by column).
 > - **Unipotent matrices**: upper-triangular with all diagonal entries $1$  (diagonal entries of a product of triangular matrices are the products of the diagonal entries, so $1$'s persist; same for the inverse by back-substitution).
 > - Inside the unipotent group of $GL_2$: the **one-parameter subgroup** $\left\{ \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix} : t \in \mathbb{R} \right\}$, which “is” $(\mathbb{R}, +)$: the product corresponds to $t + s$. So the additive real line embeds in $GL_2(\mathbb{R})$.
-> - *[[§3 Basic Examples of Groups#^def-3-7|Orthogonal group]]* $O(n) = \{A : A^\mathsf{T} A = I_n\}$  (closure: $(AB)^\mathsf{T}(AB) = B^\mathsf{T} A^\mathsf{T} A B = B^\mathsf{T} B = I_n$; inverses: $A^\mathsf{T}A = I_n$ gives $A^{-1} = A^\mathsf{T}$, and $(A^\mathsf{T})^\mathsf{T} A^\mathsf{T} = A A^\mathsf{T} = A A^{-1} = I_n$).
-> - *[[§3 Basic Examples of Groups#^def-3-7|Special orthogonal group]]* $SO(n) = O(n) \cap SL_n(\mathbb{R})$  ([[§4 Subgroups#^prop-4-3|an intersection of subgroups is a subgroup]]: each condition is preserved separately). For $n = 2$ these are the rotation matrices $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, with $R_\theta R_\varphi = R_{\theta + \varphi}$.
+> - *[[§3 Basic Examples of Groups#^def-3-8|Orthogonal group]]* $O(n) = \{A : A^\mathsf{T} A = I_n\}$  (closure: $(AB)^\mathsf{T}(AB) = B^\mathsf{T} A^\mathsf{T} A B = B^\mathsf{T} B = I_n$; inverses: $A^\mathsf{T}A = I_n$ gives $A^{-1} = A^\mathsf{T}$, and $(A^\mathsf{T})^\mathsf{T} A^\mathsf{T} = A A^\mathsf{T} = A A^{-1} = I_n$).
+> - *[[§3 Basic Examples of Groups#^def-3-9|Special orthogonal group]]* $SO(n) = O(n) \cap SL_n(\mathbb{R})$  ([[§4 Subgroups#^prop-4-3|an intersection of subgroups is a subgroup]]: each condition is preserved separately). For $n = 2$ these are the rotation matrices $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, with $R_\theta R_\varphi = R_{\theta + \varphi}$.
 > - **Permutation matrices** ($0$/$1$ matrices with one $1$ per row and column)  (they compose like the permutations they encode); this subgroup “is” $S_n$ sitting inside $GL_n(\mathbb{R})$.
 > - **Rational and integer points**: $GL_n(\mathbb{Q})$  (products of rational matrices are rational; inverses by Cramer's rule are rational), and $GL_n(\mathbb{Z}) = \{A \text{ integer}: \det A = \pm 1\}$  (Cramer: the inverse of an integer matrix is integer iff $\det A \mid 1$; closure since $\det(AB) = \pm 1$).
 > - **Cyclic subgroups** $\langle A \rangle$ for any single $A$ ([[§4 Subgroups#^prop-4-5|WS 1.5]]), e.g. $\langle R_{2\pi/n} \rangle$, a copy of $C_n$ realized by rotations.
@@ -203,7 +203,7 @@ $(\mathbb{Z}, +)$ is the model infinite cyclic group: it is generated by $1$, wh
 
 ![[§4 Subgroups#^prop-4-3]]
 
-![[§4 Subgroups#^def-4-6]]
+![[§4 Subgroups#^def-4-8]]
 
 ![[§4 Subgroups#^rem-4-4]]
 
@@ -218,7 +218,7 @@ Chapter 1 uses $\mathbb{Z}/n\mathbb{Z}$ and $U_n$ before constructing them in [[
 
 ![[§4 Subgroups#^rem-4-5]]
 
-$\mathbb{Z}/n\mathbb{Z} = \langle [1] \rangle$ is recorded in [[§4 Subgroups#^def-4-6|Order of a Group; Order of an Element; Cyclic Groups]] (previous part), and [[§5 A Zoo of Subgroups#^rem-5-1|The Dependency of Uₙ on Bézout]] in this section traces the proof that $U_n$ is a group back to the subgroups of $\mathbb{Z}$.
+$\mathbb{Z}/n\mathbb{Z} = \langle [1] \rangle$ is recorded in [[§4 Subgroups#^def-4-8|Cyclic Groups]] (previous part), and [[§5 A Zoo of Subgroups#^rem-5-1|The Dependency of Uₙ on Bézout]] in this section traces the proof that $U_n$ is a group back to the subgroups of $\mathbb{Z}$.
 
 *$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* first appearance · [[· 2 Arithmetic Modulo n|Chapter 2]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
 
@@ -229,6 +229,10 @@ $GL_n(k)$ is the second fundamental family of non-abelian groups, next to $S_n$.
 ![[§3 Basic Examples of Groups#^def-3-6]]
 
 ![[§3 Basic Examples of Groups#^def-3-7]]
+
+![[§3 Basic Examples of Groups#^def-3-8]]
+
+![[§3 Basic Examples of Groups#^def-3-9]]
 
 ![[§3 Basic Examples of Groups#^rem-3-2]]
 

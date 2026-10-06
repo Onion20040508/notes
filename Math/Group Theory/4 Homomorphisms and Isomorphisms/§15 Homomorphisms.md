@@ -42,25 +42,32 @@ tags: [group-theory, math493]
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-3|Homomorphisms Preserve Identity and Inverses]] (590 §21.3).
 > - Linear-algebra version of the first half: [[§7 Vector Space of Linear Maps#^ladr-3-10|Linear maps take 0 to 0]] (LADR 3.10).
 
-> [!definition] Definition §15.2: Image and Kernel
+> [!definition] Definition §15.2: Image
 > Let $\varphi: G \to H$ be a group homomorphism. The **image** of $\varphi$ is
 >
 > $$
-> \operatorname{Im}(\varphi) := \{ \varphi(g) : g \in G \} \subseteq H,
-> $$
->
-> and the **kernel** of $\varphi$ is
->
-> $$
-> \operatorname{Ker}(\varphi) := \{ g \in G : \varphi(g) = e_H \} \subseteq G.
+> \operatorname{Im}(\varphi) := \{ \varphi(g) : g \in G \} \subseteq H.
 > $$
 
 ^def-15-2
 
 > [!remark]- Connections
+> - Linear-algebra version: [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (LADR 3.16).
+> - Computational version for linear maps: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-6|235 Def. §30.6]] (range), computed as Col A.
+
+> [!definition] Definition §15.3: Kernel
+> Let $\varphi: G \to H$ be a group homomorphism. The **kernel** of $\varphi$ is
+>
+> $$
+> \operatorname{Ker}(\varphi) := \{ g \in G : \varphi(g) = e_H \} \subseteq G.
+> $$
+
+^def-15-3
+
+> [!remark]- Connections
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-6|Kernel]] (590 §21.6).
-> - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space]] (LADR 3.11) and [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (LADR 3.16).
-> - Computational version for linear maps: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-5|235 Def. §30.5]], [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-6|235 Def. §30.6]] (kernel and range), computed as Nul A and Col A.
+> - Linear-algebra version: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space]] (LADR 3.11).
+> - Computational version for linear maps: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-5|235 Def. §30.5]] (kernel), computed as Nul A.
 > - Used in Quantum Mechanics: the homomorphism $SU(2) \to SO(3)$ has kernel $\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 
 > [!example] Example §15.1: Homomorphisms and Their Kernels
@@ -76,7 +83,7 @@ tags: [group-theory, math493]
 
 ^ex-15-1
 
-*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]
+*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§15 Homomorphisms#^def-15-3|Def. §15.3]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]
 
 > [!theorem] Proposition §15.2: Image and Kernel Are Subgroups
 > Let $\varphi: G \to H$ be a group homomorphism. Then $\operatorname{Im}(\varphi)$ is a subgroup of $H$, and $\operatorname{Ker}(\varphi)$ is a subgroup of $G$.
@@ -92,7 +99,7 @@ tags: [group-theory, math493]
 
 ^pf-15-2
 
-*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]]
+*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§15 Homomorphisms#^def-15-3|Def. §15.3]], [[§4 Subgroups#^def-4-1|Def. §4.1]]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-8|Proposition §26.8]] (590 §21.8).
@@ -113,7 +120,7 @@ tags: [group-theory, math493]
 
 ^pf-15-3
 
-*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
+*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§15 Homomorphisms#^def-15-3|Def. §15.3]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-8|Proposition §26.8]] (590 §21.8).

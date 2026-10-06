@@ -140,7 +140,7 @@ tags: [group-theory, math493]
 ^rem-21-2
 
 > [!definition] Definition §21.3: The Alternating Group $A_n$
-> The **alternating group** $A_n$ is the [[§15 Homomorphisms#^def-15-2|kernel]] of the sign homomorphism, $A_n := \operatorname{Ker}(\operatorname{sgn}) = \{\sigma \in S_n : \operatorname{sgn}(\sigma) = 1\}$, the subgroup of even permutations.
+> The **alternating group** $A_n$ is the [[§15 Homomorphisms#^def-15-3|kernel]] of the sign homomorphism, $A_n := \operatorname{Ker}(\operatorname{sgn}) = \{\sigma \in S_n : \operatorname{sgn}(\sigma) = 1\}$, the subgroup of even permutations.
 
 ^def-21-3
 
@@ -192,7 +192,7 @@ tags: [group-theory, math493]
 
 ^pf-21-7
 
-*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-1|§21.1]], [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|§21.6]], [[§2 First Consequences of the Axioms#^cor-2-5|§2.5]], [[§4 Subgroups#^def-4-4|Def. §4.4]]
+*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-1|§21.1]], [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|§21.6]], [[§2 First Consequences of the Axioms#^cor-2-5|§2.5]], [[§4 Subgroups#^def-4-5|Def. §4.5]]
 
 > [!theorem] Lemma §21.8: Products of Two $(1\,j)$'s
 > For $k \geq 3$: $\ (1\,k)(1\,2) = (1\,2\,k)$ and $(1\,2)(1\,k) = (1\,k\,2) = (1\,2\,k)^{-1}$. For distinct $j, k \geq 3$: $\ (1\,j)(1\,k) = (1\,2\,j)(1\,2\,k)^{-1}$.
@@ -228,7 +228,7 @@ tags: [group-theory, math493]
 > - 3-cycles drive the simplicity of $A_n$: [[§43 Simple Groups#^lem-43-8|§43.8]], [[§43 Simple Groups#^thm-43-9|§43.9]]; and they are commutators: [[§47 Commutators#^prop-47-2|§47.2]], [[§47 Commutators#^thm-47-5|The Commutator Subgroup and Characters of Sₙ]].
 
 > [!definition] Definition §21.4: Alternating Polynomial
-> A polynomial $f \in \mathbb{Q}[x_1, \ldots, x_n]$ is **alternating** if $\sigma \cdot f = \operatorname{sgn}(\sigma) f$ for every $\sigma \in S_n$: fixed by even permutations and negated by odd ones. (Compare *symmetric*, $\sigma \cdot f = f$ for all $\sigma$; [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|Def. §20.3]].) By the [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]], $\Delta$ is alternating.
+> A polynomial $f \in \mathbb{Q}[x_1, \ldots, x_n]$ is **alternating** if $\sigma \cdot f = \operatorname{sgn}(\sigma) f$ for every $\sigma \in S_n$: fixed by even permutations and negated by odd ones. (Compare *symmetric*, $\sigma \cdot f = f$ for all $\sigma$; [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-4|Def. §20.4]].) By the [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]], $\Delta$ is alternating.
 
 ^def-21-4
 
@@ -250,6 +250,6 @@ tags: [group-theory, math493]
 > - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§46 Characters#^ex-46-2|Ex. §46.2]].
 
 > [!remark] Remark: The Origin of the Names
-> This is the historical origin of the names: the symmetric group is attached to the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|symmetric polynomials]], and the alternating group is the stabilizer of the alternating polynomial $\Delta$ (whose square, the discriminant, is symmetric). The homomorphism $\operatorname{sgn}$ is also the first nontrivial [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|representation]] of $S_n$ into $GL_1 = \mathbb{Q}^\times$, alongside the permutation representation $\sigma \mapsto M(\sigma)$ into $GL_n$.
+> This is the historical origin of the names: the symmetric group is attached to the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-4|symmetric polynomials]], and the alternating group is the stabilizer of the alternating polynomial $\Delta$ (whose square, the discriminant, is symmetric). The homomorphism $\operatorname{sgn}$ is also the first nontrivial [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|representation]] of $S_n$ into $GL_1 = \mathbb{Q}^\times$, alongside the permutation representation $\sigma \mapsto M(\sigma)$ into $GL_n$.
 
 ^rem-21-3

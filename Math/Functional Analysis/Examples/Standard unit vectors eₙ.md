@@ -8,16 +8,16 @@ The sequences $e_j = (0, \ldots, 0, 1, 0, \ldots)$, with the $1$ in the $j$-th p
 
 *Revisit sections:* [[§15 ℝⁿ, C［a,b］ and ℓᵖ|Chapter 3]] · [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§29 Sequence and Function Spaces|Chapter 5]]
 
-- In $\ell^2$, $(z, e_i) = z_i$, so the finitely supported sequences have orthogonal complement $\{0\}$ ([[§2 Quotient Spaces and Complements#^rem-2-5|§1]])
-- On the unit sphere of $\ell^1$, $\|e_i - e_j\|_1 = 2$: equivalence of norms fails in infinite dimensions ([[§14 New Normed Spaces from Old#^rem-14-2|§12]])
-- $e_1, e_2, \ldots$ are linearly independent, so $\ell^p$ is infinite-dimensional ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^rem-18-2|§16]])
-- $s_n = e_1 + \cdots + e_n$: the norms $\|\cdot\|_p$ and $\|\cdot\|_q$ are not equivalent on $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^pf-18-4|§16]])
-- The alternating sequence $e_1, e_2, e_1, e_2, \ldots$ is not Cauchy in $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^rem-18-5|§16]])
-- The separated sequence: the closed unit ball of $\ell^p$ is not compact ([[§20 Compactness and the Unit Ball#^ex-20-2|§18]])
-- $x = e_1$, $y = e_2$ violate the parallelogram law for $p \neq 2$ ([[§24 The Parallelogram Law and Jordan–von Neumann#^pf-24-3|§21]])
-- The shifted sequence $f_n = e_{n+1}$ is orthonormal but not complete ([[§27 Orthonormal Sets and Bases#^rem-27-8|§24]])
-- The standard basis of $\ell^2$ is an orthonormal basis ([[§27 Orthonormal Sets and Bases#^ex-27-1|§24]])
-- $e_1$ is not in the range of the shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$ ([[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|§24]])
+- In $\ell^2$, $(z, e_i) = z_i$, so the finitely supported sequences have orthogonal complement $\{0\}$ ([[§2 Quotient Spaces and Complements#^rem-2-5|§2]])
+- On the unit sphere of $\ell^1$, $\|e_i - e_j\|_1 = 2$: equivalence of norms fails in infinite dimensions ([[§14 New Normed Spaces from Old#^rem-14-2|§14]])
+- $e_1, e_2, \ldots$ are linearly independent, so $\ell^p$ is infinite-dimensional ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^rem-18-2|§18]])
+- $s_n = e_1 + \cdots + e_n$: the norms $\|\cdot\|_p$ and $\|\cdot\|_q$ are not equivalent on $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^pf-18-4|§18]])
+- The alternating sequence $e_1, e_2, e_1, e_2, \ldots$ is not Cauchy in $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^rem-18-5|§18]])
+- The separated sequence: the closed unit ball of $\ell^p$ is not compact ([[§20 Compactness and the Unit Ball#^ex-20-2|§20]])
+- $x = e_1$, $y = e_2$ violate the parallelogram law for $p \neq 2$ ([[§24 The Parallelogram Law and Jordan–von Neumann#^pf-24-3|§24]])
+- The shifted sequence $f_n = e_{n+1}$ is orthonormal but not complete ([[§27 Orthonormal Sets and Bases#^rem-27-8|§27]])
+- The standard basis of $\ell^2$ is an orthonormal basis ([[§27 Orthonormal Sets and Bases#^ex-27-1|§27]])
+- $e_1$ is not in the range of the shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$ ([[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|§28]])
 
 ## In $\ell^2$, $(z, e_i) = z_i$, so the finitely supported sequences have orthogonal complement $\{0\}$
 ![[§2 Quotient Spaces and Complements#^rem-2-5]]

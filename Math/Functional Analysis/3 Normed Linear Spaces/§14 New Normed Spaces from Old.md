@@ -239,7 +239,7 @@ For a quotient $X / Y$, an equivalence class $[x] = x + Y$ contains many element
 ![[m556-10-2.svg]]
 *The quotient norm in the plane: the classes are the translates of $Y$ (gray, with $[x]$ in red), and $\|[x]\|$ is the norm of the point $x'$ of $[x]$ closest to $0$.*
 
-The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from the origin to the translate $[x]$, i.e. the norm of its closest point. With an inner product that point would be the foot of the perpendicular from $0$ (dashed); without one there is no perpendicular, the infimum need not be attained, and only the number $\inf \|x'\|$ is available. This is the same substitution of “quotient” for “orthogonal complement” as in [[§1 Linear Spaces#Quotient Spaces|§1]].
+The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from the origin to the translate $[x]$, i.e. the norm of its closest point. With an inner product that point would be the foot of the perpendicular from $0$ (dashed); without one there is no perpendicular, the infimum need not be attained, and only the number $\inf \|x'\|$ is available. This is the same substitution of “quotient” for “orthogonal complement” as in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]].
 
 > [!proof]+ Proof
 > $\|[x]\|$ is well defined: the set $\{\|x'\| : x' \in [x]\}$ is nonempty and bounded below by $0$, so its infimum is a real number $\ge 0$, and it depends only on the class, not on the representative $x$, since the set does. So $\|\cdot\| : X/Y \to \mathbb{R}_+$.

@@ -10,7 +10,7 @@ tags: [group-theory, math493]
 *Reference: Pinter Ch. 13, Ex. I; Ch. 15, Ex. G (the class equation).*
 
 > [!definition] Definition §34.1: Centralizer
-> For $g$ in a group $G$, the **centralizer** of $g$ is $C_G(g) := \{h \in G : hg = gh\}$, the set of elements commuting with $g$. ([[493 Problem Set 3#^hw-3-4|Problem Set 3]] writes $Z(g)$ and [[493 Problem Set 5#^hw-5-2|Problem Set 5]] writes $Z_G(g)$; these notes reserve $Z(G)$ for the [[§35 The Center#^def-35-1|center]].)
+> For $g$ in a group $G$, the **centralizer** of $g$ is $C_G(g) := \{h \in G : hg = gh\}$, the set of elements commuting with $g$. ([[493 Problem Set 3#^hw-3-4|Problem Set 3]] writes $Z(g)$ and [[493 Problem Set 5#^hw-5-2|Problem Set 5]] writes $Z_G(g)$; these notes reserve $Z(G)$ for the [[§35 The Center#^def-35-2|center]].)
 
 ^def-34-1
 
@@ -20,7 +20,7 @@ tags: [group-theory, math493]
 > 2. the stabilizer of $g$ is the centralizer $C_G(g)$; in particular $C_G(g)$ is a subgroup of $G$;
 > 3. $g$ has a one-point orbit if and only if $C_G(g) = G$, if and only if $g$ is central.
 >
-> The corresponding homomorphism $G \to S_G$ ([[§25 Actions#^thm-25-3|§25.3]]) is $h \mapsto c_h$, with image the inner automorphisms ([[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]]) and kernel $\{h : hgh^{-1} = g \text{ for all } g\} = Z(G)$.
+> The corresponding homomorphism $G \to S_G$ ([[§25 Actions#^thm-25-3|§25.3]]) is $h \mapsto c_h$, with image the inner automorphisms ([[§18 Conjugation, Products, and Pointwise Products#^def-18-4|Def. §18.4]]) and kernel $\{h : hgh^{-1} = g \text{ for all } g\} = Z(G)$.
 
 ^prop-34-1
 
@@ -29,7 +29,7 @@ tags: [group-theory, math493]
 
 ^pf-34-1
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]], [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]], [[§25 Actions#^thm-25-3|§25.3]], [[§25 Actions#^def-25-4|Def. §25.4]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]], [[§35 The Center#^def-35-1|Def. §35.1]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]], [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]], [[§25 Actions#^thm-25-3|§25.3]], [[§25 Actions#^def-25-4|Def. §25.4]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-4|Def. §18.4]], [[§35 The Center#^def-35-1|Def. §35.1]], [[§35 The Center#^def-35-2|Def. §35.2]]
 
 > [!remark]- Connections
 > - For a matrix group, conjugation X ↦ gXg⁻¹ applied to tangent vectors at the identity is the adjoint action, [[§25 The Geometric Tangent Space#^def-25-2|591 Def. §25.2]].
@@ -89,7 +89,7 @@ tags: [group-theory, math493]
 
 ^pf-34-4
 
-*Uses:* [[§27 Orbits#^prop-27-1|§27.1]], [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]], [[§35 The Center#^def-35-1|Def. §35.1]]
+*Uses:* [[§27 Orbits#^prop-27-1|§27.1]], [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]], [[§35 The Center#^def-35-2|Def. §35.2]]
 
 > [!remark]- Connections
 > - The key input for [[§35 The Center#^thm-35-3|Groups of Prime-Power Order Have Nontrivial Center, §35.3]] and [[§35 The Center#^cor-35-4|§35.4]]; one route to [[§29 The Index and Lagrange's Theorem#^thm-29-6|Cauchy's Theorem, §29.6]].
@@ -131,7 +131,7 @@ tags: [group-theory, math493]
 
 ^pf-34-6
 
-*Uses:* [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]], [[§17 Cyclic Groups#^cor-17-2|§17.2]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
+*Uses:* [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]], [[§17 Cyclic Groups#^cor-17-2|§17.2]], [[§4 Subgroups#^def-4-7|Def. §4.7]], [[§4 Subgroups#^def-4-8|Def. §4.8]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!theorem] Corollary §34.7: Exactly Three Conjugacy Classes: Order $3$ or $6$
 > A finite group with exactly three conjugacy classes has order $3$ or $6$, and both occur: $\mathbb{Z}/3\mathbb{Z}$ and $S_3$.

@@ -54,7 +54,7 @@ tags: [functional-analysis, math556]
 
 ^pf-11-1
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§7 Convex Sets and the Gauge#^prop-7-6|§7.6]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§7 Convex Sets and the Gauge#^prop-7-6|§7.6]]
 
 > [!remark] Remark: Relation to the Functions $p$ of Chapter 2
 > By (a), every [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] statement applies with $p = \|\cdot\|$ or $p = C\|\cdot\|$. The converse of (a) is false, and not only because a positive homogeneous subadditive $p$ may take negative values: even a non-negative one with $p(x) = 0 \Rightarrow x = 0$ need not be a norm, since nothing forces $p(-x) = p(x)$. On $\mathbb{R}$, $p(x) = \max\{x, 0\} + 2\max\{-x, 0\}$ is such a function, with $p(1) = 1 \neq 2 = p(-1)$. By (b) and (c), norms on a real space correspond to convex sets with $0$ interior that contain no full ray and are symmetric; the unit ball is the geometric picture of the norm, as with the disk, square and diamond of Example [[§5 Statement and Motivation#^ex-5-2|§5.2]].
@@ -227,14 +227,12 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > - The topological definition (complement open) and its sequential characterization in metric spaces: [[§13 Some Topological Concepts in Metric Spaces#^def-13-7|451 Def. §13.7]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|451 §13.5]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-7|452 Def. §2.7]].
 > - The topological definition (complement open): [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]; in metric spaces it agrees with this one by [[§8 Interior and Closure#^cor-8-5|590 Cor. §8.5]] and the Sequence Lemma ([[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]]).
 
-> [!definition] Definition §11.7: Closure; Dense Subset
+> [!definition] Definition §11.7: Closure
 > Let $S$ be a subset of a normed linear space (or metric space) $X$. The **closure** $\overline{S}$ of $S$ is the set of all limits of convergent sequences in $S$:
 >
 > $$
 > \overline{S} = \{ x \in X : x = \lim_{n \to \infty} s_n \text{ for some sequence } s_n \in S \} .
 > $$
->
-> $S$ is **dense** in $X$ if $\overline{S} = X$.
 >
 > *Lax: §5.1, before Thm 2; “dense” in the definition of separable space*
 
@@ -242,7 +240,17 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 > [!remark]- Connections
 > - The closure as smallest closed superset, and its sequential description: [[§13 Some Topological Concepts in Metric Spaces#^def-13-8|451 Def. §13.8]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-8|452 Def. §2.8]].
-> - Topological closure and density: [[§8 Interior and Closure#^def-8-2|590 Def. §8.2]] (smallest closed superset), described by limits of sequences in metric spaces by the Sequence Lemma ([[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]]); dense: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]].
+> - Topological closure: [[§8 Interior and Closure#^def-8-2|590 Def. §8.2]] (smallest closed superset), described by limits of sequences in metric spaces by the Sequence Lemma ([[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]]).
+
+> [!definition] Definition §11.8: Dense Subset
+> Let $S$ be a subset of a normed linear space (or metric space) $X$, with closure $\overline{S}$ (Definition [[§11 Normed Linear Spaces#^def-11-7|§11.7]]). $S$ is **dense** in $X$ if $\overline{S} = X$.
+>
+> *Lax: §5.1, before Thm 2; “dense” in the definition of separable space*
+
+^def-11-8
+
+> [!remark]- Connections
+> - Topological density: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]].
 
 > [!theorem] Proposition §11.6: Properties of the Closure
 > Let $S$ be a subset of a normed linear space $X$.
@@ -284,13 +292,21 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > [!remark]- Connections
 > - The (algebraic) span it closes up: [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]].
 
-> [!definition] Definition §11.11: Open Ball; Metric Interior Point
-> For $x_0 \in X$ and $r > 0$, the **open ball** of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$. A point $x_0$ of a subset $K \subset X$ is a **metric interior point** of $K$ if $B_r(x_0) \subset K$ for some $r > 0$.
+> [!definition] Definition §11.10: Open Ball
+> For $x_0 \in X$ and $r > 0$, the **open ball** of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$.
+
+^def-11-10
+
+> [!remark]- Connections
+> - Balls in a metric space and in $\mathbb{R}^n$: [[§12 Metric Topology#^def-12-2|590 Def. §12.2]], [[§2 Open and Closed Sets#^def-2-1|452 Def. §2.1]].
+
+> [!definition] Definition §11.11: Metric Interior Point
+> A point $x_0$ of a subset $K \subset X$ is a **metric interior point** of $K$ if $B_r(x_0) \subset K$ for some $r > 0$ (Definition [[§11 Normed Linear Spaces#^def-11-10|§11.10]]).
 
 ^def-11-11
 
 > [!remark]- Connections
-> - Balls in a metric space and in $\mathbb{R}^n$: [[§12 Metric Topology#^def-12-2|590 Def. §12.2]], [[§2 Open and Closed Sets#^def-2-1|452 Def. §2.1]], [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]] (interior points).
+> - Interior points in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]].
 
 > [!theorem] Proposition §11.7: Metric Interior Points are Interior Points
 > Let $K$ be a subset of a normed linear space $X$. Every metric interior point of $K$ is an interior point of $K$ in the sense of Definition [[§7 Convex Sets and the Gauge#^def-7-1|§7.1]].
@@ -302,7 +318,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 ^pf-11-7
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-11|Def. §11.11]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-11|Def. §11.11]], [[§11 Normed Linear Spaces#^def-11-10|Def. §11.10]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 > [!example] Example §11.2: An Interior Point that is Not a Metric Interior Point
 > In $\mathbb{R}^2$ with the Euclidean norm, let $P = \{ (s, s^2) : s \neq 0 \}$ and $K = \mathbb{R}^2 \setminus P$. Then $0 \in K$ is an interior point of $K$ but not a metric interior point.

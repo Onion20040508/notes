@@ -9,15 +9,19 @@ tags: [group-theory, math493]
 
 *Reference: Pinter Ch. 7, Ch. 8.*
 
-> [!definition] Definition §10.1: Two-Line and Cycle Notation
+> [!definition] Definition §10.1: Two-Line Notation
 > A permutation $\sigma \in S_n$ is determined by the list $\sigma(1), \ldots, \sigma(n)$. **Two-line notation** records this as
 > $\sigma = \begin{pmatrix} 1 & 2 & \cdots & n \\ \sigma(1) & \sigma(2) & \cdots & \sigma(n) \end{pmatrix}$.
-> **Cycle notation** writes $(a_1\ a_2\ \cdots\ a_r)$ for the permutation sending $a_1 \mapsto a_2 \mapsto \cdots \mapsto a_r \mapsto a_1$ and fixing every other element; such a permutation is an **$r$-cycle**, and a $2$-cycle $(a\ b)$ is called a **transposition**. The identity is written $e$ (Worksheet 1 writes $1$; some authors write $()$). A cycle can be started at any of its entries: $(1\,2\,3) = (2\,3\,1) = (3\,1\,2)$.
 
 ^def-10-1
 
 > [!remark]- Connections
 > - Axler's permutations as lists, used for determinants: [[§36 Alternating Multilinear Forms#^ladr-9-31|LADR 9.31]].
+
+> [!definition] Definition §10.2: Cycle Notation
+> **Cycle notation** writes $(a_1\ a_2\ \cdots\ a_r)$ for the permutation sending $a_1 \mapsto a_2 \mapsto \cdots \mapsto a_r \mapsto a_1$ and fixing every other element; such a permutation is an **$r$-cycle**, and a $2$-cycle $(a\ b)$ is called a **transposition**. The identity is written $e$ (Worksheet 1 writes $1$; some authors write $()$). A cycle can be started at any of its entries: $(1\,2\,3) = (2\,3\,1) = (3\,1\,2)$.
+
+^def-10-2
 
 > [!example] Example §10.1: The Group $S_3$ in Detail
 > **Elements.** $|S_3| = 3! = 6$:

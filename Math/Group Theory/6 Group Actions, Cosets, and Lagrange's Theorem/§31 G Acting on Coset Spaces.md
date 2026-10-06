@@ -52,7 +52,7 @@ tags: [group-theory, math493]
 
 ^pf-31-1
 
-*Uses:* [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^cor-26-3|§26.3]]
+*Uses:* [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-3|Def. §27.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^cor-26-3|§26.3]]
 
 ![[m493-29-1.svg]]
 *$S_3$ acting on $S_3/H$ for $H = \{e, (1\,2)\}$: the three points are the three left cosets. Single elements carry $eH$ to each other coset, and $(1\,2\,3) = (2\,3)(1\,3)^{-1}$ carries $(1\,3)H$ to $(2\,3)H$, as in the proof of transitivity. The stabilizers (red) are the conjugates $g'H(g')^{-1}$, one for each point.*

@@ -125,22 +125,36 @@ In each example, associativity is inherited from a known associative operation (
 > - Computational version: invertible matrices and their inverses by row reduction, [[§14 The Inverse of a Matrix#^def-14-1|235 Def. §14.1]]; the determinant facts used, [[§25 Properties of Determinants#^thm-25-3|235 Thm. §25.3]] (invertible iff det ≠ 0) and [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|235 Thm. §26.4]] (det is multiplicative).
 > - Concrete action of GL₂(ℂ): [[§99★ Linear Fractional Transformations#^prop-99-5|342 Prop. §99.5]] (composing linear fractional transformations multiplies their coefficient matrices, so they form a group, the image of GL₂(ℂ)).
 
-> [!definition] Definition §3.7: Special Linear, Orthogonal, and Special Orthogonal Groups
-> For a field $k$ and $n \geq 1$:
-> - the **special linear group** is $SL_n(k) = \{A \in GL_n(k) : \det A = 1\}$;
-> - the **orthogonal group** is $O(n) = O_n(\mathbb{R}) = \{A \in GL_n(\mathbb{R}) : A^{\mathsf{T}}A = I_n\}$;
-> - the **special orthogonal group** is $SO(n) = O(n) \cap SL_n(\mathbb{R})$.
->
-> Each is a subgroup of the corresponding general linear group (verified in [[§5 A Zoo of Subgroups#^ex-5-4|Ex. §5.4]], where $SO(2)$ is identified with the rotations of the plane).
+> [!definition] Definition §3.7: Special Linear Group
+> For a field $k$ and $n \geq 1$, the **special linear group** is $SL_n(k) = \{A \in GL_n(k) : \det A = 1\}$.
 
 ^def-3-7
 
 > [!remark]- Connections
-> - Real orthogonal matrices are the real unitary matrices: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|Characterizations of unitary matrices]] (condition $Q^*Q = QQ^* = I$); rotations: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-52|Rotation of R²]].
-> - The same groups as topological groups and manifolds in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|591 Def. §11.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|591 Def. §11.8]], and [[Classical Groups Are Manifolds]] (591 Thm. §11.6; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
+> - The same group as a topological group and manifold in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|591 Def. §11.6]], and [[Classical Groups Are Manifolds]] (591 Thm. §11.6; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
+
+> [!definition] Definition §3.8: Orthogonal Group
+> For $n \geq 1$, the **orthogonal group** is $O(n) = O_n(\mathbb{R}) = \{A \in GL_n(\mathbb{R}) : A^{\mathsf{T}}A = I_n\}$.
+
+^def-3-8
+
+> [!remark]- Connections
+> - Real orthogonal matrices are the real unitary matrices: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|Characterizations of unitary matrices]] (condition $Q^*Q = QQ^* = I$).
+> - The same group as a topological group and manifold in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]], and [[Classical Groups Are Manifolds]].
 > - Used in Relativity: the Lorentz group is defined as $O(n)$ is, with the metric $\eta$ in place of the identity — [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-1|REL Def. §B1.2.1]]; the rotations sit inside it, with $R^{\mathsf T}R = 1$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]].
 > - Computational version: [[§51 Orthogonal Sets#^def-51-5|235 Def. §51.5]] and [[§51 Orthogonal Sets#^prop-51-6|235 Prop. §51.6]] (orthogonal matrices have orthonormal columns and rows and det ±1, with worked examples).
+
+> [!definition] Definition §3.9: Special Orthogonal Group
+> The **special orthogonal group** is $SO(n) = O(n) \cap SL_n(\mathbb{R})$.
+
+^def-3-9
+
+> [!remark]- Connections
+> - Rotations in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-52|Rotation of R²]].
+> - The same group as a topological group and manifold in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|591 Def. §11.8]], and [[Classical Groups Are Manifolds]].
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ acting on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]]; it is covered twice by $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
+
+Each of $SL_n(k)$, $O(n)$ and $SO(n)$ is a subgroup of the corresponding general linear group (verified in [[§5 A Zoo of Subgroups#^ex-5-4|Ex. §5.4]], where $SO(2)$ is identified with the rotations of the plane).
 
 > [!example] Example §3.1: Groups and Non-Groups
 > Deciding whether $(G, \cdot)$ is a group usually comes down to identity and inverses; associativity is inherited from arithmetic or composition.

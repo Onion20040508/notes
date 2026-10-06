@@ -9,10 +9,10 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: quotients — The coset space $G/H$ as a topological space: open quotient, Hausdorff when $H$ is closed, and homeomorphic to a homogeneous space. The Grassmannians are the payoff. The two threads meet in the next chapter.*
 
-Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]] and [[§14 Homogeneous Spaces#^def-14-7|Def. §14.7]] are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
+Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spaces#^def-14-6|§14.6]] and [[§14 Homogeneous Spaces#^def-14-7|Def. §14.7]] are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
 
 > [!definition] Definition §15.1: The Quotient Topology on a Coset Space
-> Let $G$ be a topological group and $H \le G$ a subgroup. The **quotient topology** on $G/H$ is the quotient topology induced by the canonical projection $\pi$ of Definition [[§14 Homogeneous Spaces#^def-14-7|§14.7]], in the sense of Definition [[§4 Quotient Spaces and Open Maps#^def-4-1|§4.1]]:
+> Let $G$ be a topological group and $H \le G$ a subgroup. The **quotient topology** on $G/H$ is the quotient topology induced by the canonical projection $\pi$ of Definition [[§14 Homogeneous Spaces#^def-14-7|§14.7]], in the sense of Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]]:
 >
 > $$
 > W \subseteq G/H \text{ is open} \iff \pi^{-1}(W) \subseteq G \text{ is open in } G.
@@ -42,9 +42,9 @@ Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]] and [[§14 Homogeneous 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* $(1 \Leftrightarrow 2)$ By Definition [[§14 Homogeneous Spaces#^def-14-7|§14.7]] the fibre over a point $gH \in W$ is the coset $gH$, so $\pi^{-1}(W) = \bigcup_{gH \in W} gH$; now apply Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]].
 >
-> $(1 \Leftrightarrow 3)$ A subset $U \subseteq G$ satisfies $UH = U$ iff it is a union of cosets, i.e. iff it is saturated for the coset relation (Definition [[§4 Quotient Spaces and Open Maps#^def-4-5|§4.5]]): $UH = \bigcup_{u \in U} uH$ always contains $U$, and equals $U$ exactly when each $uH \subseteq U$. If $W$ is open, take $U = \pi^{-1}(W)$, which is open, saturated, and has $\pi(U) = W$ by surjectivity of $\pi$. Conversely if $U$ is open with $UH = U$, then $\pi^{-1}(\pi(U)) = U$ by saturation (Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]](4)), which is open, so $\pi(U)$ is open.
+> $(1 \Leftrightarrow 3)$ A subset $U \subseteq G$ satisfies $UH = U$ iff it is a union of cosets, i.e. iff it is saturated for the coset relation (Definition [[§4 Quotient Spaces and Open Maps#^def-4-6|§4.6]]): $UH = \bigcup_{u \in U} uH$ always contains $U$, and equals $U$ exactly when each $uH \subseteq U$. If $W$ is open, take $U = \pi^{-1}(W)$, which is open, saturated, and has $\pi(U) = W$ by surjectivity of $\pi$. Conversely if $U$ is open with $UH = U$, then $\pi^{-1}(\pi(U)) = U$ by saturation (Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]](4)), which is open, so $\pi(U)$ is open.
 >
-> *Openness of $\pi$.* For $U \subseteq G$ open, $\pi^{-1}(\pi(U)) = UH = \bigcup_{h \in H} Uh$, a union of translates of $U$. Right translation by $h$ is a homeomorphism of $G$ (it is continuous with continuous inverse, both restrictions of the multiplication of the topological group), so each $Uh$ is open and the union is open; hence $\pi(U)$ is open. Continuity and finest-topology are the general facts recorded after Definition [[§4 Quotient Spaces and Open Maps#^def-4-1|§4.1]].
+> *Openness of $\pi$.* For $U \subseteq G$ open, $\pi^{-1}(\pi(U)) = UH = \bigcup_{h \in H} Uh$, a union of translates of $U$. Right translation by $h$ is a homeomorphism of $G$ (it is continuous with continuous inverse, both restrictions of the multiplication of the topological group), so each $Uh$ is open and the union is open; hence $\pi(U)$ is open. Continuity and finest-topology are the general facts recorded after Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]].
 
 ^pf-15-1
 
@@ -136,6 +136,8 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 
 > [!remark]- Connections
 > - In 590 the circle is the quotient $[0,1]/(0 \sim 1)$ via the same map $e^{2\pi i t}$: [[§13 Quotient Topology#^ex-13-2|590 Ex. §13.2]].
+
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§33 Local Diffeomorphisms#^ex-33-1|the circle covered by a line]].
 
 > [!example] Example §15.2: A Continuous Bijection That Is Not a Homeomorphism
 > Let $G = \mathbb{R}_{\mathrm{disc}}$, the additive group of real numbers with the discrete topology — a topological group, since every map out of a discrete space is continuous. It acts on $X = \mathbb{R}$, with its usual topology, by translation, $t \cdot x = x + t$. The action is continuous, because $G \times X$ is the disjoint union of the open sets $\{t\} \times X$, on each of which it is a translation. It is transitive, the isotropy group of $0$ is $\{0\}$, and so $G/H = \mathbb{R}_{\mathrm{disc}}$. The map $\Phi : \mathbb{R}_{\mathrm{disc}} \to \mathbb{R}$, $t \mapsto t$, is a continuous bijection but not a homeomorphism: $\{0\}$ is open in $\mathbb{R}_{\mathrm{disc}}$ and not in $\mathbb{R}$. Here $X$ is Hausdorff and $G/H$ is not compact, so Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]](2) does not apply — and its conclusion genuinely fails.

@@ -9,8 +9,13 @@ tags: [functional-analysis, math556]
 
 *Stage: norms — Tools. Hölder's inequality, from Young's.*
 
-> [!definition] Definition §17.1: The Sequence Space $\ell$ and the $p$-Norms
-> Let $\ell$ denote the set of all infinite sequences $a = (a_1, a_2, \ldots)$ with $a_i \in \mathbb{F}$ ($= \mathbb{R}$ or $\mathbb{C}$). With termwise addition and scalar multiplication, $\ell$ is a linear space. For $a \in \ell$ define
+> [!definition] Definition §17.1: The Sequence Space $\ell$
+> Let $\ell$ denote the set of all infinite sequences $a = (a_1, a_2, \ldots)$ with $a_i \in \mathbb{F}$ ($= \mathbb{R}$ or $\mathbb{C}$). With termwise addition and scalar multiplication, $\ell$ is a linear space.
+
+^def-17-1
+
+> [!definition] Definition §17.2: The $p$-Norms
+> For $a \in \ell$ (Definition [[§17 Hölder's Inequality for Sequences#^def-17-1|§17.1]]) define
 >
 > $$
 > \|a\|_p = \Bigl( \sum_{i=1}^{\infty} |a_i|^p \Bigr)^{1/p} \quad (1 \le p < \infty), \qquad \|a\|_\infty = \sup_{i} |a_i|,
@@ -18,7 +23,7 @@ tags: [functional-analysis, math556]
 >
 > with values in $[0, \infty]$.
 
-^def-17-1
+^def-17-2
 
 > [!remark] Remark
 > On all of $\ell$ these are not norms: $\|a\|_p$ may be $+\infty$. They become norms on the subspace where they are finite, which is the space $\ell^p$ (to be [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|defined]] once [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|Minkowski's inequality]] is available). The name “$p$-norm” is used in advance, by abuse of language. For $\|\cdot\|_\infty$ the supremum, not the maximum, is needed: an infinite sequence need not attain its largest modulus.

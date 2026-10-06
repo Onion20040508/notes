@@ -77,7 +77,7 @@ tags: [group-theory, math493]
 *Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§37 Determinants#^ladr-9-57|LADR 9.57]], [[§47 Commutators#^prop-47-1|§47.1]]
 
 > [!definition] Definition §47.2: Commutator Subgroup
-> The **commutator subgroup** of $G$, written $[G,G]$ ([[493 Problem Set 4#^hw-4-4|PS 4.4]] writes $D(G)$), is the [[§4 Subgroups#^def-4-4|subgroup generated]] by all [[§47 Commutators#^def-47-1|commutators]] $aba^{-1}b^{-1}$, $a, b \in G$. (A product of commutators need not itself be a commutator, which is why the generated subgroup is taken.)
+> The **commutator subgroup** of $G$, written $[G,G]$ ([[493 Problem Set 4#^hw-4-4|PS 4.4]] writes $D(G)$), is the [[§4 Subgroups#^def-4-5|subgroup generated]] by all [[§47 Commutators#^def-47-1|commutators]] $aba^{-1}b^{-1}$, $a, b \in G$. (A product of commutators need not itself be a commutator, which is why the generated subgroup is taken.)
 
 ^def-47-2
 
@@ -103,7 +103,7 @@ tags: [group-theory, math493]
 
 ^pf-47-4
 
-*Uses:* [[§47 Commutators#^def-47-2|Def. §47.2]], [[§4 Subgroups#^def-4-4|Def. §4.4]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§47 Commutators#^prop-47-1|§47.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§47 Commutators#^def-47-1|Def. §47.1]]
+*Uses:* [[§47 Commutators#^def-47-2|Def. §47.2]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§47 Commutators#^prop-47-1|§47.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§47 Commutators#^def-47-1|Def. §47.1]]
 
 > [!theorem] Theorem §47.5: The Commutator Subgroup and Characters of $S_n$
 > For $n \geq 2$, $[S_n, S_n] = A_n$. Consequently every [[§46 Characters#^def-46-1|character]] $\chi: S_n \to A$ is trivial on $A_n$ and is determined by its value $c = \chi(\tau)$ on any transposition $\tau$, which satisfies $c^2 = e_A$: $\chi(\sigma) = e_A$ for even $\sigma$ and $\chi(\sigma) = c$ for odd $\sigma$.

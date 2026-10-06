@@ -9,14 +9,25 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: quotients — Manifolds built by gluing and identifying points. The quotient topology, and open maps and open relations — the tool that keeps quotients second countable.*
 
-> [!definition] Definition §4.1: Quotient Space and Quotient Topology
+> [!definition] Definition §4.1: Quotient Space
 > Let $X$ be a topological space and $\sim$ an equivalence relation on $X$. Form the **quotient space**
 >
 > $$
 > X/{\sim} \;=\; \{\, [x] \mid x \in X \,\}, \qquad [x] = \{y \in X \mid y \sim x\},
 > $$
 >
-> the set of equivalence classes, with the natural surjection $\pi : X \to X/{\sim}$, $x \mapsto [x]$. The **quotient topology** on $X/{\sim}$ is defined by:
+> the set of equivalence classes, with the natural surjection $\pi : X \to X/{\sim}$, $x \mapsto [x]$.
+>
+> *Lee: App. A, Subspaces, Products, Disjoint Unions, and Quotients*
+
+^def-4-1
+
+> [!remark]- Connections
+> - Home in MATH 590: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3 (Quotient Space)]].
+> - The quotient set $X/{\sim}$ of equivalence classes in 250: [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]]; the classes partition $X$: [[Equivalence Relations Are Partitions|250 Cor. §22.4]].
+
+> [!definition] Definition §4.2: Quotient Topology
+> With $X$, $\sim$ and $\pi$ as in [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1]], the **quotient topology** on $X/{\sim}$ is defined by:
 >
 > $$
 > W \subseteq X/{\sim} \text{ is open} \iff \pi^{-1}(W) \subseteq X \text{ is open in } X.
@@ -24,12 +35,11 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: App. A, Subspaces, Products, Disjoint Unions, and Quotients*
 
-^def-4-1
+^def-4-2
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3 (Quotient Space)]], with the topology of [[§13 Quotient Topology#^prop-13-1|590 §13.1]].
+> - Home in MATH 590: the topology of [[§13 Quotient Topology#^prop-13-1|590 §13.1]], [[§13 Quotient Topology#^def-13-2|590 Def. §13.2]].
 > - Reused for orbit spaces [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]] and coset spaces [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]].
-> - The quotient set $X/{\sim}$ of equivalence classes in 250: [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]]; the classes partition $X$: [[Equivalence Relations Are Partitions|250 Cor. §22.4]].
 
 > [!theorem] Proposition §4.1: The Quotient Topology Is the Finest Making $\pi$ Continuous
 > The projection $\pi : X \to X/{\sim}$ is continuous, and the quotient topology is the *finest* topology on $X/{\sim}$ with this property: every topology $\mathcal{T}'$ on $X/{\sim}$ for which $\pi$ is continuous is contained in it.
@@ -83,7 +93,7 @@ tags: [differentiable-manifolds, math591]
 *Two copies of $\mathbb{R}$ (blue) glued along every vertical pair $(x,1) \sim (x,2)$ with $x \neq 0$ — except the two origins (red). The glued pairs at $x = \tfrac1n$ crowd in on the unglued pair $\big((0,1),(0,2)\big)$: that is the sequence in $\Gamma$ whose limit escapes $\Gamma$ in [[§10 The Line with Two Origins#^ex-10-1|Example §10.1]], and downstairs it is why every neighbourhood of $0_1$ meets every neighbourhood of $0_2$.*
 
 > [!remark]- Connections
-> - The same space: [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§10 The Line with Two Origins#^rem-10-1|§1, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
+> - The same space: [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§10 The Line with Two Origins#^rem-10-1|§10, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 > - A quotient of the Hausdorff $\mathbb{R}$ that is not Hausdorff, in MATH 590: [[§13 Quotient Topology#^ex-13-5|590 Ex. §13.5]].
 
 > [!theorem] Proposition §4.2: The Two Constructions Agree
@@ -95,6 +105,8 @@ tags: [differentiable-manifolds, math591]
 > Set up the bijection as above and check that a subset downstairs is open for one topology iff it is open for the other; by [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|Proposition §15.1]]-style reasoning it is enough to compare the two on the basic sets of [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]], pulling each back along $\pi$. Assigned in lecture and left here.
 
 ^pf-4-2
+
+The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-4|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
 
 The single most useful fact about the quotient topology — that a map *out* of a quotient is continuous as soon as its composite with $\pi$ is, and that a map on $X$ constant on the classes descends to one on $X/{\sim}$ — is [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] below. It is stated in [[§5 Quotient Maps|§5, Quotient Maps]] because its natural generality is quotient maps rather than quotient spaces.
 
@@ -144,19 +156,24 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]]
 
-> [!definition] Definition §4.5: Saturation and Saturated Sets
+> [!definition] Definition §4.5: Saturation
 > Let $\sim$ be an equivalence relation on a set $X$ with quotient map $\pi : X \to X/{\sim}$. For any subset $U \subseteq X$, the **saturation** of $U$ is
 >
 > $$
 > \tilde U \;:=\; \pi^{-1}(\pi(U)) \;=\; \{\, y \in X \mid \exists\, x \in U \text{ such that } y \sim x \,\} \;=\; \bigcup_{x \in U} [x],
 > $$
 >
-> the union of all equivalence classes that meet $U$. A subset $S \subseteq X$ is **saturated** if $S = \tilde S$; equivalently, $S$ is a union of equivalence classes; equivalently, $S = \pi^{-1}(W)$ for some $W \subseteq X/{\sim}$ (namely $W = \pi(S)$).
+> the union of all equivalence classes that meet $U$.
 
 ^def-4-5
 
 ![[m591-3-3.svg]]
 *Saturation for the relation $x \sim y \iff x - y \in \mathbb{Z}$ on $\mathbb{R}$, whose quotient is the circle ([[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|Example §15.1]]). The saturation of the interval $U$ is the union of all its integer translates, $\pi^{-1}(\pi(U))$: everything the quotient map cannot tell apart from $U$. It is open because each translate is — the mechanism behind “orbit relations are open” ([[§13 Group Actions and Orbit Spaces#^lem-13-3|Lemma §13.3]]) — and its image $\pi(U)$ is an open arc of the circle.*
+
+> [!definition] Definition §4.6: Saturated Set
+> Let $\sim$ be an equivalence relation on a set $X$ with quotient map $\pi : X \to X/{\sim}$. A subset $S \subseteq X$ is **saturated** if $S = \tilde S$, its saturation ([[§4 Quotient Spaces and Open Maps#^def-4-5|Definition §4.5]]); equivalently, $S$ is a union of equivalence classes; equivalently, $S = \pi^{-1}(W)$ for some $W \subseteq X/{\sim}$ (namely $W = \pi(S)$).
+
+^def-4-6
 
 > [!remark]- Connections
 > - Saturated sets for cosets: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]]; for orbits: [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]].
@@ -166,7 +183,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 > 1. $U \subseteq \tilde U$, and $\tilde{\tilde U} = \tilde U$ (the saturation is saturated).
 > 2. $U \subseteq V \Rightarrow \tilde U \subseteq \tilde V$, and $\widetilde{\bigcup_\alpha U_\alpha} = \bigcup_\alpha \tilde U_\alpha$.
 > 3. $\pi(\tilde U) = \pi(U)$.
-> 4. The three descriptions of “saturated” in [[§4 Quotient Spaces and Open Maps#^def-4-5|Definition §4.5]] are equivalent, and for saturated $S$ one has $\pi^{-1}(\pi(S)) = S$.
+> 4. The three descriptions of “saturated” in [[§4 Quotient Spaces and Open Maps#^def-4-6|Definition §4.6]] are equivalent, and for saturated $S$ one has $\pi^{-1}(\pi(S)) = S$.
 
 ^lem-4-3
 
@@ -222,7 +239,7 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 *The diagonal construction in the proof below: each $A_j$ has some radius at every integer, and $W$ is chosen thinner than $A_j$ at the integer $j$, so the marked point $w_j \in A_j$ lies outside $W$.*
 
 > [!proof]+ Proof (PSet 1, Problem 4)
-> Write $\pi : \mathbb{R} \to X$, so $\pi^{-1}(x_0) = \mathbb{Z}$ and $\pi^{-1}(\pi(x)) = \{x\}$ for $x \notin \mathbb{Z}$. Two preliminary facts. (i) If $V \subseteq X$ is a neighborhood of $x_0$, then $\pi^{-1}(V)$ is open in $\mathbb{R}$ and contains $\mathbb{Z}$. (ii) If $U \subseteq \mathbb{R}$ is open with $\mathbb{Z} \subseteq U$, then $U$ is saturated—each class is either $\mathbb{Z} \subseteq U$ or a singleton $\{x\} \subseteq U$—so $\pi^{-1}(\pi(U)) = U$ and $\pi(U)$ is a neighborhood of $x_0$ ([[§4 Quotient Spaces and Open Maps#^def-4-5|Definition §4.5]] and [[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]](4)).
+> Write $\pi : \mathbb{R} \to X$, so $\pi^{-1}(x_0) = \mathbb{Z}$ and $\pi^{-1}(\pi(x)) = \{x\}$ for $x \notin \mathbb{Z}$. Two preliminary facts. (i) If $V \subseteq X$ is a neighborhood of $x_0$, then $\pi^{-1}(V)$ is open in $\mathbb{R}$ and contains $\mathbb{Z}$. (ii) If $U \subseteq \mathbb{R}$ is open with $\mathbb{Z} \subseteq U$, then $U$ is saturated—each class is either $\mathbb{Z} \subseteq U$ or a singleton $\{x\} \subseteq U$—so $\pi^{-1}(\pi(U)) = U$ and $\pi(U)$ is a neighborhood of $x_0$ ([[§4 Quotient Spaces and Open Maps#^def-4-6|Definition §4.6]] and [[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]](4)).
 >
 > Suppose $X$ were first countable at $x_0$, with $\{\widetilde U_j\}_{j \in \mathbb{N}}$ a countable basis of neighborhoods of $x_0$, and set $U_j = \pi^{-1}(\widetilde U_j)$, open with $\mathbb{Z} \subseteq U_j$ by (i). For each $j \in \mathbb{N}$ and $n \in \mathbb{Z}$, openness gives a radius $a_{j,n} \in (0, \tfrac14]$ with $(n - a_{j,n}, n + a_{j,n}) \subseteq U_j$; write $A_j = \bigcup_{n \in \mathbb{Z}} (n - a_{j,n}, n + a_{j,n}) \subseteq U_j$. (Radii are capped at $\tfrac14$ so that arms around distinct integers are disjoint: two of them reach out at most $\tfrac12 < 1$.)
 >

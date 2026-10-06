@@ -11,6 +11,23 @@ tags: [functional-analysis, math556]
 
 For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, since $\ell(y)$ is complex; the correct hypothesis and conclusion use the modulus, and the homogeneity of $p$ must be strengthened to complex scalars.
 
+> [!theorem] Lemma §9.1: Consequences of Complex Homogeneity
+> Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]] below. Then $p(0) = 0$, $p(-x) = p(x)$ and $p(x) \ge 0$ for all $x \in X$; and, regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
+
+^lem-9-1
+
+> [!proof]+ Proof
+> (Not covered in lecture.) (1) with $a = 0$ gives $p(0) = 0$, and with $a = -1$ gives $p(-x) = p(x)$. By (2), $0 = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$. Restricting (1) to real $a \ge 0$ gives positive homogeneity, and (2) is subadditivity.
+
+^pf-9-1
+
+*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]]
+
+> [!remark] Remark
+> Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]] below does not assume $p \ge 0$. Wu remarked that $p$ is “very often” non-negative; under complex homogeneity it is forced. (Not stated in lecture.)
+
+^rem-9-1
+
 > [!theorem] Theorem §9.2: Complex Hahn–Banach
 > Let $X$ be a linear space over $\mathbb{C}$ and $p : X \to \mathbb{R}$ a real-valued function satisfying
 > - (1) $p(ax) = |a|\, p(x)$ for all $a \in \mathbb{C}$, $x \in X$;
@@ -24,23 +41,6 @@ For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, sin
 
 > [!remark]- Connections
 > - The real theorem it reduces to: [[§5 Statement and Motivation#^thm-5-2|§5.2]]. Seminorms and norms satisfy (1)–(2): [[§11 Normed Linear Spaces#^def-11-2|Def. §11.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]].
-
-> [!theorem] Lemma §9.1: Consequences of Complex Homogeneity
-> Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]. Then $p(0) = 0$, $p(-x) = p(x)$ and $p(x) \ge 0$ for all $x \in X$; and, regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
-
-^lem-9-1
-
-> [!proof]+ Proof
-> (Not covered in lecture.) (1) with $a = 0$ gives $p(0) = 0$, and with $a = -1$ gives $p(-x) = p(x)$. By (2), $0 = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$. Restricting (1) to real $a \ge 0$ gives positive homogeneity, and (2) is subadditivity.
-
-^pf-9-1
-
-*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]]
-
-> [!remark] Remark
-> The theorem does not assume $p \ge 0$. Wu remarked that $p$ is “very often” non-negative; under complex homogeneity it is forced. (Not stated in lecture.)
-
-^rem-9-1
 
 > [!proof]+ Proof
 > As elsewhere, $\ell$ is the given functional on $Y$ and $L$ will be its extension. Two further names are needed because the real theorem is applied to one functional while a different one is being built: $u$ below plays the role of “$\ell$ on $Y$” in Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]], and $U$ the role of “$L$” there; the complex $L$ is then assembled from $U$. The auxiliary $v$ appears only in Step 2 and is never extended. Regard $X$ also as a linear space over $\mathbb{R}$ (same set, same addition, scalar multiplication restricted to real scalars); $Y$ is then a real subspace. “Real-linear” means linear with respect to real scalars; “complex-linear” with respect to complex scalars.

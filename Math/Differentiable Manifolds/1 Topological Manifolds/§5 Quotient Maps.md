@@ -26,7 +26,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > - Home in MATH 590: [[§13 Quotient Topology#^def-13-1|590 Def. §13.1]].
 
 > [!example] Example §5.1: Projections onto Quotient Spaces Are Quotient Maps
-> The projection $\pi : X \to X/{\sim}$ of [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1]] is a quotient map in the sense of [[§5 Quotient Maps#^def-5-1|Definition §5.1]]: it is surjective, and $W$ is open in $X/{\sim}$ if and only if $\pi^{-1}(W)$ is open in $X$, which is the definition of the quotient topology. The [[§5 Quotient Maps#^prop-5-4|next proposition]] says that these are the only examples.
+> The projection $\pi : X \to X/{\sim}$ of [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1]] is a quotient map in the sense of [[§5 Quotient Maps#^def-5-1|Definition §5.1]]: it is surjective, and $W$ is open in $X/{\sim}$ if and only if $\pi^{-1}(W)$ is open in $X$, which is the definition of the quotient topology ([[§4 Quotient Spaces and Open Maps#^def-4-2|Definition §4.2]]). The [[§5 Quotient Maps#^prop-5-4|next proposition]] says that these are the only examples.
 
 ^ex-5-1
 

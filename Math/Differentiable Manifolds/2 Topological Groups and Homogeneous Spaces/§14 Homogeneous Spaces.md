@@ -18,21 +18,26 @@ tags: [differentiable-manifolds, math591]
 
 ## Transitive Actions and Isotropy
 
-> [!definition] Definition §14.2: Transitive Action and Homogeneous Space
+> [!definition] Definition §14.1: Transitive Action
 > An action of $G$ on $X$ is **transitive** if there is only one orbit; equivalently,
 >
 > $$
 > \forall\, x, y \in X\ \ \exists\, g \in G \text{ such that } y = g \cdot x .
 > $$
 >
-> A topological space $X$ is **homogeneous** for the topological group $G$ if $G$ acts continuously and transitively on $X$.
+> *Lee: Ch. 7 and Example 21.15*
+
+^def-14-1
+
+> [!remark]- Connections
+> - Transitivity is defined in [[§27 Orbits#^def-27-1|493 Def. §27.1]]; the model transitive action is $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
+
+> [!definition] Definition §14.2: Homogeneous Space
+> A topological space $X$ is **homogeneous** for the topological group $G$ if $G$ acts continuously and transitively on $X$ ([[§14 Homogeneous Spaces#^def-14-1|Definition §14.1]]).
 >
 > *Lee: Ch. 7 and Example 21.15*
 
 ^def-14-2
-
-> [!remark]- Connections
-> - Transitivity is defined in [[§27 Orbits#^def-27-1|493 Def. §27.1]]; the model transitive action is $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
 
 > [!remark] Remark
 > For a transitive action the orbit space $X/G$ is a single point, “which is not that interesting.” The interesting quotient is a different one: $X$ itself will be exhibited as a quotient $G/H$ of the *group*, by the action of a subgroup $H$ on $G$.
@@ -145,14 +150,24 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^rem-14-3
 
-> [!definition] Definition §14.5: Left Cosets and the Coset Space
+> [!definition] Definition §14.5: Left Coset
 > Let $H \le G$ be a subgroup of a group $G$. The **left coset** of $g \in G$ is
 >
 > $$
 > gH \;=\; \{\, gh \mid h \in H \,\} \;\subseteq\; G,
 > $$
 >
-> the translate of $H$ by $g$. The **coset space** $G/H$ is the set whose elements are the left cosets,
+> the translate of $H$ by $g$.
+>
+> *Lee: proof of Theorem 21.17*
+
+^def-14-5
+
+> [!remark]- Connections
+> - Home: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2 (Left and Right Cosets)]].
+
+> [!definition] Definition §14.6: The Coset Space
+> Let $H \le G$ be a subgroup of a group $G$. The **coset space** $G/H$ is the set whose elements are the left cosets ([[§14 Homogeneous Spaces#^def-14-5|Definition §14.5]]),
 >
 > $$
 > G/H \;=\; \{\, gH \mid g \in G \,\}.
@@ -162,10 +177,10 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 >
 > *Lee: proof of Theorem 21.17*
 
-^def-14-5
+^def-14-6
 
 > [!remark]- Connections
-> - Home: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2 (Left and Right Cosets)]]; the group case (normal $H$) is [[§40 Quotient Groups|493 §40]], and in 590 [[§27 Free Groups and Presentations#^def-27-9|590 Def. §27.9]].
+> - The group case (normal $H$) is [[§40 Quotient Groups|493 §40]], and in 590 [[§27 Free Groups and Presentations#^def-27-9|590 Def. §27.9]].
 
 > [!theorem] Lemma §14.3: When Two Cosets Coincide
 > $gH = g'H \iff g^{-1}g' \in H$. Consequently the left cosets partition $G$.

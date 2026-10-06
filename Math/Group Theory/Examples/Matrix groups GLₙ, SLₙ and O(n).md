@@ -7,7 +7,7 @@ tags: ["math493", "workhorse"]
 The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a field $k$, with its subgroups $SL_n(k)$ (determinant $1$), $O(n)$ ($A^{\mathsf{T}}A = I$) and $SO(n)$. Alongside $S_n$ it is one of the two fundamental families of non-abelian groups, and it contains copies of essentially every group in the course, since every finite group embeds in some $GL_n(k)$ through permutation matrices. The determinant is the model homomorphism and character: its kernel $SL_n$ is normal, $GL_n/SL_n \cong k^\times$, and conjugacy in $GL_n$ is similarity of matrices. Its uses in MATH 493:
 
 - $GL_n(k)$ is a group, non-abelian for $n \geq 2$ ([[§3 Basic Examples of Groups#^def-3-6|§3]])
-- The subgroups $SL_n(k)$, $O(n)$ and $SO(n)$ ([[§3 Basic Examples of Groups#^def-3-7|§3]])
+- The subgroups $SL_n(k)$, $O(n)$ and $SO(n)$ ([[§3 Basic Examples of Groups#^def-3-7|§3.7]], [[§3 Basic Examples of Groups#^def-3-8|§3.8]], [[§3 Basic Examples of Groups#^def-3-9|§3.9]])
 - $S_n$ and $GL_n(k)$ are the two fundamental non-abelian families ([[§3 Basic Examples of Groups#^rem-3-2|§3]])
 - A zoo of subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$ ([[§5 A Zoo of Subgroups#^ex-5-4|§5]])
 - $GL_n(\mathbb{R})$ contains copies of essentially every group we meet ([[§5 A Zoo of Subgroups#^rem-5-3|§5]])
@@ -44,6 +44,10 @@ Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SL
 
 ## The subgroups $SL_n(k)$, $O(n)$ and $SO(n)$
 ![[§3 Basic Examples of Groups#^def-3-7]]
+
+![[§3 Basic Examples of Groups#^def-3-8]]
+
+![[§3 Basic Examples of Groups#^def-3-9]]
 
 ## $S_n$ and $GL_n(k)$ are the two fundamental non-abelian families
 ![[§3 Basic Examples of Groups#^rem-3-2]]

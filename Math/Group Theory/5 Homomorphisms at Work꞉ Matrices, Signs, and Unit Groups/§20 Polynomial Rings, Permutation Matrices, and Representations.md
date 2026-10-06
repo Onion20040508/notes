@@ -40,9 +40,14 @@ tags: [group-theory, math493]
 > (\sigma \cdot f)(x_1, \ldots, x_n) = f\big(x_{\sigma(1)}, x_{\sigma(2)}, \ldots, x_{\sigma(n)}\big).
 > $$
 >
-> Concretely, $\sigma$ renames the variables according to the permutation. A polynomial $f$ is **symmetric** if $\sigma \cdot f = f$ for every $\sigma \in S_n$.
+> Concretely, $\sigma$ renames the variables according to the permutation.
 
 ^def-20-3
+
+> [!definition] Definition §20.4: Symmetric Polynomial
+> A polynomial $f$ is **symmetric** if $\sigma \cdot f = f$ for every $\sigma \in S_n$.
+
+^def-20-4
 
 > [!remark]- Connections
 > - The companion notion, *alternating*: [[§21 The Sign Homomorphism and the Alternating Group#^def-21-4|Alternating Polynomial]]; $A_n$ as the stabilizer of $\Delta$: [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-10|Cor. §21.10]].
@@ -195,11 +200,11 @@ tags: [group-theory, math493]
 ^prop-20-5
 
 > [!proof]+ Proof
-> On basis vectors, $M(\sigma)M(\tau) e_i = M(\sigma) e_{\tau(i)} = e_{\sigma(\tau(i))} = e_{(\sigma\tau)(i)} = M(\sigma\tau) e_i$; two matrices agreeing on a basis are equal. $M(e)$ fixes every $e_i$, so $M(e) = I_n$. Then $M(\sigma)M(\sigma^{-1}) = M(\sigma\sigma^{-1}) = I_n$ and likewise on the other side. For the transpose: $M(\sigma)_{ji} = 1$ iff $j = \sigma(i)$ iff $i = \sigma^{-1}(j)$ iff $M(\sigma^{-1})_{ij} = 1$, so $M(\sigma^{-1}) = M(\sigma)^{\mathsf{T}}$; in particular permutation matrices are [[§3 Basic Examples of Groups#^def-3-7|orthogonal]]. Injectivity: if $M(\sigma) = M(\tau)$ then $e_{\sigma(i)} = e_{\tau(i)}$ for all $i$, so $\sigma = \tau$.
+> On basis vectors, $M(\sigma)M(\tau) e_i = M(\sigma) e_{\tau(i)} = e_{\sigma(\tau(i))} = e_{(\sigma\tau)(i)} = M(\sigma\tau) e_i$; two matrices agreeing on a basis are equal. $M(e)$ fixes every $e_i$, so $M(e) = I_n$. Then $M(\sigma)M(\sigma^{-1}) = M(\sigma\sigma^{-1}) = I_n$ and likewise on the other side. For the transpose: $M(\sigma)_{ji} = 1$ iff $j = \sigma(i)$ iff $i = \sigma^{-1}(j)$ iff $M(\sigma^{-1})_{ij} = 1$, so $M(\sigma^{-1}) = M(\sigma)^{\mathsf{T}}$; in particular permutation matrices are [[§3 Basic Examples of Groups#^def-3-8|orthogonal]]. Injectivity: if $M(\sigma) = M(\tau)$ then $e_{\sigma(i)} = e_{\tau(i)}$ for all $i$, so $\sigma = \tau$.
 
 ^pf-20-5
 
-*Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|Def. §20.6]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|§20.2]], [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]]
+*Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|Def. §20.6]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|§20.2]], [[§3 Basic Examples of Groups#^def-3-8|Def. §3.8]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]]
 
 > [!remark]- Connections
 > - Linear-algebra home: matrix of a product is the product of the matrices, [[§9 Matrices#^ladr-3-43|LADR 3.43]]; orthogonal (real unitary) matrices, [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
@@ -214,8 +219,8 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - $\det M(\sigma) = \pm 1$ is proved in [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]]; multiplicativity of $\det$: [[§37 Determinants#^ladr-9-49|LADR 9.49]].
 
-> [!definition] Definition §20.7: Representation; Permutation Representation
-> A **representation** of a group $G$ is a homomorphism $G \to GL_n(k)$ for some field $k$ and some $n \geq 1$ (more generally $G \to GL(V)$ for a $k$-vector space $V$). The homomorphism $\sigma \mapsto M(\sigma)$, $S_n \to GL_n(k)$, of [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|the proposition just proved]] is the **permutation representation** of $S_n$: it realizes $S_n$ as a group of matrices, with composition of permutations becoming matrix multiplication, and its image is the subgroup of permutation matrices listed among the subgroups of $GL_n(\mathbb{R})$ in [[§5 A Zoo of Subgroups#^ex-5-4|WS 1.7]]. Representations in general are the subject of the second half of the course.
+> [!definition] Definition §20.7: Representation
+> A **representation** of a group $G$ is a homomorphism $G \to GL_n(k)$ for some field $k$ and some $n \geq 1$ (more generally $G \to GL(V)$ for a $k$-vector space $V$). Representations in general are the subject of the second half of the course.
 
 ^def-20-7
 
@@ -225,6 +230,11 @@ tags: [group-theory, math493]
 > - Used in Relativity: each tensor type is a representation of the Lorentz group, which acts on type (m, n) components by m factors of the matrix and n of its inverse transpose — [[§B2.2 Tensors and the Covariance Principle|REL §B2.2]] (Connections), [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 > - Used in Quantum Mechanics: the spin-½ rotation matrices are a representation of $SU(2)$, not of $SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]]; the product of two angular-momentum representations decomposed into irreducible ones — [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients#^thm-c7-1-2|QM Theorem §C7.1.2]]; the symmetric group acting on the kets of $N$ particles — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^thm-c12-1-1|QM Theorem §C12.1.1]].
 > - Used in Quantum Field Theory: representations of Lie groups and Lie algebras on a carrier space, with equivalence, invariant subspaces, irreducibility and unitarity — [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-3|QFT Def. §C3.1.3]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-4|QFT Def. §C3.1.4]]; and Schur's lemma, which these notes do not contain yet (the representation theory of the second half of the course), so its home in the vault is [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-3|QFT Theorem §C3.1.3]].
+
+> [!definition] Definition §20.8: Permutation Representation
+> The homomorphism $\sigma \mapsto M(\sigma)$, $S_n \to GL_n(k)$, of [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|the proposition just proved]] is the **permutation representation** of $S_n$: it realizes $S_n$ as a group of matrices, with composition of permutations becoming matrix multiplication, and its image is the subgroup of permutation matrices listed among the subgroups of $GL_n(\mathbb{R})$ in [[§5 A Zoo of Subgroups#^ex-5-4|WS 1.7]].
+
+^def-20-8
 
 > [!remark] Remark: Group Actions
 > The three ways $S_n$ has appeared — on $\{1, \ldots, n\}$, on $k^n$ via $M(\sigma)$, and on $k[x_1, \ldots, x_n]$ — are instances of a single notion, that of a *group action*, developed in [[· 6 Group Actions, Cosets, and Lagrange's Theorem|Chapter 6]]; the compatibility statements proved above are exactly the [[§25 Actions#^def-25-1|action axioms]].

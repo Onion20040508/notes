@@ -51,7 +51,7 @@ tags: [group-theory, math493]
 
 ^pf-32-2
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§21 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§21 Orthonormal Bases#^ladr-6-32|LADR 6.32]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-8|Def. §3.8]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-2|Def. §27.2]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§21 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§21 Orthonormal Bases#^ladr-6-32|LADR 6.32]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
 
 ![[m493-30-2.svg]]
 *Left: $GL_3(\mathbb{R})$ has two orbits on $\mathbb{R}^3$, the origin (red) and everything else (blue); any $v \neq 0$ is reached from $e_1$ by an invertible $P$ with first column $v$. Right: $O_3(\mathbb{R})$ preserves length, so its orbits are the origin and the spheres $S_r$ (blue), and $e_1$ reaches only the vectors $w$ with $|w| = 1$. The stabilizer of $e_1$ acts as $O_2(\mathbb{R})$ on the plane $e_1^\perp$, moving the great circle $e_1^\perp \cap S_1$ (red) within itself.*
@@ -93,7 +93,7 @@ tags: [group-theory, math493]
 
 ^pf-32-3
 
-*Uses:* [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]
+*Uses:* [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-3|Def. §27.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]
 
 ![[m493-30-1.svg]]
 *Left: a net of the three-coloured cube from lecture (opposite faces share a colour). Right: the three kinds of rotation axis, each through one of the worksheet's points — face axis through $(1,0,0)$, edge axis through $(1,1,0)$, vertex axis through $(1,1,1)$ — with the order of the rotations about it.*
@@ -115,7 +115,7 @@ tags: [group-theory, math493]
 
 ^pf-32-4
 
-*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§25 Actions#^prop-25-4|§25.4]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|§20.2]], [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]
+*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§25 Actions#^def-25-5|Def. §25.5]], [[§25 Actions#^prop-25-4|§25.4]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|§20.2]], [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]
 
 > [!example] Example §32.1: A Non-Faithful Action: Colours
 > The action on the three colours (pairs of opposite faces) is not faithful: every $180^\circ$ rotation about a face axis carries each pair of opposite faces to itself, so these non-identity rotations lie in the kernel of $G \to S_3$.
@@ -153,6 +153,8 @@ $S_3$ is the chapter's test case for cosets: its left and right cosets of $\lang
 ![[§28 Left and Right Cosets#^ex-28-1]]
 
 ![[§28 Left and Right Cosets#^ex-28-2]]
+
+![[§29 The Index and Lagrange's Theorem#^ex-29-2]]
 
 ![[§30 Orbit–Stabilizer#^ex-30-2]]
 

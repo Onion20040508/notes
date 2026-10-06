@@ -26,7 +26,7 @@ tags: [functional-analysis, math556]
 
 Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an inequality in $[0,\infty]$, followed by a cancellation that needs $\|a+b\|_p < \infty$; when that is not yet known, the computation is applied to truncations. The order below follows hers.
 
-> [!proof]+ Proof of Theorem §13.1
+> [!proof]+ Proof of Theorem §18.1
 > **Case $p = 1$.** $\sum_i |a_i + b_i| \le \sum_i (|a_i| + |b_i|) = \|a\|_1 + \|b\|_1$, by the termwise triangle inequality and addition of series of non-negative terms.
 >
 > **Case $p = \infty$.** For every $i$, $|a_i + b_i| \le |a_i| + |b_i| \le \|a\|_\infty + \|b\|_\infty$; take the supremum over $i$.
@@ -169,7 +169,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 > [!remark]- Connections
 > - For functions the inclusion runs the other way on sets of finite measure: [[§34 Normed Linear Spaces and Lᵖ Spaces#^cor-34-6|551 §34.6]].
 > - The same unit-ball picture: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]].
-> - (c) is cited in [[§14 New Normed Spaces from Old#^rem-14-2|Remark §12]] (Finite Dimension is Necessary).
+> - (c) is cited in [[§14 New Normed Spaces from Old#^rem-14-2|Remark §14]] (Finite Dimension is Necessary).
 
 ## Completeness of ℓᵖ
 

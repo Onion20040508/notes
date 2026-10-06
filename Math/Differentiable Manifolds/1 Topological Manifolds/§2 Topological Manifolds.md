@@ -197,6 +197,8 @@ The fact that the dimension of a manifold is well-defined rests on the following
 > [!remark]- Connections
 > - The same space as a quotient: [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 
+The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-4|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
+
 > [!example] Example §2.2: Fails Locally Euclidean: $\mathbb{Q}$
 > $X = \mathbb{Q}$ with the subspace topology from $\mathbb{R}$ is second countable (subspace of a second countable space) and $T_2$ (metric space), but is not locally Euclidean of any dimension.
 >

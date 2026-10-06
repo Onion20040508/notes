@@ -56,7 +56,7 @@ tags: [group-theory, math493]
 
 ^pf-28-1
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-4|Def. §27.4]], [[§28 Left and Right Cosets#^def-28-2|Def. §28.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§25 Actions#^def-25-2|Def. §25.2]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-2|Def. §27.2]], [[§27 Orbits#^def-27-4|Def. §27.4]], [[§28 Left and Right Cosets#^def-28-2|Def. §28.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
 > [!remark]- Connections
 > - The other side of this picture, $G$ acting on the orbit space $G/H$: [[§31 G Acting on Coset Spaces#^prop-31-1|The Action of G on G∕H, §31.1]].

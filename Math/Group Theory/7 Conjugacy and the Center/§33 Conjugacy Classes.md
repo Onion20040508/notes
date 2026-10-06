@@ -16,7 +16,7 @@ tags: [group-theory, math493]
 > \operatorname{Conj}(g) := \{ h g h^{-1} : h \in G \},
 > $$
 >
-> the set of all conjugates of $g$ ([[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]]: $hgh^{-1} = c_h(g)$).
+> the set of all conjugates of $g$ ([[§18 Conjugation, Products, and Pointwise Products#^def-18-3|Def. §18.3]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|§18.2]]: $hgh^{-1} = c_h(g)$).
 >
 > *Source: WS 3*
 

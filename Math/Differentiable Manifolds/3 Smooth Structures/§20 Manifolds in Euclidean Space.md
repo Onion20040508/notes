@@ -20,12 +20,15 @@ tags: [differentiable-manifolds, math591]
 
 ^rem-20-1
 
-> [!definition] Definition §20.1: External and Internal Descriptions
-> Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. Near $p$, $X$ is described
-> - **externally** if there are an open $W \ni p$ in $\mathbb{R}^{n+k}$ and a smooth $F : W \to \mathbb{R}^k$ having $\vec 0$ as a regular value, with $X \cap W = F^{-1}(\vec 0)$ — the level-set or implicit description;
-> - **internally** if there are an open $V \subseteq \mathbb{R}^n$, an open $W \ni p$ in $\mathbb{R}^{n+k}$, and a smooth $\alpha : V \to \mathbb{R}^{n+k}$ which is a homeomorphism onto $X \cap W$ and whose Jacobian $D\alpha_q$ has rank $n$ at every $q \in V$ — the parametric description.
+> [!definition] Definition §20.1: External Description
+> Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. Near $p$, $X$ is described **externally** if there are an open $W \ni p$ in $\mathbb{R}^{n+k}$ and a smooth $F : W \to \mathbb{R}^k$ having $\vec 0$ as a regular value, with $X \cap W = F^{-1}(\vec 0)$ — the level-set or implicit description.
 
 ^def-20-1
+
+> [!definition] Definition §20.2: Internal Description
+> Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. Near $p$, $X$ is described **internally** if there are an open $V \subseteq \mathbb{R}^n$, an open $W \ni p$ in $\mathbb{R}^{n+k}$, and a smooth $\alpha : V \to \mathbb{R}^{n+k}$ which is a homeomorphism onto $X \cap W$ and whose Jacobian $D\alpha_q$ has rank $n$ at every $q \in V$ — the parametric description.
+
+^def-20-2
 
 > [!remark]- Connections
 > - With $n = 2$ and $k = 1$ the internal description is a regular parametrized surface, [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]] (452 does not require the homeomorphism condition).
@@ -51,26 +54,10 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
-> - The external description becomes the regular value theorem for manifolds, [[§35 Submanifolds#^thm-35-6|§35.6]], and adapted charts, [[§35 Submanifolds#^def-35-1|Def. §35.1]]; the internal one becomes the local normal form for immersions, [[§37 Immersions#^thm-37-1|§37.1]].
+> - The external description becomes the regular value theorem for manifolds, [[§35 Submanifolds#^thm-35-6|§35.6]], and adapted charts, [[§35 Submanifolds#^def-35-2|Def. §35.2]]; the internal one becomes the local normal form for immersions, [[§37 Immersions#^thm-37-1|§37.1]].
 > - The tangent space in both pictures: [[§25 The Geometric Tangent Space#^cor-25-4|§25.4]].
 
-> [!example] Example §24.1: The Circle in Three Descriptions
-> Near the point $p = (0,1)$ of $S^1 \subseteq \mathbb{R}^2$ (here $n = k = 1$):
-> - **External:** $F(x,y) = x^2 + y^2 - 1$, with $\nabla F = (2x, 2y) \neq 0$ on $S^1$, so $0$ is a regular value and $S^1 = F^{-1}(0)$.
-> - **Graph:** on $(-1,1) \times (0,\infty)$, $S^1$ is the graph of $h(x) = \sqrt{1-x^2}$ — which is the chart $\varphi_2$ of [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]], read backwards.
-> - **Internal:** $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $\theta \in (0,\pi)$, with $\alpha'(\theta) = (-\sin\theta, \cos\theta) \neq 0$ — the angle chart of [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]], read backwards.
->
-> The three are related exactly as in the proof: $h$ comes from $F$ by the implicit function theorem, and $\alpha$ comes from $h$ by $x \mapsto (x, h(x))$ followed by the reparametrization $x = \cos\theta$.
-
-^ex-24-1
-
-*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]]
-
-![[m591-9-1.svg]]
-*The circle described externally, as the zero set of $F = x^2 + y^2 - 1$ with nonvanishing gradient, and internally, as the image of $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $(0,\pi)$.*
-
-> [!remark]- Connections
-> - The same circle in 452: [[Unit circle and unit sphere]], solved for $y$ near $(0,1)$ by the implicit function theorem in [[§15 The Implicit Function Theorem#^ex-15-1|452 Ex. §15.1]].
+The circle in its three descriptions is collected in [[§24 The Circle|§24]].
 
 > [!remark] Remark: A Parametrization Is an Inverse Chart
 > “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]. Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
@@ -195,22 +182,6 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§35 Submanifolds#^lem-35-3|§35.3]].
 
-Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§39 Projective Spaces and the Hopf Fibration#^ex-39-1|Ex. §39.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
+Not stated in lecture; filled in because it is used repeatedly — tacitly in the proof of [[§24 The Circle#^prop-24-1|Proposition §24.1]], and explicitly for $S^n \to \mathbb{RP}^n$ in [[§39 Projective Spaces and the Hopf Fibration#^ex-39-1|Ex. §39.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 
-> [!theorem] Proposition §24.1: The Three Circle Atlases Define One Smooth Structure
-> The four-chart atlas ([[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]]), the angle atlas ([[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]]) and the stereographic atlas ([[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]]) on $S^1$ are pairwise compatible. All three generate the smooth structure that Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] gives $S^1 = F^{-1}(1)$, $F(x,y) = x^2 + y^2$.
-
-^prop-24-1
-
-> [!proof]+ Proof
-> For $S^1$ the graph charts of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] are the four projection charts, so that atlas $\mathcal{A}$ is the four-chart atlas. It suffices to show that every chart $(V, \chi)$ of the other two atlases is compatible with every chart $(U, \varphi)$ of $\mathcal{A}$. All such charts then lie in the maximal atlas $\overline{\mathcal{A}}$ (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]), and any two charts of an atlas are compatible — which is how Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]] is circumvented.
->
-> Each such $\chi$ has two properties.
-> - (a) $\chi^{-1}$ is smooth as a map into $\mathbb{R}^2$: it is $\theta \mapsto (\cos\theta, \sin\theta)$ for the angle charts, $u \mapsto \big(2u,\, u^2 - 1\big)/(u^2+1)$ for $\sigma_N$, and similarly for $\sigma_S$.
-> - (b) $\chi$ is the restriction to $V$ of a smooth function $\hat\chi$ on an open subset of $\mathbb{R}^2$ containing $V$. For $\sigma_N = x/(1-y)$ take $\{y < 1\}$, and for $\sigma_S = x/(1+y)$ take $\{y > -1\}$. For an angle chart take a smooth branch of the argument on the plane minus a closed ray: for values in $(-\pi, \pi)$, $\theta = 2\arctan\big(y/(x + \sqrt{x^2+y^2})\big)$, and other ranges follow by rotating and adding a constant.
->
-> On the overlap, $\varphi \circ \chi^{-1} = \pi \circ \chi^{-1}$ with $\pi$ a linear projection, which is smooth by (a). And $\chi \circ \varphi^{-1} = \hat\chi \circ \varphi^{-1}$ is smooth by (b), $\varphi^{-1}$ being a smooth parametrization.
-
-^pf-24-1
-
-*Uses:* [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]], [[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§17 Differentiable Structures#^prop-17-2|§17.2]], [[Multivariable Chain Rule|452 §12.2]]
+That the three circle atlases define one smooth structure is collected in [[§24 The Circle|§24]].

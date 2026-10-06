@@ -38,13 +38,13 @@ tags: [group-theory, math493]
 
 ^pf-12-1
 
-*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]]
+*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-2|Def. §10.2]], [[§11 Disjoint Cycle Decomposition#^def-11-1|Def. §11.1]], [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]]
 
 ![[m493-12-1.svg]]
 *Conjugation relabels a cycle. To evaluate $\sigma\tau\sigma^{-1}$ at $\sigma(a_i)$, go up the dashed arrow ($\sigma^{-1}$) to $a_i$, across by $\tau$ to $a_{i+1}$, and down by $\sigma$ to $\sigma(a_{i+1})$. So the red loop is the blue loop $\tau$ with every label replaced by its image under $\sigma$: same shape, same length.*
 
 > [!remark]- Connections
-> - Conjugation in general: [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Conjugation; Conjugate Elements; Inner Automorphism]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]].
+> - Conjugation in general: [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Conjugation]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-3|Conjugate Elements]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-4|Inner Automorphism]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]].
 > - For a whole permutation in disjoint-cycle notation: [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries, §33.1]].
 > - The converse (same cycle type ⇒ conjugate): [[§33 Conjugacy Classes#^thm-33-3|Conjugacy Classes in Sₙ Are Cycle Types]].
 
@@ -64,7 +64,7 @@ tags: [group-theory, math493]
 
 ^pf-12-2
 
-*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]]
+*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-2|Def. §10.2]], [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]]
 
 > [!remark]- Connections
 > - Sharper generating sets: [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|Generators of Sₙ]] (PS 1.5(3)); the parity of the number of factors: [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Parity of a Permutation]].

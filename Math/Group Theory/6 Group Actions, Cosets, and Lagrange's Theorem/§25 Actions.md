@@ -16,14 +16,14 @@ tags: [group-theory, math493]
 
 ^rem-25-1
 
-> [!definition] Definition §25.1: Action; Right Action
+> [!definition] Definition §25.1: Action
 > Let $G$ be a group and let $X$ be a set. An **action** of $G$ on $X$ is a map $\star: G \times X \to X$ obeying
 >
 > $$
 > (g_1 \star g_2) \star x = g_1 \star (g_2 \star x) \quad\text{and}\quad e \star x = x \qquad \text{for all } g_1, g_2 \in G,\ x \in X,
 > $$
 >
-> where on the left of the first identity $g_1 \star g_2$ is the product in $G$. Depending on context, $\star$ may be written $\ast$, $\times$, $\cdot$, or omitted. This is also called a **left action**; a **right action** is a map $X \times G \to X$ obeying $x \star (g_2 \star g_1) = (x \star g_2) \star g_1$ (and $x \star e = x$).
+> where on the left of the first identity $g_1 \star g_2$ is the product in $G$. Depending on context, $\star$ may be written $\ast$, $\times$, $\cdot$, or omitted. This is also called a **left action**.
 >
 > *Source: WS 4*
 
@@ -31,6 +31,13 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Same definition in 591, [[§13 Group Actions and Orbit Spaces#^def-13-1|591 Def. §13.1]]; for a [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|topological group]] acting on a space one also asks that the action map be continuous, [[§13 Group Actions and Orbit Spaces#^def-13-2|591 Def. §13.2]].
+
+> [!definition] Definition §25.2: Right Action
+> A **right action** is a map $X \times G \to X$ obeying $x \star (g_2 \star g_1) = (x \star g_2) \star g_1$ (and $x \star e = x$).
+>
+> *Source: WS 4*
+
+^def-25-2
 
 > [!definition] Definition §25.3: Arrow Notation
 > - $f: X \to Y$ denotes a **function** from the set $X$ to the set $Y$; the arrow $\to$ goes between *sets*.
@@ -87,7 +94,7 @@ tags: [group-theory, math493]
 
 ^pf-25-1
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§25 Actions#^def-25-2|Def. §25.2]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!remark] Remark: Left and Right Are Interchangeable
 > The proposition (and its mirror image) show that left and right actions carry the same information: inverting the group element converts one into the other. The distinction matters only for bookkeeping the order of composition. The same inversion produces the bijection $gH \mapsto Hg^{-1}$ between left and right cosets ([[§28 Left and Right Cosets#^prop-28-3|§28.3]]).
@@ -124,11 +131,6 @@ tags: [group-theory, math493]
 > *Source: WS 4.3*
 
 ^thm-25-3
-
-> [!remark] Remark: From a Function of Two Variables to a Function of One
-> An action is a function of two variables, $G \times X \to X$, $(g, x) \mapsto g \star x$. Freezing the first variable at $g$ leaves a function of one variable, $\hat g = g \star (\,\cdot\,): X \to X$, telling how $g$ moves the points of $X$. So an action produces an assignment $g \mapsto \hat g$ from $G$ to maps $X \to X$. The theorem makes two claims about this assignment: its values are *bijections*, hence elements of $S_X$; and it converts the *multiplication of $G$* into the *operation of $S_X$*, which is composition.
-
-^rem-25-4
 
 > [!proof]+ Proof
 > **(1) Action $\Rightarrow$ homomorphism.** There are two things to check.
@@ -169,6 +171,11 @@ tags: [group-theory, math493]
 > - Actions used to manufacture homomorphisms later: [[§31 G Acting on Coset Spaces#^prop-31-1|The Action of G on G/H]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]].
 > - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, [[§13 Group Actions and Orbit Spaces#^lem-13-2|591 Lemma §13.2]], so the homomorphism lands in the homeomorphisms of X.
 
+> [!remark] Remark: From a Function of Two Variables to a Function of One
+> An action is a function of two variables, $G \times X \to X$, $(g, x) \mapsto g \star x$. Freezing the first variable at $g$ leaves a function of one variable, $\hat g = g \star (\,\cdot\,): X \to X$, telling how $g$ moves the points of $X$. So an action produces an assignment $g \mapsto \hat g$ from $G$ to maps $X \to X$. The theorem makes two claims about this assignment: its values are *bijections*, hence elements of $S_X$; and it converts the *multiplication of $G$* into the *operation of $S_X$*, which is composition.
+
+^rem-25-4
+
 > [!example] Example §25.3: Seeing the Permutations
 > **Rotating a triangle.** Let $G = \mathbb{Z}/3\mathbb{Z}$ act on the vertices $X = \{1, 2, 3\}$ of a triangle by rotation, $[k] \star i =$ the vertex $k$ steps further around (so $[1] \star 1 = 2$, $[1] \star 2 = 3$, $[1] \star 3 = 1$). Freezing $g$ and reading off where each vertex goes gives an element of $S_3$ in cycle notation:
 >
@@ -199,10 +206,15 @@ tags: [group-theory, math493]
 
 ## Faithful Actions and Cayley's Theorem
 
-> [!definition] Definition §25.4: Kernel of an Action; Faithful Action
-> The **kernel** of an action of $G$ on $X$ is the [[§15 Homomorphisms#^def-15-2|kernel]] of the associated homomorphism $\varphi: G \to S_X$, namely $\{g \in G : g \star x = x \text{ for all } x \in X\}$, the elements acting trivially on every point. The action is **faithful** if its kernel is $\{e\}$, i.e. if only the identity fixes every point.
+> [!definition] Definition §25.4: Kernel of an Action
+> The **kernel** of an action of $G$ on $X$ is the [[§15 Homomorphisms#^def-15-3|kernel]] of the associated homomorphism $\varphi: G \to S_X$, namely $\{g \in G : g \star x = x \text{ for all } x \in X\}$, the elements acting trivially on every point.
 
 ^def-25-4
+
+> [!definition] Definition §25.5: Faithful Action
+> The action is **faithful** if its kernel is $\{e\}$, i.e. if only the identity fixes every point.
+
+^def-25-5
 
 > [!remark]- Connections
 > - Faithful and non-faithful actions of the cube group: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-4|§32.4]], [[§32 Linear Groups, the Cube, S₃ and A₄#^ex-32-1|Ex. §32.1]].
@@ -217,7 +229,7 @@ tags: [group-theory, math493]
 
 ^pf-25-4
 
-*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§25 Actions#^thm-25-3|§25.3]], [[§15 Homomorphisms#^prop-15-3|§15.3]], [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]]
+*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§25 Actions#^def-25-5|Def. §25.5]], [[§25 Actions#^thm-25-3|§25.3]], [[§15 Homomorphisms#^prop-15-3|§15.3]], [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]]
 
 > [!theorem] Theorem §25.5: Cayley's Theorem
 > Every group $G$ is isomorphic to a subgroup of $S_G$. In particular, a group with $n$ elements is isomorphic to a subgroup of $S_n$.
@@ -231,7 +243,7 @@ tags: [group-theory, math493]
 
 ^pf-25-5
 
-*Uses:* [[§25 Actions#^ex-25-2|Ex. §25.2]], [[§25 Actions#^def-25-4|Def. §25.4]], [[§25 Actions#^prop-25-4|§25.4]]
+*Uses:* [[§25 Actions#^ex-25-2|Ex. §25.2]], [[§25 Actions#^def-25-5|Def. §25.5]], [[§25 Actions#^prop-25-4|§25.4]]
 
 > [!remark]- Connections
 > - Revisited through the First Isomorphism Theorem: [[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]].

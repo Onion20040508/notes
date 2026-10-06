@@ -351,12 +351,19 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 > [!remark]- Connections
 > - The finite-subcover step is the argument of the [[Tube Lemma]] (590 §15.9), with the compact factor $G$.
 
-> [!definition] Definition §13.6: Proper Map and Proper Action
-> A continuous map is **proper** if the preimage of every compact set is compact. A continuous action of a topological group $G$ on a space $X$ is **proper** if the map $\Psi : G \times X \to X \times X$, $\Psi(g,x) = (x, g\cdot x)$, of $(\ast)$ in the proof of Corollary [[§13 Group Actions and Orbit Spaces#^pf-13-4|§13.4]] is proper.
+> [!definition] Definition §13.6: Proper Map
+> A continuous map is **proper** if the preimage of every compact set is compact.
 >
 > *Lee: Ch. 21, Proper Actions*
 
 ^def-13-6
+
+> [!definition] Definition §13.7: Proper Action
+> A continuous action of a topological group $G$ on a space $X$ is **proper** if the map $\Psi : G \times X \to X \times X$, $\Psi(g,x) = (x, g\cdot x)$, of $(\ast)$ in the proof of Corollary [[§13 Group Actions and Orbit Spaces#^pf-13-4|§13.4]] is proper ([[§13 Group Actions and Orbit Spaces#^def-13-6|Definition §13.6]]).
+>
+> *Lee: Ch. 21, Proper Actions*
+
+^def-13-7
 
 > [!remark] Remark: Proper Actions
 > Uribe: “this is one of many theorems people are interested in on when quotient spaces are Hausdorff, and this is the simplest one.” Properness is the notion that replaces compactness of $G$ altogether: every action of a compact group on a Hausdorff space is proper, and proper actions of non-compact groups are what Lee Ch. 21 treats. He warned that his own examples will be mostly compact — “I tend to be a compact-manifold person.”

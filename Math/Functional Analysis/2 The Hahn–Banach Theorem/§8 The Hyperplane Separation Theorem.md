@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: algebra — Threads meet: functionals $\times$ convexity. Hahn–Banach applied to a gauge.*
 
-This is the first application of [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]], and the reason the theorem was stated with a general $p$ rather than a norm: the $p$ that gets used is the [[§7 Convex Sets and the Gauge#^def-7-2|gauge]] of a convex set. Recall (Definition [[§5 Statement and Motivation#^def-5-3|§5.3]]) that for a nonzero linear functional $\ell : X \to \mathbb{R}$ and $c \in \mathbb{R}$, $\{\ell = c\}$ is a hyperplane and $\{\ell < c\}$, $\{\ell > c\}$ are the two half-spaces it bounds; in $\mathbb{R}^n$, with $\ell(x) = a \cdot x$, which side is “$> c$” is determined by the direction of $a$.
+This is the first application of [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]], and the reason the theorem was stated with a general $p$ rather than a norm: the $p$ that gets used is the [[§7 Convex Sets and the Gauge#^def-7-2|gauge]] of a convex set. Recall (Definitions [[§5 Statement and Motivation#^def-5-3|§5.3]] and [[§5 Statement and Motivation#^def-5-4|§5.4]]) that for a nonzero linear functional $\ell : X \to \mathbb{R}$ and $c \in \mathbb{R}$, $\{\ell = c\}$ is a hyperplane and $\{\ell < c\}$, $\{\ell > c\}$ are the two half-spaces it bounds; in $\mathbb{R}^n$, with $\ell(x) = a \cdot x$, which side is “$> c$” is determined by the direction of $a$.
 
 > [!theorem] Theorem §8.1: Hyperplane Separation; Geometric Hahn–Banach
 > Let $X$ be a linear space over $\mathbb{R}$, let $K \subset X$ be a nonempty convex set in which every point is an interior point, and let $y_0 \in X$ with $y_0 \notin K$. Then there is a hyperplane that separates $y_0$ from $K$: there exist a linear functional $\ell : X \to \mathbb{R}$ and $c_0 \in \mathbb{R}$ such that
@@ -21,11 +21,6 @@ This is the first application of [[§5 Statement and Motivation#^thm-5-2|Hahn–
 > *Lax: §3.2, Thm 5*
 
 ^thm-8-1
-
-> [!remark] Remark: Comparison with Lax
-> The statement is Lax's Theorem 5, including the hypothesis that $K$ is nonempty, which the proof needs in Step 1 (to translate a point of $K$ to the origin) and which was missing from an earlier version of these notes. Lax continues with two strengthenings not covered in lecture: Corollary 5′, for a convex set with only *one* interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem 6, separating two disjoint convex sets, one of which has an interior point.
-
-^rem-8-2
 
 In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
 
@@ -83,3 +78,8 @@ In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies s
 > Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn–Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: it lies on one side of a supporting hyperplane at every point outside it.
 
 ^rem-8-1
+
+> [!remark] Remark: Comparison with Lax
+> The statement is Lax's Theorem 5, including the hypothesis that $K$ is nonempty, which the proof needs in Step 1 (to translate a point of $K$ to the origin) and which was missing from an earlier version of these notes. Lax continues with two strengthenings not covered in lecture: Corollary 5′, for a convex set with only *one* interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem 6, separating two disjoint convex sets, one of which has an interior point.
+
+^rem-8-2

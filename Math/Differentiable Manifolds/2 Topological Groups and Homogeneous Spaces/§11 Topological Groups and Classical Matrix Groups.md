@@ -73,8 +73,18 @@ tags: [differentiable-manifolds, math591]
 > - $\dim \mathbb{F}^{m,n} = mn$: [[§9 Matrices#^ladr-3-40|LADR 3.40]].
 > - The coordinate-free version (any finite-dimensional vector space is a smooth manifold): [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]].
 
-> [!definition] Definition §11.4: Permutations and the Sign
-> The **symmetric group** $S_n$ is the set of all bijections $\sigma : \{1, \ldots, n\} \to \{1, \ldots, n\}$, a group under composition, of order $n!$. A **transposition** is a permutation that swaps two symbols and fixes the rest. An **inversion** of $\sigma$ is a pair $i < j$ with $\sigma(i) > \sigma(j)$. The **sign** of $\sigma$ is
+> [!definition] Definition §11.3: The Symmetric Group
+> The **symmetric group** $S_n$ is the set of all bijections $\sigma : \{1, \ldots, n\} \to \{1, \ldots, n\}$, a group under composition, of order $n!$. A **transposition** is a permutation that swaps two symbols and fixes the rest.
+>
+> *Lee: App. B, The Determinant*
+
+^def-11-3
+
+> [!remark]- Connections
+> - Home in 493: [[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]].
+
+> [!definition] Definition §11.4: The Sign of a Permutation
+> An **inversion** of $\sigma \in S_n$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-3|Definition §11.3]]) is a pair $i < j$ with $\sigma(i) > \sigma(j)$. The **sign** of $\sigma$ is
 >
 > $$
 > \operatorname{sgn}(\sigma) = (-1)^{\#\{\text{inversions of } \sigma\}} \in \{\pm 1\}.
@@ -129,7 +139,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-11-3
 
 > [!proof]+ Proof
-> *(Implicit in Lecture 3, which used that $\mathrm{GL}(n,\mathbb{R}) = \det^{-1}(\mathbb{R} \setminus \{0\})$ is open; filled in.)* By the Leibniz formula $\det(x) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n x_{i,\sigma(i)}$ (with $S_n$ and $\operatorname{sgn}$ as in [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Definition §11.4]]; each $\sigma$ selects one entry from every row, $x_{i,\sigma(i)}$ from row $i$, and bijectivity of $\sigma$ means every column is used exactly once), $\det$ is a polynomial in the $n^2$ coordinates, and polynomials are continuous.
+> *(Implicit in Lecture 3, which used that $\mathrm{GL}(n,\mathbb{R}) = \det^{-1}(\mathbb{R} \setminus \{0\})$ is open; filled in.)* By the Leibniz formula $\det(x) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n x_{i,\sigma(i)}$ (with $S_n$ and $\operatorname{sgn}$ as in Definitions [[§11 Topological Groups and Classical Matrix Groups#^def-11-3|§11.3]] and [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|§11.4]]; each $\sigma$ selects one entry from every row, $x_{i,\sigma(i)}$ from row $i$, and bijectivity of $\sigma$ means every column is used exactly once), $\det$ is a polynomial in the $n^2$ coordinates, and polynomials are continuous.
 
 ^pf-11-3
 
@@ -226,7 +236,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; the rotation group of the cube, a finite subgroup of SO(3), is isomorphic to S₄, [[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|493 Thm. §32.5]].
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ and its action on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]].
 
-> [!definition] Definition §11.9: Complex Matrix Groups
+> [!definition] Definition §11.9: Complex Matrices and $\mathrm{GL}(n,\mathbb{C})$
 > Once and for all, fix the $\mathbb{R}$-linear identification $\mathbb{C} \cong \mathbb{R}^2$, $x + iy \mapsto (x, y)$, and hence $\mathbb{C}^n \cong \mathbb{R}^{2n}$: explicitly, writing $z_j = x_j + i y_j$,
 >
 > $$
@@ -245,7 +255,19 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 > \mathrm{GL}(n,\mathbb{C}) = \det{}^{-1}(\mathbb{C} \setminus \{0\}) = \{\text{invertible complex } n \times n \text{ matrices}\}
 > $$
 >
-> is open in $\operatorname{Mat}(n,\mathbb{C})$ and is a topological group by the same algebraic argument as over $\mathbb{R}$. The **unitary group** is
+> is open in $\operatorname{Mat}(n,\mathbb{C})$ and is a topological group by the same algebraic argument as over $\mathbb{R}$.
+>
+> *Lee: Examples 7.29 and 7.30*
+
+^def-11-9
+
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+
+> [!remark]- Connections
+> - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]].
+
+> [!definition] Definition §11.10: Unitary Group
+> The **unitary group**, a subgroup of $\mathrm{GL}(n,\mathbb{C})$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9]]), is
 >
 > $$
 > \mathrm{U}(n) = \{\, g \in \mathrm{GL}(n,\mathbb{C}) \mid g^{-1} = \bar{g}^{\,T} \,\},
@@ -255,12 +277,12 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 >
 > *Lee: Examples 7.29 and 7.30*
 
-^def-11-9
+^def-11-10
 
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]]
 
 > [!remark]- Connections
-> - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]]; unitary matrices in linear algebra: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - Unitary matrices in linear algebra: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - $\mathrm{U}(n)$ is a manifold of dimension $n^2$: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]].
 > - Used in Quantum Mechanics: $U(2)$ and $SU(2)$ as the groups of spin-½ rotations, $SU(2) \cong S^3$, a double cover of $SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 > - Used in Quantum Field Theory: $SU(2)$, identified with the sphere $S^3$, is compact, and averaging over it makes every finite-dimensional representation of $SU(2)$ and $SO(3)$ unitary and completely reducible; for the non-compact Lorentz group no nontrivial finite-dimensional representation is unitary — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-5|QFT Theorem §C3.1.5]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-12|QFT Theorem §C3.2.12]].
@@ -278,3 +300,5 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 
 > [!remark]- Connections
 > - The circle group in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]]; $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ as an orbit space: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]].
+
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§33 Local Diffeomorphisms#^ex-33-1|the circle covered by a line]].

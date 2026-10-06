@@ -150,13 +150,16 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 > $$
 > B^\flat : V \to W^*, \ \ v \mapsto B(v, \cdot\,), \qquad\qquad B^\sharp : W \to V^*, \ \ w \mapsto B(\cdot\,, w).
 > $$
->
-> $B$ is **left non-degenerate** if $B(v, w) = 0$ for all $w$ implies $v = 0$, i.e. $B^\flat$ is injective; **right non-degenerate** if $B(v, w) = 0$ for all $v$ implies $w = 0$, i.e. $B^\sharp$ is injective; and **non-degenerate** if both.
 
 ^def-21-4
 
 > [!remark]- Connections
 > - Same notion in LADR: [[§38 Tensor Products#^ladr-9-68|LADR 9.68]] (bilinear functionals on V × W); the case W = V is a bilinear form, [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
+
+> [!definition] Definition §21.5: Non-Degenerate Pairing
+> A bilinear pairing $B : V \times W \to \mathbb{R}$ ([[§21 Linear Algebra Toolkit#^def-21-4|Definition §21.4]]) is **left non-degenerate** if $B(v, w) = 0$ for all $w$ implies $v = 0$, i.e. $B^\flat$ is injective; **right non-degenerate** if $B(v, w) = 0$ for all $v$ implies $w = 0$, i.e. $B^\sharp$ is injective; and **non-degenerate** if both.
+
+^def-21-5
 
 > [!theorem] Theorem §21.5: Non-Degenerate Pairings
 > Let $B : V \times W \to \mathbb{R}$ be a non-degenerate bilinear pairing, and suppose $V$ or $W$ is finite-dimensional. Then both are finite-dimensional, $\dim V = \dim W$, and
@@ -229,12 +232,20 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 > - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§32 The Cotangent Space#^def-32-3|Def. §32.3]].
 
 > [!definition] Definition §21.7: Direct Sum
-> The **direct sum** of vector spaces $V$ and $W$ is $V \oplus W = V \times W$ with the componentwise operations $(v, w) + (v', w') = (v + v', w + w')$ and $c(v, w) = (cv, cw)$. It comes with the **inclusions** $\iota_V(v) = (v, 0)$, $\iota_W(w) = (0, w)$ and the **projections** $\pi_V(v, w) = v$, $\pi_W(v, w) = w$, all linear. A vector space $U$ is the **internal direct sum** of subspaces $U_1, U_2$, written $U = U_1 \oplus U_2$, if every $u \in U$ is $u_1 + u_2$ for unique $u_1 \in U_1$, $u_2 \in U_2$.
+> The **direct sum** of vector spaces $V$ and $W$ is $V \oplus W = V \times W$ with the componentwise operations $(v, w) + (v', w') = (v + v', w + w')$ and $c(v, w) = (cv, cw)$. It comes with the **inclusions** $\iota_V(v) = (v, 0)$, $\iota_W(w) = (0, w)$ and the **projections** $\pi_V(v, w) = v$, $\pi_W(v, w) = w$, all linear.
 
 ^def-21-7
 
 > [!remark]- Connections
-> - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87 (product of vector spaces)]], [[§3 Subspaces#^ladr-1-41|LADR 1.41 (internal direct sum)]].
+> - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87 (product of vector spaces)]].
+
+> [!definition] Definition §21.8: Internal Direct Sum
+> A vector space $U$ is the **internal direct sum** of subspaces $U_1, U_2$, written $U = U_1 \oplus U_2$, if every $u \in U$ is $u_1 + u_2$ for unique $u_1 \in U_1$, $u_2 \in U_2$.
+
+^def-21-8
+
+> [!remark]- Connections
+> - Home: [[§3 Subspaces#^ladr-1-41|LADR 1.41 (internal direct sum)]].
 
 > [!theorem] Proposition §21.7: Direct Sums
 > 1. $\pi_V \iota_V = \mathrm{id}_V$, $\pi_W \iota_W = \mathrm{id}_W$, $\pi_W \iota_V = 0$ and $\pi_V \iota_W = 0$. So $\iota_V$, $\iota_W$ are injective, and $V \oplus W$ is the internal direct sum of $V \oplus \{0\} = \iota_V(V)$ and $\{0\} \oplus W = \iota_W(W)$.

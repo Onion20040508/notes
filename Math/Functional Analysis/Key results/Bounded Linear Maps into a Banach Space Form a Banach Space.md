@@ -28,7 +28,7 @@ tags: [functional-analysis, hub]
 - [[§31 Dual Spaces#^cor-31-1|Corollary §31.1: The Dual is Always a Banach Space]]
 
 ## Connections
-- **How.** The proof follows the pattern of [[Continuous Functions with the Sup Norm Form a Banach Space]]. Evaluating a Cauchy sequence T_n at each x gives a Cauchy sequence in Y, which converges because Y is complete. The limit T is linear, and the bound ‖T_n x − T_k x‖ ≤ ε‖x‖ passes to the limit uniformly in x. The point of the [[§30 Boundedness and Continuity#^rem-30-4|Remark §26]] on ε is that N does not depend on x.
+- **How.** The proof follows the pattern of [[Continuous Functions with the Sup Norm Form a Banach Space]]. Evaluating a Cauchy sequence T_n at each x gives a Cauchy sequence in Y, which converges because Y is complete. The limit T is linear, and the bound ‖T_n x − T_k x‖ ≤ ε‖x‖ passes to the limit uniformly in x. The point of the [[§30 Boundedness and Continuity#^rem-30-4|Remark §30]] on ε is that N does not depend on x.
 - **Only the target matters.** X need not be complete. Lax assumes both spaces are Banach, but his proof uses only that U is complete.
 - **Special case.** With Y = 𝔽, the dual X′ is always a Banach space ([[§31 Dual Spaces#^cor-31-1|§31.1]]), even when X is not complete.
 - **Finite dimensions.** Every linear map there is bounded ([[§30 Boundedness and Continuity#^prop-30-4|§30.4]]), and LADR's norm of a linear map ([[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]]) is the same operator norm.

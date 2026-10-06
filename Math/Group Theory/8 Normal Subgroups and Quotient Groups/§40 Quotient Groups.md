@@ -62,7 +62,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 
 ^pf-40-2
 
-*Uses:* [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
+*Uses:* [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§15 Homomorphisms#^def-15-3|Def. §15.3]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
 
 > [!remark]- Connections
 > - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[§27 Free Groups and Presentations#^def-27-9|Quotient Group]].
@@ -119,7 +119,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 >
 > $$ \begin{array}{c|cc} + & 0 & 1 \\ \hline 0 & 0 & 1 \\ 1 & 1 & 0 \end{array} $$
 >
-> So the quotient is [[§4 Subgroups#^def-4-6|cyclic]] of order $2$. Here $S$ is not a [[§4 Subgroups#^def-4-1|subgroup]] ($1 + 1 \notin S$).
+> So the quotient is [[§4 Subgroups#^def-4-8|cyclic]] of order $2$. Here $S$ is not a [[§4 Subgroups#^def-4-1|subgroup]] ($1 + 1 \notin S$).
 >
 > *Source: lecture 10/2*
 
@@ -147,7 +147,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^prop-40-4
 
 > [!proof]+ Proof
-> The composite is the restriction of the projection $\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]], §41.4.)
+> The composite is the restriction of the projection $\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]], §41.5.)
 
 ^pf-40-4
 

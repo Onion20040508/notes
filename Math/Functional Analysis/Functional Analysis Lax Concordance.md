@@ -25,9 +25,9 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | Linear maps | $T : X \to Y$, $\Vert T\Vert$, $\mathcal{L}(X, Y)$ | $M : X \to U$, $\vert M\vert$, $\mathcal{L}(X, U)$ |
 | Orthonormal family | $\{e_\alpha\}_{\alpha \in \Lambda}$, any index set | $\{x_j\}$ |
 | Orthonormal basis | defined by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ | “orthonormal base”, defined by $\overline{\operatorname{span}} = H$ |
-| Complement | complement $W$ of $Y$ ([[§1 Linear Spaces#Complements and the Isomorphism X ≅ X/Y ⊕ Y\|§1]]); $X = Y \oplus W$ | complementary subspaces |
+| Complement | complement $W$ of $Y$ ([[§2 Quotient Spaces and Complements#Complements and the Isomorphism X ≅ X/Y ⊕ Y\|§2]]); $X = Y \oplus W$ | complementary subspaces |
 | Sobolev space | $H^k_0(\Omega)$, completion of $C_c^\infty(\Omega)$ | $W^{k,p}$, completion of $C^\infty$ functions with finite norm |
-| Separable | countable $D$ with every point a limit of a sequence in $D$ | countable set whose closure is the whole space (the same, by Definition [[§11 Normed Linear Spaces#^def-11-7\|§11.7]]) |
+| Separable | countable $D$ with every point a limit of a sequence in $D$ | countable set whose closure is the whole space (the same, by Definition [[§11 Normed Linear Spaces#^def-11-8\|§11.8]]) |
 
 ## C.2 Where the Routes Diverge
 
@@ -51,21 +51,21 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 
 | These notes | Lax | Comments |
 |---|---|---|
-| [[§1 Linear Spaces\|§1]]–[[§3 Linear Maps, Convexity, and Linear Functionals\|§3]] Linear spaces, maps, convexity | Ch. 1; §3.1 | Complements and $X \cong X/Y \oplus Y$ ([[§1 Linear Spaces#Complements and the Isomorphism X ≅ X/Y ⊕ Y\|§1]], HW1) are not in Lax; extreme subsets (Lax Ch. 1) not covered. |
+| [[§1 Linear Spaces\|§1]]–[[§3 Linear Maps, Convexity, and Linear Functionals\|§3]] Linear spaces, maps, convexity | Ch. 1; §3.1 | Complements and $X \cong X/Y \oplus Y$ ([[§2 Quotient Spaces and Complements#Complements and the Isomorphism X ≅ X/Y ⊕ Y\|§2]], HW1) are not in Lax; extreme subsets (Lax Ch. 1) not covered. |
 | [[§5 Statement and Motivation\|§5]]–[[§6 Proof of the Hahn–Banach Theorem\|§6]] Hahn–Banach | §3.1, Thm 1 | Same proof: one-step extension and Zorn. |
 | [[§7 Convex Sets and the Gauge\|§7]] Convex sets and the gauge | §3.1, Thms 2–4 | Notes prove more of the exercises. |
 | [[§8 The Hyperplane Separation Theorem\|§8]] Separation | §3.2, Thm 5 | Strengthenings Cor. 5$'$, Thm 6 not covered. |
 | [[§9 The Complex Hahn–Banach Theorem\|§9]] Complex Hahn–Banach | §3.3, Thm 8 | Agnew–Morse (Thm 7) not covered. |
 | [[§11 Normed Linear Spaces\|§11]] Normed spaces | §5.1 | Metric notions (convergence, closure, open sets) spelled out in the notes. |
-| [[§12 Completeness\|§12]] Completeness | §5.1, Thm 3; examples (c)–(e) | $C[a,b]$ and the completion proved in full (HW2). |
+| [[§12 Completeness\|§12]]–[[§13 The Completion of a Normed Space\|§13]] Completeness | §5.1, Thm 3; examples (c)–(e) | $C[a,b]$ and the completion proved in full (HW2). |
 | [[§14 New Normed Spaces from Old\|§14]] New spaces from old | §5.1, (5), Thm 1 | Equivalence of norms in finite dimensions (HW2) is not in Lax. |
 | [[§16 Means and Young's Inequality\|§16]]–[[§18 Minkowski's Inequality and the Spaces ℓᵖ\|§18]] Inequalities, $\ell^p$ | §5.1, examples (a)–(b), Thms 4–5 | See C.2. |
 | [[§19 The Function Spaces Lᵖ(Ω)\|§19]] $L^p$ | §5.1, examples (f)–(g) | See C.2. |
 | [[§20 Compactness and the Unit Ball\|§20]] Compactness | §5.2, Thm 6, Lemma 7 | Uniform convexity and Mazur–Ulam (§5.2 and §5.3) not covered. |
-| [[§22 Definition and Examples\|§22]]–[[§23 Cauchy–Schwarz and the Induced Norm\|§23]] Inner products | §6.1 | Jordan–von Neumann is Lax's Exercise 1 (HW3). |
+| [[§22 Definition and Examples\|§22]]–[[§24 The Parallelogram Law and Jordan–von Neumann\|§24]] Inner products | §6.1 | Jordan–von Neumann is Lax's Exercise 1 (HW3). |
 | [[§25 Projection and Orthogonal Decomposition\|§25]] Projection | §6.2, Thms 2–3 | |
 | [[§26 Bounded Linear Functionals and the Riesz Representation Theorem\|§26]] Riesz representation | §6.3, Thm 4 | Lax–Milgram (Thm 6) not covered. |
-| [[§27 Orthonormal Sets and Bases\|§27]] Orthonormal bases | §6.4; §5.1 (separability) | Isometries of $H$ (Thm 10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise 10 (HW5). |
+| [[§27 Orthonormal Sets and Bases\|§27]]–[[§28 Existence of Orthonormal Bases and Separability\|§28]] Orthonormal bases | §6.4; §5.1 (separability) | Isometries of $H$ (Thm 10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise 10 (HW5). |
 | [[§30 Boundedness and Continuity\|§30]] Bounded linear maps | §15.1, Thms 1–3 | Lax assumes Banach spaces throughout §15.1; not needed for Thm 1. |
 | [[· 7 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 

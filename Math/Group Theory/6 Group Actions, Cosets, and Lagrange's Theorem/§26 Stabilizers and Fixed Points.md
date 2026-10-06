@@ -9,14 +9,26 @@ tags: [group-theory, math493]
 
 *Reference: Pinter Ch. 13, Ex. J.*
 
-> [!definition] Definition §26.1: Stabilizer; Fixed Points
+> [!definition] Definition §26.1: Stabilizer
 > Let $G$ [[§25 Actions#^def-25-1|act]] on $X$. For $x \in X$, the **stabilizer** of $x$ is
 >
 > $$
 > \operatorname{Stab}(x) := \{ g \in G : g \star x = x \} \subseteq G,
 > $$
 >
-> the set of group elements fixing $x$. For $g \in G$, the **fixed points** of $g$ are
+> the set of group elements fixing $x$.
+>
+> *Source: WS 4*
+
+^def-26-1
+
+> [!remark]- Connections
+> - Stabilizers enter [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; under conjugation the stabilizer is the [[§34 Conjugation as an Action and the Class Equation#^def-34-1|centralizer]].
+> - Called the isotropy subgroup in 591, [[§14 Homogeneous Spaces#^def-14-3|591 Def. §14.3]]; for a [[§13 Group Actions and Orbit Spaces#^def-13-2|continuous action]] on a space whose points are closed it is a closed subgroup, [[§14 Homogeneous Spaces#^thm-14-2|591 Thm. §14.2]].
+> - Used in Quantum Field Theory: the stabilizer of a particle's standard momentum under the Lorentz group is its little group, $SO(3)$ for a massive particle, whose representations are the particle's spin — [[§C3.5★ Particle States and the Little Group#^def-c3-5-1|QFT Def. §C3.5.1]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-7|QFT Theorem §C3.5.7]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-8|QFT Theorem §C3.5.8]].
+
+> [!definition] Definition §26.2: Fixed Points
+> For $g \in G$, the **fixed points** of $g$ are
 >
 > $$
 > \operatorname{Fix}(g) := \{ x \in X : g \star x = x \} \subseteq X,
@@ -26,12 +38,10 @@ tags: [group-theory, math493]
 >
 > *Source: WS 4*
 
-^def-26-1
+^def-26-2
 
 > [!remark]- Connections
-> - Stabilizers enter [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; fixed points enter [[§30 Orbit–Stabilizer#^thm-30-6|Burnside's Lemma]]; under conjugation the stabilizer is the [[§34 Conjugation as an Action and the Class Equation#^def-34-1|centralizer]].
-> - Called the isotropy subgroup in 591, [[§14 Homogeneous Spaces#^def-14-3|591 Def. §14.3]]; for a [[§13 Group Actions and Orbit Spaces#^def-13-2|continuous action]] on a space whose points are closed it is a closed subgroup, [[§14 Homogeneous Spaces#^thm-14-2|591 Thm. §14.2]].
-> - Used in Quantum Field Theory: the stabilizer of a particle's standard momentum under the Lorentz group is its little group, $SO(3)$ for a massive particle, whose representations are the particle's spin — [[§C3.5★ Particle States and the Little Group#^def-c3-5-1|QFT Def. §C3.5.1]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-7|QFT Theorem §C3.5.7]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-8|QFT Theorem §C3.5.8]].
+> - Fixed points enter [[§30 Orbit–Stabilizer#^thm-30-6|Burnside's Lemma]].
 
 > [!theorem] Proposition §26.1: The Stabilizer Is a Subgroup
 > For every $x \in X$, $\operatorname{Stab}(x)$ is a subgroup of $G$. (The worksheet says “of $X$”; this is a typo — the stabilizer is a set of group elements.)

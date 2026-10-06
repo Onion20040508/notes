@@ -37,13 +37,29 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 > [!remark]- Connections
 > - In $\mathbb{R}^n$ with the Euclidean norm: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]] (Bolzano–Weierstrass in $\mathbb{R}^n$), and closed bounded sets are compact by [[Heine–Borel Theorem|Heine–Borel (590 §18.12)]].
 
-> [!definition] Definition §20.4: Open Set; Open Cover; Compact
-> Let $X$ be a normed linear space (or metric space). A subset $U \subset X$ is **open** if every point of $U$ is a metric interior point of $U$ (Definition [[§11 Normed Linear Spaces#^def-11-11|§11.11]]). An **open cover** of $K \subset X$ is a collection of open sets whose union contains $K$. $K$ is **compact** if every open cover of $K$ has a finite subcollection that still covers $K$.
+> [!definition] Definition §20.2: Open Set
+> Let $X$ be a normed linear space (or metric space). A subset $U \subset X$ is **open** if every point of $U$ is a metric interior point of $U$ (Definition [[§11 Normed Linear Spaces#^def-11-11|§11.11]]).
+
+^def-20-2
+
+> [!remark]- Connections
+> - Topology: open sets of the [[§12 Metric Topology#^def-12-3|metric topology (590 Def. §12.3)]].
+
+> [!definition] Definition §20.3: Open Cover
+> Let $X$ be a normed linear space (or metric space). An **open cover** of $K \subset X$ is a collection of open sets (Definition [[§20 Compactness and the Unit Ball#^def-20-2|§20.2]]) whose union contains $K$.
+
+^def-20-3
+
+> [!remark]- Connections
+> - Topology: covers [[§18 Compact Spaces#^def-18-1|590 Def. §18.1]].
+
+> [!definition] Definition §20.4: Compact
+> Let $X$ be a normed linear space (or metric space) and $K \subset X$. $K$ is **compact** if every open cover of $K$ (Definition [[§20 Compactness and the Unit Ball#^def-20-3|§20.3]]) has a finite subcollection that still covers $K$.
 
 ^def-20-4
 
 > [!remark]- Connections
-> - Topology: open sets of the [[§12 Metric Topology#^def-12-3|metric topology (590 Def. §12.3)]], covers [[§18 Compact Spaces#^def-18-1|590 Def. §18.1]], compactness [[§18 Compact Spaces#^def-18-2|590 Def. §18.2]].
+> - Topology: compactness [[§18 Compact Spaces#^def-18-2|590 Def. §18.2]].
 
 > [!theorem] Theorem §20.1: Compactness in Metric Spaces
 > A subset of a normed linear space (or metric space) is compact if and only if it is sequentially compact.
@@ -129,7 +145,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 *The picture drawn in Lecture 6, for $Y$ a line in $\mathbb{R}^2$: $y_0$ is only an almost-closest point, $d \le a = \|x_0 - y_0\| < 2d$, and $z = (x_0 - y_0)/a$ is the unit vector in the same direction. Every point of $Y$ is at distance at least $d/a > \tfrac12$ from $z$; here $z$ lies above the dashed line.*
 
 > [!remark]- Connections
-> - In an inner product space the closest point exists ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]) and the unit vector can be taken orthogonal: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], and the remark contrasting the two arguments, [[§25 Projection and Orthogonal Decomposition#^rem-25-6|Remark §22]].
+> - In an inner product space the closest point exists ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]) and the unit vector can be taken orthogonal: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], and the remark contrasting the two arguments, [[§25 Projection and Orthogonal Decomposition#^rem-25-6|Remark §25]].
 
 > [!theorem] Corollary §20.3: Riesz's Lemma with Any Constant Below One
 > Under the hypotheses of Lemma [[§20 Compactness and the Unit Ball#^lem-20-2|§20.2]], for every $\theta \in (0,1)$ there is $z \in X$ with $\|z\| = 1$ and $\operatorname{dist}(z, Y) \ge \theta$.

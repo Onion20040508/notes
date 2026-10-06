@@ -164,7 +164,7 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 
 ^pf-6-1
 
-*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[Completeness Axiom|451 §4.4]]
+*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[Completeness Axiom|451 §4.4]]
 
 ![[m556-4-2.svg]]
 *Steps 3–4 on the real line. Each red number $\ell(y') - p(-x_0 + y')$ is a lower bound for $c = L(x_0)$ and each blue number $p(x_0 + y) - \ell(y)$ an upper bound. Inequality (4) says every red number lies to the left of every blue one, so the supremum of the red numbers is at most the infimum of the blue ones, and the green interval between them is nonempty; any $c$ in it satisfies (3). The proof takes the left endpoint.*

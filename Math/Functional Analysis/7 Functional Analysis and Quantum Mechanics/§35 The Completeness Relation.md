@@ -13,14 +13,27 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theore
 
 ## Operators and Projections
 
-> [!definition] Definition §35.1: Bounded Operator; Operator Norm; Strong Convergence
-> Let $H$ be a Hilbert space. A linear map $T : H \to H$ is a **bounded operator** if there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$; its **operator norm** $\|T\|$ is the infimum of such $c$. A sequence of bounded operators $T_n$ converges **strongly** to $T$ if $T_n x \to T x$ for every $x \in H$, and **in norm** if $\|T_n - T\| \to 0$. The identity operator is written $\mathbf{1}$.
+> [!definition] Definition §35.1: Bounded Operator
+> Let $H$ be a Hilbert space. A linear map $T : H \to H$ is a **bounded operator** if there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$. The identity operator is written $\mathbf{1}$.
 
 ^def-35-1
 
 > [!remark]- Connections
-> - The general definition, for maps $X \to Y$: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the operator norm as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-5|§30.5]].
+> - The general definition, for maps $X \to Y$: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]].
+
+> [!definition] Definition §35.2: Operator Norm
+> Let $T : H \to H$ be a bounded operator on a Hilbert space $H$ (Definition [[§35 The Completeness Relation#^def-35-1|§35.1]]), so that there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$; its **operator norm** $\|T\|$ is the infimum of such $c$.
+
+^def-35-2
+
+> [!remark]- Connections
+> - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-5|§30.5]].
 > - Finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
+
+> [!definition] Definition §35.3: Strong Convergence
+> Let $H$ be a Hilbert space. A sequence of bounded operators $T_n$ (Definition [[§35 The Completeness Relation#^def-35-1|§35.1]]) converges **strongly** to $T$ if $T_n x \to T x$ for every $x \in H$, and **in norm** if $\|T_n - T\| \to 0$ (Definition [[§35 The Completeness Relation#^def-35-2|§35.2]]).
+
+^def-35-3
 
 As for functionals (Lemma [[§34 Bras, Kets, and the Riesz Map#^lem-34-1|§34.1]]), $\|Tx\| \le \|T\|\,\|x\|$. Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$.
 
@@ -49,7 +62,7 @@ As for functionals (Lemma [[§34 Bras, Kets, and the Riesz Map#^lem-34-1|§34.1]
 
 ^pf-35-1
 
-*Uses:* [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§35 The Completeness Relation#^def-35-4|Def. §35.4]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§34 Bras, Kets, and the Riesz Map#^def-34-3|Def. §34.3]]
+*Uses:* [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§35 The Completeness Relation#^def-35-4|Def. §35.4]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§34 Bras, Kets, and the Riesz Map#^def-34-3|Def. §34.3]], [[§34 Bras, Kets, and the Riesz Map#^def-34-4|Def. §34.4]]
 
 > [!remark]- Connections
 > - Finite-dimensional version, $P_U = \sum_k |e_k\rangle\langle e_k|$: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|LADR 6.57]].
@@ -76,7 +89,7 @@ As for functionals (Lemma [[§34 Bras, Kets, and the Riesz Map#^lem-34-1|§34.1]
 
 ^pf-35-2
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]], [[§35 The Completeness Relation#^def-35-1|Def. §35.1]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]], [[§35 The Completeness Relation#^def-35-3|Def. §35.3]]
 
 > [!remark]- Connections
 > - The same theorem in the notation of Chapter 5: [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] ((1) ⇔ (2)).
@@ -92,7 +105,7 @@ As for functionals (Lemma [[§34 Bras, Kets, and the Riesz Map#^lem-34-1|§34.1]
 
 ^pf-35-3
 
-*Uses:* [[§35 The Completeness Relation#^prop-35-1|§35.1]], [[§35 The Completeness Relation#^def-35-1|Def. §35.1]]
+*Uses:* [[§35 The Completeness Relation#^prop-35-1|§35.1]], [[§35 The Completeness Relation#^def-35-2|Def. §35.2]]
 
 > [!remark] Remark
 > Each truncation $P_N$ misses the directions $e_{N+1}, e_{N+2}, \ldots$ entirely, and there is always a unit vector in those directions; so $P_N$ is never uniformly close to $\mathbf{1}$. What is true is that for each *fixed* state $x$ the missed part $\|x - P_N x\|^2 = \sum_{n > N} |(x, e_n)|^2$ tends to $0$. Physics computations only ever apply $\sum_n |e_n\rangle\langle e_n|$ to vectors, or sandwich it between vectors, so strong convergence is exactly what they need; it is also the first place where an identity of linear algebra holds in infinite dimensions only in a weakened sense.

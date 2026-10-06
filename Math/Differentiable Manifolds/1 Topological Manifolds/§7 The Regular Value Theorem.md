@@ -18,7 +18,7 @@ tags: [differentiable-manifolds, math591]
 
 ## The Jacobian and the Rank Condition
 
-> [!definition] Definition §7.1: Jacobian and Rank
+> [!definition] Definition §7.1: Jacobian Matrix
 > Let $F = (F_1, \ldots, F_m) : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$ and $p \in \mathbb{R}^N$. The **Jacobian matrix** of $F$ at $p$ is the $m \times N$ matrix of partial derivatives
 >
 > $$
@@ -32,32 +32,46 @@ tags: [differentiable-manifolds, math591]
 >
 > regarded as the linear map $DF_p : \mathbb{R}^N \to \mathbb{R}^m$, $v \mapsto DF_p\, v$. It is the derivative of $F$ at $p$: $F(p + v) = F(p) + DF_p\, v + o(|v|)$, and the [[Multivariable Chain Rule|chain rule]] for a curve reads $\frac{d}{dt} F(\gamma(t)) = DF_{\gamma(t)}\, \gamma'(t)$. For $m = 1$ the Jacobian is the single row $\nabla F(p)$, and $DF_p\, v = \nabla F(p) \cdot v$.
 >
-> The **rank** of an $m \times N$ matrix is the dimension of its image in $\mathbb{R}^m$, equivalently the number of linearly independent rows (equivalently, columns). It is at most $\min(m, N)$. $DF_p$ has **rank $m$** (**full rank** when $N \ge m$) iff it is surjective onto $\mathbb{R}^m$, iff the $m$ gradients $\nabla F_1(p), \ldots, \nabla F_m(p)$ are linearly independent. For $m = 1$ this just says $\nabla F(p) \neq 0$; for $m = 2$ it says $\nabla F_1(p)$ and $\nabla F_2(p)$ are nonzero and not parallel.
->
 > *Lee: App. C, Total and Partial Derivatives*
 
 ^def-7-1
 
 > [!remark]- Connections
 > - Home in 452: the total derivative and Jacobian, [[§7 Differentiability#^def-7-2|452 Def. §7.2]] and [[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]]; the differential, [[§10 The Differential#^def-10-1|452 Def. §10.1]].
-> - Rank: [[§9 Matrices#^ladr-3-58|LADR 3.58]]; row rank equals column rank, [[§9 Matrices#^ladr-3-57|LADR 3.57]].
 > - Coordinate-free differential: [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]].
+
+> [!definition] Definition §7.2: Rank
+> The **rank** of an $m \times N$ matrix is the dimension of its image in $\mathbb{R}^m$, equivalently the number of linearly independent rows (equivalently, columns). It is at most $\min(m, N)$. The Jacobian $DF_p$ of [[§7 The Regular Value Theorem#^def-7-1|Definition §7.1]] has **rank $m$** (**full rank** when $N \ge m$) iff it is surjective onto $\mathbb{R}^m$, iff the $m$ gradients $\nabla F_1(p), \ldots, \nabla F_m(p)$ are linearly independent. For $m = 1$ this just says $\nabla F(p) \neq 0$; for $m = 2$ it says $\nabla F_1(p)$ and $\nabla F_2(p)$ are nonzero and not parallel.
+>
+> *Lee: App. C, Total and Partial Derivatives*
+
+^def-7-2
+
+> [!remark]- Connections
+> - Rank: [[§9 Matrices#^ladr-3-58|LADR 3.58]]; row rank equals column rank, [[§9 Matrices#^ladr-3-57|LADR 3.57]].
+> - The rank of a smooth map of manifolds: [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]].
 
 ## Regular Points and Regular Values
 
-> [!definition] Definition §7.4: Regular Point and Regular Value
-> Let $F : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$.
-> 1. A point $p \in \mathbb{R}^N$ is a **regular point** of $F$ if the Jacobian $DF_p : \mathbb{R}^N \to \mathbb{R}^m$ ([[§7 The Regular Value Theorem#^def-7-1|Definition §7.1]]) is surjective, i.e. has rank $m$. Otherwise $p$ is a **critical point**.
-> 2. A value $c \in \mathbb{R}^m$ is a **regular value** of $F$ if every point of the level set $F^{-1}(c)$ is a regular point. Otherwise $c$ is a **critical value**. (If $F^{-1}(c) = \emptyset$, then $c$ is vacuously a regular value.)
+> [!definition] Definition §7.3: Regular Point
+> Let $F : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$. A point $p \in \mathbb{R}^N$ is a **regular point** of $F$ if the Jacobian $DF_p : \mathbb{R}^N \to \mathbb{R}^m$ ([[§7 The Regular Value Theorem#^def-7-1|Definition §7.1]]) is surjective, i.e. has rank $m$ ([[§7 The Regular Value Theorem#^def-7-2|Definition §7.2]]). Otherwise $p$ is a **critical point**. For scalar-valued $F$ ($m = 1$) the Jacobian is the row vector $\nabla F(p)$, and $p$ is a regular point iff $\nabla F(p) \neq 0$.
 >
-> For scalar-valued $F$ ($m = 1$) the Jacobian is the row vector $\nabla F(p)$, and $p$ is a regular point iff $\nabla F(p) \neq 0$; so $c \in \mathbb{R}$ is a regular value iff $\nabla F$ vanishes nowhere on $F^{-1}(c)$.
+> *Lee: Ch. 5, p. 105*
+
+^def-7-3
+
+> [!remark]- Connections
+> - The same notion defined again later, for smooth maps of manifolds: [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]] and [[§34 Submersions#^def-34-3|Def. §34.3]].
+
+> [!definition] Definition §7.4: Regular Value
+> Let $F : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$. A value $c \in \mathbb{R}^m$ is a **regular value** of $F$ if every point of the level set $F^{-1}(c)$ is a regular point ([[§7 The Regular Value Theorem#^def-7-3|Definition §7.3]]). Otherwise $c$ is a **critical value**. (If $F^{-1}(c) = \emptyset$, then $c$ is vacuously a regular value.) So for scalar-valued $F$, $c \in \mathbb{R}$ is a regular value iff $\nabla F$ vanishes nowhere on $F^{-1}(c)$.
 >
 > *Lee: Ch. 5, p. 105, with the same convention that $c$ is regular when $F^{-1}(c) = \emptyset$*
 
 ^def-7-4
 
 > [!remark]- Connections
-> - The same notion defined again later: without coordinates, [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]; for smooth maps of manifolds, [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§34 Submersions#^def-34-3|Def. §34.3]].
+> - The same notion defined again later: without coordinates, [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]; for smooth maps of manifolds, [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§34 Submersions#^def-34-4|Def. §34.4]].
 
 > [!remark] Remark: The Constraint $N \ge m$
 > Regular points can exist only when $N \ge m$, and the case $N = m$ is special; both facts are made precise in [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5]], once the regular value theorem is available. Geometrically, one cannot cut an $N$-dimensional space down by more than $N$ independent constraints and have anything left — the dimension count $N - m$ would be negative. The boundary case $N = m$ belongs to the *inverse* function theorem rather than the implicit one. The situation of interest below is $N = n^2$, $m = 1$.

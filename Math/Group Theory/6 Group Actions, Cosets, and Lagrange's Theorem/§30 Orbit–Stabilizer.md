@@ -213,7 +213,7 @@ tags: [group-theory, math493]
 
 ^pf-30-6
 
-*Uses:* [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§27 Orbits#^prop-27-1|§27.1]]
+*Uses:* [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^def-26-2|Def. §26.2]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-2|Def. §27.2]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§27 Orbits#^prop-27-1|§27.1]]
 
 > [!example] Example §30.3: Burnside's Lemma in Action
 > 1. *$S_3$ on $\{1, 2, 3\}$.* The identity fixes $3$ points, each transposition $1$, each $3$-cycle $0$: $\frac{1}{6}(3 + 1 + 1 + 1 + 0 + 0) = 1$ orbit.

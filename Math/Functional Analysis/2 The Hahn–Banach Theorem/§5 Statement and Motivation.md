@@ -11,10 +11,9 @@ tags: [functional-analysis, math556]
 
 ## Positive Homogeneous Subadditive Functions
 
-> [!definition] Definition §5.1: Positive Homogeneous; Subadditive
+> [!definition] Definition §5.1: Positive Homogeneous
 > Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is
 > - (1) **positive homogeneous** if $p(ax) = a\,p(x)$ for all $a \geq 0$ and all $x \in X$;
-> - (2) **subadditive** if $p(x + y) \leq p(x) + p(y)$ for all $x, y \in X$.
 >
 > *Lax: §3.1, conditions (1)–(2) of Thm 1*
 
@@ -28,6 +27,17 @@ tags: [functional-analysis, math556]
 > Positive homogeneity only involves scalars $a \geq 0$: multiplying $x$ by a non-negative real number pulls that number out of $p$. Nothing is said about negative scalars, and $p$ is *not* required to be non-negative. (For a norm, non-negativity is part of the definition; here it is not assumed.)
 
 ^rem-5-1
+
+> [!definition] Definition §5.2: Subadditive
+> Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is
+> - (2) **subadditive** if $p(x + y) \leq p(x) + p(y)$ for all $x, y \in X$.
+>
+> *Lax: §3.1, conditions (1)–(2) of Thm 1*
+
+^def-5-2
+
+> [!remark]- Connections
+> - The triangle inequality of a norm is subadditivity: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-2|551 Def. §34.2]]; in this course [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]].
 
 > [!theorem] Lemma §5.1: $p(0) = 0$
 > If $p : X \to \mathbb{R}$ is positive homogeneous, then $p(0) = 0$.
@@ -109,7 +119,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 ^thm-5-2
 
 > [!remark]- Connections
-> - Proof: [[§6 Proof of the Hahn–Banach Theorem#^pf-5-2|§5]]. Applied to a gauge: [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]. Complex scalars: [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]].
+> - Proof: [[§6 Proof of the Hahn–Banach Theorem#^pf-5-2|§6]]. Applied to a gauge: [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]. Complex scalars: [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]].
 
 > [!remark] Note: Notation
 > Throughout these notes a functional given on a subspace is written $\ell$ and its extension $L$. Wu and Lax keep the name $\ell$ for the extension; the distinction is kept here because several proofs manipulate both at once.
@@ -133,8 +143,8 @@ The proof is given in [[§6 Proof of the Hahn–Banach Theorem|§6]]. The comple
 
 ^ex-5-3
 
-> [!definition] Definition §5.3: Hyperplane; Half-Space
-> Let $\ell$ be a nonzero linear functional on a linear space $X$ over $\mathbb{R}$ and $c \in \mathbb{R}$. The set $\{ x \in X : \ell(x) = c \}$ is called a **hyperplane**, and the sets $\{ \ell(x) < c \}$, $\{ \ell(x) > c \}$ are the two **half-spaces** it bounds.
+> [!definition] Definition §5.3: Hyperplane
+> Let $\ell$ be a nonzero linear functional on a linear space $X$ over $\mathbb{R}$ and $c \in \mathbb{R}$. The set $\{ x \in X : \ell(x) = c \}$ is called a **hyperplane**.
 >
 > *Lax: §3.2, hyperplanes*
 
@@ -143,6 +153,13 @@ The proof is given in [[§6 Proof of the Hahn–Banach Theorem|§6]]. The comple
 > [!remark]- Connections
 > - Linear functionals: [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|Def. §3.5]], [[§12 Duality#^ladr-3-108|LADR 3.108]]; on $\mathbb{R}^n$ they are the $x \mapsto a \cdot x$ of [[§12 Duality#^ladr-3-109|LADR 3.109]].
 > - On a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]], the kernel $\{\ell = 0\}$ of a bounded functional has codimension one: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]].
+
+> [!definition] Definition §5.4: Half-Space
+> Let $\ell$, $c$ and the hyperplane $\{ x \in X : \ell(x) = c \}$ be as in Definition [[§5 Statement and Motivation#^def-5-3|§5.3]]. The sets $\{ \ell(x) < c \}$, $\{ \ell(x) > c \}$ are the two **half-spaces** it bounds.
+>
+> *Lax: §3.2, hyperplanes*
+
+^def-5-4
 
 > [!remark] Remark
 > Linear functionals are thus directly tied to geometry: a linear functional and a constant determine a hyperplane and its two half-spaces. Combined with the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach theorem]], this is what makes it possible to separate convex sets by hyperplanes in general linear spaces ([[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]), a theme that will recur.

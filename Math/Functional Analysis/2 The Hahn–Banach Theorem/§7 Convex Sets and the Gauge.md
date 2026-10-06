@@ -39,7 +39,7 @@ The three functions $p_1, p_2, p_3$ on $\mathbb{R}^n$ ([[§5 Statement and Motiv
 
 ^pf-7-1
 
-*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]]
+*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]]
 
 > [!remark]- Connections
 > - The unit ball of a norm is convex by this proposition: [[§11 Normed Linear Spaces#^prop-11-1|§11.1]].
@@ -100,7 +100,7 @@ The converse direction — starting from a convex set and producing a $p$ — is
 
 ^pf-7-2
 
-*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]]
+*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]]
 
 > [!remark] Remark: Comparison with Lax
 > Lax's Theorem 4(i) asserts only that $0$ is an interior point of $\{p < 1\}$, leaving the rest as an exercise. The stronger statement proved here, that every point is interior, is what Corollary [[§7 Convex Sets and the Gauge#^cor-7-8|§7.8]] and the separation theorem ([[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]) use.
@@ -299,7 +299,7 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 
 ^pf-7-6
 
-*Uses:* [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-3|§7.3]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]]
+*Uses:* [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-3|§7.3]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]]
 
 > [!remark] Remark
 > The two properties come from the two hypotheses on $K$: positive homogeneity is pure bookkeeping with the definition (it would hold for any $K$ for which the infimum is finite), while subadditivity is convexity, used exactly once, with the convexity coefficients $a/(a+b)$ and $b/(a+b)$. Together with Proposition [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]] this closes the loop: a positive homogeneous subadditive $p$ produces a convex set $\{p < 1\}$, and a convex set (with $0$ interior) produces a positive homogeneous subadditive $p_K$.

@@ -16,13 +16,23 @@ tags: [group-theory, math493]
 
 *Uses:* [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§4 Subgroups#^def-4-1|Def. §4.1]]
 
-> [!definition] Definition §18.2: Conjugation; Conjugate Elements; Inner Automorphism
-> Let $G$ be a group and $a \in G$. **Conjugation by $a$** is the map $c_a: G \to G$, $c_a(g) = aga^{-1}$. Elements $g, g' \in G$ are **conjugate** if $g' = aga^{-1}$ for some $a \in G$. The maps $c_a$ are automorphisms of $G$ ([[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]], next); they are called the **inner automorphisms** of $G$.
+> [!definition] Definition §18.2: Conjugation
+> Let $G$ be a group and $a \in G$. **Conjugation by $a$** is the map $c_a: G \to G$, $c_a(g) = aga^{-1}$.
 
 ^def-18-2
 
+> [!definition] Definition §18.3: Conjugate Elements
+> Elements $g, g' \in G$ are **conjugate** if $g' = aga^{-1}$ for some $a \in G$.
+
+^def-18-3
+
 > [!remark]- Connections
 > - The classes of conjugate elements: [[§33 Conjugacy Classes#^def-33-1|Conjugacy Class]] (§33.1).
+
+> [!definition] Definition §18.4: Inner Automorphism
+> The maps $c_a$ are automorphisms of $G$ ([[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]], next); they are called the **inner automorphisms** of $G$.
+
+^def-18-4
 
 > [!theorem] Proposition §18.1: Conjugation Is an Automorphism
 > Let $G$ be a group and $a \in G$. Let $c_a: G \to G$, $c_a(g) = a g a^{-1}$, be conjugation by $a$.
@@ -59,10 +69,15 @@ tags: [group-theory, math493]
 
 ^rem-18-1
 
-> [!definition] Definition §18.5: $\operatorname{Hom}(G, H)$; Pointwise Product
-> For groups $G$ and $H$, let $\operatorname{Hom}(G, H)$ denote the set of all group homomorphisms $G \to H$. For $\alpha, \beta \in \operatorname{Hom}(G, H)$, the **pointwise product** $\alpha\beta: G \to H$ is defined by $(\alpha\beta)(g) = \alpha(g)\,\beta(g)$, the product taken in $H$.
+> [!definition] Definition §18.5: $\operatorname{Hom}(G, H)$
+> For groups $G$ and $H$, let $\operatorname{Hom}(G, H)$ denote the set of all group homomorphisms $G \to H$.
 
 ^def-18-5
+
+> [!definition] Definition §18.6: Pointwise Product
+> For $\alpha, \beta \in \operatorname{Hom}(G, H)$, the **pointwise product** $\alpha\beta: G \to H$ is defined by $(\alpha\beta)(g) = \alpha(g)\,\beta(g)$, the product taken in $H$.
+
+^def-18-6
 
 > [!remark]- Connections
 > - Linear-algebra analogue: [[§7 Vector Space of Linear Maps#^ladr-3-5|Addition and scalar multiplication on L(V, W)]] (LADR 3.5), the pointwise sum of linear maps.
@@ -89,7 +104,7 @@ tags: [group-theory, math493]
 
 ^pf-18-2
 
-*Uses:* [[§18 Conjugation, Products, and Pointwise Products#^def-18-5|Def. §18.5]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§14 Multiplication Tables#^ex-14-5|Ex. §14.5]]
+*Uses:* [[§18 Conjugation, Products, and Pointwise Products#^def-18-5|Def. §18.5]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-6|Def. §18.6]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§14 Multiplication Tables#^ex-14-5|Ex. §14.5]]
 
 > [!definition] Definition §18.7: Structure Maps of a Product
 > For groups $G$ and $H$, the **projections** $\pi_1: G \times H \to G$, $\pi_1(g, h) = g$, and $\pi_2: G \times H \to H$, $\pi_2(g, h) = h$; the **inclusions** $\iota_1: G \to G \times H$, $\iota_1(g) = (g, e_H)$, and $\iota_2: H \to G \times H$, $\iota_2(h) = (e_G, h)$; and, for a single group $G$, the **diagonal** $\Delta: G \to G \times G$, $\Delta(g) = (g, g)$, and the **multiplication map** $\nabla: G \times G \to G$, $\nabla(g, h) = gh$.

@@ -19,11 +19,17 @@ $S_3$ shows why a character needs an abelian target: the identity map $S_3 \to S
 
 ## The Alternating Groups Aₙ
 
-$A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator ([[§47 Commutators#^prop-47-2|PS 2.4(3)]]) and no transposition is ([[§47 Commutators#^prop-47-3|PS 2.4(4)]]). Hence every character of $S_n$ is trivial on $A_n$, and the abelianization of $S_n$ is $S_n/A_n \cong \{\pm 1\}$.
+$A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator ([[§47 Commutators#^prop-47-2|PS 2.4(3)]]) and no transposition is ([[§47 Commutators#^prop-47-3|PS 2.4(4)]]). Hence every character of $S_n$ is trivial on $A_n$, and the abelianization of $S_n$ is $S_n/A_n \cong \{\pm 1\}$. For $n \geq 5$, $A_n$ is also its own commutator subgroup, so its characters are trivial; $A_3$ and $A_4$ show that the bound is sharp.
 
 ![[§47 Commutators#^thm-47-5]]
 
 ![[§47 Commutators#^ex-47-1]]
+
+![[§47 Commutators#^lem-47-9]]
+
+![[§47 Commutators#^thm-47-10]]
+
+![[§47 Commutators#^rem-47-5]]
 
 *$A_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · no later appearance yet · [[The alternating group A₅|all appearances]]
 
@@ -34,5 +40,7 @@ The determinant is the model character of $GL_n(k)$, and a character is the same
 ![[§46 Characters#^ex-46-1]]
 
 ![[§46 Characters#^rem-46-4]]
+
+![[§47 Commutators#^ex-47-2]]
 
 *$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · no later appearance yet · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
