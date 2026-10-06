@@ -2,20 +2,20 @@
 type: section
 subject: "[[Quantum Field Theory]]"
 level: C
-chapter: C1
-section: C1.5
+chapter: C1a
+section: C1a.5
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C1.4 The Lorentz Group]] · ↑ [[· C1 Preliminaries]] · [[§C1.6 Infinitesimal Lorentz Transformations and Generators]] →
+← [[§C1a.4 The Lorentz Group]] · ↑ [[· C1a Preliminaries]] · [[§C1a.6 Infinitesimal Lorentz Transformations and Generators]] →
 
 *Sources: the user's PHY 513 notes, Ch. 1 §§1.4–1.5, Ch. 2 §2.3 ("Derivatives") · PHY 513 Lecture 1 (Larsen), Part C; Problem Set 1, as recorded in the user's notes · Yu Zhao-Huan, 量子场论讲义, §§1.4–1.5.*
 
-What index calculus does field theory need, and why are its rules consequences rather than conventions? Relativity level B is the home of four-vectors, the metric and index gymnastics ([[§B1.1 The Metric and Index Notation|REL §B1.1]]), tensors defined by their components, the invariant tensors, the Levi-Civita symbol as a pseudotensor, the gradient as a covector and the covariance principle ([[§B2.2 Tensors and the Covariance Principle|REL §B2.2]]); with $c = 1$ they hold here unchanged and are linked, not restated. This section adds what field theory uses on top: tensors as multilinear maps (so that the transformation law is derived), the contraction identities of $\varepsilon$ and its link to determinants, the $\varepsilon^{0123}$ convention against Peskin–Schroeder, the decomposition of a two-tensor and duality, and calculus with indices: plane waves, functions of $x^2$, Taylor expansion as the generator of translations, and derivatives with respect to four-vectors and tensor components, the tool behind every Euler–Lagrange equation and Noether current of [[§C1.9 The Action Principle and the Euler–Lagrange Equations|§C1.9]]–[[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1.12]].
+What index calculus does field theory need, and why are its rules consequences rather than conventions? Relativity level B is the home of four-vectors, the metric and index gymnastics ([[§B1.1 The Metric and Index Notation|REL §B1.1]]), tensors defined by their components, the invariant tensors, the Levi-Civita symbol as a pseudotensor, the gradient as a covector and the covariance principle ([[§B2.2 Tensors and the Covariance Principle|REL §B2.2]]); with $c = 1$ they hold here unchanged and are linked, not restated. This section adds what field theory uses on top: tensors as multilinear maps (so that the transformation law is derived), the contraction identities of $\varepsilon$ and its link to determinants, the $\varepsilon^{0123}$ convention against Peskin–Schroeder, the decomposition of a two-tensor and duality, and calculus with indices: plane waves, functions of $x^2$, Taylor expansion as the generator of translations, and derivatives with respect to four-vectors and tensor components, the tool behind every Euler–Lagrange equation and Noether current of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]–[[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.5]].
 
 ## Conventions and invariants
 
-> [!definition] Definition §C1.5.1: Four-Vectors and Index Positions in Natural Units
+> [!definition] Definition §C1a.5.1: Four-Vectors and Index Positions in Natural Units
 > With $c = 1$: $x^\mu = (t, \mathbf x)$, $p^\mu = (E, \mathbf p)$ (upper, contravariant); $x_\mu = g_{\mu\nu}x^\nu = (t, -\mathbf x)$ (lower, covariant); $g^{\mu\nu}$, the inverse of $g_{\mu\nu}$, is numerically the same matrix. An index appearing once up and once down in a term is summed; then
 >
 > $$
@@ -26,27 +26,27 @@ What index calculus does field theory need, and why are its rules consequences r
 > \partial_\mu = \frac{\partial}{\partial x^\mu} = (\partial_t, \nabla), \qquad \partial^\mu = g^{\mu\nu}\partial_\nu = (\partial_t, -\nabla), \qquad \partial^2 \equiv \partial_\mu\partial^\mu = \partial_t^2 - \nabla^2 .
 > $$
 >
-> The last operator is the d'Alembertian (names in other sources: [[§C1.5 Vectors, Tensors and Index Notation#^cau-c1-5-8|Caution: Names for the d'Alembertian]]).
+> The last operator is the d'Alembertian (names in other sources: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-8|Caution: Names for the d'Alembertian]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.4, eqs. (fourvector), (lowerindex), (pq), (psquared); Ch. 2 §2.3, eqs. (partial), (box) · PHY 513 Lecture 1, Part C ("Index Gymnastics") · Yu §1.3, eqs. (1.18)–(1.23); §1.4, eqs. (1.89), (1.93)*
 
-^def-c1-5-1
+^def-c1a-5-1
 
 > [!caution] Caution: Names for the d'Alembertian
-> These notes write $\partial^2 \equiv \partial_\mu\partial^\mu = \partial_t^2 - \nabla^2$ everywhere, as Peskin–Schroeder (eq. (2.56)) and Yu do. Lecture 2 introduces both names, $\partial_\mu\partial^\mu = \partial^2 \equiv \Box$ (slide "Klein Gordon Equation"), and the user's PHY 513 notes write $\Box$ in Ch. 2–4 and $\partial^2$ from Ch. 5 on; earlier drafts of C1 followed the first usage. Relativity and Electromagnetism level C write $\Box = \partial_\mu\partial^\mu$, with $c$ restored ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-7|REL Theorem §B2.2.7]]); Griffiths and Electromagnetism level B write $\Box^2 = \nabla^2 - \frac{1}{c^2}\partial_t^2$ ([[§B11.1★ Potentials, Gauges and Retarded Potentials#^def-b11-1-1|EM Def. §B11.1.1]]), the opposite sign: $\partial^2 = -\Box^2$ at $c = 1$.
+> These notes write $\partial^2 \equiv \partial_\mu\partial^\mu = \partial_t^2 - \nabla^2$ everywhere, as Peskin–Schroeder (eq. (2.56)) and Yu do. Lecture 2 introduces both names, $\partial_\mu\partial^\mu = \partial^2 \equiv \Box$ (slide "Klein Gordon Equation"), and the user's PHY 513 notes write $\Box$ in Ch. 2–4 and $\partial^2$ from Ch. 5 on; earlier drafts of this chapter followed the first usage. Relativity and Electromagnetism level C write $\Box = \partial_\mu\partial^\mu$, with $c$ restored ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-7|REL Theorem §B2.2.7]]); Griffiths and Electromagnetism level B write $\Box^2 = \nabla^2 - \frac{1}{c^2}\partial_t^2$ ([[§B11.1★ Potentials, Gauges and Retarded Potentials#^def-b11-1-1|EM Def. §B11.1.1]]), the opposite sign: $\partial^2 = -\Box^2$ at $c = 1$.
 >
 > *Source: Lecture 2, slide "Klein Gordon Equation" · the user's PHY 513 notes, Ch. 2 §2.3, eq. (box), Ch. 6 · PS §2.4, eq. (2.56) · Yu §1.4*
 
-^cau-c1-5-8
+^cau-c1a-5-8
 
-These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]–[[§B1.1 The Metric and Index Notation#^def-b1-1-4|REL Def. §B1.1.4]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]] and [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-7|REL Theorem §B2.2.7]] with $c = 1$ and $\eta \to g$. That $p^\mu = m\,dx^\mu/ds$ is a four-vector and $p^2 = m^2$ is the normalization of the four-velocity is [[§B2.1 Four-Velocity, Four-Momentum and Collisions#^thm-b2-1-3|REL Theorem §B2.1.3]]; the corollary $\mathbf v = \mathbf p/E$ identifies the classical velocity with the real saddle point inside the light cone in [[§C1.3 Causal Structure and the Causality of a Single Particle|§C1.3]].
+These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]–[[§B1.1 The Metric and Index Notation#^def-b1-1-4|REL Def. §B1.1.4]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]] and [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-7|REL Theorem §B2.2.7]] with $c = 1$ and $\eta \to g$. That $p^\mu = m\,dx^\mu/ds$ is a four-vector and $p^2 = m^2$ is the normalization of the four-velocity is [[§B2.1 Four-Velocity, Four-Momentum and Collisions#^thm-b2-1-3|REL Theorem §B2.1.3]]; the corollary $\mathbf v = \mathbf p/E$ identifies the classical velocity with the real saddle point inside the light cone in [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]].
 
 > [!caution] Caution: A contraction is a plain sum; the signs live in the components
 > $a^\mu b_\mu = a^0b_0 + a^1b_1 + a^2b_2 + a^3b_3$ and $\partial_\mu F^{\mu\nu} = \partial_0F^{0\nu} + \partial_iF^{i\nu}$: no metric enters a contraction, and no minus sign appears. The familiar $a^\mu b_\mu = a^0b^0 - \mathbf a\cdot\mathbf b$ is this plain sum followed by $b_i = -b^i$, made because one insisted on upper components. In particular $\partial_i = \partial/\partial x^i$ is the ordinary gradient component, already lower, so $\partial_\mu j^\mu = \partial_tj^0 + \nabla\cdot\mathbf j$ with a plus sign. A minus is visible only in expressions written entirely with indices at one height, such as $\partial^2 = \partial_0\partial^0 + \partial_i\partial^i = \partial_t^2 - \nabla^2$, where $\partial^i = -\partial_i$ supplies it. A contracted pair may be seesawed, $\partial_iF^{i\nu} = \partial^iF_i{}^\nu$, with the same value.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Caution "A contraction is a plain sum; the signs live in the components")*
 
-^cau-c1-5-1
+^cau-c1a-5-1
 
 > [!caution] Caution: Index bookkeeping: legal, illegal, and matrix products
 > - **Legal terms.** Within one term an index appears at most twice; if twice, once up and once down (summed); if once, it is free, and both sides of an equation carry the same free indices at the same heights ([[§B1.1 The Metric and Index Notation#^def-b1-1-2|REL Def. §B1.1.2]]). So $a_\mu a_\nu b^{\mu\rho}$ is a legal tensor with free $\nu$, $\rho$; $a_\mu a_\nu b^{\mu\rho}a_\nu$ ($\nu$ twice down) and $a_\rho a_\nu b^{\mu\rho}a_\rho$ ($\rho$ three times) are illegal; $a_\rho a_\nu b^{\rho\mu} = B^{\mu\nu}$ is illegal ($\nu$ down on the left, up on the right); $a_\rho a_\nu b^{\rho\mu} = B^{\mu\rho}{}_\nu z_\rho$ is legal.
@@ -55,7 +55,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Cautions "Dummy indices have no identity", "Index bookkeeping: legal, illegal, and matrix products (Problem Set 1)") · PHY 513, Problem Set 1, Problems 1–2*
 
-^cau-c1-5-2
+^cau-c1a-5-2
 
 > [!caution] Caution: Three deltas that are not the same object
 > - $\delta^\mu{}_\nu$, one index up and one down, is the only "delta" that is a Lorentz tensor: the identity map, with trace $\delta^\mu{}_\mu = 4$, acting by substitution, $\delta^\mu{}_\nu A^\nu = A^\mu$.
@@ -64,9 +64,9 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Caution "Three deltas that are not the same object")*
 
-^cau-c1-5-3
+^cau-c1a-5-3
 
-> [!definition] Definition §C1.5.2: Mandelstam Variables
+> [!definition] Definition §C1a.5.2: Mandelstam Variables
 > For a two-body process $1 + 2 \to 3 + 4$ with on-shell four-momenta $p_i^2 = m_i^2$ and $p_1 + p_2 = p_3 + p_4$,
 >
 > $$
@@ -77,9 +77,9 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Definition "Mandelstam variables (Problem Set 1)") · PHY 513, Problem Set 1, Problem 5*
 
-^def-c1-5-2
+^def-c1a-5-2
 
-> [!theorem] Theorem §C1.5.1: The Mandelstam Sum Rule and the Momentum Transfer
+> [!theorem] Theorem §C1a.5.1: The Mandelstam Sum Rule and the Momentum Transfer
 > 1. $s + t + u = m_1^2 + m_2^2 + m_3^2 + m_4^2$.
 > 2. With particle 2 at rest in the laboratory, $t = m_2^2 + m_4^2 - 2m_2E_4$, where $E_4$ is the laboratory energy of particle 4.
 > 3. For elastic scattering ($m_3 = m_1$, $m_4 = m_2$), in the centre-of-mass frame, with $p' = |\mathbf p_1'|$ and $\theta'$ the angle between $\mathbf p_1'$ and $\mathbf p_3'$,
@@ -92,7 +92,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Definition "Mandelstam variables (Problem Set 1)") · PHY 513, Problem Set 1, Problem 5(e)–(f)*
 
-^thm-c1-5-1
+^thm-c1a-5-1
 
 > [!derivation]- Derivation
 > **1. Expand the squares.** With $p_i^2 = m_i^2$:
@@ -114,20 +114,20 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 > - $t \le 0$ in the physical region of elastic scattering: the exchanged momentum $q$ is spacelike, so an exchanged particle is off its mass shell (QFT C7, planned).
 > - Part 2 needs no frame change at all: one invariant evaluated in the most convenient frame (Remark below).
 
-^der-c1-5-1
+^der-c1a-5-1
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^def-c1-5-1|Def. §C1.5.1]], [[§C1.5 Vectors, Tensors and Index Notation#^def-c1-5-2|Def. §C1.5.2]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]
 
 > [!remark] Remark: Compute invariants, not transformations
 > Rather than transforming a quantity between frames, find an invariant that contains it, evaluate it in whichever frame is easiest, and read off the answer in the frame of interest. For a projectile on a fixed target, $s$ evaluated in the laboratory and in the centre-of-mass frame gives $E_{\rm cm}^2 = m_1^2 + m_2^2 + 2m_2E_{\rm lab}$ ([[§B2.1 Four-Velocity, Four-Momentum and Collisions#^thm-b2-1-7|REL Theorem §B2.1.7]] with $c = 1$): at high energy $E_{\rm cm} \simeq \sqrt{2m_2E_{\rm lab}}$ grows only as the square root of the beam energy, while two colliding beams give $E_{\rm cm} = 2E_{\rm beam}$. That is why high-energy physics uses colliders. For $e^+e^- \to \gamma\gamma$ on an electron at rest, $E_{\rm cm} = \sqrt{2m_e(E + m_e)}$, each photon carrying $E_{\rm cm}/2$; restoring $c$ is [[P4 Restoring ħ and c|P4]].
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Derivation "Invariants in practice: centre-of-mass energy (Problem Set 1)", Principle "Strategy: compute invariants") · PHY 513 Lecture 1, Part C · PHY 513, Problem Set 1, Problems 4–5*
 
-^rem-c1-5-1
+^rem-c1a-5-1
 
 ## Tensors as multilinear maps
 
-> [!definition] Definition §C1.5.3: Dual Space; Tensor as a Multilinear Map
+> [!definition] Definition §C1a.5.3: Dual Space; Tensor as a Multilinear Map
 > Let $V = \mathbb R^4$ with basis $e_\mu$, so $x = x^\mu e_\mu$. Its **dual space** $V^{\ast}$ is the space of linear functionals $\omega: V \to \mathbb R$ ([[§12 Duality#^ladr-3-110|LADR Def. 3.110]]), with dual basis $e^\mu(e_\nu) = \delta^\mu{}_\nu$ ([[§12 Duality#^ladr-3-112|LADR Def. 3.112]]); $\omega = \omega_\mu e^\mu$ and $\omega(x) = \omega_\mu x^\mu$, with no metric. A **tensor of type $(r, s)$** is a multilinear map ([[§38 Tensor Products#^ladr-9-85|LADR Def. 9.85]])
 >
 > $$
@@ -138,9 +138,9 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Vectors, dual vectors, and the metric as an isomorphism"; "Tensors as multilinear maps, and their transformation law")*
 
-^def-c1-5-3
+^def-c1a-5-3
 
-> [!theorem] Theorem §C1.5.2: The Metric Identifies Vectors with Covectors
+> [!theorem] Theorem §C1a.5.2: The Metric Identifies Vectors with Covectors
 > The metric $g(x, y) = g_{\mu\nu}x^\mu y^\nu$ is a symmetric, nondegenerate, indefinite bilinear form. The map $x \mapsto x^\flat = g(x, \cdot\,)$ is an isomorphism $V \to V^*$, with components and inverse
 >
 > $$
@@ -151,7 +151,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5, eqs. (metricform), (flat), (inversemetric); Principle "Why indices go up and down"*
 
-^thm-c1-5-2
+^thm-c1a-5-2
 
 > [!derivation]- Derivation
 > **1. The form.** Symmetry and bilinearity, nondegeneracy ($\det g = -1 \ne 0$) and indefiniteness are [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]], 1–3.
@@ -167,11 +167,11 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 > - Lowering commutes with Lorentz transformations, $(\Lambda x)^\flat = x^\flat\circ\Lambda^{-1}$, which in components is the inverse-transpose law $\Lambda_\mu{}^\nu = (\Lambda^{-1})^\nu{}_\mu$ ([[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2 and 4).
 > - In differential geometry this is the musical isomorphism of a pseudo-Riemannian metric on one tangent space ([[§32 The Cotangent Space#^def-32-1|591 Def. §32.1]]).
 
-^der-c1-5-2
+^der-c1a-5-2
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^def-c1-5-3|Def. §C1.5.3]], [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]], [[§B1.1 The Metric and Index Notation#^thm-b1-1-2|REL Theorem §B1.1.2]], [[§12 Duality#^ladr-3-111|LADR Thm. 3.111]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-3|Def. §C1a.5.3]], [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]], [[§B1.1 The Metric and Index Notation#^thm-b1-1-2|REL Theorem §B1.1.2]], [[§12 Duality#^ladr-3-111|LADR Thm. 3.111]]
 
-> [!theorem] Theorem §C1.5.3: The Transformation Law Follows from Multilinearity
+> [!theorem] Theorem §C1a.5.3: The Transformation Law Follows from Multilinearity
 > For an invertible $\Lambda$ acting on $V$, the transformed tensor $\Lambda T(\omega_1, \dots, x_1, \dots) = T(\omega_1\circ\Lambda, \dots, \Lambda^{-1}x_1, \dots)$ (for a vector, $\Lambda x$; for a covector, $\omega\circ\Lambda^{-1}$) has components
 >
 > $$
@@ -182,7 +182,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5, eqs. (covectortransform), (tensortransform)*
 
-^thm-c1-5-3
+^thm-c1a-5-3
 
 > [!derivation]- Derivation
 > **1. The transformed basis functionals.** For the dual basis, $(e^\mu\circ\Lambda)(e_\rho) = e^\mu(\Lambda e_\rho) = e^\mu(\Lambda^\sigma{}_\rho e_\sigma) = \Lambda^\mu{}_\rho$, so $e^\mu\circ\Lambda = \Lambda^\mu{}_\rho e^\rho$.
@@ -204,29 +204,29 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 > - The lecture's definition, "anything that transforms like $p^\mu q^\nu$", is the same law read backwards on products; the coefficient array $\Lambda^\mu{}_\lambda\Lambda^\nu{}_\sigma$ is a $16\times16$ matrix acting on the sixteen components.
 > - Contraction, products, and raising and lowering then commute with $\Lambda$ ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-1|REL Theorem §B2.2.1]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]]), which is the covariance principle's toolkit ([[§B2.2 Tensors and the Covariance Principle#^pr-b2-2-9|REL Principle §B2.2.9]]).
 
-^der-c1-5-3
+^der-c1a-5-3
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^def-c1-5-3|Def. §C1.5.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-3|Def. §C1a.5.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]]
 
 > [!caution] Caution: A tensor is not a product of vectors
-> The law is exhibited on products $p^\mu q^\nu$, but a general two-tensor is a *sum* of such products: a product has rank one as a $4\times4$ matrix, a general $T^{\mu\nu}$ rank up to four. The field-strength tensor of electromagnetism is not a product ([[§C1.7 Relativistic Electrodynamics in Index Form|§C1.7]]).
+> The law is exhibited on products $p^\mu q^\nu$, but a general two-tensor is a *sum* of such products: a product has rank one as a $4\times4$ matrix, a general $T^{\mu\nu}$ rank up to four. The field-strength tensor of electromagnetism is not a product ([[§C1a.7 Relativistic Electrodynamics in Index Form|§C1a.7]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Caution "A tensor is not a product of vectors") · PHY 513 Lecture 1, Part C ("Tensors")*
 
-^cau-c1-5-4
+^cau-c1a-5-4
 
 ## The Levi-Civita symbol
 
 > [!caution] Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder
-> These notes, the course (Problem Set 1), Yu (1.104) and Relativity level B ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-2|REL Def. §B2.2.2]]) use $\varepsilon^{0123} = +1$, hence $\varepsilon_{0123} = -1$; Peskin–Schroeder use $\varepsilon^{0123} = -1$. Every quantity containing one $\varepsilon$ changes sign between the two: the dual field tensor $\tilde F^{\mu\nu}$, and $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf E\cdot\mathbf B$ here, $+8\,\mathbf E\cdot\mathbf B$ in Peskin–Schroeder ([[§C1.7 Relativistic Electrodynamics in Index Form#^thm-c1-7-2|Theorem §C1.7.2]]). Products of two $\varepsilon$'s do not. Check the convention of a source before comparing any pseudoscalar sign. Lowering all four indices always costs $\det g = -1$.
+> These notes, the course (Problem Set 1), Yu (1.104) and Relativity level B ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-2|REL Def. §B2.2.2]]) use $\varepsilon^{0123} = +1$, hence $\varepsilon_{0123} = -1$; Peskin–Schroeder use $\varepsilon^{0123} = -1$. Every quantity containing one $\varepsilon$ changes sign between the two: the dual field tensor $\tilde F^{\mu\nu}$, and $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf E\cdot\mathbf B$ here, $+8\,\mathbf E\cdot\mathbf B$ in Peskin–Schroeder ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]). Products of two $\varepsilon$'s do not. Check the convention of a source before comparing any pseudoscalar sign. Lowering all four indices always costs $\det g = -1$.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Definition "The Levi-Civita symbol, and the convention of these notes") · PHY 513, Problem Set 1, Problem 3 · Yu §1.5, eq. (1.104)*
 
-^cau-c1-5-5
+^cau-c1a-5-5
 
 Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta} = (\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$, invariant under $\det\Lambda = +1$ and odd under $P$ and $T$ separately (a pseudotensor), is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]].
 
-> [!theorem] Theorem §C1.5.4: Contraction Identities of the Levi-Civita Symbol
+> [!theorem] Theorem §C1a.5.4: Contraction Identities of the Levi-Civita Symbol
 > 1. (Minkowski, $\varepsilon^{0123} = +1$.) The product of two symbols is minus the determinant of deltas,
 >
 > $$
@@ -238,7 +238,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Contracting Levi-Civita symbols"), eqs. (epseps4), (epseps2), (epseps3) · Yu §1.5, eqs. (1.106), (1.118)–(1.119)*
 
-^thm-c1-5-4
+^thm-c1a-5-4
 
 > [!derivation]- Derivation
 > **1. Both sides vanish together.** The left side vanishes if two of $\mu\nu\rho\sigma$ coincide, or two of $\alpha\beta\gamma\delta$. The determinant then has two equal columns, or two equal rows, and vanishes too ([[§37 Determinants#^ladr-9-45|LADR Thm. 9.45]]).
@@ -257,14 +257,14 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **What the derivation shows**
 > - Every Minkowski $\varepsilon\varepsilon$ identity is its Euclidean twin times $\det g = -1$.
-> - Working rules: fix the convention for $\varepsilon_{0123}$ first; bring the contracted indices to the leading slots of both symbols by antisymmetry (one sign per transposition) before applying the identity; in three-vector notation every lowered spatial index of a four-vector carries a sign ([[§C1.5 Vectors, Tensors and Index Notation#^cau-c1-5-6|Caution: Three-dimensional notation inside a four-dimensional expression]]).
-> - Used next: duality squares to $-1$ (Theorem §C1.5.7); the invariants of the field tensor ([[§C1.7 Relativistic Electrodynamics in Index Form#^thm-c1-7-2|Theorem §C1.7.2]]); the three-dimensional identity is the tool behind the vector-calculus product rules of [[§B1.1 Fields, Integral Theorems and Curvilinear Coordinates#^thm-b1-1-1|EM Theorem §B1.1.1]].
+> - Working rules: fix the convention for $\varepsilon_{0123}$ first; bring the contracted indices to the leading slots of both symbols by antisymmetry (one sign per transposition) before applying the identity; in three-vector notation every lowered spatial index of a four-vector carries a sign ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-6|Caution: Three-dimensional notation inside a four-dimensional expression]]).
+> - Used next: duality squares to $-1$ (Theorem §C1a.5.7); the invariants of the field tensor ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]); the three-dimensional identity is the tool behind the vector-calculus product rules of [[§B1.1 Fields, Integral Theorems and Curvilinear Coordinates#^thm-b1-1-1|EM Theorem §B1.1.1]].
 
-^der-c1-5-4
+^der-c1a-5-4
 
 *Uses:* [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-2|REL Def. §B2.2.2]], [[§37 Determinants#^ladr-9-45|LADR Thm. 9.45]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]]
 
-> [!theorem] Theorem §C1.5.5: The Levi-Civita Symbol and the Determinant
+> [!theorem] Theorem §C1a.5.5: The Levi-Civita Symbol and the Determinant
 > For every $4\times4$ matrix $A^\mu{}_\nu$:
 > 1. $\varepsilon_{\mu\nu\rho\sigma}A^\mu{}_\alpha A^\nu{}_\beta A^\rho{}_\gamma A^\sigma{}_\delta = (\det A)\,\varepsilon_{\alpha\beta\gamma\delta}$;
 > 2. $\det A = -\dfrac{1}{4!}\,\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alpha\beta\gamma\delta}A^\mu{}_\alpha A^\nu{}_\beta A^\rho{}_\gamma A^\sigma{}_\delta$;
@@ -275,48 +275,48 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Levi-Civita and determinants"), eq. (epsdet) · Yu §1.5, eqs. (1.107)–(1.110)*
 
-^thm-c1-5-5
+^thm-c1a-5-5
 
 > [!derivation]- Derivation
 > **1. Part 1.** Call the left side $L_{\alpha\beta\gamma\delta}$. Exchanging two of its free indices, say $\alpha \leftrightarrow \beta$, and renaming the dummies $\mu \leftrightarrow \nu$ gives back $L$ with $\varepsilon_{\nu\mu\rho\sigma} = -\varepsilon_{\mu\nu\rho\sigma}$: $L$ is totally antisymmetric, hence $L_{\alpha\beta\gamma\delta} = L_{0123}\,\varepsilon_{\alpha\beta\gamma\delta}/\varepsilon_{0123}$. And $L_{0123} = \varepsilon_{\mu\nu\rho\sigma}A^\mu{}_0A^\nu{}_1A^\rho{}_2A^\sigma{}_3 = \varepsilon_{0123}\sum_\pi\operatorname{sgn}\pi\,A^{\pi(0)}{}_0\cdots A^{\pi(3)}{}_3 = \varepsilon_{0123}\det A$ by the Leibniz formula ([[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]]). So $L_{\alpha\beta\gamma\delta} = (\det A)\,\varepsilon_{\alpha\beta\gamma\delta}$. (For $A = \Lambda$ this is the pseudotensor law of [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]].)
 >
-> **2. Part 2.** Contract part 1 with $\varepsilon^{\alpha\beta\gamma\delta}$ and use $\varepsilon_{\alpha\beta\gamma\delta}\varepsilon^{\alpha\beta\gamma\delta} = -24$ ([[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-4|Theorem §C1.5.4]]): $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alpha\beta\gamma\delta}A^\mu{}_\alpha\cdots = -24\det A$.
+> **2. Part 2.** Contract part 1 with $\varepsilon^{\alpha\beta\gamma\delta}$ and use $\varepsilon_{\alpha\beta\gamma\delta}\varepsilon^{\alpha\beta\gamma\delta} = -24$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]): $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alpha\beta\gamma\delta}A^\mu{}_\alpha\cdots = -24\det A$.
 >
-> **3. Part 3.** Call the right side $B^\nu{}_\mu$ and compute $B^\nu{}_\mu A^\mu{}_\lambda$. By part 1 with the first slot filled by $A^\mu{}_\lambda$: $\varepsilon_{\mu\mu_2\mu_3\mu_4}A^\mu{}_\lambda A^{\mu_2}{}_{\nu_2}A^{\mu_3}{}_{\nu_3}A^{\mu_4}{}_{\nu_4} = \det A\,\varepsilon_{\lambda\nu_2\nu_3\nu_4}$. Then $B^\nu{}_\mu A^\mu{}_\lambda = -\frac{1}{3!}\varepsilon_{\lambda\nu_2\nu_3\nu_4}\varepsilon^{\nu\nu_2\nu_3\nu_4} = -\frac{1}{6}(-6\,\delta^\nu_\lambda) = \delta^\nu_\lambda$ by Theorem §C1.5.4. A left inverse of a square matrix is the inverse.
+> **3. Part 3.** Call the right side $B^\nu{}_\mu$ and compute $B^\nu{}_\mu A^\mu{}_\lambda$. By part 1 with the first slot filled by $A^\mu{}_\lambda$: $\varepsilon_{\mu\mu_2\mu_3\mu_4}A^\mu{}_\lambda A^{\mu_2}{}_{\nu_2}A^{\mu_3}{}_{\nu_3}A^{\mu_4}{}_{\nu_4} = \det A\,\varepsilon_{\lambda\nu_2\nu_3\nu_4}$. Then $B^\nu{}_\mu A^\mu{}_\lambda = -\frac{1}{3!}\varepsilon_{\lambda\nu_2\nu_3\nu_4}\varepsilon^{\nu\nu_2\nu_3\nu_4} = -\frac{1}{6}(-6\,\delta^\nu_\lambda) = \delta^\nu_\lambda$ by Theorem §C1a.5.4. A left inverse of a square matrix is the inverse.
 >
 > **4. Part 4.** Put $A = [a|b|c|d]$, $A^\mu{}_0 = a^\mu$ etc., and $(\alpha\beta\gamma\delta) = (0123)$ in part 1: $\varepsilon_{\mu\nu\rho\sigma}a^\mu b^\nu c^\rho d^\sigma = \varepsilon_{0123}\det A = -\det A$. It vanishes iff $\det A = 0$ iff the columns are dependent ([[§37 Determinants#^ladr-9-50|LADR Thm. 9.50]]). ⚑ By-product: with all indices raised on $\varepsilon$ and lowered on the vectors the same number results, $\varepsilon^{\mu\nu\rho\sigma}a_\mu b_\nu c_\rho d_\sigma = \det[a_\mu|\cdots] = \det g\,\det[a|\cdots] = -\det[a|b|c|d]$: the signed four-volume of the parallelepiped spanned by $a, b, c, d$ is $-\varepsilon_{\mu\nu\rho\sigma}a^\mu b^\nu c^\rho d^\sigma$ in this convention. (The user's PHY 513 notes, Ch. 1 §1.5, item 3, write it without the minus sign; checked numerically.)
 >
 > **What the derivation shows**
 > - $\varepsilon$ is the antisymmetrizer, and the determinant is what antisymmetrizing a product of rows produces; the Minkowski minus signs are all $\varepsilon_{0123} = \det g$.
 > - The cofactor formula is the same identity read backwards; it never needs Gaussian elimination.
-> - Used next: Example §C1.5.1; a pseudoscalar built from momenta needs four linearly independent ones, hence at least five particles in a process (with momentum conservation).
+> - Used next: Example §C1a.5.1; a pseudoscalar built from momenta needs four linearly independent ones, hence at least five particles in a process (with momentum conservation).
 
-^der-c1-5-5
+^der-c1a-5-5
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-4|Theorem §C1.5.4]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§37 Determinants#^ladr-9-50|LADR Thm. 9.50]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§37 Determinants#^ladr-9-50|LADR Thm. 9.50]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]
 
-> [!example] Example §C1.5.1: Momentum Conservation Kills ε p₁p₂p₃p₄
-> For four momenta with $\sum_{i=1}^4 p_i = 0$, $\varepsilon^{\mu\nu\rho\sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma} = 0$: by [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-5|Theorem §C1.5.5]], 4, it is $\pm$ the determinant with columns $p_1, \dots, p_4$, and adding the first three columns to the fourth produces the zero column. The contraction is a pseudoscalar, invariant only under $\det\Lambda = +1$; it can appear in an amplitude only when five or more momenta are involved. (For the course: $\varepsilon^{0123} = +1$, $\varepsilon^{1230} = -1$, three transpositions, and $\varepsilon^{1213} = 0$.)
+> [!example] Example §C1a.5.1: Momentum Conservation Kills ε p₁p₂p₃p₄
+> For four momenta with $\sum_{i=1}^4 p_i = 0$, $\varepsilon^{\mu\nu\rho\sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma} = 0$: by [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 4, it is $\pm$ the determinant with columns $p_1, \dots, p_4$, and adding the first three columns to the fourth produces the zero column. The contraction is a pseudoscalar, invariant only under $\det\Lambda = +1$; it can appear in an amplitude only when five or more momenta are involved. (For the course: $\varepsilon^{0123} = +1$, $\varepsilon^{1230} = -1$, three transpositions, and $\varepsilon^{1213} = 0$.)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Levi-Civita and determinants", physical instance) · PHY 513, Problem Set 1, Problem 3*
 
-^ex-c1-5-1
+^ex-c1a-5-1
 
 > [!remark] Remark: What the cross product is
-> In three dimensions $\varepsilon_{ijk}$ converts an antisymmetric two-index object into a one-index one, $(\mathbf a\times\mathbf b)_i = \frac12\varepsilon_{ijk}(a_jb_k - a_kb_j)$, with inverse $a_jb_k - a_kb_j = \varepsilon_{jki}(\mathbf a\times\mathbf b)_i$. This works only because an antisymmetric $3\times3$ matrix has three entries, the number of a vector's components: the antisymmetric tensor is the fundamental object and the vector its three-dimensional shorthand, which is why cross products and curls are axial (they carry a hidden $\varepsilon$). In four dimensions an antisymmetric two-tensor has six components, there is no cross product of two four-vectors, and the curl survives as the antisymmetrized derivative $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ with no $\varepsilon$ at all; the four-dimensional $\varepsilon$ acts one level up, trading one antisymmetric tensor for another (duality, Theorem §C1.5.7), and $\nabla\cdot(\nabla\times\mathbf A) = 0$ becomes the Bianchi identity $\partial_\mu\tilde F^{\mu\nu} = 0$ ([[§C1.7 Relativistic Electrodynamics in Index Form#^thm-c1-7-1|Theorem §C1.7.1]]).
+> In three dimensions $\varepsilon_{ijk}$ converts an antisymmetric two-index object into a one-index one, $(\mathbf a\times\mathbf b)_i = \frac12\varepsilon_{ijk}(a_jb_k - a_kb_j)$, with inverse $a_jb_k - a_kb_j = \varepsilon_{jki}(\mathbf a\times\mathbf b)_i$. This works only because an antisymmetric $3\times3$ matrix has three entries, the number of a vector's components: the antisymmetric tensor is the fundamental object and the vector its three-dimensional shorthand, which is why cross products and curls are axial (they carry a hidden $\varepsilon$). In four dimensions an antisymmetric two-tensor has six components, there is no cross product of two four-vectors, and the curl survives as the antisymmetrized derivative $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ with no $\varepsilon$ at all; the four-dimensional $\varepsilon$ acts one level up, trading one antisymmetric tensor for another (duality, Theorem §C1a.5.7), and $\nabla\cdot(\nabla\times\mathbf A) = 0$ becomes the Bianchi identity $\partial_\mu\tilde F^{\mu\nu} = 0$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|Theorem §C1a.7.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Three-dimensional vector calculus in index form", "What the cross product is", "Four dimensions") · Yu §1.5, eqs. (1.120)–(1.121)*
 
-^rem-c1-5-2
+^rem-c1a-5-2
 
 > [!caution] Caution: Three-dimensional notation inside a four-dimensional expression
 > In $F_{ij} = -\varepsilon_{ijk}B_k$, $k$ is summed Euclidean-style and $B_k$ means the $k$-th component of the vector $\mathbf B$ (equal to $B^k$), not a lowered Minkowski component (which would be $-B^k$), while $i, j$ are Minkowski spatial indices whose height matters. Whenever a Minkowski expression is reduced to three-vector notation, each lowered spatial index contributes $A_i = -A^i$, and the convention for the three-dimensional symbols must be stated; that is the origin of the minus sign in $F_{ij}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Three-dimensional vector calculus in index form", last paragraph)*
 
-^cau-c1-5-6
+^cau-c1a-5-6
 
-> [!example] Example §C1.5.2: The Centre-of-Mass Momentum from a Transverse Component
+> [!example] Example §C1a.5.2: The Centre-of-Mass Momentum from a Transverse Component
 > A projectile ($m_1$, $E_{\rm lab}$, momentum $p_{\rm lab}$ along $x^1$) hits $m_2$ at rest. Let $P = p_1 + p_2$, $Q = p_1 - p_2$ and $T_{\mu\nu} = \varepsilon_{\mu\nu\rho\sigma}P^\sigma Q^\rho$. The boost to the centre-of-mass frame is along $x^1$, so $\Lambda_2{}^\alpha = \delta_2{}^\alpha$, $\Lambda_3{}^\alpha = \delta_3{}^\alpha$, and $T'_{23} = \Lambda_2{}^\alpha\Lambda_3{}^\beta T_{\alpha\beta} = T_{23}$: a component transverse to a boost is invariant under that boost. Only $\{\rho, \sigma\} = \{0, 1\}$ contribute, with $\varepsilon_{2301} = \varepsilon_{0123} = -1$ (two transpositions) and $\varepsilon_{2310} = +1$:
 >
 > $$
@@ -333,11 +333,11 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "The centre-of-mass momentum from a transverse tensor component (Problem Set 1)") · PHY 513, Problem Set 1, Problem 5(d) (the problem's suggested tensor)*
 
-^ex-c1-5-2
+^ex-c1a-5-2
 
 ## Decomposing a two-tensor; duality
 
-> [!theorem] Theorem §C1.5.6: The Trace, Symmetric and Antisymmetric Parts Do Not Mix
+> [!theorem] Theorem §C1a.5.6: The Trace, Symmetric and Antisymmetric Parts Do Not Mix
 > Every two-tensor splits uniquely as
 >
 > $$
@@ -348,12 +348,12 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Irreducible pieces of a two-tensor"), eq. (decomposition) · PHY 513 Lecture 1, Part C ("Irreducible parts of two-tensor representation")*
 
-^thm-c1-5-6
+^thm-c1a-5-6
 
 > [!derivation]- Derivation
 > **1. Symmetric and antisymmetric.** The split $T = T^{(\,)} + T^{[\,]}$ is unique, and a symmetric (antisymmetric) tensor stays so under every $\Lambda$ ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], 1): exchanging $\mu \leftrightarrow \nu$ in $\Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma T^{\rho\sigma}$ is the same as exchanging the dummies $\rho \leftrightarrow \sigma$.
 >
-> **2. The trace is a scalar.** $g_{\mu\nu}T'^{\mu\nu} = g_{\mu\nu}\Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma T^{\rho\sigma} = g_{\rho\sigma}T^{\rho\sigma}$ by the defining condition ([[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]]); only the symmetric part contributes to it, $g_{\mu\nu}T^{[\mu\nu]} = 0$ (symmetric times antisymmetric, [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], 2).
+> **2. The trace is a scalar.** $g_{\mu\nu}T'^{\mu\nu} = g_{\mu\nu}\Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma T^{\rho\sigma} = g_{\rho\sigma}T^{\rho\sigma}$ by the defining condition ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]); only the symmetric part contributes to it, $g_{\mu\nu}T^{[\mu\nu]} = 0$ (symmetric times antisymmetric, [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], 2).
 >
 > **3. Split off the trace.** Write $t = T^\rho{}_\rho$ and $S^{\mu\nu} = T^{(\mu\nu)} - \frac14g^{\mu\nu}t$. Then $g_{\mu\nu}S^{\mu\nu} = t - \frac14\cdot4\,t = 0$, using $g_{\mu\nu}g^{\mu\nu} = 4$. The trace part $\frac14g^{\mu\nu}t$ transforms to $\frac14g^{\mu\nu}t$ (the metric is invariant, [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]]; $t$ is a scalar by step 2). A traceless symmetric tensor stays symmetric (step 1) and traceless (step 2). Uniqueness: the trace part is fixed by $t$, the rest by step 1.
 >
@@ -362,13 +362,13 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > **What the derivation shows**
 > - The $16\times16$ matrix $\Lambda^\mu{}_\lambda\Lambda^\nu{}_\sigma$ is block diagonal in this basis: the lecture's "symmetric and antisymmetric parts do not mix".
 > - Six antisymmetric components are exactly $\mathbf E$ and $\mathbf B$; nine symmetric traceless ones, a traceless stress tensor of a scale-invariant theory.
-> - Used next: the antisymmetric block splits further over $\mathbb C$ (Theorem §C1.5.7).
+> - Used next: the antisymmetric block splits further over $\mathbb C$ (Theorem §C1a.5.7).
 
-^der-c1-5-6
+^der-c1a-5-6
 
-*Uses:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]], [[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]]
+*Uses:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]
 
-> [!theorem] Theorem §C1.5.7: Duality Squares to −1 on Antisymmetric Tensors
+> [!theorem] Theorem §C1a.5.7: Duality Squares to −1 on Antisymmetric Tensors
 > On antisymmetric $A^{\mu\nu}$ let $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$. Then:
 > 1. $\star\star A = -A$;
 > 2. $\star(\Lambda A) = (\det\Lambda)\,\Lambda(\star A)$: duality commutes with proper Lorentz transformations and anticommutes with $P$ and $T$;
@@ -376,16 +376,16 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Contracting Levi-Civita symbols", four-dimensional example; "Irreducible pieces of a two-tensor")*
 
-^thm-c1-5-7
+^thm-c1a-5-7
 
 > [!derivation]- Derivation
-> **1. Lower the dual.** $(\star A)_{\rho\sigma} = g_{\rho\kappa}g_{\sigma\lambda}\frac12\varepsilon^{\kappa\lambda\alpha\beta}A_{\alpha\beta} = \frac12\varepsilon_{\rho\sigma}{}^{\alpha\beta}A_{\alpha\beta} = \frac12\varepsilon_{\rho\sigma\alpha\beta}A^{\alpha\beta}$ (seesaw on the pair $\alpha\beta$, [[§C1.5 Vectors, Tensors and Index Notation#^cau-c1-5-1|Caution: A contraction is a plain sum]]).
+> **1. Lower the dual.** $(\star A)_{\rho\sigma} = g_{\rho\kappa}g_{\sigma\lambda}\frac12\varepsilon^{\kappa\lambda\alpha\beta}A_{\alpha\beta} = \frac12\varepsilon_{\rho\sigma}{}^{\alpha\beta}A_{\alpha\beta} = \frac12\varepsilon_{\rho\sigma\alpha\beta}A^{\alpha\beta}$ (seesaw on the pair $\alpha\beta$, [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|Caution: A contraction is a plain sum]]).
 >
 > **2. Apply twice.** $(\star\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}(\star A)_{\rho\sigma} = \frac14\varepsilon^{\mu\nu\rho\sigma}\varepsilon_{\rho\sigma\alpha\beta}A^{\alpha\beta}$.
 >
 > **3. Bring the contracted pair to the front.** $\varepsilon^{\mu\nu\rho\sigma} = \varepsilon^{\rho\sigma\mu\nu}$: the permutation $(\mu\nu\rho\sigma) \to (\rho\sigma\mu\nu)$ is the product of the transpositions of the first with the third slot and the second with the fourth, even.
 >
-> **4. Contract.** By [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-4|Theorem §C1.5.4]] (two contracted pairs, upper and lower roles exchanged, which is the same identity), $\varepsilon^{\rho\sigma\mu\nu}\varepsilon_{\rho\sigma\alpha\beta} = -2(\delta^\mu_\alpha\delta^\nu_\beta - \delta^\mu_\beta\delta^\nu_\alpha)$. So $(\star\star A)^{\mu\nu} = -\frac12(A^{\mu\nu} - A^{\nu\mu}) = -A^{\mu\nu}$, by antisymmetry. ⚑ By-product: the $-1$ is $\det g$ again; in Euclidean four dimensions $\star\star = +1$ and the eigenvalues are real (self-dual and anti-self-dual forms) → part 3.
+> **4. Contract.** By [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]] (two contracted pairs, upper and lower roles exchanged, which is the same identity), $\varepsilon^{\rho\sigma\mu\nu}\varepsilon_{\rho\sigma\alpha\beta} = -2(\delta^\mu_\alpha\delta^\nu_\beta - \delta^\mu_\beta\delta^\nu_\alpha)$. So $(\star\star A)^{\mu\nu} = -\frac12(A^{\mu\nu} - A^{\nu\mu}) = -A^{\mu\nu}$, by antisymmetry. ⚑ By-product: the $-1$ is $\det g$ again; in Euclidean four dimensions $\star\star = +1$ and the eigenvalues are real (self-dual and anti-self-dual forms) → part 3.
 >
 > **5. Part 2.** Multiply the pseudotensor law $\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\Lambda^\rho{}_\alpha\Lambda^\sigma{}_\beta\varepsilon^{\kappa\lambda\alpha\beta} = \det\Lambda\,\varepsilon^{\mu\nu\rho\sigma}$ ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]) by $\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta$ and use $\Lambda^\rho{}_\alpha\Lambda_\rho{}^\gamma = \delta_\alpha{}^\gamma$: $\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\varepsilon^{\kappa\lambda\gamma\delta} = \det\Lambda\,\varepsilon^{\mu\nu\rho\sigma}\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta$. With $(\Lambda A)_{\rho\sigma} = \Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta A_{\gamma\delta}$ and $(\det\Lambda)^2 = 1$:
 >
@@ -396,16 +396,16 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > **6. Part 3.** $\star$ is a real linear map with $\star^2 = -1$, so over $\mathbb C$ its eigenvalues are $\pm i$ and $A = \frac12(A - i\star A) + \frac12(A + i\star A)$ splits $A$ into a $(+i)$- and a $(-i)$-eigenvector (check: $\star(A - i\star A) = \star A + iA = i(A - i\star A)$). Complex conjugation commutes with the real map $\star$ and exchanges the two eigenspaces, so they have equal dimension, $6/2 = 3$. A $\Lambda$ with $\det\Lambda = 1$ commutes with $\star$ (part 2), hence preserves each eigenspace; $P$ anticommutes, hence sends $\star A = iA$ to $\star(PA) = -iPA$.
 >
 > **What the derivation shows**
-> - Taking the dual twice returns $-A$, not $A$: the Minkowski sign. For the field tensor, $\tilde{\tilde F} = -F$ ([[§C1.7 Relativistic Electrodynamics in Index Form#^thm-c1-7-2|Theorem §C1.7.2]]).
-> - The two three-dimensional halves are, for $F$, built from $\mathbf E + i\mathbf B$ and $\mathbf E - i\mathbf B$ ([[§C1.7 Relativistic Electrodynamics in Index Form#^thm-c1-7-3|Theorem §C1.7.3]]); as representations they are called $(1, 0)$ and $(0, 1)$, with $\mathbf E - i\mathbf B$ the $(1, 0)$ half in these conventions ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]]).
+> - Taking the dual twice returns $-A$, not $A$: the Minkowski sign. For the field tensor, $\tilde{\tilde F} = -F$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]).
+> - The two three-dimensional halves are, for $F$, built from $\mathbf E + i\mathbf B$ and $\mathbf E - i\mathbf B$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]); as representations they are called $(1, 0)$ and $(0, 1)$, with $\mathbf E - i\mathbf B$ the $(1, 0)$ half in these conventions ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]]).
 
-^der-c1-5-7
+^der-c1a-5-7
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-4|Theorem §C1.5.4]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], [[§C1.5 Vectors, Tensors and Index Notation#^cau-c1-5-1|Caution: A contraction is a plain sum; the signs live in the components]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|Caution: A contraction is a plain sum; the signs live in the components]]
 
 ## Calculus with indices
 
-> [!theorem] Theorem §C1.5.8: Basic Derivative Identities
+> [!theorem] Theorem §C1a.5.8: Basic Derivative Identities
 >
 > $$
 > \partial_\mu x^\nu = \delta^\nu{}_\mu, \qquad \partial^\mu x^\nu = g^{\mu\nu}, \qquad \partial_\mu x^\mu = 4, \qquad \partial_\mu(x^2) = 2x_\mu, \qquad \partial_\mu\partial_\nu(x^2) = 2g_{\mu\nu},
@@ -421,7 +421,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3, eqs. (dxsquared), (partialtransform); Derivation "Differentiating with respect to any four-vector" ("Plane waves") · Yu §1.4, eq. (1.90)*
 
-^thm-c1-5-8
+^thm-c1a-5-8
 
 > [!derivation]- Derivation
 > **1. Coordinates.** The $x^\nu$ are independent variables: $\partial x^\nu/\partial x^\mu$ is $1$ for $\nu = \mu$ and $0$ otherwise, $\delta^\nu{}_\mu$. Raising, $\partial^\mu x^\nu = g^{\mu\rho}\delta^\nu{}_\rho = g^{\mu\nu}$; contracting, $\delta^\mu{}_\mu = 1 + 1 + 1 + 1 = 4$, no signs (a plain sum).
@@ -433,11 +433,11 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > **What the derivation shows**
 > - Index placement is self-consistent: "an upper index in the denominator counts as a lower index", and both sides of each identity carry the same free indices.
 > - *Sense of the plane-wave rule in field theory.* For a single plane wave the identities hold pointwise. Under a Fourier integral, $f(x) = \int\frac{d^4k}{(2\pi)^4}\tilde f(k)e^{-ik\cdot x}$, the statement $\partial_\mu \leftrightarrow -ik_\mu$ is the derivative rule of the Fourier transform, an identity in $\mathcal S$ and, by duality, in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]]); this is how $(\partial^2 + m^2) \to m^2 - k^2$ turns the Klein–Gordon equation into algebra.
-> - Used next: Theorem §C1.5.9; the Heisenberg field and the Wightman function ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], step 1).
+> - Used next: Theorem §C1a.5.9; the Heisenberg field and the Wightman function ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], step 1).
 
-^der-c1-5-8
+^der-c1a-5-8
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^def-c1-5-1|Def. §C1.5.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]]
 
 > [!caution] Caution: The Hessian is not the wave operator
 > - $\partial_\mu\partial_\nu f$ is the four-dimensional Hessian: a symmetric $(0,2)$ tensor with two free indices, not a scalar; it needs something to contract with.
@@ -448,9 +448,9 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Caution "The Hessian is not the wave operator")*
 
-^cau-c1-5-7
+^cau-c1a-5-7
 
-> [!theorem] Theorem §C1.5.9: The d'Alembertian of a Function of x²
+> [!theorem] Theorem §C1a.5.9: The d'Alembertian of a Function of x²
 > Let $\rho = x^2$ and $f$ twice differentiable on an interval of $\rho$ values. Where $\rho$ lies in that interval,
 >
 > $$
@@ -461,10 +461,10 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Derivatives of functions of x² (Problem Set 1)"), eq. (boxf) · PHY 513, Problem Set 1, Problem 6*
 
-^thm-c1-5-9
+^thm-c1a-5-9
 
 > [!derivation]- Derivation
-> **1. First derivative.** Chain rule with [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-8|Theorem §C1.5.8]]: $\partial_\mu f(\rho) = f'(\rho)\,\partial_\mu\rho = 2x_\mu f'(\rho)$.
+> **1. First derivative.** Chain rule with [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]]: $\partial_\mu f(\rho) = f'(\rho)\,\partial_\mu\rho = 2x_\mu f'(\rho)$.
 >
 > **2. Second derivative.** $\partial^2 f = \partial^\mu(2x_\mu f') = 2(\partial^\mu x_\mu)f' + 2x_\mu\,\partial^\mu f'$. The first term: $\partial^\mu x_\mu = \delta^\mu{}_\mu = d$ ($= 4$). The second: $\partial^\mu f'(\rho) = 2x^\mu f''(\rho)$ by step 1 applied to $f'$, so $2x_\mu\cdot2x^\mu f'' = 4\rho f''$. Total: $2d\,f' + 4\rho f''$.
 >
@@ -477,18 +477,18 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > - $1/x^2$ is the massless two-point function up to a constant; that it is harmonic off the cone is the massless Klein–Gordon equation for it there ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], $m = 0$).
 > - Used next: the distributional statement on all of $\mathbb R^4$ (Remark below).
 
-^der-c1-5-9
+^der-c1a-5-9
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-8|Theorem §C1.5.8]], [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]], [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]]
 
 > [!remark] Remark: In what sense 1/x² is harmonic, and where the source sits
-> Theorem §C1.5.9 is a pointwise statement off the cone $x^2 = 0$. Across the cone $1/x^2$ behaves like $1/u$ near $u = 0$, is not locally integrable, and defines no distribution by itself. Distributions are obtained only as boundary values of the analytic function $1/(z^2 - \mathbf x^2)$, $z = t - i\varepsilon$ or $t(1 - i\varepsilon)$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]]), and different boundary values satisfy different equations on all of $\mathbb R^4$: the Wightman boundary value $-\frac{1}{4\pi^2}\frac{1}{x^2 - i0\,x^0}$, the massless $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]), solves $\partial^2 D_W = 0$ in $\mathcal S'$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]); the Feynman boundary value $-\frac{1}{4\pi^2}\frac{1}{x^2 - i0}$, the massless $D_F$ ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|Theorem §C2b.7.3]]), solves $\partial^2 D_F = -i\delta^4(x)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]). The pointwise computation cannot tell them apart; the source of the Green's function sits at the tip $x = 0$ of the cone, invisible to a calculation done where $x^2 \ne 0$.
+> Theorem §C1a.5.9 is a pointwise statement off the cone $x^2 = 0$. Across the cone $1/x^2$ behaves like $1/u$ near $u = 0$, is not locally integrable, and defines no distribution by itself. Distributions are obtained only as boundary values of the analytic function $1/(z^2 - \mathbf x^2)$, $z = t - i\varepsilon$ or $t(1 - i\varepsilon)$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]]), and different boundary values satisfy different equations on all of $\mathbb R^4$: the Wightman boundary value $-\frac{1}{4\pi^2}\frac{1}{x^2 - i0\,x^0}$, the massless $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]), solves $\partial^2 D_W = 0$ in $\mathcal S'$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]); the Feynman boundary value $-\frac{1}{4\pi^2}\frac{1}{x^2 - i0}$, the massless $D_F$ ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|Theorem §C2b.7.3]]), solves $\partial^2 D_F = -i\delta^4(x)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]). The pointwise computation cannot tell them apart; the source of the Green's function sits at the tip $x = 0$ of the cone, invisible to a calculation done where $x^2 \ne 0$.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Derivatives of functions of x²", last paragraph) · the distributional statement assembled here from §C2b.2–§C2b.7*
 
-^rem-c1-5-3
+^rem-c1a-5-3
 
-> [!theorem] Theorem §C1.5.10: Taylor Expansion in Index Notation
+> [!theorem] Theorem §C1a.5.10: Taylor Expansion in Index Notation
 > 1. If $f$ is real-analytic at $x$, then for small $a$
 >
 > $$
@@ -501,7 +501,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Taylor expansion in index notation"), eqs. (taylorindex), (taylormulti)*
 
-^thm-c1-5-10
+^thm-c1a-5-10
 
 > [!derivation]- Derivation
 > **1. Reduce to one variable.** Let $g(s) = f(x + sa)$. By the chain rule $g'(s) = a^\nu\partial_\nu f(x + sa)$, and by induction $g^{(n)}(s) = a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f(x + sa)$: each derivative in $s$ brings down one more $a^\nu\partial_\nu$.
@@ -510,27 +510,27 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **3. Multi-index form.** In $a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f$ the sum runs over all ordered strings $(\nu_1, \dots, \nu_n)$. Partial derivatives commute and the $a$'s are numbers, so a string with $k_\nu$ copies of each $\nu$ contributes $(a^0)^{k_0}\cdots(a^3)^{k_3}\partial_0^{k_0}\cdots\partial_3^{k_3}f$, and there are $n!/(k_0!\cdots k_3!)$ such strings. Dividing by $n!$ gives the multi-index coefficients; at second order in two variables, $\frac12a^\nu a^\rho\partial_\nu\partial_\rho f = \frac12(a^1)^2\partial_1^2f + a^1a^2\partial_1\partial_2f + \frac12(a^2)^2\partial_2^2f$, the textbook's mixed term with its factor $2$ cancelling the $\frac12$.
 >
-> **4. Plane waves.** By [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-8|Theorem §C1.5.8]], $\partial_{\nu_1}\cdots\partial_{\nu_n}e^{-ik\cdot x} = (-i)^nk_{\nu_1}\cdots k_{\nu_n}e^{-ik\cdot x}$, so the $n$-th term is $\frac{1}{n!}(-ik\cdot a)^ne^{-ik\cdot x}$, and the exponential series converges for every $a$: $e^{-ik\cdot a}e^{-ik\cdot x} = e^{-ik\cdot(x + a)}$.
+> **4. Plane waves.** By [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]], $\partial_{\nu_1}\cdots\partial_{\nu_n}e^{-ik\cdot x} = (-i)^nk_{\nu_1}\cdots k_{\nu_n}e^{-ik\cdot x}$, so the $n$-th term is $\frac{1}{n!}(-ik\cdot a)^ne^{-ik\cdot x}$, and the exponential series converges for every $a$: $e^{-ik\cdot a}e^{-ik\cdot x} = e^{-ik\cdot(x + a)}$.
 >
 > **5. The generator.** With $\hat p_\mu = i\partial_\mu$, $a^\nu\partial_\nu = -i\,a^\nu\hat p_\nu = -i\,a\cdot\hat p$; on $e^{-ik\cdot x}$, $\hat p_\mu$ has eigenvalue $k_\mu$, so $\hat p^0 = i\partial_t$ is the energy and $\hat p^j = -i\partial_j$ the momentum. (The user's PHY 513 notes write $\hat p_\nu = -i\partial_\nu$ and $e^{ia\cdot\hat p}$; the two signs compensate, but that $\hat p$ has eigenvalue $-k_\mu$ on $e^{-ik\cdot x}$.)
 >
 > **What the derivation shows**
 > - The bookkeeping of the multinomial coefficients is done by the dummy indices; there is no matrix-notation barrier at third order.
-> - $a\cdot\partial$ is the infinitesimal translation; its Noether charge is the four-momentum ([[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1.12]]), and on quantum fields $[\phi, \mathbf P] = -i\nabla\phi$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
-> - For a field with indices the expansion acts componentwise, $A^\mu(x + a) = A^\mu + a^\nu\partial_\nu A^\mu + \dots$: translations act alike on every field, while Lorentz transformations add a matrix on the index ([[§C1.8 Scalar Field Theory꞉ Fields, Locality and Symmetry#^thm-c1-8-2|Theorem §C1.8.2]]).
+> - $a\cdot\partial$ is the infinitesimal translation; its Noether charge is the four-momentum ([[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.5]]), and on quantum fields $[\phi, \mathbf P] = -i\nabla\phi$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
+> - For a field with indices the expansion acts componentwise, $A^\mu(x + a) = A^\mu + a^\nu\partial_\nu A^\mu + \dots$: translations act alike on every field, while Lorentz transformations add a matrix on the index ([[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^thm-c1b-1-2|Theorem §C1b.1.2]]).
 
-^der-c1-5-10
+^der-c1a-5-10
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-8|Theorem §C1.5.8]], [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]], [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-2|452 Thm. §11.2]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]], [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]], [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-2|452 Thm. §11.2]]
 
 > [!remark] Remark: Three expansions, not one
-> Classical field theory uses Taylor's theorem in three different variables, and they must be kept apart: in the **coordinates**, $f(x + a) = f + a^\nu\partial_\nu f + \dots$, for spacetime symmetries (Theorem §C1.5.10); in a **parameter** $\alpha$, $\phi'_\alpha = \phi + \alpha\,\Delta\phi + O(\alpha^2)$, which defines the generator $\Delta\phi$ ([[§C1.11 Noether's Theorem#^def-c1-11-2|Def. §C1.11.2]]); and in the **field**, $\mathcal L(\phi + \delta\phi, \partial\phi + \partial\delta\phi) = \mathcal L + \frac{\partial\mathcal L}{\partial\phi}\delta\phi + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\partial_\mu\delta\phi + \dots$, the variation ([[§C1.9 The Action Principle and the Euler–Lagrange Equations#^def-c1-9-2|Def. §C1.9.2]]), whose first order gives the Euler–Lagrange equation and whose second order, the kernel $(\partial^2 + m^2)\delta^4(x - y)$ for the free field (a distribution in $x$ and $y$, [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]]), is the operator inverted by the propagator ([[§C2b.5 Green's Functions and Contours|§C2b.5]]).
+> Classical field theory uses Taylor's theorem in three different variables, and they must be kept apart: in the **coordinates**, $f(x + a) = f + a^\nu\partial_\nu f + \dots$, for spacetime symmetries (Theorem §C1a.5.10); in a **parameter** $\alpha$, $\phi'_\alpha = \phi + \alpha\,\Delta\phi + O(\alpha^2)$, which defines the generator $\Delta\phi$ ([[§C1b.4 Noether's Theorem#^def-c1b-4-2|Def. §C1b.4.2]]); and in the **field**, $\mathcal L(\phi + \delta\phi, \partial\phi + \partial\delta\phi) = \mathcal L + \frac{\partial\mathcal L}{\partial\phi}\delta\phi + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\partial_\mu\delta\phi + \dots$, the variation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]]), whose first order gives the Euler–Lagrange equation and whose second order, the kernel $(\partial^2 + m^2)\delta^4(x - y)$ for the free field (a distribution in $x$ and $y$, [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]]), is the operator inverted by the propagator ([[§C2b.5 Green's Functions and Contours|§C2b.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Taylor expansion in index notation", "Three expansions, not one")*
 
-^rem-c1-5-4
+^rem-c1a-5-4
 
-> [!theorem] Theorem §C1.5.11: Derivatives with Respect to a Four-Vector
+> [!theorem] Theorem §C1a.5.11: Derivatives with Respect to a Four-Vector
 > For a function of the four independent components $a^\mu$ of a four-vector:
 > 1. $\partial/\partial a^\mu$ transforms as a covector and $\partial/\partial a_\mu$ as a vector: the index of the denominator flips height.
 > 2. The identity map in its four index forms:
@@ -545,10 +545,10 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Differentiating with respect to any four-vector"), eq. (vectorderivs) · Yu §1.4, eqs. (1.90)–(1.92)*
 
-^thm-c1-5-11
+^thm-c1a-5-11
 
 > [!derivation]- Derivation
-> **1. Transformation.** If $a' = \Lambda a$, then $a = \Lambda^{-1}a'$ and $\partial a^\nu/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu$; by the chain rule $\partial/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu\,\partial/\partial a^\nu = \Lambda_\mu{}^\nu\,\partial/\partial a^\nu$, the covector law ([[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-3|Theorem §C1.5.3]]). Nothing used that $a$ is a coordinate; for $a = x$ it is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]]. Raising gives the vector law for $\partial/\partial a_\mu$.
+> **1. Transformation.** If $a' = \Lambda a$, then $a = \Lambda^{-1}a'$ and $\partial a^\nu/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu$; by the chain rule $\partial/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu\,\partial/\partial a^\nu = \Lambda_\mu{}^\nu\,\partial/\partial a^\nu$, the covector law ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]). Nothing used that $a$ is a coordinate; for $a = x$ it is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]]. Raising gives the vector law for $\partial/\partial a_\mu$.
 >
 > **2. The four forms.** The first is the independence of the four $a^\mu$. The second is the same for the four $a_\mu$, which are equally independent. The third: $a_\nu = g_{\nu\rho}a^\rho$ with constant $g$, so $\partial a_\nu/\partial a^\mu = g_{\nu\rho}\delta^\rho{}_\mu = g_{\nu\mu}$. The fourth: $a^\nu = g^{\nu\rho}a_\rho$, so $\partial a^\nu/\partial a_\mu = g^{\nu\rho}\delta_\rho{}^\mu = g^{\nu\mu}$. In components the last two are $+1$ on the time entry and $-1$ on the spatial diagonal, since $a_0 = a^0$ and $a_i = -a^i$.
 >
@@ -559,14 +559,14 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > **What the derivation shows**
 > - Safe procedure: choose one set of components as the variables, express everything in them with $g$, then differentiate.
 > - Momentum derivatives $\partial/\partial p^\mu$ act on off-shell functions; acting on $e^{-ip\cdot x}$ they bring down $-ix_\mu$, the Fourier dual of $\partial_\mu \to -ip_\mu$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]).
-> - $\partial_\mu$ acts on the argument of a field, not on a constant four-vector multiplying it: $\partial_\mu(a^\nu\phi) = a^\nu\partial_\mu\phi$ for constant $a$, with an extra $(\partial_\mu a^\nu)\phi$ if $a^\nu(x)$ is itself a field ([[§C1.8 Scalar Field Theory꞉ Fields, Locality and Symmetry|§C1.8]]).
-> - Used next: the Euler–Lagrange equations of every scalar model ([[§C1.9 The Action Principle and the Euler–Lagrange Equations#^thm-c1-9-4|Theorem §C1.9.4]]), the canonical momentum ([[§C1.10 Hamiltonian Field Theory#^def-c1-10-1|Def. §C1.10.1]]).
+> - $\partial_\mu$ acts on the argument of a field, not on a constant four-vector multiplying it: $\partial_\mu(a^\nu\phi) = a^\nu\partial_\mu\phi$ for constant $a$, with an extra $(\partial_\mu a^\nu)\phi$ if $a^\nu(x)$ is itself a field ([[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry|§C1b.1]]).
+> - Used next: the Euler–Lagrange equations of every scalar model ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]), the canonical momentum ([[§C1b.3 Hamiltonian Field Theory#^def-c1b-3-1|Def. §C1b.3.1]]).
 
-^der-c1-5-11
+^der-c1a-5-11
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-3|Theorem §C1.5.3]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]], [[§B2.2 Tensors and the Covariance Principle#^cau-b2-2-1|REL Caution: The grammar of indices, for higher rank]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]], [[§B2.2 Tensors and the Covariance Principle#^cau-b2-2-1|REL Caution: The grammar of indices, for higher rank]]
 
-> [!theorem] Theorem §C1.5.12: Derivatives with Respect to Tensor Components
+> [!theorem] Theorem §C1a.5.12: Derivatives with Respect to Tensor Components
 > 1. For independent components, the derivative is a product of deltas, slot by slot: $\dfrac{\partial T^\alpha{}_\beta}{\partial T^\mu{}_\nu} = \delta^\alpha{}_\mu\delta_\beta{}^\nu$, $\ \dfrac{\partial(\partial_\alpha A_\beta)}{\partial(\partial_\mu A_\nu)} = \delta_\alpha{}^\mu\delta_\beta{}^\nu$.
 > 2. Hence $\dfrac{\partial(T_{\alpha\beta}T^{\alpha\beta})}{\partial T_{\mu\nu}} = 2T^{\mu\nu}$, $\ \dfrac{\partial(T_{\alpha\beta}U^{\alpha\beta})}{\partial T_{\mu\nu}} = U^{\mu\nu}$, $\ \dfrac{\partial T^\alpha{}_\alpha}{\partial T_{\mu\nu}} = g^{\mu\nu}$.
 > 3. For an antisymmetric $F$ only six components are independent; with $\alpha < \beta$ labelling them, $\partial F_{\mu\nu}/\partial F_{\alpha\beta} = \delta^\alpha_\mu\delta^\beta_\nu - \delta^\alpha_\nu\delta^\beta_\mu$. Either convention gives $\delta(F_{\alpha\beta}F^{\alpha\beta}) = 2F^{\alpha\beta}\delta F_{\alpha\beta}$.
@@ -578,10 +578,10 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Differentiating with respect to tensor components") · PHY 513, Problem Set 2, Problem 4(a), as the user's notes record its index moves*
 
-^thm-c1-5-12
+^thm-c1a-5-12
 
 > [!derivation]- Derivation
-> **1. Deltas.** The components are the variables; the derivative of a variable with respect to itself is $1$ and with respect to any other $0$. "$1$ if $\alpha = \mu$ and $\beta = \nu$, else $0$" is, as a function of the four indices, $\delta^\alpha{}_\mu\delta_\beta{}^\nu$ (index heights placed by the rule of [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-11|Theorem §C1.5.11]]: the denominator's indices flip). The other pairing $\delta^\alpha{}_\nu\delta^\mu{}_\beta$ would assert that $T_{\mu\nu}$ and $T_{\nu\mu}$ are one variable.
+> **1. Deltas.** The components are the variables; the derivative of a variable with respect to itself is $1$ and with respect to any other $0$. "$1$ if $\alpha = \mu$ and $\beta = \nu$, else $0$" is, as a function of the four indices, $\delta^\alpha{}_\mu\delta_\beta{}^\nu$ (index heights placed by the rule of [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]]: the denominator's indices flip). The other pairing $\delta^\alpha{}_\nu\delta^\mu{}_\beta$ would assert that $T_{\mu\nu}$ and $T_{\nu\mu}$ are one variable.
 >
 > **2. Corollaries.** $T_{\alpha\beta}T^{\alpha\beta} = g^{\alpha\gamma}g^{\beta\delta}T_{\alpha\beta}T_{\gamma\delta}$; both factors respond: $g^{\alpha\gamma}g^{\beta\delta}(\delta_\alpha{}^\mu\delta_\beta{}^\nu T_{\gamma\delta} + T_{\alpha\beta}\delta_\gamma{}^\mu\delta_\delta{}^\nu) = T^{\mu\nu} + T^{\mu\nu}$. With $U$ fixed only one factor responds: $U^{\mu\nu}$. And $T^\alpha{}_\alpha = g^{\alpha\beta}T_{\alpha\beta}$ gives $g^{\mu\nu}$.
 >
@@ -597,18 +597,18 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **What the derivation shows**
 > - Every kinetic term in the course is quadratic, $\frac12$ or $\frac14$ times a square, and its derivative picks up the factor $2$ of item 2.
-> - Item 4 gives, for $\mathcal L = -\frac14F_{\alpha\beta}F^{\alpha\beta}$, $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$: the Euler–Lagrange equation of Maxwell's theory and its canonical energy–momentum tensor use exactly this ([[§C1.9 The Action Principle and the Euler–Lagrange Equations|§C1.9]], [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1-12-3|Example §C1.12.3]]).
+> - Item 4 gives, for $\mathcal L = -\frac14F_{\alpha\beta}F^{\alpha\beta}$, $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$: the Euler–Lagrange equation of Maxwell's theory and its canonical energy–momentum tensor use exactly this ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]], [[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1b-5-3|Example §C1b.5.3]]).
 > - Differentiating with respect to the sixteen $\partial_\mu A_\nu$, which are genuinely independent, avoids the counting issue of item 3 altogether.
 
-^der-c1-5-12
+^der-c1a-5-12
 
-*Uses:* [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-11|Theorem §C1.5.11]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]]
 
 > [!remark]- Connections
 > - The dual space, multilinear maps and their components are Linear Algebra's: a $(0,2)$ tensor is a bilinear form, whose matrix changes as $C^{\mathsf T}BC$ — [[§12 Duality#^ladr-3-110|LADR Def. 3.110]], [[§38 Tensor Products#^ladr-9-85|LADR Def. 9.85]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|LADR Thm. 9.7]]; Relativity level B reaches the same law from the component side — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]], [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-2|REL Remark: Tensors without coordinates]].
 > - $\partial_\mu$ carries a lower index because the differential of a function is a covector, the cotangent-space statement of manifold theory — [[§32 The Cotangent Space#^def-32-1|591 Def. §32.1]], [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]].
 > - The Levi-Civita symbol is the alternating form of top degree, unique up to a factor because that space is one-dimensional; that is why every totally antisymmetric four-index array is a multiple of $\varepsilon$ — [[§36 Alternating Multilinear Forms#^ladr-9-37|LADR Thm. 9.37]], [[§37 The Algebra of Differential Forms#^def-37-2|452 Def. §37.2]].
-> - The three-dimensional identity $\varepsilon_{ijk}\varepsilon_{ilm} = \delta_{jl}\delta_{km} - \delta_{jm}\delta_{kl}$ of Theorem §C1.5.4 is the tool behind BAC–CAB and the product rules of vector calculus — [[§B1.1 Fields, Integral Theorems and Curvilinear Coordinates#^thm-b1-1-1|EM Theorem §B1.1.1]].
+> - The three-dimensional identity $\varepsilon_{ijk}\varepsilon_{ilm} = \delta_{jl}\delta_{km} - \delta_{jm}\delta_{kl}$ of Theorem §C1a.5.4 is the tool behind BAC–CAB and the product rules of vector calculus — [[§B1.1 Fields, Integral Theorems and Curvilinear Coordinates#^thm-b1-1-1|EM Theorem §B1.1.1]].
 > - Duality on two-forms squares to $-1$ in Lorentzian signature and to $+1$ in Euclidean signature; the Wick rotation of [[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] trades one for the other, and the complex split $6 = 3 + 3$ becomes the real split into self-dual and anti-self-dual forms.
 > - The plane-wave rule $\partial_\mu \to -ik_\mu$ is the derivative rule of the Fourier transform, valid in $\mathcal S'$; it turns every free field equation into an algebraic mass-shell condition — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]].
 > - $1/x^2$, harmonic off the cone, is the massless two-point function; the source of its Green's-function boundary value sits at the tip of the cone — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]].

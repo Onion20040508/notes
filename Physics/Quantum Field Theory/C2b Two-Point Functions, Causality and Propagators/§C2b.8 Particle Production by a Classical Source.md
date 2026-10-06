@@ -119,7 +119,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 ^thm-c2b-8-3
 
 > [!derivation]- Derivation
-> **Step 1** (the late-time Hamiltonian). After the source is off, $H$ has the free form ([[§C2a.2 Mode Expansion and the Mode Algebra#^mod-c2a-2-1|Model §C2a.2.1]]) in the late-time field, whose mode operators are the $b$'s (Theorem §C2b.8.1). The computation of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] uses only the mode expansion and the algebra, both unchanged, so
+> **Step 1** (the late-time Hamiltonian). After the source is off, $H$ has the free form ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]) in the late-time field, whose mode operators are the $b$'s (Theorem §C2b.8.1). The computation of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] uses only the mode expansion and the algebra, both unchanged, so
 >
 > $$
 > H = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,b_{\mathbf p}^\dagger b_{\mathbf p} + E_0 = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\Bigl(a_{\mathbf p}^\dagger - \frac{i\,\overline{\tilde j(p)}}{\sqrt{2E_{\mathbf p}}}\Bigr)\Bigl(a_{\mathbf p} + \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\Bigr) + E_0 .
@@ -143,7 +143,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 
 ^der-c2b-8-3
 
-*Uses:* [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^mod-c2a-2-1|Model §C2a.2.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]]
+*Uses:* [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]]
 
 > [!theorem] Theorem §C2b.8.4: The Source Is a Test Function; Why $\bar N$ Is Finite
 > Let $j \in \mathcal D(\mathbb R^4)$ ([[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]]), smooth and nonzero only in a bounded region of spacetime ([[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; $j \in \mathcal S(\mathbb R^4)$ suffices).

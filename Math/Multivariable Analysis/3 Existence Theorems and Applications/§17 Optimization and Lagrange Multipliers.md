@@ -349,6 +349,8 @@ $$
 > - Computational version: [[§114 Lagrange Multipliers#^thm-114-2|Calc Thm. §114.2]] (two constraints, with worked examples).
 > - A worked special case: [[§60★ Constrained Optimization#^thm-60-1|235 Thm. §60.1]] (the extremes of xᵀAx on the unit sphere are the extreme eigenvalues of A; the Lagrange condition there reads Ax = λx) and, with the two constraints xᵀx = 1, xᵀu₁ = 0, [[§60★ Constrained Optimization#^thm-60-4|235 Thm. §60.4]].
 > - Used in Electromagnetism: charges on conductors at fixed total charges minimize the electrostatic energy, and the multiplier of each charge constraint is that conductor's potential (Thomson's theorem) — [[§C4.1 Induced Charge, Screening and Thomson's Theorem#^thm-c4-1-3|EM Theorem §C4.1.3]].
+> - The constraint qualification matters in practice: in the honors-thesis proof that stripes are the ground state of quadrupoles on the triangular lattice, $\nabla C$ vanishes at exactly four points of the constraint surface and the minimum lies at three of them, so those points are checked by direct evaluation rather than by the multiplier rule ([[§M5.5 Triangular Lattice꞉ Global Optimality by Tensor–Luttinger–Tisza#^thm-m5-5-3|Thesis Thm. §M5.5.3]]).
+> - For $N$ unit spins there are $N$ constraints $|\mathbf S_i|=1$; the Luttinger–Tisza method replaces them by the single constraint $\frac1N\sum_i|\mathbf S_i|^2=1$, whose one multiplier is an eigenvalue, at the price of giving only a lower bound ([[§M3.3 The Luttinger–Tisza Method#^thm-m3-3-2|Thesis Thm. §M3.3.2]]).
 
 > [!remark] Remark: Notation Convention
 > Once we substitute $z = g(x,y)$ and $t = h(x,y)$, we write:

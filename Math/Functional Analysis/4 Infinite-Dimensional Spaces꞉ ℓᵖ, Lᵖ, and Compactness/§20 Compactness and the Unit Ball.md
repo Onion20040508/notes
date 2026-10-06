@@ -305,3 +305,6 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > The response is not to give up on compactness but to weaken the notion of convergence until it returns. A bounded sequence in a suitable infinite-dimensional space does have a subsequence converging *weakly*, and the closed unit ball is compact in a weaker topology. This is the direction the course takes later; the present theorem is what makes it necessary.
 
 ^rem-20-4
+
+> [!remark]- Connections
+> - The weak compactness this remark points to, that a bounded sequence in a Hilbert space has a weakly convergent subsequence, is the step of the direct method that produces a minimiser of the one-dimensional continuum energy of a multipole chain in the honors-thesis notes ([[§M7.1 Configurations as Maps; Potential and Stiffness; When the Continuum Limit is Well Posed#^thm-m7-1-4|Thesis Thm. §M7.1.4]]).

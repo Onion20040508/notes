@@ -70,6 +70,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Parts (b) and (c) are [[§30 Boundedness and Continuity#^prop-30-1|556 Prop. §30.1]] (a) and (c), with max replaced by sup.
 > - Computational version: [[§61★ The Singular Value Decomposition#^prop-61-2|235 Prop. §61.2]] (formula (b) for matrices, via [[§60★ Constrained Optimization#^thm-60-1|235 Thm. §60.1]] applied to $A^TA$).
+> - For a real symmetric matrix the singular values are the absolute values of the eigenvalues, so (a) gives $\|B\|=\max_k|\lambda_k|$; with Gershgorin's theorem this bounds the norm by the largest absolute row sum, the lemma behind the eigenvalue perturbation bounds of the honors-thesis notes ([[§R2.3 Weyl's Inequalities and Interlacing#^lem-r2-3-6|Thesis Lemma §R2.3.6]]).
 
 > [!example] Example 7.90: Norms (p. 283)
 > - $\|I\|=1$.

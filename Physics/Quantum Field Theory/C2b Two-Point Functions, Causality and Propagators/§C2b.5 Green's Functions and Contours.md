@@ -253,7 +253,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > (\partial^2 + m^2)D_R = -\delta(x^0 - y^0)\langle[\pi(x), \phi(y)]\rangle + 2\delta(x^0 - y^0)\langle[\pi(x), \phi(y)]\rangle = \delta(x^0 - y^0)\cdot(-i)\delta^3(\mathbf x - \mathbf y) = -i\delta^4(x - y),
 > $$
 >
-> with the equal-time commutator of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]].
+> with the equal-time commutator of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]].
 >
 > **What the derivation shows.**
 > - The sign of $t$ decides the half-plane; for $t < 0$ the poles are on the wrong side, and that is retardation.
@@ -262,7 +262,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 
 ^der-c2b-5-5
 
-*Uses:* [[P2 Green's Functions by Contour Integration|P2]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]
+*Uses:* [[P2 Green's Functions by Contour Integration|P2]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]
 
 > [!remark] Remark: Retarded means late; the sign of the exponent carries causality
 > The source at $y$ affects the field at $x$ only if $y$ comes first: causality in its plainest form, and since the commutator vanishes outside the cone, the retarded function is causal in both senses at once. Why not take complex conjugates and halve the bookkeeping? Conjugation flips $e^{-ip^0t} \to e^{+ip^0t}$, i.e. $t \to -t$, exchanging "$y$ before $x$" with "$y$ after $x$". The sign of the exponent decides where the contour may be closed, so it carries the information about what comes first ([[§CA.4 Contour Integration#^ex-ca-4-2|Example §CA.4.2]] is the same mechanism in one line).

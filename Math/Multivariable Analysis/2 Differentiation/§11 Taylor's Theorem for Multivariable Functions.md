@@ -142,6 +142,7 @@ Now we apply single-variable Taylor to $F(t)$ around $t = 0$!
 > [!remark]- Connections
 > - The 1D theorem it reduces to: [[§31 Taylor's Theorem#^thm-31-2|Taylor's Theorem with Lagrange Remainder]].
 > - The second-order case drives the [[Second Derivative Test in Several Variables|second-order sufficient conditions (§18.1)]] via the [[§18 Second-Order Sufficient Conditions#^def-18-1|Hessian]].
+> - The second-order expansion in $N$ variables, $f(p+h)=f(p)+\nabla f(p)\cdot h+\tfrac12h^{\mathsf T}H_f(p+\theta h)h$, is proved by the same restriction to a line, together with a Peano-form remainder, in the honors-thesis notes ([[§R2.1 The Hessian and the Second-Derivative Test in N Variables#^thm-r2-1-1|Thesis Thm. §R2.1.1]]).
 
 > [!remark] Remark: Compact Notation Using Differentials
 > The Taylor expansion can be written elegantly as:

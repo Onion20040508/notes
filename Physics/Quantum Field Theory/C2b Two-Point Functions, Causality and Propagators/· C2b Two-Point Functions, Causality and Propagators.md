@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C2b Two-Point Functions, Causality and Propagators
 ← [[· C2a The Quantum Scalar Field]] · ↑ [[Quantum Field Theory]] · [[· C3 Poincaré Symmetry and Particle States]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (76), [[· CA Mathematical Methods|CA Mathematical Methods]] (379)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (39), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (51), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (117), [[· CA Mathematical Methods|CA Mathematical Methods]] (43)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (6), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (76), [[· CA Mathematical Methods|CA Mathematical Methods]] (379)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (35), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (51), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (117), [[· CA Mathematical Methods|CA Mathematical Methods]] (43)
 
 ## Sections
 - [[§C2b.1 Heisenberg Fields]] — PS 2.4; Yu 6.3; 513 notes Ch. 5

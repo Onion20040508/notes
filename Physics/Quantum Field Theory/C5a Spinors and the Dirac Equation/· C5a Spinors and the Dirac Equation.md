@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (114), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (89), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (26), [[· CA Mathematical Methods|CA Mathematical Methods]] (6)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (7), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (16), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (126)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (53), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (61), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (89), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (28), [[· CA Mathematical Methods|CA Mathematical Methods]] (6)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (5), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (16), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (152)
 
 ## Sections
 - [[§C5a.1 Weyl Spinors and SL(2,C)]] — 

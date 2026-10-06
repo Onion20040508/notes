@@ -28,7 +28,7 @@ The chapter closes where Lecture 10 began, with spin and statistics. The theorem
 >
 > **2. Spin ½, from causality.** Under the assumptions of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]] only the anticommutator can vanish outside the light cone, and with it the observables commute ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-4|Theorem §C5b.7.4]]).
 >
-> **3. Spin 0.** With commutators the scalar field has positive energy and norms ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]) and is microcausal ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]); there the commutators were an input ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]]).
+> **3. Spin 0.** With commutators the scalar field has positive energy and norms ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]) and is microcausal ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]); there the commutators were an input ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]).
 >
 > **4. The general theorem.** Not covered by Steps 1–3: see the placeholder under [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|Principle §C5b.1.7]].
 >

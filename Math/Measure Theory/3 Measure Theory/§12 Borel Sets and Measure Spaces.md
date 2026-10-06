@@ -117,6 +117,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > [!remark]- Connections
 > - Lebesgue measure $(\mathbb{R}^n, \mathcal{M}, m)$: [[§11 Lebesgue Measurable Sets#^def-11-5|Def. §11.5]] with [[Lebesgue Measurable Sets Form a σ-Algebra|Thm. §11.3]].
 > - New measures from integrals: [[§21 Consequences of the Monotone Convergence Theorem#^def-21-1|Def. §21.1]]; $L^p$ over a general measure space: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-6|Def. §34.6]].
+> - A probability space is a measure space of total mass 1, and a random variable is a measurable function on it; the honors-thesis notes build expectation, independence and the limit theorems on these definitions ([[§R2.4 Probability Spaces, the Law of Large Numbers and the CLT#^def-r2-4-1|Thesis Def. §R2.4.1]], [[§R2.4 Probability Spaces, the Law of Large Numbers and the CLT#^def-r2-4-8|Thesis Def. §R2.4.8]]).
 
 > [!example] Example §12.2: Examples of Measures
 > - **Counting measure:** $(X, \mathcal{P}(X), \mu)$ where $\mu(E) = |E|$ (the [[§10 Counting#^def-10-1|cardinality]], 250 Def. §10.1) if $E$ is finite, and $\mu(E) = \infty$ if $E$ is infinite.

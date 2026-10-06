@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5b The Quantum Spinor Field
 ← [[· C5a Spinors and the Dirac Equation]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (87), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (117), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (3), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (126), [[· CA Mathematical Methods|CA Mathematical Methods]] (112)
-**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (26)
+**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (26), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (89), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (117), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (152), [[· CA Mathematical Methods|CA Mathematical Methods]] (121)
+**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (28)
 
 ## Sections
 - [[§C5b.1 Canonical Quantization of the Dirac Field]] — 
@@ -28,7 +28,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^pr-c5b-4-1|§C5b.4.1]] The Dirac Vacuum and the Fermionic Fock Space
 
 ## Theorems
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|§C5b.1.1]] The Conjugate Momentum Field of the Dirac Field
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-3|§C5b.1.3]] Hamilton's Equations of the Dirac Field
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|]] ★ Theorem §C5b.1.4: The Dirac Field's Constraints Are Second Class; Its Dirac Bracket
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-5|]] ★ Theorem §C5b.1.5: The Symmetric Lagrangian Gives the Same Bracket
 - [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|§C5b.1.8]] The Anticommutators Are Identities after Smearing; Smeared Fermi Fields Are Bounded
+- [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|§C5b.1.9]] The Field Momentum Generates Translations of ψ
 - [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|§C5b.2.1]] Mode Expansion of the Dirac Field
 - [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|§C5b.2.2]] The Conjugate Field
 - [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|§C5b.2.3]] Mode Extraction

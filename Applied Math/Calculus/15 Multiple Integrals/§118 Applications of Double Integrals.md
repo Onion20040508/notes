@@ -295,6 +295,9 @@ A probability density function $f$ of one continuous random variable $X$ satisfi
 
 ^def-118-9
 
+> [!remark]- Connections
+> - In measure-theoretic probability, independence means $P(X\in B_1,Y\in B_2)=P(X\in B_1)P(Y\in B_2)$ for all Borel sets $B_1,B_2$; for variables with a joint density it is this factorization ([[§R2.4 Probability Spaces, the Law of Large Numbers and the CLT#^def-r2-4-12|Thesis Def. §R2.4.12]]).
+
 > [!example] Example §118.5: Two Independent Waiting Times
 > The manager of a movie theater determines that the average time moviegoers wait in line to buy a ticket is $10$ minutes and the average time they wait to buy popcorn is $5$ minutes. Assuming that the waiting times are independent, find the probability that a moviegoer waits a total of less than $20$ minutes before taking his or her seat.
 >

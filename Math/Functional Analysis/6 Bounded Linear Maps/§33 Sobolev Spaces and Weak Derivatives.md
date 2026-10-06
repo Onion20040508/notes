@@ -168,6 +168,10 @@ tags: [functional-analysis, math556]
 
 ^rem-33-6
 
+> [!remark]- Connections
+> - The continuum limit of the multipole-lattice model takes its configurations in $W^{1,2}$: unit-vector fields whose components have square-integrable weak first derivatives on every ball ([[§M7.1 Configurations as Maps; Potential and Stiffness; When the Continuum Limit is Well Posed#^def-m7-1-5|Thesis Def. §M7.1.5]]).
+> - In one dimension and with positive stiffness, the gradient energy of such a field attains its minimum on this space, by the direct method ([[§M7.1 Configurations as Maps; Potential and Stiffness; When the Continuum Limit is Well Posed#^thm-m7-1-4|Thesis Thm. §M7.1.4]]).
+
 ## Examples
 
 > [!example] Example §33.2: $|x|$ has Weak Derivative $\operatorname{sgn} x$

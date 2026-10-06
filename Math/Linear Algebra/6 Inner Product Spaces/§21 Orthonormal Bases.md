@@ -131,6 +131,7 @@ tags: [linear-algebra]
 > - Physics: (a) is the completeness relation $\sum_k|e_k\rangle\langle e_k|=I$; (c) in Dirac order reads $\langle u|v\rangle=\sum_k\langle u|e_k\rangle\langle e_k|v\rangle$ (conjugate on the other factor, per the convention remark in [[§20 Inner Products and Norms#^ladr-6-2|6.2]]).
 > - Hilbert-space version: [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§36 The Completeness Relation#^thm-36-2|556 Thm. §36.2]].
 > - Computational version: [[§51 Orthogonal Sets#^thm-51-2|235 Thm. §51.2]] (the weights $c_j=\mathbf y\cdot\mathbf u_j/\mathbf u_j\cdot\mathbf u_j$ in an orthogonal basis, as in (a)).
+> - The lattice plane waves $e^{i\mathbf k\cdot\mathbf r}/\sqrt N$ form an orthonormal basis of $\mathbb C^N$, so (a) and (b) become the Fourier inversion and Parseval identities on a periodic lattice, which diagonalize the multipole-lattice energy in the honors-thesis notes ([[§M3.3 The Luttinger–Tisza Method#^thm-m3-3-3|Thesis Thm. §M3.3.3]]).
 
 > [!example] Example 6.31: Finding coefficients for a linear combination (p. 200)
 > Write $(1,2,4,7)$ in the basis of [[§21 Orthonormal Bases#^ladr-6-29|6.29]]. By [[§21 Orthonormal Bases#^ladr-6-30|6.30]](a) the coefficients are just inner products:

@@ -46,6 +46,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 > - Contrast with MATH 451, where $|f|$ Riemann integrable does not follow from the definition but must be proved ([[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]]), and where conditionally convergent improper integrals exist ([[§36 Improper Integrals|451 §36]]); the Lebesgue integral is an *absolute* integral.
 > - $L(E)$ is the space $L^1(E)$ of [[§24 The L¹ Space and Density Theorems#^def-24-1|Def. §24.1]].
 > - Riemann-side counterpart: improper integrals, [[§58 Improper Integrals#^def-58-1|Calc Def. §58.1]], which may converge without ∫|f| < ∞.
+> - On a probability space this integral is the expectation $\mathbb EX=\int_\Omega X\,dP$, and it can be computed on $\mathbb R^d$ against the law of $X$ ([[§R2.4 Probability Spaces, the Law of Large Numbers and the CLT#^def-r2-4-10|Thesis Def. §R2.4.10]], [[§R2.4 Probability Spaces, the Law of Large Numbers and the CLT#^thm-r2-4-11|Thesis Thm. §R2.4.11]]).
 
 ## Properties of the General Integral
 

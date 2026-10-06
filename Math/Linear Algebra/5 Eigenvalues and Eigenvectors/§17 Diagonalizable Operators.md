@@ -230,6 +230,9 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Diagonally dominant matrices ($|A_{j,j}|>\sum_{k\ne j}|A_{j,k}|$ for all $j$) have no eigenvalue $0$, hence are invertible ([[§14 Invariant Subspaces#^ladr-5-7|5.7]]).
+> - For a real symmetric matrix the disks are intervals, and $k$ of them that are disjoint from the others contain exactly $k$ eigenvalues; this counting version, and its consequence that well-separated diagonal entries pin each eigenvalue to within its row sum, are proved in the honors-thesis notes ([[§R4.2 Nearly Diagonal Matrices꞉ Gershgorin and Perturbation Theory#^thm-r4-2-1|Thesis Thm. §R4.2.1]], [[§R4.2 Nearly Diagonal Matrices꞉ Gershgorin and Perturbation Theory#^thm-r4-2-2|Thesis Thm. §R4.2.2]]).
+> - Applied to a sparse mass matrix, the disks bound how far each eigenvalue can move from its diagonal entry by the number of couplings in its row, and so how many couplings a light state needs ([[§R5.4 Sparsity꞉ How Many Off-Diagonal Couplings Are Needed#^thm-r5-4-2|Thesis Thm. §R5.4.2]]).
+> - Gershgorin's row-sum bound on the Hessian of a multipole-lattice energy gives a step size below which gradient descent provably lowers the energy ([[§M8.2 Real-Space Minimisation꞉ Coordinate Descent and Gradient Flow#^thm-m8-2-16|Thesis Thm. §M8.2.16]]).
 
 %% ex:5.67-disks %%
 > [!example] Example: Gershgorin disks of a $3\times3$ matrix

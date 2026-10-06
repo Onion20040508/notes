@@ -91,6 +91,7 @@ Multivariate data (lists of $p$ measurements on each of $N$ objects) form a $p \
 
 > [!remark]- Connections
 > - Rigorous treatment: $T^*T$ (here $T = B^T$) is a positive operator, [[§27 Singular Value Decomposition#^ladr-7-64|LADR 7.64]](a); and conversely every positive operator has this form, [[§25 Positive Operators#^ladr-7-38|LADR 7.38]](f).
+> - A Wishart matrix is the sample covariance matrix of $M$ independent mean-zero Gaussian observations, so by this proposition a random mass matrix of Wishart form has no tachyon; the population version, that every covariance matrix is positive semidefinite, is proved the same way ([[§R3.6 Wishart Matrices and the Marchenko–Pastur Law#^thm-r3-6-2|Thesis Thm. §R3.6.2]], [[§R2.5 Multivariate Gaussian Vectors#^thm-r2-5-7|Thesis Thm. §R2.5.7]]).
 
 > [!definition] Definition §63.5: Variance
 > Let $S = [s_{ij}]$ be the covariance matrix, and let $\mathbf{X}$ represent a vector that varies over the set of observation vectors, with coordinates $x_1, \dots, x_p$ (so $x_1$, for example, is a scalar that varies over the set of first coordinates of $\mathbf{X}_1, \dots, \mathbf{X}_N$).

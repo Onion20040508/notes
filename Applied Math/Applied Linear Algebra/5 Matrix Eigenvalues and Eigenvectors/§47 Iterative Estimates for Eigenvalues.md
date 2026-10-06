@@ -183,6 +183,9 @@ Suppose, for example, that $\alpha$ is closer to $\lambda_2$ than to the other e
 
 ^rem-47-3
 
+> [!remark]- Connections
+> - The honors-thesis notes run this method on large mass matrices with a certified shift: a Cholesky factorization of $A-\alpha I$ succeeds exactly when $\alpha$ is below the smallest eigenvalue, and every Rayleigh quotient lies above it, so each step brackets $\lambda_1$ from both sides ([[§R4.5 Examples Across the Ensembles#^ex-r4-5-6|Thesis Ex. §R4.5.6]]).
+
 > [!example] Example §47.3: The Smallest Eigenvalue by the Inverse Power Method
 > Suppose $21$, $3.3$ and $1.9$ are estimates for the eigenvalues of
 >

@@ -70,7 +70,7 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > **What the derivation shows.**
 > - Three tools in sequence: a residue (a fourth momentum), a Gaussian (after Schwinger's parametrization), and a change of variables to the integral representation of $K_1$.
 > - Four-dimensional Euclidean rotation invariance: Lorentz invariance continued to imaginary time.
-> - Used next: the continuation to every $\xi$ (Theorem §C2b.3.2); the Euclidean propagator (§C2b.7, Def. §C2b.7.1); [[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-4|Theorem §C1.3.4]] obtains the single-particle amplitude as $-2\partial_\tau$ of this function.
+> - Used next: the continuation to every $\xi$ (Theorem §C2b.3.2); the Euclidean propagator (§C2b.7, Def. §C2b.7.1); [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]] obtains the single-particle amplitude as $-2\partial_\tau$ of this function.
 
 ^der-c2b-3-1
 

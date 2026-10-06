@@ -204,6 +204,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 > [!remark]- Connections
 > - Used in [[Egorov's Theorem|Egorov's Theorem]] ([[§18 Egorov's and Lusin's Theorems#^thm-18-1|§18.1]]); integral analogue: [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-7|decreasing MCT]] ([[§21 Consequences of the Monotone Convergence Theorem#^thm-21-7|§21.7]]).
+> - For a probability measure on $\mathbb R$, continuity from below and above make the distribution function $F(x)=\mu((-\infty,x])$ right-continuous with limits $0$ and $1$, the first step of the honors-thesis proof that weak convergence is convergence of distribution functions at continuity points ([[§R2.7 Weak Convergence, Characteristic Functions and Concentration#^thm-r2-7-3|Thesis Thm. §R2.7.3]]).
 
 > [!remark] Remark
 > The hypothesis $m(E_1) < \infty$ in continuity from above is essential. For example, take $E_n = [n, \infty)$. Then $E_1 \supseteq E_2 \supseteq \cdots$, $m(E_n) = \infty$ for all $n$, but $\bigcap_n E_n = \emptyset$, so $m(\bigcap_n E_n) = 0 \neq \infty = \lim_{n \to \infty} m(E_n)$.

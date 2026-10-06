@@ -41,6 +41,9 @@ Cauchy's inequality bounds $|f'(z_0)|$ by $M_R/R$, where $M_R$ is the maximum of
 
 In other words, no entire function except a constant is bounded in the complex plane. For instance, $\sin z$ is entire and not constant, so it is unbounded; [[§37 The Trigonometric Functions sin z and cos z#^ex-37-3|Example §37.3]] (a final exam question) also shows this directly, from $|\sin z| \ge |\sinh y|$.
 
+> [!remark]- Connections
+> - In the honors-thesis notes Liouville's theorem pins down the Stieltjes transform of the semicircle law: once the cut and the endpoint singularities are removed, the remaining bounded entire function is constant ([[§R3.4 The Semicircle Law II꞉ Stieltjes Transform and Coulomb Gas#^thm-r3-4-5a|Thesis Thm. §R3.4.5a]]).
+
 > [!theorem] Theorem §58.2: Fundamental Theorem of Algebra
 > Any polynomial
 >

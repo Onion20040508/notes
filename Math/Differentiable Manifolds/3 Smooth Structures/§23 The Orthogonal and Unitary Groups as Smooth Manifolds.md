@@ -88,6 +88,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > - $\mathrm{O}(n)$ as a group in 493: [[Matrix groups GLₙ, SLₙ and O(n)]]; the analogous level-set argument for $\mathrm{SL}(n,\mathbb{R})$: [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]].
 > - Its tangent spaces: [[§25 The Geometric Tangent Space#^ex-25-2|Ex. §25.2]]; all classical groups: [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]].
 > - Used in Relativity: $\dim SO(3) = 3$ counts the rotation parameters when a proper orthochronous Lorentz transformation is written as a boost times a rotation — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]].
+> - Its dimension $\frac{n(n-1)}2$ plus $n$ eigenvalues gives $\frac{n(n+1)}2$, the dimension of the symmetric matrices of Definition §23.1: the parameter count of the spectral decomposition $M=O^{\mathsf T}\Lambda O$ of a symmetric matrix ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-3|Thesis Thm. §R2.6.3]]).
 
 > [!remark] Remark
 > **The codomain is not a cosmetic choice.** It is essential that $F$ be regarded as a map into $\operatorname{Sym}(n,\mathbb{R})$ and not into $\operatorname{Mat}(n,\mathbb{R})$. Since $F(g)$ is always symmetric, $\operatorname{im} F \subseteq \operatorname{Sym}(n,\mathbb{R}) \subsetneq \operatorname{Mat}(n,\mathbb{R})$, so $F'(g)$ could never be surjective onto $\operatorname{Mat}(n,\mathbb{R})$; with that codomain $I$ would fail to be a regular value at every point and the theorem would yield nothing. Choosing the codomain to be exactly the space the map lands in is what makes the rank condition attainable — and it is also what produces the right dimension count, since $\dim \mathrm{O}(n) = n^2 - \dim(\text{codomain})$.
@@ -131,6 +132,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 
 > [!remark]- Connections
 > - This kernel is the geometric tangent space $T^{\mathrm{geo}}_g\mathrm{O}(n)$: [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§25 The Geometric Tangent Space#^ex-25-2|Ex. §25.2]].
+> - Varying $O$ in $M=O^{\mathsf T}\Lambda O$ moves it along this tangent space, $\delta O=\delta\Omega\,O$ with $\delta\Omega$ antisymmetric, and that is where the Vandermonde volume factor of the spectral decomposition comes from ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-4|Thesis Thm. §R2.6.4]]).
 
 > [!remark] Remark: Two Readings of the Dimension
 > A student asked for a combinatorial reason that $\dim \mathrm{O}(n) = \tfrac{n(n-1)}{2}$, “like choosing two out of $n$.” There are now two: the level-set count $n^2 - \tfrac{n(n+1)}{2}$ from the regular value theorem, and the kernel count $\binom{n}{2}$ from Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]]. They agree by [[§21 Linear Algebra Toolkit#^prop-21-1|rank–nullity]]: $dF_g$ is surjective onto a space of dimension $\tfrac{n(n+1)}{2}$, so its kernel has dimension $n^2 - \tfrac{n(n+1)}{2}$. The kernel is not yet officially anything, but Uribe named it ahead of time: it is the *geometric tangent space* $T^{\mathrm{geo}}_g\mathrm{O}(n)$ to $\mathrm{O}(n)$ at $g$ (see [[§25 The Geometric Tangent Space|§25]]), and at $g = I$ the skew-symmetric matrices will be the *Lie algebra* $\mathfrak{so}(n)$, “in some number of weeks.” The same move produced $\nabla\det$ in Proposition [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], and it will recur whenever a classical group is presented as a level set.
@@ -153,6 +155,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 
 > [!remark]- Connections
 > - Compactness is [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]].
+> - Compactness lets finitely many parametrizations cover $\mathrm{O}(n)$, so their local volume elements patch into a finite measure invariant under left and right multiplication, a multiple of the Haar probability measure ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-9|Thesis Thm. §R2.6.9]]).
 
 **Transcription note.** Page 20 of the handwritten notes writes “$\ker dF_g(A) = \{A \mid gA^{\mathsf T} + Ag^{\mathsf T} = 0\}$”; the kernel is of the linear map $dF_g$, and the “$(A)$” does not belong. The transposes sit to the right of $g$ throughout because that is how $F$ was written ($gg^{\mathsf T}$, not $g^{\mathsf T}g$); either convention defines $\mathrm{O}(n)$.
 

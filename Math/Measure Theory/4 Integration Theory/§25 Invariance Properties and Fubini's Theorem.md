@@ -145,6 +145,7 @@ tags: [measure-theory, math551]
 > - Computational version for continuous functions on boxes: [[§115 Double Integrals Over Rectangles#^thm-115-3|Calc Thm. §115.3]] and [[§120 Triple Integrals#^thm-120-1|Calc Thm. §120.1]] (with worked examples).
 > - Used in ODEs: an absolute bound on the wedge $0 \le \tau \le t$ makes the order of integration reversible in the convolution theorem for Laplace transforms, [[§31★ The Convolution Integral#^thm-31-2|331 Thm. §31.2]].
 > - Used in PDEs: checking the integrability hypothesis of Fubini's theorem when the order of integration is reversed in [[§33 Infinite Rod#^thm-33-3|341 Thm. §33.3]] and [[§64★ Definition and Elementary Properties#^thm-64-6|341 Thm. §64.6]].
+> - Tonelli shows that random variables with a factorizing joint density $p(x_1,\dots,x_n)=\prod_ip_i(x_i)$ are independent ([[§R2.4 Probability Spaces, the Law of Large Numbers and the CLT#^rem-r2-4-1|Thesis §R2.4, Remark]]).
 
 ## The Tonelli Class and Its Closure Properties
 

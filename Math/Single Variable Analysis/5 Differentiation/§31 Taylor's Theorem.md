@@ -134,6 +134,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 > - Two-variable version, proved by applying this theorem along a segment: [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-2|452 Thm. §11.2]].
 > - Computational version: Taylor's Inequality, [[§90 Taylor and Maclaurin Series#^thm-90-4|Calc Thm. §90.4]] (with worked examples).
 > - Used in ODEs: the remainder bound $|e^x - 1 - x| \le \tfrac12 x^2e^{|x|}$ justifies differentiating a Laplace transform under the integral sign, [[§27 Solution of Initial Value Problems#^thm-27-6|331 Thm. §27.6]] (table entry 19).
+> - The second-order version in $N$ variables, proved by applying this theorem along the segment from $p$ to $p+h$, is in the honors-thesis notes ([[§R2.1 The Hessian and the Second-Derivative Test in N Variables#^thm-r2-1-1|Thesis Thm. §R2.1.1]]).
 
 ## Two Instructive Examples
 

@@ -138,6 +138,9 @@ On $C_R$ and $C_\rho$ the integrals of $f$ are taken with $0 < \theta < 2\pi$ (t
 
 ^ex-91-1
 
+> [!remark]- Connections
+> - With $a=1-\frac d2$ this integral evaluates the one-loop integral of a heavy scalar in $d$ dimensions, the step that gives the dimensional-regularization form of the scalar mass correction in the honors-thesis notes ([[§R1.5★ Radiative Corrections, Naturalness and the Hierarchy Problem#^thm-r1-5-1|Thesis Thm. §R1.5.1]]).
+
 > [!example] Example §91.2: The Integral of 1/(√x (x² + 1)) Again
 > Derive $\displaystyle\int_0^\infty\frac{dx}{\sqrt x\,(x^2 + 1)} = \frac{\pi}{\sqrt2}$ by integrating the branch
 >

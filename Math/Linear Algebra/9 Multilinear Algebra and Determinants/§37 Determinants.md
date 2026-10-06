@@ -409,4 +409,6 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Polynomial interpolation through $n$ points with distinct $\beta_k$ exists and is unique (the matrix is invertible, [[Invertible ⟺ nonzero determinant|9.50]]).
 > - Computational version: [[§26 Transposes, Products, and Linearity of Determinants#^prop-26-3|235 Prop. §26.3]] (the Vandermonde determinant, with columns in place of rows).
+> - The Vandermonde product is the volume factor of the change of variables from a symmetric matrix to its eigenvalues and eigenvectors, and its square, the discriminant, is the Hankel determinant of the traces $\operatorname{tr}M^{j+k-2}$ ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-4|Thesis Thm. §R2.6.4]], [[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^lem-r2-6-7|Thesis Lemma §R2.6.7]]).
+> - As a factor of the joint eigenvalue density of the Gaussian orthogonal ensemble it vanishes when two eigenvalues meet, which is the level repulsion of random symmetric matrices ([[§R3.1 Wigner Matrices and the Gaussian Orthogonal Ensemble#^thm-r3-1-5|Thesis Thm. §R3.1.5]], [[§R3.2 Level Repulsion, the Wigner Surmise and Poisson Spacings#^thm-r3-2-1|Thesis Thm. §R3.2.1]]).
 

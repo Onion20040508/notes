@@ -73,6 +73,9 @@ tags: [linear-algebra]
 > - (f) gives the positivity of $T^*T$ that SVD rests on ([[§27 Singular Value Decomposition#^ladr-7-64|Properties of T∗T]]).
 > - Computational version: [[§59★ Quadratic Forms#^prop-59-5|235 Prop. §59.5]] ((a)⟺(b) for symmetric matrices; the definite case is [[§59★ Quadratic Forms#^thm-59-4|235 Thm. §59.4]]) and [[§63★ Applications to Image Processing and Statistics#^prop-63-1|235 Prop. §63.1]] ($BB^T$ is positive semidefinite, as in (f)).
 > - Positive definite Hessians give strict local minima: [[Second Derivative Test in Several Variables|452 Thm. §18.1]].
+> - A critical point of a potential of $N$ scalar fields can be a vacuum only if its mass matrix (the Hessian there) is a positive operator, and it is a strict local minimum if all eigenvalues are positive ([[§R1.2 The Mass Matrix Is the Hessian at the Vacuum#^thm-r1-2-3|Thesis Thm. §R1.2.3]]).
+> - The positive square root of a covariance matrix $C$ builds every Gaussian vector with that covariance, as $\mu+C^{1/2}Z$ from independent standard normals ([[§R2.5 Multivariate Gaussian Vectors#^thm-r2-5-9|Thesis Thm. §R2.5.9]]).
+> - By (f), a Wishart matrix $\frac1MAA^{\mathsf T}$ is positive, so a random mass matrix of this form never has a tachyon ([[§R3.6 Wishart Matrices and the Marchenko–Pastur Law#^thm-r3-6-2|Thesis Thm. §R3.6.2]]).
 
 > [!theorem] Theorem 7.39: Each positive operator has only one positive square root
 > Every positive operator has a unique positive square root, denoted $\sqrt T$.

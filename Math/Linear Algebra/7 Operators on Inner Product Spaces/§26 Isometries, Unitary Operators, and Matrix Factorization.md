@@ -55,6 +55,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§51 Orthogonal Sets#^thm-51-4|235 Thm. §51.4]] ($U^TU=I$ iff $U$ has orthonormal columns) and [[§51 Orthogonal Sets#^thm-51-5|235 Thm. §51.5]].
+> - Applied to field redefinitions: once the kinetic term of $N$ scalar fields is canonical, the constant linear changes of field that keep it canonical are exactly the orthogonal ones, so the remaining freedom is $O(N)$ ([[§R1.1 N Real Scalar Fields and Their Potential#^thm-r1-1-7|Thesis Thm. §R1.1.7]]).
 
 > [!definition] Definition 7.51: Unitary operator
 > An operator $S\in\Lin(V)$ is *unitary* if it is an invertible isometry. (In finite dimensions 'invertible' is automatic, by injectivity and [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]].)
@@ -162,6 +163,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Gives Cholesky [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-63|7.63]]; used for Hadamard's inequality ([[§37 Determinants#^ladr-9-66|Hadamard’s inequality]]).
 > - Computational version: [[§53 The Gram–Schmidt Process#^thm-53-3|235 Thm. §53.3]] (QR from Gram–Schmidt, for $m\times n$ matrices with independent columns; worked in [[§53 The Gram–Schmidt Process#^ex-53-3|235 Ex. §53.3]]).
+> - The QR factorization of a square matrix with independent standard Gaussian entries produces a uniformly random (Haar-distributed) orthogonal matrix $Q$ ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-2|Thesis Thm. §R2.6.2]]).
 
 > [!example] Example 7.60: QR factorization of a 3-by-3 matrix (p. 265)
 > $A=\begin{pmatrix}1&2&1\\0&1&-4\\0&3&2\end{pmatrix}$, columns $v_1=(1,0,0)$, $v_2=(2,1,3)$, $v_3=(1,-4,2)$. Gram–Schmidt gives
@@ -215,4 +217,5 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Computational version: [[§59★ Quadratic Forms#^rem-59-3|235 Remark §49.3]] (as a fast test for positive definiteness).
 > - Used in Quantum Mechanics: the Ritz equations $\mathsf H\mathbf c = \varepsilon\mathsf S\mathbf c$ with a positive definite overlap matrix $\mathsf S$ ([[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-62|Definition 7.62]]), a generalized eigenvalue problem that the Cholesky factorization turns into an ordinary one — [[§C9.3 The Ritz Variational Method#^thm-c9-3-3|QM Theorem §C9.3.3]].
+> - Since $A-\alpha I$ has a Cholesky factorization exactly when $\alpha$ lies below the smallest eigenvalue of $A$, a successful factorization certifies a lower bound on it; the honors-thesis notes use this to bracket the lightest mass in the inverse power method ([[§R4.5 Examples Across the Ensembles#^ex-r4-5-6|Thesis Ex. §R4.5.6]]).
 

@@ -6,10 +6,10 @@ chapter: C2a
 tags: [chapter, quantum-field-theory]
 ---
 # C2a The Quantum Scalar Field
-← [[· C1 Preliminaries]] · ↑ [[Quantum Field Theory]] · [[· C2b Two-Point Functions, Causality and Propagators]] →
+← [[· C1b Classical Field Theory]] · ↑ [[Quantum Field Theory]] · [[· C2b Two-Point Functions, Causality and Propagators]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (4), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (193)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (23), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (76), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (34), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (88), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (87), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (3), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (8), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (3), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (193)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (6), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (17), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (76), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (34), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (88), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (89), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
 
 ## Sections
 - [[§C2a.1 Canonical Quantization of Fields]] — PS 2.3; Yu 2.1–2.2; 513 notes Ch. 4
@@ -20,12 +20,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C2a.6 Coherent States and the Classical Field]] — 513 notes Ch. 4
 
 ## Principles
-- [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|§C2a.1.1]] Equal-Time Canonical Commutation Relations
+- [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|§C2a.1.2]] Equal-Time Canonical Commutation Relations
 - [[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|§C2a.4.1]] The Vacuum and the Fock Space
 
 ## Theorems
-- [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-2|§C2a.1.2]] The Canonical Relations Are Identities after Smearing
-- [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|§C2a.1.3]] The Free Field Is a Set of Independent Oscillators
+- [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|§C2a.1.3]] The Canonical Relations Are Identities after Smearing
+- [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|§C2a.2.1]] The Free Field Is a Set of Independent Oscillators
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|§C2a.2.2]] Mode Expansion of the Real Field
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|§C2a.2.3]] Conservation and Orthonormality of the Modes
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|§C2a.2.4]] Orthonormality for Wave Packets
@@ -61,5 +61,5 @@ tags: [chapter, quantum-field-theory]
 - [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|§C2a.6.8]] Smeared Fluctuations Are Finite and Independent of the Amplitude
 
 ## Models
-- [[§C2a.2 Mode Expansion and the Mode Algebra#^mod-c2a-2-1|§C2a.2.1]] The Free Real Scalar Quantum Field
+- [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|§C2a.1.1]] The Free Real Scalar Quantum Field
 - [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|§C2a.5.1]] The Free Complex Scalar Quantum Field

@@ -125,6 +125,7 @@ By renumbering if necessary, we may assume the eigenvalues are arranged so that 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§27 Singular Value Decomposition#^ladr-7-65|LADR 7.65]] defines the singular values of any linear map $T : V \to W$ between inner product spaces exactly this way, from the positive operator $T^*T$ ([[§27 Singular Value Decomposition#^ladr-7-64|LADR 7.64]]: $T^*T$ is positive, $\operatorname{null} T^*T = \operatorname{null} T$). The first part of [[§61★ The Singular Value Decomposition#^prop-61-2|Proposition §61.2]] is "the norm of $T$ is its largest singular value", [[§28 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
+> - The eigenvalues of a Wishart matrix $\frac1MAA^T$ are the squared singular values of $A/\sqrt M$, and for a large Gaussian $A$ their distribution is the Marchenko–Pastur law ([[§R3.6 Wishart Matrices and the Marchenko–Pastur Law#^thm-r3-6-2|Thesis Thm. §R3.6.2]], [[§R3.6 Wishart Matrices and the Marchenko–Pastur Law#^thm-r3-6-3|Thesis Thm. §R3.6.3]]).
 
 The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in [[§61★ The Singular Value Decomposition#^ex-61-1|Example §61.1]] are orthogonal. This is no accident.
 

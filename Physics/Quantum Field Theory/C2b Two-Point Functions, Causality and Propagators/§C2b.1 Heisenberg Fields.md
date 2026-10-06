@@ -199,18 +199,18 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > e^{iHt}[\phi_S(\mathbf x), \pi_S(\mathbf y)]e^{-iHt} = e^{iHt}\phi_Se^{-iHt}\,e^{iHt}\pi_Se^{-iHt} - e^{iHt}\pi_Se^{-iHt}\,e^{iHt}\phi_Se^{-iHt} = [\phi(t, \mathbf x), \pi(t, \mathbf y)],
 > $$
 >
-> while the right side of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]], $i\delta^3(\mathbf x - \mathbf y)$, is a number and is unchanged. One unitary sandwiches the whole product, so the *same* $t$ enters both fields. The same insertion in $[\phi_S(\mathbf x), \phi_S(\mathbf y)]$ and $[\pi_S(\mathbf x), \pi_S(\mathbf y)]$ gives $[\phi(t, \mathbf x), \phi(t, \mathbf y)]$ and $[\pi(t, \mathbf x), \pi(t, \mathbf y)]$, and their right sides, $0$, are unchanged.
+> while the right side of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], $i\delta^3(\mathbf x - \mathbf y)$, is a number and is unchanged. One unitary sandwiches the whole product, so the *same* $t$ enters both fields. The same insertion in $[\phi_S(\mathbf x), \phi_S(\mathbf y)]$ and $[\pi_S(\mathbf x), \pi_S(\mathbf y)]$ gives $[\phi(t, \mathbf x), \phi(t, \mathbf y)]$ and $[\pi(t, \mathbf x), \pi(t, \mathbf y)]$, and their right sides, $0$, are unchanged.
 >
 > ⚑ By-product: nothing is said about *different* times → [[§C2b.1 Heisenberg Fields#^cau-c2b-1-1|Caution: Equal times only]]; the answer is Theorem §C2b.4.9.
 >
-> **Step 2** (the Hamiltonian at time $t$). $H$ commutes with $e^{iHt}$, so $H = e^{iHt}He^{-iHt}$ is the Hamiltonian of [[§C2a.2 Mode Expansion and the Mode Algebra#^mod-c2a-2-1|Model §C2a.2.1]] with every field replaced by its Heisenberg version at any common time; choose the time $t$ of the operator it will be commuted with (the squares of fields at one point are understood normal-ordered, [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]; the subtracted constant $E_0$ is a number and drops out of every commutator, Step 1 of Derivation §C2b.1.1):
+> **Step 2** (the Hamiltonian at time $t$). $H$ commutes with $e^{iHt}$, so $H = e^{iHt}He^{-iHt}$ is the Hamiltonian of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] with every field replaced by its Heisenberg version at any common time; choose the time $t$ of the operator it will be commuted with (the squares of fields at one point are understood normal-ordered, [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]; the subtracted constant $E_0$ is a number and drops out of every commutator, Step 1 of Derivation §C2b.1.1):
 >
 > $$
 > H = \int d^3x'\,\Bigl[\tfrac12\pi(t, \mathbf x')^2 + \tfrac12\bigl(\nabla'\phi(t, \mathbf x')\bigr)^2 + \tfrac12m^2\phi(t, \mathbf x')^2\Bigr].
 > $$
 >
 > **Step 3** ($\phi$ against the three terms). Write $\phi = \phi(t, \mathbf x)$, $\phi' = \phi(t, \mathbf x')$, $\pi' = \pi(t, \mathbf x')$.
-> - $[\phi, \pi'^2] = \pi'[\phi, \pi'] + [\phi, \pi']\pi' = 2i\delta^3(\mathbf x - \mathbf x')\,\pi'$: the commutator is a number, so the two terms are equal. (Sense: $\delta^3(\mathbf x - \mathbf x')\,\pi'$ is a $c$-number distribution times an operator-valued distribution in the same variable; smeared with $g(\mathbf x)$ it becomes $g(\mathbf x')\pi(t, \mathbf x')$, a test function times $\pi$, which is defined: [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-2|Theorem §C2a.1.2]].)
+> - $[\phi, \pi'^2] = \pi'[\phi, \pi'] + [\phi, \pi']\pi' = 2i\delta^3(\mathbf x - \mathbf x')\,\pi'$: the commutator is a number, so the two terms are equal. (Sense: $\delta^3(\mathbf x - \mathbf x')\,\pi'$ is a $c$-number distribution times an operator-valued distribution in the same variable; smeared with $g(\mathbf x)$ it becomes $g(\mathbf x')\pi(t, \mathbf x')$, a test function times $\pi$, which is defined: [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]].)
 > - $[\phi, (\nabla'\phi')^2] = 0$: $[\phi, \partial'_i\phi'] = \partial'_i[\phi, \phi'] = 0$, because $[\phi, \phi']$ vanishes for *all* $\mathbf x'$ and the difference quotient of an identically zero function is zero.
 > - $[\phi, \phi'^2] = 0$.
 >
@@ -254,12 +254,12 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > - Only the equal-time relations and the form of $H$ were used, never the mode expansion; the mode expansion is recovered by solving the operator equation ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]]).
 > - Assumption used: fall-off of the field at spatial infinity (Step 5).
 > - Every manipulation with $\delta^3$ is an identity of distributions, valid after smearing in $\mathbf x$; the resulting operator equation means $\phi\bigl((\partial^2 + m^2)f\bigr) = 0$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], 3).
-> - The two first-order equations are Hamilton's equations of the classical field ([[§C1.10 Hamiltonian Field Theory#^thm-c1-10-4|Theorem §C1.10.4]]; this field: [[§C1.10 Hamiltonian Field Theory#^ex-c1-10-1|Example §C1.10.1]]) with operators in place of functions.
+> - The two first-order equations are Hamilton's equations of the classical field ([[§C1b.3 Hamiltonian Field Theory#^thm-c1b-3-4|Theorem §C1b.3.4]]; this field: [[§C1b.3 Hamiltonian Field Theory#^ex-c1b-3-1|Example §C1b.3.1]]) with operators in place of functions.
 > - Used next: every two-point function solves the homogeneous equation (Theorem §C2b.2.4), and the free Schwinger–Dyson equation ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]).
 
 ^der-c2b-1-3
 
-*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^mod-c2a-2-1|Model §C2a.2.1]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]
+*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]
 
 > [!caution] Caution: Equal times only
 > - The canonical relations were postulated at one instant. Theorem §C2b.1.3, 1 extends them to every *common* time; at different times nothing has been assumed, and the answer is a theorem ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]).

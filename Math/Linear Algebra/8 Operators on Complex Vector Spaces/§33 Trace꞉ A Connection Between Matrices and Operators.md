@@ -36,6 +36,8 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in Quantum Field Theory: cyclicity of the trace makes every $\gamma^\mu$, and every product of an odd number of them, traceless — [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-4|QFT Theorem §C5a.2.4]], [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|QFT Theorem §C5a.7.3]].
+> - With the spectral theorem, cyclicity gives $\operatorname{tr}M^k=\sum_i\lambda_i^k$ for symmetric $M$, so the moments of the eigenvalue distribution are normalized traces, the starting point of the moment proof of Wigner's semicircle law ([[§R3.3 The Semicircle Law I꞉ Moments and Catalan Numbers#^thm-r3-3-3|Thesis Thm. §R3.3.3]]).
+> - Cyclicity also makes $\operatorname{tr}W^2$ invariant under $W\mapsto OWO^{\mathsf T}$, which is why the Gaussian orthogonal ensemble of random symmetric matrices is rotation invariant ([[§R3.1 Wigner Matrices and the Gaussian Orthogonal Ensemble#^thm-r3-1-3|Thesis Thm. §R3.1.3]]).
 
 > [!theorem] Theorem 8.50: Trace of matrix of operator does not depend on basis
 > For $T\in\Lin(V)$ and bases $u$, $v$ of $V$: $\operatorname{tr}\mathcal{M}(T,(u))=\operatorname{tr}\mathcal{M}(T,(v))$.

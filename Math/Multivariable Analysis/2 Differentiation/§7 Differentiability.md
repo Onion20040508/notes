@@ -319,5 +319,6 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > [!remark]- Connections
 > - Computational version: [[§109 Tangent Planes and Linear Approximations#^thm-109-2|Calc Thm. §109.2]] (with worked examples).
 > - Computational version: [[§23 Sufficient Conditions for Differentiability#^thm-23-1|342 Thm. §23.1]] (continuous first partials of u and v plus the Cauchy–Riemann equations give complex differentiability, with worked examples).
+> - The $N$-variable version, with the derivative along a line $\frac{d}{dt}g(q+th)\big|_{t=0}=\nabla g(q)\cdot h$, is proved in the honors-thesis notes as the step that carries Taylor's theorem and the second-derivative test to $N$ variables ([[§R2.1 The Hessian and the Second-Derivative Test in N Variables#^lem-r2-1-8|Thesis Lemma §R2.1.8]]).
 
 *Continued in [[§8 Algebra of Differentiable Functions]]: the algebra of partial derivatives and of differentiable functions (sums, products, quotients, compositions).*

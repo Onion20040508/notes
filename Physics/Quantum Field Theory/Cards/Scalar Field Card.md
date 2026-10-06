@@ -17,10 +17,10 @@ One-page reference for the free real and complex scalar field (canonical quantiz
 | momentum density | $\pi = \dot\phi$ | $\pi = \partial\mathcal L/\partial\dot\phi = \dot\phi^\dagger$, $\pi^\dagger = \dot\phi$ |
 | $H = \int d^3x\,\mathcal H$ | $\mathcal H = \frac12\pi^2 + \frac12(\nabla\phi)^2 + \frac12m^2\phi^2$ | $\mathcal H = \pi^\dagger\pi + \nabla\phi^\dagger\cdot\nabla\phi + m^2\phi^\dagger\phi$ |
 | equal-time relations | $[\phi(\mathbf x), \pi(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$, $[\phi, \phi] = [\pi, \pi] = 0$ | $[\phi(\mathbf x), \pi(\mathbf y)] = [\phi^\dagger(\mathbf x), \pi^\dagger(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$; all others $0$, incl. $[\phi, \pi^\dagger]$, $[\phi, \phi^\dagger]$ |
-| home | [[§C2a.2 Mode Expansion and the Mode Algebra#^mod-c2a-2-1\|Model §C2a.2.1]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1\|Principle §C2a.1.1]] | [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1\|Model §C2a.5.1]] |
+| home | [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1\|Model §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2\|Principle §C2a.1.2]] | [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1\|Model §C2a.5.1]] |
 
-- General postulate: $[\phi_a(\mathbf x), \pi_b(\mathbf y)] = i\,\delta_{ab}\,\delta^3(\mathbf x - \mathbf y)$, $[\phi_a, \phi_b] = [\pi_a, \pi_b] = 0$ — [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]]
-- Classical modes: $H = \int\frac{d^3p}{(2\pi)^3}\frac12\bigl[|\tilde\pi(\mathbf p)|^2 + E_{\mathbf p}^2|\tilde\phi(\mathbf p)|^2\bigr]$, one oscillator of frequency $E_{\mathbf p}$ per $\mathbf p$ — [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]]
+- General postulate: $[\phi_a(\mathbf x), \pi_b(\mathbf y)] = i\,\delta_{ab}\,\delta^3(\mathbf x - \mathbf y)$, $[\phi_a, \phi_b] = [\pi_a, \pi_b] = 0$ — [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]
+- Classical modes: $H = \int\frac{d^3p}{(2\pi)^3}\frac12\bigl[|\tilde\pi(\mathbf p)|^2 + E_{\mathbf p}^2|\tilde\phi(\mathbf p)|^2\bigr]$, one oscillator of frequency $E_{\mathbf p}$ per $\mathbf p$ — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|Theorem §C2a.2.1]]
 - Heisenberg field $\phi(x) = e^{iHt}\phi_S(\mathbf x)e^{-iHt}$ — [[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]]; relations hold at every common time, $\partial_t\phi = \pi$, $\partial_t\pi = (\nabla^2 - m^2)\phi$, $(\partial_\mu\partial^\mu + m^2)\phi = 0$ — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]
 
 ## 2. Modes
@@ -154,7 +154,7 @@ Microcausality:
 
 - $E_{\mathbf p}$ here is the lectures' $\omega_{\mathbf p}$, and $\pi$ their $\Pi$ — [[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution §C2a.1]]
 - $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$: the slides drop the $(2\pi)^3$ — [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-2|Caution §C2a.4]]
-- Charge: $\frac12(N_a - N_b)$ here, PS and Problem Set 3; Noether current with $\Delta\phi = +i\phi$ gives $N_b - N_a$; Yu $q(N_a - N_b)$ — [[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|Caution §C2a.5]], [[§C1.11 Noether's Theorem#^cau-c1-11-3|Caution §C1.11]]
+- Charge: $\frac12(N_a - N_b)$ here, PS and Problem Set 3; Noether current with $\Delta\phi = +i\phi$ gives $N_b - N_a$; Yu $q(N_a - N_b)$ — [[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|Caution §C2a.5]], [[§C1b.4 Noether's Theorem#^cau-c1b-4-3|Caution §C1b.4]]
 - $D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2)e^{-ip\cdot x} = (m^2 - p^2)e^{-ip\cdot x}$; closing up is counterclockwise, down clockwise — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-2|Caution §C2b.6]]
-- $(2\pi)^3\delta^3(\mathbf 0) = V$, i.e. $\delta^3(\mathbf 0) = V/(2\pi)^3$; a $\delta^3(\mathbf 0)$ from two different momenta signals a dropped sign — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark §C2a.2]]
+- $(2\pi)^3\delta^3(\mathbf 0) = V$, i.e. $\delta^3(\mathbf 0) = V/(2\pi)^3$; a $\delta^3(\mathbf 0)$ from two different momenta signals a dropped sign — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark §C2a.2]]
 - PS's $D$ is $D_W$ here; Yu's $D_{\mathrm{PJ}} = iD$ — [[§C2b.4 Microcausality and the Commutator Function#^cau-c2b-4-1|Caution §C2b.4]]

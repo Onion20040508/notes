@@ -113,3 +113,4 @@ tags: [multivariable-analysis, math452]
 > - Symmetry of mixed partials is what makes the [[§18 Second-Order Sufficient Conditions#^def-18-1|Hessian matrix]] symmetric, so the [[Real spectral theorem]] (LADR 7.29) applies to it; see also [[§39 Closed and Exact Forms#^prop-39-2|The Second Total Derivative Is the Hessian]].
 > - In the language of forms, Clairaut becomes [[§39 Closed and Exact Forms#^prop-39-4|d² = 0]] ([[Exterior Derivative Squares to Zero|§38.4]]).
 > - Computational version: [[§108 Partial Derivatives#^thm-108-2|Calc Thm. §108.2]] (with worked examples).
+> - Applied to the potential of $N$ scalar fields, it makes the mass matrix, the Hessian at the vacuum, real symmetric ([[§R1.2 The Mass Matrix Is the Hessian at the Vacuum#^thm-r1-2-2|Thesis Thm. §R1.2.2]]).

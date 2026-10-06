@@ -194,6 +194,7 @@ The proofs above ([[§24 The Change of Variables Formula#^thm-24-2|Theorem §24.
 > - For Lebesgue measure the identity $m(T(R)) = |\det T|\, m(R)$ on rectangles is proved by elementary row operations inside [[§30 Differentiating the Integral#^thm-30-3|551 Thm. §30.3]] (linear maps preserve null sets).
 > - The case n = 3 with worked examples: [[§97 Triple Products and Torque#^thm-97-2|Calc Thm. §97.2]] (volume of a parallelepiped as a determinant).
 > - Computational version for n = 2, 3: [[§28 Determinants as Area or Volume#^thm-28-2|235 Thm. §28.2]] (determinants as area or volume), [[§28 Determinants as Area or Volume#^thm-28-3|235 Thm. §28.3]] and [[§28 Determinants as Area or Volume#^thm-28-4|235 Thm. §28.4]] (a linear map multiplies area or volume by its absolute determinant), with worked areas.
+> - Conjugation $M\mapsto OMO^{\mathsf T}$ by an orthogonal matrix is a linear map of the space of symmetric matrices with $|\det|=1$, so it preserves volume there; this underlies the rotation invariance of Gaussian random symmetric matrices ([[§R2.5 Multivariate Gaussian Vectors#^lem-r2-5-11|Thesis Lemma §R2.5.11]]).
 
 This proposition explains why the Jacobian determinant appears in the change of variables formula: locally, the transformation $\Phi$ is approximated by its linearization $J_\Phi$ ([[§7 Differentiability#^def-7-2|Def. §7.2]]), and $|\det(J_\Phi)| = |J|$ measures the local volume distortion.
 
@@ -220,6 +221,7 @@ This proposition explains why the Jacobian determinant appears in the change of 
 > - The smooth version of the diffeomorphisms allowed here is [[§17 Differentiable Structures#^def-17-3|591 Def. §17.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
 > - Computational version: [[§124 Change of Variables in Multiple Integrals#^thm-124-2|Calc Thm. §124.2]] (n = 3, with worked examples), with cylindrical and spherical coordinates in [[§122 Triple Integrals in Cylindrical Coordinates#^thm-122-1|Calc Thm. §122.1]] and [[§123 Triple Integrals in Spherical Coordinates#^thm-123-2|Calc Thm. §123.2]].
 > - The linear case, where the Jacobian is constant: [[§28 Determinants as Area or Volume#^thm-28-4|235 Thm. §28.4]] (with worked areas, n = 2, 3).
+> - On the space of $N\times N$ symmetric matrices, the change of variables from the entries to the eigenvalues and an orthogonal matrix has volume factor proportional to $\prod_{i<j}|\lambda_j-\lambda_i|$; this Weyl integration formula is proved in the honors-thesis notes ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-4|Thesis Thm. §R2.6.4]]).
 
 ### Common Coordinate Systems and Worked Examples
 

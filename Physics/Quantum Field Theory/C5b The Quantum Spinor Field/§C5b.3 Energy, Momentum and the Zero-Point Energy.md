@@ -59,7 +59,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 ## The Hamiltonian, before and after reordering
 
 > [!theorem] Theorem §C5b.3.2: The Hamiltonian in Modes, before Any Algebra
-> Substituting the expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] into $H = \int d^3x\,\psi^\dagger H_{\text{s.p.}}\psi$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) gives, with the operators in the order in which they arise and no (anti)commutation relation used,
+> Substituting the expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] into the field-form Hamiltonian $H = \int d^3x\,\psi^\dagger H_{\text{s.p.}}\psi$ of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] (the integral of the density of [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]], recalled in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) gives, with the operators in the order in which they arise and no (anti)commutation relation used,
 >
 > $$
 > H = \sum_{s}\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\Bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} - b^s_{\mathbf p}b^{s\dagger}_{\mathbf p}\Bigr) ,
@@ -288,7 +288,7 @@ The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cann
 ## Momentum and the ladder relations
 
 > [!theorem] Theorem §C5b.3.6: Momentum of the Dirac Field
-> The field momentum $\mathbf P = -\int d^3x\,\pi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-12|Theorem §C5a.4.12]]; general form [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-6|Theorem §C1.12.6]]) is, under the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]],
+> The field momentum of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], $\mathbf P = -\int d^3x\,\pi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ (the Noether momentum of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-12|Theorem §C5a.4.12]], recalled in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]; general form [[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-5-6|Theorem §C1b.5.6]]) is, under the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]],
 >
 > $$
 > \mathbf P = \sum_s\int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) ,

@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (103), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (16), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (24), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (66), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (89), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (3)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (84), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (19), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (16), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (66), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (89), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8)
 
 ## Sections
 - [[§C3.1 Groups, Algebras and Representations of Rotations]] — 

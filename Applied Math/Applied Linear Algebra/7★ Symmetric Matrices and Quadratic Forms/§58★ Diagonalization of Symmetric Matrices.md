@@ -283,6 +283,7 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 > - Over $\mathbb{C}$ the condition becomes "normal" ([[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]], [[Complex spectral theorem]]); the symmetric-bilinear-form version, which is the Principal Axes Theorem, [[§59★ Quadratic Forms#^thm-59-2|Theorem §59.2]], is [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]].
 > - See also: BDP's statement for Hermitian matrices, [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-5|331 Thm. §35.5]] (real eigenvalues and orthogonality proved there). For $\mathbf{x}' = A\mathbf{x}$ with $A$ real symmetric it guarantees a fundamental set of eigenvector solutions even when eigenvalues repeat, [[§37 Homogeneous Linear Systems with Constant Coefficients#^thm-37-2|331 Thm. §37.2]](b), worked for a double eigenvalue in [[§37 Homogeneous Linear Systems with Constant Coefficients#^ex-37-3|331 Ex. §37.3]].
 > - PDE version, in infinite dimensions: a regular Sturm–Liouville problem has real eigenvalues, [[§29 Sturm–Liouville Problems#^prop-29-3|341 Prop. §29.3]], infinitely many of them with $\lambda_n^2 \to \infty$, [[§29 Sturm–Liouville Problems#^thm-29-5|341 Thm. §29.5]], and its eigenfunctions serve as an orthogonal basis for expanding functions, [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|341 Thm. §30.2]].
+> - Part (b), multiplicity equals the dimension of the eigenspace, gives the classical Goldstone theorem: $r$ independent continuous symmetries broken by a vacuum give $r$ independent null vectors of the mass matrix, hence at least $r$ massless fields ([[§R1.2 The Mass Matrix Is the Hessian at the Vacuum#^thm-r1-2-6|Thesis Thm. §R1.2.6]]).
 
 ## Spectral Decomposition
 
@@ -320,6 +321,9 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 ^pf-58-4
 
 *Uses:* [[§17 Partitioned Matrices#^thm-17-3|§17.3]] (column–row expansion), [[§51 Orthogonal Sets#^def-51-3|Def. §51.3]] (orthogonal projection onto a line), [[§51 Orthogonal Sets#^thm-51-4|§51.4]]
+
+> [!remark]- Connections
+> - Dividing each term by $z-\lambda_j$ gives the resolvent, $(zI-A)^{-1}=\sum_j\mathbf u_j\mathbf u_j^T/(z-\lambda_j)$, whose normalized trace is the Stieltjes transform of the eigenvalue distribution, the main tool of the honors-thesis treatment of random mass matrices ([[§R3.4 The Semicircle Law II꞉ Stieltjes Transform and Coulomb Gas#^thm-r3-4-1b|Thesis Thm. §R3.4.1b]]).
 
 > [!definition] Definition §58.4: Spectral Decomposition
 > The representation (2) of a symmetric matrix $A$ is called a **spectral decomposition** of $A$, because it breaks up $A$ into pieces determined by the spectrum (eigenvalues) of $A$.

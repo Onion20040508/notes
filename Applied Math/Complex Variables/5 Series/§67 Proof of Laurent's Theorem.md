@@ -160,6 +160,7 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 > [!remark]- Connections
 > - The multiply connected Cauchy–Goursat theorem used in the first step is, for $f$ with continuous derivative, the complex form of Green's theorem for a region with holes, [[§131 Extended Versions of Green's Theorem#^thm-131-2|Calc Thm. §131.2]]; the rigorous Green's theorem is [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]].
 > - The bounds $|\rho_N| \le \frac{Mr_2}{r_2 - r}(r/r_2)^N$ and $|\sigma_N| \le \frac{Mr_1}{r - r_1}(r_1/r)^N$ do not depend on $z$ as long as $z$ stays in a smaller closed ring $r_1' \le |z| \le r_2'$ with $r_1 < r_1'$, $r_2' < r_2$. So the convergence is uniform on such rings: the Weierstrass M-test situation of [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]]. B&C records this in [[§70★ Continuity of Sums of Power Series#^cor-70-3|Corollary §70.3]].
+> - For a probability measure $\mu$ supported in $[-K,K]$, the Stieltjes transform $G(z)=\int\frac{\mu(dx)}{z-x}$ has the Laurent series $\sum_km_k/z^{k+1}$ on $|z|>K$, whose coefficients are the moments of $\mu$; this links the moment and resolvent proofs of the semicircle law in the honors-thesis notes ([[§R3.4 The Semicircle Law II꞉ Stieltjes Transform and Coulomb Gas#^thm-r3-4-2|Thesis Thm. §R3.4.2]]).
 
 ## Laurent Series by Partial Fractions
 

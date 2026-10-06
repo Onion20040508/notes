@@ -104,6 +104,9 @@ The proof of the next theorem, due to E. Morera (1856–1909), depends on the fa
 
 In particular, when $D$ is simply connected, Morera's theorem is, for the class of continuous functions on $D$, the converse of [[§52 Simply Connected Domains#^thm-52-1|Theorem §52.1]]: a continuous function on a simply connected domain is analytic if and only if its integral around every closed contour in $D$ is zero.
 
+> [!remark]- Connections
+> - By Morera, a function continuous across a segment and analytic on both sides of it is analytic across it; the honors-thesis notes use this to remove apparent branch cuts when they identify the resolvent of the semicircle law ([[§R3.4 The Semicircle Law II꞉ Stieltjes Transform and Coulomb Gas#^thm-r3-4-5a|Thesis Thm. §R3.4.5a]]).
+
 ## Cauchy's Inequality
 
 > [!theorem] Theorem §57.4: Cauchy's Inequality

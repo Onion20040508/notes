@@ -145,6 +145,7 @@ tags: [linear-algebra]
 > - Direct-sum case: [[§11 Products and Quotients of Vector Spaces#^ladr-3-94|A sum is a direct sum if and only if dimensions add up]] ($\dim(V_1+V_2)=\dim V_1+\dim V_2 \iff V_1\cap V_2=\{0\}$).
 > - Alternative proof via [[Fundamental theorem of linear maps]]: apply it to $T:V_1\times V_2\to V$, $T(x,y)=x+y$. Then $\range T=V_1+V_2$, $\nullsp T=\{(x,-x):x\in V_1\cap V_2\}\cong V_1\cap V_2$, and $\dim(V_1\times V_2)=\dim V_1+\dim V_2$ by [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|Dimension of a product is the sum of dimensions]].
 > - The counting version: inclusion–exclusion for two finite sets, [[§10 Counting#^prop-10-7|250 Prop. §10.7]].
+> - The count $\dim(U\cap W)\ge\dim U+\dim W-N$ for subspaces of $\mathbb R^N$, which follows from this formula, is the lemma that makes the Courant–Fischer min–max theorem work in the honors-thesis notes ([[§R2.2 The Rayleigh Quotient and the Courant–Fischer Theorem#^lem-r2-2-3|Thesis Lemma §R2.2.3]]).
 
 %% ex:2.43-fig %%
 > [!example] Example: Two planes in $\R^3$, pictured
