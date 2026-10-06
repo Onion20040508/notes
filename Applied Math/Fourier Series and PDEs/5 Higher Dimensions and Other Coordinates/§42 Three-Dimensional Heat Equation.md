@@ -17,12 +17,29 @@ This section derives the heat equation in a three-dimensional body by vector met
 
 Suppose we are investigating the temperature $u(P, t)$ in a body that occupies a region $\mathcal{R}$ in space, and let $\mathcal{V}$ be a subregion of $\mathcal{R}$ bounded by the surface $\mathcal{S}$, with outward unit normal $\hat{\mathbf{n}}$.
 
-> [!definition] Definition §42.1: Heat Flow, Generation and Storage; the Heat Balance
-> - The **heat flow rate** at a point of $\mathcal{R}$ is a vector function $\mathbf{q}(P, t)$, measured in $\mathrm{J/(m^2\,s)}$ or similar units. The rate of heat flow through a small piece of surface of area $\Delta A$ is approximately $\hat{\mathbf{n}}\cdot\mathbf{q}\,\Delta A$, positive for outward flow; the inflow is its negative.
-> - The **rate of generation** of heat (conversion from chemical, electrical or nuclear energy) is specified as an intensity $g(P, t)$, in $\mathrm{J/(m^3\,s)}$: heat is generated in a small volume $\Delta V$ about $P$ at the rate $g(P, t)\,\Delta V$.
-> - The **storage rate** in a small volume $\Delta V$ about $P$ is proportional to the rate at which the temperature changes there: $\rho c\,\Delta V\,u_t(P, t)$, where $\rho$ is the density and $c$ the specific heat.
+> [!definition] Definition §42.1: Heat Flow Rate
+> The **heat flow rate** at a point of $\mathcal{R}$ is a vector function $\mathbf{q}(P, t)$, measured in $\mathrm{J/(m^2\,s)}$ or similar units. The rate of heat flow through a small piece of surface of area $\Delta A$ is approximately $\hat{\mathbf{n}}\cdot\mathbf{q}\,\Delta A$, positive for outward flow; the inflow is its negative.
 >
-> Summing over $\mathcal{V}$ and passing to integrals, the law of conservation of energy for $\mathcal{V}$, *net rate of heat in + rate of generation inside = rate of accumulation*, reads
+> *Powers: 5.2 (text), Equation (1)*
+
+^def-42-1
+
+> [!definition] Definition §42.1: Rate of Generation
+> The **rate of generation** of heat (conversion from chemical, electrical or nuclear energy) is specified as an intensity $g(P, t)$, in $\mathrm{J/(m^3\,s)}$: heat is generated in a small volume $\Delta V$ about $P$ at the rate $g(P, t)\,\Delta V$.
+>
+> *Powers: 5.2 (text), Equation (1)*
+
+^def-42-new1
+
+> [!definition] Definition §42.1: Storage Rate
+> The **storage rate** in a small volume $\Delta V$ about $P$ is proportional to the rate at which the temperature changes there: $\rho c\,\Delta V\,u_t(P, t)$, where $\rho$ is the density and $c$ the specific heat.
+>
+> *Powers: 5.2 (text), Equation (1)*
+
+^def-42-new2
+
+> [!definition] Definition §42.1: The Heat Balance
+> Summing the heat flow rate, the rate of generation and the storage rate ([[§42 Three-Dimensional Heat Equation#^def-42-1|Definition §42.1]]) over $\mathcal{V}$ and passing to integrals, the law of conservation of energy for $\mathcal{V}$, *net rate of heat in + rate of generation inside = rate of accumulation*, reads
 >
 > $$
 > \iint_{\mathcal{S}} -\mathbf{q}\cdot\hat{\mathbf{n}}\,dA + \iiint_{\mathcal{V}} g\,dV = \iiint_{\mathcal{V}} \rho c\,\frac{\partial u}{\partial t}\,dV . \qquad (1)
@@ -30,7 +47,7 @@ Suppose we are investigating the temperature $u(P, t)$ in a body that occupies a
 >
 > *Powers: 5.2 (text), Equation (1)*
 
-^def-42-1
+^def-42-new3
 
 In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat capacity per unit volume.
 
@@ -82,7 +99,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 ^pf-42-2
 
-*Uses:* [[§42 Three-Dimensional Heat Equation#^def-42-1|Def. §42.1]], [[§42 Three-Dimensional Heat Equation#^lem-42-1|§42.1]], [[§18 Surface Integrals#^thm-18-2|452 Thm. §18.2]] (divergence theorem)
+*Uses:* [[§42 Three-Dimensional Heat Equation#^def-42-1|Def. §42.1]], [[§42 Three-Dimensional Heat Equation#^def-42-new3|Def. §42.1]] (the heat balance), [[§42 Three-Dimensional Heat Equation#^lem-42-1|§42.1]], [[§18 Surface Integrals#^thm-18-2|452 Thm. §18.2]] (divergence theorem)
 
 > [!remark]- Connections
 > - The divergence theorem in $\mathbb{R}^3$: [[§18 Surface Integrals#^thm-18-2|452 Thm. §18.2]] (proved there for simple solid regions), in $\mathbb{R}^n$ [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]]; Stewart's version with worked flux computations, [[§115 The Divergence Theorem#^thm-115-1|Calc Thm. §115.1]].
@@ -132,14 +149,19 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 ## Initial and Boundary Conditions
 
-> [!definition] Definition §42.3: Initial and Boundary Conditions for the Heat Equation
+> [!definition] Definition §42.3: Initial Condition for the Heat Equation
 > The heat equation (6) is accompanied by an **initial condition**
 >
 > $$
-> u(P, 0) = f(P) \qquad \text{for } P \text{ in } \mathcal{R} , \qquad (7)
+> u(P, 0) = f(P) \qquad \text{for } P \text{ in } \mathcal{R} . \qquad (7)
 > $$
 >
-> and, at every point of the surface $\mathcal{B}$ bounding $\mathcal{R}$, some **boundary condition**. Commonly one of the following is given on $\mathcal{B}$ or on a portion $\mathcal{B}'$ of it.
+> *Powers: 5.2 (text), Equations (7)–(9)*
+
+^def-42-3
+
+> [!definition] Definition §42.3: Boundary Conditions for the Heat Equation
+> At every point of the surface $\mathcal{B}$ bounding $\mathcal{R}$, the heat equation (6) is accompanied by some **boundary condition**. Commonly one of the following is given on $\mathcal{B}$ or on a portion $\mathcal{B}'$ of it.
 > 1. **Temperature specified:** $u(P, t) = h_1(P, t)$ for $P$ in $\mathcal{B}'$, $h_1$ a given function.
 > 2. **Heat flow rate specified.** The outward heat flow rate through a small piece of surface about $P$ on $\mathcal{B}'$ is $\mathbf{q}(P, t)\cdot\hat{\mathbf{n}}$ times its area. By Fourier's law, controlling it controls $\nabla u\cdot\hat{\mathbf{n}}$, the directional derivative of $u$ in the outward normal direction, so
 >
@@ -156,7 +178,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 >
 > *Powers: 5.2 (text), Equations (7)–(9)*
 
-^def-42-3
+^def-42-new4
 
 These are the three-dimensional forms of the conditions of the first, second and third kinds for the rod ([[§17 Derivation and Boundary Conditions#^def-17-5|Definition §17.5]], [[§17 Derivation and Boundary Conditions#^def-17-6|Definition §17.6]], [[§17 Derivation and Boundary Conditions#^def-17-7|Definition §17.7]]). The normal derivative is $\partial u/\partial n = \nabla u\cdot\hat{\mathbf{n}}$, the directional derivative as a dot product ([[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]]). On a face where the outward normal is $-\mathbf{k}$, for instance, $\partial u/\partial n = -\partial u/\partial z$.
 

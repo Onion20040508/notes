@@ -96,7 +96,7 @@ Either $T(t) \equiv 0$ (which would make $w \equiv 0$) or $\phi(0) = 0$ and $\ka
 
 ^pf-22-1
 
-*Uses:* [[§20 Example꞉ Insulated Bar#^def-20-1|Def. §20.1]], [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]]
+*Uses:* [[§20 Example꞉ Insulated Bar#^def-20-1|Def. §20.1]], [[§20 Example꞉ Insulated Bar#^def-20-new1|Def. §20.1]], [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]]
 
 ![[m341-22-1.svg]]
 *The graphs of $\tan(\lambda a)$ (blue) and $-\kappa\lambda/h$ (red), here for $\kappa/ha = 0.5$, against $\lambda a$. The intersections (dots) are the eigenvalues: $\lambda_na \approx 2.289$, $5.087$, $8.096$, $11.173$, each just to the right of $(2n - 1)\pi/2$ (dashed) and closer to it as $n$ grows. The intersection at $\lambda = 0$ corresponds to the trivial solution.*

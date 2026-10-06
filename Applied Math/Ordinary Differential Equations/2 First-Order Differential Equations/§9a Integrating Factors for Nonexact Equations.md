@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 2.6 · MATH 331 Written HW 2 (Problem 4), Midterm (Fall 2021) Q1.*
 
-An equation that is not exact can sometimes be made exact by an integrating factor, as linear equations were in [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]]; the test for exactness of [[§9 Exact Differential Equations and Integrating Factors|§9]] then decides whether a given factor works. Equation numbers continue those of [[§9 Exact Differential Equations and Integrating Factors|§9]].
+The second half of BDP 2.6, continuing [[§9 Exact Differential Equations and Integrating Factors|§9]]: an equation that is not exact can sometimes be made exact by an integrating factor, and the test for exactness then decides whether a given factor works. Equation numbers continue those of [[§9 Exact Differential Equations and Integrating Factors|§9]].
 
 ## Integrating Factors
 
@@ -84,7 +84,7 @@ A partial differential equation such as (26) may have more than one solution, an
 > [!proof]+ Proof
 > **(a)** If $\mu$ depends on $x$ only, then $\mu_x = d\mu/dx$ and $\mu_y = 0$, and (26) becomes $-N\,\mu' + (M_y - N_x)\mu = 0$, which is (27). If $(M_y - N_x)/N = P(x)$ depends on $x$ only, (27) is the equation $\mu' = P(x)\mu$, linear and separable in $\mu$ alone, and $\mu(x) = \exp \int P(x)\,dx$ solves it: $\mu' = P(x)\mu$. By [[§9a Integrating Factors for Nonexact Equations#^prop-9-3|Proposition §9.3]] this $\mu$ is an integrating factor.
 >
-> **(b)** If $\mu$ depends on $y$ only, then $\mu_x = 0$ and $\mu_y = d\mu/dy$, and (26) becomes $M\mu' + (M_y - N_x)\mu = 0$, that is, $\mu' = \dfrac{N_x - M_y}{M}\,\mu = Q(y)\,\mu$. The function $\mu(y) = \exp \int Q(y)\,dy$ satisfies $\mu' = Q(y)\mu$, so it is an integrating factor by Proposition §9.3.
+> **(b)** If $\mu$ depends on $y$ only, then $\mu_x = 0$ and $\mu_y = d\mu/dy$, and (26) becomes $M\mu' + (M_y - N_x)\mu = 0$, that is, $\mu' = \dfrac{N_x - M_y}{M}\,\mu = Q(y)\,\mu$. The function $\mu(y) = \exp \int Q(y)\,dy$ satisfies $\mu' = Q(y)\mu$, so it is an integrating factor by [[§9a Integrating Factors for Nonexact Equations#^prop-9-3|Proposition §9.3]].
 
 ^pf-9-4
 

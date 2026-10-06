@@ -43,7 +43,7 @@ for any positively oriented simple closed contour $C$ around $z_0$ that lies in 
 ^def-75-1
 
 > [!theorem] Theorem §75.1: An Integral Is 2πi Times a Residue
-> Let $z_0$ be an isolated singular point of $f$, with $f$ analytic in $0 < |z - z_0| < R_2$, and let $C$ be a positively oriented [[§43 Contours#^def-43-5|simple closed contour]] around $z_0$ lying in that punctured disk. Then
+> Let $z_0$ be an isolated singular point of $f$, with $f$ analytic in $0 < |z - z_0| < R_2$, and let $C$ be a positively oriented [[§43 Contours#^def-43-new5|simple closed contour]] around $z_0$ lying in that punctured disk. Then
 >
 > $$
 > \int_C f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_0} f(z) . \qquad (3)
@@ -154,6 +154,8 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 > *B&C: Sec. 75, Example 3*
 
 ^ex-75-3
+
+*Chain (the geometric series): earlier in [[§73a The Geometric Series|Chapter 5]]*
 
 > [!example] Example §75.4: Three Residues at the Origin
 > Find the residue at $z = 0$ of

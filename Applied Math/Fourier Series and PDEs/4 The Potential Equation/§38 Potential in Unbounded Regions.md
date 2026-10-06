@@ -62,11 +62,11 @@ $$
 >
 > **The factor $Y$.** It satisfies $Y'' - \lambda_n^2Y = 0$ for $0 < y$ and must remain bounded as $y \to \infty$. The solutions of the equation are combinations of $e^{\lambda_ny}$ and $e^{-\lambda_ny}$; the first is unbounded, so its coefficient must be $0$ and $Y_n(y) = \exp(-\lambda_ny)$. (This is why the exponential form is chosen here rather than $\cosh$ and $\sinh$, both of which are unbounded.)
 >
-> **Superposition.** Each $X_nY_n$ is harmonic, vanishes on the walls and is bounded, so the series (7) has the same properties when it converges (for $y \ge \delta > 0$ its terms are dominated by $|a_n|e^{-n\pi\delta/a}$). At $y = 0$ it becomes $\sum a_n\sin(n\pi x/a) = f(x)$, a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]), which determines the $a_n$ as stated.
+> **Superposition.** Each $X_nY_n$ is harmonic, vanishes on the walls and is bounded, so the series (7) has the same properties when it converges (for $y \ge \delta > 0$ its terms are dominated by $|a_n|e^{-n\pi\delta/a}$). At $y = 0$ it becomes $\sum a_n\sin(n\pi x/a) = f(x)$, a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]), which determines the $a_n$ as stated.
 
 ^pf-38-1
 
-*Uses:* [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series)
+*Uses:* [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series)
 
 > [!remark]- Connections
 > - See also: [[§27★ Harmonic Functions#^ex-27-1|342 Ex. §27.1]] (the case $a = \pi$, $f(x) = \sin x$, whose solution $e^{-y}\sin x$ is the real part of an entire function).
@@ -123,14 +123,14 @@ $$
 > u_2(0, y) = \int_0^\infty B(\mu)\sin(\mu y)\,d\mu = g_1(y), \qquad u_2(a, y) = \int_0^\infty A(\mu)\sin(\mu y)\,d\mu = g_2(y), \qquad 0 < y .
 > $$
 >
-> These are Fourier sine integral representations of $g_1$ and $g_2$ ([[§14 Fourier Integral#^def-14-2|Definition §14.2]]), so $B(\mu)$ and $A(\mu)$ are given by the sine-integral coefficient formula $\frac2\pi\int_0^\infty g(y)\sin(\mu y)\,dy$.
+> These are Fourier sine integral representations of $g_1$ and $g_2$ ([[§14 Fourier Integral#^def-14-new2|Definition §14.2]]), so $B(\mu)$ and $A(\mu)$ are given by the sine-integral coefficient formula $\frac2\pi\int_0^\infty g(y)\sin(\mu y)\,dy$.
 
 ^pf-38-2
 
-*Uses:* [[§36 Potential in a Rectangle#^thm-36-2|§36.2]] (the $\sinh$ basis), [[§14 Fourier Integral#^def-14-2|Def. §14.2]] (Fourier sine integral)
+*Uses:* [[§36 Potential in a Rectangle#^thm-36-2|§36.2]] (the $\sinh$ basis), [[§14 Fourier Integral#^def-14-new2|Def. §14.2]] (Fourier sine integral)
 
 > [!remark] Remark: Method — Unbounded Regions
-> 1. Impose boundedness ("$u$ remains bounded as $y \to \infty$", [[§4★ Singular Boundary Value Problems#^def-4-3|Definition §4.3]]) wherever the region is unbounded; it plays the role of a homogeneous boundary condition, because sums and integrals of bounded solutions are bounded.
+> 1. Impose boundedness ("$u$ remains bounded as $y \to \infty$", [[§4★ Singular Boundary Value Problems#^def-4-new1|Definition §4.3]]) wherever the region is unbounded; it plays the role of a homogeneous boundary condition, because sums and integrals of bounded solutions are bounded.
 > 2. Split the problem so that each part has homogeneous (or homogeneous-like) conditions on a pair of facing boundaries.
 > 3. If the homogeneous pair is a pair of parallel walls a finite distance apart, the eigenvalues are discrete: use a Fourier **series**, and pick the decaying exponential $e^{-\lambda_n y}$ in the unbounded direction.
 > 4. If one of the pair is "at infinity" (boundedness), every $\mu > 0$ is allowed: combine the product solutions by a Fourier **integral** and determine $A(\mu)$, $B(\mu)$ from the Fourier integral formulas.

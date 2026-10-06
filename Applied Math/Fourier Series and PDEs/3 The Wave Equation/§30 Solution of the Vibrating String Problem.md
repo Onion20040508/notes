@@ -140,7 +140,7 @@ By the principle of superposition ([[§19 Example꞉ Fixed End Temperatures#^thm
 > \frac{\partial u}{\partial t}(x, 0) = \sum_{n=1}^\infty b_n\frac{n\pi}{a}c\,\sin\Big(\frac{n\pi x}{a}\Big) = g(x), \qquad 0 < x < a .
 > $$
 >
-> Both are Fourier sine series problems: a given function on $0 < x < a$ is to be expanded in a series of $\sin(n\pi x/a)$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]). In each case the constant multiplying $\sin(n\pi x/a)$ must be the Fourier sine coefficient of the given function. So $a_n$ is given by (10), and
+> Both are Fourier sine series problems: a given function on $0 < x < a$ is to be expanded in a series of $\sin(n\pi x/a)$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]). In each case the constant multiplying $\sin(n\pi x/a)$ must be the Fourier sine coefficient of the given function. So $a_n$ is given by (10), and
 >
 > $$
 > b_n\frac{n\pi}{a}c = \frac{2}{a}\int_0^a g(x)\sin\Big(\frac{n\pi x}{a}\Big)dx, \qquad\text{that is,}\qquad b_n = \frac{2}{n\pi c}\int_0^a g(x)\sin\Big(\frac{n\pi x}{a}\Big)dx ,
@@ -150,7 +150,7 @@ By the principle of superposition ([[§19 Example꞉ Fixed End Temperatures#^thm
 
 ^pf-30-2
 
-*Uses:* [[§30 Solution of the Vibrating String Problem#^prop-30-1|§30.1]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series), [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]] (convergence theorem)
+*Uses:* [[§30 Solution of the Vibrating String Problem#^prop-30-1|§30.1]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series), [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]] (convergence theorem)
 
 By the nature of the problem one expects $f$, at least, to be continuous, with $f(0) = f(a) = 0$ (the string is attached at the ends). Then the sine series of $f$ converges uniformly ([[§9 Uniform Convergence#^thm-9-5|Theorem §9.5]]). That the formal series (9) really is a solution is best seen from its d'Alembert form, [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]] (see [[§31 d'Alembert's Solution#^rem-31-2|Remark: When Formula (13) Is a Classical Solution]]).
 

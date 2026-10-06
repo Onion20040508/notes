@@ -86,8 +86,15 @@ but its solutions have a simple structure.
 > [!remark]- Connections
 > - Superposition says that $L[u] = u'' + ku' + pu$ is a linear map, so the solutions of (6) form its null space, a subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]].
 
-> [!definition] Definition §1.2: Linear Independence; Wronskian
-> Two solutions $u_1$, $u_2$ are **linearly independent** on an interval if the only linear combination of them with constant coefficients that is identically $0$ on the interval is the one with both coefficients $0$. The **Wronskian** of $u_1$ and $u_2$ is
+> [!definition] Definition §1.2: Linear Independence
+> Two solutions $u_1$, $u_2$ are **linearly independent** on an interval if the only linear combination of them with constant coefficients that is identically $0$ on the interval is the one with both coefficients $0$.
+>
+> *Powers: 0.1 (text), Equation (7)*
+
+^def-1-2
+
+> [!definition] Definition §1.2: Wronskian
+> The **Wronskian** of two solutions $u_1$ and $u_2$ is
 >
 > $$
 > W(u_1, u_2) = \begin{vmatrix} u_1(t) & u_2(t) \\ u_1'(t) & u_2'(t) \end{vmatrix} = u_1(t)u_2'(t) - u_2(t)u_1'(t) . \qquad (7)
@@ -95,7 +102,7 @@ but its solutions have a simple structure.
 >
 > *Powers: 0.1 (text), Equation (7)*
 
-^def-1-2
+^def-1-new1
 
 The Wronskian is [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|331 Def. §14.2]].
 
@@ -180,7 +187,7 @@ It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substi
 This is [[§24 Hyperbolic Functions#^def-24-1|Calc Def. §24.1]]; the derivatives $(\sinh A)' = \cosh A$, $(\cosh A)' = \sinh A$ and the identity $\cosh^2 A - \sinh^2 A = 1$ are [[§24 Hyperbolic Functions#^thm-24-2|Calc Thm. §24.2]] and [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]]. For complex arguments the same formulas define [[§39★ Hyperbolic Functions#^def-39-1|342 Def. §39.1]], used in [[§53★ Partial Differential Equations#^lem-53-2|Lemma §53.2]].
 
 > [!example] Example §1.1: The Two Workhorse Equations
-> The equations $u'' + \lambda^2u = 0$ and $u'' - \lambda^2u = 0$, with $\lambda$ a constant, arise in nearly every [[§19 Example꞉ Fixed End Temperatures#^def-19-1|separation of variables]] in this subject.
+> The equations $u'' + \lambda^2u = 0$ and $u'' - \lambda^2u = 0$, with $\lambda$ a constant, arise in nearly every [[§19 Example꞉ Fixed End Temperatures#^def-19-new1|separation of variables]] in this subject.
 >
 > **$u'' + \lambda^2u = 0$ (12).** The characteristic equation $m^2 + \lambda^2 = 0$ has roots $m = \pm i\lambda$. If $\lambda \ne 0$, the third case of Theorem §1.4 applies with $\alpha = 0$, $\beta = \lambda$:
 >
@@ -245,14 +252,19 @@ The same classification, with the physics of the damping coefficient, is [[§19 
 
 One of the few equations with variable coefficients that can be solved in complete generality is the Cauchy–Euler equation. Its distinguishing feature is that the coefficient of the $n$th derivative is the $n$th power of $t$ times a constant. It is not treated in [[Ordinary Differential Equations]], so its solution is proved here.
 
-> [!definition] Definition §1.5: Cauchy–Euler Equation; Its Characteristic Equation
+> [!definition] Definition §1.5: Cauchy–Euler Equation
 > The **Cauchy–Euler equation** is
 >
 > $$
-> t^2\frac{d^2u}{dt^2} + kt\frac{du}{dt} + pu = 0 \qquad (k, p \text{ constants}) , \qquad (17)
+> t^2\frac{d^2u}{dt^2} + kt\frac{du}{dt} + pu = 0 \qquad (k, p \text{ constants}) . \qquad (17)
 > $$
 >
-> and its **characteristic equation** is
+> *Powers: 0.1, Equations (17)–(18)*
+
+^def-1-5
+
+> [!definition] Definition §1.5: Characteristic Equation of the Cauchy–Euler Equation
+> The **characteristic equation** of the Cauchy–Euler equation (17) is
 >
 > $$
 > m(m - 1) + km + p = 0 . \qquad (18)
@@ -260,7 +272,7 @@ One of the few equations with variable coefficients that can be solved in comple
 >
 > *Powers: 0.1, Equations (17)–(18)*
 
-^def-1-5
+^def-1-new2
 
 > [!theorem] Theorem §1.5: Solutions of the Cauchy–Euler Equation
 > For $t > 0$, the general solution of (17) is determined by the roots $m_1$, $m_2$ of (18):
@@ -312,7 +324,7 @@ One of the few equations with variable coefficients that can be solved in comple
 
 ^pf-1-5
 
-*Uses:* [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]], [[§1★ Homogeneous Linear Equations#^thm-1-4|§1.4]], [[§1★ Homogeneous Linear Equations#^def-1-5|Def. §1.5]]
+*Uses:* [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]], [[§1★ Homogeneous Linear Equations#^thm-1-4|§1.4]], [[§1★ Homogeneous Linear Equations#^def-1-5|Def. §1.5]], [[§1★ Homogeneous Linear Equations#^def-1-new2|Def. §1.5]]
 
 For $t < 0$ the same formulas hold with $t$ replaced by $|t|$: the substitution $t = -s$ leaves (17) unchanged in form. In this subject the variable is a radius $r > 0$, so this never matters.
 
@@ -345,14 +357,21 @@ For $t < 0$ the same formulas hold with $t$ replaced by $|t|$: the substitution 
 
 ### Singular Points
 
-> [!definition] Definition §1.6: Singular Point; Regular Singular Point
+> [!definition] Definition §1.6: Singular Point
 > For the general linear equation
 >
 > $$
 > \frac{d^2u}{dt^2} + k(t)\frac{du}{dt} + p(t)u = 0 ,
 > $$
 >
-> any point where $k(t)$ or $p(t)$ fails to be continuous is a **singular point** of the differential equation. At such a point solutions may break down in various ways. If $t_0$ is a singular point at which both functions
+> any point where $k(t)$ or $p(t)$ fails to be continuous is a **singular point** of the differential equation. At such a point solutions may break down in various ways.
+>
+> *Powers: 0.1 (text), Equation (21)*
+
+^def-1-6
+
+> [!definition] Definition §1.6: Regular Singular Point
+> If $t_0$ is a singular point ([[§1★ Homogeneous Linear Equations#^def-1-6|Definition §1.6]]) of the general linear equation at which both functions
 >
 > $$
 > (t - t_0)k(t) \qquad\text{and}\qquad (t - t_0)^2p(t) \qquad (21)
@@ -362,7 +381,7 @@ For $t < 0$ the same formulas hold with $t$ replaced by $|t|$: the substitution 
 >
 > *Powers: 0.1 (text), Equation (21)*
 
-^def-1-6
+^def-1-new3
 
 The Cauchy–Euler equation is the model: in standard form, $u'' + \frac ktu' + \frac p{t^2}u = 0$, so $tk(t) = k$ and $t^2p(t) = p$ are constants, and $t_0 = 0$ is a regular singular point. Its solutions $t^m$, $(\ln t)t^m$ show the typical behavior near such a point, which provides a model for more general equations (Bessel's equation, [[§45★ Bessel's Equation#^def-45-1|Definition §45.1]]; Legendre's equation, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-2|Definition §49.2]]). Singular points at the ends of an interval are the subject of [[§4★ Singular Boundary Value Problems|§4★]].
 
@@ -458,7 +477,7 @@ It is not generally possible to solve a second-order linear homogeneous equation
 
 Linear homogeneous equations of order higher than two, especially order four, occur frequently in elasticity and fluid mechanics. They are not treated in [[Ordinary Differential Equations]] (which covered only the second-order case and first-order systems).
 
-> [!definition] Definition §1.7: nth-Order Linear Homogeneous Equation; Characteristic Equation
+> [!definition] Definition §1.7: nth-Order Linear Homogeneous Equation
 > A general $n$th-order homogeneous linear equation is
 >
 > $$
@@ -468,10 +487,15 @@ Linear homogeneous equations of order higher than two, especially order four, oc
 > with given coefficient functions $k_1(t), \ldots, k_n(t)$. With constant coefficients it reads
 >
 > $$
-> u^{(n)} + k_1u^{(n-1)} + \cdots + k_{n-1}u^{(1)} + k_nu = 0 , \qquad (27)
+> u^{(n)} + k_1u^{(n-1)} + \cdots + k_{n-1}u^{(1)} + k_nu = 0 . \qquad (27)
 > $$
 >
-> and substituting $u = e^{mt}$ and dividing by $e^{mt}$ gives its **characteristic equation**
+> *Powers: 0.1, Equations (26)–(28)*
+
+^def-1-7
+
+> [!definition] Definition §1.7: Characteristic Equation of the nth-Order Equation
+> For the constant-coefficient equation (27) of [[§1★ Homogeneous Linear Equations#^def-1-7|Definition §1.7]], substituting $u = e^{mt}$ and dividing by $e^{mt}$ gives its **characteristic equation**
 >
 > $$
 > m^n + k_1m^{n-1} + \cdots + k_{n-1}m + k_n = 0 . \qquad (28)
@@ -479,7 +503,7 @@ Linear homogeneous equations of order higher than two, especially order four, oc
 >
 > *Powers: 0.1, Equations (26)–(28)*
 
-^def-1-7
+^def-1-new4
 
 > [!theorem] Theorem §1.7: General Solution of the nth-Order Equation
 > The Principle of Superposition holds for (26), and its general solution is a linear combination of $n$ independent solutions $u_1(t), \ldots, u_n(t)$ with arbitrary constant coefficients:

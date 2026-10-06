@@ -65,18 +65,34 @@ represents the velocity of the fluid at $(x, y)$; its components are $p(x, y)$ a
 
 *Uses:* [[§124★ Two-Dimensional Fluid Flow#^def-124-1|Def. §124.1]], [[§108 Line Integrals#^def-108-8|Calc Def. §108.8]], [[§108 Line Integrals#^thm-108-7|Calc Thm. §108.7]], [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (Green's theorem), [[§52 Simply Connected Domains#^def-52-1|Def. §52.1]]
 
-> [!definition] Definition §124.2: Rotation; Irrotational, Incompressible and Inviscid Flow
+> [!definition] Definition §124.2: Rotation; Irrotational Flow
 > The function
 >
 > $$
 > \omega(x, y) = \frac12\big[q_x(x, y) - p_y(x, y)\big] \qquad (4)
 > $$
 >
-> is the **rotation** of the fluid. If $\omega(x, y) = 0$ at each point of a simply connected domain, the flow is **irrotational** in that domain. A fluid is **incompressible** if its density does not change, and **free from viscosity** (inviscid) if it has no internal friction. From here on all flows are irrotational, of incompressible, inviscid fluids of uniform density $\rho$.
+> is the **rotation** of the fluid. If $\omega(x, y) = 0$ at each point of a simply connected domain, the flow is **irrotational** in that domain.
 >
 > *B&C: Sec. 124 (text)*
 
 ^def-124-2
+
+> [!definition] Definition §124.3: Incompressible Fluid
+> A fluid is **incompressible** if its density does not change.
+>
+> *B&C: Sec. 124 (text)*
+
+^def-124-new1
+
+> [!definition] Definition §124.4: Inviscid Fluid
+> A fluid is **free from viscosity** (inviscid) if it has no internal friction.
+>
+> *B&C: Sec. 124 (text)*
+
+^def-124-new2
+
+From here on all flows are irrotational, of incompressible, inviscid fluids of uniform density $\rho$.
 
 > [!theorem] Proposition §124.2: The Rotation Is a Limiting Angular Speed
 > Let $C_r$ be the circle of radius $r$ about $(x_0, y_0)$, taken counterclockwise, inside a simply connected domain of flow without sources or sinks. The mean angular speed of the fluid about $(x_0, y_0)$ along $C_r$, that is, the circulation divided by $2\pi r$ (a mean speed) and then by $r$, satisfies
@@ -150,12 +166,19 @@ Under these assumptions it can be shown that the fluid pressure $P(x, y)$ satisf
 
 *Uses:* [[§124★ Two-Dimensional Fluid Flow#^def-124-2|Def. §124.2]], [[§115★ Harmonic Conjugates#^lem-115-3|§115.3]]
 
-> [!definition] Definition §124.3: Velocity Potential; Equipotentials
-> The function $\phi(x, y)$ of (5) is the **velocity potential** of the flow, and its level curves $\phi(x, y) = c_1$ are the **equipotentials**. By (6) the velocity $V = p + iq$ is the gradient of $\phi$; the [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] of $\phi$ in any direction is the component of the velocity in that direction, and $V$ is normal to the equipotential through any point where $V \ne 0$.
+> [!definition] Definition §124.3: Velocity Potential
+> The function $\phi(x, y)$ of (5) is the **velocity potential** of the flow. By (6) the velocity $V = p + iq$ is the gradient of $\phi$; the [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] of $\phi$ in any direction is the component of the velocity in that direction.
 >
 > *B&C: Sec. 124 (text)*
 
 ^def-124-3
+
+> [!definition] Definition §124.6: Equipotentials
+> The level curves $\phi(x, y) = c_1$ of the [[§124★ Two-Dimensional Fluid Flow#^def-124-3|velocity potential]] are the **equipotentials**, and $V$ is normal to the equipotential through any point where $V \ne 0$.
+>
+> *B&C: Sec. 124 (text)*
+
+^def-124-new3
 
 > [!theorem] Proposition §124.5: The Velocity Potential Is Harmonic
 > In a simply connected domain where the flow is irrotational and the incompressible fluid has no sources or sinks, the velocity potential satisfies Laplace's equation $\phi_{xx}(x, y) + \phi_{yy}(x, y) = 0$, and its first and second partial derivatives are continuous: $\phi$ is harmonic.
@@ -175,7 +198,7 @@ Under these assumptions it can be shown that the fluid pressure $P(x, y)$ satisf
 
 ^pf-124-5
 
-*Uses:* [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§118★ Steady Temperatures#^prop-118-1|§118.1]], [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini)
+*Uses:* [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§124★ Two-Dimensional Fluid Flow#^def-124-new1|Def. §124.3]] (incompressible), [[§118★ Steady Temperatures#^prop-118-1|§118.1]], [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini)
 
 > [!remark]- Connections
 > - The same conclusion in 341, with the opposite sign convention: [[§35 Potential Equation#^ex-35-1|341 Ex. §35.1]] defines the velocity potential by $u = -\phi_x$, $v = -\phi_y$, while B&C uses $V = +\operatorname{grad}\phi$. Conservation of mass in general form, $\rho_t + \nabla\cdot(\rho\mathbf u) = 0$, which for constant $\rho$ is the condition $p_x + q_y = 0$ used above: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-4|452 Thm. §17.4]], and irrotational flow, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^rem-17-4|452 Rem. §17.4]]. A gradient field and its potential: [[§107 Vector Fields#^def-107-4|Calc Def. §107.4]], with the potential built as a line integral in [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]].

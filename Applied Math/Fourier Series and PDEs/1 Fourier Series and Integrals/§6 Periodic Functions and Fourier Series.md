@@ -187,14 +187,8 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 > [!remark]- Connections
 > - The formulas are the coordinate formula for an orthogonal basis, $c_j = \langle f, u_j\rangle/\langle u_j, u_j\rangle$: in $\mathbb{R}^n$, [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]]; in an inner product space, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]](2), here with $\langle f, g\rangle = \int_{-\pi}^{\pi}fg\,dx$ and, by Proposition §6.3, $\langle 1, 1\rangle = 2\pi$, $\langle\cos nx, \cos nx\rangle = \langle\sin nx, \sin nx\rangle = \pi$ for $n \ge 1$.
 
-> [!definition] Definition §6.2: Fourier Series; Fourier Coefficients
-> Let $f$ be periodic with period $2\pi$ (and integrable over a period). The numbers $a_0$, $a_n$, $b_n$ given by (3)–(5) are the **Fourier coefficients** of $f$, and the series
->
-> $$
-> f(x) \sim a_0 + \sum_{n=1}^{\infty}\big(a_n\cos nx + b_n\sin nx\big)
-> $$
->
-> is the **Fourier series** of $f$. The sign $\sim$ means that the series *corresponds to* $f$: question (b), whether it equals $f$, has not been answered yet ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]). In words, $a_0$ is the **mean value** of $f$ over one period.
+> [!definition] Definition §6.2: Fourier Coefficients
+> Let $f$ be periodic with period $2\pi$ (and integrable over a period). The numbers $a_0$, $a_n$, $b_n$ given by (3)–(5) are the **Fourier coefficients** of $f$. In words, $a_0$ is the **mean value** of $f$ over one period.
 >
 > *Powers: 1.1 (text)*
 
@@ -202,6 +196,21 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 
 > [!remark]- Connections
 > - With the inner product $\langle f, g\rangle = \int_{-\pi}^{\pi} fg$, (3)–(5) say $a_n = \langle f, \cos nx\rangle/\langle\cos nx, \cos nx\rangle$: each coefficient is the coordinate of $f$ along one orthogonal direction, as for an orthonormal basis in finite dimensions, [[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]]. Lay derives the same formulas as an orthogonal projection, [[§47 Applications of Inner Product Spaces#^thm-47-3|235 Thm. §47.3]], but writes the constant term as $a_0/2$ with $a_0 = \frac1\pi\int f$; Powers' $a_0$ is that $a_0/2$.
+
+> [!definition] Definition §6.2: Fourier Series
+> Formed with the Fourier coefficients of $f$ ([[§6 Periodic Functions and Fourier Series#^def-6-2|Definition §6.2]]), the series
+>
+> $$
+> f(x) \sim a_0 + \sum_{n=1}^{\infty}\big(a_n\cos nx + b_n\sin nx\big)
+> $$
+>
+> is the **Fourier series** of $f$. The sign $\sim$ means that the series *corresponds to* $f$: question (b), whether it equals $f$, has not been answered yet ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]).
+>
+> *Powers: 1.1 (text)*
+
+^def-6-new1
+
+> [!remark]- Connections
 > - Fourier series as expansions in an orthonormal basis of $L^2$, converging in norm: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]].
 
 > [!theorem] Proposition §6.5: Special Values of Sine and Cosine

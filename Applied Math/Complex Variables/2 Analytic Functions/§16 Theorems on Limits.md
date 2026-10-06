@@ -212,7 +212,7 @@ From definition (2) of [[§15 Limits|§15]] it is easy to compute the two basic 
 
 ^pf-16-3
 
-*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§16 Theorems on Limits#^thm-16-2|§16.2]], [[§13 Functions and Mappings#^def-13-3|Def. §13.3]]
+*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§16 Theorems on Limits#^thm-16-2|§16.2]], [[§13 Functions and Mappings#^def-13-3|Def. §13.3]], [[§13 Functions and Mappings#^def-13-new1|Def. §13.4]]
 
 > [!example] Example §16.1: Cancel, Then Use the Quotient Law
 > Determine whether

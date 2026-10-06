@@ -25,7 +25,7 @@ A boundary value problem is singular when an endpoint of the interval is a singu
 
 ## Regular Singular Points
 
-Recall ([[§1★ Homogeneous Linear Equations#^def-1-6|Definition §1.6]]) that $x_0$ is a regular singular point of $u'' + k(x)u' + p(x)u = f(x)$ if $k(x)$ or $p(x)$ or both become infinite as $x \to x_0$, but $(x - x_0)k(x)$ and $(x - x_0)^2p(x)$ both have Taylor series expansions centered at $x_0$.
+Recall ([[§1★ Homogeneous Linear Equations#^def-1-new3|Definition §1.6]]) that $x_0$ is a regular singular point of $u'' + k(x)u' + p(x)u = f(x)$ if $k(x)$ or $p(x)$ or both become infinite as $x \to x_0$, but $(x - x_0)k(x)$ and $(x - x_0)^2p(x)$ both have Taylor series expansions centered at $x_0$.
 
 > [!example] Example §4.1: Locating Singular Points
 > To find singular points, first divide by the coefficient of $u''$ to reach the form $u'' + ku' + pu = f$.
@@ -107,8 +107,15 @@ This situation typically arises when a boundary point is a mathematical boundary
 
 The other type of singular boundary value problem has an infinite interval of interest, always a mathematical abstraction that cannot be realized physically.
 
-> [!definition] Definition §4.3: Semi-Infinite Interval; Boundedness at Infinity
-> The interval $0 < x < \infty$ is called **semi-infinite**: it has one finite endpoint, where a boundary condition is normally imposed. At the other "end" no boundary condition is imposed, because no boundary exists. Instead one normally requires that $u(x)$ and $u'(x)$ remain bounded as $x$ increases: there are constants $M$ and $M'$ with
+> [!definition] Definition §4.3: Semi-Infinite Interval
+> The interval $0 < x < \infty$ is called **semi-infinite**: it has one finite endpoint, where a boundary condition is normally imposed.
+>
+> *Powers: 0.4 (text)*
+
+^def-4-3
+
+> [!definition] Definition §4.3: Boundedness at Infinity
+> At the other "end" of a semi-infinite interval ([[§4★ Singular Boundary Value Problems#^def-4-3|Definition §4.3]]) no boundary condition is imposed, because no boundary exists. Instead one normally requires that $u(x)$ and $u'(x)$ remain bounded as $x$ increases: there are constants $M$ and $M'$ with
 >
 > $$
 > |u(x)| \le M \qquad\text{and}\qquad |u'(x)| \le M'
@@ -124,7 +131,7 @@ The other type of singular boundary value problem has an infinite interval of in
 >
 > *Powers: 0.4 (text)*
 
-^def-4-3
+^def-4-new1
 
 > [!theorem] Proposition §4.1: Bounded Solutions of u″ − μ²u = 0
 > Let $\mu > 0$. A solution $u(x) = c_1'e^{\mu x} + c_2'e^{-\mu x}$ of $u'' - \mu^2u = 0$ is bounded on $0 < x < \infty$ (together with $u'$) if and only if $c_1' = 0$, that is, $u$ is a constant multiple of $e^{-\mu x} = \cosh(\mu x) - \sinh(\mu x)$. On $-\infty < x < \infty$, only $u \equiv 0$ is bounded.
@@ -153,7 +160,7 @@ The other type of singular boundary value problem has an infinite interval of in
 > \frac{d^2u}{dx^2} = \frac{hC}{\kappa A}(u - T), \quad 0 < x, \qquad u(0) = T_0 \qquad (5), (6)
 > $$
 >
-> (the equation of [[§3★ Boundary Value Problems#^prop-3-2|Proposition §3.2]] with the convective source of [[§3★ Boundary Value Problems#^def-3-2|Definition §3.2]]). The problem is posed on a semi-infinite interval because the fin is very long, and perhaps to mask our ignorance of what happens at its other physical end; so we impose
+> (the equation of [[§3★ Boundary Value Problems#^prop-3-2|Proposition §3.2]] with the convective source of [[§3★ Boundary Value Problems#^def-3-new1|Definition §3.2]]). The problem is posed on a semi-infinite interval because the fin is very long, and perhaps to mask our ignorance of what happens at its other physical end; so we impose
 >
 > $$
 > u(x), \quad u'(x) \quad \text{bounded as } x \to \infty . \qquad (7)

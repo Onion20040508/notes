@@ -16,14 +16,21 @@ Most boundary value problems that arise in practice cannot be solved in closed f
 
 ## Replacement Equations
 
-> [!definition] Definition §55.1: Mesh Points; Replacement Equations
+> [!definition] Definition §55.1: Mesh Points
 > Let a boundary value problem be posed on $0 \le x \le 1$. Choose a positive integer $n$ and put
 >
 > $$
 > x_i = i\,\Delta x, \qquad \Delta x = \frac1n, \qquad i = 0, 1, \ldots, n .
 > $$
 >
-> The $x_i$ are the **mesh points**, and the numbers $u_i \cong u(x_i)$, $i = 0, 1, \ldots, n$, approximate the solution there. The **replacement equations** are the algebraic equations obtained from the differential equation at each mesh point $x_i$, and from the boundary conditions, by the replacements
+> The $x_i$ are the **mesh points**, and the numbers $u_i \cong u(x_i)$, $i = 0, 1, \ldots, n$, approximate the solution there.
+>
+> *Powers: 7.1, Table 2*
+
+^def-55-1
+
+> [!definition] Definition §55.1: Replacement Equations
+> With the [[§55★ Boundary Value Problems#^def-55-1|mesh points]] $x_i$ and values $u_i$, the **replacement equations** are the algebraic equations obtained from the differential equation at each mesh point $x_i$, and from the boundary conditions, by the replacements
 >
 > | differential equation | boundary condition |
 > |---|---|
@@ -36,7 +43,7 @@ Most boundary value problems that arise in practice cannot be solved in closed f
 >
 > *Powers: 7.1, Table 2*
 
-^def-55-1
+^def-55-new1
 
 > [!remark]- Connections
 > - The same idea for an initial value problem: Euler's method replaces $y'$ by the forward quotient $(y_{n+1} - y_n)/h$, [[§10 Numerical Approximations꞉ Euler's Method#^def-10-1|331 Def. §10.1]]. There the unknowns can be computed one after another; for a boundary value problem the conditions at both ends couple all the $u_i$, and they must be found together from one linear system.

@@ -7,7 +7,7 @@ bc: "59"
 aliases: ["B&C 59"]
 tags: [complex-variables, math342]
 ---
-← [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra]] · ↑ [[· 4 Integrals]] · [[§60 Convergence of Sequences]] →
+← [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra]] · ↑ [[· 4 Integrals]] · [[§59a The Function 1∕z]] →
 
 *Brown–Churchill, Section 59 · MAT 342 HW 8, Practice Finals (Fall 2009, Spring 2005).*
 

@@ -85,7 +85,7 @@ $$
 > u(x, 0) = \sum_{n=1}^{\infty} a_n\sin\Big(\frac{n\pi x}{a}\Big) = f_1(x), \qquad 0 < x < a , \qquad (10)
 > $$
 >
-> a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]], half-range expansions): the $a_n$ must be the sine coefficients of $f_1$.
+> a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]], half-range expansions): the $a_n$ must be the sine coefficients of $f_1$.
 >
 > **The condition at $y = b$.** Condition (3) reads
 >
@@ -111,7 +111,7 @@ $$
 
 ^pf-36-1
 
-*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series), [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]] (hyperbolic identities)
+*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series), [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]] (hyperbolic identities)
 
 > [!remark]- Connections
 > - Why the series really is harmonic inside: for $\delta \le y \le b - \delta$, $\big|\sinh(\lambda_ny)/\sinh(\lambda_nb)\big| \le 2e^{-\lambda_n(b - y)} \le 2e^{-n\pi\delta/a}$ (for $\lambda_n b \ge 1$, say), and the same for the other factor, while $|a_n|, |c_n| \le 2\max|f_i|$. Differentiating term by term only brings in powers of $\lambda_n$, so the series and its differentiated series are dominated by $\sum n^2e^{-n\pi\delta/a} < \infty$; by the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], they converge uniformly and (with [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]) define a continuous function that may be differentiated term by term. At $y = 0$ and $y = b$ the series reduce to the Fourier sine series of $f_1$, $f_2$, whose convergence is the subject of [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].
@@ -234,7 +234,7 @@ $$
 
 ^pf-36-2
 
-*Uses:* [[§36 Potential in a Rectangle#^thm-36-1|§36.1]], [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]] (Wronskian test), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series)
+*Uses:* [[§36 Potential in a Rectangle#^thm-36-1|§36.1]], [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]] (Wronskian test), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series)
 
 In the individual problems for $u_1$ and $u_2$, separation of variables works because homogeneous conditions on parallel sides of the rectangle translate into conditions on one of the factor functions. The same splitting works for other kinds of boundary conditions ([[§37 Further Examples for a Rectangle#^rem-37-1|§37]]).
 

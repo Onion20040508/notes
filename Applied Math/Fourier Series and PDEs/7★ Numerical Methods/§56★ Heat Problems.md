@@ -23,7 +23,7 @@ x_i = i\,\Delta x, \qquad t_m = m\,\Delta t, \qquad i = 0, 1, \ldots, n, \quad m
 $$
 
 > [!definition] Definition §56.1: Explicit Scheme for the Heat Equation
-> Write $u_i(m) \cong u(x_i, t_m)$: the subscript gives the position, the number in parentheses the time level. The space derivatives are replaced as in [[§55★ Boundary Value Problems#^def-55-1|Definition §55.1]], and the time derivative by the **forward difference**:
+> Write $u_i(m) \cong u(x_i, t_m)$: the subscript gives the position, the number in parentheses the time level. The space derivatives are replaced as in [[§55★ Boundary Value Problems#^def-55-new1|Definition §55.1]], and the time derivative by the **forward difference**:
 >
 > $$
 > \frac{\partial^2u}{\partial x^2}(x_i, t_m) \to \frac{u_{i+1}(m) - 2u_i(m) + u_{i-1}(m)}{(\Delta x)^2}, \qquad

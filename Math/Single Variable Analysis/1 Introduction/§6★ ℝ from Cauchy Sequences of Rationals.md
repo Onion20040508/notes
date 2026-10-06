@@ -8,7 +8,7 @@ tags: [real-analysis, math451, extension]
 ---
 ← [[§6 Dedekind Cuts]] · ↑ [[· 1 Introduction]] · [[§7 Limits of Sequences]] →
 
-★ *Beyond MATH 451: the course constructs ℝ only by Dedekind cuts (§6) and names this second route in one sentence ([[§10a Cauchy Sequences#^rem-10-4|§10a Rem. (construction of the reals)]]). The construction and all proofs below were added in the vault, following the standard order (as in Tao, Analysis I, Ch. 5). The last part, which compares the result with the course's ℝ, uses the limit theorems of §9–§10. Those are derived from the axioms of §3–§4 alone, so the forward references are not circular.*
+★ *Beyond MATH 451: the course constructs ℝ only by Dedekind cuts (§6) and names this second route in one sentence ([[§10a Cauchy Sequences#^rem-10-4|§10a Rem. (construction of the reals)]]). The construction and all proofs below were added in the vault, following the standard order (as in Tao, Analysis I, Ch. 5). The last part, which compares the result with the course's ℝ, uses the limit theorems of §9–§10a. Those are derived from the axioms of §3–§4 alone, so the forward references are not circular.*
 
 **Question.** §6 explained why ℝ cannot be defined as "limits of rational sequences" in this course: limits presuppose ℝ. Is there a way to use sequences anyway?
 
@@ -455,7 +455,7 @@ This resolves the circularity that §6 warned about. "The limit of a rational Ca
 
 ## The Two Routes Give the Same ℝ
 
-From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ and satisfying the completeness axiom (§3–§4). The proofs use [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]] (density of $\mathbb{Q}$) and the limit theorems of §9–§10, all of which are derived from those axioms.
+From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ and satisfying the completeness axiom (§3–§4). The proofs use [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]] (density of $\mathbb{Q}$) and the limit theorems of §9–§10a, all of which are derived from those axioms.
 
 > [!theorem] Theorem §6★.12: The Cauchy Reals Are the Real Numbers
 > A rational Cauchy sequence converges in ℝ, and
@@ -527,7 +527,7 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 >
 > *$F$ contains a copy of $\mathbb{Q}$.* In $F$, $0 < 1$ ([[§3 The Set ℝ of Real Numbers#^prop-3-1|Proposition §3.1]](e)), so by O4 and induction $0 < 1 < 1 + 1 < \cdots$. Hence $n \mapsto n \cdot 1_F$ is injective and order-preserving on $\mathbb{Z}$, and it preserves sums and products. The map $m/n \mapsto (m \cdot 1_F)(n \cdot 1_F)^{-1}$ ($n > 0$) is well defined, because $m/n = m'/n'$ means $mn' = m'n$. It is an injective, order-preserving field homomorphism $\mathbb{Q} \to F$ ([[§3 The Set ℝ of Real Numbers#^prop-3-1|Proposition §3.1]](f), (g) for the order). Identify $\mathbb{Q}$ with its image.
 >
-> *$F \cong \widehat{\mathbb{Q}}$.* The proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|Theorem §6★.12]] used about ℝ only that it is an ordered field containing $\mathbb{Q}$ with the completeness axiom, through results derived from these axioms (density [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]], the [[Archimedean Property|Archimedean property]] §4.5, limit theorems §9, Cauchy sequences §10). All of them hold verbatim in $F$. So $\Phi_F : \widehat{\mathbb{Q}} \to F$, $[(q_n)] \mapsto \lim q_n$, is an isomorphism of ordered fields.
+> *$F \cong \widehat{\mathbb{Q}}$.* The proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|Theorem §6★.12]] used about ℝ only that it is an ordered field containing $\mathbb{Q}$ with the completeness axiom, through results derived from these axioms (density [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]], the [[Archimedean Property|Archimedean property]] §4.5, limit theorems §9, Cauchy sequences §10a). All of them hold verbatim in $F$. So $\Phi_F : \widehat{\mathbb{Q}} \to F$, $[(q_n)] \mapsto \lim q_n$, is an isomorphism of ordered fields.
 >
 > *Two fields.* If $F_1, F_2$ are complete ordered fields, then $\Phi_{F_2} \circ \Phi_{F_1}^{-1} : F_1 \to F_2$ is a bijection preserving sums, products and order.
 

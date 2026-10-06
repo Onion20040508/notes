@@ -276,7 +276,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^pf-31-4
 
-*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§31 d'Alembert's Solution#^thm-31-3|§31.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]]
+*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§31 d'Alembert's Solution#^thm-31-3|§31.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]]
 
 > [!example] Example §31.1: The Midterm Problem by d'Alembert's Method
 > For the problem of [[§30 Solution of the Vibrating String Problem#^ex-30-2|Example §30.2]], $u_{tt} = 4u_{xx}$ on $0 < x < \pi$ with fixed ends, $u(x, 0) = x$ and $u_t(x, 0) = \sin(2x)$: **(d)** express $\psi$ and $\phi$ in terms of the initial conditions, **(e)** expand them in Fourier series and write $u$ as d'Alembert's solution, **(f)** check that the result agrees with the series solution. (The exam names the two functions the other way round.)

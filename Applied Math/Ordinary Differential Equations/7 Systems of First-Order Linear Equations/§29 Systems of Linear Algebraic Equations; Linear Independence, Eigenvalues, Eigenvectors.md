@@ -155,7 +155,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 > \mathbf{X}\mathbf{c} = \mathbf{0} . \qquad (18)
 > $$
 >
-> If $\det\mathbf{X} \ne 0$, its only solution is $\mathbf{c} = \mathbf{0}$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]](a)), so the vectors are independent. If $\det\mathbf{X} = 0$, it has nonzero solutions (Theorem §29.1(b)), so they are dependent. For rows, apply this to $\mathbf{X}^T$, which has the same determinant ([[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]]).
+> If $\det\mathbf{X} \ne 0$, its only solution is $\mathbf{c} = \mathbf{0}$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]](a)), so the vectors are independent. If $\det\mathbf{X} = 0$, it has nonzero solutions ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]](b)), so they are dependent. For rows, apply this to $\mathbf{X}^T$, which has the same determinant ([[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]]).
 >
 > **(b)** The product formula is cited, not proved, in BDP; see [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]]. Given it, independent columns of $\mathbf{A}$ and $\mathbf{B}$ mean $\det\mathbf{A} \ne 0 \ne \det\mathbf{B}$ by (a), so $\det\mathbf{C} \ne 0$ and the columns of $\mathbf{C}$ are independent by (a).
 
@@ -190,7 +190,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 > = -14 - 2(-21) - 4(7) = 0 ,
 > $$
 >
-> which confirms dependence ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2]]) but does not produce the relation. In the same way, the coefficient columns of [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^ex-29-1|Example §29.1]](a) are independent and those of Example §29.1(b) are dependent.
+> which confirms dependence ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2]]) but does not produce the relation. In the same way, the coefficient columns of [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^ex-29-1|Example §29.1]](a) are independent and those of [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^ex-29-1|Example §29.1]](b) are dependent.
 >
 > *BDP: Example 7.3.3*
 

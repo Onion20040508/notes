@@ -103,10 +103,17 @@ $$
 
 ## Branches, Branch Cuts, Branch Points
 
-> [!definition] Definition §33.2: Branch of a Multiple-Valued Function; Principal Branch
+> [!definition] Definition §33.2: Branch of a Multiple-Valued Function
 > A **branch** of a [[§13 Functions and Mappings#^def-13-4|multiple-valued function]] $f$ is any single-valued function $F$ that is analytic in some domain at each point $z$ of which the value $F(z)$ is one of the values of $f$. (The requirement of analyticity prevents $F$ from taking a random selection of the values of $f$.)
 >
-> For each fixed $\alpha$, the function (2) is a branch of the multiple-valued function (1). The function
+> For each fixed $\alpha$, the function (2) is a branch of the multiple-valued function (1).
+>
+> *B&C: Sec. 33 (text), Equation (6)*
+
+^def-33-2
+
+> [!definition] Definition §33.3: Principal Branch of log z
+> The function
 >
 > $$
 > \operatorname{Log} z = \ln r + i\Theta \qquad (r > 0,\ -\pi < \Theta < \pi) \qquad (6)
@@ -116,16 +123,23 @@ $$
 >
 > *B&C: Sec. 33 (text), Equation (6)*
 
-^def-33-2
+^def-33-new1
 
-> [!definition] Definition §33.3: Branch Cut; Branch Point
-> A **branch cut** is a portion of a line or curve that is introduced in order to define a branch $F$ of a multiple-valued function $f$. Points on the branch cut for $F$ are singular points ([[§25 Analytic Functions#^def-25-3|Definition §25.3]]) of $F$. Any point that is common to all branch cuts of $f$ is called a **branch point**.
+> [!definition] Definition §33.3: Branch Cut
+> A **branch cut** is a portion of a line or curve that is introduced in order to define a branch $F$ of a multiple-valued function $f$. Points on the branch cut for $F$ are singular points ([[§25 Analytic Functions#^def-25-3|Definition §25.3]]) of $F$.
 >
-> For the branch (2) of the logarithm, the branch cut is the origin together with the ray $\theta = \alpha$; for the principal branch (6) it is the origin together with the ray $\Theta = \pi$, the nonpositive real axis. The origin is a branch point of $\log z$.
+> For the branch (2) of the logarithm, the branch cut is the origin together with the ray $\theta = \alpha$; for the principal branch (6) it is the origin together with the ray $\Theta = \pi$, the nonpositive real axis.
 >
 > *B&C: Sec. 33 (text)*
 
 ^def-33-3
+
+> [!definition] Definition §33.5: Branch Point
+> Any point that is common to all branch cuts of $f$ is called a **branch point**. The origin is a branch point of $\log z$.
+>
+> *B&C: Sec. 33 (text)*
+
+^def-33-new2
 
 > [!remark] Remark: Method — Choosing a Branch
 > To make $\log z$, or a function built from it, single-valued and analytic on a given region:

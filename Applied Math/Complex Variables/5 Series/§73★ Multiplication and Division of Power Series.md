@@ -7,7 +7,7 @@ bc: "73"
 aliases: ["B&C 73"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§72★ Uniqueness of Series Representations]] · ↑ [[· 5 Series]] · [[§74 Isolated Singular Points]] →
+← [[§72★ Uniqueness of Series Representations]] · ↑ [[· 5 Series]] · [[§73a The Geometric Series]] →
 
 *Brown–Churchill, Section 73 · MAT 342 Practice Final (Fall 2002).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*

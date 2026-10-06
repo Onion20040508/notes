@@ -69,7 +69,7 @@ A function differentiable at a single point, or along a curve, has no useful str
 *Uses:* [[§20 Rules for Differentiation#^thm-20-2|§20.2]], [[§25 Analytic Functions#^ex-25-1|Ex. §25.1]]
 
 > [!theorem] Proposition §25.2: Compositions
-> A composition of two analytic functions is analytic. More precisely, suppose that $f(z)$ is analytic in a domain $D$ and that the image ([[§13 Functions and Mappings#^def-13-5|Definition §13.5]]) of $D$ under the transformation $w = f(z)$ is contained in the domain of definition of a function $g(w)$ that is analytic there. Then the composition $g[f(z)]$ is analytic in $D$, with derivative
+> A composition of two analytic functions is analytic. More precisely, suppose that $f(z)$ is analytic in a domain $D$ and that the image ([[§13 Functions and Mappings#^def-13-new2|Definition §13.7]]) of $D$ under the transformation $w = f(z)$ is contained in the domain of definition of a function $g(w)$ that is analytic there. Then the composition $g[f(z)]$ is analytic in $D$, with derivative
 >
 > $$
 > \frac{d}{dz}g[f(z)] = g'[f(z)]\,f'(z) .

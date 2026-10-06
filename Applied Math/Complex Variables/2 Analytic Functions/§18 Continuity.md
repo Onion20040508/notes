@@ -200,7 +200,7 @@ The modulus of a continuous function is continuous. B&C leaves this as an exerci
 
 ## Continuous Functions on Closed Bounded Regions
 
-Recall from [[§12★ Regions in the Complex Plane|§12★]] that a region $R$ is **closed** if it contains all of its boundary points ([[§12★ Regions in the Complex Plane#^def-12-3|Definition §12.3]]), and **bounded** if it lies inside some circle centered at the origin ([[§12★ Regions in the Complex Plane#^def-12-5|Definition §12.5]]).
+Recall from [[§12★ Regions in the Complex Plane|§12★]] that a region $R$ is **closed** if it contains all of its boundary points ([[§12★ Regions in the Complex Plane#^def-12-new4|Definition §12.7]]), and **bounded** if it lies inside some circle centered at the origin ([[§12★ Regions in the Complex Plane#^def-12-5|Definition §12.5]]).
 
 > [!definition] Definition §18.2: Bounded Function
 > A function $f$ is **bounded on $R$** if there is a nonnegative real number $M$ such that $|f(z)| \le M$ for all points $z$ in $R$.

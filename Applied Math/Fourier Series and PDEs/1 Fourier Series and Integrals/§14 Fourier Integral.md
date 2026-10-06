@@ -54,14 +54,21 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 ## The Fourier Integral Theorem
 
-> [!definition] Definition §14.1: Fourier Integral; Coefficient Functions
+> [!definition] Definition §14.1: Fourier Integral Coefficient Functions
 > Let $f(x)$ be defined for $-\infty < x < \infty$ with $\int_{-\infty}^{\infty}|f(x)|\,dx$ finite. The functions
 >
 > $$
 > A(\lambda) = \frac1\pi\int_{-\infty}^{\infty} f(x)\cos(\lambda x)\,dx, \qquad B(\lambda) = \frac1\pi\int_{-\infty}^{\infty} f(x)\sin(\lambda x)\,dx \qquad (9)
 > $$
 >
-> are the **Fourier integral coefficient functions** of $f$, and
+> are the **Fourier integral coefficient functions** of $f$.
+>
+> *Powers: 1.9, Equations (8)–(9) and text*
+
+^def-14-1
+
+> [!definition] Definition §14.1: Fourier Integral
+> With the coefficient functions of [[§14 Fourier Integral#^def-14-1|Definition §14.1]],
 >
 > $$
 > \int_0^{\infty}\big(A(\lambda)\cos(\lambda x) + B(\lambda)\sin(\lambda x)\big)\,d\lambda
@@ -71,7 +78,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 >
 > *Powers: 1.9, Equations (8)–(9) and text*
 
-^def-14-1
+^def-14-new1
 
 > [!theorem] Theorem §14.1: Fourier Integral Representation Theorem
 > Let $f(x)$ be sectionally smooth on every finite interval, and let $\int_{-\infty}^{\infty}|f(x)|\,dx$ be finite. Then at every point $x$,
@@ -206,14 +213,19 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd extension, whose Fourier integral contains only $\cos(\lambda x)$ or only $\sin(\lambda x)$.
 
-> [!definition] Definition §14.2: Fourier Cosine and Sine Integral Representations
+> [!definition] Definition §14.2: Fourier Cosine Integral Representation
 > Let $f(x)$ be defined and sectionally smooth for $0 < x < \infty$, and let $\int_0^{\infty}|f(x)|\,dx < \infty$. Then we write the **Fourier cosine integral representation**
 >
 > $$
-> f(x) = \int_0^{\infty} A(\lambda)\cos(\lambda x)\,d\lambda, \quad 0 < x < \infty, \qquad\text{with}\quad A(\lambda) = \frac2\pi\int_0^{\infty} f(x)\cos(\lambda x)\,dx ,
+> f(x) = \int_0^{\infty} A(\lambda)\cos(\lambda x)\,d\lambda, \quad 0 < x < \infty, \qquad\text{with}\quad A(\lambda) = \frac2\pi\int_0^{\infty} f(x)\cos(\lambda x)\,dx .
 > $$
 >
-> and the **Fourier sine integral representation**
+> *Powers: 1.9 (boxed summary)*
+
+^def-14-2
+
+> [!definition] Definition §14.2: Fourier Sine Integral Representation
+> Let $f(x)$ be defined and sectionally smooth for $0 < x < \infty$, and let $\int_0^{\infty}|f(x)|\,dx < \infty$. Then we write the **Fourier sine integral representation**
 >
 > $$
 > f(x) = \int_0^{\infty} B(\lambda)\sin(\lambda x)\,d\lambda, \quad 0 < x < \infty, \qquad\text{with}\quad B(\lambda) = \frac2\pi\int_0^{\infty} f(x)\sin(\lambda x)\,dx .
@@ -221,7 +233,7 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 >
 > *Powers: 1.9 (boxed summary)*
 
-^def-14-2
+^def-14-new2
 
 > [!theorem] Corollary §14.2: Cosine and Sine Integrals Converge
 > Under the hypotheses of Definition §14.2, at every $x > 0$ both the cosine and the sine integral of $f$ equal $\frac12\big(f(x+) + f(x-)\big)$. At $x = 0$ the cosine integral equals $f(0+)$ and the sine integral equals $0$.
@@ -245,7 +257,7 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 
 ^pf-14-2
 
-*Uses:* [[§14 Fourier Integral#^thm-14-1|§14.1]], [[§14 Fourier Integral#^def-14-1|Def. §14.1]], [[§14 Fourier Integral#^def-14-2|Def. §14.2]]
+*Uses:* [[§14 Fourier Integral#^thm-14-1|§14.1]], [[§14 Fourier Integral#^def-14-1|Def. §14.1]], [[§14 Fourier Integral#^def-14-new1|Def. §14.1]], [[§14 Fourier Integral#^def-14-2|Def. §14.2]], [[§14 Fourier Integral#^def-14-new2|Def. §14.2]]
 
 > [!example] Example §14.4: The Two-Sided Exponential and Its Derivative
 > **(a)** Find the Fourier integral representation of $f(x) = e^{-|x|}$. The function is even, so $B(\lambda) = 0$, and by Example §14.1(b)

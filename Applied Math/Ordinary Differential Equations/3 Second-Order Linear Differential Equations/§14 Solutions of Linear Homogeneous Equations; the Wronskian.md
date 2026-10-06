@@ -61,7 +61,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 
 ^thm-14-1
 
-*BDP omits the proof ("fairly difficult"; it refers to Coddington, Chapter 6, Section 8). §11 proves the first-order case by Picard iteration, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]] (Theorem 2.8.1); the second-order linear equation is the case $n = 2$ of the systems version, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (Theorem 7.1.2), which BDP does not prove either.*
+*BDP omits the proof ("fairly difficult"; it refers to Coddington, Chapter 6, Section 8). [[§11 The Existence and Uniqueness Theorem|§11]] proves the first-order case by Picard iteration, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]] (Theorem 2.8.1); the second-order linear equation is the case $n = 2$ of the systems version, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (Theorem 7.1.2), which BDP does not prove either.*
 
 > [!remark] Remark: What the Theorem Says
 > Three things: the problem *has* a solution (existence); it has *only one* (uniqueness); and the solution is defined, and twice differentiable, *throughout* the interval $I$ where the coefficients are continuous. This is the second-order analog of [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] (Theorem 2.4.1) for first-order linear equations. Existence is sometimes visible directly: $y = \frac12e^t + \frac32e^{-t}$ solves $y'' - y = 0$, $y(0) = 2$, $y'(0) = -1$ on $(-\infty, \infty)$ ([[§13 Homogeneous Differential Equations with Constant Coefficients#^ex-13-1|Example §13.1]]). That it is the *only* solution is not obvious; the theorem guarantees it. Unlike first-order linear equations, second-order equations generally have no useful solution formula, so the proof has to work without one.
@@ -83,7 +83,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 >
 > The coefficients are discontinuous only at $t = 0$ (where $q$ blows up) and $t = 3$. The longest open interval containing the initial point $t = 1$ on which all of them are continuous is $0 < t < 3$, and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] guarantees a solution there.
 >
-> **(b)** Find the unique solution of $y'' + p(t)y' + q(t)y = 0$, $y(t_0) = 0$, $y'(t_0) = 0$, where $p$ and $q$ are continuous on an open interval $I$ containing $t_0$. The function $\phi(t) = 0$ for all $t$ in $I$ satisfies the equation and the initial conditions. By the uniqueness part of Theorem §14.1 it is the only solution.
+> **(b)** Find the unique solution of $y'' + p(t)y' + q(t)y = 0$, $y(t_0) = 0$, $y'(t_0) = 0$, where $p$ and $q$ are continuous on an open interval $I$ containing $t_0$. The function $\phi(t) = 0$ for all $t$ in $I$ satisfies the equation and the initial conditions. By the uniqueness part of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] it is the only solution.
 >
 > *BDP: Examples 3.2.1 and 3.2.2*
 
@@ -243,7 +243,7 @@ $$
 >
 > So $\phi$ belongs to the family, and since $\phi$ was an arbitrary solution, every solution does.
 >
-> **If $W[y_1, y_2](t_0) = 0$ for every $t_0$.** Pick any $t_0 \in I$. By Theorem §14.3 there are values $y_0$, $y_0'$ for which no $c_1$, $c_2$ satisfy the system (8). Let $\phi$ be the solution of (2) with $\phi(t_0) = y_0$, $\phi'(t_0) = y_0'$, which exists by Theorem §14.1. If $\phi$ were $c_1y_1 + c_2y_2$, then evaluating it and its derivative at $t_0$ would give constants solving (8). So $\phi$ is not in the family, and the linear combinations of $y_1$ and $y_2$ do not include all solutions.
+> **If $W[y_1, y_2](t_0) = 0$ for every $t_0$.** Pick any $t_0 \in I$. By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|Theorem §14.3]] there are values $y_0$, $y_0'$ for which no $c_1$, $c_2$ satisfy the system (8). Let $\phi$ be the solution of (2) with $\phi(t_0) = y_0$, $\phi'(t_0) = y_0'$, which exists by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]]. If $\phi$ were $c_1y_1 + c_2y_2$, then evaluating it and its derivative at $t_0$ would give constants solving (8). So $\phi$ is not in the family, and the linear combinations of $y_1$ and $y_2$ do not include all solutions.
 
 ^pf-14-4
 
@@ -332,7 +332,7 @@ $$
 >
 > so they form a fundamental set by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-new1|Definition §14.3]] (and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]]).
 >
-> The difficult part, the existence of the two solutions, is carried by Theorem §14.1. The theorem does not say how to find $y_1$ and $y_2$; it only guarantees that a fundamental set always exists.
+> The difficult part, the existence of the two solutions, is carried by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]]. The theorem does not say how to find $y_1$ and $y_2$; it only guarantees that a fundamental set always exists.
 
 ^pf-14-5
 
@@ -403,7 +403,7 @@ $$
 ^cor-14-7
 
 > [!proof]+ Proof
-> By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|Theorem §14.6]], $u$ and $v$ are solutions. Then $\bar y = u + (-i)v$ is a linear combination of two solutions, hence a solution by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|Theorem §14.2]] (whose proof allows complex constants). BDP notes that an argument like the proof of Theorem §14.6 works as well: conjugating $L[y] = 0$ gives $L[\bar y] = 0$, again because $p$ and $q$ are real.
+> By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|Theorem §14.6]], $u$ and $v$ are solutions. Then $\bar y = u + (-i)v$ is a linear combination of two solutions, hence a solution by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|Theorem §14.2]] (whose proof allows complex constants). BDP notes that an argument like the proof of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|Theorem §14.6]] works as well: conjugating $L[y] = 0$ gives $L[\bar y] = 0$, again because $p$ and $q$ are real.
 
 ^pf-14-7
 

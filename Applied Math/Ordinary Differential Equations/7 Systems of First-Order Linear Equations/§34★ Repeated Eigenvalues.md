@@ -158,7 +158,7 @@ If $\mathbf{A}$ is not Hermitian, $\rho$ may have fewer than $m$ independent eig
 *Phase portrait of [[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]], computed from $\mathbf{x}(t) = e^{2t}[\mathbf{I} + t(\mathbf{A} - 2\mathbf{I})]\mathbf{x}(0)$ ([[§34★ Repeated Eigenvalues#^ex-34-2|Example §34.2]]). Green: the eigenvector line $x_2 = -x_1$, carrying $\pm\mathbf{x}^{(1)}$. Red: $\pm\mathbf{x}^{(2)}$, through $(0, \mp1)$ at $t = 0$. Every trajectory leaves the origin tangent to the eigenvector line and turns to run off nearly parallel to it: an unstable improper node. The grey arrows are the direction field $\mathbf{A}\mathbf{x}$.*
 
 > [!definition] Definition §34.1: Improper Node
-> For a $2 \times 2$ system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ whose coefficient matrix has a repeated eigenvalue with only one independent eigenvector, the origin is called an **improper node**. If the eigenvalue is negative, the trajectories are like those of [[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]] but traversed inward, and the improper node is [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-1|asymptotically stable]]; if it is positive, the node is unstable.
+> For a $2 \times 2$ system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ whose coefficient matrix has a repeated eigenvalue with only one independent eigenvector, the origin is called an **improper node**. If the eigenvalue is negative, the trajectories are like those of [[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]] but traversed inward, and the improper node is [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-new1|asymptotically stable]]; if it is positive, the node is unstable.
 >
 > *BDP: 7.8 (text)*
 

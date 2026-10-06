@@ -155,7 +155,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 > - Same definition in 556, where complete normed spaces are Banach spaces: [[§11 Completeness#^def-11-1|556 Def. §11.1]], [[§11 Completeness#^def-11-2|556 Def. §11.2]].
 
 > [!example] Example §13.5: Completeness of the Real Line
-> $(\mathbb{R}, |\cdot|)$ is a complete metric space — this is exactly what we proved in §10 (Cauchy $\Rightarrow$ convergent), and it is equivalent to the [[Completeness Axiom|completeness axiom]] of $\mathbb{R}$.
+> $(\mathbb{R}, |\cdot|)$ is a complete metric space — this is exactly what we proved in §10a (Cauchy $\Rightarrow$ convergent), and it is equivalent to the [[Completeness Axiom|completeness axiom]] of $\mathbb{R}$.
 
 ^ex-13-5
 

@@ -80,7 +80,7 @@ and in general:
 ^cor-22-2
 
 > [!proof]+ Proof
-> Induction on $n$; the case $n = 1$ is Theorem §22.1. Assume (4) for $n - 1$ (whose hypotheses are contained in those for $n$). Apply [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]] to $g = f^{(n-1)}$: it is continuous, $g' = f^{(n)}$ is piecewise continuous, and $|g(t)| \le Ke^{at}$ for $t \ge M$. So for $s > a$,
+> Induction on $n$; the case $n = 1$ is [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]]. Assume (4) for $n - 1$ (whose hypotheses are contained in those for $n$). Apply [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]] to $g = f^{(n-1)}$: it is continuous, $g' = f^{(n)}$ is piecewise continuous, and $|g(t)| \le Ke^{at}$ for $t \ge M$. So for $s > a$,
 >
 > $$
 > \mathcal{L}\{f^{(n)}\} = s\mathcal{L}\{f^{(n-1)}\} - f^{(n-1)}(0) = s\big(s^{n-1}\mathcal{L}\{f\} - s^{n-2}f(0) - \cdots - f^{(n-2)}(0)\big) - f^{(n-1)}(0) ,
@@ -105,7 +105,7 @@ The method is most useful for nonhomogeneous equations (from [[§23 Step Functio
 > y = \frac23 e^{-t} + \frac13 e^{2t} . \qquad (8)
 > $$
 >
-> **By the Laplace transform.** Assume that the solution $y$, with its first two derivatives, satisfies the conditions of Corollary §22.2. Transforming the equation, using linearity ([[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3]]) and (3), with $Y(s) = \mathcal{L}\{y\}$:
+> **By the Laplace transform.** Assume that the solution $y$, with its first two derivatives, satisfies the conditions of [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]]. Transforming the equation, using linearity ([[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3]]) and (3), with $Y(s) = \mathcal{L}\{y\}$:
 >
 > $$
 > s^2Y - sy(0) - y'(0) - \big(sY - y(0)\big) - 2Y = 0, \quad\text{i.e.}\quad (s^2 - s - 2)Y(s) + (1 - s)y(0) - y'(0) = 0 . \qquad (10)
@@ -241,7 +241,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 ^thm-22-6
 
 > [!proof]- Proof
-> Entries 1, 2, 5 are worked out in §21; entry 18 is [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]]; entries 12–14, 16, 17 are proved in the sections listed. The remaining entries:
+> Entries 1, 2, 5 are worked out in [[§21 Definition of the Laplace Transform|§21]]; entry 18 is [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]]; entries 12–14, 16, 17 are proved in the sections listed. The remaining entries:
 >
 > **3.** For $n \ge 1$, $f(t) = t^n$ is continuous with continuous derivative $nt^{n-1}$ and $f(0) = 0$. Since $e^{\varepsilon t} \ge (\varepsilon t)^n/n!$, we have $t^n \le (n!/\varepsilon^n)e^{\varepsilon t}$ for every $\varepsilon > 0$, so [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]] applies for every $s > \varepsilon$, hence for all $s > 0$:
 >
@@ -257,7 +257,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 > \int_0^\infty e^{-st}t^p\,dt = \int_0^\infty e^{-x}\Big(\frac xs\Big)^p\frac{dx}{s} = \frac{1}{s^{p+1}}\int_0^\infty e^{-x}x^p\,dx = \frac{\Gamma(p + 1)}{s^{p+1}} .
 > $$
 >
-> **6.** $f(t) = \sin(at)$ is continuous, bounded (exponential order with exponent $0$), $f(0) = 0$, and $f'(t) = a\cos(at)$. By Theorem §22.1 and entry 5, for $s > 0$: $a\mathcal{L}\{\cos(at)\} = s\cdot\frac{a}{s^2 + a^2} - 0$, so $\mathcal{L}\{\cos(at)\} = \frac{s}{s^2 + a^2}$ for $a \ne 0$; for $a = 0$ it is entry 1.
+> **6.** $f(t) = \sin(at)$ is continuous, bounded (exponential order with exponent $0$), $f(0) = 0$, and $f'(t) = a\cos(at)$. By [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]] and entry 5, for $s > 0$: $a\mathcal{L}\{\cos(at)\} = s\cdot\frac{a}{s^2 + a^2} - 0$, so $\mathcal{L}\{\cos(at)\} = \frac{s}{s^2 + a^2}$ for $a \ne 0$; for $a = 0$ it is entry 1.
 >
 > **7, 8.** With $\sinh(at) = \frac12(e^{at} - e^{-at})$, $\cosh(at) = \frac12(e^{at} + e^{-at})$, linearity and entry 2 give, for $s > a$ and $s > -a$, that is $s > |a|$,
 >
@@ -294,7 +294,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 > \Big|\frac{F(s + h) - F(s)}{h} - \int_0^\infty e^{-st}\big(-tf(t)\big)\,dt\Big| \le \frac{|h|}{2}\int_0^\infty t^2e^{-(s - \delta)t}|f(t)|\,dt .
 > $$
 >
-> All these integrals converge by [[§21 Definition of the Laplace Transform#^thm-21-1|Theorem §21.1]]: the integrands are piecewise continuous, and for $t \ge M$, $t^2e^{-(s - \delta)t}|f(t)| \le Kt^2e^{-\delta t} \le Ce^{-\delta t/2}$ (as $t^2e^{-\delta t/2}$ is bounded), and likewise $t\,e^{-st}|f(t)| \le Ce^{-\delta t/2}$. Letting $h \to 0$ gives $F'(s) = \mathcal{L}\{-tf(t)\}$ for every $s > a$. Finally, $-tf(t)$ is piecewise continuous and $|-tf(t)| \le Kte^{at} \le K'e^{a't}$ for every $a' > a$ and $t \ge M$, so it again satisfies the conditions of Theorem §21.2 (with any exponent $a' > a$), and induction gives $F^{(n)}(s) = \mathcal{L}\{(-t)^nf(t)\}$ for $s > a$.
+> All these integrals converge by [[§21 Definition of the Laplace Transform#^thm-21-1|Theorem §21.1]]: the integrands are piecewise continuous, and for $t \ge M$, $t^2e^{-(s - \delta)t}|f(t)| \le Kt^2e^{-\delta t} \le Ce^{-\delta t/2}$ (as $t^2e^{-\delta t/2}$ is bounded), and likewise $t\,e^{-st}|f(t)| \le Ce^{-\delta t/2}$. Letting $h \to 0$ gives $F'(s) = \mathcal{L}\{-tf(t)\}$ for every $s > a$. Finally, $-tf(t)$ is piecewise continuous and $|-tf(t)| \le Kte^{at} \le K'e^{a't}$ for every $a' > a$ and $t \ge M$, so it again satisfies the conditions of [[§21 Definition of the Laplace Transform#^thm-21-2|Theorem §21.2]] (with any exponent $a' > a$), and induction gives $F^{(n)}(s) = \mathcal{L}\{(-t)^nf(t)\}$ for $s > a$.
 
 ^pf-22-6
 

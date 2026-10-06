@@ -15,16 +15,21 @@ The convergence theorem of [[§8 Convergence of Fourier Series|§8]] works one p
 
 ## Uniform Convergence
 
-> [!definition] Definition §9.1: Pointwise and Uniform Convergence
-> Let $g_n$ and $g$ be functions on a common domain.
-> - $(g_n)$ **converges pointwise** to $g$ if $|g_n(x) - g(x)| \to 0$ as $n \to \infty$ for each $x$ in the domain.
-> - $(g_n)$ **converges uniformly** to $g$ if $\sup_x|g_n(x) - g(x)| \to 0$ as $n \to \infty$, the supremum taken over all $x$ in the domain.
->
-> Uniform convergence implies pointwise convergence, but not conversely.
+> [!definition] Definition §9.1: Pointwise Convergence
+> Let $g_n$ and $g$ be functions on a common domain. $(g_n)$ **converges pointwise** to $g$ if $|g_n(x) - g(x)| \to 0$ as $n \to \infty$ for each $x$ in the domain.
 >
 > *Source: 341 lecture 9.3*
 
 ^def-9-1
+
+> [!definition] Definition §9.1: Uniform Convergence
+> Let $g_n$ and $g$ be functions on a common domain. $(g_n)$ **converges uniformly** to $g$ if $\sup_x|g_n(x) - g(x)| \to 0$ as $n \to \infty$, the supremum taken over all $x$ in the domain.
+>
+> Uniform convergence implies pointwise convergence ([[§9 Uniform Convergence#^def-9-1|Definition §9.1]]), but not conversely.
+>
+> *Source: 341 lecture 9.3*
+
+^def-9-new1
 
 > [!remark]- Connections
 > - Rigorous definitions: [[§24 Uniform Convergence#^def-24-1|451 Def. §24.1]], [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]] ($N$ independent of $x$); the supremum form used here is [[§24 Uniform Convergence#^thm-24-1|451 Thm. §24.1]]. Ross's standard example of pointwise but not uniform convergence is $x^n$ on $[0, 1]$, [[§24 Uniform Convergence#^ex-24-2|451 Ex. §24.2]].
@@ -202,11 +207,11 @@ If an odd periodic function is to be continuous, it must have value $0$ at $x = 
 ^thm-9-5
 
 > [!proof]+ Proof
-> The sine series is the Fourier series of the odd extension $f_o$ on $-a < x < a$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]). $f_o$ is continuous and bounded on $(-a, 0)$ and $(0, a)$, with derivative $f_o'(x) = f'(-x)$ for $-a < x < 0$, hence sectionally continuous. At $0$: $f_o(0+) = f(0+)$ and $f_o(0-) = -f(0+)$, which agree exactly when $f(0+) = 0$; then $f_o$, with $f_o(0) = 0$, is continuous on $(-a, a)$. At the ends: $f_o(a-) = f(a-)$ and $f_o(-a+) = -f(a-)$, which agree exactly when $f(a-) = 0$. So under the hypotheses $f_o$ satisfies Theorem §9.4, and the series converges uniformly to $f_o$ on $-a \le x \le a$, with value $0$ at $x = 0$ and at $x = \pm a$; on $0 \le x \le a$ this is the claim.
+> The sine series is the Fourier series of the odd extension $f_o$ on $-a < x < a$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]). $f_o$ is continuous and bounded on $(-a, 0)$ and $(0, a)$, with derivative $f_o'(x) = f'(-x)$ for $-a < x < 0$, hence sectionally continuous. At $0$: $f_o(0+) = f(0+)$ and $f_o(0-) = -f(0+)$, which agree exactly when $f(0+) = 0$; then $f_o$, with $f_o(0) = 0$, is continuous on $(-a, a)$. At the ends: $f_o(a-) = f(a-)$ and $f_o(-a+) = -f(a-)$, which agree exactly when $f(a-) = 0$. So under the hypotheses $f_o$ satisfies Theorem §9.4, and the series converges uniformly to $f_o$ on $-a \le x \le a$, with value $0$ at $x = 0$ and at $x = \pm a$; on $0 \le x \le a$ this is the claim.
 
 ^pf-9-5
 
-*Uses:* [[§9 Uniform Convergence#^thm-9-4|§9.4]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Def. §7.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]]
+*Uses:* [[§9 Uniform Convergence#^thm-9-4|§9.4]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Def. §7.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]]
 
 > [!theorem] Theorem §9.6: Uniform Convergence of the Cosine Series
 > If $f$ is given on $0 < x < a$ and if $f$ is continuous and bounded and has a sectionally continuous derivative, then the Fourier cosine series of $f$ converges uniformly to $f$ in the interval $0 \le x \le a$. (The series converges to $f(0+)$ at $x = 0$ and to $f(a-)$ at $x = a$.)

@@ -7,7 +7,7 @@ bc: "29"
 aliases: ["B&C 29"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§28★ Uniquely Determined Analytic Functions]] · ↑ [[· 2 Analytic Functions]] · [[§30 The Exponential Function]] →
+← [[§28★ Uniquely Determined Analytic Functions]] · ↑ [[· 2 Analytic Functions]] · [[§29a The Function 1∕z]] →
 
 *Brown–Churchill, Section 29.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*

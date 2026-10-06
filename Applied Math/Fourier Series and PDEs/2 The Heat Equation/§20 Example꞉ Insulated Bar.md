@@ -51,7 +51,7 @@ $$
 
 ## The Eigenvalue Problem
 
-> [!definition] Definition §20.1: Eigenvalue Problem; Eigenvalues; Eigenfunctions
+> [!definition] Definition §20.1: Eigenvalue Problem
 > A homogeneous differential equation for $\phi$ containing a parameter, together with homogeneous boundary conditions, such as
 >
 > $$
@@ -62,11 +62,18 @@ $$
 > \phi'(0) = 0, \qquad \phi'(a) = 0 , \qquad (7)
 > $$
 >
-> is called an **eigenvalue problem**. The values of the parameter $\lambda^2$ for which nonzero solutions of (6)–(7) exist are the **eigenvalues**, and the corresponding nonzero solutions are the **eigenfunctions**. The significant parameter is $\lambda^2$, not $\lambda$; the square is used only for convenience. Any constant multiple of an eigenfunction is again an eigenfunction.
+> is called an **eigenvalue problem**.
 >
 > *Powers: 2.4 (text)*
 
 ^def-20-1
+
+> [!definition] Definition §20.1: Eigenvalues and Eigenfunctions
+> The values of the parameter $\lambda^2$ for which nonzero solutions of an eigenvalue problem such as (6)–(7) ([[§20 Example꞉ Insulated Bar#^def-20-1|Definition §20.1]]) exist are the **eigenvalues**, and the corresponding nonzero solutions are the **eigenfunctions**. The significant parameter is $\lambda^2$, not $\lambda$; the square is used only for convenience. Any constant multiple of an eigenfunction is again an eigenfunction.
+>
+> *Powers: 2.4 (text)*
+
+^def-20-new1
 
 The problem $\phi'' + \lambda^2\phi = 0$, $\phi(0) = \phi(a) = 0$ of [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|Theorem §19.2]] was already an eigenvalue problem (with eigenvalues $(n\pi/a)^2$), and so is the Euler buckling problem of [[§3★ Boundary Value Problems#^ex-3-4|Example §3.4]], whose eigenvalues are those of [[§3★ Boundary Value Problems#^prop-3-3|Proposition §3.3]]. The term itself was introduced in [[§3★ Boundary Value Problems#^def-3-3|Definition §3.3]].
 
@@ -98,7 +105,7 @@ The problem $\phi'' + \lambda^2\phi = 0$, $\phi(0) = \phi(a) = 0$ of [[§19 Exam
 
 ^pf-20-1
 
-*Uses:* [[§20 Example꞉ Insulated Bar#^def-20-1|Def. §20.1]], [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]], [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|331 Thm. §13.2]]
+*Uses:* [[§20 Example꞉ Insulated Bar#^def-20-1|Def. §20.1]], [[§20 Example꞉ Insulated Bar#^def-20-new1|Def. §20.1]], [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]], [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|331 Thm. §13.2]]
 
 ## The Solution
 

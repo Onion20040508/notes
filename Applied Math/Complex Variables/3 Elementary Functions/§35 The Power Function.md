@@ -95,18 +95,23 @@ of the logarithm is used, $\log z$ is single-valued and analytic in the indicate
 
 *Uses:* [[§35 The Power Function#^def-35-1|Def. §35.1]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§30 The Exponential Function#^thm-30-2|§30.2]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§31 The Logarithmic Function#^prop-31-2|§31.2]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
-> [!definition] Definition §35.2: Principal Value and Principal Branch of z^c
+> [!definition] Definition §35.2: Principal Value of z^c
 > The **principal value** of $z^c$ occurs when $\log z$ is replaced by $\operatorname{Log} z$ in definition (1):
 >
 > $$
 > \text{P.V. } z^c = e^{c\operatorname{Log} z} . \qquad (3)
 > $$
 >
+> *B&C: Sec. 35, Equation (3)*
+
+^def-35-2
+
+> [!definition] Definition §35.3: Principal Branch of z^c
 > Equation (3) also defines the **principal branch** of $z^c$ on the domain $|z| > 0$, $-\pi < \operatorname{Arg} z < \pi$.
 >
 > *B&C: Sec. 35, Equation (3)*
 
-^def-35-2
+^def-35-new1
 
 ## Exponentials with Base c
 

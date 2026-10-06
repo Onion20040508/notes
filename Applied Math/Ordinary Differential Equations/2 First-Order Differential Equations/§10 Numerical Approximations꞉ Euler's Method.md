@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 2.7.*
 
-If $f$ and $\partial f/\partial y$ are continuous, the initial value problem $y' = f(t, y)$, $y(t_0) = y_0$ has a unique solution near $t_0$ ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]), but for the vast majority of equations it cannot be found by symbolic manipulation: the linear, separable and exact equations of §4–§9 are the main exceptions. A direction field shows the solutions qualitatively but gives no numbers. Euler's tangent line method turns the direction field into numbers: follow the tangent line for a short step, recompute the slope, and repeat. This section develops the method, tests it on two problems with known solutions, and explains why it works well for one and badly for the other: Euler's method is always following a neighbouring solution, and what matters is whether neighbouring solutions converge or diverge.
+If $f$ and $\partial f/\partial y$ are continuous, the initial value problem $y' = f(t, y)$, $y(t_0) = y_0$ has a unique solution near $t_0$ ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]), but for the vast majority of equations it cannot be found by symbolic manipulation: the linear, separable and exact equations of [[§4 Linear Differential Equations; Method of Integrating Factors|§4]]–[[§9a Integrating Factors for Nonexact Equations|§9a]] are the main exceptions. A direction field shows the solutions qualitatively but gives no numbers. Euler's tangent line method turns the direction field into numbers: follow the tangent line for a short step, recompute the slope, and repeat. This section develops the method, tests it on two problems with known solutions, and explains why it works well for one and badly for the other: Euler's method is always following a neighbouring solution, and what matters is whether neighbouring solutions converge or diverge.
 
 ## The Tangent Line Method
 
@@ -170,7 +170,7 @@ To continue, we do not know $\phi(t_1)$, so we use $y_1$ in its place and constr
 > | $4.0$ | $4042.122$ | $5633.351$ | $6755.175$ | $7575.577$ | $8197.884$ |
 > | $5.0$ | $25026.95$ | $37897.43$ | $47555.35$ | $54881.32$ | $60573.53$ |
 >
-> Again accuracy improves as $h$ decreases: at $t = 1$ the percentage error drops from $17.3\%$ ($h = 0.1$) to $2.1\%$ ($h = 0.01$). But for fixed $h$ the error grows fairly rapidly with $t$: even with $h = 0.01$ the error at $t = 5$ is $9.4\%$, and it is much larger for larger step sizes. Such errors are too large for most applications; one would need still smaller steps, or to restrict the computation to a short interval near the initial point. Euler's method is much less effective here than in Example §10.2.
+> Again accuracy improves as $h$ decreases: at $t = 1$ the percentage error drops from $17.3\%$ ($h = 0.1$) to $2.1\%$ ($h = 0.01$). But for fixed $h$ the error grows fairly rapidly with $t$: even with $h = 0.01$ the error at $t = 5$ is $9.4\%$, and it is much larger for larger step sizes. Such errors are too large for most applications; one would need still smaller steps, or to restrict the computation to a short interval near the initial point. Euler's method is much less effective here than in [[§10 Numerical Approximations꞉ Euler's Method#^ex-10-2|Example §10.2]].
 >
 > *BDP: Example 2.7.3*
 

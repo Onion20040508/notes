@@ -74,6 +74,8 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ^ex-27-2
 
+*Chain: earlier in [[§20a y″ − y = 0, y″ + 5y′ + 6y = 0, 2t²y″ + 3ty′ − y = 0 and u″ + ⅛u′ + u = 0|Chapter 3]] (the spring of [[§19 Mechanical and Electrical Vibrations#^ex-19-4|Example §19.4]] and [[§20 Forced Periodic Vibrations#^ex-20-2|Example §20.2]]).*
+
 > [!theorem] Proposition §27.1: An nth-Order Equation as a First-Order System
 > Consider the $n$th order equation
 >

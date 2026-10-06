@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, math341]
 
 *Powers, Section 2.10 · MAT 341 lectures 10.17, 10.22, 10.24 · HW 9 · Practice Midterm 2.*
 
-A very long rod can be treated as semi-infinite, extending from $0$ to $\infty$; this is also how one suppresses the influence of a far boundary condition that is complicated or unknown. The right-hand boundary condition is then replaced by the requirement that the temperature stay bounded. Separation of variables still works, but it leads to a *singular* eigenvalue problem in which every $\lambda > 0$ is allowed, so the sum over eigenvalues becomes an integral over $\lambda$, and the initial condition is met by the Fourier sine integral ([[§14 Fourier Integral#^def-14-2|Definition §14.2]]). Physically the model describes a long bar whose end is held at a fixed temperature, or diffusion from a surface into a deep medium; it is a valid approximation for $x$ much smaller than the true length.
+A very long rod can be treated as semi-infinite, extending from $0$ to $\infty$; this is also how one suppresses the influence of a far boundary condition that is complicated or unknown. The right-hand boundary condition is then replaced by the requirement that the temperature stay bounded. Separation of variables still works, but it leads to a *singular* eigenvalue problem in which every $\lambda > 0$ is allowed, so the sum over eigenvalues becomes an integral over $\lambda$, and the initial condition is met by the Fourier sine integral ([[§14 Fourier Integral#^def-14-new2|Definition §14.2]]). Physically the model describes a long bar whose end is held at a fixed temperature, or diffusion from a surface into a deep medium; it is a valid approximation for $x$ much smaller than the true length.
 
 ## The Singular Eigenvalue Problem
 
@@ -94,7 +94,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 ^thm-26-2
 
 > [!proof]+ Proof
-> **The coefficient.** Powers chooses $B$ so that the initial condition holds: at $t = 0$, (9) becomes $\int_0^\infty B(\lambda)\sin(\lambda x)\,d\lambda = f(x)$, which is the Fourier sine integral representation of $f$ ([[§14 Fourier Integral#^def-14-2|Definition §14.2]]), with exactly the coefficient (10). Under the hypotheses on $f$, [[§14 Fourier Integral#^cor-14-2|Corollary §14.2]] gives the value $\frac12(f(x+) + f(x-))$. (Negative values of $\lambda$ need not be included; they give no new solutions.)
+> **The coefficient.** Powers chooses $B$ so that the initial condition holds: at $t = 0$, (9) becomes $\int_0^\infty B(\lambda)\sin(\lambda x)\,d\lambda = f(x)$, which is the Fourier sine integral representation of $f$ ([[§14 Fourier Integral#^def-14-new2|Definition §14.2]]), with exactly the coefficient (10). Under the hypotheses on $f$, [[§14 Fourier Integral#^cor-14-2|Corollary §14.2]] gives the value $\frac12(f(x+) + f(x-))$. (Negative values of $\lambda$ need not be included; they give no new solutions.)
 >
 > **The differential equation.** (Powers asserts that (9) is then the solution; here is why the integral may be differentiated.) The coefficient is bounded: $|B(\lambda)| \le \frac2\pi\int_0^\infty |f|\,dx =: M$. Fix $t_1 > 0$. For $t \ge t_1$ the integrand of (9) and its partial derivatives in $x$ and $t$ are bounded by
 >
@@ -118,7 +118,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 
 ^pf-26-2
 
-*Uses:* [[§26 Semi-Infinite Rod#^prop-26-1|§26.1]], [[§14 Fourier Integral#^def-14-2|Def. §14.2]], [[§14 Fourier Integral#^cor-14-2|§14.2]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
+*Uses:* [[§26 Semi-Infinite Rod#^prop-26-1|§26.1]], [[§14 Fourier Integral#^def-14-new2|Def. §14.2]], [[§14 Fourier Integral#^cor-14-2|§14.2]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
 
 > [!remark]- Connections
 > - Differentiation under the integral sign by dominated convergence: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]. The integrals (9) and (10) are improper Riemann integrals in the sense of [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]]; for $t > 0$ the exponential factor makes (9) converge absolutely and very rapidly.

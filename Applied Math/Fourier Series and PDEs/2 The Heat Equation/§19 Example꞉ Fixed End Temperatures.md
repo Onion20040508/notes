@@ -62,9 +62,14 @@ $$
 
 ## Separation of Variables
 
-> [!definition] Definition §19.1: Separation of Variables; Product Solution; Trivial Solution
+> [!definition] Definition §19.1: Trivial Solution
 > Since the partial differential equation (8) and the boundary conditions (9), (10) are homogeneous, the function $w \equiv 0$ satisfies them. Because it is obvious and of no help in satisfying the initial condition, it is called the **trivial solution**.
 >
+> *Powers: 2.3 (text)*
+
+^def-19-1
+
+> [!definition] Definition §19.1: Separation of Variables; Product Solution
 > The **product method**, **separation of variables**, or **Fourier's method** seeks nontrivial solutions of the homogeneous equation and boundary conditions in the form of a **product**
 >
 > $$
@@ -75,7 +80,7 @@ $$
 >
 > *Powers: 2.3 (text)*
 
-^def-19-1
+^def-19-new1
 
 > [!theorem] Proposition §19.1: The Separated Equations
 > A product $w(x, t) = \phi(x)T(t)$, with neither factor identically zero, satisfies the heat equation (8) and the boundary conditions (9), (10) if and only if there is a constant $p$ (the **separation constant**) such that
@@ -123,7 +128,7 @@ $$
 
 ^pf-19-1
 
-*Uses:* [[§19 Example꞉ Fixed End Temperatures#^def-19-1|Def. §19.1]]
+*Uses:* [[§19 Example꞉ Fixed End Temperatures#^def-19-1|Def. §19.1]], [[§19 Example꞉ Fixed End Temperatures#^def-19-new1|Def. §19.1]]
 
 The task now is to solve (13) and satisfy the boundary conditions (14) while avoiding the trivial solution. Problems of this kind are called eigenvalue problems ([[§20 Example꞉ Insulated Bar#^def-20-1|Definition §20.1]]).
 
@@ -259,13 +264,13 @@ There are infinitely many product solutions, so an infinite series is needed to 
 >
 > (Powers sets aside the convergence questions; here is why term-by-term differentiation is valid for $t > 0$. The coefficients are bounded ([[§10 Operations on Fourier Series#^prop-10-8|Proposition §10.8]]): $|b_n| \le \frac2a\int_0^a|g|\,dx =: M$. Fix $t_0 > 0$. For $t \ge t_0$ and all $x$, the terms of the series for $w$, $w_x$, $w_{xx}$ and $w_t$ are bounded by $M$, $M\lambda_n$, $M\lambda_n^2$ and $Mk\lambda_n^2$ times $\exp(-\lambda_n^2kt_0)$, and $\sum_n n^2\exp(-n^2\pi^2kt_0/a^2)$ converges ([[Ratio Test|ratio test]]). By the Weierstrass M-test all four series converge uniformly on $0 \le x \le a$, $t \ge t_0$. In $x$: for fixed $t$ the sine coefficients $B_n(t) = b_ne^{-\lambda_n^2kt}$ satisfy $\sum n^2|B_n(t)| < \infty$, so $w(\cdot, t)$ has continuous derivatives $w_x$, $w_{xx}$ given by the differentiated series ([[§10 Operations on Fourier Series#^thm-10-7|Theorem §10.7]]). In $t$: for fixed $x$ let $G(t) = \sum_n b_n\sin(\lambda_nx)(-\lambda_n^2k)e^{-\lambda_n^2kt}$, a uniformly convergent series of continuous functions on $t \ge t_0$, hence continuous. Integrating term by term from $t_0$ to $t$ gives $\int_{t_0}^tG = w(x, t) - w(x, t_0)$, so $w_t = G$ by the fundamental theorem of calculus. This is 341 HW 3, Problem 3, with $a = \pi$, $k = 1$.)
 >
-> **Initial condition.** Of the four parts of the original problem, only the initial condition remains. At $t = 0$ the exponentials in (15) are all $1$, and the condition takes the form (16). This is a problem in Fourier series: (16) is the Fourier sine series of $g$ on $0 < x < a$ (the Fourier series of its odd periodic extension of period $2a$, [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]), whose coefficients are (17). If $g$ is sectionally smooth, this series converges to $g(x)$ at each point of $0 < x < a$ where $g$ is continuous and to $\frac12(g(x+) + g(x-))$ at a jump ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]). So the $w$ found satisfies all requirements set on it. (Even if $g$ does not satisfy these conditions, Powers notes that the solution arrived at is the best that can be done.)
+> **Initial condition.** Of the four parts of the original problem, only the initial condition remains. At $t = 0$ the exponentials in (15) are all $1$, and the condition takes the form (16). This is a problem in Fourier series: (16) is the Fourier sine series of $g$ on $0 < x < a$ (the Fourier series of its odd periodic extension of period $2a$, [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]), whose coefficients are (17). If $g$ is sectionally smooth, this series converges to $g(x)$ at each point of $0 < x < a$ where $g$ is continuous and to $\frac12(g(x+) + g(x-))$ at a jump ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]). So the $w$ found satisfies all requirements set on it. (Even if $g$ does not satisfy these conditions, Powers notes that the solution arrived at is the best that can be done.)
 >
 > **The original problem.** By [[§18 Steady-State Temperatures#^prop-18-1|Proposition §18.1]], $u = v + w$ satisfies (1)–(4).
 
 ^pf-19-5
 
-*Uses:* [[§19 Example꞉ Fixed End Temperatures#^prop-19-3|§19.3]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§18 Steady-State Temperatures#^prop-18-1|§18.1]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]], [[§10 Operations on Fourier Series#^prop-10-8|§10.8]], [[§10 Operations on Fourier Series#^thm-10-7|§10.7]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]], [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]], [[§74 The Ratio and Root Tests#^thm-74-1|Calc Thm. §74.1]] (ratio test)
+*Uses:* [[§19 Example꞉ Fixed End Temperatures#^prop-19-3|§19.3]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§18 Steady-State Temperatures#^prop-18-1|§18.1]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]], [[§10 Operations on Fourier Series#^prop-10-8|§10.8]], [[§10 Operations on Fourier Series#^thm-10-7|§10.7]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]], [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]], [[§74 The Ratio and Root Tests#^thm-74-1|Calc Thm. §74.1]] (ratio test)
 
 > [!remark]- Connections
 > - The M-test and term-by-term integration of a uniformly convergent series: [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]].

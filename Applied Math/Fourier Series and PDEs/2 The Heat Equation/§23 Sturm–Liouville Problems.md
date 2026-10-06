@@ -93,18 +93,25 @@ $$
 
 To guarantee that eigenfunctions exist and that the integrations by parts are legitimate, Powers imposes conditions on the coefficients.
 
-> [!definition] Definition §23.1: Regular Sturm–Liouville Problem; Eigenvalue; Eigenfunction
+> [!definition] Definition §23.1: Regular Sturm–Liouville Problem
 > The problem (5)–(7) is called a **regular Sturm–Liouville problem** if the following conditions are fulfilled:
 > - (a) $s(x)$, $s'(x)$, $q(x)$ and $p(x)$ are continuous for $l \le x \le r$;
 > - (b) $s(x) > 0$ and $p(x) > 0$ for $l \le x \le r$;
 > - (c) the $\alpha$'s and $\beta$'s are nonnegative, and $\alpha_1^2 + \alpha_2^2 > 0$, $\beta_1^2 + \beta_2^2 > 0$;
 > - (d) the parameter $\lambda$ occurs only where shown.
 >
-> A number $\lambda^2$ for which (5)–(7) has a solution $\phi$ that is not identically zero is an **eigenvalue**, and such a $\phi$ is an **eigenfunction** corresponding to $\lambda^2$. The function $p(x)$ is the **weight function**.
+> The function $p(x)$ is the **weight function**.
 >
 > *Powers: 2.7, Definition; Source: 341 lecture 10.10*
 
 ^def-23-1
+
+> [!definition] Definition §23.1: Eigenvalue and Eigenfunction
+> A number $\lambda^2$ for which (5)–(7) has a solution $\phi$ that is not identically zero is an **eigenvalue** of the regular Sturm–Liouville problem ([[§23 Sturm–Liouville Problems#^def-23-1|Definition §23.1]]), and such a $\phi$ is an **eigenfunction** corresponding to $\lambda^2$.
+>
+> *Powers: 2.7, Definition; Source: 341 lecture 10.10*
+
+^def-23-new1
 
 > [!remark] Remark: What the Conditions Do
 > - Condition (a) and the first half of (b) guarantee that (5) has solutions with continuous first and second derivatives on the closed interval: dividing by $s > 0$ gives $\phi'' + (s'/s)\phi' + \big((\lambda^2p - q)/s\big)\phi = 0$ with continuous coefficients, and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]] applies. In particular $s(l)$ and $s(r)$ must be positive, not zero; when $s$ vanishes at an end (Bessel's and Legendre's equations, [[§23 Sturm–Liouville Problems#^ex-23-2|Example §23.2]]) the problem is *singular*.
@@ -179,7 +186,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 
 ^pf-23-2
 
-*Uses:* [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^prop-23-1|§23.1]]
+*Uses:* [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^def-23-new1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^prop-23-1|§23.1]]
 
 > [!remark]- Connections
 > - Finite-dimensional version: eigenvectors of a symmetric matrix for distinct eigenvalues are orthogonal, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|235 Thm. §48.1]], by the same one-line computation; for self-adjoint operators on an inner product space ([[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), and more generally normal ones, it is [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]. See the remark below for the dictionary.
@@ -226,7 +233,7 @@ Powers writes the eigenvalue as $\lambda^2$ and orders the eigenvalues, which pr
 
 ^pf-23-3
 
-*Uses:* [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]], [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|331 Thm. §14.6]]
+*Uses:* [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]], [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^def-23-new1|Def. §23.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|331 Thm. §14.6]]
 
 > [!remark]- Connections
 > - The same argument for a self-adjoint operator, $\lambda\|v\|^2 = \langle Tv, v\rangle = \langle v, Tv\rangle = \bar\lambda\|v\|^2$: [[§22 Self-Adjoint and Normal Operators#^ladr-7-12|LADR 7.12]]. Matrix versions: part (a) of [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (real symmetric) and [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (Hermitian).
@@ -254,7 +261,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 
 ^pf-23-4
 
-*Uses:* [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^prop-23-1|§23.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]]
+*Uses:* [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^def-23-new1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^prop-23-1|§23.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]]
 
 > [!theorem] Theorem §23.5: Properties of the Eigenvalues
 > - (a) The regular Sturm–Liouville problem has an infinite number of eigenvalues, and $\lambda_n^2 \to \infty$ as $n \to \infty$.

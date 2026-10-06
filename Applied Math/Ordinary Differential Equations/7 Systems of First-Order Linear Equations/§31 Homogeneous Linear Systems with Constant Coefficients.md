@@ -17,19 +17,47 @@ For a system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with a constant matrix $\mathb
 
 For $n = 1$ the system is $x' = ax$, with solutions $x = ce^{at}$. If $a \ne 0$, the only constant solution is $x = 0$. If $a < 0$, every solution approaches $0$ as $t$ increases; if $a > 0$, every solution other than $x = 0$ moves away from it.
 
-> [!definition] Definition §31.1: Equilibrium Solution; Asymptotically Stable, Unstable
-> An **equilibrium solution** of $\mathbf{x}' = \mathbf{A}\mathbf{x}$ is a constant solution; the equilibrium solutions are the solutions of $\mathbf{A}\mathbf{x} = \mathbf{0}$. Unless stated otherwise we assume $\det\mathbf{A} \ne 0$, so that $\mathbf{x} = \mathbf{0}$ is the only one ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]]). The equilibrium $\mathbf{x} = \mathbf{0}$ is **asymptotically stable** if all other solutions approach it as $t$ increases, and **unstable** if (almost all) other solutions depart from it as $t$ increases.
+> [!definition] Definition §31.1: Equilibrium Solution
+> An **equilibrium solution** of $\mathbf{x}' = \mathbf{A}\mathbf{x}$ is a constant solution; the equilibrium solutions are the solutions of $\mathbf{A}\mathbf{x} = \mathbf{0}$. Unless stated otherwise we assume $\det\mathbf{A} \ne 0$, so that $\mathbf{x} = \mathbf{0}$ is the only one ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]]).
 >
 > *BDP: 7.5 (text)*
 
 ^def-31-1
 
-> [!definition] Definition §31.2: Phase Plane, Direction Field, Trajectory, Phase Portrait
-> For $n = 2$, solutions $\mathbf{x}(t) = (x_1(t), x_2(t))^T$ are visualized in the $x_1x_2$-plane, the **phase plane**. Plotting the vector $\mathbf{A}\mathbf{x}$ at many points $\mathbf{x}$ gives a **direction field** of tangent vectors to solutions. The curve traced by a solution is a **trajectory** (or solution curve), and a plot of a representative sample of trajectories is a **phase portrait**.
+> [!definition] Definition §31.1: Asymptotically Stable and Unstable Equilibrium
+> For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\det\mathbf{A} \ne 0$: the equilibrium $\mathbf{x} = \mathbf{0}$ is **asymptotically stable** if all other solutions approach it as $t$ increases, and **unstable** if (almost all) other solutions depart from it as $t$ increases.
+>
+> *BDP: 7.5 (text)*
+
+^def-31-new1
+
+> [!definition] Definition §31.2: Phase Plane
+> For $n = 2$, solutions $\mathbf{x}(t) = (x_1(t), x_2(t))^T$ are visualized in the $x_1x_2$-plane, the **phase plane**.
 >
 > *BDP: 7.5 (text)*
 
 ^def-31-2
+
+> [!definition] Definition §31.2: Direction Field of a System
+> Plotting the vector $\mathbf{A}\mathbf{x}$ at many points $\mathbf{x}$ of the phase plane ($n = 2$) gives a **direction field** of tangent vectors to solutions.
+>
+> *BDP: 7.5 (text)*
+
+^def-31-new2
+
+> [!definition] Definition §31.2: Trajectory
+> The curve traced by a solution in the phase plane is a **trajectory** (or solution curve).
+>
+> *BDP: 7.5 (text)*
+
+^def-31-new3
+
+> [!definition] Definition §31.2: Phase Portrait
+> For $n = 2$, a plot of a representative sample of trajectories is a **phase portrait**.
+>
+> *BDP: 7.5 (text)*
+
+^def-31-new4
 
 > [!remark]- Connections
 > - See also: [[§62 Predator-Prey Systems#^def-62-3|Calc Def. §62.3]] (Stewart's phase plane, phase trajectories and phase portrait, for the nonlinear predator–prey system).

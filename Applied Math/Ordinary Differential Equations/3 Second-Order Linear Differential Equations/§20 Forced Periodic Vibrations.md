@@ -223,7 +223,7 @@ Resonance can be harmful (structures such as buildings and bridges can fail cata
 > - **$\omega = 1$ (resonant).** $\Delta = \frac18$, so $R = 24$, eight times the static displacement, and $\delta = \pi/2$: the predicted quarter-period lag.
 > - **$\omega = 2$ (high).** $\Delta = \sqrt{9 + \frac{1}{16}} \approx 3.01040$, so $R \approx 0.99655$, about one third of the static displacement, and $\delta = \pi - \arctan\frac{0.25}{3} \approx 3.0585$: nearly opposite in phase.
 >
-> In each case the full solution of (16) is the transient of Example §19.4's type, decaying like $e^{-t/16}$, plus $R\cos(\omega t - \delta)$; once the transient has died out, the motion is the steady state with these amplitudes and phases.
+> In each case the full solution of (16) is the transient of [[§19 Mechanical and Electrical Vibrations#^ex-19-4|Example §19.4]]'s type, decaying like $e^{-t/16}$, plus $R\cos(\omega t - \delta)$; once the transient has died out, the motion is the steady state with these amplitudes and phases.
 >
 > *BDP: Example 3.8.2*
 

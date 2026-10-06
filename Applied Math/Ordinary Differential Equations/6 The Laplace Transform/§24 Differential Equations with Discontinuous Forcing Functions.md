@@ -122,6 +122,8 @@ So $y''$ jumps by $\frac12$ at $t = 5$, and in the same way by $-\frac12$ at $t 
 
 *Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]] (existence and uniqueness, Theorem 3.2.1), [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]], [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|§27.1]] (order $n$)
 
+*Forward reference: [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] and [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|Proposition §27.1]], used only for order $n$, come later, in Chapter 7 ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]).*
+
 For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in $g$ divided by $a$. In [[§24 Differential Equations with Discontinuous Forcing Functions#^ex-24-1|Example §24.1]] ($a = 2$) this is $\frac12$ at $t = 5$ and $-\frac12$ at $t = 20$. The more regular $g$ is, the more regular $y$ is: if $g$ is continuous but $g'$ jumps, then $y''$ is continuous and $y'''$ jumps ([[§24 Differential Equations with Discontinuous Forcing Functions#^ex-24-2|Example §24.2]]).
 
 ## More Examples

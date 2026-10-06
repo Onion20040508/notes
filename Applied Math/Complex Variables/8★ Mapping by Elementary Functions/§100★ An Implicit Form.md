@@ -120,6 +120,17 @@ B&C leaves the uniqueness to the exercises; it rests on counting fixed points.
 
 ## A Point at Infinity
 
+> [!remark] Remark: Why Deleting Works
+> B&C motivates the rule by continuity: replace $z_1$ by $1/z_1$ on the right of (1), clear fractions, and let $z_1 \to 0$:
+>
+> $$
+> \lim_{z_1\to0}\frac{(z - 1/z_1)(z_2 - z_3)}{(z - z_3)(z_2 - 1/z_1)}\cdot\frac{z_1}{z_1} = \lim_{z_1\to0}\frac{(z_1z - 1)(z_2 - z_3)}{(z - z_3)(z_1z_2 - 1)} = \frac{z_2 - z_3}{z - z_3} .
+> $$
+>
+> Each prescribed point occurs once in a numerator and once in a denominator of its side of (1), so the two factors containing it have ratio tending to $1$. The proof below checks the result directly.
+
+^rem-100-1
+
 > [!theorem] Proposition §100.4: Deleting the Factors at Infinity
 > If one of the prescribed points in the $z$ plane, or one in the $w$ plane, or one in each, is the point at infinity, the transformation is given by (1) with the two factors that contain that point deleted. For instance, when $z_1 = \infty$:
 >
@@ -136,17 +147,6 @@ B&C leaves the uniqueness to the exercises; it rests on counting fixed points.
 > *B&C: Sec. 100 (text)*
 
 ^prop-100-4
-
-> [!remark] Remark: Why Deleting Works
-> B&C motivates the rule by continuity: replace $z_1$ by $1/z_1$ on the right of (1), clear fractions, and let $z_1 \to 0$:
->
-> $$
-> \lim_{z_1\to0}\frac{(z - 1/z_1)(z_2 - z_3)}{(z - z_3)(z_2 - 1/z_1)}\cdot\frac{z_1}{z_1} = \lim_{z_1\to0}\frac{(z_1z - 1)(z_2 - z_3)}{(z - z_3)(z_1z_2 - 1)} = \frac{z_2 - z_3}{z - z_3} .
-> $$
->
-> Each prescribed point occurs once in a numerator and once in a denominator of its side of (1), so the two factors containing it have ratio tending to $1$. The proof below checks the result directly.
-
-^rem-100-1
 
 > [!proof]+ Proof
 > Let $R(z)$ be the right side of (1) and $L(w)$ the left side. As noted after Theorem §100.1, $R$ is the linear fractional transformation with $R(z_1) = 0$, $R(z_2) = 1$, $R(z_3) = \infty$. Delete the two factors containing a point at infinity:

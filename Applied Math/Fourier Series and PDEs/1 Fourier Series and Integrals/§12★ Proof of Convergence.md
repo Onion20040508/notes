@@ -122,6 +122,17 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 
 The theorem is [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]] (Powers 1.3), restated for period $2\pi$; [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5]] returns to period $2a$. Recall ([[§8 Convergence of Fourier Series#^def-8-4|Definition §8.4]]) that $f$ is **sectionally smooth** if $f$ is sectionally continuous, $f'$ exists except at finitely many points of each finite interval, and $f'$ is sectionally continuous. In particular the one-sided limits $f(x\pm)$ and $f'(x\pm) = \lim_{t \to x\pm} f'(t)$ exist at every $x$.
 
+> [!remark] Remark: The Idea of the Proof
+> The partial sum $S_N(x)$ is an average of the values $f(x + y)$ weighted by $\frac1\pi D_N(y)$, a weight of total mass $1$ (Lemma §12.1) with a tall peak at $y = 0$. So $S_N(x) - f(x)$ is the average of $f(x + y) - f(x)$ with the same weight. By Lemma §12.2 the weight is $\sin((N + \frac12)y)$ divided by $2\sin(\frac12 y)$, and the quotient
+>
+> $$
+> \frac{f(x + y) - f(x)}{2\sin(\frac12 y)}
+> $$
+>
+> is a fixed function of $y$, independent of $N$. Then $S_N(x) - f(x)$ is essentially a Fourier sine coefficient of that function, which tends to $0$ by Lemma §12.3, provided the function is sectionally continuous. Away from $y = 0$ it obviously is. At $y = 0$ numerator and denominator both vanish, and the quotient stays bounded exactly when $f$ has one-sided derivatives at $x$; this is where sectional smoothness enters.
+
+^rem-12-1
+
 > [!theorem] Theorem §12.4: Fourier Convergence Theorem
 > If $f(x)$ is sectionally smooth and periodic with period $2\pi$, then the Fourier series corresponding to $f$ converges at every $x$, and the sum of the series is
 >
@@ -134,17 +145,6 @@ The theorem is [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]] (Pow
 > *Powers: 1.7, Theorem (stated in 1.3)*
 
 ^thm-12-4
-
-> [!remark] Remark: The Idea of the Proof
-> The partial sum $S_N(x)$ is an average of the values $f(x + y)$ weighted by $\frac1\pi D_N(y)$, a weight of total mass $1$ (Lemma §12.1) with a tall peak at $y = 0$. So $S_N(x) - f(x)$ is the average of $f(x + y) - f(x)$ with the same weight. By Lemma §12.2 the weight is $\sin((N + \frac12)y)$ divided by $2\sin(\frac12 y)$, and the quotient
->
-> $$
-> \frac{f(x + y) - f(x)}{2\sin(\frac12 y)}
-> $$
->
-> is a fixed function of $y$, independent of $N$. Then $S_N(x) - f(x)$ is essentially a Fourier sine coefficient of that function, which tends to $0$ by Lemma §12.3, provided the function is sectionally continuous. Away from $y = 0$ it obviously is. At $y = 0$ numerator and denominator both vanish, and the quotient stays bounded exactly when $f$ has one-sided derivatives at $x$; this is where sectional smoothness enters.
-
-^rem-12-1
 
 > [!proof]- Proof
 > Let the point $x$ be chosen; it remains fixed. Let $S_N$ be the partial sum of the Fourier series of $f$,

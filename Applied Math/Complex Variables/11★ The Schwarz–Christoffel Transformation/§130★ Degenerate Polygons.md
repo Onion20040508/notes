@@ -58,6 +58,8 @@ A degenerate polygon has one or more vertices at infinity: a half strip, a strip
 
 ^ex-130-1
 
+*Chain: the sine half strip earlier in [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)#The Sine Half Strip|Chapter 8]] · [[§126a The Heated Segment, the Quadrant, the Sine Half Strip and Flow Around a Corner#The Sine Half Strip|Chapter 10]]*
+
 > [!example] Example §130.2: A Strip and the Logarithm
 > Map the half plane $y > 0$ onto the strip $0 < v < \pi$.
 >

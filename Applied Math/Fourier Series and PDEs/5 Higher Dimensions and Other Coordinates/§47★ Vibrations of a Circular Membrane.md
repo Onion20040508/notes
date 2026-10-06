@@ -144,7 +144,7 @@ $$
 
 *Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]], [[§44★ Problems in Polar Coordinates#^thm-44-2|§44.2]], [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]]
 
-> [!definition] Definition §47.1: Standing Waves of the Membrane; Frequencies
+> [!definition] Definition §47.1: Standing Waves of the Membrane
 > The product solutions of (11)–(14),
 >
 > $$
@@ -157,11 +157,18 @@ $$
 > J_0(\lambda_{0n}r)\cos(\lambda_{0n}ct), \qquad J_0(\lambda_{0n}r)\sin(\lambda_{0n}ct) , \qquad (24)
 > $$
 >
-> are the **standing waves** (normal modes) of the membrane. The mode with eigenvalue $\lambda_{mn}^2$ vibrates with **frequency** $\lambda_{mn}c = \alpha_{mn}c/a$ in radians per unit time, as for the string ([[§30 Solution of the Vibrating String Problem#^def-30-2|Definition §30.2]]).
+> are the **standing waves** (normal modes) of the membrane.
 >
 > *Powers: 5.7, Equations (23)–(24)*
 
 ^def-47-1
+
+> [!definition] Definition §47.1: Frequencies of the Membrane
+> In the standing waves of [[§47★ Vibrations of a Circular Membrane#^def-47-1|Definition §47.1]], the mode with eigenvalue $\lambda_{mn}^2$ vibrates with **frequency** $\lambda_{mn}c = \alpha_{mn}c/a$ in radians per unit time, as for the string ([[§30 Solution of the Vibrating String Problem#^def-30-2|Definition §30.2]]).
+>
+> *Powers: 5.7, Equations (23)–(24)*
+
+^def-47-new1
 
 > [!definition] Definition §47.2: Nodal Curves
 > The **nodal curves** of an eigenfunction $\phi_{mn}(r, \theta)$ are the curves where $\phi_{mn}(r, \theta) = 0$. In the corresponding standing wave these points of the membrane do not move, and adjacent regions bulge up or down according to the sign of $\phi_{mn}$.
@@ -330,7 +337,7 @@ The coefficients come from an orthogonality principle.
 >
 > It changes sign across each nodal curve, so the $12$ regions bulge alternately up and down.
 >
-> **(d)** By [[§47★ Vibrations of a Circular Membrane#^def-47-1|Definition §47.1]], the displacement $u = \phi_{32}(r, \theta)\big(C\cos(\lambda_{32}ct) + D\sin(\lambda_{32}ct)\big)$ has the frequency
+> **(d)** By [[§47★ Vibrations of a Circular Membrane#^def-47-new1|Definition §47.1]], the displacement $u = \phi_{32}(r, \theta)\big(C\cos(\lambda_{32}ct) + D\sin(\lambda_{32}ct)\big)$ has the frequency
 >
 > $$
 > \lambda_{32}c = 9.761\,\frac{c}{a} \ \text{radians per unit time}, \qquad\text{that is,}\qquad \frac{9.761}{2\pi}\,\frac{c}{a} = 1.554\,\frac{c}{a} \ \text{cycles per unit time},

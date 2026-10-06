@@ -96,7 +96,7 @@ which will be used again and again: at the singular point $r = 0$ of (6) it take
 
 ^pf-46-1
 
-*Uses:* [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]] (the zeros $\alpha_n$), [[§45★ Bessel's Equation#^def-45-4|Def. §45.4]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]]
+*Uses:* [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]] (the zeros $\alpha_n$), [[§45★ Bessel's Equation#^def-45-4|Def. §45.4]], [[§45★ Bessel's Equation#^def-45-new1|Def. §45.4]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]]
 
 ![[m341-46-2.svg]]
 *The first three eigenfunctions $J_0(\lambda_n r)$, $\lambda_n = \alpha_n/a$, of Proposition §46.1. All equal $1$ on the axis and $0$ at the wall; $J_0(\lambda_n r)$ has $n - 1$ interior zeros, like $\sin(n\pi x/a)$, but its oscillations are not equally spaced and their amplitude decreases away from the axis.*

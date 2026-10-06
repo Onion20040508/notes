@@ -77,6 +77,9 @@ tags: [linear-algebra]
 
 ^ladr-1-5
 
+> [!remark]- Connections
+> - The same move for vectors: [[§2 Definition of Vector Space#^ladr-1-27|Unique additive inverse]] makes $-v$ and $w-v$ meaningful.
+
 > [!definition] Definition 1.5b: 1∕α, division
 > Let $\alpha,\beta\in\C$.
 > - For $\alpha\neq 0$, $1/\alpha$ is the multiplicative inverse, the unique number with $\alpha(1/\alpha)=1$.
@@ -86,7 +89,6 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Well defined because of the uniqueness parts of [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]].
-> - The same move for vectors: [[§2 Definition of Vector Space#^ladr-1-27|Unique additive inverse]] makes $-v$ and $w-v$ meaningful.
 > - Computational version: [[§53 Complex Numbers#^def-53-2|235 Def. §53.2]] (subtraction) and [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]] (reciprocals and quotients, with worked examples).
 
 > [!remark] Notation 1.6: F (p. 4)

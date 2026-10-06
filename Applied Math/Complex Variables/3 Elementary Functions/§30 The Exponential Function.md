@@ -7,7 +7,7 @@ bc: "30"
 aliases: ["B&C 30"]
 tags: [complex-variables, math342]
 ---
-← [[§29★ Reflection Principle]] · ↑ [[· 3 Elementary Functions]] · [[§31 The Logarithmic Function]] →
+← [[§29c The Function z̄]] · ↑ [[· 3 Elementary Functions]] · [[§31 The Logarithmic Function]] →
 
 *Brown–Churchill, Section 30.*
 

@@ -64,7 +64,7 @@ The first consequence of uniform convergence is that the sum of a power series i
 
 ^pf-70-1
 
-*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|§69.3]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§18 Continuity#^prop-18-1|§18.1]] (polynomials are continuous)
+*Uses:* [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|§69.3]], [[§61 Convergence of Series#^def-61-3|Def. §61.3]], [[§61 Convergence of Series#^def-61-new1|Def. §61.4]], [[§18 Continuity#^prop-18-1|§18.1]] (polynomials are continuous)
 
 > [!remark]- Connections
 > - This is the special case for power series of "a uniform limit of continuous functions is continuous", [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]] and [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]; the real power-series version is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]]. The $\varepsilon/3$ argument above is the same proof, with the uniformity supplied by [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|Theorem §69.3]] on a slightly larger closed disk.

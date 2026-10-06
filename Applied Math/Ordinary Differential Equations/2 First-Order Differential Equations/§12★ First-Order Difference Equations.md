@@ -55,7 +55,7 @@ Unlike a differential equation, (1) with an initial condition always has exactly
 
 ^def-12-2
 
-> [!definition] Definition §12.2: Equilibrium Solution
+> [!definition] Definition §12.2: Equilibrium Solutions
 > Solutions of the difference equation (3) for which $y_n$ has the same value for all $n$ are **equilibrium solutions**. They are found by setting $y_{n+1}$ equal to $y_n$ in (3) and solving
 >
 > $$
@@ -378,7 +378,7 @@ In summary, (21) has two equilibrium solutions, $u_n = 0$, asymptotically stable
 For $\rho > 3$ neither equilibrium is stable, and the solutions of (21) show increasing complexity as $\rho$ increases.
 
 > [!definition] Definition §12.4: Exchange of Stability
-> For the logistic difference equation (21): at $\rho = 1$ the equilibrium solutions $u = 0$ and $u = (\rho - 1)/\rho$ cross, and stability passes from one to the other: an **exchange of stability**.
+> At $\rho = 1$ the equilibrium solutions $u = 0$ and $u = (\rho - 1)/\rho$ of the logistic difference equation (21) cross, and stability passes from one to the other: an **exchange of stability**.
 >
 > *BDP: 2.9 (text)*
 

@@ -66,16 +66,23 @@ Let $\mathbf{A}$ be real. Solutions $\mathbf{x} = \boldsymbol{\xi}e^{rt}$ of $\m
 
 ^ex-32-1
 
-> [!definition] Definition §32.1: Spiral Point; Center
+> [!definition] Definition §32.1: Spiral Point
 > Let the $2 \times 2$ real system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ have complex eigenvalues $\lambda \pm i\mu$, $\mu \ne 0$.
-> - If $\lambda \ne 0$, the origin is a **spiral point**. If $\lambda < 0$ the trajectories spiral in toward the origin and it is asymptotically stable; if $\lambda > 0$ they spiral out, become unbounded, and the origin is unstable.
-> - If $\lambda = 0$, the trajectories neither approach the origin nor become unbounded, but repeatedly traverse closed curves about it. The origin is then a **center**, and it is said to be **stable, but not asymptotically stable**.
+> If $\lambda \ne 0$, the origin is a **spiral point**. If $\lambda < 0$ the trajectories spiral in toward the origin and it is asymptotically stable; if $\lambda > 0$ they spiral out, become unbounded, and the origin is unstable.
+>
+> *BDP: 7.6 (text)*
+
+^def-32-1
+
+> [!definition] Definition §32.1: Center
+> Let the $2 \times 2$ real system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ have complex eigenvalues $\lambda \pm i\mu$, $\mu \ne 0$.
+> If $\lambda = 0$, the trajectories neither approach the origin nor become unbounded, but repeatedly traverse closed curves about it. The origin is then a **center**, and it is said to be **stable, but not asymptotically stable**.
 >
 > In each case the motion may be clockwise or counterclockwise, depending on the entries of $\mathbf{A}$.
 >
 > *BDP: 7.6 (text)*
 
-^def-32-1
+^def-32-new1
 
 ![[m331-32-1.svg]]
 *Trajectories computed from the real solutions. (a) Spiral point of [[§32 Complex-Valued Eigenvalues#^ex-32-1|Example §32.1]]: $\mathbf{u}$ through $(1, 0)$ (red), $\mathbf{v}$ through $(0, 1)$ (green), and other combinations $c_1\mathbf{u} + c_2\mathbf{v}$ (blue), all spiraling clockwise into the origin; each circuit shrinks by the factor $e^{-\pi} \approx 0.04$. (b) Center of [[§32 Complex-Valued Eigenvalues#^ex-32-2|Example §32.2]](b), $\mathbf{A} = \begin{pmatrix} -4 & 5 \\ -5 & 4 \end{pmatrix}$ with eigenvalues $\pm 3i$: every trajectory is an ellipse traversed clockwise with period $2\pi/3$; the red one passes through $(1.5, 0)$.*
@@ -187,7 +194,7 @@ So the two complex solutions carry the same information, and either one yields t
 > 2. **One eigenvector.** Find an eigenvector $\boldsymbol{\xi}$ for $r_1 = \lambda + i\mu$ only; one row of $\mathbf{A} - r_1\mathbf{I}$ suffices (the other row is a complex multiple of it). Split $\boldsymbol{\xi} = \mathbf{a} + i\mathbf{b}$.
 > 3. **Real solutions.** Expand $\boldsymbol{\xi}e^{\lambda t}(\cos\mu t + i\sin\mu t)$ and take real and imaginary parts, or use (17) directly.
 > 4. **General solution.** $\mathbf{x} = c_1\mathbf{u}(t) + c_2\mathbf{v}(t)$ (plus terms for the other eigenvalues). For an initial value problem, $\mathbf{x}(0) = c_1\mathbf{a} + c_2\mathbf{b}$.
-> 5. **Type and direction.** The sign of $\lambda$ decides spiral in, spiral out or center ([[§32 Complex-Valued Eigenvalues#^def-32-1|Definition §32.1]]). For the direction of rotation, compute $\mathbf{A}\mathbf{x}$ at one convenient point, such as $(1, 0)^T$ or $(0, 1)^T$, and see which way the tangent vector turns around the origin.
+> 5. **Type and direction.** The sign of $\lambda$ decides spiral in, spiral out ([[§32 Complex-Valued Eigenvalues#^def-32-1|Definition §32.1]]) or center ([[§32 Complex-Valued Eigenvalues#^def-32-new1|Definition §32.1]]). For the direction of rotation, compute $\mathbf{A}\mathbf{x}$ at one convenient point, such as $(1, 0)^T$ or $(0, 1)^T$, and see which way the tangent vector turns around the origin.
 
 ^rem-32-1
 
@@ -229,14 +236,14 @@ So the two complex solutions carry the same information, and either one yields t
 > \mathbf{y}(t) = e^{\lambda t}\begin{pmatrix} \cos\mu t & \sin\mu t \\ -\sin\mu t & \cos\mu t \end{pmatrix}\begin{pmatrix} c_1 \\ c_2 \end{pmatrix},
 > $$
 >
-> with $\mathbf{T} = [\,\mathbf{a}\ \ \mathbf{b}\,]$ invertible because $\mathbf{a}$, $\mathbf{b}$ are independent (proof of Theorem §32.2). The matrix in $\mathbf{y}(t)$ is a rotation, so $\mathbf{y}(t)$ is the vector $(c_1, c_2)$ rotated by the angle $-\mu t$ and scaled by $e^{\lambda t}$: in the coordinates $\mathbf{y}$ the trajectory is a spiral $|\mathbf{y}(t)| = e^{\lambda t}\sqrt{c_1^2 + c_2^2}$ turning at constant angular speed $|\mu|$.
+> with $\mathbf{T} = [\,\mathbf{a}\ \ \mathbf{b}\,]$ invertible because $\mathbf{a}$, $\mathbf{b}$ are independent (proof of [[§32 Complex-Valued Eigenvalues#^thm-32-2|Theorem §32.2]]). The matrix in $\mathbf{y}(t)$ is a rotation, so $\mathbf{y}(t)$ is the vector $(c_1, c_2)$ rotated by the angle $-\mu t$ and scaled by $e^{\lambda t}$: in the coordinates $\mathbf{y}$ the trajectory is a spiral $|\mathbf{y}(t)| = e^{\lambda t}\sqrt{c_1^2 + c_2^2}$ turning at constant angular speed $|\mu|$.
 > - $\lambda < 0$: $\mathbf{y}(t) \to \mathbf{0}$, so $\mathbf{x}(t) \to \mathbf{0}$ while winding around the origin infinitely often (the invertible linear map $\mathbf{T}$ carries a curve winding around $\mathbf{0}$ to one winding around $\mathbf{0}$), and as in the node case $|\mathbf{x}(t)| \le \|\mathbf{T}\|\,\|\mathbf{T}^{-1}\|\,|\mathbf{x}(0)|$ for $t \ge 0$: asymptotically stable spiral point.
 > - $\lambda > 0$: $|\mathbf{y}(t)| \to \infty$ for $\mathbf{x} \ne \mathbf{0}$: unstable spiral point.
 > - $\lambda = 0$: $\mathbf{y}(t)$ runs around a circle with period $2\pi/|\mu|$, so $\mathbf{x}(t) = \mathbf{T}\mathbf{y}(t)$ runs around an ellipse, the image of the circle under $\mathbf{T}$: a closed curve, periodic in time. Solutions starting near $\mathbf{0}$ stay near it ($|\mathbf{x}(t)| \le \|\mathbf{T}\|\,|\mathbf{y}(0)|$ and $|\mathbf{y}(0)| \le \|\mathbf{T}^{-1}\|\,|\mathbf{x}(0)|$) but do not approach it: stable, not asymptotically stable.
 
 ^pf-32-3
 
-*Uses:* [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|§31.2]], [[§32 Complex-Valued Eigenvalues#^thm-32-2|§32.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-1|Def. §31.1]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-3|Def. §31.3]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-4|Def. §31.4]], [[§32 Complex-Valued Eigenvalues#^def-32-1|Def. §32.1]]
+*Uses:* [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|§31.2]], [[§32 Complex-Valued Eigenvalues#^thm-32-2|§32.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-1|Def. §31.1]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-new1|Def. §31.1]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-3|Def. §31.3]], [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-4|Def. §31.4]], [[§32 Complex-Valued Eigenvalues#^def-32-1|Def. §32.1]], [[§32 Complex-Valued Eigenvalues#^def-32-new1|Def. §32.1]]
 
 > [!remark]- Connections
 > - See also: [[§38 Applications to Differential Equations#^def-38-2|235 Def. §38.2]] (attractor, repeller, saddle point for $\mathbf{x}' = A\mathbf{x}$) and [[§38 Applications to Differential Equations#^ex-38-3|235 Ex. §38.3]] (a spiral point in an RLC circuit). The discrete-time classification, with $|\lambda|$ compared to $1$ and spirals from complex eigenvalues: [[§37 Discrete Dynamical Systems#^prop-37-3|235 Prop. §37.3]] and [[§37 Discrete Dynamical Systems#^ex-37-4|235 Ex. §37.4]]. The coordinates $\mathbf{y}$ in the complex case are those of [[§36 Complex Eigenvalues#^thm-36-4|235 Thm. §36.4]].

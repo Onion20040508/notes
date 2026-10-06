@@ -170,8 +170,8 @@ The algebra of convergent series is inherited the same way; B&C leaves it to the
 
 ## Remainders and Power Series
 
-> [!definition] Definition §61.3: Remainder; Power Series
-> **(a)** If a series converges to $S$ and $S_N$ are its partial sums (2), the **remainder after $N$ terms** is
+> [!definition] Definition §61.3: Remainder
+> If a series converges to $S$ and $S_N$ are its partial sums (2), the **remainder after $N$ terms** is
 >
 > $$
 > \rho_N = S - S_N . \qquad (9)
@@ -179,7 +179,12 @@ The algebra of convergent series is inherited the same way; B&C leaves it to the
 >
 > Thus $S = S_N + \rho_N$, and since $|S_N - S| = |\rho_N - 0|$, **a series converges to $S$ if and only if its sequence of remainders tends to zero.**
 >
-> **(b)** A **power series** is a series of the form
+> *B&C: Sec. 61 (text)*
+
+^def-61-3
+
+> [!definition] Definition §61.4: Power Series
+> A **power series** is a series of the form
 >
 > $$
 > \sum_{n=0}^{\infty} a_n(z - z_0)^n = a_0 + a_1(z - z_0) + a_2(z - z_0)^2 + \cdots + a_n(z - z_0)^n + \cdots ,
@@ -189,7 +194,7 @@ The algebra of convergent series is inherited the same way; B&C leaves it to the
 >
 > *B&C: Sec. 61 (text)*
 
-^def-61-3
+^def-61-new1
 
 For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the first $N$ terms, $S_N(z) = \sum_{n=0}^{N-1} a_n(z - z_0)^n$; this keeps $\rho_N(z) = S(z) - S_N(z)$ the tail starting with the term of degree $N$.
 
@@ -220,7 +225,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 > \rho_N(z) = S(z) - S_N(z) = \frac{z^N}{1 - z}, \qquad |\rho_N(z)| = \frac{|z|^N}{|1 - z|} \qquad (z \ne 1) .
 > $$
 >
-> If $|z| < 1$, then $|z|^N \to 0$, so $\rho_N(z) \to 0$, and (10) holds by Definition §61.3(a).
+> If $|z| < 1$, then $|z|^N \to 0$, so $\rho_N(z) \to 0$, and (10) holds by [[§61 Convergence of Series#^def-61-3|Definition §61.3]].
 >
 > **Divergence for $|z| \ge 1$.** Then $|z^n| = |z|^n \ge 1$, so the terms do not tend to zero and the series diverges by Corollary §61.2. (B&C reads this off from $|\rho_N(z)| = |z|^N/|1 - z| \not\to 0$; that shows that the series does not converge *to* $1/(1 - z)$, and the term test shows that it converges to nothing else either, including at $z = 1$, where $S_N = N$.)
 >

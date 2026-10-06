@@ -14,6 +14,11 @@ tags: [complex-variables, math342, extension]
 
 This section proves the extended Cauchy integral formula of [[§55 An Extension of the Cauchy Integral Formula|§55]], $f^{(n)}(z) = \frac{n!}{2\pi i}\int_C f(s)\,ds/(s - z)^{n+1}$. B&C verifies the cases $n = 1$ and $n = 2$ by estimating a difference quotient, the same idea as in the proof of the Cauchy integral formula: since $s$ stays on $C$, at a fixed positive distance from $z$, the factor $1/(s - z)$ can be differentiated under the integral sign with a bound that is uniform on $C$. For general $n$, B&C refers to other texts; here the general case is reduced to $n = 1$ by integrating by parts around $C$, once the cases $n = 1, 2$ have shown that all derivatives of $f$ are analytic. This is the vault's proof that an analytic function has derivatives of all orders, given by integrals.
 
+> [!remark] Remark: Why It Works
+> For $n = 1$ the difference quotient of $f$ at $z$ is an integral over $C$ of $f(s)$ times the difference quotient of $1/(s - z)$, which is $1/\big((s - z - \Delta z)(s - z)\big)$. This differs from $1/(s - z)^2$ by $\Delta z/\big((s - z - \Delta z)(s - z)^2\big)$, which is at most $|\Delta z|/\big((d - |\Delta z|)d^2\big)$ on all of $C$, where $d$ is the distance from $z$ to $C$. Multiplying by $\max|f|$ and the length of $C$ gives an error that tends to $0$ with $\Delta z$. Nothing about $f$ is used except that it is bounded on $C$ and represented by its Cauchy integral; this is why the same argument shows that any integral of Cauchy type is analytic ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^ex-56-1|Example §56.1]]).
+
+^rem-56-1
+
 > [!theorem] Theorem §56.1: Extended Cauchy Integral Formula
 > Let $f$ be analytic inside and on a simple closed contour $C$, taken in the positive sense. If $z$ is any point interior to $C$, then $f$ has derivatives of all orders at $z$, and
 >
@@ -26,11 +31,6 @@ This section proves the extended Cauchy integral formula of [[§55 An Extension 
 > *B&C: Sec. 55, Theorem (verified in Sec. 56)*
 
 ^thm-56-1
-
-> [!remark] Remark: Why It Works
-> For $n = 1$ the difference quotient of $f$ at $z$ is an integral over $C$ of $f(s)$ times the difference quotient of $1/(s - z)$, which is $1/\big((s - z - \Delta z)(s - z)\big)$. This differs from $1/(s - z)^2$ by $\Delta z/\big((s - z - \Delta z)(s - z)^2\big)$, which is at most $|\Delta z|/\big((d - |\Delta z|)d^2\big)$ on all of $C$, where $d$ is the distance from $z$ to $C$. Multiplying by $\max|f|$ and the length of $C$ gives an error that tends to $0$ with $\Delta z$. Nothing about $f$ is used except that it is bounded on $C$ and represented by its Cauchy integral; this is why the same argument shows that any integral of Cauchy type is analytic ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^ex-56-1|Example §56.1]]).
-
-^rem-56-1
 
 > [!proof]- Proof
 > The case $n = 0$ is the Cauchy integral formula, [[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]:

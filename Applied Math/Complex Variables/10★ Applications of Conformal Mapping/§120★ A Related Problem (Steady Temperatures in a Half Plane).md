@@ -107,7 +107,7 @@ A solved problem becomes the solution of every problem that can be mapped onto i
 ^ex-120-2
 
 > [!example] Example §120.3: A Half Strip with One Hot Side
-> Solve the [[§116★ Transformations of Harmonic Functions#^def-116-1|Dirichlet problem]]
+> Solve the [[§116★ Transformations of Harmonic Functions#^def-116-new1|Dirichlet problem]]
 >
 > $$
 > H_{xx} + H_{yy} = 0 \quad \Big(0 < x < \frac\pi2,\ y > 0\Big), \qquad H(x, 0) = 0, \qquad H(0, y) = 1, \qquad H\Big(\frac\pi2, y\Big) = 0 ,

@@ -110,7 +110,7 @@ $$
 $$
 
 > [!remark] Remark: Reading Theorem 2.4.2
-> - **It contains Theorem §7.1.** If the equation is linear, $f(t, y) = -p(t)y + g(t)$ and $\partial f/\partial y = -p(t)$, so continuity of $f$ and $\partial f/\partial y$ is equivalent to continuity of $p$ and $g$. What Theorem 2.4.2 loses is the interval: for a linear equation the solution exists on all of $(\alpha, \beta)$, for a nonlinear one only on some interval $(t_0 - h, t_0 + h)$.
+> - **It contains [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]].** If the equation is linear, $f(t, y) = -p(t)y + g(t)$ and $\partial f/\partial y = -p(t)$, so continuity of $f$ and $\partial f/\partial y$ is equivalent to continuity of $p$ and $g$. What Theorem 2.4.2 loses is the interval: for a linear equation the solution exists on all of $(\alpha, \beta)$, for a nonlinear one only on some interval $(t_0 - h, t_0 + h)$.
 > - **Its hypotheses are sufficient, not necessary.** The conclusion survives under slightly weaker hypotheses on $f$. In fact the *existence* of a solution (but not its uniqueness) follows from the continuity of $f$ alone. (BDP omits the proof of this existence theorem, known as Peano's theorem. What the proof in [[§11 The Existence and Uniqueness Theorem|§11]] actually uses of $\partial f/\partial y$ is the Lipschitz bound of [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]].)
 > - **Why the proof is harder.** The proof of [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] is easy because the solution of every linear equation is given by the expression (3). There is no such expression for $y' = f(t, y)$, so the solution has to be constructed as a limit ([[§11 The Existence and Uniqueness Theorem|§11]]).
 
@@ -150,7 +150,7 @@ $$
 > y' + \frac{2}{t}\,y = 4t ,
 > $$
 >
-> so $p(t) = 2/t$ and $g(t) = 4t$. Here $g$ is continuous for all $t$, while $p$ is continuous only for $t < 0$ and for $t > 0$. The interval $t > 0$ contains the initial point $t_0 = 1$, so Theorem §7.1 guarantees a unique solution on $0 < t < \infty$.
+> so $p(t) = 2/t$ and $g(t) = 4t$. Here $g$ is continuous for all $t$, while $p$ is continuous only for $t < 0$ and for $t > 0$. The interval $t > 0$ contains the initial point $t_0 = 1$, so [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] guarantees a unique solution on $0 < t < \infty$.
 >
 > **The solution.** The integrating factor is $\mu(t) = \exp \int (2/t)\,dt = t^2$ (on either half-line), so $(t^2 y)' = 4t^3$, $t^2 y = t^4 + c$ and
 >
@@ -164,7 +164,7 @@ $$
 > y = t^2 + \frac{1}{t^2}, \qquad t > 0 . \qquad (12)
 > $$
 >
-> **The other initial point.** With $y(-1) = 2$ the initial point lies in $t < 0$, and Theorem §7.1 gives a unique solution on $-\infty < t < 0$. Again $1 + c = 2$, so the solution is given by the same formula (12), now on the interval $t < 0$. Neither solution can be continued across $t = 0$, where $y \to \infty$.
+> **The other initial point.** With $y(-1) = 2$ the initial point lies in $t < 0$, and [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] gives a unique solution on $-\infty < t < 0$. Again $1 + c = 2$, so the solution is given by the same formula (12), now on the interval $t < 0$. Neither solution can be continued across $t = 0$, where $y \to \infty$.
 >
 > *BDP: Example 2.4.1*
 
@@ -257,7 +257,7 @@ $$
 
 By [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]], the solution of a linear problem (1), (2) exists throughout any interval about $t_0$ on which $p$ and $g$ are continuous; vertical asymptotes and other discontinuities of the solution can occur only at discontinuities of $p$ or $g$. In [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-1|Example §7.1]] the solutions $y = t^2 + c/t^2$ are asymptotic to the $y$-axis, matching the discontinuity of $p(t) = 2/t$ at $t = 0$, but have no other point where they fail to exist or to be differentiable. The one exception, $c = 0$, gives $y = t^2$, which is continuous even at $t = 0$: a solution may remain continuous at a discontinuity of the coefficients.
 
-For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval is much harder to find. The solution $y = \phi(t)$ exists as long as the point $(t, \phi(t))$ remains in a region where the hypotheses hold; this is what determines $h$ (in §11, $h = \min(a, b/M)$, [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]]). But $\phi$ is usually not known, so it may be impossible to locate $(t, \phi(t))$ with respect to that region, and the interval may have no simple relation to $f$.
+For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval is much harder to find. The solution $y = \phi(t)$ exists as long as the point $(t, \phi(t))$ remains in a region where the hypotheses hold; this is what determines $h$ (in [[§11 The Existence and Uniqueness Theorem|§11]], $h = \min(a, b/M)$, [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]]). But $\phi$ is usually not known, so it may be impossible to locate $(t, \phi(t))$ with respect to that region, and the interval may have no simple relation to $f$.
 
 > [!example] Example §7.4: The Interval Depends on the Initial Value
 > **(a)** Solve the initial value problem
@@ -340,7 +340,7 @@ For a linear problem, (8) gives the solution $y = \phi(t)$ explicitly: the value
 
 ^def-7-2
 
-If (26) is simple enough, for instance quadratic in $y$ as in [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-2|Example §7.2]], it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. Examples §7.2–§7.4 are nonlinear problems whose explicit solution is easy to find; BDP's Examples 2.2.1 and 2.2.3 (in [[§5 Separable Differential Equations|§5]], the second as [[§5 Separable Differential Equations#^ex-5-2|Example §5.2]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
+If (26) is simple enough, for instance quadratic in $y$ as in [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-2|Example §7.2]], it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-2|Examples §7.2]]–[[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|§7.4]] are nonlinear problems whose explicit solution is easy to find; BDP's Examples 2.2.1 and 2.2.3 (in [[§5 Separable Differential Equations|§5]], the second as [[§5 Separable Differential Equations#^ex-5-2|Example §5.2]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
 
 ## Graphical or Numerical Construction of Integral Curves
 
@@ -354,7 +354,7 @@ Because exact solutions of nonlinear equations are so rarely available, methods 
 > 2. There is an expression for the solution, (7) or (8). Although it involves two integrations, it gives $y = \phi(t)$ explicitly rather than implicitly.
 > 3. The possible points of discontinuity, or singularities, of the solution can be found without solving the problem, as the points of discontinuity of the coefficients. If the coefficients are continuous for all $t$, the solution exists and is differentiable for all $t$.
 >
-> None of these is true, in general, of nonlinear equations. A nonlinear equation may have a solution involving an arbitrary constant and still have other solutions ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]); there is no general formula for its solutions, and integrating it usually gives an equation that defines the solutions only implicitly ([[§7 Differences Between Linear and Nonlinear Differential Equations#^def-7-2|Definition §7.2]]); and its singularities can usually be found only by solving it, and they are likely to depend on the initial condition as well as on the equation (Example §7.4).
+> None of these is true, in general, of nonlinear equations. A nonlinear equation may have a solution involving an arbitrary constant and still have other solutions ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]); there is no general formula for its solutions, and integrating it usually gives an equation that defines the solutions only implicitly ([[§7 Differences Between Linear and Nonlinear Differential Equations#^def-7-2|Definition §7.2]]); and its singularities can usually be found only by solving it, and they are likely to depend on the initial condition as well as on the equation ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]).
 
 ^rem-7-2
 

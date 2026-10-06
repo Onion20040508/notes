@@ -24,7 +24,7 @@ Chapter 2 develops a theory of differentiation for functions of a complex variab
 
 ^def-13-1
 
-The domain of definition is often a domain in the sense of [[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]] (an open connected set), but it need not be. It is also not always convenient to distinguish in notation between a function and its values; one speaks of "the function $z^2$".
+The domain of definition is often a domain in the sense of [[§12★ Regions in the Complex Plane#^def-12-new6|Definition §12.10]] (an open connected set), but it need not be. It is also not always convenient to distinguish in notation between a function and its values; one speaks of "the function $z^2$".
 
 > [!example] Example §13.1: The Function 1/z
 > If $f$ is defined on the set $z \ne 0$ by $w = 1/z$, it may be referred to simply as the function $w = 1/z$, or the function $1/z$. Its domain of definition is the largest set on which the rule makes sense, the punctured plane $z \ne 0$.
@@ -83,18 +83,25 @@ Suppose that $u + iv$ is the value of $f$ at $z = x + iy$, that is, $u + iv = f(
 
 ^ex-13-2
 
-> [!definition] Definition §13.3: Polynomials and Rational Functions
+> [!definition] Definition §13.3: Polynomial
 > If $n$ is a nonnegative integer and $a_0, a_1, \ldots, a_n$ are complex constants with $a_n \ne 0$, the function
 >
 > $$
 > P(z) = a_0 + a_1z + a_2z^2 + \cdots + a_nz^n
 > $$
 >
-> is a **polynomial of degree $n$**. The sum has finitely many terms, and the domain of definition is the entire $z$ plane. Quotients $P(z)/Q(z)$ of polynomials are **rational functions**; they are defined at each point $z$ where $Q(z) \ne 0$.
+> is a **polynomial of degree $n$**. The sum has finitely many terms, and the domain of definition is the entire $z$ plane.
 >
 > *B&C: Sec. 13 (text)*
 
 ^def-13-3
+
+> [!definition] Definition §13.4: Rational Function
+> Quotients $P(z)/Q(z)$ of polynomials are **rational functions**; they are defined at each point $z$ where $Q(z) \ne 0$.
+>
+> *B&C: Sec. 13 (text)*
+
+^def-13-new1
 
 B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polynomials of degree $0$, which Exercise 10 of Section 20 uses. Polynomials and rational functions are elementary, but important, classes of functions of a complex variable; their limits, continuity and derivatives are found in [[§16 Theorems on Limits#^cor-16-3|Corollary §16.3]], [[§18 Continuity#^prop-18-1|Proposition §18.1]] and [[§20 Rules for Differentiation#^ex-20-2|Example §20.2]].
 
@@ -122,7 +129,7 @@ B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polyno
 >
 > well defined on the set of nonzero numbers. Since zero is the only square root of zero, set $f(0) = 0$; then $f$ is well defined on the entire plane.
 >
-> Each value is indeed a square root: $f(z)^2 = r\exp(i\Theta) = z$. For example $f(4i) = 2e^{i\pi/4} = \sqrt2 + i\sqrt2$, and $f(-1) = e^{i\pi/2} = i$. The systematic choice has a price on the negative real axis: points just below $-1$ have $\Theta$ near $-\pi$, so their values $f(z)$ are near $e^{-i\pi/2} = -i$, not near $f(-1) = i$. So $f$ jumps across the negative real axis; such choices are studied as branches in [[§33 Branches and Derivatives of Logarithms#^def-33-2|Definition §33.2]] and [[§35 The Power Function#^def-35-2|Definition §35.2]].
+> Each value is indeed a square root: $f(z)^2 = r\exp(i\Theta) = z$. For example $f(4i) = 2e^{i\pi/4} = \sqrt2 + i\sqrt2$, and $f(-1) = e^{i\pi/2} = i$. The systematic choice has a price on the negative real axis: points just below $-1$ have $\Theta$ near $-\pi$, so their values $f(z)$ are near $e^{-i\pi/2} = -i$, not near $f(-1) = i$. So $f$ jumps across the negative real axis; such choices are studied as branches in [[§33 Branches and Derivatives of Logarithms#^def-33-2|Definition §33.2]] and [[§35 The Power Function#^def-35-new1|Definition §35.3]].
 >
 > *B&C: Sec. 13, Example 5*
 
@@ -132,16 +139,29 @@ B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polyno
 
 The graph of a real function of a real variable displays its properties, but when $w = f(z)$ with $z$ and $w$ complex there is no such convenient picture, because each of $z$ and $w$ is located in a plane rather than on a line. One can display some information by indicating pairs of corresponding points $z = (x, y)$ and $w = (u, v)$; it is generally simpler to draw the $z$ and $w$ planes separately.
 
-> [!definition] Definition §13.5: Mapping, Image, Range, Inverse Image
+> [!definition] Definition §13.5: Mapping
 > When a function $f$ is thought of as carrying points of the $z$ plane to points of the $w$ plane, it is called a **mapping**, or **transformation**.
-> - The **image** of a point $z$ in the domain of definition $S$ is the point $w = f(z)$.
-> - The **image of a set** $T \subseteq S$ is the set of images of all points of $T$.
-> - The **range** of $f$ is the image of the entire domain of definition $S$.
-> - The **inverse image** of a point $w$ is the set of all points $z$ in $S$ that have $w$ as their image. It may contain just one point, many points, or none at all; the last case occurs when $w$ is not in the range of $f$.
 >
 > *B&C: Sec. 13 (text)*
 
 ^def-13-5
+
+> [!definition] Definition §13.7: Image and Range
+> Let $f$ be a mapping with domain of definition $S$.
+> - The **image** of a point $z$ in the domain of definition $S$ is the point $w = f(z)$.
+> - The **image of a set** $T \subseteq S$ is the set of images of all points of $T$.
+> - The **range** of $f$ is the image of the entire domain of definition $S$.
+>
+> *B&C: Sec. 13 (text)*
+
+^def-13-new2
+
+> [!definition] Definition §13.8: Inverse Image
+> The **inverse image** of a point $w$ under a mapping $f$ with domain of definition $S$ is the set of all points $z$ in $S$ that have $w$ as their image. It may contain just one point, many points, or none at all; the last case occurs when $w$ is not in the range of $f$.
+>
+> *B&C: Sec. 13 (text)*
+
+^def-13-new3
 
 For instance, under $w = z^2$ the inverse image of $w = 4$ is $\{2, -2\}$, and under $w = 1/z$ the inverse image of $w = 0$ is empty, since $0$ is not in the range of $1/z$.
 

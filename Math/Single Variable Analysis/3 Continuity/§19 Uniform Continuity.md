@@ -184,7 +184,7 @@ This is another important property of continuous functions on closed bounded int
 ^prop-19-4
 
 > [!proof]+ Proof
-> If not, then for every $n \in \mathbb{N}$ there is $x_n \in \Omega$ with $|f(x_n)| \geq n$. Since $\Omega$ is bounded, $(x_n)$ is a bounded sequence; by [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] there is a convergent subsequence $x_{n_k} \to x_0$. Now $x_0$ *may not belong to $\Omega$* — this is exactly why we cannot argue with continuity at $x_0$, and why the Cauchy theorem above is the right tool: $(x_{n_k})$, being convergent, is a Cauchy sequence in $\Omega$, so $(f(x_{n_k}))$ is Cauchy, hence convergent, hence *bounded* (§10, §9). But $|f(x_{n_k})| \geq n_k \to \infty$ — a contradiction.
+> If not, then for every $n \in \mathbb{N}$ there is $x_n \in \Omega$ with $|f(x_n)| \geq n$. Since $\Omega$ is bounded, $(x_n)$ is a bounded sequence; by [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] there is a convergent subsequence $x_{n_k} \to x_0$. Now $x_0$ *may not belong to $\Omega$* — this is exactly why we cannot argue with continuity at $x_0$, and why the Cauchy theorem above is the right tool: $(x_{n_k})$, being convergent, is a Cauchy sequence in $\Omega$, so $(f(x_{n_k}))$ is Cauchy, hence convergent, hence *bounded* (§10a, §9). But $|f(x_{n_k})| \geq n_k \to \infty$ — a contradiction.
 
 ^pf-19-4
 

@@ -154,7 +154,7 @@ a **nonlinear** equation, which nevertheless can be solved in closed form.
 
 A long rod of uniform material and cross section conducts heat along its axis, and its temperature $u(x)$ does not change in time. Let $A$ be the cross-sectional area, $C$ the circumference and $q$ the heat flow rate (heat per unit time per unit area, in the direction of increasing $x$).
 
-> [!definition] Definition §3.2: Fourier's Law; Newton's Law of Cooling
+> [!definition] Definition §3.2: Fourier's Law
 > **Fourier's law** (experimental): the heat flow rate through a unit area of material is proportional to the temperature difference and inversely proportional to the thickness. In the limit,
 >
 > $$
@@ -163,6 +163,11 @@ A long rod of uniform material and cross section conducts heat along its axis, a
 >
 > with $\kappa > 0$ the **conductivity**; the minus sign says that heat moves from hotter toward cooler regions.
 >
+> *Powers: 0.3 (text), Equations (10), (11), (13)*
+
+^def-3-2
+
+> [!definition] Definition §3.2: Newton's Law of Cooling
 > **Newton's law of cooling**: heat lost through the cylindrical surface by convection to a surrounding medium at temperature $T$ is proportional to the temperature difference; per slice of length $\Delta x$ the rate of heat entering is
 >
 > $$
@@ -173,7 +178,7 @@ A long rod of uniform material and cross section conducts heat along its axis, a
 >
 > *Powers: 0.3 (text), Equations (10), (11), (13)*
 
-^def-3-2
+^def-3-new1
 
 > [!theorem] Proposition §3.2: Steady-State Heat Equation in a Rod
 > If heat enters the rod at the rate $g(x)$ per unit volume by means other than conduction through the cross sections, and the conductivity $\kappa$ is constant, the steady temperature satisfies
@@ -215,7 +220,7 @@ A long rod of uniform material and cross section conducts heat along its axis, a
 
 ^pf-3-2
 
-*Uses:* [[§3★ Boundary Value Problems#^def-3-2|Def. §3.2]]
+*Uses:* [[§3★ Boundary Value Problems#^def-3-2|Def. §3.2]], [[§3★ Boundary Value Problems#^def-3-new1|Def. §3.2]]
 
 > [!remark]- Connections
 > - The three-dimensional version of the heat balance replaces the two faces by the boundary of a region and uses the divergence theorem, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]]; the same balance law in fluid form is the continuity equation, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-4|452 Thm. §17.4]]. The time-dependent derivation is [[§17 Derivation and Boundary Conditions#^thm-17-2|Theorem §17.2]] (Powers 2.1), and (14) is its steady state, [[§18 Steady-State Temperatures#^def-18-1|Definition §18.1]] (Powers 2.2).
@@ -263,7 +268,7 @@ The next problem is different in spirit: instead of solving a boundary value pro
 
 ^def-3-3
 
-The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers introduces the name in 2.4, [[§20 Example꞉ Insulated Bar#^def-20-1|Definition §20.1]], and the general theory in 2.7, [[§23 Sturm–Liouville Problems#^def-23-1|Definition §23.1]].
+The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers introduces the name in 2.4, [[§20 Example꞉ Insulated Bar#^def-20-new1|Definition §20.1]], and the general theory in 2.7, [[§23 Sturm–Liouville Problems#^def-23-1|Definition §23.1]].
 
 > [!remark]- Connections
 > - The finite-dimensional model: $\lambda$ is an eigenvalue of an operator $T$ if $Tv = \lambda v$ for some $v \ne 0$, [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]], [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]]. Here the operator is $u \mapsto -u''$ on functions satisfying the homogeneous boundary conditions, and "nonzero solution of the homogeneous problem" is "nonzero vector in the null space of $T - \lambda I$".

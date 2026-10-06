@@ -7,7 +7,7 @@ bc: "74"
 aliases: ["B&C 74"]
 tags: [complex-variables, math342]
 ---
-← [[§73★ Multiplication and Division of Power Series]] · ↑ [[· 6 Residues and Poles]] · [[§75 Residues]] →
+← [[§73b The Function e^(1∕z)]] · ↑ [[· 6 Residues and Poles]] · [[§75 Residues]] →
 
 *Brown–Churchill, Section 74.*
 
@@ -51,7 +51,7 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 ^ex-74-1
 
 > [!example] Example §74.2: The Origin Is Not an Isolated Singular Point of Log z
-> The origin is a singular point of the principal branch ([[§33 Branches and Derivatives of Logarithms#^def-33-2|Definition §33.2]])
+> The origin is a singular point of the principal branch ([[§33 Branches and Derivatives of Logarithms#^def-33-new1|Definition §33.3]])
 >
 > $$
 > F(z) = \operatorname{Log} z = \ln r + i\Theta \qquad (r > 0,\ -\pi < \Theta < \pi)

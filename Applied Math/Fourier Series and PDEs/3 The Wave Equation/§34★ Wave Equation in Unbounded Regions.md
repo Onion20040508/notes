@@ -70,11 +70,11 @@ On a semi-infinite string $0 < x < \infty$ the wave equation can be solved as th
 > u(x, 0) = f(x) = \int_0^\infty A(\lambda)\sin(\lambda x)\,d\lambda, \qquad \frac{\partial u}{\partial t}(x, 0) = g(x) = \int_0^\infty\lambda cB(\lambda)\sin(\lambda x)\,d\lambda, \qquad 0 < x
 > $$
 >
-> (differentiating under the integral sign). Both are Fourier sine integrals ([[§14 Fourier Integral#^def-14-2|Definition §14.2]]), so $A(\lambda)$ and $\lambda cB(\lambda)$ are the Fourier sine integral coefficients of $f$ and $g$, which gives the formulas. It is sufficient that $\int_0^\infty|f|$ and $\int_0^\infty|g|$ be finite to guarantee that $A$ and $B$ exist.
+> (differentiating under the integral sign). Both are Fourier sine integrals ([[§14 Fourier Integral#^def-14-new2|Definition §14.2]]), so $A(\lambda)$ and $\lambda cB(\lambda)$ are the Fourier sine integral coefficients of $f$ and $g$, which gives the formulas. It is sufficient that $\int_0^\infty|f|$ and $\int_0^\infty|g|$ be finite to guarantee that $A$ and $B$ exist.
 
 ^pf-34-1
 
-*Uses:* [[§14 Fourier Integral#^def-14-2|Def. §14.2]] (Fourier sine integral), [[§26 Semi-Infinite Rod#^thm-26-2|§26.2]] (the same method for heat)
+*Uses:* [[§14 Fourier Integral#^def-14-new2|Def. §14.2]] (Fourier sine integral), [[§26 Semi-Infinite Rod#^thm-26-2|§26.2]] (the same method for heat)
 
 The deficiency of the Fourier integral form (5) is that it gives no idea of what $u(x, t)$ looks like. The d'Alembert solution comes to the aid again.
 

@@ -95,7 +95,7 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 ^prop-12-1
 
 > [!proof]+ Proof
-> B&C leave this as an exercise. By Definition §12.2, every point of the plane is exactly one of: an interior point, an exterior point, or a boundary point of $S$.
+> B&C leave this as an exercise. By [[§12★ Regions in the Complex Plane#^def-12-2|Definitions §12.2]], [[§12★ Regions in the Complex Plane#^def-12-new2|§12.4]] and [[§12★ Regions in the Complex Plane#^def-12-new3|§12.5]], every point of the plane is exactly one of: an interior point, an exterior point, or a boundary point of $S$.
 >
 > Suppose $S$ is open and $z_0 \in S$. Then $z_0$ is not a boundary point, since $S$ contains none. Nor is it an exterior point, since every neighborhood of $z_0$ contains the point $z_0$ of $S$. So $z_0$ is an interior point.
 >
@@ -103,7 +103,7 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 
 ^pf-12-1
 
-*Uses:* [[§12★ Regions in the Complex Plane#^def-12-2|Def. §12.2]], [[§12★ Regions in the Complex Plane#^def-12-3|Def. §12.3]]
+*Uses:* [[§12★ Regions in the Complex Plane#^def-12-2|Def. §12.2]], [[§12★ Regions in the Complex Plane#^def-12-new2|Def. §12.4]], [[§12★ Regions in the Complex Plane#^def-12-new3|Def. §12.5]], [[§12★ Regions in the Complex Plane#^def-12-3|Def. §12.3]]
 
 Some sets are neither open nor closed. For a set $S$ to be not open there must be a boundary point that is contained in the set, and for $S$ to be not closed there must be a boundary point not in it ([[§12★ Regions in the Complex Plane#^ex-12-1|Example §12.1]]).
 
@@ -163,7 +163,7 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 
 ^pf-12-2
 
-*Uses:* [[§12★ Regions in the Complex Plane#^def-12-2|Def. §12.2]], [[§12★ Regions in the Complex Plane#^def-12-3|Def. §12.3]], [[§12★ Regions in the Complex Plane#^def-12-6|Def. §12.6]]
+*Uses:* [[§12★ Regions in the Complex Plane#^def-12-new3|Def. §12.5]], [[§12★ Regions in the Complex Plane#^def-12-new4|Def. §12.7]], [[§12★ Regions in the Complex Plane#^def-12-6|Def. §12.6]]
 
 > [!remark]- Connections
 > - In any topological space: limit points [[§7 Interior and Closure#^def-7-3|590 Def. §7.3]], the closure as the set together with its limit points [[§7 Interior and Closure#^thm-7-4|590 Thm. §7.4]], and Theorem §12.2 as [[§7 Interior and Closure#^cor-7-5|590 Cor. §7.5]].
@@ -224,6 +224,8 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 
 ![[m342-12-1.svg]]
 *Left: the annulus $1 < |z| < 2$ is a domain: any two of its points $z_1$, $z_2$ can be joined by a polygonal line inside it (red), although the straight segment between them may cross the hole. Right: the set $\operatorname{Im}(1/z) > 1$ of Example §12.2 is the open disk with center $-\frac i2$ and radius $\frac12$; its boundary circle (dashed, not in the set) passes through $0$, where $1/z$ is undefined.*
+
+*Chain (the function 1/z): later in [[§29a The Function 1∕z|Chapter 2]] · [[§59a The Function 1∕z|Chapter 4]]*
 
 > [!example] Example §12.3: Which Sets Are Domains
 > Sketch the following sets and determine which are domains, which are neither open nor closed, and which are bounded: **(a)** $|z - 2 + i| \le 1$; **(b)** $|2z + 3| > 4$; **(c)** $\operatorname{Im} z > 1$; **(d)** $\operatorname{Im} z = 1$; **(e)** $0 \le \arg z \le \pi/4$ $(z \ne 0)$; **(f)** $|z - 4| \ge |z|$.

@@ -228,11 +228,11 @@ $$
 > \int_0^a R_nR_m\,\rho^2\,d\rho = \int_0^a \sin(\lambda_n\rho)\sin(\lambda_m\rho)\,d\rho = \begin{cases} 0, & n \ne m, \\ a/2, & n = m, \end{cases}
 > $$
 >
-> the orthogonality of the sine functions on $0 < \rho < a$. The initial conditions read $\sum a_n\sin(\lambda_n\rho)/\rho = f(\rho)$ and $\sum b_n\lambda_nc\sin(\lambda_n\rho)/\rho = g(\rho)$, that is, $\sum a_n\sin(n\pi\rho/a) = \rho f(\rho)$ and $\sum b_n\lambda_nc\sin(n\pi\rho/a) = \rho g(\rho)$. These are Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]), whose coefficients are the formulas stated. (Powers says only that the coefficients are chosen "as usual"; the details are Exercise 5.8.7.) Each term of (22) satisfies (13), (14) and boundedness by construction.
+> the orthogonality of the sine functions on $0 < \rho < a$. The initial conditions read $\sum a_n\sin(\lambda_n\rho)/\rho = f(\rho)$ and $\sum b_n\lambda_nc\sin(\lambda_n\rho)/\rho = g(\rho)$, that is, $\sum a_n\sin(n\pi\rho/a) = \rho f(\rho)$ and $\sum b_n\lambda_nc\sin(n\pi\rho/a) = \rho g(\rho)$. These are Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]), whose coefficients are the formulas stated. (Powers says only that the coefficients are chosen "as usual"; the details are Exercise 5.8.7.) Each term of (22) satisfies (13), (14) and boundedness by construction.
 
 ^pf-48-4
 
-*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§4★ Singular Boundary Value Problems#^lem-4-2|§4.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (Fourier sine series)
+*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§4★ Singular Boundary Value Problems#^lem-4-2|§4.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (Fourier sine series)
 
 > [!remark] Remark: Spherical Waves Are Strings in Disguise
 > The substitution in the proof says more: if $u(\rho, t)$ solves (13), then $w = \rho u$ solves the one-dimensional wave equation $w_{\rho\rho} = w_{tt}/c^2$, with $w(0, t) = 0$ and $w(a, t) = 0$, a vibrating string on $0 < \rho < a$ ([[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]]). Hence every solution of (13) has the form $u = \frac{1}{\rho}\big(\psi_1(\rho + ct) + \psi_2(\rho - ct)\big)$, d'Alembert's form ([[§31 d'Alembert's Solution#^thm-31-2|Theorem §31.2]]) divided by $\rho$: spherical waves travel outward and inward with speed $c$ and amplitude decreasing like $1/\rho$ (Exercise 5.8.4). In particular the radial frequencies $n\pi c/a$ are harmonic, unlike those of the drum in [[§47★ Vibrations of a Circular Membrane#^ex-47-1|Example §47.1]].

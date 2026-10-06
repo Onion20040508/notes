@@ -15,6 +15,17 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 
 ## Taylor's Theorem
 
+> [!remark] Remark: Why It Works
+> Fix $z$ inside a circle $C_0$ centered at $0$ that lies in the disk. For $s$ on $C_0$,
+>
+> $$
+> \frac{1}{s - z} = \frac1s\cdot\frac{1}{1 - z/s} = \sum_{n=0}^{\infty}\frac{z^n}{s^{n+1}} ,
+> $$
+>
+> a geometric series with ratio $|z/s| = r/r_0 < 1$ that is the same for every $s$ on $C_0$. Feeding this into the Cauchy integral formula $f(z) = \frac{1}{2\pi i}\int_{C_0}\frac{f(s)}{s - z}\,ds$ and integrating term by term gives $\sum z^n\cdot\frac{1}{2\pi i}\int_{C_0}\frac{f(s)}{s^{n+1}}\,ds = \sum\frac{f^{(n)}(0)}{n!}z^n$. To avoid justifying the interchange of sum and integral, the proof stops the geometric series after $N$ terms, keeps the exact remainder, and shows that its integral tends to zero.
+
+^rem-63-1
+
 > [!theorem] Theorem §63.1: Taylor's Theorem
 > Suppose that a function $f$ is analytic throughout a disk $|z - z_0| < R_0$, centered at $z_0$ and with radius $R_0$. Then $f(z)$ has the power series representation
 >
@@ -27,17 +38,6 @@ This section proves Taylor's theorem, stated in [[§62 Taylor Series|§62]]. The
 > *B&C: Sec. 62, Theorem (proved in Sec. 63)*
 
 ^thm-63-1
-
-> [!remark] Remark: Why It Works
-> Fix $z$ inside a circle $C_0$ centered at $0$ that lies in the disk. For $s$ on $C_0$,
->
-> $$
-> \frac{1}{s - z} = \frac1s\cdot\frac{1}{1 - z/s} = \sum_{n=0}^{\infty}\frac{z^n}{s^{n+1}} ,
-> $$
->
-> a geometric series with ratio $|z/s| = r/r_0 < 1$ that is the same for every $s$ on $C_0$. Feeding this into the Cauchy integral formula $f(z) = \frac{1}{2\pi i}\int_{C_0}\frac{f(s)}{s - z}\,ds$ and integrating term by term gives $\sum z^n\cdot\frac{1}{2\pi i}\int_{C_0}\frac{f(s)}{s^{n+1}}\,ds = \sum\frac{f^{(n)}(0)}{n!}z^n$. To avoid justifying the interchange of sum and integral, the proof stops the geometric series after $N$ terms, keeps the exact remainder, and shows that its integral tends to zero.
-
-^rem-63-1
 
 > [!proof]- Proof
 > **The case $z_0 = 0$.** Here $f$ is analytic throughout $|z| < R_0$, and we must show

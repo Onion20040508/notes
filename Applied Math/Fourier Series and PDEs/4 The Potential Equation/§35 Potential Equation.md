@@ -15,7 +15,7 @@ Chapter 4 studies the potential equation, or Laplace's equation, $\nabla^2u = 0$
 
 ## Laplace's Equation
 
-> [!definition] Definition §35.1: Potential Equation; Harmonic Function
+> [!definition] Definition §35.1: Potential Equation
 > The **potential equation**, or **Laplace's equation**, in two dimensions is
 >
 > $$
@@ -28,7 +28,7 @@ Chapter 4 studies the potential equation, or Laplace's equation, $\nabla^2u = 0$
 > \frac{\partial^2u}{\partial x^2} + \frac{\partial^2u}{\partial y^2} + \frac{\partial^2u}{\partial z^2} = 0 .
 > $$
 >
-> Either is written $\nabla^2u = 0$ (also $\Delta u = 0$), where $\nabla^2u = u_{xx} + u_{yy}\ (+\,u_{zz})$ is the **Laplacian** of $u$. A solution of the potential equation in a region is called a **harmonic function** there.
+> Either is written $\nabla^2u = 0$ (also $\Delta u = 0$), where $\nabla^2u = u_{xx} + u_{yy}\ (+\,u_{zz})$ is the **Laplacian** of $u$.
 >
 > *Powers: 4.1 (text)*
 
@@ -37,6 +37,15 @@ Chapter 4 studies the potential equation, or Laplace's equation, $\nabla^2u = 0$
 > [!remark]- Connections
 > - The same definition, with the example $e^x\sin y$: [[§92 Partial Derivatives#^def-92-5|Calc Def. §92.5]]; $\nabla^2 = \nabla\cdot\nabla$ as the divergence of the gradient, [[§111 Curl and Divergence#^def-111-5|Calc Def. §111.5]].
 > - The Laplacian in $\mathbb{R}^n$ and the normal derivative, the setting of Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]].
+
+> [!definition] Definition §35.1: Harmonic Function
+> A solution of the potential equation ([[§35 Potential Equation#^def-35-1|Definition §35.1]]) in a region is called a **harmonic function** there.
+>
+> *Powers: 4.1 (text)*
+
+^def-35-new1
+
+> [!remark]- Connections
 > - Complex-variables version: [[§27★ Harmonic Functions#^def-27-1|342 Def. §27.1]] (the same definition) and [[§27★ Harmonic Functions#^thm-27-1|342 Thm. §27.1]] (the real and imaginary parts of an analytic function are harmonic, the source of closed-form solutions).
 
 Where the equation comes from:
@@ -84,18 +93,32 @@ Harmonic functions have many special properties. The most important one, the **m
 
 ## Boundary Value Problems
 
-> [!definition] Definition §35.2: Dirichlet Problem; Neumann Problem
+> [!definition] Definition §35.2: Boundary Conditions for the Potential Equation
 > A complete boundary value problem for the potential equation consists of the equation in a region together with boundary conditions. Along any section of the boundary these may be of any of the three types
 >
 > $$
 > u \ \text{given}, \qquad \frac{\partial u}{\partial n} \ \text{given}, \qquad \text{or} \qquad \alpha u + \beta\frac{\partial u}{\partial n} \ \text{given} ,
 > $$
 >
-> where $\partial u/\partial n$ is the **normal derivative**, the [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] in the direction normal (perpendicular) to the boundary. When $u$ is specified along the whole boundary, the problem is called **Dirichlet's problem**; when $\partial u/\partial n$ is specified along the whole boundary, it is **Neumann's problem**.
+> where $\partial u/\partial n$ is the **normal derivative**, the [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] in the direction normal (perpendicular) to the boundary.
 >
 > *Powers: 4.1 (text)*
 
 ^def-35-2
+
+> [!definition] Definition §35.2: Dirichlet Problem
+> When $u$ is specified along the whole boundary of a boundary value problem for the potential equation ([[§35 Potential Equation#^def-35-2|Definition §35.2]]), the problem is called **Dirichlet's problem**.
+>
+> *Powers: 4.1 (text)*
+
+^def-35-new2
+
+> [!definition] Definition §35.2: Neumann Problem
+> When $\partial u/\partial n$ is specified along the whole boundary of a boundary value problem for the potential equation ([[§35 Potential Equation#^def-35-2|Definition §35.2]]), it is **Neumann's problem**.
+>
+> *Powers: 4.1 (text)*
+
+^def-35-new3
 
 > [!remark]- Connections
 > - Complex-variables version: [[§116★ Transformations of Harmonic Functions#^def-116-1|342 Def. §116.1]] (the same Dirichlet and Neumann problems), with [[§117★ Transformations of Boundary Conditions#^thm-117-2|342 Thm. §117.2]] (conformal maps preserve the conditions $h = h_0$ and $dh/dn = 0$) and the Neumann problem for a disk solved in [[§140★ Neumann Problems#^thm-140-2|342 Thm. §140.2]].
@@ -114,7 +137,7 @@ On the sides of a rectangle $0 < x < a$, $0 < y < b$ the normal derivative is si
 
 ^pf-35-1
 
-*Uses:* [[§35 Potential Equation#^def-35-2|Def. §35.2]]
+*Uses:* [[§35 Potential Equation#^def-35-2|Def. §35.2]], [[§35 Potential Equation#^def-35-new3|Def. §35.2]]
 
 For Dirichlet's problem, by contrast, the solution is unique: [[§39 Potential in a Disk#^cor-39-6|Corollary §39.6]].
 
@@ -153,7 +176,7 @@ The simplest harmonic functions are polynomials. They are useful for satisfying 
 
 ^pf-35-2
 
-*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§96 Maximum and Minimum Values#^thm-96-2|Calc Thm. §96.2]] (second derivatives test)
+*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§35 Potential Equation#^def-35-new1|Def. §35.1]], [[§96 Maximum and Minimum Values#^thm-96-2|Calc Thm. §96.2]] (second derivatives test)
 
 > [!example] Example §35.2: The Harmonic Polynomials x² − y² and xy
 > Both $u = x^2 - y^2$ and $u = xy$ satisfy Laplace's equation: for the first, $u_{xx} + u_{yy} = 2 - 2 = 0$; for the second, $u_{xx} = u_{yy} = 0$. They are the cases $d = 1$, $f = -1$ and $e = 1$ of Proposition §35.2, and their graphs are saddles centered at the origin.

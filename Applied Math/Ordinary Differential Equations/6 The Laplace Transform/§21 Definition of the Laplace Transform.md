@@ -186,7 +186,7 @@ Functions satisfying the hypotheses of [[§21 Definition of the Laplace Transfor
 > \mathcal{L}\{1\} = \int_0^\infty e^{-st}\,dt = -\lim_{A \to \infty} \frac{e^{-st}}{s}\bigg|_0^A = \frac1s, \qquad s > 0 .
 > $$
 >
-> **(b)** For $f(t) = e^{at}$, $t \ge 0$, again by Example §21.1(b), now with $c = -(s - a)$:
+> **(b)** For $f(t) = e^{at}$, $t \ge 0$, again by [[§21 Definition of the Laplace Transform#^ex-21-1|Example §21.1]](b), now with $c = -(s - a)$:
 >
 > $$
 > \mathcal{L}\{e^{at}\} = \int_0^\infty e^{-st}e^{at}\,dt = \int_0^\infty e^{-(s - a)t}\,dt = \frac{1}{s - a}, \qquad s > a .

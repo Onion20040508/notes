@@ -250,7 +250,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > Y(t_0) = u_1(t_0)y_1(t_0) + u_2(t_0)y_2(t_0) = 0, \qquad Y'(t_0) = u_1(t_0)y_1'(t_0) + u_2(t_0)y_2'(t_0) = 0 ,
 > $$
 >
-> using $Y' = u_1y_1' + u_2y_2'$ from the proof of Theorem §18.1.
+> using $Y' = u_1y_1' + u_2y_2'$ from the proof of [[§18★ Variation of Parameters#^thm-18-1|Theorem §18.1]].
 >
 > For the second statement, $u$ exists by the existence and uniqueness theorem ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]], Theorem 3.2.1). Then $L[u + Y] = L[u] + L[Y] = 0 + g$ by linearity of $L$, and $(u + Y)(t_0) = y_0 + 0$, $(u + Y)'(t_0) = y_0' + 0$. By the uniqueness part of Theorem 3.2.1, $u + Y$ is the solution.
 
@@ -278,7 +278,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 >
 > which gives the formula.
 >
-> **General data.** The homogeneous problem $u'' + u = 0$, $u(0) = y_0$, $u'(0) = y_0'$ has $u = y_0\cos t + y_0'\sin t$. By the second part of Corollary §18.2,
+> **General data.** The homogeneous problem $u'' + u = 0$, $u(0) = y_0$, $u'(0) = y_0'$ has $u = y_0\cos t + y_0'\sin t$. By the second part of [[§18★ Variation of Parameters#^cor-18-2|Corollary §18.2]],
 >
 > $$
 > y = y_0\cos t + y_0'\sin t + \int_0^{t} \sin(t - s)\,g(s)\,ds .

@@ -241,7 +241,7 @@ The success of separation of variables depends on having homogeneous boundary co
 >
 > where $H$ is a given function (a source term). Three examples:
 > 1. $u$ is the deflection of a membrane that is fastened at its edges, so $u = 0$ on the boundary of $\mathcal R$; $H$ is proportional to the pressure difference across the membrane ([[§41★ Two-Dimensional Wave Equation꞉ Derivation|§41★]]).
-> 2. $u$ is the steady-state temperature in a cross section of a long cylindrical rod that is carrying an electrical current; $H$ is proportional to the power in resistance heating ([[§42 Three-Dimensional Heat Equation#^def-42-1|Definition §42.1]]).
+> 2. $u$ is the steady-state temperature in a cross section of a long cylindrical rod that is carrying an electrical current; $H$ is proportional to the power in resistance heating ([[§42 Three-Dimensional Heat Equation#^def-42-new1|Definition §42.1]]).
 > 3. $u$ is the stress function on the cross section $\mathcal R$ of a cylindrical bar or rod in torsion (the shear stresses are proportional to the partial derivatives of $u$); $H$ is proportional to the rate of twist and to the shear modulus of the material; $u = 0$ on the boundary of $\mathcal R$.
 >
 > *Powers: 4.3 (text)*

@@ -16,12 +16,26 @@ Boundary value problems for Laplace's equation (Dirichlet and Neumann problems) 
 
 ## Boundary Value Problems
 
-> [!definition] Definition §116.1: Dirichlet and Neumann Problems
-> The problem of finding a function that is harmonic in a specified domain and satisfies prescribed conditions on the boundary of the domain is a **boundary value problem**. If the values of the function are prescribed along the boundary, it is a **boundary value problem of the first kind**, or a **Dirichlet problem**. If the values of the normal derivative of the function are prescribed on the boundary, it is a **boundary value problem of the second kind**, or a **Neumann problem**. Modifications and combinations of these types of boundary conditions also arise.
+> [!definition] Definition §116.1: Boundary Value Problem
+> The problem of finding a function that is harmonic in a specified domain and satisfies prescribed conditions on the boundary of the domain is a **boundary value problem**.
 >
 > *B&C: Sec. 116 (text)*
 
 ^def-116-1
+
+> [!definition] Definition §116.2: Dirichlet Problem
+> If, in a [[§116★ Transformations of Harmonic Functions#^def-116-1|boundary value problem]], the values of the function are prescribed along the boundary, it is a **boundary value problem of the first kind**, or a **Dirichlet problem**.
+>
+> *B&C: Sec. 116 (text)*
+
+^def-116-new1
+
+> [!definition] Definition §116.3: Neumann Problem
+> If, in a [[§116★ Transformations of Harmonic Functions#^def-116-1|boundary value problem]], the values of the normal derivative of the function are prescribed on the boundary, it is a **boundary value problem of the second kind**, or a **Neumann problem**. Modifications and combinations of these types of boundary conditions ([[§116★ Transformations of Harmonic Functions#^def-116-new1|Dirichlet]] and Neumann) also arise.
+>
+> *B&C: Sec. 116 (text)*
+
+^def-116-new2
 
 > [!remark]- Connections
 > - The same definitions, with the normal derivative and the mixed (Robin) condition, solved by separation of variables in rectangles and disks: [[§35 Potential Equation#^def-35-2|341 Def. §35.2]]; uniqueness of the Dirichlet solution by the maximum principle, [[§39 Potential in a Disk#^cor-39-6|341 Cor. §39.6]], and non-uniqueness for Neumann, [[§35 Potential Equation#^prop-35-1|341 Prop. §35.1]].
@@ -48,6 +62,8 @@ The domains most frequently met in applications are simply connected, and a harm
 > *B&C: Sec. 116, Example 1*
 
 ^ex-116-1
+
+*Chain: the temperature $e^{-y}\sin x$ earlier in [[§27★ Harmonic Functions#^ex-27-1|Chapter 2]] · later in [[§118★ Steady Temperatures#^ex-118-3|Chapter 10]]*
 
 Recognizing a solution as the real or imaginary part of a familiar analytic function works only for simple problems. The following theorem is the general tool.
 

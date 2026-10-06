@@ -134,20 +134,14 @@ The complex form is used especially in physics and electrical engineering. Somet
 
 The Fourier integral of a function $f(x)$ defined on the entire line $-\infty < x < \infty$ can also be cast in complex form.
 
-> [!definition] Definition §15.2: Complex Fourier Integral; Fourier Transform
+> [!definition] Definition §15.2: Fourier Transform
 > Let $\int_{-\infty}^{\infty}|f(x)|\,dx < \infty$. The **complex Fourier integral coefficient function** of $f$ is
 >
 > $$
-> C(\lambda) = \frac{1}{2\pi}\int_{-\infty}^{\infty} f(x)e^{-i\lambda x}\,dx , \qquad (6)
+> C(\lambda) = \frac{1}{2\pi}\int_{-\infty}^{\infty} f(x)e^{-i\lambda x}\,dx . \qquad (6)
 > $$
 >
-> and the **complex Fourier integral** of $f$ is
->
-> $$
-> \int_{-\infty}^{\infty} C(\lambda)e^{i\lambda x}\,d\lambda . \qquad (5)
-> $$
->
-> $C(\lambda)$ is often called the **Fourier transform** of $f$, and (5), read as a formula producing $f$ from $C$, the **inverse Fourier transform**.
+> $C(\lambda)$ is often called the **Fourier transform** of $f$.
 >
 > *Powers: 1.10, Equations (5) and (6) · Source: 341 lecture 10.3*
 
@@ -156,6 +150,19 @@ The Fourier integral of a function $f(x)$ defined on the entire line $-\infty < 
 > [!remark]- Connections
 > - Normalizations differ between books. Powers puts $\frac{1}{2\pi}$ in the transform; Lax's (and 556's) $\mathcal{F}(f)(x) = \int e^{-ix\cdot\xi}f(\xi)\,d\xi$ is $2\pi C$, and many physics texts split the factor as $\frac{1}{\sqrt{2\pi}}$ in both directions. In any normalization, $|C(\lambda)| \le \frac{1}{2\pi}\int|f|$: the transform is a bounded linear map from $L^1$ to $L^\infty$, [[§26 Boundedness and Continuity#^ex-26-2|556 Ex. §26.2]].
 > - For a real rational function $f = p/q$ with $q$ free of real zeros and $\deg q \ge \deg p + 2$, the transform can be computed in closed form by residues: for $\lambda \ne 0$, [[§87 Improper Integrals from Fourier Analysis#^prop-87-1|342 Prop. §87.1]] with $a = |\lambda|$ gives $\int f(x)\cos\lambda x\,dx$ and $\int f(x)\sin\lambda x\,dx$, hence $C(\lambda)$.
+
+> [!definition] Definition §15.2: Complex Fourier Integral
+> With the coefficient function $C$ of [[§15★ Complex Methods#^def-15-2|Definition §15.2]], the **complex Fourier integral** of $f$ is
+>
+> $$
+> \int_{-\infty}^{\infty} C(\lambda)e^{i\lambda x}\,d\lambda . \qquad (5)
+> $$
+>
+> Formula (5), read as a formula producing $f$ from $C$, is called the **inverse Fourier transform**.
+>
+> *Powers: 1.10, Equations (5) and (6) · Source: 341 lecture 10.3*
+
+^def-15-new1
 
 The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier Integral#^rem-14-1|Remark: Why It Works]]): on $-a < x < a$ the complex series of Theorem §15.1 reads $f(x) = \sum_n \frac\pi a C_a\big(\frac{n\pi}a\big)e^{in\pi x/a}$ with $C_a(\lambda) = \frac{1}{2\pi}\int_{-a}^{a} f(x)e^{-i\lambda x}\,dx$, a Riemann sum with spacing $\Delta\lambda = \pi/a$, which suggests (5) as $a \to \infty$. The real theorem makes this precise.
 
@@ -204,7 +211,7 @@ The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier In
 
 ^pf-15-2
 
-*Uses:* [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§14 Fourier Integral#^thm-14-1|§14.1]], [[§14 Fourier Integral#^def-14-1|Def. §14.1]], [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (Euler's formula)
+*Uses:* [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§15★ Complex Methods#^def-15-new1|Def. §15.2]], [[§14 Fourier Integral#^thm-14-1|§14.1]], [[§14 Fourier Integral#^def-14-1|Def. §14.1]], [[§14 Fourier Integral#^def-14-new1|Def. §14.1]], [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (Euler's formula)
 
 > [!remark]- Connections
 > - See also: [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]] (the Bromwich inversion formula for the Laplace transform, derived from this theorem).

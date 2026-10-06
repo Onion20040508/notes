@@ -115,7 +115,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 ^thm-14-1
 
 > [!proof]+ Proof
-> This is exactly the Cauchy condition for the convergence of the sequence $(s_n)$ (§10): convergent $\iff$ Cauchy.
+> This is exactly the Cauchy condition for the convergence of the sequence $(s_n)$ (§10a): convergent $\iff$ Cauchy.
 
 ^pf-14-1
 
@@ -426,7 +426,7 @@ To use the comparison test, we need a stock of basic series.
 > [!example] Example §14.5: Three Quick Applications
 > Decide convergence or divergence, by any means:
 >
-> 1. $\displaystyle\sum \frac{3^n}{n^2}$: diverges — the terms $\to +\infty$ (growth scale, §9); or ratio test: $\left|\tfrac{a_{n+1}}{a_n}\right| = 3 \left( \tfrac{n}{n+1} \right)^2 \to 3 > 1$.
+> 1. $\displaystyle\sum \frac{3^n}{n^2}$: diverges — the terms $\to +\infty$ (growth scale, §9a); or ratio test: $\left|\tfrac{a_{n+1}}{a_n}\right| = 3 \left( \tfrac{n}{n+1} \right)^2 \to 3 > 1$.
 >
 > 2. $\displaystyle\sum \frac{n^2}{3^n}$: converges absolutely — ratio $\tfrac13 \left( \tfrac{n+1}{n} \right)^2 \to \tfrac13 < 1$.
 >

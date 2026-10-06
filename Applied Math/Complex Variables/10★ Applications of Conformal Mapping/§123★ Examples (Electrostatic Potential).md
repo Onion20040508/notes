@@ -72,6 +72,8 @@ Two potential problems solved by mapping. In the first, a cylinder split lengthw
 ![[m342-123-1.svg]]
 *Example §123.1. Equipotentials $V = 0.1, \ldots, 0.9$ (blue), arcs of circles through the gaps $\pm1$; the diameter is $V = \frac12$. Flux lines (orange), arcs of circles centered on the $x$ axis, run from the lower electrode ($V = 1$, red) to the upper one ($V = 0$) and cross the equipotentials at right angles.*
 
+*Chain: the map $(i - z)/(i + z)$ earlier in [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)#The Map (i − z)∕(i + z)|Chapter 8]]; the split cylinder later in [[§140a The Split Cylinder and the Boundary Values cos θ#The Split Cylinder|Chapter 12]]*
+
 > [!remark]- Connections
 > - Used in Electromagnetism: Example §123.1 is the split cylinder solved by a Möbius map — [[§C6.4★ The Complex Potential and the Variational Principle#^ex-c6-4-3|EM Example §C6.4.3]].
 

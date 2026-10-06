@@ -417,7 +417,7 @@ This is the boundary-value version of resonance ([[§2★ Nonhomogeneous Linear 
 
 ## Singular Endpoints and Infinite Intervals
 
-If the differential equation (1) has a singular point at $x = l$ or $x = r$ (or both), a Green's function may still be constructed: the boundary condition (2) or (3) is replaced by a boundedness condition ([[§4★ Singular Boundary Value Problems#^def-4-2|Definition §4.2]]), which then also applies to $u_1$ or $u_2$. A similar procedure is followed if the interval is infinite in length ([[§4★ Singular Boundary Value Problems#^def-4-3|Definition §4.3]]).
+If the differential equation (1) has a singular point at $x = l$ or $x = r$ (or both), a Green's function may still be constructed: the boundary condition (2) or (3) is replaced by a boundedness condition ([[§4★ Singular Boundary Value Problems#^def-4-2|Definition §4.2]]), which then also applies to $u_1$ or $u_2$. A similar procedure is followed if the interval is infinite in length ([[§4★ Singular Boundary Value Problems#^def-4-new1|Definition §4.3]]).
 
 > [!example] Example §5.4: A Singular Endpoint
 > Construct the Green's function for

@@ -98,6 +98,11 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 
 ## Proof of the Cauchy–Goursat Theorem
 
+> [!remark] Remark: Why It Works
+> On each small subregion, $f(z)$ is a linear function $f(z_j) + f'(z_j)(z - z_j)$ plus an error $(z - z_j)\delta_j(z)$ with $|\delta_j| < \varepsilon$. The linear part has an antiderivative, so its integral around the closed boundary $C_j$ is $0$. The error is at most $\varepsilon$ times (diameter) times (length of $C_j$), which for a square of side $s_j$ is a multiple of $\varepsilon s_j^2$, the area; summed over all squares, this gives a multiple of $\varepsilon$ times the total area. The partial squares add a multiple of $\varepsilon$ times the length of $C$. Since the integrals along interior sides cancel, the sum of the integrals around the $C_j$ is $\int_C f(z)\,dz$, which is therefore smaller than any multiple of $\varepsilon$.
+
+^rem-51-1
+
 > [!theorem] Theorem §51.3: Cauchy–Goursat Theorem
 > If a function $f$ is analytic at all points interior to and on a simple closed contour $C$, then
 >
@@ -110,11 +115,6 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 > *B&C: Sec. 50, Theorem (proved in Sec. 51)*
 
 ^thm-51-3
-
-> [!remark] Remark: Why It Works
-> On each small subregion, $f(z)$ is a linear function $f(z_j) + f'(z_j)(z - z_j)$ plus an error $(z - z_j)\delta_j(z)$ with $|\delta_j| < \varepsilon$. The linear part has an antiderivative, so its integral around the closed boundary $C_j$ is $0$. The error is at most $\varepsilon$ times (diameter) times (length of $C_j$), which for a square of side $s_j$ is a multiple of $\varepsilon s_j^2$, the area; summed over all squares, this gives a multiple of $\varepsilon$ times the total area. The partial squares add a multiple of $\varepsilon$ times the length of $C$. Since the integrals along interior sides cancel, the sum of the integrals around the $C_j$ is $\int_C f(z)\,dz$, which is therefore smaller than any multiple of $\varepsilon$.
-
-^rem-51-1
 
 > [!proof]- Proof
 > If $C$ is negatively oriented, $\int_C f(z)\,dz = -\int_{-C} f(z)\,dz$, and $-C$ is positively oriented; so it suffices to treat a positively oriented $C$. Let $R$ be the closed region consisting of $C$ and the points interior to it.

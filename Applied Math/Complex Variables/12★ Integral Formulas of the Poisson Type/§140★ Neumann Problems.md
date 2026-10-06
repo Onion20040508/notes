@@ -244,7 +244,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 > 1. **Check the data.** On a closed curve (circle) the prescribed normal derivative must have mean zero, (4); otherwise there is no solution.
 > 2. **Disk.** $U = \frac{1}{2\pi}\int Q\,G\,d\phi + U_0$, (6); the constant $U_0$ is $U$ at the center and is not determined by the data. For trigonometric data expand $\ln(1 - 2\rho\cos\psi + \rho^2) = -2\sum_{n\ge1}\rho^n\cos n\psi/n$ ([[§140★ Neumann Problems#^ex-140-1|Example §140.1]]).
 > 3. **Exterior, half plane, quadrant.** Use (7), (10) or (13); for a quadrant with zero values on one edge use the odd extension, (13); for a semicircle, extend $G$ oddly or evenly across the diameter ([[§140★ Neumann Problems#^ex-140-3|Example §140.3]]).
-> 4. **Fluxes.** In heat problems the normal derivative is $-\Phi/K$ by Fourier's law ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]); to find the flux through another edge, differentiate the integral under the integral sign.
+> 4. **Fluxes.** In heat problems the normal derivative is $-\Phi/K$ by Fourier's law ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]); to find the flux through another edge, differentiate the integral under the integral sign.
 
 ^rem-140-2
 
@@ -284,7 +284,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 > \frac A\pi\ln\Big(1 + \frac{1}{y^2}\Big) .
 > $$
 >
-> **The data.** By Fourier's law $\Phi = -K\,dT/dN$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]), with $N$ pointing into the plate ($+y$) on the edge $y = 0$: $-KT_y = A$ on $0 < x < 1$ and $T_y = 0$ for $x > 1$. So $G(x) = -A/K$ on $0 < x < 1$ and $0$ for $x > 1$; extend it oddly. It has compact support, so (9) holds, and (13) gives
+> **The data.** By Fourier's law $\Phi = -K\,dT/dN$ ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]), with $N$ pointing into the plate ($+y$) on the edge $y = 0$: $-KT_y = A$ on $0 < x < 1$ and $T_y = 0$ for $x > 1$. So $G(x) = -A/K$ on $0 < x < 1$ and $0$ for $x > 1$; extend it oddly. It has compact support, so (9) holds, and (13) gives
 >
 > $$
 > T(x, y) = -\frac{A}{2\pi K}\int_0^1\ln\Big[\frac{(t - x)^2 + y^2}{(t + x)^2 + y^2}\Big]dt ,

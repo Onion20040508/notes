@@ -26,8 +26,22 @@ V = \phi_x(x, y) + i\phi_y(x, y) = \operatorname{grad}\phi(x, y), \qquad (2)
 $$
 where $\phi$ is the velocity potential; when $V \ne 0$ it is normal to the equipotential through $(x, y)$.
 
-> [!definition] Definition §125.1: Stream Function; Streamlines; Complex Potential
-> Let $\phi$ be the velocity potential of an irrotational flow of an incompressible fluid in a [[§52 Simply Connected Domains#^def-52-1|simply connected domain]], and let $\psi(x, y)$ be a harmonic conjugate of $\phi$ ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]). Then $\psi$ is the **stream function** of the flow, the curves $\psi(x, y) = c_2$ are the **streamlines**, and the analytic function
+> [!definition] Definition §125.1: Stream Function
+> Let $\phi$ be the velocity potential of an irrotational flow of an incompressible fluid in a [[§52 Simply Connected Domains#^def-52-1|simply connected domain]], and let $\psi(x, y)$ be a harmonic conjugate of $\phi$ ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]). Then $\psi$ is the **stream function** of the flow.
+>
+> *B&C: Sec. 125 (text)*
+
+^def-125-1
+
+> [!definition] Definition §125.2: Streamlines
+> The curves $\psi(x, y) = c_2$, where $\psi$ is the [[§125★ The Stream Function#^def-125-1|stream function]], are the **streamlines**.
+>
+> *B&C: Sec. 125 (text)*
+
+^def-125-new1
+
+> [!definition] Definition §125.3: Complex Potential
+> With $\phi$ the velocity potential and $\psi$ the [[§125★ The Stream Function#^def-125-1|stream function]], the analytic function
 >
 > $$
 > F(z) = \phi(x, y) + i\psi(x, y)
@@ -37,33 +51,7 @@ where $\phi$ is the velocity potential; when $V \ne 0$ it is normal to the equip
 >
 > *B&C: Sec. 125 (text)*
 
-^def-125-1
-
-> [!theorem] Proposition §125.1: Velocity from the Complex Potential
-> The velocity is tangent to the streamline through each point where it is not zero, and
->
-> $$
-> V = \overline{F'(z)}, \qquad |V| = |F'(z)| . \qquad (3)
-> $$
->
-> In particular a boundary across which fluid cannot flow is a streamline.
->
-> *B&C: Sec. 125, Equation (3) and text*
-
-^prop-125-1
-
-> [!proof]+ Proof
-> Since $F$ is analytic, $F'(z) = \phi_x + i\psi_x$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]), and by the Cauchy–Riemann equation $\psi_x = -\phi_y$,
->
-> $$
-> F'(z) = \phi_x(x, y) - i\phi_y(x, y) .
-> $$
->
-> Comparing with (2), $V = \overline{F'(z)}$, and $|V| = |F'(z)|$. Where $V \ne 0$, $\operatorname{grad}\psi = (-\phi_y, \phi_x)$ is $\operatorname{grad}\phi$ turned through $+\pi/2$ and is nonzero, so the streamline $\psi = c_2$ is a smooth curve with normal $\operatorname{grad}\psi$ and tangent parallel to $\operatorname{grad}\phi = V$ (as in [[§118★ Steady Temperatures#^prop-118-2|Proposition §118.2]](b)). On a boundary arc that fluid cannot cross, the normal component of $V$ is $0$; by Proposition §125.2 below, $\psi$ changes along the arc at the rate $V_N = 0$, so $\psi$ is constant there and the arc is a streamline.
-
-^pf-125-1
-
-*Uses:* [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]], [[§125★ The Stream Function#^prop-125-2|§125.2]]
+^def-125-new2
 
 By [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]], equation (9) there, if $\phi$ is harmonic in a simply connected domain $D$, a harmonic conjugate is
 $$
@@ -103,6 +91,32 @@ the integral being independent of path.
 
 > [!remark]- Connections
 > - The flux of a plane field across a curve as the line integral of its normal component, $\int_C \mathbf F\cdot\mathbf n\,ds = \int_C -q\,dx + p\,dy$ for $\mathbf F = (p, q)$, and its form for closed curves: [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form). In the language of forms, $\psi$ is a primitive of the flux form $-q\,dx + p\,dy$, which is closed exactly when the flow is incompressible.
+
+> [!theorem] Proposition §125.1: Velocity from the Complex Potential
+> The velocity is tangent to the streamline through each point where it is not zero, and
+>
+> $$
+> V = \overline{F'(z)}, \qquad |V| = |F'(z)| . \qquad (3)
+> $$
+>
+> In particular a boundary across which fluid cannot flow is a streamline.
+>
+> *B&C: Sec. 125, Equation (3) and text*
+
+^prop-125-1
+
+> [!proof]+ Proof
+> Since $F$ is analytic, $F'(z) = \phi_x + i\psi_x$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]), and by the Cauchy–Riemann equation $\psi_x = -\phi_y$,
+>
+> $$
+> F'(z) = \phi_x(x, y) - i\phi_y(x, y) .
+> $$
+>
+> Comparing with (2), $V = \overline{F'(z)}$, and $|V| = |F'(z)|$. Where $V \ne 0$, $\operatorname{grad}\psi = (-\phi_y, \phi_x)$ is $\operatorname{grad}\phi$ turned through $+\pi/2$ and is nonzero, so the streamline $\psi = c_2$ is a smooth curve with normal $\operatorname{grad}\psi$ and tangent parallel to $\operatorname{grad}\phi = V$ (as in [[§118★ Steady Temperatures#^prop-118-2|Proposition §118.2]](b)). On a boundary arc that fluid cannot cross, the normal component of $V$ is $0$; by [[§125★ The Stream Function#^prop-125-2|Proposition §125.2]] above, $\psi$ changes along the arc at the rate $V_N = 0$, so $\psi$ is constant there and the arc is a streamline.
+
+^pf-125-1
+
+*Uses:* [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§125★ The Stream Function#^def-125-new1|Def. §125.2]], [[§125★ The Stream Function#^def-125-new2|Def. §125.3]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]], [[§125★ The Stream Function#^prop-125-2|§125.2]]
 
 ## Examples
 

@@ -131,7 +131,7 @@ The first theorem provides a useful alternative definition. Both parts of its pr
 ## Isolated Zeros
 
 > [!definition] Definition §82.2: Isolated Zero
-> A zero $z_0$ of a function $f$ is **isolated** if there is a [[§12★ Regions in the Complex Plane#^def-12-1|deleted neighborhood]] $0 < |z - z_0| < \varepsilon$ of $z_0$ in which $f(z)$ is nonzero. A function **has only isolated zeros** if each of its zeros is isolated. (Compare the definition of an isolated singular point, [[§74 Isolated Singular Points#^def-74-1|Definition §74.1]].)
+> A zero $z_0$ of a function $f$ is **isolated** if there is a [[§12★ Regions in the Complex Plane#^def-12-new1|deleted neighborhood]] $0 < |z - z_0| < \varepsilon$ of $z_0$ in which $f(z)$ is nonzero. A function **has only isolated zeros** if each of its zeros is isolated. (Compare the definition of an isolated singular point, [[§74 Isolated Singular Points#^def-74-1|Definition §74.1]].)
 >
 > *B&C: Sec. 82 (text)*
 

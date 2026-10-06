@@ -189,7 +189,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > f(t) = \sin 2t - u_\pi(t)\sin\big(2(t - \pi)\big) + u_\pi(t)\Big(\frac{t - \pi}{\pi} + 1\Big) - u_{2\pi}(t)\,\frac{t - 2\pi}{\pi} .
 > $$
 >
-> **(iii)** With $\mathcal{L}\{\sin 2t\} = \frac{2}{s^2 + 4}$, $\mathcal{L}\{\frac{t}{\pi} + 1\} = \frac{1}{\pi s^2} + \frac1s$, $\mathcal{L}\{\frac{t}{\pi}\} = \frac{1}{\pi s^2}$ and Theorem §23.2,
+> **(iii)** With $\mathcal{L}\{\sin 2t\} = \frac{2}{s^2 + 4}$, $\mathcal{L}\{\frac{t}{\pi} + 1\} = \frac{1}{\pi s^2} + \frac1s$, $\mathcal{L}\{\frac{t}{\pi}\} = \frac{1}{\pi s^2}$ and [[§23 Step Functions#^thm-23-2|Theorem §23.2]],
 >
 > $$
 > \mathcal{L}\{f(t)\} = \frac{2}{s^2 + 4}\big(1 - e^{-\pi s}\big) + e^{-\pi s}\Big(\frac{1}{\pi s^2} + \frac{1}{s}\Big) - \frac{e^{-2\pi s}}{\pi s^2} .

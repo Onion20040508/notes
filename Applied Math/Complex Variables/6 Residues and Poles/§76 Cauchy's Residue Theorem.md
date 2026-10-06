@@ -18,7 +18,7 @@ If $f$ is analytic inside and on a positively oriented simple closed contour $C$
 If $f$ is analytic inside a simple closed contour $C$ except for a *finite* number of singular points, those points are isolated ([[§74 Isolated Singular Points#^prop-74-1|Proposition §74.1]]), and each has a residue.
 
 > [!theorem] Theorem §76.1: Cauchy's Residue Theorem
-> Let $C$ be a [[§43 Contours#^def-43-5|simple closed contour]], described in the positive sense. If a function $f$ is analytic inside and on $C$ except for a finite number of singular points $z_k$ ($k = 1, 2, \ldots, n$) inside $C$ (Fig. 93 in B&C), then
+> Let $C$ be a [[§43 Contours#^def-43-new5|simple closed contour]], described in the positive sense. If a function $f$ is analytic inside and on $C$ except for a finite number of singular points $z_k$ ($k = 1, 2, \ldots, n$) inside $C$ (Fig. 93 in B&C), then
 >
 > $$
 > \int_C f(z)\,dz = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) . \qquad (1)

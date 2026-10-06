@@ -7,7 +7,7 @@ bc: "60"
 aliases: ["B&C 60"]
 tags: [complex-variables, math342]
 ---
-← [[§59 Maximum Modulus Principle]] · ↑ [[· 5 Series]] · [[§61 Convergence of Series]] →
+← [[§59b The Function z̄]] · ↑ [[· 5 Series]] · [[§61 Convergence of Series]] →
 
 *Brown–Churchill, Section 60 · MAT 342 HW 9 (optional reading).*
 

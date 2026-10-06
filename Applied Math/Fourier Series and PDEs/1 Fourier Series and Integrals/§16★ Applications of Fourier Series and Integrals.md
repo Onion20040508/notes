@@ -176,7 +176,7 @@ $$
 
 ^pf-16-2
 
-*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
+*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
 
 The exceptional values $p = n^2\pi^2/a^2$ are the eigenvalues of $u'' + \lambda u = 0$, $u(0) = u(a) = 0$, with eigenfunctions $\sin(n\pi x/a)$ ([[§3★ Boundary Value Problems#^prop-3-3|Proposition §3.3]]). That the sine functions turn $d^2/dx^2$ into multiplication by $-n^2\pi^2/a^2$ is the reason they appear in heat and wave problems with these boundary conditions, and the solvability condition $b_m = 0$ is the prototype of the Sturm–Liouville alternative ([[§24 Expansion in Series of Eigenfunctions|§24]]).
 
@@ -295,7 +295,7 @@ $$
 
 ^pf-16-3
 
-*Uses:* [[§16★ Applications of Fourier Series and Integrals#^def-16-1|Def. §16.1]], [[§15★ Complex Methods#^thm-15-1|§15.1]], [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§11★ Mean Error and Convergence in Mean#^thm-11-6|§11.6]], [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|556 Thm. §21.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
+*Uses:* [[§16★ Applications of Fourier Series and Integrals#^def-16-1|Def. §16.1]], [[§15★ Complex Methods#^thm-15-1|§15.1]], [[§15★ Complex Methods#^def-15-2|Def. §15.2]], [[§15★ Complex Methods#^def-15-new1|Def. §15.2]], [[§11★ Mean Error and Convergence in Mean#^thm-11-6|§11.6]], [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|556 Thm. §21.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
 
 > [!remark]- Connections
 > - The proof is Hilbert-space geometry: $e^{-in\pi\omega/\Omega}/\sqrt{2\Omega}$ is an orthonormal basis of $L^2(-\Omega, \Omega)$ (the Fourier basis of [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]], rescaled), the inverse transform carries it to the functions $\frac{\sin(\Omega t - n\pi)}{\Omega t - n\pi}$, and (3) is the expansion of $f$ in this basis of band-limited signals, with the samples as coordinates.

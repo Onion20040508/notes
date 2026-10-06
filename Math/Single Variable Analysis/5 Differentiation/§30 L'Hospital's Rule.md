@@ -44,7 +44,7 @@ The idea: differentiating can *simplify* $f$ and $g$, letting us escape the inde
 > [!example] Example §30.1: Four Computations
 > **(1)** $\displaystyle\lim_{x\to0} \frac{\sin x}{x} = \lim_{x\to0} \frac{\cos x}{1} = \frac11 = 1$ — after differentiating, the denominator is $1 \neq 0$ and $\cos$ is continuous: the difficulty has been avoided.
 >
-> **(2)** $\displaystyle\lim_{x\to+\infty} \frac{x}{e^x} = \lim_{x\to+\infty} \frac{1}{e^x} = 0$ (type $\tfrac\infty\infty$; this finally makes rigorous the growth comparison borrowed in §9).
+> **(2)** $\displaystyle\lim_{x\to+\infty} \frac{x}{e^x} = \lim_{x\to+\infty} \frac{1}{e^x} = 0$ (type $\tfrac\infty\infty$; this finally makes rigorous the growth comparison borrowed in §9a).
 >
 > **(3)** $\displaystyle\lim_{x\to0} \frac{1 - \cos x}{x^2} = \lim_{x\to0} \frac{\sin x}{2x} = \lim_{x\to0} \frac{\cos x}{2} = \frac12$ — two applications in a row, each hypothesis re-checked (the intermediate quotient is again $\tfrac00$).
 >

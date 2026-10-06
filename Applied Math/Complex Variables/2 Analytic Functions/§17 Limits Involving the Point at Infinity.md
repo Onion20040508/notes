@@ -15,14 +15,19 @@ Adding a single point $\infty$ to the complex plane makes statements such as "$1
 
 ## The Extended Plane and the Riemann Sphere
 
-> [!definition] Definition §17.1: Extended Complex Plane and Riemann Sphere
+> [!definition] Definition §17.1: Extended Complex Plane
 > The **point at infinity**, denoted $\infty$, is a point adjoined to the complex plane; the complex plane together with this point is the **extended complex plane**.
->
-> To visualize it, think of the complex plane as passing through the equator of a unit sphere centered at the origin. To each point $z$ of the plane there corresponds exactly one point $P$ on the sphere: the point where the line through $z$ and the north pole $N$ meets the sphere. In like manner, to each point $P$ of the sphere other than $N$ there corresponds exactly one point $z$ of the plane. Letting $N$ correspond to the point at infinity gives a one to one correspondence between the points of the sphere and the points of the extended complex plane. The sphere is the **Riemann sphere**, and the correspondence is **stereographic projection**.
 >
 > *B&C: Sec. 17 (text)*
 
 ^def-17-1
+
+> [!definition] Definition §17.2: Riemann Sphere
+> To visualize the extended complex plane, think of the complex plane as passing through the equator of a unit sphere centered at the origin. To each point $z$ of the plane there corresponds exactly one point $P$ on the sphere: the point where the line through $z$ and the north pole $N$ meets the sphere. In like manner, to each point $P$ of the sphere other than $N$ there corresponds exactly one point $z$ of the plane. Letting $N$ correspond to the point at infinity gives a one to one correspondence between the points of the sphere and the points of the extended complex plane. The sphere is the **Riemann sphere**, and the correspondence is **stereographic projection**.
+>
+> *B&C: Sec. 17 (text)*
+
+^def-17-new1
 
 > [!definition] Definition §17.2: Neighborhood of Infinity
 > For each small positive number $\varepsilon$, the set $|z| > 1/\varepsilon$ is a **neighborhood of $\infty$**.

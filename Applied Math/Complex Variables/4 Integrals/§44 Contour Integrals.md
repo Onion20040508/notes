@@ -67,18 +67,23 @@ The value does not depend on the parametrization used, for the changes of parame
 
 ## Properties
 
-> [!definition] Definition §44.2: Opposite, Sum and Difference of Contours
+> [!definition] Definition §44.2: Opposite of a Contour
 > If $C$ is a contour, $-C$ denotes the same set of points with the order reversed: if $C$ has the representation (1), a representation of $-C$ is
 >
 > $$
 > z = z(-t) \qquad (-b \le t \le -a) . \qquad (3)
 > $$
 >
+> *B&C: Sec. 44 (text)*
+
+^def-44-2
+
+> [!definition] Definition §44.3: Sum and Difference of Contours
 > If $C_1$ is a contour from $z_1$ to $z_2$ and $C_2$ is a contour from $z_2$ to $z_3$, the contour $C$ consisting of $C_1$ followed by $C_2$ is their **sum**, $C = C_1 + C_2$. When $C_1$ and $C_2$ have the same final point, $C_1 - C_2$ denotes the sum $C_1 + (-C_2)$.
 >
 > *B&C: Sec. 44 (text)*
 
-^def-44-2
+^def-44-new1
 
 (A single parametrization of $C_1 + C_2$ is obtained by shifting the parameter interval of $C_2$ linearly so that it starts where that of $C_1$ ends; by Proposition §44.1 it does not matter how.)
 
@@ -126,7 +131,7 @@ The value does not depend on the parametrization used, for the changes of parame
 
 ^pf-44-2
 
-*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§44 Contour Integrals#^prop-44-1|§44.1]], [[§42 Definite Integrals of Functions w(t)#^prop-42-1|§42.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§43 Contours#^lem-43-1|§43.1]]
+*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§44 Contour Integrals#^def-44-new1|Def. §44.3]], [[§44 Contour Integrals#^prop-44-1|§44.1]], [[§42 Definite Integrals of Functions w(t)#^prop-42-1|§42.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§43 Contours#^lem-43-1|§43.1]]
 
 > [!remark]- Connections
 > - Property (6) is [[§108 Line Integrals#^thm-108-4|Calc Thm. §108.4]] (reversing the orientation of a line integral with respect to $x$ or $y$), and (7) is the additivity over pieces used there for piecewise-smooth curves.

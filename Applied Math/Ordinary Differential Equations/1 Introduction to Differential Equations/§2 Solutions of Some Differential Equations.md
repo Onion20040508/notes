@@ -218,7 +218,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 ^ex-2-3
 
 ![[m331-2-1.svg]]
-*The dropped object of Examples §2.2 and §2.3. (a) The velocity rises toward the terminal velocity $49$ m/s but is still only $43.01$ m/s at the moment of impact. (b) The distance fallen; it reaches $300$ m at $T \approx 10.51$ s. Dotted: the formulas continued past impact, where they no longer describe the motion.*
+*The dropped object of [[§2 Solutions of Some Differential Equations#^ex-2-2|Examples §2.2]] and [[§2 Solutions of Some Differential Equations#^ex-2-3|§2.3]]. (a) The velocity rises toward the terminal velocity $49$ m/s but is still only $43.01$ m/s at the moment of impact. (b) The distance fallen; it reaches $300$ m at $T \approx 10.51$ s. Dotted: the formulas continued past impact, where they no longer describe the motion.*
 
 ## Further Remarks on Mathematical Modeling
 

@@ -149,7 +149,7 @@ In practice one solves (8) by row reduction and substitutes $\mathbf{c}$ into (6
 > [!proof]+ Proof
 > **(a)** Apply [[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](b) with $\mathbf{\Psi} = \mathbf{\Phi}$: since $\mathbf{\Phi}^{-1}(t_0) = \mathbf{I}^{-1} = \mathbf{I}$, (10) becomes (14).
 >
-> **(b)** By Theorem §33.1(b) and part (a), $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$ and $\mathbf{\Phi}(t)\mathbf{x}^0$ both solve the same initial value problem, so they are equal for every $t$ (uniqueness, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]]). Taking $\mathbf{x}^0 = \mathbf{e}^{(j)}$ shows that column $j$ of $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)$ equals column $j$ of $\mathbf{\Phi}(t)$, for each $j$.
+> **(b)** By [[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](b) and part (a), $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$ and $\mathbf{\Phi}(t)\mathbf{x}^0$ both solve the same initial value problem, so they are equal for every $t$ (uniqueness, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]]). Taking $\mathbf{x}^0 = \mathbf{e}^{(j)}$ shows that column $j$ of $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)$ equals column $j$ of $\mathbf{\Phi}(t)$, for each $j$.
 
 ^pf-33-2
 
@@ -176,7 +176,7 @@ $\mathbf{\Phi}(t)$ is often more complicated than a convenient $\mathbf{\Psi}(t)
 > \mathbf{\Phi}(t) = \begin{pmatrix} \frac12 e^{3t} + \frac12 e^{-t} & \frac14 e^{3t} - \frac14 e^{-t} \\[4pt] e^{3t} - e^{-t} & \frac12 e^{3t} + \frac12 e^{-t} \end{pmatrix} . \qquad (16)
 > $$
 >
-> **Check by [[§33★ Fundamental Matrices#^thm-33-2|Theorem §33.2]](b).** With $\mathbf{\Psi}$ from Example §33.1, $\mathbf{\Psi}(0) = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}$ has determinant $-4$, so $\mathbf{\Psi}^{-1}(0) = \frac{1}{-4}\begin{pmatrix} -2 & -1 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} \frac12 & \frac14 \\ \frac12 & -\frac14 \end{pmatrix}$ and
+> **Check by [[§33★ Fundamental Matrices#^thm-33-2|Theorem §33.2]](b).** With $\mathbf{\Psi}$ from [[§33★ Fundamental Matrices#^ex-33-1|Example §33.1]], $\mathbf{\Psi}(0) = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}$ has determinant $-4$, so $\mathbf{\Psi}^{-1}(0) = \frac{1}{-4}\begin{pmatrix} -2 & -1 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} \frac12 & \frac14 \\ \frac12 & -\frac14 \end{pmatrix}$ and
 >
 > $$
 > \mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(0) = \begin{pmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{pmatrix}\begin{pmatrix} \frac12 & \frac14 \\ \frac12 & -\frac14 \end{pmatrix} = \begin{pmatrix} \frac12 e^{3t} + \frac12 e^{-t} & \frac14 e^{3t} - \frac14 e^{-t} \\[4pt] e^{3t} - e^{-t} & \frac12 e^{3t} + \frac12 e^{-t} \end{pmatrix} .
@@ -344,7 +344,7 @@ To justify the name, $e^{\mathbf{A}t}$ should also have the algebraic properties
 
 > [!remark] Remark: Starting at t₀ ≠ 0; Sums in the Exponent
 > - **Initial time $t_0$.** For constant $\mathbf{A}$, the fundamental matrix with $\mathbf{\Phi}(t_0) = \mathbf{I}$ is $e^{\mathbf{A}(t - t_0)}$: by [[§33★ Fundamental Matrices#^thm-33-2|Theorem §33.2]](b) with $\mathbf{\Psi} = e^{\mathbf{A}t}$ and [[§33★ Fundamental Matrices#^prop-33-6|Proposition §33.6]](c), it is $e^{\mathbf{A}t}(e^{\mathbf{A}t_0})^{-1} = e^{\mathbf{A}(t - t_0)}$. So $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{x}^0$ has the solution $\mathbf{x} = e^{\mathbf{A}(t - t_0)}\mathbf{x}^0$.
-> - **What the law does not say.** Proposition §33.6 multiplies exponentials of the *same* matrix. For two matrices $\mathbf{B}$, $\mathbf{C}$ that do not commute, $e^{\mathbf{B}}e^{\mathbf{C}}$ (the series (23) at $t = 1$) is in general not $e^{\mathbf{B} + \mathbf{C}}$. For $\mathbf{B} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ and $\mathbf{C} = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$, $\mathbf{B}^2 = \mathbf{C}^2 = \mathbf{0}$, so $e^{\mathbf{B}}e^{\mathbf{C}} = (\mathbf{I} + \mathbf{B})(\mathbf{I} + \mathbf{C}) = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}$; but $(\mathbf{B} + \mathbf{C})^2 = \mathbf{I}$, so $e^{\mathbf{B} + \mathbf{C}} = \cosh 1\,\mathbf{I} + \sinh 1\,(\mathbf{B} + \mathbf{C})$, whose diagonal entries are $\cosh 1 \approx 1.543$.
+> - **What the law does not say.** [[§33★ Fundamental Matrices#^prop-33-6|Proposition §33.6]] multiplies exponentials of the *same* matrix. For two matrices $\mathbf{B}$, $\mathbf{C}$ that do not commute, $e^{\mathbf{B}}e^{\mathbf{C}}$ (the series (23) at $t = 1$) is in general not $e^{\mathbf{B} + \mathbf{C}}$. For $\mathbf{B} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ and $\mathbf{C} = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$, $\mathbf{B}^2 = \mathbf{C}^2 = \mathbf{0}$, so $e^{\mathbf{B}}e^{\mathbf{C}} = (\mathbf{I} + \mathbf{B})(\mathbf{I} + \mathbf{C}) = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}$; but $(\mathbf{B} + \mathbf{C})^2 = \mathbf{I}$, so $e^{\mathbf{B} + \mathbf{C}} = \cosh 1\,\mathbf{I} + \sinh 1\,(\mathbf{B} + \mathbf{C})$, whose diagonal entries are $\cosh 1 \approx 1.543$.
 
 ^rem-33-2
 
@@ -363,12 +363,19 @@ To justify the name, $e^{\mathbf{A}t}$ should also have the algebraic properties
 
 A system of linear equations, algebraic or differential, is hard mainly because it is *coupled*: some equations involve more than one unknown, so all must be solved simultaneously. If each equation involves only one unknown, each can be solved by itself. So one tries to transform the system into an equivalent *uncoupled* one, which means transforming the coefficient matrix $\mathbf{A}$ into a *diagonal* matrix. Eigenvectors do this.
 
-> [!definition] Definition §33.4: Similar Matrices; Diagonalizable Matrix
-> Let $\mathbf{T}$ be a nonsingular matrix. Passing from $\mathbf{A}$ to $\mathbf{T}^{-1}\mathbf{A}\mathbf{T}$ is a **similarity transformation**, and $\mathbf{A}$ is said to be **similar** to $\mathbf{T}^{-1}\mathbf{A}\mathbf{T}$. If $\mathbf{T}^{-1}\mathbf{A}\mathbf{T} = \mathbf{D}$ is a diagonal matrix for some nonsingular $\mathbf{T}$, then $\mathbf{A}$ is **diagonalizable**.
+> [!definition] Definition §33.4: Similar Matrices
+> Let $\mathbf{T}$ be a nonsingular matrix. Passing from $\mathbf{A}$ to $\mathbf{T}^{-1}\mathbf{A}\mathbf{T}$ is a **similarity transformation**, and $\mathbf{A}$ is said to be **similar** to $\mathbf{T}^{-1}\mathbf{A}\mathbf{T}$.
 >
 > *BDP: 7.7 (text)*
 
 ^def-33-4
+
+> [!definition] Definition §33.4: Diagonalizable Matrix
+> If $\mathbf{T}^{-1}\mathbf{A}\mathbf{T} = \mathbf{D}$ is a diagonal matrix for some nonsingular $\mathbf{T}$, then $\mathbf{A}$ is **diagonalizable**.
+>
+> *BDP: 7.7 (text)*
+
+^def-33-new1
 
 > [!theorem] Theorem §33.7: Diagonalization by Eigenvectors
 > Let $\mathbf{A}$ be an $n \times n$ matrix.
@@ -416,7 +423,7 @@ A system of linear equations, algebraic or differential, is hard mainly because 
 
 ^pf-33-7
 
-*Uses:* [[§33★ Fundamental Matrices#^def-33-4|Def. §33.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|§29.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|§29.5]], [[§28 Matrices#^def-28-new2|Def. §28.3]] (inner product)
+*Uses:* [[§33★ Fundamental Matrices#^def-33-4|Def. §33.4]], [[§33★ Fundamental Matrices#^def-33-new1|Def. §33.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|§29.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|§29.5]], [[§28 Matrices#^def-28-new2|Def. §28.3]] (inner product)
 
 > [!remark]- Connections
 > - The same theorem in Lay: [[§34 Diagonalization#^thm-34-1|235 Thm. §34.1]] (written $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, with $\mathbf{P} = \mathbf{T}$); rigorous operator form, [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]].
@@ -494,7 +501,7 @@ The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(
 > \mathbf{\Psi}(t) = \mathbf{T}e^{\mathbf{D}t} = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} e^{3t} & 0 \\ 0 & e^{-t} \end{pmatrix} = \begin{pmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{pmatrix}, \qquad (49)
 > $$
 >
-> the fundamental matrix of Example §33.1. Going one step further ([[§33★ Fundamental Matrices#^thm-33-8|Theorem §33.8]](d)),
+> the fundamental matrix of [[§33★ Fundamental Matrices#^ex-33-1|Example §33.1]]. Going one step further ([[§33★ Fundamental Matrices#^thm-33-8|Theorem §33.8]](d)),
 >
 > $$
 > e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1} = \begin{pmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{pmatrix}\begin{pmatrix} \frac12 & \frac14 \\[2pt] \frac12 & -\frac14 \end{pmatrix} = \begin{pmatrix} \frac12 e^{3t} + \frac12 e^{-t} & \frac14 e^{3t} - \frac14 e^{-t} \\[4pt] e^{3t} - e^{-t} & \frac12 e^{3t} + \frac12 e^{-t} \end{pmatrix},

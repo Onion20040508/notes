@@ -34,7 +34,7 @@ To find a flow in a region of the $z$ plane, map the region conformally onto one
 
 ^pf-126-1
 
-*Uses:* [[§20 Rules for Differentiation#^thm-20-4|§20.4]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], [[§125★ The Stream Function#^def-125-1|Def. §125.1]]
+*Uses:* [[§20 Rules for Differentiation#^thm-20-4|§20.4]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§125★ The Stream Function#^def-125-new1|Def. §125.2]], [[§125★ The Stream Function#^def-125-new2|Def. §125.3]]
 
 To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used for the complex potential, velocity potential and stream function in both planes.
 

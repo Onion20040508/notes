@@ -7,7 +7,7 @@ bc: "84"
 aliases: ["B&C 84"]
 tags: [complex-variables, math342]
 ---
-← [[§83 Zeros and Poles]] · ↑ [[· 6 Residues and Poles]] · [[§85 Evaluation of Improper Integrals]] →
+← [[§83 Zeros and Poles]] · ↑ [[· 6 Residues and Poles]] · [[§84a The Function e^(1∕z)]] →
 
 *Brown–Churchill, Section 84 · MAT 342 HW 12, Practice Final (Spring 2012).*
 
@@ -16,7 +16,7 @@ The three types of isolated singular points, defined through Laurent series in [
 ## Removable Singular Points
 
 > [!theorem] Theorem §84.1: Bounded Near a Removable Singular Point
-> If $z_0$ is a removable singular point of a function $f$, then $f$ is bounded and analytic in some [[§12★ Regions in the Complex Plane#^def-12-1|deleted neighborhood]] $0 < |z - z_0| < \varepsilon$ of $z_0$.
+> If $z_0$ is a removable singular point of a function $f$, then $f$ is bounded and analytic in some [[§12★ Regions in the Complex Plane#^def-12-new1|deleted neighborhood]] $0 < |z - z_0| < \varepsilon$ of $z_0$.
 >
 > *B&C: Sec. 84, Theorem 1*
 

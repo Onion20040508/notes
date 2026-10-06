@@ -248,13 +248,13 @@ tags: [linear-algebra]
 
 ^ladr-6-39
 
+> [!remark]- Connections
+> - On an inner product space every functional is $\langle\cdot,v\rangle$: [[Riesz representation theorem|6.42]].
+
 > [!definition] Definition 6.39b: Dual space, V′
 > The *dual space* is $V'=\Lin(V,\F)$ (as in [[§12 Duality#^ladr-3-110|3.110]]).
 
 ^ladr-6-39b
-
-> [!remark]- Connections
-> - On an inner product space every functional is $\langle\cdot,v\rangle$: [[Riesz representation theorem|6.42]].
 
 > [!example] Example 6.40: Linear functional on F³ (p. 204)
 > $\varphi(z_1,z_2,z_3)=2z_1-5z_2+z_3$ on $\F^3$ equals $\langle z,w\rangle$ with $w=(2,-5,1)$: the Riesz vector ([[Riesz representation theorem|6.42]]) can be read off (over $\C$ it is the conjugate of the coefficient list, here real).

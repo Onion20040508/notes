@@ -492,7 +492,7 @@ The Laplace transform solves systems in very much the same way as single equatio
 > \mathbf{x}(t) = \begin{pmatrix} 2 \\ 1 \end{pmatrix}e^{-t} - \frac23\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-3t} + \begin{pmatrix} 1 \\ 1 \end{pmatrix}te^{-t} + \begin{pmatrix} 1 \\ 2 \end{pmatrix}t - \frac13\begin{pmatrix} 4 \\ 5 \end{pmatrix} . \qquad (48)
 > $$
 >
-> Check: at $t = 0$, $\mathbf{x}(0) = (2 - \frac23 - \frac43,\ 1 + \frac23 - \frac53)^T = \mathbf{0}$. This is the particular solution with $\mathbf{x}(0) = \mathbf{0}$, so it differs slightly from those of Examples §35.1–§35.3: it is (15) with $k_1 = -\frac23$ and $k_2 = \frac32$, since $\frac12(1, -1)^T + \frac32(1, 1)^T = (2, 1)^T$. The general solution is (48) plus the general solution (10) of the homogeneous system.
+> Check: at $t = 0$, $\mathbf{x}(0) = (2 - \frac23 - \frac43,\ 1 + \frac23 - \frac53)^T = \mathbf{0}$. This is the particular solution with $\mathbf{x}(0) = \mathbf{0}$, so it differs slightly from those of [[§35★ Nonhomogeneous Linear Systems#^ex-35-1|Examples §35.1]]–[[§35★ Nonhomogeneous Linear Systems#^ex-35-3|§35.3]]: it is (15) with $k_1 = -\frac23$ and $k_2 = \frac32$, since $\frac12(1, -1)^T + \frac32(1, 1)^T = (2, 1)^T$. The general solution is (48) plus the general solution (10) of the homogeneous system.
 >
 > *BDP: Example 7.9.4*
 
@@ -504,6 +504,6 @@ The Laplace transform solves systems in very much the same way as single equatio
 > - **Laplace transforms** need a matrix inversion (the transfer matrix), a multiplication, and the inverse transform of each term. They are particularly useful for discontinuous or impulsive forcing.
 > - **Variation of parameters** is the most general method (variable $\mathbf{P}(t)$, any continuous $\mathbf{g}$), but it involves linear algebraic equations with variable coefficients, an integration and a matrix multiplication, so it can be the most laborious.
 >
-> For small constant-coefficient systems like the one in Examples §35.1–§35.4, all four work well and there may be little reason to prefer one.
+> For small constant-coefficient systems like the one in [[§35★ Nonhomogeneous Linear Systems#^ex-35-1|Examples §35.1]]–[[§35★ Nonhomogeneous Linear Systems#^ex-35-4|§35.4]], all four work well and there may be little reason to prefer one.
 
 ^rem-35-5

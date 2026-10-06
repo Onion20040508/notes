@@ -109,6 +109,8 @@ This section checks the angle and scale statements of [[§112★ Preservation of
 
 ^ex-113-3
 
+*Chain: the sine half strip earlier in [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)#The Sine Half Strip|Chapter 8]] · later in [[§126a The Heated Segment, the Quadrant, the Sine Half Strip and Flow Around a Corner#The Sine Half Strip|Chapter 10]] · [[§130★ Degenerate Polygons#^ex-130-1|Chapter 11]]*
+
 > [!example] Example §113.4: Two Lines and Their Images Under 1/z
 > Show that $w = 1/z$ maps the lines $y = x - 1$ and $y = 0$ onto the circle $u^2 + v^2 - u - v = 0$ and the line $v = 0$ (with $w = 0$ corresponding to $z = \infty$), and verify conformality at $z_0 = 1$.
 >

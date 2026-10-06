@@ -16,8 +16,15 @@ Chapter 10 uses conformal mapping to solve physical problems governed by Laplace
 
 ## Fourier's Law and Laplace's Equation
 
-> [!definition] Definition §118.1: Flux; Fourier's Law
-> In the theory of heat conduction, the **flux** across a surface within a solid body, at a point of that surface, is the quantity of heat flowing in a specified direction normal to the surface per unit time per unit area at the point (measured, for instance, in calories per second per square centimeter). It is denoted $\Phi$, and it varies with the normal derivative of the temperature $T$ at the point:
+> [!definition] Definition §118.1: Flux
+> In the theory of heat conduction, the **flux** across a surface within a solid body, at a point of that surface, is the quantity of heat flowing in a specified direction normal to the surface per unit time per unit area at the point (measured, for instance, in calories per second per square centimeter). It is denoted $\Phi$.
+>
+> *B&C: Sec. 118 (text)*
+
+^def-118-1
+
+> [!definition] Definition §118.2: Fourier's Law
+> The flux $\Phi$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]) varies with the normal derivative of the temperature $T$ at the point:
 >
 > $$
 > \Phi = -K\,\frac{dT}{dN} \qquad (K > 0). \qquad (1)
@@ -27,7 +34,7 @@ Chapter 10 uses conformal mapping to solve physical problems governed by Laplace
 >
 > *B&C: Sec. 118 (text)*
 
-^def-118-1
+^def-118-new1
 
 We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so the flow of heat is two-dimensional and parallel to the $xy$ plane, and to the **steady state**, in which $T$ does not vary with time. It is assumed that no heat is created or destroyed within the solid (no sources or sinks), and that $T(x, y)$ and its partial derivatives of the first and second order are continuous at each interior point. These, with (1), are the postulates of the mathematical theory of heat conduction.
 
@@ -69,19 +76,26 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 
 ^pf-118-1
 
-*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (fundamental theorem of calculus), [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
+*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-new1|Def. §118.2]] (Fourier's law), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (fundamental theorem of calculus), [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
 
 > [!remark]- Connections
 > - The same derivation in its general form, the heat equation $u_t = k\nabla^2u$ whose steady states are harmonic: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] and the discussion after it. The exact version above is the divergence theorem in the plane for the field $-K\nabla T$, [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form).
 
 ## Isotherms and Lines of Flow
 
-> [!definition] Definition §118.2: Isotherms; Lines of Flow
-> The surfaces $T(x, y) = c_1$, $c_1$ a real constant, are the **isotherms** within the solid. They can also be regarded as curves in the $xy$ plane: then $T(x, y)$ is the temperature at a point $(x, y)$ of a thin sheet of material in that plane whose faces are thermally insulated, and the isotherms are the level curves of $T$. If $S$ is a [[§115★ Harmonic Conjugates#^def-115-1|harmonic conjugate]] of $T$, the curves $S(x, y) = c_2$ are the **lines of flow** of heat.
+> [!definition] Definition §118.2: Isotherms
+> The surfaces $T(x, y) = c_1$, $c_1$ a real constant, are the **isotherms** within the solid. They can also be regarded as curves in the $xy$ plane: then $T(x, y)$ is the temperature at a point $(x, y)$ of a thin sheet of material in that plane whose faces are thermally insulated, and the isotherms are the level curves of $T$.
 >
 > *B&C: Sec. 118 (text)*
 
 ^def-118-2
+
+> [!definition] Definition §118.3: Lines of Flow
+> If $S$ is a [[§115★ Harmonic Conjugates#^def-115-1|harmonic conjugate]] of $T$, the curves $S(x, y) = c_2$ are the **lines of flow** of heat.
+>
+> *B&C: Sec. 118 (text)*
+
+^def-118-new2
 
 > [!theorem] Proposition §118.2: Heat Flows Along the Lines of Flow
 > Let $T$ be a steady temperature in a thin sheet and $S$ a harmonic conjugate of $T$.
@@ -117,7 +131,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 
 ^pf-118-2
 
-*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-2|Def. §118.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]], [[Implicit Function Theorem|452 Implicit Function Theorem]]
+*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-new1|Def. §118.2]] (Fourier's law), [[§118★ Steady Temperatures#^def-118-2|Def. §118.2]], [[§118★ Steady Temperatures#^def-118-new2|Def. §118.3]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]], [[Implicit Function Theorem|452 Implicit Function Theorem]]
 
 > [!remark] Remark: Other Interpretations; the Maximum Principle
 > The function $T$ may also denote the concentration of a substance diffusing through a solid; then $K$ is the diffusion constant, and the derivation of (4) applies as well to steady-state diffusion. The maximum principle has a physical reading here: if $T = \operatorname{Re} f$ for $f$ analytic and not constant in a bounded region, $T$ attains its maximum and minimum only on the boundary ([[§59 Maximum Modulus Principle#^cor-59-5|Corollary §59.5]] and [[§59 Maximum Modulus Principle#^ex-59-3|Example §59.3]]). A steady temperature cannot have a hot spot inside: heat would flow away from it in every direction (Fourier's law), the temperature there would drop, and the state would not be steady (B&C Sec. 121, Exercise 13).
@@ -169,3 +183,5 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 > *B&C: Sec. 27, Example 1; the flux and lines of flow are added*
 
 ^ex-118-3
+
+*Chain: the temperature $e^{-y}\sin x$ earlier in [[§27★ Harmonic Functions#^ex-27-1|Chapter 2]] · [[§116★ Transformations of Harmonic Functions#^ex-116-1|Chapter 9]]*

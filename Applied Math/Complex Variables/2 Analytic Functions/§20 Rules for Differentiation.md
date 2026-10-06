@@ -195,11 +195,6 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 
 ^thm-20-4
 
-> [!remark] Remark: Why the Auxiliary Function
-> The calculus argument multiplies and divides by $f(z) - f(z_0)$, which fails when $f(z) = f(z_0)$ at points $z$ arbitrarily close to $z_0$. B&C instead writes the difference quotient of $g$ as $g'(w_0) + \Phi(w)$ with $\Phi$ continuous at $w_0$, an identity that holds even when $w = w_0$, so nothing is ever divided by $f(z) - f(z_0)$.
-
-^rem-20-1
-
 > [!proof]+ Proof
 > Choose a specific point $z_0$ at which $f'(z_0)$ exists, write $w_0 = f(z_0)$, and assume that $g'(w_0)$ exists. Then there is an $\varepsilon$ neighborhood $|w - w_0| < \varepsilon$ of $w_0$ on which $g$ is defined, and on it we can define a function $\Phi$ with $\Phi(w_0) = 0$ and
 >
@@ -239,6 +234,11 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 
 > [!remark]- Connections
 > - The real chain rule, its naive proof, the gap, and the same repair: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]] ([[§28 Basic Properties of the Derivative#^pf-28-3-2|second proof]], whose function $h$ is $g'(w_0) + \Phi$).
+
+> [!remark] Remark: Why the Auxiliary Function
+> The calculus argument multiplies and divides by $f(z) - f(z_0)$, which fails when $f(z) = f(z_0)$ at points $z$ arbitrarily close to $z_0$. B&C instead writes the difference quotient of $g$ as $g'(w_0) + \Phi(w)$ with $\Phi$ continuous at $w_0$, an identity that holds even when $w = w_0$, so nothing is ever divided by $f(z) - f(z_0)$.
+
+^rem-20-1
 
 > [!example] Example §20.3: A Composite Function
 > To find the derivative of $(1 - 4z^2)^3$, write $w = 1 - 4z^2$ and $W = w^3$. Then

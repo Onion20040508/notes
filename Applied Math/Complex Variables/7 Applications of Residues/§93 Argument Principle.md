@@ -24,14 +24,21 @@ The residue theorem also counts. If $f$ is analytic except for poles inside a si
 
 Suppose that $f$ is meromorphic in the domain interior to a positively oriented simple closed contour $C$, and analytic and nonzero on $C$ ("analytic on $C$" means analytic in an open set containing $C$). The image $\Gamma$ of $C$ under $w = f(z)$ is a closed contour, not necessarily simple, in the $w$ plane; as $z$ traverses $C$ in the positive direction, $w$ traverses $\Gamma$ in a direction that we take as the orientation of $\Gamma$. Since $f$ has no zeros on $C$, $\Gamma$ does not pass through $w = 0$.
 
-> [!definition] Definition §93.2: Change of Argument; Winding Number
+> [!definition] Definition §93.2: Change of Argument
 > Let $w_0$ and $w$ be points on $\Gamma$, $w_0$ fixed, and let $\phi_0$ be a value of $\arg w_0$. Let $\arg w$ vary continuously, starting with the value $\phi_0$, as $w$ begins at $w_0$ and traverses $\Gamma$ once in its direction of orientation. When $w$ returns to $w_0$, $\arg w$ has a particular value $\phi_1$ of $\arg w_0$. The number
 >
 > $$
 > \Delta_C\arg f(z) = \phi_1 - \phi_0
 > $$
 >
-> is the **change in argument** of $f(z)$ as $z$ describes $C$ once in the positive direction. It is an integral multiple of $2\pi$, and the integer
+> is the **change in argument** of $f(z)$ as $z$ describes $C$ once in the positive direction. It is an integral multiple of $2\pi$.
+>
+> *B&C: Sec. 93 (text)*
+
+^def-93-2
+
+> [!definition] Definition §93.3: Winding Number
+> The change in argument $\Delta_C\arg f(z)$ ([[§93 Argument Principle#^def-93-2|Definition §93.2]]) is an integral multiple of $2\pi$, and the integer
 >
 > $$
 > \frac{1}{2\pi}\Delta_C\arg f(z)
@@ -41,7 +48,7 @@ Suppose that $f$ is meromorphic in the domain interior to a positively oriented 
 >
 > *B&C: Sec. 93 (text)*
 
-^def-93-2
+^def-93-new1
 
 B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gamma$, and that the change does not depend on the choices made; the next lemma supplies both.
 
@@ -108,7 +115,7 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 
 ^pf-93-2
 
-*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]]
+*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§93 Argument Principle#^def-93-new1|Def. §93.3]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]]
 
 In particular, $\Delta_C\arg f(z) = 0$ when $\Gamma$ lies in an open half plane whose boundary passes through the origin, or in a disk not containing the origin.
 
@@ -205,7 +212,7 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 
 ^pf-93-4
 
-*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^lem-93-3|§93.3]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§43 Contours#^prop-43-5|§43.5]]
+*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^lem-93-3|§93.3]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§93 Argument Principle#^def-93-new1|Def. §93.3]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§43 Contours#^prop-43-5|§43.5]]
 
 > [!remark]- Connections
 > - For polynomials, the argument principle is the analytic form of the winding-number proof of the fundamental theorem of algebra, [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]], which counts how often the image of a large circle winds around $0$ by means of $\pi_1(S^1) \cong \mathbb{Z}$. B&C completes this route in [[§94 Rouché's Theorem#^ex-94-2|Example §94.2]].

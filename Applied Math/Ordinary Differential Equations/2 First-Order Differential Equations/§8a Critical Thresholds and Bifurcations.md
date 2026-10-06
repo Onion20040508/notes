@@ -11,7 +11,7 @@ tags: [ordinary-differential-equations, math331]
 
 *Boyce–DiPrima, Section 2.5 · MATH 331 Written HW 2 (Problem 2), Midterm (Fall 2021) Q5, Midterm (Spring 2020) Q6.*
 
-The qualitative picture of [[§8 Autonomous Differential Equations and Population Dynamics|§8]] is developed further on models of population growth: growth with a critical threshold, and a combination of the threshold with logistic growth. When the right side depends on a parameter, the critical points move as the parameter varies, and at special values they can merge or split. Equation numbers continue those of [[§8 Autonomous Differential Equations and Population Dynamics|§8]].
+The second half of BDP 2.5, continuing [[§8 Autonomous Differential Equations and Population Dynamics|§8]]: the qualitative picture of an autonomous equation is developed on growth with a critical threshold and on a combination of the threshold with logistic growth, and then on equations with a parameter, whose critical points can merge or split at bifurcation points. Equation numbers continue those of [[§8 Autonomous Differential Equations and Population Dynamics|§8]].
 
 ## A Critical Threshold
 
@@ -202,7 +202,7 @@ When the right side depends on a parameter $a$, the critical points move as $a$ 
 > P_\pm = \frac32 \pm \sqrt{\tfrac14 - \alpha} \qquad (\alpha \le \tfrac14) .
 > $$
 >
-> **Case $0 \le \alpha < \frac14$.** Three critical points $0 < P_- < P_+$ (note $P_- \ge 1 > 0$), and $f_\alpha(P) = -P(P - P_-)(P - P_+)$. For $0 < P < P_-$, $f_\alpha < 0$; for $P_- < P < P_+$, $f_\alpha > 0$; for $P > P_+$, $f_\alpha < 0$. So $P = 0$ is asymptotically stable, $P_-$ is an unstable threshold and $P_+$ an asymptotically stable carrying capacity. The population survives (approaches $P_+$) exactly when $P(0) > P_-$. At $\alpha = 0$ this is Example §8.3 ($P_- = 1$, $P_+ = 2$); as $\alpha$ grows the threshold rises and the carrying capacity falls.
+> **Case $0 \le \alpha < \frac14$.** Three critical points $0 < P_- < P_+$ (note $P_- \ge 1 > 0$), and $f_\alpha(P) = -P(P - P_-)(P - P_+)$. For $0 < P < P_-$, $f_\alpha < 0$; for $P_- < P < P_+$, $f_\alpha > 0$; for $P > P_+$, $f_\alpha < 0$. So $P = 0$ is asymptotically stable, $P_-$ is an unstable threshold and $P_+$ an asymptotically stable carrying capacity. The population survives (approaches $P_+$) exactly when $P(0) > P_-$. At $\alpha = 0$ this is [[§8a Critical Thresholds and Bifurcations#^ex-8-3|Example §8.3]] ($P_- = 1$, $P_+ = 2$); as $\alpha$ grows the threshold rises and the carrying capacity falls.
 >
 > **Case $\alpha = \frac14$.** $f_{1/4}(P) = -P\big(P - \frac32\big)^2 \le 0$ for $P \ge 0$, with a double root at $\frac32$. Solutions above $\frac32$ decrease to $\frac32$, solutions below it decrease to $0$: $P = \frac32$ is semistable ([[§8 Autonomous Differential Equations and Population Dynamics#^def-8-7|Definition §8.7]]).
 >

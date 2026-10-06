@@ -15,6 +15,11 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 
 ## The Theorem and Its Proof
 
+> [!remark] Remark: The Plan of the Proof
+> It is sufficient to show that (a) implies (b), that (b) implies (c), and that (c) implies (a); then, as noted in [[§48 Antiderivatives|§48]], either the statements are all true or none of them is. In (b), "namely $F(z_2) - F(z_1)$" refers to an antiderivative that exists by (a); in the step (c) $\Rightarrow$ (a) the antiderivative is constructed, and then (b) holds with it. The course covered (a) $\Rightarrow$ (b) $\Rightarrow$ (c) first; (c) $\Rightarrow$ (a) needs the ML-inequality of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47]].
+
+^rem-49-1
+
 > [!theorem] Theorem §49.1: Antiderivatives and Independence of Path
 > Suppose that a function $f(z)$ is continuous in a domain $D$. If any one of the following statements is true, then so are the others:
 >
@@ -33,11 +38,6 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 > *B&C: Sec. 48, Theorem (proved in Sec. 49)*
 
 ^thm-49-1
-
-> [!remark] Remark: The Plan of the Proof
-> It is sufficient to show that (a) implies (b), that (b) implies (c), and that (c) implies (a); then, as noted in [[§48 Antiderivatives|§48]], either the statements are all true or none of them is. In (b), "namely $F(z_2) - F(z_1)$" refers to an antiderivative that exists by (a); in the step (c) $\Rightarrow$ (a) the antiderivative is constructed, and then (b) holds with it. The course covered (a) $\Rightarrow$ (b) $\Rightarrow$ (c) first; (c) $\Rightarrow$ (a) needs the ML-inequality of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47]].
-
-^rem-49-1
 
 > [!proof]- Proof
 > **(a) implies (b).** Assume that $f(z)$ has an antiderivative $F(z)$ on $D$. Let $C$ be a contour from $z_1$ to $z_2$ lying in $D$.
@@ -136,7 +136,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 
 ^pf-49-1
 
-*Uses:* [[§43 Contours#^prop-43-5|§43.5]] (chain rule along an arc), [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]] (fundamental theorem for $w(t)$), [[§44 Contour Integrals#^thm-44-2|§44.2]] (properties (5)–(7)), [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§45 Some Examples (Contour Integrals)#^prop-45-1|§45.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§48 Antiderivatives#^def-48-1|Def. §48.1]], [[§48 Antiderivatives#^def-48-2|Def. §48.2]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]] (domains are polygonally connected)
+*Uses:* [[§43 Contours#^prop-43-5|§43.5]] (chain rule along an arc), [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]] (fundamental theorem for $w(t)$), [[§44 Contour Integrals#^thm-44-2|§44.2]] (properties (5)–(7)), [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§44 Contour Integrals#^def-44-new1|Def. §44.3]], [[§45 Some Examples (Contour Integrals)#^prop-45-1|§45.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§48 Antiderivatives#^def-48-1|Def. §48.1]], [[§48 Antiderivatives#^def-48-2|Def. §48.2]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]] (domains are polygonally connected)
 
 ![[m342-49-1.svg]]
 *The construction in (c) $\Rightarrow$ (a). $F(z)$ is the integral from the base point $z_0$ to $z$ along any contour in $D$ (by (c), the choice does not matter). To differentiate at $z$, continue the contour by the short segment from $z$ to $z + \Delta z$ inside a disk about $z$ contained in $D$. Only the segment depends on $\Delta z$, and on it $f(s)$ is within $\varepsilon$ of $f(z)$, so the ML-inequality gives $\big|[F(z + \Delta z) - F(z)]/\Delta z - f(z)\big| \le \varepsilon$.*

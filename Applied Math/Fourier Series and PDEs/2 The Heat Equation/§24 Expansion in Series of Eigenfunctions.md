@@ -70,18 +70,32 @@ $$
 > [!remark]- Connections
 > - The same formula in a finite-dimensional inner product space: the coefficient of $\mathbf{y}$ along an orthogonal basis vector $\mathbf{u}_j$ is $\langle\mathbf{y}, \mathbf{u}_j\rangle/\langle\mathbf{u}_j, \mathbf{u}_j\rangle$, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]]; here the inner product is $\langle f, g\rangle_p = \int_l^r fgp\,dx$. In a Hilbert space, for an orthonormal set: [[§24 Orthonormal Sets and Bases#^lem-24-7|556 Lem. §24.7]].
 
-> [!definition] Definition §24.1: Eigenfunction Expansion; Generalized Fourier Coefficients
+> [!definition] Definition §24.1: Generalized Fourier Coefficients
 > Let $\phi_1, \phi_2, \ldots$ be the eigenfunctions of a regular Sturm–Liouville problem (1)–(3) and $f$ a sectionally continuous function on $l < x < r$. The numbers
 >
 > $$
 > c_n = \frac{\int_l^r f(x)\phi_n(x)p(x)\,dx}{\int_l^r \phi_n^2(x)p(x)\,dx}
 > $$
 >
-> are the **generalized Fourier coefficients** of $f$, and the series $\sum_{n=1}^\infty c_n\phi_n(x)$ is the **eigenfunction expansion** (generalized Fourier series) of $f$. The family $\{\phi_n\}$ is called a **generalized Fourier basis** when every such $f$ is represented by its expansion in the sense of Theorem §24.2.
+> are the **generalized Fourier coefficients** of $f$.
 >
 > *Powers: 2.8 (text); Source: 341 lectures 10.10, 10.17*
 
 ^def-24-1
+
+> [!definition] Definition §24.1: Eigenfunction Expansion
+> With the generalized Fourier coefficients $c_n$ of [[§24 Expansion in Series of Eigenfunctions#^def-24-1|Definition §24.1]], the series $\sum_{n=1}^\infty c_n\phi_n(x)$ is the **eigenfunction expansion** (generalized Fourier series) of $f$.
+>
+> *Powers: 2.8 (text); Source: 341 lectures 10.10, 10.17*
+
+^def-24-new1
+
+> [!definition] Definition §24.1: Generalized Fourier Basis
+> The family $\{\phi_n\}$ of eigenfunctions is called a **generalized Fourier basis** when every such $f$ is represented by its expansion ([[§24 Expansion in Series of Eigenfunctions#^def-24-new1|Definition §24.1]]) in the sense of Theorem §24.2.
+>
+> *Powers: 2.8 (text); Source: 341 lectures 10.10, 10.17*
+
+^def-24-new2
 
 ## Convergence
 
@@ -137,7 +151,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 ^rem-24-1
 
 > [!remark] Remark: Fourier Series as Eigenfunction Expansions
-> For $\phi'' + \lambda^2\phi = 0$ on $0 < x < a$ with $\phi(0) = \phi(a) = 0$, the eigenfunctions are $\sin(n\pi x/a)$, $\int_0^a \sin^2(n\pi x/a)\,dx = a/2$, and the coefficient formula gives $c_n = \frac2a\int_0^a f(x)\sin(n\pi x/a)\,dx$: the Fourier sine series of [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]. With $\phi'(0) = \phi'(a) = 0$ the eigenfunctions are $1$ (norm $a$) and $\cos(n\pi x/a)$ (norm $a/2$), giving the cosine series with $a_0 = \frac1a\int_0^a f\,dx$. What is new in general is only that the normalizing integrals differ from one eigenfunction to the next and have to be computed.
+> For $\phi'' + \lambda^2\phi = 0$ on $0 < x < a$ with $\phi(0) = \phi(a) = 0$, the eigenfunctions are $\sin(n\pi x/a)$, $\int_0^a \sin^2(n\pi x/a)\,dx = a/2$, and the coefficient formula gives $c_n = \frac2a\int_0^a f(x)\sin(n\pi x/a)\,dx$: the Fourier sine series of [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]. With $\phi'(0) = \phi'(a) = 0$ the eigenfunctions are $1$ (norm $a$) and $\cos(n\pi x/a)$ (norm $a/2$), giving the cosine series with $a_0 = \frac1a\int_0^a f\,dx$. What is new in general is only that the normalizing integrals differ from one eigenfunction to the next and have to be computed.
 
 ^rem-24-2
 

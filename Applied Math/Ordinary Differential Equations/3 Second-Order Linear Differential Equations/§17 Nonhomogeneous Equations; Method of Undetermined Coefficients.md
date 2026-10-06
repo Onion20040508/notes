@@ -151,7 +151,7 @@ A forcing term that is a sum is split into its terms:
 > a(Y_1 + Y_2)'' + b(Y_1 + Y_2)' + c(Y_1 + Y_2) = \big(aY_1'' + bY_1' + cY_1\big) + \big(aY_2'' + bY_2' + cY_2\big) = g_1(t) + g_2(t) = g(t) .
 > $$
 >
-> For $n$ terms, repeat (or induct). The computation is valid for complex-valued $g_i$ and $Y_i$ as well (used in the proof of Theorem §17.4).
+> For $n$ terms, repeat (or induct). The computation is valid for complex-valued $g_i$ and $Y_i$ as well (used in the proof of [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|Theorem §17.4]]).
 
 ^pf-17-3
 

@@ -13,13 +13,13 @@ tags: [linear-algebra]
 
 ^ladr-9-68
 
+> [!remark]- Connections
+> - Same notion in 591, called a bilinear pairing: [[§20 Linear Algebra Toolkit#^def-20-4|591 Def. §20.4]]; a non-degenerate one identifies each space with the dual of the other, [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].
+
 > [!definition] Definition 9.68b: The vector space B(V, W)
 > $\mathcal{B}(V,W)$ is the vector space of bilinear functionals on $V\times W$; $\mathcal{B}(V,V)=V^{(2)}$.
 
 ^ladr-9-68b
-
-> [!remark]- Connections
-> - Same notion in 591, called a bilinear pairing: [[§20 Linear Algebra Toolkit#^def-20-4|591 Def. §20.4]]; a non-degenerate one identifies each space with the dual of the other, [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].
 
 > [!example] Example 9.69: Bilinear functionals (p. 371)
 > - $\beta(v,w)=\varphi(v)\tau(w)$ on $V\times W$, for $\varphi\in V'$, $\tau\in W'$.
@@ -208,14 +208,14 @@ tags: [linear-algebra]
 
 ^ladr-9-88
 
+> [!remark]- Connections
+> - Tensors of type $(r,s)$ in physics and in [[Differentiable Manifolds]]: $V^{\otimes r}\otimes(V')^{\otimes s}$.
+> - Used in Relativity: Lorentz tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]; tensors as multilinear functions of covectors and vectors, without coordinates — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-2|REL Remark: Tensors without coordinates]].
+
 > [!definition] Definition 9.88b: v1 ⊗ ⋯ ⊗ vm
 > $(v_1\otimes\dots\otimes v_m)(\varphi_1,\dots,\varphi_m)=\varphi_1(v_1)\cdots\varphi_m(v_m)$.
 
 ^ladr-9-88b
-
-> [!remark]- Connections
-> - Tensors of type $(r,s)$ in physics and in [[Differentiable Manifolds]]: $V^{\otimes r}\otimes(V')^{\otimes s}$.
-> - Used in Relativity: Lorentz tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]; tensors as multilinear functions of covectors and vectors, without coordinates — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-2|REL Remark: Tensors without coordinates]].
 
 > [!theorem] Theorem 9.89: Dimension of the tensor product
 > $\dim(V_1\otimes\dots\otimes V_m)=(\dim V_1)\cdots(\dim V_m)$.

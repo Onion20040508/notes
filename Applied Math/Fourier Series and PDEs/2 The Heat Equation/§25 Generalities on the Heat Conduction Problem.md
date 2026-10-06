@@ -78,18 +78,25 @@ Equation (1) is the heat equation of [[§17 Derivation and Boundary Conditions#^
 
 ## The Transient Problem
 
-> [!definition] Definition §25.2: Dimensionless Coefficients; Transient Temperature
+> [!definition] Definition §25.2: Dimensionless Coefficients
 > Let $\bar\kappa$, $\bar\rho$ and $\bar c$ be average values of $\kappa(x)$, $\rho(x)$ and $c(x)$. The dimensionless functions $s(x)$ and $p(x)$ are defined by
 >
 > $$
 > \kappa(x) = \bar\kappa s(x), \qquad \rho(x)c(x) = \bar\rho\bar cp(x) ,
 > $$
 >
-> and $k = \bar\kappa/\bar\rho\bar c$. The **transient temperature** is $w(x, t) = u(x, t) - v(x)$.
+> and $k = \bar\kappa/\bar\rho\bar c$.
 >
 > *Powers: 2.9 (text)*
 
 ^def-25-2
+
+> [!definition] Definition §25.2: Transient Temperature
+> The **transient temperature** is $w(x, t) = u(x, t) - v(x)$, with $v$ the steady-state temperature of [[§25 Generalities on the Heat Conduction Problem#^prop-25-1|Proposition §25.1]].
+>
+> *Powers: 2.9 (text)*
+
+^def-25-new1
 
 > [!theorem] Proposition §25.2: The Transient Problem
 > $w(x, t)$ satisfies the initial value–boundary value problem
@@ -120,7 +127,7 @@ Equation (1) is the heat equation of [[§17 Derivation and Boundary Conditions#^
 
 ^pf-25-2
 
-*Uses:* [[§25 Generalities on the Heat Conduction Problem#^prop-25-1|§25.1]], [[§25 Generalities on the Heat Conduction Problem#^def-25-2|Def. §25.2]]
+*Uses:* [[§25 Generalities on the Heat Conduction Problem#^prop-25-1|§25.1]], [[§25 Generalities on the Heat Conduction Problem#^def-25-2|Def. §25.2]], [[§25 Generalities on the Heat Conduction Problem#^def-25-new1|Def. §25.2]]
 
 ## Separation of Variables and the Solution
 
@@ -166,7 +173,7 @@ Equation (1) is the heat equation of [[§17 Derivation and Boundary Conditions#^
 
 ^pf-25-3
 
-*Uses:* [[§25 Generalities on the Heat Conduction Problem#^prop-25-1|§25.1]], [[§25 Generalities on the Heat Conduction Problem#^prop-25-2|§25.2]], [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]], [[§23 Sturm–Liouville Problems#^prop-23-4|§23.4]], [[§23 Sturm–Liouville Problems#^thm-23-5|§23.5]], [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|§24.2]], [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|§25.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem), [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC)
+*Uses:* [[§25 Generalities on the Heat Conduction Problem#^prop-25-1|§25.1]], [[§25 Generalities on the Heat Conduction Problem#^prop-25-2|§25.2]], [[§23 Sturm–Liouville Problems#^def-23-1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^def-23-new1|Def. §23.1]], [[§23 Sturm–Liouville Problems#^thm-23-2|§23.2]], [[§23 Sturm–Liouville Problems#^prop-23-4|§23.4]], [[§23 Sturm–Liouville Problems#^thm-23-5|§23.5]], [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|§24.2]], [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|§25.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem), [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC)
 
 > [!remark]- Connections
 > - Finite-dimensional analogue: the system $\mathbf{x}' = -kA\mathbf{x}$ with $A$ real symmetric is solved by expanding in an orthonormal basis of eigenvectors, $\mathbf{x}(t) = \sum c_ie^{-k\mu_it}\mathbf{v}_i$ with $c_i = \mathbf{x}(0)\cdot\mathbf{v}_i$ ([[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|331 Thm. §31.2]], [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]]). Formula (16) is the same with $A$ replaced by the self-adjoint operator $-\frac1p\frac{d}{dx}s\frac{d}{dx}$ and the boundary conditions ([[§23 Sturm–Liouville Problems#^rem-23-3|Remark in §23]]).

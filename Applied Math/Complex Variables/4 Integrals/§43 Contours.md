@@ -15,7 +15,7 @@ Integrals of functions of a complex variable are taken along curves in the plane
 
 ## Arcs
 
-> [!definition] Definition §43.1: Arc, Simple Arc, Simple Closed Curve
+> [!definition] Definition §43.1: Arc
 > A set of points $z = (x, y)$ in the complex plane is an **arc** if
 >
 > $$
@@ -28,11 +28,23 @@ Integrals of functions of a complex variable are taken along curves in the plane
 > z = z(t) \quad (a \le t \le b), \qquad (2) \qquad\qquad z(t) = x(t) + iy(t) . \qquad (3)
 > $$
 >
-> The arc $C$ is a **simple arc**, or **Jordan arc**, if it does not cross itself, that is, if $z(t_1) \ne z(t_2)$ when $t_1 \ne t_2$. When $C$ is simple except that $z(b) = z(a)$, it is a **simple closed curve**, or **Jordan curve**. Such a curve is **positively oriented** when it is described in the counterclockwise direction.
->
 > *B&C: Sec. 43 (text)*
 
 ^def-43-1
+
+> [!definition] Definition §43.2: Simple Arc
+> The arc $C$ is a **simple arc**, or **Jordan arc**, if it does not cross itself, that is, if $z(t_1) \ne z(t_2)$ when $t_1 \ne t_2$.
+>
+> *B&C: Sec. 43 (text)*
+
+^def-43-new1
+
+> [!definition] Definition §43.3: Simple Closed Curve
+> When an arc $C$ is simple except that $z(b) = z(a)$, it is a **simple closed curve**, or **Jordan curve**. Such a curve is **positively oriented** when it is described in the counterclockwise direction.
+>
+> *B&C: Sec. 43 (text)*
+
+^def-43-new2
 
 The geometric nature of an arc often suggests a notation for the parameter other than $t$.
 
@@ -162,14 +174,21 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 
 *Uses:* [[§41 Derivatives of Functions w(t)#^def-41-1|Def. §41.1]], [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]] (chain rule)
 
-> [!definition] Definition §43.3: Differentiable Arc; Length
+> [!definition] Definition §43.3: Differentiable Arc
 > Suppose that the components $x'(t)$ and $y'(t)$ of the derivative
 >
 > $$
 > z'(t) = x'(t) + iy'(t) \qquad (12)
 > $$
 >
-> of the function (3) used to represent $C$ are continuous on the entire interval $a \le t \le b$. The arc is then called a **differentiable arc**, the real-valued function $|z'(t)| = \sqrt{[x'(t)]^2 + [y'(t)]^2}$ is integrable over $a \le t \le b$, and the **length** of $C$ is the number
+> of the function (3) used to represent $C$ are continuous on the entire interval $a \le t \le b$. The arc is then called a **differentiable arc**.
+>
+> *B&C: Sec. 43 (text)*
+
+^def-43-3
+
+> [!definition] Definition §43.6: Length
+> For a differentiable arc $C$, the real-valued function $|z'(t)| = \sqrt{[x'(t)]^2 + [y'(t)]^2}$ is integrable over $a \le t \le b$, and the **length** of $C$ is the number
 >
 > $$
 > L = \int_a^b |z'(t)|\,dt . \qquad (13)
@@ -177,7 +196,7 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 >
 > *B&C: Sec. 43 (text)*
 
-^def-43-3
+^def-43-new3
 
 > [!remark]- Connections
 > - Formula (13) is the arc length formula of calculus for the plane curve $\langle x(t), y(t)\rangle$, [[§88 Arc Length and Curvature#^thm-88-1|Calc Thm. §88.1]], written with the modulus of a complex number.
@@ -204,7 +223,7 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 
 ^pf-43-3
 
-*Uses:* [[§43 Contours#^def-43-2|Def. §43.2]], [[§43 Contours#^def-43-3|Def. §43.3]], [[§43 Contours#^lem-43-1|§43.1]], [[§43 Contours#^lem-43-2|§43.2]]
+*Uses:* [[§43 Contours#^def-43-2|Def. §43.2]], [[§43 Contours#^def-43-3|Def. §43.3]], [[§43 Contours#^def-43-new3|Def. §43.6]], [[§43 Contours#^lem-43-1|§43.1]], [[§43 Contours#^lem-43-2|§43.2]]
 
 > [!example] Example §43.4: Two Parametrizations of a Half Circle
 > Let $C$ be the right-hand half of the circle $|z| = 2$, in the counterclockwise direction, from $-2i$ to $2i$. Two parametric representations of $C$ are
@@ -223,7 +242,7 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 > \phi'(y) = \frac{g'(y)}{1 + g(y)^2} = \frac{4(4 - y^2)^{-3/2}}{4/(4 - y^2)} = \frac{1}{\sqrt{4 - y^2}} > 0 \qquad (-2 < y < 2) .
 > $$
 >
-> (Numerically, $\phi'(0.3) = 0.50572 = 1/\sqrt{3.91}$.) Note that $\phi'(y) \to \infty$ as $y \to \pm2$, so $\phi$ satisfies the conditions of Definition §43.2 only on closed subintervals of $(-2, 2)$; correspondingly $Z'(y) = -y/\sqrt{4 - y^2} + i$ is unbounded near $y = \pm2$, and $Z$ is not a smooth parametrization of $C$ at its endpoints although $z(\theta)$ is. [[§44 Contour Integrals#^ex-44-1|Example §44.1]] integrates $\bar z$ along $C$ with both representations.
+> (Numerically, $\phi'(0.3) = 0.50572 = 1/\sqrt{3.91}$.) Note that $\phi'(y) \to \infty$ as $y \to \pm2$, so $\phi$ satisfies the conditions of [[§43 Contours#^def-43-2|Definition §43.2]] only on closed subintervals of $(-2, 2)$; correspondingly $Z'(y) = -y/\sqrt{4 - y^2} + i$ is unbounded near $y = \pm2$, and $Z$ is not a smooth parametrization of $C$ at its endpoints although $z(\theta)$ is. [[§44 Contour Integrals#^ex-44-1|Example §44.1]] integrates $\bar z$ along $C$ with both representations.
 >
 > *B&C: Sec. 43, Exercise 2*
 
@@ -231,8 +250,15 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 
 ## Smooth Arcs and Contours
 
-> [!definition] Definition §43.4: Smooth Arc; Unit Tangent
-> A **smooth arc** is an arc $z = z(t)$ $(a \le t \le b)$ whose derivative $z'(t)$ is continuous on the closed interval $a \le t \le b$ and nonzero throughout the open interval $a < t < b$. Then the **unit tangent vector**
+> [!definition] Definition §43.4: Smooth Arc
+> A **smooth arc** is an arc $z = z(t)$ $(a \le t \le b)$ whose derivative $z'(t)$ is continuous on the closed interval $a \le t \le b$ and nonzero throughout the open interval $a < t < b$.
+>
+> *B&C: Sec. 43 (text)*
+
+^def-43-4
+
+> [!definition] Definition §43.8: Unit Tangent
+> For a smooth arc $z = z(t)$, the **unit tangent vector**
 >
 > $$
 > \mathbf{T} = \frac{z'(t)}{|z'(t)|}
@@ -242,14 +268,21 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 >
 > *B&C: Sec. 43 (text)*
 
-^def-43-4
+^def-43-new4
 
-> [!definition] Definition §43.5: Contour; Simple Closed Contour
-> A **contour**, or piecewise smooth arc, is an arc consisting of a finite number of smooth arcs joined end to end. Hence if (2) represents a contour, $z(t)$ is continuous, whereas its derivative $z'(t)$ is piecewise continuous. When only the initial and final values of $z(t)$ are the same, the contour is a **simple closed contour**. The **length** of a contour or simple closed contour is the sum of the lengths of the smooth arcs that make it up.
+> [!definition] Definition §43.5: Contour
+> A **contour**, or piecewise smooth arc, is an arc consisting of a finite number of smooth arcs joined end to end. Hence if (2) represents a contour, $z(t)$ is continuous, whereas its derivative $z'(t)$ is piecewise continuous. The **length** of a contour or simple closed contour is the sum of the lengths of the smooth arcs that make it up.
 >
 > *B&C: Sec. 43 (text)*
 
 ^def-43-5
+
+> [!definition] Definition §43.10: Simple Closed Contour
+> When only the initial and final values of $z(t)$ are the same, the contour is a **simple closed contour**.
+>
+> *B&C: Sec. 43 (text)*
+
+^def-43-new5
 
 The polygonal line (4) is a contour; the circles (5) and (6) and the boundary of a triangle or a rectangle, taken in a specific direction, are simple closed contours.
 
