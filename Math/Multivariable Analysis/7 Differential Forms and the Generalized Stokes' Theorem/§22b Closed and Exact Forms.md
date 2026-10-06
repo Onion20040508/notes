@@ -107,7 +107,7 @@ The second derivative test in [[Second Derivative Test in Several Variables|§14
 
 The circle of ideas is:
 
-[[§5 Equality of Mixed Partials|§5]] (mixed partials commute: $f_{xy} = f_{yx}$) $\;\longleftrightarrow\;$ [[§14 Optimization and Lagrange Multipliers|§14]] (Hessian is symmetric) $\;\longleftrightarrow\;$ §22 ($d^2 = 0$).
+[[§5 Equality of Mixed Partials|§5]] (mixed partials commute: $f_{xy} = f_{yx}$) $\;\longleftrightarrow\;$ [[§14a Second-Order Sufficient Conditions|§14a]] (Hessian is symmetric) $\;\longleftrightarrow\;$ §22 ($d^2 = 0$).
 
 **The two branches of bilinear algebra.** From “bilinear maps on tangent vectors,” two independent theories branch off:
 - **Symmetric** ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]): inner products, metrics, Hessians, the second derivative test. This is the world of Riemannian geometry (Chapter 13 of Lee).

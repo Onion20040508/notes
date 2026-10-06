@@ -5,7 +5,7 @@ chapter: 5
 section: 18
 tags: [measure-theory, math551]
 ---
-← [[§18a Lebesgue's Differentiation Theorem]] · ↑ [[· 5 Differentiation and the FTC]] · [[§18c Absolute Continuity and the FTC]] →
+← [[§18a Lebesgue's Differentiation Theorem]] · ↑ [[· 5 Differentiation and the FTC]] · [[§18c Absolute Continuity]] →
 
 This section answers [[§18 Differentiation Theory#^rem-18-1|the central question]] of the chapter: for $f \in L$, the integral function $F(x) = \int_a^x f$ satisfies $F' = f$ a.e. The averaging argument needs the measurability of $(x, t) \mapsto f(x + t)$, which comes from measurability under continuous and linear maps.
 
@@ -37,7 +37,7 @@ This section answers [[§18 Differentiation Theory#^rem-18-1|the central questio
 
 > [!remark]- Connections
 > - MATH 452 analogue for Jordan content: [[§15 Multivariable Integration#^prop-15-16|C¹ Diffeomorphisms Preserve Jordan Measurability]] (452 §15.16).
-> - Applied to AC functions via [[§18c Absolute Continuity and the FTC#^thm-18-19|§18.19]] (for $n = 1$) and to linear maps via [[§18b Differentiating the Integral#^thm-18-22|§18.22]].
+> - Applied to AC functions via [[§18d The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-18-19|§18.19]] (for $n = 1$) and to linear maps via [[§18b Differentiating the Integral#^thm-18-22|§18.22]].
 
 > [!theorem] Theorem §18.22: Linear Maps Preserve Null Sets
 > Let $T: \mathbb{R}^n \to \mathbb{R}^n$ be a linear map. Then $m^*(Z) = 0 \implies m^*(T(Z)) = 0$.
@@ -179,7 +179,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 
 > [!remark]- Connections
 > - MATH 451 counterpart: FTC II ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]) gives $F'(x_0) = f(x_0)$ at every point where $f$ is continuous; here continuity is dropped at the cost of “a.e.”.
-> - Completes the proof of [[Fundamental Theorem of Calculus for Lebesgue Integrals|the FTC for Lebesgue integrals]] ([[§18c Absolute Continuity and the FTC#^thm-18-13|§18.13]]).
+> - Completes the proof of [[Fundamental Theorem of Calculus for Lebesgue Integrals|the FTC for Lebesgue integrals]] ([[§18d The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-18-13|§18.13]]).
 
 > [!definition] Definition §18.5: Lebesgue Point
 > Let $f \in L(\mathbb{R})$ and define $F(x) = \int_a^x f(t)\,dt$. A point $x_0$ is called a **Lebesgue point** of $f$ if $F'(x_0)$ exists and $F'(x_0) = f(x_0)$, i.e.:

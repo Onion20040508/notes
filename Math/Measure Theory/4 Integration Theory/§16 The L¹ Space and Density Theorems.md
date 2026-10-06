@@ -74,7 +74,7 @@ tags: [measure-theory, math551]
 *Uses:* [[§16 The L¹ Space and Density Theorems#^lem-16-2|§16.2]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^cor-14-7|§14.7]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 > [!remark]- Connections
-> - Gives that $x \mapsto \int_a^x g$ is absolutely continuous ([[§18c Absolute Continuity and the FTC#^def-18-4|Def. §18.4]], [[§18c Absolute Continuity and the FTC#^thm-18-12|Theorem §18.12]]); compare uniform continuity: [[§18c Absolute Continuity and the FTC#^rem-18-7|Rem. §18.7]], [[§19 Uniform Continuity#^def-19-1|451 Def. §19.1]].
+> - Gives that $x \mapsto \int_a^x g$ is absolutely continuous ([[§18c Absolute Continuity#^def-18-4|Def. §18.4]], [[§18c Absolute Continuity#^thm-18-12|Theorem §18.12]]); compare uniform continuity: [[§18c Absolute Continuity#^rem-18-7|Rem. §18.7]], [[§19 Uniform Continuity#^def-19-1|451 Def. §19.1]].
 > - In the language of [[§14a Consequences of the Monotone Convergence Theorem#^def-14-3|Def. §14.3]]: the measure $\nu(e) = \int_e |f|$ is small on sets of small Lebesgue measure.
 
 > [!theorem] Theorem §16.3: Tail Decay of the Integral

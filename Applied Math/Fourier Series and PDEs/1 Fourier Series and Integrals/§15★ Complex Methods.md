@@ -287,6 +287,8 @@ The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier In
 ![[m341-15-1.svg]]
 *Example §15.3: the temperature $U_t(x)$ (left) and its Fourier cosine coefficient function $A_t(\lambda)$ (right) at $t = 0$ (blue) and $t = 6$ (red). As heat spreads, $U_t$ widens and flattens while $A_t$ narrows (the high frequencies die first, like $e^{-\lambda^2 t}$). The dashed lines mark the half-widths $\Delta x$ and $\Delta\lambda$; their product stays $2\ln 2$.*
 
+*Chain: the Gaussian returns in [[§28b Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian#The Gaussian|Chapter 2]] (a heat solution) and [[§34★ Wave Equation in Unbounded Regions#^ex-34-3|Chapter 3]] (a pulse on a string).*
+
 > [!remark]- Connections
 > - Complex-variables version: [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^ex-51-3|342 Ex. §51.3]] (the shift of the path of integration done by the Cauchy–Goursat theorem on a rectangle, giving $\int_0^\infty e^{-x^2}\cos 2bx\,dx = \frac{\sqrt\pi}{2}e^{-b^2}$); a rotation of the path in the same spirit is [[§88★ Jordan's Lemma#^ex-88-3|342 Ex. §88.3]].
 

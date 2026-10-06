@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 16.4 · MATH 233 (UMass, Spring 2023): Practice Final Exam (Q2), Chapter 16 Review (Q6(a)).*
 
-Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^thm-110-1|Theorem §110.1]]) to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in [[§109 The Fundamental Theorem for Line Integrals|§109]] (the converse of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]).
+Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^thm-110-1|Theorem §110.1]]) to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in [[§109 The Fundamental Theorem for Line Integrals|§109]] (the converse of [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]).
 
 ## Extended Versions of Green's Theorem
 
@@ -45,7 +45,7 @@ Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^th
 > [!example] Example §110.4: Sectors of Annuli
 > **(a) A semiannulus.** Evaluate $\displaystyle\oint_C y^2\,dx + 3xy\,dy$, where $C$ is the boundary of the semiannular region $D$ in the upper half-plane between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
 >
-> $D$ is not simple, but the $y$-axis divides it into two simple regions, so [[§110 Green's Theorem#^thm-110-3|Theorem §110.3]] applies. In polar coordinates $D = \{(r, \theta) \mid 1 \le r \le 2,\ 0 \le \theta \le \pi\}$, and
+> $D$ is not simple, but the $y$-axis divides it into two simple regions, so [[§110a Extended Versions of Green's Theorem#^thm-110-3|Theorem §110.3]] applies. In polar coordinates $D = \{(r, \theta) \mid 1 \le r \le 2,\ 0 \le \theta \le \pi\}$, and
 >
 > $$
 > \frac{\partial}{\partial x}(3xy) - \frac{\partial}{\partial y}(y^2) = 3y - 2y = y .
@@ -96,7 +96,7 @@ Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^th
 > \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \int_{C_1} P\,dx + Q\,dy + \int_{C_2} P\,dx + Q\,dy = \int_C P\,dx + Q\,dy .
 > $$
 >
-> The same holds with several holes. Such regions are not simply connected ([[§109 The Fundamental Theorem for Line Integrals#^def-109-5|Definition §109.5]]).
+> The same holds with several holes. Such regions are not simply connected ([[§109a Conservative Vector Fields and Potential Functions#^def-109-5|Definition §109.5]]).
 >
 > *Stewart: 16.4 (text)*
 
@@ -121,7 +121,7 @@ Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^th
 
 ^pf-110-4
 
-*Uses:* [[§110 Green's Theorem#^thm-110-3|§110.3]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation), [[§99 Double Integrals Over General Regions#^thm-99-4|§99.4]] (additivity over regions)
+*Uses:* [[§110a Extended Versions of Green's Theorem#^thm-110-3|§110.3]], [[§108 Line Integrals#^thm-108-4|§108.4]] (reversing orientation), [[§99 Double Integrals Over General Regions#^thm-99-4|§99.4]] (additivity over regions)
 
 ![[m233-110-2.svg]]
 *The cutting argument for a region with a hole. Each half $D'$ and $D''$ gets its own counterclockwise boundary. Along the two cuts (green) the upper half travels one way and the lower half the other, so those contributions cancel. What remains is the outer curve $C_1$ counterclockwise and the inner curve $C_2$ clockwise, both with $D$ on the left.*
@@ -162,7 +162,7 @@ Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^th
 
 ## Curl-Free Fields on Simply-Connected Regions
 
-Green's Theorem supplies the proof, promised in [[§109 The Fundamental Theorem for Line Integrals|§109]] after [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]], of the test for conservative vector fields in the plane.
+Green's Theorem supplies the proof, promised in [[§109 The Fundamental Theorem for Line Integrals|§109]] after [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]], of the test for conservative vector fields in the plane.
 
 > [!theorem] Theorem §110.5: Test for Conservative Fields
 > Let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ be a vector field on an open simply-connected region $D$. Suppose that $P$ and $Q$ have continuous first-order partial derivatives and
@@ -190,10 +190,10 @@ Green's Theorem supplies the proof, promised in [[§109 The Fundamental Theorem 
 
 ^pf-110-5
 
-*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§108 Line Integrals#^thm-108-6|§108.6]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-5|Def. §109.5]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|§109.2]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|§109.3]]
+*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§108a Line Integrals of Vector Fields#^thm-108-6|§108.6]], [[§109a Conservative Vector Fields and Potential Functions#^def-109-5|Def. §109.5]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|§109.2]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|§109.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). [[§110 Green's Theorem#^ex-110-5|Example §110.5]] shows that some hypothesis on the region is needed.
+> - Rigorous treatment in the language of forms: on a star-shaped domain every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]). [[§110a Extended Versions of Green's Theorem#^ex-110-5|Example §110.5]] shows that some hypothesis on the region is needed.
 > - Topology's definition of simply connected (path-connected, every loop shrinks to a point): [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]. Stewart's definition (every simple closed curve in $D$ encloses only points of $D$) agrees with it for open connected regions in the plane (a nontrivial fact of plane topology).
 > - ODE version: [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]] (the test for exact equations, $M_y = N_x$, proved on a rectangle by constructing $\psi$ directly).
 > - See also: [[§115★ Harmonic Conjugates#^thm-115-4|342 Thm. §115.4]] (applied to the field $(-u_y, u_x)$, the test gives a harmonic conjugate of a harmonic function on a simply connected domain).

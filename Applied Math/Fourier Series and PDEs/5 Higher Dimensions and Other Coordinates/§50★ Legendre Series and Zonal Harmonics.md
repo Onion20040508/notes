@@ -63,11 +63,11 @@ To use Legendre polynomials in boundary value problems, a given function $f(x)$ 
 ^prop-49-10
 
 > [!proof]+ Proof
-> $P_n$ is even or odd with $n$ ([[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Definition §49.3]]). If $f$ is odd and $n$ is even, $fP_n$ is odd and its integral over $-1 < x < 1$ is $0$; similarly if $f$ is even and $n$ is odd. If $f$ and $P_n$ have the same parity, $fP_n$ is even, and $\int_{-1}^{1} fP_n = 2\int_0^1 fP_n$, which turns (10) into (11) or (12). Applied to the even or odd extension of $f$, [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|Theorem §49.9]] shows that each series represents $f$ on $0 < x < 1$.
+> $P_n$ is even or odd with $n$ ([[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Definition §49.3]]). If $f$ is odd and $n$ is even, $fP_n$ is odd and its integral over $-1 < x < 1$ is $0$; similarly if $f$ is even and $n$ is odd. If $f$ and $P_n$ have the same parity, $fP_n$ is even, and $\int_{-1}^{1} fP_n = 2\int_0^1 fP_n$, which turns (10) into (11) or (12). Applied to the even or odd extension of $f$, [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|Theorem §49.9]] shows that each series represents $f$ on $0 < x < 1$.
 
 ^pf-49-10
 
-*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-4|Def. §49.4]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|§49.9]]
+*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§50★ Legendre Series and Zonal Harmonics#^def-49-4|Def. §49.4]], [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|§49.9]]
 
 Because the $P_n$ are polynomials, the integral (10) for any specific coefficient can be done in closed form for many functions $f$. Getting $b_n$ as a function of $n$ is not so easy, but some elementary integrals follow from the differential equation $\big((1 - x^2)P_n'\big)' + n(n+1)P_n = 0$.
 
@@ -146,7 +146,7 @@ These formulas are useful if $P_n(x)$ and $P_n'(x)$ can be evaluated easily, and
 > \end{aligned}
 > $$
 >
-> using (15) for the even index $n - 1$. Separately, $b_1 = 3\int_0^1 x\,dx = \frac32$ (the general formula also gives this, with $P_0(0) = 1$). So $b_3 = \frac74\cdot\big(-\frac12\big) = -\frac78$, $b_5 = \frac{11}{6}\cdot\frac38 = \frac{11}{16}$, $b_7 = -\frac{75}{128}$, $b_9 = \frac{133}{256}$, and because $f$ is sectionally smooth, by [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|Theorem §49.9]]
+> using (15) for the even index $n - 1$. Separately, $b_1 = 3\int_0^1 x\,dx = \frac32$ (the general formula also gives this, with $P_0(0) = 1$). So $b_3 = \frac74\cdot\big(-\frac12\big) = -\frac78$, $b_5 = \frac{11}{6}\cdot\frac38 = \frac{11}{16}$, $b_7 = -\frac{75}{128}$, $b_9 = \frac{133}{256}$, and because $f$ is sectionally smooth, by [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|Theorem §49.9]]
 >
 > $$
 > f(x) = \frac32P_1(x) - \frac78P_3(x) + \frac{11}{16}P_5(x) - \cdots, \qquad -1 < x < 1,\ x \ne 0 ,
@@ -181,6 +181,8 @@ These formulas are useful if $P_n(x)$ and $P_n'(x)$ can be evaluated easily, and
 
 ![[m341-49-2.svg]]
 *Partial sums of Legendre series, computed from Examples §49.2 and §49.3. (a) The step function and its partial sum through $P_9$: it oscillates about $\pm1$, with the largest errors near the jump and near the endpoints, as a Fourier series does. (b) $|x|$ and its partial sum through $P_6$, already close except near the corner at $x = 0$.*
+
+*Chain: the triangle wave earlier in [[§16a Sawtooth, Triangle Wave, Parabola, Rectified Sine, Sinc Function and Rectangular Pulse#The Triangle Wave|Chapter 1]] (its Fourier series).*
 
 ## Zonal Harmonics
 

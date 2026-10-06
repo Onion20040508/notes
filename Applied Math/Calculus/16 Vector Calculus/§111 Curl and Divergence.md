@@ -80,7 +80,7 @@ Two operations on vector fields in $\mathbb{R}^3$ resemble differentiation. The 
 
 *Uses:* [[§111 Curl and Divergence#^thm-111-1|§111.1]], [[§107 Vector Fields#^def-107-4|Def. §107.4]]
 
-This is the three-dimensional form of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]: for a plane field $P\,\mathbf{i} + Q\,\mathbf{j}$ the curl is $(\partial Q/\partial x - \partial P/\partial y)\,\mathbf{k}$. The converse is not true in general, but Stewart states (16.5, Theorem 4) that it holds when $\mathbf{F}$ is defined everywhere: *if $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is conservative.* (More generally it holds if the domain is simply-connected ([[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]), that is, "has no hole".) This is the three-dimensional version of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]]. Its proof requires Stokes' Theorem, so it is stated and proved there: [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]].
+This is the three-dimensional form of [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]: for a plane field $P\,\mathbf{i} + Q\,\mathbf{j}$ the curl is $(\partial Q/\partial x - \partial P/\partial y)\,\mathbf{k}$. The converse is not true in general, but Stewart states (16.5, Theorem 4) that it holds when $\mathbf{F}$ is defined everywhere: *if $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is conservative.* (More generally it holds if the domain is simply-connected ([[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]), that is, "has no hole".) This is the three-dimensional version of [[§110a Extended Versions of Green's Theorem#^thm-110-5|Theorem §110.5]]. Its proof requires Stokes' Theorem, so it is stated and proved there: [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]].
 
 > [!definition] Definition §111.2: Irrotational
 > If $\operatorname{curl}\mathbf{F} = \mathbf{0}$ at a point $P$, then $\mathbf{F}$ is called **irrotational** at $P$.
@@ -193,7 +193,7 @@ So if $\operatorname{div}\mathbf{F} \ne 0$, then $\mathbf{F}$ is not the curl of
 >
 > The domain of $\mathbf{F}$ is all of $\mathbb{R}^3$ and its components are polynomials, so $\mathbf{F}$ is conservative by [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]].
 >
-> **(b)** Following [[§109 The Fundamental Theorem for Line Integrals#^rem-109-1|the method of §109]], we need
+> **(b)** Following [[§109a Conservative Vector Fields and Potential Functions#^rem-109-1|the method of §109]], we need
 >
 > $$
 > f_x = y^2z^3, \qquad (5) \qquad f_y = 2xyz^3, \qquad (6) \qquad f_z = 3xy^2z^2 . \qquad (7)
@@ -301,11 +301,11 @@ Let the plane region $D$, its boundary curve $C$ and the functions $P$, $Q$ sati
 > \operatorname{curl}\mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\[2pt] \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\[6pt] P(x, y) & Q(x, y) & 0 \end{vmatrix} = \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right)\mathbf{k}, \qquad\text{so}\qquad (\operatorname{curl}\mathbf{F}) \cdot \mathbf{k} = \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} .
 > $$
 >
-> On the other hand $\oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C P\,dx + Q\,dy$ ([[§108 Line Integrals#^thm-108-7|Theorem §108.7]]), and $\oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C \mathbf{F} \cdot \mathbf{T}\,ds$ by [[§108 Line Integrals#^def-108-8|Definition §108.8]]. So (12) is exactly Green's Theorem.
+> On the other hand $\oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C P\,dx + Q\,dy$ ([[§108a Line Integrals of Vector Fields#^thm-108-7|Theorem §108.7]]), and $\oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C \mathbf{F} \cdot \mathbf{T}\,ds$ by [[§108a Line Integrals of Vector Fields#^def-108-8|Definition §108.8]]. So (12) is exactly Green's Theorem.
 
 ^pf-111-4
 
-*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§108 Line Integrals#^thm-108-7|§108.7]], [[§108 Line Integrals#^def-108-8|Def. §108.8]]
+*Uses:* [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§108a Line Integrals of Vector Fields#^thm-108-7|§108.7]], [[§108a Line Integrals of Vector Fields#^def-108-8|Def. §108.8]]
 
 Equation 12 is the planar model of Stokes' Theorem ([[§114 Stokes' Theorem#^thm-114-1|Theorem §114.1]]). A similar formula holds for the *normal* component of $\mathbf{F}$.
 

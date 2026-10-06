@@ -150,7 +150,7 @@ In these examples the set where the series converges is an interval: finite for 
 > S = \Big\{ x \ \Big|\ \sum c_n x^n \text{ converges} \Big\}
 > $$
 >
-> is not empty. By [[§76 Power Series#^lem-76-1|Lemma §76.1]](2) the series diverges if $|x| > |d|$, so $|x| \le |d|$ for all $x \in S$: $|d|$ is an upper bound for $S$. By the Completeness Axiom ([[§69 Sequences#^def-69-new1|Definition §69.8]]), $S$ has a least upper bound $R$. Also $R > 0$: by [[§76 Power Series#^lem-76-1|Lemma §76.1]](1) the series converges at $|b|/2$, so $R \ge |b|/2 > 0$.
+> is not empty. By [[§76 Power Series#^lem-76-1|Lemma §76.1]](2) the series diverges if $|x| > |d|$, so $|x| \le |d|$ for all $x \in S$: $|d|$ is an upper bound for $S$. By the Completeness Axiom ([[§69a Monotonic and Bounded Sequences#^def-69-new1|Definition §69.8]]), $S$ has a least upper bound $R$. Also $R > 0$: by [[§76 Power Series#^lem-76-1|Lemma §76.1]](1) the series converges at $|b|/2$, so $R \ge |b|/2 > 0$.
 >
 > **$|x| > R$.** Then $x \notin S$, so $\sum c_n x^n$ diverges. (Stewart states this directly; here is why: if $x \in S$, pick $y$ with $R < y < |x|$. By [[§76 Power Series#^lem-76-1|Lemma §76.1]](1) the series converges at $y$, so $y \in S$ and $y > R$, contradicting that $R$ is an upper bound.)
 >
@@ -158,7 +158,7 @@ In these examples the set where the series converges is an interval: finite for 
 
 ^pf-76-2
 
-*Uses:* [[§76 Power Series#^lem-76-1|§76.1]], [[§69 Sequences#^def-69-new1|Def. §69.8]]
+*Uses:* [[§76 Power Series#^lem-76-1|§76.1]], [[§69a Monotonic and Bounded Sequences#^def-69-new1|Def. §69.8]]
 
 > [!theorem] Theorem §76.3: Three Possibilities for a Power Series
 > For a power series $\sum_{n=0}^{\infty} c_n (x - a)^n$, there are only three possibilities:

@@ -24,7 +24,7 @@ So far we have concentrated on three homogeneous equations and found these quali
 | Wave | Oscillatory (not always periodic) behavior in time. Retention of discontinuities for $t > 0$. |
 | Potential | Smooth surface. Maximum principle. Mean value property. |
 
-The heat features are those of [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]] and [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|Theorem §25.4]] (terms $e^{-\lambda_n^2kt}$ that smooth out any initial jump), the wave features those of [[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]] and [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]] (traveling waves that carry corners and jumps along unchanged), and the potential features those of [[§39 Potential in a Disk|§39]] ([[§39 Potential in a Disk#^thm-39-4|Theorem §39.4]], [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5]]).
+The heat features are those of [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|Theorem §19.5]] and [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|Theorem §25.4]] (terms $e^{-\lambda_n^2kt}$ that smooth out any initial jump), the wave features those of [[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]] and [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]] (traveling waves that carry corners and jumps along unchanged), and the potential features those of [[§39 Potential in a Disk|§39]] ([[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-4|Theorem §39.4]], [[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-5|Theorem §39.5]]).
 
 ## Classification
 

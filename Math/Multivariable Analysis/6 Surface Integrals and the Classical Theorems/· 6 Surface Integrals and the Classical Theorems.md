@@ -13,14 +13,14 @@ tags: [chapter, multivariable-analysis]
 
 ## Sections
 - [[§18 Surface Integrals]]
-- [[§18a The Divergence Theorem in ℝ³]]
+- [[§18a Flux Integrals and the Divergence Theorem in ℝ³]]
 - [[§19 The Laplacian in Spherical Coordinates]]
 - [[§20 Stokes' Theorem in ℝ³]]
 - [[§20a The Unit Sphere and Spherical Coordinates]]
 
 ## Central results
 - [[Surface Area via the Gram Matrix]] ([[§18 Surface Integrals#^thm-18-1|§18.1]])
-- [[Divergence Theorem in ℝ³]] ([[§18a The Divergence Theorem in ℝ³#^thm-18-2|§18.2]])
+- [[Divergence Theorem in ℝ³]] ([[§18a Flux Integrals and the Divergence Theorem in ℝ³#^thm-18-2|§18.2]])
 - [[Stokes' Theorem in ℝ³]] ([[§20 Stokes' Theorem in ℝ³#^thm-20-1|§20.1]])
 
 ## Load-bearing results

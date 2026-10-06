@@ -16,7 +16,7 @@ Usually there is no formula for the partial sums of a series, so we need tests t
 ## The Integral Test
 
 > [!remark] Remark: Two Pictures
-> **$\sum 1/n^2$ converges.** Put rectangles of width $1$ under the curve $y = 1/x^2$, with height equal to the value at the *right* endpoint of each interval $[n-1, n]$. Their areas are $\frac{1}{1^2}, \frac{1}{2^2}, \frac{1}{3^2}, \ldots$. Apart from the first, they lie under the curve for $x \ge 1$, whose area is $\int_1^{\infty} \frac{1}{x^2}\,dx = 1$ ([[§51 Improper Integrals#^thm-51-1|Theorem §51.1]]). So every partial sum is less than $\frac{1}{1^2} + 1 = 2$. The partial sums are increasing (all terms are positive) and bounded, so they converge by the Monotonic Sequence Theorem ([[§69 Sequences#^thm-69-9|Theorem §69.9]]), and $\sum_{n=1}^{\infty} 1/n^2 < 2$. (Numerically $s_{5000} \approx 1.6447$; Euler found the exact sum $\pi^2/6 \approx 1.6449$.)
+> **$\sum 1/n^2$ converges.** Put rectangles of width $1$ under the curve $y = 1/x^2$, with height equal to the value at the *right* endpoint of each interval $[n-1, n]$. Their areas are $\frac{1}{1^2}, \frac{1}{2^2}, \frac{1}{3^2}, \ldots$. Apart from the first, they lie under the curve for $x \ge 1$, whose area is $\int_1^{\infty} \frac{1}{x^2}\,dx = 1$ ([[§51 Improper Integrals#^thm-51-1|Theorem §51.1]]). So every partial sum is less than $\frac{1}{1^2} + 1 = 2$. The partial sums are increasing (all terms are positive) and bounded, so they converge by the Monotonic Sequence Theorem ([[§69a Monotonic and Bounded Sequences#^thm-69-9|Theorem §69.9]]), and $\sum_{n=1}^{\infty} 1/n^2 < 2$. (Numerically $s_{5000} \approx 1.6447$; Euler found the exact sum $\pi^2/6 \approx 1.6449$.)
 >
 > **$\sum 1/\sqrt{n}$ diverges.** Now take the height at the *left* endpoint of each interval $[n, n+1]$, so the rectangles stick out above the curve $y = 1/\sqrt{x}$. Their total area $\frac{1}{\sqrt1} + \frac{1}{\sqrt2} + \cdots$ exceeds the area under the curve for $x \ge 1$, which is $\int_1^{\infty} \frac{1}{\sqrt x}\,dx = \infty$ ([[§51 Improper Integrals#^thm-51-1|Theorem §51.1]], Stewart's Example 7.8.4). So the series diverges. (Numerically $s_{5000} \approx 139.97$.)
 
@@ -74,7 +74,7 @@ The same reasoning proves the general test.
 
 ^pf-71-1
 
-*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§51 Improper Integrals#^def-51-1|Def. §51.1]], [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison properties), [[§35 The Definite Integral#^thm-35-5|§35.5]] (adjacent intervals)
+*Uses:* [[§69a Monotonic and Bounded Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§51 Improper Integrals#^def-51-1|Def. §51.1]], [[§35a Properties of the Definite Integral#^thm-35-6|§35.6]] (comparison properties), [[§35a Properties of the Definite Integral#^thm-35-5|§35.5]] (adjacent intervals)
 
 ![[m233-71-1.svg]]
 *The two inequalities in the proof of the Integral Test, for $n = 6$. Left, inequality (4): rectangles of height $a_i = f(i)$ on $[i-1, i]$ (right endpoints) fit under the decreasing curve. Right, inequality (5): rectangles of height $a_i$ on $[i, i+1]$ (left endpoints) cover the area under the curve from $1$ to $n$.*

@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix G.*
 
-With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]]) and $e^x$ as its inverse ([[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Definition §121.4]]), $b^x$ and $\log_b x$ are defined from these. Every law of logarithms and exponents and every differentiation formula is then proved, and the new definitions agree with the old ones ([[§121 The Logarithm Defined as an Integral#^thm-121-12|Theorem §121.12]] and [[§121 The Logarithm Defined as an Integral#^rem-121-2|the closing remark]]).
+With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]]) and $e^x$ as its inverse ([[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Definition §121.4]]), $b^x$ and $\log_b x$ are defined from these. Every law of logarithms and exponents and every differentiation formula is then proved, and the new definitions agree with the old ones ([[§121a General Exponential and Logarithmic Functions#^thm-121-12|Theorem §121.12]] and [[§121a General Exponential and Logarithmic Functions#^rem-121-2|the closing remark]]).
 
 ## General Exponential Functions
 
@@ -54,7 +54,7 @@ With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an I
 
 ^pf-121-8
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]]
+*Uses:* [[§121a General Exponential and Logarithmic Functions#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]]
 
 > [!theorem] Theorem §121.9: Laws of Exponents
 > If $x$ and $y$ are real numbers and $a, b > 0$, then
@@ -88,7 +88,7 @@ With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an I
 
 ^pf-121-9
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^thm-121-6|§121.6]], [[§121 The Logarithm Defined as an Integral#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-2|§121.2]]
+*Uses:* [[§121a General Exponential and Logarithmic Functions#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^thm-121-6|§121.6]], [[§121a General Exponential and Logarithmic Functions#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-2|§121.2]]
 
 > [!theorem] Theorem §121.10: Derivative of b^x
 > $$
@@ -112,7 +112,7 @@ With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an I
 
 ^pf-121-10
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^thm-121-7|§121.7]], [[§121 The Logarithm Defined as an Integral#^thm-121-3|§121.3]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]]
+*Uses:* [[§121a General Exponential and Logarithmic Functions#^def-121-5|Def. §121.5]], [[§121 The Logarithm Defined as an Integral#^thm-121-7|§121.7]], [[§121 The Logarithm Defined as an Integral#^thm-121-3|§121.3]], [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]]
 
 ## General Logarithmic Functions
 
@@ -153,7 +153,7 @@ With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an I
 
 ^pf-121-11
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^def-121-6|Def. §121.6]], [[§121 The Logarithm Defined as an Integral#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-2|§121.2]]
+*Uses:* [[§121a General Exponential and Logarithmic Functions#^def-121-6|Def. §121.6]], [[§121a General Exponential and Logarithmic Functions#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-2|§121.2]]
 
 ## The Number e as a Limit
 
@@ -183,7 +183,7 @@ With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an I
 
 ^pf-121-12
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-5|§121.5]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]], [[§10 Continuity#^thm-10-7|§10.7]] (limit of a composite function), [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of the derivative)
+*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§121a General Exponential and Logarithmic Functions#^thm-121-8|§121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-5|§121.5]], [[§121 The Logarithm Defined as an Integral#^def-121-4|Def. §121.4]], [[§10 Continuity#^thm-10-7|§10.7]] (limit of a composite function), [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of the derivative)
 
 ## Agreement with the Earlier Definitions
 
@@ -192,17 +192,17 @@ With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§121 The Logarithm Defined as an I
 >
 > | | Chapters 1 and 3 | Appendix G |
 > |---|---|---|
-> | $\ln x$ | [[§5 Inverse Functions and Logarithms#^def-5-4\|Def. §5.4]] ($\log_e$) | [[§121 The Logarithm Defined as an Integral#^def-121-1\|Def. §121.1]]; $\log_e = \ln$ by [[§121 The Logarithm Defined as an Integral#^def-121-6\|Def. §121.6]] |
-> | $e$ | [[§4 Exponential Functions#^def-4-4\|Def. §4.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2\|Def. §14.2]] | [[§121 The Logarithm Defined as an Integral#^def-121-2\|Def. §121.2]]; the same number by [[§121 The Logarithm Defined as an Integral#^thm-121-12\|Thm. §121.12]] and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7\|Thm. §19.7]] |
-> | $e^x$, $b^x$ | [[§4 Exponential Functions#^def-4-2\|Def. §4.2]], [[§4 Exponential Functions#^def-4-3\|Def. §4.3]] | [[§121 The Logarithm Defined as an Integral#^def-121-4\|Def. §121.4]], [[§121 The Logarithm Defined as an Integral#^def-121-5\|Def. §121.5]]; equal for rational $x$ by [[§121 The Logarithm Defined as an Integral#^prop-121-4\|Prop. §121.4]], for irrational $x$ see below |
-> | $\log_b x$ | [[§5 Inverse Functions and Logarithms#^def-5-3\|Def. §5.3]] | [[§121 The Logarithm Defined as an Integral#^def-121-6\|Def. §121.6]] |
-> | inverse pair $\ln$, $e^x$ | [[§5 Inverse Functions and Logarithms#^cor-5-6\|Cor. §5.6]] | (8)–(10) of [[§121 The Logarithm Defined as an Integral#^def-121-4\|Def. §121.4]] |
-> | laws of exponents | [[§4 Exponential Functions#^thm-4-1\|Thm. §4.1]] | [[§121 The Logarithm Defined as an Integral#^thm-121-6\|Thm. §121.6]], [[§121 The Logarithm Defined as an Integral#^thm-121-9\|Thm. §121.9]] |
-> | laws of logarithms, change of base | [[§5 Inverse Functions and Logarithms#^thm-5-5\|Thm. §5.5]], [[§5 Inverse Functions and Logarithms#^thm-5-8\|Thm. §5.8]] | [[§121 The Logarithm Defined as an Integral#^thm-121-2\|Thm. §121.2]], [[§121 The Logarithm Defined as an Integral#^thm-121-8\|Thm. §121.8]], [[§121 The Logarithm Defined as an Integral#^thm-121-11\|Thm. §121.11]] |
+> | $\ln x$ | [[§5a Logarithmic and Inverse Trigonometric Functions#^def-5-4\|Def. §5.4]] ($\log_e$) | [[§121 The Logarithm Defined as an Integral#^def-121-1\|Def. §121.1]]; $\log_e = \ln$ by [[§121a General Exponential and Logarithmic Functions#^def-121-6\|Def. §121.6]] |
+> | $e$ | [[§4 Exponential Functions#^def-4-4\|Def. §4.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2\|Def. §14.2]] | [[§121 The Logarithm Defined as an Integral#^def-121-2\|Def. §121.2]]; the same number by [[§121a General Exponential and Logarithmic Functions#^thm-121-12\|Thm. §121.12]] and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7\|Thm. §19.7]] |
+> | $e^x$, $b^x$ | [[§4 Exponential Functions#^def-4-2\|Def. §4.2]], [[§4 Exponential Functions#^def-4-3\|Def. §4.3]] | [[§121 The Logarithm Defined as an Integral#^def-121-4\|Def. §121.4]], [[§121a General Exponential and Logarithmic Functions#^def-121-5\|Def. §121.5]]; equal for rational $x$ by [[§121 The Logarithm Defined as an Integral#^prop-121-4\|Prop. §121.4]], for irrational $x$ see below |
+> | $\log_b x$ | [[§5a Logarithmic and Inverse Trigonometric Functions#^def-5-3\|Def. §5.3]] | [[§121a General Exponential and Logarithmic Functions#^def-121-6\|Def. §121.6]] |
+> | inverse pair $\ln$, $e^x$ | [[§5a Logarithmic and Inverse Trigonometric Functions#^cor-5-6\|Cor. §5.6]] | (8)–(10) of [[§121 The Logarithm Defined as an Integral#^def-121-4\|Def. §121.4]] |
+> | laws of exponents | [[§4 Exponential Functions#^thm-4-1\|Thm. §4.1]] | [[§121 The Logarithm Defined as an Integral#^thm-121-6\|Thm. §121.6]], [[§121a General Exponential and Logarithmic Functions#^thm-121-9\|Thm. §121.9]] |
+> | laws of logarithms, change of base | [[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-5\|Thm. §5.5]], [[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-8\|Thm. §5.8]] | [[§121 The Logarithm Defined as an Integral#^thm-121-2\|Thm. §121.2]], [[§121a General Exponential and Logarithmic Functions#^thm-121-8\|Thm. §121.8]], [[§121a General Exponential and Logarithmic Functions#^thm-121-11\|Thm. §121.11]] |
 > | $(\ln x)' = 1/x$ | [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3\|Cor. §19.3]] | [[§121 The Logarithm Defined as an Integral#^thm-121-1\|Thm. §121.1]] |
 > | $(e^x)' = e^x$ | [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6\|Thm. §14.6]] | [[§121 The Logarithm Defined as an Integral#^thm-121-7\|Thm. §121.7]] |
-> | $(b^x)' = b^x\ln b$ | [[§17 The Chain Rule#^thm-17-5\|Thm. §17.5]] | [[§121 The Logarithm Defined as an Integral#^thm-121-10\|Thm. §121.10]] |
-> | $(\log_b x)' = 1/(x\ln b)$ | [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-2\|Thm. §19.2]] | [[§121 The Logarithm Defined as an Integral#^thm-121-11\|Thm. §121.11]] |
+> | $(b^x)' = b^x\ln b$ | [[§17 The Chain Rule#^thm-17-5\|Thm. §17.5]] | [[§121a General Exponential and Logarithmic Functions#^thm-121-10\|Thm. §121.10]] |
+> | $(\log_b x)' = 1/(x\ln b)$ | [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-2\|Thm. §19.2]] | [[§121a General Exponential and Logarithmic Functions#^thm-121-11\|Thm. §121.11]] |
 >
 > **Irrational exponents agree.** Let $b > 1$ and $x$ irrational. For rationals $r < x < s$, the function $t \mapsto e^{t\ln b}$ is increasing ([[§121a General Exponential and Logarithmic Functions#^thm-121-10|Theorem §121.10]]) and equals $b^t$ at rational $t$ (by (9) and Law 3 of [[§121 The Logarithm Defined as an Integral#^thm-121-6|Theorem §121.6]], as in [[§121a General Exponential and Logarithmic Functions#^def-121-5|Definition §121.5]]), so $b^r < e^{x\ln b} < b^s$. Thus $e^{x\ln b}$ is the unique number between all $b^r$ and all $b^s$ that [[§4 Exponential Functions#^def-4-3|Definition §4.3]] calls $b^x$; for $0 < b < 1$ reverse the inequalities, and $1^x = e^0 = 1$. So every result proved here is a proof of the corresponding statement taken on credit earlier.
 

@@ -91,7 +91,7 @@ By [[§95a Tangent Planes to Level Surfaces#^thm-95-5|Theorem §95.5]] every tan
 
 ^pf-95-6
 
-*Uses:* [[§95 Directional Derivatives and the Gradient Vector#^def-95-4|Def. §95.4]], [[§93 Tangent Planes and Linear Approximations#^thm-93-1|§93.1]]
+*Uses:* [[§95a Tangent Planes to Level Surfaces#^def-95-4|Def. §95.4]], [[§93 Tangent Planes and Linear Approximations#^thm-93-1|§93.1]]
 
 > [!example] Example §95.4: Tangent Planes and Normal Lines
 > **(a)** Find the equations of the tangent plane and normal line at the point $(-2, 1, -3)$ to the ellipsoid
@@ -183,7 +183,7 @@ For a function $f$ of three variables and a point $P$ of its domain, $\nabla f(P
 
 ^pf-95-7
 
-*Uses:* [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|§95.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-3|§95.3]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|§95.4]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|§95.5]], [[§94 The Chain Rule#^thm-94-1|§94.1]]
+*Uses:* [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|§95.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-3|§95.3]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|§95.4]], [[§95a Tangent Planes to Level Surfaces#^thm-95-5|§95.5]], [[§94 The Chain Rule#^thm-94-1|§94.1]]
 
 > [!remark] Remark: Curves of Steepest Ascent and Gradient Fields
 > On a topographic map of a hill, with $f(x, y)$ the height above sea level, a **curve of steepest ascent** is drawn by making it perpendicular to all of the contour lines; a creek running downhill follows a curve of steepest descent. Mathematical software can plot sample gradient vectors $\nabla f(a, b)$, each starting at the point $(a, b)$: a **gradient vector field** ([[§107 Vector Fields#^def-107-3|Definition §107.3]]). For $f(x, y) = x^2 - y^2$, superimposed on the contour map of $f$ (hyperbolas), the gradient vectors $\langle 2x, -2y \rangle$ point "uphill" and cross the level curves at right angles.

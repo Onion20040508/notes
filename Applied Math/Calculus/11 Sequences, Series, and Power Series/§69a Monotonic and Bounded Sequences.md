@@ -106,7 +106,7 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 
 ^pf-69-9
 
-*Uses:* [[§69 Sequences#^def-69-7|Def. §69.7]], [[§69 Sequences#^def-69-new1|Def. §69.8]], [[§69 Sequences#^def-69-5|Def. §69.5]], [[§69 Sequences#^def-69-6|Def. §69.6]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§69 Sequences#^thm-69-3|§69.3]]
+*Uses:* [[§69a Monotonic and Bounded Sequences#^def-69-7|Def. §69.7]], [[§69a Monotonic and Bounded Sequences#^def-69-new1|Def. §69.8]], [[§69a Monotonic and Bounded Sequences#^def-69-5|Def. §69.5]], [[§69a Monotonic and Bounded Sequences#^def-69-6|Def. §69.6]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§69 Sequences#^thm-69-3|§69.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 Thm. §10.1]] (Monotone Convergence Theorem, same proof; hub [[Monotone Convergence Theorem]]); an unbounded monotone sequence tends to $\pm\infty$, [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|451 Thm. §10.3]].
@@ -142,7 +142,7 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 > 2. **Indeterminate forms with a real-variable formula** ($\ln n / n$, $n^{1/n}$, …): find $\lim_{x \to \infty} f(x)$ by l'Hospital's Rule and transfer it with [[§69 Sequences#^thm-69-1|Theorem §69.1]].
 > 3. **Factorials, $(-1)^n$ and other integer-only expressions:** bound $a_n$ between simpler sequences and squeeze, or show $|a_n| \to 0$ ([[§69 Sequences#^ex-69-3|Example §69.3]]). Compare with $r^n$ ([[§69 Sequences#^thm-69-8|Theorem §69.8]]).
 > 4. **A continuous function of a convergent sequence:** move the limit inside ([[§69 Sequences#^thm-69-6|Theorem §69.6]]).
-> 5. **Recursive sequences:** show by induction that the sequence is monotonic and bounded, conclude that $L$ exists, then let $n \to \infty$ in the recurrence and solve for $L$ ([[§69 Sequences#^ex-69-5|Example §69.5]]). Solving for $L$ before knowing that the limit exists can give a wrong answer.
+> 5. **Recursive sequences:** show by induction that the sequence is monotonic and bounded, conclude that $L$ exists, then let $n \to \infty$ in the recurrence and solve for $L$ ([[§69a Monotonic and Bounded Sequences#^ex-69-5|Example §69.5]]). Solving for $L$ before knowing that the limit exists can give a wrong answer.
 > 6. **Divergence:** exhibit two different values approached infinitely often, as for $(-1)^n$, or show $a_n \to \pm\infty$.
 
 ^rem-69-2

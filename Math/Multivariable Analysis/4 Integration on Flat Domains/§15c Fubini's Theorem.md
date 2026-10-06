@@ -105,7 +105,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 *Fubini's theorem geometrically: freeze $x$ and integrate over $y$ to get the cross-sectional area $A(x)$ (red slab); then integrate $A(x)$ over $x$ to stack the slabs into the volume. The iterated integral $\int\!\!\int f\,dy\,dx$ is this two-stage process; Fubini says it equals the double integral whenever $f$ is integrable.*
 
 > [!remark]- Connections
-> - Makes rigorous the simple-case computation (“Iterated Integrals: The Simple Case”) above; extended to curved regions in [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9]].
+> - Makes rigorous the simple-case computation ([[§15b Properties of the Integral#Iterated Integrals: The Simple Case|“Iterated Integrals: The Simple Case”]]) above; extended to curved regions in [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9]].
 > - Its Type I/II form plus the [[Fundamental Theorem of Calculus]] in the inner variable proves [[Green's Theorem|Green's Theorem]] (§16.1), and one dimension up the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] (§17.1).
 > - Lebesgue version, for every integrable $f$ on $\mathbb{R}^p \times \mathbb{R}^q$ with no continuity assumption: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]].
 > - Used in Relativity: the total-derivative terms in the variation of a field action are integrated first over their own variable — [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-2|REL Theorem §B4.1.2]].

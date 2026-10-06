@@ -78,7 +78,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 ^ex-107-1
 
 ![[m233-107-1.svg]]
-*The rotation field $\mathbf{F} = -y\,\mathbf{i} + x\,\mathbf{j}$ (arrows scaled down). Every arrow is tangent to a circle about the origin (gray) and as long as that circle's radius, so the field circulates counterclockwise and grows linearly with distance. This field returns throughout the chapter: it is not conservative, since $\partial P/\partial y = -1 \ne 1 = \partial Q/\partial x$ ([[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]), and its curl is $2\mathbf{k}$ ([[§111 Curl and Divergence#^ex-111-3|Example §111.3]]).*
+*The rotation field $\mathbf{F} = -y\,\mathbf{i} + x\,\mathbf{j}$ (arrows scaled down). Every arrow is tangent to a circle about the origin (gray) and as long as that circle's radius, so the field circulates counterclockwise and grows linearly with distance. This field returns throughout the chapter: it is not conservative, since $\partial P/\partial y = -1 \ne 1 = \partial Q/\partial x$ ([[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]), and its curl is $2\mathbf{k}$ ([[§111 Curl and Divergence#^ex-111-3|Example §111.3]]).*
 
 > [!example] Example §107.2: Force Fields from Inverse Square Laws
 > **Gravitation.** Newton's Law of Gravitation says that the magnitude of the gravitational force between two objects with masses $m$ and $M$ is $|\mathbf{F}| = mMG/r^2$, where $r$ is the distance between them and $G$ is the gravitational constant. Put the object of mass $M$ at the origin and let $\mathbf{x} = \langle x, y, z \rangle$ be the position vector of the object of mass $m$. Then $r = |\mathbf{x}|$, and the force on the second object points toward the origin, in the direction of the unit vector $-\mathbf{x}/|\mathbf{x}|$. So the **gravitational field** is
@@ -139,7 +139,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 > \nabla f(x, y) = \frac{\partial f}{\partial x}\,\mathbf{i} + \frac{\partial f}{\partial y}\,\mathbf{j} = 2xy\,\mathbf{i} + (x^2 - 3y^2)\,\mathbf{j} .
 > $$
 >
-> Plotted together with a contour map of $f$, the gradient vectors are perpendicular to the level curves, as they must be ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Theorem §95.7]]). They are long where the level curves are close together and short where the curves are far apart: the length $|\nabla f|$ is the maximum directional derivative of $f$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|Theorem §95.4]]), and closely spaced level curves mean a steep graph. (For instance, at the origin $\nabla f = \mathbf{0}$, and there the level curve $f = 0$, which is the three lines $y = 0$, $y = \pm x$, crosses itself.)
+> Plotted together with a contour map of $f$, the gradient vectors are perpendicular to the level curves, as they must be ([[§95a Tangent Planes to Level Surfaces#^thm-95-7|Theorem §95.7]]). They are long where the level curves are close together and short where the curves are far apart: the length $|\nabla f|$ is the maximum directional derivative of $f$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|Theorem §95.4]]), and closely spaced level curves mean a steep graph. (For instance, at the origin $\nabla f = \mathbf{0}$, and there the level curve $f = 0$, which is the three lines $y = 0$, $y = \pm x$, crosses itself.)
 >
 > **(b)** The value at $(1, 1)$ of the gradient vector field of $z = x^2 y^3$: since $\nabla z = \langle 2xy^3,\ 3x^2y^2 \rangle$,
 >
@@ -162,7 +162,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 > [!remark]- Connections
 > - Same definition in 452 (with "irrotational" and "solenoidal" alongside): [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|452 Def. §11.1]]. In the language of differential forms a conservative field is an exact 1-form: [[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]], with the gradient as the differential [[§22 The Algebra of Differential Forms#^prop-22-6|452 Prop. §22.6]].
 
-Not every vector field is conservative (the rotation field of [[§107 Vector Fields#^ex-107-1|Example §107.1]] is not; the test is [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]), but conservative fields arise often in physics.
+Not every vector field is conservative (the rotation field of [[§107 Vector Fields#^ex-107-1|Example §107.1]] is not; the test is [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]), but conservative fields arise often in physics.
 
 > [!example] Example §107.4: A Potential for the Gravitational Field
 > The gravitational field of [[§107 Vector Fields#^ex-107-2|Example §107.2]] is conservative. Define

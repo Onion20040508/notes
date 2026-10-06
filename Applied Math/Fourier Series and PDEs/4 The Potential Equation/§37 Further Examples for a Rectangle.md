@@ -52,7 +52,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 > b_0b + \sum_{n=1}^{\infty}\big(b_n\sinh(\lambda_nb)\big)\cos(\lambda_nx) = \frac{V_0x}{a}, \qquad 0 < x < a ,
 > $$
 >
-> a slightly disguised cosine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]). Its coefficients are
+> a slightly disguised cosine series ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-4|Definition §7.4]]). Its coefficients are
 >
 > $$
 > b_0b = \frac1a\int_0^a V_0\frac xa\,dx = \frac{V_0}{2}, \qquad b_n\sinh(\lambda_nb) = \frac2a\int_0^a V_0\frac xa\cos(\lambda_nx)\,dx = \frac{2V_0\big((-1)^n - 1\big)}{n^2\pi^2} ,
@@ -249,7 +249,7 @@ The success of separation of variables depends on having homogeneous boundary co
 ^def-37-1
 
 > [!remark]- Connections
-> - Uniqueness: two solutions of the same Poisson equation with the same boundary values differ by a harmonic function vanishing on the boundary, hence coincide, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|452 Ex. §17.1]] (stated there for $\Delta u_1 = \Delta u_2$); in the vault's terms also [[§39 Potential in a Disk#^cor-39-6|Corollary §39.6]] applied to the difference.
+> - Uniqueness: two solutions of the same Poisson equation with the same boundary values differ by a harmonic function vanishing on the boundary, hence coincide, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|452 Ex. §17.1]] (stated there for $\Delta u_1 = \Delta u_2$); in the vault's terms also [[§39a The Poisson Integral Formula and the Mean Value Property#^cor-39-6|Corollary §39.6]] applied to the difference.
 > - See also: [[§116★ Transformations of Harmonic Functions#^cor-116-3|342 Cor. §116.3]] (how the Poisson equation transforms under an analytic change of variables).
 
 > [!theorem] Proposition §37.1: Polynomial Solutions of the Poisson Equation

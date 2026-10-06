@@ -153,7 +153,7 @@ This characteristic of solutions of the potential equation is called the **mean 
 
 ^pf-39-5
 
-*Uses:* [[§39 Potential in a Disk#^thm-39-4|§39.4]], [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem), [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]] (connectedness)
+*Uses:* [[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-4|§39.4]], [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem), [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]] (connectedness)
 
 > [!remark]- Connections
 > - Complex-variables version: [[§59 Maximum Modulus Principle#^thm-59-3|342 Thm. §59.3]] (the maximum modulus principle) and [[§59 Maximum Modulus Principle#^cor-59-5|342 Cor. §59.5]] (the real part of a nonconstant analytic function takes its maximum only on the boundary, the case $u = \operatorname{Re} f$ of this theorem).
@@ -170,7 +170,7 @@ This characteristic of solutions of the potential equation is called the **mean 
 
 ^pf-39-6
 
-*Uses:* [[§39 Potential in a Disk#^thm-39-5|§39.5]]
+*Uses:* [[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-5|§39.5]]
 
 > [!remark]- Connections
 > - A second proof, by the energy method: Green's first identity with $u = v = w$ gives $\iint|\nabla w|^2 = 0$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|452 Ex. §17.1]]. It needs $w$ to have continuous first derivatives up to the boundary, while the maximum principle needs only continuity.

@@ -84,7 +84,7 @@ The tests so far apply only to series with positive terms. This section handles 
 
 ^pf-73-1
 
-*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§69 Sequences#^thm-69-3|§69.3]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]]
+*Uses:* [[§69a Monotonic and Bounded Sequences#^thm-69-9|§69.9]], [[§69 Sequences#^thm-69-3|§69.3]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]]
 
 ![[m233-73-1.svg]]
 *Partial sums of the alternating harmonic series $1 - \frac12 + \frac13 - \cdots$. The odd partial sums (red) decrease and the even ones (green) increase, both towards $s = \ln 2 \approx 0.693$. The sum always lies between two consecutive partial sums, so the error $|s - s_n|$ is less than the next step $b_{n+1}$ (orange, for $n = 8$): this is [[§73 Alternating Series and Absolute Convergence#^thm-73-2|Theorem §73.2]].*
@@ -124,7 +124,7 @@ The tests so far apply only to series with positive terms. This section handles 
 > f'(x) = \frac{2x(x^3 + 1) - x^2 \cdot 3x^2}{(x^3 + 1)^2} = \frac{2x - x^4}{(x^3 + 1)^2} = \frac{x(2 - x^3)}{(x^3 + 1)^2} .
 > $$
 >
-> For $x > 0$, $f'(x) < 0$ when $2 - x^3 < 0$, that is, $x > \sqrt[3]{2} \approx 1.26$. So $f$ is decreasing on $(\sqrt[3]{2}, \infty)$, and $b_{n+1} = f(n+1) < f(n) = b_n$ for $n \ge 2$. ($b_2 = \frac49 < \frac12 = b_1$ can be checked directly, but all that matters is that $\{b_n\}$ is eventually decreasing: the test applies to the tail from $n = 2$, and [[§70 Series#^prop-70-7|Proposition §70.7]] does the rest.) Alternatively, $b_{n+1} < b_n$ can be checked by cross-multiplying, as in [[§69 Sequences#^ex-69-4|Example §69.4]].
+> For $x > 0$, $f'(x) < 0$ when $2 - x^3 < 0$, that is, $x > \sqrt[3]{2} \approx 1.26$. So $f$ is decreasing on $(\sqrt[3]{2}, \infty)$, and $b_{n+1} = f(n+1) < f(n) = b_n$ for $n \ge 2$. ($b_2 = \frac49 < \frac12 = b_1$ can be checked directly, but all that matters is that $\{b_n\}$ is eventually decreasing: the test applies to the tail from $n = 2$, and [[§70 Series#^prop-70-7|Proposition §70.7]] does the rest.) Alternatively, $b_{n+1} < b_n$ can be checked by cross-multiplying, as in [[§69a Monotonic and Bounded Sequences#^ex-69-4|Example §69.4]].
 >
 > **Condition (ii).**
 >

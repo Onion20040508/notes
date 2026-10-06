@@ -207,11 +207,11 @@ If an odd periodic function is to be continuous, it must have value $0$ at $x = 
 ^thm-9-5
 
 > [!proof]+ Proof
-> The sine series is the Fourier series of the odd extension $f_o$ on $-a < x < a$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]). $f_o$ is continuous and bounded on $(-a, 0)$ and $(0, a)$, with derivative $f_o'(x) = f'(-x)$ for $-a < x < 0$, hence sectionally continuous. At $0$: $f_o(0+) = f(0+)$ and $f_o(0-) = -f(0+)$, which agree exactly when $f(0+) = 0$; then $f_o$, with $f_o(0) = 0$, is continuous on $(-a, a)$. At the ends: $f_o(a-) = f(a-)$ and $f_o(-a+) = -f(a-)$, which agree exactly when $f(a-) = 0$. So under the hypotheses $f_o$ satisfies Theorem §9.4, and the series converges uniformly to $f_o$ on $-a \le x \le a$, with value $0$ at $x = 0$ and at $x = \pm a$; on $0 \le x \le a$ this is the claim.
+> The sine series is the Fourier series of the odd extension $f_o$ on $-a < x < a$ ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Definition §7.4]]). $f_o$ is continuous and bounded on $(-a, 0)$ and $(0, a)$, with derivative $f_o'(x) = f'(-x)$ for $-a < x < 0$, hence sectionally continuous. At $0$: $f_o(0+) = f(0+)$ and $f_o(0-) = -f(0+)$, which agree exactly when $f(0+) = 0$; then $f_o$, with $f_o(0) = 0$, is continuous on $(-a, a)$. At the ends: $f_o(a-) = f(a-)$ and $f_o(-a+) = -f(a-)$, which agree exactly when $f(a-) = 0$. So under the hypotheses $f_o$ satisfies Theorem §9.4, and the series converges uniformly to $f_o$ on $-a \le x \le a$, with value $0$ at $x = 0$ and at $x = \pm a$; on $0 \le x \le a$ this is the claim.
 
 ^pf-9-5
 
-*Uses:* [[§9 Uniform Convergence#^thm-9-4|§9.4]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Def. §7.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]]
+*Uses:* [[§9 Uniform Convergence#^thm-9-4|§9.4]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-3|Def. §7.3]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]]
 
 > [!theorem] Theorem §9.6: Uniform Convergence of the Cosine Series
 > If $f$ is given on $0 < x < a$ and if $f$ is continuous and bounded and has a sectionally continuous derivative, then the Fourier cosine series of $f$ converges uniformly to $f$ in the interval $0 \le x \le a$. (The series converges to $f(0+)$ at $x = 0$ and to $f(a-)$ at $x = a$.)
@@ -225,9 +225,9 @@ If an odd periodic function is to be continuous, it must have value $0$ at $x = 
 
 ^pf-9-6
 
-*Uses:* [[§9 Uniform Convergence#^thm-9-4|§9.4]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Def. §7.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]]
+*Uses:* [[§9 Uniform Convergence#^thm-9-4|§9.4]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-3|Def. §7.3]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-4|Def. §7.4]]
 
-For example, $f(x) = x$, $0 < x < 1$ ([[§7 Arbitrary Period and Half-Range Expansions#^ex-7-3|Example §7.3]]): its cosine series converges uniformly on $0 \le x \le 1$ (Theorem §9.6; the coefficients are $O(1/n^2)$), but its sine series does not, since $f(1-) = 1 \ne 0$.
+For example, $f(x) = x$, $0 < x < 1$ ([[§7a Even and Odd Functions; Half-Range Expansions#^ex-7-3|Example §7.3]]): its cosine series converges uniformly on $0 \le x \le 1$ (Theorem §9.6; the coefficients are $O(1/n^2)$), but its sine series does not, since $f(1-) = 1 \ne 0$.
 
 > [!remark] Remark: Method — Deciding Uniform Convergence
 > Given a Fourier series, decide uniform convergence in one of two ways.

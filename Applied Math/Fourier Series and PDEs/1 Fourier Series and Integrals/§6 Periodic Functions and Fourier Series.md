@@ -235,7 +235,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 > 1. Sketch the periodic function over two or three periods, to see its symmetry and its jumps.
 > 2. Compute $a_0$, the mean value (3); often it can be read off the sketch.
 > 3. Compute $a_n$ and $b_n$ from (4)–(5), integrating separately over the pieces where $f$ has a single formula. Products like $x\cos nx$, $x^2\sin nx$ need integration by parts; then simplify with Proposition §6.5.
-> 4. Any interval of length $2\pi$ may replace $(-\pi, \pi)$ (Proposition §6.2), and symmetry can halve the work: odd functions have only sines and even functions only cosines ([[§7 Arbitrary Period and Half-Range Expansions#^thm-7-4|Theorem §7.4]]).
+> 4. Any interval of length $2\pi$ may replace $(-\pi, \pi)$ (Proposition §6.2), and symmetry can halve the work: odd functions have only sines and even functions only cosines ([[§7a Even and Odd Functions; Half-Range Expansions#^thm-7-4|Theorem §7.4]]).
 > 5. Write the result with $\sim$, and check it: the coefficients should tend to $0$ ([[§11★ Mean Error and Convergence in Mean#^cor-11-5|Corollary §11.5]]).
 
 ^rem-6-1

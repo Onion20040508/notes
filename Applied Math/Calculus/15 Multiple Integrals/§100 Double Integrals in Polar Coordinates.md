@@ -226,7 +226,7 @@ What has been done for polar rectangles extends to regions that play the role of
 
 ^ex-100-4
 
-*Chain: the four-leaved rose earlier in [[§68a The Cycloid, the Cardioid and the Four-Leaved Rose|Chapter 10]].*
+*Chain: the four-leaved rose earlier in [[§68a The Cycloid, the Cardioid and the Four-Leaved Rose#The Four-Leaved Rose|Chapter 10]].*
 
 > [!example] Example §100.5: Inside an Off-Center Cylinder
 > Find the volume of the solid that lies under the paraboloid $z = x^2 + y^2$, above the $xy$-plane, and inside the cylinder $x^2 + y^2 = 2x$.

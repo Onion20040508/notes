@@ -198,7 +198,7 @@ For instance, $\lim_{(x, y) \to (1, 2)} (x^2y^3 - x^3y^2 + 3x + 2y) = 1 \cdot 8 
 
 ^thm-91-4
 
-*Stewart says only that the Squeeze Theorem "also holds" for functions of two or more variables. The one-variable proof ([[§8 Calculating Limits Using the Limit Laws#^pf-8-7|proof of Theorem §8.7]], from Appendix F) carries over with the distance in place of $|x - a|$: given $\varepsilon$, take the smaller of the two $\delta$'s for $g$ and $h$; then $L - \varepsilon < g \le f \le h < L + \varepsilon$.*
+*Stewart says only that the Squeeze Theorem "also holds" for functions of two or more variables. The one-variable proof ([[§8a Direct Substitution, One-Sided Limits and the Squeeze Theorem#^pf-8-7|proof of Theorem §8.7]], from Appendix F) carries over with the distance in place of $|x - a|$: given $\varepsilon$, take the smaller of the two $\delta$'s for $g$ and $h$; then $L - \varepsilon < g \le f \le h < L + \varepsilon$.*
 
 > [!example] Example §91.3: A Limit That Exists
 > Find $\displaystyle\lim_{(x, y) \to (0, 0)} \frac{3x^2 y}{x^2 + y^2}$ if it exists.

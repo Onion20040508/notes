@@ -205,6 +205,8 @@ found by matching numerators: $c = A_1 + A_2$, $d = -A_1r_2 - A_2r_1$. Then $\ma
 
 ^ex-52-3
 
+*Chain: the damped oscillator earlier in [[§5★ Mass–Spring–Damper System and Radial Heat Flow#The Mass–Spring–Damper System|Chapter 0]] · [[§16★ Applications of Fourier Series and Integrals#^ex-16-1|Chapter 1]] (driven by a square wave).*
+
 ## Convolutions
 
 > [!example] Example §52.4: A First-Order Equation Two Ways

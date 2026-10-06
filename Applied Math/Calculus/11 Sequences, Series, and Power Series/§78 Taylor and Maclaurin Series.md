@@ -244,7 +244,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 
 ^pf-78-4
 
-*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2), [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison property of integrals), [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]], [[§78 Taylor and Maclaurin Series#^def-78-new1|Def. §78.3]]
+*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2), [[§35a Properties of the Definite Integral#^thm-35-6|§35.6]] (comparison property of integrals), [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]], [[§78 Taylor and Maclaurin Series#^def-78-new1|Def. §78.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no continuity of $f^{(n+1)}$), and [[§31 Taylor's Theorem#^prop-31-1|451 Prop. §31.1]] (= [[§78 Taylor and Maclaurin Series#^thm-78-3|Theorem §78.3]]).

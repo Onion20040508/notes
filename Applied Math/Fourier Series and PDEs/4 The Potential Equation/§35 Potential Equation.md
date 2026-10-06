@@ -84,10 +84,10 @@ Where the equation comes from:
 > [!remark]- Connections
 > - Complex-variables version: [[§124★ Two-Dimensional Fluid Flow#^prop-124-5|342 Prop. §124.5]] (the velocity potential is harmonic, with the opposite sign convention $\mathbf V = +\nabla\phi$), and the stream function and complex potential in [[§125★ The Stream Function#^def-125-1|342 Def. §125.1]].
 
-Harmonic functions have many special properties. The most important one, the **maximum principle**, says: *if $\nabla^2u = 0$ in a region, then $u$ cannot have a relative maximum or minimum inside the region unless $u$ is constant.* In particular, a point inside the region where $\partial u/\partial x$ and $\partial u/\partial y$ both vanish is a saddle point. It is proved, from the mean value property, in [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5]].
+Harmonic functions have many special properties. The most important one, the **maximum principle**, says: *if $\nabla^2u = 0$ in a region, then $u$ cannot have a relative maximum or minimum inside the region unless $u$ is constant.* In particular, a point inside the region where $\partial u/\partial x$ and $\partial u/\partial y$ both vanish is a saddle point. It is proved, from the mean value property, in [[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-5|Theorem §39.5]].
 
 > [!remark] Remark: Why the Maximum Principle Is Plausible
-> Think of $u$ as the steady-state temperature in a metal plate. If the temperature at some point were higher than at all nearby points, heat would flow away from the hot point to the cooler points nearby, and the temperature at the hot point would drop. But then the temperature would not be unchanging in time, contradicting the steady state. The same argument rules out a cold spot. Lecture 11.7 lists the other properties to come: the **mean value property**, $u$ at a point equals its average over any circle (or disk) centered there ([[§39 Potential in a Disk#^thm-39-4|Theorem §39.4]]); and harmonic functions are smooth, indeed locally given by power series.
+> Think of $u$ as the steady-state temperature in a metal plate. If the temperature at some point were higher than at all nearby points, heat would flow away from the hot point to the cooler points nearby, and the temperature at the hot point would drop. But then the temperature would not be unchanging in time, contradicting the steady state. The same argument rules out a cold spot. Lecture 11.7 lists the other properties to come: the **mean value property**, $u$ at a point equals its average over any circle (or disk) centered there ([[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-4|Theorem §39.4]]); and harmonic functions are smooth, indeed locally given by power series.
 
 ^rem-35-1
 
@@ -139,7 +139,7 @@ On the sides of a rectangle $0 < x < a$, $0 < y < b$ the normal derivative is si
 
 *Uses:* [[§35 Potential Equation#^def-35-2|Def. §35.2]], [[§35 Potential Equation#^def-35-new3|Def. §35.2]]
 
-For Dirichlet's problem, by contrast, the solution is unique: [[§39 Potential in a Disk#^cor-39-6|Corollary §39.6]].
+For Dirichlet's problem, by contrast, the solution is unique: [[§39a The Poisson Integral Formula and the Mean Value Property#^cor-39-6|Corollary §39.6]].
 
 > [!remark]- Connections
 > - Green's first identity proves both facts: a Dirichlet solution is unique, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|452 Ex. §17.1]], and a Neumann solution is unique up to a constant, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-2|452 Ex. §17.2]].
@@ -190,7 +190,7 @@ The simplest harmonic functions are polynomials. They are useful for satisfying 
 > | $y = 0$ | $x^2$ | $0$ |
 > | $y = b$ | $x^2 - b^2$ | $bx$ |
 >
-> So $u = xy$ is the solution of the Dirichlet problem in the rectangle with $u(x, b) = bx$, $u(a, y) = ay$ and $u = 0$ on the other two sides (Powers' Exercise 4.2.7c), found without any series. By the uniqueness of Dirichlet solutions ([[§39 Potential in a Disk#^cor-39-6|Corollary §39.6]]), the series method of [[§36 Potential in a Rectangle#^thm-36-2|Theorem §36.2]] must produce the same function.
+> So $u = xy$ is the solution of the Dirichlet problem in the rectangle with $u(x, b) = bx$, $u(a, y) = ay$ and $u = 0$ on the other two sides (Powers' Exercise 4.2.7c), found without any series. By the uniqueness of Dirichlet solutions ([[§39a The Poisson Integral Formula and the Mean Value Property#^cor-39-6|Corollary §39.6]]), the series method of [[§36 Potential in a Rectangle#^thm-36-2|Theorem §36.2]] must produce the same function.
 >
 > *Powers: Exercise 4.1.2*
 

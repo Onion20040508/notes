@@ -217,7 +217,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^pf-31-3
 
-*Uses:* [[§31 d'Alembert's Solution#^thm-31-2|§31.2]], [[§31 d'Alembert's Solution#^def-31-2|Def. §31.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Def. §7.3]] (odd and even periodic extensions)
+*Uses:* [[§31 d'Alembert's Solution#^thm-31-2|§31.2]], [[§31 d'Alembert's Solution#^def-31-2|Def. §31.2]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-3|Def. §7.3]] (odd and even periodic extensions)
 
 ![[m341-31-1.svg]]
 *d'Alembert's construction for the plucked string of [[§30 Solution of the Vibrating String Problem#^ex-30-1|Example §30.1]] at $ct = 0.3a$. The odd $2a$-periodic extension $\bar f_o$ is shifted $ct$ to the left (blue) and $ct$ to the right (red, dashed); on $0 < x < a$ (shaded) their average is the string (black), a trapezoid. The two waves are point reflections of each other through the ends $(0, 0)$ and $(a, 0)$, which is how the fixed ends act: a wave arriving at an end comes back inverted.*
@@ -276,7 +276,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^pf-31-4
 
-*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§31 d'Alembert's Solution#^thm-31-3|§31.3]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]]
+*Uses:* [[§30 Solution of the Vibrating String Problem#^thm-30-2|§30.2]], [[§31 d'Alembert's Solution#^thm-31-3|§31.3]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]]
 
 > [!example] Example §31.1: The Midterm Problem by d'Alembert's Method
 > For the problem of [[§30 Solution of the Vibrating String Problem#^ex-30-2|Example §30.2]], $u_{tt} = 4u_{xx}$ on $0 < x < \pi$ with fixed ends, $u(x, 0) = x$ and $u_t(x, 0) = \sin(2x)$: **(d)** express $\psi$ and $\phi$ in terms of the initial conditions, **(e)** expand them in Fourier series and write $u$ as d'Alembert's solution, **(f)** check that the result agrees with the series solution. (The exam names the two functions the other way round.)

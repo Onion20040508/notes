@@ -7,7 +7,7 @@ tags: [calculus]
 ---
 ← [[§13 The Derivative as a Function]] · ↑ [[· 2 Limits and Derivatives]] · [[§14 Derivatives of Polynomials and Exponential Functions]] →
 
-*Chapter 2 examples revisited: the parabola $y = x^2$ at $(1, 1)$, the ball dropped from the CN Tower, the limit of $(\sqrt{t^2 + 9} - 3)/t^2$ as $t \to 0$, and the cubic $x^3 - x$. Each returns in a later section of the chapter, where a new tool settles what an earlier one only suggested.*
+*Chapter 2 examples revisited: the parabola $y = x^2$ at $(1, 1)$, the ball dropped from the CN Tower, the limit of $(\sqrt{t^2 + 9} - 3)/t^2$ as $t \to 0$, and the cubic $x^3 - x$. Each returns later in the chapter, where a new tool takes the earlier computation further.*
 
 ## The Parabola y = x² at (1, 1)
 

@@ -108,7 +108,7 @@ Condition (8) is added because $r = 0$ is a singular point.
 ^prop-48-2
 
 > [!proof]+ Proof
-> **Eigenvalues.** For $\lambda > 0$ the bounded solution of (6) is $R = J_0(\lambda r)$, as in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]]. By [[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]], $R'(a) = \lambda J_0'(\lambda a) = -\lambda J_1(\lambda a)$, so (7) holds exactly when $J_1(\lambda a) = 0$ (11): $\lambda a = \beta_n$. (Powers lists $0$ as the first eigenvalue; here is why.) For $\lambda = 0$, (6) is $(rR')' = 0$, with bounded solutions $R =$ constant, and these satisfy (7). Note $R_0(0) = J_0(0) = 1$, so $R_0 = 1$ is also "$J_0(0 \cdot r)$". A positive separation constant $+\mu^2$ gives the modified Bessel function $I_0(\mu r) = \sum_m (\mu r/2)^{2m}/(m!)^2$, a series of positive terms that is strictly increasing for $r > 0$ ([[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]); its derivative at $r = a$ is positive, so there are no other eigenvalues. (The same eigenvalue problem, Powers' Exercise 5.5.10, is [[§45★ Bessel's Equation#^ex-45-3|Example §45.3]].)
+> **Eigenvalues.** For $\lambda > 0$ the bounded solution of (6) is $R = J_0(\lambda r)$, as in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]]. By [[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]], $R'(a) = \lambda J_0'(\lambda a) = -\lambda J_1(\lambda a)$, so (7) holds exactly when $J_1(\lambda a) = 0$ (11): $\lambda a = \beta_n$. (Powers lists $0$ as the first eigenvalue; here is why.) For $\lambda = 0$, (6) is $(rR')' = 0$, with bounded solutions $R =$ constant, and these satisfy (7). Note $R_0(0) = J_0(0) = 1$, so $R_0 = 1$ is also "$J_0(0 \cdot r)$". A positive separation constant $+\mu^2$ gives the modified Bessel function $I_0(\mu r) = \sum_m (\mu r/2)^{2m}/(m!)^2$, a series of positive terms that is strictly increasing for $r > 0$ ([[§45★ Properties of Bessel Functions#^thm-45-10|Theorem §45.10]]); its derivative at $r = a$ is positive, so there are no other eigenvalues. (The same eigenvalue problem, Powers' Exercise 5.5.10, is [[§45★ Properties of Bessel Functions#^ex-45-3|Example §45.3]].)
 >
 > **Orthogonality.** The argument of [[§46★ Temperature in a Cylinder#^prop-46-2|Proposition §46.2]] applies verbatim: the boundary term $r(R_n'R_m - R_m'R_n)$ vanishes at $r = a$ because now $R_n'(a) = R_m'(a) = 0$, and at $r = 0$ because of the factor $r$. This includes $R_0 = 1$, so $\int_0^a J_0(\lambda_n r)\,r\,dr = 0$ for $n \ge 1$; directly, it equals $\frac{a}{\lambda_n}J_1(\beta_n) = 0$.
 >
@@ -122,7 +122,7 @@ Condition (8) is added because $r = 0$ is a singular point.
 
 ^pf-48-2
 
-*Uses:* [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]], [[§46★ Temperature in a Cylinder#^lem-46-5|§46.5]], [[§46★ Temperature in a Cylinder#^prop-46-2|§46.2]], [[§46★ Temperature in a Cylinder#^prop-46-6|§46.6]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]]
+*Uses:* [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]], [[§46★ Temperature in a Cylinder#^lem-46-5|§46.5]], [[§46★ Temperature in a Cylinder#^prop-46-2|§46.2]], [[§46★ Temperature in a Cylinder#^prop-46-6|§46.6]], [[§45★ Properties of Bessel Functions#^thm-45-10|§45.10]]
 
 > [!theorem] Proposition §48.3: Potential in a Cylinder with Insulated Side
 > The solution of (2)–(5) is
@@ -228,11 +228,11 @@ $$
 > \int_0^a R_nR_m\,\rho^2\,d\rho = \int_0^a \sin(\lambda_n\rho)\sin(\lambda_m\rho)\,d\rho = \begin{cases} 0, & n \ne m, \\ a/2, & n = m, \end{cases}
 > $$
 >
-> the orthogonality of the sine functions on $0 < \rho < a$. The initial conditions read $\sum a_n\sin(\lambda_n\rho)/\rho = f(\rho)$ and $\sum b_n\lambda_nc\sin(\lambda_n\rho)/\rho = g(\rho)$, that is, $\sum a_n\sin(n\pi\rho/a) = \rho f(\rho)$ and $\sum b_n\lambda_nc\sin(n\pi\rho/a) = \rho g(\rho)$. These are Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]), whose coefficients are the formulas stated. (Powers says only that the coefficients are chosen "as usual"; the details are Exercise 5.8.7.) Each term of (22) satisfies (13), (14) and boundedness by construction.
+> the orthogonality of the sine functions on $0 < \rho < a$. The initial conditions read $\sum a_n\sin(\lambda_n\rho)/\rho = f(\rho)$ and $\sum b_n\lambda_nc\sin(\lambda_n\rho)/\rho = g(\rho)$, that is, $\sum a_n\sin(n\pi\rho/a) = \rho f(\rho)$ and $\sum b_n\lambda_nc\sin(n\pi\rho/a) = \rho g(\rho)$. These are Fourier sine series ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Definition §7.4]]), whose coefficients are the formulas stated. (Powers says only that the coefficients are chosen "as usual"; the details are Exercise 5.8.7.) Each term of (22) satisfies (13), (14) and boundedness by construction.
 
 ^pf-48-4
 
-*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§4★ Singular Boundary Value Problems#^lem-4-2|§4.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (Fourier sine series)
+*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§4★ Singular Boundary Value Problems#^lem-4-2|§4.2]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]] (Fourier sine series)
 
 > [!remark] Remark: Spherical Waves Are Strings in Disguise
 > The substitution in the proof says more: if $u(\rho, t)$ solves (13), then $w = \rho u$ solves the one-dimensional wave equation $w_{\rho\rho} = w_{tt}/c^2$, with $w(0, t) = 0$ and $w(a, t) = 0$, a vibrating string on $0 < \rho < a$ ([[§30 Solution of the Vibrating String Problem#^thm-30-2|Theorem §30.2]]). Hence every solution of (13) has the form $u = \frac{1}{\rho}\big(\psi_1(\rho + ct) + \psi_2(\rho - ct)\big)$, d'Alembert's form ([[§31 d'Alembert's Solution#^thm-31-2|Theorem §31.2]]) divided by $\rho$: spherical waves travel outward and inward with speed $c$ and amplitude decreasing like $1/\rho$ (Exercise 5.8.4). In particular the radial frequencies $n\pi c/a$ are harmonic, unlike those of the drum in [[§47★ Vibrations of a Circular Membrane#^ex-47-1|Example §47.1]].
@@ -347,7 +347,7 @@ where $a$ and $c$ are positive constants and $b = a + 1$. Equation (23) is ellip
 > \psi_2(-s) = -\psi_1(s), \qquad \psi_1(a + s) = -\psi_2(a - s) .
 > $$
 >
-> Both hold if $F$ and $G$ are replaced in the formulas above by their odd periodic extensions $\tilde F$, $\tilde G$ of period $2a$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|Definition §7.3]]) and $H(s) = \int_0^s \tilde G$. Indeed, $H$ is even because $\tilde G$ is odd, and $H$ has period $2a$ because the integral of the odd function $\tilde G$ over a period is $0$. Hence
+> Both hold if $F$ and $G$ are replaced in the formulas above by their odd periodic extensions $\tilde F$, $\tilde G$ of period $2a$ ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-3|Definition §7.3]]) and $H(s) = \int_0^s \tilde G$. Indeed, $H$ is even because $\tilde G$ is odd, and $H$ has period $2a$ because the integral of the odd function $\tilde G$ over a period is $0$. Hence
 >
 > $$
 > \psi_2(-s) = -\tfrac12\tilde F(s) - \tfrac{1}{2c}H(s) = -\psi_1(s), \qquad \psi_1(a + s) = -\tfrac12\tilde F(a - s) + \tfrac{1}{2c}H(a - s) = -\psi_2(a - s) ,

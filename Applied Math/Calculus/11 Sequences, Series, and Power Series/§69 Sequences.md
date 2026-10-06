@@ -163,7 +163,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 ^thm-69-4
 
 > [!proof]+ Proof
-> *Stewart states this without proof; the proof of the Squeeze Theorem for functions in Appendix F ([[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Theorem §8.7]]) adapts as follows.* Let $\varepsilon > 0$. Since $a_n \to L$ there is $N_1$ with $|a_n - L| < \varepsilon$, in particular $L - \varepsilon < a_n$, for $n > N_1$. Since $c_n \to L$ there is $N_2$ with $c_n < L + \varepsilon$ for $n > N_2$. Let $N = \max\{n_0, N_1, N_2\}$. For $n > N$,
+> *Stewart states this without proof; the proof of the Squeeze Theorem for functions in Appendix F ([[§8a Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-8-7|Theorem §8.7]]) adapts as follows.* Let $\varepsilon > 0$. Since $a_n \to L$ there is $N_1$ with $|a_n - L| < \varepsilon$, in particular $L - \varepsilon < a_n$, for $n > N_1$. Since $c_n \to L$ there is $N_2$ with $c_n < L + \varepsilon$ for $n > N_2$. Let $N = \max\{n_0, N_1, N_2\}$. For $n > N$,
 >
 > $$
 > L - \varepsilon < a_n \le b_n \le c_n < L + \varepsilon ,
@@ -176,7 +176,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 *Uses:* [[§69 Sequences#^def-69-3|Def. §69.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§8 A Discussion About Proofs#^thm-8-1|451 Thm. §8.1]] (for $a_n \le b_n \le c_n$ for all $n$, with the same proof; hub [[Squeeze Theorem]]). The version for functions is [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Theorem §8.7]].
+> - Rigorous treatment: [[§8 A Discussion About Proofs#^thm-8-1|451 Thm. §8.1]] (for $a_n \le b_n \le c_n$ for all $n$, with the same proof; hub [[Squeeze Theorem]]). The version for functions is [[§8a Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-8-7|Theorem §8.7]].
 
 > [!theorem] Theorem §69.5: Absolute Value Tending to Zero
 > If $\displaystyle\lim_{n \to \infty} |a_n| = 0$, then $\displaystyle\lim_{n \to \infty} a_n = 0$.

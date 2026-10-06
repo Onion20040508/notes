@@ -22,7 +22,7 @@ As we zoom in toward a point on the graph of a differentiable function of one va
 
 ^def-93-1
 
-We will see in [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|Theorem §95.5]] that the tangent line at $P$ to *any* curve $C$ that lies on $S$ and passes through $P$ also lies in the tangent plane. So the tangent plane consists of all possible tangent lines at $P$ to curves on $S$ through $P$: it is the plane that most closely approximates $S$ near $P$.
+We will see in [[§95a Tangent Planes to Level Surfaces#^thm-95-5|Theorem §95.5]] that the tangent line at $P$ to *any* curve $C$ that lies on $S$ and passes through $P$ also lies in the tangent plane. So the tangent plane consists of all possible tangent lines at $P$ to curves on $S$ through $P$: it is the plane that most closely approximates $S$ near $P$.
 
 > [!theorem] Theorem §93.1: Equation of a Tangent Plane
 > Suppose $f$ has continuous partial derivatives. An equation of the tangent plane to the surface $z = f(x, y)$ at the point $P(x_0, y_0, z_0)$ is
@@ -399,7 +399,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 > \mathbf{c}_1'(t) = \langle 3, -2t, -4 + 2t \rangle , \quad \mathbf{c}_1'(0) = \langle 3, 0, -4 \rangle ; \qquad \mathbf{c}_2'(u) = \langle 2u, 6u^2, 2 \rangle , \quad \mathbf{c}_2'(1) = \langle 2, 6, 2 \rangle .
 > $$
 >
-> **Normal vector.** The tangent lines at $P$ to curves on $S$ through $P$ lie in the tangent plane (as noted after [[§93 Tangent Planes and Linear Approximations#^def-93-1|Definition §93.1]]; this is [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|Theorem §95.5]]), so both tangent vectors are parallel to the plane. They are not parallel to each other, and their cross product ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]) is a normal vector:
+> **Normal vector.** The tangent lines at $P$ to curves on $S$ through $P$ lie in the tangent plane (as noted after [[§93 Tangent Planes and Linear Approximations#^def-93-1|Definition §93.1]]; this is [[§95a Tangent Planes to Level Surfaces#^thm-95-5|Theorem §95.5]]), so both tangent vectors are parallel to the plane. They are not parallel to each other, and their cross product ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]) is a normal vector:
 >
 > $$
 > \langle 3, 0, -4 \rangle \times \langle 2, 6, 2 \rangle = \langle 0 \cdot 2 - (-4) \cdot 6,\ (-4) \cdot 2 - 3 \cdot 2,\ 3 \cdot 6 - 0 \cdot 2 \rangle = \langle 24, -14, 18 \rangle .

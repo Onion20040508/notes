@@ -258,6 +258,6 @@ The non-negative case was proved in [[§14 The Lebesgue Integral for Simple Func
 *Uses:* [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§9 Lebesgue Outer Measure#^ex-9-1|Ex. §9.1]], [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]]
 
 > [!remark]- Connections
-> - With $F(x) = \int_a^x f$, this says $F \equiv 0 \Rightarrow f = 0$ a.e., the uniqueness half of the Lebesgue [[Fundamental Theorem of Calculus for Lebesgue Integrals|Fundamental Theorem of Calculus]] ([[§18c Absolute Continuity and the FTC#^thm-18-13|§18.13]]); compare the MATH 451 [[Fundamental Theorem of Calculus]].
+> - With $F(x) = \int_a^x f$, this says $F \equiv 0 \Rightarrow f = 0$ a.e., the uniqueness half of the Lebesgue [[Fundamental Theorem of Calculus for Lebesgue Integrals|Fundamental Theorem of Calculus]] ([[§18d The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-18-13|§18.13]]); compare the MATH 451 [[Fundamental Theorem of Calculus]].
 
 Dominated and reverse Fatou, the Dominated Convergence Theorem and its applications continue in [[§15a The Dominated Convergence Theorem]].

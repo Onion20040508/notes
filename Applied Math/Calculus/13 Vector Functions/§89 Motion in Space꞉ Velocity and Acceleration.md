@@ -256,7 +256,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 ## Tangential and Normal Components of Acceleration
 
 > [!theorem] Theorem §89.4: Tangential and Normal Components of Acceleration
-> Let $v = |\mathbf{v}|$ be the speed of a particle moving along a smooth curve, and $\mathbf{T}$, $\mathbf{N}$, $\kappa$ the unit tangent, unit normal and curvature ([[§87 Derivatives and Integrals of Vector Functions#^def-87-new2|Definition §87.4]], [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]], [[§88 Arc Length and Curvature#^def-88-4|Definition §88.4]]). Then
+> Let $v = |\mathbf{v}|$ be the speed of a particle moving along a smooth curve, and $\mathbf{T}$, $\mathbf{N}$, $\kappa$ the unit tangent, unit normal and curvature ([[§87 Derivatives and Integrals of Vector Functions#^def-87-new2|Definition §87.4]], [[§88a The TNB Frame and Torsion#^def-88-5|Definition §88.5]], [[§88 Arc Length and Curvature#^def-88-4|Definition §88.4]]). Then
 >
 > $$
 > \mathbf{a} = v'\,\mathbf{T} + \kappa v^2\,\mathbf{N} . \qquad (7)
@@ -275,11 +275,11 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 > \mathbf{a} = \mathbf{v}' = v'\,\mathbf{T} + v\,\mathbf{T}' . \qquad (5)
 > $$
 >
-> By [[§88 Arc Length and Curvature#^prop-88-3|Proposition §88.3]], $\kappa = \dfrac{|\mathbf{T}'|}{|\mathbf{r}'|} = \dfrac{|\mathbf{T}'|}{v}$, so $|\mathbf{T}'| = \kappa v$. (6) Since $\mathbf{N} = \mathbf{T}'/|\mathbf{T}'|$ ([[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]]), $\mathbf{T}' = |\mathbf{T}'|\,\mathbf{N} = \kappa v\,\mathbf{N}$. (Where $\kappa = 0$, $\mathbf{T}' = \mathbf{0}$ and the second term vanishes whatever $\mathbf{N}$ is.) Substituting into (5) gives (7).
+> By [[§88 Arc Length and Curvature#^prop-88-3|Proposition §88.3]], $\kappa = \dfrac{|\mathbf{T}'|}{|\mathbf{r}'|} = \dfrac{|\mathbf{T}'|}{v}$, so $|\mathbf{T}'| = \kappa v$. (6) Since $\mathbf{N} = \mathbf{T}'/|\mathbf{T}'|$ ([[§88a The TNB Frame and Torsion#^def-88-5|Definition §88.5]]), $\mathbf{T}' = |\mathbf{T}'|\,\mathbf{N} = \kappa v\,\mathbf{N}$. (Where $\kappa = 0$, $\mathbf{T}' = \mathbf{0}$ and the second term vanishes whatever $\mathbf{N}$ is.) Substituting into (5) gives (7).
 
 ^pf-89-4
 
-*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§88 Arc Length and Curvature#^prop-88-3|§88.3]], [[§88 Arc Length and Curvature#^def-88-5|Def. §88.5]]
+*Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§88 Arc Length and Curvature#^prop-88-3|§88.3]], [[§88a The TNB Frame and Torsion#^def-88-5|Def. §88.5]]
 
 ![[m233-89-1.svg]]
 *[[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-4|Theorem §89.4]]: the acceleration $\mathbf{a}$ (red) splits into a component $a_T\mathbf{T}$ along the direction of motion and a component $a_N\mathbf{N}$ toward the inside of the bend (green); there is no $\mathbf{B}$-component. The tangential part changes the speed, $a_T = v'$; the normal part turns the direction, $a_N = \kappa v^2$.*
@@ -315,7 +315,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 ^pf-89-5
 
-*Uses:* [[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-4|§89.4]], [[§88 Arc Length and Curvature#^thm-88-4|§88.4]], [[§88 Arc Length and Curvature#^def-88-5|Def. §88.5]]
+*Uses:* [[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-4|§89.4]], [[§88 Arc Length and Curvature#^thm-88-4|§88.4]], [[§88a The TNB Frame and Torsion#^def-88-5|Def. §88.5]]
 
 > [!example] Example §89.5: Components of Acceleration
 > A particle moves with position $\mathbf{r}(t) = \langle t^2, t^2, t^3 \rangle$. Find the tangential and normal components of acceleration.

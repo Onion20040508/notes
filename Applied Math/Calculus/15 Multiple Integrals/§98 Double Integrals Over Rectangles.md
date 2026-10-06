@@ -349,7 +349,7 @@ Evaluating a double integral from its definition is even harder than for single 
 
 ^pf-98-4
 
-*Uses:* [[§98 Double Integrals Over Rectangles#^thm-98-3|§98.3]], [[§35 The Definite Integral#^thm-35-4|§35.4]] (Property 3, constant multiples)
+*Uses:* [[§98 Double Integrals Over Rectangles#^thm-98-3|§98.3]], [[§35a Properties of the Definite Integral#^thm-35-4|§35.4]] (Property 3, constant multiples)
 
 > [!remark]- Connections
 > - PDE version: the products $\sin(m\pi x/a)\sin(n\pi y/b)$ are integrated this way to prove the orthogonality of the eigenfunctions of a rectangle, [[§43 Two-Dimensional Heat Equation꞉ Solution#^thm-43-3|341 Thm. §43.3]].

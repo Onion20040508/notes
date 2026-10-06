@@ -62,11 +62,11 @@ $$
 >
 > **The factor $Y$.** It satisfies $Y'' - \lambda_n^2Y = 0$ for $0 < y$ and must remain bounded as $y \to \infty$. The solutions of the equation are combinations of $e^{\lambda_ny}$ and $e^{-\lambda_ny}$; the first is unbounded, so its coefficient must be $0$ and $Y_n(y) = \exp(-\lambda_ny)$. (This is why the exponential form is chosen here rather than $\cosh$ and $\sinh$, both of which are unbounded.)
 >
-> **Superposition.** Each $X_nY_n$ is harmonic, vanishes on the walls and is bounded, so the series (7) has the same properties when it converges (for $y \ge \delta > 0$ its terms are dominated by $|a_n|e^{-n\pi\delta/a}$). At $y = 0$ it becomes $\sum a_n\sin(n\pi x/a) = f(x)$, a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]), which determines the $a_n$ as stated.
+> **Superposition.** Each $X_nY_n$ is harmonic, vanishes on the walls and is bounded, so the series (7) has the same properties when it converges (for $y \ge \delta > 0$ its terms are dominated by $|a_n|e^{-n\pi\delta/a}$). At $y = 0$ it becomes $\sum a_n\sin(n\pi x/a) = f(x)$, a Fourier sine series ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Definition §7.4]]), which determines the $a_n$ as stated.
 
 ^pf-38-1
 
-*Uses:* [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series)
+*Uses:* [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series)
 
 > [!remark]- Connections
 > - See also: [[§27★ Harmonic Functions#^ex-27-1|342 Ex. §27.1]] (the case $a = \pi$, $f(x) = \sin x$, whose solution $e^{-y}\sin x$ is the real part of an entire function).
@@ -231,7 +231,7 @@ The potential equation can also be solved in a strip ($0 < x < a$, $-\infty < y 
 > u(x, y) = \frac1\pi\int_{-\infty}^{\infty}f(x')\,\frac{y}{y^2 + (x - x')^2}\,dx' ,
 > $$
 >
-> the half-plane counterpart of the Poisson integral formula for the disk, [[§39 Potential in a Disk#^thm-39-3|Theorem §39.3]]. For example, with $f = 1$ for $x > 0$ and $0$ for $x < 0$ it gives $u = \frac12 + \frac1\pi\arctan(x/y)$, the harmonic function that is constant on rays from the origin.
+> the half-plane counterpart of the Poisson integral formula for the disk, [[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-3|Theorem §39.3]]. For example, with $f = 1$ for $x > 0$ and $0$ for $x < 0$ it gives $u = \frac12 + \frac1\pi\arctan(x/y)$, the harmonic function that is constant on rays from the origin.
 
 ^rem-38-2
 

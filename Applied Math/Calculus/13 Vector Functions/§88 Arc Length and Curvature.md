@@ -186,4 +186,143 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ^ex-88-3
 
-*The section continues in [[§88a Curvature, the TNB Frame and Torsion]].*
+## Curvature
+
+> [!definition] Definition §88.3: Smooth Parametrization and Smooth Curve
+> A parametrization $\mathbf{r}(t)$ is **smooth** on an interval $I$ if $\mathbf{r}'$ is continuous and $\mathbf{r}'(t) \ne \mathbf{0}$ on $I$. A curve is **smooth** if it has a smooth parametrization. A smooth curve has no sharp corner or cusp: when its tangent vector turns, it does so continuously.
+>
+> *Stewart: 13.3 (text)*
+
+^def-88-3
+
+> [!definition] Definition §88.4: Curvature
+> Let $C$ be a smooth curve with unit tangent vector $\mathbf{T} = \mathbf{r}'/|\mathbf{r}'|$ ([[§87 Derivatives and Integrals of Vector Functions#^def-87-new2|Definition §87.4]]). The **curvature** of $C$ is
+>
+> $$
+> \kappa = \left| \frac{d\mathbf{T}}{ds} \right| ,
+> $$
+>
+> the magnitude of the rate of change of the unit tangent vector with respect to arc length.
+>
+> *Stewart: 13.3, Definition 8*
+
+^def-88-4
+
+> [!remark] Remark: What Curvature Measures
+> $\mathbf{T}(t)$ changes direction slowly where $C$ is fairly straight and quickly where $C$ bends or twists sharply. Since $\mathbf{T}$ has constant length, only changes in its direction contribute to $d\mathbf{T}/ds$. Arc length, rather than $t$, is used so that the curvature does not depend on the parametrization. A straight line has curvature $0$, since its tangent vector is constant.
+
+^rem-88-4
+
+> [!theorem] Proposition §88.3: Curvature in Terms of t
+> $$
+> \kappa(t) = \frac{|\mathbf{T}'(t)|}{|\mathbf{r}'(t)|} .
+> $$
+>
+> *Stewart: 13.3, Equation 9*
+
+^prop-88-3
+
+> [!proof]+ Proof
+> By the Chain Rule ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|Theorem §87.2]], Formula 6), $\dfrac{d\mathbf{T}}{dt} = \dfrac{d\mathbf{T}}{ds}\dfrac{ds}{dt}$. Since $ds/dt = |\mathbf{r}'(t)| > 0$ for a smooth parametrization ([[§88 Arc Length and Curvature#^prop-88-2|Proposition §88.2]]),
+>
+> $$
+> \kappa = \left| \frac{d\mathbf{T}}{ds} \right| = \left| \frac{d\mathbf{T}/dt}{ds/dt} \right| = \frac{|\mathbf{T}'(t)|}{|\mathbf{r}'(t)|} .
+> $$
+
+^pf-88-3
+
+*Uses:* [[§88 Arc Length and Curvature#^def-88-4|Def. §88.4]], [[§88 Arc Length and Curvature#^prop-88-2|§88.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]]
+
+> [!theorem] Theorem §88.4: Curvature from r′ and r″
+> The curvature of the curve given by the vector function $\mathbf{r}$ is
+>
+> $$
+> \kappa(t) = \frac{|\mathbf{r}'(t) \times \mathbf{r}''(t)|}{|\mathbf{r}'(t)|^3} .
+> $$
+>
+> *Stewart: 13.3, Theorem 10*
+
+^thm-88-4
+
+> [!proof]+ Proof
+> Since $\mathbf{T} = \mathbf{r}'/|\mathbf{r}'|$ and $|\mathbf{r}'| = ds/dt$,
+>
+> $$
+> \mathbf{r}' = |\mathbf{r}'|\,\mathbf{T} = \frac{ds}{dt}\,\mathbf{T} ,
+> $$
+>
+> so the Product Rule ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|Theorem §87.2]], Formula 3) gives
+>
+> $$
+> \mathbf{r}'' = \frac{d^2s}{dt^2}\,\mathbf{T} + \frac{ds}{dt}\,\mathbf{T}' .
+> $$
+>
+> Since $\mathbf{T} \times \mathbf{T} = \mathbf{0}$ ([[§83 The Cross Product#^ex-83-1|Example §83.1]](b)), the properties of the cross product ([[§83 The Cross Product#^thm-83-8|Theorem §83.8]]) give
+>
+> $$
+> \mathbf{r}' \times \mathbf{r}'' = \frac{ds}{dt}\frac{d^2s}{dt^2}(\mathbf{T} \times \mathbf{T}) + \Big(\frac{ds}{dt}\Big)^2(\mathbf{T} \times \mathbf{T}') = \Big(\frac{ds}{dt}\Big)^2(\mathbf{T} \times \mathbf{T}') .
+> $$
+>
+> Now $|\mathbf{T}(t)| = 1$ for all $t$, so $\mathbf{T}$ and $\mathbf{T}'$ are orthogonal ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|Theorem §87.3]]), and by [[§83 The Cross Product#^thm-83-4|Theorem §83.4]] with $\theta = \pi/2$,
+>
+> $$
+> |\mathbf{r}' \times \mathbf{r}''| = \Big(\frac{ds}{dt}\Big)^2 |\mathbf{T}|\,|\mathbf{T}'| = \Big(\frac{ds}{dt}\Big)^2 |\mathbf{T}'| .
+> $$
+>
+> (If $\mathbf{T}' = \mathbf{0}$ both sides are $0$.) Thus $|\mathbf{T}'| = |\mathbf{r}' \times \mathbf{r}''|/(ds/dt)^2 = |\mathbf{r}' \times \mathbf{r}''|/|\mathbf{r}'|^2$, and by [[§88 Arc Length and Curvature#^prop-88-3|Proposition §88.3]]
+>
+> $$
+> \kappa = \frac{|\mathbf{T}'|}{|\mathbf{r}'|} = \frac{|\mathbf{r}' \times \mathbf{r}''|}{|\mathbf{r}'|^3} .
+> $$
+
+^pf-88-4
+
+*Uses:* [[§88 Arc Length and Curvature#^prop-88-3|§88.3]], [[§88 Arc Length and Curvature#^prop-88-2|§88.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|§87.3]], [[§83 The Cross Product#^thm-83-4|§83.4]], [[§83 The Cross Product#^thm-83-8|§83.8]], [[§83 The Cross Product#^ex-83-1|Ex. §83.1]] ($\mathbf{T} \times \mathbf{T} = \mathbf{0}$)
+
+> [!theorem] Corollary §88.5: Curvature of a Plane Curve y = f(x)
+> The curvature of the plane curve $y = f(x)$ is
+>
+> $$
+> \kappa(x) = \frac{|f''(x)|}{\big[1 + (f'(x))^2\big]^{3/2}} .
+> $$
+>
+> *Stewart: 13.3, Equation 11*
+
+^cor-88-5
+
+> [!proof]+ Proof
+> Take $x$ as the parameter: $\mathbf{r}(x) = x\,\mathbf{i} + f(x)\,\mathbf{j}$, regarded as a space curve with zero $\mathbf{k}$-component. Then $\mathbf{r}'(x) = \mathbf{i} + f'(x)\,\mathbf{j}$ and $\mathbf{r}''(x) = f''(x)\,\mathbf{j}$. Since $\mathbf{i} \times \mathbf{j} = \mathbf{k}$ and $\mathbf{j} \times \mathbf{j} = \mathbf{0}$ ([[§83 The Cross Product#^prop-83-7|Proposition §83.7]]), $\mathbf{r}'(x) \times \mathbf{r}''(x) = f''(x)\,\mathbf{k}$. Also $|\mathbf{r}'(x)| = \sqrt{1 + [f'(x)]^2}$. [[§88 Arc Length and Curvature#^thm-88-4|Theorem §88.4]] gives the formula.
+
+^pf-88-5
+
+*Uses:* [[§88 Arc Length and Curvature#^thm-88-4|§88.4]], [[§83 The Cross Product#^prop-83-7|§83.7]]
+
+> [!example] Example §88.4: Curvature by the Three Formulas
+> **(a)** *Circle, by [[§88 Arc Length and Curvature#^prop-88-3|Proposition §88.3]].* The circle of radius $a$ about the origin is $\mathbf{r}(t) = a\cos t\,\mathbf{i} + a\sin t\,\mathbf{j}$. Then $\mathbf{r}'(t) = -a\sin t\,\mathbf{i} + a\cos t\,\mathbf{j}$, $|\mathbf{r}'(t)| = a$, $\mathbf{T}(t) = -\sin t\,\mathbf{i} + \cos t\,\mathbf{j}$ and $\mathbf{T}'(t) = -\cos t\,\mathbf{i} - \sin t\,\mathbf{j}$, so $|\mathbf{T}'(t)| = 1$ and $\kappa(t) = 1/a$. Small circles have large curvature and large circles small curvature, as they should.
+>
+> **(b)** *Twisted cubic, by [[§88 Arc Length and Curvature#^thm-88-4|Theorem §88.4]].* For $\mathbf{r}(t) = \langle t, t^2, t^3 \rangle$: $\mathbf{r}'(t) = \langle 1, 2t, 3t^2 \rangle$, $\mathbf{r}''(t) = \langle 0, 2, 6t \rangle$, $|\mathbf{r}'(t)| = \sqrt{1 + 4t^2 + 9t^4}$, and
+>
+> $$
+> \mathbf{r}'(t) \times \mathbf{r}''(t) = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 2t & 3t^2 \\ 0 & 2 & 6t \end{vmatrix} = 6t^2\,\mathbf{i} - 6t\,\mathbf{j} + 2\,\mathbf{k}, \qquad |\mathbf{r}' \times \mathbf{r}''| = \sqrt{36t^4 + 36t^2 + 4} = 2\sqrt{9t^4 + 9t^2 + 1} .
+> $$
+>
+> So $\kappa(t) = \dfrac{2\sqrt{1 + 9t^2 + 9t^4}}{(1 + 4t^2 + 9t^4)^{3/2}}$; at the origin ($t = 0$), $\kappa(0) = 2$.
+>
+> **(c)** *Parabola, by [[§88 Arc Length and Curvature#^cor-88-5|Corollary §88.5]].* For $y = x^2$, $y' = 2x$ and $y'' = 2$, so
+>
+> $$
+> \kappa(x) = \frac{2}{(1 + 4x^2)^{3/2}} .
+> $$
+>
+> At $(0, 0)$, $\kappa = 2$; at $(1, 1)$, $\kappa = 2/5^{3/2} \approx 0.18$; at $(2, 4)$, $\kappa = 2/17^{3/2} \approx 0.03$. As $x \to \pm\infty$, $\kappa(x) \to 0$: the parabola becomes nearly straight.
+>
+> **(d)** *The osculating circle of $y = x^2$ at the origin* ([[§88a The TNB Frame and Torsion#^def-88-new3|Definition §88.8]] below). By (c) its radius is $1/\kappa(0) = \frac12$. The tangent at the origin is horizontal, so $\mathbf{N} = \langle 0, 1 \rangle$ points up into the parabola, and the center of curvature is $\big(0, \frac12\big)$. The osculating circle is $x^2 + \big(y - \frac12\big)^2 = \frac14$.
+>
+> *Stewart: Examples 13.3.3, 13.3.4, 13.3.5 and 13.3.9*
+
+^ex-88-4
+
+![[m233-88-1.svg]]
+*The parabola $y = x^2$ (blue), its curvature function $\kappa(x) = 2/(1 + 4x^2)^{3/2}$ (green) and its osculating circle at the origin (red), of radius $1/\kappa(0) = \frac12$ and center $(0, \frac12)$. The curvature is largest at the vertex, where the parabola bends most, and tends to $0$ as the parabola straightens out. Near the origin, circle and parabola bend alike: they share the point, the tangent, the normal and the curvature.*
+
+*The section continues in [[§88a The TNB Frame and Torsion]].*

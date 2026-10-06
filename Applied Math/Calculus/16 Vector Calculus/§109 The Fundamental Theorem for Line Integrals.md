@@ -29,7 +29,7 @@ Part 2 of the Fundamental Theorem of Calculus says $\int_a^b F'(x)\,dx = F(b) - 
 ^thm-109-1
 
 > [!proof]+ Proof
-> We give the proof for $f$ a function of three variables (two variables is the same with the $z$ terms dropped). By the definition of the line integral of a vector field ([[§108 Line Integrals#^def-108-8|Definition §108.8]]) and the Chain Rule ([[§94 The Chain Rule#^thm-94-1|Theorem §94.1]]),
+> We give the proof for $f$ a function of three variables (two variables is the same with the $z$ terms dropped). By the definition of the line integral of a vector field ([[§108a Line Integrals of Vector Fields#^def-108-8|Definition §108.8]]) and the Chain Rule ([[§94 The Chain Rule#^thm-94-1|Theorem §94.1]]),
 >
 > $$
 > \begin{aligned}
@@ -44,7 +44,7 @@ Part 2 of the Fundamental Theorem of Calculus says $\int_a^b F'(x)\,dx = F(b) - 
 
 ^pf-109-1
 
-*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]]
+*Uses:* [[§108a Line Integrals of Vector Fields#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]]
 
 > [!remark]- Connections
 > - In the language of forms this is the generalized Stokes theorem for a 0-form on a curve, $\int_C df = f(B) - f(A)$: [[§23 The Generalized Stokes' Theorem#^thm-23-1|452 Thm. §23.1]] (hub [[Generalized Stokes' Theorem]]). It is the argument used in [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]] to show that a form with a nonzero integral around a closed curve is not exact.
@@ -91,7 +91,7 @@ In general, line integrals are not independent of path ([[§108 Line Integrals#^
 ^thm-109-2
 
 > [!proof]+ Proof
-> ($\Rightarrow$) Let $C$ be a closed path in $D$. Choose two points $A$ and $B$ on $C$ and regard $C$ as the path $C_1$ from $A$ to $B$ followed by the path $C_2$ from $B$ to $A$. Then $C_1$ and $-C_2$ both run from $A$ to $B$, so by independence of path and [[§108 Line Integrals#^thm-108-6|Theorem §108.6]],
+> ($\Rightarrow$) Let $C$ be a closed path in $D$. Choose two points $A$ and $B$ on $C$ and regard $C$ as the path $C_1$ from $A$ to $B$ followed by the path $C_2$ from $B$ to $A$. Then $C_1$ and $-C_2$ both run from $A$ to $B$, so by independence of path and [[§108a Line Integrals of Vector Fields#^thm-108-6|Theorem §108.6]],
 >
 > $$
 > \int_C \mathbf{F} \cdot d\mathbf{r} = \int_{C_1} \mathbf{F} \cdot d\mathbf{r} + \int_{C_2} \mathbf{F} \cdot d\mathbf{r} = \int_{C_1} \mathbf{F} \cdot d\mathbf{r} - \int_{-C_2} \mathbf{F} \cdot d\mathbf{r} = 0 .
@@ -107,7 +107,7 @@ In general, line integrals are not independent of path ([[§108 Line Integrals#^
 
 ^pf-109-2
 
-*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^def-109-1|Def. §109.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-2|Def. §109.2]], [[§108 Line Integrals#^thm-108-6|§108.6]], [[§108 Line Integrals#^def-108-2|Def. §108.2]] (integrals over a union of paths add)
+*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^def-109-1|Def. §109.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-2|Def. §109.2]], [[§108a Line Integrals of Vector Fields#^thm-108-6|§108.6]], [[§108 Line Integrals#^def-108-2|Def. §108.2]] (integrals over a union of paths add)
 
 Since the line integral of any conservative field is independent of path, $\int_C \mathbf{F} \cdot d\mathbf{r} = 0$ for every closed path. Physically: the work done by a conservative force field (such as the gravitational or electric field of [[§107 Vector Fields#^ex-107-2|Example §107.2]]) as it moves an object around a closed path is $0$. The next theorem says that the *only* fields with path-independent line integrals are the conservative ones. It is stated and proved for plane curves; the version for space curves is similar.
 
@@ -153,7 +153,7 @@ Since the line integral of any conservative field is independent of path, $\int_
 > \frac{\partial}{\partial x} f(x, y) = 0 + \frac{\partial}{\partial x} \int_{C_2} \mathbf{F} \cdot d\mathbf{r} = \frac{\partial}{\partial x} \int_{C_2} P\,dx + Q\,dy
 > $$
 >
-> by [[§108 Line Integrals#^thm-108-7|Theorem §108.7]]. On $C_2$, $y$ is constant, so $dy = 0$. Using $t$ as the parameter, $x_1 \le t \le x$,
+> by [[§108a Line Integrals of Vector Fields#^thm-108-7|Theorem §108.7]]. On $C_2$, $y$ is constant, so $dy = 0$. Using $t$ as the parameter, $x_1 \le t \le x$,
 >
 > $$
 > \frac{\partial}{\partial x} f(x, y) = \frac{\partial}{\partial x} \int_{x_1}^{x} P(t, y)\,dt = P(x, y)
@@ -171,7 +171,7 @@ Since the line integral of any conservative field is independent of path, $\int_
 
 ^pf-109-3
 
-*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^def-109-1|Def. §109.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-3|Def. §109.3]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-new1|Def. §109.4]], [[§108 Line Integrals#^thm-108-7|§108.7]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§107 Vector Fields#^def-107-4|Def. §107.4]]
+*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^def-109-1|Def. §109.1]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-3|Def. §109.3]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-new1|Def. §109.4]], [[§108a Line Integrals of Vector Fields#^thm-108-7|§108.7]], [[§108 Line Integrals#^def-108-2|Def. §108.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§107 Vector Fields#^def-107-4|Def. §107.4]]
 
 ![[m233-109-1.svg]]
 *The potential in the proof of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Theorem §109.3]]: $f(x,y)$ is the line integral of $\mathbf{F}$ from the base point $(a,b)$ to $(x,y)$, along any path. To differentiate in $x$, end the path with a short horizontal segment $C_2$ (red) inside a disk in $D$ (open region). Only $C_2$ depends on $x$, and along it the integral is $\int_{x_1}^{x} P(t,y)\,dt$, whose $x$-derivative is $P(x,y)$. A vertical last segment gives $\partial f/\partial y = Q$ in the same way.*

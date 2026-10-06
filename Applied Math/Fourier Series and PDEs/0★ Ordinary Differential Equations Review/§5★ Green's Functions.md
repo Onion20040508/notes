@@ -12,7 +12,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 *Powers, Section 0.5.*
 ★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
-For a linear second-order boundary value problem with homogeneous boundary conditions at the two ends, $u'' + k(x)u' + p(x)u = f(x)$ on $l < x < r$, this section shows how the solution depends on the inhomogeneity $f$: it is an integral $u(x) = \int_l^r G(x, z)f(z)\,dz$, where the **Green's function** $G$ depends only on the equation and the boundary conditions. $G$ is built from two solutions of the homogeneous equation, one satisfying the left condition and one the right, by the variation-of-parameters formula of [[§2★ Nonhomogeneous Linear Equations#^thm-2-7|Theorem §2.7]]. The construction fails exactly when the homogeneous problem has a nonzero solution, and this gives the existence and uniqueness theorem for boundary value problems: one solution, or else none or infinitely many. Physically, $G(x, z)$ is the response at $x$ to a unit point source at $z$ (a point load on a string, a point heat source in a rod), and $\int G f$ superposes these responses; the same idea, in more dimensions, gives the potential of a charge distribution.
+For a linear second-order boundary value problem with homogeneous boundary conditions at the two ends, $u'' + k(x)u' + p(x)u = f(x)$ on $l < x < r$, this section shows how the solution depends on the inhomogeneity $f$: it is an integral $u(x) = \int_l^r G(x, z)f(z)\,dz$, where the **Green's function** $G$ depends only on the equation and the boundary conditions. $G$ is built from two solutions of the homogeneous equation, one satisfying the left condition and one the right, by the variation-of-parameters formula of [[§2★ Variation of Parameters#^thm-2-7|Theorem §2.7]]. The construction fails exactly when the homogeneous problem has a nonzero solution, and this gives the existence and uniqueness theorem for boundary value problems: one solution, or else none or infinitely many. Physically, $G(x, z)$ is the response at $x$ to a unit point source at $z$ (a point load on a string, a point heat source in a rod), and $\int G f$ superposes these responses; the same idea, in more dimensions, gives the potential of a charge distribution.
 
 ## The Construction
 
@@ -92,7 +92,7 @@ which is nonzero because $u_1$ and $u_2$ are independent ([[§1★ Homogeneous L
 ^thm-5-1
 
 > [!proof]+ Proof
-> **The general solution.** By [[§2★ Nonhomogeneous Linear Equations#^thm-2-7|Theorem §2.7]] with $t_0 = l$, together with [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|Theorem §2.2]] and [[§1★ Homogeneous Linear Equations#^thm-1-3|Theorem §1.3]], the solutions of (1) are exactly the functions
+> **The general solution.** By [[§2★ Variation of Parameters#^thm-2-7|Theorem §2.7]] with $t_0 = l$, together with [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|Theorem §2.2]] and [[§1★ Homogeneous Linear Equations#^thm-1-3|Theorem §1.3]], the solutions of (1) are exactly the functions
 >
 > $$
 > u(x) = c_1u_1(x) + c_2u_2(x) + \int_l^x \big(u_1(z)u_2(x) - u_2(z)u_1(x)\big)\frac{f(z)}{W(z)}\,dz . \qquad (7)
@@ -146,7 +146,7 @@ which is nonzero because $u_1$ and $u_2$ are independent ([[§1★ Homogeneous L
 
 ^pf-5-1
 
-*Uses:* [[§2★ Nonhomogeneous Linear Equations#^thm-2-7|§2.7]], [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|§2.2]], [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]], [[§5★ Green's Functions#^def-5-2|Def. §5.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC)
+*Uses:* [[§2★ Variation of Parameters#^thm-2-7|§2.7]], [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|§2.2]], [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]], [[§5★ Green's Functions#^def-5-2|Def. §5.2]], [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC)
 
 The two hypotheses on $u_1$, $u_2$ are automatic once they are independent: see [[§5★ Green's Functions#^lem-5-2|Lemma §5.2]].
 

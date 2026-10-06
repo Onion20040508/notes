@@ -121,7 +121,7 @@ tags: [measure-theory, math551]
 > - Uniform continuity on a compact set is the MATH 451 fact [[§19 Uniform Continuity#^thm-19-1|Uniform Continuity on Closed Bounded Intervals]] in one variable; the $\mathbb{R}^n$ version comes from compactness ([[Heine–Borel Theorem]]).
 > - Used in the [[§18b Differentiating the Integral#^lem-18-25|Averaging Lemma]] ([[§18b Differentiating the Integral#^lem-18-25|§18.25]]), hence in [[§18b Differentiating the Integral#^thm-18-26|Differentiation of the Integral]] ([[§18b Differentiating the Integral#^thm-18-26|§18.26]]).
 
-## Tonelli's Theorem: The Question
+## Tonelli's Theorem: Statement
 
 > [!remark] Remark: The Question
 > For $f \in L(\mathbb{R}^n)$ with $\mathbb{R}^n = \mathbb{R}^p \times \mathbb{R}^q$ ($p + q = n$), we ask:
@@ -131,7 +131,20 @@ tags: [measure-theory, math551]
 
 ^rem-17-2
 
-Tonelli's theorem, which answers these questions for non-negative $f$, is stated as [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|Theorem §17.3]] below, directly before its proof, once the Tonelli class and its closure properties are in place.
+> [!theorem] Theorem §17.3: Tonelli's Theorem
+> Let $f$ be a non-negative measurable function on $\mathbb{R}^n = \mathbb{R}^p \times \mathbb{R}^q$, $n = p + q$. Then:
+> - (i) For a.e. $x \in \mathbb{R}^p$, the function $y \mapsto f(x, y)$ is a measurable function of $y \in \mathbb{R}^q$.
+> - (ii) The function $F_f(x) = \int_{\mathbb{R}^q} f(x, y)\,dy$ is a measurable function of $x \in \mathbb{R}^p$.
+> - (iii) $\displaystyle\int_{\mathbb{R}^p} \left(\int_{\mathbb{R}^q} f(x, y)\,dy\right) dx = \iint_{\mathbb{R}^n} f(x, y)\,dx\,dy$.
+
+^thm-17-3
+
+> [!remark]- Connections
+> - Riemann counterpart for non-negative integrands in MATH 452: [[§15 Multivariable Integration#^thm-15-12|Fubini–Tonelli: Non-negative Functions]] (452 §15.12).
+> - Proved below ([[§17 Invariance Properties and Fubini's Theorem#^pf-17-3|Proof of Tonelli's Theorem]]) through the closure properties of the [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Tonelli class]].
+> - Computational version for continuous functions on boxes: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] and [[§103 Triple Integrals#^thm-103-1|Calc Thm. §103.1]] (with worked examples).
+> - Used in ODEs: an absolute bound on the wedge $0 \le \tau \le t$ makes the order of integration reversible in the convolution theorem for Laplace transforms, [[§26★ The Convolution Integral#^thm-26-2|331 Thm. §26.2]].
+> - Used in PDEs: checking the integrability hypothesis of Fubini's theorem when the order of integration is reversed in [[§27 Infinite Rod#^thm-27-3|341 Thm. §27.3]] and [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]].
 
 ## The Tonelli Class and Its Closure Properties
 
@@ -200,17 +213,9 @@ Tonelli's theorem, which answers these questions for non-negative $f$, is stated
 
 *Uses:* [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§12a Limits and Positive Parts of Measurable Functions#^cor-12-8|§12.8]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]]
 
-## Statement and Proof of Tonelli's Theorem
-
 We now prove Tonelli's theorem using these closure properties. Each step requires only one or two properties.
 
-> [!theorem] Theorem §17.3: Tonelli's Theorem
-> Let $f$ be a non-negative measurable function on $\mathbb{R}^n = \mathbb{R}^p \times \mathbb{R}^q$, $n = p + q$. Then:
-> - (i) For a.e. $x \in \mathbb{R}^p$, the function $y \mapsto f(x, y)$ is a measurable function of $y \in \mathbb{R}^q$.
-> - (ii) The function $F_f(x) = \int_{\mathbb{R}^q} f(x, y)\,dy$ is a measurable function of $x \in \mathbb{R}^p$.
-> - (iii) $\displaystyle\int_{\mathbb{R}^p} \left(\int_{\mathbb{R}^q} f(x, y)\,dy\right) dx = \iint_{\mathbb{R}^n} f(x, y)\,dx\,dy$.
-
-^thm-17-3
+## Proof of Tonelli's Theorem
 
 > [!proof]+ Proof of Tonelli's Theorem
 > We show every non-negative measurable function belongs to $\mathcal{F}$.
@@ -234,13 +239,6 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 ^pf-17-3
 
 *Uses:* [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[§17 Invariance Properties and Fubini's Theorem#^lem-17-5|§17.5]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]], [[§7 Structure of Open Sets#^prop-7-3|§7.3]], [[§11a Approximation and Continuity of Measure#^def-11-8|Def. §11.8]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]], [[Simple Function Approximation Theorem|§12.14]]
-
-> [!remark]- Connections
-> - Riemann counterpart for non-negative integrands in MATH 452: [[§15 Multivariable Integration#^thm-15-12|Fubini–Tonelli: Non-negative Functions]] (452 §15.12).
-> - Proved above ([[§17 Invariance Properties and Fubini's Theorem#^pf-17-3|Proof of Tonelli's Theorem]]) through the closure properties of the [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Tonelli class]].
-> - Computational version for continuous functions on boxes: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] and [[§103 Triple Integrals#^thm-103-1|Calc Thm. §103.1]] (with worked examples).
-> - Used in ODEs: an absolute bound on the wedge $0 \le \tau \le t$ makes the order of integration reversible in the convolution theorem for Laplace transforms, [[§26★ The Convolution Integral#^thm-26-2|331 Thm. §26.2]].
-> - Used in PDEs: checking the integrability hypothesis of Fubini's theorem when the order of integration is reversed in [[§27 Infinite Rod#^thm-27-3|341 Thm. §27.3]] and [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]].
 
 ## Fubini's Theorem
 

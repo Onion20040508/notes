@@ -148,7 +148,7 @@ The next lemma makes this exact.
 
 ^pf-105-1
 
-*Uses:* [[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|§104.1]], [[§103 Triple Integrals#^thm-103-4|§103.4]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]]
+*Uses:* [[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|§104.1]], [[§103a Applications of Triple Integrals#^thm-103-4|§103.4]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]]
 
 > [!theorem] Theorem §105.2: Triple Integration in Spherical Coordinates
 > If $f$ is continuous on the spherical wedge $E = \{(\rho, \theta, \phi) \mid a \le \rho \le b,\ \alpha \le \theta \le \beta,\ c \le \phi \le d\}$, then

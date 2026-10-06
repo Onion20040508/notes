@@ -328,7 +328,7 @@ Many countries that formerly experienced exponential growth now find their rates
 ## Other Models for Population Growth
 
 > [!definition] Definition §60.3: Logistic Model with Harvesting
-> Two modifications of the logistic equation (4), with constants $k, M > 0$:
+> Two modifications of the logistic equation (4) are treated here. The first, with constants $k, M > 0$:
 > - **Harvesting.** For a population harvested at a constant rate $c > 0$ (think of a population of fish caught at a constant rate),
 >
 >   $$

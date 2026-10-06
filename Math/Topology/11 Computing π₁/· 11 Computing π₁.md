@@ -15,6 +15,7 @@ tags: [chapter, topology]
 - [[§27 The Fundamental Group of Sⁿ]]
 - [[§28 Fundamental Group of Some Surfaces]]
 - [[§29 The Seifert–van Kampen Theorem]]
+- [[§29a The Projective Plane, the Figure Eight, the Double Torus and the Torus]]
 
 ## Central results
 - [[Sⁿ is Simply Connected for n ≥ 2]] (§27.3)

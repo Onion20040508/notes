@@ -167,7 +167,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 > 1, \quad -0.44601, \quad 0.07673, \quad -0.00726, \quad 0.00033, \quad -0.00011, \quad -0.0000900, \quad -0.0000906, \quad \ldots
 > $$
 >
-> converging to $J_0(2.405) \approx -0.00009$. So $J_0$ changes sign just below $2.405$ (the zero is $2.40483$). For larger $x$ more terms are needed before the terms start to decrease, which is why tables, or the asymptotic form of [[§45★ Bessel's Equation#^rem-45-4|Remark: Why J₀ Oscillates]], are used there.
+> converging to $J_0(2.405) \approx -0.00009$. So $J_0$ changes sign just below $2.405$ (the zero is $2.40483$). For larger $x$ more terms are needed before the terms start to decrease, which is why tables, or the asymptotic form of [[§45★ Properties of Bessel Functions#^rem-45-4|Remark: Why J₀ Oscillates]], are used there.
 >
 > *Powers: 5.5, Equation (5); Table 1*
 

@@ -77,7 +77,7 @@ This integral is abbreviated $\int_C \mathbf{F} \cdot d\mathbf{r}$, and it makes
 
 ^pf-108-6
 
-*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^thm-108-4|§108.4]]
+*Uses:* [[§108a Line Integrals of Vector Fields#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^thm-108-4|§108.4]]
 
 > [!theorem] Theorem §108.7: Vector Line Integrals in Component Form
 > If $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ is a vector field on $\mathbb{R}^3$, then
@@ -110,7 +110,7 @@ This integral is abbreviated $\int_C \mathbf{F} \cdot d\mathbf{r}$, and it makes
 
 ^pf-108-7
 
-*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^thm-108-5|§108.5]], [[§108 Line Integrals#^thm-108-2|§108.2]]
+*Uses:* [[§108a Line Integrals of Vector Fields#^def-108-8|Def. §108.8]], [[§108 Line Integrals#^thm-108-5|§108.5]], [[§108 Line Integrals#^thm-108-2|§108.2]]
 
 For example, the integral of [[§108 Line Integrals#^ex-108-4|Example §108.4]] is $\int_C \mathbf{F} \cdot d\mathbf{r}$ for $\mathbf{F}(x, y, z) = y\,\mathbf{i} + z\,\mathbf{j} + x\,\mathbf{k}$.
 
@@ -139,7 +139,7 @@ For example, the integral of [[§108 Line Integrals#^ex-108-4|Example §108.4]] 
 > \int_C \mathbf{F} \cdot d\mathbf{r} = \int_0^2 (t^3 - 3t^2 + t + 5)\,dt = \left[ \frac{t^4}{4} - t^3 + \frac{t^2}{2} + 5t \right]_0^2 = 4 - 8 + 2 + 10 = 8 .
 > $$
 >
-> (Is there a shortcut? $\partial P/\partial y = 2xy$ and $\partial Q/\partial x = -1$ are not equal, so $\mathbf{F}$ is not conservative ([[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]) and the integral must be computed along the curve.)
+> (Is there a shortcut? $\partial P/\partial y = 2xy$ and $\partial Q/\partial x = -1$ are not equal, so $\mathbf{F}$ is not conservative ([[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]) and the integral must be computed along the curve.)
 >
 > *Source: 233 Practice Final Exam, Q3*
 

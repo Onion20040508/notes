@@ -151,7 +151,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 ^rem-24-1
 
 > [!remark] Remark: Fourier Series as Eigenfunction Expansions
-> For $\phi'' + \lambda^2\phi = 0$ on $0 < x < a$ with $\phi(0) = \phi(a) = 0$, the eigenfunctions are $\sin(n\pi x/a)$, $\int_0^a \sin^2(n\pi x/a)\,dx = a/2$, and the coefficient formula gives $c_n = \frac2a\int_0^a f(x)\sin(n\pi x/a)\,dx$: the Fourier sine series of [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]. With $\phi'(0) = \phi'(a) = 0$ the eigenfunctions are $1$ (norm $a$) and $\cos(n\pi x/a)$ (norm $a/2$), giving the cosine series with $a_0 = \frac1a\int_0^a f\,dx$. What is new in general is only that the normalizing integrals differ from one eigenfunction to the next and have to be computed.
+> For $\phi'' + \lambda^2\phi = 0$ on $0 < x < a$ with $\phi(0) = \phi(a) = 0$, the eigenfunctions are $\sin(n\pi x/a)$, $\int_0^a \sin^2(n\pi x/a)\,dx = a/2$, and the coefficient formula gives $c_n = \frac2a\int_0^a f(x)\sin(n\pi x/a)\,dx$: the Fourier sine series of [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Definition §7.4]]. With $\phi'(0) = \phi'(a) = 0$ the eigenfunctions are $1$ (norm $a$) and $\cos(n\pi x/a)$ (norm $a/2$), giving the cosine series with $a_0 = \frac1a\int_0^a f\,dx$. What is new in general is only that the normalizing integrals differ from one eigenfunction to the next and have to be computed.
 
 ^rem-24-2
 

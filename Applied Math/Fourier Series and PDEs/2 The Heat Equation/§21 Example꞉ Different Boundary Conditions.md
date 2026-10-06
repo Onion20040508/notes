@@ -148,7 +148,7 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 > G(x) = g(x), \quad 0 < x < a; \qquad G(x) = g(2a - x), \quad a < x < 2a .
 > $$
 >
-> $G$ is sectionally smooth on $0 < x < 2a$, so its Fourier sine series on that interval, with period $4a$ and half-period $2a$ ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]),
+> $G$ is sectionally smooth on $0 < x < 2a$, so its Fourier sine series on that interval, with period $4a$ and half-period $2a$ ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Definition §7.4]]),
 >
 > $$
 > G(x) \sim \sum_{N=1}^\infty B_N\sin\Big(\frac{N\pi x}{2a}\Big), \qquad B_N = \frac2{2a}\int_0^{2a}G(x)\sin\Big(\frac{N\pi x}{2a}\Big)dx ,
@@ -170,7 +170,7 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 
 ^pf-21-3
 
-*Uses:* [[§21 Example꞉ Different Boundary Conditions#^prop-21-2|§21.2]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]]
+*Uses:* [[§21 Example꞉ Different Boundary Conditions#^prop-21-2|§21.2]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]]
 
 > [!remark]- Connections
 > - Proposition §21.2 and formula (18) say that $\{\sin\lambda_nx\}$ is an orthogonal set in the inner product $\langle f, g\rangle = \int_0^af g\,dx$ and that $b_n = \langle g, \phi_n\rangle/\langle\phi_n, \phi_n\rangle$ is the coordinate of $g$ along $\phi_n$: [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]]. Theorem §21.3 adds that these coordinates reconstruct $g$, a completeness statement; the general version for Sturm–Liouville eigenfunctions is [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2]].

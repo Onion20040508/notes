@@ -180,7 +180,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 ^def-42-new4
 
-These are the three-dimensional forms of the conditions of the first, second and third kinds for the rod ([[§17 Derivation and Boundary Conditions#^def-17-5|Definition §17.5]], [[§17 Derivation and Boundary Conditions#^def-17-6|Definition §17.6]], [[§17 Derivation and Boundary Conditions#^def-17-7|Definition §17.7]]). The normal derivative is $\partial u/\partial n = \nabla u\cdot\hat{\mathbf{n}}$, the directional derivative as a dot product ([[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]]). On a face where the outward normal is $-\mathbf{k}$, for instance, $\partial u/\partial n = -\partial u/\partial z$.
+These are the three-dimensional forms of the conditions of the first, second and third kinds for the rod ([[§17a Initial and Boundary Conditions; Diffusion#^def-17-5|Definition §17.5]], [[§17a Initial and Boundary Conditions; Diffusion#^def-17-6|Definition §17.6]], [[§17a Initial and Boundary Conditions; Diffusion#^def-17-7|Definition §17.7]]). The normal derivative is $\partial u/\partial n = \nabla u\cdot\hat{\mathbf{n}}$, the directional derivative as a dot product ([[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]]). On a face where the outward normal is $-\mathbf{k}$, for instance, $\partial u/\partial n = -\partial u/\partial z$.
 
 ## Examples: A Rectangular Block and Its Reductions
 
@@ -301,7 +301,7 @@ A full three-dimensional problem is complicated to solve, so one looks for ways 
 > \end{aligned}
 > $$
 >
-> The convection through the faces has become a heat loss term $\frac{2h}{b\kappa}(T_2 - w)$ in the equation, the same kind of term as for a rod losing heat through its lateral surface, $u_{xx} - \gamma^2(u - U) = u_t/k$ ([[§17 Derivation and Boundary Conditions#^ex-17-4|Example §17.4]]).
+> The convection through the faces has become a heat loss term $\frac{2h}{b\kappa}(T_2 - w)$ in the equation, the same kind of term as for a rod losing heat through its lateral surface, $u_{xx} - \gamma^2(u - U) = u_t/k$ ([[§17a Initial and Boundary Conditions; Diffusion#^ex-17-4|Example §17.4]]).
 >
 > **Steady state.** Suppose $w(x, z, t) \to W(x, z)$ as $t \to \infty$. Then $W$ satisfies (15)–(17) with $\partial w/\partial t = 0$. Nothing in that problem depends on $z$, so look for $W = W(x)$; (17) then holds automatically, and with $\gamma^2 = 2h/(b\kappa)$
 >

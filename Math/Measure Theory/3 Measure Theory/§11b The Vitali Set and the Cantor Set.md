@@ -239,7 +239,7 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-
 *Uses:* [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[§5 Topology of ℝⁿ#^thm-5-2|§5.2]], [[§11 Borel Sets and Measure Spaces#^ex-11-1|Ex. §11.1]], [[§11 Borel Sets and Measure Spaces#^cor-11-7|§11.7]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§16 Decimal Expansions of Real Numbers (Not Covered)|451 §16]]
 
 > [!remark]- Connections
-> - The digit map $f$ is the Cantor function restricted to $C$: [[§18c Absolute Continuity and the FTC#^ex-18-4|Ex. §18.4]].
+> - The digit map $f$ is the Cantor function restricted to $C$: [[§18c Absolute Continuity#^ex-18-4|Ex. §18.4]].
 
 > [!remark] Remark
 > The Cantor set demonstrates that:

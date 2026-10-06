@@ -93,7 +93,7 @@ Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around 
 >
 > **Step 4: Recognize the result as $(\nabla \times \mathbf{F}) \cdot (\mathbf{X}_x \times \mathbf{X}_y)$.**
 >
-> For the graph parametrization $\mathbf{X}(x,y) = (x, y, h(x,y))$, we computed in [[§18 Surface Integrals#Graph Surfaces|Section 18]] that $\mathbf{X}_x \times \mathbf{X}_y = (-h_x, -h_y, 1)$. Now:
+> For the graph parametrization $\mathbf{X}(x,y) = (x, y, h(x,y))$, we computed in [[§18a Flux Integrals and the Divergence Theorem in ℝ³#Graph Surfaces|§18a]] that $\mathbf{X}_x \times \mathbf{X}_y = (-h_x, -h_y, 1)$. Now:
 >
 > $$
 > \begin{aligned}
@@ -112,7 +112,7 @@ Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around 
 ^pf-20-new1
 
 > [!remark] Remark: Limitations and the General Case
-> This proof works only for surfaces that are graphs over a domain in the $xy$-plane. For a general surface (e.g., a hemisphere, where the normal is not everywhere “upward”), we would need to decompose into graph patches and sum — just as the Divergence Theorem proof required decomposition into simple solid regions ([[§18a The Divergence Theorem in ℝ³#^rem-18-8|Remark in §18a]]).
+> This proof works only for surfaces that are graphs over a domain in the $xy$-plane. For a general surface (e.g., a hemisphere, where the normal is not everywhere “upward”), we would need to decompose into graph patches and sum — just as the Divergence Theorem proof required decomposition into simple solid regions ([[§18a Flux Integrals and the Divergence Theorem in ℝ³#^rem-18-8|Remark in §18a]]).
 >
 > The general proof below avoids this decomposition entirely: by working with an abstract parametrization $(u,v)$ instead of $(x,y)$, the pullback to the parameter domain reduces *every* surface to a flat region, where Green's theorem applies directly.
 
@@ -328,7 +328,7 @@ Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around 
 >
 > The key cancellation in Step 5 — the second-derivative terms $Px_{uv}$, $Qy_{uv}$, $Rz_{uv}$ dropping out — relies on equality of mixed partials ($x_{uv} = x_{vu}$, [[Schwarz–Clairaut Theorem|Theorem §5.1]]). This is why Stokes' theorem requires $\mathbf{X} \in C^2$ (not just $C^1$).
 >
-> Compare with the Divergence Theorem proof ([[§18a The Divergence Theorem in ℝ³#^pf-18-2|Section §18a]]), which reduced to the [[Fundamental Theorem of Calculus]]. Stokes' theorem instead reduces to [[Green's Theorem|Green's theorem]] — one dimension lower, but on the parameter domain rather than in physical space.
+> Compare with the Divergence Theorem proof ([[§18a Flux Integrals and the Divergence Theorem in ℝ³#^pf-18-2|Section §18a]]), which reduced to the [[Fundamental Theorem of Calculus]]. Stokes' theorem instead reduces to [[Green's Theorem|Green's theorem]] — one dimension lower, but on the parameter domain rather than in physical space.
 
 ^rem-20-3
 

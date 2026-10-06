@@ -19,7 +19,7 @@ tags: [measure-theory, math551]
 > - Same definition in 556, over ℝ or ℂ, where subspaces, quotients and complements are developed: [[§1 Linear Spaces#^def-1-1|556 Def. §1.1]].
 
 > [!example] Example §19.1: Linear Spaces in This Course
-> $\mathbb{R}^n$, $L^1(E)$ ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]), $BV([a,b])$ ([[§18 Differentiation Theory#^prop-18-4|Proposition §18.4]]), and $AC([a,b])$ ([[§18c Absolute Continuity and the FTC#^prop-18-11|Proposition §18.11]]) are all linear spaces.
+> $\mathbb{R}^n$, $L^1(E)$ ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]), $BV([a,b])$ ([[§18 Differentiation Theory#^prop-18-4|Proposition §18.4]]), and $AC([a,b])$ ([[§18c Absolute Continuity#^prop-18-11|Proposition §18.11]]) are all linear spaces.
 
 ^ex-19-1
 

@@ -87,7 +87,7 @@ the temperature in a cylindrical rod with insulated lateral surface whose ends a
 ^rem-18-1
 
 > [!example] Example §18.2: Convection at One End
-> Find the steady-state problem and its solution for (13)–(16) of [[§17 Derivation and Boundary Conditions#^def-17-9|Definition §17.9]]:
+> Find the steady-state problem and its solution for (13)–(16) of [[§17a Initial and Boundary Conditions; Diffusion#^def-17-9|Definition §17.9]]:
 >
 > $$
 > \begin{aligned}
@@ -227,7 +227,7 @@ The steady state gives valuable information about the solution, and it is also t
 > \frac{\partial^2u}{\partial x^2} + K = \frac{\partial u}{\partial t}, \quad 0 < x < a,\ t > 0; \qquad u(x, 0) = f(x); \qquad u(0, t) = T; \qquad \frac{\partial u}{\partial x}(a, t) = 0,
 > $$
 >
-> with constants $K$ and $T$ (the rod of [[§17 Derivation and Boundary Conditions#^ex-17-2|Example §17.2]]). **(b)** Find the steady state. **(c)** State the problem for $w = u - v$.
+> with constants $K$ and $T$ (the rod of [[§17a Initial and Boundary Conditions; Diffusion#^ex-17-2|Example §17.2]]). **(b)** Find the steady state. **(c)** State the problem for $w = u - v$.
 >
 > **(b)** The steady-state problem is
 >
@@ -256,7 +256,7 @@ The steady state gives valuable information about the solution, and it is also t
 ^ex-18-4
 
 > [!example] Example §18.5: Lateral Convection — A Steady State That Is Not a Line
-> Consider the rod of [[§17 Derivation and Boundary Conditions#^ex-17-4|Example §17.4]], which loses heat through its lateral surface to a fluid at temperature $T$:
+> Consider the rod of [[§17a Initial and Boundary Conditions; Diffusion#^ex-17-4|Example §17.4]], which loses heat through its lateral surface to a fluid at temperature $T$:
 >
 > $$
 > \frac{\partial u}{\partial t} = \frac{\partial^2u}{\partial x^2} - \gamma^2(u - T), \quad 0 < x < a,\ t > 0; \qquad u(0, t) = T, \quad u(a, t) = T; \qquad u(x, 0) = f(x) .

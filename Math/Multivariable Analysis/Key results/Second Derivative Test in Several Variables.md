@@ -8,7 +8,7 @@ tags: [multivariable-analysis, hub]
 ![[§14 Optimization and Lagrange Multipliers#^thm-14-4]]
 
 ## Treated in
-- [[§14 Optimization and Lagrange Multipliers#^thm-14-4|Theorem §14.4: Second-Order Sufficient Conditions — Unconstrained]], in [[§14 Optimization and Lagrange Multipliers]]
+- [[§14a Second-Order Sufficient Conditions#^thm-14-4|Theorem §14.4: Second-Order Sufficient Conditions — Unconstrained]], in [[§14a Second-Order Sufficient Conditions]]
 
 ## Its proof uses
 - [[§5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1: Schwarz–Clairaut]]

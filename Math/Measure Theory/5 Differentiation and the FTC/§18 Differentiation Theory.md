@@ -136,7 +136,7 @@ tags: [measure-theory, math551]
 *The Vitali covering argument. (a) The set $E$ (black) and a Vitali covering $\Gamma$ (blue; a genuine one has arbitrarily short intervals around every point of $E$). (b) Greedy selection: each new interval is disjoint from the earlier ones and longer than half of any remaining candidate, giving $I_1, I_2, I_3$. A point $x_0 \in E$ not covered by $I_1$ (take $n_0 = 1$) lies in some $J \in \Gamma$ (red, dashed) disjoint from $I_1$; here $J$ first meets $I_2$. (c) The selection rule gives $|J| \leq \delta_1 < 2|I_2|$, and an interval that meets $I_2$ and is shorter than $2|I_2|$ lies inside the $5\times$ dilation $\hat I_2$ (shaded). So the dilations $\hat I_j$, $j > n_0$, cover everything that $I_1, \dots, I_{n_0}$ miss, at total cost $5\sum_{j > n_0} |I_j|$.*
 
 > [!remark]- Connections
-> - Used twice in [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]] ([[§18a Lebesgue's Differentiation Theorem#^thm-18-9|§18.9]]) and once in [[§18c Absolute Continuity and the FTC#^thm-18-27|Theorem §18.27]] (non-constant functions with zero derivative).
+> - Used twice in [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]] ([[§18a Lebesgue's Differentiation Theorem#^thm-18-9|§18.9]]) and once in [[§18c Absolute Continuity#^thm-18-27|Theorem §18.27]] (non-constant functions with zero derivative).
 > - Compare the compactness arguments of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] ([[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]]): there a finite subcover, here finitely many *disjoint* intervals covering all but a small set.
 
 ## Functions of Bounded Variation
@@ -194,7 +194,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Mean Value Theorem|451 §29.3]], [[§18 Differentiation Theory#^def-18-2|Def. §18.2]], [[§18 Differentiation Theory#^def-18-new1|Def. §18.3]]
 
 > [!remark]- Connections
-> - The same MVT estimate gives [[§29 The Mean Value Theorem#^prop-29-8|the Mean Value Inequality]] (451 §29.8) and [[§19 Uniform Continuity#^thm-19-5|Bounded Derivative Implies Uniform Continuity]] (451 §19.5); in the language below, $f$ is Lipschitz, hence [[§18c Absolute Continuity and the FTC#^prop-18-11|AC]] ([[§18c Absolute Continuity and the FTC#^prop-18-11|§18.11]]).
+> - The same MVT estimate gives [[§29 The Mean Value Theorem#^prop-29-8|the Mean Value Inequality]] (451 §29.8) and [[§19 Uniform Continuity#^thm-19-5|Bounded Derivative Implies Uniform Continuity]] (451 §19.5); in the language below, $f$ is Lipschitz, hence [[§18c Absolute Continuity#^prop-18-11|AC]] ([[§18c Absolute Continuity#^prop-18-11|§18.11]]).
 
 > [!example] Example §18.3: A Continuous Function Not in BV
 > Define $f(x) = \sqrt{x}\sin(\pi/x)$ for $0 < x \leq 1$ and $f(0) = 0$. Then $f$ is continuous on $[0, 1]$ but $f \notin BV([0, 1])$: the oscillations near $0$ accumulate enough variation to make $\bigvee_0^1(f) = \infty$.
@@ -362,4 +362,4 @@ tags: [measure-theory, math551]
 
 *Uses:* [[§18 Differentiation Theory#^def-18-2|Def. §18.2]], [[§18 Differentiation Theory#^def-18-new1|Def. §18.3]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[§15a The Dominated Convergence Theorem#^def-15-2|Def. §15.2]], [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[§18 Differentiation Theory#^prop-18-4|§18.4]], [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]]
 
-Dini derivatives and Lebesgue's differentiation theorem continue in [[§18a Lebesgue's Differentiation Theorem]]; differentiation of the integral follows in [[§18b Differentiating the Integral]], and absolute continuity and the FTC in [[§18c Absolute Continuity and the FTC]].
+Dini derivatives and Lebesgue's differentiation theorem continue in [[§18a Lebesgue's Differentiation Theorem]]; differentiation of the integral follows in [[§18b Differentiating the Integral]], absolute continuity in [[§18c Absolute Continuity]], and the FTC in [[§18d The Fundamental Theorem of Calculus for Lebesgue Integrals]].

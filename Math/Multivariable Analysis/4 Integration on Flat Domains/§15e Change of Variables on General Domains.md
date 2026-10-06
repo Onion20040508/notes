@@ -9,7 +9,7 @@ tags: [multivariable-analysis, math452]
 
 ### Extension to General Domains
 
-The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan measurable domains.
+The proofs above ([[§15d The Change of Variables Formula#^thm-15-14|Theorem §15.14]]) assume $D^*$ is a rectangle. We now extend to arbitrary Jordan measurable domains.
 
 > [!theorem] Proposition §15.15: Boundary Squares Have Vanishing Total Area
 > Let $D \subseteq \mathbb{R}^2$ be a bounded Jordan measurable set. Enclose $D$ in a rectangle $R$ and partition $R$ into $N^2$ squares of side $1/N$. Let $B_N$ denote the set of **boundary squares** (those that intersect $\partial D$).

@@ -40,7 +40,7 @@ How can we tell whether a field $\mathbf{F}$ is conservative, and if it is, how 
 *Uses:* [[§107 Vector Fields#^def-107-4|Def. §107.4]], [[§92 Partial Derivatives#^thm-92-2|§92.2]]
 
 > [!remark]- Connections
-> - In 452 this is "exact implies closed", [[§22 The Algebra of Differential Forms#^prop-22-10|452 Prop. §22.10]]; its three-dimensional form $\operatorname{curl}(\nabla f) = \mathbf{0}$ is [[§111 Curl and Divergence#^thm-111-1|Theorem §111.1]]. The field of [[§110 Green's Theorem#^ex-110-5|Example §110.5]] satisfies the condition without being conservative, so the converse needs a hypothesis on the region: [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]].
+> - In 452 this is "exact implies closed", [[§22 The Algebra of Differential Forms#^prop-22-10|452 Prop. §22.10]]; its three-dimensional form $\operatorname{curl}(\nabla f) = \mathbf{0}$ is [[§111 Curl and Divergence#^thm-111-1|Theorem §111.1]]. The field of [[§110a Extended Versions of Green's Theorem#^ex-110-5|Example §110.5]] satisfies the condition without being conservative, so the converse needs a hypothesis on the region: [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]].
 > - ODE version: the test for exact equations $M + Ny' = 0$, [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]] ($M_y = N_x$ is necessary, and on a rectangle sufficient, for a function $\psi$ with $\psi_x = M$, $\psi_y = N$, that is, a potential of $M\,\mathbf{i} + N\,\mathbf{j}$).
 
 The converse of [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]] holds only for a special type of region.
@@ -59,7 +59,7 @@ The converse of [[§109a Conservative Vector Fields and Potential Functions#^thm
 
 ^def-109-5
 
-In terms of simply-connected regions, Stewart now states a partial converse to [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]] (Stewart 16.3, Theorem 6): *if $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ is a vector field on an open simply-connected region $D$, $P$ and $Q$ have continuous first-order partial derivatives, and $\partial P/\partial y = \partial Q/\partial x$ throughout $D$, then $\mathbf{F}$ is conservative.* It is proved with Green's Theorem, so it is stated and proved in the next section: [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]]. Its three-dimensional version, with $\operatorname{curl}\mathbf{F} = \mathbf{0}$, is [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]].
+In terms of simply-connected regions, Stewart now states a partial converse to [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]] (Stewart 16.3, Theorem 6): *if $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ is a vector field on an open simply-connected region $D$, $P$ and $Q$ have continuous first-order partial derivatives, and $\partial P/\partial y = \partial Q/\partial x$ throughout $D$, then $\mathbf{F}$ is conservative.* It is proved with Green's Theorem, so it is stated and proved in the next section: [[§110a Extended Versions of Green's Theorem#^thm-110-5|Theorem §110.5]]. Its three-dimensional version, with $\operatorname{curl}\mathbf{F} = \mathbf{0}$, is [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]].
 
 > [!example] Example §109.2: Testing for a Conservative Field
 > Determine whether or not the given vector field is conservative.
@@ -78,7 +78,7 @@ In terms of simply-connected regions, Stewart now states a partial converse to [
 > \frac{\partial P}{\partial y} = 2x = \frac{\partial Q}{\partial x} .
 > $$
 >
-> The domain of $\mathbf{F}$ is the entire plane $D = \mathbb{R}^2$, which is open and simply-connected. So [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]] applies, and $\mathbf{F}$ is conservative.
+> The domain of $\mathbf{F}$ is the entire plane $D = \mathbb{R}^2$, which is open and simply-connected. So [[§110a Extended Versions of Green's Theorem#^thm-110-5|Theorem §110.5]] applies, and $\mathbf{F}$ is conservative.
 >
 > (In plots of the two fields, the vectors of (a) along a suitable closed curve point roughly along the curve, so $\oint_C \mathbf{F} \cdot d\mathbf{r} > 0$, consistent with (a). For (b), some vectors near any closed curve point along it and others against it, consistent with all closed-path integrals being $0$.)
 >
@@ -86,7 +86,7 @@ In terms of simply-connected regions, Stewart now states a partial converse to [
 
 ^ex-109-2
 
-The test of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]] says that $\mathbf{F}$ is conservative but not how to find $f$. The proof of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Theorem §109.3]] suggests the way: integrate the components one variable at a time.
+The test of [[§110a Extended Versions of Green's Theorem#^thm-110-5|Theorem §110.5]] says that $\mathbf{F}$ is conservative but not how to find $f$. The proof of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Theorem §109.3]] suggests the way: integrate the components one variable at a time.
 
 > [!remark] Remark: Method — Finding a Potential Function
 > To find $f$ with $\nabla f = \mathbf{F}$:
@@ -104,7 +104,7 @@ The test of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]] says that $\mat
 > [!example] Example §109.3: Finding a Potential and Using It
 > Let $\mathbf{F}(x, y) = (3 + 2xy)\,\mathbf{i} + (x^2 - 3y^2)\,\mathbf{j}$. (a) Find a function $f$ such that $\mathbf{F} = \nabla f$. (b) Evaluate $\int_C \mathbf{F} \cdot d\mathbf{r}$, where $C$ is the curve $\mathbf{r}(t) = e^t\sin t\,\mathbf{i} + e^t\cos t\,\mathbf{j}$, $0 \le t \le \pi$.
 >
-> **(a)** By [[§109 The Fundamental Theorem for Line Integrals#^ex-109-2|Example §109.2(b)]], $\mathbf{F}$ is conservative, so there is $f$ with
+> **(a)** By [[§109a Conservative Vector Fields and Potential Functions#^ex-109-2|Example §109.2(b)]], $\mathbf{F}$ is conservative, so there is $f$ with
 >
 > $$
 > f_x(x, y) = 3 + 2xy, \qquad (7) \qquad\qquad f_y(x, y) = x^2 - 3y^2 . \qquad (8)
@@ -172,7 +172,7 @@ The test of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]] says that $\mat
 > \frac{\partial P}{\partial y} = e^y\sin x, \qquad \frac{\partial Q}{\partial x} = -e^y\sin x .
 > $$
 >
-> These differ wherever $\sin x \ne 0$, so $\mathbf{F}$ is not conservative ([[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]). (The posted solution reaches the same conclusion by trying to integrate: $\int P\,dx = -e^y\cos x + f(y)$ and $\int Q\,dy = e^y\cos x + g(x)$ cannot be matched.)
+> These differ wherever $\sin x \ne 0$, so $\mathbf{F}$ is not conservative ([[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]). (The posted solution reaches the same conclusion by trying to integrate: $\int P\,dx = -e^y\cos x + f(y)$ and $\int Q\,dy = e^y\cos x + g(x)$ cannot be matched.)
 >
 > **(b)** So the integral must be computed along the segment: $\mathbf{r}(t) = \langle \pi t, t \rangle$, $0 \le t \le 1$, $\mathbf{r}'(t) = \langle \pi, 1 \rangle$, and
 >
@@ -238,7 +238,7 @@ Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a pat
 ^thm-109-5
 
 > [!proof]+ Proof
-> By [[§108 Line Integrals#^def-108-8|Definition §108.8]] and Newton's Second Law,
+> By [[§108a Line Integrals of Vector Fields#^def-108-8|Definition §108.8]] and Newton's Second Law,
 >
 > $$
 > \begin{aligned}
@@ -251,7 +251,7 @@ Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a pat
 
 ^pf-109-5
 
-*Uses:* [[§108 Line Integrals#^def-108-8|Def. §108.8]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-6|Def. §109.6]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§89 Motion in Space꞉ Velocity and Acceleration#^rem-89-2|§89, Remark]] (Newton's Second Law), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]]
+*Uses:* [[§108a Line Integrals of Vector Fields#^def-108-8|Def. §108.8]], [[§109a Conservative Vector Fields and Potential Functions#^def-109-6|Def. §109.6]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§89 Motion in Space꞉ Velocity and Acceleration#^rem-89-2|§89, Remark]] (Newton's Second Law), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]]
 
 > [!theorem] Corollary §109.6: The Law of Conservation of Energy
 > If an object moves from a point $A$ to a point $B$ under the influence of a conservative force field, then the sum of its potential energy and its kinetic energy remains constant:
@@ -277,4 +277,4 @@ Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a pat
 
 ^pf-109-6
 
-*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^thm-109-1|§109.1]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-5|§109.5]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-6|Def. §109.6]], [[§109 The Fundamental Theorem for Line Integrals#^def-109-new2|Def. §109.7]]
+*Uses:* [[§109 The Fundamental Theorem for Line Integrals#^thm-109-1|§109.1]], [[§109a Conservative Vector Fields and Potential Functions#^thm-109-5|§109.5]], [[§109a Conservative Vector Fields and Potential Functions#^def-109-6|Def. §109.6]], [[§109a Conservative Vector Fields and Potential Functions#^def-109-new2|Def. §109.7]]

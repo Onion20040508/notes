@@ -220,7 +220,7 @@ The calculus of vector functions is one-variable calculus done in each component
 *Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§82 The Dot Product#^thm-82-1|§82.1]], [[§82 The Dot Product#^thm-82-4|§82.4]]
 
 > [!remark] Remark: Curves on a Sphere
-> Geometrically, [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|Theorem §87.3]] says that if a curve lies on a sphere centered at the origin, its tangent vector $\mathbf{r}'(t)$ is always perpendicular to the position vector $\mathbf{r}(t)$, the radius of the sphere. The most important application is to the unit tangent vector: $|\mathbf{T}(t)| = 1$, so $\mathbf{T}'(t) \perp \mathbf{T}(t)$, which is how the unit normal vector is defined in [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]].
+> Geometrically, [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|Theorem §87.3]] says that if a curve lies on a sphere centered at the origin, its tangent vector $\mathbf{r}'(t)$ is always perpendicular to the position vector $\mathbf{r}(t)$, the radius of the sphere. The most important application is to the unit tangent vector: $|\mathbf{T}(t)| = 1$, so $\mathbf{T}'(t) \perp \mathbf{T}(t)$, which is how the unit normal vector is defined in [[§88a The TNB Frame and Torsion#^def-88-5|Definition §88.5]].
 
 ^rem-87-2
 

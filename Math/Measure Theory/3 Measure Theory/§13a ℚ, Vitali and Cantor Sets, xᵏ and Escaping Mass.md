@@ -47,7 +47,7 @@ The middle-thirds Cantor set is closed, hence Borel and measurable (the Borel-hi
 
 ![[§11b The Vitali Set and the Cantor Set#^rem-11-7]]
 
-*Chain:* [[§18d The Cantor Function|Chapter 5]] →
+*Chain:* [[§18e The Cantor Function|Chapter 5]] →
 
 ## Escaping Mass
 

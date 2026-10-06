@@ -18,7 +18,7 @@ The normal form of Green's Theorem ([[§111 Curl and Divergence#^thm-111-5|Theor
 Stewart states and proves the theorem for regions $E$ over which triple integrals were evaluated in Stewart 15.6: type 1 regions ([[§103 Triple Integrals#^def-103-3|Definition §103.3]]) and type 2 and type 3 regions ([[§103 Triple Integrals#^def-103-4|Definition §103.4]]).
 
 > [!definition] Definition §115.1: Simple Solid Region
-> A **simple solid region** is a solid region $E$ that is simultaneously of types 1, 2 and 3: it can be written as $\{(x, y, z) \mid (x, y) \in D_1,\ u_1(x, y) \le z \le u_2(x, y)\}$ (type 1), as $\{(x, y, z) \mid (y, z) \in D_2,\ v_1(y, z) \le x \le v_2(y, z)\}$ (type 2) and as $\{(x, y, z) \mid (x, z) \in D_3,\ w_1(x, z) \le y \le w_2(x, z)\}$ (type 3). (For instance, regions bounded by ellipsoids or rectangular boxes are simple solid regions.) Its boundary is a closed surface, given the positive (outward) orientation of [[§113 Surface Integrals#^def-113-new2|Definition §113.7]].
+> A **simple solid region** is a solid region $E$ that is simultaneously of types 1, 2 and 3: it can be written as $\{(x, y, z) \mid (x, y) \in D_1,\ u_1(x, y) \le z \le u_2(x, y)\}$ (type 1), as $\{(x, y, z) \mid (y, z) \in D_2,\ v_1(y, z) \le x \le v_2(y, z)\}$ (type 2) and as $\{(x, y, z) \mid (x, z) \in D_3,\ w_1(x, z) \le y \le w_2(x, z)\}$ (type 3). (For instance, regions bounded by ellipsoids or rectangular boxes are simple solid regions.) Its boundary is a closed surface, given the positive (outward) orientation of [[§113a Oriented Surfaces and Flux#^def-113-new2|Definition §113.7]].
 >
 > *Stewart: 16.9 (text)*
 
@@ -72,7 +72,7 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 > \iint_S R\,\mathbf{k} \cdot \mathbf{n}\,dS = \iint_{S_1} R\,\mathbf{k} \cdot \mathbf{n}\,dS + \iint_{S_2} R\,\mathbf{k} \cdot \mathbf{n}\,dS . \qquad (6)
 > $$
 >
-> On $S_2$ the outward normal points upward, so Formula 10 of [[§113 Surface Integrals#^thm-113-4|Theorem §113.4]], applied to the field $R\,\mathbf{k}$ (with $P$ and $Q$ replaced by $0$), gives $\iint_{S_2} R\,\mathbf{k} \cdot \mathbf{n}\,dS = \iint_D R(x, y, u_2(x, y))\,dA$. On $S_1$ the outward normal points downward, so we multiply by $-1$: $\iint_{S_1} R\,\mathbf{k} \cdot \mathbf{n}\,dS = -\iint_D R(x, y, u_1(x, y))\,dA$. By (6),
+> On $S_2$ the outward normal points upward, so Formula 10 of [[§113a Oriented Surfaces and Flux#^thm-113-4|Theorem §113.4]], applied to the field $R\,\mathbf{k}$ (with $P$ and $Q$ replaced by $0$), gives $\iint_{S_2} R\,\mathbf{k} \cdot \mathbf{n}\,dS = \iint_D R(x, y, u_2(x, y))\,dA$. On $S_1$ the outward normal points downward, so we multiply by $-1$: $\iint_{S_1} R\,\mathbf{k} \cdot \mathbf{n}\,dS = -\iint_D R(x, y, u_1(x, y))\,dA$. By (6),
 >
 > $$
 > \iint_S R\,\mathbf{k} \cdot \mathbf{n}\,dS = \iint_D \big[ R(x, y, u_2(x, y)) - R(x, y, u_1(x, y)) \big]\,dA ,
@@ -86,14 +86,14 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 
 ^pf-115-1
 
-*Uses:* [[§115 The Divergence Theorem#^def-115-1|Def. §115.1]], [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§113 Surface Integrals#^thm-113-3|§113.3]], [[§113 Surface Integrals#^def-113-6|Def. §113.6]], [[§113 Surface Integrals#^def-113-new2|Def. §113.7]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§103 Triple Integrals#^thm-103-2|§103.2]], [[§103 Triple Integrals#^thm-103-3|§103.3]] (triple integrals over type 1, 2, 3 regions), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2)
+*Uses:* [[§115 The Divergence Theorem#^def-115-1|Def. §115.1]], [[§113a Oriented Surfaces and Flux#^thm-113-4|§113.4]], [[§113a Oriented Surfaces and Flux#^thm-113-3|§113.3]], [[§113a Oriented Surfaces and Flux#^def-113-6|Def. §113.6]], [[§113a Oriented Surfaces and Flux#^def-113-new2|Def. §113.7]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§103 Triple Integrals#^thm-103-2|§103.2]], [[§103 Triple Integrals#^thm-103-3|§103.3]] (triple integrals over type 1, 2, 3 regions), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§18 Surface Integrals#^thm-18-2|452 Thm. §18.2]], with the same proof (one component at a time, FTC along vertical segments, the bottom surface with reversed normal); hub [[Divergence Theorem in ℝ³]]. The version in $\mathbb{R}^n$ is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the plane version is [[§16 Line Integrals and Green's Theorem#^thm-16-2|452 Thm. §16.2]] ([[§111 Curl and Divergence#^thm-111-5|Theorem §111.5]] here).
 > - PDE version: applied to the heat flux out of every subregion, it turns the integral heat balance into the local balance $-\nabla\cdot\mathbf{q} + g = \rho c\,u_t$, [[§42 Three-Dimensional Heat Equation#^thm-42-2|341 Thm. §42.2]], and so gives the three-dimensional heat equation, [[§42 Three-Dimensional Heat Equation#^thm-42-3|341 Thm. §42.3]].
 
 > [!remark] Remark: Two Fluxes in One Line
-> - **The unit sphere.** For $\mathbf{F}(x, y, z) = z\,\mathbf{i} + y\,\mathbf{j} + x\,\mathbf{k}$, $\operatorname{div}\mathbf{F} = \frac{\partial z}{\partial x} + \frac{\partial y}{\partial y} + \frac{\partial x}{\partial z} = 1$. The unit sphere $S$ bounds the unit ball $B$, so the flux of $\mathbf{F}$ across $S$ is $\iiint_B 1\,dV = V(B) = \frac43\pi(1)^3 = \frac{4\pi}{3}$ (Stewart, Example 16.9.1). Compare the direct computation over the sphere in [[§113 Surface Integrals#^ex-113-3|Example §113.3(b)]].
+> - **The unit sphere.** For $\mathbf{F}(x, y, z) = z\,\mathbf{i} + y\,\mathbf{j} + x\,\mathbf{k}$, $\operatorname{div}\mathbf{F} = \frac{\partial z}{\partial x} + \frac{\partial y}{\partial y} + \frac{\partial x}{\partial z} = 1$. The unit sphere $S$ bounds the unit ball $B$, so the flux of $\mathbf{F}$ across $S$ is $\iiint_B 1\,dV = V(B) = \frac43\pi(1)^3 = \frac{4\pi}{3}$ (Stewart, Example 16.9.1). Compare the direct computation over the sphere in [[§113a Oriented Surfaces and Flux#^ex-113-3|Example §113.3(b)]].
 > - **A constant field.** If $\mathbf{v}$ is a constant vector and $S$ is the surface of the cube with vertices $(\pm1, \pm1, \pm1)$, then $\operatorname{div}(2\mathbf{v}) = 0$, so the flux of $2\mathbf{v}$ across $S$ is $0$ with either orientation (the inward orientation only changes the sign of $0$). The posted solution gets $0$ directly: opposite faces have equal areas and opposite normals, so their contributions cancel in pairs.
 >
 > *Source: 233 Practice Final Set 1, Part I Q6*
@@ -202,7 +202,7 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 
 ## Regions Between Two Surfaces
 
-The Divergence Theorem was proved only for simple solid regions, but it can be proved for regions that are finite unions of simple solid regions, by the cutting procedure used for Green's Theorem ([[§110 Green's Theorem#^thm-110-3|Theorem §110.3]]). *Stewart states this extension without proof.*
+The Divergence Theorem was proved only for simple solid regions, but it can be proved for regions that are finite unions of simple solid regions, by the cutting procedure used for Green's Theorem ([[§110a Extended Versions of Green's Theorem#^thm-110-3|Theorem §110.3]]). *Stewart states this extension without proof.*
 
 > [!theorem] Theorem §115.2: Regions Between Two Closed Surfaces
 > Let $E$ be the region that lies between closed surfaces $S_1$ and $S_2$, where $S_1$ lies inside $S_2$, and let $\mathbf{n}_1$ and $\mathbf{n}_2$ be the outward normals of $S_1$ and $S_2$. If $\mathbf{F}$ satisfies the hypotheses of the Divergence Theorem on $E$, then
@@ -226,7 +226,7 @@ The Divergence Theorem was proved only for simple solid regions, but it can be p
 
 ^pf-115-2
 
-*Uses:* [[§115 The Divergence Theorem#^thm-115-1|§115.1]] (extended to finite unions of simple solid regions), [[§113 Surface Integrals#^def-113-7|Def. §113.7]], [[§113 Surface Integrals#^def-113-3|Def. §113.3]]
+*Uses:* [[§115 The Divergence Theorem#^thm-115-1|§115.1]] (extended to finite unions of simple solid regions), [[§113a Oriented Surfaces and Flux#^def-113-7|Def. §113.7]], [[§113 Surface Integrals#^def-113-3|Def. §113.3]]
 
 ![[m233-115-1.svg]]
 *[[§115 The Divergence Theorem#^thm-115-2|Theorem §115.2]]: the region $E$ between an inner closed surface $S_1$ and an outer one $S_2$ (cross-section). Out of $E$ means along $\mathbf{n}_2$ on the outer surface but along $-\mathbf{n}_1$, toward the inside, on the inner one; hence the minus sign in front of the flux through $S_1$. In [[§115 The Divergence Theorem#^ex-115-5|Example §115.5]], $S_1$ is a small sphere around a point charge and $S_2$ is an arbitrary surface enclosing it.*
@@ -264,7 +264,7 @@ The Divergence Theorem was proved only for simple solid regions, but it can be p
 > \iint_S \mathbf{E} \cdot d\mathbf{S} = \iint_{S_1} \mathbf{E} \cdot \mathbf{n}\,dS = \frac{\varepsilon Q}{a^2} \iint_{S_1} dS = \frac{\varepsilon Q}{a^2}\,A(S_1) = \frac{\varepsilon Q}{a^2}\,4\pi a^2 = 4\pi\varepsilon Q .
 > $$
 >
-> This is a special case of Gauss's Law ([[§113 Surface Integrals#^def-113-8|Definition §113.8]], Equation 11) for a single charge, with $\varepsilon = 1/(4\pi\varepsilon_0)$. Compare [[§110 Green's Theorem#^ex-110-5|Example §110.5]], the same argument in the plane.
+> This is a special case of Gauss's Law ([[§113a Oriented Surfaces and Flux#^def-113-8|Definition §113.8]], Equation 11) for a single charge, with $\varepsilon = 1/(4\pi\varepsilon_0)$. Compare [[§110a Extended Versions of Green's Theorem#^ex-110-5|Example §110.5]], the same argument in the plane.
 >
 > *Stewart: Example 16.9.3*
 

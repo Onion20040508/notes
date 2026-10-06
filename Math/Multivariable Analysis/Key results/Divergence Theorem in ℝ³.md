@@ -8,7 +8,7 @@ tags: [multivariable-analysis, hub]
 ![[§18 Surface Integrals#^thm-18-2]]
 
 ## Treated in
-- [[§18 Surface Integrals#^thm-18-2|Theorem §18.2: Divergence Theorem in ℝ³]], in [[§18 Surface Integrals]]
+- [[§18a Flux Integrals and the Divergence Theorem in ℝ³#^thm-18-2|Theorem §18.2: Divergence Theorem in ℝ³]], in [[§18a Flux Integrals and the Divergence Theorem in ℝ³]]
 
 ## Its proof uses
 - [[§15 Multivariable Integration#^thm-15-3|Theorem §15.3: Additivity in the Integrand]]

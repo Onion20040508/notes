@@ -129,26 +129,6 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 > - Used in PDEs: differentiation under the integral sign, which shows that the Fourier-integral solution of the semi-infinite rod satisfies the heat equation, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], and passes $\partial/\partial x$ through the Laplace transform, [[§53★ Partial Differential Equations#^thm-53-1|341 Thm. §53.1]].
 > - Used in Quantum Field Theory: differentiation under the integral sign with a dominating function independent of the parameter, the check behind every exchange of limit, derivative and integral in the field calculations — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|QFT Theorem §CA.1.1]].
 
-> [!remark] Remark: Comparison of Convergence Theorems
-> The three main convergence theorems each trade hypotheses for generality:
->
-> | **Theorem** | **Hypotheses** | **Conclusion** |
-> |---|---|---|
-> | [[Monotone Convergence Theorem (Lebesgue)\|MCT]] | $0 \leq f_k \nearrow f$ | $\lim \int f_k = \int f$ |
-> | [[Fatou's Lemma\|Fatou]] | $f_k \geq 0$ | $\int \liminf f_k \leq \liminf \int f_k$ |
-> | [[Dominated Convergence Theorem\|DCT]] | $\vert f_k\vert \leq F \in L$, $f_k \to f$ a.e. | $\lim \int f_k = \int f$ |
->
-> The MCT requires monotonicity but no domination. The DCT requires domination but no monotonicity. Fatou is the weakest conclusion but requires the least: only non-negativity (or [[§15a The Dominated Convergence Theorem#^thm-15-6|domination for signed functions]]).
-
-^rem-15-3
-
-![[m551-15-2.svg]]
-*Why the DCT needs an integrable dominator. Both sequences tend to $0$ at every point while $\int f_k = 1$ for every $k$, so $\lim \int f_k \neq \int \lim f_k$. (a) The sliding block $f_k = \chi_{[k,k+1]}$ of [[§13 Egorov's and Lusin's Theorems#^rem-13-1|Rem. §13.1]]: the smallest possible dominator $\sup_k f_k = \chi_{[1,\infty)}$ (red) has infinite integral. (b) The bumps $f_k = k\,\chi_{(0,1/k)}$ of [[§14a Consequences of the Monotone Convergence Theorem#^ex-14-1|Ex. §14.1]]: $\sup_k f_k$ is the red staircase, equal to $k$ on $[\frac{1}{k+1}, \frac1k)$, which is at least $\frac1x - 1$ and not integrable near $0$. Any $F$ with $|f_k| \leq F$ lies above the red graph, so no $F \in L$ exists; only Fatou's inequality survives, and it is strict.*
-
-> [!remark]- Connections
-> - The MATH 451 row this table replaces: $f_n \to f$ uniformly on $[a,b]$ gives $\lim \int f_n = \int f$ ([[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]; [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§12b Simple Functions and Modes of Convergence#^def-12-9|Def. §12.9]]).
-> - Why a new integral was needed for such theorems: [[§8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]] (Riemann integrable functions are not closed under pointwise limits).
-
 > [!proof]+ Alternative Proof of DCT via Fatou
 > Since $|f_k(x) - f(x)| \leq |f_k(x)| + |f(x)| \leq 2g(x)$ a.e. (where $g = F$), define $h_k(x) = 2g(x) - |f_k(x) - f(x)|$. Then $h_k \geq 0$ a.e. and $h_k$ is measurable.
 >
@@ -187,6 +167,26 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 
 > [!remark]- Connections
 > - This $L^1$ form of the DCT drives the density theorems [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]] and [[§16 The L¹ Space and Density Theorems#^lem-16-2|§16.2]]; its $L^p$ analogue is used in [[§19a Lᵖ as a Banach Space#^thm-19-19|§19.19]].
+
+> [!remark] Remark: Comparison of Convergence Theorems
+> The three main convergence theorems each trade hypotheses for generality:
+>
+> | **Theorem** | **Hypotheses** | **Conclusion** |
+> |---|---|---|
+> | [[Monotone Convergence Theorem (Lebesgue)\|MCT]] | $0 \leq f_k \nearrow f$ | $\lim \int f_k = \int f$ |
+> | [[Fatou's Lemma\|Fatou]] | $f_k \geq 0$ | $\int \liminf f_k \leq \liminf \int f_k$ |
+> | [[Dominated Convergence Theorem\|DCT]] | $\vert f_k\vert \leq F \in L$, $f_k \to f$ a.e. | $\lim \int f_k = \int f$ |
+>
+> The MCT requires monotonicity but no domination. The DCT requires domination but no monotonicity. Fatou is the weakest conclusion but requires the least: only non-negativity (or [[§15a The Dominated Convergence Theorem#^thm-15-6|domination for signed functions]]).
+
+^rem-15-3
+
+![[m551-15-2.svg]]
+*Why the DCT needs an integrable dominator. Both sequences tend to $0$ at every point while $\int f_k = 1$ for every $k$, so $\lim \int f_k \neq \int \lim f_k$. (a) The sliding block $f_k = \chi_{[k,k+1]}$ of [[§13 Egorov's and Lusin's Theorems#^rem-13-1|Rem. §13.1]]: the smallest possible dominator $\sup_k f_k = \chi_{[1,\infty)}$ (red) has infinite integral. (b) The bumps $f_k = k\,\chi_{(0,1/k)}$ of [[§14a Consequences of the Monotone Convergence Theorem#^ex-14-1|Ex. §14.1]]: $\sup_k f_k$ is the red staircase, equal to $k$ on $[\frac{1}{k+1}, \frac1k)$, which is at least $\frac1x - 1$ and not integrable near $0$. Any $F$ with $|f_k| \leq F$ lies above the red graph, so no $F \in L$ exists; only Fatou's inequality survives, and it is strict.*
+
+> [!remark]- Connections
+> - The MATH 451 row this table replaces: $f_n \to f$ uniformly on $[a,b]$ gives $\lim \int f_n = \int f$ ([[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]; [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§12b Simple Functions and Modes of Convergence#^def-12-9|Def. §12.9]]).
+> - Why a new integral was needed for such theorems: [[§8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]] (Riemann integrable functions are not closed under pointwise limits).
 
 ## Absolute Convergence of Series in $L^1$
 

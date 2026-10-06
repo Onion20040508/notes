@@ -99,7 +99,7 @@ It is quite possible that the one-sided limits exist but are different. This hap
 >
 > **(b)** $f(x) = 1/x$ cannot be sectionally continuous on any interval that contains $0$, or even has $0$ as an endpoint, because it is not bounded near $x = 0$.
 >
-> **(c)** $f(x) = x$, $-1 < x < 1$, is continuous on that interval. Its periodic extension ([[§7 Arbitrary Period and Half-Range Expansions#^ex-7-3|Example §7.3]]) is sectionally continuous, and sectionally smooth, but not continuous: it jumps at $x = \pm1, \pm3, \ldots$
+> **(c)** $f(x) = x$, $-1 < x < 1$, is continuous on that interval. Its periodic extension ([[§7a Even and Odd Functions; Half-Range Expansions#^ex-7-3|Example §7.3]]) is sectionally continuous, and sectionally smooth, but not continuous: it jumps at $x = \pm1, \pm3, \ldots$
 >
 > **(d)** $f(x) = |x|^{1/2}$ is continuous but not sectionally smooth on any interval containing $0$: $|f'(x)| = \frac12|x|^{-1/2} \to \infty$ as $x \to 0$, a vertical tangent.
 >
@@ -196,7 +196,7 @@ except perhaps at a finite number of points in any finite interval (once removab
 >
 > **(b)** At $x = 0$: $\bar f(0-) = 0 = \bar f(0+) = f(0)$, so $\bar f$ is continuous. At $x = \pm\pi$ (and every odd multiple of $\pi$): $\bar f(\pi-) = 2\pi$ and $\bar f(\pi+) = f(-\pi+) = \pi$, a jump discontinuity, since the one-sided limits exist and differ. There are no other discontinuities.
 >
-> **(c)** Write $f(x) = \frac{x}{2} + \frac{3|x|}{2}$ on $(-\pi, \pi)$ (check: $\frac x2 + \frac{3x}{2} = 2x$ for $x > 0$, $\frac x2 - \frac{3x}{2} = -x$ for $x < 0$), the odd plus the even part ([[§7 Arbitrary Period and Half-Range Expansions#^prop-7-2|Proposition §7.2]]). By [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-4|Theorem §7.4]], the odd part contributes only sines and the even part only cosines:
+> **(c)** Write $f(x) = \frac{x}{2} + \frac{3|x|}{2}$ on $(-\pi, \pi)$ (check: $\frac x2 + \frac{3x}{2} = 2x$ for $x > 0$, $\frac x2 - \frac{3x}{2} = -x$ for $x < 0$), the odd plus the even part ([[§7a Even and Odd Functions; Half-Range Expansions#^prop-7-2|Proposition §7.2]]). By [[§7a Even and Odd Functions; Half-Range Expansions#^thm-7-4|Theorem §7.4]], the odd part contributes only sines and the even part only cosines:
 >
 > $$
 > a_0 = \frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{3|x|}{2}\,dx = \frac{3}{2\pi}\int_0^{\pi} x\,dx = \frac{3\pi}{4}, \qquad

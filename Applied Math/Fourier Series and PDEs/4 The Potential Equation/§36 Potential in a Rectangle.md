@@ -85,7 +85,7 @@ $$
 > u(x, 0) = \sum_{n=1}^{\infty} a_n\sin\Big(\frac{n\pi x}{a}\Big) = f_1(x), \qquad 0 < x < a , \qquad (10)
 > $$
 >
-> a Fourier sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]], half-range expansions): the $a_n$ must be the sine coefficients of $f_1$.
+> a Fourier sine series ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Definition §7.4]], half-range expansions): the $a_n$ must be the sine coefficients of $f_1$.
 >
 > **The condition at $y = b$.** Condition (3) reads
 >
@@ -111,7 +111,7 @@ $$
 
 ^pf-36-1
 
-*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series), [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]] (hyperbolic identities)
+*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series), [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]] (hyperbolic identities)
 
 > [!remark]- Connections
 > - Why the series really is harmonic inside: for $\delta \le y \le b - \delta$, $\big|\sinh(\lambda_ny)/\sinh(\lambda_nb)\big| \le 2e^{-\lambda_n(b - y)} \le 2e^{-n\pi\delta/a}$ (for $\lambda_n b \ge 1$, say), and the same for the other factor, while $|a_n|, |c_n| \le 2\max|f_i|$. Differentiating term by term only brings in powers of $\lambda_n$, so the series and its differentiated series are dominated by $\sum n^2e^{-n\pi\delta/a} < \infty$; by the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], they converge uniformly and (with [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]) define a continuous function that may be differentiated term by term. At $y = 0$ and $y = b$ the series reduce to the Fourier sine series of $f_1$, $f_2$, whose convergence is the subject of [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].
@@ -167,7 +167,7 @@ $$
 > u\Big(\frac a2, \frac b2\Big) = \frac{8}{\pi^2}\sum_{n \text{ odd}}\frac{1}{n^2\cosh\big(\frac{n\pi b}{2a}\big)} \approx \begin{cases} 0.325, & b = a, \\ 0.070, & b = 2a, \\ 0.630, & b = a/2. \end{cases}
 > $$
 >
-> The terms decrease very fast: for $b = a$ the first term alone gives $0.323$. The center is a saddle point of $u$, as the [[§39 Potential in a Disk#^thm-39-5|maximum principle]] requires: $u$ increases toward the top and bottom edges, where the data are largest, and decreases toward the sides, where $u = 0$ (figure below).
+> The terms decrease very fast: for $b = a$ the first term alone gives $0.323$. The center is a saddle point of $u$, as the [[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-5|maximum principle]] requires: $u$ increases toward the top and bottom edges, where the data are largest, and decreases toward the sides, where $u = 0$ (figure below).
 >
 > *Powers: 4.2, Example; Exercises 4.2.2 and 4.2.3*
 
@@ -175,6 +175,8 @@ $$
 
 ![[m341-36-1.svg]]
 *Level curves $u = 0.1, 0.2, \ldots, 0.9$ of the solution (12) in the square $a = b = 1$, computed from the series in its symmetric form. Curves with $u \ge 0.4$ (red) close up against the top and bottom edges around the peaks of the triangular data; the curves with $u \le 0.3$ (blue) run from top to bottom near the sides, where $u = 0$. The two families are separated by the saddle point in the center, where $u \approx 0.325$.*
+
+*Chain: the tent function earlier in [[§34a Plucked, Struck, Midterm, Hanging and Nonuniform Strings#The Plucked String|Chapter 3]] (the plucked string) · later in [[§60★ The Tent Function|Chapter 7]] (numerically).*
 
 ## The General Dirichlet Problem
 
@@ -234,7 +236,7 @@ $$
 
 ^pf-36-2
 
-*Uses:* [[§36 Potential in a Rectangle#^thm-36-1|§36.1]], [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]] (Wronskian test), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series)
+*Uses:* [[§36 Potential in a Rectangle#^thm-36-1|§36.1]], [[§1★ Homogeneous Linear Equations#^thm-1-3|§1.3]] (Wronskian test), [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]] (sine series)
 
 In the individual problems for $u_1$ and $u_2$, separation of variables works because homogeneous conditions on parallel sides of the rectangle translate into conditions on one of the factor functions. The same splitting works for other kinds of boundary conditions ([[§37 Further Examples for a Rectangle#^rem-37-1|§37]]).
 

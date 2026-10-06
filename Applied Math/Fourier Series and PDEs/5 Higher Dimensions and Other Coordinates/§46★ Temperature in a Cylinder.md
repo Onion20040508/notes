@@ -80,23 +80,23 @@ which will be used again and again: at the singular point $r = 0$ of (6) it take
 ^prop-46-1
 
 > [!proof]+ Proof
-> **The separation constant is negative.** (Powers names the constant $-\lambda^2$ without discussing the other signs; here is why they give nothing.) If the constant is $0$, then $(r\phi')' = 0$, so $r\phi' = B$ and $\phi = A + B\ln r$; boundedness at $0$ forces $B = 0$, and $\phi(a) = A = 0$. If the constant is positive, $+\mu^2$ with $\mu > 0$, then $(r\phi')' - \mu^2r\phi = 0$ is the modified Bessel equation of order $0$ ([[§45★ Bessel's Equation#^def-45-4|Definition §45.4]]), whose solution bounded at $r = 0$ is $AI_0(\mu r)$ with
+> **The separation constant is negative.** (Powers names the constant $-\lambda^2$ without discussing the other signs; here is why they give nothing.) If the constant is $0$, then $(r\phi')' = 0$, so $r\phi' = B$ and $\phi = A + B\ln r$; boundedness at $0$ forces $B = 0$, and $\phi(a) = A = 0$. If the constant is positive, $+\mu^2$ with $\mu > 0$, then $(r\phi')' - \mu^2r\phi = 0$ is the modified Bessel equation of order $0$ ([[§45★ Properties of Bessel Functions#^def-45-4|Definition §45.4]]), whose solution bounded at $r = 0$ is $AI_0(\mu r)$ with
 >
 > $$
 > I_0(\mu r) = \sum_{m=0}^{\infty} \frac{1}{(m!)^2}\Big(\frac{\mu r}{2}\Big)^{2m} \ge 1
 > $$
 >
-> ([[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]); so $\phi(a) = AI_0(\mu a) = 0$ forces $A = 0$.
+> ([[§45★ Properties of Bessel Functions#^thm-45-10|Theorem §45.10]]); so $\phi(a) = AI_0(\mu a) = 0$ forces $A = 0$.
 >
 > **The constant $-\lambda^2$, $\lambda > 0$.** The general solution of (6) is $\phi = AJ_0(\lambda r) + BY_0(\lambda r)$. Since $|Y_0(\lambda r)| \to \infty$ as $r \to 0$ while $J_0(0) = 1$, boundedness at $r = 0$ requires $B = 0$. Then (7) reads $AJ_0(\lambda a) = 0$, and a nonzero solution needs $A \ne 0$, so $J_0(\lambda a) = 0$: $\lambda a$ must be one of the zeros $\alpha_n$, giving (9). Conversely each $\phi_n = J_0(\lambda_n r)$ solves the problem. ($J_0$ is even, so negative values of $\lambda$ give nothing new.)
 >
 > **Zeros.** $J_0(\lambda_n r) = 0$ for $0 < r < a$ exactly when $\lambda_n r = \alpha_k$ for some $\alpha_k < \alpha_n$, that is, $r = \alpha_k/\lambda_n = (\alpha_k/\alpha_n)a$ with $k < n$.
 >
-> (The same problem, in Powers' Exercises 5.5.1–5.5.2, is [[§45★ Bessel's Equation#^ex-45-2|Example §45.2]].)
+> (The same problem, in Powers' Exercises 5.5.1–5.5.2, is [[§45★ Properties of Bessel Functions#^ex-45-2|Example §45.2]].)
 
 ^pf-46-1
 
-*Uses:* [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]] (the zeros $\alpha_n$), [[§45★ Bessel's Equation#^def-45-4|Def. §45.4]], [[§45★ Bessel's Equation#^def-45-new1|Def. §45.4]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]]
+*Uses:* [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Properties of Bessel Functions#^thm-45-6|§45.6]] (the zeros $\alpha_n$), [[§45★ Properties of Bessel Functions#^def-45-4|Def. §45.4]], [[§45★ Properties of Bessel Functions#^def-45-new1|Def. §45.4]], [[§45★ Properties of Bessel Functions#^thm-45-10|§45.10]]
 
 ![[m341-46-2.svg]]
 *The first three eigenfunctions $J_0(\lambda_n r)$, $\lambda_n = \alpha_n/a$, of Proposition §46.1. All equal $1$ on the axis and $0$ at the wall; $J_0(\lambda_n r)$ has $n - 1$ interior zeros, like $\sin(n\pi x/a)$, but its oscillations are not equally spaced and their amplitude decreases away from the axis.*
@@ -220,7 +220,7 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 > 3. Impose the condition at $r = a$. For $\phi(a) = 0$ it gives $\lambda_n = \alpha_n/a$ with $J_0(\alpha_n) = 0$; for $\phi'(a) = 0$, see [[§48★ Some Applications of Bessel Functions#^prop-48-2|Proposition §48.2]].
 > 4. Solve for the time factors ($\exp(-\lambda_n^2kt)$ for heat, $\cos$ and $\sin(\lambda_nct)$ for waves) and superpose.
 > 5. Find the coefficients from the initial conditions with the weighted orthogonality of Proposition §46.2: formula (12), with the norm of Proposition §46.6.
-> 6. Evaluate the integrals with $\frac{d}{dx}\big(xJ_1(x)\big) = xJ_0(x)$ ([[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]]) and the zeros tabulated in [[§45★ Bessel's Equation#^thm-45-6|Theorem §45.6]].
+> 6. Evaluate the integrals with $\frac{d}{dx}\big(xJ_1(x)\big) = xJ_0(x)$ ([[§46★ Temperature in a Cylinder#^lem-46-5|Lemma §46.5]]) and the zeros tabulated in [[§45★ Properties of Bessel Functions#^thm-45-6|Theorem §45.6]].
 
 ^rem-46-1
 
@@ -242,11 +242,11 @@ Two facts about Bessel functions evaluate the integrals in (12) for simple $f$.
 ^lem-46-5
 
 > [!proof]+ Proof
-> Both identities are proved from the series in [[§45★ Bessel's Equation#^thm-45-7|Theorem §45.7]]: $J_0' = -J_1$ is part (b), and $\frac{d}{dx}\big(xJ_1(x)\big) = xJ_0(x)$ is part (d) with $\mu = 1$. Integrating the second identity from $0$ to $b$ gives $\int_0^b xJ_0(x)\,dx = bJ_1(b) - 0\cdot J_1(0) = bJ_1(b)$ ([[§45★ Bessel's Equation#^cor-45-8|Corollary §45.8]] with $\mu = 0$), and the chain rule gives $\frac{d}{dr}J_0(\lambda r) = \lambda J_0'(\lambda r) = -\lambda J_1(\lambda r)$.
+> Both identities are proved from the series in [[§45★ Properties of Bessel Functions#^thm-45-7|Theorem §45.7]]: $J_0' = -J_1$ is part (b), and $\frac{d}{dx}\big(xJ_1(x)\big) = xJ_0(x)$ is part (d) with $\mu = 1$. Integrating the second identity from $0$ to $b$ gives $\int_0^b xJ_0(x)\,dx = bJ_1(b) - 0\cdot J_1(0) = bJ_1(b)$ ([[§45★ Properties of Bessel Functions#^cor-45-8|Corollary §45.8]] with $\mu = 0$), and the chain rule gives $\frac{d}{dr}J_0(\lambda r) = \lambda J_0'(\lambda r) = -\lambda J_1(\lambda r)$.
 
 ^pf-46-5
 
-*Uses:* [[§45★ Bessel's Equation#^thm-45-7|§45.7]], [[§45★ Bessel's Equation#^cor-45-8|§45.8]]
+*Uses:* [[§45★ Properties of Bessel Functions#^thm-45-7|§45.7]], [[§45★ Properties of Bessel Functions#^cor-45-8|§45.8]]
 
 > [!theorem] Proposition §46.6: The Norm of J₀(λₙr)
 > If $\phi(r) = J_0(\lambda r)$ and $\lambda$ is chosen so that $\phi(a) = 0$, then

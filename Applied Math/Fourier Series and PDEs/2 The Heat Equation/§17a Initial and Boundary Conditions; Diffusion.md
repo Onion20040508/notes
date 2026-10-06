@@ -105,7 +105,7 @@ The **boundary conditions** describe what happens at the ends. Let $x_0$ denote 
 
 ^pf-17-3
 
-*Uses:* [[§17 Derivation and Boundary Conditions#^def-17-2|Def. §17.2]], [[§17 Derivation and Boundary Conditions#^def-17-7|Def. §17.7]]
+*Uses:* [[§17 Derivation and Boundary Conditions#^def-17-2|Def. §17.2]], [[§17a Initial and Boundary Conditions; Diffusion#^def-17-7|Def. §17.7]]
 
 > [!remark]- Connections
 > - Newton's law of cooling for a body of uniform temperature, $dT/dt = k(T - T_s)$, and its exponential solution: [[§21 Exponential Growth and Decay#^def-21-4|Calc Def. §21.4]], [[§21 Exponential Growth and Decay#^cor-21-2|Calc Cor. §21.2]], [[§6 Modeling with First-Order Differential Equations#^ex-6-5|331 Ex. §6.5]]. Here the same law acts only at the surface, and the interior is governed by conduction.
@@ -276,10 +276,10 @@ The same equations have a second, completely different but equally important phy
 ^thm-17-5
 
 > [!proof]+ Proof
-> The argument of [[§17 Derivation and Boundary Conditions#^prop-17-1|Proposition §17.1]] applies with mass in place of heat (per unit area of the layer, so $A$ cancels, and with $\rho c$ replaced by $1$): rearrange (17) as $\frac{q(x, t) - q(x + \Delta x, t)}{\Delta x} + g = u_t$ and let $\Delta x \to 0$ to get (18). Substituting $q = -Du_x$ with $D$ constant gives $Du_{xx} + g = u_t$; divide by $D$ for (21). Finally (23) is (22) with Fick's law $q(a, t) = -Du_x(a, t)$, exactly as in [[§17 Derivation and Boundary Conditions#^prop-17-3|Proposition §17.3]].
+> The argument of [[§17 Derivation and Boundary Conditions#^prop-17-1|Proposition §17.1]] applies with mass in place of heat (per unit area of the layer, so $A$ cancels, and with $\rho c$ replaced by $1$): rearrange (17) as $\frac{q(x, t) - q(x + \Delta x, t)}{\Delta x} + g = u_t$ and let $\Delta x \to 0$ to get (18). Substituting $q = -Du_x$ with $D$ constant gives $Du_{xx} + g = u_t$; divide by $D$ for (21). Finally (23) is (22) with Fick's law $q(a, t) = -Du_x(a, t)$, exactly as in [[§17a Initial and Boundary Conditions; Diffusion#^prop-17-3|Proposition §17.3]].
 
 ^pf-17-5
 
-*Uses:* [[§17 Derivation and Boundary Conditions#^prop-17-1|§17.1]], [[§17 Derivation and Boundary Conditions#^def-17-10|Def. §17.10]], [[§17 Derivation and Boundary Conditions#^prop-17-3|§17.3]]
+*Uses:* [[§17 Derivation and Boundary Conditions#^prop-17-1|§17.1]], [[§17a Initial and Boundary Conditions; Diffusion#^def-17-10|Def. §17.10]], [[§17a Initial and Boundary Conditions; Diffusion#^prop-17-3|§17.3]]
 
 So everything said about the heat equation, with $k$ replaced by $D$, applies to diffusion, and conversely.

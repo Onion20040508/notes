@@ -237,7 +237,7 @@ $$
 
 > [!remark]- Connections
 > - The normalized functions $\frac{2}{\sqrt{ab}}\phi_{mn}$ form an orthonormal set by (16), and (17) gives the coefficients of $f$ with respect to it. Completeness of this set is the statement that (15) holds in mean square, and is equivalent to Parseval's equality $\frac{4}{ab}\iint f^2 = \sum\sum a_{mn}^2$: [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]].
-> - The two-dimensional analogue of the half-range sine series ([[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Definition §7.4]]). The $\phi_{mn}$ are eigenvectors of the symmetric operator $-\nabla^2$ with zero boundary values, and orthogonality for distinct eigenvalues is the infinite-dimensional analogue of [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]; for a general region it is proved with Green's identity in [[§44★ Problems in Polar Coordinates#^thm-44-3|Theorem §44.3]].
+> - The two-dimensional analogue of the half-range sine series ([[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Definition §7.4]]). The $\phi_{mn}$ are eigenvectors of the symmetric operator $-\nabla^2$ with zero boundary values, and orthogonality for distinct eigenvalues is the infinite-dimensional analogue of [[§22 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]; for a general region it is proved with Green's identity in [[§44★ Problems in Polar Coordinates#^thm-44-3|Theorem §44.3]].
 
 > [!remark] Remark: Method — Heat Problems in a Rectangle
 > To solve $u_t = k(u_{xx} + u_{yy})$ in $0 < x < a$, $0 < y < b$ with given edge temperatures and initial temperature $h(x, y)$:

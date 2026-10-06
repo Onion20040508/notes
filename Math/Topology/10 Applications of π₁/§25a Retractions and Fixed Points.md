@@ -135,7 +135,7 @@ tags: [topology, math590]
 > - The full argument, with the retraction constructed: [[§28 Fundamental Group of Some Surfaces#^thm-28-5|π₁(Σ₂) is Non-Abelian]].
 > - $\pi_1(S^1 \vee S^1) \cong F_2$: [[§29 The Seifert–van Kampen Theorem#^ex-29-2|The Figure Eight via van Kampen]].
 
-*Chain (genus 2 surface): later in [[§28 Fundamental Group of Some Surfaces#^def-28-5|Chapter 11]] · [[Double torus|all appearances]]*
+*Chain (genus 2 surface): later in [[§29a The Projective Plane, the Figure Eight, the Double Torus and the Torus|Chapter 11]] · [[Double torus|all appearances]]*
 
 > [!definition] Definition §26.2: Closed Balls $B^n$
 > The **closed unit ball** in $\mathbb{R}^n$ is $B^n = \{x \in \mathbb{R}^n : \|x\| \leq 1\}$.

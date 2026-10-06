@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 6 · MAT 250 HW3 (Exercises 6.1, 6.3, 6.4, 6.6) · MAT 200 HW1 (Problem 5).*
 
-This section sets up the vocabulary of sets that the rest of the subject is written in: how sets are specified, when two sets are equal, subsets, and the operations of intersection, union, difference and complement (the operations in [[§6a Operations on Sets|§6a]]). Each operation is defined by a logical connective ([[§1 The Language of Mathematics|§1]]), so every identity between sets comes from a logical equivalence between statements. The proofs in this section show the three ways of proving such identities: truth tables, element-chasing, and algebra with identities already proved.
+This section sets up the vocabulary of sets that the rest of the subject is written in: how sets are specified, when two sets are equal, subsets, and the operations of intersection, union, difference and complement (the operations in [[§6a Operations on Sets|§6a]]). Each operation is defined by a logical connective ([[§1 The Language of Mathematics|§1]]), so every identity between sets comes from a logical equivalence between statements. The proofs in this section and its continuation [[§6a Operations on Sets|§6a]] show the three ways of proving such identities: truth tables, element-chasing, and algebra with identities already proved.
 
 ## 6.1 Sets
 

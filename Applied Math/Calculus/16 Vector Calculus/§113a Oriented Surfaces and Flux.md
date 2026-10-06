@@ -149,9 +149,9 @@ which points in the same direction as the position vector: outward from the sphe
 
 ^pf-113-3
 
-*Uses:* [[§113 Surface Integrals#^def-113-7|Def. §113.7]], [[§113 Surface Integrals#^def-113-5|Def. §113.5]], [[§113 Surface Integrals#^thm-113-1|§113.1]]
+*Uses:* [[§113a Oriented Surfaces and Flux#^def-113-7|Def. §113.7]], [[§113a Oriented Surfaces and Flux#^def-113-5|Def. §113.5]], [[§113 Surface Integrals#^thm-113-1|§113.1]]
 
-Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\,dt$ ([[§108 Line Integrals#^def-108-8|Definition §108.8]]): in both, the length factor cancels.
+Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\,dt$ ([[§108a Line Integrals of Vector Fields#^def-108-8|Definition §108.8]]): in both, the length factor cancels.
 
 > [!theorem] Theorem §113.4: Flux through a Graph
 > If $S$ is the graph $z = g(x, y)$, $(x, y) \in D$, with the upward orientation, and $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$, then
@@ -177,7 +177,7 @@ Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mat
 
 ^pf-113-4
 
-*Uses:* [[§113 Surface Integrals#^thm-113-3|§113.3]], [[§113 Surface Integrals#^thm-113-2|§113.2]], [[§113 Surface Integrals#^def-113-5|Def. §113.5]]
+*Uses:* [[§113a Oriented Surfaces and Flux#^thm-113-3|§113.3]], [[§113 Surface Integrals#^thm-113-2|§113.2]], [[§113a Oriented Surfaces and Flux#^def-113-5|Def. §113.5]]
 
 > [!remark] Remark: Method — Computing a Flux Integral
 > 1. **Parametrize $S$** (graph, cylindrical or spherical coordinates, plane) and find the parameter domain $D$. For a closed or piecewise-smooth surface, list the pieces.
@@ -297,4 +297,4 @@ Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mat
 
 ^def-113-new3
 
-For example, if the field of [[§113 Surface Integrals#^ex-113-3|Example §113.3(b)]] were an electric field, the charge enclosed by the unit sphere would be $Q = \frac43\pi\varepsilon_0$. And if the temperature in a metal ball is $u = C(x^2 + y^2 + z^2)$, then on the sphere $x^2 + y^2 + z^2 = a^2$, with outward normal $\mathbf{n} = \frac1a\langle x, y, z \rangle$, $\mathbf{F} \cdot \mathbf{n} = -KC\langle 2x, 2y, 2z \rangle \cdot \frac1a\langle x, y, z \rangle = -2aKC$, so the rate of heat flow across the sphere is $-2aKC \cdot 4\pi a^2 = -8KC\pi a^3$ (Stewart, Example 16.7.6).
+For example, if the field of [[§113a Oriented Surfaces and Flux#^ex-113-3|Example §113.3(b)]] were an electric field, the charge enclosed by the unit sphere would be $Q = \frac43\pi\varepsilon_0$. And if the temperature in a metal ball is $u = C(x^2 + y^2 + z^2)$, then on the sphere $x^2 + y^2 + z^2 = a^2$, with outward normal $\mathbf{n} = \frac1a\langle x, y, z \rangle$, $\mathbf{F} \cdot \mathbf{n} = -KC\langle 2x, 2y, 2z \rangle \cdot \frac1a\langle x, y, z \rangle = -2aKC$, so the rate of heat flow across the sphere is $-2aKC \cdot 4\pi a^2 = -8KC\pi a^3$ (Stewart, Example 16.7.6).

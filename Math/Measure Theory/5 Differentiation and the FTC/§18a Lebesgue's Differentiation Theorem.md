@@ -190,7 +190,7 @@ A monotone function is differentiable almost everywhere. The proof compares the 
 *Uses:* [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]]
 
 > [!remark] Remark
-> The inequality in (iii) can be strict: for the [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]] (“devil's staircase”), $f$ is increasing and continuous on $[0,1]$ with $f(0) = 0$, $f(1) = 1$, but $f' = 0$ a.e., so $\int_0^1 f'\,dx = 0 < 1 = f(1) - f(0)$. A similar statement holds for decreasing functions.
+> The inequality in (iii) can be strict: for the [[§18c Absolute Continuity#^ex-18-4|Cantor function]] (“devil's staircase”), $f$ is increasing and continuous on $[0,1]$ with $f(0) = 0$, $f(1) = 1$, but $f' = 0$ a.e., so $\int_0^1 f'\,dx = 0 < 1 = f(1) - f(0)$. A similar statement holds for decreasing functions.
 
 ^rem-18-4
 

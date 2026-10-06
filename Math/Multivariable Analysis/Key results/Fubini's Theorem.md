@@ -8,7 +8,7 @@ tags: [multivariable-analysis, hub]
 ![[§15 Multivariable Integration#^thm-15-8]]
 
 ## Treated in
-- [[§15 Multivariable Integration#^thm-15-8|Theorem §15.8: Fubini's Theorem — Rectangle Case]], in [[§15 Multivariable Integration]]
+- [[§15c Fubini's Theorem#^thm-15-8|Theorem §15.8: Fubini's Theorem — Rectangle Case]], in [[§15c Fubini's Theorem]]
 
 ## Its proof uses
 - [[§15 Multivariable Integration#^rem-15-6|Remark: Evaluating the Integral]]

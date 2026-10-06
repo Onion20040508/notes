@@ -111,7 +111,7 @@ $$
 $$
 
 > [!theorem] Proposition §47.2: Eigenfunctions of the Disk
-> Let $\alpha_{mn}$ denote the $n$th positive zero of $J_m$, so that $J_m(\alpha_{mn}) = 0$ (table in [[§45★ Bessel's Equation#^thm-45-6|Theorem §45.6]]), and let
+> Let $\alpha_{mn}$ denote the $n$th positive zero of $J_m$, so that $J_m(\alpha_{mn}) = 0$ (table in [[§45★ Properties of Bessel Functions#^thm-45-6|Theorem §45.6]]), and let
 >
 > $$
 > \lambda_{mn} = \frac{\alpha_{mn}}{a}, \qquad m = 0, 1, 2, \ldots, \quad n = 1, 2, 3, \ldots .
@@ -138,11 +138,11 @@ $$
 > [!proof]+ Proof
 > **The angular problem (19).** As observed in [[§39 Potential in a Disk#^prop-39-1|Proposition §39.1]] and [[§44★ Problems in Polar Coordinates#^thm-44-2|Theorem §44.2]], the periodic problem has the solutions $\mu_0^2 = 0$, $Q_0 = 1$, and $\mu_m^2 = m^2$, $Q_m = \cos(m\theta)$ and $\sin(m\theta)$, $m = 1, 2, 3, \ldots$; a periodic solution of $Q'' + \mu^2Q = 0$ needs $\mu$ to be an integer.
 >
-> **The radial problem (20).** With $\mu = m$, (20) is Bessel's equation of order $m$, with general solution $R(r) = CJ_m(\lambda r) + DY_m(\lambda r)$ ([[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]]). Since $Y_m(\lambda r)$ is unbounded at $r = 0$, boundedness forces $D = 0$, and the constant $C$ can be dropped, since any multiple of a solution is a solution: $R(r) = J_m(\lambda r)$. The boundary condition becomes $R(a) = J_m(\lambda a) = 0$, so $\lambda a$ must be a root of $J_m(\alpha) = 0$: $\lambda = \alpha_{mn}/a$. Multiplying $R$ and $Q$ gives (21) and (22). (As in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]], a separation constant $-\lambda^2 \ge 0$ produces no nonzero solutions: for $\lambda = 0$ the bounded solutions of $(rR')' - \frac{m^2}{r}R = 0$ are the multiples of $r^m$, which do not vanish at $r = a$, and a positive constant leads to the modified Bessel function $I_m$, which has no positive zeros, [[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]. See also [[§44★ Problems in Polar Coordinates#^rem-44-2|the remark on positive eigenvalues in §44]].)
+> **The radial problem (20).** With $\mu = m$, (20) is Bessel's equation of order $m$, with general solution $R(r) = CJ_m(\lambda r) + DY_m(\lambda r)$ ([[§45★ Bessel's Equation#^thm-45-5|Theorem §45.5]]). Since $Y_m(\lambda r)$ is unbounded at $r = 0$, boundedness forces $D = 0$, and the constant $C$ can be dropped, since any multiple of a solution is a solution: $R(r) = J_m(\lambda r)$. The boundary condition becomes $R(a) = J_m(\lambda a) = 0$, so $\lambda a$ must be a root of $J_m(\alpha) = 0$: $\lambda = \alpha_{mn}/a$. Multiplying $R$ and $Q$ gives (21) and (22). (As in [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]], a separation constant $-\lambda^2 \ge 0$ produces no nonzero solutions: for $\lambda = 0$ the bounded solutions of $(rR')' - \frac{m^2}{r}R = 0$ are the multiples of $r^m$, which do not vanish at $r = a$, and a positive constant leads to the modified Bessel function $I_m$, which has no positive zeros, [[§45★ Properties of Bessel Functions#^thm-45-10|Theorem §45.10]]. See also [[§44★ Problems in Polar Coordinates#^rem-44-2|the remark on positive eigenvalues in §44]].)
 
 ^pf-47-2
 
-*Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]], [[§44★ Problems in Polar Coordinates#^thm-44-2|§44.2]], [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]]
+*Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Properties of Bessel Functions#^thm-45-6|§45.6]], [[§45★ Properties of Bessel Functions#^thm-45-10|§45.10]], [[§44★ Problems in Polar Coordinates#^thm-44-2|§44.2]], [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]]
 
 > [!definition] Definition §47.1: Standing Waves of the Membrane
 > The product solutions of (11)–(14),
@@ -284,7 +284,7 @@ The coefficients come from an orthogonality principle.
 > [!example] Example §47.1: The Overtones of a Drum Are Not Harmonic
 > List the lowest frequencies of a circular membrane as multiples of the lowest one, and compare with a string.
 >
-> The frequencies are $\alpha_{mn}c/a$. From the zeros of $J_0, \ldots, J_5$ (the table in [[§45★ Bessel's Equation#^thm-45-6|Theorem §45.6]], with $\alpha_{41} = 7.588$ and $\alpha_{51} = 8.771$ added), in increasing order:
+> The frequencies are $\alpha_{mn}c/a$. From the zeros of $J_0, \ldots, J_5$ (the table in [[§45★ Properties of Bessel Functions#^thm-45-6|Theorem §45.6]], with $\alpha_{41} = 7.588$ and $\alpha_{51} = 8.771$ added), in increasing order:
 >
 > | mode $(m, n)$ | $(0,1)$ | $(1,1)$ | $(2,1)$ | $(0,2)$ | $(3,1)$ | $(1,2)$ | $(4,1)$ | $(2,2)$ | $(0,3)$ | $(5,1)$ |
 > |---|---|---|---|---|---|---|---|---|---|---|

@@ -8,7 +8,7 @@ tags: [multivariable-analysis, hub]
 ![[§15 Multivariable Integration#^thm-15-17]]
 
 ## Treated in
-- [[§15 Multivariable Integration#^thm-15-17|Theorem §15.17: Change of Variables — General Jordan Measurable Domains]], in [[§15 Multivariable Integration]]
+- [[§15e Change of Variables on General Domains#^thm-15-17|Theorem §15.17: Change of Variables — General Jordan Measurable Domains]], in [[§15e Change of Variables on General Domains]]
 
 ## Its proof uses
 - [[§15 Multivariable Integration#^def-15-11|Definition §15.11: The Integral]]

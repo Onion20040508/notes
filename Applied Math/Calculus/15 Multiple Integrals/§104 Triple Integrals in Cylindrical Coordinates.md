@@ -160,7 +160,7 @@ The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cyli
 > E = \{(r, \theta, z) \mid 0 \le \theta \le \pi,\ 0 \le r \le 1,\ 1 - r^2 \le z \le 4\} .
 > $$
 >
-> The density is $\rho(x, y, z) = K\sqrt{x^2 + y^2} = Kr$ for a constant $K$. By Formula 15.6.13 ([[§103 Triple Integrals#^def-103-5|Definition §103.5]]),
+> The density is $\rho(x, y, z) = K\sqrt{x^2 + y^2} = Kr$ for a constant $K$. By Formula 15.6.13 ([[§103a Applications of Triple Integrals#^def-103-5|Definition §103.5]]),
 >
 > $$
 > \begin{aligned}

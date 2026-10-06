@@ -287,6 +287,8 @@ The graph of $\phi$ for negative arguments is that of $h$, reflected and rescale
 
 ^ex-34-3
 
+*Chain: the Gaussian earlier in [[§15★ Complex Methods#^ex-15-3|Chapter 1]] (its Fourier transform) · [[§28b Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian#The Gaussian|Chapter 2]] (a heat solution).*
+
 > [!example] Example §34.4: The Fourier Integral and d'Alembert's Form Agree
 > Solve the semi-infinite string problem (1)–(4) with $f(x) = xe^{-x}$, $g(x) \equiv 0$, in both forms.
 >

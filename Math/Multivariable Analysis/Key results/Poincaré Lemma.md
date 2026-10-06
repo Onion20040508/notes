@@ -8,7 +8,7 @@ tags: [multivariable-analysis, hub]
 ![[§22 The Algebra of Differential Forms#^prop-22-12]]
 
 ## Treated in
-- [[§22 The Algebra of Differential Forms#^prop-22-12|Proposition §22.12: Poincaré Lemma]], in [[§22 The Algebra of Differential Forms]]
+- [[§22b Closed and Exact Forms#^prop-22-12|Proposition §22.12: Poincaré Lemma]], in [[§22b Closed and Exact Forms]]
 
 ## Its proof uses
 - (no proof in the notes)

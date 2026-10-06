@@ -27,4 +27,4 @@ Its speed is the constant $\sqrt2$, which gives its length and its reparametriza
 
 Finally its TNB frame, normal and osculating planes, curvature and torsion are all computed:
 
-![[§88a Curvature, the TNB Frame and Torsion#^ex-88-5]]
+![[§88a The TNB Frame and Torsion#^ex-88-5]]

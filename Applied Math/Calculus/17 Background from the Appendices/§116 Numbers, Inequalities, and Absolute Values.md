@@ -49,7 +49,7 @@ The background on real numbers that the rest of the course takes for granted: th
 
 ^def-116-2
 
-*That the real line has no gaps — every nonempty set of reals bounded above has a least upper bound — is the Completeness Axiom, which Stewart states in Section 11.1: [[§69 Sequences#^def-69-new1|Definition §69.8]].*
+*That the real line has no gaps — every nonempty set of reals bounded above has a least upper bound — is the Completeness Axiom, which Stewart states in Section 11.1: [[§69a Monotonic and Bounded Sequences#^def-69-new1|Definition §69.8]].*
 
 > [!definition] Definition §116.3: Order
 > $a$ **is less than** $b$, written $a < b$ (equivalently $b > a$, "$b$ is greater than $a$"), if $b - a$ is a positive number. Geometrically, $a$ lies to the left of $b$ on the real line. $a \le b$ (or $b \ge a$) means that $a < b$ or $a = b$. For example $7 < 7.4 < 7.5$, $-3 > -\pi$, $\sqrt2 < 2$, $\sqrt2 \le 2$ and $2 \le 2$ are all true.

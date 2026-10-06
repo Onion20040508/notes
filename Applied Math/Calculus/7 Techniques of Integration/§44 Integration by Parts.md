@@ -276,7 +276,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ^ex-44-5
 
-*Chain:* [[§109 The Fundamental Theorem for Line Integrals#^ex-109-5|Chapter 16]] →
+*Chain:* [[§109a Conservative Vector Fields and Potential Functions#^ex-109-5|Chapter 16]] →
 
 ## Reduction Formulas
 

@@ -11,7 +11,7 @@ tags: [subject, topology]
 ---
 # Topology
 
-MATH 590 (Winter 2026, Linh Truong), following Munkres, *Topology* (2nd ed.). Section numbers §1–§29 are the notes' own. Each section note's `munkres` property gives the matching Munkres section. LaTeX source: `tex/math590_topology_notes.tex`.
+MATH 590 (Winter 2026, Linh Truong), following Munkres, *Topology* (2nd ed.). Section numbers §1–§40 are the notes' own. Each section note's `munkres` property gives the matching Munkres section. LaTeX source: `tex/math590_topology_notes.tex`.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows: results used *on credit* before they are proved in the course.

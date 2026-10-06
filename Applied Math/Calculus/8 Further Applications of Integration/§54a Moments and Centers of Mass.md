@@ -54,14 +54,21 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 *Uses:* [[§54 Applications to Physics and Engineering#^thm-54-3|§54.3]]
 
-> [!definition] Definition §54.2: Moments and Center of Mass on a Line
+> [!definition] Definition §54.2: Moments on a Line
 > Let particles of masses $m_1, \ldots, m_n$ sit at the points $x_1, \ldots, x_n$ of the $x$-axis, and let $m = \sum m_i$ be the total mass. The number $m_i x_i$ is the **moment** of $m_i$ (with respect to the origin), and
 >
 > $$
 > M = \sum_{i=1}^n m_i x_i
 > $$
 >
-> is the **moment of the system about the origin**. The **center of mass** of the system is
+> is the **moment of the system about the origin**.
+>
+> *Stewart: 8.3, Equation 4*
+
+^def-54-2
+
+> [!definition] Definition §54.2: Center of Mass on a Line
+> The **center of mass** of the system is
 >
 > $$
 > \bar x = \frac{\sum_{i=1}^n m_i x_i}{\sum_{i=1}^n m_i} = \frac{M}{m} .
@@ -71,7 +78,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 >
 > *Stewart: 8.3, Equation 4*
 
-^def-54-2
+^def-54-new2
 
 > [!remark] Remark: Why the Center of Mass Is the Balance Point
 > $m \bar x = M$ says: if the whole mass were concentrated at $\bar x$, its moment would equal the moment of the system. Equivalently, the moments *about* $\bar x$ cancel:
@@ -84,14 +91,21 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ^rem-54-2
 
-> [!definition] Definition §54.3: Moments and Center of Mass in the Plane
+> [!definition] Definition §54.3: Moments in the Plane
 > Let particles of masses $m_1, \ldots, m_n$ be located at the points $(x_1, y_1), \ldots, (x_n, y_n)$ of the $xy$-plane, with total mass $m = \sum m_i$. The **moment of the system about the $y$-axis** and the **moment of the system about the $x$-axis** are
 >
 > $$
 > M_y = \sum_{i=1}^n m_i x_i, \qquad M_x = \sum_{i=1}^n m_i y_i .
 > $$
 >
-> $M_y$ measures the tendency of the system to rotate about the $y$-axis, and $M_x$ the tendency to rotate about the $x$-axis. (Each uses the distance *to* the axis: $x_i$ is the distance from $(x_i, y_i)$ to the $y$-axis.) The **center of mass** is $(\bar x, \bar y)$, where
+> $M_y$ measures the tendency of the system to rotate about the $y$-axis, and $M_x$ the tendency to rotate about the $x$-axis. (Each uses the distance *to* the axis: $x_i$ is the distance from $(x_i, y_i)$ to the $y$-axis.)
+>
+> *Stewart: 8.3, Equations 5, 6 and 7*
+
+^def-54-3
+
+> [!definition] Definition §54.3: Center of Mass in the Plane
+> The **center of mass** is $(\bar x, \bar y)$, where
 >
 > $$
 > \bar x = \frac{M_y}{m}, \qquad \bar y = \frac{M_x}{m} .
@@ -101,7 +115,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 >
 > *Stewart: 8.3, Equations 5, 6 and 7*
 
-^def-54-3
+^def-54-new3
 
 > [!example] Example §54.2: Three Point Masses
 > Find the moments and center of mass of the system of masses $3$, $4$ and $8$ at the points $(-1, 1)$, $(2, -1)$ and $(3, 2)$.
@@ -112,7 +126,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 > M_y = 3(-1) + 4(2) + 8(3) = 29, \qquad M_x = 3(1) + 4(-1) + 8(2) = 15 .
 > $$
 >
-> The total mass is $m = 3 + 4 + 8 = 15$, so
+> The total mass is $m = 3 + 4 + 8 = 15$, so by [[§54a Moments and Centers of Mass#^def-54-new3|Definition §54.3]]
 >
 > $$
 > \bar x = \frac{M_y}{m} = \frac{29}{15}, \qquad \bar y = \frac{M_x}{m} = \frac{15}{15} = 1 .
@@ -134,7 +148,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 ^def-54-4
 
 > [!definition] Definition §54.4: Centroid
-> If a lamina of uniform density $\rho$ occupies a region $\mathcal{R}$ of the plane, its center of mass is called the **centroid** of $\mathcal{R}$. (By [[§54a Moments and Centers of Mass#^thm-54-5|Theorem §54.5]] below it depends only on the shape of $\mathcal{R}$, not on $\rho$. A plate of non-uniform density usually balances elsewhere; that case is treated with double integrals in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].)
+> If a lamina of uniform density $\rho$ occupies a region $\mathcal{R}$ of the plane, its center of mass is called the **centroid** of $\mathcal{R}$. (By [[§54a Moments and Centers of Mass#^thm-54-5|Theorem §54.5]] below it depends only on the shape of $\mathcal{R}$, not on $\rho$. A plate of non-uniform density usually balances elsewhere; that case is treated with double integrals in [[§101 Applications of Double Integrals#^def-101-new2|Definition §101.4]].)
 >
 > *Stewart: 8.3 (text and margin note)*
 
@@ -188,7 +202,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ^pf-54-5
 
-*Uses:* [[§54 Applications to Physics and Engineering#^def-54-3|Def. §54.3]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]], [[§35 The Definite Integral#^thm-35-1|§35.1]] (Riemann sums of continuous functions converge to the integral), [[§34 The Area and Distance Problems#^def-34-1|Def. §34.1]] (area under a curve)
+*Uses:* [[§54 Applications to Physics and Engineering#^def-54-3|Def. §54.3]], [[§54a Moments and Centers of Mass#^def-54-new3|Def. §54.3]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]], [[§35 The Definite Integral#^thm-35-1|§35.1]] (Riemann sums of continuous functions converge to the integral), [[§34 The Area and Distance Problems#^def-34-1|Def. §34.1]] (area under a curve)
 
 > [!remark]- Connections
 > - $\bar x = \int_a^b x f(x)\,dx \big/ \int_a^b f(x)\,dx$ is the average of $x$ with weight $f \ge 0$. The Weighted Mean Value Theorem [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] (with the continuous function $x$ and the weight $f$) gives $\bar x \in [a, b]$: the centroid lies over the base of the region.
@@ -253,7 +267,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 *Uses:* [[§54 Applications to Physics and Engineering#^thm-54-5|§54.5]], [[§54 Applications to Physics and Engineering#^rem-54-3|Remark: The Principles Behind the Formulas]], [[§39 Areas Between Curves#^thm-39-1|§39.1]] (area between curves)
 
 > [!remark]- Connections
-> - These are [[§98 Double Integrals Over Rectangles#^def-98-4|iterated integrals]] in disguise: with $\mathcal{R}$ a [[§99 Double Integrals Over General Regions#^def-99-2|type I region]], $\int_{g(x)}^{f(x)} x\,dy = x[f(x) - g(x)]$ and $\int_{g(x)}^{f(x)} y\,dy = \frac12\{[f(x)]^2 - [g(x)]^2\}$, so by Fubini's theorem [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]], $A\bar x = \iint_{\mathcal{R}} x\,dA$ and $A\bar y = \iint_{\mathcal{R}} y\,dA$. That is the definition used for plates of variable density in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].
+> - These are [[§98 Double Integrals Over Rectangles#^def-98-4|iterated integrals]] in disguise: with $\mathcal{R}$ a [[§99 Double Integrals Over General Regions#^def-99-2|type I region]], $\int_{g(x)}^{f(x)} x\,dy = x[f(x) - g(x)]$ and $\int_{g(x)}^{f(x)} y\,dy = \frac12\{[f(x)]^2 - [g(x)]^2\}$, so by Fubini's theorem [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]], $A\bar x = \iint_{\mathcal{R}} x\,dA$ and $A\bar y = \iint_{\mathcal{R}} y\,dA$. That is the definition used for plates of variable density in [[§101 Applications of Double Integrals#^def-101-new2|Definition §101.4]].
 
 > [!example] Example §54.4: Region Between a Line and a Parabola
 > Find the centroid of the region bounded by the line $y = x$ and the parabola $y = x^2$.

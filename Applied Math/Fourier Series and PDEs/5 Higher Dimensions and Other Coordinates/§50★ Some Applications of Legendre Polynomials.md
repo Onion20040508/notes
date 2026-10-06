@@ -46,7 +46,7 @@ $$
 ^prop-50-1
 
 > [!proof]+ Proof
-> **Angular factor.** By [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|Theorem §49.13]], (4) with boundedness at $\phi = 0$ and $\pi$ has the eigenfunctions $\Phi_n(\phi) = P_n(\cos\phi)$ with $\mu_n^2 = n(n+1)$.
+> **Angular factor.** By [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|Theorem §49.13]], (4) with boundedness at $\phi = 0$ and $\pi$ has the eigenfunctions $\Phi_n(\phi) = P_n(\cos\phi)$ with $\mu_n^2 = n(n+1)$.
 >
 > **Radial factor.** With $\mu^2 = n(n+1)$, (3) becomes
 >
@@ -62,11 +62,11 @@ $$
 > u(c, \phi) = \sum_{n=0}^{\infty} b_nc^nP_n(\cos\phi) = f(\phi), \qquad 0 < \phi < \pi . \qquad (6)
 > $$
 >
-> With $x = \cos\phi$ this is the Legendre series of $F(x) = f(\arccos x)$ on $-1 < x < 1$ ([[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-4|Definition §49.4]]), so $b_nc^n = \frac{2n+1}{2}\int_{-1}^{1} F(x)P_n(x)\,dx$. Changing back to $\phi$, with $dx = -\sin\phi\,d\phi$, gives (7). By [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|Theorem §49.9]] the series (6) converges to $f$ at its points of continuity.
+> With $x = \cos\phi$ this is the Legendre series of $F(x) = f(\arccos x)$ on $-1 < x < 1$ ([[§50★ Legendre Series and Zonal Harmonics#^def-49-4|Definition §49.4]]), so $b_nc^n = \frac{2n+1}{2}\int_{-1}^{1} F(x)P_n(x)\,dx$. Changing back to $\phi$, with $dx = -\sin\phi\,d\phi$, gives (7). By [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|Theorem §49.9]] the series (6) converges to $f$ at its points of continuity.
 
 ^pf-50-1
 
-*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|§49.13]], [[§1★ Homogeneous Linear Equations#^thm-1-5|§1.5]], [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-4|Def. §49.4]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|§49.9]]
+*Uses:* [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|§49.13]], [[§1★ Homogeneous Linear Equations#^thm-1-5|§1.5]], [[§50★ Legendre Series and Zonal Harmonics#^def-49-4|Def. §49.4]], [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|§49.9]]
 
 > [!remark]- Connections
 > - The weight $\sin\phi$ in (7) comes from the area element of the sphere $\rho = c$, $dA = c^2\sin\phi\,d\phi\,d\theta$, the boundary part of $dV = \rho^2\sin\phi\,d\rho\,d\theta\,d\phi$ in [[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Calc Thm. §105.2]]. In particular $b_0 = \frac12\int_0^{\pi} f\sin\phi\,d\phi$, the value of $u$ at the center, is the average of the boundary values over the sphere.
@@ -81,7 +81,7 @@ $$
 >
 > Find the potential inside.
 >
-> With $x = \cos\phi$, the northern hemisphere $0 < \phi < \pi/2$ is $0 < x < 1$, so $F(x) = f(\arccos x)$ is $V$ times the step function of [[§49★ Spherical Coordinates; Legendre Polynomials#^ex-49-2|Example §49.2]]. Its Legendre coefficients, as computed there and in Part B below, are $0$ for even $n$ and $V\frac{2n+1}{n+1}P_{n-1}(0)$ for odd $n$; these are $b_nc^n$. So
+> With $x = \cos\phi$, the northern hemisphere $0 < \phi < \pi/2$ is $0 < x < 1$, so $F(x) = f(\arccos x)$ is $V$ times the step function of [[§50★ Legendre Series and Zonal Harmonics#^ex-49-2|Example §49.2]]. Its Legendre coefficients, as computed there and in Part B below, are $0$ for even $n$ and $V\frac{2n+1}{n+1}P_{n-1}(0)$ for odd $n$; these are $b_nc^n$. So
 >
 > $$
 > u(\rho, \phi) = V\bigg[\frac32\Big(\frac{\rho}{c}\Big)P_1(\cos\phi) - \frac78\Big(\frac{\rho}{c}\Big)^3P_3(\cos\phi) + \frac{11}{16}\Big(\frac{\rho}{c}\Big)^5P_5(\cos\phi) - \cdots\bigg] .
@@ -110,7 +110,7 @@ $$
 \frac{(\sin\phi\,\Phi'(\phi))'}{\sin\phi\,\Phi(\phi)} = \frac{R^2T'(t)}{kT(t)} = -\mu^2 ,
 $$
 
-and thus to the eigenvalue problem of [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|Theorem §49.13]]: $\mu_n^2 = n(n+1)$, $\Phi_n(\phi) = P_n(\cos\phi)$, $n = 0, 1, 2, \ldots$. The other factor of a product solution must be $T_n(t) = \exp\big(-n(n+1)kt/R^2\big)$.
+and thus to the eigenvalue problem of [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|Theorem §49.13]]: $\mu_n^2 = n(n+1)$, $\Phi_n(\phi) = P_n(\cos\phi)$, $n = 0, 1, 2, \ldots$. The other factor of a product solution must be $T_n(t) = \exp\big(-n(n+1)kt/R^2\big)$.
 
 > [!theorem] Proposition §50.2: Heat Conduction on a Thin Spherical Shell
 > If $f$ is sectionally smooth on $0 < \phi < \pi$, the solution of (8), (9) bounded at $\phi = 0$ and $\pi$ is
@@ -130,11 +130,11 @@ and thus to the eigenvalue problem of [[§49★ Spherical Coordinates; Legendre 
 > \sum_{n=0}^{\infty} b_nP_n(\cos\phi) = f(\phi), \qquad 0 < \phi < \pi , \qquad (11)
 > $$
 >
-> whose coefficients are found as in the proof of [[§50★ Some Applications of Legendre Polynomials#^prop-50-1|Proposition §50.1]] (with $c = 1$). If $f$ is sectionally smooth, the series (11) equals $f(\phi)$ (at points of continuity) by [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|Theorem §49.9]], and so $u$ satisfies the problem as posed.
+> whose coefficients are found as in the proof of [[§50★ Some Applications of Legendre Polynomials#^prop-50-1|Proposition §50.1]] (with $c = 1$). If $f$ is sectionally smooth, the series (11) equals $f(\phi)$ (at points of continuity) by [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|Theorem §49.9]], and so $u$ satisfies the problem as posed.
 
 ^pf-50-2
 
-*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|§49.13]], [[§50★ Some Applications of Legendre Polynomials#^prop-50-1|§50.1]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-9|§49.9]]
+*Uses:* [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|§49.13]], [[§50★ Some Applications of Legendre Polynomials#^prop-50-1|§50.1]], [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|§49.9]]
 
 The term with $n = 0$ does not decay: $b_0 = \frac12\int_0^{\pi} f\sin\phi\,d\phi$ is the average initial temperature over the sphere, and $u \to b_0$ as $t \to \infty$. Nothing in (8) lets heat in or out of the shell, so the average stays constant while the variations die out, the slowest being $P_1(\cos\phi) = \cos\phi$ with rate $2k/R^2$.
 
@@ -147,7 +147,7 @@ The term with $n = 0$ does not decay: $b_0 = \frac12\int_0^{\pi} f\sin\phi\,d\ph
 > b_n = \frac{2n+1}{2}\int_0^{\pi} f(\phi)P_n(\cos\phi)\sin\phi\,d\phi = \frac{2n+1}{2}\bigg[\int_{-1}^{1} f(\cos^{-1}(x))P_n(x)\,dx\bigg] = T_0\frac{2n+1}{n+1}P_{n-1}(0)
 > $$
 >
-> for odd $n$, and $b_n = 0$ for even $n$: $f(\cos^{-1}(x))$ is $T_0$ times the step function of [[§49★ Spherical Coordinates; Legendre Polynomials#^ex-49-2|Example §49.2]]. So
+> for odd $n$, and $b_n = 0$ for even $n$: $f(\cos^{-1}(x))$ is $T_0$ times the step function of [[§50★ Legendre Series and Zonal Harmonics#^ex-49-2|Example §49.2]]. So
 >
 > $$
 > u(\phi, t) = T_0\bigg[\frac32\cos\phi\,e^{-2kt/R^2} - \frac78P_3(\cos\phi)\,e^{-12kt/R^2} + \frac{11}{16}P_5(\cos\phi)\,e^{-30kt/R^2} - \cdots\bigg] .
@@ -190,7 +190,7 @@ $$
 (\rho^2R')' - \mu^2R + \lambda^2\rho^2R = 0, \quad 0 < \rho < a, \qquad R(a) = 0, \qquad R \text{ bounded at } 0 .
 $$
 
-The first is solved by [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|Theorem §49.13]]: $\mu_n^2 = n(n+1)$, $\Phi_n(\phi) = P_n(\cos\phi)$.
+The first is solved by [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|Theorem §49.13]]: $\mu_n^2 = n(n+1)$, $\Phi_n(\phi) = P_n(\cos\phi)$.
 
 > [!theorem] Proposition §50.3: Standing Waves in a Sphere
 > For $n = 0, 1, 2, \ldots$, the bounded solutions of the radial equation with $\mu^2 = n(n+1)$ are the multiples of
@@ -222,7 +222,7 @@ The first is solved by [[§49★ Spherical Coordinates; Legendre Polynomials#^th
 
 ^pf-50-3
 
-*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§48★ Some Applications of Bessel Functions#^thm-48-1|§48.1]], [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-13|§49.13]], [[§45★ Bessel's Equation#^thm-45-4|§45.4]], [[§45★ Bessel's Equation#^thm-45-5|§45.5]]
+*Uses:* [[§48★ Some Applications of Bessel Functions#^ex-48-1|Ex. §48.1]], [[§48★ Some Applications of Bessel Functions#^thm-48-1|§48.1]], [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|§49.13]], [[§45★ Bessel's Equation#^thm-45-4|§45.4]], [[§45★ Bessel's Equation#^thm-45-5|§45.5]]
 
 The solution $u(\rho, \phi, t)$ is an infinite series of constant multiples of these functions; Powers does not write it out. The radial functions occur so often that they have their own name.
 
@@ -273,7 +273,7 @@ Powers lists $j_0$, $j_1$, $j_2$ without derivation. Each can be checked by subs
 > J_{n+1/2}(\lambda_{nm}\rho)\,P_n(\cos\phi) = 0 .
 > $$
 >
-> One or the other factor must be $0$, so these surfaces are either concentric spheres $\rho =$ const, determined by $J_{n+1/2}(\lambda_{nm}\rho) = 0$ (there are $m - 1$ of them inside the sphere), or cones $\phi =$ const, determined by $P_n(\cos\phi) = 0$ (the $n$ nodal parallels of the zonal harmonic, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-5|Definition §49.5]]; for $P_1$ the "cone" is the plane $z = 0$). This is the three-dimensional analogue of the nodal circles and diameters of a drum, [[§47★ Vibrations of a Circular Membrane#^def-47-2|Definition §47.2]].
+> One or the other factor must be $0$, so these surfaces are either concentric spheres $\rho =$ const, determined by $J_{n+1/2}(\lambda_{nm}\rho) = 0$ (there are $m - 1$ of them inside the sphere), or cones $\phi =$ const, determined by $P_n(\cos\phi) = 0$ (the $n$ nodal parallels of the zonal harmonic, [[§50★ Legendre Series and Zonal Harmonics#^def-49-5|Definition §49.5]]; for $P_1$ the "cone" is the plane $z = 0$). This is the three-dimensional analogue of the nodal circles and diameters of a drum, [[§47★ Vibrations of a Circular Membrane#^def-47-2|Definition §47.2]].
 >
 > *Powers: 5.10, Part C (text)*
 

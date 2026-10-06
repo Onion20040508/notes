@@ -238,7 +238,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 ## Examples
 
 > [!example] Example §11.1: Mean Error and Parseval for f(x) = x
-> **(a)** For $f(x) = x$, $-1 < x < 1$, the coefficients are $a_0 = a_n = 0$, $b_n = \frac{2(-1)^{n + 1}}{n\pi}$ ([[§7 Arbitrary Period and Half-Range Expansions#^ex-7-3|Example §7.3]]), and $\int_{-1}^{1}x^2\,dx = \frac23$. With $a = 1$ the minimum mean error (6) is
+> **(a)** For $f(x) = x$, $-1 < x < 1$, the coefficients are $a_0 = a_n = 0$, $b_n = \frac{2(-1)^{n + 1}}{n\pi}$ ([[§7a Even and Odd Functions; Half-Range Expansions#^ex-7-3|Example §7.3]]), and $\int_{-1}^{1}x^2\,dx = \frac23$. With $a = 1$ the minimum mean error (6) is
 >
 > $$
 > \min(E_N) = \frac23 - \sum_{n=1}^{N}\frac{4}{n^2\pi^2} :

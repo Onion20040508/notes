@@ -17,7 +17,7 @@ $\int_0^1 x^{-a}\,dx < \infty$ iff $a < 1$, so $1/\sqrt{x}$ is in $L^1$ but not 
 
 ![[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-2]]
 
-*Chain:* ← [[§18c Absolute Continuity and the FTC#^rem-18-9|Chapter 5]]
+*Chain:* ← [[§18c Absolute Continuity#^rem-18-9|Chapter 5]]
 
 ## The Rationals ℚ
 

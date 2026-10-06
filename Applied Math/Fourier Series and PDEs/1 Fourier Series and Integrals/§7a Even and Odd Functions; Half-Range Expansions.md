@@ -53,7 +53,7 @@ The cosine is symmetric about the vertical axis and the sine is antisymmetric. T
 
 ^pf-7-2
 
-*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^def-7-2|Def. §7.2]]
+*Uses:* [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-2|Def. §7.2]]
 
 > [!theorem] Theorem §7.3: Integrals of Even and Odd Functions
 > Let $g$ be an even function defined on a symmetric interval $-a < x < a$. Then
@@ -83,7 +83,7 @@ The cosine is symmetric about the vertical axis and the sine is antisymmetric. T
 
 ^pf-7-3
 
-*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^def-7-2|Def. §7.2]]
+*Uses:* [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-2|Def. §7.2]]
 
 > [!remark]- Connections
 > - Stewart's version, with the same substitution: [[§38 The Substitution Rule#^thm-38-4|Calc Thm. §38.4]] (even and odd functions: [[§1 Four Ways to Represent a Function#^def-1-7|Calc Def. §1.7]]).
@@ -120,7 +120,7 @@ all the sine coefficients are zero. Since the cosine is even, so is $g(x)\cos(n\
 
 ^pf-7-4
 
-*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^prop-7-1|§7.1]], [[§7 Arbitrary Period and Half-Range Expansions#^prop-7-2|§7.2]], [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-3|§7.3]]
+*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^prop-7-1|§7.1]], [[§7a Even and Odd Functions; Half-Range Expansions#^prop-7-2|§7.2]], [[§7a Even and Odd Functions; Half-Range Expansions#^thm-7-3|§7.3]]
 
 ## Half-Range Expansions
 
@@ -171,7 +171,7 @@ If the series converge, they represent periodic functions of period $2a$: the co
 > f(x) \sim \sum_{n=1}^{\infty} b_n\sin\Big(\frac{n\pi x}{a}\Big), \quad 0 < x < a, \qquad b_n = \frac2a\int_0^a f(x)\sin\Big(\frac{n\pi x}{a}\Big)dx .
 > $$
 >
-> These two representations, the cosine series of [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]] and the sine series, are called **half-range expansions**. They are the Fourier series of the even and the odd extension of $f$; the book needs them more than any other kind of Fourier series.
+> These two representations, the cosine series of [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-4|Definition §7.4]] and the sine series, are called **half-range expansions**. They are the Fourier series of the even and the odd extension of $f$; the book needs them more than any other kind of Fourier series.
 >
 > *Powers: 1.2 (text)*
 

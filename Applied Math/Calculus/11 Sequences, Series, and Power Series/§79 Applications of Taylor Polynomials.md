@@ -160,7 +160,7 @@ is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can 
 
 ^ex-79-2
 
-The point of expanding about $a$ is to have $x$ close to $a$. To approximate $\sin 72°$, use Taylor polynomials at $a = \pi/3$ rather than $0$: $72°$ is close to $60° = \pi/3$, where the derivatives of $\sin$ are easy to compute ([[§78 Taylor and Maclaurin Series#^ex-78-2|Example §78.2]]). As $n$ increases, the Maclaurin polynomials $T_1, T_3, T_5, T_7$ approximate $\sin x$ well on larger and larger intervals ([[§78 Taylor and Maclaurin Series#^thm-78-7|Theorem §78.7]] and its figure). Calculators and computers evaluate $\sin$, $e^x$ and Bessel functions this way, typically with a Taylor polynomial modified to spread the error more evenly over an interval.
+The point of expanding about $a$ is to have $x$ close to $a$. To approximate $\sin 72°$, use Taylor polynomials at $a = \pi/3$ rather than $0$: $72°$ is close to $60° = \pi/3$, where the derivatives of $\sin$ are easy to compute ([[§78 Taylor and Maclaurin Series#^ex-78-2|Example §78.2]]). As $n$ increases, the Maclaurin polynomials $T_1, T_3, T_5, T_7$ approximate $\sin x$ well on larger and larger intervals ([[§78a Taylor Series of Important Functions#^thm-78-7|Theorem §78.7]] and its figure). Calculators and computers evaluate $\sin$, $e^x$ and Bessel functions this way, typically with a Taylor polynomial modified to spread the error more evenly over an interval.
 
 ## Applications to Physics
 
@@ -183,7 +183,7 @@ A physicist often simplifies a function by keeping only the first two or three t
 > K = mc^2 - m_0 c^2 = \frac{m_0 c^2}{\sqrt{1 - v^2/c^2}} - m_0 c^2 = m_0 c^2 \left[ \left( 1 - \frac{v^2}{c^2} \right)^{-1/2} - 1 \right] .
 > $$
 >
-> With $x = -v^2/c^2$ (and $|x| < 1$ because $v < c$), expand $(1 + x)^{-1/2}$ by the binomial series ([[§78 Taylor and Maclaurin Series#^thm-78-9|Theorem §78.9]]) with $k = -\frac12$:
+> With $x = -v^2/c^2$ (and $|x| < 1$ because $v < c$), expand $(1 + x)^{-1/2}$ by the binomial series ([[§78a Taylor Series of Important Functions#^thm-78-9|Theorem §78.9]]) with $k = -\frac12$:
 >
 > $$
 > (1 + x)^{-1/2} = 1 - \frac12 x + \frac{\left( -\frac12 \right)\left( -\frac32 \right)}{2!} x^2 + \frac{\left( -\frac12 \right)\left( -\frac32 \right)\left( -\frac52 \right)}{3!} x^3 + \cdots = 1 - \frac12 x + \frac38 x^2 - \frac{5}{16} x^3 + \cdots

@@ -126,6 +126,8 @@ Given $f$, the $a$'s and $b$'s can be determined, and with them the $A$'s and $B
 
 ^ex-16-1
 
+*Chain: the mass–spring–damper system earlier in [[§5★ Mass–Spring–Damper System and Radial Heat Flow#The Mass–Spring–Damper System|Chapter 0]] · later in [[§52★ Partial Fractions and Convolutions#^ex-52-3|Chapter 6]].*
+
 ## B. Boundary Value Problems
 
 By way of introduction to the next chapter, apply the idea of Fourier series to the boundary value problem
@@ -176,7 +178,7 @@ $$
 
 ^pf-16-2
 
-*Uses:* [[§7 Arbitrary Period and Half-Range Expansions#^def-7-new1|Def. §7.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
+*Uses:* [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-new1|Def. §7.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] (integration by parts)
 
 The exceptional values $p = n^2\pi^2/a^2$ are the eigenvalues of $u'' + \lambda u = 0$, $u(0) = u(a) = 0$, with eigenfunctions $\sin(n\pi x/a)$ ([[§3★ Boundary Value Problems#^prop-3-3|Proposition §3.3]]). That the sine functions turn $d^2/dx^2$ into multiplication by $-n^2\pi^2/a^2$ is the reason they appear in heat and wave problems with these boundary conditions, and the solvability condition $b_m = 0$ is the prototype of the Sturm–Liouville alternative ([[§24 Expansion in Series of Eigenfunctions|§24]]).
 

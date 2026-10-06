@@ -46,7 +46,7 @@ A series with positive terms converges exactly when its partial sums are bounded
 
 ^pf-72-1
 
-*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]]
+*Uses:* [[§69a Monotonic and Bounded Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^thm-14-7|451 Thm. §14.7]] (Comparison Test, for $|a_n| \le b_n$, proved with the Cauchy criterion so that the $a_n$ need not be positive).

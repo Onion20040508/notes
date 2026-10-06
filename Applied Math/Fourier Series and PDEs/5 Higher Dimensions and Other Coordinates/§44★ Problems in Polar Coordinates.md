@@ -208,7 +208,7 @@ Equation (12) is **Bessel's equation** ([[§45★ Bessel's Equation#^def-45-1|De
 > R'(a) = 0
 > $$
 >
-> in place of (6) and (13). Everything else, the $\theta$-problem (9)–(11) and Bessel's equation (12), is the same. One new feature appears: $\lambda = 0$, $\mu = 0$ is now allowed, since $R = 1$ satisfies $(rR')' = 0$ and $R'(a) = 0$. For heat this constant mode does not decay: an insulated plate tends to its mean initial temperature. The radial eigenvalues are worked out for $\mu = 0$ in [[§45★ Bessel's Equation#^ex-45-3|Example §45.3]].
+> in place of (6) and (13). Everything else, the $\theta$-problem (9)–(11) and Bessel's equation (12), is the same. One new feature appears: $\lambda = 0$, $\mu = 0$ is now allowed, since $R = 1$ satisfies $(rR')' = 0$ and $R'(a) = 0$. For heat this constant mode does not decay: an insulated plate tends to its mean initial temperature. The radial eigenvalues are worked out for $\mu = 0$ in [[§45★ Properties of Bessel Functions#^ex-45-3|Example §45.3]].
 >
 > *Powers: Exercise 5.4.6*
 

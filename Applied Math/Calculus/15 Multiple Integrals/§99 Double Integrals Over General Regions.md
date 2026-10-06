@@ -322,7 +322,7 @@ Assume that all of the following integrals exist.
 
 ^pf-99-3
 
-*Uses:* [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§99 Double Integrals Over General Regions#^def-99-1|Def. §99.1]], [[§35 The Definite Integral#^thm-35-4|§35.4]], [[§35 The Definite Integral#^thm-35-6|§35.6]] (the single-integral properties, proved the same way)
+*Uses:* [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§99 Double Integrals Over General Regions#^def-99-1|Def. §99.1]], [[§35a Properties of the Definite Integral#^thm-35-4|§35.4]], [[§35a Properties of the Definite Integral#^thm-35-6|§35.6]] (the single-integral properties, proved the same way)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-3|452 Thm. §15.3]] (additivity in the integrand), [[§15 Multivariable Integration#^thm-15-2|452 Thm. §15.2]] (scalar multiples), [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]] (comparison), where the existence of $\iint (f + g)$ and $\iint cf$ is also proved.
@@ -338,7 +338,7 @@ Assume that all of the following integrals exist.
 
 ^thm-99-4
 
-*Stewart omits the proof (it is the analogue of $\int_a^b = \int_a^c + \int_c^b$, [[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]); see [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].*
+*Stewart omits the proof (it is the analogue of $\int_a^b = \int_a^c + \int_c^b$, [[§35a Properties of the Definite Integral#^thm-35-5|Theorem §35.5]]); see [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].*
 
 Property 8 evaluates double integrals over regions $D$ that are neither type I nor type II but can be cut into regions of type I or type II: integrate over each piece and add. This is what [[§99 Double Integrals Over General Regions#^ex-99-2|Examples §99.2]] and [[§99 Double Integrals Over General Regions#^ex-99-3|§99.3]] do when they describe a region as type I in two pieces.
 
@@ -395,7 +395,7 @@ Property 8 evaluates double integrals over regions $D$ that are neither type I n
 
 *Uses:* [[§99 Double Integrals Over General Regions#^thm-99-3|§99.3]], [[§99 Double Integrals Over General Regions#^thm-99-5|§99.5]]
 
-For $m > 0$ the bounds compare the volume under the graph of $f$ with the volumes of the two cylinders with base $D$ and heights $m$ and $M$ (compare the single-integral version, Property 8 in [[§35 The Definite Integral#^thm-35-6|Theorem §35.6]]).
+For $m > 0$ the bounds compare the volume under the graph of $f$ with the volumes of the two cylinders with base $D$ and heights $m$ and $M$ (compare the single-integral version, Property 8 in [[§35a Properties of the Definite Integral#^thm-35-6|Theorem §35.6]]).
 
 > [!remark] Remark: Estimating a Double Integral
 > Stewart's Example 15.2.6: use Property 10 to estimate $\displaystyle\iint_D e^{\sin x \cos y}\,dA$, where $D$ is the disk with center the origin and radius $2$.

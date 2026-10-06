@@ -5,7 +5,7 @@ chapter: 6
 section: 18
 tags: [multivariable-analysis, math452]
 ---
-← [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]] · ↑ [[· 6 Surface Integrals and the Classical Theorems]] · [[§18a The Divergence Theorem in ℝ³]] →
+← [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]] · ↑ [[· 6 Surface Integrals and the Classical Theorems]] · [[§18a Flux Integrals and the Divergence Theorem in ℝ³]] →
 
 > [!remark] Note: Smoothness Assumptions for This Section
 > The results in this section require increasingly strong conditions on the parametrization $\mathbf{X}$, the surface $S$, and the vector field $\mathbf{F}$. Here is the hierarchy, from weakest to strongest:
@@ -98,7 +98,7 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 ^def-18-2
 
 ![[m452-18-1.svg]]
-*The surface integral is computed cell by cell: a grid cell $\Delta u \times \Delta v$ in the parameter domain (red, left) is carried by $\mathbf{X}$ to a curved patch on the surface (red, right). Zoomed to this scale, the patch is approximated by the tangent parallelogram (green) spanned by $\mathbf{X}_u\Delta u$ and $\mathbf{X}_v\Delta v$, with area $|\mathbf{X}_u \times \mathbf{X}_v|\,\Delta u\,\Delta v$. Summing over all cells and refining gives $\iint_S dS = \iint_D |\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$: the cross product length is the area-scaling factor, playing exactly the role $|J|$ played in [[§15 Multivariable Integration|§15]] — and $|\mathbf{r}'|$ in [[§16 Line Integrals and Green's Theorem|§16]].*
+*The surface integral is computed cell by cell: a grid cell $\Delta u \times \Delta v$ in the parameter domain (red, left) is carried by $\mathbf{X}$ to a curved patch on the surface (red, right). Zoomed to this scale, the patch is approximated by the tangent parallelogram (green) spanned by $\mathbf{X}_u\Delta u$ and $\mathbf{X}_v\Delta v$, with area $|\mathbf{X}_u \times \mathbf{X}_v|\,\Delta u\,\Delta v$. Summing over all cells and refining gives $\iint_S dS = \iint_D |\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$: the cross product length is the area-scaling factor, playing exactly the role $|J|$ played in [[§15d The Change of Variables Formula|§15d]] — and $|\mathbf{r}'|$ in [[§16 Line Integrals and Green's Theorem|§16]].*
 
 > [!remark]- Connections
 > - The tangent space as the image of the derivative of a parametrization is one of three equal descriptions in [[§23 The Geometric Tangent Space#^cor-23-4|591 Cor. §23.4]] (velocities of curves, kernel of the constraint Jacobian, image of the parametrization's derivative).
@@ -339,139 +339,4 @@ With the area element $dS = |\mathbf{X}_u \times \mathbf{X}_v| \, du \, dv$ in h
 
 ^ex-18-2
 
-## The Vector Surface Integral (Flux)
-
-Just as the Type II line integral $\oint \mathbf{F} \cdot d\mathbf{r}$ ([[§16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]]) measures the work done by a vector field along a curve, the **flux integral** measures how much of a vector field passes *through* a surface.
-
-### The Normal Vector and Orientation
-
-At a regular point, the cross product $\mathbf{X}_u \times \mathbf{X}_v$ is a nonzero vector perpendicular to the tangent plane. It defines a **unit normal**:
-
-$$
-\hat{n} = \frac{\mathbf{X}_u \times \mathbf{X}_v}{|\mathbf{X}_u \times \mathbf{X}_v|}.
-$$
-
-The choice of which direction is “outward” depends on the orientation of the parametrization (the ordering of $u, v$). Reversing the parametrization (swapping $u \leftrightarrow v$) flips the sign of the cross product, hence flips $\hat{n}$.
-
-### Definition and Derivation
-
-Consider a vector field $\mathbf{F}(x,y,z) = (P, Q, R)$ representing (say) fluid flow velocity. The flux of $\mathbf{F}$ through a small surface element is:
-
-$$
-\mathbf{F} \cdot \hat{n} \, dS = \mathbf{F} \cdot \frac{\mathbf{X}_u \times \mathbf{X}_v}{|\mathbf{X}_u \times \mathbf{X}_v|} \cdot |\mathbf{X}_u \times \mathbf{X}_v| \, du \, dv = \mathbf{F} \cdot (\mathbf{X}_u \times \mathbf{X}_v) \, du \, dv.
-$$
-
-The $|\mathbf{X}_u \times \mathbf{X}_v|$ cancels, giving a cleaner formula:
-
-> [!definition] Definition §18.6: Vector Surface Integral / Flux Integral
-> Let $S$ be an oriented regular surface parametrized by $\mathbf{X}: D \to \mathbb{R}^3$, and let $\mathbf{F} = (P, Q, R)$ be a continuous vector field on $S$. The **flux** of $\mathbf{F}$ through $S$ is:
->
-> $$
-> \iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S \mathbf{F} \cdot \hat{n} \, dS = \iint_D \mathbf{F}(\mathbf{X}(u,v)) \cdot (\mathbf{X}_u \times \mathbf{X}_v) \, du \, dv.
-> $$
->
-> The notation $d\mathbf{S} = \hat{n} \, dS = (\mathbf{X}_u \times \mathbf{X}_v) \, du \, dv$ is the **vector area element**.
-
-^def-18-6
-
-> [!remark]- Connections
-> - In the language of forms, the flux integral is the integral of a 2-form: [[§22 The Algebra of Differential Forms#^def-22-6|Integration of a 2-Form over a Surface]], [[§22 The Algebra of Differential Forms#^rem-22-7|2-Form Integration Recovers the Flux Integral]].
-> - The cross product $\mathbf{X}_u \times \mathbf{X}_v$ is a pullback: [[§22 The Algebra of Differential Forms#^rem-22-3|The Cross Product Is the Pullback in Disguise]].
-> - Computational version: [[§113 Surface Integrals#^def-113-7|Calc Def. §113.7]] and [[§113 Surface Integrals#^thm-113-3|Calc Thm. §113.3]] (with worked examples).
-
-**Interpretation:** $\iint_S \mathbf{F} \cdot d\mathbf{S}$ measures the net rate at which “stuff” (fluid, electric field, etc.) flows through $S$ in the direction of $\hat{n}$.
-
-**Comparison with line integrals:**
-
-| | **Curve** $\gamma$ | **Surface** $S$ |
-|---|:---:|:---:|
-| Scalar integral | $\int_\gamma f \, ds$ (Type I) | $\iint_S f \, dS$ |
-| Vector integral | $\int_\gamma \mathbf{F} \cdot d\mathbf{r}$ (work) | $\iint_S \mathbf{F} \cdot d\mathbf{S}$ (flux) |
-| Key vector | tangent $\boldsymbol{\gamma}'$ | normal $\mathbf{X}_u \times \mathbf{X}_v$ |
-
-Note the geometric duality: the line integral uses the *tangent* vector (measuring the component of $\mathbf{F}$ *along* the curve), while the surface integral uses the *normal* vector (measuring the component of $\mathbf{F}$ *through* the surface).
-
-> [!remark] Remark: Connection to the Divergence Theorem and Stokes' Theorem
-> The flux integral is exactly the left-hand side of the **Divergence Theorem** ([[Divergence Theorem in ℝ³|Theorem §18.2]]):
->
-> $$
-> \iint_{\partial V} \mathbf{F} \cdot d\mathbf{S} = \iiint_V \nabla \cdot \mathbf{F} \, dV,
-> $$
->
-> which relates the flux through a closed surface $\partial V$ to the total divergence inside the enclosed volume $V$.
->
-> Similarly, **Stokes' theorem** ([[Stokes' Theorem in ℝ³|Theorem §20.1]]) relates a line integral around $\partial S$ to a flux integral of the curl through $S$:
->
-> $$
-> \oint_{\partial S} \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}.
-> $$
->
-> Both theorems require the surface integral machinery we have now developed.
-
-^rem-18-5
-
-## Graph Surfaces
-
-An important special case: the surface is the graph of a function $z = \phi(x,y)$ over a domain $D \subseteq \mathbb{R}^2$. This gives the simplest parametrization and the most explicit formulas.
-
-**Parametrization:** Use $(x,y)$ themselves as parameters:
-
-$$
-\mathbf{X}(x, y) = (x, \, y, \, \phi(x,y)).
-$$
-
-**Tangent vectors:**
-
-$$
-\mathbf{X}_x = \left(1, \, 0, \, \phi_x\right), \qquad \mathbf{X}_y = \left(0, \, 1, \, \phi_y\right).
-$$
-
-**Cross product:**
-
-$$
-\mathbf{X}_x \times \mathbf{X}_y = \begin{vmatrix} \hat{\imath} & \hat{\jmath} & \hat{k} \\ 1 & 0 & \phi_x \\ 0 & 1 & \phi_y \end{vmatrix} = (-\phi_x, \; -\phi_y, \; 1).
-$$
-
-Note that the $\hat{k}$-component is $+1$, so this normal points **upward** (positive $z$-direction).
-
-**Magnitude:**
-
-$$
-|\mathbf{X}_x \times \mathbf{X}_y| = \sqrt{\phi_x^2 + \phi_y^2 + 1}.
-$$
-
-**Unit outward normal** (upward):
-
-$$
-\hat{n} = \frac{(-\phi_x, \, -\phi_y, \, 1)}{\sqrt{\phi_x^2 + \phi_y^2 + 1}}.
-$$
-
-**Area element:**
-
-$$
-dS = |\mathbf{X}_x \times \mathbf{X}_y| \, dx \, dy = \sqrt{1 + \phi_x^2 + \phi_y^2} \, dx \, dy.
-$$
-
-**Flux of $\mathbf{u} = (a, b, c)$ through the graph surface:**
-
-$$
-\begin{aligned}
-\iint_S \mathbf{u} \cdot \hat{n} \, dS &= \iint_D (a, b, c) \cdot (-\phi_x, -\phi_y, 1) \, dx \, dy \\
-&= \iint_D \big( -a\phi_x - b\phi_y + c \big) \, dx \, dy.
-\end{aligned}
-$$
-
-Note the cancellation: $\hat{n} \, dS = \frac{(-\phi_x, -\phi_y, 1)}{\sqrt{1+\phi_x^2+\phi_y^2}} \cdot \sqrt{1+\phi_x^2+\phi_y^2} \, dx \, dy = (-\phi_x, -\phi_y, 1) \, dx \, dy$. The square root appears in both $\hat{n}$ and $dS$ and cancels in the flux integral.
-
-> [!remark] Remark: Component-by-Component Flux
-> For a general vector field $\mathbf{u} = (a(x,y,z), \, b(x,y,z), \, c(x,y,z))$, the flux through the graph $z = \phi(x,y)$ involves three terms, one per component:
->
-> $$
-> \iint_S \mathbf{u} \cdot \hat{n} \, dS = \iint_S \big[ a \cdot n_1 + b \cdot n_2 + c \cdot n_3 \big] \, dS.
-> $$
->
-> For each component, we parametrize the surface by the “best choice” of two coordinates: the top/bottom surfaces use $(x,y)$, the left/right surfaces use $(y,z)$, and the front/back surfaces use $(x,z)$. This is exactly how the proof of the Divergence Theorem ([[Divergence Theorem in ℝ³|Theorem §18.2]]) proceeds.
-
-^rem-18-6
-
-*Continued in [[§18a The Divergence Theorem in ℝ³]]: the proof of the Divergence Theorem for surfaces in space.*
+*Continued in [[§18a Flux Integrals and the Divergence Theorem in ℝ³]]: flux integrals, graph surfaces, and the proof of the Divergence Theorem in ℝ³.*

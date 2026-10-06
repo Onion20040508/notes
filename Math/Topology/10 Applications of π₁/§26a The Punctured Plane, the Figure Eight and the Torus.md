@@ -37,7 +37,7 @@ Retracting the figure eight onto one of its circles shows that $\pi_1$ of a retr
 
 ![[§26 Deformation Retracts and Homotopy Type#^ex-26-11]]
 
-*Chain: later in [[§28 Fundamental Group of Some Surfaces#^def-28-4|Chapter 11]] · [[Figure eight|all appearances]]*
+*Chain: later in [[§29a The Projective Plane, the Figure Eight, the Double Torus and the Torus|Chapter 11]] · [[Figure eight|all appearances]]*
 
 ## The Torus
 
@@ -47,4 +47,4 @@ The torus minus a point deformation retracts onto the figure eight, and the loop
 
 ![[§26 Deformation Retracts and Homotopy Type#^rem-26-8]]
 
-*Chain: earlier in [[§24 Covering Spaces#^ex-24-3|Chapter 9]] · later in [[§29 The Seifert–van Kampen Theorem#^ex-29-4|Chapter 11]] · [[Torus|all appearances]]*
+*Chain: earlier in [[§24 Covering Spaces#^ex-24-3|Chapter 9]] · later in [[§29a The Projective Plane, the Figure Eight, the Double Torus and the Torus|Chapter 11]] · [[Torus|all appearances]]*

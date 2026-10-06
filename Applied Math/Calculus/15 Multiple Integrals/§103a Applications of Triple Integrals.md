@@ -58,7 +58,7 @@ Triple integrals are not necessary for computing volumes, but they give an alter
 > \iiint_T y^2\,dV = \int_0^2 y^2 \cdot \tfrac12 (2 - y)^2\,dy = \frac12 \int_0^2 (4y^2 - 4y^3 + y^4)\,dy = \frac12 \Big( \frac{32}{3} - 16 + \frac{32}{5} \Big) = \frac12 \cdot \frac{16}{15} = \frac{8}{15} .
 > $$
 >
-> **The volume.** By [[§103 Triple Integrals#^thm-103-4|Theorem §103.4]], with the same limits,
+> **The volume.** By [[§103a Applications of Triple Integrals#^thm-103-4|Theorem §103.4]], with the same limits,
 >
 > $$
 > V(T) = \iiint_T dV = \int_0^2 \tfrac12 (2 - y)^2\,dy = \Big[ -\tfrac16 (2 - y)^3 \Big]_0^2 = \frac86 = \frac43 ,

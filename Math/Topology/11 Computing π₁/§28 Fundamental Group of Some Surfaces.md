@@ -175,8 +175,6 @@ tags: [topology, math590]
 ![[m590-28-3.svg]]
 *The figure eight $X = A \cup B$: the circles $A$ (blue, traversed by $f$) and $B$ (red, traversed by $g$) meet only at $x_0$. A basic neighborhood of $x_0$ (green, open ends hollow) contains a small open arc of each circle through $x_0$: the cross of Example §28.1.*
 
-*Chain: earlier in [[§26a The Punctured Plane, the Figure Eight and the Torus|Chapter 10]] · [[Figure eight|all appearances]]*
-
 We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]], [[§29 The Seifert–van Kampen Theorem#^ex-29-2|Ex. §29.2]]). But using covering spaces, we can prove the key fact that $\pi_1(X)$ is **non-abelian**: $[f] \ast  [g] \neq [g] \ast  [f]$ for the generators.
 
 > [!theorem] Theorem §28.4: $\pi_1$ of the Figure Eight is Non-Abelian
@@ -279,8 +277,6 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Seifert–van Kamp
 
 > [!remark]- Connections
 > - The same construction in 250 (two tori joined by a tube), with Euler characteristic −2: [[§25 Surfaces and the Euler Characteristic#^ex-25-4|250 Ex. §25.4]].
-
-*Chain: earlier in [[§25a Retractions and Fixed Points#^ex-26-1|Chapter 10]] · [[Double torus|all appearances]]*
 
 > [!theorem] Theorem §28.5: $\pi_1(\Sigma_2)$ is Non-Abelian
 > The fundamental group of the genus $2$ surface is not abelian.

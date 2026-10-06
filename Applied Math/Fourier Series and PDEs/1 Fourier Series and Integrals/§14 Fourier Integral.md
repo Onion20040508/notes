@@ -154,6 +154,8 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 ^ex-14-1
 
+*Chain: the one-sided exponential returns as an initial temperature in [[§28b Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian#The One-Sided Exponential|Chapter 2]].*
+
 > [!example] Example §14.2: A Rectangular Pulse
 > The function $f(x) = 1$ for $|x| < 1$, $f(x) = 0$ for $|x| > 1$ is even, so $B(\lambda) = 0$, and
 >
@@ -337,6 +339,8 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 > *Powers: 1.9, Example 4 · Source: 341 Practice Midterm 2, Problems 7(c) and 8(c)*
 
 ^ex-14-5
+
+*Chain: the half sine wave returns as an initial temperature in [[§28b Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian#The Half Sine Wave|Chapter 2]].*
 
 ## Operations on Fourier Integrals
 

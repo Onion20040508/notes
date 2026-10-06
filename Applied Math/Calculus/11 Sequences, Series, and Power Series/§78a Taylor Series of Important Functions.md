@@ -78,7 +78,7 @@ Taylor's Inequality ([[§78 Taylor and Maclaurin Series#^thm-78-4|Theorem §78.4
 
 ^pf-78-8
 
-*Uses:* [[§78 Taylor and Maclaurin Series#^thm-78-7|§78.7]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]]
+*Uses:* [[§78a Taylor Series of Important Functions#^thm-78-7|§78.7]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]]
 
 > [!remark]- Connections
 > - Rigorous treatment of (11), (15) and (16): [[§31 Taylor's Theorem#^ex-31-1|451 Ex. §31.1]] (cosine and $e^x$ through the remainder, as here). In 451 the series can instead serve as *definitions* of sine and cosine: [[§26 Differentiation and Integration of Power Series#^ex-26-8|451 Ex. §26.8]].
@@ -160,7 +160,7 @@ These series, found by Newton by other methods, say that everything about $e^x$,
 
 ^pf-78-9
 
-*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-1|Def. §78.1]], [[§78 Taylor and Maclaurin Series#^def-78-3|Def. §78.3]], [[§78 Taylor and Maclaurin Series#^def-78-new2|Def. §78.4]], [[§74 The Ratio and Root Tests#^thm-74-1|§74.1]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]], [[§26 The Mean Value Theorem#^thm-26-3|§26.3]] (a function with zero derivative is constant)
+*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-1|Def. §78.1]], [[§78a Taylor Series of Important Functions#^def-78-3|Def. §78.3]], [[§78a Taylor Series of Important Functions#^def-78-new2|Def. §78.4]], [[§74 The Ratio and Root Tests#^thm-74-1|§74.1]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]], [[§26 The Mean Value Theorem#^thm-26-3|§26.3]] (a function with zero derivative is constant)
 
 > [!remark] Remark: Important Maclaurin Series
 > For future reference (Stewart's Table 1), the Maclaurin series found here and in [[§77 Representations of Functions as Power Series|§77]], with their radii of convergence:

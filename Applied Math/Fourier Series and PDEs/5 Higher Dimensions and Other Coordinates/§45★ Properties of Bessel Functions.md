@@ -110,7 +110,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 
 ^pf-45-8
 
-*Uses:* [[§45★ Bessel's Equation#^thm-45-7|§45.7]]
+*Uses:* [[§45★ Properties of Bessel Functions#^thm-45-7|§45.7]]
 
 > [!theorem] Corollary §45.9: J₁ Has Infinitely Many Zeros
 > Between any two consecutive positive zeros of $J_0$ there is a zero of $J_1$. In particular $J_1(x) = 0$ has an infinite number of solutions.
@@ -124,7 +124,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 
 ^pf-45-9
 
-*Uses:* [[§45★ Bessel's Equation#^thm-45-6|§45.6]], [[§45★ Bessel's Equation#^thm-45-7|§45.7]], [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]] (Rolle's theorem)
+*Uses:* [[§45★ Properties of Bessel Functions#^thm-45-6|§45.6]], [[§45★ Properties of Bessel Functions#^thm-45-7|§45.7]], [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]] (Rolle's theorem)
 
 ## Radial Eigenvalue Problems
 
@@ -145,7 +145,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 > \lambda_n = \frac{\alpha_{0n}}{a} = \frac{2.405}{a},\ \frac{5.520}{a},\ \frac{8.654}{a},\ \ldots, \qquad \phi_n(r) = J_0\Big(\frac{\alpha_{0n}r}{a}\Big) .
 > $$
 >
-> **No other cases.** For $\lambda = 0$, $(r\phi')' = 0$ gives $\phi = A + B\ln r$; boundedness forces $B = 0$ and $\phi(a) = 0$ then forces $A = 0$. A negative $\lambda^2 = -\gamma^2$ gives the modified Bessel equation, whose bounded solutions $AI_0(\gamma r)$ never vanish for $r > 0$ ([[§45★ Bessel's Equation#^thm-45-10|Theorem §45.10]]), so $\phi(a) = 0$ forces $A = 0$. (Every other solution is unbounded: since $I_0 > 0$ on $(0, \infty)$, reduction of order as in [[§45★ Bessel's Equation#^thm-45-3|Theorem §45.3]] gives the second solution $I_0(\gamma r)\int dr/(r\,I_0^2(\gamma r))$, and the proof of [[§45★ Bessel's Equation#^thm-45-4|Theorem §45.4]] for $\mu = 0$ applies word for word, because $I_0(\gamma r) = 1 + O(r^2)$ just as $J_0(\lambda r)$ is: it behaves like $\ln(1/r)$.)
+> **No other cases.** For $\lambda = 0$, $(r\phi')' = 0$ gives $\phi = A + B\ln r$; boundedness forces $B = 0$ and $\phi(a) = 0$ then forces $A = 0$. A negative $\lambda^2 = -\gamma^2$ gives the modified Bessel equation, whose bounded solutions $AI_0(\gamma r)$ never vanish for $r > 0$ ([[§45★ Properties of Bessel Functions#^thm-45-10|Theorem §45.10]]), so $\phi(a) = 0$ forces $A = 0$. (Every other solution is unbounded: since $I_0 > 0$ on $(0, \infty)$, reduction of order as in [[§45★ Bessel's Equation#^thm-45-3|Theorem §45.3]] gives the second solution $I_0(\gamma r)\int dr/(r\,I_0^2(\gamma r))$, and the proof of [[§45★ Bessel's Equation#^thm-45-4|Theorem §45.4]] for $\mu = 0$ applies word for word, because $I_0(\gamma r) = 1 + O(r^2)$ just as $J_0(\lambda r)$ is: it behaves like $\ln(1/r)$.)
 >
 > **The eigenfunctions.** $\phi_n$ starts at $\phi_n(0) = 1$ and vanishes at $r = a$; inside, it vanishes where $\alpha_{0n}r/a$ is an earlier zero of $J_0$, so it has $n - 1$ zeros in $0 < r < a$ (the nodal circles of a drum). $\phi_1$ decreases from $1$ to $0$ without changing sign; $\phi_2$ changes sign at $r = (2.405/5.520)a = 0.436a$; $\phi_3$ at $r = 0.278a$ and $0.638a$. Their graphs are the piece of the blue curve in the figure above from $0$ to the $n$th zero, compressed to the interval $[0, a]$. This is the eigenvalue problem of the cylinder, [[§46★ Temperature in a Cylinder#^prop-46-1|Proposition §46.1]].
 >
@@ -186,7 +186,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 ^def-45-4
 
 > [!definition] Definition §45.4: Modified Bessel Function of the First Kind
-> The solution of the modified Bessel equation (7) ([[§45★ Bessel's Equation#^def-45-4|Definition §45.4]]) that is bounded at $r = 0$, in standard form, is the **modified Bessel function of the first kind of order $\mu$**,
+> The solution of the modified Bessel equation (7) ([[§45★ Properties of Bessel Functions#^def-45-4|Definition §45.4]]) that is bounded at $r = 0$, in standard form, is the **modified Bessel function of the first kind of order $\mu$**,
 >
 > $$
 > I_\mu(\lambda r) = \Big(\frac{\lambda r}{2}\Big)^\mu\sum_{m=0}^{\infty} \frac{1}{m!\,(\mu + m)!}\Big(\frac{\lambda r}{2}\Big)^{2m} .
@@ -214,7 +214,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 
 ^pf-45-10
 
-*Uses:* [[§45★ Bessel's Equation#^thm-45-1|§45.1]], [[§45★ Bessel's Equation#^thm-45-2|§45.2]], [[§45★ Bessel's Equation#^def-45-4|Def. §45.4]], [[§45★ Bessel's Equation#^def-45-new1|Def. §45.4]]
+*Uses:* [[§45★ Bessel's Equation#^thm-45-1|§45.1]], [[§45★ Bessel's Equation#^thm-45-2|§45.2]], [[§45★ Properties of Bessel Functions#^def-45-4|Def. §45.4]], [[§45★ Properties of Bessel Functions#^def-45-new1|Def. §45.4]]
 
 > [!example] Example §45.4: A Circular Plate Cooled by Convection
 > Find the temperature in a circular plate whose faces are exposed to convection, if
@@ -225,7 +225,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§46★ Temper
 >
 > with $u$ bounded at the center; here $T$ is the temperature of the surrounding fluid, $T_1$ that of the rim, and $\gamma^2 > 0$ measures the heat loss through the faces (compare the thin plate of [[§42 Three-Dimensional Heat Equation#^ex-42-3|Example §42.3]]).
 >
-> **Reduce to the modified Bessel equation.** Put $w = u - T$. Then $\frac{1}{r}(rw')' - \gamma^2w = 0$, or $(rw')' - \gamma^2rw = 0$: equation (7) with $\mu = 0$ and $\lambda = \gamma$. Its bounded solutions are $w = AI_0(\gamma r)$: a second solution behaves like $\ln(1/r)$ at the center, as shown in [[§45★ Bessel's Equation#^ex-45-2|Example §45.2]], and is excluded just as $Y_0$ is (its standard form is called $K_0$).
+> **Reduce to the modified Bessel equation.** Put $w = u - T$. Then $\frac{1}{r}(rw')' - \gamma^2w = 0$, or $(rw')' - \gamma^2rw = 0$: equation (7) with $\mu = 0$ and $\lambda = \gamma$. Its bounded solutions are $w = AI_0(\gamma r)$: a second solution behaves like $\ln(1/r)$ at the center, as shown in [[§45★ Properties of Bessel Functions#^ex-45-2|Example §45.2]], and is excluded just as $Y_0$ is (its standard form is called $K_0$).
 >
 > **Boundary condition.** $w(a) = T_1 - T = AI_0(\gamma a)$, and $I_0(\gamma a) \ne 0$ by Theorem §45.10, so
 >

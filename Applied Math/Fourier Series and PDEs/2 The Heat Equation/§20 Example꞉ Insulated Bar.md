@@ -147,7 +147,7 @@ $$
 > u(x, 0) = a_0 + \sum_{n=1}^\infty a_n\cos(\lambda_nx) = f(x), \qquad 0 < x < a .
 > $$
 >
-> Because $\lambda_n = n\pi/a$, this is a Fourier cosine series problem (the Fourier series of the even periodic extension of $f$, [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Definition §7.4]]), and the coefficients are given by (10). For sectionally smooth $f$ the series converges to $f(x)$ wherever $f$ is continuous ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]).
+> Because $\lambda_n = n\pi/a$, this is a Fourier cosine series problem (the Fourier series of the even periodic extension of $f$, [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-4|Definition §7.4]]), and the coefficients are given by (10). For sectionally smooth $f$ the series converges to $f(x)$ wherever $f$ is continuous ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]).
 >
 > Finally, let $M$ bound the $|a_n|$ and fix $t_0 > 0$. For $t \ge t_0$, since $\lambda_n^2 \ge \lambda_1^2$, $e^{-\lambda_n^2kt} \le e^{-\lambda_n^2kt_0}e^{-\lambda_1^2k(t - t_0)}$, so
 >
@@ -159,7 +159,7 @@ $$
 
 ^pf-20-2
 
-*Uses:* [[§20 Example꞉ Insulated Bar#^thm-20-1|§20.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]]
+*Uses:* [[§20 Example꞉ Insulated Bar#^thm-20-1|§20.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-4|§19.4]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|§19.5]], [[§7a Even and Odd Functions; Half-Range Expansions#^def-7-4|Def. §7.4]], [[§8 Convergence of Fourier Series#^thm-8-1|§8.1]]
 
 > [!remark] Remark: Why the Limit Is the Average
 > The limit $a_0$ is the average of the initial temperature, and the reason is conservation of heat. The total heat in the rod is $\rho cA\int_0^au(x, t)\,dx$, and by the heat equation and the boundary conditions

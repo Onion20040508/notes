@@ -8,7 +8,7 @@ tags: [multivariable-analysis, hub]
 ![[§22 The Algebra of Differential Forms#^thm-22-5]]
 
 ## Treated in
-- [[§22 The Algebra of Differential Forms#^thm-22-5|Theorem §22.5: d² = 0]], in [[§22 The Algebra of Differential Forms]]
+- [[§22a The Exterior Derivative#^thm-22-5|Theorem §22.5: d² = 0]], in [[§22a The Exterior Derivative]]
 
 ## Its proof uses
 - [[§5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1: Schwarz–Clairaut]]

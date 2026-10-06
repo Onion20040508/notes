@@ -42,7 +42,7 @@ For example, if $S$ is oriented upward, $C$ is traversed counterclockwise as vie
 >
 > **Special case: $S$ is a graph.** Assume $S$ has equation $z = g(x, y)$, $(x, y) \in D$, where $g$ has continuous second-order partial derivatives and $D$ is a simple plane region ([[§110 Green's Theorem#^def-110-2|Definition §110.2]]) whose boundary curve $C_1$ corresponds to $C$. Orient $S$ upward; then the positive orientation of $C$ corresponds to the positive orientation of $C_1$. Let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$, with continuous partial derivatives.
 >
-> **The surface integral.** Apply Formula 10 of [[§113 Surface Integrals#^thm-113-4|Theorem §113.4]] with $\mathbf{F}$ replaced by $\operatorname{curl}\mathbf{F}$ ([[§111 Curl and Divergence#^def-111-1|Definition §111.1]]):
+> **The surface integral.** Apply Formula 10 of [[§113a Oriented Surfaces and Flux#^thm-113-4|Theorem §113.4]] with $\mathbf{F}$ replaced by $\operatorname{curl}\mathbf{F}$ ([[§111 Curl and Divergence#^def-111-1|Definition §111.1]]):
 >
 > $$
 > \iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S} = \iint_D \left[ -\left( \frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z} \right)\frac{\partial z}{\partial x} - \left( \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x} \right)\frac{\partial z}{\partial y} + \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \right] dA , \qquad (2)
@@ -79,7 +79,7 @@ For example, if $S$ is oriented upward, $C$ is traversed counterclockwise as vie
 
 ^pf-114-1
 
-*Uses:* [[§114 Stokes' Theorem#^def-114-1|Def. §114.1]], [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§108 Line Integrals#^thm-108-7|§108.7]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§94 The Chain Rule#^thm-94-3|§94.3]] (Chain Rule), [[§92 Partial Derivatives#^thm-92-2|§92.2]] (Clairaut's Theorem)
+*Uses:* [[§114 Stokes' Theorem#^def-114-1|Def. §114.1]], [[§113a Oriented Surfaces and Flux#^thm-113-4|§113.4]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§110 Green's Theorem#^thm-110-1|§110.1]], [[§110 Green's Theorem#^def-110-2|Def. §110.2]], [[§108a Line Integrals of Vector Fields#^thm-108-7|§108.7]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§94 The Chain Rule#^thm-94-3|§94.3]] (Chain Rule), [[§92 Partial Derivatives#^thm-92-2|§92.2]] (Clairaut's Theorem)
 
 ![[m233-114-1.svg]]
 *The special case in the proof. $S$ (blue) is the graph of $g$ over the plane region $D$ (gray), oriented upward, and its boundary $C$ sits directly above the boundary $C_1$ of $D$. Both run counterclockwise seen from above, so the walker on $C$ with head along $\mathbf{n}$ has $S$ on the left. Substituting $z = g(x, y)$ pushes the line integral down from $C$ to $C_1$, where Green's Theorem applies.*
@@ -122,7 +122,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 > 1. **For a line integral $\oint_C \mathbf{F} \cdot d\mathbf{r}$ around a closed space curve:** compute $\operatorname{curl}\mathbf{F}$, and choose the simplest surface $S$ with boundary $C$, usually the flat piece of a plane (a disk, an ellipse, a polygon) or a piece of a surface on which $C$ lies.
 > 2. **For the flux of a curl $\iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S}$:** either compute $\oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$ directly, or replace $S$ by a simpler surface with the same boundary ([[§114 Stokes' Theorem#^cor-114-2|Corollary §114.2]]).
 > 3. **Match the orientations** ([[§114 Stokes' Theorem#^def-114-1|Definition §114.1]]): counterclockwise from above goes with the upward normal; for a curve described "as viewed from the positive $x$-axis", the matching normal points toward $+x$.
-> 4. **Evaluate** with Formula 9 or 10 ([[§113 Surface Integrals#^thm-113-3|Theorem §113.3]], [[§113 Surface Integrals#^thm-113-4|Theorem §113.4]]); on a horizontal disk $\operatorname{curl}\mathbf{F} \cdot \mathbf{k}$ is just the $\mathbf{k}$-component, and if it is constant the answer is that constant times the area.
+> 4. **Evaluate** with Formula 9 or 10 ([[§113a Oriented Surfaces and Flux#^thm-113-3|Theorem §113.3]], [[§113a Oriented Surfaces and Flux#^thm-113-4|Theorem §113.4]]); on a horizontal disk $\operatorname{curl}\mathbf{F} \cdot \mathbf{k}$ is just the $\mathbf{k}$-component, and if it is constant the answer is that constant times the area.
 
 ^rem-114-2
 
@@ -292,7 +292,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 
 ^pf-114-3
 
-*Uses:* [[§114 Stokes' Theorem#^thm-114-1|§114.1]], [[§114 Stokes' Theorem#^def-114-2|Def. §114.2]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§113 Surface Integrals#^def-113-7|Def. §113.7]]
+*Uses:* [[§114 Stokes' Theorem#^thm-114-1|§114.1]], [[§114 Stokes' Theorem#^def-114-2|Def. §114.2]], [[§111 Curl and Divergence#^def-111-1|Def. §111.1]], [[§113a Oriented Surfaces and Flux#^def-113-7|Def. §113.7]]
 
 > [!remark]- Connections
 > - See also: [[§124★ Two-Dimensional Fluid Flow#^prop-124-2|342 Prop. §124.2]] (the planar case: the rotation of a plane flow as the limiting angular speed on small circles).
@@ -341,4 +341,4 @@ Stokes' Theorem supplies the proof, announced in [[§111 Curl and Divergence|§1
 *Uses:* [[§114 Stokes' Theorem#^thm-114-1|§114.1]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|§109.2]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|§109.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment, with a different proof that avoids surfaces: on a star-shaped domain (such as $\mathbb{R}^3$) every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]); for 1-forms on $\mathbb{R}^3$ "closed" means $\operatorname{curl}\mathbf{F} = \mathbf{0}$ and "exact" means conservative ([[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]]). The plane analog is [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]].
+> - Rigorous treatment, with a different proof that avoids surfaces: on a star-shaped domain (such as $\mathbb{R}^3$) every closed form is exact, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]] ([[Poincaré Lemma]]); for 1-forms on $\mathbb{R}^3$ "closed" means $\operatorname{curl}\mathbf{F} = \mathbf{0}$ and "exact" means conservative ([[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]]). The plane analog is [[§110a Extended Versions of Green's Theorem#^thm-110-5|Theorem §110.5]].

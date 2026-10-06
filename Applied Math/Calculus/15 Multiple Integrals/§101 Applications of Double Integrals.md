@@ -15,7 +15,7 @@ Volume is one application of double integrals. This section gives the physical a
 
 ## Density and Mass
 
-In [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]] single integrals gave the moments and center of mass of a thin plate (lamina) of constant density. With double integrals the density may vary.
+In [[§54a Moments and Centers of Mass#^thm-54-5|Theorem §54.5]] single integrals gave the moments and center of mass of a thin plate (lamina) of constant density. With double integrals the density may vary.
 
 > [!definition] Definition §101.1: Density of a Lamina
 > Suppose a lamina occupies a region $D$ of the $xy$-plane and its **density** (in units of mass per unit area) at a point $(x, y)$ of $D$ is $\rho(x, y)$, where $\rho$ is continuous on $D$. That is,
@@ -56,7 +56,7 @@ In [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]] sin
 
 ## Moments and Centers of Mass
 
-The moment of a particle about an axis is its mass times its directed distance from the axis ([[§54 Applications to Physics and Engineering#^def-54-3|Definition §54.3]]). The mass of $R_{ij}$ is about $\rho(x_{ij}^*, y_{ij}^*)\,\Delta A$, so its moment about the $x$-axis is about $[\rho(x_{ij}^*, y_{ij}^*)\,\Delta A]\,y_{ij}^*$.
+The moment of a particle about an axis is its mass times its directed distance from the axis ([[§54a Moments and Centers of Mass#^def-54-3|Definition §54.3]]). The mass of $R_{ij}$ is about $\rho(x_{ij}^*, y_{ij}^*)\,\Delta A$, so its moment about the $x$-axis is about $[\rho(x_{ij}^*, y_{ij}^*)\,\Delta A]\,y_{ij}^*$.
 
 > [!definition] Definition §101.3: Moments of a Lamina
 > The **moment** of the lamina **about the $x$-axis** and **about the $y$-axis** are
@@ -135,7 +135,7 @@ Physically, the lamina behaves as if its entire mass were concentrated at its ce
 > \bar y = \frac1m \iint_D y\rho\,dA = \frac{3}{K\pi a^3} \int_0^{\pi} \int_0^a (r\sin\theta)(Kr)\,r\,dr\,d\theta = \frac{3}{\pi a^3} \int_0^{\pi} \sin\theta\,d\theta \int_0^a r^3\,dr = \frac{3}{\pi a^3} \cdot 2 \cdot \frac{a^4}{4} = \frac{3a}{2\pi} .
 > $$
 >
-> The center of mass is $\big(0, \frac{3a}{2\pi}\big)$. For the same semicircle with uniform density the center of mass is $\big(0, \frac{4a}{3\pi}\big)$ (Stewart's Example 8.3.4, [[§54 Applications to Physics and Engineering#^ex-54-3|Example §54.3]]); here the density grows toward the rim and the center of mass is higher.
+> The center of mass is $\big(0, \frac{3a}{2\pi}\big)$. For the same semicircle with uniform density the center of mass is $\big(0, \frac{4a}{3\pi}\big)$ (Stewart's Example 8.3.4, [[§54a Moments and Centers of Mass#^ex-54-3|Example §54.3]]); here the density grows toward the rim and the center of mass is higher.
 >
 > *Stewart: Example 15.4.3*
 

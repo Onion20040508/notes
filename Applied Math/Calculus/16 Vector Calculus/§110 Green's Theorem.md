@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 16.4 · MATH 233 (UMass, Spring 2023): Practice Final Exam (Q2), Chapter 16 Review (Q6(a)).*
 
-Green's Theorem turns a line integral around a [[§109 The Fundamental Theorem for Line Integrals#^def-109-4|simple closed curve]] $C$ into a double integral over the region $D$ that $C$ bounds. It is the Fundamental Theorem of Calculus one dimension up: an integral of derivatives over $D$ equals boundary values of the original functions, integrated over $\partial D$. It is used in both directions. A line integral that would need several parametrizations becomes one double integral, and an area becomes a line integral around the boundary. Cutting regions into pieces extends it to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in [[§109 The Fundamental Theorem for Line Integrals|§109]] (the converse of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]).
+Green's Theorem turns a line integral around a [[§109a Conservative Vector Fields and Potential Functions#^def-109-4|simple closed curve]] $C$ into a double integral over the region $D$ that $C$ bounds. It is the Fundamental Theorem of Calculus one dimension up: an integral of derivatives over $D$ equals boundary values of the original functions, integrated over $\partial D$. It is used in both directions. A line integral that would need several parametrizations becomes one double integral, and an area becomes a line integral around the boundary. Cutting regions into pieces extends it to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in [[§109 The Fundamental Theorem for Line Integrals|§109]] (the converse of [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]).
 
 ## Green's Theorem
 
@@ -52,7 +52,7 @@ Green's Theorem turns a line integral around a [[§109 The Fundamental Theorem f
 > \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA = \oint_{\partial D} P\,dx + Q\,dy .
 > $$
 >
-> The left side of the first equation is $\oint_C \mathbf{F} \cdot d\mathbf{r}$ for $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ ([[§108 Line Integrals#^thm-108-7|Theorem §108.7]]).
+> The left side of the first equation is $\oint_C \mathbf{F} \cdot d\mathbf{r}$ for $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ ([[§108a Line Integrals of Vector Fields#^thm-108-7|Theorem §108.7]]).
 >
 > *Stewart: 16.4, Green's Theorem and Equation 1*
 
@@ -136,7 +136,7 @@ Green's Theorem is not easy to prove in general. Stewart proves it for simple re
 
 > [!remark] Remark: Method — Using Green's Theorem
 > 1. **Check the curve.** $C$ must be closed, simple and piecewise smooth. Find its orientation: counterclockwise, with $D$ on the left, is positive. If $C$ is traversed clockwise, then $\oint_C P\,dx + Q\,dy = -\iint_D (Q_x - P_y)\,dA$.
-> 2. **Check the field.** $P$ and $Q$ must have continuous partial derivatives on an open region containing *all* of $D$. A point of $D$ where $P$ or $Q$ is undefined ([[§110 Green's Theorem#^ex-110-5|Example §110.5]]) rules out a direct application.
+> 2. **Check the field.** $P$ and $Q$ must have continuous partial derivatives on an open region containing *all* of $D$. A point of $D$ where $P$ or $Q$ is undefined ([[§110a Extended Versions of Green's Theorem#^ex-110-5|Example §110.5]]) rules out a direct application.
 > 3. **Compute** $\dfrac{\partial Q}{\partial x} - \dfrac{\partial P}{\partial y}$. Terms of $P$ that depend on $x$ alone and terms of $Q$ that depend on $y$ alone drop out, however complicated they are.
 > 4. **Evaluate the double integral**, choosing coordinates that fit $D$: polar coordinates for disks, annuli and sectors ([[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]]), and area formulas when the integrand is constant.
 > 5. **Reverse direction.** Sometimes the line integral is the easier side: areas ([[§110 Green's Theorem#^cor-110-2|Corollary §110.2]]), or the case $P = Q = 0$ on $C$, which gives $\iint_D (Q_x - P_y)\,dA = 0$ whatever $P$ and $Q$ do inside $D$.
