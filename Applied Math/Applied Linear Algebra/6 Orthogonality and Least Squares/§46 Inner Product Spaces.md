@@ -111,18 +111,30 @@ From now on, polynomials and other functions in an inner product space are writt
 
 ## Lengths, Distances, and Orthogonality
 
-> [!definition] Definition §46.2: Length, Distance, Orthogonality in an Inner Product Space
+> [!definition] Definition §46.2: Length (Norm) in an Inner Product Space
 > Let $V$ be an inner product space. As in $\mathbb{R}^n$:
 > - the **length** (or **norm**) of $\mathbf{v}$ is $\|\mathbf{v}\| = \sqrt{\langle \mathbf{v}, \mathbf{v}\rangle}$, equivalently $\|\mathbf{v}\|^2 = \langle \mathbf{v}, \mathbf{v}\rangle$;
-> - a **unit vector** is a vector of length $1$;
-> - the **distance between $\mathbf{u}$ and $\mathbf{v}$** is $\|\mathbf{u} - \mathbf{v}\|$;
-> - $\mathbf{u}$ and $\mathbf{v}$ are **orthogonal** if $\langle \mathbf{u}, \mathbf{v}\rangle = 0$.
+> - a **unit vector** is a vector of length $1$.
 >
 > The square root exists by Axiom 4, but $\langle \mathbf{v}, \mathbf{v}\rangle$ need not be a "sum of squares", since $\mathbf{v}$ need not be in $\mathbb{R}^n$. As in [[§40 Inner Product, Length, and Orthogonality#^prop-40-2|Proposition §40.2]], $\|c\mathbf{v}\| = |c|\,\|\mathbf{v}\|$ (by Axiom 3 and [[§46 Inner Product Spaces#^prop-46-1|Proposition §46.1]](3)).
 >
 > *Lay: 6.7 (text)*
 
 ^def-46-2
+
+> [!definition] Definition §46.2: Distance in an Inner Product Space
+> Let $V$ be an inner product space. As in $\mathbb{R}^n$, the **distance between $\mathbf{u}$ and $\mathbf{v}$** is $\|\mathbf{u} - \mathbf{v}\|$.
+>
+> *Lay: 6.7 (text)*
+
+^def-46-new1
+
+> [!definition] Definition §46.2: Orthogonality in an Inner Product Space
+> Let $V$ be an inner product space. As in $\mathbb{R}^n$, $\mathbf{u}$ and $\mathbf{v}$ are **orthogonal** if $\langle \mathbf{u}, \mathbf{v}\rangle = 0$.
+>
+> *Lay: 6.7 (text)*
+
+^def-46-new2
 
 ## The Gram–Schmidt Process
 

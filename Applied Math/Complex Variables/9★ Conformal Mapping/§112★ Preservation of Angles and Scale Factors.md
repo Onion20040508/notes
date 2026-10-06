@@ -158,7 +158,7 @@ Each of the elementary functions of Chapter 3 defines a transformation that is c
 
 ^ex-112-3
 
-*Chain: the conjugate $\bar z$ earlier in [[§57 Some Consequences of the Extension#^ex-57-2|Chapter 4]]*
+*Chain: the conjugate $\bar z$ earlier in [[§29c The Function z̄|Chapter 2]] · [[§59b The Function z̄|Chapter 4]]*
 
 ## Critical Points
 

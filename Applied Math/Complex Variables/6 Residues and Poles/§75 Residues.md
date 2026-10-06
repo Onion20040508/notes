@@ -155,7 +155,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 
 ^ex-75-3
 
-*Chain (the geometric series): earlier in [[§73a The Geometric Series|Chapter 5]]*
+*Chain (the geometric series): earlier in [[§73a The Geometric Series|Chapter 5]] · later in [[§135★ Dirichlet Problem for a Disk|Chapter 12]]*
 
 > [!example] Example §75.4: Three Residues at the Origin
 > Find the residue at $z = 0$ of

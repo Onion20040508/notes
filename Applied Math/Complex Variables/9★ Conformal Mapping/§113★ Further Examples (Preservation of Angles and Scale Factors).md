@@ -135,3 +135,5 @@ This section checks the angle and scale statements of [[§112★ Preservation of
 > *B&C: Sec. 114, Exercise 3*
 
 ^ex-113-4
+
+*Chain: the function $1/z$ earlier in [[§59a The Function 1∕z|Chapter 4]] · [[§98★ Mappings by 1∕z|Chapter 8]]*

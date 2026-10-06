@@ -54,7 +54,7 @@ $$
 > \rho^2R_n'' + 2\rho R_n' - n(n+1)R_n = 0, \quad 0 < \rho < c, \qquad R_n \text{ bounded at } \rho = 0 .
 > $$
 >
-> This is a Cauchy–Euler equation ([[§1★ Homogeneous Linear Equations#^thm-1-5|Theorem §1.5]]). Trying $R = \rho^{\alpha}$ gives $\alpha(\alpha - 1) + 2\alpha - n(n+1) = (\alpha - n)(\alpha + n + 1) = 0$, so the solutions are $\rho^n$ and $\rho^{-(n+1)}$. The second is unbounded at $\rho = 0$. Hence $R_n = \rho^n$, and the product solutions are $u_n(\rho, \phi) = \rho^nP_n(\cos\phi)$.
+> This is a Cauchy–Euler equation ([[§1★ Variable Coefficients and Higher-Order Equations#^thm-1-5|Theorem §1.5]]). Trying $R = \rho^{\alpha}$ gives $\alpha(\alpha - 1) + 2\alpha - n(n+1) = (\alpha - n)(\alpha + n + 1) = 0$, so the solutions are $\rho^n$ and $\rho^{-(n+1)}$. The second is unbounded at $\rho = 0$. Hence $R_n = \rho^n$, and the product solutions are $u_n(\rho, \phi) = \rho^nP_n(\cos\phi)$.
 >
 > **The boundary condition.** The general bounded solution is the combination (5). At $\rho = c$ it must satisfy
 >
@@ -66,7 +66,7 @@ $$
 
 ^pf-50-1
 
-*Uses:* [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|§49.13]], [[§1★ Homogeneous Linear Equations#^thm-1-5|§1.5]], [[§50★ Legendre Series and Zonal Harmonics#^def-49-4|Def. §49.4]], [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|§49.9]]
+*Uses:* [[§50★ Legendre Series and Zonal Harmonics#^thm-49-13|§49.13]], [[§1★ Variable Coefficients and Higher-Order Equations#^thm-1-5|§1.5]], [[§50★ Legendre Series and Zonal Harmonics#^def-49-4|Def. §49.4]], [[§50★ Legendre Series and Zonal Harmonics#^thm-49-9|§49.9]]
 
 > [!remark]- Connections
 > - The weight $\sin\phi$ in (7) comes from the area element of the sphere $\rho = c$, $dA = c^2\sin\phi\,d\phi\,d\theta$, the boundary part of $dV = \rho^2\sin\phi\,d\rho\,d\theta\,d\phi$ in [[§105 Triple Integrals in Spherical Coordinates#^thm-105-2|Calc Thm. §105.2]]. In particular $b_0 = \frac12\int_0^{\pi} f\sin\phi\,d\phi$, the value of $u$ at the center, is the average of the boundary values over the sphere.

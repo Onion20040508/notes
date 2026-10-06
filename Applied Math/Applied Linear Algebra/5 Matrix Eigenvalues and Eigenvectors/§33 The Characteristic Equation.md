@@ -343,4 +343,4 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^ex-33-4
 
-*Chain: earlier in [[§10 Linear Models in Business, Science, and Engineering#^ex-10-3|Chapter 1]] · [[§31 Applications to Markov Chains#^ex-31-1|Chapter 4]]*
+*Chain: earlier in [[§10 Linear Models in Business, Science, and Engineering#^ex-10-3|Chapter 1]] · [[§31a The Fibonacci Numbers and the City–Suburb Migration#City and Suburbs|Chapter 4]]*

@@ -355,7 +355,7 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 
 ^ex-32-4
 
-*Chain: earlier in [[§31a The Fibonacci Numbers|Chapter 4]]*
+*Chain: earlier in [[§31a The Fibonacci Numbers and the City–Suburb Migration#The Fibonacci Numbers|Chapter 4]]*
 
 > [!example] Example §32.5: A Power Applied to a Vector
 > Let $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$. Find $A^{10}\begin{bmatrix} 1 \\ 0 \end{bmatrix}$.

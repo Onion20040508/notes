@@ -18,7 +18,7 @@ The exterior derivative $d$ takes a $k$-form to a $(k+1)$-form. It is defined by
 > df = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z} dz.
 > $$
 >
-> This is the total differential from [[§8 The Differential#^def-8-1|Section 8]] — the same $df$ we have been writing all semester.
+> This is the total differential from [[§8 The Differential#^def-8-1|Def. §8.1]] — the same $df$ we have been writing all semester.
 >
 > **On 1-forms** ($\omega = f_1 \, dx + f_2 \, dy + f_3 \, dz$): apply $d$ to each coefficient and wedge with the existing differential:
 >

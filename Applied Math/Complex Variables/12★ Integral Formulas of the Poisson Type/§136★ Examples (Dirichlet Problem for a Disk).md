@@ -117,7 +117,7 @@ These examples use the two forms of the solution of the Dirichlet problem for a 
 > T(r, \theta) = \frac{A}{r_0}(r\cos\theta) = \frac{A}{r_0}x . \qquad (5)
 > $$
 >
-> It is harmonic (linear), equals $A\cos\theta$ on $r = r_0$, and has mean $0$ at the center. Since $\partial T/\partial y = 0$, no heat flows across the plane $y = 0$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]).
+> It is harmonic (linear), equals $A\cos\theta$ on $r = r_0$, and has mean $0$ at the center. Since $\partial T/\partial y = 0$, no heat flows across the plane $y = 0$ ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]).
 >
 > *B&C: Sec. 136, Example 2; Exercise 8*
 

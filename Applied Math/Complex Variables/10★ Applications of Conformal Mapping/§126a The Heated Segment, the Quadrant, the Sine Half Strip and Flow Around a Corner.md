@@ -52,7 +52,7 @@ The half strip $-\pi/2 \le x \le \pi/2$, $y \ge 0$ and its image under $\sin z$ 
 
 ![[§121★ Temperatures in a Quadrant#^ex-121-2]]
 
-*Chain: earlier in [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)#The Sine Half Strip|Chapter 8]] · later in [[§130★ Degenerate Polygons#^ex-130-1|Chapter 11]]*
+*Chain: earlier in [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)#The Sine Half Strip|Chapter 8]] · [[§113★ Further Examples (Preservation of Angles and Scale Factors)#^ex-113-3|Chapter 9]] · later in [[§130★ Degenerate Polygons#^ex-130-1|Chapter 11]]*
 
 ## Flow Around a Corner
 

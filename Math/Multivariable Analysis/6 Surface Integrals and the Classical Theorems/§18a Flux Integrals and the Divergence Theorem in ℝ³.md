@@ -283,12 +283,12 @@ For a closed surface $\partial V$ bounding a volume $V$:
 >
 > **General domains:** If $V$ is not simple, we **decompose** $V$ into finitely many simple solid regions $V_1, \ldots, V_N$ with disjoint interiors. Apply the theorem on each $V_k$ and sum. The boundary integrals on the *internal cuts* (where $V_k$ meets $V_{k+1}$) cancel in pairs: the two sides of a cut have opposite outward normals, so their contributions are equal and opposite.
 >
-> This is the same cancellation mechanism as in the 2D case ([[Green's Theorem|Section 16, Green's theorem]]), and parallel to how we handled general regions for [[Fubini's Theorem|Fubini's theorem]] in [[§15c Fubini's Theorem|§15c]]: there we needed Type I / Type II regions ([[§15 Multivariable Integration#^def-15-12|Def. §15.12]]) for iterated integrals and subdivided general [[§15 Multivariable Integration#^def-15-14|Jordan measurable]] domains. Same idea, one dimension up.
+> This is the same cancellation mechanism as in the 2D case ([[§16 Line Integrals and Green's Theorem#^thm-16-1|§16.1, Green's theorem]]), and parallel to how we handled general regions for [[Fubini's Theorem|Fubini's theorem]] in [[§15c Fubini's Theorem|§15c]]: there we needed Type I / Type II regions ([[§15 Multivariable Integration#^def-15-12|Def. §15.12]]) for iterated integrals and subdivided general [[§15 Multivariable Integration#^def-15-14|Jordan measurable]] domains. Same idea, one dimension up.
 
 ^rem-18-8
 
 > [!remark] Remark: Green's Identities Revisited
-> With the 3D Divergence Theorem now proved, the Green's identities from [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities|Section 17]] follow immediately for domains in $\mathbb{R}^3$ (not just $\mathbb{R}^n$ abstractly):
+> With the 3D Divergence Theorem now proved, the Green's identities from [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities|§17]] follow immediately for domains in $\mathbb{R}^3$ (not just $\mathbb{R}^n$ abstractly):
 > - **Green's first identity:** choose $\mathbf{u} = u \, \nabla v$ in the 3D Divergence Theorem. The proof is exactly the same computation as in [[Green's First Identity|Theorem §17.2]] — divergence of $u \nabla v$ gives $\nabla u \cdot \nabla v + u \, \Delta v$, and the boundary term gives $u \, \partial v / \partial n$.
 > - **Green's second identity:** apply the first identity twice and subtract, as in [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|Theorem §17.3]].
 >

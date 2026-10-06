@@ -27,4 +27,4 @@ The same nonzero integral shows that the continuous function $\bar z$ fails the 
 
 ![[§57 Some Consequences of the Extension#^ex-57-2]]
 
-*Chain: earlier in [[§29c The Function z̄|Chapter 2]]*
+*Chain: earlier in [[§29c The Function z̄|Chapter 2]] · later in [[§112★ Preservation of Angles and Scale Factors#^ex-112-3|Chapter 9]]*

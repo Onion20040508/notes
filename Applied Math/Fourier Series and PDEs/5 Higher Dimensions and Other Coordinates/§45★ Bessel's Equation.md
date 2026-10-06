@@ -30,7 +30,7 @@ Separating variables in polar coordinates left the radial equation $(rR')' - \mu
 ^def-45-1
 
 > [!remark]- Connections
-> - In standard form, $R'' + \frac{1}{r}R' + \big(\lambda^2 - \frac{\mu^2}{r^2}\big)R = 0$, a second-order linear equation whose coefficients are continuous on $0 < r < \infty$ but not at $r = 0$. The existence and uniqueness theorem [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]] applies on $(0, \infty)$, and the solution space there is two-dimensional; at $r = 0$, a [[§1★ Homogeneous Linear Equations#^def-1-new3|regular singular point]], solutions may blow up.
+> - In standard form, $R'' + \frac{1}{r}R' + \big(\lambda^2 - \frac{\mu^2}{r^2}\big)R = 0$, a second-order linear equation whose coefficients are continuous on $0 < r < \infty$ but not at $r = 0$. The existence and uniqueness theorem [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|331 Thm. §14.1]] applies on $(0, \infty)$, and the solution space there is two-dimensional; at $r = 0$, a [[§1★ Variable Coefficients and Higher-Order Equations#^def-1-new3|regular singular point]], solutions may blow up.
 > - The radial part of the two-dimensional Helmholtz equation $\nabla^2\phi + \lambda^2\phi = 0$ in polar coordinates ([[§35 Potential Equation#^thm-35-3|Theorem §35.3]]), which is how it arose in [[§44★ Problems in Polar Coordinates#^thm-44-2|Theorem §44.2]].
 
 > [!remark] Remark: Method — The Method of Frobenius

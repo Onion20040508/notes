@@ -7,7 +7,7 @@ tags: [multivariable-analysis, math452]
 ---
 ← [[§19 The Laplacian in Spherical Coordinates]] · ↑ [[· 6 Surface Integrals and the Classical Theorems]] · [[§21 Introduction to Differential Forms]] →
 
-Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around a closed curve $\gamma$ to a double integral over the enclosed *flat* region $D \subseteq \mathbb{R}^2$. Stokes' theorem generalizes this: it relates a line integral around the boundary $\partial S$ of a *curved* surface $S \subseteq \mathbb{R}^3$ to a surface integral over $S$.
+Green's theorem ([[§16 Line Integrals and Green's Theorem|§16]]) relates a line integral around a closed curve $\gamma$ to a double integral over the enclosed *flat* region $D \subseteq \mathbb{R}^2$. Stokes' theorem generalizes this: it relates a line integral around the boundary $\partial S$ of a *curved* surface $S \subseteq \mathbb{R}^3$ to a surface integral over $S$.
 
 ## Statement
 
@@ -46,7 +46,7 @@ Green's theorem ([[Green's Theorem|Section 16]]) relates a line integral around 
 >
 > by the [[Multivariable Chain Rule|chain rule]] (the third component uses $\frac{d}{dt}h(x(t), y(t)) = h_x x' + h_y y'$).
 >
-> Now recall from [[§16 Line Integrals and Green's Theorem#^def-16-2|Section 16]] the definition of the line integral: if a curve is parametrized by $\mathbf{r}(t)$, then $d\mathbf{r} = \mathbf{r}\,'(t) \, dt$, so
+> Now recall from [[§16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]] the definition of the line integral: if a curve is parametrized by $\mathbf{r}(t)$, then $d\mathbf{r} = \mathbf{r}\,'(t) \, dt$, so
 >
 > $$
 > \oint_\Gamma \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\Gamma^*(t)) \cdot \frac{d\Gamma^*}{dt} \, dt.

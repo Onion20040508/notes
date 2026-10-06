@@ -428,7 +428,7 @@ If the differential equation (1) has a singular point at $x = l$ or $x = r$ (or 
 >
 > **Standard form.** The equation is $u'' + \frac1xu' = f$, with $k = 1/x$ singular at $x = 0$ ([[§4★ Singular Boundary Value Problems#^ex-4-1|Example §4.1]](b)).
 >
-> **Solutions.** The homogeneous equation has the general solution $u = c_1 + c_2\ln(x)$ ([[§1★ Homogeneous Linear Equations#^ex-1-3|Example §1.3]](c)). Choose $u_1(x) = 1$, bounded at $x = 0$, and $u_2(x) = \ln(x)$, which is $0$ at $x = 1$. Their Wronskian is $W(z) = 1\cdot\frac1z - \ln(z)\cdot0 = \frac1z$.
+> **Solutions.** The homogeneous equation has the general solution $u = c_1 + c_2\ln(x)$ ([[§1★ Variable Coefficients and Higher-Order Equations#^ex-1-3|Example §1.3]](c)). Choose $u_1(x) = 1$, bounded at $x = 0$, and $u_2(x) = \ln(x)$, which is $0$ at $x = 1$. Their Wronskian is $W(z) = 1\cdot\frac1z - \ln(z)\cdot0 = \frac1z$.
 >
 > **Green's function.** By (17),
 >

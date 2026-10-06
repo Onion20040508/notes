@@ -113,7 +113,7 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 **Geometric meaning:** At a regular point, the $u$-curves and $v$-curves cross transversally, spanning a 2D tangent plane. If $\mathbf{X}_u$ and $\mathbf{X}_v$ are parallel (or one is zero), the two families of curves are tangent to each other — they fail to sweep out a genuine 2D surface at that point, and the parametrization degenerates.
 
 > [!remark] Remark: Regularity as a Rank Condition on the Derivative
-> The regularity condition is best understood through the differentiability framework of [[§6 Differentiability|Section 6]], applied to $\mathbf{X}: \mathbb{R}^2 \to \mathbb{R}^3$.
+> The regularity condition is best understood through the differentiability framework of [[§6 Differentiability|§6]], applied to $\mathbf{X}: \mathbb{R}^2 \to \mathbb{R}^3$.
 >
 > **The derivative of $\mathbf{X}$.** Differentiability of $\mathbf{X}$ at $(u_0, v_0)$ ([[§6 Differentiability#^def-6-1|Def. §6.1]]) means:
 >
@@ -135,8 +135,8 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 > So the surface is differentiable in all three cases (the linear approximation exists), but **regularity ensures the approximation is full-dimensional** — that it is actually approximating a *surface* and not a lower-dimensional object.
 >
 > **Parallel to earlier results.** This is the same idea as the change of variables theorem and the IFT:
-> - In the **change of variables** ([[Change of Variables Formula (multiple integrals)|Section 15]]), $J \neq 0$ means the $2 \times 2$ Jacobian has rank 2, ensuring the map is locally invertible.
-> - In the **IFT/Inverse FT** (Sections [[§12 The Implicit Function Theorem#^thm-12-2|12]]–[[Inverse Function Theorem (several variables)|13]]), the nonvanishing determinant ensures the derivative has full rank.
+> - In the **change of variables** ([[§15d The Change of Variables Formula|§15d]]), $J \neq 0$ means the $2 \times 2$ Jacobian has rank 2, ensuring the map is locally invertible.
+> - In the **IFT/Inverse FT** (Sections [[§12 The Implicit Function Theorem|§12]]–[[§13 The Inverse Function Theorem|§13]]), the nonvanishing determinant ensures the derivative has full rank.
 > - Here, $\mathbf{X}_u \times \mathbf{X}_v \neq \mathbf{0}$ means the $3 \times 2$ Jacobian has rank 2, ensuring the parametrization is locally injective (an **immersion**) — it does not collapse any direction.
 >
 > This also explains why $\det(G) = |\mathbf{X}_u \times \mathbf{X}_v|^2$ appears in the area formula ([[Surface Area via the Gram Matrix|Theorem §18.1]]): it measures how much 2D area the derivative preserves. When $\det(G) = 0$, the derivative crushes some 2D area to zero — exactly the degenerate case.

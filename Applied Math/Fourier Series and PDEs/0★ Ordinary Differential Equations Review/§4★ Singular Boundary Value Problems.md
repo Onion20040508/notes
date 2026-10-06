@@ -16,7 +16,7 @@ A boundary value problem is singular when an endpoint of the interval is a singu
 
 > [!definition] Definition §4.1: Singular Boundary Value Problem
 > A boundary value problem is **singular** if
-> 1. an endpoint of the interval of interest is a singular point of the differential equation ([[§1★ Homogeneous Linear Equations#^def-1-6|Definition §1.6]]), or
+> 1. an endpoint of the interval of interest is a singular point of the differential equation ([[§1★ Variable Coefficients and Higher-Order Equations#^def-1-6|Definition §1.6]]), or
 > 2. the interval is infinitely long.
 >
 > *Powers: 0.4 (text)*
@@ -25,7 +25,7 @@ A boundary value problem is singular when an endpoint of the interval is a singu
 
 ## Regular Singular Points
 
-Recall ([[§1★ Homogeneous Linear Equations#^def-1-new3|Definition §1.6]]) that $x_0$ is a regular singular point of $u'' + k(x)u' + p(x)u = f(x)$ if $k(x)$ or $p(x)$ or both become infinite as $x \to x_0$, but $(x - x_0)k(x)$ and $(x - x_0)^2p(x)$ both have Taylor series expansions centered at $x_0$.
+Recall ([[§1★ Variable Coefficients and Higher-Order Equations#^def-1-new3|Definition §1.6]]) that $x_0$ is a regular singular point of $u'' + k(x)u' + p(x)u = f(x)$ if $k(x)$ or $p(x)$ or both become infinite as $x \to x_0$, but $(x - x_0)k(x)$ and $(x - x_0)^2p(x)$ both have Taylor series expansions centered at $x_0$.
 
 > [!example] Example §4.1: Locating Singular Points
 > To find singular points, first divide by the coefficient of $u''$ to reach the form $u'' + ku' + pu = f$.
@@ -44,7 +44,7 @@ Recall ([[§1★ Homogeneous Linear Equations#^def-1-new3|Definition §1.6]]) th
 >
 > **(d)** $\dfrac1{\rho^2}\dfrac{d}{d\rho}\Big(\rho^2\dfrac{du}{d\rho}\Big) = -\lambda^2u$, the radial part of a spherical problem. Then $u'' + \frac2\rho u' + \lambda^2u = 0$, and $\rho k = 2$, $\rho^2p = \lambda^2\rho^2$: $\rho = 0$ is a regular singular point.
 >
-> The Cauchy–Euler equation of [[§1★ Homogeneous Linear Equations#^def-1-5|Definition §1.5]] is another example, with a regular singular point at the origin.
+> The Cauchy–Euler equation of [[§1★ Variable Coefficients and Higher-Order Equations#^def-1-5|Definition §1.5]] is another example, with a regular singular point at the origin.
 >
 > *Powers: 0.4, Example (regular singular point); Exercise 0.4.1*
 

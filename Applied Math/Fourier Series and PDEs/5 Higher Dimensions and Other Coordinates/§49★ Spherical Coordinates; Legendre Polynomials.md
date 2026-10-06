@@ -113,7 +113,7 @@ $$
 > (1 - x^2)y'' - 2xy' + \mu^2y = 0, \qquad -1 < x < 1 ,
 > $$
 >
-> is **Legendre's equation**. Its points $x = \pm1$ are [[§1★ Homogeneous Linear Equations#^def-1-6|singular points]], and in the boundary value problems of this chapter $y$ is required to be bounded at $x = 1$ and at $x = -1$. In self-adjoint form it reads $\big((1 - x^2)y'\big)' + \mu^2y = 0$.
+> is **Legendre's equation**. Its points $x = \pm1$ are [[§1★ Variable Coefficients and Higher-Order Equations#^def-1-6|singular points]], and in the boundary value problems of this chapter $y$ is required to be bounded at $x = 1$ and at $x = -1$. In self-adjoint form it reads $\big((1 - x^2)y'\big)' + \mu^2y = 0$.
 >
 > *Powers: 5.9, Equation (5) and the text after (5)*
 

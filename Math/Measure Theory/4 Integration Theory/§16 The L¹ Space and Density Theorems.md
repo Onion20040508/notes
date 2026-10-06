@@ -137,7 +137,7 @@ tags: [measure-theory, math551]
 > - (i)–(ii) are [[§15 The General Lebesgue Integral#^thm-15-2|Theorem §15.2]], (iii) is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]], (iv) is [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|Proposition §14.11]] with [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]].
 > - Norm axioms: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]]; the linear-algebra model is [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]] and the [[Triangle inequality]] (LADR 6.17), though the $L^1$ norm does not come from an inner product. Generalized in [[§19a Lᵖ as a Banach Space#^thm-19-10|Theorem §19.10]].
 
-> [!definition] Definition §16.3: $L^1$ Metric
+> [!definition] Definition §16.2: $L^1$ Metric
 > Define $d(f, g) = \|f - g\|_1 = \int_E |f - g|\,dx$. Then $d$ is a [[§11 Metric Topology#^def-11-1|metric]] on $L^1(E)$ (with the convention that $f = g$ if $f = g$ a.e.), and $(L^1(E), d)$ is a metric space.
 
 ^def-16-2

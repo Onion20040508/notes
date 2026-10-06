@@ -238,3 +238,5 @@ This section proves the key geometric fact about $w = 1/z$: **it carries circles
 > *B&C: Sec. 98, Exercise 14*
 
 ^ex-98-5
+
+*Chain: the function $1/z$ earlier in [[§59a The Function 1∕z|Chapter 4]] · later in [[§113★ Further Examples (Preservation of Angles and Scale Factors)#^ex-113-4|Chapter 9]]*

@@ -104,7 +104,7 @@ $$
 > r^2R'' + rR' - n^2R = 0, \qquad 0 < r < c .
 > $$
 >
-> This is a Cauchy–Euler equation ([[§1★ Homogeneous Linear Equations#^thm-1-5|Theorem §1.5]]), whose solutions have the form $R(r) = r^\alpha$ with $\alpha$ constant. Substituting $R = r^\alpha$, $R' = \alpha r^{\alpha-1}$, $R'' = \alpha(\alpha - 1)r^{\alpha-2}$ leaves
+> This is a Cauchy–Euler equation ([[§1★ Variable Coefficients and Higher-Order Equations#^thm-1-5|Theorem §1.5]]), whose solutions have the form $R(r) = r^\alpha$ with $\alpha$ constant. Substituting $R = r^\alpha$, $R' = \alpha r^{\alpha-1}$, $R'' = \alpha(\alpha - 1)r^{\alpha-2}$ leaves
 >
 > $$
 > \big(\alpha(\alpha - 1) + \alpha - n^2\big)r^\alpha = 0, \qquad 0 < r < c .
@@ -130,7 +130,7 @@ $$
 
 ^pf-39-2
 
-*Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§1★ Homogeneous Linear Equations#^thm-1-5|§1.5]] (Cauchy–Euler), [[§35 Potential Equation#^ex-35-3|Ex. §35.3]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]] (Fourier coefficients)
+*Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§1★ Variable Coefficients and Higher-Order Equations#^thm-1-5|§1.5]] (Cauchy–Euler), [[§35 Potential Equation#^ex-35-3|Ex. §35.3]], [[§6 Periodic Functions and Fourier Series#^def-6-2|Def. §6.2]] (Fourier coefficients)
 
 > [!remark]- Connections
 > - Complex-variables version: [[§135★ Dirichlet Problem for a Disk#^thm-135-1|342 Thm. §135.1]] (the same Dirichlet problem solved by the Poisson integral, for piecewise continuous boundary values) and [[§135★ Dirichlet Problem for a Disk#^prop-135-4|342 Prop. §135.4]] (which expands that integral back into this series).

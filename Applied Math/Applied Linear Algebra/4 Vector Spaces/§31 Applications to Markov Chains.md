@@ -105,8 +105,6 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ^ex-31-1
 
-*Chain: earlier in [[§10 Linear Models in Business, Science, and Engineering#^ex-10-3|Chapter 1]] · later in [[§33 The Characteristic Equation#^ex-33-4|Chapter 5]]*
-
 > [!example] Example §31.2: Voting Patterns
 > The outcome of a congressional election at a voting precinct is recorded every two years by a vector $\mathbf{x} \in \mathbb{R}^3$ listing the fractions voting Democratic (D), Republican (R) and Libertarian (L). If the outcome of one election depends only on the preceding one, the sequence of these vectors may be a Markov chain. Take the stochastic matrix
 >

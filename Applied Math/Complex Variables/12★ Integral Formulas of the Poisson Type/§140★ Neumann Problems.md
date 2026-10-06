@@ -107,7 +107,7 @@ These observations suggest that $Q$ may be used to write an integral representat
 
 *Uses:* [[§140★ Neumann Problems#^lem-140-1|§140.1]], [[§135★ Dirichlet Problem for a Disk#^thm-135-1|§135.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
-The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ with insulated faces. Then (5) says that the flux of heat into the disk through its edge is proportional to $G(\theta)$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]), and (4) is the natural physical requirement that the total rate of flow of heat into the disk be zero, since the temperatures do not vary with time.
+The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ with insulated faces. Then (5) says that the flux of heat into the disk through its edge is proportional to $G(\theta)$ ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]), and (4) is the natural physical requirement that the total rate of flow of heat into the disk be zero, since the temperatures do not vary with time.
 
 > [!remark] Remark: Why the Data Must Have Mean Zero
 > If (4) fails, the integral (3) still defines a harmonic function, but by (2) its normal derivative is

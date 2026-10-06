@@ -310,7 +310,7 @@ $$
 > \frac1r\frac{d}{dr}\Big(r\frac{dv}{dr}\Big) = 0 \qquad\Longrightarrow\qquad r\frac{dv}{dr} = B \qquad\Longrightarrow\qquad v(r) = A + B\ln r \qquad (r > 0) .
 > $$
 >
-> This is the Cauchy–Euler equation of [[§1★ Homogeneous Linear Equations#^ex-1-3|Example §1.3]](c). The function $\ln r$ is harmonic everywhere except at the origin, where it is unbounded; it is the fundamental solution of the two-dimensional Laplacian, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]].
+> This is the Cauchy–Euler equation of [[§1★ Variable Coefficients and Higher-Order Equations#^ex-1-3|Example §1.3]](c). The function $\ln r$ is harmonic everywhere except at the origin, where it is unbounded; it is the fundamental solution of the two-dimensional Laplacian, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]].
 >
 > **(c) $r^n\cos(n\theta)$ and $r^n\sin(n\theta)$.** For $v = r^n\cos(n\theta)$, $n = 0, 1, 2, \ldots$,
 >

@@ -62,7 +62,7 @@ tags: [multivariable-analysis, math452]
 ^def-2-new2
 
 ![[m452-2-1.svg]]
-*The three cases of Definition [[#^def-2-3|§2.3]]–[[#^def-2-new2|§2.3]] (interior, exterior and boundary points), with the open balls $B(x,\varepsilon)$ dashed. An interior point has a ball entirely inside $E$ (green, filled); an exterior point has a ball entirely inside $E^c$ (green, empty); at a boundary point every ball, however small, meets both $E$ and $E^c$ (red).*
+*The three cases of Definition [[§2 Open and Closed Sets#^def-2-3|§2.3]]–[[§2 Open and Closed Sets#^def-2-new2|§2.3]] (interior, exterior and boundary points), with the open balls $B(x,\varepsilon)$ dashed. An interior point has a ball entirely inside $E$ (green, filled); an exterior point has a ball entirely inside $E^c$ (green, empty); at a boundary point every ball, however small, meets both $E$ and $E^c$ (red).*
 
 > [!remark]- Connections
 > - Interior in a topological space, the largest open subset: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]].

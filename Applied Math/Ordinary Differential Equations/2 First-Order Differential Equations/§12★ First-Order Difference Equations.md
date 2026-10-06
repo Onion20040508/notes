@@ -27,18 +27,25 @@ Some processes are more naturally discrete than continuous: interest is compound
 
 ^def-12-1
 
-> [!definition] Definition §12.1: Solution; Initial Condition
-> A **solution** of the difference equation (1) is a sequence of numbers $y_0, y_1, y_2, \ldots$ that satisfies the equation for each $n$. An **initial condition**
+> [!definition] Definition §12.1: Solution of a Difference Equation
+> A **solution** of the difference equation (1) is a sequence of numbers $y_0, y_1, y_2, \ldots$ that satisfies the equation for each $n$.
+>
+> *BDP: 2.9 (text)*
+
+^def-12-new1
+
+> [!definition] Definition §12.1: Initial Condition
+> An **initial condition**
 >
 > $$
 > y_0 = \alpha \qquad (2)
 > $$
 >
-> prescribes the first term of the solution sequence.
+> prescribes the first term of the solution sequence of (1).
 >
 > *BDP: 2.9 (text)*
 
-^def-12-new1
+^def-12-new6
 
 Unlike a differential equation, (1) with an initial condition always has exactly one solution: $y_1 = f(0, y_0)$, $y_2 = f(1, y_1)$, and so on, each term determined by the one before. The questions are about the behaviour of $y_n$ as $n \to \infty$.
 

@@ -15,7 +15,7 @@ The matrix $A = \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix}$, whose second row 
 
 First it shows that a product of nonzero matrices can be zero: part (c) below finds every $2 \times 2$ matrix $X$ with $AX = 0$.
 
-![[§11 Matrix Operations#^ex-11-3]]
+![[§11a Properties of Matrix Multiplication, Powers, and Transposes#^ex-11-3]]
 
 Such an $X$ then shows that $A$ has no inverse, part (b) below.
 

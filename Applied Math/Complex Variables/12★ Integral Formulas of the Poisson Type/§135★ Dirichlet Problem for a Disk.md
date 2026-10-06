@@ -181,6 +181,8 @@ The kernel and the solution can be expanded in the elementary harmonic functions
 
 *Uses:* [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§61 Convergence of Series#^ex-61-1|Ex. §61.1]] (geometric series), [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test)
 
+*Chain: the geometric series earlier in [[§73a The Geometric Series|Chapter 5]]*
+
 > [!theorem] Proposition §135.4: Series for the Solution
 > The Poisson integral transform (1) of a piecewise continuous $F$ is
 >

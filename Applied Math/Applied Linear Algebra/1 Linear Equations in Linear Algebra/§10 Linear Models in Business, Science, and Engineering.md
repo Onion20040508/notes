@@ -190,4 +190,4 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 
 ^ex-10-3
 
-*Chain: later in [[§31 Applications to Markov Chains#^ex-31-1|Chapter 4]] (a Markov chain) · [[§33 The Characteristic Equation#^ex-33-4|Chapter 5]] (eigenvalues)*
+*Chain: later in [[§31a The Fibonacci Numbers and the City–Suburb Migration#City and Suburbs|Chapter 4]] (a Markov chain) · [[§33 The Characteristic Equation#^ex-33-4|Chapter 5]] (eigenvalues)*

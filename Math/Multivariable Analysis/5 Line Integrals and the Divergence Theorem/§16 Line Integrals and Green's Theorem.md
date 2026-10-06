@@ -244,7 +244,7 @@ Let $\gamma: (x(t), y(t))$, $t \in [a, b]$ be a smooth curve bounding a domain $
 ^def-16-new1
 
 ![[m452-16-5.svg]]
-*Def. [[#^def-16-3|§16.3]] and [[#^def-16-new1|§16.3]] at one boundary point: the tangent $\mathbf{T} = (x', y')$ (blue) of the counterclockwise boundary, the outer normal $\mathbf{n}_{\text{out}} = (y', -x')$ (red, $\mathbf{T}$ turned clockwise, pointing to the right of travel and out of $D$), and the inner normal $\mathbf{n}_{\text{in}} = (-y', x')$ (gray dashed, pointing into $D$). Work integrals use $\mathbf{T}$, flux integrals use $\mathbf{n}_{\text{out}}$ — the [[§16 Line Integrals and Green's Theorem#^rem-16-4|Two Faces of Green's Theorem]].*
+*Def. [[§16 Line Integrals and Green's Theorem#^def-16-3|§16.3]] and [[§16 Line Integrals and Green's Theorem#^def-16-new1|§16.3]] at one boundary point: the tangent $\mathbf{T} = (x', y')$ (blue) of the counterclockwise boundary, the outer normal $\mathbf{n}_{\text{out}} = (y', -x')$ (red, $\mathbf{T}$ turned clockwise, pointing to the right of travel and out of $D$), and the inner normal $\mathbf{n}_{\text{in}} = (-y', x')$ (gray dashed, pointing into $D$). Work integrals use $\mathbf{T}$, flux integrals use $\mathbf{n}_{\text{out}}$ — the [[§16 Line Integrals and Green's Theorem#^rem-16-4|Two Faces of Green's Theorem]].*
 
 > [!remark]- Connections
 > - Computational version: the tangent vector $\mathbf r'(t)$, [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Calc Def. §87.2]] (with worked examples).
