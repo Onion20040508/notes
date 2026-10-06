@@ -59,7 +59,7 @@ If a function has a power series representation at $a$, its coefficients are for
 > f'''(x) = 2 \cdot 3 c_3 + 2 \cdot 3 \cdot 4 c_4 (x - a) + 3 \cdot 4 \cdot 5 c_5 (x - a)^2 + \cdots \qquad (4)
 > $$
 >
-> so $f'''(a) = 2 \cdot 3 c_3 = 3!\,c_3$. In general (Stewart: "by now you can see the pattern"), Theorem §77.1 applied $k$ times gives, for $|x - a| < R$,
+> so $f'''(a) = 2 \cdot 3 c_3 = 3!\,c_3$. In general (Stewart: "by now you can see the pattern"), [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]] applied $k$ times gives, for $|x - a| < R$,
 >
 > $$
 > f^{(k)}(x) = \sum_{n=k}^{\infty} n(n-1)\cdots(n-k+1)\, c_n (x - a)^{n-k} ,
@@ -414,7 +414,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 > \cos x = \frac{d}{dx} (\sin x) = \frac{d}{dx} \left( x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \right) = 1 - \frac{3x^2}{3!} + \frac{5x^4}{5!} - \frac{7x^6}{7!} + \cdots = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots
 > $$
 >
-> since $(2n+1)/(2n+1)! = 1/(2n)!$. By Theorem §77.1 the differentiated series converges to the derivative of $\sin x$, namely $\cos x$, and its radius of convergence is unchanged, so it converges for all $x$.
+> since $(2n+1)/(2n+1)! = 1/(2n)!$. By [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]] the differentiated series converges to the derivative of $\sin x$, namely $\cos x$, and its radius of convergence is unchanged, so it converges for all $x$.
 
 ^pf-78-8
 
@@ -477,7 +477,7 @@ These series, found by Newton by other methods, say that everything about $e^x$,
 >
 > By the Ratio Test the series converges if $|x| < 1$ and diverges if $|x| > 1$.
 >
-> **The sum is $(1 + x)^k$.** Stewart notes that showing $R_n(x) \to 0$ is quite difficult and outlines an easier proof in Exercise 97, which we carry out. Let $g(x) = \sum_{n=0}^{\infty} \binom{k}{n} x^n$ for $|x| < 1$. By Theorem §77.1, $g'(x) = \sum_{n=1}^{\infty} n \binom{k}{n} x^{n-1}$, so
+> **The sum is $(1 + x)^k$.** Stewart notes that showing $R_n(x) \to 0$ is quite difficult and outlines an easier proof in Exercise 97, which we carry out. Let $g(x) = \sum_{n=0}^{\infty} \binom{k}{n} x^n$ for $|x| < 1$. By [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]], $g'(x) = \sum_{n=1}^{\infty} n \binom{k}{n} x^{n-1}$, so
 >
 > $$
 > (1 + x) g'(x) = \sum_{n=0}^{\infty} (n+1) \binom{k}{n+1} x^n + \sum_{n=0}^{\infty} n \binom{k}{n} x^n = \sum_{n=0}^{\infty} \left[ (k - n) \binom{k}{n} + n \binom{k}{n} \right] x^n = k\, g(x) ,

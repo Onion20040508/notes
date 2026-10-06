@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 34
 chapter: 6
@@ -62,6 +63,8 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 
 ^pf-34-1
 
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[Mean Value Theorem|§29.3]]
+
 ![[m451-34-2.svg]]
 *The proof of FTC I: on each $[t_{k-1}, t_k]$ the Mean Value Theorem gives a point $x_k$ where the tangent (red) is parallel to the chord (dashed), so $g(t_k) - g(t_{k-1}) = g'(x_k)(t_k - t_{k-1})$. Summed, the increments telescope to $g(b) - g(a)$ — while the right side becomes a Riemann sum for $g'$, trapped between $L(g', P)$ and $U(g', P)$.*
 
@@ -105,6 +108,8 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 ^pf-34-2
 
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]]
+
 > [!theorem] Theorem §34.3: Integration by Parts
 > If $u, v: [a,b] \to \mathbb{R}$ are continuous, differentiable on $(a,b)$, and $u', v'$ are integrable on $[a,b]$, then
 >
@@ -127,6 +132,8 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 ^pf-34-3
 
+*Uses:* [[§34 Fundamental Theorem of Calculus#^lem-34-2|§34.2]], [[Fundamental Theorem of Calculus|§34.1]], [[§28 Basic Properties of the Derivative#^thm-28-2|§28.2]], [[§32 The Definition of the Riemann Integral#^thm-32-7|§32.7]]
+
 > [!remark]- Connections
 > - Its several-variable form is Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]], which reduces to this for n = 1.
 > - Computational version: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
@@ -135,6 +142,11 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > - Complex form around a closed contour, where the boundary term vanishes: Steps 4–5 of the proof of [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|342 Thm. §56.1]] (the Cauchy integral formula for derivatives).
 
 ## The Second Fundamental Theorem
+
+> [!remark] Remark: Orientation Convention
+> For $x < y$ we set $\int_y^x f = -\int_x^y f$; then additivity $\int_a^x = \int_a^y + \int_y^x$ holds for any order of the points, and the estimates below are valid regardless of the side from which $x$ approaches $x_0$.
+
+^rem-34-1
 
 > [!theorem] Theorem §34.4: Fundamental Theorem of Calculus II
 > If $f: [a,b] \to \mathbb{R}$ is bounded and integrable, then
@@ -152,11 +164,6 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > Likewise, $G(x) = \int_x^b f(t)\,dt$ satisfies $G'(x_0) = -f(x_0)$ (since $G = \int_a^b f - F$).
 
 ^thm-34-4
-
-> [!remark] Remark: Orientation convention
-> For $x < y$ we set $\int_y^x f = -\int_x^y f$; then additivity $\int_a^x = \int_a^y + \int_y^x$ holds for any order of the points, and the estimates below are valid regardless of the side from which $x$ approaches $x_0$.
-
-^rem-34-1
 
 > [!proof]+ Proof
 > **Continuity of $F$.** Let $M$ bound $|f|$. For any $x, y$,
@@ -183,6 +190,8 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 ^pf-34-4
 
+*Uses:* [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]], [[§33 Properties of the Riemann Integral#^thm-33-4|§33.4]], [[§33 Properties of the Riemann Integral#^thm-33-5|§33.5]], [[§17 Continuous Functions#^thm-17-1|§17.1]]
+
 ![[m451-34-1.svg]]
 *The proof in one strip: $F(x)$ is the shaded area, and the increment $F(x+h) - F(x)$ is the thin strip — of area $f(x) h$ up to an error controlled by the continuity of $f$ at $x$. Dividing by $h$: $F'(x) = f(x)$.*
 
@@ -193,7 +202,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 > - Used in ODEs: the variable-limit integrals in the solution formula for $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]], in variation of parameters, [[§18★ Variation of Parameters#^thm-18-1|331 Thm. §18.1]], and in the integral equation of Picard iteration, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].
 > - Used in PDEs: the integral of a periodic function is the same over every period, [[§6 Periodic Functions and Fourier Series#^prop-6-2|341 Prop. §6.2]] (differentiate in the endpoint).
 
-> [!example] Example §34.1: FTC I from FTC II when the derivative is continuous (HW)
+> [!example] Example §34.1: FTC I from FTC II When the Derivative Is Continuous (HW)
 > The two halves of the FTC are not independent: if $g'$ is *continuous*, FTC I follows from FTC II in three lines. Set $G(x) = \int_a^x g'(t)\,dt$. By FTC II, $G$ is continuous on $[a,b]$ and $G' = g'$ on $(a,b)$; so $G - g$ has vanishing derivative on $(a,b)$ and is constant there (§29), and the constancy extends to the closed interval by continuity of $G - g$. Evaluating the constant at both ends,
 >
 > $$
@@ -207,7 +216,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 ^rem-34-2
 
-> [!example] Example §34.2: Variable limits and the chain rule
+> [!example] Example §34.2: Variable Limits and the Chain Rule
 > Assume $f$ is continuous on $\mathbb{R}$. Show $G(x) = \displaystyle\int_0^{\sin x} f(t)\,dt$ is differentiable and compute $G'$.
 >
 > Write $G = F \circ \sin$, where $F(u) = \int_0^u f(t)\,dt$. By FTC II, $F' = f$ everywhere (continuity of $f$); by the chain rule (§28),
@@ -220,7 +229,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 
 One step deserves scrutiny (HW): the claim “$F' = f$ *everywhere*” — FTC II was stated on an interval $[a,b]$, while here $u = \sin x$ roams over $[-1,1]$, on both sides of the base point $0$. The global statement is true and worth recording: *for $f$ continuous on $\mathbb{R}$ and any fixed base point $a$, the function $F(u) = \int_a^u f\,dt$ (orientation convention for $u < a$) is differentiable on all of $\mathbb{R}$ with $F' = f$.* For $u > a$, apply FTC II on an interval $[a, b]$ containing $u$ in its interior. For $u < a$, take $[c, a] \ni u$: the convention gives $F(u) = -\int_u^a f\,dt$, and the second half of FTC II (the decreasing-limit function $G$, with its minus sign) yields $F'(u) = -(-f(u)) = f(u)$. The two signs — orientation and endpoint-direction — cancel exactly.
 
-> [!example] Example §34.3: A sliding window (HW)
+> [!example] Example §34.3: A Sliding Window (HW)
 > Let $f$ be continuous on $\mathbb{R}$ and
 >
 > $$
@@ -243,13 +252,13 @@ One step deserves scrutiny (HW): the claim “$F' = f$ *everywhere*” — FTC I
 
 ^ex-34-3
 
-> [!remark] Remark: Integration smooths
+> [!remark] Remark: Integration Smooths
 > Note the regularity ledger of the sliding window: $f$ was merely *continuous*, yet $F$ is *continuously differentiable* — integration bought one full degree of smoothness for free (FTC II's continuity clause shows this already for $F_0$: integrable $\Rightarrow$ the integral function is Lipschitz; continuous $\Rightarrow$ it is $C^1$). Averaging a function over a moving window to gain regularity is the germ of *mollification*, a standard device of analysis.
 
 ^rem-34-3
 
-> [!remark] Remark: Closing the ledger
-> FTC II is exactly the statement borrowed in §26 to prove term-by-term differentiation of power series ($\tfrac{d}{dx}\int_0^x g = g$ for continuous $g$); FTC I underwrites every explicit evaluation of integrals used in §15 (the integral test computation), §25–§26, and §31. All of those credits are now paid off. Two loans remain open at semester's end, both from sections not covered: the rigorous construction of decimal expansions (§16), and the rigorous definitions of $e^x$, $\log$, $\sin$, $\cos$ with their derivatives (Ross §37) — everything in these notes uses of them only the properties cited at the point of borrowing. (A first installment on the trigonometric loan is paid in §26: the series-defined $s$ and $c$ satisfy $s' = c$, $c' = -s$, and $s^2 + c^2 = 1$ by pure power-series calculus. And the improper-integral symbol $\int_1^\infty$, used by §15's integral test, is formally defined and its p-integral computed in §36.)
+> [!remark] Remark: Closing the Ledger
+> FTC II is exactly the statement borrowed in §26 to prove term-by-term differentiation of power series ($\tfrac{d}{dx}\int_0^x g = g$ for continuous $g$); FTC I underwrites every explicit evaluation of integrals used in §15 (the integral test computation), §25–§26, and §31. All of those credits are now paid off. Two loans remain open at semester's end, both from sections not covered: the rigorous construction of decimal expansions (§16), and the rigorous definitions of $e^x$, $\log$, $\sin$, $\cos$ with their derivatives (Ross §37) — everything in these notes uses only those of their properties cited at the point of borrowing. (A first installment on the trigonometric loan is paid in §26: the series-defined $s$ and $c$ satisfy $s' = c$, $c' = -s$, and $s^2 + c^2 = 1$ by pure power-series calculus. And the improper-integral symbol $\int_1^\infty$, used by §15's integral test, is formally defined and its p-integral computed in §36.)
 
 ^rem-34-4
 

@@ -78,7 +78,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 > f(u) \le \frac{g(x + h) - g(x)}{h} \le f(v) . \qquad (3)
 > $$
 >
-> **Case $h < 0$.** (Stewart leaves this as Exercise 87.) Now $x + h < x$. Let $u, v \in [x + h, x]$ be points where $f$ attains its minimum $m$ and maximum $M$ on $[x + h, x]$. By Definition §35.4 and (2),
+> **Case $h < 0$.** (Stewart leaves this as Exercise 87.) Now $x + h < x$. Let $u, v \in [x + h, x]$ be points where $f$ attains its minimum $m$ and maximum $M$ on $[x + h, x]$. By [[§35 The Definite Integral#^def-35-4|Definition §35.4]] and (2),
 >
 > $$
 > \frac{g(x + h) - g(x)}{h} = \frac1h \int_x^{x+h} f(t)\,dt = \frac{1}{-h} \int_{x+h}^{x} f(t)\,dt ,
@@ -182,7 +182,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 >
 > Both $F$ and $g$ are continuous on $[a, b]$ ($F$ is differentiable, hence continuous, and $g$ by Part 1). Letting $x \to a^+$ and $x \to b^-$ in (6) shows that it also holds for $x = a$ and $x = b$. So $F(x) = g(x) + C$ for all $x$ in $[a, b]$.
 >
-> Putting $x = a$ in the formula for $g$ gives $g(a) = \int_a^a f(t)\,dt = 0$ (Definition §35.4). So, using (6) with $x = b$ and $x = a$,
+> Putting $x = a$ in the formula for $g$ gives $g(a) = \int_a^a f(t)\,dt = 0$ ([[§35 The Definite Integral#^def-35-4|Definition §35.4]]). So, using (6) with $x = b$ and $x = a$,
 >
 > $$
 > F(b) - F(a) = [g(b) + C] - [g(a) + C] = g(b) - g(a) = g(b) = \int_a^b f(t)\,dt .
@@ -193,7 +193,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 *Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§26 The Mean Value Theorem#^cor-26-4|§26.4]], [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous)
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]. The numbering is swapped there: Stewart's Part 2 is 451's *FTC I* (and Stewart's Part 1 is 451's *FTC II*). It assumes only that $F$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with integrable derivative, and proves it directly from the Mean Value Theorem on each subinterval. Stewart's route through Part 1, which needs $f$ continuous, is [[§34 Fundamental Theorem of Calculus#^ex-34-1|451 Ex. §34.1]].
+> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (hub [[Fundamental Theorem of Calculus]]). The numbering is swapped there: Stewart's Part 2 is 451's *FTC I* (and Stewart's Part 1 is 451's *FTC II*). It assumes only that $F$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with integrable derivative, and proves it directly from the Mean Value Theorem on each subinterval. Stewart's route through Part 1, which needs $f$ continuous, is [[§34 Fundamental Theorem of Calculus#^ex-34-1|451 Ex. §34.1]].
 > - Lebesgue version: $F(x) - F(a) = \int_a^x F'$ exactly for absolutely continuous $F$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
 
 > [!remark] Remark: Why Part 2 Is Plausible
@@ -271,7 +271,7 @@ FTC2 allows *any* antiderivative $F$ of $f$, so one uses the simplest: the const
 > \int_{-1}^{3} \frac{1}{x^2}\,dx = \frac{x^{-1}}{-1} \Big]_{-1}^{3} = -\frac13 - 1 = -\frac43 \qquad \text{(wrong)}
 > $$
 >
-> The answer must be wrong: $f(x) = 1/x^2 \ge 0$, so by Property 6 of integrals ([[§35 The Definite Integral#^thm-35-6|Theorem §35.6]]) the integral, if it exists, is $\ge 0$. The error is that FTC2 applies to *continuous* functions, and $1/x^2$ is not continuous on $[-1, 3]$: it has an infinite discontinuity at $x = 0$. In fact $\int_{-1}^{3} \frac{1}{x^2}\,dx$ does not exist ([[§51 Improper Integrals|§51]]). (It is not even defined by Definition §35.1: $1/x^2$ is unbounded near $0$, so the Riemann sums with a sample point close to $0$ can be made arbitrarily large.)
+> The answer must be wrong: $f(x) = 1/x^2 \ge 0$, so by Property 6 of integrals ([[§35 The Definite Integral#^thm-35-6|Theorem §35.6]]) the integral, if it exists, is $\ge 0$. The error is that FTC2 applies to *continuous* functions, and $1/x^2$ is not continuous on $[-1, 3]$: it has an infinite discontinuity at $x = 0$. In fact $\int_{-1}^{3} \frac{1}{x^2}\,dx$ does not exist ([[§51 Improper Integrals|§51]]). (It is not even defined by [[§35 The Definite Integral#^def-35-1|Definition §35.1]]: $1/x^2$ is unbounded near $0$, so the Riemann sums with a sample point close to $0$ can be made arbitrarily large.)
 >
 > *Stewart: Example 5.3.9*
 

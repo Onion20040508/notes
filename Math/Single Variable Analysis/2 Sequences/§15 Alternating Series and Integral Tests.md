@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 15
 chapter: 2
@@ -16,14 +17,6 @@ tags: [real-analysis, math451]
 > $$
 
 ^thm-15-1
-
-> [!remark]- Connections
-> - Computational version: [[§73 Alternating Series and Absolute Convergence#^thm-73-1|Calc Thm. §73.1]] (with worked examples).
-
-> [!remark] Remark
-> Note first that the hypotheses force $a_n \geq 0$ for all $n$: a decreasing sequence dominates its limit ($a_n \geq \lim_m a_m = 0$; if some $a_n < 0$, all later terms would be $\leq a_n < 0$, contradicting $a_n \to 0$). Note also that the condition $a_n \to 0$ is necessary — why? — because the terms $(-1)^n a_n$ of any convergent series must tend to $0$ (§14).
-
-^rem-15-1
 
 > [!proof]+ Proof
 > We check the Cauchy criterion: for any $\varepsilon > 0$ we need $N$ such that for $m \geq n \geq N$,
@@ -52,7 +45,7 @@ tags: [real-analysis, math451]
 > (a_n - a_{n+1}) + (a_{n+2} - a_{n+3}) + \cdots \geq 0,
 > $$
 >
-> since each bracket is $\geq 0$ (decreasing) and a possible unpaired final term $+a_m$ is also $\geq 0$. Grouping instead with $a_n$ alone in front,
+> since each bracket is $\geq 0$ (decreasing) and a possible unpaired final term $+a_m$ is also $\geq 0$ (all $a_k \geq 0$; see the remark below). Grouping instead with $a_n$ alone in front,
 >
 > $$
 > a_n - (a_{n+1} - a_{n+2}) - (a_{n+3} - a_{n+4}) - \cdots \leq a_n,
@@ -62,10 +55,20 @@ tags: [real-analysis, math451]
 
 ^pf-15-1
 
+*Uses:* [[§14 Series#^thm-14-1|§14.1]]
+
 ![[m451-15-2.svg]]
 *The claim in the proof, drawn for $a_k = \tfrac1k$ from $n = 2$: the alternating tail starts with a step $+a_n$ to the right, and each later step reverses direction and is no longer than the one before. So the partial sums zigzag inside $[0, a_n]$ (shaded) and never leave it.*
 
-> [!example] Example §15.1: The alternating harmonic series
+> [!remark]- Connections
+> - Computational version: [[§73 Alternating Series and Absolute Convergence#^thm-73-1|Calc Thm. §73.1]] (with worked examples).
+
+> [!remark] Remark
+> Note first that the hypotheses force $a_n \geq 0$ for all $n$: a decreasing sequence dominates its limit ($a_n \geq \lim_m a_m = 0$; if some $a_n < 0$, all later terms would be $\leq a_n < 0$, contradicting $a_n \to 0$). Note also that the condition $a_n \to 0$ is necessary — why? — because the terms $(-1)^n a_n$ of any convergent series must tend to $0$ (§14).
+
+^rem-15-1
+
+> [!example] Example §15.1: The Alternating Harmonic Series
 > $a_n = \tfrac1n$ satisfies the conditions (decreasing, $\to 0$), so
 >
 > $$
@@ -76,7 +79,7 @@ tags: [real-analysis, math451]
 
 ^ex-15-1
 
-> [!example] Example §15.2: Convergence forces terms to die faster
+> [!example] Example §15.2: Convergence Forces Terms to Die Faster
 > Assume $(a_n)$ is decreasing and $\sum a_n$ converges. Then
 >
 > $$
@@ -119,7 +122,9 @@ tags: [real-analysis, math451]
 
 ^pf-15-2
 
-> [!remark] Remark: Neither converse holds (HW)
+*Uses:* [[§14 Series#^cor-14-2|§14.2]], [[§14 Series#^thm-14-7|§14.7]]
+
+> [!remark] Remark: Neither Converse Holds (HW)
 > Both implications between $\sum a_n$ and $\sum a_n^2$ fail in general:
 >
 > 1. $\sum a_n^2$ convergent $\not\Rightarrow$ $\sum a_n$ convergent: take $a_n = \tfrac1n$ ($\sum \tfrac{1}{n^2}$ converges, harmonic diverges).
@@ -164,13 +169,15 @@ tags: [real-analysis, math451]
 
 ^pf-15-3
 
+*Uses:* [[Monotone Convergence Theorem|§10.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|§10.3]]
+
 ![[m451-15-1.svg]]
 *The integral test for a decreasing $f$ (drawn: $f(x) = \tfrac1x$, up to $n = 6$): on each $[k, k+1]$ the red box of height $f(k)$ lies above the curve and the blue box of height $f(k+1)$ below it. Summing gives $\sum_{k=1}^{n-1} f(k) \geq \int_1^n f \geq \sum_{k=2}^{n} f(k)$, so partial sums and partial integrals are bounded together. The figure is the proof.*
 
 > [!remark]- Connections
 > - Computational version: [[§71 The Integral Test and Estimates of Sums#^thm-71-1|Calc Thm. §71.1]] (with worked examples).
 
-> [!example] Example §15.3: The p-series settled
+> [!example] Example §15.3: The p-Series Settled
 > Let $f(x) = \tfrac{1}{x^p}$, $p > 0$ — decreasing and nonnegative on $[1,\infty)$. From calculus,
 >
 > $$
@@ -199,7 +206,7 @@ tags: [real-analysis, math451]
 
 ^rem-15-3
 
-> [!example] Example §15.4: The logarithmic ladder at the boundary (HW)
+> [!example] Example §15.4: The Logarithmic Ladder at the Boundary (HW)
 > How fine is the boundary $p = 1$? **First, comparison handles the easy cases.** Since $\log n \leq \sqrt n$ eventually (§9 scale), for large $n$
 >
 > $$

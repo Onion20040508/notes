@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 19
 chapter: 3
@@ -27,7 +28,7 @@ In the $(\varepsilon, \delta)$ definition of continuity, one important point: $\
 > [!remark]- Connections
 > - Strengthened in 551 to absolute continuity, which controls finitely many disjoint intervals at once ($n = 1$ gives this definition): [[§18 Differentiation Theory#^def-18-4|551 Def. §18.4]]; the Cantor function is uniformly but not absolutely continuous ([[§18 Differentiation Theory#^rem-18-7|551 Rem. §18.7]]).
 
-> [!example] Example §19.1: The two faces of the reciprocal
+> [!example] Example §19.1: The Two Faces of the Reciprocal
 > Prove: $f(x) = \tfrac1x$ is uniformly continuous on $[a, +\infty)$ for every $a > 0$, but *not* on $(0, +\infty)$. (Different domains: different functions, different properties!)
 >
 > **Uniform continuity on $[a, +\infty)$.** For every pair $x, y \in [a,+\infty)$, bound $|f(x) - f(y)|$ in terms of $|x-y|$, then solve for $\delta$ — the same scheme as before. Start:
@@ -99,14 +100,16 @@ This is another important property of continuous functions on closed bounded int
 
 ^pf-19-1
 
-> [!remark] Remark: Why should this be true?
+*Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
+> [!remark] Remark: Why Should This Be True?
 > Giving a proof is not enough — like driving, you need to *feel* it. Here is the suggestive (non-rigorous) picture. Continuity provides, at each point $x_0$, a quantity $\delta = \delta(\varepsilon, x_0) > 0$. The choice is not unique, and it seems reasonable that a “suitable” choice is *continuous* in $x_0$. But a continuous positive function on $[a,b]$ attains a *minimum* ([[Extreme Value Theorem|Extreme Value Theorem]]), which is then positive — and this worst-case value serves as the uniform $\delta$. **This is not a proof** — but it explains the theorem, and the actual proof mirrors it: assuming failure, we hunt down the “bad places” with Bolzano–Weierstrass, just as in the proof of the Extreme Value Theorem itself. Bolzano–Weierstrass is the basis of many results — that is why it is so important.
 
 ^rem-19-2
 
 ## Uniform Continuity and Cauchy Sequences
 
-> [!example] Example §19.2: Steepness at infinity (HW)
+> [!example] Example §19.2: Steepness at Infinity (HW)
 > The closed-interval theorem needs *both* hypotheses: bounded is as essential as closed. On the closed but unbounded set $\mathbb{R}$, even the polynomial $f(x) = x^3$ fails to be uniformly continuous. Following the negation format above, take the pairs
 >
 > $$
@@ -133,8 +136,10 @@ This is another important property of continuous functions on closed bounded int
 
 ^pf-19-2
 
-> [!example] Example §19.3: Extension versus oscillation (HW)
-> **(1)** $f(x) = x^2 \sin\tfrac1x$ *is* uniformly continuous on $(0,1]$. Extend by $\tilde f(0) = 0$: continuity at $0$ holds since $|\tilde f(x) - \tilde f(0)| = |x^2 \sin\tfrac1x| \leq x^2$, so $\delta = \sqrt\varepsilon$ works ($\S 17$'s squeeze); on $(0,1]$, $\tilde f = f$ is continuous by the product and composition theorems. Apply the proposition.
+*Uses:* [[§19 Uniform Continuity#^thm-19-1|§19.1]]
+
+> [!example] Example §19.3: Extension versus Oscillation (HW)
+> **(1)** $f(x) = x^2 \sin\tfrac1x$ *is* uniformly continuous on $(0,1]$. Extend by $\tilde f(0) = 0$: continuity at $0$ holds since $|\tilde f(x) - \tilde f(0)| = |x^2 \sin\tfrac1x| \leq x^2$, so $\delta = \sqrt\varepsilon$ works (as for $x \sin\tfrac1x$ in [[§17 Continuous Functions#^ex-17-4|Example §17.4]]); on $(0,1]$, $\tilde f = f$ is continuous by the product and composition theorems. Apply the proposition.
 >
 > **(2)** By contrast, $g(x) = \sin\tfrac{1}{x^2}$ is *not* uniformly continuous on $(0,1]$, although it is bounded and the set is bounded — a third failure mode: *oscillation*. Take the pairs
 >
@@ -160,7 +165,9 @@ This is another important property of continuous functions on closed bounded int
 
 ^pf-19-3
 
-> [!remark] Remark: Warning with counterexample
+*Uses:* [[§19 Uniform Continuity#^def-19-1|Def. §19.1]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]]
+
+> [!remark] Remark: Warning with Counterexample
 > If $f$ is only continuous but not uniformly continuous, the conclusion fails. To build a counterexample, start from our non-uniformly continuous function $f(x) = \tfrac1x$ on $(0,+\infty)$. Which Cauchy sequence to take? The problem with $f$ is near $0$, so take $s_n \to 0$: say $s_n = \tfrac1n$ — Cauchy, since convergent. But
 >
 > $$
@@ -181,6 +188,8 @@ This is another important property of continuous functions on closed bounded int
 
 ^pf-19-4
 
+*Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|§10.7]], [[§19 Uniform Continuity#^thm-19-3|§19.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|§10.8]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
+
 ## A Criterion via the Derivative
 
 > [!theorem] Theorem §19.5: Bounded Derivative Implies Uniform Continuity
@@ -199,12 +208,14 @@ This is another important property of continuous functions on closed bounded int
 
 ^pf-19-5
 
+*Uses:* [[Mean Value Theorem|§29.3]]
+
 > [!example] Example §19.4: Cosine
 > $f(x) = \cos x: \mathbb{R} \to \mathbb{R}$ is uniformly continuous: $f'(x) = -\sin x$ is bounded by $1$. (As before, $\sin$, $\cos$ and their derivatives are used on credit here.)
 
 ^ex-19-4
 
-> [!remark] Remark: The converse fails
+> [!remark] Remark: The Converse Fails
 > A uniformly continuous differentiable function need not have bounded derivative. Take $f(x) = \sqrt{x}$ on $[0,1]$: it is continuous on the closed bounded interval, hence uniformly continuous there (theorem above) — and therefore also uniformly continuous on the open interval $(0,1)$. But
 >
 > $$
@@ -231,7 +242,9 @@ So each of the two theorems covers a region the other misses: near $0$, the clos
 
 ^pf-19-6
 
-> [!example] Example §19.5: The square root globally
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
+> [!example] Example §19.5: The Square Root Globally
 > $f(x) = \sqrt x$ is uniformly continuous on all of $[0, +\infty)$: on $[0,1]$ by the closed-interval theorem, on $[1, +\infty)$ by the bounded-derivative theorem, and on the union by the gluing lemma with $c = 1$. Each of the three results of this section contributes exactly the step the others cannot supply.
 
 ^ex-19-5

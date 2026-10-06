@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 24
 chapter: 4
@@ -37,7 +38,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 ## Examples and Non-Examples
 
-> [!example] Example §24.1: The geometric series converges pointwise but not uniformly
+> [!example] Example §24.1: The Geometric Series Converges Pointwise but Not Uniformly
 > Let $f_n(x) = \sum_{k=0}^n x^k = \dfrac{1 - x^{n+1}}{1-x}$ on $S = (-1,1)$. Pointwise, $f_n(x) \to f(x) = \tfrac{1}{1-x}$ for every $x \in S$. But the convergence is *not uniform*.
 >
 > *Proof.* Suppose it were. Then for every $\varepsilon > 0$ there is $N$ such that for all $n \geq N$ and all $x \in (-1,1)$,
@@ -55,7 +56,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 ![[m451-24-2.svg]]
 *The partial sums peel off near $x = 1$: each $f_n$ eventually flattens (it is a polynomial, bounded on $[0,1]$) while $\tfrac{1}{1-x}$ climbs without bound, so $\sup_x |f_n - f|$ is infinite for every $n$ — pointwise convergence at each fixed $x$, no uniformity.*
 
-> [!example] Example §24.2: The power sequence on the closed interval
+> [!example] Example §24.2: The Power Sequence on the Closed Interval
 > $f_n(x) = x^n$ on $[0,1]$ converges pointwise to the discontinuous $f$ computed above, but not uniformly. If it did: take $\varepsilon = \tfrac12$; then for $n \geq N$ and all $x \in [0,1)$, $|x^n| < \tfrac12$. Fix $n$ and let $x \to 1^-$: $x^n \to 1$, giving $1 \leq \tfrac12$. Impossible.
 
 ^ex-24-2
@@ -64,7 +65,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 > - Same sequence in 551, where it converges uniformly on every $[0, 1-\delta]$, illustrating Egorov's theorem: [[§13 Egorov's and Lusin's Theorems#^ex-13-1|551 Ex. §13.1]].
 > - Computational version: [[§9 Uniform Convergence#^ex-9-1|341 Ex. §9.1]] (continuous functions converging pointwise, not uniformly, to a step).
 
-> [!example] Example §24.3: A uniform example
+> [!example] Example §24.3: A Uniform Example
 > $f_n(x) = \tfrac1n \sin x$ converges uniformly to $f \equiv 0$ on $\mathbb{R}$: given $\varepsilon > 0$, take $N > \tfrac1\varepsilon$; then for all $n \geq N$ and *all* $x \in \mathbb{R}$,
 >
 > $$
@@ -73,7 +74,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 ^ex-24-3
 
-> [!example] Example §24.4: A two-plateau limit
+> [!example] Example §24.4: A Two-Plateau Limit
 > Let $f_n(x) = \dfrac{x^n}{n + x^n}$ on $[0, +\infty)$. *Pointwise limit:* for $0 \leq x \leq 1$, $x^n \leq 1$, so for $n \geq 2$, $|f_n(x)| \leq \tfrac1n \to 0$; for $x > 1$, $x^n \to \infty$ faster than $n$ ($n/x^n \to 0$, growth scale), so
 >
 > $$
@@ -90,7 +91,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 ^ex-24-4
 
-> [!example] Example §24.5: Shifted parabolas converge uniformly
+> [!example] Example §24.5: Shifted Parabolas Converge Uniformly
 > $f_n(x) = \left(x - \tfrac1n\right)^2$ on $[0,1]$: pointwise limit $f(x) = x^2$, and the convergence is uniform — bound the difference independently of $x$:
 >
 > $$
@@ -99,7 +100,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 ^ex-24-5
 
-> [!example] Example §24.6: Locating the worst point
+> [!example] Example §24.6: Locating the Worst Point
 > $f_n(x) = n x^n (1-x)$ on $[0,1]$: pointwise, $f \equiv 0$ (for $x \in [0,1)$, $nx^n \to 0$ by the growth scale; $f_n(0) = f_n(1) = 0$). But the convergence is *not* uniform — harder to prove. We want $\varepsilon_0$ and points $x_n$ (depending on $n$!) with $f_n(x_n) \geq \varepsilon_0$. Which points? *The maximum point of $f_n$ — the worst case.* Calculus locates it: $f_n'(x) = n^2 x^{n-1} - n(n+1)x^n = 0$ gives $x_n = \tfrac{n}{n+1}$. (The derivative is only a *search tool*; the proof below needs nothing but the evaluation.) Compute:
 >
 > $$
@@ -137,6 +138,8 @@ The last example generalizes:
 > ($\Rightarrow$) If $f_n \to f$ uniformly: for every $\varepsilon > 0$ there is $N$ such that $|f_n(x) - f(x)| < \varepsilon$ for all $n \geq N$ and all $x \in S$; taking the supremum over $x$, $M_n \leq \varepsilon$ for $n \geq N$. Hence $M_n \to 0$.
 
 ^pf-24-1
+
+*Uses:* [[§24 Uniform Convergence#^def-24-2|Def. §24.2]]
 
 > [!remark]- Connections
 > - Computational version: [[§9 Uniform Convergence#^def-9-2|341 Def. §9.2]] (uniform convergence of a Fourier series defined by this criterion: the maximum deviation $\delta_N$ tends to 0).
@@ -177,11 +180,15 @@ Now we reap the applications.
 
 ^pf-24-2
 
+*Uses:* [[§24 Uniform Convergence#^def-24-2|Def. §24.2]], [[§17 Continuous Functions#^thm-17-1|§17.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
 ![[m451-24-3.svg]]
 *The $\tfrac\varepsilon3$ argument. Uniform convergence puts the graph of one $f_N$ (blue) inside the band $f \pm \tfrac\varepsilon3$ (gray) at every point at once — in particular at $x_0$ and at $x$ (red gaps). Continuity of $f_N$ bounds the middle step from $f_N(x_0)$ to $f_N(x)$ (orange). Chaining the three steps gets from $f(x_0)$ to $f(x)$ with total change $< \varepsilon$.*
 
 > [!remark]- Connections
 > - Special case for complex power series: [[§70★ Continuity of Sums of Power Series#^thm-70-1|342 Thm. §70.1]] (the sum of a power series is continuous inside its circle of convergence).
+> - Restated in 551 for functions on a measurable set, where it is a step in the proof of Lusin's theorem: [[§12 Measurable Functions#^thm-12-16|551 Thm. §12.16]], [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].
+> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ converge uniformly, so their limit is continuous, a step in the existence proof of [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!remark] Remark
 > This retroactively explains several examples: $x^n$ on $[0,1]$ and $\tfrac{x^n}{n+x^n}$ on $[0,\infty)$ could not converge uniformly, because their limit functions are discontinuous while every $f_n$ is continuous. The contrapositive of the theorem is a quick non-uniformity test.
@@ -189,10 +196,6 @@ Now we reap the applications.
 ^rem-24-1
 
 Continuity is not the only property that survives passage to a uniform limit:
-
-> [!remark]- Connections
-> - Restated in 551 for functions on a measurable set, where it is a step in the proof of Lusin's theorem: [[§12 Measurable Functions#^thm-12-16|551 Thm. §12.16]], [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].
-> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ converge uniformly, so their limit is continuous, a step in the existence proof of [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!theorem] Proposition §24.3: Uniform Limits Preserve Boundedness (HW)
 > If every $f_n$ is bounded on $S$ and $f_n \to f$ uniformly on $S$, then $f$ is bounded on $S$.
@@ -210,12 +213,14 @@ Continuity is not the only property that survives passage to a uniform limit:
 
 ^pf-24-3
 
+*Uses:* [[§24 Uniform Convergence#^def-24-2|Def. §24.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
 > [!remark] Remark
 > This is the function-space analogue of “convergent sequences of numbers are bounded” (§9) — there too, one tail estimate plus one fixed term produced the bound. Uniformity is essential: on $(0,1]$ the truncations $f_n(x) = \min\left\{ n, \tfrac1x \right\}$ are each bounded (by $n$) and converge *pointwise* to $\tfrac1x$, which is unbounded; the convergence cannot be uniform, and the proposition is precisely what forbids it.
 
 ^rem-24-2
 
-> [!example] Example §24.7: Products do not preserve uniform convergence (HW)
+> [!example] Example §24.7: Products Do Not Preserve Uniform Convergence (HW)
 > Sums do, trivially: if $f_n \to f$ and $g_n \to g$ uniformly on $S$, then $|(f_n + g_n) - (f+g)| \leq |f_n - f| + |g_n - g|$ gives $f_n + g_n \to f + g$ uniformly. But *products fail*. Take on $\mathbb{R}$:
 >
 > $$

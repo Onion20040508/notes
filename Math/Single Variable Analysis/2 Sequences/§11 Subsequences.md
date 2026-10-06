@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 11
 chapter: 2
@@ -24,7 +25,7 @@ Consider $s_n = (-1)^n$, bounded but not convergent. All *even* terms $s_{2n} = 
 > [!remark]- Connections
 > - Same definition for sequences in a topological space: [[§16 Limit Point Compactness#^def-16-2|590 Def. §16.2]].
 
-> [!example] Example §11.1: Subsequences of simple sequences
+> [!example] Example §11.1: Subsequences of Simple Sequences
 > For $s_n = n$: the even terms $(2k)$, the squares $(k^2)$, the primes, … are all subsequences. For $s_n = 1 + (-1)^n \tfrac1n$: the sequence is not monotone, but the even-indexed subsequence $1 + \tfrac{1}{2k}$ is decreasing and the odd-indexed one $1 - \tfrac{1}{2k+1}$ is increasing — monotone subsequences extracted from a non-monotone sequence.
 
 ^ex-11-1
@@ -42,6 +43,8 @@ Consider $s_n = (-1)^n$, bounded but not convergent. All *even* terms $s_{2n} = 
 
 ^pf-11-1
 
+*Uses:* [[§11 Subsequences#^def-11-1|Def. §11.1]]
+
 > [!theorem] Corollary §11.2: A Divergence Criterion
 > If $(s_n)$ has two convergent subsequences converging to *different* limits, then $(s_n)$ does not converge.
 
@@ -51,6 +54,8 @@ Consider $s_n = (-1)^n$, bounded but not convergent. All *even* terms $s_{2n} = 
 > By contradiction: if $s_n \to s$, then by the theorem *every* convergent subsequence converges to $s$ — the two different limits would both equal $s$.
 
 ^pf-11-2
+
+*Uses:* [[§11 Subsequences#^thm-11-1|§11.1]]
 
 Two useful strengthenings, both needed silently in arguments that “pass to a further subsequence”:
 
@@ -70,6 +75,8 @@ Two useful strengthenings, both needed silently in arguments that “pass to a f
 
 ^pf-11-3
 
+*Uses:* [[§11 Subsequences#^def-11-1|Def. §11.1]]
+
 > [!theorem] Proposition §11.4: Subsequences and Infinite Limits (HW)
 > If $s_n \to +\infty$, then every subsequence $(s_{n_k})$ also satisfies $s_{n_k} \to +\infty$; similarly for $-\infty$.
 
@@ -79,6 +86,8 @@ Two useful strengthenings, both needed silently in arguments that “pass to a f
 > Given $M$, there is $N$ with $s_n > M$ for $n > N$. Since $n_k \geq k$ (proved with the definition), for all $k > N$ we have $n_k \geq k > N$, hence $s_{n_k} > M$. The case $-\infty$ is symmetric.
 
 ^pf-11-4
+
+*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]], [[§11 Subsequences#^def-11-1|Def. §11.1]]
 
 > [!remark] Remark
 > The converse of the theorem fails: convergence of *a* subsequence does not imply convergence of the sequence — $s_n = (-1)^n$ again.
@@ -135,6 +144,8 @@ This is what the example $s_n = (-1)^n$ leads us to expect.
 
 ^pf-11-5
 
+*Uses:* [[Characterization of the Supremum|§4.3]], [[Squeeze Theorem|§8.1]], [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-4|§10.4]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|Def. §10.3]]
+
 ![[m451-11-2.svg]]
 *The Bolzano–Weierstrass construction for a bounded, non-monotone sequence (gray dots) with $\limsup s_n = \overline{s}$. At step $k$ a term $s_{n_k}$ (red) is chosen inside the window $[\overline{s} - \tfrac1k,\, \overline{s} + \tfrac1k]$ (red bars), with index beyond $n_{k-1}$; the windows shrink, so $s_{n_k} \to \overline{s}$.*
 
@@ -145,24 +156,24 @@ This is what the example $s_n = (-1)^n$ leads us to expect.
 
 ^def-11-2
 
-> [!example] Example §11.2: Two subsequence limits
+> [!example] Example §11.2: Two Subsequence Limits
 > For $s_n = (-1)^n$: $\overline{s} = 1$ and $\underline{s} = -1$, and $S = \{1, -1\}$ — there are no other subsequence limits, by the argument in the next example.
 
 ^ex-11-2
 
-> [!example] Example §11.3: A limit at infinity
-> Let $s_n = e^{(-1)^n n}$. Find all subsequence limits. The even terms $e^{2k} \to +\infty$; the odd terms $e^{-(2k+1)} \to 0$. So $0, +\infty \in S$. *Why no more?* Every subsequence must contain infinitely many terms from at least one of these two special subsequences. A *convergent* (in $[-\infty,+\infty]$) subsequence must contain infinitely many from *only one* of them — otherwise it contains two sub-subsequences with the different limits $0$ and $+\infty$, contradicting the subsequence theorem — invoked here through both HW lemmas above: a sub-subsequence *is* a subsequence of the original, and the theorem extends to the limit $+\infty$. And a subsequence drawing infinitely many terms from only one of the two behaves like that one. Hence $S = \{0, +\infty\}$.
+> [!example] Example §11.3: A Limit at Infinity
+> Let $s_n = e^{(-1)^n n}$. Find all subsequence limits. The even terms $e^{2k} \to +\infty$; the odd terms $e^{-(2k+1)} \to 0$. So $0, +\infty \in S$. *Why no more?* Every subsequence must contain infinitely many terms from at least one of these two special subsequences. A *convergent* (in $[-\infty,+\infty]$) subsequence must contain infinitely many from *only one* of them — otherwise it contains two sub-subsequences with the different limits $0$ and $+\infty$, contradicting the subsequence theorem — invoked here through [[§11 Subsequences#^prop-11-3|Proposition §11.3]] and [[§11 Subsequences#^prop-11-4|Proposition §11.4]]: a sub-subsequence *is* a subsequence of the original, and the theorem extends to the limit $+\infty$. And a subsequence drawing infinitely many terms from only one of the two behaves like that one. Hence $S = \{0, +\infty\}$.
 
 ^ex-11-3
 
-> [!example] Example §11.4: All of an interval
+> [!example] Example §11.4: All of an Interval
 > The set of rational numbers in $[0,1]$ is countable (§2); make a list $(s_n)$ of them. Then $S = [0,1]$.
 >
 > Two things to prove. *Every subsequence limit belongs to $[0,1]$:* all terms lie in $[0,1]$, and limits preserve the inequalities $0 \leq s_{n_k} \leq 1$. *Every $x \in [0,1]$ is a subsequence limit*, by the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4): for each $k$, the interval $(x - \tfrac1k,\, x + \tfrac1k) \cap [0,1]$ contains infinitely many rationals, hence contains terms $s_n$ with $n$ arbitrarily large; choose inductively $n_k > n_{k-1}$ with $|s_{n_k} - x| < \tfrac1k$. Then $s_{n_k} \to x$.
 
 ^ex-11-4
 
-> [!example] Example §11.5: Designing the set of subsequence limits
+> [!example] Example §11.5: Designing the Set of Subsequence Limits
 > Produce a sequence whose set of subsequence limits is $[0, \tfrac12] \cup \{1\}$. List all rational numbers in $[0, \tfrac12]$ as the odd terms $s_{2n+1}$, and define all even terms $s_{2n} = 1$. By the arguments above, the odd part contributes exactly $[0, \tfrac12]$ and the even part contributes $\{1\}$.
 
 ^ex-11-5
@@ -195,9 +206,11 @@ This is what the example $s_n = (-1)^n$ leads us to expect.
 > s_0 = \lim_k s_{n_k} \leq \lim_k \overline{s}_{n_k} = \limsup_{n\to\infty} s_n.
 > $$
 >
-> So $\limsup s_n$ is an upper bound of $S$. Why is it *equal* to $\sup S$? Because it happens to *belong* to $S$ — that is the content of the Bolzano–Weierstrass construction (and of (1) in the unbounded case, where $\limsup s_n = +\infty$). An upper bound that lies in the set is its supremum — and its maximum. Similarly $\inf S = \liminf s_n$, attained as $\min S$; this also proves (3).
+> So $\limsup s_n$ is an upper bound of $S$. Why is it *equal* to $\sup S$? Because it happens to *belong* to $S$ — that is the content of the Bolzano–Weierstrass construction (and of (1) in the unbounded case, where $\limsup s_n = +\infty$). The construction uses only that $\limsup s_n$ is finite, so it also covers a sequence that is bounded above but not below, as long as $\limsup s_n > -\infty$; and if $\limsup s_n = -\infty$, then $s_n \leq \overline{s}_n \to -\infty$ forces $s_n \to -\infty$, so $-\infty \in S$. An upper bound that lies in the set is its supremum — and its maximum. Similarly $\inf S = \liminf s_n$, attained as $\min S$; this also proves (3).
 
 ^pf-11-6
+
+*Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§11 Subsequences#^thm-11-1|§11.1]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|Def. §10.3]]
 
 > [!remark] Remark
 > Using terms from topology (next section): $S$ is always a *closed* subset of $\mathbb{R}$. Hence $S$ can never be, e.g., an open interval $(0,1)$; but $[0,1]$ or $[0,\tfrac12] \cup \{1\}$ are fine, as the examples showed.

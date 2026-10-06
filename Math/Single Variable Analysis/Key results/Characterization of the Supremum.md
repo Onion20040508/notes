@@ -31,4 +31,4 @@ tags: [real-analysis, hub]
 
 ## Connections
 - The working form of the [[Completeness Axiom]]: to use $\sup S$ in a proof, you almost always use this proposition.
-- In the dependency graph extracted from these notes it has the largest downstream reach: about 38 later results rest on it, directly or indirectly.
+- In the dependency graph extracted from these notes it has the largest downstream reach: 40 later results rest on it, directly or indirectly (the count in [[· 1 Introduction]]).

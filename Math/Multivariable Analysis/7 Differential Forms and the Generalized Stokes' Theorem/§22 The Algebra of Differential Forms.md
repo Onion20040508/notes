@@ -278,6 +278,8 @@ The recipe is always the same: differentiate each coefficient, wedge the result 
 
 ^prop-22-2
 
+*Immediate from the case of 0-forms in [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]]; no separate proof is needed.*
+
 > [!theorem] Proposition §22.3: $d$ on 1-Forms Gives the Curl
 > For a smooth 1-form $\omega = f_1 \, dx + f_2 \, dy + f_3 \, dz$ on $\mathbb{R}^3$:
 >
@@ -425,7 +427,7 @@ Curl and divergence are **not** at the same level: curl goes from degree 1 to de
 ^thm-22-5
 
 > [!proof]+ Proof
-> It suffices to check on a 0-form $f$ (the general case follows by linearity and the product rule).
+> It suffices to check on a 0-form $f$: for $\omega = g\,dx_{i_1} \wedge \cdots \wedge dx_{i_k}$ the recipe of [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]] gives $d\omega = dg \wedge dx_{i_1} \wedge \cdots \wedge dx_{i_k}$ and then $d(d\omega) = d(dg) \wedge dx_{i_1} \wedge \cdots \wedge dx_{i_k}$, and a general $k$-form is a sum of such terms.
 >
 > Compute $d(df)$: we have $df = f_x \, dx + f_y \, dy + f_z \, dz$, so:
 >
@@ -614,6 +616,8 @@ Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\m
 
 ^prop-22-6
 
+*The notes give no separate proof: the first equality is [[§8 The Differential#^def-8-1|Def. §8.1]] read with $(h, k) = \mathbf{v}$, and the formula $Df_{\mathbf{p}}(\mathbf{v}) = \sum_i f_{x_i}(\mathbf{p})\, v_i$ is [[§6 Differentiability#^def-6-2|Def. §6.2]] (for unit $\mathbf{v}$ it is [[§6 Differentiability#^thm-6-1|Theorem §6.1]]).*
+
 > [!remark]- Connections
 > - $Df_{\mathbf{p}}$ is a linear functional on $\mathbb{R}^n$ ([[§12 Duality#^ladr-3-108|LADR 3.108]]); the gradient is the vector that represents it via the dot product, by the [[Riesz representation theorem|Riesz representation theorem (LADR 6.42)]].
 > - On a manifold with no inner product only the differential survives, not the gradient vector: [[§30 The Cotangent Space#^rem-30-2|591 §30, Differential — Not Gradient]].
@@ -640,6 +644,8 @@ Recall from [[§6 Differentiability#^def-6-1|§6]]: $f$ is differentiable at $\m
 
 ^prop-22-7
 
+*The notes state this without proof. By [[§22 The Algebra of Differential Forms#^prop-22-6|Prop. §22.6]], $Df_{\mathbf{p}+t\mathbf{u}}(\mathbf{v}) = \sum_j f_{x_j}(\mathbf{p}+t\mathbf{u})\, v_j$; differentiating each $f_{x_j}$ at $t = 0$ in the direction $\mathbf{u}$ ([[Directional Derivative Formula|directional derivative formula]]) gives $\sum_{i,j} \partial_{x_i}\partial_{x_j} f(\mathbf{p})\, u_i v_j$, and for $f \in C^2$ the order of the two partials does not matter ([[Schwarz–Clairaut Theorem|§5.1]]).*
+
 Two directions appear because we are asking two separate questions: $\mathbf{v}$ asks “which directional derivative are we looking at?” and $\mathbf{u}$ asks “in which direction are we watching it change?” The Taylor expansion from [[Multivariable Taylor's Theorem|§9]] says exactly:
 
 $$
@@ -660,6 +666,8 @@ The second derivative test in [[Second Derivative Test in Several Variables|§14
 > The symmetric part satisfies $B^{\mathrm{sym}}(\mathbf{u}, \mathbf{v}) = B^{\mathrm{sym}}(\mathbf{v}, \mathbf{u})$; the antisymmetric part satisfies $B^{\mathrm{anti}}(\mathbf{u}, \mathbf{v}) = -B^{\mathrm{anti}}(\mathbf{v}, \mathbf{u})$.
 
 ^prop-22-8
+
+*The notes state this without proof: adding the two formulas gives $B$; swapping $\mathbf{u}$ and $\mathbf{v}$ gives the two symmetry properties; and if $B = S + A$ with $S$ symmetric and $A$ antisymmetric, then $B(\mathbf{u}, \mathbf{v}) + B(\mathbf{v}, \mathbf{u}) = 2S(\mathbf{u}, \mathbf{v})$ and $B(\mathbf{u}, \mathbf{v}) - B(\mathbf{v}, \mathbf{u}) = 2A(\mathbf{u}, \mathbf{v})$, which is uniqueness.*
 
 > [!remark]- Connections
 > - This is $V^{(2)} = V^{(2)}_{\mathrm{sym}} \oplus V^{(2)}_{\mathrm{alt}}$ in LADR ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]), with antisymmetric = alternating by [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|LADR 9.16]].

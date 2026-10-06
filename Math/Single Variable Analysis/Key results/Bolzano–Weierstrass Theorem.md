@@ -31,6 +31,6 @@ tags: [real-analysis, hub]
 - [[§18 Compactness and the Unit Ball#^ex-18-1|Example §18.1: The Closed Unit Ball in 𝔽ⁿ]]
 
 ## Connections
-- Sequential compactness of bounded sets; the $\mathbb{R}^n$ version is in §13.
-- The engine behind the [[Extreme Value Theorem]] and uniform continuity on closed bounded intervals (§19). In topology it becomes 'compact ⟺ sequentially compact' for metric spaces.
+- Sequential compactness of bounded sets; the $\mathbb{R}^n$ version is [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|Theorem §13.3]].
+- The engine behind the [[Extreme Value Theorem]] and uniform continuity on closed bounded intervals ([[§19 Uniform Continuity#^thm-19-1|Theorem §19.1]]). In topology it becomes 'compact ⟺ sequentially compact' for metric spaces.
 - Topological form: for metric spaces compact, limit point compact and sequentially compact agree, [[§16 Limit Point Compactness#^thm-16-2|590 Thm. §16.2]].

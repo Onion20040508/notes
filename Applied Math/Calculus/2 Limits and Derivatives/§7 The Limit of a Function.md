@@ -137,7 +137,7 @@ Definition §7.2 differs from Definition §7.1 only in requiring $x < a$ (or $x 
 >
 > **(a), (b)** As $x$ approaches $2$ from the left, $g(x) = 3 - \frac12 (x - 2)^2$ approaches $3$. From the right, $g(x) = 2 - \frac19 (x - 5)^2$ approaches $2 - \frac19 (2 - 5)^2 = 2 - 1 = 1$. So $\lim_{x \to 2^-} g(x) = 3$ and $\lim_{x \to 2^+} g(x) = 1$.
 >
-> **(c)** The one-sided limits at $2$ are different, so $\lim_{x \to 2} g(x)$ does not exist (Theorem §8.5). ($g(2)$ is not even defined.)
+> **(c)** The one-sided limits at $2$ are different, so $\lim_{x \to 2} g(x)$ does not exist ([[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]]). ($g(2)$ is not even defined.)
 >
 > **(d), (e)** Near $5$, on both sides, $g(x) = 2 - \frac19 (x - 5)^2$, which approaches $2$. So both one-sided limits at $5$ equal $2$.
 >

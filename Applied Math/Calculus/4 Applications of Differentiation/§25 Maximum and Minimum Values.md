@@ -128,7 +128,7 @@ At a local maximum or minimum of a smooth graph the tangent line looks horizonta
 
 ^pf-25-2
 
-*Uses:* [[§25 Maximum and Minimum Values#^def-25-2|Def. §25.2]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|Theorem §8.6]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]], [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]]
+*Uses:* [[§25 Maximum and Minimum Values#^def-25-2|Def. §25.2]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|§8.6]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|§8.5]], [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-1|451 Thm. §29.1]] (Interior Extremum Theorem), with the same sign argument.
@@ -183,7 +183,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 
 ^pf-25-3
 
-*Uses:* [[§25 Maximum and Minimum Values#^thm-25-2|Theorem §25.2]], [[§25 Maximum and Minimum Values#^def-25-3|Def. §25.3]]
+*Uses:* [[§25 Maximum and Minimum Values#^thm-25-2|§25.2]], [[§25 Maximum and Minimum Values#^def-25-3|Def. §25.3]]
 
 > [!remark] Remark: Method — The Closed Interval Method
 > To find the *absolute* maximum and minimum values of a continuous function $f$ on a closed interval $[a, b]$:

@@ -275,7 +275,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 > [!example] Example §24.2: Differentiating the Logarithmic Form
 > Verify $\dfrac{d}{dx}(\sinh^{-1} x) = \dfrac{1}{\sqrt{1 + x^2}}$ from Formula 3 instead.
 >
-> By Corollary §19.4 and the Chain Rule,
+> By [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-4|Corollary §19.4]] and the Chain Rule,
 >
 > $$
 > \begin{aligned}

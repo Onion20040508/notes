@@ -8,6 +8,9 @@ tags: [linear-algebra]
 ---
 ← [[§21 Orthogonal Complements and Minimization Problems]] · ↑ [[· 7 Operators on Inner Product Spaces]] · [[§23 Spectral Theorem]] →
 
+> [!remark] Remark: Standing assumptions for Chapter 7
+> Throughout Chapter 7, $V$ and $W$ are nonzero finite-dimensional inner product spaces over $\F$ ($\F$ is $\R$ or $\C$). These are Axler's standing assumptions for the chapter; the chapter's statements use them without repeating them.
+
 > [!definition] Definition 7.1: Adjoint, T∗
 > For $T\in\Lin(V,W)$ (finite-dimensional inner product spaces), the *adjoint* $T^{\ast}:W\to V$ is defined by
 > $$
@@ -90,7 +93,7 @@ tags: [linear-algebra]
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-5|7.5]]
 
 > [!remark]- Connections
-> - Annihilator versions: [[§12 Duality#^ladr-3-128|3.128]], [[§12 Duality#^ladr-3-130|3.130]]. Dimension consequence: column rank = row rank again.
+> - Annihilator versions: [[§12 Duality#^ladr-3-128|3.128]], [[§12 Duality#^ladr-3-130|3.130]]. Dimension consequence: column rank = row rank again, via [[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d).
 > - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|235 Thm. §40.6]] (the matrix case: $(\operatorname{Row}A)^\perp=\operatorname{Nul}A$ and $(\operatorname{Col}A)^\perp=\operatorname{Nul}A^T$).
 
 %% ex:7.6-fig %%
@@ -248,7 +251,7 @@ tags: [linear-algebra]
 > For $T=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $\nullsp T=\range T=\Span(e_1)$.
 
 > [!proof]+ Proof
-> Write 7.20 for "$T$ normal $\iff\|Tv\|=\|T^*v\|$ for all $v$" ([[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]).
+> Recall [[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]: $T$ is normal $\iff\|Tv\|=\|T^*v\|$ for all $v$.
 >
 > (a) $Tv=0\iff\|Tv\|=0\iff\|T^*v\|=0$. (b) $\range T=(\nullsp T^*)^\perp=(\nullsp T)^\perp=\range T^*$ by [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]. (c) $V=\nullsp T\oplus(\nullsp T)^\perp=\nullsp T\oplus\range T^*=\nullsp T\oplus\range T$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]). (d) Expanding, $(T-\lambda I)(T-\lambda I)^*=TT^*-\bar\lambda T-\lambda T^*+|\lambda|^2I$, symmetric under $TT^*\leftrightarrow T^*T$. (e) By (d) and 7.20, $\|(T-\lambda I)v\|=\|(T^*-\bar\lambda I)v\|$.
 

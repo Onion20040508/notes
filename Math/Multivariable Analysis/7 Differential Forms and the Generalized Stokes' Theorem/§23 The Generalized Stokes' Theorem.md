@@ -73,7 +73,7 @@ $$
 d\omega = \big((f_3)_y - (f_2)_z\big)\,dy \wedge dz + \big((f_1)_z - (f_3)_x\big)\,dz \wedge dx + \big((f_2)_x - (f_1)_y\big)\,dx \wedge dy.
 $$
 
-Now integrate over the surface $S$ parametrized by $\mathbf{X}(u,v)$. Each 2-form pulls back via the pullback proposition ([[§22 The Algebra of Differential Forms#^def-22-3|Def. §22.3]]):
+Now integrate over the surface $S$ parametrized by $\mathbf{X}(u,v)$. Each 2-form pulls back by the pullback of [[§22 The Algebra of Differential Forms#^def-22-3|Def. §22.3]] (the three $2 \times 2$ minors, [[§22 The Algebra of Differential Forms#^ex-22-3|Ex. §22.3]]):
 
 $$
 \begin{aligned}

@@ -23,7 +23,7 @@ tags: [topology, math590]
 >
 > **Step 1: The power map $f: S^1 \to S^1$, $z \mapsto z^n$, induces an injective homomorphism on $\pi_1$.**
 >
-> Under the [[Fundamental Group of the Circle|identification]] $\pi_1(S^1, b_0) \cong \mathbb{Z}$, the induced map $f_*: \mathbb{Z} \to \mathbb{Z}$ is multiplication by $n$: $f_*([k]) = nk$. This is injective (since $n > 0$).
+> Under the [[Fundamental Group of the Circle|identification]] $\pi_1(S^1, b_0) \cong \mathbb{Z}$, the induced map $f_*: \mathbb{Z} \to \mathbb{Z}$ is multiplication by $n$: $f_*([k]) = nk$. Indeed, for the standard loop $\omega(s) = (\cos 2\pi s, \sin 2\pi s)$ the loop $f \circ \omega(s) = (\cos 2\pi n s, \sin 2\pi n s)$ lifts to $s \mapsto ns$, which ends at $n$, so $f_*([\omega]) = [\omega]^n$; since $[\omega]$ generates $\pi_1(S^1, b_0)$ ([[§24 Covering Spaces#^thm-24-11|Theorem §24.11]]), $f_*([\omega]^k) = [\omega]^{nk}$. This is injective (since $n > 0$).
 >
 > **Step 2: If $g: S^1 \to \mathbb{R}^2 \setminus \{0\}$ is $g(z) = z^n$, then $g$ is not nullhomotopic.**
 >
@@ -69,7 +69,7 @@ tags: [topology, math590]
 
 ^pf-25-1
 
-*Uses:* [[Fundamental Group of the Circle|§24.10]], [[Functoriality of π₁|§23.5]], [[§26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[§24 Covering Spaces#^lem-24-12|§24.12]], [[§22 Homotopy of Paths#^def-22-2|Def. §22.2]]
+*Uses:* [[Fundamental Group of the Circle|§24.10]], [[§24 Covering Spaces#^thm-24-11|§24.11]], [[Functoriality of π₁|§23.5]], [[§26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[§24 Covering Spaces#^lem-24-12|§24.12]], [[§22 Homotopy of Paths#^def-22-2|Def. §22.2]]
 
 ![[m590-25-1.svg]]
 *Step 3 for $p(z) = z^3 + 0.6z$ ($n = 3$, $\sum|a_i| = 0.6$). If $p$ had no root in the blue disk $B^2$, the red loop $h = p|_{S^1}$ would extend over $B^2$ inside $\mathbb{R}^2 \setminus \{0\}$ and so be nullhomotopic. But $F(z,t) = z^3 + t \cdot 0.6z$ (gray: $t = \tfrac12$) slides the blue loop $g(z) = z^3$, which winds three times around $0$, onto $h$ without entering the gray disk $|w| < 1 - \sum|a_i| = 0.4$. So $h \simeq g$ also winds three times around $0$ and is not nullhomotopic, so $p$ must vanish somewhere in $B^2$ (here at $z = 0$).*

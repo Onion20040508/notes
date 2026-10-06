@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 17
 chapter: 3
@@ -27,7 +28,7 @@ Start with basics. Let $f: \Omega \to \mathbb{R}$ be a real-valued function defi
 > - In topological spaces, continuity implies sequential continuity, with the converse for metrizable domains: [[§11 Metric Topology#^thm-11-9|590 Thm. §11.9]].
 > - Computational version: Stewart's definition [[§10 Continuity#^def-10-1|Calc Def. §10.1]]; the sequential form, [[§69 Sequences#^thm-69-6|Calc Thm. §69.6]] (with worked examples).
 
-> [!example] Example §17.1: Linear and polynomial functions
+> [!example] Example §17.1: Linear and Polynomial Functions
 > $f(x) = 2x$ on $\Omega = \mathbb{R}$ is continuous at every $x_0$: if $x_n \to x_0$, then $f(x_n) = 2x_n \to 2x_0 = f(x_0)$ by the scalar-multiple limit theorem. More generally, every polynomial
 >
 > $$
@@ -64,10 +65,12 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^pf-17-1
 
-![[m451-17-1.svg]]
-*The $(\varepsilon, \delta)$ picture: the tolerance band $f(x_0) \pm \varepsilon$ (gray) is prescribed first; continuity provides a window $x_0 \pm \delta$ so narrow that over it the graph stays inside the band — it leaves the red box through the sides, never the top or bottom. Outside the window the graph is free to escape the band (and here it does, on both sides): $\delta$ genuinely depends on $\varepsilon$ and on $x_0$. This is the third member of a family: the $(\varepsilon, N)$ band for sequences (§9), this local window, one window-width for *all* points at once (uniform continuity, §19), and one band around a whole sequence of graphs (uniform convergence, §24).*
+*Uses:* [[§17 Continuous Functions#^def-17-1|Def. §17.1]], [[§7 Limits of Sequences#^def-7-2|Def. §7.2]]
 
-> [!remark] Remark: Solving for delta
+![[m451-17-1.svg]]
+*The $(\varepsilon, \delta)$ picture: the tolerance band $f(x_0) \pm \varepsilon$ (gray) is prescribed first; continuity provides a window $x_0 \pm \delta$ so narrow that over it the graph stays inside the band — it leaves the red box through the sides, never the top or bottom. Outside the window the graph is free to escape the band (and here it does, on both sides): $\delta$ genuinely depends on $\varepsilon$ and on $x_0$. This is the second member of a family: the $(\varepsilon, N)$ band for sequences (§7), this local window, one window-width for *all* points at once (uniform continuity, §19), and one band around a whole sequence of graphs (uniform convergence, §24).*
+
+> [!remark] Remark: Solving for Delta
 > In the $(\varepsilon,\delta)$ definition, $\delta$ depends on $\varepsilon$: we need to *solve* $\delta$ in terms of $\varepsilon$. The idea, as with sequences: start with the target $|f(x) - f(x_0)| < \varepsilon$, *simplify first* — replace $|f(x)-f(x_0)|$ by a simpler upper bound if needed — and then solve for $|x - x_0| < \delta = \delta(\varepsilon)$.
 
 ^rem-17-1
@@ -75,7 +78,7 @@ For some functions the sequential definition is not so easy to check directly �
 > [!remark]- Connections
 > - For maps between metric spaces, ε-δ continuity is equivalent to the open-set definition: [[§11 Metric Topology#^thm-11-7|590 Thm. §11.7]].
 
-> [!example] Example §17.2: A first epsilon-delta proof
+> [!example] Example §17.2: A First Epsilon-Delta Proof
 > $f(x) = 3x$ is continuous at every $x_0 \in \mathbb{R}$. How to get $\delta$? Start with
 >
 > $$
@@ -86,7 +89,7 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^ex-17-2
 
-> [!example] Example §17.3: The square root
+> [!example] Example §17.3: The Square Root
 > $f(x) = \sqrt{x}: [0,+\infty) \to \mathbb{R}$ is continuous at every $x_0 \geq 0$. Two cases.
 >
 > **Case $x_0 > 0$.** We want $|\sqrt x - \sqrt{x_0}| < \varepsilon$. By the conjugate,
@@ -109,7 +112,7 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^ex-17-3
 
-> [!example] Example §17.4: Damped oscillation
+> [!example] Example §17.4: Damped Oscillation
 > Define $f: \mathbb{R} \to \mathbb{R}$ by $f(0) = 0$ and $f(x) = x \sin \tfrac1x$ for $x \neq 0$. Then $f$ is continuous at $x = 0$. Two ways:
 >
 > (1) *Sequences:* if $x_n \to 0$, then $|f(x_n) - f(0)| = |x_n \sin\tfrac{1}{x_n}| \leq |x_n| \to 0$ (null times bounded, §8; for terms with $x_n=0$ the value is $0$ anyway).
@@ -120,7 +123,7 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^ex-17-4
 
-> [!example] Example §17.5: Undamped oscillation
+> [!example] Example §17.5: Undamped Oscillation
 > Define $g: \mathbb{R} \to \mathbb{R}$ by $g(0) = 0$ and $g(x) = \sin\tfrac1x$ for $x \neq 0$. Then $g$ is *not* continuous at $0$. How to prove it? Find a sequence $x_n \to 0$ with $g(x_n) \not\to 0 = g(0)$. As $x_n \to 0$, $\tfrac{1}{x_n} \to \infty$; choose the reciprocals to land where $\sin$ equals $1$:
 >
 > $$
@@ -142,7 +145,7 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^def-17-2
 
-> [!remark] Remark: Continuity depends on the domain
+> [!remark] Remark: Continuity Depends on the Domain
 > Granting that $\sin x$ is continuous everywhere (proved later), the function $g$ above is continuous at every $x \neq 0$ but not at $0$ — so $g$ is not a continuous function. But if we define $G: \mathbb{R} \setminus \{0\} \to \mathbb{R}$, $G(x) = \sin\tfrac1x$, then $G$ *is* continuous. The difference between $g$ and $G$? Only the domain: $\operatorname{dom}(G)$ omits the bad point. Likewise $f(x) = \tfrac1x$ with $\operatorname{dom}(f) = (0,+\infty)$ is continuous, while extending it to $[0,+\infty)$ by $g(0) = 0$ produces a non-continuous function. So the continuity of a function depends on its domain — the domain is part of the definition of a function.
 
 ^rem-17-2
@@ -165,7 +168,9 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^pf-17-2
 
-> [!remark] Remark: The converse fails
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
+> [!remark] Remark: The Converse Fails
 > Define $f(x) = 1$ for $x \in \mathbb{Q}$ and $f(x) = -1$ for $x \in \mathbb{R}\setminus\mathbb{Q}$. Then $|f| \equiv 1$ is certainly continuous, but $f$ is continuous at *no* point: at any $x_0$, by the density of $\mathbb{Q}$ and of $\mathbb{R}\setminus\mathbb{Q}$ (§4, and below), there are sequences $x_n \to x_0$ along which $f \equiv 1$ and sequences along which $f \equiv -1$; both $1$ and $-1$ cannot equal $f(x_0)$.
 
 ^rem-17-3
@@ -186,12 +191,14 @@ For some functions the sequential definition is not so easy to check directly �
 
 ^pf-17-3
 
+*Uses:* [[§9 Limit Theorems for Sequences#^thm-9-3|§9.3]], [[§9 Limit Theorems for Sequences#^thm-9-4|§9.4]], [[§9 Limit Theorems for Sequences#^cor-9-6|§9.6]], [[§17 Continuous Functions#^def-17-1|Def. §17.1]]
+
 > [!remark]- Connections
 > - Same rules for functions of two variables: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] (sum, product, quotient).
 > - Computational version: [[§10 Continuity#^thm-10-1|Calc Thm. §10.1]] (with worked examples).
 > - Computational version: [[§18 Continuity#^prop-18-1|342 Prop. §18.1]] (sums, products, quotients and polynomials of continuous complex functions).
 
-> [!example] Example §17.6: Polynomials and rational functions
+> [!example] Example §17.6: Polynomials and Rational Functions
 > (1) All polynomial functions are continuous — we knew this already; it also follows from (1)–(2) starting with constants and $f(x)=x$. (2) Every rational function $\tfrac{P(x)}{Q(x)}$ is continuous at every point where the polynomial $Q$ does not vanish.
 
 ^ex-17-6
@@ -211,13 +218,15 @@ The most important and useful theorem in this section:
 
 ^pf-17-4
 
+*Uses:* [[§17 Continuous Functions#^def-17-1|Def. §17.1]]
+
 > [!remark]- Connections
 > - Several-variable versions: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]] and [[§10 Composition of Functions and the Chain Rule#^thm-10-1|452 Thm. §10.1]].
 > - Composition rule for continuous maps of topological spaces: [[§9 Continuous Functions#^thm-9-4|590 Thm. §9.4]].
 > - Computational version: [[§10 Continuity#^thm-10-9|Calc Thm. §10.9]], with limits of composites in [[§10 Continuity#^thm-10-7|Calc Thm. §10.7]] (with worked examples).
 > - Computational version: [[§18 Continuity#^thm-18-2|342 Thm. §18.2]] (composition of continuous complex functions, same proof).
 
-> [!example] Example §17.7: Compositions and domains
+> [!example] Example §17.7: Compositions and Domains
 > When applying the composition theorem, *check the domains*. (1) $f(x) = \tfrac1x$ is continuous at every $x \neq 0$, and $g(x) = \sin x$ is continuous (later); so $\sin\tfrac1x$ is continuous at every $x \neq 0$ — as claimed above. (2) $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is continuous everywhere: it is the composition of $|x|: \mathbb{R} \to [0,\infty)$ and $\sqrt{x}: [0,\infty) \to \mathbb{R}$, and the domain condition is satisfied since $|x|$ takes values exactly in $\operatorname{dom}(\sqrt{\ })$.
 
 ^ex-17-7
@@ -244,11 +253,13 @@ The most important and useful theorem in this section:
 
 ^pf-17-5
 
+*Uses:* [[§17 Continuous Functions#^thm-17-2|§17.2]], [[§17 Continuous Functions#^thm-17-3|§17.3]]
+
 ## Exotic Functions
 
 We have seen many continuous functions — polynomials, rational functions, and later $\sin$, $\cos$, exponentials. How about some *non*-continuous functions? Making use of the structures of the rational and real numbers, we can construct functions far stranger than the ordinary ones.
 
-> [!example] Example §17.8: Nowhere continuous
+> [!example] Example §17.8: Nowhere Continuous
 > The function $f = 1$ on $\mathbb{Q}$, $f = -1$ on $\mathbb{R}\setminus\mathbb{Q}$ above is continuous at no point — yet $|f|$ is continuous. Can we make *both* $g$ and $|g|$ discontinuous everywhere? Take
 >
 > $$
@@ -259,12 +270,12 @@ We have seen many continuous functions — polynomials, rational functions, and 
 
 ^ex-17-8
 
-> [!remark] Remark: Density of the irrationals
+> [!remark] Remark: Density of the Irrationals
 > These arguments use that $\mathbb{R} \setminus \mathbb{Q}$ is dense in $\mathbb{R}$: every interval $(a,b)$ contains irrational points. Why? The interval $(a,b)$ contains uncountably many points, but only countably many rationals (§2) — so it must contain (uncountably many) irrationals. One can also argue directly: if $x_0 \in \mathbb{Q}$, the points $x_0 + \tfrac{\pi}{n}$ are irrational and converge to $x_0$.
 
 ^rem-17-4
 
-> [!example] Example §17.9: Continuous exactly at the irrationals
+> [!example] Example §17.9: Continuous Exactly at the Irrationals
 > Can we construct $f: \mathbb{R} \to \mathbb{R}$ that is continuous at every *irrational* point but discontinuous at every *rational* point? Not so easy — but yes. Define
 >
 > $$
@@ -311,6 +322,8 @@ A counterweight to all these constructions — continuity is *rigid* on dense se
 > $$
 
 ^pf-17-6
+
+*Uses:* [[§4 The Completeness Axiom#^thm-4-7|§4.7]], [[§17 Continuous Functions#^def-17-1|Def. §17.1]]
 
 > [!remark]- Connections
 > - Computational version: Stewart fills in $b^x$ at irrational $x$ from its rational values, [[§4 Exponential Functions#^def-4-3|Calc Def. §4.3]].

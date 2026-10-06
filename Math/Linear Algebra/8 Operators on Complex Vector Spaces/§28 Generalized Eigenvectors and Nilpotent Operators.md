@@ -8,6 +8,9 @@ tags: [linear-algebra]
 ---
 ← [[§27 Consequences of Singular Value Decomposition]] · ↑ [[· 8 Operators on Complex Vector Spaces]] · [[§29 Generalized Eigenspace Decomposition]] →
 
+> [!remark] Remark: Standing assumptions for Chapter 8
+> Throughout Chapter 8, $V$ is a finite-dimensional nonzero vector space over $\F$ ($\F$ is $\R$ or $\C$). These are Axler's standing assumptions for the chapter; the chapter's statements use them without repeating them.
+
 > [!theorem] Theorem 8.1: Sequence of increasing null spaces
 > For $T\in\Lin(V)$,
 > $$
@@ -100,13 +103,13 @@ tags: [linear-algebra]
 > False in general: rotation of $\R^2$ has no eigenvalues, hence no generalized eigenvectors.
 
 > [!proof]+ Proof
-> Induction on $n=\dim V$; $n=1$ uses that $T$ has an eigenvalue ($\F=\C$). For $n>1$ let $\lambda$ be an eigenvalue. By [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] applied to $T-\lambda I$,
+> Induction on $n=\dim V$; $n=1$ uses that $T$ has an eigenvalue ($\F=\C$, [[Existence of eigenvalues|5.19]]). For $n>1$ let $\lambda$ be an eigenvalue. By [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] applied to $T-\lambda I$,
 > $$
 > V=\nullsp(T-\lambda I)^n\oplus\range(T-\lambda I)^n .
 > $$
 > If the null space is $V$, every nonzero vector is a generalized eigenvector. Otherwise $0<\dim\range(T-\lambda I)^n<n$ (the null space contains an eigenvector). The range is invariant ([[§14 Invariant Subspaces#^ladr-5-18|5.18]]), so by induction it has a basis of generalized eigenvectors of $T$ restricted to it, hence of $T$. Adjoin a basis of $\nullsp(T-\lambda I)^n$.
 
-*Uses:* [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]]
+*Uses:* [[Existence of eigenvalues|5.19]], [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]]
 
 > [!example] Example 8.10: Generalized eigenvectors of an operator on C³ (p. 302)
 > Same $T$ on $\C^3$. Eigenvalues $0$ and $5$, with eigenvectors only $(z_1,0,0)$ and $(0,0,z_3)$: not enough to span. With $T^3(z)=(0,0,125z_3)$ and $(T-5I)^3(z)=(-125z_1+300z_2,\ -125z_2,\ 0)$ (verified):

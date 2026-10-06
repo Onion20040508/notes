@@ -49,7 +49,7 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 
 ^pf-19-1
 
-*Uses:* [[§10 Continuity#^thm-10-5|§10.5]], [[§10 Continuity#^thm-10-7|§10.7]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 5)
+*Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of the derivative), [[§10 Continuity#^thm-10-5|§10.5]], [[§10 Continuity#^thm-10-7|§10.7]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 5)
 
 ![[m233-19-1.svg]]
 *Theorem §19.1 for $f(x) = e^x$ and $f^{-1}(x) = \ln x$. Reflection in $y = x$ carries the point $(1, e)$ to $(e, 1)$ and the tangent line of slope $f'(1) = e$ to a tangent line of slope $1/e$: rise and run trade places. So $(\ln)'(e) = 1/f'(\ln e) = 1/e$, as Corollary §19.3 confirms.*
@@ -71,7 +71,7 @@ The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is di
 ^thm-19-2
 
 > [!proof]+ Proof
-> Let $y = \log_b x$. Then $b^y = x$. Differentiate this equation implicitly with respect to $x$, using $\frac{d}{dy}(b^y) = b^y \ln b$ (Theorem §17.5) and the Chain Rule:
+> Let $y = \log_b x$. Then $b^y = x$. Differentiate this equation implicitly with respect to $x$, using $\frac{d}{dy}(b^y) = b^y \ln b$ ([[§17 The Chain Rule#^thm-17-5|Theorem §17.5]]) and the Chain Rule:
 >
 > $$
 > (b^y \ln b)\,\frac{dy}{dx} = 1, \qquad\text{so}\qquad \frac{dy}{dx} = \frac{1}{b^y \ln b} = \frac{1}{x \ln b} .
@@ -264,7 +264,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > \frac{y'}{y} = \frac{n}{x}, \qquad\text{hence}\qquad y' = n\,\frac{y}{x} = n\,\frac{x^n}{x} = n x^{n-1} .
 > $$
 >
-> Differentiating $\ln|y|$ presupposes that $y$ is differentiable, which Stewart leaves implicit. For $x > 0$ it holds because $x^n = e^{n\ln x}$ is a composite of differentiable functions (Corollary §17.4). For $x < 0$, where $x^n$ is defined only for special $n$ (such as $n = p/q$ with $q$ odd), $x^n = \pm|x|^n = \pm e^{n\ln|x|}$ with a fixed sign, again differentiable.
+> Differentiating $\ln|y|$ presupposes that $y$ is differentiable, which Stewart leaves implicit. For $x > 0$ it holds because $x^n = e^{n\ln x}$ is a composite of differentiable functions ([[§17 The Chain Rule#^cor-17-4|Corollary §17.4]]). For $x < 0$, where $x^n$ is defined only for special $n$ (such as $n = p/q$ with $q$ odd), $x^n = \pm|x|^n = \pm e^{n\ln|x|}$ with a fixed sign, again differentiable.
 >
 > At $x = 0$ (when $n > 1$), the definition of the derivative gives $f'(0) = \lim_{h \to 0} \dfrac{h^n - 0}{h} = \lim_{h \to 0} h^{n-1} = 0 = n \cdot 0^{n-1}$ directly.
 
@@ -276,7 +276,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > Distinguish the Power Rule $[(x^n)' = nx^{n-1}]$, where the base is variable and the exponent is constant, from the rule for exponential functions $[(b^x)' = b^x \ln b]$, where the base is constant and the exponent is variable. In general there are four cases:
 > 1. Constant base, constant exponent: $\dfrac{d}{dx}(b^n) = 0$.
 > 2. Variable base, constant exponent: $\dfrac{d}{dx}[f(x)]^n = n[f(x)]^{n-1} f'(x)$ ([[§17 The Chain Rule#^cor-17-3|Corollary §17.3]]).
-> 3. Constant base, variable exponent: $\dfrac{d}{dx}\big[b^{g(x)}\big] = b^{g(x)}(\ln b)\,g'(x)$ (Theorem §17.5 and the Chain Rule).
+> 3. Constant base, variable exponent: $\dfrac{d}{dx}\big[b^{g(x)}\big] = b^{g(x)}(\ln b)\,g'(x)$ ([[§17 The Chain Rule#^thm-17-5|Theorem §17.5]] and the Chain Rule).
 > 4. Variable base, variable exponent: for $\dfrac{d}{dx}[f(x)]^{g(x)}$ use logarithmic differentiation, as in the next example.
 
 ^rem-19-3
@@ -295,7 +295,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > y' = y \left( \frac{1}{\sqrt{x}} + \frac{\ln x}{2\sqrt{x}} \right) = x^{\sqrt{x}} \left( \frac{2 + \ln x}{2\sqrt{x}} \right) .
 > $$
 >
-> **Solution 2.** By Equation 1.5.10, $x^{\sqrt{x}} = e^{\sqrt{x}\ln x}$, so by Corollary §17.4
+> **Solution 2.** By Equation 1.5.10, $x^{\sqrt{x}} = e^{\sqrt{x}\ln x}$, so by [[§17 The Chain Rule#^cor-17-4|Corollary §17.4]]
 >
 > $$
 > \frac{d}{dx}\big(x^{\sqrt{x}}\big) = e^{\sqrt{x}\ln x} \frac{d}{dx}\big(\sqrt{x}\ln x\big) = x^{\sqrt{x}} \left( \frac{2 + \ln x}{2\sqrt{x}} \right) ,

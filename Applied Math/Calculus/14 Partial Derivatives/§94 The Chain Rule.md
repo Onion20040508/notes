@@ -29,7 +29,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 ^thm-94-1
 
 > [!proof]+ Proof
-> Fix $t$. A change $\Delta t$ in $t$ produces changes $\Delta x = g(t + \Delta t) - g(t)$ in $x$ and $\Delta y = h(t + \Delta t) - h(t)$ in $y$. These in turn produce a change $\Delta z$ in $z$, and since $f$ is differentiable, Definition §93.3 gives
+> Fix $t$. A change $\Delta t$ in $t$ produces changes $\Delta x = g(t + \Delta t) - g(t)$ in $x$ and $\Delta y = h(t + \Delta t) - h(t)$ in $y$. These in turn produce a change $\Delta z$ in $z$, and since $f$ is differentiable, [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]] gives
 >
 > $$
 > \Delta z = \frac{\partial f}{\partial x}\,\Delta x + \frac{\partial f}{\partial y}\,\Delta y + \varepsilon_1\,\Delta x + \varepsilon_2\,\Delta y ,
@@ -180,7 +180,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 ^thm-94-3
 
 > [!proof]+ Proof
-> Stewart says only that "the proof is similar to that of Case 1"; here it is. Fix $i$ and hold the other $t$'s fixed, so that each $x_j$ is a function of $t_i$ alone, with derivative $\partial x_j / \partial t_i$; in particular it is continuous in $t_i$. Differentiability of $u$ ([[§93 Tangent Planes and Linear Approximations#^def-93-5|Definition §93.5]], the $n$-variable form of Definition §93.3) says that
+> Stewart says only that "the proof is similar to that of Case 1"; here it is. Fix $i$ and hold the other $t$'s fixed, so that each $x_j$ is a function of $t_i$ alone, with derivative $\partial x_j / \partial t_i$; in particular it is continuous in $t_i$. Differentiability of $u$ ([[§93 Tangent Planes and Linear Approximations#^def-93-5|Definition §93.5]], the $n$-variable form of [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]]) says that
 >
 > $$
 > \Delta u = \sum_{j=1}^n \frac{\partial u}{\partial x_j}\,\Delta x_j + \sum_{j=1}^n \varepsilon_j\,\Delta x_j , \qquad \varepsilon_j \to 0 \text{ as } (\Delta x_1, \ldots, \Delta x_n) \to \mathbf{0}

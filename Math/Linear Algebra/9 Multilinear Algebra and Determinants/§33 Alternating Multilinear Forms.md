@@ -96,7 +96,7 @@ tags: [linear-algebra]
 ^ladr-9-34
 
 > [!proof]+ Proof
-> Swap entries $a$ and $b$. The pair $\{a,b\}$ itself changes status (inverted/not): a change of $\pm1$. For each entry $c$ strictly between them in position, the pairs $\{a,c\}$ and $\{b,c\}$ either both change status or neither does: a change of $-2$, $0$ or $2$. Pairs involving entries outside that stretch, or not involving $a$ or $b$, are unaffected. So $N$ changes by an odd number.
+> Swap entries $a$ and $b$. The pair $\{a,b\}$ itself changes status (inverted/not): a change of $\pm1$. For each entry $c$ strictly between them in position, $c$ moves from one side of $a$ to the other and likewise for $b$, so each of the pairs $\{a,c\}$, $\{b,c\}$ changes status: a net change of $-2$, $0$ or $2$. Pairs involving entries outside that stretch, or not involving $a$ or $b$, are unaffected. So $N$ changes by an odd number.
 
 > [!remark]- Connections
 > - Group form: a transposition has sign −1 and the sign is a homomorphism, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 Thm. §21.3]], so parity is well defined, [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|493 Cor. §21.4]].

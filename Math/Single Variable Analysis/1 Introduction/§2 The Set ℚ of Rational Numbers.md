@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 2
 chapter: 1
@@ -87,7 +88,7 @@ So we should be happy with $\mathbb{Q}$ — but not so. One reason, mentioned in
 
 ^rem-2-2
 
-> [!remark] Remark: Why this result was a big deal
+> [!remark] Remark: Why This Result Was a Big Deal
 > Pythagoras famously said that *all things are numbers*: all quantities can be measured by integers and rational numbers once some unit is chosen. His school was a secret society built partly on this belief. Now take a unit square, with sides of length $1$. By the Pythagorean Theorem, its diagonal has length $\sqrt{2}$ — a completely natural geometric quantity. The theorem above says this length *cannot* be measured by rational numbers: the sky was falling. Legend has it that the discoverer was thrown into the ocean to bury the secret.
 
 ^rem-2-3
@@ -97,7 +98,7 @@ So we should be happy with $\mathbb{Q}$ — but not so. One reason, mentioned in
 
 The divisibility argument above adapts to $\sqrt3$, $\sqrt5$, and beyond — but a bookkeeping of prime factorizations settles *all* square roots of integers at once. We cite one standard fact from elementary number theory (not proved in this course):
 
-> [!remark] Remark: Cited fact: the Fundamental Theorem of Arithmetic
+> [!remark] Remark: Cited Fact: The Fundamental Theorem of Arithmetic
 > Every positive integer can be expressed as $\prod_{i=1}^{\infty} p_i^{\,n_i}$, where $p_1 < p_2 < \cdots$ lists the primes and the $n_i$ are nonnegative integers, all but finitely many zero (e.g. $1 = \prod_i p_i^0$, $2 = 2^1\cdot3^0\cdots$, $24 = 2^3\cdot3^1\cdot5^0\cdots$) — and this expression is *unique*: if $\prod_i p_i^{\alpha_i} = \prod_i p_i^{\beta_i}$, then $\alpha_i = \beta_i$ for every $i$.
 
 ^rem-2-4
@@ -139,6 +140,8 @@ The divisibility argument above adapts to $\sqrt3$, $\sqrt5$, and beyond — but
 
 ^pf-2-2
 
+*Uses:* [[§2 The Set ℚ of Rational Numbers#^rem-2-4|§2 Rem. (Fundamental Theorem of Arithmetic)]]
+
 > [!remark]- Connections
 > - Elementary version: [[§23 The Sequence of Prime Numbers#^ex-23-6|250 Ex. §23.6]], the same exponent count for √2 and ∛2, with the general √n case noted after part (a); √3 by divisibility in [[§13 Number Systems#^ex-13-1|250 Ex. §13.1]], using [[§15 The Division Theorem#^prop-15-3|250 Prop. §15.3]].
 
@@ -148,7 +151,7 @@ The divisibility argument above adapts to $\sqrt3$, $\sqrt5$, and beyond — but
 ^ex-2-1
 
 > [!remark] Remark
-> Note what the parity proof does *not* need: no reduction of $\tfrac PQ$ to lowest terms. The coprimality assumption of Theorem 2.1 — and the “divide out common factors” step it rests on — is replaced wholesale by the uniqueness clause of the FTA, which tracks every prime at once.
+> Note what the parity proof does *not* need: no reduction of $\tfrac PQ$ to lowest terms. The coprimality assumption of [[§2 The Set ℚ of Rational Numbers#^thm-2-1|Theorem §2.1]] — and the “divide out common factors” step it rests on — is replaced wholesale by the uniqueness clause of the FTA, which tracks every prime at once.
 
 ^rem-2-5
 
@@ -187,7 +190,7 @@ To get a field containing all such numbers, we need a new notion. What is $\sqrt
 
 ^def-2-6
 
-> [!example] Example §2.2: $\sqrt{2}$ is an algebraic integer
+> [!example] Example §2.2: $\sqrt{2}$ Is an Algebraic Integer
 > $\sqrt{2}$ solves $x^2 - 2 = 0$, a monic equation with integer coefficients. Similarly $\sqrt{2} + \sqrt{3}$ is an algebraic integer: it solves $x^4 - 10x^2 + 1 = 0$ (square $x = \sqrt{2}+\sqrt{3}$ twice: $x^2 = 5 + 2\sqrt{6}$, so $x^2 - 5 = 2\sqrt{6}$, and squaring again gives $x^4 - 10x^2 + 25 = 24$).
 
 ^ex-2-2
@@ -208,7 +211,7 @@ The instinctive answer is “of course, yes!” — but this is not so obvious, 
 
 To compare the sizes of two classes of students, we count. The same works for any finite sets. For infinite sets we cannot count this way (life is short!), so we need another method: instead of counting each set, we *match up* their elements.
 
-> [!theorem] Theorem §2.3: Finite sets
+> [!theorem] Theorem §2.3: Finite Sets
 > Two finite sets $A$ and $B$ have the same number of elements if and only if there exists a one-to-one correspondence (a bijective map, i.e. injective and onto)
 >
 > $$
@@ -216,6 +219,8 @@ To compare the sizes of two classes of students, we count. The same works for an
 > $$
 
 ^thm-2-3
+
+*The notes take this as known; it is proved in [[§10 Counting#^prop-10-3|250 Prop. §10.3]].*
 
 > [!remark]- Connections
 > - Proved in [[§10 Counting#^prop-10-3|250 Prop. §10.3]].
@@ -231,7 +236,7 @@ This matching criterion makes sense even when counting does not, so we turn it i
 > - Same definition: equipotent sets, [[§14 Counting Infinite Sets#^def-14-1|250 Def. §14.1]].
 > - Same definition in 551 (equivalent sets): [[§1 Countability and Set Theory#^def-1-7|551 Def. §1.7]]; two sets that inject into each other are equivalent by [[§2 The Cantor–Bernstein Theorem#^thm-2-1|551 Thm. §2.1]] (Cantor–Bernstein).
 
-> [!theorem] Theorem §2.4: $\mathbb{N}$ and $\mathbb{Z}$ have the same size
+> [!theorem] Theorem §2.4: $\mathbb{N}$ and $\mathbb{Z}$ Have the Same Size
 > There exists a bijection $f: \mathbb{N} \to \mathbb{Z}$.
 
 ^thm-2-4
@@ -269,7 +274,7 @@ This matching criterion makes sense even when counting does not, so we turn it i
 > - 451's countable is 250's denumerable, [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]]; there (as in 551) countable also allows finite sets.
 > - 551's countable also allows finite sets: [[§1 Countability and Set Theory#^def-1-8|551 Def. §1.8]].
 
-> [!theorem] Theorem §2.5: $\mathbb{Q}$ is countable
+> [!theorem] Theorem §2.5: $\mathbb{Q}$ Is Countable
 > There exists a bijection $f: \mathbb{Q} \to \mathbb{N}$.
 
 ^thm-2-5
@@ -308,14 +313,14 @@ This matching criterion makes sense even when counting does not, so we turn it i
 > - Elementary version: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]] (Cantor, 1874).
 > - 551 proves it by the same diagonal listing of ℕ × ℕ ([[§1 Countability and Set Theory#^ex-1-3|551 Ex. §1.3]]) and again as a corollary of countable unions ([[§3 Countability of Rationals and Unions#^cor-3-2|551 Cor. §3.2]]).
 
-> [!theorem] Theorem §2.6: $\overline{\mathbb{Q}}$ is countable
+> [!theorem] Theorem §2.6: $\overline{\mathbb{Q}}$ Is Countable
 > The set $\overline{\mathbb{Q}}$ of algebraic numbers is countable.
 
 ^thm-2-6
 
 This is more difficult; we do not prove it here.
 
-> [!remark] Remark: Idea of the proof
+> [!remark] Remark: Idea of the Proof
 > A polynomial with integer coefficients is determined by finitely many integers, so the polynomials of each fixed degree can be listed, and hence (by a diagonal-type argument, as for $\mathbb{Q}$) *all* such polynomials can be listed. Each polynomial has only finitely many roots. Listing the roots of the first polynomial, then the second, and so on (skipping repetitions) lists all of $\overline{\mathbb{Q}}$.
 
 ^rem-2-6
@@ -361,9 +366,11 @@ The real line $\mathbb{R}$ is uncountable. This course uses the fact without pro
 > \mathbb{R} = \bigl(\mathbb{R} \cap \overline{\mathbb{Q}}\bigr) \cup \bigl(\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})\bigr).
 > $$
 >
-> The set $\mathbb{R} \cap \overline{\mathbb{Q}}$ consists of the real algebraic numbers, and $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ consists of the real transcendental numbers. Since $\overline{\mathbb{Q}}$ is countable ([[§2 The Set ℚ of Rational Numbers#^thm-2-6|Theorem 2.6]]), so is its subset $\mathbb{R} \cap \overline{\mathbb{Q}}$; and $\mathbb{R}$ is uncountable (not proved in this course; see the Connections below). If $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ were countable (or finite), then $\mathbb{R}$ would be a union of two countable sets, hence countable — a contradiction. Therefore $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ is uncountable; in particular it is infinite.
+> The set $\mathbb{R} \cap \overline{\mathbb{Q}}$ consists of the real algebraic numbers, and $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ consists of the real transcendental numbers. Since $\overline{\mathbb{Q}}$ is countable ([[§2 The Set ℚ of Rational Numbers#^thm-2-6|Theorem §2.6]]), so is its subset $\mathbb{R} \cap \overline{\mathbb{Q}}$; and $\mathbb{R}$ is uncountable (not proved in this course; see the Connections below). If $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ were countable (or finite), then $\mathbb{R}$ would be a union of two countable sets, hence countable — a contradiction. Therefore $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ is uncountable; in particular it is infinite.
 
 ^pf-2-7
+
+*Uses:* [[§2 The Set ℚ of Rational Numbers#^thm-2-6|§2.6]], [[§2 The Set ℚ of Rational Numbers#^def-2-10|Def. §2.10]]
 
 > [!remark] Remark
 > Note what the argument actually shows: the transcendental numbers are not merely infinite but *uncountable* — in the sense of size, almost all real numbers are transcendental, even though it is hard to name any single one. This existence proof (due to Cantor) produces infinitely many transcendental numbers without exhibiting even one.

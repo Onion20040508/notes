@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 28
 chapter: 5
@@ -25,7 +26,7 @@ tags: [real-analysis, math451]
 > - Computational version: [[§12 Derivatives and Rates of Change#^def-12-3|Calc Def. §12.3]], [[§13 The Derivative as a Function#^def-13-3|Calc Def. §13.3]] (with worked examples).
 > - Computational version: [[§19 Derivatives#^def-19-1|342 Def. §19.1]] (the complex derivative, the same difference quotient with z in place of x, with worked examples).
 
-> [!example] Example §28.1: Square root of the absolute value
+> [!example] Example §28.1: Square Root of the Absolute Value
 > Show $f(x) = \sqrt{|x|}: \mathbb{R} \to \mathbb{R}$ is differentiable at every $a \neq 0$ but not at $a = 0$.
 >
 > **Case $a > 0$** (the case $a < 0$ is similar). Near $a$, $f(x) = \sqrt x$; by the conjugate,
@@ -47,7 +48,7 @@ tags: [real-analysis, math451]
 
 ^ex-28-1
 
-> [!example] Example §28.2: The power function
+> [!example] Example §28.2: The Power Function
 > Show $f(x) = x^n$ is differentiable with $f'(x) = n x^{n-1}$. We all know the formula — but how to *find* it? Factor:
 >
 > $$
@@ -83,11 +84,13 @@ tags: [real-analysis, math451]
 
 ^pf-28-1
 
+*Uses:* [[§20 Limits of Functions#^rem-20-2|§20 Rem. (limit laws)]]
+
 > [!remark]- Connections
 > - Computational version: [[§13 The Derivative as a Function#^thm-13-1|Calc Thm. §13.1]].
 > - Computational version: [[§19 Derivatives#^thm-19-1|342 Thm. §19.1]] (the same statement and proof for complex functions).
 
-> [!remark] Remark: The converse fails
+> [!remark] Remark: The Converse Fails
 > Two counterexamples: $\sqrt{|x|}$ (continuous everywhere, not differentiable at $0$, as above — the difference quotients blow up); and $|x|$, where the one-sided limits of $\tfrac{f(x) - f(0)}{x - 0} = \tfrac{|x|}{x}$ are $+1$ and $-1$ and disagree. Using $|x|$, one can build continuous functions non-differentiable at finitely many prescribed points, e.g.
 >
 > $$
@@ -128,6 +131,8 @@ tags: [real-analysis, math451]
 
 ^pf-28-2
 
+*Uses:* [[§20 Limits of Functions#^rem-20-2|§20 Rem. (limit laws)]], [[§28 Basic Properties of the Derivative#^thm-28-1|§28.1]]
+
 > [!remark]- Connections
 > - Two-variable versions for partial derivatives and for differentiability: [[§6 Differentiability#^thm-6-3|452 Thm. §6.3]] to [[§6 Differentiability#^thm-6-5|452 Thm. §6.5]], and [[§6 Differentiability#^thm-6-6|452 Thm. §6.6]] to [[§6 Differentiability#^thm-6-8|452 Thm. §6.8]].
 > - Computational version: [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Calc Thm. §14.4]], [[§15 The Product and Quotient Rules#^thm-15-1|Calc Thm. §15.1]], [[§15 The Product and Quotient Rules#^thm-15-2|Calc Thm. §15.2]] (with worked examples).
@@ -158,6 +163,8 @@ The most useful theorem:
 > **Is this a good proof? Any problem?** Yes, there is one: in the limit defining $g'$, the increment must be *nonzero* — but here it can happen that $f(x) = f(a)$ for $x \neq a$ arbitrarily close to $a$ (e.g. for constant $f$, or $f(x) = x^2\sin\tfrac1x$ at $a = 0$), and then the first factor is $\tfrac00$: undefined. The proof is valid whenever $f(x) \neq f(a)$ near $a$; the general case needs a repair.
 
 ^pf-28-3
+
+*Uses:* [[§28 Basic Properties of the Derivative#^thm-28-1|§28.1]]
 
 > [!proof]+ Proof (repaired)
 > The trick: take care of the case $f(x) = f(a)$ by never using $f(x) - f(a)$ as a denominator. Define a new function $h$ on the domain of $g$:
@@ -190,10 +197,12 @@ The most useful theorem:
 
 ^pf-28-3-2
 
+*Uses:* [[§28 Basic Properties of the Derivative#^thm-28-1|§28.1]], [[§20 Limits of Functions#^thm-20-1|§20.1]], [[§17 Continuous Functions#^thm-17-4|§17.4]]
+
 > [!remark]- Connections
 > - Computational version: [[§20 Rules for Differentiation#^thm-20-4|342 Thm. §20.4]] (the complex chain rule, with the same repair of the naive proof).
 
-> [!remark] Remark: The classical notation
+> [!remark] Remark: The Classical Notation
 > If $y = y(x)$ and $z = z(y)$, then $z = z(y(x))$ is a function of $x$, and the chain rule reads
 >
 > $$
@@ -208,7 +217,7 @@ The most useful theorem:
 > - Several-variable chain rule: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (for differentiable maps) and [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]] (with continuous partials).
 > - Computational version: [[§17 The Chain Rule#^thm-17-2|Calc Thm. §17.2]] (with worked examples).
 
-> [!example] Example §28.3: Oscillation and differentiability at zero
+> [!example] Example §28.3: Oscillation and Differentiability at Zero
 > **(1)** $f(x) = x \sin\tfrac1x$ ($x \neq 0$), $f(0) = 0$: continuous at $0$ (proved in §17) but *not differentiable* at $0$ — the difference quotient
 >
 > $$
@@ -227,7 +236,7 @@ The most useful theorem:
 
 ^ex-28-3
 
-> [!example] Example §28.4: The middle rung (HW)
+> [!example] Example §28.4: The Middle Rung (HW)
 > Between the two lies $h(x) = x^2 \sin\tfrac1x$ ($x \neq 0$), $h(0) = 0$: *differentiable everywhere — but $h'$ is not continuous*. At $0$, as for $g$ above,
 >
 > $$
@@ -283,6 +292,8 @@ Computations with piecewise functions — the corner examples above — all foll
 > ($\Leftarrow$) With $f(a) = g(a)$, the same two computations show the one-sided limits of $\tfrac{h(x)-h(a)}{x-a}$ are $f'(a)$ and $g'(a)$; if these agree, the two-sided limit exists and $h'(a) = f'(a) = g'(a)$.
 
 ^pf-28-4
+
+*Uses:* [[§28 Basic Properties of the Derivative#^thm-28-1|§28.1]], [[§20 Limits of Functions#^thm-20-2|§20.2]]
 
 > [!remark] Remark
 > Read backwards, this organizes every corner in this section: $|x|$ glues $-x$ and $x$ at $0$ with matching values ($0 = 0$) but slopes $-1 \neq 1$ — corner; more generally, $|u|$ has a corner at every point where $u$ crosses $0$ with $u' \neq 0$ (slopes $\pm u'$), while at a zero of $u$ with $u' = 0$ the glue is smooth. Read forwards, it is the design rule for splines: to join two formulas differentiably, match value and slope at the seam.

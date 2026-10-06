@@ -242,7 +242,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > L = \int_0^{2\pi} \sqrt{\sin^2 t + \cos^2 t}\,dt = \int_0^{2\pi} dt = 2\pi ,
 > $$
 >
-> as expected. With $x = \sin 2t$, $y = \cos 2t$, $0 \le t \le 2\pi$ (Example §63.2(b)), $dx/dt = 2\cos 2t$, $dy/dt = -2\sin 2t$, and the integral is
+> as expected. With $x = \sin 2t$, $y = \cos 2t$, $0 \le t \le 2\pi$ ([[§63 Curves Defined by Parametric Equations#^ex-63-2|Example §63.2]](b)), $dx/dt = 2\cos 2t$, $dy/dt = -2\sin 2t$, and the integral is
 >
 > $$
 > \int_0^{2\pi} \sqrt{4\cos^2 2t + 4\sin^2 2t}\,dt = \int_0^{2\pi} 2\,dt = 4\pi ,
@@ -368,7 +368,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > S = \int_a^b 2\pi y \sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\,dx ,
 > $$
 >
-> and substitute $x = f(t)$ exactly as in the special case of the proof of Theorem §64.4: $\sqrt{1 + (dy/dx)^2}\,\dfrac{dx}{dt} = \sqrt{(dx/dt)^2 + (dy/dt)^2}$ because $dx/dt > 0$. This gives Formula 9. For a general curve the formula comes from approximating $C$ by polygonal paths and the surface by the bands (frustums of cones) that the segments sweep out, as in [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] and Definition §53.2, with the Mean Value Theorem step of the proof of Theorem §64.4; Stewart does not carry this out.
+> and substitute $x = f(t)$ exactly as in the special case of the proof of Theorem §64.4: $\sqrt{1 + (dy/dx)^2}\,\dfrac{dx}{dt} = \sqrt{(dx/dt)^2 + (dy/dt)^2}$ because $dx/dt > 0$. This gives Formula 9. For a general curve the formula comes from approximating $C$ by polygonal paths and the surface by the bands (frustums of cones) that the segments sweep out, as in [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] and [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]], with the Mean Value Theorem step of the proof of Theorem §64.4; Stewart does not carry this out.
 
 ^pf-64-6
 

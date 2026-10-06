@@ -17,7 +17,7 @@ tags: [topology, math590]
 
 ^def-9-1
 
-> [!proof]+ Proof that checking on basis suffices
+> [!proof]+ Proof That Checking on a Basis Suffices
 > It suffices to show the inverse image of every basis element is open. Let $V = \bigcup_\alpha B_\alpha$. Then $f^{-1}(V) = \bigcup_\alpha f^{-1}(B_\alpha)$. If each $f^{-1}(B_\alpha)$ is open, then $f^{-1}(V)$ is open.
 
 ^pf-def-9-1
@@ -31,7 +31,7 @@ tags: [topology, math590]
 > - MATH 451 version: [[§21 More on Metric Spaces꞉ Continuity#^def-21-1|Continuous Maps Between Metric Spaces]].
 > - Recovered for metric spaces: [[§11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]].
 
-> [!example] Example §9.1: $f: \mathbb{R} \to \mathbb{R}$ in analysis
+> [!example] Example §9.1: $f: \mathbb{R} \to \mathbb{R}$ in Analysis
 > The “$\varepsilon$-$\delta$” definition of continuous function: $\forall \varepsilon > 0$, w.t.s. $\exists \delta > 0$ s.t. $|f(x) - f(y)| < \varepsilon$ if $|x - y| < \delta$.
 >
 > Topological definition $\Leftrightarrow$ “$\varepsilon$-$\delta$”: $\forall x \in \mathbb{R}$, $f^{-1}((f(x) - \varepsilon, f(x) + \varepsilon))$ is an open set in $\mathbb{R}$, i.e., is a neighborhood of $x$.
@@ -43,7 +43,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]].
 
-> [!example] Example §9.2: $\mathbb{R}_\ell$: Lower limit topology
+> [!example] Example §9.2: $\mathbb{R}_\ell$: Lower Limit Topology
 > $\mathcal{B}_\ell = \{[a,b) \mid a, b \in \mathbb{R}\}$. $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x$.
 >
 > **(1)** $f: \mathbb{R}_{\text{std}} \to \mathbb{R}_\ell$ not continuous. $[a,b)$ open in $\mathbb{R}_\ell$, but $f^{-1}([a,b)) = [a,b)$ not open in $\mathbb{R}_{\text{std}}$.
@@ -134,7 +134,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Invariance: [[Continuous Image of a Connected Space is Connected|Continuous Image of Connected Space]], [[Continuous Image of a Compact Space is Compact|Continuous Image of Compact is Compact]], [[§23 The Fundamental Group#^cor-23-6|π₁ is a Topological Invariant]].
-> - The question it answers: [[§1 Topological Spaces#^rem-1-1|Question: Basic Question]].
+> - The question it answers: [[§1 Topological Spaces#^rem-1-1|Basic Question]].
 
 > [!example] Example §9.3
 > $f: \mathbb{R} \to \mathbb{R}$, $f(x) = 3x + 1$. Homeomorphism. $g(y) = \frac{1}{3}(y-1)$. Easily check $g \circ f(x) = x$, $f \circ g(y) = y$.
@@ -152,7 +152,7 @@ tags: [topology, math590]
 ^prop-9-3
 
 > [!proof]+ Proof
-> $f|_A$ is a bijection $A \to f(A)$ (restriction of a bijection to a subset). For continuity: $f|_A$ is the restriction of $f$ to $A$, hence continuous ([[§9 Continuous Functions#^thm-9-4|Rule 4]]). For the inverse: $(f|_A)^{-1} = (f^{-1})|_{f(A)}$, which is the restriction of $f^{-1}$ to $f(A)$, hence continuous.
+> $f|_A$ is a bijection $A \to f(A)$ (restriction of a bijection to a subset). For continuity: $f|_A$ is the restriction of $f$ to $A$, hence continuous ([[§9 Continuous Functions#^thm-9-4|Rule 4]] of Theorem §9.4 below). For the inverse: $(f|_A)^{-1} = (f^{-1})|_{f(A)}$, which is the restriction of $f^{-1}$ to $f(A)$, hence continuous.
 
 ^pf-9-3
 
@@ -200,6 +200,8 @@ tags: [topology, math590]
 > 6. (Local formulation of continuity) If $X = \bigcup U_\alpha$ (open in $X$), if $f|_{U_\alpha}$ continuous, then $f$ is continuous.
 
 ^thm-9-4
+
+*The lecture omits the proof; see Munkres Theorem 18.2.*
 
 > [!remark]- Connections
 > - MATH 451 version of (3): [[§17 Continuous Functions#^thm-17-4|Composition of Continuous Functions]].

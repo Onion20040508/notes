@@ -59,7 +59,7 @@ tags: [topology, math590]
 
 ^def-11-3
 
-> [!proof]+ Proof that $\varepsilon$-balls form a basis
+> [!proof]+ Proof That $\varepsilon$-Balls Form a Basis
 > We check the [[§2 Basis for a Topology#^def-2-1|basis axioms]].
 >
 > (1) If $x \in X$, then $x \in B_d(x, \varepsilon)$ for any $\varepsilon > 0$. ✓
@@ -236,6 +236,8 @@ tags: [topology, math590]
 > Any non-Hausdorff space is not metrizable.
 
 ^cor-11-5
+
+*Contrapositive of [[§11 Metric Topology#^thm-11-4|Theorem §11.4]]: a metric inducing the topology would make the space Hausdorff.*
 
 *Uses:* [[§11 Metric Topology#^thm-11-4|§11.4]]
 

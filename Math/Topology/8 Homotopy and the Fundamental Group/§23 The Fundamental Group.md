@@ -157,6 +157,8 @@ tags: [topology, math590]
 
 ^cor-23-3
 
+*Immediate from [[Basepoint Independence of π₁|Theorem §23.2]]: path-connectedness supplies a path $\alpha$ from $x_0$ to $x_1$.*
+
 *Uses:* [[Basepoint Independence of π₁|§23.2]]
 
 > [!remark] Remark

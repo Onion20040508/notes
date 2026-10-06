@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 8
 chapter: 2
@@ -10,7 +11,7 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ## Guessing and Proving
 
-> [!example] Example §8.1: An indeterminate form of type $\infty - \infty$
+> [!example] Example §8.1: An Indeterminate Form of Type $\infty - \infty$
 > Let $s_n = \sqrt{n^2 + n + 1} - n$. Determine whether it converges; if yes, guess the limit and prove it.
 >
 > **Guessing.** The expression is of the type $\infty - \infty$; we need to get rid of the $\infty$'s. Multiply and divide by the conjugate:
@@ -46,7 +47,7 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ^ex-8-1
 
-> [!example] Example §8.2: Same method
+> [!example] Example §8.2: Same Method
 > Let $s_n = \sqrt{9n^2 + n} - 3n$. By the conjugate trick,
 >
 > $$
@@ -74,7 +75,7 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ## Sequences Between $\mathbb{Q}$ and $\mathbb{R}$
 
-> [!example] Example §8.3: Irrational terms with rational limit
+> [!example] Example §8.3: Irrational Terms with Rational Limit
 > Give an example of a sequence of irrational numbers converging to a rational limit. Many choices — for instance
 >
 > $$
@@ -85,7 +86,7 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ^ex-8-3
 
-> [!example] Example §8.4: Rational terms with irrational limit
+> [!example] Example §8.4: Rational Terms with Irrational Limit
 > Give an example of a sequence of rational numbers converging to an irrational limit — say $s = \tfrac{\pi}{4}$.
 >
 > Here we need an *algorithm*, not a formula for $s_n$. Note $\tfrac\pi4 \in [0,1]$. Divide $[0,1]$ into two equal intervals $[0, \tfrac12]$, $[\tfrac12, 1]$, and keep the one containing $\tfrac\pi4$. Dividing again and again into halves, we get a nested sequence of intervals containing $\tfrac\pi4$, the $n$-th of length $\tfrac{1}{2^n}$, with rational endpoints. Take $s_n$ to be the left endpoint of the $n$-th interval. Then $s_n \in \mathbb{Q}$ and
@@ -107,7 +108,7 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ^ex-8-5
 
-> [!example] Example §8.6: $|s_n|$ converges but $s_n$ diverges
+> [!example] Example §8.6: $|s_n|$ Converges but $s_n$ Diverges
 > Take $s_n = (-1)^n$. Then $|s_n| = 1$ clearly converges. But $(s_n)$ does not converge.
 >
 > *Proof.* Suppose it did, with $s = \lim_{n\to\infty} s_n$. Let $\varepsilon > 0$ be arbitrary; there exists $N$ such that $|s_n - s| < \varepsilon$ for all $n \geq N$. Choosing an *even* $n \geq N$ (e.g. $n = 2N$), where $s_n = 1$, gives $|1 - s| < \varepsilon$. Since $\varepsilon > 0$ was arbitrary, $|1 - s| = 0$, i.e. $s = 1$. Choosing an *odd* $n \geq N$ (e.g. $n = 2N+1$), where $s_n = -1$, gives $|-1 - s| = |1 + s| < \varepsilon$, and by the same argument $s = -1$. So $s = 1$ and $s = -1$ — impossible. Hence $(s_n)$ diverges. (The book has a different proof.)
@@ -146,13 +147,15 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ^pf-8-1
 
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]]
+
 ![[m451-8-1.svg]]
 *The Squeeze Theorem: the outer sequences $a_n$ and $c_n$ (gray) are both inside the band $s \pm \varepsilon$ from $N = \max\{N_1, N_2\}$ on, and $b_n$ (blue), trapped between them, has no choice but to follow.*
 
 > [!remark]- Connections
 > - Computational version: [[§69 Sequences#^thm-69-4|Calc Thm. §69.4]] (with worked examples); for limits of functions, [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Calc Thm. §8.7]].
 
-> [!example] Example §8.7: Null sequence times bounded sequence
+> [!example] Example §8.7: Null Sequence Times Bounded Sequence
 > First: if $s_n \to 0$, then for any number $M$, also $M s_n \to 0$. (By definition: given $\varepsilon > 0$, if $M = 0$ there is nothing to prove; otherwise choose $N$ with $|s_n| < \varepsilon / |M|$ for $n \geq N$; then $|M s_n| < \varepsilon$.)
 >
 > Now, by the [[Squeeze Theorem|Squeeze Theorem]] and this observation: *if $s_n \to 0$ and $(t_n)$ is a bounded sequence — i.e. there exists $M > 0$ such that $|t_n| \leq M$ for all $n$ — then $s_n t_n \to 0$.*
@@ -169,7 +172,7 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ## Two More Worked Examples
 
-> [!example] Example §8.8: Square roots preserve limits
+> [!example] Example §8.8: Square Roots Preserve Limits
 > Let $(s_n)$ be a sequence of nonnegative numbers with $s = \lim_{n\to\infty} s_n \geq 0$. Prove $\sqrt{s_n} \to \sqrt{s}$.
 >
 > What is known? That $|s_n - s|$ is small. So we must bound $|\sqrt{s_n} - \sqrt{s}|$ from above *in terms of* $|s_n - s|$, getting rid of the square roots — by the conjugate again:

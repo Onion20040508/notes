@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 21
 chapter: 3
@@ -24,7 +25,7 @@ Taking $X = \mathbb{R}$ (or $\Omega \subseteq \mathbb{R}$) and $Y = \mathbb{R}$ 
 > - Continuity between topological spaces (preimages of open sets are open), [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]], agrees with this for metric spaces by [[§11 Metric Topology#^thm-11-7|590 Thm. §11.7]].
 > - The case X = Y = ℂ with d(z, w) = |z − w|: [[§18 Continuity#^def-18-1|342 Def. §18.1]] (continuity of complex functions, with worked examples).
 
-> [!remark] Remark: Where the metric-space theory continues
+> [!remark] Remark: Where the Metric-Space Theory Continues
 > The theorems that make this definition useful are proved in Topology for metric (and general topological) spaces:
 > - $\varepsilon$–$\delta$ continuity is equivalent to the open-set definition, [[§11 Metric Topology#^thm-11-7|590 Thm. §11.7]], and to sequential continuity, [[§11 Metric Topology#^thm-11-9|590 Thm. §11.9]]; the case of $\mathbb{R}$ is [[§17 Continuous Functions#^thm-17-1|Theorem §17.1]].
 > - A continuous image of a compact space is compact, [[Continuous Image of a Compact Space is Compact|590 Thm. §15.3]]: the abstract form of the [[Extreme Value Theorem]].

@@ -49,6 +49,8 @@ tags: [topology, math590]
 
 ^lem-5-1
 
+*The lecture omits the proof; see Munkres Lemma 16.1.*
+
 > [!theorem] Lemma §5.2
 > If $Y \subseteq X$, $U$ is open in $Y$, and $Y$ is open in $X$, then $U$ is open in $X$.
 

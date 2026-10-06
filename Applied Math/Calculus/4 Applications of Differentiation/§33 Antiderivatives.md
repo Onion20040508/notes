@@ -44,7 +44,7 @@ For instance, $F(x) = \frac13 x^3$ is an antiderivative of $f(x) = x^2$, by the 
 > F'(x) = f(x) = G'(x) \qquad\text{for all } x \in I ,
 > $$
 >
-> so by Corollary §26.4 (two functions with the same derivative on an interval differ by a constant), $G(x) - F(x) = C$ for some constant $C$; that is, $G(x) = F(x) + C$.
+> so by [[§26 The Mean Value Theorem#^cor-26-4|Corollary §26.4]] (two functions with the same derivative on an interval differ by a constant), $G(x) - F(x) = C$ for some constant $C$; that is, $G(x) = F(x) + C$.
 
 ^pf-33-1
 

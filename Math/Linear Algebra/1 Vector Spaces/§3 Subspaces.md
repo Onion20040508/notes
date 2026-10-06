@@ -126,7 +126,7 @@ tags: [linear-algebra]
 
 ^ladr-1-42
 
-> [!example] Example 1.43: A direct sum of multiple subspaces (p. 21)
+> [!example] Example 1.43: A direct sum of multiple subspaces (p. 22)
 > Let $V_k\subseteq\F^n$ consist of the vectors that are $0$ except possibly in slot $k$. Then
 > $$
 > \F^n=V_1\oplus\dots\oplus V_n ,
@@ -135,7 +135,7 @@ tags: [linear-algebra]
 
 ^ladr-1-43
 
-> [!example] Example 1.44: A sum that is not a direct sum (p. 21)
+> [!example] Example 1.44: A sum that is not a direct sum (p. 22)
 > In $\F^3$ let
 > $$
 > V_1=\{(x,y,0)\},\quad V_2=\{(0,0,z)\},\quad V_3=\{(0,y,y)\}.

@@ -42,5 +42,5 @@ tags: [calculus, hub]
 - [[§121 The Logarithm Defined as an Integral#^thm-121-10|Theorem §121.10: Derivative of b^x]]
 
 ## Connections
-- Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument (3) and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$, which is $f'(b) + \varepsilon_2$ here.
+- Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument, Equation (3) of [[§17 The Chain Rule#^rem-17-1|Remark: Why It Works]] in §17, and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$, which is $f'(b) + \varepsilon_2$ in the [[§17 The Chain Rule#^pf-17-2|proof of Theorem §17.2]].
 - Several variables: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]], and in Calculus [[§94 The Chain Rule#^thm-94-3|Theorem §94.3]] (Stewart 14.5).

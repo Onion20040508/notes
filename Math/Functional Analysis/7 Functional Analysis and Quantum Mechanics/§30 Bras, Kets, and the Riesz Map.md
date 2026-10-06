@@ -105,4 +105,4 @@ tags: [functional-analysis, math556, companion]
 ^rem-30-3
 
 > [!remark]- Connections
-> - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem §30.2 and Definition §30.2 are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].
+> - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem [[§30 Bras, Kets, and the Riesz Map#^thm-30-2|§30.2]] and Definition [[§30 Bras, Kets, and the Riesz Map#^def-30-2|§30.2]] are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].

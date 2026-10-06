@@ -65,8 +65,8 @@ tags: [linear-algebra]
 *Uses:* [[§18 Commuting Operators#^ladr-5-74|5.74]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]], [[§18 Commuting Operators#^ladr-5-75|5.75]], [[§17 Diagonalizable Operators#^ladr-5-65|5.65]]
 
 > [!remark]- Connections
-> - Physics: a complete set of commuting observables labels a basis by their joint eigenvalues. Orthonormal version for normal operators: the spectral theorems [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
-> - Used in Quantum Mechanics: a complete set of commuting observables labels a basis of simultaneous eigenkets — [[§C1.3 Measurements, Compatible Observables and Uncertainty#^thm-c1-3-2|QM Theorem §C1.3.2]].
+> - Orthonormal version for normal operators: the spectral theorems [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
+> - Used in Quantum Mechanics: a complete set of commuting observables labels a basis of simultaneous eigenkets by their joint eigenvalues — [[§C1.3 Measurements, Compatible Observables and Uncertainty#^thm-c1-3-2|QM Theorem §C1.3.2]].
 
 %% ex:5.76-fig %%
 > [!example] Example: The proof of 5.76, pictured

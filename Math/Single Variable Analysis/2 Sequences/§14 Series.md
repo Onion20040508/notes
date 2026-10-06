@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 14
 chapter: 2
@@ -49,12 +50,12 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 > [!remark]- Connections
 > - Computational version: [[§61 Convergence of Series#^def-61-1|342 Def. §61.1]] (series of complex numbers), reduced to real series by [[§61 Convergence of Series#^thm-61-1|342 Thm. §61.1]].
 
-> [!remark] Remark: Why is this definition reasonable?
+> [!remark] Remark: Why Is This Definition Reasonable?
 > Only *finite* sums are defined by the field operations of $\mathbb{R}$. An infinite sum must therefore be *defined* in terms of finite ones — and the natural way is as the limit of the finite approximations $s_n$, using the machinery of Chapter 2. This is also why series appear as a section of the chapter on sequences: a series *is* a sequence, namely its sequence of partial sums.
 
 ^rem-14-1
 
-> [!example] Example §14.1: The three test examples
+> [!example] Example §14.1: The Three Test Examples
 > **(1)** $a_n = 1$: then $s_n = n \to +\infty$, so $\sum_{n=1}^\infty 1 = +\infty$.
 >
 > **(2)** $a_n = \dfrac{1}{2^{n-1}}$: the partial sum is a geometric sum,
@@ -113,6 +114,8 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-1
 
+*Uses:* [[§14 Series#^def-14-3|Def. §14.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|§10.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|§10.8]]
+
 > [!theorem] Corollary §14.2: Terms of a Convergent Series Tend to Zero
 > If $\sum a_n$ converges, then $a_n \to 0$.
 
@@ -122,6 +125,8 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > Take $m = n$ in the Cauchy criterion: for $n \geq N$, $|a_n| < \varepsilon$.
 
 ^pf-14-2
+
+*Uses:* [[§14 Series#^thm-14-1|§14.1]]
 
 > [!remark]- Connections
 > - Its logic in 250: [[§2 Implications#^ex-2-10|250 Ex. §2.10]] (a necessary condition; the contrapositive is the divergence test; the converse fails).
@@ -144,6 +149,8 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-3
 
+*Uses:* [[§9 Limit Theorems for Sequences#^thm-9-2|§9.2]], [[§9 Limit Theorems for Sequences#^thm-9-3|§9.3]]
+
 > [!theorem] Corollary §14.4: Convergent Plus Divergent Is Divergent (HW)
 > If $\sum a_n$ converges and $\sum b_n$ diverges, then $\sum (a_n + b_n)$ diverges.
 
@@ -153,6 +160,8 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > If $\sum(a_n + b_n)$ converged, then by linearity $\sum b_n = \sum\bigl((a_n + b_n) - a_n\bigr)$ would converge — contradiction.
 
 ^pf-14-4
+
+*Uses:* [[§14 Series#^prop-14-3|§14.3]]
 
 > [!remark] Remark
 > No conclusion holds for divergent plus divergent: $\sum \tfrac1n$ and $\sum\bigl(-\tfrac1n\bigr)$ both diverge, yet their sum is $\sum 0 = 0$. Typical use of the corollary: $\sum \tfrac{n-1}{n^2} = \sum\bigl( \tfrac1n - \tfrac1{n^2} \bigr)$ diverges, being (divergent harmonic) plus (convergent p-series with the sign flipped).
@@ -183,7 +192,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > s_{8} = s_4 + \left(\frac15 + \frac16 + \frac17 + \frac18\right) > \frac12\cdot 2 + \left(\frac18 \cdot 4\right) = \frac12 \cdot 3.
 > $$
 >
-> In general, the segment from $\tfrac{1}{2^{k-1}+1}$ to $\tfrac{1}{2^k}$ has $2^k - 2^{k-1} = 2^{k-1}$ terms, each $\geq \tfrac{1}{2^k}$, so the segment sums to more than
+> In general, the segment from $\tfrac{1}{2^{k-1}+1}$ to $\tfrac{1}{2^k}$ has $2^k - 2^{k-1} = 2^{k-1}$ terms, each $\geq \tfrac{1}{2^k}$, so the segment sums to at least
 >
 > $$
 > \frac{1}{2^k} \cdot 2^{k-1} = \frac12.
@@ -203,7 +212,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 *The dyadic estimate as areas: term $n$ is a bar of area $\tfrac1n$ on $[n-1, n]$ (term $1$ gray). Under each block of terms $(2^k, 2^{k+1}]$ sits a red dashed box of height $\tfrac{1}{2^{k+1}}$ (the block's smallest term) and width $2^k$ — area exactly $\tfrac12$. Every bar reaches at least its box's roof, so each block sums to at least $\tfrac12$, and the partial sums gain half a unit per block, forever.*
 
 > [!remark]- Connections
-> - Used in [[§2 Implications#^ex-2-10|250 Ex. §2.10]](c) as the counterexample to the converse of Corollary 14.2.
+> - Used in [[§2 Implications#^ex-2-10|250 Ex. §2.10]](c) as the counterexample to the converse of [[§14 Series#^cor-14-2|Corollary §14.2]].
 > - Computational version: [[§70 Series#^thm-70-3|Calc Thm. §70.3]].
 
 ## Absolute Convergence
@@ -239,6 +248,8 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-6
 
+*Uses:* [[§14 Series#^thm-14-1|§14.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
 > [!remark]- Connections
 > - Computational version: [[§61 Convergence of Series#^cor-61-3|342 Cor. §61.3]] (complex series, via real and imaginary parts).
 
@@ -273,6 +284,8 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-7
 
+*Uses:* [[§14 Series#^thm-14-1|§14.1]], [[§14 Series#^prop-14-6|§14.6]], [[Monotone Convergence Theorem|§10.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|§10.3]], [[§9 Limit Theorems for Sequences#^lem-9-7|§9.7]]
+
 > [!remark]- Connections
 > - Computational version: [[§72 The Comparison Tests#^thm-72-1|Calc Thm. §72.1]] (with worked examples).
 > - Used in ODEs: comparison with $\sum_k (nK|t|)^k/k!$ shows that every entry of the matrix exponential $e^{\mathbf{A}t}$ converges, [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
@@ -287,12 +300,14 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-8
 
+*Uses:* [[§14 Series#^thm-14-7|§14.7]]
+
 > [!remark] Remark
 > Three remarks. (1) Taking $b_n \equiv 1$ recovers “absolute convergence implies convergence” — the proposition above becomes a special case. (2) This is the series analogue of the sequence fact “null times bounded is null” (§8). (3) It is also the germ of the *Weierstrass M-test* of §25: there, $a_n$ becomes a convergent numerical majorant $M_n$ and $b_n$ a bounded family of function values, and the Cauchy-tail estimate $\left|\sum_{k=n+1}^m a_k b_k\right| \leq M \sum_{k=n+1}^m |a_k|$ — an equally valid proof of this proposition — reappears verbatim as the M-test's proof.
 
 ^rem-14-5
 
-> [!example] Example §14.2: Making the comparison go the right way
+> [!example] Example §14.2: Making the Comparison Go the Right Way
 > Decide whether $\displaystyle\sum_{n=1}^{\infty} \frac{n}{n^2+2}$ converges or diverges.
 >
 > *Guess first:* the term is comparable to $\tfrac{n}{n^2} = \tfrac1n$, so it should diverge. But
@@ -313,7 +328,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 To use the comparison test, we need a stock of basic series.
 
-> [!example] Example §14.3: The p-series
+> [!example] Example §14.3: The p-Series
 > For $p > 0$, the series
 >
 > $$
@@ -327,7 +342,7 @@ To use the comparison test, we need a stock of basic series.
 > [!remark]- Connections
 > - Computational version: the p-series by the Integral Test, [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]] (with worked examples).
 
-> [!example] Example §14.4: The geometric series
+> [!example] Example §14.4: The Geometric Series
 > For $a \in \mathbb{R}$, the geometric series $\sum_{n=0}^\infty a^n$ converges if and only if $|a| < 1$, with
 >
 > $$
@@ -373,6 +388,8 @@ To use the comparison test, we need a stock of basic series.
 
 ^pf-14-9
 
+*Uses:* [[§14 Series#^ex-14-4|Ex. §14.4]], [[§14 Series#^thm-14-7|§14.7]], [[§14 Series#^cor-14-2|§14.2]], [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-4|§10.4]]
+
 > [!remark]- Connections
 > - Computational version: [[§74 The Ratio and Root Tests#^thm-74-1|Calc Thm. §74.1]] (with worked examples).
 
@@ -396,10 +413,12 @@ To use the comparison test, we need a stock of basic series.
 
 ^pf-14-10
 
+*Uses:* [[§14 Series#^ex-14-4|Ex. §14.4]], [[§14 Series#^thm-14-7|§14.7]], [[§14 Series#^cor-14-2|§14.2]], [[§9 Limit Theorems for Sequences#^ex-9-4|Ex. §9.4]]
+
 > [!remark]- Connections
 > - Computational version: [[§74 The Ratio and Root Tests#^thm-74-2|Calc Thm. §74.2]] (with worked examples).
 
-> [!example] Example §14.5: Three quick applications
+> [!example] Example §14.5: Three Quick Applications
 > Decide convergence or divergence, by any means:
 >
 > 1. $\displaystyle\sum \frac{3^n}{n^2}$: diverges — the terms $\to +\infty$ (growth scale, §9); or ratio test: $\left|\tfrac{a_{n+1}}{a_n}\right| = 3 \left( \tfrac{n}{n+1} \right)^2 \to 3 > 1$.

@@ -31,7 +31,7 @@ tags: [topology, math590]
 
 ^rem-4-1
 
-> [!remark] Remark: Check that $\mathcal{B}$ is a basis
+> [!remark] Remark: Check That $\mathcal{B}$ is a Basis
 > 1. Since $X \times Y \in \mathcal{B}$, every $x \times y \in X \times Y$ belongs to a basis element ($X \times Y$).
 > 2. If $x \times y \in (U_1 \times V_1) \cap (U_2 \times V_2)$, then $x \times y \in (U_1 \cap U_2) \times (V_1 \cap V_2) \subseteq (U_1 \times V_1) \cap (U_2 \times V_2)$. ✓
 

@@ -189,7 +189,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 > \frac{d}{dx}\big(x^{-n}\big) = -n x^{-n-1} .
 > $$
 >
-> So the Power Rule $\frac{d}{dx}(x^m) = mx^{m-1}$ ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|Theorem §14.2]]) holds for every integer $m$ (for $m = 0$ it is Theorem §14.1).
+> So the Power Rule $\frac{d}{dx}(x^m) = mx^{m-1}$ ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|Theorem §14.2]]) holds for every integer $m$ (for $m = 0$ it is [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-1|Theorem §14.1]]).
 >
 > *Stewart: 3.1 (text); Exercise 3.2.66(c)*
 

@@ -153,7 +153,7 @@ tags: [linear-algebra]
 > [!remark] Remark: Meaning
 > A block diagonal matrix of $T$ corresponds to a decomposition of $V$ into invariant subspaces, one per block.
 
-> [!example] Example 8.36: A block diagonal matrix (p. 313)
+> [!example] Example 8.36: A block diagonal matrix (p. 314)
 > $$
 > \begin{pmatrix}4&0&0&0&0\\0&2&-3&0&0\\0&0&2&0&0\\0&0&0&1&7\\0&0&0&0&1\end{pmatrix}
 > $$

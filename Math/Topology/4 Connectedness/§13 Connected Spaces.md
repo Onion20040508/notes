@@ -92,6 +92,21 @@ tags: [topology, math590]
 
 ^lem-13-2
 
+> [!proof]+ Proof of Lemma
+> (Old def $\Rightarrow$ new def) Suppose $A$ and $B$ form a separation of $Y$. $\Rightarrow$ $A$ is open and closed in $Y$.
+>
+> The closure of $A$ in $Y$ is $\overline{A} \cap Y$, where $\overline{A}$ is the closure of $A$ in $X$ ([[§7 Interior and Closure#^thm-7-2|Closure in Subspace]]). Since $A$ is closed in $Y$ $\Rightarrow$ $A = \overline{A} \cap Y$.
+>
+> $\Rightarrow$ $B \cap \overline{A} = \emptyset$ (since $B \cap A = \emptyset$). Recall $\overline{A} = A \cup \{\text{limit pts of } A\}$ ([[§7 Interior and Closure#^thm-7-4|Closure and Limit Points]]) $\Rightarrow$ $B$ contains no limit points of $A$.
+>
+> Similarly, $A$ contains no limit points of $B$.
+>
+> (New def $\Rightarrow$ old def) Suppose $A, B$ disjoint nonempty such that $A \cup B = Y$, neither $A$ nor $B$ contains a limit point of the other. $A \cap \overline{B} = \emptyset$ and $B \cap \overline{A} = \emptyset$. $\Rightarrow$ $Y \cap \overline{B} = B$ and $Y \cap \overline{A} = A$ (since $Y = A \cup B$). $\Rightarrow$ $A, B$ closed in $Y$. $\Rightarrow$ $Y \setminus A = B$, $Y \setminus B = A$ open in $Y$. $\Rightarrow$ separation of $Y$.
+
+^pf-13-2
+
+*Uses:* [[§7 Interior and Closure#^thm-7-2|§7.2]], [[§7 Interior and Closure#^thm-7-4|§7.4]]
+
 > [!remark] Remark: Limit Points in $X$ vs. $Y$
 > In this lemma, “limit point” is taken in the ambient space $X$. However, for points in $Y$, it doesn't matter:
 >
@@ -113,21 +128,6 @@ tags: [topology, math590]
 > Since $A, B \subseteq Y$, asking whether $B$ contains a limit point of $A$ gives the same answer in either space. The “$Y \subseteq X$” framing is useful when discussing connectedness of a subspace while working in a larger ambient space.
 
 ^rem-13-4
-
-> [!proof]+ Proof of Lemma
-> (Old def $\Rightarrow$ new def) Suppose $A$ and $B$ form a separation of $Y$. $\Rightarrow$ $A$ is open and closed in $Y$.
->
-> The closure of $A$ in $Y$ is $\overline{A} \cap Y$, where $\overline{A}$ is the closure of $A$ in $X$ ([[§7 Interior and Closure#^thm-7-2|Closure in Subspace]]). Since $A$ is closed in $Y$ $\Rightarrow$ $A = \overline{A} \cap Y$.
->
-> $\Rightarrow$ $B \cap \overline{A} = \emptyset$ (since $B \cap A = \emptyset$). Recall $\overline{A} = A \cup \{\text{limit pts of } A\}$ ([[§7 Interior and Closure#^thm-7-4|Closure and Limit Points]]) $\Rightarrow$ $B$ contains no limit points of $A$.
->
-> Similarly, $A$ contains no limit points of $B$.
->
-> (New def $\Rightarrow$ old def) Suppose $A, B$ disjoint nonempty such that $A \cup B = Y$, neither $A$ nor $B$ contains a limit point of the other. $A \cap \overline{B} = \emptyset$ and $B \cap \overline{A} = \emptyset$. $\Rightarrow$ $Y \cap \overline{B} = B$ and $Y \cap \overline{A} = A$ (since $Y = A \cup B$). $\Rightarrow$ $A, B$ closed in $Y$. $\Rightarrow$ $Y \setminus A = B$, $Y \setminus B = A$ open in $Y$. $\Rightarrow$ separation of $Y$.
-
-^pf-13-2
-
-*Uses:* [[§7 Interior and Closure#^thm-7-2|§7.2]], [[§7 Interior and Closure#^thm-7-4|§7.4]]
 
 ## Continuous Images of Connected Spaces
 

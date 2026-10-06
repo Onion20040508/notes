@@ -60,9 +60,9 @@ tags: [linear-algebra]
 ^ladr-7-68
 
 > [!proof]+ Proof
-> (a) $\nullsp T=\{0\}\iff\nullsp T^*T=\{0\}$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](b)) $\iff0$ is not an eigenvalue of $T^*T$. (b) By the spectral theorem $\dim\range T^*T$ is the number of positive eigenvalues of $T^*T$ with multiplicity, and $\dim\range T^*T=\dim\range T$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d)). (c) from (b) and [[§6 Dimension#^ladr-2-39|2.39]].
+> (a) $\nullsp T=\{0\}\iff\nullsp T^*T=\{0\}$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](b)) $\iff0$ is not an eigenvalue of $T^*T$. (b) By the spectral theorem ([[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]) $\dim\range T^*T$ is the number of positive eigenvalues of $T^*T$ with multiplicity, and $\dim\range T^*T=\dim\range T$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d)). (c) from (b) and [[§6 Dimension#^ladr-2-39|2.39]].
 
-*Uses:* [[§26 Singular Value Decomposition#^ladr-7-64|7.64]], [[§6 Dimension#^ladr-2-39|2.39]]
+*Uses:* [[§26 Singular Value Decomposition#^ladr-7-64|7.64]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]], [[§6 Dimension#^ladr-2-39|2.39]]
 
 > [!remark]- Connections
 > - Computational version: [[§51★ The Singular Value Decomposition#^thm-51-3|235 Thm. §51.3]] (the rank of $A$ is the number of nonzero singular values).
@@ -89,13 +89,13 @@ tags: [linear-algebra]
 > Every linear map is: take coordinates along an orthonormal frame in $V$, scale the $k$-th by $s_k$, and place it along an orthonormal frame in $W$. Unlike the spectral theorem, the two frames differ, and the same proof works over $\R$ and $\C$.
 
 > [!proof]+ Proof
-> $T^*T$ is positive ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](a)), so there is an orthonormal basis $e_1,\dots,e_n$ of $V$ with $T^*Te_k=s_k^2e_k$ (spectral theorem; $s_k=0$ for $k>m$). For $k\le m$ put $f_k=Te_k/s_k$. Then
+> $T^*T$ is positive ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](a)), so there is an orthonormal basis $e_1,\dots,e_n$ of $V$ with $T^*Te_k=s_k^2e_k$ (spectral theorem, [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]; $s_k=0$ for $k>m$). For $k\le m$ put $f_k=Te_k/s_k$. Then
 > $$
 > \langle f_j,f_k\rangle=\frac{\langle Te_j,Te_k\rangle}{s_js_k}=\frac{\langle e_j,T^*Te_k\rangle}{s_js_k}=\frac{s_k}{s_j}\langle e_j,e_k\rangle=\delta_{jk},
 > $$
 > so $f_1,\dots,f_m$ is orthonormal. For $k>m$, $T^*Te_k=0$, hence $Te_k=0$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](b)). So $Tv=\sum_{k\le n}\langle v,e_k\rangle Te_k=\sum_{k\le m}s_k\langle v,e_k\rangle f_k$.
 
-*Uses:* [[§26 Singular Value Decomposition#^ladr-7-64|7.64]]
+*Uses:* [[§26 Singular Value Decomposition#^ladr-7-64|7.64]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]
 
 > [!remark]- Connections
 > - Computational version: [[§51★ The Singular Value Decomposition#^thm-51-4|235 Thm. §51.4]] ($A=U\Sigma V^T$) and [[§51★ The Singular Value Decomposition#^thm-51-5|235 Thm. §51.5]] ($A\mathbf v_i=\sigma_i\mathbf u_i$), worked in [[§51★ The Singular Value Decomposition#^ex-51-2|235 Ex. §51.2]].
@@ -150,7 +150,9 @@ tags: [linear-algebra]
 ^ladr-7-80
 
 > [!proof]+ Proof
-> Let $T:\F^n\to\F^M$ have matrix $A$; $\dim\range T=m$. Take an SVD $Tv=\sum_{k\le m}s_k\langle v,e_k\rangle f_k$ and let $B,D,C$ have columns $f_k$, diagonal $s_k$, columns $e_k$. With $u_k$ the standard basis of $\F^m$: $(AC-BD)u_k=Ae_k-s_kf_k=0$, so $AC=BD$ and $ACC^*=BDC^*$. Now $C^*e_k=u_k$, so $CC^*e_k=e_k$; and $C^*v=0$, $Av=0$ for $v\perp\Span(e_1,\dots,e_m)$. So $ACC^*=A$ on both summands of $\F^n=\Span(e)\oplus\Span(e)^\perp$, giving $A=BDC^*$.
+> Let $T:\F^n\to\F^M$ have matrix $A$; $\dim\range T=m$ ([[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]]). Take an SVD ([[Singular value decomposition|7.70]]) $Tv=\sum_{k\le m}s_k\langle v,e_k\rangle f_k$ and let $B,D,C$ have columns $f_k$, diagonal $s_k$, columns $e_k$. With $u_k$ the standard basis of $\F^m$: $(AC-BD)u_k=Ae_k-s_kf_k=0$, so $AC=BD$ and $ACC^*=BDC^*$. Now $C^*e_k=u_k$, so $CC^*e_k=e_k$; and $C^*v=0$, $Av=0$ for $v\perp\Span(e_1,\dots,e_m)$. So $ACC^*=A$ on both summands of $\F^n=\Span(e)\oplus\Span(e)^\perp$, giving $A=BDC^*$.
+
+*Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]], [[Singular value decomposition|7.70]]
 
 > [!remark]- Connections
 > - The usual 'full' SVD $A=U\Sigma V^*$ with square unitary $U,V$ is obtained by extending the orthonormal columns to bases.

@@ -48,7 +48,7 @@ tags: [linear-algebra]
 > [!example] Example 6.3: Inner products (p. 184)
 > - (a) **Euclidean** on $\F^n$: $\langle w,z\rangle=w_1\bar z_1+\dots+w_n\bar z_n$.
 > - (b) **Weighted**: $\langle w,z\rangle=c_1w_1\bar z_1+\dots+c_nw_n\bar z_n$ for fixed $c_k>0$ (positivity needs every $c_k>0$).
-> - (c) On continuous real functions on $[-1,1]$: $\langle f,g\rangle=\int_{-1}^1fg$. Definiteness uses continuity: a continuous $f\ge0$ with $\int f^2=0$ is $0$.
+> - (c) On continuous real functions on $[-1,1]$: $\langle f,g\rangle=\int_{-1}^1fg$. Definiteness uses continuity: if $f$ is continuous and $\int_{-1}^1f^2=0$, then the continuous function $f^2\ge0$ vanishes identically, so $f=0$.
 > - (d) On $\Poly(\R)$: $\langle p,q\rangle=p(0)q(0)+\int_{-1}^1p'q'$. Definiteness: $\int(p')^2=0$ forces $p$ constant, and $p(0)=0$ forces $p=0$.
 > - (e) On $\Poly(\R)$: $\langle p,q\rangle=\int_0^\infty p(x)q(x)e^{-x}\,dx$ (converges because $e^{-x}$ beats polynomials). Gram–Schmidt with this weight produces the Laguerre polynomials; their associated versions appear in the hydrogen radial wave functions.
 
@@ -204,12 +204,9 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Computational version: [[§46 Inner Product Spaces#^thm-46-4|235 Thm. §46.4]] (Cauchy–Schwarz in a real inner product space).
 > - For integrals: the case $p=2$ of [[Hölder's Inequality|551 Thm. §19.5]], which extends it to $L^p$. In several variables its equality case gives the direction of steepest ascent, $D_{\mathbf u}f=\nabla f\cdot\mathbf u\le|\nabla f|$, [[Directional Derivative Formula|452 Thm. §7.1]].
-
-%% ex:6.14-fig %%
-
-> [!remark]- Connections
 > - In ℝ² and ℝ³ it follows from $\mathbf a \cdot \mathbf b = |\mathbf a|\,|\mathbf b| \cos\theta$, [[§82 The Dot Product#^thm-82-2|Calc Thm. §82.2]]; used to maximize directional derivatives in [[§95 Directional Derivatives and the Gradient Vector#^thm-95-4|Calc Thm. §95.4]].
 
+%% ex:6.14-fig %%
 > [!example] Example: Cauchy–Schwarz as leg $\le$ hypotenuse
 > In the decomposition $u=cv+w$ of [[§19 Inner Products and Norms#^ladr-6-13|6.13]] the right triangle has hypotenuse $\|u\|$ and legs $\|cv\|=\frac{|\langle u,v\rangle|}{\|v\|}$ and $\|w\|$. A leg is at most the hypotenuse: that is the inequality. Equality means $w=0$, i.e. $u\in\Span(v)$.
 >

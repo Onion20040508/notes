@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 10
 chapter: 2
@@ -15,7 +16,7 @@ So far, mainly three ways to determine whether a sequence converges: (1) guess t
 
 ^def-10-1
 
-> [!example] Example §10.1: Monotone or not
+> [!example] Example §10.1: Monotone or Not
 > (1) $s_n = n$ and $s_n = n^2$ are increasing. (2) $s_n = 1 - \tfrac1n$ is also increasing. (3) $s_n = 1 + (-1)^n \tfrac{1}{n^2}$ is *not* monotone — consecutive differences alternate in sign.
 >
 > What is the difference between (1) and (2)? (1) is increasing but *not bounded above* — and not convergent. (2) is increasing *and bounded* — and converges to $1$.
@@ -26,14 +27,6 @@ So far, mainly three ways to determine whether a sequence converges: (1) guess t
 > If a sequence $(s_n)$ is monotone and bounded, then it is convergent.
 
 ^thm-10-1
-
-> [!remark]- Connections
-> - Computational version: [[§69 Sequences#^thm-69-9|Calc Thm. §69.9]] (with worked examples).
-
-> [!remark] Remark
-> Both assumptions are needed. Is there a bounded sequence that is not convergent? Yes: $s_n = (-1)^n$ — the monotone condition is missing. And $s_n = n$ is monotone but unbounded.
-
-^rem-10-1
 
 > [!proof]+ Proof
 > Assume $(s_n)$ is increasing; the decreasing case is the same (using $\inf$ in place of $\sup$).
@@ -56,8 +49,18 @@ So far, mainly three ways to determine whether a sequence converges: (1) guess t
 
 ^pf-10-1
 
+*Uses:* [[Completeness Axiom|Def. §4.4]], [[Characterization of the Supremum|§4.3]]
+
 ![[m451-10-1.svg]]
 *The proof in one picture: $s = \sup\{s_n\}$ (blue line) is the least upper bound, at or below any other upper bound $M$. Since $s - \varepsilon$ is not an upper bound, some $s_N$ (red) exceeds it — and because the sequence increases, every later term is trapped in the band between $s - \varepsilon$ and $s$.*
+
+> [!remark]- Connections
+> - Computational version: [[§69 Sequences#^thm-69-9|Calc Thm. §69.9]] (with worked examples).
+
+> [!remark] Remark
+> Both assumptions are needed. Is there a bounded sequence that is not convergent? Yes: $s_n = (-1)^n$ — the monotone condition is missing. And $s_n = n$ is monotone but unbounded.
+
+^rem-10-1
 
 The supremum also admits a *sequential* characterization — the limit-language form of the approximation property of §4, and the engine inside several later proofs (e.g. the [[Extreme Value Theorem|Extreme Value Theorem]], §18):
 
@@ -93,7 +96,9 @@ The supremum also admits a *sequential* characterization — the limit-language 
 
 ^pf-10-2
 
-> [!example] Example §10.2: A recursion with no formula
+*Uses:* [[Archimedean Property|§4.5]]
+
+> [!example] Example §10.2: A Recursion with No Formula
 > Let $s_1 = 1$ and $s_{n+1} = \sqrt{1 + s_n}$. Show $\lim s_n$ exists.
 >
 > We don't have an explicit formula for $s_n$, so it is not easy to guess the limit and check by $(\varepsilon, N)$. Instead we use the [[Monotone Convergence Theorem|Monotone Convergence Theorem]]: show *increasing* and *bounded*.
@@ -140,6 +145,8 @@ The supremum also admits a *sequential* characterization — the limit-language 
 > Check by definition. Let $M > 0$. Since $(s_n)$ is not bounded above, $M$ is not an upper bound: there exists $N$ with $s_N > M$. Since $(s_n)$ is increasing, $s_n \geq s_N > M$ for all $n \geq N$. Hence $s_n \to +\infty$. The decreasing case is symmetric.
 
 ^pf-10-3
+
+*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]]
 
 Combining the two theorems: *a monotone sequence always has a limit in $[-\infty, +\infty]$.*
 
@@ -197,6 +204,8 @@ In general a sequence is neither increasing nor decreasing, so the theorem above
 
 ^pf-10-5
 
+*Uses:* [[§5 The Symbols +∞, −∞#^prop-5-1|§5.1]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
+
 If $\lim s_n$ exists, what is the relation? We expect $\liminf s_n \leq \lim s_n \leq \limsup s_n$. In fact, something stronger holds:
 
 > [!theorem] Theorem §10.6: Convergence via Lim Sup and Lim Inf
@@ -249,6 +258,8 @@ If $\lim s_n$ exists, what is the relation? We expect $\liminf s_n \leq \lim s_n
 
 ^pf-10-6
 
+*Uses:* [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]], [[Squeeze Theorem|§8.1]]
+
 ## Cauchy Sequences
 
 The concepts above give another way to prove convergence, but they still involve computing the limits $\limsup s_n$, $\liminf s_n$. **Question:** is there a way to decide convergence *purely in terms of the sequence $(s_n)$ itself* — no candidate limit, no auxiliary limits? **Answer: yes** — the notion of Cauchy sequences.
@@ -280,6 +291,8 @@ The concepts above give another way to prove convergence, but they still involve
 
 ^pf-10-7
 
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
 > [!theorem] Theorem §10.8: Cauchy Implies Convergent
 > If $(s_n)$ is a Cauchy sequence of real numbers, then $(s_n)$ is convergent. Combining with the previous theorem: *$(s_n)$ is convergent if and only if it is Cauchy.*
 
@@ -309,8 +322,10 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 
 ^pf-10-9
 
-> [!proof]+ Proof of Theorem 10.8
-> Since $(s_n)$ is bounded, $\liminf s_n$ and $\limsup s_n$ are finite. We use the criterion of the previous subsection: it suffices to show they are equal — so we try to get information on $\underline{s}_N$, $\overline{s}_N$.
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§4 The Completeness Axiom#^ex-4-1|Ex. §4.1]]
+
+> [!proof]+ Proof of Theorem §10.8
+> Since $(s_n)$ is bounded, $\liminf s_n$ and $\limsup s_n$ are finite. We use the criterion of [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Theorem §10.6]]: it suffices to show they are equal — so we try to get information on $\underline{s}_N$, $\overline{s}_N$.
 >
 > For any $\varepsilon > 0$ there exists $N$ such that for all $m, n \geq N$,
 >
@@ -348,14 +363,16 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 > \limsup_{n\to\infty} s_n = \liminf_{n\to\infty} s_n,
 > $$
 >
-> and by the theorem of the previous subsection, $(s_n)$ is convergent.
+> and by [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Theorem §10.6]](2), $(s_n)$ is convergent.
 
 ^pf-10-8
+
+*Uses:* [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-9|§10.9]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|§10.6]], [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-4|§10.4]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
 
 ![[m451-10-4.svg]]
 *Cauchy implies convergent, with no limit in sight: the band is anchored at a *term* $s_N$ (red), not at a limit. Every later term lies within $\varepsilon$ of $s_N$, so the whole tail — and with it $\underline{s}_N \leq \overline{s}_N$, hence $\liminf s_n$ and $\limsup s_n$ — is caught in an interval of length $2\varepsilon$.*
 
-> [!example] Example §10.3: A contraction-type estimate
+> [!example] Example §10.3: A Contraction-Type Estimate
 > Assume $(s_n)$ satisfies $|s_{n+1} - s_n| < 2^{-n}$ for all $n \geq 1$. Prove $(s_n)$ is a Cauchy sequence, and hence convergent.
 >
 > We need to see how big $|s_m - s_n|$ is for $m > n$. Telescope through the intermediate terms and apply the [[Triangle inequality|triangle inequality]]:
@@ -381,7 +398,7 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 
 ^ex-10-3
 
-> [!remark] Remark: The geometric rate is doing the work (HW)
+> [!remark] Remark: The Geometric Rate Is Doing the Work (HW)
 > It is *not* enough that consecutive differences tend to $0$: the weaker hypothesis $|s_{n+1} - s_n| < \tfrac1n$ does not imply Cauchy. Counterexample:
 >
 > $$
@@ -391,14 +408,14 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 > yet $(s_n)$ is unbounded: grouping the terms in dyadic blocks,
 >
 > $$
-> s_{2^k} = 1 + \frac12 + \underbrace{\left(\frac13 + \frac14\right)}_{>\, 2\cdot\frac14} + \underbrace{\left(\frac15 + \cdots + \frac18\right)}_{>\, 4\cdot\frac18} + \cdots \ >\ 1 + \frac k2,
+> s_{2^k} = 1 + \frac12 + \underbrace{\left(\frac13 + \frac14\right)}_{>\, 2\cdot\frac14} + \underbrace{\left(\frac15 + \cdots + \frac18\right)}_{>\, 4\cdot\frac18} + \cdots \ \geq\ 1 + \frac k2,
 > $$
 >
 > and since $(s_n)$ is increasing, it exceeds any $M$ from some point on. Unbounded sequences are not Cauchy. (These are the partial sums of the *harmonic series*; the same dyadic estimate returns in §14.) The moral: in the example above, the increments were *summable* — the geometric tail $2^{-n+1}$ stayed uniformly small — whereas mere decay of single increments controls nothing about the accumulated drift.
 
 ^rem-10-3
 
-> [!remark] Remark: Cauchy sequences and the construction of the reals
+> [!remark] Remark: Cauchy Sequences and the Construction of the Reals
 > Cauchy sequences can be used to construct $\mathbb{R}$ from $\mathbb{Q}$: real numbers can be identified with equivalence classes of Cauchy sequences of rational numbers (two sequences being equivalent when their difference tends to $0$). This is the second standard construction of $\mathbb{R}$, alongside the Dedekind cuts of §6. Note the logical order in this course, however: we *assumed* $\mathbb{R}$ with completeness, and the theorem above (Cauchy $\Rightarrow$ convergent) is a *consequence* — indeed an equivalent form — of the completeness axiom.
 >
 > ★ The construction is carried out, with proofs, in [[§6★ ℝ from Cauchy Sequences of Rationals]].

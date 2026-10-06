@@ -251,7 +251,7 @@ tags: [topology, math590]
 > \begin{aligned}
 > \|\gamma(t)\|^2 &= (p_1 + td_1)^2 + (p_2 + td_2)^2 \\
 > &= p_1^2 + 2p_1 d_1 t + d_1^2 t^2 + p_2^2 + 2p_2 d_2 t + d_2^2 t^2 \\
-> &= \underbrace{(d_1^2 + d_2^2)}_{\|\mathbf{d}\|^2}\,t^2 + \underbrace{2(p_1 d_1 + p_2 d_2)}_{\text{dot product }\mathbf{p} \cdot \mathbf{d}}\,t + \underbrace{(p_1^2 + p_2^2)}_{\|\mathbf{p}\|^2}.
+> &= \underbrace{(d_1^2 + d_2^2)}_{\|\mathbf{d}\|^2}\,t^2 + \underbrace{2(p_1 d_1 + p_2 d_2)}_{2\,\mathbf{p} \cdot \mathbf{d}}\,t + \underbrace{(p_1^2 + p_2^2)}_{\|\mathbf{p}\|^2}.
 > \end{aligned}
 > $$
 >
@@ -306,7 +306,7 @@ All three results—the [[§24 Covering Spaces#^lem-24-12|nullhomotopy extension
 > - The case $n = 1$, together with the $\pi_1$ criterion: [[§24 Covering Spaces#^lem-24-12|Equivalent Conditions for Nullhomotopy]].
 
 > [!proof]+ Proof
-> **($\Leftarrow$): Extension $\Rightarrow$ nullhomotopic.** Given $k: B^{n+1} \to X$ with $k|_{S^n} = h$, the homotopy is:
+> **($\Leftarrow$): Extension $\Rightarrow$ nullhomotopic.** Given $k: B^{n+1} \to X$ with $k|_{S^n} = h$, the homotopy is $H: S^n \times I \to X$, $H(x, t) = k((1-t)x)$:
 >
 > ![[m590-26-1.svg]]
 > *The homotopy (blue) evaluates $k$ on the shrinking sphere of radius $1-t$: at $t = 0$ it is $h = k|_{S^n}$, at $t = 1$ it is the constant $k(0)$. It stays inside $B^{n+1}$, which is all we need from $k$.*
@@ -341,6 +341,8 @@ All three results—the [[§24 Covering Spaces#^lem-24-12|nullhomotopy extension
 > For each $n \geq 0$, there is no retraction $r: B^{n+1} \to S^n$.
 
 ^thm-26-9
+
+*The course proves only the case $n = 1$ ([[No-Retraction Theorem|Theorem §26.6]]); for $n \geq 2$ the proof needs homology, and the theorem is taken as given (remark below).*
 
 > [!remark] Remark: Why Our Proof Does Not Generalize
 > For $n = 1$, we proved this using $\pi_1$ ([[No-Retraction Theorem|§26.6]]): a retraction $r: B^2 \to S^1$ would force an injection $j_*: \pi_1(S^1) \hookrightarrow \pi_1(B^2)$, i.e., $\mathbb{Z} \hookrightarrow 0$, which is impossible.
@@ -439,6 +441,8 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 
 ^cor-26-12
 
+*Immediate from [[Deformation Retract Induces Isomorphism on π₁|Theorem §26.11]]: $j_{\ast}$ is an isomorphism.*
+
 *Uses:* [[Deformation Retract Induces Isomorphism on π₁|§26.11]]
 
 > [!remark] Remark: Retraction vs. Deformation Retraction: Summary
@@ -455,7 +459,7 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 
 ## Examples
 
-> [!example] Example §26.2: $\mathbb{R}^3 \setminus \{z\text{-axis}\}$ deformation retracts onto $\mathbb{R}^2 \setminus \{0\}$
+> [!example] Example §26.2: $\mathbb{R}^3 \setminus \{z\text{-axis}\}$ Deformation Retracts onto $\mathbb{R}^2 \setminus \{0\}$
 > Let $X = \mathbb{R}^3 \setminus \{z\text{-axis}\}$. Note $\mathbb{R}^2 \setminus \{0\} \subseteq X$ (as the $z = 0$ plane minus the origin). Define
 >
 > $$
@@ -473,12 +477,12 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 ![[m590-26-11.svg]]
 *$H(x,y,z,t) = (x, y, (1-t)z)$ moves every point straight down (red) onto the blue plane $z = 0$; points below the plane rise the same way. Since $(x, y) \neq (0,0)$ never changes, no point ever touches the removed $z$-axis (red, dashed), and in particular none lands on the origin.*
 
-> [!example] Example §26.3: $B^2$ deformation retracts onto a point
+> [!example] Example §26.3: $B^2$ Deformation Retracts onto a Point
 > $H: B^2 \times I \to B^2$ defined by $H(x, t) = (1-t)x$. So $\pi_1(B^2) = 0$ (trivial).
 
 ^ex-26-3
 
-> [!example] Example §26.4: $\{x \in \mathbb{R}^2 : \|x\| > 1\}$ deformation retracts onto $S^1$
+> [!example] Example §26.4: $\{x \in \mathbb{R}^2 : \|x\| > 1\}$ Deformation Retracts onto $S^1$
 > The exterior of the unit disk deformation retracts onto the unit circle via
 >
 > $$
@@ -489,12 +493,12 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 
 ^ex-26-4
 
-> [!example] Example §26.5: Doubly punctured plane
+> [!example] Example §26.5: Doubly Punctured Plane
 > $\mathbb{R}^2 \setminus \{p, q\}$ (two points removed) deformation retracts onto a [[§28 Fundamental Group of Some Surfaces#^def-28-4|figure-eight space]] (wedge of two circles). So $\pi_1(\mathbb{R}^2 \setminus \{p, q\}) \cong F_2$ (the [[§21 Algebra Prerequisites꞉ Groups#^def-21-8|free group]] on two generators).
 
 ^ex-26-5
 
-> [!example] Example §26.6: Doubly punctured plane: two deformation retracts
+> [!example] Example §26.6: Doubly Punctured Plane: Two Deformation Retracts
 > The plane with two points removed deformation retracts onto both a figure-eight space and a “theta” space ($\Theta$). However, neither the figure-eight nor the theta space is a deformation retract of the other, but they have isomorphic fundamental groups (both $\cong F_2$).
 >
 > This illustrates that **isomorphic $\pi_1$ does not imply deformation retract**—the relationship is one-directional.
@@ -504,7 +508,7 @@ A [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|retraction]] gives $j
 ![[m590-26-12.svg]]
 *The doubly punctured plane deformation retracts onto the figure eight (left) and onto the theta space (right): points flow away from the punctures $p, q$ and in from far away onto the blue graph. So both graphs have $\pi_1 \cong F_2$ and the same homotopy type as $\mathbb{R}^2 \setminus \{p, q\}$, although neither graph is a deformation retract of the other.*
 
-> [!example] Example §26.7: $S^n$ is a deformation retract of $\mathbb{R}^{n+1} \setminus \{0\}$
+> [!example] Example §26.7: $S^n$ is a Deformation Retract of $\mathbb{R}^{n+1} \setminus \{0\}$
 > Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in [[§26 Deformation Retracts and Homotopy Type#^thm-26-2|Theorem §26.2]]). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
 >
 > For $n \geq 2$: $\pi_1(S^n) = 0$ ([[Sⁿ is Simply Connected for n ≥ 2|simply connected]]), so $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) = 0$.
@@ -761,13 +765,13 @@ The [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] as
 > - Left edge ($s = 0$): $(0, t) \mapsto H(f(0), t) = H(x_0, t) = \alpha(t)$.
 > - Right edge ($s = 1$): $(1, t) \mapsto H(f(1), t) = H(x_0, t) = \alpha(t)$.
 >
-> The bottom is the loop $h \circ f$ at $h(x_0)$; the top is the loop $k \circ f$ at $k(x_0)$; both side edges trace the path $\alpha$. By an analysis of this square (see Munkres for details), the paths
+> The bottom is the loop $h \circ f$ at $h(x_0)$; the top is the loop $k \circ f$ at $k(x_0)$; both side edges trace the path $\alpha$. The paths
 >
 > $$
 > \alpha * (k \circ f) \qquad \text{and} \qquad (h \circ f) * \alpha
 > $$
 >
-> are path homotopic. Therefore:
+> are path homotopic. Indeed, let $\beta_1$ be the path in $I \times I$ that runs along the bottom edge and then up the right edge, and $\beta_2$ the path that runs up the left edge and then along the top edge. Both go from $(0,0)$ to $(1,1)$, and $I \times I$ is convex, so the straight-line homotopy $(1-t)\beta_1(s) + t\beta_2(s)$ is a path homotopy from $\beta_1$ to $\beta_2$ inside $I \times I$ ([[§23 The Fundamental Group#^ex-23-2|Example §23.2]]). Composing it with $H \circ (f \times \operatorname{id})$, which carries $\beta_1$ to $(h \circ f) * \alpha$ and $\beta_2$ to $\alpha * (k \circ f)$, gives a path homotopy between these two paths. Therefore:
 >
 > $$
 > [\alpha] * [k \circ f] = [h \circ f] * [\alpha],
@@ -777,7 +781,7 @@ The [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|lemma in §26.1]] as
 
 ^pf-26-14
 
-*Uses:* [[Basepoint Independence of π₁|§23.2]], [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]]
+*Uses:* [[Basepoint Independence of π₁|§23.2]], [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|§26.1]], [[§23 The Fundamental Group#^ex-23-2|Ex. §23.2]]
 
 ![[m590-26-14.svg]]
 *The square $I \times I$, each corner labeled by its image under $H \circ (f \times \operatorname{id})$: bottom $h \circ f$, top $k \circ f$, both sides $\alpha$. The blue path (bottom, then right side) and the red path (left side, then top) have the same endpoints in the convex square, so they are path homotopic there (gray). Composing with $H \circ (f \times \operatorname{id})$ gives $(h \circ f) \ast  \alpha \simeq_p \alpha \ast  (k \circ f)$.*

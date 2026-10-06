@@ -212,11 +212,6 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ^lem-22-5
 
-> [!remark] Remark
-> The composition $f \circ p$ is still a path with the same image as $f$—the “trace” (set of points visited) is unchanged—but we may travel along $f$ at a different speed. The lemma says: *reparameterizing a path does not change its homotopy class*. Only the shape of the path matters, not how fast we traverse it.
-
-^rem-22-7
-
 > [!proof]+ Proof
 > Define $H: I \times I \to X$ by $H(s, t) = f((1 - t)\,p(s) + t\,s)$.
 >
@@ -235,6 +230,11 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ^pf-22-5
 
 *Uses:* [[§9 Continuous Functions#^thm-9-4|§9.4]]
+
+> [!remark] Remark
+> The composition $f \circ p$ is still a path with the same image as $f$—the “trace” (set of points visited) is unchanged—but we may travel along $f$ at a different speed. The lemma says: *reparameterizing a path does not change its homotopy class*. Only the shape of the path matters, not how fast we traverse it.
+
+^rem-22-7
 
 > [!remark] Remark
 > The homotopy $H(s, t) = f((1-t)\,p(s) + ts)$ continuously deforms the reparameterization $p$ into the identity: at $t = 0$ we use $p(s)$, at $t = 1$ we use $s$, and intermediate values blend between them via a [[§22 Homotopy of Paths#^thm-22-1|straight-line homotopy]] *inside* $I$.

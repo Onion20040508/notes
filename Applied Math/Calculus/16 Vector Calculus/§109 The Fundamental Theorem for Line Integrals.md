@@ -242,7 +242,7 @@ In terms of simply-connected regions, Stewart now states a partial converse to T
 
 ^ex-109-2
 
-The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how to find $f$. The proof of Theorem §109.3 suggests the way: integrate the components one variable at a time.
+The test of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]] says that $\mathbf{F}$ is conservative but not how to find $f$. The proof of Theorem §109.3 suggests the way: integrate the components one variable at a time.
 
 > [!remark] Remark: Method — Finding a Potential Function
 > To find $f$ with $\nabla f = \mathbf{F}$:
@@ -354,6 +354,8 @@ The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how t
 > W = \frac{\pi^2(e + 1) - (e + 1)}{1 + \pi^2} = (e + 1)\,\frac{\pi^2 - 1}{\pi^2 + 1} .
 > $$
 >
+> (The same integral, evaluated by integrating by parts twice and solving for it: [[§44 Integration by Parts#^ex-44-5|Example §44.5]].)
+>
 > *Source: 233 Practice Final Set 2, Part II Q3*
 
 ^ex-109-5
@@ -383,7 +385,7 @@ Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a pat
 ^thm-109-5
 
 > [!proof]+ Proof
-> By Definition §108.8 and Newton's Second Law,
+> By [[§108 Line Integrals#^def-108-8|Definition §108.8]] and Newton's Second Law,
 >
 > $$
 > \begin{aligned}

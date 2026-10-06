@@ -154,10 +154,10 @@ tags: [linear-algebra]
 ^ladr-4-12
 
 > [!remark] Remark: Analysis inside algebra
-> The proof needs a genuinely analytic input: a continuous function on a compact set attains its minimum (the extreme value theorem). There is no purely algebraic proof over $\C$.
+> The proof needs a genuinely analytic input: a continuous function on a compact set attains its minimum (the [[Extreme Value Theorem|extreme value theorem]], here on a compact disk in $\C$). There is no purely algebraic proof over $\C$.
 
 > [!proof]+ Proof
-> **$k$-th roots exist.** By De Moivre, $(\cos\theta+i\sin\theta)^k=\cos k\theta+i\sin k\theta$. Writing $w=r(\cos\theta+i\sin\theta)$, the number $r^{1/k}\big(\cos\frac{\theta}{k}+i\sin\frac{\theta}{k}\big)$ is a $k$-th root of $w$.
+> **$k$-th roots exist.** By De Moivre ([[§8 Products and Powers in Exponential Form#^cor-8-3|342 Cor. §8.3]]), $(\cos\theta+i\sin\theta)^k=\cos k\theta+i\sin k\theta$. Writing $w=r(\cos\theta+i\sin\theta)$, the number $r^{1/k}\big(\cos\frac{\theta}{k}+i\sin\frac{\theta}{k}\big)$ is a $k$-th root of $w$.
 >
 > **A minimum exists.** If $p$ has leading term $c_mz^m$, then $|p(z)|/|z|^m\to|c_m|$, so $|p(z)|\to\infty$ as $|z|\to\infty$. Hence the continuous function $|p|$ attains a global minimum at some $\zeta\in\C$ (minimize over a large closed disk, which is compact).
 >

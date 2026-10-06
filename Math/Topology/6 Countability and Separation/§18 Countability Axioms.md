@@ -15,6 +15,8 @@ tags: [topology, math590]
 
 ^thm-18-1
 
+*Not proved in the course (it needs Urysohn's lemma, [[§20 Normal Spaces#^rem-20-3|not covered]]); see Munkres Theorem 34.1.*
+
 > [!remark]- Connections
 > - Announced in [[§11 Metric Topology#^rem-11-1|Why Metrizable Spaces are Special]]; its route through normality is sketched in [[§20 Normal Spaces#^rem-20-3|Not Covered: Urysohn's Lemma and Tietze Extension]].
 
@@ -146,7 +148,7 @@ tags: [topology, math590]
 
 ^thm-18-3
 
-> [!proof]+ Proof for second-countable
+> [!proof]+ Proof for Second-Countable
 > **(1) Subspaces:** If $\mathcal{B}$ is a countable basis for $X$, then $\{B \cap A \mid B \in \mathcal{B}\}$ is a countable basis for $A$.
 >
 > **(2) Countable products:** Let $\mathcal{B}_i$ be a countable basis for $X_i$. Then
@@ -160,6 +162,8 @@ tags: [topology, math590]
 ^pf-18-3
 
 *Uses:* [[§5 Subspace Topology#^lem-5-1|§5.1]], [[§10 Product Topology on Arbitrary Products#^def-10-1|Def. §10.1]]
+
+*The first-countable case is the same argument with countable bases at a point; see Munkres Theorem 30.2.*
 
 ## Dense Subsets and Lindelöf Spaces
 
@@ -204,7 +208,7 @@ tags: [topology, math590]
 >
 > **(2)** $\mathbb{R}_\ell$ is separable ($\mathbb{Q}$ is dense). To see it is not second countable: suppose $\{B_n\}$ were a countable basis. For each $x \in \mathbb{R}$, the set $[x, x+1)$ is open, so some $B_{n_x}$ satisfies $x \in B_{n_x} \subseteq [x, x+1)$. Then $\inf B_{n_x} = x$, so different $x$'s give different $B_{n_x}$'s. But there are uncountably many $x$'s and only countably many $B_n$'s — contradiction.
 >
-> **(3)** $(\Rightarrow)$: Let $D = \{d_1, d_2, \ldots\}$ be a countable dense subset of a metric space $(X, d)$. The collection $\{B(d_i, 1/n) \mid i \in \mathbb{Z}_+, n \in \mathbb{Z}_+\}$ is countable. It is a basis: given $x \in U$ open, choose $\varepsilon > 0$ with $B(x, \varepsilon) \subseteq U$. Pick $d_i \in D$ with $d(x, d_i) < \varepsilon/2$ (density), and $n$ with $1/n < \varepsilon/2$. Then $x \in B(d_i, 1/n) \subseteq B(x, \varepsilon) \subseteq U$.
+> **(3)** $(\Rightarrow)$: Let $D = \{d_1, d_2, \ldots\}$ be a countable dense subset of a metric space $(X, d)$. The collection $\{B(d_i, 1/n) \mid i \in \mathbb{Z}_+, n \in \mathbb{Z}_+\}$ is countable. It is a basis: given $x \in U$ open, choose $\varepsilon > 0$ with $B(x, \varepsilon) \subseteq U$. Choose $n$ with $1/n < \varepsilon/2$, then pick $d_i \in D$ with $d(x, d_i) < 1/n$ (density). Then $x \in B(d_i, 1/n)$, and every $y \in B(d_i, 1/n)$ has $d(y, x) \leq d(y, d_i) + d(d_i, x) < 2/n < \varepsilon$, so $B(d_i, 1/n) \subseteq B(x, \varepsilon) \subseteq U$.
 >
 > $(\Leftarrow)$: follows from (1).
 
@@ -213,7 +217,7 @@ tags: [topology, math590]
 *Uses:* [[§18 Countability Axioms#^thm-18-6|§18.6]]
 
 ![[m590-18-1.svg]]
-*Proof of (3), separable $\Rightarrow$ second countable: given $x\in U$, pick $B(x,\varepsilon)\subseteq U$ (dashed), a point $d_i$ of the dense set $D$ (blue) with $d(x,d_i)<\varepsilon/2$, and $\frac1n<\varepsilon/2$. The basis ball $B(d_i,\frac1n)$ (red) contains $x$ and fits inside $B(x,\varepsilon)$ by the triangle inequality. Only countably many such balls exist.*
+*Proof of (3), separable $\Rightarrow$ second countable: given $x\in U$, pick $B(x,\varepsilon)\subseteq U$ (dashed), $\frac1n<\varepsilon/2$, and a point $d_i$ of the dense set $D$ (blue) with $d(x,d_i)<\frac1n$. The basis ball $B(d_i,\frac1n)$ (red) contains $x$ and fits inside $B(x,\varepsilon)$ by the triangle inequality. Only countably many such balls exist.*
 
 > [!theorem] Proposition §18.5: Subspaces of Separable Metrizable Spaces
 > If $X$ is separable and metrizable, then every subspace $A \subseteq X$ is separable.

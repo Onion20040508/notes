@@ -250,7 +250,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 > \sum a_n = \sum (a_n + |a_n|) - \sum |a_n|
 > $$
 >
-> is the difference of two convergent series and is therefore convergent, by Theorem §70.6.
+> is the difference of two convergent series and is therefore convergent, by [[§70 Series#^thm-70-6|Theorem §70.6]].
 
 ^pf-73-3
 
@@ -332,7 +332,7 @@ Whether a convergent series is absolutely or conditionally convergent decides wh
 > 0 + \tfrac12 + 0 - \tfrac14 + 0 + \tfrac16 + 0 - \tfrac18 + \cdots = \tfrac12 \ln 2 . \qquad (5)
 > $$
 >
-> Adding (4) and (5) term by term with Theorem §70.6:
+> Adding (4) and (5) term by term with [[§70 Series#^thm-70-6|Theorem §70.6]]:
 >
 > $$
 > 1 + \tfrac13 - \tfrac12 + \tfrac15 + \tfrac17 - \tfrac14 + \cdots = \tfrac32 \ln 2 . \qquad (6)

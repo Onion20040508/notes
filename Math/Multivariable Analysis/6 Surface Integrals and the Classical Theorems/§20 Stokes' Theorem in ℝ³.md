@@ -140,7 +140,7 @@ $$
 
 The strategy: parametrize $S$ by $\mathbf{X}: D \to \mathbb{R}^3$, pull both sides back to the flat parameter domain $D$, and show they are equal by Green's theorem on $D$.
 
-[[Stokes' Theorem in ℝ³|Theorem §20.1]] is stated for piecewise smooth $S$ and $C^1$ $\mathbf{F}$, but both proofs assume that $S$ has a single $C^2$ parametrization (in the first proof, the graph of a $C^2$ function). A general piecewise smooth $S$ is handled by cutting it into such pieces and adding: the interior cut curves are traversed twice in opposite directions and cancel (compare [[§20 Stokes' Theorem in ℝ³#^rem-20-2|Remark §20.2]]).
+[[Stokes' Theorem in ℝ³|Theorem §20.1]] is stated for piecewise smooth $S$ and $C^1$ $\mathbf{F}$, but both proofs assume that $S$ has a single $C^2$ parametrization (in the first proof, the graph of a $C^2$ function). A general piecewise smooth $S$ is handled by cutting it into such pieces and adding: the interior cut curves are traversed twice in opposite directions and cancel (compare [[§20 Stokes' Theorem in ℝ³#^rem-20-2|Limitations and the General Case]]).
 
 **Step 1: Set up the parametrization.**
 

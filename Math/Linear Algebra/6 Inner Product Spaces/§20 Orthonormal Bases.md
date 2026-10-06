@@ -75,7 +75,7 @@ tags: [linear-algebra]
 ^ladr-6-26
 
 > [!remark] Remark: Meaning
-> $u$ is the orthogonal projection of $v$ onto $\Span(e_1,\dots,e_m)$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i)); the inequality says projection shortens. Equality for all $v$ iff the list is a basis ([[§20 Orthonormal Bases#^ladr-6-30|6.30]](b)).
+> $\sum_k\langle v,e_k\rangle e_k$ is the orthogonal projection of $v$ onto $\Span(e_1,\dots,e_m)$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i)); the inequality says projection shortens. Equality for all $v$ iff the list is a basis ([[§20 Orthonormal Bases#^ladr-6-30|6.30]](b)).
 
 > [!proof]+ Proof
 > Write $v=u+w$ with $u=\sum_k\langle v,e_k\rangle e_k$ and $w=v-u$. Then $\langle w,e_k\rangle=\langle v,e_k\rangle-\langle v,e_k\rangle=0$ for each $k$, so $w\perp u$. By [[§19 Inner Products and Norms#^ladr-6-12|6.12]] and [[§20 Orthonormal Bases#^ladr-6-24|6.24]], $\|v\|^2=\|u\|^2+\|w\|^2\ge\|u\|^2=\sum_k|\langle v,e_k\rangle|^2$.
@@ -212,7 +212,7 @@ tags: [linear-algebra]
 ^ladr-6-36
 
 > [!proof]+ Proof
-> The list $e_1,\dots,e_m$ is independent ([[§20 Orthonormal Bases#^ladr-6-25|6.25]]); extend it to a basis $e_1,\dots,e_m,v_1,\dots,v_n$ ([[Every linearly independent list extends to a basis|2.32]]). Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]) leaves $e_1,\dots,e_m$ unchanged (each $f_k=e_k$ since the subtracted inner products vanish, and $\|e_k\|=1$) and produces $e_1,\dots,e_m,f_1,\dots,f_n$ orthonormal of length $\dim V$, a basis by [[§20 Orthonormal Bases#^ladr-6-28|6.28]].
+> The list $e_1,\dots,e_m$ is independent ([[§20 Orthonormal Bases#^ladr-6-25|6.25]]); extend it to a basis $e_1,\dots,e_m,v_1,\dots,v_n$ ([[Every linearly independent list extends to a basis|2.32]]). Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]) leaves $e_1,\dots,e_m$ unchanged (each $f_k=e_k$ since the subtracted inner products vanish, and $\|e_k\|=1$) and produces an orthonormal list $e_1,\dots,e_m,e_{m+1},\dots,e_{m+n}$ of length $\dim V$, a basis by [[§20 Orthonormal Bases#^ladr-6-28|6.28]].
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-25|6.25]], [[Every linearly independent list extends to a basis|2.32]], [[Gram–Schmidt procedure|6.32]], [[§20 Orthonormal Bases#^ladr-6-28|6.28]]
 

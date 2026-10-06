@@ -388,15 +388,6 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 ^lem-24-6
 
-> [!remark] Remark: What the Lift Is
-> Concretely, the lift $\tilde{f}: I \to E$ is a **path in the covering space** $E$ that sits above $f$: at every time $s$, the lifted point $\tilde{f}(s)$ lies in the fiber $p^{-1}(f(s))$ above $f(s)$. The path $f$ in $B$ tells you *where* to go; the covering structure of $p$ tells you *how to go there upstairs*.
->
-> Two key features distinguish $\tilde{f}$ from $f$:
-> - **A loop may lift to a non-loop.** If $f$ is a loop ($f(0) = f(1) = b_0$), the lift $\tilde{f}$ starts at $e_0$ but may end at a *different* point in the fiber $p^{-1}(b_0)$. For example, the loop winding once around $S^1$ lifts to the path from $0$ to $1$ in $\mathbb{R}$ — which is not a loop.
-> - **The endpoint records information.** The endpoint $\tilde{f}(1) \in p^{-1}(b_0)$ depends only on the homotopy class of $f$ (by the [[Homotopy Lifting Lemma|homotopy lifting lemma]] below). If $E$ is simply connected, different homotopy classes land at different points in the fiber.
-
-^rem-24-8
-
 > [!proof]+ Proof
 > **Existence.** Cover $B$ by open sets $\{U_i\}$ each evenly covered by $p$. The collection $\{f^{-1}(U_i)\}$ is an open cover of $[0, 1]$, which is a compact metric space. By the **Lebesgue number lemma** ([[Lebesgue Number Lemma|Lemma §16.3]], [[§16 Limit Point Compactness|§16]]), there exists $\delta > 0$ such that every subset of $[0,1]$ with diameter $< \delta$ lies in some $f^{-1}(U_i)$.
 >
@@ -424,6 +415,15 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 > [!remark]- Connections
 > - Computational version: [[§93 Argument Principle#^lem-93-1|342 Lemma §93.1]] (a continuous argument along a contour, the lift of a loop in ℂ ∖ {0} through θ ↦ eⁱᶿ, given by an integral of w′/w).
+
+> [!remark] Remark: What the Lift Is
+> Concretely, the lift $\tilde{f}: I \to E$ is a **path in the covering space** $E$ that sits above $f$: at every time $s$, the lifted point $\tilde{f}(s)$ lies in the fiber $p^{-1}(f(s))$ above $f(s)$. The path $f$ in $B$ tells you *where* to go; the covering structure of $p$ tells you *how to go there upstairs*.
+>
+> Two key features distinguish $\tilde{f}$ from $f$:
+> - **A loop may lift to a non-loop.** If $f$ is a loop ($f(0) = f(1) = b_0$), the lift $\tilde{f}$ starts at $e_0$ but may end at a *different* point in the fiber $p^{-1}(b_0)$. For example, the loop winding once around $S^1$ lifts to the path from $0$ to $1$ in $\mathbb{R}$ — which is not a loop.
+> - **The endpoint records information.** The endpoint $\tilde{f}(1) \in p^{-1}(b_0)$ depends only on the homotopy class of $f$ (by the [[Homotopy Lifting Lemma|homotopy lifting lemma]] below). If $E$ is simply connected, different homotopy classes land at different points in the fiber.
+
+^rem-24-8
 
 ## Homotopy Lifting
 
@@ -647,7 +647,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 > - Different cardinalities: $|G| \neq |G'|$ (e.g., $\mathbb{Z} \not\cong \{e\}$).
 > - One abelian, the other not (e.g., $\mathbb{Z} \not\cong S_3$).
 > - One cyclic, the other not (e.g., $\mathbb{Z} \not\cong \mathbb{Z}^2$).
-> - Different counts of elements of a given order (e.g., $\mathbb{Z}_4 \not\cong \mathbb{Z}_2 \times \mathbb{Z}_2$).
+> - Different counts of elements of a given order (e.g., $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$).
 >
 > You do *not* need to check all possible maps—a single invariant that differs is enough.
 >

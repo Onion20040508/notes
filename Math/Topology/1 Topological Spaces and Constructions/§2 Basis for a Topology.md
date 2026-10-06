@@ -95,10 +95,10 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Separation: [[§19 Separation Axioms#^ex-19-1|ℝ_K is Hausdorff but Not Regular]].
 
-> [!example] Example §2.5: $\mathbb{R}_\ell$ and $\mathbb{R}_K$ are strictly finer than $\mathbb{R}_{\text{std}}$
+> [!example] Example §2.5: $\mathbb{R}_\ell$ and $\mathbb{R}_K$ Are Strictly Finer Than $\mathbb{R}_{\text{std}}$
 > **Claim:** $\mathbb{R}_\ell$ is strictly finer than $\mathbb{R}_{\text{std}}$.
 >
-> *Proof (finer):* Every basis element $(a,b)$ of $\mathcal{T}_{\text{std}}$ is open in $\mathcal{T}_\ell$ since $(a,b) = \bigcup_{x \in (a,b)} [x, b)$. By [[§2 Basis for a Topology#^cor-2-3|Corollary §2.3]], $\mathcal{T}_{\text{std}} \subseteq \mathcal{T}_\ell$.
+> *Proof (finer):* Every basis element $(a,b)$ of $\mathcal{T}_{\text{std}}$ is open in $\mathcal{T}_\ell$ since $(a,b) = \bigcup_{x \in (a,b)} [x, b)$. By [[§2 Basis for a Topology#^cor-2-3|Corollary §2.3]] (below), $\mathcal{T}_{\text{std}} \subseteq \mathcal{T}_\ell$.
 >
 > *Proof (strictly):* Consider $[0,1) \in \mathcal{T}_\ell$. Suppose $[0,1) \in \mathcal{T}_{\text{std}}$. Then there exists $(a,b)$ with $0 \in (a,b) \subseteq [0,1)$. But $0 \in (a,b)$ implies $a < 0$, so $(a,b)$ contains negative numbers, contradicting $(a,b) \subseteq [0,1)$. Thus $[0,1) \notin \mathcal{T}_{\text{std}}$, so $\mathcal{T}_\ell \neq \mathcal{T}_{\text{std}}$.
 >

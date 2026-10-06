@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 4
 chapter: 1
@@ -32,6 +33,8 @@ The answer is the **completeness** of $\mathbb{R}$. As mentioned before, this is
 
 ^pf-4-1
 
+*Uses:* [[§4 The Completeness Axiom#^def-4-1|Def. §4.1]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]]
+
 > [!remark]- Connections
 > - Same result: [[§11 Properties of Finite Sets#^prop-11-8|250 Prop. §11.8]].
 
@@ -40,12 +43,12 @@ The answer is the **completeness** of $\mathbb{R}$. As mentioned before, this is
 
 ^rem-4-1
 
-> [!example] Example §4.1: Finite sets
+> [!example] Example §4.1: Finite Sets
 > Every finite nonempty set $S \subset \mathbb{R}$ has both $\max S$ and $\min S$: we can make a finite list of its elements and order them. Two properties are being used here — that the list is *finite* (so the sorting terminates), and that any two elements can be *compared* (totality O1).
 
 ^ex-4-1
 
-> [!example] Example §4.2: Sets without max or min
+> [!example] Example §4.2: Sets without Max or Min
 > $\mathbb{Z}$ has neither maximum nor minimum; $\mathbb{N}$ has no maximum. The non-closed finite intervals $(a,b)$, $(a,b]$, $[a,b)$ each fail to contain at least one endpoint: e.g. $(a,b)$ has neither $\max$ nor $\min$. The closed interval $[a,b]$, however, has both.
 
 ^ex-4-2
@@ -74,6 +77,8 @@ There is a big difference between $\mathbb{Z}$ and $(0,1)$ as examples: the inte
 
 ^pf-4-2
 
+*Uses:* [[§4 The Completeness Axiom#^def-4-1|Def. §4.1]], [[§4 The Completeness Axiom#^def-4-2|Def. §4.2]]
+
 What is special about the upper bound $1$ of $(0,1)$? Any number $t \geq 1$ is an upper bound of $(0,1)$, and conversely any upper bound $t$ satisfies $t \geq 1$. So $1$ is the *least* upper bound of $(0,1)$.
 
 > [!definition] Definition §4.3: Supremum and Infimum
@@ -101,14 +106,16 @@ What is special about the upper bound $1$ of $(0,1)$? Any number $t \geq 1$ is a
 ^prop-4-3
 
 ![[m451-4-1.svg]]
-*Proposition 4.3 on the line: $M = \sup S$ is an upper bound (1), and the upper bounds of $S$ are exactly the numbers $\geq M$ (gray); any $M_1 < M$ is beaten by some $x_1 \in S$ (red) (2). Here $M \notin S$ (hollow), so $S$ has a supremum but no maximum.*
+*[[§4 The Completeness Axiom#^prop-4-3|Proposition §4.3]] on the line: $M = \sup S$ is an upper bound (1), and the upper bounds of $S$ are exactly the numbers $\geq M$ (gray); any $M_1 < M$ is beaten by some $x_1 \in S$ (red) (2). Here $M \notin S$ (hollow), so $S$ has a supremum but no maximum.*
 
 > [!proof]+ Proof
 > Condition (2) says precisely that no $M_1 < M$ is an upper bound of $S$. So (1) and (2) together say: $M$ is an upper bound, and every upper bound $t$ satisfies $t \geq M$ (for if $t < M$, then by (2) $t$ is not an upper bound). This is exactly the definition of least upper bound.
 
 ^pf-4-3
 
-> [!example] Example §4.3: Verifying a supremum
+*Uses:* [[§4 The Completeness Axiom#^def-4-3|Def. §4.3]]
+
+> [!example] Example §4.3: Verifying a Supremum
 > We verify the two conditions for $S = (1,2)$ and $M = 2$. (1) Every $x \in (1,2)$ satisfies $x < 2$. (2) Let $M_1 < 2$. Set
 >
 > $$
@@ -152,6 +159,8 @@ This is not obvious at all. It is the axiom we will assume for the rest of the s
 
 ^pf-4-4
 
+*Uses:* [[Completeness Axiom|Def. §4.4]], [[§4 The Completeness Axiom#^def-4-3|Def. §4.3]]
+
 The important point is that this completeness property does *not* hold in $\mathbb{Q}$: there exist bounded subsets of $\mathbb{Q}$ that have no supremum or infimum *in $\mathbb{Q}$*. (Of course, viewing $\mathbb{Q} \subset \mathbb{R}$, their $\sup$ and $\inf$ exist in $\mathbb{R}$.)
 
 > [!example] Example §4.4: Incompleteness of $\mathbb{Q}$
@@ -169,7 +178,7 @@ The important point is that this completeness property does *not* hold in $\math
 
 As an application of completeness, we prove an “obvious” property: $\mathbb{Q}$ is **dense** in $\mathbb{R}$ — the rational points are dense in the real line. More precisely: given any two real numbers $a < b$, there exists a rational number $r$ with $a < r < b$. Equivalently, there is no open interval that avoids the rational points. (Later, when studying topology, open intervals correspond to open neighborhoods: every neighborhood in $\mathbb{R}$ contains rational points — that is why we say $\mathbb{Q}$ is dense *everywhere* in $\mathbb{R}$.)
 
-> [!remark] Remark: Convincing ourselves first
+> [!remark] Remark: Convincing Ourselves First
 > To prove something rigorously, we should first be convinced it is true — and the convincing may suggest the proof. Represent $\mathbb{R}$ by the real line and mark rational points in stages. **Stage 0:** mark all integer points $\mathbb{Z}$; removing them leaves intervals of length $1$. **Stage 1:** between every pair $n, n+1$, mark the midpoint $n + \tfrac{1}{2}$ — clearly rational; removing all marked points leaves intervals of length $\tfrac{1}{2}$. **Stage $n$** (inductively): mark the midpoints of the current intervals; the remaining intervals have length $1/2^n$. Now, given an open interval $(a,b)$, choose $n$ with $1/2^n < b - a$: if $(a,b)$ avoided all points marked up to stage $n$, it would sit inside one of the leftover intervals of length $1/2^n$ — shorter than $b - a$, impossible. So $(a,b)$ contains a marked point, which is rational.
 >
 > **Is this a rigorous proof?** Reasonable, but not rigorous enough at one specific step: the claim that the real line is covered by the intervals $[n, n+1]$, $n \in \mathbb{Z}$ — equivalently, that every $x \in \mathbb{R}$ satisfies $n > x$ for some integer $n$. “Obvious,” one says: write $x$ in decimal form and take $[x] + 1$. But the decimal expression of $x$ is *not* among the properties of $\mathbb{R}$ we have so far! (It will in fact be a consequence of completeness.) What is needed is exactly the [[Archimedean Property|Archimedean Property]] below.
@@ -206,6 +215,8 @@ As an application of completeness, we prove an “obvious” property: $\mathbb{
 
 ^pf-4-5
 
+*Uses:* [[Completeness Axiom|Def. §4.4]], [[Characterization of the Supremum|§4.3]]
+
 ![[m451-4-2.svg]]
 *The contradiction in the proof: the multiples $a, 2a, 3a, \ldots$ are spaced exactly $a$ apart, so the window $(s_0 - a,\, s_0]$ of length $a$ must catch some $n_0 a$ (as $s_0 - a$ is not an upper bound) — and then the next multiple $(n_0+1)a$ (red), which also belongs to $S$, lands beyond $s_0$.*
 
@@ -231,6 +242,8 @@ As an application of completeness, we prove an “obvious” property: $\mathbb{
 
 ^pf-4-6
 
+*Uses:* [[Archimedean Property|§4.5]], [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]]
+
 > [!theorem] Theorem §4.7: Density of $\mathbb{Q}$ in $\mathbb{R}$
 > For any $a, b \in \mathbb{R}$ with $a < b$, there exists $r \in \mathbb{Q}$ such that $a < r < b$.
 
@@ -243,7 +256,7 @@ As an application of completeness, we prove an “obvious” property: $\mathbb{
 > n(b - a) > 1.
 > $$
 >
-> Next we find an integer just above $na$. The set $J = \{j \in \mathbb{Z} \mid j > na\}$ is nonempty (by the Archimedean property, some natural number exceeds $na$) and bounded below (by the Archimedean property applied to $-na$, some natural number $k$ satisfies $k > -na$, so every $j \in J$ satisfies $j > na > -k$). A nonempty set of integers bounded below has a least element ([[§1 The Set ℕ of Natural Numbers#^thm-1-2|Theorem 1.2]]); let $m = \min J$. Then
+> Next we find an integer just above $na$. The set $J = \{j \in \mathbb{Z} \mid j > na\}$ is nonempty (by the Archimedean property, some natural number exceeds $na$) and bounded below (by the Archimedean property applied to $-na$, some natural number $k$ satisfies $k > -na$, so every $j \in J$ satisfies $j > na > -k$). A nonempty set of integers bounded below has a least element ([[§1 The Set ℕ of Natural Numbers#^thm-1-2|Theorem §1.2]]); let $m = \min J$. Then
 >
 > $$
 > m > na \qquad \text{and} \qquad m - 1 \leq na,
@@ -264,6 +277,8 @@ As an application of completeness, we prove an “obvious” property: $\mathbb{
 > and $r = m/n \in \mathbb{Q}$ is the required rational number.
 
 ^pf-4-7
+
+*Uses:* [[Archimedean Property|§4.5]], [[§1 The Set ℕ of Natural Numbers#^thm-1-2|§1.2]], [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]]
 
 ![[m451-4-3.svg]]
 *The proof of density, scaled up by $n$: the interval $(na, nb)$ has length $n(b-a) > 1$, so the first integer $m > na$ (red) satisfies $m \leq na + 1 < nb$. Dividing by $n$ carries the picture back and puts the rational $\tfrac{m}{n}$ inside $(a,b)$.*

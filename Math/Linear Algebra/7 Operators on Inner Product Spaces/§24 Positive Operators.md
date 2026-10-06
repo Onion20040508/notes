@@ -116,5 +116,7 @@ tags: [linear-algebra]
 ^ladr-7-43
 
 > [!proof]+ Proof
-> $0=\langle Tv,v\rangle=\langle\sqrt T\sqrt Tv,v\rangle=\|\sqrt Tv\|^2$, so $\sqrt Tv=0$ and $Tv=\sqrt T(\sqrt Tv)=0$.
+> With the positive (hence self-adjoint) square root $\sqrt T$ of [[§24 Positive Operators#^ladr-7-39|7.39]]: $0=\langle Tv,v\rangle=\langle\sqrt T\sqrt Tv,v\rangle=\|\sqrt Tv\|^2$, so $\sqrt Tv=0$ and $Tv=\sqrt T(\sqrt Tv)=0$.
+
+*Uses:* [[§24 Positive Operators#^ladr-7-39|7.39]]
 

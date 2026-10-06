@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 36
 chapter: 6
@@ -28,16 +29,14 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 
 > [!remark]- Connections
 > - Used in PDEs: the Fourier integral, [[§14 Fourier Integral#^def-14-1|341 Def. §14.1]], and the solution of the semi-infinite rod, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], are improper integrals in this sense.
-
-> [!remark] Remark: The new definition extends the old one
-> If $b$ is finite and $f$ *is* integrable on $[a,b]$, no conflict arises [Ross Ex. 36.1]: the function $d \mapsto \int_a^d f\,dx$ is Lipschitz, hence continuous, on $[a,b]$ (the continuity clause of [[Fundamental Theorem of Calculus|FTC]] II, §34), so its limit as $d \to b^-$ is its value at $b$ — the ordinary integral. The limit definition extends the old one; it never overwrites it.
-
-^rem-36-2
-
-> [!remark]- Connections
 > - The Lebesgue integral is absolute ([[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]]), so a conditionally convergent improper integral such as that of $\sin x / x$ on $[1, \infty)$ is not a Lebesgue integral; for integrable $f$ the tails vanish by [[§16 The L¹ Space and Density Theorems#^thm-16-3|551 Thm. §16.3]].
 > - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]], [[§51 Improper Integrals#^def-51-2|Calc Def. §51.2]] (with worked examples).
 > - Used in ODEs: the improper integral over $[a, \infty)$ that defines the Laplace transform, [[§21 Definition of the Laplace Transform#^def-21-1|331 Def. §21.1]] (with worked examples).
+
+> [!remark] Remark: The New Definition Extends the Old One
+> If $b$ is finite and $f$ *is* integrable on $[a,b]$, no conflict arises [Ross Ex. 36.1]: the function $d \mapsto \int_a^d f\,dx$ is Lipschitz, hence continuous, on $[a,b]$ (the continuity clause of [[Fundamental Theorem of Calculus|FTC]] II, §34), so its limit as $d \to b^-$ is its value at $b$ — the ordinary integral. The limit definition extends the old one; it never overwrites it.
+
+^rem-36-2
 
 > [!definition] Definition §36.2: Doubly Improper Integrals
 > If $f$ is defined on $(a, b)$ (each end finite or infinite) and integrable on every closed $[c, d] \subseteq (a,b)$, fix any $\alpha \in (a,b)$ and define
@@ -56,7 +55,7 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 
 The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replacing $\alpha$ by $\alpha' \in (a,b)$ changes the two summands by $\mp \int_\alpha^{\alpha'} f\,dx$ — a *finite* proper integral, since additivity over subintervals passes through the defining limits — and the two changes cancel in the sum, also in the extended arithmetic above.
 
-> [!example] Example §36.1: The reciprocal at both ends
+> [!example] Example §36.1: The Reciprocal at Both Ends
 > $f(x) = \tfrac1x$ on $(0, \infty)$. At the far end, for $d > 1$, $\int_1^d \tfrac{dx}{x} = \log d$ [FTC I, logarithm on the usual credit], so
 >
 > $$
@@ -67,7 +66,7 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 
 ^ex-36-1
 
-> [!example] Example §36.2: The p-integrals and the loan of §15
+> [!example] Example §36.2: The p-Integrals and the Loan of §15
 > For fixed $p \neq 1$ and $d > 1$, FTC I gives $\int_1^d x^{-p}\,dx = \tfrac{1}{1-p}\bigl( d^{1-p} - 1 \bigr)$, so
 >
 > $$
@@ -88,7 +87,7 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 > [!remark]- Connections
 > - Computational version: [[§51 Improper Integrals#^thm-51-1|Calc Thm. §51.1]]; the p-series, [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]].
 
-> [!example] Example §36.3: A symbol with no meaning
+> [!example] Example §36.3: A Symbol with No Meaning
 > $\int_0^d \sin x\,dx = 1 - \cos d$ [FTC I] oscillates between $0$ and $2$ forever: as $d \to \infty$ the limit does not exist, *not even in* $[-\infty, +\infty]$. So $\int_0^\infty \sin x\,dx$ is not a convergent integral, not a divergent one — the symbol simply has **no meaning**. (Divergence to $\pm\infty$ is a defined outcome; this is worse.) The same holds for $\int_{-\infty}^0 \sin x\,dx$ and $\int_{-\infty}^\infty \sin x\,dx$.
 >
 > Yet the *symmetric* limit certainly exists:
@@ -152,6 +151,8 @@ $$
 
 ^pf-36-1
 
+*Uses:* [[§36 Improper Integrals#^def-36-3|Def. §36.3]]
+
 > [!remark]- Connections
 > - Computational version: the Comparison Theorem resting on this dichotomy, [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (with worked examples).
 > - ODE version: the comparison test for piecewise continuous integrands, [[§21 Definition of the Laplace Transform#^thm-21-1|331 Thm. §21.1]], used for the existence of the Laplace transform.
@@ -174,10 +175,12 @@ $$
 
 ^pf-36-2
 
+*Uses:* [[§36 Improper Integrals#^thm-36-1|§36.1]], [[§36 Improper Integrals#^def-36-3|Def. §36.3]]
+
 > [!remark]- Connections
 > - Used in PDEs: the coefficient integrals of the Fourier integral converge absolutely, since $|f(x)\cos\lambda x|\le|f(x)|$, [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]].
 
-> [!remark] Remark: Distribution functions
+> [!remark] Remark: Distribution Functions
 > An increasing $F: \mathbb{R} \to \mathbb{R}$ with $F(-\infty) = 0$ and $F(\infty) = 1$ is called a **distribution function**: in probability, $F(t)$ is the probability that a numerical outcome is $\leq t$. (The Riemann weight $F(t) = t$ is *not* one — infinite total weight.) The theorem above then says: every bounded, interval-wise $F$-integrable $f$ — every bounded continuous $f$, in particular — can be averaged against a distribution, total weight $1$. Frequently $F$ has a **density**: a function $g \geq 0$ with
 >
 > $$
@@ -191,7 +194,7 @@ $$
 > [!remark]- Connections
 > - Computational version: probability density functions, [[§56 Probability#^def-56-2|Calc Def. §56.2]] (with worked examples).
 
-> [!example] Example §36.4: The normal distribution
+> [!example] Example §36.4: The Normal Distribution
 > It turns out that
 >
 > $$

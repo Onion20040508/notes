@@ -570,7 +570,7 @@ For a closed surface $\partial V$ bounding a volume $V$:
 
 ^pf-18-2
 
-*Uses:* [[§15 Multivariable Integration#^thm-15-3|§15.3]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[Fundamental Theorem of Calculus|451 §34.1]], [[§18 Surface Integrals#^def-18-6|Def. §18.6]], [[§18 Surface Integrals#^def-18-2|Def. §18.2]]
+*Uses:* [[§15 Multivariable Integration#^thm-15-3|§15.3]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[Fundamental Theorem of Calculus|451 §34.1]], [[§18 Surface Integrals#^def-18-6|Def. §18.6]], [[§18 Surface Integrals#^def-18-5|Def. §18.5]], [[§18 Surface Integrals#^def-18-2|Def. §18.2]]
 
 ![[m452-18-2.svg]]
 *The divergence theorem: $\iint_{\partial V}\mathbf{u}\cdot\hat{n}\,dS = \iiint_V \nabla\cdot\mathbf{u}\,dV$. Everything the sources inside $V$ produce (red: pointwise divergence, the microscopic outflux of [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]]) must exit through the boundary (green arrows crossing $\partial V$ along the outward normal $\hat n$). The proof is again the cancellation of [[§16 Line Integrals and Green's Theorem|§16]], one dimension up: tile $V$ into small cells; flux through every interior face cancels between neighbors, and only the outer boundary flux survives.*

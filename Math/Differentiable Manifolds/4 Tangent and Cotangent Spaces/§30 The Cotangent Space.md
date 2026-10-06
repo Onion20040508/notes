@@ -98,7 +98,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 *Uses:* [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]]
 
 > [!remark]- Connections
-> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the charts of the cotangent bundle record, [[§42 The Cotangent Bundle#^def-42-1|Def. §42.1]].
+> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§42 The Cotangent Bundle#^def-42-4|Def. §42.4]], [[§42 The Cotangent Bundle#^def-42-5|Def. §42.5]].
 
 > [!theorem] Corollary §30.4: Properties of the Differential of a Function
 > Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$. Then

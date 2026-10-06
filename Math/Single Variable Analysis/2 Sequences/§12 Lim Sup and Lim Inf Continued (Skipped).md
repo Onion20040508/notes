@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 12
 chapter: 2
@@ -8,7 +9,7 @@ tags: [real-analysis, math451]
 
 This section of the book, dealing with further properties of $\limsup s_n$ and $\liminf s_n$, was skipped in lecture — there is nothing really new in it beyond §10–§11. The section heading is kept so that the numbering of these notes stays aligned with the book and the lectures.
 
-> [!remark] Remark: Where lim sup and lim inf are treated in these notes
+> [!remark] Remark: Where Lim Sup and Lim Inf Are Treated in These Notes
 > The facts about $\limsup$ and $\liminf$ that the course uses are all proved in §10–§11:
 > - the tail suprema and infima and the definitions: [[§10 Monotone Sequences and Cauchy Sequences#^def-10-2|Def. §10.2]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|Def. §10.3]];
 > - $\liminf s_n \leq \limsup s_n$: [[§10 Monotone Sequences and Cauchy Sequences#^prop-10-5|Prop. §10.5]]; a sequence converges exactly when the two agree: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Thm. §10.6]];

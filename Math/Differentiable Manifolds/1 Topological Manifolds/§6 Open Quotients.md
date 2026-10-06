@@ -96,7 +96,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§5 Quotient Maps#^lem-5-6|§5.6]]
 
 > [!remark]- Connections
-> - Reused for coset spaces: [[§13 Homogeneous Spaces|§13]].
+> - Reused for coset spaces: [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-5|§14.5]] (second countability of $G/H$), and hence for the Grassmannians, [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]].
 
 **Comparison with Lee.** Lee's Appendix A has no counterpart to Theorems [[§6 Open Quotients#^thm-6-1|§6.1]] and [[§6 Open Quotients#^thm-6-3|§6.3]]: in his book the Hausdorff property and second countability of $\mathbb{RP}^n$ and $\mathbb{CP}^n$ are checked example by example (Example 1.5, Problem 1-9). The course proves one criterion for all open quotients at once and then reuses it for orbit spaces ([[§12 Group Actions and Orbit Spaces|§12]]) and coset spaces ([[§13 Homogeneous Spaces|§13]]) — which is what makes the quotient thread a thread.
 

@@ -38,6 +38,9 @@ tags: [functional-analysis, math556, companion]
 
 *Uses:* [[§33 Bound States Need Not Be Complete꞉ Hydrogen#^thm-33-1|§33.1]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], [[§24 Orthonormal Sets and Bases#^def-24-2|Def. §24.2]], [[§24 Orthonormal Sets and Bases#^thm-24-8|§24.8]], [[§24 Orthonormal Sets and Bases#^thm-24-5|§24.5]]
 
+> [!remark]- Connections
+> - Used in Quantum Mechanics: the bound states of hydrogen (Theorem [[§33 Bound States Need Not Be Complete꞉ Hydrogen#^thm-33-1|§33.1]]) — [[§B5.4 The Hydrogen Atom#^thm-b5-4-2|QM Theorem §B5.4.2]]; why they are not complete (Corollary [[§33 Bound States Need Not Be Complete꞉ Hydrogen#^cor-33-2|§33.2]]) — [[§B5.4 The Hydrogen Atom#^rem-b5-4-6|QM Remark: The bound states are not complete]]; the bound states rederived at level C, with the normalization for all $n$ and $\ell$, beside which the incompleteness is recalled — [[§C6.2 The Coulomb Problem#^thm-c6-2-2|QM Theorem §C6.2.2]], [[§C6.2 The Coulomb Problem#^rem-c6-2-2|QM Remark: What this closes at level B]].
+
 > [!remark] Remark: Physical Reading
 > For a normalized state $\psi$, $\sum_{n,l,m} |(\psi, \psi_{nlm})|^2$ is the probability of finding the electron in *some* bound state, and [[§24 Orthonormal Sets and Bases#^thm-24-5|Bessel's inequality]] says it is at most $1$. The deficit $1 - \sum |(\psi, \psi_{nlm})|^2 = \|P_{Y_{\mathrm{b}}^\perp}\psi\|^2$ is the ionization probability. The completeness relation for hydrogen must therefore include the scattering states,
 >
@@ -58,4 +61,3 @@ tags: [functional-analysis, math556, companion]
 
 > [!remark]- Connections
 > - The finite-dimensional versions in LADR: adjoint [[§22 Self-Adjoint and Normal Operators#^ladr-7-1|LADR 7.1]], self-adjoint [[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], unitary [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|LADR 7.51]]; spectral theorem: [[Real spectral theorem]], [[Complex spectral theorem]].
-> - Used in Quantum Mechanics: the bound states of hydrogen (Theorem §33.1) — [[§B5.4 The Hydrogen Atom#^thm-b5-4-2|QM Theorem §B5.4.2]]; why they are not complete (Corollary §33.2) — [[§B5.4 The Hydrogen Atom#^rem-b5-4-6|QM Remark: The bound states are not complete]]; the bound states rederived at level C, with the normalization for all $n$ and $\ell$, beside which the incompleteness is recalled — [[§C6.2 The Coulomb Problem#^thm-c6-2-2|QM Theorem §C6.2.2]], [[§C6.2 The Coulomb Problem#^rem-c6-2-2|QM Remark: What this closes at level B]].

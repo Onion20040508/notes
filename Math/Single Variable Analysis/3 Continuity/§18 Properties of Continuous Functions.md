@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 18
 chapter: 3
@@ -63,24 +64,24 @@ Boundedness is the basic beginning; the existence of max and min is very importa
 
 ^pf-18-1
 
+*Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]], [[Completeness Axiom|Def. §4.4]], [[Squeeze Theorem|§8.1]], [[§7 Limits of Sequences#^thm-7-1|§7.1]]
+
 > [!remark]- Connections
+> - Abstract form: a continuous image of a compact space is compact, [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]], and [a, b] is compact by [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel).
+> - Computational version: [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] (with worked examples).
 > - Computational version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (a continuous function on a closed bounded region of ℂ is bounded and its modulus attains a maximum).
 
-> [!remark] Remark: Toward optimization
+> [!remark] Remark: Toward Optimization
 > Application (borrowing differentiation from [[· 5 Differentiation|Chapter 5]]): if $f$ is moreover differentiable on $(a,b)$ and the max point $x_0$ lies in the open interval $(a,b)$, then $x_0$ is a critical point, $f'(x_0) = 0$. So to find the maximum: find all critical points in $(a,b)$ and compare their values with the values at the endpoints $a, b$. The theorem above is what guarantees this recipe finds something.
 
 ^rem-18-1
 
-> [!remark] Remark: Both hypotheses are needed
+> [!remark] Remark: Both Hypotheses Are Needed
 > **(1) The interval must be closed (and finite):** $f(x) = \tfrac1x$ on $(0,1]$ is continuous, but $(0,1]$ is not closed, and $f$ is not bounded — $f(\tfrac1n) = n \to \infty$. **(2) The function must be continuous:** $g: [0,1] \to \mathbb{R}$ with $g(0) = 0$, $g(x) = \tfrac1x$ for $x \in (0,1]$ is defined on a finite closed interval but is not continuous at $0$ — and is not bounded.
 
 ^rem-18-2
 
 Where *exactly* does the proof need closedness? Reread Step 1 with $(a,b)$ in place of $[a,b]$ (HW): Bolzano–Weierstrass still extracts a convergent subsequence $x_{n_k} \to x_0$ — but the load-bearing step is “*$x_0 \in [a,b]$, since limits preserve the endpoint inequalities*.” For an open interval, $x_0$ may be an endpoint *outside* the domain, and then $f(x_0)$ is not even defined — the continuity argument has nowhere to land. And this failure is universal, not an accident of $\tfrac1x$:
-
-> [!remark]- Connections
-> - Abstract form: a continuous image of a compact space is compact, [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]], and [a, b] is compact by [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel).
-> - Computational version: [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] (with worked examples).
 
 > [!theorem] Proposition §18.2: Non-Closed Sets Always Carry Unbounded Continuous Functions (HW)
 > Let $S \subseteq \mathbb{R}$, and suppose some sequence $(x_n)$ in $S$ converges to a point $x_0 \notin S$. Then there exists a continuous unbounded function on $S$.
@@ -101,6 +102,8 @@ Where *exactly* does the proof need closedness? Reread Step 1 with $(a,b)$ in pl
 > $$
 
 ^pf-18-2
+
+*Uses:* [[§17 Continuous Functions#^thm-17-3|§17.3]]
 
 So the sets on which the boundedness conclusion of the EVT can possibly hold for *all* continuous functions are exactly the sets containing all their sequential limits — the *closed* sets of §13.
 
@@ -150,6 +153,8 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 ^pf-18-3
 
+*Uses:* [[Completeness Axiom|Def. §4.4]], [[Characterization of the Supremum|§4.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
+
 ![[m451-18-2.svg]]
 *The set $S = \{x \in [a,b] \mid f(x) < y\}$ (red, on the axis) can be a union of several pieces; its endpoints where $f = y$ are excluded (hollow), while $a \in S$ (filled). The proof does not look for the first crossing but for $x_0 = \sup S$: points of $S$ approach it from the left, giving $f(x_0) \leq y$, and every point to its right lies outside $S$, giving $f(x_0) \geq y$.*
 
@@ -166,6 +171,8 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 > $0$ lies between $f(a)$ and $f(b)$; apply the [[Intermediate Value Theorem|Intermediate Value Theorem]].
 
 ^pf-18-4
+
+*Uses:* [[Intermediate Value Theorem|§18.3]]
 
 > [!remark]- Connections
 > - Worked examples: locating a root by a sign change, [[§10 Continuity#^ex-10-5|Calc Ex. §10.5]].
@@ -186,7 +193,9 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 ^pf-18-5
 
-> [!remark] Remark: Descending the mountain
+*Uses:* [[Extreme Value Theorem|§18.1]], [[Intermediate Value Theorem|§18.3]]
+
+> [!remark] Remark: Descending the Mountain
 > The case $f(a) > f(b)$ can also be handled directly, without passing to $-f$: imagine coming *down* from the peak. For $f(a) > y > f(b)$, define instead
 >
 > $$
@@ -199,7 +208,7 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 ## Applications of the Intermediate Value Theorem
 
-> [!remark] Remark: The bisection algorithm
+> [!remark] Remark: The Bisection Algorithm
 > The sign-change corollary can be upgraded to an *algorithm* for approximating the root $x_0$:
 >
 > 1. Divide $[a,b]$ into two equal subintervals $[a,c]$, $[c,b]$, where $c = \tfrac12(a+b)$.
@@ -232,13 +241,15 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 
 ^pf-18-6
 
+*Uses:* [[§18 Properties of Continuous Functions#^cor-18-4|§18.4]]
+
 ![[m451-18-1.svg]]
 *The graph of $f: [0,1] \to [0,1]$ stays in the unit square: it starts on or above the diagonal and ends on or below it — so it must cross $y = x$. The same picture underlies the chord example below: two continuous curves that swap order must meet.*
 
 > [!remark]- Connections
 > - Since [0, 1] is the ball B¹, this is the case n = 0 of the Brouwer fixed point theorem, proved in 590 for the disc and for all balls: [[§26 Deformation Retracts and Homotopy Type#^thm-26-7|590 Thm. §26.7]], [[§26 Deformation Retracts and Homotopy Type#^thm-26-10|590 Thm. §26.10]].
 
-> [!example] Example §18.1: A chord of prescribed length
+> [!example] Example §18.1: A Chord of Prescribed Length
 > Let $f: [0,2] \to \mathbb{R}$ be continuous with $f(0) = f(2)$. Prove there exist $x, y \in [0,2]$ with
 >
 > $$
@@ -267,7 +278,7 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 ![[m451-18-3.svg]]
 *A curve with $f(0) = f(2)$ and a horizontal chord of length $1$ (red) with both ends on the graph: $f(x_0) = f(x_0 + 1)$. The point $x_0$ is the zero of $g(x) = f(x+1) - f(x)$ on $[0,1]$ provided by the sign-change corollary.*
 
-> [!remark] Remark: Why fixed point theorems matter
+> [!remark] Remark: Why Fixed Point Theorems Matter
 > A fixed point theorem asserts the existence of a solution of an equation $f(x) = x$ — and $f$ can be a continuous map from *any* topological space to itself, not just $[0,1]$. For the unit square, the famous **Brouwer fixed point theorem** says every continuous $f: [0,1]^2 \to [0,1]^2$ has a fixed point; the same holds for the cube $[0,1]^3$ and in every dimension. (A cousin of this circle of ideas is the reason there is a spot on everyone's head where the hair cannot be combed flat.) Only in dimension one is there a simple proof, as above; higher dimensions require advanced tools of topology. In this general form, fixed point theorems are important far beyond mathematics — in economics, game theory, and elsewhere.
 
 ^rem-18-5
@@ -289,6 +300,8 @@ Both applications above followed one pattern: build an auxiliary difference func
 > Let $h = f - g$, continuous on $[a,b]$, with $h(a) \geq 0$ and $h(b) \leq 0$. So $0$ lies between $h(b)$ and $h(a)$, and the Intermediate Value Theorem gives $x_0 \in [a,b]$ with $h(x_0) = 0$, i.e. $f(x_0) = g(x_0)$.
 
 ^pf-18-7
+
+*Uses:* [[Intermediate Value Theorem|§18.3]]
 
 > [!remark] Remark
 > The Fixed Point Theorem is the special case $g(x) = x$ on $[0,1]$: the hypothesis $f([0,1]) \subseteq [0,1]$ says exactly $f(0) \geq g(0)$ and $f(1) \leq g(1)$. The chord example fits the pattern too, with $f(x+1)$ and $f(x)$ in the two roles.
@@ -323,6 +336,8 @@ Both applications above followed one pattern: build an auxiliary difference func
 
 ^pf-18-8
 
+*Uses:* [[Intermediate Value Theorem|§18.3]], [[§18 Properties of Continuous Functions#^cor-18-4|§18.4]]
+
 > [!remark] Remark
 > Where does the argument use oddness? Only in the sign flip $(-x_1)^d = -x_1^d$. For even degree the conclusion genuinely fails: $x^2 + 1$ has no real root. And the choice of $x_1$ shows more than existence — all real roots lie in $\left[ -\max\{1, \tfrac{2C}{a_d}\},\ \max\{1, \tfrac{2C}{a_d}\} \right]$, an explicit bound.
 
@@ -332,7 +347,7 @@ Both applications above followed one pattern: build an auxiliary difference func
 
 Recall $\operatorname{Im}(f) = f([a,b])$ is a bounded closed interval. Assuming $f(a) \leq f(b)$, is it equal to $[f(a), f(b)]$? *Not in general* — it can be much bigger.
 
-> [!example] Example §18.2: The image can exceed the endpoint values
+> [!example] Example §18.2: The Image Can Exceed the Endpoint Values
 > $f(x) = \sin x$ on $[0, 2\pi]$: here $\operatorname{Im}(f) = [-1, 1]$, but $f(0) = f(2\pi) = 0$, so $[f(a), f(b)] = \{0\}$, a single point.
 
 ^ex-18-2
@@ -381,7 +396,9 @@ In one special case, equality does hold.
 
 ^pf-18-9
 
-> [!remark] Remark: Beyond closed intervals
+*Uses:* [[§18 Properties of Continuous Functions#^cor-18-5|§18.5]], [[Intermediate Value Theorem|§18.3]], [[Bolzano–Weierstrass Theorem|§11.5]], [[§7 Limits of Sequences#^thm-7-1|§7.1]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
+
+> [!remark] Remark: Beyond Closed Intervals
 > The theorem extends to strictly monotone continuous functions on intervals of any type (open, half-open, infinite): apply it on closed subintervals exhausting the domain. The standard application: granting that $e^x: \mathbb{R} \to (0, +\infty)$ is strictly increasing and continuous (rigorous treatment of $e^x$ later), its inverse
 >
 > $$

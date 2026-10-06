@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 5
 chapter: 1
@@ -50,7 +51,9 @@ The first payoff of the conventions: a basic inequality that needs no boundednes
 
 ^pf-5-1
 
-> [!remark] Remark: Arithmetic with infinities
+*Uses:* [[Completeness Axiom|Def. §4.4]], [[§4 The Completeness Axiom#^cor-4-4|§4.4]], [[§4 The Completeness Axiom#^def-4-3|Def. §4.3]]
+
+> [!remark] Remark: Arithmetic with Infinities
 > The extended real numbers carry partial arithmetic operations $+$, $\times$, etc., but some expressions are *not allowed*:
 >
 > $$
@@ -99,3 +102,5 @@ The first payoff of the conventions: a basic inequality that needs no boundednes
 > so no $M_1 < \sup A + \sup B$ is an upper bound of $A + B$. Hence $\sup(A+B) = \sup A + \sup B$.
 
 ^pf-5-2
+
+*Uses:* [[Characterization of the Supremum|§4.3]], [[§4 The Completeness Axiom#^cor-4-4|§4.4]]

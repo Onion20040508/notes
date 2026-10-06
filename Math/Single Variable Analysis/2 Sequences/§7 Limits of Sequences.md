@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 7
 chapter: 2
@@ -24,7 +25,7 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 > [!remark]- Connections
 > - Elementary version: a sequence as a function on ℤ⁺, [[§8 Functions#^def-8-7|250 Def. §8.7]].
 
-> [!example] Example §7.1: First examples
+> [!example] Example §7.1: First Examples
 > 1. $s_n = 1$: a constant sequence.
 >
 > 2. $s_n = n$.
@@ -56,7 +57,7 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 > [!remark]- Connections
 > - Computational version: [[§60 Convergence of Sequences#^def-60-1|342 Def. §60.1]] (convergence of complex sequences, with the modulus in place of the absolute value).
 
-> [!remark] Remark: What does the definition catch?
+> [!remark] Remark: What Does the Definition Catch?
 > The condition $|s_n - s| < \varepsilon$ says $s_n$ approximates $s$ with error less than $\varepsilon$. The definition demands: *no matter how small an error tolerance $\varepsilon$ is prescribed, from some stage $N$ onward, every term of the sequence meets that tolerance.* The order of quantifiers is essential: $\varepsilon$ is given first (arbitrarily), and $N$ is allowed to depend on $\varepsilon$.
 
 ^rem-7-1
@@ -69,7 +70,7 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 
 ^def-7-3
 
-> [!example] Example §7.2: Constant sequence
+> [!example] Example §7.2: Constant Sequence
 > If $s_n = 1$ for all $n$, then $\lim_{n\to\infty} s_n = 1$. Checking the definition: given $\varepsilon > 0$, take $N = 1$; for every $n \geq N$, $|s_n - 1| = 0 < \varepsilon$.
 
 ^ex-7-2
@@ -85,12 +86,12 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 
 ^ex-7-3
 
-> [!remark] Remark: How did we find $N$?
+> [!remark] Remark: How Did We Find $N$?
 > Usually we *solve the inequality* $|s_n - s| < \varepsilon$ for $n$. In the example above: we want $\tfrac1n < \varepsilon$, i.e. $n > \tfrac1\varepsilon$; so we take any positive integer $N > \tfrac1\varepsilon$. The same method handles $s_n = (-1)^n \tfrac1n$ (since $|s_n - 0| = \tfrac1n$, the same $N$ works) and $s_n = \tfrac{1}{n^2}$: solving $\tfrac{1}{n^2} < \varepsilon$ gives $n^2 > \tfrac1\varepsilon$, i.e. $n > \sqrt{1/\varepsilon}$, so take $N > \sqrt{1/\varepsilon}$. There are several valid choices of $N$ — any sufficiently large one works.
 
 ^rem-7-2
 
-> [!example] Example §7.4: Simplifying before solving
+> [!example] Example §7.4: Simplifying before Solving
 > Let $s_n = \dfrac{n}{n+1}$. Prove $s_n \to 1$.
 >
 > *Proof.* Compute
@@ -109,7 +110,7 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 
 ^ex-7-4
 
-> [!example] Example §7.5: When the naive simplification fails
+> [!example] Example §7.5: When the Naive Simplification Fails
 > Let $s_n = \dfrac{n}{n-1}$, $n \geq 2$. Prove $s_n \to 1$.
 >
 > Here $\left| \tfrac{n}{n-1} - 1 \right| = \left| \tfrac{n - (n-1)}{n-1} \right| = \tfrac{1}{n-1}$. Can we simplify by replacing $\tfrac{1}{n-1}$ by $\tfrac1n$? **No:** $\tfrac{1}{n-1} > \tfrac1n$, so $\tfrac1n < \varepsilon$ does *not* imply $\tfrac{1}{n-1} < \varepsilon$ — an upper bound must be replaced by something *larger*, not smaller. Two correct ways:
@@ -142,13 +143,15 @@ The first property of limits — and our first theorem with a real proof about t
 
 ^pf-7-1
 
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
 ![[m451-7-2.svg]]
 *Why limits are unique: with $\varepsilon < \tfrac12|s-t|$ the bands $(s-\varepsilon, s+\varepsilon)$ (blue) and $(t-\varepsilon, t+\varepsilon)$ (red) are disjoint. From $N = \max\{N_1, N_2\}$ on, every $s_n$ would have to lie in both — impossible.*
 
 > [!remark]- Connections
 > - Computational version: [[§60 Convergence of Sequences#^prop-60-1|342 Prop. §60.1]] (uniqueness for complex sequences); the same argument for limits of complex functions is [[§15 Limits#^thm-15-1|342 Thm. §15.1]].
 
-> [!remark] Remark: Summary of the method
+> [!remark] Remark: Summary of the Method
 > To determine whether $(s_n)$ is convergent, we determine whether it has a limit, in two steps:
 >
 > 1. **guess** a limit $s$;

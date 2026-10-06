@@ -113,7 +113,7 @@ In these examples the set where the series converges is an interval: finite for 
 ^lem-76-1
 
 > [!proof]+ Proof
-> **1.** Suppose $\sum c_n b^n$ converges. Then $\lim_{n \to \infty} c_n b^n = 0$ ([[§70 Series#^thm-70-4|Theorem §70.4]]). By Definition §69.3 with $\varepsilon = 1$, there is a positive integer $N$ such that $|c_n b^n| < 1$ whenever $n \ge N$. Thus, for $n \ge N$,
+> **1.** Suppose $\sum c_n b^n$ converges. Then $\lim_{n \to \infty} c_n b^n = 0$ ([[§70 Series#^thm-70-4|Theorem §70.4]]). By [[§69 Sequences#^def-69-3|Definition §69.3]] with $\varepsilon = 1$, there is a positive integer $N$ such that $|c_n b^n| < 1$ whenever $n \ge N$. Thus, for $n \ge N$,
 >
 > $$
 > |c_n x^n| = \left| \frac{c_n b^n x^n}{b^n} \right| = |c_n b^n| \left| \frac{x}{b} \right|^n < \left| \frac{x}{b} \right|^n .

@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 26
 chapter: 4
@@ -30,6 +31,8 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^pf-26-1
 
+*Uses:* [[§23 Power Series#^thm-23-2|§23.2]], [[§25 More on Uniform Convergence#^thm-25-3|§25.3]]
+
 > [!remark]- Connections
 > - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|342 Thm. §69.3]] (uniform convergence on closed disks inside the circle of convergence).
 
@@ -42,6 +45,8 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > Let $x_0 \in (-R, R)$; choose $R_1$ with $|x_0| < R_1 < R$. On $[-R_1, R_1]$ the series converges uniformly (theorem above), and the partial sums are polynomials, hence continuous — so the sum is continuous on $[-R_1, R_1]$ (§25), in particular at $x_0$. Since $x_0$ was arbitrary and continuity is a pointwise property, $f$ is continuous on $(-R,R)$. (Note: uniformity on all of $(-R,R)$ may fail — §25's geometric example — but is not needed.)
 
 ^pf-26-2
+
+*Uses:* [[§26 Differentiation and Integration of Power Series#^thm-26-1|§26.1]], [[§25 More on Uniform Convergence#^thm-25-2|§25.2]]
 
 > [!remark]- Connections
 > - Computational version: [[§70★ Continuity of Sums of Power Series#^thm-70-1|342 Thm. §70.1]] (continuity of the sum of a complex power series).
@@ -65,6 +70,8 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > $$
 
 ^pf-26-3
+
+*Uses:* [[§25 More on Uniform Convergence#^thm-25-1|§25.1]]
 
 > [!remark]- Connections
 > - In 551 term-by-term integration needs no uniform convergence: for non-negative terms it is [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|551 Thm. §14.12]] (MCT II), and for absolutely integrable series [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
@@ -113,6 +120,8 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^pf-26-4
 
+*Uses:* [[§26 Differentiation and Integration of Power Series#^thm-26-3|§26.3]], [[§26 Differentiation and Integration of Power Series#^thm-26-1|§26.1]], [[§26 Differentiation and Integration of Power Series#^cor-26-2|§26.2]], [[§23 Power Series#^thm-23-2|§23.2]], [[§9 Limit Theorems for Sequences#^ex-9-4|Ex. §9.4]], [[Fundamental Theorem of Calculus|§34.4]]
+
 > [!remark]- Connections
 > - The differentiation half has a 551 analogue for series of absolutely continuous functions: [[§18 Differentiation Theory#^cor-18-14|551 Cor. §18.14]].
 > - Computational version: [[§77 Representations of Functions as Power Series#^thm-77-1|Calc Thm. §77.1]] (with worked examples).
@@ -123,7 +132,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ## Harvesting Closed Formulas
 
-> [!example] Example §26.1: Differentiating the geometric series
+> [!example] Example §26.1: Differentiating the Geometric Series
 > Find a closed formula for $\sum_{n=1}^\infty n x^n$, $|x| < 1$. Start from $\sum_{n=0}^\infty x^n = \tfrac{1}{1-x}$ and differentiate term by term (part (2)):
 >
 > $$
@@ -138,7 +147,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^ex-26-1
 
-> [!example] Example §26.2: Integrating the geometric series
+> [!example] Example §26.2: Integrating the Geometric Series
 > Find a closed formula for $\sum_{n=1}^\infty \tfrac{x^n}{n}$, $|x| < 1$. Integrate $\sum_{n=0}^\infty t^n = \tfrac{1}{1-t}$ from $0$ to $x$ (part (1)):
 >
 > $$
@@ -155,7 +164,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^ex-26-2
 
-> [!example] Example §26.3: The arctangent series (HW)
+> [!example] Example §26.3: The Arctangent Series (HW)
 > The geometric series evaluated at $-t^2$ (a point substitution, legitimate for $|t| < 1$) gives
 >
 > $$
@@ -184,7 +193,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > [!remark]- Connections
 > - Worked examples: the derivative of arctan, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Calc Thm. §19.8]]; the arctangent series by term-by-term integration, [[§77 Representations of Functions as Power Series#^ex-77-3|Calc Ex. §77.3]].
 
-> [!example] Example §26.4: The Taylor series of the logarithm
+> [!example] Example §26.4: The Taylor Series of the Logarithm
 > Find the Taylor series of $f(x) = \ln(1+x)$ at $0$. It is easier to start with the derivative:
 >
 > $$
@@ -202,7 +211,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > [!remark]- Connections
 > - Worked examples: the logarithm series by term-by-term integration, [[§77 Representations of Functions as Power Series#^ex-77-3|Calc Ex. §77.3]].
 
-> [!example] Example §26.5: Summing numerical series
+> [!example] Example §26.5: Summing Numerical Series
 > The closed formula $\sum_{n\geq1} n x^n = \tfrac{x}{(1-x)^2}$ evaluates series that are not easy to sum directly. At $x = \tfrac12$:
 >
 > $$
@@ -217,7 +226,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^ex-26-5
 
-> [!example] Example §26.6: Iterating the trick (HW)
+> [!example] Example §26.6: Iterating the Trick (HW)
 > Differentiating $\sum_{n \geq 1} n x^n = \tfrac{x}{(1-x)^2}$ once more (term-by-term, same radius $R = 1$) gives $\sum n^2 x^{n-1} = \tfrac{d}{dx} \tfrac{x}{(1-x)^2} = \tfrac{1+x}{(1-x)^3}$, hence
 >
 > $$
@@ -235,7 +244,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 
 ^ex-26-6
 
-> [!example] Example §26.7: An integral with no elementary antiderivative (HW)
+> [!example] Example §26.7: An Integral with No Elementary Antiderivative (HW)
 > The function $e^{-t^2}$ (with $e^y = \sum_{n\geq0} \tfrac{y^n}{n!}$ on the usual credit) famously has no antiderivative expressible in elementary functions — yet its integral has a completely explicit *power series*. Substituting the value $y = -t^2$ into the exponential series (a legitimate evaluation at a point, not a formal manipulation):
 >
 > $$
@@ -255,7 +264,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > [!remark]- Connections
 > - Computational version: the same integral normalized as the error function, $\operatorname{erf}(x)=\frac{2}{\sqrt\pi}\int_0^xe^{-y^2}\,dy$, [[§28★ The Error Function#^def-28-1|341 Def. §28.1]], used for heat flow in a long rod.
 
-> [!example] Example §26.8: Sine and cosine from scratch (HW)
+> [!example] Example §26.8: Sine and Cosine from Scratch (HW)
 > The trigonometric functions have run on credit since §17. Here is the first installment of repayment: *define*
 >
 > $$
@@ -297,7 +306,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > - Computational version: the derivative of sine, [[§16 Derivatives of Trigonometric Functions#^thm-16-1|Calc Thm. §16.1]]; the Maclaurin series of sine and cosine, [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]].
 > - Computational version: [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]] (the Maclaurin series of eᶻ, sin z, cos z and others, derived from the complex definitions).
 
-> [!remark] Remark: Repaying the trigonometric debt
+> [!remark] Remark: Repaying the Trigonometric Debt
 > Of course $s = \sin$ and $c = \cos$ — but the point is that the computation above never used that. Ross §37 carries this program to completion: starting from the two series one derives the addition formulas, the existence of $\pi$ (as twice the first positive zero of $c$), and periodicity, so that *every* property of $\sin$ and $\cos$ used on credit in these notes is ultimately redeemable. The same holds for $e^x$ and $\log$ via their series and inverses. The ledger of §34 records what remains outstanding.
 
 ^rem-26-1

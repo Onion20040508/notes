@@ -34,4 +34,4 @@ tags: [real-analysis, hub]
 - [[§13 Number Systems#^prop-13-5|Proposition §13.5: An Infinite Decimal Represents at Most One Number]]
 
 ## Connections
-- Gives $1/n\to0$ and the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4). It is a consequence of the [[Completeness Axiom]]; ordered fields without it exist (non-Archimedean fields).
+- Gives $1/n\to0$ ([[§7 Limits of Sequences#^ex-7-3|Example §7.3]]) and the density of $\mathbb{Q}$ in $\mathbb{R}$ ([[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]]). It is a consequence of the [[Completeness Axiom]]; ordered fields without it exist (non-Archimedean fields).

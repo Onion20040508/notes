@@ -181,7 +181,7 @@ A definite integral can be evaluated by substitution in two ways: find the indef
 > \int_{g(a)}^{g(b)} f(u)\,du = F(u) \Big]_{g(a)}^{g(b)} = F(g(b)) - F(g(a)) .
 > $$
 >
-> The two integrals are equal. (FTC2 also holds when $g(b) < g(a)$, by Definition §35.4.)
+> The two integrals are equal. (FTC2 also holds when $g(b) < g(a)$, by [[§35 The Definite Integral#^def-35-4|Definition §35.4]].)
 
 ^pf-38-3
 
@@ -271,7 +271,7 @@ Recall ([[§1 Four Ways to Represent a Function#^def-1-7|Def. §1.7]]) that $f$ 
 ^rem-38-2
 
 > [!proof]+ Proof
-> Split the integral in two, using Property 5 ([[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]) and Definition §35.4:
+> Split the integral in two, using Property 5 ([[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]) and [[§35 The Definite Integral#^def-35-4|Definition §35.4]]:
 >
 > $$
 > \int_{-a}^{a} f(x)\,dx = \int_{-a}^{0} f(x)\,dx + \int_0^a f(x)\,dx = -\int_0^{-a} f(x)\,dx + \int_0^a f(x)\,dx . \qquad (8)

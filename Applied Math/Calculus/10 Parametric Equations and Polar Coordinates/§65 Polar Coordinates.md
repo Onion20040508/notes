@@ -74,7 +74,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 >
 > **$r > 0$.** $P$ lies on the circle of radius $r$ about $O$, on the ray at angle $\theta$. By the general definition of sine and cosine ([[§119 Trigonometry#^def-119-4|Definition §119.4]]: $\cos\theta = x/r$, $\sin\theta = y/r$ for the point $(x, y)$ at angle $\theta$ on the circle of radius $r$), $x = r\cos\theta$ and $y = r\sin\theta$.
 >
-> **$r < 0$.** $(r, \theta)$ is the point $(|r|, \theta + \pi)$, so by the first case $x = |r|\cos(\theta + \pi) = -|r|\cos\theta = r\cos\theta$, and likewise $y = -|r|\sin\theta = r\sin\theta$. (Here $\cos(\theta + \pi) = -\cos\theta$ and $\sin(\theta + \pi) = -\sin\theta$ by Definition §119.4: if $(x', y')$ is on the terminal side of $\theta$, then $(-x', -y')$, at the same distance from $O$, is on the terminal side of $\theta + \pi$.)
+> **$r < 0$.** $(r, \theta)$ is the point $(|r|, \theta + \pi)$, so by the first case $x = |r|\cos(\theta + \pi) = -|r|\cos\theta = r\cos\theta$, and likewise $y = -|r|\sin\theta = r\sin\theta$. (Here $\cos(\theta + \pi) = -\cos\theta$ and $\sin(\theta + \pi) = -\sin\theta$ by [[§119 Trigonometry#^def-119-4|Definition §119.4]]: if $(x', y')$ is on the terminal side of $\theta$, then $(-x', -y')$, at the same distance from $O$, is on the terminal side of $\theta + \pi$.)
 >
 > **$r = 0$.** Both sides are $0$.
 >

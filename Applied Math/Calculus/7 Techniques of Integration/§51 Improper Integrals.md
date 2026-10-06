@@ -58,7 +58,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]] and [[§36 Improper Integrals#^def-36-2|451 Def. §36.2]], which treat Types 1 and 2 at once (an interval open at an end, finite or infinite) and also allow the values $\pm\infty$ ("diverges to $\infty$"). 451 [[§36 Improper Integrals#^ex-36-3|Ex. §36.3]] shows why (c) takes the two limits *independently*: $\int_{-t}^{t} \sin x\,dx = 0$ for every $t$, yet $\int_{-\infty}^\infty \sin x\,dx$ diverges.
-> - In the Lebesgue theory an integral over an infinite interval needs no limit, but it exists only if $\int |f| < \infty$: [[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]].
+> - In the Lebesgue theory an integral over an infinite interval needs no limit, but it exists only if $\int |f| < \infty$: [[§15 The General Lebesgue Integral#^rem-15-1|551 Remark: Characterization of Integrability]].
 > - ODE version: [[§21 Definition of the Laplace Transform#^def-21-1|331 Def. §21.1]] (the same definition, as the first step toward the Laplace transform), with three examples in [[§21 Definition of the Laplace Transform#^ex-21-1|331 Ex. §21.1]].
 > - See also: [[§85 Evaluation of Improper Integrals#^def-85-1|342 Def. §85.1]] (the same definitions on $(0, \infty)$ and $(-\infty, \infty)$, with the Cauchy principal value [[§85 Evaluation of Improper Integrals#^def-85-2|342 Def. §85.2]]) and [[§85 Evaluation of Improper Integrals#^prop-85-4|342 Prop. §85.4]] (integrals of rational functions with $\deg q \ge \deg p + 2$ evaluated by residues).
 

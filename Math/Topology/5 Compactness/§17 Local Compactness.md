@@ -130,7 +130,7 @@ tags: [topology, math590]
 ### Step 2: Verifying the Properties
 
 > [!theorem] Proposition §17.2: $X$ is a Subspace of $Y$
-> The [[§5 Subspace Topology#^def-5-1|subspace topology]] on $X \subseteq Y$ equals the original topology on $X$.
+> Let $X$ be a Hausdorff space. The [[§5 Subspace Topology#^def-5-1|subspace topology]] on $X \subseteq Y$ equals the original topology on $X$.
 
 ^prop-17-2
 
@@ -144,16 +144,16 @@ tags: [topology, math590]
 *Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§15 Compact Spaces#^thm-15-4|§15.4]]
 
 > [!theorem] Proposition §17.3: $Y$ is Compact
-> If $X$ is any topological space, then $Y = X \cup \{\infty\}$ with the above topology is compact.
+> If $X$ is a Hausdorff space, then $Y = X \cup \{\infty\}$ with the above topology is compact.
 
 ^prop-17-3
 
 > [!proof]+ Proof
-> Let $\mathcal{A}$ be an open cover of $Y$. Since $\infty \in Y$, some $A \in \mathcal{A}$ contains $\infty$, so $A = Y \setminus C$ for some compact $C \subseteq X$. The remaining sets in $\mathcal{A}$, intersected with $X$, form an open cover of $C$. Since $C$ is compact, finitely many $A_1, \ldots, A_n \in \mathcal{A}$ cover $C$ ([[§15 Compact Spaces#^lem-15-1|Lemma §15.1]]). Then $\{A, A_1, \ldots, A_n\}$ covers $Y$.
+> Let $\mathcal{A}$ be an open cover of $Y$. Since $\infty \in Y$, some $A \in \mathcal{A}$ contains $\infty$, so $A = Y \setminus C$ for some compact $C \subseteq X$. The remaining sets in $\mathcal{A}$, intersected with $X$, are open in $X$ ([[§17 Local Compactness#^prop-17-2|Proposition §17.2]]) and cover $C$. Since $C$ is compact, finitely many $A_1, \ldots, A_n \in \mathcal{A}$ cover $C$ ([[§15 Compact Spaces#^lem-15-1|Lemma §15.1]]). Then $\{A, A_1, \ldots, A_n\}$ covers $Y$.
 
 ^pf-17-3
 
-*Uses:* [[§15 Compact Spaces#^lem-15-1|§15.1]]
+*Uses:* [[§17 Local Compactness#^prop-17-2|§17.2]], [[§15 Compact Spaces#^lem-15-1|§15.1]]
 
 > [!theorem] Proposition §17.4: $Y$ is Hausdorff if $X$ is Locally Compact Hausdorff
 > If $X$ is locally compact and Hausdorff, then $Y$ is Hausdorff.

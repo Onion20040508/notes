@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 23
 chapter: 4
@@ -28,7 +29,7 @@ We know the value of a polynomial at every $x$. How about a power series? Take $
 > [!remark]- Connections
 > - Computational version: [[§76 Power Series#^def-76-2|Calc Def. §76.2]] (with worked examples).
 
-> [!example] Example §23.1: Three domains of convergence
+> [!example] Example §23.1: Three Domains of Convergence
 > **(1)** $\sum_{n=0}^\infty x^n$: converges at $x$ iff $|x| < 1$, with
 >
 > $$
@@ -56,11 +57,13 @@ These examples display the general pattern:
 
 ^thm-23-1
 
+*Stated here without proof: it is the case split $R = +\infty$, $R = 0$, $0 < R < +\infty$ of [[§23 Power Series#^thm-23-2|Theorem §23.2]] below.*
+
 > [!remark]- Connections
 > - Computational version: [[§76 Power Series#^thm-76-3|Calc Thm. §76.3]] (with worked examples).
 > - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|342 Thm. §69.1]] and [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (complex power series converge inside a circle of convergence and diverge outside it).
 
-> [!example] Example §23.2: The extreme cases
+> [!example] Example §23.2: The Extreme Cases
 > $\sum_{n=0}^\infty \dfrac{x^n}{n!}$ converges for *all* $x$: by the ratio test at fixed $x$, $\left|\tfrac{a_{n+1}x^{n+1}}{a_n x^n}\right| = \tfrac{|x|}{n+1} \to 0 < 1$ (this is $\sum \tfrac{|x|^n}{n!}$-type convergence from §9). $\sum_{n=0}^\infty n!\, x^n$ converges *only* for $x = 0$: for $x \neq 0$, $(n!)^{1/n} \to +\infty$, so $\limsup |n! x^n|^{1/n} = +\infty > 1$ and the root test gives divergence.
 
 ^ex-23-2
@@ -95,8 +98,10 @@ The precise version of the trichotomy:
 
 ^pf-23-2
 
+*Uses:* [[§14 Series#^thm-14-10|§14.10]]
+
 ![[m451-23-1.svg]]
-*Top: the radius theorem — absolute convergence on $(-R, R)$, divergence for $|x| > R$, and no verdict at $\pm R$ (red). Below: the three series of Example §23.1, all with $R = 1$, whose sets of convergence differ only at the endpoints (filled: included, hollow: excluded).*
+*Top: the radius theorem — absolute convergence on $(-R, R)$, divergence for $|x| > R$, and no verdict at $\pm R$ (red). Below: the three series of [[§23 Power Series#^ex-23-1|Example §23.1]], all with $R = 1$, whose sets of convergence differ only at the endpoints (filled: included, hollow: excluded).*
 
 > [!remark]- Connections
 > - Computational version: radius of convergence in [[§76 Power Series#^thm-76-3|Calc Thm. §76.3]] (with worked examples).
@@ -109,7 +114,7 @@ The precise version of the trichotomy:
 
 ## Worked Examples on the Radius
 
-> [!example] Example §23.3: Integer coefficients
+> [!example] Example §23.3: Integer Coefficients
 > Assume all $a_n$ are integers and infinitely many are nonzero. Prove $R \leq 1$.
 >
 > The nonzero coefficients form a subsequence $a_{n_k} \neq 0$ with $|a_{n_k}| \geq 1$ (nonzero integers). *Claim: if the series converges at $x$, then $|x| < 1$.* Indeed, convergence forces $a_n x^n \to 0$ (§14), hence along the subsequence $a_{n_k} x^{n_k} \to 0$; but
@@ -124,12 +129,12 @@ The precise version of the trichotomy:
 
 ^ex-23-3
 
-> [!example] Example §23.4: Coefficients not tending to zero
+> [!example] Example §23.4: Coefficients Not Tending to Zero
 > If $\limsup_{n\to+\infty} |a_n| > 0$, prove $R \leq 1$. By contradiction: if $R > 1$, the series converges at $x = 1$, so $a_n = a_n \cdot 1^n \to 0$, hence $|a_n| \to 0$ and $\limsup |a_n| = 0$ — contradiction.
 
 ^ex-23-4
 
-> [!example] Example §23.5: Nonnegative coefficients and endpoints
+> [!example] Example §23.5: Nonnegative Coefficients and Endpoints
 > Suppose $\sum a_n x^n$ has finite radius $R$ and $a_n \geq 0$ for all $n$. Prove: if the series converges at $x = R$, then it also converges at $x = -R$ — so the interval of convergence is all of $[-R, R]$.
 >
 > *Proof.* Convergence at $x = R$ with $a_n \geq 0$ means $\sum a_n R^n$ converges — and this is exactly $\sum |a_n(-R)^n|$. So the series at $x = -R$ converges *absolutely*, hence converges.
@@ -158,14 +163,14 @@ $$
 
 compared with $1$.
 
-> [!example] Example §23.6: Two centered examples
+> [!example] Example §23.6: Two Centered Examples
 > **(1)** $\sum_{n=0}^\infty n^2 (x-1)^n$: here $\beta = \lim (n^2)^{1/n} = \left(n^{1/n}\right)^2 \to 1$, so $R = 1$ and the interval is $(0, 2)$. The endpoints $0, 2$ are *not* included: there the terms are $\pm n^2$, which do not tend to $0$, so $\sum n^2(\pm1)^n$ diverges.
 >
 > **(2)** $\sum_{n=1}^\infty \left( \dfrac{x-2}{n} \right)^n$: here $a_n = \tfrac{1}{n^n}$, $\beta = \lim \tfrac1n = 0$, $R = +\infty$ — the series converges for all $x \in \mathbb{R}$.
 
 ^ex-23-6
 
-> [!remark] Remark: Why centered series? Taylor series
+> [!remark] Remark: Why Centered Series? Taylor Series
 > The main source of centered power series is the **Taylor series** of a function $f$ at a point $x_0$:
 >
 > $$
@@ -176,7 +181,7 @@ compared with $1$.
 
 ^rem-23-2
 
-> [!example] Example §23.7: Root test beats ratio test
+> [!example] Example §23.7: Root Test Beats Ratio Test
 > Let $a_n = \left( \dfrac{3 + 2(-1)^n}{4} \right)^n$ — that is, $a_n = \left(\tfrac54\right)^n$ for even $n$ and $\left(\tfrac14\right)^n$ for odd $n$. Determine the intervals of convergence of (1) $\sum a_n x^n$ and (2) $\sum a_n (x-2)^n$.
 >
 > Here $|a_n|^{1/n} = \tfrac{3+2(-1)^n}{4}$ oscillates between $\tfrac54$ and $\tfrac14$, so
@@ -191,12 +196,12 @@ compared with $1$.
 
 ^ex-23-7
 
-> [!remark] Remark: Mind the absolute values (HW)
+> [!remark] Remark: Mind the Absolute Values (HW)
 > The coefficients above were positive; with *signed* coefficients the radius formula must read $\limsup |a_n|^{1/n}$, absolute values included. Take $a_n = \left( \tfrac{1 + 2(-1)^n}{5} \right)^n$, which is $\left(\tfrac35\right)^n$ for even $n$ but $\left(-\tfrac15\right)^n$ — *negative* — for odd $n$. The signed root sequence $a_n^{1/n} = \tfrac{1+2(-1)^n}{5}$ oscillates between $\tfrac35$ and $-\tfrac15$, whereas the sequence the formula wants, $|a_n|^{1/n}$, oscillates between $\tfrac35$ and $\tfrac15$: here the two limsups happen to agree ($\tfrac35$, so $R = \tfrac53$), but the signed liminf $-\tfrac15$ is meaningless for convergence questions — only the moduli $|a_n(x-x_0)^n|$ enter the comparison with a geometric series in the radius theorem's proof.
 
 ^rem-23-3
 
-> [!remark] Remark: Gap series (HW)
+> [!remark] Remark: Gap Series (HW)
 > A second situation where the coefficient-ratio recipe breaks: series with *gaps*, like
 >
 > $$
@@ -217,7 +222,7 @@ compared with $1$.
 
 A power series defines a function $f(x) = \sum a_n x^n$ on its interval of convergence — the limit of the polynomial partial sums $s_n(x)$, each certainly continuous. **Question: are limits of sequences of continuous functions continuous?** At the beginning of calculus, people did not ask such questions — they assumed yes automatically. The general answer is **no**, and the counterexamples below motivate the next section.
 
-> [!example] Example §23.8: Continuity lost in the limit
+> [!example] Example §23.8: Continuity Lost in the Limit
 > Let $f_n(x) = x^n$ on $[0,1]$. For every $x \in [0,1]$, $f_n(x)$ converges: for $x \in [0,1)$, $|x| < 1$ gives $x^n \to 0$; and $f_n(1) = 1$. So the limit function is
 >
 > $$
@@ -231,12 +236,12 @@ A power series defines a function $f(x) = \sum a_n x^n$ on its interval of conve
 ![[m451-23-2.svg]]
 *$f_n(x) = x^n$ for $n = 1, 2, 4, 8, 16, 32$ (blue, darker as $n$ grows): each is continuous and passes through $(1,1)$, but for every fixed $x < 1$ the values sink to $0$. The pointwise limit (red) is $0$ on $[0,1)$ with an isolated value $f(1) = 1$ — a jump that none of the $f_n$ has.*
 
-> [!example] Example §23.9: Powers of sine
+> [!example] Example §23.9: Powers of Sine
 > $f_n(x) = (\sin x)^n$, $x \in \mathbb{R}$: find all $x$ where $\lim_n f_n(x)$ exists. If $x \neq k\pi + \tfrac\pi2$ ($k \in \mathbb{Z}$), then $|\sin x| < 1$ and $f_n(x) \to 0$. If $\sin x = 1$ (i.e. $x = 2k\pi + \tfrac\pi2$), $f_n(x) \to 1$. If $\sin x = -1$ (i.e. $x = (2k+1)\pi + \tfrac\pi2$), $f_n(x) = (-1)^n$ diverges. So the limit function has domain $\mathbb{R} \setminus \{(2k+1)\pi + \tfrac\pi2\}$, equals $0$ except at the points $2k\pi + \tfrac\pi2$ where it equals $1$ — and is not continuous.
 
 ^ex-23-9
 
-> [!example] Example §23.10: Derivatives escape the limit
+> [!example] Example §23.10: Derivatives Escape the Limit
 > Since a limit of continuous functions can fail to be continuous, it certainly can fail to be differentiable. Subtler question: suppose $f_n \to f$ pointwise, all $f_n$ differentiable, *and* $f$ differentiable — must $f_n' \to f'$? **Still no.** The idea: even if $f_n$ converges, its rate of change can be wild. Let
 >
 > $$
@@ -247,7 +252,7 @@ A power series defines a function $f(x) = \sum a_n x^n$ on its interval of conve
 
 ^ex-23-10
 
-> [!example] Example §23.11: Integrals escape the limit
+> [!example] Example §23.11: Integrals Escape the Limit
 > Suppose $f_n(x) \to f(x)$ for all $x \in [a,b]$. Does $\int_a^b f_n \to \int_a^b f$? **No.** Let
 >
 > $$

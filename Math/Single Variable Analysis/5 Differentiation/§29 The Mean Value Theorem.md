@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 29
 chapter: 5
@@ -38,6 +39,8 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 
 ^pf-29-1
 
+*Uses:* [[§28 Basic Properties of the Derivative#^def-28-1|Def. §28.1]], [[§20 Limits of Functions#^thm-20-2|§20.2]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
+
 > [!remark]- Connections
 > - Fermat's condition in several variables (all partials vanish at an interior extremum): [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 Thm. §14.1]].
 > - Computational version: [[§25 Maximum and Minimum Values#^thm-25-2|Calc Thm. §25.2]] (with worked examples).
@@ -59,6 +62,8 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 > *Case $f(x_1) > f(x_2)$:* since $f(a) = f(b)$, the two extreme values cannot both equal the common endpoint value; say $f(x_1) \neq f(a) = f(b)$ (otherwise argue with $x_2$). Then $x_1 \neq a, b$, so $x_1 \in (a,b)$: an interior maximum. By the previous theorem, $f'(x_1) = 0$.
 
 ^pf-29-2
+
+*Uses:* [[Extreme Value Theorem|§18.1]], [[§29 The Mean Value Theorem#^thm-29-1|§29.1]]
 
 > [!remark]- Connections
 > - Computational version: [[§26 The Mean Value Theorem#^thm-26-1|Calc Thm. §26.1]] (with worked examples).
@@ -92,6 +97,8 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 ^pf-29-3
 
+*Uses:* [[§29 The Mean Value Theorem#^thm-29-2|§29.2]]
+
 ![[m451-29-1.svg]]
 *The [[Mean Value Theorem|Mean Value Theorem]]: somewhere in $(a,b)$ the tangent (red) is parallel to the secant (dashed). Rolle is the horizontal special case; the proof above is literally this picture — subtract the secant, and the extremum of what remains is $c$.*
 
@@ -115,6 +122,8 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 ^pf-29-4
 
+*Uses:* [[Mean Value Theorem|§29.3]]
+
 > [!remark]- Connections
 > - If $f' = 0$ only almost everywhere, the conclusion needs absolute continuity: [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]], with the Cantor function as counterexample ([[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]]).
 > - Computational version: [[§26 The Mean Value Theorem#^thm-26-3|Calc Thm. §26.3]]; used for the uniqueness of solutions of $y' = ky$ in [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]].
@@ -131,6 +140,8 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 ^pf-29-5
 
+*Uses:* [[§29 The Mean Value Theorem#^cor-29-4|§29.4]]
+
 > [!remark]- Connections
 > - Computational version: [[§26 The Mean Value Theorem#^cor-26-4|Calc Cor. §26.4]]; the most general antiderivative, [[§33 Antiderivatives#^thm-33-1|Calc Thm. §33.1]] (with worked examples).
 > - Used in ODEs: the solutions of $y' + p(t)y = g(t)$ are exactly $\frac{1}{\mu}\big(\int_{t_0}^t \mu g\,ds + c\big)$, because $\mu y$ and $\int_{t_0}^t \mu g\,ds$ have the same derivative: [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|331 Thm. §4.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]].
@@ -144,6 +155,8 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 > The converse is a direct computation. Forward, by induction on $k$. The case $k = 1$ is the constant corollary. Suppose the claim holds for $k$, and let $f^{(k+1)} \equiv 0$. Then $(f')^{(k)} = f^{(k+1)} \equiv 0$, so by the induction hypothesis $f'$ is a polynomial of degree less than $k$, say $f'(x) = \sum_{j=0}^{k-1} c_j x^j$. The polynomial $g(x) = \sum_{j=0}^{k-1} \tfrac{c_j}{j+1}\, x^{j+1}$ satisfies $g' = f'$ on $I$, so by the previous corollary $f = g + c$: a polynomial of degree at most $k$, i.e. less than $k + 1$.
 
 ^pf-29-6
+
+*Uses:* [[§29 The Mean Value Theorem#^cor-29-4|§29.4]], [[§29 The Mean Value Theorem#^cor-29-5|§29.5]]
 
 > [!remark] Remark
 > This identifies the *kernel* of the $k$-th derivative operator: exactly the polynomials of degree $< k$ — a $k$-dimensional space, matching the $k$ constants of integration. It is also the uniqueness half of Taylor's theory (§31): once the remainder is shown to vanish, this proposition is what forces $f$ to *be* its Taylor polynomial.
@@ -160,12 +173,14 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 ^pf-29-7
 
+*Uses:* [[Mean Value Theorem|§29.3]]
+
 > [!remark]- Connections
 > - Computational version: [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Calc Thm. §27.1]] (with worked examples).
 
 ## Applications
 
-> [!example] Example §29.1: Squared-distance contraction
+> [!example] Example §29.1: Squared-Distance Contraction
 > Suppose $f: \mathbb{R} \to \mathbb{R}$ satisfies $|f(x) - f(y)| \leq |x - y|^2$ for all $x, y$. Then $f$ is constant.
 >
 > *Proof.* For $x \neq y$,
@@ -178,7 +193,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 ^ex-29-1
 
-> [!example] Example §29.2: The tangent line inequality for the exponential
+> [!example] Example §29.2: The Tangent Line Inequality for the Exponential
 > Prove: $e^x \geq ex$ for all $x \in \mathbb{R}$ (with equality at $x = 1$: the graph of $e^x$ lies above its tangent line at $(1, e)$).
 >
 > Let $f(x) = ex - e^x$; we want $f(x) \leq 0$. Note $f(1) = e - e = 0$. Check the derivative:
@@ -191,7 +206,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 
 ^ex-29-2
 
-> [!example] Example §29.3: Sine below its argument
+> [!example] Example §29.3: Sine below Its Argument
 > Show $\sin x \leq x$ for all $x \geq 0$. Let $f(x) = x - \sin x$; then $f(0) = 0$ and
 >
 > $$
@@ -220,12 +235,14 @@ The three examples above are one-sided instances of a two-sided principle:
 
 ^pf-29-8
 
+*Uses:* [[Mean Value Theorem|§29.3]]
+
 For instance: if $f$ is differentiable on $\mathbb{R}$ with $1 \leq f' \leq 2$ everywhere and $f(0) = 0$, then applying the proposition on $[0, x]$ gives $x \leq f(x) \leq 2x$ for every $x \geq 0$ — the graph is trapped between two lines through the origin.
 
 ![[m451-29-4.svg]]
 *The mean value inequality as a wedge: with $f(0) = 0$ and $1 \leq f' \leq 2$, the graph of $f$ (blue) can never leave the region between the lines $x$ and $2x$ (dashed) for $x \geq 0$ — a bound on the slope becomes a bound on every increment.*
 
-> [!example] Example §29.4: An integrating factor for Rolle (HW)
+> [!example] Example §29.4: An Integrating Factor for Rolle (HW)
 > Let $f, g$ be differentiable on an open interval $I$, and let $a < b$ in $I$ with $f(a) = f(b) = 0$. Show that
 >
 > $$
@@ -264,11 +281,6 @@ Recall the [[Intermediate Value Theorem|Intermediate Value Theorem]] for continu
 
 ^thm-29-9
 
-> [!remark] Remark
-> The point of the theorem: $f'$ may fail to be continuous (standard example: $f(x) = x^2 \sin\tfrac1x$, $f(0)=0$, whose derivative exists everywhere but is discontinuous at $0$), so we *cannot* simply apply the IVT of §18 to $f'$. Yet derivatives still take intermediate values.
-
-^rem-29-3
-
 > [!proof]+ Proof
 > Assume $f'(x_1) < c < f'(x_2)$ (for the reversed case, consider the maximum instead of the minimum below, or apply the result to $-f$). Following the general pattern — introduce a new function and find a critical point — let
 >
@@ -284,10 +296,17 @@ Recall the [[Intermediate Value Theorem|Intermediate Value Theorem]] for continu
 
 ^pf-29-9
 
+*Uses:* [[Extreme Value Theorem|§18.1]], [[§29 The Mean Value Theorem#^thm-29-1|§29.1]]
+
 ![[m451-29-2.svg]]
 *The proof of Darboux's theorem: tilting by $cx$ makes $g = f - cx$ start downhill at $x_1$ ($g'(x_1) < 0$) and end uphill at $x_2$ ($g'(x_2) > 0$), so points just inside the interval lie below the endpoint values (dotted). The minimum given by the EVT is therefore interior, at $x_0$, where $g'(x_0) = 0$, i.e. $f'(x_0) = c$ — no continuity of $f'$ needed.*
 
-> [!example] Example §29.5: Prescribed derivative values
+> [!remark] Remark
+> The point of the theorem: $f'$ may fail to be continuous (standard example: $f(x) = x^2 \sin\tfrac1x$, $f(0)=0$, whose derivative exists everywhere but is discontinuous at $0$), so we *cannot* simply apply the IVT of §18 to $f'$. Yet derivatives still take intermediate values.
+
+^rem-29-3
+
+> [!example] Example §29.5: Prescribed Derivative Values
 > Let $f: \mathbb{R} \to \mathbb{R}$ be differentiable with $f(0) = 0$, $f(1) = 1$, $f(2) = 1$.
 >
 > **(a)** Some $x_0 \in (0,2)$ has $f'(x_0) = \tfrac12$: by the MVT on $[0,2]$,
@@ -336,6 +355,8 @@ This computation finds the *formula* but presupposes the differentiability of $f
 
 ^pf-29-10
 
+*Uses:* [[§18 Properties of Continuous Functions#^thm-18-9|§18.9]], [[Intermediate Value Theorem|§18.3]], [[§9 Limit Theorems for Sequences#^thm-9-4|§9.4]], [[§20 Limits of Functions#^def-20-1|Def. §20.1]]
+
 > [!remark]- Connections
 > - Complex counterpart: [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]] (an analytic f with f′(z₀) ≠ 0 has an analytic local inverse with g′ = 1/f′).
 
@@ -358,7 +379,7 @@ This computation finds the *formula* but presupposes the differentiability of $f
 > (\arcsin y)' = \frac{1}{\cos x} = \frac{1}{\sqrt{1 - \sin^2 x}} = \frac{1}{\sqrt{1 - y^2}},
 > $$
 >
-> where $\cos x = +\sqrt{1 - \sin^2 x}$ is legitimate because $\cos x \geq 0$ on $\left[-\tfrac\pi2, \tfrac\pi2\right]$.
+> valid for $|y| < 1$: the Inverse Function Theorem needs $f'(x) = \cos x \neq 0$, i.e. $x \in \left(-\tfrac\pi2, \tfrac\pi2\right)$, and there $\cos x = +\sqrt{1 - \sin^2 x}$ because $\cos x > 0$. At $y = \pm1$ the arcsine has vertical tangents and no derivative.
 
 ^ex-29-6
 

@@ -109,7 +109,7 @@ Compare the tangent line $y - y_0 = f'(x_0)(x - x_0)$ in one variable.
 > f(x, y) = \frac{xy}{x^2 + y^2} \ \text{ if } (x, y) \ne (0, 0) , \qquad f(0, 0) = 0 .
 > $$
 >
-> Since $f(h, 0) = 0 = f(0, h)$ for all $h$, Equations (2) and (3) of [[§92 Partial Derivatives#^def-92-1|Definition §92.1]] give $f_x(0, 0) = 0$ and $f_y(0, 0) = 0$; but $f_x$ and $f_y$ are not continuous at the origin (Stewart, Exercise 54). The "linear approximation" at the origin would be $f(x, y) \approx 0$, yet $f(x, y) = \frac12$ at every point of the line $y = x$ except the origin (Example §91.1(b)). So a function of two variables can behave badly even though both of its partial derivatives exist. Differentiability rules this out.
+> Since $f(h, 0) = 0 = f(0, h)$ for all $h$, Equations (2) and (3) of [[§92 Partial Derivatives#^def-92-1|Definition §92.1]] give $f_x(0, 0) = 0$ and $f_y(0, 0) = 0$; but $f_x$ and $f_y$ are not continuous at the origin (Stewart, Exercise 54). The "linear approximation" at the origin would be $f(x, y) \approx 0$, yet $f(x, y) = \frac12$ at every point of the line $y = x$ except the origin ([[§91 Limits and Continuity#^ex-91-1|Example §91.1]](b)). So a function of two variables can behave badly even though both of its partial derivatives exist. Differentiability rules this out.
 
 ^rem-93-1
 

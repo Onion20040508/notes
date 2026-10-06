@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 25
 chapter: 4
@@ -10,7 +11,7 @@ tags: [real-analysis, math451]
 
 Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a flaw for the refined question: $f_n$ was not continuous at $x = 1$. Could continuity of all $f_n$ *and* of $f$ rescue $\int f_n \to \int f$ under pointwise convergence? Still no:
 
-> [!example] Example §25.1: The escaping triangle
+> [!example] Example §25.1: The Escaping Triangle
 > Define $f_n: [0,1] \to \mathbb{R}$ with a thin tall triangular graph — base $[0, \tfrac2n]$, height $n$, zero elsewhere:
 >
 > $$
@@ -61,12 +62,14 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 
 ^pf-25-1
 
+*Uses:* [[§24 Uniform Convergence#^def-24-2|Def. §24.2]], [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]], [[§33 Properties of the Riemann Integral#^thm-33-4|§33.4]]
+
 > [!remark]- Connections
 > - Lebesgue version, with uniform convergence replaced by a.e. convergence and an integrable bound: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence).
 > - Used in ODEs: passing to the limit in $\phi_{n+1}(t) = \int_0^t f(s, \phi_n(s))\,ds$ shows that the limit of the Picard iterates solves the integral equation, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 > - Used in PDEs: [[§24 Expansion in Series of Eigenfunctions#^prop-24-1|341 Prop. §24.1]] (multiplying a uniformly convergent eigenfunction expansion by $\phi_m p$ and integrating term by term gives the coefficient formula).
 
-> [!example] Example §25.2: Computing a limit of integrals
+> [!example] Example §25.2: Computing a Limit of Integrals
 > Compute $\displaystyle\lim_{n\to\infty} \int_0^1 \frac{n + \cos x}{2n + \sin^2 x}\,dx$.
 >
 > Computing $\int_0^1 f_n$ directly is difficult — so try exchanging: divide through by $n$,
@@ -111,6 +114,8 @@ Now we return toward power series — via general series of functions.
 
 ^pf-25-2
 
+*Uses:* [[§17 Continuous Functions#^thm-17-3|§17.3]], [[§24 Uniform Convergence#^thm-24-2|§24.2]]
+
 > [!remark]- Connections
 > - Computational version: [[§9 Uniform Convergence#^thm-9-1|341 Thm. §9.1]] (a uniformly convergent Fourier series has a continuous sum, so a function with a jump has no uniformly convergent Fourier series).
 
@@ -130,6 +135,8 @@ Now we return toward power series — via general series of functions.
 
 ^pf-25-3
 
+*Uses:* [[§14 Series#^thm-14-7|§14.7]], [[§14 Series#^thm-14-1|§14.1]], [[§24 Uniform Convergence#^thm-24-1|§24.1]]
+
 > [!remark]- Connections
 > - Lebesgue analogue for term-by-term integration, assuming only $\sum \int |f_k| < \infty$ instead of uniform bounds: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
 > - Used in ODEs: the M-test with $M_k = MK^kh^{k+1}/(k+1)!$ gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for $y' = f(t, y)$, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
@@ -137,10 +144,10 @@ Now we return toward power series — via general series of functions.
 > - Used in PDEs: the series solutions of the heat equation, [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|341 Thm. §19.5]] and [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|341 Thm. §25.4]], and the Poisson integral, [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], where the factor $e^{-\lambda_n^2kt}$ or $r^n$ supplies the summable bound.
 > - Applied to complex power series: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|342 Thm. §69.3]] (uniform convergence on closed disks inside the circle of convergence, by this test).
 
-> [!example] Example §25.3: Three applications of the M-test
+> [!example] Example §25.3: Three Applications of the M-Test
 > **(1)** $\displaystyle\sum_{n=1}^\infty \frac{\cos nx}{n^2}$ converges uniformly on $\mathbb{R}$ — take $M_k = \tfrac{1}{k^2}$ — and hence defines a continuous function on $\mathbb{R}$.
 >
-> **(2)** $\sum_{n=0}^\infty x^n$ converges uniformly on $[-a, a]$ for every $a < 1$: take $M_k = a^k$, $\sum a^k < \infty$. But it does *not* converge uniformly on all of $(-1,1)$, as proved at the start of §24. Uniformity can hold on every smaller closed subinterval yet fail on the open interval itself.
+> **(2)** $\sum_{n=0}^\infty x^n$ converges uniformly on $[-a, a]$ for every $a < 1$: take $M_k = a^k$, $\sum a^k < \infty$. But it does *not* converge uniformly on all of $(-1,1)$, as proved in [[§24 Uniform Convergence#^ex-24-1|Example §24.1]]. Uniformity can hold on every smaller closed subinterval yet fail on the open interval itself.
 >
 > **(3)** The power series $\displaystyle\sum_{n=1}^\infty \frac{x^n}{n^2 2^n}$ has interval of convergence $[-2,2]$ and converges uniformly there — hence its sum is continuous on $[-2,2]$. Steps: (i) $\beta = \limsup \left(\tfrac{1}{n^2 2^n}\right)^{1/n} = \tfrac12$, so $R = 2$; (ii) at the endpoints $x = \pm2$ the series is $\sum \tfrac{(\pm1)^n}{n^2}$, convergent; (iii) M-test on $[-2,2]$ with
 >
@@ -153,7 +160,7 @@ Now we return toward power series — via general series of functions.
 > [!remark]- Connections
 > - Computational version: [[§9 Uniform Convergence#^ex-9-5|341 Ex. §9.5]] (the shifted series $\sum(-1)^n\cos(nx)/n^2$, uniformly convergent by the same bound, summed in closed form as $x^2/4-\pi^2/12$).
 
-> [!example] Example §25.4: When the M-test has no chance
+> [!example] Example §25.4: When the M-Test Has No Chance
 > Show $\displaystyle\sum_{n=1}^\infty \frac{x^n}{1+x^n}$ converges pointwise on $(0,1)$. Does it converge uniformly there?
 >
 > *Pointwise:* for $x \in (0,1)$, $0 < \tfrac{x^n}{1+x^n} \leq x^n$, and $\sum x^n$ converges (geometric); apply comparison.

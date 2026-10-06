@@ -61,7 +61,7 @@ tags: [linear-algebra]
 > - Computational version: [[§53 Complex Numbers#^thm-53-1|235 Thm. §53.1]] (the same laws, stated without proof), with the inverse 1/z = z̄/|z|² in [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
 > - Computational version: [[§2 Basic Algebraic Properties#^thm-2-1|342 Thm. §2.1]] (commutative, associative and distributive laws) and [[§2 Basic Algebraic Properties#^thm-2-4|342 Thm. §2.4]] (multiplicative inverse), proved from the pair definition, with worked examples.
 
-> [!example] Example 1.4: Commutativity of complex multiplication (p. 2)
+> [!example] Example 1.4: Commutativity of complex multiplication (p. 3)
 > For $\alpha=a+bi$, $\beta=c+di$:
 > $$
 > \alpha\beta=(ac-bd)+(ad+bc)i,\qquad \beta\alpha=(ca-db)+(cb+da)i .
@@ -89,7 +89,7 @@ tags: [linear-algebra]
 
 ^ladr-1-6
 
-> [!example] Example 1.7: ℝ² and ℝ³ (p. 4)
+> [!example] Example 1.7: ℝ² and ℝ³ (p. 5)
 > $\R^2=\{(x,y):x,y\in\R\}$ (the plane) and $\R^3=\{(x,y,z):x,y,z\in\R\}$ (ordinary space). The goal of the next definitions is to replace $2$ or $3$ by any $n$, and $\R$ by $\F$.
 
 ^ladr-1-7
@@ -106,7 +106,7 @@ tags: [linear-algebra]
 > - Spanning lists, linearly independent lists and bases ([[§5 Bases#^ladr-2-26|Basis]]) are lists, so repetitions count: a list with a repeated vector is linearly dependent ([[§4 Span and Linear Independence#^ladr-2-17|Linearly dependent]]).
 > - Finite length is built into [[§4 Span and Linear Independence#^ladr-2-9|Finite-dimensional vector space]]: finite-dimensional means some *list* spans.
 
-> [!example] Example 1.9: Lists versus sets (p. 4)
+> [!example] Example 1.9: Lists versus sets (p. 5)
 > - $(3,5)\ne(5,3)$ as lists, but $\{3,5\}=\{5,3\}$ as sets: **order** matters for lists.
 > - $(4,4)\ne(4,4,4)$ (different lengths), but $\{4,4\}=\{4,4,4\}=\{4\}$: **repetition** matters for lists.
 
@@ -162,12 +162,12 @@ tags: [linear-algebra]
 > - Model for checking every axiom of [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] for $\F^n$: reduce to the coordinates.
 > - In ℝⁿ: property (i) of [[§3 Vector Equations#^thm-3-2|235 Thm. §3.2]], which lists all the vector-space laws of ℝⁿ.
 
-> [!remark] Notation 1.15: 0 (p. 6)
+> [!remark] Notation 1.15: 0 (p. 7)
 > $0$ also denotes the list of length $n$ whose coordinates are all $0$: $0=(0,\dots,0)$.
 
 ^ladr-1-15
 
-> [!example] Example 1.16: Context determines which 0 is intended (p. 6)
+> [!example] Example 1.16: Context determines which 0 is intended (p. 7)
 > In "$x+0=x$ for all $x\in\F^n$", the $0$ must be the list $(0,\dots,0)\in\F^n$: adding the *number* $0$ to a list is not defined. Context decides which $0$ is meant.
 >
 > A vector $v=(a,b)\in\R^2$ can be viewed as a point or as an arrow from the origin; as an arrow it may be moved parallel to itself without change, which is how vector addition is pictured (tip to tail).

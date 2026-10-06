@@ -101,7 +101,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - In 591 ℝPⁿ gets a smooth atlas, [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|591 Cor. §17.5]], and this quotient topology is shown to agree with its Grassmannian description, [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|591 Prop. §17.6]]; the complex analogue ℂPⁿ is [[§9 Complex Projective Space#^def-9-1|591 Def. §9.1]].
 
-> [!theorem] Theorem §28.3: $\pi_1(P^n)$ for all $n$
+> [!theorem] Theorem §28.3: $\pi_1(P^n)$ for All $n$
 > $$
 > \pi_1(P^n) \cong \begin{cases} \mathbb{Z} & n = 1 \text{ (since $P^1 \cong S^1$)} \\ \mathbb{Z}/2\mathbb{Z} & n \geq 2. \end{cases}
 > $$
@@ -111,11 +111,11 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > For $n \geq 2$: $S^n$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|§27]]), so the [[Properties of the Lifting Correspondence|lifting correspondence]] $\pi_1(P^n) \to p^{-1}(y_0)$ is a bijection. The fiber has $2$ elements, so $|\pi_1(P^n)| = 2$, giving $\pi_1(P^n) \cong \mathbb{Z}/2\mathbb{Z}$.
 >
-> For $n = 1$: $P^1 = S^1 / (x \sim -x)$. The map $z \mapsto z^2$ is a homeomorphism $P^1 \to S^1$ (it identifies antipodal points on $S^1$ and maps onto $S^1$ bijectively). So $\pi_1(P^1) \cong \pi_1(S^1)$ ([[§23 The Fundamental Group#^cor-23-6|§23.6]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]).
+> For $n = 1$: $P^1 = S^1 / (x \sim -x)$. The map $z \mapsto z^2$ on $S^1$ is constant on each class $\{z, -z\}$ and takes distinct classes to distinct points, so it induces a continuous bijection $P^1 \to S^1$ ([[Universal Property of Quotient Maps|§12.3]]), which is a homeomorphism because $P^1$ is compact and $S^1$ is Hausdorff ([[Bijection from Compact to Hausdorff is a Homeomorphism|§15.7]]). So $\pi_1(P^1) \cong \pi_1(S^1)$ ([[§23 The Fundamental Group#^cor-23-6|§23.6]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§24.10]]).
 
 ^pf-28-3
 
-*Uses:* [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]], [[§23 The Fundamental Group#^cor-23-6|§23.6]], [[Fundamental Group of the Circle|§24.10]]
+*Uses:* [[Sⁿ is Simply Connected for n ≥ 2|§27.3]], [[Properties of the Lifting Correspondence|§24.9]], [[Universal Property of Quotient Maps|§12.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|§15.7]], [[§23 The Fundamental Group#^cor-23-6|§23.6]], [[Fundamental Group of the Circle|§24.10]]
 
 > [!remark]- Connections
 > - Used in Quantum Field Theory: for $n = 3$, $SO(3) \cong P^3$ has $\pi_1 \cong \mathbb{Z}/2\mathbb{Z}$: the loop of rotations from $0$ to $2\pi$ about an axis is not contractible and the $4\pi$ loop is, which is why a spin-½ state may change sign under a $2\pi$ rotation — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|QFT Theorem §C3.1.8]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-9|QFT Theorem §C3.1.9]].
@@ -210,7 +210,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 >     2. $p \circ \tilde{\alpha} = \alpha$ (projects back to the original path).
 >
 >     To find a lift, it suffices to exhibit *any* path in $E$ satisfying (1) and (2) — uniqueness guarantees it is the only one.
-> - **[[§24 Covering Spaces#^thm-24-8|Homotopy lifting lemma]]:** If two loops $\alpha \simeq_p \beta$ are path-homotopic in $B$, then their lifts starting at the same point $e_0$ must end at the same point. Equivalently: *different endpoints $\Rightarrow$ the loops are not path-homotopic ([[§24 Covering Spaces#^rem-24-10|§24]]).*
+> - **[[§24 Covering Spaces#^thm-24-8|Lifts of path-homotopic paths]] (a consequence of the [[Homotopy Lifting Lemma|homotopy lifting lemma]]):** If two loops $\alpha \simeq_p \beta$ are path-homotopic in $B$, then their lifts starting at the same point $e_0$ must end at the same point. Equivalently: *different endpoints $\Rightarrow$ the loops are not path-homotopic ([[§24 Covering Spaces#^rem-24-10|§24]]).*
 >
 > *Our setup:* $B = X$ (figure eight), $E$ = grid-with-circles, $b_0 = x_0$ (junction point), $e_0 = (0,0)$, and $p(0,0) = x_0$. ✓
 >
@@ -252,7 +252,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 >
 > **Step 4: Conclude.** The lifts of $f \ast  g$ and $g \ast  f$ both start at $e_0 = (0, 0)$ but end at *different points*: $(1, 0) \neq (0, 1)$.
 >
-> By the **[[§24 Covering Spaces#^thm-24-8|homotopy lifting lemma]]** ([[§24 Covering Spaces|§24]]): if $f \ast  g \simeq_p g \ast  f$, then their lifts starting at the same point $(0,0)$ must end at the same point. But the lift of $f \ast  g$ ends at $(1, 0)$ while the lift of $g \ast  f$ ends at $(0, 1)$. Contradiction.
+> By the theorem on **[[§24 Covering Spaces#^thm-24-8|lifts of path-homotopic paths]]** (Theorem §24.8): if $f \ast  g \simeq_p g \ast  f$, then their lifts starting at the same point $(0,0)$ must end at the same point. But the lift of $f \ast  g$ ends at $(1, 0)$ while the lift of $g \ast  f$ ends at $(0, 1)$. Contradiction.
 >
 > Therefore $f * g \not\simeq_p g * f$, i.e., $[f] * [g] \neq [g] * [f]$ in $\pi_1(X, x_0)$, so $\pi_1(X, x_0)$ is non-abelian.
 
@@ -307,7 +307,7 @@ We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[§29 The Seifert�
 ![[m590-28-5.svg]]
 *The figure eight $X$ (red) inside $\Sigma_2$: one circle around each hole, meeting at $x_0$ on the neck (dashed). The retraction $r$ collapses the neck to $x_0$ and then each torus onto its red circle, keeping $X$ fixed. This is why $j_{\ast}$ is injective and $r_{\ast}$ is surjective.*
 
-> [!proof]+ Alternative Proof (via surjection)
+> [!proof]+ Proof (Alternative, via Surjection)
 > We use $r_*$ instead of $j_*$, applying the surjective direction.
 >
 > **Step 1:** Same as above: $r: \Sigma_2 \to X$ is a retraction onto the figure eight.

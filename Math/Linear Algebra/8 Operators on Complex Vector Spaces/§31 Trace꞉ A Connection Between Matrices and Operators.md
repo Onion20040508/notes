@@ -117,7 +117,7 @@ tags: [linear-algebra]
 *Uses:* [[§9 Matrices#^ladr-3-38|3.38]], [[§9 Matrices#^ladr-3-35|3.35]], [[§9 Matrices#^ladr-3-43|3.43]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|8.49]]
 
 > [!theorem] Theorem 8.57: Identity operator is not the difference of ST and TS
-> There are no $S,T\in\Lin(V)$ with $ST-TS=I$.
+> There are no $S,T\in\Lin(V)$ with $ST-TS=I$ (here $V$ is finite-dimensional and nonzero, as throughout Chapter 8; for $V=\{0\}$, $ST-TS=0=I$).
 
 ^ladr-8-57
 

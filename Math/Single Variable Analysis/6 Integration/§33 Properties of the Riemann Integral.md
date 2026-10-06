@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 33
 chapter: 6
@@ -29,6 +30,8 @@ It is often not easy to check integrability from the definitions — we need pro
 > For any $\varepsilon > 0$, take $n$ large enough that this is $< \varepsilon$: the Cauchy criterion applies. Done!
 
 ^pf-33-1
+
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]]
 
 ![[m451-33-1.svg]]
 *Why monotone functions are integrable: on each subinterval of the equal partition, the gap between upper and lower rectangles is a box of width $\tfrac{b-a}{n}$ and height $f(t_k) - f(t_{k-1})$ (red). Slid sideways, the boxes stack into one column of height $f(b) - f(a)$ — the telescoping sum — so $U - L = \bigl(f(b) - f(a)\bigr)\tfrac{b-a}{n}$. A jump of $f$ (hollow and filled dots) changes nothing.*
@@ -74,6 +77,8 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^pf-33-2
 
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
+
 > [!remark]- Connections
 > - Double-integral version: [[§15 Multivariable Integration#^thm-15-2|452 Thm. §15.2]] and [[§15 Multivariable Integration#^thm-15-3|452 Thm. §15.3]].
 > - Computational version: [[§35 The Definite Integral#^thm-35-4|Calc Thm. §35.4]] (with worked examples).
@@ -95,6 +100,8 @@ It is often not easy to check integrability from the definitions — we need pro
 > $$
 
 ^pf-33-3
+
+*Uses:* [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]]
 
 > [!remark]- Connections
 > - Double-integral version: [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]].
@@ -128,6 +135,8 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^pf-33-4
 
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]], [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]]
+
 > [!remark]- Connections
 > - Computational version: [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|342 Lemma §47.1]] (the same inequality for complex-valued w(t)) and its contour form, the ML-inequality [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|342 Thm. §47.2]] (with worked bounds).
 
@@ -159,11 +168,13 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^pf-33-5
 
-The converse direction — that integrability passes *down* to subintervals — is what makes splitting a given integral legal in the first place:
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]]
 
 > [!remark]- Connections
 > - Double-integral version, additivity over almost disjoint regions: [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].
 > - Computational version: [[§35 The Definite Integral#^thm-35-5|Calc Thm. §35.5]] (with worked examples).
+
+The converse direction — that integrability passes *down* to subintervals — is what makes splitting a given integral legal in the first place:
 
 > [!theorem] Proposition §33.6: Restriction to Subintervals (HW)
 > If $f$ is integrable on $[a,b]$, then $f$ is integrable on every interval $[c,d] \subseteq [a,b]$.
@@ -186,6 +197,8 @@ The converse direction — that integrability passes *down* to subintervals — 
 > and the Cauchy criterion on $[c,d]$ concludes.
 
 ^pf-33-6
+
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
 
 > [!remark] Remark
 > Together the two results make integrability on $[a,b]$ *equivalent* to integrability on both halves, and they license every splitting used later: chopping an integral along a partition (as in the [[Fundamental Theorem of Calculus|FTC]]'s telescoping, §34) silently invokes this proposition to know each piece $\int_{t_{k-1}}^{t_k} f$ exists.
@@ -227,6 +240,8 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^pf-33-7
 
+*Uses:* [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]], [[§33 Properties of the Riemann Integral#^thm-33-5|§33.5]], [[§17 Continuous Functions#^thm-17-1|§17.1]]
+
 ![[m451-33-2.svg]]
 *Positivity of the integral: if $f(x_0) > 0$, continuity keeps $f > \tfrac12 f(x_0)$ on $[x_0 - \varepsilon, x_0 + \varepsilon]$, so the region under $f$ (blue) contains the red rectangle of area $\tfrac12 f(x_0) \cdot 2\varepsilon = f(x_0)\,\varepsilon > 0$ — hence $\int_a^b f \geq f(x_0)\,\varepsilon > 0$.*
 
@@ -243,10 +258,12 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^pf-33-8
 
+*Uses:* [[§33 Properties of the Riemann Integral#^thm-33-7|§33.7]]
+
 > [!remark]- Connections
 > - Used in Applied Linear Algebra for the positivity axiom of the integral inner product on C[a, b]: [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]].
 
-> [!example] Example §33.1: Orthogonal to everything means zero
+> [!example] Example §33.1: Orthogonal to Everything Means Zero
 > Let $f: [a,b] \to \mathbb{R}$ be continuous, and suppose that for *all* continuous $g: [a,b] \to \mathbb{R}$,
 >
 > $$
@@ -257,7 +274,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^ex-33-1
 
-> [!remark] Remark: Inner products on function spaces
+> [!remark] Remark: Inner Products on Function Spaces
 > In $\mathbb{R}^2$, $\mathbb{R}^3$ we have orthogonality of vectors, governed by the inner product $\langle x, y \rangle = \sum_i x_i y_i$. On the space of continuous functions on $[a,b]$ — an *infinite-dimensional* vector space — the integral supplies an inner product:
 >
 > $$
@@ -282,17 +299,6 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^thm-33-9
 
-> [!remark]- Connections
-> - Computational version: [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]] (with worked examples).
-> - Used in ODEs: it proves the sifting property $\int f(t)\,\delta(t - t_0)\,dt = f(t_0)$ of the delta function, [[§25 Impulse Functions#^thm-25-3|331 Thm. §25.3]].
-
-What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the mean value is attained — it equals the value of $f$ at some point.
-
-> [!remark] Remark
-> The continuity assumption is important. Counterexample: $f: [-1,1] \to \mathbb{R}$ with $f = -1$ on $[-1, 0)$ and $f = 1$ on $[0,1]$ (a step function, integrable by §32). Its mean value is $0$ — a value $f$ never takes.
-
-^rem-33-4
-
 > [!proof]+ Proof
 > Since $f$ is continuous on the closed bounded interval, the [[Extreme Value Theorem|Extreme Value Theorem]] provides a maximum point $x_1$ and a minimum point $x_2$:
 >
@@ -314,8 +320,21 @@ What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the
 
 ^pf-33-9
 
+*Uses:* [[Extreme Value Theorem|§18.1]], [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]], [[Intermediate Value Theorem|§18.3]]
+
 ![[m451-33-3.svg]]
-*Left: the rectangle over $[a,b]$ at the mean height $\tfrac{1}{b-a}\int_a^b f$ (red) has the same area as the region under $f$ (blue); a continuous $f$ must cross that height, at some $x_0$. Right: the step function of the remark jumps over its mean value $0$ — without continuity the mean need not be attained.*
+*Left: the rectangle over $[a,b]$ at the mean height $\tfrac{1}{b-a}\int_a^b f$ (red) has the same area as the region under $f$ (blue); a continuous $f$ must cross that height, at some $x_0$. Right: the step function of the remark below jumps over its mean value $0$ — without continuity the mean need not be attained.*
+
+> [!remark]- Connections
+> - Computational version: [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]] (with worked examples).
+> - Used in ODEs: it proves the sifting property $\int f(t)\,\delta(t - t_0)\,dt = f(t_0)$ of the delta function, [[§25 Impulse Functions#^thm-25-3|331 Thm. §25.3]].
+
+What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the mean value is attained — it equals the value of $f$ at some point.
+
+> [!remark] Remark
+> The continuity assumption is important. Counterexample: $f: [-1,1] \to \mathbb{R}$ with $f = -1$ on $[-1, 0)$ and $f = 1$ on $[0,1]$ (a step function, integrable by §32). Its mean value is $0$ — a value $f$ never takes.
+
+^rem-33-4
 
 > [!theorem] Theorem §33.10: Weighted Mean Value Theorem
 > Let $f, g: [a,b] \to \mathbb{R}$ be continuous with $g(x) \geq 0$ for all $x$. Then there exists $x_0 \in [a,b]$ such that
@@ -351,6 +370,8 @@ What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the
 
 ^pf-33-10
 
+*Uses:* [[Extreme Value Theorem|§18.1]], [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]], [[§33 Properties of the Riemann Integral#^thm-33-7|§33.7]], [[Intermediate Value Theorem|§18.3]]
+
 The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker than it needs to be:
 
 > [!theorem] Proposition §33.11: The Witness Can Be Taken Interior (HW)
@@ -379,12 +400,14 @@ The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker
 
 ^pf-33-11
 
+*Uses:* [[§33 Properties of the Riemann Integral#^thm-33-10|§33.10]], [[Extreme Value Theorem|§18.1]], [[Intermediate Value Theorem|§18.3]], [[§33 Properties of the Riemann Integral#^thm-33-7|§33.7]], [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]]
+
 > [!remark] Remark
 > All the work sits in the boundary cases $A \in \{m, M\}$, where the plain IVT route might hand back only an endpoint (if $f$ attains its extremum nowhere else). The rescue mechanism — vanishing integral of a nonnegative continuous function forces identical vanishing, then local positivity of $g$ converts one good point into a whole subinterval — is the same tool as “orthogonal to everything means zero” above. Taking $g \equiv 1$ shows the ordinary Intermediate Value Theorem for Integrals also admits an interior witness.
 
 ^rem-33-5
 
-> [!example] Example §33.2: Equal integrals meet
+> [!example] Example §33.2: Equal Integrals Meet
 > Suppose $f, g: [a,b] \to \mathbb{R}$ are continuous and $\int_a^b f = \int_a^b g$. Show that $f(x_0) = g(x_0)$ for some $x_0 \in [a,b]$.
 >
 > Consider $h = f - g$: continuous, with $\int_a^b h = 0$ by linearity — so the mean value of $h$ is $0$. By the Intermediate Value Theorem for integrals, some $x_0$ has
@@ -422,6 +445,8 @@ The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker
 > $$
 
 ^pf-33-12
+
+*Uses:* [[§24 Uniform Convergence#^thm-24-2|§24.2]], [[§32 The Definition of the Riemann Integral#^thm-32-7|§32.7]], [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]], [[§33 Properties of the Riemann Integral#^thm-33-4|§33.4]], [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]]
 
 > [!remark]- Connections
 > - The Riemann integral is not closed under monotone limits ([[§8 Motivation꞉ The Riemann Integral#^rem-8-2|551 Rem. §8.2]]); the Lebesgue integral exchanges limit and integral under monotonicity or domination alone: [[§14 The Lebesgue Integral for Simple Functions#^thm-14-4|551 Thm. §14.4]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]].

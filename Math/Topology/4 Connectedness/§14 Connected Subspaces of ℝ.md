@@ -66,13 +66,6 @@ tags: [topology, math590]
 
 ^thm-14-1
 
-> [!theorem] Corollary §14.2
-> $\mathbb{R}$ is connected, so are intervals in $\mathbb{R}$. (Convex: $\forall a, b \in Y$, $[a, b] \subseteq Y$.)
-
-^cor-14-2
-
-*Uses:* [[§14 Connected Subspaces of ℝ#^thm-14-1|§14.1]], [[§14 Connected Subspaces of ℝ#^ex-14-4|Ex. §14.4]]
-
 > [!proof]+ Proof of Theorem
 > We'll prove: if $Y$ is a convex subspace of $L$, then $Y$ is connected.
 >
@@ -96,6 +89,15 @@ tags: [topology, math590]
 
 *Uses:* [[§14 Connected Subspaces of ℝ#^def-14-2|Def. §14.2]]
 
+> [!theorem] Corollary §14.2
+> $\mathbb{R}$ is connected, so are intervals in $\mathbb{R}$. (Convex: $\forall a, b \in Y$, $[a, b] \subseteq Y$.)
+
+^cor-14-2
+
+*Immediate from [[§14 Connected Subspaces of ℝ#^thm-14-1|Theorem §14.1]], since $\mathbb{R}$ is a linear continuum ([[§14 Connected Subspaces of ℝ#^ex-14-4|Example §14.4]]).*
+
+*Uses:* [[§14 Connected Subspaces of ℝ#^thm-14-1|§14.1]], [[§14 Connected Subspaces of ℝ#^ex-14-4|Ex. §14.4]]
+
 > [!remark]- Connections
 > - The open intervals in 551's decomposition of an open subset of ℝ are its maximal connected subsets: [[§7 Structure of Open Sets#^prop-7-1|551 Prop. §7.1]].
 
@@ -105,6 +107,20 @@ tags: [topology, math590]
 > Let $f: X \to Y$ be a continuous map, $X$ is connected, $Y$ has order topology. If $a, b \in X$, and $f(a) < r < f(b)$ for some $r \in Y$, then there exists $c \in X$ such that $f(c) = r$.
 
 ^thm-14-3
+
+> [!proof]+ Proof
+> If no $c \in X$ such that $f(c) = r$, then $f(X) = A \cup B$, where $A = f(X) \cap (-\infty, r)$, $B = (r, +\infty) \cap f(X)$.
+>
+> $A, B$ disjoint, nonempty ($f(a) \in A$, $f(b) \in B$). $A, B$ open in $f(X)$ $\Rightarrow$ $f(X)$ has separation $A, B$.
+>
+> But image of connected $X$ under a continuous $f$ is connected ([[Continuous Image of a Connected Space is Connected|§13.3]]). Contradiction.
+
+^pf-14-3
+
+*Uses:* [[§13 Connected Spaces#^thm-13-3|§13.3]]
+
+![[m590-14-2.svg]]
+*IVT via connectedness, drawn for $X = [a,b]$: $f(a) < r < f(b)$. If $r$ were not a value of $f$, the image $f(X)$ (right) would split at $r$ into $A = f(X) \cap (-\infty, r)$ (blue) and $B = f(X) \cap (r, \infty)$ (red), a separation of the connected set $f(X)$. So $r$ is hit, possibly several times (red dots), and $c$ is any one of them.*
 
 > [!remark]- Connections
 > - MATH 451 version on $[a,b]$: [[Intermediate Value Theorem]] ([[§18 Properties of Continuous Functions#^thm-18-3|Theorem §18.3]]).
@@ -130,20 +146,6 @@ tags: [topology, math590]
 > $f: [a, b] \to \mathbb{R}$, continuous, satisfies [[§14 Connected Subspaces of ℝ#^thm-14-3|IVT]].
 
 ^ex-14-5
-
-> [!proof]+ Proof
-> If no $c \in X$ such that $f(c) = r$, then $f(X) = A \cup B$, where $A = f(X) \cap (-\infty, r)$, $B = (r, +\infty) \cap f(X)$.
->
-> $A, B$ disjoint, nonempty ($(f(a) \in A$, $f(b) \in B$). $A, B$ open in $f(X)$ $\Rightarrow$ $f(X)$ has separation $A, B$.
->
-> But image of connected $X$ under a continuous $f$ is connected ([[Continuous Image of a Connected Space is Connected|§13.3]]). Contradiction.
-
-^pf-14-3
-
-*Uses:* [[§13 Connected Spaces#^thm-13-3|§13.3]]
-
-![[m590-14-2.svg]]
-*IVT via connectedness, drawn for $X = [a,b]$: $f(a) < r < f(b)$. If $r$ were not a value of $f$, the image $f(X)$ (right) would split at $r$ into $A = f(X) \cap (-\infty, r)$ (blue) and $B = f(X) \cap (r, \infty)$ (red), a separation of the connected set $f(X)$. So $r$ is hit, possibly several times (red dots), and $c$ is any one of them.*
 
 ## Path-Connectedness
 

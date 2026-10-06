@@ -88,7 +88,7 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 > F(b) - F(a) = F'(c)(b - a) .
 > $$
 >
-> Here $F(b) - F(a) = \int_a^b f(t)\,dt - 0$ (Definition §35.4) and $F'(c) = f(c)$, so $\int_a^b f(x)\,dx = f(c)(b - a)$. Dividing by $b - a > 0$ gives $f(c) = f_{\rm avg}$. (The argument even gives $c$ in the open interval $(a, b)$.)
+> Here $F(b) - F(a) = \int_a^b f(t)\,dt - 0$ ([[§35 The Definite Integral#^def-35-4|Definition §35.4]]) and $F'(c) = f(c)$, so $\int_a^b f(x)\,dx = f(c)(b - a)$. Dividing by $b - a > 0$ gives $f(c) = f_{\rm avg}$. (The argument even gives $c$ in the open interval $(a, b)$.)
 
 ^pf-43-1
 

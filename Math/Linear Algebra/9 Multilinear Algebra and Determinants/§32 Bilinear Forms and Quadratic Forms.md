@@ -8,6 +8,9 @@ tags: [linear-algebra]
 ---
 ← [[§31 Trace꞉ A Connection Between Matrices and Operators]] · ↑ [[· 9 Multilinear Algebra and Determinants]] · [[§33 Alternating Multilinear Forms]] →
 
+> [!remark] Remark: Standing assumptions for Chapter 9
+> Throughout Chapter 9, $V$ and $W$ are finite-dimensional nonzero vector spaces over $\F$ ($\F$ is $\R$ or $\C$). These are Axler's standing assumptions for the chapter; the chapter's statements use them without repeating them.
+
 > [!definition] Definition 9.1: Bilinear form
 > A *bilinear form* on $V$ is a function $\beta:V\times V\to\F$ such that $v\mapsto\beta(v,u)$ and $v\mapsto\beta(u,v)$ are linear functionals for every $u\in V$.
 

@@ -69,7 +69,7 @@ The calculus of vector functions is one-variable calculus done in each component
 > \end{aligned}
 > $$
 >
-> where the second line uses Definition §86.2: the component limits exist because $f$, $g$, $h$ are differentiable.
+> where the second line uses [[§86 Vector Functions and Space Curves#^def-86-2|Definition §86.2]]: the component limits exist because $f$, $g$, $h$ are differentiable.
 
 ^pf-87-1
 
@@ -258,7 +258,7 @@ The calculus of vector functions is one-variable calculus done in each component
 > \sum_{i=1}^n \mathbf{r}(t_i^*)\,\Delta t = \left( \sum_{i=1}^n f(t_i^*)\,\Delta t \right)\mathbf{i} + \left( \sum_{i=1}^n g(t_i^*)\,\Delta t \right)\mathbf{j} + \left( \sum_{i=1}^n h(t_i^*)\,\Delta t \right)\mathbf{k} .
 > $$
 >
-> Since $f$, $g$, $h$ are continuous, they are integrable ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]), so the three component sums converge to $\int_a^b f$, $\int_a^b g$, $\int_a^b h$ as $n \to \infty$, and by Definition §86.2 the limit of the vector is the vector of the limits.
+> Since $f$, $g$, $h$ are continuous, they are integrable ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]), so the three component sums converge to $\int_a^b f$, $\int_a^b g$, $\int_a^b h$ as $n \to \infty$, and by [[§86 Vector Functions and Space Curves#^def-86-2|Definition §86.2]] the limit of the vector is the vector of the limits.
 
 ^pf-87-4
 

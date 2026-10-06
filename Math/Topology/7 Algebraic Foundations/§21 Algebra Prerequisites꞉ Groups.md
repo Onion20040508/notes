@@ -94,7 +94,7 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > **(1)** If $a, b \in H$, then $a, b \in G$, so $ab = ba$ (since $G$ is abelian). The same equation holds in $H$.
 >
-> **(2)** If $G = \langle g \rangle$, every element of $H$ has the form $g^k$ for some $k$. Let $m$ be the smallest positive integer with $g^m \in H$. Then $H = \langle g^m \rangle$ (one can show every element of $H$ is a power of $g^m$ by the division algorithm).
+> **(2)** If $G = \langle g \rangle$, every element of $H$ has the form $g^k$ for some $k$. If $H = \{e\}$, then $H = \langle e \rangle$. Otherwise $H$ contains some $g^k$ with $k \neq 0$, hence also $g^{-k}$, so it contains a positive power of $g$; let $m$ be the smallest positive integer with $g^m \in H$. Then $H = \langle g^m \rangle$ (one can show every element of $H$ is a power of $g^m$ by the division algorithm).
 >
 > **(3)** Lagrange's theorem — the proof uses cosets and is standard in algebra. We state it without proof.
 

@@ -139,7 +139,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 > \lim_{n \to \infty} s_n = \lim_{n \to \infty} \frac{a(1 - r^n)}{1 - r} = \frac{a}{1 - r} - \frac{a}{1 - r} \lim_{n \to \infty} r^n = \frac{a}{1 - r} .
 > $$
 >
-> **$r \le -1$ or $r > 1$.** Then $\{r^n\}$ is divergent (Theorem §69.8). By (3), $r^n = 1 - \frac{(1 - r)}{a} s_n$, so if $\{s_n\}$ converged, so would $\{r^n\}$. Hence $\lim s_n$ does not exist. (Stewart: "by Equation 3, $\lim s_n$ does not exist"; the displayed solution for $r^n$ is why.)
+> **$r \le -1$ or $r > 1$.** Then $\{r^n\}$ is divergent ([[§69 Sequences#^thm-69-8|Theorem §69.8]]). By (3), $r^n = 1 - \frac{(1 - r)}{a} s_n$, so if $\{s_n\}$ converged, so would $\{r^n\}$. Hence $\lim s_n$ does not exist. (Stewart: "by Equation 3, $\lim s_n$ does not exist"; the displayed solution for $r^n$ is why.)
 
 ^pf-70-1
 

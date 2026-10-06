@@ -205,7 +205,7 @@ The choice of variable can make the calculus unnecessary. Stewart's Example 4.7.
 ^def-31-1
 
 > [!example] Example §31.5: Maximizing Revenue
-> A store has been selling $200$ TV monitors a week at $\$350$each. A market survey indicates that for each$\$10$ rebate offered to buyers, the number of monitors sold will increase by $20$ a week. Find the demand function and the revenue function. How large a rebate should the store offer to maximize revenue?
+> A store has been selling $200$ TV monitors a week at $\$350$ each. A market survey indicates that for each $\$10$ rebate offered to buyers, the number of monitors sold will increase by $20$ a week. Find the demand function and the revenue function. How large a rebate should the store offer to maximize revenue?
 >
 > **Demand function.** If $x$ monitors are sold per week, the increase in sales is $x - 200$. Each increase of $20$ units comes with a price decrease of $\$10$, so each additional unit sold lowers the price by $\frac{1}{20} \times 10$, and
 >

@@ -23,4 +23,5 @@ tags: [calculus, hub]
 - [[§57 Modeling with Differential Equations#^ex-57-2|Example §57.2: A Family of Solutions]]
 
 ## Connections
+- Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]], which states the quotient rule with the product rule and says it is proved similarly (or from the product rule and the derivative of $1/g$).
 - See [[§15 The Product and Quotient Rules]] for context and examples.

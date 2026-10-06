@@ -211,7 +211,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] and [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]].
-> - With $f' = 0$ only almost everywhere the conclusion fails (the Cantor function); see the Connections of 451 Cor. §29.4.
+> - With $f' = 0$ only almost everywhere the conclusion fails: the Cantor function, [[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]], is a counterexample, and [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]] shows that such a nonconstant $f$ is never absolutely continuous (see also the Connections of [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]).
 
 > [!remark] Remark: The Interval Matters
 > Theorem §26.3 needs an interval. Let

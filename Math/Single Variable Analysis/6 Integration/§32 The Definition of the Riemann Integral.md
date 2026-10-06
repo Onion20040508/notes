@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 32
 chapter: 6
@@ -55,7 +56,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 > [!remark]- Connections
 > - Double integral over a region, with integrability defined by upper minus lower sum tending to 0: [[§15 Multivariable Integration#^def-15-10|452 Def. §15.10]] and [[§15 Multivariable Integration#^def-15-11|452 Def. §15.11]].
 
-> [!example] Example §32.1: The identity function
+> [!example] Example §32.1: The Identity Function
 > Show $f(x) = x$ is Darboux integrable on $[0,1]$ and $\int_0^1 x\,dx = \tfrac12$. (We know the value from the Fundamental Theorem — but here we must prove it *from the definition*.)
 >
 > *Idea:* find partitions for which $U(f,P)$ and $L(f,P)$ come close to a common value $I$. Take the equal division $P_n: t_k = \tfrac kn$. On $[t_{k-1}, t_k]$, $f = x$ is increasing, so its sup is $\tfrac kn$ and inf is $\tfrac{k-1}{n}$:
@@ -79,8 +80,8 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 ![[m451-32-3.svg]]
 *The equal partition $P_n$ for $f(x) = x$ on $[0,1]$ (here $n = 5$): the lower sum is the blue staircase, and the upper sum adds the $n$ red squares along the diagonal, each of side $\tfrac1n$. So $U(f,P_n) - L(f,P_n) = n \cdot \tfrac{1}{n^2} = \tfrac1n \to 0$, squeezing both sums onto $\tfrac12$.*
 
-> [!example] Example §32.2: A step function
-> Show $g: [0,2] \to \mathbb{R}$, $g(x) = 1$ for $x \in [0,1)$ and $g(x) = 0$ for $x \in [1,2]$, is Darboux integrable. Given $\varepsilon > 0$, isolate the jump in a short subinterval: take
+> [!example] Example §32.2: A Step Function
+> Show $g: [0,2] \to \mathbb{R}$, $g(x) = 1$ for $x \in [0,1)$ and $g(x) = 0$ for $x \in [1,2]$, is Darboux integrable. Given $\varepsilon > 0$ (we may assume $\varepsilon < 2$, so that $1 - \tfrac\varepsilon2 > 0$), isolate the jump in a short subinterval: take
 >
 > $$
 > P: \quad 0 < 1 - \tfrac\varepsilon2 < 1 < 2.
@@ -99,7 +100,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 ![[m451-32-4.svg]]
 *The jump isolated: $g$ (blue; filled dot $g(1) = 0$, hollow dot at the value $1$ not taken at $x = 1$) with $P: 0 < 1 - \tfrac\varepsilon2 < 1 < 2$. Upper and lower sums agree except on the short subinterval $[1 - \tfrac\varepsilon2, 1]$, where $M = 1$ and $m = 0$: the red strip is the whole gap, $U(g,P) - L(g,P) = \tfrac\varepsilon2$.*
 
-> [!example] Example §32.3: The Dirichlet function is not integrable
+> [!example] Example §32.3: The Dirichlet Function Is Not Integrable
 > Let $f(x) = 1$ for $x \in \mathbb{Q}$, $f(x) = 0$ for $x \notin \mathbb{Q}$. Then $f$ is *not* integrable on $[0,1]$: every subinterval $[t_{k-1}, t_k]$ of every partition contains both rationals and irrationals (density of both, §4 and §17), so
 >
 > $$
@@ -168,7 +169,9 @@ Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *differe
 
 ^pf-32-3
 
-> [!proof]+ Proof of Theorem 32.1
+*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
+
+> [!proof]+ Proof of Theorem §32.1
 > Fix any partition $Q$. By the Cross Lemma, $U(f,Q)$ is an upper bound for *all* the lower sums, so
 >
 > $$
@@ -182,6 +185,8 @@ Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *differe
 > $$
 
 ^pf-32-1
+
+*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-3|§32.3]]
 
 ## The Cauchy Criterion for Integrability
 
@@ -221,6 +226,8 @@ This is convenient: we may pick a *special* partition, usually the equal divisio
 
 ^pf-32-4
 
+*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]], [[§32 The Definition of the Riemann Integral#^thm-32-1|§32.1]], [[Characterization of the Supremum|§4.3]]
+
 In computations one usually runs a whole *sequence* of partitions and takes limits — as in the identity-function example above. The following packages that pattern once and for all, value included:
 
 > [!theorem] Proposition §32.5: Sequential Criterion with Value (HW)
@@ -251,7 +258,9 @@ In computations one usually runs a whole *sequence* of partitions and takes limi
 
 ^pf-32-5
 
-For example, the equal partitions for $f(x) = x^3$ on $[0, b]$ give (via $\sum_{k=1}^n k^3 = \tfrac{n^2(n+1)^2}{4}$, proved by induction in §1)
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-1|§32.1]], [[Squeeze Theorem|§8.1]]
+
+For example, the equal partitions for $f(x) = x^3$ on $[0, b]$ give (via $\sum_{k=1}^n k^3 = \tfrac{n^2(n+1)^2}{4}$, proved by induction just like the sum of squares in [[§1 The Set ℕ of Natural Numbers#^ex-1-1|Example §1.1]])
 
 $$
 U_n = \frac{b^4 (n+1)^2}{4 n^2}, \qquad L_n = \frac{b^4 (n-1)^2}{4 n^2}, \qquad U_n - L_n = \frac{b^4}{n} \to 0,
@@ -281,12 +290,12 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 ![[m451-32-2.svg]]
 *A Riemann sum: both choices are arbitrary — the partition points $t_k$ (unequal lengths; $\operatorname{mesh}(P)$ is the widest) and the tags $x_k$ inside each piece, with rectangle heights $f(x_k)$, neither sup nor inf. Dashed red and blue mark the sup $M$ and inf $m$ of $f$ on each subinterval: every Riemann sum is squeezed, $L(f,P) \leq S \leq U(f,P)$ — the mechanism behind the equivalence theorem below.*
 
-One difficulty in *using* this definition: we need a candidate value $r$ before we can check anything — whereas the Darboux definition asks only for the sup and inf to meet. Fortunately:
-
 > [!remark]- Connections
 > - In the plane the mesh is the largest diameter of a piece: [[§15 Multivariable Integration#^def-15-9|452 Def. §15.9]].
 > - Recapped in 551 as [[§8 Motivation꞉ The Riemann Integral#^def-8-3|551 Def. §8.3]]; every Riemann integrable function is Lebesgue integrable with the same integral, [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
 > - Computational version: Stewart's definite integral, [[§35 The Definite Integral#^def-35-1|Calc Def. §35.1]]; endpoint approximations, [[§50 Approximate Integration#^def-50-1|Calc Def. §50.1]] (with worked examples).
+
+One difficulty in *using* this definition: we need a candidate value $r$ before we can check anything — whereas the Darboux definition asks only for the sup and inf to meet. Fortunately:
 
 > [!theorem] Theorem §32.6: Equivalence of the Two Integrals
 > 1. $f: [a,b] \to \mathbb{R}$ is Riemann integrable if and only if it is Darboux integrable (and the values agree).
@@ -327,6 +336,8 @@ These were stated without proof in lecture (the proofs take too much time; see t
 > Since $\varepsilon > 0$ was arbitrary (running the argument with $\tfrac\varepsilon2$ in place of $\varepsilon$ gives $U(f,P) - L(f,P) \leq \tfrac\varepsilon2 < \varepsilon$), the Cauchy criterion holds, and $f$ is integrable.
 
 ^pf-32-7
+
+*Uses:* [[§19 Uniform Continuity#^thm-19-1|§19.1]], [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]]
 
 > [!remark]- Connections
 > - Computational version: [[§35 The Definite Integral#^thm-35-1|Calc Thm. §35.1]].

@@ -354,7 +354,7 @@ By Theorem §95.5 every tangent line at $P$ to a curve on $S$ through $P$ lies i
 > F_x(x_0, y_0, z_0) = f_x(x_0, y_0) , \qquad F_y(x_0, y_0, z_0) = f_y(x_0, y_0) , \qquad F_z(x_0, y_0, z_0) = -1 ,
 > $$
 >
-> so $\nabla F \ne \mathbf{0}$ and Equation (19) becomes $f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0) - (z - z_0) = 0$, which is the equation of Theorem §93.1. For example, for $z = 2x^2 + y^2$ at $(1, 1, 3)$, $F = 2x^2 + y^2 - z$ has $\nabla F(1, 1, 3) = \langle 4, 2, -1 \rangle$, and (19) gives $4(x - 1) + 2(y - 1) - (z - 3) = 0$, or $z = 4x + 2y - 3$, as in [[§93 Tangent Planes and Linear Approximations#^ex-93-1|Example §93.1]] (Stewart, Example 14.6.9).
+> so $\nabla F \ne \mathbf{0}$ and Equation (19) becomes $f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0) - (z - z_0) = 0$, which is the equation of [[§93 Tangent Planes and Linear Approximations#^thm-93-1|Theorem §93.1]]. For example, for $z = 2x^2 + y^2$ at $(1, 1, 3)$, $F = 2x^2 + y^2 - z$ has $\nabla F(1, 1, 3) = \langle 4, 2, -1 \rangle$, and (19) gives $4(x - 1) + 2(y - 1) - (z - 3) = 0$, or $z = 4x + 2y - 3$, as in [[§93 Tangent Planes and Linear Approximations#^ex-93-1|Example §93.1]] (Stewart, Example 14.6.9).
 
 ^pf-95-6
 

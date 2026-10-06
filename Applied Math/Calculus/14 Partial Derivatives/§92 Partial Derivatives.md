@@ -64,7 +64,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 ^def-92-2
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]]. Partial derivatives can exist at a point where $f$ is not even continuous ([[§4 Partial Derivatives#^ex-4-1|452 Ex. §4.1]]; compare Example §91.1(b)); they only see the two lines through the point parallel to the axes. This is why §93 needs the stronger notion of differentiability, [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]].
+> - Rigorous treatment: [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]]. Partial derivatives can exist at a point where $f$ is not even continuous ([[§4 Partial Derivatives#^ex-4-1|452 Ex. §4.1]]; compare [[§91 Limits and Continuity#^ex-91-1|Example §91.1]](b)); they only see the two lines through the point parallel to the axes. This is why §93 needs the stronger notion of differentiability, [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]].
 
 > [!theorem] Theorem §92.1: Rule for Finding Partial Derivatives
 > If $z = f(x, y)$:

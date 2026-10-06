@@ -93,6 +93,7 @@ $$
 
 > [!remark]- Connections
 > - The solution set of $L[y] = g$ is the translate $Y + S$ of the two-dimensional solution space $S$ of $L[y] = 0$ ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|§14, Remark: The Solution Space Is a Two-Dimensional Vector Space]]): [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]]. The same structure for linear systems, "the solutions of $A\mathbf{x} = \mathbf{b}$ are $\mathbf{p}$ plus the solutions of $A\mathbf{x} = \mathbf{0}$": [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]].
+> - The same structure for linear difference equations, "one particular solution plus the general solution of the homogeneous equation": [[§30 Applications to Difference Equations#^thm-30-7|235 Thm. §30.7]].
 
 > [!definition] Definition §17.1: Complementary Solution; Particular Solution
 > The general solution $c_1y_1(t) + c_2y_2(t)$ of the homogeneous equation (2) corresponding to (1) is called the **complementary solution** and is denoted $y_c(t)$. Any solution $Y(t)$ of the nonhomogeneous equation (1) is called a **particular solution**. By Theorem §17.2, solving (1) takes three steps:

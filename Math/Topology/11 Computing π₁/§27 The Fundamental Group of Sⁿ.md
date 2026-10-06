@@ -29,11 +29,6 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 
 ^thm-27-1
 
-> [!remark] Remark: Why This Matters
-> This is the stepping stone to both the [[§27 The Fundamental Group of Sⁿ#^cor-27-2|simply connected corollary]] and the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]]. It says: if you can cover $X$ by two open sets, then every loop in $X$ can be decomposed into pieces from $U$ and $V$. The simply connected corollary uses this when both pieces contribute nothing ($\pi_1(U) = \pi_1(V) = 0$). Van Kampen uses it in general: the pieces generate $\pi_1(X)$, and the overlap $U \cap V$ determines the relations between them.
-
-^rem-27-1
-
 > [!proof]+ Proof
 > Let $f: I \to X$ be a loop at $x_0$. We must show $[f] = [g_1] * [g_2] * \cdots * [g_n]$ where each $g_i$ is a loop in $U$ or $V$ at $x_0$.
 >
@@ -100,6 +95,11 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > [!remark]- Connections
 > - Upgraded from “generate” to the exact group by the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]], whose surjectivity step is this theorem.
 
+> [!remark] Remark: Why This Matters
+> This is the stepping stone to both the [[§27 The Fundamental Group of Sⁿ#^cor-27-2|simply connected corollary]] and the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]]. It says: if you can cover $X$ by two open sets, then every loop in $X$ can be decomposed into pieces from $U$ and $V$. The simply connected corollary uses this when both pieces contribute nothing ($\pi_1(U) = \pi_1(V) = 0$). Van Kampen uses it in general: the pieces generate $\pi_1(X)$, and the overlap $U \cap V$ determines the relations between them.
+
+^rem-27-1
+
 ## Consequence: Simply Connected Spaces
 
 > [!theorem] Corollary §27.2: Simply Connected from Open Cover
@@ -122,11 +122,6 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > The $n$-sphere $S^n$ is simply connected for $n \geq 2$.
 
 ^thm-27-3
-
-> [!remark] Remark
-> $S^n$ ($n \geq 2$) and a one-point space have the same $\pi_1$ — both trivial. But they are not [[§26 Deformation Retracts and Homotopy Type#^def-26-4|homotopy equivalent]] ($S^n$ is not [[§26 Deformation Retracts and Homotopy Type#^def-26-6|contractible]], which can be detected by higher homotopy groups or homology).
-
-^rem-27-2
 
 > [!proof]+ Proof
 > Write $S^n = U \cup V$ where $U = S^n \setminus \{p\}$ and $V = S^n \setminus \{q\}$, with:
@@ -186,6 +181,11 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > - Stereographic projection first appeared for $S^1$ and $S^2$ in [[§17 Local Compactness#^ex-17-7|One-Point Compactification of ℝ and ℝ²]].
 > - Recomputed with van Kampen in [[§29 The Seifert–van Kampen Theorem#^ex-29-1|Simply Connected Spheres via van Kampen]].
 > - Used in Quantum Field Theory: $S^3 \cong SU(2)$ is simply connected, hence so is $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$ — [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|QFT Theorem §C5a.1.4]].
+
+> [!remark] Remark
+> $S^n$ ($n \geq 2$) and a one-point space have the same $\pi_1$ — both trivial. But they are not [[§26 Deformation Retracts and Homotopy Type#^def-26-4|homotopy equivalent]] ($S^n$ is not [[§26 Deformation Retracts and Homotopy Type#^def-26-6|contractible]], which can be detected by higher homotopy groups or homology).
+
+^rem-27-2
 
 > [!remark] Remark: Why $n \geq 2$ is Essential
 > For $n = 1$: $U \cap V = S^1 \setminus \{p, q\} \cong \mathbb{R}^1 \setminus \{0\} = (-\infty, 0) \cup (0, \infty)$ — two disjoint intervals, **not** path-connected. So [[§27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]] does not apply, and indeed $\pi_1(S^1) \cong \mathbb{Z} \neq 0$ ([[Fundamental Group of the Circle|§24.10]]).
@@ -265,7 +265,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 >
 > | **Space $X$** | **$U$** (remove pt from right) | **$V$** (remove pt from left) | $\pi_1(X)$ |
 > |---|---|---|---|
-> | $S^n$ ($n \geq 2$) ([[Sⁿ is Simply Connected for n ≥ 2\|§27.3]]) | $S^n \setminus \{q\} \cong \mathbb{R}^n$ | $S^n \setminus \{p\} \cong \mathbb{R}^n$ | $0$ |
+> | $S^n$ ($n \geq 2$) ([[Sⁿ is Simply Connected for n ≥ 2\|§27.3]]) | $S^n \setminus \{p\} \cong \mathbb{R}^n$ | $S^n \setminus \{q\} \cong \mathbb{R}^n$ | $0$ |
 > | $S^2 \vee S^2$ ([[§27 The Fundamental Group of Sⁿ#^ex-27-1\|Ex. §27.1]]) | def. retract onto $S^2$ | def. retract onto $S^2$ | $0$ |
 > | $S^1 \vee S^1$ ([[§29 The Seifert–van Kampen Theorem#^ex-29-2\|Ex. §29.2]]) | def. retract onto $S^1$ | def. retract onto $S^1$ | $F_2$ |
 >

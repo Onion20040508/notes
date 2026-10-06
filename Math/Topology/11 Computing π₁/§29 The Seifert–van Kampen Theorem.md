@@ -41,35 +41,7 @@ tags: [topology, math590]
 > - In presentation language: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-15|Connection to Van Kampen]]; quotient groups: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
 > - Its surjectivity half is the [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Generation by Open Cover]] theorem.
 
-> [!remark] Remark: What $N$ Does
-> A loop in $A \cap B$ can be viewed in two ways: as an element of $\pi_1(A)$ (via $i_1$) or as an element of $\pi_1(B)$ (via $i_2$). In the free product $G * H$, these are treated as different elements. But in $\pi_1(X)$ they represent the same loop, so they must be identified. The relation $i_1(k) \cdot i_2(k)^{-1} = e$ (i.e., $i_1(k) = i_2(k)$) forces this identification. Quotienting by $N$ imposes exactly these relations and nothing more.
-
-^rem-29-2
-
-> [!remark] Remark: Recipe for Finding $N$
-> The recipe is mechanical — three steps:
->
-> **Step 1: Find generators of $K = \pi_1(A \cap B)$.** Usually $A \cap B$ is an annulus ($K \cong \mathbb{Z}$, one generator $t$), a cross (contractible, $K = 0$, no generators), or a circle.
->
-> **Step 2: For each generator $t$, trace what it becomes in $A$ and in $B$.** The loop $t$ lives in $A \cap B$. Since $A \cap B \subseteq A$ and $A \cap B \subseteq B$, view $t$ inside each piece:
-> - $i_1(t)$ = what $t$ is homotopic to inside $A$, expressed in generators of $\pi_1(A)$.
-> - $i_2(t)$ = what $t$ is homotopic to inside $B$, expressed in generators of $\pi_1(B)$.
->
-> **This is the only hard part** — it is a geometric question. You must draw the picture, look at the loop $t$ sitting inside $A$, and figure out which word in $\pi_1(A)$'s generators it represents.
->
-> **Step 3: The relation is $i_1(t) = i_2(t)$.** For each generator $t_j$ of $K$, you get one relation. Collect them all — their normal closure is $N$ (they generate $N$ as a normal subgroup).
->
-> In $\langle \mid \rangle$ notation: the result is (recall [[§21 Algebra Prerequisites꞉ Groups#^rem-21-15|§21]]):
->
-> $$
-> \pi_1(X) = \langle \underbrace{a_1, \ldots, b_1, \ldots}_{\text{generators of } G \text{ and } H} \mid \underbrace{R_1, \ldots, S_1, \ldots}_{\text{existing relations}}, \underbrace{i_1(t_1) = i_2(t_1), \ldots}_{\text{new from } A \cap B} \rangle.
-> $$
->
-> **Common case:** When one piece (say $A$) is contractible, $\pi_1(A) = 0$, so $i_1(t) = e$ for every $t$. The relation simplifies to $i_2(t) = e$: the loop $t$ must be trivial in $B$. The entire content of $N$ comes from what $t$ looks like inside $B$.
-
-^rem-29-3
-
-> [!proof]+ Proof sketch (from lecture)
+> [!proof]+ Proof Sketch (From Lecture)
 > Define $\hat{j}: \pi_1(A, p) * \pi_1(B, p) \to \pi_1(A \cup B, p)$ to be the unique homomorphism extending the inclusion-induced maps
 >
 > $$
@@ -107,6 +79,34 @@ tags: [topology, math590]
 ^pf-29-1
 
 *Uses:* [[§27 The Fundamental Group of Sⁿ#^thm-27-1|§27.1]], [[Lebesgue Number Lemma|§16.3]], [[First Isomorphism Theorem for Groups|493 §41.1]]
+
+> [!remark] Remark: What $N$ Does
+> A loop in $A \cap B$ can be viewed in two ways: as an element of $\pi_1(A)$ (via $i_1$) or as an element of $\pi_1(B)$ (via $i_2$). In the free product $G * H$, these are treated as different elements. But in $\pi_1(X)$ they represent the same loop, so they must be identified. The relation $i_1(k) \cdot i_2(k)^{-1} = e$ (i.e., $i_1(k) = i_2(k)$) forces this identification. Quotienting by $N$ imposes exactly these relations and nothing more.
+
+^rem-29-2
+
+> [!remark] Remark: Recipe for Finding $N$
+> The recipe is mechanical — three steps:
+>
+> **Step 1: Find generators of $K = \pi_1(A \cap B)$.** Usually $A \cap B$ is an annulus ($K \cong \mathbb{Z}$, one generator $t$), a cross (contractible, $K = 0$, no generators), or a circle.
+>
+> **Step 2: For each generator $t$, trace what it becomes in $A$ and in $B$.** The loop $t$ lives in $A \cap B$. Since $A \cap B \subseteq A$ and $A \cap B \subseteq B$, view $t$ inside each piece:
+> - $i_1(t)$ = what $t$ is homotopic to inside $A$, expressed in generators of $\pi_1(A)$.
+> - $i_2(t)$ = what $t$ is homotopic to inside $B$, expressed in generators of $\pi_1(B)$.
+>
+> **This is the only hard part** — it is a geometric question. You must draw the picture, look at the loop $t$ sitting inside $A$, and figure out which word in $\pi_1(A)$'s generators it represents.
+>
+> **Step 3: The relation is $i_1(t) = i_2(t)$.** For each generator $t_j$ of $K$, you get one relation. Collect them all — their normal closure is $N$ (they generate $N$ as a normal subgroup).
+>
+> In $\langle \mid \rangle$ notation: the result is (recall [[§21 Algebra Prerequisites꞉ Groups#^rem-21-15|§21]]):
+>
+> $$
+> \pi_1(X) = \langle \underbrace{a_1, \ldots, b_1, \ldots}_{\text{generators of } G \text{ and } H} \mid \underbrace{R_1, \ldots, S_1, \ldots}_{\text{existing relations}}, \underbrace{i_1(t_1) = i_2(t_1), \ldots}_{\text{new from } A \cap B} \rangle.
+> $$
+>
+> **Common case:** When one piece (say $A$) is contractible, $\pi_1(A) = 0$, so $i_1(t) = e$ for every $t$. The relation simplifies to $i_2(t) = e$: the loop $t$ must be trivial in $B$. The entire content of $N$ comes from what $t$ looks like inside $B$.
+
+^rem-29-3
 
 > [!remark] Remark: How to Find $N$: The Recipe
 > Given $X = A \cup B$ with [[Seifert–van Kampen Theorem|van Kampen]] hypotheses, finding $N$ is a three-step process:
@@ -358,7 +358,7 @@ tags: [topology, math590]
 
 ^thm-29-3
 
-> [!proof]+ Proof sketch
+> [!proof]+ Proof Sketch
 > Since $\pi$ sends all vertices to $x_0$, the image $\pi(\partial P)$ is a wedge of $k$ circles (one for each distinct label), joined at $x_0$. The loop running once around $\partial P$ counterclockwise maps to the word $w$ in these circles.
 >
 > Apply [[Seifert–van Kampen Theorem|van Kampen]] to $X = U \cup V$ where:

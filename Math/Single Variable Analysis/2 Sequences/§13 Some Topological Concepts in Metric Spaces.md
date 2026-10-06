@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 13
 chapter: 2
@@ -23,7 +24,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 ^def-13-1
 
-> [!remark] Remark: Reading the axioms
+> [!remark] Remark: Reading the Axioms
 > (1) is the *separation of points*: two different points must have positive distance. (2) is the *symmetry* of distance — equal in both directions; this may fail in real life (airfares!) and there are meaningful non-symmetric “distances” in mathematics too. (3) is the famous *triangle inequality* — often the condition that is not easy to verify.
 
 ^rem-13-1
@@ -31,12 +32,12 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 > [!remark]- Connections
 > - In 590 a metric generates a topology: [[§11 Metric Topology#^def-11-1|590 Def. §11.1]] and [[§11 Metric Topology#^def-11-3|590 Def. §11.3]].
 
-> [!example] Example §13.1: The real line
+> [!example] Example §13.1: The Real Line
 > $X = \mathbb{R}$ with $d(a,b) = |a - b|$: all three conditions were verified in §3.
 
 ^ex-13-1
 
-> [!example] Example §13.2: The complex plane
+> [!example] Example §13.2: The Complex Plane
 > $X = \mathbb{C}$. We need a notion of absolute value: for $z = x + iy$ with $x, y \in \mathbb{R}$, the *complex conjugate* is $\overline{z} = x - iy$, and the **absolute value** (modulus) is
 >
 > $$
@@ -50,7 +51,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 > [!remark]- Connections
 > - Computational version: [[§4 Vectors and Moduli#^def-4-1|342 Def. §4.1]] (the modulus as distance in the complex plane) and [[§60 Convergence of Sequences#^thm-60-2|342 Thm. §60.2]] (convergence in ℂ is convergence of real and imaginary parts).
 
-> [!remark] Remark: Proof of the complex triangle inequality
+> [!remark] Remark: Proof of the Complex Triangle Inequality
 > Note $\operatorname{Re} w \leq |w|$ for any $w \in \mathbb{C}$, and $|z \overline{w}| = |z||w|$ (from $|zw|^2 = zw \cdot \overline{zw} = |z|^2 |w|^2$). Then
 >
 > $$
@@ -62,7 +63,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 ^rem-13-2
 
-> [!example] Example §13.3: Euclidean space
+> [!example] Example §13.3: Euclidean Space
 > $X = \mathbb{R}^n$, $n \geq 1$. For $x = (x_1, \ldots, x_n)$ and $y = (y_1, \ldots, y_n)$, define the **Euclidean distance**
 >
 > $$
@@ -73,7 +74,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 ^ex-13-3
 
-> [!example] Example §13.4: The max distance
+> [!example] Example §13.4: The Max Distance
 > Can we define a *different* distance on $\mathbb{R}^n$? Yes:
 >
 > $$
@@ -89,7 +90,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 > and taking the maximum over $i$ on the left gives the triangle inequality for $d_\infty$.
 >
 > ![[m451-13-1.svg]]
-> *The unit ball $\{ d(x, 0) \leq 1 \}$ in $\mathbb{R}^2$ for the three metrics: the taxicab diamond ($d_1$) inside the Euclidean disc ($d_2$) inside the max-distance square ($d_\infty$), which in turn sits inside the Euclidean disc of radius $\sqrt2$ (dashed). This nesting is Proposition 13.1 for $n = 2$, $d_\infty \leq d \leq \sqrt2\, d_\infty$: each ball contains a scaled copy of the others, so all three metrics define the same convergent sequences.*
+> *The unit ball $\{ d(x, 0) \leq 1 \}$ in $\mathbb{R}^2$ for the three metrics: the taxicab diamond ($d_1$) inside the Euclidean disc ($d_2$) inside the max-distance square ($d_\infty$), which in turn sits inside the Euclidean disc of radius $\sqrt2$ (dashed). This nesting is [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Proposition §13.1]] for $n = 2$, $d_\infty \leq d \leq \sqrt2\, d_\infty$: each ball contains a scaled copy of the others, so all three metrics define the same convergent sequences.*
 
 ^ex-13-4
 
@@ -107,7 +108,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^def-13-2
 
-> [!remark] Remark: Positivity and uniqueness of limits
+> [!remark] Remark: Positivity and Uniqueness of Limits
 > The requirement $d(x,y) > 0$ for $x \neq y$ is used exactly to prove the *uniqueness of limits*, by the same contradiction proof as in §7 (with $\varepsilon < \tfrac12 d(s,t)$). This is a good place to see what that condition is for; in general topology, the corresponding property of a space is called the *Hausdorff property*.
 
 ^rem-13-4
@@ -132,6 +133,8 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^pf-13-1
 
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
+
 > [!remark]- Connections
 > - In 452 the same inequality makes balls and square neighborhoods interchangeable: [[§2 Open and Closed Sets#^def-2-2|452 Def. §2.2]].
 > - In 590 the same comparison shows that the Euclidean and square metrics give the same topology: [[§11 Metric Topology#^thm-11-2|590 Thm. §11.2]].
@@ -142,7 +145,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^def-13-3
 
-> [!example] Example §13.5: Completeness of the real line
+> [!example] Example §13.5: Completeness of the Real Line
 > $(\mathbb{R}, |\cdot|)$ is a complete metric space — this is exactly what we proved in §10 (Cauchy $\Rightarrow$ convergent), and it is equivalent to the [[Completeness Axiom|completeness axiom]] of $\mathbb{R}$.
 
 ^ex-13-5
@@ -171,6 +174,8 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^pf-13-2
 
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|§13.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|§10.8]]
+
 > [!definition] Definition §13.4: Bounded Sequence in a Metric Space
 > A sequence $(s_n)$ in $(X,d)$ is **bounded** if there exist a number $M > 0$ and a point $x_0 \in X$ such that $d(s_n, x_0) \leq M$ for all $n \geq 1$ — a direct generalization of bounded sequences of real numbers.
 
@@ -185,6 +190,8 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 > The proof is similar — reduce to $\mathbb{R}$ coordinate by coordinate. If $(s_k)$ is bounded in $\mathbb{R}^n$, each coordinate sequence is bounded in $\mathbb{R}$. By [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] in $\mathbb{R}$, extract a subsequence along which the first coordinates converge; from *that* subsequence, extract a further subsequence along which the second coordinates converge (the first still converge, being a subsequence of a convergent sequence); continue through all $n$ coordinates. After $n$ extractions, all coordinates converge along the final subsequence, which therefore converges in $\mathbb{R}^n$ by the coordinate-wise criterion. So many things in calculus generalize to this topological setting.
 
 ^pf-13-3
+
+*Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§11 Subsequences#^thm-11-1|§11.1]], [[§11 Subsequences#^prop-11-3|§11.3]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|§13.1]]
 
 > [!remark]- Connections
 > - Topological counterparts: closed bounded subsets of ℝⁿ are compact, [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel), and compact equals sequentially compact for metric spaces, [[§16 Limit Point Compactness#^thm-16-2|590 Thm. §16.2]].
@@ -210,7 +217,7 @@ The name “open” comes from open intervals in $\mathbb{R}$. These notions are
 > - In ℝⁿ, 452 defines open sets by interior points and closed sets as those containing all their boundary points: [[§2 Open and Closed Sets#^def-2-4|452 Def. §2.4]].
 > - 590 takes open sets as the primitive notion, [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]]; the open sets defined here form the metric topology, [[§11 Metric Topology#^def-11-3|590 Def. §11.3]].
 
-> [!example] Example §13.6: Open intervals are open
+> [!example] Example §13.6: Open Intervals Are Open
 > Every open interval $(a,b) \subseteq \mathbb{R}$ is an open subset. For any $x \in (a,b)$: $x > a$ and $x < b$, so $x - a > 0$ and $b - x > 0$. Take $\varepsilon < \min\{x - a,\, b - x\}$; then $B(x,\varepsilon) = (x - \varepsilon, x + \varepsilon) \subseteq (a,b)$.
 >
 > We *cannot* do the same with the closed interval $[a,b]$ — the argument fails at the endpoints: every ball around $a$ contains points $< a$, outside $[a,b]$. So closed intervals are not open subsets. (They are closed: the complement $(-\infty, a) \cup (b, +\infty)$ is open by the argument above.)
@@ -232,7 +239,7 @@ The name “open” comes from open intervals in $\mathbb{R}$. These notions are
 
 So, e.g., $(0,1) \cup (2,4)$ is open.
 
-> [!remark] Remark: Structure of open and closed subsets of the line
+> [!remark] Remark: Structure of Open and Closed Subsets of the Line
 > **Fact:** every open subset of $\mathbb{R}$ is a union of open intervals — possibly infinitely many, but always *countably* many (one can take them disjoint). So open subsets of $\mathbb{R}$ have a simple description. Closed sets, by contrast, can be very complicated. Two illustrations:
 >
 > - Given any sequence $(s_n)$ in $\mathbb{R}$, its set $S$ of subsequence limits is a closed set (as promised in §11).
@@ -260,6 +267,8 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 
 ^pf-13-5
 
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
+
 ![[m451-13-4.svg]]
 *The ($\Leftarrow$) direction: if $C$ is not closed, some $x \notin C$ (hollow red) has no ball inside the complement, so every ball $B(x, \tfrac1n)$ (dashed) meets $C$; choosing $s_n \in C \cap B(x, \tfrac1n)$ gives a sequence in $C$ converging to a point outside $C$.*
 
@@ -281,8 +290,8 @@ Why does such a smallest closed superset exist? Consider *all* closed subsets co
 > - 452's version in ℝⁿ: the closure is the set together with its boundary points, [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]].
 > - Closure in any topological space: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]].
 
-> [!example] Example §13.7: Closures on the line
-> If $Y$ is already closed, $\overline{Y} = Y$. For $Y = (a,b) \subset \mathbb{R}$: $\overline{Y} = [a,b]$. For $Y = \mathbb{Q}$, $X = \mathbb{R}$: what is $\overline{\mathbb{Q}}$? Answer: $\overline{\mathbb{Q}} = \mathbb{R}$ — every real number is a limit of a sequence of rationals, by the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4; choose $s_n \in \mathbb{Q} \cap (x - \tfrac1n, x + \tfrac1n)$).
+> [!example] Example §13.7: Closures on the Line
+> If $Y$ is already closed, $\overline{Y} = Y$. For $Y = (a,b) \subset \mathbb{R}$: $\overline{Y} = [a,b]$. For $Y = \mathbb{Q}$, $X = \mathbb{R}$: what is $\overline{\mathbb{Q}}$ (the closure, not the algebraic numbers of [[§2 The Set ℚ of Rational Numbers#^def-2-5|Def. §2.5]])? Answer: $\overline{\mathbb{Q}} = \mathbb{R}$ — every real number is a limit of a sequence of rationals, by the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4; choose $s_n \in \mathbb{Q} \cap (x - \tfrac1n, x + \tfrac1n)$).
 
 ^ex-13-7
 
@@ -295,10 +304,12 @@ Why does such a smallest closed superset exist? Consider *all* closed subsets co
 
 ^prop-13-6
 
+*The notes state this without proof; it is the Sequence Lemma with its converse for metric spaces, [[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]].*
+
 > [!remark]- Connections
 > - 590's Sequence Lemma, [[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]], gives one inclusion in every space and equality in metrizable ones; the neighborhood form is [[§7 Interior and Closure#^thm-7-3|590 Thm. §7.3]].
 
-> [!example] Example §13.8: Two closures computed (HW)
+> [!example] Example §13.8: Two Closures Computed (HW)
 > **(1)** $S = \left\{ \tfrac1n \mid n \in \mathbb{N} \right\}$:    $\overline S = S \cup \{0\}$.
 >
 > The set $S \cup \{0\}$ is closed, since its complement

@@ -109,7 +109,7 @@ The axis of the circular cylinder $x^2 + y^2 = c^2$ is the $z$-axis, and in cyli
 > \iint_D G(x, y)\,dA = \int_\alpha^\beta \int_{h_1(\theta)}^{h_2(\theta)} G(r\cos\theta, r\sin\theta)\,r\,dr\,d\theta ,
 > $$
 >
-> and $G(r\cos\theta, r\sin\theta)\,r = \int_{u_1(r\cos\theta, r\sin\theta)}^{u_2(r\cos\theta, r\sin\theta)} f(r\cos\theta, r\sin\theta, z)\,r\,dz$, which is Formula 4. (Theorem §100.2 was proved for continuous integrands; $G$ is continuous when $f$, $u_1$, $u_2$ are, by the continuity of an integral in its parameter and limits, which Stewart uses without comment.)
+> and $G(r\cos\theta, r\sin\theta)\,r = \int_{u_1(r\cos\theta, r\sin\theta)}^{u_2(r\cos\theta, r\sin\theta)} f(r\cos\theta, r\sin\theta, z)\,r\,dz$, which is Formula 4. ([[§100 Double Integrals in Polar Coordinates#^thm-100-2|Theorem §100.2]] was proved for continuous integrands; $G$ is continuous when $f$, $u_1$, $u_2$ are, by the continuity of an integral in its parameter and limits, which Stewart uses without comment.)
 
 ^pf-104-1
 

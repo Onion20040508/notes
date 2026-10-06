@@ -286,9 +286,9 @@ tags: [linear-algebra]
 ^ladr-9-60
 
 > [!proof]+ Proof
-> $|\det T|^2=\overline{\det T}\det T=\det(T^*)\det T=\det(T^*T)$ ([[§34 Determinants#^ladr-9-56|9.56]](c), [[§34 Determinants#^ladr-9-49|9.49]]). In an orthonormal eigenbasis of $T^*T$ its eigenvalues are $s_1^2,\dots,s_n^2$, so $\det(T^*T)=s_1^2\cdots s_n^2$.
+> $|\det T|^2=\overline{\det T}\det T=\det(T^*)\det T=\det(T^*T)$ ([[§34 Determinants#^ladr-9-56|9.56]](c), [[§34 Determinants#^ladr-9-49|9.49]]). In an orthonormal eigenbasis of $T^*T$ ([[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]) its eigenvalues are $s_1^2,\dots,s_n^2$ ([[§26 Singular Value Decomposition#^ladr-7-65|7.65]]), so $\det(T^*T)=s_1^2\cdots s_n^2$ (last bullet of [[§34 Determinants#^ladr-9-42|9.42]]).
 
-*Uses:* [[§34 Determinants#^ladr-9-56|9.56]], [[§34 Determinants#^ladr-9-49|9.49]]
+*Uses:* [[§34 Determinants#^ladr-9-56|9.56]], [[§34 Determinants#^ladr-9-49|9.49]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]], [[§26 Singular Value Decomposition#^ladr-7-65|7.65]], [[§34 Determinants#^ladr-9-42|9.42]]
 
 > [!remark]- Connections
 > - Combined with [[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]]: [[§34 Determinants#^ladr-9-61|9.61]]. Also the polar decomposition $T=S\sqrt{T^*T}$ ([[§27 Consequences of Singular Value Decomposition#^ladr-7-93|7.93]]) with $|\det S|=1$.
@@ -402,9 +402,9 @@ tags: [linear-algebra]
 ^ladr-9-67
 
 > [!proof]+ Proof
-> The Vandermonde matrix $A$ is $\mathcal{M}(S)$ for $S:\Poly_{n-1}(\F)\to\F^n$, $Sp=(p(\beta_1),\dots,p(\beta_n))$, with bases $1,z,\dots,z^{n-1}$ and standard. Let $T$ on $\Poly_{n-1}(\F)$ send $1\mapsto1$ and $z^k\mapsto(z-\beta_1)\cdots(z-\beta_k)$; its matrix $B$ is upper triangular with $1$'s on the diagonal, so $\det B=1$. Then $C=\mathcal{M}(ST)=AB$ has entries $C_{j,k+1}=(\beta_j-\beta_1)\cdots(\beta_j-\beta_k)$, which is $0$ for $j\le k$: $C$ is lower triangular with diagonal entries $\prod_{i<j}(\beta_j-\beta_i)$. Hence $\det A=\det C=\prod_{j<k}(\beta_k-\beta_j)$ ([[§34 Determinants#^ladr-9-56|9.56]](a), [[§34 Determinants#^ladr-9-48|9.48]]).
+> The Vandermonde matrix $A$ is $\mathcal{M}(S)$ for $S:\Poly_{n-1}(\F)\to\F^n$, $Sp=(p(\beta_1),\dots,p(\beta_n))$, with bases $1,z,\dots,z^{n-1}$ and standard. Let $T$ on $\Poly_{n-1}(\F)$ send $1\mapsto1$ and $z^k\mapsto(z-\beta_1)\cdots(z-\beta_k)$; its matrix $B$ is upper triangular with $1$'s on the diagonal, so $\det B=1$. Then $C=\mathcal{M}(ST)=AB$ has entries $C_{j,k+1}=(\beta_j-\beta_1)\cdots(\beta_j-\beta_k)$, which is $0$ for $j\le k$: $C$ is lower triangular with diagonal entries $\prod_{i<j}(\beta_j-\beta_i)$. Hence $\det A=\det A\det B=\det C=\prod_{j<k}(\beta_k-\beta_j)$ ([[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-56|9.56]](a), [[§34 Determinants#^ladr-9-48|9.48]]).
 
-*Uses:* [[§34 Determinants#^ladr-9-56|9.56]], [[§34 Determinants#^ladr-9-48|9.48]]
+*Uses:* [[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-56|9.56]], [[§34 Determinants#^ladr-9-48|9.48]]
 
 > [!remark]- Connections
 > - Polynomial interpolation through $n$ points with distinct $\beta_k$ exists and is unique (the matrix is invertible, [[Invertible ⟺ nonzero determinant|9.50]]).

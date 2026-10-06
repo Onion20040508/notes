@@ -14,9 +14,9 @@ tags: [linear-algebra]
 ^ladr-7-82
 
 > [!proof]+ Proof
-> From the SVD, $\|Tv\|^2=\sum_ks_k^2|\langle v,e_k\rangle|^2\le s_1^2\sum_k|\langle v,e_k\rangle|^2\le s_1^2\|v\|^2$ (Bessel, [[§20 Orthonormal Bases#^ladr-6-26|6.26]]). And $Te_1=s_1f_1$.
+> From an SVD of $T$ ([[Singular value decomposition|7.70]]), $\|Tv\|^2=\sum_ks_k^2|\langle v,e_k\rangle|^2\le s_1^2\sum_k|\langle v,e_k\rangle|^2\le s_1^2\|v\|^2$ (Bessel, [[§20 Orthonormal Bases#^ladr-6-26|6.26]]). And $Te_1=s_1f_1$.
 
-*Uses:* [[§20 Orthonormal Bases#^ladr-6-26|6.26]]
+*Uses:* [[Singular value decomposition|7.70]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]]
 
 > [!remark]- Connections
 > - Hence $\max\{\|Tv\|:\|v\|\le1\}=s_1$, motivating [[§27 Consequences of Singular Value Decomposition#^ladr-7-86|7.86]].
@@ -108,13 +108,15 @@ tags: [linear-algebra]
 > This is the operator-norm Eckart–Young theorem: to compress a matrix to rank $k$, keep the top $k$ singular triples. Basis of PCA and image compression.
 
 > [!proof]+ Proof
-> **$T_k$ achieves $s_{k+1}$.** $\|(T-T_k)v\|^2=\sum_{j>k}s_j^2|\langle v,e_j\rangle|^2\le s_{k+1}^2\|v\|^2$ (Bessel), with equality at $v=e_{k+1}$.
+> **$T_k$ achieves $s_{k+1}$.** By the SVD ([[Singular value decomposition|7.70]]), $\|(T-T_k)v\|^2=\sum_{j>k}s_j^2|\langle v,e_j\rangle|^2\le s_{k+1}^2\|v\|^2$ (Bessel, [[§20 Orthonormal Bases#^ladr-6-26|6.26]]), with equality at $v=e_{k+1}$.
 >
-> **Nothing does better.** If $\dim\range S\le k$, the $k+1$ vectors $Se_1,\dots,Se_{k+1}$ are dependent: $\sum_{j\le k+1}a_jSe_j=0$ with $u=\sum a_je_j\ne0$. Then
+> **Nothing does better.** If $\dim\range S\le k$, the $k+1$ vectors $Se_1,\dots,Se_{k+1}$ in $\range S$ are dependent ([[Length of linearly independent list ≤ length of spanning list|2.22]]): $\sum_{j\le k+1}a_jSe_j=0$ with $u=\sum a_je_j\ne0$. Then
 > $$
 > \|(T-S)u\|^2=\|Tu\|^2=\sum_{j\le k+1}s_j^2|a_j|^2\ge s_{k+1}^2\|u\|^2 ,
 > $$
 > so $\|T-S\|\ge s_{k+1}$.
+
+*Uses:* [[Singular value decomposition|7.70]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[Length of linearly independent list ≤ length of spanning list|2.22]]
 
 > [!theorem] Theorem 7.93: Polar decomposition
 > For $T\in\Lin(V)$ there is a unitary $S\in\Lin(V)$ with

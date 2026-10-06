@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 30
 chapter: 5
@@ -40,7 +41,7 @@ The idea: differentiating can *simplify* $f$ and $g$, letting us escape the inde
 
 ## Using the Rule
 
-> [!example] Example §30.1: Four computations
+> [!example] Example §30.1: Four Computations
 > **(1)** $\displaystyle\lim_{x\to0} \frac{\sin x}{x} = \lim_{x\to0} \frac{\cos x}{1} = \frac11 = 1$ — after differentiating, the denominator is $1 \neq 0$ and $\cos$ is continuous: the difficulty has been avoided.
 >
 > **(2)** $\displaystyle\lim_{x\to+\infty} \frac{x}{e^x} = \lim_{x\to+\infty} \frac{1}{e^x} = 0$ (type $\tfrac\infty\infty$; this finally makes rigorous the growth comparison borrowed in §9).
@@ -57,7 +58,7 @@ The idea: differentiating can *simplify* $f$ and $g$, letting us escape the inde
 
 ^ex-30-1
 
-> [!example] Example §30.2: The form zero to the zero
+> [!example] Example §30.2: The Form Zero to the Zero
 > Compute $\lim_{x\to0^+} x^x$ — type $0^0$: since $a^0 = 1$ for $a > 0$ but $0^a = 0$, we don't know right away. The trick: exponentials convert products into the standard forms,
 >
 > $$
@@ -119,10 +120,12 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 
 ^pf-30-2
 
+*Uses:* [[§29 The Mean Value Theorem#^thm-29-2|§29.2]]
+
 > [!remark]- Connections
 > - Computational version: [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|Calc Thm. §28.1]].
 
-> [!proof]+ Proof of L'Hospital's Rule (the case $\tfrac00$ as $x \to a^-$)
+> [!proof]+ Proof of Theorem §30.1 (the case $\tfrac00$ as $x \to a^-$)
 > Assume $f, g \to 0$ as $x \to a^-$, $g' \neq 0$ on some $(a - \delta_0, a)$, and $\tfrac{f'}{g'} \to L$ finite. First, two housekeeping points on $(a-\delta_0, a)$: for $x < x_1$ there, $g(x_1) \neq g(x)$ (otherwise Rolle would give a zero of $g'$ in between); and $g(x) \neq 0$ for $x$ close to $a$ (if $g$ vanished at points arbitrarily close to $a$, Rolle between two such zeros would again contradict $g' \neq 0$).
 >
 > Let $\varepsilon > 0$. Choose $\delta \leq \delta_0$ such that
@@ -147,9 +150,11 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 
 ^pf-30-1
 
+*Uses:* [[§30 L'Hospital's Rule#^thm-30-2|§30.2]], [[§29 The Mean Value Theorem#^thm-29-2|§29.2]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
+
 ## More Indeterminate Forms
 
-> [!example] Example §30.3: One to the infinity
+> [!example] Example §30.3: One to the Infinity
 > Compute $\displaystyle\lim_{x\to\infty} \left( 1 - \frac2x \right)^x$ — type $1^\infty$, undetermined. Transform through the exponential:
 >
 > $$
@@ -168,7 +173,7 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 
 ^ex-30-3
 
-> [!example] Example §30.4: Infinity minus infinity
+> [!example] Example §30.4: Infinity Minus Infinity
 > Compute $\displaystyle\lim_{x\to0} \left( \frac{1}{e^x - 1} - \frac{1}{x} \right)$ — type $\infty - \infty$. Combine over a common denominator to reach $\tfrac00$:
 >
 > $$
@@ -187,7 +192,7 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 
 Sometimes we deal with abstract functions rather than explicit formulas.
 
-> [!example] Example §30.5: Recovering the limit of f from a combination
+> [!example] Example §30.5: Recovering the Limit of f from a Combination
 > Let $f: (c, \infty) \to \mathbb{R}$ be differentiable and suppose $\lim_{x\to\infty} \bigl(f(x) + f'(x)\bigr) = L$. Prove $\lim_{x\to\infty} f(x) = L$.
 >
 > *Proof.* Rewrite with an exponential weight:
@@ -206,7 +211,7 @@ Sometimes we deal with abstract functions rather than explicit formulas.
 
 ^ex-30-5
 
-> [!example] Example §30.6: Another one-to-the-infinity
+> [!example] Example §30.6: Another One-to-the-Infinity
 > $\displaystyle\lim_{x\to\infty}\left(1 - \frac1x\right)^x = e^{-1}$, by the same method as $\left(1-\tfrac2x\right)^x$ in the previous subsection (the exponent $x\log(1-\tfrac1x) \to -1$).
 
 ^ex-30-6

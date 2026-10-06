@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 6
 chapter: 1
@@ -24,7 +25,7 @@ A smart person came up with a way around this: **Dedekind**.
 ^def-6-1
 
 ![[m451-6-1.svg]]
-*The Dedekind cut $S_r$ (blue): all rationals to the left of $r$, with $r$ itself excluded (hollow). Its elements creep up to $r$ without a largest one — property (3) of Proposition 6.1 below — while $\sup S_r = r$.*
+*The Dedekind cut $S_r$ (blue): all rationals to the left of $r$, with $r$ itself excluded (hollow). Its elements creep up to $r$ without a largest one — property (3) of [[§6 Dedekind Cuts#^prop-6-1|Proposition §6.1]] below — while $\sup S_r = r$.*
 
 The important point: $S_r$ is completely determined by subsets and properties of $\mathbb{Q}$ alone. The idea is to *define* all operations and properties of real numbers in terms of these cuts. For this, we need to characterize which subsets of $\mathbb{Q}$ arise as cuts.
 
@@ -52,6 +53,8 @@ The important point: $S_r$ is completely determined by subsets and properties of
 
 ^pf-6-1
 
+*Uses:* [[Archimedean Property|§4.5]], [[§4 The Completeness Axiom#^thm-4-7|§4.7]]
+
 > [!theorem] Proposition §6.2: Structure Transported to Cuts
 > For $r_1, r_2 \in \mathbb{R}$:
 >
@@ -62,6 +65,8 @@ The important point: $S_r$ is completely determined by subsets and properties of
 > So the order and the addition of real numbers can be defined completely in terms of rational numbers.
 
 ^prop-6-2
+
+*The notes state this without proof; both parts are proved in [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13]] (its order and addition steps).*
 
 For the construction to stand on its own, however, there is a logical gap in (ii) as stated: it *presupposes* $\mathbb{R}$ and verifies the formula afterwards. In the genuine construction, one must define the sum of two cuts *before* knowing what real numbers they represent — and prove that the result is again a cut, using only $\mathbb{Q}$. This is the well-definedness of addition:
 
@@ -95,7 +100,9 @@ For the construction to stand on its own, however, there is a logical gap in (ii
 
 ^pf-6-3
 
-> [!remark] Remark: An alternative for downward closure
+*Uses:* [[§6 Dedekind Cuts#^prop-6-1|§6.1]]
+
+> [!remark] Remark: An Alternative for Downward Closure
 > Property (2) can also be proved symmetrically: for $c < a + b$, set $\varepsilon = \tfrac{a+b-c}{2} > 0$ and shave it off both summands, $a' = a - \varepsilon \in A$, $b' = b - \varepsilon \in B$ (downward closure of each factor), so that $c = a' + b' \in A + B$. This $\varepsilon$-splitting is the recurring trick of the whole construction — it reappears in part (c) of the embedding below and in the correct definition of $-A$.
 
 ^rem-6-1
@@ -136,7 +143,9 @@ Recall the logical gap flagged above: the compatibility statements for $S_{r_1},
 
 ^pf-6-4
 
-> [!remark] Remark: Why subtraction is the delicate one
+*Uses:* [[§6 Dedekind Cuts#^prop-6-3|§6.3]]
+
+> [!remark] Remark: Why Subtraction Is the Delicate One
 > One might guess the negation of a cut to be $-A = \{-a \mid a \notin A\}$. This fails property (3) exactly when $\mathbb{Q} \setminus A$ has a *least* element — i.e. when $A = S_r$ with $r$ rational: then $\mathbb{Q}\setminus A = \{q \geq r\}$ has minimum $r$, and the naive set $\{q \leq -r\}$ has the maximum $-r$. The correct definition excludes the boundary:
 >
 > $$
@@ -177,10 +186,10 @@ Recall the logical gap flagged above: the compatibility statements for $S_{r_1},
 
 ^prop-6-5
 
-> [!remark] Remark: The logical role of cuts
+> [!remark] Remark: The Logical Role of Cuts
 > In this course we take the axiomatic approach: $\mathbb{R}$ is *assumed* to be a complete ordered field, and everything is derived from the axioms. Dedekind cuts address a different question — whether such an object *exists* at all. The construction sketches an affirmative answer: starting from $\mathbb{Q}$ only, one defines the set of all cuts, equips it with the order (i) and operations like (ii), and verifies all the axioms, including completeness. So the axioms of §3–§4 are not vacuous.
 
 ^rem-6-3
 
 > [!remark]- Connections
-> - ★ The second standard construction, by classes of rational Cauchy sequences, with full proofs of the field, order and completeness axioms: [[§6★ ℝ from Cauchy Sequences of Rationals]]. Its [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13]] matches the two constructions (order and addition, including Proposition §6.2(ii) and the converse of Proposition §6.1), and [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|Corollary §6★.14]] shows any two complete ordered fields are isomorphic.
+> - ★ The second standard construction, by classes of rational Cauchy sequences, with full proofs of the field, order and completeness axioms: [[§6★ ℝ from Cauchy Sequences of Rationals]]. Its [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13]] matches the two constructions (order and addition, including [[§6 Dedekind Cuts#^prop-6-2|Proposition §6.2]](ii) and the converse of [[§6 Dedekind Cuts#^prop-6-1|Proposition §6.1]]), and [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|Corollary §6★.14]] shows any two complete ordered fields are isomorphic.

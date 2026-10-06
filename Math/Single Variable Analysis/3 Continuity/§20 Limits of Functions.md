@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 20
 chapter: 3
@@ -19,7 +20,7 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 
 ^def-20-1
 
-> [!remark] Remark: The epsilon-delta version
+> [!remark] Remark: The Epsilon-Delta Version
 > For finite $a$ and $L$, equivalently: for every $\varepsilon > 0$ there exists $\delta > 0$ such that for every $x \in S$ with $|x - a| < \delta$ (and, when $a \notin S$ is intended, $x \neq a$ automatically since $f$ is only defined on $S$),
 >
 > $$
@@ -32,11 +33,10 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 
 > [!remark]- Connections
 > - Limits of functions of two variables (punctured δ-ball): [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]].
-> - Computational version: [[§7 The Limit of a Function#^def-7-1|Calc Def. §7.1]], made precise in [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]] (with worked examples).
-> - Computational version: [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]]; at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Calc Def. §11.4]]; infinite limits [[§9 The Precise Definition of a Limit#^def-9-3|Calc Def. §9.3]] (with worked examples).
+> - Computational version: [[§7 The Limit of a Function#^def-7-1|Calc Def. §7.1]], made precise in [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]]; at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Calc Def. §11.4]]; infinite limits [[§9 The Precise Definition of a Limit#^def-9-3|Calc Def. §9.3]] (with worked examples).
 > - Computational version: [[§15 Limits#^def-15-1|342 Def. §15.1]] (the same ε–δ definition for functions of a complex variable, where the deleted neighborhood is a punctured disk, with worked examples).
 
-> [!example] Example §20.1: First computations
+> [!example] Example §20.1: First Computations
 > $S = (0,1)$, $f(x) = \tfrac1x$: then $\lim_{x\to 0^S} f(x) = +\infty$ and $\lim_{x \to 1^S} f(x) = 1$.
 
 ^ex-20-1
@@ -54,6 +54,8 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 > Immediate from the sequential definitions of both sides. This is consistent with the intuition: continuity at $a$ means the values of $f(x)$ approach $f(a)$ as $x \to a$.
 
 ^pf-20-1
+
+*Uses:* [[§20 Limits of Functions#^def-20-1|Def. §20.1]], [[§17 Continuous Functions#^def-17-1|Def. §17.1]]
 
 > [!remark]- Connections
 > - Computational version: [[§10 Continuity#^def-10-1|Calc Def. §10.1]] (with worked examples).
@@ -79,7 +81,7 @@ The notation $\lim_{x\to a^S}$ is a bit inconvenient; in common situations we si
 
 Why do we need one-sided limits?
 
-> [!example] Example §20.2: A step function
+> [!example] Example §20.2: A Step Function
 > Let $f(x) = 1$ for $x > 0$ and $f(x) = 0$ for $x \leq 0$. Is $f$ continuous? No — not at $0$: the sequence $\tfrac1n \to 0$ has $f(\tfrac1n) = 1 \not\to 0 = f(0)$. Here
 >
 > $$
@@ -90,7 +92,7 @@ Why do we need one-sided limits?
 
 ^ex-20-2
 
-> [!example] Example §20.3: The reciprocal at its four ends
+> [!example] Example §20.3: The Reciprocal at Its Four Ends
 > For $f(x) = \tfrac1x$ on $S = \mathbb{R}\setminus\{0\}$:
 >
 > $$
@@ -126,6 +128,8 @@ Why do we need one-sided limits?
 
 ^pf-20-2
 
+*Uses:* [[§20 Limits of Functions#^rem-20-1|§20 Rem. (epsilon-delta version)]]
+
 > [!remark]- Connections
 > - Computational version: [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Calc Thm. §8.5]] (with worked examples).
 
@@ -141,7 +145,7 @@ Why do we need one-sided limits?
 
 These notions can be used to *produce* continuous functions: extend a function to a missing point by its limit there — when the limit exists.
 
-> [!example] Example §20.4: A removable singularity
+> [!example] Example §20.4: A Removable Singularity
 > Let $S = \mathbb{R}\setminus\{0\}$ and $f(x) = \dfrac{\sqrt{1+2x^2} - 1}{x^2}$. Can we define $f(0)$ so that $f$ becomes continuous on $\mathbb{R}$? Compute the limit at $0$ by the conjugate:
 >
 > $$
@@ -155,7 +159,7 @@ These notions can be used to *produce* continuous functions: extend a function t
 
 ^ex-20-4
 
-> [!example] Example §20.5: A jump that cannot be removed
+> [!example] Example §20.5: A Jump That Cannot Be Removed
 > Now $g(x) = \dfrac{\sqrt{1 + 2|x|} - 1}{x}$ on $\mathbb{R}\setminus\{0\}$ — a bit different. The same conjugate computation gives
 >
 > $$
@@ -178,7 +182,7 @@ These notions can be used to *produce* continuous functions: extend a function t
 > [!remark]- Connections
 > - Computational version: [[§8 Convergence of Fourier Series#^def-8-2|341 Def. §8.2]] (jump, removable and worse discontinuities, classified in worked examples); at a jump a Fourier series converges to the midpoint, [[§8 Convergence of Fourier Series#^thm-8-1|341 Thm. §8.1]].
 
-> [!remark] Remark: Worse than a jump
+> [!remark] Remark: Worse than a Jump
 > For $f(x) = \sin\tfrac1x$, $x \neq 0$: not only does $\lim_{x\to0} f(x)$ not exist — the left and right limits do not exist either (the oscillation argument of §17 works from each side). This is much worse than the previous example: the existence of one-sided limits is already a good property of a function.
 
 ^rem-20-3

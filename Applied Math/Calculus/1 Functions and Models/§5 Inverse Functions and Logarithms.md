@@ -256,7 +256,7 @@ The following properties of logarithms come from the Laws of Exponents of [[§4 
 > [!proof]+ Proof
 > *Stewart says only that these follow from the corresponding Laws of Exponents; here is the derivation.* Let $u = \log_b x$ and $v = \log_b y$. By (6), $b^u = x$ and $b^v = y$.
 >
-> 1. By Law 1 of Theorem §4.1, $xy = b^u b^v = b^{u + v}$. By (6), $\log_b(xy) = u + v = \log_b x + \log_b y$.
+> 1. By Law 1 of [[§4 Exponential Functions#^thm-4-1|Theorem §4.1]], $xy = b^u b^v = b^{u + v}$. By (6), $\log_b(xy) = u + v = \log_b x + \log_b y$.
 > 2. By Law 2, $\dfrac{x}{y} = \dfrac{b^u}{b^v} = b^{u - v}$, so $\log_b(x/y) = u - v$.
 > 3. By Law 3, $x^r = (b^u)^r = b^{ur}$, so $\log_b(x^r) = ur = r \log_b x$.
 

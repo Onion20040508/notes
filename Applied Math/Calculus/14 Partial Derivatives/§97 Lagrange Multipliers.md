@@ -166,7 +166,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 > [!example] Example §97.4: Extreme Values from the Exams
 > **(a)** Find the minimum and maximum values of $f(x, y) = e^{xy}$ over the region $D$ given by $x^2 + 4y^2 \le 2$.
 >
-> $D$ is closed and bounded and $f$ is continuous, so both extremes exist (Theorem §96.3).
+> $D$ is closed and bounded and $f$ is continuous, so both extremes exist ([[§96 Maximum and Minimum Values#^thm-96-3|Theorem §96.3]]).
 >
 > **Interior.** $\nabla f = e^{xy}\langle y, x \rangle = \mathbf{0}$ only at $(0, 0)$, where $f = 1$.
 >

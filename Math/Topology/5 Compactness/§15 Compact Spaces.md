@@ -318,22 +318,6 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^thm-15-7
 
-> [!remark] Remark: Why This Theorem is Powerful
-> Normally, showing $f$ is a homeomorphism requires proving $f^{-1}$ is continuous—often tedious. This theorem gives it for free when $X$ is compact and $Y$ is Hausdorff.
->
-> **The key insight:** Compactness of $X$ and Hausdorffness of $Y$ force $f$ to be a closed map:
->
-> $$
-> A \text{ closed in } X \overset{\text{compact}}{\Longrightarrow} A \text{ compact} \overset{f \text{ cts}}{\Longrightarrow} f(A) \text{ compact} \overset{\text{Hausdorff}}{\Longrightarrow} f(A) \text{ closed in } Y
-> $$
->
-> **Applications:**
-> - Proving quotient maps are homeomorphisms (when the quotient is Hausdorff).
-> - Showing that a continuous bijection from $S^1$ to $S^1$ is automatically a homeomorphism.
-> - Verifying that “gluing” constructions yield the expected spaces.
-
-^rem-15-6
-
 > [!proof]+ Proof
 > Since $f$ is a continuous bijection, we only need to show $f^{-1}$ is continuous, i.e., $f$ is an [[§12 Quotient Topology#^def-12-4|open map]] ([[§9 Continuous Functions#^prop-9-2|Proposition §9.2]]), or equivalently, $f$ is a closed map.
 >
@@ -353,6 +337,22 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > - Used to get local homeomorphisms in $p: \mathbb{R} \to S^1$ is a Covering Map ([[§24 Covering Spaces#^thm-24-2|§24.2]]).
 > - 451's case on an interval: a strictly increasing continuous f on [a, b] has a continuous inverse, [[§18 Properties of Continuous Functions#^thm-18-9|451 Thm. §18.9]], proved there with Bolzano–Weierstrass.
 > - One-variable analogue: the inverse of a continuous one-to-one function on an interval is continuous, [[§10 Continuity#^thm-10-5|Calc Thm. §10.5]].
+
+> [!remark] Remark: Why This Theorem is Powerful
+> Normally, showing $f$ is a homeomorphism requires proving $f^{-1}$ is continuous—often tedious. This theorem gives it for free when $X$ is compact and $Y$ is Hausdorff.
+>
+> **The key insight:** Compactness of $X$ and Hausdorffness of $Y$ force $f$ to be a closed map:
+>
+> $$
+> A \text{ closed in } X \overset{\text{compact}}{\Longrightarrow} A \text{ compact} \overset{f \text{ cts}}{\Longrightarrow} f(A) \text{ compact} \overset{\text{Hausdorff}}{\Longrightarrow} f(A) \text{ closed in } Y
+> $$
+>
+> **Applications:**
+> - Proving quotient maps are homeomorphisms (when the quotient is Hausdorff).
+> - Showing that a continuous bijection from $S^1$ to $S^1$ is automatically a homeomorphism.
+> - Verifying that “gluing” constructions yield the expected spaces.
+
+^rem-15-6
 
 > [!theorem] Theorem §15.8: Finite Product of Compact Spaces
 > The product of finitely many compact spaces is compact.
@@ -474,38 +474,14 @@ To prove this, we first establish a key lemma:
 
 ^cor-15-11
 
+*Immediate: $[a, b]$ is compact by [[§15 Compact Spaces#^thm-15-10|Theorem §15.10]], since $\mathbb{R}$ has the l.u.b. property, and the box is a finite product of such intervals ([[§15 Compact Spaces#^thm-15-8|Theorem §15.8]]).*
+
 *Uses:* [[§15 Compact Spaces#^thm-15-10|§15.10]], [[§15 Compact Spaces#^thm-15-8|§15.8]]
 
 > [!theorem] Theorem §15.12: Heine-Borel Theorem for $\mathbb{R}^n$
 > $A \subseteq \mathbb{R}^n$ is compact if and only if $A$ is closed and bounded (with respect to the Euclidean metric $d$ or the square metric $\rho$).
 
 ^thm-15-12
-
-> [!remark] Remark: Why Heine-Borel is Fundamental
-> Heine-Borel characterizes compactness in $\mathbb{R}^n$ using familiar concepts:
->
-> **1. Both conditions are necessary:**
-> - *Not closed $\Rightarrow$ not compact:* $(0,1)$ is bounded but not compact (sequence $1/n$ has no limit in $(0,1)$).
-> - *Not bounded $\Rightarrow$ not compact:* $\mathbb{R}$ is closed but not compact (cover by $(n, n+2)$ has no finite subcover).
->
-> **2. The magic of $\mathbb{R}^n$:** Heine-Borel fails in general metric spaces! Example: $\mathbb{Z}$ with [[§11 Metric Topology#^ex-11-4|discrete metric]] is closed and bounded (diam $\leq 1$) but not compact.
->
-> **3. What makes $\mathbb{R}^n$ special:** The [[§14 Connected Subspaces of ℝ#^def-14-1|least upper bound property]] of $\mathbb{R}$ ensures [[§15 Compact Spaces#^thm-15-10|closed intervals are compact]]. This propagates to boxes via [[§15 Compact Spaces#^thm-15-8|finite products]], then to all closed bounded sets.
-
-^rem-15-8
-
-> [!remark] Remark: Metric Equivalence
-> Recall: $d(x,y) = \sqrt{\sum (x_i - y_i)^2}$ and $\rho(x,y) = \max_i |x_i - y_i|$ ([[§11 Metric Topology#^ex-11-1|Example §11.1]], [[§11 Metric Topology#^ex-11-2|Example §11.2]]).
->
-> These metrics satisfy $\rho(x,y) \leq d(x,y) \leq \sqrt{n} \cdot \rho(x,y)$.
->
-> Thus “bounded w.r.t. $d$” $\Leftrightarrow$ “bounded w.r.t. $\rho$”.
-
-^rem-15-9
-
-> [!remark]- Connections
-> - Same inequality, used there for topologies: [[§11 Metric Topology#^thm-11-2|Euclidean and Square Metrics Induce Same Topology]].
-> - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Equivalence of the Two Distances]].
 
 > [!proof]+ Proof
 > $(\Rightarrow)$ Suppose $A$ is compact.
@@ -535,6 +511,32 @@ To prove this, we first establish a key lemma:
 > [!remark]- Connections
 > - Closed bounded sets are where Stewart's two-variable Extreme Value Theorem applies: [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (with worked examples).
 > - Used in the complex plane for closed bounded regions: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (continuous functions on them are bounded, with maximum modulus attained).
+
+> [!remark] Remark: Why Heine-Borel is Fundamental
+> Heine-Borel characterizes compactness in $\mathbb{R}^n$ using familiar concepts:
+>
+> **1. Both conditions are necessary:**
+> - *Not closed $\Rightarrow$ not compact:* $(0,1)$ is bounded but not compact (sequence $1/n$ has no limit in $(0,1)$).
+> - *Not bounded $\Rightarrow$ not compact:* $\mathbb{R}$ is closed but not compact (cover by $(n, n+2)$ has no finite subcover).
+>
+> **2. The magic of $\mathbb{R}^n$:** Heine-Borel fails in general metric spaces! Example: $\mathbb{Z}$ with [[§11 Metric Topology#^ex-11-4|discrete metric]] is closed and bounded (diam $\leq 1$) but not compact.
+>
+> **3. What makes $\mathbb{R}^n$ special:** The [[§14 Connected Subspaces of ℝ#^def-14-1|least upper bound property]] of $\mathbb{R}$ ensures [[§15 Compact Spaces#^thm-15-10|closed intervals are compact]]. This propagates to boxes via [[§15 Compact Spaces#^thm-15-8|finite products]], then to all closed bounded sets.
+
+^rem-15-8
+
+> [!remark] Remark: Metric Equivalence
+> Recall: $d(x,y) = \sqrt{\sum (x_i - y_i)^2}$ and $\rho(x,y) = \max_i |x_i - y_i|$ ([[§11 Metric Topology#^ex-11-1|Example §11.1]], [[§11 Metric Topology#^ex-11-2|Example §11.2]]).
+>
+> These metrics satisfy $\rho(x,y) \leq d(x,y) \leq \sqrt{n} \cdot \rho(x,y)$.
+>
+> Thus “bounded w.r.t. $d$” $\Leftrightarrow$ “bounded w.r.t. $\rho$”.
+
+^rem-15-9
+
+> [!remark]- Connections
+> - Same inequality, used there for topologies: [[§11 Metric Topology#^thm-11-2|Euclidean and Square Metrics Induce Same Topology]].
+> - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Equivalence of the Two Distances]].
 
 > [!remark] Remark: Filling the Gap: Balls vs. Boxes
 > **Q:** The ball $B_\rho(0, N)$ is not a closed interval. How do we use compactness of $[a,b]$?

@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 3
 chapter: 1
@@ -15,7 +16,7 @@ Recall that $\mathbb{Q}$ is a field: it carries the two operations of addition a
 >
 > 1. Commutativity: $a + b = b + a$ and $ab = ba$.
 >
-> 2. There are two special elements $0, 1 \in F$ with $a + 0 = a$ and $a \cdot 1 = a$.
+> 2. There are two special elements $0 \neq 1$ in $F$ with $a + 0 = a$ and $a \cdot 1 = a$.
 >
 > 3. For each $a$, there is an inverse $-a$ for the operation $+$:    $a + (-a) = 0$.
 >
@@ -32,7 +33,7 @@ Recall that $\mathbb{Q}$ is a field: it carries the two operations of addition a
 
 ^rem-3-1
 
-> [!remark] Remark: Dropping commutativity
+> [!remark] Remark: Dropping Commutativity
 > Can we think of a collection $M$ of elements that fails some of these properties — for example, with $ab \neq ba$? Yes: *matrices*. Non-commutativity of natural operations is important; in physics, the uncertainty principle is precisely a statement about two non-commuting operations.
 
 ^rem-3-2
@@ -113,6 +114,8 @@ So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered fi
 
 ^pf-3-1
 
+*Uses:* [[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]]
+
 > [!remark] Remark
 > The lecture proved (e) by contradiction: if $0 \geq 1$, multiply by any $a > 0$ to get $0 \geq a$ — so *no* element could be positive, which is absurd. The proof above via (d) reaches the same conclusion directly. The remaining proofs are in the book (§3 of Ross); they are all short manipulations of O1–O5 of the same kind as above.
 
@@ -134,7 +137,7 @@ People often expect to order everything — in competitions, in admission to sch
 > [!remark]- Connections
 > - 590 uses the strict form: an order relation, [[§3 Order Topology#^def-3-1|590 Def. §3.1]], which defines the order topology.
 
-> [!example] Example §3.1: The product order on $\mathbb{R}^2$ is partial but not linear
+> [!example] Example §3.1: The Product Order on $\mathbb{R}^2$ Is Partial but Not Linear
 > On the plane $\mathbb{R}^2$, define
 >
 > $$
@@ -145,7 +148,7 @@ People often expect to order everything — in competitions, in admission to sch
 
 ^ex-3-1
 
-> [!example] Example §3.2: The lexicographic order
+> [!example] Example §3.2: The Lexicographic Order
 > We *can* define a linear order on $\mathbb{R}^2$:
 >
 > $$
@@ -161,7 +164,7 @@ People often expect to order everything — in competitions, in admission to sch
 
 Since $\mathbb{C}$ can be identified with $\mathbb{R}^2$, the lexicographic order makes $\mathbb{C}$ a linearly ordered *set*. Nevertheless:
 
-> [!theorem] Proposition §3.2: $\mathbb{C}$ is not an ordered field
+> [!theorem] Proposition §3.2: $\mathbb{C}$ Is Not an Ordered Field
 > $\mathbb{C}$ is a field, but there is no order $\leq$ on $\mathbb{C}$ satisfying O1–O5, i.e. no order compatible with its field operations.
 
 ^prop-3-2
@@ -170,6 +173,8 @@ Since $\mathbb{C}$ can be identified with $\mathbb{R}^2$, the lexicographic orde
 > Suppose such an order existed. By property (d) above, every square is $\geq 0$; in particular $i^2 = -1 \geq 0$. But by (e), $0 < 1$, and by (a), $-1 < 0$. So $-1 \geq 0$ and $-1 < 0$ simultaneously — a contradiction.
 
 ^pf-3-2
+
+*Uses:* [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]]
 
 ## Absolute Value and Distance
 
@@ -216,6 +221,8 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 
 ^pf-3-3
 
+*Uses:* [[§3 The Set ℝ of Real Numbers#^def-3-4|Def. §3.4]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]]
+
 > [!remark] Remark
 > Think about what these two properties mean: they describe how $|\cdot|$ interacts with the two field operations $+$ and $\times$ — sub-additive for $+$ (with equality exactly when $a, b$ have the same sign), and exactly multiplicative for $\times$.
 
@@ -258,3 +265,5 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 > This explains the name *triangle* property: going from $a$ to $c$ directly is never longer than passing through an intermediate point $b$.
 
 ^pf-3-4
+
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§3 The Set ℝ of Real Numbers#^def-3-5|Def. §3.5]]

@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 31
 chapter: 5
@@ -118,6 +119,8 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 ^pf-31-2
 
+*Uses:* [[§29 The Mean Value Theorem#^thm-29-2|§29.2]]
+
 > [!remark]- Connections
 > - Used in PDEs: the $O((\Delta x)^2)$ errors of the central difference quotients, [[§55★ Boundary Value Problems#^prop-55-1|341 Prop. §55.1]].
 > - Complex counterpart: [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (an analytic function equals its Taylor series on every disk of analyticity, with no remainder estimate needed).
@@ -134,7 +137,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 ## Two Instructive Examples
 
-> [!example] Example §31.1: The cosine converges to itself everywhere (HW)
+> [!example] Example §31.1: The Cosine Converges to Itself Everywhere (HW)
 > The derivatives of $\cos$ cycle with period four, so at $0$: $\cos^{(2n)}(0) = (-1)^n$, $\cos^{(2n+1)}(0) = 0$, and the Taylor series is
 >
 > $$
@@ -154,7 +157,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 > [!remark]- Connections
 > - Computational version: [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]; the same estimate for $e^x$, [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]].
 
-> [!example] Example §31.2: The logarithm
+> [!example] Example §31.2: The Logarithm
 > Show that for $x \in [0,1]$, the Taylor series of $f(x) = \log(1+x)$ converges to $\log(1+x)$.
 >
 > Compute derivatives:
@@ -193,7 +196,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 
 ^ex-31-2
 
-> [!example] Example §31.3: A smooth function that is not its Taylor series
+> [!example] Example §31.3: A Smooth Function That Is Not Its Taylor Series
 > We construct $g: \mathbb{R} \to \mathbb{R}$ with derivatives of all orders everywhere, whose Taylor series at $0$ converges for all $x$ (radius $R = \infty$) — but not to $g(x)$. Let
 >
 > $$

@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 1
 chapter: 1
@@ -61,16 +62,18 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 ^pf-1-1
 
+*Uses:* [[§1 The Set ℕ of Natural Numbers#^def-1-1|Def. §1.1]]
+
 > [!remark]- Connections
 > - Elementary version: [[§5 The Induction Principle#^def-5-1|250 Def. §5.1]], where induction itself is the axiom and is shown equivalent to the set form N5 in [[§7 Quantifiers#^def-7-4|250 Def. §7.4]].
 > - Computational version: [[§120 Sigma Notation#^def-120-2|Calc Def. §120.2]] (with worked examples).
 
 > [!remark] Remark
-> When applying induction, it is important to state precisely what $P_n$ is. Many failed induction proofs fail at exactly this point: the statement being carried through the induction is not strong enough (see Example 1.2 below) or the starting point is wrong (see Example 1.3).
+> When applying induction, it is important to state precisely what $P_n$ is. Many failed induction proofs fail at exactly this point: the statement being carried through the induction is not strong enough (see [[§1 The Set ℕ of Natural Numbers#^ex-1-2|Example §1.2]] below) or the starting point is wrong (see [[§1 The Set ℕ of Natural Numbers#^ex-1-3|Example §1.3]]).
 
 ^rem-1-2
 
-> [!example] Example §1.1: Sum of squares
+> [!example] Example §1.1: Sum of Squares
 > Prove by induction that for all $n \in \mathbb{N}$,
 >
 > $$
@@ -120,7 +123,7 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 ^ex-1-1
 
-> [!example] Example §1.2: A two-term recursion: strengthening $P_n$
+> [!example] Example §1.2: A Two-Term Recursion: Strengthening $P_n$
 > Define a sequence $(x_n)$ by
 >
 > $$
@@ -156,12 +159,12 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 ^ex-1-2
 
 > [!remark] Remark
-> The device in Example 1.2 — proving a statement for *all* $k \leq n$ rather than for $n$ alone — is often called **strong induction** (or complete induction). It is not a new axiom: it is ordinary induction applied to the strengthened property $P_n$.
+> The device in [[§1 The Set ℕ of Natural Numbers#^ex-1-2|Example §1.2]] — proving a statement for *all* $k \leq n$ rather than for $n$ alone — is often called **strong induction** (or complete induction). It is not a new axiom: it is ordinary induction applied to the strengthened property $P_n$.
 
 ^rem-1-3
 
 > [!remark]- Connections
-> - Elementary version: the strong induction principle [[§5 The Induction Principle#^thm-5-6|250 Thm. §5.6]], derived there from ordinary induction applied to the strengthened statement, as in Example 1.2.
+> - Elementary version: the strong induction principle [[§5 The Induction Principle#^thm-5-6|250 Thm. §5.6]], derived there from ordinary induction applied to the strengthened statement, as in [[§1 The Set ℕ of Natural Numbers#^ex-1-2|Example §1.2]].
 
 > [!theorem] Theorem §1.2: Well-Ordering Principle
 > Every nonempty subset $S \subseteq \mathbb{N}$ has a least element. Consequently, every nonempty set of integers that is bounded below has a least element.
@@ -177,16 +180,18 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 >
 > **Induction step.** Suppose $P_n$ is true. If $n + 1 \in S$, then every element of $S$ is a natural number different from $1, \ldots, n$, hence $\geq n + 1$; so $n + 1$ would be the least element of $S$. Hence $n + 1 \notin S$, and $P_{n+1}$ is true.
 >
-> By induction (Theorem 1.1, in the strengthened form of the remark above), $P_n$ holds for every $n$, so no natural number lies in $S$: $S = \varnothing$.
+> By induction ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|Theorem §1.1]], in the strengthened form of [[§1 The Set ℕ of Natural Numbers#^rem-1-3|the remark on strong induction]]), $P_n$ holds for every $n$, so no natural number lies in $S$: $S = \varnothing$.
 >
 > For the second statement, let $T \subseteq \mathbb{Z}$ be nonempty with $t \geq b$ for all $t \in T$, where $b \in \mathbb{Z}$. Then $T' = \{t - b + 1 : t \in T\}$ is a nonempty subset of $\mathbb{N}$; if $m$ is its least element, then $m + b - 1$ is the least element of $T$.
 
 ^pf-1-2
 
+*Uses:* [[§1 The Set ℕ of Natural Numbers#^thm-1-1|§1.1]]
+
 > [!remark]- Connections
 > - Elementary version: [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]] (both statements, from strong induction).
 
-> [!example] Example §1.3: Shifting the starting point
+> [!example] Example §1.3: Shifting the Starting Point
 > Decide for which integers $n$ the inequality
 >
 > $$
@@ -195,7 +200,7 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 >
 > holds, and prove the answer by induction.
 >
-> **Checking small cases.** The inequality fails for negative integers (the left side is not an integer $> n^2$ there; e.g. $2^{-1} = \tfrac12 < 1$). For small $n \geq 0$:
+> **Checking small cases.** The inequality fails for negative integers: there $0 < 2^n < 1 \leq n^2$ (e.g. $2^{-1} = \tfrac12 < 1 = (-1)^2$). For small $n \geq 0$:
 >
 > $$
 > \begin{array}{c|c|c|c}

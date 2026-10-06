@@ -231,13 +231,6 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^thm-12-3
 
-> [!remark] Remark: Constant on Fibers
-> “$g$ is constant on each fiber $p^{-1}(\{y\})$” means: if $p(x_1) = p(x_2)$, then $g(x_1) = g(x_2)$.
->
-> This condition is necessary for $f$ to be well-defined. We want to define $f(y) = g(x)$ for any $x$ with $p(x) = y$. But there may be many such $x$'s in the fiber $p^{-1}(\{y\})$. For $f$ to be well-defined, $g$ must give the same value on all of them.
-
-^rem-12-7
-
 > [!proof]+ Proof
 > To define $f: Y \to Z$: for each $y \in Y$, $g(p^{-1}(\{y\})) = \{z_y\}$ is a one-point set (since $g$ is constant on fibers).
 >
@@ -263,6 +256,13 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 > [!remark]- Connections
 > - The same theorem in 591, where it is also shown to characterize the quotient topology: [[§5 Quotient Maps#^thm-5-1|591 Thm. §5.1]], [[§5 Quotient Maps#^cor-5-3|591 Cor. §5.3]].
+
+> [!remark] Remark: Constant on Fibers
+> “$g$ is constant on each fiber $p^{-1}(\{y\})$” means: if $p(x_1) = p(x_2)$, then $g(x_1) = g(x_2)$.
+>
+> This condition is necessary for $f$ to be well-defined. We want to define $f(y) = g(x)$ for any $x$ with $p(x) = y$. But there may be many such $x$'s in the fiber $p^{-1}(\{y\})$. For $f$ to be well-defined, $g$ must give the same value on all of them.
+
+^rem-12-7
 
 > [!theorem] Corollary §12.4: Induced Bijection from Quotient
 > Let $p: X \to X^*$ be a quotient map, where $X^* = \{g^{-1}(\{z\}) \mid z \in Z\}$, where $g: X \to Z$ is surjective continuous. Then the map $g$ induces a continuous bijection $f: X^* \to Z$.

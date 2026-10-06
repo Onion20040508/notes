@@ -1,4 +1,5 @@
 ---
+type: section
 subject: "[[Single Variable Analysis]]"
 section: 9
 chapter: 2
@@ -32,10 +33,12 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 
 ^pf-9-1
 
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§4 The Completeness Axiom#^ex-4-1|Ex. §4.1]]
+
 ![[m451-9-1.svg]]
 *Convergent implies bounded: from $N$ on (with $\varepsilon = 1$) the terms stay in the band $s \pm 1$ (blue), so $|s_n| < |s| + 1$; the finitely many early terms (gray) are handled by the maximum. Here the early term $|s_2|$ (red) is the largest, so it sets $M$, and every term lies between $-M$ and $M$.*
 
-> [!example] Example §9.1: $\sqrt{n}$ diverges
+> [!example] Example §9.1: $\sqrt{n}$ Diverges
 > The sequence $s_n = \sqrt{n}$ is not convergent. Why? It is unbounded: given any $M$, the [[Archimedean Property|Archimedean property]] provides $n > M^2$, and then $\sqrt{n} > M$. By the contrapositive of the theorem, an unbounded sequence cannot converge.
 
 ^ex-9-1
@@ -57,6 +60,8 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 > Let $s = \lim s_n$. If $k = 0$ the sequence is constantly $0$. Otherwise, given $\varepsilon > 0$, choose $N$ with $|s_n - s| < \varepsilon / |k|$ for $n \geq N$; then $|k s_n - k s| = |k| \, |s_n - s| < \varepsilon$.
 
 ^pf-9-2
+
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]]
 
 > [!remark]- Connections
 > - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
@@ -91,7 +96,7 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 > = |s_n - s|\,|t_n| + |t_n - t|\,|s|.
 > $$
 >
-> If both summands are $< \varepsilon/2$, we are done. How? Since $(t_n)$ is convergent, it is *bounded* (Theorem 9.1): there exists $M > 0$ with $|t_n| \leq M$ for all $n$; enlarging $M$ if necessary, we may also assume $|s| \leq M$. Then
+> If both summands are $< \varepsilon/2$, we are done. How? Since $(t_n)$ is convergent, it is *bounded* ([[§9 Limit Theorems for Sequences#^thm-9-1|Theorem §9.1]]): there exists $M > 0$ with $|t_n| \leq M$ for all $n$; enlarging $M$ if necessary, we may also assume $|s| \leq M$. Then
 >
 > $$
 > |s_n - s|\,|t_n| \leq M |s_n - s|, \qquad |t_n - t|\,|s| \leq M |t_n - t|.
@@ -110,6 +115,8 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 > $$
 
 ^pf-9-3
+
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
 
 > [!remark]- Connections
 > - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
@@ -153,6 +160,8 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 
 ^pf-9-4
 
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§8 A Discussion About Proofs#^ex-8-9|Ex. §8.9]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+
 > [!remark]- Connections
 > - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
 
@@ -168,7 +177,7 @@ An order-theoretic companion to the arithmetic rules — invoked constantly in t
 ^prop-9-5
 
 > [!proof]+ Proof
-> Assume for contradiction $s > t$, and set $\varepsilon = \tfrac{s-t}{2} > 0$. By the difference rule, $t_n - s_n \to t - s$, so there is $N_1$ such that for $n > N_1$,
+> Assume for contradiction $s > t$, and set $\varepsilon = \tfrac{s-t}{2} > 0$. By the difference rule ([[§9 Limit Theorems for Sequences#^thm-9-2|Theorem §9.2]] with $k = -1$, and [[§9 Limit Theorems for Sequences#^thm-9-3|Theorem §9.3]]), $t_n - s_n \to t - s$, so there is $N_1$ such that for $n > N_1$,
 >
 > $$
 > |(t_n - s_n) - (t - s)| < \varepsilon, \qquad \text{in particular} \qquad t_n - s_n < (t - s) + \frac{s-t}{2} = \frac{t-s}{2} < 0.
@@ -177,6 +186,8 @@ An order-theoretic companion to the arithmetic rules — invoked constantly in t
 > But for $n > \max\{N_0, N_1\}$ the hypothesis gives $t_n - s_n \geq 0$ — contradiction. Hence $s \leq t$.
 
 ^pf-9-5
+
+*Uses:* [[§9 Limit Theorems for Sequences#^thm-9-2|§9.2]], [[§9 Limit Theorems for Sequences#^thm-9-3|§9.3]]
 
 > [!remark]- Connections
 > - Computational version for limits of functions: [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|Calc Thm. §8.6]].
@@ -263,7 +274,7 @@ To apply the theorems, we need a stock of basic limits.
 
 ^cor-9-6
 
-> [!example] Example §9.5: $a^{1/n} \to 1$ for any $a > 0$
+> [!example] Example §9.5: $a^{1/n} \to 1$ for Any $a > 0$
 > Why is this true? First observe the pattern experimentally. If $a \geq 1$: $a^{1/2} \geq 1$ but smaller than $a$; $a^{1/3} \geq 1$ but smaller than $a^{1/2}$ — the sequence decreases toward $1$ from above. If $a \leq 1$, symmetrically, it increases toward $1$ from below.
 >
 > *Proof.* **Case (i): $a \geq 1$.** When $n > a$ (Archimedean), $a^{1/n} < n^{1/n}$; and clearly $1 \leq a^{1/n}$. So we have the squeezing
@@ -282,7 +293,7 @@ To apply the theorems, we need a stock of basic limits.
 
 ^ex-9-5
 
-> [!example] Example §9.6: Finding the limit of a recursion
+> [!example] Example §9.6: Finding the Limit of a Recursion
 > Let $t_1 = 1$ and $t_{n+1} = \dfrac{t_n^2 + 2}{2 t_n}$. *Assuming* $(t_n)$ is convergent, find $t = \lim_{n\to\infty} t_n$.
 >
 > Rewrite the recursion as $t_{n+1} \cdot (2 t_n) = t_n^2 + 2$. Both sides are convergent sequences ($\lim t_{n+1} = \lim t_n = t$, as the shifted sequence has the same limit), so applying the product and sum limit theorems,
@@ -298,7 +309,7 @@ To apply the theorems, we need a stock of basic limits.
 > [!remark]- Connections
 > - Worked examples: this recursion is Newton's method, [[§32 Newton's Method#^def-32-1|Calc Def. §32.1]].
 
-> [!example] Example §9.7: Limit theorems prove non-existence too
+> [!example] Example §9.7: Limit Theorems Prove Non-Existence Too
 > Let $x_1 = 1$ and $x_{n+1} = 3 x_n^2$ for $n \geq 1$.
 >
 > **(a)** If $a = \lim x_n$ exists, prove $a = \tfrac13$ or $a = 0$. Note $\lim x_{n+1} = \lim x_n = a$; taking limits in the recursion (product theorem) gives
@@ -313,7 +324,7 @@ To apply the theorems, we need a stock of basic limits.
 
 ## Divergence to $\pm\infty$
 
-Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We now define the related notions $x_n \to +\infty$ and $x_n \to -\infty$. Compare two examples: $s_n = n$ and $t_n = (-1)^n n$. Both are divergent (both are unbounded — Theorem 9.1). But there is a difference: $s_n$ still has *some* convergence behavior — it goes steadily up — while $t_n$ jumps between $\pm\infty$ directions.
+Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We now define the related notions $x_n \to +\infty$ and $x_n \to -\infty$. Compare two examples: $s_n = n$ and $t_n = (-1)^n n$. Both are divergent (both are unbounded — [[§9 Limit Theorems for Sequences#^thm-9-1|Theorem §9.1]]). But there is a difference: $s_n$ still has *some* convergence behavior — it goes steadily up — while $t_n$ jumps between $\pm\infty$ directions.
 
 > [!definition] Definition §9.1: Divergence to Infinity
 > We say $s_n$ **diverges to $+\infty$**, written $s_n \to +\infty$ or $\lim_{n\to\infty} s_n = +\infty$, if for any positive number $M$ (usually large), there exists $N$ such that for all $n > N$,
@@ -329,7 +340,7 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 > [!remark]- Connections
 > - Computational version: [[§69 Sequences#^def-69-4|Calc Def. §69.4]] (with worked examples).
 
-> [!example] Example §9.8: Basic examples
+> [!example] Example §9.8: Basic Examples
 > $s_n = n^2 \to +\infty$ and $s_n = 3^{n-1} \to +\infty$ (given $M$, take $N > \sqrt{M}$, resp. use $3^{n-1} \geq n$ for $n \geq 1$, provable by induction). Meanwhile $t_n = (-1)^n n$ diverges but tends to neither $+\infty$ nor $-\infty$.
 
 ^ex-9-8
@@ -343,6 +354,8 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 > Given $M$, take $N$ with $s_n > M$ for $n > N$; then $t_n \geq s_n > M$ for $n > N$. (The same proof gives the *eventual* version: it suffices that $t_n \geq s_n$ for $n > N_0$ — replace $N$ by $\max\{N, N_0\}$. Similarly, $t_n \to -\infty$ and $s_n \leq t_n$ eventually force $s_n \to -\infty$. Both refinements were HW.)
 
 ^pf-9-7
+
+*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]]
 
 > [!theorem] Proposition §9.8: Adding a Sequence Bounded Below (HW)
 > If $s_n \to +\infty$ and $\inf\{t_n \mid n \in \mathbb{N}\} > -\infty$, then
@@ -362,11 +375,13 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 > s_n + t_n \geq s_n + t_0 > (M - t_0) + t_0 = M.
 > $$
 >
-> For the particular cases, only $\inf t_n > -\infty$ must be checked: a bounded sequence satisfies it directly; a convergent one is bounded (§9); and if $t_n \to +\infty$, then all but finitely many terms exceed $0$, and a finite set of terms is bounded. (Compare the forbidden $(+\infty) - (+\infty)$ of §5: a lower bound on the perturbation is exactly what rules the bad case out.)
+> For the particular cases, only $\inf t_n > -\infty$ must be checked: a bounded sequence satisfies it directly; a convergent one is bounded ([[§9 Limit Theorems for Sequences#^thm-9-1|Theorem §9.1]]); and if $t_n \to +\infty$, then all but finitely many terms exceed $0$, and a finite set of terms is bounded. (Compare the forbidden $(+\infty) - (+\infty)$ of §5: a lower bound on the perturbation is exactly what rules the bad case out.)
 
 ^pf-9-8
 
-> [!example] Example §9.9: The recursion again
+*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
+
+> [!example] Example §9.9: The Recursion Again
 > The sequence $x_1 = 1$, $x_{n+1} = 3 x_n^2$ diverges to $+\infty$. Compute: $x_2 = 3$, $x_3 = 3 x_2^2 = 27 > 3^2$. *Claim:* $x_n \geq 3^{n-1}$, by induction: true for $n = 1$; if $x_n \geq 3^{n-1}$, then
 >
 > $$
@@ -377,7 +392,7 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 
 ^ex-9-9
 
-> [!example] Example §9.10: Complete classification of the geometric sequence
+> [!example] Example §9.10: Complete Classification of the Geometric Sequence
 > For any $a \in \mathbb{R}$:
 >
 > 1. if $|a| < 1$, then $\lim_{n\to\infty} a^n = 0$;
@@ -388,7 +403,7 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 >
 > 4. if $a \leq -1$, then $\lim_{n\to\infty} a^n$ does not exist (not even as $\pm\infty$).
 >
-> *Proofs.* (2) is clear. (1) By the Squeeze Theorem: $-|a|^n \leq a^n \leq |a|^n$, and $|a|^n \to 0$ (proved in the previous subsection), hence $-|a|^n \to 0$ too. (3) Check by definition: write $a = 1 + b$, $b > 0$; then $a^n \geq 1 + nb > nb \to +\infty$, and apply the squeezing lemma. (4) For $a = -1$ this is the example of §8. For $a < -1$: the terms satisfy $|a^n| = |a|^n \geq 1$ and alternate in sign, so by the same even/odd-subsequence argument as for $(-1)^n$, no finite limit exists; and neither $a^n \to +\infty$ nor $a^n \to -\infty$, since arbitrarily late terms are negative (resp. positive).
+> *Proofs.* (2) is clear. (1) By the Squeeze Theorem: $-|a|^n \leq a^n \leq |a|^n$, and $|a|^n \to 0$ ([[§9 Limit Theorems for Sequences#^ex-9-3|Example §9.3]]), hence $-|a|^n \to 0$ too. (3) Check by definition: write $a = 1 + b$, $b > 0$; then $a^n \geq 1 + nb > nb \to +\infty$, and apply the squeezing lemma. (4) For $a = -1$ this is [[§8 A Discussion About Proofs#^ex-8-6|Example §8.6]]. For $a < -1$: the terms satisfy $|a^n| = |a|^n \geq 1$ and alternate in sign, so by the same even/odd-subsequence argument as for $(-1)^n$, no finite limit exists; and neither $a^n \to +\infty$ nor $a^n \to -\infty$, since arbitrarily late terms are negative (resp. positive).
 
 ^ex-9-10
 
@@ -439,7 +454,9 @@ A simple criterion for convergence and divergence:
 
 ^pf-9-9
 
-> [!example] Example §9.11: Powers versus exponentials
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§8 A Discussion About Proofs#^ex-8-5|Ex. §8.5]], [[§9 Limit Theorems for Sequences#^ex-9-10|Ex. §9.10]], [[§9 Limit Theorems for Sequences#^lem-9-7|§9.7]], [[Squeeze Theorem|§8.1]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
+
+> [!example] Example §9.11: Powers versus Exponentials
 > Let $a \in \mathbb{R}$ and $p \in \mathbb{R}$. Then:
 >
 > 1. if $|a| < 1$: $\lim_{n\to\infty} \dfrac{a^n}{n^p} = 0$;
@@ -448,7 +465,7 @@ A simple criterion for convergence and divergence:
 >
 > 3. if $a < -1$: $\lim_{n\to\infty} \dfrac{a^n}{n^p}$ does not exist.
 >
-> For (1): if $p \geq 0$, compare $|a^n / n^p| \leq |a|^n \to 0$; if $p < 0$, apply the ratio test:
+> For (1): if $p \geq 0$, compare $|a^n / n^p| \leq |a|^n \to 0$; if $p < 0$ (and $a \neq 0$; for $a = 0$ every term is $0$), apply the ratio test:
 >
 > $$
 > \left| \frac{s_{n+1}}{s_n} \right| = |a| \left( \frac{n}{n+1} \right)^p \longrightarrow |a| < 1.
@@ -458,7 +475,7 @@ A simple criterion for convergence and divergence:
 
 ^ex-9-11
 
-> [!example] Example §9.12: Factorials beat exponentials
+> [!example] Example §9.12: Factorials Beat Exponentials
 > For all $a \in \mathbb{R}$: $\displaystyle\lim_{n\to\infty} \frac{a^n}{n!} = 0$. Use the ratio test (for $a \neq 0$):
 >
 > $$
@@ -467,7 +484,7 @@ A simple criterion for convergence and divergence:
 
 ^ex-9-12
 
-> [!remark] Remark: A scale of growth rates
+> [!remark] Remark: A Scale of Growth Rates
 > We have met different rates of growth, each of a strictly higher order than the previous:
 >
 > $$
