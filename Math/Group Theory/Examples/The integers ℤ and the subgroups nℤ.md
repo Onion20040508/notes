@@ -22,7 +22,7 @@ The additive group $(\mathbb{Z}, +)$, the infinite cyclic group, and its subgrou
 
 ## Chapter by chapter
 
-Revisit parts for $\mathbb{Z}$, chapter by chapter: [[§5 A Zoo of Subgroups#ℤ and nℤ|Chapter 1]] · [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ and nℤ|Chapter 4]] · [[§44 S₃, S₄, A₄ and A₅#ℤ and nℤ|Chapter 8]].
+Revisit parts for $\mathbb{Z}$, chapter by chapter: [[§5 A Zoo of Subgroups#ℤ and nℤ|Chapter 1]] · [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ and nℤ|Chapter 4]] · [[§45 S₃, S₄, A₄ and A₅#ℤ and nℤ|Chapter 8]].
 
 ## $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$ are groups under addition
 ![[§3 Basic Examples of Groups#^def-3-1]]

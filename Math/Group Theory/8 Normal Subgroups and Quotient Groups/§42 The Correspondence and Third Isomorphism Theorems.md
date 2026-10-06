@@ -109,4 +109,4 @@ tags: [group-theory, math493]
 
 ^rem-42-3
 
-[[§44 S₃, S₄, A₄ and A₅#^ex-44-2|Example §44.2]], in the $S_4$ part of [[§44 S₃, S₄, A₄ and A₅|§44]], lists the six subgroups of $S_4$ containing $V$.
+[[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Example §45.2]], in the $S_4$ part of [[§45 S₃, S₄, A₄ and A₅|§45]], lists the six subgroups of $S_4$ containing $V$.

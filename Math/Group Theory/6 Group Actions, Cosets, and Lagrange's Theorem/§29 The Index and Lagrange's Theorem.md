@@ -183,3 +183,26 @@ tags: [group-theory, math493]
 > For each prime $p$ there is exactly one group of order $p$ up to isomorphism. This is the first complete classification in these notes that covers infinitely many orders: contrast order $4$, where there are two groups ($\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group $\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, distinguished in [[§16 Isomorphisms#^prop-16-8|§16.8]]), and order $6$, where there are two ($\mathbb{Z}/6\mathbb{Z}$ and $S_3$, distinguished by commutativity). The proof also shows that in a group of prime order, *every* non-identity element is a generator — so such a group has $p - 1$ generators.
 
 ^rem-29-3
+
+*Problem Set 5, Problem 1.*
+
+> [!theorem] Proposition §29.9: Index of an Intersection
+> Let $H \leq G$ with $[G : H]$ finite, let $A \leq G$, and let $B = A \cap H$. Then $[A : B] \leq [G : H]$.
+>
+> *Source: PS 5.1(1)*
+
+^prop-29-9
+
+> [!proof]+ Proof
+> Define $\varphi: A/B \to G/H$ by $\varphi(aB) = aH$. *Well defined:* if $aB = a'B$, then $a = a'b_0$ with $b_0 \in B \subseteq H$, so $aH = a'b_0H = a'H$. *Injective:* if $aH = a'H$, then $h := a'^{-1}a \in H$, and $h \in A$ by closure of $A$; so $h \in A \cap H = B$ and $aB = a'hB = a'B$. Hence $A/B$ injects into the finite set $G/H$, and $[A : B] = |A/B| \leq |G/H| = [G : H]$.
+
+^pf-29-9
+
+*Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]
+
+> [!example] Example §29.2: The Index Need Not Divide
+> In general $[A : A \cap H]$ need not divide $[G : H]$. In $S_3$ take $H = \{e, (1\,2)\}$ and $A = \{e, (1\,3)\}$. Then $A \cap H = \{e\}$, so $[A : A \cap H] = 2$, while $[S_3 : H] = 3$, with cosets $H$, $(1\,3)H = \{(1\,3), (1\,2\,3)\}$, $(2\,3)H = \{(2\,3), (1\,3\,2)\}$. When $H$ is normal, divisibility does hold: Index of an Intersection, Normal Case ([[§41 The First and Second Isomorphism Theorems#^cor-41-8|Corollary §41.8]]).
+>
+> *Source: PS 5.1(2)*
+
+^ex-29-2

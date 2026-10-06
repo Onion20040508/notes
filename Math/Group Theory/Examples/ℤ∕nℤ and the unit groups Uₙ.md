@@ -47,7 +47,7 @@ The cyclic group $\mathbb{Z}/n\mathbb{Z}$ of residue classes modulo $n$ under ad
 
 ## Chapter by chapter
 
-Revisit parts for $\mathbb{Z}/n\mathbb{Z}$ and $U_n$, chapter by chapter: [[§5 A Zoo of Subgroups#ℤ∕nℤ and Uₙ|Chapter 1]] · [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ∕nℤ and Uₙ|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ∕nℤ and Uₙ|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ∕nℤ and Uₙ|Chapter 6]] · [[§44 S₃, S₄, A₄ and A₅#ℤ∕nℤ and Uₙ|Chapter 8]].
+Revisit parts for $\mathbb{Z}/n\mathbb{Z}$ and $U_n$, chapter by chapter: [[§5 A Zoo of Subgroups#ℤ∕nℤ and Uₙ|Chapter 1]] · [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ∕nℤ and Uₙ|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ∕nℤ and Uₙ|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ∕nℤ and Uₙ|Chapter 6]] · [[§45 S₃, S₄, A₄ and A₅#ℤ∕nℤ and Uₙ|Chapter 8]].
 
 ## $(\mathbb{Z}/n\mathbb{Z}, +)$ is a group; the nonzero classes form a group under multiplication iff $n$ is prime
 ![[§3 Basic Examples of Groups#^ex-3-1]]

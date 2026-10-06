@@ -20,12 +20,12 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 - Why the simplicity proof needs $n \geq 5$: $V$ is normal in $A_4$ ([[§43 Simple Groups#^rem-43-7|§43]])
 - $A_4$ is the exception among the $A_n$ with $n \geq 3$: it is not simple ([[§43 Simple Groups#^cor-43-11|§43]])
 - $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
-- $S_4/V \cong S_3$ by the Second Isomorphism Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-1|§44]])
-- The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-2|§44]])
+- $S_4/V \cong S_3$ by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
+- The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45]])
 
 ## Chapter by chapter
 
-Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group V|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§44 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group V|Chapter 8]].
+Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group V|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group V|Chapter 8]].
 
 ## $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$
 ![[§16 Isomorphisms#^prop-16-3]]
@@ -70,7 +70,7 @@ Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups
 ![[§43 Simple Groups#^ex-43-3]]
 
 ## $S_4/V \cong S_3$ by the Second Isomorphism Theorem
-![[§44 S₃, S₄, A₄ and A₅#^ex-44-1]]
+![[§45 S₃, S₄, A₄ and A₅#^ex-45-1]]
 
 ## The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem
-![[§44 S₃, S₄, A₄ and A₅#^ex-44-2]]
+![[§45 S₃, S₄, A₄ and A₅#^ex-45-2]]

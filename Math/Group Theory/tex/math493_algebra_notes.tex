@@ -2983,6 +2983,20 @@ By Lagrange, a subgroup has order dividing $p$, hence $1$ or $p$; the first give
 \begin{rembox}[{A Classification, for Once}]\label{rem:classification-once}
 For each prime $p$ there is exactly one group of order $p$ up to isomorphism. This is the first complete classification in these notes that covers infinitely many orders: contrast order $4$, where there are two groups ($\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group $\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, distinguished in \ref{sec:isos}), and order $6$, where there are two ($\mathbb{Z}/6\mathbb{Z}$ and $S_3$, distinguished by commutativity). The proof also shows that in a group of prime order, \emph{every} non-identity element is a generator --- so such a group has $p - 1$ generators.
 \end{rembox}
+\textit{Problem Set 5, Problem 1.}
+
+\begin{propbox}[{Index of an Intersection (PS 5.1(1))}]\label{prop:index-intersection}
+Let $H \leq G$ with $[G : H]$ finite, let $A \leq G$, and let $B = A \cap H$. Then $[A : B] \leq [G : H]$.
+\end{propbox}
+
+\begin{proof}
+Define $\varphi: A/B \to G/H$ by $\varphi(aB) = aH$. \emph{Well defined:} if $aB = a'B$, then $a = a'b_0$ with $b_0 \in B \subseteq H$, so $aH = a'b_0H = a'H$. \emph{Injective:} if $aH = a'H$, then $h := a'^{-1}a \in H$, and $h \in A$ by closure of $A$; so $h \in A \cap H = B$ and $aB = a'hB = a'B$. Hence $A/B$ injects into the finite set $G/H$, and $[A : B] = |A/B| \leq |G/H| = [G : H]$.
+\end{proof}
+
+\begin{exbox}[{The Index Need Not Divide (PS 5.1(2))}]\label{ex:index-need-not-divide}
+In general $[A : A \cap H]$ need not divide $[G : H]$. In $S_3$ take $H = \{e, (1\,2)\}$ and $A = \{e, (1\,3)\}$. Then $A \cap H = \{e\}$, so $[A : A \cap H] = 2$, while $[S_3 : H] = 3$, with cosets $H$, $(1\,3)H = \{(1\,3), (1\,2\,3)\}$, $(2\,3)H = \{(2\,3), (1\,3\,2)\}$. When $H$ is normal, divisibility does hold: Index of an Intersection, Normal Case (Corollary~\ref{cor:index-intersection-normal}).
+\end{exbox}
+
 
 \section{Orbit--Stabilizer}\label{sec:orbit-stabilizer}
 
@@ -3422,7 +3436,7 @@ The direction ($\supseteq$) needed the eigenvalues to be \emph{distinct}, which 
 \textit{Reference: Pinter Ch.\ 13, Ex.\ I; Ch.\ 15, Ex.\ G (the class equation).}
 
 \begin{defbox}[{Centralizer}]\label{def:centralizer}
-For $g$ in a group $G$, the \textbf{centralizer} of $g$ is $C_G(g) := \{h \in G : hg = gh\}$, the set of elements commuting with $g$. (Problem Set 3 writes $Z(g)$; these notes reserve $Z(G)$ for the center.)
+For $g$ in a group $G$, the \textbf{centralizer} of $g$ is $C_G(g) := \{h \in G : hg = gh\}$, the set of elements commuting with $g$. (Problem Set 3 writes $Z(g)$ and Problem Set 5 writes $Z_G(g)$; these notes reserve $Z(G)$ for the center.)
 \end{defbox}
 
 \begin{propbox}[The Conjugation Action]\label{prop:conjugation-action}
@@ -4076,6 +4090,14 @@ Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G
 
 Example~\ref{ex:gl2-plus-scalars}, in the $GL_n$ part of \ref{sec:rev-ch8}, applies the theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalar matrices.
 
+\begin{corbox}[{Index of an Intersection, Normal Case (not from class)}]\label{cor:index-intersection-normal}
+Let $H \trianglelefteq G$ with $[G : H]$ finite, and let $A \leq G$. Then $[A : A \cap H]$ divides $[G : H]$.
+\end{corbox}
+
+\begin{proof}
+By the Second Isomorphism Theorem (Theorem~\ref{thm:second-isomorphism-theorem}), $A/(A \cap H) \cong AH/H$, and $AH/H = \pi(A)$ is a subgroup of the finite group $G/H$. By Lagrange (Theorem~\ref{thm:lagrange}) in $G/H$, $[A : A \cap H] = |AH/H|$ divides $|G/H| = [G : H]$. (Compare Proposition~\ref{prop:index-intersection} and Example~\ref{ex:index-need-not-divide} (PS 5.1), where $H$ is not normal and divisibility fails.)
+\end{proof}
+
 % ============================================================================
 % SECTION: THE CORRESPONDENCE AND THIRD ISOMORPHISM THEOREMS (Lecture of Fri Oct 2; Lecture and Worksheet 8, Mon Oct 5)
 % ============================================================================
@@ -4384,6 +4406,60 @@ $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$. Neither is 
 \begin{rembox}[{About the Proof}]\label{rem:about-proof}
 The proof that $PSL_n(F)$ is simple has many good ideas but is too long to be a worksheet problem. After the cyclic groups $C_p$ and the alternating groups $A_n$ ($n \geq 5$), the $PSL_n(F)$ are the most important simple groups.
 \end{rembox}
+% ============================================================================
+% SECTION: CONJUGACY IN A NORMAL SUBGROUP (Problem Set 5, Problem 2)
+% ============================================================================
+
+\section{Conjugacy in a Normal Subgroup}\label{sec:normal-conjugacy}
+
+\textit{Source: Problem Set 5, Problem 2. PS 5 writes $Z_G(g)$ for the centralizer $C_G(g)$ (Definition~\ref{def:centralizer}).}
+
+Two elements of a normal subgroup $N$ that are conjugate in $G$ need not be conjugate in $N$: conjugating within $N$ allows fewer conjugators. The criterion below says exactly when they are, and explains how a conjugacy class of $S_5$ splits in $A_5$.
+
+\begin{propbox}[{Conjugacy Relative to a Normal Subgroup (PS 5.2(1))}]\label{prop:conjugacy-normal-subgroup}
+Let $N \trianglelefteq G$, $g \in N$ and $h \in G$, so that $g$ and $hgh^{-1}$ both lie in $N$ and are conjugate in $G$. Then $hgh^{-1}$ is conjugate to $g$ \emph{in $N$} (i.e.\ $hgh^{-1} = ngn^{-1}$ for some $n \in N$) if and only if $h \in C_G(g)N$.
+\end{propbox}
+
+\begin{proof}
+($\Rightarrow$) If $hgh^{-1} = ngn^{-1}$ with $n \in N$, then $z := n^{-1}h$ satisfies $zgz^{-1} = n^{-1}(hgh^{-1})n = g$, so $z \in C_G(g)$. Then $h = nz = z\,(z^{-1}nz)$ with $z^{-1}nz \in N$ by normality, so $h \in C_G(g)N$.
+
+($\Leftarrow$) If $h = zn'$ with $z \in C_G(g)$ and $n' \in N$, put $n'' = zn'z^{-1} \in N$. Since $zgz^{-1} = g$,
+\[ hgh^{-1} = zn'gn'^{-1}z^{-1} = (zn'z^{-1})(zgz^{-1})(zn'^{-1}z^{-1}) = n''\,g\,n''^{-1}. \]
+\end{proof}
+
+\begin{propbox}[{Two Pairs of Elements of $A_5$ (PS 5.2(2))}]\label{prop:two-pairs-a5}
+\begin{enumerate}
+    \item $(1\,2\,3)$ and $(1\,3\,2)$ are conjugate in $A_5$.
+    \item $C_{S_5}\big((1\,2\,3\,4\,5)\big) = \langle (1\,2\,3\,4\,5) \rangle$, and $(1\,2\,3\,4\,5)$ and $(1\,2\,3\,5\,4)$ are \emph{not} conjugate in $A_5$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+Apply the criterion (Proposition~\ref{prop:conjugacy-normal-subgroup}) with $G = S_5$ and $N = A_5$.
+
+\textbf{(1)} Let $g = (1\,2\,3)$ and $h = (1\,2)$. By Conjugation Relabels the Entries (Lemma~\ref{lem:conjugation-relabels-entries}), $hgh^{-1} = (2\,1\,3) = (1\,3\,2)$. Now $z = (4\,5)$ is disjoint from $g$, so $z \in C_{S_5}(g)$, and $h = (4\,5)\cdot\big((4\,5)(1\,2)\big)$ with $(4\,5)(1\,2) \in A_5$. So $h \in C_{S_5}(g)A_5$, and $(1\,3\,2)$ is conjugate to $(1\,2\,3)$ in $A_5$ (explicitly, by $(1\,2)(4\,5)$).
+
+\textbf{(2)} Let $g = (1\,2\,3\,4\,5)$. Powers of $g$ commute with $g$. Conversely, if $hgh^{-1} = g$, then by relabelling
+\[ \big(h(1)\ h(2)\ h(3)\ h(4)\ h(5)\big) = (1\,2\,3\,4\,5); \]
+reading points mod $5$, the left side sends $h(k) \mapsto h(k+1)$ and the right side sends $h(k) \mapsto h(k) + 1$, so $h(k+1) = h(k) + 1$ for all $k$, and $h = g^{h(1) - 1}$. Thus $C_{S_5}(g) = \langle g \rangle$. A $5$-cycle is even, being a product of four transpositions, so $C_{S_5}(g) \subseteq A_5$ and $C_{S_5}(g)A_5 = A_5$. Now $h = (4\,5)$ gives $hgh^{-1} = (1\,2\,3\,5\,4)$, and $h$ is odd, so $h \notin C_{S_5}(g)A_5$: the two $5$-cycles are not conjugate in $A_5$.
+\end{proof}
+
+\begin{exbox}[{The Conjugacy Classes of $A_5$, Explained (not from class)}]\label{ex:conjugacy-classes-a5-explained}
+The criterion explains the class table of WS 7.4 ($A_5$ Is Simple, Proposition~\ref{prop:a5-simple}). Fix the odd permutation $\tau = (4\,5)$. For $g \in A_5$ with $S_5$-class $K$, every element of $K$ is $hgh^{-1}$ with $h$ even or $h$ odd; the even $h$ give the $A_5$-class of $g$, and the odd $h$ give the $A_5$-class of $\tau g\tau^{-1}$ (since $h = (h\tau)\tau$ with $h\tau$ even). So $K$ is one $A_5$-class if $C_{S_5}(g)$ contains an odd permutation, so that $C_{S_5}(g)A_5 = S_5$, and otherwise splits into two $A_5$-classes, swapped by $x \mapsto \tau x \tau^{-1}$, of size $|K|/2$ each. For the even cycle types of $S_5$:
+\begin{itemize}[nosep]
+    \item $3$-cycles: $|K| = \binom{5}{3} \cdot 2 = 20$, and $(4\,5)$ centralizes $(1\,2\,3)$: one class of size $20$;
+    \item double transpositions: $|K| = 5 \cdot 3 = 15$, and $(1\,2)$ centralizes $(1\,2)(3\,4)$: one class of size $15$;
+    \item $5$-cycles: $|K| = 5!/5 = 24$, and $C_{S_5}(g) = \langle g \rangle \subseteq A_5$: two classes of size $12$.
+\end{itemize}
+With the identity this gives $1 + 20 + 15 + 12 + 12 = 60$, the worksheet's table.
+\end{exbox}
+
+\begin{exbox}[{Rotations by $\pm 90^\circ$ (PS 5.2(3))}]\label{ex:rotations-90}
+$A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ and $B = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ are conjugate in $GL_2(\mathbb{R})$ but not in $SL_2(\mathbb{R})$. With $h = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ ($h^{-1} = h$, $\det h = -1$) one computes $hAh^{-1} = B$. Writing $z = \begin{pmatrix} a & c \\ b & d \end{pmatrix}$, the equation $zA = Az$ reads $\begin{pmatrix} -c & a \\ -d & b \end{pmatrix} = \begin{pmatrix} b & d \\ -a & -c \end{pmatrix}$, i.e.\ $b = -c$ and $a = d$; so
+\[ C_{GL_2(\mathbb{R})}(A) = \left\{ \begin{pmatrix} a & -b \\ b & a \end{pmatrix} : (a, b) \neq (0, 0) \right\}, \]
+all of determinant $a^2 + b^2 > 0$. Hence every element of $C_{GL_2(\mathbb{R})}(A)\,SL_2(\mathbb{R})$ has positive determinant, $h$ is not among them, and by the criterion (Proposition~\ref{prop:conjugacy-normal-subgroup}, with $N = SL_2(\mathbb{R})$) $B$ is not conjugate to $A$ in $SL_2(\mathbb{R})$.
+\end{exbox}
+
 
 % ============================================================================
 % SECTION: S_3, S_4, A_4 AND A_5 (Examples revisited)
@@ -4412,7 +4488,7 @@ Example~\ref{ex:non-normal-subgroup-s3} shows that $\langle (1\,2) \rangle$ is n
 
 The normal subgroups of $S_4$ are $\{e\}$, $V$, $A_4$ and $S_4$, read off from its class sizes. The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$, so $S_4/V \cong S_3$; inside $A_4$ it makes $V$ normal and keeps $(1\,2\,3)$ and $(1\,3\,2)$ apart, which is why $A_4$ is the one non-simple $A_n$ with $n \geq 3$.
 
-Example~\ref{ex:normal-subgroups-s3-s4} (in the $S_3$ part) finds the normal subgroups; Example~\ref{ex:second-isomorphism-theorem-action}(2) (in the $S_3$ part) obtains $S_4/V \cong S_3$ from the Second Isomorphism Theorem; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} constructs the homomorphism; Example~\ref{ex:a4-1-2-3-1-3-2-not-conjugate} and the remark \emph{Why $n \geq 5$} (\ref{sec:simple}) show where the simplicity proof breaks for $A_4$; Example~\ref{ex:correspondence-s4-v} (below) lists the six subgroups of $S_4$ containing $V$ through the Correspondence Theorem; Corollary~\ref{cor:which-an-simple} and Example~\ref{ex:two-exceptions} record $A_4$ as the exception, with $A_4 \cong PSL_2(\mathbb{F}_3)$.
+Example~\ref{ex:normal-subgroups-s3-s4} (in the $S_3$ part) finds the normal subgroups; Example~\ref{ex:second-isomorphism-theorem-action}(2) (in the $S_3$ part) obtains $S_4/V \cong S_3$ from the Second Isomorphism Theorem; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} constructs the homomorphism; Example~\ref{ex:a4-1-2-3-1-3-2-not-conjugate} and the remark \emph{Why $n \geq 5$} (\ref{sec:simple}) show where the simplicity proof breaks for $A_4$; Example~\ref{ex:correspondence-s4-v} (below) lists the six subgroups of $S_4$ containing $V$ through the Correspondence Theorem; Proposition~\ref{prop:two-pairs-a5} and Example~\ref{ex:conjugacy-classes-a5-explained} (\ref{sec:normal-conjugacy}) show which $S_5$-classes split in $A_5$; Corollary~\ref{cor:which-an-simple} and Example~\ref{ex:two-exceptions} record $A_4$ as the exception, with $A_4 \cong PSL_2(\mathbb{F}_3)$.
 
 \begin{exbox}[{The Correspondence for $S_4$ and $V$}]\label{ex:correspondence-s4-v}
 Take $G = S_4$ and $N = V$, so $G/N \cong S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); by the Correspondence Theorem (\ref{thm:correspondence}). $S_3$ has six subgroups, so it predicts exactly six subgroups of $S_4$ containing $V$: these are $V$, $A_4$, $S_4$, and three subgroups of order $8$, the preimages of the three subgroups of order $2$; each has the form $V \cup \tau V$ for a transposition $\tau$, e.g.\ $V \cup (1\,2)V$. Normal ones match normal ones: $V$, $A_4$, $S_4$ correspond to $\{e\}$, $A_3$, $S_3$.
@@ -4448,7 +4524,7 @@ Example~\ref{ex:z-4z-2z-4z} computes the quotient; the remark \emph{Life Is Espe
 
 $SL_n$ is normal in $GL_n$ as the kernel of $\det$, with $GL_n(k)/SL_n(k) \cong k^\times$, while the diagonal and upper triangular subgroups of $GL_2(\mathbb{R})$ are not normal. Dividing $SL_n(F)$ by its scalar matrices gives $PSL_n(F)$, which is simple except for $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$.
 
-Example~\ref{ex:kernels}(2) and Example~\ref{ex:first-isomorphism-theorem-action}(2) (both in the $A_n$ part) treat $\det$; Proposition~\ref{prop:normal-subgroups-gl2-r} (WS~6.3) sorts four subgroups of $GL_2(\mathbb{R})$; Definition~\ref{def:projective-special-linear-group}, Theorem~\ref{thm:psln-f-simple} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) introduce $PSL_n(F)$ and its two exceptions; Example~\ref{ex:gl2-plus-scalars} (below) applies the Second Isomorphism Theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalars, reaching $PSL_2(\mathbb{R})$.
+Example~\ref{ex:kernels}(2) and Example~\ref{ex:first-isomorphism-theorem-action}(2) (both in the $A_n$ part) treat $\det$; Proposition~\ref{prop:normal-subgroups-gl2-r} (WS~6.3) sorts four subgroups of $GL_2(\mathbb{R})$; Definition~\ref{def:projective-special-linear-group}, Theorem~\ref{thm:psln-f-simple} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) introduce $PSL_n(F)$ and its two exceptions; Example~\ref{ex:rotations-90} (\ref{sec:normal-conjugacy}) shows two rotations conjugate in $GL_2(\mathbb{R})$ but not in $SL_2(\mathbb{R})$; Example~\ref{ex:gl2-plus-scalars} (below) applies the Second Isomorphism Theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalars, reaching $PSL_2(\mathbb{R})$.
 
 \begin{exbox}[{$GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the Scalars (lecture 10/5)}]\label{ex:gl2-plus-scalars}
 In $G = GL_2(\mathbb{R})$ let $N = SL_2(\mathbb{R}) = \{g : \det g = 1\}$ and $Z = \{zI_2 : z \in \mathbb{R}^\times\}$, the scalar matrices. Both are normal: $SL_2(\mathbb{R})$ is the kernel of $\det$, and scalar matrices commute with every matrix. Their intersection is $SL_2(\mathbb{R}) \cap Z = \{\pm I_2\}$, since $\det(zI_2) = z^2$. Their product is
@@ -4657,6 +4733,40 @@ Let $x = mnm^{-1}n^{-1}$. Grouping as $x = (mnm^{-1})\,n^{-1}$: $mnm^{-1} \in N$
 \begin{rembox}[{Commutators of Normal Subgroups}]\label{rem:commutators-normal-subgroups}
 The proof shows more: for normal $M, N$, every commutator $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a direct product $M \times N$ when also $MN = G$ (not from class).
 \end{rembox}
+\textit{Problem Set 5, Problems 3 and 4.}
+
+\begin{lembox}[{$3$-Cycles Are Commutators in $A_n$ (PS 5.3(1))}]\label{lem:3-cycles-commutators-an}
+Let $n \geq 5$. Every $3$-cycle $(i\,j\,k)$ is a commutator $g_1g_2g_1^{-1}g_2^{-1}$ with $g_1, g_2 \in A_n$.
+\end{lembox}
+
+\begin{proof}
+Recall $(i\,j\,k) = (j\,k)(i\,j)(j\,k)(i\,j)$ ($3$-Cycles Are Commutators, Proposition~\ref{prop:3-cycles-commutators}, PS 2.4(3), where the conjugators are transpositions, hence odd). Since $n \geq 5$, choose distinct $l, m \notin \{i, j, k\}$, and set $g_1 = (l\,m)(j\,k)$ and $g_2 = (l\,m)(i\,j)$. Both are even, and each is its own inverse, since $(l\,m)$ commutes with the disjoint transpositions $(i\,j)$ and $(j\,k)$. Moving the four factors $(l\,m)$ to the front and using $(l\,m)^4 = e$,
+\[ g_1g_2g_1^{-1}g_2^{-1} = (l\,m)(j\,k)(l\,m)(i\,j)(l\,m)(j\,k)(l\,m)(i\,j) = (j\,k)(i\,j)(j\,k)(i\,j) = (i\,j\,k). \]
+\end{proof}
+
+\begin{thmbox}[{Characters of $A_n$ Are Trivial for $n \geq 5$ (PS 5.3)}]\label{thm:characters-an-trivial}
+Let $n \geq 5$. Then $[A_n, A_n] = A_n$, and every character $\psi: A_n \to A$ is trivial.
+\end{thmbox}
+
+\begin{proof}
+By the lemma (Lemma~\ref{lem:3-cycles-commutators-an}) every $3$-cycle lies in $[A_n, A_n]$, and $A_n$ is generated by $3$-cycles (Generators of $A_n$, Theorem~\ref{thm:generators-an}); so $[A_n, A_n] = A_n$. A character kills every commutator (Characters Kill Commutators, Proposition~\ref{prop:characters-kill-commutators}), so $\psi$ is trivial on the $3$-cycles; as a homomorphism, it is then trivial on all of $A_n$, every element being a product of $3$-cycles.
+\end{proof}
+
+\begin{rembox}[{Small $n$, and the Link to Simplicity}]\label{rem:small-n-simplicity}
+The bound $n \geq 5$ is sharp. $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so the identity map is a nontrivial character. $A_4$ has the nontrivial character $\alpha|_{A_4}: A_4 \to A_3$ of The Pair-Partition Homomorphism (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}), so $[A_4, A_4] \subseteq V \neq A_4$. For $n \geq 5$ the theorem also follows from simplicity (Theorem~\ref{thm:an-simple-n-ge-5}): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
+\end{rembox}
+
+\begin{exbox}[{Products of Commutators That Are Not Commutators (PS 5.4)}]\label{ex:products-commutators-not-commutators}
+$[G,G]$ is defined as the subgroup \emph{generated} by commutators; this example shows that it can contain elements that are not themselves commutators. Fix $p, q, r \geq 1$ and let $G$ be the group of real block matrices
+\[ T(A, B, C) = \begin{bmatrix} I_p & A & C \\ 0 & I_q & B \\ 0 & 0 & I_r \end{bmatrix} \qquad (A \text{ is } p \times q,\ B \text{ is } q \times r,\ C \text{ is } p \times r). \]
+\begin{enumerate}
+    \item \emph{Formulas.} Block multiplication gives $T(A, B, C)\,T(X, Y, Z) = T(A + X,\ B + Y,\ C + Z + AY)$, hence $T(A, B, C)^{-1} = T(-A, -B, AB - C)$ and
+    \[ T(A, B, C)\,T(X, Y, Z)\,T(A, B, C)^{-1}\,T(X, Y, Z)^{-1} = T(0,\ 0,\ AY - XB). \]
+    \item \emph{The commutator subgroup.} $[G, G] = \{T(0, 0, M)\}$. By (1) every commutator has this form, and these matrices form a subgroup, since $T(0,0,M)\,T(0,0,N) = T(0,0,M+N)$. Conversely, $T(0, 0, \lambda E_{st})$ is a commutator: take $A$ with row $s$ equal to $(\lambda/q, \ldots, \lambda/q)$ and $Y$ with column $t$ equal to $(1, \ldots, 1)^T$, all other entries $0$, so that $AY = \lambda E_{st}$; and every $T(0,0,M)$ is a product of these.
+    \item \emph{Not every element is a commutator.} If $T(0, 0, M)$ is a commutator, then $M = AY - XB$ with $AY$ and $XB$ products through $\mathbb{R}^q$, so $\operatorname{rank} M \leq \operatorname{rank}(AY) + \operatorname{rank}(XB) \leq 2q$. So if $p, r > 2q$, any $M$ of rank $> 2q$ gives an element of $[G, G]$ that is not a commutator; e.g.\ $(p, q, r) = (3, 1, 3)$ and $M = I_3$, of rank $3 > 2$.
+\end{enumerate}
+\end{exbox}
+
 
 % ============================================================================
 % SECTION: S_3, A_n AND GL_n (Examples revisited)
@@ -4711,6 +4821,7 @@ Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the rema
     \item \textbf{To identify a quotient $G/N$.} Find a surjective homomorphism out of $G$ whose kernel is $N$; then $G/N$ is isomorphic to its target (First Isomorphism Theorem, \ref{sec:first-iso}). For finite $G$, $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$.
     \item \textbf{To compute in $G/N$.} Choose one representative per coset; to multiply, multiply in $G$ and replace the product by its representative. If the representatives form a subgroup $S$, then $G/N \cong S$ (\ref{prop:representatives-forming-subgroup}). More generally $H/(H \cap N) \cong HN/N$ (Second Isomorphism Theorem, \ref{thm:second-isomorphism-theorem}).
     \item \textbf{To find the subgroups of a quotient $G/N$.} They correspond to the subgroups of $G$ containing $N$, via $A \mapsto A/N$, with normal matching normal (Correspondence Theorem, \ref{thm:correspondence}).
+    \item \textbf{To decide whether $g, hgh^{-1} \in N$ are conjugate \emph{in} $N \trianglelefteq G$.} Check whether $h \in C_G(g)N$ (PS 5.2, Proposition~\ref{prop:conjugacy-normal-subgroup}). For $N = A_n$: a class of $S_n$ splits in $A_n$ iff its centralizer is contained in $A_n$.
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -4785,6 +4896,7 @@ Wed Sept 30 \newline lecture & Finite fields; WS 7.4 and 7.5 completed; $3$-cycl
 Thu Oct 1 \newline Problem Set 4 & Products of subgroups; commuting normal subgroups; normal core (again); abelianization; characters of $S_n$ & \ref{sec:second-iso} (4.1), \ref{sec:commutators} (4.2, 4.4, 4.5), \ref{sec:normal-sources} (4.3) \\
 Fri Oct 2 \newline lecture & Computing in $G/N$ with representatives; Second Isomorphism Theorem; Third named & \ref{sec:representatives}, \ref{sec:second-iso} \\
 Mon Oct 5 \newline lecture; Worksheet 8 & Second Isomorphism Theorem revisited; $GL_2^+(\mathbb{R})$ example; correspondence theorem (WS 8.4, 8.5(1)); course pace slowed & \ref{sec:first-iso}, \ref{sec:second-iso} \\
+Mon Oct 5 \newline Problem Set 5 (submitted) & Index of an intersection; conjugacy in a normal subgroup; characters of $A_n$; non-commutators in $D(G)$ & \ref{sec:lagrange} (5.1), \ref{sec:normal-conjugacy} (5.2), \ref{sec:commutators} (5.3, 5.4) \\
 \end{longtable}}
 
 \textbf{Material not from class.} A few results were added to fill gaps and are tagged in their titles: those marked \emph{cf.\ Pinter} or \emph{cf.\ MATH 412} come from the textbook or from the MATH 412 worksheets, not from MATH 493, and are not part of the examinable content unless Speyer covers them. Everything tagged with a worksheet number, a problem-set number, or a lecture date is course material.
@@ -5003,6 +5115,32 @@ Let $\chi: S_n \to A$ be a character and $a = \chi((1\,2))$. Show: (1) $\chi((i\
 \end{hwbox}
 \textit{Treated in \ref{sec:commutators}.}
 
+\section*{Problem Set 5}
+\phantomsection
+\addcontentsline{toc}{section}{Problem Set 5}
+
+\textit{Submitted. Each problem is treated in the main text, at the location indicated.}
+
+\begin{hwbox}[{The Index of an Intersection}]{5.1}\label{hw:5.1}
+Let $H \leq G$ with $G/H$ finite, $A \leq G$ and $B = A \cap H$. (1) Show that $[A : B] \leq [G : H]$. Hint: consider the action of $B$ on $G/H$. (2) Prove or disprove: $[A : B]$ divides $[G : H]$.
+\end{hwbox}
+\textit{Treated in \ref{sec:lagrange} (Proposition~\ref{prop:index-intersection}, Example~\ref{ex:index-need-not-divide}); the normal case in Corollary~\ref{cor:index-intersection-normal}.}
+
+\begin{hwbox}[{Conjugacy in a Normal Subgroup}]{5.2}\label{hw:5.2}
+Let $N \trianglelefteq G$, $g \in N$, and $Z_G(g) = \{h \in G : gh = hg\}$. (1) For $h \in G$, show that $hgh^{-1}$ is conjugate to $g$ in $N$ iff $h \in Z_G(g)N$. (2) Show that $(1\,2\,3)$ and $(1\,3\,2)$ are conjugate in $A_5$, but $(1\,2\,3\,4\,5)$ and $(1\,2\,3\,5\,4)$ are not. (3) Show that $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ and $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ are conjugate in $GL_2(\mathbb{R})$ but not in $SL_2(\mathbb{R})$.
+\end{hwbox}
+\textit{Treated in \ref{sec:normal-conjugacy}.}
+
+\begin{hwbox}[{Characters of the Alternating Group}]{5.3}\label{hw:5.3}
+Let $n \geq 5$ and $\psi: A_n \to A$ a character. (1) Show that every $3$-cycle is a commutator in $A_n$. (2) Show that $\psi((i\,j\,k)) = 1$. (3) Show that $\psi(\sigma) = 1$ for all $\sigma \in A_n$.
+\end{hwbox}
+\textit{Treated in \ref{sec:commutators}.}
+
+\begin{hwbox}[{Elements of $D(G)$ That Are Not Commutators}]{5.4}\label{hw:5.4}
+For the group $G$ of block matrices $\begin{bmatrix} I_p & A & C \\ 0 & I_q & B \\ 0 & 0 & I_r \end{bmatrix}$: (1) check the formulas for the inverse and the commutator; (2) show that $D(G)$ consists of the matrices $\begin{bmatrix} I_p & 0 & M \\ 0 & I_q & 0 \\ 0 & 0 & I_r \end{bmatrix}$; (3) show that if such a matrix is a commutator then $\operatorname{rank} M \leq 2q$, so that for $p, r > 2q$ there are elements of $D(G)$ that are not commutators.
+\end{hwbox}
+\textit{Treated in \ref{sec:commutators}.}
+
 \chapter{Index of Definitions and Results}\label{ch:index}
 
 Terms defined in the definition boxes, and named theorems, propositions, lemmas and corollaries, with the page where each appears.
@@ -5134,22 +5272,23 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \addcontentsline{toc}{section}{Results}
 \begin{multicols}{2}\raggedcolumns\small\setlength{\parskip}{1pt}
 \noindent\hangindent=1em $3$-Cycles Are Commutators\dotfill \pageref{prop:3-cycles-commutators}\par
+\noindent\hangindent=1em $3$-Cycles Are Commutators in $A_n$\dotfill \pageref{lem:3-cycles-commutators-an}\par
 \noindent\hangindent=1em $3$-Cycles Are Conjugate in $A_n$ for $n \geq 5$\dotfill \pageref{lem:3-cycles-conjugate-an-n-ge-5}\par
-\noindent\hangindent=1em $A_5$ Is Simple\dotfill \pageref{prop:a5-simple}\par
-\noindent\hangindent=1em $A_5$ Is the Smallest Non-Abelian Simple Group\dotfill \pageref{thm:a5-smallest-non-abelian-simple-group}\par
 \noindent\hangindent=1em A Common Eigenvector Yields a Character\dotfill \pageref{thm:common-eigenvector-yields-character}\par
 \noindent\hangindent=1em A Left Action Gives a Right Action\dotfill \pageref{prop:left-action-gives-right-action}\par
-\noindent\hangindent=1em $A_n$ Is Simple for $n \geq 5$\dotfill \pageref{thm:an-simple-n-ge-5}\par
-\noindent\hangindent=1em $A_n$ Is the Stabilizer of $\Delta$\dotfill \pageref{cor:an-stabilizer-delta}\par
 \noindent\hangindent=1em A Natural Bijection $G/H \to H\backslash G$\dotfill \pageref{prop:natural-bijection-g-h-to-h-g}\par
 \noindent\hangindent=1em A Normal Image in a Simple Group\dotfill \pageref{cor:normal-image-simple-group}\par
 \noindent\hangindent=1em A Normal Subgroup Inside a Subgroup of Finite Index\dotfill \pageref{thm:normal-subgroup-inside-subgroup-finite-index}\par
 \noindent\hangindent=1em A Subset That Is a Group Is a Subgroup\dotfill \pageref{prop:subset-group-subgroup}\par
+\noindent\hangindent=1em $A_5$ Is Simple\dotfill \pageref{prop:a5-simple}\par
+\noindent\hangindent=1em $A_5$ Is the Smallest Non-Abelian Simple Group\dotfill \pageref{thm:a5-smallest-non-abelian-simple-group}\par
 \noindent\hangindent=1em Abelian Simple Groups\dotfill \pageref{thm:abelian-simple-groups}\par
 \noindent\hangindent=1em Actions Are Homomorphisms to $S_X$\dotfill \pageref{thm:actions-homomorphisms-sx}\par
 \noindent\hangindent=1em Addition of Residue Classes Is Well-Defined; $\mathbb{Z}/n\mathbb{Z}$ Is a Group\dotfill \pageref{prop:addition-residue-classes-well-defined-z-nz-group}\par
 \noindent\hangindent=1em Adjacent Transpositions from $(1\,j)$'s\dotfill \pageref{lem:adjacent-transpositions-1-j-s}\par
 \noindent\hangindent=1em All Cosets Have the Same Size\dotfill \pageref{prop:all-cosets-have-same-size}\par
+\noindent\hangindent=1em $A_n$ Is Simple for $n \geq 5$\dotfill \pageref{thm:an-simple-n-ge-5}\par
+\noindent\hangindent=1em $A_n$ Is the Stabilizer of $\Delta$\dotfill \pageref{cor:an-stabilizer-delta}\par
 \noindent\hangindent=1em An $r$-Cycle Has Order $r$\dotfill \pageref{lem:r-cycle-has-order-r}\par
 \noindent\hangindent=1em Burnside's Lemma\dotfill \pageref{thm:burnsides-lemma}\par
 \noindent\hangindent=1em Cancellation, and What the Mixed Hypothesis Really Gives\dotfill \pageref{prop:cancellation-what-mixed-hypothesis-really-gives}\par
@@ -5161,6 +5300,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Characterizations of Normality\dotfill \pageref{prop:characterizations-normality}\par
 \noindent\hangindent=1em Characters Are Constant on Conjugacy Classes\dotfill \pageref{prop:characters-constant-conjugacy-classes}\par
 \noindent\hangindent=1em Characters Kill Commutators\dotfill \pageref{prop:characters-kill-commutators}\par
+\noindent\hangindent=1em Characters of $A_n$ Are Trivial for $n \geq 5$\dotfill \pageref{thm:characters-an-trivial}\par
 \noindent\hangindent=1em Chinese Remainder Theorem\dotfill \pageref{thm:chinese-remainder-theorem}\par
 \noindent\hangindent=1em Class Sizes Divide the Group Order\dotfill \pageref{cor:class-sizes-divide-group-order}\par
 \noindent\hangindent=1em Classification of Cyclic Groups\dotfill \pageref{thm:classification-cyclic-groups}\par
@@ -5172,6 +5312,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Conjugacy Class of $(1\,2)$ in $S_n$\dotfill \pageref{prop:conjugacy-class-1-2-sn}\par
 \noindent\hangindent=1em Conjugacy Class of a Diagonal Matrix\dotfill \pageref{prop:conjugacy-class-diagonal-matrix}\par
 \noindent\hangindent=1em Conjugacy Classes in $S_n$ Are Cycle Types\dotfill \pageref{thm:conjugacy-classes-sn-cycle-types}\par
+\noindent\hangindent=1em Conjugacy Relative to a Normal Subgroup\dotfill \pageref{prop:conjugacy-normal-subgroup}\par
 \noindent\hangindent=1em Conjugation Is an Automorphism\dotfill \pageref{prop:conjugation-automorphism}\par
 \noindent\hangindent=1em Conjugation Relabels a Cycle\dotfill \pageref{prop:conjugation-relabels-cycle}\par
 \noindent\hangindent=1em Coprime to Each Factor, Coprime to the Product\dotfill \pageref{lem:coprime-each-factor-coprime-product}\par
@@ -5201,15 +5342,13 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Five Characterizations of Normality\dotfill \pageref{thm:five-characterizations-normality}\par
 \noindent\hangindent=1em Further Isomorphism Invariants\dotfill \pageref{prop:further-isomorphism-invariants}\par
 \noindent\hangindent=1em $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$\dotfill \pageref{cor:g-ker-alpha-im-alpha}\par
-\noindent\hangindent=1em $\langle g \rangle$ Is a Subgroup\dotfill \pageref{prop:gen-g-subgroup}\par
-\noindent\hangindent=1em $\langle g \rangle$ Is the Smallest Subgroup Containing $g$\dotfill \pageref{prop:gen-g-smallest-subgroup-containing-g}\par
-\noindent\hangindent=1em $G/N$ Is a Group\dotfill \pageref{thm:g-n-group}\par
 \noindent\hangindent=1em Generalized Associativity\dotfill \pageref{prop:generalized-associativity}\par
 \noindent\hangindent=1em Generated Subgroups of $\mathbb{Z}$, and B\'ezout\dotfill \pageref{cor:generated-subgroups-z-bezout}\par
 \noindent\hangindent=1em Generators and Subgroups of a Finite Cyclic Group\dotfill \pageref{cor:generators-subgroups-finite-cyclic-group}\par
 \noindent\hangindent=1em Generators of $A_n$\dotfill \pageref{thm:generators-an}\par
 \noindent\hangindent=1em Generators of $S_n$\dotfill \pageref{thm:generators-sn}\par
 \noindent\hangindent=1em $GL_3(\mathbb{R})$ Acting on $\mathbb{R}^3$\dotfill \pageref{prop:gl3-r-acting-r3}\par
+\noindent\hangindent=1em $G/N$ Is a Group\dotfill \pageref{thm:g-n-group}\par
 \noindent\hangindent=1em Groups of Order $4$ Are Abelian\dotfill \pageref{prop:groups-order-4-abelian}\par
 \noindent\hangindent=1em Groups of Prime Order\dotfill \pageref{thm:groups-prime-order}\par
 \noindent\hangindent=1em Groups of Prime Order Have No Proper Nontrivial Subgroups\dotfill \pageref{cor:groups-prime-order-have-no-proper-nontrivial}\par
@@ -5221,6 +5360,9 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Image and Kernel Are Subgroups\dotfill \pageref{prop:image-kernel-subgroups}\par
 \noindent\hangindent=1em Images and Preimages of Subgroups\dotfill \pageref{prop:images-preimages-subgroups}\par
 \noindent\hangindent=1em Images Need Not Be Normal\dotfill \pageref{prop:images-need-not-normal}\par
+\noindent\hangindent=1em Images of Subgroups Containing $N$\dotfill \pageref{prop:images-subgroups-containing-n}\par
+\noindent\hangindent=1em Index of an Intersection\dotfill \pageref{prop:index-intersection}\par
+\noindent\hangindent=1em Index of an Intersection, Normal Case\dotfill \pageref{cor:index-intersection-normal}\par
 \noindent\hangindent=1em Index of the Stabilizer\dotfill \pageref{cor:index-stabilizer}\par
 \noindent\hangindent=1em Intersections of Subgroups\dotfill \pageref{prop:intersections-subgroups}\par
 \noindent\hangindent=1em Inverse of a Product\dotfill \pageref{prop:inverse-product}\par
@@ -5229,18 +5371,21 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Isomorphism Invariants\dotfill \pageref{prop:isomorphism-invariants}\par
 \noindent\hangindent=1em Kernels Are Normal\dotfill \pageref{prop:kernels-normal}\par
 \noindent\hangindent=1em Lagrange\dotfill \pageref{thm:lagrange}\par
+\noindent\hangindent=1em $\langle g \rangle$ Is a Subgroup\dotfill \pageref{prop:gen-g-subgroup}\par
+\noindent\hangindent=1em $\langle g \rangle$ Is the Smallest Subgroup Containing $g$\dotfill \pageref{prop:gen-g-smallest-subgroup-containing-g}\par
 \noindent\hangindent=1em Latin Square Property\dotfill \pageref{cor:latin-square-property}\par
 \noindent\hangindent=1em Left Cosets Record $\alpha(n)$, Right Cosets Record $\alpha^{-1}(n)$\dotfill \pageref{prop:left-cosets-record-alpha-n-right-cosets-record}\par
 \noindent\hangindent=1em Linear Extension\dotfill \pageref{thm:linear-extension}\par
-\noindent\hangindent=1em $\sigma \mapsto M(\sigma)$ Is an Injective Homomorphism $S_n \to GL_n(k)$\dotfill \pageref{prop:sigma-maps-m-sigma-injective-homomorphism-sn-to}\par
+\noindent\hangindent=1em $\mathbb{Z}/4\mathbb{Z} \cong U_5$\dotfill \pageref{prop:z-4z-iso-u5}\par
+\noindent\hangindent=1em $\mathbb{Z}/n\mathbb{Z}$ Is a Field if and only if $n$ Is Prime\dotfill \pageref{prop:z-nz-field-if-only-if-n-prime}\par
 \noindent\hangindent=1em Multiplication by a Nonzero Class Permutes the Nonzero Classes Modulo $p$\dotfill \pageref{prop:multiplication-nonzero-class-permutes-nonzero}\par
 \noindent\hangindent=1em No Zero Divisors in a Field\dotfill \pageref{prop:no-zero-divisors-field}\par
 \noindent\hangindent=1em Normal Subgroups Are Unions of Conjugacy Classes\dotfill \pageref{prop:normal-subgroups-unions-conjugacy-classes}\par
 \noindent\hangindent=1em Normal Subgroups of $GL_2(\mathbb{R})$\dotfill \pageref{prop:normal-subgroups-gl2-r}\par
 \noindent\hangindent=1em $O_3(\mathbb{R})$ Acting on $\mathbb{R}^3$\dotfill \pageref{prop:o3-r-acting-r3}\par
 \noindent\hangindent=1em One-Sided Inverses Suffice\dotfill \pageref{prop:one-sided-inverses-suffice}\par
-\noindent\hangindent=1em Orbit--Stabilizer\dotfill \pageref{thm:orbit-stabilizer}\par
 \noindent\hangindent=1em Orbits Partition $X$\dotfill \pageref{prop:orbits-partition-x}\par
+\noindent\hangindent=1em Orbit--Stabilizer\dotfill \pageref{thm:orbit-stabilizer}\par
 \noindent\hangindent=1em Order of an Element Divides $|G|$; $g^{|G|} = e$\dotfill \pageref{cor:order-element-divides-g-g-g-e}\par
 \noindent\hangindent=1em $p$ Divides $|Z(G)|$\dotfill \pageref{cor:p-divides-z-g}\par
 \noindent\hangindent=1em Parity of a Permutation\dotfill \pageref{cor:parity-permutation}\par
@@ -5249,20 +5394,24 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Permutations of the Basis Give Invertible Linear Maps\dotfill \pageref{cor:permutations-basis-give-invertible-linear-maps}\par
 \noindent\hangindent=1em Pointwise Products of Homomorphisms\dotfill \pageref{prop:pointwise-products-homomorphisms}\par
 \noindent\hangindent=1em Preimages and Images of Normal Subgroups\dotfill \pageref{prop:preimages-images-normal-subgroups}\par
+\noindent\hangindent=1em Preimages of Subgroups of $G/N$\dotfill \pageref{prop:preimages-subgroups-quotient}\par
 \noindent\hangindent=1em Products of Two $(1\,j)$'s\dotfill \pageref{lem:products-two-1-j-s}\par
 \noindent\hangindent=1em Properties of the Commutator Subgroup\dotfill \pageref{prop:properties-commutator-subgroup}\par
 \noindent\hangindent=1em $PSL_n(F)$ Is Simple\dotfill \pageref{thm:psln-f-simple}\par
+\noindent\hangindent=1em Quotients Along the Correspondence\dotfill \pageref{prop:quotients-along-correspondence}\par
+\noindent\hangindent=1em Restricting a Homomorphism\dotfill \pageref{lem:restricting-homomorphism}\par
 \noindent\hangindent=1em Rotational Symmetries of the Cube\dotfill \pageref{prop:rotational-symmetries-cube}\par
-\noindent\hangindent=1em $S_n$ Is Not Simple for $n \geq 3$\dotfill \pageref{cor:sn-not-simple-n-ge-3}\par
+\noindent\hangindent=1em $\sigma \mapsto M(\sigma)$ Is an Injective Homomorphism $S_n \to GL_n(k)$\dotfill \pageref{prop:sigma-maps-m-sigma-injective-homomorphism-sn-to}\par
 \noindent\hangindent=1em Size of $A_n$\dotfill \pageref{prop:size-an}\par
+\noindent\hangindent=1em $S_n$ Is Not Simple for $n \geq 3$\dotfill \pageref{cor:sn-not-simple-n-ge-3}\par
 \noindent\hangindent=1em Sorting by Adjacent Swaps\dotfill \pageref{lem:sorting-adjacent-swaps}\par
 \noindent\hangindent=1em Stabilizers Along an Orbit Are Conjugate\dotfill \pageref{cor:stabilizers-along-orbit-conjugate}\par
 \noindent\hangindent=1em Stabilizers of Points in the Same Orbit Are Conjugate\dotfill \pageref{prop:stabilizers-points-same-orbit-conjugate}\par
 \noindent\hangindent=1em Structure of $\mathbb{R}^\times$ and $\mathbb{Q}^\times$\dotfill \pageref{prop:structure-r-x-q-x}\par
 \noindent\hangindent=1em Subgroups of Cyclic Groups Are Cyclic\dotfill \pageref{thm:subgroups-cyclic-groups-cyclic}\par
 \noindent\hangindent=1em Subgroups of Index $2$ Are Normal\dotfill \pageref{prop:subgroups-index-2-normal}\par
-\noindent\hangindent=1em Subgroups of $S_3$\dotfill \pageref{prop:subgroups-s3}\par
 \noindent\hangindent=1em Subgroups of $\mathbb{Z}$\dotfill \pageref{prop:subgroups-z}\par
+\noindent\hangindent=1em Subgroups of $S_3$\dotfill \pageref{prop:subgroups-s3}\par
 \noindent\hangindent=1em Surjectivity and Injectivity via Image and Kernel\dotfill \pageref{prop:surjectivity-injectivity-via-image-kernel}\par
 \noindent\hangindent=1em The Abelianization Is Abelian\dotfill \pageref{prop:abelianization-abelian}\par
 \noindent\hangindent=1em The Action of $G$ on $G/H$\dotfill \pageref{prop:action-g-g-h}\par
@@ -5271,6 +5420,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Class Equation, Reciprocal Form\dotfill \pageref{cor:class-equation-reciprocal-form}\par
 \noindent\hangindent=1em The Commutator Subgroup of $S_n$\dotfill \pageref{thm:commutator-subgroup-sn}\par
 \noindent\hangindent=1em The Conjugation Action\dotfill \pageref{prop:conjugation-action}\par
+\noindent\hangindent=1em The Correspondence Theorem\dotfill \pageref{thm:correspondence}\par
 \noindent\hangindent=1em The Cube Group Embeds in $S_6$\dotfill \pageref{prop:cube-group-embeds-s6}\par
 \noindent\hangindent=1em The Homomorphism $k \mapsto g^k$ and $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$\dotfill \pageref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}\par
 \noindent\hangindent=1em The Index Is Multiplicative\dotfill \pageref{prop:index-multiplicative}\par
@@ -5279,6 +5429,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Orbit Bijection\dotfill \pageref{prop:orbit-bijection}\par
 \noindent\hangindent=1em The Orbit Relation\dotfill \pageref{prop:orbit-relation}\par
 \noindent\hangindent=1em The Order of a Power\dotfill \pageref{prop:order-power}\par
+\noindent\hangindent=1em The Order of $SN$\dotfill \pageref{cor:order-sn}\par
 \noindent\hangindent=1em The Pair-Partition Homomorphism $S_4 \to S_3$\dotfill \pageref{prop:pair-partition-homomorphism-s4-to-s3}\par
 \noindent\hangindent=1em The Product and Its Universal Property\dotfill \pageref{prop:product-universal-property}\par
 \noindent\hangindent=1em The Rotation Group of the Cube Is $S_4$\dotfill \pageref{thm:rotation-group-cube-s4}\par
@@ -5289,6 +5440,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Three Formulas for the Sign\dotfill \pageref{thm:three-formulas-sign}\par
 \noindent\hangindent=1em Transpositions Are Not Commutators\dotfill \pageref{prop:transpositions-not-commutators}\par
 \noindent\hangindent=1em Two Isomorphism Invariants\dotfill \pageref{prop:two-isomorphism-invariants}\par
+\noindent\hangindent=1em Two Pairs of Elements of $A_5$\dotfill \pageref{prop:two-pairs-a5}\par
 \noindent\hangindent=1em $U_8$ and $U_7$\dotfill \pageref{prop:u8-u7}\par
 \noindent\hangindent=1em $U_n$ as a Product of Prime-Power Unit Groups\dotfill \pageref{thm:un-product-prime-power-unit-groups}\par
 \noindent\hangindent=1em $U_n$ Is a Group\dotfill \pageref{prop:un-group}\par
@@ -5299,8 +5451,6 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em When Coset Multiplication Is Well Defined\dotfill \pageref{prop:when-coset-multiplication-well-defined}\par
 \noindent\hangindent=1em When Two Group Elements Move $x$ to the Same Place\dotfill \pageref{prop:when-two-group-elements-move-x-same-place}\par
 \noindent\hangindent=1em Which $A_n$ Are Simple\dotfill \pageref{cor:which-an-simple}\par
-\noindent\hangindent=1em $\mathbb{Z}/4\mathbb{Z} \cong U_5$\dotfill \pageref{prop:z-4z-iso-u5}\par
-\noindent\hangindent=1em $\mathbb{Z}/n\mathbb{Z}$ Is a Field if and only if $n$ Is Prime\dotfill \pageref{prop:z-nz-field-if-only-if-n-prime}\par
 \end{multicols}
 
 \end{document}

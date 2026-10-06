@@ -26,6 +26,7 @@ tags: [group-theory, hub]
 - [[§39 Sources of Normal Subgroups#^prop-39-6|Proposition §39.6: The Normal Core]]
 - [[§40 Quotient Groups#^thm-40-1|Theorem §40.1: G/N Is a Group]]
 - [[§41 The First and Second Isomorphism Theorems#^ex-41-1|Example §41.1: The First Isomorphism Theorem in Action]]
+- [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Corollary §41.8: Index of an Intersection, Normal Case]]
 - [[§43 Simple Groups#^prop-43-6|Proposition §43.6: A_5 Is Simple]]
 
 ## Connections

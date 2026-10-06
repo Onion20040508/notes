@@ -31,7 +31,7 @@ $\mathbb{Z}$ is the source of every cyclic group: the homomorphism $k \mapsto g^
 
 The reduction $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$, with kernel $n\mathbb{Z}$, is item (2) of [[§15 Homomorphisms#^ex-15-1|Homomorphisms and Their Kernels]] (in the $GL_n$ part).
 
-*$\mathbb{Z}$ elsewhere:* ← [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§44 S₃, S₄, A₄ and A₅#ℤ and nℤ|Chapter 8]] → · [[The integers ℤ and the subgroups nℤ|all appearances]]
+*$\mathbb{Z}$ elsewhere:* ← [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§45 S₃, S₄, A₄ and A₅#ℤ and nℤ|Chapter 8]] → · [[The integers ℤ and the subgroups nℤ|all appearances]]
 
 ## ℤ∕nℤ and Uₙ
 The small groups $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z}$, $U_5$, $U_7$ and $U_8$ are the chapter's worked cases. Their tables are written out; $U_5 \cong \mathbb{Z}/4\mathbb{Z}$ and $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ are cyclic, while $U_8$, in which every element squares to $1$, is the Klein four-group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$. The subgroups of a finite cyclic group are read off from the divisors of its order.

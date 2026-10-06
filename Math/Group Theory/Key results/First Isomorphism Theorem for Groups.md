@@ -22,14 +22,14 @@ tags: [group-theory, hub]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-2|Corollary §41.2: ∣G∣ = ∣Keralpha∣ · ∣Imalpha∣]]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-4|Theorem §41.4: Second Isomorphism Theorem]]
 - [[§43 Simple Groups#^prop-43-10|Proposition §43.10: The Pair-Partition Homomorphism S_4 → S_3]]
-- [[§46 Commutators#^ex-46-1|Example §46.1: The Abelianization of Sₙ]]
+- [[§47 Commutators#^ex-47-1|Example §47.1: The Abelianization of Sₙ]]
 
 ## Used in (Topology)
 - [[§21 Algebra Prerequisites꞉ Groups#^def-21-11|Definition §21.11: Group Presentation]]
 - [[§29 The Seifert–van Kampen Theorem#^thm-29-1|Theorem §29.1: Seifert-van Kampen Theorem (Munkres 70.2)]]
 
 ## Connections
-- **Used for.** Identifying quotients: Sₙ/Aₙ ≅ {±1}, GL_n(k)/SL_n(k) ≅ k^×, G/Z(G) ≅ Inn(G) ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]); S₄/V ≅ S₃ ([[§43 Simple Groups#^prop-43-10|§43.10]]); the abelianization of Sₙ ([[§46 Commutators#^ex-46-1|Ex. §46.1]]). Cayley's theorem and PS 3.2 are special cases ([[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]]).
+- **Used for.** Identifying quotients: Sₙ/Aₙ ≅ {±1}, GL_n(k)/SL_n(k) ≅ k^×, G/Z(G) ≅ Inn(G) ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]); S₄/V ≅ S₃ ([[§43 Simple Groups#^prop-43-10|§43.10]]); the abelianization of Sₙ ([[§47 Commutators#^ex-47-1|Ex. §47.1]]). Cayley's theorem and PS 3.2 are special cases ([[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]]).
 - **The target is the image.** G/Ker α ≅ Im α, and images need not be normal: ℤ/2ℤ → S₃, a ↦ (1 2)ᵃ ([[§41 The First and Second Isomorphism Theorems#^rem-41-1|Images Are Quotients]], [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]). Vector spaces have no analogue of this asymmetry.
 - **Same idea elsewhere.** The vector-space version is the [[First isomorphism theorem]] (LADR 3.107). Counting gives |G| = |Ker α| · |Im α| ([[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]]), the group form of rank–nullity ([[Fundamental theorem of linear maps]], [[§41 The First and Second Isomorphism Theorems#^rem-41-2|Rank–Nullity]]). In topology a continuous surjection induces a homeomorphism from the quotient exactly when it is a quotient map ([[§12 Quotient Topology#^cor-12-4|590 §12.4]]). The 590 notes use the group version to write presentations as F/N ([[§21 Algebra Prerequisites꞉ Groups#^def-21-11|Group Presentation]]).
 - **Coming later in the course.** The second and third isomorphism theorems, and the correspondence between subgroups of G/N and subgroups of G containing N.

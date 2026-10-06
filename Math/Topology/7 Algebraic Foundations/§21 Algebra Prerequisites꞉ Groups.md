@@ -741,4 +741,4 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 ^rem-21-20
 
 > [!remark]- Connections
-> - The general construction in 493: the abelianization, the quotient by the commutator subgroup, [[§46 Commutators#^def-46-3|493 Def. §46.3]], which is abelian by [[§46 Commutators#^prop-46-6|493 Prop. §46.6]].
+> - The general construction in 493: the abelianization, the quotient by the commutator subgroup, [[§47 Commutators#^def-47-3|493 Def. §47.3]], which is abelian by [[§47 Commutators#^prop-47-6|493 Prop. §47.6]].

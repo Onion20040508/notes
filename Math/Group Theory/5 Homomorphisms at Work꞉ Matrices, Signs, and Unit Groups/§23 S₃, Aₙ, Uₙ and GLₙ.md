@@ -25,7 +25,7 @@ $A_n$ enters as the kernel of the sign homomorphism, and [[§21 The Sign Homomor
 
 The items, all in [[§21 The Sign Homomorphism and the Alternating Group|§21]]: [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|The Alternating Group Aₙ]], [[§21 The Sign Homomorphism and the Alternating Group#^prop-21-5|Size of Aₙ]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|Generators of Aₙ]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-10|Aₙ Is the Stabilizer of Δ]].
 
-*$A_n$ elsewhere:* first appearance · [[§44 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] → · [[The alternating group A₅|all appearances]]
+*$A_n$ elsewhere:* first appearance · [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] → · [[The alternating group A₅|all appearances]]
 
 ## ℤ∕nℤ and Uₙ
 [[§22 The Structure of Uₙ|§22]] is devoted to $U_n$: the Chinese remainder theorem splits it into a product of unit groups of prime powers, which gives Euler's totient formula and describes $U_{15}$, $U_{10}$ and $U_{24}$ as products of cyclic groups.

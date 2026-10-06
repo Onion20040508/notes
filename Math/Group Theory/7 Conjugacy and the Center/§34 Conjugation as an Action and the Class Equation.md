@@ -10,7 +10,7 @@ tags: [group-theory, math493]
 *Reference: Pinter Ch. 13, Ex. I; Ch. 15, Ex. G (the class equation).*
 
 > [!definition] Definition §34.1: Centralizer
-> For $g$ in a group $G$, the **centralizer** of $g$ is $C_G(g) := \{h \in G : hg = gh\}$, the set of elements commuting with $g$. ([[493 Problem Set 3#^hw-3-4|Problem Set 3]] writes $Z(g)$; these notes reserve $Z(G)$ for the [[§35 The Center#^def-35-1|center]].)
+> For $g$ in a group $G$, the **centralizer** of $g$ is $C_G(g) := \{h \in G : hg = gh\}$, the set of elements commuting with $g$. ([[493 Problem Set 3#^hw-3-4|Problem Set 3]] writes $Z(g)$ and [[493 Problem Set 5#^hw-5-2|Problem Set 5]] writes $Z_G(g)$; these notes reserve $Z(G)$ for the [[§35 The Center#^def-35-1|center]].)
 
 ^def-34-1
 

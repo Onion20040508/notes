@@ -30,13 +30,14 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§43 Simple Groups#^def-43-2|§43]])
 - $PSL_n(F)$ is simple, with two exceptions ([[§43 Simple Groups#^thm-43-13|§43]])
 - The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§43 Simple Groups#^ex-43-3|§43]])
-- $GL_2^+(\mathbb{R})/\{\text{scalars}\} \cong PSL_2(\mathbb{R})$ by the Second Isomorphism Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-3|§44]])
-- $\det$ is a character of $GL_n(k)$ ([[§45 Characters#^ex-45-1|§45]])
-- Characters are the representations into $GL_1(k) = k^\times$ ([[§45 Characters#^rem-45-4|§45]])
+- Rotations by $\pm 90^\circ$ are conjugate in $GL_2(\mathbb{R})$ but not in $SL_2(\mathbb{R})$ ([[§44 Conjugacy in a Normal Subgroup#^ex-44-2|§44]])
+- $GL_2^+(\mathbb{R})/\{\text{scalars}\} \cong PSL_2(\mathbb{R})$ by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-3|§45]])
+- $\det$ is a character of $GL_n(k)$ ([[§46 Characters#^ex-46-1|§46]])
+- Characters are the representations into $GL_1(k) = k^\times$ ([[§46 Characters#^rem-46-4|§46]])
 
 ## Chapter by chapter
 
-Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SLₙ and O(n)|Chapter 1]] · [[§19 S₃, ℤ∕nℤ and Uₙ#GLₙ, SLₙ and O(n)|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#GLₙ, SLₙ and O(n)|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§44 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§47 S₃, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]].
+Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SLₙ and O(n)|Chapter 1]] · [[§19 S₃, ℤ∕nℤ and Uₙ#GLₙ, SLₙ and O(n)|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#GLₙ, SLₙ and O(n)|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]].
 
 ## $GL_n(k)$ is a group, non-abelian for $n \geq 2$
 ![[§3 Basic Examples of Groups#^def-3-6]]
@@ -110,11 +111,14 @@ Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SL
 ## The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$
 ![[§43 Simple Groups#^ex-43-3]]
 
+## Rotations by $\pm 90^\circ$ are conjugate in $GL_2(\mathbb{R})$ but not in $SL_2(\mathbb{R})$
+![[§44 Conjugacy in a Normal Subgroup#^ex-44-2]]
+
 ## $GL_2^+(\mathbb{R})/\{\text{scalars}\} \cong PSL_2(\mathbb{R})$ by the Second Isomorphism Theorem
-![[§44 S₃, S₄, A₄ and A₅#^ex-44-3]]
+![[§45 S₃, S₄, A₄ and A₅#^ex-45-3]]
 
 ## $\det$ is a character of $GL_n(k)$
-![[§45 Characters#^ex-45-1]]
+![[§46 Characters#^ex-46-1]]
 
 ## Characters are the representations into $GL_1(k) = k^\times$
-![[§45 Characters#^rem-45-4]]
+![[§46 Characters#^rem-46-4]]

@@ -5,7 +5,7 @@ chapter: 8
 section: 43
 tags: [group-theory, math493]
 ---
-← [[§42 The Correspondence and Third Isomorphism Theorems]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§44 S₃, S₄, A₄ and A₅]] →
+← [[§42 The Correspondence and Third Isomorphism Theorems]] · ↑ [[· 8 Normal Subgroups and Quotient Groups]] · [[§44 Conjugacy in a Normal Subgroup]] →
 
 *Reference: Not treated in Pinter.*
 
@@ -262,7 +262,7 @@ tags: [group-theory, math493]
 *The three ways of splitting $\{1,2,3,4\}$ into two pairs, each drawn as two blue edges. The transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps the other two splittings (red), so it acts on $P$ as a transposition. A double transposition such as $(1\,2)(3\,4)$ carries every splitting to itself, which is why $V$ is the kernel.*
 
 > [!example] Example §43.1: In $A_4$, $(1\,2\,3)$ and $(1\,3\,2)$ Are Not Conjugate
-> The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[§45 Characters#^prop-45-1|Characters Are Constant on Conjugacy Classes]], §45). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin V$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles ([[§43 Simple Groups#^lem-43-8|§43.8]]) fails for $n = 4$.
+> The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[§46 Characters#^prop-46-1|Characters Are Constant on Conjugacy Classes]], §46). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin V$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles ([[§43 Simple Groups#^lem-43-8|§43.8]]) fails for $n = 4$.
 >
 > *Source: lecture 9/30*
 

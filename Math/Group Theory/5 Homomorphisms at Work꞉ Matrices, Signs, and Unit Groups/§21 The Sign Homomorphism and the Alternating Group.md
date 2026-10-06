@@ -225,7 +225,7 @@ tags: [group-theory, math493]
 *Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-8|§21.8]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]], [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|§21.6]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
 
 > [!remark]- Connections
-> - 3-cycles drive the simplicity of $A_n$: [[§43 Simple Groups#^lem-43-8|§43.8]], [[§43 Simple Groups#^thm-43-9|§43.9]]; and they are commutators: [[§46 Commutators#^prop-46-2|§46.2]], [[§46 Commutators#^thm-46-5|The Commutator Subgroup and Characters of Sₙ]].
+> - 3-cycles drive the simplicity of $A_n$: [[§43 Simple Groups#^lem-43-8|§43.8]], [[§43 Simple Groups#^thm-43-9|§43.9]]; and they are commutators: [[§47 Commutators#^prop-47-2|§47.2]], [[§47 Commutators#^thm-47-5|The Commutator Subgroup and Characters of Sₙ]].
 
 > [!definition] Definition §21.4: Alternating Polynomial
 > A polynomial $f \in \mathbb{Q}[x_1, \ldots, x_n]$ is **alternating** if $\sigma \cdot f = \operatorname{sgn}(\sigma) f$ for every $\sigma \in S_n$: fixed by even permutations and negated by odd ones. (Compare *symmetric*, $\sigma \cdot f = f$ for all $\sigma$; [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|Def. §20.3]].) By the [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]], $\Delta$ is alternating.
@@ -247,7 +247,7 @@ tags: [group-theory, math493]
 *Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|§21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]]
 
 > [!remark]- Connections
-> - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§45 Characters#^ex-45-2|Ex. §45.2]].
+> - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§46 Characters#^ex-46-2|Ex. §46.2]].
 
 > [!remark] Remark: The Origin of the Names
 > This is the historical origin of the names: the symmetric group is attached to the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|symmetric polynomials]], and the alternating group is the stabilizer of the alternating polynomial $\Delta$ (whose square, the discriminant, is symmetric). The homomorphism $\operatorname{sgn}$ is also the first nontrivial [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|representation]] of $S_n$ into $GL_1 = \mathbb{Q}^\times$, alongside the permutation representation $\sigma \mapsto M(\sigma)$ into $GL_n$.

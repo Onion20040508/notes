@@ -183,7 +183,7 @@ Lagrange's theorem pays off for the cyclic groups: Fermat's little theorem is La
 
 The actions of $\mathbb{Z}/3\mathbb{Z}$ on a triangle and of $\mathbb{Z}/4\mathbb{Z}$ on two points are in [[§25 Actions#^ex-25-3|Seeing the Permutations]] (in the $S_3$ part).
 
-*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ∕nℤ and Uₙ|Chapter 5]] · [[§44 S₃, S₄, A₄ and A₅#ℤ∕nℤ and Uₙ|Chapter 8]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
+*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ∕nℤ and Uₙ|Chapter 5]] · [[§45 S₃, S₄, A₄ and A₅#ℤ∕nℤ and Uₙ|Chapter 8]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
 
 ## GLₙ, SLₙ and O(n)
 

@@ -228,4 +228,18 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Proved directly, without the theorem: [[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]] (§40.4).
 
-[[§44 S₃, S₄, A₄ and A₅#^ex-44-3|Example §44.3]], in the $GL_n$ part of [[§44 S₃, S₄, A₄ and A₅|§44]], applies the theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalar matrices.
+[[§45 S₃, S₄, A₄ and A₅#^ex-45-3|Example §45.3]], in the $GL_n$ part of [[§45 S₃, S₄, A₄ and A₅|§45]], applies the theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalar matrices.
+
+> [!theorem] Corollary §41.8: Index of an Intersection, Normal Case
+> Let $H \trianglelefteq G$ with $[G : H]$ finite, and let $A \leq G$. Then $[A : A \cap H]$ divides $[G : H]$.
+>
+> *Source: not from class*
+
+^cor-41-8
+
+> [!proof]+ Proof
+> By the Second Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-4|Theorem §41.4]]), $A/(A \cap H) \cong AH/H$, and $AH/H = \pi(A)$ is a subgroup of the finite group $G/H$. By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]) in $G/H$, $[A : A \cap H] = |AH/H|$ divides $|G/H| = [G : H]$. (Compare [[§29 The Index and Lagrange's Theorem#^prop-29-9|Proposition §29.9]] and [[§29 The Index and Lagrange's Theorem#^ex-29-2|Example §29.2]] (PS 5.1), where $H$ is not normal and divisibility fails.)
+
+^pf-41-8
+
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-4|§41.4]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]

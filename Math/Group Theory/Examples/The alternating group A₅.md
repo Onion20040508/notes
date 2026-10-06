@@ -15,12 +15,15 @@ The alternating group $A_5$ of even permutations of five letters, of order $60$.
 - $3$-cycles are conjugate in $A_n$ for $n \geq 5$ ([[§43 Simple Groups#^lem-43-8|§43]])
 - $A_n$ is simple for every $n \geq 5$ ([[§43 Simple Groups#^thm-43-9|§43]])
 - $A_n$ is simple iff $n = 3$ or $n \geq 5$ ([[§43 Simple Groups#^cor-43-11|§43]])
-- $[S_n, S_n] = A_n$ ([[§46 Commutators#^thm-46-5|§46]])
-- The abelianization $S_n/A_n \cong \{\pm 1\}$ ([[§46 Commutators#^ex-46-1|§46]])
+- $(1\,2\,3)$ and $(1\,3\,2)$ are conjugate in $A_5$, the two $5$-cycles $(1\,2\,3\,4\,5)$, $(1\,2\,3\,5\,4)$ are not ([[§44 Conjugacy in a Normal Subgroup#^prop-44-2|§44]])
+- Which classes of $S_5$ split in $A_5$, explained by centralizers ([[§44 Conjugacy in a Normal Subgroup#^ex-44-1|§44]])
+- $[S_n, S_n] = A_n$ ([[§47 Commutators#^thm-47-5|§47]])
+- The abelianization $S_n/A_n \cong \{\pm 1\}$ ([[§47 Commutators#^ex-47-1|§47]])
+- $[A_n, A_n] = A_n$, so every character of $A_n$ is trivial, for $n \geq 5$ ([[§47 Commutators#^thm-47-10|§47]])
 
 ## Chapter by chapter
 
-Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§44 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · [[§47 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]].
+Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]].
 
 ## $A_n$ is the kernel of the sign
 ![[§21 The Sign Homomorphism and the Alternating Group#^def-21-3]]
@@ -49,8 +52,17 @@ Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#T
 ## $A_n$ is simple iff $n = 3$ or $n \geq 5$
 ![[§43 Simple Groups#^cor-43-11]]
 
+## $(1\,2\,3)$ and $(1\,3\,2)$ are conjugate in $A_5$, the two $5$-cycles are not
+![[§44 Conjugacy in a Normal Subgroup#^prop-44-2]]
+
+## Which classes of $S_5$ split in $A_5$, explained by centralizers
+![[§44 Conjugacy in a Normal Subgroup#^ex-44-1]]
+
 ## $[S_n, S_n] = A_n$
-![[§46 Commutators#^thm-46-5]]
+![[§47 Commutators#^thm-47-5]]
 
 ## The abelianization $S_n/A_n \cong \{\pm 1\}$
-![[§46 Commutators#^ex-46-1]]
+![[§47 Commutators#^ex-47-1]]
+
+## $[A_n, A_n] = A_n$, so every character of $A_n$ is trivial, for $n \geq 5$
+![[§47 Commutators#^thm-47-10]]

@@ -26,8 +26,8 @@ tags: [group-theory, math493]
 | $g \star x$, $G \curvearrowright X$, $X \curvearrowleft G$ | Action; left action; right action. | [[§25 Actions#^def-25-1\|Def. §25.1]], [[§25 Actions#^def-25-2\|Def. §25.2]] |
 | $\operatorname{Stab}(x)$, $\operatorname{Fix}(g)$, $Gx$ | Stabilizer, fixed points, orbit. | [[§26 Stabilizers and Fixed Points#^def-26-1\|Def. §26.1]], [[§27 Orbits#^def-27-1\|Def. §27.1]] |
 | $G\backslash X$, $X/G$ | Orbit spaces of a left and a right action. | [[§27 Orbits#^def-27-1\|Def. §27.1]], [[§27 Orbits#^def-27-2\|Def. §27.2]] |
-| $H \trianglelefteq G$, $[G, G]$ | Normal subgroup; commutator subgroup, also written $D(G)$. | [[§38 Normal Subgroups#^def-38-1\|Def. §38.1]]; [[§46 Commutators#^def-46-2\|Def. §46.2]] |
-| $G^{\mathrm{ab}}$ | Abelianization $G/[G,G]$. | [[§46 Commutators#^def-46-3\|Def. §46.3]] |
+| $H \trianglelefteq G$, $[G, G]$ | Normal subgroup; commutator subgroup, also written $D(G)$. | [[§38 Normal Subgroups#^def-38-1\|Def. §38.1]]; [[§47 Commutators#^def-47-2\|Def. §47.2]] |
+| $G^{\mathrm{ab}}$ | Abelianization $G/[G,G]$. | [[§47 Commutators#^def-47-3\|Def. §47.3]] |
 | $G/N$, $\pi$ | Quotient group by a normal subgroup; canonical projection $g \mapsto gN$. | [[§40 Quotient Groups#^def-40-1\|Def. §40.1]] |
 | $PSL_n(F)$ | Projective special linear group $SL_n(F)/Z$. | [[§43 Simple Groups#^def-43-2\|Def. §43.2]] |
 | $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§41 The First and Second Isomorphism Theorems#^def-41-1\|Def. §41.1]] |

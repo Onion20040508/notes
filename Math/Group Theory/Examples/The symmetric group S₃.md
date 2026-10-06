@@ -22,6 +22,7 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - $\mathbb{Z}/3\mathbb{Z}$ rotating a triangle maps onto $A_3 \leq S_3$ ([[§25 Actions#^ex-25-3|§25]])
 - Left and right cosets of $\langle (1\,2) \rangle$ differ ([[§28 Left and Right Cosets#^ex-28-1|§28]])
 - The map $gH \mapsto Hg$ is not well defined ([[§28 Left and Right Cosets#^ex-28-2|§28]])
+- The index $[A : A \cap H]$ need not divide $[S_3 : H]$ ([[§29 The Index and Lagrange's Theorem#^ex-29-2|§29]])
 - Cosets of the point stabilizer, read off from $\alpha(3)$ and $\alpha^{-1}(3)$ ([[§30 Orbit–Stabilizer#^ex-30-2|§30]])
 - Burnside's lemma: one orbit on $\{1, 2, 3\}$, three conjugacy classes ([[§30 Orbit–Stabilizer#^ex-30-3|§30]])
 - Three conjugacy classes, of sizes $1, 3, 2$ ([[§33 Conjugacy Classes#^ex-33-2|§33]])
@@ -34,15 +35,15 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - $S_3/A_3$ is cyclic of order $2$ ([[§40 Quotient Groups#^ex-40-1|§40]])
 - $S_3/A_3$ computed with the representatives $\{e, (2\,3)\}$ ([[§40 Quotient Groups#^ex-40-3|§40]])
 - The representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$ ([[§40 Quotient Groups#^rem-40-3|§40]])
-- $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|§42]])
+- $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41]])
 - $S_3$ as the quotient $S_4/V$ ([[§43 Simple Groups#^prop-43-10|§43]])
 - $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
-- $\langle (1\,2) \rangle \cong S_3/A_3$, and $S_4/V \cong S_3$, by the Second Isomorphism Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-1|§44]])
-- The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§45 Characters#^rem-45-3|§45]])
+- $\langle (1\,2) \rangle \cong S_3/A_3$, and $S_4/V \cong S_3$, by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
+- The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§46 Characters#^rem-46-3|§46]])
 
 ## Chapter by chapter
 
-Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmetric Group S₃|Chapter 1]] · [[§13 The Symmetric Group S₃#S₃ Earlier in This Chapter|Chapter 3]] · [[§19 S₃, ℤ∕nℤ and Uₙ#The Symmetric Group S₃|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#The Symmetric Group S₃|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#The Symmetric Group S₃|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] · [[§44 S₃, S₄, A₄ and A₅#The Symmetric Group S₃|Chapter 8]] · [[§47 S₃, Aₙ and GLₙ#The Symmetric Group S₃|Chapter 9]].
+Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmetric Group S₃|Chapter 1]] · [[§13 The Symmetric Group S₃#S₃ Earlier in This Chapter|Chapter 3]] · [[§19 S₃, ℤ∕nℤ and Uₙ#The Symmetric Group S₃|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#The Symmetric Group S₃|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#The Symmetric Group S₃|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#The Symmetric Group S₃|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#The Symmetric Group S₃|Chapter 9]].
 
 ## The mixed hypothesis $gh_1 = h_2g$ does not cancel
 ![[§2 First Consequences of the Axioms#^ex-2-1]]
@@ -92,6 +93,9 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ## The map $gH \mapsto Hg$ is not well defined
 ![[§28 Left and Right Cosets#^ex-28-2]]
 
+## The index $[A : A \cap H]$ need not divide $[S_3 : H]$
+![[§29 The Index and Lagrange's Theorem#^ex-29-2]]
+
 ## Cosets of the point stabilizer, read off from $\alpha(3)$ and $\alpha^{-1}(3)$
 ![[§30 Orbit–Stabilizer#^ex-30-2]]
 
@@ -138,7 +142,7 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§43 Simple Groups#^ex-43-3]]
 
 ## $\langle (1\,2) \rangle \cong S_3/A_3$, and $S_4/V \cong S_3$, by the Second Isomorphism Theorem
-![[§44 S₃, S₄, A₄ and A₅#^ex-44-1]]
+![[§45 S₃, S₄, A₄ and A₅#^ex-45-1]]
 
 ## The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target
-![[§45 Characters#^rem-45-3]]
+![[§46 Characters#^rem-46-3]]

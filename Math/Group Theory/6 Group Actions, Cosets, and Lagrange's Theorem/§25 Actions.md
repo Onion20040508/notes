@@ -254,7 +254,7 @@ tags: [group-theory, math493]
 *The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation, each injective. Their composite (blue) is the embedding of Corollary §25.6.*
 
 > [!remark]- Connections
-> - The small representations the next remark asks for begin with characters: [[§45 Characters#^rem-45-4|One-Dimensional Representations]].
+> - The small representations the next remark asks for begin with characters: [[§46 Characters#^rem-46-4|One-Dimensional Representations]].
 
 > [!remark] Remark: Why Cayley's Theorem Matters, and Why It Is Not the End
 > Cayley's theorem says that “abstract group” and “group of permutations” are the same notion: nothing is lost by studying only subgroups of symmetric groups. Its corollary is the first appearance of the idea behind the second half of the course — every finite group has a faithful [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|representation]] by matrices. The embedding is, however, very inefficient: a group of order $n$ is placed inside $S_n$, of order $n!$, or into $n \times n$ matrices. Much of representation theory is about finding the small, informative representations instead.

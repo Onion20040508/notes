@@ -34,7 +34,7 @@ tags: [group-theory, hub]
 - [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]
 - [[§40 Quotient Groups#^prop-40-3|Proposition §40.3: Multiplying Through Representatives]]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
-- [[§46 Commutators#^prop-46-6|Proposition §46.6: The Abelianization Is Abelian]]
+- [[§47 Commutators#^prop-47-6|Proposition §47.6: The Abelianization Is Abelian]]
 
 ## Connections
 - **Used for.** [[Lagrange's Theorem]], via [[§29 The Index and Lagrange's Theorem#^prop-29-1|All Cosets Have the Same Size]]; orbit–stabilizer, through [[§30 Orbit–Stabilizer#^prop-30-2|The Orbit Bijection]]; the action of G on G/H ([[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]]); and all of Chapter 8, from [[Quotient Groups]] to the [[First Isomorphism Theorem for Groups]].

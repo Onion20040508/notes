@@ -4,7 +4,7 @@ subject: "[[Group Theory]]"
 problem_set: 4
 tags: [group-theory, math493]
 ---
-← [[493 Problem Set 3]] · ↑ [[Group Theory]]
+← [[493 Problem Set 3]] · ↑ [[Group Theory]] · [[493 Problem Set 5]] →
 
 # Problem Set 4
 
@@ -18,14 +18,14 @@ tags: [group-theory, math493]
 
 ^hw-4-1
 
-*Treated in [[§42 The Correspondence and Third Isomorphism Theorems|§42]] ($HN$ Is a Subgroup When $N$ Is Normal, [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]; $AB$ Need Not Be a Subgroup, [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex. §41.2]]).*
+*Treated in [[§41 The First and Second Isomorphism Theorems#The Second Isomorphism Theorem|§41]] ($HN$ Is a Subgroup When $N$ Is Normal, [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]; $AB$ Need Not Be a Subgroup, [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex. §41.2]]).*
 
 > [!question] Problem 4.2: Normal Subgroups with Trivial Intersection
 > Let $M$ and $N$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$ with $M \cap N = \{e\}$. Show that $mn = nm$ for all $m \in M$, $n \in N$. Hint: write the conclusion as $mnm^{-1}n^{-1} = 1$.
 
 ^hw-4-2
 
-*Treated in [[§46 Commutators|§46]] ([[§46 Commutators#^prop-46-8|§46.8]]).*
+*Treated in [[§47 Commutators|§47]] ([[§47 Commutators#^prop-47-8|§47.8]]).*
 
 > [!question] Problem 4.3: A Normal Subgroup Inside a Finite-Index Subgroup
 > Let $H$ be a subgroup of $G$ with $[G : H] = n$ ([[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]). Show that there is a [[§38 Normal Subgroups#^def-38-1|normal subgroup]] $N$ of $G$ with $N \subseteq H \subseteq G$ and $[G : N] \leq n!$. (The same problem as [[493 Problem Set 3#^hw-3-2|PS 3.2]].)
@@ -35,18 +35,18 @@ tags: [group-theory, math493]
 *Treated in [[§39 Sources of Normal Subgroups|§39]] ([[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]]).*
 
 > [!question] Problem 4.4: The Commutator Subgroup and the Abelianization
-> Let $D(G) = \langle ghg^{-1}h^{-1} : g, h \in G \rangle$, the [[§46 Commutators#^def-46-2|commutator subgroup]].
+> Let $D(G) = \langle ghg^{-1}h^{-1} : g, h \in G \rangle$, the [[§47 Commutators#^def-47-2|commutator subgroup]].
 >
 > 1. Show that $D(G)$ is normal in $G$.
-> 2. Let $G^{\mathrm{ab}} = G/D(G)$, the [[§46 Commutators#^def-46-3|abelianization]]. Show that $G^{\mathrm{ab}}$ is abelian.
+> 2. Let $G^{\mathrm{ab}} = G/D(G)$, the [[§47 Commutators#^def-47-3|abelianization]]. Show that $G^{\mathrm{ab}}$ is abelian.
 
 ^hw-4-4
 
-*Treated in [[§46 Commutators|§46]] ([[§46 Commutators#^prop-46-4|§46.4]], [[§46 Commutators#^def-46-3|Def. §46.3]], [[§46 Commutators#^prop-46-6|§46.6]]).*
+*Treated in [[§47 Commutators|§47]] ([[§47 Commutators#^prop-47-4|§47.4]], [[§47 Commutators#^def-47-3|Def. §47.3]], [[§47 Commutators#^prop-47-6|§47.6]]).*
 
 > [!question] Problem 4.5: Characters of the Symmetric Group
-> Let $\chi: S_n \to A$ be a [[§45 Characters#^def-45-1|character]] and $a = \chi((1\,2))$. Show: (1) $\chi((i\,j)) = a$ for every transposition; (2) $a^2 = 1$; (3) $\chi(\sigma) = 1$ for $\sigma \in A_n$ and $\chi(\sigma) = a$ for $\sigma \notin A_n$. (Problems [[493 Problem Set 1#^hw-1-5|1.5]] and [[493 Problem Set 2#^hw-2-4|2.4]] may be used.)
+> Let $\chi: S_n \to A$ be a [[§46 Characters#^def-46-1|character]] and $a = \chi((1\,2))$. Show: (1) $\chi((i\,j)) = a$ for every transposition; (2) $a^2 = 1$; (3) $\chi(\sigma) = 1$ for $\sigma \in A_n$ and $\chi(\sigma) = a$ for $\sigma \notin A_n$. (Problems [[493 Problem Set 1#^hw-1-5|1.5]] and [[493 Problem Set 2#^hw-2-4|2.4]] may be used.)
 
 ^hw-4-5
 
-*Treated in [[§46 Commutators|§46]] ([[§46 Commutators#^thm-46-5|§46.5]]).*
+*Treated in [[§47 Commutators|§47]] ([[§47 Commutators#^thm-47-5|§47.5]]).*

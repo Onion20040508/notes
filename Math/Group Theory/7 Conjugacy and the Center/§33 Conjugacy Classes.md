@@ -23,7 +23,7 @@ tags: [group-theory, math493]
 ^def-33-1
 
 > [!remark]- Connections
-> - Normal subgroups are exactly the subgroups that are unions of classes: [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]]; characters are constant on classes: [[§45 Characters#^prop-45-1|§45.1]].
+> - Normal subgroups are exactly the subgroups that are unions of classes: [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]]; characters are constant on classes: [[§46 Characters#^prop-46-1|§46.1]].
 
 > [!theorem] Lemma §33.1: Conjugation Relabels the Entries
 > Let $\sigma \in S_n$. For any cycle,
