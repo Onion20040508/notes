@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 4 §§4.4–4.7 (complex-field paragraphs) and Ch. 3 §3.4 · PHY 513 Problem Set 3, Problem 2 (= Peskin & Schroeder, Problem 2.2(a)–(c)), with the course solution · Yu Zhao-Huan, 量子场论讲义, §2.4 · the user's pre-course notes, §3.4.*
 
-What does a complex field have that a real one lacks? Two independent sets of oscillators, and a conserved charge that tells them apart. The classical field is recalled first, from its home in Chapter C1b. The construction is then [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]–[[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] run again ([[P1 Canonical Quantization]]), with two changes: the momentum conjugate to $\phi$ is the velocity of $\phi^\dagger$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]), and the phase symmetry $\phi \to e^{i\alpha}\phi$ gives a charge whose Noether derivation is [[§C1b.5 Noether's Theorem#^thm-c1b-5-8|Theorem §C1b.5.8]]. Quantum Mechanics previewed the result by combining two real fields in a box ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-7|QM Theorem §C13.1.7]]); here the complex field is quantized through its own canonical pairs, the charge is normalized as in Peskin–Schroeder, and its operator ordering turns out to be fixed by physics rather than convention. The result is the first appearance of antiparticles.
+What does a complex field have that a real one lacks? Two independent sets of oscillators, and a conserved charge that tells them apart. The classical field is recalled first, from its home in Chapter C1b. The construction is then [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]–[[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] run again ([[P1 Canonical Quantization]]), with two changes: the momentum conjugate to $\phi$ is the velocity of $\phi^\dagger$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]), and the phase symmetry $\phi \to e^{i\alpha}\phi$ gives a charge whose Noether derivation is [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]. Quantum Mechanics previewed the result by combining two real fields in a box ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-7|QM Theorem §C13.1.7]]); here the complex field is quantized through its own canonical pairs, the charge is normalized as in Peskin–Schroeder, and its operator ordering turns out to be fixed by physics rather than convention. The result is the first appearance of antiparticles.
 
 ## The classical complex field, recalled
 
@@ -23,9 +23,9 @@ Its momenta and Hamiltonian density, derived in [[§C1b.4 Hamiltonian Field Theo
 
 ![[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3]]
 
-The energy and the field momentum, [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] (recalled in [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]) for the two fields, in field form:
+The energy and the field momentum, [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]] (recalled in [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]) for the two fields, in field form:
 
-![[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-8]]
+![[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-8]]
 
 The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]). Quantization reads these as operators, written with a hat; the boxes recalled above are classical and stay unhatted, the hat marking the quantization step ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|§C2a.1, Caution: Eₚ, not ωₚ; π, not Π]]):
 
@@ -238,7 +238,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 *Procedure:* [[P1 Canonical Quantization#^p1-7|P1, step 7]]
 
 > [!theorem] Theorem §C2a.5.5: Momentum of the Complex Field
-> The field momentum of the complex field in field form ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-8|Theorem §C1b.6.8]], recalled above) is in modes
+> The field momentum of the complex field in field form ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-8|Theorem §C1b.7.8]], recalled above) is in modes
 >
 > $$
 > \hat{\mathbf P} = -\int d^3x\,\bigl(\hat\pi\,\nabla\hat\phi + \hat\pi^\dagger\,\nabla\hat\phi^\dagger\bigr) = \int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\bigl(\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} + \hat b^\dagger_{\mathbf p}\hat b_{\mathbf p}\bigr) ,
@@ -295,9 +295,9 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 
 ## The charge
 
-The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]) is invariant under the global phase rotation $\phi \to e^{i\alpha}\phi$, $\phi^\dagger \to e^{-i\alpha}\phi^\dagger$; Noether's theorem ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; this current: [[§C1b.5 Noether's Theorem#^thm-c1b-5-8|Theorem §C1b.5.8]]) gives, for $\Delta\phi = i\phi$, the conserved current $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$ (PS eq. (2.16)), conserved even though $m \ne 0$. Its quantum version is normalized as follows. The current, derived in [[§C1b.5 Noether's Theorem|§C1b.5]]:
+The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]) is invariant under the global phase rotation $\phi \to e^{i\alpha}\phi$, $\phi^\dagger \to e^{-i\alpha}\phi^\dagger$; Noether's theorem ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; this current: [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]) gives, for $\Delta\phi = i\phi$, the conserved current $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$ (PS eq. (2.16)), conserved even though $m \ne 0$. Its quantum version is normalized as follows. The current, derived in [[§C1b.5 Noether's Theorem|§C1b.5]]:
 
-![[§C1b.5 Noether's Theorem#^thm-c1b-5-8]]
+![[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3]]
 
 > [!definition] Definition §C2a.5.1: The U(1) Charge Operator
 > The **charge** of the complex scalar field is
@@ -371,7 +371,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 > [!caution] Caution: Normalization and sign of the charge
 > Only the ratio $-1$ of the two species' charges is physical; the overall factor and sign are conventions, and the sources differ:
 > - **These notes, Peskin–Schroeder and Problem Set 3:** $\hat Q = \frac i2\int(\hat\phi^\dagger\hat\pi^\dagger - \hat\pi\hat\phi) = \frac12(\hat N_a - \hat N_b)$; $a$-quanta carry $+\frac12$.
-> - **The Noether current with $\Delta\phi = +i\phi$** (the user's notes, Ch. 3; PS eq. (2.16)): $\int \hat j^0 = \hat N_b - \hat N_a$, twice as large and of opposite sign, because a positive-frequency mode $\phi = Ae^{-iEt}$ has $j^0 = -2E|A|^2 < 0$. The lecture slides and board write the current with the opposite overall sign, which gives $\hat N_a - \hat N_b$ ([[§C1b.5 Noether's Theorem#^cau-c1b-5-3|§C1b.5, Caution: Sign and normalization of the U(1) current]]).
+> - **The Noether current with $\Delta\phi = +i\phi$** (the user's notes, Ch. 3; PS eq. (2.16)): $\int \hat j^0 = \hat N_b - \hat N_a$, twice as large and of opposite sign, because a positive-frequency mode $\phi = Ae^{-iEt}$ has $j^0 = -2E|A|^2 < 0$. The lecture slides and board write the current with the opposite overall sign, which gives $\hat N_a - \hat N_b$ ([[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]]).
 > - **Yu:** $\hat Q = iq\int\hat\phi^\dagger\overleftrightarrow{\partial^0}\hat\phi = q(\hat N_a - \hat N_b)$ (eq. (2.212)), $2q$ times the definition above.
 > - **Quantum Mechanics ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-7|QM Theorem §C13.1.7]]):** $\hat Q = e(\hat N_b - \hat N_c)$, with $\hat b$ the particles, in Sakurai's notation.
 >
@@ -422,7 +422,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 ^rem-c2a-5-3
 
 > [!remark]- Connections
-> - A complex field is two real fields of the same mass, and $\phi \to e^{i\alpha}\phi$ is a rotation of the pair $(\phi_1, \phi_2)$: U(1) $\cong$ SO(2), and the current in real components is $\phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1$, the field-space analogue of angular momentum $xp_y - yp_x$ — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-8|Theorem §C1b.2.8]], [[§C1b.5 Noether's Theorem#^ex-c1b-5-4|Example §C1b.5.4]], [[§C1b.5 Noether's Theorem#^rem-c1b-5-8|§C1b.5, Remark: Global, internal, and what a local phase would need]]; [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]] for conserved quantities as generators.
+> - A complex field is two real fields of the same mass, and $\phi \to e^{i\alpha}\phi$ is a rotation of the pair $(\phi_1, \phi_2)$: U(1) $\cong$ SO(2), and the current in real components is $\phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1$, the field-space analogue of angular momentum $xp_y - yp_x$ — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-8|Theorem §C1b.2.8]], [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-2|Example §C1b.6.2]], [[§C1b.6 Conserved Charges and Internal Symmetries#^rem-c1b-6-2|§C1b.6, Remark: Global, internal, and what a local phase would need]]; [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]] for conserved quantities as generators.
 > - The charge is half the Klein–Gordon inner product of the field with itself, which is why it is positive on positive-frequency ($a$) quanta and why its conservation is the slice independence of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 1 — [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]].
 > - The ordering problem is the field-theory version of the oscillator's zero-point energy, but with an observable consequence; the ordering prescription chosen here is the same normal ordering that Wick's theorem builds on — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-2|Remark: Normal ordering is a choice of quantization]], QFT C7 (planned).
 > - Particle and antiparticle having the same mass is guaranteed here because both are created by one field on one mass shell; in general it is the CPT theorem — QFT C9 (planned).

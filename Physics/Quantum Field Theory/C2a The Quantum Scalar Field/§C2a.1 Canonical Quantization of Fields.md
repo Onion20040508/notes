@@ -7,7 +7,7 @@ section: C2a.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor]] · ↑ [[· C2a The Quantum Scalar Field]] · [[§C2a.2 Mode Expansion and the Mode Algebra]] →
+← [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor]] · ↑ [[· C2a The Quantum Scalar Field]] · [[§C2a.2 Mode Expansion and the Mode Algebra]] →
 
 *Sources: the user's PHY 513 notes, Ch. 4 §§4.1–4.2 and Ch. 3 §§3.4–3.5 · PHY 513 Lecture 4 (Larsen) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2–§2.3 · Yu Zhao-Huan, 量子场论讲义, §§2.1–2.3 · the user's pre-course notes, §§3.1–3.3.*
 
@@ -38,19 +38,19 @@ For the free real field they are $\pi = \dot\phi$ and a sum of squares, derived 
 
 ![[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2]]
 
-The field momentum, the Noether charge of space translations, derived from the energy–momentum tensor in [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]] for any set of fields:
+The field momentum, the Noether charge of space translations, derived from the energy–momentum tensor in [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]] for any set of fields:
 
-![[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6]]
+![[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6]]
 
 and for this field, with $T^{0i} = \dot\phi\,\partial^i\phi$ worked out from $\mathcal L$:
 
-![[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^ex-c1b-6-1]]
+![[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^ex-c1b-7-1]]
 
 The energy and the momentum of this field in field form, $H = P^0$ and $\mathbf P = -\int d^3x\,\pi\nabla\phi$, derived from $T^{0\mu}$ index by index, and the statement that $\mathbf P$ generates spatial translations through the bracket, as $H$ generates time evolution:
 
-![[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-7]]
+![[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-7]]
 
-![[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9]]
+![[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9]]
 
 Quantization keeps these formulas and reads $\phi$, $\pi$, $H$ and $\mathbf P$ as operators, written with a hat: $\hat\phi$, $\hat\pi$, $\hat H$, $\hat{\mathbf P}$. The boxes recalled above are classical and stay unhatted; the hat marks the quantization step ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). What it adds is stated next: the quantum model (operators, with the ordering of $\hat H$ left open until [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]]), and the postulate that fixes their algebra.
 
@@ -63,7 +63,7 @@ Quantization keeps these formulas and reads $\phi$, $\pi$, $H$ and $\mathbf P$ a
 > \hat H = \int d^3x\,\Bigl[\tfrac12\pi^2 + \tfrac12(\nabla\hat\phi)^2 + \tfrac12m^2\hat\phi^2\Bigr] ,
 > $$
 >
-> and field momentum $\hat{\mathbf P} = -\int d^3x\,\hat\pi\nabla\hat\phi$: the quantization of $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]), for which classically $\pi = \dot\phi$, with the classical charges of [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]] and [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] (recalled above) read as operators. That these operators generate time and space translations of the field is [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-13|Theorem §C3.5.13]].
+> and field momentum $\hat{\mathbf P} = -\int d^3x\,\hat\pi\nabla\hat\phi$: the quantization of $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]), for which classically $\pi = \dot\phi$, with the classical charges of [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]] and [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]] (recalled above) read as operators. That these operators generate time and space translations of the field is [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-13|Theorem §C3.5.13]].
 >
 > *Assumptions:* free (quadratic $\mathcal L$: linear field equation, no interactions); $m > 0$; flat spacetime with an inertial time; infinite space, continuum (delta-function) normalization; the operator ordering in $\hat H$ is fixed in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]; $\hat{\mathbf P}$ needs no ordering choice ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]).
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4, Ch. 4 §4.2 and §4.7 · PHY 513 Lecture 4 · PS §2.3, eqs. (2.31)–(2.33) · Yu §2.3, eqs. (2.79), (2.123)–(2.124)*

@@ -310,7 +310,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 ## Momentum and the ladder relations
 
 > [!theorem] Theorem §C5b.3.7: Momentum of the Dirac Field
-> The field momentum of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], $\hat{\mathbf P} = -\int d^3x\,\hat\pi\nabla\hat\psi = \int d^3x\,\hat\psi^\dagger(-i\nabla)\hat\psi$ (the Noether momentum of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|Theorem §C5a.8.6]], recalled in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]; general form [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]) is, under the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]],
+> The field momentum of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], $\hat{\mathbf P} = -\int d^3x\,\hat\pi\nabla\hat\psi = \int d^3x\,\hat\psi^\dagger(-i\nabla)\hat\psi$ (the Noether momentum of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|Theorem §C5a.8.6]], recalled in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]; general form [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]]) is, under the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]],
 >
 > $$
 > \hat{\mathbf P} = \sum_s\int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\bigl(\hat a^{s\dagger}_{\mathbf p}\hat a^s_{\mathbf p} + \hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p}\bigr) ,

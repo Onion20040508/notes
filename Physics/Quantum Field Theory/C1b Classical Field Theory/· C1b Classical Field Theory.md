@@ -17,8 +17,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C1b.3 Mass Dimension, Locality and Power Counting]] — 
 - [[§C1b.4 Hamiltonian Field Theory]] — 
 - [[§C1b.5 Noether's Theorem]] — 
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum]] — 
-- [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor]] — 
+- [[§C1b.6 Conserved Charges and Internal Symmetries]] — 
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum]] — 
+- [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor]] — 
 
 ## Principles
 - [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|§C1b.2.3]] Stationary Action for Fields
@@ -50,22 +51,22 @@ tags: [chapter, quantum-field-theory]
 - [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|§C1b.5.3]] The First-Order Test Decides the Whole Family
 - [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|§C1b.5.4]] Noether's Theorem
 - [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|§C1b.5.5]] The Divergence of the Current When the Test Fails
-- [[§C1b.5 Noether's Theorem#^thm-c1b-5-6|§C1b.5.6]] Continuity Equation and Conservation of the Charge
-- [[§C1b.5 Noether's Theorem#^thm-c1b-5-7|§C1b.5.7]] Improvement Terms
-- [[§C1b.5 Noether's Theorem#^thm-c1b-5-8|§C1b.5.8]] The U(1) Current of the Complex Scalar Field
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|§C1b.6.1]] Total and Fixed-Argument Variations
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-2|§C1b.6.2]] The Volume Element to First Order
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-3|§C1b.6.3]] Noether's Theorem, General Form
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-4|§C1b.6.4]] The Two Forms of Noether's Theorem Agree
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|§C1b.6.5]] Translation Invariance Conserves the Energy–Momentum Tensor
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|§C1b.6.6]] Energy and Momentum of a Field
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-7|§C1b.6.7]] Energy and Momentum of the Free Real Scalar Field
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-8|§C1b.6.8]] Energy and Momentum of the Free Complex Scalar Field
-- [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9|§C1b.6.9]] The Field Momentum Generates Spatial Translations
-- [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|§C1b.7.1]] The Lorentz Current
-- [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|§C1b.7.2]] The Antisymmetric Part of T Is a Divergence
-- [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-3|§C1b.7.3]] The Centre of Energy Moves Uniformly
-- [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|§C1b.7.4]] The Belinfante Tensor
+- [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|§C1b.6.1]] Continuity Equation and Conservation of the Charge
+- [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-2|§C1b.6.2]] Improvement Terms
+- [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|§C1b.6.3]] The U(1) Current of the Complex Scalar Field
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-1|§C1b.7.1]] Total and Fixed-Argument Variations
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|§C1b.7.2]] The Volume Element to First Order
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|§C1b.7.3]] Noether's Theorem, General Form
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-4|§C1b.7.4]] The Two Forms of Noether's Theorem Agree
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-5|§C1b.7.5]] Translation Invariance Conserves the Energy–Momentum Tensor
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|§C1b.7.6]] Energy and Momentum of a Field
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-7|§C1b.7.7]] Energy and Momentum of the Free Real Scalar Field
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-8|§C1b.7.8]] Energy and Momentum of the Free Complex Scalar Field
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|§C1b.7.9]] The Field Momentum Generates Spatial Translations
+- [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|§C1b.8.1]] The Lorentz Current
+- [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|§C1b.8.2]] The Antisymmetric Part of T Is a Divergence
+- [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-3|§C1b.8.3]] The Centre of Energy Moves Uniformly
+- [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|§C1b.8.4]] The Belinfante Tensor
 
 ## Models
 - [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|§C1b.2.6]] The Free Real Scalar Field
