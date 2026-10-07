@@ -335,7 +335,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > \bar D(\xi) \equiv \tfrac12\bigl[D_R(\xi) + D_A(\xi)\bigr],
 > $$
 >
-> with $D_R$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]] and $D_A$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]]. As the average of two Green's functions it is one; the name records that its transform is a principal value, $i\,\mathcal P\frac{1}{p^2 - m^2}$ ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]]; [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]).
+> with $D_R$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]] and $D_A$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]]. As the average of two Green's functions it is one.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.11 (Definition "The family": $\bar D = \frac12(D_R + D_A)$)*
 
@@ -355,6 +355,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 ^rem-c2b-5-4
 
 > [!remark]- Connections
+> - The name of $\bar D$ ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-3|Def. §C2b.5.3]]) records its transform, the principal value $i\,\mathcal P\frac{1}{p^2 - m^2}$ ([[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]), derived with the other relations of the family in [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]].
 > - Mode by mode the retarded function is $\theta(t)(-i\sin Et)/E$, the impulse response of an undamped oscillator; the damped version $\theta(t)e^{-\gamma t/2}\sin\omega_dt/m\omega_d$ is [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transfer function $\chi(\omega)$ has its poles in one half-plane exactly as $\tilde D_R$ does. A field is one such oscillator per $\mathbf p$.
 > - The massless retarded function, $D_R = -\frac{i}{4\pi r}\delta(t - r)$ for $t > 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]]), turns $i\int D_Rj$ into $\int d^3y\,j(t - |\mathbf x - \mathbf y|, \mathbf y)/4\pi|\mathbf x - \mathbf y|$: the retarded potentials of [[§B11.1★ Potentials, Gauges and Retarded Potentials#^thm-b11-1-4|EM Theorem §B11.1.4]] (with $\partial^2 = -\Box$ in EM's sign).
 > - A static point source $j = g\,\delta^3(\mathbf y)$ gives, through the retarded function integrated over $y^0$, $\phi = g\int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\mathbf p^2 + m^2} = \frac{g}{4\pi}\frac{e^{-mr}}{r}$: the Yukawa field of [[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]], the $p^0 = 0$ slice of $\tilde D$.

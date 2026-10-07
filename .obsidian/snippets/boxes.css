@@ -29,3 +29,15 @@
   background-color: transparent;
   border-radius: 0;
 }
+
+/* PHIL 183 (Gened/Phil183) callout types */
+.callout[data-callout="form"]       { --callout-color: 100, 140, 180; --callout-icon: lucide-sigma; }        /* argument form */
+.callout[data-callout="study"]      { --callout-color: 60, 150, 190;  --callout-icon: lucide-microscope; }    /* experiment / study */
+.callout[data-callout="practice"]   { --callout-color: 90, 90, 190;   --callout-icon: lucide-pencil; }
+.callout[data-callout="answer"]     { --callout-color: 120, 120, 120; --callout-icon: lucide-check; }
+.callout[data-callout="answer"] {
+  border: none;
+  border-left: 3px solid rgba(var(--callout-color), 0.5);
+  background-color: transparent;
+  border-radius: 0;
+}

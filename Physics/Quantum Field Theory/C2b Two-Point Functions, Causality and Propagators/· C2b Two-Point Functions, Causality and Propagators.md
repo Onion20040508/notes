@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C2b Two-Point Functions, Causality and Propagators
 ← [[· C2a The Quantum Scalar Field]] · ↑ [[Quantum Field Theory]] · [[· C3 Poincaré Symmetry and Particle States]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (77), [[· CA Mathematical Methods|CA Mathematical Methods]] (412)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (19), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (51), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (117), [[· CA Mathematical Methods|CA Mathematical Methods]] (43)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (87), [[· CA Mathematical Methods|CA Mathematical Methods]] (429)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (19), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (61), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (117), [[· CA Mathematical Methods|CA Mathematical Methods]] (43)
 
 ## Sections
 - [[§C2b.1 Heisenberg Fields]] — PS 2.4; Yu 6.3; 513 notes Ch. 5
@@ -25,10 +25,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality
 
 ## Theorems
-- [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|§C2b.1.4]] Time Dependence of the Modes; the Covariant Mode Expansion
-- [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|§C2b.1.6]] The Heisenberg Field Is an Operator-Valued Distribution on Spacetime
+- [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|§C2b.1.1]] The Equal-Time Relations Hold at Every Time
 - [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|§C2b.1.2]] The Heisenberg Equations Are the Klein–Gordon Equation
+- [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|§C2b.1.3]] Free Fields Live on the Mass Shell
+- [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|§C2b.1.4]] Time Dependence of the Modes; the Covariant Mode Expansion
 - [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|§C2b.1.5]] Positive and Negative Frequency
+- [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|§C2b.1.6]] The Heisenberg Field Is an Operator-Valued Distribution on Spacetime
 - [[§C2b.2 The Wightman Function#^thm-c2b-2-1|§C2b.2.1]] The Wightman Function as a Mode Integral
 - [[§C2b.2 The Wightman Function#^thm-c2b-2-2|§C2b.2.2]] The Wightman Function Is a Tempered Distribution
 - [[§C2b.2 The Wightman Function#^thm-c2b-2-3|§C2b.2.3]] Lorentz Invariance of the Wightman Function
@@ -56,17 +58,20 @@ tags: [chapter, quantum-field-theory]
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|§C2b.4.11]] Commutators at Unequal Times as Distributions
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|§C2b.4.12]] Cauchy Data of the Commutator Function
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-13|§C2b.4.13]] The Commutator Function Propagates the Field
-- [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|§C2b.1.3]] Free Fields Live on the Mass Shell
+- [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|§C2b.5.2]] A Green's Function Lives off the Shell
 - [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|§C2b.5.3]] Contours Are Boundary Conditions
 - [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|§C2b.5.4]] Each Contour Is a Fundamental Solution
 - [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|§C2b.5.5]] The Retarded Green's Function
 - [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future
+- [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|§C2b.5.7]] The Advanced Green's Function
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|§C2b.6.1]] Properties of Time Ordering
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|§C2b.6.2]] The Feynman Propagator
+- [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|§C2b.6.3]] The Anti-Feynman Function
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|§C2b.6.4]] The Feynman Propagator as a Distribution: the Products θ·D_W
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|§C2b.6.5]] The Free Schwinger–Dyson Equation
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|§C2b.6.6]] Contractions: Normal Ordering against Time Ordering
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|§C2b.6.7]] Normal Ordering Removes the Coincident Singularity
+- [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|§C2b.6.8]] The Zero-Point Energy Is the Wightman Function at Coincident Points
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|§C2b.6.9]] The $i\varepsilon$ Prescriptions
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|§C2b.6.10]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′
 - [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|§C2b.6.11]] Differences on the Mass Shell
@@ -74,7 +79,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-2|§C2b.7.2]] The Feynman Function at Imaginary Time
 - [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|§C2b.7.3]] The Feynman Function in Position Space
 - [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|§C2b.7.4]] Wick Rotation Continues One Distribution
-- [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|§C2b.5.7]] The Advanced and Anti-Feynman Functions
 - [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|§C2b.7.5]] Relations in the Two-Point Family
 - [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|§C2b.8.1]] The Late-Time Field
 - [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|§C2b.8.2]] The Final State Is a Coherent State

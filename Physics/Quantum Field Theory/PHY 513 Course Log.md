@@ -35,7 +35,7 @@ The notes of [[Quantum Field Theory]] follow Yu's chapter order; this log follow
 | 22 | | Compton scattering | §5.5 | — | QFT C8 (planned) |
 | 23 | | Path integrals | §9.1–9.2 | — | QFT C11 (planned) |
 | 24 | | Feynman rules from path integrals | §9.2–9.3 | — | QFT C11 (planned) |
-| 25 | | Quantization of EM fields | §9.4 | — | [[§C4.6 Covariant Quantization and the Indefinite Metric\|§C4.6]], [[§C4.7 The Gupta–Bleuler Condition and Physical Photons\|§C4.7]], [[§C4.8 Vector-Field Propagators\|§C4.8]]; QFT C11 (planned) |
+| 25 | | Quantization of EM fields | §9.4 | — | [[§C4.7 Covariant Quantization and the Indefinite Metric\|§C4.7]], [[§C4.8 The Gupta–Bleuler Condition and Physical Photons\|§C4.8]], [[§C4.9 Vector-Field Propagators\|§C4.9]]; QFT C11 (planned) |
 | 26 | | Path integrals and fermions | §9.5 | — | QFT C11 (planned) |
 | — | Dec 14 | Final exam | | | |
 

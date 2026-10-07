@@ -73,7 +73,7 @@ Which terms may a relativistic Lagrangian contain, and which of them matter at l
 >
 > **What the derivation shows.**
 > - $[\phi] = 1$, $[\pi] = [\dot\phi] = 2$, and $[\delta^3] = 3$ are consistent with $[\phi(\mathbf x), \pi(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$ ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]): $1 + 2 = 3$.
-> - Used next: the dimensions of couplings (Theorem §C1b.3.3). The spinor and vector kinetic terms are derived in QFT C5a ([[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]]) and C4 ([[§C4.2★ The Proca Field#^mod-c4-2-1|Model §C4.2.1]], [[§C4.2★ The Proca Field#^rem-c4-2-1|§C4.2★, Remark: Why F² plus a mass term]]; Maxwell: [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-5-2|Model §C4.5.2]]).
+> - Used next: the dimensions of couplings (Theorem §C1b.3.3). The spinor and vector kinetic terms are derived in QFT C5a ([[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]]) and C4 ([[§C4.2★ The Proca Field#^mod-c4-2-1|Model §C4.2.1]], [[§C4.2★ The Proca Field#^rem-c4-2-1|§C4.2★, Remark: Why F² plus a mass term]]; Maxwell: [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]]).
 
 ^der-c1b-3-2
 

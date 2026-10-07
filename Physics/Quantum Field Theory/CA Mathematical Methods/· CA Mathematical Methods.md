@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]]
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (7), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (43)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (44), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (30), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (193), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (412), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (133), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (44), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (30), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (193), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (429), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (148), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121)
 
 ## Sections
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals]] — 513 notes App. A §A.1
