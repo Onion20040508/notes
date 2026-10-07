@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 6 §§6.1–6.4, 6.6, 6.8 and Ch. 5 §5.7 · PHY 513 Lecture 6 (Larsen, 21 Sep 2026), Parts A–B · Peskin & Schroeder §2.4, pp. 29–31 · PHY 513, Problem Set 4, Problem 0.*
 
-How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One solves the equation once, with a delta function on the right, and the answer is a Green's function. Fourier transformation makes this a division by $m^2 - p^2$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), which is impossible on the mass shell; the integral needs a contour in the complex $p^0$-plane ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]], [[P2 Green's Functions by Contour Integration|P2]]), and the choice of contour is the choice of boundary condition. The first contour worked out is the retarded one, and the retarded function is the causal commutator of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
+How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One solves the equation once, with a delta function on the right, and the answer is a Green's function. Fourier transformation makes this a division by $m^2 - p^2$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), which is impossible on the mass shell; the integral needs a contour in the complex $p^0$-plane ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]], [[P2 Green's Functions by Contour Integration|P2]]), and the choice of contour is the choice of boundary condition. The first contours worked out are the retarded one, whose function is the causal commutator of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]], and its time mirror, the advanced one; their average is the principal-value function. The other two contours, Feynman and anti-Feynman, belong with time ordering ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]]).
 
 *Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\phi\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
@@ -50,45 +50,33 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 
 ^rem-c2b-5-1
 
-> [!theorem] Theorem §C2b.5.2: Free Fields Live on the Mass Shell
-> If $(\partial^2 + m^2)f = 0$, the transform of $f$ is supported on $p^2 = m^2$, $\tilde f(p) = 2\pi\,\delta(p^2 - m^2)\,g(p)$, and
+> [!theorem] Theorem §C2b.5.2: A Green's Function Lives off the Shell
+> If $D_C$ is a tempered Green's function ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]]), its transform obeys $(m^2 - p^2)\tilde D_C(p) = -i$, so
 >
 > $$
-> f(x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\Bigl[g(p)\,e^{-ip\cdot x} + g(-p)\,e^{ip\cdot x}\Bigr]_{p^0 = E_{\mathbf p}} ,
+> \tilde D_C(p) = \frac{i}{p^2 - m^2} \qquad\text{wherever } p^2 \ne m^2 :
 > $$
 >
-> the mode expansion, with $g(p) = \sqrt{2E_{\mathbf p}}\,a_{\mathbf p}$ for the free field. A Green's function, by contrast, has $\tilde D_C(p) = i/(p^2 - m^2)$ wherever $p^2 \ne m^2$: it lives off the shell.
+> unlike a free field, whose transform is supported on the mass shell ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]), a Green's function has off-shell components, and on the shell the equation does not determine it.
 >
-> *Source: the user's PHY 513 notes, Ch. 6 §6.3 (Principle "Free fields live on the mass shell"), §6.4 · PS §2.4, eqs. (2.57)–(2.58)*
+> *Source: the user's PHY 513 notes, Ch. 6 §6.3 (Principle "Free fields live on the mass shell": "a Green's function, by contrast …"), §6.4 · PS §2.4, pp. 29–30*
 
 ^thm-c2b-5-2
 
 > [!derivation]- Derivation
-> **Step 1** (transform). With $f(x) = \int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot x}$ and $\partial^2 + m^2 \leftrightarrow m^2 - p^2$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 2), the equation becomes $(m^2 - p^2)\tilde f(p) = 0$ as generalized functions of $p$ (the derivative rule holds in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3; $f$ tempered).
+> **Step 1** (transform the equation). The derivative rule ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 2; in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3) turns $\partial^2 + m^2$ into multiplication by $m^2 - p^2$, as in Step 1 of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], and $\tilde\delta^4 = 1$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 3). So $(\partial^2 + m^2)D_C = -i\delta^4$ becomes $(m^2 - p^2)\tilde D_C = -i$, an identity in $\mathcal S'(\mathbb R^4)$.
 >
-> **Step 2** (support). Where $p^2 \ne m^2$ one may divide by the smooth nonzero factor (multiplication by the smooth function $1/(m^2 - p^2)$ on that open set, [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1), so $\tilde f = 0$ there. On the shell, in the variable $s = p^2 - m^2$, the equation is $s\,T = 0$, whose solutions are multiples of $\delta(s)$: a derivative term is excluded because $s\,\delta'(s) = -\delta(s) \ne 0$. (Sense: near the shell, $(p^0, \mathbf p) \mapsto (s, \mathbf p)$ is a smooth change of variables because $\partial s/\partial p^0 = 2p^0 \ne 0$ there for $m > 0$; in the variable $s$ the distribution is supported at $s = 0$, so by [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]] it is a finite sum of derivatives of $\delta(s)$ with coefficients depending on $\mathbf p$; this is [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], 2.) So $\tilde f = 2\pi\delta(p^2 - m^2)g(p)$ for some $g$ on the shell.
->
-> **Step 3** (do the $p^0$ integral). By the composition rule ([[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]]; as distributions, [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 2, and [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1), roots $p^0 = \pm E_{\mathbf p}$ with $|\partial_{p^0}(p^2 - m^2)| = 2E_{\mathbf p}$: $\delta(p^2 - m^2) = \frac{\delta(p^0 - E_{\mathbf p}) + \delta(p^0 + E_{\mathbf p})}{2E_{\mathbf p}}$. Then
->
-> $$
-> f(x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\Bigl[g(E_{\mathbf p}, \mathbf p)\,e^{-iE_{\mathbf p}t + i\mathbf p\cdot\mathbf x} + g(-E_{\mathbf p}, \mathbf p)\,e^{iE_{\mathbf p}t + i\mathbf p\cdot\mathbf x}\Bigr].
-> $$
->
-> **Step 4** (relabel the negative-energy term). Substitute $\mathbf p \to -\mathbf p$ there (Jacobian 1, $E_{-\mathbf p} = E_{\mathbf p}$; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in the pairing with a test function): it becomes $g(-E_{\mathbf p}, -\mathbf p)e^{iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = g(-p)\,e^{ip\cdot x}$ with $p = (E_{\mathbf p}, \mathbf p)$. This is the stated formula.
->
-> **Step 5** (compare). Against [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], $g(p)/2E_{\mathbf p} = a_{\mathbf p}/\sqrt{2E_{\mathbf p}}$, so $g(p) = \sqrt{2E_{\mathbf p}}\,a_{\mathbf p}$; reality of $f$ gives $g(-p) = \overline{g(p)}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 4), here $\sqrt{2E}\,a^\dagger_{\mathbf p}$.
->
-> **Step 6** (a Green's function). The same rule turns $(\partial^2 + m^2)D_C = -i\delta^4$ into $(m^2 - p^2)\tilde D_C = -i$ (with $\tilde\delta^4 = 1$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 3), so $\tilde D_C = i/(p^2 - m^2)$ wherever $p^2 \ne m^2$.
+> **Step 2** (off the shell). On the open set $p^2 \ne m^2$ the factor $m^2 - p^2$ is smooth and nonzero, so multiplying by the smooth function $1/(m^2 - p^2)$ there ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1) gives $\tilde D_C = -i/(m^2 - p^2) = i/(p^2 - m^2)$ on that set.
 >
 > ⚑ By-product: on the shell the equation does not determine $\tilde D_C$; the freedom is exactly a free field, i.e. a homogeneous solution → [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|Theorem §C2b.5.3]].
 >
 > **What the derivation shows.**
-> - The three-dimensional mode expansions are four-dimensional transforms restricted to the shell, and the invariant measure $d^3p/2E_{\mathbf p}$ is what the shell leaves behind.
-> - A free field has no off-shell Fourier components; a Green's function must have them, and that is where the difficulty is.
+> - A free field has no off-shell Fourier components; a Green's function must have them, and on the shell, where $1/(p^2 - m^2)$ is not integrable, the equation leaves it open: that is where the difficulty is.
+> - Used next: the Green's function of a contour (Def. §C2b.5.2), which fixes the values near the shell.
 
 ^der-c2b-5-2
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]
+*Uses:* [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
 
 > [!definition] Definition §C2b.5.2: The Green's Function of a Contour
 > Let $C$ be a contour in the complex $p^0$-plane that follows the real axis from $-\infty$ to $+\infty$ except near $p^0 = \pm E_{\mathbf p}$, each of which it passes above or below. Then
@@ -143,18 +131,18 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > **Step 5** (homogeneous). Each $e^{\mp iE\xi^0 + i\mathbf p\cdot\boldsymbol\xi}$ is on shell, so $(\partial^2 + m^2)$ annihilates it ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], Step 1, an identity in $\mathcal S'$). This is part 2.
 >
-> ⚑ By-product: there are four ways of passing two poles, hence four standard Green's functions (figure below; Theorems §C2b.5.5, §C2b.6.2, §C2b.7.5).
+> ⚑ By-product: there are four ways of passing two poles, hence four standard Green's functions (figure below; Theorems §C2b.5.5, §C2b.5.7, §C2b.6.2, §C2b.6.3).
 >
 > **What the derivation shows.**
 > - The ambiguity in giving the integral a meaning and the ambiguity of boundary conditions are the same ambiguity: the lecture's claim, made precise.
-> - The operator side of part 1 is the contact term of time ordering ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]).
+> - The operator side of part 1 is the contact term of time ordering ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]]).
 
 ^der-c2b-5-3
 
 *Uses:* [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]
 
 ![[ph-qft-c2-6-1.svg]]
-*The four ways of passing the poles $p^0 = \pm E_{\mathbf p}$ and the Green's functions they define (Theorems §C2b.5.5, §C2b.6.2, §C2b.7.5; Def. §C2b.7.2). Adapted from the user's PHY 513 notes, Fig. 6.4.*
+*The four ways of passing the poles $p^0 = \pm E_{\mathbf p}$ and the Green's functions they define ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]; [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]]). Adapted from the user's PHY 513 notes, Fig. 6.4.*
 
 > [!theorem] Theorem §C2b.5.4: Each Contour Is a Fundamental Solution
 > Let $C$ pass $+E_{\mathbf p}$ on the side $\sigma_+$ and $-E_{\mathbf p}$ on the side $\sigma_-$ ($\sigma = +1$ above, $-1$ below).
@@ -172,7 +160,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 ^thm-c2b-5-4
 
 > [!derivation]- Derivation
-> **Step 1** (fixed $\mathbf p$: the time function). Let $E = E_{\mathbf p} > 0$. On $C$, far from the poles $C$ is the real axis and the integrand $\frac{i}{2\pi}\frac{e^{-ip^0t}}{(p^0)^2 - E^2}$ is bounded by a constant times $1/|p^0|^2$, so $G_C(t) \equiv \int_C\frac{dp^0}{2\pi}\frac{i\,e^{-ip^0t}}{(p^0)^2 - E^2}$ converges absolutely for every real $t$. By the residue evaluations ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]]) $G_C$ is a combination, with coefficients in $\{0, \pm1\}$, of $\theta(\pm t)e^{\mp iEt}/2E$; so $|G_C(t)| \le 1/E$.
+> **Step 1** (fixed $\mathbf p$: the time function). Let $E = E_{\mathbf p} > 0$. On $C$, far from the poles $C$ is the real axis and the integrand $\frac{i}{2\pi}\frac{e^{-ip^0t}}{(p^0)^2 - E^2}$ is bounded by a constant times $1/|p^0|^2$, so $G_C(t) \equiv \int_C\frac{dp^0}{2\pi}\frac{i\,e^{-ip^0t}}{(p^0)^2 - E^2}$ converges absolutely for every real $t$. By the residue evaluations ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]) $G_C$ is a combination, with coefficients in $\{0, \pm1\}$, of $\theta(\pm t)e^{\mp iEt}/2E$; so $|G_C(t)| \le 1/E$.
 >
 > **Step 2** (a tempered distribution). Def. §C2b.5.2 is the iterated integral $D_C(\xi) = \int\frac{d^3p}{(2\pi)^3}e^{i\mathbf p\cdot\boldsymbol\xi}G_C(\xi^0; E_{\mathbf p})$. For $f \in \mathcal S(\mathbb R^4)$ with spatial transform $\tilde f_s(t, \mathbf k) = \int d^3\xi\,f(t, \boldsymbol\xi)e^{-i\mathbf k\cdot\boldsymbol\xi}$, define
 >
@@ -198,9 +186,9 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > By the derivative rule in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3) and $\tilde\delta^4 = 1$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 3), $(\partial^2 + m^2)D_C = -i\delta^4$. Part 2, first half.
 >
-> **Step 6** (all fundamental solutions). By [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], 1–2, $G - D_C$ is homogeneous for every fundamental solution $G$, with transform supported on the shell; conversely $D_C + H$ is a fundamental solution for every such $H$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]]).
+> **Step 6** (all fundamental solutions). By [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], 1–2, $G - D_C$ is homogeneous for every fundamental solution $G$, with transform supported on the shell; conversely $D_C + H$ is a fundamental solution for every such $H$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]).
 >
-> ⚑ By-product: "the contour" and "the $i\varepsilon$" are the same object, the choice of $\frac{1}{p^0 \mp E \pm i0}$ at each pole → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|Theorem §C2b.6.7]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]].
+> ⚑ By-product: "the contour" and "the $i\varepsilon$" are the same object, the choice of $\frac{1}{p^0 \mp E \pm i0}$ at each pole → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]].
 >
 > **What the derivation shows.**
 > - The integral of Def. §C2b.5.2 is a distribution, not a function of $\xi$, and Theorem §C2b.5.3's formal manipulations are identities in $\mathcal S'$.
@@ -209,9 +197,9 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 
 ^der-c2b-5-4
 
-*Uses:* [[§C2b.5 Green's Functions and Contours#^def-c2b-5-2|Def. §C2b.5.2]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|Theorem §C2b.5.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]
+*Uses:* [[§C2b.5 Green's Functions and Contours#^def-c2b-5-2|Def. §C2b.5.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|Theorem §C2b.5.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]
 
-## The retarded function
+## The retarded and advanced functions
 
 > [!theorem] Theorem §C2b.5.5: The Retarded Green's Function
 > The **retarded** contour $C_R$ passes above both poles. Then
@@ -291,7 +279,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > ⚑ By-product: an extension that is not a fundamental solution differs from $D_R$ by contact terms $\sum c_\alpha\partial^\alpha\delta^4$; for products of interacting fields the same freedom reappears as the local ambiguity of renormalization (QFT C7, planned).
 >
-> **Step 5** (causal uniqueness). Let $G$ be a tempered fundamental solution with $G = 0$ on $\{\xi^0 < 0\}$, and $H = G - D_R$. $H$ is homogeneous, tempered and vanishes for $\xi^0 < 0$. By [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]] its spatial transform at time $t$ is $\alpha(\mathbf p)e^{-iE_{\mathbf p}t} + \beta(\mathbf p)e^{iE_{\mathbf p}t}$ with distributions $\alpha$, $\beta$ in $\mathbf p$, smooth in $t$. It vanishes for all $t < 0$, and so does its $t$-derivative $-iE(\alpha e^{-iEt} - \beta e^{iEt})$; at any fixed $t < 0$ this $2\times2$ system for $(\alpha, \beta)$ has determinant $2iE_{\mathbf p} \ne 0$, smooth in $\mathbf p$, so $\alpha = \beta = 0$ (as in Step 3 of Derivation §C2b.4.12). Hence $G = D_R$.
+> **Step 5** (causal uniqueness). Let $G$ be a tempered fundamental solution with $G = 0$ on $\{\xi^0 < 0\}$, and $H = G - D_R$. $H$ is homogeneous, tempered and vanishes for $\xi^0 < 0$. By [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]] its spatial transform at time $t$ is $\alpha(\mathbf p)e^{-iE_{\mathbf p}t} + \beta(\mathbf p)e^{iE_{\mathbf p}t}$ with distributions $\alpha$, $\beta$ in $\mathbf p$, smooth in $t$. It vanishes for all $t < 0$, and so does its $t$-derivative $-iE(\alpha e^{-iEt} - \beta e^{iEt})$; at any fixed $t < 0$ this $2\times2$ system for $(\alpha, \beta)$ has determinant $2iE_{\mathbf p} \ne 0$, smooth in $\mathbf p$, so $\alpha = \beta = 0$ (as in Step 3 of Derivation §C2b.4.12). Hence $G = D_R$.
 >
 > **Step 6** ($m = 0$). By [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], $D = -\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2)$, and at fixed $t > 0$, $D(t, \cdot) = -\frac{1}{4\pi r}\delta(t - r)$. The slice product of Step 1 is $\int_0^\infty dt\,D(t, \cdot)[f(t, \cdot)] = -\frac{1}{2\pi}\int d^3\xi\,\frac{f(r, \boldsymbol\xi)}{2r}$, which is $-\frac{1}{2\pi}\theta(\xi^0)\delta(\xi^2)[f]$ by [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2, a distribution on all of $\mathbb R^4$, tip included. Multiplying by $i$ gives part 3's formula; $\delta(t^2 - r^2) = \delta(t - r)/2r$ for $t > 0$ ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 2).
 >
@@ -299,11 +287,59 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > - "θ times a distribution" is harmless here for a structural reason: $D$ is smooth in time, its singularities lie on the cone, and the cone meets the plane $\xi^0 = 0$ only at one point, where the field equation fixes the extension.
 > - The retarded boundary condition, "nothing before the source", is precisely a statement about support.
 > - A second characterization of the same extension, by power counting: near $\xi = 0$, $D$ scales like $|\xi|^{-2}$ ($\delta(\lambda^2\xi^2) = \lambda^{-2}\delta(\xi^2)$), while every $\partial^\alpha\delta^4$ scales at least like $|\xi|^{-4}$; so the slice product is the only extension no more singular at the origin than $D$ itself (scaling degree $2 <$ dimension $4$; Brunetti–Fredenhagen, Commun. Math. Phys. 208 (2000), Thm. 5.2; quoted, not proved here).
-> - Used next: the same three readings for $D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]); the retarded solution of a sourced equation ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]]).
+> - Used next: the same three readings for $D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]); the retarded solution of a sourced equation ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]]).
 
 ^der-c2b-5-6
 
-*Uses:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]
+*Uses:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]
+
+> [!theorem] Theorem §C2b.5.7: The Advanced Green's Function
+> The **advanced** contour $C_A$ passes below both poles. Then
+>
+> $$
+> D_A(\xi) = -\theta(-\xi^0)\bigl[D_W(\xi) - D_W(-\xi)\bigr] = -\theta(-\xi^0)\,iD(\xi) = D_R(-\xi) ,
+> $$
+>
+> the product taken slice by slice as in [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 1. $D_A$ vanishes unless $x$ lies in the causal past of $y$ (inside or on the backward light cone), and it is the only tempered fundamental solution that vanishes for $\xi^0 > 0$. Mode by mode it is $\theta(-t)\,(i\sin E_{\mathbf p}t)/E_{\mathbf p}$.
+>
+> *Source: the user's PHY 513 notes, Ch. 6 §6.8 (table of contours, "every entry checked by integrating along the real axis at finite $\varepsilon$"), §6.11 (the family: "mirror product, supported in $\xi^0 \le 0$")*
+
+^thm-c2b-5-7
+
+> [!derivation]- Derivation
+> Steps 1–2 of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]] apply unchanged (same integrand, same arcs); the rest is [[P2 Green's Functions by Contour Integration#^p2-5|P2, steps 5–6]].
+>
+> **Step 1** ($t > 0$). Close downward; $C_A$ passes below both poles, so both lie above the closed contour: nothing enclosed, $G_A = 0$.
+>
+> **Step 2** ($t < 0$). Close upward, counterclockwise, around both: $G_A = +2\pi i\cdot\frac{i}{2\pi}\cdot\frac{e^{-iEt} - e^{iEt}}{2E} = -\frac{e^{-iEt} - e^{iEt}}{2E} = \frac{i\sin Et}{E}$. With the relabelling of Step 5 of Theorem §C2b.5.5 ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in $\mathcal S'$), $D_A = -\theta(-t)[D_W(\xi) - D_W(-\xi)] = -\theta(-t)\,iD(\xi)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]), the product taken slice by slice as in [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 1 (the same argument with $\int_{-\infty}^0dt$ in place of $\int_0^\infty dt$).
+>
+> **Step 3** (the mirror of $D_R$). $D$ is odd, $D(-\xi) = -D(\xi)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]]). Hence $D_R(-\xi) = \theta(-\xi^0)\,iD(-\xi) = -\theta(-\xi^0)\,iD(\xi) = D_A(\xi)$. (As distributions: reflection $f \mapsto f(-\cdot)$ of the test function, [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], turns the slice integral $\int_0^\infty dt$ into $\int_{-\infty}^0dt$.)
+>
+> **Step 4** (support). $D_R$ is supported in the closed forward cone ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]), so by Step 3 $D_A$ is supported in the closed backward cone: it vanishes unless $x$ is in the causal past of $y$.
+>
+> **Step 5** (uniqueness). The Klein–Gordon operator and $\delta^4$ are even under $\xi \to -\xi$. If $G$ is a tempered fundamental solution vanishing for $\xi^0 > 0$, then $G(-\xi)$ is a tempered fundamental solution vanishing for $\xi^0 < 0$, hence $G(-\xi) = D_R(\xi)$ by [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 3; so $G(\xi) = D_R(-\xi) = D_A(\xi)$.
+>
+> **What the derivation shows.**
+> - The advanced function is the time mirror of the retarded one: the same residues, collected for $t < 0$; the advanced boundary condition, "nothing after the sink", is again a support statement.
+> - Together with Theorems §C2b.5.5, §C2b.6.2 and the anti-Feynman function ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]) these exhaust the four contours.
+> - Used next: the principal-value function (Def. §C2b.5.3) and the relations of the family ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]]).
+
+^der-c2b-5-7
+
+*Uses:* [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]
+
+> [!definition] Definition §C2b.5.3: Principal-Value Green's Function
+> The **principal-value** (half-retarded, half-advanced) Green's function is
+>
+> $$
+> \bar D(\xi) \equiv \tfrac12\bigl[D_R(\xi) + D_A(\xi)\bigr],
+> $$
+>
+> with $D_R$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]] and $D_A$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]]. As the average of two Green's functions it is one; the name records that its transform is a principal value, $i\,\mathcal P\frac{1}{p^2 - m^2}$ ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]]; [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 6 §6.11 (Definition "The family": $\bar D = \frac12(D_R + D_A)$)*
+
+^def-c2b-5-3
 
 > [!remark] Remark: Measurable response is a retarded commutator
 > Couple the quantum field to a classical source as in [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]], which adds $-\int d^3x\,j\phi$ to $H$. The retarded solution changes the expectation value of the field by
@@ -323,6 +359,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > - The massless retarded function, $D_R = -\frac{i}{4\pi r}\delta(t - r)$ for $t > 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]]), turns $i\int D_Rj$ into $\int d^3y\,j(t - |\mathbf x - \mathbf y|, \mathbf y)/4\pi|\mathbf x - \mathbf y|$: the retarded potentials of [[§B11.1★ Potentials, Gauges and Retarded Potentials#^thm-b11-1-4|EM Theorem §B11.1.4]] (with $\partial^2 = -\Box$ in EM's sign).
 > - A static point source $j = g\,\delta^3(\mathbf y)$ gives, through the retarded function integrated over $y^0$, $\phi = g\int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\mathbf p^2 + m^2} = \frac{g}{4\pi}\frac{e^{-mr}}{r}$: the Yukawa field of [[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]], the $p^0 = 0$ slice of $\tilde D$.
 > - Electromagnetism level C: at $m = 0$ the static slice is electrostatics; there the Green functions of Poisson's equation with boundaries (Dirichlet, Neumann) are fundamental solutions in this section's sense, $i\varepsilon_0G$ in the $-i$ normalization, each the free one plus a harmonic function; the Lorenz-gauge potentials are retarded solutions of this section — [[§C7.3 Green Functions for Poisson’s Equation#^def-c7-3-1|EM Def. §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^cau-c7-3-1|EM Caution: Normalizations of the Green function]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-1|EM Theorem §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-4|EM Theorem §C7.3.4]], [[§C1.4 Gauge Fixing and the Two Polarizations#^thm-c1-4-1|EM Theorem §C1.4.1]].
+> - The advanced function is the retarded one mirrored in time, $D_A(\xi) = D_R(-\xi)$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]]); classical electrodynamics uses both, and the half-retarded, half-advanced $\bar D$ ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-3|Def. §C2b.5.3]]) is the time-symmetric Green's function of Wheeler–Feynman absorber theory; the whole family is tabulated in [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
 > - The procedure behind every contour in this section is [[P2 Green's Functions by Contour Integration|P2]]; the classical source of Model §C2b.5.1 produces particles in [[§C2b.8 Particle Production by a Classical Source|§C2b.8]].
 > - [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]] and [[§CA.2 Generalized Functions#^thm-ca-2-14|Theorem §CA.2.14]] (fundamental solutions and their differences) are what a Green's function is: Theorem §C2b.5.4 shows each contour gives one, and they differ by on-shell homogeneous solutions.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-15|Theorem §CA.2.15]] (convolution with a fundamental solution) is the statement that $\phi = i\int D_Cj$ solves the sourced equation when $j$ is a test function.

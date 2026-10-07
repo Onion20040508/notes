@@ -57,7 +57,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 > **What the derivation shows**
 > - Four modes per momentum: two eigenvalues $\pm E_{\mathbf p}$ of $H_{\text{s.p.}}(\mathbf p)$, each twice; the negative-energy eigenvectors appear, after relabelling, as $v^s(p)e^{+ip\cdot x}$.
 > - Assumptions used: $m > 0$ (smooth spinors), fall-off or smearing.
-> - Lecture 10 did not derive the expansion: it posited it by analogy with the scalar and checked it through the anticommutators ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-1|Remark: Reading the expansion]]). The two routes meet as for the scalar ([[§C2b.1 Heisenberg Fields#^rem-c2b-1-3|§C2b.1, Remark: Two routes that meet]]).
+> - Lecture 10 did not derive the expansion: it posited it by analogy with the scalar and checked it through the anticommutators ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-1|Remark: Reading the expansion]]). The two routes meet as for the scalar ([[§C2b.1 Heisenberg Fields#^rem-c2b-1-4|§C2b.1, Remark: Two routes that meet]]).
 > - Used next: mode extraction ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]]) and $H$ in modes ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]]).
 
 ^der-c5b-2-1

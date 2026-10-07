@@ -39,16 +39,27 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 
 ^rem-c2b-4-1
 
-> [!definition] Definition §C2b.4.1: Commutator Function; Hadamard Function
-> The **commutator function** $D$ (Pauli–Jordan function) and the **Hadamard function** $D_1$ are
+> [!definition] Definition §C2b.4.1: Commutator Function
+> The **commutator function** $D$ (Pauli–Jordan function) is defined by
 >
 > $$
-> iD(x - y) \equiv \langle0|[\phi(x), \phi(y)]|0\rangle, \qquad D_1(x - y) \equiv \langle0|\{\phi(x), \phi(y)\}|0\rangle .
+> iD(x - y) \equiv \langle0|[\phi(x), \phi(y)]|0\rangle .
 > $$
 >
-> *Source: the user's PHY 513 notes, Ch. 5 §5.5 · PHY 513, Problem Set 4, eqs. (9)–(10)*
+> *Source: the user's PHY 513 notes, Ch. 5 §5.5 · PHY 513, Problem Set 4, eq. (9)*
 
 ^def-c2b-4-1
+
+> [!definition] Definition §C2b.4.2: Hadamard Function
+> The **Hadamard function** $D_1$ is the vacuum expectation value of the anticommutator of two fields,
+>
+> $$
+> D_1(x - y) \equiv \langle0|\{\phi(x), \phi(y)\}|0\rangle .
+> $$
+>
+> *Source: the user's PHY 513 notes, Ch. 5 §5.5 · PHY 513, Problem Set 4, eq. (10)*
+
+^def-c2b-4-2
 
 > [!caution] Caution: One letter, four objects
 > PS's $D(x - y)$ is the Wightman function $D_W$ here, and PS name neither $D$ nor $D_1$. Yu calls the commutator itself the Pauli–Jordan function, $D_{\mathrm{PJ}}(x - y) \equiv [\phi(x), \phi(y)]$ (Yu eq. (6.111)), so $D_{\mathrm{PJ}} = iD$. The Lecture 6 slides write a bare $D(x - y)$ for a generic Green's function, which is $D_C$ here ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]]). The names here follow Problem Set 4.
@@ -69,7 +80,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 ^thm-c2b-4-2
 
 > [!derivation]- Derivation
-> **Step 1** (two names). Insert [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]] (read smeared, $[\phi(f), \phi(g)]$ for test functions $f$, $g$: [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]) with momenta $\mathbf p$ for $\phi(x)$ and $\mathbf q$ for $\phi(y)$; the commutator of the products of brackets is the sum of four commutators, each with its exponentials:
+> **Step 1** (two names). Insert [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] (read smeared, $[\phi(f), \phi(g)]$ for test functions $f$, $g$: [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]]) with momenta $\mathbf p$ for $\phi(x)$ and $\mathbf q$ for $\phi(y)$; the commutator of the products of brackets is the sum of four commutators, each with its exponentials:
 >
 > $$
 > [\phi(x), \phi(y)] = \int\frac{d^3p\,d^3q}{(2\pi)^6\sqrt{2E_{\mathbf p}2E_{\mathbf q}}}\Bigl([a_{\mathbf p}, a_{\mathbf q}]e^{-ip\cdot x - iq\cdot y} + [a_{\mathbf p}, a_{\mathbf q}^\dagger]e^{-ip\cdot x + iq\cdot y} + [a_{\mathbf p}^\dagger, a_{\mathbf q}]e^{ip\cdot x - iq\cdot y} + [a_{\mathbf p}^\dagger, a_{\mathbf q}^\dagger]e^{ip\cdot x + iq\cdot y}\Bigr).
@@ -90,7 +101,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 
 ^der-c2b-4-2
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]]
 
 > [!theorem] Theorem §C2b.4.3: The Commutator and Hadamard Functions Are the Parts of the Wightman Function
 > With $\xi = x - y$:
@@ -116,7 +127,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 >
 > **What the derivation shows.**
 > - Microcausality ($D = 0$) is equivalent to the reality of $D_W$ (used in Theorem §C2b.4.5, second route).
-> - Both $D$ and $D_1$ are homogeneous solutions, not Green's functions; Green's functions are built from them with step functions ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-6|Theorem §C2b.7.6]]).
+> - Both $D$ and $D_1$ are homogeneous solutions, not Green's functions; Green's functions are built from them with step functions ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]]).
 
 ^der-c2b-4-3
 
@@ -216,7 +227,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 *Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]
 
 > [!theorem] Theorem §C2b.4.7: Forward and Backward Amplitudes
-> As distributions on $\mathbb R^4$, with the commutator function $D$ and the Hadamard function $D_1$ of [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]],
+> As distributions on $\mathbb R^4$, with the commutator function $D$ of [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]] and the Hadamard function $D_1$ of [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-2|Def. §C2b.4.2]],
 > 1. $U(t, \mathbf x) + U(-t, \mathbf x) = -2\,\partial_tD(t, \mathbf x)$, which vanishes outside the light cone;
 > 2. $U(t, \mathbf x) - U(-t, \mathbf x) = 2i\,\partial_tD_1(t, \mathbf x)$;
 > 3. hence $U = i\,\partial_tD_1 - \partial_tD$, and outside the light cone $U = i\,\partial_tD_1$.
@@ -371,7 +382,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 ^thm-c2b-4-10
 
 > [!derivation]- Derivation
-> **Step 1** (derivatives pass through the commutator). $\pi(y) = \partial_{y^0}\phi(y)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], 3) and $\phi(x)$ does not depend on $y$, so by the product rule $\partial_{y^0}\bigl(\phi(x)\phi(y) - \phi(y)\phi(x)\bigr) = \phi(x)\pi(y) - \pi(y)\phi(x) = [\phi(x), \pi(y)]$ (derivatives of distributions, [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]; concretely the smeared form of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]). With $[\phi(x), \phi(y)] = iD(x - y)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]), $[\phi(x), \pi(y)] = i\partial_{y^0}D(x - y)$; applying $\partial_{x^0}$ in the same way, $[\pi(x), \pi(y)] = i\partial_{x^0}\partial_{y^0}D$.
+> **Step 1** (derivatives pass through the commutator). $\pi(y) = \partial_{y^0}\phi(y)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], 3) and $\phi(x)$ does not depend on $y$, so by the product rule $\partial_{y^0}\bigl(\phi(x)\phi(y) - \phi(y)\phi(x)\bigr) = \phi(x)\pi(y) - \pi(y)\phi(x) = [\phi(x), \pi(y)]$ (derivatives of distributions, [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]; concretely the smeared form of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]). With $[\phi(x), \phi(y)] = iD(x - y)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]), $[\phi(x), \pi(y)] = i\partial_{y^0}D(x - y)$; applying $\partial_{x^0}$ in the same way, $[\pi(x), \pi(y)] = i\partial_{x^0}\partial_{y^0}D$.
 >
 > **Step 2** (the phase). In $p\cdot\xi = E_{\mathbf p}(x^0 - y^0) - \mathbf p\cdot(\mathbf x - \mathbf y)$: $\partial_{y^0}(p\cdot\xi) = -E_{\mathbf p}$ and $\partial_{x^0}(p\cdot\xi) = +E_{\mathbf p}$.
 >
@@ -386,11 +397,11 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > **What the derivation shows.**
 > - At unequal times the phases $E_{\mathbf p}(x^0 - y^0)$ smear the delta function out: $[\phi, \pi]$ is the canonical delta function, propagated.
 > - With interactions these commutators become genuine operators → [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-7|★ Remark: With interactions]].
-> - Used next: the contact terms of time-ordered products ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]).
+> - Used next: the contact terms of time-ordered products ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]]).
 
 ^der-c2b-4-10
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]
 
 > [!theorem] Theorem §C2b.4.11: Commutators at Unequal Times as Distributions
 > For real $f, g \in \mathcal S(\mathbb R^3)$ and sharp-time fields $\phi(t, f) = \int d^3x\,f(\mathbf x)\phi(t, \mathbf x)$ ([[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]] at time $t$):
@@ -402,7 +413,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 ^thm-c2b-4-11
 
 > [!derivation]- Derivation
-> **Step 1** (smeared fields at two times). With the spatial transform $\tilde f(\mathbf k) = \int d^3x\,f(\mathbf x)e^{-i\mathbf k\cdot\mathbf x}$, [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]] smeared at time $t$ gives $\phi(t, f) = \int\frac{d^3p}{(2\pi)^3\sqrt{2E_{\mathbf p}}}\bigl(e^{-iE_{\mathbf p}t}\tilde f(-\mathbf p)\,a_{\mathbf p} + e^{iE_{\mathbf p}t}\tilde f(\mathbf p)\,a_{\mathbf p}^\dagger\bigr)$, Schwartz coefficients ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], Step 1).
+> **Step 1** (smeared fields at two times). With the spatial transform $\tilde f(\mathbf k) = \int d^3x\,f(\mathbf x)e^{-i\mathbf k\cdot\mathbf x}$, [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] smeared at time $t$ gives $\phi(t, f) = \int\frac{d^3p}{(2\pi)^3\sqrt{2E_{\mathbf p}}}\bigl(e^{-iE_{\mathbf p}t}\tilde f(-\mathbf p)\,a_{\mathbf p} + e^{iE_{\mathbf p}t}\tilde f(\mathbf p)\,a_{\mathbf p}^\dagger\bigr)$, Schwartz coefficients ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], Step 1).
 >
 > **Step 2** (the commutator). With $[a_{\mathbf p}, a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ acting on Schwartz coefficients, and $t = x^0 - y^0$,
 >
@@ -414,17 +425,17 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 >
 > **Step 3** (the kernel). For $h(\boldsymbol\xi) = \int d^3y\,f(\boldsymbol\xi + \mathbf y)g(\mathbf y)$, $\tilde h(\mathbf k) = \tilde f(\mathbf k)\tilde g(-\mathbf k)$ (translation ↔ phase, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 1), and the distribution with spatial transform $-\sin(Et)/E$, $D(t, \cdot)$ of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], 3, acts on $h$ as $\int\frac{d^3k}{(2\pi)^3}\frac{-\sin E_{\mathbf k}t}{E_{\mathbf k}}\tilde h(-\mathbf k)$. Comparing with Step 2, $[\phi(x^0, f), \phi(y^0, g)] = i\,D(t, \cdot)[h] = i\int d^3x\,d^3y\,f(\mathbf x)g(\mathbf y)D(x - y)$.
 >
-> **Step 4** (time derivatives). $\pi(y^0, g) = \partial_{y^0}\phi(y^0, g)$ on wave-packet states ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], 3, smeared). Differentiating Step 2 under the absolutely convergent integral ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2) brings $\partial_{y^0} = -\partial_t$ onto $-i\sin(Et)/E$, giving $i\cos(Et)$; $\partial_{x^0}\partial_{y^0} = -\partial_t^2$ gives $-iE\sin(Et)$. Each is polynomially bounded in $\mathbf p$, so the kernels are tempered in $\boldsymbol\xi$ and smooth in $t$. Part 1.
+> **Step 4** (time derivatives). $\pi(y^0, g) = \partial_{y^0}\phi(y^0, g)$ on wave-packet states ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], 3, smeared). Differentiating Step 2 under the absolutely convergent integral ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2) brings $\partial_{y^0} = -\partial_t$ onto $-i\sin(Et)/E$, giving $i\cos(Et)$; $\partial_{x^0}\partial_{y^0} = -\partial_t^2$ gives $-iE\sin(Et)$. Each is polynomially bounded in $\mathbf p$, so the kernels are tempered in $\boldsymbol\xi$ and smooth in $t$. Part 1.
 >
 > **Step 5** (equal times). As $t \to 0$, $\sin(Et)/E \to 0$, $\cos(Et) \to 1$, $E\sin(Et) \to 0$ pointwise, bounded by $|t|$, $1$, $E^2|t|$; dominated convergence against $\tilde h(-\mathbf k)$ gives convergence of the pairings ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]]). The limit transform $1$ is that of $\delta^3$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 3; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). Part 2.
 >
 > **What the derivation shows.**
-> - "Unequal times" means: a smooth function of the time difference with values in spatial distributions. Its value at $t = 0$, and products with $\delta(x^0 - y^0)$, are therefore defined: the contact terms of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], Step 7, and [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]].
+> - "Unequal times" means: a smooth function of the time difference with values in spatial distributions. Its value at $t = 0$, and products with $\delta(x^0 - y^0)$, are therefore defined: the contact terms of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], Step 7, and [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]].
 > - The equal-time relations are recovered as limits, not as values: the derived commutators contain the postulated ones continuously.
 
 ^der-c2b-4-11
 
-*Uses:* [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!theorem] Theorem §C2b.4.12: Cauchy Data of the Commutator Function
 > $D$ is the unique solution of $(\partial^2 + m^2)D = 0$ with
@@ -442,7 +453,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 >
 > **Step 2** (the data). At $\xi^0 = 0$, $D = -\int\frac{d^3p}{(2\pi)^3}\frac{\sin(-\mathbf p\cdot\boldsymbol\xi)}{E_{\mathbf p}} = 0$ by oddness. Differentiating, $\partial_0D = -\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}\cos(p\cdot\xi)}{E_{\mathbf p}}$, which at $\xi^0 = 0$ is $-\delta^3(\boldsymbol\xi)$ (in $\mathcal S'(\mathbb R^3)$: the spatial transform $-\cos(E\cdot0) = -1$, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], 3) as in Step 4 of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]. Equivalently, $\partial_{x^0}D = -i[\pi(x), \phi(y)] = -i\cdot(-i)\delta^3 = -\delta^3$ at equal times.
 >
-> **Step 3** (uniqueness; for tempered solutions, whose transforms are distributions supported on the shell, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]], with $\alpha_{\mathbf p}$, $\beta_{\mathbf p}$ distributions in $\mathbf p$ and the $2\times2$ system solved by multiplying with smooth functions of $\mathbf p$, [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1). A solution with a spatial Fourier transform has the form $f(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\sqrt{2E_{\mathbf p}}}\bigl(\alpha_{\mathbf p}e^{-iE_{\mathbf p}t} + \beta_{\mathbf p}e^{iE_{\mathbf p}t}\bigr)$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]]). At $t = 0$ its data have transforms $\tilde f = (\alpha + \beta)/\sqrt{2E}$ and $\tilde{\dot f} = -iE(\alpha - \beta)/\sqrt{2E}$. This $2\times2$ linear system for $(\alpha, \beta)$ has determinant $\frac{1}{2E}\cdot\det\begin{pmatrix}1 & 1\\ -iE & iE\end{pmatrix} = \frac{2iE}{2E} = i \ne 0$, so the data fix $\alpha_{\mathbf p}$, $\beta_{\mathbf p}$, hence $f$. Two solutions with the same data are equal.
+> **Step 3** (uniqueness; for tempered solutions, whose transforms are distributions supported on the shell, [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], with $\alpha_{\mathbf p}$, $\beta_{\mathbf p}$ distributions in $\mathbf p$ and the $2\times2$ system solved by multiplying with smooth functions of $\mathbf p$, [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1). A solution with a spatial Fourier transform has the form $f(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\sqrt{2E_{\mathbf p}}}\bigl(\alpha_{\mathbf p}e^{-iE_{\mathbf p}t} + \beta_{\mathbf p}e^{iE_{\mathbf p}t}\bigr)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]). At $t = 0$ its data have transforms $\tilde f = (\alpha + \beta)/\sqrt{2E}$ and $\tilde{\dot f} = -iE(\alpha - \beta)/\sqrt{2E}$. This $2\times2$ linear system for $(\alpha, \beta)$ has determinant $\frac{1}{2E}\cdot\det\begin{pmatrix}1 & 1\\ -iE & iE\end{pmatrix} = \frac{2iE}{2E} = i \ne 0$, so the data fix $\alpha_{\mathbf p}$, $\beta_{\mathbf p}$, hence $f$. Two solutions with the same data are equal.
 >
 > **What the derivation shows.**
 > - Quantizing on a single time slice is enough: the canonical relations at one instant, carried by the field equation, determine every commutator at every pair of times.
@@ -451,7 +462,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 
 ^der-c2b-4-12
 
-*Uses:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]]
+*Uses:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]
 
 > [!theorem] Theorem §C2b.4.13: The Commutator Function Propagates the Field
 > For every time $y^0$,
@@ -469,7 +480,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > [!derivation]- Derivation
 > *Sense of the formula:* smear in $\mathbf x$ at fixed $x^0$ with $f \in \mathcal S(\mathbb R^3)$. Then $\int d^3x\,f(\mathbf x)D(x - y) = \bigl(D(x^0 - y^0, \cdot) \ast  f\bigr)(\mathbf y)$ is a Schwartz function of $\mathbf y$ (at fixed time $D$ has compact spatial support, $|\boldsymbol\xi| \le |\xi^0|$, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]]), so every $d^3y$ integral below is a sharp-time smeared field ([[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]]) and the identity is one between operators.
 >
-> **Step 1** (both factors solve the equation in $y$). $\phi(y)$ does ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]). $D(x - y)$, as a function of $y$, does too: $\partial_{y^\mu} = -\partial_{\xi^\mu}$, and second derivatives carry two minus signs, so $(\partial_y^2 + m^2)D(x - y) = (\partial_\xi^2 + m^2)D(\xi) = 0$.
+> **Step 1** (both factors solve the equation in $y$). $\phi(y)$ does ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]). $D(x - y)$, as a function of $y$, does too: $\partial_{y^\mu} = -\partial_{\xi^\mu}$, and second derivatives carry two minus signs, so $(\partial_y^2 + m^2)D(x - y) = (\partial_\xi^2 + m^2)D(\xi) = 0$.
 >
 > **Step 2** (independence of $y^0$). Let $F(y^0) = \int d^3y\,(D\,\partial_0\phi - \partial_0D\,\phi)$, derivatives with respect to $y^0$. Then $F' = \int d^3y\,(\partial_0D\,\partial_0\phi + D\,\partial_0^2\phi - \partial_0^2D\,\phi - \partial_0D\,\partial_0\phi)$; the first and last terms cancel. By Step 1, $\partial_0^2 = \nabla^2 - m^2$ on both, the $m^2$ terms cancel, and $F' = \int d^3y\,(D\nabla^2\phi - \nabla^2D\,\phi)$. Two integrations by parts (Green's second identity) turn this into a surface integral $\oint dS\,(D\,\hat n\cdot\nabla\phi - \hat n\cdot\nabla D\,\phi)$ over a large sphere, which vanishes: at fixed $y^0$, $D(x - y)$ is zero for $|\mathbf y - \mathbf x| > |x^0 - y^0|$ (Theorem §C2b.4.5), so the sphere can be taken where $D$ and $\nabla D$ vanish. This is the conservation of the Klein–Gordon product ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 1).
 >
@@ -485,7 +496,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 
 ^der-c2b-4-13
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]]
 
 ![[ph-qft-c2-5-2.svg]]
 *Where the commutator function lives (Theorems §C2b.4.8–§C2b.4.9). (a) $m = 0$: only on the light cone. (b) $m > 0$: the cone plus a $J_1$ tail inside it, changing sign on the hyperbolas $m\tau = 3.83,\ 7.02,\ 10.17$ (dotted); blue $D > 0$, red $D < 0$, the pattern reversed between future and past; outside the cone $D = 0$. (c) Theorem §C2b.4.13 as a picture: the data on an earlier slice that determine $\phi(x)$, the whole ball for $m > 0$, its boundary only for $m = 0$. Adapted from the user's PHY 513 notes, Fig. 5.2.*
@@ -524,7 +535,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > - Microcausality is the relativistic form of no-signalling: operators on spacelike-separated regions commute as operators on different tensor factors do ([[§C11.3 Composite Systems and Reduced Density Matrices#^thm-c11-3-5|QM Theorem §C11.3.5]]), and $D_1 \neq 0$ there is correlation without communication ([[§C11.4★ Entanglement, EPR and Bell's Inequality#^rem-c11-4-4|QM Remark: Correlation without communication]]).
 > - The light-cone boundary between commuting and non-commuting points comes from the orbit structure of $SO^+(1,3)$ ([[§B1.3 Causal Structure and Proper Time#^rem-b1-3-1|REL Remark: Normal forms, and the orbits of the Lorentz group]]); the invariance of $\operatorname{sgn}p^0$ that makes $\theta(p^0)\delta(p^2 - m^2)$ invariant is the same fact for momenta ([[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]]).
 > - The massless commutator $-\frac{1}{4\pi r}[\delta(t - r) - \delta(t + r)]$ is, up to the factor $i$ and the step function, the retarded kernel of the wave equation behind the retarded potentials ([[§B11.1★ Potentials, Gauges and Retarded Potentials#^thm-b11-1-4|EM Theorem §B11.1.4]]); the full statement is the retarded Green's function of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]].
-> - Forward: $D_W$ and time ordering give the Feynman propagator ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]); the product of two free fields is its normal-ordered part plus $D_W$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]]); the commutator function becomes the retarded response to a source ([[§C2b.8 Particle Production by a Classical Source|§C2b.8]]); for spin, QFT C5b ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]]) repeats the analysis with anticommutators.
+> - Forward: $D_W$ and time ordering give the Feynman propagator ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]); the product of two free fields is its normal-ordered part plus $D_W$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]); the commutator function becomes the retarded response to a source ([[§C2b.8 Particle Production by a Classical Source|§C2b.8]]); for spin, QFT C5b ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]]) repeats the analysis with anticommutators.
 > - [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]] (support and singular support) is the language of microcausality: $D$ vanishes on the open spacelike region (Theorem §C2b.4.6) and is singular exactly on the cone (Theorem §C2b.4.4).
 > - [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]] (Sokhotski–Plemelj) splits the massless $D_W$ into the principal-value correlation $D_1$ and the delta-function commutator $D$; [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]] is the same split on all of $\mathbb R^4$, tip included.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]] and [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]] (composition of δ, the invariant cone distribution $\operatorname{sgn}(x^0)\delta(x^2)$) turn $\delta(t \mp r)/2r$ into the covariant massless commutator.

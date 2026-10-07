@@ -140,7 +140,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 *Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-2|QM Theorem §C3.3.2]], [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]
 
 > [!theorem] Theorem §C2a.6.4: The Mean Field Is a Classical Solution
-> With the Heisenberg field $\phi(x)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]]), the mean field
+> With the Heisenberg field $\phi(x)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]), the mean field
 >
 > $$
 > \bar\phi(x) \equiv \langle\{\eta\}|\phi(x)|\{\eta\}\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\Bigl(\eta_{\mathbf p}\,e^{-ip\cdot x} + \eta^*_{\mathbf p}\,e^{ip\cdot x}\Bigr)\Big|_{p^0 = E_{\mathbf p}}
@@ -173,7 +173,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 
 ^der-c2a-6-4
 
-*Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|Theorem §C2a.6.8]]
+*Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|Theorem §C2a.6.8]]
 
 > [!theorem] Theorem §C2a.6.5: Coherent States Stay Coherent
 > Under the free evolution, $e^{-i:\!H\!:\,t}\,|\{\eta_{\mathbf k}\}\rangle = |\{\eta_{\mathbf k}e^{-iE_{\mathbf k}t}\}\rangle$, with the same $\bar N$; the mean field of the evolved state, $\langle\{\eta(t)\}|\phi(\mathbf x)|\{\eta(t)\}\rangle$, is $\bar\phi(t, \mathbf x)$ of [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]]: it follows the classical solution for all time.
@@ -183,7 +183,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 ^thm-c2a-6-5
 
 > [!derivation]- Derivation
-> **1. Evolve one creator.** [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], 1 (derived there from the ladder relation $[H, a^\dagger_{\mathbf p}] = E_{\mathbf p}a^\dagger_{\mathbf p}$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|Theorem §C2a.3.6]]) gives $e^{iHt}a^\dagger_{\mathbf p}e^{-iHt} = a^\dagger_{\mathbf p}e^{iE_{\mathbf p}t}$ for every real $t$; replacing $t$ by $-t$,
+> **1. Evolve one creator.** [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], 1 (derived there from the ladder relation $[H, a^\dagger_{\mathbf p}] = E_{\mathbf p}a^\dagger_{\mathbf p}$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|Theorem §C2a.3.6]]) gives $e^{iHt}a^\dagger_{\mathbf p}e^{-iHt} = a^\dagger_{\mathbf p}e^{iE_{\mathbf p}t}$ for every real $t$; replacing $t$ by $-t$,
 >
 > $$
 > e^{-iHt}a^\dagger_{\mathbf p}e^{iHt} = a^\dagger_{\mathbf p}\,e^{-iE_{\mathbf p}t} .
@@ -203,7 +203,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 >
 > **4. Same normalization.** $|\eta_{\mathbf k}e^{-iE_{\mathbf k}t}| = |\eta_{\mathbf k}|$, so $\bar N$ is unchanged and the result is the coherent state with label $\eta_{\mathbf k}e^{-iE_{\mathbf k}t}$.
 >
-> **5. Mean field.** Apply [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]] at $t = 0$ to the label $\eta_{\mathbf p}e^{-iE_{\mathbf p}t}$: $\eta_{\mathbf p}e^{-iE_{\mathbf p}t}e^{i\mathbf p\cdot\mathbf x} = \eta_{\mathbf p}e^{-ip\cdot x}$, which is $\bar\phi(t, \mathbf x)$. ⚑ By-product: Schrödinger picture (state evolves, step 3) and Heisenberg picture (field evolves, $a_{\mathbf p}(t) = a_{\mathbf p}e^{-iE_{\mathbf p}t}$, [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]]) give the same mean field → [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-5|Theorem §C2a.6.5]] (statement).
+> **5. Mean field.** Apply [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]] at $t = 0$ to the label $\eta_{\mathbf p}e^{-iE_{\mathbf p}t}$: $\eta_{\mathbf p}e^{-iE_{\mathbf p}t}e^{i\mathbf p\cdot\mathbf x} = \eta_{\mathbf p}e^{-ip\cdot x}$, which is $\bar\phi(t, \mathbf x)$. ⚑ By-product: Schrödinger picture (state evolves, step 3) and Heisenberg picture (field evolves, $a_{\mathbf p}(t) = a_{\mathbf p}e^{-iE_{\mathbf p}t}$, [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]) give the same mean field → [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-5|Theorem §C2a.6.5]] (statement).
 >
 > **What the derivation shows**
 > - Each mode label turns clockwise at its own frequency, as for one oscillator ([[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]], 4).
@@ -211,7 +211,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 
 ^der-c2a-6-5
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]]
 
 > [!theorem] Theorem §C2a.6.6: Poisson Number Statistics
 > The particle number in $|\{\eta\}\rangle$ is Poisson distributed, $P(n) = e^{-\bar N}\bar N^n/n!$, with
@@ -301,7 +301,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 ^thm-c2a-6-8
 
 > [!derivation]- Derivation
-> **1. The smeared field in modes.** With $a_{\mathbf p}(t) = a_{\mathbf p}e^{-iE_{\mathbf p}t}$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]]), the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-7|Derivation §C2a.2.7]], steps 4–5, gives $\phi_t(f) = a(g_t) + a^\dagger(g_t)$ with $g_t(\mathbf p) = e^{iE_{\mathbf p}t}\tilde f(\mathbf p)/\sqrt{2E_{\mathbf p}}$, a Schwartz function ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]]).
+> **1. The smeared field in modes.** With $a_{\mathbf p}(t) = a_{\mathbf p}e^{-iE_{\mathbf p}t}$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]), the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-7|Derivation §C2a.2.7]], steps 4–5, gives $\phi_t(f) = a(g_t) + a^\dagger(g_t)$ with $g_t(\mathbf p) = e^{iE_{\mathbf p}t}\tilde f(\mathbf p)/\sqrt{2E_{\mathbf p}}$, a Schwartz function ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]]).
 >
 > **2. Displace.** By [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-3|Theorem §C2a.6.3]], $D^\dagger a_{\mathbf p}D = a_{\mathbf p} + \eta_{\mathbf p}/\sqrt{2E_{\mathbf p}}$; smearing with $\overline{g_t}$, $D^\dagger a(g_t)D = a(g_t) + c$ with $c = \int\frac{d^3p}{(2\pi)^3}\overline{g_t}\,\eta/\sqrt{2E} = \int d\mu\,\eta_{\mathbf p}e^{-iE_{\mathbf p}t}\overline{\tilde f(\mathbf p)}$, and $D^\dagger a^\dagger(g_t)D = a^\dagger(g_t) + \overline c$. So $D^\dagger\phi_t(f)D = \phi_t(f) + 2\operatorname{Re}c$, and $2\operatorname{Re}c = \langle0|D^\dagger\phi_t(f)D|0\rangle = \bar\phi_t(f)$: part 2's formula. The integral defining $c$ converges for every $\eta$ with $\bar N < \infty$, by step 4.
 >
@@ -318,7 +318,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 
 ^der-c2a-6-8
 
-*Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-3|Theorem §C2a.6.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-7|Theorem §C2a.6.7]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-8|Theorem §C2a.4.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]]
+*Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-3|Theorem §C2a.6.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-7|Theorem §C2a.6.7]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-8|Theorem §C2a.4.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]]
 
 ![[ph-qft-c2-4-1.svg]]
 *One mode of the field, $x = (a + a^\dagger)/\sqrt2$, in two states with mean occupation 4 (computed). Left: the number distribution, Poisson for the coherent state with $\eta/\sqrt{2E} = 2$, a single bar for $|4\rangle$ (Theorem §C2a.6.6). Right: $\langle x\rangle \pm \Delta x$ against $\omega t$. The coherent state oscillates like a classical wave with the vacuum's spread $1/\sqrt2$ (Theorems §C2a.6.4, §C2a.6.5, §C2a.6.7); the number state has no oscillating field at all (Theorem §C2a.6.1), only a larger spread $\sqrt{4 + \frac12}$ centred on zero. Right panel adapted from the user's PHY 513 notes, Ch. 4.*

@@ -324,7 +324,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > \phi(\mathbf x)|0\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,e^{-i\mathbf p\cdot\mathbf x}\,|\mathbf p\rangle, \qquad \langle\mathbf p|\phi(\mathbf x)|0\rangle = e^{-i\mathbf p\cdot\mathbf x}, \qquad \langle0|\phi(\mathbf x)|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x} ,
 > $$
 >
-> the field-theory analogue of $\langle\mathbf x|\mathbf p\rangle \propto e^{i\mathbf p\cdot\mathbf x}$. With the time dependence of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], $\langle0|\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$.
+> the field-theory analogue of $\langle\mathbf x|\mathbf p\rangle \propto e^{i\mathbf p\cdot\mathbf x}$. With the time dependence of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], $\langle0|\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9 · PS §2.3, eqs. (2.41)–(2.42) · Yu §2.3.4, eqs. (2.164)–(2.165)*
 

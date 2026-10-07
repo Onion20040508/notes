@@ -79,7 +79,7 @@ One-page reference for the free vector field: the massive (Proca) field and the 
 
 ## 6. Two-point functions and propagators (*draft*)
 
-Homogeneous / Green's as in the scalar card; Green's functions satisfy $K D = i\delta^4$ for $S = \frac12\int A K A$ — [[§C4.8 Vector-Field Propagators#^rem-c4-8-4|§C4.8, Remark: One normalization for every propagator]]. Momentum space below means $\int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot\xi}$; scalar functions from [[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-2|Def. §C2b.7.2]].
+Homogeneous / Green's as in the scalar card; Green's functions satisfy $K D = i\delta^4$ for $S = \frac12\int A K A$ — [[§C4.8 Vector-Field Propagators#^rem-c4-8-4|§C4.8, Remark: One normalization for every propagator]]. Momentum space below means $\int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot\xi}$; scalar functions from [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
 
 | Name | Definition | Momentum space | Key property | As a distribution | Home |
 | --- | --- | --- | --- | --- | --- |

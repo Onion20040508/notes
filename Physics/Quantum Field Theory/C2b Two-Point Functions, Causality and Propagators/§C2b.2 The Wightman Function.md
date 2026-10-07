@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 5 §§5.4–5.5 and Ch. 6 §6.9 · PHY 513 Lecture 5 (Larsen, 16 Sep 2026; no slides, reconstructed in the user's notes) · Peskin & Schroeder §2.4, p. 27 · PHY 513, Problem Set 4, Problems 2(a) and 4(a)–(b).*
 
-How are the values of the free field at two spacetime points correlated in the vacuum? The answer is a function, the vacuum two-point function $D_W$, built from the Heisenberg field of [[§C2b.1 Heisenberg Fields|§C2b.1]] ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]]); whether the theory is causal turns on it. This section defines it, writes it as a Lorentz-invariant mode integral that solves the Klein–Gordon equation, and shows that it is the boundary value of an analytic function. Its explicit forms are [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]], and its antisymmetric part, the commutator function, is [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
+How are the values of the free field at two spacetime points correlated in the vacuum? The answer is a function, the vacuum two-point function $D_W$, built from the Heisenberg field of [[§C2b.1 Heisenberg Fields|§C2b.1]] ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]); whether the theory is causal turns on it. This section defines it, writes it as a Lorentz-invariant mode integral that solves the Klein–Gordon equation, and shows that it is the boundary value of an analytic function. Its explicit forms are [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]], and its antisymmetric part, the commutator function, is [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[a_{\mathbf p}, a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
 
@@ -44,7 +44,7 @@ How are the values of the free field at two spacetime points correlated in the v
 ^thm-c2b-2-1
 
 > [!derivation]- Derivation
-> **Step 1** (two fields, two names). By [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]] (a product of two operator-valued distributions at different points: read it smeared, $\phi(f)\phi(g)$, [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]),
+> **Step 1** (two fields, two names). By [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] (a product of two operator-valued distributions at different points: read it smeared, $\phi(f)\phi(g)$, [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]]),
 >
 > $$
 > \phi(x)\phi(y) = \int\frac{d^3p}{(2\pi)^3}\frac{d^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}\sqrt{2E_{\mathbf q}}}\Bigl(a_{\mathbf p}e^{-ip\cdot x} + a_{\mathbf p}^\dagger e^{ip\cdot x}\Bigr)\Bigl(a_{\mathbf q}e^{-iq\cdot y} + a_{\mathbf q}^\dagger e^{iq\cdot y}\Bigr).
@@ -64,7 +64,7 @@ How are the values of the free field at two spacetime points correlated in the v
 >
 > **Step 5** (the four-dimensional form). For any $F$, $\int\frac{d^4p}{(2\pi)^4}2\pi\,\theta(p^0)\delta(p^2 - m^2)F(p) = \int\frac{d^3p}{(2\pi)^3}\int dp^0\,\theta(p^0)\,\frac{\delta(p^0 - E_{\mathbf p}) + \delta(p^0 + E_{\mathbf p})}{2E_{\mathbf p}}F(p)$ by the composition rule ([[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], justified as a distributional limit in [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 2, and in four dimensions [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1; roots $p^0 = \pm E_{\mathbf p}$, $|\partial_{p^0}(p^2 - m^2)| = 2E_{\mathbf p}$). The step function removes the root $-E_{\mathbf p}$, and the $p^0$ integral sets $p^0 = E_{\mathbf p}$. With $F = e^{-ip\cdot\xi}$ this is Step 4 ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]).
 >
-> ⚑ By-product: $\tilde D_W(p) = 2\pi\theta(p^0)\delta(p^2 - m^2)$, the momentum-space entry of the two-point family → [[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-2|Def. §C2b.7.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]].
+> ⚑ By-product: $\tilde D_W(p) = 2\pi\theta(p^0)\delta(p^2 - m^2)$, the momentum-space entry of the two-point family → [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|Theorem §C2b.6.11]].
 >
 > **Step 6** (no convergence at real $\xi$). At real $\xi$ the integrand has modulus $1/2E_{\mathbf p}$, and $\int\frac{d^3p}{2E_{\mathbf p}} = 2\pi\int_0^\infty\frac{p^2\,dp}{\sqrt{p^2 + m^2}}$ diverges like $\int p\,dp$.
 >
@@ -77,7 +77,7 @@ How are the values of the free field at two spacetime points correlated in the v
 
 ^der-c2b-2-1
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
 > [!theorem] Theorem §C2b.2.2: The Wightman Function Is a Tempered Distribution
 > With $\tilde f(p) = \int d^4x\,f(x)e^{ip\cdot x}$ and $p^0 = E_{\mathbf p}$:
@@ -90,7 +90,7 @@ How are the values of the free field at two spacetime points correlated in the v
 ^thm-c2b-2-2
 
 > [!derivation]- Derivation
-> **Step 1** (the bilinear form). By [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], 1, $\phi(g)|0\rangle = \int\frac{d^3q}{(2\pi)^3}\frac{\tilde g(q)}{\sqrt{2E_{\mathbf q}}}a_{\mathbf q}^\dagger|0\rangle$, and in $\langle0|\phi(f)$ only the annihilation part of $\phi(f)$ survives, with coefficient $\tilde f(-p)$. With $\langle0|a_{\mathbf p}a_{\mathbf q}^\dagger|0\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]) acting on the Schwartz integrand,
+> **Step 1** (the bilinear form). By [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], 1, $\phi(g)|0\rangle = \int\frac{d^3q}{(2\pi)^3}\frac{\tilde g(q)}{\sqrt{2E_{\mathbf q}}}a_{\mathbf q}^\dagger|0\rangle$, and in $\langle0|\phi(f)$ only the annihilation part of $\phi(f)$ survives, with coefficient $\tilde f(-p)$. With $\langle0|a_{\mathbf p}a_{\mathbf q}^\dagger|0\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]) acting on the Schwartz integrand,
 >
 > $$
 > \langle0|\phi(f)\phi(g)|0\rangle = \int\frac{d^3p\,d^3q}{(2\pi)^6}\frac{\tilde f(-p)\,\tilde g(q)}{\sqrt{2E_{\mathbf p}2E_{\mathbf q}}}(2\pi)^3\delta^3(\mathbf p - \mathbf q) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\tilde f(-p)\,\tilde g(p) .
@@ -116,12 +116,12 @@ How are the values of the free field at two spacetime points correlated in the v
 >
 > **What the derivation shows.**
 > - "$\langle0|\phi(x)\phi(y)|0\rangle$" is the kernel of a continuous bilinear form; the vacuum is translation invariant, so the kernel depends on $x - y$.
-> - $D_W$ is a function of time with values in spatial distributions: this is what lets step functions $\theta(\pm\xi^0)$ multiply it ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]).
+> - $D_W$ is a function of time with values in spatial distributions: this is what lets step functions $\theta(\pm\xi^0)$ multiply it ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]).
 > - Used next: invariance as a distribution (Theorem §C2b.2.3), the boundary value (Theorem §C2b.2.5), $D$ and $D_1$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]]).
 
 ^der-c2b-2-2
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
 > [!theorem] Theorem §C2b.2.3: Lorentz Invariance of the Wightman Function
 > For every $\Lambda \in SO^+(1,3)$, $D_W$ is invariant as a distribution, $D_W[f\circ\Lambda^{-1}] = D_W[f]$ for every test function $f$ ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]); where $D_W$ is a function, off the light cone ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]), this reads $D_W(\Lambda\xi) = D_W(\xi)$. Hence $D_W$ is constant on the orbits of $SO^+(1,3)$: a function of $\xi^2$ alone at spacelike $\xi$, and of $\xi^2$ and $\operatorname{sgn}\xi^0$ at timelike $\xi$ (on the light cone, where $D_W$ is singular, the future and past halves are also distinct orbits).
@@ -218,7 +218,7 @@ How are the values of the free field at two spacetime points correlated in the v
 >
 > $\hat f$ decreases faster than any power, so $|e^{-\varepsilon E}\hat f/2E| \le |\hat f|/2E$ is integrable independently of $\varepsilon$, and by dominated convergence the right side tends to $\int\frac{d^3p}{(2\pi)^32E_{\mathbf p}}\hat f(E_{\mathbf p}, \mathbf p)$. So the limit exists as a tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]), and it is the mode integral of [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]] read against test functions.
 >
-> ⚑ By-product: "$\xi^0 \to \xi^0 - i\varepsilon$" is not a trick but the definition of $D_W$; the same prescription in momentum space becomes the $i\varepsilon$ of the Feynman propagator → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|Theorem §C2b.6.7]].
+> ⚑ By-product: "$\xi^0 \to \xi^0 - i\varepsilon$" is not a trick but the definition of $D_W$; the same prescription in momentum space becomes the $i\varepsilon$ of the Feynman propagator → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]].
 >
 > **Step 5** (equal times). At $\xi^0 = 0$ the regulated integral is $\int\frac{d^3p}{(2\pi)^32E_{\mathbf p}}e^{-\varepsilon E_{\mathbf p}}e^{i\mathbf p\cdot\boldsymbol\xi}$: the convergence factor $e^{-\varepsilon E_{\mathbf p}}$ is not an approximation but exactly $W(-i\varepsilon, \boldsymbol\xi)$.
 >
