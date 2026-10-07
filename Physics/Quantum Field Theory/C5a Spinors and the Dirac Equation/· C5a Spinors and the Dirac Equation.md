@@ -12,6 +12,7 @@ tags: [chapter, quantum-field-theory]
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (21), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (160)
 
 ## Sections
+- [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation]] — 
 - [[§C5a.1 Spinor Space and the Clifford Action]] — 
 - [[§C5a.2 The Dirac Form]] — 
 - [[§C5a.3 The Lorentz Action on Spinor Space]] — 
