@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (52), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (80), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (96), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (33), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (52), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (82), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (96), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (33), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (21), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (160)
 
 ## Sections
@@ -26,6 +26,10 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.11 Gamma-Matrix Technology]] — 
 
 ## Theorems
+- [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|§C5a.0.1]] Squaring a First-Order Equation
+- [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|§C5a.0.2]] The Coefficients Cannot Commute
+- [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|§C5a.0.3]] The Smallest Coefficients Are 4×4 Matrices
+- [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-4|§C5a.0.4]] Two Components Suffice Only without Mass
 - [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|§C5a.1.1]] Linear Maps Act by Matrix Multiplication
 - [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|§C5a.1.2]] Components Change with U, Matrices with U and U⁻¹
 - [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|§C5a.1.3]] The Slot Rule
