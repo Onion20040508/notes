@@ -216,7 +216,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > H = \int\frac{d^3q}{(2\pi)^3}\,E_{\mathbf q}\,a_{\mathbf q}^\dagger a_{\mathbf q} + E_0 .
 > $$
 >
-> ⚑ By-product: the zero-point constant $E_0$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]) is a number, so it commutes with every operator and drops out of every commutator below; time evolution does not see it → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|§C2a.3, Remark: Why the zero-point energy is dropped]].
+> ⚑ By-product: the zero-point constant $E_0$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]) is a number, so it commutes with every operator and drops out of every commutator below; time evolution does not see it → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|§C2a.3, Remark: Why the zero-point energy is dropped]].
 >
 > **Step 2** (one commutator). With $[AB, C] = A[B, C] + [A, C]B$,
 >
@@ -312,7 +312,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 ^thm-c2b-1-5
 
 > [!derivation]- Derivation
-> **Step 1** (the vacuum). $a_{\mathbf p}|0\rangle = 0$ for every $\mathbf p$ ([[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|Principle §C2a.4.1]]), so $\phi^+(x)|0\rangle = 0$; taking adjoints, $\langle0|\phi^-(x) = 0$.
+> **Step 1** (the vacuum). $a_{\mathbf p}|0\rangle = 0$ for every $\mathbf p$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]), so $\phi^+(x)|0\rangle = 0$; taking adjoints, $\langle0|\phi^-(x) = 0$.
 >
 > **Step 2** (only $\phi^+$ contributes). $\langle0|\phi(x)|\mathbf p\rangle = \langle0|\phi^+(x)|\mathbf p\rangle + \langle0|\phi^-(x)|\mathbf p\rangle$, and the second term is zero by Step 1.
 >
@@ -329,16 +329,16 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > **Step 6** (the conjugate). $\phi$ is Hermitian, so $\langle\mathbf p|\phi(x)|0\rangle = \overline{\langle0|\phi(x)|\mathbf p\rangle} = e^{ip\cdot x}$.
 >
 > **What the derivation shows.**
-> - The relativistic normalization ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) is what makes the amplitude exactly a plane wave, with no $E_{\mathbf p}$-dependent factor; at $t = 0$ this is [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]].
+> - The relativistic normalization ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) is what makes the amplitude exactly a plane wave, with no $E_{\mathbf p}$-dependent factor; at $t = 0$ this is [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]].
 > - Positive frequency goes with annihilation, negative frequency with creation → [[§C2b.1 Heisenberg Fields#^rem-c2b-1-3|Remark: Negative frequency is creation, not negative energy]].
 > - Used next: the split $\phi^\pm$ gives normal ordering and the contraction ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]).
 
 ^der-c2b-1-5
 
-*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|Principle §C2a.4.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]
+*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]
 
 > [!remark] Remark: Negative frequency is creation, not negative energy
-> A complete set of solutions of the Klein–Gordon equation has both $e^{-iEt}$ and $e^{+iEt}$, and a Hermitian field needs both. Read as single-particle wave functions they would be states of energy $\pm E$, the old difficulty of relativistic wave mechanics ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-2|QM Theorem §C13.1.2]]). In the field, the coefficient of the positive-frequency solution is the operator that *destroys* a quantum, and $\langle0|\phi|\mathbf p\rangle = e^{-ip\cdot x}$ is a positive-energy wave function; the coefficient of the negative-frequency solution *creates* one. No state of negative energy exists in the spectrum ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]). Wave and particle sit in one formula: the plane waves are the wave aspect, the operator coefficients with $[a, a^\dagger] = (2\pi)^3\delta^3$ the particle aspect. Notation: $\phi^{(+)}$ in PS and Yu is the positive-frequency, annihilating part, as here.
+> A complete set of solutions of the Klein–Gordon equation has both $e^{-iEt}$ and $e^{+iEt}$, and a Hermitian field needs both. Read as single-particle wave functions they would be states of energy $\pm E$, the old difficulty of relativistic wave mechanics ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-2|QM Theorem §C13.1.2]]). In the field, the coefficient of the positive-frequency solution is the operator that *destroys* a quantum, and $\langle0|\phi|\mathbf p\rangle = e^{-ip\cdot x}$ is a positive-energy wave function; the coefficient of the negative-frequency solution *creates* one. No state of negative energy exists in the spectrum ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]). Wave and particle sit in one formula: the plane waves are the wave aspect, the operator coefficients with $[a, a^\dagger] = (2\pi)^3\delta^3$ the particle aspect. Notation: $\phi^{(+)}$ in PS and Yu is the positive-frequency, annihilating part, as here.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.3 · PS §2.4, p. 26*
 

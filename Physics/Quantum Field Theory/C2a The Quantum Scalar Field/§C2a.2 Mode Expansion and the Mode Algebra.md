@@ -64,7 +64,7 @@ How is the free real scalar field written in terms of oscillators, and what alge
 > **8. The equation of motion.** Insert the expansion into $\ddot\phi - \nabla^2\phi + m^2\phi = 0$ ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-4|REL Theorem §B4.1.4]]): $\nabla^2e^{i\mathbf p\cdot\mathbf x} = -\mathbf p^2e^{i\mathbf p\cdot\mathbf x}$, so $\int\frac{d^3p}{(2\pi)^3}\bigl(\ddot{\tilde\phi} + (\mathbf p^2 + m^2)\tilde\phi\bigr)e^{i\mathbf p\cdot\mathbf x} = 0$, and uniqueness of the Fourier transform ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-1|WO Theorem §B4.4.1]]; in $\mathcal S'$, where the transform is a bijection, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 2) gives $\ddot{\tilde\phi} + E_{\mathbf p}^2\tilde\phi = 0$ for each $\mathbf p$. Equivalently, Hamilton's equations for the mode Hamiltonian are $\dot{\tilde\phi} = \tilde\pi$, $\dot{\tilde\pi} = -E_{\mathbf p}^2\tilde\phi$. ⚑ By-product: the field must have a Fourier transform at each time (decay at infinity); plane-wave modes are idealizations → [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|Caution: Plane-wave states are not normalizable]].
 >
 > **What the derivation shows**
-> - The free field decouples into independent oscillators already classically; quantization will only add the ordering of operators, i.e. the zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]).
+> - The free field decouples into independent oscillators already classically; quantization will only add the ordering of operators, i.e. the zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
 > - The frequency of mode $\mathbf p$ is $E_{\mathbf p}$: the mass shell enters through the gradient and mass terms.
 > - Used next: the mode expansion ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]) and the Hamiltonian in mode form ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]]).
 
@@ -159,7 +159,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 >
 > **What the derivation shows**
 > - The mass shell $k^0 = \pm E_{\mathbf k}$ is the only input from the field equation; both signs are needed for arbitrary Cauchy data.
-> - $1/\sqrt{2E_{\mathbf p}}$ is a normalization choice, cashed in by [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] and [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]].
+> - $1/\sqrt{2E_{\mathbf p}}$ is a normalization choice, cashed in by [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] and [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]].
 > - The relabelling $\mathbf p \to -\mathbf p$ is why $a^\dagger_{-\mathbf p}$, not $a^\dagger_{\mathbf p}$, accompanies $a_{\mathbf p}$ at fixed time: the pairing of $\mathbf p$ with $-\mathbf p$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple]].
 > - The operators $a_{\mathbf p}$ are so far only names; their algebra is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], and their extraction from $\phi$, $\pi$ is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]].
 
@@ -409,7 +409,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > [a_{\mathbf p}, a^\dagger_{\mathbf q}] = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\dot f_{\mathbf q} - \dot f^*_{\mathbf p}\,f_{\mathbf q}\bigr) = (f_{\mathbf p}, f_{\mathbf q}) .
 > $$
 >
-> **5. Orthonormality.** $(f_{\mathbf p}, f_{\mathbf q}) = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2). ⚑ By-product: at $\mathbf q = \mathbf p$ this is $(2\pi)^3\delta^3(\mathbf 0)$, which will appear as the volume in the zero-point energy → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]; as a value it has none (δ at its singular point), and only the box gives it the meaning $V$ → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]. Smeared, the step reads $[a(g), a^\dagger(h)] = (f_g, f_h)$, finite → [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]].
+> **5. Orthonormality.** $(f_{\mathbf p}, f_{\mathbf q}) = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2). ⚑ By-product: at $\mathbf q = \mathbf p$ this is $(2\pi)^3\delta^3(\mathbf 0)$, which will appear as the volume in the zero-point energy → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]; as a value it has none (δ at its singular point), and only the box gives it the meaning $V$ → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]. Smeared, the step reads $[a(g), a^\dagger(h)] = (f_g, f_h)$, finite → [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]].
 >
 > **6. Two annihilators.** With $a_{\mathbf q} = i\int d^3y\,(f^{\ast}_{\mathbf q}\pi - \dot f^{\ast}_{\mathbf q}\phi)$ the prefactor is $(i)(i) = -1$, and the four-term expansion is
 >
@@ -444,7 +444,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > **What the derivation shows**
 > - The commutator of two extracted operators is the Klein–Gordon product of their mode functions (step 4): the algebra is orthonormality in operator form.
 > - Only equal-time relations are used; the result holds whichever slice is chosen.
-> - The $\delta^3(\mathbf 0)$ at coincident momenta is the source of the zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]).
+> - The $\delta^3(\mathbf 0)$ at coincident momenta is the source of the zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
 > - Every step is an identity of distributions in $(\mathbf p, \mathbf q)$; smeared with test functions it becomes an identity between operators ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]).
 > - Used next: $H$ and $\mathbf P$ in mode form, the ladder relations and the Fock space.
 
@@ -546,7 +546,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > **What the derivation shows**
 > - Every relation of the mode algebra is an identity between operators once both labels are smeared; $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is only its kernel.
 > - Annihilators at sharp momentum act on wave packets; creators at sharp momentum do not produce states. This asymmetry is why $\langle0|a_{\mathbf q}a^\dagger_{\mathbf p}|0\rangle$ is a distribution and $\langle0|a(g)a^\dagger(h)|0\rangle$ a number.
-> - The smeared field is one annihilator plus one creator, smeared with $\tilde f/\sqrt{2E_{\mathbf p}}$; so $\phi(f)|0\rangle = a^\dagger(g_f)|0\rangle$ is a state ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-8|Theorem §C2a.4.8]]).
+> - The smeared field is one annihilator plus one creator, smeared with $\tilde f/\sqrt{2E_{\mathbf p}}$; so $\phi(f)|0\rangle = a^\dagger(g_f)|0\rangle$ is a state ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]]).
 
 ^der-c2a-2-7
 

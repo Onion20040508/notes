@@ -173,7 +173,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > H = \int\frac{d^3p}{(2\pi)^3}\,\frac{E_{\mathbf p}}{2}\bigl(a_{\mathbf p}a^\dagger_{\mathbf p} + a^\dagger_{\mathbf p}a_{\mathbf p} + b_{\mathbf p}b^\dagger_{\mathbf p} + b^\dagger_{\mathbf p}b_{\mathbf p}\bigr) = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^\dagger_{\mathbf p}a_{\mathbf p} + b^\dagger_{\mathbf p}b_{\mathbf p}\bigr) + 2E_0 ,
 > $$
 >
-> with $E_0$ the real field's zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]): one $\frac12E_{\mathbf p}$ per mode per species. Normal ordered, $:\!H\!: = \int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(a^\dagger a + b^\dagger b)$. It is time independent.
+> with $E_0$ the real field's zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]): one $\frac12E_{\mathbf p}$ per mode per species. Normal ordered, $:\!H\!: = \int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(a^\dagger a + b^\dagger b)$. It is time independent.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6, eqs. (Hcomplexzp), (Hcomplex) · PHY 513 Problem Set 3, Problem 2(b), course solution · Yu §2.4.4, eqs. (2.215), (2.217)*
 
@@ -224,7 +224,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > H = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^\dagger_{\mathbf p}a_{\mathbf p} + b^\dagger_{\mathbf p}b_{\mathbf p}\bigr) + 2\cdot\int\frac{d^3p}{(2\pi)^3}\,\frac{E_{\mathbf p}}{2}\,(2\pi)^3\delta^3(\mathbf 0) .
 > $$
 >
-> ⚑ By-product: the constant is $2E_0$, twice the real field's zero-point energy, one tower per species → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]; as written it has no value, and in the box it is $2E_0(V, \Lambda) = \sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]); normal ordering ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]) removes it.
+> ⚑ By-product: the constant is $2E_0$, twice the real field's zero-point energy, one tower per species → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]; as written it has no value, and in the box it is $2E_0(V, \Lambda) = \sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]); normal ordering ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]) removes it.
 >
 > **What the derivation shows**
 > - Two independent oscillators per momentum, both of frequency $E_{\mathbf p}$: particle and antiparticle have the same mass.
@@ -233,7 +233,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 
 ^der-c2a-5-4
 
-*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
+*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
@@ -281,15 +281,15 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > \mathbf P = \int\frac{d^3p}{(2\pi)^3}\,\frac{\mathbf p}{2}\bigl(a_{\mathbf p}a^\dagger_{\mathbf p} + a^\dagger_{\mathbf p}a_{\mathbf p} + b_{\mathbf p}b^\dagger_{\mathbf p} + b^\dagger_{\mathbf p}b_{\mathbf p}\bigr) .
 > $$
 >
-> **7. Reorder.** The commutators leave $V\int\frac{d^3p}{(2\pi)^3}\,\mathbf p$, an odd integrand: zero for a rotation-invariant regularization, as in step 7 of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-4|Derivation §C2a.3.4]].
+> **7. Reorder.** The commutators leave $V\int\frac{d^3p}{(2\pi)^3}\,\mathbf p$, an odd integrand: zero for a rotation-invariant regularization, as in step 7 of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-5|Derivation §C2a.3.5]].
 >
 > **What the derivation shows**
 > - Both species carry momentum $\mathbf p$ for label $\mathbf p$: the negative-frequency term creates an antiparticle of momentum $+\mathbf p$, not $-\mathbf p$, because of the relabelling in [[§C2a.5 The Complex Scalar Field and Its Charge#^der-c2a-5-2|Derivation §C2a.5.2]], step 1.
-> - The number-changing terms die by the mixed commutator; for the real field they died by oddness ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
+> - The number-changing terms die by the mixed commutator; for the real field they died by oddness ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]).
 
 ^der-c2a-5-5
 
-*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
+*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
@@ -353,9 +353,9 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 >
 > **6. Reorder.** $b_{\mathbf p}b^\dagger_{\mathbf p} = b^\dagger_{\mathbf p}b_{\mathbf p} + (2\pi)^3\delta^3(\mathbf 0)$ gives $Q = \frac12(N_a - N_b) - \frac12V\int\frac{d^3p}{(2\pi)^3}$. *Sense:* $(2\pi)^3\delta^3(\mathbf 0)$ has no value; in the box of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]] the constant is $-\frac12\sum_{|\mathbf k|<\Lambda}1 = -\frac12\mathcal N(V, \Lambda)$, minus half the number of modes, with $\mathcal N \approx V\Lambda^3/6\pi^2$ (lattice points in the ball, one per momentum cell of volume $(2\pi)^3/V$): its density $-\Lambda^3/12\pi^2$ diverges with the cutoff. ⚑ By-product: an infinite negative vacuum charge, which normal ordering removes and which, unlike $E_0$, would be observable → [[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-2|Remark: Why the vacuum must be neutral]]. The normal-ordered $Q$ of [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]] is the first term.
 >
-> **7. Ladder relations.** As in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-6|Derivation §C2a.3.6]], steps 2–3, with weight $\frac12$: $[\frac12\int a^\dagger_{\mathbf q}a_{\mathbf q}, a^\dagger_{\mathbf p}] = \frac12a^\dagger_{\mathbf p}$; and $[-\frac12\int b^\dagger_{\mathbf q}b_{\mathbf q}, b^\dagger_{\mathbf p}] = -\frac12b^\dagger_{\mathbf p}$. The cross commutators vanish by [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]].
+> **7. Ladder relations.** As in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-7|Derivation §C2a.3.7]], steps 2–3, with weight $\frac12$: $[\frac12\int a^\dagger_{\mathbf q}a_{\mathbf q}, a^\dagger_{\mathbf p}] = \frac12a^\dagger_{\mathbf p}$; and $[-\frac12\int b^\dagger_{\mathbf q}b_{\mathbf q}, b^\dagger_{\mathbf p}] = -\frac12b^\dagger_{\mathbf p}$. The cross commutators vanish by [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]].
 >
-> **8. Conservation.** $Q$, $:\!H\!:$ and $\mathbf P$ are integrals of the number densities $a^\dagger_{\mathbf p}a_{\mathbf p}$, $b^\dagger_{\mathbf p}b_{\mathbf p}$, which commute with each other (step 5 of [[§C2a.4 Particles and Relativistic Normalization#^der-c2a-4-2|Derivation §C2a.4.2]], for each species, and Theorem §C2a.5.3 across species). So $[Q, H] = [Q, \mathbf P] = 0$.
+> **8. Conservation.** $Q$, $:\!H\!:$ and $\mathbf P$ are integrals of the number densities $a^\dagger_{\mathbf p}a_{\mathbf p}$, $b^\dagger_{\mathbf p}b_{\mathbf p}$, which commute with each other (step 5 of [[§C2a.4 Particles and Relativistic Normalization#^der-c2a-4-1|Derivation §C2a.4.1]], for each species, and Theorem §C2a.5.3 across species). So $[Q, H] = [Q, \mathbf P] = 0$.
 >
 > **What the derivation shows**
 > - $a$-quanta carry $+\frac12$ and $b$-quanta $-\frac12$ in this normalization; only the ratio $-1$ is physical ([[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|Caution: Normalization and sign of the charge]]).
@@ -364,7 +364,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 
 ^der-c2a-5-6
 
-*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|Theorem §C2a.3.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
+*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
@@ -394,11 +394,11 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 ^thm-c2a-5-7
 
 > [!derivation]- Derivation
-> **1. Ladder relations for both species.** $:\!H\!:$ and $\mathbf P$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-5|Theorem §C2a.5.5]]) are sums of one real-field form per species, and the species commute ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]]). So [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-6|Derivation §C2a.3.6]], steps 2–5, applies to each: $[H, a^\dagger_{\mathbf p}] = E_{\mathbf p}a^\dagger_{\mathbf p}$, $[H, b^\dagger_{\mathbf p}] = E_{\mathbf p}b^\dagger_{\mathbf p}$, $[\mathbf P, a^\dagger_{\mathbf p}] = \mathbf p\,a^\dagger_{\mathbf p}$, $[\mathbf P, b^\dagger_{\mathbf p}] = \mathbf p\,b^\dagger_{\mathbf p}$.
+> **1. Ladder relations for both species.** $:\!H\!:$ and $\mathbf P$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-5|Theorem §C2a.5.5]]) are sums of one real-field form per species, and the species commute ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]]). So [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-7|Derivation §C2a.3.7]], steps 2–5, applies to each: $[H, a^\dagger_{\mathbf p}] = E_{\mathbf p}a^\dagger_{\mathbf p}$, $[H, b^\dagger_{\mathbf p}] = E_{\mathbf p}b^\dagger_{\mathbf p}$, $[\mathbf P, a^\dagger_{\mathbf p}] = \mathbf p\,a^\dagger_{\mathbf p}$, $[\mathbf P, b^\dagger_{\mathbf p}] = \mathbf p\,b^\dagger_{\mathbf p}$.
 >
 > **2. Charges.** $[Q, a^\dagger_{\mathbf p}] = \frac12a^\dagger_{\mathbf p}$, $[Q, b^\dagger_{\mathbf p}] = -\frac12b^\dagger_{\mathbf p}$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]]), and $Q|0\rangle = 0$ because every term of the normal-ordered $Q$ ends in an annihilator.
 >
-> **3. Many quanta.** Push $H$, $\mathbf P$, $Q$ through the creation operators one at a time, as in step 4 of [[§C2a.4 Particles and Relativistic Normalization#^der-c2a-4-2|Derivation §C2a.4.2]]: each $a^\dagger$ adds $+\frac12$ to $Q$, each $b^\dagger$ adds $-\frac12$.
+> **3. Many quanta.** Push $H$, $\mathbf P$, $Q$ through the creation operators one at a time, as in step 4 of [[§C2a.4 Particles and Relativistic Normalization#^der-c2a-4-1|Derivation §C2a.4.1]]: each $a^\dagger$ adds $+\frac12$ to $Q$, each $b^\dagger$ adds $-\frac12$.
 >
 > **4. The real field.** A phase rotation $\phi \to e^{iq\theta}\phi$ must respect $\phi^\dagger = \phi$: $e^{iq\theta}\phi = (e^{iq\theta}\phi)^\dagger = e^{-iq\theta}\phi$ for all $\theta$ forces $q = 0$ (Yu eq. (2.214)). In modes, $b = a$ makes $\frac12(N_a - N_b) = 0$.
 >
@@ -408,7 +408,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 
 ^der-c2a-5-7
 
-*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-5|Theorem §C2a.5.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|Theorem §C2a.3.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]
+*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-5|Theorem §C2a.5.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
 
@@ -430,4 +430,4 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 > - The complex field is an operator-valued distribution exactly as the real one: smeared with a real test function, $\phi(f) = a(g_f) + b^\dagger(g_f)$ with $g_f = \tilde f/\sqrt{2E_{\mathbf p}}$ (the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], 3, with $a^\dagger \to b^\dagger$), no longer Hermitian; its relations and its two mode algebras hold after smearing — [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]].
 > - The ordering constants of $H$ and $Q$ are δ at its singular point; the box makes them $\sum_{\mathbf k}E_{\mathbf k}$ and $-\frac12\sum_{\mathbf k}1$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]) — [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]].
 > - The mode computations use the plane-wave delta (an identity in $\mathcal S'$), Fubini for wave packets with the split-exponential rule, relabelling with Jacobian 1, evaluation of smooth prefactors on the support of δ, and integration by parts with fall-off — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]].
-> - The Dirac field repeats the structure with two species of operators, but the roles are reversed: its classical charge $\int\psi^\dagger\psi$ is positive definite and its energy is not, and anticommutators are what turn them into particles minus antiparticles and a positive Hamiltonian — [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-4|Theorem §C5b.3.4]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]].
+> - The Dirac field repeats the structure with two species of operators, but the roles are reversed: its classical charge $\int\psi^\dagger\psi$ is positive definite and its energy is not, and anticommutators are what turn them into particles minus antiparticles and a positive Hamiltonian — [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]].

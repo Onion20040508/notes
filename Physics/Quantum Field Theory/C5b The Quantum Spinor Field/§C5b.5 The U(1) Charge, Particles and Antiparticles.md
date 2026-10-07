@@ -19,12 +19,12 @@ This is the spinor counterpart of [[§C2a.5 The Complex Scalar Field and Its Cha
 
 The current has its home in Chapter C5a, where its conservation follows from the two Dirac equations (and from Noether's theorem for the phase symmetry); it is shown here as it stands there:
 
-![[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9]]
+![[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-3]]
 
 Its charge, read as an operator, is the following.
 
 > [!definition] Definition §C5b.5.1: The U(1) Charge of the Dirac Field
-> The **charge** of the Dirac field is the space integral of the time component of the vector current $j^\mu = \bar\psi\gamma^\mu\psi$ of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]],
+> The **charge** of the Dirac field is the space integral of the time component of the vector current $j^\mu = \bar\psi\gamma^\mu\psi$ of [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-3|Theorem §C5a.5.3]],
 >
 > $$
 > Q \equiv \int d^3x\;\bar\psi\gamma^0\psi = \int d^3x\;\psi^\dagger\psi ,
@@ -38,7 +38,7 @@ Its charge, read as an operator, is the following.
 ^def-c5b-5-1
 
 > [!theorem] Theorem §C5b.5.1: The Charge in Modes, before Any Algebra
-> For the charge $Q = \int d^3x\,\psi^\dagger\psi$ of [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^def-c5b-5-1|Def. §C5b.5.1]], the expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] gives, in the order as it arises,
+> For the charge $Q = \int d^3x\,\psi^\dagger\psi$ of [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^def-c5b-5-1|Def. §C5b.5.1]], the expansions of $\psi$ and $\psi^\dagger$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]]) give, in the order as it arises,
 >
 > $$
 > Q = \sum_s\int\frac{d^3p}{(2\pi)^3}\Bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^s_{\mathbf p}b^{s\dagger}_{\mathbf p}\Bigr) .
@@ -50,20 +50,20 @@ Its charge, read as an operator, is the following.
 ^thm-c5b-5-1
 
 > [!derivation]- Derivation
-> **1. Differences from Derivation §C5b.3.2.** Replace $H_{\text{s.p.}}\psi$ by $\psi$: in Step 1 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2|Derivation §C5b.3.2]] the factor $E_{\mathbf q}$ becomes $1$ and the minus sign in front of the $b^\dagger$ term becomes a plus. Steps 2–4 then give
+> **1. Differences from Derivation §C5b.3.2.** Replace $H_{\text{s.p.}}\psi$ by $\psi$: in Step 1 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2|Derivation §C5b.3.2]] the factor $E_{\mathbf q}$ becomes $1$ and the minus sign in front of the $b^\dagger$ term becomes a plus. Steps 2–4, with $\psi^\dagger$ of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], then give
 >
 > $$
 > Q = \int\frac{d^3p}{(2\pi)^3}\,\frac{1}{2E_{\mathbf p}}\sum_{s,r}\Bigl[u^{s\dagger}(p)u^r(p)\,a^{s\dagger}_{\mathbf p}a^r_{\mathbf p} + v^{s\dagger}(p)v^r(p)\,b^s_{\mathbf p}b^{r\dagger}_{\mathbf p} + u^{s\dagger}(p)v^r(\tilde p)\,a^{s\dagger}_{\mathbf p}b^{r\dagger}_{-\mathbf p}e^{2iE_{\mathbf p}t} + v^{s\dagger}(p)u^r(\tilde p)\,b^s_{\mathbf p}a^r_{-\mathbf p}e^{-2iE_{\mathbf p}t}\Bigr] .
 > $$
 >
-> **2. Orthogonality and normalization.** The last two terms vanish by [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]; the first two give $2E_{\mathbf p}\delta^{rs}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]]), which cancels the $1/2E_{\mathbf p}$.
+> **2. Orthogonality and normalization.** The last two terms vanish by [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]]; the first two give $2E_{\mathbf p}\delta^{rs}$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]]), which cancels the $1/2E_{\mathbf p}$.
 >
 > **What the derivation shows**
 > - Where $H$ had a relative minus sign between the species, $Q$ has a plus: the positive density $\psi^\dagger\psi$ in modes.
 
 ^der-c5b-5-1
 
-*Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2|Derivation §C5b.3.2]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]
+*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2|Derivation §C5b.3.2]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-3|Theorem §C5a.5.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]]
 
 > [!theorem] Theorem §C5b.5.2: The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive
 > For a classical Dirac field with c-number amplitudes $a^s, b^s \in \mathcal S(\mathbb R^3)$ in the expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], with $H$ and $Q$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]] and [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]],
@@ -93,7 +93,7 @@ Its charge, read as an operator, is the following.
 *Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]
 
 > [!theorem] Theorem §C5b.5.3: The Charge Counts Fermions Minus Antifermions
-> The normal-ordered charge ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) of the current of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]] is
+> The normal-ordered charge ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) of the current of [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-3|Theorem §C5a.5.3]] is
 >
 > $$
 > Q = \int d^3x\;:\!\psi^\dagger\psi\!: \; = \sum_s\int\frac{d^3p}{(2\pi)^3}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} - b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) = N_a - N_b ,
@@ -118,7 +118,7 @@ Its charge, read as an operator, is the following.
 
 ^der-c5b-5-3
 
-*Uses:* [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-4|Theorem §C5b.3.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-6|Theorem §C5b.3.6]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]
+*Uses:* [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
@@ -138,7 +138,7 @@ Its charge, read as an operator, is the following.
 > [Q, a^{s\dagger}_{\mathbf p}] = a^{s\dagger}_{\mathbf p}, \quad [Q, b^{s\dagger}_{\mathbf p}] = -b^{s\dagger}_{\mathbf p}, \quad [Q, a^s_{\mathbf p}] = -a^s_{\mathbf p}, \quad [Q, b^s_{\mathbf p}] = b^s_{\mathbf p}, \qquad [Q, \psi] = -\psi, \quad [Q, \bar\psi] = \bar\psi .
 > $$
 >
-> So the one-particle states of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]] have $Q|\mathbf p, s\rangle = +|\mathbf p, s\rangle$ and $Q|\mathbf p, s\rangle^c = -|\mathbf p, s\rangle^c$, and $\psi$ lowers the charge by one unit, both by annihilating a particle and by creating an antiparticle.
+> So the one-particle states of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]] have $Q|\mathbf p, s\rangle = +|\mathbf p, s\rangle$ and $Q|\mathbf p, s\rangle^c = -|\mathbf p, s\rangle^c$, and $\psi$ lowers the charge by one unit, both by annihilating a particle and by creating an antiparticle.
 >
 > *Scalar analogue:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]].
 > *Source: Yu §5.5.3, eq. (5.267) and §5.5.2 (the commutator identity, eqs. (5.248)–(5.251)) · PS §3.5, p. 62 · the user's PHY 513 notes, Ch. 10 §10.6 ("both lower the charge by one unit") · the user's pre-course notes, §5.5 ("$Q/q$ counts particles minus antiparticles")*
@@ -146,9 +146,9 @@ Its charge, read as an operator, is the following.
 ^thm-c5b-5-4
 
 > [!derivation]- Derivation
-> **1. The identity.** $[AB, C] = A\{B, C\} - \{A, C\}B$ (Step 1 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-7|Derivation §C5b.3.7]]).
+> **1. The identity.** $[AB, C] = A\{B, C\} - \{A, C\}B$ (Step 1 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-8|Derivation §C5b.3.8]]).
 >
-> **2. $Q$ and $a^\dagger$.** By Step 2 of Derivation §C5b.3.7, $[a^{r\dagger}_{\mathbf q}a^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}] = (2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)\,a^{r\dagger}_{\mathbf q}$, and $[b^{r\dagger}_{\mathbf q}b^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}] = b^{r\dagger}_{\mathbf q}\{b^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}\} - \{b^{r\dagger}_{\mathbf q}, a^{s\dagger}_{\mathbf p}\}b^r_{\mathbf q} = 0$ (mixed anticommutators vanish). With the weight $+1$ for $a^\dagger a$ and $-1$ for $b^\dagger b$ in $Q = \sum_r\int\frac{d^3q}{(2\pi)^3}(a^{r\dagger}_{\mathbf q}a^r_{\mathbf q} - b^{r\dagger}_{\mathbf q}b^r_{\mathbf q})$, integrating the delta: $[Q, a^{s\dagger}_{\mathbf p}] = a^{s\dagger}_{\mathbf p}$.
+> **2. $Q$ and $a^\dagger$.** By Step 2 of Derivation §C5b.3.8, $[a^{r\dagger}_{\mathbf q}a^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}] = (2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)\,a^{r\dagger}_{\mathbf q}$, and $[b^{r\dagger}_{\mathbf q}b^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}] = b^{r\dagger}_{\mathbf q}\{b^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}\} - \{b^{r\dagger}_{\mathbf q}, a^{s\dagger}_{\mathbf p}\}b^r_{\mathbf q} = 0$ (mixed anticommutators vanish). With the weight $+1$ for $a^\dagger a$ and $-1$ for $b^\dagger b$ in $Q = \sum_r\int\frac{d^3q}{(2\pi)^3}(a^{r\dagger}_{\mathbf q}a^r_{\mathbf q} - b^{r\dagger}_{\mathbf q}b^r_{\mathbf q})$, integrating the delta: $[Q, a^{s\dagger}_{\mathbf p}] = a^{s\dagger}_{\mathbf p}$.
 >
 > **3. $Q$ and $b^\dagger$.** The same computation with the species exchanged gives $[b^{r\dagger}_{\mathbf q}b^r_{\mathbf q}, b^{s\dagger}_{\mathbf p}] = (2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)\,b^{r\dagger}_{\mathbf q}$; with the weight $-1$, $[Q, b^{s\dagger}_{\mathbf p}] = -b^{s\dagger}_{\mathbf p}$.
 >
@@ -156,32 +156,32 @@ Its charge, read as an operator, is the following.
 >
 > **5. The constant does not matter.** The unordered charge differs by a c-number ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]), which commutes with everything, so Steps 2–4 hold for it too.
 >
-> **6. The states.** $Q|0\rangle = 0$, every term of the normal-ordered $Q$ ending in an annihilator ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^pr-c5b-4-1|Principle §C5b.4.1]]). Then $Q\,a^{s\dagger}_{\mathbf p}|0\rangle = [Q, a^{s\dagger}_{\mathbf p}]|0\rangle + a^{s\dagger}_{\mathbf p}Q|0\rangle = a^{s\dagger}_{\mathbf p}|0\rangle$, and $Q\,b^{s\dagger}_{\mathbf p}|0\rangle = -b^{s\dagger}_{\mathbf p}|0\rangle$; multiply by $\sqrt{2E_{\mathbf p}}$.
+> **6. The states.** $Q|0\rangle = 0$, every term of the normal-ordered $Q$ ending in an annihilator ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]]). Then $Q\,a^{s\dagger}_{\mathbf p}|0\rangle = [Q, a^{s\dagger}_{\mathbf p}]|0\rangle + a^{s\dagger}_{\mathbf p}Q|0\rangle = a^{s\dagger}_{\mathbf p}|0\rangle$, and $Q\,b^{s\dagger}_{\mathbf p}|0\rangle = -b^{s\dagger}_{\mathbf p}|0\rangle$; multiply by $\sqrt{2E_{\mathbf p}}$.
 >
 > **7. The field.** $Q$ commutes with the c-number spinors and exponentials ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-1|§C5b.2, Caution: What anticommutes and what does not]]), so it acts on the operators in [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] term by term (after smearing): $[Q, \psi] = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_s\bigl([Q, a^s_{\mathbf p}]u^se^{-ip\cdot x} + [Q, b^{s\dagger}_{\mathbf p}]v^se^{ip\cdot x}\bigr) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_s\bigl(-a^s_{\mathbf p}u^se^{-ip\cdot x} - b^{s\dagger}_{\mathbf p}v^se^{ip\cdot x}\bigr) = -\psi$. For $\bar\psi$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]]) the operators are $b$ and $a^\dagger$, both with eigenvalue-change $+1$: $[Q, \bar\psi] = \bar\psi$.
 >
 > **What the derivation shows**
-> - The pairing of $a$ with $b^\dagger$ in $\psi$ is a pairing by charge, not by energy: both lower $Q$ by one, while both $a^\dagger$ and $b^\dagger$ raise the energy ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]) → [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-2|Remark: Destroying a particle is not creating an antiparticle]].
+> - The pairing of $a$ with $b^\dagger$ in $\psi$ is a pairing by charge, not by energy: both lower $Q$ by one, while both $a^\dagger$ and $b^\dagger$ raise the energy ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-8|Theorem §C5b.3.8]]) → [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-2|Remark: Destroying a particle is not creating an antiparticle]].
 > - ⚑ By-product: since $\psi$ changes $Q$, its expectation value vanishes in every eigenstate of $Q$ → [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^rem-c5b-4-2|§C5b.4, Remark: Why the Dirac field has no coherent states]].
 
 ^der-c5b-5-4
 
-*Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^pr-c5b-4-1|Principle §C5b.4.1]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]]
+*Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-8|Theorem §C5b.3.8]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
 
 > [!remark] Remark: Destroying a particle is not creating an antiparticle
-> Asked in Lecture 10: should $a$ not do something similar to $b^\dagger$? Not with energy. Creating a particle costs energy $E_{\mathbf p}$, and so does creating an antiparticle ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]]); destroying a particle releases it. The pairing that appears in $\psi$, $a$ with $b^\dagger$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]), is about charge: both lower the charge by one unit ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]]). Treating the Dirac equation as a one-particle equation leads to exactly this kind of confusion ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^cau-c5b-3-1|§C5b.3, Caution: Negative energies are a problem only if ψ is a wave function]]); and the one-particle Dirac equation by itself also lacks the exclusion principle, which the field delivers ([[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-6|§C5b.1, Remark: Spin and statistics are an output]]).
+> Asked in Lecture 10: should $a$ not do something similar to $b^\dagger$? Not with energy. Creating a particle costs energy $E_{\mathbf p}$, and so does creating an antiparticle ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]]); destroying a particle releases it. The pairing that appears in $\psi$, $a$ with $b^\dagger$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]), is about charge: both lower the charge by one unit ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]]). Treating the Dirac equation as a one-particle equation leads to exactly this kind of confusion ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^cau-c5b-3-1|§C5b.3, Caution: Negative energies are a problem only if ψ is a wave function]]); and the one-particle Dirac equation by itself also lacks the exclusion principle, which the field delivers ([[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-6|§C5b.1, Remark: Spin and statistics are an output]]).
 >
 > *Source: Lecture 10 (transcript, question after slide 21) · the user's PHY 513 notes, Ch. 10 §10.6 ("Destroying a particle is not creating an antiparticle")*
 
 ^rem-c5b-5-2
 
 > [!remark] Remark: The Dirac sea, read in the field
-> Second-quantize the one-particle Dirac Hamiltonian $H_{\text{s.p.}}$ as a one-body operator in the manner of [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]]: one fermionic mode $c$ per eigenvector of $H_{\text{s.p.}}(\mathbf p)$, $H = \sum(E\,c_+^\dagger c_+ - E\,c_-^\dagger c_-)$. That is [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]] with $c_+ = a$ and $c_- = b^\dagger$. Dirac's sea ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]) is the state with every negative-energy mode filled, annihilated by every $c_-^\dagger = b$: it *is* the field vacuum of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^pr-c5b-4-1|Principle §C5b.4.1]]. Its energy relative to the empty state, $-\sum E$ over the negative modes, is $E_0^{(\rm D)}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]); its electron number is the vacuum charge $+2V\int\frac{d^3p}{(2\pi)^3}$ ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-1|Remark: The vacuum charge, and why the order is forced]]); a hole has the reversed spin ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-4|Theorem §C5b.4.4]]). For the free field the two pictures are the same Fock space. What the field adds:
+> Second-quantize the one-particle Dirac Hamiltonian $H_{\text{s.p.}}$ as a one-body operator in the manner of [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]]: one fermionic mode $c$ per eigenvector of $H_{\text{s.p.}}(\mathbf p)$, $H = \sum(E\,c_+^\dagger c_+ - E\,c_-^\dagger c_-)$. That is [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]] with $c_+ = a$ and $c_- = b^\dagger$. Dirac's sea ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]) is the state with every negative-energy mode filled, annihilated by every $c_-^\dagger = b$: it *is* the field vacuum of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]]. Its energy relative to the empty state, $-\sum E$ over the negative modes, is $E_0^{(\rm D)}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-6|Theorem §C5b.3.6]]); its electron number is the vacuum charge $+2V\int\frac{d^3p}{(2\pi)^3}$ ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-1|Remark: The vacuum charge, and why the order is forced]]); a hole has the reversed spin ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]]). For the free field the two pictures are the same Fock space. What the field adds:
 > - the vacuum is defined directly, and normal ordering removes the sea's infinite energy and charge, instead of positing an unobservable background;
 > - antiparticles are the quanta of $b^\dagger$ for bosons too ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]), where no sea can be filled;
-> - exclusion, which hole theory needed as an input to stabilize the sea, is a consequence of the anticommutators ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]]).
+> - exclusion, which hole theory needed as an input to stabilize the sea, is a consequence of the anticommutators ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]]).
 >
 > *Source: PS §3.5, pp. 57, 61 ("This reversal of sign agrees with the prediction of Dirac hole theory") · the user's pre-course notes, §5.5 (Remark "Antiparticles without hole theory") · the identification $c_- = b^\dagger$ written out here*
 

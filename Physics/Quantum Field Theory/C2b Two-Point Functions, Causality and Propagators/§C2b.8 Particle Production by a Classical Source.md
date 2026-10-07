@@ -125,7 +125,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 > H = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,b_{\mathbf p}^\dagger b_{\mathbf p} + E_0 = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\Bigl(a_{\mathbf p}^\dagger - \frac{i\,\overline{\tilde j(p)}}{\sqrt{2E_{\mathbf p}}}\Bigr)\Bigl(a_{\mathbf p} + \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\Bigr) + E_0 .
 > $$
 >
-> ⚑ By-product: the zero-point constant $E_0$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]) is the same before and after and cancels from the energy *added* → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|§C2a.3, Remark: Why the zero-point energy is dropped]].
+> ⚑ By-product: the zero-point constant $E_0$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]) is the same before and after and cancels from the energy *added* → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|§C2a.3, Remark: Why the zero-point energy is dropped]].
 >
 > **Step 2** (expand the product, all four terms). $a^\dagger a + a^\dagger\frac{i\tilde j}{\sqrt{2E}} - \frac{i\overline{\tilde j}}{\sqrt{2E}}a + \frac{|\tilde j|^2}{2E}$.
 >

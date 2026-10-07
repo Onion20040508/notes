@@ -21,7 +21,7 @@ tags: [chapter, quantum-field-theory]
 
 ## Principles
 - [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|§C2a.1.2]] Equal-Time Canonical Commutation Relations
-- [[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|§C2a.4.1]] The Vacuum and the Fock Space
+- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|§C2a.3.3]] The Vacuum and the Fock Space
 
 ## Theorems
 - [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|§C2a.1.3]] The Canonical Relations Are Identities after Smearing
@@ -34,17 +34,17 @@ tags: [chapter, quantum-field-theory]
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|§C2a.2.7]] The Mode Algebra Smeared
 - [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|§C2a.3.1]] Hamiltonian in Mode Form
 - [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|§C2a.3.2]] δ³(0) Has No Value; in a Box It Is the Volume
-- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] The Zero-Point Energy
-- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|§C2a.3.4]] Momentum in Mode Form
-- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|§C2a.3.5]] The Normal-Ordered Hamiltonian Acts on Wave Packets
-- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|§C2a.3.6]] Ladder Relations
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|§C2a.4.2]] The Spectrum: Particles
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|§C2a.4.3]] Bose Symmetry and Multiple Occupation
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|§C2a.4.4]] The Invariant Measure
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] Invariance of the Relativistic Normalization
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|§C2a.4.6]] The Overlap of Momentum States Is a Distribution
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|§C2a.4.7]] The Field Creates a Particle at a Point
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-8|§C2a.4.8]] The Smeared Field Creates a State; the Field at a Point Does Not
+- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|§C2a.3.4]] The Zero-Point Energy
+- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|§C2a.3.5]] Momentum in Mode Form
+- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|§C2a.3.6]] The Normal-Ordered Hamiltonian Acts on Wave Packets
+- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|§C2a.3.7]] Ladder Relations
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|§C2a.4.1]] The Spectrum: Particles
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|§C2a.4.2]] Bose Symmetry and Multiple Occupation
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|§C2a.4.3]] The Invariant Measure
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|§C2a.4.4]] Invariance of the Relativistic Normalization
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|§C2a.4.6]] The Field Creates a Particle at a Point
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|§C2a.4.7]] The Smeared Field Creates a State; the Field at a Point Does Not
 - [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|§C2a.5.2]] Mode Expansion of the Complex Field
 - [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|§C2a.5.3]] Mode Algebra of the Complex Field
 - [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|§C2a.5.4]] Hamiltonian of the Complex Field

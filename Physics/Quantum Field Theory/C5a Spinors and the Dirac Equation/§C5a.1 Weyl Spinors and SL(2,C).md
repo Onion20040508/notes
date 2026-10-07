@@ -64,24 +64,36 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 
 ## The Weyl matrices and SL(2, C)
 
-> [!definition] Definition §C5a.1.2: The Weyl Matrices and the Group SL(2, C)
+> [!definition] Definition §C5a.1.2: The Weyl Matrices
 > For Lorentz parameters $\omega_{\mu\nu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]), with angles $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$ and rapidities $\eta_i = \omega_{0i}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]]), the **left- and right-handed Weyl matrices** $\Lambda_L$, $\Lambda_R$ are the matrices of the representations $(\frac12, 0)$ and $(0, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]]; the representation $(j_+, j_-)$: [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-1|Def. §C3.3.1]]), with $\mathbf J = \frac12\boldsymbol\sigma$ and $\mathbf K = -\frac i2\boldsymbol\sigma$ for $\Lambda_L$, $\mathbf K = +\frac i2\boldsymbol\sigma$ for $\Lambda_R$ (with $K_i = \mathcal J^{0i}$; the opposite sign of $\mathbf K$ exchanges the two, [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^cau-c3-3-1|Caution: Which one is (½, 0) depends on the sign of K]]):
 >
 > $$
 > \Lambda_L(\omega) = \exp\Bigl(-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma\Bigr) = e^{-i(\boldsymbol\theta - i\boldsymbol\eta)\cdot\boldsymbol\sigma/2}, \qquad \Lambda_R(\omega) = \exp\Bigl(-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma\Bigr) = e^{-i(\boldsymbol\theta + i\boldsymbol\eta)\cdot\boldsymbol\sigma/2} .
 > $$
 >
-> A **left-handed** (**right-handed**) **Weyl spinor** is a column $\psi_L \in \mathbb C^2$ ($\psi_R$) transforming as $\psi_L \to \Lambda_L\psi_L$ ($\psi_R \to \Lambda_R\psi_R$); these are Peskin–Schroeder's $\psi_L$, $\psi_R$. $SL(2, \mathbb C) = \{\lambda \in M_2(\mathbb C) : \det\lambda = 1\}$, a group under matrix multiplication.
->
 > *Source: PHY 513 Lecture 8, Part C ("$\psi_L \to e^{-i\vec\theta\cdot\vec\sigma/2 - \vec\eta\cdot\vec\sigma/2}\psi_L$, $\psi_R \to e^{-i\vec\theta\cdot\vec\sigma/2 + \vec\eta\cdot\vec\sigma/2}\psi_R$") · PS §3.2, eqs. (3.36)–(3.37) · the user's PHY 513 notes, Ch. 8 §8.2 ($U_L$, $U_R$, eq. (weyllaws)) · Yu Exercise 3.7(c)*
 
 ^def-c5a-1-2
+
+> [!definition] Definition §C5a.1.3: Weyl Spinors
+> A **left-handed** (**right-handed**) **Weyl spinor** is a column $\psi_L \in \mathbb C^2$ ($\psi_R$) transforming as $\psi_L \to \Lambda_L\psi_L$ ($\psi_R \to \Lambda_R\psi_R$), with the Weyl matrices of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]]: a vector of the representation $(\frac12, 0)$ (of $(0, \frac12)$; [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]]). These are Peskin–Schroeder's $\psi_L$, $\psi_R$.
+>
+> *Source: PHY 513 Lecture 8, Part C · PS §3.2, eqs. (3.36)–(3.37) · the user's PHY 513 notes, Ch. 8 §8.2 (eq. (weyllaws))*
+
+^def-c5a-1-3
+
+> [!definition] Definition §C5a.1.4: The Group SL(2, C)
+> $SL(2, \mathbb C) = \{\lambda \in M_2(\mathbb C) : \det\lambda = 1\}$, the complex $2\times2$ matrices of unit determinant, a group under matrix multiplication.
+>
+> *Source: the user's pre-course notes, §5.2 (Remark "SL(2,C) made explicit") · Yu Exercise 3.7(c)*
+
+^def-c5a-1-4
 
 The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used here because they are not unitary, and $U$ is kept for the unitary operators on states ([[§C3.5 Quantum Poincaré Transformations#^pr-c3-5-1|Principle §C3.5.1]]). The handwritten Lecture 7 notes call the two halves $\xi$ and $\eta$; the Lecture 8 slides and Peskin–Schroeder use $\psi_L$, $\psi_R$. That these laws come out of the Dirac matrices is [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]]; here they are taken from the representation theory of §C3.2–§C3.3 directly. $SL(2, \mathbb C)$ is a group because $\det(\lambda_1\lambda_2) = \det\lambda_1\det\lambda_2$ and $\det\lambda^{-1} = (\det\lambda)^{-1}$; it has $8 - 2 = 6$ real parameters, as many as $SO^+(1,3)$.
 
 > [!theorem] Theorem §C5a.1.2: The Weyl Matrices Lie in SL(2, C)
 > For the Weyl matrices of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]] and every $\omega$:
-> 1. $\det\Lambda_L(\omega) = \det\Lambda_R(\omega) = 1$;
+> 1. $\det\Lambda_L(\omega) = \det\Lambda_R(\omega) = 1$, so both lie in $SL(2, \mathbb C)$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-4|Def. §C5a.1.4]]);
 > 2. $\Lambda_R(\omega) = \bigl(\Lambda_L(\omega)^\dagger\bigr)^{-1}$;
 > 3. $\Lambda_L(\omega)^* = \sigma^2\,\Lambda_R(\omega)\,\sigma^2$;
 > 4. for a rotation ($\boldsymbol\eta = 0$) $\Lambda_L = \Lambda_R \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]); for a pure boost ($\boldsymbol\theta = 0$) $\Lambda_L = e^{-\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ and $\Lambda_R = e^{+\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ are Hermitian and positive, not unitary.
@@ -148,7 +160,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 ## The covering map
 
 > [!theorem] Theorem §C5a.1.4: SL(2, C) Is Connected and Simply Connected
-> Every $\lambda \in SL(2, \mathbb C)$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]]) is uniquely $\lambda = e^{h}U$ with $U \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]) and $h$ traceless Hermitian, $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ for a unique $\boldsymbol\eta \in \mathbb R^3$, and $\lambda \mapsto (\boldsymbol\eta, U)$ is a homeomorphism $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$. Hence $SL(2, \mathbb C)$ is path-connected and simply connected ([[§29 The Fundamental Group#^def-29-3|590 Def. §29.3]]).
+> Every $\lambda \in SL(2, \mathbb C)$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-4|Def. §C5a.1.4]]) is uniquely $\lambda = e^{h}U$ with $U \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]) and $h$ traceless Hermitian, $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ for a unique $\boldsymbol\eta \in \mathbb R^3$, and $\lambda \mapsto (\boldsymbol\eta, U)$ is a homeomorphism $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$. Hence $SL(2, \mathbb C)$ is path-connected and simply connected ([[§29 The Fundamental Group#^def-29-3|590 Def. §29.3]]).
 >
 > *Source: Yu Exercise 3.7(d), eq. (3.265) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", part (d)) · the continuity of the decomposition quoted from the functional calculus*
 
@@ -387,7 +399,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 
 ## Spinor indices
 
-> [!definition] Definition §C5a.1.3: Undotted and Dotted Spinor Indices
+> [!definition] Definition §C5a.1.5: Undotted and Dotted Spinor Indices
 > - A left-handed spinor carries a lower **undotted** index, $\psi_a$ ($a = 1, 2$), with $\psi_a \to (\Lambda_L)_a{}^b\psi_b$ ($\Lambda_L$, $\Lambda_R$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]]); a right-handed one an upper **dotted** index, $\psi^{\dot a}$, with $\psi^{\dot a} \to (\Lambda_R)^{\dot a}{}_{\dot b}\psi^{\dot b}$.
 > - $\varepsilon^{12} = -\varepsilon^{21} = +1$, $\varepsilon_{12} = -\varepsilon_{21} = -1$ (zero on the diagonal), so $\varepsilon^{ab}\varepsilon_{bc} = \delta^a{}_c$; indices are raised and lowered by $\psi^a = \varepsilon^{ab}\psi_b$, $\psi_a = \varepsilon_{ab}\psi^b$, and the same numbers $\varepsilon^{\dot a\dot b}$, $\varepsilon_{\dot a\dot b}$ for dotted indices.
 > - Complex conjugation turns an undotted index into a dotted one at the same height: $\bar\psi_{\dot a} \equiv (\psi_a)^*$, $\bar\psi^{a} \equiv (\psi^{\dot a})^*$.
@@ -395,7 +407,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Give left-handed spinors a lower index … Right-handed indices are conventionally dotted, $\psi_R^{\dot a}$") · the index positions of $\sigma^\mu$, $\bar\sigma^\mu$ derived here (Theorem §C5a.1.12)*
 
-^def-c5a-1-3
+^def-c5a-1-5
 
 As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = i\sigma^2$, and $\varepsilon_{ab}$ is $E^{-1} = -E$. The definition is a bookkeeping device: each index position names a transformation law, and the theorems below say which contractions are invariant.
 
@@ -407,7 +419,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 ^cau-c5a-1-1
 
 > [!theorem] Theorem §C5a.1.10: ε Is the Invariant Form of a Weyl Slot
-> 1. For every $2\times2$ matrix $M$, with $E = (\varepsilon^{ab})$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]], $M^{\mathsf T}EM = (\det M)\,E$. Hence $\varepsilon$ is invariant under $SL(2, \mathbb C)$: $\Lambda_L^{\mathsf T}E\Lambda_L = E$, $\Lambda_R^{\mathsf T}E\Lambda_R = E$.
+> 1. For every $2\times2$ matrix $M$, with $E = (\varepsilon^{ab})$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-5|Def. §C5a.1.5]], $M^{\mathsf T}EM = (\det M)\,E$. Hence $\varepsilon$ is invariant under $SL(2, \mathbb C)$: $\Lambda_L^{\mathsf T}E\Lambda_L = E$, $\Lambda_R^{\mathsf T}E\Lambda_R = E$.
 > 2. An upper undotted index transforms with $(\Lambda_L^{\mathsf T})^{-1}$: $\psi^a \to \psi^b(\Lambda_L^{-1})_b{}^a$.
 > 3. $\chi^a\psi_a = \varepsilon^{ab}\chi_b\psi_a$ is invariant; $\chi_a\psi^a = -\chi^a\psi_a$; for commuting components $\psi^a\psi_a = 0$.
 >
@@ -436,7 +448,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 
 ^der-c5a-1-10
 
-*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-5|Def. §C5a.1.5]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]]
 
 > [!theorem] Theorem §C5a.1.11: Dotted Indices, Conjugation and the Invariant Pairings
 > 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|Theorem §C3.3.8]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
@@ -463,10 +475,10 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 
 ^der-c5a-1-11
 
-*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-10|Theorem §C5a.1.10]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-5|Def. §C5a.1.5]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-10|Theorem §C5a.1.10]]
 
 > [!theorem] Theorem §C5a.1.12: A Four-Vector Is a Bispinor
-> 1. $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one lower undotted and one lower dotted index ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]]): $x \to \Lambda x$ is $X_{a\dot b} \to (\Lambda_L)_a{}^c(\Lambda_L^*)_{\dot b}{}^{\dot d}X_{c\dot d}$.
+> 1. $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one lower undotted and one lower dotted index ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-5|Def. §C5a.1.5]]): $x \to \Lambda x$ is $X_{a\dot b} \to (\Lambda_L)_a{}^c(\Lambda_L^*)_{\dot b}{}^{\dot d}X_{c\dot d}$.
 > 2. $(\bar\sigma^\mu)^{\dot aa} = \varepsilon^{\dot a\dot b}\varepsilon^{ab}(\sigma^\mu)_{b\dot b}$, and $x^\mu = \frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a}$.
 > 3. So the vector representation ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) is equivalent to $(\frac12, 0)\otimes\overline{(\frac12, 0)}$; the conjugate is $(0, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|Theorem §C3.3.8]]), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-6|Theorem §C3.3.6]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-4|Theorem §C3.3.4]]), with $x \mapsto X$ the equivalence.
 >
@@ -527,7 +539,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > - The sign $(-1)^{2(j_+ + j_-)}$ of a $2\pi$ rotation is the value of a representation on the kernel $\{\pm\mathbb 1\}$ of the covering map, and the endpoint of the lift of the $2\pi$ loop: algebra (§C3.2), topology (§C3.1) and the explicit group meet here — [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-5|Theorem §C3.3.5]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]].
 > - That fields with half-integer $j_+ + j_-$ are two-valued is why their quanta obey Fermi statistics and are quantized with anticommutators — [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.9 Spin and Statistics|§C5b.9]].
 > - The complex angles $\boldsymbol\theta \mp i\boldsymbol\eta$ of the factorization in §C3.2 are literally the arguments of $\Lambda_L$ and $\Lambda_R$, and complex conjugation exchanging them is $\Lambda_L^* = \sigma^2\Lambda_R\sigma^2$ — [[§C3.2 The Lorentz Algebra#^thm-c3-2-4|Theorem §C3.2.4]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|Theorem §C3.3.8]].
-> - $\det X = x^2$ makes the Minkowski interval a determinant, exactly as the Euclidean length is $-\det(\mathbf x\cdot\boldsymbol\sigma)$; the light cone becomes the boundary of the cone of positive matrices, which is why null momenta factorize into spinors (★ remark above; helicity spinors, QFT §C5a.6) — [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]].
+> - $\det X = x^2$ makes the Minkowski interval a determinant, exactly as the Euclidean length is $-\det(\mathbf x\cdot\boldsymbol\sigma)$; the light cone becomes the boundary of the cone of positive matrices, which is why null momenta factorize into spinors (★ remark above; helicity spinors, QFT §C5a.7) — [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]].
 > - $\sigma^\mu$ and $\bar\sigma^\mu$ are to Weyl spinors what $\gamma^\mu$ is to Dirac spinors, and $\gamma^\mu$ is literally built from them in the chiral basis — [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-12|Theorem §C5a.2.12]].
 > - $\varepsilon$ for spinors parallels $g$ for vectors and the symplectic form of Hamiltonian mechanics: $SL(2, \mathbb C) = Sp(2, \mathbb C)$ preserves an antisymmetric form, as canonical transformations preserve $\{q, p\}$ — [[§C1b.4 Hamiltonian Field Theory|§C1b.4]].
 > - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-5|Theorem §C3.1.5]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]].

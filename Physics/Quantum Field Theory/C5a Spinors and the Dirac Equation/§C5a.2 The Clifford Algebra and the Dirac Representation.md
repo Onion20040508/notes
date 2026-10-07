@@ -57,15 +57,15 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 >
 > **What the derivation shows**
 > - The algebra says exactly "the $\gamma$'s square to the metric and anticommute"; part 2 is the same statement for every direction at once.
-> - Used next: Hermiticity (Theorem §C5a.2.3), the sixteen products (Theorem §C5a.2.4), Dirac ⇒ Klein–Gordon ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-10|Theorem §C5a.3.10]]), the slash algebra ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-2|Def. §C5a.3.2]]).
-> - The split is the working trick for products of two γ's. With $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ it reads $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]]); it gives the second form of the spinor generators (Def. §C5a.2.3 below), $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$ ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-1|Theorem §C5a.7.1]]), and, iterated, the reduction of any product of γ's to antisymmetrized products ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-8|Theorem §C5a.7.8]]).
+> - Used next: Hermiticity (Theorem §C5a.2.3), the sixteen products (Theorem §C5a.2.4), Dirac ⇒ Klein–Gordon ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), the slash algebra ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-2|Def. §C5a.3.2]]).
+> - The split is the working trick for products of two γ's. With $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ it reads $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]]); it gives the second form of the spinor generators (Def. §C5a.2.4 below), $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$ ([[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-1|Theorem §C5a.8.1]]), and, iterated, the reduction of any product of γ's to antisymmetrized products ([[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-8|Theorem §C5a.8.8]]).
 
 ^der-c5a-2-1
 
 *Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]]
 
 > [!remark] Remark: A square root of p²
-> The handwritten question "square to $\pm1$, or square root?" has a precise answer: for a momentum $p$, $p_\mu\gamma^\mu$ is a matrix square root of the number $p^2$ (Theorem §C5a.2.1, 2). This is what Dirac was after: a first-order operator whose square is the Klein–Gordon operator, $(i\gamma^\mu\partial_\mu)^2 = -\partial^2$, so that a first-order equation implies $(\partial^2 + m^2)\psi = 0$ ([[§C13.2★ The Dirac Equation#^rem-c13-2-1|QM, Remark: The square root of the Klein–Gordon operator]]; [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-10|Theorem §C5a.3.10]]). No number squares to $p^2$ as a linear function of $p$; anticommuting matrices do, because the cross terms cancel in pairs.
+> The handwritten question "square to $\pm1$, or square root?" has a precise answer: for a momentum $p$, $p_\mu\gamma^\mu$ is a matrix square root of the number $p^2$ (Theorem §C5a.2.1, 2). This is what Dirac was after: a first-order operator whose square is the Klein–Gordon operator, $(i\gamma^\mu\partial_\mu)^2 = -\partial^2$, so that a first-order equation implies $(\partial^2 + m^2)\psi = 0$ ([[§C13.2★ The Dirac Equation#^rem-c13-2-1|QM, Remark: The square root of the Klein–Gordon operator]]; [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]). No number squares to $p^2$ as a linear function of $p$; anticommuting matrices do, because the cross terms cancel in pairs.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (paragraph "Square to ±1, or square root?")*
 
@@ -78,7 +78,7 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 > \gamma^0 = \begin{pmatrix} 0 & \mathbb 1 \\ \mathbb 1 & 0 \end{pmatrix}, \qquad \gamma^i = \begin{pmatrix} 0 & \sigma^i \\ -\sigma^i & 0 \end{pmatrix}, \qquad\text{i.e.}\qquad \gamma^\mu = \begin{pmatrix} 0 & \sigma^\mu \\ \bar\sigma^\mu & 0 \end{pmatrix} .
 > $$
 >
-> A Dirac spinor in this basis is written $\psi = \binom{\psi_L}{\psi_R}$, with two-component upper and lower halves (the Weyl spinors of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]], Theorem §C5a.2.9).
+> A Dirac spinor in this basis is written $\psi = \binom{\psi_L}{\psi_R}$, with two-component upper and lower halves (the Weyl spinors of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]], Theorem §C5a.2.9).
 >
 > *Source: PS §3.2, eqs. (3.25), (3.36), (3.42) · PHY 513 Lecture 7, Part B (slide "Explicit Form of Dirac Matrices"); Lecture 8, Cheat Sheet I and Part C ("Economical form of all 4 $\gamma$-matrices") · the user's PHY 513 notes, Ch. 8 §8.1, eq. (chiralbasis), §8.2, eq. (weylsplit) · Yu §5.2, eqs. (5.68), (5.75)*
 
@@ -139,6 +139,19 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 
 *Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
+> [!definition] Definition §C5a.2.3: Antisymmetrized Products of γ Matrices
+> For indices $\mu_1, \dots, \mu_n$,
+>
+> $$
+> \gamma^{[\mu_1}\gamma^{\mu_2}\cdots\gamma^{\mu_n]} \equiv \gamma^{[\mu_1\cdots\mu_n]} \equiv \frac1{n!}\sum_{\pi\in S_n}\operatorname{sgn}(\pi)\,\gamma^{\mu_{\pi(1)}}\cdots\gamma^{\mu_{\pi(n)}} ,
+> $$
+>
+> of the Dirac matrices ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]]): the totally antisymmetric part, with weight $1/n!$. Thus $\gamma^{[\mu\nu]} = \frac12[\gamma^\mu, \gamma^\nu]$, which is $-2iS^{\mu\nu}$ with the spinor generators defined below ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]) and $-i\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}$ of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]]; for distinct indices it is the ordered product of Theorem §C5a.2.4 up to sign.
+>
+> *Source: PHY 513, Problem Set 5, Problem 5(c) statement (notation) · PS §3.4, p. 49 · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$")*
+
+^def-c5a-2-3
+
 > [!theorem] Theorem §C5a.2.4: The Sixteen Products Are a Basis
 > For $A = \{\mu_1 < \dots < \mu_k\} \subseteq \{0, 1, 2, 3\}$ let $\Gamma_A = \gamma^{\mu_1}\cdots\gamma^{\mu_k}$ ($\Gamma_\varnothing = \mathbb 1$). For Dirac matrices ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]]) of any size $n$:
 > 1. $\Gamma_A\Gamma_B = \pm\Gamma_{A\triangle B}$ (symmetric difference), with a sign fixed by the algebra alone; in particular $\Gamma_A^2 = \pm\mathbb 1$;
@@ -163,8 +176,8 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 >
 > **What the derivation shows**
 > - Everything follows from the anticommutation signs; no explicit matrices were used. The chiral basis is one $4\times4$ solution, so $n = 4$ is attained. That $n$ must be even is [[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], by another trace argument; here the bound comes from independence of all sixteen products at once.
-> - Up to factors $\pm1, \pm i$ the sixteen are $\mathbb 1$, $\gamma^\mu$, $\gamma^\mu\gamma^\nu$ ($\mu < \nu$), $\gamma^\mu\gamma^\nu\gamma^\rho$ ($\propto\gamma_\kappa\gamma^5$) and $\gamma^0\gamma^1\gamma^2\gamma^3$ ($\propto\gamma^5$, Def. §C5a.2.5): the scalar, vector, tensor, axial vector and pseudoscalar of the bilinears ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]]); reducing any product to them is [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-8|Theorem §C5a.7.8]].
-> - ⚑ By-product (step 3): every $\gamma^\mu$ and every product of distinct $\gamma$'s is traceless, the start of trace technology ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|Theorem §C5a.7.3]]).
+> - Up to factors $\pm1, \pm i$ the sixteen are $\mathbb 1$, $\gamma^\mu$, $\gamma^\mu\gamma^\nu$ ($\mu < \nu$), $\gamma^\mu\gamma^\nu\gamma^\rho$ ($\propto\gamma_\kappa\gamma^5$) and $\gamma^0\gamma^1\gamma^2\gamma^3$ ($\propto\gamma^5$, Def. §C5a.2.7): the scalar, vector, tensor, axial vector and pseudoscalar of the bilinears ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]]); reducing any product to them is [[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-8|Theorem §C5a.8.8]].
+> - ⚑ By-product (step 3): every $\gamma^\mu$ and every product of distinct $\gamma$'s is traceless, the start of trace technology ([[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-3|Theorem §C5a.8.3]]).
 > - Used next: Pauli's theorem (Theorem §C5a.2.5), which needs part 4.
 
 ^der-c5a-2-4
@@ -231,7 +244,7 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 
 ## The spinor generators
 
-> [!definition] Definition §C5a.2.3: The Spinor Generators
+> [!definition] Definition §C5a.2.4: The Spinor Generators
 > Given Dirac matrices ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]]), the six **spinor generators** are
 >
 > $$
@@ -240,7 +253,7 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 >
 > *Source: PS §3.2, eq. (3.23) · PHY 513 Lecture 7, Part B ("Given such $\gamma^\mu$, form a $4\times4$ matrix for each $(\mu\nu)$ pair") · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor generators", eq. (Sdef)) · Yu §5.1, eqs. (5.8)–(5.9) · the user's pre-course notes, §5.1, eq. (spinor-generators)*
 
-^def-c5a-2-3
+^def-c5a-2-4
 
 The second form follows from $\gamma^\nu\gamma^\mu = 2g^{\mu\nu} - \gamma^\mu\gamma^\nu$: $[\gamma^\mu, \gamma^\nu] = 2\gamma^\mu\gamma^\nu - 2g^{\mu\nu}$. For $\mu \ne \nu$, $S^{\mu\nu} = \frac i2\gamma^\mu\gamma^\nu$; $S^{\mu\mu} = 0$. Yu and Peskin–Schroeder also use $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] = 2S^{\mu\nu}$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]]).
 
@@ -277,7 +290,7 @@ The second form follows from $\gamma^\nu\gamma^\mu = 2g^{\mu\nu} - \gamma^\mu\ga
 
 ^der-c5a-2-6
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]
 
 > [!theorem] Theorem §C5a.2.7: The Spinor Generators Obey the Lorentz Algebra
 >
@@ -285,7 +298,7 @@ The second form follows from $\gamma^\nu\gamma^\mu = 2g^{\mu\nu} - \gamma^\mu\ga
 > [S^{\mu\nu}, S^{\rho\sigma}] = i\bigl(g^{\nu\rho}S^{\mu\sigma} - g^{\mu\rho}S^{\nu\sigma} - g^{\nu\sigma}S^{\mu\rho} + g^{\mu\sigma}S^{\nu\rho}\bigr) ,
 > $$
 >
-> the relations of [[§C3.2 The Lorentz Algebra#^thm-c3-2-1|Theorem §C3.2.1]] with $\mathcal J \to S$. Hence the $S^{\mu\nu}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]]) are the generators of a representation of the Lorentz algebra on $\mathbb C^n$ ([[§C3.2 The Lorentz Algebra#^def-c3-2-1|Def. §C3.2.1]]).
+> the relations of [[§C3.2 The Lorentz Algebra#^thm-c3-2-1|Theorem §C3.2.1]] with $\mathcal J \to S$. Hence the $S^{\mu\nu}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]) are the generators of a representation of the Lorentz algebra on $\mathbb C^n$ ([[§C3.2 The Lorentz Algebra#^def-c3-2-1|Def. §C3.2.1]]).
 >
 > *Source: PHY 513, Problem Set 4, Problem 5(c) (as the user wrote it) · PS §3.2, p. 40 ("By repeated use of (3.22), it is easy to verify") · PHY 513 Lecture 7, Part B ("Claim: $S^{\mu\nu}$ satisfy Lorentz algebra") · the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "Proof of the claim", Step 2) · Yu §5.1, eq. (5.12)*
 
@@ -314,23 +327,23 @@ The second form follows from $\gamma^\nu\gamma^\mu = 2g^{\mu\nu} - \gamma^\mu\ga
 > X = i\bigl[g^{\rho\nu}[\gamma^\mu, \gamma^\sigma] - g^{\sigma\nu}[\gamma^\mu, \gamma^\rho] + g^{\rho\mu}[\gamma^\sigma, \gamma^\nu] - g^{\sigma\mu}[\gamma^\rho, \gamma^\nu]\bigr] .
 > $$
 >
-> **5. Back to S.** From Def. §C5a.2.3, $[\gamma^a, \gamma^b] = -4iS^{ab}$, so $X = i(-4i)[g^{\rho\nu}S^{\mu\sigma} - g^{\sigma\nu}S^{\mu\rho} + g^{\rho\mu}S^{\sigma\nu} - g^{\sigma\mu}S^{\rho\nu}] = 4[\dots]$.
+> **5. Back to S.** From Def. §C5a.2.4, $[\gamma^a, \gamma^b] = -4iS^{ab}$, so $X = i(-4i)[g^{\rho\nu}S^{\mu\sigma} - g^{\sigma\nu}S^{\mu\rho} + g^{\rho\mu}S^{\sigma\nu} - g^{\sigma\mu}S^{\rho\nu}] = 4[\dots]$.
 >
 > **6. Restore the factor and reorder.** $[S^{\mu\nu}, S^{\rho\sigma}] = \frac i4X = i(g^{\nu\rho}S^{\mu\sigma} - g^{\nu\sigma}S^{\mu\rho} + g^{\mu\rho}S^{\sigma\nu} - g^{\mu\sigma}S^{\rho\nu})$; with $S^{\sigma\nu} = -S^{\nu\sigma}$, $S^{\rho\nu} = -S^{\nu\rho}$ and the symmetry of $g$ this is $i(g^{\nu\rho}S^{\mu\sigma} - g^{\mu\rho}S^{\nu\sigma} - g^{\nu\sigma}S^{\mu\rho} + g^{\mu\sigma}S^{\nu\rho})$.
 >
 > **What the derivation shows**
 > - The Lorentz algebra of the $S$'s is a consequence of the Clifford algebra alone, through Theorem §C5a.2.6: in any dimension and signature, $\frac i4[\gamma, \gamma]$ represents the corresponding orthogonal algebra (PS: in three Euclidean dimensions $\gamma^j = i\sigma^j$ gives $S^{ij} = \frac12\varepsilon^{ijk}\sigma^k$, spin ½, PS (3.24)).
 > - This is "the step that makes everything after it legitimate" (the user's notes): exponentiating six matrices gives a representation of the group, up to the global sign of [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-9|Theorem §C5a.1.9]], only if they obey its algebra. Yu's route (5.11)–(5.12) is the same computation, with $[S^{\mu\nu}, \gamma^\rho]$ in place of $[\gamma^\mu, S^{\rho\sigma}]$.
-> - Used next: the Dirac representation (Def. §C5a.2.4).
+> - Used next: the Dirac representation (Def. §C5a.2.5).
 
 ^der-c5a-2-7
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-6|Theorem §C5a.2.6]], [[§C3.2 The Lorentz Algebra#^thm-c3-2-1|Theorem §C3.2.1]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-6|Theorem §C5a.2.6]], [[§C3.2 The Lorentz Algebra#^thm-c3-2-1|Theorem §C3.2.1]]
 
 ## The Dirac representation
 
-> [!definition] Definition §C5a.2.4: The Dirac Representation
-> The **Dirac representation** is the representation of the Lorentz algebra on $\mathbb C^4$ whose generators ([[§C3.2 The Lorentz Algebra#^def-c3-2-1|Def. §C3.2.1]]) are $D(\mathcal J^{\mu\nu}) = S^{\mu\nu}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-7|Theorem §C5a.2.7]]). For parameters $\omega_{\mu\nu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]),
+> [!definition] Definition §C5a.2.5: The Dirac Representation
+> The **Dirac representation** is the representation of the Lorentz algebra on $\mathbb C^4$ whose generators ([[§C3.2 The Lorentz Algebra#^def-c3-2-1|Def. §C3.2.1]]) are $D(\mathcal J^{\mu\nu}) = S^{\mu\nu}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-7|Theorem §C5a.2.7]]). For parameters $\omega_{\mu\nu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]),
 >
 > $$
 > \Lambda_{1/2}(\omega) = \exp\Bigl(-\frac i2\,\omega_{\mu\nu}S^{\mu\nu}\Bigr), \qquad \psi \to \Lambda_{1/2}\,\psi ,
@@ -340,9 +353,22 @@ The second form follows from $\gamma^\nu\gamma^\mu = 2g^{\mu\nu} - \gamma^\mu\ga
 >
 > *Source: PS §3.2, eq. (3.30) · PHY 513 Lecture 7, Part B ("Finite Lorentz Transformations in Dirac Representation"), Part C ("Dirac 4-Spinor") · PHY 513 Lecture 8, Cheat Sheet II · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation $\Lambda_{1/2}$", eq. (Lhalf)) · Yu §5.1, eq. (5.14)*
 
-^def-c5a-2-4
+^def-c5a-2-5
 
 The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lambda_{1/2}$ depends on them nonlinearly (Lecture 7). $\Lambda_{1/2}^{-1}(\omega) = \Lambda_{1/2}(-\omega)$ (Yu (5.16)). As a function of the group element $\Lambda = e^\omega$ rather than of $\omega$, $\Lambda_{1/2}$ is fixed only up to sign (Theorem §C5a.2.9). A quantum Dirac field is an operator-valued distribution; the law then holds after smearing, as for every field ([[§C3.4 How Fields Transform under the Lorentz Group#^rem-c3-4-2|§C3.4, Remark: The laws for fields that are distributions]]).
+
+> [!definition] Definition §C5a.2.6: Spin Matrices of the Dirac Representation
+> The **spin matrices** of the Dirac representation ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]]) are the $4\times4$ matrices
+>
+> $$
+> S^i \equiv \tfrac12\varepsilon^{ijk}S^{jk}, \qquad i = 1, 2, 3, \qquad \mathbf S = (S^1, S^2, S^3), \qquad \Sigma^i \equiv 2S^i ,
+> $$
+>
+> the rotation generators among the spinor generators $S^{\mu\nu}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; they are the matrices $J_i$ of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]] for this representation, named $\mathbf S$ so that $\mathbf J$ stays the Hilbert-space angular momentum, as for the vector field, [[§C4.1 The Vector Field and Its Lorentz Transformation#^def-c4-1-1|Def. §C4.1.1]]). In the chiral basis $\Sigma^i = \operatorname{diag}(\sigma^i, \sigma^i)$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]]).
+>
+> *Source: PS §3.2, eq. (3.27) and §3.3, p. 45 · the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "The generators in the chiral basis"), Ch. 9 §9.2 · Yu §5.2, eqs. (5.76)–(5.79)*
+
+^def-c5a-2-6
 
 > [!theorem] Theorem §C5a.2.8: The Generators in the Chiral Basis
 > In the chiral basis ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]]), with $\Sigma^k = \operatorname{diag}(\sigma^k, \sigma^k)$,
@@ -372,7 +398,7 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 
 ^der-c5a-2-8
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-2|Theorem §C5a.2.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-2|Theorem §C5a.2.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]
 
 > [!theorem] Theorem §C5a.2.9: The Dirac Representation Is (½, 0) ⊕ (0, ½)
 > 1. In the chiral basis $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$ ([[§C3.2 The Lorentz Algebra#^def-c3-2-1|Def. §C3.2.1]]) are $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma, 0)$, $\mathbf J_- = \frac12\operatorname{diag}(0, \boldsymbol\sigma)$: the upper half is the representation $(\frac12, 0)$, the lower $(0, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-1|Def. §C3.3.1]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]]), and with the Weyl matrices of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]]
@@ -405,7 +431,7 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 > - The Dirac representation is reducible: the halves never mix under rotations or boosts. If the lower half vanishes in one frame, it vanishes in all, which could never happen for a four-vector.
 > - Each half is irreducible and the two are inequivalent ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]]; the user's notes argue directly: an intertwiner commutes with $\frac12\boldsymbol\sigma$, so is $c\mathbb 1$ by Schur, and cannot turn $-\frac i2\boldsymbol\sigma$ into $+\frac i2\boldsymbol\sigma$); they are complex conjugates of each other up to basis ([[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-11|Theorem §C5a.1.11]]).
 > - Half the angle and half the rapidity appear in every spinor matrix ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-4|Remark: Why half the angle]]).
-> - Used next: boosting rest-frame spinors ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-5|Theorem §C5a.5.5]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-8|Theorem §C5a.5.8]]); the Weyl form of the Dirac equation ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-6|Theorem §C5a.4.6]]).
+> - Used next: boosting rest-frame spinors ([[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-5|Theorem §C5a.6.5]], [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-8|Theorem §C5a.6.8]]); the Weyl form of the Dirac equation ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-6|Theorem §C5a.4.6]]).
 
 ^der-c5a-2-9
 
@@ -439,14 +465,14 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 ^rem-c5a-2-4
 
 > [!caution] Caution: The upper components are not the particle
-> The Lecture 7 slides preview the four components as "spin up/down for particle/anti-particle" (and the handwritten notes attach "particle" to $\xi$, "antiparticle" to $\eta$). As a count this is right: a Dirac field describes two spin states of a particle and two of its antiparticle. As an assignment of components it is wrong in the chiral basis: the halves are the left- and right-handed Weyl spinors, and a particle at rest has *equal* halves, $u \propto (\xi, \xi)$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]]; PS (3.47)). The heuristic belongs to the Dirac basis (Example §C5a.2.1), where nonrelativistic particles live mostly in the upper components.
+> The Lecture 7 slides preview the four components as "spin up/down for particle/anti-particle" (and the handwritten notes attach "particle" to $\xi$, "antiparticle" to $\eta$). As a count this is right: a Dirac field describes two spin states of a particle and two of its antiparticle. As an assignment of components it is wrong in the chiral basis: the halves are the left- and right-handed Weyl spinors, and a particle at rest has *equal* halves, $u \propto (\xi, \xi)$ ([[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-3|Theorem §C5a.6.3]]; PS (3.47)). The heuristic belongs to the Dirac basis (Example §C5a.2.1), where nonrelativistic particles live mostly in the upper components.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Caution "'$\xi$ is the particle, $\eta$ the antiparticle'") · PHY 513 Lecture 7, Part B*
 
 ^cau-c5a-2-2
 
 > [!theorem] Theorem §C5a.2.10: The Dirac Representation Is Not the Vector Representation
-> The Dirac representation ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]) and the vector representation ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) are both four-dimensional, but they are inequivalent ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-7|Def. §C3.1.7]]); these are the two tests of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^rem-c3-3-2|§C3.3, Remark: Sums versus products]]:
+> The Dirac representation ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]]) and the vector representation ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) are both four-dimensional, but they are inequivalent ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-7|Def. §C3.1.7]]); these are the two tests of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^rem-c3-3-2|§C3.3, Remark: Sums versus products]]:
 > 1. on the Dirac representation the Casimirs ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]]) are $\mathbf J_+^2 = \operatorname{diag}(\frac34, \frac34, 0, 0)$ and $\mathbf J_-^2 = \operatorname{diag}(0, 0, \frac34, \frac34)$, on the vector representation $\mathbf J_\pm^2 = \frac34\mathbb 1$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-4|Theorem §C3.3.4]]);
 > 2. a rotation by $2\pi$ is $-\mathbb 1$ on Dirac spinors and $+\mathbb 1$ on four-vectors;
 > 3. under rotations the Dirac spinor is spin $\frac12\oplus\frac12$, the vector spin $0\oplus1$.
@@ -470,8 +496,8 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 *Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-4|Theorem §C3.3.4]]
 
 > [!theorem] Theorem §C5a.2.11: Adjoints of the Generators
-> 1. For the spinor generators ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]]) of Hermitian Dirac matrices ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]]), $S^{\mu\nu\dagger} = \gamma^0S^{\mu\nu}\gamma^0$. In particular $S^{ij}$ commutes with $\gamma^0$ and is Hermitian; $S^{0i}$ anticommutes with $\gamma^0$ and is anti-Hermitian.
-> 2. $\Lambda_{1/2}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]) is unitary for rotations and Hermitian positive (not unitary) for pure boosts, the spin-½ case of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]].
+> 1. For the spinor generators ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]) of Hermitian Dirac matrices ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]]), $S^{\mu\nu\dagger} = \gamma^0S^{\mu\nu}\gamma^0$. In particular $S^{ij}$ commutes with $\gamma^0$ and is Hermitian; $S^{0i}$ anticommutes with $\gamma^0$ and is anti-Hermitian.
+> 2. $\Lambda_{1/2}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]]) is unitary for rotations and Hermitian positive (not unitary) for pure boosts, the spin-½ case of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]].
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "Hermiticity of the Dirac matrices", "Consequence for the generators"; Derivation "What replaces unitarity", Step 1; Caution "Spinor boosts are not unitary") · PHY 513 Lecture 8, Part B (slides "The Hermitean Conjugate Spinor", "The Dirac Conjugate Spinor") · PS §3.2, p. 41 ("The boost generators $S^{0i}$ are not Hermitian") and p. 43*
 
@@ -492,12 +518,12 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 
 ^der-c5a-2-11
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]]
 
 ## γ^μ carries a vector index
 
 > [!theorem] Theorem §C5a.2.12: The Dirac Matrices Are an Invariant Vector of Matrices
-> For $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]) and $\Lambda = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) built from the same $\omega$:
+> For $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]]) and $\Lambda = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) built from the same $\omega$:
 > 1. $\Lambda_{1/2}^{-1}\,\gamma^\mu\,\Lambda_{1/2} = \Lambda^\mu{}_\nu\,\gamma^\nu$;
 > 2. $\Lambda_{1/2}^{-1}S^{\mu\nu}\Lambda_{1/2} = \Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma S^{\rho\sigma}$, $\Lambda_{1/2}^{-1}\gamma_\mu\Lambda_{1/2} = (\Lambda^{-1})^\nu{}_\mu\gamma_\nu$, and $\Lambda_{1/2}^{-1}\mathbb 1\Lambda_{1/2} = \mathbb 1$;
 > 3. in the chiral basis, with the Weyl matrices and $\sigma^\mu$, $\bar\sigma^\mu$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]] and [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-1|Def. §C5a.1.1]], $\Lambda_L^{-1}\sigma^\mu\Lambda_R = \Lambda^\mu{}_\nu\sigma^\nu$ and $\Lambda_R^{-1}\bar\sigma^\mu\Lambda_L = \Lambda^\mu{}_\nu\bar\sigma^\nu$.
@@ -539,7 +565,7 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 
 ^der-c5a-2-12b
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-6|Theorem §C5a.2.6]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|Theorem §C1a.6.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-6|Theorem §C5a.2.6]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|Theorem §C1a.6.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]]
 
 > [!remark] Remark: The lecture's form of the covariance
 > Lecture 8 writes $\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1} = (\Lambda^{-1})^\mu{}_\nu\gamma^\nu$, the infinitesimal version $(1 - \frac i2\omega S)\gamma^\mu(1 + \frac i2\omega S) = (1 + \frac i2\omega\mathcal J)^\mu{}_\nu\gamma^\nu$, and then $\gamma^\nu = \Lambda^\nu{}_\mu\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1}$. All three are Theorem §C5a.2.12 with $\omega \to -\omega$ ($\Lambda_{1/2}(-\omega) = \Lambda_{1/2}^{-1}$, $e^{-\omega} = \Lambda^{-1}$), and Peskin–Schroeder's infinitesimal form is the same with the opposite sign of $\omega$. The last form carries the slide's message: "$\gamma^\nu$ are just numbers. They do not transform!" — transforming the vector index and both spinor indices at once returns the same matrices. That is what "invariant tensor" means, and why $\gamma^\nu\psi$ transforms as a spinor and a vector at once, $\gamma^\nu\psi \to \Lambda^\nu{}_\mu\Lambda_{1/2}(\gamma^\mu\psi)$.
@@ -550,7 +576,7 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 
 ## γ⁵ and the Weyl halves
 
-> [!definition] Definition §C5a.2.5: The Matrix γ⁵
+> [!definition] Definition §C5a.2.7: The Matrix γ⁵
 >
 > $$
 > \gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3 ,
@@ -560,9 +586,9 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 >
 > *Source: PS §3.4, eq. (3.68) · the user's PHY 513 notes, Ch. 9 §9.6 (Definition "The matrix $\gamma^5$", eq. (gamma5)) · PHY 513, Problem Set 5, Problem 5 (statement: "there is no way to lower a '5' index") · Yu §5.1, eq. (5.32)*
 
-^def-c5a-2-5
+^def-c5a-2-7
 
-Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmetric form $\gamma^5 = -\frac i{4!}\varepsilon_{\mu\nu\rho\sigma}\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma$ (with $\varepsilon^{0123} = +1$) and the duality identities are [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-5|Theorem §C5a.7.5]]–[[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-7|§C5a.7.7]].
+Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmetric form $\gamma^5 = -\frac i{4!}\varepsilon_{\mu\nu\rho\sigma}\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma$ (with $\varepsilon^{0123} = +1$) and the duality identities are [[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-5|Theorem §C5a.8.5]]–[[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-7|§C5a.8.7]].
 
 > [!theorem] Theorem §C5a.2.13: Algebraic Properties of γ⁵
 >
@@ -570,7 +596,7 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > (\gamma^5)^2 = \mathbb 1, \qquad \gamma^{5\dagger} = \gamma^5, \qquad \{\gamma^5, \gamma^\mu\} = 0, \qquad \operatorname{tr}\gamma^5 = 0 ,
 > $$
 >
-> for $\gamma^5$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]] (Hermiticity in a basis with $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]]).
+> for $\gamma^5$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-7|Def. §C5a.2.7]] (Hermiticity in a basis with $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]]).
 >
 > *Source: PHY 513, Problem Set 5, Problem 5(a)–(b) (as the user wrote it) · PS §3.4, eqs. (3.69)–(3.71) · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$" and its proof) · Yu §5.1, eqs. (5.37)–(5.40)*
 
@@ -588,14 +614,14 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > **What the derivation shows**
 > - $\gamma^5$ is a Hermitian involution, so its eigenvalues are $\pm1$; tracelessness makes each occur twice in four dimensions.
 > - The factor $i$ in the definition is chosen to make $\gamma^5$ Hermitian with square $+1$.
-> - Used next: Theorem §C5a.2.14; the chirality projectors $\frac12(\mathbb 1 \mp \gamma^5)$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-3|Def. §C5a.4.3]]); traces with $\gamma^5$ ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-4|Theorem §C5a.7.4]]).
+> - Used next: Theorem §C5a.2.14; the chirality projectors $\frac12(\mathbb 1 \mp \gamma^5)$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-3|Def. §C5a.4.3]]); traces with $\gamma^5$ ([[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-4|Theorem §C5a.8.4]]).
 
 ^der-c5a-2-13
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-4|Theorem §C5a.2.4]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-7|Def. §C5a.2.7]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-4|Theorem §C5a.2.4]]
 
 > [!theorem] Theorem §C5a.2.14: γ⁵ Is Lorentz Invariant and Separates the Weyl Halves
-> 1. $[\gamma^5, S^{\mu\nu}] = 0$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]]), hence $\Lambda_{1/2}^{-1}\gamma^5\Lambda_{1/2} = \gamma^5$: $\gamma^5$ is a Lorentz scalar.
+> 1. $[\gamma^5, S^{\mu\nu}] = 0$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]), hence $\Lambda_{1/2}^{-1}\gamma^5\Lambda_{1/2} = \gamma^5$: $\gamma^5$ is a Lorentz scalar.
 > 2. In the chiral basis $\gamma^5 = \begin{pmatrix}-\mathbb 1 & 0\\ 0 & \mathbb 1\end{pmatrix}$.
 > 3. On the Dirac representation $\gamma^5 = \frac43\bigl(\mathbf J_-^2 - \mathbf J_+^2\bigr)$, with the Casimirs $\mathbf J_\pm^2$ of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]], equivalently $\mathbf J\cdot\mathbf K = \frac{3i}4\gamma^5$.
 > 4. In every basis, the eigenspaces $\gamma^5 = -1$ and $\gamma^5 = +1$ are two-dimensional, invariant under $\Lambda_{1/2}$, and carry $(\frac12, 0)$ and $(0, \frac12)$ (Theorem §C5a.2.9): left-handed spinors ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]]) are the $\gamma^5 = -1$ spinors.
@@ -632,7 +658,7 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > | $(\Lambda_{1/2})_{ab}$ | the transformation of spinor space | $a, b$: spinor |
 > | $(\gamma^0)_{ab}$ | the invariant form of the Dirac slot ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]]) | $a, b$: spinor |
 >
-> Spinor indices are contracted by plain matrix multiplication and never moved with $g$; since $\Lambda_{1/2}$ is not unitary, not even $\psi^\dagger\psi$ is invariant. In the chiral basis the Dirac index is a pair of Weyl indices, $\psi = (\psi_a, \psi^{\dot a})$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]]; index positions of $\sigma^\mu$, $\bar\sigma^\mu$: [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-12|Theorem §C5a.1.12]]), and
+> Spinor indices are contracted by plain matrix multiplication and never moved with $g$; since $\Lambda_{1/2}$ is not unitary, not even $\psi^\dagger\psi$ is invariant. In the chiral basis the Dirac index is a pair of Weyl indices, $\psi = (\psi_a, \psi^{\dot a})$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-5|Def. §C5a.1.5]]; index positions of $\sigma^\mu$, $\bar\sigma^\mu$: [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-12|Theorem §C5a.1.12]]), and
 >
 > $$
 > \gamma^\mu = \begin{pmatrix}0 & (\sigma^\mu)_{a\dot b}\\ (\bar\sigma^\mu)^{\dot ab} & 0\end{pmatrix}, \qquad \gamma^\mu\psi = \bigl((\sigma^\mu)_{a\dot b}\psi^{\dot b},\ (\bar\sigma^\mu)^{\dot ab}\psi_b\bigr) :
@@ -655,4 +681,4 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > - The non-unitarity of spinor boosts is the spin-½ instance of the theorem that no nontrivial finite-dimensional Lorentz representation is unitary; $\gamma^0$ restores an invariant form as $g$ does for vectors — [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]].
 > - $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$ ties chirality to the two Casimirs of the Lorentz algebra, the spinor counterpart of the invariant $\mathbf E\cdot\mathbf B$ that separates the self-dual and anti-self-dual halves of the field strength — [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-7|Theorem §C3.4.7]].
 > - The $-1$ of a $2\pi$ rotation on $\Lambda_{1/2}$ is the sign the spin–statistics theorem ties to anticommutators — [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|QM Theorem §C5.2.4]] (the measured sign).
-> - The sixteen products are the matrices of the fermion bilinears (scalar, pseudoscalar, vector, axial vector, tensor) and of every trace identity used in scattering amplitudes — [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]], [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-8|Theorem §C5a.7.8]].
+> - The sixteen products are the matrices of the fermion bilinears (scalar, pseudoscalar, vector, axial vector, tensor) and of every trace identity used in scattering amplitudes — [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-2|Def. §C5a.4.2]], [[§C5a.8 Gamma-Matrix Technology#^thm-c5a-8-8|Theorem §C5a.8.8]].

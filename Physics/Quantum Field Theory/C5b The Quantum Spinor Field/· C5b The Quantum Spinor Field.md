@@ -25,7 +25,7 @@ tags: [chapter, quantum-field-theory]
 ## Principles
 - [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|§C5b.1.6]] Equal-Time Canonical Anticommutation Relations
 - [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|§C5b.1.7]] The Spin–Statistics Theorem
-- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^pr-c5b-4-1|§C5b.4.1]] The Dirac Vacuum and the Fermionic Fock Space
+- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|§C5b.3.4]] The Dirac Vacuum and the Fermionic Fock Space
 
 ## Theorems
 - [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|§C5b.1.1]] The Conjugate Momentum Field of the Dirac Field
@@ -42,13 +42,13 @@ tags: [chapter, quantum-field-theory]
 - [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|§C5b.3.1]] The Single-Particle Hamiltonian on Plane Waves
 - [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|§C5b.3.2]] The Hamiltonian in Modes, before Any Algebra
 - [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|§C5b.3.3]] Commutators Allow No Positive Norm with Positive Energy
-- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-4|§C5b.3.4]] The Hamiltonian of the Dirac Field
-- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|§C5b.3.5]] The Fermionic Zero-Point Energy Is Negative
-- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-6|§C5b.3.6]] Momentum of the Dirac Field
-- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|§C5b.3.7]] Ladder Relations
-- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|§C5b.4.2]] Fermions and Antifermions
-- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|§C5b.4.3]] Fermi–Dirac Statistics and the Pauli Exclusion Principle
-- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-4|§C5b.4.4]] Dirac Quanta Have Spin One-Half
+- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|§C5b.3.5]] The Hamiltonian of the Dirac Field
+- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-6|§C5b.3.6]] The Fermionic Zero-Point Energy Is Negative
+- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|§C5b.3.7]] Momentum of the Dirac Field
+- [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-8|§C5b.3.8]] Ladder Relations
+- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|§C5b.4.1]] Fermions and Antifermions
+- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|§C5b.4.2]] Fermi–Dirac Statistics and the Pauli Exclusion Principle
+- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|§C5b.4.3]] Dirac Quanta Have Spin One-Half
 - [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|§C5b.5.1]] The Charge in Modes, before Any Algebra
 - [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive
 - [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|§C5b.5.3]] The Charge Counts Fermions Minus Antifermions

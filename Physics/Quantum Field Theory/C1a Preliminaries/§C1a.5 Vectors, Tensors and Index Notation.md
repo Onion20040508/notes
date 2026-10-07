@@ -523,7 +523,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **What the derivation shows**
 > - The bookkeeping of the multinomial coefficients is done by the dummy indices; there is no matrix-notation barrier at third order.
-> - $a\cdot\partial$ is the infinitesimal translation; its Noether charge is the four-momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]), and on quantum fields $[\phi, \mathbf P] = -i\nabla\phi$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
+> - $a\cdot\partial$ is the infinitesimal translation; its Noether charge is the four-momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]), and on quantum fields $[\phi, \mathbf P] = -i\nabla\phi$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]).
 > - For a field with indices the expansion acts componentwise, $A^\mu(x + a) = A^\mu + a^\nu\partial_\nu A^\mu + \dots$: translations act alike on every field, while Lorentz transformations add a matrix on the index ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]).
 
 ^der-c1a-5-10
