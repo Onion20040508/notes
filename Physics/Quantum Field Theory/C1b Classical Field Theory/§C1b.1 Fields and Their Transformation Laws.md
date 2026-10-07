@@ -108,7 +108,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 > **What the derivation shows**
 > - Two representations act at once: $D$ on the components at a point (finite-dimensional) and the motion of the argument on the space of functions (infinite-dimensional) → [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-2|Remark: Two representations at once]].
 > - Assumption used: $D$ itself is a representation; for spinors it is one only up to sign ([[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-9|Theorem §C5a.1.9]]).
-> - Used next: the infinitesimal form ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]); in the quantum theory $T(g)$ is implemented by unitary operators on states, $U^{-1}\phi U = T(g)\phi$ ([[§C3.5 Quantum Poincaré Transformations#^pr-c3-5-8|Principle §C3.5.8]]; for the free field a theorem, [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-12|Theorem §C3.5.12]]).
+> - Used next: the infinitesimal form ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]); in the quantum theory $T(g)$ is implemented by unitary operators on states, $U^{-1}\hat\phi U = T(g)\hat\phi$ ([[§C3.5 Quantum Poincaré Transformations#^pr-c3-5-8|Principle §C3.5.8]]; for the free field a theorem, [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-12|Theorem §C3.5.12]]).
 
 ^der-c1b-1-1
 

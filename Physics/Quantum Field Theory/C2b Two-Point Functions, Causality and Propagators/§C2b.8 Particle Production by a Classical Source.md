@@ -16,33 +16,33 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 *Conventions* ([[Larsen PHY 513]]): $\tilde j(p) = \int d^4y\,e^{ip\cdot y}j(y)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]), evaluated on shell, $p^0 = E_{\mathbf p}$; Heisenberg picture throughout, so the state is the in-vacuum $|0\rangle$ of the free field before the source acts.
 
 > [!theorem] Theorem §C2b.8.1: The Late-Time Field
-> With $\phi_0$ the free field ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]) and the field equal to it before the source acts,
+> With $\hat\phi_0$ the free field ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]) and the field equal to it before the source acts,
 >
 > $$
-> \phi(x) = \phi_0(x) + i\int d^4y\,D_R(x - y)\,j(y) .
+> \hat\phi(x) = \hat\phi_0(x) + i\int d^4y\,D_R(x - y)\,j(y) .
 > $$
 >
 > Once $x^0$ is later than the support of $j$,
 >
 > $$
-> \phi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\Bigl(b_{\mathbf p}\,e^{-ip\cdot x} + b_{\mathbf p}^\dagger\,e^{ip\cdot x}\Bigr), \qquad b_{\mathbf p} = a_{\mathbf p} + \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\Big|_{p^0 = E_{\mathbf p}},
+> \hat\phi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\Bigl(\hat b_{\mathbf p}\,e^{-ip\cdot x} + \hat b_{\mathbf p}^\dagger\,e^{ip\cdot x}\Bigr), \qquad \hat b_{\mathbf p} = \hat a_{\mathbf p} + \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\Big|_{p^0 = E_{\mathbf p}},
 > $$
 >
-> a free field whose annihilation operators are shifted by on-shell $c$-numbers; $[b_{\mathbf p}, b_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$.
+> a free field whose annihilation operators are shifted by on-shell $c$-numbers; $[\hat b_{\mathbf p}, \hat b_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 (Derivation "The late-time field and the particles produced", Steps 1–3) · PHY 513 Lecture 6, "Particle Production by Classical Source I–II" · PS §2.4, eqs. (2.63)–(2.64)*
 
 ^thm-c2b-8-1
 
 > [!derivation]- Derivation
-> **Step 1** (the retarded solution). $j$ is a $c$-number, so $\phi = \phi_0 + i\int D_R\,j$ solves the operator equation $(\partial^2 + m^2)\phi = j$ (for a test-function source, $i\int D_R\,j = i\,D_R[j(x - \cdot)]$ is smooth and solves it exactly, [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]] with the fundamental solution $D_R$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]) ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], with $(\partial^2 + m^2)\phi_0 = 0$ by [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]). Before the source acts, $D_R(x - y) = 0$ for every $y$ in its support (as a distribution: $\operatorname{supp}D_R \subseteq \{\xi^0 \ge 0\}$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]) ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]), so $\phi = \phi_0$ there.
+> **Step 1** (the retarded solution). $j$ is a $c$-number, so $\hat\phi = \hat\phi_0 + i\int D_R\,j$ solves the operator equation $(\partial^2 + m^2)\hat\phi = j$ (for a test-function source, $i\int D_R\,j = i\,D_R[j(x - \cdot)]$ is smooth and solves it exactly, [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]] with the fundamental solution $D_R$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]) ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], with $(\partial^2 + m^2)\hat\phi_0 = 0$ by [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]). Before the source acts, $D_R(x - y) = 0$ for every $y$ in its support (as a distribution: $\operatorname{supp}D_R \subseteq \{\xi^0 \ge 0\}$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]) ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]), so $\hat\phi = \hat\phi_0$ there.
 >
 > ⚑ By-product: the retarded function is not chosen for convenience; the question fixes the state before the source acts, and that is the retarded boundary condition → [[§C2b.8 Particle Production by a Classical Source#^rem-c2b-8-2|Remark: The boundary condition was physics]].
 >
 > **Step 2** (insert the retarded function in modes; the inner $d^3p$ integral converges for no $y$ by itself, and the formula is read paired with $j$, as made explicit in Step 4). By Theorem §C2b.5.5 and [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]],
 >
 > $$
-> \phi(x) = \phi_0(x) + i\int d^4y\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\theta(x^0 - y^0)\Bigl(e^{-ip\cdot(x - y)} - e^{ip\cdot(x - y)}\Bigr)j(y), \qquad p^0 = E_{\mathbf p} .
+> \hat\phi(x) = \hat\phi_0(x) + i\int d^4y\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\theta(x^0 - y^0)\Bigl(e^{-ip\cdot(x - y)} - e^{ip\cdot(x - y)}\Bigr)j(y), \qquad p^0 = E_{\mathbf p} .
 > $$
 >
 > **Step 3** (late times). If $x^0$ is later than every $y^0$ in the support of $j$, then $\theta(x^0 - y^0) = 1$ wherever the integrand is nonzero, and the step function drops out.
@@ -60,16 +60,16 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 > **Step 5** (sort by frequency). With $\frac{i}{2E_{\mathbf p}} = \frac{1}{\sqrt{2E_{\mathbf p}}}\cdot\frac{i}{\sqrt{2E_{\mathbf p}}}$,
 >
 > $$
-> \phi - \phi_0 = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\Bigl(\frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\,e^{-ip\cdot x} + \frac{-i\,\overline{\tilde j(p)}}{\sqrt{2E_{\mathbf p}}}\,e^{ip\cdot x}\Bigr).
+> \hat\phi - \hat\phi_0 = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\Bigl(\frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\,e^{-ip\cdot x} + \frac{-i\,\overline{\tilde j(p)}}{\sqrt{2E_{\mathbf p}}}\,e^{ip\cdot x}\Bigr).
 > $$
 >
-> Adding $\phi_0 = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E}}(a_{\mathbf p}e^{-ip\cdot x} + a_{\mathbf p}^\dagger e^{ip\cdot x})$, the coefficient of $e^{-ip\cdot x}$ is $b_{\mathbf p} = a_{\mathbf p} + i\tilde j/\sqrt{2E}$, and that of $e^{ip\cdot x}$ is $a_{\mathbf p}^\dagger - i\overline{\tilde j}/\sqrt{2E} = b_{\mathbf p}^\dagger$.
+> Adding $\hat\phi_0 = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E}}(\hat a_{\mathbf p}e^{-ip\cdot x} + \hat a_{\mathbf p}^\dagger e^{ip\cdot x})$, the coefficient of $e^{-ip\cdot x}$ is $\hat b_{\mathbf p} = \hat a_{\mathbf p} + i\tilde j/\sqrt{2E}$, and that of $e^{ip\cdot x}$ is $\hat a_{\mathbf p}^\dagger - i\overline{\tilde j}/\sqrt{2E} = \hat b_{\mathbf p}^\dagger$.
 >
-> **Step 6** (the algebra is unchanged). Shifting by $c$-numbers does not change commutators: $[b_{\mathbf p}, b_{\mathbf q}^\dagger] = [a_{\mathbf p}, a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, an identity of distributions in $(\mathbf p, \mathbf q)$, the shift $i\tilde j(p)/\sqrt{2E_{\mathbf p}}$ being a smooth function ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]).
+> **Step 6** (the algebra is unchanged). Shifting by $c$-numbers does not change commutators: $[\hat b_{\mathbf p}, \hat b_{\mathbf q}^\dagger] = [\hat a_{\mathbf p}, \hat a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, an identity of distributions in $(\mathbf p, \mathbf q)$, the shift $i\tilde j(p)/\sqrt{2E_{\mathbf p}}$ being a smooth function ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]).
 >
 > **What the derivation shows.**
-> - After the source has acted the field is free again, with new ladder operators: the out-particles are the quanta of $b_{\mathbf p}^\dagger$.
-> - The expectation value $\langle0|\phi|0\rangle = i\int D_R\,j$ is the classical retarded field of the source ([[§C2b.5 Green's Functions and Contours#^rem-c2b-5-4|§C2b.5, Remark: Measurable response is a retarded commutator]]).
+> - After the source has acted the field is free again, with new ladder operators: the out-particles are the quanta of $\hat b_{\mathbf p}^\dagger$.
+> - The expectation value $\langle0|\hat\phi|0\rangle = i\int D_R\,j$ is the classical retarded field of the source ([[§C2b.5 Green's Functions and Contours#^rem-c2b-5-4|§C2b.5, Remark: Measurable response is a retarded commutator]]).
 > - Used next: Theorems §C2b.8.2–§C2b.8.3.
 
 ^der-c2b-8-1
@@ -80,7 +80,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 > The in-vacuum is an eigenstate of every late-time annihilation operator,
 >
 > $$
-> b_{\mathbf p}|0\rangle = \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\,|0\rangle ,
+> \hat b_{\mathbf p}|0\rangle = \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\,|0\rangle ,
 > $$
 >
 > so with respect to the out-particles it is the coherent state of [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]] with $\eta_{\mathbf p} = i\tilde j(E_{\mathbf p}, \mathbf p)$. The number of particles produced is Poisson distributed.
@@ -90,11 +90,11 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 ^thm-c2b-8-2
 
 > [!derivation]- Derivation
-> **Step 1** (eigenvalue). $a_{\mathbf p}|0\rangle = 0$, so $b_{\mathbf p}|0\rangle = \bigl(a_{\mathbf p} + \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\bigr)|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|0\rangle$.
+> **Step 1** (eigenvalue). $\hat a_{\mathbf p}|0\rangle = 0$, so $\hat b_{\mathbf p}|0\rangle = \bigl(\hat a_{\mathbf p} + \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\bigr)|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|0\rangle$.
 >
-> **Step 2** (identify). By Theorem §C2b.8.1, Step 6, the $b$'s obey the vacuum algebra, so the construction of [[§C2a.6 Coherent States and the Classical Field|§C2a.6]] applies with $b$ in place of $a$. A state with $b_{\mathbf p}|\psi\rangle = \frac{\eta_{\mathbf p}}{\sqrt{2E_{\mathbf p}}}|\psi\rangle$ for every $\mathbf p$ is, up to a phase, the coherent state $|\{\eta\}\rangle$ built on the $b$-vacuum ([[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]]); comparing with Step 1, $\eta_{\mathbf p} = i\tilde j(p)$.
+> **Step 2** (identify). By Theorem §C2b.8.1, Step 6, the $\hat b$'s obey the vacuum algebra, so the construction of [[§C2a.6 Coherent States and the Classical Field|§C2a.6]] applies with $\hat b$ in place of $\hat a$. A state with $\hat b_{\mathbf p}|\psi\rangle = \frac{\eta_{\mathbf p}}{\sqrt{2E_{\mathbf p}}}|\psi\rangle$ for every $\mathbf p$ is, up to a phase, the coherent state $|\{\eta\}\rangle$ built on the $\hat b$-vacuum ([[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]]); comparing with Step 1, $\eta_{\mathbf p} = i\tilde j(p)$.
 >
-> **Step 3** (statistics). By [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]] the number of $b$-quanta is Poisson distributed, with mean $\int\frac{d^3p}{(2\pi)^3}\frac{|\eta_{\mathbf p}|^2}{2E_{\mathbf p}}$, which is Theorem §C2b.8.3.
+> **Step 3** (statistics). By [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]] the number of $\hat b$-quanta is Poisson distributed, with mean $\int\frac{d^3p}{(2\pi)^3}\frac{|\eta_{\mathbf p}|^2}{2E_{\mathbf p}}$, which is Theorem §C2b.8.3.
 >
 > ⚑ By-product: $\bar N < \infty$ is required for the coherent state to be normalizable in the out-Fock space; for a smooth source of finite duration it holds → [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]] (and Example §C2b.8.1).
 >
@@ -119,23 +119,23 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 ^thm-c2b-8-3
 
 > [!derivation]- Derivation
-> **Step 1** (the late-time Hamiltonian). After the source is off, $H$ has the free form ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]) in the late-time field, whose mode operators are the $b$'s (Theorem §C2b.8.1). The computation of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] uses only the mode expansion and the algebra, both unchanged, so
+> **Step 1** (the late-time Hamiltonian). After the source is off, $\hat H$ has the free form ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]) in the late-time field, whose mode operators are the $\hat b$'s (Theorem §C2b.8.1). The computation of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] uses only the mode expansion and the algebra, both unchanged, so
 >
 > $$
-> H = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,b_{\mathbf p}^\dagger b_{\mathbf p} + E_0 = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\Bigl(a_{\mathbf p}^\dagger - \frac{i\,\overline{\tilde j(p)}}{\sqrt{2E_{\mathbf p}}}\Bigr)\Bigl(a_{\mathbf p} + \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\Bigr) + E_0 .
+> \hat H = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\hat b_{\mathbf p}^\dagger \hat b_{\mathbf p} + E_0 = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\Bigl(\hat a_{\mathbf p}^\dagger - \frac{i\,\overline{\tilde j(p)}}{\sqrt{2E_{\mathbf p}}}\Bigr)\Bigl(\hat a_{\mathbf p} + \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\Bigr) + E_0 .
 > $$
 >
 > ⚑ By-product: the zero-point constant $E_0$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]) is the same before and after and cancels from the energy *added* → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|§C2a.3, Remark: Why the zero-point energy is dropped]].
 >
-> **Step 2** (expand the product, all four terms). $a^\dagger a + a^\dagger\frac{i\tilde j}{\sqrt{2E}} - \frac{i\overline{\tilde j}}{\sqrt{2E}}a + \frac{|\tilde j|^2}{2E}$.
+> **Step 2** (expand the product, all four terms). $\hat a^\dagger\hat a + \hat a^\dagger\frac{i\tilde j}{\sqrt{2E}} - \frac{i\overline{\tilde j}}{\sqrt{2E}}\hat a + \frac{|\tilde j|^2}{2E}$.
 >
-> **Step 3** (expectation value in $|0\rangle$). $\langle0|a^\dagger a|0\rangle = 0$ and $\langle0|a|0\rangle = 0$ because $a|0\rangle = 0$; $\langle0|a^\dagger|0\rangle = 0$ because $\langle0|a^\dagger = 0$. Only the product of the two $c$-numbers survives, with no $\delta^3(\mathbf 0)$, since no reordering was needed; the remaining integral is finite because $j$ is a test function ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]):
+> **Step 3** (expectation value in $|0\rangle$). $\langle0|\hat a^\dagger\hat a|0\rangle = 0$ and $\langle0|\hat a|0\rangle = 0$ because $\hat a|0\rangle = 0$; $\langle0|\hat a^\dagger|0\rangle = 0$ because $\langle0|\hat a^\dagger = 0$. Only the product of the two $c$-numbers survives, with no $\delta^3(\mathbf 0)$, since no reordering was needed; the remaining integral is finite because $j$ is a test function ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]):
 >
 > $$
-> \langle0|H|0\rangle - E_0 = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\frac{|\tilde j(p)|^2}{2E_{\mathbf p}} = \int\frac{d^3p}{(2\pi)^3}\,\frac12|\tilde j(p)|^2 .
+> \langle0|\hat H|0\rangle - E_0 = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\frac{|\tilde j(p)|^2}{2E_{\mathbf p}} = \int\frac{d^3p}{(2\pi)^3}\,\frac12|\tilde j(p)|^2 .
 > $$
 >
-> **Step 4** (number). The out-number operator is $N = \int\frac{d^3p}{(2\pi)^3}b_{\mathbf p}^\dagger b_{\mathbf p}$; Steps 2–3 without the factor $E_{\mathbf p}$ give $\bar N = \int\frac{d^3p}{(2\pi)^3}\frac{|\tilde j(p)|^2}{2E_{\mathbf p}}$.
+> **Step 4** (number). The out-number operator is $\hat N = \int\frac{d^3p}{(2\pi)^3}\hat b_{\mathbf p}^\dagger \hat b_{\mathbf p}$; Steps 2–3 without the factor $E_{\mathbf p}$ give $\bar N = \int\frac{d^3p}{(2\pi)^3}\frac{|\tilde j(p)|^2}{2E_{\mathbf p}}$.
 >
 > **What the derivation shows.**
 > - The energy and the number are quadratic in the source: the field responds linearly, the energy is the square of the response.
@@ -149,7 +149,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 > Let $j \in \mathcal D(\mathbb R^4)$ ([[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]]), smooth and nonzero only in a bounded region of spacetime ([[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; $j \in \mathcal S(\mathbb R^4)$ suffices).
 > 1. $\tilde j \in \mathcal S(\mathbb R^4)$, so on the shell $|\tilde j(E_{\mathbf p}, \mathbf p)| \le C_N(1 + |\mathbf p|)^{-N}$ for every $N$. Hence $\bar N$ and $\Delta E$ of [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3|Theorem §C2b.8.3]] are finite, and the out-state of [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|Theorem §C2b.8.2]] is a normalizable coherent state.
 > 2. The classical field $i\int d^4y\,D_R(x - y)j(y) = i\,D_R[j(x - \cdot)]$ is the distribution $D_R$ acting on a test function: a smooth solution of $(\partial^2 + m^2)\phi = j$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]]).
-> 3. $\bar N = \|\phi_0(j)|0\rangle\|^2$ with $\phi_0(j) = \int d^4x\,j(x)\phi_0(x)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]]): finite exactly when the on-shell restriction of $\tilde j$ is a normalizable one-particle wave function. A source with $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\tilde j|^2 = \infty$, such as an instantaneous point source $g\,\delta^4(x)$, produces infinitely many particles.
+> 3. $\bar N = \|\hat\phi_0(j)|0\rangle\|^2$ with $\hat\phi_0(j) = \int d^4x\,j(x)\hat\phi_0(x)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]]): finite exactly when the on-shell restriction of $\tilde j$ is a normalizable one-particle wave function. A source with $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\tilde j|^2 = \infty$, such as an instantaneous point source $g\,\delta^4(x)$, produces infinitely many particles.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 ("$j$ smooth and of finite duration"), Ch. 6 §6.2 (sources as test functions) · PHY 513, Problem Set 4, Problem 0 · stated here as a condition on test functions*
 
@@ -162,9 +162,9 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 >
 > **Step 3** (the classical field). $D_R$ is a fundamental solution ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]), $j \in \mathcal D$, so by [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]] $x \mapsto i\,D_R[j(x - \cdot)]$ is smooth, each derivative falling on $j$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]), and $(\partial^2 + m^2)$ of it is $i\cdot(-i)\,j = j$. Part 2.
 >
-> **Step 4** (the one-particle norm). By [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], 1, with $\tilde j(p) = \int d^4x\,j(x)e^{ip\cdot x}$ as in this section's conventions, $\|\phi_0(j)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\tilde j(p)|^2 = \bar N$.
+> **Step 4** (the one-particle norm). By [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], 1, with $\tilde j(p) = \int d^4x\,j(x)e^{ip\cdot x}$ as in this section's conventions, $\|\hat\phi_0(j)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\tilde j(p)|^2 = \bar N$.
 >
-> **Step 5** (when it fails). For $j = g\,\delta^4(x)$, $\tilde j = g$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 3) and $\bar N = g^2\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \infty$, the divergence of $\phi(x)|0\rangle$ (Step 3 of Derivation §C2b.1.6). The point source of Example §C2b.8.1 is not a test function in space, but its smooth time profile makes $\tilde j = g\,e^{-E_{\mathbf p}^2T^2/2}$ decay on the shell, because there the frequency grows with $|\mathbf p|$; as $T \to 0$ it tends to $g\,\delta^4(x)$ and $\bar N \simeq g^2/8\pi^2T^2 \to \infty$. Part 3.
+> **Step 5** (when it fails). For $j = g\,\delta^4(x)$, $\tilde j = g$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 3) and $\bar N = g^2\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \infty$, the divergence of $\hat\phi(x)|0\rangle$ (Step 3 of Derivation §C2b.1.6). The point source of Example §C2b.8.1 is not a test function in space, but its smooth time profile makes $\tilde j = g\,e^{-E_{\mathbf p}^2T^2/2}$ decay on the shell, because there the frequency grows with $|\mathbf p|$; as $T \to 0$ it tends to $g\,\delta^4(x)$ and $\bar N \simeq g^2/8\pi^2T^2 \to \infty$. Part 3.
 >
 > **What the derivation shows.**
 > - Every finite answer of this section rests on $j$ being a test function: the on-shell transform of $j$ must be a normalizable wave packet.
@@ -182,7 +182,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 ^rem-c2b-8-1
 
 > [!remark] Remark: The boundary condition was physics
-> The retarded function was forced by the question, which specifies the state before the source acts. The same calculation with $D_F$ would answer a different question, one with conditions imposed in both the past and the future. This is the concrete instance of [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-3|§C2b.7, Remark: Which Green's function when]]. The calculation is exact because the coupling is linear in $\phi$ and the source is classical; with a quantum source, a field of its own, the same structure becomes the first interaction (QFT C6, planned), and PS return to it in their Problem 4.1 and, for photons, in bremsstrahlung.
+> The retarded function was forced by the question, which specifies the state before the source acts. The same calculation with $D_F$ would answer a different question, one with conditions imposed in both the past and the future. This is the concrete instance of [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-3|§C2b.7, Remark: Which Green's function when]]. The calculation is exact because the coupling is linear in $\hat\phi$ and the source is classical; with a quantum source, a field of its own, the same structure becomes the first interaction (QFT C6, planned), and PS return to it in their Problem 4.1 and, for photons, in bremsstrahlung.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 (third remark, "Where the course goes next") · PS §2.4, p. 33*
 

@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One solves the equation once, with a delta function on the right, and the answer is a Green's function. Fourier transformation makes this a division by $m^2 - p^2$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), which is impossible on the mass shell; the integral needs a contour in the complex $p^0$-plane ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]], [[P2 Green's Functions by Contour Integration|P2]]), and the choice of contour is the choice of boundary condition. The first contours worked out are the retarded one, whose function is the causal commutator of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]], and its time mirror, the advanced one; their average is the principal-value function. The other two contours, Feynman and anti-Feynman, belong with time ordering ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]]).
 
-*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\phi\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
+*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\hat\phi\hat\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
 ## Sources and Green's functions
 
@@ -117,7 +117,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > the denominator has cancelled. (Sense: "under the integrals" is the derivative moved onto a test function, [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]; the rigorous version of Steps 1–3 is the Fourier-side computation of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], Step 5.)
 >
-> **Step 2** (back to the real axis). $e^{-ip^0\xi^0}$ is entire, so the closed loop formed by $C$ and the real axis encloses no singularity, and by Cauchy's theorem ([[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]) $\int_C = \int_{\mathbb R}$. (Sense: $\int dp^0\,e^{-ip^0\xi^0}$ converges for no $\xi^0$; paired with a test function $\chi(\xi^0)$ it becomes $\int dp^0\,\hat\chi(p^0)$ with $\hat\chi$ entire and rapidly decreasing in horizontal strips, and Cauchy's theorem applies to that.)
+> **Step 2** (back to the real axis). $e^{-ip^0\xi^0}$ is entire, so the closed loop formed by $C$ and the real axis encloses no singularity, and by Cauchy's theorem ([[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]) $\int_C = \int_{\mathbb R}$. (Sense: $\int dp^0\,e^{-ip^0\xi^0}$ converges for no $\xi^0$; paired with a test function $\chi(\xi^0)$ it becomes $\int dp^0\,\tilde\chi(-p^0)$ with $\tilde\chi$ entire and rapidly decreasing in horizontal strips, and Cauchy's theorem applies to that.)
 >
 > **Step 3** (delta functions). $\int_{\mathbb R}\frac{dp^0}{2\pi}e^{-ip^0\xi^0} = \delta(\xi^0)$ and $\int\frac{d^3p}{(2\pi)^3}e^{i\mathbf p\cdot\boldsymbol\xi} = \delta^3(\boldsymbol\xi)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 1; identities in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). So $(\partial^2 + m^2)D_C = -i\delta^4(\xi)$, for every $C$. This is part 1.
 >
@@ -205,7 +205,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > The **retarded** contour $C_R$ passes above both poles. Then
 >
 > $$
-> D_R(\xi) = \theta(\xi^0)\bigl[D_W(\xi) - D_W(-\xi)\bigr] = \theta(\xi^0)\,\langle0|[\phi(x), \phi(y)]|0\rangle = \theta(\xi^0)\,iD(\xi) .
+> D_R(\xi) = \theta(\xi^0)\bigl[D_W(\xi) - D_W(-\xi)\bigr] = \theta(\xi^0)\,\langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle = \theta(\xi^0)\,iD(\xi) .
 > $$
 >
 > $D_R$ vanishes unless $x$ lies in the causal future of $y$ (inside or on the forward light cone). Mode by mode it is $\theta(t)\,(-i\sin E_{\mathbf p}t)/E_{\mathbf p}$.
@@ -235,10 +235,10 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > **Step 6** (check, mode by mode; [[P2 Green's Functions by Contour Integration#^p2-7|P2, step 7]]). $G_R(t) = \theta(t)(-i\sin Et)/E$ is continuous at $0$ (θ times a smooth function, [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1; $g(t)\delta(t) = g(0)\delta(t)$ for smooth $g$, [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]). With $\theta' = \delta$ ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 2): $G_R' = \delta(t)\cdot\frac{-i\sin0}{E} + \theta(t)(-i\cos Et) = \theta(t)(-i\cos Et)$, which jumps by $-i$ at $t = 0$; $G_R'' = -i\delta(t) + \theta(t)\,iE\sin Et$. Hence $G_R'' + E^2G_R = -i\delta(t)$.
 >
-> **Step 7** (check, operator form; PS eq. (2.56)). With $\partial^2 = \partial_0^2 - \nabla^2$ acting on $\theta(x^0 - y^0)\langle[\phi(x), \phi(y)]\rangle$: $\partial_0^2\theta = \delta'$, the cross term is $2\delta(x^0 - y^0)\partial_0\langle[\phi(x), \phi(y)]\rangle$, and $(\partial^2 + m^2)$ on the commutator gives $0$. Using $\delta'(s)F(s) = F(0)\delta'(s) - F'(0)\delta(s)$ and $\langle[\phi, \phi]\rangle = 0$ at equal times (these products are defined because $F(s) = \langle[\phi(x), \phi(y)]\rangle$ is a smooth function of $s = x^0 - y^0$ with values in $\mathcal S'(\mathbb R^3)$, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]),
+> **Step 7** (check, operator form; PS eq. (2.56)). With $\partial^2 = \partial_0^2 - \nabla^2$ acting on $\theta(x^0 - y^0)\langle[\hat\phi(x), \hat\phi(y)]\rangle$: $\partial_0^2\theta = \delta'$, the cross term is $2\delta(x^0 - y^0)\partial_0\langle[\hat\phi(x), \hat\phi(y)]\rangle$, and $(\partial^2 + m^2)$ on the commutator gives $0$. Using $\delta'(s)F(s) = F(0)\delta'(s) - F'(0)\delta(s)$ and $\langle[\hat\phi, \hat\phi]\rangle = 0$ at equal times (these products are defined because $F(s) = \langle[\hat\phi(x), \hat\phi(y)]\rangle$ is a smooth function of $s = x^0 - y^0$ with values in $\mathcal S'(\mathbb R^3)$, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]),
 >
 > $$
-> (\partial^2 + m^2)D_R = -\delta(x^0 - y^0)\langle[\pi(x), \phi(y)]\rangle + 2\delta(x^0 - y^0)\langle[\pi(x), \phi(y)]\rangle = \delta(x^0 - y^0)\cdot(-i)\delta^3(\mathbf x - \mathbf y) = -i\delta^4(x - y),
+> (\partial^2 + m^2)D_R = -\delta(x^0 - y^0)\langle[\hat\pi(x), \hat\phi(y)]\rangle + 2\delta(x^0 - y^0)\langle[\hat\pi(x), \hat\phi(y)]\rangle = \delta(x^0 - y^0)\cdot(-i)\delta^3(\mathbf x - \mathbf y) = -i\delta^4(x - y),
 > $$
 >
 > with the equal-time commutator of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]].
@@ -342,13 +342,13 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 ^def-c2b-5-3
 
 > [!remark] Remark: Measurable response is a retarded commutator
-> Couple the quantum field to a classical source as in [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]], which adds $-\int d^3x\,j\phi$ to $H$. The retarded solution changes the expectation value of the field by
+> Couple the quantum field to a classical source as in [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]], which adds $-\int d^3x\,j\hat\phi$ to $\hat H$. The retarded solution changes the expectation value of the field by
 >
 > $$
-> \delta\langle0|\phi(x)|0\rangle = i\int d^4y\,D_R(x - y)\,j(y) = i\int d^4y\;\theta(x^0 - y^0)\,\langle0|[\phi(x), \phi(y)]|0\rangle\,j(y) :
+> \delta\langle0|\hat\phi(x)|0\rangle = i\int d^4y\,D_R(x - y)\,j(y) = i\int d^4y\;\theta(x^0 - y^0)\,\langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle\,j(y) :
 > $$
 >
-> the response of the field is the retarded unequal-time commutator. This is the simplest case of the Kubo formula of linear response, $\delta\langle\mathcal O(x)\rangle = i\int d^4y\,\theta(x^0 - y^0)\langle[\mathcal O(x), \phi(y)]\rangle\,j(y)$, and the reason the retarded function is the central object of condensed matter. Influence travels only through the commutator ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-3|§C2b.4, Remark: Influence and correlation]]).
+> the response of the field is the retarded unequal-time commutator. This is the simplest case of the Kubo formula of linear response, $\delta\langle\hat{\mathcal O}(x)\rangle = i\int d^4y\,\theta(x^0 - y^0)\langle[\hat{\mathcal O}(x), \hat\phi(y)]\rangle\,j(y)$, and the reason the retarded function is the central object of condensed matter. Influence travels only through the commutator ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-3|§C2b.4, Remark: Influence and correlation]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.6 ("Measurable response is a retarded commutator"), Ch. 5 §5.7*
 

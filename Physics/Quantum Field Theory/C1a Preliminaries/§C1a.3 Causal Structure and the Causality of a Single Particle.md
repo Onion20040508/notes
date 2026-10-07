@@ -61,13 +61,13 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^cau-c1a-3-2
 
 > [!definition] Definition §C1a.3.1: Single-Particle Propagation Amplitude
-> For one particle with Hamiltonian $H = E(\hat{\mathbf p})$, a function of the momentum operator, the amplitude to propagate from the origin to $\mathbf x$ in time $t$ is
+> For one particle with Hamiltonian $\hat H = E(\hat{\mathbf P})$, a function of the momentum operator, the amplitude to propagate from the origin to $\mathbf x$ in time $t$ is
 >
 > $$
-> U(t, \mathbf x) \equiv \langle\mathbf x|e^{-iHt}|\mathbf 0\rangle ,
+> U(t, \mathbf x) \equiv \langle\mathbf x|e^{-i\hat Ht}|\mathbf 0\rangle ,
 > $$
 >
-> with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$. Since $|\mathbf x\rangle$ is not a normalizable state ([[§37 Position Eigenstates and Continuous Resolutions#^prop-37-3|556 Prop. §37.3]]), $U(t, \cdot)$ is defined as the kernel of $e^{-iHt}$: $(e^{-iHt}\psi)(\mathbf x) = \int d^3y\,U(t, \mathbf x - \mathbf y)\,\psi(\mathbf y)$. Causality ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]]) would require $U(t, \mathbf x) = 0$ for $|\mathbf x| > |t|$.
+> with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$. Since $|\mathbf x\rangle$ is not a normalizable state ([[§37 Position Eigenstates and Continuous Resolutions#^prop-37-3|556 Prop. §37.3]]), $U(t, \cdot)$ is defined as the kernel of $e^{-i\hat Ht}$: $(e^{-i\hat Ht}\psi)(\mathbf x) = \int d^3y\,U(t, \mathbf x - \mathbf y)\,\psi(\mathbf y)$. Causality ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]]) would require $U(t, \mathbf x) = 0$ for $|\mathbf x| > |t|$.
 >
 > *Source: PHY 513 Lecture 2, Part A ("Quantum Causality of Free Particle I") · the user's PHY 513 notes, Ch. 2 §2.2 (eqs. for $U$ and the completeness relation) · PS §2.1, p. 13*
 
@@ -87,13 +87,13 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^thm-c1a-3-2
 
 > [!derivation]- Derivation
-> **Step 1** (the operator on a wave packet). For $\psi \in \mathcal S(\mathbb R^3)$ write $\psi(\mathbf y) = \int\frac{d^3p}{(2\pi)^3}\tilde\psi(\mathbf p)e^{i\mathbf p\cdot\mathbf y}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]). $H = E(\hat{\mathbf p})$ acts on the plane wave $e^{i\mathbf p\cdot\mathbf y}$ as multiplication by $E(\mathbf p)$ (this is what a function of $\hat{\mathbf p}$ means), so
+> **Step 1** (the operator on a wave packet). For $\psi \in \mathcal S(\mathbb R^3)$ write $\psi(\mathbf y) = \int\frac{d^3p}{(2\pi)^3}\tilde\psi(\mathbf p)e^{i\mathbf p\cdot\mathbf y}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]). $\hat H = E(\hat{\mathbf P})$ acts on the plane wave $e^{i\mathbf p\cdot\mathbf y}$ as multiplication by $E(\mathbf p)$ (this is what a function of $\hat{\mathbf P}$ means), so
 >
 > $$
-> (e^{-iHt}\psi)(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\,e^{-iE(\mathbf p)t}\,\tilde\psi(\mathbf p)\,e^{i\mathbf p\cdot\mathbf x} .
+> (e^{-i\hat Ht}\psi)(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\,e^{-iE(\mathbf p)t}\,\tilde\psi(\mathbf p)\,e^{i\mathbf p\cdot\mathbf x} .
 > $$
 >
-> In bra-ket form this is the insertion of $\int\frac{d^3p}{(2\pi)^3}|\mathbf p\rangle\langle\mathbf p| = 1$ between $e^{-iHt}$ and $|\psi\rangle$, with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$.
+> In bra-ket form this is the insertion of $\int\frac{d^3p}{(2\pi)^3}|\mathbf p\rangle\langle\mathbf p| = 1$ between $e^{-i\hat Ht}$ and $|\psi\rangle$, with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$.
 >
 > **Step 2** (convolution). $e^{-iE(\mathbf p)t}$ is smooth and bounded, so its inverse transform $U(t, \cdot)$ exists in $\mathcal S'(\mathbb R^3)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]), and a product of transforms is the transform of the convolution ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3, in $\mathcal S'$ with one factor in $\mathcal S$; the same rule in three dimensions). So Step 1 is $\int d^3y\,U(t, \mathbf x - \mathbf y)\psi(\mathbf y)$: $U(t, \cdot)$ is the kernel of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]. Taking $\psi \to \delta^3$ formally gives $\langle\mathbf x|e^{-iHt}|\mathbf 0\rangle$, the definition; the action on a test function $f$ is the transform moved onto $f$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]): $\int d^3x\,f(\mathbf x)e^{i\mathbf p\cdot\mathbf x} = \hat f(-\mathbf p)$.
 >
@@ -101,7 +101,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > **What the derivation shows.**
 > - $U$ is a distribution in $\mathbf x$ for every $t$, whatever $E(\mathbf p)$; whether it is a function, and where it vanishes, is decided by the form of $E$.
-> - Its time derivative is $-i$ times the transform of $E(\mathbf p)e^{-iE(\mathbf p)t}$: $i\partial_tU = HU$, the Schrödinger equation for the kernel.
+> - Its time derivative is $-i$ times the transform of $E(\mathbf p)e^{-iE(\mathbf p)t}$: $i\partial_tU = \hat HU$, the Schrödinger equation for the kernel.
 > - Used next: the nonrelativistic case (Theorem §C1a.3.3) and the relativistic one (Theorems §C1a.3.4–§C1a.3.6; exactly, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]–[[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]]).
 
 ^der-c1a-3-2
@@ -122,7 +122,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^thm-c1a-3-3
 
 > [!derivation]- Derivation
-> **Step 1** (the formula). $U(t, \mathbf x)$ for $H = \mathbf p^2/2m$ is the free propagator $K(\mathbf x, t; \mathbf 0, 0)$ of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]] with $\hbar = 1$, $T = t$, $\mathbf x' = \mathbf 0$. The computation there, a three-dimensional Gaussian with complex variance completed to a square ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], 1 with $s = it/2m$, continued to the imaginary axis as the Fresnel limit $t \to t - i0$, which also fixes the branch of the root), is the one in the user's notes and is not repeated.
+> **Step 1** (the formula). $U(t, \mathbf x)$ for $\hat H = \hat{\mathbf P}^2/2m$ is the free propagator $K(\mathbf x, t; \mathbf 0, 0)$ of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]] with $\hbar = 1$, $T = t$, $\mathbf x' = \mathbf 0$. The computation there, a three-dimensional Gaussian with complex variance completed to a square ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], 1 with $s = it/2m$, continued to the imaginary axis as the Fresnel limit $t \to t - i0$, which also fixes the branch of the root), is the one in the user's notes and is not repeated.
 >
 > **Step 2** (the modulus). For real $t$, $|e^{imr^2/2t}| = 1$ and $|(m/2\pi it)^{3/2}| = (m/2\pi|t|)^{3/2}$, independent of $\mathbf x$.
 >
@@ -274,9 +274,9 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^rem-c1a-3-5
 
 > [!remark]- Connections
-> - The amplitude is the propagator of [[§C4.1 Propagators#^def-c4-1-1|QM Def. §C4.1.1]] for the Hamiltonian $\sqrt{\mathbf p^2 + m^2}$; at imaginary time $U(-i\tau, \cdot)$ is the kernel of $e^{-H\tau}$, the relativistic analogue of the heat kernel ([[§B4.2 Random Walks, the Central Limit Theorem and Diffusion#^thm-b4-2-6|TH Theorem §B4.2.6]]) that the nonrelativistic propagator becomes at imaginary time.
+> - The amplitude is the propagator of [[§C4.1 Propagators#^def-c4-1-1|QM Def. §C4.1.1]] for the Hamiltonian $\sqrt{\hat{\mathbf P}^2 + m^2}$; at imaginary time $U(-i\tau, \cdot)$ is the kernel of $e^{-\hat H\tau}$, the relativistic analogue of the heat kernel ([[§B4.2 Random Walks, the Central Limit Theorem and Diffusion#^thm-b4-2-6|TH Theorem §B4.2.6]]) that the nonrelativistic propagator becomes at imaginary time.
 > - Sakurai's argument against the square-root Hamiltonian, that it is nonlocal and must eventually violate causality for a localized wave function ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^rem-c13-1-1|QM Remark: Why square]]), is made quantitative by [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]: the nonlocality has range $\hbar/mc$.
-> - $U = 2i\partial_tD_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]) is the relativistic normalization at work: the one-particle states $|\mathbf p\rangle$ of field theory carry $\sqrt{2E_{\mathbf p}}$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), and $\phi(x)|0\rangle$ creates a particle at $x$ with the weight $1/2E_{\mathbf p}$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]]); the single-particle position states $|\mathbf x\rangle$ used here have weight $1$, which is why $U$ and $D_W$ differ by a time derivative.
+> - $U = 2i\partial_tD_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]) is the relativistic normalization at work: the one-particle states $|\mathbf p\rangle$ of field theory carry $\sqrt{2E_{\mathbf p}}$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), and $\hat\phi(x)|0\rangle$ creates a particle at $x$ with the weight $1/2E_{\mathbf p}$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]]); the single-particle position states $|\mathbf x\rangle$ used here have weight $1$, which is why $U$ and $D_W$ differ by a time derivative.
 > - The phase $pr - t\sqrt{p^2 + m^2}$ and its complex saddle are shared with the Wightman function ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]]); the cut, the saddle on it and the arc condition $r > |t|$ are drawn in the figure of [[§CA.4 Contour Integration|§CA.4]]. A complex saddle giving an exponentially small amplitude is the field-theory cousin of tunnelling, whose WKB exponent is likewise a saddle value ([[§B9.4 Tunnelling and the Connection Formulas|QM §B9.4]]).
 > - For $m = 0$ the single-particle amplitude leaks as a power law, $t/(r^2 - t^2)^2$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]), while the massless commutator function lives on the cone alone ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]]): field theory propagates massless signals sharply, single-particle mechanics does not.
 > - The decay length $1/m$ of the leak is the Compton wavelength of [[§B4.1 The Klein–Gordon Equation#^def-b4-1-2|REL Def. §B4.1.2]] and the range of the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]); the same $e^{-m\rho}$ governs the vacuum correlations $D_1$ outside the cone ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-3|Remark: Influence and correlation]]), and by [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]] that is no coincidence.

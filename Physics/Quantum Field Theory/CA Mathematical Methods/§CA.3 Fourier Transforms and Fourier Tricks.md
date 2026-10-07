@@ -235,7 +235,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 > \int d^3x\,a(\mathbf x)\,b(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\,A(\mathbf p)\,B(-\mathbf p) .
 > $$
 >
-> The physicists' route (exchange the order, do $\int d^3x$ first to get $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$, then set $\mathbf q = -\mathbf p$) computes the same number. Phases $e^{\mp iE_{\mathbf p}t}$ ride along inside $A$, $B$ (the split-exponential rule). For coefficients that are not wave packets, such as $a_{\mathbf p}$, the identity holds after smearing them with test functions.
+> The physicists' route (exchange the order, do $\int d^3x$ first to get $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$, then set $\mathbf q = -\mathbf p$) computes the same number. Phases $e^{\mp iE_{\mathbf p}t}$ ride along inside $A$, $B$ (the split-exponential rule). For coefficients that are not wave packets, such as $\hat a_{\mathbf p}$, the identity holds after smearing them with test functions.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.3 (rules 1–3 of "The six rules"; Caution "Where the errors live") · justified here (standard: Fubini)*
 
@@ -258,7 +258,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >
 > **Step 6** (with time; the split-exponential rule). At fixed $t$, put $A(\mathbf p) = \alpha(\mathbf p)e^{\mp iE_{\mathbf p}t}$ and $B(\mathbf q) = \beta(\mathbf q)e^{\mp iE_{\mathbf q}t}$; these are still Schwartz in $\mathbf p$ (for $m > 0$, $E_{\mathbf p}$ is smooth and its derivatives grow at most polynomially). After Step 4, $B(-\mathbf p)$ carries $E_{-\mathbf p} = E_{\mathbf p}$, since $E$ depends on $|\mathbf p|$ only, so the phases combine to $e^{\mp2iE_{\mathbf p}t}$, or to $1$ when one phase is conjugated: "the delta equates the frequencies".
 >
-> ⚑ By-product: when $A$ or $B$ is an unsmeared operator coefficient such as $a_{\mathbf p}$, the identity holds as an identity of operator-valued distributions ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]); a product of two such coefficients at the same momentum, left unsmeared, is where a $\delta^3(\mathbf 0)$ appears → [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3.
+> ⚑ By-product: when $A$ or $B$ is an unsmeared operator coefficient such as $\hat a_{\mathbf p}$, the identity holds as an identity of operator-valued distributions ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]); a product of two such coefficients at the same momentum, left unsmeared, is where a $\delta^3(\mathbf 0)$ appears → [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3.
 >
 > **What the derivation shows.**
 > - The exchange of integrals is Fubini for wave packets; the delta function is bookkeeping for one Fourier inversion.
@@ -295,7 +295,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >
 > **What the derivation shows.**
 > - Any measure- and domain-preserving map of a dummy variable is allowed; "choose the polar axis along $\mathbf r$" ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]) and "choose the frame" ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-9|Theorem §CA.3.9]]) are instances.
-> - The one thing to track is the label: a dropped sign turns $[a_{\mathbf p}, a^\dagger_{-\mathbf p}]$ into $[a_{\mathbf p}, a^\dagger_{\mathbf p}]$ and creates a spurious $\delta^3(\mathbf 0)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules for mode integrals]]).
+> - The one thing to track is the label: a dropped sign turns $[\hat a_{\mathbf p}, \hat a^\dagger_{-\mathbf p}]$ into $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf p}]$ and creates a spurious $\delta^3(\mathbf 0)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules for mode integrals]]).
 > - A box of side $L$ is not shift invariant unless the functions are periodic, which is why [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] uses periodic boundary conditions.
 
 ^der-ca-3-7
@@ -403,7 +403,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >   - Def. §CA.3.1 (conventions): [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]] (conventions).
 >   - Theorem §CA.3.1 (inversion, Plancherel): the classical Dirac charge is positive — [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]].
 >   - Theorem §CA.3.2 (transform in $\mathcal S'$): solutions as transforms, the mode expansion, the propagator limit — [[§C5a.6 Plane-Wave Solutions#^rem-c5a-6-6|§C5a.6, Remark: In what sense a general solution is a superposition of these plane waves]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]].
->   - Theorem §CA.3.3 (plane-wave delta): mode extraction, $H$ and $Q$ in modes, the mode algebra, spin at rest — [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-5|Theorem §C5b.2.5]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]].
+>   - Theorem §CA.3.3 (plane-wave delta): mode extraction, $\hat H$ and $\hat Q$ in modes, the mode algebra, spin at rest — [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-5|Theorem §C5b.2.5]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]].
 >   - Theorem §CA.3.4 (rules): derivatives of plane waves in the mode expansion — [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]].
 >   - Theorem §CA.3.5 (translation, phase; rules in $\mathcal S'$): Dirac two-point functions as $i\slashed{\partial} + m$ applied to scalar ones — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]].
 >   - Theorem §CA.3.6 (exchanging integrals; split exponentials): [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]].

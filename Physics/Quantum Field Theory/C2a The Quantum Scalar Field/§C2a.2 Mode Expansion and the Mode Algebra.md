@@ -77,13 +77,13 @@ How is the free real scalar field written in terms of oscillators, and what alge
 > [!remark] Remark: Why the modes decouple, and why the frequency is the energy
 > - **Decoupling is translation invariance.** The $d^3x$ integral of a product of two fields forces opposite momenta, so $\mathbf p$ meets only $-\mathbf p$, which is the same mode after $\mathbf p \to -\mathbf p$. In position space the gradient term couples each point to its neighbours, which is what stopped $H$ from reading as an oscillator; in momentum space it is just part of the frequency. This is the normal-coordinate decoupling of coupled oscillators ([[§B2.2 Normal-Mode Solutions and Energy Exchange#^thm-b2-2-1|WO Theorem §B2.2.1]]), with plane waves as normal modes because the system is translation invariant.
 > - **The frequency is not bookkeeping.** $E_{\mathbf p}^2 = \mathbf p^2 + m^2$ comes from the gradient term ($\mathbf p^2$) and the mass term ($m^2$): a wave equation with a restoring term, $\omega^2 = \omega_p^2 + c^2k^2$ ([[§B6.2 Dispersion, Phase Velocity and Group Velocity#^thm-b6-2-1|WO Theorem §B6.2.1]], 2), with the plasma frequency replaced by $m$ ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-5|REL Theorem §B4.1.5]]). It is the mass-shell relation, and it is why the quanta will be relativistic particles.
-> - **Counting.** $\tilde\phi(\mathbf p)$ is complex but $\tilde\phi(-\mathbf p) = \tilde\phi^{\ast}(\mathbf p)$, so each pair $\{\mathbf p, -\mathbf p\}$ carries two real oscillators: one per $\mathbf p$. Quantum Mechanics' box version quantizes each pair as a two-dimensional isotropic oscillator ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^def-c13-1-1|QM Def. §C13.1.1]]); the mode expansion of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]] does the same bookkeeping with $a_{\mathbf p}$ and $a^\dagger_{-\mathbf p}$.
+> - **Counting.** $\tilde\phi(\mathbf p)$ is complex but $\tilde\phi(-\mathbf p) = \tilde\phi^{\ast}(\mathbf p)$, so each pair $\{\mathbf p, -\mathbf p\}$ carries two real oscillators: one per $\mathbf p$. Quantum Mechanics' box version quantizes each pair as a two-dimensional isotropic oscillator ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^def-c13-1-1|QM Def. §C13.1.1]]); the mode expansion of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]] does the same bookkeeping with $\hat a_{\mathbf p}$ and $\hat a^\dagger_{-\mathbf p}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.2 and §4.6 (Caution "Why the decoupling had to happen")*
 
 ^rem-c2a-2-1
 
-Quantization is now "a formality" (the user's notes): quantize each oscillator, $\tilde\phi(\mathbf p) \sim (a + a^\dagger)/\sqrt{2E_{\mathbf p}}$, $\tilde\pi(\mathbf p) \sim -i\sqrt{E_{\mathbf p}/2}\,(a - a^\dagger)$ (Lecture 4's sketch). The rest of this section, [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]] and [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] make this precise, and the one thing the quantum computation adds is the operator ordering, hence the zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|Remark: Why the zero-point energy is dropped]]). The steps are [[P1 Canonical Quantization#^p1-1|P1, steps 1–4]].
+Quantization is now "a formality" (the user's notes): quantize each oscillator, $\hat{\tilde\phi}(\mathbf p) \sim (\hat a + \hat a^\dagger)/\sqrt{2E_{\mathbf p}}$, $\hat{\tilde\pi}(\mathbf p) \sim -i\sqrt{E_{\mathbf p}/2}\,(\hat a - \hat a^\dagger)$ (Lecture 4's sketch). The rest of this section, [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]] and [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] make this precise, and the one thing the quantum computation adds is the operator ordering, hence the zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|Remark: Why the zero-point energy is dropped]]). The steps are [[P1 Canonical Quantization#^p1-1|P1, steps 1–4]].
 
 The integration rules used from here on (plane-wave delta function, derivatives under the integral, integration by parts, angular integrals) are in [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorems §CA.3.3]]–[[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|§CA.3.8]], and the interchanges of limits and integrals are licensed by [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]; two rules are specific to mode expansions:
 
@@ -93,7 +93,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > $$
 >
 > - **Split exponentials.** A fixed-time $d^3x$ integral touches only the spatial factor, as displayed; the delta then equates the energies, so the phase is $e^{\mp2iE_{\mathbf p}t}$ (for $p + q$) or $1$ (for $p - q$). This is the only place time and space are separated. The delta is an identity in $\mathcal S'$ in $\mathbf p \pm \mathbf q$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]), and moving the phase out of the $\mathbf x$-integral is the exchange of integrals of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]: exact for wave packets, and for the operator coefficients after smearing them with test functions.
-> - **Relabel.** In an integral over all $\mathbf p$ one may substitute $\mathbf p \to -\mathbf p$ in a single term: the Jacobian is $1$ and $E_{-\mathbf p} = E_{\mathbf p}$; only the exponent and the operator index change ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1). Keep the index $-\mathbf p$ on creation operators until the delta has been used, and give the two integration variables of a product different names ($\mathbf p$, $\mathbf q$); a dropped sign turns $[a_{\mathbf p}, a^\dagger_{-\mathbf p}]$ into $[a_{\mathbf p}, a^\dagger_{\mathbf p}]$ and produces a $\delta^3(0)$ where none belongs.
+> - **Relabel.** In an integral over all $\mathbf p$ one may substitute $\mathbf p \to -\mathbf p$ in a single term: the Jacobian is $1$ and $E_{-\mathbf p} = E_{\mathbf p}$; only the exponent and the operator index change ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1). Keep the index $-\mathbf p$ on creation operators until the delta has been used, and give the two integration variables of a product different names ($\mathbf p$, $\mathbf q$); a dropped sign turns $[\hat a_{\mathbf p}, \hat a^\dagger_{-\mathbf p}]$ into $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf p}]$ and produces a $\delta^3(0)$ where none belongs.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.3 (rules 2 and 3 of "The six rules"; Caution "Where the errors live")*
 
@@ -108,10 +108,10 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > \phi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\Bigl(a_{\mathbf p}\,e^{-ip\cdot x} + a_{\mathbf p}^*\,e^{ip\cdot x}\Bigr)\Big|_{p^0 = E_{\mathbf p}}, \qquad \pi = \dot\phi = \int\frac{d^3p}{(2\pi)^3}(-i)\sqrt{\frac{E_{\mathbf p}}{2}}\Bigl(a_{\mathbf p}\,e^{-ip\cdot x} - a_{\mathbf p}^*\,e^{ip\cdot x}\Bigr) .
 > $$
 >
-> Accordingly the operators of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] are written at $t = 0$ with operators $a_{\mathbf p}$, $a_{\mathbf p}^\dagger$:
+> Accordingly the operators of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] are written at $t = 0$ with operators $\hat a_{\mathbf p}$, $\hat a_{\mathbf p}^\dagger$:
 >
 > $$
-> \phi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\bigl(a_{\mathbf p} + a^\dagger_{-\mathbf p}\bigr)e^{i\mathbf p\cdot\mathbf x}, \qquad \pi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}(-i)\sqrt{\frac{E_{\mathbf p}}{2}}\bigl(a_{\mathbf p} - a^\dagger_{-\mathbf p}\bigr)e^{i\mathbf p\cdot\mathbf x} .
+> \hat\phi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\bigl(\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p}\bigr)e^{i\mathbf p\cdot\mathbf x}, \qquad \hat\pi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}(-i)\sqrt{\frac{E_{\mathbf p}}{2}}\bigl(\hat a_{\mathbf p} - \hat a^\dagger_{-\mathbf p}\bigr)e^{i\mathbf p\cdot\mathbf x} .
 > $$
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.4 · PHY 513 Lecture 4, Part B · PS §2.3, eqs. (2.25)–(2.28) · Yu §2.3.1, eqs. (2.97)–(2.105)*
@@ -155,13 +155,13 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > \phi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{a_{\mathbf p} + a^*_{-\mathbf p}}{\sqrt{2E_{\mathbf p}}}\,e^{i\mathbf p\cdot\mathbf x}, \qquad \pi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}(-i)\sqrt{\frac{E_{\mathbf p}}{2}}\bigl(a_{\mathbf p} - a^*_{-\mathbf p}\bigr)e^{i\mathbf p\cdot\mathbf x} .
 > $$
 >
-> **7. Quantize.** Replace each number $a_{\mathbf p}$ by an operator and complex conjugation by Hermitian conjugation, $a^{\ast}_{\mathbf p} \to a^\dagger_{\mathbf p}$. In the step-4 form each term of $\phi$ is the adjoint of the other, so $\phi^\dagger = \phi$; likewise $\pi^\dagger = \pi$. ⚑ By-product: Hermiticity is what ties the coefficient of $e^{+ip\cdot x}$ to that of $e^{-ip\cdot x}$; without it the negative-frequency coefficient is a second, independent operator → [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]. ⚑ By-product: with operators in place of numbers the $\mathbf p$-integral converges only after the field is smeared with a test function; $\phi$ and $\pi$ are operator-valued distributions, and the smeared field is $\phi(f) = a(g_f) + a^\dagger(g_f)$ → [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]].
+> **7. Quantize.** Replace each number $a_{\mathbf p}$ by an operator $\hat a_{\mathbf p}$ and complex conjugation by Hermitian conjugation, $a^{\ast}_{\mathbf p} \to \hat a^\dagger_{\mathbf p}$. In the step-4 form each term of $\hat\phi$ is the adjoint of the other, so $\hat\phi^\dagger = \hat\phi$; likewise $\hat\pi^\dagger = \hat\pi$. ⚑ By-product: Hermiticity is what ties the coefficient of $e^{+ip\cdot x}$ to that of $e^{-ip\cdot x}$; without it the negative-frequency coefficient is a second, independent operator → [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]. ⚑ By-product: with operators in place of numbers the $\mathbf p$-integral converges only after the field is smeared with a test function; $\hat\phi$ and $\hat\pi$ are operator-valued distributions, and the smeared field is $\hat\phi(f) = \hat a(g_f) + \hat a^\dagger(g_f)$ → [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]].
 >
 > **What the derivation shows**
 > - The mass shell $k^0 = \pm E_{\mathbf k}$ is the only input from the field equation; both signs are needed for arbitrary Cauchy data.
 > - $1/\sqrt{2E_{\mathbf p}}$ is a normalization choice, cashed in by [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] and [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]].
-> - The relabelling $\mathbf p \to -\mathbf p$ is why $a^\dagger_{-\mathbf p}$, not $a^\dagger_{\mathbf p}$, accompanies $a_{\mathbf p}$ at fixed time: the pairing of $\mathbf p$ with $-\mathbf p$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple]].
-> - The operators $a_{\mathbf p}$ are so far only names; their algebra is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], and their extraction from $\phi$, $\pi$ is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]].
+> - The relabelling $\mathbf p \to -\mathbf p$ is why $\hat a^\dagger_{-\mathbf p}$, not $\hat a^\dagger_{\mathbf p}$, accompanies $\hat a_{\mathbf p}$ at fixed time: the pairing of $\mathbf p$ with $-\mathbf p$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple]].
+> - The operators $\hat a_{\mathbf p}$ are so far only names; their algebra is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], and their extraction from $\hat\phi$, $\hat\pi$ is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]].
 
 ^der-c2a-2-2
 
@@ -170,7 +170,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 *Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
 > [!remark] Remark: Posited or derived
-> Lecture 4 *posited* the $t = 0$ expansions by copying the oscillator's $x \sim (a + a^\dagger)/\sqrt{2\omega}$, $p \sim -i\sqrt{\omega/2}\,(a - a^\dagger)$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-1|Remark: The oscillator, recalled]]) and adding Fourier factors, guided by Hermiticity, then verified them by the commutator ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], second route); $\pi = \dot\phi$ was not used. Here $\pi = \dot\phi$ of the classical solution is the input, and the $-i\sqrt{E/2}$ and the relative sign are consequences of $e^{-iEt}$. The two agree because the Heisenberg equation, from the same commutators and $H$, gives back $a_{\mathbf p}(t) = a_{\mathbf p}e^{-iE_{\mathbf p}t}$ and $\partial_t\phi = \pi$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^rem-c2b-1-4|Remark: Two routes that meet]]): in the lecture's route $\pi = \dot\phi$ is a theorem. The user's notes derive the expansion for a complex field first and impose reality at the end ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]).
+> Lecture 4 *posited* the $t = 0$ expansions by copying the oscillator's $\hat x \sim (\hat a + \hat a^\dagger)/\sqrt{2\omega}$, $\hat p \sim -i\sqrt{\omega/2}\,(\hat a - \hat a^\dagger)$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-1|Remark: The oscillator, recalled]]) and adding Fourier factors, guided by Hermiticity, then verified them by the commutator ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], second route); $\hat\pi = \dot{\hat\phi}$ was not used. Here $\pi = \dot\phi$ of the classical solution is the input, and the $-i\sqrt{E/2}$ and the relative sign are consequences of $e^{-iEt}$. The two agree because the Heisenberg equation, from the same commutators and $\hat H$, gives back $\hat a_{\mathbf p}(t) = \hat a_{\mathbf p}e^{-iE_{\mathbf p}t}$ and $\partial_t\hat\phi = \hat\pi$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^rem-c2b-1-4|Remark: Two routes that meet]]): in the lecture's route $\hat\pi = \dot{\hat\phi}$ is a theorem. The user's notes derive the expansion for a complex field first and impose reality at the end ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.4 (Caution "The lecture's route, and why it is sound")*
 
@@ -242,14 +242,14 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > (f_{\mathbf p}, f^*_{\mathbf q}) = i\int d^3x\,\bigl(f^*_{\mathbf p}(iE_{\mathbf q})f^*_{\mathbf q} - (iE_{\mathbf p})f^*_{\mathbf p}f^*_{\mathbf q}\bigr) = -\frac{E_{\mathbf q} - E_{\mathbf p}}{2\sqrt{E_{\mathbf p}E_{\mathbf q}}}\,e^{i(E_{\mathbf p} + E_{\mathbf q})t}\,(2\pi)^3\delta^3(\mathbf p + \mathbf q) ,
 > $$
 >
-> using $\int d^3x\,e^{i(p + q)\cdot x} = e^{i(E_{\mathbf p} + E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p + \mathbf q)$. On the support $\mathbf q = -\mathbf p$, $E_{\mathbf q} = E_{-\mathbf p} = E_{\mathbf p}$: the prefactor vanishes, and a smooth function vanishing on the support of $\delta^3$ times $\delta^3$ is the zero distribution ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1; the same identity in $\mathcal S'$, now in $\mathbf p + \mathbf q$). ⚑ By-product: the oscillating phase $e^{2iE_{\mathbf p}t}$ is harmless only because its coefficient vanishes; this is the same cancellation that removes number-changing terms from $H$ → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-1|Derivation §C2a.3.1]], steps 10–11.
+> using $\int d^3x\,e^{i(p + q)\cdot x} = e^{i(E_{\mathbf p} + E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p + \mathbf q)$. On the support $\mathbf q = -\mathbf p$, $E_{\mathbf q} = E_{-\mathbf p} = E_{\mathbf p}$: the prefactor vanishes, and a smooth function vanishing on the support of $\delta^3$ times $\delta^3$ is the zero distribution ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1; the same identity in $\mathcal S'$, now in $\mathbf p + \mathbf q$). ⚑ By-product: the oscillating phase $e^{2iE_{\mathbf p}t}$ is harmless only because its coefficient vanishes; this is the same cancellation that removes number-changing terms from $\hat H$ → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-1|Derivation §C2a.3.1]], steps 10–11.
 >
 > **10. The negative-frequency product.** By step 5, $(f^{\ast}_{\mathbf p}, f^{\ast}_{\mathbf q}) = -(f_{\mathbf p}, f_{\mathbf q})^{\ast} = -(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ (the delta is real). ⚑ By-product: the product is not positive definite → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|Remark: Why this inner product, and why it is indefinite]].
 >
 > **What the derivation shows**
 > - Conservation uses exactly the field equation (step 3) and fall-off at infinity (step 4).
 > - The positive- and negative-frequency modes are orthogonal, with norms of opposite sign: the frequency split is basis-free.
-> - Used next: extraction of the mode operators ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]]) and the commutator $[a, a^\dagger] = (f, f)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]).
+> - Used next: extraction of the mode operators ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]]) and the commutator $[\hat a, \hat a^\dagger] = (f, f)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]).
 
 ^der-c2a-2-3
 
@@ -294,17 +294,17 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > **What the derivation shows**
 > - Wave packets have finite Klein–Gordon norms, $\int\frac{d^3p}{(2\pi)^3}|g|^2 \ge 0$, and conservation holds without caveat; a plane wave is the limit of ever narrower $g$, whose norm diverges like $\delta^3(\mathbf 0)$.
 > - "$(f_{\mathbf p}, f_{\mathbf q}) = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$" is shorthand for these identities; every later use is read this way.
-> - Used next: the extraction formula smeared, $a(g) = (f_g, \phi)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-5|Derivation §C2a.2.5]], step 1), and the mode algebra as an identity of distributions ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]).
+> - Used next: the extraction formula smeared, $\hat a(g) = (f_g, \hat\phi)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-5|Derivation §C2a.2.5]], step 1), and the mode algebra as an identity of distributions ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]).
 
 ^der-c2a-2-4
 
 *Uses:* [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]
 
 > [!theorem] Theorem §C2a.2.5: Mode Extraction
-> For the field of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], written $\phi = \int\frac{d^3q}{(2\pi)^3}\bigl(a_{\mathbf q}f_{\mathbf q} + a^\dagger_{\mathbf q}f^*_{\mathbf q}\bigr)$, and with $\partial_t\phi = \pi$,
+> For the field of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], written $\hat\phi = \int\frac{d^3q}{(2\pi)^3}\bigl(\hat a_{\mathbf q}f_{\mathbf q} + \hat a^\dagger_{\mathbf q}f^*_{\mathbf q}\bigr)$, and with $\partial_t\hat\phi = \hat\pi$,
 >
 > $$
-> a_{\mathbf p} = (f_{\mathbf p}, \phi) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{ip\cdot x}\bigl(\pi(x) - iE_{\mathbf p}\,\phi(x)\bigr), \qquad a^\dagger_{\mathbf p} = -(f^*_{\mathbf p}, \phi) ,
+> \hat a_{\mathbf p} = (f_{\mathbf p}, \hat\phi) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{ip\cdot x}\bigl(\hat\pi(x) - iE_{\mathbf p}\,\hat\phi(x)\bigr), \qquad \hat a^\dagger_{\mathbf p} = -(f^*_{\mathbf p}, \hat\phi) ,
 > $$
 >
 > independent of the time slice on which the integral is taken.
@@ -314,34 +314,34 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 ^thm-c2a-2-5
 
 > [!derivation]- Derivation
-> **1. Pull the inner product through the integral.** $(f_{\mathbf p}, \cdot)$ is linear in its second argument and involves only $\int d^3x$ and $\partial_t$; the operators $a_{\mathbf q}$ do not depend on $x$. *Sense:* the $\mathbf q$-integral has operator coefficients, so the exchange of $\int d^3x$ with $\int d^3q$ is made after smearing in $\mathbf p$ with $\overline{g(\mathbf p)}$, $g \in \mathcal S$: the left side becomes $(f_g, \phi) = i\bigl[\pi(f^{\ast}_g) - \phi(\partial_tf^{\ast}_g)\bigr]$, smeared fields with the Schwartz functions of [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-4|Derivation §C2a.2.4]], step 1 ([[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], extended to complex test functions by linearity), and the exchange is Fubini for wave packets ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]). So, as an identity of operator-valued distributions in $\mathbf p$,
+> **1. Pull the inner product through the integral.** $(f_{\mathbf p}, \cdot)$ is linear in its second argument and involves only $\int d^3x$ and $\partial_t$; the operators $\hat a_{\mathbf q}$ do not depend on $x$. *Sense:* the $\mathbf q$-integral has operator coefficients, so the exchange of $\int d^3x$ with $\int d^3q$ is made after smearing in $\mathbf p$ with $\overline{g(\mathbf p)}$, $g \in \mathcal S$: the left side becomes $(f_g, \hat\phi) = i\bigl[\hat\pi(f^{\ast}_g) - \hat\phi(\partial_tf^{\ast}_g)\bigr]$, smeared fields with the Schwartz functions of [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-4|Derivation §C2a.2.4]], step 1 ([[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], extended to complex test functions by linearity), and the exchange is Fubini for wave packets ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]). So, as an identity of operator-valued distributions in $\mathbf p$,
 >
 > $$
-> (f_{\mathbf p}, \phi) = \int\frac{d^3q}{(2\pi)^3}\Bigl(a_{\mathbf q}\,(f_{\mathbf p}, f_{\mathbf q}) + a^\dagger_{\mathbf q}\,(f_{\mathbf p}, f^*_{\mathbf q})\Bigr) .
+> (f_{\mathbf p}, \hat\phi) = \int\frac{d^3q}{(2\pi)^3}\Bigl(\hat a_{\mathbf q}\,(f_{\mathbf p}, f_{\mathbf q}) + \hat a^\dagger_{\mathbf q}\,(f_{\mathbf p}, f^*_{\mathbf q})\Bigr) .
 > $$
 >
-> **2. Orthonormality.** By [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2, the second product is $0$ and the first is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$; integrating over $\mathbf q$ sets $\mathbf q = \mathbf p$ and cancels the $(2\pi)^3$: $(f_{\mathbf p}, \phi) = a_{\mathbf p}$. Smeared, this reads $(f_g, \phi) = a(g)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]]): the extracted mode operator is a combination of smeared fields.
+> **2. Orthonormality.** By [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2, the second product is $0$ and the first is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$; integrating over $\mathbf q$ sets $\mathbf q = \mathbf p$ and cancels the $(2\pi)^3$: $(f_{\mathbf p}, \hat\phi) = \hat a_{\mathbf p}$. Smeared, this reads $(f_g, \hat\phi) = \hat a(g)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]]): the extracted mode operator is a combination of smeared fields.
 >
-> **3. The creation operator.** $-(f^{\ast}_{\mathbf p}, \phi) = -\int\frac{d^3q}{(2\pi)^3}\bigl(a_{\mathbf q}(f^{\ast}_{\mathbf p}, f_{\mathbf q}) + a^\dagger_{\mathbf q}(f^{\ast}_{\mathbf p}, f^{\ast}_{\mathbf q})\bigr)$. Here $(f^{\ast}_{\mathbf p}, f_{\mathbf q}) = -(f_{\mathbf p}, f^{\ast}_{\mathbf q})^{\ast} = 0$ and $(f^{\ast}_{\mathbf p}, f^{\ast}_{\mathbf q}) = -(2\pi)^3\delta^3(\mathbf p - \mathbf q)$, so $-(f^{\ast}_{\mathbf p}, \phi) = a^\dagger_{\mathbf p}$.
+> **3. The creation operator.** $-(f^{\ast}_{\mathbf p}, \hat\phi) = -\int\frac{d^3q}{(2\pi)^3}\bigl(\hat a_{\mathbf q}(f^{\ast}_{\mathbf p}, f_{\mathbf q}) + \hat a^\dagger_{\mathbf q}(f^{\ast}_{\mathbf p}, f^{\ast}_{\mathbf q})\bigr)$. Here $(f^{\ast}_{\mathbf p}, f_{\mathbf q}) = -(f_{\mathbf p}, f^{\ast}_{\mathbf q})^{\ast} = 0$ and $(f^{\ast}_{\mathbf p}, f^{\ast}_{\mathbf q}) = -(2\pi)^3\delta^3(\mathbf p - \mathbf q)$, so $-(f^{\ast}_{\mathbf p}, \hat\phi) = \hat a^\dagger_{\mathbf p}$.
 >
-> **4. Explicit form.** Write out Def. §C2a.2.1 with $f^{\ast}_{\mathbf p} = e^{ip\cdot x}/\sqrt{2E_{\mathbf p}}$, $\partial_tf^{\ast}_{\mathbf p} = iE_{\mathbf p}f^{\ast}_{\mathbf p}$ and $\partial_t\phi = \pi$:
->
-> $$
-> (f_{\mathbf p}, \phi) = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\pi - iE_{\mathbf p}f^*_{\mathbf p}\,\phi\bigr) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{ip\cdot x}\bigl(\pi - iE_{\mathbf p}\phi\bigr) .
-> $$
->
-> **5. Check by direct Fourier inversion (PS, Yu).** At time $t$, with $\phi$ written over $\mathbf q$ and the split rule ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]]; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], an identity in $\mathcal S'$ in $\mathbf p \mp \mathbf q$, the $\mathbf q$-integrals then pairing each delta with the operator-valued distribution $\mathbf q \mapsto a_{\mathbf q}$, valid after smearing in $\mathbf p$; $E_{-\mathbf p} = E_{\mathbf p}$ by [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1),
+> **4. Explicit form.** Write out Def. §C2a.2.1 with $f^{\ast}_{\mathbf p} = e^{ip\cdot x}/\sqrt{2E_{\mathbf p}}$, $\partial_tf^{\ast}_{\mathbf p} = iE_{\mathbf p}f^{\ast}_{\mathbf p}$ and $\partial_t\hat\phi = \hat\pi$:
 >
 > $$
-> \int d^3x\,e^{ip\cdot x}\phi(x) = \int\frac{d^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf q}}}\Bigl(a_{\mathbf q}e^{i(E_{\mathbf p} - E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p - \mathbf q) + a^\dagger_{\mathbf q}e^{i(E_{\mathbf p} + E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p + \mathbf q)\Bigr) = \frac{a_{\mathbf p} + e^{2iE_{\mathbf p}t}a^\dagger_{-\mathbf p}}{\sqrt{2E_{\mathbf p}}} ,
+> (f_{\mathbf p}, \hat\phi) = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\hat\pi - iE_{\mathbf p}f^*_{\mathbf p}\,\hat\phi\bigr) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{ip\cdot x}\bigl(\hat\pi - iE_{\mathbf p}\hat\phi\bigr) .
 > $$
 >
-> the first delta eliminating $\mathbf q = \mathbf p$, the second $\mathbf q = -\mathbf p$ (with $E_{-\mathbf p} = E_{\mathbf p}$). The same computation on $\pi$, whose terms carry $\mp iE_{\mathbf q}$, gives $\int d^3x\,e^{ip\cdot x}\pi = -iE_{\mathbf p}\bigl(a_{\mathbf p} - e^{2iE_{\mathbf p}t}a^\dagger_{-\mathbf p}\bigr)/\sqrt{2E_{\mathbf p}}$. ⚑ By-product: a Fourier transform of $\phi$ alone (or of $\pi$ alone) mixes $a_{\mathbf p}$ with $a^\dagger_{-\mathbf p}$; both pieces of Cauchy data are needed to separate them → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|Remark: Why this inner product]].
+> **5. Check by direct Fourier inversion (PS, Yu).** At time $t$, with $\hat\phi$ written over $\mathbf q$ and the split rule ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]]; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], an identity in $\mathcal S'$ in $\mathbf p \mp \mathbf q$, the $\mathbf q$-integrals then pairing each delta with the operator-valued distribution $\mathbf q \mapsto \hat a_{\mathbf q}$, valid after smearing in $\mathbf p$; $E_{-\mathbf p} = E_{\mathbf p}$ by [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1),
 >
-> **6. Combine.** $\int d^3x\,e^{ip\cdot x}(\pi - iE_{\mathbf p}\phi) = \frac{1}{\sqrt{2E_{\mathbf p}}}\bigl(-iE_{\mathbf p}a_{\mathbf p} + iE_{\mathbf p}e^{2iE_{\mathbf p}t}a^\dagger_{-\mathbf p} - iE_{\mathbf p}a_{\mathbf p} - iE_{\mathbf p}e^{2iE_{\mathbf p}t}a^\dagger_{-\mathbf p}\bigr) = -i\sqrt{2E_{\mathbf p}}\,a_{\mathbf p}$: the $a^\dagger_{-\mathbf p}$ terms and with them all $t$-dependence cancel. Multiplying by $i/\sqrt{2E_{\mathbf p}}$ gives $a_{\mathbf p}$, in agreement with step 4.
+> $$
+> \int d^3x\,e^{ip\cdot x}\hat\phi(x) = \int\frac{d^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf q}}}\Bigl(\hat a_{\mathbf q}e^{i(E_{\mathbf p} - E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p - \mathbf q) + \hat a^\dagger_{\mathbf q}e^{i(E_{\mathbf p} + E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p + \mathbf q)\Bigr) = \frac{\hat a_{\mathbf p} + e^{2iE_{\mathbf p}t}\hat a^\dagger_{-\mathbf p}}{\sqrt{2E_{\mathbf p}}} ,
+> $$
+>
+> the first delta eliminating $\mathbf q = \mathbf p$, the second $\mathbf q = -\mathbf p$ (with $E_{-\mathbf p} = E_{\mathbf p}$). The same computation on $\hat\pi$, whose terms carry $\mp iE_{\mathbf q}$, gives $\int d^3x\,e^{ip\cdot x}\hat\pi = -iE_{\mathbf p}\bigl(\hat a_{\mathbf p} - e^{2iE_{\mathbf p}t}\hat a^\dagger_{-\mathbf p}\bigr)/\sqrt{2E_{\mathbf p}}$. ⚑ By-product: a Fourier transform of $\hat\phi$ alone (or of $\hat\pi$ alone) mixes $\hat a_{\mathbf p}$ with $\hat a^\dagger_{-\mathbf p}$; both pieces of Cauchy data are needed to separate them → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|Remark: Why this inner product]].
+>
+> **6. Combine.** $\int d^3x\,e^{ip\cdot x}(\hat\pi - iE_{\mathbf p}\hat\phi) = \frac{1}{\sqrt{2E_{\mathbf p}}}\bigl(-iE_{\mathbf p}\hat a_{\mathbf p} + iE_{\mathbf p}e^{2iE_{\mathbf p}t}\hat a^\dagger_{-\mathbf p} - iE_{\mathbf p}\hat a_{\mathbf p} - iE_{\mathbf p}e^{2iE_{\mathbf p}t}\hat a^\dagger_{-\mathbf p}\bigr) = -i\sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$: the $\hat a^\dagger_{-\mathbf p}$ terms and with them all $t$-dependence cancel. Multiplying by $i/\sqrt{2E_{\mathbf p}}$ gives $\hat a_{\mathbf p}$, in agreement with step 4.
 >
 > **What the derivation shows**
-> - Extraction is a projection with the Klein–Gordon product; its slice independence ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 1) is why $a_{\mathbf p}$ carries no $t$.
+> - Extraction is a projection with the Klein–Gordon product; its slice independence ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 1) is why $\hat a_{\mathbf p}$ carries no $t$.
 > - The same formula extracts mode operators from any field expanded in any orthonormal set of modes ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-5|★ Remark: Other mode functions]]).
 > - Used next: the commutator of two extracted operators ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]); the complex field ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]).
 
@@ -353,7 +353,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 
 > [!remark] Remark: Why this inner product, and why it is indefinite
 > - **A projection.** Extracting one coefficient from a superposition is what an inner product does, $c_n = \langle e_n|f\rangle$; the field is a superposition of plane waves with operator coefficients, and $(f_{\mathbf p}, \cdot)$ is the inner product that does it. [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]] is the inversion formula of Peskin–Schroeder and Yu in three symbols.
-> - **A Noether charge.** $(f, g)$ is the charge ([[§C1b.5 Noether's Theorem#^def-c1b-5-6|Def. §C1b.5.6]]) of a conserved current, so it is the same on every slice ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]); that is why the extracted $a_{\mathbf p}$ carries no $t$, and why it is the same operator in the Schrödinger and Heisenberg pictures. For $f = g = \phi$ the current is minus the U(1) Noether current of the complex field ([[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|Caution: Normalization and sign of the charge]]).
+> - **A Noether charge.** $(f, g)$ is the charge ([[§C1b.5 Noether's Theorem#^def-c1b-5-6|Def. §C1b.5.6]]) of a conserved current, so it is the same on every slice ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]); that is why the extracted $\hat a_{\mathbf p}$ carries no $t$, and why it is the same operator in the Schrödinger and Heisenberg pictures. For $f = g = \phi$ the current is minus the U(1) Noether current of the complex field ([[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|Caution: Normalization and sign of the charge]]).
 > - **Indefinite, and that is the point.** Unlike a Hilbert-space inner product, $(f, f)$ can be negative. Quantum Mechanics met the same density as the would-be probability of a Klein–Gordon wave function and had to give it up for that reason ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]]). In the field theory the sign is the basis-free statement of the positive/negative-frequency split: positive-norm modes carry annihilators, negative-norm modes creators.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5*
@@ -361,7 +361,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 ^rem-c2a-2-4
 
 > [!remark]- ★ Remark: Other mode functions, Bogoliubov transformations and the vacuum
-> Nothing in Theorems §C2a.2.3 and §C2a.2.5 used plane waves except to check the orthonormality relations. Any complete set of solutions $\{u_i\}$ with $(u_i, u_j) = \delta_{ij}$, $(u^{\ast}_i, u^{\ast}_j) = -\delta_{ij}$, $(u_i, u^{\ast}_j) = 0$ gives $\phi = \sum_i(a_iu_i + a_i^\dagger u^{\ast}_i)$ with $a_i = (u_i, \phi)$ and, by the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], $[a_i, a_j^\dagger] = \delta_{ij}$. So a complete set of positive-norm modes *is* a choice of annihilation operators, hence of a vacuum and a Fock space. Two such choices are related by a Bogoliubov transformation, whose mixing is measured by the overlaps $(u_i, \bar u^{\ast}_j) \ne 0$; the two vacua then differ, and for infinitely many modes they can be unitarily inequivalent. In flat space with an inertial time the split by the sign of the frequency is canonical, which is why it can be taken for granted here; for a field in a box or a background it is replaced by the appropriate modes, and in curved spacetime, for accelerated observers (the Unruh effect) or in interacting theories (Haag's theorem) the choice genuinely matters (Wald, *Quantum Field Theory in Curved Spacetime*, Ch. 4; Streater and Wightman).
+> Nothing in Theorems §C2a.2.3 and §C2a.2.5 used plane waves except to check the orthonormality relations. Any complete set of solutions $\{u_i\}$ with $(u_i, u_j) = \delta_{ij}$, $(u^{\ast}_i, u^{\ast}_j) = -\delta_{ij}$, $(u_i, u^{\ast}_j) = 0$ gives $\hat\phi = \sum_i(\hat a_iu_i + \hat a_i^\dagger u^{\ast}_i)$ with $\hat a_i = (u_i, \hat\phi)$ and, by the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], $[\hat a_i, \hat a_j^\dagger] = \delta_{ij}$. So a complete set of positive-norm modes *is* a choice of annihilation operators, hence of a vacuum and a Fock space. Two such choices are related by a Bogoliubov transformation, whose mixing is measured by the overlaps $(u_i, \bar u^{\ast}_j) \ne 0$; the two vacua then differ, and for infinitely many modes they can be unitarily inequivalent. In flat space with an inertial time the split by the sign of the frequency is canonical, which is why it can be taken for granted here; for a field in a box or a background it is replaced by the appropriate modes, and in curved spacetime, for accelerated observers (the Unruh effect) or in interacting theories (Haag's theorem) the choice genuinely matters (Wald, *Quantum Field Theory in Curved Spacetime*, Ch. 4; Streater and Wightman).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5 ("The general statement") and §4.8 (Principle "Why |0⟩ is the vacuum")*
 
@@ -373,7 +373,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > For the field and momentum of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], the equal-time relations of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] hold if and only if
 >
 > $$
-> [a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q), \qquad [a_{\mathbf p}, a_{\mathbf q}] = [a^\dagger_{\mathbf p}, a^\dagger_{\mathbf q}] = 0 :
+> [\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q), \qquad [\hat a_{\mathbf p}, \hat a_{\mathbf q}] = [\hat a^\dagger_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = 0 :
 > $$
 >
 > one oscillator algebra per momentum, the $(2\pi)^3$ accompanying the measure $d^3p/(2\pi)^3$.
@@ -386,57 +386,57 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > **1. The extracted operators.** By [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]], on one time slice $t$,
 >
 > $$
-> a_{\mathbf p} = i\int d^3x\,\bigl(f^*_{\mathbf p}(x)\,\pi(\mathbf x) - \dot f^*_{\mathbf p}(x)\,\phi(\mathbf x)\bigr), \qquad a^\dagger_{\mathbf q} = -i\int d^3y\,\bigl(f_{\mathbf q}(y)\,\pi(\mathbf y) - \dot f_{\mathbf q}(y)\,\phi(\mathbf y)\bigr) ,
+> \hat a_{\mathbf p} = i\int d^3x\,\bigl(f^*_{\mathbf p}(x)\,\hat\pi(\mathbf x) - \dot f^*_{\mathbf p}(x)\,\hat\phi(\mathbf x)\bigr), \qquad \hat a^\dagger_{\mathbf q} = -i\int d^3y\,\bigl(f_{\mathbf q}(y)\,\hat\pi(\mathbf y) - \dot f_{\mathbf q}(y)\,\hat\phi(\mathbf y)\bigr) ,
 > $$
 >
-> the second the adjoint of the first for $\mathbf q$ ($i \to -i$, $f^* \to f$, $\phi$ and $\pi$ Hermitian; the $f$'s are numbers, so the reversed order of factors does not matter).
+> the second the adjoint of the first for $\mathbf q$ ($i \to -i$, $f^* \to f$, $\hat\phi$ and $\hat\pi$ Hermitian; the $f$'s are numbers, so the reversed order of factors does not matter).
 >
 > **2. Expand the commutator into all four terms.** The commutator is bilinear and the $f$'s are numbers; $(i)(-i) = 1$. *Sense:* the four commutators are distributions in $(\mathbf x, \mathbf y)$ ([[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]]), paired here with products of mode functions; plane waves are not test functions, but smeared in $\mathbf p$ and $\mathbf q$ with $\overline{g(\mathbf p)}h(\mathbf q)$ they become the Schwartz functions $f^{\ast}_g(\mathbf x)$, $\partial_tf_h(\mathbf y)$, … of [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-4|Derivation §C2a.2.4]], step 1, and every step below is exact:
 >
 > $$
-> [a_{\mathbf p}, a^\dagger_{\mathbf q}] = \int d^3x\,d^3y\,\Bigl(f^*_{\mathbf p}f_{\mathbf q}[\pi(\mathbf x), \pi(\mathbf y)] - f^*_{\mathbf p}\dot f_{\mathbf q}[\pi(\mathbf x), \phi(\mathbf y)] - \dot f^*_{\mathbf p}f_{\mathbf q}[\phi(\mathbf x), \pi(\mathbf y)] + \dot f^*_{\mathbf p}\dot f_{\mathbf q}[\phi(\mathbf x), \phi(\mathbf y)]\Bigr) .
+> [\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = \int d^3x\,d^3y\,\Bigl(f^*_{\mathbf p}f_{\mathbf q}[\hat\pi(\mathbf x), \hat\pi(\mathbf y)] - f^*_{\mathbf p}\dot f_{\mathbf q}[\hat\pi(\mathbf x), \hat\phi(\mathbf y)] - \dot f^*_{\mathbf p}f_{\mathbf q}[\hat\phi(\mathbf x), \hat\pi(\mathbf y)] + \dot f^*_{\mathbf p}\dot f_{\mathbf q}[\hat\phi(\mathbf x), \hat\phi(\mathbf y)]\Bigr) .
 > $$
 >
-> **3. Equal-time relations.** Both operators are taken on the same slice, so [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] applies: $[\pi, \pi] = [\phi, \phi] = 0$ remove the first and last terms; $[\pi(\mathbf x), \phi(\mathbf y)] = -i\delta^3(\mathbf x - \mathbf y)$ and $[\phi(\mathbf x), \pi(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$:
+> **3. Equal-time relations.** Both operators are taken on the same slice, so [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] applies: $[\hat\pi, \hat\pi] = [\hat\phi, \hat\phi] = 0$ remove the first and last terms; $[\hat\pi(\mathbf x), \hat\phi(\mathbf y)] = -i\delta^3(\mathbf x - \mathbf y)$ and $[\hat\phi(\mathbf x), \hat\pi(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$:
 >
 > $$
-> [a_{\mathbf p}, a^\dagger_{\mathbf q}] = \int d^3x\,d^3y\,\Bigl(i\,f^*_{\mathbf p}(x)\dot f_{\mathbf q}(y) - i\,\dot f^*_{\mathbf p}(x)f_{\mathbf q}(y)\Bigr)\delta^3(\mathbf x - \mathbf y) .
+> [\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = \int d^3x\,d^3y\,\Bigl(i\,f^*_{\mathbf p}(x)\dot f_{\mathbf q}(y) - i\,\dot f^*_{\mathbf p}(x)f_{\mathbf q}(y)\Bigr)\delta^3(\mathbf x - \mathbf y) .
 > $$
 >
 > **4. Integrate the delta.** The $\mathbf y$ integral sets $\mathbf y = \mathbf x$: the pairing of $\delta^3(\mathbf x - \mathbf y)$ with a product of test functions, [[§C2a.1 Canonical Quantization of Fields#^der-c2a-1-3|Derivation §C2a.1.3]], step 2 (after the smearing of step 2):
 >
 > $$
-> [a_{\mathbf p}, a^\dagger_{\mathbf q}] = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\dot f_{\mathbf q} - \dot f^*_{\mathbf p}\,f_{\mathbf q}\bigr) = (f_{\mathbf p}, f_{\mathbf q}) .
+> [\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\dot f_{\mathbf q} - \dot f^*_{\mathbf p}\,f_{\mathbf q}\bigr) = (f_{\mathbf p}, f_{\mathbf q}) .
 > $$
 >
-> **5. Orthonormality.** $(f_{\mathbf p}, f_{\mathbf q}) = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2). ⚑ By-product: at $\mathbf q = \mathbf p$ this is $(2\pi)^3\delta^3(\mathbf 0)$, which will appear as the volume in the zero-point energy → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]; as a value it has none (δ at its singular point), and only the box gives it the meaning $V$ → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]. Smeared, the step reads $[a(g), a^\dagger(h)] = (f_g, f_h)$, finite → [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]].
+> **5. Orthonormality.** $(f_{\mathbf p}, f_{\mathbf q}) = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2). ⚑ By-product: at $\mathbf q = \mathbf p$ this is $(2\pi)^3\delta^3(\mathbf 0)$, which will appear as the volume in the zero-point energy → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]; as a value it has none (δ at its singular point), and only the box gives it the meaning $V$ → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]. Smeared, the step reads $[\hat a(g), \hat a^\dagger(h)] = (f_g, f_h)$, finite → [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]].
 >
-> **6. Two annihilators.** With $a_{\mathbf q} = i\int d^3y\,(f^{\ast}_{\mathbf q}\pi - \dot f^{\ast}_{\mathbf q}\phi)$ the prefactor is $(i)(i) = -1$, and the four-term expansion is
+> **6. Two annihilators.** With $\hat a_{\mathbf q} = i\int d^3y\,(f^{\ast}_{\mathbf q}\hat\pi - \dot f^{\ast}_{\mathbf q}\hat\phi)$ the prefactor is $(i)(i) = -1$, and the four-term expansion is
 >
 > $$
-> [a_{\mathbf p}, a_{\mathbf q}] = -\int d^3x\,d^3y\,\Bigl(f^*_{\mathbf p}f^*_{\mathbf q}[\pi(\mathbf x), \pi(\mathbf y)] - f^*_{\mathbf p}\dot f^*_{\mathbf q}[\pi(\mathbf x), \phi(\mathbf y)] - \dot f^*_{\mathbf p}f^*_{\mathbf q}[\phi(\mathbf x), \pi(\mathbf y)] + \dot f^*_{\mathbf p}\dot f^*_{\mathbf q}[\phi(\mathbf x), \phi(\mathbf y)]\Bigr) .
+> [\hat a_{\mathbf p}, \hat a_{\mathbf q}] = -\int d^3x\,d^3y\,\Bigl(f^*_{\mathbf p}f^*_{\mathbf q}[\hat\pi(\mathbf x), \hat\pi(\mathbf y)] - f^*_{\mathbf p}\dot f^*_{\mathbf q}[\hat\pi(\mathbf x), \hat\phi(\mathbf y)] - \dot f^*_{\mathbf p}f^*_{\mathbf q}[\hat\phi(\mathbf x), \hat\pi(\mathbf y)] + \dot f^*_{\mathbf p}\dot f^*_{\mathbf q}[\hat\phi(\mathbf x), \hat\phi(\mathbf y)]\Bigr) .
 > $$
 >
 > The first and last commutators vanish; the middle two are $-i\delta^3$ and $+i\delta^3$, and the $\mathbf y$ integral sets $\mathbf y = \mathbf x$ (the same pairing as in step 4):
 >
 > $$
-> [a_{\mathbf p}, a_{\mathbf q}] = -\int d^3x\,\bigl(i\,f^*_{\mathbf p}\dot f^*_{\mathbf q} - i\,\dot f^*_{\mathbf p}f^*_{\mathbf q}\bigr) = -(f_{\mathbf p}, f^*_{\mathbf q}) = 0 ,
+> [\hat a_{\mathbf p}, \hat a_{\mathbf q}] = -\int d^3x\,\bigl(i\,f^*_{\mathbf p}\dot f^*_{\mathbf q} - i\,\dot f^*_{\mathbf p}f^*_{\mathbf q}\bigr) = -(f_{\mathbf p}, f^*_{\mathbf q}) = 0 ,
 > $$
 >
 > the last by [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2.
 >
-> **7. Two creators.** $[a_{\mathbf p}, a_{\mathbf q}]^\dagger = (a_{\mathbf p}a_{\mathbf q} - a_{\mathbf q}a_{\mathbf p})^\dagger = a^\dagger_{\mathbf q}a^\dagger_{\mathbf p} - a^\dagger_{\mathbf p}a^\dagger_{\mathbf q} = [a^\dagger_{\mathbf q}, a^\dagger_{\mathbf p}]$, so it vanishes too.
+> **7. Two creators.** $[\hat a_{\mathbf p}, \hat a_{\mathbf q}]^\dagger = (\hat a_{\mathbf p}\hat a_{\mathbf q} - \hat a_{\mathbf q}\hat a_{\mathbf p})^\dagger = \hat a^\dagger_{\mathbf q}\hat a^\dagger_{\mathbf p} - \hat a^\dagger_{\mathbf p}\hat a^\dagger_{\mathbf q} = [\hat a^\dagger_{\mathbf q}, \hat a^\dagger_{\mathbf p}]$, so it vanishes too.
 >
-> **8. The same in explicit variables.** With the explicit form of Theorem §C2a.2.5, $a_{\mathbf p} = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}(\pi - iE_{\mathbf p}\phi)$ and its adjoint $a^\dagger_{\mathbf q} = \frac{-i}{\sqrt{2E_{\mathbf q}}}\int d^3y\,e^{-iq\cdot y}(\pi + iE_{\mathbf q}\phi)$,
->
-> $$
-> [a_{\mathbf p}, a^\dagger_{\mathbf q}] = \frac{1}{2\sqrt{E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\;e^{ip\cdot x - iq\cdot y}\,\bigl[\pi(\mathbf x) - iE_{\mathbf p}\phi(\mathbf x),\ \pi(\mathbf y) + iE_{\mathbf q}\phi(\mathbf y)\bigr] .
-> $$
->
-> Of the four terms of the bracket only $iE_{\mathbf q}[\pi(\mathbf x), \phi(\mathbf y)] = iE_{\mathbf q}(-i)\delta^3 = E_{\mathbf q}\delta^3$ and $-iE_{\mathbf p}[\phi(\mathbf x), \pi(\mathbf y)] = -iE_{\mathbf p}(i)\delta^3 = E_{\mathbf p}\delta^3$ survive, so the bracket is $(E_{\mathbf p} + E_{\mathbf q})\delta^3(\mathbf x - \mathbf y)$. The $\mathbf y$ integral sets $\mathbf y = \mathbf x$ (step 4) and the $\mathbf x$ integral of $e^{i(p - q)\cdot x}$ (an identity in $\mathcal S'$ in $\mathbf p - \mathbf q$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]) is split as in [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-3|Derivation §C2a.2.3]], step 7:
+> **8. The same in explicit variables.** With the explicit form of Theorem §C2a.2.5, $\hat a_{\mathbf p} = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}(\hat\pi - iE_{\mathbf p}\hat\phi)$ and its adjoint $\hat a^\dagger_{\mathbf q} = \frac{-i}{\sqrt{2E_{\mathbf q}}}\int d^3y\,e^{-iq\cdot y}(\hat\pi + iE_{\mathbf q}\hat\phi)$,
 >
 > $$
-> [a_{\mathbf p}, a^\dagger_{\mathbf q}] = \frac{E_{\mathbf p} + E_{\mathbf q}}{2\sqrt{E_{\mathbf p}E_{\mathbf q}}}\,e^{i(E_{\mathbf p} - E_{\mathbf q})t}\,(2\pi)^3\delta^3(\mathbf p - \mathbf q) ,
+> [\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = \frac{1}{2\sqrt{E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\;e^{ip\cdot x - iq\cdot y}\,\bigl[\hat\pi(\mathbf x) - iE_{\mathbf p}\hat\phi(\mathbf x),\ \hat\pi(\mathbf y) + iE_{\mathbf q}\hat\phi(\mathbf y)\bigr] .
+> $$
+>
+> Of the four terms of the bracket only $iE_{\mathbf q}[\hat\pi(\mathbf x), \hat\phi(\mathbf y)] = iE_{\mathbf q}(-i)\delta^3 = E_{\mathbf q}\delta^3$ and $-iE_{\mathbf p}[\hat\phi(\mathbf x), \hat\pi(\mathbf y)] = -iE_{\mathbf p}(i)\delta^3 = E_{\mathbf p}\delta^3$ survive, so the bracket is $(E_{\mathbf p} + E_{\mathbf q})\delta^3(\mathbf x - \mathbf y)$. The $\mathbf y$ integral sets $\mathbf y = \mathbf x$ (step 4) and the $\mathbf x$ integral of $e^{i(p - q)\cdot x}$ (an identity in $\mathcal S'$ in $\mathbf p - \mathbf q$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]) is split as in [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-3|Derivation §C2a.2.3]], step 7:
+>
+> $$
+> [\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = \frac{E_{\mathbf p} + E_{\mathbf q}}{2\sqrt{E_{\mathbf p}E_{\mathbf q}}}\,e^{i(E_{\mathbf p} - E_{\mathbf q})t}\,(2\pi)^3\delta^3(\mathbf p - \mathbf q) ,
 > $$
 >
 > which is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ on the support of the delta (Yu eq. (2.115); [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1, the prefactor being smooth). ⚑ By-product: the slice $t$ on which the commutator was computed drops out → [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 1.
@@ -446,40 +446,40 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > - Only equal-time relations are used; the result holds whichever slice is chosen.
 > - The $\delta^3(\mathbf 0)$ at coincident momenta is the source of the zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
 > - Every step is an identity of distributions in $(\mathbf p, \mathbf q)$; smeared with test functions it becomes an identity between operators ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]).
-> - Used next: $H$ and $\mathbf P$ in mode form, the ladder relations and the Fock space.
+> - Used next: $\hat H$ and $\hat{\mathbf P}$ in mode form, the ladder relations and the Fock space.
 
 ^der-c2a-2-6
 
 *Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
 > [!derivation]- Derivation (second route, ⇐: from the oscillator algebra back to the fields, as in Lecture 4)
-> **1. Write both fields.** Use the $t = 0$ forms of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], with integration variable $\mathbf p$ for $\phi(\mathbf x)$ and $\mathbf p'$ for $\pi(\mathbf y)$. Both sides are distributions in $(\mathbf x, \mathbf y)$; paired with $f(\mathbf x)g(\mathbf y)$, $f, g \in \mathcal S$, the exponentials become $\tilde f(-\mathbf p)\,\tilde g(-\mathbf p')$, Schwartz functions, and every integral below converges:
+> **1. Write both fields.** Use the $t = 0$ forms of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], with integration variable $\mathbf p$ for $\hat\phi(\mathbf x)$ and $\mathbf p'$ for $\hat\pi(\mathbf y)$. Both sides are distributions in $(\mathbf x, \mathbf y)$; paired with $f(\mathbf x)g(\mathbf y)$, $f, g \in \mathcal S$, the exponentials become $\tilde f(-\mathbf p)\,\tilde g(-\mathbf p')$, Schwartz functions, and every integral below converges:
 >
 > $$
-> [\phi(\mathbf x), \pi(\mathbf y)] = \int\frac{d^3p}{(2\pi)^3}\frac{d^3p'}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\mathbf p}}}(-i)\sqrt{\frac{E_{\mathbf p'}}{2}}\;\bigl[a_{\mathbf p} + a^\dagger_{-\mathbf p},\ a_{\mathbf p'} - a^\dagger_{-\mathbf p'}\bigr]\;e^{i\mathbf p\cdot\mathbf x + i\mathbf p'\cdot\mathbf y} .
+> [\hat\phi(\mathbf x), \hat\pi(\mathbf y)] = \int\frac{d^3p}{(2\pi)^3}\frac{d^3p'}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\mathbf p}}}(-i)\sqrt{\frac{E_{\mathbf p'}}{2}}\;\bigl[\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p},\ \hat a_{\mathbf p'} - \hat a^\dagger_{-\mathbf p'}\bigr]\;e^{i\mathbf p\cdot\mathbf x + i\mathbf p'\cdot\mathbf y} .
 > $$
 >
 > **2. Expand the commutator into all four terms.**
 >
 > $$
-> \bigl[a_{\mathbf p} + a^\dagger_{-\mathbf p},\ a_{\mathbf p'} - a^\dagger_{-\mathbf p'}\bigr] = [a_{\mathbf p}, a_{\mathbf p'}] - [a_{\mathbf p}, a^\dagger_{-\mathbf p'}] + [a^\dagger_{-\mathbf p}, a_{\mathbf p'}] - [a^\dagger_{-\mathbf p}, a^\dagger_{-\mathbf p'}] .
+> \bigl[\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p},\ \hat a_{\mathbf p'} - \hat a^\dagger_{-\mathbf p'}\bigr] = [\hat a_{\mathbf p}, \hat a_{\mathbf p'}] - [\hat a_{\mathbf p}, \hat a^\dagger_{-\mathbf p'}] + [\hat a^\dagger_{-\mathbf p}, \hat a_{\mathbf p'}] - [\hat a^\dagger_{-\mathbf p}, \hat a^\dagger_{-\mathbf p'}] .
 > $$
 >
-> The first and last vanish. $[a_{\mathbf p}, a^\dagger_{-\mathbf p'}] = (2\pi)^3\delta^3(\mathbf p + \mathbf p')$ (the mode algebra composed with $\mathbf p' \mapsto -\mathbf p'$, a linear change of variables with Jacobian 1, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]) and $[a^\dagger_{-\mathbf p}, a_{\mathbf p'}] = -[a_{\mathbf p'}, a^\dagger_{-\mathbf p}] = -(2\pi)^3\delta^3(\mathbf p + \mathbf p')$. The two surviving terms add: the bracket is $-2(2\pi)^3\delta^3(\mathbf p + \mathbf p')$.
+> The first and last vanish. $[\hat a_{\mathbf p}, \hat a^\dagger_{-\mathbf p'}] = (2\pi)^3\delta^3(\mathbf p + \mathbf p')$ (the mode algebra composed with $\mathbf p' \mapsto -\mathbf p'$, a linear change of variables with Jacobian 1, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]) and $[\hat a^\dagger_{-\mathbf p}, \hat a_{\mathbf p'}] = -[\hat a_{\mathbf p'}, \hat a^\dagger_{-\mathbf p}] = -(2\pi)^3\delta^3(\mathbf p + \mathbf p')$. The two surviving terms add: the bracket is $-2(2\pi)^3\delta^3(\mathbf p + \mathbf p')$.
 >
 > **3. Integrate the delta.** The $\mathbf p'$ integral sets $\mathbf p' = -\mathbf p$ (eliminating $\mathbf p'$; δ acting on the test function $\mathbf p' \mapsto \tilde g(-\mathbf p')\sqrt{E_{\mathbf p'}/2}$ of step 1), cancels one $(2\pi)^3$, turns $E_{\mathbf p'}$ into $E_{\mathbf p}$ and the exponent into $e^{i\mathbf p\cdot(\mathbf x - \mathbf y)}$. The numerical factors are $\frac{1}{\sqrt{2E_{\mathbf p}}}\sqrt{\frac{E_{\mathbf p}}{2}} = \frac12$, times $(-i)$, times $(-2)$, i.e. $+i$:
 >
 > $$
-> [\phi(\mathbf x), \pi(\mathbf y)] = i\int\frac{d^3p}{(2\pi)^3}\,e^{i\mathbf p\cdot(\mathbf x - \mathbf y)} = i\,\delta^3(\mathbf x - \mathbf y)
+> [\hat\phi(\mathbf x), \hat\pi(\mathbf y)] = i\int\frac{d^3p}{(2\pi)^3}\,e^{i\mathbf p\cdot(\mathbf x - \mathbf y)} = i\,\delta^3(\mathbf x - \mathbf y)
 > $$
 >
 > by [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]. *Sense:* an identity in $\mathcal S'$ in $\mathbf x - \mathbf y$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]); paired with $f\otimes g$ the middle expression is $i\int\frac{d^3p}{(2\pi)^3}\tilde f(-\mathbf p)\tilde g(\mathbf p) = i\int\frac{d^3p}{(2\pi)^3}\overline{\tilde f(\mathbf p)}\,\tilde g(\mathbf p) = i\int d^3x\,f\,g$ for real $f$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 4, and Plancherel, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 3), which is [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]].
 >
-> **4. The other two relations.** In $[\phi(\mathbf x), \phi(\mathbf y)]$ the bracket is $[a_{\mathbf p} + a^\dagger_{-\mathbf p}, a_{\mathbf p'} + a^\dagger_{-\mathbf p'}] = [a_{\mathbf p}, a^\dagger_{-\mathbf p'}] + [a^\dagger_{-\mathbf p}, a_{\mathbf p'}] = (2\pi)^3\delta^3(\mathbf p + \mathbf p') - (2\pi)^3\delta^3(\mathbf p + \mathbf p') = 0$. In $[\pi(\mathbf x), \pi(\mathbf y)]$ it is $[a_{\mathbf p} - a^\dagger_{-\mathbf p}, a_{\mathbf p'} - a^\dagger_{-\mathbf p'}] = -[a_{\mathbf p}, a^\dagger_{-\mathbf p'}] - [a^\dagger_{-\mathbf p}, a_{\mathbf p'}] = 0$ likewise.
+> **4. The other two relations.** In $[\hat\phi(\mathbf x), \hat\phi(\mathbf y)]$ the bracket is $[\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p}, \hat a_{\mathbf p'} + \hat a^\dagger_{-\mathbf p'}] = [\hat a_{\mathbf p}, \hat a^\dagger_{-\mathbf p'}] + [\hat a^\dagger_{-\mathbf p}, \hat a_{\mathbf p'}] = (2\pi)^3\delta^3(\mathbf p + \mathbf p') - (2\pi)^3\delta^3(\mathbf p + \mathbf p') = 0$. In $[\hat\pi(\mathbf x), \hat\pi(\mathbf y)]$ it is $[\hat a_{\mathbf p} - \hat a^\dagger_{-\mathbf p}, \hat a_{\mathbf p'} - \hat a^\dagger_{-\mathbf p'}] = -[\hat a_{\mathbf p}, \hat a^\dagger_{-\mathbf p'}] - [\hat a^\dagger_{-\mathbf p}, \hat a_{\mathbf p'}] = 0$ likewise.
 >
 > **What the derivation shows**
-> - The relative sign in $\pi$ and the factor $-i\sqrt{E/2}$ are exactly what make the two surviving terms add in step 2 and give $+i$ in step 3: the lecture's ansatz is fixed by the commutator.
-> - $[\phi, \phi] = 0$ needs the two orderings to cancel: the first instance of the cancellation that makes the field commutator vanish at spacelike separation ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
+> - The relative sign in $\hat\pi$ and the factor $-i\sqrt{E/2}$ are exactly what make the two surviving terms add in step 2 and give $+i$ in step 3: the lecture's ansatz is fixed by the commutator.
+> - $[\hat\phi, \hat\phi] = 0$ needs the two orderings to cancel: the first instance of the cancellation that makes the field commutator vanish at spacelike separation ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
 
 ^der-c2a-2-6b
 
@@ -491,20 +491,20 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > For $g \in \mathcal S(\mathbb R^3)$,
 >
 > $$
-> a(g) = \int\frac{d^3p}{(2\pi)^3}\,\overline{g(\mathbf p)}\,a_{\mathbf p}, \qquad a^\dagger(g) = a(g)^\dagger = \int\frac{d^3p}{(2\pi)^3}\,g(\mathbf p)\,a^\dagger_{\mathbf p} :
+> \hat a(g) = \int\frac{d^3p}{(2\pi)^3}\,\overline{g(\mathbf p)}\,\hat a_{\mathbf p}, \qquad \hat a^\dagger(g) = \hat a(g)^\dagger = \int\frac{d^3p}{(2\pi)^3}\,g(\mathbf p)\,\hat a^\dagger_{\mathbf p} :
 > $$
 >
-> $a^\dagger$ is an operator-valued distribution on momentum space ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]), and so is $a$ (antilinear in $g$: $g \mapsto a(\bar g)$ is linear), and $a^\dagger(g)$ creates one quantum in the wave packet $g$.
+> $\hat a^\dagger$ is an operator-valued distribution on momentum space ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]), and so is $\hat a$ (antilinear in $g$: $g \mapsto \hat a(\bar g)$ is linear), and $\hat a^\dagger(g)$ creates one quantum in the wave packet $g$.
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $a^\dagger_{\mathbf p}$ is an operator-valued distribution, defined after smearing; the packet operator of "Macroscopic occupation") · standard (Streater & Wightman, Ch. 3)*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $\hat a^\dagger_{\mathbf p}$ is an operator-valued distribution, defined after smearing; the packet operator of "Macroscopic occupation") · standard (Streater & Wightman, Ch. 3)*
 
 ^def-c2a-2-2
 
 > [!theorem] Theorem §C2a.2.7: The Mode Algebra Smeared
 > For $g, h \in \mathcal S(\mathbb R^3)$:
-> 1. $[a(g), a^\dagger(h)] = \int\frac{d^3p}{(2\pi)^3}\,\overline{g(\mathbf p)}\,h(\mathbf p)$ and $[a(g), a(h)] = [a^\dagger(g), a^\dagger(h)] = 0$; [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]] is the kernel of these identities in $\mathcal S'(\mathbb R^6)$.
-> 2. On wave-packet states $a_{\mathbf p}$ gives vectors, e.g. $a_{\mathbf p}\,a^\dagger(h)|0\rangle = h(\mathbf p)|0\rangle$; but $a^\dagger_{\mathbf p}|0\rangle$ is not normalizable, and $[a_{\mathbf p}, a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf 0)$ has no value.
-> 3. For real $f \in \mathcal S(\mathbb R^3)$ the smeared fields of [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]] are $\phi(f) = a(g_f) + a^\dagger(g_f)$ and $\pi(f) = -i\bigl(a(h_f) - a^\dagger(h_f)\bigr)$, with $g_f = \tilde f/\sqrt{2E_{\mathbf p}}$ and $h_f = \sqrt{E_{\mathbf p}/2}\,\tilde f$ in $\mathcal S$ (for $m > 0$).
+> 1. $[\hat a(g), \hat a^\dagger(h)] = \int\frac{d^3p}{(2\pi)^3}\,\overline{g(\mathbf p)}\,h(\mathbf p)$ and $[\hat a(g), \hat a(h)] = [\hat a^\dagger(g), \hat a^\dagger(h)] = 0$; [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]] is the kernel of these identities in $\mathcal S'(\mathbb R^6)$.
+> 2. On wave-packet states $\hat a_{\mathbf p}$ gives vectors, e.g. $\hat a_{\mathbf p}\,\hat a^\dagger(h)|0\rangle = h(\mathbf p)|0\rangle$; but $\hat a^\dagger_{\mathbf p}|0\rangle$ is not normalizable, and $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf 0)$ has no value.
+> 3. For real $f \in \mathcal S(\mathbb R^3)$ the smeared fields of [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]] are $\hat\phi(f) = \hat a(g_f) + \hat a^\dagger(g_f)$ and $\hat\pi(f) = -i\bigl(\hat a(h_f) - \hat a^\dagger(h_f)\bigr)$, with $g_f = \tilde f/\sqrt{2E_{\mathbf p}}$ and $h_f = \sqrt{E_{\mathbf p}/2}\,\tilde f$ in $\mathcal S$ (for $m > 0$).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5 (eq. (aadagger)) and §4.8 (Caution "Two honesty points") · stated and derived here as an identity of distributions (standard: Streater & Wightman, Ch. 3)*
 
@@ -514,39 +514,39 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > **1. Smear the commutator.** By bilinearity and [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]],
 >
 > $$
-> [a(g), a^\dagger(h)] = \int\frac{d^3p\,d^3q}{(2\pi)^6}\,\overline{g(\mathbf p)}\,h(\mathbf q)\,[a_{\mathbf p}, a^\dagger_{\mathbf q}] ,
+> [\hat a(g), \hat a^\dagger(h)] = \int\frac{d^3p\,d^3q}{(2\pi)^6}\,\overline{g(\mathbf p)}\,h(\mathbf q)\,[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] ,
 > $$
 >
-> where $[a_{\mathbf p}, a^\dagger_{\mathbf q}]$ is the kernel of the bilinear map $(g, h) \mapsto [a(g), a^\dagger(h)]$ ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]). Insert $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]) and pair it with $\overline g\otimes h$, changing variables to $\mathbf u = \mathbf p - \mathbf q$, $\mathbf v = \mathbf q$ (Jacobian 1, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]): the result is $\int\frac{d^3p}{(2\pi)^3}\overline{g(\mathbf p)}h(\mathbf p)$, finite. The other two kernels are $0$. Equivalently, by [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-5|Derivation §C2a.2.5]], step 1, $a(g) = (f_g, \phi)$ and the commutator is $(f_g, f_h)$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]].
+> where $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}]$ is the kernel of the bilinear map $(g, h) \mapsto [\hat a(g), \hat a^\dagger(h)]$ ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]). Insert $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]) and pair it with $\overline g\otimes h$, changing variables to $\mathbf u = \mathbf p - \mathbf q$, $\mathbf v = \mathbf q$ (Jacobian 1, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]): the result is $\int\frac{d^3p}{(2\pi)^3}\overline{g(\mathbf p)}h(\mathbf p)$, finite. The other two kernels are $0$. Equivalently, by [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-5|Derivation §C2a.2.5]], step 1, $\hat a(g) = (f_g, \hat\phi)$ and the commutator is $(f_g, f_h)$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]].
 >
-> **2. Annihilators at a point act on wave packets.** $a_{\mathbf p}|0\rangle = 0$, so $a_{\mathbf p}a^\dagger(h)|0\rangle = \int\frac{d^3q}{(2\pi)^3}h(\mathbf q)[a_{\mathbf p}, a^\dagger_{\mathbf q}]|0\rangle = h(\mathbf p)|0\rangle$, δ acting on the test function $h$: a vector for each $\mathbf p$, a Schwartz function of $\mathbf p$.
+> **2. Annihilators at a point act on wave packets.** $\hat a_{\mathbf p}|0\rangle = 0$, so $\hat a_{\mathbf p}\hat a^\dagger(h)|0\rangle = \int\frac{d^3q}{(2\pi)^3}h(\mathbf q)[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}]|0\rangle = h(\mathbf p)|0\rangle$, δ acting on the test function $h$: a vector for each $\mathbf p$, a Schwartz function of $\mathbf p$.
 >
-> **3. Creators at a point do not give states.** $\|a^\dagger_{\mathbf p}|0\rangle\|^2 = \langle0|a_{\mathbf p}a^\dagger_{\mathbf p}|0\rangle = [a_{\mathbf p}, a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf 0)$: δ evaluated at its singular point, which has no value ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3); in a box it is the volume ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]). By step 1 with $g = h$, $\|a^\dagger(h)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3}|h|^2$, finite. ⚑ By-product: one-particle states are wave packets, and $a^\dagger(h)$ is the operator that makes them → [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]].
+> **3. Creators at a point do not give states.** $\|\hat a^\dagger_{\mathbf p}|0\rangle\|^2 = \langle0|\hat a_{\mathbf p}\hat a^\dagger_{\mathbf p}|0\rangle = [\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf 0)$: δ evaluated at its singular point, which has no value ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3); in a box it is the volume ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]). By step 1 with $g = h$, $\|\hat a^\dagger(h)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3}|h|^2$, finite. ⚑ By-product: one-particle states are wave packets, and $\hat a^\dagger(h)$ is the operator that makes them → [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]].
 >
-> **4. Smear the field.** At $t = 0$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]), $\phi(f) = \int d^3x\,f(\mathbf x)\int\frac{d^3p}{(2\pi)^3}\frac{a_{\mathbf p} + a^\dagger_{-\mathbf p}}{\sqrt{2E_{\mathbf p}}}e^{i\mathbf p\cdot\mathbf x}$. Do the $\mathbf x$-integral first (Fubini for the test function $f$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]): $\int d^3x\,f(\mathbf x)e^{i\mathbf p\cdot\mathbf x} = \tilde f(-\mathbf p)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]), so
+> **4. Smear the field.** At $t = 0$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]), $\hat\phi(f) = \int d^3x\,f(\mathbf x)\int\frac{d^3p}{(2\pi)^3}\frac{\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p}}{\sqrt{2E_{\mathbf p}}}e^{i\mathbf p\cdot\mathbf x}$. Do the $\mathbf x$-integral first (Fubini for the test function $f$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]): $\int d^3x\,f(\mathbf x)e^{i\mathbf p\cdot\mathbf x} = \tilde f(-\mathbf p)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]), so
 >
 > $$
-> \phi(f) = \int\frac{d^3p}{(2\pi)^3}\,\frac{\tilde f(-\mathbf p)}{\sqrt{2E_{\mathbf p}}}\,\bigl(a_{\mathbf p} + a^\dagger_{-\mathbf p}\bigr) .
+> \hat\phi(f) = \int\frac{d^3p}{(2\pi)^3}\,\frac{\tilde f(-\mathbf p)}{\sqrt{2E_{\mathbf p}}}\,\bigl(\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p}\bigr) .
 > $$
 >
-> **5. Identify the two terms.** $f$ is real, so $\tilde f(-\mathbf p) = \overline{\tilde f(\mathbf p)}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 4): the $a$ term is $\int\frac{d^3p}{(2\pi)^3}\overline{g_f(\mathbf p)}\,a_{\mathbf p} = a(g_f)$. In the $a^\dagger$ term substitute $\mathbf p \to -\mathbf p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1: Jacobian 1, $E_{-\mathbf p} = E_{\mathbf p}$, $\tilde f(-\mathbf p) \to \tilde f(\mathbf p)$, $a^\dagger_{-\mathbf p} \to a^\dagger_{\mathbf p}$): it is $a^\dagger(g_f)$.
+> **5. Identify the two terms.** $f$ is real, so $\tilde f(-\mathbf p) = \overline{\tilde f(\mathbf p)}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 4): the $\hat a$ term is $\int\frac{d^3p}{(2\pi)^3}\overline{g_f(\mathbf p)}\,\hat a_{\mathbf p} = \hat a(g_f)$. In the $\hat a^\dagger$ term substitute $\mathbf p \to -\mathbf p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1: Jacobian 1, $E_{-\mathbf p} = E_{\mathbf p}$, $\tilde f(-\mathbf p) \to \tilde f(\mathbf p)$, $\hat a^\dagger_{-\mathbf p} \to \hat a^\dagger_{\mathbf p}$): it is $\hat a^\dagger(g_f)$.
 >
-> **6. The momentum density.** The same two steps with $(-i)\sqrt{E_{\mathbf p}/2}\,(a_{\mathbf p} - a^\dagger_{-\mathbf p})$ give $\pi(f) = -i\bigl(a(h_f) - a^\dagger(h_f)\bigr)$.
+> **6. The momentum density.** The same two steps with $(-i)\sqrt{E_{\mathbf p}/2}\,(\hat a_{\mathbf p} - \hat a^\dagger_{-\mathbf p})$ give $\hat\pi(f) = -i\bigl(\hat a(h_f) - \hat a^\dagger(h_f)\bigr)$.
 >
 > **7. The smearing functions are test functions.** $\tilde f \in \mathcal S$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1), and for $m > 0$ the factors $E_{\mathbf p}^{\pm1/2}$ are smooth with polynomially bounded derivatives, so $g_f, h_f \in \mathcal S$. ⚑ By-product: for $m = 0$, $g_f$ has a $|\mathbf p|^{-1/2}$ singularity at $\mathbf p = \mathbf 0$, still square integrable but not a Schwartz function: the massless field needs more care in the infrared → [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] (assumption $m > 0$).
 >
-> **8. Check against the canonical relations.** For real $f$, $g$: $[\phi(f), \pi(g)] = [a(g_f) + a^\dagger(g_f), -ia(h_g) + ia^\dagger(h_g)] = i[a(g_f), a^\dagger(h_g)] - i[a^\dagger(g_f), a(h_g)]$, the other two commutators vanishing by part 1. By part 1, $[a^\dagger(g_f), a(h_g)] = -[a(h_g), a^\dagger(g_f)] = -\int\frac{d^3p}{(2\pi)^3}\overline{h_g}\,g_f$, so
+> **8. Check against the canonical relations.** For real $f$, $g$: $[\hat\phi(f), \hat\pi(g)] = [\hat a(g_f) + \hat a^\dagger(g_f), -i\hat a(h_g) + i\hat a^\dagger(h_g)] = i[\hat a(g_f), \hat a^\dagger(h_g)] - i[\hat a^\dagger(g_f), \hat a(h_g)]$, the other two commutators vanishing by part 1. By part 1, $[\hat a^\dagger(g_f), \hat a(h_g)] = -[\hat a(h_g), \hat a^\dagger(g_f)] = -\int\frac{d^3p}{(2\pi)^3}\overline{h_g}\,g_f$, so
 >
 > $$
-> [\phi(f), \pi(g)] = i\int\frac{d^3p}{(2\pi)^3}\Bigl(\overline{g_f}\,h_g + \overline{h_g}\,g_f\Bigr) = \frac i2\int\frac{d^3p}{(2\pi)^3}\Bigl(\overline{\tilde f}\,\tilde g + \overline{\tilde g}\,\tilde f\Bigr) = i\int d^3x\,f\,g ,
+> [\hat\phi(f), \hat\pi(g)] = i\int\frac{d^3p}{(2\pi)^3}\Bigl(\overline{g_f}\,h_g + \overline{h_g}\,g_f\Bigr) = \frac i2\int\frac{d^3p}{(2\pi)^3}\Bigl(\overline{\tilde f}\,\tilde g + \overline{\tilde g}\,\tilde f\Bigr) = i\int d^3x\,f\,g ,
 > $$
 >
 > by Plancherel ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 3) for real $f$, $g$: [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], with every integral convergent.
 >
 > **What the derivation shows**
 > - Every relation of the mode algebra is an identity between operators once both labels are smeared; $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is only its kernel.
-> - Annihilators at sharp momentum act on wave packets; creators at sharp momentum do not produce states. This asymmetry is why $\langle0|a_{\mathbf q}a^\dagger_{\mathbf p}|0\rangle$ is a distribution and $\langle0|a(g)a^\dagger(h)|0\rangle$ a number.
-> - The smeared field is one annihilator plus one creator, smeared with $\tilde f/\sqrt{2E_{\mathbf p}}$; so $\phi(f)|0\rangle = a^\dagger(g_f)|0\rangle$ is a state ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]]).
+> - Annihilators at sharp momentum act on wave packets; creators at sharp momentum do not produce states. This asymmetry is why $\langle0|\hat a_{\mathbf q}\hat a^\dagger_{\mathbf p}|0\rangle$ is a distribution and $\langle0|\hat a(g)\hat a^\dagger(h)|0\rangle$ a number.
+> - The smeared field is one annihilator plus one creator, smeared with $\tilde f/\sqrt{2E_{\mathbf p}}$; so $\hat\phi(f)|0\rangle = \hat a^\dagger(g_f)|0\rangle$ is a state ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]]).
 
 ^der-c2a-2-7
 
@@ -560,7 +560,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > - Extracting a mode by an inner product is Fourier's projection formula for coefficients, with an indefinite product in place of a positive one — [[§B4.1 Fourier Series#^thm-b4-1-2|WO Theorem §B4.1.2]], [[§22 Definition and Examples|556 §22]].
 > - The plane-wave delta behind every orthonormality relation and every "$d^3x$ integral" of this section is an identity in $\mathcal S'$, not a convergent integral — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; the computations that use it are Fubini's theorem for wave packets, which also licenses the split-exponential rule — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]].
 > - Plancherel's theorem is the wave-packet form of mode orthonormality: the Klein–Gordon product of two packets is the $L^2$ product of their momentum profiles ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]]) — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]; uniqueness of the transform in $\mathcal S'$ reads off coefficients ([[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-2|Derivation §C2a.2.2]], step 4) — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]].
-> - Relabelling $\mathbf p \to -\mathbf p$, the trick that pairs $a_{\mathbf p}$ with $a^\dagger_{-\mathbf p}$, is a change of variables with Jacobian 1 — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]; the composition $\delta^3(\mathbf p + \mathbf p')$ is the same change applied to a distribution — [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]].
+> - Relabelling $\mathbf p \to -\mathbf p$, the trick that pairs $\hat a_{\mathbf p}$ with $\hat a^\dagger_{-\mathbf p}$, is a change of variables with Jacobian 1 — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]; the composition $\delta^3(\mathbf p + \mathbf p')$ is the same change applied to a distribution — [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]].
 > - "Use the support of the delta" is multiplication of a distribution by a smooth function: $F(\mathbf q)\delta^3(\mathbf p - \mathbf q) = F(\mathbf p)\delta^3(\mathbf p - \mathbf q)$, and zero when $F$ vanishes there — [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]].
-> - $[a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is one distribution in both momenta, the kernel of the smeared algebra ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]) — [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]; at coincident labels it is δ at its singular point, which only a box turns into a volume — [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]].
+> - $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is one distribution in both momenta, the kernel of the smeared algebra ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]) — [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]; at coincident labels it is δ at its singular point, which only a box turns into a volume — [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]].
 > - Differentiating the mode integral in $t$ needs a dominating function, available for wave packets — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]].

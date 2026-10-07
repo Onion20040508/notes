@@ -69,10 +69,10 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > For fermion fields the time-ordered product carries the sign of the permutation that puts the fields in time order:
 >
 > $$
-> T\{\psi_a(x)\bar\psi_b(y)\} \equiv \theta(x^0 - y^0)\,\psi_a(x)\bar\psi_b(y) - \theta(y^0 - x^0)\,\bar\psi_b(y)\psi_a(x) ,
+> T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\} \equiv \theta(x^0 - y^0)\,\hat\psi_a(x)\hat{\bar\psi}_b(y) - \theta(y^0 - x^0)\,\hat{\bar\psi}_b(y)\hat\psi_a(x) ,
 > $$
 >
-> and for $n$ fields $T\{\Phi_1\cdots\Phi_n\} = (-1)^P\,\Phi_{\sigma(1)}\cdots\Phi_{\sigma(n)}$ with times decreasing from left to right and $P$ the number of transpositions of fermion fields. This extends [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]], which it equals for boson fields.
+> and for $n$ fields $T\{\hat\Phi_1\cdots\hat\Phi_n\} = (-1)^P\,\hat\Phi_{\sigma(1)}\cdots\hat\Phi_{\sigma(n)}$ with times decreasing from left to right and $P$ the number of transpositions of fermion fields. This extends [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]], which it equals for boson fields.
 >
 > *Scalar analogue:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]].
 > *Source: PS §3.5, eq. (3.121) and the text after it · Yu §6.4.5, eq. (6.258) and §6.3 · the user's pre-course notes, "Wick's theorem" (contractions of fermion fields)*
@@ -80,7 +80,7 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 ^def-c5b-8-2
 
 > [!theorem] Theorem §C5b.8.2: Fermionic Time Ordering Is Frame Independent
-> $T\{\psi_a(x)\bar\psi_b(y)\}$ of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]] is the same operator in every inertial frame. With a plus sign in place of the minus it would not be: at spacelike separation the two orderings would differ by $2\bar\psi_b(y)\psi_a(x) \ne 0$.
+> $T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\}$ of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]] is the same operator in every inertial frame. With a plus sign in place of the minus it would not be: at spacelike separation the two orderings would differ by $2\hat{\bar\psi}_b(y)\hat\psi_a(x) \ne 0$.
 >
 > *Scalar analogue:* Step 4 of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-6-1|Derivation §C2b.6.1]] ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]]).
 > *Source: the user's pre-course notes, "Time-ordered product and microcausality" ("the extra minus sign on swapping fermionic operators is what keeps $T[\psi_a(x)\bar\psi_b(y)]$ Lorentz invariant") · PS §3.5, p. 63*
@@ -90,9 +90,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > [!derivation]- Derivation
 > **1. Timelike separation.** The sign of $x^0 - y^0$ is the same in every frame related by $SO^+(1,3)$ ([[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]]): every observer picks the same term.
 >
-> **2. Spacelike separation.** Observers disagree on which term applies. By [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]], there $\psi_a(x)\bar\psi_b(y) = -\bar\psi_b(y)\psi_a(x)$, so the first term $\psi_a(x)\bar\psi_b(y)$ and the second $-\bar\psi_b(y)\psi_a(x)$ are the same operator: the disagreement is harmless. This is Step 4 of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-6-1|Derivation §C2b.6.1]] with the anticommutator in place of the commutator.
+> **2. Spacelike separation.** Observers disagree on which term applies. By [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]], there $\hat\psi_a(x)\hat{\bar\psi}_b(y) = -\hat{\bar\psi}_b(y)\hat\psi_a(x)$, so the first term $\hat\psi_a(x)\hat{\bar\psi}_b(y)$ and the second $-\hat{\bar\psi}_b(y)\hat\psi_a(x)$ are the same operator: the disagreement is harmless. This is Step 4 of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-6-1|Derivation §C2b.6.1]] with the anticommutator in place of the commutator.
 >
-> **3. With the wrong sign.** For $\theta\psi\bar\psi + \theta\bar\psi\psi$ the two terms at spacelike separation would be $\psi\bar\psi$ and $\bar\psi\psi = -\psi\bar\psi$, differing by $2\bar\psi\psi$, an operator with nonzero matrix elements (its vacuum value is $2S^-_W \ne 0$ there, [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]).
+> **3. With the wrong sign.** For $\theta\hat\psi\hat{\bar\psi} + \theta\hat{\bar\psi}\hat\psi$ the two terms at spacelike separation would be $\hat\psi\hat{\bar\psi}$ and $\hat{\bar\psi}\hat\psi = -\hat\psi\hat{\bar\psi}$, differing by $2\hat{\bar\psi}\hat\psi$, an operator with nonzero matrix elements (its vacuum value is $2S^-_W \ne 0$ there, [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]).
 >
 > **What the derivation shows**
 > - The sign in fermionic time ordering is not a convention: it is forced by Lorentz invariance once the fields anticommute outside the cone (PS: "this minus sign is extremely important in the quantum field theory of fermions").
@@ -106,7 +106,7 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > The Feynman propagator of the Dirac field, the vacuum expectation value of the fermionic time-ordered product ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]]), is
 >
 > $$
-> S_F(x - y) \equiv \langle0|T\{\psi(x)\bar\psi(y)\}|0\rangle = \theta(\xi^0)S^+_W(\xi) - \theta(-\xi^0)S^-_W(\xi) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}\,e^{-ip\cdot\xi} = (i\slashed{\partial}_x + m)\,D_F(\xi) ,
+> S_F(x - y) \equiv \langle0|T\{\hat\psi(x)\hat{\bar\psi}(y)\}|0\rangle = \theta(\xi^0)S^+_W(\xi) - \theta(-\xi^0)S^-_W(\xi) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}\,e^{-ip\cdot\xi} = (i\slashed{\partial}_x + m)\,D_F(\xi) ,
 > $$
 >
 > with $S^\pm_W$ of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], the Feynman contour, i.e. the $i\varepsilon$ prescription of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] ($\varepsilon \to 0^+$ in $\mathcal S'$, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]), and the scalar Feynman propagator $D_F$ of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]. $\tilde S_F(p) = i(\slashed{p} + m)/(p^2 - m^2 + i\varepsilon)$ is the factor of an internal fermion line.
@@ -147,7 +147,7 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 >
 > **What the derivation shows**
 > - Every step of P2 goes through with a numerator analytic in $p^0$; only the arc estimate changes (Jordan instead of ML).
-> - For $x^0 > y^0$ the propagator is the fermion amplitude $\langle0|\psi\bar\psi|0\rangle$; for $x^0 < y^0$ it is minus the antifermion amplitude; the $i\varepsilon$ is the scalar's.
+> - For $x^0 > y^0$ the propagator is the fermion amplitude $\langle0|\hat\psi\hat{\bar\psi}|0\rangle$; for $x^0 < y^0$ it is minus the antifermion amplitude; the $i\varepsilon$ is the scalar's.
 
 ^der-c5b-8-3
 
@@ -167,7 +167,7 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > **4. Transform.** $(\slashed{p} + m)\tilde D_F$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3), the four-dimensional formula.
 >
 > **What the derivation shows**
-> - The Dirac propagator is a derivative of the scalar one; a contact term could have appeared and is absent because $[\phi(t, \mathbf x), \phi(t, \mathbf y)] = 0$.
+> - The Dirac propagator is a derivative of the scalar one; a contact term could have appeared and is absent because $[\hat\phi(t, \mathbf x), \hat\phi(t, \mathbf y)] = 0$.
 >
 > *Source: PS §3.5, eqs. (3.117), (3.121) · the user's pre-course notes, §6.4 ("the energy factors assemble into $\slashed{p}$")*
 
@@ -178,7 +178,7 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 *Procedure:* [[P2 Green's Functions by Contour Integration#^p2-1|P2, steps 1–7]]
 
 > [!remark] Remark: Fermion forward, antifermion backward
-> For $x^0 > y^0$, $S_F = \langle0|\psi(x)\bar\psi(y)|0\rangle$: $\bar\psi(y)$ creates a fermion at $y$, $\psi(x)$ annihilates it at $x$. For $x^0 < y^0$, $S_F = -\langle0|\bar\psi(y)\psi(x)|0\rangle$: $\psi(x)$ creates an antifermion at $x$ and $\bar\psi(y)$ annihilates it at $y$, later. One function carries positive energy forward in time in both cases, the fermion from $y$ to $x$ and the antifermion from $x$ to $y$, as the complex scalar's $\langle0|T\{\phi\phi^\dagger\}|0\rangle$ does ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]); the arrow on a fermion line in a Feynman diagram follows the charge, not the time (QFT C7, planned).
+> For $x^0 > y^0$, $S_F = \langle0|\hat\psi(x)\hat{\bar\psi}(y)|0\rangle$: $\hat{\bar\psi}(y)$ creates a fermion at $y$, $\hat\psi(x)$ annihilates it at $x$. For $x^0 < y^0$, $S_F = -\langle0|\hat{\bar\psi}(y)\hat\psi(x)|0\rangle$: $\hat\psi(x)$ creates an antifermion at $x$ and $\hat{\bar\psi}(y)$ annihilates it at $y$, later. One function carries positive energy forward in time in both cases, the fermion from $y$ to $x$ and the antifermion from $x$ to $y$, as the complex scalar's $\langle0|T\{\hat\phi\hat\phi^\dagger\}|0\rangle$ does ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]); the arrow on a fermion line in a Feynman diagram follows the charge, not the time (QFT C7, planned).
 >
 > *Source: the user's pre-course notes, §6.4 ("Complex scalar field": "a particle from $y$ to $x$ or an antiparticle from $x$ to $y$") · PS §3.5, eq. (3.121)*
 
@@ -251,12 +251,12 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 >
 > | name | definition | from the scalar family | momentum space (times $\int\frac{d^4p}{(2\pi)^4}e^{-ip\cdot\xi}$) | type, as a distribution |
 > | --- | --- | --- | --- | --- |
-> | Wightman $S^+_W$ | $\langle0\vert\psi(x)\bar\psi(y)\vert0\rangle$ | $(i\slashed{\partial} + m)D_W(\xi)$ | $2\pi(\slashed{p} + m)\theta(p^0)\delta(p^2 - m^2)$ | homogeneous; derivative of a boundary value — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1\|Theorem §C5b.7.1]] |
-> | reversed $S^-_W$ | $\langle0\vert\bar\psi(y)\psi(x)\vert0\rangle$ | $-(i\slashed{\partial} + m)D_W(-\xi)$ | $-2\pi(\slashed{p} + m)\theta(-p^0)\delta(p^2 - m^2)$ | homogeneous — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1\|Theorem §C5b.7.1]] |
-> | anticommutator $iS$ | $\langle0\vert\{\psi(x), \bar\psi(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)\,iD$ | $2\pi(\slashed{p} + m)\operatorname{sgn}(p^0)\delta(p^2 - m^2)$ | homogeneous; supported in the closed cone — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3\|Theorem §C5b.7.3]] |
+> | Wightman $S^+_W$ | $\langle0\vert\hat\psi(x)\hat{\bar\psi}(y)\vert0\rangle$ | $(i\slashed{\partial} + m)D_W(\xi)$ | $2\pi(\slashed{p} + m)\theta(p^0)\delta(p^2 - m^2)$ | homogeneous; derivative of a boundary value — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1\|Theorem §C5b.7.1]] |
+> | reversed $S^-_W$ | $\langle0\vert\hat{\bar\psi}(y)\hat\psi(x)\vert0\rangle$ | $-(i\slashed{\partial} + m)D_W(-\xi)$ | $-2\pi(\slashed{p} + m)\theta(-p^0)\delta(p^2 - m^2)$ | homogeneous — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1\|Theorem §C5b.7.1]] |
+> | anticommutator $iS$ | $\langle0\vert\{\hat\psi(x), \hat{\bar\psi}(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)\,iD$ | $2\pi(\slashed{p} + m)\operatorname{sgn}(p^0)\delta(p^2 - m^2)$ | homogeneous; supported in the closed cone — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3\|Theorem §C5b.7.3]] |
 > | retarded $S_R$ | $\theta(\xi^0)\,iS$ | $(i\slashed{\partial} + m)D_R$ | $\frac{i(\slashed{p} + m)}{(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2}$ | Green's; slice product, forward support — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1\|Theorem §C5b.8.1]] |
 > | advanced $S_A$ | $-\theta(-\xi^0)\,iS$ | $(i\slashed{\partial} + m)D_A$ | $\frac{i(\slashed{p} + m)}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$ | Green's; backward support — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1\|Theorem §C5b.8.1]] |
-> | Feynman $S_F$ | $\langle0\vert T\{\psi(x)\bar\psi(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)D_F$ | $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}$ | Green's; limit $\varepsilon \to 0^+$ in $\mathcal S'$ — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4\|Theorem §C5b.8.4]] |
+> | Feynman $S_F$ | $\langle0\vert T\{\hat\psi(x)\hat{\bar\psi}(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)D_F$ | $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}$ | Green's; limit $\varepsilon \to 0^+$ in $\mathcal S'$ — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4\|Theorem §C5b.8.4]] |
 >
 > *Scalar analogue:* [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
 > *Source: PS §3.5, eqs. (3.114)–(3.121) · Yu §6.4.5 · assembled here*
@@ -264,7 +264,7 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 ^def-c5b-8-3
 
 > [!remark] Remark: Preview: contractions of fermion fields
-> As for the scalar ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]), $T\{\psi_a(x)\bar\psi_b(y)\} = \;:\!\psi_a(x)\bar\psi_b(y)\!: + S_F(x - y)_{ab}$ with the fermionic normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]: $S_F$ is the contraction of $\psi$ with $\bar\psi$, while $\langle0|T\{\psi\psi\}|0\rangle = \langle0|T\{\bar\psi\bar\psi\}|0\rangle = 0$ (Yu (6.257)). Contractions of fermion fields change sign under exchange of the two fields, and Wick's theorem for fermions carries the sign of every permutation (QFT C6, planned; PS §4.7). Each internal fermion line of a Feynman diagram is a factor $\tilde S_F(p)$ (PS, after eq. (3.121); QFT C7, planned).
+> As for the scalar ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]), $T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\} = \;:\!\hat\psi_a(x)\hat{\bar\psi}_b(y)\!: + S_F(x - y)_{ab}$ with the fermionic normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]: $S_F$ is the contraction of $\hat\psi$ with $\hat{\bar\psi}$, while $\langle0|T\{\hat\psi\hat\psi\}|0\rangle = \langle0|T\{\hat{\bar\psi}\hat{\bar\psi}\}|0\rangle = 0$ (Yu (6.257)). Contractions of fermion fields change sign under exchange of the two fields, and Wick's theorem for fermions carries the sign of every permutation (QFT C6, planned; PS §4.7). Each internal fermion line of a Feynman diagram is a factor $\tilde S_F(p)$ (PS, after eq. (3.121); QFT C7, planned).
 >
 > *Source: Yu §6.4.5, eq. (6.257), §6.3 · the user's pre-course notes, "Wick's theorem" · PS §3.5, p. 63*
 
