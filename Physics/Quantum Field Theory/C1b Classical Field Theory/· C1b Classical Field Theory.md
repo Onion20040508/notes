@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C1b Classical Field Theory
 ← [[· C1a Preliminaries]] · ↑ [[Quantum Field Theory]] · [[· C2a The Quantum Scalar Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (22), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (3), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (3), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (30)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (22), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (8), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (20), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (108), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (82), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (26), [[· CA Mathematical Methods|CA Mathematical Methods]] (3)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (22), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (3), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (3), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (32)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (22), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (8), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (20), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (108), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (84), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (26), [[· CA Mathematical Methods|CA Mathematical Methods]] (3)
 
 ## Sections
 - [[§C1b.1 Fields and Their Transformation Laws]] — 
@@ -46,10 +46,13 @@ tags: [chapter, quantum-field-theory]
 - [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|§C1b.4.5]] Fundamental Brackets of Fields
 - [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|§C1b.4.6]] Time Evolution by the Bracket
 - [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|§C1b.5.1]] Generators of the Standard Transformations
-- [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|§C1b.5.2]] Noether's Theorem
-- [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|§C1b.5.3]] Continuity Equation and Conservation of the Charge
-- [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|§C1b.5.4]] Improvement Terms
-- [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|§C1b.5.5]] The U(1) Current of the Complex Scalar Field
+- [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|§C1b.5.2]] Two Routes to δℒ
+- [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|§C1b.5.3]] The First-Order Test Decides the Whole Family
+- [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|§C1b.5.4]] Noether's Theorem
+- [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|§C1b.5.5]] The Divergence of the Current When the Test Fails
+- [[§C1b.5 Noether's Theorem#^thm-c1b-5-6|§C1b.5.6]] Continuity Equation and Conservation of the Charge
+- [[§C1b.5 Noether's Theorem#^thm-c1b-5-7|§C1b.5.7]] Improvement Terms
+- [[§C1b.5 Noether's Theorem#^thm-c1b-5-8|§C1b.5.8]] The U(1) Current of the Complex Scalar Field
 - [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|§C1b.6.1]] Total and Fixed-Argument Variations
 - [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-2|§C1b.6.2]] The Volume Element to First Order
 - [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-3|§C1b.6.3]] Noether's Theorem, General Form

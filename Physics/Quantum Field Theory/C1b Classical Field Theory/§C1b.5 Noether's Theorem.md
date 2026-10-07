@@ -9,9 +9,9 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C1b.4 Hamiltonian Field Theory]] · ↑ [[· C1b Classical Field Theory]] · [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum]] →
 
-*Sources: the user's PHY 513 notes, Ch. 3 §3.5 (Definitions; The procedure; The table of examples; The theorem and its proof; From current to charge; Examples I) · PHY 513 Lecture 3 (Larsen), Part C; Problem Set 2, Problem 3, with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2 · Yu Zhao-Huan, 量子场论讲义, §§1.7.1, 1.7.4 · the user's pre-course notes, §1.7.*
+*Sources: the user's PHY 513 notes, Ch. 3 §3.5 (Definitions; The procedure; The table of examples; The theorem and its proof; From current to charge; Examples I) · PHY 513 Lecture 3 (Larsen), Part C, and Lecture 8, Part B (the Dirac Lagrangian, for Example §C1b.5.2); Problem Set 2, Problem 3, with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2 and §3.4, p. 51 · Yu Zhao-Huan, 量子场论讲义, §§1.6.2, 1.7.1, 1.7.4 · the user's pre-course notes, §1.7.*
 
-Which quantities does a field theory conserve, and why? Noether's theorem answers: one conserved current for every continuous symmetry of the action. It starts from the action and the Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]) and from the particle version in mechanics ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]]), and adds what fields need: a local conservation law $\partial_\mu j^\mu = 0$ at every point, and a charge that is conserved only up to what flows out through the boundary. Every object is defined before it is used (the instances of δ, the generator, symmetry and $\mathcal J$); the algorithm is [[P3 Noether's Procedure]]; then come the theorem with its proof, the charge, and the internal symmetries. Spacetime symmetries, where the point moves, are [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]–[[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.7]].
+Which quantities does a field theory conserve, and why? Noether's theorem answers: one conserved current for every continuous symmetry of the action. It starts from the action and the Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]) and from the particle version in mechanics ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]]), and adds what fields need: a local conservation law $\partial_\mu j^\mu = 0$ at every point, and a charge that is conserved only up to what flows out through the boundary. Every object is defined before it is used (the instances of δ, the generator and the symmetry variation $\delta\phi = \alpha\Delta\phi$); then how $\delta\mathcal L$ is computed, by substitution or by the chain rule, and the test that decides whether a transformation is a symmetry and defines $\mathcal J$; the algorithm is [[P3 Noether's Procedure]]; then come the theorem with its proof, what the same algebra gives when the test fails, the charge, and the internal symmetries. Spacetime symmetries, where the point moves, are [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]–[[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.7]].
 
 ## The objects
 
@@ -33,7 +33,7 @@ Which quantities does a field theory conserve, and why? Noether's theorem answer
 
 ^def-c1b-5-1
 
-The first row is the variation of the action principle ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]); the others are introduced here and in §C1b.5.
+The first row is the variation of the action principle ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]); the second row, the symmetry variation, is [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]] (δ carries the parameter, Δ does not); the rows that move the point are used from [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]] on.
 
 > [!definition] Definition §C1b.5.2: Continuous Transformation; Parameters
 > Let $\mathcal L(\phi_i, \partial_\mu\phi_i)$ depend on $N$ real field components $\phi_1, \dots, \phi_N$ (a complex field counts as the pair $\phi$, $\phi^{\ast}$). A **continuous transformation** is a family $\phi_i \mapsto \phi'_i$ labelled by real **parameters** $\alpha^1, \dots, \alpha^{\dim G}$, all zero giving the identity. The parameters are **infinitesimal** (only first order is used) and **global** (constant over spacetime).
@@ -55,28 +55,37 @@ The first row is the variation of the action principle ([[§C1b.2 The Action Pri
 
 ^def-c1b-5-3
 
-> [!remark] Remark: The sign of a parameter is a convention
-> Transforming by $+\alpha$ or by $-\alpha$ is a choice. It flips the sign of $\Delta\phi$ and of the current, never the conservation law, and every overall-sign disagreement between sources on Noether currents traces to it: the U(1) current ([[§C1b.5 Noether's Theorem#^cau-c1b-5-3|Caution: Sign and normalization of the U(1) current]]) and the translations ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^cau-c1b-6-1|§C1b.6, Caution: One picture at a time; the sign of the displacement]]). Nothing is lost by working to first order: a finite transformation of a connected family is a composition of small ones. "Global" is what lets the parameter pass through $\partial_\mu$ in the proof of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]; a parameter $\alpha(x)$ is a gauge transformation ([[§C1b.5 Noether's Theorem#^rem-c1b-5-8|Remark: Global, internal, and what a local phase would need]]). The parameters drop out of every final formula, which is why the current contains $\Delta\phi$ and not $\delta\phi = \alpha\Delta\phi$.
-
-^rem-c1b-5-1
-
-> [!definition] Definition §C1b.5.4: Symmetry of the Action; the Vector 𝒥
-> A continuous transformation is a **symmetry of the action**, for a given $\mathcal L$, if substituting $\phi_i + \alpha^a\Delta_a\phi_i$ into $\mathcal L$ changes it, to first order and for every field configuration, by a total derivative,
+> [!definition] Definition §C1b.5.4: Symmetry Variation
+> The **symmetry variation** of the fields under a continuous transformation ([[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]]) is the first-order part of their change at a fixed point $x$,
 >
 > $$
-> \delta\mathcal L = \alpha^a\,\partial_\mu\mathcal J^\mu_a ,
+> \delta\phi_i(x) \equiv \alpha^a\,\Delta_a\phi_i(x), \qquad \phi'_i(x) - \phi_i(x) = \delta\phi_i(x) + O(\alpha^2) ,
 > $$
 >
-> for some local four-vectors $\mathcal J^\mu_a$, one per parameter; the equation **defines** $\mathcal J^\mu_a$. The test has three outcomes: (i) $\delta\mathcal L = 0$ identically, and one takes $\mathcal J = 0$; (ii) $\delta\mathcal L$ is a nonzero divergence, and $\mathcal J$ is read off; (iii) $\delta\mathcal L$ is not a divergence: no symmetry, no current.
+> with $\Delta_a\phi_i$ the generators ([[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]]). $\delta\phi_i$ contains the parameters and is linear in them; $\Delta_a\phi_i$ is $\delta\phi_i$ with the parameter stripped off and does not depend on $\alpha$. For one parameter, $\delta\phi = \alpha\Delta\phi$. This is the second instance of δ in [[§C1b.5 Noether's Theorem#^def-c1b-5-1|Def. §C1b.5.1]].
 >
-> *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Symmetry, and the definition of 𝒥", eq. (Jcal) · PS §2.2, eq. (2.10) · Lecture 3, Part C ("The total derivative defines $J^\mu$")*
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Transformation, parameter, generator", eq. (symdef) ("so $\alpha^a\Delta_a\phi_i$ is the second instance of variation in the table") · PHY 513 Lecture 3, Part C ("Symmetry variation $\delta\phi = \alpha\Delta\phi$") · PS §2.2, eq. (2.9)*
 
 ^def-c1b-5-4
 
-> [!remark] Remark: Why a total derivative is allowed
-> $\int d^4x\,\partial_\mu(\alpha\mathcal J^\mu)$ is a boundary term ([[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]), so the action changes only on the boundary of spacetime, where the action principle holds the field fixed ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|Principle §C1b.2.3]]). So $\mathcal L$ and $\mathcal L + \alpha\partial_\mu\mathcal J^\mu$ have the same stationary configurations, the same equations of motion ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]; for particles [[§B6.2 Hamilton's Principle of Stationary Action#^thm-b6-2-4|CM Theorem §B6.2.4]]). A symmetry of the action is therefore a symmetry of the equations of motion: it maps solutions to solutions. $\mathcal J$ is not an object with a formula of its own but the output of the test, "whatever had to be written inside a divergence", and depends on the transformation and $\mathcal L$ together. It carries one current index $\mu$ and as many labels as the parameter has: $\mathcal J^\mu$, $\mathcal J^\mu{}_\nu$ for translations, $\mathcal J^{\mu\nu\rho}$ for Lorentz transformations. In mechanics the same role is played by $K$ in $\delta\mathcal L = dK/dt$ ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^def-b6-4-2|CM Def. §B6.4.2]]).
+> [!remark] Remark: δ and Δ side by side, and why only first order
+> Each finite transformation is written at the old point and expanded in its parameter; $\delta\phi$ is the first-order term and $\Delta\phi$ its coefficient (the expansions are derived in [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]):
+>
+> | transformation | $\phi'(x)$, finite | $\delta\phi$ | $\Delta\phi$ |
+> | --- | --- | --- | --- |
+> | shift | $\phi + \alpha$ | $\alpha$ | $1$ |
+> | U(1) phase | $e^{i\alpha}\phi$; $e^{-i\alpha}\phi^{\ast}$ | $i\alpha\phi$; $-i\alpha\phi^{\ast}$ | $i\phi$; $-i\phi^{\ast}$ |
+> | SO(2) rotation of $(\phi_1, \phi_2)$ | $\cos\alpha\,\phi_1 - \sin\alpha\,\phi_2$; $\sin\alpha\,\phi_1 + \cos\alpha\,\phi_2$ | $-\alpha\phi_2$; $\alpha\phi_1$ | $-\phi_2$; $\phi_1$ |
+> | translation $x \to x - a$ | $\phi(x + a)$ | $a^\nu\partial_\nu\phi$ | $\Delta_\nu\phi = \partial_\nu\phi$, one per $a^\nu$ |
+>
+> With several parameters, $\delta\phi_i = \alpha^a\Delta_a\phi_i$ is one function and the $\Delta_a\phi_i$ are its coefficients along the independent parameters, read off by setting all but one $\alpha^a$ to zero. The $O(\alpha^2)$ remainder, for example $-\frac12\alpha^2\phi$ in $e^{i\alpha}\phi = \phi + i\alpha\phi - \frac12\alpha^2\phi + \dots$, is dropped for two reasons. First, the current is the coefficient of $\alpha$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]), and higher orders cannot change a first-order coefficient. Second, nothing about the symmetry is lost: a continuous symmetry is decided near the identity, because a first-order test passed by every configuration propagates along the whole one-parameter family ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]). The current contains $\Delta\phi$ and not $\delta\phi$ because the size of $\alpha$ is arbitrary and must drop out of a conservation law.
 
-^rem-c1b-5-2
+^rem-c1b-5-9
+
+> [!remark] Remark: The sign of a parameter is a convention
+> Transforming by $+\alpha$ or by $-\alpha$ is a choice. It flips the sign of $\Delta\phi$ and of the current, never the conservation law, and every overall-sign disagreement between sources on Noether currents traces to it: the U(1) current ([[§C1b.5 Noether's Theorem#^cau-c1b-5-3|Caution: Sign and normalization of the U(1) current]]) and the translations ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^cau-c1b-6-1|§C1b.6, Caution: One picture at a time; the sign of the displacement]]). Nothing is lost by working to first order: a finite transformation of a connected family is a composition of small ones. "Global" is what lets the parameter pass through $\partial_\mu$ in the proof of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; a parameter $\alpha(x)$ is a gauge transformation ([[§C1b.5 Noether's Theorem#^rem-c1b-5-8|Remark: Global, internal, and what a local phase would need]]). The parameters drop out of every final formula, which is why the current contains $\Delta\phi$ and not $\delta\phi = \alpha\Delta\phi$.
+
+^rem-c1b-5-1
 
 > [!theorem] Theorem §C1b.5.1: Generators of the Standard Transformations
 > For the transformations of this course (Def. §C1b.5.2):
@@ -139,7 +148,7 @@ The first row is the variation of the action principle ([[§C1b.2 The Action Pri
 > - Internal transformations (rows 1–5) have generators without derivatives or $x$; spacetime ones contain $\partial\phi$ and possibly $x$, because the point moved.
 > - A point-moving transformation is first rewritten as a change at the old point, which the field laws do ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]); [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]] does it for any displacement.
 > - Assumptions: the transformation laws of the fields; for Lorentz, the antisymmetry of $\omega_{\mu\nu}$; only the lecture's sign of the translation parameter is new here.
-> - Used next: step 2 of [[P3 Noether's Procedure]] in [[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]].
+> - Used next: step 2 of [[P3 Noether's Procedure]] in [[§C1b.5 Noether's Theorem#^ex-c1b-5-3|Example §C1b.5.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-8|Theorem §C1b.5.8]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]].
 
 ^der-c1b-5-1
 
@@ -148,13 +157,186 @@ The first row is the variation of the action principle ([[§C1b.2 The Action Pri
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, step 1]]
 
 > [!remark] Remark: What step 1 does not decide
-> $\Delta\phi$ is the expansion of the transformation one was handed; whether $\mathcal L$ tolerates it is step 3 ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]]). The shift has a perfectly good generator in the massive theory, where it is not a symmetry ([[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]]). In group language the $\Delta_a\phi_i$ represent the generators of the symmetry's Lie algebra on the fields ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]); for fields with indices a matrix acting on the components joins the orbital part $x\partial$ (Yu's $(I^{\mu\nu})_{ab}$, [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]]).
+> $\Delta\phi$ is the expansion of the transformation one was handed; whether $\mathcal L$ tolerates it is step 3 ([[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]). The shift has a perfectly good generator in the massive theory, where it is not a symmetry ([[§C1b.5 Noether's Theorem#^ex-c1b-5-3|Example §C1b.5.3]]). In group language the $\Delta_a\phi_i$ represent the generators of the symmetry's Lie algebra on the fields ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]); for fields with indices a matrix acting on the components joins the orbital part $x\partial$ (Yu's $(I^{\mu\nu})_{ab}$, [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]]).
 
 ^rem-c1b-5-3
 
+## Computing δℒ
+
+Step 2 of [[P3 Noether's Procedure#^p3-2|P3]] asks for the first-order change of $\mathcal L$ under $\delta\phi = \alpha\Delta\phi$. Two facts make it mechanical: the variation passes inside $\partial_\mu$, and the change can be computed either by substituting or by the chain rule, with the same result.
+
+> [!remark] Remark: Why the variation passes inside the derivative
+> - **Fixed point.** $\delta\phi$ compares $\phi'$ and $\phi$ at the same $x$, so $\delta(\partial_\mu\phi) \equiv \partial_\mu\phi'(x) - \partial_\mu\phi(x) = \partial_\mu(\phi' - \phi)(x) = \partial_\mu(\delta\phi)$, by linearity of $\partial_\mu$. This is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]] with $\varepsilon\eta$ replaced by the symmetry variation $\alpha\Delta\phi$; nothing new is needed.
+> - **Constant parameter.** $\partial_\mu(\alpha\Delta\phi) = \alpha\,\partial_\mu(\Delta\phi)$ because $\partial_\mu\alpha = 0$. With the first point, $\Delta(\partial_\mu\phi) = \partial_\mu(\Delta\phi)$: derivatives of the field are never transformed on their own.
+> - **When the point moves, it fails.** For a spacetime transformation the total change $\phi'(x') - \phi(x)$ compares two different points, and $\delta(\partial_\mu\phi) = \partial_\mu(\delta\phi) - (\partial_\nu\phi)\,\partial_\mu(\delta x^\nu)$; only the fixed-argument change $\bar\delta\phi$ commutes with $\partial_\mu$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]]). That is why every $\Delta\phi$ of this section, the translation's $\partial_\nu\phi$ included, is a change at the old point ([[§C1b.5 Noether's Theorem#^def-c1b-5-1|Def. §C1b.5.1]], last paragraph).
+> - **Why the proof keeps $\partial_\mu(\delta\phi)$ whole.** The chain rule produces $\pi^\mu\,\partial_\mu(\delta\phi)$, with $\pi^\mu = \partial\mathcal L/\partial(\partial_\mu\phi)$, and the product rule moves the derivative off $\delta\phi$ as a whole: $\pi^\mu\partial_\mu(\delta\phi) = \partial_\mu(\pi^\mu\delta\phi) - (\partial_\mu\pi^\mu)\,\delta\phi$ ([[§C1b.5 Noether's Theorem#^der-c1b-5-4|Derivation §C1b.5.4]], step 4). This identity holds for any fixed-argument $\delta\phi$, also for $\alpha(x)\Delta\phi$ with a position-dependent parameter. Constancy of $\alpha$ is used separately: at step 3 of that derivation, where $\partial_\mu(\alpha\Delta\phi) = \alpha\,\partial_\mu\Delta\phi$ and the by-product marks the extra term $(\partial_\mu\alpha)\Delta\phi$ a local parameter would produce, the term a gauge field must absorb ([[§C1b.5 Noether's Theorem#^rem-c1b-5-8|Remark: Global, internal, and what a local phase would need]]); and at step 6, to divide by $\alpha$.
+
+^rem-c1b-5-10
+
+> [!theorem] Theorem §C1b.5.2: Two Routes to δℒ
+> Let $\mathcal L(\phi_i, \partial_\mu\phi_i)$ be $C^1$ in its arguments and $\delta\phi_i = \alpha^a\Delta_a\phi_i$ a symmetry variation with constant parameters ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]]). The first-order change $\delta\mathcal L$ at fixed $x$ is given equally by
+> 1. **substitution**: the first-order part of $\mathcal L(\phi'_i, \partial_\mu\phi'_i) - \mathcal L(\phi_i, \partial_\mu\phi_i)$, with the transformed fields inserted, finite or truncated to $\phi_i + \alpha^a\Delta_a\phi_i$;
+> 2. **the chain rule**:
+>
+> $$
+> \delta\mathcal L = \alpha^a\sum_i\Bigl[\frac{\partial\mathcal L}{\partial\phi_i}\,\Delta_a\phi_i + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi_i)}\,\partial_\mu(\Delta_a\phi_i)\Bigr] .
+> $$
+>
+> The sum runs over every independent field variable; a complex field enters as $\phi$ and $\phi^{\ast}$, two variables with generators $\Delta\phi$ and $\Delta\phi^{\ast} = (\Delta\phi)^{\ast}$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]). A field whose derivatives do not occur in $\mathcal L$ has $\partial\mathcal L/\partial(\partial_\mu\phi_i) = 0$ and contributes through $\partial\mathcal L/\partial\phi_i$ alone. Neither route uses the equations of motion.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, "The procedure", step 2 ("Equivalently, by the chain rule") · PHY 513 Lecture 3, Part C ("Vary Lagrangean explicitly") · Yu §1.6.2, eq. (1.164)*
+
+^thm-c1b-5-2
+
+> [!derivation]- Derivation
+> Fix a configuration and a point $x$, and write $\pi^\mu_i \equiv \partial\mathcal L/\partial(\partial_\mu\phi_i)$.
+>
+> **1. Route 1 as a derivative in the parameters.** Put $f(\alpha) \equiv \mathcal L\bigl(\phi_i + \alpha^a\Delta_a\phi_i,\ \partial_\mu\phi_i + \alpha^a\partial_\mu\Delta_a\phi_i\bigr)$ at $x$. The second argument is $\partial_\mu$ of the first because $\alpha$ is constant ([[§C1b.5 Noether's Theorem#^rem-c1b-5-10|Remark: Why the variation passes inside the derivative]]). $f$ is $C^1$, so $f(\alpha) - f(0) = \alpha^a\,\partial f/\partial\alpha^a|_{\alpha = 0} + o(\alpha)$, and the first-order part of the substitution is $\alpha^a\,\partial f/\partial\alpha^a|_0$.
+>
+> **2. Finite or truncated substitution.** The finite fields are $\phi'_i = \phi_i + \alpha^a\Delta_a\phi_i + O(\alpha^2)$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]]), so they and their derivatives differ from the arguments of $f$ by $O(\alpha^2)$; $\mathcal L$ is $C^1$, so $\mathcal L(\phi', \partial\phi')$ differs from $f(\alpha)$ by $O(\alpha^2)$ and has the same first-order part. ⚑ By-product: one may insert the exact $e^{i\alpha}\phi$ and expand at the end, which is often quickest → [[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]].
+>
+> **3. Route 2 is the evaluation of that derivative.** Each argument of $\mathcal L$ in $f$ is linear in $\alpha$, so the chain rule ([[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]) gives
+>
+> $$
+> \frac{\partial f}{\partial\alpha^a}\Big|_0 = \sum_i\Bigl[\frac{\partial\mathcal L}{\partial\phi_i}\,\frac{\partial(\phi_i + \alpha^b\Delta_b\phi_i)}{\partial\alpha^a} + \pi^\mu_i\,\frac{\partial(\partial_\mu\phi_i + \alpha^b\partial_\mu\Delta_b\phi_i)}{\partial\alpha^a}\Bigr] = \sum_i\Bigl[\frac{\partial\mathcal L}{\partial\phi_i}\,\Delta_a\phi_i + \pi^\mu_i\,\partial_\mu(\Delta_a\phi_i)\Bigr] ,
+> $$
+>
+> the partial derivatives of $\mathcal L$ evaluated at the unvaried configuration. Multiplying by $\alpha^a$ and summing over $a$ gives Route 2.
+>
+> **4. Complex fields.** Take $\phi = (\phi_1 + i\phi_2)/\sqrt2$ and write $\mathcal L_{,j} \equiv \partial\mathcal L/\partial\phi_j$. In the real variables the undifferentiated part of step 3 is $\mathcal L_{,1}\,\delta\phi_1 + \mathcal L_{,2}\,\delta\phi_2$. Insert $\delta\phi = (\delta\phi_1 + i\delta\phi_2)/\sqrt2$, $\delta\phi^{\ast} = (\delta\phi_1 - i\delta\phi_2)/\sqrt2$ and the operators $\partial/\partial\phi = (\partial/\partial\phi_1 - i\,\partial/\partial\phi_2)/\sqrt2$, $\partial/\partial\phi^{\ast} = (\partial/\partial\phi_1 + i\,\partial/\partial\phi_2)/\sqrt2$ of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]:
+>
+> $$
+> \frac{\partial\mathcal L}{\partial\phi}\,\delta\phi + \frac{\partial\mathcal L}{\partial\phi^{\ast}}\,\delta\phi^{\ast} = \tfrac12\Bigl[(\mathcal L_{,1} - i\mathcal L_{,2})(\delta\phi_1 + i\delta\phi_2) + (\mathcal L_{,1} + i\mathcal L_{,2})(\delta\phi_1 - i\delta\phi_2)\Bigr] = \mathcal L_{,1}\,\delta\phi_1 + \mathcal L_{,2}\,\delta\phi_2 ,
+> $$
+>
+> the cross terms $i\mathcal L_{,1}\delta\phi_2$ and $i\mathcal L_{,2}\delta\phi_1$ appearing once with each sign. The terms with $\partial_\mu\phi$ and $\partial_\mu\phi^{\ast}$ recombine in the same way. So the pair $(\phi, \phi^{\ast})$ may replace $(\phi_1, \phi_2)$ in the sum, provided $\delta\phi^{\ast}$ is the conjugate of $\delta\phi$; for real $\alpha$ that is $\Delta\phi^{\ast} = (\Delta\phi)^{\ast}$.
+>
+> **5. A field without derivatives.** If $\mathcal L$ does not depend on $\partial_\mu\phi_i$, then $\pi^\mu_i = 0$ and only the first term of step 3 survives for that $i$. It does not drop out of $\delta\mathcal L$: its term $\frac{\partial\mathcal L}{\partial\phi_i}\Delta\phi_i$ can be needed for the cancellation ([[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]], term (c)).
+>
+> **What the derivation shows**
+> - Route 1 is the definition and Route 2 its evaluation, so they cannot disagree; a mismatch is an algebra slip. Route 1 is quickest when $\mathcal L$ is visibly invariant (phases cancelling term by term); Route 2 when it is not, and its ingredients $\pi^\mu_i$ are the ones the current needs anyway ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]).
+> - Assumptions: $\alpha$ constant (step 1); $\mathcal L$ of class $C^1$ in its arguments; first order only. No equation of motion is used.
+> - Used next: Formula 2 of [[§C1b.5 Noether's Theorem#^der-c1b-5-4|Derivation §C1b.5.4]] (Route 2 for an arbitrary $\delta\phi$, followed by the product rule); [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]; [[P3 Noether's Procedure#^p3-2|P3, step 2]].
+
+^der-c1b-5-2
+
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]
+
+*Procedure:* [[P3 Noether's Procedure#^p3-2|P3, step 2]]
+
+> [!example] Example §C1b.5.1: δℒ for the Complex Scalar Phase, by Both Routes
+> Take $\mathcal L = \partial_\mu\phi^{\ast}\partial^\mu\phi - m^2\phi^{\ast}\phi - V(\phi^{\ast}\phi)$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] with a potential, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-6|§C1b.2, Remark: The symmetry the real field lacks, and a potential]]) and $\phi \to e^{i\alpha}\phi$, $\phi^{\ast} \to e^{-i\alpha}\phi^{\ast}$ with constant $\alpha$, so $\Delta\phi = i\phi$, $\Delta\phi^{\ast} = -i\phi^{\ast}$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]).
+>
+> **Route 1, substitution.** Since $\partial_\mu\alpha = 0$, $\partial_\mu(e^{i\alpha}\phi) = e^{i\alpha}\partial_\mu\phi$. Term by term: $\partial_\mu(e^{-i\alpha}\phi^{\ast})\,\partial^\mu(e^{i\alpha}\phi) = e^{-i\alpha}e^{i\alpha}\,\partial_\mu\phi^{\ast}\partial^\mu\phi = \partial_\mu\phi^{\ast}\partial^\mu\phi$; $m^2e^{-i\alpha}\phi^{\ast}e^{i\alpha}\phi = m^2\phi^{\ast}\phi$; the argument of $V$ becomes $e^{-i\alpha}\phi^{\ast}e^{i\alpha}\phi = \phi^{\ast}\phi$. So $\mathcal L$ is unchanged for every $\alpha$, and $\delta\mathcal L = 0$.
+>
+> **Route 2, chain rule.** With $\phi$ and $\phi^{\ast}$ independent ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], step 5 of its derivation), $V' \equiv dV/d(\phi^{\ast}\phi)$, and the chain rule through $V$ giving $\partial V/\partial\phi = V'\phi^{\ast}$:
+>
+> $$
+> \frac{\partial\mathcal L}{\partial\phi} = -(m^2 + V')\,\phi^{\ast}, \quad \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)} = \partial^\mu\phi^{\ast}, \quad \frac{\partial\mathcal L}{\partial\phi^{\ast}} = -(m^2 + V')\,\phi, \quad \frac{\partial\mathcal L}{\partial(\partial_\mu\phi^{\ast})} = \partial^\mu\phi .
+> $$
+>
+> The four terms of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], divided by $\alpha$:
+> - (a) $\frac{\partial\mathcal L}{\partial\phi}\,\Delta\phi = -(m^2 + V')\,\phi^{\ast}(i\phi) = -i(m^2 + V')\,\phi^{\ast}\phi$;
+> - (b) $\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\,\partial_\mu(\Delta\phi) = \partial^\mu\phi^{\ast}\,(i\,\partial_\mu\phi) = i\,\partial_\mu\phi\,\partial^\mu\phi^{\ast}$;
+> - (c) $\frac{\partial\mathcal L}{\partial\phi^{\ast}}\,\Delta\phi^{\ast} = -(m^2 + V')\,\phi\,(-i\phi^{\ast}) = +i(m^2 + V')\,\phi\phi^{\ast}$;
+> - (d) $\frac{\partial\mathcal L}{\partial(\partial_\mu\phi^{\ast})}\,\partial_\mu(\Delta\phi^{\ast}) = \partial^\mu\phi\,(-i\,\partial_\mu\phi^{\ast}) = -i\,\partial^\mu\phi\,\partial_\mu\phi^{\ast}$.
+>
+> (a) + (c) $= 0$ because $\phi^{\ast}\phi = \phi\phi^{\ast}$; (b) + (d) $= 0$ because $\partial_\mu\phi\,\partial^\mu\phi^{\ast} = g^{\mu\nu}\partial_\mu\phi\,\partial_\nu\phi^{\ast} = \partial^\nu\phi\,\partial_\nu\phi^{\ast}$ (the metric is symmetric). So $\delta\mathcal L = 0$, as by Route 1.
+>
+> Route 1 shows invariance to all orders at a glance; Route 2 shows where it comes from: each term of $\phi$ cancels the matching term of $\phi^{\ast}$, because the two generators are $+i$ and $-i$ times their fields. The current built from the same ingredients is [[§C1b.5 Noether's Theorem#^thm-c1b-5-8|Theorem §C1b.5.8]].
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 2, step 2 (Route 1), and "The procedure", step 2 (the chain-rule form) · PS §2.2, eq. (2.14) · PHY 513 Lecture 3, Part C, Example 2 · Route 2 written out here*
+
+^ex-c1b-5-1
+
+*Procedure:* [[P3 Noether's Procedure#^p3-2|P3, step 2]]
+
+> [!example] Example §C1b.5.2: δℒ for the Dirac Phase, by Both Routes
+> This example uses chapter C5a; read it after [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]. Take $\mathcal L = \bar\psi(i\gamma^\mu\partial_\mu - m)\psi$, with $\psi$ and $\bar\psi$ independent, four classical commuting components each ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], step 1 of its derivation). The phase $\psi \to e^{i\alpha}\psi$ gives $\bar\psi = \psi^\dagger\gamma^0 \to e^{-i\alpha}\bar\psi$ for real $\alpha$, so $\Delta\psi = i\psi$, $\Delta\bar\psi = -i\bar\psi$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]], step 1 of its derivation).
+>
+> **Route 1, substitution.** $\alpha$ is constant, so it passes through $\partial_\mu$, and as a number it commutes with the matrices $\gamma^\mu$: $\bar\psi'(i\gamma^\mu\partial_\mu - m)\psi' = e^{-i\alpha}\bar\psi\,(i\gamma^\mu\partial_\mu - m)\,e^{i\alpha}\psi = e^{-i\alpha}e^{i\alpha}\,\bar\psi(i\gamma^\mu\partial_\mu - m)\psi = \mathcal L$. So $\delta\mathcal L = 0$.
+>
+> **Route 2, chain rule.** In components $\mathcal L = \sum_{a,b}\bar\psi_a\bigl[i(\gamma^\nu)_{ab}\partial_\nu\psi_b - m\delta_{ab}\psi_b\bigr]$, with the derivatives of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-6|Derivation §C5a.7.6]], steps 2–3:
+>
+> $$
+> \frac{\partial\mathcal L}{\partial\psi_c} = -m\bar\psi_c, \quad \frac{\partial\mathcal L}{\partial(\partial_\mu\psi_c)} = i(\bar\psi\gamma^\mu)_c, \quad \frac{\partial\mathcal L}{\partial\bar\psi_a} = \bigl[(i\gamma^\nu\partial_\nu - m)\psi\bigr]_a, \quad \frac{\partial\mathcal L}{\partial(\partial_\mu\bar\psi_a)} = 0 .
+> $$
+>
+> The sum of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]] runs over the eight variables $\psi_c$, $\bar\psi_a$; divided by $\alpha$:
+> - (a) $\sum_c\frac{\partial\mathcal L}{\partial\psi_c}\,\Delta\psi_c = \sum_c(-m\bar\psi_c)(i\psi_c) = -im\,\bar\psi\psi$;
+> - (b) $\sum_c\frac{\partial\mathcal L}{\partial(\partial_\mu\psi_c)}\,\partial_\mu(\Delta\psi_c) = \sum_c i(\bar\psi\gamma^\mu)_c\,(i\,\partial_\mu\psi_c) = -\bar\psi\gamma^\mu\partial_\mu\psi$;
+> - (c) $\sum_a\frac{\partial\mathcal L}{\partial\bar\psi_a}\,\Delta\bar\psi_a = \sum_a(-i\bar\psi_a)\bigl[(i\gamma^\nu\partial_\nu - m)\psi\bigr]_a = \bar\psi\gamma^\nu\partial_\nu\psi + im\,\bar\psi\psi$;
+> - (d) no term: $\mathcal L$ contains no derivative of $\bar\psi$.
+>
+> Renaming the dummy $\nu$ to $\mu$, (a) + (b) + (c) $= -im\,\bar\psi\psi - \bar\psi\gamma^\mu\partial_\mu\psi + \bar\psi\gamma^\mu\partial_\mu\psi + im\,\bar\psi\psi = 0$, as by Route 1.
+>
+> Term (c) is the case of a field without derivatives in [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]: $\bar\psi$ has no $\partial\mathcal L/\partial(\partial_\mu\bar\psi)$, yet its $\partial\mathcal L/\partial\bar\psi$ term is needed, since (a) + (b) alone leave $-im\,\bar\psi\psi - \bar\psi\gamma^\mu\partial_\mu\psi \ne 0$. The current uses only the derivatives with respect to $\partial_\mu$ of the fields, so there $\bar\psi$ contributes nothing: $j^\mu_{\rm N} = i\bar\psi\gamma^\mu(i\psi) = -\bar\psi\gamma^\mu\psi$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]]).
+>
+> *Source: PS §3.4, p. 51 (the Noether current of $\psi \to e^{i\alpha}\psi$) · the user's PHY 513 notes, Ch. 8 §8.8 (eq. (diracL)), Ch. 3 §3.5 ("The procedure", step 2) · PHY 513 Lecture 8, Part B (the Dirac Lagrangian) · Route 2 written out here*
+
+^ex-c1b-5-2
+
+*Procedure:* [[P3 Noether's Procedure#^p3-2|P3, step 2]]
+
+## The symmetry test
+
+> [!definition] Definition §C1b.5.5: Symmetry of the Action; the Vector 𝒥
+> A continuous transformation is a **symmetry of the action**, for a given $\mathcal L$, if substituting $\phi_i + \alpha^a\Delta_a\phi_i$ into $\mathcal L$ changes it (computed by either route of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]), to first order and for every field configuration, by a total derivative,
+>
+> $$
+> \delta\mathcal L = \alpha^a\,\partial_\mu\mathcal J^\mu_a ,
+> $$
+>
+> for some local four-vectors $\mathcal J^\mu_a$, one per parameter; the equation **defines** $\mathcal J^\mu_a$. The test has three outcomes: (i) $\delta\mathcal L = 0$ identically, and one takes $\mathcal J = 0$; (ii) $\delta\mathcal L$ is a nonzero divergence, and $\mathcal J$ is read off; (iii) $\delta\mathcal L$ is not a divergence: no symmetry and no conserved current; what the would-be current then satisfies is [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]].
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Symmetry, and the definition of 𝒥", eq. (Jcal) · PS §2.2, eq. (2.10) · Lecture 3, Part C ("The total derivative defines $J^\mu$")*
+
+^def-c1b-5-5
+
+> [!remark] Remark: Why a total derivative is allowed
+> $\int d^4x\,\partial_\mu(\alpha\mathcal J^\mu)$ is a boundary term ([[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]), so the action changes only on the boundary of spacetime, where the action principle holds the field fixed ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|Principle §C1b.2.3]]). So $\mathcal L$ and $\mathcal L + \alpha\partial_\mu\mathcal J^\mu$ have the same stationary configurations, the same equations of motion ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]; for particles [[§B6.2 Hamilton's Principle of Stationary Action#^thm-b6-2-4|CM Theorem §B6.2.4]]). A symmetry of the action is therefore a symmetry of the equations of motion: it maps solutions to solutions. $\mathcal J$ is not an object with a formula of its own but the output of the test, "whatever had to be written inside a divergence", and depends on the transformation and $\mathcal L$ together. It carries one current index $\mu$ and as many labels as the parameter has: $\mathcal J^\mu$, $\mathcal J^\mu{}_\nu$ for translations, $\mathcal J^{\mu\nu\rho}$ for Lorentz transformations. In mechanics the same role is played by $K$ in $\delta\mathcal L = dK/dt$ ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^def-b6-4-2|CM Def. §B6.4.2]]).
+
+^rem-c1b-5-2
+
+> [!theorem] Theorem §C1b.5.3: The First-Order Test Decides the Whole Family
+> Let $T_\alpha$ be a one-parameter group of transformations of the fields ($T_0 = \mathrm{id}$, $T_\beta T_\alpha = T_{\alpha + \beta}$), and suppose its first-order test ([[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]) holds **for every configuration** $\chi$: $\mathcal L[T_\varepsilon\chi] - \mathcal L[\chi] = \varepsilon\,\partial_\mu\mathcal J^\mu[\chi] + O(\varepsilon^2)$, with $\mathcal J$ local. Then for every finite $\alpha$
+>
+> $$
+> \mathcal L[T_\alpha\phi] = \mathcal L[\phi] + \partial_\mu K^\mu_\alpha[\phi], \qquad K^\mu_\alpha[\phi] \equiv \int_0^\alpha d\beta\;\mathcal J^\mu[T_\beta\phi] .
+> $$
+>
+> In particular, $\delta\mathcal L = 0$ for every configuration implies $\mathcal L[T_\alpha\phi] = \mathcal L[\phi]$ exactly: the $O(\alpha^2)$ terms of [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]] impose no further condition.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Transformation, parameter, generator" ("nothing is lost, since finite transformations are compositions of small ones") · the integration along the family written out here*
+
+^thm-c1b-5-3
+
+> [!derivation]- Derivation
+> Fix $\phi$ and $x$; write $\mathcal L[\chi]$ for $\mathcal L(\chi(x), \partial\chi(x))$ and $g(\beta) \equiv \mathcal L[T_\beta\phi]$.
+>
+> **1. A step along the family is a small transformation of the moved configuration.** By the group law, $T_{\beta + \varepsilon}\phi = T_\varepsilon(T_\beta\phi)$. With $\chi \equiv T_\beta\phi$, $g(\beta + \varepsilon) - g(\beta) = \mathcal L[T_\varepsilon\chi] - \mathcal L[\chi]$.
+>
+> **2. Apply the test at $\chi$.** The test holds for every configuration, so for $\chi$: $g(\beta + \varepsilon) - g(\beta) = \varepsilon\,\partial_\mu\mathcal J^\mu[\chi] + O(\varepsilon^2)$. Divide by $\varepsilon$ and let $\varepsilon \to 0$: $g'(\beta) = \partial_\mu\mathcal J^\mu[T_\beta\phi]$. ⚑ By-product: this is where "for every configuration" is used; a test passed only at $\phi$, or only on solutions, would say nothing about $T_\beta\phi$ → [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]].
+>
+> **3. Integrate in the parameter.** $g$ is $C^1$ when the family, $\mathcal L$ and $\mathcal J$ are, so by the fundamental theorem of calculus $g(\alpha) - g(0) = \int_0^\alpha d\beta\;\partial_\mu\mathcal J^\mu[T_\beta\phi]$.
+>
+> **4. Take $\partial_\mu$ outside.** The integrand is continuously differentiable in $(\beta, x)$ and $[0, \alpha]$ is compact, so the derivative in $x^\mu$ passes under $\int d\beta$ ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]): $\int_0^\alpha d\beta\;\partial_\mu\mathcal J^\mu[T_\beta\phi] = \partial_\mu\int_0^\alpha d\beta\;\mathcal J^\mu[T_\beta\phi] = \partial_\mu K^\mu_\alpha$. With $g(0) = \mathcal L[\phi]$ this is the statement; for $\mathcal J = 0$, $K = 0$.
+>
+> **5. Check on translations.** $T_t\phi(x) = \phi(x + tc)$ for a fixed four-vector $c$ (the lecture's translation by $a = tc$, [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]), whose test gives $\mathcal J^\mu = c^\mu\mathcal L$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]]). Then $\partial_\mu K^\mu_t = \int_0^t ds\;c^\mu(\partial_\mu\mathcal L)(x + sc) = \int_0^t ds\;\frac{d}{ds}\mathcal L(x + sc) = \mathcal L(x + tc) - \mathcal L(x)$, which is $\mathcal L[T_t\phi] - \mathcal L[\phi]$, as claimed.
+>
+> **What the derivation shows**
+> - A continuous symmetry is fixed by its generator: the first-order test, passed off shell, propagates along the whole family. This is why [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]] may drop $O(\alpha^2)$, and why Noether's theorem needs only $\Delta\phi$.
+> - Several parameters: each one-parameter subgroup $\alpha^a = tc^a$ is covered by steps 1–4, and near the identity every element of a connected Lie group is a product of elements of one-parameter subgroups (a fact of Lie theory, not proved here); a composition of maps that each change $\mathcal L$ by a divergence changes it by a divergence.
+> - Discrete transformations (parity, charge conjugation) have no generator and are not covered ([[§C1b.5 Noether's Theorem#^cau-c1b-5-2|Caution: What the theorem does and does not say]]).
+> - Used in: [[§C1b.5 Noether's Theorem#^rem-c1b-5-9|Remark: δ and Δ side by side, and why only first order]].
+
+^der-c1b-5-3
+
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]]
+
 ## The procedure
 
-The algorithm is [[P3 Noether's Procedure]]: six steps, the same for every symmetry. Steps 1–4 are algebra on $\mathcal L$ and produce the current; step 5 is the theorem below, the only place the equations of motion enter; step 6 is its physical content, the only place boundary conditions enter. Symmetries differ only in the size of the answers at steps 1 and 3: whether the point moves (then $\Delta\phi$ contains derivatives of $\phi$) and whether $\mathcal L$ is invariant outright ($\mathcal J = 0$) or only up to a divergence.
+The algorithm is [[P3 Noether's Procedure]]: six steps, the same for every symmetry. Steps 1–4 are algebra on $\mathcal L$ and produce the current; step 5 is the theorem below, the only place the equations of motion enter; step 6 is its physical content, the only place boundary conditions enter. Step 2 can be done by substitution or by the chain rule ([[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]). Symmetries differ only in the size of the answers at steps 1 and 3: whether the point moves (then $\Delta\phi$ contains derivatives of $\phi$) and whether $\mathcal L$ is invariant outright ($\mathcal J = 0$) or only up to a divergence.
 
 ![[ph-qft-c1-11-1.svg]]
 *Noether's procedure as a flow; each arrow is labelled with what that step needs. Everything up to the current is algebra on the Lagrangian; the equations of motion are used only to conclude that the current is conserved (orange), and boundary conditions only to conclude that the charge is.*
@@ -163,18 +345,19 @@ The answers for every symmetry of the course, side by side before any is derived
 
 | operation | parameter | step 1: $\Delta\phi$ | steps 2–3: $\delta\mathcal L$ and $\mathcal J$ | steps 4, 6: current, charge | derived in |
 | --- | --- | --- | --- | --- | --- |
-| shift, $m = 0$ | $\alpha$ | $1$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = \partial^\mu\phi$; $Q = \int d^3x\,\dot\phi$ | [[§C1b.5 Noether's Theorem#^ex-c1b-5-1\|Example §C1b.5.1]] |
-| shift, $m \ne 0$ | $\alpha$ | $1$ | $\delta\mathcal L = -\alpha m^2\phi$: not a divergence | no symmetry, no current | [[§C1b.5 Noether's Theorem#^ex-c1b-5-1\|Example §C1b.5.1]] |
-| phase (complex field) | $\alpha$ | $i\phi$, $-i\phi^*$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$; number charge | [[§C1b.5 Noether's Theorem#^thm-c1b-5-5\|Theorem §C1b.5.5]] |
+| shift, $m = 0$ | $\alpha$ | $1$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = \partial^\mu\phi$; $Q = \int d^3x\,\dot\phi$ | [[§C1b.5 Noether's Theorem#^ex-c1b-5-3\|Example §C1b.5.3]] |
+| shift, $m \ne 0$ | $\alpha$ | $1$ | $\delta\mathcal L = -\alpha m^2\phi$: not a divergence | no symmetry; the would-be $j^\mu = \partial^\mu\phi$ has $\partial_\mu j^\mu = -m^2\phi$ on shell | [[§C1b.5 Noether's Theorem#^ex-c1b-5-3\|Example §C1b.5.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5\|Theorem §C1b.5.5]] |
+| phase (complex field) | $\alpha$ | $i\phi$, $-i\phi^*$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$; number charge | [[§C1b.5 Noether's Theorem#^thm-c1b-5-8\|Theorem §C1b.5.8]] |
+| phase, with the mass splitting $-\frac{\lambda}{2}(\phi^2 + \phi^{\ast 2})$ | $\alpha$ | $i\phi$, $-i\phi^{\ast}$ | $\delta\mathcal L = -i\alpha\lambda(\phi^2 - \phi^{\ast 2})$: not a divergence | no symmetry; the would-be U(1) current has $\partial_\mu j^\mu = -i\lambda(\phi^2 - \phi^{\ast 2})$ on shell | [[§C1b.5 Noether's Theorem#^ex-c1b-5-5\|Example §C1b.5.5]] |
 | translation | $a^\nu$ (four) | $\partial_\nu\phi$ | $\delta\mathcal L = a^\nu\partial_\nu\mathcal L$; $\mathcal J^\mu{}_\nu = \delta^\mu{}_\nu\mathcal L$ | $T^\mu{}_\nu = \partial^\mu\phi\,\partial_\nu\phi - \delta^\mu{}_\nu\mathcal L$; $P^\mu = (H, \mathbf P)$ | [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5\|Theorem §C1b.6.5]] |
 | Lorentz | $\omega_{\nu\rho}$ (six) | $x^\nu\partial^\rho\phi - x^\rho\partial^\nu\phi$ | $\delta\mathcal L = \frac12\omega_{\nu\rho}\partial_\mu\mathcal J^{\mu\nu\rho}$; $\mathcal J^{\mu\nu\rho} = (x^\nu g^{\mu\rho} - x^\rho g^{\mu\nu})\mathcal L$ | $\mathcal M^{\mu\nu\rho} = x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu}$; $\mathbf J$, $\mathbf K$ | [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1\|Theorem §C1b.7.1]] |
 
-The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi)$ times the generator, minus $\mathcal J$, and in these examples $\mathcal J \ne 0$ exactly when the point moves; in Yu's formulation $\alpha\mathcal J^\mu = -\mathcal L\,\delta x^\mu$ throughout ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-4|Theorem §C1b.6.4]]).
+The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi)$ times the generator, minus $\mathcal J$, and in these examples $\mathcal J \ne 0$ exactly when the point moves; in Yu's formulation $\alpha\mathcal J^\mu = -\mathcal L\,\delta x^\mu$ throughout ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-4|Theorem §C1b.6.4]]). When the test fails, the same expression with $\mathcal J = 0$ is not conserved, and its divergence on shell is $\delta\mathcal L/\alpha$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]).
 
 ## The theorem
 
-> [!theorem] Theorem §C1b.5.2: Noether's Theorem
-> Let a transformation with generators $\Delta_a\phi_i$ be a symmetry of the action with vectors $\mathcal J^\mu_a$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]]). Then the **Noether currents**
+> [!theorem] Theorem §C1b.5.4: Noether's Theorem
+> Let a transformation with generators $\Delta_a\phi_i$ be a symmetry of the action with vectors $\mathcal J^\mu_a$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]). Then the **Noether currents**
 >
 > $$
 > j^\mu_a = \sum_{i=1}^N\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_i)}\,\Delta_a\phi_i - \mathcal J^\mu_a
@@ -190,20 +373,20 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Principle "Noether's theorem", eqs. (noethercurrentdef)–(noethercurrent) · PS §2.2, eqs. (2.11)–(2.12) · Lecture 3, Part C*
 
-^thm-c1b-5-2
+^thm-c1b-5-4
 
 > [!derivation]- Derivation
 > One field and one parameter; the general case adds $\sum_i$ and the label $a$ throughout (step 9). Write $\pi^\mu \equiv \partial\mathcal L/\partial(\partial_\mu\phi)$. The proof computes the same quantity, the change $\delta\mathcal L$ under $\delta\phi = \alpha\Delta\phi$, in two independent ways.
 >
-> **1. Formula 1, from the symmetry.** By [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], for every configuration, $\delta\mathcal L = \alpha\,\partial_\mu\mathcal J^\mu$. This is a fact about $\mathcal L$ and the transformation, established by substitution; no equation of motion is involved.
+> **1. Formula 1, from the symmetry.** By [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], for every configuration, $\delta\mathcal L = \alpha\,\partial_\mu\mathcal J^\mu$. This is a fact about $\mathcal L$ and the transformation, established by substitution; no equation of motion is involved.
 >
-> **2. Formula 2, the chain rule.** For any variation $\delta\phi$ at fixed $x$, $\mathcal L(\phi, \partial_\mu\phi)$ changes by ([[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]])
+> **2. Formula 2, the chain rule.** For any variation $\delta\phi$ at fixed $x$, $\mathcal L(\phi, \partial_\mu\phi)$ changes by ([[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]; Route 2 of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], here before $\delta\phi$ is specified)
 >
 > $$
 > \delta\mathcal L = \frac{\partial\mathcal L}{\partial\phi}\,\delta\phi + \pi^\mu\,\delta(\partial_\mu\phi) + O(\delta\phi^2) .
 > $$
 >
-> **3. The variation of the derivative.** $\delta\phi = \alpha\Delta\phi$ compares two functions at the same $x$, and $\alpha$ is constant, so $\delta(\partial_\mu\phi) = \partial_\mu(\delta\phi) = \alpha\,\partial_\mu(\Delta\phi)$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]]). ⚑ By-product: this is where "global" is used; for $\alpha(x)$ one would get $\partial_\mu(\alpha\Delta\phi) = \alpha\,\partial_\mu\Delta\phi + (\partial_\mu\alpha)\Delta\phi$, and the extra term is what a gauge field must absorb → [[§C1b.5 Noether's Theorem#^rem-c1b-5-8|Remark: Global, internal, and what a local phase would need]].
+> **3. The variation of the derivative.** $\delta\phi = \alpha\Delta\phi$ compares two functions at the same $x$, and $\alpha$ is constant, so $\delta(\partial_\mu\phi) = \partial_\mu(\delta\phi) = \alpha\,\partial_\mu(\Delta\phi)$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]]; [[§C1b.5 Noether's Theorem#^rem-c1b-5-10|Remark: Why the variation passes inside the derivative]]). ⚑ By-product: this is where "global" is used; for $\alpha(x)$ one would get $\partial_\mu(\alpha\Delta\phi) = \alpha\,\partial_\mu\Delta\phi + (\partial_\mu\alpha)\Delta\phi$, and the extra term is what a gauge field must absorb → [[§C1b.5 Noether's Theorem#^rem-c1b-5-8|Remark: Global, internal, and what a local phase would need]].
 >
 > **4. Move the derivative, keep the total derivative.** By the product rule, $\pi^\mu\,\partial_\mu(\delta\phi) = \partial_\mu(\pi^\mu\delta\phi) - (\partial_\mu\pi^\mu)\,\delta\phi$, an identity at each point. Nothing is integrated and nothing is dropped. ⚑ By-product: in the derivation of the Euler–Lagrange equations the same total derivative was a boundary term and was discarded ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^der-c1b-2-4|Derivation §C1b.2.4]]); here it is kept, and it becomes the current.
 >
@@ -233,40 +416,128 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 > - Steps 1–7 hold for every configuration; the equations of motion enter only at step 8. The off-shell identity is the practical check of any current ([[P3 Noether's Procedure#^p3-5|P3, step 5]]).
 > - No integral and no boundary term appear: the theorem is local.
 > - Assumptions used: the parameter is constant (step 3); $\mathcal L$ depends on $\phi$ and first derivatives only; fields are twice differentiable ([[§C1b.5 Noether's Theorem#^rem-c1b-5-6|Remark: In what sense these identities hold]]).
-> - Used next: the charge ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]), every example, and the general form ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-3|Theorem §C1b.6.3]]).
+> - Only step 1 uses the symmetry. With a $\delta\mathcal L$ that is not a divergence, steps 2–8 give the divergence of the would-be current instead of zero ([[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]).
+> - Used next: the charge ([[§C1b.5 Noether's Theorem#^thm-c1b-5-6|Theorem §C1b.5.6]]), every example, and the general form ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-3|Theorem §C1b.6.3]]).
 
-^der-c1b-5-2
+^der-c1b-5-4
 
-*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-4|P3, steps 4–5]]
 
 > [!remark] Remark: The action principle's computation, run backwards
-> Formula 2 is the manipulation that derives the Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^der-c1b-2-4|Derivation §C1b.2.4]]), with the logic reversed. There, $\delta\phi$ was arbitrary and vanished on the boundary, and the equation of motion was *concluded* from $\delta S = 0$. Here, $\delta\phi$ is the specific shape of a symmetry and need not vanish anywhere (a constant shift does not), and the equation of motion is *assumed*: one works with a solution and maps it to another. The line on the Lecture 3 slide, $\alpha\,\partial_\mu\bigl(\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\Delta\phi\bigr) = \alpha\,\partial_\mu\mathcal J^\mu$, is the off-shell identity with the Euler–Lagrange term already dropped: it holds on shell only. In the user's notes the theorem is boxed as a principle; it is derived here from [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]] and the Euler–Lagrange equations, so it is a theorem. What is new compared with [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]]: a conserved number $I = \sum p_i\eta_i - K$ along each motion becomes a continuity equation at every point, and the number becomes the integral of a density ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]).
+> Formula 2 is the manipulation that derives the Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^der-c1b-2-4|Derivation §C1b.2.4]]), with the logic reversed. There, $\delta\phi$ was arbitrary and vanished on the boundary, and the equation of motion was *concluded* from $\delta S = 0$. Here, $\delta\phi$ is the specific shape of a symmetry and need not vanish anywhere (a constant shift does not), and the equation of motion is *assumed*: one works with a solution and maps it to another. The line on the Lecture 3 slide, $\alpha\,\partial_\mu\bigl(\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\Delta\phi\bigr) = \alpha\,\partial_\mu\mathcal J^\mu$, is the off-shell identity with the Euler–Lagrange term already dropped: it holds on shell only. In the user's notes the theorem is boxed as a principle; it is derived here from [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]] and the Euler–Lagrange equations, so it is a theorem. What is new compared with [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]]: a conserved number $I = \sum p_i\eta_i - K$ along each motion becomes a continuity equation at every point, and the number becomes the integral of a density ([[§C1b.5 Noether's Theorem#^thm-c1b-5-6|Theorem §C1b.5.6]]).
 
 ^rem-c1b-5-4
 
 > [!remark] Remark: Several fields, several parameters
-> The sum over $i$ is the whole rule for theories with several fields: one current per parameter, summed over every field the parameter moves. The number of currents is $\dim G$, the number of parameters, not the number of fields ([[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]]). The spacetime currents $T^{\mu\nu}$ and $\mathcal M^{\mu\nu\rho}$ are accordingly sums over all fields present, and $T^{00} = \mathcal H$ holds with the summed Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-2|§C1b.4, Remark: Several fields, and a non-canonical normalization]]; [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]). For a complex field, $\phi$ and $\phi^*$ are two of the $\phi_i$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]).
+> The sum over $i$ is the whole rule for theories with several fields: one current per parameter, summed over every field the parameter moves. The number of currents is $\dim G$, the number of parameters, not the number of fields ([[§C1b.5 Noether's Theorem#^ex-c1b-5-4|Example §C1b.5.4]]). The spacetime currents $T^{\mu\nu}$ and $\mathcal M^{\mu\nu\rho}$ are accordingly sums over all fields present, and $T^{00} = \mathcal H$ holds with the summed Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-2|§C1b.4, Remark: Several fields, and a non-canonical normalization]]; [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]). For a complex field, $\phi$ and $\phi^*$ are two of the $\phi_i$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]).
 
 ^rem-c1b-5-5
 
+> [!remark] Remark: What the sum over fields runs over
+> The index $i$ in $\sum_i\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_i)}\Delta\phi_i$ runs over a complete set of independent field variables of $\mathcal L$: every real component, with each complex component entered either as its real and imaginary parts or as the pair (field, conjugate) treated as independent ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]); both choices give the same sum (step 4 of [[§C1b.5 Noether's Theorem#^der-c1b-5-2|Derivation §C1b.5.2]]). The field label is a spacetime index only for a vector field:
+>
+> | field | independent variables in the sum | the label |
+> | --- | --- | --- |
+> | real scalar $\phi$ | $\phi$: 1 real | none |
+> | complex scalar $\phi$ | $\phi$, $\phi^{\ast}$ (equivalently $\phi_1$, $\phi_2$): 2 real | none |
+> | vector $A^\mu$ | $A^0$, $A^1$, $A^2$, $A^3$: 4 real | a spacetime index: under Lorentz transformations the components mix with $\Lambda$ ([[§C1b.1 Fields and Their Transformation Laws#^ex-c1b-1-1\|Example §C1b.1.1]]) |
+> | Dirac $\psi$ | $\psi_1, \dots, \psi_4$ and $\bar\psi_1, \dots, \bar\psi_4$: 4 complex components, 8 real | a spinor index $a$, not a spacetime index: the components mix with $\Lambda_{1/2}$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-2\|§C5b.2, Caution: u is not a four-vector]]) |
+>
+> For the Dirac field the sum over $a$ is a row times a column, $\sum_a\frac{\partial\mathcal L}{\partial(\partial_\mu\psi_a)}\Delta\psi_a = i\bar\psi\gamma^\mu\Delta\psi$, and the $\bar\psi_a$ add nothing to the current because $\mathcal L$ has no $\partial_\mu\bar\psi$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]]); they do contribute to $\delta\mathcal L$ ([[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]]). That a Dirac spinor has as many components as a four-vector is special to four dimensions: in $d$ spacetime dimensions it has $2^{\lfloor d/2\rfloor}$ components against $d$ ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-4|§C5a.5, Remark: What each Dirac index labels]]).
+
+^rem-c1b-5-11
+
 > [!remark] Remark: In what sense these identities hold
-> The fields here are classical: twice continuously differentiable real or complex functions on spacetime, and every identity of this section holds pointwise. No generalized function appears. Two assumptions are added where they are used: the current falls off at spatial infinity fast enough that its flux through a large sphere vanishes, and $d/dt$ may be taken under $\int d^3x$ ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]); both enter only in [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]. After quantization the same currents are products of operator-valued distributions at one point ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]); they become operators only after normal ordering ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]), and the ordering constant of a charge is not harmless ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-2|§C2a.5, Remark: Why the vacuum must be neutral]]).
+> The fields here are classical: twice continuously differentiable real or complex functions on spacetime, and every identity of this section holds pointwise. No generalized function appears. Two assumptions are added where they are used: the current falls off at spatial infinity fast enough that its flux through a large sphere vanishes, and $d/dt$ may be taken under $\int d^3x$ ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]); both enter only in [[§C1b.5 Noether's Theorem#^thm-c1b-5-6|Theorem §C1b.5.6]]. After quantization the same currents are products of operator-valued distributions at one point ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]); they become operators only after normal ordering ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]), and the ordering constant of a charge is not harmless ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-2|§C2a.5, Remark: Why the vacuum must be neutral]]).
 
 ^rem-c1b-5-6
 
+## When the test fails
+
+The algebra of the proof does not need the symmetry until its last line. Run with a $\delta\mathcal L$ that is not a divergence, it gives the divergence of the would-be current instead of zero.
+
+> [!theorem] Theorem §C1b.5.5: The Divergence of the Current When the Test Fails
+> Let $\delta\phi_i = \alpha\Delta\phi_i$ be any continuous transformation with a constant parameter ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]]), and split its $\delta\mathcal L$, computed by either route of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], as
+>
+> $$
+> \delta\mathcal L = \alpha\bigl(\partial_\mu\mathcal J^\mu + X\bigr) ,
+> $$
+>
+> with $\mathcal J^\mu$ the part written as a divergence (possibly $0$) and $X$ the remainder. Then $j^\mu \equiv \sum_i\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_i)}\Delta\phi_i - \mathcal J^\mu$ satisfies
+>
+> $$
+> \partial_\mu j^\mu = X - \sum_i\Bigl[\frac{\partial\mathcal L}{\partial\phi_i} - \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_i)}\Bigr]\Delta\phi_i \quad \text{(off shell)}, \qquad \partial_\mu j^\mu = X \quad \text{(on shell)} .
+> $$
+>
+> For $X = 0$ this is [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]. If $X$ is not a divergence, the transformation is no symmetry (outcome (iii) of [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]), and on solutions the divergence of the would-be current is the non-divergence part of $\delta\mathcal L/\alpha$; with $\mathcal J = 0$, simply $\partial_\mu j^\mu = \delta\mathcal L/\alpha$.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, eq. (noetheroffshell) and Example 1 ("With a mass, step 2 gives $\delta\mathcal L = -\alpha m^2\phi$ … and indeed $\partial_\mu\partial^\mu\phi = -m^2\phi \neq 0$") · PHY 513 Lecture 3, Part C ("Vary Lagrangean explicitly") · the identity with $\delta\mathcal L$ not a divergence written out here*
+
+^thm-c1b-5-5
+
+> [!derivation]- Derivation
+> One parameter; several fields carry $\sum_i$ throughout. Write $\pi^\mu_i \equiv \partial\mathcal L/\partial(\partial_\mu\phi_i)$ and $\mathrm{EL}_i \equiv \partial\mathcal L/\partial\phi_i - \partial_\mu\pi^\mu_i$. Steps 1–4 assume no symmetry and no equation of motion.
+>
+> **1. Route 2.** By [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], for every configuration, $\delta\mathcal L = \alpha\sum_i\bigl[\frac{\partial\mathcal L}{\partial\phi_i}\Delta\phi_i + \pi^\mu_i\,\partial_\mu(\Delta\phi_i)\bigr]$.
+>
+> **2. Product rule.** At each point $\pi^\mu_i\,\partial_\mu(\Delta\phi_i) = \partial_\mu(\pi^\mu_i\Delta\phi_i) - (\partial_\mu\pi^\mu_i)\,\Delta\phi_i$, as in step 4 of [[§C1b.5 Noether's Theorem#^der-c1b-5-4|Derivation §C1b.5.4]]. Hence
+>
+> $$
+> \delta\mathcal L = \alpha\sum_i\mathrm{EL}_i\,\Delta\phi_i + \alpha\,\partial_\mu\Bigl(\sum_i\pi^\mu_i\Delta\phi_i\Bigr) .
+> $$
+>
+> **3. Equate with the substitution result.** Both are the first-order change of the same function ([[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]), so $\alpha(\partial_\mu\mathcal J^\mu + X) = \alpha\sum_i\mathrm{EL}_i\,\Delta\phi_i + \alpha\,\partial_\mu\bigl(\sum_i\pi^\mu_i\Delta\phi_i\bigr)$. Divide by $\alpha \ne 0$.
+>
+> **4. Collect the divergences.** Move $\partial_\mu\mathcal J^\mu$ to the right and $\sum_i\mathrm{EL}_i\Delta\phi_i$ to the left: $\partial_\mu\bigl(\sum_i\pi^\mu_i\Delta\phi_i - \mathcal J^\mu\bigr) = X - \sum_i\mathrm{EL}_i\,\Delta\phi_i$. The vector in parentheses is $j^\mu$: the off-shell identity.
+>
+> **5. On shell.** On a solution every $\mathrm{EL}_i = 0$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]), so $\partial_\mu j^\mu = X$.
+>
+> **6. The split is not unique; the statement is.** If $X = X' + \partial_\mu K^\mu$ with $K$ local, the same $\delta\mathcal L$ reads $\alpha(\partial_\mu\mathcal J'^\mu + X')$ with $\mathcal J' = \mathcal J + K$, and the current becomes $j' = j - K$. Then on shell $\partial_\mu j'^\mu = \partial_\mu j^\mu - \partial_\mu K^\mu = X - \partial_\mu K^\mu = X'$: current and remainder shift together. ⚑ By-product: a shift removes $X$ entirely only if $X$ is itself a divergence, which is outcome (ii); otherwise no choice of $\mathcal J$ gives a conserved current of this form → [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]].
+>
+> **7. The charge.** Steps 2–5 of [[§C1b.5 Noether's Theorem#^der-c1b-5-6|Derivation §C1b.5.6]], run with $\partial_tj^0 = X - \nabla\cdot\mathbf j$ in place of $\partial_tj^0 = -\nabla\cdot\mathbf j$, give for a fixed region $V$
+>
+> $$
+> \frac{dQ_V}{dt} = \int_Vd^3x\;X - \oint_{\partial V}\mathbf j\cdot d\mathbf S ,
+> $$
+>
+> and, with the fall-off assumed there and $X$ integrable, $dQ/dt = \int d^3x\,X$. ⚑ By-product: $X$ is the local rate at which the non-invariant term creates charge.
+>
+> **What the derivation shows**
+> - Noether's theorem and its failure are one computation; only the input $\delta\mathcal L$ differs, and the equations of motion enter only at step 5.
+> - Cross-check: a divergence computed directly from the field equations must equal $X$; a mismatch is an error in $\delta\mathcal L$ or in the current ([[§C1b.5 Noether's Theorem#^ex-c1b-5-3|Example §C1b.5.3]], massive case; [[§C1b.5 Noether's Theorem#^ex-c1b-5-5|Example §C1b.5.5]]).
+> - Assumptions: $\alpha$ constant (step 1); $\mathcal L$ with first derivatives only; for step 7, the fall-off of [[§C1b.5 Noether's Theorem#^thm-c1b-5-6|Theorem §C1b.5.6]] and an integrable $X$.
+> - Used next: [[§C1b.5 Noether's Theorem#^rem-c1b-5-12|Remark: The three outcomes of the test and their currents]]; [[P3 Noether's Procedure#^p3-3|P3, steps 3 and 5]].
+
+^der-c1b-5-5
+
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-6|Theorem §C1b.5.6]]
+
+*Procedure:* [[P3 Noether's Procedure#^p3-3|P3, step 3]], [[P3 Noether's Procedure#^p3-5|P3, step 5]]
+
+> [!remark] Remark: The three outcomes of the test and their currents
+> | outcome ([[§C1b.5 Noether's Theorem#^def-c1b-5-5\|Def. §C1b.5.5]]) | $\delta\mathcal L$ | current | $\partial_\mu j^\mu$ on shell | examples |
+> | --- | --- | --- | --- | --- |
+> | (i) invariant | $0$ | $\sum_i\pi^\mu_i\Delta\phi_i$, no extra term | $0$ | massless shift ([[§C1b.5 Noether's Theorem#^ex-c1b-5-3\|Example §C1b.5.3]]); complex phase ([[§C1b.5 Noether's Theorem#^thm-c1b-5-8\|Theorem §C1b.5.8]]); rotation of two fields ([[§C1b.5 Noether's Theorem#^ex-c1b-5-4\|Example §C1b.5.4]]); Dirac phase ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3\|Theorem §C5a.8.3]]) |
+> | (ii) a divergence | $\alpha\,\partial_\mu\mathcal J^\mu$ | $\sum_i\pi^\mu_i\Delta\phi_i - \mathcal J^\mu$ | $0$ | translations, $\mathcal J^\mu{}_\nu = \delta^\mu{}_\nu\mathcal L$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5\|Theorem §C1b.6.5]]); Lorentz transformations ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1\|Theorem §C1b.7.1]]) |
+> | (iii) not a divergence | $\alpha X$ | $\sum_i\pi^\mu_i\Delta\phi_i$, not conserved | $X$ | massive shift, $X = -m^2\phi$ ([[§C1b.5 Noether's Theorem#^ex-c1b-5-3\|Example §C1b.5.3]]); mass splitting, $X = 2\lambda\phi_1\phi_2$ ([[§C1b.5 Noether's Theorem#^ex-c1b-5-5\|Example §C1b.5.5]]) |
+>
+> All three rows are [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], with $X = 0$ in (i) and (ii). Forgetting $\mathcal J$ in case (ii) manufactures a false case (iii): for translations $\sum_i\pi^\mu_i\partial_\nu\phi_i = T^\mu{}_\nu + \delta^\mu{}_\nu\mathcal L$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-6-2|Def. §C1b.6.2]]) has divergence $\partial_\nu\mathcal L \ne 0$ on shell, although energy and momentum are conserved. Conversely, a divergence computed directly from the field equations is checked against $\delta\mathcal L/\alpha - \partial_\mu\mathcal J^\mu$: the two must agree.
+
+^rem-c1b-5-12
+
 ## From current to charge
 
-> [!definition] Definition §C1b.5.5: Charge Density
+> [!definition] Definition §C1b.5.6: Charge Density
 > For a Noether current $j^\mu = (j^0, \mathbf j)$, with $\mathbf j$ the vector of components $j^i$, the **charge density** is $\rho \equiv j^0$. It need not be an electric charge density.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eq. (charge) · PS §2.2, eq. (2.13) · Lecture 3, "Noether's Charge" · Yu §1.7.1, eqs. (1.200), (1.202)*
 
-^def-c1b-5-5
+^def-c1b-5-6
 
-> [!definition] Definition §C1b.5.6: Noether Charge
-> The **Noether charge** of a current $j^\mu$ in a fixed spatial region $V$ and in all of space is the integral of its charge density ([[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]),
+> [!definition] Definition §C1b.5.7: Noether Charge
+> The **Noether charge** of a current $j^\mu$ in a fixed spatial region $V$ and in all of space is the integral of its charge density ([[§C1b.5 Noether's Theorem#^def-c1b-5-6|Def. §C1b.5.6]]),
 >
 > $$
 > Q_V(t) \equiv \int_Vd^3x\;j^0(t, \mathbf x), \qquad Q \equiv \int d^3x\;j^0(t, \mathbf x) ;
@@ -276,9 +547,9 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eq. (charge) · PS §2.2, eq. (2.13) · Lecture 3, "Noether's Charge" · Yu §1.7.1, eqs. (1.200), (1.202)*
 
-^def-c1b-5-6
+^def-c1b-5-7
 
-> [!theorem] Theorem §C1b.5.3: Continuity Equation and Conservation of the Charge
+> [!theorem] Theorem §C1b.5.6: Continuity Equation and Conservation of the Charge
 > $\partial_\mu j^\mu = 0$ is the continuity equation $\partial_t\rho + \nabla\cdot\mathbf j = 0$, and for a fixed region $V$ with outward surface element $d\mathbf S$,
 >
 > $$
@@ -289,7 +560,7 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eqs. (continuity), (dQdt) · Yu §1.7.1, eqs. (1.199)–(1.202) · PS §2.2 · Lecture 3, "Noether's Charge"*
 
-^thm-c1b-5-3
+^thm-c1b-5-6
 
 > [!derivation]- Derivation
 > **1. Components.** $x^\mu = (t, \mathbf x)$ and $\partial_\mu = \partial/\partial x^\mu = (\partial_t, \nabla)$, with $(\nabla)_i = \partial_i$. A lower index contracted with an upper index is a plain sum, with no metric: $\partial_\mu j^\mu = \partial_0j^0 + \partial_1j^1 + \partial_2j^2 + \partial_3j^3 = \partial_t\rho + \nabla\cdot\mathbf j$. ⚑ By-product: the sign between the two terms is $+$; the slides write $-$ → [[§C1b.5 Noether's Theorem#^cau-c1b-5-1|Caution: The sign in the slides' continuity equation]].
@@ -305,11 +576,11 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 > **What the derivation shows**
 > - Conservation is local first: no charge is created or destroyed anywhere; global conservation needs the fall-off.
 > - Nothing beyond $\partial_\mu j^\mu = 0$ was used: this is the same argument as for electric charge ([[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-6|REL Theorem §B4.2.6]]), here for any symmetry.
-> - Used next: energy and momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]), improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]).
+> - Used next: energy and momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]), improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-7|Theorem §C1b.5.7]]).
 
-^der-c1b-5-3
+^der-c1b-5-6
 
-*Uses:* [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], [[§C1b.5 Noether's Theorem#^def-c1b-5-6|Def. §C1b.5.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]]
+*Uses:* [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.5 Noether's Theorem#^def-c1b-5-6|Def. §C1b.5.6]], [[§C1b.5 Noether's Theorem#^def-c1b-5-7|Def. §C1b.5.7]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-6|P3, step 6]]
 
@@ -318,7 +589,7 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 
 ^cau-c1b-5-1
 
-> [!theorem] Theorem §C1b.5.4: Improvement Terms
+> [!theorem] Theorem §C1b.5.7: Improvement Terms
 > Let $B^{\nu\mu} = -B^{\mu\nu}$ be any twice-differentiable antisymmetric tensor built from the fields. Then
 > 1. $\partial_\mu\partial_\nu B^{\nu\mu} = 0$ identically, so $j'^\mu = j^\mu + \partial_\nu B^{\nu\mu}$ is conserved whenever $j^\mu$ is;
 > 2. if $B^{i0}$ falls off faster than $1/r^2$ at spatial infinity, $j'$ and $j$ have the same charge.
@@ -327,7 +598,7 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Caution "What the theorem does and does not say" · PHY 513 Problem Set 2, Problem 4(d) (statement)*
 
-^thm-c1b-5-4
+^thm-c1b-5-7
 
 > [!derivation]- Derivation
 > **1. Symmetric against antisymmetric.** Partial derivatives of a $C^2$ function commute, so $\partial_\mu\partial_\nu$ is symmetric in $\mu\nu$. Relabel the dummies $\mu \leftrightarrow \nu$, then use both symmetries: $\partial_\mu\partial_\nu B^{\nu\mu} = \partial_\nu\partial_\mu B^{\mu\nu} = \partial_\mu\partial_\nu B^{\mu\nu} = -\partial_\mu\partial_\nu B^{\nu\mu}$, so the expression is zero ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]]). No equation of motion is used.
@@ -336,20 +607,20 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 >
 > **3. The charge density changes by a divergence.** $j'^0 - j^0 = \partial_\nu B^{\nu0} = \partial_0B^{00} + \partial_iB^{i0}$, and $B^{00} = -B^{00} = 0$. With $b^i \equiv B^{i0}$, $j'^0 - j^0 = \nabla\cdot\mathbf b$.
 >
-> **4. Its integral is a surface term.** $\int_{B_R}d^3x\,\nabla\cdot\mathbf b = \oint_{S_R}\mathbf b\cdot d\mathbf S$ ([[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]]), which tends to $0$ as $R \to \infty$ under the fall-off, as in step 5 of [[§C1b.5 Noether's Theorem#^der-c1b-5-3|Derivation §C1b.5.3]]. So $Q' = Q$.
+> **4. Its integral is a surface term.** $\int_{B_R}d^3x\,\nabla\cdot\mathbf b = \oint_{S_R}\mathbf b\cdot d\mathbf S$ ([[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]]), which tends to $0$ as $R \to \infty$ under the fall-off, as in step 5 of [[§C1b.5 Noether's Theorem#^der-c1b-5-6|Derivation §C1b.5.6]]. So $Q' = Q$.
 >
 > **What the derivation shows**
 > - Part 1 is identically true; part 2 needs the fall-off.
 > - ⚑ By-product: this freedom is what symmetrizes the energy–momentum tensor → [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]. With an extra label, $B^{\lambda\mu}{}_\nu$ antisymmetric in $\lambda\mu$, the same argument holds for each $\nu$.
 
-^der-c1b-5-4
+^der-c1b-5-7
 
-*Uses:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]
+*Uses:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-6|Theorem §C1b.5.6]]
 
 > [!caution] Caution: What the theorem does and does not say
-> - The current is conserved **on solutions**; off shell, $\partial_\mu j^\mu$ is minus the Euler–Lagrange expression times $\Delta\phi$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]).
-> - The charge is conserved **subject to boundary conditions** ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]).
-> - The current is **not unique**: improvement terms change it without changing $\partial_\mu j^\mu$ or $Q$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]). Likewise $\delta\mathcal L = 0$ says only $\partial_\mu\mathcal J^\mu = 0$; taking $\mathcal J = 0$ is a choice, the natural one because $\mathcal J$ is a name for whatever makes $\delta\mathcal L$ a total derivative. Any other admissible $\mathcal J$ shifts $j^\mu$ by an identically conserved vector and gives the same conservation law.
+> - The current is conserved **on solutions**; off shell, $\partial_\mu j^\mu$ is minus the Euler–Lagrange expression times $\Delta\phi$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]).
+> - The charge is conserved **subject to boundary conditions** ([[§C1b.5 Noether's Theorem#^thm-c1b-5-6|Theorem §C1b.5.6]]).
+> - The current is **not unique**: improvement terms change it without changing $\partial_\mu j^\mu$ or $Q$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-7|Theorem §C1b.5.7]]). Likewise $\delta\mathcal L = 0$ says only $\partial_\mu\mathcal J^\mu = 0$; taking $\mathcal J = 0$ is a choice, the natural one because $\mathcal J$ is a name for whatever makes $\delta\mathcal L$ a total derivative. Any other admissible $\mathcal J$ shifts $j^\mu$ by an identically conserved vector and gives the same conservation law.
 > - The theorem needs a Lagrangian and a continuous family; discrete symmetries (parity, charge conjugation) give no current (QFT C9, planned).
 
 ^cau-c1b-5-2
@@ -365,7 +636,7 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 
 In an internal symmetry the point is not moved; only the values of the fields change. Step 1 is a direct expansion, and step 3 typically gives outcome (i), $\mathcal J = 0$.
 
-> [!example] Example §C1b.5.1: Shift Symmetry of the Massless Field
+> [!example] Example §C1b.5.3: Shift Symmetry of the Massless Field
 > $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi$, transformation $\phi \to \phi + \alpha$.
 > 1. $\Delta\phi = 1$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]): the field changes by the same amount everywhere.
 > 2. Substitute: $\mathcal L(\phi + \alpha) = \frac12\partial_\mu(\phi + \alpha)\,\partial^\mu(\phi + \alpha) = \frac12\partial_\mu\phi\,\partial^\mu\phi$, since $\partial_\mu\alpha = 0$. So $\delta\mathcal L = 0$.
@@ -374,15 +645,15 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > 5. For any $\phi$, $\partial_\mu j^\mu = \partial^2\phi$. The Euler–Lagrange expression is $\partial\mathcal L/\partial\phi - \partial_\mu(\partial^\mu\phi) = 0 - \partial^2\phi$, so $\partial_\mu j^\mu = -\mathrm{EL}\cdot1$, as the off-shell identity requires; it vanishes exactly on solutions. Conservation of this current *is* the massless equation of motion. (Formula 1 of the proof gave $\delta\mathcal L = 0$; Formula 2 gives $\alpha(-\partial^2\phi) + \alpha\,\partial_\mu\partial^\mu\phi = 0$ for every $\phi$: the two agree.)
 > 6. $Q = \int d^3x\,j^0 = \int d^3x\,\partial^0\phi = \int d^3x\,\dot\phi$.
 >
-> **With a mass**, $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2$, step 2 gives $-\frac12m^2(\phi + \alpha)^2 + \frac12m^2\phi^2 = -\alpha m^2\phi + O(\alpha^2)$, so $\delta\mathcal L = -\alpha m^2\phi$. This is outcome (iii). Suppose $-m^2\phi = \partial_\mu\mathcal J^\mu$ for every configuration, with $\mathcal J$ built locally from the fields, their derivatives and $x$. Take a bump configuration $\phi \ge 0$, $\phi \not\equiv 0$, supported inside a ball $B$, and integrate over $B$: by the divergence theorem the right side is the flux of $\mathcal J$ through $\partial B$, where the field and its derivatives vanish, so it equals the flux for the configuration $\phi = 0$, which is $\int_B(-m^2\cdot0) = 0$; but the left side is $-m^2\int_B\phi < 0$. No symmetry, and indeed $\partial_\mu\partial^\mu\phi = -m^2\phi \ne 0$ on shell: no conservation. The example shows both directions, symmetry with conservation and no symmetry without it.
+> **With a mass**, $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2$, step 2 gives $-\frac12m^2(\phi + \alpha)^2 + \frac12m^2\phi^2 = -\alpha m^2\phi + O(\alpha^2)$, so $\delta\mathcal L = -\alpha m^2\phi$. This is outcome (iii). Suppose $-m^2\phi = \partial_\mu\mathcal J^\mu$ for every configuration, with $\mathcal J$ built locally from the fields, their derivatives and $x$. Take a bump configuration $\phi \ge 0$, $\phi \not\equiv 0$, supported inside a ball $B$, and integrate over $B$: by the divergence theorem the right side is the flux of $\mathcal J$ through $\partial B$, where the field and its derivatives vanish, so it equals the flux for the configuration $\phi = 0$, which is $\int_B(-m^2\cdot0) = 0$; but the left side is $-m^2\int_B\phi < 0$. No symmetry, and indeed $\partial_\mu\partial^\mu\phi = -m^2\phi \ne 0$ on shell: no conservation. This is [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]] with $X = \delta\mathcal L/\alpha = -m^2\phi$: on shell the divergence of the would-be current $\partial^\mu\phi$ equals $\delta\mathcal L/\alpha$, and the Klein–Gordon equation read as $\partial_\mu(\partial^\mu\phi) = -m^2\phi$ is that statement. The example shows both directions, symmetry with conservation and no symmetry without it.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 1 · Lecture 3, Example 1 · PS §2.2, p. 18*
 
-^ex-c1b-5-1
+^ex-c1b-5-3
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]]
 
-> [!theorem] Theorem §C1b.5.5: The U(1) Current of the Complex Scalar Field
+> [!theorem] Theorem §C1b.5.8: The U(1) Current of the Complex Scalar Field
 > For $\mathcal L = \partial_\mu\phi^*\partial^\mu\phi - m^2\phi^*\phi - V(\phi^*\phi)$, with $V$ any smooth function, the global phase rotation $\phi \to e^{i\alpha}\phi$, $\phi^* \to e^{-i\alpha}\phi^*$ is a symmetry with $\mathcal J = 0$, and its Noether current
 >
 > $$
@@ -393,7 +664,7 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 2, eq. (U1current) · PS §2.2, eqs. (2.14)–(2.16) · PHY 513 Problem Set 2, Problem 3(c)–(d), with the course solution · Lecture 3, Example 2 · Yu §1.7.4, eqs. (1.253)–(1.263)*
 
-^thm-c1b-5-5
+^thm-c1b-5-8
 
 > [!derivation]- Derivation
 > The steps of [[P3 Noether's Procedure]]. Here $N = 2$ fields ($\phi$ and $\phi^*$, independent, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]) and $\dim G = 1$: one parameter moves both.
@@ -422,7 +693,7 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > i(\phi\,\partial^2\phi^* - \phi^*\partial^2\phi) = i\bigl(-\phi\,\mathrm{EL}_\phi + \phi^*\mathrm{EL}_{\phi^*}\bigr) - i(m^2 + V')(\phi\phi^* - \phi^*\phi) = -\bigl[\mathrm{EL}_\phi\,(i\phi) + \mathrm{EL}_{\phi^*}(-i\phi^*)\bigr] ,
 > $$
 >
-> the off-shell identity of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]; the potential terms cancel because $\phi\phi^* = \phi^*\phi$. On shell both $\mathrm{EL}$ vanish and $\partial_\mu j^\mu = 0$, with a mass and with $V$.
+> the off-shell identity of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; the potential terms cancel because $\phi\phi^* = \phi^*\phi$. On shell both $\mathrm{EL}$ vanish and $\partial_\mu j^\mu = 0$, with a mass and with $V$.
 >
 > **6. Charge.** $\partial^0 = \partial_t$, so $j^0 = i(\phi\dot\phi^{\ast} - \phi^{\ast}\dot\phi)$. ⚑ By-product: for a positive-frequency solution $\phi = A\,e^{-iEt + i\mathbf p\cdot\mathbf x}$, $E > 0$, one has $\dot\phi = -iE\phi$, $\dot\phi^{\ast} = iE\phi^{\ast}$, and $j^0 = i(iE + iE)\lvert A\rvert^2 = -2E\lvert A\rvert^2 < 0$ → [[§C1b.5 Noether's Theorem#^cau-c1b-5-3|Caution: Sign and normalization of the U(1) current]].
 >
@@ -431,9 +702,9 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > - The equations of motion enter only in step 5.
 > - Used next: the quantum charge [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]] is $-\frac12$ times this charge, normal ordered.
 
-^der-c1b-5-5
+^der-c1b-5-8
 
-*Uses:* [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]
+*Uses:* [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
@@ -443,13 +714,13 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 ^cau-c1b-5-3
 
 > [!remark] Remark: Global, internal, and what a local phase would need
-> The phases $e^{i\alpha}$ form the group U(1) $\cong$ SO(2) (Yu eq. (1.255)); in real components the phase is a rotation of the pair $(\phi_1, \phi_2)$ ([[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]]), and the current $\phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1$ is the field-space analogue of $xp_y - yp_x$. The symmetry is **internal** (the point is fixed, $\delta x = 0$) and **global** ($\alpha$ the same everywhere). For $\alpha(x)$, step 2 fails: $\partial_\mu(e^{i\alpha(x)}\phi) = e^{i\alpha}(\partial_\mu\phi + i\,\partial_\mu\alpha\,\phi)$, so the kinetic term changes by terms in $\partial_\mu\alpha$, and restoring invariance needs a gauge field coupled to $j^\mu$ (QFT C8, planned; for the wave function, minimal coupling [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^pr-c13-1-3|QM Principle §C13.1.3]]). Several species of charges $q_n$ have $\Delta\phi_n = iq_n\phi_n$, and each term of the current carries its $q_n$. If the field is electrically charged, $Q$ times the unit charge is the electric charge, and charge conservation is Noether's theorem for this phase symmetry.
+> The phases $e^{i\alpha}$ form the group U(1) $\cong$ SO(2) (Yu eq. (1.255)); in real components the phase is a rotation of the pair $(\phi_1, \phi_2)$ ([[§C1b.5 Noether's Theorem#^ex-c1b-5-4|Example §C1b.5.4]]), and the current $\phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1$ is the field-space analogue of $xp_y - yp_x$. The symmetry is **internal** (the point is fixed, $\delta x = 0$) and **global** ($\alpha$ the same everywhere). For $\alpha(x)$, step 2 fails: $\partial_\mu(e^{i\alpha(x)}\phi) = e^{i\alpha}(\partial_\mu\phi + i\,\partial_\mu\alpha\,\phi)$, so the kinetic term changes by terms in $\partial_\mu\alpha$, and restoring invariance needs a gauge field coupled to $j^\mu$ (QFT C8, planned; for the wave function, minimal coupling [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^pr-c13-1-3|QM Principle §C13.1.3]]). Several species of charges $q_n$ have $\Delta\phi_n = iq_n\phi_n$, and each term of the current carries its $q_n$. If the field is electrically charged, $Q$ times the unit charge is the electric charge, and charge conservation is Noether's theorem for this phase symmetry.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 2 (closing paragraph) · Yu §1.7.4*
 
 ^rem-c1b-5-8
 
-> [!example] Example §C1b.5.2: Two Real Fields: One Rotation or Two Shifts
+> [!example] Example §C1b.5.4: Two Real Fields: One Rotation or Two Shifts
 > Take two real fields with $\mathcal L = \frac12(\partial\phi_1)^2 + \frac12(\partial\phi_2)^2 - \frac12m^2(\phi_1^2 + \phi_2^2)$, which is the complex $\mathcal L$ with $V = 0$ written in $\phi = (\phi_1 + i\phi_2)/\sqrt2$: $\partial_\mu\phi^*\partial^\mu\phi = \frac12(\partial_\mu\phi_1 - i\partial_\mu\phi_2)(\partial^\mu\phi_1 + i\partial^\mu\phi_2) = \frac12(\partial\phi_1)^2 + \frac12(\partial\phi_2)^2$, the cross terms cancelling, and $m^2\phi^*\phi = \frac12m^2(\phi_1^2 + \phi_2^2)$.
 >
 > **(a) One rotation.** $\Delta\phi_1 = -\phi_2$, $\Delta\phi_2 = \phi_1$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]). Step 2: the kinetic terms change by $\alpha(\partial\phi_1\cdot\partial(-\phi_2) + \partial\phi_2\cdot\partial\phi_1) = 0$, the mass term by $-m^2\alpha(\phi_1(-\phi_2) + \phi_2\phi_1) = 0$: $\mathcal J = 0$. Step 4, one current from two fields:
@@ -458,23 +729,56 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > j^\mu = \partial^\mu\phi_1\,(-\phi_2) + \partial^\mu\phi_2\,\phi_1 = \phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1 .
 > $$
 >
-> It is the U(1) current of [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]: $\phi\,\partial\phi^* = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2)\bigr]$ and $\phi^*\partial\phi = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_1\partial\phi_2 - \phi_2\partial\phi_1)\bigr]$, so $i(\phi\,\partial\phi^* - \phi^*\partial\phi) = i\cdot i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2) = \phi_1\partial\phi_2 - \phi_2\partial\phi_1$.
+> It is the U(1) current of [[§C1b.5 Noether's Theorem#^thm-c1b-5-8|Theorem §C1b.5.8]]: $\phi\,\partial\phi^* = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2)\bigr]$ and $\phi^*\partial\phi = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_1\partial\phi_2 - \phi_2\partial\phi_1)\bigr]$, so $i(\phi\,\partial\phi^* - \phi^*\partial\phi) = i\cdot i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2) = \phi_1\partial\phi_2 - \phi_2\partial\phi_1$.
 >
-> **(b) Two shifts ($m = 0$).** $\Delta_k\phi_l = \delta_{kl}$, $\dim G = 2$; each shift leaves the massless $\mathcal L$ invariant as in [[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]], and there are two single-term currents, $j^\mu_1 = \partial^\mu\phi_1$ and $j^\mu_2 = \partial^\mu\phi_2$.
+> **(b) Two shifts ($m = 0$).** $\Delta_k\phi_l = \delta_{kl}$, $\dim G = 2$; each shift leaves the massless $\mathcal L$ invariant as in [[§C1b.5 Noether's Theorem#^ex-c1b-5-3|Example §C1b.5.3]], and there are two single-term currents, $j^\mu_1 = \partial^\mu\phi_1$ and $j^\mu_2 = \partial^\mu\phi_2$.
 >
 > The same fields, different families: the number of currents follows the number of parameters, not of fields. For $m = 0$ both families are symmetries, three currents in all; for $m \ne 0$ only the rotation survives.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, "Computing Δφ (step 1)" and Example 2 (closing paragraph)*
 
-^ex-c1b-5-2
+^ex-c1b-5-4
+
+> [!example] Example §C1b.5.5: A Mass Splitting Breaks the Phase Symmetry
+> Add to the free complex field ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]) a term that is not invariant under phases, with a real constant $\lambda$ of mass dimension 2 (unrelated to a quartic coupling):
+>
+> $$
+> \mathcal L = \partial_\mu\phi^{\ast}\partial^\mu\phi - m^2\phi^{\ast}\phi - \frac{\lambda}{2}\bigl(\phi^2 + \phi^{\ast 2}\bigr) .
+> $$
+>
+> 1. **What the term is.** With $\phi = (\phi_1 + i\phi_2)/\sqrt2$: $\phi^2 = \frac12(\phi_1^2 - \phi_2^2 + 2i\phi_1\phi_2)$ and $\phi^{\ast 2} = \frac12(\phi_1^2 - \phi_2^2 - 2i\phi_1\phi_2)$, so $\phi^2 + \phi^{\ast 2} = \phi_1^2 - \phi_2^2$. With the kinetic and mass terms of [[§C1b.5 Noether's Theorem#^ex-c1b-5-4|Example §C1b.5.4]], $\mathcal L = \frac12(\partial\phi_1)^2 + \frac12(\partial\phi_2)^2 - \frac12(m^2 + \lambda)\phi_1^2 - \frac12(m^2 - \lambda)\phi_2^2$: two real fields of masses $m_1^2 = m^2 + \lambda$, $m_2^2 = m^2 - \lambda$ (both real for $\lvert\lambda\rvert < m^2$). The extra term is a mass splitting.
+> 2. **Step 2, Route 1.** $\Delta\phi = i\phi$, $\Delta\phi^{\ast} = -i\phi^{\ast}$; the kinetic and mass terms are unchanged ([[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]]). In the new term $(e^{i\alpha}\phi)^2 = e^{2i\alpha}\phi^2 = \phi^2 + 2i\alpha\phi^2 + O(\alpha^2)$ and $(e^{-i\alpha}\phi^{\ast})^2 = \phi^{\ast 2} - 2i\alpha\phi^{\ast 2} + O(\alpha^2)$, so
+>
+> $$
+> \delta\mathcal L = -\frac{\lambda}{2}\bigl(2i\alpha\phi^2 - 2i\alpha\phi^{\ast 2}\bigr) = -i\alpha\lambda\bigl(\phi^2 - \phi^{\ast 2}\bigr) .
+> $$
+>
+> 3. **Step 2, Route 2.** The new term has $\partial/\partial\phi = -\lambda\phi$ and $\partial/\partial\phi^{\ast} = -\lambda\phi^{\ast}$ and no derivatives of the fields, so it adds $(-\lambda\phi)(i\phi) + (-\lambda\phi^{\ast})(-i\phi^{\ast}) = -i\lambda(\phi^2 - \phi^{\ast 2})$ to the four terms of [[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]], which cancel as there (with $V = 0$). Times $\alpha$: the same $\delta\mathcal L$.
+> 4. **Step 3: not a divergence.** $\phi^2 - \phi^{\ast 2} = 2i\phi_1\phi_2$ (step 1), so $X \equiv \delta\mathcal L/\alpha = -i\lambda\cdot 2i\phi_1\phi_2 = 2\lambda\phi_1\phi_2$. Take $\phi_1 = \phi_2 = f$ with $f \ge 0$, $f \not\equiv 0$, supported inside a ball $B$. A divergence of a local $\mathcal J$ integrates over $B$ to the flux through $\partial B$, where the fields vanish, which equals the flux for the zero configuration, $0$ (the argument of [[§C1b.5 Noether's Theorem#^ex-c1b-5-3|Example §C1b.5.3]]); but $\int_Bd^4x\,2\lambda f^2 \ne 0$ for $\lambda \ne 0$. Outcome (iii): no symmetry.
+> 5. **The would-be current and its divergence.** The kinetic term is unchanged, so $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi^{\ast}$, $\partial\mathcal L/\partial(\partial_\mu\phi^{\ast}) = \partial^\mu\phi$, and $j^\mu = i(\phi\,\partial^\mu\phi^{\ast} - \phi^{\ast}\partial^\mu\phi) = \phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-8|Theorem §C1b.5.8]], [[§C1b.5 Noether's Theorem#^ex-c1b-5-4|Example §C1b.5.4]]). [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]] with $\mathcal J = 0$: on shell
+>
+> $$
+> \partial_\mu j^\mu = X = -i\lambda\bigl(\phi^2 - \phi^{\ast 2}\bigr) = 2\lambda\,\phi_1\phi_2 .
+> $$
+>
+> 6. **Cross-check, directly.** The field equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]) are $\partial_\mu\partial^\mu\phi = \partial\mathcal L/\partial\phi^{\ast} = -m^2\phi - \lambda\phi^{\ast}$ and the conjugate $\partial^2\phi^{\ast} = -m^2\phi^{\ast} - \lambda\phi$. For any field, $\partial_\mu j^\mu = i(\phi\,\partial^2\phi^{\ast} - \phi^{\ast}\partial^2\phi)$, the cross terms cancelling (step 5 of [[§C1b.5 Noether's Theorem#^der-c1b-5-8|Derivation §C1b.5.8]]). Substituting: $i\bigl[\phi(-m^2\phi^{\ast} - \lambda\phi) - \phi^{\ast}(-m^2\phi - \lambda\phi^{\ast})\bigr] = i(-\lambda\phi^2 + \lambda\phi^{\ast 2}) = -i\lambda(\phi^2 - \phi^{\ast 2})$, the mass terms cancelling. In real components, $\partial^2\phi_1 = -m_1^2\phi_1$, $\partial^2\phi_2 = -m_2^2\phi_2$ and $\partial_\mu j^\mu = \phi_1\partial^2\phi_2 - \phi_2\partial^2\phi_1 = (m_1^2 - m_2^2)\,\phi_1\phi_2 = 2\lambda\,\phi_1\phi_2$. Both agree with step 5: the rotation of $(\phi_1, \phi_2)$ is broken by the difference of the two masses.
+> 7. **Charge.** $dQ/dt = \int d^3x\,2\lambda\,\phi_1\phi_2$ for fields falling off at infinity (step 7 of [[§C1b.5 Noether's Theorem#^der-c1b-5-5|Derivation §C1b.5.5]]): the number charge is not conserved, and at $\lambda = 0$ symmetry and conservation return together.
+>
+> *Source: written here as an illustration of [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]; the U(1) current from the user's PHY 513 notes, Ch. 3 §3.5, Example 2 · PS §2.2, eq. (2.14)*
+
+^ex-c1b-5-5
+
+*Procedure:* [[P3 Noether's Procedure#^p3-3|P3, steps 1–5]]
 
 > [!remark]- Connections
 > - The particle theorem [[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]] is the one-dimensional case: its $K$ is $\mathcal J$, its conserved $I = \sum_ip_i\eta_i - K$ is the charge, and $p_i = \partial\mathcal L/\partial\dot q_i$ becomes $\partial\mathcal L/\partial(\partial_\mu\phi)$, the time derivative becoming a four-divergence; field theory turns the conserved number into a local continuity equation.
 > - The shift-symmetric massless field is the field version of a cyclic coordinate ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-1|CM Theorem §B6.4.1]]): $\mathcal L$ depends on $\phi$ only through $\partial\phi$, and the conserved charge $\int d^3x\,\dot\phi = \int d^3x\,\pi$ is the total conjugate momentum ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]).
 > - In Hamiltonian form the charge generates its own symmetry through Poisson brackets ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^rem-b6-4-6|CM Remark: Noether in Hamiltonian form]], [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]]); after quantization commutators take over: the U(1) charge counts quanta with $[\hat Q, \hat a^\dagger] = \frac12\hat a^\dagger$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]]), the way a conserved generator commutes with $\hat H$ in quantum mechanics ([[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-2|QM Theorem §C8.1.2]]).
 > - The indefinite Klein–Gordon density that wrecked the probability interpretation ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]]) is this U(1) charge density; its negative values become antiparticles after quantization ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-3|§C2a.5, Remark: Charge, not probability]]).
-> - Electric charge conservation, the template of every continuity equation ([[§B9.1 Charge, Energy and Poynting's Theorem#^rem-b9-1-1|EM Remark: Charge conservation as the template]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-6|REL Theorem §B4.2.6]]), is Theorem §C1b.5.3 for the phase symmetry of a charged field; making the phase local requires the gauge field (QFT C8, planned).
-> - Improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]) are what makes the electromagnetic energy–momentum tensor symmetric and gauge invariant ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]), and Belinfante's construction ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]]) does it for every field.
+> - Electric charge conservation, the template of every continuity equation ([[§B9.1 Charge, Energy and Poynting's Theorem#^rem-b9-1-1|EM Remark: Charge conservation as the template]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-6|REL Theorem §B4.2.6]]), is Theorem §C1b.5.6 for the phase symmetry of a charged field; making the phase local requires the gauge field (QFT C8, planned).
+> - Improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-7|Theorem §C1b.5.7]]) are what makes the electromagnetic energy–momentum tensor symmetric and gauge invariant ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]), and Belinfante's construction ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]]) does it for every field.
 > - The quantum charges are these classical charges with operator fields inserted and normal ordered ([[P1 Canonical Quantization#^p1-7|P1, steps 7–8]]; [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]).
 > - Electromagnetism level C: making the phase local, classically — minimal coupling turns the global U(1) of a charged field into a gauge symmetry, the coupling is gauge invariant if and only if charge is conserved, and gauge invariance makes the field equations dependent (the Noether-identity form) — [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-4|EM Theorem §C1.3.4]], [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-1|EM Theorem §C1.3.1]], [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-2|EM Theorem §C1.3.2]].
+> - A continuous symmetry is fixed by its generator ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]), the field-level counterpart of a one-parameter group being the exponential of its generator ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]); this is why the infinitesimal $\Delta\phi$ carries all the information Noether's theorem uses.
+> - A transformation that fails the test still has a useful current: its divergence on shell is the variation of $\mathcal L$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]), the same identity that gives exact conservation when the variation is a divergence; an explicitly $x$-dependent $\mathcal L$ is the spacetime case, where $\partial_\mu T^\mu{}_\nu$ equals minus the explicit derivative $\partial\mathcal L/\partial x^\nu$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^der-c1b-6-5|Derivation §C1b.6.5]], step 3).
 > - Math: the chain rule [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]; the divergence theorem [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]] and in $\mathbb R^n$ [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], whose continuity-equation form is [[§29 Conservation of Mass and Laplace's Equation#^thm-29-1|452 Thm. §29.1]]; differentiation under the integral [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]].
