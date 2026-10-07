@@ -87,7 +87,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 >
 > **3. The $d^3x$ integral.** As in Steps 2–3 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-3|Derivation §C5b.2.3]] (split exponentials, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]; plane-wave delta in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]): the $p - q$ terms give $(2\pi)^3\delta^3(\mathbf p - \mathbf q)e^{\pm i(E_{\mathbf p} - E_{\mathbf q})t}$, the $p + q$ terms $(2\pi)^3\delta^3(\mathbf p + \mathbf q)e^{\pm i(E_{\mathbf p} + E_{\mathbf q})t}$.
 >
-> **4. Integrate over $\mathbf q$.** In the first and fourth terms $\mathbf q = \mathbf p$, phase $1$, prefactor $E_{\mathbf p}/2E_{\mathbf p} = \frac12$; in the second and third $\mathbf q = -\mathbf p$, $q = \tilde p$, phases $e^{\pm2iE_{\mathbf p}t}$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1):
+> **4. Integrate over $\mathbf q$.** In the first and fourth terms $\mathbf q = \mathbf p$, phase $1$, prefactor $E_{\mathbf p}/2E_{\mathbf p} = \frac12$; in the second and third $\mathbf q = -\mathbf p$, $q = \tilde p$, phases $e^{\pm2iE_{\mathbf p}t}$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1):
 >
 > $$
 > H = \int\frac{d^3p}{(2\pi)^3}\,\frac12\sum_{s,r}\Bigl[u^{s\dagger}(p)u^r(p)\,a^{s\dagger}_{\mathbf p}a^r_{\mathbf p} - v^{s\dagger}(p)v^r(p)\,b^s_{\mathbf p}b^{r\dagger}_{\mathbf p} - u^{s\dagger}(p)v^r(\tilde p)\,a^{s\dagger}_{\mathbf p}b^{r\dagger}_{-\mathbf p}e^{2iE_{\mathbf p}t} + v^{s\dagger}(p)u^r(\tilde p)\,b^s_{\mathbf p}a^r_{-\mathbf p}e^{-2iE_{\mathbf p}t}\Bigr] .
@@ -105,9 +105,9 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 
 ^der-c5b-3-2
 
-*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+*Procedure:* [[P1 Canonical Quantization#^p1-7|P1, step 7]]
 
 > [!derivation]- Derivation (second route, Lecture 10: at t = 0 with flipped momenta)
 > **1. Evaluate at $t = 0$.** $H$ does not depend on time (first derivation), so evaluate it at $t = 0$ with the relabelled expansions of Step 1 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-4b|Derivation §C5b.2.4, second route]]: $\psi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\sqrt{2E_{\mathbf p}}}\sum_s\bigl(a^s_{\mathbf p}u^s(p) + b^{s\dagger}_{-\mathbf p}v^s(\tilde p)\bigr)$, and $\psi^\dagger$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], relabelled the same way) with its own variables $\mathbf p'$, $r$.
@@ -118,7 +118,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 > H_{\text{s.p.}}\psi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\sqrt{2E_{\mathbf p}}}\sum_s\Bigl(E_{\mathbf p}\,a^s_{\mathbf p}u^s(p) - E_{\mathbf p}\,b^{s\dagger}_{-\mathbf p}v^s(\tilde p)\Bigr) .
 > $$
 >
-> **3. Multiply by $\psi^\dagger$ and do the $d^3x$ integral.** $\int d^3x\,e^{-i\mathbf p'\cdot\mathbf x}e^{i\mathbf p\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]) sets the momentum in $\psi^\dagger$ equal to that in $\psi$, cancels one $(2\pi)^3$ and one integral, and turns $1/\sqrt{2E_{\mathbf p}}\sqrt{2E_{\mathbf p'}}$ into $1/2E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1):
+> **3. Multiply by $\psi^\dagger$ and do the $d^3x$ integral.** $\int d^3x\,e^{-i\mathbf p'\cdot\mathbf x}e^{i\mathbf p\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]) sets the momentum in $\psi^\dagger$ equal to that in $\psi$, cancels one $(2\pi)^3$ and one integral, and turns $1/\sqrt{2E_{\mathbf p}}\sqrt{2E_{\mathbf p'}}$ into $1/2E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1):
 >
 > $$
 > H = \int\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}\sum_{r,s}\Bigl(a^{r\dagger}_{\mathbf p}u^{r\dagger}(p) + b^r_{-\mathbf p}v^{r\dagger}(\tilde p)\Bigr)\Bigl(E_{\mathbf p}\,a^s_{\mathbf p}u^s(p) - E_{\mathbf p}\,b^{s\dagger}_{-\mathbf p}v^s(\tilde p)\Bigr)
@@ -149,7 +149,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 
 ^der-c5b-3-2b
 
-*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-4b|Derivation §C5b.2.4, second route]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-4b|Derivation §C5b.2.4, second route]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
 The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cannot be removed.
 
@@ -246,7 +246,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $b$
 
 *Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|Theorem §C2a.3.6]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+*Procedure:* [[P1 Canonical Quantization#^p1-8|P1, step 8]]
 
 > [!remark] Remark: Two minus signs make a plus
 > In [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]] the antiparticle term carries two signs: one from the wave function, the eigenvalue $-E_{\mathbf p}$ of $H_{\text{s.p.}}$ on $v^s(p)e^{ip\cdot x}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]]), and one from reordering anticommuting operators, $bb^\dagger = -b^\dagger b + \{b, b^\dagger\}$. Their product is $+E_{\mathbf p}$ (slide 19: "Fermion statistics cancels sign in 'negative energy'"). Had the oscillators been quantized with commutators, reordering would have given $-bb^\dagger = -b^\dagger b - (2\pi)^3\delta^3(\mathbf 0)$ and the antiparticle energies would have stayed negative (Yu, eq. (5.237); [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]). The negative-energy solutions are harmless because they enter as part of a complete basis of the quantum field ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-1|§C5b.2, Remark: Reading the expansion]]), not as wave functions of particles ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^cau-c5b-3-1|Caution: Negative energies are a problem only if ψ is a wave function]]): the field has a wave aspect and an operator aspect, and the wrong sign of the first is cancelled by the wrong order of the second.
@@ -341,7 +341,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $b$
 
 *Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-6|Theorem §C5a.5.6]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2|Derivation §C5b.3.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+*Procedure:* [[P1 Canonical Quantization#^p1-7|P1, step 7]]
 
 > [!theorem] Theorem §C5b.3.8: Ladder Relations
 > For any operators, $[AB, C] = A\{B, C\} - \{A, C\}B$. With [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]] and $H$, $\mathbf P$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]] (normal ordered),
@@ -376,7 +376,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $b$
 
 *Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
+*Procedure:* [[P1 Canonical Quantization#^p1-8|P1, step 8]]
 
 > [!remark]- Connections
 > - The free Dirac Hamiltonian is the second-quantized form of the single-particle Hamiltonian, $H = \int\psi^\dagger H_{\text{s.p.}}\psi$, exactly the one-body operator of nonrelativistic second quantization; what is new is that half of the modes of $H_{\text{s.p.}}$ are written with creation operators in front — [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]], [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, Remark: The Dirac sea, read in the field]].

@@ -7,7 +7,7 @@ section: CA.5
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§CA.4 Contour Integration]] · ↑ [[· CA Mathematical Methods]]
+← [[§CA.4 Contour Integration]] · ↑ [[· CA Mathematical Methods]] · [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions]] →
 
 *Sources: the user's PHY 513 notes, App. A §§A.6–A.8 and the saddle-point computation of Ch. 2 §2.2 · DLMF §§10.25–10.40 and Abramowitz & Stegun §9.6–9.7 (cited in the user's notes).*
 

@@ -64,7 +64,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 >
 > **3. The two anticommutators.** $\{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$. $\{\psi_a(\mathbf x), C_b(\mathbf y)\}$ is the same linear combination of $\{\psi_a(\mathbf x), \psi_c(\mathbf y)\}$ and of its $\mathbf y$-derivatives; since $\{\psi_a(\mathbf x), \psi_c(\mathbf y)\} = 0$ for *all* $\mathbf x$, $\mathbf y$, its derivatives vanish too. Dropped: the second term of Step 1. (Equal times only, as in [[§C2b.1 Heisenberg Fields#^cau-c2b-1-1|§C2b.1, Caution: Equal times only]].)
 >
-> **4. Integrate the delta.** $[\psi_a(\mathbf x), H] = \int d^3y\,\delta_{ab}\delta^3(\mathbf x - \mathbf y)\,C_b(\mathbf y) = C_a(\mathbf x) = (H_{\text{s.p.}}\psi)_a(\mathbf x)$, an identity of operator-valued distributions after smearing in $\mathbf x$ ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]).
+> **4. Integrate the delta.** $[\psi_a(\mathbf x), H] = \int d^3y\,\delta_{ab}\delta^3(\mathbf x - \mathbf y)\,C_b(\mathbf y) = C_a(\mathbf x) = (H_{\text{s.p.}}\psi)_a(\mathbf x)$, an identity of operator-valued distributions after smearing in $\mathbf x$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
 >
 > **5. The Dirac equation.** $i\partial_t\psi = H_{\text{s.p.}}\psi = \gamma^0(-i\gamma^j\partial_j + m)\psi$. Multiply by $\gamma^0$ on the left, $(\gamma^0)^2 = 1$: $i\gamma^0\partial_0\psi = (-i\gamma^j\partial_j + m)\psi$, i.e. $(i\gamma^\mu\partial_\mu - m)\psi = 0$ — Steps 1–2 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-1|Derivation §C5b.3.1]] read backwards.
 >
@@ -75,7 +75,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 
 ^der-c5b-6-2
 
-*Uses:* [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-4|Def. §C5a.3.4]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]
+*Uses:* [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-4|Def. §C5a.3.4]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]
 
 > [!remark] Remark: The field equation does not choose the statistics
 > [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]] holds with commutators as well: $[\psi_a, \psi^\dagger_bC_b] = [\psi_a, \psi^\dagger_b]C_b + \psi^\dagger_b[\psi_a, C_b] = \delta_{ab}\delta^3\,C_b + 0$ with the provisional relations. The dynamics is the Dirac equation either way. What decides between commutators and anticommutators is the spectrum ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]) and causality ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]), not the equation of motion; this is why Lecture 10 could write down the mode expansion before saying which bracket its oscillators obey ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-1|§C5b.2, Remark: Reading the expansion]]).
@@ -107,7 +107,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 > \langle0|\psi(x)|\mathbf p, s\rangle = \int\frac{d^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf q}}}\sum_r u^r(q)\,e^{-iq\cdot x}\,\sqrt{2E_{\mathbf p}}\,\langle0|a^r_{\mathbf q}a^{s\dagger}_{\mathbf p}|0\rangle .
 > $$
 >
-> $\langle0|a^r_{\mathbf q}a^{s\dagger}_{\mathbf p}|0\rangle = (2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)$ (Step 2 of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^der-c5b-4-1|Derivation §C5b.4.1]]). Integrating the delta sets $\mathbf q = \mathbf p$, $r = s$, and $\sqrt{2E_{\mathbf p}}/\sqrt{2E_{\mathbf q}} = 1$ on its support ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1): $u^s(p)e^{-ip\cdot x}$.
+> $\langle0|a^r_{\mathbf q}a^{s\dagger}_{\mathbf p}|0\rangle = (2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)$ (Step 2 of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^der-c5b-4-1|Derivation §C5b.4.1]]). Integrating the delta sets $\mathbf q = \mathbf p$, $r = s$, and $\sqrt{2E_{\mathbf p}}/\sqrt{2E_{\mathbf q}} = 1$ on its support ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1): $u^s(p)e^{-ip\cdot x}$.
 >
 > **3. The antifermion wave function.** Only $\bar\psi^+$ contributes: $\int\frac{d^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf q}}}\sum_r\bar v^r(q)e^{-iq\cdot x}\sqrt{2E_{\mathbf p}}\langle0|b^r_{\mathbf q}b^{s\dagger}_{\mathbf p}|0\rangle = \bar v^s(p)e^{-ip\cdot x}$, by the same delta.
 >
@@ -119,7 +119,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 
 ^der-c5b-6-3
 
-*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
 > [!remark]- Connections
 > - The Heisenberg field of a spinor is translated in time by the same $e^{iHt}$ as the scalar, and in space by $e^{-i\mathbf P\cdot\mathbf x}$; together with the Lorentz covariance of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^rem-c5b-4-1|§C5b.4, Remark: Lorentz covariance of the quantized field]] this is the spinor instance of the quantum Poincaré transformation of fields — [[§C3.5 Quantum Poincaré Transformations#^pr-c3-5-8|Principle §C3.5.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]].

@@ -8,14 +8,15 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (50), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (63), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (91), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (28), [[· CA Mathematical Methods|CA Mathematical Methods]] (6)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (18), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (152)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (50), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (80), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (91), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (32), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (19), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (160)
 
 ## Sections
 - [[§C5a.1 Weyl Spinors and SL(2,C)]] — 
 - [[§C5a.2 The Clifford Algebra and the Dirac Representation]] — 
 - [[§C5a.3 The Dirac Equation and Its Lagrangian]] — 
 - [[§C5a.4 Bilinears, Chirality and the Weyl Equations]] — 
+- [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field]] — 
 - [[§C5a.6 Plane-Wave Solutions]] — 
 - [[§C5a.7 Normalization, Spin Sums and Helicity]] — 
 - [[§C5a.8 Gamma-Matrix Technology]] — 
@@ -53,8 +54,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-5|§C5a.3.5]] The Dirac Lagrangian Is a Lorentz Scalar
 - [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|§C5a.3.6]] The Field Equations of the Dirac Lagrangian
 - [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-7|§C5a.3.7]] The Dirac Lagrangian Is Real up to a Divergence
-- [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|§C5a.5.1]] Canonical Momenta of the Dirac Field
-- [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-2|§C5a.5.2]] The Hamiltonian Density of the Dirac Field
 - [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|§C5a.3.8]] Every Dirac Solution Solves the Klein–Gordon Equation
 - [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|§C5a.4.1]] Scalar, Vector and Tensor Bilinears
 - [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-2|§C5a.4.2]] Pseudoscalar and Axial Vector under Proper Lorentz Transformations
@@ -63,10 +62,13 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-5|§C5a.4.5]] Bilinears in Weyl Components
 - [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-6|§C5a.4.6]] The Dirac Equation in Two-Component Form
 - [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-8|§C5a.4.8]] Weyl Plane Waves Have Fixed Helicity
+- [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|§C5a.5.1]] Canonical Momenta of the Dirac Field
+- [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-2|§C5a.5.2]] The Hamiltonian Density of the Dirac Field
 - [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-3|§C5a.5.3]] The Vector Current
 - [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-4|§C5a.5.4]] The Axial Current
 - [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-5|§C5a.5.5]] The Canonical Energy–Momentum Tensor of the Dirac Field
 - [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-6|§C5a.5.6]] Energy and Momentum of the Dirac Field
+- [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-7|§C5a.5.7]] The Dirac Momentum Generates Spatial Translations
 - [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-8|§C5a.5.8]] The Spin Current and the Angular Momentum of the Dirac Field
 - [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-9|§C5a.5.9]] The Symmetric Energy–Momentum Tensor of the Dirac Field
 - [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-1|§C5a.6.1]] Plane Waves Turn the Dirac Equation into Algebra

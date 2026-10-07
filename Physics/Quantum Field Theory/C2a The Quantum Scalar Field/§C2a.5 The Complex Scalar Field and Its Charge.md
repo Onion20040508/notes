@@ -104,7 +104,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 
 *Uses:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-3|P1, step 3]]
+*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
 > [!theorem] Theorem §C2a.5.3: Mode Algebra of the Complex Field
 >
@@ -145,7 +145,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > -\int d^3x\,d^3y\,\Bigl(f^*_{\mathbf p}f^*_{\mathbf q}[\pi^\dagger, \pi] - f^*_{\mathbf p}\dot f^*_{\mathbf q}[\pi^\dagger, \phi^\dagger] - \dot f^*_{\mathbf p}f^*_{\mathbf q}[\phi, \pi] + \dot f^*_{\mathbf p}\dot f^*_{\mathbf q}[\phi, \phi^\dagger]\Bigr) = -i\int d^3x\,\bigl(f^*_{\mathbf p}\dot f^*_{\mathbf q} - \dot f^*_{\mathbf p}f^*_{\mathbf q}\bigr) = -(f_{\mathbf p}, f^*_{\mathbf q}) .
 > $$
 >
-> By [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], step 9 of its derivation, this is $\propto (E_{\mathbf q} - E_{\mathbf p})\,\delta^3(\mathbf p + \mathbf q) = 0$, because $E_{-\mathbf p} = E_{\mathbf p}$: a smooth function vanishing on the support of δ, times δ, is the zero distribution ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1); smeared, $(f_g, f^*_h) = 0$ exactly ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]]).
+> By [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], step 9 of its derivation, this is $\propto (E_{\mathbf q} - E_{\mathbf p})\,\delta^3(\mathbf p + \mathbf q) = 0$, because $E_{-\mathbf p} = E_{\mathbf p}$: a smooth function vanishing on the support of δ, times δ, is the zero distribution ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1); smeared, $(f_g, f^*_h) = 0$ exactly ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]]).
 >
 > **7. The rest by adjoints.** $[a^\dagger, a^\dagger]$, $[b^\dagger, b^\dagger]$, $[a^\dagger, b^\dagger]$ and $[b, a^\dagger]$ are adjoints (up to sign) of the vanishing ones.
 >
@@ -155,9 +155,9 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 
 ^der-c2a-5-3
 
-*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-4|P1, step 4]]
+*Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
 
 > [!remark] Remark: The real field is a constrained complex field, with one trap
 > Imposing $\phi^\dagger = \phi$ in Theorems §C2a.5.2 and §C2a.5.3 and comparing coefficients gives $b_{\mathbf p} = a_{\mathbf p}$: one set of oscillators is removed and [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]] results, which is why the user's notes derive everything for the complex field first. But setting $b = a$ in the *Hamiltonian* below overcounts by a factor 2: a complex field constrained to be real has $\mathcal L = (\partial\phi)^2 - m^2\phi^2$, twice the canonical real Lagrangian. The real field is one of the two real components, $\phi_1$, not the complex field made real.
@@ -182,7 +182,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > [!derivation]- Derivation
 > Work at a fixed but arbitrary time $t$ with the time-dependent expansion; time independence will come out.
 >
-> **1. Integrate the gradient term by parts.** $\int d^3x\,\nabla\phi^\dagger\cdot\nabla\phi = \lim_{R\to\infty}\oint_{|\mathbf x| = R}\phi^\dagger\nabla\phi\cdot d\mathbf S - \int d^3x\,\phi^\dagger\nabla^2\phi$. ⚑ By-product: the surface term is dropped by assuming fall-off at spatial infinity (for the plane-wave expansion, in the distributional sense) → [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]. *Sense:* in matrix elements between wave-packet states the integrands are Schwartz functions of $\mathbf x$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-4|Derivation §C2a.2.4]], step 1), and the surface integral over $|\mathbf x| = R$ tends to $0$ as $R \to \infty$.
+> **1. Integrate the gradient term by parts.** $\int d^3x\,\nabla\phi^\dagger\cdot\nabla\phi = \lim_{R\to\infty}\oint_{|\mathbf x| = R}\phi^\dagger\nabla\phi\cdot d\mathbf S - \int d^3x\,\phi^\dagger\nabla^2\phi$. ⚑ By-product: the surface term is dropped by assuming fall-off at spatial infinity (for the plane-wave expansion, in the distributional sense) → [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]. *Sense:* in matrix elements between wave-packet states the integrands are Schwartz functions of $\mathbf x$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-4|Derivation §C2a.2.4]], step 1), and the surface integral over $|\mathbf x| = R$ tends to $0$ as $R \to \infty$.
 >
 > **2. Use the field equation.** Each mode $e^{\mp ip\cdot x}$ is on shell, so the expansion satisfies $\ddot\phi = (\nabla^2 - m^2)\phi$. Hence
 >
@@ -208,7 +208,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > \int d^3x\,e^{\mp i(p+q)\cdot x} = e^{\mp i(E_{\mathbf p} + E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p + \mathbf q), \qquad \int d^3x\,e^{\mp i(p-q)\cdot x} = e^{\mp i(E_{\mathbf p} - E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p - \mathbf q) .
 > $$
 >
-> **5. Integrate the deltas over $\mathbf q$.** In the $p + q$ terms $\mathbf q = -\mathbf p$; in the $p - q$ terms $\mathbf q = \mathbf p$ (δ acting in $\mathbf q$; the smooth prefactors are evaluated on the support, [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1). In both $E_{\mathbf q} = E_{\mathbf p}$, so both prefactors become $E_{\mathbf p}/2$; the $p - q$ phases become $1$, the $p + q$ phases $e^{\mp2iE_{\mathbf p}t}$:
+> **5. Integrate the deltas over $\mathbf q$.** In the $p + q$ terms $\mathbf q = -\mathbf p$; in the $p - q$ terms $\mathbf q = \mathbf p$ (δ acting in $\mathbf q$; the smooth prefactors are evaluated on the support, [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1). In both $E_{\mathbf q} = E_{\mathbf p}$, so both prefactors become $E_{\mathbf p}/2$; the $p - q$ phases become $1$, the $p + q$ phases $e^{\mp2iE_{\mathbf p}t}$:
 >
 > $$
 > H = \int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}\Bigl[e^{-2iE_{\mathbf p}t}\bigl(-a_{\mathbf p}b_{-\mathbf p} + b_{\mathbf p}a_{-\mathbf p}\bigr) + e^{2iE_{\mathbf p}t}\bigl(-b^\dagger_{\mathbf p}a^\dagger_{-\mathbf p} + a^\dagger_{\mathbf p}b^\dagger_{-\mathbf p}\bigr) + a_{\mathbf p}a^\dagger_{\mathbf p} + b^\dagger_{\mathbf p}b_{\mathbf p} + b_{\mathbf p}b^\dagger_{\mathbf p} + a^\dagger_{\mathbf p}a_{\mathbf p}\Bigr] .
@@ -233,9 +233,9 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 
 ^der-c2a-5-4
 
-*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
+*Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+*Procedure:* [[P1 Canonical Quantization#^p1-7|P1, step 7]]
 
 > [!theorem] Theorem §C2a.5.5: Momentum of the Complex Field
 > The field momentum of the complex field in field form ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-8|Theorem §C1b.6.8]], recalled above) is in modes
@@ -291,7 +291,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 
 *Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+*Procedure:* [[P1 Canonical Quantization#^p1-7|P1, step 7]]
 
 ## The charge
 
@@ -366,7 +366,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 
 *Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark: Two bookkeeping rules]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+*Procedure:* [[P1 Canonical Quantization#^p1-8|P1, step 8]]
 
 > [!caution] Caution: Normalization and sign of the charge
 > Only the ratio $-1$ of the two species' charges is physical; the overall factor and sign are conventions, and the sources differ:
@@ -410,7 +410,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 
 *Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-5|Theorem §C2a.5.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
+*Procedure:* [[P1 Canonical Quantization#^p1-8|P1, step 8]]
 
 > [!remark] Remark: Charge, not probability
 > - **What the negative frequencies became.** Classically the Klein–Gordon charge already splits as $|a_{\mathbf p}|^2 - |b_{\mathbf p}|^2$, positive frequencies against negative ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-2|QM Theorem §C13.1.2]]); after quantization each term counts quanta, and the negative-frequency solutions multiply $b^\dagger$, the creation of antiparticles of *positive* energy. The density whose indefinite sign wrecked the probability interpretation ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]]) is the charge density: negative values are antimatter, not a pathology. Its eigenvalues are integers (in units of the species' charge), unlike a probability.
@@ -427,7 +427,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 > - The ordering problem is the field-theory version of the oscillator's zero-point energy, but with an observable consequence; the ordering prescription chosen here is the same normal ordering that Wick's theorem builds on — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-2|Remark: Normal ordering is a choice of quantization]], QFT C7 (planned).
 > - Particle and antiparticle having the same mass is guaranteed here because both are created by one field on one mass shell; in general it is the CPT theorem — QFT C9 (planned).
 > - The Heisenberg equations of the complex field, $\dot\phi = \pi^\dagger$ and $\dot\pi^\dagger = (\nabla^2 - m^2)\phi$, reproduce the Klein–Gordon equation (Problem Set 3, Problem 2(a2)) — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]; the complex field's propagator $\langle0|T\{\phi(x)\phi^\dagger(y)\}|0\rangle$ propagates a particle one way and an antiparticle the other — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]].
-> - The complex field is an operator-valued distribution exactly as the real one: smeared with a real test function, $\phi(f) = a(g_f) + b^\dagger(g_f)$ with $g_f = \tilde f/\sqrt{2E_{\mathbf p}}$ (the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], 3, with $a^\dagger \to b^\dagger$), no longer Hermitian; its relations and its two mode algebras hold after smearing — [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]].
-> - The ordering constants of $H$ and $Q$ are δ at its singular point; the box makes them $\sum_{\mathbf k}E_{\mathbf k}$ and $-\frac12\sum_{\mathbf k}1$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]) — [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]].
-> - The mode computations use the plane-wave delta (an identity in $\mathcal S'$), Fubini for wave packets with the split-exponential rule, relabelling with Jacobian 1, evaluation of smooth prefactors on the support of δ, and integration by parts with fall-off — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]].
+> - The complex field is an operator-valued distribution exactly as the real one: smeared with a real test function, $\phi(f) = a(g_f) + b^\dagger(g_f)$ with $g_f = \tilde f/\sqrt{2E_{\mathbf p}}$ (the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], 3, with $a^\dagger \to b^\dagger$), no longer Hermitian; its relations and its two mode algebras hold after smearing — [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]].
+> - The ordering constants of $H$ and $Q$ are δ at its singular point; the box makes them $\sum_{\mathbf k}E_{\mathbf k}$ and $-\frac12\sum_{\mathbf k}1$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]) — [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]].
+> - The mode computations use the plane-wave delta (an identity in $\mathcal S'$), Fubini for wave packets with the split-exponential rule, relabelling with Jacobian 1, evaluation of smooth prefactors on the support of δ, and integration by parts with fall-off — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]].
 > - The Dirac field repeats the structure with two species of operators, but the roles are reversed: its classical charge $\int\psi^\dagger\psi$ is positive definite and its energy is not, and anticommutators are what turn them into particles minus antiparticles and a positive Hamiltonian — [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]].

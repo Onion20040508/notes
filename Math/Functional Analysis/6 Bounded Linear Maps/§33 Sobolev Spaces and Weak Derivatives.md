@@ -234,7 +234,7 @@ tags: [functional-analysis, math556]
 ^rem-33-7
 
 > [!remark]- Connections
-> - Distributions and their derivatives in Quantum Field Theory: [[§CA.2 Generalized Functions#^def-ca-2-2|QFT Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|QFT Def. §CA.2.4]]; the step function has derivative $\delta$, the same computation as Example [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|§33.3]] — [[§CA.2 Generalized Functions#^thm-ca-2-3|QFT Theorem §CA.2.3]].
+> - Distributions and their derivatives in Quantum Field Theory: [[§CA.2 Generalized Functions#^def-ca-2-2|QFT Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|QFT Def. §CA.2.4]]; the step function has derivative $\delta$, the same computation as Example [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|§33.3]] — [[§CA.2 Generalized Functions#^thm-ca-2-4|QFT Theorem §CA.2.4]].
 
 ## The Space $H^1_0$ and the Poincaré Inequality
 

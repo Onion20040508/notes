@@ -68,7 +68,7 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 
 > [!remark]- Connections
 > - Contrast with finite dimensions, where every self-adjoint operator has an eigenvalue: [[§24 Spectral Theorem#^ladr-7-27|LADR 7.27]].
-> - Used in Quantum Field Theory: what $\delta(x - x_0)$ is instead, a generalized function acting on test functions, and one level up, field operators at a point as operator-valued distributions — [[§CA.2 Generalized Functions#^def-ca-2-2|QFT Def. §CA.2.2]], [[§CA.2 Generalized Functions#^rem-ca-2-1|QFT Remark: What changes from the working delta function]], [[§CA.2 Generalized Functions#^def-ca-2-8|QFT Def. §CA.2.8]].
+> - Used in Quantum Field Theory: what $\delta(x - x_0)$ is instead, a generalized function acting on test functions, and one level up, field operators at a point as operator-valued distributions — [[§CA.2 Generalized Functions#^def-ca-2-2|QFT Def. §CA.2.2]], [[§CA.2 Generalized Functions#^rem-ca-2-1|QFT Remark: What changes from the working delta function]], [[§CA.2 Generalized Functions#^def-ca-2-11|QFT Def. §CA.2.11]].
 
 > [!theorem] Proposition §37.4: Point Evaluation is Not Bounded
 > Let $x_0 \in \mathbb{R}$. There is no $\psi \in L^2(\mathbb{R})$ with

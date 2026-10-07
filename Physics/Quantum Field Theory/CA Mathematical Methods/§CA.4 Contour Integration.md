@@ -114,8 +114,22 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 ## Residues
 
-> [!definition] Definition §CA.4.3: Isolated Singularity; Laurent Expansion; Residue
-> $z_0$ is an **isolated singularity** of $f$ if $f$ is analytic on a punctured disc $0 < |z - z_0| < \rho$ but not at $z_0$. There $f = \sum_{n=-\infty}^{\infty}a_n(z - z_0)^n$ (Laurent), and the singularity is **removable**, a **pole of order $k$** or **essential** as the negative powers are absent, stop at $n = -k$, or do not stop. The **residue** is
+> [!definition] Definition §CA.4.3: Isolated Singularity
+> $z_0$ is an **isolated singularity** of $f$ if $f$ is analytic ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]) on a punctured disc $0 < |z - z_0| < \rho$ but not at $z_0$.
+>
+> *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
+
+^def-ca-4-3
+
+> [!definition] Definition §CA.4.4: Laurent Expansion; Removable Singularity, Pole and Essential Singularity
+> At an isolated singularity $z_0$ ([[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]]), $f = \sum_{n=-\infty}^{\infty}a_n(z - z_0)^n$ on the punctured disc (the **Laurent expansion**), and the singularity is **removable**, a **pole of order $k$** or **essential** as the negative powers are absent, stop at $n = -k$, or do not stop.
+>
+> *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
+
+^def-ca-4-4
+
+> [!definition] Definition §CA.4.5: Residue
+> The **residue** of $f$ at an isolated singularity $z_0$ is the coefficient $a_{-1}$ of its Laurent expansion ([[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]]):
 >
 > $$
 > \operatorname*{Res}_{z_0}f \equiv a_{-1} = \frac{1}{2\pi i}\oint_{|z - z_0| = r}f(z)\,dz \qquad (0 < r < \rho) .
@@ -123,7 +137,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
 
-^def-ca-4-3
+^def-ca-4-5
 
 > [!remark] Remark: What a residue is
 > The residue is a number attached to the function and the point together; it is not the value $f(z_0)$, which does not exist, but the coefficient of the $1/(z - z_0)$ part of how $f$ blows up. The two forms in the definition say the same thing from two sides: integrating the Laurent series term by term round a circle, [[§CA.4 Contour Integration#^thm-ca-4-1|Theorem §CA.4.1]], 2 kills every power but $n = -1$. A closed loop detects that one term and nothing else: the analytic part and the higher poles alike have single-valued antiderivatives.
@@ -133,7 +147,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 ^rem-ca-4-1
 
 > [!theorem] Theorem §CA.4.4: Computing Residues
-> 1. Simple pole: $\operatorname{Res}_{z_0}f = \lim_{z\to z_0}(z - z_0)f(z)$; for $f = g/h$ with $g$ analytic and $h$ having a simple zero, $\operatorname{Res}_{z_0}(g/h) = g(z_0)/h'(z_0)$.
+> 1. Simple pole ([[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]]; residue: [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]]): $\operatorname{Res}_{z_0}f = \lim_{z\to z_0}(z - z_0)f(z)$; for $f = g/h$ with $g$ analytic and $h$ having a simple zero, $\operatorname{Res}_{z_0}(g/h) = g(z_0)/h'(z_0)$.
 > 2. Pole of order $k$: $\operatorname{Res}_{z_0}f = \dfrac{1}{(k - 1)!}\lim_{z\to z_0}\dfrac{d^{k-1}}{dz^{k-1}}\bigl[(z - z_0)^kf(z)\bigr]$.
 > 3. For the propagator integrand, $\operatorname*{Res}_{p^0 = \pm E}\dfrac{e^{-ip^0t}}{(p^0)^2 - E^2} = \pm\dfrac{e^{\mp iEt}}{2E}$.
 >
@@ -153,7 +167,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 ^der-ca-4-4
 
-*Uses:* [[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] (Taylor series of $(z - z_0)^kf$)
+*Uses:* [[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]], [[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]], [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] (Taylor series of $(z - z_0)^kf$)
 
 > [!theorem] Theorem §CA.4.5: Residue Theorem
 > If $f$ is analytic on a closed contour $\Gamma$ and inside it except at finitely many isolated singularities $z_1, \dots, z_N$, then
@@ -173,14 +187,14 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > **Step 2** (cancel). The two traversals of each segment cancel.
 >
-> **Step 3** (circles). On a counterclockwise circle around $z_k$ the integral is $2\pi i\operatorname{Res}_{z_k}f$ ([[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]]); reversing the orientation reverses the sign.
+> **Step 3** (circles). On a counterclockwise circle around $z_k$ the integral is $2\pi i\operatorname{Res}_{z_k}f$ ([[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]]); reversing the orientation reverses the sign.
 >
 > **What the derivation shows.**
 > - Singularities outside $\Gamma$ never enter; those on $\Gamma$ are excluded by hypothesis and need Theorem §CA.4.7.
 
 ^der-ca-4-5
 
-*Uses:* [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]]
+*Uses:* [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]], [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]]
 
 ## Integrals along the real line
 
@@ -268,17 +282,17 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > **Step 2** (below). $\varphi$ runs from $\pi$ to $2\pi$ (counterclockwise): the same computation gives $+i\pi g(x_0)$.
 >
-> **Step 3** (the straight pieces). Outside $|x - x_0| < r$ they tend, as $r \to 0$, to the principal value ([[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]).
+> **Step 3** (the straight pieces). Outside $|x - x_0| < r$ they tend, as $r \to 0$, to the principal value ([[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]]).
 >
 > **Step 4** (moving the pole instead). The real axis with the pole at $x_0 - i\varepsilon$ can be deformed, by Cauchy's theorem, into a path that passes above $x_0$ without crossing the pole; as $\varepsilon \to 0$ this is the contour of Step 1.
 >
 > **What the derivation shows.**
 > - The two passings differ by a full loop, $2\pi i\operatorname{Res}$; the principal value is their average.
-> - As an identity of generalized functions this is the Sokhotski–Plemelj formula ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]).
+> - As an identity of generalized functions this is the Sokhotski–Plemelj formula ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]).
 
 ^der-ca-4-7
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]
 
 > [!example] Example §CA.4.2: A Step Function from a Pole
 > Show that $\displaystyle\lim_{\varepsilon\to0^+}\int_{-\infty}^{\infty}\frac{dx}{2\pi i}\,\frac{e^{ikx}}{x - i\varepsilon} = \theta(k)$.
@@ -330,14 +344,14 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 ^thm-ca-4-9
 
 > [!derivation]- Derivation
-> Each rule is one of the theorems above. **Rule 1:** [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]]. **Rules 2–3:** [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]. **Rule 4:** [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], with the residue theorem applied to the loop between the two contours. **Rule 5:** [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]]. **Rule 6:** [[§CA.4 Contour Integration#^thm-ca-4-7|Theorem §CA.4.7]] and [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]. **Rule 7:** [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]].
+> Each rule is one of the theorems above. **Rule 1:** [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]]. **Rules 2–3:** [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]. **Rule 4:** [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], with the residue theorem applied to the loop between the two contours. **Rule 5:** [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]]. **Rule 6:** [[§CA.4 Contour Integration#^thm-ca-4-7|Theorem §CA.4.7]]; its form as an identity of distributions, the Sokhotski–Plemelj formula, follows in [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]. **Rule 7:** [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]].
 >
 > **What the derivation shows.**
 > - The procedure that strings these rules together for Green's functions is [[P2 Green's Functions by Contour Integration|P2]].
 
 ^der-ca-4-9
 
-*Uses:* [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^thm-ca-4-7|Theorem §CA.4.7]], [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]], [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]
+*Uses:* [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^thm-ca-4-7|Theorem §CA.4.7]], [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]]
 
 > [!remark] Remark: "Move the contour up to infinity"
 > The lecture's phrasing for closing a contour is the same argument as the semicircle: the real-axis integral equals the integral along the line $\operatorname{Im}p^0 = L$ plus two vertical segments at $\operatorname{Re}p^0 = \pm X$; the segments vanish as $X \to \infty$, and on the shifted line the integrand carries $e^{-L|t|}$, which kills it as $L \to \infty$. Both descriptions are correct; the closed contour is the one that generalizes, and the procedure built on it is [[P2 Green's Functions by Contour Integration|P2]].
@@ -349,7 +363,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > [!remark]- Connections
 > - Example §CA.4.1 is the one-dimensional cousin of the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]) and of the free scattering Green's function $-e^{ik\rho}/4\pi\rho$, whose $k'$-plane integral closes the two exponentials on opposite sides exactly as here ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]).
 > - Example §CA.4.2 is the transform behind every causal response: the energy transform of a retarded propagator is analytic in the upper half-plane ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]), the impulse response of a damped oscillator vanishes before the kick ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transform $\chi(\omega)$ has its poles in one half-plane), and the retarded Green's function of the Klein–Gordon field passes above both poles ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]).
-> - The half-residue lemma is what QM uses for the imaginary part of the resolvent in the optical theorem ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); its distribution form is [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]].
+> - The half-residue lemma is what QM uses for the imaginary part of the resolvent in the optical theorem ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); its distribution form is [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]].
 > - The identity theorem makes analytic continuation unique; it is what turns one Euclidean evaluation into the Wightman function everywhere ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]) and what extends the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
 > - Green's theorem in the plane ([[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]) is the whole proof of Cauchy's theorem for smooth $u$, $v$; Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms.
 > - Loop integrals (QFT C7, planned) bring branch cuts back, and the spinor and vector propagators (spinor: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], Step 4; vector: [[§C4.9 Vector-Field Propagators#^thm-c4-9-3|Theorem §C4.9.3]], [[§C4.9 Vector-Field Propagators#^thm-c4-9-6|Theorem §C4.9.6]]) have numerators that are analytic in $p^0$, so the same residues give them the same $i\varepsilon$ (Yu eq. (6.262)).

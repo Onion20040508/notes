@@ -223,7 +223,7 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 >
 > **6. The orbital current of $\hat T$.** As in steps 1–2 of [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^der-c1b-7-2|Derivation §C1b.7.2]], $\partial_\mu(x^\nu\hat T^{\mu\rho} - x^\rho\hat T^{\mu\nu}) = \hat T^{\nu\rho} - \hat T^{\rho\nu} = 0$ by steps 3–4.
 >
-> **7. Its charges.** The difference from $L^{\nu\rho}$ is $\int d^3x\,\bigl(x^\nu\partial_\lambda K^{\lambda0\rho} - x^\rho\partial_\lambda K^{\lambda0\nu}\bigr)$. The $\lambda = 0$ terms vanish ($K^{00\rho} = 0$). For $\lambda = i$, integrate by parts ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], on a ball $B_R$, then $R \to \infty$): $\int d^3x\,x^\nu\partial_iK^{i0\rho} = \oint(\dots) - \int d^3x\,(\partial_ix^\nu)K^{i0\rho} = -\int d^3x\,\delta^\nu{}_iK^{i0\rho}$, the surface term vanishing if $K$ falls off faster than $1/R^3$. For $\nu = 0$ this is $0 = -\int K^{00\rho}$; for $\nu$ spatial it is $-\int K^{\nu0\rho}$; in all cases $-\int d^3x\,K^{\nu0\rho}$. So the difference is $-\int d^3x\,(K^{\nu0\rho} - K^{\rho0\nu})$, and
+> **7. Its charges.** The difference from $L^{\nu\rho}$ is $\int d^3x\,\bigl(x^\nu\partial_\lambda K^{\lambda0\rho} - x^\rho\partial_\lambda K^{\lambda0\nu}\bigr)$. The $\lambda = 0$ terms vanish ($K^{00\rho} = 0$). For $\lambda = i$, integrate by parts ([[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], on a ball $B_R$, then $R \to \infty$): $\int d^3x\,x^\nu\partial_iK^{i0\rho} = \oint(\dots) - \int d^3x\,(\partial_ix^\nu)K^{i0\rho} = -\int d^3x\,\delta^\nu{}_iK^{i0\rho}$, the surface term vanishing if $K$ falls off faster than $1/R^3$. For $\nu = 0$ this is $0 = -\int K^{00\rho}$; for $\nu$ spatial it is $-\int K^{\nu0\rho}$; in all cases $-\int d^3x\,K^{\nu0\rho}$. So the difference is $-\int d^3x\,(K^{\nu0\rho} - K^{\rho0\nu})$, and
 >
 > $$
 > K^{\nu0\rho} - K^{\rho0\nu} = \tfrac12\bigl(\mathcal S^{\nu0\rho} + \mathcal S^{0\rho\nu} + \mathcal S^{\rho0\nu}\bigr) - \tfrac12\bigl(\mathcal S^{\rho0\nu} + \mathcal S^{0\nu\rho} + \mathcal S^{\nu0\rho}\bigr) = \tfrac12\bigl(\mathcal S^{0\rho\nu} - \mathcal S^{0\nu\rho}\bigr) = -\mathcal S^{0\nu\rho} .
@@ -238,7 +238,7 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 
 ^der-c1b-7-4
 
-*Uses:* [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-7-1|Def. §C1b.7.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]
+*Uses:* [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-7-1|Def. §C1b.7.1]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]
 
 > [!example] Example §C1b.7.2: The Electromagnetic Field
 > $\mathcal L = -\frac14F_{\rho\sigma}F^{\rho\sigma}$ with the four fields $A_\lambda$ (source-free; [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]]).

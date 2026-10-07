@@ -22,7 +22,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 > \psi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_{s=1,2}\Bigl(a^s_{\mathbf p}\,u^s(p)\,e^{-ip\cdot x} + b^{s\dagger}_{\mathbf p}\,v^s(p)\,e^{ip\cdot x}\Bigr), \qquad p^0 = E_{\mathbf p} ,
 > $$
 >
-> with the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-9|Theorem §C5a.6.9]] and [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-10|Theorem §C5a.6.10]] and four coefficients per momentum. Classically $a^s_{\mathbf p}$ and $b^{s\dagger}_{\mathbf p} \equiv \overline{b^s_{\mathbf p}}$ are complex amplitudes; quantization makes them operator-valued distributions in $\mathbf p$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], componentwise in $s$), and $\psi$ an operator-valued distribution ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]). The conjugate fields $\psi^\dagger$ and $\bar\psi$: [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]].
+> with the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-9|Theorem §C5a.6.9]] and [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-10|Theorem §C5a.6.10]] and four coefficients per momentum. Classically $a^s_{\mathbf p}$ and $b^{s\dagger}_{\mathbf p} \equiv \overline{b^s_{\mathbf p}}$ are complex amplitudes; quantization makes them operator-valued distributions in $\mathbf p$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], componentwise in $s$), and $\psi$ an operator-valued distribution ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]). The conjugate fields $\psi^\dagger$ and $\bar\psi$: [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]].
 >
 > *Scalar analogue:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; complex field [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]].
 > *Source: Lecture 10, slides 10–11 · the user's PHY 513 notes, Ch. 10 §10.3 (Definition "Mode expansion of the Dirac field") · PS §3.5, eqs. (3.87), (3.99) · Yu §5.4, eqs. (5.216)–(5.217) · the user's pre-course notes, §5.4*
@@ -64,7 +64,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 
 *Uses:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-2|Theorem §C5a.6.2]], [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-3|P1, step 3]]
+*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
 > [!remark] Remark: Reading the expansion
 > Each ingredient of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] has a counterpart in the scalar field ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]), and each change has a reason (Lecture 10):
@@ -81,9 +81,13 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 ^rem-c5b-2-1
 
 > [!caution] Caution: What anticommutes and what does not
-> The operators $\psi$, $a$, $b$ and their adjoints anticommute among themselves ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]). The spinors $u^s(p)$, $v^s(p)$ and the exponentials are ordinary complex numbers (columns of them) and commute with everything. In every computation of this chapter the anticommutators act only on the operators; the $u$'s, $v$'s and exponentials ride along as coefficients. In components the adjoint raises no row-or-column question: the $b$-th component of $\psi^\dagger$ contains $u^{s\ast}_b$, the complex conjugate of the $b$-th entry (Lecture 10: "components of $\psi^\dagger$ are $\psi^\ast$").
+> The operators $\psi$, $a$, $b$ and their adjoints anticommute among themselves ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]). The spinors $u^s(p)$, $v^s(p)$ and the exponentials are ordinary complex numbers (columns of them) and commute with everything. In every computation of this chapter the anticommutators act only on the operators; the $u$'s, $v$'s and exponentials ride along as coefficients. In components the adjoint raises no row-or-column question: the $b$-th component of $\psi^\dagger$ contains $u^{s\ast}_b$, the complex conjugate of the $b$-th entry (Lecture 10: "components of $\psi^\dagger$ are $\psi^\ast$"). Three kinds of order are involved, and only two of them matter:
+> 1. *Coefficients may sit anywhere in their term.* $u^s_a(p)$, $v^s_a(p)$ and $e^{\mp ip\cdot x}$ are c-numbers, so $\hat a\,u_a = u_a\,\hat a$. Peskin–Schroeder (eq. (3.99)), Lecture 10 and the user's notes write the operator first, $\hat a^s_{\mathbf p}u^s(p)e^{-ip\cdot x}$; Yu (eq. (5.216)) writes $u\,\hat a\,e^{-ip\cdot x}$: the same term. These notes keep the order operator, spinor, exponential.
+> 2. *Operators may not be swapped freely.* $\hat a$, $\hat a^\dagger$, $\hat b$, $\hat b^\dagger$, $\hat\psi$, $\hat\psi^\dagger$ anticommute up to delta functions ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]); every computation of Chapter C5b moves only operators, by these anticommutators, and keeps the sign each exchange costs.
+> 3. *Matrices in spinor space may not be swapped.* $\bar u u$ is a number, $u\bar u$ is a $4\times4$ matrix ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-7|Theorem §C5a.7.7]]): this is matrix order, not quantum order. With the indices written the entries are numbers, $\bar u_bu_a = u_a\bar u_b$, and the index placement says which object is meant.
+> 4. *Both rules at once.* In $\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]]) the spinor structure is row, matrix, column, and $\hat\psi^\dagger$ stands left of $\hat\psi$ as operators; inside each term the $u$, $v$ and exponential coefficients may still be moved anywhere.
 >
-> *Source: Lecture 10, slides 12 and 22 · the user's PHY 513 notes, Ch. 10 §10.3 (Caution "What anticommutes and what does not")*
+> *Source: Lecture 10, slides 12 and 22, and transcript ("a four column worth of different operators"; "these columns have become rows") · the user's PHY 513 notes, Ch. 10 §10.3 (Caution "What anticommutes and what does not") · PS §3.5, eqs. (3.99)–(3.101) · Yu §5.4.2, eq. (5.216) · items 3–4 written here*
 
 ^cau-c5b-2-1
 
@@ -103,12 +107,12 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 > $\psi$ annihilates particles ($a$) and creates antiparticles ($b^\dagger$); $\psi^\dagger$ and $\bar\psi$ both annihilate antiparticles ($b$) and create particles ($a^\dagger$), with the same operator content, because $\gamma^0$ only rearranges spinor components. $\psi^\dagger$ is the field in the canonical structure: the conjugate momentum $\pi_\psi = i\psi^\dagger$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|Theorem §C5b.1.1]]) has the mode expansion $i$ times the first formula; $\psi^\dagger$ enters the anticommutators $\{\psi, \psi^\dagger\}$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]) and the bilinears $H = \int\psi^\dagger H_{\text{s.p.}}\psi$, $\mathbf P = \int\psi^\dagger(-i\nabla)\psi$ and $Q = \int\psi^\dagger\psi$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]]); $\bar\psi$ enters the covariant bilinears and the two-point functions.
 >
 > *Scalar analogue:* $\phi^\dagger$ of the complex field and its momentum $\pi = \dot\phi^\dagger$, [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]].
-> *Source: Lecture 10, slide 12 ($\hat\psi^\dagger_b$ at $t = 0$ in components, "components of ψ† are ψ*"), slides 18–19 ($\psi^\dagger$ in the Hamiltonian) and slide 22 ($\bar\psi$) · the user's PHY 513 notes, Ch. 10 §10.3 (Derivation "The conjugate field": Hermitian conjugate, then $\gamma^0$ on the right) · PS §3.5, eqs. (3.99)–(3.100) ($\psi$ and $\bar\psi$; $\psi^\dagger$ is not displayed there) · Yu §5.4.2, eqs. (5.216)–(5.218) ($\psi$, $\psi^\dagger$, $\bar\psi$), and §5.4.3, eq. (5.220) ($\pi = i\psi^\dagger$ in modes)*
+> *Source: Lecture 10, slide 12 ($\hat\psi^\dagger_b$ at $t = 0$ in components, "components of $\psi^\dagger$ are $\psi^\ast$"), slides 18–19 ($\psi^\dagger$ in the Hamiltonian) and slide 22 ($\bar\psi$) · the user's PHY 513 notes, Ch. 10 §10.3 (Derivation "The conjugate field": Hermitian conjugate, then $\gamma^0$ on the right) · PS §3.5, eqs. (3.99)–(3.100) ($\psi$ and $\bar\psi$; $\psi^\dagger$ is not displayed there) · Yu §5.4.2, eqs. (5.216)–(5.218) ($\psi$, $\psi^\dagger$, $\bar\psi$), and §5.4.3, eq. (5.220) ($\pi = i\psi^\dagger$ in modes)*
 
 ^thm-c5b-2-2
 
 > [!derivation]- Derivation
-> **1. The adjoint of one term.** Each term of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] is a product $c\,A\,w$ of a complex number $c$ (the exponential and the real prefactor), an operator $A$ and a constant column spinor $w$ whose entries are numbers. Component by component, $(c\,A\,w_b)^\dagger = c^{\ast}A^\dagger w_b^{\ast}$, since the adjoint of a c-number times an operator is the complex conjugate times the adjoint operator; collecting the components $w_b^{\ast}$ into a row is $w^\dagger$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-1|Caution: What anticommutes and what does not]]: "components of ψ† are ψ*"). The c-numbers commute with $A^\dagger$, so the order in which they are written is a convention; it is fixed here as operator, then row spinor, then exponential.
+> **1. The adjoint of one term.** Each term of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] is a product $c\,A\,w$ of a complex number $c$ (the exponential and the real prefactor), an operator $A$ and a constant column spinor $w$ whose entries are numbers. Component by component, $(c\,A\,w_b)^\dagger = c^{\ast}A^\dagger w_b^{\ast}$, since the adjoint of a c-number times an operator is the complex conjugate times the adjoint operator; collecting the components $w_b^{\ast}$ into a row is $w^\dagger$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-1|Caution: What anticommutes and what does not]]: "components of $\psi^\dagger$ are $\psi^\ast$"). The c-numbers commute with $A^\dagger$, so the order in which they are written is a convention; it is fixed here as operator, then row spinor, then exponential.
 >
 > **2. The four ingredients.** The exponentials: $(e^{-ip\cdot x})^{\ast} = e^{ip\cdot x}$ and $(e^{ip\cdot x})^{\ast} = e^{-ip\cdot x}$, since $p\cdot x$ is real. The operators: $(a^s_{\mathbf p})^\dagger = a^{s\dagger}_{\mathbf p}$ and $(b^{s\dagger}_{\mathbf p})^\dagger = b^s_{\mathbf p}$, because the adjoint of an adjoint is the operator itself. The spinors: the column $u^s(p)$ becomes the row $u^{s\dagger}(p)$, the column $v^s(p)$ the row $v^{s\dagger}(p)$. The prefactor $(2\pi)^{-3}(2E_{\mathbf p})^{-1/2}$ is real and unchanged. Hence
 >
@@ -138,6 +142,33 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 
 ^rem-c5b-2-2
 
+> [!remark] Remark: A spinor-valued operator, component by component
+> $u^s(p)$ is a column of four complex numbers $u^s_a(p)$, $a = 1, \dots, 4$, and $\hat\psi(x)$ is a column of four operators,
+>
+> $$
+> \hat\psi_a(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_{s=1,2}\Bigl(\hat a^s_{\mathbf p}\,u^s_a(p)\,e^{-ip\cdot x} + \hat b^{s\dagger}_{\mathbf p}\,v^s_a(p)\,e^{ip\cdot x}\Bigr) ,
+> $$
+>
+> each a single operator, a linear combination of mode operators with numerical coefficients ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]); $(\hat a\,u)_a = \hat a\,u_a = u_a\,\hat a$. $\hat\psi^\dagger$ is the row $(\hat\psi^\dagger_1, \dots, \hat\psi^\dagger_4)$ whose $b$-th entry contains $\hat a^{s\dagger}_{\mathbf p}\,u^{s\ast}_b(p)$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]]): the number is complex-conjugated, the operator daggered, and column to row is the transposition. Computing one entry at a time, with $u^{s\ast}_b$ rather than $u^\dagger$, is how Lecture 10 does the anticommutator check ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-4b|Derivation §C5b.2.4, second route]]): no row-or-column question can then go wrong.
+>
+> *Source: Lecture 10, slide 12 ($\hat\psi_a$ and $\hat\psi^\dagger_b$ at $t = 0$; "components of $\psi^\dagger$ are $\psi^\ast$; $a$, $b$ are spinor indices") and transcript · the user's PHY 513 notes, Ch. 10 §10.3 and §10.4 (Derivation "Oscillator anticommutators give the field anticommutators", Step 1: "the question of rows versus columns does not arise")*
+
+^rem-c5b-2-3
+
+> [!caution] Caution: u is not a four-vector
+> $u^s(p)$ and $v^s(p)$ have four components, but the label $a$ is a spinor index, not a spacetime index $\mu$. Under a Lorentz transformation the components mix with $\Lambda_{1/2}$ of the Dirac representation ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]]), not with $\Lambda$, and a rotation by $2\pi$ changes their sign ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-4|§C5a.2, Remark: Why half the angle]]). That a Dirac spinor has as many components as a four-vector is a coincidence of four dimensions ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-6|§C5a.2, Remark: What each Dirac index labels]]). These notes write Latin $a, b$ for spinor indices and Greek $\mu, \nu$ for spacetime indices.
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.3 (paragraph "A coincidence of dimension", the table of indices), §8.5 ("a four-spinor, not a four-vector") · the index convention written here*
+
+^cau-c5b-2-2
+
+> [!remark]- ★ Remark: Where the Grassmann numbers go
+> In the path-integral formulation (QFT C11, planned) the classical Dirac field is Grassmann-valued: its expansion has the form of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] with anticommuting numbers in place of $\hat a^s_{\mathbf p}$ and $\hat b^{s\dagger}_{\mathbf p}$. The spinors $u^s(p)$, $v^s(p)$ and the exponentials stay ordinary commuting numbers: the Grassmann property sits in the coefficients that replace the mode operators, exactly where the anticommutation sits here (item 2 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-1|Caution: What anticommutes and what does not]]; the graded bracket of such variables: [[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-4|★ Def. §C5b.1.4]]).
+>
+> *Source: written here; none of the course sources (Lecture 10, the user's PHY 513 notes, PS §3.5, Yu §5.4) discusses it at this point*
+
+^rem-c5b-2-4
+
 ## Mode extraction
 
 > [!theorem] Theorem §C5b.2.3: Mode Extraction
@@ -165,7 +196,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 >
 > **3. The $d^3x$ integrals.** $\int d^3x\,e^{-i(\mathbf p \mp \mathbf q)\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf p \mp \mathbf q)$, identities in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]).
 >
-> **4. Integrate the deltas over $\mathbf q$.** First term: $\mathbf q = \mathbf p$, phase $1$, $E_{\mathbf q} = E_{\mathbf p}$; the smooth prefactor is evaluated on the support ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1). Second term: $\mathbf q = -\mathbf p$, so $q = (E_{\mathbf p}, -\mathbf p) = \tilde p$ and the phase is $e^{2iE_{\mathbf p}t}$:
+> **4. Integrate the deltas over $\mathbf q$.** First term: $\mathbf q = \mathbf p$, phase $1$, $E_{\mathbf q} = E_{\mathbf p}$; the smooth prefactor is evaluated on the support ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1). Second term: $\mathbf q = -\mathbf p$, so $q = (E_{\mathbf p}, -\mathbf p) = \tilde p$ and the phase is $e^{2iE_{\mathbf p}t}$:
 >
 > $$
 > \frac{1}{\sqrt{2E_{\mathbf p}}}\sum_r\Bigl(u^{s\dagger}(p)u^r(p)\,a^r_{\mathbf p} + u^{s\dagger}(p)v^r(\tilde p)\,b^{r\dagger}_{-\mathbf p}\,e^{2iE_{\mathbf p}t}\Bigr) .
@@ -177,7 +208,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 >
 > **7. Smeared form.** Multiply the $a$ formula by $\overline{g(\mathbf p)}$ and integrate $\int\frac{d^3p}{(2\pi)^3}$: the $\mathbf p$-integral of $\overline{g}\,e^{ip\cdot x}u^{s\dagger}/\sqrt{2E}$ is $(F^s_g)^\dagger$, a Schwartz function of $\mathbf x$ for $g \in \mathcal S$ ([[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-6|Theorem §C5a.6.6]]), so $a^s(g) = \int d^3x\,(F^s_g)^\dagger\psi$ is a smeared field.
 >
-> ⚑ By-product: the extraction uses the positive product $\int d^3x\,\psi_1^\dagger\psi_2$, not the indefinite Klein–Gordon product → [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-3|Remark: A positive inner product]].
+> ⚑ By-product: the extraction uses the positive product $\int d^3x\,\psi_1^\dagger\psi_2$, not the indefinite Klein–Gordon product → [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|Remark: A positive inner product]].
 >
 > **What the derivation shows**
 > - Time independence comes from the mode functions solving the Dirac equation; the $b^\dagger$ admixture is killed by $u^\dagger(p)v(\tilde p) = 0$, not by a mass-shell argument.
@@ -185,16 +216,16 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 
 ^der-c5b-2-3
 
-*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.6 Plane-Wave Solutions#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-4|P1, step 4]]
+*Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
 
 > [!remark] Remark: A positive inner product
 > With $f^s_{\mathbf p} \equiv u^s(p)e^{-ip\cdot x}/\sqrt{2E_{\mathbf p}}$ and $g^s_{\mathbf p} \equiv v^s(p)e^{ip\cdot x}/\sqrt{2E_{\mathbf p}}$, [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]] reads $a^s_{\mathbf p} = \langle f^s_{\mathbf p}, \psi\rangle$ and $b^{s\dagger}_{\mathbf p} = \langle g^s_{\mathbf p}, \psi\rangle$ with $\langle\chi, \psi\rangle = \int d^3x\,\chi^\dagger\psi$, a positive and conserved product (its density is the charge density $\psi^\dagger\psi$ of [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-3|Theorem §C5a.5.3]]). For the scalar the conserved product was the Klein–Gordon one, indefinite, and the negative-frequency coefficient came out with a minus sign, $a^\dagger_{\mathbf p} = -(f^*_{\mathbf p}, \phi)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|§C2a.2, Remark: Why this inner product, and why it is indefinite]]). Here both kinds of coefficient come out with a plus sign. The indefiniteness has not disappeared: it has moved into the energy ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]]).
 >
 > *Source: Yu §5.4.3, eqs. (5.224)–(5.227) · PS §3.5, p. 53 (eigenfunctions of $H_{\text{s.p.}}$)*
 
-^rem-c5b-2-3
+^rem-c5b-2-5
 
 ## The anticommutator algebra
 
@@ -221,7 +252,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 > \{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}\} = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\;e^{ip\cdot x - iq\cdot y}\,u^{r\dagger}_a(p)\,\{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\}\,u^s_b(q) = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\;e^{i(p-q)\cdot x}\,u^{r\dagger}(p)u^s(q) ,
 > $$
 >
-> the $\delta^3(\mathbf x - \mathbf y)$ having been integrated over $\mathbf y$ (the pairing of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], part 1, with the mode functions made test functions by smearing in momentum) and $\delta_{ab}$ having contracted the spinor indices. Split $e^{i(p-q)\cdot x} = e^{i(E_{\mathbf p} - E_{\mathbf q})t}e^{-i(\mathbf p - \mathbf q)\cdot\mathbf x}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]); the $d^3x$ integral is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). On its support the phase is $1$, $E_{\mathbf q} = E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1) and $u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]]): $\{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$.
+> the $\delta^3(\mathbf x - \mathbf y)$ having been integrated over $\mathbf y$ (the pairing of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], part 1, with the mode functions made test functions by smearing in momentum) and $\delta_{ab}$ having contracted the spinor indices. Split $e^{i(p-q)\cdot x} = e^{i(E_{\mathbf p} - E_{\mathbf q})t}e^{-i(\mathbf p - \mathbf q)\cdot\mathbf x}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]); the $d^3x$ integral is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). On its support the phase is $1$, $E_{\mathbf q} = E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1) and $u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]]): $\{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$.
 >
 > **3. $\{b, b^\dagger\}$: the field relation in the opposite order.** By Theorem §C5b.2.3 (with $\psi^\dagger$ of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]]), $b^r_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}\psi^\dagger(x)v^r(p)$ is built from $\psi^\dagger$ and $b^{s\dagger}_{\mathbf q} = \frac{1}{\sqrt{2E_{\mathbf q}}}\int d^3y\,e^{-iq\cdot y}v^{s\dagger}(q)\psi(y)$ from $\psi$:
 >
@@ -229,7 +260,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 > \{b^r_{\mathbf p}, b^{s\dagger}_{\mathbf q}\} = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\;e^{ip\cdot x - iq\cdot y}\,v^{s\dagger}_b(q)\,\{\psi^\dagger_a(\mathbf x), \psi_b(\mathbf y)\}\,v^r_a(p) = +\frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\;e^{i(p-q)\cdot x}\,v^{s\dagger}(q)v^r(p)
 > $$
 >
-> by Step 1. The same delta and $v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]]) give $+(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$, the normal sign (Yu, after eq. (5.242)). ⚑ By-product: $\psi^\dagger$ stands to the left of $\psi$ here, the opposite order to Step 2; for an anticommutator this costs nothing, for a commutator it costs a sign → [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-5|Theorem §C5b.2.5]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|Remark: One algebraic fact]].
+> by Step 1. The same delta and $v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]]) give $+(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$, the normal sign (Yu, after eq. (5.242)). ⚑ By-product: $\psi^\dagger$ stands to the left of $\psi$ here, the opposite order to Step 2; for an anticommutator this costs nothing, for a commutator it costs a sign → [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-5|Theorem §C5b.2.5]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-7|Remark: One algebraic fact]].
 >
 > **4. Mixed: $\{a, b\}$.** $a^r_{\mathbf p}$ comes from $\psi$ and $b^s_{\mathbf q}$ from $\psi^\dagger$: $\{a^r_{\mathbf p}, b^s_{\mathbf q}\} = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\,e^{ip\cdot x + iq\cdot y}u^{r\dagger}_a(p)\{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\}v^s_b(q) = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,e^{i(p+q)\cdot x}u^{r\dagger}(p)v^s(q)$. Now $e^{i(p+q)\cdot x} = e^{i(E_{\mathbf p} + E_{\mathbf q})t}e^{-i(\mathbf p + \mathbf q)\cdot\mathbf x}$, the $d^3x$ integral is $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$, and on its support $q = (E_{\mathbf p}, -\mathbf p) = \tilde p$: the result is $\frac{e^{2iE_{\mathbf p}t}}{2E_{\mathbf p}}(2\pi)^3\delta^3(\mathbf p + \mathbf q)\,u^{r\dagger}(p)v^s(\tilde p) = 0$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]]). Dropped: the whole term, because the spinor product vanishes on the support of δ (the $\pm E_{\mathbf p}$ eigenvectors of $H_{\text{s.p.}}(\mathbf p)$ are orthogonal).
 >
@@ -244,7 +275,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 
 ^der-c5b-2-4
 
-*Uses:* [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]
+*Uses:* [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]
 
 > [!derivation]- Derivation (second route, Lecture 10: from the oscillators back to the field)
 > **1. Equal time, with a common Fourier factor.** At $t = 0$ (any common time works the same way), relabel the antiparticle term of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] by $\mathbf p \to -\mathbf p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1: Jacobian $1$, $E_{-\mathbf p} = E_{\mathbf p}$; allowed because $\mathbf p$ runs over all values), so that both terms carry the same $e^{i\mathbf p\cdot\mathbf x}$; the relabelled spinor is $v^s$ at the same energy and flipped momentum, $v^s(\tilde p)$. The second field is $\psi^\dagger$ of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]] in components at $t = 0$, relabelled the same way, with its own variables $\mathbf p'$, $s$:
@@ -255,7 +286,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 >
 > In components $u^{s\ast}_b$ is the complex conjugate of the $b$-th entry, so no row or column has to be tracked ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-1|Caution: What anticommutes and what does not]]).
 >
-> **2. The operators first: only $a$ with $a^\dagger$ and $b^\dagger$ with $b$ talk.** Of the four products, $\{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf p'}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf p')$ and $\{b^{r\dagger}_{-\mathbf p}, b^s_{-\mathbf p'}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf p')$ (the statement, with $\delta^3(-\mathbf p + \mathbf p') = \delta^3(\mathbf p - \mathbf p')$); $\{a, b\}$ and $\{b^\dagger, a^\dagger\}$ vanish ($a$ and $b$ are different operators; and two annihilators or two creators anticommute anyway). Each surviving delta sets $\mathbf p' = \mathbf p$ and $s = r$, cancels one $(2\pi)^3$ and one integral, and turns $1/\sqrt{2E_{\mathbf p}}\sqrt{2E_{\mathbf p'}}$ into $1/2E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1):
+> **2. The operators first: only $a$ with $a^\dagger$ and $b^\dagger$ with $b$ talk.** Of the four products, $\{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf p'}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf p')$ and $\{b^{r\dagger}_{-\mathbf p}, b^s_{-\mathbf p'}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf p')$ (the statement, with $\delta^3(-\mathbf p + \mathbf p') = \delta^3(\mathbf p - \mathbf p')$); $\{a, b\}$ and $\{b^\dagger, a^\dagger\}$ vanish ($a$ and $b$ are different operators; and two annihilators or two creators anticommute anyway). Each surviving delta sets $\mathbf p' = \mathbf p$ and $s = r$, cancels one $(2\pi)^3$ and one integral, and turns $1/\sqrt{2E_{\mathbf p}}\sqrt{2E_{\mathbf p'}}$ into $1/2E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1):
 >
 > $$
 > \{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = \int\frac{d^3p}{(2\pi)^3}\,\frac{e^{i\mathbf p\cdot(\mathbf x - \mathbf y)}}{2E_{\mathbf p}}\sum_{s=1,2}\Bigl(u^s_a(p)u^{s\ast}_b(p) + v^s_a(\tilde p)v^{s\ast}_b(\tilde p)\Bigr) .
@@ -279,16 +310,16 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 
 ^der-c5b-2-4b
 
-*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-7|Theorem §C5a.7.7]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-8|Theorem §C5a.7.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-7|Theorem §C5a.7.7]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-8|Theorem §C5a.7.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
-*Procedure:* [[P1 Canonical Quantization#^p1-4|P1, step 4]]
+*Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
 
 > [!remark] Remark: One thing at a time
 > Many things happen at once in the second route of Derivation §C5b.2.4: operators, spinor components, Fourier factors, the relabelling $\mathbf p \to -\mathbf p$. Lecture 10's advice: do them one at a time — first the operators (only $a$ with $a^\dagger$ and $b^\dagger$ with $b$ talk; spinors and exponentials are coefficients), then the spin sum, then the Fourier integral — and practise by writing the two expansions down at home without looking. The slips the lecture made and corrected on the board mark the traps: the second integral needs its own variables ($\mathbf p'$, $s$), the second field is evaluated at $\mathbf y$, the spinors carry four-momenta (the relabelled one is $\tilde p$, not just "$-\mathbf p$"), and the completeness relations contain $\bar u$, not $u^\dagger$, so a $\gamma^0$ must be put back.
 >
 > *Source: Lecture 10 (transcript) · the user's PHY 513 notes, Ch. 10 §10.4 ("Advice from the lecture")*
 
-^rem-c5b-2-4
+^rem-c5b-2-6
 
 ## Where the commutator version fails (first checkpoint)
 
@@ -331,7 +362,7 @@ Lecture 10 did the quantization with anticommutators only and named the places w
 > [b^r_{\mathbf p}, b^{s\dagger}_{\mathbf q}] = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\;e^{ip\cdot x - iq\cdot y}\,v^{s\dagger}_b(q)\,[\psi^\dagger_a(\mathbf x), \psi_b(\mathbf y)]\,v^r_a(p) = -\frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\;e^{i(p-q)\cdot x}\,v^{s\dagger}(q)v^r(p) ,
 > $$
 >
-> by Step 1. The same delta and $v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]]) give $-(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$. ⚑ By-product: the sign comes only from the order in which the canonical relation enters → [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|Remark: One algebraic fact]].
+> by Step 1. The same delta and $v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-3|Theorem §C5a.7.3]]) give $-(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$. ⚑ By-product: the sign comes only from the order in which the canonical relation enters → [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-7|Remark: One algebraic fact]].
 >
 > **4. Mixed: $[a, b]$.** Both $a^r_{\mathbf p}$ (from $\psi$) and $b^s_{\mathbf q}$ (from $\psi^\dagger$) enter: $[a^r_{\mathbf p}, b^s_{\mathbf q}] = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,e^{i(p+q)\cdot x}u^{r\dagger}(p)v^s(q) = \frac{e^{2iE_{\mathbf p}t}}{2E_{\mathbf p}}(2\pi)^3\delta^3(\mathbf p + \mathbf q)\,u^{r\dagger}(p)v^s(\tilde p) = 0$ ([[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-6|Theorem §C5a.7.6]]). Dropped: the spinor product, on the support of δ.
 >
@@ -351,7 +382,7 @@ Lecture 10 did the quantization with anticommutators only and named the places w
 >
 > *Source: the user's pre-course notes, §5.5 ("the same canonical relation enters the two computations in opposite order")*
 
-^rem-c5b-2-5
+^rem-c5b-2-7
 
 > [!remark] Remark: What the field adds to the anticommutators of second quantization
 > The relations of [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]] have the form of the field-operator relations of nonrelativistic second quantization ([[§C12.2★ Second Quantization#^thm-c12-2-3|QM Theorem §C12.2.3]], fermion sign), and the mode algebra of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]] has the form of [[§C12.2★ Second Quantization#^thm-c12-2-1|QM Theorem §C12.2.1]]. Rule 2 applies; the field adds:
@@ -361,11 +392,11 @@ Lecture 10 did the quantization with anticommutators only and named the places w
 >
 > *Source: the user's pre-course notes, §5.5 ("this single algebraic fact is the entire difference") · PS §3.5, pp. 57–58*
 
-^rem-c5b-2-6
+^rem-c5b-2-8
 
 > [!remark]- Connections
 > - The mode functions $u^s(p)e^{-ip\cdot x}$ and $v^s(p)e^{ip\cdot x}$ are the eigenfunctions of the single-particle Hamiltonian with eigenvalues $\pm E_{\mathbf p}$, so the expansion diagonalizes the classical Hamiltonian, as the scalar's expansion decoupled the field into oscillators — [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|Theorem §C2a.2.1]].
-> - The positive Dirac product $\int\psi^\dagger\psi$ replaces the indefinite Klein–Gordon product of the scalar; it is the classical charge, which is why the antiparticle coefficients come out without a minus sign — [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-3|Remark: A positive inner product]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]].
+> - The positive Dirac product $\int\psi^\dagger\psi$ replaces the indefinite Klein–Gordon product of the scalar; it is the classical charge, which is why the antiparticle coefficients come out without a minus sign — [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|Remark: A positive inner product]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]].
 > - "Anticommutators of fields ⇔ anticommutators of oscillators" is the fermionic version of the scalar's mode algebra; in both, the mode expansion is a change of variables and the algebra follows from the canonical relations — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]].
 > - The spin sums enter here as the completeness of the four spinors at one momentum; the same sums are the numerators of the two-point functions and the propagator — [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-7|Theorem §C5a.7.7]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
 > - The commutator checkpoint is the same computation as the complex scalar's mode algebra with the Dirac product in place of the Klein–Gordon one; the sign it produces reappears as negative norms or unbounded energy and as acausal propagation — [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]].

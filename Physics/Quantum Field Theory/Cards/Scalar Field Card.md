@@ -9,18 +9,22 @@ tags: [quantum-field-theory, card]
 
 One-page reference for the free real and complex scalar field (canonical quantization, states, coherent states, two-point functions, classical source); every formula is stated and derived in its home box in [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] and [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (the Poincaré action in [[· C3 Poincaré Symmetry and Particle States|C3]]), linked after it. Conventions: $\hbar = c = 1$, $g = \mathrm{diag}(+,-,-,-)$, $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ on shell, $\xi = x - y$.
 
-## 1. Lagrangian, momentum, Hamiltonian; commutators
+## 1. Lagrangian, momentum, Hamiltonian, field momentum; commutators
 
 | | Real field | Complex field |
 | --- | --- | --- |
 | $\mathcal L$ | $\frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$ | $\partial_\mu\phi^\dagger\,\partial^\mu\phi - m^2\phi^\dagger\phi$ |
 | momentum density | $\pi = \dot\phi$ | $\pi = \partial\mathcal L/\partial\dot\phi = \dot\phi^\dagger$, $\pi^\dagger = \dot\phi$ |
 | $H = \int d^3x\,\mathcal H$ | $\mathcal H = \frac12\pi^2 + \frac12(\nabla\phi)^2 + \frac12m^2\phi^2$ | $\mathcal H = \pi^\dagger\pi + \nabla\phi^\dagger\cdot\nabla\phi + m^2\phi^\dagger\phi$ |
+| $\mathbf P$ (field form) | $\mathbf P = -\int d^3x\,\pi\nabla\phi = -\int d^3x\,\dot\phi\,\nabla\phi$, $T^{0i} = -\pi\,\partial_i\phi$ | $\mathbf P = -\int d^3x\,\bigl(\pi\nabla\phi + \pi^\dagger\nabla\phi^\dagger\bigr)$ |
+| $\mathbf P$ generates translations (classical) | $\{\phi(\mathbf x), \mathbf P\} = -\nabla\phi(\mathbf x)$, $\{\phi, P^\mu\} = \partial^\mu\phi$ | the same for $\phi$, $\phi^\dagger$ and their momenta |
+| classical home | [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1\|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2\|Theorem §C1b.4.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-7\|Theorem §C1b.6.7]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9\|Theorem §C1b.6.9]] | [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3\|Theorem §C1b.4.3]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-8\|Theorem §C1b.6.8]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9\|Theorem §C1b.6.9]] |
 | equal-time relations | $[\phi(\mathbf x), \pi(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$, $[\phi, \phi] = [\pi, \pi] = 0$ | $[\phi(\mathbf x), \pi(\mathbf y)] = [\phi^\dagger(\mathbf x), \pi^\dagger(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$; all others $0$, incl. $[\phi, \pi^\dagger]$, $[\phi, \phi^\dagger]$ |
-| home | [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1\|Model §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2\|Principle §C2a.1.2]] | [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1\|Model §C2a.5.1]] |
+| quantum home | [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1\|Model §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2\|Principle §C2a.1.2]] | [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1\|Model §C2a.5.1]] |
 
 - General postulate: $[\phi_a(\mathbf x), \pi_b(\mathbf y)] = i\,\delta_{ab}\,\delta^3(\mathbf x - \mathbf y)$, $[\phi_a, \phi_b] = [\pi_a, \pi_b] = 0$ — [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]
 - Classical modes: $H = \int\frac{d^3p}{(2\pi)^3}\frac12\bigl[|\tilde\pi(\mathbf p)|^2 + E_{\mathbf p}^2|\tilde\phi(\mathbf p)|^2\bigr]$, one oscillator of frequency $E_{\mathbf p}$ per $\mathbf p$ — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|Theorem §C2a.2.1]]
+- Free fields live on the mass shell: $(\partial^2 + m^2)f = 0 \Rightarrow \tilde f(p) = 2\pi\,\delta(p^2 - m^2)\,g(p)$, i.e. a mode expansion — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]
 - Heisenberg field $\phi(x) = e^{iHt}\phi_S(\mathbf x)e^{-iHt}$ — [[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]]; relations hold at every common time — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]]; $\partial_t\phi = \pi$, $\partial_t\pi = (\nabla^2 - m^2)\phi$, $(\partial_\mu\partial^\mu + m^2)\phi = 0$ — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]
 
 ## 2. Modes
@@ -45,6 +49,7 @@ One-page reference for the free real and complex scalar field (canonical quantiz
 | --- | --- | --- |
 | $H$ (real) | $\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}\bigl(a_{\mathbf p}a^\dagger_{\mathbf p} + a^\dagger_{\mathbf p}a_{\mathbf p}\bigr) = \int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}a^\dagger_{\mathbf p}a_{\mathbf p} + E_0$ | [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1\|Theorem §C2a.3.1]] |
 | zero-point energy | $E_0 = V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, $V = (2\pi)^3\delta^3(\mathbf 0) = \int d^3x$; $\varepsilon_0 = E_0/V \approx \Lambda^4/16\pi^2$ | [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4\|Theorem §C2a.3.4]] |
+| zero-point energy as coincident $D_W$ | $\langle0\rvert H\lvert0\rangle = \frac12\int d^3x\,\lim_{y\to x}\bigl(\partial_{x^0}\partial_{y^0} + \nabla_x\cdot\nabla_y + m^2\bigr)D_W(x - y)$; the limit does not exist | [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8\|Theorem §C2b.6.8]] |
 | normal ordering | creators left of annihilators, e.g. $:\!a_{\mathbf p}a^\dagger_{\mathbf q}\!: = a^\dagger_{\mathbf q}a_{\mathbf p}$; $:\!H\!: = \int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}a^\dagger_{\mathbf p}a_{\mathbf p}$, $:\!H\!:\lvert0\rangle = 0$ | [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1\|Def. §C2a.3.1]] |
 | $\mathbf P$ (real) | $\mathbf P = -\int d^3x\,\pi\nabla\phi = \int\frac{d^3p}{(2\pi)^3}\mathbf p\,a^\dagger_{\mathbf p}a_{\mathbf p}$ (no constant) | [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5\|Theorem §C2a.3.5]] |
 | ladder relations | $[H, a^\dagger_{\mathbf p}] = E_{\mathbf p}a^\dagger_{\mathbf p}$, $[H, a_{\mathbf p}] = -E_{\mathbf p}a_{\mathbf p}$, $[\mathbf P, a^\dagger_{\mathbf p}] = \mathbf p\,a^\dagger_{\mathbf p}$, $[\mathbf P, a_{\mathbf p}] = -\mathbf p\,a_{\mathbf p}$ | [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7\|Theorem §C2a.3.7]] |
@@ -94,7 +99,7 @@ All entries are tempered distributions; the column "As a distribution" says in w
 | advanced $D_A(\xi)$ | $-\theta(-\xi^0)\langle0\vert[\phi(x), \phi(y)]\vert0\rangle = -\theta(-\xi^0)\,iD(\xi)$ | $\frac{i}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$; below / below | Green's; backward light cone | mirror of $D_R$ — [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6\|Theorem §C2b.5.6]] | [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7\|Theorem §C2b.5.7]] |
 | Feynman $D_F(\xi)$ | $\langle0\vert T\{\phi(x)\phi(y)\}\vert0\rangle = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi)$ | $\frac{i}{p^2 - m^2 + i\varepsilon}$; below / above | Green's; even, Lorentz invariant; $D_F = D_R + D_W(-\xi)$; $D_F = \frac{mK_1(ms)}{4\pi^2s}$, $s = \sqrt{-\xi^2 + i\varepsilon}$ | limit $\varepsilon \to 0^+$ in $\mathcal S'$; extension of $\theta\cdot D_W$ — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10\|Theorem §C2b.6.10]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4\|Theorem §C2b.6.4]] | [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2\|Theorem §C2b.6.2]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3\|Theorem §C2b.7.3]] |
 | anti-Feynman $D_{\bar F}(\xi)$ | $-\langle0\vert\bar T\{\phi(x)\phi(y)\}\vert0\rangle = -\theta(\xi^0)D_W(-\xi) - \theta(-\xi^0)D_W(\xi)$ | $\frac{i}{p^2 - m^2 - i\varepsilon}$; above / below | Green's; $D_{\bar F} = -\overline{D_F}$ | conjugate limit ($-i\varepsilon$) — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10\|Theorem §C2b.6.10]] | [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3\|Theorem §C2b.6.3]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-2\|Def. §C2b.6.2]] |
-| principal $\bar D(\xi)$ | $\frac12(D_R + D_A) = \frac12\operatorname{sgn}(\xi^0)\,iD$ | $i\,\mathcal P\frac{1}{p^2 - m^2}$ | Green's; zero for $\xi^2 < 0$ | slice product $\frac12\operatorname{sgn}(\xi^0)\,iD$; transform a principal value — [[§CA.2 Generalized Functions#^def-ca-2-6\|Def. §CA.2.6]] | [[§C2b.5 Green's Functions and Contours#^def-c2b-5-3\|Def. §C2b.5.3]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5\|Theorem §C2b.7.5]] |
+| principal $\bar D(\xi)$ | $\frac12(D_R + D_A) = \frac12\operatorname{sgn}(\xi^0)\,iD$ | $i\,\mathcal P\frac{1}{p^2 - m^2}$ | Green's; zero for $\xi^2 < 0$ | slice product $\frac12\operatorname{sgn}(\xi^0)\,iD$; transform a principal value — [[§CA.2 Generalized Functions#^def-ca-2-10\|Def. §CA.2.10]] | [[§C2b.5 Green's Functions and Contours#^def-c2b-5-3\|Def. §C2b.5.3]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5\|Theorem §C2b.7.5]] |
 | Euclidean $D_E(x_E)$ | $D_E(\tau, \boldsymbol\xi) = D_F(-i\tau, \boldsymbol\xi)$, $\tau > 0$ | $\int\frac{d^4p_E}{(2\pi)^4}\frac{e^{ip_E\cdot x_E}}{p_E^2 + m^2}$; denominator never vanishes | $O(4)$ invariant; $D_E = \frac{mK_1(mR)}{4\pi^2R}$, $R = \lvert x_E\rvert$ | locally integrable function, singular only at $x_E = 0$; the same analytic function as $D_F$ — [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4\|Theorem §C2b.7.4]] | [[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-1\|Def. §C2b.7.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-2\|Theorem §C2b.7.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1\|Theorem §C2b.3.1]] |
 
 Relations:
@@ -133,13 +138,15 @@ Microcausality:
 ## 8. Procedures
 
 **[[P1 Canonical Quantization]]**
-1. Canonical pairs $\pi_a = \partial\mathcal L/\partial\dot\phi_a$, $H = \int d^3x\,(\sum_a\pi_a\dot\phi_a - \mathcal L)$ — [[P1 Canonical Quantization#^p1-1|P1, step 1]]
-2. Impose $[\phi_a(\mathbf x), \pi_b(\mathbf y)] = i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$, others zero — [[P1 Canonical Quantization#^p1-2|P1, step 2]]
-3. Expand in on-shell plane waves with $1/\sqrt{2E_{\mathbf p}}$ — [[P1 Canonical Quantization#^p1-3|P1, step 3]]
-4. Extract modes by the KG product; derive $[a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ — [[P1 Canonical Quantization#^p1-4|P1, step 4]]
-5. $H$, $\mathbf P$, $Q$ in modes; normal order — [[P1 Canonical Quantization#^p1-5|P1, step 5]]
-6. Vacuum, Fock space; read off mass, charge, statistics — [[P1 Canonical Quantization#^p1-6|P1, step 6]]
-7. Normalize $\lvert\mathbf p\rangle = \sqrt{2E_{\mathbf p}}a^\dagger_{\mathbf p}\lvert0\rangle$; invariant measure — [[P1 Canonical Quantization#^p1-7|P1, step 7]]
+1. Momenta $\pi_a = \partial\mathcal L/\partial\dot\phi_a$ — [[P1 Canonical Quantization#^p1-1|P1, step 1]]
+2. $H = \int d^3x\,(\sum_a\pi_a\dot\phi_a - \mathcal L)$, velocities eliminated — [[P1 Canonical Quantization#^p1-2|P1, step 2]]
+3. $\mathbf P = -\int d^3x\sum_a\pi_a\nabla\phi_a$ from $T^{0i}$; charges $Q = \int j^0$ — [[P1 Canonical Quantization#^p1-3|P1, step 3]]
+4. Impose $[\phi_a(\mathbf x), \pi_b(\mathbf y)] = i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$, others zero — [[P1 Canonical Quantization#^p1-4|P1, step 4]]
+5. Expand in on-shell plane waves with $1/\sqrt{2E_{\mathbf p}}$ — [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+6. Extract modes by the KG product; derive $[a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ — [[P1 Canonical Quantization#^p1-6|P1, step 6]]
+7. $H$, $\mathbf P$, $Q$ in modes; the $\delta^3(\mathbf 0)$ constant — [[P1 Canonical Quantization#^p1-7|P1, step 7]]
+8. Vacuum, Fock space; zero-point energy, normal order; read off mass, charge, statistics — [[P1 Canonical Quantization#^p1-8|P1, step 8]]
+9. Normalize $\lvert\mathbf p\rangle = \sqrt{2E_{\mathbf p}}a^\dagger_{\mathbf p}\lvert0\rangle$; invariant measure — [[P1 Canonical Quantization#^p1-9|P1, step 9]]
 
 **[[P2 Green's Functions by Contour Integration]]**
 1. Fourier transform: $\tilde D_C = i/(p^2 - m^2)$ off shell — [[P2 Green's Functions by Contour Integration#^p2-1|P2, step 1]]

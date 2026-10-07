@@ -46,6 +46,8 @@ What do Hamiltonian field theory and Noether's theorem give for the Dirac field?
 
 *Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]]
 
+*Procedure:* [[P1 Canonical Quantization#^p1-1|P1, step 1]]
+
 > [!theorem] Theorem §C5a.5.2: The Hamiltonian Density of the Dirac Field
 > With $\pi_\psi = i\psi^\dagger$ ([[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|Theorem §C5a.5.1]]), the Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]) of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] is
 >
@@ -82,6 +84,8 @@ What do Hamiltonian field theory and Noether's theorem give for the Dirac field?
 ^der-c5a-5-2
 
 *Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-4|Theorem §C5a.2.4]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-2|P1, step 2]]
 
 This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) as a density sandwiched between fields: there it is a postulated one-particle Hamiltonian acting on a wave function, here a derived density of a classical field whose integral becomes, after quantization, the Hamiltonian of the many-particle theory (rule 2: the layer changes from principle to theorem; the meaning of $\psi$ changes from amplitude to field).
 
@@ -124,7 +128,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 *Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-3|Theorem §C5a.4.3]]
 
-*Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]]
+*Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
 > [!theorem] Theorem §C5a.5.4: The Axial Current
 > For every solution of the Dirac equation ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-1|Def. §C5a.3.1]]), with $\gamma^5$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-7|Def. §C5a.2.7]],
@@ -262,7 +266,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 *Uses:* [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-5|Theorem §C5a.5.5]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^der-c5a-3-6|Derivation §C5a.3.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-6-2|Def. §C1b.6.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^der-c1b-6-7|Derivation §C1b.6.7]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]
 
-*Procedure:* [[P3 Noether's Procedure#^p3-6|P3, step 6]]
+*Procedure:* [[P3 Noether's Procedure#^p3-6|P3, step 6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
 > [!theorem] Theorem §C5a.5.7: The Dirac Momentum Generates Spatial Translations
 > Treat the four complex components $\psi_a$ as coordinates and $\pi_a = i\psi^\dagger_a$ ([[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|Theorem §C5a.5.1]]) as their momenta, with the Poisson bracket of [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]] on these pairs, $\{\psi_a(\mathbf x), \pi_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$, i.e. $\{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = -i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$: $\psi^\dagger$ is the momentum, not a second coordinate ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]]; that these are the brackets compatible with the constraint $\pi_\psi = i\psi^\dagger$ is the Dirac bracket of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|★ Theorem §C5b.1.4]]). For commuting components, differentiable and falling off at spatial infinity, and $\mathbf P = -\int d^3x\,\pi_\psi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ ([[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-6|Theorem §C5a.5.6]]), as identities after smearing with test functions:
@@ -283,7 +287,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 > \frac{\delta P^i}{\delta\pi_c(\mathbf z)} = -\partial_i\psi_c(\mathbf z) .
 > $$
 >
-> **Step 2** ($\delta P^i/\delta\psi_c$). Vary $\psi_c \to \psi_c + \varepsilon\eta_c$, $\pi$ fixed: $\frac{d}{d\varepsilon}P^i\big|_0 = -\int d^3z\sum_c\pi_c\,\partial_i\eta_c$. With $\pi_c\,\partial_i\eta_c = \partial_i(\pi_c\eta_c) - (\partial_i\pi_c)\eta_c$ and the first term integrating to zero ($\eta_c$ has compact support; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]):
+> **Step 2** ($\delta P^i/\delta\psi_c$). Vary $\psi_c \to \psi_c + \varepsilon\eta_c$, $\pi$ fixed: $\frac{d}{d\varepsilon}P^i\big|_0 = -\int d^3z\sum_c\pi_c\,\partial_i\eta_c$. With $\pi_c\,\partial_i\eta_c = \partial_i(\pi_c\eta_c) - (\partial_i\pi_c)\eta_c$ and the first term integrating to zero ($\eta_c$ has compact support; [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]):
 >
 > $$
 > \frac{\delta P^i}{\delta\psi_c(\mathbf z)} = +\partial_i\pi_c(\mathbf z) .
@@ -320,7 +324,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 ^der-c5a-5-7
 
-*Uses:* [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-6|Theorem §C5a.5.6]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-5-2|Derivation §C5a.5.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9|Theorem §C1b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]
+*Uses:* [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-6|Theorem §C5a.5.6]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-5-2|Derivation §C5a.5.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9|Theorem §C1b.6.9]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]
 
 > [!remark] Remark: Why P is the momentum, for the Dirac field
 > - *On a plane wave.* A positive-frequency plane wave $\psi = w\,e^{-ip\cdot x}$, $p^0 = E_{\mathbf p} > 0$, with a constant column $w$ solving the Dirac equation (so $H_{\text{s.p.}}(\mathbf p)w = E_{\mathbf p}w$, [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-5-2|Derivation §C5a.5.2]], steps 6–7), has $-i\nabla\psi = \mathbf p\,\psi$ and $i\partial_t\psi = E_{\mathbf p}\psi$, so the momentum density is $\psi^\dagger(-i\nabla)\psi = \mathbf p\,w^\dagger w$, the energy density $\psi^\dagger i\partial_t\psi = E_{\mathbf p}\,w^\dagger w$ and the charge density $\psi^\dagger\psi = w^\dagger w > 0$ ([[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-3|Theorem §C5a.5.3]]). Per unit charge the wave carries momentum $\mathbf p$ and energy $E_{\mathbf p}$, with no averaging needed (unlike the real scalar wave of [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-6-2|§C1b.6, Remark: Why P is the momentum]]): after quantization this is $\mathbf p$ per particle ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-8|Theorem §C5b.3.8]]).
@@ -445,7 +449,8 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 > [!remark]- Connections
 > - Treating $\psi$ and $\bar\psi$ as independent is the complex scalar's device; the first-order Lagrangian pushes the crossover of momenta to its end, $\pi_\psi = i\psi^\dagger$, which is why fermions are quantized by a bracket between $\psi$ and $\psi^\dagger$ alone — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]], [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 > - The unbounded classical energy of Theorem §C5a.5.2 is the Dirac version of the indefinite Klein–Gordon density of Quantum Mechanics; in both cases the field theory reinterprets negative frequency as antiparticles, but only anticommutators make the Dirac Hamiltonian positive — [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]], [[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
-> - The procedure of canonical quantization starts from exactly the data assembled here (Lagrangian, momenta, Hamiltonian density) — [[P1 Canonical Quantization#^p1-1|P1, step 1]].
+> - The procedure of canonical quantization starts from exactly the data assembled here (Lagrangian, momenta, Hamiltonian density) — [[P1 Canonical Quantization#^p1-1|P1, steps 1–3]].
 > - The positive conserved density $\psi^\dagger\psi$ is Quantum Mechanics' probability density; in the field theory it is the time component of a Noether current, and after quantization a charge of either sign — [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
 > - The spin current $\bar\psi\gamma^\lambda S^{\mu\nu}\psi$ is the field-theoretic origin of the electron's spin $\frac12$ and of the non-conservation of $\mathbf L$ alone; Belinfante's improvement moves the spin into a symmetric $\hat T$ — [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]], [[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]].
 > - The same Noether procedure gave the scalar's U(1) current and $T^{\mu\nu}$; for the Dirac field every step is identical except that only $\psi$, not $\bar\psi$, has a derivative in $\mathcal L$ — [[P3 Noether's Procedure]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-6-3|§C1b.6, Remark: The canonical tensor of the standard fields]].
+> - The field momentum and its bracket follow the scalar's and the vector's pattern index by index, $T^{0i} = -\sum_a\pi_a\partial_i\phi_a$ and $\{\phi_a, \mathbf P\} = -\nabla\phi_a$; for the Dirac field the only canonical pair is $(\psi, i\psi^\dagger)$, so $\bar\psi$ contributes nothing, and the bracket becomes the quantum translation law once the brackets become anticommutators — [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-7|Theorem §C1b.6.7]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9|Theorem §C1b.6.9]], [[§C4.2★ The Proca Field#^thm-c4-2-13|Theorem §C4.2.13]], [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-7|Theorem §C5a.5.7]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]].

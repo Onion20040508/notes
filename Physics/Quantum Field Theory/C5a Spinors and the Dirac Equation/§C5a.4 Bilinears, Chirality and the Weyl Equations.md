@@ -152,7 +152,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.8 Gamma-
 *Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-13|Theorem §C5a.2.13]]
 
 > [!remark] Remark: The quantized bilinears are Hermitian
-> After quantization the same computation makes the five standard bilinears of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-3|Theorem §C5a.4.3]] Hermitian operators, once the product of two field operators at one point is defined by normal ordering ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) and smeared with a test function (operator-valued distributions, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]): step 1 of the derivation used only $(AB)^\dagger = B^\dagger A^\dagger$.
+> After quantization the same computation makes the five standard bilinears of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-3|Theorem §C5a.4.3]] Hermitian operators, once the product of two field operators at one point is defined by normal ordering ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) and smeared with a test function (operator-valued distributions, [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]): step 1 of the derivation used only $(AB)^\dagger = B^\dagger A^\dagger$.
 >
 > *Source: Yu §5.3, eqs. (5.97)–(5.101) · the operator reading written here*
 

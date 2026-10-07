@@ -386,7 +386,7 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 
 *Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-6-2|Def. §C1b.6.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^ex-c1b-6-1|Example §C1b.6.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]
 
-*Procedure:* [[P3 Noether's Procedure#^p3-6|P3, step 6]]
+*Procedure:* [[P3 Noether's Procedure#^p3-6|P3, step 6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
 > [!theorem] Theorem §C1b.6.8: Energy and Momentum of the Free Complex Scalar Field
 > For the free complex scalar field ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]), with $\phi$ and $\phi^{\ast}$ as independent coordinates and the canonical momenta $\pi = \dot\phi^{\ast}$, $\pi^{\ast} = \dot\phi$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]), the Noether charges of translations are
@@ -449,6 +449,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 
 *Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-6-2|Def. §C1b.6.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-7|Theorem §C1b.6.7]]
 
+*Procedure:* [[P1 Canonical Quantization#^p1-3|P1, step 3]]
+
 > [!theorem] Theorem §C1b.6.9: The Field Momentum Generates Spatial Translations
 > Let $\mathbf P = -\int d^3x\sum_a\pi_a\nabla\phi_a$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]), with fields and momenta differentiable and falling off at spatial infinity, and take Poisson brackets as in [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]]. Then
 > 1. $\{\phi_a(\mathbf x), \mathbf P\} = -\nabla\phi_a(\mathbf x)$ and $\{\pi_a(\mathbf x), \mathbf P\} = -\nabla\pi_a(\mathbf x)$, identities after smearing with test functions;
@@ -469,7 +471,7 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > \frac{\delta P^i}{\delta\pi_c(\mathbf z)} = -\partial_i\phi_c(\mathbf z) .
 > $$
 >
-> **Step 2** ($\delta P^i/\delta\phi_c$). Vary $\phi_c \to \phi_c + \varepsilon\eta_c$, $\pi$ fixed: $\frac{d}{d\varepsilon}P^i\big|_0 = -\int d^3z\sum_c\pi_c\,\partial_i\eta_c$. Move the derivative with the product rule, $\pi_c\,\partial_i\eta_c = \partial_i(\pi_c\eta_c) - (\partial_i\pi_c)\,\eta_c$; the first term integrates to zero because $\pi_c\eta_c$ has compact support ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]; [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]). Hence $\frac{d}{d\varepsilon}P^i\big|_0 = +\int d^3z\sum_c(\partial_i\pi_c)\,\eta_c$ and
+> **Step 2** ($\delta P^i/\delta\phi_c$). Vary $\phi_c \to \phi_c + \varepsilon\eta_c$, $\pi$ fixed: $\frac{d}{d\varepsilon}P^i\big|_0 = -\int d^3z\sum_c\pi_c\,\partial_i\eta_c$. Move the derivative with the product rule, $\pi_c\,\partial_i\eta_c = \partial_i(\pi_c\eta_c) - (\partial_i\pi_c)\,\eta_c$; the first term integrates to zero because $\pi_c\eta_c$ has compact support ([[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]; [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]). Hence $\frac{d}{d\varepsilon}P^i\big|_0 = +\int d^3z\sum_c(\partial_i\pi_c)\,\eta_c$ and
 >
 > $$
 > \frac{\delta P^i}{\delta\phi_c(\mathbf z)} = +\partial_i\pi_c(\mathbf z) .
@@ -514,7 +516,7 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 
 ^der-c1b-6-9
 
-*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.4 Hamiltonian Field Theory#^der-c1b-4-5|Derivation §C1b.4.5]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]], [[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|Example §C1b.4.1]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]
+*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.4 Hamiltonian Field Theory#^der-c1b-4-5|Derivation §C1b.4.5]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]], [[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|Example §C1b.4.1]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]
 
 > [!remark] Remark: Why P is the momentum
 > - *On a wave.* The real solution $\phi = A\cos\theta$, $\theta = \omega t - \mathbf k\cdot\mathbf x$, $\omega = \sqrt{\mathbf k^2 + m^2}$, has $\pi = \dot\phi = -A\omega\sin\theta$ and $\nabla\phi = A\mathbf k\sin\theta$, so the momentum density is $-\pi\nabla\phi = A^2\omega\,\mathbf k\sin^2\theta$ and the energy density $\mathcal H = \tfrac12A^2(\omega^2 + \mathbf k^2)\sin^2\theta + \tfrac12m^2A^2\cos^2\theta$. Averaged over a period ($\langle\sin^2\rangle = \langle\cos^2\rangle = \tfrac12$): $\langle\mathcal H\rangle = \tfrac14A^2(\omega^2 + \mathbf k^2 + m^2) = \tfrac12A^2\omega^2$ and $\langle-\pi\nabla\phi\rangle = \tfrac12A^2\omega\,\mathbf k$. The momentum points along the propagation, and momentum per energy is $\mathbf k/\omega$, the group velocity $\partial\omega/\partial\mathbf k$. A wave packet narrow in $\mathbf k$ with energy $N\omega$ carries momentum $N\mathbf k$: per quantum $E = \omega$, $\mathbf p = \mathbf k$ ($\hbar = 1$), the particles of [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]].
