@@ -20,10 +20,12 @@ The alternating group $A_5$ of even permutations of five letters, of order $60$.
 - $[S_n, S_n] = A_n$ ([[§47 Commutators#^thm-47-5|§47]])
 - The abelianization $S_n/A_n \cong \{\pm 1\}$ ([[§47 Commutators#^ex-47-1|§47]])
 - $[A_n, A_n] = A_n$, so every character of $A_n$ is trivial, for $n \geq 5$ ([[§47 Commutators#^thm-47-10|§47]])
+- For $n \geq 5$ the derived series of $S_n$ stalls at $A_n$ ([[§50 The Derived Series#^ex-50-1|§50]])
+- $A_n$ and $S_n$ are not solvable for $n \geq 5$, so $S_n$ is solvable exactly for $n \leq 4$ ([[§50 The Derived Series#^cor-50-2|§50]])
 
 ## Chapter by chapter
 
-Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]].
+Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] · [[§51 S₃, S₄ and Aₙ#The Alternating Groups Aₙ|Chapter 10]].
 
 ## $A_n$ is the kernel of the sign
 ![[§21 The Sign Homomorphism and the Alternating Group#^def-21-3]]
@@ -66,3 +68,9 @@ Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#T
 
 ## $[A_n, A_n] = A_n$, so every character of $A_n$ is trivial, for $n \geq 5$
 ![[§47 Commutators#^thm-47-10]]
+
+## For $n \geq 5$ the derived series of $S_n$ stalls at $A_n$
+![[§50 The Derived Series#^ex-50-1]]
+
+## $A_n$ and $S_n$ are not solvable for $n \geq 5$
+![[§50 The Derived Series#^cor-50-2]]

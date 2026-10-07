@@ -22,10 +22,12 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 - $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $S_4/V \cong S_3$ by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
 - The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45]])
+- $S_4$ is solvable, through $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$ ([[§49 Solvable Groups#^prop-49-1|§49]])
+- The derived series $S_4 \trianglerighteq A_4 \trianglerighteq V \trianglerighteq \{e\}$, with $(1\,2)(3\,4)$ a commutator in $A_4$ ([[§50 The Derived Series#^ex-50-1|§50]])
 
 ## Chapter by chapter
 
-Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group V|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group V|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] ($A_4$ only, in the $A_n$ part).
+Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group V|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group V|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] ($A_4$ only, in the $A_n$ part) · [[§51 S₃, S₄ and Aₙ#S₄, A₄ and the Klein Four-Group V|Chapter 10]].
 
 ## $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$
 ![[§16 Isomorphisms#^prop-16-3]]
@@ -74,3 +76,9 @@ Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups
 
 ## The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem
 ![[§45 S₃, S₄, A₄ and A₅#^ex-45-2]]
+
+## $S_4$ is solvable, through $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$
+![[§49 Solvable Groups#^prop-49-1]]
+
+## The derived series $S_4 \trianglerighteq A_4 \trianglerighteq V \trianglerighteq \{e\}$
+![[§50 The Derived Series#^ex-50-1]]

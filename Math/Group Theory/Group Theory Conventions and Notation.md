@@ -27,6 +27,8 @@ tags: [group-theory, math493]
 | $\operatorname{Stab}(x)$, $\operatorname{Fix}(g)$, $Gx$ | Stabilizer, fixed points, orbit. | [[§26 Stabilizers and Fixed Points#^def-26-1\|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^def-26-2\|Def. §26.2]], [[§27 Orbits#^def-27-1\|Def. §27.1]] |
 | $G\backslash X$, $X/G$ | Orbit spaces of a left and a right action. | [[§27 Orbits#^def-27-2\|Def. §27.2]], [[§27 Orbits#^def-27-4\|Def. §27.4]] |
 | $H \trianglelefteq G$, $[G, G]$ | Normal subgroup; commutator subgroup, also written $D(G)$. | [[§38 Normal Subgroups#^def-38-1\|Def. §38.1]]; [[§47 Commutators#^def-47-2\|Def. §47.2]] |
+| $D_k(G)$ | The $k$-th term of the derived series, $D_0(G) = G$, $D_{k+1}(G) = D(D_k(G))$. | [[§50 The Derived Series#^def-50-1\|Def. §50.1]] |
+| $\#(G)$ | Worksheet 10's notation for $\vert G\vert$. | [[§52 p-Groups and Sylow Subgroups\|§52]] |
 | $G^{\mathrm{ab}}$ | Abelianization $G/[G,G]$. | [[§47 Commutators#^def-47-3\|Def. §47.3]] |
 | $G/N$, $\pi$ | Quotient group by a normal subgroup; canonical projection $g \mapsto gN$. | [[§40 Quotient Groups#^def-40-1\|Def. §40.1]] |
 | $PSL_n(F)$ | Projective special linear group $SL_n(F)/Z$. | [[§43 Simple Groups#^def-43-2\|Def. §43.2]] |

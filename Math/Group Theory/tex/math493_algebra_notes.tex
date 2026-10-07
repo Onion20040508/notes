@@ -235,9 +235,9 @@ These notes follow the course, and the course studies groups through two familie
     link/.style={-{Stealth[length=2mm]}, draw=black!40, thick},
     bridge/.style={font=\scriptsize, text=black!55, fill=white, inner sep=1pt},
   ]
-  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}}
+  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}, -10.75/{Ch.\,10}, -13.0/{Ch.\,11}}
     \node[rotate=90, font=\scriptsize\bfseries, text=black!55] at (-7.3,\y) {\t};
-  \foreach \y in {-0.75,-2.25,-3.75,-5.25,-6.75,-8.25}
+  \foreach \y in {-0.75,-2.25,-3.75,-5.25,-6.75,-8.25,-9.75,-12.1}
     \draw[black!18, dashed] (-7.0,\y) -- (7.25,\y);
 
   \node[shared] (found) at (0,0) {\textbf{Foundations} \ref*{sec:def-group}--\ref*{sec:zoo}\\ groups, subgroups, order};
@@ -252,6 +252,8 @@ These notes follow the course, and the course studies groups through two familie
   \node[shared] (norm) at (4.3,-7.5) {\textbf{Normal} \ref*{sec:multiplying-cosets}--\ref*{sec:normal-sources}\\ index two, kernels,\\ unions of classes};
   \node[shared] (quot) at (4.3,-9.0) {\textbf{Quotients} \ref*{sec:quotient}--\ref*{sec:simple}\\ $G/\operatorname{Ker} \cong \operatorname{Im}$, simple groups};
   \node[shared] (char) at (-2.2,-9.0) {\textbf{Characters} \ref*{sec:characters}--\ref*{sec:commutators}\\ homomorphisms to abelian groups};
+  \node[shared] (solv) at (4.3,-10.5) {\textbf{Solvable} \ref*{sec:solvable}--\ref*{sec:rev-ch10}\\ abelian pieces, derived series};
+  \node[box, draw=orange!80!black, fill=orange!4, text width=4.6cm] (syl) at (-4.3,-13.0) {\textbf{Sylow} \ref*{sec:p-groups}--\ref*{sec:sylow-theorems}\\ $p$-groups, Sylow's theorems};
 
   \draw[link] (found) -- node[bridge]{subgroups of $\mathbb{Z}$ are $n\mathbb{Z}$} (num);
   \draw[link] (found) -- node[bridge]{$S_X$} (sym);
@@ -267,11 +269,14 @@ These notes follow the course, and the course studies groups through two familie
   \draw[link] (norm) -- node[bridge]{$G/N$ is a group} (quot);
   \draw[link] (quot) -- node[bridge]{$G/[G,G]$} (char);
   \draw[link] (conj) -- node[bridge]{constant on classes} (char);
-  \draw[link, draw=violet!70!black] (sgn.east) -- (7.1,-4.5) -- (7.1,-10.0) -- node[bridge, text=violet!70!black]{$\sgn$ is a character} (-2.2,-10.0) -- (char.south);
+  \draw[link, draw=violet!70!black] (sgn.east) -- (7.1,-4.5) -- (7.1,-11.55) -- node[bridge, text=violet!70!black]{$\sgn$ is a character} (-2.2,-11.55) -- (char.south);
+  \draw[link] (quot) -- node[bridge, pos=0.7]{abelian quotients} (solv);
+  \draw[link] (char) -- node[bridge, pos=0.62]{$D_k(G)$} (solv);
+  \draw[link, draw=orange!80!black] ($(conj.south)+(-1.9,0)$) -- node[bridge, text=orange!70!black, pos=0.62]{$p$-groups act} ($(syl.north)+(-1.9,0)$);
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example.
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~10 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them. Chapter~11 collects the Sylow theorems of Worksheet~10, on subgroups of prime-power order, ahead of the lecture.
 
 \chapter*{Conventions and Notation}
 \addcontentsline{toc}{chapter}{Conventions and Notation}
@@ -298,6 +303,8 @@ $g \star x$, \ $G \curvearrowright X$, \ $X \curvearrowleft G$ & Action; left ac
 $\operatorname{Stab}(x)$, \ $\operatorname{Fix}(g)$, \ $Gx$ & Stabilizer, fixed points, orbit (\ref{sec:stabilizers}, \ref{sec:orbits}). \\
 $G\backslash X$, \ $X/G$ & Orbit spaces of a left and a right action (\ref{sec:orbits}). \\
 $H \trianglelefteq G$, \ $[G, G]$ & Normal subgroup (\ref{sec:normal}); commutator subgroup, also written $D(G)$ (\ref{sec:commutators}). \\
+$D_k(G)$ & The $k$-th term of the derived series, $D_0(G) = G$, $D_{k+1}(G) = D(D_k(G))$ (\ref{sec:derived-series}). \\
+$\#(G)$ & Worksheet 10's notation for $|G|$. \\
 $G^{\mathrm{ab}}$ & Abelianization $G/[G,G]$ (\ref{sec:commutators}). \\
 $G/N$, \ $\pi$ & Quotient group by a normal subgroup; canonical projection $g \mapsto gN$ (\ref{sec:quotient}). \\
 $PSL_n(F)$ & Projective special linear group $SL_n(F)/Z$ (\ref{sec:simple}). \\
@@ -4556,7 +4563,7 @@ Example~\ref{ex:normal-subgroups-s3-s4} (in the $S_3$ part) finds the normal sub
 Take $G = S_4$ and $N = V$, so $G/N \cong S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); by the Correspondence Theorem (\ref{thm:correspondence}). $S_3$ has six subgroups, so it predicts exactly six subgroups of $S_4$ containing $V$: these are $V$, $A_4$, $S_4$, and three subgroups of order $8$, the preimages of the three subgroups of order $2$; each has the form $V \cup \tau V$ for a transposition $\tau$, e.g.\ $V \cup (1\,2)V$. Normal ones match normal ones: $V$, $A_4$, $S_4$ correspond to $\{e\}$, $A_3$, $S_3$.
 \end{exbox}
 
-\textit{$S_4$, $A_4$ and $V$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-s4}); next, Chapter~9, where $A_4$ appears once, in the $A_n$ part (\ref{sec:rev-ch9-an}).}
+\textit{$S_4$, $A_4$ and $V$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-s4}); next, Chapter~9, where $A_4$ appears once, in the $A_n$ part (\ref{sec:rev-ch9-an}); then Chapter~10 (\ref{sec:rev-ch10-s4}).}
 
 \subsection{\texorpdfstring{The Alternating Groups $A_n$}{The Alternating Groups Aₙ}}\label{sec:rev-ch8-an}
 
@@ -4722,7 +4729,7 @@ The sign $\sgn: S_n \to \{\pm 1\}$ is a character (the target is abelian). By \r
 The \textbf{commutator subgroup} of $G$, written $[G,G]$ (PS 4.4 writes $D(G)$), is the subgroup generated by all commutators $aba^{-1}b^{-1}$, $a, b \in G$. (A product of commutators need not itself be a commutator, which is why the generated subgroup is taken.)
 \end{defbox}
 
-\begin{propbox}[{Properties of the Commutator Subgroup ((1) is PS 4.4(1))}]\label{prop:properties-commutator-subgroup}
+\begin{propbox}[{Properties of the Commutator Subgroup ((1) is PS 4.4(1), WS 9.4)}]\label{prop:properties-commutator-subgroup}
 \begin{enumerate}
     \item $[G,G]$ is a normal subgroup of $G$ (Chapter~\ref{ch:normal}).
     \item Every character $\chi: G \to A$ is trivial on $[G,G]$, i.e.\ $[G,G] \subseteq \operatorname{Ker}\chi$.
@@ -4755,7 +4762,7 @@ In $S_n$ all $3$-cycles are commutators and no transposition is, and the theorem
 The \textbf{abelianization} of $G$ is the quotient group $G^{\mathrm{ab}} := G/[G,G]$, defined because $[G,G]$ is normal (Properties of the Commutator Subgroup).
 \end{defbox}
 
-\begin{propbox}[{The Abelianization Is Abelian (PS 4.4(2))}]\label{prop:abelianization-abelian}
+\begin{propbox}[{The Abelianization Is Abelian (PS 4.4(2); WS 9.5)}]\label{prop:abelianization-abelian}
 $G/[G,G]$ is abelian.
 \end{propbox}
 
@@ -4844,7 +4851,7 @@ $S_3$ shows why a character needs an abelian target: the identity map $S_3 \to S
 
 The remark \emph{Where Commutativity of $A$ Is Needed} (\ref{sec:characters}) gives the example.
 
-\textit{$S_3$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-s3}); no later appearance yet.}
+\textit{$S_3$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-s3}); next, Chapter~10 (\ref{sec:rev-ch10-s3}).}
 
 \subsection{\texorpdfstring{The Alternating Groups $A_n$}{The Alternating Groups Aₙ}}\label{sec:rev-ch9-an}
 
@@ -4852,7 +4859,7 @@ $A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator and n
 
 Propositions~\ref{prop:3-cycles-commutators} and~\ref{prop:transpositions-not-commutators} (PS~2.4) separate $3$-cycles from transpositions; Theorem~\ref{thm:commutator-subgroup-sn} (PS~4.5) proves $[S_n, S_n] = A_n$; Example~\ref{ex:abelianization-sn} computes the abelianization; Lemma~\ref{lem:3-cycles-commutators-an} and Theorem~\ref{thm:characters-an-trivial} (PS~5.3) prove $[A_n, A_n] = A_n$ for $n \geq 5$; the remark \emph{Small $n$, and the Link to Simplicity} (\ref{sec:commutators}) treats $A_3$ and $A_4$ and compares with the simplicity of $A_n$.
 
-\textit{$A_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-an}); no later appearance yet.}
+\textit{$A_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-an}); next, Chapter~10 (\ref{sec:rev-ch10-an}).}
 
 \subsection{\texorpdfstring{$GL_n$, $SL_n$ and $O(n)$}{GLₙ, SLₙ and O(n)}}\label{sec:rev-ch9-gl}
 
@@ -4860,7 +4867,221 @@ The determinant is the model character of $GL_n(k)$, and a character is the same
 
 Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the remark \emph{One-Dimensional Representations} (\ref{sec:characters}) identifies characters with homomorphisms into $GL_1(k)$; Example~\ref{ex:products-commutators-not-commutators} (PS~5.4) finds, in a group of real block upper-triangular matrices, elements of $[G, G]$ that are not commutators.
 
-\textit{$GL_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-gl}); no later appearance yet.}
+\textit{$GL_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-gl}); next, Chapter~11, where $GL_n(\mathbb{F}_p)$ appears once (Proposition~\ref{prop:unitriangular-sylow}).}
+
+
+\chapter{Solvable Groups}\label{ch:solvable}
+
+\textit{Source: Worksheet 9 (Wed Oct 7).}
+
+Simple groups are the atoms of group theory; the next question is how they are put together. The solvable groups are the groups built entirely out of abelian pieces. This chapter defines them, shows that the class is closed under subgroups and quotients, and introduces the derived series, which gives an algorithm for testing solvability.
+
+\section{Solvable Groups}\label{sec:solvable}
+
+\textit{Reference: not covered in the Pinter chapters used so far.}
+
+\begin{defbox}[{Solvable Group (WS 9)}]\label{def:solvable-group}
+A group $G$ is \textbf{solvable} if there is a chain of subgroups
+\[ \{e\} = G_0 \trianglelefteq G_1 \trianglelefteq G_2 \trianglelefteq \cdots \trianglelefteq G_N = G \]
+in which each $G_{j-1}$ is normal in $G_j$ and each quotient $G_j/G_{j-1}$ is abelian.
+\end{defbox}
+
+\begin{rembox}[{Normal in the Next Term Only}]\label{rem:normal-in-next-term}
+Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ below, $V$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Every abelian group is solvable, via the chain $\{e\} \trianglelefteq G$.
+\end{rembox}
+
+\begin{propbox}[{$S_3$ and $S_4$ Are Solvable (WS 9.1)}]\label{prop:s3-s4-solvable}
+The chains
+\[ \{e\} \trianglelefteq A_3 \trianglelefteq S_3 \qquad\text{and}\qquad \{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4 \]
+have the required properties, so $S_3$ and $S_4$ are solvable.
+\end{propbox}
+
+\begin{proof}
+\emph{$S_3$.} $A_3$ is normal in $S_3$ (index $2$, Proposition~\ref{prop:subgroups-index-2-normal}), and $A_3/\{e\} \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ and $S_3/A_3 \cong \{\pm 1\}$ are abelian (the sign, Theorem~\ref{thm:sign-homomorphism}, and the First Isomorphism Theorem~\ref{thm:first-isomorphism-theorem}).
+
+\emph{$S_4$.} $V \trianglelefteq A_4$ and $A_4/V \cong \mathbb{Z}/3\mathbb{Z}$ (The Pair-Partition Homomorphism, Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); $A_4 \trianglelefteq S_4$ (index $2$) with $S_4/A_4 \cong \{\pm 1\}$; and $V/\{e\} \cong V$ is abelian, having order $4$ (Groups of Order $4$ Are Abelian, Proposition~\ref{prop:groups-order-4-abelian}). All three quotients are abelian.
+\end{proof}
+
+\begin{propbox}[{Subgroups of Solvable Groups Are Solvable (WS 9.2; lecture 10/7)}]\label{prop:subgroups-solvable}
+If $G$ is solvable and $S \leq G$, then $S$ is solvable.
+\end{propbox}
+
+\begin{proof}
+Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ be a chain as in the definition. We show that
+\[ \{e\} = S \cap G_0 \;\leq\; S \cap G_1 \;\leq\; \cdots \;\leq\; S \cap G_N = S \]
+is such a chain for $S$.
+
+\emph{Normality.} Let $g \in S \cap G_{j-1}$ and $h \in S \cap G_j$. Then $hgh^{-1} \in G_{j-1}$, since $h \in G_j$, $g \in G_{j-1}$ and $G_{j-1} \trianglelefteq G_j$; and $hgh^{-1} \in S$, since $g, h \in S$. So $hgh^{-1} \in S \cap G_{j-1}$, and $S \cap G_{j-1} \trianglelefteq S \cap G_j$.
+
+\emph{Abelian quotients.} The composite $\alpha: S \cap G_j \hookrightarrow G_j \twoheadrightarrow G_j/G_{j-1}$ is a homomorphism with kernel $(S \cap G_j) \cap G_{j-1} = S \cap G_{j-1}$ (Restricting a Homomorphism, Lemma~\ref{lem:restricting-homomorphism}). By the First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}), $(S \cap G_j)/(S \cap G_{j-1}) \cong \operatorname{Im}\alpha$, a subgroup of the abelian group $G_j/G_{j-1}$, hence abelian.
+\end{proof}
+
+\begin{propbox}[{Quotients of Solvable Groups Are Solvable (WS 9.3)}]\label{prop:quotients-solvable}
+If $G$ is solvable and $\pi: G \to Q$ is a surjective homomorphism (for instance, the projection onto a quotient group $G/N$), then $Q$ is solvable. The natural candidate chain is
+\[ \{e\} = \pi(G_0) \;\leq\; \pi(G_1) \;\leq\; \cdots \;\leq\; \pi(G_N) = Q. \]
+\end{propbox}
+
+\proofpending
+
+\begin{rembox}[{Status of WS 9.3}]\label{rem:status-ws9-3}
+The lecture set up the chain $\pi(G_j)$ and postponed the verification (normality of $\pi(G_{j-1})$ in $\pi(G_j)$, and abelian quotients) to Friday, Oct 9.
+\end{rembox}
+
+\section{The Derived Series}\label{sec:derived-series}
+
+\textit{Reference: not covered in the Pinter chapters used so far.}
+
+\begin{rembox}[{The Derived Subgroup}]\label{rem:derived-subgroup}
+Worksheet 9 recalls the commutator subgroup $D(G) = [G, G]$ (Definition~\ref{def:commutator-subgroup}), also called the \emph{derived subgroup}. Its normality (WS 9.4) and the commutativity of $G^{\mathrm{ab}} = G/D(G)$ (WS 9.5) were proved in \ref{sec:commutators}: Properties of the Commutator Subgroup (Proposition~\ref{prop:properties-commutator-subgroup}) and The Abelianization Is Abelian (Proposition~\ref{prop:abelianization-abelian}).
+\end{rembox}
+
+\begin{defbox}[{Derived Series (WS 9)}]\label{def:derived-series}
+The \textbf{derived series} of $G$ is the chain $G \trianglerighteq D(G) \trianglerighteq D(D(G)) \trianglerighteq \cdots$. Its $k$-th term is written $D_k(G)$: $D_0(G) = G$ and $D_{k+1}(G) = D(D_k(G))$.
+\end{defbox}
+
+\begin{thmbox}[{Solvability via the Derived Series (WS 9.6)}]\label{thm:solvable-derived-series}
+$G$ is solvable if and only if $D_N(G) = \{e\}$ for some $N$.
+\end{thmbox}
+
+\proofpending
+
+\begin{exbox}[{Derived Series of $S_3$, $S_4$ and $S_n$ (not from class)}]\label{ex:derived-series-sn}
+\begin{enumerate}
+    \item $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$: $D(S_3) = A_3$ by The Commutator Subgroup and Characters of $S_n$ (Theorem~\ref{thm:commutator-subgroup-sn}), and $D(A_3) = \{e\}$ since $A_3$ is abelian.
+    \item $S_4 \trianglerighteq A_4 \trianglerighteq V \trianglerighteq \{e\}$. Here $D(A_4) = V$: on one hand $A_4/V \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so every commutator of $A_4$ maps to the identity of $A_4/V$, i.e.\ $D(A_4) \subseteq V$; on the other hand $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$, and $D(A_4)$ is normal in $A_4$, so it also contains the conjugates $(1\,3)(2\,4)$ and $(1\,4)(2\,3)$ of $(1\,2)(3\,4)$ by $(1\,2\,3)$ and $(1\,3\,2)$. Finally $D(V) = \{e\}$ since $V$ is abelian.
+    \item For $n \geq 5$: $D(S_n) = A_n$ and $D(A_n) = A_n$ (Characters of $A_n$ Are Trivial for $n \geq 5$, Theorem~\ref{thm:characters-an-trivial}), so the series is $S_n \trianglerighteq A_n \trianglerighteq A_n \trianglerighteq \cdots$ and never reaches $\{e\}$.
+\end{enumerate}
+\end{exbox}
+
+\begin{corbox}[{$A_n$ and $S_n$ Are Not Solvable for $n \geq 5$ (not from class)}]\label{cor:an-sn-not-solvable}
+For $n \geq 5$, neither $A_n$ nor $S_n$ is solvable. Hence $S_n$ is solvable if and only if $n \leq 4$.
+\end{corbox}
+
+\begin{proof}
+Let $n \geq 5$ and suppose $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = A_n$ is a chain with abelian quotients. Let $j$ be the largest index with $G_j \neq A_n$. Then $G_j \trianglelefteq G_{j+1} = A_n$, and $A_n$ is simple (Theorem~\ref{thm:an-simple-n-ge-5}), so $G_j = \{e\}$; but then $G_{j+1}/G_j \cong A_n$ is not abelian, a contradiction. So $A_n$ is not solvable, and neither is $S_n$, which contains $A_n$ (Subgroups of Solvable Groups Are Solvable, Proposition~\ref{prop:subgroups-solvable}). For $n \leq 4$, $S_n$ is a subgroup of $S_4$ (fixing the remaining points), hence solvable (Proposition~\ref{prop:s3-s4-solvable}). (This argument uses simplicity of $A_n$; by WS 9.6 (Theorem~\ref{thm:solvable-derived-series}) the derived series in Example~\ref{ex:derived-series-sn} gives the same conclusion.)
+\end{proof}
+
+\section{\texorpdfstring{$S_3$, $S_4$ and $A_n$}{S₃, S₄ and Aₙ}}\label{sec:rev-ch10}
+
+\textit{The recurring groups as Chapter~10 saw them: which of them are built from abelian pieces. Each part gathers the chapter's items about one group, in order.}
+
+\subsection{\texorpdfstring{The Symmetric Group $S_3$}{The Symmetric Group S₃}}\label{sec:rev-ch10-s3}
+
+$S_3$ is solvable without being abelian: the chain $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ has the abelian quotients $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and the derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ reaches $\{e\}$ in two steps.
+
+Proposition~\ref{prop:s3-s4-solvable} (WS 9.1) gives the chain; Example~\ref{ex:derived-series-sn}(1) computes the derived series.
+
+\textit{$S_3$ elsewhere: previous, Chapter~9 (\ref{sec:rev-ch9-s3}); no later appearance yet.}
+
+\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $V$}{S₄, A₄ and the Klein Four-Group V}}\label{sec:rev-ch10-s4}
+
+$S_4$ is solvable through $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$, with quotients $V$, $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and this chain is its derived series: $D(S_4) = A_4$, $D(A_4) = V$, $D(V) = \{e\}$. Here $V$ is normal in all of $S_4$, more than the definition asks (Remark~\ref{rem:normal-in-next-term}).
+
+Proposition~\ref{prop:s3-s4-solvable} (WS 9.1) gives the chain; Example~\ref{ex:derived-series-sn}(2) computes the derived series, finding $(1\,2)(3\,4)$ as a commutator of two $3$-cycles of $A_4$.
+
+\textit{$S_4$, $A_4$ and $V$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-s4}), and Chapter~9 for $A_4$ (\ref{sec:rev-ch9-an}); no later appearance yet.}
+
+\subsection{\texorpdfstring{The Alternating Groups $A_n$}{The Alternating Groups Aₙ}}\label{sec:rev-ch10-an}
+
+For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$.
+
+Example~\ref{ex:derived-series-sn}(3) shows the derived series stalling; Corollary~\ref{cor:an-sn-not-solvable} proves non-solvability from the simplicity of $A_n$ and Proposition~\ref{prop:subgroups-solvable}.
+
+\textit{$A_n$ elsewhere: previous, Chapter~9 (\ref{sec:rev-ch9-an}); no later appearance yet.}
+
+\chapter{The Sylow Theorems}\label{ch:sylow}
+
+\textit{Source: Worksheet 10 (handed out with Worksheet 9; not yet covered in lecture). Statements only: every proof is left to be filled in after class.}
+
+Lagrange's theorem says that the order of a subgroup divides $|G|$, and its converse fails; Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: subgroups of that order exist, and any two are conjugate.
+
+\section{\texorpdfstring{$p$-Groups and Sylow Subgroups}{p-Groups and Sylow Subgroups}}\label{sec:p-groups}
+
+\textit{Reference: Worksheet 10. Throughout, $p$ is a prime.}
+
+Worksheet 10 begins by restating the definition of a $p$-group, already met with the center:
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:p-group} ($p$-Group).} For a prime $p$, a \textbf{$p$-group} is a group of order $p^k$ for some $k \geq 0$.
+\end{quote}
+
+Nontrivial $p$-groups have nontrivial center (Theorem~\ref{thm:groups-prime-power-order-have-nontrivial-center}, PS 3.5).
+
+\begin{defbox}[{$p$-Subgroup (WS 10)}]\label{def:p-subgroup}
+For a group $G$, a \textbf{$p$-subgroup} of $G$ is a subgroup of $G$ which is a $p$-group.
+\end{defbox}
+
+\begin{propbox}[{Fixed Points of a $p$-Group Action (WS 10.1)}]\label{prop:p-group-fixed-point}
+Let $P$ be a $p$-group and let $X$ be a finite set on which $P$ acts. If $|X| \not\equiv 0 \pmod p$, then $P$ fixes some point of $X$.
+\end{propbox}
+
+\proofpending
+
+Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m$.
+
+\begin{defbox}[{Sylow $p$-Subgroup (WS 10)}]\label{def:sylow-subgroup}
+A \textbf{Sylow $p$-subgroup} of $G$ is a subgroup of $G$ of order $p^k$.
+\end{defbox}
+
+Worksheet 10 quotes from the coming problem set the order
+\[ |GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} \prod_{k=1}^{n} (p^k - 1) \]
+(homework, not proved here), so a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ would be a group of order $p^{\binom{n}{2}}$.
+
+\begin{propbox}[{The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ (WS 10.2)}]\label{prop:unitriangular-sylow}
+Let $P \subseteq GL_n(\mathbb{F}_p)$ be the group of matrices of the form
+\[ \begin{bmatrix} 1 & b_{12} & b_{13} & \cdots & b_{1(n-1)} & b_{1n} \\ 0 & 1 & b_{23} & \cdots & b_{2(n-1)} & b_{2n} \\ 0 & 0 & 1 & \cdots & b_{3(n-1)} & b_{3n} \\ & & & \ddots & & \vdots \\ 0 & 0 & 0 & \cdots & 1 & b_{(n-1)n} \\ 0 & 0 & 0 & \cdots & 0 & 1 \end{bmatrix}. \]
+Then $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$.
+\end{propbox}
+
+\proofpending
+
+\textit{$GL_n$ elsewhere: previous, Chapter~9 (\ref{sec:rev-ch9-gl}); no later appearance yet.}
+
+\section{The Sylow Theorems}\label{sec:sylow-theorems}
+
+\textit{Reference: Worksheet 10. Throughout, $p$ is a prime and the groups are finite.}
+
+\begin{propbox}[{Sylow Subgroups of a Subgroup (WS 10.3)}]\label{prop:sylow-of-subgroup}
+Let $\Gamma$ be a finite group with a Sylow $p$-subgroup $\Pi$, and let $G$ be a subgroup of $\Gamma$.
+\begin{enumerate}
+    \item $G$ has a Sylow $p$-subgroup $P$.
+    \item More specifically, there is some $\gamma \in \Gamma$ such that $P = G \cap \gamma\Pi\gamma^{-1}$ is a Sylow $p$-subgroup of $G$.
+\end{enumerate}
+\end{propbox}
+
+\proofpending
+
+\textit{Worksheet hint for (1): consider $G$ acting on $\Gamma/\Pi$. Worksheet hint for the next three results: use Proposition~\ref{prop:sylow-of-subgroup}.}
+
+\begin{thmbox}[{The First Sylow Theorem (WS 10.4)}]\label{thm:sylow-first}
+Every finite group $G$ has a Sylow $p$-subgroup.
+\end{thmbox}
+
+\proofpending
+
+\begin{propbox}[{$p$-Subgroups and Conjugates of a Sylow Subgroup (WS 10.5)}]\label{prop:p-subgroups-conjugates-sylow}
+Let $G$ be a finite group and let $P$ be a Sylow $p$-subgroup with $|P| = p^k$.
+\begin{enumerate}
+    \item If $Q$ is a $p$-subgroup of $G$, there is some $g \in G$ such that $Q \subseteq gPg^{-1}$.
+    \item If $H$ is a subgroup of $G$ whose order is divisible by $p^k$, there is some $g \in G$ such that $H \supseteq gPg^{-1}$.
+\end{enumerate}
+\end{propbox}
+
+\proofpending
+
+\begin{thmbox}[{The Second Sylow Theorem (WS 10.6)}]\label{thm:sylow-second}
+Let $G$ be a finite group and let $P_1$ and $P_2$ be two Sylow $p$-subgroups of $G$. Then there is some $g \in G$ such that $P_2 = gP_1g^{-1}$.
+\end{thmbox}
+
+\proofpending
+
+\begin{thmbox}[{The Third Sylow Theorem (stated on WS 10)}]\label{thm:sylow-third}
+For any finite group $G$, the number of Sylow $p$-subgroups of $G$ is congruent to $1 \bmod p$.
+\end{thmbox}
+
+\proofpending
+
+Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
 
 
 \appendix
@@ -4884,6 +5105,7 @@ Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the rema
     \item \textbf{To compute in $G/N$.} Choose one representative per coset; to multiply, multiply in $G$ and replace the product by its representative. If the representatives form a subgroup $S$, then $G/N \cong S$ (\ref{prop:representatives-forming-subgroup}). More generally $H/(H \cap N) \cong HN/N$ (Second Isomorphism Theorem, \ref{thm:second-isomorphism-theorem}).
     \item \textbf{To find the subgroups of a quotient $G/N$.} They correspond to the subgroups of $G$ containing $N$, via $A \mapsto A/N$, with normal matching normal (Correspondence Theorem, \ref{thm:correspondence}).
     \item \textbf{To decide whether $g, hgh^{-1} \in N$ are conjugate \emph{in} $N \trianglelefteq G$.} Check whether $h \in C_G(g)N$ (PS 5.2, Proposition~\ref{prop:conjugacy-normal-subgroup}). For $N = A_n$: a class of $S_n$ splits in $A_n$ iff its centralizer is contained in $A_n$.
+    \item \textbf{To show $G$ is solvable.} Exhibit a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ with abelian quotients (e.g.\ $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$), or compute the derived series down to $\{e\}$ (\ref{sec:solvable}, \ref{sec:derived-series}). To show $G$ is \emph{not} solvable, find a non-abelian simple subgroup or quotient, e.g.\ $A_5$.
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -4904,7 +5126,7 @@ $S_3$ & $6$ & no / no & $\{e\}$ & sizes $1, 3, 2$ & $\{e\}$, $A_3 = \langle (1\,
 $S_4$ & $24$ & no / no & $\{e\}$ & sizes $1, 6, 3, 8, 6$ (types $1^4, 2\,1^2, 2^2, 3\,1, 4$) & $\{e\}$, $V$, $A_4$, $S_4$ (\ref{sec:normal-sources}) \\
 \end{longtable}}
 
-Here $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/V \cong S_3$, $A_4/V \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}).
+Here $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/V \cong S_3$, $A_4/V \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}). $S_n$ is solvable exactly for $n \leq 4$ (\ref{sec:derived-series}).
 
 \section*{Exam Traps}\phantomsection
 \addcontentsline{toc}{section}{Exam Traps}\label{sec:traps}
@@ -4959,6 +5181,8 @@ Thu Oct 1 \newline Problem Set 4 & Products of subgroups; commuting normal subgr
 Fri Oct 2 \newline lecture & Computing in $G/N$ with representatives; Second Isomorphism Theorem; Third named & \ref{sec:representatives}, \ref{sec:second-iso} \\
 Mon Oct 5 \newline lecture; Worksheet 8 & Second Isomorphism Theorem revisited; $GL_2^+(\mathbb{R})$ example; correspondence theorem (WS 8.4, 8.5(1)); course pace slowed & \ref{sec:first-iso}, \ref{sec:second-iso} \\
 Mon Oct 5 \newline Problem Set 5 (submitted) & Index of an intersection; conjugacy in a normal subgroup; characters of $A_n$; non-commutators in $D(G)$ & \ref{sec:lagrange} (5.1), \ref{sec:normal-conjugacy} (5.2), \ref{sec:commutators} (5.3, 5.4) \\
+Wed Oct 7 \newline lecture; Worksheet 9 & Solvable groups; $S_3$, $S_4$ solvable; subgroups of solvable groups; quotients (to be finished Fri Oct 9); derived series & \ref{sec:solvable}, \ref{sec:derived-series} \\
+Wed Oct 7 \newline Worksheet 10 (handed out) & $p$-groups, Sylow subgroups, the three Sylow theorems: statements only, not yet covered in lecture & \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
 \end{longtable}}
 
 \textbf{Material not from class.} A few results were added to fill gaps and are tagged in their titles: those marked \emph{cf.\ Pinter} or \emph{cf.\ MATH 412} come from the textbook or from the MATH 412 worksheets, not from MATH 493, and are not part of the examinable content unless Speyer covers them. Everything tagged with a worksheet number, a problem-set number, or a lecture date is course material.
@@ -5240,6 +5464,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em cycle type\dotfill \pageref{def:cycle-type}\par
 \noindent\hangindent=1em cyclic\dotfill \pageref{def:cyclic-groups}\par
 \noindent\hangindent=1em cyclic group of order $n$\dotfill \pageref{def:cyclic-group-z-nz-cn}\par
+\noindent\hangindent=1em derived series\dotfill \pageref{def:derived-series}\par
+\noindent\hangindent=1em derived subgroup\dotfill \pageref{def:commutator-subgroup}\par
 \noindent\hangindent=1em diagonal\dotfill \pageref{def:structure-maps-product}\par
 \noindent\hangindent=1em direct product\dotfill \pageref{def:direct-products}\par
 \noindent\hangindent=1em disjoint\dotfill \pageref{def:disjoint-cycles}\par
@@ -5284,16 +5510,17 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em orbit space\dotfill \pageref{def:orbit-space}, \pageref{def:orbit-space-notation}\par
 \noindent\hangindent=1em order\dotfill \pageref{def:order-group-order-element-cyclic-groups}, \pageref{def:order-element}\par
 \noindent\hangindent=1em orthogonal group\dotfill \pageref{def:orthogonal-group}\par
-\noindent\hangindent=1em $p$-group\dotfill \pageref{def:p-group}\par
 \noindent\hangindent=1em partition\dotfill \pageref{def:partition}, \pageref{def:cycle-type}\par
 \noindent\hangindent=1em parts\dotfill \pageref{def:partition}\par
 \noindent\hangindent=1em permutation matrix\dotfill \pageref{def:permutation-matrices}\par
 \noindent\hangindent=1em permutation representation\dotfill \pageref{def:permutation-representation}\par
+\noindent\hangindent=1em $p$-group\dotfill \pageref{def:p-group}\par
 \noindent\hangindent=1em pointwise product\dotfill \pageref{def:pointwise-product}\par
 \noindent\hangindent=1em polynomial\dotfill \pageref{def:polynomial-ring-several-variables}\par
 \noindent\hangindent=1em polynomial ring\dotfill \pageref{def:polynomial-ring-several-variables}\par
 \noindent\hangindent=1em projections\dotfill \pageref{def:structure-maps-product}\par
 \noindent\hangindent=1em projective special linear group\dotfill \pageref{def:projective-special-linear-group}\par
+\noindent\hangindent=1em $p$-subgroup\dotfill \pageref{def:p-subgroup}\par
 \noindent\hangindent=1em quotient\dotfill \pageref{def:quotient-remainder-a-n}\par
 \noindent\hangindent=1em quotient group\dotfill \pageref{def:quotient-group}\par
 \noindent\hangindent=1em $r$-cycle\dotfill \pageref{def:cycle-notation}\par
@@ -5311,6 +5538,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em sign\dotfill \pageref{def:sign-even-odd-permutations}\par
 \noindent\hangindent=1em similar\dotfill \pageref{def:similar-matrices}\par
 \noindent\hangindent=1em simple\dotfill \pageref{def:simple-group}\par
+\noindent\hangindent=1em solvable\dotfill \pageref{def:solvable-group}\par
 \noindent\hangindent=1em special linear group\dotfill \pageref{def:special-linear-orthogonal-special-orthogonal}\par
 \noindent\hangindent=1em special orthogonal group\dotfill \pageref{def:special-orthogonal-group}\par
 \noindent\hangindent=1em stabilizer\dotfill \pageref{def:stabilizer-fixed-points}\par
@@ -5319,6 +5547,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em subgroup\dotfill \pageref{def:subgroup}\par
 \noindent\hangindent=1em subgroup generated by $g$\dotfill \pageref{def:subgroup-generated-element}\par
 \noindent\hangindent=1em subgroup generated by $g_1, \ldots, g_k$\dotfill \pageref{def:subgroup-generated-several-elements}\par
+\noindent\hangindent=1em Sylow $p$-subgroup\dotfill \pageref{def:sylow-subgroup}\par
 \noindent\hangindent=1em symmetric\dotfill \pageref{def:symmetric-polynomial}, \pageref{def:equivalence-relation}\par
 \noindent\hangindent=1em symmetric group\dotfill \pageref{def:symmetric-groups-sx-sn}\par
 \noindent\hangindent=1em transitive\dotfill \pageref{def:equivalence-relation}, \pageref{def:transitive-action}\par
@@ -5350,6 +5579,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Addition of Residue Classes Is Well-Defined; $\mathbb{Z}/n\mathbb{Z}$ Is a Group\dotfill \pageref{prop:addition-residue-classes-well-defined-z-nz-group}\par
 \noindent\hangindent=1em Adjacent Transpositions from $(1\,j)$'s\dotfill \pageref{lem:adjacent-transpositions-1-j-s}\par
 \noindent\hangindent=1em All Cosets Have the Same Size\dotfill \pageref{prop:all-cosets-have-same-size}\par
+\noindent\hangindent=1em $A_n$ and $S_n$ Are Not Solvable for $n \geq 5$\dotfill \pageref{cor:an-sn-not-solvable}\par
 \noindent\hangindent=1em $A_n$ Is Simple for $n \geq 5$\dotfill \pageref{thm:an-simple-n-ge-5}\par
 \noindent\hangindent=1em $A_n$ Is the Stabilizer of $\Delta$\dotfill \pageref{cor:an-stabilizer-delta}\par
 \noindent\hangindent=1em An $r$-Cycle Has Order $r$\dotfill \pageref{lem:r-cycle-has-order-r}\par
@@ -5403,6 +5633,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em First Examples of Normal Subgroups\dotfill \pageref{prop:first-examples-normal-subgroups}\par
 \noindent\hangindent=1em First Isomorphism Theorem\dotfill \pageref{thm:first-isomorphism-theorem}\par
 \noindent\hangindent=1em Five Characterizations of Normality\dotfill \pageref{thm:five-characterizations-normality}\par
+\noindent\hangindent=1em Fixed Points of a $p$-Group Action\dotfill \pageref{prop:p-group-fixed-point}\par
 \noindent\hangindent=1em Further Isomorphism Invariants\dotfill \pageref{prop:further-isomorphism-invariants}\par
 \noindent\hangindent=1em $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$\dotfill \pageref{cor:g-ker-alpha-im-alpha}\par
 \noindent\hangindent=1em Generalized Associativity\dotfill \pageref{prop:generalized-associativity}\par
@@ -5461,12 +5692,16 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Products of Two $(1\,j)$'s\dotfill \pageref{lem:products-two-1-j-s}\par
 \noindent\hangindent=1em Properties of the Commutator Subgroup\dotfill \pageref{prop:properties-commutator-subgroup}\par
 \noindent\hangindent=1em $PSL_n(F)$ Is Simple\dotfill \pageref{thm:psln-f-simple}\par
+\noindent\hangindent=1em $p$-Subgroups and Conjugates of a Sylow Subgroup\dotfill \pageref{prop:p-subgroups-conjugates-sylow}\par
 \noindent\hangindent=1em Quotients Along the Correspondence\dotfill \pageref{prop:quotients-along-correspondence}\par
+\noindent\hangindent=1em Quotients of Solvable Groups Are Solvable\dotfill \pageref{prop:quotients-solvable}\par
 \noindent\hangindent=1em Restricting a Homomorphism\dotfill \pageref{lem:restricting-homomorphism}\par
 \noindent\hangindent=1em Rotational Symmetries of the Cube\dotfill \pageref{prop:rotational-symmetries-cube}\par
+\noindent\hangindent=1em $S_3$ and $S_4$ Are Solvable\dotfill \pageref{prop:s3-s4-solvable}\par
 \noindent\hangindent=1em $\sigma \mapsto M(\sigma)$ Is an Injective Homomorphism $S_n \to GL_n(k)$\dotfill \pageref{prop:sigma-maps-m-sigma-injective-homomorphism-sn-to}\par
 \noindent\hangindent=1em Size of $A_n$\dotfill \pageref{prop:size-an}\par
 \noindent\hangindent=1em $S_n$ Is Not Simple for $n \geq 3$\dotfill \pageref{cor:sn-not-simple-n-ge-3}\par
+\noindent\hangindent=1em Solvability via the Derived Series\dotfill \pageref{thm:solvable-derived-series}\par
 \noindent\hangindent=1em Sorting by Adjacent Swaps\dotfill \pageref{lem:sorting-adjacent-swaps}\par
 \noindent\hangindent=1em Stabilizers Along an Orbit Are Conjugate\dotfill \pageref{cor:stabilizers-along-orbit-conjugate}\par
 \noindent\hangindent=1em Stabilizers of Points in the Same Orbit Are Conjugate\dotfill \pageref{prop:stabilizers-points-same-orbit-conjugate}\par
@@ -5475,7 +5710,9 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Subgroups of Index $2$ Are Normal\dotfill \pageref{prop:subgroups-index-2-normal}\par
 \noindent\hangindent=1em Subgroups of $\mathbb{Z}$\dotfill \pageref{prop:subgroups-z}\par
 \noindent\hangindent=1em Subgroups of $S_3$\dotfill \pageref{prop:subgroups-s3}\par
+\noindent\hangindent=1em Subgroups of Solvable Groups Are Solvable\dotfill \pageref{prop:subgroups-solvable}\par
 \noindent\hangindent=1em Surjectivity and Injectivity via Image and Kernel\dotfill \pageref{prop:surjectivity-injectivity-via-image-kernel}\par
+\noindent\hangindent=1em Sylow Subgroups of a Subgroup\dotfill \pageref{prop:sylow-of-subgroup}\par
 \noindent\hangindent=1em The Abelianization Is Abelian\dotfill \pageref{prop:abelianization-abelian}\par
 \noindent\hangindent=1em The Action of $G$ on $G/H$\dotfill \pageref{prop:action-g-g-h}\par
 \noindent\hangindent=1em The Center Is a Subgroup\dotfill \pageref{prop:center-subgroup}\par
@@ -5485,6 +5722,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Conjugation Action\dotfill \pageref{prop:conjugation-action}\par
 \noindent\hangindent=1em The Correspondence Theorem\dotfill \pageref{thm:correspondence}\par
 \noindent\hangindent=1em The Cube Group Embeds in $S_6$\dotfill \pageref{prop:cube-group-embeds-s6}\par
+\noindent\hangindent=1em The First Sylow Theorem\dotfill \pageref{thm:sylow-first}\par
 \noindent\hangindent=1em The Homomorphism $k \mapsto g^k$ and $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$\dotfill \pageref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}\par
 \noindent\hangindent=1em The Index Is Multiplicative\dotfill \pageref{prop:index-multiplicative}\par
 \noindent\hangindent=1em The Inverse of an Isomorphism Is an Isomorphism\dotfill \pageref{prop:inverse-isomorphism-isomorphism}\par
@@ -5496,9 +5734,12 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Pair-Partition Homomorphism $S_4 \to S_3$\dotfill \pageref{prop:pair-partition-homomorphism-s4-to-s3}\par
 \noindent\hangindent=1em The Product and Its Universal Property\dotfill \pageref{prop:product-universal-property}\par
 \noindent\hangindent=1em The Rotation Group of the Cube Is $S_4$\dotfill \pageref{thm:rotation-group-cube-s4}\par
+\noindent\hangindent=1em The Second Sylow Theorem\dotfill \pageref{thm:sylow-second}\par
 \noindent\hangindent=1em The Sign Is a Homomorphism\dotfill \pageref{thm:sign-homomorphism}\par
 \noindent\hangindent=1em The Stabilizer Is a Subgroup\dotfill \pageref{prop:stabilizer-subgroup}\par
+\noindent\hangindent=1em The Third Sylow Theorem\dotfill \pageref{thm:sylow-third}\par
 \noindent\hangindent=1em The Top-Down Characterization of $\langle g_1, \ldots, g_k \rangle$\dotfill \pageref{prop:top-down-characterization-gen-g1-gk}\par
+\noindent\hangindent=1em The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$\dotfill \pageref{prop:unitriangular-sylow}\par
 \noindent\hangindent=1em Three Conjugacy Classes Force Order at Most $6$\dotfill \pageref{prop:three-conjugacy-classes-force-order-at-most-6}\par
 \noindent\hangindent=1em Three Formulas for the Sign\dotfill \pageref{thm:three-formulas-sign}\par
 \noindent\hangindent=1em Transpositions Are Not Commutators\dotfill \pageref{prop:transpositions-not-commutators}\par

@@ -56,7 +56,7 @@ The normal subgroups of $S_4$ and the Second Isomorphism Theorem route to $S_4/V
 
 ^ex-45-2
 
-*$S_4$, $A_4$ and $V$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] → (where $A_4$ appears once, in the $A_n$ part) · [[S₄, A₄ and the Klein four-group|all appearances]]
+*$S_4$, $A_4$ and $V$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] → (where $A_4$ appears once, in the $A_n$ part), then [[§51 S₃, S₄ and Aₙ#S₄, A₄ and the Klein Four-Group V|Chapter 10]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
 
 ## The Alternating Groups Aₙ
 

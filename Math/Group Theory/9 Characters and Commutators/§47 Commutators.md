@@ -86,7 +86,7 @@ tags: [group-theory, math493]
 > 2. Every character $\chi: G \to A$ is trivial on $[G,G]$, i.e. $[G,G] \subseteq \operatorname{Ker}\chi$.
 > 3. $[G,G] = \{e\}$ if and only if $G$ is abelian.
 >
-> *Source: (1) is PS 4.4(1)*
+> *Source: (1) is PS 4.4(1), WS 9.4*
 
 ^prop-47-4
 
@@ -139,7 +139,7 @@ tags: [group-theory, math493]
 > [!theorem] Proposition §47.6: The Abelianization Is Abelian
 > $G/[G,G]$ is abelian.
 >
-> *Source: PS 4.4(2)*
+> *Source: PS 4.4(2); WS 9.5*
 
 ^prop-47-6
 

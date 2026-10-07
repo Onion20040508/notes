@@ -22,6 +22,8 @@ tags: [group-theory, hub]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-2|Corollary §41.2: ∣G∣ = ∣Keralpha∣ · ∣Imalpha∣]]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Theorem §41.5: Second Isomorphism Theorem]]
 - [[§43 Simple Groups#^prop-43-10|Proposition §43.10: The Pair-Partition Homomorphism S_4 → S_3]]
+- [[§49 Solvable Groups#^prop-49-1|Proposition §49.1: S_3 and S_4 Are Solvable]]
+- [[§49 Solvable Groups#^prop-49-2|Proposition §49.2: Subgroups of Solvable Groups Are Solvable]]
 
 ## Used in (Topology)
 - [[§27 Free Groups and Presentations#^def-27-6|Definition §27.6: Group Presentation]]

@@ -10,9 +10,9 @@
     link/.style={-{Stealth[length=2mm]}, draw=black!40, thick},
     bridge/.style={font=\scriptsize, text=black!55, fill=white, inner sep=1pt},
   ]
-  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}}
+  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}, -10.75/{Ch.\,10}, -13.0/{Ch.\,11}}
     \node[rotate=90, font=\scriptsize\bfseries, text=black!55] at (-7.3,\y) {\t};
-  \foreach \y in {-0.75,-2.25,-3.75,-5.25,-6.75,-8.25}
+  \foreach \y in {-0.75,-2.25,-3.75,-5.25,-6.75,-8.25,-9.75,-12.1}
     \draw[black!18, dashed] (-7.0,\y) -- (7.25,\y);
 
   \node[shared] (found) at (0,0) {\textbf{Foundations} \S1--\S5\\ groups, subgroups, order};
@@ -26,7 +26,9 @@
   \node[box, draw=orange!80!black, fill=orange!4, text width=4.6cm] (conj) at (-4.3,-7.5) {\textbf{Conjugacy} \S33--\S35\\ classes, class equation, center};
   \node[shared] (norm) at (4.3,-7.5) {\textbf{Normal} \S37--\S39\\ index two, kernels,\\ unions of classes};
   \node[shared] (quot) at (4.3,-9.0) {\textbf{Quotients} \S40--\S43\\ $G/\operatorname{Ker} \cong \operatorname{Im}$, simple groups};
-  \node[shared] (char) at (-2.2,-9.0) {\textbf{Characters} \S45--\S46\\ homomorphisms to abelian groups};
+  \node[shared] (char) at (-2.2,-9.0) {\textbf{Characters} \S46--\S47\\ homomorphisms to abelian groups};
+  \node[shared] (solv) at (4.3,-10.5) {\textbf{Solvable} \S49--\S51\\ abelian pieces, derived series};
+  \node[box, draw=orange!80!black, fill=orange!4, text width=4.6cm] (syl) at (-4.3,-13.0) {\textbf{Sylow} \S52--\S53\\ $p$-groups, Sylow's theorems};
 
   \draw[link] (found) -- node[bridge]{subgroups of $\mathbb{Z}$ are $n\mathbb{Z}$} (num);
   \draw[link] (found) -- node[bridge]{$S_X$} (sym);
@@ -42,5 +44,8 @@
   \draw[link] (norm) -- node[bridge]{$G/N$ is a group} (quot);
   \draw[link] (quot) -- node[bridge]{$G/[G,G]$} (char);
   \draw[link] (conj) -- node[bridge]{constant on classes} (char);
-  \draw[link, draw=violet!70!black] (sgn.east) -- (7.1,-4.5) -- (7.1,-10.0) -- node[bridge, text=violet!70!black]{$\operatorname{sgn}$ is a character} (-2.2,-10.0) -- (char.south);
+  \draw[link, draw=violet!70!black] (sgn.east) -- (7.1,-4.5) -- (7.1,-11.55) -- node[bridge, text=violet!70!black]{$\operatorname{sgn}$ is a character} (-2.2,-11.55) -- (char.south);
+  \draw[link] (quot) -- node[bridge, pos=0.7]{abelian quotients} (solv);
+  \draw[link] (char) -- node[bridge, pos=0.62]{$D_k(G)$} (solv);
+  \draw[link, draw=orange!80!black] ($(conj.south)+(-1.9,0)$) -- node[bridge, text=orange!70!black, pos=0.62]{$p$-groups act} ($(syl.north)+(-1.9,0)$);
 \end{tikzpicture}
