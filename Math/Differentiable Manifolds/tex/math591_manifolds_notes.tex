@@ -10065,8 +10065,18 @@ Every function gives a one-form, $f \mapsto df$ (Proposition~\ref{prop:d-operato
 ``Just as tangent vectors, fields have a double life.'' Tangent vectors were defined as derivations and then shown to be velocities of curves (\ref{sec:velocities}). Vector fields likewise have two faces: \emph{operators on functions}, studied first because it continues the definition by derivations; and \emph{dynamics on $M$} --- integral curves, the trajectories that follow the field, to come later.
 \end{rembox}
 
+\begin{defbox}[Operator on $C^\infty(M)$]\deflabel{def:operator}
+An \textbf{operator} on $C^\infty(M)$ is a map
+\[
+P : C^\infty(M) \longrightarrow C^\infty(M), \qquad f \longmapsto Pf ,
+\]
+taking smooth functions on $M$ to smooth functions on $M$.
+\end{defbox}
+
+\textit{(Not from lecture: Uribe uses the word without defining it --- ``it's an $\mathbb{R}$-linear operator''.)} $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is \emph{$\mathbb{R}$-linear}, or a \emph{linear operator}, if it is a linear map of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ (Lemma~\ref{lem:vf-derivation} below), and multiplication by a fixed function, $f \mapsto gf$ (Definition~\ref{def:multiplication-operator} below). A derivation, a local operator and a differential operator, defined below, are operators with extra properties; the Lie bracket of \ref{sec:lie-bracket} is the commutator of two operators.
+
 \begin{defbox}[Derivation of $C^\infty(M)$]\deflabel{def:global-derivation}
-A \textbf{derivation} of $C^\infty(M)$ is an $\mathbb{R}$-linear map $D : C^\infty(M) \to C^\infty(M)$ satisfying the product rule
+A \textbf{derivation} of $C^\infty(M)$ is an $\mathbb{R}$-linear operator $D : C^\infty(M) \to C^\infty(M)$ (Definition~\ref{def:operator}) satisfying the product rule
 \[
 D(fg) = f\, Dg + g\, Df \qquad \text{for all } f, g \in C^\infty(M).
 \]
@@ -10085,7 +10095,7 @@ For $\mathbf{X} \in \mathfrak{X}(M)$ and $f \in C^\infty(M)$, the function $D_\m
 The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field (Proposition~\ref{prop:derivations-are-fields}, at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality (Lemma~\ref{lem:derivation-local}), and its proof needs bump functions, so these come first.
 
 \begin{defbox}[Local Operator]\deflabel{def:local-operator}
-An operator $D : C^\infty(M) \to C^\infty(M)$ is \textbf{local} if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
+An operator $D : C^\infty(M) \to C^\infty(M)$ (Definition~\ref{def:operator}) is \textbf{local} if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
 \[
 f|_U = g|_U \quad \Longrightarrow \quad (Df)|_U = (Dg)|_U .
 \]
@@ -10806,7 +10816,7 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 \textit{Lecture 16. ``Who cares? There is one reason we care \ldots\ when we look at commutators.''}
 
 \begin{defbox}[The Lie Bracket of Vector Fields]\deflabel{def:lie-bracket}
-For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as operators on $C^\infty(M)$, the \textbf{commutator} or \textbf{Lie bracket} is the operator
+For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as operators on $C^\infty(M)$ (Definition~\ref{def:operator}), the \textbf{commutator} or \textbf{Lie bracket} is the operator
 \[
 [\mathbf{X}, \mathbf{Y}](f) = \mathbf{X}\big(\mathbf{Y}(f)\big) - \mathbf{Y}\big(\mathbf{X}(f)\big), \qquad f \in C^\infty(M).
 \]

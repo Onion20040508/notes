@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Lecture 16. “Who cares? There is one reason we care … when we look at commutators.”*
 
 > [!definition] Definition §48.1: The Lie Bracket of Vector Fields
-> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as [[§47 Vector Fields#^lem-47-2|operators]] on $C^\infty(M)$, the **commutator** or **Lie bracket** is the operator
+> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as [[§47 Vector Fields#^lem-47-2|operators]] on $C^\infty(M)$ ([[§47 Vector Fields#^def-47-4|Definition §47.4]]), the **commutator** or **Lie bracket** is the operator
 >
 > $$
 > [\mathbf{X}, \mathbf{Y}](f) = \mathbf{X}\big(\mathbf{Y}(f)\big) - \mathbf{Y}\big(\mathbf{X}(f)\big), \qquad f \in C^\infty(M).
@@ -22,10 +22,10 @@ tags: [differentiable-manifolds, math591]
 
 ^def-48-1
 
-Each composite $\mathbf{X} \circ \mathbf{Y}$ is a [[§47 Vector Fields#^def-47-10|second-order operator]] — “you get second derivatives in local coordinates” — but “something very, very nice happens when you look at the commutator.”
+Each composite $\mathbf{X} \circ \mathbf{Y}$ is a [[§47 Vector Fields#^def-47-11|second-order operator]] — “you get second derivatives in local coordinates” — but “something very, very nice happens when you look at the commutator.”
 
 > [!theorem] Lemma §48.1: The Bracket of Vector Fields Is a Vector Field
-> $[\mathbf{X}, \mathbf{Y}]$ is a [[§47 Vector Fields#^def-47-4|derivation]] of $C^\infty(M)$; hence, by [[§47 Vector Fields#^prop-47-7|Proposition §47.7]], it is a [[§47 Vector Fields#^def-47-1|vector field]].
+> $[\mathbf{X}, \mathbf{Y}]$ is a [[§47 Vector Fields#^def-47-5|derivation]] of $C^\infty(M)$; hence, by [[§47 Vector Fields#^prop-47-7|Proposition §47.7]], it is a [[§47 Vector Fields#^def-47-1|vector field]].
 >
 > *Lee: Lemma 8.25*
 
@@ -46,7 +46,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a [[§47 Vector Fields#^def-47-1
 
 ^pf-48-1
 
-*Uses:* [[§48 Lie Bracket and Lie Algebra#^def-48-1|Def. §48.1]], [[§47 Vector Fields#^def-47-4|Def. §47.4]], [[§47 Vector Fields#^lem-47-2|§47.2]], [[§47 Vector Fields#^prop-47-7|§47.7]]
+*Uses:* [[§48 Lie Bracket and Lie Algebra#^def-48-1|Def. §48.1]], [[§47 Vector Fields#^def-47-5|Def. §47.5]], [[§47 Vector Fields#^lem-47-2|§47.2]], [[§47 Vector Fields#^prop-47-7|§47.7]]
 
 > [!example] Example §48.1: A Bracket in the Plane
 > On $\mathbb{R}^2$ with coordinates $(x, y)$, let $\mathbf{X} = a\, \partial_x$ and $\mathbf{Y} = b\, \partial_y$ with $a, b \in C^\infty(\mathbb{R}^2)$. Then
