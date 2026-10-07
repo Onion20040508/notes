@@ -24,7 +24,10 @@ Throughout this subsection $W \subseteq \mathbb{R}^{n+k}$ is open, $F : W \to \m
 > The **geometric** (or **ambient**) **tangent space** to $M$ at $p$ is
 >
 > $$
-> T^{\mathrm{geo}}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\; \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0,\ \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+> \begin{aligned}
+> T^{\mathrm{geo}}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\;& \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0, \\
+> & \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+> \end{aligned}
 > $$
 >
 > where $\gamma'(0) = \frac{d\gamma}{dt}\big|_{t=0}$ is the ordinary derivative of a curve in $\mathbb{R}^{n+k}$. In words: $T^{\mathrm{geo}}_pM$ is the set of velocities at $p$ of smooth curves that pass through $p$ while staying on $M$. The same definition applies verbatim with $\mathbb{R}^{n+k}$ replaced by any finite-dimensional real vector space containing $M$, such as $\operatorname{Mat}(n,\mathbb{R})$, with $\gamma'(0)$ computed in that space.

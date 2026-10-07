@@ -5,7 +5,7 @@ chapter: 6
 section: 43
 tags: [differentiable-manifolds, math591]
 ---
-← [[§42 Recap꞉ Germs, Derivations and Tangent Vectors]] · ↑ [[· 6 Bundles and Vector Fields]] · [[§44 The Tangent Bundle]] →
+← [[§42 Recap꞉ Germs, Derivations and Tangent Vectors]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§44 The Tangent Bundle]] →
 
 *Stage: recap — Covectors, the differential of a function, pullbacks — and the four objects that the course calls “the differential”, side by side.*
 
@@ -83,7 +83,7 @@ How they fit: on open subsets of $\mathbb{R}^n$ the second is the first ([[§30 
 
 Things that *are* somewhere move forward with the points; things that *eat* move backward, because to evaluate one on $M$ you push its input forward and evaluate on $N$.
 
-**What this chapter builds.** So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ ([[§44 The Tangent Bundle|§44]]), and the cotangent spaces into the cotangent bundle $T^{\ast}M$ ([[§45 The Cotangent Bundle|§45]]). A smooth choice of a covector at every point is a one-form; $d$ turns functions into one-forms, and $F^{\ast}$ pulls one-forms back ([[§46 One-Forms|§46]]). A smooth choice of a tangent vector at every point is a vector field, and a vector field differentiates functions everywhere at once ([[§47 Vector Fields|§47]]).
+**What this chapter builds.** So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ ([[§44 The Tangent Bundle|§44]]), and the cotangent spaces into the cotangent bundle $T^{\ast}M$ ([[§45 The Cotangent Bundle|§45]]). A smooth choice of a covector at every point is a one-form; $d$ turns functions into one-forms, and $F^{\ast}$ pulls one-forms back ([[§46 One-Forms|§46]]). The next chapter turns to the sections of $TM$: a smooth choice of a tangent vector at every point is a vector field, and a vector field differentiates functions everywhere at once ([[§47 Vector Fields|§47]]).
 
 > [!example] Example §43.1: Covectors in the Plane
 > Continue [[§42 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-42-1|Example §42.1]]: $p = (1, 2)$, $f = x^2 y$, $v = 3\,\partial_x - \partial_y$, and $F(x, y) = (x^2, x + y)$ with $F(p) = (1, 3)$ and $F_{\ast p}v = 6\,\partial_u + 2\,\partial_w$.

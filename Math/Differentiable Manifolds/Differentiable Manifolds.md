@@ -11,7 +11,7 @@ tags: [subject, differentiable-manifolds]
 ---
 # Differentiable Manifolds
 
-MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§47 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
+MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§49 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
 
 ## Roadmap
 These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§32 The Cotangent Space|§32]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§33 Local Diffeomorphisms|§33]]); the submersions that are locally products are the fibrations ([[§34 Submersions|§34]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§35 Submanifolds|§35]]). Immersions, the maps dual to submersions, begin a new arc ([[§36 Fibrations|§36]]), which leads to embeddings, the immersions whose images are submanifolds ([[§37 Immersions|§37]]).
@@ -31,7 +31,8 @@ graph TD
   C3["3 Smooth Structures"]
   C4["4 Tangent and Cotangent Spaces"]
   C5["5 Maps of Constant Rank and Fibrations"]
-  C6["6 Bundles and Vector Fields"]
+  C6["6 Tangent and Cotangent Bundles"]
+  C7["7 Vector Fields and Lie Groups"]
   X1["Topology (590)"]
   X2["Multivariable Analysis (452)"]
   X3["Linear Algebra (LADR)"]
@@ -42,6 +43,7 @@ graph TD
   C3 --> C4
   C4 --> C5
   C5 --> C6
+  C6 --> C7
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C3 -.->|on credit| C2
@@ -57,6 +59,7 @@ graph TD
   X3 -.->|16| C4
   X3 -.->|15| C5
   X3 -.->|4| C6
+  X3 -.->|2| C7
   X2 -.->|5| C1
   X2 -.->|6| C2
   X2 -.->|14| C3
@@ -69,7 +72,8 @@ graph TD
   X1 -.->|21| C3
   X1 -.->|6| C4
   X1 -.->|44| C5
-  X1 -.->|5| C6
+  X1 -.->|3| C6
+  X1 -.->|2| C7
 ```
 
 ## Chapters
@@ -78,10 +82,11 @@ graph TD
 - [[· 3 Smooth Structures]]
 - [[· 4 Tangent and Cotangent Spaces]]
 - [[· 5 Maps of Constant Rank and Fibrations]]
-- [[· 6 Bundles and Vector Fields]]
+- [[· 6 Tangent and Cotangent Bundles]]
+- [[· 7 Vector Fields and Lie Groups]]
 
 ## Planned topics (syllabus)
-Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§47, as derivations of $C^\infty(M)$); one-forms ✓ (§46; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §26); Lie groups and algebras (classical matrix groups and their tangent spaces at $I$ so far); Stokes' theorem; de Rham cohomology; other topics time permitting.
+Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§47, as derivations of $C^\infty(M)$; the Lie bracket, §48); one-forms ✓ (§46; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §49; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)
@@ -140,9 +145,9 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Polar and spherical coordinates]] (2)
 - [[§3 Continuity and Limits of Functions#^thm-3-2|Theorem §3.2: Product of Continuous Functions]] (2)
 - [[§8 Algebra of Differentiable Functions#^thm-8-2|Theorem §8.2: Product Rule for Partial Derivatives]] (2)
+- [[Schwarz–Clairaut Theorem]] (2)
 - [[Implicit Function Theorem]] (1)
 - [[§3 Continuity and Limits of Functions#^thm-3-1|Theorem §3.1: Sum and Difference of Continuous Functions]] (1)
-- [[§3 Continuity and Limits of Functions#^thm-3-3|Theorem §3.3: Quotient of Continuous Functions]] (1)
 
 **[[Linear Algebra]]**
 - [[Fundamental theorem of linear maps]] (8)

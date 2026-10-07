@@ -259,7 +259,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-3.8) {Ch.~2};
 \node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (SM) at (0,-15.6) {\textbf{Submanifolds} \ref*{sec:submanifolds}\\ regular value theorem for manifolds};
 \node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (BU) at (6.9,-15.6) {\textbf{Fibrations} \ref*{sec:fibrations}\\ fibrations, local sections};
-\node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (BF) at (4.6,-20.0) {\textbf{Bundles and fields} \ref*{sec:recap-tangent}--\ref*{sec:vf-operators}\\ recaps; $TM$, $T^*M$; vector fields, one-forms, $d$};
+\node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (BF) at (4.6,-20.0) {\textbf{Bundles} \ref*{sec:recap-tangent}--\ref*{sec:d-operator}\\ recaps; $TM$, $T^*M$; one-forms, $d$};
 \draw[->, thick, gray!70] (BU) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {sections} (BF);
 \draw[->, thick, teal!60!black] (T1) -- node[font=\scriptsize, fill=white, inner sep=1.5pt, align=center] {equations,\\ completed} (SM);
 \draw[->, thick, gray!70] (M) -- node[pos=0.55, font=\scriptsize, fill=white, inner sep=1.5pt] {normal form} (SM);
@@ -276,6 +276,10 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[gray!35, dashed] (-2.5,-4.8) -- (11.4,-4.8);
 \draw[gray!35, dashed] (-2.5,-8.85) -- (11.4,-8.85);
 \draw[gray!35, dashed] (-2.5,-12.75) -- (11.4,-12.75);
+\node[draw=red!60!black, fill=red!4, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (LG) at (4.6,-22.3) {\textbf{Vector fields and Lie groups} \ref*{sec:fields}--\ref*{sec:lie-groups}\\ vector fields, the Lie bracket, Lie groups};
+\draw[->, thick, gray!70] (BF) -- node[pos=0.28, font=\scriptsize, fill=white, inner sep=1.5pt] {sections of $TM$} (LG);
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-22.3) {Ch.~7};
+\draw[gray!35, dashed] (-2.5,-21.15) -- (11.4,-21.15);
 \end{tikzpicture}
 \end{center}
 
@@ -2638,7 +2642,7 @@ Each of $\GL(n,\mathbb{R})$, $\SL(n,\mathbb{R})$, $\Ogp(n,\mathbb{R})$, $\SO(n,\
 The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by Theorem~\ref{thm:subspace-inherit}. Local Euclideanness is the real content, and it is established in stages. $\GL(n,\mathbb{R})$ and $\GL(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ (Proposition~\ref{prop:open-submanifold}). $\SL(n,\mathbb{R})$ is done above, in this section. $\Ogp(n)$, $\SO(n)$ and $\Ugp(n)$ need the coordinate-free differential and are done in \S\ref{sub:on-smooth} and \S\ref{sub:un-smooth}; Theorem~\ref{thm:classical-summary} collects all six, with their dimensions and geometric tangent spaces.
 \end{proof}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 
 
@@ -2801,7 +2805,7 @@ So the orbits are the concentric spheres together with the origin, and the orbit
 This example was Uribe's last-minute illustration, given verbally; the proof above supplies the details. Compare it with $\mathbb{CP}^n$: there $S^1$ acts on $S^{2n+1}$ by $z \mapsto \xi z$, the orbit of $z$ is the circle $\{\xi z \mid |\xi| = 1\}$ traced inside the big sphere, and \emph{every} orbit is a circle of the same kind---no special points. That uniformity is part of why $\mathbb{CP}^n$ comes out a manifold. The rotation examples already show one thing the coming theory must accommodate: orbits can have different ``sizes'' (a point and $2$-spheres), and the orbit space can have boundary ($[0,\infty)$ is a manifold \emph{with boundary}, not a manifold). Conditions ruling this out---free actions, properness---are where the theory of quotient manifolds (Lee Ch.\ 21) is headed.
 \end{rembox}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 
 % ---- Lecture 4 (Wed Sep 9, 2026) begins here ----
@@ -3027,7 +3031,7 @@ H_{[0]} = \{\, t \in \mathbb{R} \mid [t] = [0] \,\} = \mathbb{Q},
 which is dense in $\mathbb{R}$ and not closed.
 \end{proof}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 
 \begin{exbox}[Isotropy of the North Pole under $\SO(3)$]\exlabel{ex:so3-isotropy}
@@ -3293,7 +3297,7 @@ Let $G$ be a compact Hausdorff topological group and $H \le G$ a compact subgrou
 \textit{(Not from lecture; filled in.)} Everything is an application of \ref{sec:actions} to the continuous action of $H$ on $G$ of Proposition~\ref{prop:GH-orbit-space}, whose orbit space is $G/H$ with its quotient topology. Apply Corollary~\ref{cor:orbit-T2}: $H$ and $G$ compact, $G$ Hausdorff, so the orbit space $G/H$ is Hausdorff; it is compact as $\pi(G)$. Second countability is Theorem~\ref{thm:2c-quotient}, the orbit relation being open by Lemma~\ref{lem:orbit-open}.
 \end{proof}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 
 \subsection{Real Grassmannians}
@@ -3369,7 +3373,7 @@ This is correct, but nothing proved so far shows $\Gr_k(\mathbb{R}^n)$ is locall
 
 \roadmark{Thread: equations}{The classical matrix groups of \ref{sec:topgroups} as examples: the determinant disconnects $\GL(n,\mathbb{R})$ and $\Ogp(n)$, $\SO(n)$ is a proper subgroup of $\Ogp(n)$, and $\Ugp(1)$ is the circle.}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 
 \begin{propbox}[$\GL({n,\mathbb{R}})$ Is Disconnected]\thmlabel{prop:GL-disconnected}
@@ -4741,7 +4745,7 @@ Read together, Theorem~\ref{thm:vs-differential-curves} and Corollary~\ref{cor:v
 
 \roadmark{Stage: linear}{The matrix groups become smooth level sets: $\Ogp(n)$ and $\Ugp(n)$ by the regular value theorem, with the differential computed along straight lines.}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 
 The promise of \S\ref{sub:classical-manifolds} can now be kept, with \S\ref{sub:vs-differential} supplying the meaning of every step.
@@ -5027,7 +5031,10 @@ Throughout this subsection $W \subseteq \mathbb{R}^{n+k}$ is open, $F : W \to \m
 \begin{defbox}[Geometric Tangent Space]\deflabel{def:geometric-tangent}
 The \textbf{geometric} (or \textbf{ambient}) \textbf{tangent space} to $M$ at $p$ is
 \[
-T^{\geo}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\; \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0,\ \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+\begin{aligned}
+T^{\geo}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\;& \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0, \\
+& \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+\end{aligned}
 \]
 where $\gamma'(0) = \frac{d\gamma}{dt}\big|_{t=0}$ is the ordinary derivative of a curve in $\mathbb{R}^{n+k}$. In words: $T^{\geo}_pM$ is the set of velocities at $p$ of smooth curves that pass through $p$ while staying on $M$. The same definition applies verbatim with $\mathbb{R}^{n+k}$ replaced by any finite-dimensional real vector space containing $M$, such as $\Mat(n,\mathbb{R})$, with $\gamma'(0)$ computed in that space.
 \leeref{Ch.~3 (geometric tangent vectors in $\mathbb{R}^n$) and Proposition 5.37}
@@ -5279,7 +5286,7 @@ For a unit vector $n$, choose $Q \in \SO(3)$ with $Qe_3 = n$ (possible by Exampl
 This connects the $\SO(3)$ material of \ref{sec:actions} and \ref{sec:homogeneous} with the geometric tangent space. The three dimensions of $\SO(3)$ are the two needed to specify an axis, a point of $S^2$, and one for the angle about it --- matching $S^2 \cong \SO(3)/\SO(2)$ of Example~\ref{ex:s2-homogeneous}, with the isotropy $\SO(2)$ being exactly the rotations about the fixed axis.
 \end{rembox}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 
 \begin{rembox}[Dimension Checks through Homogeneous Spaces]\label{rem:dimension-checks-through-homogeneous-spaces}
@@ -5781,6 +5788,8 @@ Lee defines $T_pM$ as the space of derivations of $C^\infty(M)$ at $p$: linear m
 \begin{proof}[Proof, granting smooth bump functions]
 Taking germs is an algebra homomorphism $C^\infty(M) \to C_p^\infty(M)$ compatible with evaluation at $p$, so $v_D$ is a derivation, and $D \mapsto v_D$ is linear. Both remaining steps use a \emph{bump function}: for an open $U \ni p$, a smooth $\psi : M \to [0,1]$ supported in $U$ with $\psi \equiv 1$ near $p$ (Lee, Proposition 2.25; these notes do not construct one). \emph{Injective:} every germ $[f]$, with $f$ defined on $U$, has the global representative $\psi f$, extended by zero; so if $v_D = 0$ then $D[f] = v_D(\psi f) = 0$ for every germ. \emph{Surjective:} given Lee's $v$, set $D[f] = v(\tilde f)$ for any global $\tilde f$ representing $[f]$. This is well defined because $v$ is local --- if $\tilde f = \tilde g$ near $p$ then $v\tilde f = v\tilde g$ (Lee, Proposition 3.8, whose proof uses a bump function) --- it is a derivation on germs, and $v_D = v$.
 \end{proof}
+
+Both steps borrowed from Lee are now in these notes: bump functions are Proposition~\ref{prop:bump-existence} (existence stated, proof deferred in lecture), the global representative of a germ is Corollary~\ref{cor:germ-extension}, and locality of derivations is Lemma~\ref{lem:derivation-local} (Lecture~16).
 
 \textbf{Comparison with Lee.} This is where the course's algebraic route and Lee's part company. Lee works with global functions and pays for locality with bump functions: Proposition~3.8 shows a derivation of $C^\infty(M)$ only sees a function near $p$, and Proposition~3.9 identifies $T_pU$ with $T_pM$. Germs build locality into the definition, so the course needs no bump functions at all --- Lemma~\ref{lem:germs-local} is pure algebra. The proposition above is the bridge. Since the two spaces are isomorphic, every result about $T_pM$ in these notes transfers to Lee's, and conversely.
 
@@ -8968,7 +8977,7 @@ G|_{\varphi^{-1}(U_0)} = \chi^{-1} \circ \hat G|_{U_0} \circ \varphi : \varphi^{
 is a composite of diffeomorphisms, hence a diffeomorphism. As $g$ was arbitrary, $G$ is a local diffeomorphism.
 \end{proof}
 
-The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; and the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}.
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in Section~\ref{sec:ex-cpn}, an orbit map in Example~\ref{ex:cpn-orbit}; the first is the quotient map of Proposition~\ref{prop:rpn-topologies}, and both are read in the standard atlases of Section~\ref{sec:projective-smooth}; Section~\ref{sec:ex-hopf} shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \SO(3) \cong \mathbb{RP}^3$ in Theorem~\ref{thm:double-cover}.
 
@@ -8977,7 +8986,7 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 $G$ is a local diffeomorphism that is not a diffeomorphism: locally $\mathrm{SU}(2)$ and $\SO(3)$ are indistinguishable --- their tangent spaces at $I$ are isomorphic, and $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ --- but globally $\mathrm{SU}(2) \cong S^3$ wraps twice around $\SO(3) \cong \mathbb{RP}^3$. Every fibre $G^{-1}(A) = \{\pm g\}$ is two points, and $G$ is a proper surjective submersion onto the connected $\SO(3)$, so Ehresmann's theorem (Theorem~\ref{thm:ehresmann}, stated without proof) makes it a fibration whose fibre is two points: a double cover. The smooth version of the last statement --- that $\bar C$ is a diffeomorphism for the smooth structure of $\mathbb{RP}^3$ --- needs the quotient map $S^3 \to \mathbb{RP}^3$ to be a local diffeomorphism, and is not proved here.
 \end{rembox}
 
-\chapter{Bundles and Vector Fields}
+\chapter{Tangent and Cotangent Bundles}
 
 % ============================================================================
 % SECTION: RECAP: GERMS, DERIVATIONS AND TANGENT VECTORS
@@ -8987,14 +8996,17 @@ $G$ is a local diffeomorphism that is not a diffeomorphism: locally $\mathrm{SU}
 
 \roadmark{Stage: recap}{Chapter~4's road from arrows to derivations, retraced in one place before tangent vectors are gathered into bundles and fields.}
 
-\textit{Not from lecture: a recap written for these notes at the start of the chapter on bundles and vector fields. Nothing here is new. Every object is defined, and every fact proved, where the cross-reference points; this section puts them in order and says why each step was taken.}
+\textit{Not from lecture: a recap written for these notes at the start of the chapter on the tangent and cotangent bundles. Nothing here is new. Every object is defined, and every fact proved, where the cross-reference points; this section puts them in order and says why each step was taken.}
 
 \textbf{The problem.} On a surface in $\mathbb{R}^3$ a tangent vector is an arrow: the velocity of a curve that stays on the surface (Definition~\ref{def:geometric-tangent}). An abstract manifold, built from charts or as a quotient, sits in no ambient space, so there is nowhere for an arrow to live. The course solved this by keeping not the arrow but \emph{what the arrow does to functions}. Six steps lead from one to the other.
 
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:geometric-tangent} (Geometric Tangent Space).} The \textbf{geometric} (or \textbf{ambient}) \textbf{tangent space} to $M$ at $p$ is
 \[
-T^{\geo}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\; \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0,\ \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+\begin{aligned}
+T^{\geo}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\;& \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0, \\
+& \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+\end{aligned}
 \]
 where $\gamma'(0) = \frac{d\gamma}{dt}\big|_{t=0}$ is the ordinary derivative of a curve in $\mathbb{R}^{n+k}$. In words: $T^{\geo}_pM$ is the set of velocities at $p$ of smooth curves that pass through $p$ while staying on $M$. The same definition applies verbatim with $\mathbb{R}^{n+k}$ replaced by any finite-dimensional real vector space containing $M$, such as $\Mat(n,\mathbb{R})$, with $\gamma'(0)$ computed in that space.
 \end{quote}
@@ -9334,7 +9346,7 @@ covector $\alpha \in T^*_{F(p)}N$ & backward & $(F_p^*\alpha)(v) = \alpha(F_{*p}
 
 Things that \emph{are} somewhere move forward with the points; things that \emph{eat} move backward, because to evaluate one on $M$ you push its input forward and evaluate on $N$.
 
-\textbf{What this chapter builds.} So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ (\ref{sec:tangent-bundle}), and the cotangent spaces into the cotangent bundle $T^*M$ (\ref{sec:cotangent-bundle}). A smooth choice of a covector at every point is a one-form; $d$ turns functions into one-forms, and $F^*$ pulls one-forms back (\ref{sec:d-operator}). A smooth choice of a tangent vector at every point is a vector field, and a vector field differentiates functions everywhere at once (\ref{sec:fields}).
+\textbf{What this chapter builds.} So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ (\ref{sec:tangent-bundle}), and the cotangent spaces into the cotangent bundle $T^*M$ (\ref{sec:cotangent-bundle}). A smooth choice of a covector at every point is a one-form; $d$ turns functions into one-forms, and $F^*$ pulls one-forms back (\ref{sec:d-operator}). The next chapter turns to the sections of $TM$: a smooth choice of a tangent vector at every point is a vector field, and a vector field differentiates functions everywhere at once (\ref{sec:fields}).
 
 \begin{exbox}[Covectors in the Plane]\exlabel{ex:recap-covectors-plane}
 Continue Example~\ref{ex:recap-vectors-plane}: $p = (1, 2)$, $f = x^2 y$, $v = 3\,\partial_x - \partial_y$, and $F(x, y) = (x^2, x + y)$ with $F(p) = (1, 3)$ and $F_{*p}v = 6\,\partial_u + 2\,\partial_w$.
@@ -9913,6 +9925,11 @@ In particular $F^*\theta$ is smooth whenever $\theta$ is.
 \begin{proof}
 \textit{(Not from lecture; filled in.)} Evaluate both sides on $\partial/\partial x^i|_p$: by definition the left side gives $\sum_j \theta_j(F(p))\, dy^j|_{F(p)}\big(F_{*p}\, \partial/\partial x^i|_p\big)$, and $F_{*p}\, \partial/\partial x^i|_p = \sum_j \partial F^j/\partial x^i(p)\, \partial/\partial y^j|_{F(p)}$ (Theorem~\ref{lem:differential-matrix}). Smoothness follows from Proposition~\ref{prop:one-form-coords}.
 \end{proof}
+
+% ============================================================================
+% CHAPTER: VECTOR FIELDS AND LIE GROUPS
+% ============================================================================
+\chapter{Vector Fields and Lie Groups}
 
 % ============================================================================
 % SECTION: VECTOR FIELDS
@@ -10650,18 +10667,67 @@ For every open $U \subseteq M$ and every $p \in U$ there is a bump function $\ch
 \end{propbox}
 
 \begin{proof}[Proof (to be filled)]
-Stated in Lecture~15, to be proved next week --- ``the week before the exam'', so Uribe will prove ``technical things that you will not be using in homework.'' ``The existence is not so obvious, but it's true.''
+Stated in Lecture~15, and again in Lecture~16 --- ``we're going to prove it next week, but not this week'' --- as ``technical things that you will not be using in homework.'' ``The existence is not so obvious, but it's true.'' To be filled.
 \end{proof}
+
+\textit{Terminology (Lecture~16).} A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be \emph{subordinate to $U$}, ``because this is a condition that is going to show up several times.''
+
+\textit{Lecture~16: the corollary of the bump function lemma that the proof of Proposition~\ref{prop:derivations-are-fields} uses.}
+
+\begin{corbox}[Every Germ Has a Global Representative]\thmlabel{cor:germ-extension}
+Let $p \in M$ and $\gamma \in C^\infty_p(M)$, represented by $f \in C^\infty(U)$ with $U \ni p$ open. If $\chi$ is a bump function at $p$ subordinate to $U$, then
+\[
+\tilde f = \begin{cases} \chi f & \text{on } U, \\ 0 & \text{on } M \setminus U \end{cases}
+\]
+is smooth on all of $M$ and represents $\gamma$. In particular every germ at $p$ has a representative defined on all of $M$.
+\leeref{Lemma 2.26 (extension lemma)}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture~16.)} \emph{$\tilde f$ is smooth.} The open sets $U$ and $M \setminus \operatorname{supp}\chi$ cover $M$, because $\operatorname{supp}\chi \subseteq U$. On $U$, $\tilde f = \chi f$ is a product of smooth functions. On $M \setminus \operatorname{supp}\chi$, $\tilde f \equiv 0$: there $\chi = 0$ (inside $U$), or $\tilde f = 0$ by definition (outside $U$). Smoothness is local, so $\tilde f$ is smooth. \emph{$\tilde f$ represents $\gamma$.} Let $V \ni p$ be open with $\chi \equiv 1$ on $V$. Then $\tilde f = f$ on $V \cap U$, a neighbourhood of $p$, so $[\tilde f] = [f] = \gamma$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, gray!70] (-3.2,3.40) -- (3.2,3.40) node[right, font=\footnotesize, text=black] {$M$};
+\draw[orange!85!black, very thick] (-2.380,4.215) -- (-2.364,4.216) -- (-2.348,4.216) -- (-2.332,4.216) -- (-2.316,4.216) -- (-2.300,4.216) -- (-2.284,4.215) -- (-2.269,4.214) -- (-2.253,4.212) -- (-2.237,4.211) -- (-2.221,4.209) -- (-2.205,4.206) -- (-2.189,4.204) -- (-2.173,4.201) -- (-2.157,4.198) -- (-2.141,4.194) -- (-2.125,4.191) -- (-2.109,4.187) -- (-2.093,4.183) -- (-2.078,4.179) -- (-2.062,4.174) -- (-2.046,4.169) -- (-2.030,4.164) -- (-2.014,4.159) -- (-1.998,4.153) -- (-1.982,4.148) -- (-1.966,4.142) -- (-1.950,4.136) -- (-1.934,4.130) -- (-1.918,4.123) -- (-1.902,4.117) -- (-1.886,4.110) -- (-1.871,4.104) -- (-1.855,4.097) -- (-1.839,4.090) -- (-1.823,4.083) -- (-1.807,4.075) -- (-1.791,4.068) -- (-1.775,4.061) -- (-1.759,4.053) -- (-1.743,4.046) -- (-1.727,4.038) -- (-1.711,4.030) -- (-1.695,4.023) -- (-1.680,4.015) -- (-1.664,4.007) -- (-1.648,4.000) -- (-1.632,3.992) -- (-1.616,3.984) -- (-1.600,3.976) -- (-1.584,3.969) -- (-1.568,3.961) -- (-1.552,3.954) -- (-1.536,3.946) -- (-1.520,3.939) -- (-1.504,3.931) -- (-1.488,3.924) -- (-1.473,3.917) -- (-1.457,3.910) -- (-1.441,3.903) -- (-1.425,3.896) -- (-1.409,3.890) -- (-1.393,3.883) -- (-1.377,3.877) -- (-1.361,3.870) -- (-1.345,3.864) -- (-1.329,3.859) -- (-1.313,3.853) -- (-1.297,3.847) -- (-1.282,3.842) -- (-1.266,3.837) -- (-1.250,3.832) -- (-1.234,3.827) -- (-1.218,3.823) -- (-1.202,3.819) -- (-1.186,3.815) -- (-1.170,3.811) -- (-1.154,3.808) -- (-1.138,3.805) -- (-1.122,3.802) -- (-1.106,3.799) -- (-1.091,3.797) -- (-1.075,3.795) -- (-1.059,3.793) -- (-1.043,3.791) -- (-1.027,3.790) -- (-1.011,3.789) -- (-0.995,3.789) -- (-0.979,3.788) -- (-0.963,3.788) -- (-0.947,3.789) -- (-0.931,3.789) -- (-0.915,3.790) -- (-0.899,3.791) -- (-0.884,3.793) -- (-0.868,3.795) -- (-0.852,3.797) -- (-0.836,3.800) -- (-0.820,3.802) -- (-0.804,3.806) -- (-0.788,3.809) -- (-0.772,3.813) -- (-0.756,3.817) -- (-0.740,3.821) -- (-0.724,3.826) -- (-0.708,3.831) -- (-0.693,3.837) -- (-0.677,3.842) -- (-0.661,3.848) -- (-0.645,3.855) -- (-0.629,3.861) -- (-0.613,3.868) -- (-0.597,3.875) -- (-0.581,3.883) -- (-0.565,3.891) -- (-0.549,3.899) -- (-0.533,3.907) -- (-0.517,3.916) -- (-0.501,3.924) -- (-0.486,3.934) -- (-0.470,3.943) -- (-0.454,3.953) -- (-0.438,3.962) -- (-0.422,3.973) -- (-0.406,3.983) -- (-0.390,3.994) -- (-0.374,4.004) -- (-0.358,4.015) -- (-0.342,4.026) -- (-0.326,4.038) -- (-0.310,4.049) -- (-0.295,4.061) -- (-0.279,4.073) -- (-0.263,4.085) -- (-0.247,4.097) -- (-0.231,4.110) -- (-0.215,4.122) -- (-0.199,4.135) -- (-0.183,4.148) -- (-0.167,4.161) -- (-0.151,4.174) -- (-0.135,4.187) -- (-0.119,4.200) -- (-0.103,4.213) -- (-0.088,4.226) -- (-0.072,4.240) -- (-0.056,4.253) -- (-0.040,4.266) -- (-0.024,4.280) -- (-0.008,4.293) -- (0.008,4.307) -- (0.024,4.320) -- (0.040,4.334) -- (0.056,4.347) -- (0.072,4.360) -- (0.088,4.374) -- (0.103,4.387) -- (0.119,4.400) -- (0.135,4.413) -- (0.151,4.426) -- (0.167,4.439) -- (0.183,4.452) -- (0.199,4.465) -- (0.215,4.478) -- (0.231,4.490) -- (0.247,4.503) -- (0.263,4.515) -- (0.279,4.527) -- (0.295,4.539) -- (0.310,4.551) -- (0.326,4.562) -- (0.342,4.574) -- (0.358,4.585) -- (0.374,4.596) -- (0.390,4.606) -- (0.406,4.617) -- (0.422,4.627) -- (0.438,4.638) -- (0.454,4.647) -- (0.470,4.657) -- (0.486,4.666) -- (0.501,4.676) -- (0.517,4.684) -- (0.533,4.693) -- (0.549,4.701) -- (0.565,4.709) -- (0.581,4.717) -- (0.597,4.725) -- (0.613,4.732) -- (0.629,4.739) -- (0.645,4.745) -- (0.661,4.752) -- (0.677,4.758) -- (0.693,4.763) -- (0.708,4.769) -- (0.724,4.774) -- (0.740,4.779) -- (0.756,4.783) -- (0.772,4.787) -- (0.788,4.791) -- (0.804,4.794) -- (0.820,4.798) -- (0.836,4.800) -- (0.852,4.803) -- (0.868,4.805) -- (0.884,4.807) -- (0.899,4.809) -- (0.915,4.810) -- (0.931,4.811) -- (0.947,4.811) -- (0.963,4.812) -- (0.979,4.812) -- (0.995,4.811) -- (1.011,4.811) -- (1.027,4.810) -- (1.043,4.809) -- (1.059,4.807) -- (1.075,4.805) -- (1.091,4.803) -- (1.106,4.801) -- (1.122,4.798) -- (1.138,4.795) -- (1.154,4.792) -- (1.170,4.789) -- (1.186,4.785) -- (1.202,4.781) -- (1.218,4.777) -- (1.234,4.773) -- (1.250,4.768) -- (1.266,4.763) -- (1.282,4.758) -- (1.297,4.753) -- (1.313,4.747) -- (1.329,4.741) -- (1.345,4.736) -- (1.361,4.730) -- (1.377,4.723) -- (1.393,4.717) -- (1.409,4.710) -- (1.425,4.704) -- (1.441,4.697) -- (1.457,4.690) -- (1.473,4.683) -- (1.488,4.676) -- (1.504,4.669) -- (1.520,4.661) -- (1.536,4.654) -- (1.552,4.646) -- (1.568,4.639) -- (1.584,4.631) -- (1.600,4.624) -- (1.616,4.616) -- (1.632,4.608) -- (1.648,4.600) -- (1.664,4.593) -- (1.680,4.585) -- (1.695,4.577) -- (1.711,4.570) -- (1.727,4.562) -- (1.743,4.554) -- (1.759,4.547) -- (1.775,4.539) -- (1.791,4.532) -- (1.807,4.525) -- (1.823,4.517) -- (1.839,4.510) -- (1.855,4.503) -- (1.871,4.496) -- (1.886,4.490) -- (1.902,4.483) -- (1.918,4.477) -- (1.934,4.470) -- (1.950,4.464) -- (1.966,4.458) -- (1.982,4.452) -- (1.998,4.447) -- (2.014,4.441) -- (2.030,4.436) -- (2.046,4.431) -- (2.062,4.426) -- (2.078,4.421) -- (2.093,4.417) -- (2.109,4.413) -- (2.125,4.409) -- (2.141,4.406) -- (2.157,4.402) -- (2.173,4.399) -- (2.189,4.396) -- (2.205,4.394) -- (2.221,4.391) -- (2.237,4.389) -- (2.253,4.388) -- (2.269,4.386) -- (2.284,4.385) -- (2.300,4.384) -- (2.316,4.384) -- (2.332,4.384) -- (2.348,4.384) -- (2.364,4.384) -- (2.380,4.385);
+\draw[orange!85!black, fill=white, thick] (-2.400,4.214) circle (1.8pt);
+\draw[orange!85!black, fill=white, thick] (2.400,4.386) circle (1.8pt);
+\draw[gray!65, dashed, thick] (-3.000,3.400) -- (-2.985,3.400) -- (-2.970,3.400) -- (-2.955,3.400) -- (-2.940,3.400) -- (-2.925,3.400) -- (-2.910,3.400) -- (-2.895,3.400) -- (-2.880,3.400) -- (-2.865,3.400) -- (-2.850,3.400) -- (-2.835,3.400) -- (-2.820,3.400) -- (-2.805,3.400) -- (-2.789,3.400) -- (-2.774,3.400) -- (-2.759,3.400) -- (-2.744,3.400) -- (-2.729,3.400) -- (-2.714,3.400) -- (-2.699,3.400) -- (-2.684,3.400) -- (-2.669,3.400) -- (-2.654,3.400) -- (-2.639,3.400) -- (-2.624,3.400) -- (-2.609,3.400) -- (-2.594,3.400) -- (-2.579,3.400) -- (-2.564,3.400) -- (-2.549,3.400) -- (-2.534,3.400) -- (-2.519,3.400) -- (-2.504,3.400) -- (-2.489,3.400) -- (-2.474,3.400) -- (-2.459,3.400) -- (-2.444,3.400) -- (-2.429,3.400) -- (-2.414,3.400) -- (-2.398,3.400) -- (-2.383,3.400) -- (-2.368,3.400) -- (-2.353,3.400) -- (-2.338,3.400) -- (-2.323,3.400) -- (-2.308,3.400) -- (-2.293,3.400) -- (-2.278,3.400) -- (-2.263,3.400) -- (-2.248,3.400) -- (-2.233,3.400) -- (-2.218,3.400) -- (-2.203,3.400) -- (-2.188,3.400) -- (-2.173,3.400) -- (-2.158,3.400) -- (-2.143,3.400) -- (-2.128,3.400) -- (-2.113,3.400) -- (-2.098,3.400) -- (-2.083,3.400) -- (-2.068,3.400) -- (-2.053,3.400) -- (-2.038,3.400) -- (-2.023,3.400) -- (-2.008,3.400) -- (-1.992,3.400) -- (-1.977,3.400) -- (-1.962,3.400) -- (-1.947,3.400) -- (-1.932,3.400) -- (-1.917,3.400) -- (-1.902,3.400) -- (-1.887,3.400) -- (-1.872,3.400) -- (-1.857,3.400) -- (-1.842,3.400) -- (-1.827,3.400) -- (-1.812,3.400) -- (-1.797,3.400) -- (-1.782,3.400) -- (-1.767,3.400) -- (-1.752,3.400) -- (-1.737,3.400) -- (-1.722,3.400) -- (-1.707,3.400) -- (-1.692,3.400) -- (-1.677,3.400) -- (-1.662,3.400) -- (-1.647,3.400) -- (-1.632,3.400) -- (-1.617,3.400) -- (-1.602,3.400) -- (-1.586,3.400) -- (-1.571,3.400) -- (-1.556,3.400) -- (-1.541,3.400) -- (-1.526,3.400) -- (-1.511,3.400) -- (-1.496,3.400) -- (-1.481,3.401) -- (-1.466,3.402) -- (-1.451,3.405) -- (-1.436,3.409) -- (-1.421,3.415) -- (-1.406,3.423) -- (-1.391,3.434) -- (-1.376,3.448) -- (-1.361,3.465) -- (-1.346,3.484) -- (-1.331,3.506) -- (-1.316,3.531) -- (-1.301,3.557) -- (-1.286,3.586) -- (-1.271,3.617) -- (-1.256,3.649) -- (-1.241,3.682) -- (-1.226,3.717) -- (-1.211,3.752) -- (-1.195,3.788) -- (-1.180,3.825) -- (-1.165,3.862) -- (-1.150,3.899) -- (-1.135,3.936) -- (-1.120,3.973) -- (-1.105,4.010) -- (-1.090,4.046) -- (-1.075,4.081) -- (-1.060,4.116) -- (-1.045,4.149) -- (-1.030,4.182) -- (-1.015,4.212) -- (-1.000,4.241) -- (-0.985,4.268) -- (-0.970,4.293) -- (-0.955,4.315) -- (-0.940,4.334) -- (-0.925,4.351) -- (-0.910,4.365) -- (-0.895,4.376) -- (-0.880,4.385) -- (-0.865,4.391) -- (-0.850,4.395) -- (-0.835,4.398) -- (-0.820,4.399) -- (-0.805,4.400) -- (-0.789,4.400) -- (-0.774,4.400) -- (-0.759,4.400) -- (-0.744,4.400) -- (-0.729,4.400) -- (-0.714,4.400) -- (-0.699,4.400) -- (-0.684,4.400) -- (-0.669,4.400) -- (-0.654,4.400) -- (-0.639,4.400) -- (-0.624,4.400) -- (-0.609,4.400) -- (-0.594,4.400) -- (-0.579,4.400) -- (-0.564,4.400) -- (-0.549,4.400) -- (-0.534,4.400) -- (-0.519,4.400) -- (-0.504,4.400) -- (-0.489,4.400) -- (-0.474,4.400) -- (-0.459,4.400) -- (-0.444,4.400) -- (-0.429,4.400) -- (-0.414,4.400) -- (-0.398,4.400) -- (-0.383,4.400) -- (-0.368,4.400) -- (-0.353,4.400) -- (-0.338,4.400) -- (-0.323,4.400) -- (-0.308,4.400) -- (-0.293,4.400) -- (-0.278,4.400) -- (-0.263,4.400) -- (-0.248,4.400) -- (-0.233,4.400) -- (-0.218,4.400) -- (-0.203,4.400) -- (-0.188,4.400) -- (-0.173,4.400) -- (-0.158,4.400) -- (-0.143,4.400) -- (-0.128,4.400) -- (-0.113,4.400) -- (-0.098,4.400) -- (-0.083,4.400) -- (-0.068,4.400) -- (-0.053,4.400) -- (-0.038,4.400) -- (-0.023,4.400) -- (-0.008,4.400) -- (0.008,4.400) -- (0.023,4.400) -- (0.038,4.400) -- (0.053,4.400) -- (0.068,4.400) -- (0.083,4.400) -- (0.098,4.400) -- (0.113,4.400) -- (0.128,4.400) -- (0.143,4.400) -- (0.158,4.400) -- (0.173,4.400) -- (0.188,4.400) -- (0.203,4.400) -- (0.218,4.400) -- (0.233,4.400) -- (0.248,4.400) -- (0.263,4.400) -- (0.278,4.400) -- (0.293,4.400) -- (0.308,4.400) -- (0.323,4.400) -- (0.338,4.400) -- (0.353,4.400) -- (0.368,4.400) -- (0.383,4.400) -- (0.398,4.400) -- (0.414,4.400) -- (0.429,4.400) -- (0.444,4.400) -- (0.459,4.400) -- (0.474,4.400) -- (0.489,4.400) -- (0.504,4.400) -- (0.519,4.400) -- (0.534,4.400) -- (0.549,4.400) -- (0.564,4.400) -- (0.579,4.400) -- (0.594,4.400) -- (0.609,4.400) -- (0.624,4.400) -- (0.639,4.400) -- (0.654,4.400) -- (0.669,4.400) -- (0.684,4.400) -- (0.699,4.400) -- (0.714,4.400) -- (0.729,4.400) -- (0.744,4.400) -- (0.759,4.400) -- (0.774,4.400) -- (0.789,4.400) -- (0.805,4.400) -- (0.820,4.399) -- (0.835,4.398) -- (0.850,4.395) -- (0.865,4.391) -- (0.880,4.385) -- (0.895,4.376) -- (0.910,4.365) -- (0.925,4.351) -- (0.940,4.334) -- (0.955,4.315) -- (0.970,4.293) -- (0.985,4.268) -- (1.000,4.241) -- (1.015,4.212) -- (1.030,4.182) -- (1.045,4.149) -- (1.060,4.116) -- (1.075,4.081) -- (1.090,4.046) -- (1.105,4.010) -- (1.120,3.973) -- (1.135,3.936) -- (1.150,3.899) -- (1.165,3.862) -- (1.180,3.825) -- (1.195,3.788) -- (1.211,3.752) -- (1.226,3.717) -- (1.241,3.682) -- (1.256,3.649) -- (1.271,3.617) -- (1.286,3.586) -- (1.301,3.557) -- (1.316,3.531) -- (1.331,3.506) -- (1.346,3.484) -- (1.361,3.465) -- (1.376,3.448) -- (1.391,3.434) -- (1.406,3.423) -- (1.421,3.415) -- (1.436,3.409) -- (1.451,3.405) -- (1.466,3.402) -- (1.481,3.401) -- (1.496,3.400) -- (1.511,3.400) -- (1.526,3.400) -- (1.541,3.400) -- (1.556,3.400) -- (1.571,3.400) -- (1.586,3.400) -- (1.602,3.400) -- (1.617,3.400) -- (1.632,3.400) -- (1.647,3.400) -- (1.662,3.400) -- (1.677,3.400) -- (1.692,3.400) -- (1.707,3.400) -- (1.722,3.400) -- (1.737,3.400) -- (1.752,3.400) -- (1.767,3.400) -- (1.782,3.400) -- (1.797,3.400) -- (1.812,3.400) -- (1.827,3.400) -- (1.842,3.400) -- (1.857,3.400) -- (1.872,3.400) -- (1.887,3.400) -- (1.902,3.400) -- (1.917,3.400) -- (1.932,3.400) -- (1.947,3.400) -- (1.962,3.400) -- (1.977,3.400) -- (1.992,3.400) -- (2.008,3.400) -- (2.023,3.400) -- (2.038,3.400) -- (2.053,3.400) -- (2.068,3.400) -- (2.083,3.400) -- (2.098,3.400) -- (2.113,3.400) -- (2.128,3.400) -- (2.143,3.400) -- (2.158,3.400) -- (2.173,3.400) -- (2.188,3.400) -- (2.203,3.400) -- (2.218,3.400) -- (2.233,3.400) -- (2.248,3.400) -- (2.263,3.400) -- (2.278,3.400) -- (2.293,3.400) -- (2.308,3.400) -- (2.323,3.400) -- (2.338,3.400) -- (2.353,3.400) -- (2.368,3.400) -- (2.383,3.400) -- (2.398,3.400) -- (2.414,3.400) -- (2.429,3.400) -- (2.444,3.400) -- (2.459,3.400) -- (2.474,3.400) -- (2.489,3.400) -- (2.504,3.400) -- (2.519,3.400) -- (2.534,3.400) -- (2.549,3.400) -- (2.564,3.400) -- (2.579,3.400) -- (2.594,3.400) -- (2.609,3.400) -- (2.624,3.400) -- (2.639,3.400) -- (2.654,3.400) -- (2.669,3.400) -- (2.684,3.400) -- (2.699,3.400) -- (2.714,3.400) -- (2.729,3.400) -- (2.744,3.400) -- (2.759,3.400) -- (2.774,3.400) -- (2.789,3.400) -- (2.805,3.400) -- (2.820,3.400) -- (2.835,3.400) -- (2.850,3.400) -- (2.865,3.400) -- (2.880,3.400) -- (2.895,3.400) -- (2.910,3.400) -- (2.925,3.400) -- (2.940,3.400) -- (2.955,3.400) -- (2.970,3.400) -- (2.985,3.400) -- (3.000,3.400);
+\node[orange!85!black, font=\footnotesize, anchor=south] at (-1.75,4.23) {$f$, defined on $U$ only};
+\node[gray!65!black, font=\footnotesize, anchor=west] at (1.75,3.95) {$\chi$};
+\draw[gray!70!black, thick] (-2.40,3.05) -- (2.40,3.05); \node[gray!70!black, font=\large] at (-2.40,3.05) {(}; \node[gray!70!black, font=\large] at (2.40,3.05) {)}; \node[gray!70!black, font=\scriptsize, below] at (0,3.00) {$U$};
+\fill (0,3.40) circle (1.5pt) node[above, font=\scriptsize] {$p$};
+\draw[thick, gray!70] (-3.2,0) -- (3.2,0) node[right, font=\footnotesize, text=black] {$M$};
+\fill[teal!12] (-0.70,-0.25) rectangle (0.70,1.65);
+\draw[orange!45, thick, densely dotted] (-2.380,0.815) -- (-2.364,0.816) -- (-2.348,0.816) -- (-2.332,0.816) -- (-2.316,0.816) -- (-2.300,0.816) -- (-2.284,0.815) -- (-2.269,0.814) -- (-2.253,0.812) -- (-2.237,0.811) -- (-2.221,0.809) -- (-2.205,0.806) -- (-2.189,0.804) -- (-2.173,0.801) -- (-2.157,0.798) -- (-2.141,0.794) -- (-2.125,0.791) -- (-2.109,0.787) -- (-2.093,0.783) -- (-2.078,0.779) -- (-2.062,0.774) -- (-2.046,0.769) -- (-2.030,0.764) -- (-2.014,0.759) -- (-1.998,0.753) -- (-1.982,0.748) -- (-1.966,0.742) -- (-1.950,0.736) -- (-1.934,0.730) -- (-1.918,0.723) -- (-1.902,0.717) -- (-1.886,0.710) -- (-1.871,0.704) -- (-1.855,0.697) -- (-1.839,0.690) -- (-1.823,0.683) -- (-1.807,0.675) -- (-1.791,0.668) -- (-1.775,0.661) -- (-1.759,0.653) -- (-1.743,0.646) -- (-1.727,0.638) -- (-1.711,0.630) -- (-1.695,0.623) -- (-1.680,0.615) -- (-1.664,0.607) -- (-1.648,0.600) -- (-1.632,0.592) -- (-1.616,0.584) -- (-1.600,0.576) -- (-1.584,0.569) -- (-1.568,0.561) -- (-1.552,0.554) -- (-1.536,0.546) -- (-1.520,0.539) -- (-1.504,0.531) -- (-1.488,0.524) -- (-1.473,0.517) -- (-1.457,0.510) -- (-1.441,0.503) -- (-1.425,0.496) -- (-1.409,0.490) -- (-1.393,0.483) -- (-1.377,0.477) -- (-1.361,0.470) -- (-1.345,0.464) -- (-1.329,0.459) -- (-1.313,0.453) -- (-1.297,0.447) -- (-1.282,0.442) -- (-1.266,0.437) -- (-1.250,0.432) -- (-1.234,0.427) -- (-1.218,0.423) -- (-1.202,0.419) -- (-1.186,0.415) -- (-1.170,0.411) -- (-1.154,0.408) -- (-1.138,0.405) -- (-1.122,0.402) -- (-1.106,0.399) -- (-1.091,0.397) -- (-1.075,0.395) -- (-1.059,0.393) -- (-1.043,0.391) -- (-1.027,0.390) -- (-1.011,0.389) -- (-0.995,0.389) -- (-0.979,0.388) -- (-0.963,0.388) -- (-0.947,0.389) -- (-0.931,0.389) -- (-0.915,0.390) -- (-0.899,0.391) -- (-0.884,0.393) -- (-0.868,0.395) -- (-0.852,0.397) -- (-0.836,0.400) -- (-0.820,0.402) -- (-0.804,0.406) -- (-0.788,0.409) -- (-0.772,0.413) -- (-0.756,0.417) -- (-0.740,0.421) -- (-0.724,0.426) -- (-0.708,0.431) -- (-0.693,0.437) -- (-0.677,0.442) -- (-0.661,0.448) -- (-0.645,0.455) -- (-0.629,0.461) -- (-0.613,0.468) -- (-0.597,0.475) -- (-0.581,0.483) -- (-0.565,0.491) -- (-0.549,0.499) -- (-0.533,0.507) -- (-0.517,0.516) -- (-0.501,0.524) -- (-0.486,0.534) -- (-0.470,0.543) -- (-0.454,0.553) -- (-0.438,0.562) -- (-0.422,0.573) -- (-0.406,0.583) -- (-0.390,0.594) -- (-0.374,0.604) -- (-0.358,0.615) -- (-0.342,0.626) -- (-0.326,0.638) -- (-0.310,0.649) -- (-0.295,0.661) -- (-0.279,0.673) -- (-0.263,0.685) -- (-0.247,0.697) -- (-0.231,0.710) -- (-0.215,0.722) -- (-0.199,0.735) -- (-0.183,0.748) -- (-0.167,0.761) -- (-0.151,0.774) -- (-0.135,0.787) -- (-0.119,0.800) -- (-0.103,0.813) -- (-0.088,0.826) -- (-0.072,0.840) -- (-0.056,0.853) -- (-0.040,0.866) -- (-0.024,0.880) -- (-0.008,0.893) -- (0.008,0.907) -- (0.024,0.920) -- (0.040,0.934) -- (0.056,0.947) -- (0.072,0.960) -- (0.088,0.974) -- (0.103,0.987) -- (0.119,1.000) -- (0.135,1.013) -- (0.151,1.026) -- (0.167,1.039) -- (0.183,1.052) -- (0.199,1.065) -- (0.215,1.078) -- (0.231,1.090) -- (0.247,1.103) -- (0.263,1.115) -- (0.279,1.127) -- (0.295,1.139) -- (0.310,1.151) -- (0.326,1.162) -- (0.342,1.174) -- (0.358,1.185) -- (0.374,1.196) -- (0.390,1.206) -- (0.406,1.217) -- (0.422,1.227) -- (0.438,1.238) -- (0.454,1.247) -- (0.470,1.257) -- (0.486,1.266) -- (0.501,1.276) -- (0.517,1.284) -- (0.533,1.293) -- (0.549,1.301) -- (0.565,1.309) -- (0.581,1.317) -- (0.597,1.325) -- (0.613,1.332) -- (0.629,1.339) -- (0.645,1.345) -- (0.661,1.352) -- (0.677,1.358) -- (0.693,1.363) -- (0.708,1.369) -- (0.724,1.374) -- (0.740,1.379) -- (0.756,1.383) -- (0.772,1.387) -- (0.788,1.391) -- (0.804,1.394) -- (0.820,1.398) -- (0.836,1.400) -- (0.852,1.403) -- (0.868,1.405) -- (0.884,1.407) -- (0.899,1.409) -- (0.915,1.410) -- (0.931,1.411) -- (0.947,1.411) -- (0.963,1.412) -- (0.979,1.412) -- (0.995,1.411) -- (1.011,1.411) -- (1.027,1.410) -- (1.043,1.409) -- (1.059,1.407) -- (1.075,1.405) -- (1.091,1.403) -- (1.106,1.401) -- (1.122,1.398) -- (1.138,1.395) -- (1.154,1.392) -- (1.170,1.389) -- (1.186,1.385) -- (1.202,1.381) -- (1.218,1.377) -- (1.234,1.373) -- (1.250,1.368) -- (1.266,1.363) -- (1.282,1.358) -- (1.297,1.353) -- (1.313,1.347) -- (1.329,1.341) -- (1.345,1.336) -- (1.361,1.330) -- (1.377,1.323) -- (1.393,1.317) -- (1.409,1.310) -- (1.425,1.304) -- (1.441,1.297) -- (1.457,1.290) -- (1.473,1.283) -- (1.488,1.276) -- (1.504,1.269) -- (1.520,1.261) -- (1.536,1.254) -- (1.552,1.246) -- (1.568,1.239) -- (1.584,1.231) -- (1.600,1.224) -- (1.616,1.216) -- (1.632,1.208) -- (1.648,1.200) -- (1.664,1.193) -- (1.680,1.185) -- (1.695,1.177) -- (1.711,1.170) -- (1.727,1.162) -- (1.743,1.154) -- (1.759,1.147) -- (1.775,1.139) -- (1.791,1.132) -- (1.807,1.125) -- (1.823,1.117) -- (1.839,1.110) -- (1.855,1.103) -- (1.871,1.096) -- (1.886,1.090) -- (1.902,1.083) -- (1.918,1.077) -- (1.934,1.070) -- (1.950,1.064) -- (1.966,1.058) -- (1.982,1.052) -- (1.998,1.047) -- (2.014,1.041) -- (2.030,1.036) -- (2.046,1.031) -- (2.062,1.026) -- (2.078,1.021) -- (2.093,1.017) -- (2.109,1.013) -- (2.125,1.009) -- (2.141,1.006) -- (2.157,1.002) -- (2.173,0.999) -- (2.189,0.996) -- (2.205,0.994) -- (2.221,0.991) -- (2.237,0.989) -- (2.253,0.988) -- (2.269,0.986) -- (2.284,0.985) -- (2.300,0.984) -- (2.316,0.984) -- (2.332,0.984) -- (2.348,0.984) -- (2.364,0.984) -- (2.380,0.985);
+\draw[teal!65!black, very thick] (-3.000,0.000) -- (-2.985,0.000) -- (-2.970,0.000) -- (-2.955,0.000) -- (-2.940,0.000) -- (-2.925,0.000) -- (-2.910,0.000) -- (-2.895,0.000) -- (-2.880,0.000) -- (-2.865,0.000) -- (-2.850,0.000) -- (-2.835,0.000) -- (-2.820,0.000) -- (-2.805,0.000) -- (-2.789,0.000) -- (-2.774,0.000) -- (-2.759,0.000) -- (-2.744,0.000) -- (-2.729,0.000) -- (-2.714,0.000) -- (-2.699,0.000) -- (-2.684,0.000) -- (-2.669,0.000) -- (-2.654,0.000) -- (-2.639,0.000) -- (-2.624,0.000) -- (-2.609,0.000) -- (-2.594,0.000) -- (-2.579,0.000) -- (-2.564,0.000) -- (-2.549,0.000) -- (-2.534,0.000) -- (-2.519,0.000) -- (-2.504,0.000) -- (-2.489,0.000) -- (-2.474,0.000) -- (-2.459,0.000) -- (-2.444,0.000) -- (-2.429,0.000) -- (-2.414,0.000) -- (-2.398,0.000) -- (-2.383,0.000) -- (-2.368,0.000) -- (-2.353,0.000) -- (-2.338,0.000) -- (-2.323,0.000) -- (-2.308,0.000) -- (-2.293,0.000) -- (-2.278,0.000) -- (-2.263,0.000) -- (-2.248,0.000) -- (-2.233,0.000) -- (-2.218,0.000) -- (-2.203,0.000) -- (-2.188,0.000) -- (-2.173,0.000) -- (-2.158,0.000) -- (-2.143,0.000) -- (-2.128,0.000) -- (-2.113,0.000) -- (-2.098,0.000) -- (-2.083,0.000) -- (-2.068,0.000) -- (-2.053,0.000) -- (-2.038,0.000) -- (-2.023,0.000) -- (-2.008,0.000) -- (-1.992,0.000) -- (-1.977,0.000) -- (-1.962,0.000) -- (-1.947,0.000) -- (-1.932,0.000) -- (-1.917,0.000) -- (-1.902,0.000) -- (-1.887,0.000) -- (-1.872,0.000) -- (-1.857,0.000) -- (-1.842,0.000) -- (-1.827,0.000) -- (-1.812,0.000) -- (-1.797,0.000) -- (-1.782,0.000) -- (-1.767,0.000) -- (-1.752,0.000) -- (-1.737,0.000) -- (-1.722,0.000) -- (-1.707,0.000) -- (-1.692,0.000) -- (-1.677,0.000) -- (-1.662,0.000) -- (-1.647,0.000) -- (-1.632,0.000) -- (-1.617,0.000) -- (-1.602,0.000) -- (-1.586,0.000) -- (-1.571,0.000) -- (-1.556,0.000) -- (-1.541,0.000) -- (-1.526,0.000) -- (-1.511,0.000) -- (-1.496,0.000) -- (-1.481,0.000) -- (-1.466,0.001) -- (-1.451,0.002) -- (-1.436,0.004) -- (-1.421,0.007) -- (-1.406,0.011) -- (-1.391,0.017) -- (-1.376,0.023) -- (-1.361,0.030) -- (-1.346,0.039) -- (-1.331,0.049) -- (-1.316,0.059) -- (-1.301,0.071) -- (-1.286,0.083) -- (-1.271,0.095) -- (-1.256,0.108) -- (-1.241,0.121) -- (-1.226,0.135) -- (-1.211,0.148) -- (-1.195,0.162) -- (-1.180,0.176) -- (-1.165,0.190) -- (-1.150,0.203) -- (-1.135,0.217) -- (-1.120,0.230) -- (-1.105,0.243) -- (-1.090,0.256) -- (-1.075,0.269) -- (-1.060,0.281) -- (-1.045,0.293) -- (-1.030,0.305) -- (-1.015,0.316) -- (-1.000,0.327) -- (-0.985,0.337) -- (-0.970,0.347) -- (-0.955,0.355) -- (-0.940,0.363) -- (-0.925,0.371) -- (-0.910,0.377) -- (-0.895,0.383) -- (-0.880,0.387) -- (-0.865,0.392) -- (-0.850,0.396) -- (-0.835,0.399) -- (-0.820,0.402) -- (-0.805,0.405) -- (-0.789,0.409) -- (-0.774,0.412) -- (-0.759,0.416) -- (-0.744,0.420) -- (-0.729,0.425) -- (-0.714,0.429) -- (-0.699,0.434) -- (-0.684,0.440) -- (-0.669,0.445) -- (-0.654,0.451) -- (-0.639,0.457) -- (-0.624,0.463) -- (-0.609,0.470) -- (-0.594,0.477) -- (-0.579,0.484) -- (-0.564,0.491) -- (-0.549,0.499) -- (-0.534,0.507) -- (-0.519,0.515) -- (-0.504,0.523) -- (-0.489,0.532) -- (-0.474,0.541) -- (-0.459,0.550) -- (-0.444,0.559) -- (-0.429,0.568) -- (-0.414,0.578) -- (-0.398,0.588) -- (-0.383,0.598) -- (-0.368,0.608) -- (-0.353,0.619) -- (-0.338,0.629) -- (-0.323,0.640) -- (-0.308,0.651) -- (-0.293,0.662) -- (-0.278,0.673) -- (-0.263,0.685) -- (-0.248,0.696) -- (-0.233,0.708) -- (-0.218,0.720) -- (-0.203,0.732) -- (-0.188,0.744) -- (-0.173,0.756) -- (-0.158,0.768) -- (-0.143,0.780) -- (-0.128,0.793) -- (-0.113,0.805) -- (-0.098,0.818) -- (-0.083,0.830) -- (-0.068,0.843) -- (-0.053,0.856) -- (-0.038,0.868) -- (-0.023,0.881) -- (-0.008,0.894) -- (0.008,0.906) -- (0.023,0.919) -- (0.038,0.932) -- (0.053,0.944) -- (0.068,0.957) -- (0.083,0.970) -- (0.098,0.982) -- (0.113,0.995) -- (0.128,1.007) -- (0.143,1.020) -- (0.158,1.032) -- (0.173,1.044) -- (0.188,1.056) -- (0.203,1.068) -- (0.218,1.080) -- (0.233,1.092) -- (0.248,1.104) -- (0.263,1.115) -- (0.278,1.127) -- (0.293,1.138) -- (0.308,1.149) -- (0.323,1.160) -- (0.338,1.171) -- (0.353,1.181) -- (0.368,1.192) -- (0.383,1.202) -- (0.398,1.212) -- (0.414,1.222) -- (0.429,1.232) -- (0.444,1.241) -- (0.459,1.250) -- (0.474,1.259) -- (0.489,1.268) -- (0.504,1.277) -- (0.519,1.285) -- (0.534,1.293) -- (0.549,1.301) -- (0.564,1.309) -- (0.579,1.316) -- (0.594,1.323) -- (0.609,1.330) -- (0.624,1.337) -- (0.639,1.343) -- (0.654,1.349) -- (0.669,1.355) -- (0.684,1.360) -- (0.699,1.366) -- (0.714,1.371) -- (0.729,1.375) -- (0.744,1.380) -- (0.759,1.384) -- (0.774,1.388) -- (0.789,1.391) -- (0.805,1.394) -- (0.820,1.396) -- (0.835,1.397) -- (0.850,1.396) -- (0.865,1.392) -- (0.880,1.385) -- (0.895,1.375) -- (0.910,1.360) -- (0.925,1.341) -- (0.940,1.318) -- (0.955,1.291) -- (0.970,1.260) -- (0.985,1.225) -- (1.000,1.187) -- (1.015,1.146) -- (1.030,1.102) -- (1.045,1.055) -- (1.060,1.007) -- (1.075,0.957) -- (1.090,0.906) -- (1.105,0.854) -- (1.120,0.802) -- (1.135,0.748) -- (1.150,0.695) -- (1.165,0.642) -- (1.180,0.589) -- (1.195,0.537) -- (1.211,0.486) -- (1.226,0.436) -- (1.241,0.387) -- (1.256,0.340) -- (1.271,0.295) -- (1.286,0.253) -- (1.301,0.213) -- (1.316,0.176) -- (1.331,0.142) -- (1.346,0.112) -- (1.361,0.086) -- (1.376,0.064) -- (1.391,0.045) -- (1.406,0.030) -- (1.421,0.019) -- (1.436,0.011) -- (1.451,0.006) -- (1.466,0.003) -- (1.481,0.001) -- (1.496,0.000) -- (1.511,0.000) -- (1.526,0.000) -- (1.541,0.000) -- (1.556,0.000) -- (1.571,0.000) -- (1.586,0.000) -- (1.602,0.000) -- (1.617,0.000) -- (1.632,0.000) -- (1.647,0.000) -- (1.662,0.000) -- (1.677,0.000) -- (1.692,0.000) -- (1.707,0.000) -- (1.722,0.000) -- (1.737,0.000) -- (1.752,0.000) -- (1.767,0.000) -- (1.782,0.000) -- (1.797,0.000) -- (1.812,0.000) -- (1.827,0.000) -- (1.842,0.000) -- (1.857,0.000) -- (1.872,0.000) -- (1.887,0.000) -- (1.902,0.000) -- (1.917,0.000) -- (1.932,0.000) -- (1.947,0.000) -- (1.962,0.000) -- (1.977,0.000) -- (1.992,0.000) -- (2.008,0.000) -- (2.023,0.000) -- (2.038,0.000) -- (2.053,0.000) -- (2.068,0.000) -- (2.083,0.000) -- (2.098,0.000) -- (2.113,0.000) -- (2.128,0.000) -- (2.143,0.000) -- (2.158,0.000) -- (2.173,0.000) -- (2.188,0.000) -- (2.203,0.000) -- (2.218,0.000) -- (2.233,0.000) -- (2.248,0.000) -- (2.263,0.000) -- (2.278,0.000) -- (2.293,0.000) -- (2.308,0.000) -- (2.323,0.000) -- (2.338,0.000) -- (2.353,0.000) -- (2.368,0.000) -- (2.383,0.000) -- (2.398,0.000) -- (2.414,0.000) -- (2.429,0.000) -- (2.444,0.000) -- (2.459,0.000) -- (2.474,0.000) -- (2.489,0.000) -- (2.504,0.000) -- (2.519,0.000) -- (2.534,0.000) -- (2.549,0.000) -- (2.564,0.000) -- (2.579,0.000) -- (2.594,0.000) -- (2.609,0.000) -- (2.624,0.000) -- (2.639,0.000) -- (2.654,0.000) -- (2.669,0.000) -- (2.684,0.000) -- (2.699,0.000) -- (2.714,0.000) -- (2.729,0.000) -- (2.744,0.000) -- (2.759,0.000) -- (2.774,0.000) -- (2.789,0.000) -- (2.805,0.000) -- (2.820,0.000) -- (2.835,0.000) -- (2.850,0.000) -- (2.865,0.000) -- (2.880,0.000) -- (2.895,0.000) -- (2.910,0.000) -- (2.925,0.000) -- (2.940,0.000) -- (2.955,0.000) -- (2.970,0.000) -- (2.985,0.000) -- (3.000,0.000);
+\node[teal!65!black, font=\footnotesize, anchor=south] at (0,1.65) {$V$: $\tilde f = f$ here};
+\draw[violet!70!black, |-|, thick] (-1.60,-0.55) -- node[below, font=\scriptsize] {$\operatorname{supp}\chi \subseteq U$} (1.60,-0.55);
+\node[teal!65!black, font=\footnotesize, align=left, anchor=west] at (2.50,1.30) {$\tilde f = \chi f$, extended by $0$:\\ smooth on all of $M$};
+\fill (0,0) circle (1.5pt) node[below, font=\scriptsize] {$p$};
+\end{tikzpicture}
+\end{center}
+
+The extension of a germ. Above: $f$ is defined only on $U$ (its ends are open), and $\chi$ (dashed) is a bump function at $p$ subordinate to $U$. Below: $\tilde f = \chi f$, extended by $0$. On $V$, where $\chi \equiv 1$, it agrees with $f$ (dotted), so it has the same germ at $p$; it dies off inside $U$ and is $0$ outside $\operatorname{supp}\chi$, so it is smooth on all of $M$.
+
 
 \begin{lembox}[Derivations Are Local]\thmlabel{lem:derivation-local}
 Every derivation of $C^\infty(M)$ is a local operator.
 \end{lembox}
 
-\begin{proof}[Proof (to be filled)]
-Stated in Lecture~15; the proof ``uses the existence of bump functions'' (Proposition~\ref{prop:bump-existence}, above) and is to come.
+\begin{proof}
+\textit{(Lecture~16, in full: ``you'll see how incredibly powerful the product rule is.'')} Let $U \subseteq M$ be open and $f|_U = g|_U$. By linearity of $D$, replacing $f$ by $f - g$, it suffices to show: if $f|_U = 0$ then $(Df)|_U = 0$ --- ``like showing that something is injective by showing that the kernel is zero.'' Let $p \in U$, and let $\chi$ be a bump function at $p$ subordinate to $U$ (Proposition~\ref{prop:bump-existence}). Then $\chi f \equiv 0$ on $M$: inside $U$ because $f = 0$ there, outside $U$ because $\chi = 0$ there. So, by linearity and then the product rule,
+\[
+0 = D(\chi f) = \chi\, Df + f\, D\chi ,
+\]
+an equality of functions. Evaluate at $p$: $\chi(p) = 1$ and $f(p) = 0$, so $0 = (Df)(p)$. As $p \in U$ was arbitrary, $(Df)|_U = 0$.
 \end{proof}
 
-\textit{Lecture~15, before the proof of the lemma: ``I want to make an observation.''}
+``Derivations are local, thanks to the product rule and the existence of bump functions.\@''
+
+
+\textit{Lecture~15, after stating the lemma (proved above in Lecture~16): ``I want to make an observation.''}
 
 \begin{defbox}[Multiplication Operator]\deflabel{def:multiplication-operator}
 For $g \in C^\infty(M)$, the \textbf{multiplication operator} $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
@@ -10693,14 +10759,244 @@ Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. 
 Stated in Lecture~15 ``FYI'': ``There's a theorem which is that every local operator \ldots\ is a differential operator, and conversely, of course, the converse is easy. \ldots\ We're not going to prove this theorem, but it's true.'' It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
 \end{proof}
 
+\textit{Lecture~16 proved the converse of Lemma~\ref{lem:vf-derivation}. ``It's not an immediate thing at all \ldots\ tangent vectors are defined in terms of germs'', local objects near a point, ``whereas'' a derivation of $C^\infty(M)$ ``a priori'' acts on functions on all of $M$. Locality (Lemma~\ref{lem:derivation-local}) is half the bridge; the other half is that germs can be globalized (Corollary~\ref{cor:germ-extension}).}
+
 \begin{propbox}[Derivations Are Vector Fields]\thmlabel{prop:derivations-are-fields}
 Conversely, every derivation $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
 \leeref{Proposition 8.15}
 \end{propbox}
 
-\begin{proof}[Proof (to be filled)]
-Stated in Lecture~15 as ``the goal''; the proof is to come. ``It's not an immediate thing at all \ldots\ tangent vectors are defined in terms of germs'', local objects near a point, ``whereas'' a derivation of $C^\infty(M)$ ``a priori'' acts on functions on all of $M$. Locality (Lemma~\ref{lem:derivation-local}) bridges the two.
+\begin{proof}
+\textit{(Lecture~16, in the lecture's steps. Uribe ``skip[ped] a little bit the details'' of smoothness; they are completed below, as are two steps the lecture did not state: that each $\mathbf{X}_p$ is a derivation at $p$, and uniqueness.)} Let $D$ be a derivation of $C^\infty(M)$.
+
+\emph{1. Define $\mathbf{X}$ pointwise.} For $p \in M$ and a germ $\gamma \in C^\infty_p(M)$, set
+\[
+\mathbf{X}_p(\gamma) = (Df)(p), \qquad f \in C^\infty(M) \text{ a global representative of } \gamma,
+\]
+which exists by Corollary~\ref{cor:germ-extension}.
+
+\emph{2. It is well defined.} Two global representatives of $\gamma$ agree on some neighbourhood of $p$, so by Lemma~\ref{lem:derivation-local} their images under $D$ agree there, in particular at $p$. ``So you see, we need all these lemmas.''
+
+\emph{3. Each $\mathbf{X}_p$ is a derivation at $p$.} \textit{(Completion.)} If $f, g$ represent $\gamma, \delta$, then $fg$ represents $\gamma\delta$, and $\mathbf{X}_p(\gamma\delta) = D(fg)(p) = f(p)\,(Dg)(p) + g(p)\,(Df)(p) = \gamma(p)\,\mathbf{X}_p(\delta) + \delta(p)\,\mathbf{X}_p(\gamma)$; linearity is the same. So $\mathbf{X}_p \in T_pM$ (Definition~\ref{def:derivation}).
+
+\emph{4. $\mathbf{X}$ is smooth.} In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem~\ref{thm:tangent-basis}), and ``$\mathbf{X}_p(x^j)$ is $D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$.'' \textit{(Completion.)} Take one bump function $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the single extension $\tilde x^j = \chi x^j$ of Corollary~\ref{cor:germ-extension}. It agrees with $x^j$ on $V$, so it represents the germ of $x^j$ at every $q \in V$, and
+\[
+\mathbf{X}_q(x^j) = D(\tilde x^j)(q) \qquad \text{for all } q \in V .
+\]
+The right side is a smooth function of $q$, so the coefficients of $\mathbf{X}$ are smooth on $V$, and $\mathbf{X}$ is smooth near $p$ (Proposition~\ref{prop:vf-coords}).
+
+\emph{5. $D = D_\mathbf{X}$.} For $f \in C^\infty(M)$, $f$ is a global representative of its own germ, so $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f] = (Df)(p)$.
+
+\emph{6. Uniqueness.} \textit{(Completion.)} If $D_\mathbf{X} = D_\mathbf{Y}$, then for every germ $\gamma$ at $p$, with global representative $f$, $\mathbf{X}_p(\gamma) = (D_\mathbf{X} f)(p) = (D_\mathbf{Y} f)(p) = \mathbf{Y}_p(\gamma)$; so $\mathbf{X}_p = \mathbf{Y}_p$ for every $p$.
 \end{proof}
+
+So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. \textit{Notation (Lecture~16).} From now on $D_\mathbf{X}$ is written $\mathbf{X}$: ``you say to yourself, I'm thinking of $\mathbf{X}$ as an operator \ldots\ if you say $\mathbf{X}(f)$, then it's an operator.''
+
+\textbf{Transcription note.} Page~43 of the handwritten notes asks ``is $\mathbf{X}_p$ $C^\infty$?''; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
+
+
+% ============================================================================
+% SECTION: THE LIE BRACKET
+% ============================================================================
+
+\section{Lie Bracket and Lie Algebra}\label{sec:lie-bracket}\label{sub:lie-bracket}
+
+\roadmark{Stage: fields}{Two vector fields, composed as operators, give a second-order operator; their commutator cancels the second derivatives and is again a vector field, so $\mathfrak{X}(M)$ is a Lie algebra.}
+
+\textit{Lecture 16. ``Who cares? There is one reason we care \ldots\ when we look at commutators.''}
+
+\begin{defbox}[The Lie Bracket of Vector Fields]\deflabel{def:lie-bracket}
+For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as operators on $C^\infty(M)$, the \textbf{commutator} or \textbf{Lie bracket} is the operator
+\[
+[\mathbf{X}, \mathbf{Y}](f) = \mathbf{X}\big(\mathbf{Y}(f)\big) - \mathbf{Y}\big(\mathbf{X}(f)\big), \qquad f \in C^\infty(M).
+\]
+\leeref{Ch.~8, \emph{Lie Brackets}}
+\end{defbox}
+
+Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator --- ``you get second derivatives in local coordinates'' --- but ``something very, very nice happens when you look at the commutator.''
+
+\begin{lembox}[The Bracket of Vector Fields Is a Vector Field]\thmlabel{lem:bracket-field}
+$[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$; hence, by Proposition~\ref{prop:derivations-are-fields}, it is a vector field.
+\leeref{Lemma 8.25}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~16 --- ``tedious algebra \ldots\ the key thing is the product rule.'')} Linearity is clear, as a difference of composites of linear maps. For the product rule, apply the product rule for $\mathbf{Y}$ and then for $\mathbf{X}$:
+\[
+\mathbf{X}\big(\mathbf{Y}(fg)\big) = \mathbf{X}\big(f\, \mathbf{Y}g + g\, \mathbf{Y}f\big) = \mathbf{X}f\; \mathbf{Y}g + f\, \mathbf{X}\mathbf{Y}g + \mathbf{X}g\; \mathbf{Y}f + g\, \mathbf{X}\mathbf{Y}f .
+\]
+The same expression with $\mathbf{X}$ and $\mathbf{Y}$ exchanged is $\mathbf{Y}f\, \mathbf{X}g + f\,\mathbf{Y}\mathbf{X}g + \mathbf{Y}g\,\mathbf{X}f + g\,\mathbf{Y}\mathbf{X}f$. Subtracting, the first-order cross terms $\mathbf{X}f\,\mathbf{Y}g$ and $\mathbf{X}g\,\mathbf{Y}f$ cancel, leaving
+\[
+[\mathbf{X}, \mathbf{Y}](fg) = f\, [\mathbf{X}, \mathbf{Y}](g) + g\, [\mathbf{X}, \mathbf{Y}](f). \qedhere
+\]
+\end{proof}
+
+\begin{exbox}[A Bracket in the Plane]\exlabel{ex:bracket-plane}
+On $\mathbb{R}^2$ with coordinates $(x, y)$, let $\mathbf{X} = a\, \partial_x$ and $\mathbf{Y} = b\, \partial_y$ with $a, b \in C^\infty(\mathbb{R}^2)$. Then
+\[
+[\mathbf{X}, \mathbf{Y}] = a\, \frac{\partial b}{\partial x}\, \frac{\partial}{\partial y} \;-\; b\, \frac{\partial a}{\partial y}\, \frac{\partial}{\partial x} .
+\]
+\end{exbox}
+
+\begin{proof}
+\textit{(Lecture~16 --- ``an exercise in multivariable calculus.'')} Apply both composites to a function $f$ and use the product rule:
+\[
+\mathbf{X}\mathbf{Y}f = a\, \partial_x(b\, \partial_y f) = a\, \frac{\partial b}{\partial x}\, \frac{\partial f}{\partial y} + ab\, \frac{\partial^2 f}{\partial x\, \partial y}, \qquad
+\mathbf{Y}\mathbf{X}f = b\, \frac{\partial a}{\partial y}\, \frac{\partial f}{\partial x} + ba\, \frac{\partial^2 f}{\partial y\, \partial x} .
+\]
+The second derivatives are equal and cancel in the difference, leaving the stated first-order operator.
+\end{proof}
+
+\begin{propbox}[The Bracket in Coordinates]\thmlabel{prop:bracket-coords}
+In a chart with $\mathbf{X} = \sum_i X^i\, \partial_i$ and $\mathbf{Y} = \sum_i Y^i\, \partial_i$, where $\partial_i = \partial/\partial x^i$,
+\[
+[\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j .
+\]
+\leeref{Proposition 8.26}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in --- Example~\ref{ex:bracket-plane} is the case $\mathbf{X} = a\,\partial_x$, $\mathbf{Y} = b\,\partial_y$.)} The $j$-th coefficient of a vector field is its value on the coordinate function $x^j$ (Proposition~\ref{prop:vf-coords}), and $[\mathbf{X}, \mathbf{Y}](x^j) = \mathbf{X}(\mathbf{Y}x^j) - \mathbf{Y}(\mathbf{X}x^j) = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$. The second form expands $\mathbf{X}(Y^j) = \sum_i X^i\, \partial Y^j/\partial x^i$.
+\end{proof}
+
+\begin{defbox}[Lie Algebra]\deflabel{def:lie-algebra}
+A (real) \textbf{Lie algebra} $\mathfrak{g}$ is a real vector space together with a bilinear, skew-symmetric operation $[\cdot,\cdot] : \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$, the \textbf{Lie bracket}, satisfying the \textbf{Jacobi identity}
+\[
+[X, [Y, Z]] + [Y, [Z, X]] + [Z, [X, Y]] = 0 \qquad \text{for all } X, Y, Z \in \mathfrak{g}.
+\]
+\leeref{Ch.~8, \emph{Lie Algebras}}
+\end{defbox}
+
+The three terms come from one by permuting $X, Y, Z$ cyclically: ``move $Y$ to the left position, $Z$ one over to the left, and $X$ jumps to the last position.''
+
+\begin{propbox}[Commutators of an Associative Product]\thmlabel{prop:commutator-jacobi}
+Let $A$ be a real vector space with a bilinear \emph{associative} product $(X, Y) \mapsto X * Y$. Then the commutator $[X, Y] = X * Y - Y * X$ is bilinear, skew-symmetric, and satisfies the Jacobi identity; so $(A, [\cdot,\cdot])$ is a Lie algebra.
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~16 as ``a general fact''; filled in. ``The key thing is that it be an associative product.'')} Bilinearity and skew-symmetry are immediate. By associativity, triple products can be written without parentheses, and
+\[
+[X, [Y, Z]] = XYZ - XZY - YZX + ZYX .
+\]
+Permuting cyclically gives $[Y,[Z,X]] = YZX - YXZ - ZXY + XZY$ and $[Z,[X,Y]] = ZXY - ZYX - XYZ + YXZ$. In the sum each of the six words $XYZ, XZY, YZX, ZYX, YXZ, ZXY$ appears once with each sign, so the sum is $0$.
+\end{proof}
+
+\begin{exbox}[Matrices]\exlabel{ex:mat-lie-algebra}
+$\Mat(n, \mathbb{R})$, with the commutator $[A, B] = AB - BA$ of matrix multiplication, is a Lie algebra, by Proposition~\ref{prop:commutator-jacobi}.
+\end{exbox}
+
+\begin{corbox}[Vector Fields Form a Lie Algebra]\thmlabel{cor:vf-lie-algebra}
+$\big(\mathfrak{X}(M), [\cdot,\cdot]\big)$ is a Lie algebra.
+\leeref{Proposition 8.28}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture~16: the bracket of fields ``comes from the product, which is the composition, which is associative.'' Filled in.)} The linear operators on $C^\infty(M)$ form an associative algebra under composition, so by Proposition~\ref{prop:commutator-jacobi} their commutator satisfies the Jacobi identity. By Lemma~\ref{lem:bracket-field}, $\mathfrak{X}(M)$, identified with the derivations, is closed under it; so the identity holds on $\mathfrak{X}(M)$.
+\end{proof}
+
+``Which I don't recommend you check by hand. It's a big computation.'' The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of the next section sit inside it.
+
+\begin{exbox}[The Cross Product]\exlabel{ex:cross-product-lie}
+$\mathbb{R}^3$ with the cross product is a Lie algebra, and the hat map of Definition~\ref{def:hat-map} is an isomorphism of Lie algebras onto $\Skew(3, \mathbb{R}) = \mathfrak{so}(3)$ with the matrix commutator:
+\[
+[\hat a, \hat b] = \hat a \hat b - \hat b \hat a = \widehat{a \times b} .
+\]
+\end{exbox}
+
+\begin{proof}
+\textit{(Lecture~16 mentioned only that the cross product satisfies the Jacobi identity --- ``if you want to be really mean to your 215 students, give them the Jacobi identity for the cross product. Don't do that.'' The proof via the hat map is filled in.)} By the identity $u \times (v \times w) = v\,(u \cdot w) - w\,(u \cdot v)$, for every $x \in \mathbb{R}^3$
+\[
+[\hat a, \hat b]\, x = a \times (b \times x) - b \times (a \times x) = b\,(a \cdot x) - a\,(b \cdot x) = (a \times b) \times x = \widehat{a \times b}\, x .
+\]
+$\Skew(3,\mathbb{R})$ is closed under the commutator ($[A,B]^{\mathsf T} = [B^{\mathsf T}, A^{\mathsf T}] = [B, A] = -[A,B]$ for skew $A, B$), so it is a Lie algebra by Example~\ref{ex:mat-lie-algebra}. The hat map is a linear isomorphism carrying $\times$ to the commutator, so the cross product inherits bilinearity, skew-symmetry and the Jacobi identity --- without the big computation.
+\end{proof}
+
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
+
+% ============================================================================
+% SECTION: LIE GROUPS AND LEFT-INVARIANT VECTOR FIELDS
+% ============================================================================
+
+\section{Lie Groups and Left-Invariant Vector Fields}\label{sec:lie-groups}
+
+\roadmark{Stage: symmetry}{Groups that are manifolds, and the vector fields that respect the group: the start of Lie theory.}
+
+\textit{Lecture 16, last three minutes, to be continued. References: Lee Ch.~7 and Ch.~8. ``Lie algebras and Lie groups are related, and in one direction the relationship is very nice: any Lie group has a Lie algebra associated to it.''}
+
+\begin{defbox}[Lie Group]\deflabel{def:lie-group}
+A \textbf{Lie group} is a topological group $G$ (Definition~\ref{def:top-group}) together with a smooth structure, such that multiplication $G \times G \to G$, $(g, h) \mapsto gh$, and inversion $G \to G$, $g \mapsto g^{-1}$, are smooth maps.
+\leeref{Ch.~7, \emph{Basic Definitions}}
+\end{defbox}
+
+For a topological group the two maps had to be continuous; ``now we ask that they be smooth maps, because we have a manifold structure, so we can make sense of that.''
+
+\begin{propbox}[The Classical Groups Are Lie Groups]\thmlabel{prop:classical-lie-groups}
+$\GL(n,\mathbb{R})$, $\GL(n,\mathbb{C})$, $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\SO(n)$, $\Ugp(n)$ and $\mathrm{SU}(2)$, with the smooth structures of Theorem~\ref{thm:classical-summary} and \ref{sec:double-cover}, are Lie groups.
+\leeref{Examples 7.3, 7.27--7.30}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~16 --- ``all the matrix groups that we have seen \ldots\ are Lie groups''; filled in.)} Each group $G$ is an open subset or a submanifold of a space of matrices $\Mat$ (Theorem~\ref{thm:classical-summary}; for $\mathrm{SU}(2)$, Proposition~\ref{prop:s3-su2}), with $\iota : G \hookrightarrow \Mat$ smooth (Lemma~\ref{lem:maps-into-submanifold}). \emph{Multiplication} is the composite of $\iota \times \iota : G \times G \to \Mat \times \Mat$, smooth since its components are, with matrix multiplication, whose entries are polynomials in the real coordinates; it lands in $G$, so it is smooth into $G$ (Lemma~\ref{lem:maps-into-submanifold}(2)). \emph{Inversion} is the restriction of a smooth map on the open set of invertible matrices --- $g \mapsto \adj(g)/\det g$ by the cofactor formula, a rational map with nonvanishing denominator --- landing in $G$, hence smooth into $G$ in the same way. (For $\Ogp(n)$ and $\Ugp(n)$ it is even linear: $g \mapsto g^{\mathsf T}$, $g \mapsto g^*$.)
+\end{proof}
+
+The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
+
+The unit quaternions $S^3$ are a Lie group as well (Proposition~\ref{prop:s3-lie-group}), isomorphic to $\mathrm{SU}(2)$ (Proposition~\ref{prop:s3-su2}).
+
+\begin{defbox}[Left Translation]\deflabel{def:left-translation-lie}
+For $g$ in a Lie group $G$, \textbf{left translation} by $g$ is $L_g : G \to G$, $L_g(h) = gh$.
+\leeref{Ch.~7, \emph{Basic Definitions}}
+\end{defbox}
+
+\begin{lembox}[Left Translations Are Diffeomorphisms]\thmlabel{lem:Lg-diffeo}
+$L_g$ is a diffeomorphism, with inverse $L_{g^{-1}}$.
+\leeref{Ch.~7, \emph{Basic Definitions}}
+\end{lembox}
+
+\begin{proof}
+\textit{(Filled in, as for topological groups in Lemma~\ref{lem:Lg}.)} $L_g$ is smooth as the composite of $h \mapsto (g, h)$ with multiplication, and $L_g \circ L_{g^{-1}} = L_{g^{-1}} \circ L_g = \mathrm{id}$.
+\end{proof}
+
+\begin{defbox}[Left-Invariant Vector Field]\deflabel{def:left-invariant}
+A vector field $\mathbf{X} \in \mathfrak{X}(G)$ is \textbf{left-invariant} if for all $g, h \in G$
+\[
+(L_g)_{*h}\, \mathbf{X}_h = \mathbf{X}_{gh} .
+\]
+\leeref{Ch.~8, \emph{Lie Algebras}}
+\end{defbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=6em, row sep=3em]
+T_hG \arrow[r, "(L_g)_{*h}"] & T_{gh}G \\[-2.2em]
+\mathbf{X}_h \arrow[r, mapsto] & \mathbf{X}_{gh}
+\end{tikzcd}
+\end{center}
+
+Left invariance in one line: ``using [left translations], you can push vectors of the field to get other vectors; and whenever you do that, you get the corresponding vector of the field.'' The value at one point determines the field everywhere: taking $h = e$, $\mathbf{X}_g = (L_g)_{*e}\, \mathbf{X}_e$. This is the left translation of tangent spaces from the discussion of moving the base point (Lemma~\ref{lem:group-morphism-translation}), applied to a whole field.
+
+\begin{exbox}[Left-Invariant Fields on $\GL({n,\mathbb{R}})$]\exlabel{ex:left-invariant-GL}
+On $G = \GL(n,\mathbb{R})$, open in $\Mat(n,\mathbb{R})$, so that $T_gG = \Mat(n,\mathbb{R})$, the left-invariant vector fields are exactly
+\[
+\mathbf{X}^A_g = gA, \qquad A \in \Mat(n,\mathbb{R}) = T_IG .
+\]
+\end{exbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} $L_g$ is the restriction of the linear map $h \mapsto gh$, so its differential at every point is that same linear map: $(L_g)_{*h}(v) = gv$. Left invariance therefore reads $g\,\mathbf{X}_h = \mathbf{X}_{gh}$ for all $g, h$. Taking $h = I$ gives $\mathbf{X}_g = g\,\mathbf{X}_I$, so $\mathbf{X} = \mathbf{X}^A$ with $A = \mathbf{X}_I$; conversely $g\,(hA) = (gh)A$, so every $\mathbf{X}^A$ is left-invariant, and it is smooth because its entries are linear in those of $g$.
+\end{proof}
+
+Compare Theorem~\ref{thm:classical-summary}, where $T^{\geo}_g G = g \cdot T^{\geo}_I G$ for the classical groups: a left-invariant field moves the tangent space at the identity around the group by left multiplication.
+
+\begin{defbox}[The Lie Algebra of a Lie Group]\deflabel{def:lie-algebra-of-group}
+The \textbf{Lie algebra} of a Lie group $G$ is
+\[
+\mathfrak{g} = \{\, \mathbf{X} \in \mathfrak{X}(G) \mid \mathbf{X} \text{ is left-invariant} \,\},
+\]
+with the Lie bracket of vector fields.
+\leeref{Ch.~8, \emph{Lie Algebras}}
+\end{defbox}
+
+\textit{Status.} Defined in Lecture~16, with two facts announced for next time: that the bracket of two left-invariant fields is again left-invariant, so that $\mathfrak{g}$ is a Lie subalgebra of $\mathfrak{X}(G)$ (Corollary~\ref{cor:vf-lie-algebra}; Lee, Proposition~8.33); and that $\mathbf{X} \mapsto \mathbf{X}_e$ identifies $\mathfrak{g}$ with $T_eG$ --- ``this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.'' For $\GL(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ (Example~\ref{ex:left-invariant-GL}). ``We'll come back to this in detail next time.''
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -10780,7 +11076,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18) \\
 \ref{sec:cotangent-bundle}\ The cotangent bundle & Chapter 11, \emph{The Cotangent Bundle} (Proposition 11.9); Lemma 1.35 \\
 \ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
-\ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1 and 8.15); Proposition 2.25 (bump functions) \\
+\ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
+\ref{sec:lie-bracket}\ Lie bracket and Lie algebra & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28) \\
+\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Chapter 8, \emph{Lie Algebras} \\
 \bottomrule
 \end{longtable}
 
@@ -10823,6 +11121,7 @@ Proposition 2.5 & Prop.~\ref{prop:smooth-map-charts} \\
 Proposition 2.10 & Lem.~\ref{lem:composition-smooth} \\
 Proposition 2.15 & Prop.~\ref{prop:diffeomorphic-equivalence} \\
 Proposition 2.25 & Prop.~\ref{prop:germ-global}, Prop.~\ref{prop:bump-existence} \\
+Lemma 2.26 & Cor.~\ref{cor:germ-extension} \\
 Lemma 3.1 & Lem.~\ref{lem:derivation-properties} \\
 Proposition 3.2 & Def.~\ref{def:Dv}, Prop.~\ref{prop:Dv-determines-v}, Lem.~\ref{lem:hadamard}, Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:ambient-abstract} \\
 Corollary 3.3 & Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:tangent-basis}, Prop.~\ref{prop:differential-agree} \\
@@ -10857,16 +11156,19 @@ Proposition 5.35 & Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.37 & Def.~\ref{def:geometric-tangent}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.38 & Thm.~\ref{thm:tangent-kernel}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Thm.~\ref{thm:rvt-manifolds} \\
 Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection} \\
-Example 7.3 & Prop.~\ref{prop:GL-topgroup} \\
+Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
 Proposition 7.26 & Def.~\ref{def:orbit-map} \\
-Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary} \\
-Example 7.28 & Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary} \\
-Example 7.29 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:Un-smooth}, Cor.~\ref{cor:Un-compact}, Thm.~\ref{thm:classical-summary} \\
-Example 7.30 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary} \\
+Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
+Example 7.28 & Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
+Example 7.29 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:Un-smooth}, Cor.~\ref{cor:Un-compact}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
+Example 7.30 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
 Problem 7-4 & Prop.~\ref{prop:jacobi}, Cor.~\ref{cor:jacobi-gradient} \\
 Problem 7-22 & Def.~\ref{def:quaternions} \\
 Proposition 8.1 & Prop.~\ref{prop:vf-coords} \\
 Proposition 8.15 & Prop.~\ref{prop:derivations-are-fields} \\
+Lemma 8.25 & Lem.~\ref{lem:bracket-field} \\
+Proposition 8.26 & Prop.~\ref{prop:bracket-coords} \\
+Proposition 8.28 & Cor.~\ref{cor:vf-lie-algebra} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\

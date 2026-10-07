@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 6
+chapter: 7
 section: 47
 tags: [differentiable-manifolds, math591]
 ---
-← [[§46 One-Forms]] · ↑ [[· 6 Bundles and Vector Fields]]
+← [[§46 One-Forms]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§48 Lie Bracket and Lie Algebra]] →
 
 *Stage: fields — Smooth sections of $TM$, a tangent vector at every point — and vector fields acting on functions, as derivations of $C^\infty(M)$.*
 
@@ -131,7 +131,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 *Uses:* [[§47 Vector Fields#^def-47-4|Def. §47.4]], [[§47 Vector Fields#^def-47-2|Def. §47.2]], [[§47 Vector Fields#^prop-47-1|§47.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]]
 
-The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§47 Vector Fields#^prop-47-6|Proposition §47.6]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§47 Vector Fields#^lem-47-4|Lemma §47.4]]), and its proof needs bump functions, so these come first.
+The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§47 Vector Fields#^prop-47-7|Proposition §47.7]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§47 Vector Fields#^lem-47-5|Lemma §47.5]]), and its proof needs bump functions, so these come first.
 
 > [!definition] Definition §47.5: Local Operator
 > An operator $D : C^\infty(M) \to C^\infty(M)$ is **local** if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
@@ -187,7 +187,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ^prop-47-3
 
 > [!proof]+ Proof (to be filled)
-> Stated in Lecture 15, to be proved next week — “the week before the exam”, so Uribe will prove “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.”
+> Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” To be filled.
 
 ^pf-47-3
 
@@ -195,22 +195,57 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > - The flat function $e^{-1/x^2}$, smooth but not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]].
 > - Bump functions were already granted (Lee, Proposition 2.25) in [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Germ Derivations and Global Derivations, §28.3]].
 
-> [!theorem] Lemma §47.4: Derivations Are Local
-> Every [[§47 Vector Fields#^def-47-4|derivation]] of $C^\infty(M)$ is a [[§47 Vector Fields#^def-47-5|local operator]].
+*Terminology (Lecture 16).* A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be *subordinate to $U$*, “because this is a condition that is going to show up several times.”
 
-^lem-47-4
+*Lecture 16: the corollary of the [[§47 Vector Fields#^prop-47-3|bump function lemma]] that the proof of [[§47 Vector Fields#^prop-47-7|Proposition §47.7]] uses.*
 
-> [!proof]+ Proof (to be filled)
-> Stated in Lecture 15; the proof “uses the existence of bump functions” ([[§47 Vector Fields#^prop-47-3|Proposition §47.3]], above) and is to come.
+> [!theorem] Corollary §47.4: Every Germ Has a Global Representative
+> Let $p \in M$ and $\gamma \in C^\infty_p(M)$, represented by $f \in C^\infty(U)$ with $U \ni p$ open. If $\chi$ is a [[§47 Vector Fields#^def-47-8|bump function]] at $p$ subordinate to $U$, then
+>
+> $$
+> \tilde f = \begin{cases} \chi f & \text{on } U, \\ 0 & \text{on } M \setminus U \end{cases}
+> $$
+>
+> is smooth on all of $M$ and represents $\gamma$. In particular every [[§27 Germs#^def-27-2|germ]] at $p$ has a representative defined on all of $M$.
+>
+> *Lee: Lemma 2.26 (extension lemma)*
+
+^cor-47-4
+
+> [!proof]+ Proof
+> *(Lecture 16.)* *$\tilde f$ is smooth.* The open sets $U$ and $M \setminus \operatorname{supp}\chi$ cover $M$, because $\operatorname{supp}\chi \subseteq U$. On $U$, $\tilde f = \chi f$ is a product of smooth functions. On $M \setminus \operatorname{supp}\chi$, $\tilde f \equiv 0$: there $\chi = 0$ (inside $U$), or $\tilde f = 0$ by definition (outside $U$). Smoothness is local, so $\tilde f$ is smooth. *$\tilde f$ represents $\gamma$.* Let $V \ni p$ be open with $\chi \equiv 1$ on $V$. Then $\tilde f = f$ on $V \cap U$, a neighbourhood of $p$, so $[\tilde f] = [f] = \gamma$.
 
 ^pf-47-4
 
-*Uses:* [[§47 Vector Fields#^prop-47-3|§47.3]]
+*Uses:* [[§47 Vector Fields#^def-47-8|Def. §47.8]], [[§47 Vector Fields#^def-47-6|Def. §47.6]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]]
+
+![[m591-47-1.svg]]
+*The extension of a germ. Above: $f$ is defined only on $U$ (its ends are open), and $\chi$ (dashed) is a bump function at $p$ subordinate to $U$. Below: $\tilde f = \chi f$, extended by $0$. On $V$, where $\chi \equiv 1$, it agrees with $f$ (dotted), so it has the same germ at $p$; it dies off inside $U$ and is $0$ outside $\operatorname{supp}\chi$, so it is smooth on all of $M$.*
+
+> [!theorem] Lemma §47.5: Derivations Are Local
+> Every [[§47 Vector Fields#^def-47-4|derivation]] of $C^\infty(M)$ is a [[§47 Vector Fields#^def-47-5|local operator]].
+
+^lem-47-5
+
+> [!proof]+ Proof
+> *(Lecture 16, in full: “you'll see how incredibly powerful the product rule is.”)* Let $U \subseteq M$ be open and $f|_U = g|_U$. By linearity of $D$, replacing $f$ by $f - g$, it suffices to show: if $f|_U = 0$ then $(Df)|_U = 0$ — “like showing that something is injective by showing that the kernel is zero.” Let $p \in U$, and let $\chi$ be a [[§47 Vector Fields#^def-47-8|bump function]] at $p$ subordinate to $U$ ([[§47 Vector Fields#^prop-47-3|Proposition §47.3]]). Then $\chi f \equiv 0$ on $M$: inside $U$ because $f = 0$ there, outside $U$ because $\chi = 0$ there. So, by linearity and then the [[§47 Vector Fields#^def-47-4|product rule]],
+>
+> $$
+> 0 = D(\chi f) = \chi\, Df + f\, D\chi ,
+> $$
+>
+> an equality of functions. Evaluate at $p$: $\chi(p) = 1$ and $f(p) = 0$, so $0 = (Df)(p)$. As $p \in U$ was arbitrary, $(Df)|_U = 0$.
+
+^pf-47-5
+
+*Uses:* [[§47 Vector Fields#^def-47-4|Def. §47.4]], [[§47 Vector Fields#^def-47-5|Def. §47.5]], [[§47 Vector Fields#^def-47-8|Def. §47.8]], [[§47 Vector Fields#^def-47-6|Def. §47.6]], [[§47 Vector Fields#^prop-47-3|§47.3]]
+
+“Derivations are local, thanks to the product rule and the existence of bump functions.”
 
 > [!remark]- Connections
 > - The pointwise version, a derivation of $C^\infty(M)$ at $p$ only sees a function near $p$ (Lee, Proposition 3.8), in the proof of [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Germ Derivations and Global Derivations, §28.3]].
 
-*Lecture 15, before the proof of the lemma: “I want to make an observation.”*
+*Lecture 15, after stating the lemma (proved above in Lecture 16): “I want to make an observation.”*
 
 > [!definition] Definition §47.9: Multiplication Operator
 > For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
@@ -240,24 +275,56 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 
 ^rem-47-3
 
-> [!theorem] Theorem §47.5: Local Operators Are Differential Operators
+> [!theorem] Theorem §47.6: Local Operators Are Differential Operators
 > Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a neighbourhood $U$ on which, in a chart, $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for some $k$ and smooth $a_\alpha$. Conversely, every differential operator is local ([[§47 Vector Fields#^rem-47-3|Remark: Differential Operators Are Local]]).
 
-^thm-47-5
+^thm-47-6
 
 > [!proof]+ Proof (not given in this course)
 > Stated in Lecture 15 “FYI”: “There's a theorem which is that every local operator … is a differential operator, and conversely, of course, the converse is easy. … We're not going to prove this theorem, but it's true.” It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
 
-^pf-47-5
+^pf-47-6
 
-> [!theorem] Proposition §47.6: Derivations Are Vector Fields
+*Lecture 16 proved the converse of [[§47 Vector Fields#^lem-47-2|Lemma §47.2]]. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§47 Vector Fields#^lem-47-5|Lemma §47.5]]) is half the bridge; the other half is that germs can be globalized ([[§47 Vector Fields#^cor-47-4|Corollary §47.4]]).*
+
+> [!theorem] Proposition §47.7: Derivations Are Vector Fields
 > Conversely, every [[§47 Vector Fields#^def-47-4|derivation]] $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ ([[§47 Vector Fields#^lem-47-2|Lemma §47.2]]) for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
 >
 > *Lee: Proposition 8.15*
 
-^prop-47-6
+^prop-47-7
 
-> [!proof]+ Proof (to be filled)
-> Stated in Lecture 15 as “the goal”; the proof is to come. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§47 Vector Fields#^lem-47-4|Lemma §47.4]]) bridges the two.
+> [!proof]+ Proof
+> *(Lecture 16, in the lecture's steps. Uribe “skip[ped] a little bit the details” of smoothness; they are completed below, as are two steps the lecture did not state: that each $\mathbf{X}_p$ is a derivation at $p$, and uniqueness.)* Let $D$ be a [[§47 Vector Fields#^def-47-4|derivation]] of $C^\infty(M)$.
+>
+> *1. Define $\mathbf{X}$ pointwise.* For $p \in M$ and a [[§27 Germs#^def-27-2|germ]] $\gamma \in C^\infty_p(M)$, set
+>
+> $$
+> \mathbf{X}_p(\gamma) = (Df)(p), \qquad f \in C^\infty(M) \text{ a global representative of } \gamma,
+> $$
+>
+> which exists by [[§47 Vector Fields#^cor-47-4|Corollary §47.4]].
+>
+> *2. It is well defined.* Two global representatives of $\gamma$ agree on some neighbourhood of $p$, so by [[§47 Vector Fields#^lem-47-5|Lemma §47.5]] their images under $D$ agree there, in particular at $p$. “So you see, we need all these lemmas.”
+>
+> *3. Each $\mathbf{X}_p$ is a derivation at $p$.* *(Completion.)* If $f, g$ represent $\gamma, \delta$, then $fg$ represents $\gamma\delta$, and $\mathbf{X}_p(\gamma\delta) = D(fg)(p) = f(p)\,(Dg)(p) + g(p)\,(Df)(p) = \gamma(p)\,\mathbf{X}_p(\delta) + \delta(p)\,\mathbf{X}_p(\gamma)$; linearity is the same. So $\mathbf{X}_p \in T_pM$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]).
+>
+> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5]]), and “$\mathbf{X}_p(x^j)$ is $D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$.” *(Completion.)* Take one [[§47 Vector Fields#^def-47-8|bump function]] $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the single extension $\tilde x^j = \chi x^j$ of [[§47 Vector Fields#^cor-47-4|Corollary §47.4]]. It agrees with $x^j$ on $V$, so it represents the germ of $x^j$ at every $q \in V$, and
+>
+> $$
+> \mathbf{X}_q(x^j) = D(\tilde x^j)(q) \qquad \text{for all } q \in V .
+> $$
+>
+> The right side is a smooth function of $q$, so the coefficients of $\mathbf{X}$ are smooth on $V$, and $\mathbf{X}$ is smooth near $p$ ([[§47 Vector Fields#^prop-47-1|Proposition §47.1]]).
+>
+> *5. $D = D_\mathbf{X}$.* For $f \in C^\infty(M)$, $f$ is a global representative of its own germ, so $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f] = (Df)(p)$.
+>
+> *6. Uniqueness.* *(Completion.)* If $D_\mathbf{X} = D_\mathbf{Y}$, then for every germ $\gamma$ at $p$, with global representative $f$, $\mathbf{X}_p(\gamma) = (D_\mathbf{X} f)(p) = (D_\mathbf{Y} f)(p) = \mathbf{Y}_p(\gamma)$; so $\mathbf{X}_p = \mathbf{Y}_p$ for every $p$.
 
-^pf-47-6
+^pf-47-7
+
+*Uses:* [[§47 Vector Fields#^def-47-4|Def. §47.4]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§47 Vector Fields#^cor-47-4|§47.4]], [[§47 Vector Fields#^lem-47-5|§47.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§47 Vector Fields#^def-47-8|Def. §47.8]], [[§47 Vector Fields#^prop-47-3|§47.3]], [[§47 Vector Fields#^prop-47-1|§47.1]], [[§47 Vector Fields#^lem-47-2|§47.2]]
+
+So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: “you say to yourself, I'm thinking of $\mathbf{X}$ as an operator … if you say $\mathbf{X}(f)$, then it's an operator.”
+
+**Transcription note.** Page 43 of the handwritten notes asks “is $\mathbf{X}_p$ $C^\infty$?”; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.

@@ -72,7 +72,9 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§44 The Tangent Bundle\|§44]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
 | [[§45 The Cotangent Bundle\|§45]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
 | [[§46 One-Forms\|§46]] One-forms, the operator $d$, pullbacks | Chapter 11, *Covector Fields* (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) |
-| [[§47 Vector Fields\|§47]] Vector fields | Chapter 8 (Propositions 8.1 and 8.15); Proposition 2.25 (bump functions) |
+| [[§47 Vector Fields\|§47]] Vector fields | Chapter 8 (Propositions 8.1 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) |
+| [[§48 Lie Bracket and Lie Algebra\|§48]] Lie bracket and Lie algebra | Chapter 8, *Lie Brackets* and *Lie Algebras* (Lemma 8.25, Propositions 8.26 and 8.28) |
+| [[§49 Lie Groups and Left-Invariant Vector Fields\|§49]] Lie groups and left-invariant vector fields | Chapter 7 (Examples 7.3, 7.27–7.30); Chapter 8, *Lie Algebras* |
 
 ## A.4 Index from Lee to these notes
 
@@ -109,6 +111,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 2.10 | [[§19 Smooth Functions and Smooth Maps#^lem-19-4\|Lem. §19.4]] |
 | Proposition 2.15 | [[§19 Smooth Functions and Smooth Maps#^prop-19-5\|Prop. §19.5]] |
 | Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§47 Vector Fields#^prop-47-3\|Prop. §47.3]] |
+| Lemma 2.26 | [[§47 Vector Fields#^cor-47-4\|Cor. §47.4]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
 | Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2\|Lem. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4\|Cor. §29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]] |
 | Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4\|Cor. §29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5\|Thm. §29.5]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
@@ -143,16 +146,19 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Submanifolds#^prop-35-4\|Prop. §35.4]] |
 | Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Submanifolds#^thm-35-6\|Thm. §35.6]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
-| Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]] |
+| Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§49 Lie Groups and Left-Invariant Vector Fields#^prop-49-1\|Prop. §49.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
-| Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5\|Prop. §11.5]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2\|Cor. §23.2]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
-| Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
-| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2\|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5\|Cor. §23.5]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
-| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
+| Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5\|Prop. §11.5]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2\|Cor. §23.2]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§49 Lie Groups and Left-Invariant Vector Fields#^prop-49-1\|Prop. §49.1]] |
+| Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§49 Lie Groups and Left-Invariant Vector Fields#^prop-49-1\|Prop. §49.1]] |
+| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2\|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5\|Cor. §23.5]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§49 Lie Groups and Left-Invariant Vector Fields#^prop-49-1\|Prop. §49.1]] |
+| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§49 Lie Groups and Left-Invariant Vector Fields#^prop-49-1\|Prop. §49.1]] |
 | Problem 7-4 | [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1\|Prop. §12.1]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2\|Cor. §12.2]] |
 | Problem 7-22 | [[§40 The Unit Quaternions and SU(2)#^def-40-1\|Def. §40.1]] |
 | Proposition 8.1 | [[§47 Vector Fields#^prop-47-1\|Prop. §47.1]] |
-| Proposition 8.15 | [[§47 Vector Fields#^prop-47-6\|Prop. §47.6]] |
+| Proposition 8.15 | [[§47 Vector Fields#^prop-47-7\|Prop. §47.7]] |
+| Lemma 8.25 | [[§48 Lie Bracket and Lie Algebra#^lem-48-1\|Lem. §48.1]] |
+| Proposition 8.26 | [[§48 Lie Bracket and Lie Algebra#^prop-48-2\|Prop. §48.2]] |
+| Proposition 8.28 | [[§48 Lie Bracket and Lie Algebra#^cor-48-4\|Cor. §48.4]] |
 | Example 10.3 | [[§36 Fibrations#^ex-36-2\|Ex. §36.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |

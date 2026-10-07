@@ -5,11 +5,11 @@ chapter: 6
 section: 42
 tags: [differentiable-manifolds, math591]
 ---
-← [[§41 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Bundles and Vector Fields]] · [[§43 Recap꞉ Covectors and the Four Differentials]] →
+← [[§41 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§43 Recap꞉ Covectors and the Four Differentials]] →
 
 *Stage: recap — Chapter 4's road from arrows to derivations, retraced in one place before tangent vectors are gathered into bundles and fields.*
 
-*Not from lecture: a recap written for these notes at the start of the chapter on bundles and vector fields. Nothing here is new. Every object is defined, and every fact proved, where the cross-reference points; this section puts them in order and says why each step was taken.*
+*Not from lecture: a recap written for these notes at the start of the chapter on the tangent and cotangent bundles. Nothing here is new. Every object is defined, and every fact proved, where the cross-reference points; this section puts them in order and says why each step was taken.*
 
 **The problem.** On a surface in $\mathbb{R}^3$ a tangent vector is an arrow: the velocity of a curve that stays on the surface ([[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1]]). An abstract manifold, built from charts or as a quotient, sits in no ambient space, so there is nowhere for an arrow to live. The course solved this by keeping not the arrow but *what the arrow does to functions*. Six steps lead from one to the other.
 

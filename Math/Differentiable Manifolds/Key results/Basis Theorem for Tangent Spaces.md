@@ -31,6 +31,7 @@ tags: [differentiable-manifolds, hub]
 - [[§42 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-42-1|Example §42.1: Vectors in the Plane in Three Ways]]
 - [[§44 The Tangent Bundle#^prop-44-2|Proposition §44.2: The Smooth Atlas of TM]]
 - [[§47 Vector Fields#^prop-47-1|Proposition §47.1: Vector Fields in Coordinates]]
+- [[§47 Vector Fields#^prop-47-7|Proposition §47.7: Derivations Are Vector Fields]]
 
 ## Connections
 - **Used for.** dim T_pM = n, which finishes [[Ambient and Abstract Tangent Spaces Agree]] ([[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|§29.7]]). The coordinate bases give the [[Matrix of the Differential]], the dual bases dxⁱ|_p of T*_pM ([[§32 The Cotangent Space#^lem-32-2|§32.2]]), the charts of TM ([[Tangent Bundle Is a Smooth Manifold]]) and the straight-line curves of [[Every Tangent Vector Is a Velocity]].

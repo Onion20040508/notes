@@ -5,7 +5,7 @@ chapter: 6
 section: 45
 tags: [differentiable-manifolds, math591]
 ---
-← [[§44 The Tangent Bundle]] · ↑ [[· 6 Bundles and Vector Fields]] · [[§46 One-Forms]] →
+← [[§44 The Tangent Bundle]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§46 One-Forms]] →
 
 *Stage: bundles — The cotangent spaces assembled into $T^{\ast}M$, with charts from the dual bases; covector components transform by the inverse transpose.*
 

@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (23), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 3 Smooth Structures|3 Smooth Structures]] (42)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (54), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (39)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (54), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (33), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (12)
 **Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (6), [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (11)
 
 ## Sections
@@ -34,7 +34,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 88 later results
-- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 88 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 88 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 80 later results
+- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 93 later results
+- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 93 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 93 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 84 later results

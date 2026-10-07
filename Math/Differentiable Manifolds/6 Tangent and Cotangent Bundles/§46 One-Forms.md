@@ -5,7 +5,7 @@ chapter: 6
 section: 46
 tags: [differentiable-manifolds, math591]
 ---
-← [[§45 The Cotangent Bundle]] · ↑ [[· 6 Bundles and Vector Fields]] · [[§47 Vector Fields]] →
+← [[§45 The Cotangent Bundle]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§47 Vector Fields]] →
 
 *Stage: fields — Smooth sections of $T^{\ast}M$, a covector at every point; functions give one-forms through $d$, but not every one-form is a $df$; one-forms pull back along smooth maps, and $d$ commutes with pulling back.*
 

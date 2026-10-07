@@ -5,7 +5,7 @@ chapter: 6
 section: 44
 tags: [differentiable-manifolds, math591]
 ---
-← [[§43 Recap꞉ Covectors and the Four Differentials]] · ↑ [[· 6 Bundles and Vector Fields]] · [[§45 The Cotangent Bundle]] →
+← [[§43 Recap꞉ Covectors and the Four Differentials]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§45 The Cotangent Bundle]] →
 
 *Stage: bundles — All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.*
 

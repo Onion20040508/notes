@@ -28,6 +28,7 @@ tags: [multivariable-analysis, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§46 One-Forms#^prop-46-3|Proposition §46.3: A Necessary Condition for Being a Differential]]
+- [[§48 Lie Bracket and Lie Algebra#^ex-48-1|Example §48.1: A Bracket in the Plane]]
 
 ## Connections
 - **Proof idea.** The mixed second difference I(h, k) is symmetric in the two directions. Applying the one-variable [[Mean Value Theorem]] twice, in either order, writes it as f_xy at one nearby point and as f_yx at another. Continuity at the point finishes the proof.
