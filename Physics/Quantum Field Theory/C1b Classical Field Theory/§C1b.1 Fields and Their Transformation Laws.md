@@ -150,7 +150,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 > -\omega_{\rho\nu}x^\nu\partial^\rho\phi_b = \tfrac12\,\omega_{\mu\nu}\bigl(x^\mu\partial^\nu - x^\nu\partial^\mu\bigr)\phi_b .
 > $$
 >
-> Only the antisymmetric part of the operator survives contraction with $\omega$; writing it antisymmetric makes the coefficient of each independent parameter $\omega_{\mu\nu}$ ($\mu < \nu$) unique. ⚑ By-product: this coefficient is the orbital generator, $x^\mu\partial^\nu - x^\nu\partial^\mu = -i\hat L^{\mu\nu}$ with $\hat L^{\mu\nu} = i(x^\mu\partial^\nu - x^\nu\partial^\mu)$ ([[§C3.4 How Fields Transform under the Lorentz Group#^def-c3-4-1|Def. §C3.4.1]]), the same differential operator for every field → [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-2|Remark: Two representations at once]].
+> Only the antisymmetric part of the operator survives contraction with $\omega$; writing it antisymmetric makes the coefficient of each independent parameter $\omega_{\mu\nu}$ ($\mu < \nu$) unique. ⚑ By-product: this coefficient is the orbital generator, $x^\mu\partial^\nu - x^\nu\partial^\mu = -iL^{\mu\nu}$ with $L^{\mu\nu} = i(x^\mu\partial^\nu - x^\nu\partial^\mu)$ ([[§C3.4 How Fields Transform under the Lorentz Group#^def-c3-4-1|Def. §C3.4.1]]), the same differential operator for every field → [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-2|Remark: Two representations at once]].
 >
 > **6. Scalar.** $D = 1$: steps 3–5 give the first formula.
 >

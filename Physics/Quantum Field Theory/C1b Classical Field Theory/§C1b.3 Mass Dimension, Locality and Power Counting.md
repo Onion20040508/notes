@@ -101,7 +101,7 @@ Which terms may a relativistic Lagrangian contain, and which of them matter at l
 >
 > **Step 4** (other dimensions). $d = 3$: $[\phi] = \frac12$, $[g_6] = 3 - 3 = 0$. $d = 6$: $[\phi] = 2$, $[g_3] = 6 - 6 = 0$. $d = 2$: $[\phi] = 0$ and $[g_n] = 2$ for every $n$, so every $\phi^n$ term carries a coupling of the same dimension as the mass term.
 >
-> ⚑ By-product: a coupling of negative dimension $-k$ must be built from a scale, $g = \hat g/\Lambda^k$; its effects at energy $E$ are suppressed by $(E/\Lambda)^k$, which is the classification into relevant, marginal and irrelevant terms → [[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]. Fermi's constant $G_F \simeq 1.17\times10^{-5}\ \text{GeV}^{-2}$ announces such a scale, $G_F^{-1/2} \simeq 300$ GeV.
+> ⚑ By-product: a coupling of negative dimension $-k$ must be built from a scale, $g = \tilde g/\Lambda^k$; its effects at energy $E$ are suppressed by $(E/\Lambda)^k$, which is the classification into relevant, marginal and irrelevant terms → [[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]. Fermi's constant $G_F \simeq 1.17\times10^{-5}\ \text{GeV}^{-2}$ announces such a scale, $G_F^{-1/2} \simeq 300$ GeV.
 >
 > **What the derivation shows.**
 > - In four dimensions $\phi^4$, Yukawa and gauge couplings are exactly the dimensionless ones; in three dimensions $\phi^6$ takes that role, in six $\phi^3$.
@@ -210,14 +210,14 @@ The action and its field equations are [[§C1b.2 The Action Principle and the Eu
 By the theorems above, every term of $\mathcal L$ has mass dimension $4$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]]), a scalar field has $[\phi] = 1$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]), and a derivative $[\partial_\mu] = 1$. A term $g_{\mathcal O}\,\mathcal O$ built from an operator $\mathcal O$ with $n$ fields and $k$ derivatives therefore has a coupling of dimension $[g_{\mathcal O}] = 4 - [\mathcal O] = 4 - n - k$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]]).
 
 > [!definition] Definition §C1b.3.1: Relevant, Marginal and Irrelevant Terms
-> A term $g_{\mathcal O}\,\mathcal O$ of a Lagrangian density in four dimensions is **relevant** if $[g_{\mathcal O}] > 0$, **marginal** if $[g_{\mathcal O}] = 0$, and **irrelevant** if $[g_{\mathcal O}] < 0$, where $[g_{\mathcal O}] = 4 - [\mathcal O]$. In a theory valid below a scale $\Lambda$, an irrelevant coupling is $g_{\mathcal O} = \hat g_{\mathcal O}/\Lambda^{k}$, $k = -[g_{\mathcal O}]$, with $\hat g_{\mathcal O}$ of order one, and its effects at energy $E$ are suppressed by $(E/\Lambda)^{k}$.
+> A term $g_{\mathcal O}\,\mathcal O$ of a Lagrangian density in four dimensions is **relevant** if $[g_{\mathcal O}] > 0$, **marginal** if $[g_{\mathcal O}] = 0$, and **irrelevant** if $[g_{\mathcal O}] < 0$, where $[g_{\mathcal O}] = 4 - [\mathcal O]$. In a theory valid below a scale $\Lambda$, an irrelevant coupling is $g_{\mathcal O} = \tilde g_{\mathcal O}/\Lambda^{k}$, $k = -[g_{\mathcal O}]$, with $\tilde g_{\mathcal O}$ of order one, and its effects at energy $E$ are suppressed by $(E/\Lambda)^{k}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Definition "Relevant, marginal, irrelevant"; §"Dimensions order the terms") · PHY 513 Lecture 2, Part C ("Low Energy Effective Theory")*
 
 ^def-c1b-3-1
 
 > [!remark] Remark: Why irrelevant terms die at low energy
-> With nothing in the theory but $\Lambda$ to supply a negative dimension, $g_{\mathcal O} = \hat g_{\mathcal O}\Lambda^{-k}$. In a process at energy $E$, fields vary on the scale $1/E$ ($\partial\phi \sim E\phi$), so the term competes with the marginal ones through the pure number $\hat g_{\mathcal O}(E/\Lambda)^k \to 0$ for $E \ll \Lambda$. The lecture's slogan: derivatives are expensive, and since $[\phi] = [\partial_\mu]$, more fields cost as much as more derivatives. Relevant terms do the opposite: the mass term matters more, relative to $E$, the lower the energy.
+> With nothing in the theory but $\Lambda$ to supply a negative dimension, $g_{\mathcal O} = \tilde g_{\mathcal O}\Lambda^{-k}$. In a process at energy $E$, fields vary on the scale $1/E$ ($\partial\phi \sim E\phi$), so the term competes with the marginal ones through the pure number $\tilde g_{\mathcal O}(E/\Lambda)^k \to 0$ for $E \ll \Lambda$. The lecture's slogan: derivatives are expensive, and since $[\phi] = [\partial_\mu]$, more fields cost as much as more derivatives. Relevant terms do the opposite: the mass term matters more, relative to $E$, the lower the energy.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 · PHY 513 Lecture 2, Part C*
 
