@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (52), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (82), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (96), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (33), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (21), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (160)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (52), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (82), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (96), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (35), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (21), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (165)
 
 ## Sections
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation]] — 
@@ -105,7 +105,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|§C5a.9.7]] The Square-Root Identities
 - [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|§C5a.9.8]] The Spinor Boost from Rest to Momentum p
 - [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|§C5a.9.9]] The Positive-Frequency Spinors u(p)
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|§C5a.9.10]] The Negative-Frequency Spinors v(p)
+- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|§C5a.9.10]] The Dirac Conjugate of u(p)
+- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|§C5a.9.11]] The Negative-Frequency Spinors v(p)
+- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|§C5a.9.12]] The Dirac Conjugate of v(p)
 - [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|§C5a.10.1]] u†u = 2E
 - [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|§C5a.10.2]] ūu = 2m
 - [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|§C5a.10.3]] v†v = 2E

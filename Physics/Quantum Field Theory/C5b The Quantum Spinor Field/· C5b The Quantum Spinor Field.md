@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5b The Quantum Spinor Field
 ← [[· C5a Spinors and the Dirac Equation]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (26), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (89), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (117), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (160), [[· CA Mathematical Methods|CA Mathematical Methods]] (121)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (33)
+**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (26), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (89), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (117), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (165), [[· CA Mathematical Methods|CA Mathematical Methods]] (121)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (35)
 
 ## Sections
 - [[§C5b.1 Canonical Quantization of the Dirac Field]] — 

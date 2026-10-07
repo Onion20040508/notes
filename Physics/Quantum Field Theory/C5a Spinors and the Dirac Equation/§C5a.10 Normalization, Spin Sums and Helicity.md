@@ -11,9 +11,9 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.3 (Derivation "Example: the helicity basis (Problem Set 5, Problem 6)"), §9.4 (Normalization and spin sums), §9.5 (Negative-frequency solutions: normalizations, orthogonality, spin sum, "Why neither spin sum is the identity"), §9.7 (Summary) and "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts B and C · the user's write-up of PHY 513, Problem Set 5, Problem 6 (submitted) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.52)–(3.67) · Yu Zhao-Huan, 量子场论讲义, §5.4.2, eqs. (5.158)–(5.214) · the user's pre-course notes, §5.4 ("Helicity spinors in the Weyl representation", notes "Fixing the normalization constants", "Rest frame, and what ω_λω_{−λ} = m means", "Checking the spin sums").*
 
-How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9]] ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]) normalized, how do they sit relative to each other, and what survives of them in a computation? Every answer here is a short calculation with the square-root identities ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]) and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]). The results — $\bar uu = 2m$, $u^\dagger u = 2E_{\mathbf p}$, $\bar vv = -2m$, the orthogonality relations and the spin sums $\sum u\bar u = \slashed{p} + m$, $\sum v\bar v = \slashed{p} - m$ — are what later amplitudes and the quantized field use. The section ends with the helicity basis, in which no matrix square root is needed, and the massless limit, where helicity becomes chirality ([[§C3.7★ Massless Particles and Helicity|§C3.7★]]).
+How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9]] ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) normalized, how do they sit relative to each other, and what survives of them in a computation? Every answer here is a short calculation with the square-root identities ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]) and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]), whose rows $\bar u^s(p)$, $\bar v^s(p)$ are [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]. The results — $\bar uu = 2m$, $u^\dagger u = 2E_{\mathbf p}$, $\bar vv = -2m$, the orthogonality relations and the spin sums $\sum u\bar u = \slashed{p} + m$, $\sum v\bar v = \slashed{p} - m$ — are what later amplitudes and the quantized field use. The section ends with the helicity basis, in which no matrix square root is needed, and the massless limit, where helicity becomes chirality ([[§C3.7★ Massless Particles and Helicity|§C3.7★]]).
 
-*Conventions* as in [[§C5a.9 Plane-Wave Solutions|§C5a.9]]: chiral basis, $p^0 = E_{\mathbf p} > 0$, $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, so for a row $(a^\dagger, b^\dagger)$ the product $(a^\dagger, b^\dagger)\gamma^0 = (b^\dagger, a^\dagger)$ exchanges the halves. $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ are Hermitian ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]), so $(\sqrt{p\cdot\sigma}\,\xi)^\dagger = \xi^\dagger\sqrt{p\cdot\sigma}$. $\tilde p \equiv (E_{\mathbf p}, -\mathbf p)$ is $p$ with the three-momentum reversed.
+*Conventions* as in [[§C5a.9 Plane-Wave Solutions|§C5a.9]]: chiral basis, $p^0 = E_{\mathbf p} > 0$, $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, so for a row $(a^\dagger, b^\dagger)$ the product $(a^\dagger, b^\dagger)\gamma^0 = (b^\dagger, a^\dagger)$ exchanges the halves. $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ are Hermitian ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]), so $(\sqrt{p\cdot\sigma}\,\xi)^\dagger = \xi^\dagger\sqrt{p\cdot\sigma}$; the conjugate rows, derived once, are $\bar u^s(p) = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]) and $\bar v^s(p) = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]). $\tilde p \equiv (E_{\mathbf p}, -\mathbf p)$ is $p$ with the three-momentum reversed.
 
 ## Normalization
 
@@ -25,7 +25,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 ^thm-c5a-10-1
 
 > [!derivation]- Derivation
-> **Step 1** (the row). $u^s = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]]); its Hermitian conjugate is the row $u^{r\dagger} = (\xi^{r\dagger}\sqrt{p\cdot\sigma},\ \xi^{r\dagger}\sqrt{p\cdot\bar\sigma})$, the roots being Hermitian.
+> **Step 1** (the row). $u^s = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]]); its Hermitian conjugate is the row $u^{r\dagger} = (\xi^{r\dagger}\sqrt{p\cdot\sigma},\ \xi^{r\dagger}\sqrt{p\cdot\bar\sigma})$, the roots being Hermitian ([[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]], Steps 1–2).
 >
 > **Step 2** (row times column, upper with upper, lower with lower).
 >
@@ -47,14 +47,14 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]
 
 > [!theorem] Theorem §C5a.10.2: ūu = 2m
-> $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$, with $u^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]); the value is the same in every frame.
+> $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$, with $u^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and its Dirac conjugate $\bar u^r = u^{r\dagger}\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]; the row: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]); the value is the same in every frame.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.4 (Derivation "Normalization II: ūu") · PHY 513 Lecture 9, Part B ("Normalization II") · PS §3.3, eqs. (3.56)–(3.57), (3.60) · Yu §5.4.2, eqs. (5.205), (5.207)*
 
 ^thm-c5a-10-2
 
 > [!derivation]- Derivation
-> **Step 1** (the conjugate row). $\gamma^0$ exchanges the halves of a row (Conventions above): $\bar u^r = u^{r\dagger}\gamma^0 = (\xi^{r\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{r\dagger}\sqrt{p\cdot\sigma})$.
+> **Step 1** (the conjugate row). By [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], $\bar u^r = u^{r\dagger}\gamma^0 = (\xi^{r\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{r\dagger}\sqrt{p\cdot\sigma})$: the dagger puts each root to the right of $\xi^{r\dagger}$, and $\gamma^0$ exchanges the halves.
 >
 > **Step 2** (row times column). Now each term pairs a $\sqrt{p\cdot\bar\sigma}$ with a $\sqrt{p\cdot\sigma}$:
 >
@@ -67,11 +67,11 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 > **What the derivation shows**
 > - $\bar uu$ is the value of the scalar $\bar\psi\psi$ on a plane wave ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]), so it cannot depend on the frame; the computation confirms it.
 > - ⚑ By-product: at $m = 0$, $\bar uu = 0$: the invariant form cannot normalize massless spinors, and $u^\dagger u = 2E_{\mathbf p}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|Theorem §C5a.10.1]]) is used instead → [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]].
-> - At rest, $\bar u_0u_0 = \sqrt m\sqrt m(\xi^\dagger\xi + \xi^\dagger\xi) = 2m$ directly: this is what the $\sqrt m$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]] was chosen for.
+> - At rest, $\bar u_0 = u_0^\dagger$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], 3) and $\bar u_0u_0 = \sqrt m\sqrt m(\xi^\dagger\xi + \xi^\dagger\xi) = 2m$ directly: this is what the $\sqrt m$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]] was chosen for.
 
 ^der-c5a-10-2
 
-*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]
 
 > [!remark] Remark: Why u†u depends on the frame and ūu does not
 > $\psi^\dagger\psi$ is not a Lorentz scalar ([[§C5a.6 The Dirac Conjugate and the Bilinears#^rem-c5a-6-1|§C5a.6, Remark: Why ψ†ψ is not a scalar]]): it is the time component of the current $\bar\psi\gamma^\mu\psi$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]]). On a plane wave the whole current is $\bar u^r\gamma^\mu u^s = 2p^\mu\delta^{rs}$ (the Gordon identity at $p' = p$, [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]], with Theorem §C5a.10.2), whose time component is $2E_{\mathbf p}\delta^{rs}$: the frame dependence of $u^\dagger u$ is that of $p^0$. $\bar\psi\psi$ is a scalar, and $\bar uu = 2m$ is the same number in every frame. The $2E_{\mathbf p}$ is the same weight as in the relativistic normalization of states, $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), which is why the Dirac mode expansion carries the same $1/\sqrt{2E_{\mathbf p}}$ as the scalar one.
@@ -81,14 +81,14 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 ^rem-c5a-10-1
 
 > [!theorem] Theorem §C5a.10.3: v†v = 2E
-> For the spinors $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], $v^{r\dagger}(p)\,v^s(p) = 2E_{\mathbf p}\,\delta^{rs}$.
+> For the spinors $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], $v^{r\dagger}(p)\,v^s(p) = 2E_{\mathbf p}\,\delta^{rs}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Normalizations of the v's") · PHY 513 Lecture 9, Part C ("Normalization of v's") · PS §3.3, eq. (3.63) · Yu §5.4.2, eq. (5.199)*
 
 ^thm-c5a-10-3
 
 > [!derivation]- Derivation
-> As [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-1|Derivation §C5a.10.1]], with the sign of the lower half carried. $v^s = (\sqrt{p\cdot\sigma}\,\eta^s, -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]), $v^{r\dagger} = (\eta^{r\dagger}\sqrt{p\cdot\sigma},\ -\eta^{r\dagger}\sqrt{p\cdot\bar\sigma})$. Upper with upper, lower with lower:
+> As [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-1|Derivation §C5a.10.1]], with the sign of the lower half carried. $v^s = (\sqrt{p\cdot\sigma}\,\eta^s, -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]), $v^{r\dagger} = (\eta^{r\dagger}\sqrt{p\cdot\sigma},\ -\eta^{r\dagger}\sqrt{p\cdot\bar\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^der-c5a-9-12|Derivation §C5a.9.12]], Step 2). Upper with upper, lower with lower:
 >
 > $$
 > v^{r\dagger}v^s = \eta^{r\dagger}(p\cdot\sigma)\eta^s + (-1)(-1)\,\eta^{r\dagger}(p\cdot\bar\sigma)\eta^s = \eta^{r\dagger}\,2E_{\mathbf p}\,\eta^s = 2E_{\mathbf p}\,\delta^{rs} .
@@ -102,17 +102,17 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 
 ^der-c5a-10-3
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]
 
 > [!theorem] Theorem §C5a.10.4: v̄v = −2m
-> $\bar v^r(p)\,v^s(p) = -2m\,\delta^{rs}$ ($v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], $\bar v = v^\dagger\gamma^0$ as in [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]): Lorentz invariant, and negative.
+> $\bar v^r(p)\,v^s(p) = -2m\,\delta^{rs}$ ($v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], $\bar v^r = v^{r\dagger}\gamma^0$ as in [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]], the row of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]): Lorentz invariant, and negative.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Normalizations of the v's") · PHY 513 Lecture 9, Part C ("Normalization of v's") · PS §3.3, eq. (3.63) · Yu §5.4.2, eqs. (5.206), (5.208)*
 
 ^thm-c5a-10-4
 
 > [!derivation]- Derivation
-> **Step 1** (the conjugate row). $\gamma^0$ exchanges the halves of $v^{r\dagger}$: $\bar v^r = (-\eta^{r\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{r\dagger}\sqrt{p\cdot\sigma})$. The minus sign now sits in the *upper* half of the row.
+> **Step 1** (the conjugate row). By [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], $\bar v^r = (-\eta^{r\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{r\dagger}\sqrt{p\cdot\sigma})$: $\gamma^0$ has moved the minus sign to the *upper* half of the row.
 >
 > **Step 2** (row times column). Each term pairs an upper half with a lower half, and each carries the sign exactly once:
 >
@@ -127,17 +127,17 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 
 ^der-c5a-10-4
 
-*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
 
 > [!caution] Caution: The sign of v̄v
-> $\bar vv = -2m$, and correspondingly $-m$ in the $v$ spin sum ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]), are where sign errors happen. The lecture's advice: rederive them from $u^s$, $v^s$ and the square-root identities whenever in doubt, remembering that $\gamma^0$ moves the minus sign of $v$ from the lower half of the column to the upper half of the row. The negative value is not a defect: the same indefiniteness is that of the Klein–Gordon inner product on negative-frequency modes ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|§C2a.2, Remark: Why this inner product, and why it is indefinite]]).
+> $\bar vv = -2m$, and correspondingly $-m$ in the $v$ spin sum ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]), are where sign errors happen. The lecture's advice: rederive them from $u^s$, $v^s$ and the square-root identities whenever in doubt, remembering that $\gamma^0$ moves the minus sign of $v$ from the lower half of the column to the upper half of the row ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], 1). The negative value is not a defect: the same indefiniteness is that of the Klein–Gordon inner product on negative-frequency modes ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|§C2a.2, Remark: Why this inner product, and why it is indefinite]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 ("this is a sign error waiting to happen"), §9.7 · PHY 513 Lecture 9, Part C*
 
 ^cau-c5a-10-1
 
 > [!theorem] Theorem §C5a.10.5: u and v Are Orthogonal under the Dirac Conjugate
-> For all $r, s$ (equal or not) and all choices of the bases $\xi^s$, $\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]), with $u^s$, $v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]] and the Dirac conjugate of [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]],
+> For all $r, s$ (equal or not) and all choices of the bases $\xi^s$, $\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]), with $u^s$, $v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]] and their Dirac conjugates ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]; rows [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]),
 >
 > $$
 > \bar v^r(p)\,u^s(p) = 0, \qquad \bar u^r(p)\,v^s(p) = 0 .
@@ -148,13 +148,13 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 ^thm-c5a-10-5
 
 > [!derivation]- Derivation
-> **Step 1** ($\bar vu$). With $\bar v^r$ of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-4|Derivation §C5a.10.4]], Step 1,
+> **Step 1** ($\bar vu$). With the row $\bar v^r = (-\eta^{r\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{r\dagger}\sqrt{p\cdot\sigma})$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]],
 >
 > $$
 > \bar v^ru^s = \bigl(-\eta^{r\dagger}\sqrt{p\cdot\bar\sigma}\bigr)\sqrt{p\cdot\sigma}\,\xi^s + \eta^{r\dagger}\sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma}\,\xi^s = -m\,\eta^{r\dagger}\xi^s + m\,\eta^{r\dagger}\xi^s = 0 .
 > $$
 >
-> **Step 2** ($\bar uv$). With $\bar u^r$ of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-2|Derivation §C5a.10.2]], Step 1,
+> **Step 2** ($\bar uv$). With the row $\bar u^r = (\xi^{r\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{r\dagger}\sqrt{p\cdot\sigma})$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]],
 >
 > $$
 > \bar u^rv^s = \xi^{r\dagger}\sqrt{p\cdot\bar\sigma}\sqrt{p\cdot\sigma}\,\eta^s + \xi^{r\dagger}\sqrt{p\cdot\sigma}\bigl(-\sqrt{p\cdot\bar\sigma}\,\eta^s\bigr) = m\,\xi^{r\dagger}\eta^s - m\,\xi^{r\dagger}\eta^s = 0 .
@@ -164,14 +164,14 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 >
 > **What the derivation shows**
 > - With Theorems §C5a.10.2 and §C5a.10.4, $\{u^1, u^2, v^1, v^2\}$ is an orthogonal basis for the indefinite form $\bar ab$, with "norms" $+2m, +2m, -2m, -2m$; used in [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-10|Theorem §C5a.10.10]].
-> - A second reason: $\bar v^r(\slashed{p} - m)u^s = 0$, and $\bar v^r\slashed{p} = -m\bar v^r$ (the conjugate of $\slashed{p}\,v = -mv$), so $-2m\,\bar v^ru^s = 0$; for $m > 0$ this gives the result without components.
+> - A second reason: $\bar v^r(\slashed{p} - m)u^s = 0$, and $\bar v^r\slashed{p} = -m\bar v^r$ (the conjugate of $\slashed{p}\,v = -mv$: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], 2), so $-2m\,\bar v^ru^s = 0$; for $m > 0$ this gives the result without components.
 
 ^der-c5a-10-5
 
-*Uses:* [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-2|Derivation §C5a.10.2]], [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-4|Derivation §C5a.10.4]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
 
 > [!theorem] Theorem §C5a.10.6: u and v Are Orthogonal at Opposite Three-Momenta
-> With $\tilde p = (E_{\mathbf p}, -\mathbf p)$ and $u^s$, $v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], for all $r, s$,
+> With $\tilde p = (E_{\mathbf p}, -\mathbf p)$ and $u^s$, $v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], for all $r, s$,
 >
 > $$
 > u^{r\dagger}(p)\,v^s(\tilde p) = 0, \qquad v^{r\dagger}(p)\,u^s(\tilde p) = 0 ,
@@ -213,7 +213,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 
 ^der-c5a-10-6
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]
 
 > [!derivation]- Derivation (second route: eigenvectors of the Hermitian Dirac Hamiltonian, the pre-course notes)
 > **Step 1** (the Hamiltonian form). Multiply the Dirac equation $(i\gamma^0\partial_0 + i\gamma^i\partial_i - m)\psi = 0$ by $\gamma^0$ from the left, $(\gamma^0)^2 = \mathbb 1$: $i\partial_0\psi = \gamma^0(-i\gamma^i\partial_i + m)\psi$. On $\psi = w\,e^{i\mathbf k\cdot\mathbf x}e^{-i\omega t}$, $-i\gamma^i\partial_i \to -i\gamma^i(ik^i) = \gamma^ik^i$ and $i\partial_0 \to \omega$: $\omega\,w = H_{\text{s.p.}}(\mathbf k)\,w$ with $H_{\text{s.p.}}(\mathbf k) = \gamma^0\gamma^ik^i + m\gamma^0$, Hermitian ([[§C5a.9 Plane-Wave Solutions#^der-c5a-9-2b|Derivation §C5a.9.2, second route]], Step 1).
@@ -231,7 +231,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 ## Spin sums
 
 > [!theorem] Theorem §C5a.10.7: The Spin Sum over u
-> For any spin basis $\xi^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]) in $u^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], with $\bar u$ of [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]] and $\slashed{p}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]],
+> For any spin basis $\xi^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]) in $u^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], with $\bar u^s$ of [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]] ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]) and $\slashed{p}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]],
 >
 > $$
 > \sum_{s=1,2}u^s(p)\,\bar u^s(p) = \slashed{p} + m ,
@@ -244,7 +244,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 ^thm-c5a-10-7
 
 > [!derivation]- Derivation
-> **Step 1** (column times row, block by block). With $u^s = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$ and $\bar u^s = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}, \xi^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-2|Derivation §C5a.10.2]], Step 1), the four $2\times2$ blocks of $u^s\bar u^s$ are
+> **Step 1** (column times row, block by block). With $u^s = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$ and $\bar u^s = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}, \xi^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]), the four $2\times2$ blocks of $u^s\bar u^s$ are
 >
 > $$
 > u^s\bar u^s = \begin{pmatrix}\sqrt{p\cdot\sigma}\,\xi^s\xi^{s\dagger}\sqrt{p\cdot\bar\sigma} & \sqrt{p\cdot\sigma}\,\xi^s\xi^{s\dagger}\sqrt{p\cdot\sigma}\\ \sqrt{p\cdot\bar\sigma}\,\xi^s\xi^{s\dagger}\sqrt{p\cdot\bar\sigma} & \sqrt{p\cdot\bar\sigma}\,\xi^s\xi^{s\dagger}\sqrt{p\cdot\sigma}\end{pmatrix} .
@@ -267,10 +267,10 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 
 ^der-c5a-10-7
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]
 
 > [!theorem] Theorem §C5a.10.8: The Spin Sum over v
-> For any spin basis $\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]) in $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]],
+> For any spin basis $\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]) in $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], with $\bar v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]],
 >
 > $$
 > \sum_{s=1,2}v^s(p)\,\bar v^s(p) = \slashed{p} - m .
@@ -281,7 +281,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 ^thm-c5a-10-8
 
 > [!derivation]- Derivation
-> As [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-7|Derivation §C5a.10.7]], with the signs carried. The column $v^s = (\sqrt{p\cdot\sigma}\,\eta^s, -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ has its sign in the lower half; the row $\bar v^s = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}, \eta^{s\dagger}\sqrt{p\cdot\sigma})$ in the upper half. Block by block, after $\sum_s\eta^s\eta^{s\dagger} = \mathbb 1_2$:
+> As [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-7|Derivation §C5a.10.7]], with the signs carried. The column $v^s = (\sqrt{p\cdot\sigma}\,\eta^s, -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ has its sign in the lower half; the row $\bar v^s = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}, \eta^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]) in the upper half. Block by block, after $\sum_s\eta^s\eta^{s\dagger} = \mathbb 1_2$:
 >
 > $$
 > \sum_sv^s\bar v^s = \begin{pmatrix}\sqrt{p\cdot\sigma}\,\bigl(-\sqrt{p\cdot\bar\sigma}\bigr) & \sqrt{p\cdot\sigma}\sqrt{p\cdot\sigma}\\ \bigl(-\sqrt{p\cdot\bar\sigma}\bigr)\bigl(-\sqrt{p\cdot\bar\sigma}\bigr) & \bigl(-\sqrt{p\cdot\bar\sigma}\bigr)\sqrt{p\cdot\sigma}\end{pmatrix} = \begin{pmatrix}-m & p\cdot\sigma\\ p\cdot\bar\sigma & -m\end{pmatrix} = \slashed{p} - m .
@@ -295,7 +295,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 
 ^der-c5a-10-8
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
 
 > [!theorem] Theorem §C5a.10.9: The Spin Sums Are Covariant
 > For every Lorentz transformation $\Lambda$ with spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]),
@@ -326,7 +326,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 *Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]
 
 > [!theorem] Theorem §C5a.10.10: Completeness and the Energy Projectors
-> Let $m > 0$, $u^s$, $v^s$ as in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], and $\Lambda_\pm(p) \equiv \dfrac{\pm\slashed{p} + m}{2m}$. Then
+> Let $m > 0$, $u^s$, $v^s$ as in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], and $\Lambda_\pm(p) \equiv \dfrac{\pm\slashed{p} + m}{2m}$. Then
 > 1. $\dfrac1{2m}\sum_{s=1,2}\bigl[u^s(p)\bar u^s(p) - v^s(p)\bar v^s(p)\bigr] = \mathbb 1_4$;
 > 2. $\Lambda_+ = \frac1{2m}\sum_su^s\bar u^s$ and $\Lambda_- = -\frac1{2m}\sum_sv^s\bar v^s$ are complementary projectors: $\Lambda_\pm^2 = \Lambda_\pm$, $\Lambda_+\Lambda_- = \Lambda_-\Lambda_+ = 0$, $\Lambda_+ + \Lambda_- = \mathbb 1$;
 > 3. $\Lambda_+u^s = u^s$, $\Lambda_+v^s = 0$, $\Lambda_-v^s = v^s$, $\Lambda_-u^s = 0$: $\Lambda_+$ projects onto the $u$'s (eigenvalue $+m$ of $\slashed{p}$), $\Lambda_-$ onto the $v$'s; $\operatorname{tr}\Lambda_\pm = 2$.
@@ -338,7 +338,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 > [!derivation]- Derivation
 > **Step 1** (part 1 from the spin sums). By [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]] and [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]], $\frac1{2m}[(\slashed{p} + m) - (\slashed{p} - m)] = \frac{2m}{2m}\mathbb 1 = \mathbb 1$.
 >
-> **Step 2** (part 1 checked on a basis). On $u^r$: $\sum_su^s(\bar u^su^r) = \sum_su^s\,2m\delta^{sr} = 2m\,u^r$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]) and $\sum_sv^s(\bar v^su^r) = 0$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-5|Theorem §C5a.10.5]]), so the bracket gives $2m\,u^r$. On $v^r$: the first sum gives $0$, the second $-\sum_sv^s(\bar v^sv^r) = -(-2m)v^r = 2m\,v^r$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|Theorem §C5a.10.4]]). Since $\{u^s, v^s\}$ is a basis of $\mathbb C^4$ for $m > 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]), the operator is $\mathbb 1$. ⚑ By-product: in a completeness relation for an indefinite form each basis vector enters divided by its "norm"; the $v$'s have norm $-2m$, hence the minus sign.
+> **Step 2** (part 1 checked on a basis). On $u^r$: $\sum_su^s(\bar u^su^r) = \sum_su^s\,2m\delta^{sr} = 2m\,u^r$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]) and $\sum_sv^s(\bar v^su^r) = 0$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-5|Theorem §C5a.10.5]]), so the bracket gives $2m\,u^r$. On $v^r$: the first sum gives $0$, the second $-\sum_sv^s(\bar v^sv^r) = -(-2m)v^r = 2m\,v^r$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|Theorem §C5a.10.4]]). Since $\{u^s, v^s\}$ is a basis of $\mathbb C^4$ for $m > 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]), the operator is $\mathbb 1$. ⚑ By-product: in a completeness relation for an indefinite form each basis vector enters divided by its "norm"; the $v$'s have norm $-2m$, hence the minus sign.
 >
 > **Step 3** (projector algebra). With $\slashed{p}^{\,2} = m^2$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]], 1), expanding all terms: $\Lambda_+^2 = \frac{\slashed{p}^{\,2} + 2m\slashed{p} + m^2}{4m^2} = \frac{2m^2 + 2m\slashed{p}}{4m^2} = \Lambda_+$; $\Lambda_-^2 = \frac{\slashed{p}^{\,2} - 2m\slashed{p} + m^2}{4m^2} = \Lambda_-$; $\Lambda_+\Lambda_- = \frac{(m + \slashed{p})(m - \slashed{p})}{4m^2} = \frac{m^2 - m\slashed{p} + m\slashed{p} - \slashed{p}^{\,2}}{4m^2} = 0$, and $\Lambda_-\Lambda_+$ is the same product in the other order (the factors commute); $\Lambda_+ + \Lambda_- = \frac{2m}{2m} = \mathbb 1$. Part 2.
 >
@@ -496,7 +496,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-1|Def. §C5a.10.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-2|Def. §C5a.10.2]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|Theorem §C5a.10.11]]
 
 > [!theorem] Theorem §C5a.10.13: The v Spinors in the Helicity Basis
-> With $\eta^s = \lambda\,\xi_{-\lambda}$ ($\lambda = \pm$) in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]],
+> With $\eta^s = \lambda\,\xi_{-\lambda}$ ($\lambda = \pm$) in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]],
 >
 > $$
 > v_\lambda(p) = \begin{pmatrix}\lambda\,\omega_\lambda\,\xi_{-\lambda}\\ -\lambda\,\omega_{-\lambda}\,\xi_{-\lambda}\end{pmatrix}, \qquad h\,v_\lambda(p) = -\tfrac\lambda2\,v_\lambda(p) ,
@@ -523,7 +523,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 
 ^der-c5a-10-13
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-12|Derivation §C5a.10.12]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|Theorem §C5a.10.11]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-12|Derivation §C5a.10.12]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|Theorem §C5a.10.11]]
 
 > [!remark] Remark: The helicity of a massive particle depends on the frame
 > For $m > 0$ one can boost to a frame moving faster than the particle along $\hat{\mathbf p}$. There the momentum points the other way and the spin is unchanged, so the helicity flips: $u_+$ in one frame is a left-handed spinor in the other. Helicity is conserved by free motion ($h$ commutes with the free Dirac Hamiltonian, [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-1|QM Theorem §C13.3.1]]) but is not Lorentz invariant. For a massless particle no such boost exists, and helicity is a Lorentz invariant label ([[§C3.7★ Massless Particles and Helicity#^thm-c3-7-5|Theorem §C3.7.5]]).
@@ -576,11 +576,13 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 > | solution | $u^s(p)\,e^{-ip\cdot x}$ | $v^s(p)\,e^{+ip\cdot x}$ |
 > | spinor | $(\sqrt{p\cdot\sigma}\,\xi^s,\ \sqrt{p\cdot\bar\sigma}\,\xi^s)$ | $(\sqrt{p\cdot\sigma}\,\eta^s,\ -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ |
 > | equation | $(\slashed{p} - m)u = 0$ | $(\slashed{p} + m)v = 0$ |
+> | Dirac conjugate | $(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma})$ | $(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma})$ |
+> | conjugate equation | $\bar u(\slashed{p} - m) = 0$ | $\bar v(\slashed{p} + m) = 0$ |
 > | $\psi^\dagger\psi$ type | $u^{r\dagger}u^s = 2E_{\mathbf p}\delta^{rs}$ | $v^{r\dagger}v^s = 2E_{\mathbf p}\delta^{rs}$ |
 > | invariant | $\bar u^ru^s = 2m\,\delta^{rs}$ | $\bar v^rv^s = -2m\,\delta^{rs}$ |
 > | spin sum | $\sum_su^s\bar u^s = \slashed{p} + m$ | $\sum_sv^s\bar v^s = \slashed{p} - m$ |
 >
-> and $\bar v^ru^s = \bar u^rv^s = 0$, $u^{r\dagger}(\mathbf p)v^s(-\mathbf p) = v^{r\dagger}(\mathbf p)u^s(-\mathbf p) = 0$. Homes: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], Theorems §C5a.10.1–§C5a.10.8.
+> and $\bar v^ru^s = \bar u^rv^s = 0$, $u^{r\dagger}(\mathbf p)v^s(-\mathbf p) = v^{r\dagger}(\mathbf p)u^s(-\mathbf p) = 0$. Homes: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], Theorems §C5a.10.1–§C5a.10.8.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.7 (Principle "Solutions of the Dirac equation") · PHY 513 Lecture 9, Summary I–III*
 

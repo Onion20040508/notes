@@ -16,7 +16,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 ## The single-particle Hamiltonian and its negative energies
 
 > [!theorem] Theorem §C5b.3.1: The Single-Particle Hamiltonian on Plane Waves
-> For the plane-wave solutions of the Dirac equation ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]) and $H_{\text{s.p.}}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]],
+> For the plane-wave solutions of the Dirac equation ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) and $H_{\text{s.p.}}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]],
 >
 > $$
 > H_{\text{s.p.}}\,u^s(p)\,e^{-ip\cdot x} = +E_{\mathbf p}\,u^s(p)\,e^{-ip\cdot x}, \qquad H_{\text{s.p.}}\,v^s(p)\,e^{ip\cdot x} = -E_{\mathbf p}\,v^s(p)\,e^{ip\cdot x} .
@@ -35,7 +35,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 >
 > **3. The time derivative of the plane wave.** $e^{-ip\cdot x} = e^{-iE_{\mathbf p}t}e^{i\mathbf p\cdot\mathbf x}$, and $i\partial_0e^{-iE_{\mathbf p}t} = E_{\mathbf p}e^{-iE_{\mathbf p}t}$. So $H_{\text{s.p.}}u^s(p)e^{-ip\cdot x} = E_{\mathbf p}u^s(p)e^{-ip\cdot x}$.
 >
-> **4. The $v$ solutions.** $v^s(p)e^{ip\cdot x}$ solves the same equation ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]); Steps 1–2 are identical. Now $e^{ip\cdot x} = e^{iE_{\mathbf p}t}e^{-i\mathbf p\cdot\mathbf x}$ and $i\partial_0e^{iE_{\mathbf p}t} = -E_{\mathbf p}e^{iE_{\mathbf p}t}$: the eigenvalue is $-E_{\mathbf p}$.
+> **4. The $v$ solutions.** $v^s(p)e^{ip\cdot x}$ solves the same equation ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]); Steps 1–2 are identical. Now $e^{ip\cdot x} = e^{iE_{\mathbf p}t}e^{-i\mathbf p\cdot\mathbf x}$ and $i\partial_0e^{iE_{\mathbf p}t} = -E_{\mathbf p}e^{iE_{\mathbf p}t}$: the eigenvalue is $-E_{\mathbf p}$.
 >
 > **5. Momentum space.** On $e^{i\mathbf k\cdot\mathbf x}$, $-i\partial_j \to k^j$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), so $H_{\text{s.p.}} \to H_{\text{s.p.}}(\mathbf k) = \gamma^0(\gamma^jk^j + m)$. In Step 3 the spatial momentum is $\mathbf k = \mathbf p$: $H_{\text{s.p.}}(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$. In Step 4 it is $\mathbf k = -\mathbf p$: $H_{\text{s.p.}}(-\mathbf p)v^s(p) = -E_{\mathbf p}v^s(p)$, i.e., renaming $\mathbf p \to -\mathbf p$, $H_{\text{s.p.}}(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$. The four vectors $u^{1,2}(p)$, $v^{1,2}(\tilde p)$ are independent (orthogonal, [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]]), so these are all four eigenvalues of the $4\times4$ matrix $H_{\text{s.p.}}(\mathbf p)$.
 >
@@ -47,7 +47,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 
 ^der-c5b-3-1
 
-*Uses:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]
+*Uses:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]
 
 > [!caution] Caution: Negative energies are a problem only if ψ is a wave function
 > If $H_{\text{s.p.}}$ were the Hamiltonian, as in relativistic quantum mechanics ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]), the states $v^s(p)e^{ip\cdot x}$ would have energy $-E_{\mathbf p}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]]), the spectrum would be unbounded below, and nothing would stop a particle from cascading down forever: a serious physical problem, and the origin of Dirac's hole theory ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]). In quantum field theory $\hat\psi$ is not a wave function but an operator, and the Hamiltonian is $\hat H = \int d^3x\,\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]). Following the principles of quantum field theory, with the right statistics, makes all energies positive ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]). The scalar analogue is [[§C2b.1 Heisenberg Fields#^rem-c2b-1-3|§C2b.1, Remark: Negative frequency is creation, not negative energy]].

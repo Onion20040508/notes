@@ -9,9 +9,9 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.10 Normalization, Spin Sums and Helicity]] →
 
-*Sources: the user's PHY 513 notes, Ch. 9 §9.1 (Plane waves and an eigenvalue problem), §9.2 (The rest frame), §9.3 (Boosting to a general frame), §9.4 (Principle "Never take the square root of a 2×2 matrix" and its proof; Derivation "Check: u(p) solves the Dirac equation in every frame"), §9.5 (Derivation "The v spinors: the four steps again"), and the paragraph "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts A and C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.45)–(3.51), (3.58)–(3.62) · Yu Zhao-Huan, 量子场论讲义, §5.4.1–§5.4.2, eqs. (5.118)–(5.157), (5.182)–(5.191) · the user's pre-course notes, §5.4 ("General form of the plane-wave solutions"; "Helicity spinors in the Weyl representation").*
+*Sources: the user's PHY 513 notes, Ch. 9 §9.1 (Plane waves and an eigenvalue problem), §9.2 (The rest frame), §9.3 (Boosting to a general frame), §9.4 (Principle "Never take the square root of a 2×2 matrix" and its proof; Derivation "Check: u(p) solves the Dirac equation in every frame"), §9.4 (Derivation "Normalization II: ūu", the row ū), §9.5 (Derivation "The v spinors: the four steps again"; Derivation "Normalizations of the v's", the row v̄), §9.6 (paragraph "The Dirac equation, from both sides"), and the paragraph "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts A, B ("Normalization II", "Completeness for Dirac Spinors") and C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.45)–(3.51), (3.55)–(3.56), (3.58)–(3.62) · Yu Zhao-Huan, 量子场论讲义, §5.4.1–§5.4.2, eqs. (5.118)–(5.157), (5.182)–(5.191), (5.205)–(5.206) · the user's pre-course notes, §5.4 ("General form of the plane-wave solutions"; "Helicity spinors in the Weyl representation"; note "Checking the spin sums").*
 
-What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section finds, for each momentum, two positive-frequency spinors $u^s(p)$ and two negative-frequency spinors $v^s(p)$ by Lecture 9's four steps: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$. Their normalizations, spin sums and the helicity basis are [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]].
+What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section finds, for each momentum, two positive-frequency spinors $u^s(p)$ and two negative-frequency spinors $v^s(p)$ by Lecture 9's four steps: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$, and then their Dirac conjugates $\bar u^s(p)$, $\bar v^s(p)$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]) as rows in their own right. Their normalizations, spin sums and the helicity basis are [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]].
 
 *Conventions* ([[Larsen PHY 513]]): chiral basis $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]) with $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-10|Def. §C5a.1.10]]); $p^0 = E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$ always; $\slashed{p} \equiv \gamma^\mu p_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$, read actively, the boost to rapidity $\eta$ along $+z$ having $\omega_{03} = -\omega_{30} = \eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]). Two-spinors are $\xi$, $\eta^s$ (with an index); the rapidity is $\eta$ (never with an index).
 
@@ -320,13 +320,13 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 > \sqrt{p\cdot\sigma} = \sqrt{E_{\mathbf p} - |\mathbf p|}\;\Pi_+ + \sqrt{E_{\mathbf p} + |\mathbf p|}\;\Pi_-, \qquad \sqrt{p\cdot\bar\sigma} = \sqrt{E_{\mathbf p} + |\mathbf p|}\;\Pi_+ + \sqrt{E_{\mathbf p} - |\mathbf p|}\;\Pi_- ,
 > $$
 >
-> with $\Pi_\pm = \frac12(\mathbb 1 \pm \hat{\mathbf p}\cdot\boldsymbol\sigma)$ the projectors onto spin $\pm\frac12$ along $\hat{\mathbf p}$ (for $\mathbf p = 0$, $\sqrt{p\cdot\sigma} = \sqrt{p\cdot\bar\sigma} = \sqrt m\,\mathbb 1$).
+> with $\Pi_\pm = \frac12(\mathbb 1 \pm \hat{\mathbf p}\cdot\boldsymbol\sigma)$ the projectors onto spin $\pm\frac12$ along $\hat{\mathbf p}$ (for $\mathbf p = 0$, $\sqrt{p\cdot\sigma} = \sqrt{p\cdot\bar\sigma} = \sqrt m\,\mathbb 1$). Both roots are Hermitian, $(\sqrt{p\cdot\sigma})^\dagger = \sqrt{p\cdot\sigma}$, $(\sqrt{p\cdot\bar\sigma})^\dagger = \sqrt{p\cdot\bar\sigma}$, as every positive operator is ([[§25 Positive Operators#^ladr-7-34|LADR Def. 7.34]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 (Caution "What √(p·σ) means") · PS §3.3, after eq. (3.50) ("we take the positive root of each eigenvalue")*
 
 ^def-c5a-9-5
 
-Existence and uniqueness of the positive square root: [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]. The spectral form: $\mathbf p\cdot\boldsymbol\sigma = |\mathbf p|(\Pi_+ - \Pi_-)$ and $\mathbb 1 = \Pi_+ + \Pi_-$, so $p\cdot\sigma = (E_{\mathbf p} - |\mathbf p|)\Pi_+ + (E_{\mathbf p} + |\mathbf p|)\Pi_-$, and the square root of a combination of orthogonal projectors with nonnegative coefficients is the same combination with the square roots of the coefficients (Step 5 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]]).
+Existence and uniqueness of the positive square root: [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]. The spectral form: $\mathbf p\cdot\boldsymbol\sigma = |\mathbf p|(\Pi_+ - \Pi_-)$ and $\mathbb 1 = \Pi_+ + \Pi_-$, so $p\cdot\sigma = (E_{\mathbf p} - |\mathbf p|)\Pi_+ + (E_{\mathbf p} + |\mathbf p|)\Pi_-$, and the square root of a combination of orthogonal projectors with nonnegative coefficients is the same combination with the square roots of the coefficients (Step 5 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]]). Hermiticity, directly: the coefficients $\sqrt{E_{\mathbf p} \mp |\mathbf p|}$ are real (since $E_{\mathbf p} \ge |\mathbf p|$), and $\Pi_\pm^\dagger = \frac12(\mathbb 1 \pm \hat p^i\sigma^{i\dagger}) = \Pi_\pm$, the $\hat p^i$ being real and the Pauli matrices Hermitian ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]); a real combination of Hermitian matrices is Hermitian. This is what lets a root pass through a dagger unchanged, $(\sqrt{p\cdot\sigma}\,\xi)^\dagger = \xi^\dagger\sqrt{p\cdot\sigma}$, in the Dirac conjugates ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]).
 
 > [!theorem] Theorem §C5a.9.6: Explicit Square Roots
 > For $m > 0$,
@@ -458,7 +458,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 
 ^rem-c5a-9-4
 
-## The spinors u(p) and v(p)
+## The spinors u(p), v(p) and their Dirac conjugates
 
 > [!theorem] Theorem §C5a.9.9: The Positive-Frequency Spinors u(p)
 > For every $\mathbf p \in \mathbb R^3$ and $s = 1, 2$, with $p^0 = E_{\mathbf p}$ and a spin basis $\xi^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]),
@@ -500,7 +500,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > **What the derivation shows**
 > - The construction is: solve where the problem is simplest (rest frame), then transport with the group; the same idea defines the one-particle states $|p, \sigma\rangle = U(L(p))|k, \sigma\rangle$ ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|Theorem §C3.6.4]]).
 > - Assumption $m > 0$ (rest frame, $1/\sqrt m$); the massless case needs the second route.
-> - Used next: $v(p)$ by the same four steps ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]); normalizations ([[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]); mode expansion ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
+> - Used next: the Dirac conjugate $\bar u^s(p)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]); $v(p)$ by the same four steps ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]); normalizations ([[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]); mode expansion ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
 
 ^der-c5a-9-9
 
@@ -544,6 +544,128 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
 
+> [!theorem] Theorem §C5a.9.10: The Dirac Conjugate of u(p)
+> For the spinors $u^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], every $\mathbf p$ and $m \ge 0$, the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]) is the row
+>
+> $$
+> \bar u^s(p) \equiv u^{s\dagger}(p)\,\gamma^0 = \bigl(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma}\bigr), \qquad \bar u^s(p)\,(\slashed{p} - m) = 0 ,
+> $$
+>
+> with the two Hermitian roots of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]] in exchanged places relative to the column $u^s(p)$.
+> 1. $\bar u^s(p)$ is a $1\times4$ row, the functional $h_D(u^s(p), \cdot\,)$ of the Dirac form ([[§C5a.2 The Dirac Form#^def-c5a-2-4|Def. §C5a.2.4]]): $\bar u^s(p)\,w$ is a number for every column $w$, e.g. $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]).
+> 2. The Dirac equation acts from the right: $\bar u^s(p)\,\slashed{p} = m\,\bar u^s(p)$, with $\slashed{p}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]].
+> 3. At rest, $p = (m, \mathbf 0)$ with $m > 0$: $\bar u^s_0 = \sqrt m\,(\xi^{s\dagger}, \xi^{s\dagger}) = u_0^{s\dagger}$.
+>
+> *Source: PHY 513 Lecture 9, Part B ("Normalization II": $\bar u(p) = u^\dagger(p)\gamma^0$; "Completeness for Dirac Spinors": the row $(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}, \xi^{s\dagger}\sqrt{p\cdot\sigma})$) · the user's PHY 513 notes, Ch. 9 §9.4 (Derivation "Normalization II: ūu": the Dirac conjugate "exchanges the two halves of the row"), §9.6 (Derivation "Proof of the Gordon identity", paragraph "The Dirac equation, from both sides") · PS §3.3, eqs. (3.55)–(3.56) and the row in the spin sum, p. 48 · Yu §5.4.2, eq. (5.205) (helicity basis) · the user's pre-course notes, §5.4 (note "Checking the spin sums": "$\gamma^0$ swaps the blocks of $u^\dagger$") · the rest-frame check and the third route written here*
+
+^thm-c5a-9-10
+
+> [!derivation]- Derivation
+> **Step 1** (the roots pass through the dagger). $p\cdot\sigma = E_{\mathbf p}\mathbb 1 - p^i\sigma^i$ and $p\cdot\bar\sigma = E_{\mathbf p}\mathbb 1 + p^i\sigma^i$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]) have real coefficients $E_{\mathbf p}$, $p^i$ and Hermitian $\sigma^i$ ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]), so they are Hermitian; their eigenvalues $E_{\mathbf p} \mp |\mathbf p| \ge 0$ make them positive operators ([[§25 Positive Operators#^ladr-7-38|LADR Thm. 7.38]], (b) ⇒ (a)). Their roots are the positive square roots ([[§25 Positive Operators#^ladr-7-39|LADR 7.39]]), and a positive operator is self-adjoint ([[§25 Positive Operators#^ladr-7-34|LADR Def. 7.34]]). Concretely, the spectral form of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]] is a combination of the Hermitian projectors $\Pi_\pm$ with the real coefficients $\sqrt{E_{\mathbf p} \mp |\mathbf p|}$ (and $\sqrt m\,\mathbb 1$ at $\mathbf p = 0$). With $(AB)^\dagger = B^\dagger A^\dagger$,
+>
+> $$
+> \bigl(\sqrt{p\cdot\sigma}\,\xi^s\bigr)^\dagger = \xi^{s\dagger}\bigl(\sqrt{p\cdot\sigma}\bigr)^\dagger = \xi^{s\dagger}\sqrt{p\cdot\sigma}, \qquad \bigl(\sqrt{p\cdot\bar\sigma}\,\xi^s\bigr)^\dagger = \xi^{s\dagger}\bigl(\sqrt{p\cdot\bar\sigma}\bigr)^\dagger = \xi^{s\dagger}\sqrt{p\cdot\bar\sigma} .
+> $$
+>
+> ⚑ By-product: a root moves from the left of $\xi^s$ to the right of $\xi^{s\dagger}$ unchanged; without Hermiticity it would become $(\sqrt{p\cdot\sigma})^\dagger$, and the identities of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]] would not apply → [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]].
+>
+> **Step 2** (dagger of the column, block by block). The Hermitian conjugate of a column transposes it into a row and conjugates each entry. For a column with two-component halves $a$, $b$, the entries of $a$ fill the first two places of the row and those of $b$ the last two, so $\begin{pmatrix}a\\ b\end{pmatrix}^\dagger = (a^\dagger,\ b^\dagger)$. With $a = \sqrt{p\cdot\sigma}\,\xi^s$, $b = \sqrt{p\cdot\bar\sigma}\,\xi^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]]) and Step 1,
+>
+> $$
+> u^{s\dagger}(p) = \bigl(\xi^{s\dagger}\sqrt{p\cdot\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\bar\sigma}\bigr) .
+> $$
+>
+> **Step 3** ($\gamma^0$ swaps the halves). In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]). A row times a block matrix is $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$; here $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
+>
+> $$
+> \bar u^s(p) = u^{s\dagger}(p)\,\gamma^0 = \bigl(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma}\bigr) .
+> $$
+>
+> It is $1\times4$ (two $1\times2$ blocks), so its product with a column $w = (w_1, w_2)$ is the number $\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}\,w_1 + \xi^{s\dagger}\sqrt{p\cdot\sigma}\,w_2$, the value $h_D(u^s(p), w) = u^{s\dagger}\gamma^0w$ of the Dirac form. The formula and part 1.
+>
+> **Step 4** (the conjugate equation, directly). By the rule of Step 3 with the chiral form $\slashed{p} = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]), $(c, d)\,\slashed{p} = \bigl(d\,(p\cdot\bar\sigma),\ c\,(p\cdot\sigma)\bigr)$. With $c = \xi^{s\dagger}\sqrt{p\cdot\bar\sigma}$ and $d = \xi^{s\dagger}\sqrt{p\cdot\sigma}$,
+>
+> $$
+> \bar u^s(p)\,\slashed{p} = \Bigl(\xi^{s\dagger}\sqrt{p\cdot\sigma}\,(p\cdot\bar\sigma),\ \ \xi^{s\dagger}\sqrt{p\cdot\bar\sigma}\,(p\cdot\sigma)\Bigr) .
+> $$
+>
+> Split each unrooted factor into two roots, $p\cdot\bar\sigma = \sqrt{p\cdot\bar\sigma}\sqrt{p\cdot\bar\sigma}$ and $p\cdot\sigma = \sqrt{p\cdot\sigma}\sqrt{p\cdot\sigma}$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], 1), and pair the first root with its left neighbour:
+>
+> $$
+> \sqrt{p\cdot\sigma}\,(p\cdot\bar\sigma) = \bigl(\sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma}\bigr)\sqrt{p\cdot\bar\sigma} = m\sqrt{p\cdot\bar\sigma}, \qquad \sqrt{p\cdot\bar\sigma}\,(p\cdot\sigma) = \bigl(\sqrt{p\cdot\bar\sigma}\sqrt{p\cdot\sigma}\bigr)\sqrt{p\cdot\sigma} = m\sqrt{p\cdot\sigma}
+> $$
+>
+> by Theorem §C5a.9.7, 3. So $\bar u^s(p)\,\slashed{p} = m\bigl(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma}\bigr) = m\,\bar u^s(p)$. The $m$ in $\slashed{p} - m$ stands for $m\,\mathbb 1_4$, and a row times $\mathbb 1_4$ is the row, so $\bar u^s(p)(\slashed{p} - m) = m\,\bar u^s(p) - m\,\bar u^s(p) = 0$. No step divides by $m$: valid for $m \ge 0$. Part 2.
+>
+> **Step 5** (rest frame). At $p = (m, \mathbf 0)$, $m > 0$: $p\cdot\sigma = p\cdot\bar\sigma = m\,\mathbb 1$ (Def. §C5a.9.2 with $\mathbf p = 0$) and both roots are $\sqrt m\,\mathbb 1$ (Def. §C5a.9.5), so Step 3 gives $\bar u^s_0 = \sqrt m\,(\xi^{s\dagger}, \xi^{s\dagger})$. Directly from $u_0^s = \sqrt m(\xi^s, \xi^s)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]): $u_0^{s\dagger} = \sqrt m(\xi^{s\dagger}, \xi^{s\dagger})$ ($\sqrt m$ is real), and the swap of two equal halves changes nothing, so $\bar u_0^s = u_0^{s\dagger}$. Check of part 2 at rest, with $\slashed{p} - m = m\begin{pmatrix}-\mathbb 1 & \mathbb 1\\ \mathbb 1 & -\mathbb 1\end{pmatrix}$ (Step 1 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-3|Derivation §C5a.9.3]]) and the row rule of Step 3:
+>
+> $$
+> \bar u^s_0\,(\slashed{p} - m) = m\sqrt m\,\bigl(-\xi^{s\dagger} + \xi^{s\dagger},\ \ \xi^{s\dagger} - \xi^{s\dagger}\bigr) = (0,\ 0) .
+> $$
+>
+> Part 3. ⚑ By-product: at rest $\bar u_0 = u_0^\dagger$, so $\bar u_0u_0 = u_0^\dagger u_0 = 2m\,\xi^\dagger\xi$: the invariant normalization and the frame-dependent one agree in the rest frame, where $2E_{\mathbf p} = 2m$ → [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]].
+>
+> **What the derivation shows**
+> - The bar does two things: the dagger reverses the order (each Hermitian root moves to the right of $\xi^{s\dagger}$), and $\gamma^0$ exchanges the halves. So in every product $\bar u(\cdots)u$ a $\sqrt{p\cdot\bar\sigma}$ meets a $\sqrt{p\cdot\sigma}$, which Theorem §C5a.9.7, 3 turns into $m$; in $u^\dagger u$ equal roots meet and give $p\cdot\sigma + p\cdot\bar\sigma = 2E_{\mathbf p}$.
+> - The row is a plane-wave solution of the conjugate Dirac equation $i\,\partial_\mu\bar\psi\,\gamma^\mu + m\bar\psi = 0$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], 2): for $\bar\psi = \bar u^s(p)\,e^{+ip\cdot x}$, $i\partial_\mu e^{ip\cdot x} = -p_\mu e^{ip\cdot x}$, and the equation becomes $-\bar u^s(p)(\slashed{p} - m)\,e^{ip\cdot x} = 0$, which is part 2. The conjugate of a positive-frequency wave carries $e^{+ip\cdot x}$.
+> - Assumptions: $p$ real, on the forward mass shell (for Hermitian positive roots); the chiral basis for the explicit row. The equation $\bar u(\slashed{p} - m) = 0$ needs neither the row nor $m > 0$ (second route).
+> - Used in: $\bar uu = 2m$, $\bar uv = 0$ and the spin sum $\sum_s u^s\bar u^s = \slashed{p} + m$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-5|Theorem §C5a.10.5]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]]); the conjugate field ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]]); the Gordon identity ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]]).
+
+^der-c5a-9-10
+
+*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§25 Positive Operators#^ladr-7-34|LADR Def. 7.34]], [[§25 Positive Operators#^ladr-7-38|LADR Thm. 7.38]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
+
+> [!derivation]- Derivation (second route: the Hermitian conjugate of the Dirac equation)
+> This route uses only $(\slashed{p} - m)\,u^s(p) = 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]]) and the Hermiticity of the $\gamma$'s, not the explicit column.
+>
+> **Step 1** (dagger of the equation). For a matrix $M$ and a column $w$, $(Mw)^\dagger = w^\dagger M^\dagger$, and the dagger of the zero column is the zero row. So $(\slashed{p} - m)\,u^s = 0$ gives $u^{s\dagger}(\slashed{p} - m)^\dagger = 0$.
+>
+> **Step 2** (dagger of the matrix). The $p_\mu$ and $m$ are real numbers and $\mathbb 1^\dagger = \mathbb 1$, so $(p_\mu\gamma^\mu - m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} - m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]]):
+>
+> $$
+> (\slashed{p} - m)^\dagger = \gamma^0\,(p_\mu\gamma^\mu)\,\gamma^0 - m\,\gamma^0\gamma^0 = \gamma^0\,(\slashed{p} - m)\,\gamma^0 .
+> $$
+>
+> **Step 3** (multiply by $\gamma^0$ on the right). Step 1 becomes $u^{s\dagger}\gamma^0(\slashed{p} - m)\gamma^0 = 0$. Multiplying on the right by $\gamma^0$ and using $(\gamma^0)^2 = \mathbb 1$ gives $u^{s\dagger}\gamma^0(\slashed{p} - m) = 0$, i.e. $\bar u^s(p)\,(\slashed{p} - m) = 0$ by the definition of the bar ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]).
+>
+> **What the derivation shows**
+> - In the language of the Dirac form this is $\overline{\gamma^\mu\chi} = \bar\chi\gamma^\mu$, the self-adjointness of the Dirac maps ([[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], 1): the bar of $(\slashed{p} - m)u$ is $\bar u(\slashed{p} - m)$, because the bar is conjugate-linear and the coefficients $p_\mu$, $m$ are real.
+> - It holds for every solution of $(\slashed{p} - m)w = 0$, in every Hermitian basis ([[§C5a.2 The Dirac Form#^def-c5a-2-3|Def. §C5a.2.3]]), and for $m \ge 0$.
+> - Assumption: $p_\mu$ and $m$ real (Step 2); for a complex momentum the conjugate equation would carry $p_\mu^{\ast}$.
+>
+> *Source: the user's PHY 513 notes, Ch. 9 §9.6 (Derivation "Proof of the Gordon identity", paragraph "The Dirac equation, from both sides")*
+
+^der-c5a-9-10b
+
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]], [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]
+
+> [!derivation]- Derivation (third route: the bar carries the inverse boost, m > 0)
+> **Step 1** (the bar of a boosted column). $u^s(p) = \Lambda_{1/2}(p)\,u_0^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], 1). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]),
+>
+> $$
+> \bar u^s(p) = u_0^{s\dagger}\,\Lambda_{1/2}(p)^\dagger\,\gamma^0 = u_0^{s\dagger}\,\gamma^0\,\Lambda_{1/2}(p)^{-1} = \bar u_0^s\,\Lambda_{1/2}(p)^{-1} ,
+> $$
+>
+> the plane-wave case of [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]].
+>
+> **Step 2** (the inverse boost). $\Lambda_{1/2}(p) = \operatorname{diag}\bigl(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m}\bigr)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]]). By [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], 3, and $\sqrt{A/m} = \sqrt A/\sqrt m$ (Step 4 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-8|Derivation §C5a.9.8]]), $\sqrt{p\cdot\sigma/m}\,\sqrt{p\cdot\bar\sigma/m} = \frac1m\sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma} = \mathbb 1$, and the same in the other order: each block's inverse is the other root. The inverse of a block-diagonal matrix is block-diagonal with the inverse blocks, so $\Lambda_{1/2}(p)^{-1} = \operatorname{diag}\bigl(\sqrt{p\cdot\bar\sigma/m}, \sqrt{p\cdot\sigma/m}\bigr)$.
+>
+> **Step 3** (multiply). With $\bar u_0^s = \sqrt m(\xi^{s\dagger}, \xi^{s\dagger})$ ([[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]], Step 5), block by block,
+>
+> $$
+> \bar u^s(p) = \sqrt m\,\bigl(\xi^{s\dagger},\ \xi^{s\dagger}\bigr)\begin{pmatrix}\sqrt{p\cdot\bar\sigma}/\sqrt m & 0\\ 0 & \sqrt{p\cdot\sigma}/\sqrt m\end{pmatrix} = \bigl(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma}\bigr) ,
+> $$
+>
+> the formula of the statement.
+>
+> **What the derivation shows**
+> - ⚑ By-product: $\Lambda_{1/2}(p)^{-1}$ is the spinor boost to the reversed momentum $\tilde p = (E_{\mathbf p}, -\mathbf p)$. By Def. §C5a.9.2, $\tilde p\cdot\sigma = E_{\mathbf p} + \mathbf p\cdot\boldsymbol\sigma = p\cdot\bar\sigma$ and $\tilde p\cdot\bar\sigma = p\cdot\sigma$, so $\Lambda_{1/2}(p)^{-1} = \Lambda_{1/2}(\tilde p)$: the spinor form of $L(p)^{-1} = L(\tilde p)$ for the pure boosts of Theorem §C5a.9.8 (rapidity $-\eta$ along $\hat{\mathbf p}$ is rapidity $\eta$ along $-\hat{\mathbf p}$).
+> - So the exchange of the roots in $\bar u^s(p) = \bar u^s_0\,\Lambda_{1/2}(\tilde p)$ is the transformation law of the bar (inverse matrix, from the right), $\sqrt{p\cdot\bar\sigma} = \sqrt{\tilde p\cdot\sigma}$, not an accident of the chiral $\gamma^0$.
+
+^der-c5a-9-10c
+
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]
+
 > [!remark] Remark: The same ξ in every frame
 > The $\xi^s$ in $u^s(p)$ are the ones chosen in the rest frame: the boost multiplies each half of $u_0$ by a matrix from the left, so the rest-frame $\xi^s$ is what stands to the right of $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$ in every frame. In particular $\xi = (1, 0)$ means "spin up along $z$ *in the rest frame*", not in the frame where the particle moves. The standard basis is one choice; a basis of spin along $\mathbf p$ is often better, and in it no matrix square root is ever needed ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-12|Theorem §C5a.10.12]]).
 >
@@ -551,7 +673,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 
 ^rem-c5a-9-5
 
-> [!theorem] Theorem §C5a.9.10: The Negative-Frequency Spinors v(p)
+> [!theorem] Theorem §C5a.9.11: The Negative-Frequency Spinors v(p)
 > For every $\mathbf p$ and $s = 1, 2$, with a spin basis $\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]),
 >
 > $$
@@ -562,7 +684,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "The v spinors: the four steps again") · PHY 513 Lecture 9, Part C (Steps 1–4) · PS §3.3, eqs. (3.61)–(3.62) · Yu §5.4.2, eqs. (5.182)–(5.191)*
 
-^thm-c5a-9-10
+^thm-c5a-9-11
 
 > [!derivation]- Derivation
 > The four steps of Lecture 9 again; differences from the $u$ case are marked.
@@ -593,10 +715,122 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > - Every difference between $v$ and $u$ is one sign, traced to the exponent; the boost matrix is the same.
 > - With $u^1, u^2$ (eigenvalue $+m$) the $v^1, v^2$ (eigenvalue $-m$) complete a basis of $\mathbb C^4$ for $m > 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]], 2); the completeness relation that expresses this is [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-10|Theorem §C5a.10.10]].
 > - Which $\eta^s$ goes with which spin state of the antiparticle is decided at quantization (PS §3.5 finds that the spin assignment is reversed for the antiparticle, eq. (3.112); Yu chooses $\eta = \lambda\xi_{-\lambda}$ in the helicity basis, [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-13|Theorem §C5a.10.13]]; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]).
+> - Used next: the Dirac conjugate $\bar v^s(p)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]).
 
-^der-c5a-9-10
+^der-c5a-9-11
 
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-1|Def. §C5a.9.1]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]
+
+> [!theorem] Theorem §C5a.9.12: The Dirac Conjugate of v(p)
+> For the spinors $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], every $\mathbf p$ and $m \ge 0$, the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]) is the row
+>
+> $$
+> \bar v^s(p) \equiv v^{s\dagger}(p)\,\gamma^0 = \bigl(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr), \qquad \bar v^s(p)\,(\slashed{p} + m) = 0 ,
+> $$
+>
+> with the Hermitian roots of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]].
+> 1. The minus sign, in the lower half of the column $v^s(p)$, sits in the upper half of the row: the dagger leaves it in place (it is real), and $\gamma^0$ moves it.
+> 2. The Dirac equation acts from the right with the eigenvalue of the column: $\bar v^s(p)\,\slashed{p} = -m\,\bar v^s(p)$.
+> 3. At rest, $p = (m, \mathbf 0)$ with $m > 0$: $\bar v^s_0 = \sqrt m\,(-\eta^{s\dagger}, \eta^{s\dagger}) = -v_0^{s\dagger}$.
+>
+> *Source: PHY 513 Lecture 9, Part C ("Normalization of v's": "$\gamma^0$ exchanges lower and upper entry, so an overall sign"; "Bonus Material: Orthogonality of u and v": the row $(\eta^\dagger\sqrt{p\cdot\sigma}, -\eta^\dagger\sqrt{p\cdot\bar\sigma})$ times $\gamma^0$) · the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Normalizations of the v's": $\bar v^r(p) = (-\eta^{r\dagger}\sqrt{p\cdot\bar\sigma}, \eta^{r\dagger}\sqrt{p\cdot\sigma})$) · PS §3.3, eqs. (3.62)–(3.64), (3.67) (the row is not displayed there) · Yu §5.4.2, eq. (5.206) (helicity basis) · the user's pre-course notes, §5.4 (note "Checking the spin sums") · the equation $\bar v(\slashed{p} + m) = 0$, the rest-frame check and the third route written here*
+
+^thm-c5a-9-12
+
+> [!derivation]- Derivation
+> **Step 1** (the roots pass through the dagger). Both roots are Hermitian: real combinations of the Hermitian projectors $\Pi_\pm$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]; Step 1 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]]). With $(AB)^\dagger = B^\dagger A^\dagger$ and, for the number $-1$, $(-1)^{\ast} = -1$,
+>
+> $$
+> \bigl(\sqrt{p\cdot\sigma}\,\eta^s\bigr)^\dagger = \eta^{s\dagger}\sqrt{p\cdot\sigma}, \qquad \bigl(-\sqrt{p\cdot\bar\sigma}\,\eta^s\bigr)^\dagger = (-1)^{\ast}\,\eta^{s\dagger}\bigl(\sqrt{p\cdot\bar\sigma}\bigr)^\dagger = -\eta^{s\dagger}\sqrt{p\cdot\bar\sigma} .
+> $$
+>
+> **Step 2** (dagger of the column, block by block). As for any column with halves $a$, $b$, $\begin{pmatrix}a\\ b\end{pmatrix}^\dagger = (a^\dagger,\ b^\dagger)$: transposition puts the entries of $a$ in the first two places of the row and those of $b$ in the last two, and each entry is conjugated. With $a = \sqrt{p\cdot\sigma}\,\eta^s$ and $b = -\sqrt{p\cdot\bar\sigma}\,\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) and Step 1,
+>
+> $$
+> v^{s\dagger}(p) = \bigl(\eta^{s\dagger}\sqrt{p\cdot\sigma},\ -\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}\bigr) .
+> $$
+>
+> The minus sign is still in the second half: the dagger moved nothing.
+>
+> **Step 3** ($\gamma^0$ swaps the halves). With $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]) and the row rule $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$, $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
+>
+> $$
+> \bar v^s(p) = v^{s\dagger}(p)\,\gamma^0 = \bigl(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr) .
+> $$
+>
+> ⚑ By-product: the minus sign has a single origin, the relation "lower half = minus upper half" of the rest-frame solution $v_0^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], from the eigenvalue $-m$, i.e. from the exponent $e^{+ip\cdot x}$); the boost carries it into the lower half of $v^s(p)$ (Step 4 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-11|Derivation §C5a.9.11]]), the dagger keeps it there, and $\gamma^0$ moves it to the upper half of the row. Paired with the column $v^s$, whose sign is in the lower half, each term of $\bar v v$ carries it once → [[§C5a.10 Normalization, Spin Sums and Helicity#^cau-c5a-10-1|Caution: The sign of v̄v]]. The formula and part 1.
+>
+> **Step 4** (the conjugate equation, directly). As in Step 4 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]], $(c, d)\,\slashed{p} = \bigl(d\,(p\cdot\bar\sigma),\ c\,(p\cdot\sigma)\bigr)$ for the chiral $\slashed{p}$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]). Now $c = -\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}$ and $d = \eta^{s\dagger}\sqrt{p\cdot\sigma}$:
+>
+> $$
+> \bar v^s(p)\,\slashed{p} = \Bigl(\eta^{s\dagger}\sqrt{p\cdot\sigma}\,(p\cdot\bar\sigma),\ \ -\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}\,(p\cdot\sigma)\Bigr) .
+> $$
+>
+> The two products are the ones of that step, $\sqrt{p\cdot\sigma}\,(p\cdot\bar\sigma) = m\sqrt{p\cdot\bar\sigma}$ and $\sqrt{p\cdot\bar\sigma}\,(p\cdot\sigma) = m\sqrt{p\cdot\sigma}$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], 1 and 3: split the unrooted factor into two roots, pair the first with its left neighbour). So
+>
+> $$
+> \bar v^s(p)\,\slashed{p} = \bigl(m\,\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \ -m\,\eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr) = -m\,\bigl(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr) = -m\,\bar v^s(p) ,
+> $$
+>
+> and $\bar v^s(p)(\slashed{p} + m) = -m\,\bar v^s(p) + m\,\bar v^s(p) = 0$ ($m$ standing for $m\,\mathbb 1_4$). ⚑ By-product: the eigenvalue $-m$ is the relative minus sign between the two halves of the row. Multiplying by $\slashed{p}$ exchanges the halves ($d$ goes first), which moves the minus sign to the second half; pulling out $-1$ restores the row. For $\bar u$, with no relative sign, the same exchange gives $+m$. No step divides by $m$: valid for $m \ge 0$. Part 2.
+>
+> **Step 5** (rest frame). At $p = (m, \mathbf 0)$, $m > 0$, both roots are $\sqrt m\,\mathbb 1$ (Defs. §C5a.9.2 and §C5a.9.5 with $\mathbf p = 0$), so Step 3 gives $\bar v_0^s = \sqrt m\,(-\eta^{s\dagger}, \eta^{s\dagger})$. Directly from $v_0^s = \sqrt m(\eta^s, -\eta^s)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]): $v_0^{s\dagger} = \sqrt m(\eta^{s\dagger}, -\eta^{s\dagger})$, and the swap of two opposite halves gives $\sqrt m(-\eta^{s\dagger}, \eta^{s\dagger}) = -v_0^{s\dagger}$. Check of part 2 at rest, with $\slashed{p} + m = m\begin{pmatrix}\mathbb 1 & \mathbb 1\\ \mathbb 1 & \mathbb 1\end{pmatrix}$ (Step 1 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-3|Derivation §C5a.9.3]]) and the row rule:
+>
+> $$
+> \bar v_0^s\,(\slashed{p} + m) = m\sqrt m\,\bigl(-\eta^{s\dagger} + \eta^{s\dagger},\ \ -\eta^{s\dagger} + \eta^{s\dagger}\bigr) = (0,\ 0) .
+> $$
+>
+> Part 3. ⚑ By-product: at rest $\bar v_0 = -v_0^\dagger$, so $\bar v_0v_0 = -v_0^\dagger v_0 = -2m\,\eta^\dagger\eta$: the negative sign of $\bar vv$ is already there at rest, where $\bar u_0 = +u_0^\dagger$ → [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|Theorem §C5a.10.4]].
+>
+> **What the derivation shows**
+> - Every difference from $\bar u^s(p)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]) is the one sign of $v^s(p)$, moved from the lower half of the column to the upper half of the row; the exchange of the roots is the same.
+> - The row is a plane-wave solution of the conjugate Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], 2): for $\bar\psi = \bar v^s(p)\,e^{-ip\cdot x}$, $i\partial_\mu e^{-ip\cdot x} = p_\mu e^{-ip\cdot x}$, and $i\,\partial_\mu\bar\psi\,\gamma^\mu + m\bar\psi = \bar v^s(p)(\slashed{p} + m)\,e^{-ip\cdot x} = 0$ is part 2.
+> - Assumptions as for $\bar u$: $p$ real on the forward mass shell, chiral basis for the explicit row; the equation $\bar v(\slashed{p} + m) = 0$ holds in every Hermitian basis (second route).
+> - Used in: $\bar vv = -2m$, $\bar vu = 0$ and the spin sum $\sum_s v^s\bar v^s = \slashed{p} - m$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|Theorem §C5a.10.4]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-5|Theorem §C5a.10.5]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]); the conjugate field ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]]).
+
+^der-c5a-9-12
+
+*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]]
+
+> [!derivation]- Derivation (second route: the Hermitian conjugate of the Dirac equation)
+> This route uses only $(\slashed{p} + m)\,v^s(p) = 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) and the Hermiticity of the $\gamma$'s.
+>
+> **Step 1** (dagger of the equation). $(Mw)^\dagger = w^\dagger M^\dagger$ and the dagger of the zero column is the zero row, so $(\slashed{p} + m)\,v^s = 0$ gives $v^{s\dagger}(\slashed{p} + m)^\dagger = 0$.
+>
+> **Step 2** (dagger of the matrix). With $p_\mu$, $m$ real and $\mathbb 1^\dagger = \mathbb 1$, $(p_\mu\gamma^\mu + m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} + m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]]):
+>
+> $$
+> (\slashed{p} + m)^\dagger = \gamma^0\,(p_\mu\gamma^\mu)\,\gamma^0 + m\,\gamma^0\gamma^0 = \gamma^0\,(\slashed{p} + m)\,\gamma^0 .
+> $$
+>
+> The sign of $m$ is unchanged: $m$ is real, so the dagger cannot flip it.
+>
+> **Step 3** (multiply by $\gamma^0$ on the right). Step 1 becomes $v^{s\dagger}\gamma^0(\slashed{p} + m)\gamma^0 = 0$; multiplying on the right by $\gamma^0$ and using $(\gamma^0)^2 = \mathbb 1$ gives $v^{s\dagger}\gamma^0(\slashed{p} + m) = 0$, i.e. $\bar v^s(p)\,(\slashed{p} + m) = 0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]).
+>
+> **What the derivation shows**
+> - ⚑ By-product: the $+m$ of the conjugate equation is inherited unchanged from the column equation, whose sign came from the exponent $e^{+ip\cdot x}$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], 2); the bar never changes the eigenvalue, only the side on which $\slashed{p}$ acts.
+> - The bar of $(\slashed{p} + m)v$ is $\bar v(\slashed{p} + m)$ by the self-adjointness of the Dirac maps for the Dirac form ([[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], 1); valid in every Hermitian basis and for $m \ge 0$. Assumption: $p_\mu$, $m$ real.
+>
+> *Source: the user's PHY 513 notes, Ch. 9 §9.6 (paragraph "The Dirac equation, from both sides", there for $u$), carried out here for $v$*
+
+^der-c5a-9-12b
+
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]], [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]
+
+> [!derivation]- Derivation (third route: the bar carries the inverse boost, m > 0)
+> **Step 1** (the bar of a boosted column). $v^s(p) = \Lambda_{1/2}(p)\,v_0^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]), $\bar v^s(p) = v_0^{s\dagger}\Lambda_{1/2}(p)^\dagger\gamma^0 = v_0^{s\dagger}\gamma^0\Lambda_{1/2}(p)^{-1} = \bar v_0^s\,\Lambda_{1/2}(p)^{-1}$.
+>
+> **Step 2** (the inverse boost). $\Lambda_{1/2}(p)^{-1} = \operatorname{diag}\bigl(\sqrt{p\cdot\bar\sigma}/\sqrt m,\ \sqrt{p\cdot\sigma}/\sqrt m\bigr) = \Lambda_{1/2}(\tilde p)$ ([[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]], Step 2): the same matrix as for $u$, since the boost does not know which spinor it acts on.
+>
+> **Step 3** (multiply). With $\bar v_0^s = \sqrt m(-\eta^{s\dagger}, \eta^{s\dagger})$ (Step 5 of the first derivation), block by block,
+>
+> $$
+> \bar v^s(p) = \sqrt m\,\bigl(-\eta^{s\dagger},\ \eta^{s\dagger}\bigr)\begin{pmatrix}\sqrt{p\cdot\bar\sigma}/\sqrt m & 0\\ 0 & \sqrt{p\cdot\sigma}/\sqrt m\end{pmatrix} = \bigl(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr) ,
+> $$
+>
+> the formula of the statement: the minus sign of $\bar v_0^s$ rides along, as it did for the column.
+
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]]
 
 > [!caution] Caution: η means two things
 > The lecture, the slides and Peskin–Schroeder use $\eta$ both for the rapidity and for the two-spinor in $v$. Here $\eta^s$, with a spin index, is always the two-spinor; the rapidity never carries an index.
@@ -649,4 +883,5 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > - The rest-frame projector structure, $\frac12(\mathbb 1 \pm \gamma^0)$ on $u_0$ and $v_0$, is the $\mathbf p = 0$ case of the energy projectors $\frac{\pm\slashed{p} + m}{2m}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-10|Theorem §C5a.10.10]]), the numerator of the Dirac propagator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], draft).
 > - The spectral form of $\sqrt{p\cdot\sigma}$ uses the spin projectors along $\hat{\mathbf p}$, $\Pi_\pm = \frac12(\mathbb 1 \pm \hat{\mathbf p}\cdot\boldsymbol\sigma)$, whose eigenvectors are the spin-along-an-axis spinors of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-5|QM Theorem §B6.1.5]]: choosing $\xi$ among them is the helicity basis of [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-12|Theorem §C5a.10.12]].
 > - The Dirac Hamiltonian $H_{\text{s.p.}}(\mathbf k) = \boldsymbol\alpha\cdot\mathbf k + \beta m$ of the second route of Theorem §C5a.9.2 is the Quantum Mechanics Hamiltonian ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]); its eigenvalue $-E$ is the "negative energy" that field theory reads as $v(-\mathbf p)$.
+> - The bar of a boosted spinor carries the inverse boost, and for the pure boosts used here $\Lambda_{1/2}(p)^{-1} = \Lambda_{1/2}(\tilde p)$, $\tilde p = (E_{\mathbf p}, -\mathbf p)$ ([[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]]). With $\Lambda_{1/2}(p)$ Hermitian this explains the orthogonality at opposite momenta of [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]] for $m > 0$: $u^{r\dagger}(p)\,v^s(\tilde p) = u_0^{r\dagger}\Lambda_{1/2}(p)\,\Lambda_{1/2}(p)^{-1}v_0^s = u_0^{r\dagger}v_0^s = m(\xi^{r\dagger}\eta^s - \xi^{r\dagger}\eta^s) = 0$, the rest-frame orthogonality transported by a boost and its inverse.
 > - Math: positive square roots and their uniqueness ([[§25 Positive Operators#^ladr-7-39|LADR 7.39]]); a matrix annihilated by a polynomial with distinct roots is diagonalizable (Step 3 of Derivation §C5a.9.2 does this by hand for $x^2 - m^2$); Cayley–Hamilton for $2\times2$ matrices (Theorem §C5a.9.6).

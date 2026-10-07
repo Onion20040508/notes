@@ -350,7 +350,7 @@ These identities shorten strings in which an index is contracted across other $\
 ^thm-c5a-11-9
 
 > [!derivation]- Derivation (the user's notes: split γ^μ in half)
-> **1. The Dirac equation from both sides.** $\slashed{p}\,u(p) = m\,u(p)$ by hypothesis. For $u(p')$: take the adjoint of $(\slashed{p}' - m)u(p') = 0$ with $p'_\mu$ real, $u^\dagger(p')(\gamma^{\mu\dagger}p'_\mu - m) = 0$; insert $\gamma^0\gamma^0 = \mathbb 1$ on the left of the bracket and multiply by $\gamma^0$ on the right: $\bar u(p')(\gamma^0\gamma^{\mu\dagger}\gamma^0p'_\mu - m) = 0$, and $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]): $\bar u(p')\slashed{p}' = m\,\bar u(p')$. Each acts only when the slashed momentum stands next to its own spinor.
+> **1. The Dirac equation from both sides.** $\slashed{p}\,u(p) = m\,u(p)$ by hypothesis. For $u(p')$: take the adjoint of $(\slashed{p}' - m)u(p') = 0$ with $p'_\mu$ real, $u^\dagger(p')(\gamma^{\mu\dagger}p'_\mu - m) = 0$; insert $\gamma^0\gamma^0 = \mathbb 1$ on the left of the bracket and multiply by $\gamma^0$ on the right: $\bar u(p')(\gamma^0\gamma^{\mu\dagger}\gamma^0p'_\mu - m) = 0$, and $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]): $\bar u(p')\slashed{p}' = m\,\bar u(p')$ (the home of this conjugate equation: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], 2, this step being its [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10b|second route]]). Each acts only when the slashed momentum stands next to its own spinor.
 >
 > **2. Split $\gamma^\mu$ in half.** Using step 1 once on each side (with $m \ne 0$):
 >
