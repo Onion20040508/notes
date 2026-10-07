@@ -195,14 +195,16 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > With $\mathcal S^{\lambda\mu\nu}$ of [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]], set
 >
 > $$
-> K^{\lambda\mu\nu} \equiv \tfrac12\bigl(\mathcal S^{\lambda\mu\nu} + \mathcal S^{\mu\nu\lambda} + \mathcal S^{\nu\mu\lambda}\bigr), \qquad \hat T^{\mu\nu} \equiv T^{\mu\nu} + \partial_\lambda K^{\lambda\mu\nu} .
+> K^{\lambda\mu\nu} \equiv \tfrac12\bigl(\mathcal S^{\lambda\mu\nu} + \mathcal S^{\mu\nu\lambda} + \mathcal S^{\nu\mu\lambda}\bigr), \qquad T_B^{\mu\nu} \equiv T^{\mu\nu} + \partial_\lambda K^{\lambda\mu\nu} .
 > $$
 >
 > Then $K^{\lambda\mu\nu} = -K^{\mu\lambda\nu}$, and on shell, for fields falling off fast enough at spatial infinity:
-> 1. $\hat T^{\mu\nu} = \hat T^{\nu\mu}$;
-> 2. $\partial_\mu\hat T^{\mu\nu} = 0$;
-> 3. $\hat T$ has the same charges $P^\nu$ as $T$;
-> 4. $x^\nu\hat T^{\mu\rho} - x^\rho\hat T^{\mu\nu}$ is conserved by itself, and its charges are the total $J^{\nu\rho} = L^{\nu\rho} + S^{\nu\rho}$: the spin is absorbed into the orbital moment of $\hat T$.
+> 1. $T_B^{\mu\nu} = T_B^{\nu\mu}$;
+> 2. $\partial_\mu T_B^{\mu\nu} = 0$;
+> 3. $T_B$ has the same charges $P^\nu$ as $T$;
+> 4. $x^\nu T_B^{\mu\rho} - x^\rho T_B^{\mu\nu}$ is conserved by itself, and its charges are the total $J^{\nu\rho} = L^{\nu\rho} + S^{\nu\rho}$: the spin is absorbed into the orbital moment of $T_B$.
+>
+> Notation: $T_B$, B for Belinfante. PS (Problem 2.1) and the user's notes write it with a hat, $\widehat T^{\mu\nu}$, and Yu writes $\Theta^{\mu\nu}$ (eq. (1.272), the Belinfante–Rosenfeld tensor); here the hat is reserved for quantum operators.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, "Belinfante: symmetrizing T with the spin current", eq. (Belinfante) · Yu Exercise 1.10, eqs. (1.271)–(1.276)*
 
@@ -215,13 +217,13 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 >
 > **2. Its antisymmetric part in the last two indices is $\mathcal S$.** $K^{\lambda\nu\mu} = \frac12(\mathcal S^{\lambda\nu\mu} + \mathcal S^{\nu\mu\lambda} + \mathcal S^{\mu\nu\lambda})$. Subtracting, the second and third terms of $K^{\lambda\mu\nu}$ cancel against the third and second of $K^{\lambda\nu\mu}$: $K^{\lambda\mu\nu} - K^{\lambda\nu\mu} = \frac12(\mathcal S^{\lambda\mu\nu} - \mathcal S^{\lambda\nu\mu}) = \frac12(\mathcal S^{\lambda\mu\nu} + \mathcal S^{\lambda\mu\nu}) = \mathcal S^{\lambda\mu\nu}$.
 >
-> **3. Symmetry.** $\hat T^{\mu\nu} - \hat T^{\nu\mu} = (T^{\mu\nu} - T^{\nu\mu}) + \partial_\lambda(K^{\lambda\mu\nu} - K^{\lambda\nu\mu}) = -\partial_\lambda\mathcal S^{\lambda\mu\nu} + \partial_\lambda\mathcal S^{\lambda\mu\nu} = 0$, by [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]] (renamed $\nu\rho \to \mu\nu$, $\mu \to \lambda$) and step 2.
+> **3. Symmetry.** $T_B^{\mu\nu} - T_B^{\nu\mu} = (T^{\mu\nu} - T^{\nu\mu}) + \partial_\lambda(K^{\lambda\mu\nu} - K^{\lambda\nu\mu}) = -\partial_\lambda\mathcal S^{\lambda\mu\nu} + \partial_\lambda\mathcal S^{\lambda\mu\nu} = 0$, by [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]] (renamed $\nu\rho \to \mu\nu$, $\mu \to \lambda$) and step 2.
 >
-> **4. Conservation.** For each fixed $\nu$, $B^{\lambda\mu} \equiv K^{\lambda\mu\nu}$ is antisymmetric (step 1), so $\partial_\mu\partial_\lambda K^{\lambda\mu\nu} = 0$ identically ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], 1), and $\partial_\mu\hat T^{\mu\nu} = \partial_\mu T^{\mu\nu} = 0$.
+> **4. Conservation.** For each fixed $\nu$, $B^{\lambda\mu} \equiv K^{\lambda\mu\nu}$ is antisymmetric (step 1), so $\partial_\mu\partial_\lambda K^{\lambda\mu\nu} = 0$ identically ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], 1), and $\partial_\mu T_B^{\mu\nu} = \partial_\mu T^{\mu\nu} = 0$.
 >
 > **5. Same $P^\nu$.** Theorem §C1b.5.4, 2: $\int d^3x\,\partial_\lambda K^{\lambda0\nu} = \int d^3x\,\partial_iK^{i0\nu}$ (the $\lambda = 0$ term vanishes, $K^{00\nu} = 0$ by step 1), a surface term that vanishes with the fall-off.
 >
-> **6. The orbital current of $\hat T$.** As in steps 1–2 of [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^der-c1b-7-2|Derivation §C1b.7.2]], $\partial_\mu(x^\nu\hat T^{\mu\rho} - x^\rho\hat T^{\mu\nu}) = \hat T^{\nu\rho} - \hat T^{\rho\nu} = 0$ by steps 3–4.
+> **6. The orbital current of $T_B$.** As in steps 1–2 of [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^der-c1b-7-2|Derivation §C1b.7.2]], $\partial_\mu(x^\nu T_B^{\mu\rho} - x^\rho T_B^{\mu\nu}) = T_B^{\nu\rho} - T_B^{\rho\nu} = 0$ by steps 3–4.
 >
 > **7. Its charges.** The difference from $L^{\nu\rho}$ is $\int d^3x\,\bigl(x^\nu\partial_\lambda K^{\lambda0\rho} - x^\rho\partial_\lambda K^{\lambda0\nu}\bigr)$. The $\lambda = 0$ terms vanish ($K^{00\rho} = 0$). For $\lambda = i$, integrate by parts ([[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], on a ball $B_R$, then $R \to \infty$): $\int d^3x\,x^\nu\partial_iK^{i0\rho} = \oint(\dots) - \int d^3x\,(\partial_ix^\nu)K^{i0\rho} = -\int d^3x\,\delta^\nu{}_iK^{i0\rho}$, the surface term vanishing if $K$ falls off faster than $1/R^3$. For $\nu = 0$ this is $0 = -\int K^{00\rho}$; for $\nu$ spatial it is $-\int K^{\nu0\rho}$; in all cases $-\int d^3x\,K^{\nu0\rho}$. So the difference is $-\int d^3x\,(K^{\nu0\rho} - K^{\rho0\nu})$, and
 >
@@ -229,12 +231,12 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > K^{\nu0\rho} - K^{\rho0\nu} = \tfrac12\bigl(\mathcal S^{\nu0\rho} + \mathcal S^{0\rho\nu} + \mathcal S^{\rho0\nu}\bigr) - \tfrac12\bigl(\mathcal S^{\rho0\nu} + \mathcal S^{0\nu\rho} + \mathcal S^{\nu0\rho}\bigr) = \tfrac12\bigl(\mathcal S^{0\rho\nu} - \mathcal S^{0\nu\rho}\bigr) = -\mathcal S^{0\nu\rho} .
 > $$
 >
-> The difference is $+\int d^3x\,\mathcal S^{0\nu\rho} = S^{\nu\rho}$: the orbital charges of $\hat T$ are $L^{\nu\rho} + S^{\nu\rho} = J^{\nu\rho}$.
+> The difference is $+\int d^3x\,\mathcal S^{0\nu\rho} = S^{\nu\rho}$: the orbital charges of $T_B$ are $L^{\nu\rho} + S^{\nu\rho} = J^{\nu\rho}$.
 >
 > **What the derivation shows**
 > - Lorentz invariance (through Theorem §C1b.7.2) is what makes the antisymmetric part removable; the improvement freedom of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]] does the removal.
 > - ⚑ By-product: the fall-off needed is $1/R^2$ for $P^\nu$ and $1/R^3$ for $J^{\nu\rho}$ (steps 5, 7).
-> - Used next: the electromagnetic field ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]); the Dirac field gives $\hat T^{\mu\nu} = \frac i4\bar\psi\bigl(\gamma^\mu\overleftrightarrow{\partial^\nu} + \gamma^\nu\overleftrightarrow{\partial^\mu}\bigr)\psi$ (the user's notes; [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-9|Theorem §C5a.5.9]]).
+> - Used next: the electromagnetic field ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]); the Dirac field gives $T_B^{\mu\nu} = \frac i4\bar\psi\bigl(\gamma^\mu\overleftrightarrow{\partial^\nu} + \gamma^\nu\overleftrightarrow{\partial^\mu}\bigr)\psi$ (the user's notes; [[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-9|Theorem §C5a.5.9]]).
 
 ^der-c1b-7-4
 
@@ -252,17 +254,17 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 >
 > It is conserved, but it is not symmetric ($-F^{\mu\lambda}\partial^\nu A_\lambda$ depends on the order of $\mu\nu$) and not gauge invariant (under $A_\lambda \to A_\lambda + \partial_\lambda\chi$, $\partial^\nu A_\lambda$ gains $\partial^\nu\partial_\lambda\chi$).
 > 4. **Improvement.** Take $K^{\lambda\mu\nu} = F^{\mu\lambda}A^\nu$, antisymmetric in $\lambda\mu$ because $F$ is. By the product rule, $\partial_\lambda K^{\lambda\mu\nu} = (\partial_\lambda F^{\mu\lambda})A^\nu + F^{\mu\lambda}\partial_\lambda A^\nu$, and the source-free Maxwell equations $\partial_\lambda F^{\lambda\mu} = 0$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|Theorem §C1a.7.1]]) give $\partial_\lambda F^{\mu\lambda} = -\partial_\lambda F^{\lambda\mu} = 0$. On shell, $\partial_\lambda K^{\lambda\mu\nu} = F^{\mu\lambda}\partial_\lambda A^\nu$.
-> 5. **Combine.** $\hat T^{\mu\nu} = -F^{\mu\lambda}\bigl(\partial^\nu A_\lambda - \partial_\lambda A^\nu\bigr) + \frac14g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma}$, and $\partial^\nu A_\lambda - \partial_\lambda A^\nu = F^{\nu\sigma}g_{\sigma\lambda} = F^\nu{}_\lambda$:
+> 5. **Combine.** $T_B^{\mu\nu} = -F^{\mu\lambda}\bigl(\partial^\nu A_\lambda - \partial_\lambda A^\nu\bigr) + \frac14g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma}$, and $\partial^\nu A_\lambda - \partial_\lambda A^\nu = F^{\nu\sigma}g_{\sigma\lambda} = F^\nu{}_\lambda$:
 >
 > $$
-> \hat T^{\mu\nu} = -F^{\mu\lambda}F^\nu{}_\lambda + \tfrac14g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma} ,
+> T_B^{\mu\nu} = -F^{\mu\lambda}F^\nu{}_\lambda + \tfrac14g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma} ,
 > $$
 >
 > symmetric ($F^{\mu\lambda}F^\nu{}_\lambda = F^{\mu\lambda}g_{\lambda\sigma}F^{\nu\sigma}$ is unchanged by $\mu \leftrightarrow \nu$ after relabelling $\lambda \leftrightarrow \sigma$) and gauge invariant (built from $F$ alone).
 > 6. **Components.** With $F^{0i} = -E^i$, $F^{ij} = -\varepsilon_{ijk}B^k$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]]) and one metric sign per lowered spatial index: $F_{\rho\sigma}F^{\rho\sigma} = 2F_{0i}F^{0i} + F_{ij}F^{ij} = -2\mathbf E^2 + \varepsilon_{ijk}\varepsilon_{ijl}B^kB^l = 2(\mathbf B^2 - \mathbf E^2)$. Then $F^0{}_0 = 0$ and $F^0{}_i = -F^{0i}$ give $-F^{0\lambda}F^0{}_\lambda = F^{0i}F^{0i} = \mathbf E^2$, and $F^i{}_j = -F^{ij}$ gives $-F^{0\lambda}F^i{}_\lambda = F^{0j}F^{ij} = \varepsilon_{ijk}E^jB^k$:
 >
 > $$
-> \hat T^{00} = \mathbf E^2 + \tfrac12(\mathbf B^2 - \mathbf E^2) = \tfrac12\bigl(\mathbf E^2 + \mathbf B^2\bigr), \qquad \hat T^{0i} = (\mathbf E\times\mathbf B)^i :
+> T_B^{00} = \mathbf E^2 + \tfrac12(\mathbf B^2 - \mathbf E^2) = \tfrac12\bigl(\mathbf E^2 + \mathbf B^2\bigr), \qquad T_B^{0i} = (\mathbf E\times\mathbf B)^i :
 > $$
 >
 > the energy density and the Poynting vector (Heaviside–Lorentz units).
@@ -287,7 +289,7 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 ^rem-c1b-7-2
 
 > [!remark]- ★ Remark: Why there is a right symmetric tensor
-> The improved $\hat T^{\mu\nu}$ is not merely convenient. Defined as the response of the action to a change of the metric, $T_{\mu\nu} = \frac{2}{\sqrt{-g}}\frac{\delta S}{\delta g^{\mu\nu}}$, equivalently $T^{\mu\nu} = -\frac{2}{\sqrt{-g}}\frac{\delta S}{\delta g_{\mu\nu}}$, with $g = \operatorname{diag}(+,-,-,-)$ (for the scalar, $\delta\sqrt{-g} = -\frac12\sqrt{-g}\,g_{\mu\nu}\delta g^{\mu\nu}$ gives $T_{\mu\nu} = \partial_\mu\phi\,\partial_\nu\phi - g_{\mu\nu}\mathcal L$, with $T_{00} = \mathcal H > 0$; the user's notes write $T^{\mu\nu} = +\frac{2}{\sqrt{-g}}\frac{\delta S}{\delta g_{\mu\nu}}$, the mostly-plus form, which in this signature gives $-T^{\mu\nu}$), the energy–momentum tensor is symmetric by construction (as $g_{\mu\nu}$ is), gauge invariant, and the source of gravity; for scalars it coincides with the canonical tensor, and for fields with spin it reproduces Belinfante's (Yu calls it the tensor to put into Einstein's equations, Exercise 1.10). That is the deeper reason the canonical tensor of $A_\mu$ needed fixing while the scalar's did not. Gravity is Relativity level C (planned).
+> The improved $T_B^{\mu\nu}$ is not merely convenient. Defined as the response of the action to a change of the metric, $T_{\mu\nu} = \frac{2}{\sqrt{-g}}\frac{\delta S}{\delta g^{\mu\nu}}$, equivalently $T^{\mu\nu} = -\frac{2}{\sqrt{-g}}\frac{\delta S}{\delta g_{\mu\nu}}$, with $g = \operatorname{diag}(+,-,-,-)$ (for the scalar, $\delta\sqrt{-g} = -\frac12\sqrt{-g}\,g_{\mu\nu}\delta g^{\mu\nu}$ gives $T_{\mu\nu} = \partial_\mu\phi\,\partial_\nu\phi - g_{\mu\nu}\mathcal L$, with $T_{00} = \mathcal H > 0$; the user's notes write $T^{\mu\nu} = +\frac{2}{\sqrt{-g}}\frac{\delta S}{\delta g_{\mu\nu}}$, the mostly-plus form, which in this signature gives $-T^{\mu\nu}$), the energy–momentum tensor is symmetric by construction (as $g_{\mu\nu}$ is), gauge invariant, and the source of gravity; for scalars it coincides with the canonical tensor, and for fields with spin it reproduces Belinfante's (Yu calls it the tensor to put into Einstein's equations, Exercise 1.10). That is the deeper reason the canonical tensor of $A_\mu$ needed fixing while the scalar's did not. Gravity is Relativity level C (planned).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, end of "Belinfante: symmetrizing T with the spin current" · Yu Exercise 1.10*
 
@@ -300,14 +302,14 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 
 > [!caution] Caution: Notation in Yu and in the conventions table
 > - Yu writes the field's Lorentz transformation as $\Phi'_a(x') = \bigl(\delta_{ab} - \frac i2\omega_{\mu\nu}(I^{\mu\nu})_{ab}\bigr)\Phi_b(x)$ (eq. (1.230)), so his generator matrices are $I^{\mu\nu} = iS^{\mu\nu}$; his spin term $-i\,\pi_a(I^{\nu\rho})_{ab}\Phi_b$ is $\mathcal S^{\nu\rho}$ here, and his $J^{\mu\nu\rho}$ (eq. (1.238)) is $\mathcal M^{\mu\nu\rho}$.
-> - Yu's Belinfante–Rosenfeld tensor $\Theta^{\mu\nu} = T^{\mu\nu} + \frac12\partial_\rho(S^{\mu\nu\rho} + S^{\nu\mu\rho} - S^{\rho\nu\mu})$ (eq. (1.272)), with $S^{\mu\nu\rho} = \mathcal S^{\mu\nu\rho}$ (derivative index first), is $\hat T^{\mu\nu}$: rename $\lambda \to \rho$ in $\partial_\lambda K^{\lambda\mu\nu}$ and use $-\mathcal S^{\rho\nu\mu} = \mathcal S^{\rho\mu\nu}$.
+> - Yu's Belinfante–Rosenfeld tensor $\Theta^{\mu\nu} = T^{\mu\nu} + \frac12\partial_\rho(S^{\mu\nu\rho} + S^{\nu\mu\rho} - S^{\rho\nu\mu})$ (eq. (1.272)), with $S^{\mu\nu\rho} = \mathcal S^{\mu\nu\rho}$ (derivative index first), is $T_B^{\mu\nu}$: rename $\lambda \to \rho$ in $\partial_\lambda K^{\lambda\mu\nu}$ and use $-\mathcal S^{\rho\nu\mu} = \mathcal S^{\rho\mu\nu}$.
 > - Yu reads Lorentz transformations passively, the lecture actively ([[Larsen PHY 513]]); the formulas in $\omega_{\mu\nu}$ agree.
 > - The boost charge here is $K^i \equiv J^{i0} = \int x^i\mathcal H - tP^i$ (Yu's $L^{i0}$). The conventions table's "boost generator $K^i = J^{0i}$" refers to the generators of Lorentz transformations ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]]), not to these Noether charges; how the charges represent the generators on the Hilbert space, with signs and factors of $i$, is [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-13|Theorem §C3.5.13]]; the boost generator is $J^{0i} = -K^i$ ([[§C3.5 Quantum Poincaré Transformations#^cau-c3-5-1|§C3.5, Caution: Signs and names across the sources]]).
 
 ^cau-c1b-7-1
 
 > [!remark]- Connections
-> - Poynting's theorem ([[§B9.1 Charge, Energy and Poynting's Theorem#^thm-b9-1-2|EM Theorem §B9.1.2]]) is the $\nu = 0$ component of $\partial_\mu\hat T^{\mu\nu} = 0$ for the free field: $\hat T^{00}$ and $\hat T^{0i}$ are the energy density and Poynting vector of [[§B9.1 Charge, Energy and Poynting's Theorem#^def-b9-1-1|EM Def. §B9.1.1]] in Heaviside–Lorentz units. The $\nu = i$ components are momentum conservation ([[§B9.2 Momentum and Angular Momentum of Fields#^thm-b9-2-2|EM Theorem §B9.2.2]]), with $\hat T^{ij} = -(E^iE^j - \frac12\delta_{ij}\mathbf E^2) - (B^iB^j - \frac12\delta_{ij}\mathbf B^2)$ minus the Maxwell stress tensor ([[§B9.2 Momentum and Angular Momentum of Fields#^def-b9-2-1|EM Def. §B9.2.1]]), i.e. the momentum flux of [[§B9.2 Momentum and Angular Momentum of Fields#^cau-b9-2-1|EM Caution: Stress tensor or momentum flux]]. That the Poynting vector is both energy flux and momentum density is the symmetry $\hat T^{0i} = \hat T^{i0}$.
+> - Poynting's theorem ([[§B9.1 Charge, Energy and Poynting's Theorem#^thm-b9-1-2|EM Theorem §B9.1.2]]) is the $\nu = 0$ component of $\partial_\mu T_B^{\mu\nu} = 0$ for the free field: $T_B^{00}$ and $T_B^{0i}$ are the energy density and Poynting vector of [[§B9.1 Charge, Energy and Poynting's Theorem#^def-b9-1-1|EM Def. §B9.1.1]] in Heaviside–Lorentz units. The $\nu = i$ components are momentum conservation ([[§B9.2 Momentum and Angular Momentum of Fields#^thm-b9-2-2|EM Theorem §B9.2.2]]), with $T_B^{ij} = -(E^iE^j - \frac12\delta_{ij}\mathbf E^2) - (B^iB^j - \frac12\delta_{ij}\mathbf B^2)$ minus the Maxwell stress tensor ([[§B9.2 Momentum and Angular Momentum of Fields#^def-b9-2-1|EM Def. §B9.2.1]]), i.e. the momentum flux of [[§B9.2 Momentum and Angular Momentum of Fields#^cau-b9-2-1|EM Caution: Stress tensor or momentum flux]]. That the Poynting vector is both energy flux and momentum density is the symmetry $T_B^{0i} = T_B^{i0}$.
 > - The spin part $\mathcal S$ is zero for scalars, the photon's spin for $A_\mu$: $\mathcal S^{\lambda\mu\nu} = F^{\lambda\nu}A^\mu - F^{\lambda\mu}A^\nu$ and $\mathbf S = \int d^3x\,\mathbf E\times\mathbf A$ ([[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-4|Theorem §C4.1.4]], [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-5|Theorem §C4.1.5]]; orbital part and total [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-6|Theorem §C4.1.6]]), not gauge invariant by itself ([[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-13|Theorem §C4.6.13]]); quantized, it gives spin one and the helicities of the massive quanta ([[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-12|Theorem §C4.5.12]], agreeing with [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-8|Theorem §C4.5.8]]; not conserved alone, [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-11|Theorem §C4.5.11]]) and the photon helicities $\pm1$ ([[§C4.8 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-8-11|Theorem §C4.8.11]], agreeing with [[§C4.8 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-8-8|Theorem §C4.8.8]]) and the Dirac spin $\frac12$ for $\psi$ ([[§C5a.5 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-5-8|Theorem §C5a.5.8]]; its quanta: [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]]); the decomposition $\mathbf J = \mathbf L + \mathbf S$ of quantum mechanics ([[§C5.1 Rotations and the Angular-Momentum Commutation Relations|QM §C5.1]]) is its quantum shadow.
 > - The six charges $J^{\nu\rho}$ carry the same index structure and antisymmetry as the Lorentz generators [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]]; their algebra with $P^\nu$ is the Poincaré algebra ([[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-5|Theorem §C3.5.5]]).
 > - The ★ dilatation current and the trace of $T$ connect to the mass dimension of couplings ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]): a theory with no dimensionful parameter is classically scale invariant.

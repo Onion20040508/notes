@@ -35,7 +35,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > A field $\hat\phi$ and its adjoint $\hat\phi^\dagger$, treated as independent canonical fields, with
 >
 > $$
-> \mathcal L = \partial_\mu\phi^\dagger\,\partial^\mu\phi - m^2\phi^\dagger\phi, \qquad \hat\pi = \frac{\partial\mathcal L}{\partial\dot\phi} = \dot{\hat\phi}^\dagger, \quad \hat\pi^\dagger = \dot{\hat\phi}, \qquad \hat H = \int d^3x\,\bigl(\hat\pi^\dagger\hat\pi + \nabla\hat\phi^\dagger\cdot\nabla\hat\phi + m^2\hat\phi^\dagger\hat\phi\bigr) ,
+> \mathcal L = \partial_\mu\phi^\dagger\,\partial^\mu\phi - m^2\phi^\dagger\phi, \qquad \pi = \frac{\partial\mathcal L}{\partial\dot\phi} = \dot\phi^\dagger \;\to\; \hat\pi = \dot{\hat\phi}^\dagger, \quad \hat\pi^\dagger = \dot{\hat\phi}, \qquad \hat H = \int d^3x\,\bigl(\hat\pi^\dagger\hat\pi + \nabla\hat\phi^\dagger\cdot\nabla\hat\phi + m^2\hat\phi^\dagger\hat\phi\bigr) ,
 > $$
 >
 > quantized by [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]: $[\hat\phi(\mathbf x), \hat\pi(\mathbf y)] = [\hat\phi^\dagger(\mathbf x), \hat\pi^\dagger(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$, all other equal-time commutators zero, including $[\hat\phi, \hat\pi^\dagger]$ and $[\hat\phi, \hat\phi^\dagger]$.

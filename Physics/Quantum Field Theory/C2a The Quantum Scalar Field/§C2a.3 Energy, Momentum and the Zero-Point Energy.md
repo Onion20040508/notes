@@ -224,7 +224,7 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 >
 > ⚑ By-product: the ultraviolet divergence is quartic, dominated by short wavelengths, and does not depend on $m$ at leading order → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|Remark: Why the zero-point energy is dropped]].
 >
-> **6. A c-number.** $E_0$ multiplies the identity operator, so $[E_0, X] = 0$ for every $X$: it shifts all energies equally and drops out of every commutator, in particular out of the Heisenberg equations ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]]).
+> **6. A c-number.** $E_0$ multiplies the identity operator, so $[E_0, \hat X] = 0$ for every $\hat X$: it shifts all energies equally and drops out of every commutator, in particular out of the Heisenberg equations ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]]).
 >
 > **What the derivation shows**
 > - The zero-point energy is $\frac12E_{\mathbf p}$ per mode; its two divergences are the infinite volume ($\delta^3(\mathbf 0)$) and the unbounded momenta.
@@ -300,13 +300,13 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 *Procedure:* [[P1 Canonical Quantization#^p1-7|P1, step 7]]
 
 > [!definition] Definition §C2a.3.1: Normal Ordering
-> The **normal-ordered** product $:\!X\!:$ of creation and annihilation operators is the product rearranged with all creation operators to the left of all annihilation operators, as if they commuted, e.g. $:\!\hat a_{\mathbf p}\hat a^\dagger_{\mathbf q}\!: = \hat a^\dagger_{\mathbf q}\hat a_{\mathbf p}$; it is extended linearly to products of fields, $:\!\hat\phi(x)\hat\phi(y)\!:$. For the free field, the Hamiltonian is taken normal ordered, which removes the zero-point energy $E_0$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]:
+> The **normal-ordered** product $:\!\hat X\!:$ of creation and annihilation operators is the product rearranged with all creation operators to the left of all annihilation operators, as if they commuted, e.g. $:\!\hat a_{\mathbf p}\hat a^\dagger_{\mathbf q}\!: = \hat a^\dagger_{\mathbf q}\hat a_{\mathbf p}$; it is extended linearly to products of fields, $:\!\hat\phi(x)\hat\phi(y)\!:$. For the free field, the Hamiltonian is taken normal ordered, which removes the zero-point energy $E_0$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]:
 >
 > $$
 > :\!\hat H\!: = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p}, \qquad :\!\hat H\!:|0\rangle = 0 .
 > $$
 >
-> *Notation:* the colons $:\!X\!:$ are those of the user's PHY 513 notes (Ch. 6, $\hat\phi(x)\hat\phi(y) = \,:\!\hat\phi(x)\hat\phi(y)\!:\, + D_W(x - y)$); PS (§4.3) and Yu (§6.3.1, "normal product") write $N(X)$, and the operation is also called Wick ordering. These notes use the colons only.
+> *Notation:* the colons $:\!\hat X\!:$ are those of the user's PHY 513 notes (Ch. 6, $\hat\phi(x)\hat\phi(y) = \,:\!\hat\phi(x)\hat\phi(y)\!:\, + D_W(x - y)$); PS (§4.3) and Yu (§6.3.1, "normal product") write $N(\hat X)$, and the operation is also called Wick ordering. These notes use the colons only.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6 (Caution "The zero-point energy") · PHY 513 Lecture 4, Part C · PS §2.3, after eq. (2.31)*
 
@@ -379,7 +379,7 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 ^thm-c2a-3-7
 
 > [!derivation]- Derivation
-> **1. Drop the constant.** $E_0$ is a c-number ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), so $[\hat H, X] = \bigl[\int\frac{d^3q}{(2\pi)^3}E_{\mathbf q}\hat a^\dagger_{\mathbf q}\hat a_{\mathbf q}, X\bigr]$; the integration variable is renamed $\mathbf q$ to keep it distinct from the label $\mathbf p$.
+> **1. Drop the constant.** $E_0$ is a c-number ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), so $[\hat H, \hat X] = \bigl[\int\frac{d^3q}{(2\pi)^3}E_{\mathbf q}\hat a^\dagger_{\mathbf q}\hat a_{\mathbf q}, \hat X\bigr]$; the integration variable is renamed $\mathbf q$ to keep it distinct from the label $\mathbf p$.
 >
 > **2. One number density with a creator.** $[\hat a^\dagger_{\mathbf q}\hat a_{\mathbf q}, \hat a^\dagger_{\mathbf p}] = \hat a^\dagger_{\mathbf q}[\hat a_{\mathbf q}, \hat a^\dagger_{\mathbf p}] + [\hat a^\dagger_{\mathbf q}, \hat a^\dagger_{\mathbf p}]\hat a_{\mathbf q} = \hat a^\dagger_{\mathbf q}(2\pi)^3\delta^3(\mathbf q - \mathbf p) + 0$.
 >
