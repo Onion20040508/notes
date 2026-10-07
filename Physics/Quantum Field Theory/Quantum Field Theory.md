@@ -9,7 +9,7 @@ tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
 
-Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen, Fall 2026; textbook Peskin & Schroeder). Chapters follow Yu Zhao-Huan's lecture notes (余钊焕《量子场论讲义》), whose chapter numbers they keep: fields are organized by spin after the Poincaré group, and interactions are treated once for all fields. Each concept has one home: statements are short boxes, derivations are folded under them, explanations are titled remarks, and hidden connections are collected in each note's Connections. Multi-step procedures have their own notes in Procedures/, linked from every place they are carried out. Statements are marked by layer: *principles* (postulated), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealized systems). ★ marks material beyond the PHY 513 syllabus; a *draft* banner marks syllabus topics written ahead of the lectures. Relativity is in [[Relativity]], one-particle quantum mechanics in [[Quantum Mechanics]]. Procedures: [[P1 Canonical Quantization]], [[P2 Green's Functions by Contour Integration]]. Reference card: [[Scalar Field Card]]. The course order, lecture by lecture, is in [[PHY 513 Course Log]]; conventions in [[Larsen PHY 513]]. Quantum operators carry a hat ($\hat\phi$, $\hat a_{\mathbf p}$, $\hat H$); classical fields and c-numbers do not, so the hat marks the step of quantization ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|§C2a.1, Caution: Eₚ, not ωₚ; π, not Π]]).
+Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen, Fall 2026; textbook Peskin & Schroeder). Chapters follow Yu Zhao-Huan's lecture notes (余钊焕《量子场论讲义》), whose chapter numbers they keep: fields are organized by spin after the Poincaré group, and interactions are treated once for all fields. Each concept has one home: statements are short boxes, derivations are folded under them, explanations are titled remarks, and hidden connections are collected in each note's Connections. Multi-step procedures have their own notes in Procedures/, linked from every place they are carried out. Statements are marked by layer: *principles* (postulated), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealized systems). ★ marks material beyond the PHY 513 syllabus; a *draft* banner marks syllabus topics written ahead of the lectures. Relativity is in [[Relativity]], one-particle quantum mechanics in [[Quantum Mechanics]]. Procedures: [[P1 Canonical Quantization]], [[P2 Green's Functions by Contour Integration]]. Reference card: [[Scalar Field Card]]. The course order, lecture by lecture, is in [[PHY 513 Course Log]]; conventions in [[Larsen PHY 513]].
 
 ## Level C — graduate
 - [[· C1a Preliminaries]]
@@ -51,10 +51,10 @@ graph TD
   C2a -->|93| C4
   C2b -->|61| C4
   C3 -->|67| C4
-  C1a -->|50| C5a
+  C1a -->|52| C5a
   C1b -->|80| C5a
   C2a -->|1| C5a
-  C3 -->|91| C5a
+  C3 -->|96| C5a
   C1b -->|26| C5b
   C2a -->|89| C5b
   C2b -->|117| C5b
@@ -70,7 +70,7 @@ graph TD
   C2b -.->|19| C1a
   C3 -.->|8| C1a
   C5a -.->|2| C1a
-  CA -.->|44| C1a
+  CA -.->|45| C1a
   C2a -.->|22| C1b
   C2b -.->|4| C1b
   C3 -.->|6| C1b
@@ -84,13 +84,13 @@ graph TD
   CA -.->|193| C2a
   CA -.->|429| C2b
   C4 -.->|5| C3
-  C5a -.->|19| C3
-  C5b -.->|1| C3
+  C5a -.->|21| C3
+  C5b -.->|2| C3
   CA -.->|11| C3
   C5a -.->|1| C4
   C5b -.->|9| C4
   CA -.->|150| C4
-  C5b -.->|32| C5a
+  C5b -.->|33| C5a
   CA -.->|7| C5a
   CA -.->|121| C5b
 ```

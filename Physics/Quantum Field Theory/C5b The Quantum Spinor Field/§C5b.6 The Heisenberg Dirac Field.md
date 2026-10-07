@@ -60,7 +60,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 > [!derivation]- Derivation
 > **1. An identity for a bilinear.** For any operators $A$, $B$, $C$: $[A, BC] = \{A, B\}C - B\{A, C\}$. Expand the right side: $ABC + BAC - BAC - BCA = ABC - BCA$.
 >
-> **2. Write $\hat H$ as a bilinear.** $\hat H = \int d^3y\,\hat\psi^\dagger_b(\mathbf y)\,\hat C_b(\mathbf y)$ with $\hat C_b \equiv (H_{\text{s.p.}}\hat\psi)_b = \sum_c\bigl[\gamma^0(-i\gamma^j\partial_j + m)\bigr]_{bc}\hat\psi_c$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-4|Def. §C5a.3.4]]), all at the common time $t$: a linear combination of the $\hat\psi_c(\mathbf y)$ and their spatial derivatives.
+> **2. Write $\hat H$ as a bilinear.** $\hat H = \int d^3y\,\hat\psi^\dagger_b(\mathbf y)\,\hat C_b(\mathbf y)$ with $\hat C_b \equiv (H_{\text{s.p.}}\hat\psi)_b = \sum_c\bigl[\gamma^0(-i\gamma^j\partial_j + m)\bigr]_{bc}\hat\psi_c$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]), all at the common time $t$: a linear combination of the $\hat\psi_c(\mathbf y)$ and their spatial derivatives.
 >
 > **3. The two anticommutators.** $\{\hat\psi_a(\mathbf x), \hat\psi^\dagger_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$. $\{\hat\psi_a(\mathbf x), \hat C_b(\mathbf y)\}$ is the same linear combination of $\{\hat\psi_a(\mathbf x), \hat\psi_c(\mathbf y)\}$ and of its $\mathbf y$-derivatives; since $\{\hat\psi_a(\mathbf x), \hat\psi_c(\mathbf y)\} = 0$ for *all* $\mathbf x$, $\mathbf y$, its derivatives vanish too. Dropped: the second term of Step 1. (Equal times only, as in [[§C2b.1 Heisenberg Fields#^cau-c2b-1-1|§C2b.1, Caution: Equal times only]].)
 >
@@ -75,7 +75,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 
 ^der-c5b-6-2
 
-*Uses:* [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-4|Def. §C5a.3.4]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]
+*Uses:* [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]
 
 > [!remark] Remark: The field equation does not choose the statistics
 > [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]] holds with commutators as well: $[\hat\psi_a, \hat\psi^\dagger_b\hat C_b] = [\hat\psi_a, \hat\psi^\dagger_b]\hat C_b + \hat\psi^\dagger_b[\hat\psi_a, \hat C_b] = \delta_{ab}\delta^3\,\hat C_b + 0$ with the provisional relations. The dynamics is the Dirac equation either way. What decides between commutators and anticommutators is the spectrum ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]) and causality ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]), not the equation of motion; this is why Lecture 10 could write down the mode expansion before saying which bracket its oscillators obey ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-1|§C5b.2, Remark: Reading the expansion]]).

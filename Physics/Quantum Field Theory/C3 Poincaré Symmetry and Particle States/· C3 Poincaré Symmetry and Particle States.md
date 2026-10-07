@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (74), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (19), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (91), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (74), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (21), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (96), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8)
 
 ## Sections
 - [[§C3.1 Groups, Algebras and Representations of Rotations]] — 
@@ -47,10 +47,11 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|§C3.3.3]] The Representations (½, 0) and (0, ½)
 - [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-4|§C3.3.4]] The Vector Representation Is (½, ½)
 - [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-5|§C3.3.5]] Rotation Content and the Sign of a 2π Rotation
-- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-6|§C3.3.6]] Tensor Products Add Each Copy Separately
-- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-7|§C3.3.7]] Parity Exchanges the Two Copies
-- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|§C3.3.8]] Complex Conjugation Exchanges the Two Copies
-- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|§C3.3.9]] No Finite-Dimensional Representation Is Unitary
+- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-6|§C3.3.6]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part
+- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-7|§C3.3.7]] Tensor Products Add Each Copy Separately
+- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|§C3.3.8]] Parity Exchanges the Two Copies
+- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|§C3.3.9]] Complex Conjugation Exchanges the Two Copies
+- [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-10|§C3.3.10]] No Finite-Dimensional Representation Is Unitary
 - [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-1|§C3.4.1]] The Orbital Generators Move the Argument
 - [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-2|§C3.4.2]] The Orbital Generators Obey the Lorentz Algebra
 - [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-3|§C3.4.3]] Orbital Plus Spin

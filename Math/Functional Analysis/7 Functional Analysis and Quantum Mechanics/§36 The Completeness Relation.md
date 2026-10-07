@@ -66,7 +66,7 @@ As for functionals (Lemma [[§35 Bras, Kets, and the Riesz Map#^lem-35-1|§35.1]
 
 > [!remark]- Connections
 > - Finite-dimensional version, $P_U = \sum_k |e_k\rangle\langle e_k|$: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|LADR 6.57]].
-> - Used in Quantum Field Theory: completeness of a spin basis of $\mathbb C^2$, $\sum_s\xi^s\xi^{s\dagger} = \mathbb 1$, behind the spin sums of Dirac spinors — [[§C5a.6 Plane-Wave Solutions#^def-c5a-6-3|QFT Def. §C5a.6.3]], [[§C5a.7 Normalization, Spin Sums and Helicity#^thm-c5a-7-7|QFT Theorem §C5a.7.7]].
+> - Used in Quantum Field Theory: completeness of a spin basis of $\mathbb C^2$, $\sum_s\xi^s\xi^{s\dagger} = \mathbb 1$, behind the spin sums of Dirac spinors — [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|QFT Def. §C5a.9.3]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|QFT Theorem §C5a.10.7]].
 
 > [!example] Example §36.1: Parity
 > For a particle in the symmetric box $[-1,1]$, the parity operator $(\Pi\psi)(x) = \psi(-x)$ has the even and odd states as its eigenspaces, with eigenvalues $+1$ and $-1$. By Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-7|§25.7]] these eigenspaces are closed and orthogonal, and $L^2[-1,1] = E \oplus O$. Writing $P_E$, $P_O$ for the orthogonal projections, $P_E + P_O = \mathbf{1}$ and $\Pi = P_E - P_O$: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.
