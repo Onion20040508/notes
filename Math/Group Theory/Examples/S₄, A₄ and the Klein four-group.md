@@ -4,7 +4,7 @@ type: example
 source: "[[Group Theory]]"
 tags: ["math493", "workhorse"]
 ---
-The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $12$), and the Klein four-group $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, which is normal in both. They are where small-case phenomena become interesting: $A_4$ has no subgroup of order $6$, so the converse of Lagrange fails; $A_4$ is the one $A_n$ with $n \geq 3$ that is not simple, because of $V$; and $S_4$ appears geometrically as the rotation group of the cube. The Klein group also appears as the unit group $U_8$, the first non-cyclic $U_n$. Its uses in MATH 493:
+The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $12$), and the Klein four-group $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, which is normal in both. They are where small-case phenomena become interesting: $A_4$ has no subgroup of order $6$, so the converse of Lagrange fails; $A_4$ is the one $A_n$ with $n \geq 3$ that is not simple, because of $K$; and $S_4$ appears geometrically as the rotation group of the cube. The Klein group also appears as the unit group $U_8$, the first non-cyclic $U_n$. Its uses in MATH 493:
 
 - $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ ([[§16 Isomorphisms#^prop-16-3|§16]])
 - $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$: the Klein group as a unit group ([[§16 Isomorphisms#^prop-16-8|§16]])
@@ -14,20 +14,20 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 - The rotation group of the cube is $S_4$ ([[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|§32]])
 - Conjugacy classes of $S_4$ by cycle type, of sizes $1, 6, 3, 8, 6$ ([[§33 Conjugacy Classes#^ex-33-2|§33]])
 - The class equation $24 = 1 + 6 + 3 + 8 + 6$ ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|§34]])
-- The normal subgroups of $S_4$: $\{e\}$, $V$, $A_4$, $S_4$ ([[§39 Sources of Normal Subgroups#^ex-39-3|§39]])
-- The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$ ([[§43 Simple Groups#^prop-43-10|§43]])
+- The normal subgroups of $S_4$: $\{e\}$, $K$, $A_4$, $S_4$ ([[§39 Sources of Normal Subgroups#^ex-39-3|§39]])
+- The pair-partition homomorphism $S_4 \to S_3$ has kernel $K$ ([[§43 Simple Groups#^prop-43-10|§43]])
 - $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ ([[§43 Simple Groups#^ex-43-1|§43]])
-- Why the simplicity proof needs $n \geq 5$: $V$ is normal in $A_4$ ([[§43 Simple Groups#^rem-43-7|§43]])
+- Why the simplicity proof needs $n \geq 5$: $K$ is normal in $A_4$ ([[§43 Simple Groups#^rem-43-7|§43]])
 - $A_4$ is the exception among the $A_n$ with $n \geq 3$: it is not simple ([[§43 Simple Groups#^cor-43-11|§43]])
 - $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
-- $S_4/V \cong S_3$ by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
-- The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45]])
-- $S_4$ is solvable, through $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$ ([[§49 Solvable Groups#^prop-49-1|§49]])
-- The derived series $S_4 \trianglerighteq A_4 \trianglerighteq V \trianglerighteq \{e\}$, with $(1\,2)(3\,4)$ a commutator in $A_4$ ([[§50 The Derived Series#^ex-50-1|§50]])
+- $S_4/K \cong S_3$ by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
+- The six subgroups of $S_4$ containing $K$, by the Correspondence Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45]])
+- $S_4$ is solvable, through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$ ([[§48 Solvable Groups#^prop-48-1|§49]])
+- The derived series $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$, with $(1\,2)(3\,4)$ a commutator in $A_4$ ([[§49 The Derived Series#^ex-49-1|§50]])
 
 ## Chapter by chapter
 
-Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group V|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group V|Chapter 8]] · [[§48 S₃, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] ($A_4$ only, in the $A_n$ part) · [[§51 S₃, S₄ and Aₙ#S₄, A₄ and the Klein Four-Group V|Chapter 10]].
+Revisit parts for $S_4$, $A_4$ and $K$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group K|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group K|Chapter 8]] · [[§50 S₃, S₄, Aₙ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 9]].
 
 ## $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$
 ![[§16 Isomorphisms#^prop-16-3]]
@@ -53,16 +53,16 @@ Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups
 ## The class equation $24 = 1 + 6 + 3 + 8 + 6$
 ![[§34 Conjugation as an Action and the Class Equation#^ex-34-1]]
 
-## The normal subgroups of $S_4$: $\{e\}$, $V$, $A_4$, $S_4$
+## The normal subgroups of $S_4$: $\{e\}$, $K$, $A_4$, $S_4$
 ![[§39 Sources of Normal Subgroups#^ex-39-3]]
 
-## The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$
+## The pair-partition homomorphism $S_4 \to S_3$ has kernel $K$
 ![[§43 Simple Groups#^prop-43-10]]
 
 ## $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$
 ![[§43 Simple Groups#^ex-43-1]]
 
-## Why the simplicity proof needs $n \geq 5$: $V$ is normal in $A_4$
+## Why the simplicity proof needs $n \geq 5$: $K$ is normal in $A_4$
 ![[§43 Simple Groups#^rem-43-7]]
 
 ## $A_4$ is the exception among the $A_n$ with $n \geq 3$: it is not simple
@@ -71,14 +71,14 @@ Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups
 ## $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple
 ![[§43 Simple Groups#^ex-43-3]]
 
-## $S_4/V \cong S_3$ by the Second Isomorphism Theorem
+## $S_4/K \cong S_3$ by the Second Isomorphism Theorem
 ![[§45 S₃, S₄, A₄ and A₅#^ex-45-1]]
 
-## The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem
+## The six subgroups of $S_4$ containing $K$, by the Correspondence Theorem
 ![[§45 S₃, S₄, A₄ and A₅#^ex-45-2]]
 
-## $S_4$ is solvable, through $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$
-![[§49 Solvable Groups#^prop-49-1]]
+## $S_4$ is solvable, through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$
+![[§48 Solvable Groups#^prop-48-1]]
 
-## The derived series $S_4 \trianglerighteq A_4 \trianglerighteq V \trianglerighteq \{e\}$
-![[§50 The Derived Series#^ex-50-1]]
+## The derived series $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$
+![[§49 The Derived Series#^ex-49-1]]

@@ -5,7 +5,7 @@ chapter: 9
 section: 46
 tags: [group-theory, math493]
 ---
-← [[§45 S₃, S₄, A₄ and A₅]] · ↑ [[· 9 Characters and Commutators]] · [[§47 Commutators]] →
+← [[§45 S₃, S₄, A₄ and A₅]] · ↑ [[· 9 Characters, Commutators and Solvable Groups]] · [[§47 Commutators]] →
 
 *Reference: Not treated in Pinter (characters in this sense).*
 

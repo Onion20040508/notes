@@ -235,7 +235,7 @@ These notes follow the course, and the course studies groups through two familie
     link/.style={-{Stealth[length=2mm]}, draw=black!40, thick},
     bridge/.style={font=\scriptsize, text=black!55, fill=white, inner sep=1pt},
   ]
-  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}, -10.75/{Ch.\,10}, -13.0/{Ch.\,11}}
+  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}, -10.75/{Ch.\,9}, -13.0/{Ch.\,10}}
     \node[rotate=90, font=\scriptsize\bfseries, text=black!55] at (-7.3,\y) {\t};
   \foreach \y in {-0.75,-2.25,-3.75,-5.25,-6.75,-8.25,-9.75,-12.1}
     \draw[black!18, dashed] (-7.0,\y) -- (7.25,\y);
@@ -252,7 +252,7 @@ These notes follow the course, and the course studies groups through two familie
   \node[shared] (norm) at (4.3,-7.5) {\textbf{Normal} \ref*{sec:multiplying-cosets}--\ref*{sec:normal-sources}\\ index two, kernels,\\ unions of classes};
   \node[shared] (quot) at (4.3,-9.0) {\textbf{Quotients} \ref*{sec:quotient}--\ref*{sec:simple}\\ $G/\operatorname{Ker} \cong \operatorname{Im}$, simple groups};
   \node[shared] (char) at (-2.2,-9.0) {\textbf{Characters} \ref*{sec:characters}--\ref*{sec:commutators}\\ homomorphisms to abelian groups};
-  \node[shared] (solv) at (4.3,-10.5) {\textbf{Solvable} \ref*{sec:solvable}--\ref*{sec:rev-ch10}\\ abelian pieces, derived series};
+  \node[shared] (solv) at (4.3,-10.5) {\textbf{Solvable} \ref*{sec:solvable}--\ref*{sec:rev-ch9}\\ abelian pieces, derived series};
   \node[box, draw=orange!80!black, fill=orange!4, text width=4.6cm] (syl) at (-4.3,-13.0) {\textbf{Sylow} \ref*{sec:p-groups}--\ref*{sec:sylow-theorems}\\ $p$-groups, Sylow's theorems};
 
   \draw[link] (found) -- node[bridge]{subgroups of $\mathbb{Z}$ are $n\mathbb{Z}$} (num);
@@ -276,7 +276,7 @@ These notes follow the course, and the course studies groups through two familie
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~10 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them. Chapter~11 collects the Sylow theorems of Worksheet~10, on subgroups of prime-power order, ahead of the lecture.
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them. Chapter~10 collects the Sylow theorems of Worksheet~10, on subgroups of prime-power order, ahead of the lecture.
 
 \chapter*{Conventions and Notation}
 \addcontentsline{toc}{chapter}{Conventions and Notation}
@@ -3351,13 +3351,13 @@ Example~\ref{ex:seeing-permutations} turns the rotations of a triangle into $A_3
 
 \textit{$S_3$ elsewhere: previous, Chapter~5 (\ref{sec:rev-ch5-s3}); next, Chapter~7 (\ref{sec:rev-ch7-s3}).}
 
-\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $V$}{S₄, A₄ and the Klein Four-Group V}}\label{sec:rev-ch6-s4}
+\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $K$}{S₄, A₄ and the Klein Four-Group K}}\label{sec:rev-ch6-s4}
 
 $A_4$ refutes the converse of Lagrange: $6$ divides $|A_4| = 12$, but $A_4$ has no subgroup of order $6$. The class sizes $1, 6, 3, 8, 6$ of $S_4$ are announced as an instance of orbit--stabilizer, and $S_4$ turns out to be the rotation group of the cube. The Klein four-group, met in Chapter~4 as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, is one of the two groups of order $4$.
 
 Example~\ref{ex:converse-lagrange-fails-a4} gives the $A_4$ counterexample; the remark \emph{A Classification, for Once} (\ref{sec:lagrange}; in the $\mathbb{Z}/n\mathbb{Z}$ part) names the two groups of order $4$; the remark \emph{Where Orbit--Stabilizer Has Already Appeared} (\ref{sec:orbit-stabilizer}) gives the class sizes of $S_4$; Theorem~\ref{thm:rotation-group-cube-s4} and the remark \emph{The Cleanest Description} above identify the rotation group of the cube with $S_4$.
 
-\textit{$S_4$, $A_4$ and $V$ elsewhere: first appearance in the course; next, Chapter~7 (\ref{sec:rev-ch7-s4}).}
+\textit{$S_4$, $A_4$ and $K$ elsewhere: first appearance in the course; next, Chapter~7 (\ref{sec:rev-ch7-s4}).}
 
 \subsection{\texorpdfstring{$\mathbb{Z}/n\mathbb{Z}$ and $U_n$}{ℤ/nℤ and Uₙ}}\label{sec:rev-ch6-zn}
 
@@ -3659,13 +3659,13 @@ Example~\ref{ex:conjugacy-classes-s3-s4} lists the classes; Example~\ref{ex:clas
 
 \textit{$S_3$ elsewhere: previous, Chapter~6 (\ref{sec:rev-ch6-s3}); next, Chapter~8 (\ref{sec:rev-ch8-s3}).}
 
-\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $V$}{S₄, A₄ and the Klein Four-Group V}}\label{sec:rev-ch7-s4}
+\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $K$}{S₄, A₄ and the Klein Four-Group K}}\label{sec:rev-ch7-s4}
 
 $S_4$ has five cycle types, giving classes of sizes $1, 6, 3, 8, 6$ and the class equation $24 = 1 + 6 + 3 + 8 + 6$; its center is trivial too. Chapter~8 reads its normal subgroups off these sizes.
 
 Examples~\ref{ex:conjugacy-classes-s3-s4} and~\ref{ex:class-equations-s3-s4} (in the $S_3$ part) treat $S_4$ alongside $S_3$.
 
-\textit{$S_4$, $A_4$ and $V$ elsewhere: previous, Chapter~6 (\ref{sec:rev-ch6-s4}); next, Chapter~8 (\ref{sec:rev-ch8-s4}).}
+\textit{$S_4$, $A_4$ and $K$ elsewhere: previous, Chapter~6 (\ref{sec:rev-ch6-s4}); next, Chapter~8 (\ref{sec:rev-ch8-s4}).}
 
 \subsection{\texorpdfstring{$GL_n$, $SL_n$ and $O(n)$}{GLₙ, SLₙ and O(n)}}\label{sec:rev-ch7-gl}
 
@@ -3903,8 +3903,24 @@ A subgroup $H$ of $G$ is normal if and only if $H$ is a union of conjugacy class
 $H$ is normal iff $ghg^{-1} \in H$ for all $g \in G$, $h \in H$, iff for each $h \in H$ the whole orbit $\operatorname{Conj}(h) = \{ghg^{-1} : g \in G\}$ of $h$ under the conjugation action lies in $H$. A subset containing, with each of its points, that point's entire orbit is exactly a union of orbits.
 \end{proof}
 
+\begin{defbox}[{The Klein Four-Group $K$ (lecture 9/30)}]\label{def:klein-four-group}
+The \textbf{Klein four-group} is the subset
+\[ K = \{e,\ (1\,2)(3\,4),\ (1\,3)(2\,4),\ (1\,4)(2\,3)\} \subseteq S_4, \]
+the identity together with the three products of two disjoint transpositions. Speyer writes $K$, ``for Klein''; it is also often written $V$, for the German \emph{Vierergruppe} (four-group).
+\end{defbox}
+
+\begin{propbox}[{$K$ Is an Abelian Subgroup of $S_4$ (not from class)}]\label{prop:klein-four-group}
+$K$ is an abelian subgroup of $S_4$, isomorphic to $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
+\end{propbox}
+
+\begin{proof}
+Each non-identity element of $K$ is a product of two disjoint transpositions, which commute, so it squares to $e$ and is its own inverse. The product of two distinct non-identity elements, in either order, is the third: for example $(1\,2)(3\,4) \cdot (1\,3)(2\,4) = (1\,4)(2\,3)$, and the other products are the same computation with the points relabelled. So $K$ contains $e$ and is closed under products and inverses, hence is a subgroup (Definition~\ref{def:subgroup}), and it is abelian. The bijection $e \mapsto (0,0)$, $(1\,2)(3\,4) \mapsto (1,0)$, $(1\,3)(2\,4) \mapsto (0,1)$, $(1\,4)(2\,3) \mapsto (1,1)$ onto $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ (Definition~\ref{def:direct-products}) is a homomorphism, since there too every element is its own inverse and the sum of two distinct nonzero elements is the third.
+\end{proof}
+
+So $K \cong U_8$ (Proposition~\ref{prop:u8-u7}): the Klein four-group met in Chapter~4 as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and the subgroup $K$ of $S_4$ are the same group up to isomorphism. Lecture named $K$ on 9/30, as the kernel of the pair-partition homomorphism $S_4 \to S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); the notes use it from the next example on.
+
 \begin{exbox}[{Normal Subgroups of $S_3$ and $S_4$}]\label{ex:normal-subgroups-s3-s4}
-(For $S_3$, compare the lattice in Figure~\ref{fig:lattice-s3}.) In the language of Chapter~\ref{ch:conjugacy}: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits --- stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles (\ref{sec:conjugation-action}), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
+(For $S_3$, compare the lattice in Figure~\ref{fig:lattice-s3}.) In the language of Chapter~\ref{ch:conjugacy}: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits --- stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles (\ref{sec:conjugation-action}), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $K$ of Definition~\ref{def:klein-four-group}, $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
 \end{exbox}
 
 \begin{propbox}[{Normal Subgroups of $GL_2(\mathbb{R})$ (WS 6.3)}]\label{prop:normal-subgroups-gl2-r}
@@ -4243,7 +4259,7 @@ The lecture's theme: these theorems are about how to work in a quotient that did
 Part (3) with $A_1 = K$ and $A_2 = G$ is the Third Isomorphism Theorem, $G/K \cong (G/N)/(K/N)$, Theorem~\ref{thm:third-isomorphism-theorem}, just above. Worksheet 8 calls the correspondence theorem the ``third/fourth isomorphism theorem''; textbooks vary, and many call it the correspondence (or lattice) theorem and number it fourth. Note also that the worksheet's ``$N \subset A$'' allows $A = N$, which corresponds to the trivial subgroup of $G/N$.
 \end{rembox}
 
-Example~\ref{ex:correspondence-s4-v}, in the $S_4$ part of \ref{sec:rev-ch8}, lists the six subgroups of $S_4$ containing $V$.
+Example~\ref{ex:correspondence-s4-v}, in the $S_4$ part of \ref{sec:rev-ch8}, lists the six subgroups of $S_4$ containing $K$.
 
 \section{Simple Groups}\label{sec:simple}
 
@@ -4395,7 +4411,7 @@ The handout posted for the cases left open in lecture proves the theorem along t
     $3+3$ & $[(a\,b\,c)(d\,e\,f)]\,[(c\,b\,a)(d\,e\,f)] = (f\,e\,d)$ & $\sigma = (a\,d)(b\,e\,c\,f)$
     \end{tabular}
     \end{center}
-    Each $\sigma$ is even, so the second factor is an $A_n$-conjugate of the first and lies in $N$; so does its inverse. In the $3+3$ row the two $3$-cycles on $\{a, b, c\}$ cancel and $(d\,e\,f)^2 = (f\,e\,d)$, so this case reaches a $3$-cycle directly, without the detour through a $5$-cycle taken above. The $2+2$ row needs a fifth point $e$, so $n \geq 5$: in $A_4$ no $3$-cycle is a product of double transpositions, since these lie in the subgroup $V$ (Why $n \geq 5$, \ref{rem:why-n-ge-5}).
+    Each $\sigma$ is even, so the second factor is an $A_n$-conjugate of the first and lies in $N$; so does its inverse. In the $3+3$ row the two $3$-cycles on $\{a, b, c\}$ cancel and $(d\,e\,f)^2 = (f\,e\,d)$, so this case reaches a $3$-cycle directly, without the detour through a $5$-cycle taken above. The $2+2$ row needs a fifth point $e$, so $n \geq 5$: in $A_4$ no $3$-cycle is a product of double transpositions, since these lie in the subgroup $K$ (Why $n \geq 5$, \ref{rem:why-n-ge-5}).
     \item \emph{Step (5)} is the lemma above ($3$-Cycles Are Conjugate in $A_n$ for $n \geq 5$), with the same proof.
 \end{itemize}
 As printed, the handout's first sentence says ``$A_n$ is normal'' for ``$A_n$ is simple'', step (4) ends with ``an $N$-cycle $(ijk)$'' for ``a $3$-cycle'', and the $5$-cycle row reads $[(a\,b\,c\,d\,e)][(a\,b\,e\,c\,d)] = (a\,e\,b)$. That product is the $5$-cycle $(a\,c\,e\,d\,b)$; with the inverse on the second factor, as in the table, it is the $3$-cycle $(a\,e\,c)$.
@@ -4408,22 +4424,22 @@ Let $N \trianglelefteq A_n$ with $N \neq \{e\}$; the aim is $N = A_n$. First goa
 \begin{propbox}[{The Pair-Partition Homomorphism $S_4 \to S_3$ (lecture 9/30)}]\label{prop:pair-partition-homomorphism-s4-to-s3}
 Let $S_4$ act on the three ways of splitting $\{1, 2, 3, 4\}$ into two pairs,
 \[ P = \big\{\, \{\{1,2\},\{3,4\}\},\ \{\{1,3\},\{2,4\}\},\ \{\{1,4\},\{2,3\}\} \,\big\}, \]
-and let $\alpha: S_4 \to S_P \cong S_3$ be the associated homomorphism. Then $\alpha$ is surjective and $\operatorname{Ker}\alpha = V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Consequently $V$ is normal in $S_4$ and in $A_4$, and
-\[ S_4/V \cong S_3, \qquad A_4/V \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}. \]
+and let $\alpha: S_4 \to S_P \cong S_3$ be the associated homomorphism. Then $\alpha$ is surjective and $\operatorname{Ker}\alpha = K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Consequently $K$ is normal in $S_4$ and in $A_4$, and
+\[ S_4/K \cong S_3, \qquad A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}. \]
 \end{propbox}
 
 \begin{proof}
-A permutation carries a splitting into pairs to another such splitting, so this is an action, and it gives $\alpha$ (Actions Are Homomorphisms to $S_X$, \ref{sec:action-def}). \emph{Surjective:} the transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps $\{\{1,3\},\{2,4\}\} \leftrightarrow \{\{1,4\},\{2,3\}\}$; in the same way each transposition $(a\,b)$ fixes the splitting containing $\{a, b\}$ and swaps the other two. So the image contains all three transpositions of $S_P$, which generate it. \emph{Kernel:} $|\operatorname{Ker}\alpha| = 24/6 = 4$ ($|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, \ref{sec:first-iso}). Each double transposition preserves every splitting, e.g.\ $(1\,2)(3\,4)$ swaps $\{1,3\} \leftrightarrow \{2,4\}$ and $\{1,4\} \leftrightarrow \{2,3\}$. So $V \subseteq \operatorname{Ker}\alpha$, and as both have $4$ elements, $\operatorname{Ker}\alpha = V$.
+A permutation carries a splitting into pairs to another such splitting, so this is an action, and it gives $\alpha$ (Actions Are Homomorphisms to $S_X$, \ref{sec:action-def}). \emph{Surjective:} the transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps $\{\{1,3\},\{2,4\}\} \leftrightarrow \{\{1,4\},\{2,3\}\}$; in the same way each transposition $(a\,b)$ fixes the splitting containing $\{a, b\}$ and swaps the other two. So the image contains all three transpositions of $S_P$, which generate it. \emph{Kernel:} $|\operatorname{Ker}\alpha| = 24/6 = 4$ ($|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, \ref{sec:first-iso}). Each double transposition preserves every splitting, e.g.\ $(1\,2)(3\,4)$ swaps $\{1,3\} \leftrightarrow \{2,4\}$ and $\{1,4\} \leftrightarrow \{2,3\}$. So $K \subseteq \operatorname{Ker}\alpha$, and as both have $4$ elements, $\operatorname{Ker}\alpha = K$.
 
-Kernels are normal, so $V \trianglelefteq S_4$, and $V \trianglelefteq A_4$ because $V \subseteq A_4$. The First Isomorphism Theorem gives $S_4/V \cong S_3$. Restricted to $A_4$, $\alpha$ has kernel $V \cap A_4 = V$, so $A_4/V \cong \alpha(A_4)$, a subgroup of $S_3$ with $12/4 = 3$ elements. The only such subgroup is $A_3 = \langle (1\,2\,3) \rangle$ (Subgroups of $S_3$, \ref{sec:s3-subgroups}), and it is cyclic of order $3$.
+Kernels are normal, so $K \trianglelefteq S_4$, and $K \trianglelefteq A_4$ because $K \subseteq A_4$. The First Isomorphism Theorem gives $S_4/K \cong S_3$. Restricted to $A_4$, $\alpha$ has kernel $K \cap A_4 = K$, so $A_4/K \cong \alpha(A_4)$, a subgroup of $S_3$ with $12/4 = 3$ elements. The only such subgroup is $A_3 = \langle (1\,2\,3) \rangle$ (Subgroups of $S_3$, \ref{sec:s3-subgroups}), and it is cyclic of order $3$.
 \end{proof}
 
 \begin{exbox}[{In $A_4$, $(1\,2\,3)$ and $(1\,3\,2)$ Are Not Conjugate (lecture 9/30)}]\label{ex:a4-1-2-3-1-3-2-not-conjugate}
-The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes (Characters Are Constant on Conjugacy Classes, \ref{sec:characters}). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin V$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles fails for $n = 4$.
+The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes (Characters Are Constant on Conjugacy Classes, \ref{sec:characters}). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin K$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles fails for $n = 4$.
 \end{exbox}
 
 \begin{rembox}[{Why $n \geq 5$ (lecture 9/30)}]\label{rem:why-n-ge-5}
-The proof for $A_n$ used $n \geq 5$ twice: the $(a\,b)(c\,d)$ case needs a fifth point, and the lemma on $3$-cycles needs two points outside a $3$-cycle. For $n = 4$ both fail for a real reason: $A_4$ has the extra normal subgroup $V$. Group theory is a mix of universal principles and funny small counterexamples, and $A_4$ is one of the latter.
+The proof for $A_n$ used $n \geq 5$ twice: the $(a\,b)(c\,d)$ case needs a fifth point, and the lemma on $3$-cycles needs two points outside a $3$-cycle. For $n = 4$ both fail for a real reason: $A_4$ has the extra normal subgroup $K$. Group theory is a mix of universal principles and funny small counterexamples, and $A_4$ is one of the latter.
 \end{rembox}
 
 \begin{corbox}[{Which $A_n$ Are Simple}]\label{cor:which-an-simple}
@@ -4431,7 +4447,7 @@ $A_n$ is simple if and only if $n = 3$ or $n \geq 5$.
 \end{corbox}
 
 \begin{proof}
-For $n \geq 5$ this is WS 7.5. $A_1$ and $A_2$ are trivial, hence not simple. $A_3 = \langle (1\,2\,3) \rangle$ has prime order $3$, hence is simple (Abelian Simple Groups). $A_4$ is not simple: $V$ is a normal subgroup with $\{e\} \neq V \neq A_4$ (The Pair-Partition Homomorphism).
+For $n \geq 5$ this is WS 7.5. $A_1$ and $A_2$ are trivial, hence not simple. $A_3 = \langle (1\,2\,3) \rangle$ has prime order $3$, hence is simple (Abelian Simple Groups). $A_4$ is not simple: $K$ is a normal subgroup with $\{e\} \neq K \neq A_4$ (The Pair-Partition Homomorphism).
 \end{proof}
 
 
@@ -4467,7 +4483,7 @@ Let $F$ be a field and $n \geq 2$. Then $PSL_n(F)$ is simple, except for $PSL_2(
 \proofpending
 
 \begin{exbox}[{The Two Exceptions (WS 7)}]\label{ex:two-exceptions}
-$PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$. Neither is simple: $A_3 \trianglelefteq S_3$, and the Klein four-group $V$ is normal in $A_4$ (The Pair-Partition Homomorphism, above).
+$PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$. Neither is simple: $A_3 \trianglelefteq S_3$, and the Klein four-group $K$ is normal in $A_4$ (The Pair-Partition Homomorphism, above).
 \end{exbox}
 
 \proofpending
@@ -4540,30 +4556,30 @@ all of determinant $a^2 + b^2 > 0$. Hence every element of $C_{GL_2(\mathbb{R})}
 
 \subsection{\texorpdfstring{The Symmetric Group $S_3$}{The Symmetric Group S₃}}\label{sec:rev-ch8-s3}
 
-$S_3$ has exactly three normal subgroups, $\{e\}$, $A_3$ and $S_3$: $\langle (1\,2) \rangle$ is the standard non-normal subgroup, while $A_3$ is normal of index $2$ and $S_3/A_3 \cong \mathbb{Z}/2\mathbb{Z}$, realized by the subgroup $\langle (2\,3) \rangle$. $S_3$ also shows that a product $AB$ of subgroups need not be a subgroup, and it returns as the quotient $S_4/V$ and as $PSL_2(\mathbb{F}_2)$.
+$S_3$ has exactly three normal subgroups, $\{e\}$, $A_3$ and $S_3$: $\langle (1\,2) \rangle$ is the standard non-normal subgroup, while $A_3$ is normal of index $2$ and $S_3/A_3 \cong \mathbb{Z}/2\mathbb{Z}$, realized by the subgroup $\langle (2\,3) \rangle$. $S_3$ also shows that a product $AB$ of subgroups need not be a subgroup, and it returns as the quotient $S_4/K$ and as $PSL_2(\mathbb{F}_2)$.
 
-Example~\ref{ex:non-normal-subgroup-s3} shows that $\langle (1\,2) \rangle$ is not normal, and Example~\ref{ex:index-2-examples}(1) that $\langle (1\,2\,3) \rangle$ is; Proposition~\ref{prop:images-need-not-normal} uses the inclusion of $\langle (1\,2) \rangle$ to show that images need not be normal; Example~\ref{ex:normal-subgroups-s3-s4} finds all normal subgroups from the conjugacy classes; Example~\ref{ex:quotient-groups}(3) (in the $\mathbb{Z}$ part), Example~\ref{ex:s3-a3} and the remark \emph{Life Is Especially Nice When $S$ Is a Subgroup} (\ref{sec:representatives}) compute $S_3/A_3$; Example~\ref{ex:second-isomorphism-theorem-action}(1) below obtains $\langle (1\,2) \rangle \cong S_3/A_3$ from the Second Isomorphism Theorem; Example~\ref{ex:ab-need-not-subgroup} (PS~4.1(1)) shows that $AB$ need not be a subgroup; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) give $S_4/V \cong S_3$ and $PSL_2(\mathbb{F}_2) \cong S_3$.
+Example~\ref{ex:non-normal-subgroup-s3} shows that $\langle (1\,2) \rangle$ is not normal, and Example~\ref{ex:index-2-examples}(1) that $\langle (1\,2\,3) \rangle$ is; Proposition~\ref{prop:images-need-not-normal} uses the inclusion of $\langle (1\,2) \rangle$ to show that images need not be normal; Example~\ref{ex:normal-subgroups-s3-s4} finds all normal subgroups from the conjugacy classes; Example~\ref{ex:quotient-groups}(3) (in the $\mathbb{Z}$ part), Example~\ref{ex:s3-a3} and the remark \emph{Life Is Especially Nice When $S$ Is a Subgroup} (\ref{sec:representatives}) compute $S_3/A_3$; Example~\ref{ex:second-isomorphism-theorem-action}(1) below obtains $\langle (1\,2) \rangle \cong S_3/A_3$ from the Second Isomorphism Theorem; Example~\ref{ex:ab-need-not-subgroup} (PS~4.1(1)) shows that $AB$ need not be a subgroup; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) give $S_4/K \cong S_3$ and $PSL_2(\mathbb{F}_2) \cong S_3$.
 
 \begin{exbox}[{The Second Isomorphism Theorem in Action}]\label{ex:second-isomorphism-theorem-action}
 \begin{enumerate}[nosep]
     \item $G = S_3$, $N = A_3$, $H = \langle (1\,2) \rangle$: $H \cap N = \{e\}$ and $HN = S_3$, so $\langle (1\,2) \rangle \cong S_3/A_3$.
-    \item $G = S_4$, $N = V$, $H = \operatorname{Stab}(4) \cong S_3$: every non-identity element of $V$ moves $4$, so $H \cap V = \{e\}$, and $HV/V \cong H$ has $6 = 24/4 = |S_4/V|$ elements, so $HV/V = S_4/V$. Hence $S_4/V \cong S_3$, recovering The Pair-Partition Homomorphism (\ref{prop:pair-partition-homomorphism-s4-to-s3}) by a second route.
+    \item $G = S_4$, $N = K$, $H = \operatorname{Stab}(4) \cong S_3$: every non-identity element of $K$ moves $4$, so $H \cap K = \{e\}$, and $HV/K \cong H$ has $6 = 24/4 = |S_4/K|$ elements, so $HV/K = S_4/K$. Hence $S_4/K \cong S_3$, recovering The Pair-Partition Homomorphism (\ref{prop:pair-partition-homomorphism-s4-to-s3}) by a second route.
 \end{enumerate}
 \end{exbox}
 
 \textit{$S_3$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-s3}); next, Chapter~9 (\ref{sec:rev-ch9-s3}).}
 
-\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $V$}{S₄, A₄ and the Klein Four-Group V}}\label{sec:rev-ch8-s4}
+\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $K$}{S₄, A₄ and the Klein Four-Group K}}\label{sec:rev-ch8-s4}
 
-The normal subgroups of $S_4$ are $\{e\}$, $V$, $A_4$ and $S_4$, read off from its class sizes. The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$, so $S_4/V \cong S_3$; inside $A_4$ it makes $V$ normal and keeps $(1\,2\,3)$ and $(1\,3\,2)$ apart, which is why $A_4$ is the one non-simple $A_n$ with $n \geq 3$.
+The normal subgroups of $S_4$ are $\{e\}$, $K$, $A_4$ and $S_4$, read off from its class sizes. The pair-partition homomorphism $S_4 \to S_3$ has kernel $K$, so $S_4/K \cong S_3$; inside $A_4$ it makes $K$ normal and keeps $(1\,2\,3)$ and $(1\,3\,2)$ apart, which is why $A_4$ is the one non-simple $A_n$ with $n \geq 3$.
 
-Example~\ref{ex:normal-subgroups-s3-s4} (in the $S_3$ part) finds the normal subgroups; Example~\ref{ex:second-isomorphism-theorem-action}(2) (in the $S_3$ part) obtains $S_4/V \cong S_3$ from the Second Isomorphism Theorem; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} constructs the homomorphism; Example~\ref{ex:a4-1-2-3-1-3-2-not-conjugate} and the remark \emph{Why $n \geq 5$} (\ref{sec:simple}) show where the simplicity proof breaks for $A_4$; Example~\ref{ex:correspondence-s4-v} (below) lists the six subgroups of $S_4$ containing $V$ through the Correspondence Theorem; Proposition~\ref{prop:two-pairs-a5} and Example~\ref{ex:conjugacy-classes-a5-explained} (\ref{sec:normal-conjugacy}) show which $S_5$-classes split in $A_5$; Corollary~\ref{cor:which-an-simple} and Example~\ref{ex:two-exceptions} record $A_4$ as the exception, with $A_4 \cong PSL_2(\mathbb{F}_3)$.
+Example~\ref{ex:normal-subgroups-s3-s4} (in the $S_3$ part) finds the normal subgroups; Example~\ref{ex:second-isomorphism-theorem-action}(2) (in the $S_3$ part) obtains $S_4/K \cong S_3$ from the Second Isomorphism Theorem; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} constructs the homomorphism; Example~\ref{ex:a4-1-2-3-1-3-2-not-conjugate} and the remark \emph{Why $n \geq 5$} (\ref{sec:simple}) show where the simplicity proof breaks for $A_4$; Example~\ref{ex:correspondence-s4-v} (below) lists the six subgroups of $S_4$ containing $K$ through the Correspondence Theorem; Proposition~\ref{prop:two-pairs-a5} and Example~\ref{ex:conjugacy-classes-a5-explained} (\ref{sec:normal-conjugacy}) show which $S_5$-classes split in $A_5$; Corollary~\ref{cor:which-an-simple} and Example~\ref{ex:two-exceptions} record $A_4$ as the exception, with $A_4 \cong PSL_2(\mathbb{F}_3)$.
 
-\begin{exbox}[{The Correspondence for $S_4$ and $V$}]\label{ex:correspondence-s4-v}
-Take $G = S_4$ and $N = V$, so $G/N \cong S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); by the Correspondence Theorem (\ref{thm:correspondence}). $S_3$ has six subgroups, so it predicts exactly six subgroups of $S_4$ containing $V$: these are $V$, $A_4$, $S_4$, and three subgroups of order $8$, the preimages of the three subgroups of order $2$; each has the form $V \cup \tau V$ for a transposition $\tau$, e.g.\ $V \cup (1\,2)V$. Normal ones match normal ones: $V$, $A_4$, $S_4$ correspond to $\{e\}$, $A_3$, $S_3$.
+\begin{exbox}[{The Correspondence for $S_4$ and $K$}]\label{ex:correspondence-s4-v}
+Take $G = S_4$ and $N = K$, so $G/N \cong S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); by the Correspondence Theorem (\ref{thm:correspondence}). $S_3$ has six subgroups, so it predicts exactly six subgroups of $S_4$ containing $K$: these are $K$, $A_4$, $S_4$, and three subgroups of order $8$, the preimages of the three subgroups of order $2$; each has the form $K \cup \tau K$ for a transposition $\tau$, e.g.\ $K \cup (1\,2)K$. Normal ones match normal ones: $K$, $A_4$, $S_4$ correspond to $\{e\}$, $A_3$, $S_3$.
 \end{exbox}
 
-\textit{$S_4$, $A_4$ and $V$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-s4}); next, Chapter~9, where $A_4$ appears once, in the $A_n$ part (\ref{sec:rev-ch9-an}); then Chapter~10 (\ref{sec:rev-ch10-s4}).}
+\textit{$S_4$, $A_4$ and $K$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-s4}); next, Chapter~9 (\ref{sec:rev-ch9-s4}).}
 
 \subsection{\texorpdfstring{The Alternating Groups $A_n$}{The Alternating Groups Aₙ}}\label{sec:rev-ch8-an}
 
@@ -4609,11 +4625,13 @@ $\det(zA) = z^2 \det A > 0$ for $A \in SL_2(\mathbb{R})$, and conversely if $\de
 
 \textit{$GL_n$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-gl}); next, Chapter~9 (\ref{sec:rev-ch9-gl}).}
 
-\chapter{Characters and Commutators}\label{ch:characters}
+\chapter{Characters, Commutators and Solvable Groups}\label{ch:characters}
 
-\textit{Source: Lecture (Wed Sept 23); PS 2.3 and 2.4.}
+\textit{Source: Lecture (Wed Sept 23); PS 2.3 and 2.4; Worksheet 9 (Wed Oct 7).}
 
 Characters are homomorphisms to abelian groups. They cannot distinguish conjugate elements and they kill every commutator, which makes them a practical tool for proving that an element is \emph{not} a commutator; the chapter ends by determining the commutator subgroup of $S_n$. Characters are also the first step toward the representation theory of the second half of the course.
+
+Simple groups are the atoms of group theory; the next question is how they are put together. The solvable groups are the groups built entirely out of abelian pieces. The second half of the chapter defines them, shows that the class is closed under subgroups and quotients, and introduces the derived series --- the commutator subgroup taken again and again --- which gives an algorithm for testing solvability.
 
 \section{Characters}\label{sec:characters}
 
@@ -4822,7 +4840,7 @@ By the lemma (Lemma~\ref{lem:3-cycles-commutators-an}) every $3$-cycle lies in $
 \end{proof}
 
 \begin{rembox}[{Small $n$, and the Link to Simplicity}]\label{rem:small-n-simplicity}
-The bound $n \geq 5$ is sharp. $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so the identity map is a nontrivial character. $A_4$ has the nontrivial character $\alpha|_{A_4}: A_4 \to A_3$ of The Pair-Partition Homomorphism (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}), so $[A_4, A_4] \subseteq V \neq A_4$. For $n \geq 5$ the theorem also follows from simplicity (Theorem~\ref{thm:an-simple-n-ge-5}): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
+The bound $n \geq 5$ is sharp. $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so the identity map is a nontrivial character. $A_4$ has the nontrivial character $\alpha|_{A_4}: A_4 \to A_3$ of The Pair-Partition Homomorphism (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}), so $[A_4, A_4] \subseteq K \neq A_4$. For $n \geq 5$ the theorem also follows from simplicity (Theorem~\ref{thm:an-simple-n-ge-5}): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
 \end{rembox}
 
 \begin{exbox}[{Products of Commutators That Are Not Commutators (PS 5.4)}]\label{ex:products-commutators-not-commutators}
@@ -4841,41 +4859,6 @@ $[G,G]$ is defined as the subgroup \emph{generated} by commutators; this example
 % SECTION: S_3, A_n AND GL_n (Examples revisited)
 % ============================================================================
 
-\section{\texorpdfstring{$S_3$, $A_n$ and $GL_n$}{S₃, Aₙ and GLₙ}}\label{sec:rev-ch9}
-
-\textit{The recurring groups as Chapter~9 saw them: characters take values in abelian groups, so they cannot separate conjugates and they kill commutators. Each part gathers the chapter's items about one group, in order.}
-
-\subsection{\texorpdfstring{The Symmetric Group $S_3$}{The Symmetric Group S₃}}\label{sec:rev-ch9-s3}
-
-$S_3$ shows why a character needs an abelian target: the identity map $S_3 \to S_3$ separates the conjugate transpositions $(1\,2)$ and $(1\,3)$.
-
-The remark \emph{Where Commutativity of $A$ Is Needed} (\ref{sec:characters}) gives the example.
-
-\textit{$S_3$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-s3}); next, Chapter~10 (\ref{sec:rev-ch10-s3}).}
-
-\subsection{\texorpdfstring{The Alternating Groups $A_n$}{The Alternating Groups Aₙ}}\label{sec:rev-ch9-an}
-
-$A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator and no transposition is. Hence every character of $S_n$ is trivial on $A_n$, and the abelianization of $S_n$ is $S_n/A_n \cong \{\pm 1\}$. For $n \geq 5$, $A_n$ is also its own commutator subgroup, so its characters are trivial; $A_3$ and $A_4$ show that the bound is sharp.
-
-Propositions~\ref{prop:3-cycles-commutators} and~\ref{prop:transpositions-not-commutators} (PS~2.4) separate $3$-cycles from transpositions; Theorem~\ref{thm:commutator-subgroup-sn} (PS~4.5) proves $[S_n, S_n] = A_n$; Example~\ref{ex:abelianization-sn} computes the abelianization; Lemma~\ref{lem:3-cycles-commutators-an} and Theorem~\ref{thm:characters-an-trivial} (PS~5.3) prove $[A_n, A_n] = A_n$ for $n \geq 5$; the remark \emph{Small $n$, and the Link to Simplicity} (\ref{sec:commutators}) treats $A_3$ and $A_4$ and compares with the simplicity of $A_n$.
-
-\textit{$A_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-an}); next, Chapter~10 (\ref{sec:rev-ch10-an}).}
-
-\subsection{\texorpdfstring{$GL_n$, $SL_n$ and $O(n)$}{GLₙ, SLₙ and O(n)}}\label{sec:rev-ch9-gl}
-
-The determinant is the model character of $GL_n(k)$, and a character is the same thing as a $1$-dimensional representation, a homomorphism into $GL_1(k) = k^\times$.
-
-Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the remark \emph{One-Dimensional Representations} (\ref{sec:characters}) identifies characters with homomorphisms into $GL_1(k)$; Example~\ref{ex:products-commutators-not-commutators} (PS~5.4) finds, in a group of real block upper-triangular matrices, elements of $[G, G]$ that are not commutators.
-
-\textit{$GL_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-gl}); next, Chapter~11, where $GL_n(\mathbb{F}_p)$ appears once (Proposition~\ref{prop:unitriangular-sylow}).}
-
-
-\chapter{Solvable Groups}\label{ch:solvable}
-
-\textit{Source: Worksheet 9 (Wed Oct 7).}
-
-Simple groups are the atoms of group theory; the next question is how they are put together. The solvable groups are the groups built entirely out of abelian pieces. This chapter defines them, shows that the class is closed under subgroups and quotients, and introduces the derived series, which gives an algorithm for testing solvability.
-
 \section{Solvable Groups}\label{sec:solvable}
 
 \textit{Reference: not covered in the Pinter chapters used so far.}
@@ -4887,19 +4870,19 @@ in which each $G_{j-1}$ is normal in $G_j$ and each quotient $G_j/G_{j-1}$ is ab
 \end{defbox}
 
 \begin{rembox}[{Normal in the Next Term Only}]\label{rem:normal-in-next-term}
-Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ below, $V$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Every abelian group is solvable, via the chain $\{e\} \trianglelefteq G$.
+Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ below, $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Every abelian group is solvable, via the chain $\{e\} \trianglelefteq G$.
 \end{rembox}
 
 \begin{propbox}[{$S_3$ and $S_4$ Are Solvable (WS 9.1)}]\label{prop:s3-s4-solvable}
 The chains
-\[ \{e\} \trianglelefteq A_3 \trianglelefteq S_3 \qquad\text{and}\qquad \{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4 \]
+\[ \{e\} \trianglelefteq A_3 \trianglelefteq S_3 \qquad\text{and}\qquad \{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4 \]
 have the required properties, so $S_3$ and $S_4$ are solvable.
 \end{propbox}
 
 \begin{proof}
 \emph{$S_3$.} $A_3$ is normal in $S_3$ (index $2$, Proposition~\ref{prop:subgroups-index-2-normal}), and $A_3/\{e\} \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ and $S_3/A_3 \cong \{\pm 1\}$ are abelian (the sign, Theorem~\ref{thm:sign-homomorphism}, and the First Isomorphism Theorem~\ref{thm:first-isomorphism-theorem}).
 
-\emph{$S_4$.} $V \trianglelefteq A_4$ and $A_4/V \cong \mathbb{Z}/3\mathbb{Z}$ (The Pair-Partition Homomorphism, Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); $A_4 \trianglelefteq S_4$ (index $2$) with $S_4/A_4 \cong \{\pm 1\}$; and $V/\{e\} \cong V$ is abelian, having order $4$ (Groups of Order $4$ Are Abelian, Proposition~\ref{prop:groups-order-4-abelian}). All three quotients are abelian.
+\emph{$S_4$.} $K \trianglelefteq A_4$ and $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$ (The Pair-Partition Homomorphism, Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); $A_4 \trianglelefteq S_4$ (index $2$) with $S_4/A_4 \cong \{\pm 1\}$; and $K/\{e\} \cong K$ is abelian, having order $4$ (Groups of Order $4$ Are Abelian, Proposition~\ref{prop:groups-order-4-abelian}). All three quotients are abelian.
 \end{proof}
 
 \begin{propbox}[{Subgroups of Solvable Groups Are Solvable (WS 9.2; lecture 10/7)}]\label{prop:subgroups-solvable}
@@ -4948,7 +4931,7 @@ $G$ is solvable if and only if $D_N(G) = \{e\}$ for some $N$.
 \begin{exbox}[{Derived Series of $S_3$, $S_4$ and $S_n$ (not from class)}]\label{ex:derived-series-sn}
 \begin{enumerate}
     \item $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$: $D(S_3) = A_3$ by The Commutator Subgroup and Characters of $S_n$ (Theorem~\ref{thm:commutator-subgroup-sn}), and $D(A_3) = \{e\}$ since $A_3$ is abelian.
-    \item $S_4 \trianglerighteq A_4 \trianglerighteq V \trianglerighteq \{e\}$. Here $D(A_4) = V$: on one hand $A_4/V \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so every commutator of $A_4$ maps to the identity of $A_4/V$, i.e.\ $D(A_4) \subseteq V$; on the other hand $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$, and $D(A_4)$ is normal in $A_4$, so it also contains the conjugates $(1\,3)(2\,4)$ and $(1\,4)(2\,3)$ of $(1\,2)(3\,4)$ by $(1\,2\,3)$ and $(1\,3\,2)$. Finally $D(V) = \{e\}$ since $V$ is abelian.
+    \item $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$. Here $D(A_4) = K$: on one hand $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so every commutator of $A_4$ maps to the identity of $A_4/K$, i.e.\ $D(A_4) \subseteq K$; on the other hand $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$, and $D(A_4)$ is normal in $A_4$, so it also contains the conjugates $(1\,3)(2\,4)$ and $(1\,4)(2\,3)$ of $(1\,2)(3\,4)$ by $(1\,2\,3)$ and $(1\,3\,2)$. Finally $D(K) = \{e\}$ since $K$ is abelian.
     \item For $n \geq 5$: $D(S_n) = A_n$ and $D(A_n) = A_n$ (Characters of $A_n$ Are Trivial for $n \geq 5$, Theorem~\ref{thm:characters-an-trivial}), so the series is $S_n \trianglerighteq A_n \trianglerighteq A_n \trianglerighteq \cdots$ and never reaches $\{e\}$.
 \end{enumerate}
 \end{exbox}
@@ -4961,33 +4944,51 @@ For $n \geq 5$, neither $A_n$ nor $S_n$ is solvable. Hence $S_n$ is solvable if 
 Let $n \geq 5$ and suppose $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = A_n$ is a chain with abelian quotients. Let $j$ be the largest index with $G_j \neq A_n$. Then $G_j \trianglelefteq G_{j+1} = A_n$, and $A_n$ is simple (Theorem~\ref{thm:an-simple-n-ge-5}), so $G_j = \{e\}$; but then $G_{j+1}/G_j \cong A_n$ is not abelian, a contradiction. So $A_n$ is not solvable, and neither is $S_n$, which contains $A_n$ (Subgroups of Solvable Groups Are Solvable, Proposition~\ref{prop:subgroups-solvable}). For $n \leq 4$, $S_n$ is a subgroup of $S_4$ (fixing the remaining points), hence solvable (Proposition~\ref{prop:s3-s4-solvable}). (This argument uses simplicity of $A_n$; by WS 9.6 (Theorem~\ref{thm:solvable-derived-series}) the derived series in Example~\ref{ex:derived-series-sn} gives the same conclusion.)
 \end{proof}
 
-\section{\texorpdfstring{$S_3$, $S_4$ and $A_n$}{S₃, S₄ and Aₙ}}\label{sec:rev-ch10}
+\section{\texorpdfstring{$S_3$, $S_4$, $A_n$ and $GL_n$}{S₃, S₄, Aₙ and GLₙ}}\label{sec:rev-ch9}
 
-\textit{The recurring groups as Chapter~10 saw them: which of them are built from abelian pieces. Each part gathers the chapter's items about one group, in order.}
+\textit{The recurring groups as Chapter~9 saw them: characters take values in abelian groups, so they cannot separate conjugates and they kill commutators; and the solvable groups are those built from abelian pieces. Each part gathers the chapter's items about one group, in order.}
 
-\subsection{\texorpdfstring{The Symmetric Group $S_3$}{The Symmetric Group S₃}}\label{sec:rev-ch10-s3}
+\subsection{\texorpdfstring{The Symmetric Group $S_3$}{The Symmetric Group S₃}}\label{sec:rev-ch9-s3}
+
+$S_3$ shows why a character needs an abelian target: the identity map $S_3 \to S_3$ separates the conjugate transpositions $(1\,2)$ and $(1\,3)$.
+
+The remark \emph{Where Commutativity of $A$ Is Needed} (\ref{sec:characters}) gives the example.
 
 $S_3$ is solvable without being abelian: the chain $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ has the abelian quotients $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and the derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ reaches $\{e\}$ in two steps.
 
 Proposition~\ref{prop:s3-s4-solvable} (WS 9.1) gives the chain; Example~\ref{ex:derived-series-sn}(1) computes the derived series.
 
-\textit{$S_3$ elsewhere: previous, Chapter~9 (\ref{sec:rev-ch9-s3}); no later appearance yet.}
+\textit{$S_3$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-s3}); no later appearance yet.}
 
-\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $V$}{S₄, A₄ and the Klein Four-Group V}}\label{sec:rev-ch10-s4}
+\subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $K$}{S₄, A₄ and the Klein Four-Group K}}\label{sec:rev-ch9-s4}
 
-$S_4$ is solvable through $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$, with quotients $V$, $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and this chain is its derived series: $D(S_4) = A_4$, $D(A_4) = V$, $D(V) = \{e\}$. Here $V$ is normal in all of $S_4$, more than the definition asks (Remark~\ref{rem:normal-in-next-term}).
+$S_4$ is solvable through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with quotients $K$, $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and this chain is its derived series: $D(S_4) = A_4$, $D(A_4) = K$, $D(K) = \{e\}$. Here $K$ is normal in all of $S_4$, more than the definition asks (Remark~\ref{rem:normal-in-next-term}).
 
 Proposition~\ref{prop:s3-s4-solvable} (WS 9.1) gives the chain; Example~\ref{ex:derived-series-sn}(2) computes the derived series, finding $(1\,2)(3\,4)$ as a commutator of two $3$-cycles of $A_4$.
 
-\textit{$S_4$, $A_4$ and $V$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-s4}), and Chapter~9 for $A_4$ (\ref{sec:rev-ch9-an}); no later appearance yet.}
+$A_4$ also appears in the $A_n$ part below, as the case $n = 4$ of the commutator computations.
 
-\subsection{\texorpdfstring{The Alternating Groups $A_n$}{The Alternating Groups Aₙ}}\label{sec:rev-ch10-an}
+\textit{$S_4$, $A_4$ and $K$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-s4}); no later appearance yet.}
+
+\subsection{\texorpdfstring{The Alternating Groups $A_n$}{The Alternating Groups Aₙ}}\label{sec:rev-ch9-an}
+
+$A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator and no transposition is. Hence every character of $S_n$ is trivial on $A_n$, and the abelianization of $S_n$ is $S_n/A_n \cong \{\pm 1\}$. For $n \geq 5$, $A_n$ is also its own commutator subgroup, so its characters are trivial; $A_3$ and $A_4$ show that the bound is sharp.
+
+Propositions~\ref{prop:3-cycles-commutators} and~\ref{prop:transpositions-not-commutators} (PS~2.4) separate $3$-cycles from transpositions; Theorem~\ref{thm:commutator-subgroup-sn} (PS~4.5) proves $[S_n, S_n] = A_n$; Example~\ref{ex:abelianization-sn} computes the abelianization; Lemma~\ref{lem:3-cycles-commutators-an} and Theorem~\ref{thm:characters-an-trivial} (PS~5.3) prove $[A_n, A_n] = A_n$ for $n \geq 5$; the remark \emph{Small $n$, and the Link to Simplicity} (\ref{sec:commutators}) treats $A_3$ and $A_4$ and compares with the simplicity of $A_n$.
 
 For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$.
 
 Example~\ref{ex:derived-series-sn}(3) shows the derived series stalling; Corollary~\ref{cor:an-sn-not-solvable} proves non-solvability from the simplicity of $A_n$ and Proposition~\ref{prop:subgroups-solvable}.
 
-\textit{$A_n$ elsewhere: previous, Chapter~9 (\ref{sec:rev-ch9-an}); no later appearance yet.}
+\textit{$A_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-an}); no later appearance yet.}
+
+\subsection{\texorpdfstring{$GL_n$, $SL_n$ and $O(n)$}{GLₙ, SLₙ and O(n)}}\label{sec:rev-ch9-gl}
+
+The determinant is the model character of $GL_n(k)$, and a character is the same thing as a $1$-dimensional representation, a homomorphism into $GL_1(k) = k^\times$.
+
+Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the remark \emph{One-Dimensional Representations} (\ref{sec:characters}) identifies characters with homomorphisms into $GL_1(k)$; Example~\ref{ex:products-commutators-not-commutators} (PS~5.4) finds, in a group of real block upper-triangular matrices, elements of $[G, G]$ that are not commutators.
+
+\textit{$GL_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-gl}); next, Chapter~10, where $GL_n(\mathbb{F}_p)$ appears once (Proposition~\ref{prop:unitriangular-sylow}).}
 
 \chapter{The Sylow Theorems}\label{ch:sylow}
 
@@ -5105,7 +5106,7 @@ Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
     \item \textbf{To compute in $G/N$.} Choose one representative per coset; to multiply, multiply in $G$ and replace the product by its representative. If the representatives form a subgroup $S$, then $G/N \cong S$ (\ref{prop:representatives-forming-subgroup}). More generally $H/(H \cap N) \cong HN/N$ (Second Isomorphism Theorem, \ref{thm:second-isomorphism-theorem}).
     \item \textbf{To find the subgroups of a quotient $G/N$.} They correspond to the subgroups of $G$ containing $N$, via $A \mapsto A/N$, with normal matching normal (Correspondence Theorem, \ref{thm:correspondence}).
     \item \textbf{To decide whether $g, hgh^{-1} \in N$ are conjugate \emph{in} $N \trianglelefteq G$.} Check whether $h \in C_G(g)N$ (PS 5.2, Proposition~\ref{prop:conjugacy-normal-subgroup}). For $N = A_n$: a class of $S_n$ splits in $A_n$ iff its centralizer is contained in $A_n$.
-    \item \textbf{To show $G$ is solvable.} Exhibit a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ with abelian quotients (e.g.\ $\{e\} \trianglelefteq V \trianglelefteq A_4 \trianglelefteq S_4$), or compute the derived series down to $\{e\}$ (\ref{sec:solvable}, \ref{sec:derived-series}). To show $G$ is \emph{not} solvable, find a non-abelian simple subgroup or quotient, e.g.\ $A_5$.
+    \item \textbf{To show $G$ is solvable.} Exhibit a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ with abelian quotients (e.g.\ $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$), or compute the derived series down to $\{e\}$ (\ref{sec:solvable}, \ref{sec:derived-series}). To show $G$ is \emph{not} solvable, find a non-abelian simple subgroup or quotient, e.g.\ $A_5$.
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -5123,10 +5124,10 @@ $U_5$ & $4$ & yes / yes & all & $4$ singletons & all; $U_5 \cong \mathbb{Z}/4\ma
 $U_7$ & $6$ & yes / yes & all & $6$ singletons & all; $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ via $k \mapsto 3^k$ \\
 $U_8$ & $4$ & yes / no & all & $4$ singletons & all; $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ (\ref{sec:isos}) \\
 $S_3$ & $6$ & no / no & $\{e\}$ & sizes $1, 3, 2$ & $\{e\}$, $A_3 = \langle (1\,2\,3) \rangle$, $S_3$; six subgroups in all (\ref{sec:s3-subgroups}) \\
-$S_4$ & $24$ & no / no & $\{e\}$ & sizes $1, 6, 3, 8, 6$ (types $1^4, 2\,1^2, 2^2, 3\,1, 4$) & $\{e\}$, $V$, $A_4$, $S_4$ (\ref{sec:normal-sources}) \\
+$S_4$ & $24$ & no / no & $\{e\}$ & sizes $1, 6, 3, 8, 6$ (types $1^4, 2\,1^2, 2^2, 3\,1, 4$) & $\{e\}$, $K$, $A_4$, $S_4$ (\ref{sec:normal-sources}) \\
 \end{longtable}}
 
-Here $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/V \cong S_3$, $A_4/V \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}). $S_n$ is solvable exactly for $n \leq 4$ (\ref{sec:derived-series}).
+Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/K \cong S_3$, $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}). $S_n$ is solvable exactly for $n \leq 4$ (\ref{sec:derived-series}).
 
 \section*{Exam Traps}\phantomsection
 \addcontentsline{toc}{section}{Exam Traps}\label{sec:traps}
@@ -5176,7 +5177,7 @@ Wed Sept 23 \newline lecture; Worksheet 6 & Characters ($\sgn$, $\det$); equival
 Thu Sept 24 \newline Problem Set 3 & Cayley's theorem; normal core; Burnside's lemma; class equation; $p$-groups; three conjugacy classes & \ref{sec:action-def} (3.1), \ref{sec:normal-sources} (3.2), \ref{sec:orbit-stabilizer} (3.3), \ref{sec:conjugation-action} (3.4, 3.6), \ref{sec:center} (3.5) \\
 Fri Sept 25 \newline lecture & Quotient groups; canonical projection; First Isomorphism Theorem; $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$ & \ref{sec:quotient}, \ref{sec:first-iso}; WS 6.5 proved (\ref{sec:normal-sources}) \\
 Mon Sept 28 \newline lecture; Worksheet 7 & The picture so far; simple groups; homomorphisms out of and into simple groups; $C_p$, $A_5$, $A_n$ ($n \geq 5$), $PSL_n(F)$ & \ref{sec:simple} (7.1--7.5) \\
-Wed Sept 30 \newline lecture & Finite fields; WS 7.4 and 7.5 completed; $3$-cycles conjugate in $A_n$; $S_4 \to S_3$ with kernel $V$; why $n \geq 5$ & \ref{sec:simple} \\
+Wed Sept 30 \newline lecture & Finite fields; WS 7.4 and 7.5 completed; $3$-cycles conjugate in $A_n$; $S_4 \to S_3$ with kernel $K$; why $n \geq 5$ & \ref{sec:simple} \\
 Thu Oct 1 \newline Problem Set 4 & Products of subgroups; commuting normal subgroups; normal core (again); abelianization; characters of $S_n$ & \ref{sec:second-iso} (4.1), \ref{sec:commutators} (4.2, 4.4, 4.5), \ref{sec:normal-sources} (4.3) \\
 Fri Oct 2 \newline lecture & Computing in $G/N$ with representatives; Second Isomorphism Theorem; Third named & \ref{sec:representatives}, \ref{sec:second-iso} \\
 Mon Oct 5 \newline lecture; Worksheet 8 & Second Isomorphism Theorem revisited; $GL_2^+(\mathbb{R})$ example; correspondence theorem (WS 8.4, 8.5(1)); course pace slowed & \ref{sec:first-iso}, \ref{sec:second-iso} \\
@@ -5495,6 +5496,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em isomorphic\dotfill \pageref{def:isomorphism-isomorphic-groups}\par
 \noindent\hangindent=1em isomorphism\dotfill \pageref{def:isomorphism-isomorphic-groups}\par
 \noindent\hangindent=1em kernel\dotfill \pageref{def:kernel}, \pageref{def:kernel-action-faithful-action}\par
+\noindent\hangindent=1em Klein four-group\dotfill \pageref{def:klein-four-group}\par
 \noindent\hangindent=1em left action\dotfill \pageref{def:action-right-action}, \pageref{def:arrow-notation}\par
 \noindent\hangindent=1em left congruent\dotfill \pageref{def:congruence-modulo-subgroup}\par
 \noindent\hangindent=1em left coset\dotfill \pageref{def:left-right-cosets}\par
@@ -5663,6 +5665,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Inverse of a Product of $n$ Elements\dotfill \pageref{cor:inverse-product-n-elements}\par
 \noindent\hangindent=1em Invertibility Criterion\dotfill \pageref{prop:invertibility-criterion}\par
 \noindent\hangindent=1em Isomorphism Invariants\dotfill \pageref{prop:isomorphism-invariants}\par
+\noindent\hangindent=1em $K$ Is an Abelian Subgroup of $S_4$\dotfill \pageref{prop:klein-four-group}\par
 \noindent\hangindent=1em Kernels Are Normal\dotfill \pageref{prop:kernels-normal}\par
 \noindent\hangindent=1em Lagrange\dotfill \pageref{thm:lagrange}\par
 \noindent\hangindent=1em $\langle g \rangle$ Is a Subgroup\dotfill \pageref{prop:gen-g-subgroup}\par

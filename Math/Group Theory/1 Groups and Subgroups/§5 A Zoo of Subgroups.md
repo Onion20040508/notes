@@ -169,7 +169,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The determinant facts used for $SL_n$ and $GL_n(\mathbb{Z})$: [[§37 Determinants#^ladr-9-49|Determinant is multiplicative]], [[§37 Determinants#^ladr-9-50|Invertible ⟺ nonzero determinant]]; a one-sided inverse of a square matrix is two-sided (used for $O(n)$): [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I]].
-> - Permutation matrices made precise: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]; which of these subgroups are normal: [[§39 Sources of Normal Subgroups#^prop-39-8|Normal Subgroups of GL₂(ℝ)]].
+> - Permutation matrices made precise: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]; which of these subgroups are normal: [[§39 Sources of Normal Subgroups#^prop-39-9|Normal Subgroups of GL₂(ℝ)]].
 > - Computational version of the matrix facts used: “inverses by Cramer's rule” is the inverse formula $A^{-1} = (\det A)^{-1} \operatorname{adj} A$, [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|235 Thm. §27.2]] (derived from [[Cramer's Rule]]); the block copies use block multiplication and block-diagonal inverses, [[§17 Partitioned Matrices#^prop-17-2|235 Prop. §17.2]] and [[§17 Partitioned Matrices#^prop-17-5|235 Prop. §17.5]].
 
 > [!remark] Remark: Summary of WS 1.7

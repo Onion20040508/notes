@@ -78,9 +78,9 @@ graph TD
 - [[· 6 Group Actions, Cosets, and Lagrange's Theorem]]
 - [[· 7 Conjugacy and the Center]]
 - [[· 8 Normal Subgroups and Quotient Groups]]
-- [[· 9 Characters and Commutators]]
-- [[· 10 Solvable Groups]]
-- [[· 11 The Sylow Theorems]]
+- [[· 9 Characters, Commutators and Solvable Groups]]
+- [[· 9 Characters, Commutators and Solvable Groups]]
+- [[· 10 The Sylow Theorems]]
 
 ## Planned topics (syllabus)
 First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems (stated from Worksheet 10, §52–§53; proofs to come); solvable groups ✓ (§49–§51; quotients and the derived-series criterion pending); composition series and the Jordan–Hölder theorem; simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.

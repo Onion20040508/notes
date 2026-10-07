@@ -5,7 +5,7 @@ chapter: 9
 section: 47
 tags: [group-theory, math493]
 ---
-← [[§46 Characters]] · ↑ [[· 9 Characters and Commutators]] · [[§48 S₃, Aₙ and GLₙ]] →
+← [[§46 Characters]] · ↑ [[· 9 Characters, Commutators and Solvable Groups]] · [[§48 Solvable Groups]] →
 
 *Reference: Pinter Ch. 15 (commutators).*
 
@@ -236,7 +236,7 @@ tags: [group-theory, math493]
 *Uses:* [[§47 Commutators#^lem-47-9|§47.9]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]], [[§47 Commutators#^prop-47-1|§47.1]]
 
 > [!remark] Remark: Small $n$, and the Link to Simplicity
-> The bound $n \geq 5$ is sharp. $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so the identity map is a nontrivial character. $A_4$ has the nontrivial character $\alpha|_{A_4}: A_4 \to A_3$ of The Pair-Partition Homomorphism ([[§43 Simple Groups#^prop-43-10|§43.10]]), so $[A_4, A_4] \subseteq V \neq A_4$. For $n \geq 5$ the theorem also follows from simplicity ([[§43 Simple Groups#^thm-43-9|Theorem §43.9]]): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
+> The bound $n \geq 5$ is sharp. $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so the identity map is a nontrivial character. $A_4$ has the nontrivial character $\alpha|_{A_4}: A_4 \to A_3$ of The Pair-Partition Homomorphism ([[§43 Simple Groups#^prop-43-10|§43.10]]), so $[A_4, A_4] \subseteq K \neq A_4$. For $n \geq 5$ the theorem also follows from simplicity ([[§43 Simple Groups#^thm-43-9|Theorem §43.9]]): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
 
 ^rem-47-5
 

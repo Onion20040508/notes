@@ -162,7 +162,7 @@ Burnside's lemma for $S_3$ on $\{1, 2, 3\}$ and on itself is in [[§30 Orbit–S
 
 *$S_3$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#The Symmetric Group S₃|Chapter 5]] · [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] → · [[The symmetric group S₃|all appearances]]
 
-## S₄, A₄ and the Klein Four-Group V
+## S₄, A₄ and the Klein Four-Group K
 
 $A_4$ refutes the converse of Lagrange: $6$ divides $|A_4| = 12$, but $A_4$ has no subgroup of order $6$. The class sizes $1, 6, 3, 8, 6$ of $S_4$ are announced as an instance of orbit–stabilizer, and $S_4$ turns out to be the rotation group of the cube. The Klein four-group, met in [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ∕nℤ and Uₙ|Chapter 4]] as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, is one of the two groups of order $4$.
 
@@ -172,7 +172,7 @@ $A_4$ refutes the converse of Lagrange: $6$ divides $|A_4| = 12$, but $A_4$ has 
 
 The two groups of order $4$ are named in [[§29 The Index and Lagrange's Theorem#^rem-29-3|A Classification, for Once]] (in the ℤ/nℤ part); [[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|The Rotation Group of the Cube Is S₄]] and [[§32 Linear Groups, the Cube, S₃ and A₄#^rem-32-3|The Cleanest Description]] are above in this section.
 
-*$S_4$, $A_4$ and $V$ elsewhere:* first appearance · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
+*$S_4$, $A_4$ and $K$ elsewhere:* first appearance · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 7]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
 
 ## ℤ∕nℤ and Uₙ
 Lagrange's theorem pays off for the cyclic groups: Fermat's little theorem is Lagrange in $U_p$, and every group of prime order $p$ is $\mathbb{Z}/p\mathbb{Z}$, the chapter's one complete classification. $\mathbb{Z}/3\mathbb{Z}$ and $\mathbb{Z}/4\mathbb{Z}$ also serve as small groups acting on sets.

@@ -21,13 +21,13 @@ Cycle type sorts $S_3$ into three conjugacy classes, of sizes $1$, $3$ and $2$, 
 
 *$S_3$ elsewhere:* ← [[§32 Linear Groups, the Cube, S₃ and A₄#The Symmetric Group S₃|Chapter 6]] · [[§45 S₃, S₄, A₄ and A₅#The Symmetric Group S₃|Chapter 8]] → · [[The symmetric group S₃|all appearances]]
 
-## S₄, A₄ and the Klein Four-Group V
+## S₄, A₄ and the Klein Four-Group K
 
 $S_4$ has five cycle types, giving classes of sizes $1, 6, 3, 8, 6$ and the class equation $24 = 1 + 6 + 3 + 8 + 6$; its center is trivial too. Chapter 8 reads its normal subgroups off these sizes.
 
 Both items are embedded in the $S_3$ part above: [[§33 Conjugacy Classes#^ex-33-2|Conjugacy Classes of S₃ and S₄]] and [[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Class Equations of S₃ and S₄]].
 
-*$S_4$, $A_4$ and $V$ elsewhere:* ← [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group V|Chapter 6]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group V|Chapter 8]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
+*$S_4$, $A_4$ and $K$ elsewhere:* ← [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group K|Chapter 6]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group K|Chapter 8]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
 
 ## GLₙ, SLₙ and O(n)
 

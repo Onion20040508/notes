@@ -220,7 +220,7 @@ tags: [group-theory, math493]
 > | $5$ | $[(a\,b\,c\,d\,e)]\,[(a\,b\,e\,c\,d)]^{-1} = (a\,e\,c)$ | $\sigma = (c\,e\,d)$ |
 > | $3+3$ | $[(a\,b\,c)(d\,e\,f)]\,[(c\,b\,a)(d\,e\,f)] = (f\,e\,d)$ | $\sigma = (a\,d)(b\,e\,c\,f)$ |
 >
-> Each $\sigma$ is even, so the second factor is an $A_n$-conjugate of the first and lies in $N$; so does its inverse. In the $3+3$ row the two $3$-cycles on $\{a, b, c\}$ cancel and $(d\,e\,f)^2 = (f\,e\,d)$, so this case reaches a $3$-cycle directly, without the detour through a $5$-cycle taken above. The $2+2$ row needs a fifth point $e$, so $n \geq 5$: in $A_4$ no $3$-cycle is a product of double transpositions, since these lie in the subgroup $V$ ([[§43 Simple Groups#^rem-43-7|Why n ≥ 5]]).
+> Each $\sigma$ is even, so the second factor is an $A_n$-conjugate of the first and lies in $N$; so does its inverse. In the $3+3$ row the two $3$-cycles on $\{a, b, c\}$ cancel and $(d\,e\,f)^2 = (f\,e\,d)$, so this case reaches a $3$-cycle directly, without the detour through a $5$-cycle taken above. The $2+2$ row needs a fifth point $e$, so $n \geq 5$: in $A_4$ no $3$-cycle is a product of double transpositions, since these lie in the subgroup $K$ ([[§43 Simple Groups#^rem-43-7|Why n ≥ 5]]).
 > - *Step (5)* is [[§43 Simple Groups#^lem-43-8|Lemma §43.8]] (3-cycles are conjugate in $A_n$ for $n \geq 5$), with the same proof.
 >
 > As printed, the handout's first sentence says "$A_n$ is normal" for "$A_n$ is simple", step (4) ends with "an $N$-cycle $(ijk)$" for "a $3$-cycle", and the $5$-cycle row reads $[(a\,b\,c\,d\,e)][(a\,b\,e\,c\,d)] = (a\,e\,b)$. That product is the $5$-cycle $(a\,c\,e\,d\,b)$; with the inverse on the second factor, as in the table, it is the $3$-cycle $(a\,e\,c)$.
@@ -241,35 +241,35 @@ tags: [group-theory, math493]
 >
 > $$ P = \big\{\, \{\{1,2\},\{3,4\}\},\ \{\{1,3\},\{2,4\}\},\ \{\{1,4\},\{2,3\}\} \,\big\}, $$
 >
-> and let $\alpha: S_4 \to S_P \cong S_3$ be the associated homomorphism. Then $\alpha$ is surjective and $\operatorname{Ker}\alpha = V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Consequently $V$ is normal in $S_4$ and in $A_4$, and
+> and let $\alpha: S_4 \to S_P \cong S_3$ be the associated homomorphism. Then $\alpha$ is surjective and $\operatorname{Ker}\alpha = K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Consequently $K$ is normal in $S_4$ and in $A_4$, and
 >
-> $$ S_4/V \cong S_3, \qquad A_4/V \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}. $$
+> $$ S_4/K \cong S_3, \qquad A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}. $$
 >
 > *Source: lecture 9/30*
 
 ^prop-43-10
 
 > [!proof]+ Proof
-> A permutation carries a splitting into pairs to another such splitting, so this is an action, and it gives $\alpha$ (Actions Are Homomorphisms to $S_X$, [[§25 Actions#^thm-25-3|§25.3]]). *Surjective:* the transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps $\{\{1,3\},\{2,4\}\} \leftrightarrow \{\{1,4\},\{2,3\}\}$; in the same way each transposition $(a\,b)$ fixes the splitting containing $\{a, b\}$ and swaps the other two. So the image contains all three transpositions of $S_P$, which generate it. *Kernel:* $|\operatorname{Ker}\alpha| = 24/6 = 4$ ($|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]]). Each double transposition preserves every splitting, e.g. $(1\,2)(3\,4)$ swaps $\{1,3\} \leftrightarrow \{2,4\}$ and $\{1,4\} \leftrightarrow \{2,3\}$. So $V \subseteq \operatorname{Ker}\alpha$, and as both have $4$ elements, $\operatorname{Ker}\alpha = V$.
+> A permutation carries a splitting into pairs to another such splitting, so this is an action, and it gives $\alpha$ (Actions Are Homomorphisms to $S_X$, [[§25 Actions#^thm-25-3|§25.3]]). *Surjective:* the transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps $\{\{1,3\},\{2,4\}\} \leftrightarrow \{\{1,4\},\{2,3\}\}$; in the same way each transposition $(a\,b)$ fixes the splitting containing $\{a, b\}$ and swaps the other two. So the image contains all three transpositions of $S_P$, which generate it. *Kernel:* $|\operatorname{Ker}\alpha| = 24/6 = 4$ ($|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]]). Each double transposition preserves every splitting, e.g. $(1\,2)(3\,4)$ swaps $\{1,3\} \leftrightarrow \{2,4\}$ and $\{1,4\} \leftrightarrow \{2,3\}$. So $K \subseteq \operatorname{Ker}\alpha$, and as both have $4$ elements, $\operatorname{Ker}\alpha = K$.
 >
-> [[§39 Sources of Normal Subgroups#^prop-39-2|Kernels are normal]], so $V \trianglelefteq S_4$, and $V \trianglelefteq A_4$ because $V \subseteq A_4$. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] gives $S_4/V \cong S_3$. Restricted to $A_4$, $\alpha$ has kernel $V \cap A_4 = V$, so $A_4/V \cong \alpha(A_4)$, a subgroup of $S_3$ with $12/4 = 3$ elements. The only such subgroup is $A_3 = \langle (1\,2\,3) \rangle$ (Subgroups of $S_3$, [[§13 The Symmetric Group S₃#^prop-13-1|§13.1]]), and it is cyclic of order $3$.
+> [[§39 Sources of Normal Subgroups#^prop-39-2|Kernels are normal]], so $K \trianglelefteq S_4$, and $K \trianglelefteq A_4$ because $K \subseteq A_4$. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] gives $S_4/K \cong S_3$. Restricted to $A_4$, $\alpha$ has kernel $K \cap A_4 = K$, so $A_4/K \cong \alpha(A_4)$, a subgroup of $S_3$ with $12/4 = 3$ elements. The only such subgroup is $A_3 = \langle (1\,2\,3) \rangle$ (Subgroups of $S_3$, [[§13 The Symmetric Group S₃#^prop-13-1|§13.1]]), and it is cyclic of order $3$.
 
 ^pf-43-10
 
 *Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§25 Actions#^thm-25-3|§25.3]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]], [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§13 The Symmetric Group S₃#^prop-13-1|§13.1]]
 
 ![[m493-39-2.svg]]
-*The three ways of splitting $\{1,2,3,4\}$ into two pairs, each drawn as two blue edges. The transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps the other two splittings (red), so it acts on $P$ as a transposition. A double transposition such as $(1\,2)(3\,4)$ carries every splitting to itself, which is why $V$ is the kernel.*
+*The three ways of splitting $\{1,2,3,4\}$ into two pairs, each drawn as two blue edges. The transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps the other two splittings (red), so it acts on $P$ as a transposition. A double transposition such as $(1\,2)(3\,4)$ carries every splitting to itself, which is why $K$ is the kernel.*
 
 > [!example] Example §43.1: In $A_4$, $(1\,2\,3)$ and $(1\,3\,2)$ Are Not Conjugate
-> The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[§46 Characters#^prop-46-1|Characters Are Constant on Conjugacy Classes]], §46). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin V$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles ([[§43 Simple Groups#^lem-43-8|§43.8]]) fails for $n = 4$.
+> The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[§46 Characters#^prop-46-1|Characters Are Constant on Conjugacy Classes]], §46). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin K$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles ([[§43 Simple Groups#^lem-43-8|§43.8]]) fails for $n = 4$.
 >
 > *Source: lecture 9/30*
 
 ^ex-43-1
 
 > [!remark] Remark: Why $n \geq 5$
-> The proof for $A_n$ ([[§43 Simple Groups#^thm-43-9|§43.9]]) used $n \geq 5$ twice: the $(a\,b)(c\,d)$ case needs a fifth point, and the lemma on $3$-cycles ([[§43 Simple Groups#^lem-43-8|§43.8]]) needs two points outside a $3$-cycle. For $n = 4$ both fail for a real reason: $A_4$ has the extra normal subgroup $V$. Group theory is a mix of universal principles and funny small counterexamples, and $A_4$ is one of the latter.
+> The proof for $A_n$ ([[§43 Simple Groups#^thm-43-9|§43.9]]) used $n \geq 5$ twice: the $(a\,b)(c\,d)$ case needs a fifth point, and the lemma on $3$-cycles ([[§43 Simple Groups#^lem-43-8|§43.8]]) needs two points outside a $3$-cycle. For $n = 4$ both fail for a real reason: $A_4$ has the extra normal subgroup $K$. Group theory is a mix of universal principles and funny small counterexamples, and $A_4$ is one of the latter.
 >
 > *Source: lecture 9/30*
 
@@ -281,7 +281,7 @@ tags: [group-theory, math493]
 ^cor-43-11
 
 > [!proof]+ Proof
-> For $n \geq 5$ this is [[§43 Simple Groups#^thm-43-9|WS 7.5]]. $A_1$ and $A_2$ are trivial, hence not simple. $A_3 = \langle (1\,2\,3) \rangle$ has prime order $3$, hence is simple ([[§43 Simple Groups#^thm-43-1|Abelian Simple Groups]]). $A_4$ is not simple: $V$ is a normal subgroup with $\{e\} \neq V \neq A_4$ ([[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]]).
+> For $n \geq 5$ this is [[§43 Simple Groups#^thm-43-9|WS 7.5]]. $A_1$ and $A_2$ are trivial, hence not simple. $A_3 = \langle (1\,2\,3) \rangle$ has prime order $3$, hence is simple ([[§43 Simple Groups#^thm-43-1|Abelian Simple Groups]]). $A_4$ is not simple: $K$ is a normal subgroup with $\{e\} \neq K \neq A_4$ ([[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]]).
 
 ^pf-43-11
 
@@ -342,7 +342,7 @@ tags: [group-theory, math493]
 ^pf-43-13
 
 > [!example] Example §43.3: The Two Exceptions
-> $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$. Neither is simple: $A_3 \trianglelefteq S_3$, and the Klein four-group $V$ is normal in $A_4$ ([[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]], above).
+> $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$. Neither is simple: $A_3 \trianglelefteq S_3$, and the Klein four-group $K$ is normal in $A_4$ ([[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]], above).
 >
 > *Source: WS 7*
 

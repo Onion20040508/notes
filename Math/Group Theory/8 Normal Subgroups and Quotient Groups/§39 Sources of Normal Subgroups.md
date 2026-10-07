@@ -159,14 +159,14 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 > - This is condition (2) of [[§38 Normal Subgroups#^thm-38-3|Five Characterizations of Normality]]; used to prove [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].
 
 > [!example] Example §39.3: Normal Subgroups of $S_3$ and $S_4$
-> (For $S_3$, compare the lattice in [[§13 The Symmetric Group S₃#^prop-13-1|the figure of §13]].) In the language of [[· 7 Conjugacy and the Center|Chapter 7]]: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits — stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $V = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
+> (For $S_3$, compare the lattice in [[§13 The Symmetric Group S₃#^prop-13-1|the figure of §13]].) In the language of [[· 7 Conjugacy and the Center|Chapter 7]]: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits — stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
 
 ^ex-39-3
 
 ![[m493-36-2.svg]]
-*The normal subgroups of $S_4$ as unions of conjugacy classes (class sizes in parentheses): $V$ (red) is $\{e\}$ together with the class of type $2^2$, and $A_4$ (blue) adds the eight $3$-cycles. Apart from $\{e\}$ and $S_4$, no other union of classes containing $e$ has a size dividing $24$.*
+*The normal subgroups of $S_4$ as unions of conjugacy classes (class sizes in parentheses): $K$ (red) is $\{e\}$ together with the class of type $2^2$, and $A_4$ (blue) adds the eight $3$-cycles. Apart from $\{e\}$ and $S_4$, no other union of classes containing $e$ has a size dividing $24$.*
 
-> [!theorem] Proposition §39.8: Normal Subgroups of $GL_2(\mathbb{R})$
+> [!theorem] Proposition §39.9: Normal Subgroups of $GL_2(\mathbb{R})$
 > In $GL_2(\mathbb{R})$:
 > 1. the subgroup of invertible diagonal matrices is *not* normal;
 > 2. the subgroup of invertible upper triangular matrices is *not* normal;
@@ -175,9 +175,9 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 >
 > *Source: WS 6.3*
 
-^prop-39-8
+^prop-39-9
 
 > [!proof]- Proof
 > *[To be proved.]*
 
-^pf-39-8
+^pf-39-9
