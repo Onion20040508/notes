@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C1a Preliminaries
 ↑ [[Quantum Field Theory]] · [[· C1b Classical Field Theory]] →
 
-**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (22), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (4), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (19), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (45)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (20), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (74), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (39), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (52), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
+**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (22), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (4), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (19), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (10), [[· CA Mathematical Methods|CA Mathematical Methods]] (45)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (20), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (74), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (39), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (60), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
 
 ## Sections
 - [[§C1a.1 Why Quantum Field Theory]] — 
@@ -56,6 +56,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|§C1a.6.2]] The Generators Reproduce ω
 - [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|§C1a.6.3]] Rotations and Boosts as Exponentials
 - [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|§C1a.6.4]] Every Exponential Is Proper Orthochronous
+- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|§C1a.6.5]] The Rotation and Boost Generators as 4×4 Matrices
+- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|§C1a.6.6]] The Rotation Matrices in the Vector Representation
+- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|§C1a.6.7]] The Boost Matrices in the Vector Representation
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|§C1a.7.1]] Maxwell's Equations in Heaviside–Lorentz Form
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Duality Exchanges E and B; the Two Invariants
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] E ± iB: the Self-Dual Halves of F

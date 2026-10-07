@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (74), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (21), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (96), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (99), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8)
 
 ## Sections
 - [[§C3.1 Groups, Algebras and Representations of Rotations]] — 

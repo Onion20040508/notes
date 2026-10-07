@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C5a.3 The Lorentz Action on Spinor Space]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.5 Chirality and Weyl Spinors]] →
 
-*Sources: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "The covariance of $\gamma^\mu$: finite transformations"), §8.2 (Weyl spinors: Derivations "How the two halves transform", "The double cover made explicit", "The left-handed Weyl matrices are this covering"), §8.3 (Principle "Invariant tensors with mixed slots"), Ch. 10 §10.3 · PHY 513 Lecture 7 (Larsen), Part B · PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$", "Interpretation") and Part C · Peskin & Schroeder, §3.2, pp. 42–44, eqs. (3.29), (3.36)–(3.42), §3.5, eqs. (3.108)–(3.110) · Yu Zhao-Huan, 量子场论讲义, Exercise 3.7, eqs. (3.259)–(3.268), §5.1, eqs. (5.17)–(5.31), §5.2, eqs. (5.55)–(5.61), (5.74) · the user's pre-course notes, §5.1, §5.2 (Remark "SL(2,C) made explicit"; Note "Four linear spaces tied to Lorentz transformations").*
+*Sources: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "The covariance of $\gamma^\mu$: finite transformations"), §8.2 (Weyl spinors: Derivations "How the two halves transform", "The double cover made explicit", "The left-handed Weyl matrices are this covering"), §8.3 (Principle "Invariant tensors with mixed slots"), Ch. 10 §10.3 · PHY 513 Lecture 7 (Larsen), Part B · PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$", "Interpretation") and Part C · Peskin & Schroeder, §3.2, pp. 42–44, eqs. (3.29), (3.36)–(3.42), §3.5, eqs. (3.108)–(3.110) · Yu Zhao-Huan, 量子场论讲义, Exercise 3.7, eqs. (3.259)–(3.268), §5.1, eqs. (5.17)–(5.31), §5.2, eqs. (5.55)–(5.61), (5.74) · the user's pre-course notes, §5.1, §5.2 (Remark "SL(2,C) made explicit"; Note "Four linear spaces tied to Lorentz transformations") · for the matrices entry by entry: PS §3.3, eqs. (3.48)–(3.49); PHY 513 Lecture 9, Part A; the user's PHY 513 notes, Ch. 9 §9.3; Sakurai §3.2.5, as in QM §C5.2.*
 
 Which *group* acts on spinor space, and how do the $\gamma$ matrices behave under it? [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] gave the action of the Lorentz algebra (layer 4) and found two halves, $(\frac12, 0)$ and $(0, \frac12)$, on which [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]] gives $2\times2$ matrices at a complex angle, defined only up to sign on $SO^+(1,3)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-5|Theorem §C3.3.5]]); the rotation case, $SU(2) \to SO(3)$, is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]] and [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]]. This section adds **layer 5**, the group: the Weyl matrices $\Lambda_L$, $\Lambda_R$, the group $SL(2, \mathbb C)$ they form, four-vectors as $2\times2$ Hermitian matrices, the covering map $SL(2, \mathbb C) \to SO^+(1,3)$ with kernel $\pm\mathbb 1$, and the integration of every $(j_+, j_-)$ (the integer ones to $SO^+(1,3)$ itself). On $V$ the group acts by $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$, and the $\gamma$'s acquire their last structure: a Minkowski index, which makes $\gamma^\mu$ an invariant tensor — fixed by a Lorentz transformation, though not by a change of basis of $V$. Three different transformations that act on spinor indices are kept apart at the end.
 
@@ -379,7 +379,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > **What the derivation shows**
 > - The Dirac representation is reducible: the halves never mix under rotations or boosts. If the lower half vanishes in one frame, it vanishes in all, which could never happen for a four-vector.
-> - Half the angle and half the rapidity appear in every spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|Remark: Why half the angle]]).
+> - Half the angle and half the rapidity appear in every spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|Remark: Why half the angle]]); entry by entry for any axis: Theorems §C5a.4.13–§C5a.4.14 below.
 > - Used next: boosting rest-frame spinors ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|Theorem §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]]); the Weyl form of the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|Theorem §C5a.7.10]]).
 
 ^der-c5a-4-9
@@ -400,7 +400,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > | rotation by $2\pi$ | $+\mathbb 1$ | $-\mathbb 1$ |
 > | fixed by $\Lambda$? | yes | up to sign: a representation of $SL(2, \mathbb C)$ |
 >
-> Both matrices are $4\times4$ for unrelated reasons: $\Lambda$ because spacetime has four dimensions, $\Lambda_{1/2}$ because the Clifford algebra needs four components (Theorem §C5a.1.6). Relations such as $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ hold only for a matched pair built from the same $\omega$ (checked numerically in the user's notes, matched and mismatched). This is why the lecture calls $\psi$ a four-component *column*, not a four-vector.
+> Both matrices are $4\times4$ for unrelated reasons: $\Lambda$ because spacetime has four dimensions, $\Lambda_{1/2}$ because the Clifford algebra needs four components (Theorem §C5a.1.6). Relations such as $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ hold only for a matched pair built from the same $\omega$ (checked numerically in the user's notes, matched and mismatched). This is why the lecture calls $\psi$ a four-component *column*, not a four-vector. Both matrices written out entry by entry, for rotations about and boosts along any axis: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]] (vector side: [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]); one rotation and one boost side by side, with the generators and the check of $\gamma^\mu$ entry by entry: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "From six numbers to two matrices"; Principle "Transforming as a vector and as a spinor, side by side"; paragraph "Same dimension, different representation")*
 
@@ -533,6 +533,216 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 
 ^rem-c5a-4-4
 
+## The matrices entry by entry
+
+Theorem §C5a.4.9 gives $\Lambda_{1/2}$ as a pair of $2\times2$ exponentials. Here the rotations and boosts about and along an arbitrary axis are written as full $4\times4$ matrices in the chiral basis, next to the vector matrices of the same parameters ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]), and the covariance of $\gamma^\mu$ (Theorem §C5a.4.11) is checked entry by entry. Throughout, $\hat{\mathbf n} = (n^1, n^2, n^3)$ is a unit vector and
+
+$$
+\hat{\mathbf n}\cdot\boldsymbol\sigma = \begin{pmatrix} n^3 & n^1 - in^2 \\ n^1 + in^2 & -n^3 \end{pmatrix} .
+$$
+
+> [!theorem] Theorem §C5a.4.13: The Rotation Matrices in the Dirac Representation, Entry by Entry
+> In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]), with the rotation generators $J_k = \frac12\Sigma^k$ ([[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]) and the parameters of the vector rotations in [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]]:
+> 1. **Rotation about $z$** by $\theta$: $\Lambda_{1/2} = e^{-i\theta J_3} = \operatorname{diag}\bigl(e^{-i\theta/2}, e^{i\theta/2}, e^{-i\theta/2}, e^{i\theta/2}\bigr)$.
+> 2. **Rotation about** $\hat{\mathbf n}$ by $\theta$, with $c = \cos\frac\theta2$, $s = \sin\frac\theta2$:
+>
+> $$
+> \Lambda_{1/2} = e^{-i\theta\,\hat{\mathbf n}\cdot\mathbf J} = \begin{pmatrix} U & 0 \\ 0 & U \end{pmatrix}, \quad U = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2} = c\,\mathbb 1 - is\,\hat{\mathbf n}\cdot\boldsymbol\sigma, \quad \Lambda_{1/2} = \begin{pmatrix} c - isn^3 & -is(n^1 - in^2) & 0 & 0 \\ -is(n^1 + in^2) & c + isn^3 & 0 & 0 \\ 0 & 0 & c - isn^3 & -is(n^1 - in^2) \\ 0 & 0 & -is(n^1 + in^2) & c + isn^3 \end{pmatrix} .
+> $$
+>
+> The two blocks are equal and $U \in SU(2)$, so $\Lambda_{1/2}$ is unitary; $U$ is the spin-½ rotation of [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]]. At $\theta = 2\pi$, $\Lambda_{1/2} = -\mathbb 1_4$; at $\theta = 4\pi$, $\Lambda_{1/2} = +\mathbb 1_4$.
+>
+> *Source: PS §3.2, eq. (3.37) (infinitesimal) · PHY 513 Lecture 7, Part B (slide "Spinors and Rotation") · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation", Example 1: rotation about $z$) · Sakurai §3.2.5, eqs. (3.60)–(3.63), as in QM §C5.2 (the $2\times2$ block) · the $4\times4$ matrix about $\hat{\mathbf n}$ written here (checked numerically)*
+
+^thm-c5a-4-13
+
+> [!derivation]- Derivation
+> **1. The exponent.** By Theorem §C5a.4.9, step 1, with $\boldsymbol\theta = \theta\hat{\mathbf n}$ and $\boldsymbol\eta = 0$: $-i\theta\,\hat{\mathbf n}\cdot\mathbf J = -i\theta\,n^k\cdot\frac12\operatorname{diag}(\sigma^k, \sigma^k) = \operatorname{diag}\bigl(-\frac{i\theta}2\hat{\mathbf n}\cdot\boldsymbol\sigma,\ -\frac{i\theta}2\hat{\mathbf n}\cdot\boldsymbol\sigma\bigr)$. The exponential of a block-diagonal matrix is block diagonal with the exponentials of the blocks (Derivation §C5a.4.9, step 2), so $\Lambda_{1/2} = \operatorname{diag}(U, U)$ with $U = e^{-i\theta\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$.
+>
+> **2. The square of the axis matrix.** Multiplying out with the displayed $\hat{\mathbf n}\cdot\boldsymbol\sigma$:
+>
+> $$
+> (\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \begin{pmatrix} (n^3)^2 + (n^1 - in^2)(n^1 + in^2) & n^3(n^1 - in^2) - (n^1 - in^2)n^3 \\ (n^1 + in^2)n^3 - n^3(n^1 + in^2) & (n^1 + in^2)(n^1 - in^2) + (n^3)^2 \end{pmatrix} = \begin{pmatrix} |\hat{\mathbf n}|^2 & 0 \\ 0 & |\hat{\mathbf n}|^2 \end{pmatrix} = \mathbb 1 ,
+> $$
+>
+> using $(n^1 - in^2)(n^1 + in^2) = (n^1)^2 + (n^2)^2$ (the same as [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], 3, with $\mathbf a = \mathbf b = \hat{\mathbf n}$).
+>
+> **3. The series, for any complex number a.** By step 2, $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^{2k} = \mathbb 1$ and $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^{2k+1} = \hat{\mathbf n}\cdot\boldsymbol\sigma$, so splitting the exponential series into even and odd terms,
+>
+> $$
+> e^{a\,\hat{\mathbf n}\cdot\boldsymbol\sigma} = \Bigl(\sum_{k\ge0}\frac{a^{2k}}{(2k)!}\Bigr)\mathbb 1 + \Bigl(\sum_{k\ge0}\frac{a^{2k+1}}{(2k+1)!}\Bigr)\hat{\mathbf n}\cdot\boldsymbol\sigma = \cosh a\,\mathbb 1 + \sinh a\,\hat{\mathbf n}\cdot\boldsymbol\sigma .
+> $$
+>
+> (This step is used again, with real $a$, for the boosts: Theorem §C5a.4.14.)
+>
+> **4. Imaginary a (part 2).** For $a = -\frac{i\theta}2$: $\cosh(-\frac{i\theta}2) = \cos\frac\theta2 = c$ and $\sinh(-\frac{i\theta}2) = -i\sin\frac\theta2 = -is$ (from $\cosh ix = \cos x$, $\sinh ix = i\sin x$ and the parity of $\cosh$, $\sinh$). So $U = c\,\mathbb 1 - is\,\hat{\mathbf n}\cdot\boldsymbol\sigma$; inserting the entries of $\hat{\mathbf n}\cdot\boldsymbol\sigma$ gives $U_{11} = c - isn^3$, $U_{12} = -is(n^1 - in^2)$, $U_{21} = -is(n^1 + in^2)$, $U_{22} = c + isn^3$, placed in both diagonal blocks.
+>
+> **5. About z (part 1).** For $\hat{\mathbf n} = \hat{\mathbf z}$, $\hat{\mathbf n}\cdot\boldsymbol\sigma = \sigma^3 = \operatorname{diag}(1, -1)$, so $U = \operatorname{diag}(c - is, c + is) = \operatorname{diag}(e^{-i\theta/2}, e^{i\theta/2})$ (Euler's formula), in both blocks.
+>
+> **6. Unitary, unit determinant.** $U^\dagger = c\,\mathbb 1 + is\,\hat{\mathbf n}\cdot\boldsymbol\sigma$ ($\hat{\mathbf n}\cdot\boldsymbol\sigma$ is Hermitian), and all four terms of $U^\dagger U = c^2\,\mathbb 1 - ics\,\hat{\mathbf n}\cdot\boldsymbol\sigma + ics\,\hat{\mathbf n}\cdot\boldsymbol\sigma + s^2(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = (c^2 + s^2)\mathbb 1 = \mathbb 1$. $\det U = (c - isn^3)(c + isn^3) - (-is)^2(n^1 - in^2)(n^1 + in^2) = c^2 + s^2(n^3)^2 + s^2\bigl((n^1)^2 + (n^2)^2\bigr) = c^2 + s^2 = 1$. So $U \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]), as [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], 4, says for every rotation.
+>
+> **7. 2π and 4π.** At $\theta = 2\pi$: $c = \cos\pi = -1$, $s = \sin\pi = 0$, so $U = -\mathbb 1$ and $\Lambda_{1/2} = -\mathbb 1_4$, while the vector matrix of the same parameters is $\mathbb 1$ (Theorem §C1a.6.6). At $\theta = 4\pi$: $c = \cos2\pi = 1$, $s = 0$, and $\Lambda_{1/2} = \mathbb 1_4$.
+>
+> **What the derivation shows**
+> - Every entry is a function of $\theta/2$: the rotation generators have eigenvalues $\pm\frac12$ where the vector ones have $\pm1, 0$ ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). Hence the period $4\pi$, and $-\mathbb 1_4$ at $2\pi$: the Dirac representation is a spinor representation ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-2|Def. §C3.3.2]]).
+> - The two Weyl halves rotate by the same unitary $U$, because $J_k$ is the same in both blocks: rotations cannot tell $\psi_L$ from $\psi_R$; only boosts can (Theorem §C5a.4.14).
+> - Used next: the side-by-side comparison and the $\gamma$ check (Example §C5a.4.1).
+
+^der-c5a-4-13
+
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-9|Theorem §C5a.4.9]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]]
+
+> [!example] Example §C5a.4.1: One Rotation, Two Matrices
+> Take the rotation by $\theta$ about $z$, $\omega_{12} = -\omega_{21} = \theta$, and compare its two matrices: the vector one ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]]) and the Dirac one ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|Theorem §C5a.4.13]]), and their generators $J_3$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]).
+>
+> *Generators* (vector left, spinor right):
+>
+> $$
+> J_3^{\rm vec} = \begin{pmatrix} 0&0&0&0\\ 0&0&-i&0\\ 0&i&0&0\\ 0&0&0&0 \end{pmatrix}\ \text{(eigenvalues } 1, -1, 0, 0\text{)}, \qquad J_3^{\rm Dirac} = \frac12\begin{pmatrix} 1&0&0&0\\ 0&-1&0&0\\ 0&0&1&0\\ 0&0&0&-1 \end{pmatrix}\ \text{(eigenvalues } \tfrac12, -\tfrac12, \tfrac12, -\tfrac12\text{)} .
+> $$
+>
+> *Matrices*, for general $\theta$ and for $\theta = \frac\pi2$ ($e^{\mp i\pi/4} = (1 \mp i)/\sqrt2$):
+>
+> $$
+> R_z(\theta) = \begin{pmatrix} 1&0&0&0\\ 0&\cos\theta&-\sin\theta&0\\ 0&\sin\theta&\cos\theta&0\\ 0&0&0&1 \end{pmatrix}, \quad \Lambda_{1/2} = \begin{pmatrix} e^{-i\theta/2}&0&0&0\\ 0&e^{i\theta/2}&0&0\\ 0&0&e^{-i\theta/2}&0\\ 0&0&0&e^{i\theta/2} \end{pmatrix}; \qquad R_z(\tfrac\pi2) = \begin{pmatrix} 1&0&0&0\\ 0&0&-1&0\\ 0&1&0&0\\ 0&0&0&1 \end{pmatrix}, \quad \Lambda_{1/2} = \frac1{\sqrt2}\begin{pmatrix} 1-i&0&0&0\\ 0&1+i&0&0\\ 0&0&1-i&0\\ 0&0&0&1+i \end{pmatrix} .
+> $$
+>
+> *Reading.* An eigenvalue $m$ of $J_3$ becomes the phase $e^{-im\theta}$: $m = \pm1, 0$ gives entries in $\theta$ (and the untouched $t$, $z$), $m = \pm\frac12$ gives entries in $\theta/2$, and no spinor component is left alone. At $\theta = 2\pi$ the vector matrix is $\mathbb 1$ ($e^{\mp2\pi i} = e^0 = 1$) and the spinor matrix is $-\mathbb 1_4$ ($e^{\mp i\pi} = -1$): the vector representation is a tensor representation and the Dirac representation a spinor representation ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-2|Def. §C3.3.2]]). At $\theta = 4\pi$ both are $\mathbb 1$. The algebra is the same, $[J_1, J_2] = iJ_3$ in both, and the matched pair satisfies $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ with $\Lambda = R_z(\theta)$: at $\theta = \frac\pi2$, $\Lambda_{1/2}^{-1}\gamma^1\Lambda_{1/2} = -\gamma^2$ and $\Lambda_{1/2}^{-1}\gamma^2\Lambda_{1/2} = \gamma^1$ (derivation below).
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Principle "Transforming as a vector and as a spinor, side by side"; Example 1), Ch. 7 §7.3 (Derivation "What the vector generators do") · PHY 513 Lecture 7, Part B ("Unlike a 4-vector under rotation") · PS §3.1, eq. (3.20), §3.2, eq. (3.37) · the side-by-side matrices and the entry-by-entry checks written here (checked numerically)*
+
+^ex-c5a-4-1
+
+> [!derivation]- Derivation (the commutator and the covariance of γ, entry by entry)
+> $E_{AB}$ is the matrix with $1$ in row $A$, column $B$; $E_{AB}E_{CD} = \delta_{BC}E_{AD}$. In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]), rows and columns $A, B = 1, \dots, 4$,
+>
+> $$
+> \gamma^0 = \begin{pmatrix} 0&0&1&0\\ 0&0&0&1\\ 1&0&0&0\\ 0&1&0&0 \end{pmatrix}, \quad \gamma^1 = \begin{pmatrix} 0&0&0&1\\ 0&0&1&0\\ 0&-1&0&0\\ -1&0&0&0 \end{pmatrix}, \quad \gamma^2 = \begin{pmatrix} 0&0&0&-i\\ 0&0&i&0\\ 0&i&0&0\\ -i&0&0&0 \end{pmatrix}, \quad \gamma^3 = \begin{pmatrix} 0&0&1&0\\ 0&0&0&-1\\ -1&0&0&0\\ 0&1&0&0 \end{pmatrix} .
+> $$
+>
+> **1. [J₁, J₂] = iJ₃ for the vector.** In spacetime matrix units (rows and columns $0, \dots, 3$), $J_1 = -iE_{23} + iE_{32}$, $J_2 = iE_{13} - iE_{31}$, $J_3 = -iE_{12} + iE_{21}$ (Theorem §C1a.6.5). All four products:
+>
+> $$
+> J_1J_2 = (-i)(i)E_{23}E_{13} + (-i)(-i)E_{23}E_{31} + (i)(i)E_{32}E_{13} + (i)(-i)E_{32}E_{31} = 0 - E_{21} + 0 + 0, \qquad J_2J_1 = (i)(-i)E_{13}E_{23} + (i)(i)E_{13}E_{32} + (-i)(-i)E_{31}E_{23} + (-i)(i)E_{31}E_{32} = 0 - E_{12} + 0 + 0 .
+> $$
+>
+> So $[J_1, J_2] = E_{12} - E_{21}$, and $iJ_3 = i(-iE_{12} + iE_{21}) = E_{12} - E_{21}$: equal.
+>
+> **2. [J₁, J₂] = iJ₃ for the spinor.** $J_k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$, so $[J_1, J_2] = \frac14\operatorname{diag}([\sigma^1, \sigma^2], [\sigma^1, \sigma^2])$. With $\sigma^1\sigma^2 = \begin{pmatrix} 0&1\\ 1&0 \end{pmatrix}\begin{pmatrix} 0&-i\\ i&0 \end{pmatrix} = \begin{pmatrix} i&0\\ 0&-i \end{pmatrix} = i\sigma^3$ and $\sigma^2\sigma^1 = \begin{pmatrix} -i&0\\ 0&i \end{pmatrix} = -i\sigma^3$: $[\sigma^1, \sigma^2] = 2i\sigma^3$, and $[J_1, J_2] = \frac14\operatorname{diag}(2i\sigma^3, 2i\sigma^3) = i\cdot\frac12\Sigma^3 = iJ_3$. Same relation ([[§C3.2 The Lorentz Algebra#^thm-c3-2-1|Theorem §C3.2.1]]), different matrices.
+>
+> **3. Conjugating by a diagonal matrix.** $\Lambda_{1/2} = D = \operatorname{diag}(\alpha, \bar\alpha, \alpha, \bar\alpha)$ with $\alpha = e^{-i\theta/2}$, and $D^{-1} = \operatorname{diag}(\bar\alpha, \alpha, \bar\alpha, \alpha)$. For any matrix $X$, $(D^{-1}XD)_{AB} = (D^{-1})_{AA}\,X_{AB}\,D_{BB}$: each entry is multiplied by a factor $f_{AB}$. The $\gamma$'s have entries only at the positions $(1,3), (2,4), (3,1), (4,2)$ ($\gamma^0$, $\gamma^3$) and $(1,4), (2,3), (3,2), (4,1)$ ($\gamma^1$, $\gamma^2$), where
+>
+> $$
+> f_{13} = \bar\alpha\alpha = 1,\ f_{24} = \alpha\bar\alpha = 1,\ f_{31} = 1,\ f_{42} = 1; \qquad f_{14} = \bar\alpha\bar\alpha = e^{i\theta},\ f_{23} = \alpha\alpha = e^{-i\theta},\ f_{32} = e^{i\theta},\ f_{41} = e^{-i\theta} .
+> $$
+>
+> **4. μ = 0 and μ = 3.** All factors are $1$: $\Lambda_{1/2}^{-1}\gamma^0\Lambda_{1/2} = \gamma^0$ and $\Lambda_{1/2}^{-1}\gamma^3\Lambda_{1/2} = \gamma^3$. The vector side: row $0$ of $R_z(\theta)$ is $(1, 0, 0, 0)$ and row $3$ is $(0, 0, 0, 1)$, so $\Lambda^0{}_\nu\gamma^\nu = \gamma^0$, $\Lambda^3{}_\nu\gamma^\nu = \gamma^3$. Equal.
+>
+> **5. μ = 1.** Left side, entries of $\gamma^1$ times the factors: $(1,4)$: $e^{i\theta}$; $(2,3)$: $e^{-i\theta}$; $(3,2)$: $-e^{i\theta}$; $(4,1)$: $-e^{-i\theta}$. Right side, row $1$ of $R_z(\theta)$: $\Lambda^1{}_\nu\gamma^\nu = \cos\theta\,\gamma^1 - \sin\theta\,\gamma^2$, with entries $(1,4)$: $\cos\theta - \sin\theta(-i) = e^{i\theta}$; $(2,3)$: $\cos\theta - i\sin\theta = e^{-i\theta}$; $(3,2)$: $-\cos\theta - i\sin\theta = -e^{i\theta}$; $(4,1)$: $-\cos\theta - \sin\theta(-i) = -e^{-i\theta}$. Equal.
+>
+> **6. μ = 2.** Left side: $(1,4)$: $-ie^{i\theta}$; $(2,3)$: $ie^{-i\theta}$; $(3,2)$: $ie^{i\theta}$; $(4,1)$: $-ie^{-i\theta}$. Right side, row $2$: $\Lambda^2{}_\nu\gamma^\nu = \sin\theta\,\gamma^1 + \cos\theta\,\gamma^2$, entries $(1,4)$: $\sin\theta - i\cos\theta = -ie^{i\theta}$; $(2,3)$: $\sin\theta + i\cos\theta = ie^{-i\theta}$; $(3,2)$: $-\sin\theta + i\cos\theta = ie^{i\theta}$; $(4,1)$: $-\sin\theta - i\cos\theta = -ie^{-i\theta}$. Equal.
+>
+> **7. θ = π/2 and θ = 2π.** At $\theta = \frac\pi2$, $e^{\pm i\theta} = \pm i$, and step 5 gives entries $i, -i, -i, i$ at $(1,4), (2,3), (3,2), (4,1)$, which are those of $-\gamma^2$; step 6 gives $1, 1, -1, -1$, those of $\gamma^1$. At $\theta = 2\pi$ every factor is $1$ and $\Lambda_{1/2} = -\mathbb 1_4$ conjugates trivially: the sign of the spinor matrix is invisible in the covariance of $\gamma$.
+>
+> **What the derivation shows**
+> - Each entry of $\gamma^\mu$ joins a component with phase $e^{\mp i\theta/2}$ to one with phase $e^{\pm i\theta/2}$, and the two half-angle phases multiply to the full-angle phase $e^{\pm i\theta}$ of the vector: $\gamma^\mu$ has one spinor slot of each kind ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-4|Def. §C5a.4.4]]), and this is how the vector angle is rebuilt from two spinor half-angles.
+> - $\pm\Lambda_{1/2}$ give the same conjugation (step 7), so the covariance of $\gamma$ cannot see the sign that distinguishes the two representations; Theorem §C5a.4.11 in its general form, here made visible.
+
+^der-ex-c5a-4-1
+
+*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]
+
+> [!theorem] Theorem §C5a.4.14: The Boost Matrices in the Dirac Representation, Entry by Entry
+> In the chiral basis, with the boost generators $K_k = -\frac i2\operatorname{diag}(\sigma^k, -\sigma^k)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]) and the parameters of the vector boosts in [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]:
+> 1. **Boost along $z$** to rapidity $\eta$: $\Lambda_{1/2} = e^{-i\eta K_3} = \operatorname{diag}\bigl(e^{-\eta/2}, e^{\eta/2}, e^{\eta/2}, e^{-\eta/2}\bigr)$.
+> 2. **Boost along** $\hat{\mathbf n}$, with $C = \cosh\frac\eta2$, $S = \sinh\frac\eta2$:
+>
+> $$
+> \Lambda_{1/2} = e^{-i\eta\,\hat{\mathbf n}\cdot\mathbf K} = \begin{pmatrix} e^{-\eta\hat{\mathbf n}\cdot\boldsymbol\sigma/2} & 0 \\ 0 & e^{+\eta\hat{\mathbf n}\cdot\boldsymbol\sigma/2} \end{pmatrix}, \quad e^{\mp\eta\hat{\mathbf n}\cdot\boldsymbol\sigma/2} = C\,\mathbb 1 \mp S\,\hat{\mathbf n}\cdot\boldsymbol\sigma, \quad \Lambda_{1/2} = \begin{pmatrix} C - Sn^3 & -S(n^1 - in^2) & 0 & 0 \\ -S(n^1 + in^2) & C + Sn^3 & 0 & 0 \\ 0 & 0 & C + Sn^3 & S(n^1 - in^2) \\ 0 & 0 & S(n^1 + in^2) & C - Sn^3 \end{pmatrix} .
+> $$
+>
+> The blocks are Hermitian, positive and inverse to each other (opposite signs), so $\Lambda_{1/2}$ is not unitary for $\eta \ne 0$. Part 1 is [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|Theorem §C5a.9.5]] by entries; part 2 with $\hat{\mathbf n} = \hat{\mathbf p}$, $\cosh\eta = E_{\mathbf p}/m$ is the boost from rest $\Lambda_{1/2}(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]].
+>
+> *Source: PS §3.2, eq. (3.37) (infinitesimal), §3.3, eq. (3.49) (boost along $z$) · PHY 513 Lecture 7, Part B (slide "Spinors and Boosts"); Lecture 9, Part A, Step 4 · the user's PHY 513 notes, Ch. 8 §8.1 (Example 2: boost along $x$), Ch. 9 §9.3 (Derivations "Step 4: the spinor boost along z, as a square root", "Any direction (filled in)") · Yu §5.1, eq. (5.14) · the $4\times4$ matrix along $\hat{\mathbf n}$ written here (checked numerically)*
+
+^thm-c5a-4-14
+
+> [!derivation]- Derivation
+> **1. The exponent.** By Theorem §C5a.4.9, step 1, with $\boldsymbol\theta = 0$ and $\boldsymbol\eta = \eta\hat{\mathbf n}$: $-i\eta\,\hat{\mathbf n}\cdot\mathbf K = -i\eta\,n^k\bigl(-\frac i2\bigr)\operatorname{diag}(\sigma^k, -\sigma^k) = \operatorname{diag}\bigl(-\frac\eta2\hat{\mathbf n}\cdot\boldsymbol\sigma,\ +\frac\eta2\hat{\mathbf n}\cdot\boldsymbol\sigma\bigr)$, since $(-i)(-\frac i2) = -\frac12$. Block by block, $\Lambda_{1/2} = \operatorname{diag}(e^{-\eta\hat{\mathbf n}\cdot\boldsymbol\sigma/2}, e^{+\eta\hat{\mathbf n}\cdot\boldsymbol\sigma/2})$.
+>
+> **2. The blocks.** Step 3 of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-c5a-4-13|Derivation §C5a.4.13]] with $a = \mp\frac\eta2$ (real): $e^{\mp\eta\hat{\mathbf n}\cdot\boldsymbol\sigma/2} = \cosh\frac\eta2\,\mathbb 1 \mp \sinh\frac\eta2\,\hat{\mathbf n}\cdot\boldsymbol\sigma$ ($\cosh$ even, $\sinh$ odd). Inserting the entries of $\hat{\mathbf n}\cdot\boldsymbol\sigma$: upper block $\begin{pmatrix} C - Sn^3 & -S(n^1 - in^2) \\ -S(n^1 + in^2) & C + Sn^3 \end{pmatrix}$, lower block the same with $S \to -S$.
+>
+> **3. Along z (part 1).** For $\hat{\mathbf n} = \hat{\mathbf z}$, $\hat{\mathbf n}\cdot\boldsymbol\sigma = \operatorname{diag}(1, -1)$: upper block $\operatorname{diag}(C - S, C + S) = \operatorname{diag}(e^{-\eta/2}, e^{\eta/2})$, lower block $\operatorname{diag}(C + S, C - S) = \operatorname{diag}(e^{\eta/2}, e^{-\eta/2})$, using $C \pm S = e^{\pm\eta/2}$. The signs follow from $S^{03} = -\frac i2\operatorname{diag}(\sigma^3, -\sigma^3)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]), as in [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]], step 1.
+>
+> **4. Hermitian, positive, mutually inverse, not unitary.** $C$, $S$ are real and $\hat{\mathbf n}\cdot\boldsymbol\sigma$ is Hermitian, so each block is Hermitian; on the eigenvectors of $\hat{\mathbf n}\cdot\boldsymbol\sigma$ (eigenvalues $\pm1$, by step 2 of Derivation §C5a.4.13) the upper block has eigenvalues $C \mp S = e^{\mp\eta/2} > 0$. The product of the blocks, all four terms: $(C - S\,\hat{\mathbf n}\cdot\boldsymbol\sigma)(C + S\,\hat{\mathbf n}\cdot\boldsymbol\sigma) = C^2 + CS\,\hat{\mathbf n}\cdot\boldsymbol\sigma - CS\,\hat{\mathbf n}\cdot\boldsymbol\sigma - S^2(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = (C^2 - S^2)\mathbb 1 = \mathbb 1$. Unitarity would need the block's square (it is Hermitian) to be $\mathbb 1$, but $(C\,\mathbb 1 - S\,\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = (C^2 + S^2)\mathbb 1 - 2CS\,\hat{\mathbf n}\cdot\boldsymbol\sigma = \cosh\eta\,\mathbb 1 - \sinh\eta\,\hat{\mathbf n}\cdot\boldsymbol\sigma \ne \mathbb 1$ for $\eta \ne 0$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-5|Theorem §C5a.3.5]], 2).
+>
+> **5. The boost from rest.** For $\hat{\mathbf n} = \hat{\mathbf p}$, $\cosh\eta = E_{\mathbf p}/m$, $\sinh\eta = |\mathbf p|/m$, the squares in step 4 are $(E_{\mathbf p} \mp \mathbf p\cdot\boldsymbol\sigma)/m = p\cdot\sigma/m$, $p\cdot\bar\sigma/m$, and the blocks are their positive square roots: Theorem §C5a.9.8, not repeated here.
+>
+> **What the derivation shows**
+> - Every entry is a function of $\eta/2$: the boost generators have eigenvalues $\pm\frac i2$ where the vector ones have $\pm i, 0$. Squaring a block restores the full rapidity (step 4; [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-4|§C5a.9, Remark: Why a square root restores the full rapidity]]).
+> - The two Weyl halves are stretched oppositely, $\Lambda_L = \Lambda_R^{-1}$ for a pure boost ($\Lambda_R = (\Lambda_L^\dagger)^{-1}$ with $\Lambda_L$ Hermitian, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], 2): boosts distinguish $(\frac12, 0)$ from $(0, \frac12)$, rotations do not (Theorem §C5a.4.13).
+> - Used next: the side-by-side comparison and the $\gamma$ check (Example §C5a.4.2).
+
+^der-c5a-4-14
+
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-9|Theorem §C5a.4.9]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-c5a-4-13|Derivation §C5a.4.13]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-5|Theorem §C5a.3.5]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]
+
+> [!example] Example §C5a.4.2: One Boost, Two Matrices
+> Take the boost to rapidity $\eta$ along $z$, $\omega_{03} = -\omega_{30} = \eta$, and concretely $v = \frac35$: $\gamma = \cosh\eta = \frac54$, $\gamma v = \sinh\eta = \frac34$, so $e^\eta = \cosh\eta + \sinh\eta = 2$, $\eta = \ln2$, $e^{\eta/2} = \sqrt2$. Compare its two matrices ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]]) and their generators $K_3$.
+>
+> *Generators* (vector left, spinor right):
+>
+> $$
+> K_3^{\rm vec} = \begin{pmatrix} 0&0&0&i\\ 0&0&0&0\\ 0&0&0&0\\ i&0&0&0 \end{pmatrix}\ \text{(eigenvalues } i, -i, 0, 0\text{)}, \qquad K_3^{\rm Dirac} = -\frac i2\begin{pmatrix} 1&0&0&0\\ 0&-1&0&0\\ 0&0&-1&0\\ 0&0&0&1 \end{pmatrix}\ \text{(eigenvalues } -\tfrac i2, \tfrac i2, \tfrac i2, -\tfrac i2\text{)} .
+> $$
+>
+> The real exponent $-i\eta K_3$ has eigenvalues $\eta, -\eta, 0, 0$ (on $e_0 + e_3$, $e_0 - e_3$, $e_1$, $e_2$) for the vector and $-\frac\eta2, \frac\eta2, \frac\eta2, -\frac\eta2$ for the spinor: this is the origin of $\eta$ against $\eta/2$.
+>
+> *Matrices*, for general $\eta$ and for $v = \frac35$:
+>
+> $$
+> \Lambda_z(\eta) = \begin{pmatrix} \cosh\eta&0&0&\sinh\eta\\ 0&1&0&0\\ 0&0&1&0\\ \sinh\eta&0&0&\cosh\eta \end{pmatrix}, \quad \Lambda_{1/2} = \begin{pmatrix} e^{-\eta/2}&0&0&0\\ 0&e^{\eta/2}&0&0\\ 0&0&e^{\eta/2}&0\\ 0&0&0&e^{-\eta/2} \end{pmatrix}; \qquad \Lambda_z = \begin{pmatrix} \frac54&0&0&\frac34\\ 0&1&0&0\\ 0&0&1&0\\ \frac34&0&0&\frac54 \end{pmatrix}, \quad \Lambda_{1/2} = \begin{pmatrix} \frac1{\sqrt2}&0&0&0\\ 0&\sqrt2&0&0\\ 0&0&\sqrt2&0\\ 0&0&0&\frac1{\sqrt2} \end{pmatrix} .
+> $$
+>
+> *Reading.* The vector matrix has $\cosh\eta$, $\sinh\eta$, i.e. eigenvalues $e^{\pm\eta} = 2, \frac12$ on the light-cone directions $e_0 \pm e_3$ and $1$ on $e_1$, $e_2$; the spinor matrix has $e^{\pm\eta/2} = \sqrt2, \frac1{\sqrt2}$, half the rapidity ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). It is real and positive, Hermitian, not unitary, and stretches $\psi_L$ and $\psi_R$ oppositely. Unlike a rotation, no value of $\eta \ne 0$ returns either matrix to $\mathbb 1$ (compare Example §C5a.4.1). The algebra is the same, $[K_1, K_2] = -iJ_3$ in both, and the matched pair satisfies $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$: for $v = \frac35$, $\Lambda_{1/2}^{-1}\gamma^0\Lambda_{1/2} = \frac54\gamma^0 + \frac34\gamma^3$ has the entries $2, \frac12, \frac12, 2$ (derivation below).
+>
+> *Source: PS §3.3, eqs. (3.48)–(3.49) · PHY 513 Lecture 9, Part A ("Standard Lorentz boost acting on a 4-vector"; Step 4) · the user's PHY 513 notes, Ch. 8 §8.1 (Principle "Transforming as a vector and as a spinor, side by side"; Example 2), Ch. 9 §9.3 · the numerical case and the entry-by-entry checks written here (checked numerically)*
+
+^ex-c5a-4-2
+
+> [!derivation]- Derivation (the commutator and the covariance of γ, entry by entry)
+> Notation and the $\gamma$ matrices as in the derivation under [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]]; $c = \cosh\eta$, $s = \sinh\eta$, so $c \pm s = e^{\pm\eta}$.
+>
+> **1. [K₁, K₂] = −iJ₃ for the vector.** $K_1 = i(E_{01} + E_{10})$, $K_2 = i(E_{02} + E_{20})$ (Theorem §C1a.6.5). All four products:
+>
+> $$
+> K_1K_2 = i^2\bigl(E_{01}E_{02} + E_{01}E_{20} + E_{10}E_{02} + E_{10}E_{20}\bigr) = -(0 + 0 + E_{12} + 0), \qquad K_2K_1 = i^2\bigl(E_{02}E_{01} + E_{02}E_{10} + E_{20}E_{01} + E_{20}E_{10}\bigr) = -(0 + 0 + E_{21} + 0) .
+> $$
+>
+> So $[K_1, K_2] = -E_{12} + E_{21}$, and $-iJ_3 = -i(-iE_{12} + iE_{21}) = -E_{12} + E_{21}$: equal.
+>
+> **2. [K₁, K₂] = −iJ₃ for the spinor.** $K_k = -\frac i2\operatorname{diag}(\sigma^k, -\sigma^k)$, so $K_1K_2 = (-\frac i2)^2\operatorname{diag}(\sigma^1\sigma^2, (-\sigma^1)(-\sigma^2)) = -\frac14\operatorname{diag}(i\sigma^3, i\sigma^3)$ and $K_2K_1 = -\frac14\operatorname{diag}(-i\sigma^3, -i\sigma^3)$ (the products of step 2 under Example §C5a.4.1). Hence $[K_1, K_2] = -\frac14\operatorname{diag}(2i\sigma^3, 2i\sigma^3) = -i\cdot\frac12\Sigma^3 = -iJ_3$. The minus sign, the same in both, is the Lorentz-specific one: two boosts commute into a rotation with the sign opposite to that of four-dimensional rotations ([[§C3.2 The Lorentz Algebra#^thm-c3-2-1|Theorem §C3.2.1]]).
+>
+> **3. The conjugation factors.** $\Lambda_{1/2} = D = \operatorname{diag}(b^{-1}, b, b, b^{-1})$ with $b = e^{\eta/2}$, $D^{-1} = \operatorname{diag}(b, b^{-1}, b^{-1}, b)$, and $f_{AB} = (D^{-1})_{AA}D_{BB}$ (step 3 under Example §C5a.4.1):
+>
+> $$
+> f_{13} = b\cdot b = e^{\eta},\ f_{24} = b^{-1}b^{-1} = e^{-\eta},\ f_{31} = b^{-1}b^{-1} = e^{-\eta},\ f_{42} = b\cdot b = e^{\eta}; \qquad f_{14} = b\,b^{-1} = 1,\ f_{23} = b^{-1}b = 1,\ f_{32} = 1,\ f_{41} = 1 .
+> $$
+>
+> **4. μ = 1 and μ = 2.** All factors at the positions of $\gamma^1$, $\gamma^2$ are $1$: both are unchanged. Rows $1$ and $2$ of $\Lambda_z$ are $e_1^{\mathsf T}$ and $e_2^{\mathsf T}$, so $\Lambda^1{}_\nu\gamma^\nu = \gamma^1$, $\Lambda^2{}_\nu\gamma^\nu = \gamma^2$. Equal.
+>
+> **5. μ = 0.** Left side, entries of $\gamma^0$ (all $1$) times the factors: $(1,3)$: $e^\eta$; $(2,4)$: $e^{-\eta}$; $(3,1)$: $e^{-\eta}$; $(4,2)$: $e^\eta$. Right side, row $0$ of $\Lambda_z$: $c\,\gamma^0 + s\,\gamma^3$, entries $(1,3)$: $c + s = e^\eta$; $(2,4)$: $c - s = e^{-\eta}$; $(3,1)$: $c - s = e^{-\eta}$; $(4,2)$: $c + s = e^\eta$. Equal. For $v = \frac35$: $2, \frac12, \frac12, 2$, i.e. $\frac54 \pm \frac34$.
+>
+> **6. μ = 3.** Left side, entries of $\gamma^3$ ($1, -1, -1, 1$ at $(1,3), (2,4), (3,1), (4,2)$) times the factors: $e^\eta$, $-e^{-\eta}$, $-e^{-\eta}$, $e^\eta$. Right side, row $3$: $s\,\gamma^0 + c\,\gamma^3$, entries $s + c = e^\eta$, $s - c = -e^{-\eta}$, $s - c = -e^{-\eta}$, $s + c = e^\eta$. Equal. For $v = \frac35$: $2, -\frac12, -\frac12, 2$, i.e. $\frac34 \pm \frac54$ with the signs of $\gamma^3$.
+>
+> **What the derivation shows**
+> - Each entry of $\gamma^0$, $\gamma^3$ joins a component stretched by $e^{\mp\eta/2}$ to one stretched by $e^{\pm\eta/2}$ in the conjugation, and the two half-rapidity factors multiply to $e^{\pm\eta}$, the eigenvalues of the vector boost on $e_0 \pm e_3$: the vector boost is rebuilt from two spinor half-boosts, as the rotation angle was in Example §C5a.4.1.
+> - The check needs the matched pair: with $\Lambda_{1/2}$ of rapidity $\eta$ and $\Lambda_z$ of another rapidity $\eta'$, step 5 would require $e^{\eta} = \cosh\eta' + \sinh\eta' = e^{\eta'}$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-2|Remark: One transformation, two matrices]]).
+
+^der-ex-c5a-4-2
+
+*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]] (and the derivation under it)
+
 ## Three transformations that act on spinor indices
 
 > [!caution] Caution: Three different transformations
@@ -563,4 +773,5 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-5|Theorem §C3.1.5]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-10|Theorem §C3.3.10]].
 > - $\gamma^\mu$ is an invariant tensor exactly as the Pauli matrices are an invariant vector of $SU(2)$ ($U^\dagger\sigma^iU = R_{ij}\sigma^j$), the relation behind the covering $SU(2) \to SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-6|Theorem §C5a.4.6]].
 > - Clifford multiplication being Lorentz equivariant is what makes $\slashed{\partial}\psi$ transform like $\psi$, hence the Dirac equation covariant and $\mathcal L$ a scalar; the same "invariant tensor" idea makes the Pauli matrices an invariant vector of $SU(2)$ — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-1|§C5a.7, Remark: What covariance shows and what it does not]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
+> - Rotations and boosts exponentiate by the same split of a series into even and odd powers, because the axis matrix squares to a multiple of the identity: $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \mathbb 1$ gives $\cos\frac\theta2$, $\cosh\frac\eta2$ for spinors, $[\hat{\mathbf n}]_\times^2 = -Q$ and $N_{\hat{\mathbf n}}^2 = \Pi$ give $\cos\theta$, $\cosh\eta$ for vectors — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]].
 > - A change of basis of $V$ and a Lorentz transformation act on the same spinor index but belong to different groups, and the Hilbert-space $U(\Lambda)$ acts on yet another space; the three are kept apart in the field transformation laws of C3 — [[§C3.4 How Fields Transform under the Lorentz Group#^def-c3-4-2|Def. §C3.4.2]], [[§C3.5 Quantum Poincaré Transformations#^pr-c3-5-8|Principle §C3.5.8]], [[§C3.5 Quantum Poincaré Transformations#^rem-c3-5-2|§C3.5, Remark: Two kinds of representation]].

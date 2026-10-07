@@ -173,6 +173,29 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 
 *Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-10|Theorem §C5a.1.10]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]
 
+> [!example] Example §C5a.3.1: The Six Spinor Generators as 4×4 Matrices
+> Write the generators of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]] entry by entry in the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]), as the rotation and boost generators $J_k = \frac12\varepsilon_{kij}S^{ij}$, $K_k = S^{0k}$ of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]] (rows and columns are the four components of $\psi = (\psi_L, \psi_R)$).
+>
+> *Rotations*, $J_k = \frac12\Sigma^k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$, the spin matrices of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-3|Def. §C5a.3.3]]:
+>
+> $$
+> J_1 = S^{23} = \frac12\begin{pmatrix} 0&1&0&0\\ 1&0&0&0\\ 0&0&0&1\\ 0&0&1&0 \end{pmatrix}, \qquad J_2 = S^{31} = \frac12\begin{pmatrix} 0&-i&0&0\\ i&0&0&0\\ 0&0&0&-i\\ 0&0&i&0 \end{pmatrix}, \qquad J_3 = S^{12} = \frac12\begin{pmatrix} 1&0&0&0\\ 0&-1&0&0\\ 0&0&1&0\\ 0&0&0&-1 \end{pmatrix} .
+> $$
+>
+> *Boosts*, $K_k = S^{0k} = -\frac i2\operatorname{diag}(\sigma^k, -\sigma^k)$:
+>
+> $$
+> K_1 = S^{01} = -\frac i2\begin{pmatrix} 0&1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&-1&0 \end{pmatrix}, \qquad K_2 = S^{02} = \frac12\begin{pmatrix} 0&-1&0&0\\ 1&0&0&0\\ 0&0&0&1\\ 0&0&-1&0 \end{pmatrix}, \qquad K_3 = S^{03} = -\frac i2\begin{pmatrix} 1&0&0&0\\ 0&-1&0&0\\ 0&0&-1&0\\ 0&0&0&1 \end{pmatrix} .
+> $$
+>
+> *Computation.* $J_1 = \frac12(\varepsilon_{123}S^{23} + \varepsilon_{132}S^{32}) = S^{23}$, likewise $J_2 = S^{31}$, $J_3 = S^{12}$; by Theorem §C5a.3.3, $S^{23} = \frac12\varepsilon^{231}\Sigma^1 = \frac12\Sigma^1$, $S^{31} = \frac12\Sigma^2$, $S^{12} = \frac12\Sigma^3$, and each $\sigma^k$ is placed twice on the diagonal. For the boosts, $-\frac i2\sigma^2 = -\frac i2\begin{pmatrix} 0&-i\\ i&0 \end{pmatrix} = \begin{pmatrix} 0&-\frac12\\ \frac12&0 \end{pmatrix}$ in the upper block and its negative in the lower block, which is why $K_2$ is real; $K_1$ and $K_3$ are $-\frac i2$ times real matrices. (All six checked numerically against $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$.)
+>
+> *Reading.* Each $J_k$ is Hermitian with eigenvalues $\frac12, \frac12, -\frac12, -\frac12$; each $K_k$ is anti-Hermitian with eigenvalues $\frac i2, \frac i2, -\frac i2, -\frac i2$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-5|Theorem §C5a.3.5]]); e.g. $K_3$ has $-\frac i2$ on the components $1$, $4$ and $+\frac i2$ on $2$, $3$. The vector generators of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]] have $\pm1, 0, 0$ and $\pm i, 0, 0$: half of each here, no zero, and every $2\times2$ block is spin $\frac12$ ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|Remark: Why half the angle]]). All six are block diagonal, $J_k$ equal in the two blocks and $K_k$ opposite. Since $(2J_k)^2 = (2iK_k)^2 = \mathbb 1_4$, their exponentials split into $\cos\frac\theta2$, $\sin\frac\theta2$ and $\cosh\frac\eta2$, $\sinh\frac\eta2$: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]].
+>
+> *Source: PS §3.2, eqs. (3.26)–(3.27) (the block form) · the user's PHY 513 notes, Ch. 8 §8.1, eq. (Sexplicit) · PHY 513 Lecture 8, Cheat Sheet I · the $4\times4$ entries written out here*
+
+^ex-c5a-3-1
+
 ## The Dirac representation is a spinor representation
 
 The classification of finite-dimensional representations is §C3.3; the three items it provides for this layer are recalled verbatim.
@@ -207,7 +230,7 @@ The classification of finite-dimensional representations is §C3.3; the three it
 *Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-1|Def. §C3.3.1]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-6|Theorem §C3.3.6]]
 
 > [!remark] Remark: Why half the angle
-> The rotation generator $\mathcal J^{12}$ of the vector representation has eigenvalues $\pm1$ (on $x \pm iy$) and $0$ twice (on $t$, $z$); the spinor generator $S^{12} = \frac12\Sigma^3$ has $\pm\frac12$. For boosts, $\mathcal J^{01}$ has $\pm i$ and $S^{01}$ has $\pm\frac i2$. Exponentiating $\theta$ times an eigenvalue $s$ gives the phase $e^{-is\theta}$: spin $1$ turns with the full angle, spin $\frac12$ with half of it, and the $2\pi$ sign is $e^{-i\pi} = -1$. The factor $\frac12$ in $S^{ij} = \frac12\varepsilon^{ijk}\Sigma^k$ is therefore essential; the user's notes record that the handwritten lecture notes omit it, while the Lecture 8 slides have it.
+> The rotation generator $\mathcal J^{12}$ of the vector representation has eigenvalues $\pm1$ (on $x \pm iy$) and $0$ twice (on $t$, $z$); the spinor generator $S^{12} = \frac12\Sigma^3$ has $\pm\frac12$. For boosts, $\mathcal J^{01}$ has $\pm i$ and $S^{01}$ has $\pm\frac i2$. Exponentiating $\theta$ times an eigenvalue $s$ gives the phase $e^{-is\theta}$: spin $1$ turns with the full angle, spin $\frac12$ with half of it, and the $2\pi$ sign is $e^{-i\pi} = -1$. The factor $\frac12$ in $S^{ij} = \frac12\varepsilon^{ijk}\Sigma^k$ is therefore essential; the user's notes record that the handwritten lecture notes omit it, while the Lecture 8 slides have it. The six generators as $4\times4$ matrices: [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]; next to the vector generators, with the matrices they exponentiate to: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]] (rotation), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]] (boost).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (paragraph "Why 'half'"), Caution "A missing ½ in the handwritten notes" · PHY 513 Lecture 8, Cheat Sheet I*
 

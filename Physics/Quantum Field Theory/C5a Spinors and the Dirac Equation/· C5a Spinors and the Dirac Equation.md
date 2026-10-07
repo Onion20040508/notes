@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (52), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (82), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (96), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (35), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (21), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (165)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (60), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (82), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (99), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (35), [[· CA Mathematical Methods|CA Mathematical Methods]] (7)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (10), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (21), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (165)
 
 ## Sections
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation]] — 
@@ -65,6 +65,8 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-10|§C5a.4.10]] The Dirac Representation Is Not the Vector Representation
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|§C5a.4.11]] The Dirac Matrices Are an Invariant Vector of Matrices
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-12|§C5a.4.12]] Clifford Multiplication Is Lorentz Equivariant
+- [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|§C5a.4.13]] The Rotation Matrices in the Dirac Representation, Entry by Entry
+- [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|§C5a.4.14]] The Boost Matrices in the Dirac Representation, Entry by Entry
 - [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] Algebraic Properties of γ⁵
 - [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves
 - [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|§C5a.5.3]] Properties of the Chirality Projectors
