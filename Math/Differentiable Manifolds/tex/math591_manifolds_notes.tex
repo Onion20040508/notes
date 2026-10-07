@@ -2466,7 +2466,7 @@ For $g \in \GL(n,\mathbb{R})$ the following are equivalent: (i) $g \in \Ogp(n,\m
 $\SO(n,\mathbb{R}) = \Ogp(n,\mathbb{R}) \cap \SL(n,\mathbb{R}) = \{\, g \in \Ogp(n,\mathbb{R}) \mid \det g = 1 \,\}$.
 \end{defbox}
 
-\begin{defbox}[Complex Matrices and $\GL(n,\mathbb{C})$]\deflabel{def:complex-groups}
+\begin{defbox}[Complex Matrices and $\GL({n,\mathbb{C}})$]\deflabel{def:complex-groups}
 Once and for all, fix the $\mathbb{R}$-linear identification $\mathbb{C} \cong \mathbb{R}^2$, $x + iy \mapsto (x, y)$, and hence $\mathbb{C}^n \cong \mathbb{R}^{2n}$: explicitly, writing $z_j = x_j + i y_j$,
 \[
 (z_1, \ldots, z_n) \longmapsto (x_1, y_1, x_2, y_2, \ldots, x_n, y_n).
@@ -9428,11 +9428,18 @@ the components of $v$ in the coordinate basis (Theorem~\ref{thm:tangent-basis}).
 \end{defbox}
 
 \begin{defbox}[Charts of $TM$]\deflabel{def:tb-chart}
-Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Phi$ the local trivialization over $U$ (Definition~\ref{def:tb-charts}). The \textbf{chart} of $TM$ over $U$ is
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Phi$ the local trivialization over $U$ (Definition~\ref{def:tb-charts}). The \textbf{chart} of $TM$ over $U$ is $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, which acts in two steps:
 \[
-\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, v) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big).
+(p, v) \;\overset{\Phi}{\longmapsto}\; (p,\, v^1, \ldots, v^m) \;\overset{\varphi \times \mathrm{id}}{\longmapsto}\; \big(x^1(p), \ldots, x^m(p),\, v^1, \ldots, v^m\big),
 \]
-It is a bijection, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$.
+where $v^1, \ldots, v^m$ are the components of $v$ in the coordinate basis at $p$,
+\[
+v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p, \qquad v^i = v[x^i]
+\]
+(the universal formula, Theorem~\ref{thm:tangent-basis}). So the first $m$ coordinates of $\tilde\varphi(p, v)$ locate the point $p$, and the last $m$ list the components of the vector $v$. $\tilde\varphi$ is a bijection, with inverse
+\[
+(r, a^1, \ldots, a^m) \longmapsto \Big(\varphi^{-1}(r),\ \sum_{i=1}^m a^i\, \frac{\partial}{\partial x^i}\Big|_{\varphi^{-1}(r)}\Big), \qquad r \in \varphi(U),\ (a^1, \ldots, a^m) \in \mathbb{R}^m .
+\]
 \leeref{Proposition 3.18}
 \end{defbox}
 
@@ -9586,11 +9593,18 @@ the components of $\xi$ in the dual basis. Because the bases $dx^i|_p$ and $\par
 \end{defbox}
 
 \begin{defbox}[Charts of $T^*M$]\deflabel{def:ctb-chart}
-Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Psi$ the local trivialization over $U$ (Definition~\ref{def:ctb-trivialization}). The \textbf{chart} of $T^*M$ over $U$ --- the \textbf{standard coordinates} on $T^*U$ --- is
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Psi$ the local trivialization over $U$ (Definition~\ref{def:ctb-trivialization}). The \textbf{chart} of $T^*M$ over $U$ --- the \textbf{standard coordinates} on $T^*U$ --- is $\hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi : T^*U \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, which acts in two steps:
 \[
-\hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi : T^*U \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, \xi) \longmapsto \big(x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m\big).
+(p, \xi) \;\overset{\Psi}{\longmapsto}\; (p,\, \xi_1, \ldots, \xi_m) \;\overset{\varphi \times \mathrm{id}}{\longmapsto}\; \big(x^1(p), \ldots, x^m(p),\, \xi_1, \ldots, \xi_m\big),
 \]
-It is a bijection, with inverse $(r, \xi) \mapsto \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$.
+where $\xi_1, \ldots, \xi_m$ are the components of $\xi$ in the dual basis at $p$,
+\[
+\xi = \sum_{i=1}^m \xi_i\, dx^i\big|_p, \qquad \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)
+\]
+(Corollary~\ref{cor:covector-components}). So the first $m$ coordinates of $\hat\varphi(p, \xi)$ locate the point $p$, and the last $m$ list the components of the covector $\xi$. $\hat\varphi$ is a bijection, with inverse
+\[
+(r, b_1, \ldots, b_m) \longmapsto \Big(\varphi^{-1}(r),\ \sum_{i=1}^m b_i\, dx^i\big|_{\varphi^{-1}(r)}\Big), \qquad r \in \varphi(U),\ (b_1, \ldots, b_m) \in \mathbb{R}^m .
+\]
 \leeref{Proposition 11.9}
 \end{defbox}
 

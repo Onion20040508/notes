@@ -84,10 +84,26 @@ tags: [differentiable-manifolds, math591]
 > Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Phi$ the local trivialization over $U$ ([[§44 The Tangent Bundle#^def-44-4|Definition §44.4]]). The **chart** of $TM$ over $U$ is
 >
 > $$
-> \tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, v) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big).
+> \tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m},
 > $$
 >
-> It is a bijection, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$.
+> which acts in two steps:
+>
+> $$
+> (p, v) \;\overset{\Phi}{\longmapsto}\; (p,\, v^1, \ldots, v^m) \;\overset{\varphi \times \mathrm{id}}{\longmapsto}\; \big(x^1(p), \ldots, x^m(p),\, v^1, \ldots, v^m\big),
+> $$
+>
+> where $v^1, \ldots, v^m$ are the components of $v$ in the coordinate basis at $p$,
+>
+> $$
+> v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p, \qquad v^i = v[x^i]
+> $$
+>
+> (the universal formula, [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5]]). So the first $m$ coordinates of $\tilde\varphi(p, v)$ locate the point $p$, and the last $m$ list the components of the vector $v$. $\tilde\varphi$ is a bijection, with inverse
+>
+> $$
+> (r, a^1, \ldots, a^m) \longmapsto \Big(\varphi^{-1}(r),\ \sum_{i=1}^m a^i\, \frac{\partial}{\partial x^i}\Big|_{\varphi^{-1}(r)}\Big), \qquad r \in \varphi(U),\ (a^1, \ldots, a^m) \in \mathbb{R}^m .
+> $$
 >
 > *Lee: Proposition 3.18*
 

@@ -7,7 +7,7 @@ tags: [chapter, differentiable-manifolds]
 # 6 Bundles and Vector Fields
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (9), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (37), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (8)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (9), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (39), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (8)
 **Used by:** —
 **Builds on (other subjects):** [[Linear Algebra]] (4), [[Topology]] (5), [[Multivariable Analysis]] (2)
 

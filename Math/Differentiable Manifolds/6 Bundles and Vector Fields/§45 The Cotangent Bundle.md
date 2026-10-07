@@ -74,10 +74,26 @@ The definitions and results of this section run parallel to those for the tangen
 > Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Psi$ the local trivialization over $U$ ([[§45 The Cotangent Bundle#^def-45-4|Definition §45.4]]). The **chart** of $T^{\ast}M$ over $U$ — the **standard coordinates** on $T^{\ast}U$ — is
 >
 > $$
-> \hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi : T^*U \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, \xi) \longmapsto \big(x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m\big).
+> \hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi : T^*U \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m},
 > $$
 >
-> It is a bijection, with inverse $(r, \xi) \mapsto \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$.
+> which acts in two steps:
+>
+> $$
+> (p, \xi) \;\overset{\Psi}{\longmapsto}\; (p,\, \xi_1, \ldots, \xi_m) \;\overset{\varphi \times \mathrm{id}}{\longmapsto}\; \big(x^1(p), \ldots, x^m(p),\, \xi_1, \ldots, \xi_m\big),
+> $$
+>
+> where $\xi_1, \ldots, \xi_m$ are the components of $\xi$ in the dual basis at $p$,
+>
+> $$
+> \xi = \sum_{i=1}^m \xi_i\, dx^i\big|_p, \qquad \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)
+> $$
+>
+> ([[§32 The Cotangent Space#^cor-32-3|Corollary §32.3]]). So the first $m$ coordinates of $\hat\varphi(p, \xi)$ locate the point $p$, and the last $m$ list the components of the covector $\xi$. $\hat\varphi$ is a bijection, with inverse
+>
+> $$
+> (r, b_1, \ldots, b_m) \longmapsto \Big(\varphi^{-1}(r),\ \sum_{i=1}^m b_i\, dx^i\big|_{\varphi^{-1}(r)}\Big), \qquad r \in \varphi(U),\ (b_1, \ldots, b_m) \in \mathbb{R}^m .
+> $$
 >
 > *Lee: Proposition 11.9*
 

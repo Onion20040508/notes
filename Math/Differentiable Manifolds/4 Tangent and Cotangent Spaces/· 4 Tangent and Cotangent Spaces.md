@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (23), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 3 Smooth Structures|3 Smooth Structures]] (42)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (54), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (37)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (54), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (39)
 **Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (6), [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (11)
 
 ## Sections
