@@ -206,7 +206,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Used in Relativity: every rank-2 Lorentz tensor splits uniquely, and in every frame alike, into symmetric and antisymmetric parts — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]].
 > - For bilinear forms on $\R^n$ in the language of differential forms: [[§39 Closed and Exact Forms#^prop-39-3|452 Prop. §39.3]].
-> - The same split for tensors of higher order: in a potential term $\lambda_{ijk}\varphi_i\varphi_j\varphi_k$ only the totally symmetric part of the coefficients contributes, so the coefficients may be taken totally symmetric ([[§R1.1 N Real Scalar Fields and Their Potential#^rem-r1-1-1|Thesis §R1.1, Remark]]).
+> - The same split for tensors of higher order: in a potential term $\lambda_{ijk}\varphi_i\varphi_j\varphi_k$ only the totally symmetric part of the coefficients contributes, so the coefficients may be taken totally symmetric ([[§R1.3 Interactions꞉ the Potential and the Vacuum#^rem-r1-3-1|Thesis §R1.3, Remark]]).
 
 > [!definition] Definition 9.18: Quadratic form associated with a bilinear form, qβ
 > For $\beta\in V^{(2)}$, $q_\beta(v)=\beta(v,v)$. A *quadratic form* is a function $q=q_\beta$ for some bilinear $\beta$. $q_\beta=0$ iff $\beta$ is alternating.

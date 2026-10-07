@@ -1,10 +1,10 @@
 ---
 type: chapter
 subject: "[[Group Theory]]"
-chapter: 11
+chapter: 10
 tags: [chapter, group-theory]
 ---
-# 11 The Sylow Theorems
+# 10 The Sylow Theorems
 ↑ [[Group Theory]]
 
 *Source: Worksheet 10 (handed out with Worksheet 9; not yet covered in lecture). Statements only: every proof is left to be filled in after class.*

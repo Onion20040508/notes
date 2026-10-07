@@ -158,8 +158,35 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 > [!remark]- Connections
 > - This is condition (2) of [[§38 Normal Subgroups#^thm-38-3|Five Characterizations of Normality]]; used to prove [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].
 
+> [!definition] Definition §39.1: The Klein Four-Group $K$
+> The **Klein four-group** is the subset
+>
+> $$ K = \{e,\ (1\,2)(3\,4),\ (1\,3)(2\,4),\ (1\,4)(2\,3)\} \subseteq S_4, $$
+>
+> the identity together with the three products of two [[§11 Disjoint Cycle Decomposition#^def-11-1|disjoint]] [[§10 Cycle Notation and the Group S₃#^def-10-2|transpositions]]. Speyer writes $K$, “for Klein”; it is also often written $V$, for the German *Vierergruppe* (four-group).
+>
+> *Source: lecture 9/30*
+
+^def-39-1
+
+> [!theorem] Proposition §39.8: $K$ Is an Abelian Subgroup of $S_4$
+> $K$ is an [[§1 The Definition of a Group#^def-1-2|abelian]] [[§4 Subgroups#^def-4-1|subgroup]] of $S_4$, isomorphic to $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
+>
+> *Source: not from class*
+
+^prop-39-8
+
+> [!proof]+ Proof
+> Each non-identity element of $K$ is a product of two disjoint transpositions, which commute, so it squares to $e$ and is its own inverse. The product of two distinct non-identity elements, in either order, is the third: for example $(1\,2)(3\,4) \cdot (1\,3)(2\,4) = (1\,4)(2\,3)$, and the other products are the same computation with the points relabelled. So $K$ contains $e$ and is closed under products and inverses, hence is a subgroup ([[§4 Subgroups#^def-4-1|Definition §4.1]]), and it is abelian. The bijection $e \mapsto (0,0)$, $(1\,2)(3\,4) \mapsto (1,0)$, $(1\,3)(2\,4) \mapsto (0,1)$, $(1\,4)(2\,3) \mapsto (1,1)$ onto $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ ([[§3 Basic Examples of Groups#^def-3-2|Definition §3.2]]) is a homomorphism, since there too every element is its own inverse and the sum of two distinct nonzero elements is the third.
+
+^pf-39-8
+
+*Uses:* [[§39 Sources of Normal Subgroups#^def-39-1|Def. §39.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]]
+
+So $K \cong U_8$ ([[§16 Isomorphisms#^prop-16-8|Proposition §16.8]]): the Klein four-group met in [[· 4 Homomorphisms and Isomorphisms|Chapter 4]] as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and the subgroup $K$ of $S_4$ are the same group up to isomorphism. Lecture named $K$ on 9/30, as the kernel of the pair-partition homomorphism $S_4 \to S_3$ ([[§43 Simple Groups#^prop-43-10|Proposition §43.10]]); the notes use it from the next example on.
+
 > [!example] Example §39.3: Normal Subgroups of $S_3$ and $S_4$
-> (For $S_3$, compare the lattice in [[§13 The Symmetric Group S₃#^prop-13-1|the figure of §13]].) In the language of [[· 7 Conjugacy and the Center|Chapter 7]]: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits — stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
+> (For $S_3$, compare the lattice in [[§13 The Symmetric Group S₃#^prop-13-1|the figure of §13]].) In the language of [[· 7 Conjugacy and the Center|Chapter 7]]: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits — stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $K$ of [[§39 Sources of Normal Subgroups#^def-39-1|Definition §39.1]], $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
 
 ^ex-39-3
 

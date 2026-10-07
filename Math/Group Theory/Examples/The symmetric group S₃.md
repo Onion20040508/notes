@@ -40,8 +40,8 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $\langle (1\,2) \rangle \cong S_3/A_3$, and $S_4/K \cong S_3$, by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
 - The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§46 Characters#^rem-46-3|§46]])
-- $S_3$ is solvable, through $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ ([[§48 Solvable Groups#^prop-48-1|§49]])
-- The derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ ([[§49 The Derived Series#^ex-49-1|§50]])
+- $S_3$ is solvable, through $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ ([[§48 Solvable Groups#^prop-48-1|§48]])
+- The derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ ([[§49 The Derived Series#^ex-49-1|§49]])
 
 ## Chapter by chapter
 

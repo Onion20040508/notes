@@ -55,7 +55,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§51 Orthogonal Sets#^thm-51-4|235 Thm. §51.4]] ($U^TU=I$ iff $U$ has orthonormal columns) and [[§51 Orthogonal Sets#^thm-51-5|235 Thm. §51.5]].
-> - Applied to field redefinitions: once the kinetic term of $N$ scalar fields is canonical, the constant linear changes of field that keep it canonical are exactly the orthogonal ones, so the remaining freedom is $O(N)$ ([[§R1.1 N Real Scalar Fields and Their Potential#^thm-r1-1-7|Thesis Thm. §R1.1.7]]).
+> - Applied to field redefinitions: once the kinetic term of $N$ scalar fields is canonical, the constant linear changes of field that keep it canonical are exactly the orthogonal ones, so the remaining freedom is $O(N)$ ([[§R1.1 From One Klein–Gordon Field to N Free Fields#^thm-r1-1-10|Thesis Thm. §R1.1.10]]).
 
 > [!definition] Definition 7.51: Unitary operator
 > An operator $S\in\Lin(V)$ is *unitary* if it is an invertible isometry. (In finite dimensions 'invertible' is automatic, by injectivity and [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]].)

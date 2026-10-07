@@ -11,7 +11,7 @@ tags: [subject, group-theory]
 ---
 # Group Theory
 
-MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§53 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`. **Pace (from Oct 5):** about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: solvable groups.
+MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§52 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`. **Pace (from Oct 5):** about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: solvable groups.
 
 ## Roadmap
 These notes follow the course, and the course studies groups through two families of examples and one organizing idea. Along the *numbers* thread live $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$ and the unit groups $U_n$: abelian, mostly cyclic, and governed by the [[Division Algorithm|division algorithm]]. Along the *symmetries* thread live $S_n$ and $GL_n(k)$: non-abelian, and computed with cycles and matrices. Chapters 1–3 set up both families; Chapters 4–5 compare them through *homomorphisms*, which [[Classification of Cyclic Groups|classify the cyclic groups]] and produce [[The Sign Homomorphism|the sign]] and the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|permutation matrices]]. The organizing idea is the *group action* (Chapter 6): an action of $G$ on a set is the same thing as a homomorphism $G \to S_X$ ([[Actions Are Homomorphisms to S_X|§25.3]]). Cosets are the orbits of a subgroup acting by multiplication, which gives [[Lagrange's Theorem]]; conjugation is $G$ acting on itself, which gives conjugacy classes, the [[Class Equation|class equation]] and the [[§35 The Center#^def-35-2|center]] (Chapter 7); and the subgroups whose cosets can be multiplied are the normal ones, which gives [[Quotient Groups|quotient groups]] and the [[First Isomorphism Theorem for Groups|First Isomorphism Theorem]] (Chapter 8). The two threads meet again in the [[§46 Characters#^def-46-1|characters]] of Chapter 9: homomorphisms to abelian groups, of which the sign is the first example.
@@ -34,9 +34,8 @@ graph TD
   C6["6 Group Actions, Cosets, and Lagrange's Theorem"]
   C7["7 Conjugacy and the Center"]
   C8["8 Normal Subgroups and Quotient Groups"]
-  C9["9 Characters and Commutators"]
-  C10["10 Solvable Groups"]
-  C11["11 The Sylow Theorems"]
+  C9["9 Characters, Commutators and Solvable Groups"]
+  C10["10 The Sylow Theorems"]
   X1["Linear Algebra (LADR)"]
   X2["Single Variable Analysis (451)"]
   X3["Topology (590)"]
@@ -48,9 +47,8 @@ graph TD
   C5 --> C6
   C6 --> C7
   C7 --> C8
-  C7 --> C11
+  C7 --> C10
   C8 --> C9
-  C9 --> C10
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C4 -.->|on credit| C2
@@ -79,11 +77,10 @@ graph TD
 - [[· 7 Conjugacy and the Center]]
 - [[· 8 Normal Subgroups and Quotient Groups]]
 - [[· 9 Characters, Commutators and Solvable Groups]]
-- [[· 9 Characters, Commutators and Solvable Groups]]
 - [[· 10 The Sylow Theorems]]
 
 ## Planned topics (syllabus)
-First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems (stated from Worksheet 10, §52–§53; proofs to come); solvable groups ✓ (§49–§51; quotients and the derived-series criterion pending); composition series and the Jordan–Hölder theorem; simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
+First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems (stated from Worksheet 10, §51–§52; proofs to come); solvable groups ✓ (§48–§50; quotients and the derived-series criterion pending); composition series and the Jordan–Hölder theorem; simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
 
 ## Central results
 - [[Cancellation Laws in Groups]] (§2.1)

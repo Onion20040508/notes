@@ -22,8 +22,8 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 - $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $S_4/K \cong S_3$ by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
 - The six subgroups of $S_4$ containing $K$, by the Correspondence Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45]])
-- $S_4$ is solvable, through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$ ([[§48 Solvable Groups#^prop-48-1|§49]])
-- The derived series $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$, with $(1\,2)(3\,4)$ a commutator in $A_4$ ([[§49 The Derived Series#^ex-49-1|§50]])
+- $S_4$ is solvable, through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$ ([[§48 Solvable Groups#^prop-48-1|§48]])
+- The derived series $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$, with $(1\,2)(3\,4)$ a commutator in $A_4$ ([[§49 The Derived Series#^ex-49-1|§49]])
 
 ## Chapter by chapter
 
