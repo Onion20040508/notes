@@ -231,7 +231,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 
 ^cau-c1a-5-5
 
-Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta} = (\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$, invariant under $\det\Lambda = +1$ and odd under $P$ and $T$ separately (a pseudotensor), is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]].
+Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta} = (\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$, invariant under $\det\Lambda = +1$ and odd under $\mathcal P$ and $\mathcal T$ separately (a pseudotensor), is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]].
 
 > [!theorem] Theorem §C1a.5.4: Contraction Identities of the Levi-Civita Symbol
 > 1. (Minkowski, $\varepsilon^{0123} = +1$.) The product of two symbols is minus the determinant of deltas,
@@ -378,8 +378,8 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > [!theorem] Theorem §C1a.5.7: Duality Squares to −1 on Antisymmetric Tensors
 > On antisymmetric $A^{\mu\nu}$ let $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$. Then:
 > 1. $\star\star A = -A$;
-> 2. $\star(\Lambda A) = (\det\Lambda)\,\Lambda(\star A)$: duality commutes with proper Lorentz transformations and anticommutes with $P$ and $T$;
-> 3. over $\mathbb C$, the six-dimensional space is the direct sum of the eigenspaces $\star A = \pm iA$, each three-dimensional and mapped into itself by every $\Lambda$ with $\det\Lambda = 1$; $P$ exchanges them.
+> 2. $\star(\Lambda A) = (\det\Lambda)\,\Lambda(\star A)$: duality commutes with proper Lorentz transformations and anticommutes with $\mathcal P$ and $\mathcal T$;
+> 3. over $\mathbb C$, the six-dimensional space is the direct sum of the eigenspaces $\star A = \pm iA$, each three-dimensional and mapped into itself by every $\Lambda$ with $\det\Lambda = 1$; $\mathcal P$ exchanges them.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Contracting Levi-Civita symbols", four-dimensional example; "Irreducible pieces of a two-tensor")*
 
@@ -400,7 +400,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > (\star\Lambda A)^{\mu\nu} = \tfrac12\varepsilon^{\mu\nu\rho\sigma}\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta A_{\gamma\delta} = \det\Lambda\;\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\,\tfrac12\varepsilon^{\kappa\lambda\gamma\delta}A_{\gamma\delta} = \det\Lambda\;(\Lambda\star A)^{\mu\nu} .
 > $$
 >
-> **6. Part 3.** $\star$ is a real linear map with $\star^2 = -1$, so over $\mathbb C$ its eigenvalues are $\pm i$ and $A = \frac12(A - i\star A) + \frac12(A + i\star A)$ splits $A$ into a $(+i)$- and a $(-i)$-eigenvector (check: $\star(A - i\star A) = \star A + iA = i(A - i\star A)$). Complex conjugation commutes with the real map $\star$ and exchanges the two eigenspaces, so they have equal dimension, $6/2 = 3$. A $\Lambda$ with $\det\Lambda = 1$ commutes with $\star$ (part 2), hence preserves each eigenspace; $P$ anticommutes, hence sends $\star A = iA$ to $\star(PA) = -iPA$.
+> **6. Part 3.** $\star$ is a real linear map with $\star^2 = -1$, so over $\mathbb C$ its eigenvalues are $\pm i$ and $A = \frac12(A - i\star A) + \frac12(A + i\star A)$ splits $A$ into a $(+i)$- and a $(-i)$-eigenvector (check: $\star(A - i\star A) = \star A + iA = i(A - i\star A)$). Complex conjugation commutes with the real map $\star$ and exchanges the two eigenspaces, so they have equal dimension, $6/2 = 3$. A $\Lambda$ with $\det\Lambda = 1$ commutes with $\star$ (part 2), hence preserves each eigenspace; $\mathcal P$ anticommutes, hence sends $\star A = iA$ to $\star(\mathcal PA) = -i\mathcal PA$.
 >
 > **What the derivation shows**
 > - Taking the dual twice returns $-A$, not $A$: the Minkowski sign. For the field tensor, $\tilde{\tilde F} = -F$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]).

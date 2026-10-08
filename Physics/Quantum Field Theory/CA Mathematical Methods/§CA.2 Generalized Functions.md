@@ -594,7 +594,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 >   - Theorem §CA.2.3 (integration by parts): the spin of the quanta at rest — [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]].
 > - **Used in**, statement by statement (C9 items):
 >   - Def. §CA.2.4 (derivative): the derivative of the parity-transformed field — [[§C9.3 Fermion Bilinears under Parity#^thm-c9-3-5|Theorem §C9.3.5]].
->   - Def. §CA.2.8 (linear change of variables): the smeared parity law, test function $f \to f\circ P$ — [[§C9.2 Parity on States, Spinors and the Dirac Field#^thm-c9-2-5|Theorem §C9.2.5]].
+>   - Def. §CA.2.8 (linear change of variables): the smeared parity law, test function $f \to f\circ \mathcal P$ — [[§C9.2 Parity on States, Spinors and the Dirac Field#^thm-c9-2-5|Theorem §C9.2.5]].
 >   - Def. §CA.2.11 (operator-valued distribution): the parity law of $\hat\psi$ as an identity after smearing — [[§C9.2 Parity on States, Spinors and the Dirac Field#^thm-c9-2-5|Theorem §C9.2.5]].
 > - **Used in**, statement by statement (C4 items):
 >   - Theorem §CA.2.1 (Regular and Singular Tempered Distributions): [[§C4.9 Vector-Field Propagators#^rem-c4-9-2|§C4.9, Remark: The sign of the photon propagator and negative norm]], [[§C4.9 Vector-Field Propagators#^thm-c4-9-7|Theorem §C4.9.7]].
