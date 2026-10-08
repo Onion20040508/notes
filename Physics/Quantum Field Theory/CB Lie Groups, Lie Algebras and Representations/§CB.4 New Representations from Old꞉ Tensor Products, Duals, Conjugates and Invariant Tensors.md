@@ -52,7 +52,7 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 ^thm-cb-4-3
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4 ($d_1(X)\otimes\mathbb 1$ and $\mathbb 1\otimes d_2(X)$ commute, Theorem §CB.1.2, 3).*
+> *To be filled ($d_1(X)\otimes\mathbb 1$ and $\mathbb 1\otimes d_2(X)$ commute, Theorem §CB.1.2, 3).*
 
 ^pf-cb-4-3
 
@@ -75,7 +75,7 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 ^thm-cb-4-5
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4.*
+> *To be filled.*
 
 ^pf-cb-4-5
 
@@ -109,7 +109,7 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 ^thm-cb-4-8
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4 (on $\bar W$, $i$ acts as $-i$ on $W$: $(\bar d)_{\mathbb C}(X + iY) = d(X) - i\,d(Y) = d_{\mathbb C}(X - iY)$).*
+> *To be filled (on $\bar W$, $i$ acts as $-i$ on $W$: $(\bar d)_{\mathbb C}(X + iY) = d(X) - i\,d(Y) = d_{\mathbb C}(X - iY)$).*
 
 ^pf-cb-4-8
 
@@ -123,7 +123,7 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 ^thm-cb-4-9
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4.*
+> *To be filled.*
 
 ^pf-cb-4-9
 
@@ -162,7 +162,7 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 ^thm-cb-4-13
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4.*
+> *To be filled.*
 
 ^pf-cb-4-13
 
@@ -177,7 +177,7 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 ^thm-cb-4-14
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4 (part 1 is the definition of $O(1,3)$; part 2 from [[§37 Determinants|LADR §37]] via Theorem §C1a.5.5).*
+> *To be filled (part 1 is the definition of $O(1,3)$; part 2 from [[§37 Determinants|LADR §37]] via Theorem §C1a.5.5).*
 
 ^pf-cb-4-14
 
@@ -192,7 +192,7 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 ^thm-cb-4-15
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4 (part 1: both sides are alternating in the columns of $A$, so proportional, compare at $A = \mathbb 1$; [[§37 Determinants|LADR §37]]).*
+> *To be filled (part 1: both sides are alternating in the columns of $A$, so proportional, compare at $A = \mathbb 1$; [[§37 Determinants|LADR §37]]).*
 
 ^pf-cb-4-15
 
@@ -204,7 +204,7 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 ^thm-cb-4-16
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4.*
+> *To be filled.*
 
 ^pf-cb-4-16
 

@@ -82,7 +82,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 *The key step. $V$ may contain other parts of $F(M)$ (black) besides $F(U)$ (orange). Because $F(U)$ is open in $F(M)$, it is $W \cap F(M)$ for an open $W$ (shaded), and $W$ cuts the other parts away; $F(M)$ continues beyond $F(U)$ only by leaving $W$. For the irrational line no such $W$ exists, which is exactly the failure of openness.*
 
 > [!remark]- Connections
-> - Submanifolds and adapted charts: [[§35 Submanifolds#^def-35-2|Def. §35.2]]; the other main source of submanifolds, level sets: [[§35 Submanifolds#^thm-35-6|§35.6]].
+> - Submanifolds and adapted charts: [[§35 Submanifolds#^def-35-2|Def. §35.2]]; the other main source of submanifolds, level sets: [[§35 Submanifolds#^thm-35-7|§35.7]].
 > - The local statement this globalizes: [[§37 Immersions#^cor-37-2|§37.2]], from the [[Immersion Normal Form]].
 
 **Transcription note.** Page 39 of the handwritten notes writes the target as $F(M) \cap V = \{0 = y^{n-m+1} = \cdots = y^m\}$; the vanishing coordinates are the last $n - m$ of them, $y^{m+1}, \ldots, y^n$, as the lecture said.

@@ -140,11 +140,11 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 5.2 | [[§38 Embeddings#^thm-38-1\|Thm. §38.1]] |
 | Proposition 5.5 | [[§38 Embeddings#^prop-38-9\|Prop. §38.9]] |
 | Theorem 5.8 | [[§35 Submanifolds#^def-35-1\|Def. §35.1]], [[§35 Submanifolds#^def-35-2\|Def. §35.2]], [[§35 Submanifolds#^prop-35-2\|Prop. §35.2]] |
-| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§35 Submanifolds#^thm-35-6\|Thm. §35.6]] |
+| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§35 Submanifolds#^thm-35-7\|Thm. §35.7]] |
 | Corollary 5.30 | [[§35 Submanifolds#^lem-35-3\|Lem. §35.3]] |
 | Proposition 5.35 | [[§35 Submanifolds#^prop-35-4\|Prop. §35.4]] |
 | Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Submanifolds#^prop-35-4\|Prop. §35.4]] |
-| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Submanifolds#^thm-35-6\|Thm. §35.6]] |
+| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Submanifolds#^thm-35-7\|Thm. §35.7]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§49 Lie Groups and Left-Invariant Vector Fields#^prop-49-1\|Prop. §49.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |

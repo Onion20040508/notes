@@ -33,7 +33,7 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6: Ambient and Abstract Agree]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Corollary §29.7: Consequences]]
-- [[§35 Submanifolds#^prop-35-8|Proposition §35.8: The Old and New Versions Agree]]
+- [[§35 Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
 
 ## Connections
 - **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§26 Transversality#^prop-26-4|§26.4]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.

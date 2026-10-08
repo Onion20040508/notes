@@ -27,7 +27,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§34 Submersions#^cor-34-5|Corollary §34.5: Being a Submersion Is an Open Condition]]
 - [[§34 Submersions#^cor-34-6|Corollary §34.6: Submersions Are Open Maps]]
-- [[§35 Submanifolds#^thm-35-6|Theorem §35.6: The Regular Value Theorem for Manifolds]]
+- [[§35 Submanifolds#^thm-35-7|Theorem §35.7: The Regular Value Theorem for Manifolds]]
 - [[§37 Immersions#^thm-37-1|Theorem §37.1: Local Normal Form for Immersions]]
 
 ## Connections

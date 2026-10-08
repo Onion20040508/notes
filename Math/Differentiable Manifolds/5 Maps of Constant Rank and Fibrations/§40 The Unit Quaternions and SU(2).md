@@ -134,11 +134,11 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-40-4
 
 > [!proof]+ Proof
-> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ ([[§35 Submanifolds#^thm-35-6|Theorem §35.6]]). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ ([[§35 Submanifolds#^lem-35-3|Lemma §35.3]]). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
+> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ ([[§35 Submanifolds#^thm-35-7|Theorem §35.7]]). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ ([[§35 Submanifolds#^lem-35-3|Lemma §35.3]]). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
 
 ^pf-40-4
 
-*Uses:* [[§40 The Unit Quaternions and SU(2)#^def-40-1|Def. §40.1]], [[§40 The Unit Quaternions and SU(2)#^prop-40-1|§40.1]], [[§35 Submanifolds#^thm-35-6|§35.6]], [[§35 Submanifolds#^lem-35-3|§35.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
+*Uses:* [[§40 The Unit Quaternions and SU(2)#^def-40-1|Def. §40.1]], [[§40 The Unit Quaternions and SU(2)#^prop-40-1|§40.1]], [[§35 Submanifolds#^thm-35-7|§35.7]], [[§35 Submanifolds#^lem-35-3|§35.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
 
 > [!proof]+ Second proof of the submanifold claim: hyperspherical charts (the submitted solution)
 >

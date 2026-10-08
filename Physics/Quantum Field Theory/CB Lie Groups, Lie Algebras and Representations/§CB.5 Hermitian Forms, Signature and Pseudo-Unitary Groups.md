@@ -33,7 +33,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 ^thm-cb-5-1
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4 (spectral theorem for the Hermitian matrix $H$, [[§24 Spectral Theorem|LADR §24]], then rescaling).*
+> *To be filled (spectral theorem for the Hermitian matrix $H$, [[§24 Spectral Theorem|LADR §24]], then rescaling).*
 
 ^pf-cb-5-1
 
@@ -57,7 +57,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 ^thm-cb-5-3
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4.*
+> *To be filled.*
 
 ^pf-cb-5-3
 
@@ -82,7 +82,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 ^thm-cb-5-5
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4.*
+> *To be filled.*
 
 ^pf-cb-5-5
 
@@ -105,7 +105,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 ^thm-cb-5-7
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 4 (write $h_1(\chi, \psi) = h_2(\chi, S\psi)$; then $S$ commutes with every $A^{\dagger_{h_2}}$, a set with no invariant subspaces by Theorem §CB.5.3, 3; Schur, [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-8|Theorem §CB.3.8]], gives $S = c\mathbb 1$; Hermiticity makes $c$ real).*
+> *To be filled (write $h_1(\chi, \psi) = h_2(\chi, S\psi)$; then $S$ commutes with every $A^{\dagger_{h_2}}$, a set with no invariant subspaces by Theorem §CB.5.3, 3; Schur, [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-8|Theorem §CB.3.8]], gives $S = c\mathbb 1$; Hermiticity makes $c$ real).*
 
 ^pf-cb-5-7
 

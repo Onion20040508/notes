@@ -49,7 +49,7 @@ The course's definition of the complexified Lie algebra, in a basis, is in [[§C
 ^thm-cb-2-3
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (bilinear expansion; Jacobi on basis elements).*
+> *To be filled (bilinear expansion; Jacobi on basis elements).*
 
 ^pf-cb-2-3
 
@@ -67,7 +67,7 @@ The course's definition of the complexified Lie algebra, in a basis, is in [[§C
 ^thm-cb-2-4
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-4
 
@@ -91,7 +91,7 @@ The course's generators and its remark on the factor $i$, in [[§C3.1 Groups, Al
 ^thm-cb-2-5
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-5
 
@@ -103,7 +103,7 @@ The course's definition of a representation of a Lie algebra, a real-linear map 
 
 ![[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-13]]
 
-> [!theorem] Theorem §CB.2.6: Complex Representations of 𝔤 Are Complex-Linear Representations of 𝔤_ℂ
+> [!theorem] Theorem §CB.2.6: Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification
 > Let $\mathfrak g$ be a real Lie algebra and $W$ a complex vector space.
 > 1. Every representation $d : \mathfrak g \to \operatorname{End}_{\mathbb C}(W)$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-6|Def. §C3.1.6]]) extends uniquely to a complex-linear representation $d_{\mathbb C}(X + iY) = d(X) + i\,d(Y)$ of $\mathfrak g_{\mathbb C}$, and every complex-linear representation of $\mathfrak g_{\mathbb C}$ on $W$ restricts to one of $\mathfrak g$; the two operations are inverse bijections.
 > 2. Under this bijection, invariant subspaces ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-8|Def. §C3.1.8]]), irreducibility, direct sums ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-9|Def. §C3.1.9]]) and intertwiners (complex-linear maps commuting with the action) are the same for $d$ and $d_{\mathbb C}$.
@@ -115,7 +115,7 @@ The course's definition of a representation of a Lie algebra, a real-linear map 
 ^thm-cb-2-6
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-6
 
@@ -152,12 +152,12 @@ The course's definition of a representation of a Lie algebra, a real-linear map 
 > [!theorem] Theorem §CB.2.11: Real Forms Are the Fixed Sets of Conjugations
 > Let $\mathfrak h$ be a complex Lie algebra. A **conjugation** of $\mathfrak h$ is a conjugate-linear map $\sigma : \mathfrak h \to \mathfrak h$ with $\sigma^2 = \mathbb 1$ and $\sigma[Z, W] = [\sigma Z, \sigma W]$. Then $\sigma \mapsto \mathfrak h^\sigma = \{Z : \sigma Z = Z\}$ is a bijection from conjugations of $\mathfrak h$ onto real forms of $\mathfrak h$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-10|Def. §CB.2.10]]); the inverse sends $\mathfrak g_0$ to $X + iY \mapsto X - iY$ ($X, Y \in \mathfrak g_0$). Two real forms $\mathfrak g_0$, $\mathfrak g_0'$ are isomorphic as real Lie algebras if and only if there is a complex-linear automorphism $\alpha$ of $\mathfrak h$ with $\alpha\sigma = \sigma'\alpha$.
 >
-> *Source (planned): written here (standard); to be checked against a text in batch 2*
+> *Source (planned): written here (standard); to be checked against a text*
 
 ^thm-cb-2-11
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-11
 
@@ -183,7 +183,7 @@ The course's definition of a representation of a Lie algebra, a real-linear map 
 ^thm-cb-2-12
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2. The brackets of part 2 are computed in any representation, hence in the vector representation, in [[§C3.2 The Lorentz Algebra#^der-c3-2-1c|Derivation §C3.2.1 (the J, K form and the J± split)]], steps 6–7; part 3 from $c(J_i) = -J_i$, $c(K_i) = -K_i$ (Theorem §CB.2.5, 2).*
+> *To be filled. The brackets of part 2 are computed in any representation, hence in the vector representation, in [[§C3.2 The Lorentz Algebra#^der-c3-2-1c|Derivation §C3.2.1 (the J, K form and the J± split)]], steps 6–7; part 3 from $c(J_i) = -J_i$, $c(K_i) = -K_i$ (Theorem §CB.2.5, 2).*
 
 ^pf-cb-2-12
 
@@ -205,7 +205,7 @@ The representation-level statement, a pair of commuting angular momenta on a com
 ^thm-cb-2-13
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-13
 
@@ -219,7 +219,7 @@ The representation-level statement, a pair of commuting angular momenta on a com
 ^thm-cb-2-14
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (part 3: an ideal $\mathfrak a$ of $\mathfrak{so}(1,3)$ gives the $c$-stable ideal $\mathfrak a_{\mathbb C}$ of $\mathfrak a_+\oplus\mathfrak a_-$; the only ideals of $\mathfrak a_+\oplus\mathfrak a_-$ are $0$, $\mathfrak a_+$, $\mathfrak a_-$ and all, because $\mathfrak{sl}(2, \mathbb C)$ is simple, and $c$ exchanges $\mathfrak a_\pm$).*
+> *To be filled (part 3: an ideal $\mathfrak a$ of $\mathfrak{so}(1,3)$ gives the $c$-stable ideal $\mathfrak a_{\mathbb C}$ of $\mathfrak a_+\oplus\mathfrak a_-$; the only ideals of $\mathfrak a_+\oplus\mathfrak a_-$ are $0$, $\mathfrak a_+$, $\mathfrak a_-$ and all, because $\mathfrak{sl}(2, \mathbb C)$ is simple, and $c$ exchanges $\mathfrak a_\pm$).*
 
 ^pf-cb-2-14
 
@@ -235,7 +235,7 @@ The course's remark on what the split does and does not mean, in [[§C3.3 Finite
 ^thm-cb-2-15
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-15
 
@@ -256,11 +256,11 @@ The course's remark on what the split does and does not mean, in [[§C3.3 Finite
 ^thm-cb-2-17
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (differentiate part 3 of Theorem §C5a.4.7).*
+> *To be filled (differentiate part 3 of Theorem §C5a.4.7).*
 
 ^pf-cb-2-17
 
-> [!theorem] Theorem §CB.2.18: The Complexification of 𝔰𝔩(2,ℂ)_ℝ Is Two Copies of 𝔰𝔩(2,ℂ)
+> [!theorem] Theorem §CB.2.18: The Complexification of Real 𝔰𝔩(2,ℂ) Is Two Copies of 𝔰𝔩(2,ℂ)
 > The map $\Phi : (\mathfrak{sl}(2, \mathbb C)_{\mathbb R})_{\mathbb C} \to \mathfrak{sl}(2, \mathbb C)\oplus\mathfrak{sl}(2, \mathbb C)$,
 >
 > $$
@@ -274,11 +274,11 @@ The course's remark on what the split does and does not mean, in [[§C3.3 Finite
 ^thm-cb-2-18
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-18
 
-> [!theorem] Theorem §CB.2.19: Representations of 𝔰𝔩(2,ℂ)_ℝ: a Complex-Linear and an Antilinear Part
+> [!theorem] Theorem §CB.2.19: Representations of Real 𝔰𝔩(2,ℂ): a Complex-Linear and an Antilinear Part
 > Let $\rho : \mathfrak{sl}(2, \mathbb C)_{\mathbb R} \to \operatorname{End}_{\mathbb C}(W)$ be a representation on a complex vector space $W$. There are unique maps $\rho_1$, $\rho_2$ with $\rho = \rho_1 + \rho_2$, $\rho_1$ complex-linear and $\rho_2$ complex-antilinear ($\rho_2(iX) = -i\rho_2(X)$), both Lie algebra homomorphisms, and $[\rho_1(X), \rho_2(Y)] = 0$ for all $X, Y$. Conversely every such commuting pair gives a representation. The defining representation $X \mapsto X$ on $\mathbb C^2$ has $\rho_2 = 0$; its complex conjugate $X \mapsto \bar X$ has $\rho_1 = 0$.
 >
 > *Source (planned): written here (from Theorem §CB.2.18 and Theorem §CB.2.6)*
@@ -286,7 +286,7 @@ The course's remark on what the split does and does not mean, in [[§C3.3 Finite
 ^thm-cb-2-19
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-19
 
@@ -298,7 +298,7 @@ The course's remark on what the split does and does not mean, in [[§C3.3 Finite
 ^thm-cb-2-20
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-2-20
 
@@ -333,7 +333,7 @@ The course's remark on what the split does and does not mean, in [[§C3.3 Finite
 ^thm-cb-2-23
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (part 2: for a minimal invariant $W \subset U_{\mathbb C}$, $W\cap c(W)$ and $W + c(W)$ are $c$-stable and invariant).*
+> *To be filled (part 2: for a minimal invariant $W \subset U_{\mathbb C}$, $W\cap c(W)$ and $W + c(W)$ are $c$-stable and invariant).*
 
 ^pf-cb-2-23
 

@@ -58,7 +58,7 @@ tags: [multivariable-analysis, hub]
 - [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|Lemma §29.2: Hadamard's Lemma]]
 - [[§30 The Differential in Coordinates#^cor-30-3|Corollary §30.3: The Chain Rule in Coordinates]]
 - [[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5: Agreement with the Vector-Space Differential]]
-- [[§35 Submanifolds#^prop-35-8|Proposition §35.8: The Old and New Versions Agree]]
+- [[§35 Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
 - [[§45 The Cotangent Bundle#^prop-45-2|Proposition §45.2: The Smooth Atlas of T^*M]]
 
 ## Connections

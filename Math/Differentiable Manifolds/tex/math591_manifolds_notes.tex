@@ -7570,6 +7570,72 @@ In an adapted chart at $p$, $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$. I
 
 How to draw a conormal covector. Without a metric, a covector $\xi$ on $T_pM$ is drawn by its level lines $\{\xi = \text{const}\}$. For $\xi \in N_pS$ the level line $\xi = 0$ contains $T_pS$, so all of its level lines run \emph{parallel} to $T_pS$ (left). Only once an inner product is chosen does $\xi$ become a vector, perpendicular to its level lines, and $N_pS$ becomes the normal line $(T_pS)^\perp$ (right). The board, and page~33 of the handwritten notes, draw $N_pS$ as a line perpendicular to $T_pS$: that is the right-hand, metric picture.
 
+\subsection{Submanifolds of Euclidean Space}\label{sub:submanifolds-euclidean}
+
+\textit{Not from lecture: the link back to the geometric stage.} Inside a Euclidean space, Section~\ref{sec:euclidean} described a manifold $X \subseteq \mathbb{R}^{n+k}$ near a point in three ways --- externally, by equations (Definition~\ref{def:ext-int}); internally, by a parametrization (Definition~\ref{def:internal-description}); and as a graph --- and Theorem~\ref{thm:ext-int} showed that they agree. Definition~\ref{def:submanifold} adds a fourth, the \emph{slice} description: a chart of the ambient space in which $X$ is a coordinate plane. The fourth agrees with the other three, so in $\mathbb{R}^{n+k}$ the submanifolds of codimension $k$ are exactly the manifolds of Section~\ref{sec:euclidean}, and Definition~\ref{def:submanifold} is their description made intrinsic to the ambient manifold.
+
+\begin{propbox}[Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description]\thmlabel{prop:submanifold-euclidean}
+Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. The following are equivalent:
+\begin{enumerate}
+    \item near $p$, $X$ is described externally (Definition~\ref{def:ext-int}) --- equivalently, internally or as a graph (Theorem~\ref{thm:ext-int});
+    \item \emph{(slice)} there is a smooth chart $(U, \varphi = (x_a, x_b))$ of $\mathbb{R}^{n+k}$ with $p \in U$, $x_a$ its first $n$ and $x_b$ its last $k$ components, such that $U \cap X = \{\, q \in U : x_b(q) = \vec 0 \,\}$, that is, a chart adapted to $X$ (Definition~\ref{def:adapted-chart}).
+\end{enumerate}
+In particular $X$ is a submanifold of $\mathbb{R}^{n+k}$ of codimension $k$ (Definition~\ref{def:submanifold}) if and only if every point of $X$ has the descriptions of Section~\ref{sec:euclidean}.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture.)} \emph{Graph $\Rightarrow$ slice.} Permuting coordinates is a linear isomorphism, so we may assume $X \cap (V \times V') = \{(x, h(x)) : x \in V\}$ as in (G) of Theorem~\ref{thm:ext-int}. Let $U = V \times V'$ and $\Phi(x, y) = (x,\, y - h(x))$. Then $\Phi$ is smooth and injective, its image $\{(x, z) : x \in V,\ z + h(x) \in V'\}$ is open, and its inverse $(x, z) \mapsto (x, z + h(x))$ is smooth; so $\Phi$ is a diffeomorphism of $U$ onto an open set, hence a smooth chart of $\mathbb{R}^{n+k}$ (its transition maps with the identity chart are $\Phi$ and $\Phi^{-1}$). Its last $k$ components $y - h(x)$ vanish exactly on $X \cap U$.
+
+\emph{Slice $\Rightarrow$ external.} Let $F = x_b : U \to \mathbb{R}^k$, the last $k$ components of $\varphi$; it is smooth. A chart is a diffeomorphism onto its image (Proposition~\ref{prop:chart-diffeo}), so the Jacobian $\varphi'(q)$ is invertible at every $q \in U$, and its last $k$ rows, which form $F'(q)$, are linearly independent. Hence $F'(q)$ has rank $k$ everywhere, $\vec 0$ is a regular value of $F$, and $X \cap U = F^{-1}(\vec 0)$: the external description with $W = U$.
+
+The final statement follows, since Definition~\ref{def:submanifold} asks for (2) at every point of $X$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85, >=stealth]
+  \begin{scope}
+    \draw[gray!35] (-1.60,-1.75) -- (-1.60,1.75);
+    \draw[gray!35] (-0.80,-1.75) -- (-0.80,1.75);
+    \draw[gray!35] (0.00,-1.75) -- (0.00,1.75);
+    \draw[gray!35] (0.80,-1.75) -- (0.80,1.75);
+    \draw[gray!35] (1.60,-1.75) -- (1.60,1.75);
+    \draw[gray!60] (-2.00,-1.472) -- (-1.90,-1.508) -- (-1.80,-1.539) -- (-1.70,-1.565) -- (-1.60,-1.585) -- (-1.50,-1.598) -- (-1.40,-1.604) -- (-1.30,-1.603) -- (-1.20,-1.594) -- (-1.10,-1.578) -- (-1.00,-1.554) -- (-0.90,-1.522) -- (-0.80,-1.484) -- (-0.70,-1.439) -- (-0.60,-1.388) -- (-0.50,-1.332) -- (-0.40,-1.272) -- (-0.30,-1.207) -- (-0.20,-1.140) -- (-0.10,-1.070) -- (0.00,-1.000) -- (0.10,-0.930) -- (0.20,-0.860) -- (0.30,-0.793) -- (0.40,-0.728) -- (0.50,-0.668) -- (0.60,-0.612) -- (0.70,-0.561) -- (0.80,-0.516) -- (0.90,-0.478) -- (1.00,-0.446) -- (1.10,-0.422) -- (1.20,-0.406) -- (1.30,-0.397) -- (1.40,-0.396) -- (1.50,-0.402) -- (1.60,-0.415) -- (1.70,-0.435) -- (1.80,-0.461) -- (1.90,-0.492) -- (2.00,-0.528);
+    \draw[gray!60] (-2.00,-0.972) -- (-1.90,-1.008) -- (-1.80,-1.039) -- (-1.70,-1.065) -- (-1.60,-1.085) -- (-1.50,-1.098) -- (-1.40,-1.104) -- (-1.30,-1.103) -- (-1.20,-1.094) -- (-1.10,-1.078) -- (-1.00,-1.054) -- (-0.90,-1.022) -- (-0.80,-0.984) -- (-0.70,-0.939) -- (-0.60,-0.888) -- (-0.50,-0.832) -- (-0.40,-0.772) -- (-0.30,-0.707) -- (-0.20,-0.640) -- (-0.10,-0.570) -- (0.00,-0.500) -- (0.10,-0.430) -- (0.20,-0.360) -- (0.30,-0.293) -- (0.40,-0.228) -- (0.50,-0.168) -- (0.60,-0.112) -- (0.70,-0.061) -- (0.80,-0.016) -- (0.90,0.022) -- (1.00,0.054) -- (1.10,0.078) -- (1.20,0.094) -- (1.30,0.103) -- (1.40,0.104) -- (1.50,0.098) -- (1.60,0.085) -- (1.70,0.065) -- (1.80,0.039) -- (1.90,0.008) -- (2.00,-0.028);
+    \draw[gray!60] (-2.00,0.028) -- (-1.90,-0.008) -- (-1.80,-0.039) -- (-1.70,-0.065) -- (-1.60,-0.085) -- (-1.50,-0.098) -- (-1.40,-0.104) -- (-1.30,-0.103) -- (-1.20,-0.094) -- (-1.10,-0.078) -- (-1.00,-0.054) -- (-0.90,-0.022) -- (-0.80,0.016) -- (-0.70,0.061) -- (-0.60,0.112) -- (-0.50,0.168) -- (-0.40,0.228) -- (-0.30,0.293) -- (-0.20,0.360) -- (-0.10,0.430) -- (0.00,0.500) -- (0.10,0.570) -- (0.20,0.640) -- (0.30,0.707) -- (0.40,0.772) -- (0.50,0.832) -- (0.60,0.888) -- (0.70,0.939) -- (0.80,0.984) -- (0.90,1.022) -- (1.00,1.054) -- (1.10,1.078) -- (1.20,1.094) -- (1.30,1.103) -- (1.40,1.104) -- (1.50,1.098) -- (1.60,1.085) -- (1.70,1.065) -- (1.80,1.039) -- (1.90,1.008) -- (2.00,0.972);
+    \draw[gray!60] (-2.00,0.528) -- (-1.90,0.492) -- (-1.80,0.461) -- (-1.70,0.435) -- (-1.60,0.415) -- (-1.50,0.402) -- (-1.40,0.396) -- (-1.30,0.397) -- (-1.20,0.406) -- (-1.10,0.422) -- (-1.00,0.446) -- (-0.90,0.478) -- (-0.80,0.516) -- (-0.70,0.561) -- (-0.60,0.612) -- (-0.50,0.668) -- (-0.40,0.728) -- (-0.30,0.793) -- (-0.20,0.860) -- (-0.10,0.930) -- (0.00,1.000) -- (0.10,1.070) -- (0.20,1.140) -- (0.30,1.207) -- (0.40,1.272) -- (0.50,1.332) -- (0.60,1.388) -- (0.70,1.439) -- (0.80,1.484) -- (0.90,1.522) -- (1.00,1.554) -- (1.10,1.578) -- (1.20,1.594) -- (1.30,1.603) -- (1.40,1.604) -- (1.50,1.598) -- (1.60,1.585) -- (1.70,1.565) -- (1.80,1.539) -- (1.90,1.508) -- (2.00,1.472);
+    \draw[very thick, blue!70!black] (-2.00,-0.472) -- (-1.90,-0.508) -- (-1.80,-0.539) -- (-1.70,-0.565) -- (-1.60,-0.585) -- (-1.50,-0.598) -- (-1.40,-0.604) -- (-1.30,-0.603) -- (-1.20,-0.594) -- (-1.10,-0.578) -- (-1.00,-0.554) -- (-0.90,-0.522) -- (-0.80,-0.484) -- (-0.70,-0.439) -- (-0.60,-0.388) -- (-0.50,-0.332) -- (-0.40,-0.272) -- (-0.30,-0.207) -- (-0.20,-0.140) -- (-0.10,-0.070) -- (0.00,0.000) -- (0.10,0.070) -- (0.20,0.140) -- (0.30,0.207) -- (0.40,0.272) -- (0.50,0.332) -- (0.60,0.388) -- (0.70,0.439) -- (0.80,0.484) -- (0.90,0.522) -- (1.00,0.554) -- (1.10,0.578) -- (1.20,0.594) -- (1.30,0.603) -- (1.40,0.604) -- (1.50,0.598) -- (1.60,0.585) -- (1.70,0.565) -- (1.80,0.539) -- (1.90,0.508) -- (2.00,0.472);
+    \draw[->] (-2.3,-1.9) -- (2.4,-1.9) node[right, font=\scriptsize] {$x \in \mathbb{R}^n$};
+    \draw[->] (-2.3,-1.9) -- (-2.3,1.9) node[above, font=\scriptsize] {$y \in \mathbb{R}^k$};
+    \node[blue!70!black, font=\scriptsize, anchor=south west] at (2.0,0.47) {$X$: $y = h(x)$};
+    \node[font=\scriptsize, gray!70!black, anchor=west] at (2.0,1.47) {$y = h(x) + c$};
+  \end{scope}
+  \draw[->, thick] (3.75,0) -- node[above, font=\scriptsize] {$\Phi(x,y) = (x,\, y - h(x))$} node[below, font=\scriptsize] {diffeomorphism} (7.4,0);
+  \begin{scope}[xshift=10.0cm]
+    \draw[gray!35] (-1.60,-1.75) -- (-1.60,1.75);
+    \draw[gray!35] (-0.80,-1.75) -- (-0.80,1.75);
+    \draw[gray!35] (0.00,-1.75) -- (0.00,1.75);
+    \draw[gray!35] (0.80,-1.75) -- (0.80,1.75);
+    \draw[gray!35] (1.60,-1.75) -- (1.60,1.75);
+    \draw[gray!60] (-2,-1.0) -- (2,-1.0);
+    \draw[gray!60] (-2,-0.5) -- (2,-0.5);
+    \draw[gray!60] (-2,0.5) -- (2,0.5);
+    \draw[gray!60] (-2,1.0) -- (2,1.0);
+    \draw[very thick, blue!70!black] (-2,0) -- (2,0);
+    \draw[->] (-2.3,-1.9) -- (2.4,-1.9) node[right, font=\scriptsize] {$x$};
+    \draw[->] (-2.3,-1.9) -- (-2.3,1.9) node[above, font=\scriptsize] {$z = y - h(x)$};
+    \node[blue!70!black, font=\scriptsize, anchor=west] at (2.0,0) {$\Phi(X)$: $z = 0$};
+    \node[font=\scriptsize, gray!70!black, anchor=west] at (2.0,1.0) {$z = c$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+Straightening a graph. The map $\Phi(x, y) = (x, y - h(x))$ keeps $x$ and measures the height above the graph; it carries the graph $X$ to the slice $z = 0$, and the parallel graphs $y = h(x) + c$ to the slices $z = c$. This is the passage from the graph charts of Proposition~\ref{prop:level-set-smooth}, which flatten $X$ \emph{alone}, to an adapted chart, which straightens a whole neighbourhood of $X$ in the ambient space.
+
+For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph is $z = \sqrt{1 - x^2 - y^2}$, and $(x, y, z) \mapsto (x, y, z - \sqrt{1 - x^2 - y^2})$ is an adapted chart; so is $(x, y, z) \mapsto (x, y, x^2 + y^2 + z^2 - 1)$ near any point with $z \neq 0$, whose last coordinate is the defining function of the external description.
+
+\begin{rembox}[The Tangent Spaces Match]\label{rem:tangent-spaces-match}
+\textit{(Not from lecture.)} The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\geo}_pX = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}). In the slice chart of Proposition~\ref{prop:submanifold-euclidean}, with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{*p}(T_pX)$ (Proposition~\ref{prop:submanifold-tangent}). Proposition~\ref{prop:rvt-agree} below makes the identification precise, together with the agreement of the two smooth structures.
+\end{rembox}
+
 \subsection{The Regular Value Theorem for Manifolds}\label{sub:rvt-manifolds}
 
 \textit{Lecture 12. ``And now we go back to submersions'' --- to ``[the] wonderful version of the regular value theorem.''}

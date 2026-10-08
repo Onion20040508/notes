@@ -156,7 +156,7 @@ This is the definition of critical point Uribe sent to the class by email, and i
 ^thm-34-4
 
 > [!remark]- Connections
-> - The counterpart for immersions: [[§37 Immersions#^thm-37-1|§37.1]]. The main application: the regular value theorem for manifolds, [[§35 Submanifolds#^thm-35-6|§35.6]].
+> - The counterpart for immersions: [[§37 Immersions#^thm-37-1|§37.1]]. The main application: the regular value theorem for manifolds, [[§35 Submanifolds#^thm-35-7|§35.7]].
 
 Stated in Lecture 10 and proved in Lecture 11, below. The inequality $n \le m$ needs no theorem — a surjective linear map cannot raise dimension — but the normal form does: it says that every submersion, in suitable coordinates, *is* a projection.
 

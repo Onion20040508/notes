@@ -59,7 +59,7 @@ The matrix groups of the course, defined in [[§C1a.4 The Lorentz Group|§C1a.4]
 ^thm-cb-1-2
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (CB.1–CB.3).*
+> *To be filled (CB.1–CB.3).*
 
 ^pf-cb-1-2
 
@@ -71,7 +71,7 @@ The matrix groups of the course, defined in [[§C1a.4 The Lorentz Group|§C1a.4]
 ^thm-cb-1-3
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: upper-triangular form, [[§16 Upper-Triangular Matrices|LADR §16]], and $\det$, $\operatorname{tr}$ of a triangular matrix).*
+> *To be filled (planned route: upper-triangular form, [[§16 Upper-Triangular Matrices|LADR §16]], and $\det$, $\operatorname{tr}$ of a triangular matrix).*
 
 ^pf-cb-1-3
 
@@ -83,7 +83,7 @@ The matrix groups of the course, defined in [[§C1a.4 The Lorentz Group|§C1a.4]
 ^thm-cb-1-4
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-1-4
 
@@ -98,7 +98,7 @@ The matrix groups of the course, defined in [[§C1a.4 The Lorentz Group|§C1a.4]
 ^thm-cb-1-5
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-1-5
 
@@ -119,7 +119,7 @@ The matrix groups of the course, defined in [[§C1a.4 The Lorentz Group|§C1a.4]
 ^thm-cb-1-7
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: the logarithm of Theorem §CB.1.4 on a small interval).*
+> *To be filled (planned route: the logarithm of Theorem §CB.1.4 on a small interval).*
 
 ^pf-cb-1-7
 
@@ -138,7 +138,7 @@ The course defines the Lie algebra of a matrix Lie group through its one-paramet
 ^thm-cb-1-8
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: the Lie product formula, Theorem §CB.1.5, 1, for sums; differentiation of $s \mapsto e^{sX}Ye^{-sX}$ at $s = 0$, using that $\mathfrak g$ is closed in $M_n(\mathbb C)$, for brackets).*
+> *To be filled (planned route: the Lie product formula, Theorem §CB.1.5, 1, for sums; differentiation of $s \mapsto e^{sX}Ye^{-sX}$ at $s = 0$, using that $\mathfrak g$ is closed in $M_n(\mathbb C)$, for brackets).*
 
 ^pf-cb-1-8
 
@@ -153,7 +153,7 @@ The course defines the Lie algebra of a matrix Lie group through its one-paramet
 ^thm-cb-1-9
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2; part 3 will be linked to 591 when the course proves it (591 §49 so far defines the Lie algebra of a Lie group without computing it for matrix groups).*
+> *To be filled; part 3 will be linked to 591 when the course proves it (591 §49 so far defines the Lie algebra of a Lie group without computing it for matrix groups).*
 
 ^pf-cb-1-9
 
@@ -188,7 +188,7 @@ The course defines the Lie algebra of a matrix Lie group through its one-paramet
 ^thm-cb-1-11
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: differentiate the defining equation along $e^{sX}$ as in [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-1|Theorem §C3.1.1]], Derivation, steps 1–2, and use Theorem §CB.1.3 for the determinant condition).*
+> *To be filled (planned route: differentiate the defining equation along $e^{sX}$ as in [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-1|Theorem §C3.1.1]], Derivation, steps 1–2, and use Theorem §CB.1.3 for the determinant condition).*
 
 ^pf-cb-1-11
 
@@ -226,7 +226,7 @@ The rotation case, proved in [[§C3.1 Groups, Algebras and Representations of Ro
 ^thm-cb-1-14
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: $s \mapsto \Phi(e^{sX})$ is a one-parameter subgroup, Theorem §CB.1.7; linearity and brackets from Theorem §CB.1.5).*
+> *To be filled (planned route: $s \mapsto \Phi(e^{sX})$ is a one-parameter subgroup, Theorem §CB.1.7; linearity and brackets from Theorem §CB.1.5).*
 
 ^pf-cb-1-14
 
@@ -254,7 +254,7 @@ The case $H = GL(W)$, a representation, is the course's theorem, proved in [[§C
 ^thm-cb-1-16
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: part 2 by the path $s \mapsto e^{sX}$; part 3 by Theorem §CB.1.10, a neighbourhood of $\mathbb 1$ made of exponentials, and connectedness).*
+> *To be filled (planned route: part 2 by the path $s \mapsto e^{sX}$; part 3 by Theorem §CB.1.10, a neighbourhood of $\mathbb 1$ made of exponentials, and connectedness).*
 
 ^pf-cb-1-16
 
@@ -272,7 +272,7 @@ The Lorentz group's components and its exponentials, proved in [[§C1a.4 The Lor
 ^thm-cb-1-17
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: Theorem §CB.1.14 on each factor of Theorem §CB.1.16, 3).*
+> *To be filled (planned route: Theorem §CB.1.14 on each factor of Theorem §CB.1.16, 3).*
 
 ^pf-cb-1-17
 
@@ -307,7 +307,7 @@ The Lorentz group's components and its exponentials, proved in [[§C1a.4 The Lor
 ^thm-cb-1-20
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-1-20
 
@@ -334,7 +334,7 @@ Simple connectivity and covering maps, defined in Topology (590):
 ^thm-cb-1-22
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: for fixed $n$, $g \mapsto gng^{-1}$ is a continuous map from the connected $G$ into the discrete $N$, hence constant).*
+> *To be filled (planned route: for fixed $n$, $g \mapsto gng^{-1}$ is a continuous map from the connected $G$ into the discrete $N$, hence constant).*
 
 ^pf-cb-1-22
 
@@ -346,7 +346,7 @@ Simple connectivity and covering maps, defined in Topology (590):
 ^thm-cb-1-23
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (planned route: $\Phi$ is a local homeomorphism at $\mathbb 1$ by Theorem §CB.1.10 and the exponentials; surjectivity from Theorem §CB.1.16, 3; evenly covered neighbourhoods by translation).*
+> *To be filled (planned route: $\Phi$ is a local homeomorphism at $\mathbb 1$ by Theorem §CB.1.10 and the exponentials; surjectivity from Theorem §CB.1.16, 3; evenly covered neighbourhoods by translation).*
 
 ^pf-cb-1-23
 

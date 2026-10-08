@@ -4,12 +4,12 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C9 (§C9.1, §C9.3–§C9.4 parity, taught; ★ §C9.2 scalar parity), CA written
+status: level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C9 (§C9.1, §C9.3–§C9.4 parity, taught; ★ §C9.2 scalar parity), CA written, CB skeleton (all statements in reading order; proofs being filled)
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
 
-Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen, Fall 2026; textbook Peskin & Schroeder). Chapters follow Yu Zhao-Huan's lecture notes (余钊焕《量子场论讲义》), whose chapter numbers they keep: fields are organized by spin after the Poincaré group, and interactions are treated once for all fields. Each concept has one home: statements are short boxes, derivations are folded under them, explanations are titled remarks, and hidden connections are collected in each note's Connections. Multi-step procedures have their own notes in Procedures/, linked from every place they are carried out. Statements are marked by layer: *principles* (postulated), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealized systems). ★ marks material beyond the PHY 513 syllabus; a *draft* banner marks syllabus topics written ahead of the lectures. Relativity is in [[Relativity]], one-particle quantum mechanics in [[Quantum Mechanics]]. Procedures: [[P1 Canonical Quantization]], [[P2 Green's Functions by Contour Integration]]. Reference card: [[Scalar Field Card]]. The course order, lecture by lecture, is in [[PHY 513 Course Log]]; conventions in [[Larsen PHY 513]].
+Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen, Fall 2026; textbook Peskin & Schroeder). Chapters follow Yu Zhao-Huan's lecture notes (余钊焕《量子场论讲义》), whose chapter numbers they keep: fields are organized by spin after the Poincaré group, and interactions are treated once for all fields. Each concept has one home: statements are short boxes, derivations are folded under them, explanations are titled remarks, and hidden connections are collected in each note's Connections. Multi-step procedures have their own notes in Procedures/, linked from every place they are carried out. Statements are marked by layer: *principles* (postulated), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealized systems). ★ marks material beyond the PHY 513 syllabus; a *draft* banner marks syllabus topics written ahead of the lectures. Relativity is in [[Relativity]], one-particle quantum mechanics in [[Quantum Mechanics]]. Procedures: [[P1 Canonical Quantization]], [[P2 Green's Functions by Contour Integration]]. Reference card: [[Scalar Field Card]]. Two mathematics chapters collect the tools the physics uses: [[· CA Mathematical Methods]] (limits, generalized functions, Fourier transforms, contours) and [[· CB Lie Groups, Lie Algebras and Representations]] (Lie groups and algebras, complexification, representations, Clifford algebras and the spin groups). The course order, lecture by lecture, is in [[PHY 513 Course Log]]; conventions in [[Larsen PHY 513]].
 
 ## Level C — graduate
 - [[· C1a Preliminaries]]
@@ -22,6 +22,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C5b The Quantum Spinor Field]]
 - [[· C9 Discrete Symmetries and Majorana Fields]] (★ §C9.2)
 - [[· CA Mathematical Methods]]
+- [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.14)
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -38,6 +39,7 @@ graph TD
   C5b["C5b The Quantum Spinor Field"]
   C9["C9 Discrete Symmetries and Majorana Fields"]
   CA["CA Mathematical Methods"]
+  CB["CB Lie Groups, Lie Algebras and Representations"]
   C1a -->|27| C1b
   C1a -->|3| C2a
   C1b -->|10| C2a
@@ -73,6 +75,10 @@ graph TD
   C1b -->|3| CA
   C2a -->|7| CA
   C2b -->|43| CA
+  C1a -->|11| CB
+  C1b -->|1| CB
+  C3 -->|54| CB
+  C5a -->|28| CB
   C1b -.->|22| C1a
   C2a -.->|4| C1a
   C2b -.->|19| C1a
@@ -80,6 +86,7 @@ graph TD
   C5a -.->|10| C1a
   C9 -.->|2| C1a
   CA -.->|45| C1a
+  CB -.->|1| C1a
   C2a -.->|22| C1b
   C2b -.->|4| C1b
   C3 -.->|6| C1b
@@ -97,6 +104,7 @@ graph TD
   C5b -.->|2| C3
   C9 -.->|4| C3
   CA -.->|11| C3
+  CB -.->|2| C3
   C5a -.->|1| C4
   C5b -.->|9| C4
   CA -.->|150| C4
@@ -112,3 +120,5 @@ Chapters without notes yet (Yu's numbering).
 
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
 C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (started: parity, §C9.1–§C9.4; charge conjugation, time reversal, CPT and Majorana fields pending) · C10 The S-matrix and correlation functions · C11 Path-integral quantization
+
+**Mathematics chapter CB** (started 2026-10-08): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded); proofs marked *Proof (to be filled)* are being written section by section; §CB.15 Grassmann algebras is completed with C11.

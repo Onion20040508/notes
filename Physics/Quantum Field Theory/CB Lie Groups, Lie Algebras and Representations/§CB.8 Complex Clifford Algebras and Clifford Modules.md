@@ -31,7 +31,7 @@ Why do the Dirac matrices have to be $4\times4$, and why are any two sets of the
 
 ^def-cb-8-2
 
-> [!theorem] Theorem §CB.8.3: Every Real Clifford Algebra Complexifies to Cl_n(ℂ)
+> [!theorem] Theorem §CB.8.3: Every Real Clifford Algebra Complexifies to Clₙ(ℂ)
 > For every nondegenerate real quadratic space $(V, q)$ of dimension $n$, $\mathrm{Cl}(V, q)_{\mathbb C} \cong \mathrm{Cl}_n(\mathbb C)$ ([[§CB.8 Complex Clifford Algebras and Clifford Modules#^def-cb-8-1|Def. §CB.8.1]], [[§CB.8 Complex Clifford Algebras and Clifford Modules#^def-cb-8-2|Def. §CB.8.2]]): for an orthonormal basis with $q(e_j) = -1$ for $j > r$, send $e_j \mapsto e_j$ ($j \le r$) and $e_j \mapsto ie_j$ ($j > r$). Hence the complex Clifford modules of $(V, q)$ ([[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^def-cb-7-9|Def. §CB.7.9]]) are the same as the modules of $\mathrm{Cl}_n(\mathbb C)$; e.g. $\mathrm{Cl}(1,3)_{\mathbb C} \cong \mathrm{Cl}(3,1)_{\mathbb C} \cong \mathrm{Cl}_4(\mathbb C)$.
 >
 > *Source (planned): written here*

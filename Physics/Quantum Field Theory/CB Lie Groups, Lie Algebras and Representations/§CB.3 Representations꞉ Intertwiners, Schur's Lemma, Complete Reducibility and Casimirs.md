@@ -66,7 +66,7 @@ Schur's lemma, stated and proved in [[§C3.1 Groups, Algebras and Representation
 ^thm-cb-3-3
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 ($D(z)$ is an intertwiner of $D$ with itself; Schur, part 2).*
+> *To be filled ($D(z)$ is an intertwiner of $D$ with itself; Schur, part 2).*
 
 ^pf-cb-3-3
 
@@ -78,7 +78,7 @@ Schur's lemma, stated and proved in [[§C3.1 Groups, Algebras and Representation
 ^thm-cb-3-4
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (Theorem §CB.3.3 applied to every element; then every line is invariant).*
+> *To be filled (Theorem §CB.3.3 applied to every element; then every line is invariant).*
 
 ^pf-cb-3-4
 
@@ -113,7 +113,7 @@ Schur's lemma, stated and proved in [[§C3.1 Groups, Algebras and Representation
 ^thm-cb-3-8
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-3-8
 
@@ -125,7 +125,7 @@ Schur's lemma, stated and proved in [[§C3.1 Groups, Algebras and Representation
 ^thm-cb-3-9
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-3-9
 
@@ -157,7 +157,7 @@ The course's Casimir operator and its constancy on irreducible representations, 
 ^thm-cb-3-11
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-3-11
 
@@ -175,7 +175,7 @@ The course's statement for $SU(2)$ and $SO(3)$, proved in [[§C3.1 Groups, Algeb
 ^thm-cb-3-12
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 for SU(2) (the $S^3$ measure, as in Derivation §C3.1.5); the general existence (via a left-invariant volume form) is to be filled.*
+> *To be filled for SU(2) (the $S^3$ measure, as in Derivation §C3.1.5); the general existence (via a left-invariant volume form) is to be filled.*
 
 ^pf-cb-3-12
 
@@ -187,7 +187,7 @@ The course's statement for $SU(2)$ and $SO(3)$, proved in [[§C3.1 Groups, Algeb
 ^thm-cb-3-13
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2.*
+> *To be filled.*
 
 ^pf-cb-3-13
 
@@ -199,7 +199,7 @@ The course's statement for $SU(2)$ and $SO(3)$, proved in [[§C3.1 Groups, Algeb
 ^thm-cb-3-14
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (induction on dimension).*
+> *To be filled (induction on dimension).*
 
 ^pf-cb-3-14
 
@@ -235,7 +235,7 @@ The Lorentz case, stated in [[§C3.3 Finite-Dimensional Representations of the L
 ^thm-cb-3-16
 
 > [!proof]- Proof (to be filled)
-> *To be written in batch 2 (the kernel is an ideal; if it is $0$, $B(X, Y) = -\operatorname{tr}(d(X)d(Y))$ is a positive-definite invariant inner product). The Lorentz group version, by eigenvalues, is [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-10|Theorem §C3.3.10]].*
+> *To be filled (the kernel is an ideal; if it is $0$, $B(X, Y) = -\operatorname{tr}(d(X)d(Y))$ is a positive-definite invariant inner product). The Lorentz group version, by eigenvalues, is [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-10|Theorem §C3.3.10]].*
 
 ^pf-cb-3-16
 
