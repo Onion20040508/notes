@@ -64,7 +64,7 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > [!theorem] Theorem §C5a.5.2: γ⁵ Is Lorentz Invariant and Separates the Weyl Halves
 > 1. $[\gamma^5, S^{\mu\nu}] = 0$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), hence $\Lambda_{1/2}^{-1}\gamma^5\Lambda_{1/2} = \gamma^5$: $\gamma^5$ is a Lorentz scalar.
 > 2. In the chiral basis $\gamma^5 = \begin{pmatrix}-\mathbb 1 & 0\\ 0 & \mathbb 1\end{pmatrix}$.
-> 3. On the Dirac representation $\gamma^5 = \frac43\bigl(\mathbf J_-^2 - \mathbf J_+^2\bigr)$, with the Casimirs $\mathbf J_\pm^2$ of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]], equivalently $\mathbf J\cdot\mathbf K = \frac{3i}4\gamma^5$.
+> 3. On the Dirac representation $\gamma^5 = \frac43\bigl(\mathbf J_-^2 - \mathbf J_+^2\bigr)$, with the Casimirs $\mathbf J_\pm^2$ of [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-3|Theorem §CB.15.3]], equivalently $\mathbf J\cdot\mathbf K = \frac{3i}4\gamma^5$.
 > 4. In every basis, the eigenspaces $\gamma^5 = -1$ and $\gamma^5 = +1$ are two-dimensional, invariant under $\Lambda_{1/2}$, and carry $(\frac12, 0)$ and $(0, \frac12)$ (Theorem §C5a.3.4): left-handed spinors ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]]) are the $\gamma^5 = -1$ spinors.
 >
 > *Source: PS §3.4, p. 50 ("$[\gamma^5, S^{\mu\nu}] = 0$. Thus the Dirac representation must be reducible …"; eq. (3.72)) · Yu §5.1, eq. (5.36) ($\gamma^5$ a Lorentz scalar), §5.2, eq. (5.73) · the user's PHY 513 notes, Ch. 9 §9.6 (Definition "The matrix $\gamma^5$": "$\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$") · the user's pre-course notes, §5.2 · part 3 written out here*
@@ -82,7 +82,7 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 >
 > **What the derivation shows**
 > - The split $(\frac12, 0)\oplus(0, \frac12)$ is not an artefact of the chiral basis: it is the eigen-decomposition of the Lorentz-invariant matrix $\gamma^5$, which the chiral basis merely diagonalizes (PS footnote ‡: in another basis "the reducibility would not be manifest").
-> - $\gamma^5$ commutes with $S^{\mu\nu}$ but anticommutes with $\gamma^\mu$: the Lorentz transformations preserve handedness, the vector index of $\gamma^\mu$ flips it. Under parity, which exchanges the copies ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|Theorem §C3.3.8]]), $\gamma^5$ changes sign (pseudoscalar; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]).
+> - $\gamma^5$ commutes with $S^{\mu\nu}$ but anticommutes with $\gamma^\mu$: the Lorentz transformations preserve handedness, the vector index of $\gamma^\mu$ flips it. Under parity, which exchanges the copies ([[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-9|Theorem §CB.15.9]]), $\gamma^5$ changes sign (pseudoscalar; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]).
 > - Used next: chirality projectors and Weyl fields ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]]).
 
 ^der-c5a-5-2
@@ -148,7 +148,7 @@ The same letters denote the two-component Weyl spinors $\psi_L$, $\psi_R$ ([[§C
 As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = i\sigma^2$, and $\varepsilon_{ab}$ is $E^{-1} = -E$. The definition is a bookkeeping device: each index position names a transformation law, and the theorems below say which contractions are invariant.
 
 > [!caution] Caution: Conventions for Weyl spinors
-> Three choices are made here and differ across texts. (i) Which half is $(\frac12, 0)$ depends on the sign of the boost generator ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^cau-c3-3-1|§C3.3, Caution: Which one is (½, 0) depends on the sign of K]]); with $K_i = \mathcal J^{0i}$ it is Peskin–Schroeder's $\psi_L$, with $\boldsymbol\eta\cdot\boldsymbol\sigma/2$ entering with a minus sign. (ii) The index placement (left-handed lower undotted, right-handed upper dotted) is the user's notes' choice; some texts put the left-handed index up. (iii) The sign of $\varepsilon^{12}$; with the opposite sign, every raised spinor index changes sign, and $\chi^a\psi_a$ with it. Peskin–Schroeder use no index notation and write $\sigma^2\psi_L^*$ where the index calculus gives $\varepsilon\psi_L^* = i\sigma^2\psi_L^*$; the factor $i$ is a phase.
+> Three choices are made here and differ across texts. (i) Which half is $(\frac12, 0)$ depends on the sign of the boost generator ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]]); with $K_i = \mathcal J^{0i}$ it is Peskin–Schroeder's $\psi_L$, with $\boldsymbol\eta\cdot\boldsymbol\sigma/2$ entering with a minus sign. (ii) The index placement (left-handed lower undotted, right-handed upper dotted) is the user's notes' choice; some texts put the left-handed index up. (iii) The sign of $\varepsilon^{12}$; with the opposite sign, every raised spinor index changes sign, and $\chi^a\psi_a$ with it. Peskin–Schroeder use no index notation and write $\sigma^2\psi_L^*$ where the index calculus gives $\varepsilon\psi_L^* = i\sigma^2\psi_L^*$; the factor $i$ is a phase.
 >
 > *Source: the user's PHY 513 notes, Ch. 7 §7.4.6 (Caution "Which one is (½, 0) depends on the sign of K"), Ch. 8 §8.2 · PS eq. (3.38)*
 
@@ -187,7 +187,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 *Uses:* [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-3|Def. §C5a.5.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]]
 
 > [!theorem] Theorem §C5a.5.5: Dotted Indices, Conjugation and the Invariant Pairings
-> 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
+> 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-10|Theorem §CB.15.10]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
 > 2. Invariant pairings: $\psi_R^\dagger\chi_L = \bar\psi^a\chi_a$, $\psi_L^\dagger\chi_R = \bar\psi_{\dot a}\chi^{\dot a}$, $\chi^a\psi_a$, $\chi_{\dot a}\psi^{\dot a}$. A dotted index is never contracted with an undotted one: $\chi_R^{\mathsf T}E\psi_L$ is not invariant.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Right-handed spinors are a different slot … The two slots are paired instead through complex conjugation"; Derivation "The two halves … related by conjugation") · PS eq. (3.38)*
@@ -206,7 +206,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > **5. A mixed contraction fails.** $\chi_R^{\mathsf T}E\psi_L \to \chi_R^{\mathsf T}\Lambda_R^{\mathsf T}E\Lambda_L\psi_L$. Using $E\Lambda_L = (\Lambda_L^{\mathsf T})^{-1}E$: $\Lambda_R^{\mathsf T}E\Lambda_L = (\Lambda_L^{-1}\Lambda_R)^{\mathsf T}E$. For a pure boost $\Lambda_L^{-1}\Lambda_R = e^{\boldsymbol\eta\cdot\boldsymbol\sigma} \ne \mathbb 1$, so the form changes.
 >
 > **What the derivation shows**
-> - Complex conjugation exchanges the two kinds of index, and $\varepsilon$ moves an index up or down: together they show that the conjugate of $(\frac12, 0)$ is $(0, \frac12)$, the spin-½ case of Theorem §C3.3.9 in index form.
+> - Complex conjugation exchanges the two kinds of index, and $\varepsilon$ moves an index up or down: together they show that the conjugate of $(\frac12, 0)$ is $(0, \frac12)$, the spin-½ case of Theorem §CB.15.10 in index form.
 > - The invariants that pair left with right are built with $\dagger$, not with $\varepsilon$; in Dirac form they are $\bar\psi\chi = \psi_R^\dagger\chi_L + \psi_L^\dagger\chi_R$, so the Dirac mass term $m\bar\psi\psi$ necessarily couples the two handednesses (QFT §C5a.6–§C5a.7).
 
 ^der-c5a-5-5
@@ -216,7 +216,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > [!theorem] Theorem §C5a.5.6: A Four-Vector Is a Bispinor
 > 1. $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one lower undotted and one lower dotted index ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-3|Def. §C5a.5.3]]): $x \to \Lambda x$ is $X_{a\dot b} \to (\Lambda_L)_a{}^c(\Lambda_L^*)_{\dot b}{}^{\dot d}X_{c\dot d}$.
 > 2. $(\bar\sigma^\mu)^{\dot aa} = \varepsilon^{\dot a\dot b}\varepsilon^{ab}(\sigma^\mu)_{b\dot b}$, and $x^\mu = \frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a}$.
-> 3. So the vector representation ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) is equivalent to $(\frac12, 0)\otimes\overline{(\frac12, 0)}$; the conjugate is $(0, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]]), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-4|Theorem §C3.3.4]]), with $x \mapsto X$ the equivalence.
+> 3. So the vector representation ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) is equivalent to $(\frac12, 0)\otimes\overline{(\frac12, 0)}$; the conjugate is $(0, \frac12)$ ([[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-10|Theorem §CB.15.10]]), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-8|Theorem §CB.15.8]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|Theorem §C3.2.2]]), with $x \mapsto X$ the equivalence.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The left-handed Weyl matrices are this covering", paragraph "What (SL2Ccover) says about indices": "a four-vector is an object with one left-handed and one right-handed spinor index") · part 2 written out here*
 
@@ -229,15 +229,15 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 >
 > **3. The inverse.** $\frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a} = \frac12\operatorname{tr}(X\bar\sigma^\mu) = x^\mu$ (Theorem §C5a.4.2).
 >
-> **4. Part 3.** By part 1 the four-vector space, via the bijection $x \mapsto X$ (Theorem §C5a.4.2, extended complex-linearly to $\mathbb C^4 \to M_2(\mathbb C)$), is the tensor product of the left-handed representation and its complex conjugate. The conjugate is equivalent to $(0, \frac12)$ by $E$ (Theorem §C5a.5.5, 1), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-7|Theorem §C3.3.7]]).
+> **4. Part 3.** By part 1 the four-vector space, via the bijection $x \mapsto X$ (Theorem §C5a.4.2, extended complex-linearly to $\mathbb C^4 \to M_2(\mathbb C)$), is the tensor product of the left-handed representation and its complex conjugate. The conjugate is equivalent to $(0, \frac12)$ by $E$ (Theorem §C5a.5.5, 1), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-8|Theorem §CB.15.8]]).
 >
 > **What the derivation shows**
-> - Theorem §C3.3.4 identified the vector as $(\frac12, \frac12)$ by Casimirs; here the identification is an explicit map, and the two "spins ½" of the label are the two indices of $X_{a\dot b}$.
+> - Theorem §C3.2.2 identified the vector as $(\frac12, \frac12)$ by Casimirs; here the identification is an explicit map, and the two "spins ½" of the label are the two indices of $X_{a\dot b}$.
 > - $\sigma^\mu_{a\dot b}$ is the invariant tensor that converts a vector index into an undotted–dotted pair; the Dirac matrices are built from it ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-4|§C5a.5, Remark: What each Dirac index labels]]).
 
 ^der-c5a-5-6
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-9|Theorem §C5a.1.9]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-6|Theorem §C5a.4.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|Theorem §C5a.5.5]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-7|Theorem §C3.3.7]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-9|Theorem §C5a.1.9]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-6|Theorem §C5a.4.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|Theorem §C5a.5.5]], [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-8|Theorem §CB.15.8]]
 
 > [!remark] Remark: What each Weyl index labels
 >
@@ -438,7 +438,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 ^rem-c5a-5-9
 
 > [!remark]- Connections
-> - $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$ ties chirality to the two Casimirs of the Lorentz algebra, the spinor counterpart of the invariant $\mathbf E\cdot\mathbf B$ that separates the self-dual and anti-self-dual halves of the field strength — [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-7|Theorem §C3.4.7]].
+> - $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$ ties chirality to the two Casimirs of the Lorentz algebra, the spinor counterpart of the invariant $\mathbf E\cdot\mathbf B$ that separates the self-dual and anti-self-dual halves of the field strength — [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > - The Dirac basis of Quantum Mechanics and the chiral basis here are one unitary matrix apart; the former diagonalizes the energy sign at rest and suits the nonrelativistic limit and $g = 2$, the latter diagonalizes $\gamma^5$ and suits the Lorentz structure and massless limits — [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]], [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom|QM §C13.3★]].
 > - The Dirac basis of Quantum Mechanics is one point of the same orbit of bases; its nonrelativistic structure is why Sakurai uses it — [[§C13.2★ The Dirac Equation#^cau-c13-2-1|QM, Caution: Dirac matrices]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]].
 > - $\varepsilon$ for spinors parallels $g$ for vectors and the symplectic form of Hamiltonian mechanics: $SL(2, \mathbb C) = Sp(2, \mathbb C)$ preserves an antisymmetric form, as canonical transformations preserve $\{q, p\}$ — [[§C1b.4 Hamiltonian Field Theory|§C1b.4]].

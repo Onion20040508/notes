@@ -18,7 +18,7 @@ Which first-order field equation can a Dirac spinor obey, why does it look the s
 ## The Dirac equation
 
 > [!definition] Definition §C5a.7.1: The Dirac Equation
-> A **Dirac field** $\psi(x)$ is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the Dirac representation ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]; spinor fields, [[§C3.4 How Fields Transform under the Lorentz Group#^def-c3-4-2|Def. §C3.4.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
+> A **Dirac field** $\psi(x)$ is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the Dirac representation ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]; spinor fields, [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
 >
 > $$
 > \bigl(i\gamma^\mu\partial_\mu - m\bigr)\psi(x) = 0, \qquad\text{in components}\qquad \bigl[i(\gamma^\mu)_{ab}\,\partial_\mu - m\,\delta_{ab}\bigr]\psi_b(x) = 0, \quad a = 1, \dots, 4 ,
@@ -125,13 +125,13 @@ The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\m
 >
 > **What the derivation shows**
 > - The whole content is one identity, $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$: $\gamma^\mu$ is an invariant tensor with one vector slot and two spinor slots, and "contract the vector index with $\partial_\mu$" is the rule that builds a spinor out of a spinor ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-4|§C5a.5, Remark: What each Dirac index labels]]).
-> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by $\Lambda$ only up to sign ([[§C3.4 How Fields Transform under the Lorentz Group#^rem-c3-4-4|§C3.4, Remark: Why a spinor's matrix is fixed only up to sign]]); the equation is linear and homogeneous, so both signs give the same statement.
+> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by $\Lambda$ only up to sign ([[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]); the equation is linear and homogeneous, so both signs give the same statement.
 > - Assumption: $\psi \in C^1$. For a distribution the same computation holds term by term, since derivatives and linear changes of variables are defined on $\mathcal S'$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
 > - Used next: the Lagrangian is a scalar (Theorem §C5a.7.4); the same push-through gives the transformation of every bilinear ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]]).
 
 ^der-c5a-7-1
 
-*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C3.4 How Fields Transform under the Lorentz Group#^def-c3-4-2|Def. §C3.4.2]]
+*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]
 
 The slides phrase the transformation passively ("the physical point that the field is evaluated at does not change but its coordinates do") while the formula is written actively; the two readings give the same formula ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). Quantum Mechanics records the same check with $\hbar$, $c$ and a passive transformation, for one boost ([[§C13.2★ The Dirac Equation#^rem-c13-2-4|QM Remark: Lorentz covariance and the rapidity]]); here it holds for every $\omega$ because the identity of Theorem §C5a.4.11 is proved for the whole group.
 
@@ -230,7 +230,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > **4. The action.** A density with $\mathcal L'(x) = \mathcal L(\Lambda^{-1}x)$ gives an invariant action by [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]] (substitute $y = \Lambda^{-1}x$, Jacobian $\lvert\det\Lambda^{-1}\rvert = 1$).
 >
 > **What the derivation shows**
-> - Each of the three slots of $\gamma^\mu$ is cancelled by a neighbour transforming with the inverse rule: the row spinor slot by $\bar\psi$, the column slot by $\psi$, the vector slot by $\partial_\mu$ (figure). The mass term uses only the spinor contraction. This is the spinor case of "invariant Lagrangians are $(0, 0)$ pieces" ([[§C3.4 How Fields Transform under the Lorentz Group#^rem-c3-4-5|§C3.4, Remark: Invariant Lagrangians are (0, 0) pieces]]).
+> - Each of the three slots of $\gamma^\mu$ is cancelled by a neighbour transforming with the inverse rule: the row spinor slot by $\bar\psi$, the column slot by $\psi$, the vector slot by $\partial_\mu$ (figure). The mass term uses only the spinor contraction. This is the spinor case of "invariant Lagrangians are $(0, 0)$ pieces" ([[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-5|§C3.3, Remark: Invariant Lagrangians are (0, 0) pieces]]).
 > - Used next: the field equations (Theorem §C5a.7.6) are covariant because they come from an invariant action.
 
 ^der-c5a-7-4
@@ -531,7 +531,7 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 *The Dirac equation in two-component form: the Weyl halves are separate representations, and the mass is the only coupling between them (adapted from the user's PHY 513 notes, Ch. 8 §8.10).*
 
 > [!model] Model §C5a.7.11: The Weyl Fields
-> A **left-handed Weyl field** is a two-component field $\psi_L$ in $(\frac12, 0)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]]; Weyl matrices [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]]) with
+> A **left-handed Weyl field** is a two-component field $\psi_L$ in $(\frac12, 0)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]; Weyl matrices [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]]) with
 >
 > $$
 > \mathcal L_L = i\psi_L^\dagger\bar\sigma^\mu\partial_\mu\psi_L, \qquad i\bar\sigma^\mu\partial_\mu\psi_L = 0 ;
@@ -539,7 +539,7 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 >
 > a **right-handed Weyl field** $\psi_R$ in $(0, \frac12)$ has $\mathcal L_R = i\psi_R^\dagger\sigma^\mu\partial_\mu\psi_R$ and $i\sigma^\mu\partial_\mu\psi_R = 0$. These are the **Weyl equations**.
 >
-> *Assumptions:* $m = 0$ (the two blocks of [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|Theorem §C5a.7.10]] decouple, and either may be kept alone, consistently both as a representation and dynamically); classical, free; no parity symmetry (parity exchanges the two, [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|Theorem §C3.3.8]]).
+> *Assumptions:* $m = 0$ (the two blocks of [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|Theorem §C5a.7.10]] decouple, and either may be kept alone, consistently both as a representation and dynamically); classical, free; no parity symmetry (parity exchanges the two, [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-9|Theorem §CB.15.9]]).
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Principle "The Weyl equations", eq. (weyl)) · PHY 513 Lecture 8, Part C ("Weyl Equation") · PS §3.2, eqs. (3.40), (3.44) · Yu §5.3, eq. (5.115)*
 
 ^mod-c5a-7-11
@@ -590,7 +590,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 ^rem-c5a-7-6
 
 > [!remark]- ★ Remark: A Majorana mass needs no second field
-> By [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|Theorem §C5a.5.5]], $\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, so a single left-handed field can supply its own partner: $\psi_L^{\mathsf T}\varepsilon\,\psi_L$ is Lorentz invariant, because $\Lambda_L^{\mathsf T}\varepsilon\Lambda_L = (\det\Lambda_L)\varepsilon = \varepsilon$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]]). This is a *Majorana* mass. For commuting components it vanishes identically, $\psi^{\mathsf T}\varepsilon\psi = \psi_1\psi_2 - \psi_2\psi_1 = 0$ (with $\varepsilon^{12} = 1$); it exists only for anticommuting fields ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]; Majorana fields, QFT C9, planned). Whether neutrino masses are of Dirac or Majorana type is not known.
+> By [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-10|Theorem §CB.15.10]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|Theorem §C5a.5.5]], $\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, so a single left-handed field can supply its own partner: $\psi_L^{\mathsf T}\varepsilon\,\psi_L$ is Lorentz invariant, because $\Lambda_L^{\mathsf T}\varepsilon\Lambda_L = (\det\Lambda_L)\varepsilon = \varepsilon$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]]). This is a *Majorana* mass. For commuting components it vanishes identically, $\psi^{\mathsf T}\varepsilon\psi = \psi_1\psi_2 - \psi_2\psi_1 = 0$ (with $\varepsilon^{12} = 1$); it exists only for anticommuting fields ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]; Majorana fields, QFT C9, planned). Whether neutrino masses are of Dirac or Majorana type is not known.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Caution "'A neutrino mass needs a right-handed neutrino'")*
 

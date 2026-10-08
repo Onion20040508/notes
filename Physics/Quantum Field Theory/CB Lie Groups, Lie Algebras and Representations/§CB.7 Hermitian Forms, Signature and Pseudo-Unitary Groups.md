@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Linear Algebra (LADR) §§6, 12, 23–24, 35 · the user's PHY 513 notes, Ch. 8 §8.1 · B. C. Hall, Quantum Theory for Mathematicians, Def. 16.1, Examples 16.4, 16.22 · Y. Nakatsukasa, V. Noferini, arXiv:1711.00495, Thm. 1 · K. Conrad, Bilinear Forms (https://kconrad.math.uconn.edu/blurbs/linmultialg/bilinearform.pdf), Thms. 3.12, 3.16, 3.21, 6.19, Def. 3.17 · I. I. Cotăescu, Elements of Linear Algebra (arXiv:1602.03006), §4.2 · J. Adams, D. Vogan, arXiv:1502.03304, Prop. 1.4 · the rest written here.*
 
-Which structure does $\bar\psi = \psi^\dagger\gamma^0$ add to spinor space, and why is it fixed by the Dirac matrices? An inner product ([[§20 Inner Products and Norms#^ladr-6-2|LADR Def. 6.2]]) is a positive-definite Hermitian form; finite-dimensional representations of the Lorentz group admit none that is invariant ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-16|Theorem §CB.5.16]]), but they can preserve an *indefinite* one. This section states the layer of Hermitian forms the spinor chapter uses — matrices and changes of basis, Sylvester's law of inertia, the adjoint for an indefinite form, the pseudo-unitary groups $U(p,q)$ — and the uniqueness theorem: on an irreducible representation, an invariant Hermitian form is unique up to a real factor. It builds on [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.5]] (Schur).
+Which structure does $\bar\psi = \psi^\dagger\gamma^0$ add to spinor space, and why is it fixed by the Dirac matrices? An inner product ([[§20 Inner Products and Norms#^ladr-6-2|LADR Def. 6.2]]) is a positive-definite Hermitian form; finite-dimensional representations of the Lorentz group admit none that is invariant ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-23|Theorem §CB.5.23]]), but they can preserve an *indefinite* one. This section states the layer of Hermitian forms the spinor chapter uses — matrices and changes of basis, Sylvester's law of inertia, the adjoint for an indefinite form, the pseudo-unitary groups $U(p,q)$ — and the uniqueness theorem: on an irreducible representation, an invariant Hermitian form is unique up to a real factor. It builds on [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.5]] (Schur).
 
 <!-- MOVE rows (CB-INVENTORY): Def §C5a.2.1, Thm §C5a.2.1 and Def §C5a.2.2 are embedded below; they are to be moved here in batch 4 (SPEC-CB: "CB.6–CB.8 (+ §C5a.2 move)"; old CB.4–CB.6). -->
 
@@ -102,7 +102,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 >
 > **What the proof shows**
 > - Only nondegeneracy is used, never positivity: the adjoint exists for every nondegenerate form, with the form's matrix $H$ appearing as $H^{-1}A^\dagger H$ (for $H = \mathbb 1$, the ordinary $A^\dagger$).
-> - ⚑ By-product: for an indefinite form, $U^{\perp_h}$ has the complementary dimension but need not be a complement — $U\cap U^{\perp_h}$ can be nonzero (a null line, $h(u, u) = 0$, lies in its own orthogonal space). So invariance of $U^{\perp_h}$ does **not** give complete reducibility as it does for an inner product (Theorem §CB.5.14); compare the null vectors of the covariant photon space ([[§C4.7 Covariant Quantization and the Indefinite Metric#^rem-c4-7-3|§C4.7, Remark: A space with an indefinite inner product]]).
+> - ⚑ By-product: for an indefinite form, $U^{\perp_h}$ has the complementary dimension but need not be a complement — $U\cap U^{\perp_h}$ can be nonzero (a null line, $h(u, u) = 0$, lies in its own orthogonal space). So invariance of $U^{\perp_h}$ does **not** give complete reducibility as it does for an inner product (Theorem §CB.5.20); compare the null vectors of the covariant photon space ([[§C4.7 Covariant Quantization and the Indefinite Metric#^rem-c4-7-3|§C4.7, Remark: A space with an indefinite inner product]]).
 > - Used next: Theorem §CB.7.7 uses part 3 to transfer irreducibility from $\mathcal S$ to $\{A^{\dagger_h}\}$.
 
 ^pf-cb-7-3
@@ -117,7 +117,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 ^def-cb-7-4
 
 > [!theorem] Theorem §CB.7.5: U(p, q) Is a Matrix Lie Group
-> $U(p, q)$ ([[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-4|Def. §CB.7.4]]) is a closed subgroup of $GL(n, \mathbb C)$, so a matrix Lie group ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-2|Def. §C3.1.2]]), with Lie algebra ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-3|Def. §C3.1.3]])
+> $U(p, q)$ ([[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-4|Def. §CB.7.4]]) is a closed subgroup of $GL(n, \mathbb C)$, so a matrix Lie group ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]), with Lie algebra ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-9|Def. §CB.1.9]])
 >
 > $$
 > \mathfrak u(p, q) = \{X \in M_n(\mathbb C) : X^\dagger\eta + \eta X = 0\} = \{X : X^{\dagger_h} = -X\}, \qquad \dim_{\mathbb R}\mathfrak u(p, q) = n^2 .
@@ -134,21 +134,21 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 >
 > **1. A subgroup.** If $A^\dagger\eta A = \eta$ and $B^\dagger\eta B = \eta$, then $(AB)^\dagger\eta(AB) = B^\dagger(A^\dagger\eta A)B = B^\dagger\eta B = \eta$. Multiplying $A^\dagger\eta A = \eta$ on the left by $(A^{-1})^\dagger = (A^\dagger)^{-1}$ and on the right by $A^{-1}$ gives $\eta = (A^{-1})^\dagger\eta A^{-1}$, so $A^{-1} \in U(p, q)$; and $\mathbb 1 \in U(p, q)$.
 >
-> **2. Closed (Hall, Def. 16.1).** $F(A) = A^\dagger\eta A - \eta$ is continuous on $M_n(\mathbb C)$ (its entries are polynomials in the entries of $A$ and $\bar A$), so $U(p, q) = F^{-1}(0)\cap GL(n, \mathbb C)$ is closed in $GL(n, \mathbb C)$: a matrix Lie group ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-2|Def. §C3.1.2]]).
+> **2. Closed (Hall, Def. 16.1).** $F(A) = A^\dagger\eta A - \eta$ is continuous on $M_n(\mathbb C)$ (its entries are polynomials in the entries of $A$ and $\bar A$), so $U(p, q) = F^{-1}(0)\cap GL(n, \mathbb C)$ is closed in $GL(n, \mathbb C)$: a matrix Lie group ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]).
 >
-> **3. The Lie algebra, ⊇.** By [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-3|Def. §C3.1.3]] the Lie algebra is $\{X : e^{sX} \in U(p, q)\ \forall s \in \mathbb R\}$. Suppose $X^\dagger\eta + \eta X = 0$, i.e. $X^\dagger = -\eta X\eta^{-1}$. By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]], 4, $(e^{sX})^\dagger = e^{sX^\dagger} = e^{-s\eta X\eta^{-1}} = \eta\,e^{-sX}\eta^{-1}$, so
+> **3. The Lie algebra, ⊇.** By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-9|Def. §CB.1.9]] the Lie algebra is $\{X : e^{sX} \in U(p, q)\ \forall s \in \mathbb R\}$. Suppose $X^\dagger\eta + \eta X = 0$, i.e. $X^\dagger = -\eta X\eta^{-1}$. By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-3|Theorem §CB.1.3]], 4, $(e^{sX})^\dagger = e^{sX^\dagger} = e^{-s\eta X\eta^{-1}} = \eta\,e^{-sX}\eta^{-1}$, so
 >
 > $$
 > (e^{sX})^\dagger\,\eta\,e^{sX} = \eta\,e^{-sX}\eta^{-1}\eta\,e^{sX} = \eta\,e^{-sX}e^{sX} = \eta ,
 > $$
 >
-> using $e^{-sX}e^{sX} = \mathbb 1$ (Theorem §CB.1.2, 2). So $e^{sX} \in U(p, q)$ for every $s$.
+> using $e^{-sX}e^{sX} = \mathbb 1$ (Theorem §CB.1.3, 2). So $e^{sX} \in U(p, q)$ for every $s$.
 >
-> **4. The Lie algebra, ⊆.** Conversely, if $e^{sX^\dagger}\eta\,e^{sX} = \eta$ for all $s$, differentiate at $s = 0$ with the product rule and Theorem §CB.1.2, 5 ($\frac{d}{ds}e^{sY} = Ye^{sY}$): $X^\dagger\eta + \eta X = 0$.
+> **4. The Lie algebra, ⊆.** Conversely, if $e^{sX^\dagger}\eta\,e^{sX} = \eta$ for all $s$, differentiate at $s = 0$ with the product rule and Theorem §CB.1.3, 5 ($\frac{d}{ds}e^{sY} = Ye^{sY}$): $X^\dagger\eta + \eta X = 0$.
 >
 > **5. The h-adjoint form.** In the $h$-orthonormal basis the matrix of $h$ is $\eta$, so $X^{\dagger_h} = \eta^{-1}X^\dagger\eta = \eta X^\dagger\eta$ ([[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-3|Theorem §CB.7.3]], 1). Then $X^{\dagger_h} = -X$ iff $\eta X^\dagger\eta = -X$ iff (multiply on the left by $\eta$) $X^\dagger\eta = -\eta X$: the same condition.
 >
-> **6. Dimension.** $X \mapsto \eta X$ is real-linear and its own inverse ($\eta^2 = \mathbb 1$). It maps $\mathfrak u(p, q)$ onto $\mathfrak u(n)$: $(\eta X)^\dagger = X^\dagger\eta = -\eta X$ iff $X \in \mathfrak u(p, q)$. So $\dim_{\mathbb R}\mathfrak u(p, q) = \dim_{\mathbb R}\mathfrak u(n) = n^2$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-11|Theorem §CB.1.11]]: $n$ real diagonal parameters of $i\mathbb R$ and $\frac{n(n-1)}2$ complex entries above the diagonal, $n + n(n-1) = n^2$).
+> **6. Dimension.** $X \mapsto \eta X$ is real-linear and its own inverse ($\eta^2 = \mathbb 1$). It maps $\mathfrak u(p, q)$ onto $\mathfrak u(n)$: $(\eta X)^\dagger = X^\dagger\eta = -\eta X$ iff $X \in \mathfrak u(p, q)$. So $\dim_{\mathbb R}\mathfrak u(p, q) = \dim_{\mathbb R}\mathfrak u(n) = n^2$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|Theorem §CB.1.15]]: $n$ real diagonal parameters of $i\mathbb R$ and $\frac{n(n-1)}2$ complex entries above the diagonal, $n + n(n-1) = n^2$).
 >
 > **7. Physicists' form.** For $X = -iT$, $X^{\dagger_h} = (-iT)^{\dagger_h} = \overline{(-i)}\,T^{\dagger_h} = iT^{\dagger_h}$ (Theorem §CB.7.3, 2). So $X^{\dagger_h} = -X = iT$ iff $T^{\dagger_h} = T$; by steps 3–5, $e^{-isT} \in U(p, q)$ for all real $s$ iff $-iT \in \mathfrak u(p, q)$ iff $T$ is $h$-self-adjoint.
 >
@@ -159,7 +159,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 
 ^pf-cb-7-5
 
-*Uses:* [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-2|Def. §C3.1.2]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-3|Def. §C3.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-11|Theorem §CB.1.11]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-3|Theorem §CB.7.3]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-4|Def. §CB.7.4]]
+*Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-9|Def. §CB.1.9]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-3|Theorem §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|Theorem §CB.1.15]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-3|Theorem §CB.7.3]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-4|Def. §CB.7.4]]
 
 ## Invariant Hermitian forms of a representation
 
@@ -194,7 +194,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 >
 > **3. The adjoints form an irreducible set.** Let $U$ be invariant under every $A^\dagger$, $A \in \mathcal S$. By [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-3|Theorem §CB.7.3]], 3 (for $h_2$), $U^{\perp_{h_2}}$ is invariant under every $(A^\dagger)^{\dagger_{h_2}} = A$ (Theorem §CB.7.3, 2), so $U^{\perp_{h_2}} \in \{0, W\}$, and $\dim U = n - \dim U^{\perp_{h_2}} \in \{n, 0\}$: $U = W$ or $U = 0$.
 >
-> **4. Schur.** The operators $A^\dagger$ generate an algebra of operators on $W$ with the same invariant subspaces (complex combinations of products), i.e. an irreducible representation of an associative algebra ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-7|Def. §CB.5.7]]), and $S$ commutes with all of it by step 2. By Schur's lemma ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-8|Theorem §CB.5.8]]) $S = c\,\mathbb 1$, so $h_1 = c\,h_2$, and $c \ne 0$ because $S$ is invertible.
+> **4. Schur.** The operators $A^\dagger$ generate an algebra of operators on $W$ with the same invariant subspaces (complex combinations of products), i.e. an irreducible representation of an associative algebra ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-10|Def. §CB.5.10]]), and $S$ commutes with all of it by step 2. By Schur's lemma ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-11|Theorem §CB.5.11]]) $S = c\,\mathbb 1$, so $h_1 = c\,h_2$, and $c \ne 0$ because $S$ is invertible.
 >
 > **5. c is real.** Choose $\chi, \psi$ with $h_2(\chi, \psi) \ne 0$ (nondegeneracy). Hermitian symmetry of both forms: $c\,h_2(\chi, \psi) = h_1(\chi, \psi) = \overline{h_1(\psi, \chi)} = \overline{c\,h_2(\psi, \chi)} = \bar c\,h_2(\chi, \psi)$, so $c = \bar c$.
 >
@@ -209,7 +209,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 
 ^pf-cb-7-7
 
-*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-2|Def. §CB.7.2]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-3|Theorem §CB.7.3]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-4|Def. §CB.7.4]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-6|Def. §CB.7.6]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-7|Def. §CB.5.7]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-8|Theorem §CB.5.8]]
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-2|Def. §CB.7.2]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-3|Theorem §CB.7.3]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-4|Def. §CB.7.4]], [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-7-6|Def. §CB.7.6]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-10|Def. §CB.5.10]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-11|Theorem §CB.5.11]]
 
 The Dirac form, the instance of consequence 2, in [[§C5a.2 The Dirac Form|§C5a.2]]:
 

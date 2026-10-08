@@ -219,7 +219,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 >
 > **What the derivation shows**
 > - The factor $2E_{\mathbf p}$ in the normalization is the inverse of the Jacobian in the measure; together they are invariant.
-> - Used next: the Lorentz action $U(\Lambda)|\mathbf p\rangle = |\Lambda\mathbf p\rangle$ ([[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-11|Theorem §C3.5.11]]) and every amplitude built from $|\mathbf p\rangle$.
+> - Used next: the Lorentz action $U(\Lambda)|\mathbf p\rangle = |\Lambda\mathbf p\rangle$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]]) and every amplitude built from $|\mathbf p\rangle$.
 
 ^der-c2a-4-4
 
@@ -373,7 +373,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 
 > [!remark] Remark: Sharp momentum or sharp position; why √(2E_p)
 > - **Fourier conjugates.** $\hat a^\dagger_{\mathbf p}|0\rangle$ has sharp momentum and is not localized (its "wave function" is a plane wave); $\hat\phi(\mathbf x)|0\rangle$ is localized at $\mathbf x$ and contains all momenta. The two are related as $|\mathbf p\rangle$ and $|\mathbf x\rangle$ are in quantum mechanics ([[§C2.3 Wave Functions in Position and Momentum Space#^thm-c2-3-3|QM Theorem §C2.3.3]]), with the difference that $\mathbf x$ labels an operator. The localization is approximate: compared with $|\mathbf x\rangle$, the weight carries an extra $1/2E_{\mathbf p}$, nearly constant only for $|\mathbf p| \ll m$ (PS p. 24).
-> - **Why the factor.** The $1/\sqrt{2E_{\mathbf p}}$ placed in the mode expansion and the $\sqrt{2E_{\mathbf p}}$ in $|\mathbf p\rangle$ are the same choice: they make $\langle\mathbf p|\mathbf q\rangle$, $\langle\mathbf p|\hat\phi|0\rangle$ and the completeness relation invariant, at the price of dividing by $2E_{\mathbf p}$ elsewhere. With it a Lorentz transformation acts on states without extra factors, $U(\Lambda)|\mathbf p\rangle = |\Lambda\mathbf p\rangle$ (PS eq. (2.37)); that, and the spin-0 particle as a representation of the Poincaré group, is [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-11|Theorem §C3.5.11]]; for a particle of any spin the relativistic normalization is again the one that keeps the transformation law free of factors ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]).
+> - **Why the factor.** The $1/\sqrt{2E_{\mathbf p}}$ placed in the mode expansion and the $\sqrt{2E_{\mathbf p}}$ in $|\mathbf p\rangle$ are the same choice: they make $\langle\mathbf p|\mathbf q\rangle$, $\langle\mathbf p|\hat\phi|0\rangle$ and the completeness relation invariant, at the price of dividing by $2E_{\mathbf p}$ elsewhere. With it a Lorentz transformation acts on states without extra factors, $U(\Lambda)|\mathbf p\rangle = |\Lambda\mathbf p\rangle$ (PS eq. (2.37)); that, and the spin-0 particle as a representation of the Poincaré group, is [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]]; for a particle of any spin the relativistic normalization is again the one that keeps the transformation law free of factors ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9 ("Two complementary statements, not a contradiction"; "Discussion") · PS §2.3, pp. 23–24*
 

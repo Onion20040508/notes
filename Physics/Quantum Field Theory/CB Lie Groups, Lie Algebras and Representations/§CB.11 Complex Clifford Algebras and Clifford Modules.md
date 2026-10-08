@@ -11,14 +11,14 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: J. Figueroa-O'Farrill, Spin Geometry, lecture notes, Edinburgh 2010, version of 18 May 2017, §§1.4.3, 2.2–2.4, 3.3 (https://empg.maths.ed.ac.uk/Activities/Spin/SpinNotes.pdf, read via the Internet Archive copy of 27 Sep 2024; convention $x^2 = -Q(x)$) · E. Meinrenken, Clifford Algebras and Lie Groups, lecture notes, Toronto, Fall 2009, Ch. 2 §2.4 (https://www.math.toronto.edu/mein/teaching/LieClifford/cl12.pdf) · P. Woit, Quantum Theory, Groups and Representations, §28.1 ("Cliff(2d, ℂ) ↔ M(2^d, ℂ)", stated there without proof), §29.1 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · Peskin & Schroeder, §3.2 · the user's PHY 513 notes, Ch. 8 §8.1 · the rest written here.*
 
-Why do the Dirac matrices have to be $4\times4$, and why are any two sets of them conjugate? After complexification every Clifford algebra of an $n$-dimensional nondegenerate space is one complex algebra $\mathrm{Cl}_n(\mathbb C)$, and that algebra is a full matrix algebra ($n$ even) or a sum of two ($n$ odd). A matrix algebra has exactly one irreducible module, which gives the dimension $2^{\lfloor n/2\rfloor}$ of spinors and Pauli's fundamental theorem as corollaries. The section builds on [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.9]]–[[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.10]] and on Schur and Burnside ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-8|Theorem §CB.5.8]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-9|Theorem §CB.5.9]]); the course's statements (Pauli's theorem, uniqueness of spinor space, the $4\times4$ bound) are shown as embeds at the points where they become corollaries.
+Why do the Dirac matrices have to be $4\times4$, and why are any two sets of them conjugate? After complexification every Clifford algebra of an $n$-dimensional nondegenerate space is one complex algebra $\mathrm{Cl}_n(\mathbb C)$, and that algebra is a full matrix algebra ($n$ even) or a sum of two ($n$ odd). A matrix algebra has exactly one irreducible module, which gives the dimension $2^{\lfloor n/2\rfloor}$ of spinors and Pauli's fundamental theorem as corollaries. The section builds on [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.9]]–[[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.10]] and on Schur and Burnside ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-11|Theorem §CB.5.11]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-12|Theorem §CB.5.12]]); the course's statements (Pauli's theorem, uniqueness of spinor space, the $4\times4$ bound) are shown as embeds at the points where they become corollaries.
 
 <!-- MOVE row (CB-INVENTORY): ★ Remark rem-c5a-1-5 (complexified Clifford algebra ≅ M₄(ℂ)) is embedded below; it is to be moved here when this section is written (batch 5; SPEC-CB groups the §C5a.1 moves with batch 6 — settle then), as the n = 4 case of Theorem §CB.11.5. -->
 
 ## Complexification
 
 > [!definition] Definition §CB.11.1: Complexification of a Real Algebra
-> The **complexification** of a real associative algebra $A$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-5|Def. §CB.5.5]]) is the complex vector space $A_{\mathbb C}$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-2|Def. §CB.3.2]]) with the complex-bilinear product $(a + ib)(a' + ib') = (aa' - bb') + i(ab' + ba')$. A representation of $A$ on a complex space extends uniquely to a complex-linear representation of $A_{\mathbb C}$, and conversely, with the same invariant subspaces and intertwiners (as in [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|Theorem §CB.3.6]]).
+> The **complexification** of a real associative algebra $A$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-8|Def. §CB.5.8]]) is the complex vector space $A_{\mathbb C}$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-2|Def. §CB.3.2]]) with the complex-bilinear product $(a + ib)(a' + ib') = (aa' - bb') + i(ab' + ba')$. A representation of $A$ on a complex space extends uniquely to a complex-linear representation of $A_{\mathbb C}$, and conversely, with the same invariant subspaces and intertwiners (as in [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-8|Theorem §CB.3.8]]).
 >
 > *Source (planned): written here*
 
@@ -56,7 +56,7 @@ Why do the Dirac matrices have to be $4\times4$, and why are any two sets of the
 > **Step 4** (modules). A complex Clifford module $\gamma : \mathrm{Cl}(V, q) \to \operatorname{End}_{\mathbb C}(W)$ ([[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-9-9|Def. §CB.9.9]]) extends to $\gamma_{\mathbb C}(a + ib) = \gamma(a) + i\gamma(b)$, which is complex-linear and multiplicative: $\gamma_{\mathbb C}\bigl((a + ib)(a' + ib')\bigr) = \gamma(aa' - bb') + i\gamma(ab' + ba') = (\gamma(a) + i\gamma(b))(\gamma(a') + i\gamma(b'))$. Conversely a complex-linear module of $\mathrm{Cl}_{\mathbb C}$ restricts to one of $\mathrm{Cl}(V, q)$, and the two operations are inverse. A complex subspace is invariant under $\gamma(\mathrm{Cl})$ iff under its complex span $\gamma_{\mathbb C}(\mathrm{Cl}_{\mathbb C})$, and likewise for intertwiners. Composing with $\Phi$ identifies these modules with the modules of $\mathrm{Cl}_n(\mathbb C)$. For $\mathbb R^{1,3}$ and $\mathbb R^{3,1}$, $n = 4$.
 >
 > **What the proof shows.**
-> - ⚑ By-product: the signature is lost after complexification; this is why the complex Dirac matrices of the $(+,-,-,-)$ and $(-,+,+,+)$ conventions differ only by a factor $i$, and why reality questions (Majorana spinors) must be asked of the real algebra ([[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^rem-cb-10-1|§CB.7, ★ Remark: The real classification (not used in the course)]]).
+> - ⚑ By-product: the signature is lost after complexification; this is why the complex Dirac matrices of the $(+,-,-,-)$ and $(-,+,+,+)$ conventions differ only by a factor $i$, and why reality questions (Majorana spinors) must be asked of the real algebra ([[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^rem-cb-10-1|§CB.10, ★ Remark: The real classification (not used in the course)]]).
 > - Used next: Theorems §CB.11.5–§CB.11.7 reduce every complex module question to $\mathrm{Cl}_n(\mathbb C)$.
 
 ^pf-cb-11-3
@@ -122,7 +122,7 @@ The $n = 4$ case as stated in [[§C5a.1 Spinor Space and the Clifford Action|§C
 ![[§C5a.1 Spinor Space and the Clifford Action#^rem-c5a-1-5]]
 
 > [!theorem] Theorem §CB.11.6: Modules of a Full Matrix Algebra
-> Every finite-dimensional complex representation of $M_N(\mathbb C)$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-7|Def. §CB.5.7]]) is equivalent to a direct sum of copies of the defining representation on $\mathbb C^N$. So $\mathbb C^N$ is the only irreducible representation up to equivalence, and an irreducible representation has dimension $N$.
+> Every finite-dimensional complex representation of $M_N(\mathbb C)$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-10|Def. §CB.5.10]]) is equivalent to a direct sum of copies of the defining representation on $\mathbb C^N$. So $\mathbb C^N$ is the only irreducible representation up to equivalence, and an irreducible representation has dimension $N$.
 >
 > *Source: Figueroa-O'Farrill, Spin Geometry, Thm. 3.8 (statement, from Lang, Algebra, Ch. XVII) · proof via the matrix units $E_{ab}$ written here*
 
@@ -131,7 +131,7 @@ The $n = 4$ case as stated in [[§C5a.1 Spinor Space and the Clifford Action|§C
 > [!proof]- Proof
 > *Source: the statement is J. Figueroa-O'Farrill, Spin Geometry, §3.3, Thm. 3.8 (which says it "can be extracted from" Lang, Algebra, Ch. XVII, and gives no proof). The matrix-unit proof is written here.*
 >
-> Let $\gamma : M_N(\mathbb C) \to \operatorname{End}(W)$ be a representation ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-7|Def. §CB.5.7]]) and $E_{ab}$ the matrix units ($1$ in place $(a, b)$, $0$ elsewhere), so that
+> Let $\gamma : M_N(\mathbb C) \to \operatorname{End}(W)$ be a representation ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-10|Def. §CB.5.10]]) and $E_{ab}$ the matrix units ($1$ in place $(a, b)$, $0$ elsewhere), so that
 >
 > $$
 > E_{ab}E_{cd} = \delta_{bc}E_{ad}, \qquad \sum_aE_{aa} = \mathbb 1, \qquad X = \sum_{a,b}X_{ab}E_{ab} .
@@ -159,7 +159,7 @@ The $n = 4$ case as stated in [[§C5a.1 Spinor Space and the Clifford Action|§C
 
 ^pf-cb-11-6
 
-*Uses:* [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-7|Def. §CB.5.7]]
+*Uses:* [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-10|Def. §CB.5.10]]
 
 ## Irreducible Clifford modules and Pauli's theorem
 
@@ -197,7 +197,7 @@ The Minkowski case of part 1 proved by hand in [[§C5a.0 Why Spinors꞉ the Squa
 ![[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3]]
 
 > [!theorem] Theorem §CB.11.8: Pauli's Theorem, General Form
-> Let $n = \dim V$ be even and $\gamma$, $\gamma'$ two Clifford modules of $(V, q)$ ([[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-10|Theorem §CB.9.10]]) on spaces $W$, $W'$ of the same dimension. Then there is an invertible $S : W \to W'$ with $\gamma'(v) = S\gamma(v)S^{-1}$ for all $v \in V$. If the modules are irreducible ($\dim W = 2^{n/2}$), $S$ is unique up to a nonzero factor ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-8|Theorem §CB.5.8]]). For $n$ odd the same holds for modules on which $\omega_{\mathbb C}$ acts by the same sign.
+> Let $n = \dim V$ be even and $\gamma$, $\gamma'$ two Clifford modules of $(V, q)$ ([[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-10|Theorem §CB.9.10]]) on spaces $W$, $W'$ of the same dimension. Then there is an invertible $S : W \to W'$ with $\gamma'(v) = S\gamma(v)S^{-1}$ for all $v \in V$. If the modules are irreducible ($\dim W = 2^{n/2}$), $S$ is unique up to a nonzero factor ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-11|Theorem §CB.5.11]]). For $n$ odd the same holds for modules on which $\omega_{\mathbb C}$ acts by the same sign.
 >
 > *Source: written here (corollary of Theorem §CB.11.7) · Peskin & Schroeder, §3.2 (statement for $n = 4$)*
 
@@ -210,7 +210,7 @@ The Minkowski case of part 1 proved by hand in [[§C5a.0 Why Spinors꞉ the Squa
 >
 > **Step 2** (the intertwiner). Composing the equivalence $W \to S_0^{\oplus k}$ with the inverse of $W' \to S_0^{\oplus k}$ gives an invertible linear $S : W \to W'$ with $S\gamma(x) = \gamma'(x)S$ for all $x \in \mathrm{Cl}(V, q)$; for $x = v \in V$, $\gamma'(v) = S\gamma(v)S^{-1}$. (By [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-10|Theorem §CB.9.10]] it is enough that this holds on $V$: the modules are determined by the $\gamma(v)$.)
 >
-> **Step 3** (uniqueness up to a factor). If $W$, $W'$ are irreducible and $S$, $S'$ are two such maps, $S^{-1}S'$ is an invertible intertwiner from the irreducible $W$ to itself, hence $S^{-1}S' = \lambda\mathbb 1$ by Schur ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-8|Theorem §CB.5.8]]), $\lambda \ne 0$: $S' = \lambda S$.
+> **Step 3** (uniqueness up to a factor). If $W$, $W'$ are irreducible and $S$, $S'$ are two such maps, $S^{-1}S'$ is an invertible intertwiner from the irreducible $W$ to itself, hence $S^{-1}S' = \lambda\mathbb 1$ by Schur ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-11|Theorem §CB.5.11]]), $\lambda \ne 0$: $S' = \lambda S$.
 >
 > **Step 4** ($n$ odd). If $\omega_{\mathbb C}$ acts by the same sign on $W$ and $W'$, Step 4 of the proof of Theorem §CB.11.7 shows both are sums of copies of the same irreducible module of dimension $2^{(n-1)/2}$; Steps 1–3 apply verbatim.
 >
@@ -220,7 +220,7 @@ The Minkowski case of part 1 proved by hand in [[§C5a.0 Why Spinors꞉ the Squa
 
 ^pf-cb-11-8
 
-*Uses:* [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-7|Theorem §CB.11.7]], [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-10|Theorem §CB.9.10]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-8|Theorem §CB.5.8]]
+*Uses:* [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-7|Theorem §CB.11.7]], [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-10|Theorem §CB.9.10]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-11|Theorem §CB.5.11]]
 
 Pauli's theorem, the uniqueness of spinor space, and changes of basis as intertwiners, in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]:
 
@@ -284,7 +284,7 @@ Pauli's theorem, the uniqueness of spinor space, and changes of basis as intertw
 >
 > **What the proof shows.**
 > - ⚑ By-product: for $n$ even, $\gamma(\mathrm{Cl}^0) = \operatorname{End}(S^+)\oplus\operatorname{End}(S^-)$ exactly, so the only operators commuting with all of $\gamma(\mathrm{Cl}^0)$ are $a\Pi_+ + b\Pi_-$: the chirality projectors $\frac12(1 \pm \gamma^5)$ are, up to combination, the only invariants of the even algebra on the Dirac module.
-> - Restricted to $\mathrm{Spin}(V)_0$, which generates $\mathrm{Cl}^0$ ([[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-15|Theorem §CB.12.15]]), Steps 3–6 become parts 1–2 of the TA's theorem ([[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-20|Theorem §CB.12.20]]).
+> - Restricted to $\mathrm{Spin}(V)_0$, which generates $\mathrm{Cl}^0$ ([[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-15|Theorem §CB.12.15]]), Steps 3–6 become parts 1–2 of the TA's theorem ([[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-21|Theorem §CB.12.21]]).
 
 ^pf-cb-11-10
 

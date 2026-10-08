@@ -7,7 +7,7 @@ section: C2b.8
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C2b.7 Wick Rotation and the Two-Point Family]] · ↑ [[· C2b Two-Point Functions, Causality and Propagators]] · [[§C3.1 Groups, Algebras and Representations of Rotations]] →
+← [[§C2b.7 Wick Rotation and the Two-Point Family]] · ↑ [[· C2b Two-Point Functions, Causality and Propagators]] · [[§C3.1 Index Slots, Rotations and Spin in Field Theory]] →
 
 *Sources: the user's PHY 513 notes, Ch. 6 §6.13 · PHY 513 Lecture 6 (Larsen, 21 Sep 2026), Part C (on the slides, not reached in class) · Peskin & Schroeder §2.4, pp. 32–33, eqs. (2.61)–(2.66).*
 

@@ -79,7 +79,7 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 > [!proof]- Proof
 > *Source: E. Meinrenken, Clifford Algebras and Lie Groups, Ch. 2 §2.7 (transposition: the anti-automorphism $(v_1\otimes\cdots\otimes v_k)^\top = v_k\otimes\cdots\otimes v_1$ of $T(V)$ preserves $I(V; B)$ and descends) · J. Figueroa-O'Farrill, Spin Geometry, §3.4 (the "check involution"). The route through the opposite algebra, which uses only Theorem §CB.9.7, is written here.*
 >
-> **Step 1** (the opposite algebra). Let $\mathrm{Cl}^{\mathrm{op}}$ be the vector space $\mathrm{Cl}(V, q)$ with the product $x\cdot_{\mathrm{op}}y = yx$. It is associative, $(x\cdot_{\mathrm{op}}y)\cdot_{\mathrm{op}}z = z(yx) = (zy)x = x\cdot_{\mathrm{op}}(y\cdot_{\mathrm{op}}z)$, bilinear, with the same unit $1$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-5|Def. §CB.5.5]]).
+> **Step 1** (the opposite algebra). Let $\mathrm{Cl}^{\mathrm{op}}$ be the vector space $\mathrm{Cl}(V, q)$ with the product $x\cdot_{\mathrm{op}}y = yx$. It is associative, $(x\cdot_{\mathrm{op}}y)\cdot_{\mathrm{op}}z = z(yx) = (zy)x = x\cdot_{\mathrm{op}}(y\cdot_{\mathrm{op}}z)$, bilinear, with the same unit $1$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-8|Def. §CB.5.8]]).
 >
 > **Step 2** (existence). The inclusion $f : V \to \mathrm{Cl}^{\mathrm{op}}$, $f(v) = v$, satisfies $f(v)\cdot_{\mathrm{op}}f(v) = vv = q(v)1$. By [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-7|Theorem §CB.9.7]] there is a unique algebra homomorphism $t : \mathrm{Cl}(V, q) \to \mathrm{Cl}^{\mathrm{op}}$ with $t(v) = v$. Read in $\mathrm{Cl}(V, q)$: $t$ is linear, $t(1) = 1$ and $t(xy) = t(x)\cdot_{\mathrm{op}}t(y) = t(y)t(x)$. Then by induction on $k$, $t(v_1\cdots v_k) = t(v_2\cdots v_k)\,t(v_1) = v_k\cdots v_2\,v_1$.
 >
@@ -93,7 +93,7 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 
 ^pf-cb-10-4
 
-*Uses:* [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-7|Theorem §CB.9.7]], [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-1|Theorem §CB.10.1]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-5|Def. §CB.5.5]]
+*Uses:* [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-7|Theorem §CB.9.7]], [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-1|Theorem §CB.10.1]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-8|Def. §CB.5.8]]
 
 > [!definition] Definition §CB.10.5: Clifford Conjugation
 > The **Clifford conjugation** is $x \mapsto \bar x = \alpha(t(x))$ ([[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-1|Theorem §CB.10.1]], [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-4|Theorem §CB.10.4]]); $\overline{v_1\cdots v_k} = (-1)^kv_k\cdots v_1$.
