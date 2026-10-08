@@ -8,25 +8,30 @@ tags: [chapter, quantum-field-theory]
 # CB Lie Groups, Lie Algebras and Representations
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (54), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (28)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (36), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (133), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (79), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2)
 
 ## Sections
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras]] — 591 §§11, 25, 48–49; 513 notes Ch. 7 §7.2
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification]] — 513 notes Ch. 7 §§7.2, 7.4; Woit §5.5
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs]] — Smith Ch. 3–4; 513 notes Ch. 7 §7.2
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors]] — LADR §§12, 36, 38; 513 notes Ch. 8 §8.2
-- [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups]] — LADR Ch. 6, 9; 513 notes Ch. 8 §8.1
-- [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan]] — 513 notes Ch. 7 §7.2; QM §C7.1; Woit Ch. 8
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element]] — Woit Ch. 28–29; written here
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules]] — Woit §28.1; PS §3.2
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)]] — PHY 513 TA (oral); written here
-- [[§CB.10 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half]] — 591 §§40–41; Woit §6.2
-- [[§CB.11 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Representations (j₊, j₋)]] — 513 notes Ch. 7 §7.4, Ch. 8 §8.2; Woit Ch. 40
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵]] — PS §§3.2–3.4; Woit §41.2
-- [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries]] — QM §C8.1★, §C8.3★; Yu §3.3.1
-- [[§CB.14★ The Poincaré Group and Induced Representations]] — Woit Ch. 18, 20, 42; 513 notes Ch. 7 §7.7
-- [[§CB.15 Grassmann Algebras]] — Woit Ch. 30 (deferred to C11)
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — skeleton; statements from §C5a.1, §C1a.5 (batches B2–B3); LADR
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras]] — 591 §§11, 25, 49–50; Hall Ch. 2–3; 513 notes Ch. 7 §7.2
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings]] — Hall Ch. 3–5; 590 §§29, 31; 513 notes Ch. 7 §7.2
+- [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification]] — 513 notes Ch. 7 §7.2; Woit §5.5; Etingof
+- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms]] — 513 notes Ch. 7 §7.4; PHY 513 Lecture 7; Etingof Ex. 11.4
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs]] — Smith Ch. 3–4; 513 notes Ch. 7 §7.2
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors]] — LADR §§12, 36, 38; 513 notes Ch. 8 §8.2
+- [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups]] — LADR Ch. 6, 9; 513 notes Ch. 8 §8.1
+- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan]] — 513 notes Ch. 7 §7.2; QM §C7.1; Woit Ch. 8
+- [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules]] — Woit Ch. 28; Meinrenken (Clifford) Ch. 1–2
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element]] — Woit Ch. 28–29; written here
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules]] — Woit §28.1; PS §3.2
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)]] — PHY 513 TA (oral); written here
+- [[§CB.13 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half]] — 591 §§40–41; Woit §6.2
+- [[§CB.14 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover]] — 513 notes Ch. 8 §8.2; Woit Ch. 40; Etingof Ex. 11.4
+- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)]] — 513 notes Ch. 7 §7.4; Woit Ch. 40
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵]] — PS §§3.2–3.4; Woit §41.2
+- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries]] — QM §C8.1★, §C8.3★; Yu §3.3.1
+- [[§CB.18★ The Poincaré Group and Induced Representations]] — Woit Ch. 18, 20, 42; 513 notes Ch. 7 §7.7
+- [[§CB.19 Grassmann Algebras]] — Woit Ch. 30 (deferred to C11)
 
 ## Theorems
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|§CB.1.2]] Convergence and Algebraic Properties of the Exponential
@@ -35,127 +40,127 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|§CB.1.5]] Lie Product Formula and the Commutator as a Second-Order Term
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-7|§CB.1.7]] One-Parameter Subgroups Are Exponentials
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|§CB.1.8]] The Lie Algebra Is a Real Lie Algebra
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-9|§CB.1.9]] The Lie Algebra Is the Tangent Space at the Identity
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-10|§CB.1.10]] Closed-Subgroup Theorem
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-9|§CB.1.9]] Closed-Subgroup Theorem
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-10|§CB.1.10]] The Lie Algebra Is the Tangent Space at the Identity
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-11|§CB.1.11]] The Lie Algebras of the Classical Groups
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-14|§CB.1.14]] The Differential of a Homomorphism
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|§CB.1.16]] The Identity Component Is Generated by Exponentials
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|§CB.1.17]] A Homomorphism of a Connected Group Is Determined by Its Differential
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-20|§CB.1.20]] The Differential of Ad Is ad
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-22|§CB.1.22]] Discrete Normal Subgroups of Connected Groups Are Central
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-23|§CB.1.23]] Homomorphisms with Invertible Differential Are Coverings
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-24|§CB.1.24]] The Lie Correspondence for Simply Connected Groups
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-3|§CB.2.3]] The Complexification of a Real Lie Algebra
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-4|§CB.2.4]] Complexification Inside the Matrices
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-5|§CB.2.5]] The Physicists' Generators Rescale the Basis by i; They Do Not Complexify
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-6|§CB.2.6]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-11|§CB.2.11]] Real Forms Are the Fixed Sets of Conjugations
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-12|§CB.2.12]] The Split of the Complexified Lorentz Algebra
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-13|§CB.2.13]] The Euclidean 𝔰𝔬(4) Splits Already over ℝ
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-14|§CB.2.14]] 𝔰𝔬(1,3) and 𝔰𝔬(4) Are Two Real Forms of One Complex Algebra
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-15|§CB.2.15]] Two Real Forms of 𝔰𝔩(2,ℂ)
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-17|§CB.2.17]] The Real Lie Algebra of SL(2,ℂ) Is the Lorentz Algebra
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-18|§CB.2.18]] The Complexification of Real 𝔰𝔩(2,ℂ) Is Two Copies of 𝔰𝔩(2,ℂ)
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-19|§CB.2.19]] Representations of Real 𝔰𝔩(2,ℂ): a Complex-Linear and an Antilinear Part
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-20|§CB.2.20]] Real Forms Have the Same Representations
-- [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-23|§CB.2.23]] The Complexification of an Irreducible Real Representation
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-2|§CB.3.2]] Kernel and Image of an Intertwiner Are Invariant
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-3|§CB.3.3]] Central Elements Act as Scalars on Irreducible Representations
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-4|§CB.3.4]] Irreducible Representations of Abelian Groups Are One-Dimensional
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-8|§CB.3.8]] Schur's Lemma for Representations of an Associative Algebra
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-9|§CB.3.9]] Burnside's Theorem
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-11|§CB.3.11]] The Casimir Operator of an Invariant Form
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-12|§CB.3.12]] Haar Measure on a Compact Group
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-13|§CB.3.13]] Representations of Compact Groups Are Unitary
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-14|§CB.3.14]] Unitary Representations Are Completely Reducible
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-15|§CB.3.15]] Weyl's Unitary Trick
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-16|§CB.3.16]] No Nontrivial Finite-Dimensional Unitary Representation of a Noncompact Simple Algebra
-- [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-17|§CB.3.17]] A Group Action Gives a Representation on Functions
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-3|§CB.4.3]] The Differential of a Tensor Product Is the Leibniz Rule
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-5|§CB.4.5]] Irreducible Representations of a Direct Sum Are Outer Tensor Products
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-8|§CB.4.8]] Conjugation of a Representation Is Conjugation of the Algebra
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-9|§CB.4.9]] Hom(V, W) ≅ V* ⊗ W, and Its Invariants Are the Intertwiners
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-13|§CB.4.13]] Symmetric and Exterior Powers Are Subrepresentations
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-14|§CB.4.14]] The Metric and the Levi-Civita Symbol Are Invariant Tensors
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-15|§CB.4.15]] ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ)
-- [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-16|§CB.4.16]] The Four Two-Dimensional Representations of SL(2,ℂ)
-- [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-5-1|§CB.5.1]] Sylvester's Law of Inertia for Hermitian Forms
-- [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-5-3|§CB.5.3]] Properties of the h-Adjoint
-- [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-5-5|§CB.5.5]] U(p, q) Is a Matrix Lie Group
-- [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-5-7|§CB.5.7]] Forms with the Same Adjoint on an Irreducible Set Are Proportional
-- [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-6-3|§CB.6.3]] Finite-Dimensional Representations of 𝔰𝔩(2,ℂ)
-- [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-6-4|§CB.6.4]] Weight Multiplicities Determine a Representation
-- [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-6-5|§CB.6.5]] Spin j Is the Symmetric Power Sym²ʲℂ²
-- [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-6-6|§CB.6.6]] Clebsch–Gordan Series
-- [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-6-7|§CB.6.7]] Descent Lemma
-- [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-6-8|§CB.6.8]] Integer Spin Is Built from Vectors
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-5|§CB.7.5]] The Quotient Is an Algebra
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-7|§CB.7.7]] Universal Property of the Clifford Algebra
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-8|§CB.7.8]] The Anticommutator and the Embedding of V
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-10|§CB.7.10]] A Clifford Module Is a Set of Anticommuting Square Roots
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-11|§CB.7.11]] The Grade Automorphism
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-13|§CB.7.13]] The ℤ₂-Grading
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-14|§CB.7.14]] The Reversal
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-16|§CB.7.16]] Basis and Dimension
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-17|§CB.7.17]] The Clifford Algebra Is the Exterior Algebra as a Vector Space
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-19|§CB.7.19]] Properties of the Volume Element
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-20|§CB.7.20]] The Even Subalgebra Is a Clifford Algebra of One Dimension Less
-- [[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^thm-cb-7-21|§CB.7.21]] Clifford Algebras in Low Dimensions
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules#^thm-cb-8-3|§CB.8.3]] Every Real Clifford Algebra Complexifies to Clₙ(ℂ)
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules#^thm-cb-8-5|§CB.8.5]] The Complex Clifford Algebras Are Matrix Algebras
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules#^thm-cb-8-6|§CB.8.6]] Modules of a Full Matrix Algebra
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules#^thm-cb-8-7|§CB.8.7]] Irreducible Clifford Modules
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules#^thm-cb-8-8|§CB.8.8]] Pauli's Theorem, General Form
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules#^thm-cb-8-9|§CB.8.9]] The Complexified Even Subalgebra
-- [[§CB.8 Complex Clifford Algebras and Clifford Modules#^thm-cb-8-10|§CB.8.10]] An Irreducible Clifford Module under the Even Subalgebra
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-2|§CB.9.2]] Non-Null Vectors Are Invertible
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-4|§CB.9.4]] A Vector Acts as the Reflection in Its Orthogonal Hyperplane
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-7|§CB.9.7]] Pin and Spin Are Matrix Lie Groups Acting on V
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-9|§CB.9.9]] The Spinor Norm on Pin
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-10|§CB.9.10]] Cartan–Dieudonné
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-11|§CB.9.11]] Spin(V) → SO(V) Is Onto with Kernel ±1
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-12|§CB.9.12]] The Identity Component Is a Double Cover
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-14|§CB.9.14]] 𝔰𝔭𝔦𝔫(V) Is the Lie Algebra of Spin(V), Isomorphic to 𝔰𝔬(V)
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-15|§CB.9.15]] The Even Subalgebra Is Generated by 𝔰𝔭𝔦𝔫(V)
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-16|§CB.9.16]] Spin Preserves a Form for Which the Clifford Generators Are Self-Adjoint
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-19|§CB.9.19]] Every Representation Splits into a Tensorial and a Spinorial Part
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-20|§CB.9.20]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
-- [[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-21|§CB.9.21]] Clifford Multiplication Is Spin-Equivariant
-- [[§CB.10 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-10-1|§CB.10.1]] The Pauli Matrices Realize Cl(3, 0)
-- [[§CB.10 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-10-2|§CB.10.2]] The Even Part Is the Quaternions
-- [[§CB.10 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-10-3|§CB.10.3]] Spin(3) Is SU(2), and ρ Is the Double Cover SU(2) → SO(3)
-- [[§CB.10 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-10-4|§CB.10.4]] 𝔰𝔭𝔦𝔫(3) = 𝔰𝔲(2)
-- [[§CB.10 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-10-5|§CB.10.5]] The Spinor Representation of Spin(3) Is Spin ½
-- [[§CB.10 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-10-6|§CB.10.6]] The TA's Theorem in Three Dimensions
-- [[§CB.11 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Representations (j₊, j₋)#^thm-cb-11-1|§CB.11.1]] Cl⁰(1,3) ≅ Cl(3,0) ≅ M₂(ℂ)
-- [[§CB.11 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Representations (j₊, j₋)#^thm-cb-11-2|§CB.11.2]] Spin(1,3)₀ Is SL(2,ℂ), and ρ Is the Course's Covering Map
-- [[§CB.11 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Representations (j₊, j₋)#^thm-cb-11-3|§CB.11.3]] The Three Lie Algebras Agree
-- [[§CB.11 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Representations (j₊, j₋)#^thm-cb-11-4|§CB.11.4]] Representations of SL(2,ℂ) Are Pairs of 𝔰𝔩(2,ℂ)-Representations
-- [[§CB.11 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Representations (j₊, j₋)#^thm-cb-11-5|§CB.11.5]] The Irreducible Representations of SL(2,ℂ)
-- [[§CB.11 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Representations (j₊, j₋)#^thm-cb-11-6|§CB.11.6]] Which (j₊, j₋) Descend to SO⁺(1,3)
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-1|§CB.12.1]] γ⁵ Is the Complex Volume Element
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-2|§CB.12.2]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½)
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-3|§CB.12.3]] The Two Halves Are Complex Conjugates of Each Other
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-4|§CB.12.4]] Clifford Multiplication Exchanges the Halves Equivariantly
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-5|§CB.12.5]] The Complexified Vector Is S⁺ ⊗ S⁻
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-6|§CB.12.6]] Two-Forms Are (1, 0) ⊕ (0, 1)
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-7|§CB.12.7]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-8|§CB.12.8]] Every Tensorial (j₊, j₋) Lies in a Tensor Power of the Vector
-- [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-12-9|§CB.12.9]] The TA's Theorem for the Lorentz Group
-- [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-3|§CB.13.3]] Wigner's Theorem
-- [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-4|§CB.13.4]] Connected Groups of Symmetries Act by Unitaries
-- [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-6|§CB.13.6]] Finite-Dimensional Projective Representations Lift to the Universal Cover
-- [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-7|§CB.13.7]] Bargmann's Theorem
-- [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-9|§CB.13.9]] The Square of an Antiunitary Involution Is ±1
-- [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-10|§CB.13.10]] An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
-- [[§CB.14★ The Poincaré Group and Induced Representations#^thm-cb-14-2|§CB.14.2]] The Semidirect Product Is a Group with N Normal
-- [[§CB.14★ The Poincaré Group and Induced Representations#^thm-cb-14-5|§CB.14.5]] The Poincaré Group as a Matrix Lie Group, and Its Lie Algebra
-- [[§CB.14★ The Poincaré Group and Induced Representations#^thm-cb-14-8|§CB.14.8]] The Little Groups in SL(2,ℂ)
-- [[§CB.14★ The Poincaré Group and Induced Representations#^thm-cb-14-10|§CB.14.10]] The Induced Representation Is Unitary
-- [[§CB.14★ The Poincaré Group and Induced Representations#^thm-cb-14-11|§CB.14.11]] Irreducibility (Mackey)
-- [[§CB.14★ The Poincaré Group and Induced Representations#^thm-cb-14-12|§CB.14.12]] Every Irreducible Unitary Representation Is Induced (Wigner–Mackey)
-- [[§CB.15 Grassmann Algebras#^thm-cb-15-2|§CB.15.2]] Basis, Dimension, and the Clifford Algebra of the Zero Form
-- [[§CB.15 Grassmann Algebras#^thm-cb-15-4|§CB.15.4]] Supercommutativity
-- [[§CB.15 Grassmann Algebras#^thm-cb-15-7|§CB.15.7]] Graded Leibniz Rule and Left versus Right
-- [[§CB.15 Grassmann Algebras#^thm-cb-15-9|§CB.15.9]] Linear Change of Variables
-- [[§CB.15 Grassmann Algebras#^thm-cb-15-10|§CB.15.10]] The Fermionic Gaussian Integral Is a Determinant
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-3|§CB.2.3]] The Differential of a Homomorphism
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-5|§CB.2.5]] The Identity Component Is Generated by Exponentials
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-6|§CB.2.6]] A Homomorphism of a Connected Group Is Determined by Its Differential
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-9|§CB.2.9]] The Differential of Ad Is ad
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-11|§CB.2.11]] Discrete Normal Subgroups of Connected Groups Are Central
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-12|§CB.2.12]] Homomorphisms with Invertible Differential Are Coverings
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|§CB.2.13]] The Lie Correspondence for Simply Connected Groups
+- [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-3|§CB.3.3]] The Complexification of a Real Lie Algebra
+- [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|§CB.3.4]] Complexification Inside the Matrices
+- [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-5|§CB.3.5]] The Physicists' Generators Rescale the Basis by i; They Do Not Complexify
+- [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|§CB.3.6]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification
+- [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-11|§CB.3.11]] Real Forms Are the Fixed Sets of Conjugations
+- [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-14|§CB.3.14]] The Complexification of an Irreducible Real Representation
+- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-1|§CB.4.1]] The Split of the Complexified Lorentz Algebra
+- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-2|§CB.4.2]] The Euclidean 𝔰𝔬(4) Splits Already over ℝ
+- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-3|§CB.4.3]] 𝔰𝔬(1,3) and 𝔰𝔬(4) Are Two Real Forms of One Complex Algebra
+- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-4|§CB.4.4]] Two Real Forms of 𝔰𝔩(2,ℂ)
+- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-6|§CB.4.6]] The Real Lie Algebra of SL(2,ℂ) Is the Lorentz Algebra
+- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-7|§CB.4.7]] Real Forms Have the Same Representations
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-2|§CB.5.2]] Kernel and Image of an Intertwiner Are Invariant
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-3|§CB.5.3]] Central Elements Act as Scalars on Irreducible Representations
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-4|§CB.5.4]] Irreducible Representations of Abelian Groups Are One-Dimensional
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-8|§CB.5.8]] Schur's Lemma for Representations of an Associative Algebra
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-9|§CB.5.9]] Burnside's Theorem
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-11|§CB.5.11]] The Casimir Operator of an Invariant Form
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-12|§CB.5.12]] Haar Measure on a Compact Group
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-13|§CB.5.13]] Representations of Compact Groups Are Unitary
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-14|§CB.5.14]] Unitary Representations Are Completely Reducible
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-15|§CB.5.15]] Weyl's Unitary Trick
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-16|§CB.5.16]] No Nontrivial Finite-Dimensional Unitary Representation of a Noncompact Simple Algebra
+- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-17|§CB.5.17]] A Group Action Gives a Representation on Functions
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-3|§CB.6.3]] The Differential of a Tensor Product Is the Leibniz Rule
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-5|§CB.6.5]] Irreducible Representations of a Direct Sum Are Outer Tensor Products
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-8|§CB.6.8]] Conjugation of a Representation Is Conjugation of the Algebra
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-9|§CB.6.9]] Hom(V, W) ≅ V* ⊗ W, and Its Invariants Are the Intertwiners
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-13|§CB.6.13]] Symmetric and Exterior Powers Are Subrepresentations
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-14|§CB.6.14]] The Metric and the Levi-Civita Symbol Are Invariant Tensors
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-15|§CB.6.15]] ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ)
+- [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-16|§CB.6.16]] The Four Two-Dimensional Representations of SL(2,ℂ)
+- [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-1|§CB.7.1]] Sylvester's Law of Inertia for Hermitian Forms
+- [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-3|§CB.7.3]] Properties of the h-Adjoint
+- [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-5|§CB.7.5]] U(p, q) Is a Matrix Lie Group
+- [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-7-7|§CB.7.7]] Forms with the Same Adjoint on an Irreducible Set Are Proportional
+- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-3|§CB.8.3]] Finite-Dimensional Representations of 𝔰𝔩(2,ℂ)
+- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-4|§CB.8.4]] Weight Multiplicities Determine a Representation
+- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-5|§CB.8.5]] Spin j Is the Symmetric Power Sym²ʲℂ²
+- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-6|§CB.8.6]] Clebsch–Gordan Series
+- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-7|§CB.8.7]] Descent Lemma
+- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-8|§CB.8.8]] Integer Spin Is Built from Vectors
+- [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-5|§CB.9.5]] The Quotient Is an Algebra
+- [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-7|§CB.9.7]] Universal Property of the Clifford Algebra
+- [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-8|§CB.9.8]] The Anticommutator and the Embedding of V
+- [[§CB.9 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-9-10|§CB.9.10]] A Clifford Module Is a Set of Anticommuting Square Roots
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-1|§CB.10.1]] The Grade Automorphism
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-3|§CB.10.3]] The ℤ₂-Grading
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-4|§CB.10.4]] The Reversal
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-6|§CB.10.6]] Basis and Dimension
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-7|§CB.10.7]] The Clifford Algebra Is the Exterior Algebra as a Vector Space
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-9|§CB.10.9]] Properties of the Volume Element
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-10|§CB.10.10]] The Even Subalgebra Is a Clifford Algebra of One Dimension Less
+- [[§CB.10 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-10-11|§CB.10.11]] Clifford Algebras in Low Dimensions
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-3|§CB.11.3]] Every Real Clifford Algebra Complexifies to Clₙ(ℂ)
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-5|§CB.11.5]] The Complex Clifford Algebras Are Matrix Algebras
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-6|§CB.11.6]] Modules of a Full Matrix Algebra
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-7|§CB.11.7]] Irreducible Clifford Modules
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-8|§CB.11.8]] Pauli's Theorem, General Form
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-9|§CB.11.9]] The Complexified Even Subalgebra
+- [[§CB.11 Complex Clifford Algebras and Clifford Modules#^thm-cb-11-10|§CB.11.10]] An Irreducible Clifford Module under the Even Subalgebra
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-2|§CB.12.2]] Non-Null Vectors Are Invertible
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-4|§CB.12.4]] A Vector Acts as the Reflection in Its Orthogonal Hyperplane
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-7|§CB.12.7]] Pin and Spin Are Matrix Lie Groups Acting on V
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-9|§CB.12.9]] The Spinor Norm on Pin
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-10|§CB.12.10]] Cartan–Dieudonné
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-11|§CB.12.11]] Spin(V) → SO(V) Is Onto with Kernel ±1
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-12|§CB.12.12]] The Identity Component Is a Double Cover
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-14|§CB.12.14]] 𝔰𝔭𝔦𝔫(V) Is the Lie Algebra of Spin(V), Isomorphic to 𝔰𝔬(V)
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-15|§CB.12.15]] The Even Subalgebra Is Generated by 𝔰𝔭𝔦𝔫(V)
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-16|§CB.12.16]] Spin Preserves a Form for Which the Clifford Generators Are Self-Adjoint
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-19|§CB.12.19]] Every Representation Splits into a Tensorial and a Spinorial Part
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-20|§CB.12.20]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
+- [[§CB.12 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-12-21|§CB.12.21]] Clifford Multiplication Is Spin-Equivariant
+- [[§CB.13 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-13-1|§CB.13.1]] The Pauli Matrices Realize Cl(3, 0)
+- [[§CB.13 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-13-2|§CB.13.2]] The Even Part Is the Quaternions
+- [[§CB.13 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-13-3|§CB.13.3]] Spin(3) Is SU(2), and ρ Is the Double Cover SU(2) → SO(3)
+- [[§CB.13 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-13-4|§CB.13.4]] 𝔰𝔭𝔦𝔫(3) = 𝔰𝔲(2)
+- [[§CB.13 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-13-5|§CB.13.5]] The Spinor Representation of Spin(3) Is Spin ½
+- [[§CB.13 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-13-6|§CB.13.6]] The TA's Theorem in Three Dimensions
+- [[§CB.14 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-14-1|§CB.14.1]] The Complexification of Real 𝔰𝔩(2,ℂ) Is Two Copies of 𝔰𝔩(2,ℂ)
+- [[§CB.14 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-14-2|§CB.14.2]] Representations of Real 𝔰𝔩(2,ℂ): a Complex-Linear and an Antilinear Part
+- [[§CB.14 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-14-3|§CB.14.3]] Cl⁰(1,3) ≅ Cl(3,0) ≅ M₂(ℂ)
+- [[§CB.14 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-14-4|§CB.14.4]] Spin(1,3)₀ Is SL(2,ℂ), and ρ Is the Course's Covering Map up to λ ↦ (λ†)⁻¹
+- [[§CB.14 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-14-5|§CB.14.5]] The Three Lie Algebras Agree
+- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-1|§CB.15.1]] Representations of SL(2,ℂ) Are Pairs of 𝔰𝔩(2,ℂ)-Representations
+- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-2|§CB.15.2]] The Irreducible Representations of SL(2,ℂ)
+- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-3|§CB.15.3]] Which (j₊, j₋) Descend to SO⁺(1,3)
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-1|§CB.16.1]] γ⁵ Is the Complex Volume Element (of the Opposite Orientation)
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-2|§CB.16.2]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½)
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-3|§CB.16.3]] The Two Halves Are Complex Conjugates of Each Other
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-4|§CB.16.4]] Clifford Multiplication Exchanges the Halves Equivariantly
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-5|§CB.16.5]] The Complexified Vector Is S⁺ ⊗ S⁻
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-6|§CB.16.6]] Two-Forms Are (1, 0) ⊕ (0, 1)
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-7|§CB.16.7]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-8|§CB.16.8]] Every Tensorial (j₊, j₋) Lies in a Tensor Power of the Vector
+- [[§CB.16 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-16-9|§CB.16.9]] The TA's Theorem for the Lorentz Group
+- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-3|§CB.17.3]] Wigner's Theorem
+- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-4|§CB.17.4]] Connected Groups of Symmetries Act by Unitaries
+- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-6|§CB.17.6]] Finite-Dimensional Projective Representations Lift to the Universal Cover
+- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-7|§CB.17.7]] Bargmann's Theorem
+- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-9|§CB.17.9]] The Square of an Antiunitary Involution Is ±1
+- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-10|§CB.17.10]] An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
+- [[§CB.18★ The Poincaré Group and Induced Representations#^thm-cb-18-2|§CB.18.2]] The Semidirect Product Is a Group with N Normal
+- [[§CB.18★ The Poincaré Group and Induced Representations#^thm-cb-18-5|§CB.18.5]] The Poincaré Group as a Matrix Lie Group, and Its Lie Algebra
+- [[§CB.18★ The Poincaré Group and Induced Representations#^thm-cb-18-8|§CB.18.8]] The Little Groups in SL(2,ℂ)
+- [[§CB.18★ The Poincaré Group and Induced Representations#^thm-cb-18-10|§CB.18.10]] The Induced Representation Is Unitary
+- [[§CB.18★ The Poincaré Group and Induced Representations#^thm-cb-18-11|§CB.18.11]] Irreducibility (Mackey)
+- [[§CB.18★ The Poincaré Group and Induced Representations#^thm-cb-18-12|§CB.18.12]] Every Irreducible Unitary Representation Is Induced (Wigner–Mackey)
+- [[§CB.19 Grassmann Algebras#^thm-cb-19-2|§CB.19.2]] Basis, Dimension, and the Clifford Algebra of the Zero Form
+- [[§CB.19 Grassmann Algebras#^thm-cb-19-4|§CB.19.4]] Supercommutativity
+- [[§CB.19 Grassmann Algebras#^thm-cb-19-7|§CB.19.7]] Graded Leibniz Rule and Left versus Right
+- [[§CB.19 Grassmann Algebras#^thm-cb-19-9|§CB.19.9]] Linear Change of Variables
+- [[§CB.19 Grassmann Algebras#^thm-cb-19-10|§CB.19.10]] The Fermionic Gaussian Integral Is a Determinant

@@ -22,7 +22,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C5b The Quantum Spinor Field]]
 - [[· C9 Discrete Symmetries and Majorana Fields]] (★ §C9.2)
 - [[· CA Mathematical Methods]]
-- [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.14)
+- [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.18)
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -75,10 +75,12 @@ graph TD
   C1b -->|3| CA
   C2a -->|7| CA
   C2b -->|43| CA
-  C1a -->|11| CB
+  C1a -->|36| CB
   C1b -->|1| CB
-  C3 -->|54| CB
-  C5a -->|28| CB
+  C2a -->|1| CB
+  C3 -->|133| CB
+  C5a -->|79| CB
+  CA -->|2| CB
   C1b -.->|22| C1a
   C2a -.->|4| C1a
   C2b -.->|19| C1a
@@ -121,4 +123,4 @@ Chapters without notes yet (Yu's numbering).
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
 C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (started: parity, §C9.1–§C9.4; charge conjugation, time reversal, CPT and Majorana fields pending) · C10 The S-matrix and correlation functions · C11 Path-integral quantization
 
-**Mathematics chapter CB** (started 2026-10-08): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded); proofs marked *Proof (to be filled)* are being written section by section; §CB.15 Grassmann algebras is completed with C11.
+**Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.19 for "option 1", physics refers to mathematics): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.2, Bargmann's theorem in §CB.17, Mackey and Wigner–Mackey in §CB.18★); the mathematical statements of C1a, C3, C5a and C9 move into CB in batches B1–B3, and §CB.0 (linear algebra in components) is filled then; §CB.19 Grassmann algebras is completed with C11.

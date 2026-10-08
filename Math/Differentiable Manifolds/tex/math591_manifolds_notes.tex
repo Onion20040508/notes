@@ -8537,63 +8537,126 @@ Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $
 
 \section{Geometric and Abstract Manifolds}\label{sec:geometric-abstract}
 
-\roadmark{Stage: recap}{The two pictures of a manifold --- a subset of Euclidean space, and a space with an atlas --- set side by side, aspect by aspect, with the theorem that bridges each pair.}
+\roadmark{Stage: recap}{The two pictures of a manifold --- a subset of Euclidean space, and a space with an atlas --- set side by side, definition by definition and theorem by theorem, with the result that bridges each pair.}
 
 \textit{Not from lecture: a comparison written for these notes at the end of Chapter~5, when every bridge between the two pictures is in place. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.}
 
-The course has built manifolds in two ways. The \emph{geometric} picture is the equations thread of the roadmap: a manifold is a subset of some $\mathbb{R}^N$, cut out by equations or swept out by a parametrization, and everything --- smoothness, tangent vectors, differentials --- is inherited from the ambient space. The \emph{abstract} picture needs no ambient space: a manifold is a topological space with a maximal smooth atlas, and every notion is defined through charts. The geometric picture is concrete and computable; the abstract one is intrinsic and covers the quotients. For each aspect, the table names the two versions and the result that shows they agree wherever both make sense.
+The course has built manifolds in two ways. The \emph{geometric} picture is the equations thread of the roadmap: a manifold is a subset of some $\mathbb{R}^N$, cut out by equations or swept out by a parametrization, and everything --- smoothness, tangent vectors, differentials, regular values --- is inherited from the ambient space. The \emph{abstract} picture needs no ambient space: a manifold is a topological space with a maximal smooth atlas, and every notion is defined through charts. Almost every definition and theorem of the geometric picture has a counterpart in the abstract one, usually proved by reducing to the geometric version in charts. Each part below lists the pairs one to one, recalls the central ones verbatim, and names the result that shows the two agree wherever both make sense.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.3}
 \small
-\begin{tabular}{p{0.15\textwidth} p{0.26\textwidth} p{0.26\textwidth} p{0.22\textwidth}}
+\begin{tabular}{p{0.17\textwidth} p{0.25\textwidth} p{0.25\textwidth} p{0.22\textwidth}}
 \hline
 Aspect & Geometric (inside $\mathbb{R}^N$) & Abstract (charts only) & Bridge \\
 \hline
-the object & external, internal or graph description (\ref{sec:euclidean}) & maximal atlas (Definition~\ref{def:smooth-structure}) & Proposition~\ref{prop:submanifold-euclidean} \\
-examples & level sets: spheres, $\SL$, $\Ogp(n)$, $\Ugp(n)$ & also quotients: $\mathbb{CP}^n$, $G/H$, Grassmannians & --- \\
-smooth structure & graph charts (Proposition~\ref{prop:level-set-smooth}) & chosen atlas; induced on submanifolds (Proposition~\ref{prop:submanifold-structure}) & Proposition~\ref{prop:rvt-agree}(1) \\
-smooth maps & restrictions of ambient maps (Lemma~\ref{lem:level-set-maps}) & smooth in charts (Definition~\ref{def:smooth-map}) & Lemma~\ref{lem:maps-into-submanifold} \\
-tangent space & velocities, $\ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}) & derivations of germs (Definition~\ref{def:abstract-tangent}) & Theorem~\ref{thm:ambient-abstract}, Proposition~\ref{prop:rvt-agree}(2) \\
-differential & the derivative $F'(p)$ (Definition~\ref{def:vs-differential}) & pushforward $F_{*p}$ (Definition~\ref{def:pushforward}) & Theorem~\ref{lem:differential-matrix}, Proposition~\ref{prop:differential-agree} \\
-normal directions & normal vectors, via the dot product & conormal covectors (Definition~\ref{def:conormal}) & a metric (\ref{sec:submanifolds}) \\
-regular values & Theorem~\ref{thm:regular-value}, Proposition~\ref{prop:level-set-smooth} & Theorem~\ref{thm:rvt-manifolds} & the table in \ref{sec:submanifolds} \\
-submanifolds & level sets in $\mathbb{R}^N$ & adapted charts (Definition~\ref{def:submanifold}) & Proposition~\ref{prop:submanifold-euclidean} \\
-global picture & inside $\mathbb{R}^N$ by construction & no ambient space & embeddings (Theorem~\ref{thm:embedding-image}) \\
+the object & external, internal or graph description & maximal atlas; submanifold & Proposition~\ref{prop:submanifold-euclidean} \\
+smooth structure & graph charts & chosen or induced atlas & Proposition~\ref{prop:rvt-agree}(1) \\
+smooth maps & smooth between vector spaces & smooth in charts & Lemma~\ref{lem:maps-into-submanifold} \\
+tangent space & velocities, $\ker F'(p)$ & derivations of germs & Theorem~\ref{thm:ambient-abstract} \\
+differential & Jacobian $F'(p)$ & pushforward $F_{*p}$ & Theorem~\ref{lem:differential-matrix} \\
+covectors & gradient $\nabla f$, transpose $J^{\mathsf T}$ & $df_p$, pullback $F_p^*$ & the remark \emph{The Two Differentials Meet} \\
+regular points & $F'(p)$ surjective & $F_{*p}$ surjective & Proposition~\ref{prop:regular-one-chart} \\
+key theorems & implicit and inverse function theorems & normal form; local diffeomorphism criterion & proved through charts \\
+regular values & level sets are manifolds & level sets are submanifolds & Proposition~\ref{prop:rvt-agree} \\
+global picture & inside $\mathbb{R}^N$ by construction & no ambient space & Theorem~\ref{thm:embedding-image} \\
 \hline
 \end{tabular}
 \end{center}
 
-\subsection{The Object}
+\subsection{The Object and Its Smooth Structure}
 
-Geometrically, a manifold is a subset of a Euclidean space that is, near each of its points, one of three equivalent things (Theorem~\ref{thm:ext-int}):
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+Geometric & Abstract & How they correspond \\
+\hline
+Definition~\ref{def:ext-int} (external: a regular level set) & Definition~\ref{def:submanifold} (a coordinate slice of an adapted chart, Definition~\ref{def:adapted-chart}) & Proposition~\ref{prop:submanifold-euclidean}: the slice is a fourth equivalent description \\
+Definition~\ref{def:internal-description}, Definition~\ref{def:parametrization} (a parametrization) & the inverse of a chart (the remark \emph{A Parametrization Is an Inverse Chart}); Definition~\ref{def:immersion-lecture} & rank $n$ Jacobian = immersion; homeomorphism onto the image = embedding (Definition~\ref{def:embedding}) \\
+Theorem~\ref{thm:ext-int} (the descriptions agree) & Proposition~\ref{prop:submanifold-euclidean}, Theorem~\ref{thm:embedding-image} & straightening a graph gives an adapted chart \\
+Proposition~\ref{prop:level-set-smooth} (graph charts) & Definition~\ref{def:smooth-structure}; Proposition~\ref{prop:submanifold-structure} (induced structure) & Proposition~\ref{prop:rvt-agree}(1): the same structure \\
+Definition~\ref{def:vs-structure} (a vector space) & Proposition~\ref{prop:vs-manifold} & a vector space is a manifold with one global chart \\
+\hline
+\end{tabular}
+\end{center}
+
+Geometrically, a manifold is a subset of a Euclidean space with one of three equivalent local descriptions (Theorem~\ref{thm:ext-int}):
 
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:ext-int} (External Description).} Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. Near $p$, $X$ is described \textbf{externally} if there are an open $W \ni p$ in $\mathbb{R}^{n+k}$ and a smooth $F : W \to \mathbb{R}^k$ having $\vec 0$ as a regular value, with $X \cap W = F^{-1}(\vec 0)$ --- the level-set or implicit description.
 \end{quote}
+
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:internal-description} (Internal Description).} Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. Near $p$, $X$ is described \textbf{internally} if there are an open $V \subseteq \mathbb{R}^n$, an open $W \ni p$ in $\mathbb{R}^{n+k}$, and a smooth $\alpha : V \to \mathbb{R}^{n+k}$ which is a homeomorphism onto $X \cap W$ and whose Jacobian $D\alpha_q$ has rank $n$ at every $q \in V$ --- the parametric description.
 \end{quote}
---- or a graph over $n$ of the coordinates. Abstractly, a manifold is a topological manifold together with a choice of charts:
+
+--- or a graph over $n$ of the coordinates. Abstractly, a manifold is a topological manifold with a choice of charts, and the subsets that look like the geometric ones are the submanifolds:
 
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:smooth-structure} (Smooth Manifold Structure).} A \textbf{differentiable (smooth) structure} on a topological manifold $M$ is a maximal atlas $\mathcal{A}$ on $M$. A \textbf{smooth manifold} is a pair $\mathcal{M} = (M, \mathcal{A})$. By Theorem~\ref{thm:maximal-atlas}, specifying any atlas specifies a smooth structure, and two atlases specify the same structure exactly when they are compatible.
 \end{quote}
-The bridge is the slice description. A subset of $\mathbb{R}^{n+k}$ has the three Euclidean descriptions near each point exactly when it is a submanifold of $\mathbb{R}^{n+k}$ in the abstract sense, the coordinate plane of an adapted chart (Proposition~\ref{prop:submanifold-euclidean}), and then it is a smooth manifold in its own right (Proposition~\ref{prop:submanifold-structure}). The circle shows all of this at once: its external, graph and internal descriptions (Example~\ref{ex:circle-three-ways}), and three atlases --- four charts, stereographic and angle --- that define one smooth structure (\ref{sec:ex-circle}).
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:submanifold} (Submanifold).} Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a \textbf{submanifold of $M$ of codimension $k$} if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
+\[
+U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
+\]
+These are sometimes called \textbf{regular} or \textbf{embedded} submanifolds, as opposed to the immersed submanifolds still to come.
+\end{quote}
+
+A subset of $\mathbb{R}^{n+k}$ has the three Euclidean descriptions near each point exactly when it is a submanifold of $\mathbb{R}^{n+k}$ (Proposition~\ref{prop:submanifold-euclidean}), and the graph-chart structure of Proposition~\ref{prop:level-set-smooth} is then the induced one (Proposition~\ref{prop:rvt-agree}(1)). The circle shows all of this at once: its external, graph and internal descriptions (Example~\ref{ex:circle-three-ways}), and three atlases --- four charts, stereographic and angle --- that define one smooth structure (\ref{sec:ex-circle}).
 
 \subsection{Where the Examples Come From}
 
 The geometric examples are level sets: the spheres (\ref{sec:ex-spheres}), and the classical groups $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\SO(n)$, $\Ugp(n)$ as level sets in spaces of matrices (Theorem~\ref{thm:classical-manifolds}, smooth by \ref{sec:on-un-smooth}). The abstract picture adds the spaces built by gluing: $\mathbb{CP}^n$ (\ref{sec:ex-cpn}, with its standard charts in \ref{sub:projective-atlas}), coset spaces $G/H$ (\ref{sec:homogeneous}) and the Grassmannians (Corollary~\ref{cor:grassmannian}). These arrive with no ambient space: a point of $\mathbb{CP}^n$ is a line, not a point of some $\mathbb{R}^N$. Some of them can be placed in a Euclidean space afterwards --- that is what an embedding does (below) --- but not as constructed.
 
-\subsection{Smooth Structures and Smooth Maps}
+\subsection{Smooth Maps}
 
-A level set inherits its smooth structure from the ambient space: the graph charts project it onto coordinate planes, and their transition maps are smooth because they factor through $\mathbb{R}^{n+k}$ (Proposition~\ref{prop:level-set-smooth}). An abstract manifold has the structure it is given; the same topological space can carry incompatible atlases --- the two structures on $\mathbb{R}$ --- which are nevertheless diffeomorphic (\ref{sec:smooth-structures}, \ref{sub:smooth-maps}). For a submanifold the two agree: the graph-chart structure is the induced one (Proposition~\ref{prop:rvt-agree}(1)).
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+Geometric & Abstract & How they correspond \\
+\hline
+Definition~\ref{def:vs-smooth} (smooth between vector spaces) & Definition~\ref{def:smooth-map} (smooth in charts) & Proposition~\ref{prop:diffeo-agree}: the two notions of diffeomorphism agree \\
+Lemma~\ref{lem:level-set-maps} (maps into and out of level sets) & Lemma~\ref{lem:maps-into-submanifold} (maps into and out of submanifolds) & the same statement, for submanifolds of any manifold \\
+Theorem~\ref{thm:inverse-function} (inverse function theorem) & Theorem~\ref{thm:local-diffeo-criterion} (local diffeomorphism criterion) & the criterion is the inverse function theorem in charts \\
+\hline
+\end{tabular}
+\end{center}
 
-Maps follow the same pattern. Geometrically, a map into or out of a level set is smooth when it is a restriction of, or lands in, a smooth map between Euclidean spaces (Lemma~\ref{lem:level-set-maps}). Abstractly, a map is smooth when its coordinate representations are (Definition~\ref{def:smooth-map}). Lemma~\ref{lem:maps-into-submanifold} says the same as Lemma~\ref{lem:level-set-maps} for submanifolds of any manifold.
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:inverse-function} (Inverse Function Theorem).} Let $W \subseteq \mathbb{R}^n$ be open, $\Phi : W \to \mathbb{R}^n$ smooth, and $a \in W$ with $\Phi'(a)$ invertible. Then there are open sets $U_0 \ni a$ in $W$ and $V_0 \ni \Phi(a)$ in $\mathbb{R}^n$ such that $\Phi(U_0) = V_0$ and $\Phi|_{U_0} : U_0 \to V_0$ is bijective with smooth inverse.
+\end{quote}
 
-\subsection{Tangent Vectors and Differentials}
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:local-diffeo-criterion} (Local Diffeomorphisms Are Detected by the Differential).} A smooth map $F : M \to N$ is a local diffeomorphism if and only if $F_{*p} : T_pM \to T_{F(p)}N$ is bijective for every $p \in M$.
+\end{quote}
 
-This is where the two pictures look most different.
+A map into or out of a level set is smooth when it is a restriction of, or lands in, a smooth map between Euclidean spaces; abstractly, when its coordinate representations are. Every abstract statement about smoothness is proved by reading it in charts, where it becomes the Euclidean one: the local diffeomorphism criterion is the inverse function theorem applied to a coordinate representation.
+
+\subsection{Tangent Vectors}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+Geometric & Abstract & How they correspond \\
+\hline
+Definition~\ref{def:geometric-tangent} (velocities $\gamma'(0)$ in $\mathbb{R}^{n+k}$) & Definition~\ref{def:abstract-tangent} (derivations of germs, Definition~\ref{def:derivation}) & Theorem~\ref{thm:ambient-abstract}: $v \mapsto D_v$ is an isomorphism \\
+Definition~\ref{def:Dv} (the directional derivative $D_v$) & Definition~\ref{def:derivation} (a derivation at $p$) & Proposition~\ref{prop:Dv-properties}, Proposition~\ref{prop:Dv-determines-v}: $D_v$ is a derivation and determines $v$ \\
+$\gamma'(0)$, the velocity in the ambient space & Definition~\ref{def:velocity}; Theorem~\ref{thm:every-vector-velocity} & every abstract tangent vector is a velocity \\
+Lemma~\ref{lem:tangent-local} (locality) & Lemma~\ref{lem:germs-local} (open subsets have the same tangent spaces) & both depend only on a neighbourhood of $p$ \\
+Lemma~\ref{lem:tangent-graph} (tangent space of a graph) & Proposition~\ref{prop:submanifold-tangent} (tangent space of a submanifold) & the span of the first coordinate directions of a slice \\
+Theorem~\ref{thm:tangent-kernel} ($T^{\geo}_pM = \ker F'(p)$) & Theorem~\ref{thm:rvt-manifolds} ($\iota_{*p}(T_pS) = \ker F_{*p}$) & Proposition~\ref{prop:rvt-agree}(2) \\
+Theorem~\ref{thm:geo-tangent-dimension} (dimension) & Theorem~\ref{thm:tangent-basis} (basis theorem) & both give dimension $n$ \\
+\hline
+\end{tabular}
+\end{center}
 
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:geometric-tangent} (Geometric Tangent Space).} The \textbf{geometric} (or \textbf{ambient}) \textbf{tangent space} to $M$ at $p$ is
@@ -8605,6 +8668,7 @@ T^{\geo}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\;& \gamma : (-\varepsilon,\varepsi
 \]
 where $\gamma'(0) = \frac{d\gamma}{dt}\big|_{t=0}$ is the ordinary derivative of a curve in $\mathbb{R}^{n+k}$. In words: $T^{\geo}_pM$ is the set of velocities at $p$ of smooth curves that pass through $p$ while staying on $M$. The same definition applies verbatim with $\mathbb{R}^{n+k}$ replaced by any finite-dimensional real vector space containing $M$, such as $\Mat(n,\mathbb{R})$, with $\gamma'(0)$ computed in that space.
 \end{quote}
+
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:abstract-tangent} (The Abstract Tangent Space).} The \textbf{(abstract) tangent space} to $M$ at $p$ is
 \[
@@ -8612,26 +8676,197 @@ T_pM \;=\; \{\, \text{all derivations at } p \,\},
 \]
 a real vector space under the pointwise operations $(D + D')[f] = D[f] + D'[f]$ and $(\lambda D)[f] = \lambda\, D[f]$. An element $D \in T_pM$ is a \textbf{tangent vector} at $p$. It is not an arrow in any ambient space but a function on germs, $D : C^\infty_p(M) \to \mathbb{R}$, so $D[f]$ is a real number for each germ $[f]$ at $p$.
 \end{quote}
-A geometric tangent vector is an arrow in the ambient space; an abstract one is a derivation, a machine that differentiates germs. Geometrically the tangent space is computed as a kernel, $T^{\geo}_pM = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}); abstractly it has the coordinate basis $\partial/\partial x^i|_p$ (Theorem~\ref{thm:tangent-basis}). Three bridges connect them: an arrow $v$ gives the directional derivative $D_v$, and for a level set $v \mapsto D_v$ is an isomorphism $T^{\geo}_pM \to T_pM$ (Theorem~\ref{thm:ambient-abstract}); every abstract tangent vector is the velocity of a curve, which restores the arrow picture without an ambient space (Theorem~\ref{thm:every-vector-velocity}); and for a submanifold of $\mathbb{R}^{n+k}$, the inclusion carries $T_pS$ onto $T^{\geo}_pS$ (Proposition~\ref{prop:rvt-agree}(2) and the remark \emph{The Tangent Spaces Match} in \ref{sec:submanifolds}).
-
-The differential follows: geometrically it is the ordinary derivative, a linear map between the ambient spaces restricted to tangent spaces (Definition~\ref{def:vs-differential}); abstractly it is the pushforward $F_{*p}D = D \circ F_p^*$ (Definition~\ref{def:pushforward}). In coordinates the pushforward has the Jacobian of the coordinate representation as its matrix (Theorem~\ref{lem:differential-matrix}), and on open subsets of vector spaces it is the ordinary derivative (Proposition~\ref{prop:differential-agree}); either can be computed by curves (Corollary~\ref{cor:velocity-composite}).
-
-\subsection{Normal Vectors and Conormal Covectors}
-
-In $\mathbb{R}^{n+k}$ a level set $F^{-1}(c)$ has normal vectors: the orthogonal complement of $T^{\geo}_pM = \ker F'(p)$ is the row space of $F'(p)$, spanned by the gradients $\nabla F^1(p), \ldots, \nabla F^k(p)$. Orthogonality needs the dot product, which an abstract manifold does not have. Its substitute is the conormal space, the covectors that vanish on the tangent space (Definition~\ref{def:conormal}), with the basis $dF^1|_p, \ldots, dF^k|_p$ for a level set (Proposition~\ref{prop:conormal-basis}). A metric --- an inner product on each tangent space --- identifies covectors with vectors and turns conormal covectors back into normal vectors (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}); in $\mathbb{R}^{n+k}$ the dot product does this, and $dF^i|_p$ becomes $\nabla F^i(p)$.
-
-\subsection{Regular Values and Submanifolds}
-
-The regular value theorem exists in five forms, from level sets in $\mathbb{R}^{n+k}$ (Theorem~\ref{thm:regular-value}, Proposition~\ref{prop:level-set-smooth}) to level sets in any manifold (Theorem~\ref{thm:rvt-manifolds}); the remark \emph{The Regular Value Theorems --- Old and New} in \ref{sec:submanifolds} lists them with their roles. What they produce is, geometrically, a level set and, abstractly, a submanifold:
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:submanifold} (Submanifold).} Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a \textbf{submanifold of $M$ of codimension $k$} if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
-\[
-U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
-\]
-These are sometimes called \textbf{regular} or \textbf{embedded} submanifolds, as opposed to the immersed submanifolds still to come.
+\textbf{Recall: Theorem~\ref{thm:tangent-kernel} (The Geometric Tangent Space Is the Kernel of the Jacobian).} $T^{\geo}_pM = \ker F'(p)$, where $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is the Jacobian at $p$. In particular $T^{\geo}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
 \end{quote}
-In $\mathbb{R}^{n+k}$ the two coincide (Proposition~\ref{prop:submanifold-euclidean}): straightening a graph gives an adapted chart, and the last coordinates of an adapted chart are defining equations.
+
+A geometric tangent vector is an arrow in the ambient space; an abstract one is a machine that differentiates germs. The arrow $v$ becomes the machine $D_v$, and for a level set $v \mapsto D_v$ is an isomorphism $T^{\geo}_pM \to T_pM$ (Theorem~\ref{thm:ambient-abstract}); conversely every abstract tangent vector is the velocity of a curve (Theorem~\ref{thm:every-vector-velocity}), which restores the arrow picture without an ambient space. For a submanifold of $\mathbb{R}^{n+k}$ the inclusion carries $T_pS$ onto $T^{\geo}_pS$ (Proposition~\ref{prop:rvt-agree}(2) and the remark \emph{The Tangent Spaces Match} in \ref{sec:submanifolds}).
+
+\subsection{Differentials: the Jacobian and the Pushforward}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+Geometric & Abstract & How they correspond \\
+\hline
+Definition~\ref{def:jacobian} (Jacobian matrix $DF_p$); Definition~\ref{def:vs-differential} ($dF_p$ between vector spaces) & Definition~\ref{def:pushforward} (pushforward $F_{*p}$) & Theorem~\ref{lem:differential-matrix}: the matrix of $F_{*p}$ is the Jacobian of the coordinate representation \\
+composition $g \circ F$ inside the chain rule & Definition~\ref{def:germ-pullback} (pullback of germs $F_p^*$) & $F_{*p}D = D \circ F_p^*$: the pushforward is defined through the pullback \\
+Theorem~\ref{thm:vs-differential-curves} ($dF_p(v) = \frac{d}{dt}F(p + tv)$) & Corollary~\ref{cor:velocity-composite} (differentials by curves) & both compute the differential along curves \\
+Definition~\ref{def:rank} (rank of a matrix) & Definition~\ref{def:manifold-rank} (rank of $F_{*p}$) & the rank of the Jacobian of any coordinate representation \\
+the chain rule for Jacobians & Theorem~\ref{prop:pushforward-functorial}; Corollary~\ref{cor:chain-rule-coords} & $(G \circ F)_{*p} = G_{*F(p)} \circ F_{*p}$ is matrix multiplication in coordinates \\
+$\mathbb{R}^n$ is its own tangent space & Corollary~\ref{cor:tangent-vs}; Proposition~\ref{prop:differential-agree} & on open subsets of vector spaces $F_{*p}$ is the ordinary derivative \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:jacobian} (Jacobian Matrix).} Let $F = (F_1, \ldots, F_m) : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$ and $p \in \mathbb{R}^N$. The \textbf{Jacobian matrix} of $F$ at $p$ is the $m \times N$ matrix of partial derivatives
+\[
+DF_p = \begin{pmatrix}
+\dfrac{\partial F_1}{\partial x_1}(p) & \cdots & \dfrac{\partial F_1}{\partial x_N}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F_m}{\partial x_1}(p) & \cdots & \dfrac{\partial F_m}{\partial x_N}(p)
+\end{pmatrix},
+\qquad \text{row } a = \nabla F_a(p),
+\]
+regarded as the linear map $DF_p : \mathbb{R}^N \to \mathbb{R}^m$, $v \mapsto DF_p\, v$. It is the derivative of $F$ at $p$: $F(p + v) = F(p) + DF_p\, v + o(|v|)$, and the chain rule for a curve reads $\frac{d}{dt} F(\gamma(t)) = DF_{\gamma(t)}\, \gamma'(t)$. For $m = 1$ the Jacobian is the single row $\nabla F(p)$, and $DF_p\, v = \nabla F(p) \cdot v$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:germ-pullback} (Pullback of Germs).} Let $F : M \to N$ be a smooth map between smooth manifolds, and $p \in M$, so that $F(p)$ is a point of $N$. Let $[g] \in C^\infty_{F(p)}(N)$ be a germ \emph{at the point $F(p)$ of $N$}, with a representative $(g, V)$: $V \subseteq N$ is open with $F(p) \in V$, and $g : V \to \mathbb{R}$ is smooth. Then $F^{-1}(V)$ is an open neighbourhood of $p$ in $M$, and $g \circ F : F^{-1}(V) \to \mathbb{R}$ is smooth (Lemma~\ref{lem:composition-smooth}), so $(g \circ F, F^{-1}(V))$ represents a germ at $p$ on $M$. The \textbf{pullback} of germs along $F$ at $p$ is the map
+\[
+F_p^* : C^\infty_{F(p)}(N) \longrightarrow C^\infty_p(M), \qquad F_p^*[g] = [\,g \circ F\,],
+\]
+which takes a germ on $N$ at $F(p)$ to a germ on $M$ at $p$. It does not depend on the representative $(g, V)$ (Proposition~\ref{prop:pullback-properties}).
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:pushforward} (Pushforward --- the Differential).} Let $F : M \to N$ be smooth and $p \in M$, and let $D \in T_pM$ be a tangent vector at $p$ --- that is, a derivation at $p$, a linear map $D : C^\infty_p(M) \to \mathbb{R}$ satisfying the Leibniz rule. The \textbf{pushforward} of $D$ along $F$ is the map
+\[
+F_{*p}D : C^\infty_{F(p)}(N) \longrightarrow \mathbb{R}, \qquad \big(F_{*p}D\big)[g] \;:=\; D\big(F_p^*[g]\big) = D[\,g \circ F\,],
+\]
+defined on germs $[g]$ at $F(p)$ on $N$: pull the germ back to $p$, then apply $D$. In one line, $F_{*p}D = D \circ F_p^*$. It is a derivation at $F(p)$, i.e.\ an element of $T_{F(p)}N$ (Proposition~\ref{prop:pushforward-derivation}). Letting $D$ vary gives the \textbf{pushforward}, or \textbf{differential}, of $F$ at $p$,
+\[
+F_{*p} : T_pM \longrightarrow T_{F(p)}N, \qquad D \longmapsto F_{*p}D,
+\]
+a map from tangent vectors at $p$ in $M$ to tangent vectors at $F(p)$ in $N$, also written $dF_p$. (Uribe: ``the awkward notation $F_{*p}$.'') So $F_{*p}$ acts on derivations; its value $F_{*p}D$ is again a derivation, which acts on germs at $F(p)$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Theorem~\ref{lem:differential-matrix} (The Matrix of the Differential).} $F_{*p}$ is linear, and
+\[
+F_{*p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big) = \sum_{j=1}^n \frac{\partial F^j}{\partial x^i}(p)\, \frac{\partial}{\partial y^j}\Big|_{F(p)} .
+\]
+So the matrix of $F_{*p}$ in the bases $\mathcal{B}_M$, $\mathcal{B}_N$ has the upstairs partials $\partial F^j/\partial x^i(p)$ as entries, and by Proposition~\ref{prop:upstairs-downstairs} it is the $n \times m$ Jacobian of the coordinate representation,
+\[
+\Big[\, \frac{\partial F^j}{\partial x^i}(p) \,\Big]_{j, i} = \tilde F'\big(\varphi(p)\big),
+\]
+with $j$ the row index and $i$ the column index.
+\end{quote}
+
+The two differentials are built in opposite directions. The Jacobian is computed from $F$ directly: differentiate the components. The pushforward is defined by duality: to see how $F_{*p}D$ differentiates a function $g$ near $F(p)$, pull $g$ back to $g \circ F$ and let $D$ differentiate that. In coordinates the result is the same matrix (Theorem~\ref{lem:differential-matrix}), and on open subsets of Euclidean space the pushforward is the ordinary derivative (Proposition~\ref{prop:differential-agree}).
+
+\subsection{Covectors: Gradients, Transposes and Pullbacks}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+Geometric & Abstract & How they correspond \\
+\hline
+the gradient $\nabla f(p)$, a row of the Jacobian & Definition~\ref{def:differential-function} ($df_p \in T_p^*M$); Lemma~\ref{lem:df-coords} & the remark \emph{Differential --- Not Gradient}: a gradient needs an inner product \\
+the transpose $J_F^{\mathsf T}$ of the Jacobian & Definition~\ref{def:pullback-covector} (pullback of covectors, the dual map of $F_{*p}$) & in dual bases the matrix of $F_p^*$ is the transpose of the matrix of $F_{*p}$ \\
+$\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) & Proposition~\ref{prop:pullback-d} ($F_p^*\, df = d(f \circ F)$) & the remark \emph{The Two Differentials Meet} \\
+normal vectors, spanned by $\nabla F^1, \ldots, \nabla F^k$ & Definition~\ref{def:conormal} (conormal space); Proposition~\ref{prop:conormal-basis} (basis $dF^i|_p$) & the remark \emph{No Normal Vectors Without a Metric} \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:differential-function} (The Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:pullback-covector} (Pullback of Covectors).} Let $F : M \to N$ be smooth and $p \in M$. The \textbf{pullback of covectors} at $p$ is the dual map (Definition~\ref{def:dual-map}) of the pushforward $F_{*p} : T_pM \to T_{F(p)}N$:
+\[
+F_p^* : T^*_{F(p)}N \longrightarrow T_p^*M, \qquad (F_p^*\alpha)(v) = \alpha\big(F_{*p}v\big) .
+\]
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Proposition~\ref{prop:pullback-d} (Pullback Commutes with $d$).} Let $F : M \to N$ be smooth, $p \in M$, and $f$ smooth near $F(p)$. Then
+\[
+F_p^*\big(df_{F(p)}\big) = d(f \circ F)_p \quad \text{in } T_p^*M .
+\]
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: the remark \emph{The Two Differentials Meet}.} In $\mathbb{R}^n$, with the dot-product identification of Remark~\ref{rem:differential-not-gradient}, the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_*$ ``we should have called the differential of $F$ ages ago'': for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{*p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:conormal} (Conormal Space).} Let $S \subseteq M$ be a submanifold and $p \in S$. The \textbf{conormal space} of $S$ at $p$ is
+\[
+N_pS = \{\, \xi \in T_p^*M : \xi(v) = 0 \text{ for all } v \in \iota_{*p}(T_pS) \,\},
+\]
+the covectors at $p$ that vanish on the tangent space of $S$ --- the annihilator of $T_pS$ in $T_p^*M$.
+\end{quote}
+
+In $\mathbb{R}^n$ the dot product identifies covectors with vectors, so the differential $df_p$ appears as the gradient, a pulled-back covector as the transpose of the Jacobian applied to a gradient, and a conormal covector $dF^i|_p$ as the normal vector $\nabla F^i(p)$. An abstract manifold has no dot product, so the covector versions are the intrinsic ones; an inner product on each tangent space --- a metric --- would turn them back into vectors.
+
+\subsection{Regular Points, Regular Values and the Theorems Behind Them}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+Geometric & Abstract & How they correspond \\
+\hline
+Definition~\ref{def:regular-point} ($DF_p$ surjective) & Definition~\ref{def:manifold-regular-point}, Definition~\ref{def:regular-critical} ($F_{*p}$ surjective) & Proposition~\ref{prop:regular-one-chart}: regular for $F$ iff for its coordinate representation \\
+Definition~\ref{def:regular-value} (every point of $F^{-1}(c)$ regular) & Definition~\ref{def:manifold-regular}, Definition~\ref{def:regular-critical-value} & the same condition, read through charts; Corollary~\ref{cor:vs-regular} without coordinates \\
+Theorem~\ref{thm:ift-general} (implicit function theorem) & Theorem~\ref{thm:submersion-normal-form} (local normal form for submersions) & the normal form is the implicit function theorem in charts \\
+Theorem~\ref{thm:regular-value} (a regular level set is a topological manifold) & Corollary~\ref{cor:manifold-level-sets} (the same for $F : M \to N$) & proved through Proposition~\ref{prop:regular-one-chart} \\
+Proposition~\ref{prop:level-set-smooth} (a regular level set is a smooth manifold) & Theorem~\ref{thm:rvt-manifolds} (a regular level set is a submanifold) & Proposition~\ref{prop:rvt-agree}: the same structure and tangent spaces \\
+Corollary~\ref{cor:rvt-open} (open domains, arbitrary values) & Corollary~\ref{cor:submersion-fibres} (fibres of submersions) & every value of a submersion is regular \\
+Theorem~\ref{thm:transverse-preimage}, Corollary~\ref{cor:rvt-transverse} (transversality) & (no manifold version yet) & the regular value theorem is the case of a point \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:regular-point} (Regular Point).} Let $F : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$. A point $p \in \mathbb{R}^N$ is a \textbf{regular point} of $F$ if the Jacobian $DF_p : \mathbb{R}^N \to \mathbb{R}^m$ (Definition~\ref{def:jacobian}) is surjective, i.e.\ has rank $m$ (Definition~\ref{def:rank}). Otherwise $p$ is a \textbf{critical point}.
+For scalar-valued $F$ ($m = 1$) the Jacobian is the row vector $\nabla F(p)$, and $p$ is a regular point iff $\nabla F(p) \neq 0$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:manifold-regular-point} (Regular Point of a Smooth Map).} Let $F : M \to N$ be a smooth map. A point $p$ is a \textbf{regular point} of $F$ if $F_{*p}$ is surjective.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:regular-value} (Regular Value).} Let $F : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$. A value $c \in \mathbb{R}^m$ is a \textbf{regular value} of $F$ if every point of the level set $F^{-1}(c)$ is a regular point (Definition~\ref{def:regular-point}). Otherwise $c$ is a \textbf{critical value}. (If $F^{-1}(c) = \emptyset$, then $c$ is vacuously a regular value.)
+So for scalar-valued $F$, $c \in \mathbb{R}$ is a regular value iff $\nabla F$ vanishes nowhere on $F^{-1}(c)$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:manifold-regular} (Regular Value of a Smooth Map).} Let $F : M \to N$ be a smooth map. A value $c \in N$ is a \textbf{regular value} if every $p \in F^{-1}(c)$ is a regular point (Definition~\ref{def:manifold-regular-point}).
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:ift-general} (Implicit Function Theorem --- Lee Theorem C.40).} Let $U \subseteq \mathbb{R}^n \times \mathbb{R}^k$ be an open subset, with standard coordinates written $(x, y) = (x^1, \ldots, x^n, y^1, \ldots, y^k)$. Suppose $\Phi : U \to \mathbb{R}^k$ is smooth, $(a, b) \in U$, and $c = \Phi(a,b)$. If the $k \times k$ matrix
+\[
+\left( \frac{\partial \Phi^i}{\partial y^j}(a, b) \right)_{1 \le i, j \le k}
+\]
+is nonsingular, then there exist neighborhoods $V_0 \subseteq \mathbb{R}^n$ of $a$ and $W_0 \subseteq \mathbb{R}^k$ of $b$ and a smooth function $F : V_0 \to W_0$ such that $\Phi^{-1}(c) \cap (V_0 \times W_0)$ is the graph of $F$; that is, for $(x,y) \in V_0 \times W_0$,
+\[
+\Phi(x, y) = c \iff y = F(x).
+\]
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:submersion-normal-form} (Local Normal Form for Submersions).} Let $F : M \to N$ be a submersion at $p$, with $\dim M = m$ and $\dim N = n$. Then there are charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $F(p)$ with $F(U) \subseteq V$ in which the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \psi(V)$ is the projection onto the first $n$ coordinates:
+\[
+\tilde F\big(r^1, \ldots, r^m\big) = \big(r^1, \ldots, r^n\big).
+\]
+Equivalently, with coordinate functions $x^i = r^i \circ \varphi$ on $U$ and $y^j = r^j \circ \psi$ on $V$: $\;y^j \circ F = x^j$ on $U$ for $j = 1, \ldots, n$. In particular $n \le m$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:regular-value} (Regular Value Theorem).} Let $F : \mathbb{R}^{n+k} \to \mathbb{R}^k$ be smooth and suppose $\vec 0 \in \mathbb{R}^k$ is a regular value of $F$, i.e.\ the Jacobian $F'(p)$ has rank $k$ at every $p \in X := F^{-1}(\vec 0)$. Then $X$, with the subspace topology, is a topological manifold of dimension $n$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:rvt-manifolds} (The Regular Value Theorem for Manifolds).} Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition~\ref{def:regular-critical-value}). Then $S = F^{-1}(q)$ is a submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
+\[
+\iota_{*p}(T_pS) = \ker F_{*p} .
+\]
+\end{quote}
+
+The pattern is the one of the whole course: a definition is transplanted by replacing the Jacobian $DF_p$ with the pushforward $F_{*p}$, and a theorem is proved by reading it in charts, where it becomes the Euclidean one. Proposition~\ref{prop:regular-one-chart} is the bridge for regular points --- a point is regular for $F$ exactly when it is regular for the coordinate representation, because the matrix of $F_{*p}$ is that Jacobian. The local normal form for submersions plays the role of the implicit function theorem, and it upgrades the conclusion from ``topological manifold'' to ``submanifold'' with its tangent space. The remark \emph{The Regular Value Theorems --- Old and New} (\ref{sec:submanifolds}) lists all five versions with their roles.
 
 \subsection{The Global Picture: Embeddings}
 
@@ -8640,7 +8875,8 @@ A geometric manifold sits in $\mathbb{R}^N$ by construction; an abstract one nee
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:embedding} (Embedding).} A smooth map $F : M \to N$ is an \textbf{embedding} if it is an immersion and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism, $F(M)$ carrying the subspace topology of $N$. Injectivity is part of being a homeomorphism; Uribe wrote ``(injective) immersion'' and called the word redundant.
 \end{quote}
-The image of an embedding is a submanifold (Theorem~\ref{thm:embedding-image}), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. Injective immersions are not enough: the figure-eight and the irrational line on the torus are injective immersions whose images are not submanifolds (\ref{sec:immersions}, \ref{sec:embeddings}).
+
+The image of an embedding is a submanifold (Theorem~\ref{thm:embedding-image}), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition~\ref{def:internal-description} is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: the figure-eight and the irrational line on the torus are injective immersions whose images are not submanifolds (\ref{sec:immersions}, \ref{sec:embeddings}).
 
 \begin{rembox}[Whitney's Embedding Theorem]\label{rem:whitney}
 \textit{(Not from lecture; stated, not proved, in these notes.)} Every smooth $m$-manifold --- Hausdorff and second countable, as in Definition~\ref{def:smooth-structure} --- admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem~6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.

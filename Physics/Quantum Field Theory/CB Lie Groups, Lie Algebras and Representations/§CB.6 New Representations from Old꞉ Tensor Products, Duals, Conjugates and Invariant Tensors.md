@@ -3,15 +3,15 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: CB
-section: CB.4
+section: CB.6
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups]] →
+← [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.7 Hermitian Forms, Signature and Pseudo-Unitary Groups]] →
 
 *Sources: Linear Algebra (LADR) §12 (duality), §36 (alternating forms), §38 (tensor products) · Relativity §B1.2, §B2.2 (invariant tensors) · Group Theory (493) §21 (the sign) · the user's PHY 513 notes, Ch. 1 §1.5, Ch. 7 §7.4.5–§7.4.6, Ch. 8 §8.2 · Yu Zhao-Huan, 量子场论讲义, §9.6.1 · P. Woit, Quantum Theory, Groups and Representations, §§4.2, 4.6.2, 9.1, 9.4, 16.1.1, 41.1 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · P. Etingof et al., Introduction to Representation Theory, §§2.1–2.2, 2.10 (arXiv:0901.0827) · K. E. Smith, Groups and their Representations, Ch. 4 §§2, 5.2 · S. Wadsley, Representation Theory (Cambridge lecture notes), Lectures 11–12 · H. K. Dreiner, H. E. Haber, S. P. Martin, Two-component spinor techniques (arXiv:0812.1594), §2.1 · the rest written here.*
 
-How are new representations made from given ones, and what are index slots, dotted indices and invariant symbols in that language? The course has tensors as multilinear maps, index slots and the slot rule ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-4|Def. §C1a.5.4]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-1|Def. §C3.1.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]); the Math vault has duals and tensor products of vector spaces ([[§12 Duality#^ladr-3-110|LADR Def. 3.110]], [[§38 Tensor Products#^ladr-9-71|LADR Def. 9.71]]). This section makes each operation on spaces an operation on representations — tensor product, outer tensor product, dual, complex conjugate, $\operatorname{Hom}$, symmetric and exterior powers — and identifies the invariant tensors ($g$, $\varepsilon^{\mu\nu\rho\sigma}$, $\varepsilon_{ab}$) as intertwiners. It builds on [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification|§CB.2]] (the conjugation of $\mathfrak g_{\mathbb C}$) and [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.3]] (Burnside, Schur).
+How are new representations made from given ones, and what are index slots, dotted indices and invariant symbols in that language? The course has tensors as multilinear maps, index slots and the slot rule ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-4|Def. §C1a.5.4]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-1|Def. §C3.1.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]); the Math vault has duals and tensor products of vector spaces ([[§12 Duality#^ladr-3-110|LADR Def. 3.110]], [[§38 Tensor Products#^ladr-9-71|LADR Def. 9.71]]). This section makes each operation on spaces an operation on representations — tensor product, outer tensor product, dual, complex conjugate, $\operatorname{Hom}$, symmetric and exterior powers — and identifies the invariant tensors ($g$, $\varepsilon^{\mu\nu\rho\sigma}$, $\varepsilon_{ab}$) as intertwiners. It builds on [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification|§CB.3]] (the conjugation of $\mathfrak g_{\mathbb C}$) and [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.5]] (Burnside, Schur).
 
 ## Recalled: duals, tensors and index slots
 
@@ -29,27 +29,27 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 
 ## Tensor products
 
-> [!definition] Definition §CB.4.1: Tensor Product of Group Representations
+> [!definition] Definition §CB.6.1: Tensor Product of Group Representations
 > If $D_1$, $D_2$ are representations of a group $G$ on $W_1$, $W_2$, their **tensor product** is the representation of $G$ on $W_1\otimes W_2$ ([[§38 Tensor Products#^ladr-9-71|LADR Def. 9.71]]) with $(D_1\otimes D_2)(g)(w_1\otimes w_2) = D_1(g)w_1\otimes D_2(g)w_2$.
 >
 > *Source: P. Woit, Quantum Theory, Groups and Representations, §9.4 (Definition: tensor product representation of a group) · the user's PHY 513 notes, Ch. 7 §7.4.5*
 
-^def-cb-4-1
+^def-cb-6-1
 
-> [!definition] Definition §CB.4.2: Tensor Product of Lie Algebra Representations
+> [!definition] Definition §CB.6.2: Tensor Product of Lie Algebra Representations
 > If $d_1$, $d_2$ are representations of a Lie algebra $\mathfrak g$ on $W_1$, $W_2$, their **tensor product** is $(d_1\otimes d_2)(X) = d_1(X)\otimes\mathbb 1 + \mathbb 1\otimes d_2(X)$ on $W_1\otimes W_2$.
 >
 > *Source: Woit, §9.4 ($\pi'_{V\otimes W}(X) = \pi'_V(X)\otimes\mathbb 1_W + \mathbb 1_V\otimes\pi'_W(X)$)*
 
-^def-cb-4-2
+^def-cb-6-2
 
-> [!theorem] Theorem §CB.4.3: The Differential of a Tensor Product Is the Leibniz Rule
-> 1. Definitions §CB.4.1 and §CB.4.2 give representations.
-> 2. If $d_i$ is the differential of $D_i$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-14|Theorem §CB.1.14]]), then $d_1\otimes d_2$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-2|Def. §CB.4.2]]) is the differential of $D_1\otimes D_2$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]]); equivalently $e^{d_1(X)\otimes\mathbb 1 + \mathbb 1\otimes d_2(X)} = e^{d_1(X)}\otimes e^{d_2(X)}$. In physicists' form, generators add: $D(T_a) = D_1(T_a)\otimes\mathbb 1 + \mathbb 1\otimes D_2(T_a)$.
+> [!theorem] Theorem §CB.6.3: The Differential of a Tensor Product Is the Leibniz Rule
+> 1. Definitions §CB.6.1 and §CB.6.2 give representations.
+> 2. If $d_i$ is the differential of $D_i$ ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-3|Theorem §CB.2.3]]), then $d_1\otimes d_2$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-2|Def. §CB.6.2]]) is the differential of $D_1\otimes D_2$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]]); equivalently $e^{d_1(X)\otimes\mathbb 1 + \mathbb 1\otimes d_2(X)} = e^{d_1(X)}\otimes e^{d_2(X)}$. In physicists' form, generators add: $D(T_a) = D_1(T_a)\otimes\mathbb 1 + \mathbb 1\otimes D_2(T_a)$.
 >
 > *Source: P. Woit, Quantum Theory, Groups and Representations, §9.4 (definition of the tensor product representation and the product-rule computation of its Lie algebra representation; https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the exponential identity and the bracket check: [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients#^der-c7-1-1|QM Derivation §C7.1.1]] · the tensor law: [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]*
 
-^thm-cb-4-3
+^thm-cb-6-3
 
 > [!proof]- Proof
 > *Woit's argument (§9.4), with the checks he leaves to the reader written out.*
@@ -70,7 +70,7 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 >
 > First term: $(d_1(X)\otimes\mathbb 1)(d_1(Y)\otimes\mathbb 1) - (d_1(Y)\otimes\mathbb 1)(d_1(X)\otimes\mathbb 1) = [d_1(X), d_1(Y)]\otimes\mathbb 1 = d_1([X, Y])\otimes\mathbb 1$, since $d_1$ is a representation. Second term: $(d_1(X)\otimes\mathbb 1)(\mathbb 1\otimes d_2(Y)) = d_1(X)\otimes d_2(Y) = (\mathbb 1\otimes d_2(Y))(d_1(X)\otimes\mathbb 1)$, so $[A_X, B_Y] = 0$; likewise $[B_X, A_Y] = 0$. Fourth term: $\mathbb 1\otimes d_2([X, Y])$. The sum is $(d_1\otimes d_2)([X, Y])$ (the same computation as $[J_i, J_j]$ for $\mathbf J = \mathbf J_1 + \mathbf J_2$ in QM Derivation §C7.1.1). Part 1 is proved.
 >
-> **3. The differential (Woit's computation).** Let $d$ be the differential of $D_1\otimes D_2$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-14|Theorem §CB.1.14]]). By [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], 1, $D_i(e^{sX}) = e^{s\,d_i(X)}$, so on a product vector
+> **3. The differential (Woit's computation).** Let $d$ be the differential of $D_1\otimes D_2$ ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-3|Theorem §CB.2.3]]). By [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], 1, $D_i(e^{sX}) = e^{s\,d_i(X)}$, so on a product vector
 >
 > $$
 > (D_1\otimes D_2)(e^{sX})\,(w_1\otimes w_2) = e^{s\,d_1(X)}w_1\otimes e^{s\,d_2(X)}w_2 .
@@ -95,42 +95,42 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 > **What the proof shows**
 > - The Leibniz rule is forced: the two factors are moved by the same group element, and the derivative of a product of two curves has two terms. Nothing beyond bilinearity of $\otimes$ is used.
 > - The finite and infinitesimal forms agree only because $d_1(X)\otimes\mathbb 1$ and $\mathbb 1\otimes d_2(X)$ act on different factors and therefore commute (step 4); this is why the total angular momentum of a composite system is the generator of its joint rotation ([[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients#^thm-c7-1-1|QM Theorem §C7.1.1]]).
-> - Used next: weights add under tensor products (Theorem §CB.6.6), and the tensor law of indices is the case of several vector and covector slots ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]).
+> - Used next: weights add under tensor products (Theorem §CB.8.6), and the tensor law of indices is the case of several vector and covector slots ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]).
 
-^pf-cb-4-3
+^pf-cb-6-3
 
-*Uses:* [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-2|Def. §CB.4.2]], [[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]], [[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-14|Theorem §CB.1.14]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-4|Def. §C3.1.4]]
+*Uses:* [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-2|Def. §CB.6.2]], [[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]], [[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-3|Theorem §CB.2.3]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-4|Def. §C3.1.4]]
 
-> [!definition] Definition §CB.4.4: Outer Tensor Product
-> If $D_1$ is a representation of $G_1$ on $W_1$ and $D_2$ one of $G_2$ on $W_2$, their **outer tensor product** $D_1\boxtimes D_2$ is the representation of $G_1\times G_2$ on $W_1\otimes W_2$ with $(g_1, g_2) \mapsto D_1(g_1)\otimes D_2(g_2)$; for Lie algebras, $\mathfrak g_1\oplus\mathfrak g_2$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-8|Def. §CB.2.8]]) acts by $(X_1, X_2) \mapsto d_1(X_1)\otimes\mathbb 1 + \mathbb 1\otimes d_2(X_2)$.
+> [!definition] Definition §CB.6.4: Outer Tensor Product
+> If $D_1$ is a representation of $G_1$ on $W_1$ and $D_2$ one of $G_2$ on $W_2$, their **outer tensor product** $D_1\boxtimes D_2$ is the representation of $G_1\times G_2$ on $W_1\otimes W_2$ with $(g_1, g_2) \mapsto D_1(g_1)\otimes D_2(g_2)$; for Lie algebras, $\mathfrak g_1\oplus\mathfrak g_2$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-8|Def. §CB.3.8]]) acts by $(X_1, X_2) \mapsto d_1(X_1)\otimes\mathbb 1 + \mathbb 1\otimes d_2(X_2)$.
 >
 > *Source: written here*
 
-^def-cb-4-4
+^def-cb-6-4
 
-> [!theorem] Theorem §CB.4.5: Irreducible Representations of a Direct Sum Are Outer Tensor Products
+> [!theorem] Theorem §CB.6.5: Irreducible Representations of a Direct Sum Are Outer Tensor Products
 > Let $\mathfrak h_1$, $\mathfrak h_2$ be complex Lie algebras and consider finite-dimensional complex-linear representations.
-> 1. If $W_1$, $W_2$ are irreducible representations of $\mathfrak h_1$, $\mathfrak h_2$, then $W_1\boxtimes W_2$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-4|Def. §CB.4.4]]) is an irreducible representation of $\mathfrak h_1\oplus\mathfrak h_2$.
+> 1. If $W_1$, $W_2$ are irreducible representations of $\mathfrak h_1$, $\mathfrak h_2$, then $W_1\boxtimes W_2$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-4|Def. §CB.6.4]]) is an irreducible representation of $\mathfrak h_1\oplus\mathfrak h_2$.
 > 2. Every irreducible representation of $\mathfrak h_1\oplus\mathfrak h_2$ is equivalent to such a $W_1\boxtimes W_2$, with $W_1$, $W_2$ unique up to equivalence.
 >
 > The same holds for real Lie algebras and their representations on complex spaces, and for groups $G_1\times G_2$.
 >
-> *Source: P. Etingof et al., Introduction to Representation Theory, §2.10, Thm. 2.26 (irreducible representations of a tensor product of algebras; part 1 by the density theorem, Thm. 2.5), with Cor. 2.4 and the Remark in §2.1 (the evaluation map $\operatorname{Hom}_A(X, V)\otimes X \to V$) for part 2 (arXiv:0901.0827, https://arxiv.org/abs/0901.0827) · Burnside's theorem: [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-9|Theorem §CB.3.9]] · the Lorentz case: [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]]*
+> *Source: P. Etingof et al., Introduction to Representation Theory, §2.10, Thm. 2.26 (irreducible representations of a tensor product of algebras; part 1 by the density theorem, Thm. 2.5), with Cor. 2.4 and the Remark in §2.1 (the evaluation map $\operatorname{Hom}_A(X, V)\otimes X \to V$) for part 2 (arXiv:0901.0827, https://arxiv.org/abs/0901.0827) · Burnside's theorem: [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-9|Theorem §CB.5.9]] · the Lorentz case: [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]]*
 
-^thm-cb-4-5
+^thm-cb-6-5
 
 > [!proof]- Proof
 > *Part 1 is Etingof's proof of Thm. 2.26 (i). For part 2 Etingof passes to the semisimple quotient by the radical, a tool not set up in CB; the evaluation-map argument below uses only his Cor. 2.4 (the density statement: an element of the algebra moves linearly independent vectors to arbitrary ones) and Schur's lemma.*
 >
-> **0. The algebra generated by a set of operators.** For a set $\mathcal S$ of operators on a finite-dimensional complex space $U$, let $A(\mathcal S) \subset \operatorname{End}(U)$ be the set of complex linear combinations of finite products of elements of $\mathcal S$, together with $\mathbb 1$: a subalgebra containing $\mathbb 1$. A subspace is invariant under every element of $\mathcal S$ iff it is invariant under every element of $A(\mathcal S)$ (sums, scalar multiples and products of operators preserving it preserve it). So $U$ is irreducible under $\mathcal S$ iff it is irreducible under $A(\mathcal S)$, and then $A(\mathcal S) = \operatorname{End}(U)$ by Burnside's theorem ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-9|Theorem §CB.3.9]]).
+> **0. The algebra generated by a set of operators.** For a set $\mathcal S$ of operators on a finite-dimensional complex space $U$, let $A(\mathcal S) \subset \operatorname{End}(U)$ be the set of complex linear combinations of finite products of elements of $\mathcal S$, together with $\mathbb 1$: a subalgebra containing $\mathbb 1$. A subspace is invariant under every element of $\mathcal S$ iff it is invariant under every element of $A(\mathcal S)$ (sums, scalar multiples and products of operators preserving it preserve it). So $U$ is irreducible under $\mathcal S$ iff it is irreducible under $A(\mathcal S)$, and then $A(\mathcal S) = \operatorname{End}(U)$ by Burnside's theorem ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-9|Theorem §CB.5.9]]).
 >
-> **1. Part 1: the two factor algebras.** On $W_1\boxtimes W_2$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-4|Def. §CB.4.4]]) the element $(X_1, 0)$ acts by $d_1(X_1)\otimes\mathbb 1$ and $(0, X_2)$ by $\mathbb 1\otimes d_2(X_2)$. Products of operators $d_1(X)\otimes\mathbb 1$ are $(d_1(X)d_1(Y)\cdots)\otimes\mathbb 1$, so the algebra $\mathcal A$ generated by the action contains $a_1\otimes\mathbb 1$ for every $a_1 \in A(d_1(\mathfrak h_1))$, which is $\operatorname{End}(W_1)$ by step 0 ($W_1$ irreducible). Likewise $\mathbb 1\otimes a_2 \in \mathcal A$ for every $a_2 \in \operatorname{End}(W_2)$.
+> **1. Part 1: the two factor algebras.** On $W_1\boxtimes W_2$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-4|Def. §CB.6.4]]) the element $(X_1, 0)$ acts by $d_1(X_1)\otimes\mathbb 1$ and $(0, X_2)$ by $\mathbb 1\otimes d_2(X_2)$. Products of operators $d_1(X)\otimes\mathbb 1$ are $(d_1(X)d_1(Y)\cdots)\otimes\mathbb 1$, so the algebra $\mathcal A$ generated by the action contains $a_1\otimes\mathbb 1$ for every $a_1 \in A(d_1(\mathfrak h_1))$, which is $\operatorname{End}(W_1)$ by step 0 ($W_1$ irreducible). Likewise $\mathbb 1\otimes a_2 \in \mathcal A$ for every $a_2 \in \operatorname{End}(W_2)$.
 >
 > **2. Part 1: all operators.** Hence $\mathcal A$ contains every product $(a_1\otimes\mathbb 1)(\mathbb 1\otimes a_2) = a_1\otimes a_2$, in particular $E^{(1)}_{ij}\otimes E^{(2)}_{kl}$ for the matrix units in bases $e_i$ of $W_1$, $f_k$ of $W_2$. In the basis $e_i\otimes f_k$ of $W_1\otimes W_2$ ([[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]]) these are exactly the matrix units ($e_j\otimes f_l \mapsto e_i\otimes f_k$, all other basis vectors to $0$), which span all operators ([[§9 Matrices#^ladr-3-40|LADR Thm. 3.40]]). So $\mathcal A = \operatorname{End}(W_1\otimes W_2)$. If $U \ne 0$ is invariant, pick $u \ne 0$ in $U$; for any $w$ some operator maps $u$ to $w$, so $U$ is everything. $W_1\boxtimes W_2$ is irreducible.
 >
-> **3. Part 2: the two commuting actions.** Let $M$ be an irreducible finite-dimensional representation $d$ of $\mathfrak h_1\oplus\mathfrak h_2$ and put $\rho_1(X_1) = d(X_1, 0)$, $\rho_2(X_2) = d(0, X_2)$. They commute: $[\rho_1(X_1), \rho_2(X_2)] = d\bigl([(X_1, 0), (0, X_2)]\bigr) = d(0) = 0$, the bracket of [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-8|Def. §CB.2.8]] being componentwise. $\rho_1$, $\rho_2$ are representations of $\mathfrak h_1$, $\mathfrak h_2$, and $d(X_1, X_2) = \rho_1(X_1) + \rho_2(X_2)$.
+> **3. Part 2: the two commuting actions.** Let $M$ be an irreducible finite-dimensional representation $d$ of $\mathfrak h_1\oplus\mathfrak h_2$ and put $\rho_1(X_1) = d(X_1, 0)$, $\rho_2(X_2) = d(0, X_2)$. They commute: $[\rho_1(X_1), \rho_2(X_2)] = d\bigl([(X_1, 0), (0, X_2)]\bigr) = d(0) = 0$, the bracket of [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-8|Def. §CB.3.8]] being componentwise. $\rho_1$, $\rho_2$ are representations of $\mathfrak h_1$, $\mathfrak h_2$, and $d(X_1, X_2) = \rho_1(X_1) + \rho_2(X_2)$.
 >
-> **4. Part 2: a candidate for each factor.** $M \ne 0$, so among the nonzero $\rho_1$-invariant subspaces there is one of smallest dimension, $V$; it is irreducible under $\mathfrak h_1$. Let $H = \operatorname{Hom}_{\mathfrak h_1}(V, M)$, the intertwiners $f : V \to M$, $f\rho_1(X)|_V = \rho_1(X)f$ ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-1|Def. §CB.3.1]]); it contains the inclusion $\iota$, so $H \ne 0$. Define $(X_2\cdot f) = \rho_2(X_2)\circ f$. This is again in $H$, because $\rho_2(X_2)$ commutes with every $\rho_1(X)$ (step 3); it is linear in $f$ and $X_2$, and $[X_2, Y_2]\cdot f = [\rho_2(X_2), \rho_2(Y_2)]f = X_2\cdot(Y_2\cdot f) - Y_2\cdot(X_2\cdot f)$: a representation of $\mathfrak h_2$ on $H$.
+> **4. Part 2: a candidate for each factor.** $M \ne 0$, so among the nonzero $\rho_1$-invariant subspaces there is one of smallest dimension, $V$; it is irreducible under $\mathfrak h_1$. Let $H = \operatorname{Hom}_{\mathfrak h_1}(V, M)$, the intertwiners $f : V \to M$, $f\rho_1(X)|_V = \rho_1(X)f$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-1|Def. §CB.5.1]]); it contains the inclusion $\iota$, so $H \ne 0$. Define $(X_2\cdot f) = \rho_2(X_2)\circ f$. This is again in $H$, because $\rho_2(X_2)$ commutes with every $\rho_1(X)$ (step 3); it is linear in $f$ and $X_2$, and $[X_2, Y_2]\cdot f = [\rho_2(X_2), \rho_2(Y_2)]f = X_2\cdot(Y_2\cdot f) - Y_2\cdot(X_2\cdot f)$: a representation of $\mathfrak h_2$ on $H$.
 >
 > **5. Part 2: the evaluation map.** $(v, f) \mapsto f(v)$ is bilinear, so it defines a linear $\mathrm{ev} : V\otimes H \to M$, $v\otimes f \mapsto f(v)$ (LADR Thm. 9.79). It intertwines $V\boxtimes H$ with $M$: for $(X_1, X_2)$,
 >
@@ -138,7 +138,7 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 > \mathrm{ev}\bigl(\rho_1(X_1)v\otimes f + v\otimes\rho_2(X_2)f\bigr) = f(\rho_1(X_1)v) + \rho_2(X_2)f(v) = \rho_1(X_1)f(v) + \rho_2(X_2)f(v) = d(X_1, X_2)\,\mathrm{ev}(v\otimes f) ,
 > $$
 >
-> using that $f$ is an intertwiner; both sides are linear, so this holds on all of $V\otimes H$. Its image contains $\mathrm{ev}(v\otimes\iota) = v \ne 0$ and is invariant ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-2|Theorem §CB.3.2]]); $M$ is irreducible, so $\mathrm{ev}$ is onto.
+> using that $f$ is an intertwiner; both sides are linear, so this holds on all of $V\otimes H$. Its image contains $\mathrm{ev}(v\otimes\iota) = v \ne 0$ and is invariant ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-2|Theorem §CB.5.2]]); $M$ is irreducible, so $\mathrm{ev}$ is onto.
 >
 > **6. Part 2: ev is injective (Etingof's Cor. 2.4).** Let $\mathrm{ev}(t) = 0$. Expanding in a basis of $V$, $t = \sum_{i=1}^rv_i\otimes f_i$ with $v_1, \dots, v_r$ linearly independent (LADR Thm. 9.74), and $\sum_if_i(v_i) = 0$. Fix $k$ and any $u \in V$. Extend the $v_i$ to a basis; there is an operator $a$ of $V$ with $av_i = \delta_{ik}u$, and by step 0 ($V$ irreducible) $a = P(\rho_1|_V)$ for some linear combination $P$ of products of operators $\rho_1(X)|_V$. Let $P(\rho_1)$ be the same combination of the $\rho_1(X)$ on $M$. Each $f_i$ intertwines $\rho_1$, hence every product and combination of them: $f_i\circ P(\rho_1|_V) = P(\rho_1)\circ f_i$. Apply $P(\rho_1)$ to $\sum_if_i(v_i) = 0$:
 >
@@ -159,75 +159,75 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 > - Complex scalars are essential: Burnside's theorem and Schur's lemma both fail over $\mathbb R$ (the rotations of $\mathbb R^2$ have no invariant line, yet they generate only the commutative algebra of matrices $\begin{pmatrix} a & -b \\ b & a\end{pmatrix}$, not all of $M_2(\mathbb R)$).
 > - No complete reducibility is assumed: the restriction of $M$ to $\mathfrak h_1$ turns out to be a sum of copies of one irreducible, but that is an output (step 6).
 
-^pf-cb-4-5
+^pf-cb-6-5
 
-*Uses:* [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-9|Theorem §CB.3.9]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-2|Theorem §CB.3.2]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-1|Def. §CB.3.1]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-3|Theorem §C3.1.3]], [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-8|Def. §CB.2.8]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-4|Def. §CB.4.4]], [[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]], [[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]], [[§9 Matrices#^ladr-3-40|LADR Thm. 3.40]]
+*Uses:* [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-9|Theorem §CB.5.9]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-2|Theorem §CB.5.2]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-1|Def. §CB.5.1]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-3|Theorem §C3.1.3]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-8|Def. §CB.3.8]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-4|Def. §CB.6.4]], [[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]], [[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]], [[§9 Matrices#^ladr-3-40|LADR Thm. 3.40]]
 
 ## Duals and complex conjugates
 
-> [!definition] Definition §CB.4.6: Dual Representation
+> [!definition] Definition §CB.6.6: Dual Representation
 > The **dual** (contragredient) of a representation $D$ on $W$ is the representation $D^\ast$ on the dual space $W'$ ([[§12 Duality#^ladr-3-110|LADR Def. 3.110]]) with $D^\ast(g) = D(g^{-1})'$, the dual map ([[§12 Duality#^ladr-3-118|LADR Def. 3.118]]) of $D(g^{-1})$: $(D^\ast(g)\varphi)(w) = \varphi(D(g^{-1})w)$. For a Lie algebra, $d^\ast(X) = -d(X)'$. In a basis and its dual basis the matrices are $(D(g)^{-1})^{\mathsf T}$ and $-d(X)^{\mathsf T}$.
 >
 > *Source: Woit, §4.2 (Definition: dual or contragredient representation, $(\pi^{-1})^{\mathsf t}(g)$) · written here*
 
-^def-cb-4-6
+^def-cb-6-6
 
-> [!definition] Definition §CB.4.7: Complex-Conjugate Representation
+> [!definition] Definition §CB.6.7: Complex-Conjugate Representation
 > The **complex conjugate** $\bar W$ of a complex vector space $W$ is the set $W$ with the same addition and scalar multiplication $\lambda\cdot_{\bar W}w = \bar\lambda w$. The **complex-conjugate representation** of a representation $D$ on $W$ is $\bar D(g) = D(g)$ regarded as a map of $\bar W$; for a Lie algebra (real, [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]]), $\bar d(X) = d(X)$ on $\bar W$. In a basis the matrices are $\overline{D(g)}$ and $\overline{d(X)}$ (entrywise conjugates).
 >
 > *Source: written here*
 
-^def-cb-4-7
+^def-cb-6-7
 
-> [!theorem] Theorem §CB.4.8: Conjugation of a Representation Is Conjugation of the Algebra
-> Let $d$ be a representation of a real Lie algebra $\mathfrak g$ on $W$, $d_{\mathbb C}$ its complex-linear extension ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-6|Theorem §CB.2.6]]) and $c$ the conjugation of $\mathfrak g_{\mathbb C}$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-3|Theorem §CB.2.3]]). Then the complex-linear extension of $\bar d$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]]) is
+> [!theorem] Theorem §CB.6.8: Conjugation of a Representation Is Conjugation of the Algebra
+> Let $d$ be a representation of a real Lie algebra $\mathfrak g$ on $W$, $d_{\mathbb C}$ its complex-linear extension ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|Theorem §CB.3.6]]) and $c$ the conjugation of $\mathfrak g_{\mathbb C}$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-3|Theorem §CB.3.3]]). Then the complex-linear extension of $\bar d$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]]) is
 >
 > $$
 > (\bar d)_{\mathbb C}(Z) = d_{\mathbb C}(cZ) \quad \text{as maps of the set } W, \qquad Z \in \mathfrak g_{\mathbb C} .
 > $$
 >
-> Consequences: for $\mathfrak{so}(1,3)$, whose conjugation exchanges $\mathfrak a_\pm$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-12|Theorem §CB.2.12]], 3), the conjugate representation exchanges the roles of $\mathbf J_+$ and $\mathbf J_-$; for $\mathfrak{su}(2)$ it maps each $\mathfrak{sl}(2, \mathbb C)$-representation to one with the same Casimir.
+> Consequences: for $\mathfrak{so}(1,3)$, whose conjugation exchanges $\mathfrak a_\pm$ ([[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-1|Theorem §CB.4.1]], 3), the conjugate representation exchanges the roles of $\mathbf J_+$ and $\mathbf J_-$; for $\mathfrak{su}(2)$ it maps each $\mathfrak{sl}(2, \mathbb C)$-representation to one with the same Casimir.
 >
 > *Source: the Lorentz case, [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]], Derivation, steps 2–3 (from the user's PHY 513 notes, Ch. 7 §7.4.6: "complex conjugation turns θ − iη into θ + iη"), here in basis-free form · P. Woit, Quantum Theory, Groups and Representations, §41.1 (conjugation of the group matrices flips the sign of the weights)*
 
-^thm-cb-4-8
+^thm-cb-6-8
 
 > [!proof]- Proof
 > *The argument of Derivation §C3.3.9, steps 2–3, without a basis: there, conjugating the matrices; here, changing the scalar multiplication.*
 >
-> **1. $\bar d$ is a representation on $\bar W$.** Each $d(X)$ is additive, and for $\lambda \in \mathbb C$, $d(X)(\lambda\cdot_{\bar W}w) = d(X)(\bar\lambda w) = \bar\lambda\,d(X)w = \lambda\cdot_{\bar W}d(X)w$: $d(X)$ is complex-linear on $\bar W$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]]). $X \mapsto d(X)$ is real-linear and preserves brackets, since the maps and their compositions are the same maps of the set $W$.
+> **1. $\bar d$ is a representation on $\bar W$.** Each $d(X)$ is additive, and for $\lambda \in \mathbb C$, $d(X)(\lambda\cdot_{\bar W}w) = d(X)(\bar\lambda w) = \bar\lambda\,d(X)w = \lambda\cdot_{\bar W}d(X)w$: $d(X)$ is complex-linear on $\bar W$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]]). $X \mapsto d(X)$ is real-linear and preserves brackets, since the maps and their compositions are the same maps of the set $W$.
 >
-> **2. Its complex-linear extension.** By [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-6|Theorem §CB.2.6]], 1, applied on $\bar W$, $(\bar d)_{\mathbb C}(X + iY) = \bar d(X) + i\cdot_{\bar W}\bar d(Y)$, where $i\cdot_{\bar W}$ is multiplication by $i$ in $\bar W$, i.e. by $\bar i = -i$ in $W$. As maps of the set $W$,
+> **2. Its complex-linear extension.** By [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|Theorem §CB.3.6]], 1, applied on $\bar W$, $(\bar d)_{\mathbb C}(X + iY) = \bar d(X) + i\cdot_{\bar W}\bar d(Y)$, where $i\cdot_{\bar W}$ is multiplication by $i$ in $\bar W$, i.e. by $\bar i = -i$ in $W$. As maps of the set $W$,
 >
 > $$
 > (\bar d)_{\mathbb C}(X + iY) = d(X) - i\,d(Y) = d_{\mathbb C}(X - iY) = d_{\mathbb C}\bigl(c(X + iY)\bigr) ,
 > $$
 >
-> with $c(X + iY) = X - iY$ the conjugation of $\mathfrak g_{\mathbb C}$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-3|Theorem §CB.2.3]]). This is the formula.
+> with $c(X + iY) = X - iY$ the conjugation of $\mathfrak g_{\mathbb C}$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-3|Theorem §CB.3.3]]). This is the formula.
 >
-> **3. In a basis.** If $e_1, \dots, e_n$ is a basis of $W$, it is also a basis of $\bar W$, and $w = \sum_aw_ae_a$ in $W$ reads $w = \sum_a\bar w_a\cdot_{\bar W}e_a$ in $\bar W$: the coordinates are conjugated, and so is every matrix, $\overline{d(X)}$, as Def. §CB.4.7 states. Step 2 then reads $(\bar d)_{\mathbb C}(Z) = \overline{d_{\mathbb C}(cZ)}$ as matrices, which for the Lorentz generators is $\bar{\mathbf J}_\pm = -(\mathbf J_\mp)^{\ast}$ of Derivation §C3.3.9, step 3.
+> **3. In a basis.** If $e_1, \dots, e_n$ is a basis of $W$, it is also a basis of $\bar W$, and $w = \sum_aw_ae_a$ in $W$ reads $w = \sum_a\bar w_a\cdot_{\bar W}e_a$ in $\bar W$: the coordinates are conjugated, and so is every matrix, $\overline{d(X)}$, as Def. §CB.6.7 states. Step 2 then reads $(\bar d)_{\mathbb C}(Z) = \overline{d_{\mathbb C}(cZ)}$ as matrices, which for the Lorentz generators is $\bar{\mathbf J}_\pm = -(\mathbf J_\mp)^{\ast}$ of Derivation §C3.3.9, step 3.
 >
-> **4. The Lorentz algebra.** $c(J_{\pm i}) = -J_{\mp i}$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-12|Theorem §CB.2.12]], 3), so by step 2 $(\bar d)_{\mathbb C}(J_{+i}) = -d_{\mathbb C}(J_{-i})$ and $(\bar d)_{\mathbb C}(J_{-i}) = -d_{\mathbb C}(J_{+i})$ as maps of $W$: on $\bar W$ the copy $\mathfrak a_+$ acts through the operators by which $\mathfrak a_-$ acted on $W$, and conversely. The roles of $\mathbf J_+$ and $\mathbf J_-$ are exchanged.
+> **4. The Lorentz algebra.** $c(J_{\pm i}) = -J_{\mp i}$ ([[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-1|Theorem §CB.4.1]], 3), so by step 2 $(\bar d)_{\mathbb C}(J_{+i}) = -d_{\mathbb C}(J_{-i})$ and $(\bar d)_{\mathbb C}(J_{-i}) = -d_{\mathbb C}(J_{+i})$ as maps of $W$: on $\bar W$ the copy $\mathfrak a_+$ acts through the operators by which $\mathfrak a_-$ acted on $W$, and conversely. The roles of $\mathbf J_+$ and $\mathbf J_-$ are exchanged.
 >
 > **5. $\mathfrak{su}(2)$.** The physicists' generators $J_a = iX_a$, $X_a \in \mathfrak{su}(2)$, satisfy $c(J_a) = -iX_a = -J_a$, so $(\bar d)_{\mathbb C}(J_a) = -d_{\mathbb C}(J_a)$ as maps of $W$, and the Casimir operator $\sum_a(\bar d)_{\mathbb C}(J_a)^2 = \sum_a d_{\mathbb C}(J_a)^2$ is the same map of the set $W$. On an irreducible $V_j$ it is $j(j+1)\,\mathbb 1$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|Theorem §C3.1.6]], 3), a real multiple of the identity, hence the same multiple in $\bar W$; the conjugate is irreducible (same invariant subspaces, as subsets) of dimension $2j + 1$, so it is again $V_j$ (Theorem §C3.1.6, 2).
 >
 > **What the proof shows**
 > - Conjugating a representation is not conjugating the group element: the algebra element stays, the scalar multiplication on the space is reversed, and this acts on $\mathfrak g_{\mathbb C}$ as the conjugation $c$ that fixes the real form.
-> - ⚑ By-product: whether conjugation produces a new representation depends on how $c$ acts on $\mathfrak g_{\mathbb C}$. For the Lorentz algebra $c$ swaps the two ideals, so $(j_+, j_-) \mapsto (j_-, j_+)$; for $\mathfrak{su}(2)$ it preserves the only ideal, so every $V_j$ is self-conjugate → [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-15|Theorem §CB.4.15]], 3 (spin ½ explicitly).
-> - Used in: [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]] (the Lorentz case with explicit matrices), Theorem §CB.4.16 (dotted indices).
+> - ⚑ By-product: whether conjugation produces a new representation depends on how $c$ acts on $\mathfrak g_{\mathbb C}$. For the Lorentz algebra $c$ swaps the two ideals, so $(j_+, j_-) \mapsto (j_-, j_+)$; for $\mathfrak{su}(2)$ it preserves the only ideal, so every $V_j$ is self-conjugate → [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-15|Theorem §CB.6.15]], 3 (spin ½ explicitly).
+> - Used in: [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]] (the Lorentz case with explicit matrices), Theorem §CB.6.16 (dotted indices).
 
-^pf-cb-4-8
+^pf-cb-6-8
 
-*Uses:* [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]], [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-3|Theorem §CB.2.3]], [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-6|Theorem §CB.2.6]], [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-12|Theorem §CB.2.12]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|Theorem §C3.1.6]]
+*Uses:* [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-3|Theorem §CB.3.3]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|Theorem §CB.3.6]], [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-1|Theorem §CB.4.1]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|Theorem §C3.1.6]]
 
 ## Hom spaces, invariants and powers
 
-> [!theorem] Theorem §CB.4.9: Hom(V, W) ≅ V* ⊗ W, and Its Invariants Are the Intertwiners
-> For representations $D_V$, $D_W$ of $G$, $g\cdot T = D_W(g)\,T\,D_V(g)^{-1}$ is a representation on $\operatorname{Hom}(V, W)$; the linear isomorphism $V'\otimes W \to \operatorname{Hom}(V, W)$, $\varphi\otimes w \mapsto (v \mapsto \varphi(v)w)$, is an equivalence with $D_V^\ast\otimes D_W$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]]); and $T$ is fixed by every $g$ iff $T$ is an intertwiner ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-1|Def. §CB.3.1]]). The Lie algebra version: $X\cdot T = d_W(X)T - T\,d_V(X)$.
+> [!theorem] Theorem §CB.6.9: Hom(V, W) ≅ V* ⊗ W, and Its Invariants Are the Intertwiners
+> For representations $D_V$, $D_W$ of $G$, $g\cdot T = D_W(g)\,T\,D_V(g)^{-1}$ is a representation on $\operatorname{Hom}(V, W)$; the linear isomorphism $V'\otimes W \to \operatorname{Hom}(V, W)$, $\varphi\otimes w \mapsto (v \mapsto \varphi(v)w)$, is an equivalence with $D_V^\ast\otimes D_W$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]]); and $T$ is fixed by every $g$ iff $T$ is an intertwiner ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-1|Def. §CB.5.1]]). The Lie algebra version: $X\cdot T = d_W(X)T - T\,d_V(X)$.
 >
 > *Source: K. E. Smith, Groups and their Representations, Ch. 4 §5.2 (the representation $g\cdot\varphi = g\circ\varphi\circ g^{-1}$ on $\operatorname{Hom}_{\mathbb C}(V, W)$; its fixed vectors are the $G$-linear maps, "Prove it!") · P. Woit, Quantum Theory, Groups and Representations, §9.1 (the isomorphism $V^{\ast}\otimes W \cong$ linear maps $V \to W$, $l\otimes w \mapsto (v \mapsto l(v)w)$) and §4.2 (the dual representation) · the slot rule: [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]*
 
-^thm-cb-4-9
+^thm-cb-6-9
 
 > [!proof]- Proof
 > *Smith's representation on Hom and Woit's isomorphism, with the verifications both leave to the reader written out.*
@@ -242,15 +242,15 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 >
 > **2. The map Ψ is an isomorphism.** $(\varphi, w) \mapsto (v \mapsto \varphi(v)w)$ is bilinear, so it defines a linear $\Psi : V'\otimes W \to \operatorname{Hom}(V, W)$ ([[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]]). Take a basis $e_1, \dots, e_n$ of $V$ with dual basis $e^1, \dots, e^n$ ([[§12 Duality#^ladr-3-116|LADR Thm. 3.116]]) and a basis $f_1, \dots, f_m$ of $W$. Then $\Psi(e^i\otimes f_k)$ maps $e_j \mapsto e^i(e_j)f_k = \delta_{ij}f_k$: its matrix is the matrix unit $E_{ki}$. The $e^i\otimes f_k$ are a basis of $V'\otimes W$ ([[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]]) and the $mn$ matrix units a basis of $\mathbb C^{m,n}$ ([[§9 Matrices#^ladr-3-40|LADR Thm. 3.40]]), which is identified with $\operatorname{Hom}(V, W)$ by taking matrices. $\Psi$ maps a basis onto a basis, so it is an isomorphism.
 >
-> **3. Ψ is an equivalence.** By [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]], $(D_V^{\ast}(g)\varphi)(v) = \varphi(D_V(g)^{-1}v)$. On a product vector, for every $v \in V$,
+> **3. Ψ is an equivalence.** By [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]], $(D_V^{\ast}(g)\varphi)(v) = \varphi(D_V(g)^{-1}v)$. On a product vector, for every $v \in V$,
 >
 > $$
 > \Psi\bigl(D_V^{\ast}(g)\varphi\otimes D_W(g)w\bigr)(v) = \varphi\bigl(D_V(g)^{-1}v\bigr)\,D_W(g)w = D_W(g)\Bigl[\varphi\bigl(D_V(g)^{-1}v\bigr)w\Bigr] = \bigl(D_W(g)\,\Psi(\varphi\otimes w)\,D_V(g)^{-1}\bigr)(v) ,
 > $$
 >
-> using linearity of $D_W(g)$ to move the number $\varphi(\cdots)$ through it. So $\Psi\circ(D_V^{\ast}\otimes D_W)(g)$ and $(g\cdot\,)\circ\Psi$ agree on the products $\varphi\otimes w$, which span $V'\otimes W$, hence everywhere ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]] for the tensor product).
+> using linearity of $D_W(g)$ to move the number $\varphi(\cdots)$ through it. So $\Psi\circ(D_V^{\ast}\otimes D_W)(g)$ and $(g\cdot\,)\circ\Psi$ agree on the products $\varphi\otimes w$, which span $V'\otimes W$, hence everywhere ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]] for the tensor product).
 >
-> **4. Fixed vectors are intertwiners (Smith's "prove it").** $g\cdot T = T$ means $D_W(g)TD_V(g)^{-1} = T$; multiplying on the right by $D_V(g)$ gives $D_W(g)T = TD_V(g)$, and multiplying that on the right by $D_V(g)^{-1}$ gives back the first. So $T$ is fixed by every $g$ iff $T$ intertwines $D_V$ and $D_W$ ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-1|Def. §CB.3.1]]).
+> **4. Fixed vectors are intertwiners (Smith's "prove it").** $g\cdot T = T$ means $D_W(g)TD_V(g)^{-1} = T$; multiplying on the right by $D_V(g)$ gives $D_W(g)T = TD_V(g)$, and multiplying that on the right by $D_V(g)^{-1}$ gives back the first. So $T$ is fixed by every $g$ iff $T$ intertwines $D_V$ and $D_W$ ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-1|Def. §CB.5.1]]).
 >
 > **5. The Lie algebra version.** For $X \in \mathfrak g$, $e^{sX}\cdot T = e^{s\,d_W(X)}\,T\,e^{-s\,d_V(X)}$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], 1, and $(e^{A})^{-1} = e^{-A}$, [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]], 2). Differentiating the product at $s = 0$ with Theorem §CB.1.2, 5 (two terms, one for each factor depending on $s$):
 >
@@ -258,57 +258,57 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 > X\cdot T = \frac{d}{ds}\Bigl(e^{s\,d_W(X)}\,T\,e^{-s\,d_V(X)}\Bigr)\Big|_{s=0} = d_W(X)\,T - T\,d_V(X) .
 > $$
 >
-> This is the differential of the representation of step 1, hence a representation of $\mathfrak g$ (Theorem §C3.1.2, 1). $X\cdot T = 0$ for all $X$ iff $d_W(X)T = Td_V(X)$ for all $X$, the intertwiner condition for the algebra. The same differentiation applied to step 3 shows that $\Psi$ also intertwines the algebra representations, with $d_V^{\ast}(X) = -d_V(X)'$ (Def. §CB.4.6).
+> This is the differential of the representation of step 1, hence a representation of $\mathfrak g$ (Theorem §C3.1.2, 1). $X\cdot T = 0$ for all $X$ iff $d_W(X)T = Td_V(X)$ for all $X$, the intertwiner condition for the algebra. The same differentiation applied to step 3 shows that $\Psi$ also intertwines the algebra representations, with $d_V^{\ast}(X) = -d_V(X)'$ (Def. §CB.6.6).
 >
 > **What the proof shows**
-> - ⚑ By-product: "invariant tensor with one $V'$ slot and one $W$ slot" and "intertwiner $V \to W$" are one notion, so the invariant symbols of physics ($\delta^\mu{}_\nu$, $(\gamma^\mu)^a{}_b$, $(\sigma^\mu)_{a\dot b}$) are intertwiners between the representations carried by their slots → [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-10|Def. §CB.4.10]]; in components this is the slot rule ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]).
+> - ⚑ By-product: "invariant tensor with one $V'$ slot and one $W$ slot" and "intertwiner $V \to W$" are one notion, so the invariant symbols of physics ($\delta^\mu{}_\nu$, $(\gamma^\mu)^a{}_b$, $(\sigma^\mu)_{a\dot b}$) are intertwiners between the representations carried by their slots → [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-10|Def. §CB.6.10]]; in components this is the slot rule ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]).
 > - The inverse $D_V(g)^{-1}$ on the source slot is what the dual representation supplies; nothing else about $V$ or $W$ is used (no inner product, no irreducibility).
 > - Used next: Schur's lemma becomes a statement about invariant tensors (one invariant in $V'\otimes V$ for irreducible $V$, namely $\mathbb 1$); [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]] ($\gamma^\mu$ as an invariant).
 
-^pf-cb-4-9
+^pf-cb-6-9
 
-*Uses:* [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-1|Def. §CB.3.1]], [[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]], [[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]], [[§12 Duality#^ladr-3-116|LADR Thm. 3.116]], [[§9 Matrices#^ladr-3-40|LADR Thm. 3.40]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]]
+*Uses:* [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-1|Def. §CB.5.1]], [[§38 Tensor Products#^ladr-9-74|LADR Thm. 9.74]], [[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]], [[§12 Duality#^ladr-3-116|LADR Thm. 3.116]], [[§9 Matrices#^ladr-3-40|LADR Thm. 3.40]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]]
 
 The course's slot rule, the component form of this theorem, proved in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]:
 
 ![[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3]]
 
-> [!definition] Definition §CB.4.10: Invariant Tensor
-> An **invariant tensor** of a representation $D$ on a tensor space $\mathcal T$ (a tensor product of copies of $W$, $W'$, $\bar W$, $\bar W'$) is a $t \in \mathcal T$ with $D(g)t = t$ for all $g$; for a Lie algebra, $d(X)t = 0$ for all $X$. By [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-9|Theorem §CB.4.9]], an invariant tensor in $V'\otimes W$ is the same thing as an intertwiner $V \to W$.
+> [!definition] Definition §CB.6.10: Invariant Tensor
+> An **invariant tensor** of a representation $D$ on a tensor space $\mathcal T$ (a tensor product of copies of $W$, $W'$, $\bar W$, $\bar W'$) is a $t \in \mathcal T$ with $D(g)t = t$ for all $g$; for a Lie algebra, $d(X)t = 0$ for all $X$. By [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-9|Theorem §CB.6.9]], an invariant tensor in $V'\otimes W$ is the same thing as an intertwiner $V \to W$.
 >
 > *Source: written here*
 
-^def-cb-4-10
+^def-cb-6-10
 
-> [!definition] Definition §CB.4.11: Symmetric Power
+> [!definition] Definition §CB.6.11: Symmetric Power
 > The **$k$-th symmetric power** $\operatorname{Sym}^kW \subset W^{\otimes k}$ is the subspace of tensors fixed by every permutation of the $k$ factors.
 >
 > *Source: Woit, §9.2 (the symmetric subspace $S^n(H)$ of $H^{\otimes n}$), §9.6 · S. Wadsley, Representation Theory, Lecture 12 (the same definition) · written here*
 
-^def-cb-4-11
+^def-cb-6-11
 
-> [!definition] Definition §CB.4.12: Exterior Power
+> [!definition] Definition §CB.6.12: Exterior Power
 > The **$k$-th exterior power** $\Lambda^kW \subset W^{\otimes k}$ is the subspace of tensors $t$ with $\pi t = \operatorname{sgn}(\pi)\,t$ for every permutation $\pi$ of the $k$ factors ([[§36 Alternating Multilinear Forms#^ladr-9-32|LADR Def. 9.32]] for the sign); $w_1\wedge\cdots\wedge w_k = \frac1{k!}\sum_\pi\operatorname{sgn}(\pi)\,w_{\pi(1)}\otimes\cdots\otimes w_{\pi(k)}$. The **exterior algebra** is $\Lambda W = \bigoplus_{k=0}^{\dim W}\Lambda^kW$ with the product $\wedge$.
 >
 > *Source: Woit, §9.2 (the antisymmetric subspace $\Lambda^n(H)$), §9.6, eq. (9.6) (the wedge product with $\frac1{n!}$) · S. Wadsley, Representation Theory, Lecture 12 · LADR §36 (alternating forms, the dual picture) · written here*
 
-^def-cb-4-12
+^def-cb-6-12
 
-> [!theorem] Theorem §CB.4.13: Symmetric and Exterior Powers Are Subrepresentations
-> 1. $\operatorname{Sym}^kW$ and $\Lambda^kW$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-11|Def. §CB.4.11]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-12|Def. §CB.4.12]]) are invariant under $D^{\otimes k}$; $\dim\operatorname{Sym}^kW = \binom{n + k - 1}{k}$, $\dim\Lambda^kW = \binom nk$ for $\dim W = n$.
+> [!theorem] Theorem §CB.6.13: Symmetric and Exterior Powers Are Subrepresentations
+> 1. $\operatorname{Sym}^kW$ and $\Lambda^kW$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-11|Def. §CB.6.11]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-12|Def. §CB.6.12]]) are invariant under $D^{\otimes k}$; $\dim\operatorname{Sym}^kW = \binom{n + k - 1}{k}$, $\dim\Lambda^kW = \binom nk$ for $\dim W = n$.
 > 2. $W\otimes W = \operatorname{Sym}^2W\oplus\Lambda^2W$ as representations.
-> 3. For representations $A$ of $G_1$ and $B$ of $G_2$: $\Lambda^2(A\otimes B) \cong (\operatorname{Sym}^2A\boxtimes\Lambda^2B)\oplus(\Lambda^2A\boxtimes\operatorname{Sym}^2B)$ and $\operatorname{Sym}^2(A\otimes B) \cong (\operatorname{Sym}^2A\boxtimes\operatorname{Sym}^2B)\oplus(\Lambda^2A\boxtimes\Lambda^2B)$ as representations of $G_1\times G_2$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-4|Def. §CB.4.4]]).
+> 3. For representations $A$ of $G_1$ and $B$ of $G_2$: $\Lambda^2(A\otimes B) \cong (\operatorname{Sym}^2A\boxtimes\Lambda^2B)\oplus(\Lambda^2A\boxtimes\operatorname{Sym}^2B)$ and $\operatorname{Sym}^2(A\otimes B) \cong (\operatorname{Sym}^2A\boxtimes\operatorname{Sym}^2B)\oplus(\Lambda^2A\boxtimes\Lambda^2B)$ as representations of $G_1\times G_2$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-4|Def. §CB.6.4]]).
 >
 > *Source: parts 1–2: S. Wadsley, Representation Theory (Cambridge Part II lecture notes), Lectures 11–12 (the swap $\sigma$ commutes with $G$; $S^nV$, $\Lambda^nV$ are subrepresentations; the bases of $S^nV$ and $\Lambda^nV$, given there as a hint; https://www.dpmms.cam.ac.uk/~sjw47/RepThLectures.pdf) and the Part II Representation Theory notes, §9.3, Lemma ($V^{\otimes2} = S^2V\oplus\Lambda^2V$, $\dim = \frac12n(n \pm 1)$; https://dec41.user.srcf.net/notes/II_L/representation_theory_thm_proof.pdf) · part 3: proof to be filled · the two-index case: [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]]*
 
-^thm-cb-4-13
+^thm-cb-6-13
 
 > [!proof]- Proof
 > *Parts 1–2 follow Wadsley, Lectures 11–12, with his hint for the bases written out.*
 >
-> **1. The permutation operators.** For a permutation $\pi$ of $\{1, \dots, k\}$, $(w_1, \dots, w_k) \mapsto w_{\pi^{-1}(1)}\otimes\cdots\otimes w_{\pi^{-1}(k)}$ is $k$-linear, so it defines a linear $\sigma_\pi$ on $W^{\otimes k}$ ([[§38 Tensor Products#^ladr-9-92|LADR Thm. 9.92]]). With $u_i = w_{\rho^{-1}(i)}$, $\sigma_\pi\sigma_\rho(w_1\otimes\cdots) = \sigma_\pi(u_1\otimes\cdots) = \bigotimes_iu_{\pi^{-1}(i)} = \bigotimes_iw_{\rho^{-1}\pi^{-1}(i)} = \sigma_{\pi\rho}(w_1\otimes\cdots)$, so $\sigma_\pi\sigma_\rho = \sigma_{\pi\rho}$. Definitions §CB.4.11–§CB.4.12 read $\operatorname{Sym}^kW = \{t : \sigma_\pi t = t\ \forall\pi\}$, $\Lambda^kW = \{t : \sigma_\pi t = \operatorname{sgn}(\pi)t\ \forall\pi\}$.
+> **1. The permutation operators.** For a permutation $\pi$ of $\{1, \dots, k\}$, $(w_1, \dots, w_k) \mapsto w_{\pi^{-1}(1)}\otimes\cdots\otimes w_{\pi^{-1}(k)}$ is $k$-linear, so it defines a linear $\sigma_\pi$ on $W^{\otimes k}$ ([[§38 Tensor Products#^ladr-9-92|LADR Thm. 9.92]]). With $u_i = w_{\rho^{-1}(i)}$, $\sigma_\pi\sigma_\rho(w_1\otimes\cdots) = \sigma_\pi(u_1\otimes\cdots) = \bigotimes_iu_{\pi^{-1}(i)} = \bigotimes_iw_{\rho^{-1}\pi^{-1}(i)} = \sigma_{\pi\rho}(w_1\otimes\cdots)$, so $\sigma_\pi\sigma_\rho = \sigma_{\pi\rho}$. Definitions §CB.6.11–§CB.6.12 read $\operatorname{Sym}^kW = \{t : \sigma_\pi t = t\ \forall\pi\}$, $\Lambda^kW = \{t : \sigma_\pi t = \operatorname{sgn}(\pi)t\ \forall\pi\}$.
 >
-> **2. Invariance (Wadsley's argument).** On products, $\sigma_\pi D^{\otimes k}(g)(w_1\otimes\cdots\otimes w_k) = \bigotimes_iD(g)w_{\pi^{-1}(i)} = D^{\otimes k}(g)\sigma_\pi(w_1\otimes\cdots\otimes w_k)$; products span ([[§38 Tensor Products#^ladr-9-90|LADR Thm. 9.90]]), so $\sigma_\pi$ commutes with every $D^{\otimes k}(g)$ ($D^{\otimes k}$ the iterated product of [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]]). If $\sigma_\pi t = \epsilon(\pi)t$ for all $\pi$ ($\epsilon = 1$ or $\operatorname{sgn}$), then $\sigma_\pi D^{\otimes k}(g)t = D^{\otimes k}(g)\sigma_\pi t = \epsilon(\pi)D^{\otimes k}(g)t$: $\operatorname{Sym}^kW$ and $\Lambda^kW$ are invariant.
+> **2. Invariance (Wadsley's argument).** On products, $\sigma_\pi D^{\otimes k}(g)(w_1\otimes\cdots\otimes w_k) = \bigotimes_iD(g)w_{\pi^{-1}(i)} = D^{\otimes k}(g)\sigma_\pi(w_1\otimes\cdots\otimes w_k)$; products span ([[§38 Tensor Products#^ladr-9-90|LADR Thm. 9.90]]), so $\sigma_\pi$ commutes with every $D^{\otimes k}(g)$ ($D^{\otimes k}$ the iterated product of [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]]). If $\sigma_\pi t = \epsilon(\pi)t$ for all $\pi$ ($\epsilon = 1$ or $\operatorname{sgn}$), then $\sigma_\pi D^{\otimes k}(g)t = D^{\otimes k}(g)\sigma_\pi t = \epsilon(\pi)D^{\otimes k}(g)t$: $\operatorname{Sym}^kW$ and $\Lambda^kW$ are invariant.
 >
 > **3. Two projections.** Put $P_\epsilon = \frac1{k!}\sum_\pi\epsilon(\pi)\sigma_\pi$. For fixed $\rho$, $\pi \mapsto \rho\pi$ is a bijection of the permutations and $\epsilon(\rho\pi) = \epsilon(\rho)\epsilon(\pi)$ (the sign is a homomorphism, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 Thm. §21.3]]; $\epsilon(\rho)^2 = 1$), so
 >
@@ -331,25 +331,25 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 >
 > **What the proof shows**
 > - The symmetric and exterior powers are cut out by the action of the permutation group on slots, which commutes with the group acting on each slot; any such "slot symmetry" gives subrepresentations. This is the same mechanism as Theorem §C1a.5.6 for two Lorentz indices.
-> - ⚑ By-product: the symmetrizer $P_1$ and antisymmetrizer $P_{\operatorname{sgn}}$ are intertwiners (they commute with $D^{\otimes k}$, step 2), so $\operatorname{Sym}^kW$ and $\Lambda^kW$ are images of invariant projections, the form in which spin $j$ is built from $2j$ spinor slots → [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-6-5|Theorem §CB.6.5]].
+> - ⚑ By-product: the symmetrizer $P_1$ and antisymmetrizer $P_{\operatorname{sgn}}$ are intertwiners (they commute with $D^{\otimes k}$, step 2), so $\operatorname{Sym}^kW$ and $\Lambda^kW$ are images of invariant projections, the form in which spin $j$ is built from $2j$ spinor slots → [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-5|Theorem §CB.8.5]].
 > - For $k > 2$, $\operatorname{Sym}^kW\oplus\Lambda^kW \ne W^{\otimes k}$ (dimensions $\binom{n+k-1}k + \binom nk < n^k$ for $n \ge 2$): the rest consists of mixed symmetry types.
 
-^pf-cb-4-13
+^pf-cb-6-13
 
-*Uses:* [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-11|Def. §CB.4.11]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-12|Def. §CB.4.12]], [[§38 Tensor Products#^ladr-9-90|LADR Thm. 9.90]], [[§38 Tensor Products#^ladr-9-92|LADR Thm. 9.92]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 Thm. §21.3]]
+*Uses:* [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-11|Def. §CB.6.11]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-12|Def. §CB.6.12]], [[§38 Tensor Products#^ladr-9-90|LADR Thm. 9.90]], [[§38 Tensor Products#^ladr-9-92|LADR Thm. 9.92]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 Thm. §21.3]]
 
 ## Invariant tensors of the Lorentz group and of SL(2,ℂ)
 
-> [!theorem] Theorem §CB.4.14: The Metric and the Levi-Civita Symbol Are Invariant Tensors
-> 1. $g_{\mu\nu} \in (V')^{\otimes2}$ and $g^{\mu\nu} \in V^{\otimes2}$ ($V = \mathbb R^{1,3}$) are invariant tensors ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-10|Def. §CB.4.10]]) of $O(1,3)$; equivalently $g : V \to V'$ is an intertwiner, so $V \cong V^\ast$ as representations.
+> [!theorem] Theorem §CB.6.14: The Metric and the Levi-Civita Symbol Are Invariant Tensors
+> 1. $g_{\mu\nu} \in (V')^{\otimes2}$ and $g^{\mu\nu} \in V^{\otimes2}$ ($V = \mathbb R^{1,3}$) are invariant tensors ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-10|Def. §CB.6.10]]) of $O(1,3)$; equivalently $g : V \to V'$ is an intertwiner, so $V \cong V^\ast$ as representations.
 > 2. $\varepsilon^{\mu\nu\rho\sigma} \in \Lambda^4V$ satisfies $\Lambda\cdot\varepsilon = (\det\Lambda)\,\varepsilon$: it is invariant under $SO(1,3)$ and changes sign under $\mathcal P$ and $\mathcal T$.
 >
 > *Source: the metric: [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]], 1, and [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]] · the Levi-Civita symbol: [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]] (proved there by the Leibniz formula) and [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]] · the user's PHY 513 notes, Ch. 1 §1.5*
 
-^thm-cb-4-14
+^thm-cb-6-14
 
 > [!proof]- Proof
-> *Both facts are proved in their homes (REL Theorems §B2.2.2 and §B2.2.4, Theorem §C1a.5.2); this proof restates them as statements about the representations $\Lambda^{\otimes k}$ and $(\Lambda^{\ast})^{\otimes k}$ of [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-1|Def. §CB.4.1]] and [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]].*
+> *Both facts are proved in their homes (REL Theorems §B2.2.2 and §B2.2.4, Theorem §C1a.5.2); this proof restates them as statements about the representations $\Lambda^{\otimes k}$ and $(\Lambda^{\ast})^{\otimes k}$ of [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-1|Def. §CB.6.1]] and [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]].*
 >
 > **1. The action on the slots.** On $V^{\otimes2}$ and $(V')^{\otimes2}$ the group acts by $\Lambda\otimes\Lambda$ and $\Lambda^{\ast}\otimes\Lambda^{\ast}$, $\Lambda^{\ast}$ having the matrix $(\Lambda^{-1})^{\mathsf T}$ in the dual basis. In components this is the tensor law ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]): $(\Lambda\cdot g)_{\mu\nu} = (\Lambda^{-1})^\rho{}_\mu(\Lambda^{-1})^\sigma{}_\nu\,g_{\rho\sigma}$, the matrix $(\Lambda^{-1})^{\mathsf T}g\,\Lambda^{-1}$; and $(\Lambda\cdot g^{-1})^{\mu\nu} = \Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma\,g^{\rho\sigma}$, the matrix $\Lambda g^{-1}\Lambda^{\mathsf T}$.
 >
@@ -357,30 +357,30 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 >
 > **3. $g^{\mu\nu}$ is invariant.** Invert both sides of $\Lambda^{\mathsf T}g\Lambda = g$: $\Lambda^{-1}g^{-1}(\Lambda^{\mathsf T})^{-1} = g^{-1}$. Multiply by $\Lambda$ on the left and by $\Lambda^{\mathsf T}$ on the right: $g^{-1} = \Lambda g^{-1}\Lambda^{\mathsf T}$, which by step 1 is $\Lambda\cdot g^{-1} = g^{-1}$.
 >
-> **4. Lowering is an intertwiner.** The map $x \mapsto x^\flat = g(x, \cdot\,)$ is an isomorphism $V \to V'$ with matrix $g$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]]). It intertwines $\Lambda$ with $\Lambda^{\ast}$ iff $(\Lambda^{-1})^{\mathsf T}g = g\Lambda$, i.e. (multiply on the left by $\Lambda^{\mathsf T}$) $g = \Lambda^{\mathsf T}g\Lambda$, the defining condition. So $V \cong V^{\ast}$ as representations of $O(1,3)$. Equivalently, by [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-9|Theorem §CB.4.9]], the invariant $g \in V'\otimes V' \cong \operatorname{Hom}(V, V')$ of step 2 is this intertwiner.
+> **4. Lowering is an intertwiner.** The map $x \mapsto x^\flat = g(x, \cdot\,)$ is an isomorphism $V \to V'$ with matrix $g$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]]). It intertwines $\Lambda$ with $\Lambda^{\ast}$ iff $(\Lambda^{-1})^{\mathsf T}g = g\Lambda$, i.e. (multiply on the left by $\Lambda^{\mathsf T}$) $g = \Lambda^{\mathsf T}g\Lambda$, the defining condition. So $V \cong V^{\ast}$ as representations of $O(1,3)$. Equivalently, by [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-9|Theorem §CB.6.9]], the invariant $g \in V'\otimes V' \cong \operatorname{Hom}(V, V')$ of step 2 is this intertwiner.
 >
-> **5. The Levi-Civita symbol.** $\varepsilon^{\mu\nu\rho\sigma}$ is totally antisymmetric, so it lies in $\Lambda^4V$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-12|Def. §CB.4.12]]; $\dim\Lambda^4V = \binom44 = 1$, Theorem §CB.4.13, 1), and $\Lambda^{\otimes4}$ acts on it by $(\Lambda\cdot\varepsilon)^{\mu\nu\rho\sigma} = \Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta}$. By REL Theorem §B2.2.4, 1 (antisymmetry of the left side in $\mu\nu\rho\sigma$, then the Leibniz formula for its $0123$ component; the argument of [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1, with rows in place of columns), this equals $(\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$.
+> **5. The Levi-Civita symbol.** $\varepsilon^{\mu\nu\rho\sigma}$ is totally antisymmetric, so it lies in $\Lambda^4V$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-12|Def. §CB.6.12]]; $\dim\Lambda^4V = \binom44 = 1$, Theorem §CB.6.13, 1), and $\Lambda^{\otimes4}$ acts on it by $(\Lambda\cdot\varepsilon)^{\mu\nu\rho\sigma} = \Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta}$. By REL Theorem §B2.2.4, 1 (antisymmetry of the left side in $\mu\nu\rho\sigma$, then the Leibniz formula for its $0123$ component; the argument of [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1, with rows in place of columns), this equals $(\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$.
 >
 > **6. Signs.** $\det\Lambda = 1$ on $SO(1,3)$, so $\varepsilon$ is invariant there. $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$ and $\mathcal T = \operatorname{diag}(-1, 1, 1, 1)$ have determinant $-1$, so $\mathcal P\cdot\varepsilon = \mathcal T\cdot\varepsilon = -\varepsilon$.
 >
 > **What the proof shows**
 > - "Invariant tensor" is the representation-theoretic name for "has the same components in every inertial frame"; $g$ is invariant under all of $O(1,3)$, $\varepsilon$ only under $SO(1,3)$.
-> - ⚑ By-product: $\Lambda^4V$ is the one-dimensional representation $\Lambda \mapsto \det\Lambda$, the same mechanism that makes $\Lambda^2\mathbb C^2$ the determinant representation of $GL(2, \mathbb C)$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-15|Theorem §CB.4.15]], 1); pseudoscalars are vectors of this representation.
-> - $V \cong V^{\ast}$ comes from an invariant nondegenerate form; for $SL(2, \mathbb C)$ the form is antisymmetric ($\varepsilon_{ab}$, Theorem §CB.4.15, 2), which is the origin of the sign rules of spinor indices.
+> - ⚑ By-product: $\Lambda^4V$ is the one-dimensional representation $\Lambda \mapsto \det\Lambda$, the same mechanism that makes $\Lambda^2\mathbb C^2$ the determinant representation of $GL(2, \mathbb C)$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-15|Theorem §CB.6.15]], 1); pseudoscalars are vectors of this representation.
+> - $V \cong V^{\ast}$ comes from an invariant nondegenerate form; for $SL(2, \mathbb C)$ the form is antisymmetric ($\varepsilon_{ab}$, Theorem §CB.6.15, 2), which is the origin of the sign rules of spinor indices.
 
-^pf-cb-4-14
+^pf-cb-6-14
 
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-9|Theorem §CB.4.9]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-13|Theorem §CB.4.13]]
+*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-9|Theorem §CB.6.9]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-13|Theorem §CB.6.13]]
 
-> [!theorem] Theorem §CB.4.15: ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ)
+> [!theorem] Theorem §CB.6.15: ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ)
 > Let $\varepsilon = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$, the alternating form $\varepsilon(u, v) = u^{\mathsf T}\varepsilon v$ on $\mathbb C^2$.
-> 1. $A^{\mathsf T}\varepsilon A = (\det A)\,\varepsilon$ for every $A \in M_2(\mathbb C)$; so $SL(2, \mathbb C) = \{A : A^{\mathsf T}\varepsilon A = \varepsilon\} = Sp(2, \mathbb C)$, and $\Lambda^2\mathbb C^2$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-12|Def. §CB.4.12]]) is the representation $A \mapsto \det A$, trivial on $SL(2, \mathbb C)$.
-> 2. $\varepsilon : \mathbb C^2 \to (\mathbb C^2)'$ is an intertwiner from the defining representation of $SL(2, \mathbb C)$ to its dual ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]]): $(A^{-1})^{\mathsf T} = \varepsilon A\varepsilon^{-1}$.
-> 3. For $A \in SU(2)$, $\bar A = (A^{-1})^{\mathsf T} = \varepsilon A\varepsilon^{-1}$: the defining representation of $SU(2)$ is equivalent to its dual and to its conjugate ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]]).
+> 1. $A^{\mathsf T}\varepsilon A = (\det A)\,\varepsilon$ for every $A \in M_2(\mathbb C)$; so $SL(2, \mathbb C) = \{A : A^{\mathsf T}\varepsilon A = \varepsilon\} = Sp(2, \mathbb C)$, and $\Lambda^2\mathbb C^2$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-12|Def. §CB.6.12]]) is the representation $A \mapsto \det A$, trivial on $SL(2, \mathbb C)$.
+> 2. $\varepsilon : \mathbb C^2 \to (\mathbb C^2)'$ is an intertwiner from the defining representation of $SL(2, \mathbb C)$ to its dual ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]]): $(A^{-1})^{\mathsf T} = \varepsilon A\varepsilon^{-1}$.
+> 3. For $A \in SU(2)$, $\bar A = (A^{-1})^{\mathsf T} = \varepsilon A\varepsilon^{-1}$: the defining representation of $SU(2)$ is equivalent to its dual and to its conjugate ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]]).
 >
 > *Source: part 1: P. Woit, Quantum Theory, Groups and Representations, §16.1.1, eq. (16.4) ($Sp(2, \mathbb R) = SL(2, \mathbb R)$ by the same computation; §41.1 notes that it shows $SL(2, \mathbb C)$-invariance of $\varepsilon$) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": $M^{\mathsf T}EM = (\det M)E$) · part 2: Yu Zhao-Huan, 量子场论讲义, §9.6.1, eq. (9.354) ($\sigma^2d(\Lambda)\sigma^2 = d^{-1\mathsf T}(\Lambda)$, with $\varepsilon = i\sigma^2$, eq. (9.360)) · part 3: Woit, §4.6.2 (for unitary matrices the dual representation is the conjugate) and §41.1 (the explicit conjugation by $\varepsilon$) · $\Lambda^2$: S. Wadsley, Representation Theory, Lecture 12 (exercise: $\Lambda^{\dim V}V$ is $\det\rho$)*
 
-^thm-cb-4-15
+^thm-cb-6-15
 
 > [!proof]- Proof
 > *Woit's and the 513 notes' computation for part 1; parts 2–3 follow from it as in Yu §9.6.1 and Woit §4.6.2.*
@@ -393,7 +393,7 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 >
 > **2. Part 1: $SL(2, \mathbb C) = Sp(2, \mathbb C)$.** Since $\varepsilon \ne 0$, $A^{\mathsf T}\varepsilon A = \varepsilon$ iff $\det A = 1$.
 >
-> **3. Part 1: $\Lambda^2\mathbb C^2$.** $\dim\Lambda^2\mathbb C^2 = \binom22 = 1$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-13|Theorem §CB.4.13]], 1), spanned by $e_1\otimes e_2 - e_2\otimes e_1$. With $Ae_1 = \alpha e_1 + \gamma e_2$, $Ae_2 = \beta e_1 + \delta e_2$, expand all eight terms:
+> **3. Part 1: $\Lambda^2\mathbb C^2$.** $\dim\Lambda^2\mathbb C^2 = \binom22 = 1$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-13|Theorem §CB.6.13]], 1), spanned by $e_1\otimes e_2 - e_2\otimes e_1$. With $Ae_1 = \alpha e_1 + \gamma e_2$, $Ae_2 = \beta e_1 + \delta e_2$, expand all eight terms:
 >
 > $$
 > Ae_1\otimes Ae_2 - Ae_2\otimes Ae_1 = (\alpha\beta - \beta\alpha)\,e_1\otimes e_1 + (\alpha\delta - \beta\gamma)\,e_1\otimes e_2 + (\gamma\beta - \delta\alpha)\,e_2\otimes e_1 + (\gamma\delta - \delta\gamma)\,e_2\otimes e_2 = (\det A)\,(e_1\otimes e_2 - e_2\otimes e_1) .
@@ -407,32 +407,32 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 > \varepsilon A\varepsilon^{-1} = (A^{\mathsf T})^{-1} = (A^{-1})^{\mathsf T} .
 > $$
 >
-> The dual representation has matrix $(A^{-1})^{\mathsf T}$ in the dual basis ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]]); the map with matrix $\varepsilon$ from $\mathbb C^2$ to $(\mathbb C^2)'$ therefore satisfies $(A^{-1})^{\mathsf T}\varepsilon = \varepsilon A$: it is an invertible intertwiner ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-1|Def. §CB.3.1]]). As a functional, the column $\varepsilon u$ is $v \mapsto (\varepsilon u)^{\mathsf T}v = -u^{\mathsf T}\varepsilon v = \varepsilon(v, u)$, the form with $u$ in the second slot. This is Yu's (9.354), $\sigma^2d\,\sigma^2 = d^{-1\mathsf T}$, with $\varepsilon = i\sigma^2$ and $\varepsilon^{-1} = -\varepsilon = -i\sigma^2$.
+> The dual representation has matrix $(A^{-1})^{\mathsf T}$ in the dual basis ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]]); the map with matrix $\varepsilon$ from $\mathbb C^2$ to $(\mathbb C^2)'$ therefore satisfies $(A^{-1})^{\mathsf T}\varepsilon = \varepsilon A$: it is an invertible intertwiner ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-1|Def. §CB.5.1]]). As a functional, the column $\varepsilon u$ is $v \mapsto (\varepsilon u)^{\mathsf T}v = -u^{\mathsf T}\varepsilon v = \varepsilon(v, u)$, the form with $u$ in the second slot. This is Yu's (9.354), $\sigma^2d\,\sigma^2 = d^{-1\mathsf T}$, with $\varepsilon = i\sigma^2$ and $\varepsilon^{-1} = -\varepsilon = -i\sigma^2$.
 >
-> **5. Part 3.** For $A \in SU(2)$, $A^{-1} = A^\dagger = \bar A^{\mathsf T}$, so $(A^{-1})^{\mathsf T} = \bar A$ (Woit §4.6.2). With part 2, $\bar A = \varepsilon A\varepsilon^{-1}$: $\varepsilon$ is an equivalence from the defining representation to its conjugate ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]]; in a basis the conjugate representation has the matrices $\bar A$) as well as to its dual. Woit §41.1 checks it on $A = \begin{pmatrix} \alpha & \beta \\ -\bar\beta & \bar\alpha\end{pmatrix}$: $\varepsilon A\varepsilon^{-1} = \begin{pmatrix} \bar\alpha & \bar\beta \\ -\beta & \alpha\end{pmatrix} = \bar A$.
+> **5. Part 3.** For $A \in SU(2)$, $A^{-1} = A^\dagger = \bar A^{\mathsf T}$, so $(A^{-1})^{\mathsf T} = \bar A$ (Woit §4.6.2). With part 2, $\bar A = \varepsilon A\varepsilon^{-1}$: $\varepsilon$ is an equivalence from the defining representation to its conjugate ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]]; in a basis the conjugate representation has the matrices $\bar A$) as well as to its dual. Woit §41.1 checks it on $A = \begin{pmatrix} \alpha & \beta \\ -\bar\beta & \bar\alpha\end{pmatrix}$: $\varepsilon A\varepsilon^{-1} = \begin{pmatrix} \bar\alpha & \bar\beta \\ -\beta & \alpha\end{pmatrix} = \bar A$.
 >
 > **What the proof shows**
 > - ⚑ By-product: the invariant pairing of two spinors is antisymmetric, $\varepsilon(u, v) = -\varepsilon(v, u)$, so $\varepsilon(u, u) = 0$ for commuting components; this is why the invariant $\eta^a\eta_a$ of a single Weyl spinor vanishes unless its components anticommute (Yu §9.6.1, eqs. (9.371)–(9.372); the user's PHY 513 notes, Ch. 8 §8.2).
 > - Unit determinant is exactly invariance of $\varepsilon$: in two dimensions "special linear" and "symplectic" coincide.
-> - Part 3 fails for $SL(2, \mathbb C)$: there $(A^{-1})^{\mathsf T} \ne \bar A$ in general, and the conjugate is a genuinely different representation → Theorem §CB.4.16.
+> - Part 3 fails for $SL(2, \mathbb C)$: there $(A^{-1})^{\mathsf T} \ne \bar A$ in general, and the conjugate is a genuinely different representation → Theorem §CB.6.16.
 
-^pf-cb-4-15
+^pf-cb-6-15
 
-*Uses:* [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-13|Theorem §CB.4.13]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-1|Def. §CB.3.1]]
+*Uses:* [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-13|Theorem §CB.6.13]], [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-5-1|Def. §CB.5.1]]
 
-> [!theorem] Theorem §CB.4.16: The Four Two-Dimensional Representations of SL(2,ℂ)
-> On $\mathbb C^2$ the matrices $A$, $(A^{-1})^{\mathsf T}$, $\bar A$ and $(A^\dagger)^{-1}$ ($A \in SL(2, \mathbb C)$) give the defining representation, its dual, its conjugate and the dual of the conjugate. They fall into exactly two equivalence classes: $A \cong (A^{-1})^{\mathsf T}$ and $\bar A \cong (A^\dagger)^{-1}$, both via $\varepsilon$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-15|Theorem §CB.4.15]]); $A \not\cong \bar A$, since $\operatorname{tr}A \ne \operatorname{tr}\bar A$ for $A = \operatorname{diag}(2i, -\frac i2)$. In index language: undotted indices carry $A$, dotted indices carry $\bar A$, and $\varepsilon$ raises and lowers each kind without mixing them.
+> [!theorem] Theorem §CB.6.16: The Four Two-Dimensional Representations of SL(2,ℂ)
+> On $\mathbb C^2$ the matrices $A$, $(A^{-1})^{\mathsf T}$, $\bar A$ and $(A^\dagger)^{-1}$ ($A \in SL(2, \mathbb C)$) give the defining representation, its dual, its conjugate and the dual of the conjugate. They fall into exactly two equivalence classes: $A \cong (A^{-1})^{\mathsf T}$ and $\bar A \cong (A^\dagger)^{-1}$, both via $\varepsilon$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-15|Theorem §CB.6.15]]); $A \not\cong \bar A$, since $\operatorname{tr}A \ne \operatorname{tr}\bar A$ for $A = \operatorname{diag}(2i, -\frac i2)$. In index language: undotted indices carry $A$, dotted indices carry $\bar A$, and $\varepsilon$ raises and lowers each kind without mixing them.
 >
 > *Source: Yu Zhao-Huan, 量子场论讲义, §9.6.1, eqs. (9.354)–(9.356), Fig. 9.1 (the four representations and the two equivalences), eqs. (9.358), (9.363)–(9.364), (9.376), (9.380)–(9.381) (index placement) · P. Woit, Quantum Theory, Groups and Representations, §41.1 (the four representations $S_L$, $S_L^{\ast}$, $S_R$, $S_R^{\ast}$; conjugation cannot turn all $SL(2, \mathbb C)$ matrices into their conjugates because it preserves eigenvalues) · H. K. Dreiner, H. E. Haber, S. P. Martin, Two-component spinor techniques…, Phys. Rept. 494 (2010), §2.1, eqs. (2.18)–(2.22), (2.103)–(2.104) (arXiv:0812.1594) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The two halves are irreducible, inequivalent, and related by conjugation")*
 
-^thm-cb-4-16
+^thm-cb-6-16
 
 > [!proof]- Proof
 > *Yu's two equivalences (§9.6.1) and Woit's eigenvalue argument (§41.1), with the trace as the invariant.*
 >
-> **1. The four are representations, and which is which.** $A \mapsto (A^{-1})^{\mathsf T}$ is the dual ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]]); $A \mapsto \bar A$ is the conjugate ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]]; entrywise conjugation respects products, $\overline{AB} = \bar A\bar B$). The dual of the conjugate has matrix $(\bar A^{-1})^{\mathsf T} = \bigl(\overline{A^{-1}}\bigr)^{\mathsf T} = (A^{-1})^\dagger = (A^\dagger)^{-1}$.
+> **1. The four are representations, and which is which.** $A \mapsto (A^{-1})^{\mathsf T}$ is the dual ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]]); $A \mapsto \bar A$ is the conjugate ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]]; entrywise conjugation respects products, $\overline{AB} = \bar A\bar B$). The dual of the conjugate has matrix $(\bar A^{-1})^{\mathsf T} = \bigl(\overline{A^{-1}}\bigr)^{\mathsf T} = (A^{-1})^\dagger = (A^\dagger)^{-1}$.
 >
-> **2. First equivalence.** $(A^{-1})^{\mathsf T} = \varepsilon A\varepsilon^{-1}$ for all $A \in SL(2, \mathbb C)$ ([[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-15|Theorem §CB.4.15]], 2): the defining representation is equivalent to its dual (Yu (9.354)).
+> **2. First equivalence.** $(A^{-1})^{\mathsf T} = \varepsilon A\varepsilon^{-1}$ for all $A \in SL(2, \mathbb C)$ ([[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-15|Theorem §CB.6.15]], 2): the defining representation is equivalent to its dual (Yu (9.354)).
 >
 > **3. Second equivalence.** $\det\bar A = \overline{\det A} = 1$, so $\bar A \in SL(2, \mathbb C)$ and step 2 applies to it: $(\bar A^{-1})^{\mathsf T} = \varepsilon\bar A\varepsilon^{-1}$, i.e. $(A^\dagger)^{-1} = \varepsilon\bar A\varepsilon^{-1}$ by step 1. The conjugate is equivalent to its dual, again via $\varepsilon$ ($\varepsilon$ is real, so it is its own conjugate; Yu (9.356)).
 >
@@ -444,14 +444,14 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 >
 > **What the proof shows**
 > - ⚑ By-product: $SL(2, \mathbb C)$ has two inequivalent two-dimensional representations, $(\frac12, 0)$ and $(0, \frac12)$, each self-dual via $\varepsilon$ and conjugate to the other; a Lorentz-invariant contraction pairs undotted with undotted or dotted with dotted, never mixed → [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|Theorem §C5a.5.5]].
-> - For the subgroup $SU(2)$ all four coincide up to equivalence (Theorem §CB.4.15, 3): the distinction between dotted and undotted indices is invisible under rotations and appears only with boosts. Consistently, the trace test of step 4 is blind on $SU(2)$, where $\operatorname{tr}A = \alpha + \bar\alpha$ is real.
+> - For the subgroup $SU(2)$ all four coincide up to equivalence (Theorem §CB.6.15, 3): the distinction between dotted and undotted indices is invisible under rotations and appears only with boosts. Consistently, the trace test of step 4 is blind on $SU(2)$, where $\operatorname{tr}A = \alpha + \bar\alpha$ is real.
 > - Conventions differ between sources (Dreiner–Haber–Martin raise with $\varepsilon^{12} = +1$ like Yu but put the lowered index on $\psi_\alpha$ transforming by $M$, as here); the equivalence classes do not depend on them.
 
-^pf-cb-4-16
+^pf-cb-6-16
 
-*Uses:* [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-6|Def. §CB.4.6]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-4-7|Def. §CB.4.7]], [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-15|Theorem §CB.4.15]]
+*Uses:* [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-6|Def. §CB.6.6]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-6-7|Def. §CB.6.7]], [[§CB.6 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-6-15|Theorem §CB.6.15]]
 
-The course's dotted and undotted indices and the invariant pairings, in [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]], are the component form of Theorems §CB.4.15–§CB.4.16:
+The course's dotted and undotted indices and the invariant pairings, in [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]], are the component form of Theorems §CB.6.15–§CB.6.16:
 
 ![[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-3]]
 
@@ -460,6 +460,6 @@ The course's dotted and undotted indices and the invariant pairings, in [[§C5a.
 ![[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5]]
 
 > [!remark]- Connections
-> - Theorem §CB.4.8 is why complex conjugation and parity both exchange $(j_+, j_-) \leftrightarrow (j_-, j_+)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|Theorem §C3.3.8]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]]): conjugation acts on the algebra through $c$, parity through an automorphism; both swap $\mathfrak a_+$ and $\mathfrak a_-$.
-> - Theorem §CB.4.13, 3 with $A = S^+$, $B = S^-$ is the decomposition of two-forms into self-dual and anti-self-dual parts (§CB.12; [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-7|Theorem §C3.4.7]]).
-> - **Used in**: Definitions §CB.4.1–Theorem §CB.4.3 — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-5|Theorem §C3.4.5]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-6|Theorem §C3.4.6]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|Theorem §C3.6.8]]; Theorem §CB.4.5 — [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-1|Def. §C3.3.1]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]]; Definitions §CB.4.6–Theorem §CB.4.8 — [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-5|Def. §C5a.1.5]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-3|Def. §C5a.5.3]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]; Theorem §CB.4.9 — [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]]; Theorem §CB.4.13 — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-6|Theorem §C3.4.6]]; Theorem §CB.4.14 — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]]; Theorems §CB.4.15–§CB.4.16 — [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|Theorem §C5a.5.5]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-9|Theorem §C5a.4.9]].
+> - Theorem §CB.6.8 is why complex conjugation and parity both exchange $(j_+, j_-) \leftrightarrow (j_-, j_+)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-8|Theorem §C3.3.8]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]]): conjugation acts on the algebra through $c$, parity through an automorphism; both swap $\mathfrak a_+$ and $\mathfrak a_-$.
+> - Theorem §CB.6.13, 3 with $A = S^+$, $B = S^-$ is the decomposition of two-forms into self-dual and anti-self-dual parts (§CB.16; [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-7|Theorem §C3.4.7]]).
+> - **Used in**: Definitions §CB.6.1–Theorem §CB.6.3 — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-5|Theorem §C3.4.5]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-6|Theorem §C3.4.6]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|Theorem §C3.6.8]]; Theorem §CB.6.5 — [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-1|Def. §C3.3.1]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-1|Theorem §C3.3.1]]; Definitions §CB.6.6–Theorem §CB.6.8 — [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-5|Def. §C5a.1.5]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-3|Def. §C5a.5.3]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]; Theorem §CB.6.9 — [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]]; Theorem §CB.6.13 — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-6|Theorem §C3.4.6]]; Theorem §CB.6.14 — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]]; Theorems §CB.6.15–§CB.6.16 — [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|Theorem §C5a.5.5]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-9|Theorem §C5a.4.9]].
