@@ -105,10 +105,10 @@ What the image of an immersion looks like — locally a submanifold, globally no
 
 ## Images of Immersions
 
-*Lecture 13, continuing [[§37 Immersions#Immersions|Immersions]]. What the image of an immersion looks like. These results use submanifolds ([[§35 Submanifolds|§35]]).*
+*Lecture 13, continuing [[§37 Immersions#Immersions|Immersions]]. What the image of an immersion looks like. These results use submanifolds ([[§35 Regular Submanifolds|§35]]).*
 
 > [!theorem] Corollary §37.2: The Local Image of an Immersion
-> In the charts of [[§37 Immersions#^thm-37-1|Theorem §37.1]], $F|_U$ is injective and $F(U)$ is a submanifold of $N$ of codimension $n - m$.
+> In the charts of [[§37 Immersions#^thm-37-1|Theorem §37.1]], $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n - m$.
 
 ^cor-37-2
 
@@ -119,11 +119,11 @@ What the image of an immersion looks like — locally a submanifold, globally no
 > V' = \big\{\, q \in V : \big(y^1(q), \ldots, y^m(q)\big) \in \varphi(U) \,\big\},
 > $$
 >
-> open in $N$ because $\varphi(U)$ is open, and containing $F(U)$ because $\psi(F(u)) = (\varphi(u), \vec 0)$. We claim $F(U) = \{ q \in V' : y^{m+1}(q) = \cdots = y^n(q) = 0 \}$. The inclusion $\subseteq$ is clear. Conversely, if $q \in V'$ has $\psi(q) = (r, \vec 0)$ with $r \in \varphi(U)$, then $\psi(q) = \tilde F(r) = \psi\big(F(\varphi^{-1}(r))\big)$, so $q = F(\varphi^{-1}(r))$ because $\psi$ is injective. So $(V', \psi|_{V'})$ is an adapted chart ([[§35 Submanifolds#^def-35-2|Definition §35.2]]) at every point of $F(U)$, and $F(U)$ is a submanifold of codimension $n - m$. No restriction of $U$ was needed: the worry was that $\psi(V) \cap (\mathbb{R}^m \times \{\vec 0\})$ might contain points not of the form $\tilde F(r)$ with $r \in \varphi(U)$, and passing to $V'$ removes exactly those.
+> open in $N$ because $\varphi(U)$ is open, and containing $F(U)$ because $\psi(F(u)) = (\varphi(u), \vec 0)$. We claim $F(U) = \{ q \in V' : y^{m+1}(q) = \cdots = y^n(q) = 0 \}$. The inclusion $\subseteq$ is clear. Conversely, if $q \in V'$ has $\psi(q) = (r, \vec 0)$ with $r \in \varphi(U)$, then $\psi(q) = \tilde F(r) = \psi\big(F(\varphi^{-1}(r))\big)$, so $q = F(\varphi^{-1}(r))$ because $\psi$ is injective. So $(V', \psi|_{V'})$ is an adapted chart ([[§35 Regular Submanifolds#^def-35-2|Definition §35.2]]) at every point of $F(U)$, and $F(U)$ is a submanifold of codimension $n - m$. No restriction of $U$ was needed: the worry was that $\psi(V) \cap (\mathbb{R}^m \times \{\vec 0\})$ might contain points not of the form $\tilde F(r)$ with $r \in \varphi(U)$, and passing to $V'$ removes exactly those.
 
 ^pf-37-2
 
-*Uses:* [[§37 Immersions#^thm-37-1|§37.1]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
+*Uses:* [[§37 Immersions#^thm-37-1|§37.1]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§35 Regular Submanifolds#^def-35-2|Def. §35.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
 
 > [!remark]- Connections
 > - The global version needs a topological condition: [[§37 Immersions#^rem-37-1|Remark: Embeddings — Next Time]].
@@ -141,7 +141,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 
 ^pf-ex-37-1
 
-*Uses:* [[§37 Immersions#^def-37-1|Def. §37.1]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]]
+*Uses:* [[§37 Immersions#^def-37-1|Def. §37.1]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]]
 
 ![[m591-18-2.svg]]
 *The nodal cubic. The parameter values $t = -1$ and $t = 1$ both land on the origin, where the two branches cross; the arrows show the curve continuing, its domain being all of $\mathbb{R}$. A small disc around the crossing meets the image in an X, which is not a piece of a line.*
@@ -165,6 +165,6 @@ What the image of an immersion looks like — locally a submanifold, globally no
 > - The image of Lee's figure-eight, as a topological space, is the wedge of two circles: [[Figure eight|590 Figure eight]].
 
 > [!remark] Remark: Embeddings — Next Time
-> To make the image of an [[§37 Immersions#^def-37-1|immersion]] a [[§35 Submanifolds#^def-35-1|submanifold]], “you have to add a topological condition”: an *[[§38 Embeddings#^def-38-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§38 Embeddings#^thm-38-1|Theorem §38.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§38 Embeddings|§38]].
+> To make the image of an [[§37 Immersions#^def-37-1|immersion]] a [[§35 Regular Submanifolds#^def-35-1|submanifold]], “you have to add a topological condition”: an *[[§38 Embeddings#^def-38-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§38 Embeddings#^thm-38-1|Theorem §38.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§38 Embeddings|§38]].
 
 ^rem-37-1

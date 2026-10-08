@@ -5,9 +5,9 @@ chapter: 5
 section: 34
 tags: [differentiable-manifolds, math591]
 ---
-← [[§33 Local Diffeomorphisms]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§35 Submanifolds]] →
+← [[§33 Local Diffeomorphisms]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§35 Regular Submanifolds]] →
 
-*Stage: maps — Maps with surjective differentials: locally projections, by the normal form — the tool that makes the regular value theorem work on any manifold ([[§35 Submanifolds|§35]]).*
+*Stage: maps — Maps with surjective differentials: locally projections, by the normal form — the tool that makes the regular value theorem work on any manifold ([[§35 Regular Submanifolds|§35]]).*
 
 > [!definition] Definition §34.1: Submersion
 > Let $F : M \to N$ be smooth and $p \in M$. $F$ is a **submersion at $p$** if $F_{\ast p}$ is onto, and a **submersion** if it is a submersion at every point.
@@ -156,7 +156,7 @@ This is the definition of critical point Uribe sent to the class by email, and i
 ^thm-34-4
 
 > [!remark]- Connections
-> - The counterpart for immersions: [[§37 Immersions#^thm-37-1|§37.1]]. The main application: the regular value theorem for manifolds, [[§35 Submanifolds#^thm-35-7|§35.7]].
+> - The counterpart for immersions: [[§37 Immersions#^thm-37-1|§37.1]]. The main application: the regular value theorem for manifolds, [[§35 Regular Submanifolds#^thm-35-7|§35.7]].
 
 Stated in Lecture 10 and proved in Lecture 11, below. The inequality $n \le m$ needs no theorem — a surjective linear map cannot raise dimension — but the normal form does: it says that every submersion, in suitable coordinates, *is* a projection.
 

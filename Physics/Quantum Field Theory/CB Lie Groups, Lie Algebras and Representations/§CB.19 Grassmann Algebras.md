@@ -34,7 +34,7 @@ What are anticommuting "numbers", how does one differentiate and integrate with 
 
 > [!proof]- Proof (to be filled)
 > *To be filled (deferred with C11).*
-> <!-- searched: Woit qmbook §30.1 (basis stated, no proof); Srednicki §44 (expansion eq. (44.10), no proof); the CB.4/CB.7 basis theorems are themselves placeholders — deferred with C11 -->
+> <!-- searched: Woit qmbook §30.1 (basis stated, no proof); Srednicki §44 (expansion eq. (44.10), no proof); the CB.6/CB.10 basis theorems (old CB.4/CB.7) are themselves placeholders — deferred with C11 -->
 
 ^pf-cb-19-2
 

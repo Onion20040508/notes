@@ -7,14 +7,14 @@ tags: [chapter, differentiable-manifolds]
 # 5 Maps of Constant Rank and Fibrations
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (31), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (46), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (55)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (32), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (50), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (57)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (7), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (3)
 **Builds on (other subjects):** [[Linear Algebra]] (15), [[Topology]] (44), [[Multivariable Analysis]] (6)
 
 ## Sections
 - [[§33 Local Diffeomorphisms]]
 - [[§34 Submersions]]
-- [[§35 Submanifolds]]
+- [[§35 Regular Submanifolds]]
 - [[§36 Fibrations]]
 - [[§37 Immersions]]
 - [[§38 Embeddings]]
@@ -34,7 +34,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§33 Local Diffeomorphisms#^thm-33-1|Theorem §33.1: Inverse Function Theorem]]: 62 later results
-- [[Local Diffeomorphism Criterion|Theorem §33.2: Local Diffeomorphisms Are Detected by the Differential]]: 27 later results
-- [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]: 26 later results
-- [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]: 25 later results
+- [[§33 Local Diffeomorphisms#^thm-33-1|Theorem §33.1: Inverse Function Theorem]]: 63 later results
+- [[Local Diffeomorphism Criterion|Theorem §33.2: Local Diffeomorphisms Are Detected by the Differential]]: 28 later results
+- [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]: 27 later results
+- [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]: 26 later results

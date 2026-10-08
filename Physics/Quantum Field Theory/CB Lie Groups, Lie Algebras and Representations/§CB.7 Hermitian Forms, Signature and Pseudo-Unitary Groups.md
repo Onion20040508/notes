@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 Which structure does $\bar\psi = \psi^\dagger\gamma^0$ add to spinor space, and why is it fixed by the Dirac matrices? An inner product ([[§20 Inner Products and Norms#^ladr-6-2|LADR Def. 6.2]]) is a positive-definite Hermitian form; finite-dimensional representations of the Lorentz group admit none that is invariant ([[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-16|Theorem §CB.5.16]]), but they can preserve an *indefinite* one. This section states the layer of Hermitian forms the spinor chapter uses — matrices and changes of basis, Sylvester's law of inertia, the adjoint for an indefinite form, the pseudo-unitary groups $U(p,q)$ — and the uniqueness theorem: on an irreducible representation, an invariant Hermitian form is unique up to a real factor. It builds on [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.5]] (Schur).
 
-<!-- MOVE rows (CB-INVENTORY): Def §C5a.2.1, Thm §C5a.2.1 and Def §C5a.2.2 are embedded below; they are to be moved here in batch 4 (SPEC-CB: "CB.4–CB.6 (+ §C5a.2 move)"). -->
+<!-- MOVE rows (CB-INVENTORY): Def §C5a.2.1, Thm §C5a.2.1 and Def §C5a.2.2 are embedded below; they are to be moved here in batch 4 (SPEC-CB: "CB.6–CB.8 (+ §C5a.2 move)"; old CB.4–CB.6). -->
 
 ## Hermitian forms and their matrices
 

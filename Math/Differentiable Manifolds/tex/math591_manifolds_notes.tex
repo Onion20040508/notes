@@ -257,7 +257,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[->, thick, gray!70, ] (T2) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (M);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-0.95) {Ch.~1};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-3.8) {Ch.~2};
-\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (SM) at (0,-15.6) {\textbf{Submanifolds} \ref*{sec:submanifolds}\\ regular value theorem for manifolds};
+\node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (SM) at (0,-15.6) {\textbf{Regular submanifolds} \ref*{sec:submanifolds}\\ regular value theorem for manifolds};
 \node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (BU) at (6.9,-15.6) {\textbf{Fibrations} \ref*{sec:fibrations}\\ fibrations, local sections};
 \node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (BF) at (4.6,-20.0) {\textbf{Bundles} \ref*{sec:recap-tangent}--\ref*{sec:d-operator}\\ recaps; $TM$, $T^*M$; one-forms, $d$};
 \draw[->, thick, gray!70] (BU) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {sections} (BF);
@@ -7392,7 +7392,7 @@ If $M$ is compact and nonempty and $k \ge 1$, there is no submersion $M \to \mat
 
 The submitted solution also noted the edge cases: for $k = 0$ the constant map $M \to \mathbb{R}^0$ is a submersion, since every differential maps onto the zero space; and for $M = \emptyset$ the empty map is vacuously one. In particular, a compact manifold carries no nonconstant submersion to $\mathbb{R}$ --- the maximum of any smooth function $f : M \to \mathbb{R}$ is a critical point.
 
-\section{Submanifolds}\label{sec:submanifolds-fibrations}\label{sec:submanifolds}
+\section{Regular Submanifolds}\label{sec:submanifolds-fibrations}\label{sec:submanifolds}
 
 \roadmark{Stage: submanifolds}{Subsets of a manifold that are locally coordinate slices --- the equations thread, completed.}
 
@@ -7402,16 +7402,16 @@ The submitted solution also noted the edge cases: for $k = 0$ the constant map $
 % Lecture 12 (Mon Sep 28, 2026)
 % ============================================================
 
-\subsection{Submanifolds}\label{sub:submanifolds}
+\subsection{Regular Submanifolds}\label{sub:submanifolds}
 
 \textit{Lecture 12 (Mon Sep 28). ``I know we're in the middle of discussing submersions and fibrations, but we need the notion of submanifold. So let's pause to discuss that. It's not difficult.'' The local model is a lower-dimensional Euclidean space inside a higher-dimensional one: $\mathbb{R}^{m-k} \subseteq \mathbb{R}^m$ as the points whose last $k$ coordinates vanish, $x \mapsto (x, \vec 0)$.}
 
-\begin{defbox}[Submanifold]\deflabel{def:submanifold}
-Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a \textbf{submanifold of $M$ of codimension $k$} if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
+\begin{defbox}[Regular Submanifold]\deflabel{def:submanifold}
+Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a \textbf{regular submanifold of $M$ of codimension $k$} if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
 \[
 U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
 \]
-These are sometimes called \textbf{regular} or \textbf{embedded} submanifolds, as opposed to the immersed submanifolds still to come.
+Regular submanifolds are also called \textbf{embedded} submanifolds, as opposed to the immersed submanifolds of Definition~\ref{def:immersed-submanifold}. In these notes, ``submanifold'' without qualification means a regular submanifold.
 \leeref{Theorem 5.8}
 \end{defbox}
 
@@ -7433,7 +7433,7 @@ Then there is an adapted chart with the same domain $U$. That is: (1) the value 
 \end{proof}
 
 \begin{propbox}[The Induced Smooth Structure]\thmlabel{prop:submanifold-structure}
-Let $S \subseteq M$ be a submanifold of codimension $k$. For each adapted chart $(U, \varphi = (x_a, x_b))$ put
+Let $S \subseteq M$ be a regular submanifold of codimension $k$. For each adapted chart $(U, \varphi = (x_a, x_b))$ put
 \[
 \varphi_S = x_a|_{U \cap S} : U \cap S \longrightarrow \mathbb{R}^{m-k}.
 \]
@@ -7479,8 +7479,8 @@ An adapted chart ($m = 2$, $k = 1$). The chart $\varphi$ straightens $U \cap S$ 
 
 \textbf{Extending charts.} A student asked whether every chart of $S$ extends to an adapted chart of $M$. Uribe: ``The answer is yes'' --- since everything reduces to the local Euclidean picture, the $m - k$ functions of a chart of $S$ extend to a neighbourhood in $M$. This is stated, not proved, here; likewise his remark that smooth functions on $S$ extend to smooth functions near $S$.
 
-\begin{lembox}[Smooth Maps and Submanifolds]\thmlabel{lem:maps-into-submanifold}
-Let $S \subseteq M$ be a submanifold, with its induced structure, and $\iota : S \to M$ the inclusion.
+\begin{lembox}[Smooth Maps and Regular Submanifolds]\thmlabel{lem:maps-into-submanifold}
+Let $S \subseteq M$ be a regular submanifold, with its induced structure, and $\iota : S \to M$ the inclusion.
 \begin{enumerate}
     \item $\iota$ is smooth; in an adapted chart and its induced chart, its coordinate representation is $j(r) = (r, \vec 0)$.
     \item If $G : X \to M$ is smooth and $G(X) \subseteq S$, then $G$ is smooth as a map into $S$.
@@ -7506,8 +7506,8 @@ X \arrow[r, dashed, "G"] \arrow[dr, "G"'] & S \arrow[d, hook, "\iota"] \\
 
 Left, (1): in an adapted chart and its induced chart the inclusion is $j(r) = (r, \vec 0)$. Right, (2): a smooth map into $M$ whose values lie in $S$ factors through $S$, and the factor --- dashed --- is smooth.
 
-\begin{propbox}[Tangent Spaces of a Submanifold]\thmlabel{prop:submanifold-tangent}
-Let $S \subseteq M$ be a submanifold of codimension $k$ and $p \in S$. Then $\iota_{*p} : T_pS \to T_pM$ is injective. In an adapted chart $(x^1, \ldots, x^m)$ at $p$, writing $\partial/\partial x^i|^S_p$ for the coordinate derivations of the induced chart $(x^1, \ldots, x^{m-k})$ of $S$,
+\begin{propbox}[Tangent Spaces of a Regular Submanifold]\thmlabel{prop:submanifold-tangent}
+Let $S \subseteq M$ be a regular submanifold of codimension $k$ and $p \in S$. Then $\iota_{*p} : T_pS \to T_pM$ is injective. In an adapted chart $(x^1, \ldots, x^m)$ at $p$, writing $\partial/\partial x^i|^S_p$ for the coordinate derivations of the induced chart $(x^1, \ldots, x^{m-k})$ of $S$,
 \[
 \iota_{*p}\Big(\frac{\partial}{\partial x^i}\Big|^S_p\Big) = \frac{\partial}{\partial x^i}\Big|_p \quad (i \le m - k), \qquad \iota_{*p}(T_pS) = \Span\Big\{\frac{\partial}{\partial x^1}\Big|_p, \ldots, \frac{\partial}{\partial x^{m-k}}\Big|_p\Big\}.
 \]
@@ -7522,7 +7522,7 @@ Equivalently, by curves: for a smooth curve $\gamma$ in $S$ with $\gamma(0) = p$
 So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) \subseteq T_pM$, the ``intrinsic tangent space'' inside the ambient one --- ``for some reason this class, and maybe all abstract classes, keep identifying things with each other.'' The second description is the one from Assignment~3, Problem~2: think of a curve in $S$ composed with the inclusion as a curve in $M$, and take its velocity there.
 
 \begin{defbox}[Conormal Space]\deflabel{def:conormal}
-Let $S \subseteq M$ be a submanifold and $p \in S$. The \textbf{conormal space} of $S$ at $p$ is
+Let $S \subseteq M$ be a regular submanifold and $p \in S$. The \textbf{conormal space} of $S$ at $p$ is
 \[
 N_pS = \{\, \xi \in T_p^*M : \xi(v) = 0 \text{ for all } v \in \iota_{*p}(T_pS) \,\},
 \]
@@ -7570,17 +7570,17 @@ In an adapted chart at $p$, $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$. I
 
 How to draw a conormal covector. Without a metric, a covector $\xi$ on $T_pM$ is drawn by its level lines $\{\xi = \text{const}\}$. For $\xi \in N_pS$ the level line $\xi = 0$ contains $T_pS$, so all of its level lines run \emph{parallel} to $T_pS$ (left). Only once an inner product is chosen does $\xi$ become a vector, perpendicular to its level lines, and $N_pS$ becomes the normal line $(T_pS)^\perp$ (right). The board, and page~33 of the handwritten notes, draw $N_pS$ as a line perpendicular to $T_pS$: that is the right-hand, metric picture.
 
-\subsection{Submanifolds of Euclidean Space}\label{sub:submanifolds-euclidean}
+\subsection{Regular Submanifolds of Euclidean Space}\label{sub:submanifolds-euclidean}
 
 \textit{Not from lecture: the link back to the geometric stage.} Inside a Euclidean space, Section~\ref{sec:euclidean} described a manifold $X \subseteq \mathbb{R}^{n+k}$ near a point in three ways --- externally, by equations (Definition~\ref{def:ext-int}); internally, by a parametrization (Definition~\ref{def:internal-description}); and as a graph --- and Theorem~\ref{thm:ext-int} showed that they agree. Definition~\ref{def:submanifold} adds a fourth, the \emph{slice} description: a chart of the ambient space in which $X$ is a coordinate plane. The fourth agrees with the other three, so in $\mathbb{R}^{n+k}$ the submanifolds of codimension $k$ are exactly the manifolds of Section~\ref{sec:euclidean}, and Definition~\ref{def:submanifold} is their description made intrinsic to the ambient manifold.
 
-\begin{propbox}[Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description]\thmlabel{prop:submanifold-euclidean}
+\begin{propbox}[Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description]\thmlabel{prop:submanifold-euclidean}
 Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. The following are equivalent:
 \begin{enumerate}
     \item near $p$, $X$ is described externally (Definition~\ref{def:ext-int}) --- equivalently, internally or as a graph (Theorem~\ref{thm:ext-int});
     \item \emph{(slice)} there is a smooth chart $(U, \varphi = (x_a, x_b))$ of $\mathbb{R}^{n+k}$ with $p \in U$, $x_a$ its first $n$ and $x_b$ its last $k$ components, such that $U \cap X = \{\, q \in U : x_b(q) = \vec 0 \,\}$, that is, a chart adapted to $X$ (Definition~\ref{def:adapted-chart}).
 \end{enumerate}
-In particular $X$ is a submanifold of $\mathbb{R}^{n+k}$ of codimension $k$ (Definition~\ref{def:submanifold}) if and only if every point of $X$ has the descriptions of Section~\ref{sec:euclidean}.
+In particular $X$ is a regular submanifold of $\mathbb{R}^{n+k}$ of codimension $k$ (Definition~\ref{def:submanifold}) if and only if every point of $X$ has the descriptions of Section~\ref{sec:euclidean}.
 \end{propbox}
 
 \begin{proof}
@@ -7641,7 +7641,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 \textit{Lecture 12. ``And now we go back to submersions'' --- to ``[the] wonderful version of the regular value theorem.''}
 
 \begin{thmbox}[The Regular Value Theorem for Manifolds]\thmlabel{thm:rvt-manifolds}
-Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition~\ref{def:regular-critical-value}). Then $S = F^{-1}(q)$ is a submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
+Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition~\ref{def:regular-critical-value}). Then $S = F^{-1}(q)$ is a regular submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
 \[
 \iota_{*p}(T_pS) = \ker F_{*p} .
 \]
@@ -7670,8 +7670,8 @@ The proof in one square, as on the board. In the normal-form charts $\tilde F$ i
 
 \textbf{Transcription note.} Page~33 of the handwritten notes states the theorem for ``$q \in M$ a regular value''; the regular value lies in the target, $q \in N$.
 
-\begin{corbox}[Fibres of Submersions Are Submanifolds]\thmlabel{cor:submersion-fibres}
-If $F : M \to N$ is a submersion, then every fibre $F^{-1}(q)$, $q \in N$, is a submanifold of $M$ of codimension $n$ --- ``they could be empty, some of them.''
+\begin{corbox}[Fibres of Submersions Are Regular Submanifolds]\thmlabel{cor:submersion-fibres}
+If $F : M \to N$ is a submersion, then every fibre $F^{-1}(q)$, $q \in N$, is a regular submanifold of $M$ of codimension $n$ --- ``they could be empty, some of them.''
 \end{corbox}
 
 \begin{proof}
@@ -7699,7 +7699,7 @@ The general theorem contains the others: taking $M$ an open subset of Euclidean 
 \begin{propbox}[The Old and New Versions Agree]\thmlabel{prop:rvt-agree}
 Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, $c$ a regular value, and $S = F^{-1}(c)$.
 \begin{enumerate}
-    \item The smooth structure on $S$ given by the graph charts (Proposition~\ref{prop:level-set-smooth}) is the induced structure of $S$ as a submanifold of $W$ (Theorem~\ref{thm:rvt-manifolds}).
+    \item The smooth structure on $S$ given by the graph charts (Proposition~\ref{prop:level-set-smooth}) is the induced structure of $S$ as a regular submanifold of $W$ (Theorem~\ref{thm:rvt-manifolds}).
     \item In the setting of Theorem~\ref{thm:ambient-abstract}, under the identification $T_pW = \mathbb{R}^{n+k}$ of Corollary~\ref{cor:tangent-vs}, the subspace $\iota_{*p}(T_pS)$ is $T^{\geo}_pS = \ker F'(p)$.
 \end{enumerate}
 \end{propbox}
@@ -7811,7 +7811,7 @@ Tangent bundles, cotangent bundles and vector bundles are fibrations ``with addi
 \textit{Lecture 12. Uribe changed the notation once more ``to conform to more general usage'': the fibration is $\pi : E \to B$, with total space $E$, base $B$, and fibre $F$ --- the definition as before (Definition~\ref{def:fibration}), with $E$ in place of $M$.}
 
 \begin{propbox}[Fibres Are Copies of the Model Fibre]\thmlabel{prop:fibres-diffeo}
-Let $\pi : E \to B$ be a fibration with fibre $F$ and $b \in B$. Then $\pi^{-1}(b)$ is a submanifold of $E$, and for every $\alpha$ with $b \in U_\alpha$ the local trivialization $\phi_\alpha$ restricts to a diffeomorphism
+Let $\pi : E \to B$ be a fibration with fibre $F$ and $b \in B$. Then $\pi^{-1}(b)$ is a regular submanifold of $E$, and for every $\alpha$ with $b \in U_\alpha$ the local trivialization $\phi_\alpha$ restricts to a diffeomorphism
 \[
 \pi^{-1}(b) \longrightarrow \{b\} \times F \cong F .
 \]
@@ -8168,7 +8168,7 @@ What the image of an immersion looks like --- locally a submanifold, globally no
 \textit{Lecture 13, continuing \ref{sub:immersions}. What the image of an immersion looks like. These results use submanifolds (\ref{sub:submanifolds}).}
 
 \begin{corbox}[The Local Image of an Immersion]\thmlabel{cor:immersion-local-image}
-In the charts of Theorem~\ref{thm:immersion-normal-form}, $F|_U$ is injective and $F(U)$ is a submanifold of $N$ of codimension $n - m$.
+In the charts of Theorem~\ref{thm:immersion-normal-form}, $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n - m$.
 \end{corbox}
 
 \begin{proof}
@@ -8339,7 +8339,7 @@ The standard non-example is the \emph{irrational line on the torus}: for $\alpha
 
 The irrational line, drawn here with $\alpha = (\sqrt5 - 1)/2$. Left: nine turns of $F(\mathbb{R})$ in the square, whose opposite sides are identified; the orange piece is $F(U)$, and two other strands already cross the neighbourhood $V$. Right: a disc around $F(p)$ about $4.6$ times smaller, and the first 400 turns of the curve, which cross it in 34 strands. Shrinking further only takes more turns: every neighbourhood of $F(p)$ meets infinitely many strands.
 
-\begin{thmbox}[The Image of an Embedding Is a Submanifold]\thmlabel{thm:embedding-image}
+\begin{thmbox}[The Image of an Embedding Is a Regular Submanifold]\thmlabel{thm:embedding-image}
 If $F : M \to N$ is an embedding, with $\dim M = m$ and $\dim N = n$, then $F(M)$ is a regular submanifold of $N$ of codimension $n - m$.
 \leeref{Proposition 5.2}
 \end{thmbox}
@@ -8406,7 +8406,7 @@ Let $F : M \to N$ be an immersion such that $F : M \to F(M)$ is an open map, $F(
 \end{proof}
 
 \begin{corbox}[An Embedding Is a Diffeomorphism onto Its Image]\thmlabel{cor:embedding-diffeo}
-If $F : M \to N$ is an embedding, then $F : M \to F(M)$ is a diffeomorphism, $F(M)$ carrying its induced smooth structure as a submanifold.
+If $F : M \to N$ is an embedding, then $F : M \to F(M)$ is a diffeomorphism, $F(M)$ carrying its induced smooth structure as a regular submanifold.
 \end{corbox}
 
 \begin{proof}
@@ -8473,7 +8473,7 @@ Every regular submanifold of $N$ --- in particular the image of an embedding (Th
 \textit{(Not from lecture; filled in.)} At each point of the submanifold $S$ there is an adapted chart $(V, \psi)$, in which $S \cap V = \{x \in V : y^{m+1}(x) = \cdots = y^n(x) = 0\}$, a closed subset of $V$ as the zero set of continuous functions. For the equivalence in the definition: if $U$ is the union of these $V$, a point of $U \setminus S$ lies in some $V \setminus S$, which is open, so $U \setminus S$ is open and $S$ is closed in $U$.
 \end{proof}
 
-\begin{corbox}[Dense Submanifolds Are Open]\thmlabel{cor:dense-submanifold}
+\begin{corbox}[Dense Regular Submanifolds Are Open]\thmlabel{cor:dense-submanifold}
 A dense regular submanifold $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding $F : M \to N$ with $\dim M < \dim N$ is never dense.
 \end{corbox}
 
@@ -8530,6 +8530,53 @@ Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $
 
 \emph{Not an embedding: via density.} The image is dense and $\dim \mathbb{R} = 1 < 2 = \dim T^2$, so by Corollary~\ref{cor:dense-submanifold} it is not the image of an embedding.
 \end{proof}
+
+\subsection{Regular and Immersed Submanifolds}\label{sub:immersed-submanifolds}
+
+\textit{Not from lecture: the notion announced with Definition~\ref{def:submanifold}.} A regular submanifold carries the subspace topology, and its smooth structure is forced on it by the ambient manifold. The images of the injective immersions of \ref{sec:immersions} --- the figure-eight, the irrational line on the torus --- do not fit that definition, but each is a perfectly good manifold in the topology it inherits from its \emph{domain}. Allowing that topology gives the second kind of submanifold.
+
+\begin{defbox}[Immersed Submanifold]\deflabel{def:immersed-submanifold}
+Let $N$ be a smooth manifold. An \textbf{immersed submanifold} of $N$ is a subset $S \subseteq N$ together with a topology on $S$, in which it is a topological manifold, and a smooth structure on $S$, such that the inclusion $\iota : S \hookrightarrow N$ is a smooth immersion (Definition~\ref{def:immersion-lecture}). The topology need not be the subspace topology.
+\end{defbox}
+
+\begin{propbox}[Images of Injective Immersions]\thmlabel{prop:immersion-image}
+Let $F : M \to N$ be an injective immersion and $S = F(M)$. There is exactly one topology and smooth structure on $S$ for which $F : M \to S$ is a diffeomorphism, and with them $S$ is an immersed submanifold of $N$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture.)} Declare $U \subseteq S$ open if $F^{-1}(U)$ is open in $M$. Then $h = F^{-1} : S \to M$ is a bijection that matches open sets with open sets, a homeomorphism, so by Proposition~\ref{prop:transport-structure} $S$ is a topological manifold and carries exactly one smooth structure for which $h$, and hence $F = h^{-1}$, is a diffeomorphism (Definition~\ref{def:transported}). The topology is forced as well, since a diffeomorphism is a homeomorphism. The inclusion is $\iota = F \circ h$, a composite of smooth maps (Lemma~\ref{lem:composition-smooth}); by the chain rule (Theorem~\ref{prop:pushforward-functorial}) $\iota_{*q} = F_{*h(q)} \circ h_{*q}$, which is injective because $h_{*q}$ is an isomorphism (Corollary~\ref{lem:germs-diffeo}) and $F_{*h(q)}$ is injective. So $\iota$ is an immersion.
+\end{proof}
+
+\begin{propbox}[Every Regular Submanifold Is an Immersed Submanifold]\thmlabel{prop:regular-is-immersed}
+A regular submanifold $S \subseteq N$, with the subspace topology and its induced smooth structure (Proposition~\ref{prop:submanifold-structure}), is an immersed submanifold of $N$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture.)} The inclusion $\iota : S \hookrightarrow N$ is smooth (Lemma~\ref{lem:maps-into-submanifold}) and $\iota_{*p}$ is injective at every $p \in S$ (Proposition~\ref{prop:submanifold-tangent}).
+\end{proof}
+
+\begin{propbox}[When an Immersed Submanifold Is Regular]\thmlabel{prop:immersed-regular}
+Let $F : M \to N$ be an injective immersion, and give $S = F(M)$ the structure of Proposition~\ref{prop:immersion-image}. The following are equivalent:
+\begin{enumerate}
+    \item $F$ is an embedding (Definition~\ref{def:embedding});
+    \item the topology of $S$ is the subspace topology;
+    \item $S$ is a regular submanifold of $N$ whose induced smooth structure is the structure of Proposition~\ref{prop:immersion-image}.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture.)} (1)~$\Leftrightarrow$~(2): the topology of $S$ is the one for which $F : M \to S$ is a homeomorphism; it equals the subspace topology exactly when $F$ is a homeomorphism onto its image with the subspace topology, which, for an immersion, is the definition of an embedding. (1)~$\Rightarrow$~(3): $S$ is a regular submanifold by Theorem~\ref{thm:embedding-image}, and $F : M \to S$ is a diffeomorphism for its induced structure by Corollary~\ref{cor:embedding-diffeo}; by the uniqueness in Proposition~\ref{prop:immersion-image} the two structures coincide. (3)~$\Rightarrow$~(2): the induced structure of a regular submanifold has the subspace topology (Proposition~\ref{prop:submanifold-structure}).
+\end{proof}
+
+\begin{exbox}[Immersed but Not Regular]\exlabel{ex:immersed-not-regular}
+\begin{enumerate}
+    \item \emph{The figure-eight.} $\beta(t) = (\sin 2t, \sin t)$, $t \in (-\pi, \pi)$ (Lee, Example~4.19), is an injective immersion, so its image is an immersed submanifold of $\mathbb{R}^2$ (Proposition~\ref{prop:immersion-image}). It is not a regular submanifold: in the subspace topology every small neighbourhood of the origin in the image is an X --- the strand through $\beta(0)$ and the two ends returning as $t \to \pm\pi$ --- and removing the origin leaves four components, which cannot happen in a $1$-manifold (as in Example~\ref{ex:nodal-cubic}).
+    \item \emph{The irrational line.} The curve $\gamma$ of Proposition~\ref{prop:irrational-line} is an injective immersion, so its image is an immersed submanifold of $T^2$, a copy of $\mathbb{R}$ in its own topology. It is not a regular submanifold. The image is dense, so if it were regular it would be open in $T^2$ (Corollary~\ref{cor:dense-submanifold}). But a nonempty open subset of $T^2$ containing $(e^{2\pi i a}, w)$ meets the circle $\{e^{2\pi i a}\} \times S^1$ in an open arc, which is uncountable, while the image meets that circle only in the countable set $\{\gamma(a + k) : k \in \mathbb{Z}\}$.
+\end{enumerate}
+\end{exbox}
+
+In the immersed topology, a short interval of the irrational line is an open subset of the image; in the subspace topology, every neighbourhood of a point of the image also contains points from arbitrarily far along the line, because the line comes back densely. That is the whole difference between the two kinds of submanifold.
+
 
 % ============================================================================
 % SECTION: GEOMETRIC AND ABSTRACT MANIFOLDS (comparison; not from lecture)
@@ -8599,11 +8646,11 @@ Geometrically, a manifold is a subset of a Euclidean space with one of three equ
 \end{quote}
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:submanifold} (Submanifold).} Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a \textbf{submanifold of $M$ of codimension $k$} if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
+\textbf{Recall: Definition~\ref{def:submanifold} (Regular Submanifold).} Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a \textbf{regular submanifold of $M$ of codimension $k$} if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
 \[
 U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
 \]
-These are sometimes called \textbf{regular} or \textbf{embedded} submanifolds, as opposed to the immersed submanifolds still to come.
+Regular submanifolds are also called \textbf{embedded} submanifolds, as opposed to the immersed submanifolds of Definition~\ref{def:immersed-submanifold}. In these notes, ``submanifold'' without qualification means a regular submanifold.
 \end{quote}
 
 A subset of $\mathbb{R}^{n+k}$ has the three Euclidean descriptions near each point exactly when it is a submanifold of $\mathbb{R}^{n+k}$ (Proposition~\ref{prop:submanifold-euclidean}), and the graph-chart structure of Proposition~\ref{prop:level-set-smooth} is then the induced one (Proposition~\ref{prop:rvt-agree}(1)). The circle shows all of this at once: its external, graph and internal descriptions (Example~\ref{ex:circle-three-ways}), and three atlases --- four charts, stereographic and angle --- that define one smooth structure (\ref{sec:ex-circle}).
@@ -8789,7 +8836,7 @@ F_p^*\big(df_{F(p)}\big) = d(f \circ F)_p \quad \text{in } T_p^*M .
 \end{quote}
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:conormal} (Conormal Space).} Let $S \subseteq M$ be a submanifold and $p \in S$. The \textbf{conormal space} of $S$ at $p$ is
+\textbf{Recall: Definition~\ref{def:conormal} (Conormal Space).} Let $S \subseteq M$ be a regular submanifold and $p \in S$. The \textbf{conormal space} of $S$ at $p$ is
 \[
 N_pS = \{\, \xi \in T_p^*M : \xi(v) = 0 \text{ for all } v \in \iota_{*p}(T_pS) \,\},
 \]
@@ -8860,7 +8907,7 @@ Equivalently, with coordinate functions $x^i = r^i \circ \varphi$ on $U$ and $y^
 \end{quote}
 
 \begin{quote}
-\textbf{Recall: Theorem~\ref{thm:rvt-manifolds} (The Regular Value Theorem for Manifolds).} Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition~\ref{def:regular-critical-value}). Then $S = F^{-1}(q)$ is a submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
+\textbf{Recall: Theorem~\ref{thm:rvt-manifolds} (The Regular Value Theorem for Manifolds).} Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition~\ref{def:regular-critical-value}). Then $S = F^{-1}(q)$ is a regular submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
 \[
 \iota_{*p}(T_pS) = \ker F_{*p} .
 \]
@@ -8876,7 +8923,7 @@ A geometric manifold sits in $\mathbb{R}^N$ by construction; an abstract one nee
 \textbf{Recall: Definition~\ref{def:embedding} (Embedding).} A smooth map $F : M \to N$ is an \textbf{embedding} if it is an immersion and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism, $F(M)$ carrying the subspace topology of $N$. Injectivity is part of being a homeomorphism; Uribe wrote ``(injective) immersion'' and called the word redundant.
 \end{quote}
 
-The image of an embedding is a submanifold (Theorem~\ref{thm:embedding-image}), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition~\ref{def:internal-description} is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: the figure-eight and the irrational line on the torus are injective immersions whose images are not submanifolds (\ref{sec:immersions}, \ref{sec:embeddings}).
+The image of an embedding is a submanifold (Theorem~\ref{thm:embedding-image}), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition~\ref{def:internal-description} is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition~\ref{def:immersed-submanifold}, Proposition~\ref{prop:immersion-image}), regular exactly when the immersion is an embedding (Proposition~\ref{prop:immersed-regular}); the figure-eight and the irrational line on the torus are immersed but not regular (Example~\ref{ex:immersed-not-regular}).
 
 \begin{rembox}[Whitney's Embedding Theorem]\label{rem:whitney}
 \textit{(Not from lecture; stated, not proved, in these notes.)} Every smooth $m$-manifold --- Hausdorff and second countable, as in Definition~\ref{def:smooth-structure} --- admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem~6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
@@ -11498,7 +11545,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:abstract-tangent}--\ref{sec:velocities}\ Germs, derivations, the abstract tangent space & Chapter 3 throughout, including Proposition 3.14 (products) \\
 \ref{sec:cotangent}\ The cotangent space & Chapter 11, \emph{Covectors}; Problem 11-4 for $I_p/I_p^2$ \\
 \ref{sec:special-maps}--\ref{sec:submersions}\ Local diffeomorphisms, submersions & Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 \\
-\ref{sec:submanifolds}\ Submanifolds & Chapter 5, \emph{Embedded Submanifolds} (Theorem 5.8, Corollary 5.14, Propositions 5.35--5.38) \\
+\ref{sec:submanifolds}\ Regular submanifolds & Chapter 5, \emph{Embedded Submanifolds} (Theorem 5.8, Corollary 5.14, Propositions 5.35--5.38) \\
 \ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee \\
 \ref{sec:immersions}\ Immersions & Chapter 4, \emph{Immersions} (Theorem 4.12); Example 4.19 \\
 \ref{sec:embeddings}\ Embeddings & Chapter 4, \emph{Embeddings} (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 \\

@@ -63,7 +63,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§27 Germs\|§27]]–[[§31 Tangent Vectors as Velocities of Curves\|§31]] Germs, derivations, the abstract tangent space | Chapter 3 throughout, including Proposition 3.14 (products) |
 | [[§32 The Cotangent Space\|§32]] The cotangent space | Chapter 11, *Covectors*; Problem 11-4 for $I_p/I_p^2$ |
 | [[§33 Local Diffeomorphisms\|§33]]–[[§34 Submersions\|§34]] Local diffeomorphisms, submersions | Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 |
-| [[§35 Submanifolds\|§35]] Submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.14, Propositions 5.35–5.38) |
+| [[§35 Regular Submanifolds\|§35]] Regular submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.14, Propositions 5.35–5.38) |
 | [[§36 Fibrations\|§36]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
 | [[§37 Immersions\|§37]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
 | [[§38 Embeddings\|§38]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
@@ -140,12 +140,12 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§40 Projective Spaces and the Hopf Fibration#^ex-40-2\|Ex. §40.2]], [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3\|Ex. §40.3]] |
 | Proposition 5.2 | [[§38 Embeddings#^thm-38-1\|Thm. §38.1]] |
 | Proposition 5.5 | [[§38 Embeddings#^prop-38-9\|Prop. §38.9]] |
-| Theorem 5.8 | [[§35 Submanifolds#^def-35-1\|Def. §35.1]], [[§35 Submanifolds#^def-35-2\|Def. §35.2]], [[§35 Submanifolds#^prop-35-2\|Prop. §35.2]] |
-| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§35 Submanifolds#^thm-35-7\|Thm. §35.7]] |
-| Corollary 5.30 | [[§35 Submanifolds#^lem-35-3\|Lem. §35.3]] |
-| Proposition 5.35 | [[§35 Submanifolds#^prop-35-4\|Prop. §35.4]] |
-| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Submanifolds#^prop-35-4\|Prop. §35.4]] |
-| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Submanifolds#^thm-35-7\|Thm. §35.7]] |
+| Theorem 5.8 | [[§35 Regular Submanifolds#^def-35-1\|Def. §35.1]], [[§35 Regular Submanifolds#^def-35-2\|Def. §35.2]], [[§35 Regular Submanifolds#^prop-35-2\|Prop. §35.2]] |
+| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§35 Regular Submanifolds#^thm-35-7\|Thm. §35.7]] |
+| Corollary 5.30 | [[§35 Regular Submanifolds#^lem-35-3\|Lem. §35.3]] |
+| Proposition 5.35 | [[§35 Regular Submanifolds#^prop-35-4\|Prop. §35.4]] |
+| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Regular Submanifolds#^prop-35-4\|Prop. §35.4]] |
+| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§35 Regular Submanifolds#^thm-35-7\|Thm. §35.7]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§50 Lie Groups and Left-Invariant Vector Fields#^prop-50-1\|Prop. §50.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |

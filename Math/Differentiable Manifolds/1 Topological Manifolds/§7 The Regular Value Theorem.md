@@ -201,7 +201,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 *Uses:* [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 > [!remark]- Connections
-> - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-8|§30.8]] and [[§35 Submanifolds#^thm-35-7|§35.7]].
+> - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-8|§30.8]] and [[§35 Regular Submanifolds#^thm-35-7|§35.7]].
 > - Recovered as a special case of transversality: [[§26 Transversality#^cor-26-3|§26.3]].
 
 > [!theorem] Corollary §7.4: Open Domains and Arbitrary Values
@@ -216,7 +216,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 
 *Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]]
 
-This is the form needed on manifolds, where a chart has an open subset of Euclidean space as its image, not the whole space. The general version, for maps between manifolds and with the smooth structure and the tangent space included, is [[§35 Submanifolds#^thm-35-7|Theorem §35.7]] (Lecture 12).
+This is the form needed on manifolds, where a chart has an open subset of Euclidean space as its image, not the whole space. The general version, for maps between manifolds and with the smooth structure and the tangent space included, is [[§35 Regular Submanifolds#^thm-35-7|Theorem §35.7]] (Lecture 12).
 
 **Comparison with Lee.** Lee meets level sets twice. Example 1.32 builds graph charts for the level set of a single function with nonvanishing gradient, and Corollary 5.14 proves, via the constant-rank theorem, that every regular level set is a properly embedded submanifold. The course takes the direct route of Example 1.32 in every codimension, using the implicit function theorem, and obtains the smooth structure separately ([[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]]).
 
@@ -288,7 +288,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 *Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
 
 > [!remark]- Connections
-> - The notion of submanifold the problem asks about: [[§35 Submanifolds#^def-35-1|Def. §35.1]]; regular level sets are submanifolds by [[§35 Submanifolds#^thm-35-7|§35.7]].
+> - The notion of submanifold the problem asks about: [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]]; regular level sets are submanifolds by [[§35 Regular Submanifolds#^thm-35-7|§35.7]].
 
 > [!remark] Remark
 > **The workflow.** Every problem of this type runs the same five steps: (i) compute the Jacobian; (ii) find the locus where its rank drops; (iii) check that this locus *misses the level set*; (iv) read off the dimension; (v) compute the kernel. Step (iii) is the one most often skipped, and it is the point of the definition: the rank may drop anywhere at all, so long as it does not drop *on* $F^{-1}(c)$. Here it drops at exactly one point of $\mathbb{R}^4$, which happens to lie on a different level set.

@@ -142,7 +142,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > [!remark]- Connections
 > - The Calc 3 formula and the gradient it replaces: [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1]], [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 > - Converting a covector into a vector with an inner product: [[Riesz representation theorem|LADR 6.42]].
-> - The same point for normal vectors: [[§35 Submanifolds#^rem-35-1|No Normal Vectors Without a Metric]].
+> - The same point for normal vectors: [[§35 Regular Submanifolds#^rem-35-1|No Normal Vectors Without a Metric]].
 
 ## The Cotangent Space from Germs
 

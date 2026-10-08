@@ -159,11 +159,11 @@ The definitions and results of this section run parallel to those for the tangen
 ^cor-46-3
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in, as [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3]].)* (1) By [[§46 The Cotangent Bundle#^prop-46-1|Propositions §46.1]] and [[§46 The Cotangent Bundle#^prop-46-2|§46.2]]. In the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, \xi) \mapsto r$, which is smooth. (2) $\Psi = (\varphi^{-1} \times \mathrm{id}) \circ \hat\varphi$ is a composite of diffeomorphisms ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|Proposition §28.9]]), and $\mathrm{pr}_1 \circ \Psi = \pi$; the $T^{\ast}U$ cover $T^{\ast}M$ and the $U$ cover $M$. On $T_p^{\ast}M$, $\Psi$ is $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\hat\varphi$, $\zeta(M) \cap T^{\ast}U = \{\xi_1 = \cdots = \xi_m = 0\}$, so the charts $\hat\varphi$ are adapted to $\zeta(M)$ ([[§35 Submanifolds#^def-35-2|Definition §35.2]]).
+> *(Not from lecture; filled in, as [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3]].)* (1) By [[§46 The Cotangent Bundle#^prop-46-1|Propositions §46.1]] and [[§46 The Cotangent Bundle#^prop-46-2|§46.2]]. In the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, \xi) \mapsto r$, which is smooth. (2) $\Psi = (\varphi^{-1} \times \mathrm{id}) \circ \hat\varphi$ is a composite of diffeomorphisms ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|Proposition §28.9]]), and $\mathrm{pr}_1 \circ \Psi = \pi$; the $T^{\ast}U$ cover $T^{\ast}M$ and the $U$ cover $M$. On $T_p^{\ast}M$, $\Psi$ is $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\hat\varphi$, $\zeta(M) \cap T^{\ast}U = \{\xi_1 = \cdots = \xi_m = 0\}$, so the charts $\hat\varphi$ are adapted to $\zeta(M)$ ([[§35 Regular Submanifolds#^def-35-2|Definition §35.2]]).
 
 ^pf-46-3
 
-*Uses:* [[§46 The Cotangent Bundle#^prop-46-1|§46.1]], [[§46 The Cotangent Bundle#^prop-46-2|§46.2]], [[§46 The Cotangent Bundle#^def-46-4|Def. §46.4]], [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§36 Fibrations#^def-36-1|Def. §36.1]]
+*Uses:* [[§46 The Cotangent Bundle#^prop-46-1|§46.1]], [[§46 The Cotangent Bundle#^prop-46-2|§46.2]], [[§46 The Cotangent Bundle#^def-46-4|Def. §46.4]], [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§35 Regular Submanifolds#^def-35-2|Def. §35.2]], [[§36 Fibrations#^def-36-1|Def. §36.1]]
 
 ## Lecture 15 and the Standard Coordinates
 
@@ -171,4 +171,4 @@ The definitions and results of this section run parallel to those for the tangen
 
 **Transcription note.** Page 40 of the handwritten notes writes the standard coordinates as a map on $T^{\ast}M$; they are defined on $T^{\ast}U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
 
-“We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§35 Submanifolds#^rem-35-1|remark on conormal spaces]]). This is stated, not proved, here.
+“We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§35 Regular Submanifolds#^rem-35-1|remark on conormal spaces]]). This is stated, not proved, here.

@@ -95,14 +95,14 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-2|Def. §41.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]]
 
 > [!theorem] Proposition §41.3: Hyperspherical Charts Are Adapted to $S^3$
-> Let $\Phi$ and $B$ be as in [[§41 The Unit Quaternions and SU(2)#^def-41-2|Definition §41.2]] and [[§41 The Unit Quaternions and SU(2)#^lem-41-2|Lemma §41.2]]. Every $p \in S^3$ lies in the domain of a chart of $\mathbb{R}^4$ adapted to $S^3$ ([[§35 Submanifolds#^def-35-2|Definition §35.2]]):
+> Let $\Phi$ and $B$ be as in [[§41 The Unit Quaternions and SU(2)#^def-41-2|Definition §41.2]] and [[§41 The Unit Quaternions and SU(2)#^lem-41-2|Lemma §41.2]]. Every $p \in S^3$ lies in the domain of a chart of $\mathbb{R}^4$ adapted to $S^3$ ([[§35 Regular Submanifolds#^def-35-2|Definition §35.2]]):
 > 1. if $p \notin B$, then $p = \Phi(1, \theta)$ for some $\theta$, and for a suitable open $W \ni (1, \theta)$ in $(0, \infty) \times \mathbb{R}^3$ the map $\psi_p = \tau \circ (\Phi|_W)^{-1}$, where $\tau(r, \theta_1, \theta_2, \theta_3) = (\theta_1, \theta_2, \theta_3, r - 1)$, is such a chart, with last coordinate $y^4 = r - 1$;
 > 2. if $p \in B$, the same construction with $\tilde\Phi = P \circ \Phi$ in place of $\Phi$, where $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, gives such a chart.
 
 ^prop-41-3
 
 > [!proof]+ Proof
-> *(Assignment 4, Problem 3(a), as submitted.)* Steps (i) and (ii) of the submitted solution are [[§41 The Unit Quaternions and SU(2)#^def-41-2|Definition §41.2]] and [[§41 The Unit Quaternions and SU(2)#^lem-41-2|Lemma §41.2]]. By the definition from lecture ([[§35 Submanifolds#^def-35-1|Definition §35.1]]), we must show that every $p \in S^3$ lies in the domain of a chart $(U, \psi = (y^1, y^2, y^3, y^4))$ of $\mathbb{R}^4$ with
+> *(Assignment 4, Problem 3(a), as submitted.)* Steps (i) and (ii) of the submitted solution are [[§41 The Unit Quaternions and SU(2)#^def-41-2|Definition §41.2]] and [[§41 The Unit Quaternions and SU(2)#^lem-41-2|Lemma §41.2]]. By the definition from lecture ([[§35 Regular Submanifolds#^def-35-1|Definition §35.1]]), we must show that every $p \in S^3$ lies in the domain of a chart $(U, \psi = (y^1, y^2, y^3, y^4))$ of $\mathbb{R}^4$ with
 >
 > $$
 > U \cap S^3 = \{ \vec u \in U : y^4(\vec u) = 0 \};
@@ -126,27 +126,27 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-41-3
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-2|Def. §41.2]], [[§41 The Unit Quaternions and SU(2)#^lem-41-2|§41.2]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§34 Submersions#^lem-34-3|§34.3]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[Inverse Function Theorem (several variables)|452 §16.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-2|Def. §41.2]], [[§41 The Unit Quaternions and SU(2)#^lem-41-2|§41.2]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§35 Regular Submanifolds#^def-35-2|Def. §35.2]], [[§34 Submersions#^lem-34-3|§34.3]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[Inverse Function Theorem (several variables)|452 §16.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
 
 > [!theorem] Proposition §41.4: The Unit Quaternions
-> $S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold ([[§35 Submanifolds#^def-35-1|Def. §35.1]]) of dimension $3$ and a group ([[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]]) whose multiplication and inversion are smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]). It is connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]): every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
+> $S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold ([[§35 Regular Submanifolds#^def-35-1|Def. §35.1]]) of dimension $3$ and a group ([[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]]) whose multiplication and inversion are smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]). It is connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]): every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
 
 ^prop-41-4
 
 > [!proof]+ Proof
-> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ ([[§35 Submanifolds#^thm-35-7|Theorem §35.7]]). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ ([[§35 Submanifolds#^lem-35-3|Lemma §35.3]]). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
+> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ ([[§35 Regular Submanifolds#^thm-35-7|Theorem §35.7]]). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ ([[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]]). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
 
 ^pf-41-4
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§35 Submanifolds#^thm-35-7|§35.7]], [[§35 Submanifolds#^lem-35-3|§35.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§35 Regular Submanifolds#^thm-35-7|§35.7]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
 
 > [!proof]+ Second proof of the submanifold claim: hyperspherical charts (the submitted solution)
 >
-> *(Assignment 4, Problem 3(a), as submitted. An “embedded submanifold” is a submanifold in the sense of [[§35 Submanifolds#^def-35-1|Definition §35.1]]. The group and connectedness claims are proved above.)* **$S^3$ is an embedded submanifold of $\mathbb{R}^4$.** By [[§41 The Unit Quaternions and SU(2)#^prop-41-3|Proposition §41.3]], every point of $S^3$ lies in a chart of $\mathbb{R}^4$ adapted to $S^3$, so $S^3$ is a submanifold of $\mathbb{R}^4$ of codimension $1$ ([[§35 Submanifolds#^def-35-1|Definition §35.1]]).
+> *(Assignment 4, Problem 3(a), as submitted. An “embedded submanifold” is a submanifold in the sense of [[§35 Regular Submanifolds#^def-35-1|Definition §35.1]]. The group and connectedness claims are proved above.)* **$S^3$ is an embedded submanifold of $\mathbb{R}^4$.** By [[§41 The Unit Quaternions and SU(2)#^prop-41-3|Proposition §41.3]], every point of $S^3$ lies in a chart of $\mathbb{R}^4$ adapted to $S^3$, so $S^3$ is a submanifold of $\mathbb{R}^4$ of codimension $1$ ([[§35 Regular Submanifolds#^def-35-1|Definition §35.1]]).
 
 ^pf-41-4-2
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-3|§41.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-3|§41.3]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§35 Regular Submanifolds#^def-35-2|Def. §35.2]]
 
 > [!remark]- Connections
 > - Topological groups: [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]]; the sphere as a level set in 452: [[Unit circle and unit sphere|452 Unit circle and unit sphere]].
@@ -163,7 +163,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > F(x_0 + x_1 i + x_2 j + x_3 k) = \begin{pmatrix} x_0 - x_1 i & x_2 - x_3 i \\ -x_2 - x_3 i & x_0 + x_1 i \end{pmatrix}.
 > $$
 >
-> 3. $\mathrm{SU}(2)$ is a regular submanifold ([[§35 Submanifolds#^def-35-1|Def. §35.1]]) of $\operatorname{Mat}(2, \mathbb{C}) \cong \mathbb{R}^8$ of dimension $3$, and $F$ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]).
+> 3. $\mathrm{SU}(2)$ is a regular submanifold ([[§35 Regular Submanifolds#^def-35-1|Def. §35.1]]) of $\operatorname{Mat}(2, \mathbb{C}) \cong \mathbb{R}^8$ of dimension $3$, and $F$ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]).
 
 ^prop-41-5
 
@@ -222,7 +222,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > \Psi = (\psi \times \mathrm{id}_{\mathbb{R}^4}) \circ \Lambda^{-1} : \Lambda(U \times \mathbb{R}^4) \to \psi(U) \times \mathbb{R}^4,
 > $$
 >
-> with components $(y^1, y^2, y^3, y^4, w^1, \ldots, w^4)$, is a diffeomorphism onto an open subset of $\mathbb{R}^8$, hence a chart of $\mathrm{Mat}(2, \mathbb{C})$ at $M$ ([[§34 Submersions#^lem-34-3|Lemma §34.3]]). Since $\Lambda$ is bijective, a point $\Lambda(\vec x, \vec w)$ of its domain lies in $\mathrm{SU}(2)$ if and only if $\vec x \in S^3$ and $\vec w = 0$, that is, if and only if $y^4 = 0$ and $w^1 = \cdots = w^4 = 0$. Listing these five components last, $\Psi$ is adapted to $\mathrm{SU}(2)$. Hence $\mathrm{SU}(2)$ is an embedded submanifold of $\mathrm{Mat}(2, \mathbb{C})$ of dimension $8 - 5 = 3$; by the result on tangent spaces ([[§35 Submanifolds#^prop-35-4|Proposition §35.4]]), the differential $\jmath_{\ast I}$ of the inclusion $\jmath : \mathrm{SU}(2) \hookrightarrow \mathrm{Mat}(2, \mathbb{C})$ is injective, and we identify $T_I\,\mathrm{SU}(2)$ with its image, a $3$-dimensional subspace of $\mathrm{Mat}(2, \mathbb{C})$. Moreover $L \circ \iota : S^3 \to \mathrm{Mat}(2, \mathbb{C})$ is smooth, as the composite of the inclusion $\iota$ of the embedded submanifold $S^3$ and the linear map $L$, and its image $F(S^3)$ lies in the embedded submanifold $\mathrm{SU}(2)$; since a smooth map whose image lies in an embedded submanifold is smooth into that submanifold ([[§35 Submanifolds#^lem-35-3|Lemma §35.3]]), $F : S^3 \to \mathrm{SU}(2)$ is smooth.
+> with components $(y^1, y^2, y^3, y^4, w^1, \ldots, w^4)$, is a diffeomorphism onto an open subset of $\mathbb{R}^8$, hence a chart of $\mathrm{Mat}(2, \mathbb{C})$ at $M$ ([[§34 Submersions#^lem-34-3|Lemma §34.3]]). Since $\Lambda$ is bijective, a point $\Lambda(\vec x, \vec w)$ of its domain lies in $\mathrm{SU}(2)$ if and only if $\vec x \in S^3$ and $\vec w = 0$, that is, if and only if $y^4 = 0$ and $w^1 = \cdots = w^4 = 0$. Listing these five components last, $\Psi$ is adapted to $\mathrm{SU}(2)$. Hence $\mathrm{SU}(2)$ is an embedded submanifold of $\mathrm{Mat}(2, \mathbb{C})$ of dimension $8 - 5 = 3$; by the result on tangent spaces ([[§35 Regular Submanifolds#^prop-35-4|Proposition §35.4]]), the differential $\jmath_{\ast I}$ of the inclusion $\jmath : \mathrm{SU}(2) \hookrightarrow \mathrm{Mat}(2, \mathbb{C})$ is injective, and we identify $T_I\,\mathrm{SU}(2)$ with its image, a $3$-dimensional subspace of $\mathrm{Mat}(2, \mathbb{C})$. Moreover $L \circ \iota : S^3 \to \mathrm{Mat}(2, \mathbb{C})$ is smooth, as the composite of the inclusion $\iota$ of the embedded submanifold $S^3$ and the linear map $L$, and its image $F(S^3)$ lies in the embedded submanifold $\mathrm{SU}(2)$; since a smooth map whose image lies in an embedded submanifold is smooth into that submanifold ([[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]]), $F : S^3 \to \mathrm{SU}(2)$ is smooth.
 >
 > For $\mathrm{SO}(3)$ we have no such parametrization, and we take as given, as is implicit in the problem, that $\mathrm{SO}(3)$ is an embedded submanifold of $\mathrm{Mat}(3, \mathbb{R})$ of dimension $3$. Likewise $T_I\,\mathrm{SO}(3)$ is identified with a $3$-dimensional subspace of $\mathrm{Mat}(3, \mathbb{R})$.
 >
@@ -242,7 +242,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-41-5-2
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-3|§41.3]], [[§34 Submersions#^lem-34-3|§34.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§35 Submanifolds#^prop-35-4|§35.4]], [[§35 Submanifolds#^lem-35-3|§35.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§5 Bases#^ladr-2-32|LADR 2.32]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-3|§41.3]], [[§34 Submersions#^lem-34-3|§34.3]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§35 Regular Submanifolds#^def-35-2|Def. §35.2]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§5 Bases#^ladr-2-32|LADR 2.32]]
 
 > [!remark]- Connections
 > - $\mathrm{SU}(2)$ in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]]; unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]].
@@ -276,13 +276,13 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-41-6
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§35 Submanifolds#^prop-35-4|§35.4]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]]
 
 > [!proof]+ Second proof of the formulas for the $\sigma_j$: curves from a hyperspherical chart (the submitted solution)
 >
 > *(Assignment 4, Problem 3(a), as submitted, in the notation of the [[§41 The Unit Quaternions and SU(2)#^pf-41-5-2|second proof]] of [[§41 The Unit Quaternions and SU(2)#^prop-41-5|Proposition §41.5]]: $\vec e_0 = 1$ and $\vec e_1, \vec e_2, \vec e_3$ correspond to $i, j, k$, so $\sigma_j = F_{\ast,\vec e_0}(\vec e_j)$ is the $\sigma_j$ of the statement, and the curves $\gamma_j$ below are those of the statement. Items (i)–(v) are [[§41 The Unit Quaternions and SU(2)#^def-41-2|Definition §41.2]], [[§41 The Unit Quaternions and SU(2)#^lem-41-2|Lemma §41.2]] and the steps (iii)–(v) of the [[§41 The Unit Quaternions and SU(2)#^pf-41-3|proof]] of [[§41 The Unit Quaternions and SU(2)#^prop-41-3|Proposition §41.3]], and the map $\tilde\Phi$ is that of [[§41 The Unit Quaternions and SU(2)#^prop-41-3|Proposition §41.3]]. That the $\sigma_j$ form a basis is shown in the proof above, and again in the [[§42 SU(2) → SO(3)꞉ The Double Cover#^pf-42-4-2|second proof]] of [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|Theorem §42.4]].)*
 >
-> **The tangent space $T_{\vec e_0} S^3$.** By the result from lecture on tangent spaces of submanifolds ([[§35 Submanifolds#^prop-35-4|Proposition §35.4]]), if $\psi = (y^1, \ldots, y^4)$ is an [[§35 Submanifolds#^def-35-2|adapted chart]] at $p \in S^3$, then $\iota_{\ast p} : T_p S^3 \to T_p\mathbb{R}^4$ is injective and
+> **The tangent space $T_{\vec e_0} S^3$.** By the result from lecture on tangent spaces of submanifolds ([[§35 Regular Submanifolds#^prop-35-4|Proposition §35.4]]), if $\psi = (y^1, \ldots, y^4)$ is an [[§35 Regular Submanifolds#^def-35-2|adapted chart]] at $p \in S^3$, then $\iota_{\ast p} : T_p S^3 \to T_p\mathbb{R}^4$ is injective and
 >
 > $$
 > \iota_{\ast p}(T_p S^3) = \operatorname{span}\left\{ \frac{\partial}{\partial y^1}\Big|_p, \frac{\partial}{\partial y^2}\Big|_p, \frac{\partial}{\partial y^3}\Big|_p \right\}.
@@ -355,7 +355,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-41-6-2
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-2|Def. §41.2]], [[§41 The Unit Quaternions and SU(2)#^lem-41-2|§41.2]], [[§41 The Unit Quaternions and SU(2)#^prop-41-3|§41.3]], [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§35 Submanifolds#^prop-35-4|§35.4]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-2|Def. §41.2]], [[§41 The Unit Quaternions and SU(2)#^lem-41-2|§41.2]], [[§41 The Unit Quaternions and SU(2)#^prop-41-3|§41.3]], [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]
 
 > [!remark]- Connections
 > - The tangent space of $\mathrm{U}(n)$ at the identity: [[§25 The Geometric Tangent Space#^ex-25-3|Ex. §25.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]].

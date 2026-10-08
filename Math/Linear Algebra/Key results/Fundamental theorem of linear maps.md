@@ -39,7 +39,7 @@ tags: [linear-algebra, hub]
 - [[§25 The Geometric Tangent Space#^thm-25-7|Theorem §25.7: Dimension of the Geometric Tangent Space]]
 - [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
 - [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]
-- [[§35 Submanifolds#^thm-35-7|Theorem §35.7: The Regular Value Theorem for Manifolds]]
+- [[§35 Regular Submanifolds#^thm-35-7|Theorem §35.7: The Regular Value Theorem for Manifolds]]
 
 ## Connections
 - **Immediate consequences.** Comparing dimensions: [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).

@@ -28,7 +28,7 @@ tags: [differentiable-manifolds, hub]
 - [[§24 The Circle#^prop-24-1|Proposition §24.1: The Three Circle Atlases Define One Smooth Structure]]
 - [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5: The Classical Groups]]
 - [[§26 Transversality#^thm-26-1|Theorem §26.1: Preimages of Transverse Level Sets]]
-- [[§35 Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
+- [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
 
 ## Connections
 - **Used for.** Smooth structures on O(n) and U(n) ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]]), on SL(n,ℝ) and on the spheres, hence the smooth half of [[Classical Groups Are Manifolds]] ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). Maps into and out of a level set are smooth when the ambient formulas are ([[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]]), which shows that the three circle atlases define one structure ([[§24 The Circle#^prop-24-1|§24.1]]).

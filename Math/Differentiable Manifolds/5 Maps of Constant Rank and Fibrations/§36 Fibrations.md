@@ -5,13 +5,13 @@ chapter: 5
 section: 36
 tags: [differentiable-manifolds, math591]
 ---
-← [[§35 Submanifolds]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§37 Immersions]] →
+← [[§35 Regular Submanifolds]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§37 Immersions]] →
 
 *Stage: bundles — Submersions that are locally products.*
 
 *References: Lee Ch. 10. Lectures 11–13.*
 
-The submersions that look locally like the projection $U \times F \to U$. Their fibres are submanifolds ([[§35 Submanifolds|§35]]), all copies of one fibre; the tangent bundle of the next section is the first major example.
+The submersions that look locally like the projection $U \times F \to U$. Their fibres are submanifolds ([[§35 Regular Submanifolds|§35]]), all copies of one fibre; the tangent bundle of the next section is the first major example.
 
 ## Fibrations
 
@@ -74,7 +74,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 *Lecture 12. Uribe changed the notation once more “to conform to more general usage”: the fibration is $\pi : E \to B$, with total space $E$, base $B$, and fibre $F$ — the definition as before ([[§36 Fibrations#^def-36-1|Definition §36.1]]), with $E$ in place of $M$.*
 
 > [!theorem] Proposition §36.2: Fibres Are Copies of the Model Fibre
-> Let $\pi : E \to B$ be a fibration with fibre $F$ and $b \in B$. Then $\pi^{-1}(b)$ is a submanifold of $E$, and for every $\alpha$ with $b \in U_\alpha$ the local trivialization $\phi_\alpha$ restricts to a diffeomorphism
+> Let $\pi : E \to B$ be a fibration with fibre $F$ and $b \in B$. Then $\pi^{-1}(b)$ is a regular submanifold of $E$, and for every $\alpha$ with $b \in U_\alpha$ the local trivialization $\phi_\alpha$ restricts to a diffeomorphism
 >
 > $$
 > \pi^{-1}(b) \longrightarrow \{b\} \times F \cong F .
@@ -83,11 +83,11 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^prop-36-2
 
 > [!proof]+ Proof
-> *(Claimed in Lecture 12 — “I claim that they are diffeomorphic to this fibre, to the third manifold that is sitting outside, looking over [the] landscape”; filled in.)* $\pi$ is a submersion ([[§36 Fibrations#^prop-36-1|Proposition §36.1]]), so $\pi^{-1}(b)$ is a submanifold ([[§35 Submanifolds#^cor-35-8|Corollary §35.8]]); likewise $\{b\} \times F = \mathrm{pr}_1^{-1}(b)$ is a submanifold of $U_\alpha \times F$ ([[§34 Submersions#^ex-34-2|Example §34.2]]). Because the diagram commutes, $\phi_\alpha$ maps $\pi^{-1}(b)$ bijectively onto $\{b\} \times F$. The restriction and its inverse are smooth as maps into $U_\alpha \times F$ and into $E$ (restrictions of $\phi_\alpha$, $\phi_\alpha^{-1}$ to submanifolds, [[§35 Submanifolds#^lem-35-3|Lemma §35.3]](1)), hence smooth into the submanifolds $\{b\} \times F$ and $\pi^{-1}(b)$ ([[§35 Submanifolds#^lem-35-3|Lemma §35.3]](2)). Finally $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a diffeomorphism by the same lemma, with inverse $f \mapsto (b, f)$.
+> *(Claimed in Lecture 12 — “I claim that they are diffeomorphic to this fibre, to the third manifold that is sitting outside, looking over [the] landscape”; filled in.)* $\pi$ is a submersion ([[§36 Fibrations#^prop-36-1|Proposition §36.1]]), so $\pi^{-1}(b)$ is a submanifold ([[§35 Regular Submanifolds#^cor-35-8|Corollary §35.8]]); likewise $\{b\} \times F = \mathrm{pr}_1^{-1}(b)$ is a submanifold of $U_\alpha \times F$ ([[§34 Submersions#^ex-34-2|Example §34.2]]). Because the diagram commutes, $\phi_\alpha$ maps $\pi^{-1}(b)$ bijectively onto $\{b\} \times F$. The restriction and its inverse are smooth as maps into $U_\alpha \times F$ and into $E$ (restrictions of $\phi_\alpha$, $\phi_\alpha^{-1}$ to submanifolds, [[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]](1)), hence smooth into the submanifolds $\{b\} \times F$ and $\pi^{-1}(b)$ ([[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]](2)). Finally $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a diffeomorphism by the same lemma, with inverse $f \mapsto (b, f)$.
 
 ^pf-36-2
 
-*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-1|§36.1]], [[§35 Submanifolds#^cor-35-8|§35.8]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§35 Submanifolds#^lem-35-3|§35.3]]
+*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-1|§36.1]], [[§35 Regular Submanifolds#^cor-35-8|§35.8]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]]
 
 ![[m591-16-3.svg]]
 *The fibre over $b$ and the model fibre. The trivialization $\phi_\alpha$ carries the submanifold $\pi^{-1}(b)$ onto the submanifold $\{b\} \times F$ — this is where the commuting triangle of [[§36 Fibrations#^def-36-1|Definition §36.1]] is used — and $\mathrm{pr}_2$ identifies that with $F$.*
@@ -107,7 +107,7 @@ This upgrades [[§36 Fibrations#^prop-36-1|Proposition §36.1]](1) from homeomor
 *Uses:* [[§34 Submersions#^ex-34-1|Ex. §34.1]], [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-2|§36.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§16 Connected Subspaces of ℝ#^cor-16-2|590 §16.2]]
 
 ![[m591-16-4.svg]]
-*The punctured plane over the $x$-axis. Every fibre is a whole vertical line except the one over $0$, which is broken at the missing point into two half-lines. The fibres are all submanifolds ([[§35 Submanifolds#^cor-35-8|Corollary §35.8]]), but not all of the same type.*
+*The punctured plane over the $x$-axis. Every fibre is a whole vertical line except the one over $0$, which is broken at the missing point into two half-lines. The fibres are all submanifolds ([[§35 Regular Submanifolds#^cor-35-8|Corollary §35.8]]), but not all of the same type.*
 
 A student asked the converse: if all the fibres of a surjective submersion are diffeomorphic to one manifold, must it be a fibration? Uribe: “I don't think that's true, but I don't have a quick example.” He answered it at the start of Lecture 13: yes when $\pi$ is proper, no in general ([[§36 Fibrations#^thm-36-3|Theorem §36.3]] and [[§36 Fibrations#^ex-36-3|Example §36.3]] below).
 

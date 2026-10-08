@@ -28,7 +28,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§37 Immersions#^cor-37-2|Corollary §37.2: The Local Image of an Immersion]]
-- [[§38 Embeddings#^thm-38-1|Theorem §38.1: The Image of an Embedding Is a Submanifold]]
+- [[§38 Embeddings#^thm-38-1|Theorem §38.1: The Image of an Embedding Is a Regular Submanifold]]
 - [[§38 Embeddings#^prop-38-2|Proposition §38.2: Immersions That Are Open onto Their Images]]
 
 ## Connections
