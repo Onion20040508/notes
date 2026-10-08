@@ -10,6 +10,7 @@
 \usepackage{titlesec}
 \usepackage{tikz}
 \usetikzlibrary{calc}
+\usetikzlibrary{patterns}
 \tikzset{every node/.append style={font=\footnotesize}}
 
 % Keep section numbering continuous across chapters (§1, §2, ... not 1.1, 1.2, ...)
@@ -5104,7 +5105,7 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 \chapter{Bounded Linear Maps}\label{ch:maps}
 
-Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the Lax--Milgram theorem and the Sobolev spaces it is applied to.
+Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the Lax--Milgram theorem, the Sobolev spaces it is applied to, and two applications of the representation theorems: weak solutions of the Dirichlet problem and the Radon--Nikodym theorem.
 
 % Lecture 9 (2026-09-29), last part
 
@@ -5701,9 +5702,53 @@ An element $f$ of the completion for $k = 1$ is the limit of a sequence $g_n \in
 
 \subsection{Integration by Parts and Weak Derivatives}
 
-\begin{defbox}[Test Functions]\boxlabel{def:test-functions}
-Let $\Omega \subset \mathbb{R}^n$ be open. The \textbf{test functions} on $\Omega$ are the elements of $C_c^\infty(\Omega)$, the $C^\infty$ functions whose support is a compact subset of $\Omega$.
+% Lecture 12 (2026-10-08): C_c^infty defined at the start of Lecture 12 (answer to an
+% office-hour question); placed here, where test functions are first used.
+
+\begin{defbox}[Support]\boxlabel{def:support}
+Let $\Omega \subset \mathbb{R}^n$ be open and $f : \Omega \to \mathbb{F}$ continuous. The \textbf{support} of $f$ is
+\[
+\operatorname{supp} f = \overline{\{ x \in \Omega : f(x) \neq 0 \}},
+\]
+the closure in $\mathbb{R}^n$ of the set where $f$ is not zero.
 \end{defbox}
+
+\begin{defbox}[Compact Support]\boxlabel{def:compact-support}
+A continuous $f : \Omega \to \mathbb{F}$ has \textbf{compact support in $\Omega$}, written $\operatorname{supp} f \subset\subset \Omega$, if $\operatorname{supp} f$ (Definition~\ref{def:support}) is a compact (closed and bounded) subset of $\Omega$.
+\end{defbox}
+
+\begin{defbox}[Test Functions]\boxlabel{def:test-functions}
+Let $\Omega \subset \mathbb{R}^n$ be open. The \textbf{test functions} on $\Omega$ are the $C^\infty$ functions with compact support in $\Omega$ (Definition~\ref{def:compact-support}),
+\[
+C_c^\infty(\Omega) = \{ f \in C^\infty(\Omega) : \operatorname{supp} f \subset\subset \Omega \}.
+\]
+\end{defbox}
+
+\begin{propbox}[Extension by Zero]\boxlabel{prop:extension-zero}
+Let $f \in C_c^\infty(\Omega)$ and $K = \operatorname{supp} f$. If $\Omega \neq \mathbb{R}^n$, then $K$ has positive distance from $\mathbb{R}^n \setminus \Omega$. The function $\tilde f$ equal to $f$ on $\Omega$ and to $0$ on $\mathbb{R}^n \setminus \Omega$ lies in $C_c^\infty(\mathbb{R}^n)$.
+\end{propbox}
+
+\begin{proof}
+%% FILL-IN: Wu stated both facts with a picture ("the distance is greater than zero"; "this f is actually C^infty over the whole space"); the proof is Claude's.
+(Stated in lecture.) \emph{Distance.} The function $d(x) = \operatorname{dist}(x, \mathbb{R}^n \setminus \Omega)$ is continuous (it is $1$-Lipschitz), and $d(x) > 0$ for $x \in K$ because $K \subset \Omega$ and $\Omega$ is open, so a ball around $x$ lies in $\Omega$. A continuous function on the compact set $K$ attains its minimum, so $\min_K d > 0$.
+
+\emph{Smoothness.} The open sets $\Omega$ and $\mathbb{R}^n \setminus K$ cover $\mathbb{R}^n$, since $K \subset \Omega$. On $\Omega$, $\tilde f = f$ is $C^\infty$. On $\mathbb{R}^n \setminus K$, $\tilde f = 0$: $f$ vanishes on $\Omega \setminus K$ by definition of the support, and $\tilde f = 0$ outside $\Omega$. Being $C^\infty$ is a local property, so $\tilde f \in C^\infty(\mathbb{R}^n)$, and its support is $K$, which is compact.
+\end{proof}
+
+%% FIGURE (board): redrawn from Wu's board sketch; labels and caption by Claude
+\begin{center}
+\begin{tikzpicture}[scale=1.2, >=stealth]
+    \draw[thick, fill=gray!8] plot[smooth cycle, tension=0.8] coordinates {(-2.2,0.1) (-1.4,1.0) (0.6,1.15) (2.1,0.5) (1.9,-0.8) (0,-1.1) (-1.7,-0.8)};
+    \node at (-1.75,0.65) {$\Omega$};
+    \draw[thick, red!75!black, fill=red!12] plot[smooth cycle, tension=0.9] coordinates {(-0.7,0.1) (-0.2,0.55) (0.7,0.4) (0.9,-0.2) (0.1,-0.5) (-0.6,-0.35)};
+    \node[red!75!black] at (0.1,0) {$\operatorname{supp} f$};
+    \draw[<->, thick] (0.9,-0.2) -- (1.93,-0.6);
+    \node[anchor=west] at (1.45,-0.15) {$> 0$};
+    \node[anchor=west] at (2.25,0.3) {$\tilde f = 0$ outside $\Omega$};
+\end{tikzpicture}
+\end{center}
+A test function lives strictly inside $\Omega$: its support stays a positive distance away from the boundary, so extending it by $0$ creates no corner and no jump.
+
 
 \begin{lembox}[Integration by Parts against a Test Function]\boxlabel{lem:ibp-test}
 Let $\Omega \subset \mathbb{R}^n$ be open, $g \in C^1(\Omega)$, and $\varphi \in C_c^\infty(\Omega)$ a test function (Definition~\ref{def:test-functions}). Then for each $j$,
@@ -5921,9 +5966,347 @@ The Poincar\'e inequality $\|f\|_{L^2(\Omega)} \le C\, \|\nabla f\|_{L^2(\Omega)
 \end{corbox}
 
 \begin{proof}
-Next lecture (by approximating $f$ with a Cauchy sequence in $C_c^\infty(\Omega)$).
+(Lecture 12.) By Theorem~\ref{thm:poincare} the inequality holds for every function in $C_c^\infty(\Omega)$; it remains to pass to limits. Let $f \in H^1_0(\Omega)$. By definition of the completion there are $g_n \in C_c^\infty(\Omega)$ with
+\[
+g_n \to f \quad \text{and} \quad \partial_{x_j} g_n \to \partial_{x_j} f \quad \text{in } L^2(\Omega), \qquad j = 1, \ldots, n,
+\]
+%% FILL-IN: what f and its gradient are for an element of the completion.
+where, as in Proposition~\ref{prop:limit-ibp}, $f$ is the $L^2$ limit of a Cauchy sequence and $\partial_{x_j} f$, the $L^2$ limit of $\partial_{x_j} g_n$, is the weak derivative of $f$. For each $n$, Theorem~\ref{thm:poincare} gives
+\[
+\int_\Omega |g_n(x)|^2\, dx \le C^2 \sum_{j=1}^n \int_\Omega |\partial_{x_j} g_n(x)|^2\, dx .
+\]
+By the reverse triangle inequality (Lemma~\ref{lem:reverse-triangle}), $\bigl| \|g_n\|_{L^2} - \|f\|_{L^2} \bigr| \le \|g_n - f\|_{L^2} \to 0$, so $\|g_n\|_{L^2} \to \|f\|_{L^2}$, and likewise $\|\partial_{x_j} g_n\|_{L^2} \to \|\partial_{x_j} f\|_{L^2}$ for each $j$. Squares and finite sums of convergent sequences converge, and limits preserve non-strict inequalities, so
+\[
+\int_\Omega |f(x)|^2\, dx \le C^2 \sum_{j=1}^n \int_\Omega |\partial_{x_j} f(x)|^2\, dx = C^2 \int_\Omega |\nabla f(x)|^2\, dx . \qedhere
+\]
 \end{proof}
 
+\begin{rembox}[{{Triangle Inequality, Not Inner Product}}]\label{rem:triangle-inequality-not-inner-product}
+Wu asked which fact gives $\|g_n\|_{L^2} \to \|f\|_{L^2}$. A student answered: continuity of the inner product (Lemma~\ref{lem:ip-continuous}) --- correct, since $L^2$ is an inner product space. Wu's point was that it is more general: in any normed space $x_n \to x$ implies $\|x_n\| \to \|x\|$, by the reverse triangle inequality (Proposition~\ref{prop:norm-continuous}). She called the whole argument ``a usual technique'': to prove an inequality on a space, prove it on a dense subset, then take limits (Technique~19).
+\end{rembox}
+
+\begin{rembox}[What ``Zero on the Boundary'' Means]\label{rem:what-zero-boundary-means}
+Wu, answering questions: one may think of $f \in H^1_0(\Omega)$ as ``$C_c^\infty$ in spirit'', equal to $0$ on $\partial\Omega$ ``in an appropriate sense''; making this precise needs much more of Sobolev space theory and is outside the course. Why only ``in an appropriate sense'': for $f \in L^2$ alone, boundary values mean nothing, since $\partial\Omega$ has measure zero and an $L^2$ function can be changed there at will. What makes the boundary condition meaningful is that $\nabla f \in L^2$ as well. A function that stays away from $0$ up to $\partial\Omega$ and is $0$ outside has a jump at the boundary, and a jump has no $L^2$ derivative --- its derivative is a delta (Example~\ref{ex:sgn-no-weak}).
+
+%% >>> ADDED: the precise form of Wu's remark (not from lecture)
+Precisely: if $g_n \in C_c^\infty(\Omega)$ converge to $f$ in $H^1_0(\Omega)$, their extensions by zero (Proposition~\ref{prop:extension-zero}) have the same norms, so they are Cauchy in the $W^{1,2}(\mathbb{R}^n)$ norm; hence the extension $\tilde f$ of $f$ by zero has weak derivatives in $L^2(\mathbb{R}^n)$, namely the extensions of $\partial_{x_j} f$ (Proposition~\ref{prop:limit-ibp} on $\mathbb{R}^n$). In one dimension, $\tilde f$ therefore cannot jump at an endpoint of $\Omega$.
+%% <<< END ADDED
+\end{rembox}
+
+%% >>> ADDED: figure (not drawn in lecture; Wu sketched a rough function at the boundary)
+\begin{center}
+\begin{tikzpicture}[x=1.4cm, y=1.2cm, >=stealth]
+    \begin{scope}
+        \draw[->] (-0.3,0) -- (3.4,0) node[right] {$x$};
+        \draw[thick, blue!70!black, domain=0:3, samples=60] plot (\x, {1.2*sin(60*\x)^2});
+        \draw[thick, blue!70!black] (-0.3,0) -- (0,0); \draw[thick, blue!70!black] (3,0) -- (3.3,0);
+        \node[below] at (0,0) {$a$}; \node[below] at (3,0) {$b$};
+        \node[below, text width=4cm, align=center] at (1.5,-0.35) {$\tilde f$ comes down to $0$: \\ in $H^1_0(a,b)$};
+    \end{scope}
+    \begin{scope}[xshift=6.4cm]
+        \draw[->] (-0.3,0) -- (3.4,0) node[right] {$x$};
+        \draw[thick, red!75!black, domain=0:3, samples=60] plot (\x, {0.7+0.25*sin(120*\x)});
+        \draw[thick, red!75!black] (-0.3,0) -- (0,0); \draw[thick, red!75!black] (3,0) -- (3.3,0);
+        \draw[dotted, red!75!black] (0,0) -- (0,0.7); \draw[dotted, red!75!black] (3,0) -- ({3},{0.7+0.25*sin(360)});
+        \node[below] at (0,0) {$a$}; \node[below] at (3,0) {$b$};
+        \node[below, text width=4cm, align=center] at (1.5,-0.35) {jumps at $a$, $b$: $\tilde f'$ has \\ deltas, not in $H^1_0(a,b)$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+In one dimension, extended by zero: an element of $H^1_0(a,b)$ must come down to $0$ at the endpoints; a function that jumps there does not belong, although as an $L^2$ function it could be changed at the two endpoints without changing anything.
+%% <<< END ADDED
+
+
+% ============================================================================
+% SECTION: WEAK SOLUTIONS OF THE DIRICHLET PROBLEM (Lecture 12)
+% ============================================================================
+
+\section{Weak Solutions of the Dirichlet Problem}\label{sec:dirichlet}
+
+\roadmark{Stage: maps}{Thread: functionals. A boundary value problem for a PDE becomes the representation of a bounded functional by a coercive form.}
+
+Wu: ``we are going to do some application in analysis.'' Throughout, a \emph{bounded domain} is a bounded open set $\Omega \subset \mathbb{R}^n$, and functions are real-valued (``in the real world temperature is real''). $C^2(\overline{\Omega})$ denotes the functions whose derivatives up to order $2$ exist on $\Omega$ and extend continuously to $\overline{\Omega}$, as in Example~\ref{ex:diff-bounded}.
+
+\begin{defbox}[The Dirichlet Problem]\boxlabel{def:dirichlet}
+Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f$ a function on $\Omega$. The \textbf{Dirichlet problem} for the Poisson equation is
+\[
+(D) \qquad \begin{cases} -\Delta u(x) = f(x), & x \in \Omega, \\ \phantom{-\Delta} u(x) = 0, & x \in \partial\Omega, \end{cases} \qquad \Delta = \partial_{x_1}^2 + \cdots + \partial_{x_n}^2 .
+\]
+A \textbf{classical solution} is a $u \in C^2(\overline{\Omega})$ satisfying both equations pointwise.
+\end{defbox}
+
+\begin{rembox}[Where the Equation Comes From]\label{rem:where-equation-comes}
+The heat equation $(\partial_t - \mu\Delta) u = f(x)$, $\mu > 0$, describes the temperature $u(x,t)$ in a piece of material occupying $\Omega$, with a time-independent heat source $f$; the term $\mu\Delta u$ is diffusion. Hold the boundary at temperature $0$, keep heating, and wait: the temperature settles to an equilibrium, which no longer depends on $t$, so $\partial_t u = 0$ and $-\mu\Delta u = f$. (Absorbing $\mu$ into $f$ gives $(D)$.) So $(D)$ describes the equilibrium state of a heated piece of material, $u$ the temperature and $f$ the heat source. If the model is right, there should be exactly one equilibrium. Hence Wu's question: \emph{does $(D)$ have a unique solution for every $f$?}
+\end{rembox}
+
+%% FIGURE (board): redrawn from Wu's board sketch; labels and caption by Claude
+\begin{center}
+\begin{tikzpicture}[scale=1.1, >=stealth]
+    \draw[thick, fill=blue!5] plot[smooth cycle, tension=0.8] coordinates {(-2.4,0.2) (-1.6,1.1) (0.5,1.2) (2.3,0.6) (2.1,-0.8) (0.2,-1.15) (-1.8,-0.85)};
+    \node at (-1.7,0.35) {$\Omega$};
+    \foreach \dx in {-0.15,0,0.15} {\draw[thick, red!75!black] plot[smooth, domain=0:1, samples=20] ({0.4+\dx+0.08*sin(720*\x)}, {-0.45+0.6*\x});}
+    \node[red!75!black, anchor=east] at (0.1,-0.1) {heat source $f$};
+    \node[anchor=west] at (2.55,-0.35) {$u = 0$ on $\partial\Omega$};
+\end{tikzpicture}
+\end{center}
+The board picture: a plate held at temperature $0$ on its boundary and heated inside. The equilibrium temperature $u$ solves $(D)$.
+
+\begin{rembox}[Why Not Solve Directly]\label{rem:why-not-solve-directly}
+Finding an exact solution is generally out of reach: formulas are available essentially only for ODE, and a PDE on a rectangle can be reduced to ODE by separation of variables, but a general domain cannot. A student suggested approximating $\Omega$ by small rectangles; Wu: on each small rectangle one would need its boundary values, which are exactly what is unknown --- different boundary temperatures give different solutions. The strategy is instead to \emph{enlarge the class of solutions}: find a solution in a weaker sense, then (regularity theory, not covered) show that it is classical when $f$ is smooth. ``When you don't have anywhere to go, you try to expand your search.''
+\end{rembox}
+
+\begin{propbox}[Classical Solutions Satisfy the Weak Equation]\boxlabel{prop:weak-form}
+Let $u \in C^2(\overline{\Omega})$ be a classical solution of $(D)$ with $f$ continuous. Then
+\[
+\int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx = \int_\Omega f(x)\, v(x)\, dx \qquad \text{for all } v \in C_c^2(\Omega).
+\]
+\end{propbox}
+
+\begin{proof}
+Multiply the equation by $v$ and integrate: $\int_\Omega -\Delta u\, v\, dx = \int_\Omega f\, v\, dx$. Write $\Delta u = \operatorname{div}(\nabla u)$, where $\operatorname{div}\vec F = \partial_{x_1} F_1 + \cdots + \partial_{x_n} F_n$. By the product rule in each component,
+\[
+\operatorname{div}(v\, \nabla u) = \sum_{j=1}^n \partial_{x_j}\bigl( v\, \partial_{x_j} u \bigr) = \nabla v \cdot \nabla u + v\, \Delta u .
+\]
+By the divergence theorem $\int_\Omega \operatorname{div}\vec F\, dx = \int_{\partial\Omega} \vec n \cdot \vec F\, dS$, with $\vec n$ the outward unit normal,
+\[
+\int_\Omega \nabla v \cdot \nabla u\, dx + \int_\Omega v\, \Delta u\, dx = \int_{\partial\Omega} (\vec n \cdot \nabla u)\, v\, dS = 0,
+\]
+because $v = 0$ on $\partial\Omega$. Hence $\int_\Omega \nabla u \cdot \nabla v\, dx = -\int_\Omega v\, \Delta u\, dx = \int_\Omega f v\, dx$.
+
+%% FILL-IN: a route that needs no regularity of the boundary.
+(The divergence theorem needs a smooth enough $\partial\Omega$. It can be avoided: for each $j$, Lemma~\ref{lem:ibp-test} with $g = \partial_{x_j} u \in C^1(\Omega)$ and $\varphi = v$ gives $\int_\Omega \partial_{x_j}^2 u\, v = -\int_\Omega \partial_{x_j} u\, \partial_{x_j} v$; its proof uses only $\varphi \in C^1$ with compact support in $\Omega$. Summing over $j$ gives the same identity.)
+\end{proof}
+
+\begin{rembox}\label{rem:dirichlet}
+Two points Wu made. Only $v$ has to vanish on the boundary; $\nabla u$ need not, and indeed for $u$ in the larger class below, $\nabla u$ is only in $L^2$ and has no boundary values at all. And $u$ need not be $C_c^2$: $C^2$ up to the boundary is enough to integrate by parts.
+\end{rembox}
+
+\begin{defbox}[Weak Solution]\boxlabel{def:weak-solution}
+Let $f \in L^2(\Omega)$. A function $u \in H^1_0(\Omega)$ is a \textbf{weak solution} of $(D)$ if
+\[
+\int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx = \int_\Omega f(x)\, v(x)\, dx \qquad \text{for all } v \in H^1_0(\Omega),
+\]
+where $\nabla u$, $\nabla v$ are weak gradients.
+\end{defbox}
+
+\begin{rembox}[Why This is the Right Definition]\label{rem:why-this-right-definition}
+The boundary condition $u = 0$ is built into the space $H^1_0(\Omega)$, and the equation is the identity of Proposition~\ref{prop:weak-form}, which makes sense as soon as $u, v \in H^1_0$ and $f \in L^2$, because only first derivatives in $L^2$ appear. A strong (classical) solution is a weak solution; a weak solution need not be strong, and showing that it is (for smooth $f$) is the regularity theory of PDE (Wu: ``you need to show if my source is smooth, then the solution is smooth''). The only difference between the two notions is the class of functions in which a solution is sought.
+
+%% >>> ADDED: details behind "classical implies weak" (not from lecture)
+To pass from $v \in C_c^2$ to $v \in H^1_0$: if $u \in H^1_0(\Omega)$ satisfies the identity for all $v \in C_c^\infty(\Omega)$, it satisfies it for all $v \in H^1_0(\Omega)$, because $C_c^\infty$ is dense in $H^1_0$ and both sides are continuous in $v$ for the $H^1_0$ norm (by Cauchy--Schwarz, $|\int \nabla u \cdot \nabla v| \le \|\nabla u\|_{L^2}\|\nabla v\|_{L^2}$ and $|\int f v| \le \|f\|_{L^2}\|v\|_{L^2}$). That a classical solution of $(D)$ lies in $H^1_0(\Omega)$ is true for domains with a reasonable boundary, but is not proved here.
+%% <<< END ADDED
+\end{rembox}
+
+\begin{thmbox}[Existence and Uniqueness of Weak Solutions]\boxlabel{thm:dirichlet-weak}
+Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f \in L^2(\Omega)$. Then $(D)$ has a unique weak solution $u \in H^1_0(\Omega)$.
+\end{thmbox}
+
+\begin{proof}
+\textbf{Step 1: the Hilbert space.} $H^1_0(\Omega)$, over $\mathbb{R}$, with the inner product
+\[
+(u, v)_{H^1_0} = \int_\Omega u(x)\, v(x)\, dx + \int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx,
+\]
+is a Hilbert space (Proposition~\ref{prop:H10-hilbert}). Write $\|u\|_{H^1_0}^2 = \|u\|_{L^2}^2 + \|\nabla u\|_{L^2}^2$.
+
+\textbf{Step 2: the form is bilinear and bounded.} Let $B(u, v) = \int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx$. It is bilinear, and
+\[
+|B(u, v)| \le \|\nabla u\|_{L^2}\, \|\nabla v\|_{L^2} \le \|u\|_{H^1_0}\, \|v\|_{H^1_0} .
+\]
+%% FILL-IN: the two Cauchy--Schwarz steps and the last inequality.
+(The first inequality: $|\nabla u \cdot \nabla v| \le |\nabla u|\,|\nabla v|$ pointwise by Cauchy--Schwarz in $\mathbb{R}^n$, then Cauchy--Schwarz in $L^2$; the second because $\|\nabla u\|_{L^2} \le \|u\|_{H^1_0}$ by the definition of the norm.)
+
+\textbf{Step 3: the form is coercive.} We want $\alpha > 0$ with $B(u,u) \ge \alpha \|u\|_{H^1_0}^2$, i.e.
+\[
+\int_\Omega |\nabla u|^2\, dx \ge \alpha \Bigl( \int_\Omega |u|^2\, dx + \int_\Omega |\nabla u|^2\, dx \Bigr) .
+\]
+By the Poincar\'e inequality on $H^1_0$ (Corollary~\ref{cor:poincare-H10}), $\int_\Omega |u|^2 \le C_0 \int_\Omega |\nabla u|^2$ for all $u \in H^1_0(\Omega)$, with $C_0 = C^2$. Hence
+\[
+\|u\|_{H^1_0}^2 \le C_0 \int_\Omega |\nabla u|^2\, dx + \int_\Omega |\nabla u|^2\, dx = (C_0 + 1)\, B(u, u),
+\]
+and $\alpha = \frac{1}{1 + C_0}$ works. Wu: coercivity ``is really important here'' --- $B$ contains only the gradient, and it is Poincar\'e that controls the missing $L^2$ part.
+
+\textbf{Step 4: the functional is bounded.} Let $\ell(v) = \int_\Omega f(x)\, v(x)\, dx$ for $v \in H^1_0(\Omega)$. It is linear, and by Cauchy--Schwarz in $L^2$,
+\[
+|\ell(v)| \le \|f\|_{L^2}\, \|v\|_{L^2} \le \|f\|_{L^2}\, \|v\|_{H^1_0},
+\]
+so $\ell \in H^1_0(\Omega)'$.
+
+\textbf{Step 5: Lax--Milgram.} By Theorem~\ref{thm:lax-milgram} there is a unique $u \in H^1_0(\Omega)$ with $\ell(v) = B(v, u)$ for all $v \in H^1_0(\Omega)$. %% FILL-IN: the order of the slots.
+Since $B$ is symmetric, $B(v, u) = B(u, v)$, and the identity reads $\int_\Omega \nabla u \cdot \nabla v\, dx = \int_\Omega f v\, dx$ for all $v$: $u$ is a weak solution, and it is the only one.
+\end{proof}
+
+\begin{rembox}\label{rem:dirichlet-2}
+Here $B$ is symmetric, so Lax--Milgram reduces to the Riesz representation theorem for the inner product $B$ (Proposition~\ref{prop:sym-lax-milgram}); Steps 2 and 3 say exactly that $B$ is an inner product on $H^1_0(\Omega)$ whose norm is equivalent to $\|\cdot\|_{H^1_0}$. Wu's point: for the Laplacian the form is symmetric, but for general elliptic equations (below) it is not, and then Lax--Milgram is needed. The proof gives existence and uniqueness, not a construction; a student asked how to find $u$: there are numerical methods, which are the subject of another course.
+\end{rembox}
+
+\begin{rembox}[Nonzero Boundary Values]\label{rem:nonzero-boundary-values}
+Wu sketched how a solution can be sought in practice. To solve $\Delta u = f$ in $\Omega$ with given boundary values, first find any $u_0$ with $\Delta u_0 = f$, ignoring the boundary. Then $w = u - u_0$ solves the Laplace equation $\Delta w = 0$ in $\Omega$ with boundary values $w = u - u_0$ on $\partial\Omega$ (for $u = 0$ on $\partial\Omega$, $w = -u_0$ there): an equilibrium with no heat source, held at prescribed boundary temperatures. In one dimension $w'' = 0$ means $w$ is linear, fixed by its two boundary values; in higher dimensions one can approximate $w$ from below by ``subsolutions'' (Perron's method). Not covered.
+\end{rembox}
+
+\begin{thmbox}[General Elliptic Equations]\boxlabel{thm:elliptic}
+Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $A(x) = (a_{ij}(x))$ an $n \times n$ real matrix of bounded measurable functions on $\Omega$ that is \textbf{uniformly positive definite}: there are $\alpha, \Lambda > 0$ with
+\[
+\xi^{\mathsf T} A(x)\, \xi \ge \alpha\, |\xi|^2 \quad \text{and} \quad |A(x)\xi| \le \Lambda\, |\xi| \qquad \text{for all } \xi \in \mathbb{R}^n,\ x \in \Omega .
+\]
+For every $f \in L^2(\Omega)$ the problem $-\operatorname{div}(A(x)\nabla u(x)) = f(x)$ in $\Omega$, $u = 0$ on $\partial\Omega$, has a unique weak solution $u \in H^1_0(\Omega)$: $\int_\Omega (A \nabla u) \cdot \nabla v\, dx = \int_\Omega f v\, dx$ for all $v \in H^1_0(\Omega)$. For $A = I$ this is Theorem~\ref{thm:dirichlet-weak}.
+\end{thmbox}
+
+\begin{proof}
+%% FILL-IN: Wu stated the setting (A = I is Laplace; A positive definite with lower bound alpha) and said "it goes through the same process ... I will not go through it". The proof is Claude's.
+(Stated in lecture; Wu: ``it goes through the same process.'') The weak formulation comes from $\operatorname{div}(v A\nabla u) = \nabla v \cdot A\nabla u + v \operatorname{div}(A\nabla u)$, as in Proposition~\ref{prop:weak-form}. Let $B(v, u) = \int_\Omega (A(x)\nabla u) \cdot \nabla v\, dx$; it is bilinear. \emph{Bounded:} $|(A\nabla u)\cdot\nabla v| \le \Lambda |\nabla u|\, |\nabla v|$, so $|B(v,u)| \le \Lambda \|u\|_{H^1_0} \|v\|_{H^1_0}$ as in Step 2 above. \emph{Coercive:} $(A\xi)\cdot\xi = \xi^{\mathsf T} A\, \xi$ (a $1 \times 1$ matrix equals its transpose, and $(A\xi)\cdot\xi = \xi^{\mathsf T}A^{\mathsf T}\xi$), so $B(u,u) \ge \alpha \int_\Omega |\nabla u|^2 \ge \frac{\alpha}{1 + C_0} \|u\|_{H^1_0}^2$ by Step 3 above. The functional $\ell$ is as in Step 4. Theorem~\ref{thm:lax-milgram} gives a unique $u$ with $\ell(v) = B(v, u)$ for all $v$, which is the weak equation. Unless $A$ is symmetric, $B$ is not symmetric, and the Riesz theorem alone does not apply.
+\end{proof}
+
+% ============================================================================
+% SECTION: THE RADON-NIKODYM THEOREM (Lecture 12)
+% ============================================================================
+
+\section{Measures and the Radon--Nikodym Theorem}\label{sec:radon-nikodym}
+
+\roadmark{Stage: maps}{Thread: functionals. A density between two measures is the Riesz representer of a bounded functional on an $L^2$ space.}
+
+Wu: the Radon--Nikodym theorem, whose measure-theoretic proof is difficult, follows quickly from the Riesz representation theorem; it will be needed later. For those who have taken measure theory the definitions are a review.
+
+\begin{defbox}[{{$\sigma$-Algebra}}]\boxlabel{def:sigma-algebra}
+Let $X$ be a set. A collection $\mathcal{A}$ of subsets of $X$ is a \textbf{$\sigma$-algebra} if
+\begin{enumerate}[label=(\roman*)]
+    \item $\varnothing \in \mathcal{A}$;
+    \item if $A \in \mathcal{A}$, then $A^c = X \setminus A \in \mathcal{A}$;
+    \item if $A_j \in \mathcal{A}$ for $j = 1, 2, \ldots$, then $\bigcup_{j=1}^\infty A_j \in \mathcal{A}$.
+\end{enumerate}
+\end{defbox}
+
+\begin{defbox}[Measurable Space]\boxlabel{def:measurable-space}
+A \textbf{measurable space} is a pair $(X, \mathcal{A})$ of a set $X$ and a $\sigma$-algebra $\mathcal{A}$ of subsets of $X$ (Definition~\ref{def:sigma-algebra}).
+\end{defbox}
+
+\begin{defbox}[Measure]\boxlabel{def:measure}
+A \textbf{(positive) measure} on a measurable space $(X, \mathcal{A})$ (Definition~\ref{def:measurable-space}) is a map $\mu : \mathcal{A} \to [0, \infty]$ with
+\begin{enumerate}[label=(\arabic*)]
+    \item $\mu(\varnothing) = 0$;
+    \item $\mu(A) \ge 0$ for all $A \in \mathcal{A}$;
+    \item countable additivity: if $A_j \in \mathcal{A}$ are pairwise disjoint ($A_i \cap A_j = \varnothing$ for $i \neq j$), then $\mu\bigl( \bigcup_{j=1}^\infty A_j \bigr) = \sum_{j=1}^\infty \mu(A_j)$.
+\end{enumerate}
+\end{defbox}
+
+\begin{defbox}[Finite Measure]\boxlabel{def:finite-measure}
+A measure $\mu$ on $(X, \mathcal{A})$ (Definition~\ref{def:measure}) is \textbf{finite} if $\mu(X) < \infty$.
+\end{defbox}
+
+\begin{exbox}[Lebesgue Measure and a Restriction of It]\boxlabel{ex:restricted-measure}
+On $\mathbb{R}^2$, Lebesgue measure $m$ gives a rectangle $R = [a,b] \times [c,d]$ the measure $m(R) = (b-a)(d-c)$; a general set is measured by covering it with rectangles. On the same sets one can define other measures. Wu's example: fix a measurable set $\Omega$, ``the piece of material we care about'', and let
+\[
+\nu(E) = m(E \cap \Omega) .
+\]
+A rectangle outside $\Omega$ has $\nu$-measure $0$, and one inside has $\nu(R) = m(R)$.
+\end{exbox}
+
+%% FIGURE (board): redrawn from Wu's board sketch; labels and caption by Claude
+\begin{center}
+\begin{tikzpicture}[scale=1.2, >=stealth]
+    \draw[thick, blue!70!black] (0,0) ellipse (1.8 and 1.0);
+    \node[blue!70!black] at (-1.25,0.2) {$\Omega$};
+    \begin{scope}
+        \clip (0,0) ellipse (1.8 and 1.0);
+        \fill[pattern=north east lines, pattern color=red!75!black] (0.6,0.2) rectangle (2.4,1.3);
+    \end{scope}
+    \draw[thick, red!75!black] (0.6,0.2) rectangle (2.4,1.3);
+    \node[red!75!black, anchor=west] at (2.45,1.1) {$E$};
+    \draw[thick] (3.2,-0.6) rectangle (3.7,-0.2);
+    \node[anchor=west] at (3.75,-0.4) {$\nu = 0$};
+    \node[anchor=west] at (2.45,0.5) {$\nu(E) = m(E \cap \Omega)$};
+\end{tikzpicture}
+\end{center}
+Only the hatched part of $E$ counts for $\nu$; a set disjoint from $\Omega$ has $\nu$-measure zero, and a set of Lebesgue measure zero has $\nu$-measure zero.
+
+\begin{defbox}[Absolute Continuity]\boxlabel{def:abs-cont}
+Let $\mu$ and $\nu$ be measures on the same measurable space $(X, \mathcal{A})$. $\nu$ is \textbf{absolutely continuous} with respect to $\mu$, written $\nu \ll \mu$, if
+\[
+\mu(E) = 0 \implies \nu(E) = 0 \qquad \text{for all } E \in \mathcal{A} .
+\]
+\end{defbox}
+
+\begin{exbox}[The Restricted Measure has a Density]\boxlabel{ex:restricted-density}
+%% FILL-IN: the example worked out (Wu: "this seems to be the situation").
+In Example~\ref{ex:restricted-measure}, $\nu \ll m$: if $m(E) = 0$ then $0 \le \nu(E) = m(E \cap \Omega) \le m(E) = 0$. Moreover $\nu(E) = \int_E \chi_\Omega\, dm$. The theorem below says that this is the general situation: a measure absolutely continuous with respect to $\mu$ is $\mu$ weighted by a density.
+\end{exbox}
+
+\begin{rembox}[Facts Assumed from Measure Theory]\label{rem:facts-assumed-measure-theory}
+%% ADDED: the background the proof uses (not stated in lecture).
+Integration against an abstract measure is assumed as in a course on measure theory: for a measure $\lambda$, $L^2(\lambda)$ (real functions with $\int f^2 d\lambda < \infty$, identified when equal $\lambda$-a.e.) is a Hilbert space with $(f, g) = \int f g\, d\lambda$; the monotone convergence theorem; and continuity of measure from below. If $\mu, \nu$ are measures, so is $\mu + \nu$ (sums of non-negative series can be rearranged), and $\int h\, d(\mu+\nu) = \int h\, d\mu + \int h\, d\nu$ for every measurable $h \ge 0$, hence for every $h \in L^1(\mu + \nu)$.
+\end{rembox}
+
+\begin{thmbox}[Radon--Nikodym]\boxlabel{thm:radon-nikodym}
+Let $(X, \mathcal{A})$ be a measurable space and $\mu, \nu$ finite measures on it with $\nu \ll \mu$. Then there is a measurable $g \ge 0$ with $g \in L^1(\mu)$ (i.e.\ $\int_X g\, d\mu < \infty$) such that
+\[
+\nu(E) = \int_E g(x)\, d\mu(x) \qquad \text{for all } E \in \mathcal{A} .
+\]
+\end{thmbox}
+
+\begin{proof}
+(von Neumann's proof, following Wu; real scalars throughout.)
+
+\textbf{Step 1: the Hilbert space and the functional.} Let $H = L^2(\mu + \nu)$, with $(f, g) = \int_X f g\, d(\mu + \nu)$, and $\ell(f) = \int_X f\, d\mu$ for $f \in H$. $\ell$ is linear. It is bounded: by Cauchy--Schwarz in $L^2(\mu)$ and $\mu \le \mu + \nu$,
+\[
+|\ell(f)| \le \Bigl( \int_X f^2\, d\mu \Bigr)^{1/2} \Bigl( \int_X 1\, d\mu \Bigr)^{1/2} \le \mu(X)^{1/2} \Bigl( \int_X f^2\, d(\mu + \nu) \Bigr)^{1/2} = \mu(X)^{1/2}\, \|f\|_H .
+\]
+%% FILL-IN: why ell is defined on classes.
+(If $f = 0$ $(\mu+\nu)$-a.e. then $f = 0$ $\mu$-a.e., so $\ell$ is defined on classes, and the inequality shows $f \in L^1(\mu)$.)
+
+\textbf{Step 2: Riesz.} By Theorem~\ref{thm:riesz-rep} there is a unique $g_0 \in H$ with
+\[
+\int_X f\, d\mu = \ell(f) = (f, g_0) = \int_X f g_0\, d(\mu + \nu) \qquad \text{for all } f \in H .
+\]
+%% FILL-IN: why the rearrangement is legitimate.
+Since $f g_0 \in L^1(\mu + \nu)$ (Cauchy--Schwarz in $H$), the last integral splits as $\int f g_0\, d\mu + \int f g_0\, d\nu$, and rearranging,
+\begin{equation}\label{eq:rn-identity}
+\int_X f\, (1 - g_0)\, d\mu = \int_X f g_0\, d\nu \qquad \text{for all } f \in H .
+\end{equation}
+
+\textbf{Step 3: $0 < g_0 \le 1$ $\mu$-a.e.} Fix a real-valued measurable representative of $g_0$. Let $F_1 = \{ x : g_0(x) \le 0 \}$ and take $f = \chi_{F_1}$, which is in $H$ since $\mu + \nu$ is finite. On $F_1$, $1 - g_0 \ge 1$ and $g_0 \le 0$, so by \eqref{eq:rn-identity}
+\[
+\mu(F_1) = \int_X \chi_{F_1}\, d\mu \le \int_X \chi_{F_1} (1 - g_0)\, d\mu = \int_X \chi_{F_1}\, g_0\, d\nu \le 0 .
+\]
+Hence $\mu(F_1) = 0$. Next let $F_2 = \{ x : g_0(x) > 1 \}$ and take $f = \chi_{F_2}$. Then
+\[
+\int_X \chi_{F_2}(1 - g_0)\, d\mu = \int_X \chi_{F_2}\, g_0\, d\nu \ge \nu(F_2) \ge 0 .
+\]
+If $\mu(F_2) > 0$, the left side is $< 0$, since $1 - g_0 < 0$ on $F_2$ --- a contradiction. %% FILL-IN: why the left side is strictly negative.
+(Strictly: $F_2 = \bigcup_k \{ g_0 > 1 + \frac1k \}$, so some $G_k = \{ g_0 > 1 + \frac1k\}$ has $\mu(G_k) > 0$, and the left side is at most $-\frac1k \mu(G_k) < 0$.) Hence $\mu(F_2) = 0$.
+
+\textbf{Step 4: modify $g_0$ on a null set.} By absolute continuity, $\nu(F_1 \cup F_2) = 0$ as well; this is where $\nu \ll \mu$ is used. Redefine $g_0 = 1$ on $F_1 \cup F_2$. The new $g_0$ differs from the old one only on a set of $(\mu + \nu)$-measure zero, so it is the same element of $H$ and \eqref{eq:rn-identity} still holds; now $0 < g_0(x) \le 1$ for every $x \in X$.
+
+\textbf{Step 5: the density.} Define
+\[
+g(x) = \frac{1 - g_0(x)}{g_0(x)} \ge 0,
+\]
+measurable as a quotient of measurable functions with a denominator that never vanishes. Wu's choice of test function is $f = \chi_E / g_0$ for $E \in \mathcal{A}$: then $f g_0 = \chi_E$ and $f(1 - g_0) = \chi_E\, g$, so \eqref{eq:rn-identity} reads $\int_E g\, d\mu = \nu(E)$. Wu left one check to the class: $f \in H$.
+%% FILL-IN: the check is not automatic -- f need not be in H -- and is replaced by a truncation.
+This needs care, because $g_0$ may take arbitrarily small values, and then $\chi_E/g_0$ need not be in $L^2(\mu + \nu)$. Truncate: for $k \in \mathbb{N}$ let $E_k = E \cap \{ g_0 \ge \frac1k \}$ and $f_k = \chi_{E_k}/g_0$. Then $0 \le f_k \le k$, so $f_k \in H$, and \eqref{eq:rn-identity} with $f = f_k$ gives
+\[
+\nu(E_k) = \int_X \chi_{E_k}\, d\nu = \int_X f_k g_0\, d\nu = \int_X f_k (1 - g_0)\, d\mu = \int_{E_k} g\, d\mu .
+\]
+Since $g_0 > 0$ everywhere, the sets $E_k$ increase to $E$. By continuity of measure from below, $\nu(E_k) \to \nu(E)$; by the monotone convergence theorem ($0 \le g\chi_{E_k} \uparrow g\chi_E$), $\int_{E_k} g\, d\mu \to \int_E g\, d\mu$. Hence $\nu(E) = \int_E g\, d\mu$.
+
+\textbf{Step 6: integrability.} Taking $E = X$, $\int_X g\, d\mu = \nu(X) < \infty$, so $g \in L^1(\mu)$.
+\end{proof}
+
+%% >>> ADDED: definition (terminology, not from lecture)
+\begin{defbox}[Radon--Nikodym Derivative]\boxlabel{def:rn-derivative}
+A function $g$ as in Theorem~\ref{thm:radon-nikodym} is a \textbf{Radon--Nikodym derivative} of $\nu$ with respect to $\mu$, written $g = \dfrac{d\nu}{d\mu}$; the theorem reads $\nu(E) = \int_E \frac{d\nu}{d\mu}\, d\mu$.
+\end{defbox}
+%% <<< END ADDED
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[Where Absolute Continuity is Used]\label{rem:where-absolute-continuity-used}
+A student asked where $\nu \ll \mu$ enters; Wu: ``not yet'' through Step 3, and then in Step 4. It is needed only for $F_1$. For $F_2$ it is automatic: \eqref{eq:rn-identity} with $f = \chi_{F_2}$ and $\mu(F_2) = 0$ gives $\int_{F_2} g_0\, d\nu = 0$ with $g_0 > 1$ on $F_2$, so $\nu(F_2) = 0$. But $\nu(F_1) = 0$ can fail without absolute continuity. Example: $X = [0,1]$, $\mu$ Lebesgue measure, $\nu = \delta_0$ the unit point mass at $0$. Then \eqref{eq:rn-identity} forces $g_0 = 1$ $\mu$-a.e.\ and $g_0(0) = 0$, so $F_1 = \{0\}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$: the point mass hides exactly where $g_0 = 0$, and no density exists.
+\end{rembox}
+%% <<< END ADDED
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}\label{rem:radon-nikodym}
+The truncation in Step 5 is necessary, not cosmetic. On $X = [0,1]$ with $\mu$ Lebesgue measure and $d\nu = x^{-1/2}\, dx$ (a finite measure, $\nu \ll \mu$), the proof produces $g_0 = 1/(1 + x^{-1/2})$, and $\chi_X / g_0 = 1 + x^{-1/2}$ has $\int (1 + x^{-1/2})^2\, d(\mu + \nu) = \int_0^1 (1 + x^{-1/2})^3\, dx = \infty$. Here $d\nu/d\mu = x^{-1/2}$ (Definition~\ref{def:rn-derivative}). The density is unique $\mu$-a.e., and the theorem also holds for $\sigma$-finite and for signed measures (Wu: ``Radon--Nikodym has a more general statement''). Neither was covered.
+\end{rembox}
+%% <<< END ADDED
 
 % ============================================================================
 % SECTION 29: R^n, C^m AND L^p (EXAMPLES REVISITED)
@@ -5948,6 +6331,8 @@ Differentiation is the test case for boundedness. With the $C^m$ norm on the dom
 \subsection{$L^p$, $L^2$ and $\ell^2$}
 
 The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R}^n)$ with norm at most $1$ (Example~\ref{ex:fourier-L1}). By the Riesz representation theorem, $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ (Example~\ref{ex:L2-dual}); this is a Hilbert-space phenomenon (Remark~\ref{rem:not-every-space-own-dual}), and for $1 \le p < \infty$ the dual of $L^p$ is $L^{p'}$ (Theorem~\ref{thm:Lp-dual}).
+
+Lecture~12 used $L^2$ twice more. The Dirichlet problem is solved in $H^1_0(\Omega)$, a completion inside $L^2$, where the source term $f \in L^2(\Omega)$ gives the bounded functional $v \mapsto \int_\Omega f v$ (Theorem~\ref{thm:dirichlet-weak}); and the Radon--Nikodym theorem applies the Riesz representation theorem in $L^2(\mu + \nu)$ for an abstract measure (Theorem~\ref{thm:radon-nikodym}).
 
 \noindent\textit{Chain:} $\leftarrow$ Chapter~5 (\ref{sec:rev-ch5}) $\cdot$ Chapter~7, $L^2(\mathbb{R}^n)$ as a state space (Theorem~\ref{thm:L2-separable}) $\rightarrow$
 
@@ -6583,6 +6968,46 @@ For a linear functional $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the ve
 \item Closed null space implies bounded (P5, Proposition~\ref{prop:bounded-iff-closed}): $y_n = x_0 - x_n/\ell(x_n)$.
 \item The Riesz representation theorem, part (2) (Lemma~\ref{lem:ker-codim1}(c)).
 \end{itemize}
+\end{exbox}
+
+
+% --------------------------------------------------------------------------
+\subsection{Technique 19: Prove it on a Dense Subset, Then Take Limits}
+
+\begin{rembox}[Strategy]\label{rem:tech19}
+To prove an inequality or identity between continuous quantities on a space, prove it on a dense subset, where the functions are smooth and the classical tools (fundamental theorem of calculus, integration by parts) apply; then approximate a general element and pass to the limit, using that norms (reverse triangle inequality) and inner products (Cauchy--Schwarz) are continuous. Wu: ``a usual technique \ldots\ we only need to show it for a dense subset.''
+\end{rembox}
+
+\begin{exbox}[Applications (Lectures 11--12)]\boxlabel{ex:tech19}
+\begin{itemize}
+\item Poincar\'e on $H^1_0$ (Corollary~\ref{cor:poincare-H10}), from Poincar\'e on $C_c^\infty$.
+\item Limits in $W^{1,p}$ satisfy integration by parts (Proposition~\ref{prop:limit-ibp}).
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 20: Weak Formulation, Then Lax--Milgram}
+
+\begin{rembox}[Strategy]\label{rem:tech20}
+To solve a linear boundary value problem: multiply the equation by a test function vanishing on the boundary, integrate by parts to move one derivative onto the test function, and read off a bilinear form $B(u, v)$ and a functional $\ell(v)$. Choose the Hilbert space in which both make sense and the boundary condition is built in. Check that $B$ is bounded and coercive (coercivity usually needs an inequality such as Poincar\'e) and that $\ell$ is bounded; Lax--Milgram then gives a unique weak solution.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 12)]\boxlabel{ex:tech20}
+\begin{itemize}
+\item The Dirichlet problem for $-\Delta u = f$ (Theorem~\ref{thm:dirichlet-weak}).
+\item General elliptic equations $-\operatorname{div}(A\nabla u) = f$ (Theorem~\ref{thm:elliptic}).
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 21: Represent, Then Test with Indicator Functions}
+
+\begin{rembox}[Strategy]\label{rem:tech21}
+When the Riesz theorem produces an element $g_0$ satisfying $\int f\,(\cdots g_0 \cdots) = \cdots$ for all $f$, information about $g_0$ pointwise comes from testing with indicator functions $f = \chi_F$ of sets defined by $g_0$ itself, such as $\{g_0 \le 0\}$ or $\{g_0 > 1\}$: the identity then compares two integrals with known signs, and forces the set to be null. Check that the test functions chosen lie in the Hilbert space, truncating if necessary.
+\end{rembox}
+
+\begin{exbox}[Application (Lecture 12)]\boxlabel{ex:tech21}
+The Radon--Nikodym theorem (Theorem~\ref{thm:radon-nikodym}): $\chi_{F_1}$, $\chi_{F_2}$ give $0 < g_0 \le 1$; $\chi_{E_k}/g_0$ gives the density.
 \end{exbox}
 
 

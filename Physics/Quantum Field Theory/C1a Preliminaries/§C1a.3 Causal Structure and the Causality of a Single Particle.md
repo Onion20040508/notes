@@ -67,7 +67,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > U(t, \mathbf x) \equiv \langle\mathbf x|e^{-i\hat Ht}|\mathbf 0\rangle ,
 > $$
 >
-> with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$. Since $|\mathbf x\rangle$ is not a normalizable state ([[§37 Position Eigenstates and Continuous Resolutions#^prop-37-3|556 Prop. §37.3]]), $U(t, \cdot)$ is defined as the kernel of $e^{-i\hat Ht}$: $(e^{-i\hat Ht}\psi)(\mathbf x) = \int d^3y\,U(t, \mathbf x - \mathbf y)\,\psi(\mathbf y)$. Causality ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]]) would require $U(t, \mathbf x) = 0$ for $|\mathbf x| > |t|$.
+> with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$. Since $|\mathbf x\rangle$ is not a normalizable state ([[§39 Position Eigenstates and Continuous Resolutions#^prop-39-3|556 Prop. §39.3]]), $U(t, \cdot)$ is defined as the kernel of $e^{-i\hat Ht}$: $(e^{-i\hat Ht}\psi)(\mathbf x) = \int d^3y\,U(t, \mathbf x - \mathbf y)\,\psi(\mathbf y)$. Causality ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]]) would require $U(t, \mathbf x) = 0$ for $|\mathbf x| > |t|$.
 >
 > *Source: PHY 513 Lecture 2, Part A ("Quantum Causality of Free Particle I") · the user's PHY 513 notes, Ch. 2 §2.2 (eqs. for $U$ and the completeness relation) · PS §2.1, p. 13*
 

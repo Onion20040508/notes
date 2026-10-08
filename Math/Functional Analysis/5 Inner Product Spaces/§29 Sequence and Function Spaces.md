@@ -19,7 +19,7 @@ The dot product is the model inner product, with the conjugate on the second slo
 
 ![[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3]]
 
-*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§34 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
+*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§36 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
 
 ## C[a,b] and C²[a,b]
 
@@ -27,7 +27,7 @@ The $L^2$ inner product restricted to $C[a,b]$ proves a sharp integral inequalit
 
 ![[§25 Projection and Orthogonal Decomposition#^prop-25-8]]
 
-*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§34 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
+*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§36 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
 
 ## ℓᵖ, ℓ², ℓ∞ and c₀
 
@@ -144,7 +144,7 @@ The shift on $\ell^2$ preserves the inner product without being onto, and every 
 
 ![[§28 Existence of Orthonormal Bases and Separability#^thm-28-4]]
 
-*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§34 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
+*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§36 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
 
 ## Lᵖ and L²
 
@@ -198,7 +198,7 @@ Separability splits the $L^p$ as it split the $\ell^p$:
 
 > [!remark]- Connections
 > - Vault home: [[§35 Lᵖ as a Banach Space#^cor-35-13|551 §35.13]], via density of step functions and of $C_c$ in $L^p$, [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]] (its (iii) is the compactly supported density used in Step 1).
-> - The companion chapter's case $L^2(\mathbb{R}^n)$: [[§37 Position Eigenstates and Continuous Resolutions#^thm-37-2|§37.2]].
+> - The companion chapter's case $L^2(\mathbb{R}^n)$: [[§39 Position Eigenstates and Continuous Resolutions#^thm-39-2|§39.2]].
 
 ![[m556-20-4.svg]]
 *Step 2 and Step 3 for $n = 1$: a continuous $g$ and the step function $\varphi$ on dyadic intervals with rational heights.*
@@ -247,7 +247,7 @@ Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of po
 
 ^rem-29-2
 
-*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§34 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
+*Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§36 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
 
 ## Even and Odd Functions
 
@@ -255,7 +255,7 @@ In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the ort
 
 ![[§25 Projection and Orthogonal Decomposition#^prop-25-7]]
 
-*Chain:* [[§36 The Completeness Relation#^ex-36-1|Chapter 7 (parity)]] →
+*Chain:* [[§38 The Completeness Relation#^ex-38-1|Chapter 7 (parity)]] →
 
 ## The Fourier Basis
 
@@ -265,4 +265,4 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 ![[§27 Orthonormal Sets and Bases#^rem-27-9]]
 
-*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§36 The Completeness Relation#^ex-36-2|Chapter 7 (a particle on a ring)]] →
+*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§38 The Completeness Relation#^ex-38-2|Chapter 7 (a particle on a ring)]] →

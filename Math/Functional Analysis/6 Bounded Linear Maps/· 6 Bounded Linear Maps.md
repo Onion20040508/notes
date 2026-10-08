@@ -18,7 +18,7 @@ Linear functionals take values in the scalars. The next objects are linear maps 
 - [[§31 Dual Spaces]]
 - [[§32 Sesquilinear Forms and the Lax–Milgram Theorem]]
 - [[§33 Sobolev Spaces and Weak Derivatives]]
-- [[§34 ℝⁿ, Cᵐ and Lᵖ]]
+- [[§36 ℝⁿ, Cᵐ and Lᵖ]]
 
 ## Central results
 - [[Bounded Linear Maps Are Continuous]] (§30.2)

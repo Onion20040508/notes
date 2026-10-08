@@ -21,7 +21,7 @@ tags: [linear-algebra, hub]
 - [[§36 Alternating Multilinear Forms#^ladr-9-29|9.29 No nonzero alternating m-linear forms for m > dim V]]
 
 ## Used in (Functional Analysis)
-- [[§37 Position Eigenstates and Continuous Resolutions#^thm-37-2|Theorem §37.2: L²(ℝⁿ) is Separable]]
+- [[§39 Position Eigenstates and Continuous Resolutions#^thm-39-2|Theorem §39.2: L²(ℝⁿ) is Separable]]
 
 ## Connections
 - Gives well-defined dimension: [[§6 Dimension#^ladr-2-34|Basis length does not depend on basis]]. Also [[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]] and [[§6 Dimension#^ladr-2-37|Dimension of a subspace]].

@@ -44,7 +44,7 @@ tags: [functional-analysis, math556]
 ^rem-22-1
 
 > [!remark]- Connections
-> - The physicists' convention, used in the quantum mechanics chapter: [[§35 Bras, Kets, and the Riesz Map#^rem-35-1|Remark: Conventions]].
+> - The physicists' convention, used in the quantum mechanics chapter: [[§37 Bras, Kets, and the Riesz Map#^rem-37-1|Remark: Conventions]].
 
 > [!example] Example §22.1: Euclidean Spaces
 > On $\mathbb{R}^n$, $(x,y) = \sum_{i=1}^n x_i y_i$ is an inner product — the dot product. On $\mathbb{C}^n$,

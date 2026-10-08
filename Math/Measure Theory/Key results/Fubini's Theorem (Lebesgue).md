@@ -22,8 +22,8 @@ tags: [measure-theory, hub]
 - [[§30 Differentiating the Integral#^thm-30-3|Theorem §30.3: Linear Maps Preserve Null Sets]]
 
 ## Used in (Functional Analysis)
-- [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-1|Lemma §33.1: Integration by Parts against a Test Function]]
-- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-5|Theorem §33.5: Poincaré Inequality]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|Lemma §33.2: Integration by Parts against a Test Function]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|Theorem §33.6: Poincaré Inequality]]
 
 ## Connections
 - **Proof idea.** Apply [[Tonelli's Theorem]] to |f| to get a.e. integrable slices. Then apply it to f⁺ and f⁻ separately and subtract, which is legitimate because both iterated integrals are finite ([[§16 Limits and Positive Parts of Measurable Functions#^prop-16-5|§16.5]], [[§22 The General Lebesgue Integral#^thm-22-2|linearity]]).

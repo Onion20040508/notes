@@ -243,7 +243,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 ^def-c5a-9-3
 
-Completeness follows from orthonormality: the matrix $\sum_s\xi^s\xi^{s\dagger}$ sends each $\xi^r$ to $\sum_s\xi^s\delta^{sr} = \xi^r$, so by linearity it is the identity on $\mathbb C^2$ — the two-dimensional case of $\sum_n|n\rangle\langle n| = \mathbb 1$ ([[§36 The Completeness Relation#^prop-36-1|556 Prop. §36.1]]). For the standard basis, $\begin{pmatrix}1\\0\end{pmatrix}(1\ 0) + \begin{pmatrix}0\\1\end{pmatrix}(0\ 1) = \begin{pmatrix}1&0\\0&0\end{pmatrix} + \begin{pmatrix}0&0\\0&1\end{pmatrix} = \mathbb 1_2$.
+Completeness follows from orthonormality: the matrix $\sum_s\xi^s\xi^{s\dagger}$ sends each $\xi^r$ to $\sum_s\xi^s\delta^{sr} = \xi^r$, so by linearity it is the identity on $\mathbb C^2$ — the two-dimensional case of $\sum_n|n\rangle\langle n| = \mathbb 1$ ([[§38 The Completeness Relation#^prop-38-1|556 Prop. §38.1]]). For the standard basis, $\begin{pmatrix}1\\0\end{pmatrix}(1\ 0) + \begin{pmatrix}0\\1\end{pmatrix}(0\ 1) = \begin{pmatrix}1&0\\0&0\end{pmatrix} + \begin{pmatrix}0&0\\0&1\end{pmatrix} = \mathbb 1_2$.
 
 > [!definition] Definition §C5a.9.4: Normalization of the Spinors
 > The spinors $u^s(p)$, $v^s(p)$ are **normalized** by two choices: the two-spinors $\xi^s$, $\eta^s$ form orthonormal bases ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]), and the rest-frame solutions carry the factor $\sqrt m$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]). Equivalently (Theorems §C5a.10.1–§C5a.10.4) $\bar u^ru^s = 2m\,\delta^{rs}$, the Lorentz-invariant form (PS's normalization condition), or $u^{r\dagger}u^s = 2E_{\mathbf p}\,\delta^{rs}$, the form that survives at $m = 0$.

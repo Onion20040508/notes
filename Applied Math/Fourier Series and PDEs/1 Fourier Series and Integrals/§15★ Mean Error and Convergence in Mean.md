@@ -219,7 +219,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 *Uses:* [[§15★ Mean Error and Convergence in Mean#^thm-15-2|§15.2]], [[§15★ Mean Error and Convergence in Mean#^thm-15-4|§15.4]], [[§15★ Mean Error and Convergence in Mean#^def-15-2|Def. §15.2]]
 
 > [!remark]- Connections
-> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§36 The Completeness Relation#^thm-36-2|556 Thm. §36.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§36 The Completeness Relation#^ex-36-2|556 Ex. §36.2]].
+> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§38 The Completeness Relation#^thm-38-2|556 Thm. §38.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§38 The Completeness Relation#^ex-38-2|556 Ex. §38.2]].
 > - The converse, that every coefficient sequence with $\sum(a_n^2 + b_n^2) < \infty$ belongs to some $f$ with $\int f^2$ finite, needs a complete space of functions; this holds for the Lebesgue integral, where $L^2$ is complete (Riesz–Fischer, [[§35 Lᵖ as a Banach Space#^thm-35-11|551 Thm. §35.11]]), but not for the Riemann integral.
 
 > [!remark] Remark: Summary
