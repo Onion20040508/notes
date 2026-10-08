@@ -11,7 +11,7 @@ tags: [subject, functional-analysis]
 ---
 # Functional Analysis
 
-MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§38 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
+MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§40 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
 
 ## Roadmap
 The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces.
@@ -58,13 +58,14 @@ graph TD
   X1 -.->|2| C6
   X2 -.->|13| C4
   X2 -.->|13| C5
-  X2 -.->|6| C6
+  X2 -.->|13| C6
   X2 -.->|3| C7
+  X5 -.->|2| C6
   X4 -.->|2| C2
   X4 -.->|10| C3
   X4 -.->|11| C4
   X4 -.->|6| C5
-  X4 -.->|7| C6
+  X4 -.->|8| C6
 ```
 
 ## Chapters
@@ -106,7 +107,9 @@ graph TD
 - [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§30.5)
 - [[Bounded Sesquilinear Forms Are Bounded Operators]] (§32.1)
 - [[Lax–Milgram Theorem]] (§32.2)
-- [[Poincaré Inequality]] (§33.5)
+- [[Poincaré Inequality]] (§33.6)
+- [[Weak Solutions of the Dirichlet Problem]] (§34.2)
+- [[Radon–Nikodym Theorem]] (§35.1)
 
 ## Summaries
 - [[Functional Analysis Lax Concordance]]: notation, where the course's route differs from Lax's, the chapter map, and every Lax result cited in these notes with its counterpart here.
@@ -128,12 +131,13 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12: Density in Lᵖ]] (3)
 - [[Hölder's Inequality]] (2)
 - [[Minkowski's Inequality]] (2)
+- [[Monotone Convergence Theorem (Lebesgue)]] (2)
 - [[Riesz–Fischer Theorem]] (2)
 - [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]] (2)
-- [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|Theorem §25.6: Fubini's Theorem]] (2)
 
 **[[Topology]]**
 - [[§19 Limit Point Compactness#^thm-19-4|Theorem §19.4: Equivalence for Metrizable Spaces]] (1)
+- [[§18 Compact Spaces#^thm-18-3|Theorem §18.3: Continuous Image of Compact is Compact]] (1)
 
 **[[Single Variable Analysis]]**
 - [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3: Cauchy Implies Convergent]] (7)
@@ -146,7 +150,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (2)
 
 **[[Multivariable Analysis]]**
-- [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|Theorem §28.1: Divergence Theorem in ℝⁿ]] (1)
+- [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|Theorem §28.1: Divergence Theorem in ℝⁿ]] (2)
 
 ## Workhorse examples
 - [[Norms on ℝⁿ and their unit balls]]: the 1-, 2- and max norms; disk, square and diamond as unit balls and gauges

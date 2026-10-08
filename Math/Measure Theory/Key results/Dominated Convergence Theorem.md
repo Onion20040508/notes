@@ -37,8 +37,8 @@ tags: [measure-theory, hub]
 - [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|Theorem §19.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
 - [[§30 Boundedness and Continuity#^ex-30-2|Example §30.2: The Fourier Transform from L¹ to L^∞]]
-- [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|Example §33.3: sgn x has No Weak Derivative]]
 - [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-3|Remark: Hölder, not Dominated Convergence]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|Example §33.3: sgn x has No Weak Derivative]]
 - [[§39 Position Eigenstates and Continuous Resolutions#^prop-39-5|Proposition §39.5: The Spectral Projections of Position]]
 
 ## Connections

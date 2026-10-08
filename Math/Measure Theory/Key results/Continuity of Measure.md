@@ -24,6 +24,8 @@ tags: [measure-theory, hub]
 
 ## Used in (Functional Analysis)
 - [[§29 Sequence and Function Spaces#^prop-29-5|Proposition §29.5: L^∞(E) is Not Separable]]
+- [[§35 Measures and the Radon–Nikodym Theorem#^rem-35-1|Remark: Facts Assumed from Measure Theory]]
+- [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Theorem §35.1: Radon–Nikodym]]
 
 ## Connections
 - **Proof idea.** Write ⋃Eₙ as the disjoint union of the increments E₁, E₂ ∖ E₁, E₃ ∖ E₂, … . Countable additivity ([[Lebesgue Measurable Sets Form a σ-Algebra]]) turns m(⋃Eₙ) into a limit of partial sums, and [[§11 Lebesgue Measurable Sets#^lem-11-2|finite additivity]] identifies the N-th partial sum with m(E_N).

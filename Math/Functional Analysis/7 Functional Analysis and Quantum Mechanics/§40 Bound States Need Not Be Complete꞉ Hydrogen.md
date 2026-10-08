@@ -48,7 +48,7 @@ tags: [functional-analysis, math556, companion]
 > \sum_{n,l,m} |nlm\rangle\langle nlm| + \int_0^\infty dE\, \sum_{l,m} |E\,l\,m\rangle\langle E\,l\,m| = \mathbf{1},
 > $$
 >
-> where, as with $|x\rangle$, the continuum “states” are not in $L^2$ and the integral stands for a projection-valued measure on $[0,\infty)$. By contrast, a system confined to a compact region (the ring of the example in [[§38 The Completeness Relation#^ex-38-2|§36]], a particle in a box) or by a potential growing at infinity (the harmonic oscillator) has purely discrete spectrum, and its eigenstates alone form an orthonormal basis — as the ring example shows, compactness forces discreteness. Hydrogen's potential decays at infinity, which is what lets the electron escape and creates the continuum.
+> where, as with $|x\rangle$, the continuum “states” are not in $L^2$ and the integral stands for a projection-valued measure on $[0,\infty)$. By contrast, a system confined to a compact region (the ring of the example in [[§38 The Completeness Relation#^ex-38-2|§38]], a particle in a box) or by a potential growing at infinity (the harmonic oscillator) has purely discrete spectrum, and its eigenstates alone form an orthonormal basis — as the ring example shows, compactness forces discreteness. Hydrogen's potential decays at infinity, which is what lets the electron escape and creates the continuum.
 
 ^rem-40-1
 

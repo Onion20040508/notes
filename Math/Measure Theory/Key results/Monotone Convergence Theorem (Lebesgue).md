@@ -36,6 +36,8 @@ tags: [measure-theory, hub]
 ## Used in (Functional Analysis)
 - [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|Theorem §19.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
+- [[§35 Measures and the Radon–Nikodym Theorem#^rem-35-1|Remark: Facts Assumed from Measure Theory]]
+- [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Theorem §35.1: Radon–Nikodym]]
 
 ## Connections
 - **Not the 451 theorem.** The MATH 451 [[Monotone Convergence Theorem]] says bounded monotone sequences of reals converge. This theorem exchanges limit and integral for 0 ≤ f_k ↑ f. It uses the 451 result in Step 1, to know that lim ∫f_k exists.

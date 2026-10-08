@@ -39,4 +39,6 @@ The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R
 
 ![[§31 Dual Spaces#^thm-31-4]]
 
+Lecture 12 used $L^2$ twice more. The [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] is solved in $H^1_0(\Omega)$, a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|completion]] inside $L^2$, where the source term $f \in L^2(\Omega)$ gives the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded functional]] $v \mapsto \int_\Omega f v$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-2|§34.2]]); and the [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Radon–Nikodym theorem]] applies the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]] in $L^2(\mu + \nu)$ for an abstract [[§35 Measures and the Radon–Nikodym Theorem#^def-35-3|measure]] (Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]).
+
 *Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§39 Position Eigenstates and Continuous Resolutions#^thm-39-2|Chapter 7 (L² as a state space)]] →

@@ -270,3 +270,41 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > - The [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]], part (2) (Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]](c)).
 
 ^ex-t18
+
+## Technique 19: Prove it on a Dense Subset, Then Take Limits
+
+> [!remark] Remark: Strategy
+> To prove an inequality or identity between continuous quantities on a space, prove it on a [[§11 Normed Linear Spaces#^def-11-8|dense subset]], where the functions are smooth and the classical tools ([[§34 Fundamental Theorem of Calculus#^thm-34-1|fundamental theorem of calculus]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integration by parts]]) apply; then approximate a general element and pass to the limit, using that [[§11 Normed Linear Spaces#^prop-11-4|norms]] ([[§11 Normed Linear Spaces#^lem-11-3|reverse triangle inequality]]) and [[§25 Projection and Orthogonal Decomposition#^lem-25-1|inner products]] ([[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]) are continuous. Wu: “a usual technique … we only need to show it for a dense subset.”
+
+^rem-t19
+
+> [!example] Example T19: Applications (Lectures 11–12)
+> - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|Poincaré]] on $C_c^\infty$.
+> - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
+
+^ex-t19
+
+## Technique 20: Weak Formulation, Then Lax–Milgram
+
+> [!remark] Remark: Strategy
+> To solve a linear boundary value problem: multiply the equation by a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|test function]] vanishing on the boundary, [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integrate by parts]] to move one derivative onto the test function, and read off a [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bilinear form]] $B(u, v)$ and a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|functional]] $\ell(v)$. Choose the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] in which both make sense and the boundary condition is built in. Check that $B$ is [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bounded]] and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|coercive]] (coercivity usually needs an inequality such as [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|Poincaré]]) and that $\ell$ is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded]]; [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]] then gives a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|weak solution]].
+
+^rem-t20
+
+> [!example] Example T20: Applications (Lecture 12)
+> - The [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] for $-\Delta u = f$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-2|§34.2]]).
+> - General elliptic equations $-\operatorname{div}(A\nabla u) = f$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-4|§34.4]]).
+
+^ex-t20
+
+## Technique 21: Represent, Then Test with Indicator Functions
+
+> [!remark] Remark: Strategy
+> When the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz theorem]] produces an element $g_0$ satisfying $\int f\,(\cdots g_0 \cdots) = \cdots$ for all $f$, information about $g_0$ pointwise comes from testing with indicator functions $f = \chi_F$ of sets defined by $g_0$ itself, such as $\{g_0 \le 0\}$ or $\{g_0 > 1\}$: the identity then compares two integrals with known signs, and forces the set to be null. Check that the test functions chosen lie in the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]], truncating if necessary.
+
+^rem-t21
+
+> [!example] Example T21: Application (Lecture 12)
+> The [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Radon–Nikodym theorem]] (Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]): $\chi_{F_1}$, $\chi_{F_2}$ give $0 < g_0 \le 1$; $\chi_{E_k}/g_0$ gives the [[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|density]].
+
+^ex-t21

@@ -40,6 +40,9 @@ tags: [topology, hub]
 ## Used in (Measure Theory)
 - [[§30 Differentiating the Integral#^thm-30-1|Theorem §30.1: Continuous Maps Preserve Bounded Closed Sets]]
 
+## Used in (Functional Analysis)
+- [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|Proposition §33.1: Extension by Zero]]
+
 ## Connections
 - **Generalizes.** With Y = ℝ it is the source of the MATH 451 [[Extreme Value Theorem]]: f([a, b]) is compact, hence closed and bounded by [[Heine–Borel Theorem]].
 - **Invariance.** Compactness is therefore a topological property ([[§18 Compact Spaces#^rem-18-1|Why Compactness Matters]]). The connectedness analogue is [[Continuous Image of a Connected Space is Connected]].

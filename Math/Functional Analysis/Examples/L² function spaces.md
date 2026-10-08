@@ -19,13 +19,13 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - Fourier series converge in $L^2$, with Parseval's equality ([[§27 Orthonormal Sets and Bases#^rem-27-9|§27]])
 - $L^p(E)$, in particular $L^2(E)$, is separable ([[§29 Sequence and Function Spaces#^prop-29-4|§29]])
 - $(L^2)' = L^2$ by the Riesz representation theorem ([[§31 Dual Spaces#^ex-31-1|§31]])
-- Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§38 The Completeness Relation#^ex-38-1|§36]])
-- A particle on a ring: the Fourier basis as momentum eigenstates ([[§38 The Completeness Relation#^ex-38-2|§36]])
-- $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite ([[§39 Position Eigenstates and Continuous Resolutions#^thm-39-2|§37]])
-- Position has no eigenvectors in $L^2(\mathbb{R})$ ([[§39 Position Eigenstates and Continuous Resolutions#^prop-39-3|§37]])
-- Point evaluation is not bounded in the $L^2$ norm ([[§39 Position Eigenstates and Continuous Resolutions#^prop-39-4|§37]])
-- The spectral projections of position on $L^2(\mathbb{R}^n)$ ([[§39 Position Eigenstates and Continuous Resolutions#^prop-39-5|§37]])
-- The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§40 Bound States Need Not Be Complete꞉ Hydrogen#^cor-40-2|§38]])
+- Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§38 The Completeness Relation#^ex-38-1|§38]])
+- A particle on a ring: the Fourier basis as momentum eigenstates ([[§38 The Completeness Relation#^ex-38-2|§38]])
+- $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite ([[§39 Position Eigenstates and Continuous Resolutions#^thm-39-2|§39]])
+- Position has no eigenvectors in $L^2(\mathbb{R})$ ([[§39 Position Eigenstates and Continuous Resolutions#^prop-39-3|§39]])
+- Point evaluation is not bounded in the $L^2$ norm ([[§39 Position Eigenstates and Continuous Resolutions#^prop-39-4|§39]])
+- The spectral projections of position on $L^2(\mathbb{R}^n)$ ([[§39 Position Eigenstates and Continuous Resolutions#^prop-39-5|§39]])
+- The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§40 Bound States Need Not Be Complete꞉ Hydrogen#^cor-40-2|§40]])
 
 ## The $L^2$ inner product, convergent by Hölder's inequality
 ![[§22 Definition and Examples#^ex-22-3]]

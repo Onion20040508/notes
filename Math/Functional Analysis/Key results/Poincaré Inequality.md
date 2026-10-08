@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 33.5", "Poincaré inequality (H¹₀)"]
+aliases: ["MATH 556 33.6", "Poincaré inequality (H¹₀)"]
 tags: [functional-analysis, hub]
 ---
 ![[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6]]
@@ -19,7 +19,8 @@ tags: [functional-analysis, hub]
 - [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1: Fundamental Theorem of Calculus I]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|Corollary §33.7: Poincaré on H¹_0]]
 
 ## Connections
-- TODO
+- **What it says.** On a domain of bounded width, the $L^2$ norm of a test function is controlled by the $L^2$ norm of its gradient. It extends to $H^1_0(\Omega)$ by density ([[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|Cor. §33.7]], [[Functional Analysis Problem-Solving Techniques#^rem-t19|Technique 19]]).
+- **Used for.** Coercivity of the Dirichlet form $\int \nabla u \cdot \nabla v$, which contains no $L^2$ term of its own ([[Weak Solutions of the Dirichlet Problem]]).

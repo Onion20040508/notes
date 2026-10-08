@@ -62,10 +62,53 @@ tags: [functional-analysis, math556]
 
 ## Integration by Parts and Weak Derivatives
 
+> [!definition] Definition §33.3: Support
+> Let $\Omega \subset \mathbb{R}^n$ be open and $f : \Omega \to \mathbb{F}$ continuous. The **support** of $f$ is
+>
+> $$
+> \operatorname{supp} f = \overline{\{ x \in \Omega : f(x) \neq 0 \}},
+> $$
+>
+> the [[§11 Normed Linear Spaces#^def-11-7|closure]] in $\mathbb{R}^n$ of the set where $f$ is not zero.
+
+^def-33-3
+
+> [!definition] Definition §33.4: Compact Support
+> A continuous $f : \Omega \to \mathbb{F}$ has **compact support in $\Omega$**, written $\operatorname{supp} f \subset\subset \Omega$, if $\operatorname{supp} f$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-3|§33.3]]) is a [[§20 Compactness and the Unit Ball#^def-20-4|compact]] ([[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|closed and bounded]]) subset of $\Omega$.
+
+^def-33-4
+
+> [!remark]- Connections
+> - Support and compact support of a function on a subset of $\mathbb{R}^n$ in measure theory: [[§17 Simple Functions and Modes of Convergence#^def-17-2|551 Def. §17.2]]; on a manifold, [[§47 Vector Fields#^def-47-7|591 Def. §47.7]].
+
 > [!definition] Definition §33.5: Test Functions
-> Let $\Omega \subset \mathbb{R}^n$ be open. The **test functions** on $\Omega$ are the elements of $C_c^\infty(\Omega)$, the $C^\infty$ functions whose support is a compact subset of $\Omega$.
+> Let $\Omega \subset \mathbb{R}^n$ be open. The **test functions** on $\Omega$ are the $C^\infty$ functions with compact support in $\Omega$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-4|§33.4]]),
+>
+> $$
+> C_c^\infty(\Omega) = \{ f \in C^\infty(\Omega) : \operatorname{supp} f \subset\subset \Omega \}.
+> $$
 
 ^def-33-5
+
+> [!remark]- Connections
+> - The same space on a manifold, with bump functions as examples: [[§47 Vector Fields#^def-47-8|591 Def. §47.8]], [[§47 Vector Fields#^def-47-9|591 Def. §47.9]].
+
+> [!theorem] Proposition §33.1: Extension by Zero
+> Let $f \in C_c^\infty(\Omega)$ and $K = \operatorname{supp} f$. If $\Omega \neq \mathbb{R}^n$, then $K$ has positive distance from $\mathbb{R}^n \setminus \Omega$. The function $\tilde f$ equal to $f$ on $\Omega$ and to $0$ on $\mathbb{R}^n \setminus \Omega$ lies in $C_c^\infty(\mathbb{R}^n)$.
+
+^prop-33-1
+
+> [!proof]+ Proof
+> (Stated in lecture.) *Distance.* The function $d(x) = \operatorname{dist}(x, \mathbb{R}^n \setminus \Omega)$ is continuous (it is $1$-Lipschitz), and $d(x) > 0$ for $x \in K$ because $K \subset \Omega$ and $\Omega$ is [[§20 Compactness and the Unit Ball#^def-20-2|open]], so a [[§11 Normed Linear Spaces#^def-11-10|ball]] around $x$ lies in $\Omega$. A continuous function on the [[§33 Sobolev Spaces and Weak Derivatives#^def-33-4|compact]] set $K$ [[§18 Compact Spaces#^thm-18-3|attains its minimum]], so $\min_K d > 0$.
+>
+> *Smoothness.* The open sets $\Omega$ and $\mathbb{R}^n \setminus K$ cover $\mathbb{R}^n$, since $K \subset \Omega$. On $\Omega$, $\tilde f = f$ is $C^\infty$. On $\mathbb{R}^n \setminus K$, $\tilde f = 0$: $f$ vanishes on $\Omega \setminus K$ by [[§33 Sobolev Spaces and Weak Derivatives#^def-33-3|definition of the support]], and $\tilde f = 0$ outside $\Omega$. Being $C^\infty$ is a local property, so $\tilde f \in C^\infty(\mathbb{R}^n)$, and its support is $K$, which is compact.
+
+^pf-33-1
+
+*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-3|Def. §33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-4|Def. §33.4]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Def. §33.5]], [[§20 Compactness and the Unit Ball#^def-20-2|Def. §20.2]], [[§11 Normed Linear Spaces#^def-11-10|Def. §11.10]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]]
+
+![[m556-33-3.svg]]
+*A test function lives strictly inside $\Omega$: its support stays a positive distance away from the boundary, so extending it by $0$ creates no corner and no jump.*
 
 > [!theorem] Lemma §33.2: Integration by Parts against a Test Function
 > Let $\Omega \subset \mathbb{R}^n$ be open, $g \in C^1(\Omega)$, and $\varphi \in C_c^\infty(\Omega)$ a test function (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|§33.5]]). Then for each $j$,
@@ -329,6 +372,39 @@ tags: [functional-analysis, math556]
 ^cor-33-7
 
 > [!proof]+ Proof
-> Next lecture (by approximating $f$ with a Cauchy sequence in $C_c^\infty(\Omega)$).
+> (Lecture 12.) By Theorem [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|§33.6]] the inequality holds for every function in $C_c^\infty(\Omega)$; it remains to pass to limits. Let $f \in H^1_0(\Omega)$. By [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|definition of the completion]] there are $g_n \in C_c^\infty(\Omega)$ with
+>
+> $$
+> g_n \to f \quad \text{and} \quad \partial_{x_j} g_n \to \partial_{x_j} f \quad \text{in } L^2(\Omega), \qquad j = 1, \ldots, n,
+> $$
+>
+> where, as in Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], $f$ is the $L^2$ limit of a [[§11 Normed Linear Spaces#^def-11-5|Cauchy sequence]] and $\partial_{x_j} f$, the $L^2$ limit of $\partial_{x_j} g_n$, is the [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak derivative]] of $f$. For each $n$, Theorem [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|§33.6]] gives
+>
+> $$
+> \int_\Omega |g_n(x)|^2\, dx \le C^2 \sum_{j=1}^n \int_\Omega |\partial_{x_j} g_n(x)|^2\, dx .
+> $$
+>
+> By the reverse triangle inequality (Lemma [[§11 Normed Linear Spaces#^lem-11-3|§11.3]]), $\bigl| \|g_n\|_{L^2} - \|f\|_{L^2} \bigr| \le \|g_n - f\|_{L^2} \to 0$, so $\|g_n\|_{L^2} \to \|f\|_{L^2}$, and likewise $\|\partial_{x_j} g_n\|_{L^2} \to \|\partial_{x_j} f\|_{L^2}$ for each $j$. Squares and finite sums of convergent sequences converge, and limits preserve non-strict inequalities, so
+>
+> $$
+> \int_\Omega |f(x)|^2\, dx \le C^2 \sum_{j=1}^n \int_\Omega |\partial_{x_j} f(x)|^2\, dx = C^2 \int_\Omega |\nabla f(x)|^2\, dx .
+> $$
 
 ^pf-33-7
+
+*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|§33.6]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|451 §9.5]]
+
+> [!remark] Remark: Triangle Inequality, Not Inner Product
+> Wu asked which fact gives $\|g_n\|_{L^2} \to \|f\|_{L^2}$. A student answered: continuity of the inner product (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]) — correct, since $L^2$ is an [[§22 Definition and Examples#^def-22-1|inner product space]]. Wu's point was that it is more general: in any [[§11 Normed Linear Spaces#^def-11-1|normed space]] $x_n \to x$ implies $\|x_n\| \to \|x\|$, by the reverse triangle inequality (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]). She called the whole argument “a usual technique”: to prove an inequality on a space, prove it on a [[§11 Normed Linear Spaces#^def-11-8|dense subset]], then take limits ([[Functional Analysis Problem-Solving Techniques#^rem-t19|Technique 19]]).
+
+^rem-33-9
+
+> [!remark] Remark: What “Zero on the Boundary” Means
+> Wu, answering questions: one may think of $f \in H^1_0(\Omega)$ as “$C_c^\infty$ in spirit”, equal to $0$ on $\partial\Omega$ “in an appropriate sense”; making this precise needs much more of Sobolev space theory and is outside the course. Why only “in an appropriate sense”: for $f \in L^2$ alone, boundary values mean nothing, since $\partial\Omega$ has measure zero and an $L^2$ function can be changed there at will. What makes the boundary condition meaningful is that $\nabla f \in L^2$ as well. A function that stays away from $0$ up to $\partial\Omega$ and is $0$ outside has a jump at the boundary, and a jump has no $L^2$ derivative — its derivative is a [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-7|delta]] (Example [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|§33.3]]).
+>
+> Precisely: if $g_n \in C_c^\infty(\Omega)$ converge to $f$ in $H^1_0(\Omega)$, their extensions by zero (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]]) have the same norms, so they are [[§11 Normed Linear Spaces#^def-11-5|Cauchy]] in the $W^{1,2}(\mathbb{R}^n)$ norm; hence the extension $\tilde f$ of $f$ by zero has [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak derivatives]] in $L^2(\mathbb{R}^n)$, namely the extensions of $\partial_{x_j} f$ (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]] on $\mathbb{R}^n$). In one dimension, $\tilde f$ therefore cannot jump at an endpoint of $\Omega$.
+
+^rem-33-10
+
+![[m556-33-4.svg]]
+*In one dimension, extended by zero: an element of $H^1_0(a,b)$ must come down to $0$ at the endpoints; a function that jumps there does not belong, although as an $L^2$ function it could be changed at the two endpoints without changing anything.*
