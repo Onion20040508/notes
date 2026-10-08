@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.6 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan]] →
 
-*Sources (planned for the proofs; each to be checked against the text when the proof is written): Linear Algebra (LADR) Def. 6.2, Def. 9.4, Thm. 9.7, Thm. 9.23 (the real analogues) · the user's PHY 513 notes, Ch. 8 §8.1 · Peskin & Schroeder, §3.2 · the rest written here.*
+*Sources: Linear Algebra (LADR) §§6, 12, 23–24, 35 · the user's PHY 513 notes, Ch. 8 §8.1 · B. C. Hall, Quantum Theory for Mathematicians, Def. 16.1, Examples 16.4, 16.22 · Y. Nakatsukasa, V. Noferini, arXiv:1711.00495, Thm. 1 · K. Conrad, Bilinear Forms (https://kconrad.math.uconn.edu/blurbs/linmultialg/bilinearform.pdf), Thms. 3.12, 3.16, 3.21, 6.19, Def. 3.17 · I. I. Cotăescu, Elements of Linear Algebra (arXiv:1602.03006), §4.2 · J. Adams, D. Vogan, arXiv:1502.03304, Prop. 1.4 · the rest written here.*
 
 Which structure does $\bar\psi = \psi^\dagger\gamma^0$ add to spinor space, and why is it fixed by the Dirac matrices? An inner product ([[§20 Inner Products and Norms#^ladr-6-2|LADR Def. 6.2]]) is a positive-definite Hermitian form; finite-dimensional representations of the Lorentz group admit none that is invariant ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-16|Theorem §CB.3.16]]), but they can preserve an *indefinite* one. This section states the layer of Hermitian forms the spinor chapter uses — matrices and changes of basis, Sylvester's law of inertia, the adjoint for an indefinite form, the pseudo-unitary groups $U(p,q)$ — and the uniqueness theorem: on an irreducible representation, an invariant Hermitian form is unique up to a real factor. It builds on [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.3]] (Schur).
 
@@ -63,7 +63,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 > [!definition] Definition §CB.5.2: The h-Adjoint
 > Let $h$ be a nondegenerate Hermitian form on $V$. The **$h$-adjoint** of a linear map $A : V \to V$ is the linear map $A^{\dagger_h}$ with $h(A\chi, \psi) = h(\chi, A^{\dagger_h}\psi)$ for all $\chi, \psi$. $A$ is **$h$-self-adjoint** if $A^{\dagger_h} = A$.
 >
-> *Source (planned): written here*
+> *Source: K. Conrad, Bilinear Forms, Def. 3.17 (the adjoint relative to a nondegenerate bilinear form) · I. I. Cotăescu, Elements of Linear Algebra (arXiv:1602.03006), §4.2.2, Def. 69 (the Dirac adjoint) · the Hermitian formulation written here*
 
 ^def-cb-5-2
 
@@ -112,7 +112,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 > [!definition] Definition §CB.5.4: Pseudo-Unitary Group
 > The **pseudo-unitary group** of a nondegenerate Hermitian form $h$ on $V$ is $U(V, h) = \{A \in GL(V) : h(A\chi, A\psi) = h(\chi, \psi)\ \forall\chi, \psi\} = \{A : A^{\dagger_h}A = \mathbb 1\}$ ([[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-2|Def. §CB.5.2]]). For signature $(p, q)$ and an $h$-orthonormal basis ([[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-5-1|Theorem §CB.5.1]]) it is $U(p, q) = \{A \in GL(n, \mathbb C) : A^\dagger\eta A = \eta\}$; $U(n, 0) = U(n)$.
 >
-> *Source (planned): written here*
+> *Source: I. I. Cotăescu, Elements of Linear Algebra (arXiv:1602.03006), §4.2.2, Thm. 21 · B. C. Hall, Quantum Theory for Mathematicians, Example 16.4 (the case $U(n)$) · written here*
 
 ^def-cb-5-4
 
@@ -166,7 +166,7 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 > [!definition] Definition §CB.5.6: Invariant Hermitian Form
 > A nondegenerate Hermitian form $h$ on the space $W$ of a representation is **invariant** if, for a group representation $D$, every $D(g) \in U(W, h)$ ([[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-4|Def. §CB.5.4]]); for a Lie algebra representation $d$, every $d(X)$ is $h$-anti-self-adjoint, $d(X)^{\dagger_h} = -d(X)$. For a Clifford module ([[§CB.7 Clifford Algebras꞉ Definition, Grading, Basis and Volume Element#^def-cb-7-9|Def. §CB.7.9]]) the condition used is that every Clifford generator $\gamma(v)$, $v$ real, is $h$-self-adjoint.
 >
-> *Source (planned): written here · the Dirac form: [[§C5a.2 The Dirac Form#^def-c5a-2-4|Def. §C5a.2.4]]*
+> *Source: written here · the Dirac form: [[§C5a.2 The Dirac Form#^def-c5a-2-4|Def. §C5a.2.4]]*
 
 ^def-cb-5-6
 
@@ -175,14 +175,41 @@ A Hermitian form, its matrix, its change of basis and its signature, defined and
 > 1. an irreducible finite-dimensional representation of a group or Lie algebra has, up to a nonzero real factor, at most one invariant Hermitian form ([[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-6|Def. §CB.5.6]]);
 > 2. on an irreducible Clifford module, a nondegenerate Hermitian form for which every $\gamma(v)$ is self-adjoint is unique up to a nonzero real factor.
 >
-> *Source (planned): written here · the Dirac case: [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], 2*
+> *Source: the argument of [[§C5a.2 The Dirac Form#^der-c5a-2-2|Derivation §C5a.2.2]], steps 2–4 (the Dirac case: the form is fixed up to a real factor because $\gamma^0H$ commutes with all $\gamma^\mu$), with Schur's lemma for the general irreducible set · K. Conrad, Bilinear Forms, Thm. 3.16 (4) (every form is $B(v, Aw)$ for a unique linear $A$) · the statement for irreducible group representations: J. Adams, D. Vogan, Parameters for twisted representations (arXiv:1502.03304), Prop. 1.4 ("Schur's Lemma", stated without proof)*
 
 ^thm-cb-5-7
 
-> [!proof]- Proof (to be filled)
-> *To be filled (write $h_1(\chi, \psi) = h_2(\chi, S\psi)$; then $S$ commutes with every $A^{\dagger_{h_2}}$, a set with no invariant subspaces by Theorem §CB.5.3, 3; Schur, [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-8|Theorem §CB.3.8]], gives $S = c\mathbb 1$; Hermiticity makes $c$ real).*
+> [!proof]- Proof
+> *Derivation §C5a.2.2 generalized: there the commuting matrix is $\gamma^0H$ and the irreducible set is the four $\gamma^\mu$; here the commuting operator is $S$ and the irreducible set is $\{A^{\dagger_{h_2}}\}$.*
+>
+> **1. Compare the forms through an operator.** Let $H_1$, $H_2$ be the matrices of $h_1$, $h_2$ in one basis ($\det H_2 \ne 0$, [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], 1) and $S$ the map with matrix $H_2^{-1}H_1$. Then $h_2(\chi, S\psi) = \chi^\dagger H_2H_2^{-1}H_1\psi = h_1(\chi, \psi)$ for all $\chi, \psi$ (Conrad, Thm. 3.16 (4), in Hermitian form). $S$ is invertible since $\det H_1 \ne 0$.
+>
+> **2. S commutes with the common adjoints.** Write $A^\dagger$ for the common value $A^{\dagger_{h_1}} = A^{\dagger_{h_2}}$ ([[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-2|Def. §CB.5.2]]), $A \in \mathcal S$. Compute $h_1(A\chi, \psi)$ in two ways:
+>
+> $$
+> h_1(A\chi, \psi) = h_1(\chi, A^\dagger\psi) = h_2(\chi, SA^\dagger\psi), \qquad h_1(A\chi, \psi) = h_2(A\chi, S\psi) = h_2(\chi, A^\dagger S\psi) .
+> $$
+>
+> The two right sides agree for all $\chi$, so by nondegeneracy of $h_2$, $SA^\dagger\psi = A^\dagger S\psi$ for all $\psi$: $SA^\dagger = A^\dagger S$ for every $A \in \mathcal S$.
+>
+> **3. The adjoints form an irreducible set.** Let $U$ be invariant under every $A^\dagger$, $A \in \mathcal S$. By [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-5-3|Theorem §CB.5.3]], 3 (for $h_2$), $U^{\perp_{h_2}}$ is invariant under every $(A^\dagger)^{\dagger_{h_2}} = A$ (Theorem §CB.5.3, 2), so $U^{\perp_{h_2}} \in \{0, W\}$, and $\dim U = n - \dim U^{\perp_{h_2}} \in \{n, 0\}$: $U = W$ or $U = 0$.
+>
+> **4. Schur.** The operators $A^\dagger$ generate an algebra of operators on $W$ with the same invariant subspaces (complex combinations of products), i.e. an irreducible representation of an associative algebra ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-7|Def. §CB.3.7]]), and $S$ commutes with all of it by step 2. By Schur's lemma ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-8|Theorem §CB.3.8]]) $S = c\,\mathbb 1$, so $h_1 = c\,h_2$, and $c \ne 0$ because $S$ is invertible.
+>
+> **5. c is real.** Choose $\chi, \psi$ with $h_2(\chi, \psi) \ne 0$ (nondegeneracy). Hermitian symmetry of both forms: $c\,h_2(\chi, \psi) = h_1(\chi, \psi) = \overline{h_1(\psi, \chi)} = \overline{c\,h_2(\psi, \chi)} = \bar c\,h_2(\chi, \psi)$, so $c = \bar c$.
+>
+> **6. Consequence 1.** For an invariant form of a group representation, $D(g)^{\dagger_h}D(g) = \mathbb 1$ ([[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-4|Def. §CB.5.4]]), so $D(g)^{\dagger_h} = D(g)^{-1} = D(g^{-1})$, the same for every invariant $h$; for a Lie algebra representation, $d(X)^{\dagger_h} = -d(X)$ for every invariant $h$ ([[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-6|Def. §CB.5.6]]). With $\mathcal S = D(G)$ or $d(\mathfrak g)$, irreducible, the theorem applies to any two invariant forms.
+>
+> **7. Consequence 2.** If every $\gamma(v)$ is self-adjoint for $h_1$ and for $h_2$, then $\gamma(v)^{\dagger_{h_1}} = \gamma(v) = \gamma(v)^{\dagger_{h_2}}$; the $\gamma(v)$ generate the module action, so on an irreducible Clifford module the set $\{\gamma(v)\}$ is irreducible and the theorem applies.
+>
+> **What the proof shows**
+> - Only the *adjoint operation* of a form matters: two forms with the same adjoint on an irreducible set differ by a real factor. The Dirac case ([[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], 2) is consequence 2 for $Cl(1,3)$.
+> - ⚑ By-product: the factor $c$ may be negative, which exchanges $p$ and $q$ (Theorem §CB.5.1). So the signature of an invariant Hermitian form on an irreducible representation is determined up to the swap $(p, q) \leftrightarrow (q, p)$, and its overall sign is a convention (Adams–Vogan, Prop. 1.4).
+> - Irreducibility is essential: on $V\oplus V$ the forms $h\oplus h$ and $h\oplus(-h)$ have the same adjoints for the diagonal action but are not proportional.
 
 ^pf-cb-5-7
+
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-2|Def. §CB.5.2]], [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-5-3|Theorem §CB.5.3]], [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-4|Def. §CB.5.4]], [[§CB.5 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-5-6|Def. §CB.5.6]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-3-7|Def. §CB.3.7]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-8|Theorem §CB.3.8]]
 
 The Dirac form, the instance of consequence 2, in [[§C5a.2 The Dirac Form|§C5a.2]]:
 

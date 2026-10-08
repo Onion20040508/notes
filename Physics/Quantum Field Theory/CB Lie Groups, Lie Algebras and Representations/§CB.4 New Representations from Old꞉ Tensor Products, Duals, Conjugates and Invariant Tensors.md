@@ -32,14 +32,14 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 > [!definition] Definition §CB.4.1: Tensor Product of Group Representations
 > If $D_1$, $D_2$ are representations of a group $G$ on $W_1$, $W_2$, their **tensor product** is the representation of $G$ on $W_1\otimes W_2$ ([[§38 Tensor Products#^ladr-9-71|LADR Def. 9.71]]) with $(D_1\otimes D_2)(g)(w_1\otimes w_2) = D_1(g)w_1\otimes D_2(g)w_2$.
 >
-> *Source (planned): Woit, §9.4 · the user's PHY 513 notes, Ch. 7 §7.4.5*
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §9.4 (Definition: tensor product representation of a group) · the user's PHY 513 notes, Ch. 7 §7.4.5*
 
 ^def-cb-4-1
 
 > [!definition] Definition §CB.4.2: Tensor Product of Lie Algebra Representations
 > If $d_1$, $d_2$ are representations of a Lie algebra $\mathfrak g$ on $W_1$, $W_2$, their **tensor product** is $(d_1\otimes d_2)(X) = d_1(X)\otimes\mathbb 1 + \mathbb 1\otimes d_2(X)$ on $W_1\otimes W_2$.
 >
-> *Source (planned): Woit, §9.4*
+> *Source: Woit, §9.4 ($\pi'_{V\otimes W}(X) = \pi'_V(X)\otimes\mathbb 1_W + \mathbb 1_V\otimes\pi'_W(X)$)*
 
 ^def-cb-4-2
 
@@ -104,7 +104,7 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 > [!definition] Definition §CB.4.4: Outer Tensor Product
 > If $D_1$ is a representation of $G_1$ on $W_1$ and $D_2$ one of $G_2$ on $W_2$, their **outer tensor product** $D_1\boxtimes D_2$ is the representation of $G_1\times G_2$ on $W_1\otimes W_2$ with $(g_1, g_2) \mapsto D_1(g_1)\otimes D_2(g_2)$; for Lie algebras, $\mathfrak g_1\oplus\mathfrak g_2$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-8|Def. §CB.2.8]]) acts by $(X_1, X_2) \mapsto d_1(X_1)\otimes\mathbb 1 + \mathbb 1\otimes d_2(X_2)$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-4-4
 
@@ -168,14 +168,14 @@ Index slots, the course's bookkeeping of which representation acts on which inde
 > [!definition] Definition §CB.4.6: Dual Representation
 > The **dual** (contragredient) of a representation $D$ on $W$ is the representation $D^\ast$ on the dual space $W'$ ([[§12 Duality#^ladr-3-110|LADR Def. 3.110]]) with $D^\ast(g) = D(g^{-1})'$, the dual map ([[§12 Duality#^ladr-3-118|LADR Def. 3.118]]) of $D(g^{-1})$: $(D^\ast(g)\varphi)(w) = \varphi(D(g^{-1})w)$. For a Lie algebra, $d^\ast(X) = -d(X)'$. In a basis and its dual basis the matrices are $(D(g)^{-1})^{\mathsf T}$ and $-d(X)^{\mathsf T}$.
 >
-> *Source (planned): Woit, §4.2, §9.5 · written here*
+> *Source: Woit, §4.2 (Definition: dual or contragredient representation, $(\pi^{-1})^{\mathsf t}(g)$) · written here*
 
 ^def-cb-4-6
 
 > [!definition] Definition §CB.4.7: Complex-Conjugate Representation
 > The **complex conjugate** $\bar W$ of a complex vector space $W$ is the set $W$ with the same addition and scalar multiplication $\lambda\cdot_{\bar W}w = \bar\lambda w$. The **complex-conjugate representation** of a representation $D$ on $W$ is $\bar D(g) = D(g)$ regarded as a map of $\bar W$; for a Lie algebra (real, [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]]), $\bar d(X) = d(X)$ on $\bar W$. In a basis the matrices are $\overline{D(g)}$ and $\overline{d(X)}$ (entrywise conjugates).
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-4-7
 
@@ -276,21 +276,21 @@ The course's slot rule, the component form of this theorem, proved in [[§C5a.1 
 > [!definition] Definition §CB.4.10: Invariant Tensor
 > An **invariant tensor** of a representation $D$ on a tensor space $\mathcal T$ (a tensor product of copies of $W$, $W'$, $\bar W$, $\bar W'$) is a $t \in \mathcal T$ with $D(g)t = t$ for all $g$; for a Lie algebra, $d(X)t = 0$ for all $X$. By [[§CB.4 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-4-9|Theorem §CB.4.9]], an invariant tensor in $V'\otimes W$ is the same thing as an intertwiner $V \to W$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-4-10
 
 > [!definition] Definition §CB.4.11: Symmetric Power
 > The **$k$-th symmetric power** $\operatorname{Sym}^kW \subset W^{\otimes k}$ is the subspace of tensors fixed by every permutation of the $k$ factors.
 >
-> *Source (planned): Woit, §9.6 · written here*
+> *Source: Woit, §9.2 (the symmetric subspace $S^n(H)$ of $H^{\otimes n}$), §9.6 · S. Wadsley, Representation Theory, Lecture 12 (the same definition) · written here*
 
 ^def-cb-4-11
 
 > [!definition] Definition §CB.4.12: Exterior Power
 > The **$k$-th exterior power** $\Lambda^kW \subset W^{\otimes k}$ is the subspace of tensors $t$ with $\pi t = \operatorname{sgn}(\pi)\,t$ for every permutation $\pi$ of the $k$ factors ([[§36 Alternating Multilinear Forms#^ladr-9-32|LADR Def. 9.32]] for the sign); $w_1\wedge\cdots\wedge w_k = \frac1{k!}\sum_\pi\operatorname{sgn}(\pi)\,w_{\pi(1)}\otimes\cdots\otimes w_{\pi(k)}$. The **exterior algebra** is $\Lambda W = \bigoplus_{k=0}^{\dim W}\Lambda^kW$ with the product $\wedge$.
 >
-> *Source (planned): Woit, §9.6 · LADR §36 (alternating forms, the dual picture) · written here*
+> *Source: Woit, §9.2 (the antisymmetric subspace $\Lambda^n(H)$), §9.6, eq. (9.6) (the wedge product with $\frac1{n!}$) · S. Wadsley, Representation Theory, Lecture 12 · LADR §36 (alternating forms, the dual picture) · written here*
 
 ^def-cb-4-12
 
