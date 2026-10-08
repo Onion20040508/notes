@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§CB.12 The Lorentz Case II꞉ the Dirac Module, Half-Spin Representations and γ⁵]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.14★ The Poincaré Group and Induced Representations]] →
 
-*Sources (planned for the proofs; each to be checked against the text when the proof is written): Quantum Mechanics §C8.1★, §C8.3★ (Sakurai) · Yu Zhao-Huan, 量子场论讲义, §3.3.1 · the user's PHY 513 notes, Ch. 7 §§7.2, 7.6 · the user's pre-course notes (Weinberg vol. 1, §2.2, App. 2.A for Wigner's theorem; §2.7, App. 2.B for Bargmann — via the notes) · Hall, Quantum Theory for Mathematicians, Ch. 16 · P. Woit, Quantum Theory, Groups and Representations, §§7.4–7.5 (projective space) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the rest written here.*
+*Sources: R. Simon, N. Mukunda, S. Chaturvedi, V. Srinivasan, arXiv:0808.0779, §III (https://arxiv.org/abs/0808.0779) · V. Bargmann, J. Math. Phys. 5 (1964) 862 and Ann. of Math. 59 (1954) 1 · V. Moretti, arXiv:1508.06951, §3.6 (https://arxiv.org/abs/1508.06951) · B. C. Hall, Quantum Theory for Mathematicians, §16.7.3, §16.9.2 · Quantum Mechanics §C8.1★, §C8.3★ (Sakurai) · Yu Zhao-Huan, 量子场论讲义, §3.3.1, §9.1.2 · the user's PHY 513 notes, Ch. 7 §§7.2, 7.6 · the user's pre-course notes (Weinberg vol. 1, §2.2, App. 2.A; §2.7, App. 2.B, as cited there) · the rest written here.*
 
 Why are the symmetries of quantum mechanics represented by unitary or antiunitary operators, why only up to a phase, and why does that allow, and require, the covering groups SU(2) and SL(2, ℂ)? States are rays, so a symmetry is a map of rays that preserves transition probabilities. Wigner's theorem lifts it to a unitary or antiunitary operator, unique up to a phase (decision SPEC-CB 2: proved here; Quantum Mechanics states it, [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-1|QM Theorem §C8.1.1]]). A group of symmetries then becomes a projective representation, which for connected groups is unitary and, in finite dimension, lifts to a genuine representation of the universal cover. Groups containing time reversal need antiunitary elements, whose squares are $\pm1$. The section builds on [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]] (universal covers, the Lie correspondence) and the course's projective representations ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-14|Def. §C3.1.14]]).
 
@@ -38,16 +38,84 @@ Antilinear and antiunitary operators and their structure, defined and proved in 
 ![[§C8.3★ Time Reversal#^thm-c8-3-1]]
 
 > [!theorem] Theorem §CB.13.3: Wigner's Theorem
-> Every Wigner symmetry $T$ of a complex Hilbert space $\mathcal H$ ([[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-13-2|Def. §CB.13.2]]) is induced by an operator $U$ that is either unitary or antiunitary ([[§C8.3★ Time Reversal#^def-c8-3-1|QM Def. §C8.3.1]]). $U$ is unique up to a phase $e^{i\alpha}$, and if $\dim\mathcal H \ge 2$ the alternative (unitary or antiunitary) is determined by $T$.
+> Every Wigner symmetry $T$ of a complex Hilbert space $\mathcal H$ ([[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-13-2|Def. §CB.13.2]]) is induced by an operator $U$ that is either unitary or antiunitary ([[§C8.3★ Time Reversal#^def-c8-3-1|QM Def. §C8.3.1]]). $U$ is unique up to a phase $e^{i\alpha}$ among operators of the same kind. If $\dim\mathcal H \ge 2$ the kind (unitary or antiunitary) is determined by $T$, so $U$ is unique up to a phase; if $\dim\mathcal H = 1$, the only Wigner symmetry is the identity, induced by $\mathbb 1$ and by an antiunitary operator.
 >
-> *Source (planned): Weinberg vol. 1, App. 2.A (via the user's pre-course notes) · Hall, Quantum Theory for Mathematicians (to be checked) · stated without proof in [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-1|QM Theorem §C8.1.1]]*
+> *Source: R. Simon, N. Mukunda, S. Chaturvedi, V. Srinivasan, "Two elementary proofs of the Wigner theorem on symmetry in quantum mechanics", Phys. Lett. A 372 (2008) 6847, arXiv:0808.0779, §III, Steps 1–6 (https://arxiv.org/abs/0808.0779) · the original complete proof: V. Bargmann, "Note on Wigner's theorem on symmetry operations", J. Math. Phys. 5 (1964) 862–868 · Weinberg vol. 1, App. 2.A, as cited in the user's pre-course notes · the uniqueness written here · stated without proof in [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-1|QM Theorem §C8.1.1]]*
 
 ^thm-cb-13-3
 
-> [!proof]- Proof (to be filled)
-> *Decision SPEC-CB 2: the proof is to be written here (planned route: Weinberg's or Bargmann's construction on an orthonormal basis; Quantum Mechanics will link it).*
+> [!proof]- Proof
+> Notation: $\langle\cdot, \cdot\rangle$ is linear in the second slot; for unit vectors $P(\psi, \phi) = |\langle\psi, \phi\rangle|^2$ is the transition probability of [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-13-1|Def. §CB.13.1]]. If $V$ is unitary, $[\psi] \mapsto [V\psi]$ is a Wigner symmetry (it is a bijection of rays, and $|\langle V\psi, V\phi\rangle| = |\langle\psi, \phi\rangle|$), and a composite of Wigner symmetries is one. The route is that of Simon–Mukunda–Chaturvedi–Srinivasan: compose $T$ with unitary symmetries until it fixes a basis and the "equator" vectors of every pair of basis vectors; what is left is the identity or complex conjugation.
+>
+> Assume first $\dim\mathcal H \ge 2$. Fix an orthonormal basis $\{e_n\}_{n\in I}$ and one index $1 \in I$.
+>
+> **1. The images of the basis form an orthonormal basis.** Choose unit vectors $e'_n$ with $T[e_n] = [e'_n]$. Then $P(e'_m, e'_n) = P(e_m, e_n) = \delta_{mn}$, so $\{e'_n\}$ is orthonormal. It is complete: if $\chi \perp e'_n$ for all $n$ and $\|\chi\| = 1$, then $[\chi] = T[\psi]$ for a unit $\psi$ ($T$ is onto), and $|\langle e_n, \psi\rangle|^2 = P(e'_n, \chi) = 0$ for every $n$, so $\psi = 0$ by Parseval's identity, a contradiction.
+>
+> **2. Normalize: fix the basis rays.** Let $V\psi = \sum_n\langle e'_n, \psi\rangle e_n$. By step 1 and Parseval, $V$ is linear, isometric and onto: unitary, with $Ve'_n = e_n$. Put $T_1[\psi] = [V\psi']$ where $T[\psi] = [\psi']$, i.e. $T_1 = V\circ T$ on rays. $T_1$ is a Wigner symmetry with $T_1[e_n] = [e_n]$ for all $n$.
+>
+> **3. $T_1$ preserves the modulus of every coefficient.** Let $\psi = \sum_nc_ne_n$ be a unit vector and $T_1[\psi] = [\sum_nc'_ne_n]$. Then $|c'_n|^2 = P(e_n, \sum_mc'_me_m) = P(e_n, \psi) = |c_n|^2$, using $T_1[e_n] = [e_n]$. In particular $c'_n = 0$ wherever $c_n = 0$: $T_1$ maps rays in $\operatorname{span}\{e_j, e_k\}$ to rays in the same span.
+>
+> **4. The equator of a pair.** For $j \ne k$ and $\varphi \in \mathbb R$ put $u_{jk}(\varphi) = \frac1{\sqrt2}(e_j + e^{i\varphi}e_k)$. By step 3, $T_1[u_{jk}(\varphi)] = [ae_j + be_k]$ with $|a| = |b| = \frac1{\sqrt2}$; multiplying the representative by $|a|/a$ makes the first coefficient positive, so $T_1[u_{jk}(\varphi)] = [u_{jk}(f(\varphi))]$ for a unique $f(\varphi) \bmod 2\pi$. Now
+>
+> $$
+> P\bigl(u_{jk}(\varphi_1), u_{jk}(\varphi_2)\bigr) = \tfrac14\bigl|1 + e^{i(\varphi_2 - \varphi_1)}\bigr|^2 = \tfrac12\bigl(1 + \cos(\varphi_1 - \varphi_2)\bigr),
+> $$
+>
+> so preservation of transition probabilities reads $\cos(f(\varphi_1) - f(\varphi_2)) = \cos(\varphi_1 - \varphi_2)$ for all $\varphi_1, \varphi_2$ (Simon et al., eqs. (3.8)–(3.9)).
+>
+> **5. $f$ is a rotation or a reflection of the circle.** Let $\beta = f(0)$. With $\varphi_2 = 0$: $\cos(f(\varphi) - \beta) = \cos\varphi$, so $f(\varphi) - \beta \equiv s(\varphi)\,\varphi$ with $s(\varphi) \in \{\pm1\}$. Set $\epsilon = s(\pi/2)$, so $f(\pi/2) \equiv \beta + \epsilon\pi/2$. With $\varphi_2 = \pi/2$: $\cos(s(\varphi)\varphi - \epsilon\frac\pi2) = \cos(\varphi - \frac\pi2) = \sin\varphi$. For $\epsilon = \pm1$, $\cos(x - \epsilon\frac\pi2) = \epsilon\sin x$, so the left side is $\epsilon\sin(s(\varphi)\varphi) = \epsilon s(\varphi)\sin\varphi$. Hence $s(\varphi) = \epsilon$ whenever $\sin\varphi \ne 0$; if $\sin\varphi = 0$, then $\varphi \equiv 0$ or $\pi$ and $s(\varphi)\varphi \equiv \epsilon\varphi$ anyway. So, writing $\beta_{jk}$, $\epsilon_{jk}$ for the pair,
+>
+> $$
+> T_1[u_{jk}(\varphi)] = [u_{jk}(\beta_{jk} + \epsilon_{jk}\varphi)] \qquad (\epsilon_{jk} = \pm1) .
+> $$
+>
+> Since $u_{kj}(\varphi) = e^{i\varphi}u_{jk}(-\varphi)$, the two orders of a pair are related by $\beta_{kj} = -\beta_{jk}$, $\epsilon_{kj} = \epsilon_{jk}$.
+>
+> **6. Remove the phases of the pairs (1, k).** Let $D$ be the diagonal unitary $De_n = e^{-i\delta_n}e_n$ with $\delta_1 = 0$ and $\delta_k = \beta_{1k}$ ($k \ne 1$), and $T_2 = D\circ T_1$. Still $T_2[e_n] = [e_n]$, so step 3 holds for $T_2$. Since $D\,u_{jk}(\chi) = \frac1{\sqrt2}(e^{-i\delta_j}e_j + e^{i\chi - i\delta_k}e_k) = e^{-i\delta_j}u_{jk}(\chi + \delta_j - \delta_k)$,
+>
+> $$
+> T_2[u_{jk}(\varphi)] = [u_{jk}(\beta'_{jk} + \epsilon_{jk}\varphi)], \qquad \beta'_{jk} = \beta_{jk} + \delta_j - \delta_k, \qquad \beta'_{1k} = 0 .
+> $$
+>
+> **7. All the remaining phases vanish.** (If $\dim\mathcal H = 2$ the only pair is $(1, k)$, settled in step 6.) Let $j, k, 1$ be distinct and $r = \frac1{\sqrt3}(e_1 + e_j + e_k)$, a vector with real coefficients. By step 3, $T_2[r] = [\frac1{\sqrt3}\sum_{n\in\{1,j,k\}}e^{i\eta_n}e_n]$ for some phases $\eta_n$. For a pair $(a, b)$ from $\{1, j, k\}$:
+>
+> $$
+> P\bigl(u_{ab}(\varphi), r\bigr) = \tfrac16\bigl|1 + e^{-i\varphi}\bigr|^2 = \tfrac13(1 + \cos\varphi), \qquad P\bigl(u_{ab}(\beta'_{ab} + \epsilon_{ab}\varphi), r''\bigr) = \tfrac16\bigl|e^{i\eta_a} + e^{-i(\beta'_{ab} + \epsilon_{ab}\varphi)}e^{i\eta_b}\bigr|^2 = \tfrac13\bigl(1 + \cos(\eta_b - \eta_a - \beta'_{ab} - \epsilon_{ab}\varphi)\bigr),
+> $$
+>
+> with $r''$ the representative of $T_2[r]$ above. These are equal; at $\varphi = 0$ the first is $\frac23$, so $\cos(\eta_b - \eta_a - \beta'_{ab}) = 1$ and $\beta'_{ab} \equiv \eta_b - \eta_a$. For $(a, b) = (1, j)$ and $(1, k)$, step 6 gives $\eta_j = \eta_1 = \eta_k$; then for $(j, k)$, $\beta'_{jk} \equiv \eta_k - \eta_j = 0$. With $\beta'_{k1} = -\beta'_{1k} = 0$: $T_2[u_{jk}(\varphi)] = [u_{jk}(\epsilon_{jk}\varphi)]$ for every pair. (Simon et al. use one real vector with all coefficients nonzero, their eq. (3.18); a three-term vector for each pair does the same job and works for any orthonormal basis, also a non-countable one.)
+>
+> **8. Products of two coefficients.** Let $\psi = \sum_nc_ne_n$ be a unit vector, $T_2[\psi] = [\sum_nc''_ne_n]$ with $|c''_n| = |c_n|$ (step 3). For $j \ne k$,
+>
+> $$
+> P(u_{jk}(\varphi), \psi) = \tfrac12\bigl|c_j + e^{-i\varphi}c_k\bigr|^2 = \tfrac12\bigl(|c_j|^2 + |c_k|^2\bigr) + \operatorname{Re}\bigl(e^{-i\varphi}\,\bar c_jc_k\bigr),
+> $$
+>
+> and the same expression with $c''$ and $\epsilon_{jk}\varphi$ for the images (step 7). With $w = \bar c_jc_k$, $w'' = \bar c''_jc''_k$ and $|c''_n| = |c_n|$, equality for all $\varphi$ reads $\operatorname{Re}w\cos\varphi + \operatorname{Im}w\sin\varphi = \operatorname{Re}w''\cos\varphi + \epsilon_{jk}\operatorname{Im}w''\sin\varphi$. At $\varphi = 0$ and $\varphi = \frac\pi2$: $\operatorname{Re}w'' = \operatorname{Re}w$ and $\epsilon_{jk}\operatorname{Im}w'' = \operatorname{Im}w$. So
+>
+> $$
+> \bar c''_jc''_k = \bar c_jc_k \ \text{ if } \epsilon_{jk} = +1, \qquad \bar c''_jc''_k = c_j\bar c_k \ \text{ if } \epsilon_{jk} = -1 \qquad \text{(Simon et al., eq. (3.24))} .
+> $$
+>
+> **9. One sign for all pairs.** Let $j, k, \ell$ be distinct (if $\dim\mathcal H = 2$ there is only one pair and nothing to show). For any vector, $w_{jk}w_{k\ell}w_{\ell j} = \bar c_jc_k\,\bar c_kc_\ell\,\bar c_\ell c_j = |c_jc_kc_\ell|^2$ is real and $\ge 0$, for $c$ and for $c''$ alike. Take $\psi = \frac1{\sqrt3}(e_j + \zeta e_k + \zeta^2e_\ell)$, $\zeta = e^{2\pi i/3}$. Then $w_{jk} = \zeta/3$, $w_{k\ell} = \bar\zeta\zeta^2/3 = \zeta/3$, $w_{\ell j} = \bar\zeta^2/3 = \zeta/3$ (as $\zeta^3 = 1$). By step 8 each $w''$ is $\zeta/3$ or $\bar\zeta/3$ according to the sign of its pair; if $p$ of the three signs are $+1$, $w''_{jk}w''_{k\ell}w''_{\ell j} = \zeta^p\bar\zeta^{3-p}/27 = \zeta^{2p}/27$. This is real and positive only if $3 \mid 2p$, i.e. $p = 0$ or $p = 3$: the three signs are equal (Simon et al., Step 6, with this vector made explicit). Two pairs sharing an index lie in one triple; two disjoint pairs $(j, k)$, $(\ell, m)$ both share an index with $(j, \ell)$. So $\epsilon_{jk} = \epsilon$ for all pairs.
+>
+> **10. What is left is the identity or complex conjugation.** Let $\psi = \sum c_ne_n$ be a unit vector and pick $m$ with $c_m \ne 0$. If $\epsilon = +1$: $\bar c''_mc''_k = \bar c_mc_k$ for all $k$ (for $k = m$ this is $|c''_m| = |c_m|$), so $c''_k = c_k\,\bar c_m/\bar c''_m = \tau c_k$ with $\tau = c''_m/c_m$, $|\tau| = 1$ (since $\bar c_m/\bar c''_m = 1/\bar\tau = \tau$). Hence $T_2[\psi] = [\psi]$. If $\epsilon = -1$: $\bar c''_mc''_k = c_m\bar c_k$, so $c''_k = \tau'\bar c_k$ with $\tau' = c_m/\bar c''_m$, $|\tau'| = 1$, and $T_2[\psi] = [K\psi]$, $K$ the complex conjugation in the basis $\{e_n\}$ ([[§C8.3★ Time Reversal#^def-c8-3-1|QM Def. §C8.3.1]]).
+>
+> **11. Existence.** $T_2 = D\circ V\circ T$ on rays, so for unit $\psi$, $T[\psi] = [V^{-1}D^{-1}\psi]$ or $T[\psi] = [V^{-1}D^{-1}K\psi]$; both operators commute with multiplication by positive numbers, so the same holds for every $\psi \ne 0$. $U = V^{-1}D^{-1}$ is unitary; $U = V^{-1}D^{-1}K$ is antiunitary ($K$ is antiunitary and a unitary times an antiunitary operator is antiunitary, [[§C8.3★ Time Reversal#^thm-c8-3-1|QM Theorem §C8.3.1]], 1–2).
+>
+> **12. Uniqueness.** Let $U$, $U'$ both induce $T$, each unitary or antiunitary, and $A = U'^{-1}U$: linear if they are of the same kind, antilinear otherwise (QM Theorem §C8.3.1, 2), isometric, and $[A\psi] = [\psi]$, i.e. $A\psi = \lambda(\psi)\psi$ with $|\lambda(\psi)| = 1$. For linearly independent $\psi$, $\chi$: $\lambda(\psi + \chi)(\psi + \chi) = A(\psi + \chi) = \lambda(\psi)\psi + \lambda(\chi)\chi$, so $\lambda(\psi) = \lambda(\psi + \chi) = \lambda(\chi)$. For dependent nonzero $\psi$, $\chi$ pick $\xi$ independent of both ($\dim\mathcal H \ge 2$): $\lambda(\psi) = \lambda(\xi) = \lambda(\chi)$. So $\lambda$ is a constant. If $A$ were antilinear, $\lambda\,i\psi = A(i\psi) = -iA\psi = -i\lambda\psi$ would force $\lambda = 0$; so $A$ is linear, the two operators are of the same kind, and $A = \lambda\mathbb 1$, $U = \lambda U'$.
+>
+> **13. Dimension one.** $\mathcal H = \mathbb C\psi_0$ has one ray, so $T$ is the identity. It is induced by $c\psi_0 \mapsto c\psi_0$ (unitary) and by $c\psi_0 \mapsto \bar c\psi_0$ (antiunitary). Two operators of the same kind differ by $A = U'^{-1}U$ linear on $\mathbb C\psi_0$, i.e. multiplication by a number of modulus $1$.
+>
+> **What the proof shows**
+> - The whole content of "preserving transition probabilities" is used on three kinds of vectors only: basis vectors (step 1), equators of pairs (steps 4–7) and three-term vectors (steps 7, 9). The choice between unitary and antiunitary is the sign $\epsilon$ of step 5, a rotation or a reflection of each equator circle, and step 9 shows that one sign governs all pairs.
+> - The sign is intrinsic: the triple product $\langle\psi_1, \psi_2\rangle\langle\psi_2, \psi_3\rangle\langle\psi_3, \psi_1\rangle$ of three rays is preserved by a unitary and conjugated by an antiunitary operator (Bargmann 1964, §1.5); step 9 is this invariant at work.
+> - ⚑ By-product: $U$ is fixed only up to a phase, and that phase is what makes a group of symmetries a projective representation ([[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-14|Def. §C3.1.14]], [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-1|QM Theorem §C8.1.1]], 3).
+> - No continuity, separability or dimension bound was used beyond $\dim\mathcal H \ge 2$ for the uniqueness of the kind. Used next: Theorem §CB.13.4 (connected groups act unitarily).
 
 ^pf-cb-13-3
+
+*Uses:* [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-13-1|Def. §CB.13.1]], [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-13-2|Def. §CB.13.2]], [[§C8.3★ Time Reversal#^def-c8-3-1|QM Def. §C8.3.1]], [[§C8.3★ Time Reversal#^thm-c8-3-1|QM Theorem §C8.3.1]]
 
 The statement in Quantum Mechanics:
 
@@ -62,7 +130,7 @@ The course's definition, in [[§C3.1 Groups, Algebras and Representations of Rot
 > [!theorem] Theorem §CB.13.4: Connected Groups of Symmetries Act by Unitaries
 > Let $G$ be a connected matrix Lie group and $g \mapsto T(g)$ a homomorphism into the group of Wigner symmetries of $\mathcal H$. Then every $T(g)$ is induced by a unitary operator. So a group of symmetries containing an antiunitary one (time reversal) is not connected.
 >
-> *Source (planned): written here*
+> *Source: written here · the same argument: V. Moretti, arXiv:1508.06951, Remark 133(d)*
 
 ^thm-cb-13-4
 
@@ -83,16 +151,47 @@ The course's definition, in [[§C3.1 Groups, Algebras and Representations of Rot
 ^def-cb-13-5
 
 > [!theorem] Theorem §CB.13.6: Finite-Dimensional Projective Representations Lift to the Universal Cover
-> Let $G$ be a connected matrix Lie group with universal covering group $p : \tilde G \to G$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-21|Def. §CB.1.21]]), and $W$ finite-dimensional. Every continuous homomorphism $G \to PGL(W) = GL(W)/\mathbb C^\times\mathbb 1$ has a lift ([[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-13-5|Def. §CB.13.5]]) to a continuous representation $\Sigma : \tilde G \to SL(W)$, and the lift into $SL(W)$ is unique (two lifts differ by a continuous homomorphism $\tilde G \to \{\zeta : \zeta^{\dim W} = 1\}$, constant on the connected $\tilde G$); if the projective representation is unitary, so is $\Sigma$. Instances: $SO(3)$ with $\tilde G = SU(2)$, $SO^+(1,3)$ with $\tilde G = SL(2, \mathbb C)$.
+> Let $G$ be a connected matrix Lie group with universal covering group $p : \tilde G \to G$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-21|Def. §CB.1.21]]), and $W$ finite-dimensional. Every continuous homomorphism $\Pi : G \to PGL(W) = GL(W)/\mathbb C^\times\mathbb 1$ (quotient topology) has a lift to a continuous representation $\Sigma : \tilde G \to SL(W)$, i.e. $[\Sigma(x)] = \Pi(p(x))$ for all $x \in \tilde G$ (for a unitary $\Pi$ this is [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-13-5|Def. §CB.13.5]]), and the lift into $SL(W)$ is unique (two lifts differ by a continuous homomorphism $\tilde G \to \{\zeta : \zeta^{\dim W} = 1\}$, constant on the connected $\tilde G$); if the projective representation is unitary, so is $\Sigma$. Instances: $SO(3)$ with $\tilde G = SU(2)$, $SO^+(1,3)$ with $\tilde G = SL(2, \mathbb C)$.
 >
-> *Source (planned): Hall, Quantum Theory for Mathematicians, Ch. 16 · the rotation case: [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-9|Theorem §C3.1.9]]*
+> *Source: B. C. Hall, Quantum Theory for Mathematicians (Springer GTM 267, 2013), §16.7.3, Prop. 16.46 and Thm. 16.47 (the unitary case), with the conjugation device of the proof of Prop. 16.44 · the extension to $PGL(W)$ (steps 1–3) written here · the rotation case: [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-9|Theorem §C3.1.9]]*
 
 ^thm-cb-13-6
 
-> [!proof]- Proof (to be filled)
-> *To be filled (normalize to determinant $1$ locally, differentiate to a representation of $\mathfrak g$ in $\mathfrak{sl}(W)$, integrate on the simply connected $\tilde G$ by Theorem §CB.1.24, compare with $U\circ p$ by Theorem §CB.1.17).*
+> [!proof]- Proof
+> Let $n = \dim W$, $\mathfrak g$ and $\tilde{\mathfrak g}$ the Lie algebras of $G$ and $\tilde G$, and $p_\ast : \tilde{\mathfrak g} \to \mathfrak g$ the differential of $p$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-14|Theorem §CB.1.14]]). For $g \in G$ let $U_g \in GL(W)$ be any representative of $\Pi(g)$. The route is Hall's: turn $\Pi$ into a genuine representation by conjugation, "de-projectivize" its differential by making it traceless, integrate on $\tilde G$.
+>
+> **1. Conjugation turns Π into a genuine representation.** $\operatorname{Ad} : GL(W) \to GL(\mathfrak{gl}(W))$, $\operatorname{Ad}(A)X = AXA^{-1}$, is a continuous homomorphism. Its kernel is $\mathbb C^\times\mathbb 1$: if $AX = XA$ for all $X$, then $A$ commutes with every matrix, hence is a multiple of $\mathbb 1$ ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-3|Theorem §CB.3.3]], the defining representation of $GL(W)$ being irreducible). So $\operatorname{Ad}$ is constant on the cosets of $\mathbb C^\times\mathbb 1$ and defines a continuous injective homomorphism of $PGL(W)$ (universal property of the quotient topology), and $\Psi(g)X = U_gXU_g^{-1}$ is a well-defined Lie group homomorphism $\Psi : G \to GL(\mathfrak{gl}(W))$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-12|Def. §CB.1.12]]). (Hall uses the same map $C_U$ in the proof of Prop. 16.44, for $PU(V)$.)
+>
+> **2. Its differential consists of derivations.** Let $\psi = \Psi_\ast$, $\psi(X) = \frac{d}{ds}\Psi(e^{sX})\big|_{s=0}$, a Lie algebra homomorphism $\mathfrak g \to \mathfrak{gl}(\mathfrak{gl}(W))$ (Theorem §CB.1.14). Each $\Psi(g)$ is a complex-linear algebra automorphism: $\Psi(g)(AB) = U_gAU_g^{-1}U_gBU_g^{-1} = \Psi(g)(A)\,\Psi(g)(B)$. Differentiating $\Psi(e^{sX})(AB) = \Psi(e^{sX})(A)\,\Psi(e^{sX})(B)$ at $s = 0$ by the product rule: $\psi(X)(AB) = \psi(X)(A)\,B + A\,\psi(X)(B)$. So $\psi(X)$ is a complex-linear derivation of the algebra $\mathfrak{gl}(W) = M_n(\mathbb C)$.
+>
+> **3. Every derivation of M_n(ℂ) is a commutator (written here).** Let $\delta$ be a complex-linear derivation and $E_{ij}$ the matrix units, $E_{ij}E_{kl} = \delta_{jk}E_{il}$, $\sum_kE_{kk} = \mathbb 1$. Put $Y = \sum_k\delta(E_{k1})E_{1k}$. Applying $\delta$ to $E_{ij}E_{k1} = \delta_{jk}E_{i1}$ gives $E_{ij}\delta(E_{k1}) = \delta_{jk}\delta(E_{i1}) - \delta(E_{ij})E_{k1}$. Then
+>
+> $$
+> [Y, E_{ij}] = \sum_k\delta(E_{k1})E_{1k}E_{ij} - \sum_kE_{ij}\delta(E_{k1})E_{1k} = \delta(E_{i1})E_{1j} - \Bigl(\delta(E_{i1})E_{1j} - \delta(E_{ij})\sum_kE_{k1}E_{1k}\Bigr) = \delta(E_{ij}) ,
+> $$
+>
+> using $E_{1k}E_{ij} = \delta_{ki}E_{1j}$ in the first sum and $\sum_kE_{k1}E_{1k} = \sum_kE_{kk} = \mathbb 1$ in the second. By linearity $\delta = \operatorname{ad}Y$, $\operatorname{ad}Y(X) = [Y, X]$. If $\operatorname{ad}Y = \operatorname{ad}Y'$, then $Y - Y'$ commutes with every matrix and is a multiple of $\mathbb 1$ (step 1).
+>
+> **4. The traceless lift is a Lie algebra homomorphism.** By steps 2–3, for each $X \in \mathfrak g$ there is exactly one traceless $\sigma(X) \in \mathfrak{sl}(W)$ with $\psi(X) = \operatorname{ad}\sigma(X)$ (replace $Y$ by $Y - \frac1n(\operatorname{tr}Y)\mathbb 1$). For real $a, b$: $\operatorname{ad}(a\sigma(X) + b\sigma(Z)) = \psi(aX + bZ)$ and $a\sigma(X) + b\sigma(Z)$ is traceless, so it equals $\sigma(aX + bZ)$. By the Jacobi identity $\operatorname{ad}$ preserves brackets, so $\operatorname{ad}[\sigma(X), \sigma(Z)] = [\psi(X), \psi(Z)] = \psi([X, Z])$; and $[\sigma(X), \sigma(Z)]$ is traceless (a commutator), so it equals $\sigma([X, Z])$. This is Hall's Prop. 16.46: the projective representation is "de-projectivized" at the Lie algebra level, uniquely once the trace is fixed to $0$.
+>
+> **5. Integrate on the simply connected cover.** $\tilde\sigma = \sigma\circ p_\ast : \tilde{\mathfrak g} \to \mathfrak{sl}(W)$ is a Lie algebra homomorphism. Since $\tilde G$ is simply connected, there is a unique Lie group homomorphism $\Sigma : \tilde G \to GL(W)$ with $\Sigma_\ast = \tilde\sigma$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-24|Theorem §CB.1.24]]). For $Y \in \tilde{\mathfrak g}$, $\det\Sigma(e^Y) = \det e^{\tilde\sigma(Y)} = e^{\operatorname{tr}\tilde\sigma(Y)} = 1$ ($\det e^A = e^{\operatorname{tr}A}$), and $\tilde G$, connected, consists of products of exponentials ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|Theorem §CB.1.16]], 3), so $\Sigma(\tilde G) \subset SL(W)$.
+>
+> **6. Σ lifts Π.** $\operatorname{Ad}\circ\Sigma$ and $\Psi\circ p$ are Lie group homomorphisms $\tilde G \to GL(\mathfrak{gl}(W))$. Their differentials agree: $\operatorname{Ad}_\ast = \operatorname{ad}$, since $\frac{d}{ds}e^{sY}Xe^{-sY}\big|_0 = YX - XY$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]], 5), so $(\operatorname{Ad}\circ\Sigma)_\ast = \operatorname{ad}\circ\sigma\circ p_\ast = \psi\circ p_\ast = (\Psi\circ p)_\ast$ (chain rule, Theorem §CB.1.14). $\tilde G$ is connected, so $\operatorname{Ad}\circ\Sigma = \Psi\circ p$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]]). Hence $\Sigma(x)U_{p(x)}^{-1}$ commutes with every $X \in \mathfrak{gl}(W)$ and is a scalar $c(x)\mathbb 1$ (step 1): $[\Sigma(x)] = \Pi(p(x))$.
+>
+> **7. Uniqueness in SL(W).** Let $\Sigma'$ be another lift into $SL(W)$. Then $\Sigma'(x) = c(x)\Sigma(x)$ with $c(x) \in \mathbb C^\times$, and taking determinants $c(x)^n = 1$. The map $x \mapsto c(x)\mathbb 1 = \Sigma'(x)\Sigma(x)^{-1}$ is continuous and a homomorphism: $c(xy)\mathbb 1 = \Sigma'(x)\Sigma'(y)\Sigma(y)^{-1}\Sigma(x)^{-1} = \Sigma'(x)\,c(y)\,\Sigma(x)^{-1} = c(y)c(x)\mathbb 1$. A continuous map from the connected $\tilde G$ into the finite set of $n$-th roots of unity is constant, here $c \equiv c(\mathbb 1) = 1$.
+>
+> **8. The unitary case.** If every $\Pi(g)$ has a unitary representative $U_g$ (a projective representation in the sense of [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-14|Def. §C3.1.14]]), then $\Sigma(x) = c(x)U_{p(x)}$ by step 6, and $1 = |\det\Sigma(x)| = |c(x)|^n|\det U_{p(x)}| = |c(x)|^n$, so $|c(x)| = 1$ and $\Sigma(x)$ is unitary: $U_{p(x)} = \overline{c(x)}\,\Sigma(x)$ is a lift in the sense of Def. §CB.13.5.
+>
+> **9. Instances.** $SU(2) \to SO(3)$ is the universal covering group ([[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|591 Thm. §42.4]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]]), and $SL(2, \mathbb C) \to SO^+(1,3)$ is ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-7|Theorem §C5a.4.7]], 3). The rotation case is [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-9|Theorem §C3.1.9]], whose derivation normalizes the determinant on the group instead of the trace on the algebra.
+>
+> **What the proof shows**
+> - Finite dimension enters through the trace (step 4) and the determinant (steps 5, 7): they remove the scalar ambiguity of each generator. ⚑ By-product: in infinite dimension no trace exists, and a scalar added to a bracket may be impossible to remove; that is the hypothesis of Bargmann's theorem (Theorem §CB.13.7 below) and the obstruction in [[§C3.1 Groups, Algebras and Representations of Rotations#^rem-c3-1-9|§C3.1, ★ Remark: Infinite dimensions, Bargmann, and a phase topology does not explain]].
+> - The topology enters only in step 5: on $G$ itself the traceless $\sigma$ need not integrate (it integrates to $SU(2)$, not to $SO(3)$, for half-integer spin); this is the two-valuedness of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-8|Theorem §C5a.4.8]], 2.
+> - Unitarity was not needed for existence: the non-unitary two-valued Lorentz representations $(j_+, j_-)$ lift to $SL(2, \mathbb C)$ in the same way.
 
 ^pf-cb-13-6
+
+*Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-12|Def. §CB.1.12]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-2|Theorem §CB.1.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-14|Theorem §CB.1.14]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|Theorem §CB.1.16]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-24|Theorem §CB.1.24]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-3|Theorem §CB.3.3]]
 
 The rotation case, proved in [[§C3.1 Groups, Algebras and Representations of Rotations|§C3.1]]:
 
@@ -103,12 +202,14 @@ The rotation case, proved in [[§C3.1 Groups, Algebras and Representations of Ro
 > [!theorem] Theorem §CB.13.7: Bargmann's Theorem
 > Let $\tilde G$ be a connected and simply connected Lie group whose Lie algebra $\mathfrak g$ has the property that every real skew-symmetric bilinear form $\beta$ on $\mathfrak g$ with $\beta([X, Y], Z) + \beta([Y, Z], X) + \beta([Z, X], Y) = 0$ is of the form $\beta(X, Y) = f([X, Y])$ for a linear $f : \mathfrak g \to \mathbb R$ (vanishing second cohomology). Then every continuous projective unitary representation of $\tilde G$ on a separable Hilbert space is induced by a continuous unitary representation of $\tilde G$. This holds for $SU(2)$, $SL(2, \mathbb C)$ and the universal cover $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$ of the Poincaré group (§CB.14★).
 >
-> *Source (planned): Bargmann (1954), via Weinberg vol. 1, §2.7 and App. 2.B, as cited in the user's pre-course notes · Hall, Quantum Theory for Mathematicians, Ch. 16 (to be checked)*
+> *Source: V. Bargmann, "On unitary ray representations of continuous groups", Ann. of Math. 59 (1954) 1–46 (the original theorem and proof) · the statement as Theorem 135 ("Bargmann's criterion") in V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course, arXiv:1508.06951, §3.6 (https://arxiv.org/abs/1508.06951), where continuity means that $g \mapsto |\langle\psi, U(g)\phi\rangle|$ is continuous for all $\psi, \phi$ and the conclusion is equivalence (phases $U'(g) = \chi(g)U(g)$) to a strongly continuous unitary representation; Moretti's Remark 136 notes that $SU(2)$ satisfies the condition · the Poincaré case: Weinberg vol. 1, §2.7 and App. 2.B, as cited in the user's pre-course notes · Hall, Quantum Theory for Mathematicians, §16.9.2, Ex. 16.56 (a simply connected group where the conclusion fails)*
 
 ^thm-cb-13-7
 
 > [!proof]- Proof (to be filled)
-> *To be filled, or stated only with a precise reference (infinite-dimensional; beyond the course's finite-dimensional tools).*
+> *Not proved here: the proof (Bargmann 1954, cited above) needs the local theory of continuous ray representations in infinite dimension (local exponents, their smoothing and their reduction to Lie-algebra cocycles), beyond the finite-dimensional tools of this chapter. That the condition on $\beta$ holds for $\mathfrak{su}(2)$ and $\mathfrak{sl}(2, \mathbb C)_{\mathbb R}$ is Whitehead's second lemma for semisimple Lie algebras (quoted), for the Poincaré algebra Weinberg's removal of central charges (§2.7). The finite-dimensional analogue is proved in Theorem §CB.13.6.*
+
+<!-- Searched for a freely available proof (2026-10-08): Bargmann 1954 (Ann. Math., paywalled); Hall QTM §16.7–16.9 (states the obstruction, Ex. 16.56, no proof); Moretti arXiv:1508.06951 §3.6 (statement only, cites Barut–Raczka and Moretti's Springer book); Schottenloher, A Mathematical Introduction to Conformal Field Theory, Ch. 4 "Central Extensions of Lie Algebras and Bargmann's Theorem" (author's PDF link returned 404); Weinberg App. 2.B (no free copy). -->
 
 ^pf-cb-13-7
 
@@ -124,7 +225,7 @@ The rotation case, proved in [[§C3.1 Groups, Algebras and Representations of Ro
 > [!theorem] Theorem §CB.13.9: The Square of an Antiunitary Involution Is ±1
 > If $\Theta$ is antiunitary and $\Theta^2 = c\mathbb 1$ for a number $c$, then $c = \pm1$. If $c = -1$, then $\Theta\psi$ is orthogonal to $\psi$ for every $\psi$.
 >
-> *Source (planned): written here · [[§C8.3★ Time Reversal#^thm-c8-3-7|QM Theorem §C8.3.7]] (Kramers)*
+> *Source: written here · [[§C8.3★ Time Reversal#^thm-c8-3-7|QM Theorem §C8.3.7]] (Kramers)*
 
 ^thm-cb-13-9
 
@@ -140,14 +241,30 @@ The rotation case, proved in [[§C3.1 Groups, Algebras and Representations of Ro
 > [!theorem] Theorem §CB.13.10: An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
 > Let $\Theta$ be antiunitary on the spin-$j$ representation $V_j$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|Theorem §C3.1.6]]) with $\Theta J^a\Theta^{-1} = -J^a$ for $a = 1, 2, 3$. Then $\Theta^2 = (-1)^{2j}\mathbb 1$. In particular an antiunitary time reversal acts on spinors with $\Theta^2 = -1$ and on tensors with $\Theta^2 = +1$.
 >
-> *Source (planned): [[§C8.3★ Time Reversal#^thm-c8-3-6|QM Theorem §C8.3.6]] · written here*
+> *Source: [[§C8.3★ Time Reversal#^thm-c8-3-6|QM Theorem §C8.3.6]] (Sakurai §4.4.4: $\Theta = \eta\,e^{-i\pi J_y}K$, $\Theta^2 = (-1)^{2j}$) · the condition $\Theta\mathbf J\Theta^{-1} = -\mathbf J$: Yu Zhao-Huan, 量子场论讲义, §9.1.2, eqs. (9.50)–(9.58) · the ladder-operator proof written here*
 
 ^thm-cb-13-10
 
-> [!proof]- Proof (to be filled)
-> *To be filled ($\Theta^2$ is linear and commutes with every $J^a$, so it is a scalar by [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-3|Theorem §CB.3.3]], $\pm1$ by Theorem §CB.13.9; evaluate on the standard basis with $\Theta = \eta\,e^{-i\pi J^2}K$).*
+> [!proof]- Proof
+> Use the standard basis $|j, m\rangle$ of $V_j$ and its inner product, in which the $J^a$ are Hermitian ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|Theorem §C3.1.6]], 3); $\Theta$ is antiunitary for this inner product.
+>
+> **1. Θ² is a scalar.** $\Theta^2$ is linear (a product of two antilinear maps) and $\Theta^2J^a\Theta^{-2} = \Theta(-J^a)\Theta^{-1} = -\Theta J^a\Theta^{-1} = J^a$ (the real number $-1$ passes through $\Theta$). So $\Theta^2$ commutes with every $J^a$; $V_j$ is irreducible, so $\Theta^2 = c\mathbb 1$ ([[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-3|Theorem §CB.3.3]]), and $c = \pm1$ ([[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-9|Theorem §CB.13.9]]).
+>
+> **2. Θ reverses m.** $J^3\,\Theta|j, m\rangle = -\Theta J^3|j, m\rangle = -\Theta\bigl(m|j, m\rangle\bigr) = -m\,\Theta|j, m\rangle$ ($m$ real). The weight spaces are one-dimensional, so $\Theta|j, m\rangle = a_m|j, -m\rangle$, and $|a_m| = 1$ because $\Theta$ preserves norms.
+>
+> **3. Θ turns J⁺ into −J⁻.** Since $\Theta$ is antilinear, $\Theta(iJ^2)\Theta^{-1} = -i\,\Theta J^2\Theta^{-1} = iJ^2$, so $\Theta J^\pm\Theta^{-1} = \Theta(J^1 \pm iJ^2)\Theta^{-1} = -J^1 \pm iJ^2 = -J^\mp$.
+>
+> **4. The phases alternate.** Let $N_m = \sqrt{(j - m)(j + m + 1)}$, so $J^+|j, m\rangle = N_m|j, m+1\rangle$ and $J^-|j, -m\rangle = \sqrt{(j - m)(j + m + 1)}\,|j, -m-1\rangle = N_m|j, -m-1\rangle$ (Theorem §C3.1.6, 3). For $m < j$ apply step 3 to $|j, m\rangle$: the left side $\Theta J^+|j, m\rangle = \Theta(N_m|j, m+1\rangle) = N_ma_{m+1}|j, -m-1\rangle$ ($N_m$ real), the right side $-J^-\Theta|j, m\rangle = -a_mJ^-|j, -m\rangle = -a_mN_m|j, -m-1\rangle$. With $N_m \ne 0$: $a_{m+1} = -a_m$, hence $a_m = (-1)^{j-m}a_j$ for $m = j, j-1, \dots, -j$.
+>
+> **5. The square.** $\Theta^2|j, m\rangle = \Theta(a_m|j, -m\rangle) = \bar a_m\,a_{-m}|j, m\rangle = \overline{(-1)^{j-m}a_j}\,(-1)^{j+m}a_j|j, m\rangle = (-1)^{2j}|a_j|^2|j, m\rangle = (-1)^{2j}|j, m\rangle$, the signs being real ($j \pm m$ are integers).
+>
+> **What the proof shows**
+> - The sign is forced by the ladder structure alone: reversing $m$ antilinearly flips the sign at every rung, and $2j$ rungs separate $m$ from $-m$. No phase convention for $\Theta$ affects it ($a_j$ cancels against its conjugate), in agreement with QM Theorem §C8.3.6 ($\eta$ arbitrary).
+> - For half-integer $j$, $\Theta^2 = -1$ and Theorem §CB.13.9 gives $\Theta\psi \perp \psi$: Kramers degeneracy ([[§C8.3★ Time Reversal#^thm-c8-3-7|QM Theorem §C8.3.7]]).
 
 ^pf-cb-13-10
+
+*Uses:* [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|Theorem §C3.1.6]], [[§CB.3 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-3-3|Theorem §CB.3.3]], [[§CB.13 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-13-9|Theorem §CB.13.9]]
 
 The course's remark on why states carry unitary representations of the covering group, in [[§C3.5 Quantum Poincaré Transformations|§C3.5]]:
 

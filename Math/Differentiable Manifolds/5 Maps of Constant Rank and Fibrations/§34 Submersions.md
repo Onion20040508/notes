@@ -78,7 +78,7 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§34 Submersions#^def-34-1|Def. §34.1]]
 
-The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§39 Projective Spaces and the Hopf Fibration|§39]].
+The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§40 Projective Spaces and the Hopf Fibration|§40]].
 
 > [!definition] Definition §34.3: Regular Points and Critical Points
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.

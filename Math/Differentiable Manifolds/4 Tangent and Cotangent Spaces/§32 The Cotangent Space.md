@@ -39,7 +39,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > [!remark]- Connections
 > - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].
 > - In multivariable calculus: [[§10 The Differential#^def-10-1|452 Def. §10.1]] and [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1 (gradient = differential = 1-form)]].
-> - Assembled over all of $M$: the cotangent bundle, [[§45 The Cotangent Bundle#^def-45-1|Def. §45.1]].
+> - Assembled over all of $M$: the cotangent bundle, [[§46 The Cotangent Bundle#^def-46-1|Def. §46.1]].
 > - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
 > [!theorem] Proposition §32.1: The Differential Evaluates Derivations
@@ -98,7 +98,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 *Uses:* [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]
 
 > [!remark]- Connections
-> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§45 The Cotangent Bundle#^def-45-4|Def. §45.4]], [[§45 The Cotangent Bundle#^def-45-5|Def. §45.5]].
+> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§46 The Cotangent Bundle#^def-46-4|Def. §46.4]], [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]].
 
 > [!theorem] Corollary §32.4: Properties of the Differential of a Function
 > Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$. Then
@@ -301,7 +301,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^prop-32-6|§32.6]], [[§32 The Cotangent Space#^thm-32-8|§32.8]]
 
-Equal dimension is what makes the isomorphisms of Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§45 The Cotangent Bundle|§45]]).
+Equal dimension is what makes the isomorphisms of Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§46 The Cotangent Bundle|§46]]).
 
 **Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§32 The Cotangent Space#^prop-32-7|§32.7]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
 
@@ -323,7 +323,7 @@ Equal dimension is what makes the isomorphisms of Theorem [[§32 The Cotangent S
 ^def-32-5
 
 > [!remark]- Connections
-> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§46 One-Forms#^def-46-4|Def. §46.4]].
+> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§47 One-Forms#^def-47-4|Def. §47.4]].
 
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
 
@@ -362,4 +362,4 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 ^rem-32-6
 
 > [!remark]- Connections
-> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]. The field version: [[§46 One-Forms#^cor-46-4|Cor. §46.4]].
+> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]. The field version: [[§47 One-Forms#^cor-47-4|Cor. §47.4]].

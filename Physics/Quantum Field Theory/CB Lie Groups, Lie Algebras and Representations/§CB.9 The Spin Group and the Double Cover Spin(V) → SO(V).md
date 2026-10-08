@@ -122,7 +122,7 @@ Throughout, $(V, q)$ is a nondegenerate real quadratic space of dimension $n$ ([
 > [!theorem] Theorem §CB.9.10: Cartan–Dieudonné
 > Every element of $O(V)$ is a product of at most $n = \dim V$ reflections $r_u$ ([[§CB.9 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-9-4|Theorem §CB.9.4]]) with $q(u) \ne 0$; the elements of $SO(V)$ are the products of an even number of them.
 >
-> *Source (planned): Figueroa-O'Farrill, Spin Geometry (to be checked) · stated here for general $V$; the two cases the course needs are reached directly ($SU(2) \to SO(3)$: [[§41 SU(2) → SO(3)꞉ The Double Cover#^thm-41-4|591 Thm. §41.4]]; $SL(2, \mathbb C) \to SO^+(1,3)$: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-7|Theorem §C5a.4.7]])*
+> *Source (planned): Figueroa-O'Farrill, Spin Geometry (to be checked) · stated here for general $V$; the two cases the course needs are reached directly ($SU(2) \to SO(3)$: [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|591 Thm. §42.4]]; $SL(2, \mathbb C) \to SO^+(1,3)$: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-7|Theorem §C5a.4.7]])*
 
 ^thm-cb-9-10
 

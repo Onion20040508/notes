@@ -85,7 +85,7 @@ Schur's lemma, stated and proved in [[§C3.1 Groups, Algebras and Representation
 ## Representations of associative algebras
 
 > [!definition] Definition §CB.3.5: Associative Algebra
-> An **associative algebra** over $\mathbb K = \mathbb R$ or $\mathbb C$ is a $\mathbb K$-vector space $A$ with a $\mathbb K$-bilinear associative product and a unit $1_A$. Examples: $M_n(\mathbb C)$, $\operatorname{End}(W)$, the quaternions $\mathbb H$ ([[§40 The Unit Quaternions and SU(2)#^def-40-1|591 Def. §40.1]]) over $\mathbb R$.
+> An **associative algebra** over $\mathbb K = \mathbb R$ or $\mathbb C$ is a $\mathbb K$-vector space $A$ with a $\mathbb K$-bilinear associative product and a unit $1_A$. Examples: $M_n(\mathbb C)$, $\operatorname{End}(W)$, the quaternions $\mathbb H$ ([[§41 The Unit Quaternions and SU(2)#^def-41-1|591 Def. §41.1]]) over $\mathbb R$.
 >
 > *Source (planned): written here*
 
@@ -168,7 +168,7 @@ The course's statement for $SU(2)$ and $SO(3)$, proved in [[§C3.1 Groups, Algeb
 ![[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-5]]
 
 > [!theorem] Theorem §CB.3.12: Haar Measure on a Compact Group
-> On every compact matrix Lie group $G$ there is a unique Borel probability measure $\mu$ invariant under left and right translations: $\int_Gf(hg)\,d\mu(g) = \int_Gf(gh)\,d\mu(g) = \int_Gf(g)\,d\mu(g)$ for every continuous $f$ and $h \in G$. For $SU(2) \cong S^3$ ([[§40 The Unit Quaternions and SU(2)#^prop-40-5|591 Prop. §40.5]]) it is the normalized round measure of $S^3$.
+> On every compact matrix Lie group $G$ there is a unique Borel probability measure $\mu$ invariant under left and right translations: $\int_Gf(hg)\,d\mu(g) = \int_Gf(gh)\,d\mu(g) = \int_Gf(g)\,d\mu(g)$ for every continuous $f$ and $h \in G$. For $SU(2) \cong S^3$ ([[§41 The Unit Quaternions and SU(2)#^prop-41-5|591 Prop. §41.5]]) it is the normalized round measure of $S^3$.
 >
 > *Source (planned): Hall, Quantum Theory for Mathematicians, Ch. 16–17 (cited in [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-5|Theorem §C3.1.5]]) · Measure Theory (551) for the measure-theoretic background*
 

@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§CB.14★ The Poincaré Group and Induced Representations]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]]
 
-*Sources (planned for the proofs; each to be checked against the text when the proof is written): P. Woit, Quantum Theory, Groups and Representations, Ch. 30 (§30.1 "The Grassmann algebra of polynomials on anticommuting generators") (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the user's PHY 513 notes, Ch. 3 §3.3 (derivatives from one side) · Henneaux & Teitelboim, Quantization of Gauge Systems (as cited in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) · Linear Algebra (LADR) §36 · the rest written here.*
+*Sources (planned for the proofs; each to be checked against the text when the proof is written): P. Woit, Quantum Theory, Groups and Representations, Ch. 30 (§30.1 "The Grassmann algebra of polynomials on anticommuting generators") (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the user's PHY 513 notes, Ch. 3 §3.3 (derivatives from one side) · Henneaux & Teitelboim, Quantization of Gauge Systems (as cited in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) · M. Srednicki, Quantum Field Theory (Cambridge, 2007), §44 (left and right derivatives, Berezin integration, linear change of variables, Gaussian integrals; checked for Theorem §CB.15.9) · Linear Algebra (LADR) §36–§37 · the rest written here.*
 
 *Deferred section (SPEC-CB): the skeleton is complete; the proofs are to be written together with the path integral for fermions (QFT C11, planned).*
 
@@ -34,6 +34,7 @@ What are anticommuting "numbers", how does one differentiate and integrate with 
 
 > [!proof]- Proof (to be filled)
 > *To be filled (deferred with C11).*
+> <!-- searched: Woit qmbook §30.1 (basis stated, no proof); Srednicki §44 (expansion eq. (44.10), no proof); the CB.4/CB.7 basis theorems are themselves placeholders — deferred with C11 -->
 
 ^pf-cb-15-2
 
@@ -53,6 +54,7 @@ What are anticommuting "numbers", how does one differentiate and integrate with 
 
 > [!proof]- Proof (to be filled)
 > *To be filled (on basis elements: moving $\theta_J$ past $\theta_I$ takes $|I||J|$ transpositions).*
+> <!-- searched: Woit qmbook §30.1 (anticommutation of generators only); Srednicki §44 (stated in passing) — no source with a proof; deferred with C11 -->
 
 ^pf-cb-15-4
 
@@ -84,6 +86,7 @@ What are anticommuting "numbers", how does one differentiate and integrate with 
 
 > [!proof]- Proof (to be filled)
 > *To be filled (deferred with C11).*
+> <!-- searched: Woit qmbook §30.1 (Leibniz rule and repeated derivative zero stated for monomials, no proof); Srednicki §44, eqs. (44.5)–(44.6), (44.11) (left and right derivatives, n = 1 example) — no source with a proof; deferred with C11 -->
 
 ^pf-cb-15-7
 
@@ -98,21 +101,56 @@ The course's graded bracket and the side of the derivative, in [[§C5b.1 Canonic
 > [!definition] Definition §CB.15.8: Berezin Integral
 > The **Berezin integral** over $\theta_i$ is the left derivative: $\int d\theta_i\,f = \partial^L_if$ ([[§CB.15 Grassmann Algebras#^def-cb-15-5|Def. §CB.15.5]]); so $\int d\theta\,1 = 0$, $\int d\theta\,\theta = 1$. Multiple integrals are iterated, the rightmost $d\theta$ acting first: $\int d^n\theta\,f = \int d\theta_n\cdots\int d\theta_1\,f$, normalized by $\int d^n\theta\,\theta_1\theta_2\cdots\theta_n = 1$.
 >
-> *Source (planned): Woit, Ch. 30 · written here (the conventions to be matched to the course when C11 is written)*
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §30.1 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf): $\int F\,d\xi_1\cdots d\xi_n = \frac{\partial}{\partial\xi_n}\cdots\frac{\partial}{\partial\xi_1}F$, the coefficient of $\xi_1\cdots\xi_n$ · M. Srednicki, Quantum Field Theory (Cambridge, 2007), §44, eq. (44.13) and below: $d^n\psi = d\psi_n\cdots d\psi_1$, $\int d\psi_i\,\psi_j = \delta_{ij}$ — the same orientation and normalization · to be matched to the course's conventions when C11 is written*
 
 ^def-cb-15-8
 
 > [!theorem] Theorem §CB.15.9: Linear Change of Variables
 > If $\theta_i = A_{ij}\theta'_j$ with $A \in GL(n, \mathbb C)$, then for every $f \in \Lambda_n$, $\int d^n\theta'\,f(A\theta') = \det(A)\int d^n\theta\,f(\theta)$ ([[§CB.15 Grassmann Algebras#^def-cb-15-8|Def. §CB.15.8]]): the Berezin measure transforms with the inverse of the ordinary Jacobian, $d^n\theta = (\det A)^{-1}d^n\theta'$.
 >
-> *Source (planned): Woit, Ch. 30 · written here*
+> *Source: M. Srednicki, Quantum Field Theory (Cambridge, 2007), §44, eqs. (44.12)–(44.19) (the linear change of variables, with the same orientation $d^n\psi = d\psi_n\cdots d\psi_1$) · P. Woit, Quantum Theory, Groups and Representations, §30.1 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) (the integral as the top coefficient) · the steps written out here*
 
 ^thm-cb-15-9
 
-> [!proof]- Proof (to be filled)
-> *To be filled ($\theta_1\cdots\theta_n = \det(A)\,\theta'_1\cdots\theta'_n$ by antisymmetry, [[§36 Alternating Multilinear Forms#^ladr-9-36|LADR Thm. 9.36]]).*
+> [!proof]- Proof
+> **1. The integral is the top coefficient** (Woit §30.1). Expand $f = \sum_Ic_I\theta_I$ in the basis of [[§CB.15 Grassmann Algebras#^thm-cb-15-2|Theorem §CB.15.2]], 1. For a basis monomial, $\partial^L_1\theta_I = \theta_{I\setminus\{1\}}$ if $1 \in I$ ($\theta_1$ is already at the left end, as $1$ is the smallest index) and $\partial^L_1\theta_I = 0$ if $1 \notin I$ ([[§CB.15 Grassmann Algebras#^def-cb-15-5|Def. §CB.15.5]]). Repeating with $\partial^L_2, \dots, \partial^L_j$, by induction on $j$: $\partial^L_j\cdots\partial^L_1\theta_I = \theta_{I\setminus\{1, \dots, j\}}$ if $\{1, \dots, j\} \subset I$, and $0$ otherwise. At $j = n$, by Def. §CB.15.8,
+>
+> $$
+> \int d^n\theta\;\theta_I = \begin{cases}1, & I = \{1, \dots, n\},\\ 0, & \text{otherwise},\end{cases} \qquad\text{so}\qquad \int d^n\theta\,f = c_{\{1, \dots, n\}} .
+> $$
+>
+> **2. What the substitution means.** Put $\eta_i = \sum_jA_{ij}\theta'_j$. These anticommute: $\eta_i\eta_k + \eta_k\eta_i = \sum_{j, l}A_{ij}A_{kl}(\theta'_j\theta'_l + \theta'_l\theta'_j) = 0$ ([[§CB.15 Grassmann Algebras#^def-cb-15-1|Def. §CB.15.1]]). $f(A\theta')$ is $f$ with each $\theta_i$ replaced by $\eta_i$: $f(A\theta') = \sum_Ic_I\,\eta_I$, $\eta_I = \eta_{i_1}\cdots\eta_{i_k}$. Multiplying out, $\eta_I$ with $|I| = k$ is a combination of products of $k$ generators $\theta'_j$, i.e. (after the reordering of Steps 4–5) of the $\theta'_J$ with $|J| = k$. So for $|I| < n$ the coefficient of $\theta'_1\cdots\theta'_n$ in $\eta_I$ is $0$, and by Step 1 (for the generators $\theta'$) only the top term $c_{\{1, \dots, n\}}\,\eta_1\cdots\eta_n$ contributes to $\int d^n\theta'\,f(A\theta')$.
+>
+> **3. Expand the top term.** With all $n$ sums written out,
+>
+> $$
+> \eta_1\eta_2\cdots\eta_n = \sum_{j_1, \dots, j_n = 1}^nA_{1j_1}A_{2j_2}\cdots A_{nj_n}\;\theta'_{j_1}\theta'_{j_2}\cdots\theta'_{j_n} .
+> $$
+>
+> **4. Repeated indices drop out.** If $j_a = j_b$ for some $a < b$, move $\theta'_{j_b}$ to the left past the $b - a - 1$ factors between them (a sign $(-1)^{b-a-1}$); then $\theta'_{j_a}\theta'_{j_a} = 0$ (Theorem §CB.15.2, 1). Only the terms in which $(j_1, \dots, j_n)$ is a permutation of $(1, \dots, n)$ remain.
+>
+> **5. Sort each surviving product.** Sort $(j_1, \dots, j_n)$ into $(1, \dots, n)$ by swapping neighbours. Each swap multiplies the Grassmann product by $-1$ (anticommutation) and the sign of the list by $-1$ ([[§36 Alternating Multilinear Forms#^ladr-9-34|LADR Thm. 9.34]]); the sorted list has sign $+1$ ([[§36 Alternating Multilinear Forms#^ladr-9-32|LADR Def. 9.32]]). Hence $\theta'_{j_1}\cdots\theta'_{j_n} = \operatorname{sign}(j_1, \dots, j_n)\,\theta'_1\cdots\theta'_n$.
+>
+> **6. The determinant** (Srednicki (44.16)). By Steps 3–5,
+>
+> $$
+> \eta_1\cdots\eta_n = \Bigl(\sum_{(j_1, \dots, j_n) \in \operatorname{perm}n}\operatorname{sign}(j_1, \dots, j_n)\,A_{1j_1}\cdots A_{nj_n}\Bigr)\theta'_1\cdots\theta'_n = \det(A^{\mathsf T})\,\theta'_1\cdots\theta'_n = \det(A)\,\theta'_1\cdots\theta'_n ,
+> $$
+>
+> the sum being the formula of [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]] for $A^{\mathsf T}$ (whose $(j, k)$ entry is $A_{kj}$), and $\det A^{\mathsf T} = \det A$ ([[§26 Transposes, Products, and Linearity of Determinants#^thm-26-1|235 Thm. §26.1]]).
+>
+> **7. Conclusion.** By Steps 2 and 6, $\int d^n\theta'\,f(A\theta') = c_{\{1, \dots, n\}}\det A$, and by Step 1, $c_{\{1, \dots, n\}} = \int d^n\theta\,f(\theta)$. Written as a rule for the measure, "$d^n\theta' = \det(A)\,d^n\theta$", i.e. $d^n\theta = (\det A)^{-1}d^n\theta'$.
+>
+> ⚑ By-product: for ordinary variables $x = Ax'$ one has $d^nx = |\det A|\,d^nx'$; the Berezin measure carries the inverse power (Srednicki (44.18) against (44.19)), because the integral picks the coefficient of the top product, which scales by $\det A$, instead of summing values over a volume. This is why a fermionic Gaussian gives $\det M$ where a bosonic one gives $(\det M)^{-1}$ → [[§CB.15 Grassmann Algebras#^thm-cb-15-10|Theorem §CB.15.10]].
+>
+> **What the proof shows.**
+> - Only the top-degree component of $f$ matters; a linear substitution preserves degrees and multiplies the top monomial by $\det A$.
+> - Invertibility of $A$ was not used in the computation; it is needed only for the $\theta'$ to be generators again (so that $d^n\theta'$ is a Berezin integral of the same kind).
+> - Used next: the Gaussian integral (Theorem §CB.15.10) and, later, the fermionic path integral (QFT C11, planned).
 
 ^pf-cb-15-9
+
+*Uses:* [[§CB.15 Grassmann Algebras#^def-cb-15-1|Def. §CB.15.1]], [[§CB.15 Grassmann Algebras#^thm-cb-15-2|Theorem §CB.15.2]], [[§CB.15 Grassmann Algebras#^def-cb-15-5|Def. §CB.15.5]], [[§CB.15 Grassmann Algebras#^def-cb-15-8|Def. §CB.15.8]], [[§36 Alternating Multilinear Forms#^ladr-9-32|LADR Def. 9.32]], [[§36 Alternating Multilinear Forms#^ladr-9-34|LADR Thm. 9.34]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-1|235 Thm. §26.1]]
 
 > [!theorem] Theorem §CB.15.10: The Fermionic Gaussian Integral Is a Determinant
 > Let $\theta_1, \dots, \theta_n, \bar\theta_1, \dots, \bar\theta_n$ be $2n$ Grassmann generators and $M \in M_n(\mathbb C)$. With the measure $\prod_{i=1}^n d\bar\theta_i\,d\theta_i$ (each pair even, so their order does not matter; within a pair $d\theta_i$ acts first),
@@ -126,7 +164,8 @@ The course's graded bracket and the side of the derivative, in [[§C5b.1 Canonic
 ^thm-cb-15-10
 
 > [!proof]- Proof (to be filled)
-> *To be filled (for $n = 1$: $e^{-m\bar\theta\theta} = 1 - m\bar\theta\theta$ and $\int d\bar\theta\,d\theta\,\bar\theta\theta = -1$; in general by Theorem §CB.15.9 and Jordan form, or by expanding the exponential).*
+> *To be filled with C11 (deferred). For $n = 1$: $e^{-m\bar\theta\theta} = 1 - m\bar\theta\theta$ and $\int d\bar\theta\,d\theta\,\bar\theta\theta = \partial^L_{\bar\theta}\partial^L_\theta(-\theta\bar\theta) = \partial^L_{\bar\theta}(-\bar\theta) = -1$, so the integral is $m$. Sourced proof for general $n$: M. Srednicki, Quantum Field Theory (Cambridge, 2007), §44, eqs. (44.28)–(44.37), by the singular value decomposition of $M$ and the change of variables of [[§CB.15 Grassmann Algebras#^thm-cb-15-9|Theorem §CB.15.9]] applied to $\theta$ and $\bar\theta$ separately; Srednicki's form is $\int d^n\chi\,d^n\bar\chi\,e^{\chi^\dagger M\chi} = \det M$ with $d^n\chi\,d^n\bar\chi = d\chi_nd\bar\chi_n\cdots d\chi_1d\bar\chi_1$ (there $\int d\chi\,d\bar\chi\,\bar\chi\chi = +1$, here $\int d\bar\theta\,d\theta\,\bar\theta\theta = -1$; the opposite signs of the exponents compensate). Alternative route: expand the exponential; only $\frac{(-1)^n}{n!}(\bar\theta M\theta)^n = (-1)^n\det M\prod_i\bar\theta_i\theta_i$ reaches the top degree.*
+> <!-- searched: Srednicki §44 (proof, convention differs; not short); Woit qmbook Ch. 30 (no Gaussian integral); PS §9.5 (scanned PDF, not checked) -->
 
 ^pf-cb-15-10
 

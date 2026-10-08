@@ -24,7 +24,7 @@ tags: [topology, hub]
 - [[§5 Quotient Maps#^rem-5-1|Remark: How This Gets Used]]
 - [[§13 Group Actions and Orbit Spaces#^ex-13-5|Example §13.5: SO(3) Acting on ℝ³]]
 - [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|Proposition §18.1: Each φ_i Is a Chart]]
-- [[§41 SU(2) → SO(3)꞉ The Double Cover#^thm-41-4|Theorem §41.4: The Double Cover SU(2) → SO(3)]]
+- [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|Theorem §42.4: The Double Cover SU(2) → SO(3)]]
 
 ## Connections
 - **Immediate consequence.** [[§13 Quotient Topology#^cor-13-4|Induced Bijection from Quotient]] (§13.4): a continuous surjection g induces a homeomorphism X* ≅ Z exactly when g is a quotient map. The hypothesis that g is constant on fibers is exactly what well-definedness needs ([[§13 Quotient Topology#^rem-13-7|Constant on Fibers]]).

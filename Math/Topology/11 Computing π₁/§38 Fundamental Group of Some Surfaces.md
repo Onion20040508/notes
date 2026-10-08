@@ -51,7 +51,7 @@ tags: [topology, math590]
 *The evenly covered neighborhood from the proof: $U = B(x,\varepsilon)\cap S^2$ (dark red) and its antipodal copy $a(U)$ (light red, on the far side of the sphere) are disjoint because $\varepsilon < 1$ while $d(x,-x) = 2$ (dotted diameter). $p$ maps each of them homeomorphically onto the same set $p(U) \subseteq P^2$: two sheets over $p(U)$.*
 
 > [!remark]- Connections
-> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one [[§33 Local Diffeomorphisms#^def-33-1|local diffeomorphism]]: [[§39 Projective Spaces and the Hopf Fibration#^ex-39-1|591 Ex. §39.1]].
+> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one [[§33 Local Diffeomorphisms#^def-33-1|local diffeomorphism]]: [[§40 Projective Spaces and the Hopf Fibration#^ex-40-1|591 Ex. §40.1]].
 
 > [!theorem] Theorem §38.2: $\pi_1(P^2) \cong \mathbb{Z}/2\mathbb{Z}$
 > The fundamental group of the projective plane is the cyclic group of order $2$.

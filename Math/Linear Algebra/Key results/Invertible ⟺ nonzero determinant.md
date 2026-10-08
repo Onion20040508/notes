@@ -30,7 +30,7 @@ tags: [linear-algebra, hub]
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9: Complex Matrices and GL(n,ℂ)]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|Lemma §23.3: A One-Sided Inverse Suffices]]
 - [[§34 Submersions#^thm-34-4|Theorem §34.4: Local Normal Form for Submersions]]
-- [[§41 SU(2) → SO(3)꞉ The Double Cover#^lem-41-2|Lemma §41.2: Every Rotation Has an Axis]]
+- [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|Lemma §42.2: Every Rotation Has an Axis]]
 
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§37 Determinants#^ladr-9-51|9.51]]).

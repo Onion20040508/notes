@@ -18,9 +18,10 @@ tags: [chapter, differentiable-manifolds]
 - [[§36 Fibrations]]
 - [[§37 Immersions]]
 - [[§38 Embeddings]]
-- [[§39 Projective Spaces and the Hopf Fibration]]
-- [[§40 The Unit Quaternions and SU(2)]]
-- [[§41 SU(2) → SO(3)꞉ The Double Cover]]
+- [[§39 Geometric and Abstract Manifolds]]
+- [[§40 Projective Spaces and the Hopf Fibration]]
+- [[§41 The Unit Quaternions and SU(2)]]
+- [[§42 SU(2) → SO(3)꞉ The Double Cover]]
 
 ## Central results
 - [[Local Diffeomorphism Criterion]] (§33.2)
@@ -29,7 +30,7 @@ tags: [chapter, differentiable-manifolds]
 - [[Immersion Normal Form]] (§37.1)
 - [[Images of Embeddings Are Submanifolds]] (§38.1)
 - [[Injective Proper Immersions Are Embeddings]] (§38.5)
-- [[SU(2) Is a Double Cover of SO(3)]] (§41.4)
+- [[SU(2) Is a Double Cover of SO(3)]] (§42.4)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

@@ -25,7 +25,7 @@ tags: [topology, hub]
 - [[§17 Differentiable Structures#^prop-17-4|Proposition §17.4: Chart Domains on the Circle]]
 - [[§36 Fibrations#^ex-36-1|Example §36.1: A Submersion That Is Not a Fibration]]
 - [[§37 Immersions#^ex-37-1|Example §37.1: An Immersion That Crosses Itself]]
-- [[§41 SU(2) → SO(3)꞉ The Double Cover#^prop-41-1|Proposition §41.1: Conjugation by Unit Quaternions Is Rotation]]
+- [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|Proposition §42.1: Conjugation by Unit Quaternions Is Rotation]]
 
 ## Connections
 - **Generalizes.** It is the engine of the [[§16 Connected Subspaces of ℝ#^thm-16-3|Intermediate Value Theorem]] (§16.3), whose MATH 451 case on [a, b] is [[Intermediate Value Theorem]]. Without connectedness IVT fails, e.g. for a map on [0, 1] ∪ [2, 3] taking the values 0 and 2 ([[§16 Connected Subspaces of ℝ#^rem-16-2|IVT: The Power of Connectedness]]).

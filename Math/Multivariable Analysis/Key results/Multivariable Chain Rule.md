@@ -38,8 +38,8 @@ tags: [multivariable-analysis, hub]
 - [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|Corollary §12.5: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
 - [[§17 Differentiable Structures#^thm-17-1|Theorem §17.1: Compatibility Means the Two Notions Agree]]
 - [[§17 Differentiable Structures#^thm-17-5|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]
-- [[§19 Smooth Functions and Smooth Maps#^prop-19-1|Proposition §19.1: Some Chart Suffices — Every Chart Then Works]]
 - [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1: Two Smooth Structures on the Real Line]]
+- [[§19 Smooth Functions and Smooth Maps#^prop-19-1|Proposition §19.1: Some Chart Suffices — Every Chart Then Works]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-2|Proposition §19.2: Smoothness of a Map Does Not Depend on the Charts]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-3|Proposition §19.3: The Two Notions of Diffeomorphism Agree]]
 - [[§19 Smooth Functions and Smooth Maps#^lem-19-4|Lemma §19.4: Composition of Smooth Maps]]
@@ -59,7 +59,7 @@ tags: [multivariable-analysis, hub]
 - [[§30 The Differential in Coordinates#^cor-30-3|Corollary §30.3: The Chain Rule in Coordinates]]
 - [[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5: Agreement with the Vector-Space Differential]]
 - [[§35 Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
-- [[§45 The Cotangent Bundle#^prop-45-2|Proposition §45.2: The Smooth Atlas of T^*M]]
+- [[§46 The Cotangent Bundle#^prop-46-2|Proposition §46.2: The Smooth Atlas of T^*M]]
 
 ## Connections
 - **Proof idea.** Split the increment of g into single-variable increments and apply the one-variable [[Mean Value Theorem]]. Continuity of the partials controls the intermediate points. The 451 version is the [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]] (§28.3). Under differentiability alone, see [[§8 Algebra of Differentiable Functions#^thm-8-7|Theorem §8.7]].

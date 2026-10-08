@@ -25,8 +25,8 @@ tags: [differentiable-manifolds, hub]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-9|Proposition §19.9: Projections and Slice Inclusions Are Smooth]]
 - [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]
 - [[§35 Submanifolds#^lem-35-3|Lemma §35.3: Smooth Maps and Submanifolds]]
-- [[§46 One-Forms#^prop-46-1|Proposition §46.1: One-Forms in Coordinates]]
-- [[§47 Vector Fields#^prop-47-1|Proposition §47.1: Vector Fields in Coordinates]]
+- [[§47 One-Forms#^prop-47-1|Proposition §47.1: One-Forms in Coordinates]]
+- [[§48 Vector Fields#^prop-48-1|Proposition §48.1: Vector Fields in Coordinates]]
 
 ## Connections
 - **Used for.** Transport of smooth structure ([[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]]), smoothness of projections and slice inclusions ([[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]), diffeomorphisms onto open sets being charts ([[§34 Submersions#^lem-34-3|§34.3]], the step that finishes the [[Submersion Normal Form]]) and smooth maps into submanifolds ([[§35 Submanifolds#^lem-35-3|§35.3]]).

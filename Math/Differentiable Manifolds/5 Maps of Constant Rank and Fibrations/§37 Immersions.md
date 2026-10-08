@@ -15,7 +15,7 @@ The third special type of map, dual to the submersions of [[§34 Submersions|§3
 
 ## Immersions
 
-*Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§34 Submersions#^def-34-2|Definition §34.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§44 The Tangent Bundle|§44]]).*
+*Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§34 Submersions#^def-34-2|Definition §34.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§45 The Tangent Bundle|§45]]).*
 
 > [!definition] Definition §37.1: Immersions
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point. “Go from a lower-dimensional manifold to a bigger one.”

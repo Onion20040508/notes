@@ -31,7 +31,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 ^def-36-1
 
 > [!remark]- Connections
-> - The first major example: [[§44 The Tangent Bundle#^cor-44-3|the tangent bundle, §44.3]]; sections of a fibration: [[§36 Fibrations#^def-36-2|Def. §36.2]].
+> - The first major example: [[§45 The Tangent Bundle#^cor-45-3|the tangent bundle, §45.3]]; sections of a fibration: [[§36 Fibrations#^def-36-2|Def. §36.2]].
 > - The topological analogue with discrete fibre: [[§31 Covering Spaces#^def-31-2|covering maps, 590 Def. §31.2]]; in 591, [[§33 Local Diffeomorphisms#^rem-33-2|Remark: Covering Maps (§33)]].
 
 ![[m591-16-1.svg]]
@@ -57,7 +57,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 
 *Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§34 Submersions#^def-34-1|Def. §34.1]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§34 Submersions#^cor-34-6|§34.6]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
 
-The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§39 Projective Spaces and the Hopf Fibration|§39]].
+The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§40 Projective Spaces and the Hopf Fibration|§40]].
 
 > [!remark] Remark: What Comes Next
 > Tangent bundles, cotangent bundles and vector bundles are fibrations “with additional structure, where the fibres are vector spaces.” The basic notion of fibration is more general: its fibre $F$ is any manifold.
@@ -65,7 +65,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^rem-36-1
 
 > [!remark]- Connections
-> - [[§44 The Tangent Bundle#^cor-44-3|The tangent bundle is a fibration, §44.3]]; [[§45 The Cotangent Bundle#^def-45-1|the cotangent bundle, Def. §45.1]]; [[§44 The Tangent Bundle#^rem-44-2|Remark: Vector Bundles (§44)]].
+> - [[§45 The Tangent Bundle#^cor-45-3|The tangent bundle is a fibration, §45.3]]; [[§46 The Cotangent Bundle#^def-46-1|the cotangent bundle, Def. §46.1]]; [[§45 The Tangent Bundle#^rem-45-2|Remark: Vector Bundles (§44)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 

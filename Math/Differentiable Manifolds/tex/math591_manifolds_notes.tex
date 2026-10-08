@@ -8532,6 +8532,125 @@ Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $
 \end{proof}
 
 % ============================================================================
+% SECTION: GEOMETRIC AND ABSTRACT MANIFOLDS (comparison; not from lecture)
+% ============================================================================
+
+\section{Geometric and Abstract Manifolds}\label{sec:geometric-abstract}
+
+\roadmark{Stage: recap}{The two pictures of a manifold --- a subset of Euclidean space, and a space with an atlas --- set side by side, aspect by aspect, with the theorem that bridges each pair.}
+
+\textit{Not from lecture: a comparison written for these notes at the end of Chapter~5, when every bridge between the two pictures is in place. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.}
+
+The course has built manifolds in two ways. The \emph{geometric} picture is the equations thread of the roadmap: a manifold is a subset of some $\mathbb{R}^N$, cut out by equations or swept out by a parametrization, and everything --- smoothness, tangent vectors, differentials --- is inherited from the ambient space. The \emph{abstract} picture needs no ambient space: a manifold is a topological space with a maximal smooth atlas, and every notion is defined through charts. The geometric picture is concrete and computable; the abstract one is intrinsic and covers the quotients. For each aspect, the table names the two versions and the result that shows they agree wherever both make sense.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\small
+\begin{tabular}{p{0.15\textwidth} p{0.26\textwidth} p{0.26\textwidth} p{0.22\textwidth}}
+\hline
+Aspect & Geometric (inside $\mathbb{R}^N$) & Abstract (charts only) & Bridge \\
+\hline
+the object & external, internal or graph description (\ref{sec:euclidean}) & maximal atlas (Definition~\ref{def:smooth-structure}) & Proposition~\ref{prop:submanifold-euclidean} \\
+examples & level sets: spheres, $\SL$, $\Ogp(n)$, $\Ugp(n)$ & also quotients: $\mathbb{CP}^n$, $G/H$, Grassmannians & --- \\
+smooth structure & graph charts (Proposition~\ref{prop:level-set-smooth}) & chosen atlas; induced on submanifolds (Proposition~\ref{prop:submanifold-structure}) & Proposition~\ref{prop:rvt-agree}(1) \\
+smooth maps & restrictions of ambient maps (Lemma~\ref{lem:level-set-maps}) & smooth in charts (Definition~\ref{def:smooth-map}) & Lemma~\ref{lem:maps-into-submanifold} \\
+tangent space & velocities, $\ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}) & derivations of germs (Definition~\ref{def:abstract-tangent}) & Theorem~\ref{thm:ambient-abstract}, Proposition~\ref{prop:rvt-agree}(2) \\
+differential & the derivative $F'(p)$ (Definition~\ref{def:vs-differential}) & pushforward $F_{*p}$ (Definition~\ref{def:pushforward}) & Theorem~\ref{lem:differential-matrix}, Proposition~\ref{prop:differential-agree} \\
+normal directions & normal vectors, via the dot product & conormal covectors (Definition~\ref{def:conormal}) & a metric (\ref{sec:submanifolds}) \\
+regular values & Theorem~\ref{thm:regular-value}, Proposition~\ref{prop:level-set-smooth} & Theorem~\ref{thm:rvt-manifolds} & the table in \ref{sec:submanifolds} \\
+submanifolds & level sets in $\mathbb{R}^N$ & adapted charts (Definition~\ref{def:submanifold}) & Proposition~\ref{prop:submanifold-euclidean} \\
+global picture & inside $\mathbb{R}^N$ by construction & no ambient space & embeddings (Theorem~\ref{thm:embedding-image}) \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{The Object}
+
+Geometrically, a manifold is a subset of a Euclidean space that is, near each of its points, one of three equivalent things (Theorem~\ref{thm:ext-int}):
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:ext-int} (External Description).} Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. Near $p$, $X$ is described \textbf{externally} if there are an open $W \ni p$ in $\mathbb{R}^{n+k}$ and a smooth $F : W \to \mathbb{R}^k$ having $\vec 0$ as a regular value, with $X \cap W = F^{-1}(\vec 0)$ --- the level-set or implicit description.
+\end{quote}
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:internal-description} (Internal Description).} Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. Near $p$, $X$ is described \textbf{internally} if there are an open $V \subseteq \mathbb{R}^n$, an open $W \ni p$ in $\mathbb{R}^{n+k}$, and a smooth $\alpha : V \to \mathbb{R}^{n+k}$ which is a homeomorphism onto $X \cap W$ and whose Jacobian $D\alpha_q$ has rank $n$ at every $q \in V$ --- the parametric description.
+\end{quote}
+--- or a graph over $n$ of the coordinates. Abstractly, a manifold is a topological manifold together with a choice of charts:
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:smooth-structure} (Smooth Manifold Structure).} A \textbf{differentiable (smooth) structure} on a topological manifold $M$ is a maximal atlas $\mathcal{A}$ on $M$. A \textbf{smooth manifold} is a pair $\mathcal{M} = (M, \mathcal{A})$. By Theorem~\ref{thm:maximal-atlas}, specifying any atlas specifies a smooth structure, and two atlases specify the same structure exactly when they are compatible.
+\end{quote}
+The bridge is the slice description. A subset of $\mathbb{R}^{n+k}$ has the three Euclidean descriptions near each point exactly when it is a submanifold of $\mathbb{R}^{n+k}$ in the abstract sense, the coordinate plane of an adapted chart (Proposition~\ref{prop:submanifold-euclidean}), and then it is a smooth manifold in its own right (Proposition~\ref{prop:submanifold-structure}). The circle shows all of this at once: its external, graph and internal descriptions (Example~\ref{ex:circle-three-ways}), and three atlases --- four charts, stereographic and angle --- that define one smooth structure (\ref{sec:ex-circle}).
+
+\subsection{Where the Examples Come From}
+
+The geometric examples are level sets: the spheres (\ref{sec:ex-spheres}), and the classical groups $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\SO(n)$, $\Ugp(n)$ as level sets in spaces of matrices (Theorem~\ref{thm:classical-manifolds}, smooth by \ref{sec:on-un-smooth}). The abstract picture adds the spaces built by gluing: $\mathbb{CP}^n$ (\ref{sec:ex-cpn}, with its standard charts in \ref{sub:projective-atlas}), coset spaces $G/H$ (\ref{sec:homogeneous}) and the Grassmannians (Corollary~\ref{cor:grassmannian}). These arrive with no ambient space: a point of $\mathbb{CP}^n$ is a line, not a point of some $\mathbb{R}^N$. Some of them can be placed in a Euclidean space afterwards --- that is what an embedding does (below) --- but not as constructed.
+
+\subsection{Smooth Structures and Smooth Maps}
+
+A level set inherits its smooth structure from the ambient space: the graph charts project it onto coordinate planes, and their transition maps are smooth because they factor through $\mathbb{R}^{n+k}$ (Proposition~\ref{prop:level-set-smooth}). An abstract manifold has the structure it is given; the same topological space can carry incompatible atlases --- the two structures on $\mathbb{R}$ --- which are nevertheless diffeomorphic (\ref{sec:smooth-structures}, \ref{sub:smooth-maps}). For a submanifold the two agree: the graph-chart structure is the induced one (Proposition~\ref{prop:rvt-agree}(1)).
+
+Maps follow the same pattern. Geometrically, a map into or out of a level set is smooth when it is a restriction of, or lands in, a smooth map between Euclidean spaces (Lemma~\ref{lem:level-set-maps}). Abstractly, a map is smooth when its coordinate representations are (Definition~\ref{def:smooth-map}). Lemma~\ref{lem:maps-into-submanifold} says the same as Lemma~\ref{lem:level-set-maps} for submanifolds of any manifold.
+
+\subsection{Tangent Vectors and Differentials}
+
+This is where the two pictures look most different.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:geometric-tangent} (Geometric Tangent Space).} The \textbf{geometric} (or \textbf{ambient}) \textbf{tangent space} to $M$ at $p$ is
+\[
+\begin{aligned}
+T^{\geo}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\;& \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0, \\
+& \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+\end{aligned}
+\]
+where $\gamma'(0) = \frac{d\gamma}{dt}\big|_{t=0}$ is the ordinary derivative of a curve in $\mathbb{R}^{n+k}$. In words: $T^{\geo}_pM$ is the set of velocities at $p$ of smooth curves that pass through $p$ while staying on $M$. The same definition applies verbatim with $\mathbb{R}^{n+k}$ replaced by any finite-dimensional real vector space containing $M$, such as $\Mat(n,\mathbb{R})$, with $\gamma'(0)$ computed in that space.
+\end{quote}
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:abstract-tangent} (The Abstract Tangent Space).} The \textbf{(abstract) tangent space} to $M$ at $p$ is
+\[
+T_pM \;=\; \{\, \text{all derivations at } p \,\},
+\]
+a real vector space under the pointwise operations $(D + D')[f] = D[f] + D'[f]$ and $(\lambda D)[f] = \lambda\, D[f]$. An element $D \in T_pM$ is a \textbf{tangent vector} at $p$. It is not an arrow in any ambient space but a function on germs, $D : C^\infty_p(M) \to \mathbb{R}$, so $D[f]$ is a real number for each germ $[f]$ at $p$.
+\end{quote}
+A geometric tangent vector is an arrow in the ambient space; an abstract one is a derivation, a machine that differentiates germs. Geometrically the tangent space is computed as a kernel, $T^{\geo}_pM = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}); abstractly it has the coordinate basis $\partial/\partial x^i|_p$ (Theorem~\ref{thm:tangent-basis}). Three bridges connect them: an arrow $v$ gives the directional derivative $D_v$, and for a level set $v \mapsto D_v$ is an isomorphism $T^{\geo}_pM \to T_pM$ (Theorem~\ref{thm:ambient-abstract}); every abstract tangent vector is the velocity of a curve, which restores the arrow picture without an ambient space (Theorem~\ref{thm:every-vector-velocity}); and for a submanifold of $\mathbb{R}^{n+k}$, the inclusion carries $T_pS$ onto $T^{\geo}_pS$ (Proposition~\ref{prop:rvt-agree}(2) and the remark \emph{The Tangent Spaces Match} in \ref{sec:submanifolds}).
+
+The differential follows: geometrically it is the ordinary derivative, a linear map between the ambient spaces restricted to tangent spaces (Definition~\ref{def:vs-differential}); abstractly it is the pushforward $F_{*p}D = D \circ F_p^*$ (Definition~\ref{def:pushforward}). In coordinates the pushforward has the Jacobian of the coordinate representation as its matrix (Theorem~\ref{lem:differential-matrix}), and on open subsets of vector spaces it is the ordinary derivative (Proposition~\ref{prop:differential-agree}); either can be computed by curves (Corollary~\ref{cor:velocity-composite}).
+
+\subsection{Normal Vectors and Conormal Covectors}
+
+In $\mathbb{R}^{n+k}$ a level set $F^{-1}(c)$ has normal vectors: the orthogonal complement of $T^{\geo}_pM = \ker F'(p)$ is the row space of $F'(p)$, spanned by the gradients $\nabla F^1(p), \ldots, \nabla F^k(p)$. Orthogonality needs the dot product, which an abstract manifold does not have. Its substitute is the conormal space, the covectors that vanish on the tangent space (Definition~\ref{def:conormal}), with the basis $dF^1|_p, \ldots, dF^k|_p$ for a level set (Proposition~\ref{prop:conormal-basis}). A metric --- an inner product on each tangent space --- identifies covectors with vectors and turns conormal covectors back into normal vectors (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}); in $\mathbb{R}^{n+k}$ the dot product does this, and $dF^i|_p$ becomes $\nabla F^i(p)$.
+
+\subsection{Regular Values and Submanifolds}
+
+The regular value theorem exists in five forms, from level sets in $\mathbb{R}^{n+k}$ (Theorem~\ref{thm:regular-value}, Proposition~\ref{prop:level-set-smooth}) to level sets in any manifold (Theorem~\ref{thm:rvt-manifolds}); the remark \emph{The Regular Value Theorems --- Old and New} in \ref{sec:submanifolds} lists them with their roles. What they produce is, geometrically, a level set and, abstractly, a submanifold:
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:submanifold} (Submanifold).} Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a \textbf{submanifold of $M$ of codimension $k$} if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
+\[
+U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
+\]
+These are sometimes called \textbf{regular} or \textbf{embedded} submanifolds, as opposed to the immersed submanifolds still to come.
+\end{quote}
+In $\mathbb{R}^{n+k}$ the two coincide (Proposition~\ref{prop:submanifold-euclidean}): straightening a graph gives an adapted chart, and the last coordinates of an adapted chart are defining equations.
+
+\subsection{The Global Picture: Embeddings}
+
+A geometric manifold sits in $\mathbb{R}^N$ by construction; an abstract one need not sit anywhere. The bridge is an embedding:
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:embedding} (Embedding).} A smooth map $F : M \to N$ is an \textbf{embedding} if it is an immersion and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism, $F(M)$ carrying the subspace topology of $N$. Injectivity is part of being a homeomorphism; Uribe wrote ``(injective) immersion'' and called the word redundant.
+\end{quote}
+The image of an embedding is a submanifold (Theorem~\ref{thm:embedding-image}), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. Injective immersions are not enough: the figure-eight and the irrational line on the torus are injective immersions whose images are not submanifolds (\ref{sec:immersions}, \ref{sec:embeddings}).
+
+\begin{rembox}[Whitney's Embedding Theorem]\label{rem:whitney}
+\textit{(Not from lecture; stated, not proved, in these notes.)} Every smooth $m$-manifold --- Hausdorff and second countable, as in Definition~\ref{def:smooth-structure} --- admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem~6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
+\end{rembox}
+
+\subsection{What Each Picture Gives}
+
+The geometric picture gives computations: a tangent space is a kernel, a differential is a Jacobian, a normal vector is a gradient, and all of it can be drawn. The abstract picture gives intrinsic definitions: the tangent space of $\mathbb{CP}^n$ or of $G/H$ makes sense without choosing where to put them, and every notion is independent of an embedding --- which is why the bundles, fields and forms of the next chapters are built on the abstract side. The bridges in the table are what let the course compute in the geometric picture and conclude in the abstract one.
+
+% ============================================================================
 % SECTION: EXAMPLE: PROJECTIVE SPACES AND THE HOPF FIBRATION
 % ============================================================================
 
@@ -11147,6 +11266,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee \\
 \ref{sec:immersions}\ Immersions & Chapter 4, \emph{Immersions} (Theorem 4.12); Example 4.19 \\
 \ref{sec:embeddings}\ Embeddings & Chapter 4, \emph{Embeddings} (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 \\
+\ref{sec:geometric-abstract}\ Geometric and abstract manifolds (comparison) & Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) \\
 \ref{sec:unit-quaternions}--\ref{sec:double-cover}\ The unit quaternions and the double cover $\mathrm{SU}(2) \to \SO(3)$ & Problems 7-22 and 7-23 (quaternions); Examples 7.27--7.30 (matrix groups) \\
 \ref{sec:recap-tangent}--\ref{sec:recap-objects}\ Recaps: tangent vectors, covectors & Chapters 3 and 11 (overview) \\
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18) \\

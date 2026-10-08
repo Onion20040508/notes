@@ -318,7 +318,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
 > - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§23 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T∗ (LADR 7.9)]].
-> - This is why covector components change by the transpose of the inverse Jacobian: [[§45 The Cotangent Bundle#^prop-45-2|591 Prop. §45.2]].
+> - This is why covector components change by the transpose of the inverse Jacobian: [[§46 The Cotangent Bundle#^prop-46-2|591 Prop. §46.2]].
 > - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!theorem] Theorem 3.133: Column rank equals row rank

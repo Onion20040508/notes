@@ -18,7 +18,7 @@ The Lie algebra of a matrix Lie group is a *real* Lie algebra ([[§CB.1 Matrix L
 ## Complexification
 
 > [!definition] Definition §CB.2.1: Complex Lie Algebra
-> A **complex Lie algebra** is a complex vector space $\mathfrak h$ with a complex-bilinear, skew-symmetric bracket $[\cdot,\cdot] : \mathfrak h\times\mathfrak h \to \mathfrak h$ satisfying the Jacobi identity (as in [[§48 Lie Bracket and Lie Algebra#^def-48-2|591 Def. §48.2]], with $\mathbb C$ in place of $\mathbb R$). Homomorphisms of complex Lie algebras are complex-linear ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]]). Example: $\mathfrak{sl}(2, \mathbb C)$ with the commutator.
+> A **complex Lie algebra** is a complex vector space $\mathfrak h$ with a complex-bilinear, skew-symmetric bracket $[\cdot,\cdot] : \mathfrak h\times\mathfrak h \to \mathfrak h$ satisfying the Jacobi identity (as in [[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]], with $\mathbb C$ in place of $\mathbb R$). Homomorphisms of complex Lie algebras are complex-linear ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]]). Example: $\mathfrak{sl}(2, \mathbb C)$ with the commutator.
 >
 > *Source (planned): Hall, Quantum Theory for Mathematicians, Ch. 16 · Woit, §5.5*
 
@@ -44,14 +44,46 @@ The course's definition of the complexified Lie algebra, in a basis, is in [[§C
 >
 > is the unique complex-bilinear extension of the bracket of $\mathfrak g$, and makes $\mathfrak g_{\mathbb C}$ a complex Lie algebra ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-1|Def. §CB.2.1]]) with $\dim_{\mathbb C}\mathfrak g_{\mathbb C} = \dim_{\mathbb R}\mathfrak g$; in a basis $\{X_a\}$ of $\mathfrak g$ it is the algebra of [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-12|Def. §C3.1.12]], with the same real structure constants. The conjugation $c$ satisfies $c[Z, W] = [cZ, cW]$: it is a conjugate-linear automorphism of $\mathfrak g_{\mathbb C}$ with $c^2 = \mathbb 1$ whose fixed set is $\mathfrak g$.
 >
-> *Source (planned): Woit, §5.5 · Hall, Quantum Theory for Mathematicians, Ch. 16*
+> *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §9, Def. 3.34, Prop. 3.35 · Woit, §5.5*
 
 ^thm-cb-2-3
 
-> [!proof]- Proof (to be filled)
-> *To be filled (bilinear expansion; Jacobi on basis elements).*
+> [!proof]- Proof
+> *Source: B. C. Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §9, Prop. 3.35 and its proof (https://arxiv.org/abs/math-ph/0005032) · P. Woit, Quantum Theory, Groups and Representations, §5.5 (the bracket formula) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf). The statements about the conjugation $c$ are written out here.*
+>
+> **Step 1** (uniqueness). If a bracket on $\mathfrak g_{\mathbb C}$ is complex-bilinear and extends that of $\mathfrak g$, expanding $[X + iY, X' + iY']$ in each slot gives $[X, X'] + i[X, Y'] + i[Y, X'] + i^2[Y, Y']$, which is the displayed formula. So there is at most one such bracket.
+>
+> **Step 2** (real bilinear, antisymmetric). The formula is real-bilinear because the bracket of $\mathfrak g$ is. Exchanging the two arguments, $[X' + iY', X + iY] = ([X', X] - [Y', Y]) + i([X', Y] + [Y', X]) = -[X + iY, X' + iY']$ by antisymmetry in $\mathfrak g$.
+>
+> **Step 3** (complex-linear in the first slot; Hall, eq. (3.19)). Since $i(X + iY) = -Y + iX$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-2|Def. §CB.2.2]]),
+>
+> $$
+> [i(X + iY), X' + iY'] = [-Y + iX, X' + iY'] = \bigl(-[Y, X'] - [X, Y']\bigr) + i\bigl([X, X'] - [Y, Y']\bigr),
+> $$
+>
+> $$
+> i\,[X + iY, X' + iY'] = i\bigl([X, X'] - [Y, Y']\bigr) + i^2\bigl([X, Y'] + [Y, X']\bigr) = \bigl(-[X, Y'] - [Y, X']\bigr) + i\bigl([X, X'] - [Y, Y']\bigr),
+> $$
+>
+> and the two agree. With real bilinearity, the bracket is complex-linear in the first slot; by antisymmetry (Step 2) also in the second.
+>
+> **Step 4** (Jacobi; Hall's argument). $J(A, B, C) = [A, [B, C]] + [B, [C, A]] + [C, [A, B]]$ is complex-trilinear (Step 3). It vanishes for $A, B, C \in \mathfrak g$ (Jacobi in $\mathfrak g$). Fixing $B, C \in \mathfrak g$, it is complex-linear in $A$ and $\mathfrak g$ spans $\mathfrak g_{\mathbb C}$ over $\mathbb C$, so it vanishes for all $A \in \mathfrak g_{\mathbb C}$; then the same argument in $B$, then in $C$. So $\mathfrak g_{\mathbb C}$ is a complex Lie algebra ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-1|Def. §CB.2.1]]).
+>
+> **Step 5** (dimension and the basis description). A real basis $\{X_a\}$ of $\mathfrak g$ is a complex basis of $\mathfrak g_{\mathbb C}$ (Def. §CB.2.2), so $\dim_{\mathbb C}\mathfrak g_{\mathbb C} = \dim_{\mathbb R}\mathfrak g$, and by complex bilinearity $[c^aX_a, d^bX_b] = c^ad^bf_{ab}{}^cX_c$ with the real structure constants of $\mathfrak g$: this is the algebra of [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-12|Def. §C3.1.12]].
+>
+> **Step 6** (the conjugation). $c(X + iY) = X - iY$ is real-linear. It is conjugate-linear: $c(i(X + iY)) = c(-Y + iX) = -Y - iX = -i(X - iY) = -i\,c(X + iY)$. $c^2 = \mathbb 1$, and $c(X + iY) = X + iY$ iff $Y = 0$, so the fixed set is $\mathfrak g$. For brackets, put $Z = X + iY$, $W = X' + iY'$; then $cZ = X + i(-Y)$, $cW = X' + i(-Y')$, and the formula gives
+>
+> $$
+> [cZ, cW] = \bigl([X, X'] - [Y, Y']\bigr) - i\bigl([X, Y'] + [Y, X']\bigr) = c[Z, W] .
+> $$
+>
+> **What the proof shows.**
+> - The complexification is canonical: no basis is needed, and the basis description of the course is a corollary (Step 5).
+> - ⚑ By-product: $c$ is an automorphism of the real Lie algebra underlying $\mathfrak g_{\mathbb C}$ but is conjugate-linear; such maps classify real forms → [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-11|Theorem §CB.2.11]].
 
 ^pf-cb-2-3
+
+*Uses:* [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-1|Def. §CB.2.1]], [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-2-2|Def. §CB.2.2]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-12|Def. §C3.1.12]]
 
 > [!theorem] Theorem §CB.2.4: Complexification Inside the Matrices
 > Let $\mathfrak g \subset M_n(\mathbb C)$ be a real Lie algebra of matrices with $\mathfrak g \cap i\mathfrak g = \{0\}$. Then $X + iY \mapsto X + iY$ (the right side a matrix) is an isomorphism of complex Lie algebras from $\mathfrak g_{\mathbb C}$ ([[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-3|Theorem §CB.2.3]]) onto $\mathfrak g + i\mathfrak g \subset M_n(\mathbb C)$, under which $c$ becomes $X + iY \mapsto X - iY$. Examples ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-11|Theorem §CB.1.11]]): $\mathfrak u(n)_{\mathbb C} \cong \mathfrak{gl}(n, \mathbb C)$, $\mathfrak{su}(n)_{\mathbb C} \cong \mathfrak{sl}(n, \mathbb C)$, $\mathfrak{so}(n)_{\mathbb C} \cong \mathfrak{so}(n, \mathbb C) = \{X \in M_n(\mathbb C) : X^{\mathsf T} = -X\}$, and
@@ -62,14 +94,38 @@ The course's definition of the complexified Lie algebra, in a basis, is in [[§C
 >
 > The condition $\mathfrak g \cap i\mathfrak g = \{0\}$ fails for $\mathfrak{sl}(2, \mathbb C)$ regarded as a real Lie algebra; that case is Theorem §CB.2.18.
 >
-> *Source (planned): Hall, Quantum Theory for Mathematicians, Ch. 16 · Woit, §5.5*
+> *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §9, Prop. 3.36 · Woit, §5.5*
 
 ^thm-cb-2-4
 
-> [!proof]- Proof (to be filled)
-> *To be filled.*
+> [!proof]- Proof
+> *Source: B. C. Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §9, Prop. 3.36 and its proof (written there for $\mathfrak{gl}(n, \mathbb R)$ and $\mathfrak u(n)$, the other cases "left as an exercise", done in Steps 4–6) (https://arxiv.org/abs/math-ph/0005032) · P. Woit, Quantum Theory, Groups and Representations, §5.5: "V ∩ iV = 0, in which case V_ℂ will just be the larger subspace you get by taking complex linear combinations" (https://www.math.columbia.edu/~woit/QM/qmbook.pdf).*
+>
+> **Step 1** (the map). Define $\iota : \mathfrak g_{\mathbb C} \to M_n(\mathbb C)$, $\iota(X + iY) = X + iY$, the right side computed with matrix operations. It is real-linear, and complex-linear: $\iota(i(X + iY)) = \iota(-Y + iX) = -Y + iX = i(X + iY)$. Its image is $\mathfrak g + i\mathfrak g$.
+>
+> **Step 2** (injective). If $X + iY = 0$ as matrices, then $X = -iY \in \mathfrak g \cap i\mathfrak g = \{0\}$, so $X = 0$ and then $Y = 0$.
+>
+> **Step 3** (brackets and conjugation). Expanding the matrix commutator in all four terms, $[X + iY, X' + iY'] = [X, X'] + i[X, Y'] + i[Y, X'] - [Y, Y']$, which is $\iota$ of the bracket of [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-3|Theorem §CB.2.3]]. So $\iota$ is an isomorphism of complex Lie algebras onto $\mathfrak g + i\mathfrak g$, and it carries $c(X + iY) = X - iY$ to $X + iY \mapsto X - iY$.
+>
+> **Step 4** ($\mathfrak u(n)$ and $\mathfrak{su}(n)$; Hall's argument). Every $X \in M_n(\mathbb C)$ is
+>
+> $$
+> X = \frac{X - X^\dagger}2 + i\,\frac{X + X^\dagger}{2i},
+> $$
+>
+> and both fractions are anti-Hermitian: $\bigl(\frac{X - X^\dagger}2\bigr)^\dagger = -\frac{X - X^\dagger}2$ and $\bigl(\frac{X + X^\dagger}{2i}\bigr)^\dagger = \frac{X^\dagger + X}{-2i} = -\frac{X + X^\dagger}{2i}$. A matrix in $\mathfrak u(n) \cap i\mathfrak u(n)$ is anti-Hermitian and Hermitian, hence $0$. So $\mathfrak u(n) + i\mathfrak u(n) = M_n(\mathbb C)$ with $\mathfrak u(n) \cap i\mathfrak u(n) = 0$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-11|Theorem §CB.1.11]]). If $\operatorname{tr}X = 0$, the two fractions have traces $\frac{\operatorname{tr}X - \overline{\operatorname{tr}X}}2 = 0$ and $\frac{\operatorname{tr}X + \overline{\operatorname{tr}X}}{2i} = 0$; so $\mathfrak{su}(n) + i\mathfrak{su}(n) = \mathfrak{sl}(n, \mathbb C)$.
+>
+> **Step 5** ($\mathfrak{so}(n)$). A complex antisymmetric $X$ is $\operatorname{Re}X + i\operatorname{Im}X$ (entrywise real and imaginary parts), and $X^{\mathsf T} = -X$ splits into $(\operatorname{Re}X)^{\mathsf T} = -\operatorname{Re}X$, $(\operatorname{Im}X)^{\mathsf T} = -\operatorname{Im}X$. A real matrix that is also $i$ times a real matrix is $0$. So $\mathfrak{so}(n) + i\mathfrak{so}(n) = \mathfrak{so}(n, \mathbb C)$, $\mathfrak{so}(n) \cap i\mathfrak{so}(n) = 0$.
+>
+> **Step 6** ($\mathfrak{so}(1,3)$). $\eta$ is real, so $X^{\mathsf T}\eta + \eta X = 0$ for complex $X$ splits into the same equation for $\operatorname{Re}X$ and for $\operatorname{Im}X$; as in Step 5, $\{X \in M_4(\mathbb C) : X^{\mathsf T}\eta + \eta X = 0\} = \mathfrak{so}(1,3) + i\mathfrak{so}(1,3)$ with trivial intersection, and $c(\operatorname{Re}X + i\operatorname{Im}X) = \operatorname{Re}X - i\operatorname{Im}X = \bar X$.
+>
+> **What the proof shows.**
+> - For matrix algebras the abstract complexification is just "allow complex coefficients", *provided* $\mathfrak g \cap i\mathfrak g = 0$; for $\mathfrak{sl}(2, \mathbb C)_{\mathbb R}$ it is not, and the complexification is twice as large → [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-18|Theorem §CB.2.18]].
+> - ⚑ By-product: $\mathfrak u(n)$ and $\mathfrak{gl}(n, \mathbb R)$ have the same complexification $\mathfrak{gl}(n, \mathbb C)$ (Hall, after Prop. 3.36): different real algebras, one complex algebra → real forms, Def. §CB.2.10.
 
 ^pf-cb-2-4
+
+*Uses:* [[§CB.2 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-2-3|Theorem §CB.2.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-11|Theorem §CB.1.11]]
 
 ## The physicists' i
 

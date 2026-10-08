@@ -26,7 +26,7 @@ tags: [differentiable-manifolds, hub]
 - [[§38 Embeddings#^cor-38-3|Corollary §38.3: An Embedding Is a Diffeomorphism onto Its Image]]
 - [[§38 Embeddings#^prop-38-7|Proposition §38.7: Images of Embeddings Are Locally Closed]]
 - [[§38 Embeddings#^cor-38-8|Corollary §38.8: Dense Submanifolds Are Open]]
-- [[§40 The Unit Quaternions and SU(2)#^prop-40-5|Proposition §40.5: S³ Is SU(2)]]
+- [[§41 The Unit Quaternions and SU(2)#^prop-41-5|Proposition §41.5: S³ Is SU(2)]]
 
 ## Connections
 - **Used for.** An embedding is a diffeomorphism onto its image, with the induced smooth structure of the submanifold ([[§38 Embeddings#^cor-38-3|§38.3]]). Combined with [[Injective Proper Immersions Are Embeddings]], the image of an injective immersion of a compact manifold is a submanifold.

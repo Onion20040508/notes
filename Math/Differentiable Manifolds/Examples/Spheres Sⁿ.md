@@ -18,7 +18,7 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 - $S^n$ is a regular level set of $\sum x_i^2$, with $T_pS^n = p^\perp$ ([[§25 The Geometric Tangent Space#^ex-25-1|§25]])
 - Dimension checks: $\dim S^2 = 3 - 1$ and $\dim S^{2n+1} = (n+1)^2 - n^2$ ([[§25 The Geometric Tangent Space#^rem-25-9|§25]])
 - $S^2$ meets the plane $z = c$ transversally exactly when $c \neq \pm 1$ ([[§26 Transversality#^ex-26-1|§26]])
-- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§39 Projective Spaces and the Hopf Fibration#^ex-39-1|§39]])
+- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§40 Projective Spaces and the Hopf Fibration#^ex-40-1|§39]])
 
 ## $S^2$ is a topological $2$-manifold, by hemisphere charts
 ![[§8 Spheres#^ex-8-1]]
@@ -57,4 +57,4 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 ![[§26 Transversality#^ex-26-1]]
 
 ## $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism
-![[§39 Projective Spaces and the Hopf Fibration#^ex-39-1]]
+![[§40 Projective Spaces and the Hopf Fibration#^ex-40-1]]

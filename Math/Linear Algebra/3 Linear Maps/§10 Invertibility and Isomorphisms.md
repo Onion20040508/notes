@@ -325,7 +325,7 @@ tags: [linear-algebra]
 > - Physics: with orthonormal bases $C$ is unitary and this is the familiar $A=U^\dagger BU$ change of representation.
 > - Bilinear-form version (different rule, $C^tBC$): [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
 > - Similarity is conjugation by an invertible matrix; for invertible matrices, similar means conjugate in the general linear group: [[§33 Conjugacy Classes#^def-33-3|493 Def. §33.3]].
-> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§30 The Differential in Coordinates#^cor-30-4|591 Cor. §30.4]]); it gives the transition maps of the tangent bundle, [[§44 The Tangent Bundle#^prop-44-2|591 Prop. §44.2]].
+> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§30 The Differential in Coordinates#^cor-30-4|591 Cor. §30.4]]); it gives the transition maps of the tangent bundle, [[§45 The Tangent Bundle#^prop-45-2|591 Prop. §45.2]].
 > - Computational version: [[§43 Eigenvectors and Linear Transformations#^thm-43-2|235 Thm. §43.2]], [T]_B = P⁻¹AP, so the matrices of one operator are similar ([[§41 The Characteristic Equation#^def-41-3|235 Def. §41.3]]).
 
 %% ex:3.84-diagram %%

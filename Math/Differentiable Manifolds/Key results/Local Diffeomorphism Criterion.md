@@ -21,7 +21,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§33 Local Diffeomorphisms#^cor-33-3|Corollary §33.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]
 - [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]
-- [[§41 SU(2) → SO(3)꞉ The Double Cover#^thm-41-4|Theorem §41.4: The Double Cover SU(2) → SO(3)]]
+- [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|Theorem §42.4: The Double Cover SU(2) → SO(3)]]
 
 ## Connections
 - **Used for.** Diffeomorphisms are exactly the bijective local diffeomorphisms ([[§33 Local Diffeomorphisms#^cor-33-3|§33.3]]), and a map between manifolds of equal dimension that is a submersion, or an immersion, at every point is a local diffeomorphism ([[§34 Submersions#^prop-34-1|§34.1]]). The same inverse-function step, with [[§34 Submersions#^lem-34-3|§34.3]], builds the new chart in the [[Submersion Normal Form]].

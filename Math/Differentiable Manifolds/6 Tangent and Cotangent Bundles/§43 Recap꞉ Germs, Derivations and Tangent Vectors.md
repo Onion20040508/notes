@@ -2,10 +2,10 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 6
-section: 42
+section: 43
 tags: [differentiable-manifolds, math591]
 ---
-← [[§41 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§43 Recap꞉ Covectors and the Four Differentials]] →
+← [[§42 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§44 Recap꞉ Covectors and the Four Differentials]] →
 
 *Stage: recap — Chapter 4's road from arrows to derivations, retraced in one place before tangent vectors are gathered into bundles and fields.*
 
@@ -82,7 +82,7 @@ $$
 | $F_{\ast p}$ | pushforward (differential) of $F$ | vector at $p$ $\mapsto$ vector at $F(p)$ |
 | $D_\gamma$ | velocity of a curve | the arrow picture, on any manifold |
 
-> [!example] Example §42.1: Vectors in the Plane in Three Ways
+> [!example] Example §43.1: Vectors in the Plane in Three Ways
 > On $M = \mathbb{R}^2$ with coordinates $(x, y)$, let $p = (1, 2)$, $f(x, y) = x^2 y$, and
 >
 > $$
@@ -99,8 +99,8 @@ $$
 >
 >    By the definition instead: $(F_{\ast p}v)[u] = v[u \circ F] = v[x^2] = 3 \cdot 2 = 6$ and $(F_{\ast p}v)[w] = v[x + y] = 3 - 1 = 2$, the same components by the universal formula.
 >
-> The example continues with covectors in [[§43 Recap꞉ Covectors and the Four Differentials#^ex-43-1|Example §43.1]].
+> The example continues with covectors in [[§44 Recap꞉ Covectors and the Four Differentials#^ex-44-1|Example §44.1]].
 
-^ex-42-1
+^ex-43-1
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
