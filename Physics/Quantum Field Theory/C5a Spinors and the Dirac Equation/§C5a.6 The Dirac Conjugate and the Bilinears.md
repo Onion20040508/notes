@@ -202,7 +202,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 > \bar\psi\,i\gamma^5\psi \;\to\; \bar\psi\,i\gamma^5\psi, \qquad \bar\psi\gamma^\mu\gamma^5\psi \;\to\; \Lambda^\mu{}_\nu\,\bar\psi\gamma^\nu\gamma^5\psi \qquad (\text{at } \Lambda^{-1}x) :
 > $$
 >
-> for proper orthochronous $\Lambda$ ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]) they transform exactly as a scalar and a vector. They differ from $\bar\psi\psi$ and $\bar\psi\gamma^\mu\psi$ only by a sign under parity (QFT C9, planned).
+> for proper orthochronous $\Lambda$ ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]) they transform exactly as a scalar and a vector. They differ from $\bar\psi\psi$ and $\bar\psi\gamma^\mu\psi$ only by a sign under parity ([[§C9.3 Fermion Bilinears under Parity#^thm-c9-3-4|Theorem §C9.3.4]]).
 >
 > *Source: PS §3.4, p. 50 ("pseudo-vector and pseudo-scalar") · Yu §5.3, eqs. (5.93), (5.95) · the user's PHY 513 notes, Ch. 8 §8.9 (closing paragraph)*
 

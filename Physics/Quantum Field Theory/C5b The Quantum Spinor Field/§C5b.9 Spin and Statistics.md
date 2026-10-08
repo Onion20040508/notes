@@ -7,7 +7,7 @@ section: C5b.9
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C5b.8 Green's Functions and the Dirac Feynman Propagator]] · ↑ [[· C5b The Quantum Spinor Field]] →
+← [[§C5b.8 Green's Functions and the Dirac Feynman Propagator]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C9.1 Discrete Lorentz Transformations]] →
 
 *Sources: the user's PHY 513 notes, Ch. 10 §10.2 and §10.7 · PHY 513 Lecture 10 (Larsen, 5 Oct 2026), slides 6–7 and 23, transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 52–58 · Yu Zhao-Huan, 量子场论讲义, §§5.4.3–5.5.4 · the user's pre-course notes, §5.5.*
 
@@ -67,3 +67,4 @@ The chapter closes where Lecture 10 began, with spin and statistics. The theorem
 > - Fermi–Dirac statistics of the quanta is what gives degenerate Fermi gases, the periodic table and the stability of matter their structure — [[§A5.3 The Exclusion Principle and the Periodic Table#^pr-a5-3-2|QM Principle §A5.3.2]], [[§B10.1 Bose–Einstein and Fermi–Dirac Distributions|TH §B10.1]].
 > - The vector field (spin 1) must take commutators, and its covariant quantization meets negative norms of a different origin, removed by a gauge condition rather than by statistics — [[§C4.7 Covariant Quantization and the Indefinite Metric|§C4.7]], [[§C4.8 The Gupta–Bleuler Condition and Physical Photons|§C4.8]].
 > - The path integral for fermions reproduces the anticommutators with Grassmann variables (PHY 513 Lecture 26) — QFT C11 (planned).
+> - The quantized Dirac field is next taken apart under the discrete symmetries, which make the particle–antiparticle symmetry explicit: parity flips momenta, keeps spins, and forces opposite intrinsic parities on particles and antiparticles (Lecture 11; charge conjugation, time reversal and CPT follow in Lecture 12) — [[§C9.2 Parity on States, Spinors and the Dirac Field#^thm-c9-2-5|Theorem §C9.2.5]], [[§C9.2 Parity on States, Spinors and the Dirac Field#^thm-c9-2-7|Theorem §C9.2.7]].
