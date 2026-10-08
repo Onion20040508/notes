@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c, draft]
 ---
 ← [[§C5b.4 Fermions, Fock Space and the Pauli Principle]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C5b.6 The Heisenberg Dirac Field]] →
 
-*Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 54, 57, 61–62 · Yu Zhao-Huan, 量子场论讲义, §5.5.1, §5.5.3 · the user's pre-course notes, §5.5 · the user's PHY 513 notes, Ch. 10 §10.3 and §10.6 · PHY 513 Lecture 10 (Larsen, 5 Oct 2026), transcript.*
+*Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 54, 57, 61–62 · Yu Zhao-Huan, 量子场论讲义, §5.5.1, §5.5.3 · the user's pre-course notes, §5.5 · the user's PHY 513 notes, Ch. 10 §10.3 and §10.6 · PHY 513 Lecture 10 (Larsen, 5 Oct 2026), transcript · PHY 513, Problem Set 6, Problem 2 (the user's solution).*
 
 *Draft: Peskin–Schroeder §3.5 material (the reading for Lecture 10) that the lecture itself did not cover, except [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-2|Remark: Destroying a particle is not creating an antiparticle]] and the pairing of $\hat a$ with $\hat b^\dagger$ by charge; to be revised after Lecture 12 (charge conjugation).*
 
@@ -45,7 +45,7 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > $$
 >
 > *Scalar analogue:* the charge of the complex field before reordering, in [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]].
-> *Source: PS §3.5, p. 62 (first form of eq. (3.113)) · Yu §5.5.3, eqs. (5.264)–(5.267)*
+> *Source: PS §3.5, p. 62 (first form of eq. (3.113)) · Yu §5.5.3, eqs. (5.264)–(5.267) · PHY 513, Problem Set 6, Problem 2 (as the user wrote it, at $t = 0$)*
 
 ^thm-c5b-5-1
 
@@ -60,6 +60,7 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 >
 > **What the derivation shows**
 > - Where $\hat H$ had a relative minus sign between the species, $\hat Q$ has a plus: the positive density $\hat\psi^\dagger\hat\psi$ in modes.
+> - The cross terms vanish at every $t$, not only at $t = 0$: the orthogonality $u^{s\dagger}(p)v^r(\tilde p) = 0$ kills them whatever the phase $e^{\pm2iE_{\mathbf p}t}$. The user's solution of Problem Set 6, Problem 2 evaluates at $t = 0$ (allowed since $\hat Q$ is conserved), where the phases are $1$, and uses the same orthogonality (PS eqs. (3.61), (3.67)); the two computations agree term by term.
 
 ^der-c5b-5-1
 
@@ -102,7 +103,7 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > conserved, $[\hat Q, \hat H] = [\hat Q, \hat{\mathbf P}] = 0$. Without normal ordering $\hat Q$ would contain the constant $+2V\int\frac{d^3p}{(2\pi)^3}$ (normalization and sign as in [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^def-c5b-5-1|Def. §C5b.5.1]]; electric charge = $\hat Q$ times the charge of the fermion).
 >
 > *Scalar analogue:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]].
-> *Source: PS §3.5, eq. (3.113) · Yu §5.5.3, eq. (5.267) (with $q = 1$) · the user's pre-course notes, §5.5 ("$U(1)$ global symmetry")*
+> *Source: PS §3.5, eq. (3.113) · Yu §5.5.3, eq. (5.267) (with $q = 1$) · the user's pre-course notes, §5.5 ("$U(1)$ global symmetry") · PHY 513, Problem Set 6, Problem 2 ("Verify PS eqn 3.113"; the user's solution: Theorem §C5b.5.1 at $t = 0$, then $:\!\hat b^s_{\mathbf p}\hat b^{s\dagger}_{\mathbf p}\!: = -\hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p}$, dropping $(2\pi)^3\delta^3(\mathbf 0)$, as in steps 1–2 below)*
 
 ^thm-c5b-5-3
 

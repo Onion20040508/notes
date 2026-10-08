@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (31), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (14), [[· CA Mathematical Methods|CA Mathematical Methods]] (24)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (49), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (26)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1)
 
 ## Sections
@@ -47,3 +47,5 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-3|§C9.4.3]] Conjugating the Sixteen Matrices by γ⁰
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|§C9.4.4]] The Sixteen Bilinears under Parity
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-5|§C9.4.5]] The Free Dirac Lagrangian Is Parity Invariant
+- [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|]] ★ Theorem §C9.4.6: The Parity Image of a Solution Solves the Dirac Equation
+- [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|]] ★ Theorem §C9.4.7: Parity Exchanges Left- and Right-Handed Fields and Currents

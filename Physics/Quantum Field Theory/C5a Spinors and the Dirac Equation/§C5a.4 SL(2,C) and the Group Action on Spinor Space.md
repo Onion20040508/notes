@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C5a.3 The Lorentz Action on Spinor Space]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.5 Chirality and Weyl Spinors]] →
 
-*Sources: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "The covariance of $\gamma^\mu$: finite transformations"), §8.2 (Weyl spinors: Derivations "How the two halves transform", "The double cover made explicit", "The left-handed Weyl matrices are this covering"), §8.3 (Principle "Invariant tensors with mixed slots"), Ch. 10 §10.3 · PHY 513 Lecture 7 (Larsen), Part B · PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$", "Interpretation") and Part C · Peskin & Schroeder, §3.2, pp. 42–44, eqs. (3.29), (3.36)–(3.42), §3.5, eqs. (3.108)–(3.110) · Yu Zhao-Huan, 量子场论讲义, Exercise 3.7, eqs. (3.259)–(3.268), §5.1, eqs. (5.17)–(5.31), §5.2, eqs. (5.55)–(5.61), (5.74) · the user's pre-course notes, §5.1, §5.2 (Remark "SL(2,C) made explicit"; Note "Four linear spaces tied to Lorentz transformations") · for the matrices entry by entry: PS §3.3, eqs. (3.48)–(3.49); PHY 513 Lecture 9, Part A; the user's PHY 513 notes, Ch. 9 §9.3; Sakurai §3.2.5, as in QM §C5.2.*
+*Sources: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "The covariance of $\gamma^\mu$: finite transformations"), §8.2 (Weyl spinors: Derivations "How the two halves transform", "The double cover made explicit", "The left-handed Weyl matrices are this covering"), §8.3 (Principle "Invariant tensors with mixed slots"), Ch. 10 §10.3 · PHY 513 Lecture 7 (Larsen), Part B · PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$", "Interpretation") and Part C · Peskin & Schroeder, §3.2, pp. 42–44, eqs. (3.29), (3.36)–(3.42), §3.5, eqs. (3.108)–(3.110) · Yu Zhao-Huan, 量子场论讲义, Exercise 3.7, eqs. (3.259)–(3.268), §5.1, eqs. (5.17)–(5.31), §5.2, eqs. (5.55)–(5.61), (5.74) · the user's pre-course notes, §5.1, §5.2 (Remark "SL(2,C) made explicit"; Note "Four linear spaces tied to Lorentz transformations") · for the matrices entry by entry: PS §3.3, eqs. (3.48)–(3.49); PHY 513 Lecture 9, Part A; the user's PHY 513 notes, Ch. 9 §9.3; Sakurai §3.2.5, as in QM §C5.2 · PHY 513, Problem Set 6, Problem 4 (Larsen; the user's solutions).*
 
 Which *group* acts on spinor space, and how do the $\gamma$ matrices behave under it? [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] gave the action of the Lorentz algebra (layer 4) and found two halves, $(\frac12, 0)$ and $(0, \frac12)$, on which [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]] gives $2\times2$ matrices at a complex angle, defined only up to sign on $SO^+(1,3)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-5|Theorem §C3.3.5]]); the rotation case, $SU(2) \to SO(3)$, is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]] and [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]]. This section adds **layer 5**, the group: the Weyl matrices $\Lambda_L$, $\Lambda_R$, the group $SL(2, \mathbb C)$ they form, four-vectors as $2\times2$ Hermitian matrices, the covering map $SL(2, \mathbb C) \to SO^+(1,3)$ with kernel $\pm\mathbb 1$, and the integration of every $(j_+, j_-)$ (the integer ones to $SO^+(1,3)$ itself). On $V$ the group acts by $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$, and the $\gamma$'s acquire their last structure: a Minkowski index, which makes $\gamma^\mu$ an invariant tensor — fixed by a Lorentz transformation, though not by a change of basis of $V$. Three different transformations that act on spinor indices are kept apart at the end.
 
@@ -552,7 +552,7 @@ $$
 >
 > The two blocks are equal and $U \in SU(2)$, so $\Lambda_{1/2}$ is unitary; $U$ is the spin-½ rotation of [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]]. At $\theta = 2\pi$, $\Lambda_{1/2} = -\mathbb 1_4$; at $\theta = 4\pi$, $\Lambda_{1/2} = +\mathbb 1_4$.
 >
-> *Source: PS §3.2, eq. (3.37) (infinitesimal) · PHY 513 Lecture 7, Part B (slide "Spinors and Rotation") · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation", Example 1: rotation about $z$) · Sakurai §3.2.5, eqs. (3.60)–(3.63), as in QM §C5.2 (the $2\times2$ block) · the $4\times4$ matrix about $\hat{\mathbf n}$ written here (checked numerically)*
+> *Source: PS §3.2, eq. (3.37) (infinitesimal) · PHY 513 Lecture 7, Part B (slide "Spinors and Rotation") · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation", Example 1: rotation about $z$) · Sakurai §3.2.5, eqs. (3.60)–(3.63), as in QM §C5.2 (the $2\times2$ block) · the $4\times4$ matrix about $\hat{\mathbf n}$ written here (checked numerically) · PHY 513, Problem Set 6, Problem 4(c)–(d) (part 1 and the value $-\mathbb 1_4$ at $2\pi$, as the user wrote them; same signs)*
 
 ^thm-c5a-4-13
 
@@ -609,7 +609,7 @@ $$
 >
 > *Reading.* An eigenvalue $m$ of $J_3$ becomes the phase $e^{-im\theta}$: $m = \pm1, 0$ gives entries in $\theta$ (and the untouched $t$, $z$), $m = \pm\frac12$ gives entries in $\theta/2$, and no spinor component is left alone. At $\theta = 2\pi$ the vector matrix is $\mathbb 1$ ($e^{\mp2\pi i} = e^0 = 1$) and the spinor matrix is $-\mathbb 1_4$ ($e^{\mp i\pi} = -1$): the vector representation is a tensor representation and the Dirac representation a spinor representation ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^def-c3-3-2|Def. §C3.3.2]]). At $\theta = 4\pi$ both are $\mathbb 1$. The algebra is the same, $[J_1, J_2] = iJ_3$ in both, and the matched pair satisfies $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ with $\Lambda = R_z(\theta)$: at $\theta = \frac\pi2$, $\Lambda_{1/2}^{-1}\gamma^1\Lambda_{1/2} = -\gamma^2$ and $\Lambda_{1/2}^{-1}\gamma^2\Lambda_{1/2} = \gamma^1$ (derivation below).
 >
-> *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Principle "Transforming as a vector and as a spinor, side by side"; Example 1), Ch. 7 §7.3 (Derivation "What the vector generators do") · PHY 513 Lecture 7, Part B ("Unlike a 4-vector under rotation") · PS §3.1, eq. (3.20), §3.2, eq. (3.37) · the side-by-side matrices and the entry-by-entry checks written here (checked numerically)*
+> *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Principle "Transforming as a vector and as a spinor, side by side"; Example 1), Ch. 7 §7.3 (Derivation "What the vector generators do") · PHY 513 Lecture 7, Part B ("Unlike a 4-vector under rotation") · PS §3.1, eq. (3.20), §3.2, eq. (3.37) · the side-by-side matrices and the entry-by-entry checks written here (checked numerically) · PHY 513, Problem Set 6, Problem 4(c)–(d) (the same pair of matrices and the $2\pi$ comparison, as the user wrote them)*
 
 ^ex-c5a-4-1
 
@@ -663,7 +663,7 @@ $$
 >
 > The blocks are Hermitian, positive and inverse to each other (opposite signs), so $\Lambda_{1/2}$ is not unitary for $\eta \ne 0$. Part 1 is [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|Theorem §C5a.9.5]] by entries; part 2 with $\hat{\mathbf n} = \hat{\mathbf p}$, $\cosh\eta = E_{\mathbf p}/m$ is the boost from rest $\Lambda_{1/2}(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]].
 >
-> *Source: PS §3.2, eq. (3.37) (infinitesimal), §3.3, eq. (3.49) (boost along $z$) · PHY 513 Lecture 7, Part B (slide "Spinors and Boosts"); Lecture 9, Part A, Step 4 · the user's PHY 513 notes, Ch. 8 §8.1 (Example 2: boost along $x$), Ch. 9 §9.3 (Derivations "Step 4: the spinor boost along z, as a square root", "Any direction (filled in)") · Yu §5.1, eq. (5.14) · the $4\times4$ matrix along $\hat{\mathbf n}$ written here (checked numerically)*
+> *Source: PS §3.2, eq. (3.37) (infinitesimal), §3.3, eq. (3.49) (boost along $z$) · PHY 513 Lecture 7, Part B (slide "Spinors and Boosts"); Lecture 9, Part A, Step 4 · the user's PHY 513 notes, Ch. 8 §8.1 (Example 2: boost along $x$), Ch. 9 §9.3 (Derivations "Step 4: the spinor boost along z, as a square root", "Any direction (filled in)") · Yu §5.1, eq. (5.14) · the $4\times4$ matrix along $\hat{\mathbf n}$ written here (checked numerically) · PHY 513, Problem Set 6, Problem 4(a) (part 1, as the user wrote it; same signs)*
 
 ^thm-c5a-4-14
 
@@ -704,9 +704,9 @@ $$
 > \Lambda_z(\eta) = \begin{pmatrix} \cosh\eta&0&0&\sinh\eta\\ 0&1&0&0\\ 0&0&1&0\\ \sinh\eta&0&0&\cosh\eta \end{pmatrix}, \quad \Lambda_{1/2} = \begin{pmatrix} e^{-\eta/2}&0&0&0\\ 0&e^{\eta/2}&0&0\\ 0&0&e^{\eta/2}&0\\ 0&0&0&e^{-\eta/2} \end{pmatrix}; \qquad \Lambda_z = \begin{pmatrix} \frac54&0&0&\frac34\\ 0&1&0&0\\ 0&0&1&0\\ \frac34&0&0&\frac54 \end{pmatrix}, \quad \Lambda_{1/2} = \begin{pmatrix} \frac1{\sqrt2}&0&0&0\\ 0&\sqrt2&0&0\\ 0&0&\sqrt2&0\\ 0&0&0&\frac1{\sqrt2} \end{pmatrix} .
 > $$
 >
-> *Reading.* The vector matrix has $\cosh\eta$, $\sinh\eta$, i.e. eigenvalues $e^{\pm\eta} = 2, \frac12$ on the light-cone directions $e_0 \pm e_3$ and $1$ on $e_1$, $e_2$; the spinor matrix has $e^{\pm\eta/2} = \sqrt2, \frac1{\sqrt2}$, half the rapidity ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). It is real and positive, Hermitian, not unitary, and stretches $\psi_L$ and $\psi_R$ oppositely. Unlike a rotation, no value of $\eta \ne 0$ returns either matrix to $\mathbb 1$ (compare Example §C5a.4.1). The algebra is the same, $[K_1, K_2] = -iJ_3$ in both, and the matched pair satisfies $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$: for $v = \frac35$, $\Lambda_{1/2}^{-1}\gamma^0\Lambda_{1/2} = \frac54\gamma^0 + \frac34\gamma^3$ has the entries $2, \frac12, \frac12, 2$ (derivation below).
+> *Reading.* The vector matrix has $\cosh\eta$, $\sinh\eta$, i.e. eigenvalues $e^{\pm\eta} = 2, \frac12$ on the light-cone directions $e_0 \pm e_3$ and $1$ on $e_1$, $e_2$; the spinor matrix has $e^{\pm\eta/2} = \sqrt2, \frac1{\sqrt2}$, half the rapidity ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). It is real and positive, Hermitian, not unitary, and stretches $\psi_L$ and $\psi_R$ oppositely. Unlike a rotation, no value of $\eta \ne 0$ returns either matrix to $\mathbb 1$ (compare Example §C5a.4.1). The vector matrix leaves $x^1$, $x^2$ alone; the spinor matrix leaves no component alone, in any basis ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-15|Theorem §C5a.4.15]], Problem Set 6, Problem 4(b)). The algebra is the same, $[K_1, K_2] = -iJ_3$ in both, and the matched pair satisfies $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$: for $v = \frac35$, $\Lambda_{1/2}^{-1}\gamma^0\Lambda_{1/2} = \frac54\gamma^0 + \frac34\gamma^3$ has the entries $2, \frac12, \frac12, 2$ (derivation below).
 >
-> *Source: PS §3.3, eqs. (3.48)–(3.49) · PHY 513 Lecture 9, Part A ("Standard Lorentz boost acting on a 4-vector"; Step 4) · the user's PHY 513 notes, Ch. 8 §8.1 (Principle "Transforming as a vector and as a spinor, side by side"; Example 2), Ch. 9 §9.3 · the numerical case and the entry-by-entry checks written here (checked numerically)*
+> *Source: PS §3.3, eqs. (3.48)–(3.49) · PHY 513 Lecture 9, Part A ("Standard Lorentz boost acting on a 4-vector"; Step 4) · the user's PHY 513 notes, Ch. 8 §8.1 (Principle "Transforming as a vector and as a spinor, side by side"; Example 2), Ch. 9 §9.3 · the numerical case and the entry-by-entry checks written here (checked numerically) · PHY 513, Problem Set 6, Problem 4(a) (the same pair of matrices, all components written out, as the user wrote them)*
 
 ^ex-c5a-4-2
 
@@ -742,6 +742,51 @@ $$
 ^der-ex-c5a-4-2
 
 *Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]] (and the derivation under it)
+
+> [!theorem] Theorem §C5a.4.15: A Boost Leaves No Spinor Component Invariant
+> Let $\eta \neq 0$ and $\Lambda_{1/2}$ be the spinor matrix of the boost of rapidity $\eta$ along a unit vector $\hat{\mathbf n}$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]]). Its eigenvalues are $e^{\eta/2}, e^{\eta/2}, e^{-\eta/2}, e^{-\eta/2}$, none equal to $1$. Hence, in every basis of spinor space ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]):
+> 1. no component of a Dirac spinor is invariant, i.e. there is no $k$ with $(\Lambda_{1/2}\psi)_k = \psi_k$ for all $\psi$;
+> 2. no spinor $\psi \neq 0$ is left unchanged.
+>
+> The vector boost of the same parameters ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]) has eigenvalues $e^{\eta}, e^{-\eta}, 1, 1$ and leaves the two components transverse to $\hat{\mathbf n}$ invariant: a Dirac spinor has no transverse part.
+>
+> *Source: PHY 513, Problem Set 6, Problem 4(b) (statement, Larsen: "A boost leaves invariant the components of a 4-vector transverse to the boost. Does the Dirac spinor have any invariant components?"; answer "No", the boost along $z$ and the basis-independence argument, as the user wrote them) · the boost along $\hat{\mathbf n}$ and the bispinor reading written here*
+
+^thm-c5a-4-15
+
+> [!derivation]- Derivation
+> **1. Along z, chiral basis (the user's answer).** With $\psi = (\psi^1_L, \psi^2_L, \psi^1_R, \psi^2_R)$ and part 1 of Theorem §C5a.4.14,
+>
+> $$
+> \Lambda_{1/2}\psi = \begin{pmatrix} e^{-\eta/2}&0&0&0\\ 0&e^{\eta/2}&0&0\\ 0&0&e^{\eta/2}&0\\ 0&0&0&e^{-\eta/2} \end{pmatrix}\begin{pmatrix}\psi^1_L\\ \psi^2_L\\ \psi^1_R\\ \psi^2_R\end{pmatrix} = \begin{pmatrix}e^{-\eta/2}\psi^1_L\\ e^{\eta/2}\psi^2_L\\ e^{\eta/2}\psi^1_R\\ e^{-\eta/2}\psi^2_R\end{pmatrix} :
+> $$
+>
+> for $\eta \neq 0$ every diagonal entry is $e^{\pm\eta/2} \neq 1$, so every component is rescaled. By contrast $\Lambda_z(\eta)$ has the entries $1$ at positions $(1,1)$ and $(2,2)$ and zeros elsewhere in those rows, which leave $x^1$, $x^2$ invariant.
+>
+> **2. Along any axis: the eigenvalues.** By step 4 of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-c5a-4-14|Derivation §C5a.4.14]], the upper block $C\,\mathbb 1 - S\,\hat{\mathbf n}\cdot\boldsymbol\sigma$ has eigenvalues $C \mp S = e^{\mp\eta/2}$ on the eigenvectors of $\hat{\mathbf n}\cdot\boldsymbol\sigma$, and the lower block, its inverse, has $e^{\pm\eta/2}$. The eigenvalues of the block-diagonal $\Lambda_{1/2}$ are those of its blocks: $e^{\eta/2}$ and $e^{-\eta/2}$, each twice. For $\eta \neq 0$ none is $1$.
+>
+> **3. An invariant component is a unit row.** In a basis where the boost has the matrix $\Lambda'$, the component $k$ is invariant for every $\psi'$ iff $\sum_b\Lambda'_{kb}\psi'_b = \psi'_k$ for all $\psi'$; taking $\psi' = e_b$ gives $\Lambda'_{kb} = \delta_{kb}$, i.e. $e_k^{\mathsf T}\Lambda' = e_k^{\mathsf T}$.
+>
+> **4. Independence of the basis (the user's argument).** Let $S$ be the invertible change-of-basis matrix, $\psi' = S\psi$, $\Lambda' = S\Lambda_{1/2}S^{-1}$ (Theorem §C5a.1.2; the user takes $S$ unitary and notes that any invertible $S$ works). Multiplying $e_k^{\mathsf T}\Lambda' = e_k^{\mathsf T}$ on the right by $S$:
+>
+> $$
+> \bigl(e_k^{\mathsf T}S\bigr)\Lambda_{1/2} = e_k^{\mathsf T}S ,
+> $$
+>
+> so the row $e_k^{\mathsf T}S$, nonzero because $S$ is invertible, would be a left eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$. The left eigenvalues of a matrix are its eigenvalues ($\det(\Lambda^{\mathsf T} - \lambda) = \det(\Lambda - \lambda)$), and by step 2 none is $1$. So no component is invariant, in any basis. (Equivalently: eigenvalues do not depend on the basis, [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]], and a unit row $k$ makes $1$ an eigenvalue of $\Lambda'^{\mathsf T}$.)
+>
+> **5. No fixed spinor.** $\Lambda'\psi' = \psi'$ with $\psi' \neq 0$ would make $S^{-1}\psi' \neq 0$ an eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$; excluded by step 2.
+>
+> **6. The vector, for contrast.** $\Lambda_z(\eta)$ has eigenvalues $e^{\pm\eta}$ on $e_0 \pm e_3$ and $1$ on $e_1$, $e_2$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]]); the two eigenvalues $1$ are the transverse directions.
+>
+> **What the derivation shows**
+> - Every spinor component is stretched or shrunk, like the light-cone components $x^0 \pm x^3$ of a vector, never left alone like $x^1$, $x^2$. The transverse components are rebuilt from pairs of spinor directions: a boost along $z$ acts on the Hermitian matrix $X$ of a four-vector ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]]) as $X \mapsto \lambda X\lambda^\dagger$ with a diagonal $\lambda = \operatorname{diag}(a, a^{-1})$, $a = e^{\pm\eta/2}$ real ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]]), which multiplies the diagonal entries $x^0 \mp x^3$ by $a^2$, $a^{-2}$ and the off-diagonal entries $-x^1 \pm ix^2$ by $a\cdot a^{-1} = 1$: a transverse component pairs a stretched with a shrunk spinor direction (written here).
+> - The answer does not depend on the chiral basis: invariance of a component is a statement about eigenvalues, which no change of basis alters.
+> - For rotations the same test fails too (eigenvalues $e^{\mp i\theta/2} \neq 1$ for $0 < \theta < 4\pi$, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|Theorem §C5a.4.13]]), whereas a vector keeps its axis component: the spinor representation has no zero weight ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]).
+
+^der-c5a-4-15
+
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]]
 
 ## Three transformations that act on spinor indices
 

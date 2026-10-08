@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.10 Normalization, Spin Sums and Helicity]] →
 
-*Sources: the user's PHY 513 notes, Ch. 9 §9.1 (Plane waves and an eigenvalue problem), §9.2 (The rest frame), §9.3 (Boosting to a general frame), §9.4 (Principle "Never take the square root of a 2×2 matrix" and its proof; Derivation "Check: u(p) solves the Dirac equation in every frame"), §9.4 (Derivation "Normalization II: ūu", the row ū), §9.5 (Derivation "The v spinors: the four steps again"; Derivation "Normalizations of the v's", the row v̄), §9.6 (paragraph "The Dirac equation, from both sides"), and the paragraph "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts A, B ("Normalization II", "Completeness for Dirac Spinors") and C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.45)–(3.51), (3.55)–(3.56), (3.58)–(3.62) · Yu Zhao-Huan, 量子场论讲义, §5.4.1–§5.4.2, eqs. (5.118)–(5.157), (5.182)–(5.191), (5.205)–(5.206) · the user's pre-course notes, §5.4 ("General form of the plane-wave solutions"; "Helicity spinors in the Weyl representation"; note "Checking the spin sums").*
+*Sources: the user's PHY 513 notes, Ch. 9 §9.1 (Plane waves and an eigenvalue problem), §9.2 (The rest frame), §9.3 (Boosting to a general frame), §9.4 (Principle "Never take the square root of a 2×2 matrix" and its proof; Derivation "Check: u(p) solves the Dirac equation in every frame"), §9.4 (Derivation "Normalization II: ūu", the row ū), §9.5 (Derivation "The v spinors: the four steps again"; Derivation "Normalizations of the v's", the row v̄), §9.6 (paragraph "The Dirac equation, from both sides"), and the paragraph "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts A, B ("Normalization II", "Completeness for Dirac Spinors") and C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.45)–(3.51), (3.55)–(3.56), (3.58)–(3.62) · Yu Zhao-Huan, 量子场论讲义, §5.4.1–§5.4.2, eqs. (5.118)–(5.157), (5.182)–(5.191), (5.205)–(5.206) · the user's pre-course notes, §5.4 ("General form of the plane-wave solutions"; "Helicity spinors in the Weyl representation"; note "Checking the spin sums") · PHY 513, Problem Set 6, Problem 3(c)–(d) and comments (Larsen; the user's solutions).*
 
 What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section finds, for each momentum, two positive-frequency spinors $u^s(p)$ and two negative-frequency spinors $v^s(p)$ by Lecture 9's four steps: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$, and then their Dirac conjugates $\bar u^s(p)$, $\bar v^s(p)$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]) as rows in their own right. Their normalizations, spin sums and the helicity basis are [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]].
 
@@ -337,7 +337,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > Consequently $u$ and $v$ below are smooth functions of $\mathbf p \in \mathbb R^3$, each entry and each derivative bounded by a polynomial in $|\mathbf p|$ (the entries grow like $\sqrt{E_{\mathbf p}}$). For $m = 0$ the same formulas hold for $\mathbf p \neq 0$, $\sqrt{p\cdot\sigma} = p\cdot\sigma/\sqrt{2|\mathbf p|}$; they are continuous at $\mathbf p = 0$ (value $0$) but not differentiable there.
 >
-> *Source: derived here, from the definition in the user's PHY 513 notes, Ch. 9 §9.3 (Caution "What √(p·σ) means": "well defined, but … almost never computed")*
+> *Source: derived here, from the definition in the user's PHY 513 notes, Ch. 9 §9.3 (Caution "What √(p·σ) means": "well defined, but … almost never computed") · PHY 513, Problem Set 6, Problem 3(c) (used and checked by squaring, as the user wrote it: [[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|Example §C5a.9.1]])*
 
 ^thm-c5a-9-6
 
@@ -356,7 +356,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > **What the derivation shows**
 > - $\sqrt{p\cdot\sigma}$ is a first-degree polynomial in $p\cdot\sigma$, so it commutes with $p\cdot\sigma$ and $p\cdot\bar\sigma = 2E - p\cdot\sigma$.
-> - In the Dirac (standard) basis these formulas turn $u(p)$ into the textbook form $\sqrt{E + m}\,(\xi, \frac{\boldsymbol\sigma\cdot\mathbf p}{E + m}\xi)$ → [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-7|Remark: What the field theory adds to the free Dirac spinors of Quantum Mechanics]].
+> - In the Dirac (standard) basis these formulas turn $u(p)$ into the textbook form $\sqrt{E + m}\,(\xi, \frac{\boldsymbol\sigma\cdot\mathbf p}{E + m}\xi)$ → [[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|Example §C5a.9.1]], [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-7|Remark: What the field theory adds to the free Dirac spinors of Quantum Mechanics]].
 > - Assumption $m > 0$ is what makes the spinors smooth on the whole mass shell.
 
 ^der-c5a-9-6
@@ -859,10 +859,10 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > - **The construction comes from the Lorentz group**: solve at rest, boost with $\Lambda_{1/2}$; this needs the chiral basis, in which boosts are block-diagonal.
 > - **The normalization is covariant**: $\bar uu = 2m$ in every frame and $u^\dagger u = 2E_{\mathbf p}$, the energy weight of relativistically normalized states ([[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]).
 >
-> Dictionary: with $\psi_{\rm D} = U\psi$, $U = \frac1{\sqrt2}\begin{pmatrix}\mathbb 1 & \mathbb 1\\ -\mathbb 1 & \mathbb 1\end{pmatrix}$, the chiral $\gamma^\mu$ become $U\gamma^\mu U^\dagger$: $\gamma^0_{\rm D} = \operatorname{diag}(\mathbb 1, -\mathbb 1)$, $\gamma^i_{\rm D} = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$ (block multiplication), so $\alpha^i = \gamma^0_{\rm D}\gamma^i_{\rm D}$ and $\beta = \gamma^0_{\rm D}$ are the Quantum Mechanics matrices. By [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]], $\sqrt{p\cdot\sigma} + \sqrt{p\cdot\bar\sigma} = \frac{2E + 2m}{\sqrt{2(E + m)}}$ and $\sqrt{p\cdot\bar\sigma} - \sqrt{p\cdot\sigma} = \frac{2\,\mathbf p\cdot\boldsymbol\sigma}{\sqrt{2(E + m)}}$, so
+> Dictionary: with $\psi_{\rm D} = U_D\psi$, $U_D = \frac1{\sqrt2}\begin{pmatrix}\mathbb 1 & \mathbb 1\\ -\mathbb 1 & \mathbb 1\end{pmatrix}$ (Larsen's matrix, [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]), the chiral $\gamma^\mu$ become $U_D\gamma^\mu U_D^\dagger$: $\gamma^0_{\rm D} = \operatorname{diag}(\mathbb 1, -\mathbb 1)$, $\gamma^i_{\rm D} = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$, so $\alpha^i = \gamma^0_{\rm D}\gamma^i_{\rm D}$ and $\beta = \gamma^0_{\rm D}$ are the Quantum Mechanics matrices. With the explicit roots of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]] the spinor becomes ([[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|Example §C5a.9.1]], worked step by step there)
 >
 > $$
-> U\,u(p) = \frac1{\sqrt2}\begin{pmatrix}(\sqrt{p\cdot\sigma} + \sqrt{p\cdot\bar\sigma})\,\xi\\ (\sqrt{p\cdot\bar\sigma} - \sqrt{p\cdot\sigma})\,\xi\end{pmatrix} = \sqrt{E_{\mathbf p} + m}\begin{pmatrix}\xi\\ \dfrac{\boldsymbol\sigma\cdot\mathbf p}{E_{\mathbf p} + m}\,\xi\end{pmatrix} ,
+> U_D\,u(p) = \sqrt{E_{\mathbf p} + m}\begin{pmatrix}\xi\\ \dfrac{\boldsymbol\sigma\cdot\mathbf p}{E_{\mathbf p} + m}\,\xi\end{pmatrix} ,
 > $$
 >
 > which is the Quantum Mechanics $u^{(+)}$ times $\sqrt{E_{\mathbf p} + m}$ (with $c = 1$): the same solution, normalized to $u^\dagger u = (E + m)\cdot\frac{2E}{E + m} = 2E$.
@@ -872,9 +872,90 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 ^rem-c5a-9-7
 
 > [!example] Example §C5a.9.1: The Plane-Wave Spinors in the Dirac Basis
-> *To be filled after Problem Set 6 is submitted (Oct 13).*
+> In the Dirac basis ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]: $\gamma_D^0 = \operatorname{diag}(\mathbb 1, -\mathbb 1)$, $\gamma_D^i = \begin{pmatrix}0&\sigma^i\\-\sigma^i&0\end{pmatrix}$, components $\psi_D = U_D\psi$), the positive-frequency spinor of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] is
+>
+> $$
+> u_D(p) = U_D\,u(p) = \frac{1}{\sqrt{E_{\mathbf p} + m}}\begin{pmatrix}(E_{\mathbf p} + m)\,\xi\\ \boldsymbol\sigma\cdot\mathbf p\;\xi\end{pmatrix}, \qquad \bar u^r_D(p)\,u^s_D(p) = 2m\,\delta^{rs}\quad\text{for } \xi^{r\dagger}\xi^s = \delta^{rs} ,
+> $$
+>
+> the normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]] ($\bar uu = 2m$ for $\xi^\dagger\xi = 1$), with $\bar u_D = u_D^\dagger\gamma_D^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]). Here $\boldsymbol\sigma\cdot\mathbf p = \sum_ip^i\sigma^i$ is the three-vector product, not the contraction $p\cdot\sigma = E_{\mathbf p} - \boldsymbol\sigma\cdot\mathbf p$ of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]].
+>
+> *Reading* (Larsen's comments): at rest, $\mathbf p = 0$, the lower components vanish, $u_D = \sqrt{2m}\,(\xi, 0)$; for $|\mathbf p| \ll m$ they are smaller than the upper ones by $|\mathbf p|/2m$, and the two "large" upper components are the two-component wave function of a spin-½ particle of nonrelativistic quantum mechanics ([[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]]) — why the Dirac basis is used at low energy ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]]).
+>
+> *Source: PHY 513, Problem Set 6, Problem 3(c)–(d) and the comments after Problem 3 (statement, Larsen; solution as the user wrote it) · Sakurai §8.2.2 as used in [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom|QM §C13.3★]] (the same spinor with another normalization)*
 
 ^ex-c5a-9-1
+
+> [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 3(c): the spinor)
+> **1. The chiral-basis spinor.** $u(p) = \bigl(\sqrt{p\cdot\sigma}\,\xi,\ \sqrt{p\cdot\bar\sigma}\,\xi\bigr)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]]), with $p\cdot\sigma = E_{\mathbf p}\mathbb 1 - \mathbf p\cdot\boldsymbol\sigma$ and $p\cdot\bar\sigma = E_{\mathbf p}\mathbb 1 + \mathbf p\cdot\boldsymbol\sigma$: the lowered index $p_i = -p^i$ gives the minus sign. In $\mathbf p\cdot\boldsymbol\sigma = \boldsymbol\sigma\cdot\mathbf p = \sum_ip^i\sigma^i$ the order does not matter, the $p^i$ being numbers.
+>
+> **2. The change of basis keeps it a solution.** $u_D = U_Du$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], one factor $U_D$ for one spinor index), and with $\gamma_D^\mu = U_D\gamma^\mu U_D^\dagger$, $U_D^\dagger U_D = \mathbb 1$ ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], step 2 of its second-route derivation):
+>
+> $$
+> \bigl(\gamma_D^\mu p_\mu - m\mathbb 1\bigr)U_Du(p) = U_D\bigl(\gamma^\mu p_\mu - m\mathbb 1\bigr)U_D^\dagger U_D\,u(p) = U_D\bigl(\gamma^\mu p_\mu - m\mathbb 1\bigr)u(p) = 0
+> $$
+>
+> ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]]).
+>
+> **3. The block product.**
+>
+> $$
+> u_D(p) = \frac1{\sqrt2}\begin{pmatrix}\mathbb 1&\mathbb 1\\-\mathbb 1&\mathbb 1\end{pmatrix}\begin{pmatrix}\sqrt{p\cdot\sigma}\,\xi\\ \sqrt{p\cdot\bar\sigma}\,\xi\end{pmatrix} = \frac1{\sqrt2}\begin{pmatrix}\bigl(\sqrt{p\cdot\sigma} + \sqrt{p\cdot\bar\sigma}\bigr)\xi\\ \bigl(-\sqrt{p\cdot\sigma} + \sqrt{p\cdot\bar\sigma}\bigr)\xi\end{pmatrix} .
+> $$
+>
+> **4. The square roots (the user's route).** $\sqrt{p\cdot\sigma} = (p\cdot\sigma + m\mathbb 1)/\sqrt{2(E_{\mathbf p} + m)}$ and likewise for $p\cdot\bar\sigma$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]], $m > 0$), checked by squaring. First, with $\sigma^i\sigma^j = \delta^{ij}\mathbb 1 + i\epsilon^{ijk}\sigma^k$ ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]), the $\epsilon$ term is antisymmetric in $i, j$ and $p^ip^j$ symmetric, so
+>
+> $$
+> (\boldsymbol\sigma\cdot\mathbf p)^2 = \sum_{i,j}\bigl(\delta^{ij}\mathbb 1 + i\epsilon^{ijk}\sigma^k\bigr)p^ip^j = |\mathbf p|^2\,\mathbb 1 .
+> $$
+>
+> Then, with $E_{\mathbf p}^2 - |\mathbf p|^2 = m^2$: $(p\cdot\sigma)^2 = E_{\mathbf p}^2\mathbb 1 + |\mathbf p|^2\mathbb 1 - 2E_{\mathbf p}\,\mathbf p\cdot\boldsymbol\sigma = 2E_{\mathbf p}(E_{\mathbf p}\mathbb 1 - \mathbf p\cdot\boldsymbol\sigma) - m^2\mathbb 1 = 2E_{\mathbf p}\,(p\cdot\sigma) - m^2\mathbb 1$, so, all terms expanded,
+>
+> $$
+> (p\cdot\sigma + m\mathbb 1)^2 = 2E_{\mathbf p}\,(p\cdot\sigma) - m^2\mathbb 1 + 2m\,(p\cdot\sigma) + m^2\mathbb 1 = 2(E_{\mathbf p} + m)\,(p\cdot\sigma) .
+> $$
+>
+> $p\cdot\sigma + m\mathbb 1$ has eigenvalues $E_{\mathbf p} \mp |\mathbf p| + m > 0$, so this is the positive root ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]). The second identity follows with $\mathbf p \to -\mathbf p$. (Derivation §C5a.9.6 reaches $(p\cdot\sigma)^2 = 2E_{\mathbf p}\,p\cdot\sigma - m^2$ by Cayley–Hamilton instead of the Pauli product.)
+>
+> **5. Sum and difference.** $p\cdot\sigma + p\cdot\bar\sigma = 2E_{\mathbf p}\mathbb 1$ and $p\cdot\bar\sigma - p\cdot\sigma = 2\,\mathbf p\cdot\boldsymbol\sigma$; the $m\mathbb 1$ terms add in the upper entry and cancel in the lower one:
+>
+> $$
+> u_D(p) = \frac1{\sqrt2}\,\frac1{\sqrt{2(E_{\mathbf p} + m)}}\begin{pmatrix}\bigl(p\cdot\sigma + m\mathbb 1 + p\cdot\bar\sigma + m\mathbb 1\bigr)\xi\\ \bigl(-p\cdot\sigma - m\mathbb 1 + p\cdot\bar\sigma + m\mathbb 1\bigr)\xi\end{pmatrix} = \frac1{2\sqrt{E_{\mathbf p} + m}}\begin{pmatrix}2(E_{\mathbf p} + m)\,\xi\\ 2\,\mathbf p\cdot\boldsymbol\sigma\,\xi\end{pmatrix} = \frac1{\sqrt{E_{\mathbf p} + m}}\begin{pmatrix}(E_{\mathbf p} + m)\,\xi\\ \boldsymbol\sigma\cdot\mathbf p\,\xi\end{pmatrix} .
+> $$
+>
+> **What the derivation shows**
+> - The Dirac-basis halves are the sum and the difference of the Weyl halves; at rest $p\cdot\sigma = p\cdot\bar\sigma = m\mathbb 1$, the Weyl halves are equal ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]) and the difference vanishes: the "small" components measure how unequal the two chiralities are.
+> - Assumption: $m > 0$ (Theorem §C5a.9.6); the final formula is continuous at $m = 0$ for $\mathbf p \neq 0$, $u_D = |\mathbf p|^{-1/2}(|\mathbf p|\xi, \boldsymbol\sigma\cdot\mathbf p\,\xi)$.
+> - Same spinor, other normalization: Quantum Mechanics' $u^{(+)}$ is $u_D/\sqrt{E_{\mathbf p} + m}$ ([[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-7|Remark: What the field theory adds to the free Dirac spinors of Quantum Mechanics]]).
+
+^der-ex-c5a-9-1
+
+> [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 3(d): the normalization)
+> **1. The bar in the Dirac basis.** $U_D$ is unitary, so the Dirac conjugate keeps its form, $\bar u_D = u_D^\dagger\gamma_D^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-4|Theorem §C5a.2.4]]). The $\sigma^i$ are Hermitian and the $p^i$ real, so $(\boldsymbol\sigma\cdot\mathbf p\,\xi)^\dagger = \xi^\dagger(\boldsymbol\sigma\cdot\mathbf p)^\dagger = \xi^\dagger\,\boldsymbol\sigma\cdot\mathbf p$, and with $\gamma_D^0 = \operatorname{diag}(\mathbb 1, -\mathbb 1)$
+>
+> $$
+> \bar u_D(p) = \frac1{\sqrt{E_{\mathbf p} + m}}\Bigl((E_{\mathbf p} + m)\,\xi^\dagger,\ \xi^\dagger\,\boldsymbol\sigma\cdot\mathbf p\Bigr)\begin{pmatrix}\mathbb 1&0\\0&-\mathbb 1\end{pmatrix} = \frac1{\sqrt{E_{\mathbf p} + m}}\Bigl((E_{\mathbf p} + m)\,\xi^\dagger,\ -\xi^\dagger\,\boldsymbol\sigma\cdot\mathbf p\Bigr) .
+> $$
+>
+> **2. Row times column.**
+>
+> $$
+> \bar u^r_D(p)\,u^s_D(p) = \frac1{E_{\mathbf p} + m}\,\xi^{r\dagger}\Bigl((E_{\mathbf p} + m)^2\,\mathbb 1 - (\boldsymbol\sigma\cdot\mathbf p)^2\Bigr)\xi^s .
+> $$
+>
+> **3. Insert and expand.** $(\boldsymbol\sigma\cdot\mathbf p)^2 = |\mathbf p|^2\mathbb 1$ (step 4 above), $\xi^{r\dagger}\xi^s = \delta^{rs}$ and $|\mathbf p|^2 = E_{\mathbf p}^2 - m^2$:
+>
+> $$
+> \bar u^r_Du^s_D = \frac{\delta^{rs}}{E_{\mathbf p} + m}\Bigl(E_{\mathbf p}^2 + m^2 + 2E_{\mathbf p}m - E_{\mathbf p}^2 + m^2\Bigr) = \frac{\delta^{rs}}{E_{\mathbf p} + m}\,2m(E_{\mathbf p} + m) = 2m\,\delta^{rs} .
+> $$
+>
+> **What the derivation shows**
+> - In the Dirac basis $\bar uu$ is (upper)$^2$ minus (lower)$^2$: the Dirac form has signature $(2, 2)$ ([[§C5a.2 The Dirac Form|§C5a.2]]), made diagonal by this basis. The same steps with a plus sign give $u_D^\dagger u_D = \bigl((E_{\mathbf p} + m)^2 + |\mathbf p|^2\bigr)/(E_{\mathbf p} + m) = 2E_{\mathbf p}$.
+> - The result is the chiral-basis $\bar uu = 2m$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]) carried over: a unitary change of basis preserves the Dirac form (Theorem §C5a.2.4), so the computation is a check, not a new normalization.
+
+^der-ex-c5a-9-1b
+
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.2 The Dirac Form#^thm-c5a-2-4|Theorem §C5a.2.4]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]]
 
 > [!remark]- Connections
 > - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $k = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.9.4).

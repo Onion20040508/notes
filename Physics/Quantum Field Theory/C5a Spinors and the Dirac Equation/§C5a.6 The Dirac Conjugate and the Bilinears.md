@@ -172,17 +172,17 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 >
 > where $S^{\mu\nu}$ are the spinor generators ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; other normalizations of $\sigma^{\mu\nu}$: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|Caution: Three normalizations of σ^μν]]), the **standard bilinears** are
 >
-> | name | bilinear | number |
-> |---|---|---|
-> | scalar (S) | $\bar\psi\psi$ | 1 |
-> | pseudoscalar (P) | $\bar\psi\,i\gamma^5\psi$ | 1 |
-> | vector (V) | $\bar\psi\gamma^\mu\psi$ | 4 |
-> | axial vector (A) | $\bar\psi\gamma^\mu\gamma^5\psi$ | 4 |
-> | tensor (T) | $\bar\psi\sigma^{\mu\nu}\psi$, $\mu < \nu$ | 6 |
+> | name | symbol | bilinear | number |
+> |---|---|---|---|
+> | scalar (S) | $\mathsf S$ | $\bar\psi\psi$ | 1 |
+> | pseudoscalar (P) | $\mathsf P$ | $\bar\psi\,i\gamma^5\psi$ | 1 |
+> | vector (V) | $\mathsf V^\mu$ | $\bar\psi\gamma^\mu\psi$ | 4 |
+> | axial vector (A) | $\mathsf A^\mu$ | $\bar\psi\gamma^\mu\gamma^5\psi$ | 4 |
+> | tensor (T) | $\mathsf T^{\mu\nu}$ | $\bar\psi\sigma^{\mu\nu}\psi$, $\mu < \nu$ | 6 |
 >
-> Their matrices $\mathbb 1, i\gamma^5, \gamma^\mu, \gamma^\mu\gamma^5, \sigma^{\mu\nu}$ are sixteen; they span all $4\times4$ matrices ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]).
+> Their matrices $\mathbb 1, i\gamma^5, \gamma^\mu, \gamma^\mu\gamma^5, \sigma^{\mu\nu}$ are sixteen; they span all $4\times4$ matrices ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]). The sans-serif symbols are Lecture 11's (slide 19); the conserved currents of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] are $j^\mu = \mathsf V^\mu$ and $j^{\mu5} = \mathsf A^\mu$.
 >
-> *Source: the user's PHY 513 notes, Ch. 8 §8.9 (paragraph after the derivation), Ch. 9 §9.6 · PS §3.4, pp. 49–50 (table) · Yu §5.3, eqs. (5.93)–(5.96) · the user's pre-course notes, §5.3*
+> *Source: the user's PHY 513 notes, Ch. 8 §8.9 (paragraph after the derivation), Ch. 9 §9.6 · PS §3.4, pp. 49–50 (table) · Yu §5.3, eqs. (5.93)–(5.96) · the user's pre-course notes, §5.3 · PHY 513 Lecture 11, slide 19 (the sans-serif symbols) · PHY 513, Problem Set 6, Problem 5(b) ($V^\mu = \bar\psi\gamma^\mu\psi$)*
 
 ^def-c5a-6-2
 

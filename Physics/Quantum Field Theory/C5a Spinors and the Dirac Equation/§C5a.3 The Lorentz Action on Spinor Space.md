@@ -192,7 +192,7 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 >
 > *Reading.* Each $J_k$ is Hermitian with eigenvalues $\frac12, \frac12, -\frac12, -\frac12$; each $K_k$ is anti-Hermitian with eigenvalues $\frac i2, \frac i2, -\frac i2, -\frac i2$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-5|Theorem §C5a.3.5]]); e.g. $K_3$ has $-\frac i2$ on the components $1$, $4$ and $+\frac i2$ on $2$, $3$. The vector generators of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]] have $\pm1, 0, 0$ and $\pm i, 0, 0$: half of each here, no zero, and every $2\times2$ block is spin $\frac12$ ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|Remark: Why half the angle]]). All six are block diagonal, $J_k$ equal in the two blocks and $K_k$ opposite. Since $(2J_k)^2 = (2iK_k)^2 = \mathbb 1_4$, their exponentials split into $\cos\frac\theta2$, $\sin\frac\theta2$ and $\cosh\frac\eta2$, $\sinh\frac\eta2$: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-14|Theorem §C5a.4.14]].
 >
-> *Source: PS §3.2, eqs. (3.26)–(3.27) (the block form) · the user's PHY 513 notes, Ch. 8 §8.1, eq. (Sexplicit) · PHY 513 Lecture 8, Cheat Sheet I · the $4\times4$ entries written out here*
+> *Source: PS §3.2, eqs. (3.26)–(3.27) (the block form) · the user's PHY 513 notes, Ch. 8 §8.1, eq. (Sexplicit) · PHY 513 Lecture 8, Cheat Sheet I · the $4\times4$ entries written out here · PHY 513, Problem Set 6, Problem 4(a), (c) (the generators $S^{03}$, $S^{12}$ used there, as the user wrote them)*
 
 ^ex-c5a-3-1
 

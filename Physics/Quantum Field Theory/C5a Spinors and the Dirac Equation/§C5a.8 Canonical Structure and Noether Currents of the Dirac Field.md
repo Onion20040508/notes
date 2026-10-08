@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C5a.7 The Dirac Equation and Its Lagrangian]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.9 Plane-Wave Solutions]] →
 
-*Sources: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator", eq. (diracP)), Ch. 9 §9.4 and §9.6 (the current $\bar\psi\gamma^\mu\psi$), Ch. 3 §3.4 ("Other fields"), §3.5 (table of canonical tensors; Derivation "Belinfante: symmetrizing T with the spin current") · PHY 513 Lecture 10 (Larsen), slide 16 (the Hamiltonian density) · PHY 513, Problem Set 5, Problem 4 (as the user wrote it) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.4, pp. 50–51, eqs. (3.73)–(3.76), §3.5, p. 52, eqs. (3.84)–(3.85), p. 58, eq. (3.105) · Yu Zhao-Huan, 量子场论讲义, §1.7.3, eqs. (1.241)–(1.248), §5.3, eq. (5.94), §5.4.3, eqs. (5.219)–(5.222) · the user's pre-course notes, §5.3.*
+*Sources: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator", eq. (diracP)), Ch. 9 §9.4 and §9.6 (the current $\bar\psi\gamma^\mu\psi$), Ch. 3 §3.4 ("Other fields"), §3.5 (table of canonical tensors; Derivation "Belinfante: symmetrizing T with the spin current") · PHY 513 Lecture 10 (Larsen), slide 16 (the Hamiltonian density) · PHY 513, Problem Set 5, Problem 4 (as the user wrote it) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.4, pp. 50–51, eqs. (3.73)–(3.76), §3.5, p. 52, eqs. (3.84)–(3.85), p. 58, eq. (3.105) · Yu Zhao-Huan, 量子场论讲义, §1.7.3, eqs. (1.241)–(1.248), §5.3, eq. (5.94), §5.4.3, eqs. (5.219)–(5.222) · the user's pre-course notes, §5.3 · PHY 513, Problem Set 6, Problem 5 (Larsen; the user's solution).*
 
 What do Hamiltonian field theory and Noether's theorem give for the Dirac field? The Lagrangian and its field equations are [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), the single-particle Hamiltonian is [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], the bilinears are [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] and $\gamma^5$ is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; the general machinery is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]] (momenta, Legendre transform, brackets) and [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]] ([[P3 Noether's Procedure]]). This section runs that machinery on the Dirac field in the order used for the scalar: the canonical momentum and the Hamiltonian density, the vector and axial currents, the canonical energy–momentum tensor, energy and momentum in field form with the bracket by which $\mathbf P$ generates translations, and the spin current with the symmetric tensor. The quantized field ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) shows these boxes as embeds.
 
@@ -139,7 +139,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 >
 > It is conserved if and only if $m = 0$ (for generic solutions); then the **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry, and the chiral currents $j^\mu_L = \bar\psi\gamma^\mu P_L\psi = \psi_L^\dagger\bar\sigma^\mu\psi_L$ and $j^\mu_R = \bar\psi\gamma^\mu P_R\psi = \psi_R^\dagger\sigma^\mu\psi_R$ are separately conserved ($P_{L,R}$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]]; Weyl forms: [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]).
 >
-> *Source: PS §3.4, eqs. (3.73), (3.75)–(3.76) and p. 51 (the chiral transformation)*
+> *Source: PS §3.4, eqs. (3.73), (3.75)–(3.76) and p. 51 (the chiral transformation) · PHY 513, Problem Set 6, Problem 5(e) (the divergence of $-j^{\mu5}$, $-2im\,\bar\psi\gamma^5\psi$, as the user wrote it: [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]])*
 
 ^thm-c5a-8-4
 
@@ -152,7 +152,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 >
 > **4. Add.** $\partial_\mu j^{\mu5} = 2im\bar\psi\gamma^5\psi$; for $m = 0$ it vanishes.
 >
-> **5. The chiral transformation.** $\psi' = e^{i\alpha\gamma^5}\psi$. Then $\psi'^\dagger = \psi^\dagger e^{-i\alpha\gamma^5}$ ($\gamma^5$ Hermitian) and $\bar\psi' = \psi^\dagger e^{-i\alpha\gamma^5}\gamma^0 = \bar\psi e^{+i\alpha\gamma^5}$, since $\gamma^5\gamma^0 = -\gamma^0\gamma^5$ term by term in the series. Kinetic term: $\bar\psi e^{i\alpha\gamma^5}\gamma^\mu e^{i\alpha\gamma^5}\partial_\mu\psi = \bar\psi\gamma^\mu e^{-i\alpha\gamma^5}e^{i\alpha\gamma^5}\partial_\mu\psi$: invariant. Mass term: $\bar\psi e^{2i\alpha\gamma^5}\psi \ne \bar\psi\psi$: not invariant unless $m = 0$. Noether: $\Delta\psi = i\gamma^5\psi$, $j^\mu_{\rm N} = i\bar\psi\gamma^\mu(i\gamma^5\psi) = -j^{\mu5}$ (with $\mathcal J = 0$ for $m = 0$).
+> **5. The chiral transformation** (worked in full, as the user wrote it for Problem Set 6, Problem 5, in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]]). $\psi' = e^{i\alpha\gamma^5}\psi$. Then $\psi'^\dagger = \psi^\dagger e^{-i\alpha\gamma^5}$ ($\gamma^5$ Hermitian) and $\bar\psi' = \psi^\dagger e^{-i\alpha\gamma^5}\gamma^0 = \bar\psi e^{+i\alpha\gamma^5}$, since $\gamma^5\gamma^0 = -\gamma^0\gamma^5$ term by term in the series. Kinetic term: $\bar\psi e^{i\alpha\gamma^5}\gamma^\mu e^{i\alpha\gamma^5}\partial_\mu\psi = \bar\psi\gamma^\mu e^{-i\alpha\gamma^5}e^{i\alpha\gamma^5}\partial_\mu\psi$: invariant. Mass term: $\bar\psi e^{2i\alpha\gamma^5}\psi \ne \bar\psi\psi$: not invariant unless $m = 0$. Noether: $\Delta\psi = i\gamma^5\psi$, $j^\mu_{\rm N} = i\bar\psi\gamma^\mu(i\gamma^5\psi) = -j^{\mu5}$ (with $\mathcal J = 0$ for $m = 0$).
 >
 > **6. Chiral currents.** $j^\mu \pm j^{\mu5}$ over 2 are $\bar\psi\gamma^\mu P_{R,L}\psi$; their Weyl forms are [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]. For $m = 0$ both $j^\mu$ and $j^{\mu5}$ are conserved, hence each combination.
 >
@@ -163,6 +163,91 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 ^der-c5a-8-4
 
 *Uses:* [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|Theorem §C5a.5.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]
+
+> [!example] Example §C5a.8.1: Chiral Symmetry
+> The **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$, $\alpha$ real ($\gamma^5$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]), of the Dirac field of [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], with the bilinears $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf P = \bar\psi\,i\gamma^5\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]):
+> 1. $\bar\psi \to \bar\psi\,e^{+i\alpha\gamma^5}$, the same sign in the exponent;
+> 2. $\mathsf V^\mu \to \mathsf V^\mu$;
+> 3. $\mathcal L \to \mathcal L + m\bar\psi\psi - m\bar\psi e^{2i\alpha\gamma^5}\psi$, with $m\bar\psi\psi \to m\cos2\alpha\,\bar\psi\psi + im\sin2\alpha\,\bar\psi\gamma^5\psi$: invariant for $m = 0$, not for $m \neq 0$; to first order $\delta\mathcal L = -2i\alpha m\,\bar\psi\gamma^5\psi = -2\alpha m\,\mathsf P$;
+> 4. the Noether current of the massless case is $j^\mu_5 = -\bar\psi\gamma^\mu\gamma^5\psi = -\mathsf A^\mu$;
+> 5. for general $m$, on solutions, $\partial_\mu j^\mu_5 = -2im\,\bar\psi\gamma^5\psi = -2m\,\mathsf P$, zero for $m = 0$ and not identically zero for $m \neq 0$.
+>
+> $j^\mu_5$ is the Noether current with the sign of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; the axial current of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-4|Theorem §C5a.8.4]] is $j^{\mu5} = \mathsf A^\mu = -j^\mu_5$, with $\partial_\mu j^{\mu5} = +2im\,\bar\psi\gamma^5\psi$: the same statement, the sign flipped as for the vector current ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]]). Part 5 is the broken-symmetry identity [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]] with $X = -2im\,\bar\psi\gamma^5\psi$ and $\mathcal J = 0$.
+>
+> *Source: PHY 513, Problem Set 6, Problem 5(a)–(e) (statement, Larsen; solution as the user wrote it, boxed results 1–5) · PS §3.4, p. 51 (the chiral transformation and $j^{\mu5}$) · route 2 of $\delta\mathcal L$ and the cross-check with Theorem §C1b.5.5 written here*
+
+^ex-c5a-8-1
+
+> [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 5(a)–(c), and the chain-rule route)
+> Tools: $\gamma^{5\dagger} = \gamma^5$, $(\gamma^5)^2 = \mathbb 1$, $\gamma^5\gamma^\mu = -\gamma^\mu\gamma^5$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]; the user cites Problem Set 5, Problem 5(a)–(b)).
+>
+> **1. ψ̄ (part (a)).** $\bar\psi' \equiv (\psi')^\dagger\gamma^0 = \bigl(e^{i\alpha\gamma^5}\psi\bigr)^\dagger\gamma^0 = \psi^\dagger e^{-i\alpha\gamma^{5\dagger}}\gamma^0 = \psi^\dagger\sum_{n\ge0}\frac{(-i\alpha)^n(\gamma^5)^n}{n!}\,\gamma^0$. Moving $\gamma^0$ to the left through $(\gamma^5)^n$ costs $(-1)^n$, $(\gamma^5)^n\gamma^0 = (-1)^n\gamma^0(\gamma^5)^n$, so the series is $\gamma^0\sum_n\frac{(-1)^n(-i\alpha)^n(\gamma^5)^n}{n!} = \gamma^0\sum_n\frac{(i\alpha\gamma^5)^n}{n!} = \gamma^0e^{i\alpha\gamma^5}$, and $\bar\psi' = \psi^\dagger\gamma^0e^{i\alpha\gamma^5} = \bar\psi\,e^{i\alpha\gamma^5}$.
+>
+> **2. The vector bilinear (part (b)).** The same sign count with $\gamma^\mu$ in place of $\gamma^0$: $e^{i\alpha\gamma^5}\gamma^\mu = \sum_n\frac{(i\alpha)^n(\gamma^5)^n}{n!}\gamma^\mu = \gamma^\mu\sum_n\frac{(-1)^n(i\alpha)^n(\gamma^5)^n}{n!} = \gamma^\mu e^{-i\alpha\gamma^5}$. The exponents $\mp i\alpha\gamma^5$ commute, so $e^{-i\alpha\gamma^5}e^{i\alpha\gamma^5} = \mathbb 1$ and
+>
+> $$
+> \bar\psi'\gamma^\mu\psi' = \bar\psi\,e^{i\alpha\gamma^5}\gamma^\mu e^{i\alpha\gamma^5}\psi = \bar\psi\gamma^\mu e^{-i\alpha\gamma^5}e^{i\alpha\gamma^5}\psi = \bar\psi\gamma^\mu\psi .
+> $$
+>
+> **3. Kinetic term (part (c), route 1: substitution).** $\alpha$ is constant (a global transformation), so $\partial_\mu\psi' = e^{i\alpha\gamma^5}\partial_\mu\psi$, and by step 2, $i\bar\psi'\gamma^\mu\partial_\mu\psi' = i\bar\psi\gamma^\mu e^{-i\alpha\gamma^5}e^{i\alpha\gamma^5}\partial_\mu\psi = i\bar\psi\gamma^\mu\partial_\mu\psi$: invariant.
+>
+> **4. Mass term.** By step 1 and commuting exponents, $m\bar\psi'\psi' = m\bar\psi\,e^{i\alpha\gamma^5}e^{i\alpha\gamma^5}\psi = m\bar\psi\,e^{2i\alpha\gamma^5}\psi$. Since $(\gamma^5)^2 = \mathbb 1$, even powers are $\mathbb 1$ and odd powers $\gamma^5$:
+>
+> $$
+> e^{2i\alpha\gamma^5} = \sum_n\frac{(2i\alpha)^n(\gamma^5)^n}{n!} = \cos2\alpha\,\mathbb 1 + i\sin2\alpha\,\gamma^5, \qquad m\bar\psi\psi \to m\cos2\alpha\,\bar\psi\psi + im\sin2\alpha\,\bar\psi\gamma^5\psi .
+> $$
+>
+> For $m \neq 0$ this differs from $m\bar\psi\psi$ unless $e^{2i\alpha\gamma^5} = \mathbb 1$, i.e. $\alpha \in \pi\mathbb Z$; to first order $\delta(m\bar\psi\psi) = 2i\alpha m\,\bar\psi\gamma^5\psi$. With $\mathcal L = i\bar\psi\gamma^\mu\partial_\mu\psi - m\bar\psi\psi$: $\mathcal L \to \mathcal L + m\bar\psi\psi - m\bar\psi e^{2i\alpha\gamma^5}\psi$ and $\delta\mathcal L = -2i\alpha m\,\bar\psi\gamma^5\psi$.
+>
+> **5. Route 2: the chain rule (written here).** [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]] over the eight variables $\psi_c$, $\bar\psi_a$, with $\Delta\psi = i\gamma^5\psi$, $\Delta\bar\psi = i\bar\psi\gamma^5$ (the $\alpha$-derivatives of steps 1 and the definition) and the partial derivatives of $\mathcal L$ listed in [[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]]; divided by $\alpha$:
+> - (a) $\sum_c\frac{\partial\mathcal L}{\partial\psi_c}\Delta\psi_c = \sum_c(-m\bar\psi_c)(i\gamma^5\psi)_c = -im\,\bar\psi\gamma^5\psi$;
+> - (b) $\sum_c\frac{\partial\mathcal L}{\partial(\partial_\mu\psi_c)}\partial_\mu(\Delta\psi_c) = \sum_ci(\bar\psi\gamma^\mu)_c(i\gamma^5\partial_\mu\psi)_c = -\bar\psi\gamma^\mu\gamma^5\partial_\mu\psi$;
+> - (c) $\sum_a\frac{\partial\mathcal L}{\partial\bar\psi_a}\Delta\bar\psi_a = \sum_a(i\bar\psi\gamma^5)_a\bigl[(i\gamma^\nu\partial_\nu - m)\psi\bigr]_a = -\bar\psi\gamma^5\gamma^\nu\partial_\nu\psi - im\,\bar\psi\gamma^5\psi = +\bar\psi\gamma^\nu\gamma^5\partial_\nu\psi - im\,\bar\psi\gamma^5\psi$, moving $\gamma^5$ through $\gamma^\nu$;
+> - (d) no term: no derivative of $\bar\psi$ in $\mathcal L$.
+>
+> Renaming $\nu \to \mu$, the derivative terms of (b) and (c) cancel and (a) + (c) leave $\delta\mathcal L/\alpha = -2im\,\bar\psi\gamma^5\psi$, as in step 4. Both routes agree; the remainder is not a divergence (for $m \neq 0$ it contains no derivatives at all), so $\mathcal J = 0$ and $X = -2im\,\bar\psi\gamma^5\psi$ in the split of [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]].
+>
+> **What the derivation shows**
+> - In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, so $e^{i\alpha\gamma^5}\psi = (e^{-i\alpha}\psi_L, e^{i\alpha}\psi_R)$: opposite phases on the two Weyl halves ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]]). The kinetic term keeps each half separate and is invariant; the mass term pairs $\psi_L$ with $\psi_R$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]) and picks up $e^{\pm2i\alpha}$.
+> - $\bar\psi$ transforms with $e^{+i\alpha\gamma^5}$, not with the inverse: unlike the phase $e^{i\alpha}$, the chiral transformation does not preserve the Dirac form ($e^{i\alpha\gamma^5\dagger}\gamma^0e^{i\alpha\gamma^5} = \gamma^0e^{2i\alpha\gamma^5} \neq \gamma^0$), which is why $\bar\psi\psi$ and $\bar\psi\gamma^5\psi$ rotate into each other (a rotation by $2\alpha$ in the $(\mathsf S, \mathsf P)$ plane: $\mathsf S \to \cos2\alpha\,\mathsf S + \sin2\alpha\,\mathsf P$).
+
+^der-ex-c5a-8-1
+
+> [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 5(d)–(e))
+> **1. Noether's theorem, as the user uses it.** $j^\mu = \sum_{i=1}^N\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_i)}\Delta\phi_i - \mathcal J^\mu$, $\delta\phi_i = \alpha\Delta\phi_i$, $\delta\mathcal L = \alpha\,\partial_\mu\mathcal J^\mu$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]). One parameter, one current; the $N = 8$ fields are $\psi_a$ and $\bar\psi_a$, treated as independent ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]]).
+>
+> **2. Generators.** $\Delta\psi_a = \frac{d\psi'_a}{d\alpha}\big|_{\alpha=0} = (i\gamma^5\psi)_a$ and $\Delta\bar\psi_a = \frac{d\bar\psi'_a}{d\alpha}\big|_{\alpha=0} = (i\bar\psi\gamma^5)_a$ (step 1 of the previous derivation).
+>
+> **3. Derivatives of ℒ.** For $m = 0$, $\mathcal L = \sum_a(i\bar\psi\gamma^\mu)_a\,\partial_\mu\psi_a$, the row $i\bar\psi\gamma^\mu$ times the column $\partial_\mu\psi$; so $\frac{\partial\mathcal L}{\partial(\partial_\mu\psi_a)} = (i\bar\psi\gamma^\mu)_a$ and $\frac{\partial\mathcal L}{\partial(\partial_\mu\bar\psi_a)} = 0$. By part (c), $\delta\mathcal L = 0$ for $m = 0$, so $\mathcal J^\mu = 0$.
+>
+> **4. The current.** Only the $\psi$ sum survives: $j^\mu_5 = \sum_a(i\bar\psi\gamma^\mu)_a(i\gamma^5\psi)_a = (i\bar\psi\gamma^\mu)(i\gamma^5\psi) = -\bar\psi\gamma^\mu\gamma^5\psi$, the row times the column. (The mass term has no derivatives, so the same expression is the would-be current of Theorem §C1b.5.5 for every $m$.)
+>
+> **5. Divergence, product rule (part (e)).** With $\gamma^\mu\gamma^5 = -\gamma^5\gamma^\mu$ in the second term,
+>
+> $$
+> \partial_\mu j^\mu_5 = -(\partial_\mu\bar\psi)\gamma^\mu\gamma^5\psi - \bar\psi\gamma^\mu\gamma^5\partial_\mu\psi = -\bigl((\partial_\mu\bar\psi)\gamma^\mu\bigr)\gamma^5\psi + \bar\psi\gamma^5\bigl(\gamma^\mu\partial_\mu\psi\bigr) .
+> $$
+>
+> **6. The two Dirac equations.** $i\gamma^\mu\partial_\mu\psi = m\psi$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]). Its Hermitian conjugate times $\gamma^0$ on the right, with $(\gamma^0)^2 = \mathbb 1$ and $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]): $-i(\partial_\mu\psi^\dagger)\gamma^{\mu\dagger}\gamma^0 = -i(\partial_\mu\psi^\dagger)\gamma^0\,\gamma^0\gamma^{\mu\dagger}\gamma^0 = -i(\partial_\mu\bar\psi)\gamma^\mu = m\bar\psi$. Hence $\gamma^\mu\partial_\mu\psi = \frac mi\psi$ and $(\partial_\mu\bar\psi)\gamma^\mu = -\frac mi\bar\psi$.
+>
+> **7. Result.**
+>
+> $$
+> \partial_\mu j^\mu_5 = \frac mi\,\bar\psi\gamma^5\psi + \frac mi\,\bar\psi\gamma^5\psi = \frac{2m}{i}\,\bar\psi\gamma^5\psi = -2im\,\bar\psi\gamma^5\psi .
+> $$
+>
+> **8. Not identically zero for m ≠ 0.** In the chiral basis $\gamma^0\gamma^5 = \begin{pmatrix}0&\mathbb 1\\-\mathbb 1&0\end{pmatrix}$, so $\bar\psi\gamma^5\psi = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L$, which equals $2i\,\psi_L^\dagger\psi_L \neq 0$ for $\psi_R = i\psi_L \neq 0$ (the user's example; such a value at a point can be prescribed as initial data of a solution, written here).
+>
+> **What the derivation shows**
+> - Cross-check with [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]: the would-be current $\sum\pi^\mu\Delta\psi = j^\mu_5$ must have on-shell divergence $X = \delta\mathcal L/\alpha = -2im\,\bar\psi\gamma^5\psi$ (step 5 of the previous derivation); the direct computation of steps 5–7 gives exactly this. The mass is the rate at which axial charge is created, $dQ_5/dt = -2im\int d^3x\,\bar\psi\gamma^5\psi$ (step 7 of Derivation §C1b.5.5).
+> - Sign: the user's $j^\mu_5$ is the Noether current with the sign of Theorem §C1b.5.4, Theorem §C5a.8.4's $j^{\mu5}$ its negative; [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-4|Derivation §C5a.8.4]], steps 1–4, is the same computation for $j^{\mu5}$, with the opposite sign throughout. In real form, $\partial_\mu\mathsf A^\mu = 2m\,\mathsf P$ with $\mathsf P = \bar\psi\,i\gamma^5\psi$ real.
+> - Assumptions: classical fields with commuting components; $\alpha$ constant; the conservation for $m = 0$ is classical (the quantum axial anomaly, PS ch. 19, is beyond the course).
+
+^der-ex-c5a-8-1b
+
+*Uses:* [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
+
+*Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]]
 
 ## Energy and momentum
 

@@ -40,7 +40,7 @@ graph TD
   CA["CA Mathematical Methods"]
   C1a -->|27| C1b
   C1a -->|3| C2a
-  C1b -->|8| C2a
+  C1b -->|10| C2a
   C1a -->|20| C2b
   C1b -->|3| C2b
   C2a -->|87| C2b
@@ -53,8 +53,8 @@ graph TD
   C2a -->|93| C4
   C2b -->|61| C4
   C3 -->|67| C4
-  C1a -->|60| C5a
-  C1b -->|84| C5a
+  C1a -->|62| C5a
+  C1b -->|93| C5a
   C2a -->|1| C5a
   C3 -->|99| C5a
   C1b -->|26| C5b
@@ -67,8 +67,8 @@ graph TD
   C1b -->|6| C9
   C2a -->|40| C9
   C2b -->|2| C9
-  C5a -->|31| C9
-  C5b -->|14| C9
+  C5a -->|49| C9
+  C5b -->|17| C9
   C1a -->|2| CA
   C1b -->|3| CA
   C2a -->|7| CA
@@ -84,13 +84,13 @@ graph TD
   C2b -.->|4| C1b
   C3 -.->|6| C1b
   C4 -.->|3| C1b
-  C5a -.->|3| C1b
+  C5a -.->|4| C1b
   C5b -.->|2| C1b
   CA -.->|32| C1b
-  C2b -.->|17| C2a
+  C2b -.->|18| C2a
   C3 -.->|3| C2a
-  C5b -.->|1| C2a
-  CA -.->|193| C2a
+  C5b -.->|2| C2a
+  CA -.->|197| C2a
   CA -.->|429| C2b
   C4 -.->|5| C3
   C5a -.->|21| C3
@@ -104,7 +104,7 @@ graph TD
   C9 -.->|1| C5a
   CA -.->|7| C5a
   CA -.->|121| C5b
-  CA -.->|24| C9
+  CA -.->|26| C9
 ```
 
 ## Planned

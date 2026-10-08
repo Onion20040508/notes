@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C2a.2 Mode Expansion and the Mode Algebra]] · ↑ [[· C2a The Quantum Scalar Field]] · [[§C2a.4 Particles and Relativistic Normalization]] →
 
-*Sources: the user's PHY 513 notes, Ch. 4 §§4.6–4.8 · PHY 513 Lecture 4 (Larsen), Part C; Problem Set 3, Problem 2(b), with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.3 · Yu Zhao-Huan, 量子场论讲义, §2.3.3, §2.3.4 (the vacuum) · the user's pre-course notes, §3.3.*
+*Sources: the user's PHY 513 notes, Ch. 4 §§4.6–4.8 · PHY 513 Lecture 4 (Larsen), Part C; Problem Set 3, Problem 2(b), with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.3 · Yu Zhao-Huan, 量子场论讲义, §2.3.3, §2.3.4 (the vacuum) · the user's pre-course notes, §3.3 · PHY 513, Problem Set 6, Problem 1 (Larsen; the user's solution).*
 
 What are the energy and momentum of the free real field? With the mode expansion and the mode algebra of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]] ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]), this section reduces $\hat H$ and $\hat{\mathbf P}$, the charges of time and space translations in their field form ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], recalled in [[§C2a.1 Canonical Quantization of Fields|§C2a.1]] and collected in [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), to one oscillator per momentum, postulates the vacuum and the Fock space ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]) at the point where the first vacuum expectation value appears, isolates the zero-point energy, and removes it by normal ordering. The ladder relations it ends with are what [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] reads off as particles; the steps are [[P1 Canonical Quantization#^p1-7|P1, steps 7–8]].
 
@@ -251,7 +251,7 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 >
 > with no constant term and no ordering choice needed: the would-be constant $\frac V2\int\frac{d^3p}{(2\pi)^3}\,\mathbf p$ vanishes by reflection symmetry for any rotation-invariant cutoff, and the vacuum carries no momentum.
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.7, eq. (Pfinal) · PHY 513 Lecture 4, Part C ("Comments") · PS §2.3, eq. (2.33) · Yu §2.3.3, eqs. (2.141)–(2.144)*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.7, eq. (Pfinal) · PHY 513 Lecture 4, Part C ("Comments") · PS §2.3, eq. (2.33) · Yu §2.3.3, eqs. (2.141)–(2.144) · PHY 513, Problem Set 6, Problem 1 (normal-ordered form, as the user wrote it: [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^ex-c2a-3-1|Example §C2a.3.1]])*
 
 ^thm-c2a-3-5
 
@@ -320,11 +320,70 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 ^rem-c2a-3-1
 
 > [!remark] Remark: Normal ordering is a choice of quantization
-> Classically $a_{\mathbf p}a^{\ast}_{\mathbf p} = a^{\ast}_{\mathbf p}a_{\mathbf p}$, and $\int E_{\mathbf p}\,a^{\ast}_{\mathbf p}a_{\mathbf p}$ has no zero-point term. Writing $H$ in $\phi$ and $\pi$ and *then* promoting to operators produces the symmetric ordering $\frac12(\hat a\hat a^\dagger + \hat a^\dagger\hat a)$; reordering the classical expression first quantizes the same classical theory with no constant (Problem Set 3's prescription "without taking the commutator into account"; its course solution computed the commutator and showed the two routes agree). [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] does not fix the order, and normal ordering is a choice made at quantization, not a subtraction afterwards. For the energy the choice is harmless; for the U(1) charge it is forced by physics ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-2|Remark: Why the vacuum must be neutral]]). The constant itself is $\langle0|\hat H|0\rangle$, built from products of fields at one point: the vacuum two-point function at coincident points ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]); applied to time-ordered products, the same reordering produces the Feynman propagator ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]).
+> Classically $a_{\mathbf p}a^{\ast}_{\mathbf p} = a^{\ast}_{\mathbf p}a_{\mathbf p}$, and $\int E_{\mathbf p}\,a^{\ast}_{\mathbf p}a_{\mathbf p}$ has no zero-point term. Writing $H$ in $\phi$ and $\pi$ and *then* promoting to operators produces the symmetric ordering $\frac12(\hat a\hat a^\dagger + \hat a^\dagger\hat a)$; reordering the classical expression first quantizes the same classical theory with no constant (Problem Set 3's prescription "without taking the commutator into account"; its course solution computed the commutator and showed the two routes agree). [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] does not fix the order, and normal ordering is a choice made at quantization, not a subtraction afterwards. Larsen states it the same way in Problem Set 6: the colons are an instruction that "comes with" quantization, placing $\hat a_{\mathbf p}$ to the right of $\hat a^\dagger_{\mathbf p}$ "from the outset", which "amounts to the prescription that the (potentially infinite) constant due to reordering … must be omitted" ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^ex-c2a-3-1|Example §C2a.3.1]]). For the energy the choice is harmless; for the U(1) charge it is forced by physics ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-2|Remark: Why the vacuum must be neutral]]). The constant itself is $\langle0|\hat H|0\rangle$, built from products of fields at one point: the vacuum two-point function at coincident points ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]); applied to time-ordered products, the same reordering produces the Feynman propagator ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.6 · PHY 513 Problem Set 3, Problem 2(b), course solution*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.6 · PHY 513 Problem Set 3, Problem 2(b), course solution · PHY 513, Problem Set 6, Problem 1 (statement: the colons as "the instruction that $a_{\mathbf p}$ is placed to the right of $a^\dagger_{\mathbf p}$ from the outset")*
 
 ^rem-c2a-3-2
+
+> [!example] Example §C2a.3.1: The Momentum, Normal-Ordered from the Outset
+> Problem Set 6, Problem 1 asks to verify PS eq. (2.33) with the momentum defined normal-ordered ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]) from the start,
+>
+> $$
+> \hat{\mathbf P} = -\int d^3x\;:\!\hat\pi(\mathbf x)\nabla\hat\phi(\mathbf x)\!: \;=\; \int\frac{d^3p}{(2\pi)^3}\,\mathbf p\;\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} ,
+> $$
+>
+> where the colons are read, in Larsen's words, as an instruction that comes with quantization: "$a_{\mathbf p}$ is placed to the right of $a^\dagger_{\mathbf p}$ from the outset", which "amounts to the prescription that the (potentially infinite) constant due to reordering of $a_{\mathbf p}$ and $a^\dagger_{\mathbf p}$ must be omitted" ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-2|Remark: Normal ordering is a choice of quantization]]). The result is [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]: for $\hat{\mathbf P}$ the omitted constant is zero anyway, so the definitions with and without colons agree.
+>
+> *Source: PHY 513, Problem Set 6, Problem 1 (statement, Larsen; solution as the user wrote it) · PS §2.3, eq. (2.33)*
+
+^ex-c2a-3-1
+
+> [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 1)
+> **1. The two expansions.** $\hat\pi(x) = -i\int\frac{d^3p}{(2\pi)^3}\sqrt{\frac{E_{\mathbf p}}{2}}\bigl(\hat a_{\mathbf p}e^{-ip\cdot x} - \hat a^\dagger_{\mathbf p}e^{ip\cdot x}\bigr)$ and $\hat\phi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\bigl(\hat a_{\mathbf p}e^{-ip\cdot x} + \hat a^\dagger_{\mathbf p}e^{ip\cdot x}\bigr)$, with $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$: the time dependence of the classical solutions of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]] (for the operators it is derived in [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]; only $t = 0$ is used below, step 3, where these are the operator forms of Theorem §C2a.2.2). Each field keeps its own pairing of $\hat a_{\mathbf p}$ with $e^{-ip\cdot x}$; there is no relabelling $\mathbf p \to -\mathbf p$ inside the field, unlike step 1 of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-5|Derivation §C2a.3.5]].
+>
+> **2. The gradient.** $\nabla(\mathbf p\cdot\mathbf x) = \mathbf p$, so $\nabla e^{-ip\cdot x} = \nabla e^{-iE_{\mathbf p}t + i\mathbf p\cdot\mathbf x} = i\mathbf p\,e^{-ip\cdot x}$ and $\nabla e^{ip\cdot x} = -i\mathbf p\,e^{ip\cdot x}$; with variable $\mathbf q$,
+>
+> $$
+> \nabla\hat\phi(x) = \int\frac{d^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf q}}}\bigl(i\mathbf q\,\hat a_{\mathbf q}e^{-iq\cdot x} - i\mathbf q\,\hat a^\dagger_{\mathbf q}e^{iq\cdot x}\bigr) .
+> $$
+>
+> **3. Evaluate at t = 0.** $\hat{\mathbf P}$ is a conserved charge ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]]), hence time-independent, and may be evaluated at $t = 0$, where $e^{\mp ip\cdot x} = e^{\pm i\mathbf p\cdot\mathbf x}$. The products are expanded inside the colons, which are applied at the end. With $(-i)(i) = 1$ and $\sqrt{E_{\mathbf p}/2}\big/\sqrt{2E_{\mathbf q}} = \sqrt{E_{\mathbf p}/4E_{\mathbf q}}$, all four terms:
+>
+> $$
+> \hat{\mathbf P} = -\int d^3x\int\frac{d^3p\,d^3q}{(2\pi)^6}\,\mathbf q\sqrt{\frac{E_{\mathbf p}}{4E_{\mathbf q}}}\;:\!\Bigl(\hat a_{\mathbf p}\hat a_{\mathbf q}e^{i(\mathbf p + \mathbf q)\cdot\mathbf x} - \hat a_{\mathbf p}\hat a^\dagger_{\mathbf q}e^{i(\mathbf p - \mathbf q)\cdot\mathbf x} - \hat a^\dagger_{\mathbf p}\hat a_{\mathbf q}e^{-i(\mathbf p - \mathbf q)\cdot\mathbf x} + \hat a^\dagger_{\mathbf p}\hat a^\dagger_{\mathbf q}e^{-i(\mathbf p + \mathbf q)\cdot\mathbf x}\Bigr)\!: .
+> $$
+>
+> **4. The d³x integral.** $\int d^3x\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf k)$ (an identity in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]) gives $\delta^3(\mathbf p + \mathbf q)$ in the first and last terms and $\delta^3(\mathbf p - \mathbf q)$ in the middle two, with one factor $(2\pi)^3$ cancelled:
+>
+> $$
+> \hat{\mathbf P} = -\int\frac{d^3p\,d^3q}{(2\pi)^3}\,\mathbf q\sqrt{\frac{E_{\mathbf p}}{4E_{\mathbf q}}}\;:\!\Bigl(\hat a_{\mathbf p}\hat a_{\mathbf q}\,\delta^3(\mathbf p + \mathbf q) - \hat a_{\mathbf p}\hat a^\dagger_{\mathbf q}\,\delta^3(\mathbf p - \mathbf q) - \hat a^\dagger_{\mathbf p}\hat a_{\mathbf q}\,\delta^3(\mathbf p - \mathbf q) + \hat a^\dagger_{\mathbf p}\hat a^\dagger_{\mathbf q}\,\delta^3(\mathbf p + \mathbf q)\Bigr)\!: .
+> $$
+>
+> **5. Integrate the deltas.** The $\mathbf q$ integral sets $\mathbf q = -\mathbf p$ in the first and last terms and $\mathbf q = \mathbf p$ in the middle two; $E_{-\mathbf p} = E_{\mathbf p}$, so the square root is $\frac12$ in every term, and the prefactor $-\mathbf q$ becomes $+\mathbf p$ in the outer terms and $-\mathbf p$ in the middle ones (where the minus signs of the terms make it $+\mathbf p$):
+>
+> $$
+> \hat{\mathbf P} = \int\frac{d^3p}{(2\pi)^3}\,\frac{\mathbf p}{2}\;:\!\Bigl(\hat a_{\mathbf p}\hat a_{-\mathbf p} + \hat a_{\mathbf p}\hat a^\dagger_{\mathbf p} + \hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} + \hat a^\dagger_{\mathbf p}\hat a^\dagger_{-\mathbf p}\Bigr)\!: .
+> $$
+>
+> **6. The aa and a†a† terms vanish.** Relabel $\mathbf p \to -\mathbf p$ (Jacobian 1, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]) and use $[\hat a_{\mathbf p}, \hat a_{\mathbf q}] = 0$: $\int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\hat a_{\mathbf p}\hat a_{-\mathbf p} = \int\frac{d^3p}{(2\pi)^3}\,(-\mathbf p)\,\hat a_{-\mathbf p}\hat a_{\mathbf p} = -\int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\hat a_{\mathbf p}\hat a_{-\mathbf p}$, so the integral equals minus itself and is zero; likewise the $\hat a^\dagger_{\mathbf p}\hat a^\dagger_{-\mathbf p}$ term with $[\hat a^\dagger_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = 0$ (step 5 of Derivation §C2a.3.5).
+>
+> **7. Normal ordering.** Inside the colons $\hat a_{\mathbf p}$ is placed to the right: $:\!\hat a_{\mathbf p}\hat a^\dagger_{\mathbf p}\!: = \hat a^\dagger_{\mathbf p}\hat a_{\mathbf p}$, so
+>
+> $$
+> \hat{\mathbf P} = \int\frac{d^3p}{(2\pi)^3}\,\frac{\mathbf p}{2}\;:\!\bigl(\hat a_{\mathbf p}\hat a^\dagger_{\mathbf p} + \hat a^\dagger_{\mathbf p}\hat a_{\mathbf p}\bigr)\!: \;=\; \int\frac{d^3p}{(2\pi)^3}\,\frac{\mathbf p}{2}\,\bigl(2\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p}\bigr) = \int\frac{d^3p}{(2\pi)^3}\,\mathbf p\;\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} .
+> $$
+>
+> **8. The user's remark: the omitted constant.** Without the colons, $\hat a_{\mathbf p}\hat a^\dagger_{\mathbf p} = \hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} + (2\pi)^3\delta^3(\mathbf 0)$ adds $\frac12\int d^3p\;\mathbf p\,\delta^3(\mathbf 0)$; in a box $(2\pi)^3\delta^3(\mathbf 0) \to V$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]), this is $\frac V2\int\frac{d^3p}{(2\pi)^3}\,\mathbf p$, zero for a rotationally symmetric cutoff because the integrand is odd. ⚑ By-product: the vacuum carries no momentum, with or without the colons — step 7 of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-5|Derivation §C2a.3.5]].
+>
+> **What the derivation shows**
+> - The colons turn step 7 of Derivation §C2a.3.5 (reorder, then show the constant vanishes) into an instruction; step 8 shows the instruction removes nothing here, unlike for $\hat H$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
+> - Evaluating at $t = 0$ uses that $\hat{\mathbf P}$ is conserved; Derivation §C2a.3.5 starts from the $t = 0$ forms of the fields directly. The cross terms die by oddness in both routes, not by the mass shell.
+> - The same computation for the Dirac charge, where the ordering constant does not vanish, is Problem Set 6, Problem 2 ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
+
+^der-ex-c2a-3-1
+
+*Uses:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]
 
 > [!theorem] Theorem §C2a.3.6: The Normal-Ordered Hamiltonian Acts on Wave Packets
 > 1. $:\!\hat H\!:|0\rangle = 0$, and for wave packets $g_1, \dots, g_n \in \mathcal S(\mathbb R^3)$
