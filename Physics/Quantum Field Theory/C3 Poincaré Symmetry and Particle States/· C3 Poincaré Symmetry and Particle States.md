@@ -8,15 +8,15 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (74), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (21), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (2)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (99), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (133)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (53), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (10), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (67)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (7), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (31), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (54)
 
 ## Sections
 - [[§C3.1 Index Slots, Rotations and Spin in Field Theory]] — 
 - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields]] — 
-- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields]] — 
 - [[§C3.3 How Fields Transform under the Lorentz Group]] — 
 - [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra]] — 
+- [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation]] — 
 - [[§C3.6★ Particle States and the Little Group]] — 
 - [[§C3.7★ Massless Particles and Helicity]] — 
 
@@ -29,29 +29,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.7★ Massless Particles and Helicity#^law-c3-7-4|§C3.7.4]] Massless Particles Have No Continuous Spin
 
 ## Theorems
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|§CB.1.16]] SO(3) and SU(2) Have the Same Lie Algebra
-- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-8|§CB.2.8]] A Group Representation Gives an Algebra Representation
-- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-5|§CB.5.5]] Schur's Lemma
-- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-14|§CB.5.14]] Casimir Operators Are Constant on Irreducible Representations
-- [[§CB.5 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-5-17|§CB.5.17]] Compact Groups: Unitarity and Complete Reducibility
-- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-3|§CB.8.3]] The Irreducible Representations of the Rotation Algebra (Highest Weight)
-- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-8|§CB.8.8]] Integer and Half-Integer Spin: Integration to SU(2) and SO(3)
-- [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-7|§CB.8.7]] SU(2) Is Simply Connected, SO(3) Is Doubly Connected
-- [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-7|§CB.17.7]] Projective Representations of SO(3) Are Representations of SU(2)
-- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-2|§CB.4.2]] The Lorentz Algebra
-- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-4|§CB.4.4]] The Generators Transform as a Tensor
-- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-7|§CB.4.7]] A Representation of the Lorentz Algebra Is a Pair of Commuting Angular Momenta
-- [[§CB.4 The Lorentz Algebra꞉ Generators, the Split J± and Real Forms#^thm-cb-4-8|§CB.4.8]] Every Lorentz Transformation Factorizes
-- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-3|§CB.15.3]] (j₊, j₋) Is Irreducible
-- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-4|§CB.15.4]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋)
 - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|§C3.2.1]] The Representations (½, 0) and (0, ½)
 - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|§C3.2.2]] The Vector Representation Is (½, ½)
-- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-6|§CB.15.6]] Rotation Content and the Sign of a 2π Rotation
-- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-7|§CB.15.7]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part
-- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-8|§CB.15.8]] Tensor Products Add Each Copy Separately
-- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-3|§C3.2.3]] Parity Exchanges the Two Copies
-- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-10|§CB.15.10]] Complex Conjugation Exchanges the Two Copies
-- [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-15-11|§CB.15.11]] No Finite-Dimensional Representation Is Unitary
+- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-3|§C3.2.3]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-1|§C3.3.1]] The Orbital Generators Move the Argument
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-2|§C3.3.2]] The Orbital Generators Obey the Lorentz Algebra
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-3|§C3.3.3]] Orbital Plus Spin

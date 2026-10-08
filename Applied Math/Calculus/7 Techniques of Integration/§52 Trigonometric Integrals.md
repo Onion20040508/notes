@@ -272,7 +272,10 @@ James Gregory found Formula 1 in 1668, while solving a problem in constructing n
 > \end{aligned}
 > $$
 >
-> They are used to evaluate (a) $\int \sin mx \cos nx\,dx$, (b) $\int \sin mx \sin nx\,dx$, (c) $\int \cos mx \cos nx\,dx$.
+> They are used to evaluate:
+> - (a) $\int \sin mx \cos nx\,dx$;
+> - (b) $\int \sin mx \sin nx\,dx$;
+> - (c) $\int \cos mx \cos nx\,dx$.
 >
 > *Stewart: 7.2, Equation 2 (identities from Appendix D)*
 

@@ -82,7 +82,8 @@ tags: [linear-algebra]
 > $v\otimes w$ is *not* linear in the pair $(v,w)$: $(2v)\otimes(2w)=4(v\otimes w)$.
 
 > [!theorem] Theorem 9.74: Basis of V⊗ W
-> (a) If $e_1,\dots,e_m$ in $V$ and $f_1,\dots,f_n$ in $W$ are independent, then $\{e_j\otimes f_k\}$ is independent in $V\otimes W$. (b) If they are bases, $\{e_j\otimes f_k\}$ is a basis of $V\otimes W$.
+> - (a) If $e_1,\dots,e_m$ in $V$ and $f_1,\dots,f_n$ in $W$ are independent, then $\{e_j\otimes f_k\}$ is independent in $V\otimes W$;
+> - (b) If they are bases, $\{e_j\otimes f_k\}$ is a basis of $V\otimes W$.
 
 ^ladr-9-74
 
@@ -117,7 +118,8 @@ tags: [linear-algebra]
 ^ladr-9-78
 
 > [!theorem] Theorem 9.79: Converting bilinear maps to linear maps
-> (a) For every bilinear $\Gamma:V\times W\to U$ there is a unique linear $\hat\Gamma:V\otimes W\to U$ with $\hat\Gamma(v\otimes w)=\Gamma(v,w)$. (b) Conversely, every linear $T:V\otimes W\to U$ gives a unique bilinear $T^\#(v,w)=T(v\otimes w)$.
+> - (a) For every bilinear $\Gamma:V\times W\to U$ there is a unique linear $\hat\Gamma:V\otimes W\to U$ with $\hat\Gamma(v\otimes w)=\Gamma(v,w)$;
+> - (b) Conversely, every linear $T:V\otimes W\to U$ gives a unique bilinear $T^\#(v,w)=T(v\otimes w)$.
 
 ^ladr-9-79
 
@@ -246,7 +248,8 @@ tags: [linear-algebra]
 ^ladr-9-91
 
 > [!theorem] Theorem 9.92: Converting m-linear maps to linear maps
-> (a) Every $m$-linear $\Gamma:V_1\times\dots\times V_m\to U$ induces a unique linear $\hat\Gamma:V_1\otimes\dots\otimes V_m\to U$ with $\hat\Gamma(v_1\otimes\dots\otimes v_m)=\Gamma(v_1,\dots,v_m)$. (b) Conversely, every linear $T$ on the tensor product gives the $m$-linear $T^\#(v_1,\dots,v_m)=T(v_1\otimes\dots\otimes v_m)$.
+> - (a) Every $m$-linear $\Gamma:V_1\times\dots\times V_m\to U$ induces a unique linear $\hat\Gamma:V_1\otimes\dots\otimes V_m\to U$ with $\hat\Gamma(v_1\otimes\dots\otimes v_m)=\Gamma(v_1,\dots,v_m)$;
+> - (b) Conversely, every linear $T$ on the tensor product gives the $m$-linear $T^\#(v_1,\dots,v_m)=T(v_1\otimes\dots\otimes v_m)$.
 
 ^ladr-9-92
 

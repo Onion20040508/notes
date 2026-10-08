@@ -198,7 +198,13 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 ## Where the commutator version fails (third checkpoint)
 
 > [!theorem] Theorem §C5b.7.5: A Dirac Field with Commutators Is Not Causal
-> Let the Dirac field have the mode expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] and a vacuum such that (i) $\langle0|\hat\psi(x)\hat{\bar\psi}(y)|0\rangle$ propagates only positive-energy fermions ($\hat a$ annihilates the vacuum) and $\langle0|\hat{\bar\psi}(y)\hat\psi(x)|0\rangle$ only positive-energy antifermions ($\hat b$ annihilates it); (ii) the vacuum is invariant under translations and rotations; (iii) norms are positive; (iv) the two-point functions are Lorentz invariant. Then
+> Let the Dirac field have the mode expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]] and a vacuum such that:
+> - (i) $\langle0|\hat\psi(x)\hat{\bar\psi}(y)|0\rangle$ propagates only positive-energy fermions ($\hat a$ annihilates the vacuum) and $\langle0|\hat{\bar\psi}(y)\hat\psi(x)|0\rangle$ only positive-energy antifermions ($\hat b$ annihilates it);
+> - (ii) the vacuum is invariant under translations and rotations;
+> - (iii) norms are positive;
+> - (iv) the two-point functions are Lorentz invariant.
+>
+> Then
 >
 > $$
 > \langle0|\hat\psi(x)\hat{\bar\psi}(y)|0\rangle = A\,S^+_W(\xi), \qquad \langle0|\hat{\bar\psi}(y)\hat\psi(x)|0\rangle = B\,S^-_W(\xi), \qquad A, B > 0 \text{ constants} ,

@@ -287,7 +287,10 @@ Step 2 of [[P3 Noether's Procedure#^p3-2|P3]] asks for the first-order change of
 > \delta\mathcal L = \alpha^a\,\partial_\mu\mathcal J^\mu_a ,
 > $$
 >
-> for some local four-vectors $\mathcal J^\mu_a$, one per parameter; the equation **defines** $\mathcal J^\mu_a$. The test has three outcomes: (i) $\delta\mathcal L = 0$ identically, and one takes $\mathcal J = 0$; (ii) $\delta\mathcal L$ is a nonzero divergence, and $\mathcal J$ is read off; (iii) $\delta\mathcal L$ is not a divergence: no symmetry and no conserved current; what the would-be current then satisfies is [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]].
+> for some local four-vectors $\mathcal J^\mu_a$, one per parameter; the equation **defines** $\mathcal J^\mu_a$. The test has three outcomes:
+> - (i) $\delta\mathcal L = 0$ identically, and one takes $\mathcal J = 0$;
+> - (ii) $\delta\mathcal L$ is a nonzero divergence, and $\mathcal J$ is read off;
+> - (iii) $\delta\mathcal L$ is not a divergence: no symmetry and no conserved current; what the would-be current then satisfies is [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]].
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Symmetry, and the definition of 𝒥", eq. (Jcal) · PS §2.2, eq. (2.10) · Lecture 3, Part C ("The total derivative defines $J^\mu$")*
 

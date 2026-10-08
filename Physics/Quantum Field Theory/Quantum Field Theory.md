@@ -22,7 +22,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C5b The Quantum Spinor Field]]
 - [[· C9 Discrete Symmetries and Majorana Fields]] (★ §C9.2)
 - [[· CA Mathematical Methods]]
-- [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.18)
+- [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.19)
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -46,7 +46,7 @@ graph TD
   C1a -->|20| C2b
   C1b -->|3| C2b
   C2a -->|87| C2b
-  C1a -->|74| C3
+  C1a -->|53| C3
   C1b -->|20| C3
   C2a -->|34| C3
   C2b -->|14| C3
@@ -58,11 +58,11 @@ graph TD
   C1a -->|62| C5a
   C1b -->|93| C5a
   C2a -->|1| C5a
-  C3 -->|99| C5a
+  C3 -->|31| C5a
   C1b -->|26| C5b
   C2a -->|89| C5b
   C2b -->|117| C5b
-  C3 -->|8| C5b
+  C3 -->|7| C5b
   C4 -->|1| C5b
   C5a -->|165| C5b
   C1a -->|11| C9
@@ -75,20 +75,21 @@ graph TD
   C1b -->|3| CA
   C2a -->|7| CA
   C2b -->|43| CA
-  C1a -->|36| CB
+  C1a -->|59| CB
   C1b -->|1| CB
   C2a -->|1| CB
-  C3 -->|133| CB
-  C5a -->|79| CB
+  C3 -->|54| CB
+  C5a -->|90| CB
+  C5b -->|1| CB
   CA -->|2| CB
   C1b -.->|22| C1a
   C2a -.->|4| C1a
   C2b -.->|19| C1a
-  C3 -.->|11| C1a
+  C3 -.->|7| C1a
   C5a -.->|10| C1a
   C9 -.->|2| C1a
   CA -.->|45| C1a
-  CB -.->|1| C1a
+  CB -.->|5| C1a
   C2a -.->|22| C1b
   C2b -.->|4| C1b
   C3 -.->|6| C1b
@@ -102,18 +103,20 @@ graph TD
   CA -.->|197| C2a
   CA -.->|429| C2b
   C4 -.->|5| C3
-  C5a -.->|21| C3
-  C5b -.->|2| C3
+  C5a -.->|10| C3
+  C5b -.->|1| C3
   C9 -.->|4| C3
   CA -.->|11| C3
-  CB -.->|2| C3
+  CB -.->|67| C3
   C5a -.->|1| C4
   C5b -.->|9| C4
   CA -.->|150| C4
   C5b -.->|35| C5a
   C9 -.->|1| C5a
   CA -.->|7| C5a
+  CB -.->|68| C5a
   CA -.->|121| C5b
+  CB -.->|1| C5b
   CA -.->|26| C9
 ```
 
@@ -123,4 +126,4 @@ Chapters without notes yet (Yu's numbering).
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
 C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (started: parity, §C9.1–§C9.4; charge conjugation, time reversal, CPT and Majorana fields pending) · C10 The S-matrix and correlation functions · C11 Path-integral quantization
 
-**Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.19 for "option 1", physics refers to mathematics): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.2, Bargmann's theorem in §CB.17, Mackey and Wigner–Mackey in §CB.18★); the mathematical statements of C1a, C3, C5a and C9 move into CB in batches B1–B3, and §CB.0 (linear algebra in components) is filled then; §CB.19 Grassmann algebras is completed with C11.
+**Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.20 for "option 1", physics refers to mathematics): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.2, Bargmann's theorem in §CB.18, Mackey and Wigner–Mackey in §CB.19★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C1a, C5a and C9 move in batches B2–B3, and §CB.0 (linear algebra in components) is filled then; §CB.20 Grassmann algebras is completed with C11.

@@ -118,7 +118,7 @@ tags: [topology, math590]
 *Uses:* [[Sⁿ is Simply Connected for n ≥ 2|§37.3]], [[Properties of the Lifting Correspondence|§32.4]], [[Universal Property of Quotient Maps|§13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|§18.7]], [[§29 The Fundamental Group#^cor-29-6|§29.6]], [[Fundamental Group of the Circle|§32.5]]
 
 > [!remark]- Connections
-> - Used in Quantum Field Theory: for $n = 3$, $SO(3) \cong P^3$ has $\pi_1 \cong \mathbb{Z}/2\mathbb{Z}$: the loop of rotations from $0$ to $2\pi$ about an axis is not contractible and the $4\pi$ loop is, which is why a spin-½ state may change sign under a $2\pi$ rotation — [[§CB.8 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-8-7|QFT Theorem §CB.8.7]], [[§CB.17 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-17-7|QFT Theorem §CB.17.7]].
+> - Used in Quantum Field Theory: for $n = 3$, $SO(3) \cong P^3$ has $\pi_1 \cong \mathbb{Z}/2\mathbb{Z}$: the loop of rotations from $0$ to $2\pi$ about an axis is not contractible and the $4\pi$ loop is, which is why a spin-½ state may change sign under a $2\pi$ rotation — [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-7|QFT Theorem §CB.9.7]], [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-7|QFT Theorem §CB.18.7]].
 
 ## The Wedge Sum
 

@@ -31,7 +31,9 @@ tags: [calculus]
 >
 > (the ratio of the distance from $F$ to the distance from $l$ is the constant $e$) is a conic section. The conic is
 >
-> (a) an ellipse if $e < 1$; (b) a parabola if $e = 1$; (c) a hyperbola if $e > 1$.
+> - (a) an ellipse if $e < 1$;
+> - (b) a parabola if $e = 1$;
+> - (c) a hyperbola if $e > 1$.
 >
 > For the ellipse and the hyperbola, $F$ is one of the two foci of [[§77 Conic Sections#^def-77-2|Definition §77.2]] or [[§77 Conic Sections#^def-77-3|Definition §77.3]], and $e = c/a$, where $c$ is the distance from the center to a focus and $a$ the distance from the center to a vertex.
 >

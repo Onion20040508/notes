@@ -173,7 +173,8 @@ tags: [linear-algebra]
 *Uses:* [[§30 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-1|8.1]], [[§30 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]]
 
 > [!theorem] Theorem 8.17: Eigenvalues of nilpotent operator
-> (a) If $T$ is nilpotent, $0$ is an eigenvalue and the only one. (b) If $\F=\C$ and $0$ is the only eigenvalue of $T$, then $T$ is nilpotent.
+> - (a) If $T$ is nilpotent, $0$ is an eigenvalue and the only one;
+> - (b) If $\F=\C$ and $0$ is the only eigenvalue of $T$, then $T$ is nilpotent.
 
 ^ladr-8-17
 

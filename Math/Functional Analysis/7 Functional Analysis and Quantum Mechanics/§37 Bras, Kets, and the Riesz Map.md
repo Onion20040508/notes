@@ -62,13 +62,10 @@ tags: [functional-analysis, math556, companion]
 ## The Riesz Map
 
 > [!theorem] Theorem §37.2: The Riesz Map
-> Let $H$ be a Hilbert space and define $R : H \to H^{\ast}$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then $R$ is a bijection, it is *conjugate-linear*,
->
-> $$
-> R(ca + b) = \bar{c}\, R(a) + R(b) \qquad (a, b \in H,\ c \in \mathbb{F}),
-> $$
->
-> and it is isometric: $\|R(a)\| = \|a\|$.
+> Let $H$ be a Hilbert space and define $R : H \to H^{\ast}$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then:
+> 1. $R$ is a bijection;
+> 2. $R$ is *conjugate-linear*: $R(ca + b) = \bar{c}\, R(a) + R(b)$ for $a, b \in H$, $c \in \mathbb{F}$;
+> 3. $R$ is isometric: $\|R(a)\| = \|a\|$.
 
 ^thm-37-2
 

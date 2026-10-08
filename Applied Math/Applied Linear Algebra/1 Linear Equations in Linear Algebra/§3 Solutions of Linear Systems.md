@@ -103,7 +103,9 @@ A nonreduced echelon form is a poor tool for solving a system, but it is just ri
 > [\,0\ \ \cdots\ \ 0\ \ b\,] \qquad \text{with } b \text{ nonzero.}
 > $$
 >
-> If a linear system is consistent, then the solution set contains either (i) a unique solution, when there are no free variables, or (ii) infinitely many solutions, when there is at least one free variable.
+> If a linear system is consistent, then the solution set contains either:
+> - (i) a unique solution, when there are no free variables;
+> - (ii) infinitely many solutions, when there is at least one free variable.
 >
 > *Lay: Theorem 2 (1.2)*
 

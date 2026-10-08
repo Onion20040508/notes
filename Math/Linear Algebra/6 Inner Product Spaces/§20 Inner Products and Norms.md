@@ -112,7 +112,9 @@ tags: [linear-algebra]
 > - Example (a) in ℝ² and ℝ³: [[§94 Vectors#^thm-94-3|Calc Thm. §94.3]]; the distance formula [[§93 Three-Dimensional Coordinate Systems#^thm-93-1|Calc Thm. §93.1]] is ‖P₂ − P₁‖.
 
 > [!theorem] Theorem 6.9: Basic properties of the norm
-> For $v\in V$: (a) $\|v\|=0$ iff $v=0$; (b) $\|\lambda v\|=|\lambda|\,\|v\|$ for all $\lambda\in\F$.
+> For $v\in V$:
+> - (a) $\|v\|=0$ iff $v=0$;
+> - (b) $\|\lambda v\|=|\lambda|\,\|v\|$ for all $\lambda\in\F$.
 
 ^ladr-6-9
 
@@ -138,7 +140,8 @@ tags: [linear-algebra]
 > - Computational version: [[§49 Inner Product, Length, and Orthogonality#^def-49-5|235 Def. §49.5]] (orthogonal vectors in $\mathbb R^n$); in an inner product space, [[§56 Inner Product Spaces#^def-56-4|235 Def. §56.4]].
 
 > [!theorem] Theorem 6.11: Orthogonality and 0
-> (a) $0$ is orthogonal to every vector. (b) $0$ is the only vector orthogonal to itself.
+> - (a) $0$ is orthogonal to every vector;
+> - (b) $0$ is the only vector orthogonal to itself.
 
 ^ladr-6-11
 

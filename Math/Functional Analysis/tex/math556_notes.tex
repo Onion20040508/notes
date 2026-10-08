@@ -1581,7 +1581,13 @@ The statement is Lax's Theorem~5, including the hypothesis that $K$ is nonempty,
 For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, since $\ell(y)$ is complex; the correct hypothesis and conclusion use the modulus, and the homogeneity of $p$ must be strengthened to complex scalars.
 
 \begin{lembox}[Consequences of Complex Homogeneity]\boxlabel{lem:p-complex}
-Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem~\ref{thm:hb-complex} below. Then $p(0) = 0$, $p(-x) = p(x)$ and $p(x) \ge 0$ for all $x \in X$; and, regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
+Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem~\ref{thm:hb-complex} below. Then:
+\begin{enumerate}[label=(\alph*)]
+    \item $p(0) = 0$;
+    \item $p(-x) = p(x)$ for all $x \in X$;
+    \item $p(x) \ge 0$ for all $x \in X$;
+    \item regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
+\end{enumerate}
 \end{lembox}
 
 \begin{proof}
@@ -6491,11 +6497,12 @@ Fix $x$. For every admissible $c$, $|\ell(x)| \le c\|x\|$; taking the infimum ov
 \subsection{The Riesz Map}
 
 \begin{thmbox}[The Riesz Map]\boxlabel{thm:riesz-map}
-Let $H$ be a Hilbert space and define $R : H \to H^*$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then $R$ is a bijection, it is \emph{conjugate-linear},
-\[
-R(ca + b) = \bar{c}\, R(a) + R(b) \qquad (a, b \in H,\ c \in \mathbb{F}),
-\]
-and it is isometric: $\|R(a)\| = \|a\|$.
+Let $H$ be a Hilbert space and define $R : H \to H^*$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then:
+\begin{enumerate}
+    \item $R$ is a bijection;
+    \item $R$ is \emph{conjugate-linear}: $R(ca + b) = \bar{c}\, R(a) + R(b)$ for $a, b \in H$, $c \in \mathbb{F}$;
+    \item $R$ is isometric: $\|R(a)\| = \|a\|$.
+\end{enumerate}
 \end{thmbox}
 
 \begin{proof}

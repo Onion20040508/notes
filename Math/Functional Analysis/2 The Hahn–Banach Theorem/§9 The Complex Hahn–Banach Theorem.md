@@ -12,7 +12,11 @@ tags: [functional-analysis, math556]
 For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, since $\ell(y)$ is complex; the correct hypothesis and conclusion use the modulus, and the homogeneity of $p$ must be strengthened to complex scalars.
 
 > [!theorem] Lemma §9.1: Consequences of Complex Homogeneity
-> Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]] below. Then $p(0) = 0$, $p(-x) = p(x)$ and $p(x) \ge 0$ for all $x \in X$; and, regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
+> Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]] below. Then:
+> - (a) $p(0) = 0$;
+> - (b) $p(-x) = p(x)$ for all $x \in X$;
+> - (c) $p(x) \ge 0$ for all $x \in X$;
+> - (d) regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
 
 ^lem-9-1
 

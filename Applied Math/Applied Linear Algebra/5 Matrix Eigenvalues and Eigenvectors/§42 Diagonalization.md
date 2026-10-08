@@ -217,7 +217,9 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 >
 > a. For $1 \le k \le p$, the dimension of the eigenspace for $\lambda_k$ is less than or equal to the multiplicity of the eigenvalue $\lambda_k$. (Geometric multiplicity $\le$ algebraic multiplicity; and the geometric multiplicity is $\ge 1$.)
 >
-> b. The matrix $A$ is diagonalizable if and only if the sum of the dimensions of the eigenspaces equals $n$, and this happens if and only if (i) the characteristic polynomial factors completely into linear factors and (ii) the dimension of the eigenspace for each $\lambda_k$ equals the multiplicity of $\lambda_k$.
+> b. The matrix $A$ is diagonalizable if and only if the sum of the dimensions of the eigenspaces equals $n$, and this happens if and only if:
+> - (i) the characteristic polynomial factors completely into linear factors;
+> - (ii) the dimension of the eigenspace for each $\lambda_k$ equals the multiplicity of $\lambda_k$.
 >
 > c. If $A$ is diagonalizable and $\mathcal{B}_k$ is a basis for the eigenspace corresponding to $\lambda_k$ for each $k$, then the total collection of vectors in the sets $\mathcal{B}_1, \ldots, \mathcal{B}_p$ forms an eigenvector basis for $\mathbb{R}^n$.
 >

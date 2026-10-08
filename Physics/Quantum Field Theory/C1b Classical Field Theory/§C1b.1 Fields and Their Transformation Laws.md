@@ -60,6 +60,10 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 
 ## The general transformation law
 
+The transformation law below asks for a representation of the Lorentz group on the component index, in this sense:
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-4]]
+
 > [!definition] Definition §C1b.1.3: Transformation Law of a General Field
 > A field with components $\phi_a$ transforms under $x' = \Lambda x + a$ as
 >
@@ -181,7 +185,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 ^ex-c1b-1-1
 
 > [!remark] Remark: Two representations at once
-> The law $\phi'_a(x) = D(\Lambda)_a{}^b\phi_b(\Lambda^{-1}x)$ combines a finite-dimensional representation $D$, acting on the components at one point (generators $S^{\mu\nu}$), with an infinite-dimensional one, acting on functions by moving the point (generators $x^\mu\partial^\nu - x^\nu\partial^\mu$). For a scalar the first is trivial, every element represented by the number $1$ (in the classification of [[§CB.15 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-15-2|Def. §CB.15.2]], the representation $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|Theorem §C3.3.4]]), but the scalar still changes through the second. Under parity a one-component field may still change sign: $D(\mathcal P) = +1$ for a scalar, $-1$ for a pseudoscalar (QFT C9, planned). A Lagrangian density must lie in the trivial representation for the action to be invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]); "contract all indices" is the rule that extracts that piece.
+> The law $\phi'_a(x) = D(\Lambda)_a{}^b\phi_b(\Lambda^{-1}x)$ combines a finite-dimensional representation $D$, acting on the components at one point (generators $S^{\mu\nu}$), with an infinite-dimensional one, acting on functions by moving the point (generators $x^\mu\partial^\nu - x^\nu\partial^\mu$). For a scalar the first is trivial, every element represented by the number $1$ (in the classification of [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-16-2|Def. §CB.16.2]], the representation $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|Theorem §C3.3.4]]), but the scalar still changes through the second. Under parity a one-component field may still change sign: $D(\mathcal P) = +1$ for a scalar, $-1$ for a pseudoscalar (QFT C9, planned). A Lagrangian density must lie in the trivial representation for the action to be invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]); "contract all indices" is the rule that extracts that piece.
 >
 > *Source: the user's PHY 513 notes, Ch. 7 (Principle "Components and functions: the scalar field carries the trivial representation")*
 

@@ -75,7 +75,10 @@ tags: [topology, math590]
 ## Subgroups
 
 > [!definition] Definition §26.2: Subgroup
-> $H \subseteq G$ is a **subgroup** ($H \leq G$) if $H$ is a group under the inherited operation. Equivalently: (1) $e \in H$, (2) $a, b \in H \Rightarrow ab \in H$, (3) $a \in H \Rightarrow a^{-1} \in H$.
+> $H \subseteq G$ is a **subgroup** ($H \leq G$) if $H$ is a group under the inherited operation. Equivalently:
+> 1. $e \in H$;
+> 2. $a, b \in H \Rightarrow ab \in H$;
+> 3. $a \in H \Rightarrow a^{-1} \in H$.
 
 ^def-26-2
 

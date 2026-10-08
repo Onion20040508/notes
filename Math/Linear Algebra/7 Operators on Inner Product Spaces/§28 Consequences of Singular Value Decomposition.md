@@ -38,7 +38,11 @@ tags: [linear-algebra]
 > - Same as the operator norm in functional analysis ([[§30 Boundedness and Continuity#^def-30-3|556 Def. §30.3]]): there the max becomes a sup.
 
 > [!theorem] Theorem 7.87: Basic properties of norms of linear maps
-> For $S,T\in\Lin(V,W)$: (a) $\|T\|\ge0$; (b) $\|T\|=0\iff T=0$; (c) $\|\lambda T\|=|\lambda|\|T\|$; (d) $\|S+T\|\le\|S\|+\|T\|$.
+> For $S,T\in\Lin(V,W)$:
+> - (a) $\|T\|\ge0$;
+> - (b) $\|T\|=0\iff T=0$;
+> - (c) $\|\lambda T\|=|\lambda|\|T\|$;
+> - (d) $\|S+T\|\le\|S\|+\|T\|$.
 
 ^ladr-7-87
 

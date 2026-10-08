@@ -116,7 +116,8 @@ tags: [linear-algebra]
 > - Computational version: [[§24 Introduction to Determinants#^thm-24-2|235 Thm. §24.2]] (determinant of a triangular matrix).
 
 > [!theorem] Theorem 9.49: Determinant is multiplicative
-> (a) $\det(ST)=(\det S)(\det T)$ for $S,T\in\Lin(V)$. (b) $\det(AB)=(\det A)(\det B)$ for square matrices of the same size.
+> - (a) $\det(ST)=(\det S)(\det T)$ for $S,T\in\Lin(V)$;
+> - (b) $\det(AB)=(\det A)(\det B)$ for square matrices of the same size.
 
 ^ladr-9-49
 
@@ -205,7 +206,9 @@ tags: [linear-algebra]
 > - Compare $\operatorname{tr}T$ = sum of eigenvalues ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-52|8.52]]); both are coefficients of the characteristic polynomial ([[§37 Determinants#^ladr-9-65|9.65]]).
 
 > [!theorem] Theorem 9.56: Determinant of transpose, dual, or adjoint
-> (a) $\det A^t=\det A$. (b) $\det T'=\det T$. (c) On an inner product space, $\det T^*=\overline{\det T}$.
+> - (a) $\det A^t=\det A$;
+> - (b) $\det T'=\det T$;
+> - (c) On an inner product space, $\det T^*=\overline{\det T}$.
 
 ^ladr-9-56
 
