@@ -1,0 +1,9 @@
+{
+  "id": "vault-map",
+  "name": "Vault Map",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "A readable map of the vault: radial bundled links by subject and chapter, chapter arc diagrams, uses / used-by.",
+  "author": "zhijun",
+  "isDesktopOnly": false
+}
