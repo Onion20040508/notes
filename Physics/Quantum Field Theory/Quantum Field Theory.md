@@ -75,11 +75,10 @@ graph TD
   C1b -->|3| CA
   C2a -->|7| CA
   C2b -->|43| CA
-  C1a -->|67| CB
+  C1a -->|20| CB
   C1b -->|1| CB
-  C2a -->|1| CB
-  C3 -->|59| CB
-  C5a -->|84| CB
+  C3 -->|47| CB
+  C5a -->|47| CB
   C5b -->|1| CB
   C9 -->|3| CB
   CA -->|2| CB

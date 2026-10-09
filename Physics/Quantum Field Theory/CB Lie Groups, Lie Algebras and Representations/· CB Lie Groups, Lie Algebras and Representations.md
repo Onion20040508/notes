@@ -8,15 +8,15 @@ tags: [chapter, quantum-field-theory]
 # CB Lie Groups, Lie Algebras and Representations
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (67), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (59), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (84), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (3), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (47), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (3), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (10)
 
 ## Sections
-- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras]] — 591 §§11, 25, 49–50; Hall Ch. 2–3; 513 notes Ch. 1 §1.3 (matrix groups, B3), Ch. 7 §7.2
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3), restatements of REL §B1.2, §B2.2 and QM §B6.1 (CB ordering pass); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras]] — 591 §§11, 25, 49–50; Hall Ch. 2–3; 513 notes Ch. 1 §1.3 (matrix groups, B3), Ch. 7 §7.2; QM §C5.1–§C5.2 (restated)
 - [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings]] — Hall Ch. 3–5; 590 §§29, 31; 513 notes Ch. 1 §1.3, Ch. 11 §11.1 (components, B3), Ch. 7 §7.2
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification]] — 513 notes Ch. 7 §7.2; Woit §5.5; Etingof
-- [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations]] — 513 notes Ch. 1 §1.6, Ch. 7 §§7.3–7.5; PHY 513 Lecture 7; Problem Sets 4–5
+- [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations]] — 513 notes Ch. 1 §1.6, Ch. 7 §§7.3–7.5; PHY 513 Lecture 7; Problem Sets 4–5; §C1a.6 (restated)
 - [[§CB.5 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra]] — 513 notes Ch. 7 §7.4; Woit §§21.2, 40.2; Etingof §9.4, Ex. 11.4
 - [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs]] — Smith Ch. 3–4; 513 notes Ch. 7 §7.2
 - [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors]] — LADR §§12, 36, 38; 513 notes Ch. 8 §8.2
@@ -27,9 +27,9 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.12 Complex Clifford Algebras and Clifford Modules]] — Woit §28.1; PS §3.2
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)]] — PHY 513 TA (oral); written here
 - [[§CB.14 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half]] — 591 §§40–41; Woit §6.2
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover]] — 513 notes Ch. 8 §8.2; Woit Ch. 40; Etingof Ex. 11.4
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover]] — 513 notes Ch. 8 §8.2; Woit Ch. 40; Etingof Ex. 11.4; §C5a.4 (Weyl matrices, restated)
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)]] — 513 notes Ch. 7 §7.4; Woit Ch. 40
-- [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵]] — PS §§3.2–3.4; Woit §41.2
+- [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵]] — PS §§3.2–3.4; Woit §41.2; PHY 513 TA (oral; the TA's theorem, moved here from §CB.13)
 - [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries]] — QM §C8.1★, §C8.3★; Yu §3.3.1
 - [[§CB.19★ The Poincaré Group and Induced Representations]] — Woit Ch. 18, 20, 42; 513 notes Ch. 7 §7.7
 - [[§CB.20 Grassmann Algebras]] — Woit Ch. 30 (deferred to C11)
@@ -38,8 +38,14 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-3|§CB.0.3]] Linear Maps Act by Matrix Multiplication
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|§CB.0.5]] Components Change with U, Matrices with U and U⁻¹
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-10|§CB.0.10]] The Slot Rule
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12|§CB.0.12]] The Metric Identifies Vectors with Covectors
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-13|§CB.0.13]] Matrices Preserving the Metric
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14|§CB.0.14]] The Transformation Law Follows from Multilinearity
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|§CB.0.15]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-17|§CB.0.17]] Contraction Identities of the Levi-Civita Symbol
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-18|§CB.0.18]] The Levi-Civita Symbol and the Determinant
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|§CB.0.21]] Algebra of the Pauli Matrices
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-22|§CB.0.22]] Identities of σ^μ and σ̄^μ
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|§CB.1.5]] Convergence and Algebraic Properties of the Exponential
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-6|§CB.1.6]] Determinant of an Exponential
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-7|§CB.1.7]] The Logarithm Near the Identity
@@ -50,6 +56,9 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|§CB.1.15]] Closed-Subgroup Theorem
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|§CB.1.16]] The Lie Algebra Is the Tangent Space at the Identity
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|§CB.1.17]] The Lie Algebras of the Classical Groups
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-18|§CB.1.18]] Rotations about an Axis Are Exponentials
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-19|§CB.1.19]] The Structure of SU(2)
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-20|§CB.1.20]] SU(2) Is a Double Cover of SO(3)
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-21|§CB.1.21]] SO(3) and SU(2) Have the Same Lie Algebra
 - [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-3|§CB.2.3]] The Differential of a Homomorphism
 - [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-8|§CB.2.8]] A Group Representation Gives an Algebra Representation
@@ -68,6 +77,8 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-9|§CB.3.9]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-14|§CB.3.14]] Real Forms Are the Fixed Sets of Conjugations
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-17|§CB.3.17]] The Complexification of an Irreducible Real Representation
+- [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-3|§CB.4.3]] The Generators Reproduce ω
+- [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-5|§CB.4.5]] Rotations and Boosts as Exponentials
 - [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-6|§CB.4.6]] The Lorentz Algebra
 - [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-8|§CB.4.8]] The Generators Transform as a Tensor
 - [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-9|§CB.4.9]] One-Dimensional Representations of the Lorentz Algebra Are Zero
@@ -102,23 +113,29 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-14|§CB.7.14]] The Metric and the Levi-Civita Symbol Are Invariant Tensors
 - [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-15|§CB.7.15]] ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ)
 - [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-16|§CB.7.16]] The Four Two-Dimensional Representations of SL(2,ℂ)
+- [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-17|§CB.7.17]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix
+- [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-18|§CB.7.18]] Duality Squares to −1 on Antisymmetric Tensors
 - [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-2|§CB.8.2]] How a Hermitian Form Changes with the Basis
 - [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-4|§CB.8.4]] Sylvester's Law of Inertia for Hermitian Forms
 - [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-6|§CB.8.6]] Properties of the h-Adjoint
 - [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-8|§CB.8.8]] U(p, q) Is a Matrix Lie Group
 - [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-10|§CB.8.10]] Forms with the Same Adjoint on an Irreducible Set Are Proportional
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-3|§CB.9.3]] The Irreducible Representations of the Rotation Algebra (Highest Weight)
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-4|§CB.9.4]] The 𝔰𝔲(2) Casimir on Spin j
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-5|§CB.9.5]] Finite-Dimensional Representations of 𝔰𝔩(2,ℂ)
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-6|§CB.9.6]] Weight Multiplicities Determine a Representation
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-8|§CB.9.8]] SU(2) Is Simply Connected, SO(3) Is Doubly Connected
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|§CB.9.9]] SL(2, C) Is Connected and Simply Connected
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-10|§CB.9.10]] Integer and Half-Integer Spin: Integration to SU(2) and SO(3)
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^lem-cb-9-11|§CB.9.11]] Polynomials in Two Variables Carry a Representation of GL(2, ℂ)
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-12|§CB.9.12]] Spin j Is the Symmetric Power Sym²ʲℂ²
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^lem-cb-9-13|§CB.9.13]] The Weight Count of a Tensor Product
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-14|§CB.9.14]] Clebsch–Gordan Series
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-15|§CB.9.15]] Descent Lemma
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-16|§CB.9.16]] Integer Spin Is Built from Vectors
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-5|§CB.10.5]] The Quotient Is an Algebra
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|§CB.10.7]] Universal Property of the Clifford Algebra
-- [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|§CB.10.8]] The Anticommutator and the Embedding of V
+- [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|§CB.10.8]] The Anticommutator
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|§CB.10.10]] A Clifford Module Is a Set of Anticommuting Square Roots
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|§CB.10.12]] First Consequences of the Clifford Algebra
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15|§CB.10.15]] The Matrices of the Dirac Maps in Any Basis
@@ -127,6 +144,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-3|§CB.11.3]] The ℤ₂-Grading
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-4|§CB.11.4]] The Reversal
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|§CB.11.6]] Basis and Dimension
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-7|§CB.11.7]] V Embeds in Its Clifford Algebra
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|§CB.11.9]] The Sixteen Products Are a Basis
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|§CB.11.10]] The Eigenvalues of Γ⁰ and Γⁱ
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-11|§CB.11.11]] The Clifford Algebra Is the Exterior Algebra as a Vector Space
@@ -151,19 +169,19 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-20|§CB.12.20]] An Irreducible Clifford Module under the Even Subalgebra
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-2|§CB.13.2]] Non-Null Vectors Are Invertible
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-4|§CB.13.4]] A Vector Acts as the Reflection in Its Orthogonal Hyperplane
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-5|§CB.13.5]] Cartan–Dieudonné
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^lem-cb-13-9|§CB.13.9]] The Norm of a Product of Unit Vectors
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-10|§CB.13.10]] Pin and Spin Are Matrix Lie Groups Acting on V
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-11|§CB.13.11]] The Spinor Norm on Pin
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-5|§CB.13.5]] Cartan–Dieudonné
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-12|§CB.13.12]] Spin(V) → SO(V) Is Onto with Kernel ±1
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-15|§CB.13.15]] The Identity Component Is a Double Cover
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-14|§CB.13.14]] 𝔰𝔭𝔦𝔫(V) Is the Lie Algebra of Spin(V), Isomorphic to 𝔰𝔬(V)
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-15|§CB.13.15]] The Identity Component Is a Double Cover
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-17|§CB.13.17]] The Dirac Matrices Rotate as a Vector
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-18|§CB.13.18]] The Spinor Generators Obey the Lorentz Algebra
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-20|§CB.13.20]] The Even Subalgebra Is Generated by 𝔰𝔭𝔦𝔫(V)
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-21|§CB.13.21]] Spin Preserves a Form for Which the Clifford Generators Are Self-Adjoint
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-22|§CB.13.22]] Adjoints of the Generators
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-25|§CB.13.25]] Every Representation Splits into a Tensorial and a Spinorial Part
-- [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-17|§CB.17.17]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-27|§CB.13.27]] Clifford Multiplication Is Spin-Equivariant
 - [[§CB.14 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-14-1|§CB.14.1]] The Pauli Matrices Realize Cl(3, 0)
 - [[§CB.14 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-14-2|§CB.14.2]] The Even Part Is the Quaternions
@@ -174,16 +192,20 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-1|§CB.15.1]] The Complexification of Real 𝔰𝔩(2,ℂ) Is Two Copies of 𝔰𝔩(2,ℂ)
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-2|§CB.15.2]] Representations of Real 𝔰𝔩(2,ℂ): a Complex-Linear and an Antilinear Part
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|§CB.15.3]] Four-Vectors as Hermitian Matrices
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|§CB.9.9]] SL(2, C) Is Connected and Simply Connected
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-4|§CB.15.4]] Every Element of SL(2, C) Gives a Lorentz Transformation
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-5|§CB.15.5]] The Kernel Is ±1
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-7|§CB.15.7]] The Weyl Matrices Lie in SL(2, C)
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-8|§CB.15.8]] The Weyl Matrices Cover the Vector Representation
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9|§CB.15.9]] SL(2, C) Is the Double Cover of SO⁺(1,3)
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-10|§CB.15.10]] The Differential of π Is the Isomorphism of Theorem §CB.5.8
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-11|§CB.15.11]] Cl⁰(1,3) ≅ Cl(3,0) ≅ M₂(ℂ)
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-12|§CB.15.12]] Spin(1,3)₀ Is SL(2,ℂ), and ρ Is the Course's Covering Map up to λ ↦ (λ†)⁻¹
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-13|§CB.15.13]] The Three Lie Algebras Agree
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-1|§CB.16.1]] Representations of SL(2,ℂ) Are Pairs of 𝔰𝔩(2,ℂ)-Representations
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-3|§CB.16.3]] The Lorentz Casimir on (j₊, j₋)
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-4|§CB.16.4]] (j₊, j₋) Is Irreducible
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-5|§CB.16.5]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋)
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-6|§CB.16.6]] The Vector Representation Is (½, ½)
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-7|§CB.16.7]] The Irreducible Representations of SL(2,ℂ)
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-8|§CB.16.8]] Rotation Content and the Sign of a 2π Rotation
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9|§CB.16.9]] Integer (j₊, j₋) Are Representations of SO⁺(1,3)
@@ -208,13 +230,15 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-14|§CB.17.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears
 - [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-15|§CB.17.15]] Every Tensorial (j₊, j₋) Lies in a Tensor Power of the Vector
 - [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-16|§CB.17.16]] The TA's Theorem for the Lorentz Group
-- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-3|§CB.18.3]] Wigner's Theorem
-- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-4|§CB.18.4]] Connected Groups of Symmetries Act by Unitaries
-- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-6|§CB.18.6]] Finite-Dimensional Projective Representations Lift to the Universal Cover
-- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-7|§CB.18.7]] Projective Representations of SO(3) Are Representations of SU(2)
-- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-8|§CB.18.8]] Bargmann's Theorem
-- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-10|§CB.18.10]] The Square of an Antiunitary Involution Is ±1
-- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-11|§CB.18.11]] An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
+- [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-17|§CB.17.17]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-6|§CB.18.6]] Structure of Antiunitary Operators
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-7|§CB.18.7]] Wigner's Theorem
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-8|§CB.18.8]] Connected Groups of Symmetries Act by Unitaries
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-10|§CB.18.10]] Finite-Dimensional Projective Representations Lift to the Universal Cover
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-11|§CB.18.11]] Projective Representations of SO(3) Are Representations of SU(2)
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-12|§CB.18.12]] Bargmann's Theorem
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-14|§CB.18.14]] The Square of an Antiunitary Involution Is ±1
+- [[§CB.18 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-18-15|§CB.18.15]] An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
 - [[§CB.19★ The Poincaré Group and Induced Representations#^thm-cb-19-2|§CB.19.2]] The Semidirect Product Is a Group with N Normal
 - [[§CB.19★ The Poincaré Group and Induced Representations#^thm-cb-19-5|§CB.19.5]] The Poincaré Group as a Matrix Lie Group, and Its Lie Algebra
 - [[§CB.19★ The Poincaré Group and Induced Representations#^thm-cb-19-8|§CB.19.8]] The Little Groups in SL(2,ℂ)

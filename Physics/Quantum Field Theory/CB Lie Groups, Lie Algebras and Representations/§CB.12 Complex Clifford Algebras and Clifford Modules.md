@@ -318,7 +318,7 @@ Pauli's theorem in the course's form, for $4\times4$ matrices, with the averagin
 >
 > **6. Uniqueness.** If also $\gamma'^\mu = V\gamma^\mu V^{-1}$, then $V^{-1}U$ commutes with every $\gamma^\mu$, so $V^{-1}U = c\mathbb 1$ (Theorem §CB.11.9, 4), $c \ne 0$.
 >
-> **7. Unitary choice.** If both sets obey $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, all $\gamma^\mu$, $\gamma'^\mu$ are unitary (Theorem §C5a.2.1, whose step 3 used only this relation and the algebra), hence so are all products $\Gamma_A$, $\Gamma'_A$. Take the adjoint of $\Gamma'_AU = U\Gamma_A$: $U^\dagger\Gamma'^{-1}_A = \Gamma_A^{-1}U^\dagger$, i.e. $\Gamma_AU^\dagger = U^\dagger\Gamma'_A$. Then $U^\dagger U\Gamma_A = U^\dagger\Gamma'_AU = \Gamma_AU^\dagger U$: $U^\dagger U$ commutes with every $\Gamma_A$, so $U^\dagger U = c\mathbb 1$; it is positive definite ($v^\dagger U^\dagger Uv = |Uv|^2 > 0$), so $c > 0$, and $U/\sqrt c$ is unitary and still intertwines.
+> **7. Unitary choice.** If both sets obey $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, all $\gamma^\mu$, $\gamma'^\mu$ are unitary ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-10-13|Example §CB.10.13]], whose step 3 used only this relation and the algebra), hence so are all products $\Gamma_A$, $\Gamma'_A$. Take the adjoint of $\Gamma'_AU = U\Gamma_A$: $U^\dagger\Gamma'^{-1}_A = \Gamma_A^{-1}U^\dagger$, i.e. $\Gamma_AU^\dagger = U^\dagger\Gamma'_A$. Then $U^\dagger U\Gamma_A = U^\dagger\Gamma'_AU = \Gamma_AU^\dagger U$: $U^\dagger U$ commutes with every $\Gamma_A$, so $U^\dagger U = c\mathbb 1$; it is positive definite ($v^\dagger U^\dagger Uv = |Uv|^2 > 0$), so $c > 0$, and $U/\sqrt c$ is unitary and still intertwines.
 >
 > **What the derivation shows**
 > - "There are many realizations of $\gamma^\mu$" (Lecture 7) means one realization in many bases, exactly as spin $\frac12$ has one set of Pauli matrices up to a change of basis. Every basis-independent statement may be proved in the chiral basis and holds everywhere.
@@ -328,7 +328,7 @@ Pauli's theorem in the course's form, for $4\times4$ matrices, with the averagin
 
 ^der-cb-12-12
 
-*Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-4|Theorem §CB.6.4]]
+*Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-4|Theorem §CB.6.4]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-10-13|Example §CB.10.13]]
 
 Read without a basis: changes of basis are the invertible intertwiners, and spinor space is unique up to isomorphism.
 
