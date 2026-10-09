@@ -11,9 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: E. Meinrenken, Clifford Algebras and Lie Groups, lecture notes, University of Toronto, Fall 2009, Ch. 1–2 (https://www.math.toronto.edu/mein/teaching/LieClifford/cl12.pdf; convention $vw + wv = 2B(v, w)$, as here) · J. Figueroa-O'Farrill, Spin Geometry, lecture notes, Edinburgh 2010, version of 18 May 2017, Lectures 1–3 (https://empg.maths.ed.ac.uk/Activities/Spin/SpinNotes.pdf, read via the Internet Archive copy of 27 Sep 2024; convention $x^2 = -Q(x)$) · P. Woit, Quantum Theory, Groups and Representations, Ch. 28–29 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf; convention $[\gamma_j, \gamma_k]_+ = 2\delta_{jk}$, as here) · Linear Algebra (LADR) §§11, 35–38 · the user's PHY 513 notes, Ch. 8 · Peskin & Schroeder, §3.2, §3.4 · the rest written here.*
 
-What is the algebra that the Dirac matrices generate, defined without matrices? The spinor chapter meets it as the relation $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]) and as a ★ remark ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-2|§C5a.0, ★ Remark: The Clifford algebra is the algebra of square roots of p²]]). This section defines the Clifford algebra $\mathrm{Cl}(V, q)$ of a quadratic space as a quotient of the tensor algebra, states its universal property, and introduces Clifford modules; its structure — the $\mathbb Z_2$-grading, the reversal, the basis $e_I$ and $\dim = 2^n$, the identification with $\Lambda V$ as a vector space, the volume element (the abstract $\gamma^5$), the even subalgebra, and the low-dimensional examples — is derived in [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.11]]. Representations of algebras are [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-10|Def. §CB.6.10]]; exterior powers are [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-7-12|Def. §CB.7.12]]. The complex theory is [[§CB.12 Complex Clifford Algebras and Clifford Modules|§CB.12]]; the spin group, [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.13]].
-
-<!-- MOVE row (CB-INVENTORY): ★ Remark rem-c5a-0-2 (definition and universal property) is embedded below; its definition and universal property are to be moved here when this section is written (batch 5; SPEC-CB groups the §C5a.0/§C5a.1 moves with batch 6 — settle then); the "what the relation induces" table stays in §C5a.0. -->
+What is the algebra that the Dirac matrices generate, defined without matrices? The spinor chapter meets it as the relation $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]) and as the algebra of square roots of $p^2$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^rem-cb-10-1|§CB.10, ★ Remark: The Clifford algebra is the algebra of square roots of p²]]). This section defines the Clifford algebra $\mathrm{Cl}(V, q)$ of a quadratic space as a quotient of the tensor algebra, states its universal property, and introduces Clifford modules, with the course's Dirac matrices and Dirac maps as the first example and the first consequences of the Clifford relation; its structure — the $\mathbb Z_2$-grading, the reversal, the basis $e_I$ and $\dim = 2^n$, the identification with $\Lambda V$ as a vector space, the volume element (the abstract $\gamma^5$), the even subalgebra, and the low-dimensional examples — is derived in [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.11]]. Representations of algebras are [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-10|Def. §CB.6.10]]; exterior powers are [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-7-12|Def. §CB.7.12]]. The complex theory is [[§CB.12 Complex Clifford Algebras and Clifford Modules|§CB.12]]; the spin group, [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.13]].
 
 ## Quadratic spaces, the tensor algebra and quotients
 
@@ -77,7 +75,7 @@ Quadratic forms and their bilinear forms, defined in LADR:
 ^def-cb-10-6
 
 > [!caution] Caution: Two sign conventions for the Clifford relation
-> These notes use the physics convention $vv = +q(v)$, which with $q = g$ gives $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]; Woit, §29.2, eq. (29.2), and Meinrenken, Def. 2.1, use the same sign). Much of the mathematical literature (e.g. Figueroa-O'Farrill, Spin Geometry, eq. (2); Lawson–Michelsohn) writes $vv = -q(v)$; its $\mathrm{Cl}(V, q)$ is this section's $\mathrm{Cl}(V, -q)$, and labels such as $\mathrm{Cl}_{r,s}$ or $\mathrm{Cl}(r, s)$ then refer to different algebras. Over $\mathbb C$ the two conventions give isomorphic algebras ($v \mapsto iv$). Here $\mathrm{Cl}(r, s)$ always has $r$ generators squaring to $+1$ and $s$ to $-1$: in $\mathrm{Cl}(1,3)$, $(\gamma^0)^2 = +1$, $(\gamma^i)^2 = -1$.
+> These notes use the physics convention $vv = +q(v)$, which with $q = g$ gives $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]; Woit, §29.2, eq. (29.2), and Meinrenken, Def. 2.1, use the same sign). Much of the mathematical literature (e.g. Figueroa-O'Farrill, Spin Geometry, eq. (2); Lawson–Michelsohn) writes $vv = -q(v)$; its $\mathrm{Cl}(V, q)$ is this section's $\mathrm{Cl}(V, -q)$, and labels such as $\mathrm{Cl}_{r,s}$ or $\mathrm{Cl}(r, s)$ then refer to different algebras. Over $\mathbb C$ the two conventions give isomorphic algebras ($v \mapsto iv$). Here $\mathrm{Cl}(r, s)$ always has $r$ generators squaring to $+1$ and $s$ to $-1$: in $\mathrm{Cl}(1,3)$, $(\gamma^0)^2 = +1$, $(\gamma^i)^2 = -1$.
 >
 > *Source: SPEC-CB decision 6 · Woit, §29.2 (which notes the other convention) · Meinrenken, Clifford Algebras and Lie Groups, Def. 2.1 · Figueroa-O'Farrill, Spin Geometry, eq. (2) and §1.3.2 (his $C\ell(s,t)$, $s$ generators squaring to $-1$, is this section's $\mathrm{Cl}(t,s)$)*
 
@@ -86,7 +84,7 @@ Quadratic forms and their bilinear forms, defined in LADR:
 > [!theorem] Theorem §CB.10.7: Universal Property of the Clifford Algebra
 > Let $A$ be an associative algebra over $\mathbb K$ ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-8|Def. §CB.6.8]]) and $f : V \to A$ a linear map with $f(v)^2 = q(v)1_A$ for all $v \in V$. Then there is a unique algebra homomorphism $\tilde f : \mathrm{Cl}(V, q) \to A$ ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-9|Def. §CB.6.9]]) with $\tilde f(v) = f(v)$ for $v \in V$.
 >
-> *Source: Meinrenken, Clifford Algebras and Lie Groups, Prop. 2.3 · Figueroa-O'Farrill, Spin Geometry, Def. 1.1, §1.2.2 · the Minkowski case stated in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-2|§C5a.0, ★ Remark]]*
+> *Source: Meinrenken, Clifford Algebras and Lie Groups, Prop. 2.3 · Figueroa-O'Farrill, Spin Geometry, Def. 1.1, §1.2.2 · the Minkowski case stated in [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^rem-cb-10-1|§CB.10, ★ Remark: The Clifford algebra is the algebra of square roots of p²]]*
 
 ^thm-cb-10-7
 
@@ -124,7 +122,7 @@ Quadratic forms and their bilinear forms, defined in LADR:
 > **What the proof shows.**
 > - ⚑ By-product: Steps 1–2 are the universal property of the tensor algebra itself (every linear map $V \to A$ extends uniquely to an algebra homomorphism $T(V) \to A$, Figueroa-O'Farrill eq. (12)); the Clifford algebra adds exactly one relation, and Step 3 is the only place the hypothesis $f(v)^2 = q(v)$ enters.
 > - The proof does not show that $V \to \mathrm{Cl}(V, q)$ is injective or that $\mathrm{Cl}(V, q) \ne 0$; that needs a module, Theorem §CB.11.6.
-> - Used next: Clifford modules (Theorem §CB.10.10), the grade automorphism and the reversal (Theorems §CB.11.1, §CB.11.4), the even subalgebra (Theorem §CB.11.10), complexification (Theorem §CB.12.3).
+> - Used next: Clifford modules (Theorem §CB.10.10), the grade automorphism and the reversal (Theorems §CB.11.1, §CB.11.4), the even subalgebra (Theorem §CB.11.16), complexification (Theorem §CB.12.3).
 
 ^pf-cb-10-7
 
@@ -197,20 +195,151 @@ Quadratic forms and their bilinear forms, defined in LADR:
 >
 > **What the proof shows.**
 > - A set of Dirac matrices is nothing more and nothing less than a module of one fixed algebra: every algebraic consequence of $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ (traces, the sixteen products, $\gamma^5$) holds in every module because it already holds in $\mathrm{Cl}(V, q)$.
-> - Used in: Pauli's theorem in general form (Theorem §CB.12.8) and the Dirac maps of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-9|Def. §C5a.1.9]].
+> - Used in: Pauli's theorem in general form (Theorem §CB.12.10) and the Dirac maps of [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]].
 
 ^pf-cb-10-10
 
 *Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-9|Def. §CB.10.9]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-8|Def. §CB.6.8]]
 
-The Dirac matrices and the Dirac maps, a Clifford module of $\mathrm{Cl}(1,3)$ on spinor space, defined in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]; the Clifford algebra in physics language, in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]]:
+## The Dirac matrices: the course's Clifford module
 
-![[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7]]
+The course's Clifford module (PHY 513 Lecture 7, Part B): four matrices, or four linear maps on spinor space, with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$, the relation of Theorem §CB.10.10, 2 for $V = \mathbb R^{1,3}$ (which of $e_\mu \mapsto \gamma_\mu$, $e_\mu \mapsto \gamma^\mu$ is used matters only for signs: [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-17-1|§CB.17, Caution: Two Dirac modules, and the sign of γ⁵]]). The statements were first written in the physics chapter ([[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]) and keep its notation: $V$ is spinor space, a four-dimensional complex vector space, and the matrices are $n\times n$ until §CB.12 shows $n = 4$.
 
-![[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-9]]
+> [!definition] Definition §CB.10.11: The Dirac Matrices
+> **Dirac matrices** ($\gamma$ matrices) are four $n\times n$ complex matrices $\gamma^0, \gamma^1, \gamma^2, \gamma^3$ satisfying the **Clifford** (Dirac) **algebra**
+>
+> $$
+> \{\gamma^\mu, \gamma^\nu\} \equiv \gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu}\,\mathbb 1_n .
+> $$
+>
+> The label $\mu$ is a spacetime index; the rows and columns are spinor indices (index slots: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^def-c3-1-1|Def. §C3.1.1]]). $g^{\mu\nu}$ is the metric and $\gamma_\mu \equiv g_{\mu\nu}\gamma^\nu$ ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]]).
+>
+> *Source: PS §3.2, eq. (3.22) · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The Dirac (Clifford) algebra", eq. (clifford)) · PHY 513 Lecture 7, Part B ("Warning: 4 × 4 identity matrix on RHS usually not written") · Yu §5.1, eq. (5.1)*
 
-![[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-2]]
+^def-cb-10-11
+
+> [!theorem] Theorem §CB.10.12: First Consequences of the Clifford Algebra
+> For Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]):
+> 1. $(\gamma^0)^2 = \mathbb 1$, $(\gamma^i)^2 = -\mathbb 1$, and $\gamma^\mu\gamma^\nu = -\gamma^\nu\gamma^\mu$ for $\mu \ne \nu$; each $\gamma^\mu$ is invertible.
+> 2. For every four-vector $a$ with commuting components, $(a_\mu\gamma^\mu)^2 = a_\mu a^\mu\,\mathbb 1$.
+> 3. *The split.* Every product of two Dirac matrices is its symmetric part plus its antisymmetric part:
+>
+> $$
+> \gamma^\mu\gamma^\nu = \tfrac12\{\gamma^\mu, \gamma^\nu\} + \tfrac12[\gamma^\mu, \gamma^\nu] = g^{\mu\nu}\,\mathbb 1 + \tfrac12[\gamma^\mu, \gamma^\nu] .
+> $$
+>
+> Contracted with a symmetric tensor only $g^{\mu\nu}\mathbb 1$ survives; contracted with an antisymmetric one only the commutator survives.
+>
+> *Source: Yu §5.1, eqs. (5.2)–(5.4) · the user's PHY 513 notes, Ch. 8 §8.1 (paragraph "Square to ±1, or square root?") · PS §3.2, p. 43 (the same step in Dirac ⇒ Klein–Gordon) · item 3: the user's PHY 513 notes use its symmetric half in Ch. 8 (sections "The Dirac representation", "Dirac implies Klein–Gordon", "Plane waves and an eigenvalue problem") and its antisymmetric half for the slash algebra (Ch. 9 §9.6, Problem Set 5)*
+
+^thm-cb-10-12
+
+> [!derivation]- Derivation
+> **1. Squares.** Put $\nu = \mu$: $2(\gamma^\mu)^2 = 2g^{\mu\mu}\mathbb 1$ (no sum), so $(\gamma^0)^2 = g^{00} = 1$ and $(\gamma^i)^2 = g^{ii} = -1$. Hence $(\gamma^0)^{-1} = \gamma^0$ and $(\gamma^i)^{-1} = -\gamma^i$.
+>
+> **2. Distinct indices.** For $\mu \ne \nu$, $g^{\mu\nu} = 0$, so $\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 0$.
+>
+> **3. Square root.** $(a_\mu\gamma^\mu)^2 = a_\mu a_\nu\gamma^\mu\gamma^\nu$. The coefficient $a_\mu a_\nu$ is symmetric in $\mu\nu$, so only the symmetric part of $\gamma^\mu\gamma^\nu$ contributes: $a_\mu a_\nu\gamma^\mu\gamma^\nu = \frac12a_\mu a_\nu(\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu) = a_\mu a_\nu g^{\mu\nu}\mathbb 1 = a^2\mathbb 1$.
+>
+> **4. The split.** Add and subtract $\frac12\gamma^\nu\gamma^\mu$: $\gamma^\mu\gamma^\nu = \frac12(\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu) + \frac12(\gamma^\mu\gamma^\nu - \gamma^\nu\gamma^\mu)$. The first bracket is $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]). For a symmetric $S_{\mu\nu}$, $S_{\mu\nu}[\gamma^\mu, \gamma^\nu] = 0$: renaming the dummy indices $\mu \leftrightarrow \nu$ turns it into its own negative. For an antisymmetric $A_{\mu\nu}$, $A_{\mu\nu}g^{\mu\nu} = 0$ for the same reason. Step 3 is the case $S_{\mu\nu} = a_\mu a_\nu$.
+>
+> **What the derivation shows**
+> - The algebra says exactly "the $\gamma$'s square to the metric and anticommute"; part 2 is the same statement for every direction at once.
+> - Used next: Hermiticity (Theorem §C5a.2.1), the sixteen products (Theorem §CB.11.8), Dirac ⇒ Klein–Gordon ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), the slash algebra ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]).
+> - The split is the working trick for products of two γ's. With $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ it reads $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]); it gives the second form of the spinor generators (Def. §CB.13.15 in §C5a.3), $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$ ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]]), and, iterated, the reduction of any product of γ's to antisymmetrized products ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]]).
+
+^der-cb-10-12
+
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]
+
+## The Clifford action on spinor space
+
+> [!definition] Definition §CB.10.13: The Dirac Maps
+> The **Dirac maps** on spinor space $V$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|Def. §C5a.1.1]]) are four linear maps $\Gamma^0, \Gamma^1, \Gamma^2, \Gamma^3 \in \operatorname{End}(V)$ with
+>
+> $$
+> \Gamma^\mu\Gamma^\nu + \Gamma^\nu\Gamma^\mu = 2g^{\mu\nu}\,\mathrm{id}_V ,
+> $$
+>
+> $g^{\mu\nu}$ the metric ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]]): a representation of the Clifford algebra on $V$. In a basis their matrices ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-2|Def. §CB.0.2]]) are written $\gamma^\mu$: $\Gamma^\mu e_b = \sum_a(\gamma^\mu)_{ab}e_a$.
+>
+> *Source: PS §3.2, eq. (3.22), p. 41 ("all 4 × 4 representations of the Dirac algebra are unitarily equivalent") · PHY 513 Lecture 7, Part B ("There are many realizations of $\gamma^\mu$") · Yu §5.1, eq. (5.1) · the basis-free formulation written here*
+
+^def-cb-10-13
+
+> [!theorem] Theorem §CB.10.14: The Matrices of the Dirac Maps in Any Basis
+> For the Dirac maps ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]]):
+> 1. in every basis of $V$ the matrices $\gamma^\mu$ are Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]), and under a change of basis $\gamma'^\mu = U\gamma^\mu U^{-1}$;
+> 2. every operator built from the $\Gamma^\mu$ by sums, products, multiplication by numbers and convergent power series has, in each basis, the matrix given by the same formula in that basis's $\gamma$'s, and these matrices transform as $U(\cdot)U^{-1}$.
+>
+> *Source: Yu §5.2, eq. (5.72) · the user's PHY 513 notes, Ch. 8 §8.1 ("Uniqueness": "the choice of basis is a convention") · part 2 written here*
+
+^thm-cb-10-14
+
+> [!derivation]- Derivation
+> **1. Clifford relation in a basis.** By Theorem §CB.0.3 the matrix of $\Gamma^\mu\Gamma^\nu + \Gamma^\nu\Gamma^\mu$ is $\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu$ and that of $2g^{\mu\nu}\mathrm{id}$ is $2g^{\mu\nu}\mathbb 1$; equal operators have equal matrices. The rule $\gamma'^\mu = U\gamma^\mu U^{-1}$ is Theorem §CB.0.5 with $M = \Gamma^\mu$. (Directly: $\{U\gamma^\mu U^{-1}, U\gamma^\nu U^{-1}\} = U\{\gamma^\mu, \gamma^\nu\}U^{-1} = 2g^{\mu\nu}\mathbb 1$, Yu (5.72).)
+>
+> **2. Products.** If operators $A$, $B$ have matrices $a$, $b$ in the old basis, $AB$ has the matrix $ab$ (Theorem §CB.0.3), and in the new basis, inserting $U^{-1}U = \mathbb 1$ between the factors, $a'b' = UaU^{-1}UbU^{-1} = U(ab)U^{-1}$; sums and multiples go the same way. By induction on the number of factors, every polynomial in the $\Gamma^\mu$ has matrix "the same polynomial in the $\gamma$'s", and computing it from the new $\gamma$'s gives $U(\cdot)U^{-1}$ of the old one. For example $i\gamma'^0\gamma'^1\gamma'^2\gamma'^3 = iU\gamma^0U^{-1}U\gamma^1U^{-1}U\gamma^2U^{-1}U\gamma^3U^{-1} = U(i\gamma^0\gamma^1\gamma^2\gamma^3)U^{-1}$, and $[\gamma'^\mu, \gamma'^\nu] = U[\gamma^\mu, \gamma^\nu]U^{-1}$.
+>
+> **3. Power series.** For a matrix $A$: $(UAU^{-1})^n = UA^nU^{-1}$ (the inner $U^{-1}U$ cancel), so term by term $\sum_nc_n(UAU^{-1})^n = U\bigl(\sum_nc_nA^n\bigr)U^{-1}$ wherever the series converges absolutely (multiplication by fixed matrices is continuous). In particular $\exp(UAU^{-1}) = U\,e^A\,U^{-1}$.
+>
+> **What the derivation shows**
+> - Only Theorem §CB.0.3 (operators ↔ matrices) and the cancellation $U^{-1}U = \mathbb 1$ are used.
+> - Instances defined later: $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]), $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]) and $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-18|Def. §CB.13.18]]): computed from the new $\gamma$'s, each is the transformed old one, $\gamma'^5 = U\gamma^5U^{-1}$, $S'^{\mu\nu} = US^{\mu\nu}U^{-1}$, $\Lambda'_{1/2} = U\Lambda_{1/2}U^{-1}$ (steps 2–3).
+> - Used next: the eigenvalues ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]]) and changes of basis as intertwiners (Theorem §CB.12.13).
+
+^der-cb-10-14
+
+*Uses:* [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-3|Theorem §CB.0.3]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]]
+
+The first structural consequence of the relation, in any unital algebra:
+
+> [!theorem] Theorem §CB.10.15: Clifford Generators Are Invertible and Pairwise Non-Commuting
+> Let $\gamma^0, \dots, \gamma^3$ satisfy the Clifford relation $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}1$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]) in an associative algebra with unit $1 \ne 0$: numbers, $n\times n$ matrices, or linear maps on a vector space. Then
+> 1. each $\gamma^\mu$ is invertible, with $(\gamma^\mu)^{-1} = g^{\mu\mu}\gamma^\mu$ (no sum);
+> 2. $\gamma^\mu\gamma^\nu \ne \gamma^\nu\gamma^\mu$ for every $\mu \ne \nu$;
+> 3. no basis makes all four $n\times n$ Dirac matrices diagonal at once: the Dirac maps have no common eigenbasis.
+>
+> *Source: PS §3.2, p. 41 ("There is no fourth $2\times2$ matrix … that anticommutes with the three Pauli sigma matrices", the matrix version) · the user's PHY 513 notes, Ch. 8 §8.1 ("Square to ±1, or square root?") · the argument written here (first written for the physics statement, [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]])*
+
+^thm-cb-10-15
+
+> [!derivation]- Derivation
+> **1. Inverses.** By the relation with $\nu = \mu$, $(\gamma^\mu)^2 = g^{\mu\mu}1$ (no sum), with $g^{\mu\mu} = \pm1$, so $(g^{\mu\mu})^2 = 1$. Then $\gamma^\mu\cdot g^{\mu\mu}\gamma^\mu = g^{\mu\mu}(\gamma^\mu)^2 = (g^{\mu\mu})^2\,1 = 1$, and the same with the factors in the other order: $(\gamma^\mu)^{-1} = g^{\mu\mu}\gamma^\mu$.
+>
+> **2. Assume two of them commute.** Suppose $\gamma^\mu\gamma^\nu = \gamma^\nu\gamma^\mu$ for some $\mu \ne \nu$. Then $\{\gamma^\mu, \gamma^\nu\} = \gamma^\mu\gamma^\nu + \gamma^\mu\gamma^\nu = 2\gamma^\mu\gamma^\nu$, while the relation gives $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}1 = 0$, because $g$ is diagonal. So $\gamma^\mu\gamma^\nu = 0$.
+>
+> **3. Then one of them vanishes.** Multiply $\gamma^\mu\gamma^\nu = 0$ on the left by $(\gamma^\mu)^{-1}$ (step 1): $\gamma^\nu = (\gamma^\mu)^{-1}\gamma^\mu\gamma^\nu = (\gamma^\mu)^{-1}\cdot0 = 0$.
+>
+> **4. Contradiction.** Then $(\gamma^\nu)^2 = 0$, but the relation demands $(\gamma^\nu)^2 = g^{\nu\nu}1 = \pm1 \ne 0$, because $1 \ne 0$. So no two distinct $\gamma$'s commute: part 2.
+>
+> **5. No common diagonal form.** Diagonal matrices commute: $\operatorname{diag}(a_1, \dots, a_n)\operatorname{diag}(b_1, \dots, b_n) = \operatorname{diag}(a_1b_1, \dots, a_nb_n) = \operatorname{diag}(b_1, \dots, b_n)\operatorname{diag}(a_1, \dots, a_n)$. If one basis made all $\gamma^\mu$ diagonal, they would commute, against part 2. Since a change of basis changes the matrices by $U(\cdot)U^{-1}$ and keeps the relation ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-14|Theorem §CB.10.14]]), this holds in every basis: the Dirac maps have no common eigenbasis.
+>
+> **What the derivation shows**
+> - Only the relation and $1 \ne 0$ were used, and only two of the $\gamma$'s: the conclusion holds in any spacetime dimension with at least one time and one space direction (Example §CB.11.18).
+> - Read for the physics: a first-order square root of the Klein–Gordon operator needs matrices, not numbers ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]]).
+
+^der-cb-10-15
+
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-14|Theorem §CB.10.14]]
+
+In the course's words, the Clifford relation of Minkowski space generates the algebra of square roots of $p^2$: the case $V = \mathbb R^{1,3}$ of Def. §CB.10.6 and Theorem §CB.10.7. The remark below was written in the physics chapter before this section existed; the construction as a quotient of the tensor algebra, which it calls missing from the vault, is Def. §CB.10.6.
+
+> [!remark] ★ Remark: The Clifford algebra is the algebra of square roots of p²
+> **The algebra.** On Minkowski space $M$ ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]]) the metric $g$ is a symmetric bilinear form with quadratic form $q(v) = g(v, v)$ ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR Def. 9.9]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR Def. 9.18]]). The **Clifford algebra** $\mathrm{Cl}(1,3)$ is the associative algebra with unit generated by the vectors $v \in M$, added as in $M$, subject to the single relation
+>
+> $$
+> v\,v = g(v, v)\,1 \qquad (v \in M) :
+> $$
+>
+> every vector is a square root of its own length squared. Replacing $v$ by $v + w$ gives $vw + wv = 2g(v, w)\,1$; on a basis $e_\mu$ of $M$, with $\gamma_\mu$ the image of $e_\mu$ and $\gamma^\mu = g^{\mu\nu}\gamma_\nu$, this is $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]). Dirac's requirement, a first-order factor of the Klein–Gordon operator, is exactly this relation ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]]): $\mathrm{Cl}(1,3)$ is the algebra of square roots of $p^2$ with no further relations.
+>
+> **Universal property.** If $A$ is an associative algebra with unit and $f : M \to A$ is linear with $f(v)^2 = g(v, v)\,1$ for all $v$, then $f$ extends uniquely to an algebra homomorphism $\mathrm{Cl}(1,3) \to A$. A choice of Dirac matrices is such an $f$, $f(p) = \slashed{p} = p_\mu\gamma^\mu$, into $A = M_4(\mathbb C)$; the Dirac maps are one into $\operatorname{End}(V)$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]]). Compare the tensor product, which turns bilinear maps into linear ones ([[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]]); the construction of $\mathrm{Cl}(1,3)$ as a quotient of the tensor algebra is not in the vault. After complexification $\mathrm{Cl}(1,3)\otimes\mathbb C \cong M_4(\mathbb C)$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^rem-cb-12-1|§CB.12, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]).
+>
+> *Source: written here, on the concrete content of Theorem §C5a.0.1; no course source states the Clifford algebra of a quadratic form or its universal property, and the vault has no Math home for Clifford algebras · the relation: PS §3.2, eq. (3.22) and p. 43; the user's PHY 513 notes, Ch. 8 §8.1 · the rows: the homes linked in the table*
+
+^rem-cb-10-1
 
 > [!remark]- Connections
 > - The universal property (Theorem §CB.10.7) is the whole reason Dirac matrices are unique up to change of basis: a Clifford module is a homomorphism out of one fixed algebra, and §CB.12 shows that algebra (complexified) is a matrix algebra.
-> - **Used in**: Definitions §CB.10.6–Theorem §CB.10.10 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-9|Def. §C5a.1.9]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-4|Def. §C5a.4.4]]
+> - **Used in**: Definitions §CB.10.6–Theorem §CB.10.10 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-17-1|Def. §CB.17.1]]; Theorem §CB.10.10 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded); Definition §CB.10.11 — [[§C3.3 How Fields Transform under the Lorentz Group|§C3.3]] (embedded; cited in [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]), [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]]), [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (embedded; cited in [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] (embedded; cited in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-9|Theorem §C5a.8.9]]), [[§C5a.9 Plane-Wave Solutions|§C5a.9]] (embedded; cited in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]]), [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded; cited in [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]]), [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]] (embedded; cited in [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]), [[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]] (embedded; cited in [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]]), [[§C9.4 Fermion Bilinears under Parity|§C9.4]] (embedded; cited in [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-3|Theorem §C9.4.3]]); Theorem §CB.10.12 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]]), [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded), [[§C5a.2 The Dirac Form|§C5a.2]] (embedded; cited in [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (embedded; cited in [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]), [[§C5a.9 Plane-Wave Solutions|§C5a.9]] (embedded; cited in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]), [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded; cited in [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]]); Definition §CB.10.13 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-1|§C5a.0, Remark: Why the Dirac maps: the logic runs from γ to spinor space]]), [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded); Theorem §CB.10.14 — [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (embedded; cited in [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]]); Theorem §CB.10.15 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]]); §CB.10, Remark: The Clifford algebra is the algebra of square roots of p² — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-2|§C5a.0, Remark: What the Clifford relation induces]]).

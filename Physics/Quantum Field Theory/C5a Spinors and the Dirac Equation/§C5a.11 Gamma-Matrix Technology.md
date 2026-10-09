@@ -11,13 +11,29 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.6 (Supplement: $\gamma$-matrix technology (Problem Set 5)) · PHY 513, Problem Set 5, Problems 2, 3 and 5 (as the user wrote them) · Peskin & Schroeder, §3.4, pp. 49–52, eqs. (3.68)–(3.81) · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.77).*
 
-How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]), the algebra of $\gamma^5$ ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), the basis property of the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used.
+How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]), the algebra of $\gamma^5$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]), the basis property of the sixteen products ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used. The algebra behind the identities — the Clifford relation, the sixteen products as a basis, Pauli's theorem, $\gamma^5$ as the volume element — is [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]]–[[§CB.12 Complex Clifford Algebras and Clifford Modules|§CB.12]] and [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.17]], shown in the blocks below; this section keeps the course's computational toolkit.
 
 *Conventions:* $\varepsilon^{0123} = +1$, $\varepsilon_{0123} = -1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]); $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]; other normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]); components of four-vectors are numbers and commute with the $\gamma$'s; the identity matrix is often not written. Every identity here was checked numerically in the chiral basis in the user's notes.
 
+## The mathematics used here
+
+The toolkit starts from the Clifford relation and its first consequences, the antisymmetrized products and the sixteen products as a basis:
+
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11]]
+
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12]]
+
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-12]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-8]]
+
 ## Products and slashes
 
-The antisymmetrized products of $\gamma$ matrices used below are defined in §C5a.1 ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]]).
+The antisymmetrized products of $\gamma$ matrices used below are defined in §C5a.1 ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]]).
 
 The antisymmetrized product vanishes when two indices coincide (the terms cancel in pairs), and equals the plain product when all indices are distinct (each term, reordered by anticommuting distinct $\gamma$'s, carries the sign of its permutation twice). So $\gamma^{[\mu_1\cdots\mu_n]} = 0$ for $n \ge 5$: only four distinct $\gamma$'s exist.
 
@@ -41,9 +57,9 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 >
 > **3. Two slashes.** Contract step 2 with $b_\mu$: $\slashed{b}\slashed{a} = 2a\cdot b - \slashed{a}\slashed{b}$.
 >
-> **4. Symmetric and antisymmetric parts.** $\gamma^\mu\gamma^\nu = \frac12\{\gamma^\mu, \gamma^\nu\} + \frac12[\gamma^\mu, \gamma^\nu] = g^{\mu\nu} - i\sigma^{\mu\nu}$ (the split of [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]], 3, with $\frac12[\gamma^\mu, \gamma^\nu] = -i\cdot\frac i2[\gamma^\mu, \gamma^\nu]$). Contract with $a_\mu b_\nu$.
+> **4. Symmetric and antisymmetric parts.** $\gamma^\mu\gamma^\nu = \frac12\{\gamma^\mu, \gamma^\nu\} + \frac12[\gamma^\mu, \gamma^\nu] = g^{\mu\nu} - i\sigma^{\mu\nu}$ (the split of [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]], 3, with $\frac12[\gamma^\mu, \gamma^\nu] = -i\cdot\frac i2[\gamma^\mu, \gamma^\nu]$). Contract with $a_\mu b_\nu$.
 >
-> **5. Equal vectors.** $\sigma^{\mu\nu}a_\mu a_\nu = 0$ (antisymmetric against symmetric), so $\slashed{a}\slashed{a} = a^2$, as in [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]].
+> **5. Equal vectors.** $\sigma^{\mu\nu}a_\mu a_\nu = 0$ (antisymmetric against symmetric), so $\slashed{a}\slashed{a} = a^2$, as in [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]].
 >
 > **What the derivation shows**
 > - Every rule is the Clifford algebra with indices moved by $g$; no representation is used.
@@ -51,7 +67,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 ^der-c5a-11-1
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
 
 ## Contractions
 
@@ -87,7 +103,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 ^der-c5a-11-2
 
-*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]
+*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]
 
 > [!derivation]- Derivation (second route: Problem Set 5, Problem 2, as the user wrote it)
 > **(a) Components.** With $g_{00} = 1$, $g_{ii} = -1$: $\gamma_0 = \gamma^0$, $\gamma_i = -\gamma^i$. For each fixed $\mu$ (no sum) $\gamma^\mu\gamma^\mu = \frac12\{\gamma^\mu, \gamma^\mu\} = g^{\mu\mu}$. Hence $\gamma_\mu\gamma^\mu = \gamma^0\gamma^0 - \sum_{i=1}^3\gamma^i\gamma^i = g^{00} - \sum_ig^{ii} = 1 - (-3) = 4$.
@@ -113,9 +129,23 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 ^der-c5a-11-2b
 
-*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]
+*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]
 
 These identities shorten strings in which an index is contracted across other $\gamma$'s, as happens in every amplitude with a photon exchanged between fermion lines (QFT C8, planned).
+
+### The mathematics used here: traces
+
+Traces are basis-independent because any two sets of Dirac matrices are related by a change of basis; the traces with $\gamma^5$ use its properties:
+
+![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12]]
+
+![[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-12]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-14]]
 
 ## Traces
 
@@ -124,7 +154,7 @@ These identities shorten strings in which an index is contracted across other $\
 > \operatorname{tr}\mathbb 1 = 4, \qquad \operatorname{tr}(\text{odd number of }\gamma\text{'s}) = 0, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4\bigl(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho}\bigr) .
 > $$
 >
-> for the $4\times4$ Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]). With slashes ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]): $\operatorname{tr}(\slashed{a}\slashed{b}) = 4a\cdot b$, $\operatorname{tr}(\slashed{a}\slashed{b}\slashed{c}\slashed{d}) = 4\bigl[(a\cdot b)(c\cdot d) - (a\cdot c)(b\cdot d) + (a\cdot d)(b\cdot c)\bigr]$.
+> for the $4\times4$ Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]). With slashes ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]): $\operatorname{tr}(\slashed{a}\slashed{b}) = 4a\cdot b$, $\operatorname{tr}(\slashed{a}\slashed{b}\slashed{c}\slashed{d}) = 4\bigl[(a\cdot b)(c\cdot d) - (a\cdot c)(b\cdot d) + (a\cdot d)(b\cdot c)\bigr]$.
 >
 > *Source: Yu §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.45), (8.49)–(8.52), (8.74)–(8.75) · PS §5.1 (trace theorems, as statements) · the user's PHY 513 notes, Ch. 9 §9.1 (Derivation "Step 2": $\operatorname{tr}\gamma^\mu = 0$)*
 
@@ -133,9 +163,9 @@ These identities shorten strings in which an index is contracted across other $\
 > [!derivation]- Derivation
 > The trace is cyclic, $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]), and linear.
 >
-> **1. $\operatorname{tr}\mathbb 1 = 4$**: the Dirac matrices are $4\times4$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-12|Theorem §C5a.1.12]]: four is the dimension of every irreducible realization).
+> **1. $\operatorname{tr}\mathbb 1 = 4$**: the Dirac matrices are $4\times4$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]]: four is the dimension of every irreducible realization).
 >
-> **2. Odd number.** Let $M = \gamma^{\mu_1}\cdots\gamma^{\mu_n}$ with $n$ odd. Insert $(\gamma^5)^2 = \mathbb 1$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]): $\operatorname{tr}M = \operatorname{tr}(M\gamma^5\gamma^5)$. Move the first $\gamma^5$ to the left through the $n$ factors of $M$, each anticommuting with it: $M\gamma^5 = (-1)^n\gamma^5M = -\gamma^5M$. So $\operatorname{tr}M = -\operatorname{tr}(\gamma^5M\gamma^5)$. By cyclicity $\operatorname{tr}(\gamma^5M\gamma^5) = \operatorname{tr}(M\gamma^5\gamma^5) = \operatorname{tr}M$. Hence $\operatorname{tr}M = -\operatorname{tr}M = 0$.
+> **2. Odd number.** Let $M = \gamma^{\mu_1}\cdots\gamma^{\mu_n}$ with $n$ odd. Insert $(\gamma^5)^2 = \mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]): $\operatorname{tr}M = \operatorname{tr}(M\gamma^5\gamma^5)$. Move the first $\gamma^5$ to the left through the $n$ factors of $M$, each anticommuting with it: $M\gamma^5 = (-1)^n\gamma^5M = -\gamma^5M$. So $\operatorname{tr}M = -\operatorname{tr}(\gamma^5M\gamma^5)$. By cyclicity $\operatorname{tr}(\gamma^5M\gamma^5) = \operatorname{tr}(M\gamma^5\gamma^5) = \operatorname{tr}M$. Hence $\operatorname{tr}M = -\operatorname{tr}M = 0$.
 >
 > **3. Two.** $\operatorname{tr}(\gamma^\mu\gamma^\nu) = \operatorname{tr}(2g^{\mu\nu}\mathbb 1 - \gamma^\nu\gamma^\mu) = 8g^{\mu\nu} - \operatorname{tr}(\gamma^\nu\gamma^\mu) = 8g^{\mu\nu} - \operatorname{tr}(\gamma^\mu\gamma^\nu)$ (cyclicity in the last step). So $2\operatorname{tr}(\gamma^\mu\gamma^\nu) = 8g^{\mu\nu}$.
 >
@@ -151,19 +181,19 @@ These identities shorten strings in which an index is contracted across other $\
 >
 > **What the derivation shows**
 > - Only the Clifford algebra, $\gamma^5$ and cyclicity are used: the traces are basis independent. Tracelessness of $\gamma^\mu$ alone is also [[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], part 2 (with $\gamma^\nu$ in place of $\gamma^5$).
-> - ⚑ By-product: $\operatorname{tr}(\Gamma_A\Gamma_B) = 0$ for distinct elements of the sixteen-element basis and $\ne 0$ for equal ones: the trace is an inner product in which the basis is orthogonal; this is how the basis property is proved ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]) and how a matrix is expanded in it, $M = \frac14\sum_A\operatorname{tr}(\Gamma_A^{-1}M)\,\Gamma_A$.
+> - ⚑ By-product: $\operatorname{tr}(\Gamma_A\Gamma_B) = 0$ for distinct elements of the sixteen-element basis and $\ne 0$ for equal ones: the trace is an inner product in which the basis is orthogonal; this is how the basis property is proved ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]) and how a matrix is expanded in it, $M = \frac14\sum_A\operatorname{tr}(\Gamma_A^{-1}M)\,\Gamma_A$.
 > - Used next: spin sums turn squared amplitudes into traces ([[§C5a.11 Gamma-Matrix Technology#^rem-c5a-11-1|Remark: Why traces]]).
 
 ^der-c5a-11-3
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
 
 > [!theorem] Theorem §C5a.11.4: Traces with γ⁵
 > $$
 > \operatorname{tr}\gamma^5 = 0\ \text{(recalled)}, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = 0, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\,\varepsilon^{\mu\nu\rho\sigma} \quad (\varepsilon^{0123} = +1),
 > $$
 >
-> with $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]; $\operatorname{tr}\gamma^5 = 0$ is [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]) and $\varepsilon$ in the convention of [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]; the trace of $\gamma^5$ times an odd number of $\gamma$'s vanishes. The convention-free form of the last identity is $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$.
+> with $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]; $\operatorname{tr}\gamma^5 = 0$ is [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]) and $\varepsilon$ in the convention of [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]; the trace of $\gamma^5$ times an odd number of $\gamma$'s vanishes. The convention-free form of the last identity is $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$.
 >
 > *Source: Yu §8.2.2, eqs. (8.46)–(8.48), (8.53)–(8.55) (with $\varepsilon^{0123} = +1$, Yu (1.104)) · PS §5.1 (as statements)*
 
@@ -172,7 +202,7 @@ These identities shorten strings in which an index is contracted across other $\
 > [!derivation]- Derivation
 > **1. Odd number with $\gamma^5$.** $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ is a product of four $\gamma$'s, so $\gamma^5$ times an odd number of $\gamma$'s is an odd product: trace zero by [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]].
 >
-> **2. $\operatorname{tr}\gamma^5$.** Recalled from its home, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], where it is derived (insert $(\gamma^0)^2 = \mathbb 1$, anticommute, use cyclicity).
+> **2. $\operatorname{tr}\gamma^5$.** Recalled from its home, [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], where it is derived (insert $(\gamma^0)^2 = \mathbb 1$, anticommute, use cyclicity).
 >
 > **3. Two $\gamma$'s and $\gamma^5$.** If $\mu = \nu$: $\gamma^\mu\gamma^\mu = g^{\mu\mu}$ (no sum), and the trace is $g^{\mu\mu}\operatorname{tr}\gamma^5 = 0$. If $\mu \ne \nu$: pick $\alpha \ne \mu, \nu$, so $(\gamma^\alpha)^2 = g^{\alpha\alpha} = \pm1$ and $\gamma^\alpha$ anticommutes with $\gamma^\mu$, $\gamma^\nu$, $\gamma^5$. Then $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = g^{\alpha\alpha}\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5\gamma^\alpha\gamma^\alpha)$. Move the first $\gamma^\alpha$ to the front past three anticommuting factors: $= -g^{\alpha\alpha}\operatorname{tr}(\gamma^\alpha\gamma^\mu\gamma^\nu\gamma^5\gamma^\alpha) = -g^{\alpha\alpha}\operatorname{tr}(\gamma^\alpha\gamma^\alpha\gamma^\mu\gamma^\nu\gamma^5)$ (cyclicity) $= -\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5)$. So it is $0$.
 >
@@ -188,7 +218,7 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^der-c5a-11-4
 
-*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]
+*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]
 
 > [!caution] Caution: The sign of the ε trace across sources
 > The convention-free statements are $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$ and $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$. With $\varepsilon^{0123} = +1$ (these notes, the course, Yu) they give $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$, $\gamma^{[\mu\nu\rho\sigma]} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ and $\gamma^5 = -\frac i{4!}\varepsilon^{\mu\nu\rho\sigma}\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma$. Peskin–Schroeder state $\varepsilon^{0123} = -1$, and their p. 50 is not uniform: (3.68) and $\gamma^{\mu\nu\rho\sigma} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ hold as printed only for $\varepsilon^{0123} = +1$, while $\gamma^{\mu\nu\rho} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma_\sigma\gamma^5$ holds for their $\varepsilon^{0123} = -1$ (it is Theorem §C5a.11.6 with the sign of $\varepsilon$ flipped). Check: $\gamma^0\gamma^1\gamma^2 = -i\gamma^3\gamma^5$ from the definition of $\gamma^5$. Compare sources through the convention-free forms.
@@ -204,6 +234,20 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^rem-c5a-11-1
 
+### The mathematics used here: the volume element
+
+$\gamma^5$ is the volume element; Theorem §C5a.11.5 is its formula in the course's $\varepsilon$ convention:
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-11]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^pf-cb-11-12]]
+
+![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-2]]
+
+![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-17-2]]
+
 ## γ⁵ and the ε symbol
 
 > [!theorem] Theorem §C5a.11.5: γ⁵ as a Totally Antisymmetric Product
@@ -211,7 +255,7 @@ These identities shorten strings in which an index is contracted across other $\
 > \gamma^5 = -\frac i{24}\,\varepsilon_{\kappa\lambda\mu\nu}\,\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu, \qquad \gamma^{[\kappa}\gamma^\lambda\gamma^\mu\gamma^{\nu]} = -i\,\varepsilon^{\kappa\lambda\mu\nu}\gamma^5 ,
 > $$
 >
-> with $\gamma^5$ of [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], the antisymmetrization of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]], and $\varepsilon^{0123} = +1 = -\varepsilon_{0123}$ ([[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|Caution: The sign of the ε trace across sources]]).
+> with $\gamma^5$ of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]], the antisymmetrization of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]], and $\varepsilon^{0123} = +1 = -\varepsilon_{0123}$ ([[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|Caution: The sign of the ε trace across sources]]).
 >
 > *Source: PHY 513, Problem Set 5, Problem 5(c) (as the user wrote it) · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$") · PS §3.4, p. 50, eq. (3.68)*
 
@@ -230,17 +274,17 @@ These identities shorten strings in which an index is contracted across other $\
 > \varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu = -24\,\gamma^0\gamma^1\gamma^2\gamma^3 = 24i\,\gamma^5, \qquad \gamma^5 = \frac1{24i}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu = -\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu .
 > $$
 >
-> **3. Second identity, distinct indices.** Each of the 24 terms of the antisymmetrization (Def. §C5a.1.8) is $\gamma^{\kappa'}\gamma^{\lambda'}\gamma^{\mu'}\gamma^{\nu'}$ for a permutation of $(\kappa, \lambda, \mu, \nu)$, weighted by its sign; reordering it back by neighbour swaps gives the same sign again, so every term equals $+\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$ and $\gamma^{[\kappa\lambda\mu\nu]} = \frac1{24}\cdot24\,\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$. By the neighbour swaps relative to $0123$, this is $\varepsilon^{\kappa\lambda\mu\nu}\gamma^0\gamma^1\gamma^2\gamma^3$ (with $\varepsilon^{0123} = +1$) $= -i\varepsilon^{\kappa\lambda\mu\nu}\gamma^5$.
+> **3. Second identity, distinct indices.** Each of the 24 terms of the antisymmetrization (Def. §CB.11.7) is $\gamma^{\kappa'}\gamma^{\lambda'}\gamma^{\mu'}\gamma^{\nu'}$ for a permutation of $(\kappa, \lambda, \mu, \nu)$, weighted by its sign; reordering it back by neighbour swaps gives the same sign again, so every term equals $+\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$ and $\gamma^{[\kappa\lambda\mu\nu]} = \frac1{24}\cdot24\,\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$. By the neighbour swaps relative to $0123$, this is $\varepsilon^{\kappa\lambda\mu\nu}\gamma^0\gamma^1\gamma^2\gamma^3$ (with $\varepsilon^{0123} = +1$) $= -i\varepsilon^{\kappa\lambda\mu\nu}\gamma^5$.
 >
 > **4. Repeated indices.** If two indices coincide, $\varepsilon^{\kappa\lambda\mu\nu} = 0$, and the antisymmetrization vanishes: pair each term with the one in which the positions of the two equal indices are exchanged; the products are identical and the signs opposite.
 >
 > **What the derivation shows**
 > - The lower-index $\varepsilon_{0123} = -1$ in step 2 and the upper-index $\varepsilon^{0123} = +1$ in step 3 are the two places where the convention enters ([[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|Caution: The sign of the ε trace across sources]]).
-> - ⚑ By-product: $\gamma^5 \propto \varepsilon$ is why bilinears with $\gamma^5$ are "pseudo" ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]).
+> - ⚑ By-product: $\gamma^5 \propto \varepsilon$ is why bilinears with $\gamma^5$ are "pseudo" ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]]).
 
 ^der-c5a-11-5
 
-*Uses:* [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]
+*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]
 
 > [!theorem] Theorem §C5a.11.6: The Antisymmetric Product of Three γ's
 > $$
@@ -267,7 +311,7 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^der-c5a-11-6
 
-*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]]
+*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]]
 
 > [!theorem] Theorem §C5a.11.7: γ⁵ Dualizes σ^μν
 > $$
@@ -291,7 +335,7 @@ These identities shorten strings in which an index is contracted across other $\
 >
 > **4. Move indices.** Both sides are tensors; lower $\mu\nu$ and raise $\lambda\kappa$ by contracting with $g_{\mu\alpha}g_{\nu\beta}$ and inserting $g^{\lambda\rho}g_{\rho\lambda'}$ pairs (the dummy pair $\lambda\kappa$ may be moved up and down together). The $\varepsilon$ with indices $\mu\nu$ down and $\lambda\kappa$ up is the same tensor with indices moved by $g$; with all four lowered, $\varepsilon_{0123} = g_{00}g_{11}g_{22}g_{33}\varepsilon^{0123} = -1$, consistently. Result: $\gamma_{[\mu\nu]} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\gamma^{[\lambda\kappa]}\gamma^5$.
 >
-> **5. Move $\gamma^5$ to the left.** $\gamma^5$ commutes with a product of two $\gamma$'s ($\gamma^5\gamma^\lambda\gamma^\kappa = (-1)^2\gamma^\lambda\gamma^\kappa\gamma^5$, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]). Multiply on the left by $\gamma^5$ and use $(\gamma^5)^2 = \mathbb 1$: $\gamma^5\gamma_{[\mu\nu]} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\gamma^{[\lambda\kappa]}$.
+> **5. Move $\gamma^5$ to the left.** $\gamma^5$ commutes with a product of two $\gamma$'s ($\gamma^5\gamma^\lambda\gamma^\kappa = (-1)^2\gamma^\lambda\gamma^\kappa\gamma^5$, [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]). Multiply on the left by $\gamma^5$ and use $(\gamma^5)^2 = \mathbb 1$: $\gamma^5\gamma_{[\mu\nu]} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\gamma^{[\lambda\kappa]}$.
 >
 > **6. Normalization.** Multiply both sides by the same constant $2c$: $\gamma^5\sigma_{\mu\nu} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\sigma^{\lambda\kappa}$ for $\sigma = c[\gamma, \gamma]$. (The user's write-up, with $\sigma = \frac1{4i}[\gamma, \gamma]$, runs steps 2–5 with $4i\sigma^{\mu\nu} = 2\gamma^{[\mu\nu]}$ in place of $\gamma^{[\mu\nu]}$.)
 >
@@ -300,18 +344,18 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^der-c5a-11-7
 
-*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|Theorem §C5a.11.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]
+*Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|Theorem §C5a.11.6]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]
 
 ## Reduction
 
 > [!theorem] Theorem §C5a.11.8: Every Product of γ's Reduces to the Standard Basis
-> For any indices, a product of Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]) $\gamma^{\mu_1}\gamma^{\mu_2}\cdots\gamma^{\mu_n}$ is a linear combination, with coefficients built from $g^{\mu\nu}$ and $\varepsilon^{\mu\nu\rho\sigma}$, of the sixteen matrices
+> For any indices, a product of Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]) $\gamma^{\mu_1}\gamma^{\mu_2}\cdots\gamma^{\mu_n}$ is a linear combination, with coefficients built from $g^{\mu\nu}$ and $\varepsilon^{\mu\nu\rho\sigma}$, of the sixteen matrices
 >
 > $$
 > \mathbb 1, \quad \gamma^\mu, \quad \sigma^{\mu\nu}\ (\mu < \nu), \quad \gamma^\mu\gamma^5, \quad \gamma^5 ,
 > $$
 >
-> ($\sigma^{\mu\nu}$ of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]], $\gamma^5$ of [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]), with only the terms of the parity of $n$ (even $n$: $\mathbb 1$, $\sigma^{\mu\nu}$, $\gamma^5$; odd $n$: $\gamma^\mu$, $\gamma^\mu\gamma^5$). The combination is unique.
+> ($\sigma^{\mu\nu}$ of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]], $\gamma^5$ of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]), with only the terms of the parity of $n$ (even $n$: $\mathbb 1$, $\sigma^{\mu\nu}$, $\gamma^5$; odd $n$: $\gamma^\mu$, $\gamma^\mu\gamma^5$). The combination is unique.
 >
 > *Source: PHY 513, Problem Set 5, Problem 5 (closing paragraph of the problem statement) · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Reducing any product of $\gamma$'s") · PS §3.4, p. 49*
 
@@ -320,11 +364,11 @@ These identities shorten strings in which an index is contracted across other $\
 > [!derivation]- Derivation
 > **1. One component at a time.** Fix numerical values of $\mu_1, \dots, \mu_n \in \{0, 1, 2, 3\}$. If some value occurs twice, anticommute one copy next to the other (each passage over a $\gamma$ with a different index costs $-1$; passing an equal one is not needed, take the nearest copy) and replace the pair by $\gamma^\alpha\gamma^\alpha = g^{\alpha\alpha} = \pm1$. Repeat. The result is $\pm\gamma^{\alpha_1}\cdots\gamma^{\alpha_k}$ with distinct $\alpha$'s, the values occurring an odd number of times; $k \le 4$ and $k \equiv n \pmod 2$ (each step removes two factors).
 >
-> **2. Distinct products are basis elements.** Order the $\alpha$'s increasingly (anticommuting, signs only). For $k = 0$: $\mathbb 1$. $k = 1$: $\gamma^\alpha$. $k = 2$: $\gamma^\alpha\gamma^\beta = \gamma^{[\alpha\beta]} = -i\sigma^{\alpha\beta}$ ($\alpha \ne \beta$; Def. §C5a.1.8). $k = 3$: $\gamma^{[\alpha\beta\gamma]} = i\varepsilon^{\alpha\beta\gamma\kappa}\gamma_\kappa\gamma^5$ (Theorem §C5a.11.6), a single term. $k = 4$: $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$.
+> **2. Distinct products are basis elements.** Order the $\alpha$'s increasingly (anticommuting, signs only). For $k = 0$: $\mathbb 1$. $k = 1$: $\gamma^\alpha$. $k = 2$: $\gamma^\alpha\gamma^\beta = \gamma^{[\alpha\beta]} = -i\sigma^{\alpha\beta}$ ($\alpha \ne \beta$; Def. §CB.11.7). $k = 3$: $\gamma^{[\alpha\beta\gamma]} = i\varepsilon^{\alpha\beta\gamma\kappa}\gamma_\kappa\gamma^5$ (Theorem §C5a.11.6), a single term. $k = 4$: $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$.
 >
 > **3. Covariant form.** Steps 1–2 hold for every choice of index values, so the tensor $\gamma^{\mu_1}\cdots\gamma^{\mu_n}$ equals a sum of antisymmetrized products times products of $g$'s; the user's procedure does this covariantly: split each adjacent pair into its symmetric part, $g^{\mu\nu}\mathbb 1$ by the Clifford algebra, and its antisymmetric part, and repeat until every term is fully antisymmetric or a multiple of $\mathbb 1$. For three factors the result is $\gamma^\lambda\gamma^\mu\gamma^\nu = \gamma^{[\lambda\mu\nu]} + g^{\lambda\mu}\gamma^\nu - g^{\lambda\nu}\gamma^\mu + g^{\mu\nu}\gamma^\lambda$ (case check in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-9|Derivation §C5a.8.9]], step 1). Antisymmetrized products of five or more vanish; those of four and three are $\gamma^5$ and $\gamma_\kappa\gamma^5$ (Theorems §C5a.11.5–§C5a.11.6); $\gamma^5\sigma^{\mu\nu}$ is a combination of $\sigma$'s (Theorem §C5a.11.7).
 >
-> **4. Uniqueness.** The sixteen matrices are linearly independent ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]; the standard ones differ from the products $\gamma^I$ by nonzero factors $\pm1, \pm i$), so the coefficients are unique, and can be read off with traces ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], by-product).
+> **4. Uniqueness.** The sixteen matrices are linearly independent ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]; the standard ones differ from the products $\gamma^I$ by nonzero factors $\pm1, \pm i$), so the coefficients are unique, and can be read off with traces ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], by-product).
 >
 > **What the derivation shows**
 > - "Nothing beyond the sixteen is ever needed": the classification of bilinears ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]) is complete.
@@ -332,12 +376,12 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^der-c5a-11-8
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|Theorem §C5a.11.6]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-7|Theorem §C5a.11.7]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|Theorem §C5a.11.6]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-7|Theorem §C5a.11.7]]
 
 ## The Gordon identity
 
 > [!theorem] Theorem §C5a.11.9: The Gordon Identity
-> Let $p^2 = p'^2 = m^2 > 0$, $q = p' - p$, and let $u(p)$, $u(p')$ be positive-frequency spinors ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-1|Def. §C5a.9.1]]), $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]), $(\slashed{p} - m)u(p) = 0$ and $(\slashed{p}' - m)u(p') = 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]]). Then
+> Let $p^2 = p'^2 = m^2 > 0$, $q = p' - p$, and let $u(p)$, $u(p')$ be positive-frequency spinors ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-1|Def. §C5a.9.1]]), $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), $(\slashed{p} - m)u(p) = 0$ and $(\slashed{p}' - m)u(p') = 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]]). Then
 >
 > $$
 > \bar u(p')\gamma^\mu u(p) = \bar u(p')\Bigl[\frac{p^\mu + p'^\mu}{2m} + \frac{i\sigma^{\mu\nu}q_\nu}{2m}\Bigr]u(p), \qquad \sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] .
@@ -350,7 +394,7 @@ These identities shorten strings in which an index is contracted across other $\
 ^thm-c5a-11-9
 
 > [!derivation]- Derivation (the user's notes: split γ^μ in half)
-> **1. The Dirac equation from both sides.** $\slashed{p}\,u(p) = m\,u(p)$ by hypothesis. For $u(p')$: take the adjoint of $(\slashed{p}' - m)u(p') = 0$ with $p'_\mu$ real, $u^\dagger(p')(\gamma^{\mu\dagger}p'_\mu - m) = 0$; insert $\gamma^0\gamma^0 = \mathbb 1$ on the left of the bracket and multiply by $\gamma^0$ on the right: $\bar u(p')(\gamma^0\gamma^{\mu\dagger}\gamma^0p'_\mu - m) = 0$, and $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]): $\bar u(p')\slashed{p}' = m\,\bar u(p')$ (the home of this conjugate equation: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], 2, this step being its [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10b|second route]]). Each acts only when the slashed momentum stands next to its own spinor.
+> **1. The Dirac equation from both sides.** $\slashed{p}\,u(p) = m\,u(p)$ by hypothesis. For $u(p')$: take the adjoint of $(\slashed{p}' - m)u(p') = 0$ with $p'_\mu$ real, $u^\dagger(p')(\gamma^{\mu\dagger}p'_\mu - m) = 0$; insert $\gamma^0\gamma^0 = \mathbb 1$ on the left of the bracket and multiply by $\gamma^0$ on the right: $\bar u(p')(\gamma^0\gamma^{\mu\dagger}\gamma^0p'_\mu - m) = 0$, and $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]): $\bar u(p')\slashed{p}' = m\,\bar u(p')$ (the home of this conjugate equation: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], 2, this step being its [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10b|second route]]). Each acts only when the slashed momentum stands next to its own spinor.
 >
 > **2. Split $\gamma^\mu$ in half.** Using step 1 once on each side (with $m \ne 0$):
 >
@@ -368,7 +412,7 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^der-c5a-11-9
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]]
 
 > [!derivation]- Derivation (second route: Problem Set 5, Problem 3, as the user wrote it)
 > **1. Expand the right side.** With $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ and $q = p' - p$, $i\sigma^{\mu\nu}q_\nu = i\cdot\frac i2(\gamma^\mu\gamma^\nu - \gamma^\nu\gamma^\mu)(p' - p)_\nu = -\frac12(\gamma^\mu\slashed{p}' - \slashed{p}'\gamma^\mu - \gamma^\mu\slashed{p} + \slashed{p}\gamma^\mu)$. So the bracket is $\frac1{2m}\bigl[p^\mu + p'^\mu - \frac12(\gamma^\mu\slashed{p}' - \slashed{p}'\gamma^\mu - \gamma^\mu\slashed{p} + \slashed{p}\gamma^\mu)\bigr]$.
@@ -390,7 +434,7 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^der-c5a-11-9b
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]]
 
 > [!remark] Remark: What the Gordon identity says
 > The left side is the matrix element of the Dirac current $\bar\psi\gamma^\mu\psi$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]]), the current a photon couples to. The identity splits it in two. The term $(p + p')^\mu/2m$ has the momentum structure of the current of a charged scalar, $i(\phi^*\partial^\mu\phi - \phi\partial^\mu\phi^*)$ ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]], sign aside): pure convection. The term with $\sigma^{\mu\nu}q_\nu$ involves the spin ($\sigma^{ij} = 2S^{ij}$, twice the spin operator); coupled to $q_\nu A_\mu$, i.e. to $F_{\mu\nu}$, it is a magnetic-moment interaction $\propto\sigma^{\mu\nu}F_{\mu\nu}$, and its size relative to convection is what gives the Dirac electron $g = 2$ — the field-theoretic form of [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]]. With interactions the vertex becomes $\gamma^\mu F_1(q^2) + \frac{i\sigma^{\mu\nu}q_\nu}{2m}F_2(q^2)$, and the Gordon identity identifies $F_2(0)$ as the anomalous magnetic moment (PS §6.2; QFT C8, planned).
@@ -413,7 +457,7 @@ These identities shorten strings in which an index is contracted across other $\
 ^rem-c5a-11-3
 
 > [!remark]- Connections
-> - The trace is the inner product that makes the sixteen $\Gamma$'s an orthogonal basis; the same idea expands any $2\times2$ matrix in Pauli matrices (the Fierz check above) and underlies the basis theorem — [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
+> - The trace is the inner product that makes the sixteen $\Gamma$'s an orthogonal basis; the same idea expands any $2\times2$ matrix in Pauli matrices (the Fierz check above) and underlies the basis theorem — [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
 > - Casimir's trick turns spin sums into traces: the spin sums of [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]] are what the trace theorems are for; the Dirac propagator's numerator $\slashed{p} + m$ is the same spin sum, so loop traces use the same identities — [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
 > - The duality $\gamma^5\sigma_{\mu\nu} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\sigma^{\lambda\kappa}$ is the Hodge star of antisymmetric tensors in matrix form; its eigenspaces are the $(1, 0)$ and $(0, 1)$ halves, the same split as $\mathbf E \mp i\mathbf B$ — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > - The Gordon split of the current into convection and spin magnetization is the relativistic version of the Pauli equation's $\frac{e}{2m}(\mathbf L + 2\mathbf S)\cdot\mathbf B$, with $g = 2$ — [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|Theorem §C5a.8.8]].

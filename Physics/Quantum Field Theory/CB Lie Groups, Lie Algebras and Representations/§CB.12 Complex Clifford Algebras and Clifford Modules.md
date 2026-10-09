@@ -11,9 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: J. Figueroa-O'Farrill, Spin Geometry, lecture notes, Edinburgh 2010, version of 18 May 2017, §§1.4.3, 2.2–2.4, 3.3 (https://empg.maths.ed.ac.uk/Activities/Spin/SpinNotes.pdf, read via the Internet Archive copy of 27 Sep 2024; convention $x^2 = -Q(x)$) · E. Meinrenken, Clifford Algebras and Lie Groups, lecture notes, Toronto, Fall 2009, Ch. 2 §2.4 (https://www.math.toronto.edu/mein/teaching/LieClifford/cl12.pdf) · P. Woit, Quantum Theory, Groups and Representations, §28.1 ("Cliff(2d, ℂ) ↔ M(2^d, ℂ)", stated there without proof), §29.1 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · Peskin & Schroeder, §3.2 · the user's PHY 513 notes, Ch. 8 §8.1 · the rest written here.*
 
-Why do the Dirac matrices have to be $4\times4$, and why are any two sets of them conjugate? After complexification every Clifford algebra of an $n$-dimensional nondegenerate space is one complex algebra $\mathrm{Cl}_n(\mathbb C)$, and that algebra is a full matrix algebra ($n$ even) or a sum of two ($n$ odd). A matrix algebra has exactly one irreducible module, which gives the dimension $2^{\lfloor n/2\rfloor}$ of spinors and Pauli's fundamental theorem as corollaries. The section builds on [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]]–[[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.11]] and on Schur and Burnside ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-11|Theorem §CB.6.11]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-12|Theorem §CB.6.12]]); the course's statements (Pauli's theorem, uniqueness of spinor space, the $4\times4$ bound) are shown as embeds at the points where they become corollaries.
-
-<!-- MOVE row (CB-INVENTORY): ★ Remark rem-c5a-1-5 (complexified Clifford algebra ≅ M₄(ℂ)) is embedded below; it is to be moved here when this section is written (batch 5; SPEC-CB groups the §C5a.1 moves with batch 6 — settle then), as the n = 4 case of Theorem §CB.12.5. -->
+Why do the Dirac matrices have to be $4\times4$, and why are any two sets of them conjugate? After complexification every Clifford algebra of an $n$-dimensional nondegenerate space is one complex algebra $\mathrm{Cl}_n(\mathbb C)$, and that algebra is a full matrix algebra ($n$ even) or a sum of two ($n$ odd). A matrix algebra has exactly one irreducible module, which gives the dimension $2^{\lfloor n/2\rfloor}$ of spinors and Pauli's fundamental theorem as corollaries. The section builds on [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]]–[[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.11]] and on Schur and Burnside ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-11|Theorem §CB.6.11]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-12|Theorem §CB.6.12]]); the course's statements (Pauli's theorem, uniqueness of spinor space, the $4\times4$ bound) are stated at the points where they become corollaries, and the section closes with the Hermitian form that the Dirac matrices single out, the Dirac form (first written in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]]–[[§C5a.2 The Dirac Form|§C5a.2]]).
 
 ## Complexification
 
@@ -57,14 +55,14 @@ Why do the Dirac matrices have to be $4\times4$, and why are any two sets of the
 >
 > **What the proof shows.**
 > - ⚑ By-product: the signature is lost after complexification; this is why the complex Dirac matrices of the $(+,-,-,-)$ and $(-,+,+,+)$ conventions differ only by a factor $i$, and why reality questions (Majorana spinors) must be asked of the real algebra ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^rem-cb-11-1|§CB.11, ★ Remark: The real classification (not used in the course)]]).
-> - Used next: Theorems §CB.12.5–§CB.12.7 reduce every complex module question to $\mathrm{Cl}_n(\mathbb C)$.
+> - Used next: Theorems §CB.12.5–§CB.12.8 reduce every complex module question to $\mathrm{Cl}_n(\mathbb C)$.
 
 ^pf-cb-12-3
 
 *Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-9|Def. §CB.10.9]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-2|Def. §CB.3.2]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-1|Def. §CB.12.1]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-2|Def. §CB.12.2]]
 
 > [!definition] Definition §CB.12.4: Complex Volume Element
-> For a nondegenerate $\mathbb R^{r,s}$ with orthonormal basis $e_1, \dots, e_n$ ($n = r + s$), the **complex volume element** is $\omega_{\mathbb C} = i^{\,n(n-1)/2 + s}\,e_1\cdots e_n \in \mathrm{Cl}(V, q)_{\mathbb C}$, normalized so that $\omega_{\mathbb C}^2 = 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], 2). For $\mathbb R^{1,3}$: $\omega_{\mathbb C} = i\,e_0e_1e_2e_3$; the Dirac module $e_\mu \mapsto \gamma^\mu$ sends it to $\gamma^5$, the course's module $e_\mu \mapsto \gamma_\mu$ to $-\gamma^5$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-17-1|Caution: Two Dirac modules, and the sign of γ⁵]]).
+> For a nondegenerate $\mathbb R^{r,s}$ with orthonormal basis $e_1, \dots, e_n$ ($n = r + s$), the **complex volume element** is $\omega_{\mathbb C} = i^{\,n(n-1)/2 + s}\,e_1\cdots e_n \in \mathrm{Cl}(V, q)_{\mathbb C}$, normalized so that $\omega_{\mathbb C}^2 = 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|Theorem §CB.11.12]], 2). For $\mathbb R^{1,3}$: $\omega_{\mathbb C} = i\,e_0e_1e_2e_3$; the Dirac module $e_\mu \mapsto \gamma^\mu$ sends it to $\gamma^5$, the course's module $e_\mu \mapsto \gamma_\mu$ to $-\gamma^5$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-17-1|Caution: Two Dirac modules, and the sign of γ⁵]]).
 >
 > *Source (planned): written here*
 
@@ -78,14 +76,14 @@ Why do the Dirac matrices have to be $4\times4$, and why are any two sets of the
 >
 > In particular $\mathrm{Cl}(1,3)_{\mathbb C} \cong M_4(\mathbb C)$, and $\mathrm{Cl}(3,0)_{\mathbb C} \cong M_2(\mathbb C)\oplus M_2(\mathbb C)$.
 >
-> *Source: Figueroa-O'Farrill, Spin Geometry, Prop. 2.10, Cor. 2.11 · Meinrenken, Clifford Algebras and Lie Groups, Prop. 2.5 · Woit, §28.1 (statement) · the $n = 4$ case: [[§C5a.1 Spinor Space and the Clifford Action#^rem-c5a-1-5|§C5a.1, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]*
+> *Source: Figueroa-O'Farrill, Spin Geometry, Prop. 2.10, Cor. 2.11 · Meinrenken, Clifford Algebras and Lie Groups, Prop. 2.5 · Woit, §28.1 (statement) · the $n = 4$ case: [[§CB.12 Complex Clifford Algebras and Clifford Modules#^rem-cb-12-1|§CB.12, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]*
 
 ^thm-cb-12-5
 
 > [!proof]- Proof
 > *Source: J. Figueroa-O'Farrill, Spin Geometry, §2.4, Prop. 2.10 (complex Bott periodicity $C\ell(n+2) \cong C\ell(n)\otimes_{\mathbb C}\mathbb C(2)$, by an explicit Clifford map, surjectivity and dimension) and Cor. 2.11 (induction from $C\ell(0) \cong \mathbb C$, $C\ell(1) \cong \mathbb C\oplus\mathbb C$) · E. Meinrenken, Clifford Algebras and Lie Groups, §2.4, Prop. 2.5 (same result via $\mathrm{Cl}(2m) \cong \operatorname{End}(\Lambda\mathbb C^m)$) · P. Woit, Quantum Theory, Groups and Representations, §28.1 (statement). Here $\mathrm{Cl}_n(\mathbb C)\otimes M_2(\mathbb C)$ is written as $M_2(\mathrm{Cl}_n(\mathbb C))$, $2\times2$ matrices with entries in $\mathrm{Cl}_n(\mathbb C)$, and the generators are adapted to the sign $vv = +q(v)$; part 2 written here.*
 >
-> **Step 1** (start). $\mathrm{Cl}_0(\mathbb C) = \mathbb C$ (no generators, $T(0) = \mathbb C$, $I_q = 0$). $\mathrm{Cl}_1(\mathbb C)$ has basis $1, e$ with $e^2 = 1$; $e \mapsto (1, -1)$ is Clifford into $\mathbb C\oplus\mathbb C$, onto since $(1,1)$, $(1,-1)$ span, so $\mathrm{Cl}_1(\mathbb C) \cong \mathbb C\oplus\mathbb C$ (as in Step 1 of the proof of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-11|Theorem §CB.11.11]]).
+> **Step 1** (start). $\mathrm{Cl}_0(\mathbb C) = \mathbb C$ (no generators, $T(0) = \mathbb C$, $I_q = 0$). $\mathrm{Cl}_1(\mathbb C)$ has basis $1, e$ with $e^2 = 1$; $e \mapsto (1, -1)$ is Clifford into $\mathbb C\oplus\mathbb C$, onto since $(1,1)$, $(1,-1)$ span, so $\mathrm{Cl}_1(\mathbb C) \cong \mathbb C\oplus\mathbb C$ (as in Step 1 of the proof of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17|Theorem §CB.11.17]]).
 >
 > **Step 2** (a Clifford map $\mathbb C^{n+2} \to M_2(\mathrm{Cl}_n(\mathbb C))$). Write $\mathbb C^{n+2} = \mathbb C^n\oplus\mathbb C\varepsilon_{n+1}\oplus\mathbb C\varepsilon_{n+2}$ and set, for $x \in \mathbb C^n \subset \mathrm{Cl}_n(\mathbb C)$,
 >
@@ -105,21 +103,26 @@ Why do the Dirac matrices have to be $4\times4$, and why are any two sets of the
 >
 > **Step 5** (induction). Block matrices identify $M_2(M_k(\mathbb C)) = M_{2k}(\mathbb C)$, and $M_2(\mathbb C\oplus\mathbb C) = M_2(\mathbb C)\oplus M_2(\mathbb C)$ (take components entrywise). From Steps 1 and 4, $\mathrm{Cl}_{2m}(\mathbb C) \cong M_2(\cdots M_2(\mathbb C)\cdots) = M_{2^m}(\mathbb C)$ and $\mathrm{Cl}_{2m+1}(\mathbb C) \cong M_{2^m}(\mathbb C\oplus\mathbb C) = M_{2^m}(\mathbb C)\oplus M_{2^m}(\mathbb C)$. This is part 1 and the first half of part 2.
 >
-> **Step 6** (part 2: the central idempotents). Let $n = 2m + 1$ and $\omega_{\mathbb C} = i^{n(n-1)/2}e_1\cdots e_n$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]] with $s = 0$). By [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], 3 ($n$ odd; the proof is the same over $\mathbb C$) it is central, and by part 2 there $\omega_{\mathbb C}^2 = i^{n(n-1)}(-1)^{n(n-1)/2} = 1$. Put $P_\pm = \frac12(1 \pm \omega_{\mathbb C})$: central, $P_+ + P_- = 1$, $P_\pm^2 = \frac14(1 \pm 2\omega_{\mathbb C} + 1) = P_\pm$, $P_+P_- = \frac14(1 - \omega_{\mathbb C}^2) = 0$, and $\omega_{\mathbb C}P_\pm = \frac12(\omega_{\mathbb C} \pm 1) = \pm P_\pm$. Neither is $0$, since $\omega_{\mathbb C}$ is a multiple of the basis element $e_{\{1, \dots, n\}} \ne e_\varnothing$. Transport them by the isomorphism $\psi$ of Step 5. The centre of $M_N(\mathbb C)$ is $\mathbb C\mathbb 1$: if $XE_{ab} = E_{ab}X$, comparing entries $(i, b)$ and $(a, j)$ gives $X_{ia} = \delta_{ia}X_{bb}$; so the centre of $M_N\oplus M_N$ is $\{(\lambda, \mu)\}$, whose idempotents have $\lambda, \mu \in \{0, 1\}$. Two nonzero central idempotents with sum $(1, 1)$ and product $0$ must be $(1, 0)$ and $(0, 1)$. So $\psi(\mathrm{Cl}\,P_\pm)$ are the two summands, and $\omega_{\mathbb C}$ acts on them as $\pm1$.
+> **Step 6** (part 2: the central idempotents). Let $n = 2m + 1$ and $\omega_{\mathbb C} = i^{n(n-1)/2}e_1\cdots e_n$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]] with $s = 0$). By [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|Theorem §CB.11.12]], 3 ($n$ odd; the proof is the same over $\mathbb C$) it is central, and by part 2 there $\omega_{\mathbb C}^2 = i^{n(n-1)}(-1)^{n(n-1)/2} = 1$. Put $P_\pm = \frac12(1 \pm \omega_{\mathbb C})$: central, $P_+ + P_- = 1$, $P_\pm^2 = \frac14(1 \pm 2\omega_{\mathbb C} + 1) = P_\pm$, $P_+P_- = \frac14(1 - \omega_{\mathbb C}^2) = 0$, and $\omega_{\mathbb C}P_\pm = \frac12(\omega_{\mathbb C} \pm 1) = \pm P_\pm$. Neither is $0$, since $\omega_{\mathbb C}$ is a multiple of the basis element $e_{\{1, \dots, n\}} \ne e_\varnothing$. Transport them by the isomorphism $\psi$ of Step 5. The centre of $M_N(\mathbb C)$ is $\mathbb C\mathbb 1$: if $XE_{ab} = E_{ab}X$, comparing entries $(i, b)$ and $(a, j)$ gives $X_{ia} = \delta_{ia}X_{bb}$; so the centre of $M_N\oplus M_N$ is $\{(\lambda, \mu)\}$, whose idempotents have $\lambda, \mu \in \{0, 1\}$. Two nonzero central idempotents with sum $(1, 1)$ and product $0$ must be $(1, 0)$ and $(0, 1)$. So $\psi(\mathrm{Cl}\,P_\pm)$ are the two summands, and $\omega_{\mathbb C}$ acts on them as $\pm1$.
 >
 > **Step 7** (examples). $\mathrm{Cl}(1,3)_{\mathbb C} \cong \mathrm{Cl}_4(\mathbb C) \cong M_4(\mathbb C)$ and $\mathrm{Cl}(3,0)_{\mathbb C} \cong \mathrm{Cl}_3(\mathbb C) \cong M_2(\mathbb C)\oplus M_2(\mathbb C)$, by [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]] and Step 5.
 >
 > **What the proof shows.**
 > - ⚑ By-product: complex Bott periodicity $\mathrm{Cl}_{n+2}(\mathbb C) \cong M_2(\mathrm{Cl}_n(\mathbb C))$: adding two dimensions doubles the spinor dimension. Unrolled from $n = 4$, the generators of Step 2 are the Dirac matrices built as Kronecker products of Pauli matrices.
-> - The course's $n = 4$ argument ([[§C5a.1 Spinor Space and the Clifford Action#^rem-c5a-1-5|§C5a.1, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]) gets the same result from a $4\times4$ module and a dimension count; here no module is assumed.
+> - The course's $n = 4$ argument ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^rem-cb-12-1|§CB.12, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]) gets the same result from a $4\times4$ module and a dimension count; here no module is assumed.
 
 ^pf-cb-12-5
 
-*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-11|Theorem §CB.11.11]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|Theorem §CB.11.12]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17|Theorem §CB.11.17]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]]
 
-The $n = 4$ case as stated in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]:
+The $n = 4$ case, as the course states it (★, first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]):
 
-![[§C5a.1 Spinor Space and the Clifford Action#^rem-c5a-1-5]]
+> [!remark]- ★ Remark: The complexified Clifford algebra is the full matrix algebra
+> Let $\mathrm{Cl}$ be the complex associative algebra generated by four symbols $\gamma^\mu$ subject only to $\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu}$ (the complexified Clifford algebra of Minkowski space). Step 1 of Derivation §CB.11.8 used only these relations to rewrite any product as $\pm$ one of the sixteen ordered products $\Gamma_A$, so $\dim\mathrm{Cl} \le 16$. A four-dimensional representation maps $\mathrm{Cl}$ onto $M_4(\mathbb C)$, because the images of the $\Gamma_A$ are a basis of $M_4(\mathbb C)$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], 4); a surjection onto a 16-dimensional space from a space of dimension at most 16 is an isomorphism ([[Fundamental theorem of linear maps|LADR Thm. 3.21]]): $\mathrm{Cl} \cong M_4(\mathbb C)$. A representation of the Clifford algebra is therefore the same as a module over the matrix algebra $M_4(\mathbb C)$, and by the structure theory of matrix algebras (not proved in the vault) every such module is a direct sum of copies of $\mathbb C^4$. This is the algebraic reason behind Pauli's theorem and behind "at least $4\times4$": the irreducible module is unique and four-dimensional, and every representation has dimension $4k$.
+>
+> *Source: written here (none of the course sources states the isomorphism); the sixteen-element basis is PS §3.4, p. 50 and Theorem §CB.11.8*
+
+^rem-cb-12-1
 
 > [!theorem] Theorem §CB.12.6: Modules of a Full Matrix Algebra
 > Every finite-dimensional complex representation of $M_N(\mathbb C)$ ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-10|Def. §CB.6.10]]) is equivalent to a direct sum of copies of the defining representation on $\mathbb C^N$. So $\mathbb C^N$ is the only irreducible representation up to equivalence, and an irreducible representation has dimension $N$.
@@ -154,7 +157,7 @@ The $n = 4$ case as stated in [[§C5a.1 Spinor Space and the Clifford Action|§C
 > **Step 5** (irreducibility of $\mathbb C^N$, uniqueness). If $U \subset \mathbb C^N$ is invariant and contains $u = \sum u_a\varepsilon_a \ne 0$, say $u_c \ne 0$, then $E_{bc}u = u_c\varepsilon_b \in U$ for every $b$, so $U = \mathbb C^N$: the defining representation is irreducible. If $W$ is irreducible, Step 4 forces $k = 1$, so $W \cong \mathbb C^N$ and $\dim W = N$.
 >
 > **What the proof shows.**
-> - ⚑ By-product: every module of $M_N(\mathbb C)$ has dimension divisible by $N$ — the general form of "every representation of the Dirac algebra has dimension $4k$" ([[§C5a.1 Spinor Space and the Clifford Action#^rem-c5a-1-5|§C5a.1, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]).
+> - ⚑ By-product: every module of $M_N(\mathbb C)$ has dimension divisible by $N$ — the general form of "every representation of the Dirac algebra has dimension $4k$" ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^rem-cb-12-1|§CB.12, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]).
 > - No inner product and no averaging is used: complete reducibility here is forced by the matrix units, not by unitarity.
 
 ^pf-cb-12-6
@@ -163,15 +166,24 @@ The $n = 4$ case as stated in [[§C5a.1 Spinor Space and the Clifford Action|§C
 
 ## Irreducible Clifford modules and Pauli's theorem
 
-> [!theorem] Theorem §CB.12.7: Irreducible Clifford Modules
+Intertwiners and equivalence for the course's Clifford representations, the version of [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-3|Def. §CB.6.3]] for the Clifford relation:
+
+> [!definition] Definition §CB.12.7: Intertwiners of Clifford Representations
+> Let $\Gamma^\mu$ on $V$ and $\tilde\Gamma^\mu$ on $\tilde V$ satisfy the Clifford relation ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]]). A linear map $T : V \to \tilde V$ is an **intertwiner** if $T\,\Gamma^\mu = \tilde\Gamma^\mu\,T$ for $\mu = 0, \dots, 3$; the two representations are **equivalent** if an invertible intertwiner exists. The same words apply to two sets of $4\times4$ matrices acting on columns $\mathbb C^4$. (Intertwiners for groups and Lie algebras: [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-5|Theorem §CB.6.5]]; equivalence: [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-6|Def. §CB.2.6]].)
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Definition, "Equivalence and reducibility": "they differ only by a change of basis") · PS §3.2, p. 41 ("unitarily equivalent") · the Clifford version written here*
+
+^def-cb-12-7
+
+> [!theorem] Theorem §CB.12.8: Irreducible Clifford Modules
 > Let $(V, q)$ be nondegenerate real (or complex) of dimension $n$.
 > 1. $n$ even: there is exactly one irreducible complex Clifford module up to equivalence; its dimension is $2^{n/2}$.
 > 2. $n$ odd: there are exactly two, of dimension $2^{(n-1)/2}$, on which $\omega_{\mathbb C}$ acts as $+1$ and as $-1$.
 > 3. Every finite-dimensional complex Clifford module is a direct sum of irreducible ones.
 >
-> *Source: Figueroa-O'Farrill, Spin Geometry, §1.4.3 and §3.3 · written here (from Theorems §CB.12.3, §CB.12.5, §CB.12.6) · the Minkowski bound: [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]*
+> *Source: Figueroa-O'Farrill, Spin Geometry, §1.4.3 and §3.3 · written here (from Theorems §CB.12.3, §CB.12.5, §CB.12.6) · the Minkowski bound: [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9|Theorem §CB.12.9]]*
 
-^thm-cb-12-7
+^thm-cb-12-8
 
 > [!proof]- Proof
 > *Source: J. Figueroa-O'Farrill, Spin Geometry, §1.4.3 ("for $V$ finite-dimensional and $Q$ nondegenerate there are (up to equivalence) either one or two irreducible representations") and §3.3 (the volume element distinguishes the two for $d$ odd: "$\omega = \pm1$ on $P_\pm$") · assembled here from Theorems §CB.12.3, §CB.12.5, §CB.12.6.*
@@ -185,112 +197,350 @@ The $n = 4$ case as stated in [[§C5a.1 Spinor Space and the Clifford Action|§C
 > **Step 4** ($n$ odd: parts 2 and 3). By Theorem §CB.12.6, $W_+$ and $W_-$ are direct sums of copies of $\mathbb C^{2^{(n-1)/2}}$; so every module is a direct sum of irreducible ones on each of which $\omega_{\mathbb C} = +1$ or $-1$ (part 3). An irreducible module has $W_+ = 0$ or $W_- = 0$, hence is one copy, of dimension $2^{(n-1)/2}$, with $\omega_{\mathbb C} = +1$ or $-1$; both occur (let $M\oplus M$ act through either projection). The two are inequivalent: an intertwiner $S$ from the first to the second satisfies $S = S\gamma_+(\omega_{\mathbb C}) = \gamma_-(\omega_{\mathbb C})S = -S$, so $S = 0$. Two irreducible modules with the same sign are both the defining module of the same summand, hence equivalent.
 >
 > **What the proof shows.**
-> - The dimension $2^{\lfloor n/2\rfloor}$ of spinors is the size of the matrix algebra; for $n = 4$ it is the bound $n \ge 4$ of [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]] with equality.
+> - The dimension $2^{\lfloor n/2\rfloor}$ of spinors is the size of the matrix algebra; for $n = 4$ it is the bound $n \ge 4$ of [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9|Theorem §CB.12.9]] with equality.
 > - For $n$ odd the label of an irreducible module is the eigenvalue of the central element $\omega_{\mathbb C}$; for $\mathbb R^3$ this is the sign choice $e_i \mapsto \pm\sigma^i$ ([[§CB.14 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-14-1|Theorem §CB.14.1]]).
 
-^pf-cb-12-7
+^pf-cb-12-8
 
 *Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-6|Theorem §CB.12.6]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]]
 
-The Minkowski case of part 1 proved by hand in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (evenness and the bound $n \ge 4$):
+The Minkowski case of part 1 by hand, for matrices, with a second route for $n = 2$ (the physics reading is [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]):
 
-![[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3]]
+> [!theorem] Theorem §CB.12.9: Dirac Matrices Have Even Size, at Least Four
+> Let $\gamma^0, \dots, \gamma^3$ be complex $n\times n$ matrices satisfying the Clifford relation ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]). Then
+> 1. each $\gamma^\mu$ is traceless; $\gamma^0$ is diagonalizable with eigenvalues $+1$ and $-1$, each $n/2$ times, and each $\gamma^i$ with $+i$ and $-i$, each $n/2$ times; in particular **$n$ is even**;
+> 2. $n \ge 4$.
+>
+> *Source: PS §3.2, p. 41 ("these matrices must be at least 4 × 4") · the user's PHY 513 notes, Ch. 8 §8.1 ("four is the smallest dimension in which (clifford) can be solved") · the user's pre-course notes, §5.1 ("Since at most $N^2$ matrices of size $N\times N$ are independent, $N \ge 4$") · the evenness and the direct $2\times2$ argument written out here (first for the physics statement, [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]])*
 
-> [!theorem] Theorem §CB.12.8: Pauli's Theorem, General Form
+^thm-cb-12-9
+
+> [!derivation]- Derivation
+> **1. Traceless.** Fix $\mu$ and pick $\nu \ne \mu$. By anticommutation and [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15|Theorem §CB.10.15]], 1, $(\gamma^\nu)^{-1}\gamma^\mu\gamma^\nu = -(\gamma^\nu)^{-1}\gamma^\nu\gamma^\mu = -\gamma^\mu$. Take the trace and use its cyclicity ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]): $\operatorname{tr}\gamma^\mu = -\operatorname{tr}\bigl((\gamma^\nu)^{-1}\gamma^\mu\gamma^\nu\bigr) = -\operatorname{tr}\bigl(\gamma^\mu\gamma^\nu(\gamma^\nu)^{-1}\bigr) = -\operatorname{tr}\gamma^\mu$, so $\operatorname{tr}\gamma^\mu = 0$. (This is the case $|A| = 1$ of step 3 of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-8|Derivation §CB.11.8]], which proves it for every product of distinct $\gamma$'s in any size $n$.)
+>
+> **2. Eigenvalues of γ⁰.** $(\gamma^0)^2 = \mathbb 1_n$, so the minimal polynomial of $\gamma^0$ divides $z^2 - 1 = (z - 1)(z + 1)$, which has distinct zeros; hence $\gamma^0$ is diagonalizable with eigenvalues in $\{1, -1\}$ ([[§17 Diagonalizable Operators#^ladr-5-62|LADR Thm. 5.62]]). Let $n_+$, $n_-$ be their multiplicities: $n_+ + n_- = n$. The trace is the sum of the eigenvalues with multiplicity ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-52|LADR Thm. 8.52]]), so step 1 gives $n_+ - n_- = 0$. Hence $n_+ = n_- = n/2$, and $n$ is even. ⚑ By-product: $n$ is even → part 1 of the statement. ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-9|Derivation §CB.11.9]] runs the same argument once $n = 4$ is known.)
+>
+> **3. Eigenvalues of γⁱ.** $(\gamma^i)^2 = -\mathbb 1_n$: the minimal polynomial divides $z^2 + 1 = (z - i)(z + i)$, again with distinct zeros, so $\gamma^i$ is diagonalizable with eigenvalues in $\{i, -i\}$; the trace gives $i(n_+ - n_-) = 0$, so $n_+ = n_- = n/2$.
+>
+> **4. At least four.** The sixteen ordered products $\gamma^{\mu_1}\cdots\gamma^{\mu_k}$ ($\mu_1 < \dots < \mu_k$, including $\mathbb 1_n$) are linearly independent in the $n^2$-dimensional space of $n\times n$ matrices, so $n^2 \ge 16$, $n \ge 4$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], part 3, proved there for every $n$; not repeated). Steps 2 and 4 together leave $n \in \{4, 6, 8, \dots\}$.
+>
+> **What the derivation shows**
+> - Only the relation was used: the bounds hold for every set of matrices satisfying it, in particular for every first-order square root of the Klein–Gordon operator ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]).
+> - Sizes $n = 6, 10, \dots$ pass both tests here; that every size is in fact a multiple of four is the structure of the Clifford algebra ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^rem-cb-12-1|§CB.12, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]).
+
+^der-cb-12-9
+
+> [!derivation]- Derivation (second route: n = 2 directly, by expanding in Pauli matrices)
+> **1. Traceless 2×2 matrices.** $\mathbb 1_2, \sigma^1, \sigma^2, \sigma^3$ are a basis of the $2\times2$ complex matrices, with $\operatorname{tr}\mathbb 1_2 = 2$ and $\operatorname{tr}\sigma^i = 0$ ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]). So $\gamma = a_0\mathbb 1_2 + \mathbf a\cdot\boldsymbol\sigma$ has $\operatorname{tr}\gamma = 2a_0$. By step 1 above each $\gamma^\mu$ is traceless, so $\gamma^\mu = \mathbf a^\mu\cdot\boldsymbol\sigma = \sum_ia^\mu_i\sigma^i$ with $\mathbf a^\mu \in \mathbb C^3$.
+>
+> **2. Anticommutators of such matrices.** With $\sigma^i\sigma^j = \delta^{ij}\mathbb 1_2 + i\varepsilon^{ijk}\sigma^k$ (QM Theorem §B6.1.4), for $\mathbf a, \mathbf b \in \mathbb C^3$:
+>
+> $$
+> \{\mathbf a\cdot\boldsymbol\sigma, \mathbf b\cdot\boldsymbol\sigma\} = \sum_{i,j}a_ib_j\bigl(\sigma^i\sigma^j + \sigma^j\sigma^i\bigr) = \sum_{i,j}a_ib_j\bigl(2\delta^{ij}\mathbb 1_2 + i\varepsilon^{ijk}\sigma^k + i\varepsilon^{jik}\sigma^k\bigr) = 2\,(\mathbf a\cdot\mathbf b)\,\mathbb 1_2 ,
+> $$
+>
+> where $\mathbf a\cdot\mathbf b \equiv \sum_ia_ib_i$ (no complex conjugation), and the $\varepsilon$ terms cancel because $\varepsilon^{jik} = -\varepsilon^{ijk}$.
+>
+> **3. The relation as a condition on vectors.** By step 2, $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_2$ says $\mathbf a^\mu\cdot\mathbf a^\nu = g^{\mu\nu}$ for $\mu, \nu = 0, \dots, 3$.
+>
+> **4. Four vectors in ℂ³ are dependent.** $\mathbb C^3$ is spanned by three vectors, so a linearly independent list has at most three ([[§4 Span and Linear Independence#^ladr-2-22|LADR Thm. 2.22]]): there are $c_0, \dots, c_3$, not all $0$, with $\sum_\mu c_\mu\mathbf a^\mu = 0$.
+>
+> **5. Contradiction.** Dot this with $\mathbf a^\nu$ and use step 3: $0 = \sum_\mu c_\mu\,\mathbf a^\mu\cdot\mathbf a^\nu = \sum_\mu c_\mu g^{\mu\nu} = c_\nu g^{\nu\nu}$ (no sum; $g$ is diagonal) for each $\nu$. Since $g^{\nu\nu} = \pm1$, every $c_\nu = 0$, against step 4. So no four $2\times2$ matrices satisfy the relation.
+>
+> **What the derivation shows**
+> - This is PS's parenthesis "there is no fourth $2\times2$ matrix that anticommutes with the three Pauli sigma matrices" made explicit, and the user's pre-course remark "a $2\times2$ realization fails".
+> - Three vectors with $\mathbf a^\mu\cdot\mathbf a^\nu = g^{\mu\nu}$ do exist in $\mathbb C^3$: with one time and two space directions, $2\times2$ matrices suffice → Example §CB.11.18.
+> - The mechanism, anticommuting matrices are linearly independent, is the same as in the sixteen-products bound ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]); here it is applied to the four $\gamma$'s themselves inside a three-dimensional space.
+
+^der-cb-12-9b
+
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15|Theorem §CB.10.15]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-52|LADR Thm. 8.52]], [[§17 Diagonalizable Operators#^ladr-5-62|LADR Thm. 5.62]], [[§4 Span and Linear Independence#^ladr-2-22|LADR Thm. 2.22]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
+
+> [!theorem] Theorem §CB.12.10: Pauli's Theorem, General Form
 > Let $n = \dim V$ be even and $\gamma$, $\gamma'$ two Clifford modules of $(V, q)$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]]) on spaces $W$, $W'$ of the same dimension. Then there is an invertible $S : W \to W'$ with $\gamma'(v) = S\gamma(v)S^{-1}$ for all $v \in V$. If the modules are irreducible ($\dim W = 2^{n/2}$), $S$ is unique up to a nonzero factor ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-11|Theorem §CB.6.11]]). For $n$ odd the same holds for modules on which $\omega_{\mathbb C}$ acts by the same sign.
 >
-> *Source: written here (corollary of Theorem §CB.12.7) · Peskin & Schroeder, §3.2 (statement for $n = 4$)*
+> *Source: written here (corollary of Theorem §CB.12.8) · Peskin & Schroeder, §3.2 (statement for $n = 4$)*
 
-^thm-cb-12-8
+^thm-cb-12-10
 
 > [!proof]- Proof
-> *Source: written here as a corollary of Theorem §CB.12.7 (Figueroa-O'Farrill, Spin Geometry, §1.4.3, states the uniqueness of the irreducible representations; Peskin & Schroeder, §3.2, p. 41, state the $4\times4$ case). The course proves the $n = 4$ case directly, by averaging over the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-12|Theorem §C5a.1.12]], Derivation); both proofs are kept.*
+> *Source: written here as a corollary of Theorem §CB.12.8 (Figueroa-O'Farrill, Spin Geometry, §1.4.3, states the uniqueness of the irreducible representations; Peskin & Schroeder, §3.2, p. 41, state the $4\times4$ case). The course proves the $n = 4$ case directly, by averaging over the sixteen products ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], Derivation); both proofs are kept.*
 >
-> **Step 1** (both modules are sums of the same irreducible). Let $n$ be even, and $S_0$ the irreducible module of dimension $N = 2^{n/2}$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]], 1). By part 3 there, $W \cong S_0^{\oplus k}$ and $W' \cong S_0^{\oplus k'}$ as modules; $\dim W = kN$ and $\dim W' = k'N$, so $\dim W = \dim W'$ gives $k = k'$.
+> **Step 1** (both modules are sums of the same irreducible). Let $n$ be even, and $S_0$ the irreducible module of dimension $N = 2^{n/2}$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-8|Theorem §CB.12.8]], 1). By part 3 there, $W \cong S_0^{\oplus k}$ and $W' \cong S_0^{\oplus k'}$ as modules; $\dim W = kN$ and $\dim W' = k'N$, so $\dim W = \dim W'$ gives $k = k'$.
 >
 > **Step 2** (the intertwiner). Composing the equivalence $W \to S_0^{\oplus k}$ with the inverse of $W' \to S_0^{\oplus k}$ gives an invertible linear $S : W \to W'$ with $S\gamma(x) = \gamma'(x)S$ for all $x \in \mathrm{Cl}(V, q)$; for $x = v \in V$, $\gamma'(v) = S\gamma(v)S^{-1}$. (By [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]] it is enough that this holds on $V$: the modules are determined by the $\gamma(v)$.)
 >
 > **Step 3** (uniqueness up to a factor). If $W$, $W'$ are irreducible and $S$, $S'$ are two such maps, $S^{-1}S'$ is an invertible intertwiner from the irreducible $W$ to itself, hence $S^{-1}S' = \lambda\mathbb 1$ by Schur ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-11|Theorem §CB.6.11]]), $\lambda \ne 0$: $S' = \lambda S$.
 >
-> **Step 4** ($n$ odd). If $\omega_{\mathbb C}$ acts by the same sign on $W$ and $W'$, Step 4 of the proof of Theorem §CB.12.7 shows both are sums of copies of the same irreducible module of dimension $2^{(n-1)/2}$; Steps 1–3 apply verbatim.
+> **Step 4** ($n$ odd). If $\omega_{\mathbb C}$ acts by the same sign on $W$ and $W'$, Step 4 of the proof of Theorem §CB.12.8 shows both are sums of copies of the same irreducible module of dimension $2^{(n-1)/2}$; Steps 1–3 apply verbatim.
 >
 > **What the proof shows.**
-> - A change of Dirac matrices is a change of basis of spinor space and nothing else ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-13|Theorem §C5a.1.13]]); the only freedom left is the overall factor $\lambda$, fixed up to a phase by a unitarity requirement (Theorem §C5a.1.12, 2).
+> - A change of Dirac matrices is a change of basis of spinor space and nothing else ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-13|Theorem §CB.12.13]]); the only freedom left is the overall factor $\lambda$, fixed up to a phase by a unitarity requirement (Theorem §CB.12.12, 2).
 > - For $n$ odd the hypothesis on $\omega_{\mathbb C}$ cannot be dropped: $\sigma^i$ and $-\sigma^i$ are not conjugate, since conjugation preserves $\sigma^1\sigma^2\sigma^3 = i\mathbb 1$ while $(-\sigma^1)(-\sigma^2)(-\sigma^3) = -i\mathbb 1$.
 
-^pf-cb-12-8
+^pf-cb-12-10
 
-*Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-11|Theorem §CB.6.11]]
+*Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-8|Theorem §CB.12.8]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-11|Theorem §CB.6.11]]
 
-Pauli's theorem, the uniqueness of spinor space, and changes of basis as intertwiners, in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]:
+Pauli's theorem in the course's form, for $4\times4$ matrices, with the averaging proof (first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]). Its part 2 concerns bases in which the matrices satisfy $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$:
 
-![[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-12]]
+> [!definition] Definition §CB.12.11: Hermitian Basis
+> A basis of $V$ is **Hermitian** (for the Dirac maps, [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]]) if the matrices satisfy $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ for $\mu = 0, \dots, 3$, i.e. $\gamma^{0\dagger} = \gamma^0$ and $\gamma^{i\dagger} = -\gamma^i$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]). The chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) is one.
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "Hermiticity of the Dirac matrices") · the user's pre-course notes, §5.1 ("Hermiticity": "hypothesis; … arrangeable by a change of basis") · Yu §5.1, eqs. (5.4)–(5.7) · the name written here*
 
-![[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-13]]
+^def-cb-12-11
 
-![[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-14]]
+> [!theorem] Theorem §CB.12.12: Pauli's Fundamental Theorem
+> 1. If $\gamma^\mu$ and $\gamma'^\mu$ are two sets of $4\times4$ Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]), there is an invertible $U$ with $\gamma'^\mu = U\gamma^\mu U^{-1}$ for all $\mu$, unique up to a nonzero factor. Conversely, $U\gamma^\mu U^{-1}$ is a set of Dirac matrices for every invertible $U$.
+> 2. If both sets satisfy $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]), $U$ can be chosen unitary.
+>
+> *Source: PS §3.2, p. 41 ("all 4 × 4 representations of the Dirac algebra are unitarily equivalent", stated) · the user's PHY 513 notes, Ch. 8 §8.1 (paragraph "Uniqueness (Pauli's fundamental theorem)", stated) · Yu §5.2, eq. (5.72) (the converse) · PHY 513, Problem Set 6, Problem 3(a) (the converse for unitary $U$, $\gamma^\mu = U\gamma^\mu_WU^\dagger$, as the user wrote it: step 1 below with $U^{-1} = U^\dagger$; the statement adds "it can be shown that all possible realizations of the Dirac algebra are unitarily equivalent") · the proof (averaging over the sixteen products) written out here*
+
+^thm-cb-12-12
+
+> [!derivation]- Derivation
+> **1. Converse.** $\{U\gamma^\mu U^{-1}, U\gamma^\nu U^{-1}\} = U\{\gamma^\mu, \gamma^\nu\}U^{-1} = 2g^{\mu\nu}U\mathbb 1U^{-1} = 2g^{\mu\nu}\mathbb 1$.
+>
+> **2. The same signs.** Form $\Gamma_A$ and $\Gamma'_A$ from the two sets. By Theorem §CB.11.8, 1, $\Gamma_A\Gamma_B = c_{AB}\Gamma_{A\triangle B}$ and $\Gamma'_A\Gamma'_B = c_{AB}\Gamma'_{A\triangle B}$ with the *same* $c_{AB}$, which depends only on the algebra.
+>
+> **3. An averaged intertwiner.** For any $F \in M_4(\mathbb C)$ set $S_F = \sum_A\Gamma'_AF\Gamma_A^{-1}$ (sixteen terms). For each $B$,
+>
+> $$
+> \Gamma'_BS_F\Gamma_B^{-1} = \sum_A(\Gamma'_B\Gamma'_A)F(\Gamma_B\Gamma_A)^{-1} = \sum_Ac_{BA}\Gamma'_{B\triangle A}\,F\,c_{BA}^{-1}\Gamma_{B\triangle A}^{-1} = \sum_C\Gamma'_CF\Gamma_C^{-1} = S_F ,
+> $$
+>
+> using step 2, $(XY)^{-1} = Y^{-1}X^{-1}$, $c_{BA} = \pm1$, and the change of summation variable $C = B\triangle A$, which runs over all sixteen subsets exactly once as $A$ does ($A = B\triangle C$). So $\Gamma'_BS_F = S_F\Gamma_B$ for all $B$, in particular $\gamma'^\mu S_F = S_F\gamma^\mu$.
+>
+> **4. Some S_F is nonzero.** The entries of $S_{E_{ij}}$ ($E_{ij}$ the matrix units) are $(S_{E_{ij}})_{ab} = \sum_A(\Gamma'_A)_{ai}(\Gamma_A^{-1})_{jb}$. Put $a = i$, $b = j$ and sum over $i, j$: $\sum_{i,j}(S_{E_{ij}})_{ij} = \sum_A\operatorname{tr}\Gamma'_A\operatorname{tr}\Gamma_A^{-1}$. Every term with $A \ne \varnothing$ vanishes ($\Gamma_A^{-1} = \pm\Gamma_A$ is traceless, Theorem §CB.11.8, 2), and $A = \varnothing$ gives $4\cdot4 = 16$. So some $S \equiv S_{E_{ij}} \ne 0$.
+>
+> **5. S is invertible.** If $Sv = 0$, then $S\gamma^\mu v = \gamma'^\mu Sv = 0$: $\ker S$ is invariant under all $\gamma^\mu$, so it is $0$ or $\mathbb C^4$ (Theorem §CB.11.8, 4); it is not $\mathbb C^4$ since $S \ne 0$. (Schur's argument, [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-5|Theorem §CB.6.5]].) Take $U = S$: $\gamma'^\mu = U\gamma^\mu U^{-1}$.
+>
+> **6. Uniqueness.** If also $\gamma'^\mu = V\gamma^\mu V^{-1}$, then $V^{-1}U$ commutes with every $\gamma^\mu$, so $V^{-1}U = c\mathbb 1$ (Theorem §CB.11.8, 4), $c \ne 0$.
+>
+> **7. Unitary choice.** If both sets obey $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, all $\gamma^\mu$, $\gamma'^\mu$ are unitary (Theorem §C5a.2.1, whose step 3 used only this relation and the algebra), hence so are all products $\Gamma_A$, $\Gamma'_A$. Take the adjoint of $\Gamma'_AU = U\Gamma_A$: $U^\dagger\Gamma'^{-1}_A = \Gamma_A^{-1}U^\dagger$, i.e. $\Gamma_AU^\dagger = U^\dagger\Gamma'_A$. Then $U^\dagger U\Gamma_A = U^\dagger\Gamma'_AU = \Gamma_AU^\dagger U$: $U^\dagger U$ commutes with every $\Gamma_A$, so $U^\dagger U = c\mathbb 1$; it is positive definite ($v^\dagger U^\dagger Uv = |Uv|^2 > 0$), so $c > 0$, and $U/\sqrt c$ is unitary and still intertwines.
+>
+> **What the derivation shows**
+> - "There are many realizations of $\gamma^\mu$" (Lecture 7) means one realization in many bases, exactly as spin $\frac12$ has one set of Pauli matrices up to a change of basis. Every basis-independent statement may be proved in the chiral basis and holds everywhere.
+> - The trick of step 3, averaging over a finite group ($\pm\Gamma_A$, $32$ elements), is the finite version of the invariant averaging behind complete reducibility ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-17|Theorem §CB.6.17]]).
+> - Used next: Example §C5a.5.1; the basis independence of $\gamma^5$'s eigenspaces (Theorem §C5a.5.1).
+> - Read without a basis ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-13|Theorem §CB.12.13]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14|Theorem §CB.12.14]]), Pauli's theorem says that a choice of $\gamma$ matrices is a choice of basis of one spinor space; what then happens to spinor components, to $\bar\psi$ and to the Dirac equation is [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]].
+
+^der-cb-12-12
+
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-5|Theorem §CB.6.5]]
+
+Read without a basis: changes of basis are the invertible intertwiners, and spinor space is unique up to isomorphism.
+
+> [!theorem] Theorem §CB.12.13: Changes of Basis Are the Invertible Intertwiners
+> 1. If $\gamma^\mu$ and $\gamma'^\mu$ are the matrices of the Dirac maps in bases $e$ and $e'$, the change-of-basis matrix $U$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]]) is an invertible intertwiner ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-7|Def. §CB.12.7]]) from $\gamma^\mu$ to $\gamma'^\mu$: $U\gamma^\mu = \gamma'^\mu U$.
+> 2. Conversely, if $\gamma^\mu$ are the matrices in a basis $e$ and $U$ is invertible with $U\gamma^\mu U^{-1} = \tilde\gamma^\mu$, then $e'_b \equiv \sum_a(U^{-1})_{ab}e_a$ is a basis in which the Dirac maps have the matrices $\tilde\gamma^\mu$, and $U$ is its change-of-basis matrix.
+>
+> *Source: Yu §5.2, eq. (5.72) ("all representations are equivalent, related by similarity transformations") · the user's PHY 513 notes, Ch. 7 §7.2 · part 2 written here*
+
+^thm-cb-12-13
+
+> [!derivation]- Derivation
+> **1. Part 1.** Theorem §CB.10.14, 1 gives $\gamma'^\mu = U\gamma^\mu U^{-1}$; multiply on the right by $U$.
+>
+> **2. Part 2: e′ is a basis.** The list $e'$ is the image of $e$ under the invertible operator whose matrix in $e$ is $U^{-1}$, so it is a basis.
+>
+> **3. Part 2: its change-of-basis matrix.** $\sum_aU_{ab}e'_a = \sum_aU_{ab}\sum_c(U^{-1})_{ca}e_c = \sum_c(U^{-1}U)_{cb}e_c = e_b$, which is Def. §CB.0.4 with matrix $U$.
+>
+> **4. Part 2: the matrices.** By Theorem §CB.0.5 the matrices of $\Gamma^\mu$ in $e'$ are $U\gamma^\mu U^{-1} = \tilde\gamma^\mu$.
+>
+> **What the derivation shows**
+> - "Two realizations of the $\gamma$ matrices" and "one set of Dirac maps in two bases" are the same thing. A similarity transformation of the $\gamma$'s alone is a change of basis of $V$ only if the spinors' components are changed with it (Theorem §C5a.7.2).
+
+^der-cb-12-13
+
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-14|Theorem §CB.10.14]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]]
+
+> [!theorem] Theorem §CB.12.14: Spinor Space Is Unique up to Isomorphism
+> 1. If $(V, \Gamma^\mu)$ and $(\tilde V, \tilde\Gamma^\mu)$ are two four-dimensional complex spaces with Dirac maps ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]]), there is an invertible intertwiner $T : V \to \tilde V$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-7|Def. §CB.12.7]]), unique up to a nonzero factor.
+> 2. Given $(V, \Gamma^\mu)$, every set of $4\times4$ Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]) — chiral, Dirac, Majorana or any other — is the set of matrices of the $\Gamma^\mu$ in some basis of $V$, and that basis is unique up to multiplying all its vectors by one nonzero number.
+>
+> This is Pauli's theorem ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]]) read without a basis: there is one spinor space, and a choice of $\gamma$ matrices is a choice of basis in it.
+>
+> *Source: PS §3.2, p. 41 ("all 4 × 4 representations of the Dirac algebra are unitarily equivalent. We thus need only write one explicit realization") · the user's PHY 513 notes, Ch. 8 §8.1 ("Uniqueness (Pauli's fundamental theorem)") · the basis-free reading written here*
+
+^thm-cb-12-14
+
+> [!derivation]- Derivation
+> **1. Part 1: existence.** Choose bases $e$ of $V$ and $\tilde e$ of $\tilde V$, with matrices $\gamma^\mu$ and $\tilde\gamma^\mu$ (Dirac matrices by Theorem §CB.10.14). Pauli's theorem gives an invertible $U$ with $\tilde\gamma^\mu = U\gamma^\mu U^{-1}$. Define $T$ by $Te_b = \sum_aU_{ab}\tilde e_a$ (a linear map is fixed by its values on a basis, [[Linear map lemma|LADR Thm. 3.4]]); its matrix is $U$ (Def. §CB.0.2, from $e$ to $\tilde e$), it is invertible, and the matrices of $T\Gamma^\mu$ and $\tilde\Gamma^\mu T$ are $U\gamma^\mu$ and $\tilde\gamma^\mu U$ ([[§10 Invertibility and Isomorphisms#^ladr-3-81|LADR Thm. 3.81]]), which are equal. Equal matrices, equal maps.
+>
+> **2. Part 1: uniqueness.** If $T$ and $T'$ are both invertible intertwiners, $T^{-1}T'$ commutes with every $\Gamma^\mu$; its matrix commutes with every $\gamma^\mu$, hence is $c\mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], 4), $c \ne 0$: $T' = cT$.
+>
+> **3. Part 2: existence.** Fix a basis $e$ with matrices $\gamma^\mu$; Pauli's theorem gives $\tilde\gamma^\mu = U\gamma^\mu U^{-1}$, and Theorem §CB.12.13, 2 produces the basis.
+>
+> **4. Part 2: uniqueness.** If $f$ and $f'$ both give $\tilde\gamma^\mu$, their change-of-basis matrix $W$ satisfies $W\tilde\gamma^\mu W^{-1} = \tilde\gamma^\mu$, so $W = c\mathbb 1$ (as in step 2), i.e. $f_b = cf'_b$ for all $b$.
+>
+> **What the derivation shows**
+> - ⚑ By-product: the only freedom left once the $\gamma$ matrices are chosen is an overall factor of the basis, which multiplies every spinor's components by $c^{-1}$ and leaves every matrix unchanged. Whether $\bar\psi\psi$ notices it is Theorem §C5a.2.2, 2: it does, by $|c|^{-2}$, unless $|c| = 1$.
+> - The averaging construction of $U$ is in Derivation §CB.12.12; nothing here re-proves it.
+
+^der-cb-12-14
+
+*Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-14|Theorem §CB.10.14]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-13|Theorem §CB.12.13]], [[Linear map lemma|LADR Thm. 3.4]], [[§10 Invertibility and Isomorphisms#^ladr-3-81|LADR Thm. 3.81]]
+
+## The Dirac form
+
+The Hermitian form that the Dirac maps single out (first written in [[§C5a.2 The Dirac Form|§C5a.2]], where its partial evaluation is the Dirac conjugate; the general theory is [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups|§CB.8]]):
+
+> [!definition] Definition §CB.12.15: The Dirac Form
+> In a Hermitian basis ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]]) the **Dirac form** is the Hermitian form ([[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-8-1|Def. §CB.8.1]]) with matrix $\gamma^0$:
+>
+> $$
+> h_D(\chi, \psi) = \chi^\dagger\gamma^0\psi .
+> $$
+>
+> *Source: PS §3.2, eq. (3.32) · the user's PHY 513 notes, Ch. 8 §8.3 ("$\gamma^0$ for Dirac spinors, giving the invariant $\bar\psi\chi = \psi^\dagger\gamma^0\chi$") · Yu §5.3, eq. (5.90) · the form formulation written here*
+
+^def-cb-12-15
+
+The definition uses one Hermitian basis; that the result does not depend on which one, up to a factor fixed by convention, is Theorem §CB.12.16 and Theorem §CB.12.18. $h_D$ is Hermitian because $(\chi^\dagger\gamma^0\psi)^{\ast} = \psi^\dagger\gamma^{0\dagger}\chi = \psi^\dagger\gamma^0\chi$, and nondegenerate because $\det\gamma^0 \ne 0$ ($(\gamma^0)^2 = \mathbb 1$).
+
+> [!theorem] Theorem §CB.12.16: The Dirac Maps Are Self-Adjoint for the Dirac Form, and Fix It up to a Real Factor
+> 1. $h_D(\Gamma^\mu\chi, \psi) = h_D(\chi, \Gamma^\mu\psi)$ for all $\chi, \psi \in V$ and $\mu = 0, \dots, 3$ ($h_D$ of [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]]); in components, $\overline{\gamma^\mu\chi} = \bar\chi\gamma^\mu$.
+> 2. If $h$ is any nondegenerate Hermitian form on $V$ for which every $\Gamma^\mu$ is self-adjoint in this sense, then $h = c\,h_D$ for a real $c \ne 0$.
+>
+> So the Dirac form is determined by the Dirac maps alone, up to a real normalization: a basis-free characterization of $\bar\psi$.
+>
+> *Source: part 1: the identity $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ of the user's PHY 513 notes, Ch. 8 §8.1 and PS §3.2, read as self-adjointness here · part 2 written here*
+
+^thm-cb-12-16
+
+> [!derivation]- Derivation
+> Work in a Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$.
+>
+> **1. Self-adjointness.** $h_D(\Gamma^\mu\chi, \psi) = (\gamma^\mu\chi)^\dagger\gamma^0\psi = \chi^\dagger\gamma^{\mu\dagger}\gamma^0\psi = \chi^\dagger\gamma^0\gamma^\mu\gamma^0\gamma^0\psi = \chi^\dagger\gamma^0\gamma^\mu\psi = h_D(\chi, \Gamma^\mu\psi)$, using $(\gamma^0)^2 = \mathbb 1$. The middle equality reads $\overline{\gamma^\mu\chi} = (\gamma^\mu\chi)^\dagger\gamma^0 = \bar\chi\gamma^\mu$.
+>
+> **2. The condition on a matrix.** Let $H$ be the matrix of $h$ (Theorem §CB.8.2, 1). Self-adjointness of $\Gamma^\mu$ means $(\gamma^\mu\chi)^\dagger H\psi = \chi^\dagger H\gamma^\mu\psi$ for all columns, i.e. $\gamma^{\mu\dagger}H = H\gamma^\mu$ (take $\chi$, $\psi$ standard basis columns).
+>
+> **3. Reduce to a commutant.** Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$: $\gamma^0\gamma^\mu\gamma^0H = H\gamma^\mu$. Multiply on the left by $\gamma^0$: $\gamma^\mu(\gamma^0H) = (\gamma^0H)\gamma^\mu$. So $\gamma^0H$ commutes with all four $\gamma^\mu$, hence $\gamma^0H = c\mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], 4), and $H = c\gamma^0$.
+>
+> **4. The factor.** $H^\dagger = H$ gives $c^{\ast}\gamma^0 = c\gamma^0$, so $c$ is real; nondegeneracy gives $c \ne 0$.
+>
+> **What the derivation shows**
+> - $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, used in §C5a.1 as a matrix identity, says that the Dirac maps are self-adjoint for $h_D$ — not for the positive form $\chi^\dagger\psi$ (for which the $\gamma^i$ are anti-self-adjoint).
+> - ⚑ By-product: the normalization of $\bar\psi$ is a convention. Both signs $c = \pm1$ are used in the literature with other metric signatures; with $g = (+,-,-,-)$ the choice $c = 1$ makes $\bar uu = 2m > 0$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]).
+> - Used next: which changes of basis keep $c = 1$ (Theorem §C5a.2.2).
+
+^der-cb-12-16
+
+*Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]], [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-2|Theorem §CB.8.2]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]
+
+> [!theorem] Theorem §CB.12.17: The Dirac Form Has Signature (2, 2)
+> The Dirac form $h_D$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]]) has signature $(2, 2)$ ([[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-8-3|Def. §CB.8.3]]): it is nondegenerate and indefinite, and in a Hermitian basis the eigenspaces $W_\pm$ of $\gamma^0$ (eigenvalues $\pm1$, each twice) are a positive and a negative subspace of maximal dimension.
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.1 (eq. (pseudounitary)) and [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]] ("indefinite, with eigenvalues $+1, +1, -1, -1$") · the signature argument written here*
+
+^thm-cb-12-17
+
+> [!derivation]- Derivation
+> **1. Eigenspaces.** In a Hermitian basis $\gamma^0$ is Hermitian, hence normal, so $\mathbb C^4$ has an orthonormal (for $\chi^\dagger\psi$) basis of its eigenvectors ([[§24 Spectral Theorem#^ladr-7-31|LADR Thm. 7.31]]); its eigenvalues are $\pm1$, each twice ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]]). So $\mathbb C^4 = W_+\oplus W_-$ with $\dim W_\pm = 2$.
+>
+> **2. Signs on the eigenspaces.** For $\psi \in W_+$, $h_D(\psi, \psi) = \psi^\dagger\gamma^0\psi = \psi^\dagger\psi > 0$ if $\psi \ne 0$; for $\psi \in W_-$, $h_D(\psi, \psi) = -\psi^\dagger\psi < 0$. So $p \ge 2$ and $q \ge 2$.
+>
+> **3. No larger positive subspace.** Let $P$ be positive with $\dim P \ge 3$. Then $\dim P + \dim W_- \ge 5 > 4$, so $P\cap W_-$ contains some $\psi \ne 0$ (the dimension of a sum is at most $4$, [[§6 Dimension#^ladr-2-43|LADR Thm. 2.43]]). On it $h_D(\psi, \psi)$ is $> 0$ (in $P$) and $< 0$ (in $W_-$), a contradiction. So $p = 2$; the same argument with $W_+$ gives $q = 2$.
+>
+> **What the derivation shows**
+> - $p$ and $q$ are defined without a basis, so the signature is a property of the Dirac form itself; a real rescaling $c$ (Theorem §CB.12.16) keeps it $(2, 2)$ (a negative $c$ exchanges $p$ and $q$).
+> - ⚑ By-product: there is no positive Lorentz-invariant density built from $\bar\psi$ alone: the invariant form is indefinite, and the positive $\psi^\dagger\psi$ is not invariant ([[§C5a.6 The Dirac Conjugate and the Bilinears#^der-c5a-6-1|Derivation §C5a.6.1]]); the conserved positive density of Quantum Mechanics is the time component of a current ([[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]]).
+> - The signature $(2, 2)$ is the spinor counterpart of the Minkowski signature $(1, 3)$ of $g$; both are invariant forms preserved by the corresponding Lorentz matrices ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]]).
+
+^der-cb-12-17
+
+*Uses:* [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-8-3|Def. §CB.8.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§24 Spectral Theorem#^ladr-7-31|LADR Thm. 7.31]], [[§6 Dimension#^ladr-2-43|LADR Thm. 2.43]]
+
+> [!theorem] Theorem §CB.12.18: Which Changes of Basis Preserve the Dirac Form
+> Let $e$ be a Hermitian basis ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]]), $U$ any invertible change-of-basis matrix ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]]), $\psi' = U\psi$, $\gamma'^\mu = U\gamma^\mu U^{-1}$.
+> 1. The formula $\chi^\dagger\gamma^0\psi$ of the Dirac form applied in the new basis gives $\psi'^\dagger\gamma'^0\chi' = \psi^\dagger(U^\dagger U)\gamma^0\chi$. It equals $h_D(\psi, \chi)$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]]) for all $\psi, \chi$ iff $U$ is unitary.
+> 2. The new basis is Hermitian iff $U^\dagger U = c\,\mathbb 1$ with $c > 0$, i.e. $U = \sqrt c\,W$ with $W$ unitary; then $\psi'^\dagger\gamma'^0\chi' = c\,h_D(\psi, \chi)$.
+>
+> Part 2 for $c = 1$ is [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], 2; Pauli's theorem guarantees that two Hermitian bases are related by a unitary $U$ up to this factor ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], 2).
+>
+> *Source: PS §3.2, p. 41 ("unitarily equivalent") · Yu §5.2, eq. (5.72) (unitary $U$) · the user's pre-course notes, §5.2 ("all representations are related by unitary similarity transformations") · parts 1–2 and the converses written here*
+
+^thm-cb-12-18
+
+> [!derivation]- Derivation
+> **1. Part 1.** $\psi'^\dagger = (U\psi)^\dagger = \psi^\dagger U^\dagger$ and $\gamma'^0\chi' = U\gamma^0U^{-1}U\chi = U\gamma^0\chi$, so $\psi'^\dagger\gamma'^0\chi' = \psi^\dagger U^\dagger U\gamma^0\chi$. This equals $\psi^\dagger\gamma^0\chi$ for all columns iff $U^\dagger U\gamma^0 = \gamma^0$ (take $\psi$, $\chi$ standard basis columns to read off each entry), iff $U^\dagger U = \mathbb 1$ (multiply on the right by $(\gamma^0)^{-1} = \gamma^0$).
+>
+> **2. Part 2: the condition.** The new basis is Hermitian iff $\gamma'^{\mu\dagger} = \gamma'^0\gamma'^\mu\gamma'^0$. Left side: $(U\gamma^\mu U^{-1})^\dagger = (U^\dagger)^{-1}\gamma^{\mu\dagger}U^\dagger = (U^\dagger)^{-1}\gamma^0\gamma^\mu\gamma^0U^\dagger$. Right side: $U\gamma^0U^{-1}U\gamma^\mu U^{-1}U\gamma^0U^{-1} = U\gamma^0\gamma^\mu\gamma^0U^{-1}$. Multiply both on the left by $U^\dagger$ and on the right by $U$: the condition is $\gamma^0\gamma^\mu\gamma^0\,(U^\dagger U) = (U^\dagger U)\,\gamma^0\gamma^\mu\gamma^0$ for every $\mu$.
+>
+> **3. Part 2: solve it.** For $\mu = 0$ it says $P \equiv U^\dagger U$ commutes with $\gamma^0$ ($(\gamma^0)^3 = \gamma^0$). Then $\gamma^\mu = \gamma^0(\gamma^0\gamma^\mu\gamma^0)\gamma^0$ is a product of matrices commuting with $P$, so $P$ commutes with every $\gamma^\mu$ and $P = c\mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], 4). $c > 0$: $v^\dagger Pv = |Uv|^2 > 0$ for $v \ne 0$. Conversely $P = c\mathbb 1$ satisfies the condition. Then $W = U/\sqrt c$ has $W^\dagger W = \mathbb 1$, and part 1's computation gives $\psi'^\dagger\gamma'^0\chi' = \psi^\dagger(c\mathbb 1)\gamma^0\chi = c\,\bar\psi\chi$.
+>
+> **What the derivation shows**
+> - ⚑ By-product: the class of Hermitian bases is closed under $U = \sqrt c\,W$, but $\bar\psi$ is only closed under $c = 1$. Example: $U = 2\cdot\mathbb 1$ leaves every $\gamma$ matrix unchanged (so the new basis is Hermitian), doubles every component, and multiplies $\bar\psi\psi$ by $4$. The $\gamma$'s fix the Dirac form only up to a factor (Theorem §CB.12.16); demanding unitary changes of basis — equivalently, keeping $\psi^\dagger\psi$ of the standard columns as the reference inner product — fixes it. This is the normalization implicit in "$\bar\psi = \psi^\dagger\gamma^0$ in every basis".
+
+^der-cb-12-18
+
+*Uses:* [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-2|Theorem §CB.8.2]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]
 
 ## The even subalgebra acting on a module
 
-> [!theorem] Theorem §CB.12.9: The Complexified Even Subalgebra
-> For nondegenerate real $(V, q)$ of dimension $n \ge 1$, $\mathrm{Cl}^0(V, q)_{\mathbb C} \cong \mathrm{Cl}_{n-1}(\mathbb C)$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]]). So $\mathrm{Cl}^0_{\mathbb C}$ is a full matrix algebra $M_{2^{(n-1)/2}}(\mathbb C)$ for $n$ odd and $M_{2^{n/2-1}}(\mathbb C)\oplus M_{2^{n/2-1}}(\mathbb C)$ for $n$ even ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]]).
+> [!theorem] Theorem §CB.12.19: The Complexified Even Subalgebra
+> For nondegenerate real $(V, q)$ of dimension $n \ge 1$, $\mathrm{Cl}^0(V, q)_{\mathbb C} \cong \mathrm{Cl}_{n-1}(\mathbb C)$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-16|Theorem §CB.11.16]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]]). So $\mathrm{Cl}^0_{\mathbb C}$ is a full matrix algebra $M_{2^{(n-1)/2}}(\mathbb C)$ for $n$ odd and $M_{2^{n/2-1}}(\mathbb C)\oplus M_{2^{n/2-1}}(\mathbb C)$ for $n$ even ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]]).
 >
 > *Source: Figueroa-O'Farrill, Spin Geometry, Prop. 2.8, Cor. 2.9 · Meinrenken, Clifford Algebras and Lie Groups, eq. (19)*
 
-^thm-cb-12-9
+^thm-cb-12-19
 
 > [!proof]- Proof
 > *Source: J. Figueroa-O'Farrill, Spin Geometry, §2.3.1, Prop. 2.8 and Cor. 2.9 (real form), with §2.2, Prop. 2.2 (complexification) · E. Meinrenken, Clifford Algebras and Lie Groups, §2.4, eq. (19) ($\mathrm{Cl}(n) \cong \mathrm{Cl}^{\bar0}(n+1)$ over $\mathbb C$).*
 >
-> **Step 1** (real level). Pick $e_0 \in V$ with $q(e_0) = \epsilon = \pm1$ (it exists: $q \not\equiv 0$ for nondegenerate $V \ne 0$, then rescale). [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]] gives a real algebra isomorphism $\Phi : \mathrm{Cl}(V', q') \to \mathrm{Cl}^0(V, q)$ with $\dim V' = n - 1$, $q'$ nondegenerate.
+> **Step 1** (real level). Pick $e_0 \in V$ with $q(e_0) = \epsilon = \pm1$ (it exists: $q \not\equiv 0$ for nondegenerate $V \ne 0$, then rescale). [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-16|Theorem §CB.11.16]] gives a real algebra isomorphism $\Phi : \mathrm{Cl}(V', q') \to \mathrm{Cl}^0(V, q)$ with $\dim V' = n - 1$, $q'$ nondegenerate.
 >
 > **Step 2** (complexify). $\Phi_{\mathbb C}(a + ib) = \Phi(a) + i\Phi(b)$ is a complex-linear bijection $\mathrm{Cl}(V', q')_{\mathbb C} \to \mathrm{Cl}^0(V, q)_{\mathbb C}$, multiplicative by the computation in Step 4 of the proof of [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]] (with $\Phi$ in place of $\gamma$). Here $\mathrm{Cl}^0(V, q)_{\mathbb C} = \mathrm{Cl}^0 + i\,\mathrm{Cl}^0$ is the even part of $\mathrm{Cl}(V, q)_{\mathbb C}$.
 >
 > **Step 3** (identify). Theorem §CB.12.3 for $(V', q')$ gives $\mathrm{Cl}(V', q')_{\mathbb C} \cong \mathrm{Cl}_{n-1}(\mathbb C)$; compose. By [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]]: $n$ odd means $n - 1 = 2m$ even, $\mathrm{Cl}_{n-1}(\mathbb C) \cong M_{2^{(n-1)/2}}(\mathbb C)$; $n$ even means $n - 1 = 2m + 1$ with $m = n/2 - 1$, $\mathrm{Cl}_{n-1}(\mathbb C) \cong M_{2^{n/2-1}}(\mathbb C)\oplus M_{2^{n/2-1}}(\mathbb C)$. For $n = 1$, $\mathrm{Cl}_0(\mathbb C) = \mathbb C = M_1(\mathbb C)$.
 >
 > **What the proof shows.**
-> - The parity flips: an even-dimensional space has a split even subalgebra (two Weyl blocks), an odd-dimensional one a simple even subalgebra. Theorem §CB.12.10 reads this off on a module.
+> - The parity flips: an even-dimensional space has a split even subalgebra (two Weyl blocks), an odd-dimensional one a simple even subalgebra. Theorem §CB.12.20 reads this off on a module.
 
-^pf-cb-12-9
+^pf-cb-12-19
 
-*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]]
+*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-16|Theorem §CB.11.16]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]]
 
-> [!theorem] Theorem §CB.12.10: An Irreducible Clifford Module under the Even Subalgebra
+> [!theorem] Theorem §CB.12.20: An Irreducible Clifford Module under the Even Subalgebra
 > Let $S$ be an irreducible complex Clifford module of nondegenerate $(V, q)$, $\dim V = n$.
-> 1. $n$ even: $\omega_{\mathbb C}$ commutes with $\mathrm{Cl}^0$ and anticommutes with $V$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], 3); its eigenspaces $S^\pm$ ($\omega_{\mathbb C} = \pm1$) are invariant under $\mathrm{Cl}^0$, each of dimension $2^{n/2-1}$, irreducible and mutually inequivalent as $\mathrm{Cl}^0$-modules; and $\gamma(v)$ maps $S^\pm$ isomorphically onto $S^\mp$ whenever $q(v) \ne 0$.
-> 2. $n$ odd: $S$ is irreducible as a $\mathrm{Cl}^0$-module, and the two inequivalent irreducible Clifford modules ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]], 2) are equivalent as $\mathrm{Cl}^0$-modules.
+> 1. $n$ even: $\omega_{\mathbb C}$ commutes with $\mathrm{Cl}^0$ and anticommutes with $V$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|Theorem §CB.11.12]], 3); its eigenspaces $S^\pm$ ($\omega_{\mathbb C} = \pm1$) are invariant under $\mathrm{Cl}^0$, each of dimension $2^{n/2-1}$, irreducible and mutually inequivalent as $\mathrm{Cl}^0$-modules; and $\gamma(v)$ maps $S^\pm$ isomorphically onto $S^\mp$ whenever $q(v) \ne 0$.
+> 2. $n$ odd: $S$ is irreducible as a $\mathrm{Cl}^0$-module, and the two inequivalent irreducible Clifford modules ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-8|Theorem §CB.12.8]], 2) are equivalent as $\mathrm{Cl}^0$-modules.
 > 3. In both cases, every irreducible complex $\mathrm{Cl}^0$-module is equivalent to $S$ ($n$ odd) or to $S^+$ or $S^-$ ($n$ even).
 >
-> *Source: Figueroa-O'Farrill, Spin Geometry, §3.3 · written here (from Theorems §CB.12.6–§CB.12.9)*
+> *Source: Figueroa-O'Farrill, Spin Geometry, §3.3 · written here (from Theorems §CB.12.6–§CB.12.19)*
 
-^thm-cb-12-10
+^thm-cb-12-20
 
 > [!proof]- Proof
-> *Source: J. Figueroa-O'Farrill, Spin Geometry, §3.3 (for $d$ even "the volume element commutes with $C\ell(s,t)^0$, whence its eigenspaces in the pinor representation will correspond to the spinor representations"; for $d$ odd $C\ell = C\ell^0\oplus C\ell^0\omega$ and the two pinor representations restrict to the same spinor one) and Def. 3.7 · details written here from Theorems §CB.12.6–§CB.12.9.*
+> *Source: J. Figueroa-O'Farrill, Spin Geometry, §3.3 (for $d$ even "the volume element commutes with $C\ell(s,t)^0$, whence its eigenspaces in the pinor representation will correspond to the spinor representations"; for $d$ odd $C\ell = C\ell^0\oplus C\ell^0\omega$ and the two pinor representations restrict to the same spinor one) and Def. 3.7 · details written here from Theorems §CB.12.6–§CB.12.19.*
 >
 > Let $\gamma : \mathrm{Cl}_{\mathbb C} \to \operatorname{End}(S)$ be the complex-linear extension of the irreducible module (Step 4 of the proof of [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]]); complex subspaces invariant under $\gamma(\mathrm{Cl}^0)$ are those invariant under $\gamma(\mathrm{Cl}^0_{\mathbb C})$, and likewise for intertwiners, so we may work with $\mathrm{Cl}^0_{\mathbb C}$.
 >
-> **Step 1** ($n$ even: the splitting). $\omega_{\mathbb C}$ is a multiple of $\omega$, so it commutes with $\mathrm{Cl}^0$ and anticommutes with $V$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], 3), and $\omega_{\mathbb C}^2 = 1$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]]). With $\Pi_\pm = \frac12(\mathbb 1 \pm \gamma(\omega_{\mathbb C}))$, as in Step 1 of the proof of [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-6|Theorem §CB.12.6]], $S = S^+\oplus S^-$ with $S^\pm = \Pi_\pm S$ the $\pm1$ eigenspaces. For $x \in \mathrm{Cl}^0$, $\gamma(x)$ commutes with $\gamma(\omega_{\mathbb C})$, so it preserves each eigenspace. For $v \in V$ and $s \in S^\pm$: $\gamma(\omega_{\mathbb C})\gamma(v)s = -\gamma(v)\gamma(\omega_{\mathbb C})s = \mp\gamma(v)s$, so $\gamma(v)S^\pm \subset S^\mp$.
+> **Step 1** ($n$ even: the splitting). $\omega_{\mathbb C}$ is a multiple of $\omega$, so it commutes with $\mathrm{Cl}^0$ and anticommutes with $V$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|Theorem §CB.11.12]], 3), and $\omega_{\mathbb C}^2 = 1$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]]). With $\Pi_\pm = \frac12(\mathbb 1 \pm \gamma(\omega_{\mathbb C}))$, as in Step 1 of the proof of [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-6|Theorem §CB.12.6]], $S = S^+\oplus S^-$ with $S^\pm = \Pi_\pm S$ the $\pm1$ eigenspaces. For $x \in \mathrm{Cl}^0$, $\gamma(x)$ commutes with $\gamma(\omega_{\mathbb C})$, so it preserves each eigenspace. For $v \in V$ and $s \in S^\pm$: $\gamma(\omega_{\mathbb C})\gamma(v)s = -\gamma(v)\gamma(\omega_{\mathbb C})s = \mp\gamma(v)s$, so $\gamma(v)S^\pm \subset S^\mp$.
 >
-> **Step 2** ($n$ even: equal dimensions). If $q(v) \ne 0$, $\gamma(v)^2 = q(v)\mathbb 1$ is invertible, so $\gamma(v) : S^+ \to S^-$ and $\gamma(v) : S^- \to S^+$ are both injective; hence $\dim S^+ = \dim S^-$ and each map is an isomorphism. Such $v$ exist ($q \not\equiv 0$). With $\dim S = 2^{n/2}$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]], 1), $\dim S^\pm = 2^{n/2-1}$.
+> **Step 2** ($n$ even: equal dimensions). If $q(v) \ne 0$, $\gamma(v)^2 = q(v)\mathbb 1$ is invertible, so $\gamma(v) : S^+ \to S^-$ and $\gamma(v) : S^- \to S^+$ are both injective; hence $\dim S^+ = \dim S^-$ and each map is an isomorphism. Such $v$ exist ($q \not\equiv 0$). With $\dim S = 2^{n/2}$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-8|Theorem §CB.12.8]], 1), $\dim S^\pm = 2^{n/2-1}$.
 >
 > **Step 3** ($n$ even: irreducible and inequivalent). $\gamma : \mathrm{Cl}_{\mathbb C} \to \operatorname{End}(S)$ is surjective: $S$ is the defining module of $\mathrm{Cl}_{\mathbb C} \cong M_{2^{n/2}}(\mathbb C)$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]], Theorem §CB.12.6), so $\gamma$ is that isomorphism up to conjugation. Write $\operatorname{End}(S) = \mathcal D\oplus\mathcal O$, block-diagonal and block-off-diagonal operators for $S = S^+\oplus S^-$. By Step 1, $\gamma(\mathrm{Cl}^0_{\mathbb C}) \subset \mathcal D$ and $\gamma(\mathrm{Cl}^1_{\mathbb C}) \subset \mathcal O$ (an odd element is a sum of products of an odd number of vectors). Since $\gamma(\mathrm{Cl}^0_{\mathbb C}) + \gamma(\mathrm{Cl}^1_{\mathbb C}) = \operatorname{End}(S) = \mathcal D\oplus\mathcal O$, comparing components gives $\gamma(\mathrm{Cl}^0_{\mathbb C}) = \mathcal D = \operatorname{End}(S^+)\oplus\operatorname{End}(S^-)$. So $\mathrm{Cl}^0$ acts on $S^+$ through all of $\operatorname{End}(S^+)$, and a subspace invariant under all of $\operatorname{End}(S^+)$ is $0$ or $S^+$: $S^+$ is irreducible, and likewise $S^-$. The element $x = \frac12(1 + \omega_{\mathbb C}) \in \mathrm{Cl}^0_{\mathbb C}$ acts as $\mathbb 1$ on $S^+$ and $0$ on $S^-$; an intertwiner $T : S^+ \to S^-$ satisfies $T = T\gamma(x)|_{S^+} = \gamma(x)|_{S^-}T = 0$, so $S^+$, $S^-$ are inequivalent.
 >
-> **Step 4** ($n$ odd: irreducible). $\omega_{\mathbb C}$ is central ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], 3) and acts on the irreducible $S$ as $+1$ or $-1$ (Theorem §CB.12.7, 2). $\omega$ is odd and invertible, so $y \mapsto y\omega$ maps $\mathrm{Cl}^0$ onto $\mathrm{Cl}^1$ (inverse $y \mapsto y\omega^{-1}$, by Theorem §CB.11.3), whence $\mathrm{Cl}_{\mathbb C} = \mathrm{Cl}^0_{\mathbb C} + \mathrm{Cl}^0_{\mathbb C}\,\omega_{\mathbb C}$ and $\gamma(\mathrm{Cl}_{\mathbb C}) = \gamma(\mathrm{Cl}^0_{\mathbb C}) \pm \gamma(\mathrm{Cl}^0_{\mathbb C}) = \gamma(\mathrm{Cl}^0_{\mathbb C})$. A subspace invariant under $\mathrm{Cl}^0$ is therefore invariant under $\mathrm{Cl}$, hence $0$ or $S$.
+> **Step 4** ($n$ odd: irreducible). $\omega_{\mathbb C}$ is central ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|Theorem §CB.11.12]], 3) and acts on the irreducible $S$ as $+1$ or $-1$ (Theorem §CB.12.8, 2). $\omega$ is odd and invertible, so $y \mapsto y\omega$ maps $\mathrm{Cl}^0$ onto $\mathrm{Cl}^1$ (inverse $y \mapsto y\omega^{-1}$, by Theorem §CB.11.3), whence $\mathrm{Cl}_{\mathbb C} = \mathrm{Cl}^0_{\mathbb C} + \mathrm{Cl}^0_{\mathbb C}\,\omega_{\mathbb C}$ and $\gamma(\mathrm{Cl}_{\mathbb C}) = \gamma(\mathrm{Cl}^0_{\mathbb C}) \pm \gamma(\mathrm{Cl}^0_{\mathbb C}) = \gamma(\mathrm{Cl}^0_{\mathbb C})$. A subspace invariant under $\mathrm{Cl}^0$ is therefore invariant under $\mathrm{Cl}$, hence $0$ or $S$.
 >
-> **Step 5** ($n$ odd: the two modules agree on $\mathrm{Cl}^0$). Given $\gamma$ with $\omega_{\mathbb C} = +1$, $\gamma^-(v) = -\gamma(v)$ is again a Clifford module ($(-\gamma(v))^2 = q(v)\mathbb 1$, [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]]), with $\gamma^-(e_1\cdots e_n) = (-1)^n\gamma(e_1\cdots e_n) = -\gamma(e_1\cdots e_n)$, so $\omega_{\mathbb C} = -1$ on it: it represents the other class (Theorem §CB.12.7, 2). On a product of an even number of vectors the signs cancel, so $\gamma^-(x) = \gamma(x)$ for $x \in \mathrm{Cl}^0$; the identity map intertwines the two restrictions.
+> **Step 5** ($n$ odd: the two modules agree on $\mathrm{Cl}^0$). Given $\gamma$ with $\omega_{\mathbb C} = +1$, $\gamma^-(v) = -\gamma(v)$ is again a Clifford module ($(-\gamma(v))^2 = q(v)\mathbb 1$, [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]]), with $\gamma^-(e_1\cdots e_n) = (-1)^n\gamma(e_1\cdots e_n) = -\gamma(e_1\cdots e_n)$, so $\omega_{\mathbb C} = -1$ on it: it represents the other class (Theorem §CB.12.8, 2). On a product of an even number of vectors the signs cancel, so $\gamma^-(x) = \gamma(x)$ for $x \in \mathrm{Cl}^0$; the identity map intertwines the two restrictions.
 >
-> **Step 6** (part 3). By [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9|Theorem §CB.12.9]], $\mathrm{Cl}^0_{\mathbb C} \cong \mathrm{Cl}_{n-1}(\mathbb C)$. For $n$ odd this is $M_{2^{(n-1)/2}}(\mathbb C)$, which has exactly one irreducible module, of dimension $2^{(n-1)/2}$ (Theorem §CB.12.6); $S$ is irreducible of that dimension (Step 4, Theorem §CB.12.7), so it is that module. For $n$ even, $\mathrm{Cl}_{n-1}(\mathbb C) \cong M\oplus M$ has exactly two irreducible modules up to equivalence (Steps 3–4 of the proof of Theorem §CB.12.7, with $\mathrm{Cl}_{n-1}(\mathbb C)$ in place of $\mathrm{Cl}_n(\mathbb C)$); $S^+$ and $S^-$ are two inequivalent irreducible ones (Step 3), so they are those two.
+> **Step 6** (part 3). By [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-19|Theorem §CB.12.19]], $\mathrm{Cl}^0_{\mathbb C} \cong \mathrm{Cl}_{n-1}(\mathbb C)$. For $n$ odd this is $M_{2^{(n-1)/2}}(\mathbb C)$, which has exactly one irreducible module, of dimension $2^{(n-1)/2}$ (Theorem §CB.12.6); $S$ is irreducible of that dimension (Step 4, Theorem §CB.12.8), so it is that module. For $n$ even, $\mathrm{Cl}_{n-1}(\mathbb C) \cong M\oplus M$ has exactly two irreducible modules up to equivalence (Steps 3–4 of the proof of Theorem §CB.12.8, with $\mathrm{Cl}_{n-1}(\mathbb C)$ in place of $\mathrm{Cl}_n(\mathbb C)$); $S^+$ and $S^-$ are two inequivalent irreducible ones (Step 3), so they are those two.
 >
 > **What the proof shows.**
 > - ⚑ By-product: for $n$ even, $\gamma(\mathrm{Cl}^0) = \operatorname{End}(S^+)\oplus\operatorname{End}(S^-)$ exactly, so the only operators commuting with all of $\gamma(\mathrm{Cl}^0)$ are $a\Pi_+ + b\Pi_-$: the chirality projectors $\frac12(1 \pm \gamma^5)$ are, up to combination, the only invariants of the even algebra on the Dirac module.
-> - Restricted to $\mathrm{Spin}(V)_0$, which generates $\mathrm{Cl}^0$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-15|Theorem §CB.13.15]]), Steps 3–6 become parts 1–2 of the TA's theorem ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-21|Theorem §CB.13.21]]).
+> - Restricted to $\mathrm{Spin}(V)_0$, which generates $\mathrm{Cl}^0$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-19|Theorem §CB.13.19]]), Steps 3–6 become parts 1–2 of the TA's theorem ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-26|Theorem §CB.13.26]]).
 
-^pf-cb-12-10
+^pf-cb-12-20
 
-*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-3|Theorem §CB.11.3]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-6|Theorem §CB.12.6]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9|Theorem §CB.12.9]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|Theorem §CB.10.10]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-3|Theorem §CB.11.3]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|Theorem §CB.11.12]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|Theorem §CB.12.5]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-6|Theorem §CB.12.6]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-8|Theorem §CB.12.8]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-19|Theorem §CB.12.19]]
 
 > [!remark]- Connections
-> - Theorem §CB.12.10 is the algebra behind chirality: $\omega_{\mathbb C} = -\gamma^5$ (for the course's module $e_\mu \mapsto \gamma_\mu$, [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-17-1|Caution: Two Dirac modules, and the sign of γ⁵]]) splits the Dirac module into the Weyl halves, and Clifford multiplication by a vector exchanges them ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]); restricted to the spin group this becomes the TA's theorem (§CB.13) and $(\frac12, 0)\oplus(0, \frac12)$ (§CB.17).
-> - Pauli's theorem (Theorem §CB.12.8) is why a change of $\gamma$-matrix basis is a change of basis of spinor space and nothing more ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-13|Theorem §C5a.1.13]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]).
-> - **Used in**: Theorem §CB.12.3 — [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-6|§C5a.5, ★ Remark: The Majorana basis]]; Theorems §CB.12.5–§CB.12.7 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]], [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-4|Theorem §C5a.0.4]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|Def. §C5a.1.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]; Theorem §CB.12.8 — [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-12|Theorem §C5a.1.12]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-14|Theorem §C5a.1.14]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-11|Theorem §C5a.4.11]]; Theorem §CB.12.10 — [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]].
+> - Theorem §CB.12.20 is the algebra behind chirality: $\omega_{\mathbb C} = -\gamma^5$ (for the course's module $e_\mu \mapsto \gamma_\mu$, [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-17-1|Caution: Two Dirac modules, and the sign of γ⁵]]) splits the Dirac module into the Weyl halves, and Clifford multiplication by a vector exchanges them ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]); restricted to the spin group this becomes the TA's theorem (§CB.13) and $(\frac12, 0)\oplus(0, \frac12)$ (§CB.17).
+> - Pauli's theorem (Theorem §CB.12.10) is why a change of $\gamma$-matrix basis is a change of basis of spinor space and nothing more ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-13|Theorem §CB.12.13]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]).
+> - Pauli's theorem is the Clifford-algebra analogue of "spin ½ is unique up to basis": both follow because the generated matrix algebra is all of $M_n(\mathbb C)$, so the representation is irreducible and Schur's lemma pins the intertwiner — [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-5|Theorem §CB.6.5]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-3|Theorem §CB.9.3]].
+> - Spinor space is unique up to isomorphism for the same reason spin ½ is: the generated matrix algebra is all of $M_n(\mathbb C)$, so the representation is irreducible and Schur's lemma pins the intertwiner; the ★ remark identifies the whole Clifford algebra with $M_4(\mathbb C)$ — [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-5|Theorem §CB.6.5]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-6|Def. §CB.2.6]].
+> - **Used in**: Theorem §CB.12.3 — [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-6|§C5a.5, ★ Remark: The Majorana basis]]; Theorems §CB.12.5–§CB.12.8 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]], [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-4|Theorem §C5a.0.4]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|Def. §C5a.1.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]; Definition §CB.12.7 — [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded); Theorem §CB.12.9 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]); Theorem §CB.12.10 — [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14|Theorem §CB.12.14]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7|Theorem §CB.17.7]]; Definition §CB.12.11 — [[§C5a.2 The Dirac Form|§C5a.2]] (embedded; cited in [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]]), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (embedded; cited in [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-5|Theorem §C5a.7.5]]), [[§C5a.9 Plane-Wave Solutions|§C5a.9]] (embedded; cited in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]); Theorem §CB.12.12 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]), [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded), [[§C5a.2 The Dirac Form|§C5a.2]] (embedded), [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (embedded; cited in [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (embedded; cited in [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-8|§C5a.7, Remark: What depends on the basis and what does not]]), [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded; cited in [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]]); Theorem §CB.12.13 — [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded); Theorem §CB.12.14 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded; cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-1|§C5a.0, Remark: Why the Dirac maps: the logic runs from γ to spinor space]]), [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded); Definition §CB.12.15 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-2|§C5a.0, Remark: What the Clifford relation induces]]), [[§C5a.2 The Dirac Form|§C5a.2]] (embedded; cited in [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), [[§C5a.9 Plane-Wave Solutions|§C5a.9]] (embedded; cited in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]); Theorem §CB.12.16 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-2|§C5a.0, Remark: What the Clifford relation induces]]), [[§C5a.2 The Dirac Form|§C5a.2]] (embedded), [[§C5a.9 Plane-Wave Solutions|§C5a.9]] (embedded; cited in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]); Theorem §CB.12.17 — [[§C5a.2 The Dirac Form|§C5a.2]] (embedded); Theorem §CB.12.18 — [[§C5a.2 The Dirac Form|§C5a.2]] (embedded; cited in [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]]), [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (embedded), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (embedded); Theorem §CB.12.20 — [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]].

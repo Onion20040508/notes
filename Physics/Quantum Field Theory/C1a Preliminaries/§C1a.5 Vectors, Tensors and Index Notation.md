@@ -351,7 +351,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > T^{\mu\nu} = \underbrace{\Bigl(T^{(\mu\nu)} - \tfrac14g^{\mu\nu}T^\rho{}_\rho\Bigr)}_{\text{symmetric traceless: }9} + \underbrace{T^{[\mu\nu]}}_{\text{antisymmetric: }6} + \underbrace{\tfrac14g^{\mu\nu}T^\rho{}_\rho}_{\text{trace: }1},
 > $$
 >
-> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (That each is irreducible under $SO^+(1,3)$ over $\mathbb R$ is representation theory, [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7|Theorem §CB.17.7]], irreducible in the sense of [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]].)
+> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (That each is irreducible under $SO^+(1,3)$ over $\mathbb R$ is representation theory, [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], irreducible in the sense of [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]].)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Irreducible pieces of a two-tensor"), eq. (decomposition) · PHY 513 Lecture 1, Part C ("Irreducible parts of two-tensor representation")*
 

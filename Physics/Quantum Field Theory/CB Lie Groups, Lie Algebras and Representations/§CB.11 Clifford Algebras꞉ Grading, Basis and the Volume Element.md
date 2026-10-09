@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: E. Meinrenken, Clifford Algebras and Lie Groups, lecture notes, University of Toronto, Fall 2009, Ch. 1–2 (https://www.math.toronto.edu/mein/teaching/LieClifford/cl12.pdf; convention $vw + wv = 2B(v, w)$, as here) · J. Figueroa-O'Farrill, Spin Geometry, lecture notes, Edinburgh 2010, version of 18 May 2017, Lectures 1–3 (https://empg.maths.ed.ac.uk/Activities/Spin/SpinNotes.pdf, read via the Internet Archive copy of 27 Sep 2024; convention $x^2 = -Q(x)$) · P. Woit, Quantum Theory, Groups and Representations, Ch. 28–29 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf; convention $[\gamma_j, \gamma_k]_+ = 2\delta_{jk}$, as here) · Linear Algebra (LADR) §§11, 35–38 · the user's PHY 513 notes, Ch. 8 · Peskin & Schroeder, §3.2, §3.4 · the rest written here.*
 
-What structure does a Clifford algebra carry beyond its defining relation? Starting from the definition and the universal property of [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]], this section derives the $\mathbb Z_2$-grading and the involutions (the grade automorphism, the reversal, Clifford conjugation), the basis $e_I$ and $\dim\mathrm{Cl}(V, q) = 2^n$, the identification with $\Lambda V$ as a vector space, the volume element (the abstract $\gamma^5$) and its properties, the even subalgebra as a Clifford algebra of one dimension less, and the Clifford algebras in low dimensions. The course's $\gamma^5$ and chirality ([[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]) are shown as embeds where they become instances. The complex theory is [[§CB.12 Complex Clifford Algebras and Clifford Modules|§CB.12]]; the spin group, [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.13]].
+What structure does a Clifford algebra carry beyond its defining relation? Starting from the definition and the universal property of [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]], this section derives the $\mathbb Z_2$-grading and the involutions (the grade automorphism, the reversal, Clifford conjugation), the basis $e_I$ and $\dim\mathrm{Cl}(V, q) = 2^n$, the identification with $\Lambda V$ as a vector space, the volume element (the abstract $\gamma^5$) and its properties, the even subalgebra as a Clifford algebra of one dimension less, and the Clifford algebras in low dimensions. The course's sixteen products, the eigenvalues of the Dirac maps and $\gamma^5$ are stated where they become instances (first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] and [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]). The complex theory is [[§CB.12 Complex Clifford Algebras and Clifford Modules|§CB.12]]; the spin group, [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.13]].
 
 ## Grading and involutions
 
@@ -32,7 +32,7 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 > **Step 3** (automorphism). By Step 2, $\alpha$ is bijective with inverse $\alpha$, so it is an algebra automorphism. On a product of $k$ vectors, $\alpha(v_1\cdots v_k) = (-v_1)\cdots(-v_k) = (-1)^kv_1\cdots v_k$.
 >
 > **What the proof shows.**
-> - The only input is that $v \mapsto -v$ preserves $q$; the same argument gives an automorphism of $\mathrm{Cl}(V, q)$ for every $R \in O(V, q)$, used in Theorem §CB.11.7 (Figueroa-O'Farrill, §1.4.2: "the orthogonal group acts on the Clifford algebra via automorphisms").
+> - The only input is that $v \mapsto -v$ preserves $q$; the same argument gives an automorphism of $\mathrm{Cl}(V, q)$ for every $R \in O(V, q)$, used in Theorem §CB.11.10 (Figueroa-O'Farrill, §1.4.2: "the orthogonal group acts on the Clifford algebra via automorphisms").
 
 ^pf-cb-11-1
 
@@ -63,7 +63,7 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 >
 > **What the proof shows.**
 > - The grading exists although $I_q$ is not homogeneous for the $\mathbb Z$-grading of $T(V)$: its generators $v\otimes v - q(v)1$ mix degrees $2$ and $0$, both even (Figueroa-O'Farrill, §1.2.2). Only the parity survives the quotient.
-> - Used in: the even subalgebra (Theorems §CB.11.6, §CB.11.10), the spin group (Def. §CB.13.6) and the Lorentz generators ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
+> - Used in: the even subalgebra (Theorems §CB.11.6, §CB.11.16), the spin group (Def. §CB.13.6) and the Lorentz generators ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]).
 
 ^pf-cb-11-3
 
@@ -107,12 +107,12 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 > [!theorem] Theorem §CB.11.6: Basis and Dimension
 > Let $e_1, \dots, e_n$ be an orthogonal basis of $(V, q)$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-1|Def. §CB.10.1]]). For $I = \{i_1 < \cdots < i_k\} \subset \{1, \dots, n\}$ put $e_I = e_{i_1}\cdots e_{i_k}$, $e_\varnothing = 1$. The $2^n$ elements $e_I$ form a basis of $\mathrm{Cl}(V, q)$; so $\dim\mathrm{Cl}(V, q) = 2^n$, and $\mathrm{Cl}^0$, $\mathrm{Cl}^1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-2|Def. §CB.11.2]]) have the bases $e_I$ with $|I|$ even, resp. odd, each of dimension $2^{n-1}$ ($n \ge 1$).
 >
-> *Source: Woit, §28.1 (spanning) · Meinrenken, Clifford Algebras and Lie Groups, Props. 2.2, 2.6 · Figueroa-O'Farrill, Spin Geometry, §1.4.4, Lemma 1.7 · the $4\times4$ case: [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]*
+> *Source: Woit, §28.1 (spanning) · Meinrenken, Clifford Algebras and Lie Groups, Props. 2.2, 2.6 · Figueroa-O'Farrill, Spin Geometry, §1.4.4, Lemma 1.7 · the $4\times4$ case: [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]*
 
 ^thm-cb-11-6
 
 > [!proof]- Proof
-> *Source: spanning: P. Woit, Quantum Theory, Groups and Representations, §28.1 (the basis of $\mathrm{Cliff}(n, \mathbb C)$, by reordering with the anticommutation relations) · independence: E. Meinrenken, Clifford Algebras and Lie Groups, Ch. 2 §2.1, Prop. 2.2, and §2.5, Prop. 2.6 and its proof (the action $f(v) = \epsilon(v) + \iota(B^\flat(v))$ of $\mathrm{Cl}(V; B)$ on $\Lambda V$; in an orthogonal basis $\sigma(e_{i_1}\cdots e_{i_k}) = e_{i_1}\wedge\cdots\wedge e_{i_k}$) · J. Figueroa-O'Farrill, Spin Geometry, §1.4.4, Lemma 1.7 (the same module, his sign). The module is written out here in the orthogonal basis, so that only sign bookkeeping is needed. For $4\times4$ Dirac matrices the course proves independence by traces instead ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]).*
+> *Source: spanning: P. Woit, Quantum Theory, Groups and Representations, §28.1 (the basis of $\mathrm{Cliff}(n, \mathbb C)$, by reordering with the anticommutation relations) · independence: E. Meinrenken, Clifford Algebras and Lie Groups, Ch. 2 §2.1, Prop. 2.2, and §2.5, Prop. 2.6 and its proof (the action $f(v) = \epsilon(v) + \iota(B^\flat(v))$ of $\mathrm{Cl}(V; B)$ on $\Lambda V$; in an orthogonal basis $\sigma(e_{i_1}\cdots e_{i_k}) = e_{i_1}\wedge\cdots\wedge e_{i_k}$) · J. Figueroa-O'Farrill, Spin Geometry, §1.4.4, Lemma 1.7 (the same module, his sign). The module is written out here in the orthogonal basis, so that only sign bookkeeping is needed. For $4\times4$ Dirac matrices the course proves independence by traces instead ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]).*
 >
 > **Step 1** (spanning). $\mathrm{Cl}(V, q)$ is spanned by $1$ and products $v_1\cdots v_k$ (Step 5 of the proof of [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]]). Expanding each $v_a = \sum_iv_a^ie_i$, it is spanned by the words $e_{j_1}e_{j_2}\cdots e_{j_k}$ in the basis vectors. In a word, two adjacent distinct letters may be swapped at the cost of a sign, $e_ie_j = -e_je_i$, and two adjacent equal letters may be replaced by the scalar $e_ie_i = q(e_i)$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], Step 1). Sorting the letters by adjacent swaps and then cancelling equal neighbours turns every word into $\pm\bigl(\prod q(e_i)\bigr)e_I$ for some $I$ (or $0$ if some cancelled $q(e_i)$ vanishes). So the $2^n$ elements $e_I$ span $\mathrm{Cl}(V, q)$.
 >
@@ -149,7 +149,7 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 > **Step 8** (even and odd parts). $e_I$ is a product of $|I|$ vectors, so $\alpha(e_I) = (-1)^{|I|}e_I$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-1|Theorem §CB.11.1]]). Writing $x = \sum x_Ie_I$, $\alpha x = x$ iff $x_I = 0$ for all odd $|I|$, and $\alpha x = -x$ iff $x_I = 0$ for all even $|I|$: the $e_I$ with $|I|$ even (odd) are a basis of $\mathrm{Cl}^0$ ($\mathrm{Cl}^1$), [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-2|Def. §CB.11.2]]. Their numbers are $\sum_{k\ \mathrm{even}}\binom nk$ and $\sum_{k\ \mathrm{odd}}\binom nk$; these add to $(1 + 1)^n = 2^n$ and differ by $(1 - 1)^n = 0$ for $n \ge 1$, so each is $2^{n-1}$.
 >
 > **What the proof shows.**
-> - ⚑ By-product: $W$ with $f_I \leftrightarrow e_{i_1}\wedge\cdots\wedge e_{i_k}$ is a $2^n$-dimensional module of $\mathrm{Cl}(V, q)$ on $\Lambda V$ (Meinrenken's $f_{\mathrm{Cl}}$), and $x \mapsto \gamma(x)f_\varnothing$ is a linear isomorphism $\mathrm{Cl}(V, q) \to \Lambda V$ (the symbol map); its inverse is the map of Theorem §CB.11.7.
+> - ⚑ By-product: $W$ with $f_I \leftrightarrow e_{i_1}\wedge\cdots\wedge e_{i_k}$ is a $2^n$-dimensional module of $\mathrm{Cl}(V, q)$ on $\Lambda V$ (Meinrenken's $f_{\mathrm{Cl}}$), and $x \mapsto \gamma(x)f_\varnothing$ is a linear isomorphism $\mathrm{Cl}(V, q) \to \Lambda V$ (the symbol map); its inverse is the map of Theorem §CB.11.10.
 > - The module is not irreducible when $q$ is nondegenerate and $n \ge 2$ (it is $\mathrm{Cl}$ acting on itself, of dimension $2^n > 2^{\lfloor n/2\rfloor}$); its only job is to separate the $e_I$. The irreducible modules come in §CB.12.
 > - Nothing used nondegeneracy: for $q = 0$ the same proof shows that $\Lambda V$ itself has the basis $e_I$.
 
@@ -157,11 +157,77 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 
 *Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-1|Theorem §CB.11.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-2|Def. §CB.11.2]]
 
-The sixteen products of Dirac matrices, the $n = 4$ case in matrices, proved in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]:
+The sixteen products of the Dirac matrices, the $n = 4$ case of Theorem §CB.11.6 in matrices, with the course's notation for antisymmetrized products (first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]):
 
-![[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6]]
+> [!definition] Definition §CB.11.7: Antisymmetrized Products of γ Matrices
+> For indices $\mu_1, \dots, \mu_n$,
+>
+> $$
+> \gamma^{[\mu_1}\gamma^{\mu_2}\cdots\gamma^{\mu_n]} \equiv \gamma^{[\mu_1\cdots\mu_n]} \equiv \frac1{n!}\sum_{\pi\in S_n}\operatorname{sgn}(\pi)\,\gamma^{\mu_{\pi(1)}}\cdots\gamma^{\mu_{\pi(n)}} ,
+> $$
+>
+> of the Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]): the totally antisymmetric part, with weight $1/n!$. Thus $\gamma^{[\mu\nu]} = \frac12[\gamma^\mu, \gamma^\nu]$, which is $-2iS^{\mu\nu}$ with the spinor generators of §C5a.3 ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]) and $-i\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}$ of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]; for distinct indices it is the ordered product of Theorem §CB.11.8 up to sign.
+>
+> *Source: PHY 513, Problem Set 5, Problem 5(c) statement (notation) · PS §3.4, p. 49 · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$")*
 
-> [!theorem] Theorem §CB.11.7: The Clifford Algebra Is the Exterior Algebra as a Vector Space
+^def-cb-11-7
+
+> [!theorem] Theorem §CB.11.8: The Sixteen Products Are a Basis
+> For $A = \{\mu_1 < \dots < \mu_k\} \subseteq \{0, 1, 2, 3\}$ let $\Gamma_A = \gamma^{\mu_1}\cdots\gamma^{\mu_k}$ ($\Gamma_\varnothing = \mathbb 1$). For Dirac matrices ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]) of any size $n$:
+> 1. $\Gamma_A\Gamma_B = \pm\Gamma_{A\triangle B}$ (symmetric difference), with a sign fixed by the algebra alone; in particular $\Gamma_A^2 = \pm\mathbb 1$;
+> 2. $\operatorname{tr}\Gamma_A = 0$ for $A \ne \varnothing$;
+> 3. the sixteen $\Gamma_A$ are linearly independent, so $n \ge 4$;
+> 4. for $n = 4$ they are a basis of $M_4(\mathbb C)$: only multiples of $\mathbb 1$ commute with all $\gamma^\mu$, and no subspace of $\mathbb C^4$ other than $0$ and $\mathbb C^4$ is invariant under all $\gamma^\mu$ (irreducibility, [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]]).
+>
+> *Source: PS §3.2, p. 41 ("these matrices must be at least 4 × 4") and §3.4, p. 50 (the sixteen matrices) · the user's PHY 513 notes, Ch. 8, paragraph after the bilinears ("the sixteen matrices … are a basis of all 4 × 4 matrices") · the user's pre-course notes, §5.1 ("Dimension of the spinor representation": independence "stated") · Yu §5.1, eq. (5.45) · the trace proof written out here*
+
+^thm-cb-11-8
+
+> [!derivation]- Derivation
+> **1. Products.** Write $\Gamma_A\Gamma_B$ as one string of $\gamma$'s. For each $\mu \in A\cap B$, move the copy of $\gamma^\mu$ from the $B$ part leftwards until it stands next to its partner from $A$; each step past a different $\gamma^\nu$ gives a factor $-1$ (Theorem §CB.10.12). The pair becomes $(\gamma^\mu)^2 = g^{\mu\mu}\mathbb 1 = \pm\mathbb 1$. What is left is a product of the $\gamma^\mu$ with $\mu \in A\triangle B$, each once, in some order; reordering it increasingly costs one $-1$ per transposition. So $\Gamma_A\Gamma_B = c_{AB}\Gamma_{A\triangle B}$ with $c_{AB} = \pm1$ computed from the anticommutation signs and $g^{\mu\mu}$ only. With $B = A$, $A\triangle A = \varnothing$: $\Gamma_A^2 = c_{AA}\mathbb 1$, and $\Gamma_A^{-1} = c_{AA}\Gamma_A$.
+>
+> **2. Passing one γ through Γ_A.** If $|A| = k$: for $\mu \in A$, $\gamma^\mu$ anticommutes with the $k - 1$ other factors and commutes with itself, so $\gamma^\mu\Gamma_A = (-1)^{k-1}\Gamma_A\gamma^\mu$; for $\nu \notin A$, $\gamma^\nu\Gamma_A = (-1)^k\Gamma_A\gamma^\nu$.
+>
+> **3. Traces.** Let $A \ne \varnothing$. If $k$ is even, pick $\mu \in A$: by step 2, $\Gamma_A = -(\gamma^\mu)^{-1}\Gamma_A\gamma^\mu$, and cyclicity of the trace ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]) gives $\operatorname{tr}\Gamma_A = -\operatorname{tr}\Gamma_A = 0$. If $k$ is odd ($k = 1$ or $3$), there is $\nu \notin A$, and $\Gamma_A = -(\gamma^\nu)^{-1}\Gamma_A\gamma^\nu$ gives the same.
+>
+> **4. Independence.** Suppose $\sum_Ac_A\Gamma_A = 0$. Multiply by $\Gamma_B^{-1}$ and take the trace: $\Gamma_B^{-1}\Gamma_A = c_{BB}\Gamma_B\Gamma_A = \pm\Gamma_{A\triangle B}$ is traceless unless $A = B$ (step 3), when it is $\mathbb 1$ with trace $n$. So $nc_B = 0$, $c_B = 0$ for every $B$. Sixteen independent elements of the $n^2$-dimensional space $M_n(\mathbb C)$ need $n^2 \ge 16$: $n \ge 4$.
+>
+> **5. n = 4.** $\dim M_4(\mathbb C) = 16$, so the sixteen independent $\Gamma_A$ span it. A matrix commuting with every $\gamma^\mu$ commutes with every product $\Gamma_A$, hence with every $4\times4$ matrix, in particular with the matrix units $E_{ij}$; $E_{ij}M = ME_{ij}$ for all $i, j$ forces $M = c\mathbb 1$. A subspace invariant under all $\gamma^\mu$ is invariant under all $\Gamma_A$, hence under all matrices, and only $0$ and $\mathbb C^4$ are.
+>
+> **What the derivation shows**
+> - Everything follows from the anticommutation signs; no explicit matrices were used. The chiral basis is one $4\times4$ solution, so $n = 4$ is attained. That $n$ must be even is [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9|Theorem §CB.12.9]] (also [[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]]), by another trace argument; here the bound comes from independence of all sixteen products at once.
+> - Up to factors $\pm1, \pm i$ the sixteen are $\mathbb 1$, $\gamma^\mu$, $\gamma^\mu\gamma^\nu$ ($\mu < \nu$), $\gamma^\mu\gamma^\nu\gamma^\rho$ ($\propto\gamma_\kappa\gamma^5$) and $\gamma^0\gamma^1\gamma^2\gamma^3$ ($\propto\gamma^5$, Def. §CB.11.13): the scalar, vector, tensor, axial vector and pseudoscalar of the bilinears ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]); reducing any product to them is [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]].
+> - ⚑ By-product (step 3): every $\gamma^\mu$ and every product of distinct $\gamma$'s is traceless, the start of trace technology ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]]).
+> - Used next: Pauli's theorem (Theorem §CB.12.12), which needs part 4.
+
+^der-cb-11-8
+
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
+
+Their first application, the eigenvalues of the Dirac maps:
+
+> [!theorem] Theorem §CB.11.9: The Eigenvalues of Γ⁰ and Γⁱ
+> For the Dirac maps ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]]), $\Gamma^0$ is diagonalizable with eigenvalues $+1$ and $-1$, each twice, and each $\Gamma^i$ ($i = 1, 2, 3$) is diagonalizable with eigenvalues $+i$ and $-i$, each twice. Hence the matrix $\gamma^0$ has eigenvalues $\pm1$ (each twice) in every basis ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-9|Theorem §CB.0.9]]).
+>
+> *Source: the argument written here, from the Clifford algebra and the trace ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]); the same argument for $\gamma^5$ is in the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$")*
+
+^thm-cb-11-9
+
+> [!derivation]- Derivation
+> **1. Eigenvalues of Γ⁰.** $(\Gamma^0)^2 = \mathrm{id}$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]]), so the minimal polynomial of $\Gamma^0$ divides $z^2 - 1 = (z - 1)(z + 1)$, which has distinct zeros: $\Gamma^0$ is diagonalizable with eigenvalues in $\{1, -1\}$ ([[§17 Diagonalizable Operators#^ladr-5-62|LADR Thm. 5.62]]). Its trace is $0$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], 2), and the trace is the sum of the eigenvalues with multiplicity ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-52|LADR Thm. 8.52]]): $n_+ - n_- = 0$ with $n_+ + n_- = 4$, so $n_\pm = 2$.
+>
+> **2. Eigenvalues of Γⁱ.** $(\Gamma^i)^2 = -\mathrm{id}$: the minimal polynomial divides $(z - i)(z + i)$, again with distinct zeros; trace $0$ gives $i(n_+ - n_-) = 0$, so $n_\pm = 2$.
+>
+> **What the derivation shows**
+> - Only the Clifford relation and the trace were used, so the result holds in every basis: "$\gamma^0 = \operatorname{diag}(\mathbb 1, -\mathbb 1)$" of the Dirac basis ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]) is the operator written in its own eigenbasis; the off-diagonal $\gamma^0$ of the chiral basis has the same eigenvalues (Theorem §CB.0.9).
+> - ⚑ By-product: no basis makes $\gamma^0$ and $\gamma^5$ both diagonal → [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]].
+> - Used next: the signature of the Dirac form ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-17|Theorem §CB.12.17]]).
+
+^der-cb-11-9
+
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§17 Diagonalizable Operators#^ladr-5-62|LADR Thm. 5.62]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-52|LADR Thm. 8.52]]
+
+> [!theorem] Theorem §CB.11.10: The Clifford Algebra Is the Exterior Algebra as a Vector Space
 > The linear map $\Lambda V \to \mathrm{Cl}(V, q)$ ([[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-7-12|Def. §CB.7.12]]) given on $\Lambda^kV$ by
 >
 > $$
@@ -170,9 +236,9 @@ The sixteen products of Dirac matrices, the $n = 4$ case in matrices, proved in 
 >
 > is an isomorphism of vector spaces. For an orthogonal basis it maps $e_{i_1}\wedge\cdots\wedge e_{i_k}$ to $e_I$, so $\Lambda^kV$ goes onto the span of the $e_I$ with $|I| = k$; it commutes with the action of $O(V, q)$ on both sides (on $\mathrm{Cl}(V, q)$ by the automorphisms extending $v \mapsto Rv$, Theorem §CB.10.7).
 >
-> *Source: Meinrenken, Clifford Algebras and Lie Groups, Props. 2.6–2.7 · Figueroa-O'Farrill, Spin Geometry, §1.4.4, eq. (40) · the antisymmetrized products: [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]]*
+> *Source: Meinrenken, Clifford Algebras and Lie Groups, Props. 2.6–2.7 · Figueroa-O'Farrill, Spin Geometry, §1.4.4, eq. (40) · the antisymmetrized products: [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]]*
 
-^thm-cb-11-7
+^thm-cb-11-10
 
 > [!proof]- Proof
 > *Source: E. Meinrenken, Clifford Algebras and Lie Groups, Ch. 2 §2.5, Props. 2.6–2.7 and their proofs (the quantization map $q : \Lambda(V) \to \mathrm{Cl}(V; B)$ is graded antisymmetrization; checked on an orthogonal basis) · J. Figueroa-O'Farrill, Spin Geometry, §1.3.1 and §1.4.4, eq. (40). Equivariance under $O(V, q)$ written here.*
@@ -205,21 +271,21 @@ The sixteen products of Dirac matrices, the $n = 4$ case in matrices, proved in 
 > - $Q$ is a vector-space isomorphism, not an algebra map: $Q(e_1\wedge e_1) = 0$ but $e_1e_1 = q(e_1)$. The Clifford product is the wedge product plus contractions (Meinrenken, Prop. 2.6: $\sigma(v_1v_2) = v_1\wedge v_2 + B(v_1, v_2)$).
 > - ⚑ By-product: because $Q$ commutes with the orthogonal group, the decomposition $\mathrm{Cl} \cong \bigoplus_k\Lambda^kV$ is a decomposition into $O(V, q)$-representations; for $\mathbb R^{1,3}$ it is the classification of the sixteen bilinears as scalar, vector, tensor, axial vector and pseudoscalar (§CB.17).
 
-^pf-cb-11-7
+^pf-cb-11-10
 
 *Uses:* [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-7-12|Def. §CB.7.12]], [[§38 Tensor Products#^ladr-9-90|LADR Thm. 9.90]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]]
 
 ## The volume element
 
-> [!definition] Definition §CB.11.8: Volume Element
+> [!definition] Definition §CB.11.11: Volume Element
 > For an orthonormal basis $e_1, \dots, e_n$ of a nondegenerate real quadratic space ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-1|Def. §CB.10.1]]), the **volume element** is $\omega = e_1e_2\cdots e_n \in \mathrm{Cl}(V, q)$.
 >
 > *Source: Figueroa-O'Farrill, Spin Geometry, §3.3 (before Lemma 3.9) · Meinrenken, Clifford Algebras and Lie Groups, §2.8 (the chirality element)*
 
-^def-cb-11-8
+^def-cb-11-11
 
-> [!theorem] Theorem §CB.11.9: Properties of the Volume Element
-> Let $(V, q) = \mathbb R^{r,s}$, $n = r + s$, and $\omega$ as in [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-8|Def. §CB.11.8]].
+> [!theorem] Theorem §CB.11.12: Properties of the Volume Element
+> Let $(V, q) = \mathbb R^{r,s}$, $n = r + s$, and $\omega$ as in [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-11|Def. §CB.11.11]].
 > 1. Another orthonormal basis gives $\pm\omega$, the sign being the determinant of the change of basis: $\omega$ depends only on an orientation.
 > 2. $\omega^2 = (-1)^{n(n-1)/2}(-1)^s$.
 > 3. $\omega v = (-1)^{n-1}v\omega$ for $v \in V$: $\omega$ commutes with $\mathrm{Cl}^0$ always, and anticommutes with $V$ for $n$ even.
@@ -229,14 +295,14 @@ The sixteen products of Dirac matrices, the $n = 4$ case in matrices, proved in 
 >
 > *Source: Meinrenken, Clifford Algebras and Lie Groups, §2.8 · Figueroa-O'Farrill, Spin Geometry, Lemma 3.9 and §3.2 · Peskin & Schroeder, §3.4 · part 1 written here*
 
-^thm-cb-11-9
+^thm-cb-11-12
 
 > [!proof]- Proof
 > *Source: E. Meinrenken, Clifford Algebras and Lie Groups, Ch. 2 §2.8 (chirality element: $\Gamma^2 = (-1)^{n(n-1)/2}\prod_iB(e_i, e_i)$ and $\Gamma v = (-1)^{n-1}v\Gamma$, same sign convention) · J. Figueroa-O'Farrill, Spin Geometry, §3.3, Lemma 3.9 (the same in his convention, $\omega^2 = (-1)^{s + d(d-1)/2}$ with $s$ the number of generators squaring to $-1$) · centre: the basis argument of Figueroa-O'Farrill, §3.2 (proof of Prop. 3.3), organized here as a sign table. Part 1 written here.*
 >
 > Throughout, $e_1, \dots, e_n$ is an orthonormal basis, $q_i = q(e_i) = \pm1$, $\prod_iq_i = (-1)^s$, and $e_I$ the basis of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]].
 >
-> **Step 1** (part 1: change of orthonormal basis). Let $f_j = \sum_iA_{ij}e_i$ be another orthonormal basis. The $f_j$ pairwise anticommute ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]]), so, exactly as in Step 3 of the proof of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-7|Theorem §CB.11.7]], $f_1\cdots f_n = Q(f_1\wedge\cdots\wedge f_n)$. Expanding the wedge multilinearly,
+> **Step 1** (part 1: change of orthonormal basis). Let $f_j = \sum_iA_{ij}e_i$ be another orthonormal basis. The $f_j$ pairwise anticommute ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]]), so, exactly as in Step 3 of the proof of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]], $f_1\cdots f_n = Q(f_1\wedge\cdots\wedge f_n)$. Expanding the wedge multilinearly,
 >
 > $$
 > f_1\wedge\cdots\wedge f_n = \sum_{i_1, \dots, i_n}A_{i_11}\cdots A_{i_nn}\,e_{i_1}\wedge\cdots\wedge e_{i_n} = \sum_\sigma\operatorname{sgn}(\sigma)A_{\sigma(1)1}\cdots A_{\sigma(n)n}\,e_1\wedge\cdots\wedge e_n = \det(A)\,e_1\wedge\cdots\wedge e_n :
@@ -269,28 +335,87 @@ The sixteen products of Dirac matrices, the $n = 4$ case in matrices, proved in 
 > **What the proof shows.**
 > - The sign of $\omega^2$ depends only on $n(n-1)/2 + s$: in $\mathrm{Cl}(1,3)$ ($s = 3$) and in $\mathrm{Cl}(3,1)$ ($s = 1$) alike $\omega^2 = -1$, which is why $\gamma^5$ carries a factor $i$ in either metric convention.
 > - ⚑ By-product: Step 4's sign table also shows that an odd element anticommuting with every vector is $0$ (for odd $|I|$, $\varepsilon_j(I) = +1$ for $j \in I$); this is used for the kernel of $\mathrm{Pin} \to O(V)$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-7|Theorem §CB.13.7]]).
-> - Used in: chirality ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]), the complex volume element ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]]), the kernel of $\rho$ (Theorem §CB.13.11).
+> - Used in: chirality ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]), the complex volume element ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-4|Def. §CB.12.4]]), the kernel of $\rho$ (Theorem §CB.13.11).
 
-^pf-cb-11-9
+^pf-cb-11-12
 
-*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-7|Theorem §CB.11.7]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]], [[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|LADR Thm. 9.7]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]], [[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|LADR Thm. 9.7]]
 
-γ⁵ and its properties, the volume element of the Dirac module, in [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] and [[§C5a.11 Gamma-Matrix Technology|§C5a.11]]:
+$\gamma^5$, the volume element of the Dirac matrices as the course defines it (PHY 513, Problem Set 5, Problem 5; first written in [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]), and its properties:
 
-![[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1]]
+> [!definition] Definition §CB.11.13: The Matrix γ⁵
+>
+> $$
+> \gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3 ,
+> $$
+>
+> with $\gamma^\mu$ the Dirac matrices of [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]. The "5" is a label, not a Lorentz index: there is no $\gamma_5$ obtained by lowering.
+>
+> *Source: PS §3.4, eq. (3.68) · the user's PHY 513 notes, Ch. 9 §9.6 (Definition "The matrix $\gamma^5$", eq. (gamma5)) · PHY 513, Problem Set 5, Problem 5 (statement: "there is no way to lower a '5' index") · Yu §5.1, eq. (5.32)*
 
-![[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1]]
+^def-cb-11-13
 
-![[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5]]
+> [!theorem] Theorem §CB.11.14: Algebraic Properties of γ⁵
+>
+> $$
+> (\gamma^5)^2 = \mathbb 1, \qquad \gamma^{5\dagger} = \gamma^5, \qquad \{\gamma^5, \gamma^\mu\} = 0, \qquad \operatorname{tr}\gamma^5 = 0 ,
+> $$
+>
+> for $\gamma^5$ of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]] (Hermiticity in a basis with $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]).
+>
+> *Source: PHY 513, Problem Set 5, Problem 5(a)–(b) (as the user wrote it) · PS §3.4, eqs. (3.69)–(3.71) · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$" and its proof) · Yu §5.1, eqs. (5.37)–(5.40)*
+
+^thm-cb-11-14
+
+> [!derivation]- Derivation
+> **1. Anticommutation.** Move $\gamma^\mu$ from the right of $\gamma^0\gamma^1\gamma^2\gamma^3$ to the left, one factor at a time. It passes three factors with index $\ne \mu$, each giving $-1$ (Theorem §CB.10.12), and the one equal to $\mu$, with which it commutes: $\gamma^5\gamma^\mu = (-1)^3\gamma^\mu\gamma^5$. (The user's Problem Set 5 solution does the same move with $\gamma^a\gamma^\mu = 2g^{a\mu} - \gamma^\mu\gamma^a$ at each step and shows that the four surviving metric terms add up to $-2\gamma^\mu\gamma^5$.)
+>
+> **2. Hermiticity.** $(ABCD)^\dagger = D^\dagger C^\dagger B^\dagger A^\dagger$ and $\gamma^{0\dagger} = \gamma^0$, $\gamma^{i\dagger} = -\gamma^i$ (Theorem §C5a.2.1): $\gamma^{5\dagger} = -i\gamma^{3\dagger}\gamma^{2\dagger}\gamma^{1\dagger}\gamma^{0\dagger} = -i(-1)^3\gamma^3\gamma^2\gamma^1\gamma^0 = i\gamma^3\gamma^2\gamma^1\gamma^0$. Reversing four distinct anticommuting factors takes $3 + 2 + 1 = 6$ swaps (three to bring $\gamma^0$ to the front, two for $\gamma^1$, one for $\gamma^2$), so $\gamma^3\gamma^2\gamma^1\gamma^0 = (-1)^6\gamma^0\gamma^1\gamma^2\gamma^3$ and $\gamma^{5\dagger} = \gamma^5$.
+>
+> **3. Square.** Using the reversed form of step 2 for the second factor, $(\gamma^5)^2 = \gamma^5\gamma^{5\dagger} = i\cdot i\,\gamma^0\gamma^1\gamma^2\gamma^3\gamma^3\gamma^2\gamma^1\gamma^0$. The middle pairs collapse one after another: $(\gamma^3)^2 = -\mathbb 1$, $(\gamma^2)^2 = -\mathbb 1$, $(\gamma^1)^2 = -\mathbb 1$, $(\gamma^0)^2 = \mathbb 1$, giving $i^2(-1)^3 = 1$.
+>
+> **4. Trace.** $\gamma^5$ is $i$ times the product $\Gamma_{\{0,1,2,3\}}$, traceless by [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], 2.
+>
+> **What the derivation shows**
+> - $\gamma^5$ is a Hermitian involution, so its eigenvalues are $\pm1$; tracelessness makes each occur twice in four dimensions.
+> - The factor $i$ in the definition is chosen to make $\gamma^5$ Hermitian with square $+1$.
+> - Used next: Theorem §C5a.5.1; the chirality projectors $\frac12(\mathbb 1 \mp \gamma^5)$ ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]); traces with $\gamma^5$ ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|Theorem §C5a.11.4]]).
+
+^der-cb-11-14
+
+*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]
+
+Its totally antisymmetric form in the course's convention $\varepsilon^{0123} = +1$ is physics notation, [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]] (the same element as Def. §CB.11.11, written with $\varepsilon_{\mu\nu\rho\sigma}$). Two anticommuting involutions are never diagonal in one basis; for $\gamma^0$ and $\gamma^5$:
+
+> [!theorem] Theorem §CB.11.15: γ⁰ and γ⁵ Cannot Be Diagonal in the Same Basis
+> Each of $\gamma^0$ and $\gamma^5$ is diagonal, with eigenvalues $+1$ and $-1$ each twice, in a basis of its own eigenvectors ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]); no basis of $V$ makes both diagonal.
+>
+> *Source: the argument written here*
+
+^thm-cb-11-15
+
+> [!derivation]- Derivation
+> **1. Each alone.** For $\Gamma^0$ this is Theorem §CB.11.9. For $\Gamma^5$ the same argument applies with $(\Gamma^5)^2 = \mathrm{id}$ and $\operatorname{tr}\Gamma^5 = 0$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]): the minimal polynomial divides $(z - 1)(z + 1)$, and the trace forces each eigenvalue twice (also Theorem §CB.17.4, 2).
+>
+> **2. Diagonal matrices commute.** If, in some basis, $\gamma^0 = \operatorname{diag}(a_1, \dots, a_4)$ and $\gamma^5 = \operatorname{diag}(b_1, \dots, b_4)$, then $\gamma^0\gamma^5 = \operatorname{diag}(a_kb_k) = \gamma^5\gamma^0$.
+>
+> **3. They anticommute.** $\gamma^5\gamma^0 = -\gamma^0\gamma^5$ (Theorem §CB.11.14). With step 2, $\gamma^0\gamma^5 = -\gamma^0\gamma^5$, so $\gamma^0\gamma^5 = 0$. But $\gamma^0$ and $\gamma^5$ are invertible ($(\gamma^0)^2 = (\gamma^5)^2 = \mathbb 1$), so their product is invertible and not $0$: contradiction.
+>
+> **What the derivation shows**
+> - Choosing a basis means choosing which structure to make visible: the chiral basis diagonalizes $\gamma^5$, the Dirac basis $\gamma^0$ (Remark: Why each basis is used, below).
+
+^der-cb-11-15
+
+*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]
 
 ## The even subalgebra and small examples
 
-> [!theorem] Theorem §CB.11.10: The Even Subalgebra Is a Clifford Algebra of One Dimension Less
+> [!theorem] Theorem §CB.11.16: The Even Subalgebra Is a Clifford Algebra of One Dimension Less
 > Let $(V, q)$ be nondegenerate real, $e_0 \in V$ with $q(e_0) = \epsilon \in \{\pm1\}$, and $V' = e_0^\perp$ with $q'(v') = -\epsilon\,q(v')$. Then $v' \mapsto v'e_0$ extends to an algebra isomorphism $\mathrm{Cl}(V', q') \cong \mathrm{Cl}^0(V, q)$. In particular $\mathrm{Cl}^0(1,3) \cong \mathrm{Cl}(3,0)$ (with $e_0$ timelike, $f_i = e_ie_0$, $f_i^2 = +1$) and $\mathrm{Cl}^0(3,0) \cong \mathrm{Cl}(0,2)$.
 >
 > *Source: Figueroa-O'Farrill, Spin Geometry, Prop. 2.8 · Meinrenken, Clifford Algebras and Lie Groups, eq. (19)*
 
-^thm-cb-11-10
+^thm-cb-11-16
 
 > [!proof]- Proof
 > *Source: J. Figueroa-O'Farrill, Spin Geometry, §2.3.1, Prop. 2.8 and its proof ($\phi(x) = xe_{s+1}$, Clifford, surjective, dimension count; his $C\ell(s,t) \cong C\ell(s+1,t)^0$ is this statement for $\epsilon = -1$ after his sign change) · E. Meinrenken, Clifford Algebras and Lie Groups, Ch. 2 §2.4, eq. (19) (the complex version $e_i \mapsto \sqrt{-1}\,e_ie_{n+1}$).*
@@ -313,24 +438,24 @@ The sixteen products of Dirac matrices, the $n = 4$ case in matrices, proved in 
 >
 > **What the proof shows.**
 > - The even part forgets one dimension and flips the sign of the form on the rest (for timelike $e_0$): this is the algebraic reason the boost generators $\gamma^i\gamma^0$ square to $+1$ like Pauli matrices, and why $\mathrm{Spin}(1,3)$ is built from $\mathrm{Cl}(3,0)\otimes\mathbb C$ (§CB.15).
-> - Used in: Theorem §CB.11.11 ($\mathrm{Cl}^0(3,0) \cong \mathbb H$) and the complexified even subalgebra ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9|Theorem §CB.12.9]]).
+> - Used in: Theorem §CB.11.17 ($\mathrm{Cl}^0(3,0) \cong \mathbb H$) and the complexified even subalgebra ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-19|Theorem §CB.12.19]]).
 
-^pf-cb-11-10
+^pf-cb-11-16
 
 *Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-1|Def. §CB.10.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|Theorem §CB.10.8]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-3|Theorem §CB.11.3]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]]
 
-> [!theorem] Theorem §CB.11.11: Clifford Algebras in Low Dimensions
+> [!theorem] Theorem §CB.11.17: Clifford Algebras in Low Dimensions
 > As real algebras:
 >
 > | $\mathrm{Cl}(r, s)$ | $\mathrm{Cl}(0,1)$ | $\mathrm{Cl}(1,0)$ | $\mathrm{Cl}(0,2)$ | $\mathrm{Cl}(2,0)$ | $\mathrm{Cl}(1,1)$ | $\mathrm{Cl}(3,0)$ | $\mathrm{Cl}(1,2)$ |
 > |---|---|---|---|---|---|---|---|
 > | $\cong$ | $\mathbb C$ | $\mathbb R\oplus\mathbb R$ | $\mathbb H$ | $M_2(\mathbb R)$ | $M_2(\mathbb R)$ | $M_2(\mathbb C)$ | $M_2(\mathbb C)$ |
 >
-> ($\mathbb H$ the quaternions, [[§41 The Unit Quaternions and SU(2)#^def-41-1|591 Def. §41.1]].) In particular $\mathrm{Cl}^0(3,0) \cong \mathbb H$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]]), and $\mathrm{Cl}(3,0)$ is realized by the Pauli matrices (§CB.14).
+> ($\mathbb H$ the quaternions, [[§41 The Unit Quaternions and SU(2)#^def-41-1|591 Def. §41.1]].) In particular $\mathrm{Cl}^0(3,0) \cong \mathbb H$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-16|Theorem §CB.11.16]]), and $\mathrm{Cl}(3,0)$ is realized by the Pauli matrices (§CB.14).
 >
 > *Source: Woit, §28.2 · Meinrenken, Clifford Algebras and Lie Groups, Prop. 2.4 · Figueroa-O'Farrill, Spin Geometry, §1.3.2*
 
-^thm-cb-11-11
+^thm-cb-11-17
 
 > [!proof]- Proof
 > *Source: P. Woit, Quantum Theory, Groups and Representations, §28.2 ($\mathrm{Cliff}(0,1) = \mathbb C$, $\mathrm{Cliff}(0,2) = \mathbb H$, $\mathrm{Cliff}(1,1) = M(2, \mathbb R)$, $\mathrm{Cliff}(3,0) = M(2, \mathbb C)$ with the Pauli matrices; same sign convention) · E. Meinrenken, Clifford Algebras and Lie Groups, Ch. 2 §2.3, Prop. 2.4 and its proof (the method: explicit generators plus a dimension count; same convention) · J. Figueroa-O'Farrill, Spin Geometry, §1.3.2 and Thm. 2.7 (whose $C\ell(s,t)$ is this section's $\mathrm{Cl}(t,s)$). The generators for $\mathrm{Cl}(2,0)$ and $\mathrm{Cl}(1,2)$ are chosen here.*
@@ -351,19 +476,36 @@ The sixteen products of Dirac matrices, the $n = 4$ case in matrices, proved in 
 >
 > **Step 3** (checks). Anticommutation: $(1,-1)$ is a single generator; $ij + ji = k - k = 0$ ([[§41 The Unit Quaternions and SU(2)#^def-41-1|591 Def. §41.1]]); distinct Pauli matrices anticommute, so $\sigma^1\sigma^3 + \sigma^3\sigma^1 = 0$, $\sigma^1(i\sigma^2) + (i\sigma^2)\sigma^1 = i\{\sigma^1, \sigma^2\} = 0$, $\sigma^3(i\sigma^a) + (i\sigma^a)\sigma^3 = 0$ and $(i\sigma^1)(i\sigma^2) + (i\sigma^2)(i\sigma^1) = -\{\sigma^1, \sigma^2\} = 0$. Squares: $(i\sigma^a)^2 = -(\sigma^a)^2 = -\mathbb 1$. Spanning: the real $2\times2$ matrices $\mathbb 1, \sigma^1, \sigma^3, -i\sigma^2 = \begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$ are a basis of $M_2(\mathbb R)$ (any $\begin{pmatrix}a & b\\ c & d\end{pmatrix}$ is $\frac{a+d}2\mathbb 1 + \frac{b+c}2\sigma^1 + \frac{a-d}2\sigma^3 + \frac{c-b}2(-i\sigma^2)$); and $\mathbb 1, \sigma^1, \sigma^2, \sigma^3$ are a complex basis of $M_2(\mathbb C)$ (QM Theorem §B6.1.4, 4), so $\mathbb 1, \sigma^k, i\mathbb 1, i\sigma^k$ are a real basis, and both rows for $M_2(\mathbb C)$ produce all eight up to sign. Step 1 now gives each isomorphism.
 >
-> **Step 4** ($\mathrm{Cl}^0(3,0) \cong \mathbb H$). By [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]], $\mathrm{Cl}^0(3,0) \cong \mathrm{Cl}(0,2)$, which is $\mathbb H$ by the third row.
+> **Step 4** ($\mathrm{Cl}^0(3,0) \cong \mathbb H$). By [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-16|Theorem §CB.11.16]], $\mathrm{Cl}^0(3,0) \cong \mathrm{Cl}(0,2)$, which is $\mathbb H$ by the third row.
 >
 > **What the proof shows.**
 > - Signature matters over $\mathbb R$: $\mathrm{Cl}(1,0) \not\cong \mathrm{Cl}(0,1)$ (one has zero divisors, $(1,0)(0,1) = 0$, the other is a field), and $\mathrm{Cl}(2,0) \not\cong \mathrm{Cl}(0,2)$ ($M_2(\mathbb R)$ has zero divisors, $\mathbb H$ has none); after complexification the difference disappears (Theorem §CB.12.3).
-> - The two-component square roots of [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^ex-c5a-0-1|Example §C5a.0.1]] are modules of $\mathrm{Cl}(1,1)$ and $\mathrm{Cl}(1,2)$ by these rows.
+> - The two-component square roots of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-11-18|Example §CB.11.18]] are modules of $\mathrm{Cl}(1,1)$ and $\mathrm{Cl}(1,2)$ by these rows.
 
-^pf-cb-11-11
+^pf-cb-11-17
 
-*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|Theorem §CB.11.10]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§41 The Unit Quaternions and SU(2)#^def-41-1|591 Def. §41.1]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|Theorem §CB.11.6]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-16|Theorem §CB.11.16]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§41 The Unit Quaternions and SU(2)#^def-41-1|591 Def. §41.1]]
 
-The two-component square roots in $1 + 1$ and $2 + 1$ dimensions, which are modules of $\mathrm{Cl}(1,1)$ and $\mathrm{Cl}(1,2)$, in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]]:
+The two-component square roots in $1 + 1$ and $2 + 1$ dimensions, Clifford modules of $\mathrm{Cl}(1,1)$ and $\mathrm{Cl}(1,2)$ (first written in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]]):
 
-![[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^ex-c5a-0-1]]
+> [!example] Example §CB.11.18: Two-Component Square Roots in 1+1 and 2+1 Dimensions
+> With fewer $\gamma$'s, $2\times2$ matrices suffice. In $1+1$ dimensions, $g = \operatorname{diag}(1, -1)$, take
+>
+> $$
+> \gamma^0 = \sigma^1, \qquad \gamma^1 = i\sigma^2 .
+> $$
+>
+> *Computation.* With the Pauli product rule ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]): $(\sigma^1)^2 = \mathbb 1_2 = g^{00}\mathbb 1_2$; $(i\sigma^2)^2 = i^2(\sigma^2)^2 = -\mathbb 1_2 = g^{11}\mathbb 1_2$; $\sigma^1(i\sigma^2) + (i\sigma^2)\sigma^1 = i(\sigma^1\sigma^2 + \sigma^2\sigma^1) = i(i\sigma^3 - i\sigma^3) = 0$. So for $p = (p^0, p^1)$, with $p_0 = p^0$ and $p_1 = -p^1$, $p_\mu\gamma^\mu = p^0\sigma^1 - p^1\,i\sigma^2$, and its square has four terms,
+>
+> $$
+> (p_\mu\gamma^\mu)^2 = (p^0)^2(\sigma^1)^2 + (p^1)^2(i\sigma^2)^2 - p^0p^1\,i\bigl(\sigma^1\sigma^2 + \sigma^2\sigma^1\bigr) = \bigl((p^0)^2 - (p^1)^2\bigr)\mathbb 1_2 = p^2\,\mathbb 1_2 .
+> $$
+>
+> In $2 + 1$ dimensions, $g = \operatorname{diag}(1, -1, -1)$, add $\gamma^2 = i\sigma^3$: $(i\sigma^3)^2 = -\mathbb 1_2$, $\{\sigma^1, i\sigma^3\} = i\{\sigma^1, \sigma^3\} = 0$, $\{i\sigma^2, i\sigma^3\} = -\{\sigma^2, \sigma^3\} = 0$. In the vector form of the second route (Derivation §CB.12.9, second route) these are $\mathbf a^0 = (1, 0, 0)$, $\mathbf a^1 = (0, i, 0)$, $\mathbf a^2 = (0, 0, i)$, with $\mathbf a^\mu\cdot\mathbf a^\mu = 1, -1, -1$ and mutually orthogonal. A fourth vector orthogonal to all three would be $0$, so the third space direction of $3 + 1$ dimensions forces $4\times4$.
+>
+> *Source: PS §3.2, pp. 40–41 (three-dimensional Euclidean space, $\gamma^j = i\sigma^j$, $\{\gamma^i, \gamma^j\} = -2\delta^{ij}$) · the user's pre-course notes, §5.1 ("one can set $\gamma^i = i\sigma^i$, but no fourth $2\times2$ matrix anticommutes with all three") · the $1+1$ and $2+1$ matrices written here*
+
+^ex-cb-11-18
 
 > [!remark]- ★ Remark: The real classification (not used in the course)
 > Every real Clifford algebra $\mathrm{Cl}(r, s)$ (convention of [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^cau-cb-10-1|Caution: Two sign conventions for the Clifford relation]]) is a matrix algebra over $\mathbb R$, $\mathbb C$ or $\mathbb H$, or a sum of two such, determined by $r - s \bmod 8$:
@@ -377,5 +519,5 @@ The two-component square roots in $1 + 1$ and $2 + 1$ dimensions, which are modu
 ^rem-cb-11-1
 
 > [!remark]- Connections
-> - The volume element is $\gamma^5$ in disguise, up to the orientation sign that depends on the choice of Dirac module (Theorem §CB.11.9; [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-17-1|Caution: Two Dirac modules, and the sign of γ⁵]]), and Theorem §CB.11.10 is the algebraic form of "boosts are $\gamma^0\gamma^i$": the even part of $\mathrm{Cl}(1,3)$ is generated by $e_ie_0$, which square to $+1$ like Pauli matrices (§CB.15).
-> - **Used in**: Theorem §CB.11.3 — [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; Theorems §CB.11.6–§CB.11.7 — [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]; Theorem §CB.11.9 — [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]]; Theorem §CB.11.11 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^ex-c5a-0-1|Example §C5a.0.1]].
+> - The volume element is $\gamma^5$ in disguise, up to the orientation sign that depends on the choice of Dirac module (Theorem §CB.11.12; [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-17-1|Caution: Two Dirac modules, and the sign of γ⁵]]), and Theorem §CB.11.16 is the algebraic form of "boosts are $\gamma^0\gamma^i$": the even part of $\mathrm{Cl}(1,3)$ is generated by $e_ie_0$, which square to $+1$ like Pauli matrices (§CB.15).
+> - **Used in**: Theorem §CB.11.3 — [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]; Theorems §CB.11.6–§CB.11.10 — [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]; Definition §CB.11.7 — [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] (embedded; cited in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-9|Theorem §C5a.8.9]]), [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded; cited in [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|Theorem §C5a.11.6]]); Theorem §CB.11.8 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded), [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded), [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (embedded; cited in [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] (embedded; cited in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]]), [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded; cited in [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]]), [[§C9.4 Fermion Bilinears under Parity|§C9.4]] (embedded; cited in [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|Theorem §C9.4.6]]); Theorem §CB.11.9 — [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (embedded); Definition §CB.11.11 — [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded); Theorem §CB.11.12 — [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]], [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded); Definition §CB.11.13 — [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (embedded; cited in [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]), [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (embedded; cited in [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] (embedded; cited in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-4|Theorem §C5a.8.4]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]]), [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]] (embedded; cited in [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|Theorem §C5a.10.14]]), [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded; cited in [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|Theorem §C5a.11.4]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]]), [[§C9.4 Fermion Bilinears under Parity|§C9.4]] (embedded; cited in [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-2|§C9.4, Caution: Slide 19's γ⁵]]); Theorem §CB.11.14 — [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (embedded; cited in [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]), [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (embedded; cited in [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (embedded; cited in [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] (embedded; cited in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-4|Theorem §C5a.8.4]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]]), [[§C5a.9 Plane-Wave Solutions|§C5a.9]] (embedded; cited in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]]), [[§C5a.11 Gamma-Matrix Technology|§C5a.11]] (embedded; cited in [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|Theorem §C5a.11.4]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-7|Theorem §C5a.11.7]]), [[§C9.4 Fermion Bilinears under Parity|§C9.4]] (embedded; cited in [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-2|§C9.4, Caution: Slide 19's γ⁵]], [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-3|Theorem §C9.4.3]], [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|Theorem §C9.4.6]], [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|Theorem §C9.4.7]]); Theorem §CB.11.15 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (cited in [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]]), [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (embedded; cited in [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]]); Theorem §CB.11.17 — [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-11-18|Example §CB.11.18]]; Example §CB.11.18 — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation|§C5a.0]] (embedded).

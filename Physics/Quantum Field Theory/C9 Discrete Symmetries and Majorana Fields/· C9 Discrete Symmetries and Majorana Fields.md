@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (49), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (26)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (39), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (26), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (10)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1)
 
 ## Sections

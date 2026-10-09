@@ -11,9 +11,23 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.1 (Plane waves and an eigenvalue problem), §9.2 (The rest frame), §9.3 (Boosting to a general frame), §9.4 (Principle "Never take the square root of a 2×2 matrix" and its proof; Derivation "Check: u(p) solves the Dirac equation in every frame"), §9.4 (Derivation "Normalization II: ūu", the row ū), §9.5 (Derivation "The v spinors: the four steps again"; Derivation "Normalizations of the v's", the row v̄), §9.6 (paragraph "The Dirac equation, from both sides"), and the paragraph "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts A, B ("Normalization II", "Completeness for Dirac Spinors") and C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.45)–(3.51), (3.55)–(3.56), (3.58)–(3.62) · Yu Zhao-Huan, 量子场论讲义, §5.4.1–§5.4.2, eqs. (5.118)–(5.157), (5.182)–(5.191), (5.205)–(5.206) · the user's pre-course notes, §5.4 ("General form of the plane-wave solutions"; "Helicity spinors in the Weyl representation"; note "Checking the spin sums") · PHY 513, Problem Set 6, Problem 3(c)–(d) and comments (Larsen; the user's solutions).*
 
-What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section finds, for each momentum, two positive-frequency spinors $u^s(p)$ and two negative-frequency spinors $v^s(p)$ by Lecture 9's four steps: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$, and then their Dirac conjugates $\bar u^s(p)$, $\bar v^s(p)$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]) as rows in their own right. Their normalizations, spin sums and the helicity basis are [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]].
+What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section finds, for each momentum, two positive-frequency spinors $u^s(p)$ and two negative-frequency spinors $v^s(p)$ by Lecture 9's four steps: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$, and then their Dirac conjugates $\bar u^s(p)$, $\bar v^s(p)$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]) as rows in their own right. Their normalizations, spin sums and the helicity basis are [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]. The mathematics it uses — the Clifford relation, the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$, the Dirac form and its invariance — is shown in the blocks below ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]]–[[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.13]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.16]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.17]]).
 
-*Conventions* ([[Larsen PHY 513]]): chiral basis $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]) with $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-10|Def. §C5a.1.10]]); $p^0 = E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$ always; $\slashed{p} \equiv \gamma^\mu p_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$, read actively, the boost to rapidity $\eta$ along $+z$ having $\omega_{03} = -\omega_{30} = \eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]). Two-spinors are $\xi$, $\eta^s$ (with an index); the rapidity is $\eta$ (never with an index).
+*Conventions* ([[Larsen PHY 513]]): chiral basis $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) with $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]); $p^0 = E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$ always; $\slashed{p} \equiv \gamma^\mu p_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$, read actively, the boost to rapidity $\eta$ along $+z$ having $\omega_{03} = -\omega_{30} = \eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]). Two-spinors are $\xi$, $\eta^s$ (with an index); the rapidity is $\eta$ (never with an index).
+
+## The mathematics used here
+
+Plane waves turn the Dirac equation into the eigenvalue problem of $\slashed{p}$, whose square is $p^2$ by the Clifford relation; Theorem §C5a.9.2 also uses $\gamma^5$:
+
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11]]
+
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12]]
+
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-12]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-14]]
 
 ## Plane waves and an eigenvalue problem
 
@@ -100,7 +114,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 > \slashed{p}^{\,2} = \tfrac12\bigl(\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu\bigr)p_\mu p_\nu = \tfrac12\{\gamma^\mu, \gamma^\nu\}p_\mu p_\nu = g^{\mu\nu}p_\mu p_\nu\,\mathbb 1 = p^2\,\mathbb 1 ,
 > $$
 >
-> by the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]). On the mass shell $p^2 = m^2$. Part 1.
+> by the Clifford algebra ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]). On the mass shell $p^2 = m^2$. Part 1.
 >
 > **Step 2** (possible eigenvalues). If $\slashed{p}\,w = \lambda w$ with $w \neq 0$, then $m^2 w = \slashed{p}^{\,2}w = \slashed{p}(\lambda w) = \lambda^2 w$, so $\lambda^2 = m^2$: $\lambda = +m$ or $\lambda = -m$.
 >
@@ -123,7 +137,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 ^der-c5a-9-2
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]
+*Uses:* [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]
 
 > [!derivation]- Derivation (second route: the characteristic polynomial and the Dirac Hamiltonian, Yu and the pre-course notes)
 > This route asks the question the other way round: for fixed $\mathbf k$, for which $k^0$ does $(k_\mu\gamma^\mu - m)w = 0$ have a solution $w \neq 0$?
@@ -136,9 +150,9 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 >
 > which is the single-particle Hamiltonian in momentum space ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]).
 >
-> $H_{\text{s.p.}}(\mathbf k)$ is Hermitian: $(\gamma^0\gamma^i)^\dagger = \gamma^{i\dagger}\gamma^{0\dagger} = (-\gamma^i)\gamma^0 = \gamma^0\gamma^i$ and $\gamma^{0\dagger} = \gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]). So the $k^0$ are real, $H_{\text{s.p.}}(\mathbf k)$ is diagonalizable by a unitary matrix, and eigenvectors of distinct eigenvalues are orthogonal in $\mathbb C^4$.
+> $H_{\text{s.p.}}(\mathbf k)$ is Hermitian: $(\gamma^0\gamma^i)^\dagger = \gamma^{i\dagger}\gamma^{0\dagger} = (-\gamma^i)\gamma^0 = \gamma^0\gamma^i$ and $\gamma^{0\dagger} = \gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]). So the $k^0$ are real, $H_{\text{s.p.}}(\mathbf k)$ is diagonalizable by a unitary matrix, and eigenvectors of distinct eigenvalues are orthogonal in $\mathbb C^4$.
 >
-> **Step 2** (the determinant, by $\gamma^5$). $\gamma^5$ anticommutes with each $\gamma^\mu$ and squares to $\mathbb 1$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), so $\gamma^5(k_\mu\gamma^\mu - m)\gamma^5 = -k_\mu\gamma^\mu - m$ and, taking determinants ($\det\gamma^5\cdot\det\gamma^5 = \det(\gamma^5)^2 = 1$), $\det(k_\mu\gamma^\mu - m) = \det(-k_\mu\gamma^\mu - m)$. Hence
+> **Step 2** (the determinant, by $\gamma^5$). $\gamma^5$ anticommutes with each $\gamma^\mu$ and squares to $\mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]), so $\gamma^5(k_\mu\gamma^\mu - m)\gamma^5 = -k_\mu\gamma^\mu - m$ and, taking determinants ($\det\gamma^5\cdot\det\gamma^5 = \det(\gamma^5)^2 = 1$), $\det(k_\mu\gamma^\mu - m) = \det(-k_\mu\gamma^\mu - m)$. Hence
 >
 > $$
 > \bigl[\det(k_\mu\gamma^\mu - m)\bigr]^2 = \det\bigl[(k_\mu\gamma^\mu - m)(-k_\nu\gamma^\nu - m)\bigr] = \det\bigl[-(k_\mu\gamma^\mu)^2 - m\,k_\mu\gamma^\mu + m\,k_\nu\gamma^\nu + m^2\bigr] = \det\bigl[(m^2 - k^2)\mathbb 1\bigr] = (m^2 - k^2)^4 ,
@@ -157,7 +171,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 ^der-c5a-9-2b
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]]
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]
 
 > [!remark] Remark: Two of each kind, and what they will describe
 > Each component of a solution solves the Klein–Gordon equation, which offers eight candidate plane waves per $\mathbf p$ (two exponents times four columns); the Dirac equation keeps four, and splits them evenly, two per exponent ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-3|§C5a.7, Remark: Eight candidates, four solutions]]; Theorem §C5a.9.2). Two positive-frequency solutions are what a spin-$\frac12$ particle needs: its two spin states (the rest frame below makes this explicit). The two negative-frequency solutions cannot be dropped, because a general solution needs both exponents, as for the scalar field ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]); after quantization their coefficients become creation operators of the antiparticle ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
@@ -165,6 +179,16 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 > *Source: the user's PHY 513 notes, Ch. 8 (Derivation "Eight candidates, four solutions" and paragraph "Negative energy, antiparticles"), Ch. 9 §9.1 · PS §3.3, p. 45*
 
 ^rem-c5a-9-2
+
+### The mathematics used here: spin in the rest frame
+
+Theorem §C5a.9.4 uses the spin matrices built from the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
+
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15]]
+
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-6]]
+
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-6]]
 
 ## The rest frame
 
@@ -182,7 +206,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 ^thm-c5a-9-3
 
 > [!derivation]- Derivation
-> **Step 1** (the matrix at rest). At $p = k = (m, \mathbf 0)$, $p_\mu = (m, \mathbf 0)$ and $\slashed{p} = \gamma^0 p_0 = m\gamma^0$. In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]), and $m$ in $\slashed{p} - m$ multiplies $\mathbb 1_4 = \operatorname{diag}(\mathbb 1, \mathbb 1)$. In $2\times2$ blocks,
+> **Step 1** (the matrix at rest). At $p = k = (m, \mathbf 0)$, $p_\mu = (m, \mathbf 0)$ and $\slashed{p} = \gamma^0 p_0 = m\gamma^0$. In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]), and $m$ in $\slashed{p} - m$ multiplies $\mathbb 1_4 = \operatorname{diag}(\mathbb 1, \mathbb 1)$. In $2\times2$ blocks,
 >
 > $$
 > \slashed{p} - m = m\begin{pmatrix}-\mathbb 1 & \mathbb 1\\ \mathbb 1 & -\mathbb 1\end{pmatrix}, \qquad \slashed{p} + m = m\begin{pmatrix}\mathbb 1 & \mathbb 1\\ \mathbb 1 & \mathbb 1\end{pmatrix} .
@@ -193,22 +217,16 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 > **Step 3** ($v$). $v = (c, d)$: $(\slashed{p} + m)v = m(c + d,\ c + d) = 0$, so $d = -c$; with $c = \sqrt m\,\eta^s$, $v_0 = \sqrt m(\eta^s, -\eta^s)$. ⚑ By-product: the factor $\sqrt m$ is not determined by the equation, which is linear; it is chosen so that no $m$ survives in the boosted spinors and $\bar u u = 2m$ in every frame → [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]].
 >
 > **What the derivation shows**
-> - In the chiral basis the rest-frame condition is a statement about the two Weyl halves ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]): equal for $u$, opposite for $v$; nothing is "upper = particle, lower = antiparticle" here.
+> - In the chiral basis the rest-frame condition is a statement about the two Weyl halves ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]]): equal for $u$, opposite for $v$; nothing is "upper = particle, lower = antiparticle" here.
 > - Assumption: $m > 0$; a massless particle has no rest frame.
 > - Used next: what $\xi$ means ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-4|Theorem §C5a.9.4]]) and the boost ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]]).
 
 ^der-c5a-9-3
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]
-
-Theorem §C5a.9.4 uses the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
-
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-6]]
-
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-6]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]
 
 > [!theorem] Theorem §C5a.9.4: In the Rest Frame the Two-Spinor Carries the Spin
-> On Dirac spinors the angular momentum is $J^k = \frac12\varepsilon^{kij}S^{ij} = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ (the spin matrices $S^k$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-3|Def. §C5a.3.3]]), with the spinor generators $S^{ij}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; chiral form [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]), and a rotation by $\theta$ about $\hat{\mathbf n}$ acts through the spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]) as $\Lambda_{1/2} = \operatorname{diag}\bigl(D(\theta, \hat{\mathbf n}), D(\theta, \hat{\mathbf n})\bigr)$, $D = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$. Hence
+> On Dirac spinors the angular momentum is $J^k = \frac12\varepsilon^{kij}S^{ij} = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ (the spin matrices $S^k$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), with the spinor generators $S^{ij}$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]; chiral form [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), and a rotation by $\theta$ about $\hat{\mathbf n}$ acts through the spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) as $\Lambda_{1/2} = \operatorname{diag}\bigl(D(\theta, \hat{\mathbf n}), D(\theta, \hat{\mathbf n})\bigr)$, $D = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$. Hence
 >
 > $$
 > J^k\,u_0(\xi) = u_0\bigl(\tfrac12\sigma^k\xi\bigr), \qquad \Lambda_{1/2}\,u_0(\xi) = u_0\bigl(D\,\xi\bigr),
@@ -221,11 +239,11 @@ Theorem §C5a.9.4 uses the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
 ^thm-c5a-9-4
 
 > [!derivation]- Derivation
-> **Step 1** (the generators). In the chiral basis $S^{ij} = \frac12\varepsilon^{ijl}\operatorname{diag}(\sigma^l, \sigma^l)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]). Then $\frac12\varepsilon^{kij}S^{ij} = \frac14\varepsilon^{kij}\varepsilon^{ijl}\operatorname{diag}(\sigma^l, \sigma^l)$, and $\varepsilon^{kij}\varepsilon^{ijl} = \varepsilon^{kij}\varepsilon^{lij} = 2\delta^{kl}$ (cyclic $\varepsilon^{ijl} = \varepsilon^{lij}$, then the contraction of two $\varepsilon$'s over two indices), so $J^k = \frac14\cdot2\operatorname{diag}(\sigma^k, \sigma^k) = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$.
+> **Step 1** (the generators). In the chiral basis $S^{ij} = \frac12\varepsilon^{ijl}\operatorname{diag}(\sigma^l, \sigma^l)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]). Then $\frac12\varepsilon^{kij}S^{ij} = \frac14\varepsilon^{kij}\varepsilon^{ijl}\operatorname{diag}(\sigma^l, \sigma^l)$, and $\varepsilon^{kij}\varepsilon^{ijl} = \varepsilon^{kij}\varepsilon^{lij} = 2\delta^{kl}$ (cyclic $\varepsilon^{ijl} = \varepsilon^{lij}$, then the contraction of two $\varepsilon$'s over two indices), so $J^k = \frac14\cdot2\operatorname{diag}(\sigma^k, \sigma^k) = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$.
 >
 > **Step 2** (on $u_0$). $J^k u_0 = \frac12\operatorname{diag}(\sigma^k, \sigma^k)\sqrt m(\xi, \xi) = \sqrt m(\frac12\sigma^k\xi, \frac12\sigma^k\xi) = u_0(\frac12\sigma^k\xi)$: both halves are acted on by the same $2\times2$ matrix, so the equality of the halves is preserved. For $v_0 = \sqrt m(\eta^s, -\eta^s)$ the same block acts on $\eta^s$ and on $-\eta^s$, giving $v_0(\frac12\sigma^k\eta^s)$; the relative sign rides along.
 >
-> **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $k$ is rotation-invariant; this is the Wigner rotation $W(R, k) = R$ → [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]].
+> **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $k$ is rotation-invariant; this is the Wigner rotation $W(R, k) = R$ → [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]].
 >
 > **What the derivation shows**
 > - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-6|Theorem §CB.16.6]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
@@ -234,7 +252,7 @@ Theorem §C5a.9.4 uses the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
 
 ^der-c5a-9-4
 
-*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]
+*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]
 
 > [!definition] Definition §C5a.9.3: Spin Basis
 > A **spin basis** is an orthonormal basis $\xi^s$, $s = 1, 2$, of $\mathbb C^2$; likewise $\eta^s$ for the $v$'s:
@@ -266,7 +284,7 @@ Completeness follows from orthonormality: the matrix $\sum_s\xi^s\xi^{s\dagger}$
 ^cau-c5a-9-1
 
 > [!remark] Remark: One spin-½ particle, not two
-> Both halves of $u_0$ are spin-$\frac12$ objects, but they carry the same $\xi$, so a solution describes one spin-$\frac12$ particle, not two. Whether it is spin up or down along $z$ is the choice of $\xi$, and rotating the frame mixes the two choices (Theorem §C5a.9.4). In the chiral basis the two halves are the left- and right-handed Weyl components ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]); they are not "particle" and "antiparticle" — in the rest frame they are equal in size, and only a boost makes one of them dominate ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|Theorem §C5a.10.14]]).
+> Both halves of $u_0$ are spin-$\frac12$ objects, but they carry the same $\xi$, so a solution describes one spin-$\frac12$ particle, not two. Whether it is spin up or down along $z$ is the choice of $\xi$, and rotating the frame mixes the two choices (Theorem §C5a.9.4). In the chiral basis the two halves are the left- and right-handed Weyl components ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]]); they are not "particle" and "antiparticle" — in the rest frame they are equal in size, and only a boost makes one of them dominate ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|Theorem §C5a.10.14]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.2 (paragraph "What 'spin ½' means here")*
 
@@ -277,7 +295,7 @@ Completeness follows from orthonormality: the matrix $\sum_s\xi^s\xi^{s\dagger}$
 Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture boosts the rest-frame solution: a boost adds momentum, and $\Lambda_{1/2}$ is known. The covariance of the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]) guarantees that the boosted plane wave is again a solution.
 
 > [!theorem] Theorem §C5a.9.5: The Spinor Boost along z
-> The spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]) of the boost to rapidity $\eta$ along $+z$ ($\omega_{03} = -\omega_{30} = \eta$), with the generator $S^{03}$ of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], is
+> The spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) of the boost to rapidity $\eta$ along $+z$ ($\omega_{03} = -\omega_{30} = \eta$), with the generator $S^{03}$ of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], is
 >
 > $$
 > \Lambda_{1/2} = e^{-i\eta S^{03}} = \begin{pmatrix}e^{-\eta\sigma^3/2} & 0\\ 0 & e^{+\eta\sigma^3/2}\end{pmatrix}, \qquad e^{\mp\eta\sigma^3/2} = \cosh\tfrac\eta2\,\mathbb 1 \mp \sinh\tfrac\eta2\,\sigma^3 = \bigl(\cosh\eta\,\mathbb 1 \mp \sinh\eta\,\sigma^3\bigr)^{1/2} ,
@@ -290,7 +308,7 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 ^thm-c5a-9-5
 
 > [!derivation]- Derivation
-> **Step 1** (the exponent). In $-\frac i2\omega_{\mu\nu}S^{\mu\nu}$ only $(\mu, \nu) = (0, 3)$ and $(3, 0)$ contribute: $-\frac i2(\omega_{03}S^{03} + \omega_{30}S^{30}) = -\frac i2(\eta S^{03} + (-\eta)(-S^{03})) = -i\eta S^{03}$, using $S^{30} = -S^{03}$ (antisymmetry of the commutator). With $S^{03} = -\frac i2\operatorname{diag}(\sigma^3, -\sigma^3)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]), $-i\eta S^{03} = (-i)(-\frac i2)\eta\operatorname{diag}(\sigma^3, -\sigma^3) = -\frac\eta2\operatorname{diag}(\sigma^3, -\sigma^3)$, since $(-i)(-i) = -1$.
+> **Step 1** (the exponent). In $-\frac i2\omega_{\mu\nu}S^{\mu\nu}$ only $(\mu, \nu) = (0, 3)$ and $(3, 0)$ contribute: $-\frac i2(\omega_{03}S^{03} + \omega_{30}S^{30}) = -\frac i2(\eta S^{03} + (-\eta)(-S^{03})) = -i\eta S^{03}$, using $S^{30} = -S^{03}$ (antisymmetry of the commutator). With $S^{03} = -\frac i2\operatorname{diag}(\sigma^3, -\sigma^3)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), $-i\eta S^{03} = (-i)(-\frac i2)\eta\operatorname{diag}(\sigma^3, -\sigma^3) = -\frac\eta2\operatorname{diag}(\sigma^3, -\sigma^3)$, since $(-i)(-i) = -1$.
 >
 > **Step 2** (block-diagonal exponential). The exponential of a block-diagonal matrix is block-diagonal with the exponentials of the blocks (each power of the matrix is block-diagonal with the powers of the blocks): $\Lambda_{1/2} = \operatorname{diag}(e^{-\eta\sigma^3/2}, e^{+\eta\sigma^3/2})$. The lower block is the upper one with $\sigma^3 \to -\sigma^3$; study the upper one.
 >
@@ -317,7 +335,7 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 
 ^der-c5a-9-5
 
-*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
+*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
 
 > [!definition] Definition §C5a.9.5: The Square Roots √(p·σ) and √(p·σ̄)
 > For $p^2 = m^2 \ge 0$, $p^0 > 0$, the matrices $p\cdot\sigma$ and $p\cdot\bar\sigma$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]]) are positive semidefinite (positive definite for $m > 0$). $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$ denote their unique positive-semidefinite square roots: diagonalize, take the positive roots of the eigenvalues, transform back,
@@ -417,7 +435,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]]
 
 > [!theorem] Theorem §C5a.9.8: The Spinor Boost from Rest to Momentum p
-> Let $m > 0$ and let $L(p)$ be the pure boost along $\hat{\mathbf p}$ that takes $k = (m, \mathbf 0)$ to $p = (E_{\mathbf p}, \mathbf p)$, with rapidity $\eta$: $\cosh\eta = E_{\mathbf p}/m = \gamma$, $\sinh\eta = |\mathbf p|/m = \gamma v$. Its spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), the exponential of the boost generators $S^{0i}$ along $\hat{\mathbf p}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]), is
+> Let $m > 0$ and let $L(p)$ be the pure boost along $\hat{\mathbf p}$ that takes $k = (m, \mathbf 0)$ to $p = (E_{\mathbf p}, \mathbf p)$, with rapidity $\eta$: $\cosh\eta = E_{\mathbf p}/m = \gamma$, $\sinh\eta = |\mathbf p|/m = \gamma v$. Its spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), the exponential of the boost generators $S^{0i}$ along $\hat{\mathbf p}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), is
 >
 > $$
 > \Lambda_{1/2}(p) \equiv \exp\Bigl(-\frac\eta2\begin{pmatrix}\hat{\mathbf p}\cdot\boldsymbol\sigma & 0\\ 0 & -\hat{\mathbf p}\cdot\boldsymbol\sigma\end{pmatrix}\Bigr) = \begin{pmatrix}\sqrt{\dfrac{p\cdot\sigma}m} & 0\\[1ex] 0 & \sqrt{\dfrac{p\cdot\bar\sigma}m}\end{pmatrix} .
@@ -438,7 +456,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > Setting this equal to $p = (E_{\mathbf p}, \mathbf p)$: $\hat{\mathbf n} = \hat{\mathbf p}$, $\cosh\eta = E_{\mathbf p}/m$, $\sinh\eta = |\mathbf p|/m$ (consistent: $\cosh^2\eta - \sinh^2\eta = (E^2 - \mathbf p^2)/m^2 = 1$). For $\hat{\mathbf n} = \hat{\mathbf z}$ this is $\gamma$ and $\gamma v$ of [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]].
 >
-> **Step 2** (the spinor exponent). With the same $\omega$, $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -i\sum_i\omega_{0i}S^{0i}$ (the $(0, i)$ and $(i, 0)$ terms are equal, as in Step 1 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]]) $= -i\eta\hat n^i\bigl(-\frac i2\bigr)\operatorname{diag}(\sigma^i, -\sigma^i) = -\frac\eta2\operatorname{diag}(\hat{\mathbf n}\cdot\boldsymbol\sigma, -\hat{\mathbf n}\cdot\boldsymbol\sigma)$, by $S^{0i}$ of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]. This is the stated exponential, with $\hat{\mathbf n} = \hat{\mathbf p}$.
+> **Step 2** (the spinor exponent). With the same $\omega$, $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -i\sum_i\omega_{0i}S^{0i}$ (the $(0, i)$ and $(i, 0)$ terms are equal, as in Step 1 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]]) $= -i\eta\hat n^i\bigl(-\frac i2\bigr)\operatorname{diag}(\sigma^i, -\sigma^i) = -\frac\eta2\operatorname{diag}(\hat{\mathbf n}\cdot\boldsymbol\sigma, -\hat{\mathbf n}\cdot\boldsymbol\sigma)$, by $S^{0i}$ of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]. This is the stated exponential, with $\hat{\mathbf n} = \hat{\mathbf p}$.
 >
 > **Step 3** (every step of the $z$ case goes through). $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \hat n^i\hat n^j\sigma^i\sigma^j = \hat n^i\hat n^j\delta^{ij} = \mathbb 1$ (symmetric part, as in Step 2 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-7|Derivation §C5a.9.7]]), which is all that Steps 2–6 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]] used about $\sigma^3$. Replacing $\sigma^3 \to \hat{\mathbf n}\cdot\boldsymbol\sigma$ and $P_\pm \to \Pi_\pm = \frac12(\mathbb 1 \pm \hat{\mathbf n}\cdot\boldsymbol\sigma)$:
 >
@@ -450,12 +468,12 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > **What the derivation shows**
 > - The rapidity is a device: it is needed in the intermediate steps and is absent from the result.
-> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by the group element only up to sign ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]; [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]); the exponential of the boost generator, reached from $\mathbb 1$ along the boost path, picks the positive-definite sign. This fixes the overall sign of $u$ and $v$ below.
+> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by the group element only up to sign ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]); the exponential of the boost generator, reached from $\mathbb 1$ along the boost path, picks the positive-definite sign. This fixes the overall sign of $u$ and $v$ below.
 > - $\Lambda_{1/2}(p)$ is Hermitian and positive: the "boost" factor of the polar decomposition of an $SL(2, \mathbb C)$ matrix, block by block.
 
 ^der-c5a-9-8
 
-*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|Theorem §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]
+*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|Theorem §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]
 
 > [!remark] Remark: Why a square root restores the full rapidity
 > A spinor rotates with half the angle and boosts with half the rapidity: its generators have eigenvalues $\pm\frac12$ and $\pm\frac i2$ where the vector's have $\pm1$ and $\pm i$ ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). The four-momentum, a vector, depends on $\cosh\eta$ and $\sinh\eta$; the spinor on $\cosh\frac\eta2$ and $\sinh\frac\eta2$. Squaring a half-rapidity matrix doubles the rapidity (Step 5 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]]), so the spinor matrix is the square root of a matrix linear in $E$ and $\mathbf p$. This is also why spinors are "square roots of vectors": $\bar u\gamma^\mu u = 2p^\mu$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^rem-c5a-10-1|§C5a.10, Remark: Why u†u depends on the frame and ūu does not]]) rebuilds the vector from two spinors.
@@ -463,6 +481,28 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 ("spinors do 'half' of what four-vectors do"); Ch. 8 §8.1 (paragraph "Why 'half'")*
 
 ^rem-c5a-9-4
+
+### The mathematics used here: the Dirac conjugates
+
+The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the self-adjointness of the Dirac maps for it, and the pseudo-unitarity of $\Lambda_{1/2}$; Example §C5a.9.1 changes to the Dirac basis by the change-of-basis rules:
+
+![[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11]]
+
+![[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15]]
+
+![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-16]]
+
+![[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-16]]
+
+![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13]]
+
+![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-17-13]]
+
+![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-17-13b]]
+
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5]]
+
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5]]
 
 ## The spinors u(p), v(p) and their Dirac conjugates
 
@@ -551,14 +591,14 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]
 
 > [!theorem] Theorem §C5a.9.10: The Dirac Conjugate of u(p)
-> For the spinors $u^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], every $\mathbf p$ and $m \ge 0$, the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]) is the row
+> For the spinors $u^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], every $\mathbf p$ and $m \ge 0$, the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]) is the row
 >
 > $$
 > \bar u^s(p) \equiv u^{s\dagger}(p)\,\gamma^0 = \bigl(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma}\bigr), \qquad \bar u^s(p)\,(\slashed{p} - m) = 0 ,
 > $$
 >
 > with the two Hermitian roots of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]] in exchanged places relative to the column $u^s(p)$.
-> 1. $\bar u^s(p)$ is a $1\times4$ row, the functional $h_D(u^s(p), \cdot\,)$ of the Dirac form ([[§C5a.2 The Dirac Form#^def-c5a-2-4|Def. §C5a.2.4]]): $\bar u^s(p)\,w$ is a number for every column $w$, e.g. $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]).
+> 1. $\bar u^s(p)$ is a $1\times4$ row, the functional $h_D(u^s(p), \cdot\,)$ of the Dirac form ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]]): $\bar u^s(p)\,w$ is a number for every column $w$, e.g. $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]).
 > 2. The Dirac equation acts from the right: $\bar u^s(p)\,\slashed{p} = m\,\bar u^s(p)$, with $\slashed{p}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]].
 > 3. At rest, $p = (m, \mathbf 0)$ with $m > 0$: $\bar u^s_0 = \sqrt m\,(\xi^{s\dagger}, \xi^{s\dagger}) = u_0^{s\dagger}$.
 >
@@ -581,7 +621,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > u^{s\dagger}(p) = \bigl(\xi^{s\dagger}\sqrt{p\cdot\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\bar\sigma}\bigr) .
 > $$
 >
-> **Step 3** ($\gamma^0$ swaps the halves). In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]). A row times a block matrix is $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$; here $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
+> **Step 3** ($\gamma^0$ swaps the halves). In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]). A row times a block matrix is $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$; here $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
 >
 > $$
 > \bar u^s(p) = u^{s\dagger}(p)\,\gamma^0 = \bigl(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma}\bigr) .
@@ -619,40 +659,40 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 
 ^der-c5a-9-10
 
-*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§25 Positive Operators#^ladr-7-34|LADR Def. 7.34]], [[§25 Positive Operators#^ladr-7-38|LADR Thm. 7.38]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
+*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§25 Positive Operators#^ladr-7-34|LADR Def. 7.34]], [[§25 Positive Operators#^ladr-7-38|LADR Thm. 7.38]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
 
 > [!derivation]- Derivation (second route: the Hermitian conjugate of the Dirac equation)
 > This route uses only $(\slashed{p} - m)\,u^s(p) = 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]]) and the Hermiticity of the $\gamma$'s, not the explicit column.
 >
 > **Step 1** (dagger of the equation). For a matrix $M$ and a column $w$, $(Mw)^\dagger = w^\dagger M^\dagger$, and the dagger of the zero column is the zero row. So $(\slashed{p} - m)\,u^s = 0$ gives $u^{s\dagger}(\slashed{p} - m)^\dagger = 0$.
 >
-> **Step 2** (dagger of the matrix). The $p_\mu$ and $m$ are real numbers and $\mathbb 1^\dagger = \mathbb 1$, so $(p_\mu\gamma^\mu - m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} - m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]]):
+> **Step 2** (dagger of the matrix). The $p_\mu$ and $m$ are real numbers and $\mathbb 1^\dagger = \mathbb 1$, so $(p_\mu\gamma^\mu - m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} - m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]]):
 >
 > $$
 > (\slashed{p} - m)^\dagger = \gamma^0\,(p_\mu\gamma^\mu)\,\gamma^0 - m\,\gamma^0\gamma^0 = \gamma^0\,(\slashed{p} - m)\,\gamma^0 .
 > $$
 >
-> **Step 3** (multiply by $\gamma^0$ on the right). Step 1 becomes $u^{s\dagger}\gamma^0(\slashed{p} - m)\gamma^0 = 0$. Multiplying on the right by $\gamma^0$ and using $(\gamma^0)^2 = \mathbb 1$ gives $u^{s\dagger}\gamma^0(\slashed{p} - m) = 0$, i.e. $\bar u^s(p)\,(\slashed{p} - m) = 0$ by the definition of the bar ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]).
+> **Step 3** (multiply by $\gamma^0$ on the right). Step 1 becomes $u^{s\dagger}\gamma^0(\slashed{p} - m)\gamma^0 = 0$. Multiplying on the right by $\gamma^0$ and using $(\gamma^0)^2 = \mathbb 1$ gives $u^{s\dagger}\gamma^0(\slashed{p} - m) = 0$, i.e. $\bar u^s(p)\,(\slashed{p} - m) = 0$ by the definition of the bar ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
 >
 > **What the derivation shows**
-> - In the language of the Dirac form this is $\overline{\gamma^\mu\chi} = \bar\chi\gamma^\mu$, the self-adjointness of the Dirac maps ([[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], 1): the bar of $(\slashed{p} - m)u$ is $\bar u(\slashed{p} - m)$, because the bar is conjugate-linear and the coefficients $p_\mu$, $m$ are real.
-> - It holds for every solution of $(\slashed{p} - m)w = 0$, in every Hermitian basis ([[§C5a.2 The Dirac Form#^def-c5a-2-3|Def. §C5a.2.3]]), and for $m \ge 0$.
+> - In the language of the Dirac form this is $\overline{\gamma^\mu\chi} = \bar\chi\gamma^\mu$, the self-adjointness of the Dirac maps ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-16|Theorem §CB.12.16]], 1): the bar of $(\slashed{p} - m)u$ is $\bar u(\slashed{p} - m)$, because the bar is conjugate-linear and the coefficients $p_\mu$, $m$ are real.
+> - It holds for every solution of $(\slashed{p} - m)w = 0$, in every Hermitian basis ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]]), and for $m \ge 0$.
 > - Assumption: $p_\mu$ and $m$ real (Step 2); for a complex momentum the conjugate equation would carry $p_\mu^{\ast}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.6 (Derivation "Proof of the Gordon identity", paragraph "The Dirac equation, from both sides")*
 
 ^der-c5a-9-10b
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]], [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]
 
 > [!derivation]- Derivation (third route: the bar carries the inverse boost, m > 0)
-> **Step 1** (the bar of a boosted column). $u^s(p) = \Lambda_{1/2}(p)\,u_0^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], 1). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]),
+> **Step 1** (the bar of a boosted column). $u^s(p) = \Lambda_{1/2}(p)\,u_0^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], 1). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]]),
 >
 > $$
 > \bar u^s(p) = u_0^{s\dagger}\,\Lambda_{1/2}(p)^\dagger\,\gamma^0 = u_0^{s\dagger}\,\gamma^0\,\Lambda_{1/2}(p)^{-1} = \bar u_0^s\,\Lambda_{1/2}(p)^{-1} ,
 > $$
 >
-> the plane-wave case of [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]].
+> the plane-wave case of [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]].
 >
 > **Step 2** (the inverse boost). $\Lambda_{1/2}(p) = \operatorname{diag}\bigl(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m}\bigr)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]]). By [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], 3, and $\sqrt{A/m} = \sqrt A/\sqrt m$ (Step 4 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-8|Derivation §C5a.9.8]]), $\sqrt{p\cdot\sigma/m}\,\sqrt{p\cdot\bar\sigma/m} = \frac1m\sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma} = \mathbb 1$, and the same in the other order: each block's inverse is the other root. The inverse of a block-diagonal matrix is block-diagonal with the inverse blocks, so $\Lambda_{1/2}(p)^{-1} = \operatorname{diag}\bigl(\sqrt{p\cdot\bar\sigma/m}, \sqrt{p\cdot\sigma/m}\bigr)$.
 >
@@ -670,7 +710,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 
 ^der-c5a-9-10c
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]
 
 > [!remark] Remark: The same ξ in every frame
 > The $\xi^s$ in $u^s(p)$ are the ones chosen in the rest frame: the boost multiplies each half of $u_0$ by a matrix from the left, so the rest-frame $\xi^s$ is what stands to the right of $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$ in every frame. In particular $\xi = (1, 0)$ means "spin up along $z$ *in the rest frame*", not in the frame where the particle moves. The standard basis is one choice; a basis of spin along $\mathbf p$ is often better, and in it no matrix square root is ever needed ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-12|Theorem §C5a.10.12]]).
@@ -728,7 +768,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-1|Def. §C5a.9.1]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]
 
 > [!theorem] Theorem §C5a.9.12: The Dirac Conjugate of v(p)
-> For the spinors $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], every $\mathbf p$ and $m \ge 0$, the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]) is the row
+> For the spinors $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], every $\mathbf p$ and $m \ge 0$, the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]) is the row
 >
 > $$
 > \bar v^s(p) \equiv v^{s\dagger}(p)\,\gamma^0 = \bigl(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr), \qquad \bar v^s(p)\,(\slashed{p} + m) = 0 ,
@@ -758,7 +798,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > The minus sign is still in the second half: the dagger moved nothing.
 >
-> **Step 3** ($\gamma^0$ swaps the halves). With $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]]) and the row rule $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$, $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
+> **Step 3** ($\gamma^0$ swaps the halves). With $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) and the row rule $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$, $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
 >
 > $$
 > \bar v^s(p) = v^{s\dagger}(p)\,\gamma^0 = \bigl(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr) .
@@ -796,14 +836,14 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 
 ^der-c5a-9-12
 
-*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-11|Def. §C5a.1.11]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]]
+*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]]
 
 > [!derivation]- Derivation (second route: the Hermitian conjugate of the Dirac equation)
 > This route uses only $(\slashed{p} + m)\,v^s(p) = 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) and the Hermiticity of the $\gamma$'s.
 >
 > **Step 1** (dagger of the equation). $(Mw)^\dagger = w^\dagger M^\dagger$ and the dagger of the zero column is the zero row, so $(\slashed{p} + m)\,v^s = 0$ gives $v^{s\dagger}(\slashed{p} + m)^\dagger = 0$.
 >
-> **Step 2** (dagger of the matrix). With $p_\mu$, $m$ real and $\mathbb 1^\dagger = \mathbb 1$, $(p_\mu\gamma^\mu + m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} + m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]]):
+> **Step 2** (dagger of the matrix). With $p_\mu$, $m$ real and $\mathbb 1^\dagger = \mathbb 1$, $(p_\mu\gamma^\mu + m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} + m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]]):
 >
 > $$
 > (\slashed{p} + m)^\dagger = \gamma^0\,(p_\mu\gamma^\mu)\,\gamma^0 + m\,\gamma^0\gamma^0 = \gamma^0\,(\slashed{p} + m)\,\gamma^0 .
@@ -811,20 +851,20 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > The sign of $m$ is unchanged: $m$ is real, so the dagger cannot flip it.
 >
-> **Step 3** (multiply by $\gamma^0$ on the right). Step 1 becomes $v^{s\dagger}\gamma^0(\slashed{p} + m)\gamma^0 = 0$; multiplying on the right by $\gamma^0$ and using $(\gamma^0)^2 = \mathbb 1$ gives $v^{s\dagger}\gamma^0(\slashed{p} + m) = 0$, i.e. $\bar v^s(p)\,(\slashed{p} + m) = 0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]).
+> **Step 3** (multiply by $\gamma^0$ on the right). Step 1 becomes $v^{s\dagger}\gamma^0(\slashed{p} + m)\gamma^0 = 0$; multiplying on the right by $\gamma^0$ and using $(\gamma^0)^2 = \mathbb 1$ gives $v^{s\dagger}\gamma^0(\slashed{p} + m) = 0$, i.e. $\bar v^s(p)\,(\slashed{p} + m) = 0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
 >
 > **What the derivation shows**
 > - ⚑ By-product: the $+m$ of the conjugate equation is inherited unchanged from the column equation, whose sign came from the exponent $e^{+ip\cdot x}$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], 2); the bar never changes the eigenvalue, only the side on which $\slashed{p}$ acts.
-> - The bar of $(\slashed{p} + m)v$ is $\bar v(\slashed{p} + m)$ by the self-adjointness of the Dirac maps for the Dirac form ([[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], 1); valid in every Hermitian basis and for $m \ge 0$. Assumption: $p_\mu$, $m$ real.
+> - The bar of $(\slashed{p} + m)v$ is $\bar v(\slashed{p} + m)$ by the self-adjointness of the Dirac maps for the Dirac form ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-16|Theorem §CB.12.16]], 1); valid in every Hermitian basis and for $m \ge 0$. Assumption: $p_\mu$, $m$ real.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.6 (paragraph "The Dirac equation, from both sides", there for $u$), carried out here for $v$*
 
 ^der-c5a-9-12b
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|Theorem §C5a.1.5]], [[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|Theorem §CB.10.12]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]
 
 > [!derivation]- Derivation (third route: the bar carries the inverse boost, m > 0)
-> **Step 1** (the bar of a boosted column). $v^s(p) = \Lambda_{1/2}(p)\,v_0^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]), $\bar v^s(p) = v_0^{s\dagger}\Lambda_{1/2}(p)^\dagger\gamma^0 = v_0^{s\dagger}\gamma^0\Lambda_{1/2}(p)^{-1} = \bar v_0^s\,\Lambda_{1/2}(p)^{-1}$.
+> **Step 1** (the bar of a boosted column). $v^s(p) = \Lambda_{1/2}(p)\,v_0^s$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]]), $\bar v^s(p) = v_0^{s\dagger}\Lambda_{1/2}(p)^\dagger\gamma^0 = v_0^{s\dagger}\gamma^0\Lambda_{1/2}(p)^{-1} = \bar v_0^s\,\Lambda_{1/2}(p)^{-1}$.
 >
 > **Step 2** (the inverse boost). $\Lambda_{1/2}(p)^{-1} = \operatorname{diag}\bigl(\sqrt{p\cdot\bar\sigma}/\sqrt m,\ \sqrt{p\cdot\sigma}/\sqrt m\bigr) = \Lambda_{1/2}(\tilde p)$ ([[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]], Step 2): the same matrix as for $u$, since the boost does not know which spinor it acts on.
 >
@@ -836,7 +876,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > the formula of the statement: the minus sign of $\bar v_0^s$ rides along, as it did for the column.
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]]
 
 > [!caution] Caution: η means two things
 > The lecture, the slides and Peskin–Schroeder use $\eta$ both for the rapidity and for the two-spinor in $v$. Here $\eta^s$, with a spin index, is always the two-spinor; the rapidity never carries an index.
@@ -884,7 +924,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > u_D(p) = U_D\,u(p) = \frac{1}{\sqrt{E_{\mathbf p} + m}}\begin{pmatrix}(E_{\mathbf p} + m)\,\xi\\ \boldsymbol\sigma\cdot\mathbf p\;\xi\end{pmatrix}, \qquad \bar u^r_D(p)\,u^s_D(p) = 2m\,\delta^{rs}\quad\text{for } \xi^{r\dagger}\xi^s = \delta^{rs} ,
 > $$
 >
-> the normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]] ($\bar uu = 2m$ for $\xi^\dagger\xi = 1$), with $\bar u_D = u_D^\dagger\gamma_D^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-5|Def. §C5a.2.5]]). Here $\boldsymbol\sigma\cdot\mathbf p = \sum_ip^i\sigma^i$ is the three-vector product, not the contraction $p\cdot\sigma = E_{\mathbf p} - \boldsymbol\sigma\cdot\mathbf p$ of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]].
+> the normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]] ($\bar uu = 2m$ for $\xi^\dagger\xi = 1$), with $\bar u_D = u_D^\dagger\gamma_D^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]). Here $\boldsymbol\sigma\cdot\mathbf p = \sum_ip^i\sigma^i$ is the three-vector product, not the contraction $p\cdot\sigma = E_{\mathbf p} - \boldsymbol\sigma\cdot\mathbf p$ of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|Def. §C5a.9.2]].
 >
 > *Reading* (Larsen's comments): at rest, $\mathbf p = 0$, the lower components vanish, $u_D = \sqrt{2m}\,(\xi, 0)$; for $|\mathbf p| \ll m$ they are smaller than the upper ones by $|\mathbf p|/2m$, and the two "large" upper components are the two-component wave function of a spin-½ particle of nonrelativistic quantum mechanics ([[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]]) — why the Dirac basis is used at low energy ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]]).
 >
@@ -895,7 +935,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 3(c): the spinor)
 > **1. The chiral-basis spinor.** $u(p) = \bigl(\sqrt{p\cdot\sigma}\,\xi,\ \sqrt{p\cdot\bar\sigma}\,\xi\bigr)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]]), with $p\cdot\sigma = E_{\mathbf p}\mathbb 1 - \mathbf p\cdot\boldsymbol\sigma$ and $p\cdot\bar\sigma = E_{\mathbf p}\mathbb 1 + \mathbf p\cdot\boldsymbol\sigma$: the lowered index $p_i = -p^i$ gives the minus sign. In $\mathbf p\cdot\boldsymbol\sigma = \boldsymbol\sigma\cdot\mathbf p = \sum_ip^i\sigma^i$ the order does not matter, the $p^i$ being numbers.
 >
-> **2. The change of basis keeps it a solution.** $u_D = U_Du$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], one factor $U_D$ for one spinor index), and with $\gamma_D^\mu = U_D\gamma^\mu U_D^\dagger$, $U_D^\dagger U_D = \mathbb 1$ ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], step 2 of its second-route derivation):
+> **2. The change of basis keeps it a solution.** $u_D = U_Du$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], one factor $U_D$ for one spinor index), and with $\gamma_D^\mu = U_D\gamma^\mu U_D^\dagger$, $U_D^\dagger U_D = \mathbb 1$ ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], step 2 of its second-route derivation):
 >
 > $$
 > \bigl(\gamma_D^\mu p_\mu - m\mathbb 1\bigr)U_Du(p) = U_D\bigl(\gamma^\mu p_\mu - m\mathbb 1\bigr)U_D^\dagger U_D\,u(p) = U_D\bigl(\gamma^\mu p_\mu - m\mathbb 1\bigr)u(p) = 0
@@ -937,7 +977,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 ^der-ex-c5a-9-1
 
 > [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 3(d): the normalization)
-> **1. The bar in the Dirac basis.** $U_D$ is unitary, so the Dirac conjugate keeps its form, $\bar u_D = u_D^\dagger\gamma_D^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-4|Theorem §C5a.2.4]]). The $\sigma^i$ are Hermitian and the $p^i$ real, so $(\boldsymbol\sigma\cdot\mathbf p\,\xi)^\dagger = \xi^\dagger(\boldsymbol\sigma\cdot\mathbf p)^\dagger = \xi^\dagger\,\boldsymbol\sigma\cdot\mathbf p$, and with $\gamma_D^0 = \operatorname{diag}(\mathbb 1, -\mathbb 1)$
+> **1. The bar in the Dirac basis.** $U_D$ is unitary, so the Dirac conjugate keeps its form, $\bar u_D = u_D^\dagger\gamma_D^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]]). The $\sigma^i$ are Hermitian and the $p^i$ real, so $(\boldsymbol\sigma\cdot\mathbf p\,\xi)^\dagger = \xi^\dagger(\boldsymbol\sigma\cdot\mathbf p)^\dagger = \xi^\dagger\,\boldsymbol\sigma\cdot\mathbf p$, and with $\gamma_D^0 = \operatorname{diag}(\mathbb 1, -\mathbb 1)$
 >
 > $$
 > \bar u_D(p) = \frac1{\sqrt{E_{\mathbf p} + m}}\Bigl((E_{\mathbf p} + m)\,\xi^\dagger,\ \xi^\dagger\,\boldsymbol\sigma\cdot\mathbf p\Bigr)\begin{pmatrix}\mathbb 1&0\\0&-\mathbb 1\end{pmatrix} = \frac1{\sqrt{E_{\mathbf p} + m}}\Bigl((E_{\mathbf p} + m)\,\xi^\dagger,\ -\xi^\dagger\,\boldsymbol\sigma\cdot\mathbf p\Bigr) .
@@ -957,15 +997,15 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > **What the derivation shows**
 > - In the Dirac basis $\bar uu$ is (upper)$^2$ minus (lower)$^2$: the Dirac form has signature $(2, 2)$ ([[§C5a.2 The Dirac Form|§C5a.2]]), made diagonal by this basis. The same steps with a plus sign give $u_D^\dagger u_D = \bigl((E_{\mathbf p} + m)^2 + |\mathbf p|^2\bigr)/(E_{\mathbf p} + m) = 2E_{\mathbf p}$.
-> - The result is the chiral-basis $\bar uu = 2m$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]) carried over: a unitary change of basis preserves the Dirac form (Theorem §C5a.2.4), so the computation is a check, not a new normalization.
+> - The result is the chiral-basis $\bar uu = 2m$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]) carried over: a unitary change of basis preserves the Dirac form (Theorem §C5a.2.2), so the computation is a check, not a new normalization.
 
 ^der-ex-c5a-9-1b
 
-*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.2 The Dirac Form#^thm-c5a-2-4|Theorem §C5a.2.4]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]]
+*Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]]
 
 > [!remark]- Connections
 > - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $k = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.9.4).
-> - $\Lambda_{1/2}(p) = \operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$ is positive Hermitian in each block: the "boost" factor of the polar decomposition, the $SL(2, \mathbb C)$ version of "every Lorentz transformation is a boost times a rotation" ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] and its Connections; [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]]); the upper block is the left-handed $SL(2, \mathbb C)$ matrix of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]] (covering the vector representation, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-6|Theorem §C5a.4.6]]).
+> - $\Lambda_{1/2}(p) = \operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$ is positive Hermitian in each block: the "boost" factor of the polar decomposition, the $SL(2, \mathbb C)$ version of "every Lorentz transformation is a boost times a rotation" ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] and its Connections; [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]]); the upper block is the left-handed $SL(2, \mathbb C)$ matrix of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]] (covering the vector representation, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]]).
 > - The eigenvalue count (two $u$'s, two $v$'s) uses only $\slashed{p}^{\,2} = p^2$ and $\operatorname{tr}\gamma^\mu = 0$; the same "square root of $p^2$" is why the Dirac operator squares to the Klein–Gordon operator ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]).
 > - The rest-frame projector structure, $\frac12(\mathbb 1 \pm \gamma^0)$ on $u_0$ and $v_0$, is the $\mathbf p = 0$ case of the energy projectors $\frac{\pm\slashed{p} + m}{2m}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-10|Theorem §C5a.10.10]]), the numerator of the Dirac propagator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], draft).
 > - The spectral form of $\sqrt{p\cdot\sigma}$ uses the spin projectors along $\hat{\mathbf p}$, $\Pi_\pm = \frac12(\mathbb 1 \pm \hat{\mathbf p}\cdot\boldsymbol\sigma)$, whose eigenvectors are the spin-along-an-axis spinors of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-5|QM Theorem §B6.1.5]]: choosing $\xi$ among them is the helicity basis of [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-12|Theorem §C5a.10.12]].

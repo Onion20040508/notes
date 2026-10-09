@@ -11,9 +11,21 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator", eq. (diracP)), Ch. 9 §9.4 and §9.6 (the current $\bar\psi\gamma^\mu\psi$), Ch. 3 §3.4 ("Other fields"), §3.5 (table of canonical tensors; Derivation "Belinfante: symmetrizing T with the spin current") · PHY 513 Lecture 10 (Larsen), slide 16 (the Hamiltonian density) · PHY 513, Problem Set 5, Problem 4 (as the user wrote it) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.4, pp. 50–51, eqs. (3.73)–(3.76), §3.5, p. 52, eqs. (3.84)–(3.85), p. 58, eq. (3.105) · Yu Zhao-Huan, 量子场论讲义, §1.7.3, eqs. (1.241)–(1.248), §5.3, eq. (5.94), §5.4.3, eqs. (5.219)–(5.222) · the user's pre-course notes, §5.3 · PHY 513, Problem Set 6, Problem 5 (Larsen; the user's solution).*
 
-What do Hamiltonian field theory and Noether's theorem give for the Dirac field? The Lagrangian and its field equations are [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), the single-particle Hamiltonian is [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], the bilinears are [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] and $\gamma^5$ is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; the general machinery is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]] (momenta, Legendre transform, brackets) and [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]] ([[P3 Noether's Procedure]]). This section runs that machinery on the Dirac field in the order used for the scalar: the canonical momentum and the Hamiltonian density, the vector and axial currents, the canonical energy–momentum tensor, energy and momentum in field form with the bracket by which $\mathbf P$ generates translations, and the spin current with the symmetric tensor. The quantized field ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) shows these boxes as embeds.
+What do Hamiltonian field theory and Noether's theorem give for the Dirac field? The Lagrangian and its field equations are [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), the single-particle Hamiltonian is [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], the bilinears are [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] and $\gamma^5$ is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; the general machinery is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]] (momenta, Legendre transform, brackets) and [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]] ([[P3 Noether's Procedure]]). This section runs that machinery on the Dirac field in the order used for the scalar: the canonical momentum and the Hamiltonian density, the vector and axial currents, the canonical energy–momentum tensor, energy and momentum in field form with the bracket by which $\mathbf P$ generates translations, and the spin current with the symmetric tensor. The quantized field ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) shows these boxes as embeds. The algebra of the Dirac matrices it uses ($\gamma^\mu$, the sixteen products, $\gamma^5$, the spinor generators) is [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]]–[[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.11]] and [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.13]], shown in the blocks below.
 
 *Conventions* as in [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]]; $\psi$ a classical field with commuting components; $\varepsilon^{0123} = +1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]); $a\overleftrightarrow{\partial}b \equiv a\,\partial b - (\partial a)\,b$.
+
+## The mathematics used here
+
+The Hamiltonian density is written with the Dirac matrices and the sixteen products:
+
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-8]]
 
 ## The canonical momentum and the Hamiltonian density
 
@@ -70,11 +82,11 @@ What do Hamiltonian field theory and Noether's theorem give for the Dirac field?
 >
 > **4. Write with $\psi^\dagger$.** $\bar\psi = \psi^\dagger\gamma^0$: $\mathcal H = \psi^\dagger(-i\gamma^0\gamma^j\partial_j + m\gamma^0)\psi$, with $\partial_j = \partial/\partial x^j$ the components of $\nabla$: $\psi^\dagger(-i\boldsymbol\alpha\cdot\nabla + \beta m)\psi$.
 >
-> **5. Hermiticity of $\alpha$, $\beta$.** $\beta^\dagger = \gamma^{0\dagger} = \gamma^0$. $(\gamma^0\gamma^j)^\dagger = \gamma^{j\dagger}\gamma^0 = (-\gamma^j)\gamma^0 = \gamma^0\gamma^j$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]; distinct $\gamma$'s anticommute).
+> **5. Hermiticity of $\alpha$, $\beta$.** $\beta^\dagger = \gamma^{0\dagger} = \gamma^0$. $(\gamma^0\gamma^j)^\dagger = \gamma^{j\dagger}\gamma^0 = (-\gamma^j)\gamma^0 = \gamma^0\gamma^j$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]; distinct $\gamma$'s anticommute).
 >
 > **6. On shell.** Multiply the Dirac equation by $\gamma^0$: $i\partial_0\psi = (-i\gamma^0\gamma^j\partial_j + m\gamma^0)\psi = H_{\text{s.p.}}\psi$. Hence $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi = i\psi^\dagger\partial_t\psi$.
 >
-> **7. The spectrum of $H_{\text{s.p.}}$.** For $\psi \propto e^{i\mathbf p\cdot\mathbf x}$, $H_{\text{s.p.}} \to \boldsymbol\alpha\cdot\mathbf p + \beta m$; its square is $\mathbf p^2 + m^2$ because $\{\alpha^i, \alpha^j\} = 2\delta^{ij}$, $\{\alpha^i, \beta\} = 0$, $\beta^2 = 1$ (from the Clifford algebra: $\{\gamma^0\gamma^i, \gamma^0\gamma^j\} = -\gamma^i\gamma^j - \gamma^j\gamma^i = 2\delta^{ij}$; $\gamma^0\gamma^i\gamma^0 + \gamma^0\gamma^0\gamma^i = -\gamma^i + \gamma^i = 0$). So its eigenvalues are $\pm E_{\mathbf p}$, each twice, because $H_{\text{s.p.}}(\mathbf p)$ is traceless ($\alpha^j = \gamma^0\gamma^j$ and $\beta = \gamma^0$ are products of distinct $\gamma$'s, [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], part 2); the same count from the plane-wave spinors is [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]]. ⚑ By-product: a negative-frequency solution has negative classical energy $\int\psi^\dagger H_{\text{s.p.}}\psi < 0$; no ordering of commuting fields cures this ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]), and the cure is anticommutation ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
+> **7. The spectrum of $H_{\text{s.p.}}$.** For $\psi \propto e^{i\mathbf p\cdot\mathbf x}$, $H_{\text{s.p.}} \to \boldsymbol\alpha\cdot\mathbf p + \beta m$; its square is $\mathbf p^2 + m^2$ because $\{\alpha^i, \alpha^j\} = 2\delta^{ij}$, $\{\alpha^i, \beta\} = 0$, $\beta^2 = 1$ (from the Clifford algebra: $\{\gamma^0\gamma^i, \gamma^0\gamma^j\} = -\gamma^i\gamma^j - \gamma^j\gamma^i = 2\delta^{ij}$; $\gamma^0\gamma^i\gamma^0 + \gamma^0\gamma^0\gamma^i = -\gamma^i + \gamma^i = 0$). So its eigenvalues are $\pm E_{\mathbf p}$, each twice, because $H_{\text{s.p.}}(\mathbf p)$ is traceless ($\alpha^j = \gamma^0\gamma^j$ and $\beta = \gamma^0$ are products of distinct $\gamma$'s, [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], part 2); the same count from the plane-wave spinors is [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]]. ⚑ By-product: a negative-frequency solution has negative classical energy $\int\psi^\dagger H_{\text{s.p.}}\psi < 0$; no ordering of commuting fields cures this ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]), and the cure is anticommutation ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
 >
 > **What the derivation shows**
 > - The first-order (Hamiltonian) form $i\partial_t\psi = H_{\text{s.p.}}\psi$ is the Dirac equation multiplied by $\gamma^0$: Dirac's original equation, with the algebra of $\boldsymbol\alpha$, $\beta$ derived from the Clifford algebra rather than postulated.
@@ -83,11 +95,21 @@ What do Hamiltonian field theory and Noether's theorem give for the Dirac field?
 
 ^der-c5a-8-2
 
-*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-2|P1, step 2]]
 
 This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) as a density sandwiched between fields: there it is a postulated one-particle Hamiltonian acting on a wave function, here a derived density of a classical field whose integral becomes, after quantization, the Hamiltonian of the many-particle theory (rule 2: the layer changes from principle to theorem; the meaning of $\psi$ changes from amplitude to field).
+
+### The mathematics used here: γ⁵
+
+The axial current uses $\gamma^5$ and its properties:
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-14]]
 
 ## Currents
 
@@ -117,7 +139,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 >
 > **5. Check, directly.** Product rule: $\partial_\mu(\bar\psi\gamma^\mu\psi) = (\partial_\mu\bar\psi)\gamma^\mu\psi + \bar\psi\gamma^\mu\partial_\mu\psi$. The conjugate Dirac equation $i(\partial_\mu\bar\psi)\gamma^\mu = -m\bar\psi$ gives $(\partial_\mu\bar\psi)\gamma^\mu = im\bar\psi$; the Dirac equation $i\gamma^\mu\partial_\mu\psi = m\psi$ gives $\gamma^\mu\partial_\mu\psi = -im\psi$. So $\partial_\mu j^\mu = im\bar\psi\psi - im\bar\psi\psi = 0$. Both equations are used, one per field.
 >
-> **6. Charge.** $j^0 = \bar\psi\gamma^0\psi = \psi^\dagger(\gamma^0)^2\psi = \psi^\dagger\psi = \sum_a\lvert\psi_a\rvert^2 \ge 0$. $Q$ is constant for fields falling off faster than $1/r^2$ ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]]). Reality: [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-5|Theorem §C5a.6.5]]; vector law: [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]].
+> **6. Charge.** $j^0 = \bar\psi\gamma^0\psi = \psi^\dagger(\gamma^0)^2\psi = \psi^\dagger\psi = \sum_a\lvert\psi_a\rvert^2 \ge 0$. $Q$ is constant for fields falling off faster than $1/r^2$ ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]]). Reality: [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]; vector law: [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]].
 >
 > **What the derivation shows**
 > - ⚑ By-product: the classical charge is positive definite, unlike the scalar's ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]); it is Quantum Mechanics' probability density. After quantization with anticommutators, normal-ordered, it becomes particles minus antiparticles and can have either sign ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
@@ -126,18 +148,18 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 ^der-c5a-8-3
 
-*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-5|Theorem §C5a.6.5]]
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
 > [!theorem] Theorem §C5a.8.4: The Axial Current
-> For every solution of the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]), with $\gamma^5$ of [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]],
+> For every solution of the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]), with $\gamma^5$ of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]],
 >
 > $$
 > j^{\mu5} \equiv \bar\psi\gamma^\mu\gamma^5\psi, \qquad \partial_\mu j^{\mu5} = 2im\,\bar\psi\gamma^5\psi .
 > $$
 >
-> It is conserved if and only if $m = 0$ (for generic solutions); then the **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry, and the chiral currents $j^\mu_L = \bar\psi\gamma^\mu P_L\psi = \psi_L^\dagger\bar\sigma^\mu\psi_L$ and $j^\mu_R = \bar\psi\gamma^\mu P_R\psi = \psi_R^\dagger\sigma^\mu\psi_R$ are separately conserved ($P_{L,R}$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]]; Weyl forms: [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]).
+> It is conserved if and only if $m = 0$ (for generic solutions); then the **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry, and the chiral currents $j^\mu_L = \bar\psi\gamma^\mu P_L\psi = \psi_L^\dagger\bar\sigma^\mu\psi_L$ and $j^\mu_R = \bar\psi\gamma^\mu P_R\psi = \psi_R^\dagger\sigma^\mu\psi_R$ are separately conserved ($P_{L,R}$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]; Weyl forms: [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]).
 >
 > *Source: PS §3.4, eqs. (3.73), (3.75)–(3.76) and p. 51 (the chiral transformation) · PHY 513, Problem Set 6, Problem 5(e) (the divergence of $-j^{\mu5}$, $-2im\,\bar\psi\gamma^5\psi$, as the user wrote it: [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]])*
 
@@ -148,7 +170,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 >
 > **2. First term.** $(\partial_\mu\bar\psi)\gamma^\mu = im\bar\psi$ (conjugate equation, as in Derivation §C5a.8.3, step 5): $im\bar\psi\gamma^5\psi$.
 >
-> **3. Second term.** Move $\gamma^5$ to the left: $\gamma^\mu\gamma^5 = -\gamma^5\gamma^\mu$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), so $\bar\psi\gamma^\mu\gamma^5\partial_\mu\psi = -\bar\psi\gamma^5\gamma^\mu\partial_\mu\psi = -\bar\psi\gamma^5(-im\psi) = im\bar\psi\gamma^5\psi$.
+> **3. Second term.** Move $\gamma^5$ to the left: $\gamma^\mu\gamma^5 = -\gamma^5\gamma^\mu$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]), so $\bar\psi\gamma^\mu\gamma^5\partial_\mu\psi = -\bar\psi\gamma^5\gamma^\mu\partial_\mu\psi = -\bar\psi\gamma^5(-im\psi) = im\bar\psi\gamma^5\psi$.
 >
 > **4. Add.** $\partial_\mu j^{\mu5} = 2im\bar\psi\gamma^5\psi$; for $m = 0$ it vanishes.
 >
@@ -162,10 +184,10 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 ^der-c5a-8-4
 
-*Uses:* [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|Theorem §C5a.5.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]
+*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]
 
 > [!example] Example §C5a.8.1: Chiral Symmetry
-> The **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$, $\alpha$ real ($\gamma^5$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]), of the Dirac field of [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], with the bilinears $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf P = \bar\psi\,i\gamma^5\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]):
+> The **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$, $\alpha$ real ($\gamma^5$: [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]), of the Dirac field of [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], with the bilinears $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf P = \bar\psi\,i\gamma^5\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]):
 > 1. $\bar\psi \to \bar\psi\,e^{+i\alpha\gamma^5}$, the same sign in the exponent;
 > 2. $\mathsf V^\mu \to \mathsf V^\mu$;
 > 3. $\mathcal L \to \mathcal L + m\bar\psi\psi - m\bar\psi e^{2i\alpha\gamma^5}\psi$, with $m\bar\psi\psi \to m\cos2\alpha\,\bar\psi\psi + im\sin2\alpha\,\bar\psi\gamma^5\psi$: invariant for $m = 0$, not for $m \neq 0$; to first order $\delta\mathcal L = -2i\alpha m\,\bar\psi\gamma^5\psi = -2\alpha m\,\mathsf P$;
@@ -179,7 +201,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 ^ex-c5a-8-1
 
 > [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 5(a)–(c), and the chain-rule route)
-> Tools: $\gamma^{5\dagger} = \gamma^5$, $(\gamma^5)^2 = \mathbb 1$, $\gamma^5\gamma^\mu = -\gamma^\mu\gamma^5$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]; the user cites Problem Set 5, Problem 5(a)–(b)).
+> Tools: $\gamma^{5\dagger} = \gamma^5$, $(\gamma^5)^2 = \mathbb 1$, $\gamma^5\gamma^\mu = -\gamma^\mu\gamma^5$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]; the user cites Problem Set 5, Problem 5(a)–(b)).
 >
 > **1. ψ̄ (part (a)).** $\bar\psi' \equiv (\psi')^\dagger\gamma^0 = \bigl(e^{i\alpha\gamma^5}\psi\bigr)^\dagger\gamma^0 = \psi^\dagger e^{-i\alpha\gamma^{5\dagger}}\gamma^0 = \psi^\dagger\sum_{n\ge0}\frac{(-i\alpha)^n(\gamma^5)^n}{n!}\,\gamma^0$. Moving $\gamma^0$ to the left through $(\gamma^5)^n$ costs $(-1)^n$, $(\gamma^5)^n\gamma^0 = (-1)^n\gamma^0(\gamma^5)^n$, so the series is $\gamma^0\sum_n\frac{(-1)^n(-i\alpha)^n(\gamma^5)^n}{n!} = \gamma^0\sum_n\frac{(i\alpha\gamma^5)^n}{n!} = \gamma^0e^{i\alpha\gamma^5}$, and $\bar\psi' = \psi^\dagger\gamma^0e^{i\alpha\gamma^5} = \bar\psi\,e^{i\alpha\gamma^5}$.
 >
@@ -208,7 +230,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 > Renaming $\nu \to \mu$, the derivative terms of (b) and (c) cancel and (a) + (c) leave $\delta\mathcal L/\alpha = -2im\,\bar\psi\gamma^5\psi$, as in step 4. Both routes agree; the remainder is not a divergence (for $m \neq 0$ it contains no derivatives at all), so $\mathcal J = 0$ and $X = -2im\,\bar\psi\gamma^5\psi$ in the split of [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]].
 >
 > **What the derivation shows**
-> - In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, so $e^{i\alpha\gamma^5}\psi = (e^{-i\alpha}\psi_L, e^{i\alpha}\psi_R)$: opposite phases on the two Weyl halves ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]]). The kinetic term keeps each half separate and is invariant; the mass term pairs $\psi_L$ with $\psi_R$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]) and picks up $e^{\pm2i\alpha}$.
+> - In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, so $e^{i\alpha\gamma^5}\psi = (e^{-i\alpha}\psi_L, e^{i\alpha}\psi_R)$: opposite phases on the two Weyl halves ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]). The kinetic term keeps each half separate and is invariant; the mass term pairs $\psi_L$ with $\psi_R$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]) and picks up $e^{\pm2i\alpha}$.
 > - $\bar\psi$ transforms with $e^{+i\alpha\gamma^5}$, not with the inverse: unlike the phase $e^{i\alpha}$, the chiral transformation does not preserve the Dirac form ($e^{i\alpha\gamma^5\dagger}\gamma^0e^{i\alpha\gamma^5} = \gamma^0e^{2i\alpha\gamma^5} \neq \gamma^0$), which is why $\bar\psi\psi$ and $\bar\psi\gamma^5\psi$ rotate into each other (a rotation by $2\alpha$ in the $(\mathsf S, \mathsf P)$ plane: $\mathsf S \to \cos2\alpha\,\mathsf S + \sin2\alpha\,\mathsf P$).
 
 ^der-ex-c5a-8-1
@@ -228,7 +250,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 > \partial_\mu j^\mu_5 = -(\partial_\mu\bar\psi)\gamma^\mu\gamma^5\psi - \bar\psi\gamma^\mu\gamma^5\partial_\mu\psi = -\bigl((\partial_\mu\bar\psi)\gamma^\mu\bigr)\gamma^5\psi + \bar\psi\gamma^5\bigl(\gamma^\mu\partial_\mu\psi\bigr) .
 > $$
 >
-> **6. The two Dirac equations.** $i\gamma^\mu\partial_\mu\psi = m\psi$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]). Its Hermitian conjugate times $\gamma^0$ on the right, with $(\gamma^0)^2 = \mathbb 1$ and $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]]): $-i(\partial_\mu\psi^\dagger)\gamma^{\mu\dagger}\gamma^0 = -i(\partial_\mu\psi^\dagger)\gamma^0\,\gamma^0\gamma^{\mu\dagger}\gamma^0 = -i(\partial_\mu\bar\psi)\gamma^\mu = m\bar\psi$. Hence $\gamma^\mu\partial_\mu\psi = \frac mi\psi$ and $(\partial_\mu\bar\psi)\gamma^\mu = -\frac mi\bar\psi$.
+> **6. The two Dirac equations.** $i\gamma^\mu\partial_\mu\psi = m\psi$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]). Its Hermitian conjugate times $\gamma^0$ on the right, with $(\gamma^0)^2 = \mathbb 1$ and $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]): $-i(\partial_\mu\psi^\dagger)\gamma^{\mu\dagger}\gamma^0 = -i(\partial_\mu\psi^\dagger)\gamma^0\,\gamma^0\gamma^{\mu\dagger}\gamma^0 = -i(\partial_\mu\bar\psi)\gamma^\mu = m\bar\psi$. Hence $\gamma^\mu\partial_\mu\psi = \frac mi\psi$ and $(\partial_\mu\bar\psi)\gamma^\mu = -\frac mi\bar\psi$.
 >
 > **7. Result.**
 >
@@ -245,7 +267,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 ^der-ex-c5a-8-1b
 
-*Uses:* [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
+*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]]
 
@@ -420,6 +442,12 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 ^rem-c5a-8-1
 
+### The mathematics used here: the spinor generators
+
+The spin current is built from the spinor generators:
+
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15]]
+
 ## Spin and the symmetric tensor
 
 > [!theorem] Theorem §C5a.8.8: The Spin Current and the Angular Momentum of the Dirac Field
@@ -429,13 +457,13 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 > \mathcal S^{\lambda\mu\nu} = \bar\psi\gamma^\lambda S^{\mu\nu}\psi = \tfrac i4\,\bar\psi\gamma^\lambda[\gamma^\mu, \gamma^\nu]\psi ,
 > $$
 >
-> with the Hermitian-convention generators $S^{\mu\nu}$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]] (which are $i$ times the real-convention ones of Theorem §C1b.8.1: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]); and on solutions the angular momentum $J^i = \frac12\varepsilon_{ijk}J^{jk}$ ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]]) is
+> with the Hermitian-convention generators $S^{\mu\nu}$ of [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]] (which are $i$ times the real-convention ones of Theorem §C1b.8.1: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]); and on solutions the angular momentum $J^i = \frac12\varepsilon_{ijk}J^{jk}$ ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]]) is
 >
 > $$
 > \mathbf J = \int d^3x\,\psi^\dagger\Bigl(\mathbf x\times(-i\nabla) + \tfrac12\boldsymbol\Sigma\Bigr)\psi, \qquad \boldsymbol\Sigma = \begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix} :
 > $$
 >
-> orbital plus spin $\frac12$, with $\frac12\boldsymbol\Sigma = \mathbf S$ the spin matrices ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-3|Def. §C5a.3.3]]).
+> orbital plus spin $\frac12$, with $\frac12\boldsymbol\Sigma = \mathbf S$ the spin matrices ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (eq. (Mgeneral); "the Dirac spin $\frac12$") · Yu §1.7.3, eqs. (1.241)–(1.248) (orbital and spin split) · computed here from [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]]*
 
@@ -444,11 +472,11 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 > [!derivation]- Derivation
 > **1. The generator in the convention of Theorem §C1b.8.1.** There $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}_{(C1.8)}$, with $S^{\mu\nu}_{(C1.8)}$ the real-convention generators of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]; for the Dirac field $D = \Lambda_{1/2} = 1 - \frac i2\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2)$. The $\omega_{\mu\nu}$ are arbitrary antisymmetric and both generators antisymmetric, so $S^{\mu\nu}_{(C1.8)} = -iS^{\mu\nu}$ ([[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]).
 >
-> **2. The spin current.** $\mathcal S^{\lambda\mu\nu} = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\lambda\phi_a)}(S^{\mu\nu}_{(C1.8)}\phi)_a$, summed over $\psi$ and $\bar\psi$. The $\bar\psi$ term is zero ($\partial\mathcal L/\partial(\partial_\lambda\bar\psi) = 0$). The $\psi$ term: $i\bar\psi\gamma^\lambda\cdot(-iS^{\mu\nu}\psi) = \bar\psi\gamma^\lambda S^{\mu\nu}\psi$, and $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
+> **2. The spin current.** $\mathcal S^{\lambda\mu\nu} = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\lambda\phi_a)}(S^{\mu\nu}_{(C1.8)}\phi)_a$, summed over $\psi$ and $\bar\psi$. The $\bar\psi$ term is zero ($\partial\mathcal L/\partial(\partial_\lambda\bar\psi) = 0$). The $\psi$ term: $i\bar\psi\gamma^\lambda\cdot(-iS^{\mu\nu}\psi) = \bar\psi\gamma^\lambda S^{\mu\nu}\psi$, and $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]).
 >
 > **3. The spin charges.** $S^{\mu\nu}_{\rm charge} = \int d^3x\,\mathcal S^{0\mu\nu} = \int d^3x\,\bar\psi\gamma^0S^{\mu\nu}\psi = \int d^3x\,\psi^\dagger S^{\mu\nu}\psi$.
 >
-> **4. Spatial generators.** In the chiral basis $S^{jk} = \frac12\varepsilon^{jkl}\Sigma^l$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]), so $\frac12\varepsilon_{ijk}S^{jk} = \frac14\varepsilon_{ijk}\varepsilon_{jkl}\Sigma^l = \frac14\cdot2\delta_{il}\Sigma^l = \frac12\Sigma^i$, using $\varepsilon_{ijk}\varepsilon_{ljk} = 2\delta_{il}$ (with $\varepsilon_{jkl} = \varepsilon_{ljk}$, cyclic). The spin part of $J^i$ is $\int\psi^\dagger\frac12\Sigma^i\psi$.
+> **4. Spatial generators.** In the chiral basis $S^{jk} = \frac12\varepsilon^{jkl}\Sigma^l$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), so $\frac12\varepsilon_{ijk}S^{jk} = \frac14\varepsilon_{ijk}\varepsilon_{jkl}\Sigma^l = \frac14\cdot2\delta_{il}\Sigma^l = \frac12\Sigma^i$, using $\varepsilon_{ijk}\varepsilon_{ljk} = 2\delta_{il}$ (with $\varepsilon_{jkl} = \varepsilon_{ljk}$, cyclic). The spin part of $J^i$ is $\int\psi^\dagger\frac12\Sigma^i\psi$.
 >
 > **5. The orbital part.** On shell $T^{0\rho} = i\psi^\dagger\partial^\rho\psi$ (Derivation §C5a.8.6). $L^{jk} = \int d^3x\,(x^jT^{0k} - x^kT^{0j}) = \int d^3x\,\psi^\dagger\,i(x^j\partial^k - x^k\partial^j)\psi = \int d^3x\,\psi^\dagger(-i)(x^j\partial_k - x^k\partial_j)\psi$ ($\partial^k = -\partial_k$). Then $\frac12\varepsilon_{ijk}L^{jk} = \int\psi^\dagger(-i)\varepsilon_{ijk}x^j\partial_k\psi = \int\psi^\dagger\bigl(\mathbf x\times(-i\nabla)\bigr)_i\psi$ (the two terms of the antisymmetric bracket give equal contributions after renaming $j \leftrightarrow k$).
 >
@@ -461,7 +489,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 ^der-c5a-8-8
 
-*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
+*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
 
 This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma$, conserved while $\mathbf L$ and $\mathbf S$ are not ([[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]]), now as Noether charges of a field: there it follows from commutators with $H$, here from rotation invariance of the action (rule 2).
 
@@ -479,7 +507,7 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 ^thm-c5a-8-9
 
 > [!derivation]- Derivation
-> Work on solutions; write $V^\mu \equiv \frac i2\bar\psi\gamma^\mu\psi = \frac i2j^\mu$ and let $\gamma^{[\lambda\mu\nu]}$ be the totally antisymmetrized product, weight $1/3!$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]]).
+> Work on solutions; write $V^\mu \equiv \frac i2\bar\psi\gamma^\mu\psi = \frac i2j^\mu$ and let $\gamma^{[\lambda\mu\nu]}$ be the totally antisymmetrized product, weight $1/3!$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]]).
 >
 > **1. Split a product of three $\gamma$'s.** For all $\lambda, \mu, \nu$:
 >
@@ -529,7 +557,7 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 
 ^der-c5a-8-9
 
-*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|Theorem §C5a.8.8]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-7|Def. §C5a.1.7]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-8|Def. §C5a.1.8]]
+*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|Theorem §C5a.8.8]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7|Def. §CB.11.7]]
 
 > [!remark]- Connections
 > - Treating $\psi$ and $\bar\psi$ as independent is the complex scalar's device; the first-order Lagrangian pushes the crossover of momenta to its end, $\pi_\psi = i\psi^\dagger$, which is why fermions are quantized by a bracket between $\psi$ and $\psi^\dagger$ alone — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]], [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
