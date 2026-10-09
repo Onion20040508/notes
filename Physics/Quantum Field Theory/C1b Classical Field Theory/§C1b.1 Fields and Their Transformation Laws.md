@@ -23,9 +23,9 @@ The transformation law of a general field (Definition §C1b.1.3) asks for a repr
 
 Theorem §C1b.1.1 is the case of this general fact for the Poincaré group acting on spacetime, with $D$ on the components; it is proved there directly, in the course's notation:
 
-![[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-24]]
+![[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-23]]
 
-![[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^pf-cb-6-24]]
+![[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^pf-cb-6-23]]
 
 Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is one only up to sign, by the integration of the representations $(j_+, j_-)$:
 

@@ -441,7 +441,7 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 > | $\gamma^\mu$, $\gamma^5$, $S^{\mu\nu}$, $\Lambda_{1/2}$, $\slashed{p}$, $P_L$, $\psi\bar\chi$ | $V\otimes V'$ | $4\times4$ | $U(\cdot)U^{-1}$ | Theorems §CB.0.5, §CB.10.14 |
 > | $\psi^\dagger$ | conjugate of $V$ | $1\times4$ | $\psi^\dagger U^\dagger$ ($= \psi^\dagger U^{-1}$ iff $U$ unitary) | Derivation §CB.0.10 |
 > | matrix of the Dirac form, $\gamma^0$ in that role | form on $V$ | $4\times4$ | $(U^{-1})^\dagger(\cdot)U^{-1}$ | Theorem §CB.8.2 |
-> | $\bar\psi\chi$, $\bar\psi\gamma^\mu\chi$, $\operatorname{tr}(\gamma^\mu\gamma^\nu)$, eigenvalues | none (all contracted) | number | unchanged | Theorems §CB.0.10, §CB.0.12, §C5a.2.2 |
+> | $\bar\psi\chi$, $\bar\psi\gamma^\mu\chi$, $\operatorname{tr}(\gamma^\mu\gamma^\nu)$, eigenvalues | none (all contracted) | number | unchanged | Theorems §CB.0.10, §CB.0.15, §C5a.2.2 |
 >
 > The spacetime index $\mu$ of $\gamma^\mu$ is not touched by a change of basis of $V$; it belongs to Minkowski space ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]).
 >

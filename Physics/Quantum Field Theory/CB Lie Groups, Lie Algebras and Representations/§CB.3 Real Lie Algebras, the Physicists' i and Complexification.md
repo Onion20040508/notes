@@ -86,7 +86,7 @@ The course's definition of the complexified Lie algebra, in a basis (the user's 
 >
 > **What the proof shows.**
 > - The complexification is canonical: no basis is needed, and the basis description of the course is a corollary (Step 5).
-> - ⚑ By-product: $c$ is an automorphism of the real Lie algebra underlying $\mathfrak g_{\mathbb C}$ but is conjugate-linear; such maps classify real forms → [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-13|Theorem §CB.3.13]].
+> - ⚑ By-product: $c$ is an automorphism of the real Lie algebra underlying $\mathfrak g_{\mathbb C}$ but is conjugate-linear; such maps classify real forms → [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-14|Theorem §CB.3.14]].
 
 ^pf-cb-3-4
 
@@ -128,7 +128,7 @@ The course's definition of the complexified Lie algebra, in a basis (the user's 
 >
 > **What the proof shows.**
 > - For matrix algebras the abstract complexification is just "allow complex coefficients", *provided* $\mathfrak g \cap i\mathfrak g = 0$; for $\mathfrak{sl}(2, \mathbb C)_{\mathbb R}$ it is not, and the complexification is twice as large → [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-1|Theorem §CB.15.1]].
-> - ⚑ By-product: $\mathfrak u(n)$ and $\mathfrak{gl}(n, \mathbb R)$ have the same complexification $\mathfrak{gl}(n, \mathbb C)$ (Hall, after Prop. 3.36): different real algebras, one complex algebra → real forms, Def. §CB.3.12.
+> - ⚑ By-product: $\mathfrak u(n)$ and $\mathfrak{gl}(n, \mathbb R)$ have the same complexification $\mathfrak{gl}(n, \mathbb C)$ (Hall, after Prop. 3.36): different real algebras, one complex algebra → real forms, Def. §CB.3.13.
 
 ^pf-cb-3-5
 
@@ -141,7 +141,7 @@ The course's generators, stated in [[§CB.1 Matrix Lie Groups, the Exponential M
 ![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13]]
 
 > [!remark] Remark: The physicist's i
-> Writing $T = iX$ makes generators Hermitian, and through them group elements unitary, whenever the representation is unitary ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-17|Theorem §CB.6.17]]). The $i$ is a convention; it has nothing to do with quantum mechanics. The real Lie algebra is the $\mathbb R$-span of the $-iT_a$; the $T_a$ themselves lie in $i\mathfrak g \subset \mathfrak g_{\mathbb C}$, whose real span is not closed under the bracket, so writing $T = iX$ rescales the basis by $i$ and is not a complexification ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|Theorem §CB.3.6]]; the complexification is [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-3|Def. §CB.3.3]]). Asked in Lecture 7 whether ordinary 3-vectors are a representation of this "quantum" algebra: they are, $(J^k)_{lm} = -i\varepsilon^{klm}$ acting on $\mathbf x$ is the defining representation, and the algebra is the same whether the thing rotated is a classical vector or a quantum state. For a non-compact group the same $i$ leaves boost generators anti-Hermitian on finite-dimensional representations ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-6-2|§C1a.6, Remark: Hermitian generators do not make boosts unitary]]).
+> Writing $T = iX$ makes generators Hermitian, and through them group elements unitary, whenever the representation is unitary ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-16|Theorem §CB.6.16]]). The $i$ is a convention; it has nothing to do with quantum mechanics. The real Lie algebra is the $\mathbb R$-span of the $-iT_a$; the $T_a$ themselves lie in $i\mathfrak g \subset \mathfrak g_{\mathbb C}$, whose real span is not closed under the bracket, so writing $T = iX$ rescales the basis by $i$ and is not a complexification ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|Theorem §CB.3.6]]; the complexification is [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-3|Def. §CB.3.3]]). Asked in Lecture 7 whether ordinary 3-vectors are a representation of this "quantum" algebra: they are, $(J^k)_{lm} = -i\varepsilon^{klm}$ acting on $\mathbf x$ is the defining representation, and the algebra is the same whether the thing rotated is a classical vector or a quantum state. For a non-compact group the same $i$ leaves boost generators anti-Hermitian on finite-dimensional representations ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-6-2|§C1a.6, Remark: Hermitian generators do not make boosts unitary]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Definition "Group, algebra, representation", "The physicist's i") · Georgi §2.1, below eq. (2.5)*
 
@@ -175,7 +175,7 @@ The course's generators, stated in [[§CB.1 Matrix Lie Groups, the Exponential M
 >
 > **What the proof shows.**
 > - ⚑ By-product: the $i$ in $[T_a, T_b] = if_{ab}{}^cT_c$ is the price of the rescaling $T_a = iX_a$; the structure constants $f_{ab}{}^c$ are those of the real algebra, unchanged → [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^rem-cb-3-1|§CB.3, Remark: The physicist's i]].
-> - "The algebra of the $T_a$" means $\mathfrak g$ written in a rescaled basis, not a new Lie algebra; complex combinations such as $J^\pm$ are elements of $\mathfrak g_{\mathbb C}$ and act through Theorem §CB.3.8.
+> - "The algebra of the $T_a$" means $\mathfrak g$ written in a rescaled basis, not a new Lie algebra; complex combinations such as $J^\pm$ are elements of $\mathfrak g_{\mathbb C}$ and act through Theorem §CB.3.9.
 
 ^pf-cb-3-6
 
@@ -194,18 +194,27 @@ The course's definition of a representation of a Lie algebra, a real-linear map 
 
 ^def-cb-3-7
 
-The ladder operators are not generators of rotations: no real angle produces $e^{-i\theta J^+}$ as a rotation, and $J^+$ is not Hermitian even in a unitary representation, $(J^+)^\dagger = J^-$. They live in the complexified algebra, where the problem of finding representations is purely algebraic. The Lorentz algebra is handled the same way: $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$ are complex combinations, and $\mathfrak{so}(1,3)_{\mathbb C}$ splits into two commuting copies of $\mathfrak{sl}(2, \mathbb C)$ ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-2|Theorem §CB.4.2]], [[§CB.5 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-5-2|Theorem §CB.5.2]]).
+Direct sums and complete reducibility, as the course defines them (PHY 513 Lecture 7, Part A; the user's PHY 513 notes, Ch. 7 §7.2), used in part 2 of the next theorem (first stated in [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.6]], moved here in the CB ordering pass):
 
-> [!theorem] Theorem §CB.3.8: Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification
+> [!definition] Definition §CB.3.8: Direct Sum; Complete Reducibility
+> The **direct sum** $D_1 \oplus D_2$ of representations on $W_1$ and $W_2$ acts on $W_1 \oplus W_2$ by block-diagonal matrices. A representation is **completely reducible** if it is equivalent ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-6|Def. §CB.2.6]]) to a direct sum of irreducible representations ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Definition, "Equivalence and reducibility") · Georgi §1.4, eqs. (1.10)–(1.14) · Hall, Defs. 16.37–16.38, 16.48, 16.50, Prop. 16.42*
+
+^def-cb-3-8
+
+The ladder operators are not generators of rotations: no real angle produces $e^{-i\theta J^+}$ as a rotation, and $J^+$ is not Hermitian even in a unitary representation, $(J^+)^\dagger = J^-$. They live in the complexified algebra, where the problem of finding representations is purely algebraic. The Lorentz algebra is handled the same way: $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$ are complex combinations, and $\mathfrak{so}(1,3)_{\mathbb C}$ splits into two commuting copies of $\mathfrak{sl}(2, \mathbb C)$ ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-6|Theorem §CB.4.6]], [[§CB.5 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-5-2|Theorem §CB.5.2]]).
+
+> [!theorem] Theorem §CB.3.9: Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification
 > Let $\mathfrak g$ be a real Lie algebra and $W$ a complex vector space.
 > 1. Every representation $d : \mathfrak g \to \operatorname{End}_{\mathbb C}(W)$ ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-5|Def. §CB.2.5]]) extends uniquely to a complex-linear representation $d_{\mathbb C}(X + iY) = d(X) + i\,d(Y)$ of $\mathfrak g_{\mathbb C}$, and every complex-linear representation of $\mathfrak g_{\mathbb C}$ on $W$ restricts to one of $\mathfrak g$; the two operations are inverse bijections.
-> 2. Under this bijection, invariant subspaces ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]]), irreducibility, direct sums ([[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-1|Def. §CB.6.1]]) and intertwiners (complex-linear maps commuting with the action) are the same for $d$ and $d_{\mathbb C}$.
+> 2. Under this bijection, invariant subspaces ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]]), irreducibility, direct sums ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-8|Def. §CB.3.8]]) and intertwiners (complex-linear maps commuting with the action) are the same for $d$ and $d_{\mathbb C}$.
 >
 > The statement needs $W$ complex: on a real vector space $i\,d(Y)$ is not defined. The ladder operators $J^\pm = J^1 \pm iJ^2$ and $\mathbf J_\pm$ are values of $d_{\mathbb C}$.
 >
 > *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 5 §1, Prop. 5.5 (cited in [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-7|Def. §CB.3.7]]) · Woit, §5.5*
 
-^thm-cb-3-8
+^thm-cb-3-9
 
 > [!proof]- Proof
 > *Source: B. C. Hall, An Elementary Introduction to Groups and Representations, Ch. 5 §1, Prop. 5.5 (proof referred there to Ch. 3, Exercise 14; written out in Steps 1–4) (https://arxiv.org/abs/math-ph/0005032) · P. Woit, Quantum Theory, Groups and Representations, §5.5: "π′(X + iY) = π′(X) + iπ′(Y) … If the original representation was on a complex vector space V, the extended one will act on the same space" (https://www.math.columbia.edu/~woit/QM/qmbook.pdf).*
@@ -229,49 +238,49 @@ The ladder operators are not generators of rotations: no real angle produces $e^
 > **Step 4** (part 2). Let $U \subset W$ be a complex subspace. If $d(X)U \subset U$ for all $X$, then $d_{\mathbb C}(X + iY)u = d(X)u + i\,d(Y)u \in U$; conversely $d(X) = d_{\mathbb C}(X)$. So $d$ and $d_{\mathbb C}$ have the same invariant subspaces, hence the same irreducibility. The extension of $d_1 \oplus d_2$ acts blockwise as $(d_1)_{\mathbb C}\oplus(d_2)_{\mathbb C}$. For complex-linear $S : W_1 \to W_2$: if $Sd_1(X) = d_2(X)S$ for all $X$, then $S(d_1(X) + i\,d_1(Y)) = d_2(X)S + i\,d_2(Y)S$ (complex linearity of $S$), and the converse is restriction.
 >
 > **What the proof shows.**
-> - The only input is that $W$ is a complex space, so that $i\,d(Y)$ means something; on a real carrier space one must first complexify the space ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-15|Def. §CB.3.15]]).
+> - The only input is that $W$ is a complex space, so that $i\,d(Y)$ means something; on a real carrier space one must first complexify the space ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-16|Def. §CB.3.16]]).
 > - ⚑ By-product: the ladder operators $J^\pm = J^1 \pm iJ^2$ and $\mathbf J_\pm$ are values of $d_{\mathbb C}$; they are legitimate operators on $W$ even though they are not in the image of $\mathfrak g$, and no group element is their exponential with real parameter.
 
-^pf-cb-3-8
+^pf-cb-3-9
 
-*Uses:* [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-5|Def. §CB.2.5]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-6-1|Def. §CB.6.1]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|Theorem §CB.3.4]]
+*Uses:* [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-5|Def. §CB.2.5]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-8|Def. §CB.3.8]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|Theorem §CB.3.4]]
 
 ## Ideals, simple algebras and real forms
 
-> [!definition] Definition §CB.3.9: Ideal
+> [!definition] Definition §CB.3.10: Ideal
 > An **ideal** of a (real or complex) Lie algebra $\mathfrak g$ is a subspace $\mathfrak a$ with $[X, A] \in \mathfrak a$ for all $X \in \mathfrak g$, $A \in \mathfrak a$.
 >
 > *Source: written here (standard; the term as in Etingof, Lie Groups and Lie Algebras, MIT 18.755)*
 
-^def-cb-3-9
+^def-cb-3-10
 
-> [!definition] Definition §CB.3.10: Direct Sum of Lie Algebras
-> The **direct sum** $\mathfrak g_1 \oplus \mathfrak g_2$ of Lie algebras (both real or both complex) is the vector space $\mathfrak g_1 \oplus \mathfrak g_2$ with $[(X_1, X_2), (Y_1, Y_2)] = ([X_1, Y_1], [X_2, Y_2])$. A Lie algebra is the direct sum of two ideals $\mathfrak a$, $\mathfrak b$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-9|Def. §CB.3.9]]) if $\mathfrak g = \mathfrak a \oplus \mathfrak b$ as vector spaces; then $[\mathfrak a, \mathfrak b] = 0$ and $\mathfrak g \cong \mathfrak a \oplus \mathfrak b$ as Lie algebras.
+> [!definition] Definition §CB.3.11: Direct Sum of Lie Algebras
+> The **direct sum** $\mathfrak g_1 \oplus \mathfrak g_2$ of Lie algebras (both real or both complex) is the vector space $\mathfrak g_1 \oplus \mathfrak g_2$ with $[(X_1, X_2), (Y_1, Y_2)] = ([X_1, Y_1], [X_2, Y_2])$. A Lie algebra is the direct sum of two ideals $\mathfrak a$, $\mathfrak b$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-10|Def. §CB.3.10]]) if $\mathfrak g = \mathfrak a \oplus \mathfrak b$ as vector spaces; then $[\mathfrak a, \mathfrak b] = 0$ and $\mathfrak g \cong \mathfrak a \oplus \mathfrak b$ as Lie algebras.
 >
 > *Source: written here*
 
-^def-cb-3-10
+^def-cb-3-11
 
-> [!definition] Definition §CB.3.11: Simple Lie Algebra
-> A (real or complex) Lie algebra $\mathfrak g$ is **simple** if it is not abelian and its only ideals ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-9|Def. §CB.3.9]]) are $\{0\}$ and $\mathfrak g$.
+> [!definition] Definition §CB.3.12: Simple Lie Algebra
+> A (real or complex) Lie algebra $\mathfrak g$ is **simple** if it is not abelian and its only ideals ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-10|Def. §CB.3.10]]) are $\{0\}$ and $\mathfrak g$.
 >
 > *Source: written here (standard)*
 
-^def-cb-3-11
+^def-cb-3-12
 
-> [!definition] Definition §CB.3.12: Real Form
+> [!definition] Definition §CB.3.13: Real Form
 > A **real form** of a complex Lie algebra $\mathfrak h$ is a real Lie subalgebra $\mathfrak g_0 \subset \mathfrak h$ (closed under real combinations and the bracket) with $\mathfrak h = \mathfrak g_0 \oplus i\mathfrak g_0$ as real vector spaces. Then $X + iY \mapsto X + iY$ is an isomorphism $(\mathfrak g_0)_{\mathbb C} \cong \mathfrak h$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|Theorem §CB.3.4]]).
 >
 > *Source: Etingof, Lie Groups and Lie Algebras (MIT 18.755), §9.4 · Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §9 (after Prop. 3.36) · written here*
 
-^def-cb-3-12
+^def-cb-3-13
 
-> [!theorem] Theorem §CB.3.13: Real Forms Are the Fixed Sets of Conjugations
-> Let $\mathfrak h$ be a complex Lie algebra. A **conjugation** of $\mathfrak h$ is a conjugate-linear map $\sigma : \mathfrak h \to \mathfrak h$ with $\sigma^2 = \mathbb 1$ and $\sigma[Z, W] = [\sigma Z, \sigma W]$. Then $\sigma \mapsto \mathfrak h^\sigma = \{Z : \sigma Z = Z\}$ is a bijection from conjugations of $\mathfrak h$ onto real forms of $\mathfrak h$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-12|Def. §CB.3.12]]); the inverse sends $\mathfrak g_0$ to $X + iY \mapsto X - iY$ ($X, Y \in \mathfrak g_0$). Two real forms $\mathfrak g_0$, $\mathfrak g_0'$ are isomorphic as real Lie algebras if and only if there is a complex-linear automorphism $\alpha$ of $\mathfrak h$ with $\alpha\sigma = \sigma'\alpha$.
+> [!theorem] Theorem §CB.3.14: Real Forms Are the Fixed Sets of Conjugations
+> Let $\mathfrak h$ be a complex Lie algebra. A **conjugation** of $\mathfrak h$ is a conjugate-linear map $\sigma : \mathfrak h \to \mathfrak h$ with $\sigma^2 = \mathbb 1$ and $\sigma[Z, W] = [\sigma Z, \sigma W]$. Then $\sigma \mapsto \mathfrak h^\sigma = \{Z : \sigma Z = Z\}$ is a bijection from conjugations of $\mathfrak h$ onto real forms of $\mathfrak h$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-13|Def. §CB.3.13]]); the inverse sends $\mathfrak g_0$ to $X + iY \mapsto X - iY$ ($X, Y \in \mathfrak g_0$). Two real forms $\mathfrak g_0$, $\mathfrak g_0'$ are isomorphic as real Lie algebras if and only if there is a complex-linear automorphism $\alpha$ of $\mathfrak h$ with $\alpha\sigma = \sigma'\alpha$.
 >
 > *Source: Etingof, Lie Groups and Lie Algebras (MIT 18.755), §9.4 ("real forms of a complex Lie algebra are in natural bijection with its antilinear involutions") · the isomorphism criterion written here*
 
-^thm-cb-3-13
+^thm-cb-3-14
 
 > [!proof]- Proof
 > *Source: P. Etingof, Lie Groups and Lie Algebras, MIT 18.755 lecture notes (2024), §9.4 (https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-ii-spring-2024/mit18_755_s24_lec_full.pdf): Etingof states the bijection and calls the converse "easy to see"; Steps 1–3 write it out. The isomorphism criterion (Step 4) is written here.*
@@ -282,53 +291,53 @@ The ladder operators are not generators of rotations: no real angle produces $e^
 > Z = \frac{Z + \sigma Z}2 + i\,\frac{Z - \sigma Z}{2i},
 > $$
 >
-> and both fractions are fixed by $\sigma$: $\sigma\frac{Z + \sigma Z}2 = \frac{\sigma Z + Z}2$, and, $\sigma$ being conjugate-linear ($\sigma(\lambda Z) = \bar\lambda\sigma Z$), $\sigma\frac{Z - \sigma Z}{2i} = \frac{\sigma Z - Z}{-2i} = \frac{Z - \sigma Z}{2i}$. If $Z \in \mathfrak g_0 \cap i\mathfrak g_0$, say $Z = iY$ with $\sigma Y = Y$, then $\sigma Z = -iY = -Z$ and $\sigma Z = Z$, so $Z = 0$. Hence $\mathfrak h = \mathfrak g_0 \oplus i\mathfrak g_0$: $\mathfrak g_0$ is a real form ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-12|Def. §CB.3.12]]).
+> and both fractions are fixed by $\sigma$: $\sigma\frac{Z + \sigma Z}2 = \frac{\sigma Z + Z}2$, and, $\sigma$ being conjugate-linear ($\sigma(\lambda Z) = \bar\lambda\sigma Z$), $\sigma\frac{Z - \sigma Z}{2i} = \frac{\sigma Z - Z}{-2i} = \frac{Z - \sigma Z}{2i}$. If $Z \in \mathfrak g_0 \cap i\mathfrak g_0$, say $Z = iY$ with $\sigma Y = Y$, then $\sigma Z = -iY = -Z$ and $\sigma Z = Z$, so $Z = 0$. Hence $\mathfrak h = \mathfrak g_0 \oplus i\mathfrak g_0$: $\mathfrak g_0$ is a real form ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-13|Def. §CB.3.13]]).
 >
-> **Step 2** (a real form gives a conjugation). Given a real form $\mathfrak g_0$, every $Z \in \mathfrak h$ is uniquely $X + iY$ with $X, Y \in \mathfrak g_0$, so $\sigma(X + iY) = X - iY$ is well defined. Under the isomorphism $(\mathfrak g_0)_{\mathbb C} \cong \mathfrak h$ of Def. §CB.3.12 it is the conjugation $c$ of [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|Theorem §CB.3.4]], which is conjugate-linear, squares to $\mathbb 1$ and preserves brackets (Step 6 of that proof). Its fixed set is $\mathfrak g_0$.
+> **Step 2** (a real form gives a conjugation). Given a real form $\mathfrak g_0$, every $Z \in \mathfrak h$ is uniquely $X + iY$ with $X, Y \in \mathfrak g_0$, so $\sigma(X + iY) = X - iY$ is well defined. Under the isomorphism $(\mathfrak g_0)_{\mathbb C} \cong \mathfrak h$ of Def. §CB.3.13 it is the conjugation $c$ of [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|Theorem §CB.3.4]], which is conjugate-linear, squares to $\mathbb 1$ and preserves brackets (Step 6 of that proof). Its fixed set is $\mathfrak g_0$.
 >
 > **Step 3** (the two maps are inverse). Starting from $\sigma$: for $Z = X + iY$ with $X, Y \in \mathfrak h^\sigma$, $\sigma Z = \sigma X + \sigma(iY) = X - iY$, which is the conjugation built from $\mathfrak h^\sigma$ in Step 2. Starting from $\mathfrak g_0$: the fixed set of the conjugation of Step 2 is $\mathfrak g_0$.
 >
-> **Step 4** (isomorphic real forms). Let $\sigma$, $\sigma'$ have fixed sets $\mathfrak g_0$, $\mathfrak g_0'$. If $\alpha$ is a complex-linear automorphism of $\mathfrak h$ with $\alpha\sigma = \sigma'\alpha$, then for $Z \in \mathfrak g_0$, $\sigma'(\alpha Z) = \alpha\sigma Z = \alpha Z$, so $\alpha(\mathfrak g_0) \subset \mathfrak g_0'$; likewise $\alpha^{-1}\sigma' = \sigma\alpha^{-1}$ gives $\alpha^{-1}(\mathfrak g_0') \subset \mathfrak g_0$. So $\alpha|_{\mathfrak g_0}$ is a real Lie algebra isomorphism $\mathfrak g_0 \to \mathfrak g_0'$. Conversely, given a real isomorphism $f : \mathfrak g_0 \to \mathfrak g_0'$, set $\alpha(X + iY) = f(X) + if(Y)$ ($X, Y \in \mathfrak g_0$). As in Steps 1–2 of the proof of [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-8|Theorem §CB.3.8]] it is complex-linear and preserves brackets; $f^{-1}$ gives its inverse; and $\alpha\sigma(X + iY) = f(X) - if(Y) = \sigma'\alpha(X + iY)$.
+> **Step 4** (isomorphic real forms). Let $\sigma$, $\sigma'$ have fixed sets $\mathfrak g_0$, $\mathfrak g_0'$. If $\alpha$ is a complex-linear automorphism of $\mathfrak h$ with $\alpha\sigma = \sigma'\alpha$, then for $Z \in \mathfrak g_0$, $\sigma'(\alpha Z) = \alpha\sigma Z = \alpha Z$, so $\alpha(\mathfrak g_0) \subset \mathfrak g_0'$; likewise $\alpha^{-1}\sigma' = \sigma\alpha^{-1}$ gives $\alpha^{-1}(\mathfrak g_0') \subset \mathfrak g_0$. So $\alpha|_{\mathfrak g_0}$ is a real Lie algebra isomorphism $\mathfrak g_0 \to \mathfrak g_0'$. Conversely, given a real isomorphism $f : \mathfrak g_0 \to \mathfrak g_0'$, set $\alpha(X + iY) = f(X) + if(Y)$ ($X, Y \in \mathfrak g_0$). As in Steps 1–2 of the proof of [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-9|Theorem §CB.3.9]] it is complex-linear and preserves brackets; $f^{-1}$ gives its inverse; and $\alpha\sigma(X + iY) = f(X) - if(Y) = \sigma'\alpha(X + iY)$.
 >
 > **What the proof shows.**
 > - A real form is the same datum as a conjugation; to compare two real forms of one complex algebra, compare their conjugations, as Theorem §CB.5.5 does for $\mathfrak{so}(1,3)$ and $\mathfrak{so}(4)$.
 > - ⚑ By-product: non-isomorphic real algebras can share a complexification (Etingof's example: $\mathfrak u(n)$ and $\mathfrak{gl}(n, \mathbb R)$, both real forms of $\mathfrak{gl}(n, \mathbb C)$; here: Theorems §CB.5.5, §CB.5.6).
 
-^pf-cb-3-13
+^pf-cb-3-14
 
-*Uses:* [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-12|Def. §CB.3.12]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|Theorem §CB.3.4]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-8|Theorem §CB.3.8]]
+*Uses:* [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-13|Def. §CB.3.13]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|Theorem §CB.3.4]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-9|Theorem §CB.3.9]]
 
 ## Real representations and their complexification
 
-> [!definition] Definition §CB.3.14: Real Representation
+> [!definition] Definition §CB.3.15: Real Representation
 > A **real representation** of a matrix Lie group $G$ is a continuous homomorphism $D : G \to GL(U)$ with $U$ a *real* finite-dimensional vector space; of a Lie algebra, a Lie algebra homomorphism $\mathfrak g \to \operatorname{End}_{\mathbb R}(U)$. Example: the vector representation of $SO^+(1,3)$ on $\mathbb R^{1,3}$, and the real two-index tensors $F^{\mu\nu}$.
 >
 > *Source: written here (Hall, An Elementary Introduction to Groups and Representations, Def. 5.1, real representations)*
 
-^def-cb-3-14
+^def-cb-3-15
 
-> [!definition] Definition §CB.3.15: Complexification of a Real Representation
-> The **complexification** of a real representation $D$ on $U$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-14|Def. §CB.3.14]]) is the representation $D_{\mathbb C}$ on $U_{\mathbb C}$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-2|Def. §CB.3.2]]) given by $D_{\mathbb C}(g)(u + iv) = D(g)u + iD(g)v$; it is complex-linear and commutes with the conjugation $c$.
+> [!definition] Definition §CB.3.16: Complexification of a Real Representation
+> The **complexification** of a real representation $D$ on $U$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-15|Def. §CB.3.15]]) is the representation $D_{\mathbb C}$ on $U_{\mathbb C}$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-2|Def. §CB.3.2]]) given by $D_{\mathbb C}(g)(u + iv) = D(g)u + iD(g)v$; it is complex-linear and commutes with the conjugation $c$.
 >
 > *Source: written here*
 
-^def-cb-3-15
+^def-cb-3-16
 
-> [!theorem] Theorem §CB.3.16: The Complexification of an Irreducible Real Representation
-> Let $D$ be a real representation on $U$ and $D_{\mathbb C}$ its complexification ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-15|Def. §CB.3.15]]).
+> [!theorem] Theorem §CB.3.17: The Complexification of an Irreducible Real Representation
+> Let $D$ be a real representation on $U$ and $D_{\mathbb C}$ its complexification ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-16|Def. §CB.3.16]]).
 > 1. $U' \mapsto U'_{\mathbb C}$ is a bijection from the invariant subspaces of $U$ onto the invariant subspaces of $U_{\mathbb C}$ that are mapped to themselves by $c$.
 > 2. If $D$ is irreducible, then either $D_{\mathbb C}$ is irreducible, or $U_{\mathbb C} = W \oplus c(W)$ for an irreducible invariant subspace $W$, with $c(W)$ irreducible too.
 >
 > *Source: written here (the case of two-index tensors: [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], Derivation, step 4)*
 
-^thm-cb-3-16
+^thm-cb-3-17
 
 > [!proof]- Proof
 > *Written here, along the route recorded in batch 1; no source with this proof was found in the texts used for CB (Hall's notes, Woit, Meinrenken, Etingof, Smith treat complexification of algebras and of representations but not this dichotomy). The two-index case is worked in [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], Derivation, step 4.*
 >
-> **Step 1** (invariance commutes with $c$). For $g$ in the group (or $X$ in the algebra), $D_{\mathbb C}(g)c(u + iv) = D(g)u - iD(g)v = c\,D_{\mathbb C}(g)(u + iv)$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-15|Def. §CB.3.15]]). So if $W \subset U_{\mathbb C}$ is invariant, so is $c(W)$, a complex subspace because $c$ is conjugate-linear; and intersections and sums of invariant subspaces are invariant.
+> **Step 1** (invariance commutes with $c$). For $g$ in the group (or $X$ in the algebra), $D_{\mathbb C}(g)c(u + iv) = D(g)u - iD(g)v = c\,D_{\mathbb C}(g)(u + iv)$ ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-16|Def. §CB.3.16]]). So if $W \subset U_{\mathbb C}$ is invariant, so is $c(W)$, a complex subspace because $c$ is conjugate-linear; and intersections and sums of invariant subspaces are invariant.
 >
-> **Step 2** (part 1: $c$-stable subspaces come from $U$). If $U' \subset U$ is invariant, then $U'_{\mathbb C} = U' + iU'$ is a complex subspace, invariant (Def. §CB.3.15) and $c$-stable. Conversely, let $W \subset U_{\mathbb C}$ be a complex subspace with $c(W) = W$, and put $U' = W \cap U$. For $w = u + iv \in W$ ($u, v \in U$): $u = \frac12(w + cw) \in W$ and $v = \frac1{2i}(w - cw) \in W$, so $u, v \in U'$ and $W = U' + iU' = U'_{\mathbb C}$. If $W$ is invariant, $U'$ is invariant (intersection of invariant $W$ with $U$, which $D_{\mathbb C}$ preserves). The maps $U' \mapsto U'_{\mathbb C}$ and $W \mapsto W \cap U$ are inverse: $U'_{\mathbb C} \cap U = U'$ (the real part of $u + iv$ with $u, v \in U'$).
+> **Step 2** (part 1: $c$-stable subspaces come from $U$). If $U' \subset U$ is invariant, then $U'_{\mathbb C} = U' + iU'$ is a complex subspace, invariant (Def. §CB.3.16) and $c$-stable. Conversely, let $W \subset U_{\mathbb C}$ be a complex subspace with $c(W) = W$, and put $U' = W \cap U$. For $w = u + iv \in W$ ($u, v \in U$): $u = \frac12(w + cw) \in W$ and $v = \frac1{2i}(w - cw) \in W$, so $u, v \in U'$ and $W = U' + iU' = U'_{\mathbb C}$. If $W$ is invariant, $U'$ is invariant (intersection of invariant $W$ with $U$, which $D_{\mathbb C}$ preserves). The maps $U' \mapsto U'_{\mathbb C}$ and $W \mapsto W \cap U$ are inverse: $U'_{\mathbb C} \cap U = U'$ (the real part of $u + iv$ with $u, v \in U'$).
 >
 > **Step 3** (part 2: a minimal invariant subspace). Let $D$ be irreducible and suppose $D_{\mathbb C}$ is not. Choose a nonzero invariant $W \subsetneq U_{\mathbb C}$ of smallest dimension; it is irreducible (a smaller nonzero invariant subspace inside it would contradict minimality). $c(W)$ is invariant (Step 1), of the same dimension, and irreducible ($c$ maps invariant subspaces of $c(W)$ bijectively to invariant subspaces of $W$).
 >
@@ -340,10 +349,10 @@ The ladder operators are not generators of rotations: no real angle produces $e^
 > - Either complexification keeps an irreducible real representation irreducible, or it splits it into two pieces exchanged by complex conjugation; for real two-forms $F^{\mu\nu}$ the pieces are the self-dual and anti-self-dual parts, $\mathbf E \pm i\mathbf B$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]).
 > - ⚑ By-product: in the split case $\dim U = 2\dim W$, and the real representation is the complex representation $W$ "regarded as real"; the conjugate piece $c(W)$ carries the conjugate representation (§CB.7).
 
-^pf-cb-3-16
+^pf-cb-3-17
 
-*Uses:* [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-2|Def. §CB.3.2]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-14|Def. §CB.3.14]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-15|Def. §CB.3.15]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]]
+*Uses:* [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-2|Def. §CB.3.2]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-15|Def. §CB.3.15]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-16|Def. §CB.3.16]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]]
 
 > [!remark]- Connections
-> - The duality operator on two-forms has eigenvalues $\pm i$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]]): the real representation of $SO^+(1,3)$ on $F^{\mu\nu}$ is irreducible, and its complexification is $W \oplus c(W)$ with $W$ = the self-dual part — the second alternative of Theorem §CB.3.16, and the field-strength picture of Theorem §CB.5.1, 3 ($\mathbf E + i\mathbf B$ and $\mathbf E - i\mathbf B$ are exchanged by conjugation, [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]).
-> - **Used in**: Theorem §CB.3.4–Theorem §CB.3.8 — the complexified rotation algebra and the ladder operators ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-3|Def. §CB.3.3]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-7|Def. §CB.3.7]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-3|Theorem §CB.9.3]]); Theorem §CB.3.6 — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^rem-cb-3-1|§CB.3, Remark: The physicist's i]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]; Theorem §CB.3.16 — [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]]; Definition §CB.3.3 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded), [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields|§C3.2]] (cited in [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-1|§C3.2, Caution: The algebra decomposes; it is not "reducible"]]); Definition §CB.3.7 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded); §CB.3, Remark: The physicist's i — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded).
+> - The duality operator on two-forms has eigenvalues $\pm i$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]]): the real representation of $SO^+(1,3)$ on $F^{\mu\nu}$ is irreducible, and its complexification is $W \oplus c(W)$ with $W$ = the self-dual part — the second alternative of Theorem §CB.3.17, and the field-strength picture of Theorem §CB.5.1, 3 ($\mathbf E + i\mathbf B$ and $\mathbf E - i\mathbf B$ are exchanged by conjugation, [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]).
+> - **Used in**: Theorem §CB.3.4–Theorem §CB.3.9 — the complexified rotation algebra and the ladder operators ([[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-3|Def. §CB.3.3]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-3-7|Def. §CB.3.7]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-3|Theorem §CB.9.3]]); Theorem §CB.3.6 — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]], [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^rem-cb-3-1|§CB.3, Remark: The physicist's i]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]; Theorem §CB.3.17 — [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]]; Definition §CB.3.3 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded), [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields|§C3.2]] (cited in [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-1|§C3.2, Caution: The algebra decomposes; it is not "reducible"]]); Definition §CB.3.7 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded); §CB.3, Remark: The physicist's i — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded).

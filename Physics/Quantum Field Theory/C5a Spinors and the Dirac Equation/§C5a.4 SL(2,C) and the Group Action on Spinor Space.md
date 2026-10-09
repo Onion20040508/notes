@@ -294,13 +294,13 @@ Theorems §C5a.4.4–§C5a.4.5 and the two examples use the $2\pi$-rotation test
 
 ![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-25]]
 
-![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-2]]
+![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-6]]
 
-![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-4-2]]
+![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-4-6]]
 
-![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-4-2b]]
+![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-4-6b]]
 
-![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-4-2c]]
+![[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-4-6c]]
 
 ![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-21]]
 
@@ -312,9 +312,9 @@ Theorem §C5a.4.6 reads eigenvalues, which do not depend on the basis:
 
 ![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5]]
 
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12]]
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15]]
 
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-12]]
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-15]]
 
 ## The matrices entry by entry
 
@@ -411,7 +411,7 @@ $$
 >
 > So $[J_1, J_2] = E_{12} - E_{21}$, and $iJ_3 = i(-iE_{12} + iE_{21}) = E_{12} - E_{21}$: equal.
 >
-> **2. [J₁, J₂] = iJ₃ for the spinor.** $J_k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$, so $[J_1, J_2] = \frac14\operatorname{diag}([\sigma^1, \sigma^2], [\sigma^1, \sigma^2])$. With $\sigma^1\sigma^2 = \begin{pmatrix} 0&1\\ 1&0 \end{pmatrix}\begin{pmatrix} 0&-i\\ i&0 \end{pmatrix} = \begin{pmatrix} i&0\\ 0&-i \end{pmatrix} = i\sigma^3$ and $\sigma^2\sigma^1 = \begin{pmatrix} -i&0\\ 0&i \end{pmatrix} = -i\sigma^3$: $[\sigma^1, \sigma^2] = 2i\sigma^3$, and $[J_1, J_2] = \frac14\operatorname{diag}(2i\sigma^3, 2i\sigma^3) = i\cdot\frac12\Sigma^3 = iJ_3$. Same relation ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-2|Theorem §CB.4.2]]), different matrices.
+> **2. [J₁, J₂] = iJ₃ for the spinor.** $J_k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$, so $[J_1, J_2] = \frac14\operatorname{diag}([\sigma^1, \sigma^2], [\sigma^1, \sigma^2])$. With $\sigma^1\sigma^2 = \begin{pmatrix} 0&1\\ 1&0 \end{pmatrix}\begin{pmatrix} 0&-i\\ i&0 \end{pmatrix} = \begin{pmatrix} i&0\\ 0&-i \end{pmatrix} = i\sigma^3$ and $\sigma^2\sigma^1 = \begin{pmatrix} -i&0\\ 0&i \end{pmatrix} = -i\sigma^3$: $[\sigma^1, \sigma^2] = 2i\sigma^3$, and $[J_1, J_2] = \frac14\operatorname{diag}(2i\sigma^3, 2i\sigma^3) = i\cdot\frac12\Sigma^3 = iJ_3$. Same relation ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-6|Theorem §CB.4.6]]), different matrices.
 >
 > **3. Conjugating by a diagonal matrix.** $\Lambda_{1/2} = D = \operatorname{diag}(\alpha, \bar\alpha, \alpha, \bar\alpha)$ with $\alpha = e^{-i\theta/2}$, and $D^{-1} = \operatorname{diag}(\bar\alpha, \alpha, \bar\alpha, \alpha)$. For any matrix $X$, $(D^{-1}XD)_{AB} = (D^{-1})_{AA}\,X_{AB}\,D_{BB}$: each entry is multiplied by a factor $f_{AB}$. The $\gamma$'s have entries only at the positions $(1,3), (2,4), (3,1), (4,2)$ ($\gamma^0$, $\gamma^3$) and $(1,4), (2,3), (3,2), (4,1)$ ($\gamma^1$, $\gamma^2$), where
 >
@@ -504,7 +504,7 @@ $$
 >
 > So $[K_1, K_2] = -E_{12} + E_{21}$, and $-iJ_3 = -i(-iE_{12} + iE_{21}) = -E_{12} + E_{21}$: equal.
 >
-> **2. [K₁, K₂] = −iJ₃ for the spinor.** $K_k = -\frac i2\operatorname{diag}(\sigma^k, -\sigma^k)$, so $K_1K_2 = (-\frac i2)^2\operatorname{diag}(\sigma^1\sigma^2, (-\sigma^1)(-\sigma^2)) = -\frac14\operatorname{diag}(i\sigma^3, i\sigma^3)$ and $K_2K_1 = -\frac14\operatorname{diag}(-i\sigma^3, -i\sigma^3)$ (the products of step 2 under Example §C5a.4.1). Hence $[K_1, K_2] = -\frac14\operatorname{diag}(2i\sigma^3, 2i\sigma^3) = -i\cdot\frac12\Sigma^3 = -iJ_3$. The minus sign, the same in both, is the Lorentz-specific one: two boosts commute into a rotation with the sign opposite to that of four-dimensional rotations ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-2|Theorem §CB.4.2]]).
+> **2. [K₁, K₂] = −iJ₃ for the spinor.** $K_k = -\frac i2\operatorname{diag}(\sigma^k, -\sigma^k)$, so $K_1K_2 = (-\frac i2)^2\operatorname{diag}(\sigma^1\sigma^2, (-\sigma^1)(-\sigma^2)) = -\frac14\operatorname{diag}(i\sigma^3, i\sigma^3)$ and $K_2K_1 = -\frac14\operatorname{diag}(-i\sigma^3, -i\sigma^3)$ (the products of step 2 under Example §C5a.4.1). Hence $[K_1, K_2] = -\frac14\operatorname{diag}(2i\sigma^3, 2i\sigma^3) = -i\cdot\frac12\Sigma^3 = -iJ_3$. The minus sign, the same in both, is the Lorentz-specific one: two boosts commute into a rotation with the sign opposite to that of four-dimensional rotations ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-6|Theorem §CB.4.6]]).
 >
 > **3. The conjugation factors.** $\Lambda_{1/2} = D = \operatorname{diag}(b^{-1}, b, b, b^{-1})$ with $b = e^{\eta/2}$, $D^{-1} = \operatorname{diag}(b, b^{-1}, b^{-1}, b)$, and $f_{AB} = (D^{-1})_{AA}D_{BB}$ (step 3 under Example §C5a.4.1):
 >
@@ -556,7 +556,7 @@ $$
 > \bigl(e_k^{\mathsf T}S\bigr)\Lambda_{1/2} = e_k^{\mathsf T}S ,
 > $$
 >
-> so the row $e_k^{\mathsf T}S$, nonzero because $S$ is invertible, would be a left eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$. The left eigenvalues of a matrix are its eigenvalues ($\det(\Lambda^{\mathsf T} - \lambda) = \det(\Lambda - \lambda)$), and by step 2 none is $1$. So no component is invariant, in any basis. (Equivalently: eigenvalues do not depend on the basis, [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12|Theorem §CB.0.12]], and a unit row $k$ makes $1$ an eigenvalue of $\Lambda'^{\mathsf T}$.)
+> so the row $e_k^{\mathsf T}S$, nonzero because $S$ is invertible, would be a left eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$. The left eigenvalues of a matrix are its eigenvalues ($\det(\Lambda^{\mathsf T} - \lambda) = \det(\Lambda - \lambda)$), and by step 2 none is $1$. So no component is invariant, in any basis. (Equivalently: eigenvalues do not depend on the basis, [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|Theorem §CB.0.15]], and a unit row $k$ makes $1$ an eigenvalue of $\Lambda'^{\mathsf T}$.)
 >
 > **5. No fixed spinor.** $\Lambda'\psi' = \psi'$ with $\psi' \neq 0$ would make $S^{-1}\psi' \neq 0$ an eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$; excluded by step 2.
 >
@@ -569,7 +569,7 @@ $$
 
 ^der-c5a-4-6
 
-*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12|Theorem §CB.0.12]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|Theorem §CB.15.3]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-5|Theorem §CB.15.5]]
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|Theorem §CB.0.15]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|Theorem §CB.15.3]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-5|Theorem §CB.15.5]]
 
 ## Three transformations that act on spinor indices
 
@@ -596,7 +596,7 @@ $$
 > - That fields with half-integer $j_+ + j_-$ are two-valued is why their quanta obey Fermi statistics and are quantized with anticommutators — [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.9 Spin and Statistics|§C5b.9]].
 > - The complex angles $\boldsymbol\theta \mp i\boldsymbol\eta$ of the factorization in §C3.2 are literally the arguments of $\Lambda_L$ and $\Lambda_R$, and complex conjugation exchanging them is $\Lambda_L^* = \sigma^2\Lambda_R\sigma^2$ — [[§CB.5 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-5-3|Theorem §CB.5.3]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]].
 > - $\det X = x^2$ makes the Minkowski interval a determinant, exactly as the Euclidean length is $-\det(\mathbf x\cdot\boldsymbol\sigma)$; the light cone becomes the boundary of the cone of positive matrices, which is why null momenta factorize into spinors ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-3|§C5a.5, ★ Remark: Null vectors, spinors and the celestial sphere]]; helicity spinors, QFT §C5a.10) — [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]].
-> - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-17|Theorem §CB.6.17]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|Theorem §CB.16.12]].
+> - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-16|Theorem §CB.6.16]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|Theorem §CB.16.12]].
 > - $\gamma^\mu$ is an invariant tensor exactly as the Pauli matrices are an invariant vector of $SU(2)$ ($U^\dagger\sigma^iU = R_{ij}\sigma^j$), the relation behind the covering $SU(2) \to SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]].
 > - Clifford multiplication being Lorentz equivariant is what makes $\slashed{\partial}\psi$ transform like $\psi$, hence the Dirac equation covariant and $\mathcal L$ a scalar; the same "invariant tensor" idea makes the Pauli matrices an invariant vector of $SU(2)$ — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-1|§C5a.7, Remark: What covariance shows and what it does not]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 > - Rotations and boosts exponentiate by the same split of a series into even and odd powers, because the axis matrix squares to a multiple of the identity: $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \mathbb 1$ gives $\cos\frac\theta2$, $\cosh\frac\eta2$ for spinors, $[\hat{\mathbf n}]_\times^2 = -Q$ and $N_{\hat{\mathbf n}}^2 = \Pi$ give $\cos\theta$, $\cosh\eta$ for vectors — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]].

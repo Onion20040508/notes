@@ -25,9 +25,9 @@ A tensor is a multilinear map on covectors and vectors:
 
 Its components transform with one $\Lambda$ per upper and one $\Lambda^{-1}$ per lower index because of multilinearity; Relativity takes this law as the definition ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]), and every tensor computation below uses it:
 
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-11]]
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14]]
 
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-11]]
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-14]]
 
 ## Conventions and invariants
 
@@ -143,7 +143,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 
 ## Tensors as multilinear maps
 
-The dual space, tensors as multilinear maps and the transformation law they force are in the block above ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-7|Def. §CB.0.7]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-9|Def. §CB.0.9]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-11|Theorem §CB.0.11]]). What field theory adds is the metric, which identifies the two kinds of slot:
+The dual space, tensors as multilinear maps and the transformation law they force are in the block above ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-7|Def. §CB.0.7]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-9|Def. §CB.0.9]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14|Theorem §CB.0.14]]). What field theory adds is the metric, which identifies the two kinds of slot:
 
 > [!theorem] Theorem §C1a.5.2: The Metric Identifies Vectors with Covectors
 > The metric $g(x, y) = g_{\mu\nu}x^\mu y^\nu$ is a symmetric, nondegenerate, indefinite bilinear form. The map $x \mapsto x^\flat = g(x, \cdot\,)$ is an isomorphism $V \to V^*$, with components and inverse
@@ -544,7 +544,7 @@ That the pieces are irreducible, and that the antisymmetric part splits over $\m
 ^thm-c1a-5-10
 
 > [!derivation]- Derivation
-> **1. Transformation.** If $a' = \Lambda a$, then $a = \Lambda^{-1}a'$ and $\partial a^\nu/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu$; by the chain rule $\partial/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu\,\partial/\partial a^\nu = \Lambda_\mu{}^\nu\,\partial/\partial a^\nu$, the covector law ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-11|Theorem §CB.0.11]]). Nothing used that $a$ is a coordinate; for $a = x$ it is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]]. Raising gives the vector law for $\partial/\partial a_\mu$.
+> **1. Transformation.** If $a' = \Lambda a$, then $a = \Lambda^{-1}a'$ and $\partial a^\nu/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu$; by the chain rule $\partial/\partial a'^\mu = (\Lambda^{-1})^\nu{}_\mu\,\partial/\partial a^\nu = \Lambda_\mu{}^\nu\,\partial/\partial a^\nu$, the covector law ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14|Theorem §CB.0.14]]). Nothing used that $a$ is a coordinate; for $a = x$ it is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]]. Raising gives the vector law for $\partial/\partial a_\mu$.
 >
 > **2. The four forms.** The first is the independence of the four $a^\mu$. The second is the same for the four $a_\mu$, which are equally independent. The third: $a_\nu = g_{\nu\rho}a^\rho$ with constant $g$, so $\partial a_\nu/\partial a^\mu = g_{\nu\rho}\delta^\rho{}_\mu = g_{\nu\mu}$. The fourth: $a^\nu = g^{\nu\rho}a_\rho$, so $\partial a^\nu/\partial a_\mu = g^{\nu\rho}\delta_\rho{}^\mu = g^{\nu\mu}$. In components the last two are $+1$ on the time entry and $-1$ on the spatial diagonal, since $a_0 = a^0$ and $a_i = -a^i$.
 >
@@ -560,7 +560,7 @@ That the pieces are irreducible, and that the antisymmetric part splits over $\m
 
 ^der-c1a-5-10
 
-*Uses:* [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-11|Theorem §CB.0.11]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]], [[§B2.2 Tensors and the Covariance Principle#^cau-b2-2-1|REL Caution: The grammar of indices, for higher rank]]
+*Uses:* [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14|Theorem §CB.0.14]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]], [[§B2.2 Tensors and the Covariance Principle#^cau-b2-2-1|REL Caution: The grammar of indices, for higher rank]]
 
 > [!theorem] Theorem §C1a.5.11: Derivatives with Respect to Tensor Components
 > 1. For independent components, the derivative is a product of deltas, slot by slot: $\dfrac{\partial T^\alpha{}_\beta}{\partial T^\mu{}_\nu} = \delta^\alpha{}_\mu\delta_\beta{}^\nu$, $\ \dfrac{\partial(\partial_\alpha A_\beta)}{\partial(\partial_\mu A_\nu)} = \delta_\alpha{}^\mu\delta_\beta{}^\nu$.
