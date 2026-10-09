@@ -24,18 +24,26 @@ tags: [group-theory, math493]
 > [!theorem] Theorem §49.1: Solvability via the Derived Series
 > $G$ is [[§48 Solvable Groups#^def-48-1|solvable]] if and only if $D_N(G) = \{e\}$ for some $N$.
 >
-> *Source: WS 9.6*
+> *Source: WS 9.6; lecture 10/9*
 
 ^thm-49-1
 
-> [!proof]- Proof
-> *[To be proved.]*
+> [!proof]+ Proof
+> **($\Leftarrow$) (lecture 10/9).** Suppose $D_N(G) = \{e\}$. By Properties of the Commutator Subgroup ([[§47 Commutators#^prop-47-4|Proposition §47.4]]) and The Abelianization Is Abelian ([[§47 Commutators#^prop-47-6|Proposition §47.6]]), applied to the group $D_k(G)$, each $D_{k+1}(G) = D(D_k(G))$ is normal in $D_k(G)$ with abelian quotient $D_k(G)/D_{k+1}(G)$. So
+>
+> $$ \{e\} = D_N(G) \trianglelefteq D_{N-1}(G) \trianglelefteq \cdots \trianglelefteq D_1(G) \trianglelefteq D_0(G) = G $$
+>
+> is a chain as in [[§48 Solvable Groups#^def-48-1|the definition]], read upwards ($G_j = D_{N-j}(G)$), and $G$ is solvable.
+>
+> **($\Rightarrow$).** *[To be proved; not done in class.]*
 
 ^pf-49-1
 
+*Uses:* [[§49 The Derived Series#^def-49-1|Def. §49.1]], [[§47 Commutators#^prop-47-4|§47.4]], [[§47 Commutators#^prop-47-6|§47.6]], [[§48 Solvable Groups#^def-48-1|Def. §48.1]]
+
 > [!example] Example §49.1: Derived Series of $S_3$, $S_4$ and $S_n$
 > 1. $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$: $D(S_3) = A_3$ by The Commutator Subgroup and Characters of $S_n$ ([[§47 Commutators#^thm-47-5|Theorem §47.5]]), and $D(A_3) = \{e\}$ since $A_3$ is [[§1 The Definition of a Group#^def-1-2|abelian]].
-> 2. $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$. Here $D(A_4) = K$: on one hand $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so every [[§47 Commutators#^def-47-1|commutator]] of $A_4$ maps to the identity of $A_4/K$, i.e. $D(A_4) \subseteq K$; on the other hand $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$, and $D(A_4)$ is [[§47 Commutators#^prop-47-4|normal]] in $A_4$, so it also contains the conjugates $(1\,3)(2\,4)$ and $(1\,4)(2\,3)$ of $(1\,2)(3\,4)$ by $(1\,2\,3)$ and $(1\,3\,2)$. Finally $D(K) = \{e\}$ since $K$ is abelian.
+> 2. $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$. Here $D(A_4) = K$: on one hand $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so $D(A_4) \subseteq K$ (Abelian Quotients and Commutators, [[§47 Commutators#^prop-47-11|Proposition §47.11]]); on the other hand $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$, and $D(A_4)$ is [[§47 Commutators#^prop-47-4|normal]] in $A_4$, so it also contains the conjugates $(1\,3)(2\,4)$ and $(1\,4)(2\,3)$ of $(1\,2)(3\,4)$ by $(1\,2\,3)$ and $(1\,3\,2)$. Finally $D(K) = \{e\}$ since $K$ is abelian.
 > 3. For $n \geq 5$: $D(S_n) = A_n$ and $D(A_n) = A_n$ (Characters of $A_n$ Are Trivial for $n \geq 5$, [[§47 Commutators#^thm-47-10|Theorem §47.10]]), so the series is $S_n \trianglerighteq A_n \trianglerighteq A_n \trianglerighteq \cdots$ and never reaches $\{e\}$.
 >
 > *Source: not from class*
@@ -55,3 +63,8 @@ tags: [group-theory, math493]
 ^pf-49-2
 
 *Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§43 Simple Groups#^thm-43-9|§43.9]], [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§48 Solvable Groups#^prop-48-1|§48.1]], [[§49 The Derived Series#^thm-49-1|§49.1]], [[§49 The Derived Series#^ex-49-1|Ex. §49.1]]
+
+> [!remark] Remark: The Derived Series as a Crank
+> The [[§48 Solvable Groups#^def-48-1|definition of solvability]] asks us to hunt for a chain, as in WS 9.1 ([[§48 Solvable Groups#^prop-48-1|Proposition §48.1]]). The [[§49 The Derived Series#^def-49-1|derived series]] is the mechanical alternative: turn the crank $H \mapsto D(H)$ and see whether $\{e\}$ is reached. For a finite group each step either shrinks the group or changes nothing, and once $D_{k+1}(G) = D_k(G)$ the series is stuck forever. So a finite group's series either reaches $\{e\}$ (solvable) or gets stuck at a nontrivial group $H$ with $D(H) = H$ (not solvable): $S_5 \trianglerighteq A_5 \trianglerighteq A_5 \trianglerighteq \cdots$. The lecture noted that infinite groups can instead descend forever without reaching $\{e\}$ (free groups are an example; not from class).
+
+^rem-49-2
