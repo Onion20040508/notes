@@ -161,7 +161,7 @@ A Hermitian form, its matrix, its change of basis and its signature, as the cour
 ^def-cb-8-7
 
 > [!theorem] Theorem §CB.8.8: U(p, q) Is a Matrix Lie Group
-> $U(p, q)$ ([[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-8-7|Def. §CB.8.7]]) is a closed subgroup of $GL(n, \mathbb C)$, so a matrix Lie group ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]]), with Lie algebra ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-10|Def. §CB.1.10]])
+> $U(p, q)$ ([[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-8-7|Def. §CB.8.7]]) is a closed subgroup of $GL(n, \mathbb C)$, so a matrix Lie group ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]]), with Lie algebra ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]])
 >
 > $$
 > \mathfrak u(p, q) = \{X \in M_n(\mathbb C) : X^\dagger\eta + \eta X = 0\} = \{X : X^{\dagger_h} = -X\}, \qquad \dim_{\mathbb R}\mathfrak u(p, q) = n^2 .
@@ -178,21 +178,21 @@ A Hermitian form, its matrix, its change of basis and its signature, as the cour
 >
 > **1. A subgroup.** If $A^\dagger\eta A = \eta$ and $B^\dagger\eta B = \eta$, then $(AB)^\dagger\eta(AB) = B^\dagger(A^\dagger\eta A)B = B^\dagger\eta B = \eta$. Multiplying $A^\dagger\eta A = \eta$ on the left by $(A^{-1})^\dagger = (A^\dagger)^{-1}$ and on the right by $A^{-1}$ gives $\eta = (A^{-1})^\dagger\eta A^{-1}$, so $A^{-1} \in U(p, q)$; and $\mathbb 1 \in U(p, q)$.
 >
-> **2. Closed (Hall, Def. 16.1).** $F(A) = A^\dagger\eta A - \eta$ is continuous on $M_n(\mathbb C)$ (its entries are polynomials in the entries of $A$ and $\bar A$), so $U(p, q) = F^{-1}(0)\cap GL(n, \mathbb C)$ is closed in $GL(n, \mathbb C)$: a matrix Lie group ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]]).
+> **2. Closed (Hall, Def. 16.1).** $F(A) = A^\dagger\eta A - \eta$ is continuous on $M_n(\mathbb C)$ (its entries are polynomials in the entries of $A$ and $\bar A$), so $U(p, q) = F^{-1}(0)\cap GL(n, \mathbb C)$ is closed in $GL(n, \mathbb C)$: a matrix Lie group ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]]).
 >
-> **3. The Lie algebra, ⊇.** By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-10|Def. §CB.1.10]] the Lie algebra is $\{X : e^{sX} \in U(p, q)\ \forall s \in \mathbb R\}$. Suppose $X^\dagger\eta + \eta X = 0$, i.e. $X^\dagger = -\eta X\eta^{-1}$. By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-4|Theorem §CB.1.4]], 4, $(e^{sX})^\dagger = e^{sX^\dagger} = e^{-s\eta X\eta^{-1}} = \eta\,e^{-sX}\eta^{-1}$, so
+> **3. The Lie algebra, ⊇.** By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]] the Lie algebra is $\{X : e^{sX} \in U(p, q)\ \forall s \in \mathbb R\}$. Suppose $X^\dagger\eta + \eta X = 0$, i.e. $X^\dagger = -\eta X\eta^{-1}$. By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], 4, $(e^{sX})^\dagger = e^{sX^\dagger} = e^{-s\eta X\eta^{-1}} = \eta\,e^{-sX}\eta^{-1}$, so
 >
 > $$
 > (e^{sX})^\dagger\,\eta\,e^{sX} = \eta\,e^{-sX}\eta^{-1}\eta\,e^{sX} = \eta\,e^{-sX}e^{sX} = \eta ,
 > $$
 >
-> using $e^{-sX}e^{sX} = \mathbb 1$ (Theorem §CB.1.4, 2). So $e^{sX} \in U(p, q)$ for every $s$.
+> using $e^{-sX}e^{sX} = \mathbb 1$ (Theorem §CB.1.5, 2). So $e^{sX} \in U(p, q)$ for every $s$.
 >
-> **4. The Lie algebra, ⊆.** Conversely, if $e^{sX^\dagger}\eta\,e^{sX} = \eta$ for all $s$, differentiate at $s = 0$ with the product rule and Theorem §CB.1.4, 5 ($\frac{d}{ds}e^{sY} = Ye^{sY}$): $X^\dagger\eta + \eta X = 0$.
+> **4. The Lie algebra, ⊆.** Conversely, if $e^{sX^\dagger}\eta\,e^{sX} = \eta$ for all $s$, differentiate at $s = 0$ with the product rule and Theorem §CB.1.5, 5 ($\frac{d}{ds}e^{sY} = Ye^{sY}$): $X^\dagger\eta + \eta X = 0$.
 >
 > **5. The h-adjoint form.** In the $h$-orthonormal basis the matrix of $h$ is $\eta$, so $X^{\dagger_h} = \eta^{-1}X^\dagger\eta = \eta X^\dagger\eta$ ([[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-6|Theorem §CB.8.6]], 1). Then $X^{\dagger_h} = -X$ iff $\eta X^\dagger\eta = -X$ iff (multiply on the left by $\eta$) $X^\dagger\eta = -\eta X$: the same condition.
 >
-> **6. Dimension.** $X \mapsto \eta X$ is real-linear and its own inverse ($\eta^2 = \mathbb 1$). It maps $\mathfrak u(p, q)$ onto $\mathfrak u(n)$: $(\eta X)^\dagger = X^\dagger\eta = -\eta X$ iff $X \in \mathfrak u(p, q)$. So $\dim_{\mathbb R}\mathfrak u(p, q) = \dim_{\mathbb R}\mathfrak u(n) = n^2$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|Theorem §CB.1.16]]: $n$ real diagonal parameters of $i\mathbb R$ and $\frac{n(n-1)}2$ complex entries above the diagonal, $n + n(n-1) = n^2$).
+> **6. Dimension.** $X \mapsto \eta X$ is real-linear and its own inverse ($\eta^2 = \mathbb 1$). It maps $\mathfrak u(p, q)$ onto $\mathfrak u(n)$: $(\eta X)^\dagger = X^\dagger\eta = -\eta X$ iff $X \in \mathfrak u(p, q)$. So $\dim_{\mathbb R}\mathfrak u(p, q) = \dim_{\mathbb R}\mathfrak u(n) = n^2$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]]: $n$ real diagonal parameters of $i\mathbb R$ and $\frac{n(n-1)}2$ complex entries above the diagonal, $n + n(n-1) = n^2$).
 >
 > **7. Physicists' form.** For $X = -iT$, $X^{\dagger_h} = (-iT)^{\dagger_h} = \overline{(-i)}\,T^{\dagger_h} = iT^{\dagger_h}$ (Theorem §CB.8.6, 2). So $X^{\dagger_h} = -X = iT$ iff $T^{\dagger_h} = T$; by steps 3–5, $e^{-isT} \in U(p, q)$ for all real $s$ iff $-iT \in \mathfrak u(p, q)$ iff $T$ is $h$-self-adjoint.
 >
@@ -203,7 +203,7 @@ A Hermitian form, its matrix, its change of basis and its signature, as the cour
 
 ^pf-cb-8-8
 
-*Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-10|Def. §CB.1.10]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-4|Theorem §CB.1.4]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|Theorem §CB.1.16]], [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-6|Theorem §CB.8.6]], [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-8-7|Def. §CB.8.7]]
+*Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]], [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-6|Theorem §CB.8.6]], [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-8-7|Def. §CB.8.7]]
 
 ## Invariant Hermitian forms of a representation
 

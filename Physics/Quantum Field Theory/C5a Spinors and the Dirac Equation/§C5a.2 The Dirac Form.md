@@ -136,7 +136,7 @@ Theorem §C5a.2.2 combines the change-of-basis rules, Pauli's theorem (part 2: H
 > **2. Part 2.** With $U^\dagger = U^{-1}$: $\psi'^\dagger = \psi^\dagger U^{-1}$; $\bar\psi' = \psi'^\dagger\gamma'^0 = \psi^\dagger U^{-1}U\gamma^0U^{-1} = \bar\psi U^{-1}$; $\bar\psi'M'\chi' = \bar\psi U^{-1}UMU^{-1}U\chi = \bar\psi M\chi$.
 >
 > **What the derivation shows**
-> - In the language of the slot rule (Theorem §CB.0.8): a unitary $U$ makes the conjugate slot of $\psi^\dagger$ transform like a $V'$-slot, and the two roles of $\gamma^0$ (operator and form, Theorem §CB.8.2) transform alike.
+> - In the language of the slot rule (Theorem §CB.0.10): a unitary $U$ makes the conjugate slot of $\psi^\dagger$ transform like a $V'$-slot, and the two roles of $\gamma^0$ (operator and form, Theorem §CB.8.2) transform alike.
 > - Used next: the Dirac Lagrangian is basis independent exactly for unitary $U$ (Theorem §C5a.7.5).
 
 ^der-c5a-2-2

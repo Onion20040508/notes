@@ -173,7 +173,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 ^thm-c2b-4-5
 
 > [!derivation]- Derivation
-> **Steps 1–3** (a Lorentz transformation that reverses $\xi$). Let $\xi^2 < 0$. By [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]], 3, there is $\Lambda \in SO^+(1,3)$ with $\Lambda\xi = -\xi$. Its construction there: boost and rotate $\xi$ to $(0, \boldsymbol\eta)$ with $|\boldsymbol\eta| = \sqrt{-\xi^2}$ (the velocity $\xi^0/|\boldsymbol\xi|$ is less than $1$ because $\xi$ is spacelike), rotate by $\pi$ about an axis perpendicular to $\boldsymbol\eta$, and conjugate back. (In 1+1 dimensions there is no such rotation and parity is needed instead; see the remark on orbits in §C1a.4.)
+> **Steps 1–3** (a Lorentz transformation that reverses $\xi$). Let $\xi^2 < 0$. By [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], 3, there is $\Lambda \in SO^+(1,3)$ with $\Lambda\xi = -\xi$. Its construction there: boost and rotate $\xi$ to $(0, \boldsymbol\eta)$ with $|\boldsymbol\eta| = \sqrt{-\xi^2}$ (the velocity $\xi^0/|\boldsymbol\xi|$ is less than $1$ because $\xi$ is spacelike), rotate by $\pi$ about an axis perpendicular to $\boldsymbol\eta$, and conjugate back. (In 1+1 dimensions there is no such rotation and parity is needed instead; see the remark on orbits in §C1a.4.)
 >
 > **Step 4** (conclude). By [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], $D_W(-\xi) = D_W(\Lambda\xi) = D_W(\xi)$, so $iD(\xi) = D_W(\xi) - D_W(-\xi) = 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]). (Pointwise use of invariance is legitimate here: at spacelike $\xi$, $D_W$ is a continuous function, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1, and invariant pointwise there, Theorem §C2b.2.3.) Concretely, at equal times both terms are $D_W(r)$ of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
 >
@@ -186,7 +186,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 
 ^der-c2b-4-5
 
-*Uses:* [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]]
+*Uses:* [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]
 
 > [!derivation]- Derivation (second route: causality is the reality of the Wightman function)
 > **Step 1.** By [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], $[\hat\phi(x), \hat\phi(y)] = 2i\operatorname{Im}D_W(\xi)$: microcausality says exactly that $D_W$ is real at spacelike separation.

@@ -19,7 +19,7 @@ tags: [differentiable-manifolds, math591]
 ^def-50-1
 
 > [!remark]- Connections
-> - The physicists' version, closed subgroups of $\mathrm{GL}(n,\mathbb{C})$: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|QFT Def. §CB.1.2]].
+> - The physicists' version, closed subgroups of $\mathrm{GL}(n,\mathbb{C})$: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|QFT Def. §CB.1.3]].
 
 For a topological group the two maps had to be continuous; “now we ask that they be smooth maps, because we have a manifold structure, so we can make sense of that.”
 
@@ -110,6 +110,6 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 ^def-50-4
 
 > [!remark]- Connections
-> - The physicists' definition for matrix Lie groups, directly as $T_{\mathbb 1}G$ with the matrix commutator: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-10|QFT Def. §CB.1.10]].
+> - The physicists' definition for matrix Lie groups, directly as $T_{\mathbb 1}G$ with the matrix commutator: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|QFT Def. §CB.1.11]].
 
 *Status.* Defined in Lecture 16, with two facts announced for next time: that the bracket of two [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|left-invariant]] fields is again left-invariant, so that $\mathfrak{g}$ is a Lie subalgebra of $\mathfrak{X}(G)$ ([[§49 Lie Bracket and Lie Algebra#^cor-49-4|Corollary §49.4]]; Lee, Proposition 8.33); and that $\mathbf{X} \mapsto \mathbf{X}_e$ identifies $\mathfrak{g}$ with $T_eG$ — “this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.” For $\mathrm{GL}(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ ([[§50 Lie Groups and Left-Invariant Vector Fields#^ex-50-1|Example §50.1]]). “We'll come back to this in detail next time.”

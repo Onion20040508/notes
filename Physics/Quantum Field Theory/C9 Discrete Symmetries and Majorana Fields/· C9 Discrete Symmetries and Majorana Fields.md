@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (11), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (39), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (26), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (10)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (9), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (39), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (26), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (10)
+**Used by:** [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (3)
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
@@ -18,8 +18,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.4 Fermion Bilinears under Parity]] — 513 notes Ch. 11 §§11.5–11.7
 
 ## Theorems
-- [[§C9.1 Discrete Lorentz Transformations#^thm-c9-1-1|§C9.1.1]] The Discrete Element of the Rotation Group
-- [[§C9.1 Discrete Lorentz Transformations#^thm-c9-1-2|§C9.1.2]] Identities of the Parity Matrix
+- [[§C9.1 Discrete Lorentz Transformations#^thm-c9-1-1|§C9.1.1]] Identities of the Parity Matrix
 - [[§C9.2★ Parity of the Scalar Field#^thm-c9-2-1|§C9.2.1]] Parity on Creation Operators and One-Particle States
 - [[§C9.2★ Parity of the Scalar Field#^thm-c9-2-2|§C9.2.2]] Parity on the Complex Scalar Field
 - [[§C9.2★ Parity of the Scalar Field#^thm-c9-2-3|§C9.2.3]] The Scalar Parity Phases Multiply to +1

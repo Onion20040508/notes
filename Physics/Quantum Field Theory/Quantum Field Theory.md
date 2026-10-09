@@ -46,7 +46,7 @@ graph TD
   C1a -->|20| C2b
   C1b -->|3| C2b
   C2a -->|87| C2b
-  C1a -->|53| C3
+  C1a -->|49| C3
   C1b -->|20| C3
   C2a -->|34| C3
   C2b -->|14| C3
@@ -55,7 +55,7 @@ graph TD
   C2a -->|93| C4
   C2b -->|61| C4
   C3 -->|67| C4
-  C1a -->|42| C5a
+  C1a -->|41| C5a
   C1b -->|93| C5a
   C2a -->|1| C5a
   C3 -->|26| C5a
@@ -65,7 +65,7 @@ graph TD
   C3 -->|7| C5b
   C4 -->|1| C5b
   C5a -->|161| C5b
-  C1a -->|11| C9
+  C1a -->|9| C9
   C1b -->|6| C9
   C2a -->|40| C9
   C2b -->|2| C9
@@ -75,21 +75,21 @@ graph TD
   C1b -->|3| CA
   C2a -->|7| CA
   C2b -->|43| CA
-  C1a -->|79| CB
+  C1a -->|67| CB
   C1b -->|1| CB
   C2a -->|1| CB
   C3 -->|59| CB
-  C5a -->|83| CB
+  C5a -->|84| CB
   C5b -->|1| CB
+  C9 -->|3| CB
   CA -->|2| CB
   C1b -.->|22| C1a
   C2a -.->|4| C1a
   C2b -.->|19| C1a
   C3 -.->|7| C1a
-  C5a -.->|9| C1a
-  C9 -.->|2| C1a
+  C5a -.->|8| C1a
   CA -.->|45| C1a
-  CB -.->|6| C1a
+  CB -.->|18| C1a
   C2a -.->|22| C1b
   C2b -.->|4| C1b
   C3 -.->|6| C1b
@@ -108,14 +108,14 @@ graph TD
   C5b -.->|1| C3
   C9 -.->|4| C3
   CA -.->|11| C3
-  CB -.->|69| C3
+  CB -.->|73| C3
   C5a -.->|1| C4
   C5b -.->|9| C4
   CA -.->|150| C4
   C5b -.->|35| C5a
   C9 -.->|1| C5a
   CA -.->|7| C5a
-  CB -.->|172| C5a
+  CB -.->|173| C5a
   CA -.->|121| C5b
   CB -.->|5| C5b
   CA -.->|26| C9
@@ -128,4 +128,4 @@ Chapters without notes yet (Yu's numbering).
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
 C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (started: parity, §C9.1–§C9.4; charge conjugation, time reversal, CPT and Majorana fields pending) · C10 The S-matrix and correlation functions · C11 Path-integral quantization
 
-**Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.20 for "option 1", physics refers to mathematics): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.2, Bargmann's theorem in §CB.18, Mackey and Wigner–Mackey in §CB.19★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C5a moved in batch B2 (2026-10-08; §CB.4 split into §CB.4–§CB.5; §C5a.0–§C5a.11 and §C9.4 with "The mathematics used here" blocks; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1), those of C1a and C9 move in batch B3; §CB.20 Grassmann algebras is completed with C11.
+**Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.20 for "option 1", physics refers to mathematics): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.2, Bargmann's theorem in §CB.18, Mackey and Wigner–Mackey in §CB.19★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C5a moved in batch B2 (2026-10-08; §CB.4 split into §CB.4–§CB.5; §C5a.0–§C5a.11 and §C9.4 with "The mathematics used here" blocks; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1), and those of C1a and C9 (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), and the dual space, multilinear tensors and their transformation law) moved in batch B3 (2026-10-08; "The mathematics used here" blocks in §C1a.3–§C1a.7, §C1b.1 and §C9.1; the preview folder of the option-1 demo removed): **option 1 is done**. §CB.20 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).

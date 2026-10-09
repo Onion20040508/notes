@@ -434,14 +434,14 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 
 > [!remark] Remark: The index rule as a table
 >
-> | object | slots (Def. §CB.0.7) | shape | new components | why |
+> | object | slots (Def. §CB.0.8) | shape | new components | why |
 > |---|---|---|---|---|
 > | spinor $\psi$, $u^s(p)$, $v^s(p)$ | $V$ | $4\times1$ | $U\psi$ | Theorem §CB.0.5 |
-> | row $\varphi \in V'$, e.g. $\bar\psi$ (Def. §C5a.2.1) | $V'$ | $1\times4$ | $\varphi U^{-1}$ | Theorem §CB.0.8 |
+> | row $\varphi \in V'$, e.g. $\bar\psi$ (Def. §C5a.2.1) | $V'$ | $1\times4$ | $\varphi U^{-1}$ | Theorem §CB.0.10 |
 > | $\gamma^\mu$, $\gamma^5$, $S^{\mu\nu}$, $\Lambda_{1/2}$, $\slashed{p}$, $P_L$, $\psi\bar\chi$ | $V\otimes V'$ | $4\times4$ | $U(\cdot)U^{-1}$ | Theorems §CB.0.5, §CB.10.14 |
-> | $\psi^\dagger$ | conjugate of $V$ | $1\times4$ | $\psi^\dagger U^\dagger$ ($= \psi^\dagger U^{-1}$ iff $U$ unitary) | Derivation §CB.0.8 |
+> | $\psi^\dagger$ | conjugate of $V$ | $1\times4$ | $\psi^\dagger U^\dagger$ ($= \psi^\dagger U^{-1}$ iff $U$ unitary) | Derivation §CB.0.10 |
 > | matrix of the Dirac form, $\gamma^0$ in that role | form on $V$ | $4\times4$ | $(U^{-1})^\dagger(\cdot)U^{-1}$ | Theorem §CB.8.2 |
-> | $\bar\psi\chi$, $\bar\psi\gamma^\mu\chi$, $\operatorname{tr}(\gamma^\mu\gamma^\nu)$, eigenvalues | none (all contracted) | number | unchanged | Theorems §CB.0.8, §CB.0.9, §C5a.2.2 |
+> | $\bar\psi\chi$, $\bar\psi\gamma^\mu\chi$, $\operatorname{tr}(\gamma^\mu\gamma^\nu)$, eigenvalues | none (all contracted) | number | unchanged | Theorems §CB.0.10, §CB.0.12, §C5a.2.2 |
 >
 > The spacetime index $\mu$ of $\gamma^\mu$ is not touched by a change of basis of $V$; it belongs to Minkowski space ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]).
 >

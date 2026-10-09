@@ -11,7 +11,17 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 1 §1.6; Ch. 7 (paragraph "The vector representation", Derivations "What the vector generators do", "Every exponential exp(ω) is a proper orthochronous Lorentz transformation", Principle "Hermitian generators do not make boosts unitary") · PHY 513 Lecture 1 (Larsen), Part B; Lecture 7 · PHY 513, Problem Set 4, Problem 5 (statement; part (a) as the user wrote it) · PHY 513, Problem Set 5, Problem 1(a) (as the user wrote it) · Yu Zhao-Huan, 量子场论讲义, §3.1, eqs. (3.37)–(3.38), (3.63); §3.2, eqs. (3.30)–(3.33) · the user's pre-course notes, §1.7 (Example "Explicit vector-representation generators") · for the explicit matrices: the user's PHY 513 notes, Ch. 1 §1.2, eq. (rotboost), Ch. 8 §8.1 (Derivation "From six numbers to two matrices"); PHY 513 Lecture 1, Part B; Lecture 9, Part A; PS §3.1, eqs. (3.20)–(3.21), §3.3, eq. (3.48); Yu §1.3, eqs. (1.30)–(1.32), (1.36), Exercise 1.5; Sakurai §3.1.1 (as in QM §C5.1) · PHY 513, Problem Set 6, Problem 4(a), (c)–(d) (the user's solutions).*
 
-What does the Lorentz group look like near the identity, and which objects does field theory actually use to describe it? [[§C1a.4 The Lorentz Group|§C1a.4]] studied finite elements. Near the identity the six parameters become the independent entries of one antisymmetric matrix $\omega_{\mu\nu}$, and every element of the identity component is built from exponentials of six fixed matrices, the **generators**. Relativity level B met the antisymmetry only in a ★ remark ([[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-6|REL ★ Remark: Infinitesimal Lorentz transformations]]); this note is its in-course home, adds the generators of the vector representation, their exponentials and the rotation and boost generators, writes all six generators and the finite rotations and boosts about and along any axis as explicit $4\times4$ matrices, and sets the conventions (active reading, Hermitian generators $\mathcal J = iM$) used for every field from here on. The commutation relations of the generators, the Lorentz algebra, are Lecture 7 material and live in [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations|§CB.4]] ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-2|Theorem §CB.4.2]]), derived there for every representation from the group law; the representations it classifies are [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.16]].
+What does the Lorentz group look like near the identity, and which objects does field theory actually use to describe it? [[§C1a.4 The Lorentz Group|§C1a.4]] studied finite elements. Near the identity the six parameters become the independent entries of one antisymmetric matrix $\omega_{\mu\nu}$, and every element of the identity component is built from exponentials of six fixed matrices, the **generators**. Relativity level B met the antisymmetry only in a ★ remark ([[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-6|REL ★ Remark: Infinitesimal Lorentz transformations]]); this note is its in-course home, adds the generators of the vector representation, their exponentials and the rotation and boost generators, writes all six generators and the finite rotations and boosts about and along any axis as explicit $4\times4$ matrices, and sets the conventions (active reading, Hermitian generators $\mathcal J = iM$) used for every field from here on. The commutation relations of the generators, the Lorentz algebra, are Lecture 7 material and live in [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations|§CB.4]] ([[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-2|Theorem §CB.4.2]]), derived there for every representation from the group law; the representations it classifies are [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.16]]. The Lie theory underneath, the matrix exponential and its determinant, the Lie algebra of a matrix group and that of $O(1,3)$, the identity component, and the theorem that boosts cannot be unitary in finite dimensions, is mathematics ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings|§CB.2]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.16]]), shown in the blocks below.
+
+## The mathematics used here
+
+Theorem §C1a.6.1 is the index form of the Lie algebra of $O(1,3)$: the Lie algebra of a matrix Lie group, and the table of the classical ones, where $\mathfrak{so}(1,3)$ is the $X$ with $X^{\mathsf T}\eta + \eta X = 0$, i.e. $\omega_{\mu\nu}$ antisymmetric:
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11]]
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17]]
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^pf-cb-1-17]]
 
 ## The group near the identity
 
@@ -60,6 +70,32 @@ What does the Lorentz group look like near the identity, and which objects does 
 > *Source: the user's PHY 513 notes, Ch. 7 (Principle on eq. (Dlambda): "Two conventions are hidden here"; Derivation "What the vector generators do")*
 
 ^rem-c1a-6-1
+
+### The mathematics used here: exponentials
+
+Theorems §C1a.6.3 and §C1a.6.4 exponentiate the generators: the matrix exponential, its convergence and algebraic properties, and $\det e^X = e^{\operatorname{tr}X}$ (step 4 of Derivation §C1a.6.4):
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4]]
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5]]
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^pf-cb-1-5]]
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-6]]
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^pf-cb-1-6]]
+
+Step 5 of the same derivation places every exponential in $SO^+(1,3)$ because that group is the identity component of $O(1,3)$:
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13]]
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^der-cb-2-13]]
+
+The remark "Hermitian generators do not make boosts unitary" rests on the Lorentz case of the theorem that no nontrivial finite-dimensional representation of a noncompact simple group is unitary:
+
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12]]
+
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-12]]
 
 ## Generators of the vector representation
 
@@ -168,22 +204,16 @@ The form with both matrix indices down, $(\mathcal J^{\alpha\beta})_{\mu\nu} = i
 >
 > **4. Proper.** $\det e^{A} = e^{\operatorname{tr}A}$: $\frac{d}{dt}\det e^{tA} = \operatorname{tr}(A)\det e^{tA}$ by Jacobi's formula ([[Jacobi's Formula]], with $\frac{d}{dt}e^{tA} = Ae^{tA}$), and $\det e^{0} = 1$. Here $\operatorname{tr}\omega = \omega^\mu{}_\mu = g^{\mu\alpha}\omega_{\alpha\mu} = 0$, a symmetric tensor contracted with an antisymmetric one. So $\det\Lambda = 1$.
 >
-> **5. Orthochronous.** $t \mapsto e^{t\omega}$, $t \in [0, 1]$, is a continuous path from $\mathbb 1$ to $\Lambda$ through Lorentz transformations (steps 1–3 for $t\omega$), so $\Lambda$ is in the component of the identity, $SO^+(1,3)$ ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]), where $\Lambda^0{}_0 \ge 1$.
+> **5. Orthochronous.** $t \mapsto e^{t\omega}$, $t \in [0, 1]$, is a continuous path from $\mathbb 1$ to $\Lambda$ through Lorentz transformations (steps 1–3 for $t\omega$), so $\Lambda$ is in the component of the identity, $SO^+(1,3)$ ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]]), where $\Lambda^0{}_0 \ge 1$.
 >
 > **What the derivation shows**
 > - The exponential map lands exactly in the identity component; $\mathcal P$, $\mathcal T$ and $\mathcal P\mathcal T$ are never exponentials of generators, which is why discrete symmetries carry no Noether charge.
-> - Combined with [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] (every element is a boost times a rotation, each an exponential), $SO^+(1,3)$ is generated by the exponentials; that a single exponential already suffices is true but not needed in the course.
+> - Combined with [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]] (every element is a boost times a rotation, each an exponential), $SO^+(1,3)$ is generated by the exponentials; that a single exponential already suffices is true but not needed in the course.
 > - Used next: Theorem §C1a.6.1, step 4 (every antisymmetric $\omega$ is a tangent vector).
 
 ^der-c1a-6-4
 
-*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], [[Jacobi's Formula]]
-
-The remark below rests on the Lorentz case of the theorem that no nontrivial finite-dimensional representation of a noncompact simple group is unitary:
-
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12]]
-
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-12]]
+*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]], [[Jacobi's Formula]]
 
 > [!remark] Remark: Hermitian generators do not make boosts unitary
 > The factor $i$ in $\mathcal J = iM$ makes the *rotation* generators Hermitian as acting matrices: $(\mathcal J^{jk})^\mu{}_\nu$ is $i$ times a real antisymmetric matrix. The boost generators $\mathcal J^{0i}$ are $i$ times a real *symmetric* matrix (Theorem §C1a.6.3, step 4), hence anti-Hermitian, and a finite boost is real symmetric, not orthogonal: not unitary. A Lorentz transformation preserves the Minkowski form, $\Lambda^{\mathsf T}g\Lambda = g$, not the Euclidean length. (The both-lower form $(\mathcal J^{\mu\nu})_{\alpha\beta}$ is Hermitian for all six, probably the source of the contrary statement, but it is not the matrix that acts.) This is no defect of the vector representation: a noncompact simple Lie group such as $SO^+(1,3)$ has no finite-dimensional unitary representation besides the trivial one ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|Theorem §CB.16.12]]; the compact rotation group, by contrast, has every finite-dimensional representation unitary in a suitable inner product, [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-17|Theorem §CB.6.17]]). Representations on quantum states, which must be unitary, are infinite-dimensional (Wigner's one-particle spaces, [[§C3.6★ Particle States and the Little Group#^pr-c3-6-1|Principle §C3.6.1]]); the finite-dimensional ones act on the *indices of fields* and are not unitary ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-3|§C3.1, Remark: Two uses of one theory: field indices and quantum states]]).
@@ -290,7 +320,7 @@ Definitions §C1a.6.1–§C1a.6.2 give the generators as index formulas and Theo
 > [!derivation]- Derivation
 > Write $P = \hat{\mathbf n}\hat{\mathbf n}^{\mathsf T}$ (projector onto the axis), $Q = \mathbb 1_3 - P$ (projector onto the plane perpendicular to it), $A = [\hat{\mathbf n}]_\times$, and $E_{\mu\nu}$ for the matrix units.
 >
-> **1. The exponent.** By [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]] with $\theta_k = \frac12\varepsilon_{kij}\omega_{ij} = \frac12\varepsilon_{kij}\varepsilon_{ijl}\theta n^l = \theta n^k$ (using $\varepsilon_{kij}\varepsilon_{lij} = 2\delta_{kl}$, [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]) and $\boldsymbol\eta = 0$, $-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$. For $\hat{\mathbf n} = \hat{\mathbf z}$ the only nonzero parameters are $\omega_{12} = -\omega_{21} = \theta$, and the exponent is $-i\theta J_3$.
+> **1. The exponent.** By [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]] with $\theta_k = \frac12\varepsilon_{kij}\omega_{ij} = \frac12\varepsilon_{kij}\varepsilon_{ijl}\theta n^l = \theta n^k$ (using $\varepsilon_{kij}\varepsilon_{lij} = 2\delta_{kl}$, [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]) and $\boldsymbol\eta = 0$, $-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$. For $\hat{\mathbf n} = \hat{\mathbf z}$ the only nonzero parameters are $\omega_{12} = -\omega_{21} = \theta$, and the exponent is $-i\theta J_3$.
 >
 > **2. The generator is the cross product.** By Theorem §C1a.6.5, $-iJ_k$ has zero time row and column and spatial entries $(-iJ_k)^l{}_m = -i(-i\varepsilon_{klm}) = -\varepsilon_{klm}$. So $-i\,\hat{\mathbf n}\cdot\mathbf J = \operatorname{diag}(0, A)$ with $A_{lm} = -n^k\varepsilon_{klm} = -\varepsilon_{lmk}n^k$ (cyclic order): $A_{12} = -n^3$, $A_{13} = +n^2$, $A_{23} = -n^1$, and $A_{ml} = -A_{lm}$, the displayed matrix. On a vector, $(A\mathbf v)_l = -\varepsilon_{lmk}v^mn^k = \varepsilon_{lkm}n^kv^m = (\hat{\mathbf n}\times\mathbf v)_l$.
 >
@@ -323,7 +353,7 @@ Definitions §C1a.6.1–§C1a.6.2 give the generators as index formulas and Theo
 
 ^der-c1a-6-6
 
-*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-4|Derivation §C1a.6.4]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^cau-c1a-4-3|§C1a.4, Caution: The slides' rotation matrix is passive]], [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]]
+*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-4|Derivation §C1a.6.4]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^cau-c1a-4-3|§C1a.4, Caution: The slides' rotation matrix is passive]], [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]]
 
 > [!theorem] Theorem §C1a.6.7: The Boost Matrices in the Vector Representation
 > With the generators of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], the rapidity $\eta$ of [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]] ($\gamma = \cosh\eta$, $\gamma v = \sinh\eta$) and the active reading of [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]]:
@@ -339,7 +369,7 @@ Definitions §C1a.6.1–§C1a.6.2 give the generators as index formulas and Theo
 > \Lambda_{\hat{\mathbf n}}(\eta) = e^{-i\eta\,\hat{\mathbf n}\cdot\mathbf K} = \begin{pmatrix} \cosh\eta & \sinh\eta\,\hat{\mathbf n}^{\mathsf T} \\ \sinh\eta\,\hat{\mathbf n} & \mathbb 1_3 + (\cosh\eta - 1)\,\hat{\mathbf n}\hat{\mathbf n}^{\mathsf T} \end{pmatrix} = \begin{pmatrix} \gamma & \gamma v\,\hat{\mathbf n}^{\mathsf T} \\ \gamma v\,\hat{\mathbf n} & \mathbb 1_3 + (\gamma - 1)\,\hat{\mathbf n}\hat{\mathbf n}^{\mathsf T} \end{pmatrix}, \qquad \Lambda^0{}_0 = \gamma,\quad \Lambda^0{}_i = \Lambda^i{}_0 = \gamma v\,n^i,\quad \Lambda^i{}_j = \delta^i{}_j + (\gamma - 1)\,n^in^j .
 > $$
 >
-> It is symmetric, satisfies $\Lambda^{\mathsf T}g\Lambda = g$, sends $(1, \mathbf 0)$ to $(\cosh\eta, \sinh\eta\,\hat{\mathbf n})$ (velocity $+v\hat{\mathbf n}$), and is the boost $B(u)$ of [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] with $\mathbf u = \sinh\eta\,\hat{\mathbf n}$.
+> It is symmetric, satisfies $\Lambda^{\mathsf T}g\Lambda = g$, sends $(1, \mathbf 0)$ to $(\cosh\eta, \sinh\eta\,\hat{\mathbf n})$ (velocity $+v\hat{\mathbf n}$), and is the boost $B(u)$ of [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]] with $\mathbf u = \sinh\eta\,\hat{\mathbf n}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.2, eq. (rotboost) (the boost along $z$ as a $4\times4$ matrix, in $\gamma$ and in $\eta$), Ch. 7 §7.3 (Derivation "What the vector generators do": the finite boost along $x$ as a $4\times4$ matrix), Ch. 8 §8.1 (Derivation "From six numbers to two matrices": the rapidities in $\omega^\mu{}_\nu$) · PHY 513 Lecture 1, Part B ($\Lambda_{\rm boost}$ along $z$); Lecture 7 (Example "Boost Along x-axis", finite action); Lecture 9, Part A ("Standard Lorentz boost acting on a 4-vector") · PS §3.3, eq. (3.48) · Yu §1.3, eqs. (1.30)–(1.32), and Exercise 1.5, eq. (1.268) (passive boosts along $x$ and $z$) · the boost along $\hat{\mathbf n}$ in rapidity form, its derivation by a rotation and the series derivations written here (all matrices checked numerically) · PHY 513, Problem Set 6, Problem 4(a) (the boost along $z$ with $\omega_{03} = -\omega_{30} = \eta$ as a $4\times4$ matrix, as the user wrote it; same signs)*
 
@@ -394,7 +424,7 @@ Definitions §C1a.6.1–§C1a.6.2 give the generators as index formulas and Theo
 >
 > Also $\Lambda^0{}_0 = c \ge 1$ and $\det\Lambda = \det\tilde R\,\det\Lambda_z\,\det\tilde R^{\mathsf T} = \det\Lambda_z = c^2 - s^2 = 1$ (step 6; the $(t, z)$ block times $\mathbb 1$): $\Lambda \in SO^+(1,3)$, as [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]] guarantees for every exponential.
 >
-> **9. Rest frame, velocity form, B(u).** The first column of $\Lambda$ is $\Lambda(1, \mathbf 0) = (c, s\,\hat{\mathbf n})$: a particle at rest is sent to velocity $(s/c)\hat{\mathbf n} = v\hat{\mathbf n}$. Substituting $c = \gamma$, $s = \gamma v$, $c - 1 = \gamma - 1$ gives the velocity form. With $\mathbf u = s\,\hat{\mathbf n}$ and $\gamma = c$, the spatial block of $B(u)$ in [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] is $\mathbb 1_3 + \mathbf u\mathbf u^{\mathsf T}/(1 + \gamma) = \mathbb 1_3 + \frac{s^2}{1 + c}P = \mathbb 1_3 + \frac{c^2 - 1}{1 + c}P = \mathbb 1_3 + (c - 1)P$, and its other blocks are $\gamma = c$ and $\mathbf u = s\,\hat{\mathbf n}$: the same matrix.
+> **9. Rest frame, velocity form, B(u).** The first column of $\Lambda$ is $\Lambda(1, \mathbf 0) = (c, s\,\hat{\mathbf n})$: a particle at rest is sent to velocity $(s/c)\hat{\mathbf n} = v\hat{\mathbf n}$. Substituting $c = \gamma$, $s = \gamma v$, $c - 1 = \gamma - 1$ gives the velocity form. With $\mathbf u = s\,\hat{\mathbf n}$ and $\gamma = c$, the spatial block of $B(u)$ in [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]] is $\mathbb 1_3 + \mathbf u\mathbf u^{\mathsf T}/(1 + \gamma) = \mathbb 1_3 + \frac{s^2}{1 + c}P = \mathbb 1_3 + \frac{c^2 - 1}{1 + c}P = \mathbb 1_3 + (c - 1)P$, and its other blocks are $\gamma = c$ and $\mathbf u = s\,\hat{\mathbf n}$: the same matrix.
 >
 > **10. Dictionary to Relativity level B.** [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]] is passive with $x^0 = ct$: $B^0{}_0 = \gamma$, $B^0{}_i = B^i{}_0 = -\gamma\beta^i$, $B^i{}_j = \delta^i{}_j + (\gamma - 1)\beta^i\beta^j/\beta^2$. With $c = 1$ and $\boldsymbol\beta \to -v\hat{\mathbf n}$ ([[§C1a.4 The Lorentz Group#^cau-c1a-4-2|§C1a.4, Caution: Notation against Relativity level B]]), $-\gamma\beta^i = \gamma v\,n^i$ and $\beta^i\beta^j/\beta^2 = n^in^j$: $\Lambda_{\hat{\mathbf n}}(\eta) = B_{\rm REL}(-v\hat{\mathbf n}) = B_{\rm REL}(v\hat{\mathbf n})^{-1}$.
 >
@@ -417,7 +447,7 @@ Definitions §C1a.6.1–§C1a.6.2 give the generators as index formulas and Theo
 
 ^der-c1a-6-7b
 
-*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], [[§C1a.4 The Lorentz Group#^cau-c1a-4-2|§C1a.4, Caution: Notation against Relativity level B]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]]
+*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]], [[§C1a.4 The Lorentz Group#^cau-c1a-4-2|§C1a.4, Caution: Notation against Relativity level B]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]]
 
 > [!remark]- Connections
 > - The tangent space at the identity of a matrix group defined by $M^{\mathsf T}GM = G$ is $\{\omega : \omega^{\mathsf T}G + G\omega = 0\}$; for $G = \mathbb 1$ these are the antisymmetric matrices of $\mathfrak{so}(n)$, for $G = g$ the matrices with $g\omega$ antisymmetric — [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-6|REL ★ Remark: Infinitesimal Lorentz transformations]].

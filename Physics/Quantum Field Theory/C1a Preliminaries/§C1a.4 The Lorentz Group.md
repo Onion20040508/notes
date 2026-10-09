@@ -11,9 +11,29 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 1 §§1.2–1.3 (and Ch. 7, Principle "Active and passive conventions") · PHY 513 Lecture 1 (Larsen), Part B · Yu Zhao-Huan, 量子场论讲义, §1.3.*
 
-Which transformations relate the descriptions of one physical situation, and what structure does the set of them have that field theory will use? Relativity level B already defines the Lorentz group by $\Lambda^{\mathsf T}g\Lambda = g$, proves that it is a group with four pieces, writes every proper orthochronous element as a boost times a rotation, and lists the orbits ([[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]], [[§B1.3 Causal Structure and Proper Time#^rem-b1-3-1|REL Remark: Normal forms, and the orbits of the Lorentz group]]); those statements are not repeated here, except that the boost-times-rotation decomposition is recalled in the active reading with the explicit boost matrix that the orbits need (Theorem §C1a.4.3, 1). This section adds what quantum field theory needs on top: natural units and the *active* reading of $\Lambda$ used by Peskin–Schroeder and the lectures, the group-theoretic vocabulary (matrix groups, the four components as cosets of a normal subgroup, the identity component), the invariant volume elements, and the orbits of the group on spacetime with the action of $\mathcal P$ and $\mathcal T$ on them, which is where the light cone, positive energy and microcausality enter.
+Which transformations relate the descriptions of one physical situation, and what structure does the set of them have that field theory will use? Relativity level B already defines the Lorentz group by $\Lambda^{\mathsf T}g\Lambda = g$, proves that it is a group with four pieces, writes every proper orthochronous element as a boost times a rotation, and lists the orbits ([[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]], [[§B1.3 Causal Structure and Proper Time#^rem-b1-3-1|REL Remark: Normal forms, and the orbits of the Lorentz group]]); those statements are not repeated here, except that the boost-times-rotation decomposition is recalled in the active reading with the explicit boost matrix that the orbits need (Theorem §CB.2.13, 1). This section adds what quantum field theory needs on top: natural units and the *active* reading of $\Lambda$ used by Peskin–Schroeder and the lectures, the invariant volume elements, and the orbits of the group on spacetime with the action of $\mathcal P$ and $\mathcal T$ on them, which is where the light cone, positive energy and microcausality enter. The group-theoretic vocabulary (matrix groups, the four components as cosets of a normal subgroup, the identity component) is mathematics; it lives in [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]] and [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings|§CB.2]] and is shown in the block below.
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$; $x^\mu = (t, \mathbf x)$; $g = \operatorname{diag}(+1, -1, -1, -1)$; $\Lambda$ read actively; rapidity $\eta$.
+
+## The mathematics used here
+
+The groups named throughout, $O(1,3)$, $SO(1,3)$ and $SO^+(1,3)$, as groups of matrices; that $O(1,3)$ is a group, with $\det\Lambda = \pm1$ and $|\Lambda^0{}_0| \ge 1$, is [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]] and [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]]:
+
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1]]
+
+"Lorentz invariant" refers to the identity component (Remark: What "Lorentz invariant" means in field theory), in this sense:
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-9]]
+
+The orbit theorems use the group structure: Theorem §C1a.4.3 lets $O(1,3)$ act coset by coset, and Theorem §C1a.4.2 uses the boost $B(u)$ of the decomposition of $SO^+(1,3)$ into boosts times rotations (the model case with one label, the rotation group, is [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-11|Theorem §CB.2.11]]):
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-12]]
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^der-cb-2-12]]
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13]]
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^der-cb-2-13]]
 
 ## Lorentz transformations in field theory
 
@@ -81,19 +101,6 @@ Both matrices satisfy Definition §C1a.4.1 by the computation of [[§B1.2 Lorent
 
 ## The group
 
-> [!definition] Definition §C1a.4.4: Matrix Groups
-> A set of invertible matrices closed under products and inverses is a group under matrix multiplication ([[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]; associativity is automatic), and a subset of one that is itself such a group is a subgroup ([[§4 Subgroups#^def-4-1|493 Def. §4.1]]). The ones used in field theory:
-> - $O(N)$, $SO(N)$: real $N\times N$ with $O^{\mathsf T}O = \mathbb 1$, and in addition $\det O = 1$ ([[§3 Basic Examples of Groups#^def-3-8|493 Def. §3.8]], [[§3 Basic Examples of Groups#^def-3-9|493 Def. §3.9]]); $U(N)$, $SU(N)$: complex with $U^\dagger U = \mathbb 1$, and in addition $\det U = 1$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-10|591 Def. §11.10]]);
-> - $O(1,3)$: real $4\times4$ with $\Lambda^{\mathsf T}g\Lambda = g$; $SO(1,3)$: in addition $\det\Lambda = 1$; $SO^+(1,3)$ (also $SO^\uparrow(1,3)$, $L^\uparrow_+$): in addition $\Lambda^0{}_0 \ge 1$.
->
-> $O(1,3)$ is $O(4)$ with the identity form replaced by $g$; there is a chain of subgroups $SO(2) < SO(3) < SO^+(1,3) < SO(1,3) < O(1,3)$.
->
-> *Source: the user's PHY 513 notes, Ch. 1 §1.3 (Definition "Groups, subgroups, and the matrix groups") · Yu §1.3, eqs. (1.50)–(1.57)*
-
-^def-c1a-4-4
-
-That $O(1,3)$ is a group, that $\Lambda^{-1} = g^{-1}\Lambda^{\mathsf T}g$ needs no inversion, that $\Lambda^{\mathsf T}$ is again Lorentz ($\Lambda g\Lambda^{\mathsf T} = g$, the "row form"), and that $\det\Lambda = \pm1$ and $|\Lambda^0{}_0| \ge 1$, are [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]] and [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
-
 > [!theorem] Theorem §C1a.4.1: Invariant Volume Elements
 > For every $\Lambda \in O(1,3)$ the substitutions $x' = \Lambda x$ and $p' = \Lambda p$ have Jacobian $|\det\Lambda| = 1$:
 >
@@ -114,7 +121,7 @@ That $O(1,3)$ is a group, that $\Lambda^{-1} = g^{-1}\Lambda^{\mathsf T}g$ needs
 >
 > **3. Change of variables.** For an integrable $f$, $\int d^4x'\,f(x') = \int d^4x\,|\det\Lambda|\,f(\Lambda x) = \int d^4x\,f(\Lambda x)$ ([[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], extended from bounded regions to $\mathbb R^4$ for absolutely integrable $f$). The same with $p$ in place of $x$.
 >
-> **4. Scalars.** If $f$ is a scalar field, the transformed field is $f'(x') = f(x)$ at $x' = \Lambda x$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]), so $\int d^4x'\,f'(x') = \int d^4x\,f'(\Lambda x) = \int d^4x\,f(x)$ by step 3; the name of the integration variable is immaterial, so $\int d^4x\,f' = \int d^4x\,f$. For distributions the substitution is the definition of the transformed distribution, $(T\circ\Lambda^{-1})[f] = T[f\circ\Lambda]$ with the factor $|\det\Lambda| = 1$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]), and "$T$ is invariant" means $T\circ\Lambda^{-1} = T$; for $\theta(p^0)\delta(p^2 - m^2)$ this holds for orthochronous $\Lambda$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1; [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]]).
+> **4. Scalars.** If $f$ is a scalar field, the transformed field is $f'(x') = f(x)$ at $x' = \Lambda x$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]), so $\int d^4x'\,f'(x') = \int d^4x\,f'(\Lambda x) = \int d^4x\,f(x)$ by step 3; the name of the integration variable is immaterial, so $\int d^4x\,f' = \int d^4x\,f$. For distributions the substitution is the definition of the transformed distribution, $(T\circ\Lambda^{-1})[f] = T[f\circ\Lambda]$ with the factor $|\det\Lambda| = 1$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]), and "$T$ is invariant" means $T\circ\Lambda^{-1} = T$; for $\theta(p^0)\delta(p^2 - m^2)$ this holds for orthochronous $\Lambda$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1; [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]).
 >
 > **What the derivation shows**
 > - Only $|\det\Lambda| = 1$ is used: the volume elements are invariant under all of $O(1,3)$, parity and time reversal included; an orientation (a sign of $\det\Lambda$) matters only for objects carrying an $\varepsilon$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
@@ -122,113 +129,14 @@ That $O(1,3)$ is a group, that $\Lambda^{-1} = g^{-1}\Lambda^{\mathsf T}g$ needs
 
 ^der-c1a-4-1
 
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]], [[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]]
+*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]], [[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]
 
 ## Components, cosets and the identity component
 
-> [!theorem] Theorem §C1a.4.2: The Four Components Are the Cosets of SO⁺(1,3)
-> 1. The map $\sigma(\Lambda) = (\det\Lambda,\ \operatorname{sgn}\Lambda^0{}_0)$ is a homomorphism of $O(1,3)$ onto the Klein four-group $\{\pm1\}\times\{\pm1\}$, with kernel $SO^+(1,3)$.
-> 2. Hence $SO^+(1,3)$ is a normal subgroup, $O(1,3)/SO^+(1,3) \cong \mathbb Z_2\times\mathbb Z_2$, and the four pieces of [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]] are its cosets
->
-> $$
-> SO^+(1,3), \qquad \mathcal P\cdot SO^+(1,3), \qquad \mathcal T\cdot SO^+(1,3), \qquad \mathcal P\mathcal T\cdot SO^+(1,3), \qquad \mathcal P = \operatorname{diag}(1, -1, -1, -1),\ \mathcal T = \operatorname{diag}(-1, 1, 1, 1) .
-> $$
->
-> 3. Left multiplication by $\mathcal P$ flips $\det\Lambda$, by $\mathcal P\mathcal T = -\mathbb 1$ flips $\operatorname{sgn}\Lambda^0{}_0$, by $\mathcal T$ both. Only $SO^+(1,3)$ is a subgroup; the product of two elements of one coset lies in $SO^+(1,3)$.
->
-> Notation: [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]] and [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-2|REL Def. §B1.2.2]] write $P$, $T$, $PT$ for $\mathcal P$, $\mathcal T$, $\mathcal P\mathcal T$; these notes follow Yu and Lecture 11 with calligraphic letters.
->
-> *Source: the user's PHY 513 notes, Ch. 1 §1.3 (Definition "Names and what is a subgroup", Figure "components") · Yu §1.3, Fig. 1.3, eqs. (1.58)–(1.59)*
-
-^thm-c1a-4-2
-
-> [!derivation]- Derivation
-> **1. The determinant is multiplicative**: $\det(\Lambda'\Lambda) = \det\Lambda'\det\Lambda$ ([[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]]).
->
-> **2. The sign of the time component is multiplicative.** Write the $00$ entry of the product, splitting the sum over the middle index into its time and space parts:
->
-> $$
-> (\Lambda'\Lambda)^0{}_0 = \Lambda'^0{}_0\,\Lambda^0{}_0 + \sum_{i=1}^3\Lambda'^0{}_i\,\Lambda^i{}_0 .
-> $$
->
-> The row identity for $\Lambda'$ and the column identity for $\Lambda$ ([[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], 2) give $\sum_i(\Lambda'^0{}_i)^2 = (\Lambda'^0{}_0)^2 - 1$ and $\sum_i(\Lambda^i{}_0)^2 = (\Lambda^0{}_0)^2 - 1$. By Cauchy–Schwarz in $\mathbb R^3$ ([[§20 Inner Products and Norms#^ladr-6-14|LADR Thm. 6.14]]),
->
-> $$
-> \Bigl|\sum_i\Lambda'^0{}_i\Lambda^i{}_0\Bigr| \le \sqrt{(\Lambda'^0{}_0)^2 - 1}\,\sqrt{(\Lambda^0{}_0)^2 - 1} < |\Lambda'^0{}_0|\,|\Lambda^0{}_0| ,
-> $$
->
-> the last inequality because $\sqrt{a^2 - 1} < |a|$ for $|a| \ge 1$. So the sum cannot change the sign of the first term: $\operatorname{sgn}(\Lambda'\Lambda)^0{}_0 = \operatorname{sgn}\Lambda'^0{}_0\cdot\operatorname{sgn}\Lambda^0{}_0$, for all four sign combinations. (Relativity level B proved the case $+\cdot+$; the same inequality gives the other three.)
->
-> **3. Homomorphism, onto.** Steps 1–2 say $\sigma(\Lambda'\Lambda) = \sigma(\Lambda')\sigma(\Lambda)$ with componentwise multiplication ([[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]). The four values are attained: $\sigma(\mathbb 1) = (+, +)$, $\sigma(\mathcal P) = (-, +)$, $\sigma(\mathcal T) = (-, -)$, $\sigma(\mathcal P\mathcal T) = \sigma(-\mathbb 1) = (+, -)$, since $\det(-\mathbb 1_4) = (-1)^4 = 1$ and $(-\mathbb 1)^0{}_0 = -1$.
->
-> **4. Kernel and quotient.** $\ker\sigma = \{\det\Lambda = 1,\ \Lambda^0{}_0 \ge 1\} = SO^+(1,3)$ ([[§15 Homomorphisms#^def-15-3|493 Def. §15.3]]). A kernel is a normal subgroup ([[§38 Normal Subgroups#^def-38-1|493 Def. §38.1]]: $\sigma(\Lambda K\Lambda^{-1}) = \sigma(\Lambda)\sigma(K)\sigma(\Lambda)^{-1} = (+, +)$ for $K$ in the kernel), and by the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]) $O(1,3)/SO^+(1,3) \cong \operatorname{Im}\sigma = \{\pm1\}^2$.
->
-> **5. The fibres are cosets.** If $\sigma(\Lambda) = \sigma(\mathcal P)$, then $\sigma(\mathcal P^{-1}\Lambda) = \sigma(\mathcal P)^{-1}\sigma(\mathcal P) = (+, +)$, so $\mathcal P^{-1}\Lambda \in SO^+(1,3)$ and $\Lambda \in \mathcal P\cdot SO^+(1,3)$; conversely every $\mathcal PK$, $K \in SO^+(1,3)$, has $\sigma(\mathcal PK) = \sigma(\mathcal P)$. The same two lines with $C = \mathcal T$ or $C = \mathcal P\mathcal T$ in place of $\mathcal P$: $\sigma(C^{-1}\Lambda) = \sigma(C)^{-1}\sigma(\Lambda) = (+, +)$ exactly when $\sigma(\Lambda) = \sigma(C)$, so the fibre over $\sigma(\mathcal T) = (-, -)$ is $\mathcal T\cdot SO^+(1,3)$ and the fibre over $\sigma(\mathcal P\mathcal T) = (+, -)$ is $\mathcal P\mathcal T\cdot SO^+(1,3)$. These are the four pieces, labelled by $(\det, \operatorname{sgn})$ ([[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2]]; left and right cosets agree because the subgroup is normal).
->
-> **6. Which are subgroups.** A subgroup contains $\mathbb 1$, and $\sigma(\mathbb 1) = (+, +)$, so only $SO^+(1,3)$ can be one. For $\Lambda_1, \Lambda_2$ in one coset, $\sigma(\Lambda_1\Lambda_2) = \sigma(\Lambda_1)^2 = (+, +)$, every element of $\{\pm1\}^2$ squaring to the identity: the product is in $SO^+(1,3)$.
->
-> **7. The moves.** $\sigma(\mathcal P\Lambda) = (-\det\Lambda,\ \operatorname{sgn}\Lambda^0{}_0)$, $\sigma(\mathcal P\mathcal T\Lambda) = (\det\Lambda,\ -\operatorname{sgn}\Lambda^0{}_0)$, $\sigma(\mathcal T\Lambda) = (-\det\Lambda,\ -\operatorname{sgn}\Lambda^0{}_0)$, by step 3. ⚑ By-product: $SO(1,3) = \sigma^{-1}\{(+, +), (+, -)\}$ is a subgroup that contains $\mathcal P\mathcal T = -\mathbb 1$, which reverses time; "proper" alone does not fix the direction of time → [[§B1.2 Lorentz Transformations and the Lorentz Group#^cau-b1-2-2|REL Caution: Names of the group]].
->
-> **What the derivation shows**
-> - The two discrete labels are not just invariants of each element but a homomorphism: the discrete part of the Lorentz group is $\mathbb Z_2\times\mathbb Z_2$, represented by $\{\mathbb 1, \mathcal P, \mathcal T, \mathcal P\mathcal T\}$.
-> - A law invariant under $SO^+(1,3)$ is invariant under all of $O(1,3)$ as soon as it is invariant under $\mathcal P$ and $\mathcal T$; these are the two questions left to dynamics ([[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-2|REL Remark: Parity and time reversal are questions for dynamics]]; [[§C9.1 Discrete Lorentz Transformations|§C9.1]], [[§C9.4 Fermion Bilinears under Parity#^rem-c9-4-3|§C9.4, Remark: Mandatory and optional symmetries]]).
-> - Used next: the identity component (Theorem §C1a.4.3), the action of $\mathcal P$ and $\mathcal T$ on orbits (Theorem §C1a.4.5).
-
-^der-c1a-4-2
-
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-4|Def. §C1a.4.4]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], [[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]], [[§20 Inner Products and Norms#^ladr-6-14|LADR Thm. 6.14]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§38 Normal Subgroups#^def-38-1|493 Def. §38.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2]]
+The four components of $O(1,3)$ are the cosets of $SO^+(1,3)$, and $SO^+(1,3)$ is the component of the identity ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-12|Theorem §CB.2.12]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]], shown in the block above; their home is [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings|§CB.2]]). In a picture:
 
 ![[ph-qft-c1-4-1.svg]]
 *The four components of $O(1,3)$, labelled by $\det\Lambda$ (rows) and the sign of $\Lambda^0{}_0$ (columns); they are the cosets of $SO^+(1,3)$, and multiplying by $\mathcal P$, $\mathcal T$ or $\mathcal P\mathcal T$ moves between them as the arrows show (the figure labels the matrices $P$, $T$, i.e. $\mathcal P$, $\mathcal T$). Only the cell containing $\mathbf 1$ is a subgroup. Adapted from the user's PHY 513 notes, Ch. 1 §1.3.*
-
-> [!theorem] Theorem §C1a.4.3: SO⁺(1,3) Is the Component of the Identity
-> 1. (Recall, [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]], in the active reading.) Every $\Lambda \in SO^+(1,3)$ is $\Lambda = B(u)\,R$, where $u = \Lambda e_0$ is its first column, $R = \operatorname{diag}(1, O)$ with $O \in SO(3)$, and $B(u)$ is the active pure boost taking $e_0 = (1, \mathbf 0)$ to $u = (\gamma, \mathbf u)$:
->
-> $$
-> B(u) = \begin{pmatrix} \gamma & \mathbf u^{\mathsf T} \\ \mathbf u & \mathbb 1_3 + \dfrac{\mathbf u\,\mathbf u^{\mathsf T}}{1 + \gamma} \end{pmatrix}, \qquad \gamma^2 - \mathbf u^2 = 1 .
-> $$
->
-> 2. $SO^+(1,3)$ is path-connected: each $\Lambda$ is joined to $\mathbb 1$ by a continuous path of boosts times rotations. So it is the connected component of $\mathbb 1$ in $O(1,3)$, and $\mathcal P$, $\mathcal T$, $\mathcal P\mathcal T$ cannot be reached from $\mathbb 1$ continuously.
->
-> *Source: the user's PHY 513 notes, Ch. 1 §1.3 (Derivation "Every proper orthochronous transformation is a boost times a rotation") · Yu §1.3 (connected components, Fig. 1.3)*
-
-^thm-c1a-4-3
-
-> [!derivation]- Derivation
-> **1. The image of the time axis.** $u = \Lambda e_0$ has components $u^\mu = \Lambda^\mu{}_0$. From $\Lambda^{\mathsf T}g\Lambda = g$, $u^{\mathsf T}gu = e_0^{\mathsf T}\Lambda^{\mathsf T}g\Lambda e_0 = e_0^{\mathsf T}ge_0 = 1$, and $u^0 = \Lambda^0{}_0 \ge 1$: $u = (\gamma, \mathbf u)$ is a future unit timelike vector, $\gamma^2 - \mathbf u^2 = 1$, the four-velocity of a particle with velocity $\mathbf u/\gamma$.
->
-> **2. $B(u)$ is Lorentz.** $B = B(u)$ is symmetric. Write $S = \mathbb 1_3 + \mathbf u\mathbf u^{\mathsf T}/(1 + \gamma)$ and use $\mathbf u^{\mathsf T}\mathbf u = \gamma^2 - 1 = (\gamma - 1)(\gamma + 1)$. Then
->
-> $$
-> S\mathbf u = \mathbf u + \frac{\mathbf u\,(\gamma^2 - 1)}{1 + \gamma} = \gamma\,\mathbf u, \qquad S^2 = \mathbb 1_3 + \frac{2\,\mathbf u\mathbf u^{\mathsf T}}{1 + \gamma} + \frac{\mathbf u\,(\gamma^2 - 1)\,\mathbf u^{\mathsf T}}{(1 + \gamma)^2} = \mathbb 1_3 + \mathbf u\mathbf u^{\mathsf T}\,\frac{2 + (\gamma - 1)}{1 + \gamma} = \mathbb 1_3 + \mathbf u\mathbf u^{\mathsf T} .
-> $$
->
-> With $g = \operatorname{diag}(1, -\mathbb 1_3)$, the block product is
->
-> $$
-> B^{\mathsf T}gB = \begin{pmatrix} \gamma^2 - \mathbf u^{\mathsf T}\mathbf u & \gamma\mathbf u^{\mathsf T} - \mathbf u^{\mathsf T}S \\ \gamma\mathbf u - S\mathbf u & \mathbf u\mathbf u^{\mathsf T} - S^2 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -\mathbb 1_3 \end{pmatrix} = g .
-> $$
->
-> By construction $Be_0 = (\gamma, \mathbf u) = u$. For $\mathbf u = \sinh\eta\,\hat{\mathbf z}$, $S$ has $zz$ entry $1 + \sinh^2\eta/(1 + \cosh\eta) = \cosh\eta$, and $B(u) = B_z(\eta)$ of [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]]. (It is [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]] with $\boldsymbol\beta = -\mathbf u/\gamma$: the passive boost to the frame moving with $-\mathbf u/\gamma$.)
->
-> **3. $B(u) \in SO^+(1,3)$.** $B^0{}_0 = \gamma \ge 1$. For $\det B$: on a spatial vector $(0, \mathbf w)$ with $\mathbf w \perp \mathbf u$, $B(0, \mathbf w) = (\mathbf u\cdot\mathbf w, S\mathbf w) = (0, \mathbf w)$; on the plane spanned by $e_0$ and $(0, \hat{\mathbf u})$, $Be_0 = \gamma e_0 + |\mathbf u|(0, \hat{\mathbf u})$ and $B(0, \hat{\mathbf u}) = |\mathbf u|e_0 + \gamma(0, \hat{\mathbf u})$ (step 2). In a basis adapted to these subspaces $B$ is block diagonal with blocks $\begin{pmatrix} \gamma & |\mathbf u| \\ |\mathbf u| & \gamma \end{pmatrix}$ and $\mathbb 1_2$, so $\det B = \gamma^2 - \mathbf u^2 = 1$ ([[§37 Determinants#^ladr-9-52|LADR Thm. 9.52]]: the determinant does not depend on the basis).
->
-> **4. What is left is a rotation** (the argument of REL Theorem §B1.2.6, active reading). $R \equiv B(u)^{-1}\Lambda$ lies in $SO^+(1,3)$ (a subgroup, [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]]) and $Re_0 = B(u)^{-1}u = e_0$, so its first column is $e_0$ and $R^0{}_0 = 1$. The row identity $(R^0{}_0)^2 - \sum_i(R^0{}_i)^2 = 1$ ([[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], 2) gives $\sum_i(R^0{}_i)^2 = 0$: the first row is $e_0^{\mathsf T}$ too, and $R = \operatorname{diag}(1, O)$. The spatial block of $R^{\mathsf T}gR = g$ is $-O^{\mathsf T}O = -\mathbb 1_3$, and $\det O = \det R = 1$: $O \in SO(3)$. Hence $\Lambda = B(u)R$.
->
-> **5. A path for the boost.** Write $\gamma = \cosh\eta_0$, $\mathbf u = \sinh\eta_0\,\hat{\mathbf n}$ ($\eta_0 \ge 0$; any $\hat{\mathbf n}$ if $\mathbf u = 0$). For $s \in [0, 1]$ let $u(s) = (\cosh s\eta_0, \sinh s\eta_0\,\hat{\mathbf n})$; the entries of $B(u(s))$ are continuous in $s$, $B(u(0)) = \mathbb 1$, $B(u(1)) = B(u)$, and each $B(u(s)) \in SO^+(1,3)$ by steps 2–3.
->
-> **6. A path for the rotation.** Every $O \in SO(3)$ is a rotation by some angle $\alpha$ about some axis $\hat{\mathbf a}$ (Euler's theorem: $O$ has the eigenvalue $1$, since its eigenvalues have modulus $1$, come in conjugate pairs, and multiply to $\det O = 1$). Then $O(s)$, the rotation by $s\alpha$ about $\hat{\mathbf a}$, is continuous with $O(0) = \mathbb 1$, $O(1) = O$.
->
-> **7. Connectedness.** $s \mapsto B(u(s))\operatorname{diag}(1, O(s))$ is a continuous path in $SO^+(1,3)$ (products of continuous matrix functions are continuous) from $\mathbb 1$ to $\Lambda$. So $SO^+(1,3)$ is path-connected, hence connected. The labels $\det\Lambda \in \{\pm1\}$ and $\operatorname{sgn}\Lambda^0{}_0$ are constant along any path (both are continuous, and $\Lambda^0{}_0$ takes values in $\mathbb R\setminus(-1, 1)$, whose two pieces no continuous path joins) ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|591 Prop. §11.3]], [[§15 Connected Spaces#^thm-15-3|590 Thm. §15.3]]), so no path leaves the coset of $\mathbb 1$: $SO^+(1,3)$ is a whole component, and $\mathcal P$, $\mathcal T$, $\mathcal P\mathcal T$ lie in others. Each other coset $C\cdot SO^+(1,3)$ is the image of $SO^+(1,3)$ under the continuous map $\Lambda \mapsto C\Lambda$, so it is connected too: $O(1,3)$ has exactly four components.
->
-> **What the derivation shows**
-> - The decomposition is the Lorentz form of the polar decomposition of a matrix: a positive symmetric factor (the boost) times an orthogonal one (the rotation); for $SL(2, \mathbb C)$ it returns as $\lambda = e^hU$ ([[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-4|Theorem §CB.15.4]]; the spinor boost: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]]).
-> - "Generated by three rotations and three boosts" is now precise: every boost is a rotated boost along $z$, every rotation a product of rotations about the axes, and the six one-parameter subgroups are exponentials of the six generators ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]).
-> - Used next: orbits (Theorem §C1a.4.4, which needs $B(u)$); "Lorentz invariance" means invariance under this component (Remark below).
-
-^der-c1a-4-3
-
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]], [[§37 Determinants#^ladr-9-52|LADR Thm. 9.52]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|591 Prop. §11.3]], [[§15 Connected Spaces#^thm-15-3|590 Thm. §15.3]]
 
 > [!remark] Remark: What "Lorentz invariant" means in field theory
 > Throughout quantum field theory, "Lorentz invariant" means invariant under $SO^+(1,3)$, together with translations the proper orthochronous Poincaré group ([[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-4|REL Def. §B1.2.4]]), unless parity or time reversal is named explicitly. It is the only piece reachable from the identity, so it is the only piece whose elements are exponentials of generators ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]]) and the only one that Noether's theorem turns into conserved charges ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]]). $\mathcal P$ and $\mathcal T$ are discrete: whether a theory respects them is decided by its Lagrangian, and the weak interaction does not ([[§C9.4 Fermion Bilinears under Parity#^rem-c9-4-4|§C9.4, Remark: Discrete symmetries in nature]]). The same distinction recurs three times in the course: in the invariance of past and future ([[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]]), in the invariance of positive energy on the mass shell ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]), and in the classification of fields by their response to parity ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
@@ -241,7 +149,7 @@ That $O(1,3)$ is a group, that $\Lambda^{-1} = g^{-1}\Lambda^{\mathsf T}g$ needs
 
 The four components are a property of the group, a six-dimensional manifold. The light cone is a property of spacetime, the space the group acts on ([[§25 Actions#^def-25-1|493 Def. §25.1]]). They meet through orbits ([[§27 Orbits#^def-27-1|493 Def. §27.1]]): the orbit of $x$ is $\{\Lambda x : \Lambda \in SO^+(1,3)\}$.
 
-> [!theorem] Theorem §C1a.4.4: The Orbits of SO⁺(1,3) on Spacetime
+> [!theorem] Theorem §C1a.4.2: The Orbits of SO⁺(1,3) on Spacetime
 > Under $x \mapsto \Lambda x$, $\Lambda \in SO^+(1,3)$, the orbits in $\mathbb R^4$ are exactly
 > - for each $m > 0$, the **future sheet** $H^+_m = \{x^2 = m^2,\ x^0 > 0\}$ and the **past sheet** $H^-_m = \{x^2 = m^2,\ x^0 < 0\}$;
 > - for each $a > 0$, the **one-sheeted hyperboloid** $S_a = \{x^2 = -a^2\}$;
@@ -252,14 +160,14 @@ The four components are a property of the group, a six-dimensional manifold. The
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.3 (paragraph "Orbits: where the light cone comes in", Figure "orbits")*
 
-^thm-c1a-4-4
+^thm-c1a-4-2
 
 > [!derivation]- Derivation
 > **1. Orbits lie in level sets.** $(\Lambda x)^2 = x^2$ for every Lorentz transformation ([[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-2|REL Theorem §B1.2.2]]).
 >
 > **2. On timelike and null vectors the sign of $x^0$ is kept.** If $x^2 \ge 0$ and $x \ne 0$, then $(x^0)^2 \ge \mathbf x^2$ forces $x^0 \ne 0$, and an orthochronous $\Lambda$ preserves $\operatorname{sgn}x^0$ ([[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], 2). With step 1, each orbit lies inside one of the listed sets; it remains to show that each set is a single orbit (the group acts transitively on it).
 >
-> **3. Future sheet.** Let $x \in H^+_m$ and $u = x/m$: $u^2 = 1$, $u^0 > 0$. By [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], step 2, $B(u) \in SO^+(1,3)$ and $B(u)e_0 = u$, so $x = B(u)(me_0)$: every point of $H^+_m$ is in the orbit of $me_0$.
+> **3. Future sheet.** Let $x \in H^+_m$ and $u = x/m$: $u^2 = 1$, $u^0 > 0$. By [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]], step 2, $B(u) \in SO^+(1,3)$ and $B(u)e_0 = u$, so $x = B(u)(me_0)$: every point of $H^+_m$ is in the orbit of $me_0$.
 >
 > **4. Past sheet.** If $x \in H^-_m$ then $-x \in H^+_m$ and $-x = B(-x/m)(me_0)$; multiply by $-1$, which commutes with every matrix: $x = B(-x/m)(-me_0)$. So $H^-_m$ is the orbit of $-me_0$.
 >
@@ -276,48 +184,48 @@ The four components are a property of the group, a six-dimensional manifold. The
 > **7. The origin** is fixed by every linear map. The sets listed are disjoint and cover $\mathbb R^4$, as orbits must ([[§27 Orbits#^prop-27-1|493 Prop. §27.1]]).
 >
 > **What the derivation shows**
-> - $x^2$ and, off the spacelike region, $\operatorname{sgn}x^0$ are complete invariants; on $S_a$ nothing but $x^2$ survives. ⚑ By-product: $S_a$ contains both $ae_3$ and $-ae_3$, so the sign of $x^0$ is not an invariant of spacelike vectors → [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]], 3.
-> - Transitivity used the boosts $B(u)$ of Theorem §C1a.4.3 and the rotations; the orbit $H^+_m$ is the set of four-momenta of a particle of mass $m$, with stabilizer $SO(3)$ (the rest frame is unique up to rotation).
+> - $x^2$ and, off the spacelike region, $\operatorname{sgn}x^0$ are complete invariants; on $S_a$ nothing but $x^2$ survives. ⚑ By-product: $S_a$ contains both $ae_3$ and $-ae_3$, so the sign of $x^0$ is not an invariant of spacelike vectors → [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], 3.
+> - Transitivity used the boosts $B(u)$ of Theorem §CB.2.13 and the rotations; the orbit $H^+_m$ is the set of four-momenta of a particle of mass $m$, with stabilizer $SO(3)$ (the rest frame is unique up to rotation).
 > - Used next: Lorentz-invariant functions and distributions are constant on these orbits ([[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], step 4).
 
-^der-c1a-4-4
+^der-c1a-4-2
 
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-2|REL Theorem §B1.2.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]
+*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-2|REL Theorem §B1.2.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]
 
-> [!theorem] Theorem §C1a.4.5: Parity and Time Reversal Permute the Orbits
-> 1. $\mathcal P$ maps every orbit of Theorem §C1a.4.4 to itself (reversing its orientation along the sheet).
+> [!theorem] Theorem §C1a.4.3: Parity and Time Reversal Permute the Orbits
+> 1. $\mathcal P$ maps every orbit of Theorem §C1a.4.2 to itself (reversing its orientation along the sheet).
 > 2. $\mathcal T$ and $\mathcal P\mathcal T = -\mathbb 1$ exchange $H^+_m \leftrightarrow H^-_m$ and $C^+ \leftrightarrow C^-$, and map each $S_a$ to itself.
 > 3. Consequently, on timelike and null vectors $\operatorname{sgn}x^0$ is invariant under the orthochronous transformations $SO^+(1,3)\cup \mathcal P\cdot SO^+(1,3)$; on the mass shell $p^2 = m^2$, $\theta(p^0)$ is invariant. On spacelike vectors it is not invariant even under $SO^+(1,3)$: for every $x$ with $x^2 < 0$ there is $\Lambda \in SO^+(1,3)$ with $\Lambda x = -x$.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.3 (paragraph "Orbits"; Caution "Where the two pictures fail to match")*
 
-^thm-c1a-4-5
+^thm-c1a-4-3
 
 > [!derivation]- Derivation
-> **1. Parity.** $\mathcal Px = (x^0, -\mathbf x)$: $(\mathcal Px)^2 = x^2$ and $(\mathcal Px)^0 = x^0$, so by the complete invariants of [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]] $\mathcal Px$ lies in the orbit of $x$. Along a sheet, $\mathcal P$ reverses $\mathbf x$, the coordinate that a boost moves.
+> **1. Parity.** $\mathcal Px = (x^0, -\mathbf x)$: $(\mathcal Px)^2 = x^2$ and $(\mathcal Px)^0 = x^0$, so by the complete invariants of [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]] $\mathcal Px$ lies in the orbit of $x$. Along a sheet, $\mathcal P$ reverses $\mathbf x$, the coordinate that a boost moves.
 >
 > **2. Time reversal.** $\mathcal Tx = (-x^0, \mathbf x)$ and $-\mathbb 1x = -x$: both keep $x^2$ and flip $x^0$. For $x^2 \ge 0$, $x \ne 0$ this moves $x$ to the sheet or cone of the other sign. For $x^2 = -a^2$ the image has the same $x^2$, and $S_a$ is a single orbit: it is mapped to itself.
 >
-> **3. Every element.** By [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], every $\Lambda \in O(1,3)$ is $CK$ with $K \in SO^+(1,3)$ and $C \in \{\mathbb 1, \mathcal P, \mathcal T, \mathcal P\mathcal T\}$; $K$ keeps each orbit, so $\Lambda$ permutes the orbits as $C$ does. For $C \in \{\mathbb 1, \mathcal P\}$ (orthochronous) no sheet or cone is exchanged: $\operatorname{sgn}x^0$ is invariant on timelike and null vectors.
+> **3. Every element.** By [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-12|Theorem §CB.2.12]], every $\Lambda \in O(1,3)$ is $CK$ with $K \in SO^+(1,3)$ and $C \in \{\mathbb 1, \mathcal P, \mathcal T, \mathcal P\mathcal T\}$; $K$ keeps each orbit, so $\Lambda$ permutes the orbits as $C$ does. For $C \in \{\mathbb 1, \mathcal P\}$ (orthochronous) no sheet or cone is exchanged: $\operatorname{sgn}x^0$ is invariant on timelike and null vectors.
 >
 > **4. The mass shell.** For $m > 0$, $p^2 = m^2$ forces $p^0 \ne 0$, and $\{p^2 = m^2,\ p^0 > 0\} = H^+_m$ is invariant under orthochronous $\Lambda$ by step 3. So $\theta(\Lambda p) = \theta(p)$ there: positive energy is a Lorentz-invariant statement. ⚑ By-product: the invariance holds on the shell only; for $p^2 < 0$ the sign of $p^0$ is frame dependent (step 5) → [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], 1.
 >
-> **5. Spacelike reversal.** Let $x^2 = -a^2 < 0$. Step 5 of the derivation of Theorem §C1a.4.4 gives $\Lambda_1 = B_z(-\eta)R \in SO^+(1,3)$ with $\Lambda_1x = ae_3$. The rotation $R_x(\pi)$ by $\pi$ about the $x$ axis sends $e_3 \mapsto -e_3$. Then $\Lambda = \Lambda_1^{-1}R_x(\pi)\Lambda_1 \in SO^+(1,3)$ and $\Lambda x = \Lambda_1^{-1}R_x(\pi)(ae_3) = \Lambda_1^{-1}(-ae_3) = -\Lambda_1^{-1}(ae_3) = -x$. In particular the sign of $x^0$ flips whenever $x^0 \ne 0$.
+> **5. Spacelike reversal.** Let $x^2 = -a^2 < 0$. Step 5 of the derivation of Theorem §C1a.4.2 gives $\Lambda_1 = B_z(-\eta)R \in SO^+(1,3)$ with $\Lambda_1x = ae_3$. The rotation $R_x(\pi)$ by $\pi$ about the $x$ axis sends $e_3 \mapsto -e_3$. Then $\Lambda = \Lambda_1^{-1}R_x(\pi)\Lambda_1 \in SO^+(1,3)$ and $\Lambda x = \Lambda_1^{-1}R_x(\pi)(ae_3) = \Lambda_1^{-1}(-ae_3) = -\Lambda_1^{-1}(ae_3) = -x$. In particular the sign of $x^0$ flips whenever $x^0 \ne 0$.
 >
 > **What the derivation shows**
 > - The group acts on the set of orbits through its quotient $\mathbb Z_2\times\mathbb Z_2$, with $\mathcal P$ acting trivially and $\mathcal T \equiv \mathcal P\mathcal T$ exchanging past and future.
 > - "Past" and "future" are invariant because the timelike sheets are separate orbits; "earlier" is meaningless for spacelike separation because $S_a$ is one connected orbit containing $x$ and $-x$.
 > - Used next: positive energy ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]); the reversal $\Lambda x = -x$ is the whole proof of microcausality of the free field ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], steps 1–3).
 
-^der-c1a-4-5
+^der-c1a-4-3
 
-*Uses:* [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]]
+*Uses:* [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-12|Theorem §CB.2.12]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]]
 
 ![[ph-qft-c1-4-2.svg]]
 *Orbits of the identity component in the $(x, t)$ plane, one spatial direction shown. The future (blue) and past (grey) sheets of $t^2 - x^2 = m^2$ are separate orbits; $\mathcal P$ maps each to itself, $\mathcal T$ and $\mathcal P\mathcal T$ exchange them (the figure labels them $P$, $T$, i.e. $\mathcal P$, $\mathcal T$). The spacelike hyperbola (orange, dashed) has two branches only in $1+1$ dimensions; in $3+1$ the spacelike hyperboloid is one connected orbit (Caution below). Adapted from the user's PHY 513 notes, Ch. 1 §1.3.*
 
 > [!caution] Caution: The orbit picture depends on the dimension
-> The four components of the group are the same in every dimension. The orbits are not. In $1+1$ dimensions the spacelike hyperbola $x^2 - t^2 = a^2$ has two branches, $x > 0$ and $x < 0$, which are separate $SO^+(1,1)$ orbits exchanged by $\mathcal P$; there is no rotation to carry one into the other, and $-x$ is not in the orbit of $x$. In $3+1$ dimensions (indeed for two or more space dimensions) $S_a$ is one connected orbit, because a rotation carries $(0, \mathbf x)$ to $(0, -\mathbf x)$ (Theorem §C1a.4.5, 3). So the criterion for "the sign of $x^0$ is invariant" is connectedness of the *orbit*, not of the region, and the figure, drawn in $1+1$, misleads on exactly this point. (Each branch still contains both signs of $x^0$, so the sign is undefined for spacelike vectors in every dimension.)
+> The four components of the group are the same in every dimension. The orbits are not. In $1+1$ dimensions the spacelike hyperbola $x^2 - t^2 = a^2$ has two branches, $x > 0$ and $x < 0$, which are separate $SO^+(1,1)$ orbits exchanged by $\mathcal P$; there is no rotation to carry one into the other, and $-x$ is not in the orbit of $x$. In $3+1$ dimensions (indeed for two or more space dimensions) $S_a$ is one connected orbit, because a rotation carries $(0, \mathbf x)$ to $(0, -\mathbf x)$ (Theorem §C1a.4.3, 3). So the criterion for "the sign of $x^0$ is invariant" is connectedness of the *orbit*, not of the region, and the figure, drawn in $1+1$, misleads on exactly this point. (Each branch still contains both signs of $x^0$, so the sign is undefined for spacelike vectors in every dimension.)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.3 (Caution "Where the two pictures fail to match")*
 
@@ -335,7 +243,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 
 > [!remark]- Connections
 > - The template $M^{\mathsf T}GM = G$ gives $O(N)$ for $G = \mathbb 1$, $O(1,3)$ for $G = g$, and the symplectic group for an antisymmetric $G$; the transpose is the change-of-basis rule for bilinear forms — [[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]] (Connections), [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|LADR Thm. 9.7]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]].
-> - The matrix groups of [[§C1a.4 The Lorentz Group#^def-c1a-4-4|Def. §C1a.4.4]] are matrix Lie groups, each with a Lie algebra of generators and its structure constants — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-10|Def. §CB.1.10]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-12|Def. §CB.1.12]].
+> - The matrix groups of [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]] are matrix Lie groups, each with a Lie algebra of generators and its structure constants — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]].
 > - The homomorphism $\Lambda \mapsto (\det\Lambda, \operatorname{sgn}\Lambda^0{}_0)$ plays for $O(1,3)$ the role that $\det$ plays for $O(3)$ and $GL(n, \mathbb R)$, whose two components are its fibres — [[§16 The Classical Groups#^thm-16-2|591 Thm. §16.2]]; the sign of a permutation is the same kind of map onto $\mathbb Z_2$ — [[§21 The Sign Homomorphism and the Alternating Group|493 §21]].
 > - Each future sheet is a homogeneous space, $H^+_m \cong SO^+(1,3)/SO(3)$, by orbit–stabilizer; the same construction with the stabilizer of a null vector gives the massless little group of Wigner's classification ([[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]) — [[Homogeneous Spaces Are Coset Spaces]], [[§30 Orbit–Stabilizer|493 §30]].
 > - $\theta(p^0)$ is invariant on $H^+_m$ for the same reason that "future" is invariant for timelike displacements: both are the statement that the two timelike sheets are separate orbits — [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-1|§C1a.3, Remark: Why the future cannot be boosted into the past]].

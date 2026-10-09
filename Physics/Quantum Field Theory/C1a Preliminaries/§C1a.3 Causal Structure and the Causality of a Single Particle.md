@@ -17,7 +17,7 @@ Can one relativistic particle propagate without leaving its light cone? The caus
 
 ## Causal structure
 
-*Recall* ([[§B1.3 Causal Structure and Proper Time#^def-b1-3-1|REL Def. §B1.3.1]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]]): relative to the origin a point $x$ is timelike ($x^2 > 0$), null ($x^2 = 0$) or spacelike ($x^2 < 0$); every Lorentz transformation preserves the class, and an orthochronous one preserves the sign of $x^0$ on timelike and null vectors, by the same Cauchy–Schwarz estimate on the first row of $\Lambda$ that the user's notes give. For spacelike $x$ the sign of $x^0$ is frame dependent. Same result, same argument: the home stays in Relativity. The orbits of the proper orthochronous group are [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]].
+*Recall* ([[§B1.3 Causal Structure and Proper Time#^def-b1-3-1|REL Def. §B1.3.1]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]]): relative to the origin a point $x$ is timelike ($x^2 > 0$), null ($x^2 = 0$) or spacelike ($x^2 < 0$); every Lorentz transformation preserves the class, and an orthochronous one preserves the sign of $x^0$ on timelike and null vectors, by the same Cauchy–Schwarz estimate on the first row of $\Lambda$ that the user's notes give. For spacelike $x$ the sign of $x^0$ is frame dependent. Same result, same argument: the home stays in Relativity. The orbits of the proper orthochronous group are [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]].
 
 > [!caution] Caution: sgn x⁰, not ε(x⁰)
 > The lecture writes $\varepsilon(x^0)$ for the sign of the time component, $+1$ in the future and $-1$ in the past. These notes write $\operatorname{sgn}x^0$, because $\varepsilon$ already names the Levi-Civita symbol and the infinitesimal of $i\varepsilon$ prescriptions. It is a second Lorentz invariant (under orthochronous transformations), independent of $x^2$, on timelike and null vectors, and is not defined (frame dependent) on spacelike ones.
@@ -26,8 +26,14 @@ Can one relativistic particle propagate without leaving its light cone? The caus
 
 ^cau-c1a-3-1
 
+The remark below uses that $SO^+(1,3)$ is connected: it is the identity component of $O(1,3)$, every element joined to $\mathbb 1$ by a path of boosts times rotations:
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13]]
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^der-cb-2-13]]
+
 > [!remark] Remark: Why the future cannot be boosted into the past
-> A second reading of the invariance of $\operatorname{sgn}x^0$: $SO^+(1,3)$ is connected ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]) and acts continuously, and it preserves $x^2$. Along a path $\Lambda(s)$ from $1$ to $\Lambda$, the point $\Lambda(s)x$ of a timelike $x$ moves continuously inside the timelike set, which has two components, $x^0 > 0$ and $x^0 < 0$; so it cannot change component. A spacelike hyperboloid is connected in $3+1$ dimensions and is a single orbit containing points with both signs of $x^0$, which is why $\operatorname{sgn}x^0$ is undefined there ([[§C1a.4 The Lorentz Group#^cau-c1a-4-4|§C1a.4, Caution: The orbit picture depends on the dimension]]). The same orbit fact gives a $\Lambda \in SO^+(1,3)$ with $\Lambda\xi = -\xi$ for every spacelike $\xi$, the step on which the microcausality of the free field rests ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
+> A second reading of the invariance of $\operatorname{sgn}x^0$: $SO^+(1,3)$ is connected ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]]) and acts continuously, and it preserves $x^2$. Along a path $\Lambda(s)$ from $1$ to $\Lambda$, the point $\Lambda(s)x$ of a timelike $x$ moves continuously inside the timelike set, which has two components, $x^0 > 0$ and $x^0 < 0$; so it cannot change component. A spacelike hyperboloid is connected in $3+1$ dimensions and is a single orbit containing points with both signs of $x^0$, which is why $\operatorname{sgn}x^0$ is undefined there ([[§C1a.4 The Lorentz Group#^cau-c1a-4-4|§C1a.4, Caution: The orbit picture depends on the dimension]]). The same orbit fact gives a $\Lambda \in SO^+(1,3)$ with $\Lambda\xi = -\xi$ for every spacelike $\xi$, the step on which the microcausality of the free field rests ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.1 ("A topological way to see it")*
 

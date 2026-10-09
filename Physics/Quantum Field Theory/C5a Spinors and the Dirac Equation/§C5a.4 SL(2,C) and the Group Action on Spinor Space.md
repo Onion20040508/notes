@@ -19,7 +19,7 @@ Which *group* acts on spinor space, and how do the $\gamma$ matrices behave unde
 
 The Weyl matrices below lie in this group:
 
-![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1]]
+![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2]]
 
 They realize the representations $(\frac12, 0)$ and $(0, \frac12)$ of this definition:
 
@@ -59,7 +59,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 
 > [!theorem] Theorem §C5a.4.1: The Weyl Matrices Lie in SL(2, C)
 > For the Weyl matrices of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]] and every $\omega$:
-> 1. $\det\Lambda_L(\omega) = \det\Lambda_R(\omega) = 1$, so both lie in $SL(2, \mathbb C)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]);
+> 1. $\det\Lambda_L(\omega) = \det\Lambda_R(\omega) = 1$, so both lie in $SL(2, \mathbb C)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]]);
 > 2. $\Lambda_R(\omega) = \bigl(\Lambda_L(\omega)^\dagger\bigr)^{-1}$;
 > 3. $\Lambda_L(\omega)^* = \sigma^2\,\Lambda_R(\omega)\,\sigma^2$;
 > 4. for a rotation ($\boldsymbol\eta = 0$) $\Lambda_L = \Lambda_R \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]); for a pure boost ($\boldsymbol\theta = 0$) $\Lambda_L = e^{-\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ and $\Lambda_R = e^{+\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ are Hermitian and positive, not unitary.
@@ -312,9 +312,9 @@ Theorem §C5a.4.6 reads eigenvalues, which do not depend on the basis:
 
 ![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5]]
 
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-9]]
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12]]
 
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-9]]
+![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-12]]
 
 ## The matrices entry by entry
 
@@ -556,7 +556,7 @@ $$
 > \bigl(e_k^{\mathsf T}S\bigr)\Lambda_{1/2} = e_k^{\mathsf T}S ,
 > $$
 >
-> so the row $e_k^{\mathsf T}S$, nonzero because $S$ is invertible, would be a left eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$. The left eigenvalues of a matrix are its eigenvalues ($\det(\Lambda^{\mathsf T} - \lambda) = \det(\Lambda - \lambda)$), and by step 2 none is $1$. So no component is invariant, in any basis. (Equivalently: eigenvalues do not depend on the basis, [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-9|Theorem §CB.0.9]], and a unit row $k$ makes $1$ an eigenvalue of $\Lambda'^{\mathsf T}$.)
+> so the row $e_k^{\mathsf T}S$, nonzero because $S$ is invertible, would be a left eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$. The left eigenvalues of a matrix are its eigenvalues ($\det(\Lambda^{\mathsf T} - \lambda) = \det(\Lambda - \lambda)$), and by step 2 none is $1$. So no component is invariant, in any basis. (Equivalently: eigenvalues do not depend on the basis, [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12|Theorem §CB.0.12]], and a unit row $k$ makes $1$ an eigenvalue of $\Lambda'^{\mathsf T}$.)
 >
 > **5. No fixed spinor.** $\Lambda'\psi' = \psi'$ with $\psi' \neq 0$ would make $S^{-1}\psi' \neq 0$ an eigenvector of $\Lambda_{1/2}$ with eigenvalue $1$; excluded by step 2.
 >
@@ -569,7 +569,7 @@ $$
 
 ^der-c5a-4-6
 
-*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-9|Theorem §CB.0.9]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|Theorem §CB.15.3]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-5|Theorem §CB.15.5]]
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12|Theorem §CB.0.12]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|Theorem §CB.15.3]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-5|Theorem §CB.15.5]]
 
 ## Three transformations that act on spinor indices
 

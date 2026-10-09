@@ -245,7 +245,7 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > [!example] Example §C1b.8.2: The Electromagnetic Field
 > $\mathcal L = -\frac14F_{\rho\sigma}F^{\rho\sigma}$ with the four fields $A_\lambda$ (source-free; [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]]).
 > 1. **Translations.** Every component moves the same way, $\Delta_\nu A_\lambda = \partial_\nu A_\lambda$; $\mathcal L$ has no explicit $x$, so $\mathcal J^\mu{}_\nu = \delta^\mu{}_\nu\mathcal L$ ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-5|Theorem §C1b.7.5]]).
-> 2. **The derivative.** $\partial\mathcal L/\partial(\partial_\mu A_\lambda) = -F^{\mu\lambda}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]]).
+> 2. **The derivative.** $\partial\mathcal L/\partial(\partial_\mu A_\lambda) = -F^{\mu\lambda}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]]).
 > 3. **Canonical tensor,** summed over the field label $\lambda$:
 >
 > $$
@@ -277,7 +277,7 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 *Procedure:* [[P3 Noether's Procedure#^p3-4|P3, steps 1–5]]
 
 > [!remark] Remark: Index moves for the electromagnetic tensor
-> The moves of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]] are general; $F$ is only the example. Differentiating a contraction through the metric, where both factors respond and the $\frac14$ cancels, is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]]. Then:
+> The moves of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]] are general; $F$ is only the example. Differentiating a contraction through the metric, where both factors respond and the $\frac14$ cancels, is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]]. Then:
 > 1. *Equate a scalar with a tensor by inserting δ*: $\partial_\nu\mathcal L = \partial_\mu(\delta^\mu{}_\nu\mathcal L)$ changes no value and supplies the index structure; it is legitimate because the parameter multiplying both sides is constant.
 > 2. *Raise a label with the metric, not by hand*: $T^{\mu\nu} = g^{\nu\alpha}T^\mu{}_\alpha$ turns $\partial_\alpha A_\lambda$ into $\partial^\nu A_\lambda$ and $\delta^\mu{}_\alpha$ into $g^{\mu\nu}$, and nothing else.
 > 3. *Prove symmetry by relabelling dummies*: a term is symmetric if swapping $\mu\nu$ and renaming dummies returns it, or a pair of terms if the swap exchanges them; a leftover such as $(\partial_\beta F^{\mu\beta})A^\nu$ must vanish on shell, and does by Maxwell's equations.

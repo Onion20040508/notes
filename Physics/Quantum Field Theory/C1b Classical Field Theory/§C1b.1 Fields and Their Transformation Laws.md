@@ -11,9 +11,27 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 2 §2.3 (fields, the Klein–Gordon equation), Ch. 3 §3.1 and §3.5 (general field law), Ch. 7 (how fields transform) · PHY 513 Lecture 2 (Larsen), Part B; Lecture 3, Part A · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.1, §3.1 · Yu Zhao-Huan, 量子场论讲义, §1.6.2.*
 
-What is a relativistic field, and how does it transform? Relativity already says how a scalar field's components behave under a change of frame ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]) and which wave equation is the simplest invariant one ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-1|REL Theorem §B4.1.1]]); the Lorentz group and its generators are [[§C1a.4 The Lorentz Group|§C1a.4]]–[[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]]. This section adds the transformation law as an action on whole field configurations (a representation, with its infinitesimal form, for a scalar and for a field with components) and the covariance of the Klein–Gordon equation. The Lagrangian is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]; the principles that restrict it, locality and relativistic invariance, together with dimensional analysis, are [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]].
+What is a relativistic field, and how does it transform? Relativity already says how a scalar field's components behave under a change of frame ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]) and which wave equation is the simplest invariant one ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-1|REL Theorem §B4.1.1]]); the Lorentz group and its generators are [[§C1a.4 The Lorentz Group|§C1a.4]]–[[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]]. This section adds the transformation law as an action on whole field configurations (a representation, with its infinitesimal form, for a scalar and for a field with components) and the covariance of the Klein–Gordon equation. The Lagrangian is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]; the principles that restrict it, locality and relativistic invariance, together with dimensional analysis, are [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]]. Representations, the general fact behind Theorem §C1b.1.1 and the integration of the spinor representations are mathematics ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings|§CB.2]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.6]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.16]]), shown in the block below.
 
 *Conventions* ([[Larsen PHY 513]]): natural units $\hbar = c = 1$; $g = \operatorname{diag}(+,-,-,-)$; $\partial_\mu = \partial/\partial x^\mu = (\partial_t, \nabla)$, $\partial^2 = \partial_\mu\partial^\mu = \partial_t^2 - \nabla^2$; Lorentz transformations act on points as $x \mapsto \Lambda x$, Poincaré transformations as $g\cdot x = \Lambda x + a$ ([[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-4|REL Def. §B1.2.4]]), and $\Lambda = 1 + \omega$ near the identity with $\omega_{\mu\nu} = -\omega_{\nu\mu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]]). Relativity B keeps $c$ explicit; here it is set to one.
+
+## The mathematics used here
+
+The transformation law of a general field (Definition §C1b.1.3) asks for a representation of the Lorentz group on the component index, in this sense:
+
+![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-4]]
+
+Theorem §C1b.1.1 is the case of this general fact for the Poincaré group acting on spacetime, with $D$ on the components; it is proved there directly, in the course's notation:
+
+![[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-24]]
+
+![[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^pf-cb-6-24]]
+
+Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is one only up to sign, by the integration of the representations $(j_+, j_-)$:
+
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-7]]
+
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-7]]
 
 ## Fields
 
@@ -42,7 +60,7 @@ What is a relativistic field, and how does it transform? Relativity already says
 The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]); the second, the same law solved for the new function, is the one quantum field theory uses, because it says what happens to the function as a whole: it is a map on configurations, $\phi \mapsto \phi'$.
 
 > [!caution] Caution: What "the scalar does not change" does not mean
-> The law is not $\phi(\Lambda x) = \phi(x)$. That equation involves one function and says that $\phi$ takes the same value at $x$ and at $\Lambda x$ for every $\Lambda$, i.e. that $\phi$ is a Lorentz-invariant *function*; a generic configuration is not. The law involves two functions, $\phi$ and $\phi'$, describing one physical field: what is unchanged is the value at a given physical point, not the functional form. (Invariant functions are rare: for the proper orthochronous group they depend only on $x^2$ and, inside and on the light cone, on the sign of $x^0$, as for $\theta(x^0)\theta(x^2)$; the user's notes say "only of functions of $x^2$", which omits that sign. The orbits behind this are [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]]; the invariant distributions of this kind are [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]].)
+> The law is not $\phi(\Lambda x) = \phi(x)$. That equation involves one function and says that $\phi$ takes the same value at $x$ and at $\Lambda x$ for every $\Lambda$, i.e. that $\phi$ is a Lorentz-invariant *function*; a generic configuration is not. The law involves two functions, $\phi$ and $\phi'$, describing one physical field: what is unchanged is the value at a given physical point, not the functional form. (Invariant functions are rare: for the proper orthochronous group they depend only on $x^2$ and, inside and on the light cone, on the sign of $x^0$, as for $\theta(x^0)\theta(x^2)$; the user's notes say "only of functions of $x^2$", which omits that sign. The orbits behind this are [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]]; the invariant distributions of this kind are [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]].)
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Caution "What 'φ does not change' does not mean")*
 
@@ -60,10 +78,6 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 
 ## The general transformation law
 
-The transformation law below asks for a representation of the Lorentz group on the component index, in this sense:
-
-![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-4]]
-
 > [!definition] Definition §C1b.1.3: Transformation Law of a General Field
 > A field with components $\phi_a$ transforms under $x' = \Lambda x + a$ as
 >
@@ -76,12 +90,6 @@ The transformation law below asks for a representation of the Lorentz group on t
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Definition "Transformation law of a general field", eq. (generalfieldlaw)), Ch. 7, eq. (fieldtransforms) · PS §3.1, eq. (3.8)*
 
 ^def-c1b-1-3
-
-Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is one only up to sign, by the integration of the representations $(j_+, j_-)$:
-
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-7]]
-
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-7]]
 
 > [!theorem] Theorem §C1b.1.1: The Field Laws Represent the Poincaré Group
 > For $g = (\Lambda, a)$ let $T(g)$ send a configuration to the transformed one, $(T(g)\phi)_a(x) = D(\Lambda)_a{}^b\,\phi_b(g^{-1}x)$, $g^{-1}x = \Lambda^{-1}(x - a)$. Then $T(g)$ is linear in $\phi$, $T(1, 0) = 1$, and
@@ -146,7 +154,7 @@ Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is 
 >
 > **2. The shifted point.** $(g^{-1}x)^\mu = (\Lambda^{-1})^\mu{}_\nu(x^\nu - a^\nu) = x^\mu - a^\mu - \omega^\mu{}_\nu x^\nu + \omega^\mu{}_\nu a^\nu + O(\omega^2)$. The term $\omega^\mu{}_\nu a^\nu$ is a product of two first-order quantities and is dropped (second order). So $g^{-1}x = x + h$ with $h^\mu = -a^\mu - \omega^\mu{}_\nu x^\nu$.
 >
-> **3. Taylor's theorem.** For a $C^2$ field, $\phi_b(x + h) = \phi_b(x) + h^\mu\partial_\mu\phi_b(x) + O(h^2)$ (the expansion in index form: [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]]). With step 2,
+> **3. Taylor's theorem.** For a $C^2$ field, $\phi_b(x + h) = \phi_b(x) + h^\mu\partial_\mu\phi_b(x) + O(h^2)$ (the expansion in index form: [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]]). With step 2,
 >
 > $$
 > \phi_b(g^{-1}x) = \phi_b(x) - a^\mu\partial_\mu\phi_b(x) - \omega^\mu{}_\nu\,x^\nu\,\partial_\mu\phi_b(x) + O(2) .
@@ -173,7 +181,7 @@ Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is 
 
 ^der-c1b-1-2
 
-*Uses:* [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]]
+*Uses:* [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]]
 
 > [!example] Example §C1b.1.1: The Four-Vector Field
 > A four-vector field $A^\alpha$ transforms with $D = \Lambda$: $A'^\alpha(x) = \Lambda^\alpha{}_\beta A^\beta(\Lambda^{-1}x)$. Its spin generators are the generators of the vector representation,

@@ -8,13 +8,13 @@ tags: [chapter, quantum-field-theory]
 # CB Lie Groups, Lie Algebras and Representations
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (79), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (59), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (83), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (6), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (69), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (172), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (10)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (67), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (59), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (84), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (3), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (10)
 
 ## Sections
-- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2); §C1a.5 statements pending (B3); 513 notes Ch. 8 §8.1; LADR
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras]] — 591 §§11, 25, 49–50; Hall Ch. 2–3; 513 notes Ch. 7 §7.2
-- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings]] — Hall Ch. 3–5; 590 §§29, 31; 513 notes Ch. 7 §7.2
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras]] — 591 §§11, 25, 49–50; Hall Ch. 2–3; 513 notes Ch. 1 §1.3 (matrix groups, B3), Ch. 7 §7.2
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings]] — Hall Ch. 3–5; 590 §§29, 31; 513 notes Ch. 1 §1.3, Ch. 11 §11.1 (components, B3), Ch. 7 §7.2
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification]] — 513 notes Ch. 7 §7.2; Woit §5.5; Etingof
 - [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations]] — 513 notes Ch. 1 §1.6, Ch. 7 §§7.3–7.5; PHY 513 Lecture 7; Problem Sets 4–5
 - [[§CB.5 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra]] — 513 notes Ch. 7 §7.4; Woit §§21.2, 40.2; Etingof §9.4, Ex. 11.4
@@ -37,27 +37,31 @@ tags: [chapter, quantum-field-theory]
 ## Theorems
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-3|§CB.0.3]] Linear Maps Act by Matrix Multiplication
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|§CB.0.5]] Components Change with U, Matrices with U and U⁻¹
-- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-8|§CB.0.8]] The Slot Rule
-- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-9|§CB.0.9]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-4|§CB.1.4]] Convergence and Algebraic Properties of the Exponential
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|§CB.1.5]] Determinant of an Exponential
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-6|§CB.1.6]] The Logarithm Near the Identity
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-7|§CB.1.7]] Lie Product Formula and the Commutator as a Second-Order Term
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-9|§CB.1.9]] One-Parameter Subgroups Are Exponentials
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-11|§CB.1.11]] The Lie Algebra Is a Real Lie Algebra
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^lem-cb-1-13|§CB.1.13]] The Limit Lemma
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-14|§CB.1.14]] Closed-Subgroup Theorem
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|§CB.1.15]] The Lie Algebra Is the Tangent Space at the Identity
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|§CB.1.16]] The Lie Algebras of the Classical Groups
-- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|§CB.1.17]] SO(3) and SU(2) Have the Same Lie Algebra
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-10|§CB.0.10]] The Slot Rule
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-11|§CB.0.11]] The Transformation Law Follows from Multilinearity
+- [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-12|§CB.0.12]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|§CB.1.5]] Convergence and Algebraic Properties of the Exponential
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-6|§CB.1.6]] Determinant of an Exponential
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-7|§CB.1.7]] The Logarithm Near the Identity
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|§CB.1.8]] Lie Product Formula and the Commutator as a Second-Order Term
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-10|§CB.1.10]] One-Parameter Subgroups Are Exponentials
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|§CB.1.12]] The Lie Algebra Is a Real Lie Algebra
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^lem-cb-1-14|§CB.1.14]] The Limit Lemma
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|§CB.1.15]] Closed-Subgroup Theorem
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|§CB.1.16]] The Lie Algebra Is the Tangent Space at the Identity
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|§CB.1.17]] The Lie Algebras of the Classical Groups
+- [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-18|§CB.1.18]] SO(3) and SU(2) Have the Same Lie Algebra
 - [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-3|§CB.2.3]] The Differential of a Homomorphism
 - [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-8|§CB.2.8]] A Group Representation Gives an Algebra Representation
 - [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-10|§CB.2.10]] The Identity Component Is Generated by Exponentials
-- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-11|§CB.2.11]] A Homomorphism of a Connected Group Is Determined by Its Differential
-- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-14|§CB.2.14]] The Differential of Ad Is ad
-- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-16|§CB.2.16]] Discrete Normal Subgroups of Connected Groups Are Central
-- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-17|§CB.2.17]] Homomorphisms with Invertible Differential Are Coverings
-- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-18|§CB.2.18]] The Lie Correspondence for Simply Connected Groups
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-11|§CB.2.11]] The Discrete Element of the Rotation Group
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-12|§CB.2.12]] The Four Components Are the Cosets of SO⁺(1,3)
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|§CB.2.13]] SO⁺(1,3) Is the Component of the Identity
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-14|§CB.2.14]] A Homomorphism of a Connected Group Is Determined by Its Differential
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-17|§CB.2.17]] The Differential of Ad Is ad
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-19|§CB.2.19]] Discrete Normal Subgroups of Connected Groups Are Central
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-20|§CB.2.20]] Homomorphisms with Invertible Differential Are Coverings
+- [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-21|§CB.2.21]] The Lie Correspondence for Simply Connected Groups
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-4|§CB.3.4]] The Complexification of a Real Lie Algebra
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-5|§CB.3.5]] Complexification Inside the Matrices
 - [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|§CB.3.6]] The Physicists' Generators Rescale the Basis by i; They Do Not Complexify
