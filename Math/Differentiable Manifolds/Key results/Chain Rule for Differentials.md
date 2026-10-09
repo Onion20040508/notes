@@ -30,6 +30,7 @@ tags: [differentiable-manifolds, hub]
 - [[§41 The Unit Quaternions and SU(2)#^prop-41-5|Proposition §41.5: S³ Is SU(2)]]
 - [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-3|Lemma §42.3: Translating the Differential]]
 - [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|Theorem §42.4: The Double Cover SU(2) → SO(3)]]
+- [[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|Theorem §50.4: The Lie Algebra Is the Tangent Space at the Identity]]
 
 ## Connections
 - **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), differentials computed by curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]) and the [[Local Diffeomorphism Criterion]].

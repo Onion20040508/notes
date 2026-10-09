@@ -47,7 +47,7 @@ $$
 > 1. the matrix of the differential (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), which is a one-line proof because of it;
 > 2. regular values in one chart (Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]]): the rank of $F_{*p}$ is the rank of $\tilde F'(\varphi(p))$;
 > 3. the proof of the local normal form (Theorem [[§34 Submersions#^thm-34-4|§34.4]]), where the matrix $\big[\partial F^j/\partial x^i(p)\big]$ is built from the components $F^j$ but is the Jacobian of $\tilde F$;
-> 4. [[§30 The Differential in Coordinates#^rem-30-5|Assignment 3, Problem 4]], whose “matching coefficients” step computes $F_{*p}(\partial/\partial u_k|_p)[x^j]$ as an ordinary partial derivative of $F_\varphi$.
+> 4. [[§30 The Differential in Coordinates#^rem-30-6|Assignment 3, Problem 4]], whose “matching coefficients” step computes $F_{*p}(\partial/\partial u_k|_p)[x^j]$ as an ordinary partial derivative of $F_\varphi$.
 >
 > Both sides depend on the charts: changing $\varphi$ or $\psi$ changes the matrix (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), while $F_{*p}$ itself does not.
 
@@ -214,6 +214,33 @@ $$
 
 ^rem-30-3
 
+> [!remark] Remark: Translations Identify the Tangent Spaces of a Vector Space
+> *Lecture 17.* Nothing above needs $\mathbb{R}^N$: the ambient space can be any finite-dimensional vector space $V$, because the velocity
+>
+> $$
+> \gamma'(0) = \lim_{h \to 0} \frac{1}{h}\big(\gamma(h) - \gamma(0)\big)
+> $$
+>
+> makes sense in any vector space with a topology in which to take the limit (“you could take it in a Banach space … if you're doing functional analysis”). Moreover, all the tangent spaces of $V$ are identified with one another, and with $V$, by *translations*: for $p \in V$ (“I want to call it $p$ because I want to think of it as a point”), the translation
+>
+> $$
+> \tau_p : V \to V, \qquad \tau_p(v) = v + p ,
+> $$
+>
+> is the unique translation mapping $0$ to $p$, and its [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] $(\tau_p)_{\ast 0} : T_0V \to T_pV$ is the identification. *(Filled in: it is the identification of [[§30 The Differential in Coordinates#^cor-30-6|Corollary §30.6]].)* $\tau_p$ is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]], with inverse $\tau_{-p}$, and
+>
+> $$
+> (\tau_p)_{*0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g],
+> $$
+>
+> so $(\tau_p)_{*0}(D_v|_0) = D_v|_p$: the composite $V \cong T_0V \to T_pV$ is $v \mapsto D_v|_p$. “This is a canonical way to identify all of these tangent vectors. … That's what we did already”: a [[§25 The Geometric Tangent Space#^def-25-1|geometric tangent vector]] to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
+>
+> **Transcription note (Lecture 17).** Page 45 of the handwritten notes writes the identification as “$T_pM \cong T_0V \cong V$”; it is $T_pV \cong T_0V \cong V$.
+
+^rem-30-4
+
+Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-1|Lie group]] $(V, +)$ ([[§50 Lie Groups and Left-Invariant Vector Fields#^ex-50-2|Example §50.2]]).
+
 > [!definition] Definition §30.1: Rank of a Smooth Map
 > Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation.
 >
@@ -248,7 +275,7 @@ $$
 > [!remark] Remark: The Map Is Intrinsic — the Matrix Is Not
 > Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§34 Submersions#^def-34-1|§34.1]]; maps with bijective, surjective and injective differentials are the subject of [[§33 Local Diffeomorphisms|§33]].
 
-^rem-30-4
+^rem-30-5
 
 > [!theorem] Proposition §30.7: Regular Values Inside One Chart
 > Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$, and $c \in N$. Suppose there are smooth charts $(U, \varphi)$ of $M$ and $(V, \psi)$ of $N$ with
@@ -293,9 +320,9 @@ $$
 >
 > Assignment 3, Problem 4 is exactly this. For the moment map $F : \mathbb{CP}^n \to \mathbb{R}^n$ and $c$ in the interior of the simplex, every point of $F^{-1}(c)$ has all homogeneous coordinates nonzero, so $F^{-1}(c) \subseteq U_0$ (step 1). The target chart is the identity of $\mathbb{R}^n$, and $\varphi_0(U_0) = \mathbb{C}^n \cong \mathbb{R}^{2n}$, so $\tilde F$ is an explicit rational map $\mathbb{R}^{2n} \to \mathbb{R}^n$ (step 2). Its Jacobian has rank $n$ on the level set (step 3). So the fibre is an $n$-dimensional manifold (step 4) — in this case a regular level set of $\mathbb{R}^{2n}$ itself, exactly the situation of [[§7 The Regular Value Theorem|§7]]. When a level set does not fit in one chart, the same argument applies around each of its points separately, as the next corollary shows.
 
-^rem-30-5
+^rem-30-6
 
-Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-5|Remark: The Strategy]]; and the base of the Hopf fibration in [[§40 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§40 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 
 > [!theorem] Corollary §30.8: Regular Level Sets Are Topological Manifolds
 > Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$, and $c \in N$ a regular value of $F$. Then $F^{-1}(c)$, with the subspace topology, is a topological manifold of dimension $m - n$ (or empty).

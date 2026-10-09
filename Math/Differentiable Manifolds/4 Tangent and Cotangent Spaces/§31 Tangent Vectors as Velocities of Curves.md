@@ -122,6 +122,21 @@ This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve wit
 
 ^rem-31-1
 
+> [!remark] Remark: From Lecture 17 On: One Tangent Space
+> *Lecture 17, “something that I didn't say explicitly, and I want to say it explicitly.”* For $M \subseteq \mathbb{R}^N$ the course built two tangent spaces at $p$: the [[§25 The Geometric Tangent Space#^def-25-1|geometric one]], $T^{\mathrm{geo}}_pM \subseteq \mathbb{R}^N$, a vector subspace consisting of the velocities $\gamma'(0)$ of curves $\gamma : (-\varepsilon, \varepsilon) \to M$ with $\gamma(0) = p$; and the [[§28 Derivations and the Abstract Tangent Space#^def-28-2|abstract one]], $T_pM$, the [[§28 Derivations and the Abstract Tangent Space#^def-28-1|derivations]] of [[§27 Germs#^def-27-2|germs]] at $p$. The homework (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], Assignment 3, Problem 2) showed that every derivation is realized by a curve, $D = D_\gamma$, and $D_\gamma = D_{\gamma'(0)}$ (Remark [[§31 Tangent Vectors as Velocities of Curves#^rem-31-1|The Two Faces Reconciled]]). So the two are identified,
+>
+> $$
+> T^{\mathrm{geo}}_pM \;\cong\; T_pM, \qquad \gamma'(0) \longleftrightarrow D_\gamma ,
+> $$
+>
+> and *from now on the course always makes this identification, “without further notice”*: “if you're working with submanifolds of $\mathbb{R}^n$, you can use a geometric tangent space in your computations, and we know that that agrees with the abstract notion.” For a regular level set the precise statement is Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]. Earlier chapters keep the notations $T^{\mathrm{geo}}_pM$ and $T_pM$ apart, and are left as they are.
+
+^rem-31-2
+
+> [!remark]- Connections
+> - The two tangent spaces side by side: [[§39 Geometric and Abstract Manifolds#Tangent Vectors|§39, Tangent Vectors]].
+> - The identification for a regular level set: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]].
+
 ## Tangent Spaces of Products
 
 *Lecture 11. “There is a natural isomorphism” between the tangent space of a product and the direct sum of the tangent spaces of the factors — “natural meaning coordinate-free.” Uribe gave three ways to see it: by the inclusions of the factors, by curves, and in coordinates. He added that this part of the course is, in his experience, “the most abstract, somehow the hardest part”, and that while physicists tend to favour coordinates and pure mathematicians abstract settings, “you need both.”*

@@ -209,13 +209,15 @@
 \fbox{\parbox{0.85\textwidth}{
 \textbf{Instructor:} A.\ Uribe. \quad \textbf{Text:} Lee, \emph{Introduction to Smooth Manifolds} (2nd ed.). \\
 \textbf{Office hours:} Thu 1:00--3:00 PM, 4062 East Hall; Fri 1:00--2:00 PM on Zoom (subject to occasional changes); also $\sim$20 min after each class. \\
-\textbf{Midterm:} Wednesday, October 21, 6:00--8:00 PM (written as a 90-minute exam; room TBA). \\
+\textbf{Midterm:} Wednesday, October 21, 6:00--8:00 PM (written as a 90-minute exam; room TBA). Covers through the end of vector fields (Lecture~18 at the latest). Format: definitions, true/false, short proofs (identical or close to homework). Exam booklets provided. \\
+\textbf{Review session:} Friday, October 16: previous exams (sent by email) and your questions. \\
 \textbf{Final:} Thursday, December 17, 10:30 AM--12:30 PM. \\
 \textbf{Homework:} due Sunday midnight, uploaded to Canvas as a legible PDF (typed or handwritten). \\
 % Week of Sep 7 only: in-person OH moved to Wednesday (ending 4 PM); Friday OH on Zoom.
 \textbf{Prerequisites (for real):} multivariable calculus, point-set topology, linear algebra on abstract vector spaces.
 }}
 \end{center}
+
 
 \tableofcontents
 \newpage
@@ -6403,6 +6405,26 @@ For linear $L$, $L_{*a}(D_v|_a)[g] = D_v|_a[g \circ L] = \frac{d}{dt}\big|_0\, g
 This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential \emph{is} the Jacobian, and between vector spaces it is the map of Theorem~\ref{thm:vs-differential-curves}. It also closes a loop opened in \S\ref{sub:derivations-motivation}, where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
 \end{rembox}
 
+\begin{rembox}[Translations Identify the Tangent Spaces of a Vector Space]\label{rem:translations-identify}
+\textit{Lecture~17.} Nothing above needs $\mathbb{R}^N$: the ambient space can be any finite-dimensional vector space $V$, because the velocity
+\[
+\gamma'(0) = \lim_{h \to 0} \frac{1}{h}\big(\gamma(h) - \gamma(0)\big)
+\]
+makes sense in any vector space with a topology in which to take the limit (``you could take it in a Banach space \ldots\ if you're doing functional analysis''). Moreover, all the tangent spaces of $V$ are identified with one another, and with $V$, by \emph{translations}: for $p \in V$ (``I want to call it $p$ because I want to think of it as a point''), the translation
+\[
+\tau_p : V \to V, \qquad \tau_p(v) = v + p ,
+\]
+is the unique translation mapping $0$ to $p$, and its pushforward $(\tau_p)_{*0} : T_0V \to T_pV$ is the identification. \textit{(Filled in: it is the identification of Corollary~\ref{cor:tangent-vs}.)} $\tau_p$ is a diffeomorphism, with inverse $\tau_{-p}$, and
+\[
+(\tau_p)_{*0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g],
+\]
+so $(\tau_p)_{*0}(D_v|_0) = D_v|_p$: the composite $V \cong T_0V \to T_pV$ is $v \mapsto D_v|_p$. ``This is a canonical way to identify all of these tangent vectors. \ldots\ That's what we did already'': a geometric tangent vector to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
+
+\textbf{Transcription note (Lecture 17).} Page~45 of the handwritten notes writes the identification as ``$T_pM \cong T_0V \cong V$''; it is $T_pV \cong T_0V \cong V$.
+\end{rembox}
+
+Uribe added: ``this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.'' For fixed $v$, the field $p \mapsto D_v|_p$ is the left-invariant field, with value $D_v|_0$ at the identity, of the Lie group $(V, +)$ (Example~\ref{ex:vs-lie-algebra}).
+
 \begin{defbox}[Rank of a Smooth Map]\deflabel{def:manifold-rank}
 Let $F : M \to N$ be a smooth map. The \textbf{rank} of $F$ at $p$ is the rank of the linear map $F_{*p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem~\ref{lem:differential-matrix} it is the rank of the Jacobian of any coordinate representation.
 \leeref{Ch.~4 and Ch.~5, p.~105}
@@ -6491,6 +6513,9 @@ Let $F : M \to N$ be smooth, with $M$ connected. If $F_{*p} = 0$ for every $p \i
 \end{proof}
 
 The hypothesis that $M$ is connected cannot be dropped: on a disconnected $M$, a map that takes different constant values on different components has zero differential everywhere. Locally, the proposition is the familiar fact from calculus that a function with zero derivative on an interval is constant.
+
+% ============================================================================
+% SECTION: TANGENT VECTORS AS VELOCITIES OF CURVES
 
 % ============================================================================
 % SECTION: TANGENT VECTORS AS VELOCITIES OF CURVES
@@ -6605,6 +6630,18 @@ The same construction as a diagram: the curve is built downstairs as $c$ and lif
 
 \begin{rembox}[The Two Faces Reconciled]\label{rem:two-faces-reconciled}
 Theorem~\ref{thm:every-vector-velocity} says the map $\gamma \mapsto D_\gamma$, from smooth curves through $p$ to $T_pM$, is onto. By Proposition~\ref{prop:velocity-coords}, two curves have the same velocity exactly when their coordinate curves have the same velocity in one chart, and then in every chart. So $T_pM$ may equally be described as \emph{curves through $p$, modulo having the same velocity in coordinates} --- the intrinsic ``velocities of curves'' definition of the tangent space, now a theorem, on every manifold, with no ambient space. For a regular level set, the abstract velocity $D_\gamma$ is the derivation $D_{\gamma'(0)}$ attached to the geometric velocity $\gamma'(0) \in T^{\geo}_pM$ (Proposition~\ref{prop:Dv-properties}(2)). So the identification of Theorem~\ref{thm:ambient-abstract} is the statement that the two notions of velocity agree.
+\end{rembox}
+
+% ============================================================================
+% Lecture 17 (Fri Oct 9, 2026): remark on tangent spaces
+% ============================================================================
+
+\begin{rembox}[From Lecture~17 On: One Tangent Space]\label{rem:identify-tangent-spaces}
+\textit{Lecture~17, ``something that I didn't say explicitly, and I want to say it explicitly.''} For $M \subseteq \mathbb{R}^N$ the course built two tangent spaces at $p$: the geometric one, $T^{\geo}_pM \subseteq \mathbb{R}^N$, a vector subspace consisting of the velocities $\gamma'(0)$ of curves $\gamma : (-\varepsilon, \varepsilon) \to M$ with $\gamma(0) = p$; and the abstract one, $T_pM$, the derivations of germs at $p$. The homework (Theorem~\ref{thm:every-vector-velocity}, Assignment~3, Problem~2) showed that every derivation is realized by a curve, $D = D_\gamma$, and $D_\gamma = D_{\gamma'(0)}$ (Remark~\ref{rem:two-faces-reconciled}). So the two are identified,
+\[
+T^{\geo}_pM \;\cong\; T_pM, \qquad \gamma'(0) \longleftrightarrow D_\gamma ,
+\]
+and \emph{from now on the course always makes this identification, ``without further notice''}: ``if you're working with submanifolds of $\mathbb{R}^n$, you can use a geometric tangent space in your computations, and we know that that agrees with the abstract notion.'' For a regular level set the precise statement is Theorem~\ref{thm:ambient-abstract}. Earlier chapters keep the notations $T^{\geo}_pM$ and $T_pM$ apart, and are left as they are.
 \end{rembox}
 
 \subsection{Tangent Spaces of Products}\label{sub:tangent-products}
@@ -8657,7 +8694,7 @@ Geometrically, a manifold is a subset of a Euclidean space with one of three equ
 --- or a graph over $n$ of the coordinates. Abstractly, a manifold is a topological manifold with a choice of charts, and the subsets that look like the geometric ones are the submanifolds:
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:smooth-structure} (Smooth Manifold Structure).} A \textbf{differentiable (smooth) structure} on a topological manifold $M$ is a maximal atlas $\mathcal{A}$ on $M$. A \textbf{smooth manifold} is a pair $\mathcal{M} = (M, \mathcal{A})$. By Theorem~\ref{thm:maximal-atlas}, specifying any atlas specifies a smooth structure, and two atlases specify the same structure exactly when they are compatible.
+\sloppy \textbf{Recall: Definition~\ref{def:smooth-structure} (Smooth Manifold Structure).} A \textbf{differentiable (smooth) structure} on a topological manifold $M$ is a maximal atlas $\mathcal{A}$ on $M$. A \textbf{smooth manifold} is a pair $\mathcal{M} = (M, \mathcal{A})$. By Theorem~\ref{thm:maximal-atlas}, specifying any atlas specifies a smooth structure, and two atlases specify the same structure exactly when they are compatible.
 \end{quote}
 
 \begin{quote}
@@ -8947,6 +8984,9 @@ The image of an embedding is a submanifold (Theorem~\ref{thm:embedding-image}), 
 \subsection{What Each Picture Gives}
 
 The geometric picture gives computations: a tangent space is a kernel, a differential is a Jacobian, a normal vector is a gradient, and all of it can be drawn. The abstract picture gives intrinsic definitions: the tangent space of $\mathbb{CP}^n$ or of $G/H$ makes sense without choosing where to put them, and every notion is independent of an embedding --- which is why the bundles, fields and forms of the next chapters are built on the abstract side. The bridges in the table are what let the course compute in the geometric picture and conclude in the abstract one.
+
+% ============================================================================
+% SECTION: EXAMPLE: PROJECTIVE SPACES AND THE HOPF FIBRATION
 
 % ============================================================================
 % SECTION: EXAMPLE: PROJECTIVE SPACES AND THE HOPF FIBRATION
@@ -11287,6 +11327,22 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 
 \textbf{Transcription note.} Page~43 of the handwritten notes asks ``is $\mathbf{X}_p$ $C^\infty$?''; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
 
+\begin{lembox}[A Smoothness Criterion for Vector Fields]\thmlabel{lem:vf-smooth-criterion}
+Let $\mathbf{X}$ be a section of $TM$, not assumed smooth, and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
+\leeref{Proposition 8.14}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in, for use in Lecture~17's theorem on Lie algebras. The argument is step~4 of the proof of Proposition~\ref{prop:derivations-are-fields}.)} If $\mathbf{X}$ is smooth, $\mathbf{X}f$ is smooth by Lemma~\ref{lem:vf-derivation}. Conversely, let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a bump function $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the global function $\tilde x^j = \chi x^j$ of Corollary~\ref{cor:germ-extension}. It represents the germ of $x^j$ at every $q \in V$, so the coefficients of $\mathbf{X}$ (Proposition~\ref{prop:vf-coords}) are
+\[
+\mathbf{X}^j(q) = \mathbf{X}_q[x^j] = (\mathbf{X}\tilde x^j)(q), \qquad q \in V,
+\]
+smooth by hypothesis. So $\mathbf{X}$ is smooth on $V$, by Proposition~\ref{prop:vf-coords}; $p$ was arbitrary.
+\end{proof}
+
+
+% ============================================================================
+% SECTION: THE LIE BRACKET
 
 % ============================================================================
 % SECTION: THE LIE BRACKET
@@ -11407,6 +11463,213 @@ $\Skew(3,\mathbb{R})$ is closed under the commutator ($[A,B]^{\mathsf T} = [B^{\
 The classical groups through the course: defined in Section~\ref{sec:topgroups}, with the examples of Section~\ref{sec:ex-classical}; topological manifolds as level sets in Theorem~\ref{thm:classical-manifolds}; $\SO(2)$ and $\SO(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in Examples~\ref{ex:so2-orbits} and~\ref{ex:so3-orbits}, and $\SO(3)$ on $S^2$ in Examples~\ref{ex:so3-isotropy} and~\ref{ex:s2-homogeneous}; $\Ogp(n)$ acting on the Grassmannians in Corollary~\ref{cor:grassmannian}; smooth manifolds in Examples~\ref{ex:On-smooth} and~\ref{ex:Un-smooth}; their tangent spaces at the identity in Theorem~\ref{thm:classical-summary}, with the infinitesimal rotations of Example~\ref{ex:so3-infinitesimal}; the double cover $\mathrm{SU}(2) \to \SO(3)$ in Theorem~\ref{thm:double-cover}; the Lie algebra $\mathfrak{so}(3)$ and the cross product in Example~\ref{ex:cross-product-lie}; and Lie groups in Proposition~\ref{prop:classical-lie-groups}.
 
 % ============================================================================
+% Lecture 17 (Fri Oct 9, 2026)
+% ============================================================================
+
+\subsection{Related Vector Fields}\label{sub:related-fields}
+
+\textit{Lecture 17. ``Back to vector fields \ldots\ we're currently taking the operator point of view. Later on, we'll talk about them as generators of dynamics.'' Recap: every vector field defines a derivation of $C^\infty(M)$, and conversely (Lemma~\ref{lem:vf-derivation}, Proposition~\ref{prop:derivations-are-fields}); so the commutator of two fields is again a field (Lemma~\ref{lem:bracket-field}). Officially, a vector field is a smooth section of the tangent bundle (Definition~\ref{def:vector-field}).}
+
+\begin{rembox}[Vector Fields Do Not Push Forward]\label{rem:fields-not-functorial}
+Given a smooth map $F : M \to N$, ``in general, we cannot push forward or pull back vector fields'': vector fields have no functorial properties, ``as opposed to differential forms, \ldots\ they can always be pulled back.'' Single tangent vectors \emph{can} be pushed forward, by $dF_p$; the trouble is assembling the results into a field on $N$.
+\begin{itemize}[nosep]
+\item If $F$ is not injective, two points $p_1 \ne p_2$ with $F(p_1) = F(p_2) = q$ give two candidates $dF_{p_1}(\mathbf{X}_{p_1})$ and $dF_{p_2}(\mathbf{X}_{p_2})$ at $q$, in general different: ``which one am I going to push \ldots? It's a multi-valued object.''
+\item If $F$ is not surjective, a point $q' \notin F(M)$ gets no candidate at all: ``I would have no way of defining [the field] outside the image.''
+\end{itemize}
+\end{rembox}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, violet!70!black, fill=violet!4] (0,0) ellipse (1.6 and 1.05);
+\node[violet!70!black, font=\footnotesize] at (-1.25,0.95) {$M$};
+\fill (-0.60,0.25) circle (1.6pt) node[below left, font=\scriptsize] {$p_1$};
+\fill (0.20,-0.25) circle (1.6pt) node[below left, font=\scriptsize] {$p_2$};
+\draw[->, very thick, orange!85!black] (-0.60,0.25) -- ++(0.6,0.35) node[right, font=\scriptsize] {$\mathbf{X}_{p_1}$};
+\draw[->, very thick, teal!65!black] (0.20,-0.25) -- ++(0.4,-0.4) node[right, font=\scriptsize] {$\mathbf{X}_{p_2}$};
+\draw[thick, gray!70!black, fill=gray!4] (5.7,0) ellipse (2.35 and 1.4);
+\node[gray!70!black, font=\footnotesize] at (7.65,1.2) {$N$};
+\draw[teal!40, fill=teal!8] (4.75,-0.05) ellipse (1.0 and 0.7);
+\node[teal!60!black, font=\scriptsize] at (4.75,-1.0) {$F(M)$};
+\fill (4.75,0.00) circle (1.6pt) node[below, xshift=-1.5pt, font=\scriptsize] {$q$};
+\draw[->, very thick, orange!85!black] (4.75,0.00) -- ++(0.65,0.42);
+\draw[->, very thick, teal!65!black] (4.75,0.00) -- ++(0.55,-0.45);
+\node[font=\scriptsize, anchor=west] at (5.45,0.55) {$dF_{p_1}(\mathbf{X}_{p_1})$};
+\node[font=\scriptsize, anchor=west] at (5.35,-0.52) {$dF_{p_2}(\mathbf{X}_{p_2})$};
+\fill (6.95,-0.05) circle (1.6pt) node[right, font=\scriptsize] {$q'$\,?};
+\draw[->, dashed, gray!65] (1.25,0.6) .. controls (2.3,1.3) and (3.4,1.0) .. (4.62,0.1);
+\draw[->, dashed, gray!65] (1.45,-0.44) .. controls (2.3,-1.3) and (3.4,-0.9) .. (4.62,-0.08);
+\node[gray!70!black, font=\footnotesize] at (2.75,1.25) {$F$};
+\node[font=\scriptsize, align=center] at (3.0,-1.85) {$F(p_1) = F(p_2) = q$: two candidates at $q$; \quad $q' \notin F(M)$: no candidate};
+\end{tikzpicture}
+\end{center}
+
+The exception is a diffeomorphism, where each $q \in N$ is $F(p)$ for exactly one $p$.
+
+\begin{rembox}[Notation: $dF_p$]\label{rem:dF-notation}
+\textit{Lecture~17:} ``I'm going to switch the notation to $dF$ \ldots\ $dF$ will replace $F_*$. It's a more common notation.'' From here on the pushforward of Definition~\ref{def:pushforward} is written
+\[
+dF_p = F_{*p} : T_pM \to T_{F(p)}N ,
+\]
+as in Lee. It agrees with the differential of a map between vector spaces (Definition~\ref{def:vs-differential}) under the identification $v \leftrightarrow D_v|_a$ of Corollary~\ref{cor:tangent-vs} (Remark~\ref{rem:abstract-tangent-8}), so the two uses of $dF_p$ do not clash. Earlier sections keep $F_{*p}$.
+\end{rembox}
+
+\begin{defbox}[Pushforward of a Vector Field by a Diffeomorphism]\deflabel{def:vf-pushforward}
+Let $F : M \to N$ be a diffeomorphism and $\mathbf{X} \in \mathfrak{X}(M)$. The \textbf{pushforward} of $\mathbf{X}$ is the section $F_*\mathbf{X}$ of $TN$ given by
+\[
+(F_*\mathbf{X})_q = dF_{F^{-1}(q)}\big(\mathbf{X}_{F^{-1}(q)}\big), \qquad q \in N .
+\]
+\leeref{Ch.~8, \emph{Pushforwards of Vector Fields}}
+\end{defbox}
+
+It is smooth, so $F_*\mathbf{X} \in \mathfrak{X}(N)$: this is Proposition~\ref{prop:vf-pushforward} below. ``However, it can happen that you have \ldots\ fields that are related by $F$, that correspond to one another \ldots\ It's something that you don't construct. It's something that happens.''
+
+\begin{defbox}[$F$-Related Vector Fields]\deflabel{def:F-related}
+Let $F : M \to N$ be smooth, $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$. Then $\mathbf{X}$ and $\mathbf{Y}$ are \textbf{$F$-related} if
+\[
+dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)} \in T_{F(p)}N \qquad \text{for every } p \in M .
+\]
+\leeref{Ch.~8, \emph{Vector Fields and Smooth Maps}}
+\end{defbox}
+
+The definition was completed in class by a student: push the value of $\mathbf{X}$ at $p$ forward, ``and if it happens that every time I do that, I get the value of $\mathbf{Y}$ at the same point, then we say that the two vector fields are related by $F$.'' No injectivity or surjectivity is assumed. Points outside $F(M)$ impose nothing on $\mathbf{Y}$, and two points with the same image must push forward to the same vector. ``It's a very useful notion at times.''
+
+\begin{exbox}[Fields Related by a Projection]\exlabel{ex:projection-related}
+Let $\pi : \mathbb{R}^2 \to \mathbb{R}$, $\pi(x, y) = x$, and $\mathbf{Y} = b(x)\, \dfrac{d}{dx}$ with $b \in C^\infty(\mathbb{R})$ --- ``any vector field on $\mathbb{R}$ I can write like this.'' The fields on $\mathbb{R}^2$ that are $\pi$-related to $\mathbf{Y}$ are exactly
+\[
+\mathbf{X} = b(x)\, \frac{\partial}{\partial x} + c(x, y)\, \frac{\partial}{\partial y}, \qquad c \in C^\infty(\mathbb{R}^2) \text{ arbitrary.}
+\]
+\end{exbox}
+
+\begin{proof}
+\textit{(Lecture~17, as a question to the class: ``What can I put in the blanks here?'' The first component ``has to be this guy''; the second, ``anything''. The computation is filled in.)} Write $\mathbf{X} = a\, \partial_x + c\, \partial_y$. For $g \in C^\infty(\mathbb{R})$, $d\pi\big(\partial_x|_{(x,y)}\big)[g] = \partial_x (g \circ \pi)(x,y) = g'(x)$ and $d\pi\big(\partial_y|_{(x,y)}\big)[g] = \partial_y\, g(x) = 0$. So $d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = a(x, y)\, \frac{d}{dx}\big|_x$, and this equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ for all $(x, y)$ exactly when $a(x, y) = b(x)$.
+\end{proof}
+
+``All I care about is the horizontal component \ldots\ they all should be the same'' along each vertical line, the fibre $\pi^{-1}(x)$, ``corresponding to the value down here.''
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+\draw[gray!45] (-2.6,0.35) rectangle (2.6,2.8);
+\node[gray!70!black, font=\footnotesize, anchor=south west] at (-2.6,2.8) {$\mathbb{R}^2$};
+\draw[gray!35, dashed] (-2.00,0.35) -- (-2.00,2.8);
+\draw[->, thick, violet!75!black] (-2.000,0.750) -- (-1.819,0.539);
+\draw[orange!80!black, densely dotted] (-2.000,0.750) -- (-1.819,0.750);
+\draw[->, thick, violet!75!black] (-2.000,1.500) -- (-1.819,1.786);
+\draw[orange!80!black, densely dotted] (-2.000,1.500) -- (-1.819,1.500);
+\draw[->, thick, violet!75!black] (-2.000,2.250) -- (-1.819,2.627);
+\draw[orange!80!black, densely dotted] (-2.000,2.250) -- (-1.819,2.250);
+\draw[gray!35, dashed] (-1.00,0.35) -- (-1.00,2.8);
+\draw[->, thick, violet!75!black] (-1.000,0.750) -- (-0.587,0.904);
+\draw[orange!80!black, densely dotted] (-1.000,0.750) -- (-0.587,0.750);
+\draw[->, thick, violet!75!black] (-1.000,1.500) -- (-0.587,1.919);
+\draw[orange!80!black, densely dotted] (-1.000,1.500) -- (-0.587,1.500);
+\draw[->, thick, violet!75!black] (-1.000,2.250) -- (-0.587,2.340);
+\draw[orange!80!black, densely dotted] (-1.000,2.250) -- (-0.587,2.250);
+\draw[gray!35, dashed] (0.00,0.35) -- (0.00,2.8);
+\draw[->, thick, violet!75!black] (0.000,0.750) -- (0.500,1.152);
+\draw[orange!80!black, densely dotted] (0.000,0.750) -- (0.500,0.750);
+\draw[->, thick, violet!75!black] (0.000,1.500) -- (0.500,1.734);
+\draw[orange!80!black, densely dotted] (0.000,1.500) -- (0.500,1.500);
+\draw[->, thick, violet!75!black] (0.000,2.250) -- (0.500,1.985);
+\draw[orange!80!black, densely dotted] (0.000,2.250) -- (0.500,2.250);
+\draw[gray!35, dashed] (1.00,0.35) -- (1.00,2.8);
+\draw[->, thick, violet!75!black] (1.000,0.750) -- (1.413,1.096);
+\draw[orange!80!black, densely dotted] (1.000,0.750) -- (1.413,0.750);
+\draw[->, thick, violet!75!black] (1.000,1.500) -- (1.413,1.373);
+\draw[orange!80!black, densely dotted] (1.000,1.500) -- (1.413,1.500);
+\draw[->, thick, violet!75!black] (1.000,2.250) -- (1.413,1.830);
+\draw[orange!80!black, densely dotted] (1.000,2.250) -- (1.413,2.250);
+\draw[gray!35, dashed] (2.00,0.35) -- (2.00,2.8);
+\draw[->, thick, violet!75!black] (2.000,0.750) -- (2.181,0.778);
+\draw[orange!80!black, densely dotted] (2.000,0.750) -- (2.181,0.750);
+\draw[->, thick, violet!75!black] (2.000,1.500) -- (2.181,1.107);
+\draw[orange!80!black, densely dotted] (2.000,1.500) -- (2.181,1.500);
+\draw[->, thick, violet!75!black] (2.000,2.250) -- (2.181,1.993);
+\draw[orange!80!black, densely dotted] (2.000,2.250) -- (2.181,2.250);
+\draw[->, thick, gray!70] (3.0,1.45) -- node[right, font=\scriptsize] {$\pi$} (3.0,0.05);
+\draw[thick, gray!70] (-2.6,-0.45) -- (2.6,-0.45) node[right, font=\footnotesize, text=black] {$\mathbb{R}$};
+\fill (-2.00,-0.45) circle (1.2pt);
+\draw[->, very thick, orange!85!black] (-2.000,-0.45) -- (-1.819,-0.45);
+\fill (-1.00,-0.45) circle (1.2pt);
+\draw[->, very thick, orange!85!black] (-1.000,-0.45) -- (-0.587,-0.45);
+\fill (0.00,-0.45) circle (1.2pt);
+\draw[->, very thick, orange!85!black] (0.000,-0.45) -- (0.500,-0.45);
+\fill (1.00,-0.45) circle (1.2pt);
+\draw[->, very thick, orange!85!black] (1.000,-0.45) -- (1.413,-0.45);
+\fill (2.00,-0.45) circle (1.2pt);
+\draw[->, very thick, orange!85!black] (2.000,-0.45) -- (2.181,-0.45);
+\node[violet!75!black, font=\scriptsize, align=left, anchor=west] at (3.5,2.05) {$\mathbf{X} = b(x)\,\partial_x + (\text{anything})\,\partial_y$};
+\node[orange!80!black, font=\scriptsize, align=left, anchor=west] at (3.5,1.55) {dotted: the horizontal part $b(x)$,\\ the same all along each fibre};
+\node[orange!85!black, font=\scriptsize, anchor=west] at (3.5,-0.45) {$\mathbf{Y} = b(x)\,\dfrac{d}{dx}$};
+\end{tikzpicture}
+\end{center}
+
+\textit{The operator viewpoint.} The definition is geometric --- ``arrows''. There is an equivalent characterization in terms of operators, using the pullback of functions, $F^*g = g \circ F$.
+
+\begin{propbox}[Related Fields as Operators]\thmlabel{prop:F-related-operator}
+Let $F : M \to N$ be smooth, $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$. Then $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related if and only if
+\[
+\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F \qquad \text{for every } g \in C^\infty(N),
+\]
+that is, $\mathbf{X} \circ F^* = F^* \circ \mathbf{Y}$: the pullback $F^*$ intertwines $\mathbf{X}$ and $\mathbf{Y}$ as derivations.
+\leeref{Proposition 8.16}
+\end{propbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=4em, row sep=2.6em]
+C^\infty(N) \arrow[r, "\mathbf{Y}"] \arrow[d, "F^*"'] & C^\infty(N) \arrow[d, "F^*"] \\
+C^\infty(M) \arrow[r, "\mathbf{X}"'] & C^\infty(M)
+\end{tikzcd}
+\end{center}
+
+\begin{proof}
+\textit{(Lecture~17, ``let's have a peek at the proof''; the step for the converse is filled in.)} Let $g \in C^\infty(N)$ and $p \in M$. By the definition of the pushforward (Definition~\ref{def:pushforward}) --- ``we pull back germs, so we push forward derivations'' ---
+\[
+\mathbf{X}(g \circ F)(p) = \mathbf{X}_p[g \circ F] = dF_p(\mathbf{X}_p)[g],
+\qquad
+\big((\mathbf{Y}g) \circ F\big)(p) = \mathbf{Y}_{F(p)}[g] .
+\]
+If the fields are $F$-related the right-hand sides agree, for every $g$ and $p$. Conversely, if the left-hand sides agree for every $g \in C^\infty(N)$, the two derivations $dF_p(\mathbf{X}_p)$ and $\mathbf{Y}_{F(p)}$ at $F(p)$ agree on every global function, hence on every germ at $F(p)$, since every germ has a global representative (Corollary~\ref{cor:germ-extension}); so they are equal. ``It's a trivial if and only if once you realize'' this.
+\end{proof}
+
+\begin{propbox}[Pushforward by a Diffeomorphism]\thmlabel{prop:vf-pushforward}
+Let $F : M \to N$ be a diffeomorphism and $\mathbf{X} \in \mathfrak{X}(M)$. Then $F_*\mathbf{X}$ is smooth, it is the unique vector field on $N$ that is $F$-related to $\mathbf{X}$, and for every $g \in C^\infty(N)$
+\[
+(F_*\mathbf{X})\, g = \big(\mathbf{X}(g \circ F)\big) \circ F^{-1} .
+\]
+\leeref{Proposition 8.19, Corollary 8.21}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} For $q \in N$ put $p = F^{-1}(q)$. Then $(F_*\mathbf{X})_q[g] = dF_p(\mathbf{X}_p)[g] = \mathbf{X}_p[g \circ F] = \mathbf{X}(g \circ F)(F^{-1}(q))$, which is the formula. Its right side is smooth, as $\mathbf{X}(g \circ F)$ is smooth (Lemma~\ref{lem:vf-derivation}) and $F^{-1}$ is smooth; so $F_*\mathbf{X}$ is smooth by Lemma~\ref{lem:vf-smooth-criterion}. It is $F$-related to $\mathbf{X}$ by its definition. If $\mathbf{Y}$ is also $F$-related to $\mathbf{X}$, then $\mathbf{Y}_q = \mathbf{Y}_{F(p)} = dF_p(\mathbf{X}_p) = (F_*\mathbf{X})_q$ for every $q$, since $F$ is onto.
+\end{proof}
+
+\textit{``Now the reason I wanted to do it this way''} --- through operators --- is the following proposition.
+
+\begin{propbox}[Naturality of the Bracket]\thmlabel{prop:bracket-naturality}
+Let $F : M \to N$ be smooth, $\mathbf{X}_1, \mathbf{X}_2 \in \mathfrak{X}(M)$ and $\mathbf{Y}_1, \mathbf{Y}_2 \in \mathfrak{X}(N)$. If $\mathbf{X}_i$ is $F$-related to $\mathbf{Y}_i$ for $i = 1, 2$, then $[\mathbf{X}_1, \mathbf{X}_2]$ is $F$-related to $[\mathbf{Y}_1, \mathbf{Y}_2]$.
+\leeref{Proposition 8.30}
+\end{propbox}
+
+\begin{proof}
+\textit{(Omitted in Lecture~17 as an exercise: ``it's just a matter of chasing the definitions \ldots\ being $F$-related means that $F^*$ commutes with the derivations. So you just play with the symbols; it all comes out.'' Filled in.)} Let $g \in C^\infty(N)$. Applying Proposition~\ref{prop:F-related-operator} twice,
+\[
+\mathbf{X}_1\mathbf{X}_2(g \circ F) = \mathbf{X}_1\big((\mathbf{Y}_2 g) \circ F\big) = (\mathbf{Y}_1\mathbf{Y}_2 g) \circ F ,
+\]
+and in the same way $\mathbf{X}_2\mathbf{X}_1(g \circ F) = (\mathbf{Y}_2\mathbf{Y}_1 g) \circ F$. Subtracting, $[\mathbf{X}_1, \mathbf{X}_2](g \circ F) = \big([\mathbf{Y}_1, \mathbf{Y}_2]\, g\big) \circ F$, and Proposition~\ref{prop:F-related-operator} again gives the claim.
+\end{proof}
+
+On omitting this proof: ``In a class like this, you cannot prove everything. First of all, there is no time, and second, you would be bored to tears. \ldots\ But on the other hand, if we just say, oh, you can read the proof, then you don't get a feeling for the subject. So there is a line there somewhere, or a zone, where you have to prove enough, but not too much.'' Feedback on where that line should sit is ``always welcome.''
+
+\begin{corbox}[Diffeomorphisms Preserve Brackets]\thmlabel{cor:diffeo-bracket}
+If $F : M \to N$ is a diffeomorphism and $\mathbf{X}_1, \mathbf{X}_2 \in \mathfrak{X}(M)$, then $F_*[\mathbf{X}_1, \mathbf{X}_2] = [F_*\mathbf{X}_1, F_*\mathbf{X}_2]$.
+\leeref{Corollary 8.31}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Each $\mathbf{X}_i$ is $F$-related to $F_*\mathbf{X}_i$, so $[\mathbf{X}_1, \mathbf{X}_2]$ is $F$-related to $[F_*\mathbf{X}_1, F_*\mathbf{X}_2]$ by Proposition~\ref{prop:bracket-naturality}. The only field $F$-related to $[\mathbf{X}_1, \mathbf{X}_2]$ is $F_*[\mathbf{X}_1, \mathbf{X}_2]$ (Proposition~\ref{prop:vf-pushforward}).
+\end{proof}
+
+% ============================================================================
 % SECTION: LIE GROUPS AND LEFT-INVARIANT VECTOR FIELDS
 % ============================================================================
 
@@ -11489,7 +11752,97 @@ with the Lie bracket of vector fields.
 \leeref{Ch.~8, \emph{Lie Algebras}}
 \end{defbox}
 
-\textit{Status.} Defined in Lecture~16, with two facts announced for next time: that the bracket of two left-invariant fields is again left-invariant, so that $\mathfrak{g}$ is a Lie subalgebra of $\mathfrak{X}(G)$ (Corollary~\ref{cor:vf-lie-algebra}; Lee, Proposition~8.33); and that $\mathbf{X} \mapsto \mathbf{X}_e$ identifies $\mathfrak{g}$ with $T_eG$ --- ``this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.'' For $\GL(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ (Example~\ref{ex:left-invariant-GL}). ``We'll come back to this in detail next time.''
+\textit{Status.} Defined in Lecture~16 --- ``this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.'' For $\GL(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ (Example~\ref{ex:left-invariant-GL}). The two facts announced then were proved in Lecture~17, in \S\ref{sub:lie-algebra-TeG} below: $\mathfrak{g}$ is closed under the bracket, and $\mathbf{X} \mapsto \mathbf{X}_e$ is an isomorphism onto $T_eG$.
+
+\subsection{The Lie Algebra and the Tangent Space at the Identity}\label{sub:lie-algebra-TeG}
+
+\textit{Lecture 17. ``Back to Lie groups.'' With the language of related fields, ``we can rephrase some of the definitions.''}
+
+\begin{rembox}[Left-Invariance as Relatedness]\label{rem:left-invariant-related}
+Definition~\ref{def:left-invariant} says exactly that $\mathbf{X}$ is \emph{$L_g$-related to itself} for every $g \in G$ (Definition~\ref{def:F-related} with $F = L_g$, $\mathbf{Y} = \mathbf{X}$): $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{L_g(h)} = \mathbf{X}_{gh}$. Lecture~17 abbreviates ``left-invariant'' to l.i.
+
+``And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose \ldots\ and this is the universal choice.'' Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, at the end of this subsection.
+\end{rembox}
+
+\begin{corbox}[$\mathfrak{g}$ Is a Lie Subalgebra of $\mathfrak{X}(G)$]\thmlabel{cor:lie-subalgebra}
+If $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ then $[\mathbf{X}, \mathbf{Y}] \in \mathfrak{g}$. So $\mathfrak{g}$, a linear subspace of $\mathfrak{X}(G)$, is a Lie algebra under the bracket of vector fields.
+\leeref{Proposition 8.33}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture~17: ``the big observation, which is actually a consequence of'' Proposition~\ref{prop:bracket-naturality}.)} Fix $g \in G$. $\mathbf{X}$ is $L_g$-related to $\mathbf{X}$ and $\mathbf{Y}$ to $\mathbf{Y}$, so by Proposition~\ref{prop:bracket-naturality} with $F = L_g$, $[\mathbf{X}, \mathbf{Y}]$ is $L_g$-related to $[\mathbf{X}, \mathbf{Y}]$; this for every $g$ is left-invariance. \textit{(Filled in.)} $\mathfrak{g}$ is a linear subspace because each $d(L_g)_h$ is linear; and the bracket on $\mathfrak{g}$ is bilinear, skew and satisfies Jacobi because it does on $\mathfrak{X}(G)$ (Corollary~\ref{cor:vf-lie-algebra}).
+\end{proof}
+
+``It's a Lie subalgebra of the infinite-dimensional algebra of all vector fields on $G$.'' Vector fields can be added and scaled, so $\mathfrak{X}(G)$ is a vector space (``in fact, it's an algebra over the smooth functions, but I want to think of it as a vector space''). ``At this point, maybe it's not clear what [$\mathfrak{g}$] is. It could be, I don't know, still infinite-dimensional, or something, or empty.'' The theorem settles it.
+
+\begin{thmbox}[The Lie Algebra Is the Tangent Space at the Identity]\thmlabel{thm:lie-algebra-TeG}
+Let $G$ be a Lie group with identity $e$. The evaluation map
+\[
+\mathrm{ev} : \mathfrak{g} \to T_eG, \qquad \mathbf{X} \mapsto \mathbf{X}_e ,
+\]
+is a linear isomorphism. In particular $\dim \mathfrak{g} = \dim G$.
+\leeref{Theorem 8.37}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture~17 --- ``it'll be an incomplete proof \ldots\ there is one detail that we're not prepared to prove.'' The lecture's steps, then that detail.)} $\mathrm{ev}$ is linear. \textit{The basic idea.} For $g \in G$, $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_gG$, and for $\mathbf{X} \in \mathfrak{g}$, left-invariance with $h = e$ reads
+\[
+d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_g ;
+\]
+more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. ``There's only one choice really.''
+
+\emph{Injective.} By the basic idea, $\mathbf{X}$ is determined by its value at $e$. So $\mathbf{X}_e = 0$ forces $\mathbf{X}_g = 0$ for all $g$.
+
+\emph{Surjective.} Start with $v \in T_eG$; we want a left-invariant $\mathbf{X}$ with $\mathbf{X}_e = v$. The basic idea says there is no choice: we must define
+\[
+\mathbf{X}^v_g = d(L_g)_e(v), \qquad g \in G .
+\]
+``Just as with vector fields'' on a vector space (Remark~\ref{rem:translations-identify}), there is a unique left translation carrying $e$ to $g$, and $\mathbf{X}^v_g$ is $v$ carried along it. This defines $\mathbf{X}^v$ as a section of $TG$ with $\mathbf{X}^v_e = v$. \textit{(Filled in.)} It is left-invariant: $L_g \circ L_h = L_{gh}$, so by the chain rule (Theorem~\ref{prop:pushforward-functorial})
+\[
+d(L_g)_h\big(\mathbf{X}^v_h\big) = d(L_g)_h\, d(L_h)_e(v) = d(L_{gh})_e(v) = \mathbf{X}^v_{gh} .
+\]
+
+\emph{Smooth.} ``The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point \ldots\ and we don't have the tools to do that at this point.'' \textit{(Not from lecture: Lee's argument, filled in; it uses only Theorem~\ref{thm:every-vector-velocity} and Lemma~\ref{lem:vf-smooth-criterion}. The argument Uribe has in mind, for later, may be different.)} By Lemma~\ref{lem:vf-smooth-criterion} it suffices that $\mathbf{X}^v f$ is smooth for every $f \in C^\infty(G)$. By Theorem~\ref{thm:every-vector-velocity} choose a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to G$ with $\gamma(0) = e$ and $D_\gamma = v$. Then
+\[
+(\mathbf{X}^v f)(g) = d(L_g)_e(D_\gamma)[f] = D_\gamma[f \circ L_g] = \frac{d}{dt}\Big|_{t=0} f\big(g\,\gamma(t)\big).
+\]
+Put $\phi(t, g) = f(g\,\gamma(t))$ on $(-\varepsilon, \varepsilon) \times G$. It is smooth, as the composite of $(t, g) \mapsto (g, \gamma(t))$, multiplication and $f$. So $(\mathbf{X}^v f)(g) = \partial\phi/\partial t\,(0, g)$; in a chart of $G$ this is a partial derivative of a smooth function of $(t, x)$, evaluated at $t = 0$, hence smooth in $x$. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$.
+
+Finally $\dim \mathfrak{g} = \dim T_eG = \dim G$ (Theorem~\ref{thm:tangent-dimension}).
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, gray!70!black, fill=gray!4] (0,0) ellipse (2.4 and 1.15);
+\node[gray!70!black, font=\footnotesize] at (-2.25,0.95) {$G$};
+\fill (-1.2,-0.2) circle (1.6pt) node[below left, font=\scriptsize] {$e$};
+\fill (1.15,0.05) circle (1.6pt) node[below right, font=\scriptsize] {$g$};
+\draw[->, very thick, orange!85!black] (-1.2,-0.2) -- ++(0.35,0.55) node[above, font=\scriptsize] {$v$};
+\draw[->, very thick, orange!85!black] (1.15,0.05) -- ++(0.55,0.45) node[right, xshift=16pt, font=\scriptsize] {$\mathbf{X}^v_g = d(L_g)_e(v)$};
+\draw[->, dashed, gray!65] (-0.95,-0.35) .. controls (-0.2,-0.85) and (0.5,-0.7) .. (1.0,-0.08);
+\node[gray!70!black, font=\scriptsize] at (0.0,-0.95) {$L_g$};
+\end{tikzpicture}
+\end{center}
+
+\begin{exbox}[The Additive Group of a Vector Space]\exlabel{ex:vs-lie-algebra}
+Let $V$ be a finite-dimensional vector space, a Lie group under addition with identity $0$, so that $L_p = \tau_p$ is translation by $p$. Its left-invariant vector fields are the constant fields $\mathbf{X}^v : p \mapsto D_v|_p$, $v \in V$, and all their brackets vanish: $\mathfrak{g} \cong V$ with the zero bracket.
+\end{exbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in, after the remark in Lecture~17 that the translations of a vector space give ``a left-invariant vector field''.)} By Remark~\ref{rem:translations-identify}, $d(\tau_p)_0(D_v|_0) = D_v|_p$, so the field $\mathbf{X}^v$ of the theorem, with $\mathbf{X}^v_0 = D_v|_0$, is $p \mapsto D_v|_p$; by the theorem these are all the left-invariant fields. In linear coordinates $\mathbf{X}^v = \sum_i v^i\, \partial_i$ has constant coefficients, so $[\mathbf{X}^v, \mathbf{X}^w] = 0$ by Proposition~\ref{prop:bracket-coords}.
+\end{proof}
+
+\begin{rembox}[Which Bracket on $T_eG$?]\label{rem:bracket-on-TeG}
+Through $\mathrm{ev}$, $T_eG$ inherits a bracket, $[v, w] = \big[\mathbf{X}^v, \mathbf{X}^w\big]_e$, the one that makes $\mathrm{ev}$ an isomorphism of Lie algebras. The question is what it is. \textit{Lecture~17:} for $G = \GL(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subset of $\Mat(d, \mathbb{R}) \cong \mathbb{R}^{d^2}$, so that $T_IG = \Mat(d,\mathbb{R})$, and ``for all matrix groups, the answer \ldots\ is just the matrix commutator''
+\[
+[A, B] = AB - BA .
+\]
+``That requires computation. You actually have to compute something'' --- to begin on Monday (Lecture~18). The left-invariant fields are already known (Example~\ref{ex:left-invariant-GL}: $\mathbf{X}^A_g = gA$). ``This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.''
+
+Why left, then? An aside: ``Did you ever think what the world would look like if, instead of writing $f(x)$ \ldots\ we would have written $(x)f$? \ldots\ Imagine composing functions with that rule. \ldots\ Everything works much better if you write $(x)f$'': in that notation, composites read in the order the maps are applied.
+\end{rembox}
+
+\textbf{Transcription note (Lecture 17).} Page~46 of the handwritten notes says the construction gives ``$\mathbf{X} : M \to TM$''; the manifold is the group, $\mathbf{X} : G \to TG$.
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -11504,7 +11857,7 @@ These notes follow the course, and Lee's \emph{Introduction to Smooth Manifolds}
 \textbf{These notes} & \textbf{Lee} & \textbf{Remark} \\ \midrule \endhead
 $T_pM$: derivations of germs $C_p^\infty(M)$ & $T_pM$: derivations of $C^\infty(M)$ at $p$ & Isomorphic, by Proposition~\ref{prop:germ-global}; Lee's version needs bump functions. \\
 $T^{\geo}_pM$, the geometric tangent space & $\mathbb{R}^n_a$ in $\mathbb{R}^n$; $T_pS \subseteq T_pM$ for embedded $S$ & Theorem~\ref{thm:ambient-abstract}; Lee, Propositions 3.2 and 5.38. \\
-$F_{*p}$ & $dF_p$ & The notes keep $dF_p$ for the vector-space differential (Definition~\ref{def:vs-differential}) and $df_p$ for functions. \\
+$F_{*p}$; from Lecture~17, $dF_p$ & $dF_p$ & Through \S\ref{sec:lie-bracket} the notes keep $dF_p$ for the vector-space differential (Definition~\ref{def:vs-differential}) and $df_p$ for functions; from Remark~\ref{rem:dF-notation} on, $dF_p$ is the pushforward, which agrees with the vector-space differential (Corollary~\ref{cor:tangent-vs}). \\
 $D_\gamma$, the velocity & $\gamma'(0)$ & The notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, a geometric vector (Definition~\ref{def:velocity}). \\
 $D_v$, $D_v|_a$ & $D_v|_a$ & The directional derivative (Definition~\ref{def:Dv}). \\
 $[f] \in C_p^\infty(M)$, germs & --- & Lee works with global functions $C^\infty(M)$ (Definition~\ref{def:germ}). \\
@@ -11515,7 +11868,7 @@ $I_p$, $I_p^2$, $I_p/I_p^2$, of germs & $I_p$, $I_p^2$ of global functions (Prob
 $\Gamma = \{(x, g \cdot x)\}$, the orbit relation & $\mathcal{O} = \{(g \cdot p, p)\}$ & The same set with the factors swapped (proof of Lee, Proposition 21.4). \\
 $H_{x_0}$, the isotropy group & $G_p$ & Definition~\ref{def:isotropy}. \\
 $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ & $F : G/G_p \to M$ & Theorem~\ref{thm:GH-homeo}; Lee, Theorem 21.18. \\
-$\mathfrak{g} = T^{\geo}_I G$ & $\mathrm{Lie}(G) \cong T_eG$ & The notes' $\mathfrak{g}$ is the geometric tangent space at $I$; Lee defines $\mathrm{Lie}(G)$ by left-invariant vector fields (Chapter~8). \\
+$\mathfrak{g} = T^{\geo}_I G$; from \S\ref{sec:lie-groups}, the left-invariant fields & $\mathrm{Lie}(G) \cong T_eG$ & Before \S\ref{sec:lie-groups} the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition~\ref{def:lie-algebra-of-group} it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem~\ref{thm:lie-algebra-TeG}. \\
 $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ & Example 1.23: the chart $x^3$ & Two different non-standard structures --- the transition map between them is $y \mapsto y^9$ --- both diffeomorphic to $\mathbb{R}$ (Corollary~\ref{cor:single-chart-Rn}). \\
 \bottomrule
 \end{longtable}
@@ -11570,9 +11923,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18) \\
 \ref{sec:cotangent-bundle}\ The cotangent bundle & Chapter 11, \emph{The Cotangent Bundle} (Proposition 11.9); Lemma 1.35 \\
 \ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
-\ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
-\ref{sec:lie-bracket}\ Lie bracket and Lie algebra & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28) \\
-\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Chapter 8, \emph{Lie Algebras} \\
+\ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
+\ref{sec:lie-bracket}\ Lie bracket and Lie algebra; related fields & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28); \emph{Vector Fields and Smooth Maps} (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 \\
+\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorem 8.37) \\
 \bottomrule
 \end{longtable}
 
@@ -11659,19 +12012,27 @@ Example 7.30 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.
 Problem 7-4 & Prop.~\ref{prop:jacobi}, Cor.~\ref{cor:jacobi-gradient} \\
 Problem 7-22 & Def.~\ref{def:quaternions} \\
 Proposition 8.1 & Prop.~\ref{prop:vf-coords} \\
+Proposition 8.14 & Lem.~\ref{lem:vf-smooth-criterion} \\
 Proposition 8.15 & Prop.~\ref{prop:derivations-are-fields} \\
+Proposition 8.16 & Prop.~\ref{prop:F-related-operator} \\
+Proposition 8.19 & Prop.~\ref{prop:vf-pushforward} \\
+Corollary 8.21 & Prop.~\ref{prop:vf-pushforward} \\
 Lemma 8.25 & Lem.~\ref{lem:bracket-field} \\
 Proposition 8.26 & Prop.~\ref{prop:bracket-coords} \\
 Proposition 8.28 & Cor.~\ref{cor:vf-lie-algebra} \\
+Proposition 8.30 & Prop.~\ref{prop:bracket-naturality} \\
+Corollary 8.31 & Cor.~\ref{cor:diffeo-bracket} \\
+Proposition 8.33 & Cor.~\ref{cor:lie-subalgebra} \\
+Theorem 8.37 & Thm.~\ref{thm:lie-algebra-TeG} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
 Proposition 11.8 & Prop.~\ref{prop:double-dual} \\
-Proposition 11.9 & Def.~\ref{def:cotangent-bundle}, Prop.~\ref{prop:cotangent-transition}, Def.~\ref{def:ctb-trivialization}, Def.~\ref{def:ctb-chart}, Prop.~\ref{prop:ctb-topology}, Cor.~\ref{cor:ctb-fibration} \\
+Proposition 11.9 & Def.~\ref{def:ctb-trivialization}, Def.~\ref{def:ctb-chart}, Prop.~\ref{prop:ctb-topology}, Prop.~\ref{prop:cotangent-transition}, Cor.~\ref{cor:ctb-fibration} \\
 Proposition 11.11 & Prop.~\ref{prop:one-form-coords} \\
 Proposition 11.20 & Cor.~\ref{cor:df-properties} \\
 Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms} \\
-Problem 11-4 & Def.~\ref{def:Ip}, Def.~\ref{def:Ip-square}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal}, Prop.~\ref{prop:cotangent-pairing} \\
+Problem 11-4 & Def.~\ref{def:Ip}, Def.~\ref{def:Ip-square}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Lemma 21.1 & Lem.~\ref{lem:Lg}, Lem.~\ref{lem:orbit-open}, Prop.~\ref{prop:GH-open-sets} \\
 Example 21.3 & Ex.~\ref{ex:nonhausdorff-orbit} \\
@@ -11686,6 +12047,27 @@ Theorem 21.20 & Def.~\ref{def:homogeneous-topology}, Prop.~\ref{prop:homog-basep
 Example 21.21 & Prop.~\ref{prop:On-transitive}, Prop.~\ref{prop:grassmann-isotropy}, Cor.~\ref{cor:grassmannian} \\
 Proposition 21.34 & Thm.~\ref{thm:GL-two-components} \\
 Proposition 21.35 & Prop.~\ref{prop:GL-disconnected}, Thm.~\ref{thm:GL-two-components} \\
+Example A.4 & Ex.~\ref{ex:r-discrete} \\
+Example A.5 & Ex.~\ref{ex:metric-t2}, Prop.~\ref{fact:metric} \\
+Proposition A.17 & Prop.~\ref{prop:univ-subspace}, Cor.~\ref{cor:univ-subspace-characterizes} \\
+Lemma A.19 & Prop.~\ref{fact:cont} \\
+Proposition A.23 & Thm.~\ref{thm:univ-product}, Cor.~\ref{cor:univ-product-characterizes} \\
+Theorem A.27 & Prop.~\ref{prop:saturation-correspondence}, Thm.~\ref{thm:univ-quotient-full}, Cor.~\ref{cor:univ-characterizes}, Lem.~\ref{lem:quotient-restrict}, Lem.~\ref{lem:quotient-restrict-closed} \\
+Theorem A.30 & Thm.~\ref{thm:univ-quotient-full}, Cor.~\ref{prop:univ-quotient} \\
+Theorem A.31 & Prop.~\ref{prop:quotient-map-presents} \\
+Proposition A.39 & Prop.~\ref{fact:conn} \\
+Proposition A.41 & Prop.~\ref{fact:conn} \\
+Proposition A.43 & Prop.~\ref{fact:conn} \\
+Proposition A.45 & Prop.~\ref{fact:compact} \\
+Proposition A.50 & Prop.~\ref{fact:compact} \\
+Lemma A.52 & Prop.~\ref{fact:compact} \\
+Theorem A.57 & Prop.~\ref{prop:proper-closed} \\
+Corollary B.21 & Prop.~\ref{fact:linalg} \\
+Proposition B.24 & Prop.~\ref{fact:linalg} \\
+Theorem C.15 & Lem.~\ref{lem:hadamard}, Lem.~\ref{lem:taylor-hadamard} \\
+Theorem C.34 & Thm.~\ref{thm:inverse-function} \\
+Example C.37 & Ex.~\ref{ex:polar-derivations} \\
+Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
 %LEE-INDEX-ROWS-END
 \bottomrule
 \end{longtable}

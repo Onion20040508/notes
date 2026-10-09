@@ -21,6 +21,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3: Velocity of a Composite — Computing Differentials by Curves]]
 - [[§41 The Unit Quaternions and SU(2)#^prop-41-6|Proposition §41.6: The Tangent Space of SU(2) at the Identity]]
+- [[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|Theorem §50.4: The Lie Algebra Is the Tangent Space at the Identity]]
 
 ## Connections
 - **Used for.** Computing differentials by curves: F_*p(D) is the velocity of F ∘ γ for any curve γ with velocity D ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]). This is how the tangent spaces of submanifolds ([[§35 Regular Submanifolds#^prop-35-4|§35.4]]) and of products ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-6|§31.6]]) are read off, and it enters the comparison of the old and new regular value theorems ([[§35 Regular Submanifolds#^prop-35-9|§35.9]]).

@@ -341,3 +341,23 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: “you say to yourself, I'm thinking of $\mathbf{X}$ as an operator … if you say $\mathbf{X}(f)$, then it's an operator.”
 
 **Transcription note.** Page 43 of the handwritten notes asks “is $\mathbf{X}_p$ $C^\infty$?”; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
+
+> [!theorem] Lemma §48.8: A Smoothness Criterion for Vector Fields
+> Let $\mathbf{X}$ be a [[§36 Fibrations#^def-36-2|section]] of $TM$, not assumed smooth, and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
+>
+> *Lee: Proposition 8.14*
+
+^lem-48-8
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in, for use in Lecture 17's [[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|theorem on Lie algebras]]. The argument is step 4 of the proof of [[§48 Vector Fields#^prop-48-7|Proposition §48.7]].)* If $\mathbf{X}$ is smooth, $\mathbf{X}f$ is smooth by [[§48 Vector Fields#^lem-48-2|Lemma §48.2]]. Conversely, let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a [[§48 Vector Fields#^def-48-9|bump function]] $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the global function $\tilde x^j = \chi x^j$ of [[§48 Vector Fields#^cor-48-4|Corollary §48.4]]. It represents the [[§27 Germs#^def-27-2|germ]] of $x^j$ at every $q \in V$, so the coefficients of $\mathbf{X}$ ([[§48 Vector Fields#^prop-48-1|Proposition §48.1]]) are
+>
+> $$
+> \mathbf{X}^j(q) = \mathbf{X}_q[x^j] = (\mathbf{X}\tilde x^j)(q), \qquad q \in V,
+> $$
+>
+> smooth by hypothesis. So $\mathbf{X}$ is smooth on $V$, by [[§48 Vector Fields#^prop-48-1|Proposition §48.1]]; $p$ was arbitrary.
+
+^pf-48-8
+
+*Uses:* [[§48 Vector Fields#^lem-48-2|§48.2]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^prop-48-3|§48.3]], [[§48 Vector Fields#^cor-48-4|§48.4]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^prop-48-7|§48.7]]

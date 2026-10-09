@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (32), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (50), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (57)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (7), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (3)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (7), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (6)
 **Builds on (other subjects):** [[Linear Algebra]] (15), [[Topology]] (44), [[Multivariable Analysis]] (6)
 
 ## Sections

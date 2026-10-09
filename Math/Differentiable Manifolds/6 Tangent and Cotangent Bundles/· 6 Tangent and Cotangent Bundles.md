@@ -23,7 +23,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Tangent Bundle Is a Smooth Manifold|Proposition §45.2: The Smooth Atlas of TM]]: 17 later results
+- [[Tangent Bundle Is a Smooth Manifold|Proposition §45.2: The Smooth Atlas of TM]]: 23 later results
 - [[§45 The Tangent Bundle#^prop-45-1|Proposition §45.1: The Topology of TM]]: 10 later results
 - [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3: The Tangent Bundle Is a Fibration]]: 10 later results
 - [[§45 The Tangent Bundle#^prop-45-4|Proposition §45.4: The Tangent Bundle Is a Manifold (Claim)]]: 10 later results

@@ -112,4 +112,118 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > [!remark]- Connections
 > - The physicists' definition for matrix Lie groups, directly as $T_{\mathbb 1}G$ with the matrix commutator: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|QFT Def. §CB.1.11]].
 
-*Status.* Defined in Lecture 16, with two facts announced for next time: that the bracket of two [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|left-invariant]] fields is again left-invariant, so that $\mathfrak{g}$ is a Lie subalgebra of $\mathfrak{X}(G)$ ([[§49 Lie Bracket and Lie Algebra#^cor-49-4|Corollary §49.4]]; Lee, Proposition 8.33); and that $\mathbf{X} \mapsto \mathbf{X}_e$ identifies $\mathfrak{g}$ with $T_eG$ — “this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.” For $\mathrm{GL}(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ ([[§50 Lie Groups and Left-Invariant Vector Fields#^ex-50-1|Example §50.1]]). “We'll come back to this in detail next time.”
+*Status.* Defined in Lecture 16 — “this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.” For $\mathrm{GL}(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ ([[§50 Lie Groups and Left-Invariant Vector Fields#^ex-50-1|Example §50.1]]). The two facts announced then were proved in Lecture 17, in [[§50 Lie Groups and Left-Invariant Vector Fields#The Lie Algebra and the Tangent Space at the Identity|§50, The Lie Algebra and the Tangent Space at the Identity]] below: $\mathfrak{g}$ is closed under the bracket ([[§50 Lie Groups and Left-Invariant Vector Fields#^cor-50-3|Corollary §50.3]]), and $\mathbf{X} \mapsto \mathbf{X}_e$ is an isomorphism onto $T_eG$ ([[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|Theorem §50.4]]).
+
+## The Lie Algebra and the Tangent Space at the Identity
+
+*Lecture 17. “Back to Lie groups.” With the language of [[§49 Lie Bracket and Lie Algebra#^def-49-4|related fields]], “we can rephrase some of the definitions.”*
+
+> [!remark] Remark: Left-Invariance as Relatedness
+> [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|Definition §50.3]] says exactly that $\mathbf{X}$ is *$L_g$-related to itself* for every $g \in G$ ([[§49 Lie Bracket and Lie Algebra#^def-49-4|Definition §49.4]] with $F = L_g$, $\mathbf{Y} = \mathbf{X}$): $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{L_g(h)} = \mathbf{X}_{gh}$. Lecture 17 abbreviates “[[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|left-invariant]]” to l.i.
+>
+> “And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose … and this is the universal choice.” Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, [[§50 Lie Groups and Left-Invariant Vector Fields#^rem-50-2|at the end of this subsection]].
+
+^rem-50-1
+
+> [!theorem] Corollary §50.3: $\mathfrak{g}$ Is a Lie Subalgebra of $\mathfrak{X}(G)$
+> If $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ then $[\mathbf{X}, \mathbf{Y}] \in \mathfrak{g}$. So $\mathfrak{g}$, a linear subspace of $\mathfrak{X}(G)$, is a [[§49 Lie Bracket and Lie Algebra#^def-49-2|Lie algebra]] under the [[§49 Lie Bracket and Lie Algebra#^def-49-1|bracket of vector fields]].
+>
+> *Lee: Proposition 8.33*
+
+^cor-50-3
+
+> [!proof]+ Proof
+> *(Lecture 17: “the big observation, which is actually a consequence of” [[§49 Lie Bracket and Lie Algebra#^prop-49-7|Proposition §49.7]].)* Fix $g \in G$. $\mathbf{X}$ is $L_g$-related to $\mathbf{X}$ and $\mathbf{Y}$ to $\mathbf{Y}$, so by [[§49 Lie Bracket and Lie Algebra#^prop-49-7|Proposition §49.7]] with $F = L_g$, $[\mathbf{X}, \mathbf{Y}]$ is $L_g$-related to $[\mathbf{X}, \mathbf{Y}]$; this for every $g$ is left-invariance. *(Filled in.)* $\mathfrak{g}$ is a linear subspace because each $d(L_g)_h$ is linear; and the bracket on $\mathfrak{g}$ is bilinear, skew and satisfies Jacobi because it does on $\mathfrak{X}(G)$ ([[§49 Lie Bracket and Lie Algebra#^cor-49-4|Corollary §49.4]]).
+
+^pf-50-3
+
+*Uses:* [[§50 Lie Groups and Left-Invariant Vector Fields#^rem-50-1|Remark: Left-Invariance as Relatedness]], [[§49 Lie Bracket and Lie Algebra#^def-49-4|Def. §49.4]], [[§49 Lie Bracket and Lie Algebra#^prop-49-7|§49.7]], [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|Def. §50.3]], [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-4|Def. §50.4]], [[§49 Lie Bracket and Lie Algebra#^cor-49-4|§49.4]]
+
+“It's a Lie subalgebra of the infinite-dimensional algebra of all vector fields on $G$.” Vector fields can be added and scaled, so $\mathfrak{X}(G)$ is a [[§48 Vector Fields#^def-48-2|vector space]] (“in fact, it's an algebra over the smooth functions, but I want to think of it as a vector space”). “At this point, maybe it's not clear what [$\mathfrak{g}$] is. It could be, I don't know, still infinite-dimensional, or something, or empty.” [[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|The theorem]] settles it.
+
+> [!theorem] Theorem §50.4: The Lie Algebra Is the Tangent Space at the Identity
+> Let $G$ be a [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-1|Lie group]] with identity $e$. The evaluation map
+>
+> $$
+> \mathrm{ev} : \mathfrak{g} \to T_eG, \qquad \mathbf{X} \mapsto \mathbf{X}_e ,
+> $$
+>
+> is a linear isomorphism. In particular $\dim \mathfrak{g} = \dim G$.
+>
+> *Lee: Theorem 8.37*
+
+^thm-50-4
+
+> [!proof]+ Proof
+> *(Lecture 17 — “it'll be an incomplete proof … there is one detail that we're not prepared to prove.” The lecture's steps, then that detail.)* $\mathrm{ev}$ is linear. *The basic idea.* For $g \in G$, $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_gG$, and for $\mathbf{X} \in \mathfrak{g}$, [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|left-invariance]] with $h = e$ reads
+>
+> $$
+> d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_g ;
+> $$
+>
+> more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. “There's only one choice really.”
+>
+> *Injective.* By the basic idea, $\mathbf{X}$ is determined by its value at $e$. So $\mathbf{X}_e = 0$ forces $\mathbf{X}_g = 0$ for all $g$.
+>
+> *Surjective.* Start with $v \in T_eG$; we want a left-invariant $\mathbf{X}$ with $\mathbf{X}_e = v$. The basic idea says there is no choice: we must define
+>
+> $$
+> \mathbf{X}^v_g = d(L_g)_e(v), \qquad g \in G .
+> $$
+>
+> “Just as with vector fields” on a vector space ([[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]]), there is a unique [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-2|left translation]] carrying $e$ to $g$, and $\mathbf{X}^v_g$ is $v$ carried along it. This defines $\mathbf{X}^v$ as a [[§36 Fibrations#^def-36-2|section]] of $TG$ with $\mathbf{X}^v_e = v$. *(Filled in.)* It is left-invariant: $L_g \circ L_h = L_{gh}$, so by the chain rule ([[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Theorem §28.6]])
+>
+> $$
+> d(L_g)_h\big(\mathbf{X}^v_h\big) = d(L_g)_h\, d(L_h)_e(v) = d(L_{gh})_e(v) = \mathbf{X}^v_{gh} .
+> $$
+>
+> *Smooth.* “The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point … and we don't have the tools to do that at this point.” *(Not from lecture: Lee's argument, filled in; it uses only [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2]] and [[§48 Vector Fields#^lem-48-8|Lemma §48.8]]. The argument Uribe has in mind, for later, may be different.)* By [[§48 Vector Fields#^lem-48-8|Lemma §48.8]] it suffices that $\mathbf{X}^v f$ is smooth for every $f \in C^\infty(G)$. By [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2]] choose a [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|smooth curve]] $\gamma : (-\varepsilon, \varepsilon) \to G$ with $\gamma(0) = e$ and $D_\gamma = v$. Then
+>
+> $$
+> (\mathbf{X}^v f)(g) = d(L_g)_e(D_\gamma)[f] = D_\gamma[f \circ L_g] = \frac{d}{dt}\Big|_{t=0} f\big(g\,\gamma(t)\big).
+> $$
+>
+> Put $\phi(t, g) = f(g\,\gamma(t))$ on $(-\varepsilon, \varepsilon) \times G$. It is smooth, as the composite of $(t, g) \mapsto (g, \gamma(t))$, multiplication and $f$. So $(\mathbf{X}^v f)(g) = \partial\phi/\partial t\,(0, g)$; in a chart of $G$ this is a partial derivative of a smooth function of $(t, x)$, evaluated at $t = 0$, hence smooth in $x$. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$.
+>
+> Finally $\dim \mathfrak{g} = \dim T_eG = \dim G$ ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8]]).
+
+^pf-50-4
+
+*Uses:* [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-1|Def. §50.1]], [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-2|Def. §50.2]], [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|Def. §50.3]], [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-4|Def. §50.4]], [[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§48 Vector Fields#^lem-48-8|§48.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
+
+> [!remark]- Connections
+> - The matrix-group version, with $\mathfrak g$ defined through the exponential and identified with $T_{\mathbb 1}G$ and with the left-invariant fields: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|QFT Theorem §CB.1.16]].
+
+![[m591-50-1.svg]]
+*The left-invariant field $\mathbf{X}^v$: the vector $v \in T_eG$ carried to $g$ by the differential of the left translation $L_g$.*
+
+> [!example] Example §50.2: The Additive Group of a Vector Space
+> Let $V$ be a finite-dimensional vector space, a [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-1|Lie group]] under addition with identity $0$, so that $L_p = \tau_p$ is translation by $p$. Its [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|left-invariant vector fields]] are the constant fields $\mathbf{X}^v : p \mapsto D_v|_p$, $v \in V$, and all their [[§49 Lie Bracket and Lie Algebra#^def-49-1|brackets]] vanish: $\mathfrak{g} \cong V$ with the zero bracket.
+
+^ex-50-2
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in, after the remark in Lecture 17 that the translations of a vector space give “a left-invariant vector field”.)* By [[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]], $d(\tau_p)_0(D_v|_0) = D_v|_p$, so the field $\mathbf{X}^v$ of [[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|the theorem]], with $\mathbf{X}^v_0 = D_v|_0$, is $p \mapsto D_v|_p$; by the theorem these are all the left-invariant fields. In [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|linear coordinates]] $\mathbf{X}^v = \sum_i v^i\, \partial_i$ has constant coefficients, so $[\mathbf{X}^v, \mathbf{X}^w] = 0$ by [[§49 Lie Bracket and Lie Algebra#^prop-49-2|Proposition §49.2]].
+
+^pf-ex-50-2
+
+*Uses:* [[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]], [[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|§50.4]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§49 Lie Bracket and Lie Algebra#^prop-49-2|§49.2]]
+
+> [!remark] Remark: Which Bracket on $T_eG$?
+> Through $\mathrm{ev}$, $T_eG$ inherits a bracket, $[v, w] = \big[\mathbf{X}^v, \mathbf{X}^w\big]_e$, the one that makes $\mathrm{ev}$ an isomorphism of [[§49 Lie Bracket and Lie Algebra#^def-49-2|Lie algebras]]. The question is what it is. *Lecture 17:* for $G = \mathrm{GL}(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subset of $\operatorname{Mat}(d, \mathbb{R}) \cong \mathbb{R}^{d^2}$, so that $T_IG = \operatorname{Mat}(d,\mathbb{R})$, and “for all matrix groups, the answer … is just the [[§49 Lie Bracket and Lie Algebra#^ex-49-2|matrix commutator]]”
+>
+> $$
+> [A, B] = AB - BA .
+> $$
+>
+> “That requires computation. You actually have to compute something” — to begin on Monday (Lecture 18). The left-invariant fields are already known ([[§50 Lie Groups and Left-Invariant Vector Fields#^ex-50-1|Example §50.1]]: $\mathbf{X}^A_g = gA$). “This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.”
+>
+> Why left, then? An aside: “Did you ever think what the world would look like if, instead of writing $f(x)$ … we would have written $(x)f$? … Imagine composing functions with that rule. … Everything works much better if you write $(x)f$”: in that notation, composites read in the order the maps are applied.
+
+^rem-50-2
+
+> [!remark]- Connections
+> - The commutator Lie algebra of matrices: [[§49 Lie Bracket and Lie Algebra#^ex-49-2|Ex. §49.2]].
+> - For matrix Lie groups the physics notes prove the answer: the bracket of left-invariant fields becomes $XY - YX$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|QFT Theorem §CB.1.16]], part 3), and $\mathfrak g$ is closed under it ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|QFT Theorem §CB.1.12]]).
+
+**Transcription note (Lecture 17).** Page 46 of the handwritten notes says the construction gives “$\mathbf{X} : M \to TM$”; the manifold is the group, $\mathbf{X} : G \to TG$.

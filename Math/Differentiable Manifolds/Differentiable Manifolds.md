@@ -121,6 +121,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§48
 - [[Injective Proper Immersions Are Embeddings]] (§38.5)
 - [[SU(2) Is a Double Cover of SO(3)]] (§42.4)
 - [[Tangent Bundle Is a Smooth Manifold]] (§45.2)
+- [[The Lie Algebra Is the Tangent Space at the Identity]] (§50.4)
 
 ## Summaries
 - [[Differentiable Manifolds Lee Concordance]]: notation, where the course's route differs from Lee's, the chapter map, and every Lee result cited in these notes with its counterpart here.
