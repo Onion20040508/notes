@@ -60,7 +60,7 @@ Quantization keeps these formulas and reads $\phi$, $\pi$, $H$ and $\mathbf P$ a
 > A Hermitian field $\hat\phi(\mathbf x)$ and momentum density $\hat\pi(\mathbf x)$ satisfying the equal-time relations of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], with Hamiltonian
 >
 > $$
-> \hat H = \int d^3x\,\Bigl[\tfrac12\pi^2 + \tfrac12(\nabla\hat\phi)^2 + \tfrac12m^2\hat\phi^2\Bigr] ,
+> \hat H = \int d^3x\,\Bigl[\tfrac12\hat\pi^2 + \tfrac12(\nabla\hat\phi)^2 + \tfrac12m^2\hat\phi^2\Bigr] ,
 > $$
 >
 > and field momentum $\hat{\mathbf P} = -\int d^3x\,\hat\pi\nabla\hat\phi$: the quantization of $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]), for which classically $\pi = \dot\phi$, with the classical charges of [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]] and [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]] (recalled above) read as operators. That these operators generate time and space translations of the field is [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]].
