@@ -28,12 +28,12 @@ Can one relativistic particle propagate without leaving its light cone? The caus
 
 The remark below uses that $SO^+(1,3)$ is connected: it is the identity component of $O(1,3)$, every element joined to $\mathbb 1$ by a path of boosts times rotations:
 
-![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13]]
+![[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13]]
 
-![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^der-cb-2-13]]
+![[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^der-cb-3-13]]
 
 > [!remark] Remark: Why the future cannot be boosted into the past
-> A second reading of the invariance of $\operatorname{sgn}x^0$: $SO^+(1,3)$ is connected ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-13|Theorem §CB.2.13]]) and acts continuously, and it preserves $x^2$. Along a path $\Lambda(s)$ from $1$ to $\Lambda$, the point $\Lambda(s)x$ of a timelike $x$ moves continuously inside the timelike set, which has two components, $x^0 > 0$ and $x^0 < 0$; so it cannot change component. A spacelike hyperboloid is connected in $3+1$ dimensions and is a single orbit containing points with both signs of $x^0$, which is why $\operatorname{sgn}x^0$ is undefined there ([[§C1a.4 The Lorentz Group#^cau-c1a-4-4|§C1a.4, Caution: The orbit picture depends on the dimension]]). The same orbit fact gives a $\Lambda \in SO^+(1,3)$ with $\Lambda\xi = -\xi$ for every spacelike $\xi$, the step on which the microcausality of the free field rests ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
+> A second reading of the invariance of $\operatorname{sgn}x^0$: $SO^+(1,3)$ is connected ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]]) and acts continuously, and it preserves $x^2$. Along a path $\Lambda(s)$ from $1$ to $\Lambda$, the point $\Lambda(s)x$ of a timelike $x$ moves continuously inside the timelike set, which has two components, $x^0 > 0$ and $x^0 < 0$; so it cannot change component. A spacelike hyperboloid is connected in $3+1$ dimensions and is a single orbit containing points with both signs of $x^0$, which is why $\operatorname{sgn}x^0$ is undefined there ([[§C1a.4 The Lorentz Group#^cau-c1a-4-4|§C1a.4, Caution: The orbit picture depends on the dimension]]). The same orbit fact gives a $\Lambda \in SO^+(1,3)$ with $\Lambda\xi = -\xi$ for every spacelike $\xi$, the step on which the microcausality of the free field rests ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.1 ("A topological way to see it")*
 

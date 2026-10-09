@@ -141,7 +141,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics/mechanics: the polar decomposition of the deformation gradient $F=RU$ into rotation and stretch in continuum mechanics.
-> - Used in Quantum Field Theory: every $\lambda \in SL(2, \mathbb C)$ is $e^hU$, a boost times a rotation, which makes $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$ simply connected — [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|QFT Theorem §CB.9.9]].
+> - Used in Quantum Field Theory: every $\lambda \in SL(2, \mathbb C)$ is $e^hU$, a boost times a rotation, which makes $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$ simply connected — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9|QFT Theorem §CB.10.9]].
 
 %% ex:7.93-fig %%
 > [!example] Example: Polar decomposition pictured

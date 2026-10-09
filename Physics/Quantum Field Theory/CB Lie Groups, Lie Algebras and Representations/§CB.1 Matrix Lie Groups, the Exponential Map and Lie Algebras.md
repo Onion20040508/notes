@@ -7,11 +7,11 @@ section: CB.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings]] →
+← [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover]] →
 
-*Sources (proofs written from these, each checked against the text): B. C. Hall, An Elementary Introduction to Groups and Representations, Chs. 2–5 (https://arxiv.org/abs/math-ph/0005032) · E. Meinrenken, Lie Groups and Lie Algebras, lecture notes, Toronto, Winter 2026, §§2.2, 2.5–2.6, 4 (https://www.math.toronto.edu/mein/teaching/LectureNotes/lie.pdf) · J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Props. 7.11, 8.41, 8.48, Thms. 8.46, 21.31 · Zuoqin Wang, Lie Groups (USTC), Lecture 12 · P. Etingof, Lie Groups and Lie Algebras (MIT 18.755), Prop. 3.15 · Differentiable Manifolds (591) §§11, 16, 25, 33, 35, 49–50 · the user's PHY 513 notes, Ch. 7 §7.2 (with the course's definitions and Theorem §CB.1.21 of PHY 513 Lecture 7, Part A), Ch. 1 §1.3 (the matrix groups, first written in [[§C1a.4 The Lorentz Group|§C1a.4]] and moved here in option-1 batch B3) · Yu §1.3, eqs. (1.50)–(1.57) · B. C. Hall, Quantum Theory for Mathematicians, Ch. 16 · H. Georgi, Lie Algebras in Particle Physics (2nd ed.), §§2.1–2.2 · Yu Zhao-Huan, 量子场论讲义, §3.2 · Peskin & Schroeder, §3.1 · P. Woit, Quantum Theory, Groups and Representations, Ch. 5 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · for SU(2) and SO(3) (CB ordering pass, restated from Quantum Mechanics): Sakurai §§3.1.1, 3.2.5, 3.3.2; the user's 511 notes; the user's series, Part IV, §§11–12.*
+*Sources (proofs written from these, each checked against the text): B. C. Hall, An Elementary Introduction to Groups and Representations, Chs. 2–5 (https://arxiv.org/abs/math-ph/0005032) · E. Meinrenken, Lie Groups and Lie Algebras, lecture notes, Toronto, Winter 2026, §§2.2, 2.5–2.6, 4 (https://www.math.toronto.edu/mein/teaching/LectureNotes/lie.pdf) · J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Props. 7.11, 8.41, 8.48, Thms. 8.46, 21.31 · Zuoqin Wang, Lie Groups (USTC), Lecture 12 · P. Etingof, Lie Groups and Lie Algebras (MIT 18.755), Prop. 3.15 · Differentiable Manifolds (591) §§11, 16, 25, 33, 35, 49–50 · the user's PHY 513 notes, Ch. 7 §7.2 (with the course's definitions of PHY 513 Lecture 7, Part A), Ch. 1 §1.3 (the matrix groups, first written in [[§C1a.4 The Lorentz Group|§C1a.4]] and moved here in option-1 batch B3) · Yu §1.3, eqs. (1.50)–(1.57) · B. C. Hall, Quantum Theory for Mathematicians, Ch. 16 · H. Georgi, Lie Algebras in Particle Physics (2nd ed.), §§2.1–2.2 · Yu Zhao-Huan, 量子场论讲义, §3.2 · Peskin & Schroeder, §3.1 · P. Woit, Quantum Theory, Groups and Representations, Ch. 5 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf).*
 
-How do a matrix group and its Lie algebra determine each other, and which statements about representations may be checked on generators alone? The course's definitions of a matrix Lie group and of its Lie algebra are stated here ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]]); the Math vault has Lie groups, Lie algebras and the tangent spaces of the classical groups ([[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-1|591 Def. §50.1]], [[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]], [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]]). This section and [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings|§CB.2]] supply what lies between them and what the physics chapters use without proof. Here: the matrix exponential, one-parameter subgroups, why the Lie algebra is a *real* Lie algebra, the closed-subgroup theorem, the Lie algebra as the tangent space at the identity, the Lie algebras of the classical groups, and $SU(2)$ as the 3-sphere covering $SO(3)$ twice; in [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings|§CB.2]]: homomorphisms and their differentials, the identity component, the adjoint representation, and the covering and integration theorems behind SU(2) → SO(3) and SL(2,ℂ) → SO⁺(1,3). Statements are numbered in reading order with one counter per section (Definition §CB.1.4, Theorem §CB.1.5, …); boxes shown as embeds keep their home numbers.
+How do a matrix group and its Lie algebra determine each other, and which statements about representations may be checked on generators alone? The course's definitions of a matrix Lie group and of its Lie algebra are stated here ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]]); the Math vault has Lie groups, Lie algebras and the tangent spaces of the classical groups ([[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-1|591 Def. §50.1]], [[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]], [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]]). This section, [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover|§CB.2]] and [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings|§CB.3]] supply what lies between them and what the physics chapters use without proof. Here: the matrix exponential, one-parameter subgroups, why the Lie algebra is a *real* Lie algebra, the closed-subgroup theorem, the Lie algebra as the tangent space at the identity, and the Lie algebras of the classical groups; in [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover|§CB.2]]: the first example, the rotation group $SO(3)$ and $SU(2)$ — rotations as exponentials, $SU(2)$ as the 3-sphere covering $SO(3)$ twice, and their common Lie algebra; in [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings|§CB.3]]: homomorphisms and their differentials, the identity component, the adjoint representation, and the covering and integration theorems behind SU(2) → SO(3) and SL(2,ℂ) → SO⁺(1,3). Statements are numbered in reading order with one counter per section (Definition §CB.1.4, Theorem §CB.1.5, …); boxes shown as embeds keep their home numbers.
 
 ## Recalled: Lie groups, Lie algebras and matrix groups
 
@@ -40,7 +40,7 @@ The matrix groups of the course (first written in [[§C1a.4 The Lorentz Group|§
 
 That $O(1,3)$ is a group, that $\Lambda^{-1} = g^{-1}\Lambda^{\mathsf T}g$ needs no inversion, that $\Lambda^{\mathsf T}$ is again Lorentz ($\Lambda g\Lambda^{\mathsf T} = g$, the "row form"), and that $\det\Lambda = \pm1$ and $|\Lambda^0{}_0| \ge 1$, are [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-13|Theorem §CB.0.13]] (in Relativity: [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]]).
 
-The complex special linear group, the group of the course's Weyl matrices ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]) and, through the spin group, of Minkowski space ([[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.15]]):
+The complex special linear group, the group of the course's Weyl matrices ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]) and, through the spin group, of Minkowski space ([[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.16]]):
 
 > [!definition] Definition §CB.1.2: The Group SL(2, C)
 > $SL(2, \mathbb C) = \{\lambda \in M_2(\mathbb C) : \det\lambda = 1\}$, the complex $2\times2$ matrices of unit determinant, a group under matrix multiplication.
@@ -130,7 +130,7 @@ The course's notion of a matrix Lie group (PHY 513 Lecture 7, Part A):
 >
 > **What the proof shows.**
 > - Every property except part 3 holds for all matrices; part 3 is exactly where commutativity is needed, and its failure is the subject of Theorem §CB.1.8.
-> - Only the submultiplicative norm and completeness are used, so the same proof works for the exponential of any operator on a finite-dimensional space, e.g. of $d(X)$ in a representation ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-8|Theorem §CB.2.8]]).
+> - Only the submultiplicative norm and completeness are used, so the same proof works for the exponential of any operator on a finite-dimensional space, e.g. of $d(X)$ in a representation ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-8|Theorem §CB.3.8]]).
 > - Used next: the determinant (Theorem §CB.1.6), the logarithm (Theorem §CB.1.7) and the one-parameter subgroups $s \mapsto e^{sX}$ (Theorem §CB.1.10).
 
 ^pf-cb-1-5
@@ -140,7 +140,7 @@ The course's notion of a matrix Lie group (PHY 513 Lecture 7, Part A):
 > [!theorem] Theorem §CB.1.6: Determinant of an Exponential
 > For every $X \in M_n(\mathbb C)$, $\det e^X = e^{\operatorname{tr}X}$. In particular $e^X$ has determinant $1$ when $\operatorname{tr}X = 0$, and $\det e^X > 0$ when $X$ is real.
 >
-> *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §4, Thm. 3.10 · used in [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-21|Theorem §CB.1.21]], Derivation, steps 1–2*
+> *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §4, Thm. 3.10 · used in [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]], Derivation, steps 1–2*
 
 ^thm-cb-1-6
 
@@ -165,7 +165,7 @@ The course's notion of a matrix Lie group (PHY 513 Lecture 7, Part A):
 >
 > **What the proof shows.**
 > - $\det\circ\exp = \exp\circ\operatorname{tr}$: the determinant condition of $SL$, $SU$, $SO$ linearizes to a trace condition (used in Theorem §CB.1.17).
-> - $\det e^X > 0$ for real $X$: no real exponential reaches a matrix of negative determinant, e.g. a reflection; this is the algebraic shadow of Theorem §CB.2.10, 2.
+> - $\det e^X > 0$ for real $X$: no real exponential reaches a matrix of negative determinant, e.g. a reflection; this is the algebraic shadow of Theorem §CB.3.10, 2.
 
 ^pf-cb-1-6
 
@@ -265,7 +265,7 @@ The course's notion of a matrix Lie group (PHY 513 Lecture 7, Part A):
 >
 > **What the proof shows.**
 > - ⚑ By-product: to first order in $s$ the group law is addition, $e^{sX}e^{sY} = e^{s(X + Y) + O(s^2)}$; the commutator is the first correction, at order $s^2$, and it is all that the group remembers of non-commutativity at that order → [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-1|§C3.2, Remark: Two boosts make a rotation]].
-> - Part 1 builds $e^{X + Y}$ from products of exponentials of $X$ and $Y$ alone; this is why the Lie algebra of a closed group is closed under addition (Theorem §CB.1.12) and why the differential of a homomorphism is additive (Theorem §CB.2.3).
+> - Part 1 builds $e^{X + Y}$ from products of exponentials of $X$ and $Y$ alone; this is why the Lie algebra of a closed group is closed under addition (Theorem §CB.1.12) and why the differential of a homomorphism is additive (Theorem §CB.3.3).
 > - Part 3 is the bridge from groups to brackets used in Theorem §CB.1.16, 3.
 
 ^pf-cb-1-8
@@ -311,8 +311,8 @@ The course's notion of a matrix Lie group (PHY 513 Lecture 7, Part A):
 >
 > **What the proof shows.**
 > - Continuity alone forces smoothness and the exponential form; nothing about the group beyond the homomorphism property is used.
-> - ⚑ By-product: every continuous homomorphism $\mathbb R \to GL(n, \mathbb C)$ has a generator $X = \gamma'(0)$; for a representation this is the statement that represented one-parameter groups are $e^{s\,d(X)}$ ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-8|Theorem §CB.2.8]], whose derivation assumed smoothness; this theorem removes the assumption).
-> - Used next: the differential of a homomorphism (Theorem §CB.2.3).
+> - ⚑ By-product: every continuous homomorphism $\mathbb R \to GL(n, \mathbb C)$ has a generator $X = \gamma'(0)$; for a representation this is the statement that represented one-parameter groups are $e^{s\,d(X)}$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-8|Theorem §CB.3.8]], whose derivation assumed smoothness; this theorem removes the assumption).
+> - Used next: the differential of a homomorphism (Theorem §CB.3.3).
 
 ^pf-cb-1-10
 
@@ -369,14 +369,14 @@ The course defines the Lie algebra of a matrix Lie group through its one-paramet
 > **Step 6** (real Lie algebra). The commutator is bilinear, antisymmetric and satisfies the Jacobi identity on all of $M_n(\mathbb C)$ ([[§49 Lie Bracket and Lie Algebra#^prop-49-3|591 Prop. §49.3]]), so its restriction to the real subspace $\mathfrak g$, which it maps into $\mathfrak g$ by Step 5, makes $\mathfrak g$ a real Lie algebra ([[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]]).
 >
 > **What the proof shows.**
-> - The definition through one-parameter subgroups with *real* parameter is what makes $\mathfrak g$ real; the physicists' Hermitian generators $T_a = iX_a$ lie outside $\mathfrak g$ → [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-3-6|Theorem §CB.3.6]].
-> - The bracket comes from conjugation (Step 5): it is the derivative of the adjoint action, made precise in Theorem §CB.2.17.
+> - The definition through one-parameter subgroups with *real* parameter is what makes $\mathfrak g$ real; the physicists' Hermitian generators $T_a = iX_a$ lie outside $\mathfrak g$ → [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-6|Theorem §CB.4.6]].
+> - The bracket comes from conjugation (Step 5): it is the derivative of the adjoint action, made precise in Theorem §CB.3.17.
 
 ^pf-cb-1-12
 
 *Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-19|Def. §CB.0.19]], [[§49 Lie Bracket and Lie Algebra#^prop-49-3|591 Prop. §49.3]], [[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]]
 
-A basis of the Lie algebra, its structure constants, and the physicists' Hermitian generators, used from here on (the factor $i$ is analysed in [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification|§CB.3]]):
+A basis of the Lie algebra, its structure constants, and the physicists' Hermitian generators, used from here on (the factor $i$ is analysed in [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification|§CB.4]]):
 
 > [!definition] Definition §CB.1.13: Generators of a Lie Algebra
 > A basis $\{X_a\}$ of a Lie algebra $\mathfrak g$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]]) is a set of **generators**; $[X_a, X_b] = f_{ab}{}^cX_c$ defines the real **structure constants**. Physicists use $T_a = iX_a$: then $[T_a, T_b] = if_{ab}{}^cT_c$ and group elements near $\mathbb 1$ are $e^{-i\theta^aT_a}$.
@@ -433,7 +433,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 >
 > **What the proof shows.**
 > - Closedness enters only through the limit lemma (Step 3); for a non-closed subgroup, such as a line of irrational slope on a torus, it fails and the subgroup is not embedded.
-> - ⚑ By-product: near $\mathbb 1$, $G$ is exactly $\exp$ of a neighbourhood of $0$ in $\mathfrak g$; every statement "check it on generators" rests on this → Theorems §CB.2.10, §CB.2.14, §CB.2.20.
+> - ⚑ By-product: near $\mathbb 1$, $G$ is exactly $\exp$ of a neighbourhood of $0$ in $\mathfrak g$; every statement "check it on generators" rests on this → Theorems §CB.3.10, §CB.3.14, §CB.3.20.
 > - Every matrix Lie group of the course ($SO(3)$, $SU(2)$, $SO^+(1,3)$, $SL(2, \mathbb C)$, $SU(2)\times SU(2)$) is therefore a Lie group in the sense of 591, with no separate regular-value computation needed.
 
 ^pf-cb-1-15
@@ -516,178 +516,13 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 >
 > **What the proof shows.**
 > - Each Lie algebra is the linearization of its group's defining equation at $\mathbb 1$; the dimensions match the manifold dimensions of [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]] (Theorem §CB.1.16, 2).
-> - Discrete conditions (the sign of $\det$, orthochronicity) are invisible to the algebra: $O(n)$ and $SO(n)$, $O(1,3)$ and $SO^+(1,3)$ share their algebras → Theorem §CB.2.10.
-> - Whether the algebra is closed under $i$ depends on the group, not on whether its matrices are complex: $\mathfrak{su}(2)$ is not, $\mathfrak{sl}(2, \mathbb C)$ is → [[§CB.5 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^def-cb-5-7|Def. §CB.5.7]].
+> - Discrete conditions (the sign of $\det$, orthochronicity) are invisible to the algebra: $O(n)$ and $SO(n)$, $O(1,3)$ and $SO^+(1,3)$ share their algebras → Theorem §CB.3.10.
+> - Whether the algebra is closed under $i$ depends on the group, not on whether its matrices are complex: $\mathfrak{su}(2)$ is not, $\mathfrak{sl}(2, \mathbb C)$ is → [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^def-cb-6-7|Def. §CB.6.7]].
 
 ^pf-cb-1-17
 
 *Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-6|Theorem §CB.1.6]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-13|Theorem §CB.0.13]]
 
-## SU(2) and SO(3)
-
-The rotation group and its double cover as matrix groups. The physics home of these statements is Quantum Mechanics ([[§C5.1 Rotations and the Angular-Momentum Commutation Relations|QM §C5.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations|QM §C5.2]]), and the Math vault proves the covering with quaternions ([[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|591 Thm. §42.4]]); they are restated here, with their proofs, in the matrix form the rest of CB uses (CB ordering pass, 2026-10-08):
-
-> [!theorem] Theorem §CB.1.18: Rotations about an Axis Are Exponentials
-> For a unit vector $\hat{\mathbf n} \in \mathbb R^3$ and $\phi \in \mathbb R$ let $R(\hat{\mathbf n}, \phi)$ be the rotation by $\phi$ about $\hat{\mathbf n}$ (counterclockwise seen from the tip of $\hat{\mathbf n}$),
->
-> $$
-> R(\hat{\mathbf n}, \phi)\mathbf V = (\hat{\mathbf n}\cdot\mathbf V)\hat{\mathbf n} + \cos\phi\,\mathbf V_\perp + \sin\phi\,\hat{\mathbf n}\times\mathbf V_\perp, \qquad \mathbf V_\perp = \mathbf V - (\hat{\mathbf n}\cdot\mathbf V)\hat{\mathbf n} .
-> $$
->
-> 1. **Generators.** $R(\hat{\mathbf n}, \phi) \in SO(3)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]), $R(\hat{\mathbf n}, \phi)R(\hat{\mathbf n}, \psi) = R(\hat{\mathbf n}, \phi + \psi)$, and
->
-> $$
-> R(\hat{\mathbf n}, \phi) = \exp(\phi A_{\hat{\mathbf n}}), \qquad A_{\hat{\mathbf n}}\mathbf V = \hat{\mathbf n}\times\mathbf V, \qquad (A_{\hat{\mathbf n}})_{ij} = -\varepsilon_{kij}\,n_k ;
-> $$
->
-> write $A_k$ for $A_{\hat{\mathbf e}_k}$, $(A_k)_{lm} = -\varepsilon_{klm}$.
-> 2. **Their algebra.** $[A_i, A_j] = \varepsilon_{ijk}A_k$.
->
-> *Source: Sakurai §3.1.1, eqs. (3.1)–(3.9) · the user's 511 notes, §"Rotations and Angular Momentum Commutation Relations", §"Finite Versus Infinitesimal Rotations" · the course's version: [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-1|QM Theorem §C5.1.1]], 1–2, the same statement (QM adds the second-order failure of rotations to commute).*
-
-^thm-cb-1-18
-
-> [!proof]- Proof
-> *Adapted from the derivation of QM Theorem §C5.1.1 (Sakurai §3.1.1); the exponential is obtained from Theorem §CB.1.10 instead of a differential equation.*
->
-> **1. A rotation.** Complete $\hat{\mathbf n}$ to a right-handed orthonormal basis $(\hat{\mathbf u}, \hat{\mathbf n}\times\hat{\mathbf u}, \hat{\mathbf n})$. On it $R(\hat{\mathbf n}, \phi)$ fixes $\hat{\mathbf n}$ and sends $\hat{\mathbf u} \mapsto \cos\phi\,\hat{\mathbf u} + \sin\phi\,\hat{\mathbf n}\times\hat{\mathbf u}$, $\hat{\mathbf n}\times\hat{\mathbf u} \mapsto -\sin\phi\,\hat{\mathbf u} + \cos\phi\,\hat{\mathbf n}\times\hat{\mathbf u}$ (because $\hat{\mathbf n}\times(\hat{\mathbf n}\times\hat{\mathbf u}) = -\hat{\mathbf u}$). Its matrix in this basis is $\begin{pmatrix} \cos\phi & -\sin\phi & 0 \\ \sin\phi & \cos\phi & 0 \\ 0 & 0 & 1 \end{pmatrix}$: orthogonal, of determinant $\cos^2\phi + \sin^2\phi = 1$. Orthogonality and the determinant do not depend on the orthonormal basis ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|Theorem §CB.0.15]] for the determinant; $O^{\mathsf T}O = \mathbb 1$ is preserved by orthogonal changes of basis), so $R(\hat{\mathbf n}, \phi) \in SO(3)$.
->
-> **2. A one-parameter group.** In the same basis the $2\times2$ blocks multiply by the addition formulas of $\cos$ and $\sin$: $R(\hat{\mathbf n}, \phi)R(\hat{\mathbf n}, \psi) = R(\hat{\mathbf n}, \phi + \psi)$, and $R(\hat{\mathbf n}, 0) = \mathbb 1$. The entries are smooth in $\phi$. So $\phi \mapsto R(\hat{\mathbf n}, \phi)$ is a one-parameter subgroup ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-9|Def. §CB.1.9]]) and equals $\exp(\phi A)$ with $A = \frac{d}{d\phi}R(\hat{\mathbf n}, \phi)|_{\phi = 0}$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-10|Theorem §CB.1.10]]).
->
-> **3. The generator.** Differentiating the defining formula at $\phi = 0$: $A\mathbf V = \hat{\mathbf n}\times\mathbf V_\perp = \hat{\mathbf n}\times\mathbf V$ (the parallel part has zero cross product). Its $i$-th component is $\varepsilon_{ikj}n_kV_j = -\varepsilon_{kij}n_kV_j$, so $(A_{\hat{\mathbf n}})_{ij} = -\varepsilon_{kij}n_k$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-16|Def. §CB.0.16]]); for $\hat{\mathbf n} = \hat{\mathbf e}_k$, $(A_k)_{lm} = -\varepsilon_{klm}$.
->
-> **4. The bracket.** For every $\mathbf V$, $[A_i, A_j]\mathbf V = \hat{\mathbf e}_i\times(\hat{\mathbf e}_j\times\mathbf V) - \hat{\mathbf e}_j\times(\hat{\mathbf e}_i\times\mathbf V) = (\hat{\mathbf e}_i\times\hat{\mathbf e}_j)\times\mathbf V$ (the Jacobi identity of the cross product, from $\mathbf a\times(\mathbf b\times\mathbf c) = \mathbf b(\mathbf a\cdot\mathbf c) - \mathbf c(\mathbf a\cdot\mathbf b)$), and $\hat{\mathbf e}_i\times\hat{\mathbf e}_j = \varepsilon_{ijk}\hat{\mathbf e}_k$. So $[A_i, A_j] = \varepsilon_{ijk}A_k$.
->
-> **What the proof shows**
-> - The real antisymmetric $A_k$ are a basis of $\mathfrak{so}(3)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]]); the physicists' generators are $J^k = iA_k$, with $[J^i, J^j] = i\varepsilon^{ijk}J^k$ (Theorem §CB.1.21 below).
-> - That every element of $SO(3)$ is some $R(\hat{\mathbf n}, \phi)$, i.e. has an axis, is [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|591 Lemma §42.2]].
-> - Equivalence: this is [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-1|QM Theorem §C5.1.1]], 1–2; QM writes the rotation operators of quantum states, $\mathscr D(R)$, on top of it.
-
-^pf-cb-1-18
-
-*Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|Theorem §CB.0.15]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-9|Def. §CB.1.9]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-10|Theorem §CB.1.10]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-16|Def. §CB.0.16]]
-
-> [!theorem] Theorem §CB.1.19: The Structure of SU(2)
-> 1. Every element of $SU(2)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]) is
->
-> $$
-> U(a, b) = \begin{pmatrix} a & b \\ -b^{\ast} & a^{\ast} \end{pmatrix}, \qquad |a|^2 + |b|^2 = 1,
-> $$
->
-> for unique $a, b \in \mathbb C$; with $a = x_0 + ix_3$, $b = x_2 + ix_1$ the map $U(a, b) \mapsto (x_0, x_1, x_2, x_3)$ is a homeomorphism of $SU(2)$ onto the unit sphere $S^3 \subset \mathbb R^4$. Every element of $U(2)$ is $e^{i\gamma}U(a, b)$ with $\gamma$ real.
-> 2. $U(a_1, b_1)\,U(a_2, b_2) = U(a_1a_2 - b_1b_2^{\ast},\ a_1b_2 + a_2^{\ast}b_1)$ and $U(a, b)^{-1} = U(a^{\ast}, -b)$.
-> 3. For a unit vector $\hat{\mathbf n}$ and $\phi \in \mathbb R$, with $\boldsymbol\sigma$ of [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-19|Def. §CB.0.19]],
->
-> $$
-> \exp\Bigl(-\frac{i\phi}{2}\,\hat{\mathbf n}\cdot\boldsymbol\sigma\Bigr) = \cos\frac\phi2\,\mathbb 1 - i\sin\frac\phi2\,\hat{\mathbf n}\cdot\boldsymbol\sigma = U(a, b), \quad \operatorname{Re}a = \cos\frac\phi2,\ \operatorname{Im}a = -n_3\sin\frac\phi2,\ \operatorname{Re}b = -n_2\sin\frac\phi2,\ \operatorname{Im}b = -n_1\sin\frac\phi2 ,
-> $$
->
-> and every element of $SU(2)$ arises in this way with $0 \le \phi \le 2\pi$.
-> 4. At $\phi = 2\pi$ this matrix is $-\mathbb 1$, at $\phi = 4\pi$ it is $+\mathbb 1$.
->
-> *Source: Sakurai §3.2.5, eqs. (3.60)–(3.67), and §3.3.2, eqs. (3.76)–(3.84) · the user's series, Part IV, §11–§12, eqs. (spin-rotation), (su2-param), (minus-one) · the user's 511 notes, §"Unitary Unimodular Group" · the course's version: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]] (parts 1–3), [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]] (the matrix form of the spin-½ rotation) and [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]] (part 4), stated there for spin-½ rotation operators.*
-
-^thm-cb-1-19
-
-> [!proof]- Proof
-> *Adapted from the derivations of QM Theorems §C5.2.1, §C5.2.3 and §C5.2.5 (Sakurai §3.2.5, §3.3.2); the homeomorphism in part 1 is added.*
->
-> **1. The form U(a, b).** The columns of a unitary matrix are orthonormal ([[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR Thm. 7.57]]). If the first column is $(a, c)^{\mathsf T}$ with $|a|^2 + |c|^2 = 1$, the second, a unit vector orthogonal to it in $\mathbb C^2$, is $\lambda(-c^{\ast}, a^{\ast})^{\mathsf T}$ with $|\lambda| = 1$; then $\det U = \lambda(|a|^2 + |c|^2) = \lambda$. So $\det U = 1$ forces $\lambda = 1$, and with $b = -c^{\ast}$ the matrix is $U(a, b)$. Conversely $U(a, b)^\dagger U(a, b) = \mathbb 1$ by multiplication, and $\det U(a, b) = |a|^2 + |b|^2 = 1$. With $a = x_0 + ix_3$, $b = x_2 + ix_1$ the condition is $x_0^2 + x_1^2 + x_2^2 + x_3^2 = 1$. The map to $(x_0, \dots, x_3)$ reads off real and imaginary parts of two entries, and its inverse writes them back into the matrix: both are continuous (linear in the coordinates), so the bijection is a homeomorphism onto $S^3$. For $U \in U(2)$, $|\det U| = 1$ ([[§37 Determinants#^ladr-9-58|LADR Thm. 9.58]]); write $\det U = e^{2i\gamma}$, then $e^{-i\gamma}U \in SU(2)$.
->
-> **2. Products and inverses.** Multiply the matrices: the first row of $U(a_1, b_1)U(a_2, b_2)$ is $(a_1a_2 - b_1b_2^{\ast},\ a_1b_2 + b_1a_2^{\ast})$, and the product lies in $SU(2)$ (a group, Def. §CB.1.1), so by step 1 it is $U$ of its first row. $U(a, b)U(a^{\ast}, -b)$ has first row $(aa^{\ast} + bb^{\ast},\ -ab + ba) = (1, 0)$, so it is $\mathbb 1$.
->
-> **3. The exponential.** $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \mathbb 1$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]], 3), so $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^k$ is $\mathbb 1$ for even and $\hat{\mathbf n}\cdot\boldsymbol\sigma$ for odd $k$, and the exponential series ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4|Def. §CB.1.4]]) splits into the series of $\cos\frac\phi2$ and $\sin\frac\phi2$. With $\hat{\mathbf n}\cdot\boldsymbol\sigma = \begin{pmatrix} n_3 & n_1 - in_2 \\ n_1 + in_2 & -n_3\end{pmatrix}$ the result is
->
-> $$
-> \begin{pmatrix} \cos\frac\phi2 - in_3\sin\frac\phi2 & (-in_1 - n_2)\sin\frac\phi2 \\ (-in_1 + n_2)\sin\frac\phi2 & \cos\frac\phi2 + in_3\sin\frac\phi2 \end{pmatrix} ,
-> $$
->
-> which is $U(a, b)$ with the stated $a$, $b$ (the lower row is $(-b^{\ast}, a^{\ast})$). Conversely, given $U(a, b)$, choose $\phi \in [0, 2\pi]$ with $\cos\frac\phi2 = \operatorname{Re}a$; then $(\operatorname{Im}a)^2 + |b|^2 = 1 - (\operatorname{Re}a)^2 = \sin^2\frac\phi2$, so for $\sin\frac\phi2 \ne 0$ the vector $\hat{\mathbf n} = -(\operatorname{Im}b, \operatorname{Re}b, \operatorname{Im}a)/\sin\frac\phi2$ is a unit vector satisfying the four equations; for $\sin\frac\phi2 = 0$, $U = \pm\mathbb 1$ and any $\hat{\mathbf n}$ will do.
->
-> **4. Two rotations.** At $\phi = 2\pi$, $\cos\pi = -1$ and $\sin\pi = 0$, so the matrix is $-\mathbb 1$; at $\phi = 4\pi$, $\cos2\pi = 1$, $\sin2\pi = 0$.
->
-> **What the proof shows**
-> - $SU(2)$ is the 3-sphere, and every element lies on a one-parameter subgroup $\phi \mapsto e^{-i\phi\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$; the half angle $\phi/2$ is why the loop $0 \le \phi \le 2\pi$ ends at $-\mathbb 1$ (part 4) → the covering of $SO(3)$, Theorem §CB.1.20.
-> - Equivalence: parts 1–3 are QM Theorem §C5.2.5 with the matrix of QM Theorem §C5.2.1, part 4 is QM Theorem §C5.2.3; QM reads the matrices as spin-½ rotation operators acting on spinors.
-
-^pf-cb-1-19
-
-*Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4|Def. §CB.1.4]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-19|Def. §CB.0.19]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR Thm. 7.57]], [[§37 Determinants#^ladr-9-58|LADR Thm. 9.58]]
-
-> [!theorem] Theorem §CB.1.20: SU(2) Is a Double Cover of SO(3)
-> For $U \in SU(2)$ define a linear map $R(U)$ of $\mathbb R^3$ by
->
-> $$
-> U\,(\mathbf x\cdot\boldsymbol\sigma)\,U^\dagger = \bigl(R(U)\,\mathbf x\bigr)\cdot\boldsymbol\sigma .
-> $$
->
-> Then
-> 1. $R(U) \in SO(3)$, its entries are continuous in $U$, and $R(U_1U_2) = R(U_1)R(U_2)$: $R$ is a continuous homomorphism $SU(2) \to SO(3)$;
-> 2. $R\bigl(\exp(-i\phi\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2)\bigr) = R(\hat{\mathbf n}, \phi)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-18|Theorem §CB.1.18]]), so $R$ is onto;
-> 3. $R(U) = R(U')$ if and only if $U' = \pm U$: the kernel is $\{\mathbb 1, -\mathbb 1\}$, and $SO(3) \cong SU(2)/\{\pm\mathbb 1\}$.
->
-> Each rotation corresponds to exactly two elements $\pm U$; the rotation by $2\pi$, the identity of $SO(3)$, corresponds to $-\mathbb 1$ when reached continuously from $U = \mathbb 1$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-19|Theorem §CB.1.19]], 4).
->
-> *Source: Sakurai §3.3.2, the paragraph after (3.84) · the user's series, Part IV, §12, eqs. (covering-map), (two-to-one) · the user's 511 notes, §"Relationship Between SO(3) and SU(2)" · the Math version, by conjugation of unit quaternions: [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|591 Thm. §42.4]] · the course's version: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], the same statement.*
-
-^thm-cb-1-20
-
-> [!proof]- Proof
-> *Adapted from the derivation of QM Theorem §C5.2.6; the exponential is identified with Theorem §CB.1.10, and the axis of a rotation is quoted from 591.*
->
-> **1. R(U) is a real linear map.** $X = \mathbf x\cdot\boldsymbol\sigma$ runs over the traceless Hermitian $2\times2$ matrices as $\mathbf x$ runs over $\mathbb R^3$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]], 4). $UXU^\dagger$ is again Hermitian and has the same trace ($U^\dagger = U^{-1}$), so it is $\mathbf x'\cdot\boldsymbol\sigma$ for a unique real $\mathbf x'$, depending linearly on $\mathbf x$. By part 5 of the same theorem its components are $x'_i = \frac12\operatorname{tr}(UXU^\dagger\sigma^i)$, so $R(U)_{ij} = \frac12\operatorname{tr}(U\sigma^jU^\dagger\sigma^i)$, a polynomial in the entries of $U$ and $U^{\ast}$: continuous.
->
-> **2. It preserves lengths.** $\det(\mathbf x\cdot\boldsymbol\sigma) = -x_3^2 - (x_1^2 + x_2^2) = -|\mathbf x|^2$, and $\det(UXU^\dagger) = \det X$. So $R(U)$ is orthogonal.
->
-> **3. Homomorphism.** $U_1U_2X(U_1U_2)^\dagger = U_1(U_2XU_2^\dagger)U_1^\dagger$, and $R(\mathbb 1) = \mathbb 1$.
->
-> **4. Part 2, and det R(U) = 1.** Let $U_\phi = \exp(-i\phi\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2)$, a one-parameter subgroup of $SU(2)$. By step 3, $\phi \mapsto R(U_\phi)$ is a one-parameter subgroup of $O(3)$, smooth in $\phi$ (step 1), so it is $\exp(\phi B)$ with $B$ its derivative at $0$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-10|Theorem §CB.1.10]]). Differentiating $U_\phi XU_\phi^\dagger$ at $\phi = 0$ gives $-\frac i2[\hat{\mathbf n}\cdot\boldsymbol\sigma, \mathbf x\cdot\boldsymbol\sigma] = -\frac i2\cdot2i(\hat{\mathbf n}\times\mathbf x)\cdot\boldsymbol\sigma = (\hat{\mathbf n}\times\mathbf x)\cdot\boldsymbol\sigma$, by the vector form $[\mathbf a\cdot\boldsymbol\sigma, \mathbf b\cdot\boldsymbol\sigma] = 2i(\mathbf a\times\mathbf b)\cdot\boldsymbol\sigma$ (Theorem §CB.0.21, 3). So $B\mathbf x = \hat{\mathbf n}\times\mathbf x = A_{\hat{\mathbf n}}\mathbf x$, and $R(U_\phi) = \exp(\phi A_{\hat{\mathbf n}}) = R(\hat{\mathbf n}, \phi)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-18|Theorem §CB.1.18]], 1). Every $U$ is some $U_\phi$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-19|Theorem §CB.1.19]], 3), so every $R(U)$ is a rotation, of determinant $+1$. Onto: every element of $SO(3)$ is a rotation $R(\hat{\mathbf n}, \phi)$ about some axis ([[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|591 Lemma §42.2]]), which is $R(U_\phi)$.
->
-> **5. Part 3.** $R(U) = \mathbb 1$ means $U\sigma^kU^\dagger = \sigma^k$, i.e. $U$ commutes with $\sigma^1, \sigma^2, \sigma^3$, hence with every $2\times2$ matrix (Theorem §CB.0.21, 4); with the matrix units $E_{12}$, $E_{21}$ this forces $U = \lambda\mathbb 1$, and $\det U = \lambda^2 = 1$ gives $\lambda = \pm1$. Both signs lie in the kernel, so the kernel is $\{\pm\mathbb 1\}$ ([[§15 Homomorphisms#^def-15-3|493 Def. §15.3]]), and $R(U) = R(U')$ iff $U^{-1}U'$ is in the kernel. $SU(2)/\{\pm\mathbb 1\} \cong SO(3)$ is the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]). Finally $U_{\phi + 2\pi} = -U_\phi$ (Theorem §CB.1.19, 3–4): continuing $\phi$ from $0$ to $2\pi$ walks from $\mathbb 1$ to $-\mathbb 1$ while $R(\hat{\mathbf n}, \phi)$ returns to $\mathbb 1$.
->
-> **What the proof shows**
-> - The half angle of $U_\phi$ becomes the full angle of $R(U_\phi)$ because $U$ acts on $X$ from both sides.
-> - Near $U = \mathbb 1$ only $U$ itself, not $-U$, is close to $\mathbb 1$: the two groups are locally isomorphic, with the same Lie algebra (Theorem §CB.1.21 below), and globally different (Theorem §CB.9.8).
-> - Equivalence: this is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]]; 591 proves the same covering as $q \mapsto (v \mapsto qv\bar q)$ on unit quaternions ([[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|591 Thm. §42.4]]).
-
-^pf-cb-1-20
-
-*Uses:* [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-10|Theorem §CB.1.10]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-18|Theorem §CB.1.18]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-19|Theorem §CB.1.19]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|591 Lemma §42.2]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]
-
-The rotation case, the course's example (PHY 513 Lecture 7, Part A; the user's PHY 513 notes, Ch. 7 §7.2):
-
-> [!theorem] Theorem §CB.1.21: SO(3) and SU(2) Have the Same Lie Algebra
-> $\mathfrak{so}(3)$ is the space of real antisymmetric $3\times3$ matrices and $\mathfrak{su}(2)$ that of traceless anti-Hermitian $2\times2$ matrices; both are three-dimensional, with physicist's bases
->
-> $$
-> (J^k)_{lm} = -i\varepsilon^{klm}\ \ \text{on } \mathbb C^3, \qquad \tau^k = \tfrac12\sigma^k\ \ \text{on } \mathbb C^2, \qquad [J^i, J^j] = i\varepsilon^{ijk}J^k, \qquad [\tau^i, \tau^j] = i\varepsilon^{ijk}\tau^k .
-> $$
->
-> The map $-i\tau^k \mapsto -iJ^k$ is an isomorphism of Lie algebras, $\mathfrak{su}(2) \cong \mathfrak{so}(3)$: it is the differential at $\mathbb 1$ of the covering map $SU(2) \to SO(3)$.
->
-> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Definition "Group, algebra, representation"; Derivation "The representations of the rotation algebra", Examples) · Yu §3.2, eqs. (3.53)–(3.60) · PS §3.1, eqs. (3.11)–(3.14) · Hall, Prop. 16.22, Ex. 16.34*
-
-^thm-cb-1-21
-
-> [!derivation]- Derivation
-> **1. The algebra of $SO(3)$.** If $e^{sX} \in SO(3)$ for all $s$, differentiate $(e^{sX})^{\mathsf T}e^{sX} = \mathbb 1$ at $s = 0$ (product rule, $(e^{sX})^{\mathsf T} = e^{sX^{\mathsf T}}$): $X^{\mathsf T} + X = 0$. Conversely, if $X^{\mathsf T} = -X$, then $(e^{sX})^{\mathsf T} = e^{-sX} = (e^{sX})^{-1}$, and $\det e^{sX} = e^{s\operatorname{tr}X} = 1$ because an antisymmetric matrix has zero diagonal. So $\mathfrak{so}(3)$ is the antisymmetric matrices, the tangent space of [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]]; a real antisymmetric $3\times3$ matrix has three free entries.
->
-> **2. The algebra of $SU(2)$.** If $e^{sX} \in SU(2)$ for all $s$, differentiating $(e^{sX})^\dagger e^{sX} = \mathbb 1$ gives $X^\dagger = -X$, and $\det e^{sX} = e^{s\operatorname{tr}X} = 1$ for all $s$ forces $\operatorname{tr}X = 0$; the converse is as in step 1. An anti-Hermitian $2\times2$ matrix has four real parameters (two imaginary diagonal entries, one complex off-diagonal entry); zero trace removes one, leaving three. Since $\sigma^1, \sigma^2, \sigma^3$ are Hermitian, traceless and independent ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]]), $\{-i\sigma^k/2\}$ is a basis.
->
-> **3. Physicist's bases and brackets.** $(J^k)_{lm} = -i\varepsilon^{klm}$ is $i$ times the real antisymmetric matrix $(A_k)_{lm} = -\varepsilon^{klm}$ of [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-18|Theorem §CB.1.18]], whose bracket $[A_i, A_j] = \varepsilon^{ijk}A_k$ gives $[J^i, J^j] = i^2\varepsilon^{ijk}A_k = i\varepsilon^{ijk}J^k$. For $\tau^k$: $\sigma^i\sigma^j = \delta^{ij}\mathbb 1 + i\varepsilon^{ijk}\sigma^k$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]]) gives $[\sigma^i, \sigma^j] = i\varepsilon^{ijk}\sigma^k - i\varepsilon^{jik}\sigma^k = 2i\varepsilon^{ijk}\sigma^k$, and dividing by $4$, $[\tau^i, \tau^j] = i\varepsilon^{ijk}\tau^k$. (The Lecture 7 slide "Representations of angular momentum: examples" prints $\sigma^3$ as the identity matrix; $\sigma^3 = \operatorname{diag}(1, -1)$.)
->
-> **4. The isomorphism.** The structure constants agree, so the linear bijection $-i\tau^k \mapsto -iJ^k$ preserves brackets. It is the differential of the covering homomorphism $R : SU(2) \to SO(3)$ of [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-20|Theorem §CB.1.20]]: by part 2 there, $R(e^{-i\theta\hat n\cdot\boldsymbol\sigma/2}) = R(\hat n, \theta) = e^{-i\theta\hat n\cdot\mathbf J}$, and differentiating at $\theta = 0$ sends $-i\hat n\cdot\boldsymbol\tau$ to $-i\hat n\cdot\mathbf J$. ⚑ By-product: the algebra, which sees only a neighbourhood of $\mathbb 1$, cannot tell the two groups apart; whether a representation of it belongs to $SO(3)$ or only to $SU(2)$ is a global question → [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-10|Theorem §CB.9.10]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-8|Theorem §CB.9.8]].
->
-> **What the derivation shows**
-> - Antisymmetry ($SO$) and anti-Hermiticity with zero trace ($SU$) are the linearized defining conditions; the dimension count $3 = 3$ is why the algebras can coincide.
-> - The factor $i$ turns real antisymmetric and anti-Hermitian generators into Hermitian ones; it changes no structure constant → [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification#^rem-cb-3-1|Remark: The physicist's i]].
-> - The course's computation of the bracket of the $J^k$, with $\hbar$: [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^ex-c5-1-2|QM Example §C5.1.2]] (moved here from step 3, CB ordering pass).
-> - Used next: every representation of either group is a representation of this one algebra ([[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-8|Theorem §CB.2.8]]).
-
-^der-cb-1-21
-
-*Uses:* [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-18|Theorem §CB.1.18]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-20|Theorem §CB.1.20]]
-
 > [!remark]- Connections
-> - The real Lie algebra of Theorem §CB.1.12 is the reason for [[§CB.3 Real Lie Algebras, the Physicists' i and Complexification|§CB.3]]: the physicists' Hermitian generators and the ladder combinations $J^\pm$, $\mathbf J_\pm$ live outside $\mathfrak g$, in $i\mathfrak g$ and in the complexification.
-> - **Used in**: Definition §CB.1.1 — [[§C1a.4 The Lorentz Group|§C1a.4]] (embedded), [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (cited in the text), [[§C9.1 Discrete Lorentz Transformations|§C9.1]] (embedded; cited in [[§C9.1 Discrete Lorentz Transformations#^def-c9-1-1|Def. §C9.1.1]]); Definition §CB.1.2 — [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields|§C3.2]] (cited in [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (embedded; cited in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]]); Definition §CB.1.4–Theorem §CB.1.6 — the exponentials of rotations and boosts and their determinants ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-21|Theorem §CB.1.21]]), the finite quantum Poincaré transformations ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]); Theorem §CB.1.8 — two boosts make a rotation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-1|§C3.2, Remark: Two boosts make a rotation]]); Theorems §CB.1.12–§CB.1.17 — the course's Lie algebras ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]); Definition §CB.1.3 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded); Definition §CB.1.11 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]] (embedded); Definition §CB.1.13 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded); Theorem §CB.1.18 — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-20|Theorem §CB.1.20]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-21|Theorem §CB.1.21]], [[§CB.4 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-4-5|Theorem §CB.4.5]]; Theorem §CB.1.19 — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-20|Theorem §CB.1.20]], [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-2-8|Theorem §CB.2.8]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-16|Theorem §CB.6.16]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-21|Theorem §CB.6.21]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-8|Theorem §CB.9.8]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|Theorem §CB.9.9]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-10|Theorem §CB.9.10]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-7|Theorem §CB.15.7]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9|Theorem §CB.15.9]]; Theorem §CB.1.20 — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-21|Theorem §CB.1.21]], [[§CB.6 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-6-16|Theorem §CB.6.16]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-8|Theorem §CB.9.8]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-10|Theorem §CB.9.10]], [[§CB.14 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-14-3|Theorem §CB.14.3]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9|Theorem §CB.15.9]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-10|Theorem §CB.15.10]]; Theorem §CB.1.21 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded); Theorem §CB.1.10 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (embedded).
+> - The real Lie algebra of Theorem §CB.1.12 is the reason for [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification|§CB.4]]: the physicists' Hermitian generators and the ladder combinations $J^\pm$, $\mathbf J_\pm$ live outside $\mathfrak g$, in $i\mathfrak g$ and in the complexification.
+> - **Used in**: Definition §CB.1.1 — [[§C1a.4 The Lorentz Group|§C1a.4]] (embedded), [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (cited in the text), [[§C9.1 Discrete Lorentz Transformations|§C9.1]] (embedded; cited in [[§C9.1 Discrete Lorentz Transformations#^def-c9-1-1|Def. §C9.1.1]]); Definition §CB.1.2 — [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields|§C3.2]] (cited in [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (embedded; cited in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]]); Definition §CB.1.4–Theorem §CB.1.6 — the exponentials of rotations and boosts and their determinants ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]]), the finite quantum Poincaré transformations ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]); Theorem §CB.1.8 — two boosts make a rotation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-1|§C3.2, Remark: Two boosts make a rotation]]); Theorems §CB.1.12–§CB.1.17 — the course's Lie algebras ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]); Definition §CB.1.3 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded); Definition §CB.1.11 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]] (embedded); Definition §CB.1.13 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (embedded); Theorem §CB.1.10 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (embedded).

@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.2, pp. 40–44, eqs. (3.22)–(3.25), (3.41)–(3.42), and §3.4, p. 50 · the user's PHY 513 notes, Ch. 8 §8.1 (The Dirac representation: Definition "The Dirac (Clifford) algebra", paragraphs "Square to ±1, or square root?" and "Uniqueness (Pauli's fundamental theorem)", Derivations "Checking the Dirac algebra in the chiral basis" and "Hermiticity of the Dirac matrices"), §8.2 (Derivation "The double cover made explicit"), §8.3 (What each spinor index labels) · PHY 513 Lecture 7 (Larsen), Part B ("There are many realizations of $\gamma^\mu$"); Lecture 8, Cheat Sheet I and Part C · PHY 513, Problem Set 5, Problem 5 (as the user wrote it; submitted) · Yu Zhao-Huan, 量子场论讲义, §5.1, eqs. (5.1)–(5.7), (5.45), §5.2, eqs. (5.68)–(5.75), Exercise 3.7, eqs. (3.259)–(3.260) · the user's pre-course notes, §5.1–§5.2 · Axler, Linear Algebra Done Right (the vault's Linear Algebra notes), linked where used · the basis-free organization written here · PHY 513, Problem Set 6, Problem 3(a) (the user's solution).*
 
-What is a Dirac spinor before anyone writes a column of four numbers, and what do the $\gamma$ matrices add to it? A spinor is first of all a vector of a four-dimensional complex vector space $V$; everything else is structure added on top, one layer at a time (the map is [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-5|§C5a.0, Remark: The structure of spinor space, layer by layer]]). This section builds the first two layers. **Layer 1** is $V$ itself with its bases: components, matrices of linear maps, and the change-of-basis rules, which are the change-of-basis formula of linear algebra and nothing more ([[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR Thm. 3.84]]), with the slot rule that decides which factor each index receives. **Layer 2** is the Clifford action: four linear maps $\Gamma^\mu$ on $V$ with $\Gamma^\mu\Gamma^\nu + \Gamma^\nu\Gamma^\mu = 2g^{\mu\nu}$, whose matrices in a basis are the Dirac matrices; their first consequences, the sixteen products, the eigenvalues, the chiral basis as one choice, and Pauli's theorem, which says that spinor space with its Clifford action is unique and that a choice of $\gamma$ matrices is a choice of basis. Both layers are mathematics: linear algebra in components ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors|§CB.0]]) and the theory of Clifford modules ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.10]]–[[§CB.12 Complex Clifford Algebras and Clifford Modules|§CB.12]]), shown in the blocks below; this section keeps spinor space as the carrier of the Dirac field, the matrices $\sigma^\mu$, $\bar\sigma^\mu$ and the chiral basis, and Hermiticity is [[§C5a.2 The Dirac Form|§C5a.2]]. The Dirac matrices of Quantum Mechanics enter here as one such choice ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]). The Dirac form, the Lorentz action and chirality are the next layers ([[§C5a.2 The Dirac Form|§C5a.2]]–[[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]).
+What is a Dirac spinor before anyone writes a column of four numbers, and what do the $\gamma$ matrices add to it? A spinor is first of all a vector of a four-dimensional complex vector space $V$; everything else is structure added on top, one layer at a time (the map is [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-5|§C5a.0, Remark: The structure of spinor space, layer by layer]]). This section builds the first two layers. **Layer 1** is $V$ itself with its bases: components, matrices of linear maps, and the change-of-basis rules, which are the change-of-basis formula of linear algebra and nothing more ([[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR Thm. 3.84]]), with the slot rule that decides which factor each index receives. **Layer 2** is the Clifford action: four linear maps $\Gamma^\mu$ on $V$ with $\Gamma^\mu\Gamma^\nu + \Gamma^\nu\Gamma^\mu = 2g^{\mu\nu}$, whose matrices in a basis are the Dirac matrices; their first consequences, the sixteen products, the eigenvalues, the chiral basis as one choice, and Pauli's theorem, which says that spinor space with its Clifford action is unique and that a choice of $\gamma$ matrices is a choice of basis. Both layers are mathematics: linear algebra in components ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors|§CB.0]]) and the theory of Clifford modules ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.13 Complex Clifford Algebras and Clifford Modules|§CB.13]]), shown in the blocks below; this section keeps spinor space as the carrier of the Dirac field, the matrices $\sigma^\mu$, $\bar\sigma^\mu$ and the chiral basis, and Hermiticity is [[§C5a.2 The Dirac Form|§C5a.2]]. The Dirac matrices of Quantum Mechanics enter here as one such choice ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]). The Dirac form, the Lorentz action and chirality are the next layers ([[§C5a.2 The Dirac Form|§C5a.2]]–[[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]).
 
 *Conventions* ([[Larsen PHY 513]]): $g = \operatorname{diag}(+,-,-,-)$; chiral basis when a basis is fixed; spinor indices are Latin $a, b, c, d \in \{1, 2, 3, 4\}$, never raised or lowered, all written as subscripts, contracted by plain sums; spacetime indices Greek ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-2|§C5b.2, Caution: u is not a four-vector]]). Operators on $V$ are written $\Gamma^\mu$, $M$, …, their matrices $\gamma^\mu$, …; $\operatorname{End}(V)$ is the space of linear maps $V \to V$ (Axler's $\mathcal L(V)$). The identity matrix in $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ is usually not written. Pauli matrices $\boldsymbol\sigma = (\sigma^1, \sigma^2, \sigma^3)$, with the product rule of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]. $\psi$ is a c-number spinor or a classical field (no hat); the quantum field is $\hat\psi$.
 
@@ -73,34 +73,34 @@ The slots of spinor tensors — covectors, operators and the index rule — and 
 
 Layer 2 is the Clifford action: the Dirac matrices, their first consequences (Remark: A square root of p² below reads part 2), the Dirac maps on $V$ and their matrices in any basis:
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11]]
+![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12]]
+![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-12]]
+![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-12]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-14]]
+![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-14]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15]]
+![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-15]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-15]]
+![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-15]]
 
 The sixteen products are a basis of $M_4(\mathbb C)$, and the eigenvalues of the Dirac maps follow from the trace:
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-8]]
+![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9]]
+![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-9]]
+![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-9]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10]]
+![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-10]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-10]]
+![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-10]]
 
 ## The Clifford algebra
 
 > [!remark] Remark: A square root of p²
-> The handwritten question "square to $\pm1$, or square root?" has a precise answer: for a momentum $p$, $p_\mu\gamma^\mu$ is a matrix square root of the number $p^2$ (Theorem §CB.10.12, 2). This is what Dirac was after: a first-order operator whose square is the Klein–Gordon operator, $(i\gamma^\mu\partial_\mu)^2 = -\partial^2$, so that a first-order equation implies $(\partial^2 + m^2)\psi = 0$ ([[§C13.2★ The Dirac Equation#^rem-c13-2-1|QM, Remark: The square root of the Klein–Gordon operator]]; [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]). No number squares to $p^2$ as a linear function of $p$; anticommuting matrices do, because the cross terms cancel in pairs. Run backwards, the requirement forces the algebra: [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]] (the equivalence), [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]] (no commuting coefficients), [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]] (even size, at least four).
+> The handwritten question "square to $\pm1$, or square root?" has a precise answer: for a momentum $p$, $p_\mu\gamma^\mu$ is a matrix square root of the number $p^2$ (Theorem §CB.11.12, 2). This is what Dirac was after: a first-order operator whose square is the Klein–Gordon operator, $(i\gamma^\mu\partial_\mu)^2 = -\partial^2$, so that a first-order equation implies $(\partial^2 + m^2)\psi = 0$ ([[§C13.2★ The Dirac Equation#^rem-c13-2-1|QM, Remark: The square root of the Klein–Gordon operator]]; [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]). No number squares to $p^2$ as a linear function of $p$; anticommuting matrices do, because the cross terms cancel in pairs. Run backwards, the requirement forces the algebra: [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]] (the equivalence), [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|Theorem §C5a.0.2]] (no commuting coefficients), [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]] (even size, at least four).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (paragraph "Square to ±1, or square root?")*
 
@@ -110,19 +110,19 @@ The sixteen products are a basis of $M_4(\mathbb C)$, and the eigenvalues of the
 
 The chiral basis below is one choice among all bases, because spinor space with its Clifford action is unique and a choice of $\gamma$ matrices is a choice of basis:
 
-![[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-7]]
+![[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-7]]
 
-![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12]]
+![[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12]]
 
-![[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-12]]
+![[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-12]]
 
-![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-13]]
+![[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-13]]
 
-![[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-13]]
+![[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-13]]
 
-![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14]]
+![[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-14]]
 
-![[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-14]]
+![[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-14]]
 
 ## The chiral basis
 
@@ -207,7 +207,7 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 
 > [!remark]- Connections
 > - The index rule for spinors is the same slot rule as for spacetime tensors, with $U$ in place of $\Lambda$ and no metric to raise or lower; spinor indices are matrix indices of the third kind in the index-slot classification — [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^def-c3-1-1|Def. §C3.1.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]].
-> - $\sigma^\mu$ and $\bar\sigma^\mu$ are to Weyl spinors what $\gamma^\mu$ is to Dirac spinors, and $\gamma^\mu$ is literally built from them in the chiral basis — [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7|Theorem §CB.17.7]].
+> - $\sigma^\mu$ and $\bar\sigma^\mu$ are to Weyl spinors what $\gamma^\mu$ is to Dirac spinors, and $\gamma^\mu$ is literally built from them in the chiral basis — [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]].
 > - The sixteen products are the matrices of the fermion bilinears (scalar, pseudoscalar, vector, axial vector, tensor) and of every trace identity used in scattering amplitudes — [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]].
 > - Component by component, the quantum field is four operators $\hat\psi_a$ with c-number coefficients $u^s_a(p)$; a change of basis acts on the index $a$ of both, never on the mode operators — [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-3|§C5b.2, Remark: A spinor-valued operator, component by component]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-2|§C5b.2, Caution: u is not a four-vector]].
 > - The layers of spinor space mirror those of Minkowski space: a vector space, then an algebraic structure (the Clifford product here, the metric there), then a group that preserves it; for spinors the Clifford action comes before any group, and the Lorentz algebra is built from it — [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]].

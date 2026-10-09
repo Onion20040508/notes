@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.3 (Derivation "Example: the helicity basis (Problem Set 5, Problem 6)"), §9.4 (Normalization and spin sums), §9.5 (Negative-frequency solutions: normalizations, orthogonality, spin sum, "Why neither spin sum is the identity"), §9.7 (Summary) and "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts B and C · the user's write-up of PHY 513, Problem Set 5, Problem 6 (submitted) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.52)–(3.67) · Yu Zhao-Huan, 量子场论讲义, §5.4.2, eqs. (5.158)–(5.214) · the user's pre-course notes, §5.4 ("Helicity spinors in the Weyl representation", notes "Fixing the normalization constants", "Rest frame, and what ω_λω_{−λ} = m means", "Checking the spin sums").*
 
-How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9]] ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) normalized, how do they sit relative to each other, and what survives of them in a computation? Every answer here is a short calculation with the square-root identities ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]) and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), whose rows $\bar u^s(p)$, $\bar v^s(p)$ are [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]. The results — $\bar uu = 2m$, $u^\dagger u = 2E_{\mathbf p}$, $\bar vv = -2m$, the orthogonality relations and the spin sums $\sum u\bar u = \slashed{p} + m$, $\sum v\bar v = \slashed{p} - m$ — are what later amplitudes and the quantized field use. The section ends with the helicity basis, in which no matrix square root is needed, and the massless limit, where helicity becomes chirality ([[§C3.7★ Massless Particles and Helicity|§C3.7★]]). The covariance of $\gamma^\mu$, the invariance of the Dirac form and $\gamma^5$ are mathematics ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.11]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.17]]), shown in the blocks below.
+How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9]] ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) normalized, how do they sit relative to each other, and what survives of them in a computation? Every answer here is a short calculation with the square-root identities ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]) and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), whose rows $\bar u^s(p)$, $\bar v^s(p)$ are [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]. The results — $\bar uu = 2m$, $u^\dagger u = 2E_{\mathbf p}$, $\bar vv = -2m$, the orthogonality relations and the spin sums $\sum u\bar u = \slashed{p} + m$, $\sum v\bar v = \slashed{p} - m$ — are what later amplitudes and the quantized field use. The section ends with the helicity basis, in which no matrix square root is needed, and the massless limit, where helicity becomes chirality ([[§C3.7★ Massless Particles and Helicity|§C3.7★]]). The covariance of $\gamma^\mu$, the invariance of the Dirac form and $\gamma^5$ are mathematics ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.12]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]), shown in the blocks below.
 
 *Conventions* as in [[§C5a.9 Plane-Wave Solutions|§C5a.9]]: chiral basis, $p^0 = E_{\mathbf p} > 0$, $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, so for a row $(a^\dagger, b^\dagger)$ the product $(a^\dagger, b^\dagger)\gamma^0 = (b^\dagger, a^\dagger)$ exchanges the halves. $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ are Hermitian ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]), so $(\sqrt{p\cdot\sigma}\,\xi)^\dagger = \xi^\dagger\sqrt{p\cdot\sigma}$; the conjugate rows, derived once, are $\bar u^s(p) = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]) and $\bar v^s(p) = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]). $\tilde p \equiv (E_{\mathbf p}, -\mathbf p)$ is $p$ with the three-momentum reversed.
 
@@ -19,21 +19,21 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9
 
 The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rotate as a vector and $\Lambda_{1/2}$ preserves the Dirac form:
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-17]]
+![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17]]
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-13-17]]
+![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-17-7]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-17-7b]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-17-13]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-17-13b]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b]]
 
 ## Normalization
 
@@ -329,13 +329,13 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 ^thm-c5a-10-9
 
 > [!derivation]- Derivation
-> **Step 1** (the $\gamma$'s as an invariant vector). $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7|Theorem §CB.17.7]]). Multiply from the left by $\Lambda_{1/2}$ and from the right by $\Lambda_{1/2}^{-1}$: $\gamma^\mu = \Lambda^\mu{}_\nu\,\Lambda_{1/2}\gamma^\nu\Lambda_{1/2}^{-1}$.
+> **Step 1** (the $\gamma$'s as an invariant vector). $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]]). Multiply from the left by $\Lambda_{1/2}$ and from the right by $\Lambda_{1/2}^{-1}$: $\gamma^\mu = \Lambda^\mu{}_\nu\,\Lambda_{1/2}\gamma^\nu\Lambda_{1/2}^{-1}$.
 >
 > **Step 2** (contract with $(\Lambda p)_\mu$). $(\Lambda p)_\mu\Lambda^\mu{}_\nu = p_\nu$, because $(\Lambda p)\cdot(\Lambda a) = p\cdot a$ for every $a$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]), i.e. $(\Lambda p)_\mu\Lambda^\mu{}_\nu a^\nu = p_\nu a^\nu$ for all $a^\nu$. So $\slashed{(\Lambda p)} = (\Lambda p)_\mu\gamma^\mu = p_\nu\Lambda_{1/2}\gamma^\nu\Lambda_{1/2}^{-1} = \Lambda_{1/2}\slashed{p}\,\Lambda_{1/2}^{-1}$. The number $m$ commutes with $\Lambda_{1/2}$: part 1. (The sign ambiguity of $\Lambda_{1/2}$ cancels between $\Lambda_{1/2}$ and $\Lambda_{1/2}^{-1}$.)
 >
 > **Step 3** (transformed solutions). $(\slashed{(\Lambda p)} - m)\Lambda_{1/2}u^s = \Lambda_{1/2}(\slashed{p} - m)\Lambda_{1/2}^{-1}\Lambda_{1/2}u^s = \Lambda_{1/2}(\slashed{p} - m)u^s = 0$.
 >
-> **Step 4** (the conjugate). $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]]), so $\overline{\Lambda_{1/2}w} = w^\dagger\Lambda_{1/2}^\dagger\gamma^0 = w^\dagger\gamma^0\Lambda_{1/2}^{-1} = \bar w\,\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]). Then $\sum_s(\Lambda_{1/2}u^s)\overline{(\Lambda_{1/2}u^s)} = \Lambda_{1/2}\bigl(\sum_su^s\bar u^s\bigr)\Lambda_{1/2}^{-1} = \Lambda_{1/2}(\slashed{p} + m)\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)} + m$ by [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]] and part 1. Same for $v$ with [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]. Part 2.
+> **Step 4** (the conjugate). $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]), so $\overline{\Lambda_{1/2}w} = w^\dagger\Lambda_{1/2}^\dagger\gamma^0 = w^\dagger\gamma^0\Lambda_{1/2}^{-1} = \bar w\,\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]). Then $\sum_s(\Lambda_{1/2}u^s)\overline{(\Lambda_{1/2}u^s)} = \Lambda_{1/2}\bigl(\sum_su^s\bar u^s\bigr)\Lambda_{1/2}^{-1} = \Lambda_{1/2}(\slashed{p} + m)\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)} + m$ by [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]] and part 1. Same for $v$ with [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]. Part 2.
 >
 > **What the derivation shows**
 > - $\Lambda_{1/2}u^s(p)$ need not equal $u^s(\Lambda p)$ (for a boost not along $\mathbf p$ the spin labels are rotated by a Wigner rotation, [[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]]), but the spin sum does not care: it depends only on the solution space.
@@ -343,7 +343,7 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 
 ^der-c5a-10-9
 
-*Uses:* [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7|Theorem §CB.17.7]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]
+*Uses:* [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|Theorem §C5a.10.8]]
 
 > [!theorem] Theorem §C5a.10.10: Completeness and the Energy Projectors
 > Let $m > 0$, $u^s$, $v^s$ as in [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], and $\Lambda_\pm(p) \equiv \dfrac{\pm\slashed{p} + m}{2m}$. Then
@@ -556,16 +556,16 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 
 In the massless limit helicity becomes chirality, the eigenvalue of $\gamma^5$, whose eigenspaces are the Weyl halves:
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14]]
+![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-17-4]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4]]
 
 ## The massless and high-energy limit
 
 > [!theorem] Theorem §C5a.10.14: The Massless and High-Energy Limit: Helicity Becomes Chirality
-> 1. For $m = 0$: $u_+(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}0\\ \xi_+\end{pmatrix}$, $u_-(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}\xi_-\\ 0\end{pmatrix}$, and $\gamma^5u_\pm = \pm u_\pm$ ($\gamma^5$ of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14|Def. §CB.11.14]]): positive helicity lives entirely in the right-handed Weyl half $\psi_R$, negative helicity in $\psi_L$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]); helicity $\pm\frac12$ equals chirality $\pm1$ (divided by 2).
+> 1. For $m = 0$: $u_+(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}0\\ \xi_+\end{pmatrix}$, $u_-(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}\xi_-\\ 0\end{pmatrix}$, and $\gamma^5u_\pm = \pm u_\pm$ ($\gamma^5$ of [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]]): positive helicity lives entirely in the right-handed Weyl half $\psi_R$, negative helicity in $\psi_L$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]); helicity $\pm\frac12$ equals chirality $\pm1$ (divided by 2).
 > 2. For $m > 0$, $E_{\mathbf p} \gg m$: the dominant half has amplitude $\sqrt{E + |\mathbf p|} = \sqrt{2E}\,(1 + O(m^2/E^2))$ and the other half $\sqrt{E - |\mathbf p|} = m/\sqrt{E + |\mathbf p|} \approx m/\sqrt{2E}$, so $u_\pm \to \sqrt{2E}\,(0, \xi_+)$, $\sqrt{2E}\,(\xi_-, 0)$ with corrections of relative size $m/2E$.
 > 3. The $v$'s of [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-13|Theorem §C5a.10.13]] at $m = 0$: $v(p, +) = \sqrt{2E}(\xi_-, 0)$, $v(p, -) = \sqrt{2E}(0, \xi_+)$: the column of helicity $-\lambda/2$ sits in the Weyl half of that helicity.
 >

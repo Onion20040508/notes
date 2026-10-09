@@ -48,7 +48,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Computational version: [[§52 Simply Connected Domains#^def-52-1|342 Def. §52.1]] (B&C's simply connected domains, every [[§43 Contours#^def-43-10|simple closed contour]] enclosing only points of the domain).
-> - Used in Quantum Field Theory: $SL(2, \mathbb C)$ is simply connected, and the Lorentz group $SO^+(1,3)$ is not — [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|QFT Theorem §CB.9.9]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9|QFT Theorem §CB.15.9]].
+> - Used in Quantum Field Theory: $SL(2, \mathbb C)$ is simply connected, and the Lorentz group $SO^+(1,3)$ is not — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9|QFT Theorem §CB.10.9]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|QFT Theorem §CB.16.9]].
 
 > [!theorem] Lemma §29.1: Paths in Simply Connected Spaces
 > In a simply connected space $X$, any two paths having the same initial and terminal points are [[§28 Homotopy of Paths#^def-28-4|path homotopic]].
@@ -353,7 +353,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The direct product in 493: [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]]; the map Φ is the homomorphism given by its universal property, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 Prop. §18.3]].
-> - Used in Quantum Field Theory: $\pi_1(\mathbb R^3\times S^3)$ is trivial and $\pi_1(\mathbb R^3\times SO(3)) \cong \mathbb Z_2$, the fundamental groups of $SL(2, \mathbb C)$ and of the Lorentz group — [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|QFT Theorem §CB.9.9]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9|QFT Theorem §CB.15.9]].
+> - Used in Quantum Field Theory: $\pi_1(\mathbb R^3\times S^3)$ is trivial and $\pi_1(\mathbb R^3\times SO(3)) \cong \mathbb Z_2$, the fundamental groups of $SL(2, \mathbb C)$ and of the Lorentz group — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9|QFT Theorem §CB.10.9]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|QFT Theorem §CB.16.9]].
 
 > [!theorem] Corollary §29.8: Fundamental Group of the Torus
 > $\pi_1(S^1 \times S^1) \cong \pi_1(S^1) \times \pi_1(S^1) \cong \mathbb{Z} \times \mathbb{Z}$.

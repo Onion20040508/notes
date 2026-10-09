@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 1 §§1.4–1.5, Ch. 2 §2.3 ("Derivatives") · PHY 513 Lecture 1 (Larsen), Part C; Problem Set 1, as recorded in the user's notes · Yu Zhao-Huan, 量子场论讲义, §§1.4–1.5.*
 
-What index calculus does field theory need, and why are its rules consequences rather than conventions? Relativity level B is the home of four-vectors, the metric and index gymnastics ([[§B1.1 The Metric and Index Notation|REL §B1.1]]), tensors defined by their components, the invariant tensors, the Levi-Civita symbol as a pseudotensor, the gradient as a covector and the covariance principle ([[§B2.2 Tensors and the Covariance Principle|REL §B2.2]]); with $c = 1$ they hold here unchanged and are linked, not restated. This section adds what field theory uses on top: tensors as multilinear maps (so that the transformation law is derived), the contraction identities of $\varepsilon$ and its link to determinants, the $\varepsilon^{0123}$ convention against Peskin–Schroeder, the decomposition of a two-tensor and duality, and calculus with indices: plane waves, functions of $x^2$, Taylor expansion as the generator of translations, and derivatives with respect to four-vectors and tensor components, the tool behind every Euler–Lagrange equation and Noether current of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]]. The linear algebra underneath, the dual space, tensors as multilinear maps and the transformation law that multilinearity forces, is mathematics ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors|§CB.0]]), and so is the representation theory that says which pieces of a two-tensor no Lorentz transformation mixes and which are irreducible ([[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors|§CB.7]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.17]]); they are shown in the blocks below, and this section keeps the index calculus with the metric.
+What index calculus does field theory need, and why are its rules consequences rather than conventions? Relativity level B is the home of four-vectors, the metric and index gymnastics ([[§B1.1 The Metric and Index Notation|REL §B1.1]]), tensors defined by their components, the invariant tensors, the Levi-Civita symbol as a pseudotensor, the gradient as a covector and the covariance principle ([[§B2.2 Tensors and the Covariance Principle|REL §B2.2]]); with $c = 1$ they hold here unchanged and are linked, not restated. This section adds what field theory uses on top: tensors as multilinear maps (so that the transformation law is derived), the contraction identities of $\varepsilon$ and its link to determinants, the $\varepsilon^{0123}$ convention against Peskin–Schroeder, the decomposition of a two-tensor and duality, and calculus with indices: plane waves, functions of $x^2$, Taylor expansion as the generator of translations, and derivatives with respect to four-vectors and tensor components, the tool behind every Euler–Lagrange equation and Noether current of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]]. The linear algebra underneath, the dual space, tensors as multilinear maps and the transformation law that multilinearity forces, is mathematics ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors|§CB.0]]), and so is the representation theory that says which pieces of a two-tensor no Lorentz transformation mixes and which are irreducible ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors|§CB.8]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]); they are shown in the blocks below, and this section keeps the index calculus with the metric.
 
 ## The mathematics used here
 
@@ -187,9 +187,9 @@ The dual space, tensors as multilinear maps and the transformation law they forc
 
 The metric and the Levi-Civita symbol are invariant tensors, $\varepsilon$ only up to $\det\Lambda$ (the law recalled below and Theorem §C1a.5.4):
 
-![[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-14]]
+![[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-14]]
 
-![[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-7-14]]
+![[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-14]]
 
 ## The Levi-Civita symbol
 
@@ -313,23 +313,23 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 
 ### The mathematics used here: decomposing a two-tensor
 
-Theorem §C1a.5.5 splits a two-tensor into pieces that no Lorentz transformation mixes: the symmetric and antisymmetric parts are subrepresentations, and irreducible means, as in Def. §CB.2.7, having no smaller invariant subspace:
+Theorem §C1a.5.5 splits a two-tensor into pieces that no Lorentz transformation mixes: the symmetric and antisymmetric parts are subrepresentations, and irreducible means, as in Def. §CB.3.7, having no smaller invariant subspace:
 
-![[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-13]]
+![[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13]]
 
-![[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-7-13]]
+![[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-13]]
 
-![[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7]]
+![[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-7]]
 
 That the pieces are irreducible, and that the antisymmetric part splits over $\mathbb C$ into the two eigenspaces of duality of Theorem §C1a.5.6, is the representation theory of two-index tensors and two-forms:
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-17-12]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-12]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-11]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-11]]
 
-![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-17-11]]
+![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-11]]
 
 ## Decomposing a two-tensor; duality
 
@@ -340,7 +340,7 @@ That the pieces are irreducible, and that the antisymmetric part splits over $\m
 > T^{\mu\nu} = \underbrace{\Bigl(T^{(\mu\nu)} - \tfrac14g^{\mu\nu}T^\rho{}_\rho\Bigr)}_{\text{symmetric traceless: }9} + \underbrace{T^{[\mu\nu]}}_{\text{antisymmetric: }6} + \underbrace{\tfrac14g^{\mu\nu}T^\rho{}_\rho}_{\text{trace: }1},
 > $$
 >
-> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (That each is irreducible under $SO^+(1,3)$ over $\mathbb R$ is representation theory, [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], irreducible in the sense of [[§CB.2 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-2-7|Def. §CB.2.7]].)
+> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (That each is irreducible under $SO^+(1,3)$ over $\mathbb R$ is representation theory, [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]], irreducible in the sense of [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-7|Def. §CB.3.7]].)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Irreducible pieces of a two-tensor"), eq. (decomposition) · PHY 513 Lecture 1, Part C ("Irreducible parts of two-tensor representation")*
 

@@ -180,7 +180,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > [!remark]- Connections
 > - Stereographic projection first appeared for $S^1$ and $S^2$ in [[§20 Local Compactness#^ex-20-7|One-Point Compactification of ℝ and ℝ²]].
 > - Recomputed with van Kampen in [[§39 The Seifert–van Kampen Theorem#^ex-39-1|Simply Connected Spheres via van Kampen]].
-> - Used in Quantum Field Theory: $S^3 \cong SU(2)$ is simply connected, hence so is $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$ — [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|QFT Theorem §CB.9.9]].
+> - Used in Quantum Field Theory: $S^3 \cong SU(2)$ is simply connected, hence so is $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$ — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9|QFT Theorem §CB.10.9]].
 
 > [!remark] Remark
 > $S^n$ ($n \geq 2$) and a one-point space have the same $\pi_1$ — both trivial. But they are not [[§35 Deformation Retracts and Homotopy Type#^def-35-2|homotopy equivalent]] ($S^n$ is not [[§35 Deformation Retracts and Homotopy Type#^def-35-4|contractible]], which can be detected by higher homotopy groups or homology).
