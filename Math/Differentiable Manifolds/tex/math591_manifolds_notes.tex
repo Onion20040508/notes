@@ -278,7 +278,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[gray!35, dashed] (-2.5,-4.8) -- (11.4,-4.8);
 \draw[gray!35, dashed] (-2.5,-8.85) -- (11.4,-8.85);
 \draw[gray!35, dashed] (-2.5,-12.75) -- (11.4,-12.75);
-\node[draw=red!60!black, fill=red!4, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (LG) at (4.6,-22.3) {\textbf{Vector fields and Lie groups} \ref*{sec:fields}--\ref*{sec:lie-groups}\\ vector fields, the Lie bracket, Lie groups};
+\node[draw=red!60!black, fill=red!4, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (LG) at (4.6,-22.3) {\textbf{Vector fields and Lie groups} \ref*{sec:fields}--\ref*{sec:lie-groups}\\ vector fields, differential operators, the Lie bracket, related fields, Lie groups};
 \draw[->, thick, gray!70] (BF) -- node[pos=0.28, font=\scriptsize, fill=white, inner sep=1.5pt] {sections of $TM$} (LG);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-22.3) {Ch.~7};
 \draw[gray!35, dashed] (-2.5,-21.15) -- (11.4,-21.15);
@@ -6405,23 +6405,43 @@ For linear $L$, $L_{*a}(D_v|_a)[g] = D_v|_a[g \circ L] = \frac{d}{dt}\big|_0\, g
 This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential \emph{is} the Jacobian, and between vector spaces it is the map of Theorem~\ref{thm:vs-differential-curves}. It also closes a loop opened in \S\ref{sub:derivations-motivation}, where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
 \end{rembox}
 
-\begin{rembox}[Translations Identify the Tangent Spaces of a Vector Space]\label{rem:translations-identify}
+\begin{rembox}[Any Vector Space Will Do]\label{rem:translations-identify}
 \textit{Lecture~17.} Nothing above needs $\mathbb{R}^N$: the ambient space can be any finite-dimensional vector space $V$, because the velocity
 \[
 \gamma'(0) = \lim_{h \to 0} \frac{1}{h}\big(\gamma(h) - \gamma(0)\big)
 \]
-makes sense in any vector space with a topology in which to take the limit (``you could take it in a Banach space \ldots\ if you're doing functional analysis''). Moreover, all the tangent spaces of $V$ are identified with one another, and with $V$, by \emph{translations}: for $p \in V$ (``I want to call it $p$ because I want to think of it as a point''), the translation
+makes sense in any vector space with a topology in which to take the limit (``you could take it in a Banach space \ldots\ if you're doing functional analysis'').
+\end{rembox}
+
+Moreover, all the tangent spaces of $V$ are identified with one another, and with $V$, by \emph{translations}.
+
+\begin{defbox}[Translation]\deflabel{def:translation}
+Let $V$ be a finite-dimensional vector space and $p \in V$ (``I want to call it $p$ because I want to think of it as a point''). The \textbf{translation} by $p$ is
 \[
 \tau_p : V \to V, \qquad \tau_p(v) = v + p ,
 \]
-is the unique translation mapping $0$ to $p$, and its pushforward $(\tau_p)_{*0} : T_0V \to T_pV$ is the identification. \textit{(Filled in: it is the identification of Corollary~\ref{cor:tangent-vs}.)} $\tau_p$ is a diffeomorphism, with inverse $\tau_{-p}$, and
+the unique translation mapping $0$ to $p$.
+\end{defbox}
+
+\begin{propbox}[Translations Identify the Tangent Spaces of a Vector Space]\thmlabel{prop:translations-identify}
+Let $V$ be a finite-dimensional vector space and $p \in V$.
+\begin{enumerate}
+    \item $\tau_p$ is a diffeomorphism of $V$, with inverse $\tau_{-p}$.
+    \item $(\tau_p)_{*0} : T_0V \to T_pV$ is a linear isomorphism, and $(\tau_p)_{*0}\big(D_v|_0\big) = D_v|_p$ for every $v \in V$.
+\end{enumerate}
+So the composite $V \cong T_0V \to T_pV$ is $v \mapsto D_v|_p$, the identification of Corollary~\ref{cor:tangent-vs}.
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~17: ``its pushforward is the identification''; filled in.)} (1) In linear coordinates $\tau_p$ is $x \mapsto x + \tilde p$, smooth, and so is its inverse $\tau_{-p}$. (2) The pushforward along a diffeomorphism is an isomorphism (Corollary~\ref{lem:germs-diffeo}), and for $g$ smooth near $p$,
 \[
-(\tau_p)_{*0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g],
+(\tau_p)_{*0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g] . \qedhere
 \]
-so $(\tau_p)_{*0}(D_v|_0) = D_v|_p$: the composite $V \cong T_0V \to T_pV$ is $v \mapsto D_v|_p$. ``This is a canonical way to identify all of these tangent vectors. \ldots\ That's what we did already'': a geometric tangent vector to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
+\end{proof}
+
+``This is a canonical way to identify all of these tangent vectors. \ldots\ That's what we did already'': a geometric tangent vector to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
 
 \textbf{Transcription note (Lecture 17).} Page~45 of the handwritten notes writes the identification as ``$T_pM \cong T_0V \cong V$''; it is $T_pV \cong T_0V \cong V$.
-\end{rembox}
 
 Uribe added: ``this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.'' For fixed $v$, the field $p \mapsto D_v|_p$ is the left-invariant field, with value $D_v|_0$ at the identity, of the Lie group $(V, +)$ (Example~\ref{ex:vs-lie-algebra}).
 
@@ -10542,7 +10562,11 @@ The set of all vector fields on $M$ is denoted
 \[
 \mathfrak{X}(M) \qquad \text{(\LaTeX: \texttt{\textbackslash mathfrak\{X\}})}.
 \]
-It is a real vector space under pointwise addition and scalar multiplication.
+For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, $c \in \mathbb{R}$ and $f \in C^\infty(M)$, the sum, the scalar multiple and the product with $f$ are defined pointwise, in the vector space $T_pM$:
+\[
+(\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p, \qquad (c\mathbf{X})_p = c\, \mathbf{X}_p, \qquad (f\mathbf{X})_p = f(p)\, \mathbf{X}_p, \qquad p \in M .
+\]
+Proposition~\ref{prop:vf-vector-space} shows that these are again vector fields and that $\mathfrak{X}(M)$ is a real vector space.
 \leeref{Ch.~8, \emph{Vector Fields on Manifolds}}
 \end{defbox}
 
@@ -10566,6 +10590,40 @@ and $\mathbf{X}$ is smooth on $U$ if and only if the coefficient functions $\mat
 \begin{proof}
 \textit{(Stated in Lecture~15, ``analogously'' to one-forms; filled in.)} The expansion is the basis theorem at each point, with coefficients $\mathbf{X}_p[x^j]$ (Theorem~\ref{thm:tangent-basis}). In the chart $\tilde\varphi$ of $TM$ (Definition~\ref{def:tb-chart}) the coordinate representation of $\mathbf{X}$ is $r \mapsto \big(r, \mathbf{X}^1(\varphi^{-1}(r)), \ldots, \mathbf{X}^m(\varphi^{-1}(r))\big)$, smooth exactly when every $\mathbf{X}^j \circ \varphi^{-1}$ is.
 \end{proof}
+
+\begin{propbox}[The Space of Vector Fields Is a Real Vector Space]\thmlabel{prop:vf-vector-space}
+Let $M$ be a smooth manifold.
+\begin{enumerate}
+    \item If $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$, then $\mathbf{X} + \mathbf{Y}$ and $c\mathbf{X}$ (Definition~\ref{def:vector-fields-space}) are vector fields.
+    \item The zero field $\mathbf{0}$, $\mathbf{0}_p = 0_p \in T_pM$, is a vector field.
+    \item With these operations $\mathfrak{X}(M)$ is a real vector space, with zero vector $\mathbf{0}$ and additive inverse $-\mathbf{X} = (-1)\mathbf{X}$.
+    \item More generally, if $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, then $f\mathbf{X}$ is a vector field.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture: the notes stated the vector-space structure without proof; filled in.)} \emph{The operations give sections.} At each $p$, $\mathbf{X}_p + \mathbf{Y}_p$, $c\,\mathbf{X}_p$, $f(p)\,\mathbf{X}_p$ and $0_p$ lie in $T_pM$, a real vector space (Definition~\ref{def:abstract-tangent}); so each of $\mathbf{X} + \mathbf{Y}$, $c\mathbf{X}$, $f\mathbf{X}$, $\mathbf{0}$ assigns to every $p$ a tangent vector at $p$, a section of $TM$.
+
+\emph{(1), (2), (4): smoothness.} Let $(U, (x^j))$ be a chart. By Proposition~\ref{prop:vf-coords}, $\mathbf{X} = \sum_j \mathbf{X}^j\, \partial/\partial x^j$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial x^j$ on $U$ with smooth coefficients. At each $p \in U$, by linearity in $T_pM$,
+\[
+(\mathbf{X} + \mathbf{Y})_p = \sum_j \big(\mathbf{X}^j(p) + \mathbf{Y}^j(p)\big) \frac{\partial}{\partial x^j}\Big|_p, \qquad (f\mathbf{X})_p = \sum_j f(p)\, \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p, \qquad \mathbf{0}_p = \sum_j 0 \cdot \frac{\partial}{\partial x^j}\Big|_p ,
+\]
+so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By Proposition~\ref{prop:vf-coords} again these sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
+
+\emph{(3): the axioms.} Each axiom is an equality of vector fields, that is, of their values at every $p \in M$, and there it is the corresponding axiom of the vector space $T_pM$. Explicitly, for $\mathbf{X}, \mathbf{Y}, \mathbf{Z} \in \mathfrak{X}(M)$, $a, b \in \mathbb{R}$ and every $p \in M$:
+\begin{itemize}
+    \item commutativity: $(\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p = \mathbf{Y}_p + \mathbf{X}_p = (\mathbf{Y} + \mathbf{X})_p$;
+    \item associativity: $\big((\mathbf{X} + \mathbf{Y}) + \mathbf{Z}\big)_p = (\mathbf{X}_p + \mathbf{Y}_p) + \mathbf{Z}_p = \mathbf{X}_p + (\mathbf{Y}_p + \mathbf{Z}_p) = \big(\mathbf{X} + (\mathbf{Y} + \mathbf{Z})\big)_p$;
+    \item zero: $(\mathbf{X} + \mathbf{0})_p = \mathbf{X}_p + 0_p = \mathbf{X}_p$;
+    \item inverses: $\big(\mathbf{X} + (-1)\mathbf{X}\big)_p = \mathbf{X}_p - \mathbf{X}_p = 0_p = \mathbf{0}_p$;
+    \item unit: $(1\mathbf{X})_p = 1 \cdot \mathbf{X}_p = \mathbf{X}_p$;
+    \item compatibility: $\big((ab)\mathbf{X}\big)_p = (ab)\,\mathbf{X}_p = a\,(b\,\mathbf{X}_p) = \big(a(b\mathbf{X})\big)_p$;
+    \item distributivity: $\big(a(\mathbf{X} + \mathbf{Y})\big)_p = a\,\mathbf{X}_p + a\,\mathbf{Y}_p = (a\mathbf{X} + a\mathbf{Y})_p$ and $\big((a + b)\mathbf{X}\big)_p = a\,\mathbf{X}_p + b\,\mathbf{X}_p = (a\mathbf{X} + b\mathbf{X})_p$.
+\end{itemize}
+So $\mathfrak{X}(M)$ is a real vector space.
+\end{proof}
+
+By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ --- the same pointwise check gives $(fg)\mathbf{X} = f(g\mathbf{X})$, $(f + g)\mathbf{X} = f\mathbf{X} + g\mathbf{X}$ and $f(\mathbf{X} + \mathbf{Y}) = f\mathbf{X} + f\mathbf{Y}$ --- which is what Uribe meant by ``an algebra over the smooth functions'' in Lecture~17. It is infinite-dimensional as a real vector space (for $\dim M \ge 1$), but over $C^\infty(U)$ the fields on a chart domain $U$ have the basis $\partial/\partial x^1, \ldots, \partial/\partial x^m$ (Proposition~\ref{prop:vf-coords}).
 
 \begin{rembox}[Vector Fields and One-Forms Side by Side]\label{rem:fields-side-by-side}
 \begin{center}
@@ -11260,37 +11318,7 @@ an equality of functions. Evaluate at $p$: $\chi(p) = 1$ and $f(p) = 0$, so $0 =
 ``Derivations are local, thanks to the product rule and the existence of bump functions.\@''
 
 
-\textit{Lecture~15, after stating the lemma (proved above in Lecture~16): ``I want to make an observation.''}
-
-\begin{defbox}[Multiplication Operator]\deflabel{def:multiplication-operator}
-For $g \in C^\infty(M)$, the \textbf{multiplication operator} $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
-\end{defbox}
-
-\begin{defbox}[Differential Operators]\deflabel{def:differential-operator}
-The \textbf{ring of differential operators} on $M$, written $\mathrm{Diff}(M)$ here, is the subring of the $\mathbb{R}$-linear maps $C^\infty(M) \to C^\infty(M)$ (with sum and composition) generated by
-\[
-D_\mathbf{X} \quad (\mathbf{X} \in \mathfrak{X}(M)) \qquad \text{and} \qquad m_g \quad (g \in C^\infty(M)) ,
-\]
-the operators of Lemma~\ref{lem:vf-derivation} and Definition~\ref{def:multiplication-operator}. Its elements, the \textbf{differential operators}, are the finite sums of finite composites of such operators.
-\end{defbox}
-
-Uribe: ``I can take a vector field, apply it \ldots\ I can compose that with multiplication by a function, or compose it with another vector field, and do finitely many of these things, and add linear combinations of such things.'' (The name $\mathrm{Diff}(M)$ is not from lecture.)
-
-\begin{exbox}[Differential Operators in Coordinates]\exlabel{ex:differential-operators}
-\textit{(Not from lecture.)} On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$. On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$: for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. So in a chart a differential operator is a finite sum $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ --- ``they are given by differential expressions in local coordinates.''
-\end{exbox}
-
-\begin{rembox}[Differential Operators Are Local]\label{rem:differential-operators}
-Every differential operator is a local operator (Definition~\ref{def:local-operator}). \textit{(Lecture~15: ``these are all local operators''; the reason is filled in.)} The generators are local: $(m_g f)(p) = g(p) f(p)$ depends only on $f(p)$, and $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs (Definition~\ref{def:derivation}). Sums and composites of local operators are local: if $f|_U = g|_U$ then $(Pf)|_U = (Pg)|_U$, and applying $Q$ gives $(QPf)|_U = (QPg)|_U$.
-\end{rembox}
-
-\begin{thmbox}[Local Operators Are Differential Operators]\thmlabel{thm:peetre}
-Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a neighbourhood $U$ on which, in a chart, $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for some $k$ and smooth $a_\alpha$. Conversely, every differential operator is local (Remark~\ref{rem:differential-operators}).
-\end{thmbox}
-
-\begin{proof}[Proof (not given in this course)]
-Stated in Lecture~15 ``FYI'': ``There's a theorem which is that every local operator \ldots\ is a differential operator, and conversely, of course, the converse is easy. \ldots\ We're not going to prove this theorem, but it's true.'' It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
-\end{proof}
+\textit{Lecture~15, after stating the lemma (proved above in Lecture~16): ``I want to make an observation.''} The observation was the ring of differential operators, generated by the operators $D_\mathbf{X}$ and the multiplications by functions, all of whose elements are local; it is collected, with what follows from it, in the next section, \ref{sec:diff-ops}.
 
 \textit{Lecture~16 proved the converse of Lemma~\ref{lem:vf-derivation}. ``It's not an immediate thing at all \ldots\ tangent vectors are defined in terms of germs'', local objects near a point, ``whereas'' a derivation of $C^\infty(M)$ ``a priori'' acts on functions on all of $M$. Locality (Lemma~\ref{lem:derivation-local}) is half the bridge; the other half is that germs can be globalized (Corollary~\ref{cor:germ-extension}).}
 
@@ -11342,7 +11370,163 @@ smooth by hypothesis. So $\mathbf{X}$ is smooth on $V$, by Proposition~\ref{prop
 
 
 % ============================================================================
-% SECTION: THE LIE BRACKET
+% SECTION: DIFFERENTIAL OPERATORS
+% ============================================================================
+
+\section{Differential Operators}\label{sec:diff-ops}\label{sub:diff-ops}
+
+\roadmark{Stage: fields}{Vector fields and multiplications by functions generate a ring of operators on $C^\infty(M)$; its elements have an order, and in a chart they are the linear partial differential operators with smooth coefficients.}
+
+\textit{Lecture~15 introduced the ring of differential operators in passing, as an aside to the locality of derivations (Lemma~\ref{lem:derivation-local}): its definition, the fact that its elements are local, and Peetre's theorem ``FYI''. Those are collected here. Everything else in this subsection --- the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in \ref{sec:lie-bracket} --- is not from lecture; it makes precise the remark that differential operators ``are given by differential expressions in local coordinates.''}
+
+\begin{defbox}[Multiplication Operator]\deflabel{def:multiplication-operator}
+For $g \in C^\infty(M)$, the \textbf{multiplication operator} $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
+\end{defbox}
+
+\begin{propbox}[Multiplication Operators]\thmlabel{prop:mult-operators}
+Let $g, h \in C^\infty(M)$ and $c \in \mathbb{R}$. Then $m_g$ is an $\mathbb{R}$-linear operator (Definition~\ref{def:operator}), and
+\begin{enumerate}
+    \item $m_{g + h} = m_g + m_h$, $m_{gh} = m_g \circ m_h$, $m_1 = \mathrm{id}$ and $m_c = c\, \mathrm{id}$ (writing $c$ also for the constant function);
+    \item $m_g$ determines $g$: $g = m_g(1)$, so $m_g = m_h$ only if $g = h$.
+\end{enumerate}
+So $g \mapsto m_g$ is an injective ring homomorphism from $C^\infty(M)$ into the linear operators, whose image $\{ m_g \}$ is a \emph{commutative} subring: $m_g \circ m_h = m_{gh} = m_{hg} = m_h \circ m_g$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Linearity: $g(af_1 + bf_2) = a\, gf_1 + b\, gf_2$. For (1), evaluate at a function $f$ and a point $p$: $(g + h)(p) f(p) = g(p) f(p) + h(p) f(p)$, $(gh)(p) f(p) = g(p)\big(h(p) f(p)\big)$, $1 \cdot f(p) = f(p)$ and $c f(p) = c\, f(p)$. For (2), $m_g(1) = g \cdot 1 = g$.
+\end{proof}
+
+\begin{defbox}[Differential Operators]\deflabel{def:differential-operator}
+The \textbf{ring of differential operators} on $M$, written $\mathrm{Diff}(M)$ here, is the subring of the $\mathbb{R}$-linear maps $C^\infty(M) \to C^\infty(M)$ (with sum and composition) generated by
+\[
+D_\mathbf{X} \quad (\mathbf{X} \in \mathfrak{X}(M)) \qquad \text{and} \qquad m_g \quad (g \in C^\infty(M)) ,
+\]
+the operators of Lemma~\ref{lem:vf-derivation} and Definition~\ref{def:multiplication-operator}. Its elements, the \textbf{differential operators}, are the finite sums of finite composites of such operators.
+\end{defbox}
+
+Uribe: ``I can take a vector field, apply it \ldots\ I can compose that with multiplication by a function, or compose it with another vector field, and do finitely many of these things, and add linear combinations of such things.'' (The name $\mathrm{Diff}(M)$ is not from lecture.)
+
+\begin{propbox}[Vector Fields and Multiplication Operators]\thmlabel{prop:vf-mult-commutation}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $g \in C^\infty(M)$. Then
+\begin{enumerate}
+    \item $m_g \circ D_\mathbf{X} = D_{g\mathbf{X}}$, for the vector field $g\mathbf{X}$ of Definition~\ref{def:function-times-field};
+    \item $D_\mathbf{X} \circ m_g = m_g \circ D_\mathbf{X} + m_{\mathbf{X}g}$, where $\mathbf{X}g = D_\mathbf{X} g$.
+\end{enumerate}
+In words: a multiplication can always be moved to the \emph{left} of a vector field, at the cost of the extra term $m_{\mathbf{X}g}$, which contains no vector field.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Let $f \in C^\infty(M)$ and $p \in M$. (1) $g\mathbf{X}$ is a vector field by Proposition~\ref{prop:vf-vector-space}(4), and $(m_g D_\mathbf{X} f)(p) = g(p)\, \mathbf{X}_p[f] = \big(g(p)\, \mathbf{X}_p\big)[f] = (g\mathbf{X})_p[f] = (D_{g\mathbf{X}} f)(p)$. (2) By the product rule for the derivation $D_\mathbf{X}$ (Lemma~\ref{lem:vf-derivation}),
+\[
+D_\mathbf{X}(m_g f) = D_\mathbf{X}(gf) = g\, D_\mathbf{X} f + f\, D_\mathbf{X} g = (m_g \circ D_\mathbf{X}) f + m_{\mathbf{X}g} f . \qedhere
+\]
+\end{proof}
+
+\begin{exbox}[Differential Operators in Coordinates]\exlabel{ex:differential-operators}
+\textit{(Not from lecture.)} On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$, of order $2$ (Definition~\ref{def:diff-op-order} below). On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one, also of order $2$. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$ (Proposition~\ref{prop:vf-mult-commutation}(2)): for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. Rewriting every composite in this way is how Proposition~\ref{prop:diff-op-coords} below puts any differential operator, in a chart, in the form $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ --- ``they are given by differential expressions in local coordinates.''
+\end{exbox}
+
+\begin{defbox}[Order of a Differential Operator]\deflabel{def:diff-op-order}
+For an integer $k \ge 0$, $\mathrm{Diff}_k(M)$ is the set of finite sums of composites $A_1 \circ \cdots \circ A_r$ of generators (each $A_i$ a $D_\mathbf{X}$ or an $m_g$, Definition~\ref{def:differential-operator}) in which \emph{at most $k$} of the factors are of the form $D_\mathbf{X}$; the empty composite ($r = 0$) is $\mathrm{id}$. Set $\mathrm{Diff}_{-1}(M) = \{0\}$. A differential operator $P$ has \textbf{order at most $k$} if $P \in \mathrm{Diff}_k(M)$, and \textbf{order $k$} if moreover $P \notin \mathrm{Diff}_{k-1}(M)$.
+\end{defbox}
+
+The order counts the fewest vector-field factors with which $P$ can be written, not the number in a given expression: the next example is written with one vector field but has order $0$.
+
+\begin{exbox}[A Commutator in One Variable]\exlabel{ex:weyl-commutator}
+\textit{(Not from lecture.)} On $M = \mathbb{R}$, with $\partial = D_{\partial/\partial x}$ and $m_x$ multiplication by the coordinate $x$,
+\[
+\partial \circ m_x - m_x \circ \partial = \mathrm{id}, \qquad \text{that is,} \quad (xf)' - x f' = f .
+\]
+So $\mathrm{Diff}(\mathbb{R})$ is not commutative, unlike its subring of multiplications (Proposition~\ref{prop:mult-operators}); and the operator on the left, written with one vector-field factor in each term, has order $0$. The operators with polynomial coefficients, generated by $\partial$ and $m_x$, form the \emph{Weyl algebra}; in quantum mechanics the same relation, for $i\hbar\,\partial$ and $m_x$, is the canonical commutation relation.
+\end{exbox}
+
+\begin{proof}
+By Proposition~\ref{prop:vf-mult-commutation}(2) with $\mathbf{X} = \partial/\partial x$ and $g = x$: $\partial \circ m_x = m_x \circ \partial + m_{x'} = m_x \circ \partial + m_1$, and $m_1 = \mathrm{id}$.
+\end{proof}
+
+\begin{propbox}[The Order Filtration]\thmlabel{prop:diff-filtration}
+Let $M$ be a smooth manifold.
+\begin{enumerate}
+    \item $\mathrm{Diff}_0(M) \subseteq \mathrm{Diff}_1(M) \subseteq \mathrm{Diff}_2(M) \subseteq \cdots$, each $\mathrm{Diff}_k(M)$ is closed under sums, and $\bigcup_k \mathrm{Diff}_k(M) = \mathrm{Diff}(M)$.
+    \item $\mathrm{Diff}_k(M) \circ \mathrm{Diff}_l(M) \subseteq \mathrm{Diff}_{k+l}(M)$: orders add, at most, under composition.
+    \item $\mathrm{Diff}_0(M) = \{ m_g : g \in C^\infty(M) \}$.
+    \item $\mathrm{Diff}_1(M) = \{ m_g + D_\mathbf{X} : g \in C^\infty(M),\ \mathbf{X} \in \mathfrak{X}(M) \}$, and $g$ and $\mathbf{X}$ are determined by the operator $P = m_g + D_\mathbf{X}$: $g = P(1)$ and $D_\mathbf{X} = P - m_{P(1)}$.
+\end{enumerate}
+In particular the derivations of $C^\infty(M)$ are exactly the $P \in \mathrm{Diff}_1(M)$ with $P(1) = 0$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} (1) A composite with at most $k$ vector-field factors has at most $k + 1$; sums of finite sums are finite sums; and every composite has some finite number of vector-field factors.
+
+(2) Composition distributes over sums, $(P_1 + P_2) \circ Q = P_1 \circ Q + P_2 \circ Q$, and, because the operators are linear, $Q \circ (P_1 + P_2) = Q \circ P_1 + Q \circ P_2$. So it suffices to compose two composites with at most $k$ and at most $l$ vector-field factors; the result is a composite with at most $k + l$.
+
+(3) A composite with no vector-field factor is $m_{g_1} \circ \cdots \circ m_{g_r} = m_{g_1 \cdots g_r}$, and a sum $\sum_i m_{h_i} = m_{\sum_i h_i}$ (Proposition~\ref{prop:mult-operators}(1)); conversely $m_g \in \mathrm{Diff}_0(M)$.
+
+(4) A composite with exactly one vector-field factor $D_\mathbf{X}$ is $m_a \circ D_\mathbf{X} \circ m_b$, where $m_a$ is the composite of the multiplications to the left of it and $m_b$ that of those to the right (by (3); $a = 1$ or $b = 1$ if there are none). By Proposition~\ref{prop:vf-mult-commutation},
+\[
+m_a \circ D_\mathbf{X} \circ m_b = m_a \circ \big( m_b \circ D_\mathbf{X} + m_{\mathbf{X}b} \big) = D_{ab\mathbf{X}} + m_{a\,\mathbf{X}b} .
+\]
+So every composite with at most one vector-field factor is of the form $m_g + D_\mathbf{Y}$, and so is a sum of such: $(m_g + D_\mathbf{X}) + (m_h + D_\mathbf{Y}) = m_{g+h} + D_{\mathbf{X}+\mathbf{Y}}$, since $(\mathbf{X} + \mathbf{Y})_p[f] = \mathbf{X}_p[f] + \mathbf{Y}_p[f]$ and $\mathbf{X} + \mathbf{Y} \in \mathfrak{X}(M)$ (Proposition~\ref{prop:vf-vector-space}). Conversely $m_g + D_\mathbf{X} \in \mathrm{Diff}_1(M)$. For the uniqueness, a derivation kills constants: $D(1) = D(1 \cdot 1) = 2\, D(1)$, so $D(1) = 0$. Hence $P(1) = g \cdot 1 + D_\mathbf{X}(1) = g$, then $D_\mathbf{X} = P - m_g$, and $D_\mathbf{X}$ determines $\mathbf{X}$ by the uniqueness in Proposition~\ref{prop:derivations-are-fields}.
+
+For the last sentence: $D_\mathbf{X}$ lies in $\mathrm{Diff}_1(M)$ and kills $1$; conversely if $P = m_g + D_\mathbf{X}$ has $P(1) = 0$ then $g = 0$ and $P = D_\mathbf{X}$, a derivation (Lemma~\ref{lem:vf-derivation}).
+\end{proof}
+
+\begin{defbox}[Multi-Index Notation]\deflabel{def:multi-index}
+A \textbf{multi-index} is an $m$-tuple $\alpha = (\alpha_1, \ldots, \alpha_m)$ of integers $\alpha_i \ge 0$, with \textbf{order} $|\alpha| = \alpha_1 + \cdots + \alpha_m$ and $\alpha! = \alpha_1! \cdots \alpha_m!$. In a chart $(U, (x^1, \ldots, x^m))$, with $\partial_i = \partial/\partial x^i$ acting on $C^\infty(U)$,
+\[
+\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}, \qquad (x - c)^\alpha = (x^1 - c^1)^{\alpha_1} \cdots (x^m - c^m)^{\alpha_m} \quad (c \in \mathbb{R}^m),
+\]
+and $\partial^{(0, \ldots, 0)} = \mathrm{id}$. Write $\beta \le \alpha$ if $\beta_i \le \alpha_i$ for every $i$, and $e_j$ for the multi-index with $1$ in place $j$ and $0$ elsewhere.
+\end{defbox}
+
+\begin{propbox}[Differential Operators in a Chart]\thmlabel{prop:diff-op-coords}
+Let $P \in \mathrm{Diff}_k(M)$ and let $(U, (x^1, \ldots, x^m))$ be a chart. Then there are \emph{unique} functions $a_\alpha \in C^\infty(U)$, one for each multi-index $\alpha$ with $|\alpha| \le k$ (Definition~\ref{def:multi-index}), such that
+\[
+(Pf)\big|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha \big(f|_U\big) \qquad \text{for all } f \in C^\infty(M).
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} \emph{Existence.} Call an operator $Q$ on $C^\infty(U)$ \emph{of form $j$} if $Q = \sum_{|\alpha| \le j} b_\alpha\, \partial^\alpha$ with $b_\alpha \in C^\infty(U)$. By linearity it suffices to show: if $A_1 \circ \cdots \circ A_r$ is a composite of generators with $j$ vector-field factors, then $(A_1 \cdots A_r f)|_U = Q(f|_U)$ for some $Q$ of form $j$ (and form $j$ is form $k$ for $j \le k$). Induct on $r$. For $r = 0$ take $Q = \mathrm{id} = \partial^{(0, \ldots, 0)}$. For $r \ge 1$ let $B = A_2 \circ \cdots \circ A_r$, with $(Bf)|_U = Q'(f|_U)$, $Q' = \sum b_\alpha\, \partial^\alpha$ of form $j'$.
+\begin{itemize}
+    \item If $A_1 = m_g$ then $j = j'$ and $(gBf)|_U = g|_U\, Q'(f|_U)$, of form $j$ with coefficients $g|_U\, b_\alpha$.
+    \item If $A_1 = D_\mathbf{X}$ then $j = j' + 1$, and on $U$, $D_\mathbf{X} h = \sum_i \mathbf{X}^i\, \partial_i h$ (Lemma~\ref{lem:vf-derivation}), so
+    \[
+    (D_\mathbf{X} B f)|_U = \sum_i \mathbf{X}^i\, \partial_i \Big( \sum_\alpha b_\alpha\, \partial^\alpha (f|_U) \Big) = \sum_i \sum_\alpha \Big( \mathbf{X}^i\, (\partial_i b_\alpha)\, \partial^\alpha + \mathbf{X}^i\, b_\alpha\, \partial^{\alpha + e_i} \Big)(f|_U),
+    \]
+    by the product rule and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$. The last step reorders the partial derivatives, which is allowed because mixed partials of smooth functions are equal (Clairaut's theorem, applied to $f \circ \varphi^{-1}$). The right side has form $j' + 1 = j$.
+\end{itemize}
+\emph{Uniqueness.} Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p))$, and fix $\beta$ with $|\beta| \le k$. By Corollary~\ref{cor:germ-extension} there is $f_\beta \in C^\infty(M)$ equal to $(x - c)^\beta / \beta!$ near $p$. For the polynomial $(x - c)^\beta$, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise; at $x = c$ it vanishes unless $\alpha = \beta$, where it is $\beta!$. Since $f_\beta$ agrees with $(x - c)^\beta/\beta!$ near $p$, its derivatives at $p$ are the same, and
+\[
+0 = \sum_\alpha c_\alpha(p)\, \partial^\alpha f_\beta(p) = c_\beta(p) .
+\]
+As $p$ and $\beta$ were arbitrary, all $c_\beta = 0$; applied to the difference of two expressions for $P$, this is uniqueness.
+\end{proof}
+
+\begin{corbox}[Differential Operators on Euclidean Space]\thmlabel{cor:diff-op-euclidean}
+On $\mathbb{R}^m$, with its standard coordinates and $\partial_i = D_{\partial/\partial x^i}$,
+\[
+\mathrm{Diff}_k(\mathbb{R}^m) = \Big\{ \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha \;:\; a_\alpha \in C^\infty(\mathbb{R}^m) \Big\},
+\]
+with the coefficients $a_\alpha$ uniquely determined by the operator. In particular $\mathrm{Diff}(\mathbb{R}^m)$ is exactly the set of linear partial differential operators with smooth coefficients, and the order of Definition~\ref{def:diff-op-order} is the usual order: the largest $|\alpha|$ with $a_\alpha \ne 0$.
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} The identity chart covers $\mathbb{R}^m$, so Proposition~\ref{prop:diff-op-coords} with $U = \mathbb{R}^m$ gives the inclusion $\subseteq$ and the uniqueness. Conversely, each $\partial_i$ is the operator of the global vector field $\partial/\partial x^i$, so $a_\alpha\, \partial^\alpha = m_{a_\alpha} \circ \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$ is a composite with $|\alpha|$ vector-field factors, in $\mathrm{Diff}_{|\alpha|}(\mathbb{R}^m) \subseteq \mathrm{Diff}_k(\mathbb{R}^m)$. For the order: $P$ lies in $\mathrm{Diff}_j$ exactly when its unique expansion has $a_\alpha = 0$ for $|\alpha| > j$.
+\end{proof}
+
+\begin{rembox}[Differential Operators Are Local]\label{rem:differential-operators}
+Every differential operator is a local operator (Definition~\ref{def:local-operator}). \textit{(Lecture~15: ``these are all local operators''; the reason is filled in.)} The generators are local: $(m_g f)(p) = g(p) f(p)$ depends only on $f(p)$, and $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs (Definition~\ref{def:derivation}). Sums and composites of local operators are local: if $f|_U = g|_U$ then $(Pf)|_U = (Pg)|_U$, and applying $Q$ gives $(QPf)|_U = (QPg)|_U$.
+\end{rembox}
+
+\begin{thmbox}[Local Operators Are Differential Operators]\thmlabel{thm:peetre}
+Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a chart neighbourhood $U$ on which $(Pf)|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha (f|_U)$ for all $f \in C^\infty(M)$, for some $k$ and some $a_\alpha \in C^\infty(U)$ --- the form of Proposition~\ref{prop:diff-op-coords}. Conversely, every differential operator is local (Remark~\ref{rem:differential-operators}).
+\end{thmbox}
+
+\begin{proof}[Proof (not given in this course)]
+Stated in Lecture~15 ``FYI'': ``There's a theorem which is that every local operator \ldots\ is a differential operator, and conversely, of course, the converse is easy. \ldots\ We're not going to prove this theorem, but it's true.'' It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
+\end{proof}
+
 
 % ============================================================================
 % SECTION: THE LIE BRACKET
@@ -11362,7 +11546,7 @@ For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as operators on $C^\i
 \leeref{Ch.~8, \emph{Lie Brackets}}
 \end{defbox}
 
-Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator --- ``you get second derivatives in local coordinates'' --- but ``something very, very nice happens when you look at the commutator.''
+Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\mathrm{Diff}_2(M)$ (Definition~\ref{def:diff-op-order}) --- ``you get second derivatives in local coordinates'' --- but ``something very, very nice happens when you look at the commutator.''
 
 \begin{lembox}[The Bracket of Vector Fields Is a Vector Field]\thmlabel{lem:bracket-field}
 $[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$; hence, by Proposition~\ref{prop:derivations-are-fields}, it is a vector field.
@@ -11443,7 +11627,41 @@ $\big(\mathfrak{X}(M), [\cdot,\cdot]\big)$ is a Lie algebra.
 \textit{(Lecture~16: the bracket of fields ``comes from the product, which is the composition, which is associative.'' Filled in.)} The linear operators on $C^\infty(M)$ form an associative algebra under composition, so by Proposition~\ref{prop:commutator-jacobi} their commutator satisfies the Jacobi identity. By Lemma~\ref{lem:bracket-field}, $\mathfrak{X}(M)$, identified with the derivations, is closed under it; so the identity holds on $\mathfrak{X}(M)$.
 \end{proof}
 
-``Which I don't recommend you check by hand. It's a big computation.'' The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of the next section sit inside it.
+``Which I don't recommend you check by hand. It's a big computation.'' The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of \ref{sec:lie-groups} sit inside it.
+
+The bracket of two vector fields is one instance of a general fact about the ring of differential operators (\ref{sec:diff-ops}): a commutator is always of lower order than the composites it is made from.
+
+\begin{propbox}[Commutators Lower the Order]\thmlabel{prop:diff-commutator-order}
+For operators $P, Q$ write $[P, Q] = P \circ Q - Q \circ P$, as in Definition~\ref{def:lie-bracket}. For the generators of $\mathrm{Diff}(M)$, with $g, h \in C^\infty(M)$ and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$:
+\begin{enumerate}
+    \item $[m_g, m_h] = 0$;
+    \item $[D_\mathbf{X}, m_g] = m_{\mathbf{X}g}$;
+    \item $[D_\mathbf{X}, D_\mathbf{Y}] = D_{[\mathbf{X}, \mathbf{Y}]}$.
+\end{enumerate}
+Consequently, if $P \in \mathrm{Diff}_k(M)$ and $Q \in \mathrm{Diff}_l(M)$, then $[P, Q] \in \mathrm{Diff}_{k+l-1}(M)$ (Definition~\ref{def:diff-op-order}).
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} (1) is Proposition~\ref{prop:mult-operators}, (2) is Proposition~\ref{prop:vf-mult-commutation}(2), and (3) is Lemma~\ref{lem:bracket-field}, read with $D_\mathbf{X}$ written out. So for generators $A, B$ of orders $a, b \in \{0, 1\}$ ($0$ for a multiplication, $1$ for a vector field), $[A, B] \in \mathrm{Diff}_{a+b-1}(M)$. Two identities, checked by expanding (each side of the first is $PQR - QRP$),
+\[
+[P, Q \circ R] = [P, Q] \circ R + Q \circ [P, R], \qquad [P \circ Q, R] = P \circ [Q, R] + [P, R] \circ Q ,
+\]
+carry this to composites, using Proposition~\ref{prop:diff-filtration}(2).
+\begin{itemize}
+    \item \emph{A generator against a composite.} Let $A$ have order $a$ and $B = B_1 \circ \cdots \circ B_s$ be a composite of generators of orders $b_i$, $l = \sum_i b_i$. By induction on $s$ ($s = 0$: $[A, \mathrm{id}] = 0$), with $B' = B_2 \circ \cdots \circ B_s$,
+    \[
+    [A, B_1 \circ B'] = [A, B_1] \circ B' + B_1 \circ [A, B'] \in \mathrm{Diff}_{a + b_1 - 1} \circ \mathrm{Diff}_{l - b_1} + \mathrm{Diff}_{b_1} \circ \mathrm{Diff}_{a + l - b_1 - 1} \subseteq \mathrm{Diff}_{a + l - 1} .
+    \]
+    \item \emph{A composite against a composite.} Let $A = A_1 \circ \cdots \circ A_r$ have orders $a_i$, $k = \sum_i a_i$; by induction on $r$ ($r = 0$: $[\mathrm{id}, B] = 0$), with $A' = A_2 \circ \cdots \circ A_r$,
+    \[
+    [A_1 \circ A', B] = A_1 \circ [A', B] + [A_1, B] \circ A' \in \mathrm{Diff}_{a_1} \circ \mathrm{Diff}_{k - a_1 + l - 1} + \mathrm{Diff}_{a_1 + l - 1} \circ \mathrm{Diff}_{k - a_1} \subseteq \mathrm{Diff}_{k + l - 1} .
+    \]
+    \item \emph{Sums.} The commutator is bilinear. A $P \in \mathrm{Diff}_k(M)$ is a sum of composites with $k' \le k$ vector-field factors, a $Q \in \mathrm{Diff}_l(M)$ one of composites with $l' \le l$, and each $[\text{composite}, \text{composite}]$ lies in $\mathrm{Diff}_{k' + l' - 1} \subseteq \mathrm{Diff}_{k + l - 1}$ (Proposition~\ref{prop:diff-filtration}(1)). \qedhere
+\end{itemize}
+\end{proof}
+
+So two differential operators commute ``up to lower order''. For $k = l = 1$, applied to $D_\mathbf{X}$ and $D_\mathbf{Y}$, the second-order parts of $\mathbf{X} \circ \mathbf{Y}$ and $\mathbf{Y} \circ \mathbf{X}$ cancel, as in Example~\ref{ex:bracket-plane}; what is left lies in $\mathrm{Diff}_1(M)$ and kills constants, and is the vector field $[\mathbf{X}, \mathbf{Y}]$ (Proposition~\ref{prop:diff-filtration}(4)).
+
 
 \begin{exbox}[The Cross Product]\exlabel{ex:cross-product-lie}
 $\mathbb{R}^3$ with the cross product is a Lie algebra, and the hat map of Definition~\ref{def:hat-map} is an isomorphism of Lie algebras onto $\Skew(3, \mathbb{R}) = \mathfrak{so}(3)$ with the matrix commutator:
@@ -11466,7 +11684,13 @@ The classical groups through the course: defined in Section~\ref{sec:topgroups},
 % Lecture 17 (Fri Oct 9, 2026)
 % ============================================================================
 
-\subsection{Related Vector Fields}\label{sub:related-fields}
+% ============================================================================
+% SECTION: RELATED VECTOR FIELDS
+% ============================================================================
+
+\section{Related Vector Fields}\label{sec:related-fields}\label{sub:related-fields}
+
+\roadmark{Stage: fields}{Vector fields cannot be pushed forward along an arbitrary smooth map, but two fields can be related by one; related fields have related brackets, and a diffeomorphism carries fields and brackets across.}
 
 \textit{Lecture 17. ``Back to vector fields \ldots\ we're currently taking the operator point of view. Later on, we'll talk about them as generators of dynamics.'' Recap: every vector field defines a derivation of $C^\infty(M)$, and conversely (Lemma~\ref{lem:vf-derivation}, Proposition~\ref{prop:derivations-are-fields}); so the commutator of two fields is again a field (Lemma~\ref{lem:bracket-field}). Officially, a vector field is a smooth section of the tangent bundle (Definition~\ref{def:vector-field}).}
 
@@ -11758,10 +11982,16 @@ with the Lie bracket of vector fields.
 
 \textit{Lecture 17. ``Back to Lie groups.'' With the language of related fields, ``we can rephrase some of the definitions.''}
 
-\begin{rembox}[Left-Invariance as Relatedness]\label{rem:left-invariant-related}
-Definition~\ref{def:left-invariant} says exactly that $\mathbf{X}$ is \emph{$L_g$-related to itself} for every $g \in G$ (Definition~\ref{def:F-related} with $F = L_g$, $\mathbf{Y} = \mathbf{X}$): $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{L_g(h)} = \mathbf{X}_{gh}$. Lecture~17 abbreviates ``left-invariant'' to l.i.
+\begin{lembox}[Left-Invariance as Relatedness]\thmlabel{lem:left-invariant-related}
+A vector field $\mathbf{X} \in \mathfrak{X}(G)$ is left-invariant (Definition~\ref{def:left-invariant}) if and only if, for every $g \in G$, $\mathbf{X}$ is \emph{$L_g$-related to itself} (Definition~\ref{def:F-related} with $F = L_g$ and $\mathbf{Y} = \mathbf{X}$).
+\end{lembox}
 
-``And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose \ldots\ and this is the universal choice.'' Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, at the end of this subsection.
+\begin{proof}
+\textit{(Lecture~17, a rephrasing of the definition: ``we can rephrase some of the definitions''.)} Being $L_g$-related to itself means $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{L_g(h)} = \mathbf{X}_{gh}$ for every $h \in G$, which is the condition of Definition~\ref{def:left-invariant} for this $g$.
+\end{proof}
+
+\begin{rembox}[Why Left?]\label{rem:left-invariant-related}
+Lecture~17 abbreviates ``left-invariant'' to l.i. ``And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose \ldots\ and this is the universal choice.'' Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, at the end of this subsection.
 \end{rembox}
 
 \begin{corbox}[$\mathfrak{g}$ Is a Lie Subalgebra of $\mathfrak{X}(G)$]\thmlabel{cor:lie-subalgebra}
@@ -11797,7 +12027,7 @@ more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. ``There's
 \[
 \mathbf{X}^v_g = d(L_g)_e(v), \qquad g \in G .
 \]
-``Just as with vector fields'' on a vector space (Remark~\ref{rem:translations-identify}), there is a unique left translation carrying $e$ to $g$, and $\mathbf{X}^v_g$ is $v$ carried along it. This defines $\mathbf{X}^v$ as a section of $TG$ with $\mathbf{X}^v_e = v$. \textit{(Filled in.)} It is left-invariant: $L_g \circ L_h = L_{gh}$, so by the chain rule (Theorem~\ref{prop:pushforward-functorial})
+``Just as with vector fields'' on a vector space (Proposition~\ref{prop:translations-identify}), there is a unique left translation carrying $e$ to $g$, and $\mathbf{X}^v_g$ is $v$ carried along it. This defines $\mathbf{X}^v$ as a section of $TG$ with $\mathbf{X}^v_e = v$. \textit{(Filled in.)} It is left-invariant: $L_g \circ L_h = L_{gh}$, so by the chain rule (Theorem~\ref{prop:pushforward-functorial})
 \[
 d(L_g)_h\big(\mathbf{X}^v_h\big) = d(L_g)_h\, d(L_h)_e(v) = d(L_{gh})_e(v) = \mathbf{X}^v_{gh} .
 \]
@@ -11829,17 +12059,31 @@ Let $V$ be a finite-dimensional vector space, a Lie group under addition with id
 \end{exbox}
 
 \begin{proof}
-\textit{(Not from lecture; filled in, after the remark in Lecture~17 that the translations of a vector space give ``a left-invariant vector field''.)} By Remark~\ref{rem:translations-identify}, $d(\tau_p)_0(D_v|_0) = D_v|_p$, so the field $\mathbf{X}^v$ of the theorem, with $\mathbf{X}^v_0 = D_v|_0$, is $p \mapsto D_v|_p$; by the theorem these are all the left-invariant fields. In linear coordinates $\mathbf{X}^v = \sum_i v^i\, \partial_i$ has constant coefficients, so $[\mathbf{X}^v, \mathbf{X}^w] = 0$ by Proposition~\ref{prop:bracket-coords}.
+\textit{(Not from lecture; filled in, after the remark in Lecture~17 that the translations of a vector space give ``a left-invariant vector field''.)} By Proposition~\ref{prop:translations-identify}, $d(\tau_p)_0(D_v|_0) = D_v|_p$, so the field $\mathbf{X}^v$ of the theorem, with $\mathbf{X}^v_0 = D_v|_0$, is $p \mapsto D_v|_p$; by the theorem these are all the left-invariant fields. In linear coordinates $\mathbf{X}^v = \sum_i v^i\, \partial_i$ has constant coefficients, so $[\mathbf{X}^v, \mathbf{X}^w] = 0$ by Proposition~\ref{prop:bracket-coords}.
 \end{proof}
 
-\begin{rembox}[Which Bracket on $T_eG$?]\label{rem:bracket-on-TeG}
-Through $\mathrm{ev}$, $T_eG$ inherits a bracket, $[v, w] = \big[\mathbf{X}^v, \mathbf{X}^w\big]_e$, the one that makes $\mathrm{ev}$ an isomorphism of Lie algebras. The question is what it is. \textit{Lecture~17:} for $G = \GL(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subset of $\Mat(d, \mathbb{R}) \cong \mathbb{R}^{d^2}$, so that $T_IG = \Mat(d,\mathbb{R})$, and ``for all matrix groups, the answer \ldots\ is just the matrix commutator''
+\begin{defbox}[The Lie Bracket on $T_eG$]\deflabel{def:bracket-TeG}
+Let $G$ be a Lie group and, for $v \in T_eG$, let $\mathbf{X}^v \in \mathfrak{g}$ be the left-invariant field with $\mathbf{X}^v_e = v$ (Theorem~\ref{thm:lie-algebra-TeG}). The \textbf{Lie bracket} on $T_eG$ is
+\[
+[v, w] = \big[\mathbf{X}^v, \mathbf{X}^w\big]_e , \qquad v, w \in T_eG .
+\]
+\end{defbox}
+
+By construction $\mathrm{ev}$ is then an isomorphism of Lie algebras: $T_eG$ inherits the bracket that makes it one. The question is what this bracket is.
+
+\begin{thmbox}[{The Lie Algebra of $\GL({d,\mathbb{R}})$}]\thmlabel{thm:gl-bracket}
+Let $G = \GL(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subset of $\Mat(d, \mathbb{R}) \cong \mathbb{R}^{d^2}$, so that $T_IG = \Mat(d,\mathbb{R})$. The Lie bracket on $T_IG$ (Definition~\ref{def:bracket-TeG}) is the matrix commutator
 \[
 [A, B] = AB - BA .
 \]
-``That requires computation. You actually have to compute something'' --- to begin on Monday (Lecture~18). The left-invariant fields are already known (Example~\ref{ex:left-invariant-GL}: $\mathbf{X}^A_g = gA$). ``This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.''
+\end{thmbox}
 
-Why left, then? An aside: ``Did you ever think what the world would look like if, instead of writing $f(x)$ \ldots\ we would have written $(x)f$? \ldots\ Imagine composing functions with that rule. \ldots\ Everything works much better if you write $(x)f$'': in that notation, composites read in the order the maps are applied.
+\begin{proof}[Proof (to be filled)]
+Stated in Lecture~17 --- ``for all matrix groups, the answer \ldots\ is just the matrix commutator''; ``that requires computation. You actually have to compute something'' --- to begin on Monday (Lecture~18). The left-invariant fields are already known (Example~\ref{ex:left-invariant-GL}: $\mathbf{X}^A_g = gA$).
+\end{proof}
+
+\begin{rembox}[Left or Right: The Sign of the Bracket]\label{rem:bracket-on-TeG}
+``This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.'' Why left, then? An aside: ``Did you ever think what the world would look like if, instead of writing $f(x)$ \ldots\ we would have written $(x)f$? \ldots\ Imagine composing functions with that rule. \ldots\ Everything works much better if you write $(x)f$'': in that notation, composites read in the order the maps are applied.
 \end{rembox}
 
 \textbf{Transcription note (Lecture 17).} Page~46 of the handwritten notes says the construction gives ``$\mathbf{X} : M \to TM$''; the manifold is the group, $\mathbf{X} : G \to TG$.

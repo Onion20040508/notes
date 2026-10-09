@@ -5,7 +5,7 @@ chapter: 7
 section: 48
 tags: [differentiable-manifolds, math591]
 ---
-← [[§47 One-Forms]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§49 Lie Bracket and Lie Algebra]] →
+← [[§47 One-Forms]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§49 Differential Operators]] →
 
 *Stage: fields — Smooth sections of $TM$, a tangent vector at every point — and vector fields acting on functions, as derivations of $C^\infty(M)$.*
 
@@ -52,7 +52,13 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > \mathfrak{X}(M) \qquad \big(\text{LaTeX: } \mathtt{\backslash mathfrak\{X\}}\big).
 > $$
 >
-> It is a real vector space under pointwise addition and scalar multiplication.
+> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, $c \in \mathbb{R}$ and $f \in C^\infty(M)$, the sum, the scalar multiple and the product with $f$ are defined pointwise, in the vector space $T_pM$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]):
+>
+> $$
+> (\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p, \qquad (c\mathbf{X})_p = c\, \mathbf{X}_p, \qquad (f\mathbf{X})_p = f(p)\, \mathbf{X}_p, \qquad p \in M .
+> $$
+>
+> [[§48 Vector Fields#^prop-48-2|Proposition §48.2]] shows that these are again vector fields and that $\mathfrak{X}(M)$ is a real vector space.
 >
 > *Lee: Ch. 8, Vector Fields on Manifolds*
 
@@ -89,6 +95,43 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 *Uses:* [[§48 Vector Fields#^def-48-1|Def. §48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§45 The Tangent Bundle#^def-45-4|Def. §45.4]], [[§45 The Tangent Bundle#^prop-45-2|§45.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
+> [!theorem] Proposition §48.2: The Space of Vector Fields Is a Real Vector Space
+> Let $M$ be a smooth manifold.
+> 1. If $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$, then $\mathbf{X} + \mathbf{Y}$ and $c\mathbf{X}$ ([[§48 Vector Fields#^def-48-2|Definition §48.2]]) are [[§48 Vector Fields#^def-48-1|vector fields]].
+> 2. The zero field $\mathbf{0}$, $\mathbf{0}_p = 0_p \in T_pM$, is a vector field.
+> 3. With these operations $\mathfrak{X}(M)$ is a real vector space, with zero vector $\mathbf{0}$ and additive inverse $-\mathbf{X} = (-1)\mathbf{X}$.
+> 4. More generally, if $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, then $f\mathbf{X}$ is a vector field.
+
+^prop-48-2
+
+> [!proof]+ Proof
+> *(Not from lecture: the notes stated the vector-space structure without proof; filled in.)* *The operations give sections.* At each $p$, $\mathbf{X}_p + \mathbf{Y}_p$, $c\,\mathbf{X}_p$, $f(p)\,\mathbf{X}_p$ and $0_p$ lie in $T_pM$, a real vector space ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]); so each of $\mathbf{X} + \mathbf{Y}$, $c\mathbf{X}$, $f\mathbf{X}$, $\mathbf{0}$ assigns to every $p$ a tangent vector at $p$, a section of $TM$.
+>
+> *(1), (2), (4): smoothness.* Let $(U, (x^j))$ be a chart. By [[§48 Vector Fields#^prop-48-1|Proposition §48.1]], $\mathbf{X} = \sum_j \mathbf{X}^j\, \partial/\partial x^j$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial x^j$ on $U$ with smooth coefficients. At each $p \in U$, by linearity in $T_pM$,
+>
+> $$
+> (\mathbf{X} + \mathbf{Y})_p = \sum_j \big(\mathbf{X}^j(p) + \mathbf{Y}^j(p)\big) \frac{\partial}{\partial x^j}\Big|_p, \qquad (f\mathbf{X})_p = \sum_j f(p)\, \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p, \qquad \mathbf{0}_p = \sum_j 0 \cdot \frac{\partial}{\partial x^j}\Big|_p ,
+> $$
+>
+> so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By [[§48 Vector Fields#^prop-48-1|Proposition §48.1]] again these sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
+>
+> *(3): the axioms.* Each axiom is an equality of vector fields, that is, of their values at every $p \in M$, and there it is the corresponding axiom of the vector space $T_pM$. Explicitly, for $\mathbf{X}, \mathbf{Y}, \mathbf{Z} \in \mathfrak{X}(M)$, $a, b \in \mathbb{R}$ and every $p \in M$:
+> - commutativity: $(\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p = \mathbf{Y}_p + \mathbf{X}_p = (\mathbf{Y} + \mathbf{X})_p$;
+> - associativity: $\big((\mathbf{X} + \mathbf{Y}) + \mathbf{Z}\big)_p = (\mathbf{X}_p + \mathbf{Y}_p) + \mathbf{Z}_p = \mathbf{X}_p + (\mathbf{Y}_p + \mathbf{Z}_p) = \big(\mathbf{X} + (\mathbf{Y} + \mathbf{Z})\big)_p$;
+> - zero: $(\mathbf{X} + \mathbf{0})_p = \mathbf{X}_p + 0_p = \mathbf{X}_p$;
+> - inverses: $\big(\mathbf{X} + (-1)\mathbf{X}\big)_p = \mathbf{X}_p - \mathbf{X}_p = 0_p = \mathbf{0}_p$;
+> - unit: $(1\mathbf{X})_p = 1 \cdot \mathbf{X}_p = \mathbf{X}_p$;
+> - compatibility: $\big((ab)\mathbf{X}\big)_p = (ab)\,\mathbf{X}_p = a\,(b\,\mathbf{X}_p) = \big(a(b\mathbf{X})\big)_p$;
+> - distributivity: $\big(a(\mathbf{X} + \mathbf{Y})\big)_p = a\,\mathbf{X}_p + a\,\mathbf{Y}_p = (a\mathbf{X} + a\mathbf{Y})_p$ and $\big((a + b)\mathbf{X}\big)_p = a\,\mathbf{X}_p + b\,\mathbf{X}_p = (a\mathbf{X} + b\mathbf{X})_p$.
+>
+> So $\mathfrak{X}(M)$ is a real vector space.
+
+^pf-48-2
+
+*Uses:* [[§48 Vector Fields#^def-48-1|Def. §48.1]], [[§48 Vector Fields#^def-48-2|Def. §48.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§48 Vector Fields#^prop-48-1|§48.1]]
+
+By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — the same pointwise check gives $(fg)\mathbf{X} = f(g\mathbf{X})$, $(f + g)\mathbf{X} = f\mathbf{X} + g\mathbf{X}$ and $f(\mathbf{X} + \mathbf{Y}) = f\mathbf{X} + f\mathbf{Y}$ — which is what Uribe meant by “an algebra over the smooth functions” in Lecture 17. It is infinite-dimensional as a real vector space (for $\dim M \ge 1$), but over $C^\infty(U)$ the fields on a chart domain $U$ have the basis $\partial/\partial x^1, \ldots, \partial/\partial x^m$ ([[§48 Vector Fields#^prop-48-1|Proposition §48.1]]).
+
 > [!remark] Remark: Vector Fields and One-Forms Side by Side
 > | Field | A section of | In a chart | Picture |
 > |---|---|---|---|
@@ -117,7 +160,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 ^def-48-4
 
-*(Not from lecture: Uribe uses the word without defining it — “it's an $\mathbb{R}$-linear operator”.)* $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is *$\mathbb{R}$-linear*, or a *linear operator*, if it is a [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]] of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ ([[§48 Vector Fields#^lem-48-2|Lemma §48.2]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§48 Vector Fields#^def-48-10|Definition §48.10]] below). A [[§48 Vector Fields#^def-48-5|derivation]], a [[§48 Vector Fields#^def-48-6|local operator]] and a [[§48 Vector Fields#^def-48-11|differential operator]], defined below, are operators with extra properties; the [[§49 Lie Bracket and Lie Algebra#^def-49-1|Lie bracket]] of [[§49 Lie Bracket and Lie Algebra|§49]] is the commutator of two operators.
+*(Not from lecture: Uribe uses the word without defining it — “it's an $\mathbb{R}$-linear operator”.)* $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is *$\mathbb{R}$-linear*, or a *linear operator*, if it is a [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]] of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ ([[§48 Vector Fields#^lem-48-3|Lemma §48.3]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§49 Differential Operators#^def-49-1|Definition §49.1]] below). A [[§48 Vector Fields#^def-48-5|derivation]], a [[§48 Vector Fields#^def-48-6|local operator]] and a [[§49 Differential Operators#^def-49-2|differential operator]], defined below, are operators with extra properties; the [[§50 Lie Bracket and Lie Algebra#^def-50-1|Lie bracket]] of [[§50 Lie Bracket and Lie Algebra|§50]] is the commutator of two operators.
 
 > [!definition] Definition §48.5: Derivation of $C^\infty(M)$
 > A **derivation** of $C^\infty(M)$ is an $\mathbb{R}$-linear [[§48 Vector Fields#^def-48-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§48 Vector Fields#^def-48-4|Definition §48.4]]) satisfying the product rule
@@ -132,19 +175,19 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 ^def-48-5
 
-> [!theorem] Lemma §48.2: A Vector Field Is a Derivation
+> [!theorem] Lemma §48.3: A Vector Field Is a Derivation
 > For $\mathbf{X} \in \mathfrak{X}(M)$ ([[§48 Vector Fields#^def-48-2|Def. §48.2]]) and $f \in C^\infty(M)$, the function $D_\mathbf{X}f : p \mapsto \mathbf{X}_p[f]$ is smooth, and $D_\mathbf{X} : C^\infty(M) \to C^\infty(M)$ is a [[§48 Vector Fields#^def-48-5|derivation]]. In a chart, $D_\mathbf{X}f = \sum_j \mathbf{X}^j\, \partial f/\partial x^j$. (Lee writes $\mathbf{X}f$ for $D_\mathbf{X}f$.)
 
-^lem-48-2
+^lem-48-3
 
 > [!proof]+ Proof
 > *(Lecture 15: linearity and the product rule are “an immediate consequence of the corresponding properties for tangent vectors”, applied at each point. Smoothness of $D_\mathbf{X}f$, which the lecture did not address, is filled in.)* In a chart, $\mathbf{X}_p[f] = \sum_j \mathbf{X}^j(p)\, \partial f/\partial x^j(p)$ by [[§48 Vector Fields#^prop-48-1|Proposition §48.1]], a sum of products of smooth functions. At each $p$, $\mathbf{X}_p[fg] = f(p)\, \mathbf{X}_p[g] + g(p)\, \mathbf{X}_p[f]$ because $\mathbf{X}_p$ is a derivation at $p$; that is the product rule for $D_\mathbf{X}$, and linearity is the same.
 
-^pf-48-2
+^pf-48-3
 
 *Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^def-48-2|Def. §48.2]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]]
 
-The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§48 Vector Fields#^prop-48-7|Proposition §48.7]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§48 Vector Fields#^lem-48-5|Lemma §48.5]]), and its proof needs bump functions, so these come first.
+The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§48 Vector Fields#^prop-48-7|Proposition §48.7]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§48 Vector Fields#^lem-48-6|Lemma §48.6]]), and its proof needs bump functions, so these come first.
 
 > [!definition] Definition §48.6: Local Operator
 > An [[§48 Vector Fields#^def-48-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§48 Vector Fields#^def-48-4|Definition §48.4]]) is **local** if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
@@ -192,17 +235,17 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 **Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as Uribe said (“and then you take the closure of that”). Without the closure, the support of a bump function would not be compact.
 
-> [!theorem] Proposition §48.3: Bump Functions Exist
+> [!theorem] Proposition §48.4: Bump Functions Exist
 > For every open $U \subseteq M$ and every $p \in U$ there is a [[§48 Vector Fields#^def-48-9|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
 >
 > *Lee: Proposition 2.25*
 
-^prop-48-3
+^prop-48-4
 
 > [!proof]+ Proof (to be filled)
 > Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” To be filled.
 
-^pf-48-3
+^pf-48-4
 
 > [!remark]- Connections
 > - The flat function $e^{-1/x^2}$, smooth but not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]].
@@ -210,9 +253,9 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 *Terminology (Lecture 16).* A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be *subordinate to $U$*, “because this is a condition that is going to show up several times.”
 
-*Lecture 16: the corollary of the [[§48 Vector Fields#^prop-48-3|bump function lemma]] that the proof of [[§48 Vector Fields#^prop-48-7|Proposition §48.7]] uses.*
+*Lecture 16: the corollary of the [[§48 Vector Fields#^prop-48-4|bump function lemma]] that the proof of [[§48 Vector Fields#^prop-48-7|Proposition §48.7]] uses.*
 
-> [!theorem] Corollary §48.4: Every Germ Has a Global Representative
+> [!theorem] Corollary §48.5: Every Germ Has a Global Representative
 > Let $p \in M$ and $\gamma \in C^\infty_p(M)$, represented by $f \in C^\infty(U)$ with $U \ni p$ open. If $\chi$ is a [[§48 Vector Fields#^def-48-9|bump function]] at $p$ subordinate to $U$, then
 >
 > $$
@@ -223,25 +266,25 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > *Lee: Lemma 2.26 (extension lemma)*
 
-^cor-48-4
+^cor-48-5
 
 > [!proof]+ Proof
 > *(Lecture 16.)* *$\tilde f$ is smooth.* The open sets $U$ and $M \setminus \operatorname{supp}\chi$ cover $M$, because $\operatorname{supp}\chi \subseteq U$. On $U$, $\tilde f = \chi f$ is a product of smooth functions. On $M \setminus \operatorname{supp}\chi$, $\tilde f \equiv 0$: there $\chi = 0$ (inside $U$), or $\tilde f = 0$ by definition (outside $U$). Smoothness is local, so $\tilde f$ is smooth. *$\tilde f$ represents $\gamma$.* Let $V \ni p$ be open with $\chi \equiv 1$ on $V$. Then $\tilde f = f$ on $V \cap U$, a neighbourhood of $p$, so $[\tilde f] = [f] = \gamma$.
 
-^pf-48-4
+^pf-48-5
 
 *Uses:* [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^def-48-7|Def. §48.7]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]]
 
 ![[m591-47-1.svg]]
 *The extension of a germ. Above: $f$ is defined only on $U$ (its ends are open), and $\chi$ (dashed) is a bump function at $p$ subordinate to $U$. Below: $\tilde f = \chi f$, extended by $0$. On $V$, where $\chi \equiv 1$, it agrees with $f$ (dotted), so it has the same germ at $p$; it dies off inside $U$ and is $0$ outside $\operatorname{supp}\chi$, so it is smooth on all of $M$.*
 
-> [!theorem] Lemma §48.5: Derivations Are Local
+> [!theorem] Lemma §48.6: Derivations Are Local
 > Every [[§48 Vector Fields#^def-48-5|derivation]] of $C^\infty(M)$ is a [[§48 Vector Fields#^def-48-6|local operator]].
 
-^lem-48-5
+^lem-48-6
 
 > [!proof]+ Proof
-> *(Lecture 16, in full: “you'll see how incredibly powerful the product rule is.”)* Let $U \subseteq M$ be open and $f|_U = g|_U$. By linearity of $D$, replacing $f$ by $f - g$, it suffices to show: if $f|_U = 0$ then $(Df)|_U = 0$ — “like showing that something is injective by showing that the kernel is zero.” Let $p \in U$, and let $\chi$ be a [[§48 Vector Fields#^def-48-9|bump function]] at $p$ subordinate to $U$ ([[§48 Vector Fields#^prop-48-3|Proposition §48.3]]). Then $\chi f \equiv 0$ on $M$: inside $U$ because $f = 0$ there, outside $U$ because $\chi = 0$ there. So, by linearity and then the [[§48 Vector Fields#^def-48-5|product rule]],
+> *(Lecture 16, in full: “you'll see how incredibly powerful the product rule is.”)* Let $U \subseteq M$ be open and $f|_U = g|_U$. By linearity of $D$, replacing $f$ by $f - g$, it suffices to show: if $f|_U = 0$ then $(Df)|_U = 0$ — “like showing that something is injective by showing that the kernel is zero.” Let $p \in U$, and let $\chi$ be a [[§48 Vector Fields#^def-48-9|bump function]] at $p$ subordinate to $U$ ([[§48 Vector Fields#^prop-48-4|Proposition §48.4]]). Then $\chi f \equiv 0$ on $M$: inside $U$ because $f = 0$ there, outside $U$ because $\chi = 0$ there. So, by linearity and then the [[§48 Vector Fields#^def-48-5|product rule]],
 >
 > $$
 > 0 = D(\chi f) = \chi\, Df + f\, D\chi ,
@@ -249,59 +292,21 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > an equality of functions. Evaluate at $p$: $\chi(p) = 1$ and $f(p) = 0$, so $0 = (Df)(p)$. As $p \in U$ was arbitrary, $(Df)|_U = 0$.
 
-^pf-48-5
+^pf-48-6
 
-*Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^def-48-6|Def. §48.6]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^def-48-7|Def. §48.7]], [[§48 Vector Fields#^prop-48-3|§48.3]]
+*Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^def-48-6|Def. §48.6]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^def-48-7|Def. §48.7]], [[§48 Vector Fields#^prop-48-4|§48.4]]
 
 “Derivations are local, thanks to the product rule and the existence of bump functions.”
 
 > [!remark]- Connections
 > - The pointwise version, a derivation of $C^\infty(M)$ at $p$ only sees a function near $p$ (Lee, Proposition 3.8), in the proof of [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Germ Derivations and Global Derivations, §28.3]].
 
-*Lecture 15, after stating the lemma (proved above in Lecture 16): “I want to make an observation.”*
+*Lecture 15, after stating the lemma (proved above in Lecture 16): “I want to make an observation.”* The observation was the ring of differential operators, generated by the operators $D_\mathbf{X}$ and the multiplications by functions, all of whose elements are local; it is collected, with what follows from it, in the next section, [[§49 Differential Operators|§49]].
 
-> [!definition] Definition §48.10: Multiplication Operator
-> For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
-
-^def-48-10
-
-> [!definition] Definition §48.11: Differential Operators
-> The **ring of differential operators** on $M$, written $\mathrm{Diff}(M)$ here, is the subring of the $\mathbb{R}$-linear maps $C^\infty(M) \to C^\infty(M)$ (with sum and composition) generated by
->
-> $$
-> D_\mathbf{X} \quad (\mathbf{X} \in \mathfrak{X}(M)) \qquad \text{and} \qquad m_g \quad (g \in C^\infty(M)) ,
-> $$
->
-> the operators of [[§48 Vector Fields#^lem-48-2|Lemma §48.2]] and [[§48 Vector Fields#^def-48-10|Definition §48.10]]. Its elements, the **differential operators**, are the finite sums of finite composites of such operators.
-
-^def-48-11
-
-Uribe: “I can take a vector field, apply it … I can compose that with multiplication by a function, or compose it with another vector field, and do finitely many of these things, and add linear combinations of such things.” (The name $\mathrm{Diff}(M)$ is not from lecture.)
-
-> [!example] Example §48.1: Differential Operators in Coordinates
-> *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$. On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$: for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. So in a chart a differential operator is a finite sum $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ — “they are given by differential expressions in local coordinates.”
-
-^ex-48-1
-
-> [!remark] Remark: Differential Operators Are Local
-> Every differential operator is a local operator ([[§48 Vector Fields#^def-48-6|Definition §48.6]]). *(Lecture 15: “these are all local operators”; the reason is filled in.)* The generators are local: $(m_g f)(p) = g(p) f(p)$ depends only on $f(p)$, and $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]). Sums and composites of local operators are local: if $f|_U = g|_U$ then $(Pf)|_U = (Pg)|_U$, and applying $Q$ gives $(QPf)|_U = (QPg)|_U$.
-
-^rem-48-3
-
-> [!theorem] Theorem §48.6: Local Operators Are Differential Operators
-> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a neighbourhood $U$ on which, in a chart, $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for some $k$ and smooth $a_\alpha$. Conversely, every differential operator is local ([[§48 Vector Fields#^rem-48-3|Remark: Differential Operators Are Local]]).
-
-^thm-48-6
-
-> [!proof]+ Proof (not given in this course)
-> Stated in Lecture 15 “FYI”: “There's a theorem which is that every local operator … is a differential operator, and conversely, of course, the converse is easy. … We're not going to prove this theorem, but it's true.” It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
-
-^pf-48-6
-
-*Lecture 16 proved the converse of [[§48 Vector Fields#^lem-48-2|Lemma §48.2]]. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§48 Vector Fields#^lem-48-5|Lemma §48.5]]) is half the bridge; the other half is that germs can be globalized ([[§48 Vector Fields#^cor-48-4|Corollary §48.4]]).*
+*Lecture 16 proved the converse of [[§48 Vector Fields#^lem-48-3|Lemma §48.3]]. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§48 Vector Fields#^lem-48-6|Lemma §48.6]]) is half the bridge; the other half is that germs can be globalized ([[§48 Vector Fields#^cor-48-5|Corollary §48.5]]).*
 
 > [!theorem] Proposition §48.7: Derivations Are Vector Fields
-> Conversely, every [[§48 Vector Fields#^def-48-5|derivation]] $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ ([[§48 Vector Fields#^lem-48-2|Lemma §48.2]]) for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
+> Conversely, every [[§48 Vector Fields#^def-48-5|derivation]] $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ ([[§48 Vector Fields#^lem-48-3|Lemma §48.3]]) for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
 >
 > *Lee: Proposition 8.15*
 
@@ -316,13 +321,13 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 > \mathbf{X}_p(\gamma) = (Df)(p), \qquad f \in C^\infty(M) \text{ a global representative of } \gamma,
 > $$
 >
-> which exists by [[§48 Vector Fields#^cor-48-4|Corollary §48.4]].
+> which exists by [[§48 Vector Fields#^cor-48-5|Corollary §48.5]].
 >
-> *2. It is well defined.* Two global representatives of $\gamma$ agree on some neighbourhood of $p$, so by [[§48 Vector Fields#^lem-48-5|Lemma §48.5]] their images under $D$ agree there, in particular at $p$. “So you see, we need all these lemmas.”
+> *2. It is well defined.* Two global representatives of $\gamma$ agree on some neighbourhood of $p$, so by [[§48 Vector Fields#^lem-48-6|Lemma §48.6]] their images under $D$ agree there, in particular at $p$. “So you see, we need all these lemmas.”
 >
 > *3. Each $\mathbf{X}_p$ is a derivation at $p$.* *(Completion.)* If $f, g$ represent $\gamma, \delta$, then $fg$ represents $\gamma\delta$, and $\mathbf{X}_p(\gamma\delta) = D(fg)(p) = f(p)\,(Dg)(p) + g(p)\,(Df)(p) = \gamma(p)\,\mathbf{X}_p(\delta) + \delta(p)\,\mathbf{X}_p(\gamma)$; linearity is the same. So $\mathbf{X}_p \in T_pM$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]).
 >
-> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5]]), and “$\mathbf{X}_p(x^j)$ is $D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$.” *(Completion.)* Take one [[§48 Vector Fields#^def-48-9|bump function]] $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the single extension $\tilde x^j = \chi x^j$ of [[§48 Vector Fields#^cor-48-4|Corollary §48.4]]. It agrees with $x^j$ on $V$, so it represents the germ of $x^j$ at every $q \in V$, and
+> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5]]), and “$\mathbf{X}_p(x^j)$ is $D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$.” *(Completion.)* Take one [[§48 Vector Fields#^def-48-9|bump function]] $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the single extension $\tilde x^j = \chi x^j$ of [[§48 Vector Fields#^cor-48-5|Corollary §48.5]]. It agrees with $x^j$ on $V$, so it represents the germ of $x^j$ at every $q \in V$, and
 >
 > $$
 > \mathbf{X}_q(x^j) = D(\tilde x^j)(q) \qquad \text{for all } q \in V .
@@ -336,7 +341,7 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 
 ^pf-48-7
 
-*Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§48 Vector Fields#^cor-48-4|§48.4]], [[§48 Vector Fields#^lem-48-5|§48.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^prop-48-3|§48.3]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^lem-48-2|§48.2]]
+*Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§48 Vector Fields#^lem-48-6|§48.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^prop-48-4|§48.4]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^lem-48-3|§48.3]]
 
 So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: “you say to yourself, I'm thinking of $\mathbf{X}$ as an operator … if you say $\mathbf{X}(f)$, then it's an operator.”
 
@@ -350,7 +355,7 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 ^lem-48-8
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in, for use in Lecture 17's [[§50 Lie Groups and Left-Invariant Vector Fields#^thm-50-4|theorem on Lie algebras]]. The argument is step 4 of the proof of [[§48 Vector Fields#^prop-48-7|Proposition §48.7]].)* If $\mathbf{X}$ is smooth, $\mathbf{X}f$ is smooth by [[§48 Vector Fields#^lem-48-2|Lemma §48.2]]. Conversely, let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a [[§48 Vector Fields#^def-48-9|bump function]] $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the global function $\tilde x^j = \chi x^j$ of [[§48 Vector Fields#^cor-48-4|Corollary §48.4]]. It represents the [[§27 Germs#^def-27-2|germ]] of $x^j$ at every $q \in V$, so the coefficients of $\mathbf{X}$ ([[§48 Vector Fields#^prop-48-1|Proposition §48.1]]) are
+> *(Not from lecture; filled in, for use in Lecture 17's [[§52 Lie Groups and Left-Invariant Vector Fields#^thm-52-5|theorem on Lie algebras]]. The argument is step 4 of the proof of [[§48 Vector Fields#^prop-48-7|Proposition §48.7]].)* If $\mathbf{X}$ is smooth, $\mathbf{X}f$ is smooth by [[§48 Vector Fields#^lem-48-3|Lemma §48.3]]. Conversely, let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a [[§48 Vector Fields#^def-48-9|bump function]] $\chi$ at $p$ subordinate to $U$, equal to $1$ on an open $V \ni p$, and the global function $\tilde x^j = \chi x^j$ of [[§48 Vector Fields#^cor-48-5|Corollary §48.5]]. It represents the [[§27 Germs#^def-27-2|germ]] of $x^j$ at every $q \in V$, so the coefficients of $\mathbf{X}$ ([[§48 Vector Fields#^prop-48-1|Proposition §48.1]]) are
 >
 > $$
 > \mathbf{X}^j(q) = \mathbf{X}_q[x^j] = (\mathbf{X}\tilde x^j)(q), \qquad q \in V,
@@ -360,4 +365,4 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 
 ^pf-48-8
 
-*Uses:* [[§48 Vector Fields#^lem-48-2|§48.2]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^prop-48-3|§48.3]], [[§48 Vector Fields#^cor-48-4|§48.4]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^prop-48-7|§48.7]]
+*Uses:* [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^prop-48-4|§48.4]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^prop-48-7|§48.7]]

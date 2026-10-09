@@ -21,7 +21,7 @@ The course has built manifolds in two ways. The *geometric* picture is the equat
 | tangent space | velocities, $\ker F'(p)$ | derivations of germs | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|§29.6]] |
 | differential | Jacobian $F'(p)$ | pushforward $F_{\ast p}$ | Theorem [[§30 The Differential in Coordinates#^thm-30-2\|§30.2]] |
 | covectors | gradient $\nabla f$, transpose $J^{\mathsf T}$ | $df_p$, pullback $F_p^{\ast}$ | the remark [[§32 The Cotangent Space#^rem-32-6\|The Two Differentials Meet]] |
-| regular points | $F'(p)$ surjective | $F_{\ast p}$ surjective | Proposition [[§30 The Differential in Coordinates#^prop-30-7\|§30.7]] |
+| regular points | $F'(p)$ surjective | $F_{\ast p}$ surjective | Proposition [[§30 The Differential in Coordinates#^prop-30-8\|§30.8]] |
 | key theorems | implicit and inverse function theorems | normal form; local diffeomorphism criterion | proved through charts |
 | regular values | level sets are manifolds | level sets are submanifolds | Proposition [[§35 Regular Submanifolds#^prop-35-9\|§35.9]] |
 | global picture | inside $\mathbb{R}^N$ by construction | no ambient space | Theorem [[§38 Embeddings#^thm-38-1\|§38.1]] |
@@ -95,7 +95,7 @@ A geometric tangent vector is an arrow in the ambient space; an abstract one is 
 | Definition [[§7 The Regular Value Theorem#^def-7-1\|§7.1]] (Jacobian matrix $DF_p$); Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5\|§22.5]] ($dF_p$ between vector spaces) | Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6\|§28.6]] (pushforward $F_{\ast p}$) | Theorem [[§30 The Differential in Coordinates#^thm-30-2\|§30.2]]: the matrix of $F_{\ast p}$ is the Jacobian of the coordinate representation |
 | composition $g \circ F$ inside the chain rule | Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5\|§28.5]] (pullback of germs $F_p^{\ast}$) | $F_{\ast p}D = D \circ F_p^{\ast}$: the pushforward is defined through the pullback |
 | Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|§22.3]] ($dF_p(v) = \tfrac{d}{dt}F(p + tv)$) | Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3\|§31.3]] (differentials by curves) | both compute the differential along curves |
-| Definition [[§7 The Regular Value Theorem#^def-7-2\|§7.2]] (rank of a matrix) | Definition [[§30 The Differential in Coordinates#^def-30-1\|§30.1]] (rank of $F_{\ast p}$) | the rank of the Jacobian of any coordinate representation |
+| Definition [[§7 The Regular Value Theorem#^def-7-2\|§7.2]] (rank of a matrix) | Definition [[§30 The Differential in Coordinates#^def-30-2\|§30.2]] (rank of $F_{\ast p}$) | the rank of the Jacobian of any coordinate representation |
 | the chain rule for Jacobians | Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6\|§28.6]]; Corollary [[§30 The Differential in Coordinates#^cor-30-3\|§30.3]] | $(G \circ F)_{\ast p} = G_{*F(p)} \circ F_{\ast p}$ is matrix multiplication in coordinates |
 | $\mathbb{R}^n$ is its own tangent space | Corollary [[§30 The Differential in Coordinates#^cor-30-6\|§30.6]]; Proposition [[§30 The Differential in Coordinates#^prop-30-5\|§30.5]] | on open subsets of vector spaces $F_{\ast p}$ is the ordinary derivative |
 
@@ -134,21 +134,21 @@ In $\mathbb{R}^n$ the dot product identifies covectors with vectors, so the diff
 
 | Geometric | Abstract | How they correspond |
 |---|---|---|
-| Definition [[§7 The Regular Value Theorem#^def-7-3\|§7.3]] ($DF_p$ surjective) | Definition [[§30 The Differential in Coordinates#^def-30-2\|§30.2]], Definition [[§34 Submersions#^def-34-3\|§34.3]] ($F_{\ast p}$ surjective) | Proposition [[§30 The Differential in Coordinates#^prop-30-7\|§30.7]]: regular for $F$ iff for its coordinate representation |
-| Definition [[§7 The Regular Value Theorem#^def-7-4\|§7.4]] (every point of $F^{-1}(c)$ regular) | Definition [[§30 The Differential in Coordinates#^def-30-3\|§30.3]], Definition [[§34 Submersions#^def-34-4\|§34.4]] | the same condition, read through charts; Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4\|§22.4]] without coordinates |
+| Definition [[§7 The Regular Value Theorem#^def-7-3\|§7.3]] ($DF_p$ surjective) | Definition [[§30 The Differential in Coordinates#^def-30-3\|§30.3]], Definition [[§34 Submersions#^def-34-3\|§34.3]] ($F_{\ast p}$ surjective) | Proposition [[§30 The Differential in Coordinates#^prop-30-8\|§30.8]]: regular for $F$ iff for its coordinate representation |
+| Definition [[§7 The Regular Value Theorem#^def-7-4\|§7.4]] (every point of $F^{-1}(c)$ regular) | Definition [[§30 The Differential in Coordinates#^def-30-4\|§30.4]], Definition [[§34 Submersions#^def-34-4\|§34.4]] | the same condition, read through charts; Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4\|§22.4]] without coordinates |
 | Theorem [[§7 The Regular Value Theorem#^thm-7-1\|§7.1]] (implicit function theorem) | Theorem [[§34 Submersions#^thm-34-4\|§34.4]] (local normal form for submersions) | the normal form is the implicit function theorem in charts |
-| Theorem [[§7 The Regular Value Theorem#^thm-7-3\|§7.3]] (a regular level set is a topological manifold) | Corollary [[§30 The Differential in Coordinates#^cor-30-8\|§30.8]] (the same for $F : M \to N$) | proved through Proposition [[§30 The Differential in Coordinates#^prop-30-7\|§30.7]] |
+| Theorem [[§7 The Regular Value Theorem#^thm-7-3\|§7.3]] (a regular level set is a topological manifold) | Corollary [[§30 The Differential in Coordinates#^cor-30-9\|§30.9]] (the same for $F : M \to N$) | proved through Proposition [[§30 The Differential in Coordinates#^prop-30-8\|§30.8]] |
 | Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2\|§20.2]] (a regular level set is a smooth manifold) | Theorem [[§35 Regular Submanifolds#^thm-35-7\|§35.7]] (a regular level set is a submanifold) | Proposition [[§35 Regular Submanifolds#^prop-35-9\|§35.9]]: the same structure and tangent spaces |
 | Corollary [[§7 The Regular Value Theorem#^cor-7-4\|§7.4]] (open domains, arbitrary values) | Corollary [[§35 Regular Submanifolds#^cor-35-8\|§35.8]] (fibres of submersions) | every value of a submersion is regular |
 | Theorem [[§26 Transversality#^thm-26-1\|§26.1]], Corollary [[§26 Transversality#^cor-26-3\|§26.3]] (transversality) | (no manifold version yet) | the regular value theorem is the case of a point |
 
 ![[§7 The Regular Value Theorem#^def-7-3]]
 
-![[§30 The Differential in Coordinates#^def-30-2]]
+![[§30 The Differential in Coordinates#^def-30-3]]
 
 ![[§7 The Regular Value Theorem#^def-7-4]]
 
-![[§30 The Differential in Coordinates#^def-30-3]]
+![[§30 The Differential in Coordinates#^def-30-4]]
 
 ![[§7 The Regular Value Theorem#^thm-7-1]]
 
@@ -158,7 +158,7 @@ In $\mathbb{R}^n$ the dot product identifies covectors with vectors, so the diff
 
 ![[§35 Regular Submanifolds#^thm-35-7]]
 
-The pattern is the one of the whole course: a definition is transplanted by replacing the Jacobian $DF_p$ with the pushforward $F_{\ast p}$, and a theorem is proved by reading it in charts, where it becomes the Euclidean one. Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]] is the bridge for regular points — a point is regular for $F$ exactly when it is regular for the coordinate representation, because the matrix of $F_{\ast p}$ is that Jacobian. The local normal form for submersions plays the role of the implicit function theorem, and it upgrades the conclusion from “topological manifold” to “submanifold” with its tangent space. The remark *The Regular Value Theorems — Old and New* ([[§35 Regular Submanifolds|§35]]) lists all five versions with their roles.
+The pattern is the one of the whole course: a definition is transplanted by replacing the Jacobian $DF_p$ with the pushforward $F_{\ast p}$, and a theorem is proved by reading it in charts, where it becomes the Euclidean one. Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]] is the bridge for regular points — a point is regular for $F$ exactly when it is regular for the coordinate representation, because the matrix of $F_{\ast p}$ is that Jacobian. The local normal form for submersions plays the role of the implicit function theorem, and it upgrades the conclusion from “topological manifold” to “submanifold” with its tangent space. The remark *The Regular Value Theorems — Old and New* ([[§35 Regular Submanifolds|§35]]) lists all five versions with their roles.
 
 ## The Global Picture: Embeddings
 

@@ -45,7 +45,7 @@ $$
 > [!remark] Remark: Why This Identity Carries So Much
 > Uribe stated it in Lecture 10 and recalled it at the decisive moment of Lecture 11 — it is marked with “!!!” on page 30 of the handwritten notes. When a student asked whether the matrix in the proof of the normal form should be written with $\tilde F$, the answer was: “it's the same thing … that's how we define partials.” Partial derivatives on a manifold are *defined* by going downstairs, so the matrix of partials of the components $F^j$ upstairs is literally the ordinary Jacobian of $\tilde F$ downstairs. This is what turns every local computation on a manifold into calculus in $\mathbb{R}^m$, and it is used in:
 > 1. the matrix of the differential (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), which is a one-line proof because of it;
-> 2. regular values in one chart (Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]]): the rank of $F_{*p}$ is the rank of $\tilde F'(\varphi(p))$;
+> 2. regular values in one chart (Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]]): the rank of $F_{*p}$ is the rank of $\tilde F'(\varphi(p))$;
 > 3. the proof of the local normal form (Theorem [[§34 Submersions#^thm-34-4|§34.4]]), where the matrix $\big[\partial F^j/\partial x^i(p)\big]$ is built from the components $F^j$ but is the Jacobian of $\tilde F$;
 > 4. [[§30 The Differential in Coordinates#^rem-30-6|Assignment 3, Problem 4]], whose “matching coefficients” step computes $F_{*p}(\partial/\partial u_k|_p)[x^j]$ as an ordinary partial derivative of $F_\varphi$.
 >
@@ -214,60 +214,83 @@ $$
 
 ^rem-30-3
 
-> [!remark] Remark: Translations Identify the Tangent Spaces of a Vector Space
+> [!remark] Remark: Any Vector Space Will Do
 > *Lecture 17.* Nothing above needs $\mathbb{R}^N$: the ambient space can be any finite-dimensional vector space $V$, because the velocity
 >
 > $$
 > \gamma'(0) = \lim_{h \to 0} \frac{1}{h}\big(\gamma(h) - \gamma(0)\big)
 > $$
 >
-> makes sense in any vector space with a topology in which to take the limit (“you could take it in a Banach space … if you're doing functional analysis”). Moreover, all the tangent spaces of $V$ are identified with one another, and with $V$, by *translations*: for $p \in V$ (“I want to call it $p$ because I want to think of it as a point”), the translation
+> makes sense in any vector space with a topology in which to take the limit (“you could take it in a Banach space … if you're doing functional analysis”).
+
+^rem-30-4
+
+Moreover, all the tangent spaces of $V$ are identified with one another, and with $V$, by *translations*.
+
+> [!definition] Definition §30.1: Translation
+> Let $V$ be a finite-dimensional vector space and $p \in V$ (“I want to call it $p$ because I want to think of it as a point”). The **translation** by $p$ is
 >
 > $$
 > \tau_p : V \to V, \qquad \tau_p(v) = v + p ,
 > $$
 >
-> is the unique translation mapping $0$ to $p$, and its [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] $(\tau_p)_{\ast 0} : T_0V \to T_pV$ is the identification. *(Filled in: it is the identification of [[§30 The Differential in Coordinates#^cor-30-6|Corollary §30.6]].)* $\tau_p$ is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]], with inverse $\tau_{-p}$, and
->
-> $$
-> (\tau_p)_{*0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g],
-> $$
->
-> so $(\tau_p)_{*0}(D_v|_0) = D_v|_p$: the composite $V \cong T_0V \to T_pV$ is $v \mapsto D_v|_p$. “This is a canonical way to identify all of these tangent vectors. … That's what we did already”: a [[§25 The Geometric Tangent Space#^def-25-1|geometric tangent vector]] to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
->
-> **Transcription note (Lecture 17).** Page 45 of the handwritten notes writes the identification as “$T_pM \cong T_0V \cong V$”; it is $T_pV \cong T_0V \cong V$.
-
-^rem-30-4
-
-Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§50 Lie Groups and Left-Invariant Vector Fields#^def-50-1|Lie group]] $(V, +)$ ([[§50 Lie Groups and Left-Invariant Vector Fields#^ex-50-2|Example §50.2]]).
-
-> [!definition] Definition §30.1: Rank of a Smooth Map
-> Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation.
->
-> *Lee: Ch. 4 and Ch. 5, p. 105*
+> the unique translation mapping $0$ to $p$.
 
 ^def-30-1
 
-> [!remark]- Connections
-> - The rank of a matrix, in the Euclidean setting: [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]].
+> [!theorem] Proposition §30.7: Translations Identify the Tangent Spaces of a Vector Space
+> Let $V$ be a finite-dimensional vector space and $p \in V$.
+> 1. $\tau_p$ ([[§30 The Differential in Coordinates#^def-30-1|Definition §30.1]]) is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] of $V$, with inverse $\tau_{-p}$.
+> 2. $(\tau_p)_{\ast 0} : T_0V \to T_pV$ is a linear isomorphism, and $(\tau_p)_{\ast 0}\big(D_v|_0\big) = D_v|_p$ for every $v \in V$.
+>
+> So the composite $V \cong T_0V \to T_pV$ is $v \mapsto D_v|_p$, the identification of [[§30 The Differential in Coordinates#^cor-30-6|Corollary §30.6]].
 
-> [!definition] Definition §30.2: Regular Point of a Smooth Map
-> Let $F : M \to N$ be a smooth map. A point $p$ is a **regular point** of $F$ if $F_{\ast p}$ is surjective.
+^prop-30-7
+
+> [!proof]+ Proof
+> *(Lecture 17: “its pushforward is the identification”; filled in.)* (1) In linear coordinates $\tau_p$ is $x \mapsto x + \tilde p$, smooth, and so is its inverse $\tau_{-p}$. (2) The [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] along a diffeomorphism is an isomorphism ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|Corollary §28.7]]), and for $g$ smooth near $p$,
+>
+> $$
+> (\tau_p)_{*0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g] .
+> $$
+
+^pf-30-7
+
+*Uses:* [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]
+
+“This is a canonical way to identify all of these tangent vectors. … That's what we did already”: a [[§25 The Geometric Tangent Space#^def-25-1|geometric tangent vector]] to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
+
+**Transcription note (Lecture 17).** Page 45 of the handwritten notes writes the identification as “$T_pM \cong T_0V \cong V$”; it is $T_pV \cong T_0V \cong V$.
+
+Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-1|Lie group]] $(V, +)$ ([[§52 Lie Groups and Left-Invariant Vector Fields#^ex-52-2|Example §52.2]]).
+
+> [!definition] Definition §30.2: Rank of a Smooth Map
+> Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation.
 >
 > *Lee: Ch. 4 and Ch. 5, p. 105*
 
 ^def-30-2
 
 > [!remark]- Connections
-> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]; restated with critical points in [[§34 Submersions#^def-34-3|Def. §34.3]].
-> - A regular point is a point where $F$ is a submersion: [[§34 Submersions#^def-34-1|Def. §34.1]].
+> - The rank of a matrix, in the Euclidean setting: [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]].
 
-> [!definition] Definition §30.3: Regular Value of a Smooth Map
-> Let $F : M \to N$ be a smooth map. A value $c \in N$ is a **regular value** if every $p \in F^{-1}(c)$ is a regular point ([[§30 The Differential in Coordinates#^def-30-2|Definition §30.2]]).
+> [!definition] Definition §30.3: Regular Point of a Smooth Map
+> Let $F : M \to N$ be a smooth map. A point $p$ is a **regular point** of $F$ if $F_{\ast p}$ is surjective.
 >
 > *Lee: Ch. 4 and Ch. 5, p. 105*
 
 ^def-30-3
+
+> [!remark]- Connections
+> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]; restated with critical points in [[§34 Submersions#^def-34-3|Def. §34.3]].
+> - A regular point is a point where $F$ is a submersion: [[§34 Submersions#^def-34-1|Def. §34.1]].
+
+> [!definition] Definition §30.4: Regular Value of a Smooth Map
+> Let $F : M \to N$ be a smooth map. A value $c \in N$ is a **regular value** if every $p \in F^{-1}(c)$ is a regular point ([[§30 The Differential in Coordinates#^def-30-3|Definition §30.3]]).
+>
+> *Lee: Ch. 4 and Ch. 5, p. 105*
+
+^def-30-4
 
 > [!remark]- Connections
 > - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical values in [[§34 Submersions#^def-34-4|Def. §34.4]].
@@ -277,7 +300,7 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 
 ^rem-30-5
 
-> [!theorem] Proposition §30.7: Regular Values Inside One Chart
+> [!theorem] Proposition §30.8: Regular Values Inside One Chart
 > Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$, and $c \in N$. Suppose there are smooth charts $(U, \varphi)$ of $M$ and $(V, \psi)$ of $N$ with
 >
 > $$
@@ -286,10 +309,10 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 >
 > Let $\tilde F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \mathbb{R}^n$ be the coordinate representation of $F$, a smooth map on the open set $\varphi(U) \subseteq \mathbb{R}^m$, and put $\tilde c = \psi(c) \in \mathbb{R}^n$. Then:
 > 1. $\varphi$ restricts to a homeomorphism from the level set $F^{-1}(c) \subseteq M$ onto the Euclidean level set $\tilde F^{-1}(\tilde c) \subseteq \varphi(U)$;
-> 2. $c$ is a regular value of $F$ in the sense of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]] if and only if $\tilde c$ is a regular value of $\tilde F$ in the sense of Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]];
+> 2. $c$ is a regular value of $F$ in the sense of Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]] if and only if $\tilde c$ is a regular value of $\tilde F$ in the sense of Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]];
 > 3. in that case $F^{-1}(c)$ is a topological manifold of dimension $m - n$.
 
-^prop-30-7
+^prop-30-8
 
 > [!proof]+ Proof
 > (1) Let $x \in \varphi(U)$ and $q = \varphi^{-1}(x) \in U$. Since $F(U) \subseteq V$ and $\psi$ is injective on $V$,
@@ -304,9 +327,9 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 >
 > (3) By (2) and Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], applied on the open set $\varphi(U) \subseteq \mathbb{R}^m$ with $k = n$, the Euclidean level set $\tilde F^{-1}(\tilde c)$ is a topological manifold of dimension $m - n$. By (1), $F^{-1}(c)$ is homeomorphic to it, and being a topological manifold is preserved by homeomorphisms.
 
-^pf-30-7
+^pf-30-8
 
-*Uses:* [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]], [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]], [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
+*Uses:* [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
 
 ![[m591-12-13.svg]]
 *The proposition in one square. The level set upstairs is carried by the chart onto a level set downstairs, in Euclidean space, and the question “is $c$ regular?” is carried with it: surjectivity of $F_{\ast p}$ upstairs is the rank of $\tilde F'$ downstairs.*
@@ -316,7 +339,7 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 > 1. *Locate the level set.* Show that $F^{-1}(c)$ lies inside a single chart domain $U$, and that $F(U)$ lies in a chart domain $V$ around $c$.
 > 2. *Go downstairs.* Write the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$, an ordinary map between open subsets of Euclidean spaces.
 > 3. *Compute as in [[§7 The Regular Value Theorem|§7]].* Check that the Jacobian of $\tilde F$ has full rank $n$ at every point of the Euclidean level set $\tilde F^{-1}(\tilde c)$.
-> 4. *Come back up.* By Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], $c$ is a regular value of $F$, and $F^{-1}(c)$ is homeomorphic, through the chart, to a Euclidean regular level set: a manifold of dimension $\dim M - \dim N$.
+> 4. *Come back up.* By Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], $c$ is a regular value of $F$, and $F^{-1}(c)$ is homeomorphic, through the chart, to a Euclidean regular level set: a manifold of dimension $\dim M - \dim N$.
 >
 > Assignment 3, Problem 4 is exactly this. For the moment map $F : \mathbb{CP}^n \to \mathbb{R}^n$ and $c$ in the interior of the simplex, every point of $F^{-1}(c)$ has all homogeneous coordinates nonzero, so $F^{-1}(c) \subseteq U_0$ (step 1). The target chart is the identity of $\mathbb{R}^n$, and $\varphi_0(U_0) = \mathbb{C}^n \cong \mathbb{R}^{2n}$, so $\tilde F$ is an explicit rational map $\mathbb{R}^{2n} \to \mathbb{R}^n$ (step 2). Its Jacobian has rank $n$ on the level set (step 3). So the fibre is an $n$-dimensional manifold (step 4) — in this case a regular level set of $\mathbb{R}^{2n}$ itself, exactly the situation of [[§7 The Regular Value Theorem|§7]]. When a level set does not fit in one chart, the same argument applies around each of its points separately, as the next corollary shows.
 
@@ -324,34 +347,34 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 
 Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§40 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 
-> [!theorem] Corollary §30.8: Regular Level Sets Are Topological Manifolds
+> [!theorem] Corollary §30.9: Regular Level Sets Are Topological Manifolds
 > Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$, and $c \in N$ a regular value of $F$. Then $F^{-1}(c)$, with the subspace topology, is a topological manifold of dimension $m - n$ (or empty).
 
-^cor-30-8
+^cor-30-9
 
 > [!proof]+ Proof
-> Hausdorffness and second countability are inherited from $M$ (Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]). For local Euclideanness, let $p \in F^{-1}(c)$. Choose smooth charts $(V, \psi)$ around $c$ and $(U_0, \varphi_0)$ around $p$, and put $U = U_0 \cap F^{-1}(V)$, an open neighbourhood of $p$ because $F$ is continuous; restricting $\varphi_0$ gives a smooth chart $(U, \varphi)$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]]). Apply Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]] to the restriction $F|_U : U \to N$, a smooth map on the open submanifold $U$: its level set $F^{-1}(c) \cap U$ lies in $U$, it maps $U$ into $V$, and $c$ is still a regular value, since $T_qU = T_qM$ and $(F|_U)_{*q} = F_{*q}$ for $q \in U$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). So $F^{-1}(c) \cap U$, an open neighbourhood of $p$ in $F^{-1}(c)$, is a topological manifold of dimension $m - n$; in particular $p$ has a neighbourhood in $F^{-1}(c)$ homeomorphic to an open subset of $\mathbb{R}^{m-n}$.
+> Hausdorffness and second countability are inherited from $M$ (Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]). For local Euclideanness, let $p \in F^{-1}(c)$. Choose smooth charts $(V, \psi)$ around $c$ and $(U_0, \varphi_0)$ around $p$, and put $U = U_0 \cap F^{-1}(V)$, an open neighbourhood of $p$ because $F$ is continuous; restricting $\varphi_0$ gives a smooth chart $(U, \varphi)$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]]). Apply Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]] to the restriction $F|_U : U \to N$, a smooth map on the open submanifold $U$: its level set $F^{-1}(c) \cap U$ lies in $U$, it maps $U$ into $V$, and $c$ is still a regular value, since $T_qU = T_qM$ and $(F|_U)_{*q} = F_{*q}$ for $q \in U$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). So $F^{-1}(c) \cap U$, an open neighbourhood of $p$ in $F^{-1}(c)$, is a topological manifold of dimension $m - n$; in particular $p$ has a neighbourhood in $F^{-1}(c)$ homeomorphic to an open subset of $\mathbb{R}^{m-n}$.
 
-^pf-30-8
+^pf-30-9
 
-*Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]]
+*Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]]
 
 > [!remark]- Connections
 > - The smooth half, $F^{-1}(c)$ a submanifold with tangent space $\ker F_{*p}$: [[§35 Regular Submanifolds#^thm-35-7|§35.7]]; the Euclidean original: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 
 This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{\ast p}$ — came in Lecture 12, as Theorem [[§35 Regular Submanifolds#^thm-35-7|§35.7]], proved with the local normal form for submersions (Theorem [[§34 Submersions#^thm-34-4|§34.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.
 
-> [!theorem] Proposition §30.9: Maps with Zero Differential Are Constant
+> [!theorem] Proposition §30.10: Maps with Zero Differential Are Constant
 > Let $F : M \to N$ be smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]), with $M$ connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]). If $F_{\ast p} = 0$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]) for every $p \in M$, then $F$ is constant.
 
-^prop-30-9
+^prop-30-10
 
 > [!proof]+ Proof
 > *(Assignment 4, Problem 1: the submitted solution, condensed.)* *$F$ is locally constant.* Fix $p_0 \in M$. Take a chart $(V, \psi)$ at $F(p_0)$ and a chart at $p_0$ whose domain $U_0$ satisfies $F(U_0) \subseteq V$ and whose image is an open ball $B$ — shrink by continuity of $F$, then to a ball. The coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : B \to \mathbb{R}^n$ has Jacobian $\tilde F'(\varphi(p))$, the matrix of $F_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), so $\tilde F' \equiv 0$ on $B$. For $p \in U_0$, the segment from $\varphi(p_0)$ to $\varphi(p)$ stays in the convex $B$, and the [[§29 The Mean Value Theorem#^thm-29-3|mean value theorem]] applied to each component of $\tilde F$ along it gives $\tilde F(\varphi(p)) = \tilde F(\varphi(p_0))$; since $\psi$ is injective, $F(p) = F(p_0)$.
 >
 > *$F$ is constant.* Let $c = F(p_0)$. The set $F^{-1}(c)$ is closed, since $F$ is continuous, and open, since $F$ is locally constant; it is nonempty. As $M$ is connected, $F^{-1}(c) = M$.
 
-^pf-30-9
+^pf-30-10
 
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]]
 

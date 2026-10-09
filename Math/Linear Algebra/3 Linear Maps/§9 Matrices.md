@@ -361,5 +361,5 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Rank–nullity for matrices: [[Fundamental theorem of linear maps]] with [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] gives $n=\dim\nullsp A+\operatorname{rank}A$.
-> - The rank of a smooth map at a point is the rank of its Jacobian, equivalently of its differential: [[§7 The Regular Value Theorem#^def-7-2|591 Def. §7.2]], [[§30 The Differential in Coordinates#^def-30-1|591 Def. §30.1]].
+> - The rank of a smooth map at a point is the rank of its Jacobian, equivalently of its differential: [[§7 The Regular Value Theorem#^def-7-2|591 Def. §7.2]], [[§30 The Differential in Coordinates#^def-30-2|591 Def. §30.2]].
 > - Computational version: [[§34 Rank#^def-34-1|235 Def. §34.1]] (also [[§22 Dimension and Rank#^def-22-3|235 Def. §22.3]]: the number of pivot columns).

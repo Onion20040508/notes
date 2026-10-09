@@ -49,7 +49,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Rank: [[§9 Matrices#^ladr-3-58|LADR 3.58]]; row rank equals column rank, [[§9 Matrices#^ladr-3-57|LADR 3.57]].
-> - The rank of a smooth map of manifolds: [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]].
+> - The rank of a smooth map of manifolds: [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]].
 
 ## Regular Points and Regular Values
 
@@ -61,7 +61,7 @@ tags: [differentiable-manifolds, math591]
 ^def-7-3
 
 > [!remark]- Connections
-> - The same notion defined again later, for smooth maps of manifolds: [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]] and [[§34 Submersions#^def-34-3|Def. §34.3]].
+> - The same notion defined again later, for smooth maps of manifolds: [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§34 Submersions#^def-34-3|Def. §34.3]].
 
 > [!definition] Definition §7.4: Regular Value
 > Let $F : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$. A value $c \in \mathbb{R}^m$ is a **regular value** of $F$ if every point of the level set $F^{-1}(c)$ is a regular point ([[§7 The Regular Value Theorem#^def-7-3|Definition §7.3]]). Otherwise $c$ is a **critical value**. (If $F^{-1}(c) = \emptyset$, then $c$ is vacuously a regular value.) So for scalar-valued $F$, $c \in \mathbb{R}$ is a regular value iff $\nabla F$ vanishes nowhere on $F^{-1}(c)$.
@@ -71,7 +71,7 @@ tags: [differentiable-manifolds, math591]
 ^def-7-4
 
 > [!remark]- Connections
-> - The same notion defined again later: without coordinates, [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]; for smooth maps of manifolds, [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§34 Submersions#^def-34-4|Def. §34.4]].
+> - The same notion defined again later: without coordinates, [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]; for smooth maps of manifolds, [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§34 Submersions#^def-34-4|Def. §34.4]].
 
 > [!remark] Remark: The Constraint $N \ge m$
 > Regular points can exist only when $N \ge m$, and the case $N = m$ is special; both facts are made precise in [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5]], once the regular value theorem is available. Geometrically, one cannot cut an $N$-dimensional space down by more than $N$ independent constraints and have anything left — the dimension count $N - m$ would be negative. The boundary case $N = m$ belongs to the *inverse* function theorem rather than the implicit one. The situation of interest below is $N = n^2$, $m = 1$.
@@ -201,7 +201,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 *Uses:* [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 > [!remark]- Connections
-> - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-8|§30.8]] and [[§35 Regular Submanifolds#^thm-35-7|§35.7]].
+> - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-9|§30.9]] and [[§35 Regular Submanifolds#^thm-35-7|§35.7]].
 > - Recovered as a special case of transversality: [[§26 Transversality#^cor-26-3|§26.3]].
 
 > [!theorem] Corollary §7.4: Open Domains and Arbitrary Values

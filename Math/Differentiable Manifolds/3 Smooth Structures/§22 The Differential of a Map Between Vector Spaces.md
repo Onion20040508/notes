@@ -176,7 +176,7 @@ Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the 
 *Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
 
 > [!remark]- Connections
-> - The manifold versions of this definition of regular value: [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§34 Submersions#^def-34-4|Def. §34.4]].
+> - The manifold versions of this definition of regular value: [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§34 Submersions#^def-34-4|Def. §34.4]].
 
 > [!remark] Remark: What the Curve Method Computes
 > Read together, Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] and Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] are the license for the computation in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds|The Orthogonal Group as a Smooth Manifold]]. The board computation $\frac{d}{dt}\big|_0 F(g + tA)$ is not a shortcut around the Jacobian — it *is* the Jacobian, packaged as the linear map $A \mapsto dF_g(A)$ and read off without coordinates; and the surjectivity of that linear map *is* the maximal-rank condition, likewise without coordinates. Written as a matrix, $dF_g$ for $\mathrm{O}(n)$ would have $n(n+1)/2$ rows and $n^2$ columns of partial derivatives. None of it is needed. “Using curves to compute differentials is a basic technique in this subject.”

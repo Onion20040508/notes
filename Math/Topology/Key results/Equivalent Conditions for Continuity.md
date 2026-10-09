@@ -20,7 +20,7 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|Definition §11.6: Special Linear Group]]
-- [[§30 The Differential in Coordinates#^prop-30-9|Proposition §30.9: Maps with Zero Differential Are Constant]]
+- [[§30 The Differential in Coordinates#^prop-30-10|Proposition §30.10: Maps with Zero Differential Are Constant]]
 - [[§38 Embeddings#^thm-38-5|Theorem §38.5: Injective Proper Immersions Are Embeddings]]
 - [[§38 Embeddings#^prop-38-7|Proposition §38.7: Images of Embeddings Are Locally Closed]]
 

@@ -32,7 +32,7 @@ tags: [real-analysis, hub]
 - [[§28 Differentiation Theory#^prop-28-3|Proposition §28.3: Differentiable Functions with Bounded Derivative are BV]]
 
 ## Used in (Differentiable Manifolds)
-- [[§30 The Differential in Coordinates#^prop-30-9|Proposition §30.9: Maps with Zero Differential Are Constant]]
+- [[§30 The Differential in Coordinates#^prop-30-10|Proposition §30.10: Maps with Zero Differential Are Constant]]
 
 ## Connections
 - Leads to Taylor's theorem ([[§31 Taylor's Theorem#^thm-31-2|Theorem §31.2]]) and, in its generalized (Cauchy) form ([[§30 L'Hospital's Rule#^thm-30-2|Theorem §30.2]]), to L'Hospital's rule ([[§30 L'Hospital's Rule#^thm-30-1|Theorem §30.1]]).

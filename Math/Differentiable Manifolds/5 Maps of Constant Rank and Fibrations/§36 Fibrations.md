@@ -65,7 +65,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^rem-36-1
 
 > [!remark]- Connections
-> - [[§45 The Tangent Bundle#^cor-45-3|The tangent bundle is a fibration, §45.3]]; [[§46 The Cotangent Bundle#^def-46-1|the cotangent bundle, Def. §46.1]]; [[§45 The Tangent Bundle#^rem-45-2|Remark: Vector Bundles (§44)]].
+> - [[§45 The Tangent Bundle#^cor-45-3|The tangent bundle is a fibration, §45.3]]; [[§46 The Cotangent Bundle#^def-46-1|the cotangent bundle, Def. §46.1]]; [[§45 The Tangent Bundle#^rem-45-2|Remark: Vector Bundles (§45)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 

@@ -266,7 +266,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Def. §33.5]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§23 The Dominated Convergence Theorem#^thm-23-3|551 §23.3]]
 
 > [!remark]- Connections
-> - The flat function $e^{-1/x^2}$ behind $\psi$, smooth with every derivative $0$ at the origin: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; bump functions on manifolds, [[§48 Vector Fields#^prop-48-3|591 §48.3]].
+> - The flat function $e^{-1/x^2}$ behind $\psi$, smooth with every derivative $0$ at the origin: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; bump functions on manifolds, [[§48 Vector Fields#^prop-48-4|591 §48.4]].
 
 ![[m556-33-1.svg]]
 *The board pictures. A corner is harmless: $|x|$ has the bounded weak derivative $\operatorname{sgn} x$. A jump is not: the “derivative” of $\operatorname{sgn} x$ is concentrated at a single point with total mass $2$, which no function can do.*

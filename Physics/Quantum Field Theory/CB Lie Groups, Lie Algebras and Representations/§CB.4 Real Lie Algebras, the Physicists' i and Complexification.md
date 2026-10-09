@@ -16,7 +16,7 @@ The Lie algebra of a matrix Lie group is a *real* Lie algebra ([[§CB.1 Matrix L
 ## Complexification
 
 > [!definition] Definition §CB.4.1: Complex Lie Algebra
-> A **complex Lie algebra** is a complex vector space $\mathfrak h$ with a complex-bilinear, skew-symmetric bracket $[\cdot,\cdot] : \mathfrak h\times\mathfrak h \to \mathfrak h$ satisfying the Jacobi identity (as in [[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]], with $\mathbb C$ in place of $\mathbb R$). Homomorphisms of complex Lie algebras are complex-linear ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-2|Def. §CB.3.2]]). Example: $\mathfrak{sl}(2, \mathbb C)$ with the commutator.
+> A **complex Lie algebra** is a complex vector space $\mathfrak h$ with a complex-bilinear, skew-symmetric bracket $[\cdot,\cdot] : \mathfrak h\times\mathfrak h \to \mathfrak h$ satisfying the Jacobi identity (as in [[§50 Lie Bracket and Lie Algebra#^def-50-2|591 Def. §50.2]], with $\mathbb C$ in place of $\mathbb R$). Homomorphisms of complex Lie algebras are complex-linear ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-2|Def. §CB.3.2]]). Example: $\mathfrak{sl}(2, \mathbb C)$ with the commutator.
 >
 > *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §8, Def. 3.27 (real or complex Lie algebra) · Woit, §5.5*
 

@@ -9,9 +9,9 @@ The quotient map $\pi : S^{2n+1} \to \mathbb{CP}^n$, $z \mapsto [z]$, whose fibr
 - $\mathbb{CP}^n$ is defined as the quotient of $S^{2n+1}$ whose classes are circles ([[§9 Complex Projective Space#^def-9-1|§9]])
 - The quotient map is the orbit map of $\mathrm{U}(1)$ acting on $S^{2n+1}$ ([[§13 Group Actions and Orbit Spaces#^ex-13-3|§13]])
 - Every orbit is a circle of the same kind: no special points ([[§13 Group Actions and Orbit Spaces#^rem-13-5|§13]])
-- $S^{2n+1} \to \mathbb{CP}^n$ is a submersion ([[§40 Projective Spaces and the Hopf Fibration#^ex-40-2|§39]])
-- $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$ ([[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|§39]])
-- $\pi$ has no continuous section for $n \geq 1$ ([[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|§39]])
+- $S^{2n+1} \to \mathbb{CP}^n$ is a submersion ([[§40 Projective Spaces and the Hopf Fibration#^ex-40-2|§40]])
+- $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$ ([[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|§40]])
+- $\pi$ has no continuous section for $n \geq 1$ ([[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|§40]])
 
 ## $\mathbb{CP}^n$ is defined as the quotient of $S^{2n+1}$ whose classes are circles
 ![[§9 Complex Projective Space#^def-9-1]]

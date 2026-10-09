@@ -23,7 +23,7 @@ How does a homomorphism of matrix Lie groups act on their Lie algebras, which pa
 ^def-cb-3-1
 
 > [!definition] Definition §CB.3.2: Lie Algebra Homomorphism
-> A **Lie algebra homomorphism** between real Lie algebras $\mathfrak g$ and $\mathfrak h$ ([[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]]) is a real-linear map $\varphi : \mathfrak g \to \mathfrak h$ with $\varphi([X, Y]) = [\varphi(X), \varphi(Y)]$ for all $X, Y$. A bijective one is an **isomorphism**, written $\mathfrak g \cong \mathfrak h$. (For complex Lie algebras, [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-1|Def. §CB.4.1]], the same words with complex-linear maps.)
+> A **Lie algebra homomorphism** between real Lie algebras $\mathfrak g$ and $\mathfrak h$ ([[§50 Lie Bracket and Lie Algebra#^def-50-2|591 Def. §50.2]]) is a real-linear map $\varphi : \mathfrak g \to \mathfrak h$ with $\varphi([X, Y]) = [\varphi(X), \varphi(Y)]$ for all $X, Y$. A bijective one is an **isomorphism**, written $\mathfrak g \cong \mathfrak h$. (For complex Lie algebras, [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-1|Def. §CB.4.1]], the same words with complex-linear maps.)
 >
 > *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §8, Def. 3.29*
 
@@ -405,7 +405,7 @@ That every exponential of the course's generators, $e^\omega = \exp\bigl(-\frac 
 > [!proof]- Proof
 > *Source: B. C. Hall, An Elementary Introduction to Groups and Representations, Ch. 3, Prop. 3.20 (Ad is a homomorphism), Prop. 3.21 (its differential), Prop. 3.33 (ad and Jacobi) and eq. (3.17) (Ad of an exponential) with proofs (https://arxiv.org/abs/math-ph/0005032).*
 >
-> **Step 1** (part 1; Hall, Prop. 3.33). For $Z \in \mathfrak g$: $\mathrm{ad}_{[X, Y]}Z = [[X, Y], Z]$ and $[\mathrm{ad}_X, \mathrm{ad}_Y]Z = [X, [Y, Z]] - [Y, [X, Z]]$. Their difference is $[[X, Y], Z] - [X, [Y, Z]] + [Y, [X, Z]] = -\bigl([X, [Y, Z]] + [Y, [Z, X]] + [Z, [X, Y]]\bigr)$ (using $[[X, Y], Z] = -[Z, [X, Y]]$ and $[Y, [X, Z]] = -[Y, [Z, X]]$), which is $0$ by the Jacobi identity ([[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]]). $\mathrm{ad}$ is linear because the bracket is bilinear.
+> **Step 1** (part 1; Hall, Prop. 3.33). For $Z \in \mathfrak g$: $\mathrm{ad}_{[X, Y]}Z = [[X, Y], Z]$ and $[\mathrm{ad}_X, \mathrm{ad}_Y]Z = [X, [Y, Z]] - [Y, [X, Z]]$. Their difference is $[[X, Y], Z] - [X, [Y, Z]] + [Y, [X, Z]] = -\bigl([X, [Y, Z]] + [Y, [Z, X]] + [Z, [X, Y]]\bigr)$ (using $[[X, Y], Z] = -[Z, [X, Y]]$ and $[Y, [X, Z]] = -[Y, [Z, X]]$), which is $0$ by the Jacobi identity ([[§50 Lie Bracket and Lie Algebra#^def-50-2|591 Def. §50.2]]). $\mathrm{ad}$ is linear because the bracket is bilinear.
 >
 > **Step 2** (Ad is a Lie group homomorphism; Hall, Prop. 3.20). $\mathrm{Ad}_g$ maps $\mathfrak g$ to itself ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]], 2) and is real-linear. $\mathrm{Ad}_{gh}X = ghXh^{-1}g^{-1} = \mathrm{Ad}_g(\mathrm{Ad}_hX)$ and $\mathrm{Ad}_{\mathbb 1} = \mathrm{id}$, so $\mathrm{Ad}_{g^{-1}}$ inverts $\mathrm{Ad}_g$ and $\mathrm{Ad} : G \to GL(\mathfrak g)$ is a group homomorphism. Choosing a basis of $\mathfrak g$ identifies $GL(\mathfrak g)$ with $GL(k, \mathbb R)$, $k = \dim\mathfrak g$, a matrix Lie group; the matrix entries of $\mathrm{Ad}_g$ are linear combinations of the entries of $gX_ag^{-1}$, continuous in $g$. So $\mathrm{Ad}$ is a Lie group homomorphism ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-1|Def. §CB.3.1]]), and the Lie algebra of $GL(\mathfrak g)$ is $\mathfrak{gl}(\mathfrak g) = \operatorname{End}(\mathfrak g)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]], first row, over $\mathbb R$).
 >
@@ -431,7 +431,7 @@ That every exponential of the course's generators, $e^\omega = \exp\bigl(-\frac 
 
 ^pf-cb-3-17
 
-*Uses:* [[§49 Lie Bracket and Lie Algebra#^def-49-2|591 Def. §49.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4|Def. §CB.1.4]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-1|Def. §CB.3.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-3|Theorem §CB.3.3]]
+*Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-2|591 Def. §50.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4|Def. §CB.1.4]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-1|Def. §CB.3.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-17|Theorem §CB.1.17]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-3|Theorem §CB.3.3]]
 
 ## Coverings and the Lie correspondence
 
