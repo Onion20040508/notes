@@ -93,7 +93,7 @@ tags: [linear-algebra]
 > Square roots in general are plentiful: $I$ on $\R^2$ has infinitely many (all reflections), but only $I$ itself is positive.
 
 > [!remark]- Connections
-> - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|QFT Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|QFT Theorem §C5a.9.7]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-4|QFT Theorem §CB.15.4]].
+> - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|QFT Def. §C5a.9.5]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|QFT Theorem §C5a.9.7]], [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|QFT Theorem §CB.9.9]].
 
 > [!remark] Notation 7.40: √T (p. 253)
 > For a positive operator $T$, $\sqrt T$ denotes its unique positive square root ([[§25 Positive Operators#^ladr-7-39|7.39]]).

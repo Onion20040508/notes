@@ -108,33 +108,33 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-8|§CB.8.8]] U(p, q) Is a Matrix Lie Group
 - [[§CB.8 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-8-10|§CB.8.10]] Forms with the Same Adjoint on an Irreducible Set Are Proportional
 - [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-3|§CB.9.3]] The Irreducible Representations of the Rotation Algebra (Highest Weight)
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-4|§CB.9.4]] Finite-Dimensional Representations of 𝔰𝔩(2,ℂ)
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-5|§CB.9.5]] Weight Multiplicities Determine a Representation
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-7|§CB.9.7]] SU(2) Is Simply Connected, SO(3) Is Doubly Connected
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-8|§CB.9.8]] Integer and Half-Integer Spin: Integration to SU(2) and SO(3)
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|§CB.9.9]] Spin j Is the Symmetric Power Sym²ʲℂ²
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-10|§CB.9.10]] Clebsch–Gordan Series
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-11|§CB.9.11]] Descent Lemma
-- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-12|§CB.9.12]] Integer Spin Is Built from Vectors
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-5|§CB.9.5]] Finite-Dimensional Representations of 𝔰𝔩(2,ℂ)
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-6|§CB.9.6]] Weight Multiplicities Determine a Representation
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-8|§CB.9.8]] SU(2) Is Simply Connected, SO(3) Is Doubly Connected
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-10|§CB.9.10]] Integer and Half-Integer Spin: Integration to SU(2) and SO(3)
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-12|§CB.9.12]] Spin j Is the Symmetric Power Sym²ʲℂ²
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-14|§CB.9.14]] Clebsch–Gordan Series
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-15|§CB.9.15]] Descent Lemma
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-16|§CB.9.16]] Integer Spin Is Built from Vectors
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-5|§CB.10.5]] The Quotient Is an Algebra
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-7|§CB.10.7]] Universal Property of the Clifford Algebra
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-8|§CB.10.8]] The Anticommutator and the Embedding of V
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-10|§CB.10.10]] A Clifford Module Is a Set of Anticommuting Square Roots
 - [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12|§CB.10.12]] First Consequences of the Clifford Algebra
-- [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-14|§CB.10.14]] The Matrices of the Dirac Maps in Any Basis
-- [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15|§CB.10.15]] Clifford Generators Are Invertible and Pairwise Non-Commuting
+- [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15|§CB.10.15]] The Matrices of the Dirac Maps in Any Basis
+- [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-16|§CB.10.16]] Clifford Generators Are Invertible and Pairwise Non-Commuting
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-1|§CB.11.1]] The Grade Automorphism
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-3|§CB.11.3]] The ℤ₂-Grading
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-4|§CB.11.4]] The Reversal
 - [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-6|§CB.11.6]] Basis and Dimension
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|§CB.11.8]] The Sixteen Products Are a Basis
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|§CB.11.9]] The Eigenvalues of Γ⁰ and Γⁱ
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|§CB.11.10]] The Clifford Algebra Is the Exterior Algebra as a Vector Space
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-12|§CB.11.12]] Properties of the Volume Element
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|§CB.11.14]] Algebraic Properties of γ⁵
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|§CB.11.15]] γ⁰ and γ⁵ Cannot Be Diagonal in the Same Basis
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-16|§CB.11.16]] The Even Subalgebra Is a Clifford Algebra of One Dimension Less
-- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17|§CB.11.17]] Clifford Algebras in Low Dimensions
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|§CB.11.9]] The Sixteen Products Are a Basis
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10|§CB.11.10]] The Eigenvalues of Γ⁰ and Γⁱ
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-11|§CB.11.11]] The Clifford Algebra Is the Exterior Algebra as a Vector Space
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-13|§CB.11.13]] Properties of the Volume Element
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|§CB.11.15]] Algebraic Properties of γ⁵
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17|§CB.11.17]] γ⁰ and γ⁵ Cannot Be Diagonal in the Same Basis
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-18|§CB.11.18]] The Even Subalgebra Is a Clifford Algebra of One Dimension Less
+- [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-19|§CB.11.19]] Clifford Algebras in Low Dimensions
 - [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-3|§CB.12.3]] Every Real Clifford Algebra Complexifies to Clₙ(ℂ)
 - [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-5|§CB.12.5]] The Complex Clifford Algebras Are Matrix Algebras
 - [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-6|§CB.12.6]] Modules of a Full Matrix Algebra
@@ -151,19 +151,19 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-20|§CB.12.20]] An Irreducible Clifford Module under the Even Subalgebra
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-2|§CB.13.2]] Non-Null Vectors Are Invertible
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-4|§CB.13.4]] A Vector Acts as the Reflection in Its Orthogonal Hyperplane
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-7|§CB.13.7]] Pin and Spin Are Matrix Lie Groups Acting on V
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-9|§CB.13.9]] The Spinor Norm on Pin
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-10|§CB.13.10]] Cartan–Dieudonné
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-11|§CB.13.11]] Spin(V) → SO(V) Is Onto with Kernel ±1
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-12|§CB.13.12]] The Identity Component Is a Double Cover
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-10|§CB.13.10]] Pin and Spin Are Matrix Lie Groups Acting on V
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-11|§CB.13.11]] The Spinor Norm on Pin
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-5|§CB.13.5]] Cartan–Dieudonné
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-12|§CB.13.12]] Spin(V) → SO(V) Is Onto with Kernel ±1
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-15|§CB.13.15]] The Identity Component Is a Double Cover
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-14|§CB.13.14]] 𝔰𝔭𝔦𝔫(V) Is the Lie Algebra of Spin(V), Isomorphic to 𝔰𝔬(V)
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-16|§CB.13.16]] The Dirac Matrices Rotate as a Vector
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-17|§CB.13.17]] The Spinor Generators Obey the Lorentz Algebra
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-19|§CB.13.19]] The Even Subalgebra Is Generated by 𝔰𝔭𝔦𝔫(V)
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-20|§CB.13.20]] Spin Preserves a Form for Which the Clifford Generators Are Self-Adjoint
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-21|§CB.13.21]] Adjoints of the Generators
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-24|§CB.13.24]] Every Representation Splits into a Tensorial and a Spinorial Part
-- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-26|§CB.13.26]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-17|§CB.13.17]] The Dirac Matrices Rotate as a Vector
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-18|§CB.13.18]] The Spinor Generators Obey the Lorentz Algebra
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-20|§CB.13.20]] The Even Subalgebra Is Generated by 𝔰𝔭𝔦𝔫(V)
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-21|§CB.13.21]] Spin Preserves a Form for Which the Clifford Generators Are Self-Adjoint
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-22|§CB.13.22]] Adjoints of the Generators
+- [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-25|§CB.13.25]] Every Representation Splits into a Tensorial and a Spinorial Part
+- [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-17|§CB.17.17]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
 - [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-27|§CB.13.27]] Clifford Multiplication Is Spin-Equivariant
 - [[§CB.14 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-14-1|§CB.14.1]] The Pauli Matrices Realize Cl(3, 0)
 - [[§CB.14 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-14-2|§CB.14.2]] The Even Part Is the Quaternions
@@ -174,25 +174,25 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-1|§CB.15.1]] The Complexification of Real 𝔰𝔩(2,ℂ) Is Two Copies of 𝔰𝔩(2,ℂ)
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-2|§CB.15.2]] Representations of Real 𝔰𝔩(2,ℂ): a Complex-Linear and an Antilinear Part
 - [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|§CB.15.3]] Four-Vectors as Hermitian Matrices
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-4|§CB.15.4]] SL(2, C) Is Connected and Simply Connected
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-5|§CB.15.5]] Every Element of SL(2, C) Gives a Lorentz Transformation
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-6|§CB.15.6]] The Kernel Is ±1
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-7|§CB.15.7]] SL(2, C) Is the Double Cover of SO⁺(1,3)
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-8|§CB.15.8]] Cl⁰(1,3) ≅ Cl(3,0) ≅ M₂(ℂ)
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9|§CB.15.9]] Spin(1,3)₀ Is SL(2,ℂ), and ρ Is the Course's Covering Map up to λ ↦ (λ†)⁻¹
-- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-10|§CB.15.10]] The Three Lie Algebras Agree
+- [[§CB.9 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-9-9|§CB.9.9]] SL(2, C) Is Connected and Simply Connected
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-4|§CB.15.4]] Every Element of SL(2, C) Gives a Lorentz Transformation
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-5|§CB.15.5]] The Kernel Is ±1
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9|§CB.15.9]] SL(2, C) Is the Double Cover of SO⁺(1,3)
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-11|§CB.15.11]] Cl⁰(1,3) ≅ Cl(3,0) ≅ M₂(ℂ)
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-12|§CB.15.12]] Spin(1,3)₀ Is SL(2,ℂ), and ρ Is the Course's Covering Map up to λ ↦ (λ†)⁻¹
+- [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-13|§CB.15.13]] The Three Lie Algebras Agree
 - [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-1|§CB.16.1]] Representations of SL(2,ℂ) Are Pairs of 𝔰𝔩(2,ℂ)-Representations
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-3|§CB.16.3]] (j₊, j₋) Is Irreducible
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-4|§CB.16.4]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋)
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-5|§CB.16.5]] The Irreducible Representations of SL(2,ℂ)
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-6|§CB.16.6]] Rotation Content and the Sign of a 2π Rotation
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-7|§CB.16.7]] Integer (j₊, j₋) Are Representations of SO⁺(1,3)
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-8|§CB.16.8]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9|§CB.16.9]] Tensor Products Add Each Copy Separately
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-10|§CB.16.10]] The Parity Automorphism Exchanges the Two Copies
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|§CB.16.11]] Complex Conjugation Exchanges the Two Copies
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|§CB.16.12]] No Finite-Dimensional Representation Is Unitary
-- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-13|§CB.16.13]] Which (j₊, j₋) Descend to SO⁺(1,3)
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-4|§CB.16.4]] (j₊, j₋) Is Irreducible
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-5|§CB.16.5]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋)
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-7|§CB.16.7]] The Irreducible Representations of SL(2,ℂ)
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-8|§CB.16.8]] Rotation Content and the Sign of a 2π Rotation
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9|§CB.16.9]] Integer (j₊, j₋) Are Representations of SO⁺(1,3)
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-10|§CB.16.10]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|§CB.16.11]] Tensor Products Add Each Copy Separately
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|§CB.16.12]] The Parity Automorphism Exchanges the Two Copies
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-13|§CB.16.13]] Complex Conjugation Exchanges the Two Copies
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-14|§CB.16.14]] No Finite-Dimensional Representation Is Unitary
+- [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-15|§CB.16.15]] Which (j₊, j₋) Descend to SO⁺(1,3)
 - [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-2|§CB.17.2]] γ⁵ Is the Complex Volume Element (of the Opposite Orientation)
 - [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-3|§CB.17.3]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½)
 - [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4|§CB.17.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module

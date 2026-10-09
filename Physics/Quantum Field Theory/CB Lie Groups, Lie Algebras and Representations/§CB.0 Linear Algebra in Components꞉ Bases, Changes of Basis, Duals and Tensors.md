@@ -65,7 +65,7 @@ What do a basis and a change of basis do to the vectors, linear maps, dual vecto
 >
 > **What the derivation shows**
 > - Only linearity and the uniqueness of components are used: the matrix calculus of the lecture is the calculus of $\operatorname{End}(V)$ written in one basis.
-> - Used next: in a new basis the same operator has a new matrix (Theorem §CB.0.5), and the Clifford relation survives in every basis (Theorem §CB.10.14).
+> - Used next: in a new basis the same operator has a new matrix (Theorem §CB.0.5), and the Clifford relation survives in every basis (Theorem §CB.10.15).
 
 ^der-cb-0-3
 
@@ -114,7 +114,7 @@ What do a basis and a change of basis do to the vectors, linear maps, dual vecto
 >
 > **What the derivation shows**
 > - The rules are not physics: they are the bookkeeping of one vector and one linear map in two bases. $\psi$ has one $V$-index, hence one factor $U$; $M$ has a row index (a $V$-slot) and a column index (contracted with $\psi$), hence $U$ on the left and $U^{-1}$ on the right. Which kind of index gets which factor is the slot rule (Theorem §CB.0.10).
-> - Used next: the Dirac matrices are matrices of operators (Theorem §CB.10.14), so $\gamma'^\mu = U\gamma^\mu U^{-1}$ is this theorem, not an additional rule.
+> - Used next: the Dirac matrices are matrices of operators (Theorem §CB.10.15), so $\gamma'^\mu = U\gamma^\mu U^{-1}$ is this theorem, not an additional rule.
 
 ^der-cb-0-5
 
@@ -523,7 +523,7 @@ Two families of symbols used throughout CB: the Levi-Civita symbol (invariant te
 >
 > **What the proof shows**
 > - Part 2 is a "Clifford algebra" for the pair $(\sigma, \bar\sigma)$: neither set alone squares to $g$, but $\sigma$ followed by $\bar\sigma$ does; stacking them into a $4\times4$ matrix gives the chiral Dirac matrices (the course's [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]).
-> - Part 3 is the matrix form of "complex conjugation exchanges the two Weyl representations" ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]]).
+> - Part 3 is the matrix form of "complex conjugation exchanges the two Weyl representations" ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-13|Theorem §CB.16.13]]).
 > - Equivalence: this is [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]] with its derivation.
 
 ^pf-cb-0-22

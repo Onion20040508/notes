@@ -79,23 +79,23 @@ Layer 2 is the Clifford action: the Dirac matrices, their first consequences (Re
 
 ![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-12]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13]]
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-14]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-14]]
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-14]]
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-15]]
 
 The sixteen products are a basis of $M_4(\mathbb C)$, and the eigenvalues of the Dirac maps follow from the trace:
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-7]]
-
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8]]
-
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-8]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-8]]
 
 ![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9]]
 
 ![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-9]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-10]]
+
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-10]]
 
 ## The Clifford algebra
 

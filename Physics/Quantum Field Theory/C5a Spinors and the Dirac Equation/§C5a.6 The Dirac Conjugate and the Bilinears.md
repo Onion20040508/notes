@@ -19,13 +19,13 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 
 Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of the generators, the non-unitarity of finite-dimensional Lorentz representations, and the pseudo-unitarity of $\Lambda_{1/2}$, from which Theorem §C5a.6.1 follows:
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-21]]
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-22]]
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-13-21]]
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-13-22]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-14]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-12]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-14]]
 
 ![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13]]
 
@@ -36,7 +36,7 @@ Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of th
 ## Why ψ†ψ is not a scalar, and what is
 
 > [!remark] Remark: Why ψ†ψ is not a scalar
-> A Lagrangian must be a scalar, so $\psi$ needs a partner that transforms with $\Lambda_{1/2}^{-1}$. The quantum-mechanical candidate $\psi^\dagger$ transforms as $\psi^\dagger \to \psi^\dagger\Lambda_{1/2}^\dagger = \psi^\dagger\exp(+\frac i2\omega_{\mu\nu}S^{\mu\nu\dagger})$, which would be $\psi^\dagger\Lambda_{1/2}^{-1}$ if every $S^{\mu\nu}$ were Hermitian. The rotation generators $S^{ij}$ are; the boost generators $S^{0i}$ are anti-Hermitian ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-21|Theorem §CB.13.21]]). So $\Lambda_{1/2}$ is unitary on rotations and not on boosts, and $\psi^\dagger\psi$ is invariant under rotations only. This is not a defect of the basis: no finite-dimensional representation of the Lorentz group is unitary ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|Theorem §CB.16.12]]). Indeed $\psi^\dagger\psi$ will turn out to be the time component of the vector $\bar\psi\gamma^\mu\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]).
+> A Lagrangian must be a scalar, so $\psi$ needs a partner that transforms with $\Lambda_{1/2}^{-1}$. The quantum-mechanical candidate $\psi^\dagger$ transforms as $\psi^\dagger \to \psi^\dagger\Lambda_{1/2}^\dagger = \psi^\dagger\exp(+\frac i2\omega_{\mu\nu}S^{\mu\nu\dagger})$, which would be $\psi^\dagger\Lambda_{1/2}^{-1}$ if every $S^{\mu\nu}$ were Hermitian. The rotation generators $S^{ij}$ are; the boost generators $S^{0i}$ are anti-Hermitian ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-22|Theorem §CB.13.22]]). So $\Lambda_{1/2}$ is unitary on rotations and not on boosts, and $\psi^\dagger\psi$ is invariant under rotations only. This is not a defect of the basis: no finite-dimensional representation of the Lorentz group is unitary ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-14|Theorem §CB.16.14]]). Indeed $\psi^\dagger\psi$ will turn out to be the time component of the vector $\bar\psi\gamma^\mu\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.7 (opening paragraph; Derivation "Why $\psi^\dagger\psi$ fails", Step 1) · PHY 513 Lecture 8, Part B ("The Hermitean Conjugate Spinor") · PS §3.2, p. 43 · Yu §5.3, eqs. (5.83)–(5.85)*
 
@@ -79,9 +79,9 @@ Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of th
 
 The covariance of $\bar\psi\Gamma\psi$ rests on the covariance of the Dirac matrices:
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-16]]
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-17]]
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-13-16]]
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-13-17]]
 
 ![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7]]
 
@@ -91,17 +91,17 @@ The covariance of $\bar\psi\Gamma\psi$ rests on the covariance of the Dirac matr
 
 The sixteen bilinears are built from the spinor generators, $\gamma^5$ and the sixteen products; as a representation the Clifford algebra is $\Lambda V$, and two-index tensors decompose as $(0,0)\oplus(1,0)\oplus(0,1)\oplus(1,1)$:
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15]]
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-14]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-15]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-8]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-9]]
 
 ![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-14]]
 
@@ -161,13 +161,13 @@ The pseudoscalar and axial vector (Theorem §C5a.6.3) use that $\gamma^5$ commut
 *Uses:* [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7|Theorem §CB.17.7]]
 
 > [!definition] Definition §C5a.6.2: The Sixteen Bilinears
-> With $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]) and
+> With $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14|Def. §CB.11.14]]) and
 >
 > $$
 > \sigma^{\mu\nu} \equiv \frac i2[\gamma^\mu, \gamma^\nu] = 2S^{\mu\nu} ,
 > $$
 >
-> where $S^{\mu\nu}$ are the spinor generators ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]; other normalizations of $\sigma^{\mu\nu}$: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|Caution: Three normalizations of σ^μν]]), the **standard bilinears** are
+> where $S^{\mu\nu}$ are the spinor generators ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16|Def. §CB.13.16]]; other normalizations of $\sigma^{\mu\nu}$: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|Caution: Three normalizations of σ^μν]]), the **standard bilinears** are
 >
 > | name | symbol | bilinear | number |
 > |---|---|---|---|
@@ -177,7 +177,7 @@ The pseudoscalar and axial vector (Theorem §C5a.6.3) use that $\gamma^5$ commut
 > | axial vector (A) | $\mathsf A^\mu$ | $\bar\psi\gamma^\mu\gamma^5\psi$ | 4 |
 > | tensor (T) | $\mathsf T^{\mu\nu}$ | $\bar\psi\sigma^{\mu\nu}\psi$, $\mu < \nu$ | 6 |
 >
-> Their matrices $\mathbb 1, i\gamma^5, \gamma^\mu, \gamma^\mu\gamma^5, \sigma^{\mu\nu}$ are sixteen; they span all $4\times4$ matrices ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]]). The sans-serif symbols are Lecture 11's (slide 19); the conserved currents of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] are $j^\mu = \mathsf V^\mu$ and $j^{\mu5} = \mathsf A^\mu$.
+> Their matrices $\mathbb 1, i\gamma^5, \gamma^\mu, \gamma^\mu\gamma^5, \sigma^{\mu\nu}$ are sixteen; they span all $4\times4$ matrices ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]]). The sans-serif symbols are Lecture 11's (slide 19); the conserved currents of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]] are $j^\mu = \mathsf V^\mu$ and $j^{\mu5} = \mathsf A^\mu$.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.9 (paragraph after the derivation), Ch. 9 §9.6 · PS §3.4, pp. 49–50 (table) · Yu §5.3, eqs. (5.93)–(5.96) · the user's pre-course notes, §5.3 · PHY 513 Lecture 11, slide 19 (the sans-serif symbols) · PHY 513, Problem Set 6, Problem 5(b) ($V^\mu = \bar\psi\gamma^\mu\psi$)*
 
@@ -236,7 +236,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 > [!derivation]- Derivation
 > **1. General.** A bilinear is a $1\times1$ matrix, so its complex conjugate is its adjoint: $(\psi^\dagger\gamma^0\Gamma\psi)^\dagger = \psi^\dagger\Gamma^\dagger\gamma^{0\dagger}\psi = \psi^\dagger\Gamma^\dagger\gamma^0\psi$. Insert $(\gamma^0)^2 = \mathbb 1$ in front: $= \psi^\dagger\gamma^0(\gamma^0\Gamma^\dagger\gamma^0)\psi = \bar\psi\bar\Gamma\psi$.
 >
-> **2. The five matrices.** Use $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]), $\gamma^{5\dagger} = \gamma^5$ and $\gamma^0\gamma^5 = -\gamma^5\gamma^0$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]):
+> **2. The five matrices.** Use $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]), $\gamma^{5\dagger} = \gamma^5$ and $\gamma^0\gamma^5 = -\gamma^5\gamma^0$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]]):
 > - $\Gamma = \mathbb 1$: $\gamma^0\gamma^0 = \mathbb 1$.
 > - $\Gamma = \gamma^\mu$: $\gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^0\gamma^0\gamma^\mu\gamma^0\gamma^0 = \gamma^\mu$.
 > - $\Gamma = i\gamma^5$: $(i\gamma^5)^\dagger = -i\gamma^5$; $\gamma^0(-i\gamma^5)\gamma^0 = -i(-\gamma^5\gamma^0)\gamma^0 = i\gamma^5$.
@@ -251,7 +251,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 
 ^der-c5a-6-4
 
-*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]]
 
 > [!remark] Remark: The quantized bilinears are Hermitian
 > After quantization the same computation makes the five standard bilinears of [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]] Hermitian operators, once the product of two field operators at one point is defined by normal ordering ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) and smeared with a test function (operator-valued distributions, [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]): step 1 of the derivation used only $(AB)^\dagger = B^\dagger A^\dagger$.
@@ -261,7 +261,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 ^rem-c5a-6-2
 
 > [!remark]- Connections
-> - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|Theorem §CB.16.12]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].
-> - The sixteen bilinears are the Dirac field's analogue of decomposing a two-index tensor into trace, antisymmetric and symmetric parts: $(\frac12, 0)\oplus(0, \frac12)$ tensored with its conjugate gives $(0,0)$ twice, $(\frac12,\frac12)$ twice and $(1,0)\oplus(0,1)$, i.e. S, P, V, A and T — [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9|Theorem §CB.16.9]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
+> - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-13|Theorem §CB.17.13]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-14|Theorem §CB.16.14]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].
+> - The sixteen bilinears are the Dirac field's analogue of decomposing a two-index tensor into trace, antisymmetric and symmetric parts: $(\frac12, 0)\oplus(0, \frac12)$ tensored with its conjugate gives $(0,0)$ twice, $(\frac12,\frac12)$ twice and $(1,0)\oplus(0,1)$, i.e. S, P, V, A and T — [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-12|Theorem §CB.17.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > - The tensor bilinear transforms like $F^{\mu\nu}$, and the Gordon identity shows it is the magnetic-moment part of the vector current, which gives $g = 2$ — [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]], [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]].
 > - The invariance of $\bar\psi\chi$ is the invariance of the Dirac form of [[§C5a.2 The Dirac Form|§C5a.2]] under $\Lambda_{1/2}$, as $g(v, w)$ is invariant under $\Lambda$ — [[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].

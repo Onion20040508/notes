@@ -93,15 +93,15 @@ Step 6 of its derivation reads off the squares and the anticommutation as the fi
 
 Theorem §C5a.0.2 rests on the fact that Clifford generators in any unital algebra are invertible and never commute, so that no basis diagonalizes them all:
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15]]
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-16]]
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-15]]
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-16]]
 
 Theorem §C5a.0.3 takes the size bound from the matrix form of the theorem on irreducible modules, proved by traces, with a direct route for $2\times2$ matrices; the bound uses the sixteen products:
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-8]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-9]]
 
 ![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9]]
 
@@ -111,7 +111,7 @@ Theorem §C5a.0.3 takes the size bound from the matrix form of the theorem on ir
 
 With fewer $\gamma$'s, two components suffice (the contrast drawn in Theorem §C5a.0.4 and the Connections):
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-11-18]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-11-20]]
 
 The $4\times4$ solution is unique up to a change of basis (used next, in §C5a.1):
 
@@ -122,22 +122,22 @@ The $4\times4$ solution is unique up to a change of basis (used next, in §C5a.1
 ## Why matrices, and why four by four
 
 > [!theorem] Theorem §C5a.0.2: The Coefficients Cannot Commute
-> Let $\gamma^0, \dots, \gamma^3$ satisfy the Clifford relation ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], 3). They are invertible and no two of them commute ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15|Theorem §CB.10.15]], 1–2). Hence the $\gamma$'s cannot be numbers: a one-component field has no first-order equation that squares to Klein–Gordon. And no basis makes all four $n\times n$ Dirac matrices diagonal at once (Theorem §CB.10.15, 3).
+> Let $\gamma^0, \dots, \gamma^3$ satisfy the Clifford relation ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], 3). They are invertible and no two of them commute ([[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-16|Theorem §CB.10.16]], 1–2). Hence the $\gamma$'s cannot be numbers: a one-component field has no first-order equation that squares to Klein–Gordon. And no basis makes all four $n\times n$ Dirac matrices diagonal at once (Theorem §CB.10.16, 3).
 >
 > *Source: PS §3.2, p. 41 ("There is no fourth $2\times2$ matrix … that anticommutes with the three Pauli sigma matrices", the matrix version) · the user's PHY 513 notes, Ch. 8 §8.1 ("Square to ±1, or square root?") · the argument written here*
 
 ^thm-c5a-0-2
 
 > [!derivation]- Derivation
-> **1. Numbers.** Complex numbers commute, so by Theorem §CB.10.15, 2 no four (indeed no two) complex numbers satisfy the relation: for $n = 1$ condition 3 of Theorem §C5a.0.1 has no solution, and therefore neither has condition 1.
+> **1. Numbers.** Complex numbers commute, so by Theorem §CB.10.16, 2 no four (indeed no two) complex numbers satisfy the relation: for $n = 1$ condition 3 of Theorem §C5a.0.1 has no solution, and therefore neither has condition 1.
 >
 > **What the derivation shows**
-> - So $\psi$ has more than one component, and the $\gamma$'s mix the components: this is where spinor components come from. The same argument (Derivation §CB.10.15, steps 2–4) shows that $\gamma^0$ and $\gamma^5$ are never diagonal together ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]]).
+> - So $\psi$ has more than one component, and the $\gamma$'s mix the components: this is where spinor components come from. The same argument (Derivation §CB.10.16, steps 2–4) shows that $\gamma^0$ and $\gamma^5$ are never diagonal together ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17|Theorem §CB.11.17]]).
 > - Used next: the size of the matrices (Theorem §C5a.0.3).
 
 ^der-c5a-0-2
 
-*Uses:* [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-15|Theorem §CB.10.15]]
+*Uses:* [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-16|Theorem §CB.10.16]]
 
 > [!theorem] Theorem §C5a.0.3: The Smallest Coefficients Are 4×4 Matrices
 > Let $\gamma^0, \dots, \gamma^3$ be complex $n\times n$ matrices satisfying the Clifford relation ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], 3). Then $n$ is even and $n \ge 4$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-9|Theorem §CB.12.9]]), and $n = 4$ occurs: the chiral matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) satisfy the relation ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]).
@@ -224,7 +224,7 @@ The $4\times4$ solution is unique up to a change of basis (used next, in §C5a.1
 
 The remarks below need the basis-free form of the Clifford action, the Dirac maps on one spinor space, and its uniqueness:
 
-![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13]]
+![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-14]]
 
 ![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14]]
 
@@ -237,7 +237,7 @@ The ★ remark "What the Clifford relation induces" starts from the algebra the 
 ## From γ to spinor space
 
 > [!remark] Remark: Why the Dirac maps: the logic runs from γ to spinor space
-> Read in Dirac's direction, the first objects of this chapter come in a forced order. A first-order equation that squares to Klein–Gordon needs the Clifford relation (Theorem §C5a.0.1), hence coefficients that do not commute (Theorem §C5a.0.2), hence matrices, at least $4\times4$ (Theorem §C5a.0.3). Then $\gamma^\mu\partial_\mu\psi$ must make sense, so $\psi(x)$ lies in the space the $\gamma$'s act on: spinor space $V$ with its Dirac maps ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|Def. §C5a.1.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-13|Def. §CB.10.13]]), unique up to isomorphism ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14|Theorem §CB.12.14]]). Four is what the $\gamma$'s need, not the number of states: at fixed $\mathbf p$ and fixed sign of the frequency the equation leaves a two-dimensional space of columns ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]]), the two spin states of the rest frame ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]; [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-2|§C5a.9, Remark: Two of each kind, and what they will describe]]); the other sign gives the antiparticle after quantization ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
+> Read in Dirac's direction, the first objects of this chapter come in a forced order. A first-order equation that squares to Klein–Gordon needs the Clifford relation (Theorem §C5a.0.1), hence coefficients that do not commute (Theorem §C5a.0.2), hence matrices, at least $4\times4$ (Theorem §C5a.0.3). Then $\gamma^\mu\partial_\mu\psi$ must make sense, so $\psi(x)$ lies in the space the $\gamma$'s act on: spinor space $V$ with its Dirac maps ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|Def. §C5a.1.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-14|Def. §CB.10.14]]), unique up to isomorphism ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14|Theorem §CB.12.14]]). Four is what the $\gamma$'s need, not the number of states: at fixed $\mathbf p$ and fixed sign of the frequency the equation leaves a two-dimensional space of columns ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]]), the two spin states of the rest frame ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]; [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-2|§C5a.9, Remark: Two of each kind, and what they will describe]]); the other sign gives the antiparticle after quantization ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
 >
 > The course builds the same objects in the opposite order. PS §3.2 introduces the $\gamma$'s as "a trick due to Dirac" for writing down a representation of the Lorentz algebra (p. 40) and finds the first-order equation afterwards, "stronger" than Klein–Gordon (pp. 42–43); Lecture 7, the user's notes (Ch. 8 §8.1, the logic (i)–(v)) and §C5a.1–§C5a.7 follow PS. Dirac's own motivation was the negative probability density of the Klein–Gordon equation, which comes from its second time derivative (Yu §1.1).
 >
@@ -252,9 +252,9 @@ The ★ remark "What the Clifford relation induces" starts from the algebra the 
 >
 > | structure | how the relation gives it | home |
 > |---|---|---|
-> | spinor space | $\mathrm{Cl}(1,3)\otimes\mathbb C \cong M_4(\mathbb C)$ has one irreducible module, $\mathbb C^4$: a four-dimensional space with Dirac maps, unique up to isomorphism (Pauli) | [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1\|Def. §C5a.1.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8\|Theorem §CB.11.8]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14\|Theorem §CB.12.14]] |
-> | the Lorentz action | Lorentz transformations preserve $g$, so $\Lambda^\mu{}_\nu\gamma^\nu$ satisfy the relation again, and Pauli's theorem gives $\Lambda_{1/2}$ with $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$, unique up to a factor; near the identity it is generated by $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ (the even part); the leftover sign is the double cover | [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15\|Def. §CB.13.15]], [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-17\|Theorem §CB.13.17]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7\|Theorem §CB.17.7]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-7\|Theorem §CB.15.7]] |
-> | chirality | $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ is the volume element (the product of an orthonormal basis, normalized to square to $1$); it anticommutes with each $\gamma^\mu$, hence commutes with every $S^{\mu\nu}$, so its eigenspaces $V_L$, $V_R$ are Lorentz invariant: the Weyl halves | [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13\|Def. §CB.11.13]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14\|Theorem §CB.11.14]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1\|Theorem §C5a.5.1]] |
+> | spinor space | $\mathrm{Cl}(1,3)\otimes\mathbb C \cong M_4(\mathbb C)$ has one irreducible module, $\mathbb C^4$: a four-dimensional space with Dirac maps, unique up to isomorphism (Pauli) | [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1\|Def. §C5a.1.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9\|Theorem §CB.11.9]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-14\|Theorem §CB.12.14]] |
+> | the Lorentz action | Lorentz transformations preserve $g$, so $\Lambda^\mu{}_\nu\gamma^\nu$ satisfy the relation again, and Pauli's theorem gives $\Lambda_{1/2}$ with $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$, unique up to a factor; near the identity it is generated by $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ (the even part); the leftover sign is the double cover | [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16\|Def. §CB.13.16]], [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-18\|Theorem §CB.13.18]], [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7\|Theorem §CB.17.7]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9\|Theorem §CB.15.9]] |
+> | chirality | $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ is the volume element (the product of an orthonormal basis, normalized to square to $1$); it anticommutes with each $\gamma^\mu$, hence commutes with every $S^{\mu\nu}$, so its eigenspaces $V_L$, $V_R$ are Lorentz invariant: the Weyl halves | [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14\|Def. §CB.11.14]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15\|Theorem §CB.11.15]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1\|Theorem §C5a.5.1]] |
 >
 > **What it does not induce.** The relation involves no complex conjugation, so it says nothing about $\psi^\dagger$. The Dirac form $h_D(\chi, \psi) = \chi^\dagger\gamma^0\psi$ is an added structure, a Hermitian form on $V$ ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^def-cb-12-15|Def. §CB.12.15]]); requiring the Dirac maps to be self-adjoint for it fixes it up to a real factor ([[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-16|Theorem §CB.12.16]]). It gives the Dirac conjugate $\bar\psi$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), the real bilinears ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]) and a Lagrangian that is real up to a divergence ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-7|Theorem §C5a.7.7]]). In a basis the same fact appears as Hermiticity, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, a choice of basis and not a consequence of the algebra ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]).
 >
@@ -266,9 +266,9 @@ The ★ remark "What the Clifford relation induces" starts from the algebra the 
 
 The remark "Why not two-component spinors?" uses that parity exchanges the two copies of the Lorentz algebra:
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-10]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-10]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-12]]
 
 ## What the γ's are for
 
@@ -278,7 +278,7 @@ The remark "Why not two-component spinors?" uses that parity exchanges the two c
 > | job | formula | home |
 > |---|---|---|
 > | (i) square root of Klein–Gordon | $(\gamma\cdot p)^2 = p^2$; $(-i\slashed{\partial} - m)(i\slashed{\partial} - m) = \partial^2 + m^2$ | [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1\|Theorem §C5a.0.1]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-10-12\|Theorem §CB.10.12]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8\|Theorem §C5a.7.8]] |
-> | (ii) build the Lorentz action on spinors | $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ obey the Lorentz algebra by the Clifford relation alone; $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$; the half angle and the sign of a $2\pi$ rotation come from these generators | [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15\|Def. §CB.13.15]], [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-17\|Theorem §CB.13.17]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1\|Def. §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1\|§C5a.3, Remark: Why half the angle]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-7\|Theorem §CB.15.7]] |
+> | (ii) build the Lorentz action on spinors | $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ obey the Lorentz algebra by the Clifford relation alone; $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$; the half angle and the sign of a $2\pi$ rotation come from these generators | [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16\|Def. §CB.13.16]], [[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-13-18\|Theorem §CB.13.18]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1\|Def. §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1\|§C5a.3, Remark: Why half the angle]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-9\|Theorem §CB.15.9]] |
 > | (iii) turn pairs of spinors into tensors | $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$: each $\gamma$ between $\bar\psi$ and $\psi$ carries one vector index | [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-7\|Theorem §CB.17.7]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2\|Theorem §C5a.6.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2\|Def. §C5a.6.2]] |
 > | — scalar | $\bar\psi\psi$, the mass term | [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3\|Model §C5a.7.3]] |
 > | — vector | $\bar\psi\gamma^\mu\psi$; $\bar\psi\gamma^0\psi = \psi^\dagger\psi$ is the charge density | [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3\|Theorem §C5a.8.3]] |
@@ -297,7 +297,7 @@ The remark "Why not two-component spinors?" uses that parity exchanges the two c
 > [!remark] Remark: Why not two-component spinors?
 > - **Without mass, two components suffice.** The Weyl equation $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ squares to $\partial^2\psi_L = 0$, because the second factor may use the partner matrices $\sigma^\mu$ ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-4|Theorem §C5a.0.4]], 1; [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]]).
 > - **With mass, they do not.** A massive first-order equation for one two-component field cannot square to Klein–Gordon (Theorem §C5a.0.4, 3). The Dirac pair closes only through the partner, $\psi_L$ through $\psi_R$ and back (Theorem §C5a.0.4, 2); in the Lagrangian the kinetic terms keep the chiralities apart and the mass term $-m(\psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L)$ joins them ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]; [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-2|§C5a.5, Remark: Kinematics allows one handedness, a mass needs both]]). The exception is a Majorana mass ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-7|§C5a.7, ★ Remark: A Majorana mass needs no second field]]).
-> - **Parity exchanges the two.** The parity map $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ exchanges $\mathbf J_+ \leftrightarrow \mathbf J_-$, so it carries $(\frac12, 0)$ to $(0, \frac12)$, and a space with a parity operator contains both with equal multiplicity ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-10|Theorem §CB.16.10]]). How parity acts on Dirac spinors, by the block swap $\gamma^0$, is derived in [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-3|Theorem §C9.3.3]] and [[§C9.3 Parity on States, Spinors and the Dirac Field#^def-c9-3-2|Def. §C9.3.2]].
+> - **Parity exchanges the two.** The parity map $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ exchanges $\mathbf J_+ \leftrightarrow \mathbf J_-$, so it carries $(\frac12, 0)$ to $(0, \frac12)$, and a space with a parity operator contains both with equal multiplicity ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|Theorem §CB.16.12]]). How parity acts on Dirac spinors, by the block swap $\gamma^0$, is derived in [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-3|Theorem §C9.3.3]] and [[§C9.3 Parity on States, Spinors and the Dirac Field#^def-c9-3-2|Def. §C9.3.2]].
 >
 > So a fermion with a Dirac mass, in a theory that respects parity, needs both chiralities, $(\frac12, 0)\oplus(0, \frac12)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]]); the four-component formalism packages them as $\psi = (\psi_L, \psi_R)$, with $\gamma$'s that map each half to the other.
 >
@@ -331,7 +331,7 @@ The remark "Why not two-component spinors?" uses that parity exchanges the two c
 > [!remark]- Connections
 > - Theorem §C5a.0.1 and Dirac ⇒ Klein–Gordon are the two directions of one equivalence: the Clifford relation is exactly the condition for a first-order factor of the Klein–Gordon operator — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]].
 > - Relativistic quantum mechanics runs the same forcing argument for a four-component wave function, compressed and with $\hbar$, $c$; this section is its field-theory home, with the equivalence to $(\gamma\cdot p)^2 = p^2$, the non-commutativity step, the direct $2\times2$ count and the massless/massive contrast added — [[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], [[§C13.2★ The Dirac Equation#^rem-c13-2-1|QM, Remark: The square root of the Klein–Gordon operator]].
-> - Pauli's $(\boldsymbol\sigma\cdot\mathbf p)^2 = |\mathbf p|^2$ is the square root in three Euclidean dimensions; adding a time direction costs nothing in $2\times2$ (Example §CB.11.18), adding the third space direction forces $4\times4$ — [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-11-18|Example §CB.11.18]].
-> - The dimension bounds rest on one mechanism, that anticommuting matrices are linearly independent: four $\gamma$'s in the three-dimensional span of the Pauli matrices, or sixteen products in $M_n(\mathbb C)$ — [[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-9b|Derivation §CB.12.9 (second route)]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|Theorem §CB.11.8]], [[§4 Span and Linear Independence#^ladr-2-22|LADR Thm. 2.22]].
+> - Pauli's $(\boldsymbol\sigma\cdot\mathbf p)^2 = |\mathbf p|^2$ is the square root in three Euclidean dimensions; adding a time direction costs nothing in $2\times2$ (Example §CB.11.20), adding the third space direction forces $4\times4$ — [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-11-20|Example §CB.11.20]].
+> - The dimension bounds rest on one mechanism, that anticommuting matrices are linearly independent: four $\gamma$'s in the three-dimensional span of the Pauli matrices, or sixteen products in $M_n(\mathbb C)$ — [[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-9b|Derivation §CB.12.9 (second route)]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|Theorem §CB.11.9]], [[§4 Span and Linear Independence#^ladr-2-22|LADR Thm. 2.22]].
 > - The massless two-component square root pairs $\sigma$ with $\bar\sigma$; stacked into one $4\times4$ matrix the pair becomes the chiral $\gamma^\mu$, and the massless solutions have fixed helicity — [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-12|Theorem §C5a.7.12]].
 > - The same squaring, run on the Green's function, makes the Dirac propagator $(i\slashed{\partial} + m)$ times the scalar one — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].

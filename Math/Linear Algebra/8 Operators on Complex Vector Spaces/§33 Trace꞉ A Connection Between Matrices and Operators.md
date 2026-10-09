@@ -35,7 +35,7 @@ tags: [linear-algebra]
 > $\operatorname{tr}(ABC)=\operatorname{tr}(CAB)$, but in general $\operatorname{tr}(ABC)\ne\operatorname{tr}(BAC)$.
 
 > [!remark]- Connections
-> - Used in Quantum Field Theory: cyclicity of the trace makes every $\gamma^\mu$, and every product of an odd number of them, traceless — [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-8|QFT Theorem §CB.11.8]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|QFT Theorem §C5a.11.3]].
+> - Used in Quantum Field Theory: cyclicity of the trace makes every $\gamma^\mu$, and every product of an odd number of them, traceless — [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-9|QFT Theorem §CB.11.9]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|QFT Theorem §C5a.11.3]].
 > - With the spectral theorem, cyclicity gives $\operatorname{tr}M^k=\sum_i\lambda_i^k$ for symmetric $M$, so the moments of the eigenvalue distribution are normalized traces, the starting point of the moment proof of Wigner's semicircle law ([[§R3.3 The Semicircle Law I꞉ Moments and Catalan Numbers#^thm-r3-3-3|Thesis Thm. §R3.3.3]]).
 > - Cyclicity also makes $\operatorname{tr}W^2$ invariant under $W\mapsto OWO^{\mathsf T}$, which is why the Gaussian orthogonal ensemble of random symmetric matrices is rotation invariant ([[§R3.1 Wigner Matrices and the Gaussian Orthogonal Ensemble#^thm-r3-1-3|Thesis Thm. §R3.1.3]]).
 

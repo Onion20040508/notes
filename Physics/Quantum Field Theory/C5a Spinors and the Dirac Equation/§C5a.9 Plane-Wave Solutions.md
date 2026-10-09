@@ -25,9 +25,9 @@ Plane waves turn the Dirac equation into the eigenvalue problem of $\slashed{p}$
 
 ![[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-10-12]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-14]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-15]]
 
 ## Plane waves and an eigenvalue problem
 
@@ -152,7 +152,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 >
 > $H_{\text{s.p.}}(\mathbf k)$ is Hermitian: $(\gamma^0\gamma^i)^\dagger = \gamma^{i\dagger}\gamma^{0\dagger} = (-\gamma^i)\gamma^0 = \gamma^0\gamma^i$ and $\gamma^{0\dagger} = \gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]). So the $k^0$ are real, $H_{\text{s.p.}}(\mathbf k)$ is diagonalizable by a unitary matrix, and eigenvectors of distinct eigenvalues are orthogonal in $\mathbb C^4$.
 >
-> **Step 2** (the determinant, by $\gamma^5$). $\gamma^5$ anticommutes with each $\gamma^\mu$ and squares to $\mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]), so $\gamma^5(k_\mu\gamma^\mu - m)\gamma^5 = -k_\mu\gamma^\mu - m$ and, taking determinants ($\det\gamma^5\cdot\det\gamma^5 = \det(\gamma^5)^2 = 1$), $\det(k_\mu\gamma^\mu - m) = \det(-k_\mu\gamma^\mu - m)$. Hence
+> **Step 2** (the determinant, by $\gamma^5$). $\gamma^5$ anticommutes with each $\gamma^\mu$ and squares to $\mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]]), so $\gamma^5(k_\mu\gamma^\mu - m)\gamma^5 = -k_\mu\gamma^\mu - m$ and, taking determinants ($\det\gamma^5\cdot\det\gamma^5 = \det(\gamma^5)^2 = 1$), $\det(k_\mu\gamma^\mu - m) = \det(-k_\mu\gamma^\mu - m)$. Hence
 >
 > $$
 > \bigl[\det(k_\mu\gamma^\mu - m)\bigr]^2 = \det\bigl[(k_\mu\gamma^\mu - m)(-k_\nu\gamma^\nu - m)\bigr] = \det\bigl[-(k_\mu\gamma^\mu)^2 - m\,k_\mu\gamma^\mu + m\,k_\nu\gamma^\nu + m^2\bigr] = \det\bigl[(m^2 - k^2)\mathbb 1\bigr] = (m^2 - k^2)^4 ,
@@ -171,7 +171,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 ^der-c5a-9-2b
 
-*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]], [[§CB.10 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-10-11|Def. §CB.10.11]]
 
 > [!remark] Remark: Two of each kind, and what they will describe
 > Each component of a solution solves the Klein–Gordon equation, which offers eight candidate plane waves per $\mathbf p$ (two exponents times four columns); the Dirac equation keeps four, and splits them evenly, two per exponent ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-3|§C5a.7, Remark: Eight candidates, four solutions]]; Theorem §C5a.9.2). Two positive-frequency solutions are what a spin-$\frac12$ particle needs: its two spin states (the rest frame below makes this explicit). The two negative-frequency solutions cannot be dropped, because a general solution needs both exponents, as for the scalar field ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]); after quantization their coefficients become creation operators of the antiparticle ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
@@ -184,11 +184,11 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 Theorem §C5a.9.4 uses the spin matrices built from the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15]]
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-6]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-8]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-6]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-8]]
 
 ## The rest frame
 
@@ -226,7 +226,7 @@ Theorem §C5a.9.4 uses the spin matrices built from the spinor generators and th
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]
 
 > [!theorem] Theorem §C5a.9.4: In the Rest Frame the Two-Spinor Carries the Spin
-> On Dirac spinors the angular momentum is $J^k = \frac12\varepsilon^{kij}S^{ij} = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ (the spin matrices $S^k$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), with the spinor generators $S^{ij}$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]; chiral form [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), and a rotation by $\theta$ about $\hat{\mathbf n}$ acts through the spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) as $\Lambda_{1/2} = \operatorname{diag}\bigl(D(\theta, \hat{\mathbf n}), D(\theta, \hat{\mathbf n})\bigr)$, $D = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$. Hence
+> On Dirac spinors the angular momentum is $J^k = \frac12\varepsilon^{kij}S^{ij} = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ (the spin matrices $S^k$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), with the spinor generators $S^{ij}$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16|Def. §CB.13.16]]; chiral form [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), and a rotation by $\theta$ about $\hat{\mathbf n}$ acts through the spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) as $\Lambda_{1/2} = \operatorname{diag}\bigl(D(\theta, \hat{\mathbf n}), D(\theta, \hat{\mathbf n})\bigr)$, $D = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$. Hence
 >
 > $$
 > J^k\,u_0(\xi) = u_0\bigl(\tfrac12\sigma^k\xi\bigr), \qquad \Lambda_{1/2}\,u_0(\xi) = u_0\bigl(D\,\xi\bigr),
@@ -246,7 +246,7 @@ Theorem §C5a.9.4 uses the spin matrices built from the spinor generators and th
 > **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $k$ is rotation-invariant; this is the Wigner rotation $W(R, k) = R$ → [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]].
 >
 > **What the derivation shows**
-> - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-6|Theorem §CB.16.6]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
+> - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-8|Theorem §CB.16.8]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
 > - The sign of $\omega_{ij}$ in Step 3 only fixes the orientation of the rotation; the statement $J^k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ does not depend on it.
 > - Used next: the spin basis ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]); the spin of the *antiparticle* is read off only after quantization ([[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]).
 

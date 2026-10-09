@@ -19,11 +19,11 @@ How does spinor space split into a left- and a right-handed half without referen
 
 Layer 6 is the grading by $\gamma^5$, the volume element of the Dirac matrices, with its algebraic properties:
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-14]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-15]]
 
 It is the complex volume element of the Dirac module (of the opposite orientation), it commutes with the spinor generators, and its eigenspaces carry $(\frac12, 0)$ and $(0, \frac12)$ in every basis; Theorem §C5a.5.1 below is the chiral-basis reading:
 
@@ -31,7 +31,7 @@ It is the complex volume element of the Dirac module (of the opposite orientatio
 
 ![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-17-2]]
 
-![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15]]
+![[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16]]
 
 ![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4]]
 
@@ -39,13 +39,13 @@ It is the complex volume element of the Dirac module (of the opposite orientatio
 
 The labels are irreducible, parity exchanges them, and a change of basis carries the identity of Theorem §C5a.5.1, 2 to every basis:
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-3]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-4]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-3]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-4]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-10]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-10]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-12]]
 
 ![[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12]]
 
@@ -58,7 +58,7 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > [!theorem] Theorem §C5a.5.1: γ⁵ Is Lorentz Invariant and Separates the Weyl Halves
 > $\gamma^5$ commutes with every $S^{\mu\nu}$ and every $\Lambda_{1/2}$, so it is a Lorentz scalar, and its eigenspaces split spinor space into the Weyl halves in every basis ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4|Theorem §CB.17.4]]). For the course's matrices:
 > 1. In the chiral basis $\gamma^5 = \begin{pmatrix}-\mathbb 1 & 0\\ 0 & \mathbb 1\end{pmatrix}$.
-> 2. On the Dirac representation $\gamma^5 = \frac43\bigl(\mathbf J_-^2 - \mathbf J_+^2\bigr)$, with the Casimirs $\mathbf J_\pm^2$ of [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-3|Theorem §CB.16.3]], equivalently $\mathbf J\cdot\mathbf K = \frac{3i}4\gamma^5$.
+> 2. On the Dirac representation $\gamma^5 = \frac43\bigl(\mathbf J_-^2 - \mathbf J_+^2\bigr)$, with the Casimirs $\mathbf J_\pm^2$ of [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-4|Theorem §CB.16.4]], equivalently $\mathbf J\cdot\mathbf K = \frac{3i}4\gamma^5$.
 > 3. In every basis, the eigenspaces $\gamma^5 = -1$ and $\gamma^5 = +1$ are two-dimensional, invariant under $\Lambda_{1/2}$, and carry $(\frac12, 0)$ and $(0, \frac12)$ (Theorem §C5a.3.2): left-handed spinors ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]]) are the $\gamma^5 = -1$ spinors.
 >
 > *Source: PS §3.4, p. 50 ("$[\gamma^5, S^{\mu\nu}] = 0$. Thus the Dirac representation must be reducible …"; eq. (3.72)) · Yu §5.1, eq. (5.36) ($\gamma^5$ a Lorentz scalar), §5.2, eq. (5.73) · the user's PHY 513 notes, Ch. 9 §9.6 (Definition "The matrix $\gamma^5$": "$\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$") · the user's pre-course notes, §5.2 · part 3 written out here*
@@ -74,12 +74,12 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 >
 > **What the derivation shows**
 > - The split $(\frac12, 0)\oplus(0, \frac12)$ is not an artefact of the chiral basis: it is the eigen-decomposition of the Lorentz-invariant matrix $\gamma^5$, which the chiral basis merely diagonalizes (PS footnote ‡: in another basis "the reducibility would not be manifest").
-> - $\gamma^5$ commutes with $S^{\mu\nu}$ but anticommutes with $\gamma^\mu$: the Lorentz transformations preserve handedness, the vector index of $\gamma^\mu$ flips it. Under parity, which exchanges the copies ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-10|Theorem §CB.16.10]]), $\gamma^5$ changes sign (pseudoscalar; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]]).
+> - $\gamma^5$ commutes with $S^{\mu\nu}$ but anticommutes with $\gamma^\mu$: the Lorentz transformations preserve handedness, the vector index of $\gamma^\mu$ flips it. Under parity, which exchanges the copies ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-12|Theorem §CB.16.12]]), $\gamma^5$ changes sign (pseudoscalar; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]]).
 > - Used next: chirality projectors and Weyl fields ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]]).
 
 ^der-c5a-5-1
 
-*Uses:* [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4|Theorem §CB.17.4]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
+*Uses:* [[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4|Theorem §CB.17.4]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
 ## Chirality projectors
 
@@ -88,7 +88,7 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > P_L \equiv \tfrac12\bigl(\mathbb 1 - \gamma^5\bigr), \qquad P_R \equiv \tfrac12\bigl(\mathbb 1 + \gamma^5\bigr) .
 > $$
 >
-> With $\gamma^5$ of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]: a Dirac spinor with $\gamma^5\psi = -\psi$ ($P_L\psi = \psi$) has **left-handed chirality**, one with $\gamma^5\psi = +\psi$ right-handed. In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]), where $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), $P_L\psi = (\psi_L, 0)$ and $P_R\psi = (0, \psi_R)$ for $\psi = (\psi_L, \psi_R)$, the Weyl halves of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]].
+> With $\gamma^5$ of [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14|Def. §CB.11.14]]: a Dirac spinor with $\gamma^5\psi = -\psi$ ($P_L\psi = \psi$) has **left-handed chirality**, one with $\gamma^5\psi = +\psi$ right-handed. In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]), where $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), $P_L\psi = (\psi_L, 0)$ and $P_R\psi = (0, \psi_R)$ for $\psi = (\psi_L, \psi_R)$, the Weyl halves of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.6 (Definition "The matrix $\gamma^5$") · PS §3.4, eqs. (3.72), (3.76) · Yu §5.1 ($\gamma^5$), §5.3, eq. (5.112)*
 
@@ -99,7 +99,7 @@ The same letters denote the two-component Weyl spinors $\psi_L$, $\psi_R$ ([[§C
 > [!theorem] Theorem §C5a.5.2: Properties of the Chirality Projectors
 > 1. $P_L^2 = P_L$, $P_R^2 = P_R$, $P_LP_R = P_RP_L = 0$, $P_L + P_R = \mathbb 1$.
 > 2. $P_L\gamma^\mu = \gamma^\mu P_R$ and $P_R\gamma^\mu = \gamma^\mu P_L$.
-> 3. $[P_{L,R}, S^{\mu\nu}] = 0$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-15|Def. §CB.13.15]]), so $P_{L,R}\Lambda_{1/2} = \Lambda_{1/2}P_{L,R}$: chirality is Lorentz invariant, and $P_L\psi$, $P_R\psi$ transform separately.
+> 3. $[P_{L,R}, S^{\mu\nu}] = 0$ ([[§CB.13 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-13-16|Def. §CB.13.16]]), so $P_{L,R}\Lambda_{1/2} = \Lambda_{1/2}P_{L,R}$: chirality is Lorentz invariant, and $P_L\psi$, $P_R\psi$ transform separately.
 > 4. $\overline{P_L\psi} = \bar\psi P_R$ and $\overline{P_R\psi} = \bar\psi P_L$.
 >
 > *Source: PS §3.4, pp. 50–51 (eqs. (3.71)–(3.72), (3.76) and the paragraph on reducibility) · the user's PHY 513 notes, Ch. 9 §9.6 (Definition "The matrix $\gamma^5$")*
@@ -107,7 +107,7 @@ The same letters denote the two-component Weyl spinors $\psi_L$, $\psi_R$ ([[§C
 ^thm-c5a-5-2
 
 > [!derivation]- Derivation
-> Use $(\gamma^5)^2 = \mathbb 1$, $\gamma^{5\dagger} = \gamma^5$, $\{\gamma^5, \gamma^\mu\} = 0$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]]) and $[\gamma^5, S^{\mu\nu}] = 0$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4|Theorem §CB.17.4]], 1).
+> Use $(\gamma^5)^2 = \mathbb 1$, $\gamma^{5\dagger} = \gamma^5$, $\{\gamma^5, \gamma^\mu\} = 0$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]]) and $[\gamma^5, S^{\mu\nu}] = 0$ ([[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-4|Theorem §CB.17.4]], 1).
 >
 > **1. Projectors.** $P_L^2 = \frac14(\mathbb 1 - 2\gamma^5 + (\gamma^5)^2) = \frac14(2\cdot\mathbb 1 - 2\gamma^5) = P_L$; likewise $P_R^2 = P_R$. $P_LP_R = \frac14(\mathbb 1 + \gamma^5 - \gamma^5 - (\gamma^5)^2) = 0$, and $P_RP_L = 0$ the same way. $P_L + P_R = \mathbb 1$ by adding the definitions.
 >
@@ -123,7 +123,7 @@ The same letters denote the two-component Weyl spinors $\psi_L$, $\psi_R$ ([[§C
 
 ^der-c5a-5-2
 
-*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-14|Theorem §CB.11.14]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]
+*Uses:* [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]
 
 ### The mathematics used here: invariant ε and conjugation
 
@@ -141,9 +141,9 @@ The invariant $\varepsilon$ of $SL(2, \mathbb C) = Sp(2, \mathbb C)$, whose seco
 
 Theorem §C5a.5.4 uses that complex conjugation exchanges the two copies:
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-13]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-11]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-13]]
 
 Theorem §C5a.5.5 uses four-vectors as Hermitian matrices, the tensor-product rule for the labels and the complexified vector as $S^+\otimes S^-$:
 
@@ -151,9 +151,9 @@ Theorem §C5a.5.5 uses four-vectors as Hermitian matrices, the tensor-product ru
 
 ![[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-15-3]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11]]
 
-![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-9]]
+![[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-16-11]]
 
 ![[§CB.17 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-17-10]]
 
@@ -209,7 +209,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 *Uses:* [[§CB.7 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-7-15|Theorem §CB.7.15]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]]
 
 > [!theorem] Theorem §C5a.5.4: Dotted Indices, Conjugation and the Invariant Pairings
-> 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
+> 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-13|Theorem §CB.16.13]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
 > 2. Invariant pairings: $\psi_R^\dagger\chi_L = \bar\psi^a\chi_a$, $\psi_L^\dagger\chi_R = \bar\psi_{\dot a}\chi^{\dot a}$, $\chi^a\psi_a$, $\chi_{\dot a}\psi^{\dot a}$. A dotted index is never contracted with an undotted one: $\chi_R^{\mathsf T}E\psi_L$ is not invariant.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Right-handed spinors are a different slot … The two slots are paired instead through complex conjugation"; Derivation "The two halves … related by conjugation") · PS eq. (3.38)*
@@ -228,7 +228,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > **5. A mixed contraction fails.** $\chi_R^{\mathsf T}E\psi_L \to \chi_R^{\mathsf T}\Lambda_R^{\mathsf T}E\Lambda_L\psi_L$. Using $E\Lambda_L = (\Lambda_L^{\mathsf T})^{-1}E$: $\Lambda_R^{\mathsf T}E\Lambda_L = (\Lambda_L^{-1}\Lambda_R)^{\mathsf T}E$. For a pure boost $\Lambda_L^{-1}\Lambda_R = e^{\boldsymbol\eta\cdot\boldsymbol\sigma} \ne \mathbb 1$, so the form changes.
 >
 > **What the derivation shows**
-> - Complex conjugation exchanges the two kinds of index, and $\varepsilon$ moves an index up or down: together they show that the conjugate of $(\frac12, 0)$ is $(0, \frac12)$, the spin-½ case of Theorem §CB.16.11 in index form.
+> - Complex conjugation exchanges the two kinds of index, and $\varepsilon$ moves an index up or down: together they show that the conjugate of $(\frac12, 0)$ is $(0, \frac12)$, the spin-½ case of Theorem §CB.16.13 in index form.
 > - The invariants that pair left with right are built with $\dagger$, not with $\varepsilon$; in Dirac form they are $\bar\psi\chi = \psi_R^\dagger\chi_L + \psi_L^\dagger\chi_R$, so the Dirac mass term $m\bar\psi\psi$ necessarily couples the two handednesses (QFT §C5a.6–§C5a.7).
 
 ^der-c5a-5-4
@@ -238,7 +238,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > [!theorem] Theorem §C5a.5.5: A Four-Vector Is a Bispinor
 > 1. $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one lower undotted and one lower dotted index ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]]): $x \to \Lambda x$ is $X_{a\dot b} \to (\Lambda_L)_a{}^c(\Lambda_L^*)_{\dot b}{}^{\dot d}X_{c\dot d}$.
 > 2. $(\bar\sigma^\mu)^{\dot aa} = \varepsilon^{\dot a\dot b}\varepsilon^{ab}(\sigma^\mu)_{b\dot b}$, and $x^\mu = \frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a}$.
-> 3. So the vector representation ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) is equivalent to $(\frac12, 0)\otimes\overline{(\frac12, 0)}$; the conjugate is $(0, \frac12)$ ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]]), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9|Theorem §CB.16.9]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|Theorem §C3.2.2]]), with $x \mapsto X$ the equivalence.
+> 3. So the vector representation ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]) is equivalent to $(\frac12, 0)\otimes\overline{(\frac12, 0)}$; the conjugate is $(0, \frac12)$ ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-13|Theorem §CB.16.13]]), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|Theorem §C3.2.2]]), with $x \mapsto X$ the equivalence.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The left-handed Weyl matrices are this covering", paragraph "What (SL2Ccover) says about indices": "a four-vector is an object with one left-handed and one right-handed spinor index") · part 2 written out here*
 
@@ -251,7 +251,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 >
 > **3. The inverse.** $\frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a} = \frac12\operatorname{tr}(X\bar\sigma^\mu) = x^\mu$ (Theorem §CB.15.3).
 >
-> **4. Part 3.** By part 1 the four-vector space, via the bijection $x \mapsto X$ (Theorem §CB.15.3, extended complex-linearly to $\mathbb C^4 \to M_2(\mathbb C)$), is the tensor product of the left-handed representation and its complex conjugate. The conjugate is equivalent to $(0, \frac12)$ by $E$ (Theorem §C5a.5.4, 1), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9|Theorem §CB.16.9]]).
+> **4. Part 3.** By part 1 the four-vector space, via the bijection $x \mapsto X$ (Theorem §CB.15.3, extended complex-linearly to $\mathbb C^4 \to M_2(\mathbb C)$), is the tensor product of the left-handed representation and its complex conjugate. The conjugate is equivalent to $(0, \frac12)$ by $E$ (Theorem §C5a.5.4, 1), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]]).
 >
 > **What the derivation shows**
 > - Theorem §C3.2.2 identified the vector as $(\frac12, \frac12)$ by Casimirs; here the identification is an explicit map, and the two "spins ½" of the label are the two indices of $X_{a\dot b}$.
@@ -259,7 +259,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 
 ^der-c5a-5-5
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|Theorem §CB.15.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-9|Theorem §CB.16.9]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§CB.15 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-15-3|Theorem §CB.15.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], [[§CB.16 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-16-11|Theorem §CB.16.11]]
 
 > [!remark] Remark: What each Weyl index labels
 >
@@ -331,9 +331,9 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 
 ![[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-18]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17]]
 
-![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-15]]
+![[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-11-17]]
 
 ## Choosing a basis
 
@@ -370,7 +370,7 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 ^ex-c5a-5-1
 
 > [!derivation]- Derivation (second route: from the chiral basis with U_D, the user's solution of Problem Set 6, Problem 3(b))
-> **1. $U_D$ in blocks.** $\mathbb 1 - \gamma^5\gamma^0 = \begin{pmatrix}\mathbb 1&0\\0&\mathbb 1\end{pmatrix} - \begin{pmatrix}0&-\mathbb 1\\\mathbb 1&0\end{pmatrix} = \begin{pmatrix}\mathbb 1&\mathbb 1\\-\mathbb 1&\mathbb 1\end{pmatrix}$, with $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]]) and $\gamma^0$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]. Comparing with $U$ above, $U_D = U^\dagger$ (transpose of a real block matrix).
+> **1. $U_D$ in blocks.** $\mathbb 1 - \gamma^5\gamma^0 = \begin{pmatrix}\mathbb 1&0\\0&\mathbb 1\end{pmatrix} - \begin{pmatrix}0&-\mathbb 1\\\mathbb 1&0\end{pmatrix} = \begin{pmatrix}\mathbb 1&\mathbb 1\\-\mathbb 1&\mathbb 1\end{pmatrix}$, with $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14|Def. §CB.11.14]]) and $\gamma^0$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]. Comparing with $U$ above, $U_D = U^\dagger$ (transpose of a real block matrix).
 >
 > **2. Unitarity, both products.** $U_D^\dagger = \frac1{\sqrt2}\begin{pmatrix}\mathbb 1&-\mathbb 1\\\mathbb 1&\mathbb 1\end{pmatrix}$ and
 >
@@ -387,13 +387,13 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 > **4. μ = 0 and μ = i.** $\sigma^0 = \bar\sigma^0 = \mathbb 1$ gives $\gamma_D^0 = \frac12\begin{pmatrix}2\cdot\mathbb 1&0\\0&-2\cdot\mathbb 1\end{pmatrix} = \operatorname{diag}(\mathbb 1, -\mathbb 1)$; $\sigma^i = -\bar\sigma^i$ gives $\gamma_D^i = \frac12\begin{pmatrix}0&2\sigma^i\\-2\sigma^i&0\end{pmatrix} = \begin{pmatrix}0&\sigma^i\\-\sigma^i&0\end{pmatrix}$: the Dirac matrices displayed above.
 >
 > **What the derivation shows**
-> - Writing $\gamma^\mu$ through $\sigma^\mu$, $\bar\sigma^\mu$ does all four matrices in one product; the Dirac basis is the sum and difference of the Weyl halves, $\psi_D = \frac1{\sqrt2}(\psi_L + \psi_R,\ \psi_R - \psi_L)$, and $\gamma_D^0$ is diagonal because $\gamma^0$ swaps the halves ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]] explains why $\gamma^5$ then cannot stay diagonal).
+> - Writing $\gamma^\mu$ through $\sigma^\mu$, $\bar\sigma^\mu$ does all four matrices in one product; the Dirac basis is the sum and difference of the Weyl halves, $\psi_D = \frac1{\sqrt2}(\psi_L + \psi_R,\ \psi_R - \psi_L)$, and $\gamma_D^0$ is diagonal because $\gamma^0$ swaps the halves ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17|Theorem §CB.11.17]] explains why $\gamma^5$ then cannot stay diagonal).
 > - That the new matrices satisfy the Clifford algebra needs no check: conjugation by any invertible matrix preserves it (Problem Set 6, Problem 3(a); step 1 of [[§CB.12 Complex Clifford Algebras and Clifford Modules#^der-cb-12-12|Derivation §CB.12.12]]).
 > - Used next: the plane-wave spinors in the Dirac basis, $u_D(p) = U_Du(p)$ ([[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|Example §C5a.9.1]]).
 
 ^der-ex-c5a-5-1
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-13|Def. §CB.11.13]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-11-14|Def. §CB.11.14]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§CB.12 Complex Clifford Algebras and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]]
 
 > [!caution] Caution: The upper components are not the particle
 > The Lecture 7 slides preview the four components as "spin up/down for particle/anti-particle" (and the handwritten notes attach "particle" to $\xi$, "antiparticle" to $\eta$). As a count this is right: a Dirac field describes two spin states of a particle and two of its antiparticle. As an assignment of components it is wrong in the chiral basis: the halves are the left- and right-handed Weyl spinors, and a particle at rest has *equal* halves, $u \propto (\xi, \xi)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]; PS (3.47)). The heuristic belongs to the Dirac basis (Example §C5a.5.1), where nonrelativistic particles live mostly in the upper components.
@@ -403,7 +403,7 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 ^cau-c5a-5-3
 
 > [!remark] Remark: Why each basis is used
-> A basis can diagonalize $\gamma^0$ or $\gamma^5$, never both ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-15|Theorem §CB.11.15]]); each choice makes one structure visible.
+> A basis can diagonalize $\gamma^0$ or $\gamma^5$, never both ([[§CB.11 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-11-17|Theorem §CB.11.17]]); each choice makes one structure visible.
 > - **Chiral (Weyl) basis**, the course's ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]): $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, so the basis is adapted to the Weyl halves $\psi = (\psi_L, \psi_R)$; $S^{\mu\nu}$ and $\Lambda_{1/2}$ are block diagonal ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Lecture 8: "block-diagonal (in our basis)"), so the reduction $(\frac12, 0)\oplus(0, \frac12)$ is manifest; the Dirac equation splits into two-component equations coupled only by $m$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|Theorem §C5a.7.10]]), which decouple for $m = 0$ into the Weyl fields ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]]); at high energy chirality becomes helicity ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|Theorem §C5a.10.14]]). Peskin–Schroeder use it "exclusively" as "especially convenient" (PS p. 41); Larsen calls it "the better one for relativistic processes" and for "understanding how the Lorentz group acts on the spinors", "best for pedagogical purposes" (Problem Set 6, comments after Problem 3).
 > - **Dirac (standard) basis**, Sakurai's ([[§C13.2★ The Dirac Equation#^cau-c13-2-1|QM, Caution: Dirac matrices]]): $\gamma^0 = \operatorname{diag}(\mathbb 1, -\mathbb 1)$, adapted to the rest frame, where the time evolution is generated by $m\gamma^0$, and to the nonrelativistic limit, in which two components dominate and obey the Pauli equation ([[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]]; Sakurai's free solutions, [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom|QM §C13.3★]]). Sakurai's treatment of the discrete symmetries is written in this basis ([[§C13.2★ The Dirac Equation#^thm-c13-2-7|QM Theorem §C13.2.7]]; field theory: QFT C9, planned). It is also the basis behind the heuristic "upper = particle, lower = antiparticle" ([[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]]). Larsen's reason (Problem Set 6, comments after Problem 3; he calls it the **Dirac representation**, "standard" being "misleading"): the plane-wave spinor $u_D(p)$ has vanishing lower components at rest, for small momentum the two "large" upper components are the two-component Schrödinger wave function of a spin-½ particle, so the basis is "useful for low energy processes, e.g. for computing relativistic corrections to non-relativistic quantum mechanics" ([[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|Example §C5a.9.1]]); the matrix that takes the chiral basis there is $U_D$ of [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]].
 > - **Majorana basis** (★, next remark): all $\gamma^\mu$ imaginary, adapted to reality; Larsen: "convenient in situations where particles and anti-particles are identified" (Problem Set 6; on his "all the Dirac-matrices are real", see the next remark).
@@ -426,7 +426,7 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 ^rem-c5a-5-6
 
 > [!remark] Remark: The spin-½ analogy
-> For spin $\frac12$, $S_x$ is the off-diagonal $\frac\hbar2\sigma_x$ in the $S_z$ basis and $\operatorname{diag}(\frac\hbar2, -\frac\hbar2)$ in its own eigenbasis; the unitary $U = (\sigma_x + \sigma_z)/\sqrt2$ relates the two and both matrices have eigenvalues $\pm\frac\hbar2$ ([[§C1.4 Change of Basis and Unitary Equivalence#^ex-c1-4-2|QM Example §C1.4.2]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-4|QM Theorem §C1.4.4]]). The Dirac case is the same pattern: $\gamma^0$ is off-diagonal in the chiral basis and diagonal in the Dirac basis, $\gamma^5$ the reverse, with eigenvalues $\pm1$ twice either way (Theorems §CB.11.9, §CB.11.15). As $S_x$ and $S_z$ cannot be diagonal together because they do not commute, $\gamma^0$ and $\gamma^5$ cannot because they anticommute. And as changing the basis of the spin space changes the components of a spin state but not the state ([[§C1.4 Change of Basis and Unitary Equivalence#^rem-c1-4-1|QM, Remark: Changing the basis is not changing the state]]), changing the basis of $V$ changes $\psi_a$ but not $\psi$. One difference: the spin basis is changed by a unitary to keep probabilities, the spinor basis to keep $\bar\psi$ (Theorem §C5a.2.2) — the Dirac form, not an inner product, is what must be preserved.
+> For spin $\frac12$, $S_x$ is the off-diagonal $\frac\hbar2\sigma_x$ in the $S_z$ basis and $\operatorname{diag}(\frac\hbar2, -\frac\hbar2)$ in its own eigenbasis; the unitary $U = (\sigma_x + \sigma_z)/\sqrt2$ relates the two and both matrices have eigenvalues $\pm\frac\hbar2$ ([[§C1.4 Change of Basis and Unitary Equivalence#^ex-c1-4-2|QM Example §C1.4.2]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-4|QM Theorem §C1.4.4]]). The Dirac case is the same pattern: $\gamma^0$ is off-diagonal in the chiral basis and diagonal in the Dirac basis, $\gamma^5$ the reverse, with eigenvalues $\pm1$ twice either way (Theorems §CB.11.10, §CB.11.17). As $S_x$ and $S_z$ cannot be diagonal together because they do not commute, $\gamma^0$ and $\gamma^5$ cannot because they anticommute. And as changing the basis of the spin space changes the components of a spin state but not the state ([[§C1.4 Change of Basis and Unitary Equivalence#^rem-c1-4-1|QM, Remark: Changing the basis is not changing the state]]), changing the basis of $V$ changes $\psi_a$ but not $\psi$. One difference: the spin basis is changed by a unitary to keep probabilities, the spinor basis to keep $\bar\psi$ (Theorem §C5a.2.2) — the Dirac form, not an inner product, is what must be preserved.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 ("like the choice of basis for spin-½") · Sakurai §1.5.4 (as recorded in QM C1.4) · the comparison written here*
 
@@ -438,7 +438,7 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 > |---|---|---|---|---|
 > | spinor $\psi$, $u^s(p)$, $v^s(p)$ | $V$ | $4\times1$ | $U\psi$ | Theorem §CB.0.5 |
 > | row $\varphi \in V'$, e.g. $\bar\psi$ (Def. §C5a.2.1) | $V'$ | $1\times4$ | $\varphi U^{-1}$ | Theorem §CB.0.10 |
-> | $\gamma^\mu$, $\gamma^5$, $S^{\mu\nu}$, $\Lambda_{1/2}$, $\slashed{p}$, $P_L$, $\psi\bar\chi$ | $V\otimes V'$ | $4\times4$ | $U(\cdot)U^{-1}$ | Theorems §CB.0.5, §CB.10.14 |
+> | $\gamma^\mu$, $\gamma^5$, $S^{\mu\nu}$, $\Lambda_{1/2}$, $\slashed{p}$, $P_L$, $\psi\bar\chi$ | $V\otimes V'$ | $4\times4$ | $U(\cdot)U^{-1}$ | Theorems §CB.0.5, §CB.10.15 |
 > | $\psi^\dagger$ | conjugate of $V$ | $1\times4$ | $\psi^\dagger U^\dagger$ ($= \psi^\dagger U^{-1}$ iff $U$ unitary) | Derivation §CB.0.10 |
 > | matrix of the Dirac form, $\gamma^0$ in that role | form on $V$ | $4\times4$ | $(U^{-1})^\dagger(\cdot)U^{-1}$ | Theorem §CB.8.2 |
 > | $\bar\psi\chi$, $\bar\psi\gamma^\mu\chi$, $\operatorname{tr}(\gamma^\mu\gamma^\nu)$, eigenvalues | none (all contracted) | number | unchanged | Theorems §CB.0.10, §CB.0.15, §C5a.2.2 |
@@ -450,7 +450,7 @@ Choosing a basis: the change-of-basis rules and the warning on which matrix is c
 ^rem-c5a-5-8
 
 > [!remark] Remark: What the Lorentz group adds to the Dirac matrices of Quantum Mechanics
-> Quantum Mechanics C13★ reaches the same algebra from the requirement that a first-order wave equation imply Klein–Gordon ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]]), and records the transformation $S^{-1}\gamma^\mu S = \Lambda^\mu{}_\nu\gamma^\nu$ as a checked result ([[§C13.2★ The Dirac Equation#^rem-c13-2-4|QM, Remark: Lorentz covariance and the rapidity]]; its rotation matrix $e^{+i\theta\hat{\mathbf n}\cdot\boldsymbol\Sigma/2}$ is passive, the $\Lambda_{1/2}$ here active). Field theory adds, in this order: the algebra has one $4\times4$ solution up to basis (Pauli's theorem); the generators $\frac i4[\gamma^\mu, \gamma^\nu]$ obey the Lorentz algebra *because of* the Clifford algebra (Theorem §CB.13.17), so the Dirac spinor is a Lorentz representation before any equation is written; that representation is $(\frac12, 0)\oplus(0, \frac12)$, a reducible sum whose halves are separated by $\gamma^5$; and the covariance of $\gamma^\mu$ is derived, which then makes the Dirac equation covariant ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]). The object is also different: $\psi$ will be a field, not a wave function, quantized with anticommutators ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]).
+> Quantum Mechanics C13★ reaches the same algebra from the requirement that a first-order wave equation imply Klein–Gordon ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]]), and records the transformation $S^{-1}\gamma^\mu S = \Lambda^\mu{}_\nu\gamma^\nu$ as a checked result ([[§C13.2★ The Dirac Equation#^rem-c13-2-4|QM, Remark: Lorentz covariance and the rapidity]]; its rotation matrix $e^{+i\theta\hat{\mathbf n}\cdot\boldsymbol\Sigma/2}$ is passive, the $\Lambda_{1/2}$ here active). Field theory adds, in this order: the algebra has one $4\times4$ solution up to basis (Pauli's theorem); the generators $\frac i4[\gamma^\mu, \gamma^\nu]$ obey the Lorentz algebra *because of* the Clifford algebra (Theorem §CB.13.18), so the Dirac spinor is a Lorentz representation before any equation is written; that representation is $(\frac12, 0)\oplus(0, \frac12)$, a reducible sum whose halves are separated by $\gamma^5$; and the covariance of $\gamma^\mu$ is derived, which then makes the Dirac equation covariant ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]). The object is also different: $\psi$ will be a field, not a wave function, quantized with anticommutators ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]).
 >
 > *Source: PS §3.2, pp. 40–42 (the order of the construction) · the user's PHY 513 notes, Ch. 8 §8.1 (the logic (i)–(v) of the section)*
 
