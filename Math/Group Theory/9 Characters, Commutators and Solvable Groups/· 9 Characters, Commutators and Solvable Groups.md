@@ -13,7 +13,7 @@ tags: [chapter, group-theory]
 
 [[§43 Simple Groups#^def-43-1|Simple groups]] are the atoms of group theory; the next question is how they are put together. The [[§48 Solvable Groups#^def-48-1|solvable groups]] are the groups built entirely out of abelian pieces. The second half of the chapter defines them, shows that the class is closed under [[§48 Solvable Groups#^prop-48-2|subgroups]] and [[§48 Solvable Groups#^prop-48-3|quotients]], and introduces the [[§49 The Derived Series#^def-49-1|derived series]] — the commutator subgroup taken again and again — which gives [[§49 The Derived Series#^thm-49-1|an algorithm for testing solvability]].
 
-**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (13), [[· 3 Permutations|3 Permutations]] (2), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (10), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (17), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (3), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (4), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (20)
+**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (14), [[· 3 Permutations|3 Permutations]] (2), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (12), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (17), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (3), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (4), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (25)
 **Used by:** [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (2)
 
@@ -26,7 +26,7 @@ tags: [chapter, group-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§47 Commutators#^prop-47-1|Proposition §47.1: Characters Kill Commutators]]: 6 later results
+- [[§47 Commutators#^prop-47-1|Proposition §47.1: Characters Kill Commutators]]: 7 later results
 - [[§47 Commutators#^prop-47-2|Proposition §47.2: 3-Cycles Are Commutators]]: 5 later results
-- [[§46 Characters#^prop-46-1|Proposition §46.1: Characters Are Constant on Conjugacy Classes]]: 3 later results
-- [[§47 Commutators#^prop-47-4|Proposition §47.4: Properties of the Commutator Subgroup]]: 3 later results
+- [[§47 Commutators#^prop-47-4|Proposition §47.4: Properties of the Commutator Subgroup]]: 4 later results
+- [[§47 Commutators#^prop-47-11|Proposition §47.11: Abelian Quotients and Commutators]]: 4 later results

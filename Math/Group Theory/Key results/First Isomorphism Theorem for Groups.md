@@ -24,6 +24,7 @@ tags: [group-theory, hub]
 - [[§43 Simple Groups#^prop-43-10|Proposition §43.10: The Pair-Partition Homomorphism S_4 → S_3]]
 - [[§48 Solvable Groups#^prop-48-1|Proposition §48.1: S_3 and S_4 Are Solvable]]
 - [[§48 Solvable Groups#^prop-48-2|Proposition §48.2: Subgroups of Solvable Groups Are Solvable]]
+- [[§48 Solvable Groups#^prop-48-4|Proposition §48.4: Subquotients: An Injection and a Surjection]]
 
 ## Used in (Topology)
 - [[§27 Free Groups and Presentations#^def-27-6|Definition §27.6: Group Presentation]]
