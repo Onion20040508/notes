@@ -115,6 +115,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > $$
 > n^2 - \frac{n(n+1)}{2} = \frac{2n^2 - n^2 - n}{2} = \frac{n(n-1)}{2}.
 > $$
+
 ^pf-ex-23-1
 
 *Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-1|Def. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]]
@@ -164,6 +165,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > $$
 > B = \begin{pmatrix} 0 & \ast \\ -(\ast)^{\mathsf T} & \ddots \end{pmatrix}, \qquad \dim \operatorname{Skew}(n,\mathbb{R}) = \binom{n}{2} = \frac{n(n-1)}{2}.
 > $$
+
 ^pf-23-1
 
 *Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]]
@@ -202,6 +204,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > $$
 >
 > which says that the $j$-th column is a unit vector. Hence $|g_{ij}| \le 1$ for all $i, j$, and $\|g\|^2 = \sum_{i,j} g_{ij}^2 = n$ in the norm of Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|§11.2]], so $\mathrm{O}(n)$ lies in the closed ball of radius $\sqrt n$. Closed and bounded in $\mathbb{R}^{n^2}$, it is compact by Heine–Borel (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)).
+
 ^pf-23-2
 
 *Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]]
@@ -256,6 +259,7 @@ Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mat
 > $$
 >
 > *The description of $\mathrm{U}(n)$.* By Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11.10]], $\mathrm{U}(n) = \{g \in \mathrm{GL}(n,\mathbb{C}) \mid g^{-1} = g^{\ast}\}$. If $g \in \mathrm{U}(n)$, then $gg^{\ast} = gg^{-1} = I$. Conversely, if $gg^{\ast} = I$, the two steps above show that $g$ is invertible with $g^{-1} = g^{\ast}$, so $g \in \mathrm{U}(n)$. Hence $\mathrm{U}(n) = \{g \mid gg^{\ast} = I\}$.
+
 ^pf-23-3
 
 *Uses:* [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]]
@@ -323,6 +327,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 > The surjectivity argument as a diagram: $dF_g$ factors as a bijection followed by $X \mapsto X + X^{\ast}$, and the second map is onto $\operatorname{Herm}(n)$, hitting $A$ at $X = \tfrac12 A$. Hence $dF_g$ is onto.
 >
 > *Conclusion.* $\dim_{\mathbb{R}}\operatorname{Mat}(n,\mathbb{C}) = 2n^2 \ge n^2 = \dim_{\mathbb{R}}\operatorname{Herm}(n)$ (Definitions [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|§23.2]]), so by Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] surjectivity of $dF_g$ at every $g \in F^{-1}(I)$ is exactly the statement that $I$ is a regular value. In the coordinates of the square above, this says: $\widehat F = K \circ F \circ L^{-1} : \mathbb{R}^{2n^2} \to \mathbb{R}^{n^2}$ is smooth, its Jacobian at $L(g)$ has maximal rank $n^2$ for every $g \in F^{-1}(I)$, and, $K$ being injective, $\widehat F(L(g)) = K(F(g)) = K(I) \iff F(g) = I$, so $\widehat F^{-1}(K(I)) = L(\mathrm{U}(n))$; thus $K(I)$ is a regular value of $\widehat F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], with $W = \mathbb{R}^{2n^2}$, $n + k = 2n^2$ and $k = n^2$, makes $L(\mathrm{U}(n))$ a smooth manifold of dimension $2n^2 - n^2 = n^2$. The topology of $\mathrm{U}(n)$ is the subspace topology of $\operatorname{Mat}(n,\mathbb{C})$, defined by $L$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]]), so $L$ restricts to a homeomorphism $\mathrm{U}(n) \to L(\mathrm{U}(n))$, and transporting along it (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]]) makes $\mathrm{U}(n)$ a smooth manifold of dimension $2n^2 - n^2 = n^2$.
+
 ^pf-ex-23-2
 
 *Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|Def. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]]
@@ -371,6 +376,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 > $$
 >
 > The real-linear isomorphism $X \mapsto Xg$ maps $\mathfrak{u}(n)$ onto $\ker dF_g$, so $\dim_{\mathbb{R}} \ker dF_g = n^2$ as well. Rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) gives the same number from the other side: $dF_g$ is surjective onto $\operatorname{Herm}(n)$, of real dimension $n^2$, so $\dim_{\mathbb{R}} \ker dF_g = 2n^2 - n^2 = n^2$.
+
 ^pf-23-4
 
 *Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
@@ -399,6 +405,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 > so the $j$-th column is a unit vector and $|g_{ij}| \le 1$ for all $i, j$. In the real coordinates of Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]] the squared Euclidean norm of $g$ is $\sum_{i,j}\big((\operatorname{Re} g_{ij})^2 + (\operatorname{Im} g_{ij})^2\big) = \sum_{i,j} |g_{ij}|^2 = n$, so $\mathrm{U}(n)$ lies in the closed ball of radius $\sqrt n$ in $\mathbb{R}^{2n^2}$.
 >
 > Apply Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1).
+
 ^pf-23-5
 
 *Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]]

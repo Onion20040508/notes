@@ -89,6 +89,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > $$
 > T^{\mathrm{geo}}_pM = \ker (G\circ F)'(p) = \ker\big(G'(q)F'(p)\big) = \{v \mid G'(q)\big(F'(p)v\big) = 0\} = \{v \mid F'(p)v \in \ker G'(q)\} = F'(p)^{-1}(T^{\mathrm{geo}}_qS).
 > $$
+
 ^pf-26-1
 
 *Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
@@ -124,6 +125,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > $$
 >
 > *Consequently.* $F \pitchfork S$ means the left condition holds at every $p \in F^{-1}(S)$ (Definition [[§26 Transversality#^def-26-2|§26.2]]); by the equivalence just proved, this says $(G\circ F)'(p)$ is surjective at every $p \in F^{-1}(S)$. Since $F^{-1}(S) = (G \circ F)^{-1}(0)$ (first step of the proof of Theorem [[§26 Transversality#^thm-26-1|§26.1]]), that is exactly the statement that $0$ is a regular value of $G \circ F$ (Definitions [[§7 The Regular Value Theorem#^def-7-4|§7.4]] and [[§7 The Regular Value Theorem#^def-7-3|§7.3]]).
+
 ^pf-26-2
 
 *Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
@@ -156,6 +158,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > $$
 >
 > This is the description of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for the regular level set $F^{-1}(c)$.
+
 ^pf-26-3
 
 *Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]
@@ -219,6 +222,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > $$
 >
 > using $\operatorname{codim} S_i = k - (k - \ell_i) = \ell_i$. And Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] gives the geometric tangent space $T^{\mathrm{geo}}_q(S_1 \cap S_2) = \ker(G_1,G_2)'(q) = T_1 \cap T_2$.
+
 ^pf-26-4
 
 *Uses:* [[§26 Transversality#^def-26-3|Def. §26.3]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]

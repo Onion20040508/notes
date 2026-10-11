@@ -42,6 +42,7 @@ For a topological group the two maps had to be continuous; “now we ask that th
 > So the composite $(g, h) \mapsto gh$ is smooth into $\operatorname{Mat}$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). It lands in $G$, because $G$ is a group under matrix multiplication; so it is smooth into $G$, by the last sentence of the setting.
 >
 > *Inversion* is the restriction of a smooth map on the open set of invertible matrices — $g \mapsto \operatorname{adj}(g)/\det g$ by the cofactor formula, a rational map with nonvanishing denominator — landing in $G$, hence smooth into $G$ in the same way. In detail: the set of invertible matrices in $\operatorname{Mat}$ is $\det^{-1}$ of the nonzero numbers, open since $\det$ is continuous. On it, the entries of $\operatorname{adj}(g)$ and $\det g$ are polynomials in the entries of $g$, and $\det g \ne 0$, so $g \mapsto \operatorname{adj}(g)/\det g = g^{-1}$ is smooth; in the complex case, dividing by $\det g$ is multiplying by $\overline{\det g}/|\det g|^2$, again rational in the real coordinates with nonvanishing denominator $|\det g|^2$. Every $G$ of the list consists of invertible matrices, so $g \mapsto g^{-1}$ on $G$ is this map composed with $\iota$, smooth into $\operatorname{Mat}$; it lands in $G$, because $G$ is closed under inverses; so it is smooth into $G$. (For $\mathrm{O}(n)$ and $\mathrm{U}(n)$ it is even linear: $g \mapsto g^{\mathsf T}$, $g \mapsto g^{\ast}$.)
+
 ^pf-52-1
 
 *Uses:* [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-1|Def. §52.1]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|235 Thm. §27.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]
@@ -76,6 +77,7 @@ The unit quaternions $S^3$ are a Lie group as well ([[§41 The Unit Quaternions 
 > $$
 >
 > So $L_g \circ L_{g^{-1}} = L_{g^{-1}} \circ L_g = \mathrm{id}$: $L_g$ is a bijection with inverse $L_{g^{-1}}$, and both are smooth, so $L_g$ is a diffeomorphism.
+
 ^pf-52-2
 
 *Uses:* [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-1|Def. §52.1]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-2|Def. §52.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
@@ -125,6 +127,7 @@ Left invariance in one line: “using [left translations], you can push vectors 
 > $$
 >
 > so every $\mathbf{X}^A$ is left-invariant. It is smooth because its entries are linear in those of $g$: in the global chart of $G$ given by the matrix entries $x^{ij}$, the coefficients of $\mathbf{X}^A$ (Proposition [[§48 Vector Fields#^prop-48-1|§48.1]]) are $\mathbf{X}^A_g[x^{ij}] = D_{gA}|_g[x^{ij}] = \frac{d}{dt}\big|_{t=0}\, x^{ij}(g + t\,gA) = (gA)_{ij} = \sum_k g_{ik} A_{kj}$, linear in the entries of $g$, hence smooth.
+
 ^pf-ex-52-1
 
 *Uses:* [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-2|Def. §52.2]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-3|Def. §52.3]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
@@ -189,6 +192,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > So $a\mathbf{X} + b\mathbf{Y} \in \mathfrak{g}$; and the zero field is in $\mathfrak{g}$, since a linear map sends $0$ to $0$.
 >
 > *A Lie algebra.* By the first step the bracket of vector fields restricts to a map $\mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$. The bracket on $\mathfrak{g}$ is bilinear, skew and satisfies Jacobi because it does on $\mathfrak{X}(G)$ (Corollary [[§50 Lie Bracket and Lie Algebra#^cor-50-4|§50.4]]): these are identities for all elements of $\mathfrak{X}(G)$, so in particular for all elements of $\mathfrak{g}$. So $\mathfrak{g}$ is a Lie algebra (Definition [[§50 Lie Bracket and Lie Algebra#^def-50-2|§50.2]]).
+
 ^pf-52-4
 
 *Uses:* [[§52 Lie Groups and Left-Invariant Vector Fields#^lem-52-3|§52.3]], [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§51 Related Vector Fields#^prop-51-3|§51.3]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-3|Def. §52.3]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-4|Def. §52.4]], [[§50 Lie Bracket and Lie Algebra#^cor-50-4|§50.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§48 Vector Fields#^def-48-2|Def. §48.2]], [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]]
@@ -248,6 +252,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > and $\partial\tilde\phi/\partial t$ is smooth (all its partial derivatives are partial derivatives of $\tilde\phi$), so its composite with the smooth map $x \mapsto (0, x)$ is smooth. So $\mathbf{X}^v f$ is smooth on each chart domain, hence on $G$; by Lemma [[§48 Vector Fields#^lem-48-8|§48.8]], $\mathbf{X}^v$ is smooth. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$.
 >
 > Finally, a linear isomorphism preserves dimension, so $\dim \mathfrak{g} = \dim T_eG = \dim G$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]).
+
 ^pf-52-5
 
 *Uses:* [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-1|Def. §52.1]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-2|Def. §52.2]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-3|Def. §52.3]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-4|Def. §52.4]], [[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§48 Vector Fields#^lem-48-8|§48.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§48 Vector Fields#^def-48-2|Def. §48.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]]
@@ -281,6 +286,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > $$
 >
 > So in linear coordinates $\mathbf{X}^v = \sum_i v^i\, \partial_i$ has constant coefficients, and likewise $\mathbf{X}^w = \sum_i w^i\, \partial_i$. By Proposition [[§50 Lie Bracket and Lie Algebra#^prop-50-2|§50.2]], the $j$-th coefficient of $[\mathbf{X}^v, \mathbf{X}^w]$ is $\sum_i \big(v^i\, \partial w^j/\partial x^i - w^i\, \partial v^j/\partial x^i\big) = 0$, since the partial derivatives of constants vanish. So $[\mathbf{X}^v, \mathbf{X}^w] = 0$ for all $v, w$: $\mathfrak{g} \cong V$ with the zero bracket.
+
 ^pf-ex-52-2
 
 *Uses:* [[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]], [[§52 Lie Groups and Left-Invariant Vector Fields#^thm-52-5|§52.5]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§50 Lie Bracket and Lie Algebra#^prop-50-2|§50.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-1|Def. §52.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], [[§48 Vector Fields#^prop-48-1|§48.1]]

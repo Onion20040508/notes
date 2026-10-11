@@ -86,6 +86,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 > *$\pi$ is surjective if $F \neq \emptyset$.* Every $b$ lies in some $U_\alpha$, and its fibre is a copy of $F$ by (1), nonempty if $F$ is; any $x \in \pi^{-1}(b)$ has $\pi(x) = b$.
 >
 > *(3)* By (2), $\pi$ is a submersion, so by Corollary [[§34 Submersions#^cor-34-6|§34.6]] $\pi(O)$ is open in $B$ for every open $O \subseteq M$: $\pi$ is an open map.
+
 ^pf-36-1
 
 *Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§34 Submersions#^def-34-1|Def. §34.1]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§34 Submersions#^cor-34-6|§34.6]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]
@@ -127,6 +128,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 > *$\Phi^{-1}$ is smooth.* The inclusion $\iota' : \{b\} \times F \hookrightarrow U_\alpha \times F$ is smooth (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)), and $\phi_\alpha^{-1} \circ \iota'$ is smooth into $\pi^{-1}(U_\alpha)$, hence into $E$, the inclusion of an open submanifold being smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). It takes values in the submanifold $\pi^{-1}(b)$, so it is smooth as a map into $\pi^{-1}(b)$ (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2)); that map is $\Phi^{-1}$. So $\Phi$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]): the restriction and its inverse are smooth as maps into $U_\alpha \times F$ and into $E$, hence smooth into the submanifolds $\{b\} \times F$ and $\pi^{-1}(b)$.
 >
 > *$\{b\} \times F \cong F$.* Finally $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a diffeomorphism by the same lemma, with inverse $f \mapsto (b, f)$. Explicitly: the first map is $\mathrm{pr}_2 \circ \iota'$, smooth because $\mathrm{pr}_2$ and $\iota'$ are (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)). The second is the slice inclusion $\iota^{b} : F \to U_\alpha \times F$, $f \mapsto (b, f)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]; it takes values in $\{b\} \times F$, so it is smooth into $\{b\} \times F$ by Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2). The two maps are inverse to each other. Composing with $\Phi$ gives the diffeomorphism $\pi^{-1}(b) \to \{b\} \times F \cong F$.
+
 ^pf-36-2
 
 *Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-1|§36.1]], [[§35 Regular Submanifolds#^cor-35-8|§35.8]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§35 Regular Submanifolds#^prop-35-2|§35.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
@@ -151,6 +153,7 @@ This upgrades [[§36 Fibrations#^prop-36-1|Proposition §36.1]](1) from homeomor
 > *The fibres.* Its fibres are the vertical lines $\{x\} \times \mathbb{R}$ for $x \ne 0$, “except for one”: over $0$ the fibre is $\{0\} \times (\mathbb{R} \setminus \{1\})$, two half-lines — “it wants to be a vertical line, but there's a point missing.” Indeed $\pi^{-1}(x) = \{(x, y) : (x, y) \neq (0, 1)\}$, and the excluded point has $x = 0$.
 >
 > *Not a fibration.* If $\pi$ were a fibration with fibre $F$, all fibres would be diffeomorphic to $F$ (Proposition [[§36 Fibrations#^prop-36-2|§36.2]]), hence to each other (compose one diffeomorphism with the inverse of the other), and in particular homeomorphic. But $\{1\} \times \mathbb{R}$ is connected and $\{0\} \times (\mathbb{R} \setminus \{1\})$ is not, and connectedness is preserved by homeomorphisms. In detail: $\{1\} \times \mathbb{R}$ is homeomorphic to $\mathbb{R}$ by $(1, y) \mapsto y$, hence connected (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](4)). $\{0\} \times (\mathbb{R} \setminus \{1\})$ is the union of the two disjoint nonempty sets $\{0\} \times (-\infty, 1)$ and $\{0\} \times (1, \infty)$, each open in it, being its intersection with the open half-plane $\{y < 1\}$, resp. $\{y > 1\}$; so it is not connected. And the image of a connected space under a homeomorphism, a continuous map, is connected (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](1)).
+
 ^pf-ex-36-1
 
 *Uses:* [[§34 Submersions#^ex-34-1|Ex. §34.1]], [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-2|§36.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§16 Connected Subspaces of ℝ#^cor-16-2|590 §16.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]
@@ -261,6 +264,7 @@ A section in the sense of [[§36 Fibrations#^def-36-2|Definition §36.2]] is a l
 > $$
 > \pi\big(s(u)\big) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1\big(\phi(\phi^{-1}(u, f_0))\big) = \mathrm{pr}_1(u, f_0) = u .
 > $$
+
 ^pf-36-4
 
 *Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]

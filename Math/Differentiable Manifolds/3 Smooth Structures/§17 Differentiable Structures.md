@@ -161,6 +161,7 @@ tags: [differentiable-manifolds, math591]
 > So every component of $\tau$ is smooth, and $\tau$ is smooth.
 >
 > *Conclusion.* Both being continuous bijections already (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]), $\tau$ is a bijection $A \to B$ with $\tau$ and $\tau^{-1}$ smooth, that is, a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]); so the two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]).
+
 ^pf-17-1
 
 *Uses:* [[§17 Differentiable Structures#^def-17-2|Def. §17.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[Multivariable Chain Rule|452 §12.2]]
@@ -202,6 +203,7 @@ tags: [differentiable-manifolds, math591]
 >     So this transition is not smooth, not a diffeomorphism, and the two charts are not compatible.
 >
 > So $(U_1,\varphi_1)$ is compatible with $(U_2,\varphi_2)$, and $(U_2,\varphi_2)$ with $(U_3,\varphi_3)$, but $(U_1,\varphi_1)$ is not compatible with $(U_3,\varphi_3)$.
+
 ^pf-17-2
 
 *Uses:* [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]]
@@ -333,6 +335,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 > *$V$ is an open arc.* The same map shows that $V$ is homeomorphic to the open interval $I = \sigma_N(\rho(V))$, and $V = \rho^{-1}\big(\sigma_N^{-1}(I)\big)$ is the image of $I$ under the continuous injection $\rho^{-1} \circ \sigma_N^{-1}$, an open arc of the circle.
 >
 > *Conversely*, $S^1$ is not a chart domain, by Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]]: a chart with domain $S^1$ would by itself be a one-chart atlas.
+
 ^pf-17-4
 
 *Uses:* [[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]], [[§17 Differentiable Structures#^prop-17-3|§17.3]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§16 Connected Subspaces of ℝ#^rem-16-1|590 §16 (connected subsets of ℝ are intervals)]]
@@ -424,6 +427,7 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 > *Uniqueness.* Let $\mathcal{M}$ be any maximal atlas with $\mathcal{A} \subseteq \mathcal{M}$. If $(V,\psi) \in \mathcal{M}$ then it is compatible with every chart of $\mathcal{M}$ (with the others because $\mathcal{M}$ is an atlas, with itself by reflexivity), hence with every chart of $\mathcal{A} \subseteq \mathcal{M}$, so $(V,\psi) \in \overline{\mathcal{A}}$; thus $\mathcal{M} \subseteq \overline{\mathcal{A}}$. Since $\overline{\mathcal{A}}$ is an atlas containing $\mathcal{M}$ and $\mathcal{M}$ is maximal (contained in no strictly larger atlas, Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]), $\mathcal{M} = \overline{\mathcal{A}}$.
 >
 > *Compatible atlases.* Let $\mathcal{A}'$ be a second atlas. If $\mathcal{A}$ and $\mathcal{A}'$ are compatible (Definition [[§17 Differentiable Structures#^def-17-7|§17.7]]), every chart of $\mathcal{A}'$ is compatible with every chart of $\mathcal{A}$, so $\mathcal{A}' \subseteq \overline{\mathcal{A}}$; as also $\mathcal{A} \subseteq \overline{\mathcal{A}}$, both lie in the maximal atlas $\overline{\mathcal{A}}$. Conversely, if $\mathcal{A}$ and $\mathcal{A}'$ both lie in one maximal atlas $\mathcal{M}$, then a chart of $\mathcal{A}$ and a chart of $\mathcal{A}'$ are two charts of the atlas $\mathcal{M}$, hence compatible (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]); so $\mathcal{A}$ and $\mathcal{A}'$ are compatible.
+
 ^pf-17-5
 
 *Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-7|Def. §17.7]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§17 Differentiable Structures#^prop-17-2|§17.2]], [[Multivariable Chain Rule|452 §12.2]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]

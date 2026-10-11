@@ -67,6 +67,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > Both norms are nonnegative, so taking square roots gives $|pq| = |p|\,|q|$.
 >
 > *The rest.* If $q \neq 0$ then $|q|^2 > 0$, and by the second step $q\,(\bar q/|q|^2) = (\bar q/|q|^2)\, q = |q|^2/|q|^2 = 1$, so $q^{-1} = \bar q/|q|^2$. For $S^3$: $|1| = 1$; if $|p| = |q| = 1$ then $|pq| = |p|\,|q| = 1$; and for $|q| = 1$ the inverse is $q^{-1} = \bar q$, with $|\bar q| = |q| = 1$ since conjugation only changes signs of coordinates. Associativity is inherited from $\mathbb{H}$. So $S^3$ is a group, with $q^{-1} = \bar q$.
+
 ^pf-41-1
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]
@@ -186,6 +187,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > $$
 >
 > The point $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$, which lies in $S^3$ by the same computation with $u = i$ and ends at $\cos\pi = -1$; and $1$ is joined to itself by a constant path. So every point of $S^3$ is joined to $1$ by a path in $S^3$: $S^3$ is path-connected, hence connected.
+
 ^pf-41-4
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§35 Regular Submanifolds#^thm-35-7|§35.7]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§34 Submersions#^def-34-4|Def. §34.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]
@@ -279,6 +281,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > *$F = L \circ \iota$ is an embedding.* The inclusion $\iota$ is smooth (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)) and an immersion ($\iota_{\ast p}$ is injective, Proposition [[§35 Regular Submanifolds#^prop-35-4|§35.4]]); so by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) $(L \circ \iota)_{\ast p} = L_{\ast p} \circ \iota_{\ast p}$ is a composite of injective maps, injective. And $L \circ \iota : S^3 \to L(S^3)$ is a continuous bijection whose inverse is the restriction of $P$ to $L(S^3)$, continuous into $\mathbb{R}^4$ with values in $S^3$, hence continuous into $S^3$ with its subspace topology. So $L|_{S^3}$, the composite of the embeddings $S^3 \hookrightarrow \mathbb{R}^4 \xrightarrow{L} \operatorname{Mat}(2, \mathbb{C})$, is an embedding.
 >
 > *Conclusion.* Its image is $F(S^3) = \mathrm{SU}(2)$ by (2). By Theorem [[§38 Embeddings#^thm-38-1|§38.1]], with $m = \dim S^3 = 3$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]]) and $n = \dim_{\mathbb{R}} \operatorname{Mat}(2, \mathbb{C}) = 8$, $\mathrm{SU}(2)$ is a regular submanifold of $\operatorname{Mat}(2, \mathbb{C}) \cong \mathbb{R}^8$ of codimension $8 - 3 = 5$, i.e. of dimension $3$; and by Corollary [[§38 Embeddings#^cor-38-3|§38.3]], $F : S^3 \to \mathrm{SU}(2)$ is a diffeomorphism onto it.
+
 ^pf-41-5
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§38 Embeddings#^def-38-1|Def. §38.1]], [[§38 Embeddings#^thm-38-1|§38.1]], [[§38 Embeddings#^cor-38-3|§38.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]]
@@ -400,6 +403,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > $$
 >
 > *Conclusion.* $T_I\,\mathrm{SU}(2) = \operatorname{Span}\{\sigma_j\}$ is a $3$-dimensional subspace of the $3$-dimensional space $\mathfrak{su}(2)$, so the two are equal: $T_I\,\mathrm{SU}(2) = \operatorname{Span}\{\sigma_j\} = \mathfrak{su}(2)$.
+
 ^pf-41-6
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]]

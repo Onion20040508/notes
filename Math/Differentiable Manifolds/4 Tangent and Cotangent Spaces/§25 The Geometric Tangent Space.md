@@ -69,6 +69,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > $$
 >
 > is open in $(-\varepsilon,\varepsilon)$, and it contains $0$ because $\gamma(0) = p \in M'$. An open subset of $\mathbb{R}$ containing $0$ contains an interval $(-\delta,\delta)$ with $0 < \delta \le \varepsilon$. The restriction $\gamma|_{(-\delta,\delta)}$ is smooth, takes values in $M'$, and sends $0$ to $p$. Its velocity at $0$ is the limit of the difference quotients $\big(\gamma(t) - \gamma(0)\big)/t$ as $t \to 0$, which for $0 < |t| < \delta$ are the same as those of $\gamma$; so it equals $\gamma'(0) = v$. Hence $v \in T^{\mathrm{geo}}_pM'$.
+
 ^pf-25-1
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]]
@@ -120,6 +121,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > This is smooth into $\mathbb{R}^{n+k}$: the first component is affine in $t$, and the second is the composite of the smooth $G$ with that affine map. It takes values in $M$, since $\gamma(t) = (x, G(x))$ with $x = x_0 + tu \in A$. It has $\gamma(0) = (x_0, G(x_0)) = p$. And by the chain rule, $\frac{d}{dt}\big|_{t=0} G(x_0 + tu) = G'(x_0)\,u$, so $\gamma'(0) = (u, G'(x_0)u)$. Hence $\Gamma \subseteq T^{\mathrm{geo}}_pM$.
 >
 > *Dimension.* The map $\iota : \mathbb{R}^n \to \mathbb{R}^{n+k}$, $\iota(u) = (u, Lu)$, is linear because $L$ is: $\iota(au + bu') = (au + bu', aLu + bLu') = a\,\iota(u) + b\,\iota(u')$. Its image is $\Gamma$, so $\Gamma$ is a linear subspace of $\mathbb{R}^{n+k}$. It is injective, because $\iota(u) = 0$ forces the first component $u$ to be $0$. By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), $\dim \Gamma = \dim \operatorname{im}\iota = n - \dim\ker\iota = n - 0 = n$.
+
 ^pf-25-2
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[Multivariable Chain Rule|452 §12.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
@@ -173,6 +175,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > $$
 >
 > *5. “We must have equality.”* By Steps 1, 3 and 4, $T^{\mathrm{geo}}_pM$ is an $n$-dimensional subspace contained in the $n$-dimensional subspace $\ker F'(p)$. A basis of $T^{\mathrm{geo}}_pM$ consists of $n$ linearly independent vectors of $\ker F'(p)$, and $n$ independent vectors in an $n$-dimensional space form a basis of it; so they span $\ker F'(p)$, and $\ker F'(p) \subseteq T^{\mathrm{geo}}_pM$. The two are equal.
+
 ^pf-25-3
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]], [[Multivariable Chain Rule|452 §12.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-39|LADR 2.39]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
@@ -223,6 +226,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > so $F'(p)\big(D\alpha_a(u)\big) = 0$ for every $u$, that is, $\operatorname{im} D\alpha_a \subseteq \ker F'(p)$.
 >
 > *The isomorphism.* $D\alpha_a$ is linear, and injective because its first $n$ components are the identity: $D\alpha_a(u) = 0$ gives $u = 0$. So $D\alpha_a$ is a linear bijection of $\mathbb{R}^n$ onto its image, which by the three equalities is $T^{\mathrm{geo}}_pM$. Consistently, both spaces have dimension $n$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]).
+
 ^pf-25-4
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]]
@@ -330,6 +334,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > Hence $gX = (gXg^{-1})\,g \in \operatorname{Skew}(n,\mathbb{R})\cdot g$, so $g\cdot\operatorname{Skew}(n,\mathbb{R}) \subseteq \operatorname{Skew}(n,\mathbb{R})\cdot g$. Applying the same to the orthogonal matrix $g^{-1}$, $g^{-1}Xg$ is skew, so $Xg = g\,(g^{-1}Xg) \in g\cdot\operatorname{Skew}(n,\mathbb{R})$, which is the reverse inclusion. So $T^{\mathrm{geo}}_gG = g\cdot T^{\mathrm{geo}}_IG = T^{\mathrm{geo}}_IG\cdot g$ for $G = \mathrm{O}(n)$, and for $G = \mathrm{SO}(n)$ by the equalities just noted.
 >
 > *$\mathrm{U}(n)$.* Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]] gives that $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$, and Example [[§25 The Geometric Tangent Space#^ex-25-3|§25.3]] gives $T^{\mathrm{geo}}_g\mathrm{U}(n) = \mathfrak{u}(n)\cdot g = g\cdot\mathfrak{u}(n)$ and $T^{\mathrm{geo}}_I\mathrm{U}(n) = \mathfrak{u}(n)$, which are the two translate formulas.
+
 ^pf-25-5
 
 *Uses:* [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|§12.6]], [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]], [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23.2]], [[§25 The Geometric Tangent Space#^ex-25-2|Ex. §25.2]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-4|§23.4]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§25 The Geometric Tangent Space#^ex-25-3|Ex. §25.3]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]]
@@ -394,6 +399,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > $$
 >
 > This holds for every $X \in \mathfrak{g}$, so $L_g = R_g \circ \mathrm{Ad}_g$.
+
 ^pf-25-6
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-2|Def. §25.2]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
@@ -559,6 +565,7 @@ $$
 > $$
 >
 > This is the product rule of the statement.
+
 ^pf-25-8
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]], [[Multivariable Chain Rule|452 §12.2]], [[§8 Algebra of Differentiable Functions#^thm-8-2|452 §8.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]]
@@ -580,6 +587,7 @@ $$
 > $$
 >
 > If $D_v = D_{v'}$, applying both to $x^i$ gives $u^i = D_v(x^i) = D_{v'}(x^i) = (u')^i$ for every $i$, so $u = u'$ and hence $v = (u, G'(x_0)u) = (u', G'(x_0)u') = v'$.
+
 ^pf-25-9
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]]

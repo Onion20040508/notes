@@ -88,6 +88,7 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 > $$
 >
 > This equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ if and only if $\big(a(x,y) - b(x)\big)\, \frac{d}{dx}\big|_x = 0$, that is, if and only if $a(x, y) = b(x)$, because $d/dx|_x \ne 0$ (it is a basis of $T_x\mathbb{R}$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]). So the fields $\pi$-related to $\mathbf{Y}$ are those with $a(x, y) = b(x)$ for all $(x, y)$, and $c$ is not constrained. Conversely, for every $c \in C^\infty(\mathbb{R}^2)$ the section $b(x)\,\partial_x + c\,\partial_y$ has smooth coefficients ($(x, y) \mapsto b(x)$ is $b \circ \pi$), so it is a vector field (Proposition [[§48 Vector Fields#^prop-48-1|§48.1]]), and by the computation it is $\pi$-related to $\mathbf{Y}$.
+
 ^pf-ex-51-1
 
 *Uses:* [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]
@@ -133,6 +134,7 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 > $$
 >
 > So the two derivations agree on every germ, and are equal as maps on $C^\infty_{F(p)}(N)$: $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$. As $p$ was arbitrary, the fields are $F$-related. “It's a trivial if and only if once you realize” this.
+
 ^pf-51-1
 
 *Uses:* [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§48 Vector Fields#^lem-48-3|§48.3]]
@@ -170,6 +172,7 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 > $$
 >
 > This holds for every $q$, so $\mathbf{Y} = F_\ast\mathbf{X}$.
+
 ^pf-51-2
 
 *Uses:* [[§51 Related Vector Fields#^def-51-1|Def. §51.1]], [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§48 Vector Fields#^lem-48-8|§48.8]]
@@ -211,6 +214,7 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 > $$
 >
 > and Proposition [[§51 Related Vector Fields#^prop-51-1|§51.1]] again, with $\mathbf{X} = [\mathbf{X}_1, \mathbf{X}_2]$ and $\mathbf{Y} = [\mathbf{Y}_1, \mathbf{Y}_2]$, gives the claim.
+
 ^pf-51-3
 
 *Uses:* [[§51 Related Vector Fields#^prop-51-1|§51.1]], [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^lem-48-3|§48.3]]
@@ -226,6 +230,7 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* By Proposition [[§51 Related Vector Fields#^prop-51-2|§51.2]], each $F_\ast\mathbf{X}_i$ is a vector field on $N$ and $\mathbf{X}_i$ is $F$-related to $F_\ast\mathbf{X}_i$, for $i = 1, 2$. So Proposition [[§51 Related Vector Fields#^prop-51-3|§51.3]], with $\mathbf{Y}_i = F_\ast\mathbf{X}_i$, shows that $[\mathbf{X}_1, \mathbf{X}_2]$ is $F$-related to $[F_\ast\mathbf{X}_1, F_\ast\mathbf{X}_2]$. On the other hand $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ (Lemma [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]]), so Proposition [[§51 Related Vector Fields#^prop-51-2|§51.2]], applied to this field, says that the only field on $N$ that is $F$-related to $[\mathbf{X}_1, \mathbf{X}_2]$ is $F_\ast[\mathbf{X}_1, \mathbf{X}_2]$. Both $[F_\ast\mathbf{X}_1, F_\ast\mathbf{X}_2]$ and $F_\ast[\mathbf{X}_1, \mathbf{X}_2]$ are such fields, so they are equal.
+
 ^pf-51-4
 
 *Uses:* [[§51 Related Vector Fields#^prop-51-3|§51.3]], [[§51 Related Vector Fields#^prop-51-2|§51.2]], [[§51 Related Vector Fields#^def-51-1|Def. §51.1]], [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]]

@@ -72,6 +72,7 @@ Commutativity means: apply $F$ and then take coordinates, or take coordinates an
 > $$
 >
 > and $K'K^{-1} : \mathbb{R}^n \to \mathbb{R}^n$, $LL'^{-1} : \mathbb{R}^m \to \mathbb{R}^m$ are linear isomorphisms, being composites of linear isomorphisms, hence smooth: by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3) each component of a linear map $\mathbb{R}^m \to \mathbb{R}^m$ is a linear function $\sum_j a_{ij} r^j$ of the coordinates, a polynomial. A composite of smooth maps between Euclidean spaces is smooth (chain rule), so $\widetilde F'$ is smooth.
+
 ^pf-22-1
 
 *Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
@@ -91,6 +92,7 @@ Commutativity means: apply $F$ and then take coordinates, or take coordinates an
 > *The smooth structure.* A single chart is an atlas (Example [[§17 Differentiable Structures#^ex-17-1|§17.1]]), so by Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] the one-chart atlas $\{(X,L)\}$ determines a smooth structure, the unique maximal atlas $\overline{\{(X,L)\}}$ of charts compatible with $(X, L)$. It is the same structure for every $L$, by compatibility: $(X, L')$ is compatible with $(X, L)$, so $\overline{\{(X,L)\}}$ is a maximal atlas containing $\{(X, L')\}$, and by the uniqueness in Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] it equals $\overline{\{(X,L')\}}$.
 >
 > *Smooth maps.* For the last claim, the coordinate representation of $F$ in the linear charts $L$ and $K$ is precisely $K \circ F \circ L^{-1} = \widetilde F$. If $F$ is smooth in the sense of Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]], then $F = K^{-1} \circ \widetilde F \circ L$ is continuous, as a composite of continuous maps, and at every $p \in X$ the charts $(X, L) \ni p$ and $(Y, K)$, with $F(X) \subseteq Y$, have smooth coordinate representation $\widetilde F$; so $F$ is smooth in the sense of Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. Conversely, if $F$ is smooth in the sense of Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]], then by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], applied to the smooth charts $(X, L)$ and $(Y, K)$ with $F(X) \subseteq Y$, the coordinate representation $K \circ F \circ L^{-1} = \widetilde F$ is smooth; so $F$ is smooth in the sense of Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]].
+
 ^pf-22-2
 
 *Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
@@ -164,6 +166,7 @@ Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the 
 > $$
 >
 > The second expression for $dF_p(v)$ is the definition of the derivative of the $Y$-valued curve $t \mapsto F(p+tv)$ at $t = 0$. The right-hand side of the displayed formula makes no reference to $L$ or $K$, so neither does $dF_p$: two choices of linear coordinates give linear maps with the same value at every $v$, hence the same map.
+
 ^pf-22-3
 
 *Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[Multivariable Chain Rule|452 §12.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]]
@@ -201,6 +204,7 @@ Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the 
 > *Independence of coordinates.* The top arrow is independent of coordinates by Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], so surjectivity of $\widetilde F'(\tilde p)$ is too: if it holds for one choice $L, K$, then $dF_p$ is surjective, and by the previous paragraph applied to any other choice $L', K'$, the Jacobian of $K' F L'^{-1}$ at $L'(p)$ is surjective as well.
 >
 > *Regular values.* Read in linear coordinates, $c$ is a regular value of $F$ when $K(c)$ is a regular value of $\widetilde F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]): $\widetilde F'(\tilde q)$ is surjective at every $\tilde q \in \widetilde F^{-1}(K(c))$ (Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]]). These points are exactly the $\tilde q = L(q)$ with $q \in F^{-1}(c)$, since $\widetilde F(L(q)) = K(F(q))$ equals $K(c)$ iff $F(q) = c$ ($K$ is injective) and $L$ is a bijection. By the equivalence above at each such $q$, $c$ is a regular value iff $dF_q$ is surjective for every $q \in F^{-1}(c)$, a statement that involves no bases.
+
 ^pf-22-4
 
 *Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]

@@ -116,6 +116,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > $$
 >
 > a composite of continuous maps ($\varphi$ is a homeomorphism onto $\varphi(U)$, the middle map is smooth, and $\tilde\varphi^{-1}$ is continuous by Proposition [[§45 The Tangent Bundle#^prop-45-1|§45.1]]). So Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] holds at every $p \in U$ with the charts $(U, \varphi)$ and $(TU, \tilde\varphi)$: $\mathbf{X}$ is smooth on $U$.
+
 ^pf-48-1
 
 *Uses:* [[§48 Vector Fields#^def-48-1|Def. §48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§45 The Tangent Bundle#^def-45-4|Def. §45.4]], [[§45 The Tangent Bundle#^prop-45-2|§45.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§45 The Tangent Bundle#^def-45-5|Def. §45.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§45 The Tangent Bundle#^prop-45-1|§45.1]]
@@ -235,6 +236,7 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 > $$
 >
 > Both identities hold at every $p$, so they hold as identities of functions, and $D_\mathbf{X}$ is a derivation of $C^\infty(M)$.
+
 ^pf-48-3
 
 *Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^def-48-2|Def. §48.2]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§27 Germs#^prop-27-2|§27.2]]
@@ -338,6 +340,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > $V \cap U$ is open, contains $p$, and lies in the intersection $M \cap U$ of the two domains, so $(\tilde f, M) \sim (f, U)$ (Definition [[§27 Germs#^def-27-1|§27.1]]), that is, $[\tilde f] = [f] = \gamma$.
 >
 > *In particular.* Every germ $\gamma$ at $p$ has some representative $f \in C^\infty(U)$ with $U \ni p$ open (Definition [[§27 Germs#^def-27-2|§27.2]]), and a bump function at $p$ subordinate to $U$ exists by Proposition [[§48 Vector Fields#^prop-48-4|§48.4]]; so the construction applies to every germ.
+
 ^pf-48-5
 
 *Uses:* [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^def-48-7|Def. §48.7]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§48 Vector Fields#^prop-48-4|§48.4]]
@@ -368,6 +371,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > $$
 >
 > As $p \in U$ was arbitrary, $(Dh)|_U = 0$, and therefore $(Df)|_U = (Dg)|_U$.
+
 ^pf-48-6
 
 *Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^def-48-6|Def. §48.6]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^def-48-7|Def. §48.7]], [[§48 Vector Fields#^prop-48-4|§48.4]]
@@ -438,6 +442,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > $$
 >
 > So $\mathbf{X}_p$ and $\mathbf{Y}_p$ agree on every germ, $\mathbf{X}_p = \mathbf{Y}_p$, for every $p$; that is, $\mathbf{X} = \mathbf{Y}$.
+
 ^pf-48-7
 
 *Uses:* [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§48 Vector Fields#^lem-48-6|§48.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^prop-48-4|§48.4]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
@@ -465,6 +470,7 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 > $$
 >
 > and $\mathbf{X}\tilde x^j$ is smooth on $M$ by hypothesis, since $\tilde x^j \in C^\infty(M)$; so each $\mathbf{X}^j$ is smooth on $V$. So $\mathbf{X}$ is smooth on $V$, by Proposition [[§48 Vector Fields#^prop-48-1|§48.1]]; $p$ was arbitrary.
+
 ^pf-48-8
 
 *Uses:* [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^def-48-9|Def. §48.9]], [[§48 Vector Fields#^prop-48-4|§48.4]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]

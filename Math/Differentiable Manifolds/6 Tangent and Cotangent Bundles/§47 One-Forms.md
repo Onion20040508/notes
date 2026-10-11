@@ -84,6 +84,7 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 > *If $\theta$ is smooth on $U$,* then its coordinate representation in these charts is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]), so every $\theta_j \circ \varphi^{-1}$ is smooth on $\varphi(U)$; this is the coordinate representation $(\theta_j)_\varphi$ of $\theta_j$, so $\theta_j$ is smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], with the chart $(U, \varphi)$ at every point).
 >
 > *If every $\theta_j$ is smooth on $U$,* then each $\theta_j \circ \varphi^{-1}$ is smooth on $\varphi(U)$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], applied on the manifold $U$ with its chart $(U, \varphi)$), so the coordinate representation above is smooth. Moreover $\theta|_U$ is continuous: it equals $\hat\varphi^{-1} \circ (\hat\varphi \circ \theta \circ \varphi^{-1}) \circ \varphi$, a composite of continuous maps ($\hat\varphi$ is a homeomorphism by Proposition [[§46 The Cotangent Bundle#^prop-46-1|§46.1]]). So $\theta$ is smooth on $U$ by Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]], using these two charts at every point of $U$.
+
 ^pf-47-1
 
 *Uses:* [[§47 One-Forms#^def-47-1|Def. §47.1]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^cor-32-4|§32.4]], [[§46 The Cotangent Bundle#^def-46-1|Def. §46.1]], [[§46 The Cotangent Bundle#^prop-46-2|§46.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§46 The Cotangent Bundle#^prop-46-1|§46.1]]
@@ -129,6 +130,7 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 > $$
 >
 > These are Corollary [[§32 The Cotangent Space#^cor-32-5|§32.5]](1) and (2) at the point $p$. As $p$ and $v$ were arbitrary, $d(af + bg) = a\, df + b\, dg$ and $d(fg) = f\, dg + g\, df$.
+
 ^pf-47-2
 
 *Uses:* [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§47 One-Forms#^def-47-1|Def. §47.1]], [[§47 One-Forms#^prop-47-1|§47.1]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§32 The Cotangent Space#^cor-32-5|§32.5]]
@@ -177,6 +179,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 > $$
 >
 > and $W$ has at least one point. So no such $f$ exists.
+
 ^pf-47-3
 
 *Uses:* [[§47 One-Forms#^prop-47-2|§47.2]], [[§47 One-Forms#^prop-47-1|§47.1]], [[§47 One-Forms#^ex-47-1|Ex. §47.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]
@@ -247,6 +250,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 > *Right side.* By Definition [[§47 One-Forms#^def-47-3|§47.3]], $F^{\ast}f = f \circ F$, which is smooth on $M$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]); so $d(F^{\ast}f)$ is a one-form on $M$ (Proposition [[§47 One-Forms#^prop-47-2|§47.2]]) with value $d(f \circ F)_p$ at $p$.
 >
 > *Comparison.* Proposition [[§32 The Cotangent Space#^prop-32-11|§32.11]], applied to this $F$, the point $p$, and $f$ (smooth on $N$, so in particular near $F(p)$), gives $F_p^{\ast}\big(df_{F(p)}\big) = d(f \circ F)_p$ in $T_p^{\ast}M$. So the two sides agree at $p$, and $p$ was arbitrary.
+
 ^pf-47-4
 
 *Uses:* [[§47 One-Forms#^def-47-3|Def. §47.3]], [[§47 One-Forms#^def-47-4|Def. §47.4]], [[§47 One-Forms#^prop-47-2|§47.2]], [[§32 The Cotangent Space#^prop-32-11|§32.11]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]
@@ -278,6 +282,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 > The two covectors agree on every basis vector, so they are equal; as $p \in U$ was arbitrary, the identity holds on $U$.
 >
 > *Smoothness.* Let $\theta$ be smooth. By Proposition [[§47 One-Forms#^prop-47-1|§47.1]] the $\theta_j$ are smooth on $V$, so $\theta_j \circ F$ is smooth on $U$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], with $F|_U : U \to V$). By Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], $F^j \circ \varphi^{-1} = \tilde F^j$, a component of the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$, which is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]); so $(\partial F^j/\partial x^i) \circ \varphi^{-1} = \partial \tilde F^j/\partial r^i$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]) is smooth on $\varphi(U)$, and $\partial F^j/\partial x^i$ is smooth on $U$. Sums and products of smooth functions are smooth, so each $c_i$ is smooth on $U$, and $F^{\ast}\theta$ is smooth on $U$ by Proposition [[§47 One-Forms#^prop-47-1|§47.1]]. Every $p \in M$ lies in such a $U$ (a chart at $p$ shrunk into $F^{-1}(V)$ for a chart $(V, \psi)$ at $F(p)$), so $F^{\ast}\theta$ is smooth on $M$.
+
 ^pf-47-5
 
 *Uses:* [[§47 One-Forms#^def-47-4|Def. §47.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^cor-32-4|§32.4]], [[§47 One-Forms#^prop-47-1|§47.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]

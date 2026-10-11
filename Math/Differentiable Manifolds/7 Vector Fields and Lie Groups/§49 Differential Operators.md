@@ -51,6 +51,7 @@ tags: [differentiable-manifolds, math591]
 > *(2)* Applying $m_g$ to the constant function $1$: $m_g(1) = g \cdot 1 = g$. So if $m_g = m_h$, then $g = m_g(1) = m_h(1) = h$.
 >
 > *The final sentence.* By (1), $g \mapsto m_g$ sends sums to sums, products to composites, and the unit $1$ to the unit $\mathrm{id}$, so it is a ring homomorphism; by (2) it is injective. Its image is commutative because $C^\infty(M)$ is, $gh = hg$ pointwise: by (1), $m_g \circ m_h = m_{gh} = m_{hg} = m_h \circ m_g$.
+
 ^pf-49-1
 
 *Uses:* [[§49 Differential Operators#^def-49-1|Def. §49.1]], [[§48 Vector Fields#^def-48-4|Def. §48.4]]
@@ -93,6 +94,7 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 > $$
 >
 > The third equality uses $g\, D_\mathbf{X} f = m_g(D_\mathbf{X} f)$ and $f\, D_\mathbf{X} g = (\mathbf{X}g)\, f = m_{\mathbf{X}g} f$, with $\mathbf{X}g = D_\mathbf{X} g \in C^\infty(M)$; the last is the pointwise sum of operators. As $f$ was arbitrary, $D_\mathbf{X} \circ m_g = m_g \circ D_\mathbf{X} + m_{\mathbf{X}g}$.
+
 ^pf-49-2
 
 *Uses:* [[§48 Vector Fields#^def-48-3|Def. §48.3]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§49 Differential Operators#^def-49-1|Def. §49.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
@@ -132,6 +134,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > and $m_1 = \mathrm{id}$ (Proposition [[§49 Differential Operators#^prop-49-1|§49.1]](1)). Subtracting $m_x \circ \partial$ gives $\partial \circ m_x - m_x \circ \partial = \mathrm{id}$. Applied to $f$ this reads $(xf)' - xf' = f$, the product rule $(xf)' = f + xf'$.
 >
 > *The two consequences.* $\mathrm{Diff}(\mathbb{R})$ is not commutative, because $\partial \circ m_x \ne m_x \circ \partial$: their difference $\mathrm{id}$ sends the constant function $1$ to $1 \ne 0$. And the operator $\partial \circ m_x - m_x \circ \partial$ has order $0$ (Definition [[§49 Differential Operators#^def-49-3|§49.3]]): it equals $\mathrm{id}$, the empty composite ($r = 0$), so it lies in $\mathrm{Diff}_0(\mathbb{R})$; and it is not in $\mathrm{Diff}_{-1}(\mathbb{R}) = \{0\}$, being nonzero.
+
 ^pf-ex-49-2
 
 *Uses:* [[§49 Differential Operators#^prop-49-2|§49.2]], [[§49 Differential Operators#^prop-49-1|§49.1]], [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§48 Vector Fields#^lem-48-3|§48.3]]
@@ -191,6 +194,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > and then $D_\mathbf{X} = P - m_g = P - m_{P(1)}$. If also $P = m_h + D_\mathbf{Y}$, the same computation gives $h = P(1) = g$ and $D_\mathbf{Y} = P - m_{P(1)} = D_\mathbf{X}$, and $D_\mathbf{Y} = D_\mathbf{X}$ forces $\mathbf{Y} = \mathbf{X}$ by the uniqueness in Proposition [[§48 Vector Fields#^prop-48-7|§48.7]].
 >
 > For the last sentence. *Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:* a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition [[§48 Vector Fields#^prop-48-7|§48.7]]); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (4), and $D_\mathbf{X}(1) = 0$ as just shown. *Conversely*, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (4); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]).
+
 ^pf-49-3
 
 *Uses:* [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^prop-49-1|§49.1]], [[§49 Differential Operators#^prop-49-2|§49.2]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§49 Differential Operators#^def-49-2|Def. §49.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§48 Vector Fields#^def-48-2|Def. §48.2]]
@@ -247,6 +251,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > $$
 >
 > As $p$ and $\beta$ were arbitrary, all $c_\beta = 0$. Applied to the difference of two expressions for $P$, $(Pf)|_U = \sum a_\alpha\, \partial^\alpha (f|_U) = \sum a'_\alpha\, \partial^\alpha (f|_U)$, with $c_\alpha = a_\alpha - a'_\alpha$, this gives $a_\alpha = a'_\alpha$ for every $\alpha$: uniqueness.
+
 ^pf-49-4
 
 *Uses:* [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^def-49-4|Def. §49.4]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
@@ -278,6 +283,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > *$\mathrm{Diff}(\mathbb{R}^m)$.* Since $\mathrm{Diff}(\mathbb{R}^m) = \bigcup_k \mathrm{Diff}_k(\mathbb{R}^m)$ (Proposition [[§49 Differential Operators#^prop-49-3|§49.3]](1)), the differential operators are exactly the finite expressions $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients.
 >
 > *The order.* Let $P \in \mathrm{Diff}_k(\mathbb{R}^m)$ with its unique coefficients $a_\alpha$, $|\alpha| \le k$. For $-1 \le j \le k$: $P \in \mathrm{Diff}_j(\mathbb{R}^m)$ if and only if $a_\alpha = 0$ for all $|\alpha| > j$. Indeed, if $P \in \mathrm{Diff}_j(\mathbb{R}^m)$, its expansion with $|\alpha| \le j$ (by $\subseteq$; for $j = -1$, $P = 0$ with the empty expansion), padded with zero coefficients for $j < |\alpha| \le k$, is an expansion with $|\alpha| \le k$, so by uniqueness it equals $(a_\alpha)$, and $a_\alpha = 0$ for $|\alpha| > j$. Conversely, if $a_\alpha = 0$ for $|\alpha| > j$, then $P = \sum_{|\alpha| \le j} a_\alpha\, \partial^\alpha \in \mathrm{Diff}_j(\mathbb{R}^m)$ by $\supseteq$ (for $j = -1$, $P = 0$). So for $P \ne 0$, with $\ell$ the largest $|\alpha|$ such that $a_\alpha \ne 0$, $P \in \mathrm{Diff}_\ell(\mathbb{R}^m)$ and $P \notin \mathrm{Diff}_{\ell - 1}(\mathbb{R}^m)$: $P$ has order $\ell$ (Definition [[§49 Differential Operators#^def-49-3|§49.3]]).
+
 ^pf-49-5
 
 *Uses:* [[§49 Differential Operators#^prop-49-4|§49.4]], [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^def-49-4|Def. §49.4]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§49 Differential Operators#^prop-49-3|§49.3]]

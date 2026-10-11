@@ -77,6 +77,7 @@ tags: [differentiable-manifolds, math591]
 > $$
 >
 > So $T_pM$ is a linear subspace of the space of all maps $C_p^\infty(M) \to \mathbb{R}$, and the vector space axioms hold in it pointwise.
+
 ^pf-def-28-2
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]
@@ -122,6 +123,7 @@ tags: [differentiable-manifolds, math591]
 > $$
 >
 > *$I_p^2 \subseteq I_p$.* Each product $[u][w]$ with $[u], [w] \in I_p$ lies in $I_p$, since $u(p)w(p) = 0 \cdot 0 = 0$; and $I_p$ is closed under finite sums, being a subspace. So every element $\sum_k [u_k][w_k]$ of $I_p^2$ lies in $I_p$.
+
 ^pf-28-1
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]]
@@ -157,6 +159,7 @@ tags: [differentiable-manifolds, math591]
 > $$
 > D\Big(\sum_k [u_k][w_k]\Big) = \sum_k D\big([u_k][w_k]\big) = \sum_k 0 = 0 .
 > $$
+
 ^pf-28-2
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]]
@@ -201,6 +204,7 @@ Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is �
 > $$
 >
 > using $\tilde f(p) = f(p)$ and $\tilde g(p) = g(p)$. Finally $v_D = v$: a global $f$ is itself a global representative of its germ, so $v_D(f) = D[f] = v(f)$.
+
 ^pf-28-3
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§27 Germs#^prop-27-2|§27.2]]
@@ -253,6 +257,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 > *Evaluation.* $(g \circ F)(p) = g(F(p))$ by definition of composition; this is the displayed formula, since the value of the germ $F_p^{\ast}[g] = [g \circ F]$ at $p$ is $(g \circ F)(p)$ (Definition [[§27 Germs#^def-27-3|§27.3]]).
 >
 > *In particular.* If $[g] \in I_{F(p)}$, i.e. $g(F(p)) = 0$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-3|§28.3]]), then by the evaluation formula $(F_p^{\ast}[g])(p) = g(F(p)) = 0$, so $F_p^{\ast}[g] \in I_p$.
+
 ^pf-28-4
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§27 Germs#^def-27-3|Def. §27.3]]
@@ -321,6 +326,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 > $$
 >
 > The two derivations agree on every germ, so $F_{\ast p}(D + \lambda D') = F_{\ast p}D + \lambda\, F_{\ast p}D'$.
+
 ^pf-28-5
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
@@ -370,6 +376,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > The first equality is Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] for $G \circ F$ at $p$; the second is the reversal just shown; the third is Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] for $F$ at $p$, applied to the germ $G_{F(p)}^{\ast}[g]$ at $F(p)$; the fourth is Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] for $G$ at $F(p)$, applied to the derivation $F_{\ast p}D \in T_{F(p)}N$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]).
 >
 > *Identity.* The identity pulls back every germ to itself, $(\mathrm{id}_M)_p^{\ast}[f] = [f \circ \mathrm{id}_M] = [f]$, so it pushes every derivation to itself: $\big((\mathrm{id}_M)_{\ast p}D\big)[f] = D\big((\mathrm{id}_M)_p^{\ast}[f]\big) = D[f]$ for every germ $[f]$ at $p$, i.e. $(\mathrm{id}_M)_{\ast p}D = D$.
+
 ^pf-28-6
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
@@ -399,6 +406,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > $$
 >
 > So $\Phi_{\ast p}$ has the two-sided inverse $(\Phi^{-1})_{\ast \Phi(p)}$; a linear bijection is a linear isomorphism.
+
 ^pf-28-7
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
@@ -426,6 +434,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > $$
 >
 > The two assignments are mutually inverse: $\iota_{\ast p}(E \circ \rho) = E \circ \rho \circ \iota_p^{\ast} = E$ and $(\iota_{\ast p}D) \circ \rho = D \circ \iota_p^{\ast} \circ \rho = D$. So $\iota_{\ast p}$ is a bijection; it is linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]].
+
 ^pf-28-8
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
@@ -451,6 +460,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > which is smooth; so both are smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), and $\varphi$ is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
 >
 > *The isomorphism.* The isomorphism is then Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] followed by Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]: the first identifies $T_pM$ with $T_pU$ by the linear isomorphism $\iota_{\ast p}$; the second, applied to the diffeomorphism $\Phi = \varphi : U \to \varphi(U)$, says that $\varphi_{\ast p} : T_pU \to T_{\varphi(p)}\varphi(U)$ is a linear isomorphism with inverse $(\varphi^{-1})_{\ast \varphi(p)}$.
+
 ^pf-28-9
 
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]

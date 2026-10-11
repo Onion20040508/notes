@@ -68,6 +68,7 @@ The explicit formula is the definition of the pushforward: $\gamma_{\ast 0}(d/dt
 > Substituting into the universal formula gives the displayed formula.
 >
 > *Dependence on the coordinate curve.* By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](2), $x^j = r^j \circ \varphi$, so $x^j \circ \gamma = r^j \circ (\varphi \circ \gamma)$ is the $j$-th component of the coordinate curve $\varphi \circ \gamma$, and $(x^j \circ \gamma)'(0)$ is the $j$-th component of $(\varphi \circ \gamma)'(0) \in \mathbb{R}^n$. So all the coefficients of $D_\gamma$ are read off from $(\varphi \circ \gamma)'(0)$, and two curves through $p$ with the same velocity of their coordinate curves have the same $D_\gamma$.
+
 ^pf-31-1
 
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]]
@@ -127,6 +128,7 @@ Assignment 3's solution first treats the basis vectors $\partial/\partial x^i|_p
 > $$
 >
 > *Consequence.* Let $D \in T_pM$ and let $\gamma$ be any smooth curve with $\gamma(0) = p$ and $D_\gamma = D$; such a curve exists by Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]]. Then, by the identity just proved, $F_{\ast p}(D) = F_{\ast p}(D_\gamma) = D_{F \circ \gamma}$.
+
 ^pf-31-3
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]
@@ -208,6 +210,7 @@ Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_
 > *$\Theta$ is an isomorphism with inverse $\Psi$.* Both spaces have dimension $m_1 + m_2$: $\dim T_{p_i}M_i = m_i$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), so $\dim(T_{p_1}M_1 \oplus T_{p_2}M_2) = m_1 + m_2$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-7|§21.7]](2)); and $M_1 \times M_2$ has dimension $m_1 + m_2$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]), so $\dim T_p(M_1 \times M_2) = m_1 + m_2$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]). An injective linear map between spaces of the same finite dimension is bijective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)). So $\Theta$ is an isomorphism, and composing $\Psi \circ \Theta = \mathrm{id}$ on the right with $\Theta^{-1}$ gives $\Psi = \Theta^{-1}$.
 >
 > *The last sentence.* $\iota_{1\ast }v = \iota_{1\ast }v + \iota_{2\ast }0 = \Theta(v, 0)$, and $\pi_{1\ast }\iota_{1\ast } = \mathrm{id}$, so $\iota_{1\ast }$ is injective (if $\iota_{1\ast }v = 0$ then $v = \pi_{1\ast }\iota_{1\ast }v = 0$); likewise $\iota_{2\ast }w = \Theta(0, w)$ and $\pi_{2\ast }\iota_{2\ast } = \mathrm{id}$ make $\iota_{2\ast }$ injective. So the images of $\iota_{1\ast }$ and $\iota_{2\ast }$ are $\Theta(T_{p_1}M_1 \oplus \{0\})$ and $\Theta(\{0\} \oplus T_{p_2}M_2)$. By Proposition [[§21 Linear Algebra Toolkit#^prop-21-7|§21.7]](1), $T_{p_1}M_1 \oplus T_{p_2}M_2$ is the internal direct sum of $T_{p_1}M_1 \oplus \{0\}$ and $\{0\} \oplus T_{p_2}M_2$; carried across the isomorphism $\Theta$: every $D \in T_p(M_1 \times M_2)$ is $D = \Theta(\Psi D) = \Theta(v, 0) + \Theta(0, w)$ with $(v, w) = \Psi(D)$, and if also $D = \Theta(v', 0) + \Theta(0, w')$, then $\Theta(v, w) = \Theta(v', w')$ and injectivity gives $(v, w) = (v', w')$. So $T_p(M_1 \times M_2)$ is the internal direct sum of the two images (Definition [[§21 Linear Algebra Toolkit#^def-21-8|§21.8]]).
+
 ^pf-31-4
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§21 Linear Algebra Toolkit#^prop-21-7|§21.7]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§21 Linear Algebra Toolkit#^def-21-7|Def. §21.7]], [[§21 Linear Algebra Toolkit#^def-21-8|Def. §21.8]]
@@ -268,6 +271,7 @@ to push $v$ forward, restrict $f$ to the slice $M_1 \times \{p_2\}$ and differen
 > $$
 >
 > *The bases.* The $\partial/\partial x^i|_{p_1}$ form a basis of $T_{p_1}M_1$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), and $\iota_{1\ast }$ is linear and injective (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). An injective linear map carries a basis of its domain to a basis of its image (the images span the image, and a linear relation among them pulls back to one among the originals). So the $\partial/\partial x^i|_p = \iota_{1\ast }(\partial/\partial x^i|_{p_1})$ form a basis of the first summand $\iota_{1\ast }(T_{p_1}M_1)$; in the same way, with $\iota_{2\ast }$ and the basis $\partial/\partial y^j|_{p_2}$ of $T_{p_2}M_2$, the $\partial/\partial y^j|_p$ form a basis of the second summand.
+
 ^pf-31-5
 
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]
@@ -291,6 +295,7 @@ to push $v$ forward, restrict $f$ to the slice $M_1 \times \{p_2\}$ and differen
 > $$
 >
 > *Horizontal curves.* If $\gamma_2$ is constant, $\gamma_2(t) = p_2$, then for every germ $[g]$ at $p_2$, by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]], $D_{\gamma_2}[g] = \frac{d}{dt}\big|_{t=0}\, g(p_2) = 0$, the derivative of a constant; so $D_{\gamma_2} = 0$, and $D_\gamma = \iota_{1\ast }D_{\gamma_1} + \iota_{2\ast }0 = \iota_{1\ast }D_{\gamma_1}$ lies in the first summand.
+
 ^pf-31-6
 
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]

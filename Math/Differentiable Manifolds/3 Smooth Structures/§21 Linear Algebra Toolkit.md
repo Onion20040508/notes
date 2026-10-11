@@ -92,12 +92,16 @@ tags: [differentiable-manifolds, math591]
 > $$
 >
 > for every $j$; so they are independent. Being independent and spanning, the $n$ covectors $\varepsilon^1, \ldots, \varepsilon^n$ form a basis of $V^{\ast}$, and $\dim V^{\ast} = n = \dim V$.
+
 ^pf-21-2
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Linear map lemma|LADR 3.4]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]]
 
 > [!remark]- Connections
 > - Home: [[§12 Duality#^ladr-3-114|LADR 3.114 (dual basis gives coefficients)]], [[§12 Duality#^ladr-3-116|LADR 3.116 (dual basis is a basis of the dual space)]], [[§12 Duality#^ladr-3-111|LADR 3.111]].
+> - Applied to $V = T_pM$ with the coordinate basis $e_j = \partial/\partial x^j|_p$: the dual basis is $\varepsilon^i = dx^i|_p$, the differentials of the coordinate functions. This identification is **not** a consequence of duality — the $dx^i|_p$ are defined independently, as differentials ([[§32 The Cotangent Space#^def-32-5|Def. §32.5]]), and the relation $dx^i|_p(\partial/\partial x^j|_p) = \delta^i_j$ is computed from $df_p(D) = D[f]$ and $x^i \circ \varphi^{-1} = r^i$ in Step 1 of [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3]]. Everything after that is this proposition.
+> - The second formula, $\lambda = \sum_i \lambda(e_i)\,\varepsilon^i$, with $\lambda = \alpha \in T_p^{\ast}M$: the components $\xi_i = \alpha(\partial/\partial x^i|_p)$ of a covector, [[§32 The Cotangent Space#^cor-32-4|Cor. §32.4]].
+> - Those components are the fibre coordinates of the standard chart $(p, \alpha) \mapsto (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$, [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]]; the first formula, $v = \sum_i \varepsilon^i(v)\,e_i$, gives the fibre coordinates of $TM$ in the same way, [[§45 The Tangent Bundle#^def-45-5|Def. §45.5]].
 
 > [!theorem] Proposition §21.3: The Double Dual
 > For a finite-dimensional $V$, the map
@@ -140,6 +144,7 @@ tags: [differentiable-manifolds, math591]
 > so $\iota(v) \ne 0$.
 >
 > *$\iota$ is an isomorphism.* By Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] applied to $V$, $\dim V^{\ast} = \dim V$, and applied again to the finite-dimensional space $V^{\ast}$, $\dim V^{\ast \ast } = \dim V^{\ast}$. So $\iota : V \to V^{\ast \ast }$ is an injective linear map between spaces of the same finite dimension, hence bijective by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1), i.e. a linear isomorphism.
+
 ^pf-21-3
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Every linearly independent list extends to a basis|LADR 2.32]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]]
@@ -204,6 +209,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 > By the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], applied to the covector $A^{\ast}(\varphi^k) \in V^{\ast}$, $A^{\ast}(\varphi^k) = \sum_j A^{\ast}(\varphi^k)(e_j)\,\varepsilon^j = \sum_j a_{kj}\,\varepsilon^j$. By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), the $k$-th column of the matrix of $A^{\ast}$ (in the bases $(\varphi^k)$ of $W^{\ast}$ and $(\varepsilon^j)$ of $V^{\ast}$) holds the coordinates of $A^{\ast}(\varphi^k)$, namely $a_{k1}, \ldots, a_{km}$. The $k$-th column of the matrix of $A^{\ast}$ is therefore the $k$-th row of $[A]$: the matrix of $A^{\ast}$ is $[A]^{\mathsf T}$.
 >
 > *(3)* By (2) and Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), $\operatorname{rank} A^{\ast} = \operatorname{rank} [A]^{\mathsf T} = \operatorname{rank} [A] = \operatorname{rank} A$. Also $\dim W^{\ast} = \dim W$ and $\dim V^{\ast} = \dim V$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]). A linear map is surjective exactly when its rank, the dimension of its image, equals the dimension of its target (a subspace of full dimension is the whole space), and injective exactly when its kernel is $0$, which by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) means its rank equals the dimension of its source. Now $A$ is surjective iff $\operatorname{rank} A = \dim W$, iff $\operatorname{rank} A^{\ast} = \dim W^{\ast}$, which by rank–nullity for $A^{\ast} : W^{\ast} \to V^{\ast}$ means $A^{\ast}$ is injective. Likewise $A$ is injective iff $\operatorname{rank} A = \dim V = \dim V^{\ast}$, iff $\operatorname{rank} A^{\ast} = \dim V^{\ast}$, iff $A^{\ast}$ is surjective.
+
 ^pf-21-4
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-3|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]]
@@ -251,6 +257,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 > *The isomorphisms.* Hence $\dim V = \dim W = n$, and also $\dim V^{\ast} = \dim W^{\ast} = n$. So $B^\flat : V \to W^{\ast}$ and $B^\sharp : W \to V^{\ast}$ are injective maps between spaces of equal finite dimension $n$, hence isomorphisms by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1).
 >
 > *The case $W$ finite-dimensional.* This is the case above after the renaming that swaps the two arguments: put $B'(w, v) = B(v, w)$, a bilinear pairing $W \times V \to \mathbb{R}$. Then $B'^\flat(w) = B'(w, \cdot\,) = B(\cdot\,, w) = B^\sharp(w)$ and $B'^\sharp(v) = B'(\cdot\,, v) = B(v, \cdot\,) = B^\flat(v)$, so $B'$ is non-degenerate because $B$ is, and the case already proved, applied to $B'$ with $W$ in the role of $V$, gives $\dim W = \dim V$ and that $B'^\flat = B^\sharp$ and $B'^\sharp = B^\flat$ are isomorphisms.
+
 ^pf-21-5
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
@@ -307,6 +314,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 > $$
 > \dim V = \dim \ker \pi + \operatorname{rank} \pi = \dim W + \dim V/W .
 > $$
+
 ^pf-21-6
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-6|Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
@@ -366,6 +374,7 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 > $$
 >
 > *Independence.* If $\sum_i a^i (e_i, 0) + \sum_j b^j (0, f_j) = (0, 0)$, the same computation gives $\big(\sum_i a^i e_i,\ \sum_j b^j f_j\big) = (0, 0)$, so $\sum_i a^i e_i = 0$ in $V$ and $\sum_j b^j f_j = 0$ in $W$; by the independence of the two bases all $a^i$ and all $b^j$ vanish. So the $m + n$ vectors form a basis, and $\dim(V \oplus W) = m + n = \dim V + \dim W$.
+
 ^pf-21-7
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-7|Def. §21.7]], [[§21 Linear Algebra Toolkit#^def-21-8|Def. §21.8]]

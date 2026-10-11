@@ -42,6 +42,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 > The set $W_1 \cap W_2$ is open (an intersection of two open sets), contains $p$, and lies in both domains, $W_1 \cap W_2 \subseteq U \cap Z$. So $(f,U) \sim (h,Z)$.
 >
 > (2) If $(f_1,U_1), \ldots, (f_k,U_k)$ are equivalent, then for each $i$ there is an open $W_i \ni p$ with $W_i \subseteq U_1 \cap U_i$, on which $f_1 = f_i$ (since $(f_1,U_1) \sim (f_i,U_i)$). On $W = W_2 \cap \cdots \cap W_k$ (take $W = U_1$ if $k = 1$), which is open and contains $p$, all the $f_i$ equal $f_1$. Indeed $W \subseteq U_1 \cap U_2 \cap \cdots \cap U_k$, so every $f_i$ is defined on $W$, and for $x \in W$ and each $i$, $x \in W_i$ gives $f_i(x) = f_1(x)$. Both parts use only that a *finite* intersection of open sets is open.
+
 ^pf-27-1
 
 *Uses:* [[§27 Germs#^def-27-1|Def. §27.1]], [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]]
@@ -123,6 +124,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 > $$
 >
 > so evaluation is an $\mathbb{R}$-algebra homomorphism $C_p^\infty(M) \to \mathbb{R}$.
+
 ^pf-27-2
 
 *Uses:* [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§27 Germs#^prop-27-1|§27.1]]
@@ -202,6 +204,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 > $$
 >
 > again of that form. At $x_0$ every term contains a factor $h^{(j)}(q(x_0)) = h^{(j)}(0) = 0$, so $\partial^\alpha f(x_0) = 0$ for every $\alpha$.
+
 ^pf-ex-27-2
 
 *Uses:* [[§27 Germs#^def-27-2|Def. §27.2]], [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]

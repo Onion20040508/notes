@@ -132,6 +132,7 @@ The proof in one picture. The transition function between two graph charts facto
 > are inverse to each other, since $(\varphi_J \circ \varphi_{J'}^{-1}) \circ (\varphi_{J'} \circ \varphi_J^{-1}) = \varphi_J \circ \varphi_J^{-1} = \mathrm{id}$ and likewise in the other order. So the transition function is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), and the two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]).
 >
 > *Conclusion.* The charts $(U_J, \varphi_J)$ cover $M$ and are pairwise compatible, so they form an atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]). By Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] the atlas lies in a unique maximal atlas, which is a smooth structure on $M$ (Definition [[§17 Differentiable Structures#^def-17-9|§17.9]]). Its charts take values in $\mathbb{R}^I \cong \mathbb{R}^n$, so $M$ is a smooth manifold of dimension $n$, the dimension of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
+
 ^pf-20-2
 
 *Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§20 Manifolds in Euclidean Space#^ex-20-1|Ex. §20.1]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-9|Def. §17.9]]
@@ -205,6 +206,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > $$
 >
 > The map $G \circ \chi^{-1} = \mathrm{id} \circ G \circ \chi^{-1}$ is the coordinate representation of the smooth map $G : P \to \mathbb{R}^{n+k}$ in the charts $(V, \chi)$ and $(\mathbb{R}^{n+k}, \mathrm{id})$, hence smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]; and $\pi_I$ is linear, hence smooth. So $\varphi_J \circ G \circ \chi^{-1}$, a linear projection of a smooth map, is smooth, and the charts $(V, \chi)$ and $(U_J, \varphi_J)$ witness Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] at $q$.
+
 ^pf-20-3
 
 *Uses:* [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]

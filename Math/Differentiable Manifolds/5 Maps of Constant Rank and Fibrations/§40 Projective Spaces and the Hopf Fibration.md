@@ -60,6 +60,7 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 > is a composite of diffeomorphisms, a diffeomorphism onto the open set $U_i$, with inverse $\kappa \circ \varphi_i$. In particular $\pi$ is smooth on each of the open sets $U_i^\varepsilon$, which cover $S^n$; since smoothness is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), $\pi$ is smooth. For $x \in U_i^\varepsilon$ the neighbourhoods $U = U_i^\varepsilon$ of $x$ and $V = U_i$ of $\pi(x)$ satisfy Definition [[§33 Local Diffeomorphisms#^def-33-1|§33.1]], with local inverse $\kappa \circ \varphi_i$.
 >
 > *Exactly two-to-one.* The hemispheres cover $S^n$, as shown in the setup. Let $x \in S^n$. A point $y \in S^n$ has $\pi(y) = \pi(x)$ iff $y$ lies on the line through $x$, i.e. $y = \lambda x$ with $\lambda \in \mathbb{R}^\times$, and then $1 = |y| = |\lambda|$, so $\lambda = \pm 1$. Hence $\pi^{-1}(\pi(x)) = \{x, -x\}$, two distinct points since $x \neq 0$; in particular $\pi(x) = \pi(-x)$.
+
 ^pf-ex-40-1
 
 *Uses:* [[§33 Local Diffeomorphisms#^def-33-1|Def. §33.1]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
@@ -126,6 +127,7 @@ Stated in lecture as an example (“the projection you worked with from a sphere
 > the last step because $|z| = 1$. Conversely let $([w], \lambda) \in U_j \times S^1$ and $z = \psi_j([w], \lambda) = \lambda \hat w/|\hat w|$. Then $z$ is the nonzero multiple $\lambda/|\hat w|$ of $\hat w$, so it lies on the same complex line and $[z] = [\hat w] = [w]$; and its $j$-th entry is $z_j = \lambda/|\hat w|$, so $z_j/|z_j| = \lambda/|\lambda| = \lambda$. Hence $\phi_j(\psi_j([w], \lambda)) = ([w], \lambda)$.
 >
 > *Conclusion.* So $\phi_j$ is a smooth bijection with smooth inverse $\psi_j$, a diffeomorphism. Finally $\mathrm{pr}_1 \circ \phi_j(z) = [z] = \pi(z)$, by the definition of $\phi_j$. So each $\phi_j$ is a local trivialization, and $\pi$ is a fibration with fibre $S^1$.
+
 ^pf-ex-40-3
 
 *Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]
@@ -200,6 +202,7 @@ For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition 
 > $$
 >
 > So $\Psi_s$ is a smooth bijection with smooth inverse $\Theta = \Psi_s^{-1}$, a diffeomorphism.
+
 ^pf-40-1
 
 *Uses:* [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Ex. §40.3]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]
@@ -252,6 +255,7 @@ For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition 
 > So $\Psi_{s_i}^{-1}(z) = ([z], z_i/|z_i|)$, which is $\phi_i$ of Example [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|§40.3]].
 >
 > *No global section.* A global section $s$ is a local section over $U = \mathbb{CP}^n$, and then Proposition [[§40 Projective Spaces and the Hopf Fibration#^prop-40-1|§40.1]] makes $\Psi_s : \mathbb{CP}^n \times S^1 \to \pi^{-1}(\mathbb{CP}^n) = S^{2n+1}$ a diffeomorphism: $\pi$ would be globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$. That this is impossible for $n \ge 1$ is the fact of Remark [[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|remark]], which states directly that $\pi$ has no continuous section, and a smooth section is in particular continuous.
+
 ^pf-40-2
 
 *Uses:* [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Ex. §40.3]], [[§40 Projective Spaces and the Hopf Fibration#^prop-40-1|§40.1]], [[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|Remark: Sections Need Not Exist]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]]

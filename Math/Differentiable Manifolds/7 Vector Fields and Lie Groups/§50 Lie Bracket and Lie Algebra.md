@@ -73,6 +73,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > $$
 >
 > So $[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$. By Proposition [[§48 Vector Fields#^prop-48-7|§48.7]] it is the operator $D_\mathbf{Z}$ of a unique vector field $\mathbf{Z}$, and this field is again written $[\mathbf{X}, \mathbf{Y}]$.
+
 ^pf-50-1
 
 *Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^prop-48-7|§48.7]]
@@ -103,6 +104,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > $$
 >
 > By Lemma [[§48 Vector Fields#^lem-48-3|§48.3]] again, the right side is the field $a\, (\partial b/\partial x)\, \partial/\partial y - b\, (\partial a/\partial y)\, \partial/\partial x$ applied to $f$. So the two fields have the same operator, and the bracket is the stated first-order operator.
+
 ^pf-ex-50-1
 
 *Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§48 Vector Fields#^lem-48-3|§48.3]]
@@ -146,6 +148,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > $$
 > [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j \qquad \text{on } U.
 > $$
+
 ^pf-50-2
 
 *Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§50 Lie Bracket and Lie Algebra#^ex-50-1|Ex. §50.1]], [[§48 Vector Fields#^prop-48-4|§48.4]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
@@ -202,6 +205,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 > $$
 >
 > In the sum of the three lines, each of the six words appears once with each sign: $XYZ$ with $+$ in the first and $-$ in the third; $XZY$ with $-$ in the first and $+$ in the second; $YZX$ with $-$ in the first and $+$ in the second; $ZYX$ with $+$ in the first and $-$ in the third; $YXZ$ with $-$ in the second and $+$ in the third; $ZXY$ with $-$ in the second and $+$ in the third. So the sum is $0$, and $(A, [\cdot,\cdot])$ is a Lie algebra.
+
 ^pf-50-3
 
 *Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]]
@@ -245,6 +249,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 > $$
 >
 > By injectivity each identity holds between the fields themselves; in particular the Jacobi identity holds on $\mathfrak{X}(M)$.
+
 ^pf-50-4
 
 *Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]], [[§50 Lie Bracket and Lie Algebra#^prop-50-3|§50.3]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^def-48-4|Def. §48.4]], [[§48 Vector Fields#^def-48-2|Def. §48.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
@@ -334,6 +339,7 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 > $$
 >
 > Since the hat map is linear and injective, each equality between hats is the corresponding equality in $\mathbb{R}^3$. So $(\mathbb{R}^3, \times)$ is a Lie algebra, and the hat map, a linear bijection with $\widehat{a \times b} = [\hat a, \hat b]$, is an isomorphism of Lie algebras onto $\operatorname{Skew}(3,\mathbb{R})$.
+
 ^pf-ex-50-3
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]], [[§50 Lie Bracket and Lie Algebra#^ex-50-2|Ex. §50.2]], [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]]

@@ -94,6 +94,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > $$
 >
 > So $C_q Q = Q R(\theta)$ with $R(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{pmatrix}$, i.e. $C_q = Q R(\theta) Q^{\mathsf T}$: by Example [[§25 The Geometric Tangent Space#^ex-25-4|§25.4]] this is the rotation about $Qe_3 = u$ by the angle $\theta$. It fixes $u$ and turns the plane $u^\perp$ through $\theta$.
+
 ^pf-42-1
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|§42.4]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§35 Regular Submanifolds#^thm-35-7|§35.7]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]]
@@ -127,6 +128,7 @@ The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j
 > $$
 >
 > The first column $(b_{11}, b_{21})$ is a unit vector, so equals $(\cos\theta, \sin\theta)$ for some $\theta$; the second is a unit vector orthogonal to it, so $\pm(-\sin\theta, \cos\theta)$; and determinant $1$ forces the sign $+$. So $B = R(\theta)$, and $A = Q B Q^{\mathsf T} = Q R(\theta) Q^{\mathsf T}$, the rotation by $\theta$ about $u$.
+
 ^pf-42-2
 
 *Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-56|LADR 9.56]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]]
@@ -171,6 +173,7 @@ The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j
 > $$
 >
 > Composing on the right with $(L_g)_{\ast I}^{-1} = (L_{g^{-1}})_{\ast g}$ gives $G_{\ast g} = (L_{G(g)})_{\ast I} \circ G_{\ast I} \circ (L_{g^{-1}})_{\ast g}$. If $G_{\ast I}$ is an isomorphism, the right side is a composite of three isomorphisms, so $G_{\ast g}$ is an isomorphism.
+
 ^pf-42-3
 
 *Uses:* [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|§42.4]]
@@ -241,6 +244,7 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 > Since $g \neq -g$, every fibre of $G$ has exactly two points.
 >
 > *$\mathbb{RP}^3$.* By Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](2), $C_{-q} = C_q$: $C$ is constant on the classes $\{\pm q\}$, so it induces a map $\bar C : S^3/\{\pm 1\} \to \mathrm{SO}(3)$ with $\bar C \circ \pi = C$, continuous by the universal property of the quotient (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]](1)). It is surjective, since $C = G \circ F$ is ($G$ by the surjectivity step, $F$ bijective). It is injective: $\bar C(\pi(p)) = \bar C(\pi(q))$ means $C_p = C_q$, so $p = \pm q$ and $\pi(p) = \pi(q)$. $S^3$ is compact (closed and bounded in $\mathbb{R}^4$), so $S^3/\{\pm 1\} = \mathbb{RP}^3$ (Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]) is compact as the image of $S^3$ under the continuous $\pi$; and $\mathrm{SO}(3)$ is Hausdorff, as a subspace of $\operatorname{Mat}(3, \mathbb{R}) \cong \mathbb{R}^9$. So the continuous bijection $\bar C$ is a homeomorphism (Fact [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1), (2), (6)). Finally, since $F(-q) = -F(q)$, $F$ carries each class $\{\pm q\}$ onto the class $\{\pm F(q)\}$, so it induces a bijection $S^3/\{\pm 1\} \to \mathrm{SU}(2)/\{\pm I\}$, continuous with continuous inverse by the universal property applied to the continuous maps $F$ and $F^{-1}$ followed by the quotient maps; so $F$ identifies $S^3/\{\pm 1\}$ with $\mathrm{SU}(2)/\{\pm I\}$.
+
 ^pf-42-4
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§41 The Unit Quaternions and SU(2)#^prop-41-6|§41.6]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|§42.2]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-3|§42.3]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]

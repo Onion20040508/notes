@@ -55,6 +55,7 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 > *The restriction to $(0, 4\pi)$.* It is smooth, as the restriction of the smooth map $F$ to an open subset. For $t_0 \in (0,4\pi)$, replace $U$ by $U' = U \cap (0, 4\pi)$, an open interval containing $t_0$, and $V$ by its image $V' = F(U')$, which is open in $V$ — hence in $S^1$, $V$ being open — because $F|_U^V$ is a homeomorphism (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3)). Then $F$ maps $U'$ bijectively onto $V'$, with inverse $\theta|_{V'}$, smooth as the restriction of $\theta$ to an open subset.
 >
 > *Not injective.* Finally $F(t + 2\pi) = F(t)$ for every $t$, since cosine and sine have period $2\pi$; so $F$ is not injective. Nor is its restriction: $\pi$ and $3\pi$ both lie in $(0, 4\pi)$, and $F(\pi) = F(3\pi) = (-1, 0)$.
+
 ^pf-ex-33-1
 
 *Uses:* [[§33 Local Diffeomorphisms#^def-33-1|Def. §33.1]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§24 The Circle#^prop-24-1|§24.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
@@ -143,6 +144,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 > $$
 >
 > a composite of diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), hence smooth: $\psi|_{V'} : V' \to \tilde B$ and $\varphi^{-1} : \tilde A \to U'$ are restrictions of the chart diffeomorphisms $\psi$ and $\varphi^{-1}$ to open sets, $(\tilde F|_{\tilde A})^{-1}$ is smooth in the Euclidean sense and hence as a map of manifolds (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]), and a composite of smooth maps is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). So $G$ is a local inverse at $p$, and as $p$ was arbitrary, $F$ is a local diffeomorphism.
+
 ^pf-33-2
 
 *Uses:* [[§33 Local Diffeomorphisms#^def-33-1|Def. §33.1]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]
@@ -167,6 +169,7 @@ A student asked why $\tilde F'(\varphi(p))$ is invertible; Uribe's answer was th
 > As $q$ was arbitrary, the sets $V$ obtained in this way form an open cover of $N$, on each of which $F^{-1}$ equals a smooth, in particular continuous, map. So $F^{-1}$ is continuous and smooth, since both properties are local: for continuity, the preimage under $F^{-1}$ of an open $O \subseteq M$ is the union over the cover of the sets $G^{-1}(O \cap U)$, each open in an open $V$; for smoothness, Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] is checked with charts at each point, and on a chart domain inside $V$ the coordinate representations of $F^{-1}$ and of $G$ coincide, so they are smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]. Hence $F$ is a diffeomorphism.
 >
 > *The last sentence.* A smooth bijection with $F_{\ast p}$ bijective at every $p$ is a local diffeomorphism by Theorem [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]]; being bijective, it is a diffeomorphism by the equivalence just proved.
+
 ^pf-33-3
 
 *Uses:* [[§33 Local Diffeomorphisms#^def-33-1|Def. §33.1]], [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
