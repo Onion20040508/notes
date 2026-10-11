@@ -79,7 +79,7 @@ tags: [functional-analysis, math556]
 ^def-33-4
 
 > [!remark]- Connections
-> - Support and compact support of a function on a subset of $\mathbb{R}^n$ in measure theory: [[§17 Simple Functions and Modes of Convergence#^def-17-2|551 Def. §17.2]]; on a manifold, [[§50 Vector Fields#^def-50-7|591 Def. §50.7]].
+> - Support and compact support of a function on a subset of $\mathbb{R}^n$ in measure theory: [[§17 Simple Functions and Modes of Convergence#^def-17-2|551 Def. §17.2]]; on a manifold, [[§51 Vector Fields#^def-51-7|591 Def. §51.7]].
 
 > [!definition] Definition §33.5: Test Functions
 > Let $\Omega \subset \mathbb{R}^n$ be open. The **test functions** on $\Omega$ are the $C^\infty$ functions with compact support in $\Omega$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-4|§33.4]]),
@@ -91,7 +91,7 @@ tags: [functional-analysis, math556]
 ^def-33-5
 
 > [!remark]- Connections
-> - The same space on a manifold, with bump functions as examples: [[§50 Vector Fields#^def-50-8|591 Def. §50.8]], [[§50 Vector Fields#^def-50-9|591 Def. §50.9]].
+> - The same space on a manifold, with bump functions as examples: [[§51 Vector Fields#^def-51-8|591 Def. §51.8]], [[§51 Vector Fields#^def-51-9|591 Def. §51.9]].
 
 > [!theorem] Proposition §33.1: Extension by Zero
 > Let $f \in C_c^\infty(\Omega)$ and $K = \operatorname{supp} f$. If $\Omega \neq \mathbb{R}^n$, then $K$ has positive distance from $\mathbb{R}^n \setminus \Omega$. The function $\tilde f$ equal to $f$ on $\Omega$ and to $0$ on $\mathbb{R}^n \setminus \Omega$ lies in $C_c^\infty(\mathbb{R}^n)$.
@@ -266,7 +266,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Def. §33.5]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§23 The Dominated Convergence Theorem#^thm-23-3|551 §23.3]]
 
 > [!remark]- Connections
-> - The flat function $e^{-1/x^2}$ behind $\psi$, smooth with every derivative $0$ at the origin: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; bump functions on manifolds, [[§50 Vector Fields#^prop-50-4|591 §50.4]].
+> - The flat function $e^{-1/x^2}$ behind $\psi$, smooth with every derivative $0$ at the origin: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; bump functions on manifolds, [[§51 Vector Fields#^prop-51-4|591 §51.4]].
 
 ![[m556-33-1.svg]]
 *The board pictures. A corner is harmless: $|x|$ has the bounded weak derivative $\operatorname{sgn} x$. A jump is not: the “derivative” of $\operatorname{sgn} x$ is concentrated at a single point with total mass $2$, which no function can do.*

@@ -138,7 +138,7 @@ This also explains why the [[Divergence Theorem in ℝ³|Divergence Theorem]] ne
 
 > [!remark]- Connections
 > - The coordinate 1-forms $dx_1, \ldots, dx_n$ are the dual basis of the standard basis: [[§12 Duality#^ladr-3-113|LADR 3.113]].
-> - On a manifold the coordinate 1-forms at a point are the dual basis of the coordinate derivations, [[§33 Covectors in Coordinates#^lem-33-1|591 Lemma §33.1]], and the covectors at all points together form the cotangent bundle, [[§48 The Cotangent Bundle#^def-48-1|591 Def. §48.1]].
+> - On a manifold the coordinate 1-forms at a point are the dual basis of the coordinate derivations, [[§33 Covectors in Coordinates#^lem-33-1|591 Lemma §33.1]], and the covectors at all points together form the cotangent bundle, [[§49 The Cotangent Bundle#^def-49-1|591 Def. §49.1]].
 
 > [!definition] Definition §36.2: Differential Form
 > A **$k$-form** on an open subset $U \subseteq \mathbb{R}^n$ is an expression:

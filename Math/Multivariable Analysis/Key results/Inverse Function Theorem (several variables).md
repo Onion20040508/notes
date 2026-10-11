@@ -21,8 +21,8 @@ tags: [multivariable-analysis, hub]
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
 - [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]
-- [[§43 The Unit Quaternions and SU(2)#^prop-43-3|Proposition §43.3: Hyperspherical Charts Are Adapted to S³]]
-- [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-4|Theorem §44.4: The Double Cover SU(2) → SO(3)]]
+- [[§44 The Unit Quaternions and SU(2)#^prop-44-3|Proposition §44.3: Hyperspherical Charts Are Adapted to S³]]
+- [[§45 SU(2) → SO(3)꞉ The Double Cover#^thm-45-4|Theorem §45.4: The Double Cover SU(2) → SO(3)]]
 
 ## Connections
 - **Proof idea.** Apply the [[§15 The Implicit Function Theorem#^thm-15-2|Implicit Function Theorem]] twice: first solve φ(x, y) = ũ for x, then solve ψ(X(y, ũ), y) = ṽ for y. The second step needs det J / φ_x ≠ 0 ([[§16 The Inverse Function Theorem#^rem-16-4|Tracking IFT Hypotheses]]). The [[Multivariable Chain Rule]] gives the Jacobian of the inverse.

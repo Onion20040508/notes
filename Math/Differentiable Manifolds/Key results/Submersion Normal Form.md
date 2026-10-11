@@ -32,10 +32,10 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Submersions#^cor-36-5|Corollary §36.5: Being a Submersion Is an Open Condition]]
 - [[§36 Submersions#^cor-36-6|Corollary §36.6: Submersions Are Open Maps]]
 - [[§37 Regular Submanifolds#^thm-37-9|Theorem §37.9: The Regular Value Theorem for Manifolds]]
-- [[§39 Immersions#^thm-39-1|Theorem §39.1: Local Normal Form for Immersions]]
+- [[§40 Immersions#^thm-40-1|Theorem §40.1: Local Normal Form for Immersions]]
 
 ## Connections
 - **Used for.** Being a submersion is an open condition ([[§36 Submersions#^cor-36-5|§36.5]]), and submersions are open maps ([[§36 Submersions#^cor-36-6|§36.6]]), hence so are fibrations ([[§38 Fibrations#^prop-38-1|§38.1]]). It proves the [[Regular Value Theorem for Manifolds]]: near a point of the level set F is a projection, so the level set is a coordinate slice.
 - **How.** Complete F¹, …, Fⁿ by m − n of the old coordinates to m functions with invertible Jacobian; the [[Inverse Function Theorem (several variables)]] makes them a local diffeomorphism, and [[§36 Submersions#^lem-36-3|§36.3]] makes that a chart.
-- **Local, not global.** A surjective submersion need not be a fibration: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has a broken fibre over 0 ([[§38 Fibrations#^ex-38-2|Ex. §38.2]]). Ehresmann's theorem adds properness to get local triviality over the whole base ([[§38 Fibrations#^thm-38-4|§38.4]]).
+- **Local, not global.** A surjective submersion need not be a fibration: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has a broken fibre over 0 ([[§38 Fibrations#^ex-38-1|Ex. §38.1]]). Ehresmann's theorem adds properness to get local triviality over the whole base ([[§38 Fibrations#^thm-38-3|§38.3]]).
 - **Same idea elsewhere.** The model is the projection ℝᵏ × ℝˡ → ℝᵏ ([[§36 Submersions#^ex-36-1|Ex. §36.1]]), and the mirror statement is the [[Immersion Normal Form]]. The 452 [[Implicit Function Theorem]] is the Euclidean shadow: near a regular point a level set is a graph.

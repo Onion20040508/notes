@@ -100,7 +100,7 @@ Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: 
 > [!remark]- Connections
 > - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].
 > - In multivariable calculus: [[§10 The Differential#^def-10-1|452 Def. §10.1]] and [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1 (gradient = differential = 1-form)]].
-> - Assembled over all of $M$: the cotangent bundle, [[§48 The Cotangent Bundle#^def-48-1|Def. §48.1]].
+> - Assembled over all of $M$: the cotangent bundle, [[§49 The Cotangent Bundle#^def-49-1|Def. §49.1]].
 > - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
 > [!theorem] Proposition §32.2: The Differential Evaluates Derivations

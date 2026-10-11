@@ -2,10 +2,10 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 5
-section: 39
+section: 40
 tags: [differentiable-manifolds, math591]
 ---
-← [[§38 Fibrations]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§40 Embeddings]] →
+← [[§39 Examples of Fibrations]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§41 Embeddings]] →
 
 *Stage: maps — The maps with injective differentials: locally inclusions, globally more subtle.*
 
@@ -15,21 +15,21 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 
 ## Immersions
 
-*Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§36 Submersions#^def-36-2|Definition §36.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§47 The Tangent Bundle|§47]]).*
+*Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§36 Submersions#^def-36-2|Definition §36.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§48 The Tangent Bundle|§48]]).*
 
-> [!definition] Definition §39.1: Immersions
+> [!definition] Definition §40.1: Immersions
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point. “Go from a lower-dimensional manifold to a bigger one.”
 >
 > *Lee: Ch. 4, Immersions*
 
-^def-39-1
+^def-40-1
 
 > [!remark]- Connections
 > - The earlier definition, stated with submersions: [[§36 Submersions#^def-36-2|Def. §36.2]]; the dimension constraint there: [[§36 Submersions#^prop-36-1|§36.1]].
 > - An injective linear map cannot lower dimension: [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
 > - The first examples are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
 
-> [!theorem] Theorem §39.1: Local Normal Form for Immersions
+> [!theorem] Theorem §40.1: Local Normal Form for Immersions
 > Let $F : M \to N$ be an immersion at $p$, with $\dim M = m \le n = \dim N$. Then there are charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$ in which the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$ is the standard inclusion:
 >
 > $$
@@ -38,7 +38,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 >
 > *Lee: Theorem 4.12, the rank theorem*
 
-^thm-39-1
+^thm-40-1
 
 > [!proof]+ Proof (Lecture 14)
 > The steps are the lecture's, in the lecture's order; sentences marked *(Completion.)* fill in details. The first half runs as for submersions (Theorem [[§36 Submersions#^thm-36-4|§36.4]]); the new step is that here the chart on $N$ changes too.
@@ -93,9 +93,9 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 >
 > The first equality is $\tilde\psi = \Sigma \circ \psi$ on $V \supseteq F(U)$ (step 6) together with $\hat F = \psi \circ F \circ \tilde\varphi^{-1}$ (step 5); the second is the graph form of $\hat F$ (step 5); the third is the definition of $\Sigma$. So in the charts $(U, \tilde\varphi)$ and $(V, \tilde\psi)$, $F$ is the standard inclusion: these are the charts $(U, \varphi)$ and $(V, \psi)$ of the statement.
 
-^pf-39-1
+^pf-40-1
 
-*Uses:* [[§39 Immersions#^def-39-1|Def. §39.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§36 Submersions#^thm-36-4|§36.4]] (steps 4 and 8 of its proof), [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§36 Submersions#^lem-36-3|§36.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
+*Uses:* [[§40 Immersions#^def-40-1|Def. §40.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§36 Submersions#^thm-36-4|§36.4]] (steps 4 and 8 of its proof), [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§36 Submersions#^lem-36-3|§36.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 ![[m591-32-1.svg]]
 *The two changes of chart in one diagram, as on the board. On $M$, the chart $\tilde\varphi$ is made from the first $m$ components of $F$, which turns $F$ into the graph $\hat F$; on $N$, the straightening $\Sigma$ removes the graph, so that $\tilde F = \Sigma \circ \hat F$ is the inclusion.*
@@ -113,19 +113,19 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 > [!remark]- Connections
 > - The mirror-image result for submersions: [[§36 Submersions#^thm-36-4|Local Normal Form for Submersions, §36.4]]; the case $m = n$: [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], via the [[§35 Local Diffeomorphisms#^thm-35-1|Inverse Function Theorem, §35.1]] ([[Inverse Function Theorem (several variables)|452 §16.2]]).
 
-What the image of an immersion looks like — locally a submanifold, globally not necessarily — is taken up next, in [[§39 Immersions#Images of Immersions|Images of Immersions]].
+What the image of an immersion looks like — locally a submanifold, globally not necessarily — is taken up next, in [[§40 Immersions#Images of Immersions|Images of Immersions]].
 
 ## Images of Immersions
 
-*Lecture 13, continuing [[§39 Immersions#Immersions|Immersions]]. What the image of an immersion looks like. These results use submanifolds ([[§37 Regular Submanifolds|§37]]).*
+*Lecture 13, continuing [[§40 Immersions#Immersions|Immersions]]. What the image of an immersion looks like. These results use submanifolds ([[§37 Regular Submanifolds|§37]]).*
 
-> [!theorem] Corollary §39.2: The Local Image of an Immersion
-> In the charts of [[§39 Immersions#^thm-39-1|Theorem §39.1]], $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n - m$.
+> [!theorem] Corollary §40.2: The Local Image of an Immersion
+> In the charts of [[§40 Immersions#^thm-40-1|Theorem §40.1]], $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n - m$.
 
-^cor-39-2
+^cor-40-2
 
 > [!proof]+ Proof
-> *(Lecture 13 gave the idea — the image of $\tilde F$ is an open set times zeros, “and so since what happens below happens upstairs too”, $F(U)$ is a submanifold — adding “I'm feeling a little bit uneasy, because I want to say after restriction, possibly after restricting $U$.” Completed here: shrinking $V$ instead of $U$ settles it.)* Let $(U, \varphi)$ and $(V, \psi = (y^1, \ldots, y^n))$ be the charts of Theorem [[§39 Immersions#^thm-39-1|§39.1]]: $F(U) \subseteq V$ and $\psi\big(F(\varphi^{-1}(r))\big) = \tilde F(r) = (r, \vec 0)$ for $r \in \varphi(U)$. Putting $r = \varphi(u)$, this reads
+> *(Lecture 13 gave the idea — the image of $\tilde F$ is an open set times zeros, “and so since what happens below happens upstairs too”, $F(U)$ is a submanifold — adding “I'm feeling a little bit uneasy, because I want to say after restriction, possibly after restricting $U$.” Completed here: shrinking $V$ instead of $U$ settles it.)* Let $(U, \varphi)$ and $(V, \psi = (y^1, \ldots, y^n))$ be the charts of Theorem [[§40 Immersions#^thm-40-1|§40.1]]: $F(U) \subseteq V$ and $\psi\big(F(\varphi^{-1}(r))\big) = \tilde F(r) = (r, \vec 0)$ for $r \in \varphi(U)$. Putting $r = \varphi(u)$, this reads
 >
 > $$
 > \psi\big(F(u)\big) = \big(\varphi(u), \vec 0\big) \qquad (u \in U).
@@ -151,20 +151,20 @@ What the image of an immersion looks like — locally a submanifold, globally no
 >
 > *An adapted chart.* The restriction $(V', \psi|_{V'})$ is a smooth chart of $N$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)). Apply Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]] with ambient manifold $N$ of dimension $n$, $S = F(U)$ and $k = n - m$, so that $x_b = (y^{m+1}, \ldots, y^n)$ are the last $k$ coordinates. Since $F(U) \subseteq V'$, the claim says $V' \cap F(U) = F(U) = \{ q \in V' : x_b(q) = \vec 0 \}$. So $(V', \psi|_{V'})$ is an adapted chart at every point of $F(U)$, and $F(U)$ is a submanifold of codimension $n - m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]). No restriction of $U$ was needed: the worry was that $\psi(V) \cap (\mathbb{R}^m \times \{\vec 0\})$ might contain points not of the form $\tilde F(r)$ with $r \in \varphi(U)$, and passing to $V'$ removes exactly those.
 
-^pf-39-2
+^pf-40-2
 
-*Uses:* [[§39 Immersions#^thm-39-1|§39.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§40 Immersions#^thm-40-1|§40.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!remark]- Connections
-> - The global version needs a topological condition: [[§39 Immersions#^rem-39-1|Remark: Embeddings — Next Time]].
-> - The global statement, for embeddings: [[§40 Embeddings#^thm-40-1|§40.1]].
+> - The global version needs a topological condition: [[§40 Immersions#^rem-40-1|Remark: Embeddings — Next Time]].
+> - The global statement, for embeddings: [[§41 Embeddings#^thm-41-1|§41.1]].
 
 “But the really interesting thing about these immersions is that globally it doesn't have to be the case”: the whole image of an immersion need not be a submanifold. There are two ways for this to fail.
 
-> [!example] Example §39.1: An Immersion That Crosses Itself
+> [!example] Example §40.1: An Immersion That Crosses Itself
 > $\gamma : \mathbb{R} \to \mathbb{R}^2$, $\gamma(t) = (t^2 - 1, \ t^3 - t)$, is an immersion, but it is not injective, and its image is not a submanifold of $\mathbb{R}^2$: near the origin the image looks like an X.
 
-^ex-39-1
+^ex-40-1
 
 > [!proof]+ Proof
 > *(Lecture 13 drew a curve crossing itself and gave the argument below; the specific curve is filled in.)* Three things are claimed: $\gamma$ is an immersion, it is not injective, and its image is not a submanifold.
@@ -175,7 +175,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 > \gamma_{\ast t}\Big(\frac{\partial}{\partial r}\Big|_t\Big) = 2t\, \frac{\partial}{\partial r^1}\Big|_{\gamma(t)} + (3t^2 - 1)\, \frac{\partial}{\partial r^2}\Big|_{\gamma(t)} ,
 > $$
 >
-> which is nonzero, because the coordinate derivations are linearly independent (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]) and the two coefficients do not both vanish. $T_t\mathbb{R}$ is spanned by $\partial/\partial r|_t$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), so a linear map on it that is nonzero on this vector has kernel $0$. Hence $\gamma_{\ast t}$ is injective for every $t$ (Definition [[§39 Immersions#^def-39-1|§39.1]]).
+> which is nonzero, because the coordinate derivations are linearly independent (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]) and the two coefficients do not both vanish. $T_t\mathbb{R}$ is spanned by $\partial/\partial r|_t$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), so a linear map on it that is nonzero on this vector has kernel $0$. Hence $\gamma_{\ast t}$ is injective for every $t$ (Definition [[§40 Immersions#^def-40-1|§40.1]]).
 >
 > *Not injective.* $\gamma(1) = (1 - 1, \ 1 - 1) = (0, 0)$ and $\gamma(-1) = (1 - 1, \ -1 + 1) = (0, 0)$, so $\gamma(1) = \gamma(-1) = (0, 0)$, and $\gamma$ is not injective.
 >
@@ -189,17 +189,17 @@ What the image of an immersion looks like — locally a submanifold, globally no
 >
 > two linearly independent vectors of $T_0\mathbb{R}^2$: the determinant of their coefficients is $2 \cdot 2 - (-2) \cdot 2 = 8 \neq 0$. Both lie in $\iota_{\ast0}(T_0C)$. Indeed $\gamma$ is smooth into $\mathbb{R}^2$ with values in $C$, so $\gamma = \iota \circ c$ with $c : \mathbb{R} \to C$ smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)), and by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) $\gamma_{\ast t} = \iota_{\ast0} \circ c_{\ast t}$ for $t = \pm 1$, where $\gamma(\pm 1) = 0$. By Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], $\iota_{\ast0}(T_0C)$ is spanned by the first $2 - k$ coordinate derivations of an adapted chart, so it has dimension $2 - k$. Containing two independent vectors, it has dimension $2$, so $k = 0$. But for $k = 0$ the condition of Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]] on an adapted chart $(U, \varphi)$ at $(0, 0)$ has no equations, and reads $U \cap C = U$: the open set $U \ni (0, 0)$ would lie in $C$. That is false. $U$ contains a point $(0, s)$ with $s \neq 0$, and $(0, s) \notin C$, since $\gamma(t) = (0, s)$ forces $t^2 - 1 = 0$ and then $s = t^3 - t = t(t^2 - 1) = 0$. So $C$ is not a regular submanifold.
 
-^pf-ex-39-1
+^pf-ex-40-1
 
-*Uses:* [[§39 Immersions#^def-39-1|Def. §39.1]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]]
+*Uses:* [[§40 Immersions#^def-40-1|Def. §40.1]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]]
 
 ![[m591-18-2.svg]]
 *The nodal cubic. The parameter values $t = -1$ and $t = 1$ both land on the origin, where the two branches cross; the arrows show the curve continuing, its domain being all of $\mathbb{R}$. A small disc around the crossing meets the image in an X, which is not a piece of a line.*
 
-> [!example] Example §39.2: An Injective Immersion That Is Not a Homeomorphism onto Its Image
+> [!example] Example §40.2: An Injective Immersion That Is Not a Homeomorphism onto Its Image
 > Let $\gamma : (a, b) \to \mathbb{R}^2$ be an injective immersion that passes through a point $P = \gamma(t_0)$ and whose other end returns to $P$: $\gamma(t) \to P$ as $t \to b$. Then $\gamma$ is not a homeomorphism onto its image, and near $P$ the image looks like a T.
 
-^ex-39-2
+^ex-40-2
 
 > [!proof]+ Proof
 > *(Lecture 13: “it's like you're making a hook with a piece of wire \ldots but the wire is open, it doesn't have an end”; the discontinuity argument is filled in.)* Since $\gamma$ is injective, it is a bijection of $(a, b)$ onto its image $\gamma\big((a,b)\big)$, which carries the subspace topology of $\mathbb{R}^2$ (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]); we show that the inverse $\gamma^{-1} : \gamma\big((a,b)\big) \to (a, b)$ is not continuous at $P$, so that $\gamma$ is not a homeomorphism onto its image.
@@ -208,9 +208,9 @@ What the image of an immersion looks like — locally a submanifold, globally no
 >
 > The image near $P$ consists of the strand through $P$ together with the end arriving at it: “this point now doesn't look like an X, but it looks like a T”; removing it leaves three pieces, not two.
 
-^pf-ex-39-2
+^pf-ex-40-2
 
-*Uses:* [[§39 Immersions#^def-39-1|Def. §39.1]], [[§12 Metric Topology#^thm-12-9|590 §12.9]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]]
+*Uses:* [[§40 Immersions#^def-40-1|Def. §40.1]], [[§12 Metric Topology#^thm-12-9|590 §12.9]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]]
 
 ![[m591-18-3.svg]]
 *The hook. The domain is an open interval, so neither end is attained: the left end of the image is missing (hollow), and the right end only approaches $P$. But $P$ is in the image, reached at $t_0$ by the strand passing through it — so points of the image near $P$ come from parameters near $t_0$* and *from parameters near $b$, which is exactly the failure of continuity of $\gamma^{-1}$. Lee's figure-eight (Example 4.19) is an explicit instance with both ends returning, $\beta(t) = (\sin 2t, \sin t)$ on $(-\pi, \pi)$, where the image near the origin is an X although $\beta$ is injective.*
@@ -219,6 +219,6 @@ What the image of an immersion looks like — locally a submanifold, globally no
 > - The image of Lee's figure-eight, as a topological space, is the wedge of two circles: [[Figure eight|590 Figure eight]].
 
 > [!remark] Remark: Embeddings — Next Time
-> To make the image of an [[§39 Immersions#^def-39-1|immersion]] a [[§37 Regular Submanifolds#^def-37-2|submanifold]], “you have to add a topological condition”: an *[[§40 Embeddings#^def-40-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§40 Embeddings#^thm-40-1|Theorem §40.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§40 Embeddings|§40]].
+> To make the image of an [[§40 Immersions#^def-40-1|immersion]] a [[§37 Regular Submanifolds#^def-37-2|submanifold]], “you have to add a topological condition”: an *[[§41 Embeddings#^def-41-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§41 Embeddings#^thm-41-1|Theorem §41.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§41 Embeddings|§41]].
 
-^rem-39-1
+^rem-40-1

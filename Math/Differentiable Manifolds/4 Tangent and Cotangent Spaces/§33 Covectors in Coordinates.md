@@ -81,7 +81,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]]
 
 > [!remark]- Connections
-> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§48 The Cotangent Bundle#^def-48-4|Def. §48.4]], [[§48 The Cotangent Bundle#^def-48-5|Def. §48.5]].
+> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§49 The Cotangent Bundle#^def-49-4|Def. §49.4]], [[§49 The Cotangent Bundle#^def-49-5|Def. §49.5]].
 
 > [!remark] Remark
 > Equivalently, by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] with the coordinate $r$ on the target, the matrix of $f_{*p}$ is the $1 \times m$ row

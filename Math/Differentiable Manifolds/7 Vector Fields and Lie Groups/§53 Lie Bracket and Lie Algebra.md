@@ -2,17 +2,17 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 7
-section: 52
+section: 53
 tags: [differentiable-manifolds, math591]
 ---
-← [[§51 Differential Operators]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§53 Related Vector Fields]] →
+← [[§52 Differential Operators]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§54 Related Vector Fields]] →
 
 *Stage: fields — Two vector fields, composed as operators, give a second-order operator; their commutator cancels the second derivatives and is again a vector field, so $\mathfrak{X}(M)$ is a Lie algebra.*
 
 *Lecture 16. “Who cares? There is one reason we care … when we look at commutators.”*
 
-> [!definition] Definition §52.1: The Lie Bracket of Vector Fields
-> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as [[§50 Vector Fields#^lem-50-3|operators]] on $C^\infty(M)$ ([[§50 Vector Fields#^def-50-4|Definition §50.4]]), the **commutator** or **Lie bracket** is the operator
+> [!definition] Definition §53.1: The Lie Bracket of Vector Fields
+> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as [[§51 Vector Fields#^lem-51-3|operators]] on $C^\infty(M)$ ([[§51 Vector Fields#^def-51-4|Definition §51.4]]), the **commutator** or **Lie bracket** is the operator
 >
 > $$
 > [\mathbf{X}, \mathbf{Y}](f) = \mathbf{X}\big(\mathbf{Y}(f)\big) - \mathbf{Y}\big(\mathbf{X}(f)\big), \qquad f \in C^\infty(M).
@@ -20,21 +20,21 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Ch. 8, Lie Brackets*
 
-^def-52-1
+^def-53-1
 
-Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\mathrm{Diff}_2(M)$ ([[§51 Differential Operators#^def-51-3|Definition §51.3]]) — “you get second derivatives in local coordinates” — but “something very, very nice happens when you look at the commutator.”
+Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\mathrm{Diff}_2(M)$ ([[§52 Differential Operators#^def-52-3|Definition §52.3]]) — “you get second derivatives in local coordinates” — but “something very, very nice happens when you look at the commutator.”
 
-> [!theorem] Lemma §52.1: The Bracket of Vector Fields Is a Vector Field
-> $[\mathbf{X}, \mathbf{Y}]$ is a [[§50 Vector Fields#^def-50-5|derivation]] of $C^\infty(M)$; hence, by [[§50 Vector Fields#^prop-50-7|Proposition §50.7]], it is a [[§50 Vector Fields#^def-50-1|vector field]].
+> [!theorem] Lemma §53.1: The Bracket of Vector Fields Is a Vector Field
+> $[\mathbf{X}, \mathbf{Y}]$ is a [[§51 Vector Fields#^def-51-5|derivation]] of $C^\infty(M)$; hence, by [[§51 Vector Fields#^prop-51-7|Proposition §51.7]], it is a [[§51 Vector Fields#^def-51-1|vector field]].
 >
 > *Lee: Lemma 8.25*
 
-^lem-52-1
+^lem-53-1
 
 > [!proof]+ Proof
-> *(Lecture 16 — “tedious algebra \ldots the key thing is the product rule.”)* By Definition [[§50 Vector Fields#^def-50-5|§50.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§50 Vector Fields#^lem-50-3|§50.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
+> *(Lecture 16 — “tedious algebra \ldots the key thing is the product rule.”)* By Definition [[§51 Vector Fields#^def-51-5|§51.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§51 Vector Fields#^lem-51-3|§51.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
 >
-> *An operator.* For $f \in C^\infty(M)$, $\mathbf{Y}f \in C^\infty(M)$ by Lemma [[§50 Vector Fields#^lem-50-3|§50.3]], and then $\mathbf{X}(\mathbf{Y}f) \in C^\infty(M)$ by the same lemma applied to the smooth function $\mathbf{Y}f$. Likewise $\mathbf{X}f$ and then $\mathbf{Y}(\mathbf{X}f)$ are smooth. So their difference $[\mathbf{X}, \mathbf{Y}](f)$ is smooth.
+> *An operator.* For $f \in C^\infty(M)$, $\mathbf{Y}f \in C^\infty(M)$ by Lemma [[§51 Vector Fields#^lem-51-3|§51.3]], and then $\mathbf{X}(\mathbf{Y}f) \in C^\infty(M)$ by the same lemma applied to the smooth function $\mathbf{Y}f$. Likewise $\mathbf{X}f$ and then $\mathbf{Y}(\mathbf{X}f)$ are smooth. So their difference $[\mathbf{X}, \mathbf{Y}](f)$ is smooth.
 >
 > *Linearity.* Linearity is clear, as a difference of composites of linear maps. Explicitly, for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$, by linearity of $\mathbf{Y}$ and then of $\mathbf{X}$,
 >
@@ -72,23 +72,23 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > [\mathbf{X}, \mathbf{Y}](fg) = f\,\big(\mathbf{X}\mathbf{Y}g - \mathbf{Y}\mathbf{X}g\big) + g\,\big(\mathbf{X}\mathbf{Y}f - \mathbf{Y}\mathbf{X}f\big) = f\, [\mathbf{X}, \mathbf{Y}](g) + g\, [\mathbf{X}, \mathbf{Y}](f).
 > $$
 >
-> So $[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$. By Proposition [[§50 Vector Fields#^prop-50-7|§50.7]] it is the operator $D_\mathbf{Z}$ of a unique vector field $\mathbf{Z}$, and this field is again written $[\mathbf{X}, \mathbf{Y}]$.
+> So $[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$. By Proposition [[§51 Vector Fields#^prop-51-7|§51.7]] it is the operator $D_\mathbf{Z}$ of a unique vector field $\mathbf{Z}$, and this field is again written $[\mathbf{X}, \mathbf{Y}]$.
 
-^pf-52-1
+^pf-53-1
 
-*Uses:* [[§52 Lie Bracket and Lie Algebra#^def-52-1|Def. §52.1]], [[§50 Vector Fields#^def-50-5|Def. §50.5]], [[§50 Vector Fields#^lem-50-3|§50.3]], [[§50 Vector Fields#^prop-50-7|§50.7]]
+*Uses:* [[§53 Lie Bracket and Lie Algebra#^def-53-1|Def. §53.1]], [[§51 Vector Fields#^def-51-5|Def. §51.5]], [[§51 Vector Fields#^lem-51-3|§51.3]], [[§51 Vector Fields#^prop-51-7|§51.7]]
 
-> [!example] Example §52.1: A Bracket in the Plane
+> [!example] Example §53.1: A Bracket in the Plane
 > On $\mathbb{R}^2$ with coordinates $(x, y)$, let $\mathbf{X} = a\, \partial_x$ and $\mathbf{Y} = b\, \partial_y$ with $a, b \in C^\infty(\mathbb{R}^2)$. Then
 >
 > $$
 > [\mathbf{X}, \mathbf{Y}] = a\, \frac{\partial b}{\partial x}\, \frac{\partial}{\partial y} \;-\; b\, \frac{\partial a}{\partial y}\, \frac{\partial}{\partial x} .
 > $$
 
-^ex-52-1
+^ex-53-1
 
 > [!proof]+ Proof
-> *(Lecture 16 — “an exercise in multivariable calculus.”)* Both sides are vector fields: the left side by Lemma [[§52 Lie Bracket and Lie Algebra#^lem-52-1|§52.1]], the right side by Proposition [[§50 Vector Fields#^prop-50-1|§50.1]], since its coefficients are products of smooth functions. A vector field is determined by its operator (the uniqueness in Proposition [[§50 Vector Fields#^prop-50-7|§50.7]]), so it suffices that both sides give the same function when applied to any $f \in C^\infty(\mathbb{R}^2)$. In the standard chart, Lemma [[§50 Vector Fields#^lem-50-3|§50.3]] gives $\mathbf{X}h = a\, \partial h/\partial x$ and $\mathbf{Y}h = b\, \partial h/\partial y$ for every smooth $h$.
+> *(Lecture 16 — “an exercise in multivariable calculus.”)* Both sides are vector fields: the left side by Lemma [[§53 Lie Bracket and Lie Algebra#^lem-53-1|§53.1]], the right side by Proposition [[§51 Vector Fields#^prop-51-1|§51.1]], since its coefficients are products of smooth functions. A vector field is determined by its operator (the uniqueness in Proposition [[§51 Vector Fields#^prop-51-7|§51.7]]), so it suffices that both sides give the same function when applied to any $f \in C^\infty(\mathbb{R}^2)$. In the standard chart, Lemma [[§51 Vector Fields#^lem-51-3|§51.3]] gives $\mathbf{X}h = a\, \partial h/\partial x$ and $\mathbf{Y}h = b\, \partial h/\partial y$ for every smooth $h$.
 >
 > Apply both composites to $f$ and use the product rule for the partial derivatives $\partial/\partial x$ and $\partial/\partial y$:
 >
@@ -103,13 +103,13 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > [\mathbf{X}, \mathbf{Y}]f = \mathbf{X}\mathbf{Y}f - \mathbf{Y}\mathbf{X}f = a\, \frac{\partial b}{\partial x}\, \frac{\partial f}{\partial y} - b\, \frac{\partial a}{\partial y}\, \frac{\partial f}{\partial x} .
 > $$
 >
-> By Lemma [[§50 Vector Fields#^lem-50-3|§50.3]] again, the right side is the field $a\, (\partial b/\partial x)\, \partial/\partial y - b\, (\partial a/\partial y)\, \partial/\partial x$ applied to $f$. So the two fields have the same operator, and the bracket is the stated first-order operator.
+> By Lemma [[§51 Vector Fields#^lem-51-3|§51.3]] again, the right side is the field $a\, (\partial b/\partial x)\, \partial/\partial y - b\, (\partial a/\partial y)\, \partial/\partial x$ applied to $f$. So the two fields have the same operator, and the bracket is the stated first-order operator.
 
-^pf-ex-52-1
+^pf-ex-53-1
 
-*Uses:* [[§52 Lie Bracket and Lie Algebra#^def-52-1|Def. §52.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§52 Lie Bracket and Lie Algebra#^lem-52-1|§52.1]], [[§50 Vector Fields#^prop-50-1|§50.1]], [[§50 Vector Fields#^prop-50-7|§50.7]], [[§50 Vector Fields#^lem-50-3|§50.3]]
+*Uses:* [[§53 Lie Bracket and Lie Algebra#^def-53-1|Def. §53.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§53 Lie Bracket and Lie Algebra#^lem-53-1|§53.1]], [[§51 Vector Fields#^prop-51-1|§51.1]], [[§51 Vector Fields#^prop-51-7|§51.7]], [[§51 Vector Fields#^lem-51-3|§51.3]]
 
-> [!theorem] Proposition §52.2: The Bracket in Coordinates
+> [!theorem] Proposition §53.2: The Bracket in Coordinates
 > In a chart with $\mathbf{X} = \sum_i X^i\, \partial_i$ and $\mathbf{Y} = \sum_i Y^i\, \partial_i$, where $\partial_i = \partial/\partial x^i$,
 >
 > $$
@@ -118,10 +118,10 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 >
 > *Lee: Proposition 8.26*
 
-^prop-52-2
+^prop-53-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in — Example [[§52 Lie Bracket and Lie Algebra#^ex-52-1|§52.1]] is the case $\mathbf{X} = a\,\partial_x$, $\mathbf{Y} = b\,\partial_y$.)* Let $U$ be the chart domain. The $X^i, Y^i \in C^\infty(U)$ are the coefficient functions of Proposition [[§50 Vector Fields#^prop-50-1|§50.1]], $X^i(q) = \mathbf{X}_q[x^i]$ and $Y^i(q) = \mathbf{Y}_q[x^i]$; and for $h \in C^\infty(U)$, $\mathbf{X}(h)$ denotes the function $q \mapsto \mathbf{X}_q[h]$ on $U$. The $j$-th coefficient of a vector field is its value on the coordinate function $x^j$ (Proposition [[§50 Vector Fields#^prop-50-1|§50.1]]); applied to the vector field $[\mathbf{X}, \mathbf{Y}]$ (Lemma [[§52 Lie Bracket and Lie Algebra#^lem-52-1|§52.1]]), this gives $[\mathbf{X}, \mathbf{Y}]_q = \sum_j [\mathbf{X}, \mathbf{Y}]^j(q)\, \partial_j|_q$ at each $q \in U$, with $[\mathbf{X}, \mathbf{Y}]^j(q) = [\mathbf{X}, \mathbf{Y}]_q[x^j]$. So what has to be shown is
+> *(Not from lecture; filled in — Example [[§53 Lie Bracket and Lie Algebra#^ex-53-1|§53.1]] is the case $\mathbf{X} = a\,\partial_x$, $\mathbf{Y} = b\,\partial_y$.)* Let $U$ be the chart domain. The $X^i, Y^i \in C^\infty(U)$ are the coefficient functions of Proposition [[§51 Vector Fields#^prop-51-1|§51.1]], $X^i(q) = \mathbf{X}_q[x^i]$ and $Y^i(q) = \mathbf{Y}_q[x^i]$; and for $h \in C^\infty(U)$, $\mathbf{X}(h)$ denotes the function $q \mapsto \mathbf{X}_q[h]$ on $U$. The $j$-th coefficient of a vector field is its value on the coordinate function $x^j$ (Proposition [[§51 Vector Fields#^prop-51-1|§51.1]]); applied to the vector field $[\mathbf{X}, \mathbf{Y}]$ (Lemma [[§53 Lie Bracket and Lie Algebra#^lem-53-1|§53.1]]), this gives $[\mathbf{X}, \mathbf{Y}]_q = \sum_j [\mathbf{X}, \mathbf{Y}]^j(q)\, \partial_j|_q$ at each $q \in U$, with $[\mathbf{X}, \mathbf{Y}]^j(q) = [\mathbf{X}, \mathbf{Y}]_q[x^j]$. So what has to be shown is
 >
 > $$
 > [\mathbf{X}, \mathbf{Y}]_p[x^j] = \mathbf{X}_p[Y^j] - \mathbf{Y}_p[X^j] \qquad \text{for every } p \in U \text{ and every } j,
@@ -129,13 +129,13 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 >
 > followed by the expansion of the right side. Informally this is $[\mathbf{X}, \mathbf{Y}](x^j) = \mathbf{X}(\mathbf{Y}x^j) - \mathbf{Y}(\mathbf{X}x^j) = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$; the one point to take care of is that the bracket acts on $C^\infty(M)$, while $x^j$ is defined only on $U$.
 >
-> *A global stand-in for $x^j$.* Fix $p \in U$. Let $\chi$ be a bump function at $p$ with $\operatorname{supp}\chi \subseteq U$ (Proposition [[§50 Vector Fields#^prop-50-4|§50.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \operatorname{supp}\chi \subseteq U$. By Corollary [[§50 Vector Fields#^cor-50-5|§50.5]], $\tilde x^j = \chi x^j$, extended by $0$ outside $U$, lies in $C^\infty(M)$, and it equals $x^j$ on $V$. So at every $q \in V$ the germs of $\tilde x^j$ and $x^j$ coincide, and
+> *A global stand-in for $x^j$.* Fix $p \in U$. Let $\chi$ be a bump function at $p$ with $\operatorname{supp}\chi \subseteq U$ (Proposition [[§51 Vector Fields#^prop-51-4|§51.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \operatorname{supp}\chi \subseteq U$. By Corollary [[§51 Vector Fields#^cor-51-5|§51.5]], $\tilde x^j = \chi x^j$, extended by $0$ outside $U$, lies in $C^\infty(M)$, and it equals $x^j$ on $V$. So at every $q \in V$ the germs of $\tilde x^j$ and $x^j$ coincide, and
 >
 > $$
 > (\mathbf{Y}\tilde x^j)(q) = \mathbf{Y}_q[\tilde x^j] = \mathbf{Y}_q[x^j] = Y^j(q), \qquad (\mathbf{X}\tilde x^j)(q) = \mathbf{X}_q[\tilde x^j] = \mathbf{X}_q[x^j] = X^j(q) \qquad (q \in V).
 > $$
 >
-> *The coefficient at $p$.* By the last display, $\mathbf{Y}\tilde x^j$ and $Y^j$ agree on the open neighbourhood $V$ of $p$, so they have the same germ at $p$, and $\mathbf{X}_p$, which acts on germs, gives them the same value; likewise for $\mathbf{X}\tilde x^j$, $X^j$ and $\mathbf{Y}_p$. Hence, using first $[\tilde x^j] = [x^j]$ at $p$ and then Definition [[§52 Lie Bracket and Lie Algebra#^def-52-1|§52.1]] evaluated at $p$,
+> *The coefficient at $p$.* By the last display, $\mathbf{Y}\tilde x^j$ and $Y^j$ agree on the open neighbourhood $V$ of $p$, so they have the same germ at $p$, and $\mathbf{X}_p$, which acts on germs, gives them the same value; likewise for $\mathbf{X}\tilde x^j$, $X^j$ and $\mathbf{Y}_p$. Hence, using first $[\tilde x^j] = [x^j]$ at $p$ and then Definition [[§53 Lie Bracket and Lie Algebra#^def-53-1|§53.1]] evaluated at $p$,
 >
 > $$
 > [\mathbf{X}, \mathbf{Y}]_p[x^j] = [\mathbf{X}, \mathbf{Y}]_p[\tilde x^j] = \mathbf{X}_p[\mathbf{Y}\tilde x^j] - \mathbf{Y}_p[\mathbf{X}\tilde x^j] = \mathbf{X}_p[Y^j] - \mathbf{Y}_p[X^j] .
@@ -149,11 +149,11 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j \qquad \text{on } U.
 > $$
 
-^pf-52-2
+^pf-53-2
 
-*Uses:* [[§52 Lie Bracket and Lie Algebra#^def-52-1|Def. §52.1]], [[§52 Lie Bracket and Lie Algebra#^lem-52-1|§52.1]], [[§50 Vector Fields#^prop-50-1|§50.1]], [[§52 Lie Bracket and Lie Algebra#^ex-52-1|Ex. §52.1]], [[§50 Vector Fields#^prop-50-4|§50.4]], [[§50 Vector Fields#^cor-50-5|§50.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§53 Lie Bracket and Lie Algebra#^def-53-1|Def. §53.1]], [[§53 Lie Bracket and Lie Algebra#^lem-53-1|§53.1]], [[§51 Vector Fields#^prop-51-1|§51.1]], [[§53 Lie Bracket and Lie Algebra#^ex-53-1|Ex. §53.1]], [[§51 Vector Fields#^prop-51-4|§51.4]], [[§51 Vector Fields#^cor-51-5|§51.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
 
-> [!definition] Definition §52.2: Lie Algebra
+> [!definition] Definition §53.2: Lie Algebra
 > A (real) **Lie algebra** $\mathfrak{g}$ is a real [[§2 Definition of Vector Space#^ladr-1-20|vector space]] together with a [[§38 Tensor Products#^ladr-9-77|bilinear]], skew-symmetric operation $[\cdot,\cdot] : \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$, the **Lie bracket**, satisfying the **Jacobi identity**
 >
 > $$
@@ -162,7 +162,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 >
 > *Lee: Ch. 8, Lie Algebras*
 
-^def-52-2
+^def-53-2
 
 > [!remark]- Connections
 > - In classical mechanics the Poisson bracket is bilinear, antisymmetric and satisfies the Jacobi identity ([[§B8.1 Poisson Brackets#^thm-b8-1-2|CM Theorem §B8.1.2]]), so the phase-space functions form a Lie algebra: [[§B8.1 Poisson Brackets#^rem-b8-1-1|CM Remark: The structure behind the four rules]].
@@ -170,13 +170,13 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 
 The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to the left position, $Z$ one over to the left, and $X$ jumps to the last position.”
 
-> [!theorem] Proposition §52.3: Commutators of an Associative Product
-> Let $A$ be a real vector space with a bilinear *associative* product $(X, Y) \mapsto X \ast Y$. Then the commutator $[X, Y] = X \ast Y - Y \ast X$ is bilinear, skew-symmetric, and satisfies the [[§52 Lie Bracket and Lie Algebra#^def-52-2|Jacobi identity]]; so $(A, [\cdot,\cdot])$ is a [[§52 Lie Bracket and Lie Algebra#^def-52-2|Lie algebra]].
+> [!theorem] Proposition §53.3: Commutators of an Associative Product
+> Let $A$ be a real vector space with a bilinear *associative* product $(X, Y) \mapsto X \ast Y$. Then the commutator $[X, Y] = X \ast Y - Y \ast X$ is bilinear, skew-symmetric, and satisfies the [[§53 Lie Bracket and Lie Algebra#^def-53-2|Jacobi identity]]; so $(A, [\cdot,\cdot])$ is a [[§53 Lie Bracket and Lie Algebra#^def-53-2|Lie algebra]].
 
-^prop-52-3
+^prop-53-3
 
 > [!proof]+ Proof
-> *(Stated in Lecture 16 as “a general fact”; filled in. “The key thing is that it be an associative product.”)* By Definition [[§52 Lie Bracket and Lie Algebra#^def-52-2|§52.2]], three properties of the commutator have to be checked; it takes values in $A$, since $A$ is closed under $\ast$ and subtraction. Bilinearity of $\ast$ means $(aX + bX') \ast Y = a\,X \ast Y + b\,X' \ast Y$ and $X \ast (aY + bY') = a\,X \ast Y + b\,X \ast Y'$ for $a, b \in \mathbb{R}$.
+> *(Stated in Lecture 16 as “a general fact”; filled in. “The key thing is that it be an associative product.”)* By Definition [[§53 Lie Bracket and Lie Algebra#^def-53-2|§53.2]], three properties of the commutator have to be checked; it takes values in $A$, since $A$ is closed under $\ast$ and subtraction. Bilinearity of $\ast$ means $(aX + bX') \ast Y = a\,X \ast Y + b\,X' \ast Y$ and $X \ast (aY + bY') = a\,X \ast Y + b\,X \ast Y'$ for $a, b \in \mathbb{R}$.
 >
 > *Skew-symmetry.* Directly from the definition, $[Y, X] = Y \ast X - X \ast Y = -(X \ast Y - Y \ast X) = -[X, Y]$.
 >
@@ -206,40 +206,40 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 >
 > In the sum of the three lines, each of the six words appears once with each sign: $XYZ$ with $+$ in the first and $-$ in the third; $XZY$ with $-$ in the first and $+$ in the second; $YZX$ with $-$ in the first and $+$ in the second; $ZYX$ with $+$ in the first and $-$ in the third; $YXZ$ with $-$ in the second and $+$ in the third; $ZXY$ with $-$ in the second and $+$ in the third. So the sum is $0$, and $(A, [\cdot,\cdot])$ is a Lie algebra.
 
-^pf-52-3
+^pf-53-3
 
-*Uses:* [[§52 Lie Bracket and Lie Algebra#^def-52-2|Def. §52.2]]
+*Uses:* [[§53 Lie Bracket and Lie Algebra#^def-53-2|Def. §53.2]]
 
-> [!example] Example §52.2: Matrices
-> $\operatorname{Mat}(n, \mathbb{R})$, with the commutator $[A, B] = AB - BA$ of matrix multiplication, is a [[§52 Lie Bracket and Lie Algebra#^def-52-2|Lie algebra]], by [[§52 Lie Bracket and Lie Algebra#^prop-52-3|Proposition §52.3]].
+> [!example] Example §53.2: Matrices
+> $\operatorname{Mat}(n, \mathbb{R})$, with the commutator $[A, B] = AB - BA$ of matrix multiplication, is a [[§53 Lie Bracket and Lie Algebra#^def-53-2|Lie algebra]], by [[§53 Lie Bracket and Lie Algebra#^prop-53-3|Proposition §53.3]].
 
-^ex-52-2
+^ex-53-2
 
-> [!theorem] Corollary §52.4: Vector Fields Form a Lie Algebra
-> $\big(\mathfrak{X}(M), [\cdot,\cdot]\big)$ is a [[§52 Lie Bracket and Lie Algebra#^def-52-2|Lie algebra]].
+> [!theorem] Corollary §53.4: Vector Fields Form a Lie Algebra
+> $\big(\mathfrak{X}(M), [\cdot,\cdot]\big)$ is a [[§53 Lie Bracket and Lie Algebra#^def-53-2|Lie algebra]].
 >
 > *Lee: Proposition 8.28*
 
-^cor-52-4
+^cor-53-4
 
 > [!proof]+ Proof
-> *(Lecture 16: the bracket of fields “comes from the product, which is the composition, which is associative.” Filled in.)* By Definition [[§52 Lie Bracket and Lie Algebra#^def-52-2|§52.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§50 Vector Fields#^lem-50-3|§50.3]]), to keep the field and its operator apart.
+> *(Lecture 16: the bracket of fields “comes from the product, which is the composition, which is associative.” Filled in.)* By Definition [[§53 Lie Bracket and Lie Algebra#^def-53-2|§53.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§51 Vector Fields#^lem-51-3|§51.3]]), to keep the field and its operator apart.
 >
-> *The space and the bracket.* $\mathfrak{X}(M)$ is a real vector space by Proposition [[§50 Vector Fields#^prop-50-2|§50.2]]. By Lemma [[§52 Lie Bracket and Lie Algebra#^lem-52-1|§52.1]], $\mathfrak{X}(M)$, identified with the derivations, is closed under the commutator: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ the commutator of $D_\mathbf{X}$ and $D_\mathbf{Y}$ is the operator of the vector field $[\mathbf{X}, \mathbf{Y}]$,
+> *The space and the bracket.* $\mathfrak{X}(M)$ is a real vector space by Proposition [[§51 Vector Fields#^prop-51-2|§51.2]]. By Lemma [[§53 Lie Bracket and Lie Algebra#^lem-53-1|§53.1]], $\mathfrak{X}(M)$, identified with the derivations, is closed under the commutator: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ the commutator of $D_\mathbf{X}$ and $D_\mathbf{Y}$ is the operator of the vector field $[\mathbf{X}, \mathbf{Y}]$,
 >
 > $$
 > D_{[\mathbf{X}, \mathbf{Y}]} = D_\mathbf{X} \circ D_\mathbf{Y} - D_\mathbf{Y} \circ D_\mathbf{X} .
 > $$
 >
-> *The operators form an associative algebra.* Let $A$ be the set of $\mathbb{R}$-linear operators on $C^\infty(M)$ (Definition [[§50 Vector Fields#^def-50-4|§50.4]]), a real vector space under $(aP + bQ)f = a\,Pf + b\,Qf$, with the product $P \ast Q = P \circ Q$, again a linear operator. Composition of maps is associative. It is bilinear: $\big((aP + bP') \circ Q\big)f = a\,P(Qf) + b\,P'(Qf)$ by the definition of the operations, and $\big(P \circ (aQ + bQ')\big)f = P(a\,Qf + b\,Q'f) = a\,P(Qf) + b\,P(Q'f)$ because $P$ is linear. So the linear operators on $C^\infty(M)$ form an associative algebra under composition, and by Proposition [[§52 Lie Bracket and Lie Algebra#^prop-52-3|§52.3]] their commutator $[P, Q] = P \circ Q - Q \circ P$ is bilinear, skew-symmetric and satisfies the Jacobi identity. The display above reads $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$.
+> *The operators form an associative algebra.* Let $A$ be the set of $\mathbb{R}$-linear operators on $C^\infty(M)$ (Definition [[§51 Vector Fields#^def-51-4|§51.4]]), a real vector space under $(aP + bQ)f = a\,Pf + b\,Qf$, with the product $P \ast Q = P \circ Q$, again a linear operator. Composition of maps is associative. It is bilinear: $\big((aP + bP') \circ Q\big)f = a\,P(Qf) + b\,P'(Qf)$ by the definition of the operations, and $\big(P \circ (aQ + bQ')\big)f = P(a\,Qf + b\,Q'f) = a\,P(Qf) + b\,P(Q'f)$ because $P$ is linear. So the linear operators on $C^\infty(M)$ form an associative algebra under composition, and by Proposition [[§53 Lie Bracket and Lie Algebra#^prop-53-3|§53.3]] their commutator $[P, Q] = P \circ Q - Q \circ P$ is bilinear, skew-symmetric and satisfies the Jacobi identity. The display above reads $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$.
 >
-> *From operators to fields.* The map $\mathbf{X} \mapsto D_\mathbf{X}$ is linear: for $f \in C^\infty(M)$ and $p \in M$, by Definition [[§50 Vector Fields#^def-50-2|§50.2]] and the pointwise operations of $T_pM$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]),
+> *From operators to fields.* The map $\mathbf{X} \mapsto D_\mathbf{X}$ is linear: for $f \in C^\infty(M)$ and $p \in M$, by Definition [[§51 Vector Fields#^def-51-2|§51.2]] and the pointwise operations of $T_pM$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]),
 >
 > $$
 > \big(D_{a\mathbf{X} + b\mathbf{Y}} f\big)(p) = \big(a\,\mathbf{X}_p + b\,\mathbf{Y}_p\big)[f] = a\,\mathbf{X}_p[f] + b\,\mathbf{Y}_p[f] = \big((a\,D_\mathbf{X} + b\,D_\mathbf{Y}) f\big)(p) .
 > $$
 >
-> It is injective, by the uniqueness in Proposition [[§50 Vector Fields#^prop-50-7|§50.7]]. So an identity between fields holds as soon as the corresponding identity between their operators holds. Using $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$ and the linearity of $\mathbf{X} \mapsto D_\mathbf{X}$:
+> It is injective, by the uniqueness in Proposition [[§51 Vector Fields#^prop-51-7|§51.7]]. So an identity between fields holds as soon as the corresponding identity between their operators holds. Using $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$ and the linearity of $\mathbf{X} \mapsto D_\mathbf{X}$:
 > - *bilinearity:* $D_{[a\mathbf{X} + b\mathbf{X}', \mathbf{Y}]} = [a\,D_\mathbf{X} + b\,D_{\mathbf{X}'}, D_\mathbf{Y}] = a\,[D_\mathbf{X}, D_\mathbf{Y}] + b\,[D_{\mathbf{X}'}, D_\mathbf{Y}] = D_{a[\mathbf{X}, \mathbf{Y}] + b[\mathbf{X}', \mathbf{Y}]}$, and in the second argument $D_{[\mathbf{X}, a\mathbf{Y} + b\mathbf{Y}']} = [D_\mathbf{X}, a\,D_\mathbf{Y} + b\,D_{\mathbf{Y}'}] = a\,[D_\mathbf{X}, D_\mathbf{Y}] + b\,[D_\mathbf{X}, D_{\mathbf{Y}'}] = D_{a[\mathbf{X}, \mathbf{Y}] + b[\mathbf{X}, \mathbf{Y}']}$;
 > - *skew-symmetry:* $D_{[\mathbf{Y}, \mathbf{X}]} = [D_\mathbf{Y}, D_\mathbf{X}] = -[D_\mathbf{X}, D_\mathbf{Y}] = D_{-[\mathbf{X}, \mathbf{Y}]}$;
 > - *Jacobi:* applying the identity twice, $D_{[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]}} = [D_\mathbf{X}, D_{[\mathbf{Y}, \mathbf{Z}]}] = [D_\mathbf{X}, [D_\mathbf{Y}, D_\mathbf{Z}]{]}$, and the same with $\mathbf{X}, \mathbf{Y}, \mathbf{Z}$ renamed cyclically; adding the three,
@@ -250,32 +250,32 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 >
 > By injectivity each identity holds between the fields themselves; in particular the Jacobi identity holds on $\mathfrak{X}(M)$.
 
-^pf-52-4
+^pf-53-4
 
-*Uses:* [[§52 Lie Bracket and Lie Algebra#^def-52-1|Def. §52.1]], [[§52 Lie Bracket and Lie Algebra#^def-52-2|Def. §52.2]], [[§52 Lie Bracket and Lie Algebra#^prop-52-3|§52.3]], [[§52 Lie Bracket and Lie Algebra#^lem-52-1|§52.1]], [[§50 Vector Fields#^lem-50-3|§50.3]], [[§50 Vector Fields#^prop-50-7|§50.7]], [[§50 Vector Fields#^prop-50-2|§50.2]], [[§50 Vector Fields#^def-50-4|Def. §50.4]], [[§50 Vector Fields#^def-50-2|Def. §50.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§53 Lie Bracket and Lie Algebra#^def-53-1|Def. §53.1]], [[§53 Lie Bracket and Lie Algebra#^def-53-2|Def. §53.2]], [[§53 Lie Bracket and Lie Algebra#^prop-53-3|§53.3]], [[§53 Lie Bracket and Lie Algebra#^lem-53-1|§53.1]], [[§51 Vector Fields#^lem-51-3|§51.3]], [[§51 Vector Fields#^prop-51-7|§51.7]], [[§51 Vector Fields#^prop-51-2|§51.2]], [[§51 Vector Fields#^def-51-4|Def. §51.4]], [[§51 Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
-“Which I don't recommend you check by hand. It's a big computation.” The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of [[§54 Lie Groups and Left-Invariant Vector Fields|§54]] sit inside it.
+“Which I don't recommend you check by hand. It's a big computation.” The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of [[§55 Lie Groups and Left-Invariant Vector Fields|§55]] sit inside it.
 
-The bracket of two vector fields is one instance of a general fact about the ring of differential operators ([[§51 Differential Operators|§51]]): a commutator is always of lower order than the composites it is made from.
+The bracket of two vector fields is one instance of a general fact about the ring of differential operators ([[§52 Differential Operators|§52]]): a commutator is always of lower order than the composites it is made from.
 
-> [!theorem] Proposition §52.5: Commutators Lower the Order
-> For operators $P, Q$ write $[P, Q] = P \circ Q - Q \circ P$, as in [[§52 Lie Bracket and Lie Algebra#^def-52-1|Definition §52.1]]. For the generators of $\mathrm{Diff}(M)$ ([[§51 Differential Operators#^def-51-2|Definition §51.2]]), with $g, h \in C^\infty(M)$ and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$:
+> [!theorem] Proposition §53.5: Commutators Lower the Order
+> For operators $P, Q$ write $[P, Q] = P \circ Q - Q \circ P$, as in [[§53 Lie Bracket and Lie Algebra#^def-53-1|Definition §53.1]]. For the generators of $\mathrm{Diff}(M)$ ([[§52 Differential Operators#^def-52-2|Definition §52.2]]), with $g, h \in C^\infty(M)$ and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$:
 > 1. $[m_g, m_h] = 0$;
 > 2. $[D_\mathbf{X}, m_g] = m_{\mathbf{X}g}$;
 > 3. $[D_\mathbf{X}, D_\mathbf{Y}] = D_{[\mathbf{X}, \mathbf{Y}]}$.
 >
-> Consequently, if $P \in \mathrm{Diff}_k(M)$ and $Q \in \mathrm{Diff}_l(M)$, then $[P, Q] \in \mathrm{Diff}_{k+l-1}(M)$ ([[§51 Differential Operators#^def-51-3|Definition §51.3]]).
+> Consequently, if $P \in \mathrm{Diff}_k(M)$ and $Q \in \mathrm{Diff}_l(M)$, then $[P, Q] \in \mathrm{Diff}_{k+l-1}(M)$ ([[§52 Differential Operators#^def-52-3|Definition §52.3]]).
 
-^prop-52-5
+^prop-53-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* (1) is [[§51 Differential Operators#^prop-51-1|Proposition §51.1]], (2) is [[§51 Differential Operators#^prop-51-2|Proposition §51.2]] (2), and (3) is [[§52 Lie Bracket and Lie Algebra#^lem-52-1|Lemma §52.1]], read with $D_\mathbf{X}$ written out. So for generators $A, B$ of orders $a, b \in \{0, 1\}$ ($0$ for a multiplication, $1$ for a vector field), $[A, B] \in \mathrm{Diff}_{a+b-1}(M)$. Two identities, checked by expanding (each side of the first is $PQR - QRP$),
+> *(Not from lecture; filled in.)* (1) is [[§52 Differential Operators#^prop-52-1|Proposition §52.1]], (2) is [[§52 Differential Operators#^prop-52-2|Proposition §52.2]] (2), and (3) is [[§53 Lie Bracket and Lie Algebra#^lem-53-1|Lemma §53.1]], read with $D_\mathbf{X}$ written out. So for generators $A, B$ of orders $a, b \in \{0, 1\}$ ($0$ for a multiplication, $1$ for a vector field), $[A, B] \in \mathrm{Diff}_{a+b-1}(M)$. Two identities, checked by expanding (each side of the first is $PQR - QRP$),
 >
 > $$
 > [P, Q \circ R] = [P, Q] \circ R + Q \circ [P, R], \qquad [P \circ Q, R] = P \circ [Q, R] + [P, R] \circ Q ,
 > $$
 >
-> carry this to composites, using [[§51 Differential Operators#^prop-51-3|Proposition §51.3]] (2).
+> carry this to composites, using [[§52 Differential Operators#^prop-52-3|Proposition §52.3]] (2).
 >
 > *A generator against a composite.* Let $A$ have order $a$ and $B = B_1 \circ \cdots \circ B_s$ be a composite of generators of orders $b_i$, $l = \sum_i b_i$. By induction on $s$ ($s = 0$: $[A, \mathrm{id}] = 0$), with $B' = B_2 \circ \cdots \circ B_s$,
 >
@@ -289,22 +289,22 @@ The bracket of two vector fields is one instance of a general fact about the rin
 > [A_1 \circ A', B] = A_1 \circ [A', B] + [A_1, B] \circ A' \in \mathrm{Diff}_{a_1} \circ \mathrm{Diff}_{k - a_1 + l - 1} + \mathrm{Diff}_{a_1 + l - 1} \circ \mathrm{Diff}_{k - a_1} \subseteq \mathrm{Diff}_{k + l - 1} .
 > $$
 >
-> *Sums.* The commutator is bilinear. A $P \in \mathrm{Diff}_k(M)$ is a sum of composites with $k' \le k$ vector-field factors, a $Q \in \mathrm{Diff}_l(M)$ one of composites with $l' \le l$, and each $[\text{composite}, \text{composite}]$ lies in $\mathrm{Diff}_{k' + l' - 1} \subseteq \mathrm{Diff}_{k + l - 1}$ ([[§51 Differential Operators#^prop-51-3|Proposition §51.3]] (1)).
+> *Sums.* The commutator is bilinear. A $P \in \mathrm{Diff}_k(M)$ is a sum of composites with $k' \le k$ vector-field factors, a $Q \in \mathrm{Diff}_l(M)$ one of composites with $l' \le l$, and each $[\text{composite}, \text{composite}]$ lies in $\mathrm{Diff}_{k' + l' - 1} \subseteq \mathrm{Diff}_{k + l - 1}$ ([[§52 Differential Operators#^prop-52-3|Proposition §52.3]] (1)).
 
-^pf-52-5
+^pf-53-5
 
-*Uses:* [[§52 Lie Bracket and Lie Algebra#^def-52-1|Def. §52.1]], [[§51 Differential Operators#^def-51-2|Def. §51.2]], [[§51 Differential Operators#^def-51-3|Def. §51.3]], [[§51 Differential Operators#^prop-51-1|§51.1]], [[§51 Differential Operators#^prop-51-2|§51.2]], [[§52 Lie Bracket and Lie Algebra#^lem-52-1|§52.1]], [[§51 Differential Operators#^prop-51-3|§51.3]]
+*Uses:* [[§53 Lie Bracket and Lie Algebra#^def-53-1|Def. §53.1]], [[§52 Differential Operators#^def-52-2|Def. §52.2]], [[§52 Differential Operators#^def-52-3|Def. §52.3]], [[§52 Differential Operators#^prop-52-1|§52.1]], [[§52 Differential Operators#^prop-52-2|§52.2]], [[§53 Lie Bracket and Lie Algebra#^lem-53-1|§53.1]], [[§52 Differential Operators#^prop-52-3|§52.3]]
 
-So two differential operators commute “up to lower order”. For $k = l = 1$, applied to $D_\mathbf{X}$ and $D_\mathbf{Y}$, the second-order parts of $\mathbf{X} \circ \mathbf{Y}$ and $\mathbf{Y} \circ \mathbf{X}$ cancel, as in [[§52 Lie Bracket and Lie Algebra#^ex-52-1|Example §52.1]]; what is left lies in $\mathrm{Diff}_1(M)$ and kills constants, and is the vector field $[\mathbf{X}, \mathbf{Y}]$ ([[§51 Differential Operators#^prop-51-3|Proposition §51.3]] (4)).
+So two differential operators commute “up to lower order”. For $k = l = 1$, applied to $D_\mathbf{X}$ and $D_\mathbf{Y}$, the second-order parts of $\mathbf{X} \circ \mathbf{Y}$ and $\mathbf{Y} \circ \mathbf{X}$ cancel, as in [[§53 Lie Bracket and Lie Algebra#^ex-53-1|Example §53.1]]; what is left lies in $\mathrm{Diff}_1(M)$ and kills constants, and is the vector field $[\mathbf{X}, \mathbf{Y}]$ ([[§52 Differential Operators#^prop-52-3|Proposition §52.3]] (4)).
 
-> [!example] Example §52.3: The Cross Product
-> $\mathbb{R}^3$ with the [[§96 The Cross Product#^def-96-1|cross product]] is a [[§52 Lie Bracket and Lie Algebra#^def-52-2|Lie algebra]], and the [[§25 The Geometric Tangent Space#^def-25-3|hat map]] of [[§25 The Geometric Tangent Space#^def-25-3|Definition §25.3]] is an isomorphism of Lie algebras onto $\operatorname{Skew}(3, \mathbb{R}) = \mathfrak{so}(3)$ with the [[§52 Lie Bracket and Lie Algebra#^ex-52-2|matrix commutator]]:
+> [!example] Example §53.3: The Cross Product
+> $\mathbb{R}^3$ with the [[§96 The Cross Product#^def-96-1|cross product]] is a [[§53 Lie Bracket and Lie Algebra#^def-53-2|Lie algebra]], and the [[§25 The Geometric Tangent Space#^def-25-3|hat map]] of [[§25 The Geometric Tangent Space#^def-25-3|Definition §25.3]] is an isomorphism of Lie algebras onto $\operatorname{Skew}(3, \mathbb{R}) = \mathfrak{so}(3)$ with the [[§53 Lie Bracket and Lie Algebra#^ex-53-2|matrix commutator]]:
 >
 > $$
 > [\hat a, \hat b] = \hat a \hat b - \hat b \hat a = \widehat{a \times b} .
 > $$
 
-^ex-52-3
+^ex-53-3
 
 > [!proof]+ Proof
 > *(Lecture 16 mentioned only that the cross product satisfies the Jacobi identity — “if you want to be really mean to your 215 students, give them the Jacobi identity for the cross product. Don't do that.” The proof via the hat map is filled in.)* There are three steps: the bracket identity $[\hat a, \hat b] = \widehat{a \times b}$; that $\operatorname{Skew}(3,\mathbb{R})$ is a Lie algebra under the commutator; and the transfer of the Lie algebra axioms to $(\mathbb{R}^3, \times)$ along the hat map.
@@ -327,7 +327,7 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 > [A,B]^{\mathsf T} = B^{\mathsf T} A^{\mathsf T} - A^{\mathsf T} B^{\mathsf T} = [B^{\mathsf T}, A^{\mathsf T}] = (-B)(-A) - (-A)(-B) = [B, A] = -[A,B] .
 > $$
 >
-> So the commutator restricts to a bracket $\operatorname{Skew}(3,\mathbb{R}) \times \operatorname{Skew}(3,\mathbb{R}) \to \operatorname{Skew}(3,\mathbb{R})$, and bilinearity, skew-symmetry and the Jacobi identity hold there because they hold for all matrices; so it is a Lie algebra by Example [[§52 Lie Bracket and Lie Algebra#^ex-52-2|§52.2]].
+> So the commutator restricts to a bracket $\operatorname{Skew}(3,\mathbb{R}) \times \operatorname{Skew}(3,\mathbb{R}) \to \operatorname{Skew}(3,\mathbb{R})$, and bilinearity, skew-symmetry and the Jacobi identity hold there because they hold for all matrices; so it is a Lie algebra by Example [[§53 Lie Bracket and Lie Algebra#^ex-53-2|§53.2]].
 >
 > *Transfer.* The hat map is a linear isomorphism (Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]]) carrying $\times$ to the commutator, $\widehat{a \times b} = [\hat a, \hat b]$; so the cross product inherits bilinearity, skew-symmetry and the Jacobi identity — without the big computation. In detail, for $a, a', b, b', c \in \mathbb{R}^3$ and $s, t \in \mathbb{R}$, using the linearity of the hat map, the identity, and the properties of the commutator on $\operatorname{Skew}(3,\mathbb{R})$:
 > - *bilinearity:* $\widehat{(sa + ta') \times b} = [s\hat a + t\hat a', \hat b] = s\,[\hat a, \hat b] + t\,[\hat a', \hat b] = s\,\widehat{a \times b} + t\,\widehat{a' \times b}$, and $\widehat{a \times (sb + tb')} = [\hat a, s\hat b + t\hat b'] = s\,\widehat{a \times b} + t\,\widehat{a \times b'}$;
@@ -340,12 +340,12 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 >
 > Since the hat map is linear and injective, each equality between hats is the corresponding equality in $\mathbb{R}^3$. So $(\mathbb{R}^3, \times)$ is a Lie algebra, and the hat map, a linear bijection with $\widehat{a \times b} = [\hat a, \hat b]$, is an isomorphism of Lie algebras onto $\operatorname{Skew}(3,\mathbb{R})$.
 
-^pf-ex-52-3
+^pf-ex-53-3
 
-*Uses:* [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]], [[§52 Lie Bracket and Lie Algebra#^ex-52-2|Ex. §52.2]], [[§52 Lie Bracket and Lie Algebra#^def-52-2|Def. §52.2]]
+*Uses:* [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]], [[§53 Lie Bracket and Lie Algebra#^ex-53-2|Ex. §53.2]], [[§53 Lie Bracket and Lie Algebra#^def-53-2|Def. §53.2]]
 
 > [!remark]- Connections
 > - The cross product and its algebraic properties, proved by components: [[§96 The Cross Product#^def-96-1|Calc Def. §96.1]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]].
 > - The same computation for the infinitesimal rotations of quantum mechanics: [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-1|QM Theorem §C5.1.1]], with [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^rem-c5-1-1|QM ★ Remark: The Lie algebra of SO(3)]].
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-4|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§52 Lie Bracket and Lie Algebra#^ex-52-3|Ex. §52.3]]; and Lie groups in [[§54 Lie Groups and Left-Invariant Vector Fields#^prop-54-1|§54.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-4|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§45 SU(2) → SO(3)꞉ The Double Cover#^thm-45-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§53 Lie Bracket and Lie Algebra#^ex-53-3|Ex. §53.3]]; and Lie groups in [[§55 Lie Groups and Left-Invariant Vector Fields#^prop-55-1|§55.1]].

@@ -54,7 +54,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
-> - The external description becomes the regular value theorem for manifolds, [[§37 Regular Submanifolds#^thm-37-9|§37.9]], and adapted charts, [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-8|§37.8]]); the internal one becomes the local normal form for immersions, [[§39 Immersions#^thm-39-1|§39.1]].
+> - The external description becomes the regular value theorem for manifolds, [[§37 Regular Submanifolds#^thm-37-9|§37.9]], and adapted charts, [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-8|§37.8]]); the internal one becomes the local normal form for immersions, [[§40 Immersions#^thm-40-1|§40.1]].
 > - The tangent space in both pictures: [[§25 The Geometric Tangent Space#^cor-25-4|§25.4]].
 
 The circle in its three descriptions is collected in [[§24 The Circle|§24]].
@@ -215,6 +215,6 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§37 Regular Submanifolds#^lem-37-5|§37.5]].
 
-Not stated in lecture; filled in because it is used repeatedly — tacitly in the proof of [[§24 The Circle#^prop-24-1|Proposition §24.1]], and explicitly for $S^n \to \mathbb{RP}^n$ in [[§42 Projective Spaces and the Hopf Fibration#^ex-42-1|Ex. §42.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
+Not stated in lecture; filled in because it is used repeatedly — tacitly in the proof of [[§24 The Circle#^prop-24-1|Proposition §24.1]], and explicitly for $S^n \to \mathbb{RP}^n$ in [[§43 Projective Spaces and the Hopf Fibration#^ex-43-1|Ex. §43.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 
 That the three circle atlases define one smooth structure is collected in [[§24 The Circle|§24]].

@@ -2,10 +2,10 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 5
-section: 41
+section: 42
 tags: [differentiable-manifolds, math591]
 ---
-← [[§40 Embeddings]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§42 Projective Spaces and the Hopf Fibration]] →
+← [[§41 Embeddings]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§43 Projective Spaces and the Hopf Fibration]] →
 
 *Stage: recap — The two pictures of a manifold — a subset of Euclidean space, and a space with an atlas — set side by side, definition by definition and theorem by theorem, with the result that bridges each pair.*
 
@@ -24,15 +24,15 @@ The course has built manifolds in two ways. The *geometric* picture is the equat
 | regular points | $F'(p)$ surjective | $F_{\ast p}$ surjective | Proposition [[§30 The Differential in Coordinates#^prop-30-8\|§30.8]] |
 | key theorems | implicit and inverse function theorems | normal form; local diffeomorphism criterion | proved through charts |
 | regular values | level sets are manifolds | level sets are submanifolds | Proposition [[§37 Regular Submanifolds#^prop-37-11\|§37.11]] |
-| global picture | inside $\mathbb{R}^N$ by construction | no ambient space | Theorem [[§40 Embeddings#^thm-40-1\|§40.1]] |
+| global picture | inside $\mathbb{R}^N$ by construction | no ambient space | Theorem [[§41 Embeddings#^thm-41-1\|§41.1]] |
 
 ## The Object and Its Smooth Structure
 
 | Geometric | Abstract | How they correspond |
 |---|---|---|
 | Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]] (external: a regular level set) | Definition [[§37 Regular Submanifolds#^def-37-2\|§37.2]] (a coordinate slice of an adapted chart, Definition [[§37 Regular Submanifolds#^def-37-3\|§37.3]]) | Proposition [[§37 Regular Submanifolds#^prop-37-8\|§37.8]]: the slice is a fourth equivalent description |
-| Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]], Definition [[§20 Manifolds in Euclidean Space#^def-20-3\|§20.3]] (a parametrization) | the inverse of a chart (the remark [[§20 Manifolds in Euclidean Space#^rem-20-2\|A Parametrization Is an Inverse Chart]]); Definition [[§39 Immersions#^def-39-1\|§39.1]] | rank $n$ Jacobian = immersion; homeomorphism onto the image = embedding (Definition [[§40 Embeddings#^def-40-1\|§40.1]]) |
-| Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] (the descriptions agree) | Proposition [[§37 Regular Submanifolds#^prop-37-8\|§37.8]], Theorem [[§40 Embeddings#^thm-40-1\|§40.1]] | straightening a graph gives an adapted chart |
+| Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]], Definition [[§20 Manifolds in Euclidean Space#^def-20-3\|§20.3]] (a parametrization) | the inverse of a chart (the remark [[§20 Manifolds in Euclidean Space#^rem-20-2\|A Parametrization Is an Inverse Chart]]); Definition [[§40 Immersions#^def-40-1\|§40.1]] | rank $n$ Jacobian = immersion; homeomorphism onto the image = embedding (Definition [[§41 Embeddings#^def-41-1\|§41.1]]) |
+| Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] (the descriptions agree) | Proposition [[§37 Regular Submanifolds#^prop-37-8\|§37.8]], Theorem [[§41 Embeddings#^thm-41-1\|§41.1]] | straightening a graph gives an adapted chart |
 | Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2\|§20.2]] (graph charts) | Definition [[§17 Differentiable Structures#^def-17-9\|§17.9]]; Proposition [[§37 Regular Submanifolds#^prop-37-3\|§37.3]] (induced structure) | Proposition [[§37 Regular Submanifolds#^prop-37-11\|§37.11]](1): the same structure |
 | Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4\|§22.4]] (a vector space) | Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2\|§22.2]] | a vector space is a manifold with one global chart |
 
@@ -164,14 +164,14 @@ The pattern is the one of the whole course: a definition is transplanted by repl
 
 A geometric manifold sits in $\mathbb{R}^N$ by construction; an abstract one need not sit anywhere. The bridge is an embedding:
 
-![[§40 Embeddings#^def-40-1]]
+![[§41 Embeddings#^def-41-1]]
 
-The image of an embedding is a submanifold (Theorem [[§40 Embeddings#^thm-40-1|§40.1]]), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]] is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition [[§40 Embeddings#^def-40-4|§40.4]], Proposition [[§40 Embeddings#^prop-40-12|§40.12]]), regular exactly when the immersion is an embedding (Proposition [[§40 Embeddings#^prop-40-14|§40.14]]); the figure-eight and the irrational line on the torus are immersed but not regular (Example [[§40 Embeddings#^ex-40-1|§40.1]]).
+The image of an embedding is a submanifold (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]] is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition [[§41 Embeddings#^def-41-4|§41.4]], Proposition [[§41 Embeddings#^prop-41-12|§41.12]]), regular exactly when the immersion is an embedding (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]); the figure-eight and the irrational line on the torus are immersed but not regular (Example [[§41 Embeddings#^ex-41-1|§41.1]]).
 
 > [!remark] Remark: Whitney's Embedding Theorem
 > *(Not from lecture; stated, not proved, in these notes.)* Every smooth $m$-manifold — Hausdorff and second countable, as in Definition [[§17 Differentiable Structures#^def-17-9|§17.9]] — admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem 6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
 
-^rem-41-1
+^rem-42-1
 
 ## What Each Picture Gives
 

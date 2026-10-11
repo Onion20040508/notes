@@ -51,14 +51,14 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 > U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
 > $$
 >
-> Regular submanifolds are also called **embedded** submanifolds, as opposed to the [[§40 Embeddings#^def-40-4|immersed submanifolds]] of [[§40 Embeddings#^def-40-4|Definition §40.4]]. In these notes, “submanifold” without qualification means a regular submanifold.
+> Regular submanifolds are also called **embedded** submanifolds, as opposed to the [[§41 Embeddings#^def-41-4|immersed submanifolds]] of [[§41 Embeddings#^def-41-4|Definition §41.4]]. In these notes, “submanifold” without qualification means a regular submanifold.
 >
 > *Lee: Theorem 5.8*
 
 ^def-37-2
 
 > [!remark]- Connections
-> - The other kind of submanifold: [[§40 Embeddings#^def-40-4|immersed submanifolds, Def. §40.4]]; when an immersed submanifold is regular: [[§40 Embeddings#^prop-40-14|§40.14]]; local images of immersions: [[§39 Immersions#^cor-39-2|§39.2]].
+> - The other kind of submanifold: [[§41 Embeddings#^def-41-4|immersed submanifolds, Def. §41.4]]; when an immersed submanifold is regular: [[§41 Embeddings#^prop-41-14|§41.14]]; local images of immersions: [[§40 Immersions#^cor-40-2|§40.2]].
 > - Codimension in the Euclidean setting: [[§26 Transversality#^def-26-1|Def. §26.1]].
 > - The geometric stage: in $\mathbb{R}^{n+k}$ the submanifolds are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]] — the external, internal and graph descriptions ([[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) — and the slice of this definition is a fourth: [[§37 Regular Submanifolds#^prop-37-8|§37.8]].
 > - Their tangent spaces: $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^rem-37-2|Remark: The Tangent Spaces Match]], [[§37 Regular Submanifolds#^prop-37-11|§37.11]]).

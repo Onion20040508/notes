@@ -42,8 +42,8 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^prop-37-4|Proposition §37.4: Open Submanifolds Are the Regular Submanifolds of Codimension 0]]
 - [[§37 Regular Submanifolds#^prop-37-8|Proposition §37.8: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
 - [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
-- [[§38 Fibrations#^prop-38-3|Proposition §38.3: The Möbius Band Is a Fibration]]
-- [[§47 The Tangent Bundle#^cor-47-3|Corollary §47.3: The Tangent Bundle Is a Fibration]]
+- [[§39 Examples of Fibrations#^prop-39-1|Proposition §39.1: The Möbius Band Is a Fibration]]
+- [[§48 The Tangent Bundle#^cor-48-3|Corollary §48.3: The Tangent Bundle Is a Fibration]]
 
 ## Connections
 - **Used for.** Writing down any atlas specifies a smooth structure ([[§17 Differentiable Structures#^def-17-9|Def. §17.9]]): the standard atlas of ℂPⁿ ([[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§24 The Circle#^prop-24-1|§24.1]]).
