@@ -52,13 +52,13 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > \mathfrak{X}(M) \qquad \big(\text{LaTeX: } \mathtt{\backslash mathfrak\{X\}}\big).
 > $$
 >
-> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, $c \in \mathbb{R}$ and $f \in C^\infty(M)$, the sum, the scalar multiple and the product with $f$ are defined pointwise, in the vector space $T_pM$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]):
+> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$, the sum and the scalar multiple are defined pointwise, in the vector space $T_pM$:
 >
 > $$
-> (\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p, \qquad (c\mathbf{X})_p = c\, \mathbf{X}_p, \qquad (f\mathbf{X})_p = f(p)\, \mathbf{X}_p, \qquad p \in M .
+> (\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p, \qquad (c\mathbf{X})_p = c\, \mathbf{X}_p, \qquad p \in M .
 > $$
 >
-> [[§52 Vector Fields#^prop-52-2|Proposition §52.2]] shows that these are again vector fields and that $\mathfrak{X}(M)$ is a real vector space.
+> Proposition [[§52 Vector Fields#^prop-52-2|§52.2]] shows that these are again vector fields and that $\mathfrak{X}(M)$ is a real vector space. Multiplying by a function rather than a constant is the next definition.
 >
 > *Lee: Ch. 8, Vector Fields on Manifolds*
 
@@ -126,7 +126,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > 1. If $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$, then $\mathbf{X} + \mathbf{Y}$ and $c\mathbf{X}$ ([[§52 Vector Fields#^def-52-2|Definition §52.2]]) are [[§52 Vector Fields#^def-52-1|vector fields]].
 > 2. The zero field $\mathbf{0}$, $\mathbf{0}_p = 0_p \in T_pM$, is a vector field.
 > 3. With these operations $\mathfrak{X}(M)$ is a real vector space, with zero vector $\mathbf{0}$ and additive inverse $-\mathbf{X} = (-1)\mathbf{X}$.
-> 4. More generally, if $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, then $f\mathbf{X}$ is a vector field.
+> 4. More generally, if $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, then $f\mathbf{X}$ ([[§52 Vector Fields#^def-52-3|Definition §52.3]]) is a vector field.
 
 ^prop-52-2
 
