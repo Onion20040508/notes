@@ -11,11 +11,13 @@ tags: [differentiable-manifolds, hub]
 - [[§32 The Cotangent Space#^thm-32-9|Theorem §32.9: The Cotangent Space from Germs]], in [[§32 The Cotangent Space]]
 
 ## Its proof uses
+- [[§21 Linear Algebra Toolkit#^def-21-4|Definition §21.4: Bilinear Pairing]]
 - [[§21 Linear Algebra Toolkit#^thm-21-5|Theorem §21.5: Non-Degenerate Pairings]]
 - [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|Lemma §28.2: First Properties of Derivations]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5: Basis Theorem]]
 - [[§32 The Cotangent Space#^prop-32-2|Proposition §32.2: The Differential Evaluates Derivations]]
 - [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3: The Differential in Coordinates]]
+- [[§32 The Cotangent Space#^cor-32-5|Corollary §32.5: Properties of the Differential of a Function]]
 - [[§32 The Cotangent Space#^def-32-7|Definition §32.7: The Pairing Between Tangent Vectors and I_p/I_p²]]
 - [[§32 The Cotangent Space#^prop-32-8|Proposition §32.8: The Pairing Is Well Defined and Non-Degenerate]]
 

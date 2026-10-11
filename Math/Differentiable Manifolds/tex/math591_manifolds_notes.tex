@@ -6848,7 +6848,23 @@ df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p .
 \end{lembox}
 
 \begin{proof}
-\textit{(Lecture~10: ``it suffices to check the identity on basis vectors.'' In lecture the left side came from the matrix of $f_{*p}$ (Theorem~\ref{lem:differential-matrix}), a $1 \times m$ row --- ``remember, gradients are across'', after a student first proposed $m \times 1$ --- whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition~\ref{prop:df-derivation} gives the same value directly.)} By Proposition~\ref{prop:df-derivation}, $dx^i|_p(\partial/\partial x^j|_p) = \partial x^i/\partial x^j(p) = \partial r^i/\partial r^j = \delta^i_j$, which is the defining property of the dual basis (Definition~\ref{def:dual}). Two linear functionals agree if they agree on a basis (Proposition~\ref{fact:linalg}(2)), so it suffices to evaluate both sides of the formula on $\partial/\partial x^j|_p$. The left side gives $\partial f/\partial x^j(p)$, again by Proposition~\ref{prop:df-derivation}; the right side gives $\sum_i \partial f/\partial x^i(p)\,\delta^i_j = \partial f/\partial x^j(p)$.
+\textit{(Lecture~10: ``it suffices to check the identity on basis vectors.'' In lecture the left side came from the matrix of $f_{*p}$ (Theorem~\ref{lem:differential-matrix}), a $1 \times m$ row --- ``remember, gradients are across'', after a student first proposed $m \times 1$ --- whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition~\ref{prop:df-derivation} gives the same value directly.)}
+
+\emph{Step 1: the $dx^i|_p$ are the dual basis.} Let $\varphi = (x^1, \ldots, x^m)$ be the chart, so that $x^i \circ \varphi^{-1} = r^i$, the $i$-th standard coordinate of $\mathbb{R}^m$ (Definition~\ref{def:coordinate-functions}). For each $i$ and $j$, Proposition~\ref{prop:df-derivation} with $f = x^i$ and $D = \partial/\partial x^j|_p$, followed by Definition~\ref{def:coordinate-derivation}, gives
+\[
+dx^i|_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \frac{\partial}{\partial x^j}\Big|_p\big[x^i\big] = \frac{\partial (x^i \circ \varphi^{-1})}{\partial r^j}\big(\varphi(p)\big) = \frac{\partial r^i}{\partial r^j}\big(\varphi(p)\big) = \delta^i_j .
+\]
+This is the defining property of the dual basis (Definition~\ref{def:dual-basis}) of the basis $\{\partial/\partial x^j|_p\}$ of $T_pM$ (Theorem~\ref{thm:tangent-basis}). By Proposition~\ref{prop:dual-basis} the $dx^i|_p$ form a basis of $T_p^*M$, and $\dim T_p^*M = m$.
+
+\emph{Step 2: the formula.} Both sides are linear functionals on $T_pM$, so by Proposition~\ref{fact:linalg}(2) it suffices that they agree on each basis vector $\partial/\partial x^j|_p$. The left side gives, by Proposition~\ref{prop:df-derivation},
+\[
+df_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \frac{\partial}{\partial x^j}\Big|_p[f] = \frac{\partial f}{\partial x^j}(p) .
+\]
+The right side is a linear combination of covectors, evaluated pointwise (Definition~\ref{def:dual}); by Step 1 only the term $i = j$ survives:
+\[
+\Big(\sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p\Big)\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, \delta^i_j = \frac{\partial f}{\partial x^j}(p) .
+\]
+The two values agree for every $j$, so the two covectors are equal.
 \end{proof}
 
 \begin{corbox}[Components of a Covector]\thmlabel{cor:covector-components}
@@ -6861,7 +6877,11 @@ The numbers $a_1, \ldots, a_m$ are the \textbf{components} of $\alpha$ in the ch
 \end{corbox}
 
 \begin{proof}
-\textit{(Lecture~15 recalled the basis $dx^j|_p$ --- ``a fact that I forgot to mention to remind you'' --- and read off the components by evaluation.)} By Lemma~\ref{lem:df-coords} the $dx^j|_p$ form the basis of $T_p^*M$ dual to the $\partial/\partial x^j|_p$, and Proposition~\ref{prop:dual-basis} expands every element of a dual space in the dual basis with the coefficients $\alpha(\partial/\partial x^j|_p)$.
+\textit{(Lecture~15 recalled the basis $dx^j|_p$ --- ``a fact that I forgot to mention to remind you'' --- and read off the components by evaluation.)} By Lemma~\ref{lem:df-coords}, $(dx^1|_p, \ldots, dx^m|_p)$ is a basis of $T_p^*M$, so $\alpha = \sum_j a_j\, dx^j|_p$ for unique numbers $a_1, \ldots, a_m$. To find $a_k$, evaluate both sides at $\partial/\partial x^k|_p$, using that covectors are added and scaled pointwise (Definition~\ref{def:dual}) and that $dx^j|_p(\partial/\partial x^k|_p) = \delta^j_k$ (Lemma~\ref{lem:df-coords}):
+\[
+\alpha\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, dx^j\big|_p\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, \delta^j_k = a_k .
+\]
+This is the second formula of Proposition~\ref{prop:dual-basis}, with $e_j = \partial/\partial x^j|_p$ and $\varepsilon^j = dx^j|_p$.
 \end{proof}
 
 \begin{corbox}[Properties of the Differential of a Function]\thmlabel{cor:df-properties}
@@ -6966,19 +6986,27 @@ For $[f] \in C_p^\infty(M)$ the following are equivalent:
 \end{propbox}
 
 \begin{proof}
-(2)$\iff$(3): by Lemma~\ref{lem:df-coords}, $df_p = \sum_i \partial f/\partial x^i(p)\,dx^i|_p$, and the $dx^i|_p$ form a basis. Condition (2) mentions no chart, which is why ``one'' chart implies ``every''.
+\emph{(2)$\iff$(3).} Both conditions contain $f(p) = 0$; compare the rest. By Lemma~\ref{lem:df-coords}, in any chart at $p$,
+\[
+df_p = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p ,
+\]
+and the $dx^i|_p$ are linearly independent, so this combination is $0$ exactly when every coefficient is $0$: $df_p = 0 \iff \partial f/\partial x^i(p) = 0$ for all $i$. Condition (2) mentions no chart, so (3) in one chart gives (2), which gives (3) in every chart --- which is why ``one'' chart implies ``every''.
 
-(1)$\Rightarrow$(2): every element of $I_p^2$ lies in $I_p$, so it vanishes at $p$. And for $[u], [w] \in I_p$ and any $D \in T_pM$, Proposition~\ref{prop:df-derivation} and Lemma~\ref{lem:derivation-properties}(2) give $d(uw)_p(D) = D([u][w]) = 0$. So $d(uw)_p = 0$, and by linearity $df_p = 0$ for every $[f] \in I_p^2$.
+\emph{(1)$\Rightarrow$(2).} Let $[f] \in I_p^2$, so $[f] = \sum_k [u_k][w_k]$ with all $[u_k], [w_k] \in I_p$ (Definition~\ref{def:Ip-square}), i.e.\ $u_k(p) = w_k(p) = 0$. Evaluation at $p$ is an algebra homomorphism (Proposition~\ref{prop:germ-algebra}), so $f(p) = \sum_k u_k(p)\, w_k(p) = 0$. For $D \in T_pM$, by Proposition~\ref{prop:df-derivation}, the linearity of $D$, and its Leibniz rule (Definition~\ref{def:derivation}),
+\[
+df_p(D) = D[f] = \sum_k D\big([u_k][w_k]\big) = \sum_k \big(u_k(p)\, D[w_k] + w_k(p)\, D[u_k]\big) = \sum_k \big(0 \cdot D[w_k] + 0 \cdot D[u_k]\big) = 0 .
+\]
+This holds for every $D$, so $df_p = 0$. (The middle steps are Lemma~\ref{lem:derivation-properties}(2).)
 
-(3)$\Rightarrow$(1): \textit{(Assignment 3, Problem 3.)} Fix a chart $(U,\varphi)$ at $p$, a representative $f : V \to \mathbb{R}$, and put $a = \varphi(p)$ and $f_\varphi = f \circ \varphi^{-1}$. The hypotheses say $f_\varphi(a) = 0$ and $\partial f_\varphi/\partial r^i(a) = 0$. On an open ball $B \subseteq \varphi(U \cap V)$ centred at $a$, Hadamard's lemma (Lemma~\ref{lem:hadamard}) gives smooth $f_i$ with
+\emph{(3)$\Rightarrow$(1).} \textit{(Assignment 3, Problem 3.)} Fix a chart $(U,\varphi)$ at $p$, a representative $f : V \to \mathbb{R}$, and put $a = \varphi(p)$ and $f_\varphi = f \circ \varphi^{-1}$. The hypotheses say $f_\varphi(a) = f(p) = 0$ and $\partial f_\varphi/\partial r^i(a) = \partial f/\partial x^i(p) = 0$ (Definition~\ref{def:coordinate-derivation}). On an open ball $B \subseteq \varphi(U \cap V)$ centred at $a$, Hadamard's lemma (Lemma~\ref{lem:hadamard}) gives smooth $f_i$ on $B$ with $f_\varphi(r) = f_\varphi(a) + \sum_i (r^i - a^i) f_i(r)$; here the constant term $f_\varphi(a)$ is $0$, so
 \[
 f_\varphi(r) = \sum_{i=1}^n (r^i - a^i)\, f_i(r) \quad (r \in B), \qquad f_i(a) = \frac{\partial f_\varphi}{\partial r^i}(a) = 0 .
 \]
-On the open neighbourhood $W = \varphi^{-1}(B)$ of $p$, with $r = \varphi(q)$ and $r^i = x^i(q)$, this reads
+On the open neighbourhood $W = \varphi^{-1}(B)$ of $p$, substitute $r = \varphi(q)$; then $r^i = x^i(q)$, $a^i = x^i(p)$ and $f_\varphi(\varphi(q)) = f(q)$, so
 \[
-f(q) = \sum_{i=1}^n \big(x^i(q) - x^i(p)\big)\,(f_i \circ \varphi)(q) \qquad (q \in W),
+f(q) = \sum_{i=1}^n \big(x^i(q) - x^i(p)\big)\,(f_i \circ \varphi)(q) \qquad (q \in W).
 \]
-an identity of germs: $[f] = \sum_i [x^i - x^i(p)]\,[f_i \circ \varphi]$. Both factors of each term vanish at $p$ --- the second because $f_i(a) = 0$ --- so each term is a product of two elements of $I_p$, and $[f] \in I_p^2$.
+Two functions that agree on a neighbourhood of $p$ have the same germ, so $[f] = \sum_i [x^i - x^i(p)]\,[f_i \circ \varphi]$. In each term both factors lie in $I_p$: $x^i(p) - x^i(p) = 0$, and $(f_i \circ \varphi)(p) = f_i(a) = 0$. So $[f]$ is a finite sum of products of two elements of $I_p$, that is, $[f] \in I_p^2$ (Definition~\ref{def:Ip-square}).
 \end{proof}
 
 \begin{rembox}\label{rem:cotangent-2}
@@ -6995,11 +7023,26 @@ and the classes $[[x^1 - x^1(p)]], \ldots, [[x^n - x^n(p)]]$ form a basis of $I_
 \end{propbox}
 
 \begin{proof}
-Each $x^i - x^i(p)$ is smooth on $U$ and vanishes at $p$, so its germ lies in $I_p$. Put $g = f - \sum_i \partial f/\partial x^i(p)\,(x^i - x^i(p))$ near $p$. Then $g(p) = 0$ and, using $\partial x^i/\partial x^j = \delta^i_j$,
+Each $x^i - x^i(p)$ is smooth on $U$ and vanishes at $p$, so its germ lies in $I_p$. Two facts about partial derivatives at $p$ are used. They are linear, since $\partial/\partial x^j|_p$ is a derivation (Definition~\ref{def:coordinate-derivation}, Theorem~\ref{thm:tangent-basis}); and
 \[
-\frac{\partial g}{\partial x^j}(p) = \frac{\partial f}{\partial x^j}(p) - \sum_i \frac{\partial f}{\partial x^i}(p)\,\delta^i_j = 0,
+\frac{\partial\big(x^i - x^i(p)\big)}{\partial x^j}(p) = \frac{\partial x^i}{\partial x^j}(p) - 0 = \delta^i_j ,
 \]
-so $[g] \in I_p^2$ by Proposition~\ref{prop:second-order}. This is the displayed expansion, which shows that the classes span. For independence, suppose $\sum_i c_i\,[[x^i - x^i(p)]] = 0$, i.e.\ $\sum_i c_i\,[x^i - x^i(p)] \in I_p^2$. By Proposition~\ref{prop:second-order} its $j$-th partial at $p$ vanishes, and that partial is $c_j$.
+because a derivation kills constants (Lemma~\ref{lem:derivation-properties}(1)) and $\partial x^i/\partial x^j(p) = \delta^i_j$ (Step~1 of the proof of Lemma~\ref{lem:df-coords}).
+
+\emph{The expansion.} Let $[f] \in I_p$, write $c_i = \partial f/\partial x^i(p)$, and put $g = f - \sum_i c_i\,(x^i - x^i(p))$ near $p$. Then $g(p) = f(p) - \sum_i c_i \cdot 0 = 0$, and for each $j$
+\[
+\frac{\partial g}{\partial x^j}(p) = \frac{\partial f}{\partial x^j}(p) - \sum_{i=1}^n c_i\, \delta^i_j = c_j - c_j = 0 .
+\]
+By Proposition~\ref{prop:second-order} ((3)$\Rightarrow$(1)), $[g] \in I_p^2$, that is, $[[g]] = 0$. The projection $[f] \mapsto [[f]]$ is linear (Proposition~\ref{prop:quotient-vs}(1)), so from $[f] = [g] + \sum_i c_i\,[x^i - x^i(p)]$,
+\[
+[[f]] = [[g]] + \sum_{i=1}^n c_i\, [[x^i - x^i(p)]] = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p)\, [[x^i - x^i(p)]] .
+\]
+
+\emph{Spanning.} Every element of $I_p/I_p^2$ is a class $[[f]]$ with $[f] \in I_p$, so by the expansion the classes $[[x^i - x^i(p)]]$ span.
+
+\emph{Independence.} Suppose $\sum_i c_i\,[[x^i - x^i(p)]] = 0$. By linearity of the projection, the germ $[h] = \sum_i c_i\,[x^i - x^i(p)]$ has $[[h]] = 0$, i.e.\ $[h] \in I_p^2$. By Proposition~\ref{prop:second-order} ((1)$\Rightarrow$(3)), $\partial h/\partial x^j(p) = 0$ for every $j$; and by the two facts above, $\partial h/\partial x^j(p) = \sum_i c_i\, \delta^i_j = c_j$. So every $c_j = 0$.
+
+So the $n$ classes form a basis, and $\dim I_p/I_p^2 = n$.
 \end{proof}
 
 This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem~\ref{thm:tangent-basis}): the coefficients of $[[f]]$ are the first partials of $f$, just as the coefficients of a derivation $D$ were its values $D[x^i]$.
@@ -7017,11 +7060,28 @@ The pairing of Definition~\ref{def:cotangent-pairing} is well defined, bilinear,
 \end{propbox}
 
 \begin{proof}
-\emph{Well defined} \textit{(Problem~3(a))}. Each $D$ is a linear functional on $I_p$ that vanishes on $I_p^2$ (Lemma~\ref{lem:derivation-properties}(2)), so it descends to $I_p/I_p^2$ by the universal property of quotient spaces (Proposition~\ref{prop:quotient-vs}(2)). \emph{Bilinear:} derivations are linear, and they are added and scaled pointwise.
+\emph{Well defined} \textit{(Problem~3(a))}. The value $\langle D, [[f]] \rangle = D[f]$ must not depend on the representative $[f]$ of the class. If $[[f]] = [[f']]$, then $[f'] - [f] \in I_p^2$ (Definition~\ref{def:Ip-quotient}), say $[f'] - [f] = \sum_k [u_k][w_k]$ with $[u_k], [w_k] \in I_p$. By the linearity and the Leibniz rule of $D$ (Definition~\ref{def:derivation}),
+\[
+D[f'] - D[f] = D\big([f'] - [f]\big) = \sum_k \big(u_k(p)\, D[w_k] + w_k(p)\, D[u_k]\big) = 0,
+\]
+since $u_k(p) = w_k(p) = 0$. (Equivalently: $D$ restricted to $I_p$ is linear and vanishes on $I_p^2$, Lemma~\ref{lem:derivation-properties}(2), so it descends to $I_p/I_p^2$ by the universal property of quotient spaces, Proposition~\ref{prop:quotient-vs}(2).)
 
-\emph{Left non-degenerate.} If $D[f] = 0$ for every $[f] \in I_p$, then $D = 0$, because a derivation is determined by its values on $I_p$ (Lemma~\ref{lem:derivation-properties}(1)).
+\emph{Bilinear.} In the second argument, by the quotient operations (Definition~\ref{def:quotient-vs}) and the linearity of $D$:
+\[
+\big\langle D,\ a[[f]] + b[[g]] \big\rangle = \big\langle D, [[af + bg]] \big\rangle = D[af + bg] = a\,D[f] + b\,D[g] = a\,\langle D, [[f]] \rangle + b\,\langle D, [[g]] \rangle .
+\]
+In the first argument, because derivations are added and scaled pointwise (Definition~\ref{def:abstract-tangent}):
+\[
+\big\langle aD + bE,\ [[f]] \big\rangle = (aD + bE)[f] = a\,D[f] + b\,E[f] = a\,\langle D, [[f]] \rangle + b\,\langle E, [[f]] \rangle .
+\]
 
-\emph{Right non-degenerate.} If $[f] \in I_p$ and $D[f] = 0$ for every $D \in T_pM$, then $df_p = 0$ by Proposition~\ref{prop:df-derivation}; with $f(p) = 0$, Proposition~\ref{prop:second-order} gives $[f] \in I_p^2$, i.e.\ $[[f]] = 0$.
+\emph{Left non-degenerate.} Suppose $\langle D, [[f]] \rangle = D[f] = 0$ for every $[f] \in I_p$. Let $[f] \in C_p^\infty(M)$ be any germ. Then $[f] - \underline{f(p)} \in I_p$, since it vanishes at $p$, and $D$ kills the constant germ $\underline{f(p)}$ (Lemma~\ref{lem:derivation-properties}(1)); so
+\[
+D[f] = D\big[f - \underline{f(p)}\big] + D\big[\underline{f(p)}\big] = 0 + 0 = 0 .
+\]
+So $D$ vanishes on all germs: $D = 0$.
+
+\emph{Right non-degenerate.} Suppose $[f] \in I_p$ and $\langle D, [[f]] \rangle = D[f] = 0$ for every $D \in T_pM$. By Proposition~\ref{prop:df-derivation}, $df_p(D) = D[f] = 0$ for every $D$, so $df_p = 0$; and $f(p) = 0$ since $[f] \in I_p$. By Proposition~\ref{prop:second-order} ((2)$\Rightarrow$(1)), $[f] \in I_p^2$, that is, $[[f]] = 0$.
 \end{proof}
 
 \begin{thmbox}[The Cotangent Space from Germs]\thmlabel{thm:cotangent-ideal}
@@ -7038,7 +7098,25 @@ The isomorphisms are defined without any chart.
 \end{thmbox}
 
 \begin{proof}
-(1) $T_pM$ is finite-dimensional (Theorem~\ref{thm:tangent-basis}) and the pairing is non-degenerate (Proposition~\ref{prop:cotangent-pairing}), so Theorem~\ref{thm:pairing} applies. (2) $\Phi([[f]])(D) = \langle D, [[f]] \rangle = D[f] = df_p(D)$ by Proposition~\ref{prop:df-derivation}. (3) By (2), $\Phi([[x^i - x^i(p)]]) = d(x^i - x^i(p))_p = dx^i|_p$, since a constant has zero differential (Lemma~\ref{lem:derivation-properties}(1)); and the $dx^i|_p$ are dual to the $\partial/\partial x^i|_p$ by Lemma~\ref{lem:df-coords}. Every map in (1) is defined by $\langle D, [[f]] \rangle = D[f]$, which mentions no chart.
+\emph{(1)} Apply Theorem~\ref{thm:pairing} with $V = T_pM$, $W = I_p/I_p^2$ and $B = \langle\ ,\ \rangle$. Its hypotheses hold: the pairing is bilinear and non-degenerate (Proposition~\ref{prop:cotangent-pairing}), and $T_pM$ is finite-dimensional, of dimension $m$ (Theorem~\ref{thm:tangent-basis}). So the two induced maps of Definition~\ref{def:pairing},
+\[
+B^\flat : T_pM \to \big(I_p/I_p^2\big)^*, \ \ D \mapsto \langle D, \cdot\,\rangle, \qquad\qquad \Phi = B^\sharp : I_p/I_p^2 \to (T_pM)^*, \ \ [[f]] \mapsto \langle \cdot\,, [[f]] \rangle,
+\]
+are isomorphisms.
+
+\emph{(2)} For every $D \in T_pM$, by the definition of $\Phi$, the definition of the pairing, and Proposition~\ref{prop:df-derivation},
+\[
+\Phi([[f]])(D) = \langle D, [[f]] \rangle = D[f] = df_p(D) .
+\]
+The covectors $\Phi([[f]])$ and $df_p$ agree at every $D$, so they are equal.
+
+\emph{(3)} By (2) and the linearity of $d$ (Corollary~\ref{cor:df-properties}(1)), applied to $x^i$ and the constant function $x^i(p)$,
+\[
+\Phi\big([[x^i - x^i(p)]]\big) = d\big(x^i - x^i(p)\big)_p = dx^i|_p - d\big(x^i(p)\big)_p = dx^i|_p ,
+\]
+because the differential of a constant $c$ is $0$: $dc_p(D) = D[\underline{c}] = 0$ for every $D$ (Proposition~\ref{prop:df-derivation}, Lemma~\ref{lem:derivation-properties}(1)). The $dx^i|_p$ are the basis dual to the $\partial/\partial x^i|_p$ by Lemma~\ref{lem:df-coords}.
+
+\emph{No chart.} The pairing $\langle D, [[f]] \rangle = D[f]$ is defined without coordinates, and so are $B^\flat$ and $\Phi$, which are built from it alone; a chart enters only in (3), to name the bases.
 \end{proof}
 
 \begin{rembox}[The Most Natural Description]\label{rem:cotangent-natural}
