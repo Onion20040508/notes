@@ -54,31 +54,42 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - The dual basis and its coefficients: [[§12 Duality#^ladr-3-112|LADR 3.112]], [[§12 Duality#^ladr-3-114|LADR 3.114]], [[§12 Duality#^ladr-3-116|LADR 3.116]].
 
-> [!theorem] Corollary §33.2: Components of a Covector
-> In a chart $(x^1, \ldots, x^m)$ near $p$, every covector $\alpha \in T_p^*M$ is
+> [!definition] Definition §33.1: Components of a Covector
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart at $p$ and $\xi \in T_p^{\ast}M$. The **components** of $\xi$ in the chart are the numbers
 >
 > $$
-> \alpha = \sum_{j=1}^m a_j\, dx^j\big|_p, \qquad a_j = \alpha\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) .
+> \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big), \qquad i = 1, \ldots, m,
 > $$
 >
-> The numbers $a_1, \ldots, a_m$ are the **components** of $\alpha$ in the chart.
+> the values of $\xi$ on the coordinate basis of $T_pM$. They are the covector counterpart of the components $v^i = v[x^i]$ of a tangent vector $v \in T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]). The letters $\xi$ and $\xi_i$ are used for a covector and its components from here on, as in the coordinates $(x^1, \ldots, x^m, \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$ ([[§49 The Cotangent Bundle|§49]]).
+
+^def-33-1
+
+> [!theorem] Corollary §33.2: Covectors in the Dual Basis
+> In a chart $(x^1, \ldots, x^m)$ near $p$, every covector $\xi \in T_p^{\ast}M$ is the combination of the dual basis $dx^1|_p, \ldots, dx^m|_p$ whose coefficients are its components (Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]):
+>
+> $$
+> \xi = \sum_{j=1}^m \xi_j\, dx^j\big|_p, \qquad \xi_j = \xi\Big(\frac{\partial}{\partial x^j}\Big|_p\Big),
+> $$
+>
+> and these are the only coefficients for which the expansion holds.
 >
 > *Lee: Ch. 11, Covectors*
 
 ^cor-33-2
 
 > [!proof]+ Proof
-> *(Lecture 15 recalled the basis $dx^j|_p$ — “a fact that I forgot to mention to remind you” — and read off the components by evaluation.)* By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $(dx^1|_p, \ldots, dx^m|_p)$ is a basis of $T_p^{\ast}M$, so $\alpha = \sum_j a_j\, dx^j|_p$ for unique numbers $a_1, \ldots, a_m$. To find $a_k$, evaluate both sides at $\partial/\partial x^k|_p$, using that covectors are added and scaled pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]) and that $dx^j|_p(\partial/\partial x^k|_p) = \delta^j_k$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]):
+> *(Lecture 15 recalled the basis $dx^j|_p$ — “a fact that I forgot to mention to remind you” — and read off the components by evaluation.)* By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $(dx^1|_p, \ldots, dx^m|_p)$ is a basis of $T_p^{\ast}M$, so $\xi = \sum_j c_j\, dx^j|_p$ for unique numbers $c_1, \ldots, c_m$. To find $c_k$, evaluate both sides at $\partial/\partial x^k|_p$, using that covectors are added and scaled pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]) and that $dx^j|_p(\partial/\partial x^k|_p) = \delta^j_k$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]):
 >
 > $$
-> \alpha\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, dx^j\big|_p\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, \delta^j_k = a_k .
+> \xi_k = \xi\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m c_j\, dx^j\big|_p\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m c_j\, \delta^j_k = c_k .
 > $$
 >
-> This is the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], with $e_j = \partial/\partial x^j|_p$ and $\varepsilon^j = dx^j|_p$.
+> So the coefficients are the components, $c_k = \xi_k$. This is the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], with $e_j = \partial/\partial x^j|_p$ and $\varepsilon^j = dx^j|_p$.
 
 ^pf-33-2
 
-*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]]
+*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^def-33-1|Def. §33.1]]
 
 > [!remark]- Connections
 > - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§49 The Cotangent Bundle#^def-49-4|Def. §49.4]], [[§49 The Cotangent Bundle#^def-49-5|Def. §49.5]].

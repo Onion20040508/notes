@@ -8018,21 +8018,29 @@ The right side is a linear combination of covectors, evaluated pointwise (Defini
 The two values agree for every $j$, so the two covectors are equal.
 \end{proof}
 
-\begin{corbox}[Components of a Covector]\thmlabel{cor:covector-components}
-In a chart $(x^1, \ldots, x^m)$ near $p$, every covector $\alpha \in T_p^*M$ is
+\begin{defbox}[Components of a Covector]\deflabel{def:covector-components}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart at $p$ and $\xi \in T_p^*M$. The \textbf{components} of $\xi$ in the chart are the numbers
 \[
-\alpha = \sum_{j=1}^m a_j\, dx^j\big|_p, \qquad a_j = \alpha\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) .
+\xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big), \qquad i = 1, \ldots, m,
 \]
-The numbers $a_1, \ldots, a_m$ are the \textbf{components} of $\alpha$ in the chart.
+the values of $\xi$ on the coordinate basis of $T_pM$. They are the covector counterpart of the components $v^i = v[x^i]$ of a tangent vector $v \in T_pM$ (Theorem~\ref{thm:tangent-basis}). The letters $\xi$ and $\xi_i$ are used for a covector and its components from here on, as in the coordinates $(x^1, \ldots, x^m, \xi_1, \ldots, \xi_m)$ of $T^*M$ (\ref{sub:cotangent-bundle}).
+\end{defbox}
+
+\begin{corbox}[Covectors in the Dual Basis]\thmlabel{cor:covector-components}
+In a chart $(x^1, \ldots, x^m)$ near $p$, every covector $\xi \in T_p^*M$ is the combination of the dual basis $dx^1|_p, \ldots, dx^m|_p$ whose coefficients are its components (Definition~\ref{def:covector-components}):
+\[
+\xi = \sum_{j=1}^m \xi_j\, dx^j\big|_p, \qquad \xi_j = \xi\Big(\frac{\partial}{\partial x^j}\Big|_p\Big),
+\]
+and these are the only coefficients for which the expansion holds.
 \leeref{Ch.~11, \emph{Covectors}}
 \end{corbox}
 
 \begin{proof}
-\textit{(Lecture~15 recalled the basis $dx^j|_p$ --- ``a fact that I forgot to mention to remind you'' --- and read off the components by evaluation.)} By Lemma~\ref{lem:df-coords}, $(dx^1|_p, \ldots, dx^m|_p)$ is a basis of $T_p^*M$, so $\alpha = \sum_j a_j\, dx^j|_p$ for unique numbers $a_1, \ldots, a_m$. To find $a_k$, evaluate both sides at $\partial/\partial x^k|_p$, using that covectors are added and scaled pointwise (Definition~\ref{def:dual}) and that $dx^j|_p(\partial/\partial x^k|_p) = \delta^j_k$ (Lemma~\ref{lem:df-coords}):
+\textit{(Lecture~15 recalled the basis $dx^j|_p$ --- ``a fact that I forgot to mention to remind you'' --- and read off the components by evaluation.)} By Lemma~\ref{lem:df-coords}, $(dx^1|_p, \ldots, dx^m|_p)$ is a basis of $T_p^*M$, so $\xi = \sum_j c_j\, dx^j|_p$ for unique numbers $c_1, \ldots, c_m$. To find $c_k$, evaluate both sides at $\partial/\partial x^k|_p$, using that covectors are added and scaled pointwise (Definition~\ref{def:dual}) and that $dx^j|_p(\partial/\partial x^k|_p) = \delta^j_k$ (Lemma~\ref{lem:df-coords}):
 \[
-\alpha\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, dx^j\big|_p\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, \delta^j_k = a_k .
+\xi_k = \xi\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m c_j\, dx^j\big|_p\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m c_j\, \delta^j_k = c_k .
 \]
-This is the second formula of Proposition~\ref{prop:dual-basis}, with $e_j = \partial/\partial x^j|_p$ and $\varepsilon^j = dx^j|_p$.
+So the coefficients are the components, $c_k = \xi_k$. This is the second formula of Proposition~\ref{prop:dual-basis}, with $e_j = \partial/\partial x^j|_p$ and $\varepsilon^j = dx^j|_p$.
 \end{proof}
 
 \begin{rembox}\label{rem:cotangent}
@@ -9647,7 +9655,11 @@ Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U
 \begin{rembox}[Where Explicit Trivializations Come From]\label{rem:canonical-trivializations}
 \textit{(Not from lecture.)} In Definition~\ref{def:fibration} the local trivializations $\phi_\alpha$ are part of the data: a fibration has some, and nothing in the definition says how to find them --- the charts of the base $B$ carry no information about the total space or the fibre. So a fibration is a map that is, over each $U_\alpha$, a product fibration (Example~\ref{ex:product-fibration}), but there is no general formula for $\phi_\alpha$. Explicit trivializations come from extra structure:
 \begin{itemize}
-    \item \emph{The tangent and cotangent bundles} (\ref{sec:tangent-bundle}, \ref{sub:cotangent-bundle}) reverse the order: $TM$ and $T^*M$ start out as sets (Definitions~\ref{def:tangent-bundle-set} and~\ref{def:cotangent-bundle}), with no topology, and the trivializations are written down first. A chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives every fibre a basis, $\partial/\partial x^i|_p$ of $T_pM$ and $dx^i|_p$ of $T_p^*M$ (Theorem~\ref{thm:tangent-basis}, Lemma~\ref{lem:df-coords}), and writing a vector or covector in that basis is the trivialization, $v \mapsto (p, v^1, \ldots, v^m)$ (Definition~\ref{def:tb-charts}) and $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$ (Definition~\ref{def:ctb-trivialization}). The topology is then \emph{defined} from them: it is the unique topology for which every $TU$ is open and every chart $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism (Proposition~\ref{prop:tb-topology}; for $T^*M$, Proposition~\ref{prop:ctb-topology}), and the smooth structure is the one generated by these charts (Propositions~\ref{prop:tb-atlas} and~\ref{prop:cotangent-transition}). So the trivializations make the total space a manifold, and are local trivializations in the sense of Definition~\ref{def:fibration} by construction (Corollaries~\ref{cor:tb-fibration} and~\ref{cor:ctb-fibration}). For a general fibration the order is the other way: the total space is a manifold to begin with, and trivializations have to be found.
+    \item \emph{The tangent and cotangent bundles} (\ref{sec:tangent-bundle}, \ref{sub:cotangent-bundle}) reverse the order: $TM$ and $T^*M$ start out as sets (Definitions~\ref{def:tangent-bundle-set} and~\ref{def:cotangent-bundle}), with no topology, and the trivializations are written down first. A chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives every fibre a basis, $\partial/\partial x^i|_p$ of $T_pM$ and $dx^i|_p$ of $T_p^*M$ (Theorem~\ref{thm:tangent-basis}, Lemma~\ref{lem:df-coords}), and writing a tangent vector $v \in T_pM$ or a covector $\xi \in T_p^*M$ in that basis,
+\[
+v = \sum_{i=1}^m v^i\, \frac{\partial}{\partial x^i}\Big|_p, \quad v^i = v[x^i], \qquad\qquad \xi = \sum_{i=1}^m \xi_i\, dx^i\big|_p, \quad \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)
+\]
+(Theorem~\ref{thm:tangent-basis}, Corollary~\ref{cor:covector-components}), is the trivialization: $(p, v) \mapsto (p, v^1, \ldots, v^m)$ (Definition~\ref{def:tb-charts}) and $(p, \xi) \mapsto (p, \xi_1, \ldots, \xi_m)$ (Definition~\ref{def:ctb-trivialization}). The topology is then \emph{defined} from them: it is the unique topology for which every $TU$ is open and every chart $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism (Proposition~\ref{prop:tb-topology}; for $T^*M$, Proposition~\ref{prop:ctb-topology}), and the smooth structure is the one generated by these charts (Propositions~\ref{prop:tb-atlas} and~\ref{prop:cotangent-transition}). So the trivializations make the total space a manifold, and are local trivializations in the sense of Definition~\ref{def:fibration} by construction (Corollaries~\ref{cor:tb-fibration} and~\ref{cor:ctb-fibration}). For a general fibration the order is the other way: the total space is a manifold to begin with, and trivializations have to be found.
     \item \emph{A quotient description} of the total space lies in between, as for the Möbius band (Proposition~\ref{prop:mobius-fibration}): the topology is the quotient topology, given in advance, but the smooth structure is defined by the same charts that give the trivializations.
     \item \emph{Local sections} (Definition~\ref{def:local-section}) give them for the Hopf fibration (Proposition~\ref{prop:hopf-section-trivialization}), whose total space $S^{2n+1}$ is a manifold in advance.
 \end{itemize}
