@@ -399,7 +399,7 @@ Moreover, all the tangent spaces of $V$ are identified with one another, and wit
 
 **Transcription note (Lecture 17).** Page 45 of the handwritten notes writes the identification as “$T_pM \cong T_0V \cong V$”; it is $T_pV \cong T_0V \cong V$.
 
-Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§55 Lie Groups and Left-Invariant Vector Fields#^def-55-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§55 Lie Groups and Left-Invariant Vector Fields#^def-55-1|Lie group]] $(V, +)$ ([[§55 Lie Groups and Left-Invariant Vector Fields#^ex-55-2|Example §55.2]]).
+Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§56 Lie Groups and Left-Invariant Vector Fields#^def-56-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§56 Lie Groups and Left-Invariant Vector Fields#^def-56-1|Lie group]] $(V, +)$ ([[§56 Lie Groups and Left-Invariant Vector Fields#^ex-56-2|Example §56.2]]).
 
 > [!definition] Definition §30.2: Rank of a Smooth Map
 > Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation.

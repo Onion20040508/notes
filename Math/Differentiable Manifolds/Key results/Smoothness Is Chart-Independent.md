@@ -39,7 +39,7 @@ tags: [differentiable-manifolds, hub]
 - [[§40 Immersions#^thm-40-1|Theorem §40.1: Local Normal Form for Immersions]]
 - [[§50 One-Forms#^prop-50-1|Proposition §50.1: One-Forms in Coordinates]]
 - [[§50 One-Forms#^prop-50-5|Proposition §50.5: Pullbacks in Coordinates]]
-- [[§51 Vector Fields#^prop-51-1|Proposition §51.1: Vector Fields in Coordinates]]
+- [[§52 Vector Fields#^prop-52-1|Proposition §52.1: Vector Fields in Coordinates]]
 
 ## Connections
 - **Used for.** Transport of smooth structure ([[§19 Smooth Functions and Smooth Maps#^prop-19-7|§19.7]]), smoothness of projections and slice inclusions ([[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]), diffeomorphisms onto open sets being charts ([[§36 Submersions#^lem-36-3|§36.3]], the step that finishes the [[Submersion Normal Form]]) and smooth maps into submanifolds ([[§37 Regular Submanifolds#^lem-37-5|§37.5]]).

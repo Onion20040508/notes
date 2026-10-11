@@ -30,10 +30,10 @@ tags: [differentiable-manifolds, hub]
 - [[§48 The Tangent Bundle#^cor-48-3|Corollary §48.3: The Tangent Bundle Is a Fibration]]
 - [[§48 The Tangent Bundle#^prop-48-4|Proposition §48.4: The Tangent Bundle Is a Manifold (Claim)]]
 - [[§49 The Cotangent Bundle#^prop-49-2|Proposition §49.2: The Smooth Atlas of T^*M]]
-- [[§51 Vector Fields#^prop-51-1|Proposition §51.1: Vector Fields in Coordinates]]
+- [[§52 Vector Fields#^prop-52-1|Proposition §52.1: Vector Fields in Coordinates]]
 
 ## Connections
-- **Used for.** TM is a manifold of dimension 2m fibring over M with fibre ℝᵐ, with the zero section a submanifold ([[§48 The Tangent Bundle#^cor-48-3|§48.3]]); vector fields are its sections ([[§51 Vector Fields#^def-51-1|Def. §51.1]]). The same charts with dual bases make T*M a vector bundle ([[§49 The Cotangent Bundle#^prop-49-2|§49.2]]).
+- **Used for.** TM is a manifold of dimension 2m fibring over M with fibre ℝᵐ, with the zero section a submanifold ([[§48 The Tangent Bundle#^cor-48-3|§48.3]]); vector fields are its sections ([[§52 Vector Fields#^def-52-1|Def. §52.1]]). The same charts with dual bases make T*M a vector bundle ([[§49 The Cotangent Bundle#^prop-49-2|§49.2]]).
 - **How the charts transform.** Over an overlap the base point moves by the transition map of M and the vector by its Jacobian, the change of coordinates of [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]; covector components move by the inverse transpose. These are the change-of-basis formula and the transpose matrix of a dual map ([[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]], [[§12 Duality#^ladr-3-132|LADR 3.132]]).
 - **Locally a product.** The trivializations identify each TU with U × ℝᵐ, but a fibration need not be a global product, as the Möbius band shows ([[§39 Examples of Fibrations#^ex-39-2|Ex. §39.2]]). Unlike the Hopf fibration, which has no section ([[§43 Projective Spaces and the Hopf Fibration#^rem-43-1|Sections Need Not Exist]]), TM always has the zero section.
-- **Coming later in the course.** Flows: a vector field is a section of TM ([[§51 Vector Fields#^def-51-1|Def. §51.1]]), and its integral curves will fit together into a flow on M.
+- **Coming later in the course.** Flows: a vector field is a section of TM ([[§52 Vector Fields#^def-52-1|Def. §52.1]]), and its integral curves will fit together into a flow on M.

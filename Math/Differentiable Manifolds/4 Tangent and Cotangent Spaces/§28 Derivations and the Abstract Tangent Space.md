@@ -209,7 +209,7 @@ Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is �
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§27 Germs#^prop-27-2|§27.2]]
 
-Both steps borrowed from Lee are now in these notes: bump functions are Proposition [[§51 Vector Fields#^prop-51-4|§51.4]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§51 Vector Fields#^cor-51-5|§51.5]], and locality of derivations is Lemma [[§51 Vector Fields#^lem-51-6|§51.6]] (Lecture 16).
+Both steps borrowed from Lee are now in these notes: bump functions are Proposition [[§52 Vector Fields#^prop-52-4|§52.4]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§52 Vector Fields#^cor-52-5|§52.5]], and locality of derivations is Lemma [[§52 Vector Fields#^lem-52-6|§52.6]] (Lecture 16).
 
 **Comparison with Lee.** This is where the course's algebraic route and Lee's part company. Lee works with global functions and pays for locality with bump functions: Proposition 3.8 shows a derivation of $C^\infty(M)$ only sees a function near $p$, and Proposition 3.9 identifies $T_pU$ with $T_pM$. Germs build locality into the definition, so the course needs no bump functions at all — Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] is pure algebra. The proposition above is the bridge. Since the two spaces are isomorphic, every result about $T_pM$ in these notes transfers to Lee's, and conversely.
 

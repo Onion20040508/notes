@@ -264,3 +264,50 @@ A section in the sense of [[§38 Fibrations#^def-38-3|Definition §38.3]] is a l
 ^pf-38-4
 
 *Uses:* [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§38 Fibrations#^def-38-4|Def. §38.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
+
+> [!definition] Definition §38.5: Vertical Space
+> Let $\pi : E \to M$ be smooth and $y \in E$. The **vertical space** of $\pi$ at $y$ is
+>
+> $$
+> V_y = \ker \pi_{\ast y} \subseteq T_yE ,
+> $$
+>
+> the tangent vectors at $y$ that $\pi$ sends to $0$. If $\pi$ is a submersion — for instance a fibration (Proposition [[§38 Fibrations#^prop-38-1|§38.1]]) — the fibre $E_b = \pi^{-1}(b)$ through $y$, $b = \pi(y)$, is a regular submanifold (Corollary [[§37 Regular Submanifolds#^cor-37-10|§37.10]]), and $V_y = \iota_{\ast y}(T_yE_b)$ is its tangent space (Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]]): the vertical vectors are the ones along the fibre.
+
+^def-38-5
+
+> [!theorem] Proposition §38.5: Splitting Along a Section
+> Let $\pi : E \to M$ and $s : M \to E$ be smooth with $\pi \circ s = \mathrm{id}_M$ (for a fibration, $s$ is a section, Definition [[§38 Fibrations#^def-38-3|§38.3]]). Let $p \in M$ and $y = s(p)$.
+>
+> 1. $\pi_{\ast y} \circ s_{\ast p} = \mathrm{id}_{T_pM}$; so $s_{\ast p}$ is injective and $\pi_{\ast y}$ is surjective.
+> 2. $T_yE = s_{\ast p}(T_pM) \oplus V_y$, with $V_y$ the vertical space (Definition [[§38 Fibrations#^def-38-5|§38.5]]).
+> 3. The projection of $T_yE$ onto $V_y$ along $s_{\ast p}(T_pM)$ is $P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$.
+>
+> In particular $\dim T_yE = \dim M + \dim V_y$.
+
+^prop-38-5
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in. The identity in (1) is the heart of Assignment 5, Problem 1.)* *(1)* By the chain rule (Proposition [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to $\pi \circ s = \mathrm{id}_M$,
+>
+> $$
+> \pi_{\ast y} \circ s_{\ast p} = (\pi \circ s)_{\ast p} = (\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM} .
+> $$
+>
+> If $s_{\ast p}v = s_{\ast p}w$, applying $\pi_{\ast y}$ gives $v = w$; and every $v \in T_pM$ is $\pi_{\ast y}(s_{\ast p}v)$.
+>
+> *(2) The two subspaces span.* Let $w \in T_yE$ and put $u = s_{\ast p}(\pi_{\ast y}w) \in s_{\ast p}(T_pM)$. Then $w = u + (w - u)$, and $w - u \in V_y$, since by (1)
+>
+> $$
+> \pi_{\ast y}(w - u) = \pi_{\ast y}w - (\pi_{\ast y} \circ s_{\ast p})(\pi_{\ast y}w) = \pi_{\ast y}w - \pi_{\ast y}w = 0 .
+> $$
+>
+> *They meet only in $0$.* If $w = s_{\ast p}v$ lies in $V_y$, then $v = \pi_{\ast y}(s_{\ast p}v) = \pi_{\ast y}w = 0$ by (1), so $w = 0$. So the sum is direct.
+>
+> *(3)* $P$ is linear. By the computation in (2), $P(w) = w - u \in V_y$. On $V_y$, $\pi_{\ast y} = 0$, so $P(w) = w$; on $s_{\ast p}(T_pM)$, $P(s_{\ast p}v) = s_{\ast p}v - s_{\ast p}(\pi_{\ast y}s_{\ast p}v) = s_{\ast p}v - s_{\ast p}v = 0$. So $P$ is the projection onto $V_y$ along $s_{\ast p}(T_pM)$.
+>
+> The dimension formula: $s_{\ast p}$ is injective, so $\dim s_{\ast p}(T_pM) = \dim T_pM = \dim M$, and the dimensions of the two summands of a direct sum add.
+
+^pf-38-5
+
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]

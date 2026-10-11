@@ -5,7 +5,7 @@ chapter: 6
 section: 50
 tags: [differentiable-manifolds, math591]
 ---
-← [[§49 The Cotangent Bundle]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§51 Vector Fields]] →
+← [[§49 The Cotangent Bundle]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§51 Critical Points and the Hessian]] →
 
 *Stage: fields — Smooth sections of $T^{\ast}M$, a covector at every point; functions give one-forms through $d$, but not every one-form is a $df$; one-forms pull back along smooth maps, and $d$ commutes with pulling back.*
 

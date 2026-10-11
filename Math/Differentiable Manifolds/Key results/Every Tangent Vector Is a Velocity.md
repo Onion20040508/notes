@@ -21,10 +21,10 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3: Velocity of a Composite — Computing Differentials by Curves]]
 - [[§44 The Unit Quaternions and SU(2)#^prop-44-6|Proposition §44.6: The Tangent Space of SU(2) at the Identity]]
-- [[§55 Lie Groups and Left-Invariant Vector Fields#^thm-55-5|Theorem §55.5: The Lie Algebra Is the Tangent Space at the Identity]]
+- [[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5|Theorem §56.5: The Lie Algebra Is the Tangent Space at the Identity]]
 
 ## Connections
 - **Used for.** Computing differentials by curves: F_*p(D) is the velocity of F ∘ γ for any curve γ with velocity D ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]). This is how the tangent spaces of submanifolds ([[§37 Regular Submanifolds#^prop-37-6|§37.6]]) and of products ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-6|§31.6]]) are read off, and it enters the comparison of the old and new regular value theorems ([[§37 Regular Submanifolds#^prop-37-11|§37.11]]).
 - **What it means.** T_pM is the set of curves through p modulo having the same velocity in one, hence every, chart: tangent vectors as velocities, with no ambient space ([[§31 Tangent Vectors as Velocities of Curves#^rem-31-1|The Two Faces Reconciled]]). The curve is a straight line in a chart, carried up by the inverse chart; the bending this introduces is invisible to the velocity ([[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]]).
 - **Same idea elsewhere.** For a level set in ℝᴺ, velocities of curves are the definition of the geometric tangent space ([[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]]). Between vector spaces dF_p(v) is the derivative of F(p + tv) at t = 0 ([[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]]); that curve method gave the tangent spaces of O(n) and the gradient of det ([[Jacobi's Formula]]). In ℝ² it is the 452 [[Directional Derivative Formula]].
-- **Coming later in the course.** Vector fields are now defined ([[§51 Vector Fields#^def-51-1|Def. §51.1]]); their flows are still to come: an integral curve of a vector field has a prescribed velocity at every one of its points, not just at one.
+- **Coming later in the course.** Vector fields are now defined ([[§52 Vector Fields#^def-52-1|Def. §52.1]]); their flows are still to come: an integral curve of a vector field has a prescribed velocity at every one of its points, not just at one.

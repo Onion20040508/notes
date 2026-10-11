@@ -2,10 +2,10 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 7
-section: 51
+section: 52
 tags: [differentiable-manifolds, math591]
 ---
-← [[§50 One-Forms]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§52 Differential Operators]] →
+← [[§51 Critical Points and the Hessian]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§53 Differential Operators]] →
 
 *Stage: fields — Smooth sections of $TM$, a tangent vector at every point — and vector fields acting on functions, as derivations of $C^\infty(M)$.*
 
@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, math591]
 
 ## Vector Fields and Their Coordinates
 
-> [!definition] Definition §51.1: Vector Field
+> [!definition] Definition §52.1: Vector Field
 > A **vector field** on $M$ is a smooth map
 >
 > $$
@@ -30,7 +30,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Ch. 8, Vector Fields*
 
-^def-51-1
+^def-52-1
 
 In words: a vector field chooses one tangent vector at every point of $M$, and the choice varies smoothly — “for every point, [it] selects a tangent vector at that point.”
 
@@ -43,9 +43,9 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 **Transcription note.** Page 36 of the handwritten notes writes “Section of $TM \xrightarrow{F} M$”; the map is the projection $\pi$.
 
-**Notation.** The value of a vector field $\mathbf{X}$ ([[§51 Vector Fields#^def-51-1|Definition §51.1]]) at $p$ is written $\mathbf{X}_p \in T_pM$, again with $p$ as a subscript, to make room for the function a tangent vector acts on.
+**Notation.** The value of a vector field $\mathbf{X}$ ([[§52 Vector Fields#^def-52-1|Definition §52.1]]) at $p$ is written $\mathbf{X}_p \in T_pM$, again with $p$ as a subscript, to make room for the function a tangent vector acts on.
 
-> [!definition] Definition §51.2: The Space of Vector Fields
+> [!definition] Definition §52.2: The Space of Vector Fields
 > The set of all vector fields on $M$ is denoted
 >
 > $$
@@ -58,13 +58,13 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > (\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p, \qquad (c\mathbf{X})_p = c\, \mathbf{X}_p, \qquad (f\mathbf{X})_p = f(p)\, \mathbf{X}_p, \qquad p \in M .
 > $$
 >
-> [[§51 Vector Fields#^prop-51-2|Proposition §51.2]] shows that these are again vector fields and that $\mathfrak{X}(M)$ is a real vector space.
+> [[§52 Vector Fields#^prop-52-2|Proposition §52.2]] shows that these are again vector fields and that $\mathfrak{X}(M)$ is a real vector space.
 >
 > *Lee: Ch. 8, Vector Fields on Manifolds*
 
-^def-51-2
+^def-52-2
 
-> [!definition] Definition §51.3: Product of a Function and a Vector Field
+> [!definition] Definition §52.3: Product of a Function and a Vector Field
 > For $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, the product $f\mathbf{X}$ is defined pointwise:
 >
 > $$
@@ -73,9 +73,9 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 >
 > *Lee: Ch. 8, Vector Fields on Manifolds*
 
-^def-51-3
+^def-52-3
 
-> [!theorem] Proposition §51.1: Vector Fields in Coordinates
+> [!theorem] Proposition §52.1: Vector Fields in Coordinates
 > Let $\mathbf{X}$ be a section of $TM$ (not assumed smooth) and $(U, \varphi = (x^j))$ a chart. Then on $U$
 >
 > $$
@@ -86,7 +86,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 >
 > *Lee: Proposition 8.1*
 
-^prop-51-1
+^prop-52-1
 
 > [!proof]+ Proof
 > *(Stated in Lecture 15, “analogously” to one-forms; filled in.)* Three things are claimed: the expansion of $\mathbf{X}$ at each point of $U$, the two formulas for its coefficients, and the smoothness criterion.
@@ -117,29 +117,29 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 >
 > a composite of continuous maps ($\varphi$ is a homeomorphism onto $\varphi(U)$, the middle map is smooth, and $\tilde\varphi^{-1}$ is continuous by Proposition [[§48 The Tangent Bundle#^prop-48-1|§48.1]]). So Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] holds at every $p \in U$ with the charts $(U, \varphi)$ and $(TU, \tilde\varphi)$: $\mathbf{X}$ is smooth on $U$.
 
-^pf-51-1
+^pf-52-1
 
-*Uses:* [[§51 Vector Fields#^def-51-1|Def. §51.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§48 The Tangent Bundle#^def-48-4|Def. §48.4]], [[§48 The Tangent Bundle#^prop-48-2|§48.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§48 The Tangent Bundle#^def-48-5|Def. §48.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§48 The Tangent Bundle#^prop-48-1|§48.1]]
+*Uses:* [[§52 Vector Fields#^def-52-1|Def. §52.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§48 The Tangent Bundle#^def-48-4|Def. §48.4]], [[§48 The Tangent Bundle#^prop-48-2|§48.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§48 The Tangent Bundle#^def-48-5|Def. §48.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§48 The Tangent Bundle#^prop-48-1|§48.1]]
 
-> [!theorem] Proposition §51.2: The Space of Vector Fields Is a Real Vector Space
+> [!theorem] Proposition §52.2: The Space of Vector Fields Is a Real Vector Space
 > Let $M$ be a smooth manifold.
-> 1. If $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$, then $\mathbf{X} + \mathbf{Y}$ and $c\mathbf{X}$ ([[§51 Vector Fields#^def-51-2|Definition §51.2]]) are [[§51 Vector Fields#^def-51-1|vector fields]].
+> 1. If $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$, then $\mathbf{X} + \mathbf{Y}$ and $c\mathbf{X}$ ([[§52 Vector Fields#^def-52-2|Definition §52.2]]) are [[§52 Vector Fields#^def-52-1|vector fields]].
 > 2. The zero field $\mathbf{0}$, $\mathbf{0}_p = 0_p \in T_pM$, is a vector field.
 > 3. With these operations $\mathfrak{X}(M)$ is a real vector space, with zero vector $\mathbf{0}$ and additive inverse $-\mathbf{X} = (-1)\mathbf{X}$.
 > 4. More generally, if $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, then $f\mathbf{X}$ is a vector field.
 
-^prop-51-2
+^prop-52-2
 
 > [!proof]+ Proof
 > *(Not from lecture: the notes stated the vector-space structure without proof; filled in.)* *The operations give sections.* At each $p$, $\mathbf{X}_p + \mathbf{Y}_p$, $c\,\mathbf{X}_p$, $f(p)\,\mathbf{X}_p$ and $0_p$ lie in $T_pM$, a real vector space ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]); so each of $\mathbf{X} + \mathbf{Y}$, $c\mathbf{X}$, $f\mathbf{X}$, $\mathbf{0}$ assigns to every $p$ a tangent vector at $p$, a section of $TM$.
 >
-> *(1), (2), (4): smoothness.* Let $(U, (x^j))$ be a chart. By [[§51 Vector Fields#^prop-51-1|Proposition §51.1]], $\mathbf{X} = \sum_j \mathbf{X}^j\, \partial/\partial x^j$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial x^j$ on $U$ with smooth coefficients. At each $p \in U$, by linearity in $T_pM$,
+> *(1), (2), (4): smoothness.* Let $(U, (x^j))$ be a chart. By [[§52 Vector Fields#^prop-52-1|Proposition §52.1]], $\mathbf{X} = \sum_j \mathbf{X}^j\, \partial/\partial x^j$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial x^j$ on $U$ with smooth coefficients. At each $p \in U$, by linearity in $T_pM$,
 >
 > $$
 > (\mathbf{X} + \mathbf{Y})_p = \sum_j \big(\mathbf{X}^j(p) + \mathbf{Y}^j(p)\big) \frac{\partial}{\partial x^j}\Big|_p, \qquad (f\mathbf{X})_p = \sum_j f(p)\, \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p, \qquad \mathbf{0}_p = \sum_j 0 \cdot \frac{\partial}{\partial x^j}\Big|_p ,
 > $$
 >
-> so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By [[§51 Vector Fields#^prop-51-1|Proposition §51.1]] again these sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
+> so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By [[§52 Vector Fields#^prop-52-1|Proposition §52.1]] again these sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
 >
 > *(3): the axioms.* Each axiom is an equality of vector fields, that is, of their values at every $p \in M$, and there it is the corresponding axiom of the vector space $T_pM$. Explicitly, for $\mathbf{X}, \mathbf{Y}, \mathbf{Z} \in \mathfrak{X}(M)$, $a, b \in \mathbb{R}$ and every $p \in M$:
 > - commutativity: $(\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p = \mathbf{Y}_p + \mathbf{X}_p = (\mathbf{Y} + \mathbf{X})_p$;
@@ -152,30 +152,30 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 >
 > So $\mathfrak{X}(M)$ is a real vector space.
 
-^pf-51-2
+^pf-52-2
 
-*Uses:* [[§51 Vector Fields#^def-51-1|Def. §51.1]], [[§51 Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§51 Vector Fields#^prop-51-1|§51.1]]
+*Uses:* [[§52 Vector Fields#^def-52-1|Def. §52.1]], [[§52 Vector Fields#^def-52-2|Def. §52.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§52 Vector Fields#^prop-52-1|§52.1]]
 
-By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — the same pointwise check gives $(fg)\mathbf{X} = f(g\mathbf{X})$, $(f + g)\mathbf{X} = f\mathbf{X} + g\mathbf{X}$ and $f(\mathbf{X} + \mathbf{Y}) = f\mathbf{X} + f\mathbf{Y}$ — which is what Uribe meant by “an algebra over the smooth functions” in Lecture 17. It is infinite-dimensional as a real vector space (for $\dim M \ge 1$), but over $C^\infty(U)$ the fields on a chart domain $U$ have the basis $\partial/\partial x^1, \ldots, \partial/\partial x^m$ ([[§51 Vector Fields#^prop-51-1|Proposition §51.1]]).
+By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — the same pointwise check gives $(fg)\mathbf{X} = f(g\mathbf{X})$, $(f + g)\mathbf{X} = f\mathbf{X} + g\mathbf{X}$ and $f(\mathbf{X} + \mathbf{Y}) = f\mathbf{X} + f\mathbf{Y}$ — which is what Uribe meant by “an algebra over the smooth functions” in Lecture 17. It is infinite-dimensional as a real vector space (for $\dim M \ge 1$), but over $C^\infty(U)$ the fields on a chart domain $U$ have the basis $\partial/\partial x^1, \ldots, \partial/\partial x^m$ ([[§52 Vector Fields#^prop-52-1|Proposition §52.1]]).
 
 > [!remark] Remark: Vector Fields and One-Forms Side by Side
 > | Field | A section of | In a chart | Picture |
 > |---|---|---|---|
-> | vector field $\mathbf{X}$ | $TM$ ([[§51 Vector Fields#^def-51-1\|Definition §51.1]]) | $\sum_j \mathbf{X}^j\, \partial/\partial x^j$ | wind on the surface |
+> | vector field $\mathbf{X}$ | $TM$ ([[§52 Vector Fields#^def-52-1\|Definition §52.1]]) | $\sum_j \mathbf{X}^j\, \partial/\partial x^j$ | wind on the surface |
 > | one-form $\theta$ | $T^{\ast}M$ ([[§50 One-Forms#^def-50-1\|Definition §50.1]]) | $\sum_j \theta_j\, dx^j$ | a rule pricing every step |
 >
 > Every function gives a one-form, $f \mapsto df$ ([[§50 One-Forms#^prop-50-2|Proposition §50.2]]), but not every one-form is a $df$ ([[§50 One-Forms#^prop-50-3|Proposition §50.3]]). A one-form and a vector field together give a function, $p \mapsto \theta_p(\mathbf{X}_p)$. And a vector field acting on a function gives a function, $p \mapsto \mathbf{X}_p[f]$ — the starting point of the next subsection.
 
-^rem-51-1
+^rem-52-1
 
 ## Vector Fields as Derivations
 
 > [!remark] Remark: Two Faces of a Vector Field
 > “Just as tangent vectors, fields have a double life.” Tangent vectors were defined as derivations and then shown to be velocities of curves ([[§31 Tangent Vectors as Velocities of Curves|§31]]). Vector fields likewise have two faces: *operators on functions*, studied first because it continues the definition by derivations; and *dynamics on $M$* — integral curves, the trajectories that follow the field, to come later.
 
-^rem-51-2
+^rem-52-2
 
-> [!definition] Definition §51.4: Operator on $C^\infty(M)$
+> [!definition] Definition §52.4: Operator on $C^\infty(M)$
 > An **operator** on $C^\infty(M)$ is a map
 >
 > $$
@@ -184,12 +184,12 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 >
 > taking [[§19 Smooth Functions and Smooth Maps#^def-19-2|smooth functions]] on $M$ to smooth functions on $M$.
 
-^def-51-4
+^def-52-4
 
-*(Not from lecture: Uribe uses the word without defining it — “it's an $\mathbb{R}$-linear operator”.)* $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is *$\mathbb{R}$-linear*, or a *linear operator*, if it is a [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]] of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ ([[§51 Vector Fields#^lem-51-3|Lemma §51.3]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§52 Differential Operators#^def-52-1|Definition §52.1]] below). A [[§51 Vector Fields#^def-51-5|derivation]], a [[§51 Vector Fields#^def-51-6|local operator]] and a [[§52 Differential Operators#^def-52-2|differential operator]], defined below, are operators with extra properties; the [[§53 Lie Bracket and Lie Algebra#^def-53-1|Lie bracket]] of [[§53 Lie Bracket and Lie Algebra|§53]] is the commutator of two operators.
+*(Not from lecture: Uribe uses the word without defining it — “it's an $\mathbb{R}$-linear operator”.)* $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is *$\mathbb{R}$-linear*, or a *linear operator*, if it is a [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]] of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ ([[§52 Vector Fields#^lem-52-3|Lemma §52.3]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§53 Differential Operators#^def-53-1|Definition §53.1]] below). A [[§52 Vector Fields#^def-52-5|derivation]], a [[§52 Vector Fields#^def-52-6|local operator]] and a [[§53 Differential Operators#^def-53-2|differential operator]], defined below, are operators with extra properties; the [[§54 Lie Bracket and Lie Algebra#^def-54-1|Lie bracket]] of [[§54 Lie Bracket and Lie Algebra|§54]] is the commutator of two operators.
 
-> [!definition] Definition §51.5: Derivation of $C^\infty(M)$
-> A **derivation** of $C^\infty(M)$ is an $\mathbb{R}$-linear [[§51 Vector Fields#^def-51-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§51 Vector Fields#^def-51-4|Definition §51.4]]) satisfying the product rule
+> [!definition] Definition §52.5: Derivation of $C^\infty(M)$
+> A **derivation** of $C^\infty(M)$ is an $\mathbb{R}$-linear [[§52 Vector Fields#^def-52-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§52 Vector Fields#^def-52-4|Definition §52.4]]) satisfying the product rule
 >
 > $$
 > D(fg) = f\, Dg + g\, Df \qquad \text{for all } f, g \in C^\infty(M).
@@ -199,17 +199,17 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 >
 > *Lee: Ch. 8, Vector Fields as Derivations*
 
-^def-51-5
+^def-52-5
 
-> [!theorem] Lemma §51.3: A Vector Field Is a Derivation
-> For $\mathbf{X} \in \mathfrak{X}(M)$ ([[§51 Vector Fields#^def-51-2|Def. §51.2]]) and $f \in C^\infty(M)$, the function $D_\mathbf{X}f : p \mapsto \mathbf{X}_p[f]$ is smooth, and $D_\mathbf{X} : C^\infty(M) \to C^\infty(M)$ is a [[§51 Vector Fields#^def-51-5|derivation]]. In a chart, $D_\mathbf{X}f = \sum_j \mathbf{X}^j\, \partial f/\partial x^j$. (Lee writes $\mathbf{X}f$ for $D_\mathbf{X}f$.)
+> [!theorem] Lemma §52.3: A Vector Field Is a Derivation
+> For $\mathbf{X} \in \mathfrak{X}(M)$ ([[§52 Vector Fields#^def-52-2|Def. §52.2]]) and $f \in C^\infty(M)$, the function $D_\mathbf{X}f : p \mapsto \mathbf{X}_p[f]$ is smooth, and $D_\mathbf{X} : C^\infty(M) \to C^\infty(M)$ is a [[§52 Vector Fields#^def-52-5|derivation]]. In a chart, $D_\mathbf{X}f = \sum_j \mathbf{X}^j\, \partial f/\partial x^j$. (Lee writes $\mathbf{X}f$ for $D_\mathbf{X}f$.)
 
-^lem-51-3
+^lem-52-3
 
 > [!proof]+ Proof
-> *(Lecture 15: linearity and the product rule are “an immediate consequence of the corresponding properties for tangent vectors”, applied at each point. Smoothness of $D_\mathbf{X}f$, which the lecture did not address, is filled in.)* Three things are claimed: the chart formula, smoothness of $D_\mathbf{X}f$, and that $D_\mathbf{X}$ is $\mathbb{R}$-linear and satisfies the product rule (Definition [[§51 Vector Fields#^def-51-5|§51.5]]). Throughout, $[f]$ denotes the germ at $p$ of $f \in C^\infty(M)$.
+> *(Lecture 15: linearity and the product rule are “an immediate consequence of the corresponding properties for tangent vectors”, applied at each point. Smoothness of $D_\mathbf{X}f$, which the lecture did not address, is filled in.)* Three things are claimed: the chart formula, smoothness of $D_\mathbf{X}f$, and that $D_\mathbf{X}$ is $\mathbb{R}$-linear and satisfies the product rule (Definition [[§52 Vector Fields#^def-52-5|§52.5]]). Throughout, $[f]$ denotes the germ at $p$ of $f \in C^\infty(M)$.
 >
-> *The chart formula.* Let $(U, \varphi = (x^j))$ be a chart and $p \in U$. By Proposition [[§51 Vector Fields#^prop-51-1|§51.1]], $\mathbf{X}_p = \sum_j \mathbf{X}^j(p)\, \partial/\partial x^j|_p$. Derivations at $p$ are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), so evaluating at $[f]$ and using Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]],
+> *The chart formula.* Let $(U, \varphi = (x^j))$ be a chart and $p \in U$. By Proposition [[§52 Vector Fields#^prop-52-1|§52.1]], $\mathbf{X}_p = \sum_j \mathbf{X}^j(p)\, \partial/\partial x^j|_p$. Derivations at $p$ are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), so evaluating at $[f]$ and using Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]],
 >
 > $$
 > (D_\mathbf{X}f)(p) = \mathbf{X}_p[f] = \sum_{j=1}^m \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p[f] = \sum_{j=1}^m \mathbf{X}^j(p)\, \frac{\partial f}{\partial x^j}(p) .
@@ -221,7 +221,7 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 > (D_\mathbf{X}f)\big(\varphi^{-1}(r)\big) = \sum_{j=1}^m \mathbf{X}^j\big(\varphi^{-1}(r)\big)\, \frac{\partial f}{\partial x^j}\big(\varphi^{-1}(r)\big) = \sum_{j=1}^m \big(\mathbf{X}^j \circ \varphi^{-1}\big)(r)\, \frac{\partial f_\varphi}{\partial r^j}(r),
 > $$
 >
-> the second equality by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $\partial f/\partial x^j(q) = \partial f_\varphi/\partial r^j(\varphi(q))$ with $q = \varphi^{-1}(r)$. Here $\mathbf{X}^j \circ \varphi^{-1}$ is smooth because $\mathbf{X}^j$ is smooth on $U$ (Proposition [[§51 Vector Fields#^prop-51-1|§51.1]], $\mathbf{X}$ being smooth) and by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]; and $\partial f_\varphi/\partial r^j$ is smooth because $f_\varphi$ is (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]). A sum of products of smooth functions is smooth, so $D_\mathbf{X}f \in C^\infty(M)$.
+> the second equality by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $\partial f/\partial x^j(q) = \partial f_\varphi/\partial r^j(\varphi(q))$ with $q = \varphi^{-1}(r)$. Here $\mathbf{X}^j \circ \varphi^{-1}$ is smooth because $\mathbf{X}^j$ is smooth on $U$ (Proposition [[§52 Vector Fields#^prop-52-1|§52.1]], $\mathbf{X}$ being smooth) and by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]; and $\partial f_\varphi/\partial r^j$ is smooth because $f_\varphi$ is (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]). A sum of products of smooth functions is smooth, so $D_\mathbf{X}f \in C^\infty(M)$.
 >
 > *Linearity.* Let $f, g \in C^\infty(M)$, $a, b \in \mathbb{R}$ and $p \in M$. The germ of $af + bg$ is $a[f] + b[g]$ (Proposition [[§27 Germs#^prop-27-2|§27.2]]), and $\mathbf{X}_p$ is $\mathbb{R}$-linear (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]):
 >
@@ -237,24 +237,24 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 >
 > Both identities hold at every $p$, so they hold as identities of functions, and $D_\mathbf{X}$ is a derivation of $C^\infty(M)$.
 
-^pf-51-3
+^pf-52-3
 
-*Uses:* [[§51 Vector Fields#^def-51-5|Def. §51.5]], [[§51 Vector Fields#^def-51-2|Def. §51.2]], [[§51 Vector Fields#^prop-51-1|§51.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§27 Germs#^prop-27-2|§27.2]]
+*Uses:* [[§52 Vector Fields#^def-52-5|Def. §52.5]], [[§52 Vector Fields#^def-52-2|Def. §52.2]], [[§52 Vector Fields#^prop-52-1|§52.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§27 Germs#^prop-27-2|§27.2]]
 
-The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§51 Vector Fields#^prop-51-7|Proposition §51.7]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§51 Vector Fields#^lem-51-6|Lemma §51.6]]), and its proof needs bump functions, so these come first.
+The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§52 Vector Fields#^prop-52-7|Proposition §52.7]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§52 Vector Fields#^lem-52-6|Lemma §52.6]]), and its proof needs bump functions, so these come first.
 
-> [!definition] Definition §51.6: Local Operator
-> An [[§51 Vector Fields#^def-51-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§51 Vector Fields#^def-51-4|Definition §51.4]]) is **local** if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
+> [!definition] Definition §52.6: Local Operator
+> An [[§52 Vector Fields#^def-52-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§52 Vector Fields#^def-52-4|Definition §52.4]]) is **local** if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
 >
 > $$
 > f|_U = g|_U \quad \Longrightarrow \quad (Df)|_U = (Dg)|_U .
 > $$
 
-^def-51-6
+^def-52-6
 
 “Even though $D$ a priori is defined on functions on $M$, it's actually going to be given by local data”: knowing $f$ on $U$ determines $Df$ on $U$.
 
-> [!definition] Definition §51.7: Support
+> [!definition] Definition §52.7: Support
 > The **support** of a function $\chi : M \to \mathbb{R}$ is the *[[§8 Interior and Closure#^def-8-2|closure]]* of the set where it is nonzero,
 >
 > $$
@@ -263,21 +263,21 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > *Lee: Ch. 2, Partitions of Unity*
 
-^def-51-7
+^def-52-7
 
-> [!definition] Definition §51.8: Compactly Supported Functions
-> $C^\infty_0(M)$ is the set of smooth functions $\chi : M \to \mathbb{R}$ whose support ([[§51 Vector Fields#^def-51-7|Definition §51.7]]) is [[§18 Compact Spaces#^def-18-2|compact]].
+> [!definition] Definition §52.8: Compactly Supported Functions
+> $C^\infty_0(M)$ is the set of smooth functions $\chi : M \to \mathbb{R}$ whose support ([[§52 Vector Fields#^def-52-7|Definition §52.7]]) is [[§18 Compact Spaces#^def-18-2|compact]].
 >
 > *Lee: Ch. 2, Partitions of Unity*
 
-^def-51-8
+^def-52-8
 
-> [!definition] Definition §51.9: Bump Function
-> Let $p \in M$. A **bump function at $p$** is a $\chi \in C^\infty_0(M)$ ([[§51 Vector Fields#^def-51-8|Definition §51.8]]) with $\chi \equiv 1$ on a neighbourhood of $p$.
+> [!definition] Definition §52.9: Bump Function
+> Let $p \in M$. A **bump function at $p$** is a $\chi \in C^\infty_0(M)$ ([[§52 Vector Fields#^def-52-8|Definition §52.8]]) with $\chi \equiv 1$ on a neighbourhood of $p$.
 >
 > *Lee: Ch. 2, Partitions of Unity*
 
-^def-51-9
+^def-52-9
 
 “It's a technical term, and it's not a joke”: the graph is a plateau, equal to $1$ near $p$ and dying off to $0$ outside a compact set — “smooth, but not analytic”, since an analytic function equal to $1$ on an open set would equal $1$ on the whole connected domain.
 
@@ -289,17 +289,17 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 **Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as Uribe said (“and then you take the closure of that”). Without the closure, the support of a bump function would not be compact.
 
-> [!theorem] Proposition §51.4: Bump Functions Exist
-> For every open $U \subseteq M$ and every $p \in U$ there is a [[§51 Vector Fields#^def-51-9|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
+> [!theorem] Proposition §52.4: Bump Functions Exist
+> For every open $U \subseteq M$ and every $p \in U$ there is a [[§52 Vector Fields#^def-52-9|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
 >
 > *Lee: Proposition 2.25*
 
-^prop-51-4
+^prop-52-4
 
 > [!proof]+ Proof (to be filled)
 > Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” To be filled.
 
-^pf-51-4
+^pf-52-4
 
 > [!remark]- Connections
 > - The flat function $e^{-1/x^2}$, smooth but not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]].
@@ -307,10 +307,10 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 *Terminology (Lecture 16).* A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be *subordinate to $U$*, “because this is a condition that is going to show up several times.”
 
-*Lecture 16: the corollary of the [[§51 Vector Fields#^prop-51-4|bump function lemma]] that the proof of [[§51 Vector Fields#^prop-51-7|Proposition §51.7]] uses.*
+*Lecture 16: the corollary of the [[§52 Vector Fields#^prop-52-4|bump function lemma]] that the proof of [[§52 Vector Fields#^prop-52-7|Proposition §52.7]] uses.*
 
-> [!theorem] Corollary §51.5: Every Germ Has a Global Representative
-> Let $p \in M$ and $\gamma \in C^\infty_p(M)$, represented by $f \in C^\infty(U)$ with $U \ni p$ open. If $\chi$ is a [[§51 Vector Fields#^def-51-9|bump function]] at $p$ subordinate to $U$, then
+> [!theorem] Corollary §52.5: Every Germ Has a Global Representative
+> Let $p \in M$ and $\gamma \in C^\infty_p(M)$, represented by $f \in C^\infty(U)$ with $U \ni p$ open. If $\chi$ is a [[§52 Vector Fields#^def-52-9|bump function]] at $p$ subordinate to $U$, then
 >
 > $$
 > \tilde f = \begin{cases} \chi f & \text{on } U, \\ 0 & \text{on } M \setminus U \end{cases}
@@ -320,18 +320,18 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > *Lee: Lemma 2.26 (extension lemma)*
 
-^cor-51-5
+^cor-52-5
 
 > [!proof]+ Proof
 > *(Lecture 16.)* Two things are claimed: $\tilde f \in C^\infty(M)$, and $[\tilde f] = [f] = \gamma$ in $C^\infty_p(M)$.
 >
-> *$\tilde f$ is smooth.* Smoothness of a function is tested at each point with a chart at that point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]), and a chart may be shrunk to any smaller open neighbourhood of the point (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)); so it suffices to cover $M$ by open sets on each of which $\tilde f$ is smooth. Take the two sets $U$ and $M \setminus \operatorname{supp}\chi$. The second is open because $\operatorname{supp}\chi$ is closed, being a closure (Definition [[§51 Vector Fields#^def-51-7|§51.7]]). They cover $M$: a point $q \notin U$ is not in $\operatorname{supp}\chi$, because $\operatorname{supp}\chi \subseteq U$.
+> *$\tilde f$ is smooth.* Smoothness of a function is tested at each point with a chart at that point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]), and a chart may be shrunk to any smaller open neighbourhood of the point (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)); so it suffices to cover $M$ by open sets on each of which $\tilde f$ is smooth. Take the two sets $U$ and $M \setminus \operatorname{supp}\chi$. The second is open because $\operatorname{supp}\chi$ is closed, being a closure (Definition [[§52 Vector Fields#^def-52-7|§52.7]]). They cover $M$: a point $q \notin U$ is not in $\operatorname{supp}\chi$, because $\operatorname{supp}\chi \subseteq U$.
 > - On $U$, $\tilde f = \chi f$ is a product of the smooth functions $\chi|_U$ and $f$, hence smooth.
 > - On $M \setminus \operatorname{supp}\chi$, $\tilde f \equiv 0$. Let $q \notin \operatorname{supp}\chi$. Then $\chi(q) = 0$, since every point where $\chi \ne 0$ lies in $\operatorname{supp}\chi$. If $q \in U$, $\tilde f(q) = \chi(q)\, f(q) = 0 \cdot f(q) = 0$; if $q \notin U$, $\tilde f(q) = 0$ by definition. A constant function is smooth.
 >
 > So $\tilde f \in C^\infty(M)$.
 >
-> *$\tilde f$ represents $\gamma$.* Since $\chi$ is a bump function at $p$, there is an open $V \ni p$ with $\chi \equiv 1$ on $V$ (Definition [[§51 Vector Fields#^def-51-9|§51.9]]). For $q \in V \cap U$,
+> *$\tilde f$ represents $\gamma$.* Since $\chi$ is a bump function at $p$, there is an open $V \ni p$ with $\chi \equiv 1$ on $V$ (Definition [[§52 Vector Fields#^def-52-9|§52.9]]). For $q \in V \cap U$,
 >
 > $$
 > \tilde f(q) = \chi(q)\, f(q) = 1 \cdot f(q) = f(q) .
@@ -339,26 +339,26 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > $V \cap U$ is open, contains $p$, and lies in the intersection $M \cap U$ of the two domains, so $(\tilde f, M) \sim (f, U)$ (Definition [[§27 Germs#^def-27-1|§27.1]]), that is, $[\tilde f] = [f] = \gamma$.
 >
-> *In particular.* Every germ $\gamma$ at $p$ has some representative $f \in C^\infty(U)$ with $U \ni p$ open (Definition [[§27 Germs#^def-27-2|§27.2]]), and a bump function at $p$ subordinate to $U$ exists by Proposition [[§51 Vector Fields#^prop-51-4|§51.4]]; so the construction applies to every germ.
+> *In particular.* Every germ $\gamma$ at $p$ has some representative $f \in C^\infty(U)$ with $U \ni p$ open (Definition [[§27 Germs#^def-27-2|§27.2]]), and a bump function at $p$ subordinate to $U$ exists by Proposition [[§52 Vector Fields#^prop-52-4|§52.4]]; so the construction applies to every germ.
 
-^pf-51-5
+^pf-52-5
 
-*Uses:* [[§51 Vector Fields#^def-51-9|Def. §51.9]], [[§51 Vector Fields#^def-51-7|Def. §51.7]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§51 Vector Fields#^prop-51-4|§51.4]]
+*Uses:* [[§52 Vector Fields#^def-52-9|Def. §52.9]], [[§52 Vector Fields#^def-52-7|Def. §52.7]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§52 Vector Fields#^prop-52-4|§52.4]]
 
 ![[m591-47-1.svg]]
 *The extension of a germ. Above: $f$ is defined only on $U$ (its ends are open), and $\chi$ (dashed) is a bump function at $p$ subordinate to $U$. Below: $\tilde f = \chi f$, extended by $0$. On $V$, where $\chi \equiv 1$, it agrees with $f$ (dotted), so it has the same germ at $p$; it dies off inside $U$ and is $0$ outside $\operatorname{supp}\chi$, so it is smooth on all of $M$.*
 
-> [!theorem] Lemma §51.6: Derivations Are Local
-> Every [[§51 Vector Fields#^def-51-5|derivation]] of $C^\infty(M)$ is a [[§51 Vector Fields#^def-51-6|local operator]].
+> [!theorem] Lemma §52.6: Derivations Are Local
+> Every [[§52 Vector Fields#^def-52-5|derivation]] of $C^\infty(M)$ is a [[§52 Vector Fields#^def-52-6|local operator]].
 
-^lem-51-6
+^lem-52-6
 
 > [!proof]+ Proof
 > *(Lecture 16, in full: “you'll see how incredibly powerful the product rule is.”)* Let $D$ be a derivation of $C^\infty(M)$, $U \subseteq M$ open, and $f, g \in C^\infty(M)$ with $f|_U = g|_U$; we must show $(Df)|_U = (Dg)|_U$.
 >
 > *Reduction to the kernel.* Put $h = f - g \in C^\infty(M)$; then $h|_U = 0$. By linearity of $D$, $Df - Dg = D(f - g) = Dh$. So it suffices to show: if $h|_U = 0$ then $(Dh)|_U = 0$ — “like showing that something is injective by showing that the kernel is zero.”
 >
-> *The kernel.* Let $h|_U = 0$ and fix $p \in U$. By Proposition [[§51 Vector Fields#^prop-51-4|§51.4]] there is a bump function $\chi$ at $p$ subordinate to $U$: $\chi \in C^\infty(M)$, $\operatorname{supp}\chi \subseteq U$, and $\chi \equiv 1$ near $p$, in particular $\chi(p) = 1$ (Definition [[§51 Vector Fields#^def-51-9|§51.9]]). The product $\chi h$ is the zero function on $M$. Indeed, for $q \in U$, $h(q) = 0$; and for $q \notin U$, $q \notin \operatorname{supp}\chi$, so $\chi(q) = 0$ (every point where $\chi \ne 0$ lies in the support, Definition [[§51 Vector Fields#^def-51-7|§51.7]]). A linear map sends $0$ to $0$, so $D(\chi h) = D(0) = 0$; and by the product rule (Definition [[§51 Vector Fields#^def-51-5|§51.5]]),
+> *The kernel.* Let $h|_U = 0$ and fix $p \in U$. By Proposition [[§52 Vector Fields#^prop-52-4|§52.4]] there is a bump function $\chi$ at $p$ subordinate to $U$: $\chi \in C^\infty(M)$, $\operatorname{supp}\chi \subseteq U$, and $\chi \equiv 1$ near $p$, in particular $\chi(p) = 1$ (Definition [[§52 Vector Fields#^def-52-9|§52.9]]). The product $\chi h$ is the zero function on $M$. Indeed, for $q \in U$, $h(q) = 0$; and for $q \notin U$, $q \notin \operatorname{supp}\chi$, so $\chi(q) = 0$ (every point where $\chi \ne 0$ lies in the support, Definition [[§52 Vector Fields#^def-52-7|§52.7]]). A linear map sends $0$ to $0$, so $D(\chi h) = D(0) = 0$; and by the product rule (Definition [[§52 Vector Fields#^def-52-5|§52.5]]),
 >
 > $$
 > 0 = D(\chi h) = \chi\, Dh + h\, D\chi ,
@@ -372,25 +372,25 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > As $p \in U$ was arbitrary, $(Dh)|_U = 0$, and therefore $(Df)|_U = (Dg)|_U$.
 
-^pf-51-6
+^pf-52-6
 
-*Uses:* [[§51 Vector Fields#^def-51-5|Def. §51.5]], [[§51 Vector Fields#^def-51-6|Def. §51.6]], [[§51 Vector Fields#^def-51-9|Def. §51.9]], [[§51 Vector Fields#^def-51-7|Def. §51.7]], [[§51 Vector Fields#^prop-51-4|§51.4]]
+*Uses:* [[§52 Vector Fields#^def-52-5|Def. §52.5]], [[§52 Vector Fields#^def-52-6|Def. §52.6]], [[§52 Vector Fields#^def-52-9|Def. §52.9]], [[§52 Vector Fields#^def-52-7|Def. §52.7]], [[§52 Vector Fields#^prop-52-4|§52.4]]
 
 “Derivations are local, thanks to the product rule and the existence of bump functions.”
 
 > [!remark]- Connections
 > - The pointwise version, a derivation of $C^\infty(M)$ at $p$ only sees a function near $p$ (Lee, Proposition 3.8), in the proof of [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Germ Derivations and Global Derivations, §28.3]].
 
-*Lecture 15, after stating the lemma (proved above in Lecture 16): “I want to make an observation.”* The observation was the ring of differential operators, generated by the operators $D_\mathbf{X}$ and the multiplications by functions, all of whose elements are local; it is collected, with what follows from it, in the next section, [[§52 Differential Operators|§52]].
+*Lecture 15, after stating the lemma (proved above in Lecture 16): “I want to make an observation.”* The observation was the ring of differential operators, generated by the operators $D_\mathbf{X}$ and the multiplications by functions, all of whose elements are local; it is collected, with what follows from it, in the next section, [[§53 Differential Operators|§53]].
 
-*Lecture 16 proved the converse of [[§51 Vector Fields#^lem-51-3|Lemma §51.3]]. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§51 Vector Fields#^lem-51-6|Lemma §51.6]]) is half the bridge; the other half is that germs can be globalized ([[§51 Vector Fields#^cor-51-5|Corollary §51.5]]).*
+*Lecture 16 proved the converse of [[§52 Vector Fields#^lem-52-3|Lemma §52.3]]. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§52 Vector Fields#^lem-52-6|Lemma §52.6]]) is half the bridge; the other half is that germs can be globalized ([[§52 Vector Fields#^cor-52-5|Corollary §52.5]]).*
 
-> [!theorem] Proposition §51.7: Derivations Are Vector Fields
-> Conversely, every [[§51 Vector Fields#^def-51-5|derivation]] $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ ([[§51 Vector Fields#^lem-51-3|Lemma §51.3]]) for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
+> [!theorem] Proposition §52.7: Derivations Are Vector Fields
+> Conversely, every [[§52 Vector Fields#^def-52-5|derivation]] $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ ([[§52 Vector Fields#^lem-52-3|Lemma §52.3]]) for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
 >
 > *Lee: Proposition 8.15*
 
-^prop-51-7
+^prop-52-7
 
 > [!proof]+ Proof
 > *(Lecture 16, in the lecture's steps. Uribe “skip[ped] a little bit the details” of smoothness; they are completed below, as are two steps the lecture did not state: that each $\mathbf{X}_p$ is a derivation at $p$, and uniqueness.)* Let $D$ be a derivation of $C^\infty(M)$. We must produce $\mathbf{X} \in \mathfrak{X}(M)$, i.e. a smooth section of $TM$, with $D_\mathbf{X} = D$, and show that it is the only one.
@@ -401,9 +401,9 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > \mathbf{X}_p(\gamma) = (Df)(p), \qquad f \in C^\infty(M) \text{ a global representative of } \gamma,
 > $$
 >
-> which exists by Corollary [[§51 Vector Fields#^cor-51-5|§51.5]] (with a bump function supplied by Proposition [[§51 Vector Fields#^prop-51-4|§51.4]]).
+> which exists by Corollary [[§52 Vector Fields#^cor-52-5|§52.5]] (with a bump function supplied by Proposition [[§52 Vector Fields#^prop-52-4|§52.4]]).
 >
-> *2. It is well defined.* Let $f, f' \in C^\infty(M)$ both represent $\gamma$. Then $(f, M) \sim (f', M)$, so there is an open $W \ni p$ with $f|_W = f'|_W$ (Definition [[§27 Germs#^def-27-1|§27.1]]). By Lemma [[§51 Vector Fields#^lem-51-6|§51.6]], applied with the open set $W$, $(Df)|_W = (Df')|_W$; since $p \in W$, $(Df)(p) = (Df')(p)$. So $\mathbf{X}_p(\gamma)$ does not depend on the choice of $f$. “So you see, we need all these lemmas.”
+> *2. It is well defined.* Let $f, f' \in C^\infty(M)$ both represent $\gamma$. Then $(f, M) \sim (f', M)$, so there is an open $W \ni p$ with $f|_W = f'|_W$ (Definition [[§27 Germs#^def-27-1|§27.1]]). By Lemma [[§52 Vector Fields#^lem-52-6|§52.6]], applied with the open set $W$, $(Df)|_W = (Df')|_W$; since $p \in W$, $(Df)(p) = (Df')(p)$. So $\mathbf{X}_p(\gamma)$ does not depend on the choice of $f$. “So you see, we need all these lemmas.”
 >
 > *3. Each $\mathbf{X}_p$ is a derivation at $p$.* *(Completion.)* Let $\gamma, \delta \in C^\infty_p(M)$ with global representatives $f, g$, and $a, b \in \mathbb{R}$. Germ operations are computed on representatives (Proposition [[§27 Germs#^prop-27-2|§27.2]]), here on the common domain $M$, so $af + bg$ is a global representative of $a\gamma + b\delta$, and $fg$ one of $\gamma\delta$. By step 1 and the linearity of $D$,
 >
@@ -419,15 +419,15 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > So $\mathbf{X}_p$ is a derivation at $p$, i.e. $\mathbf{X}_p \in T_pM$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a section of $TM$, so far not known to be smooth.
 >
-> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), and “$\mathbf{X}_p(x^j)$ is $D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$.” *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§51 Vector Fields#^prop-51-4|§51.4]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§51 Vector Fields#^cor-51-5|§51.5]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
+> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), and “$\mathbf{X}_p(x^j)$ is $D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$.” *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§52 Vector Fields#^prop-52-4|§52.4]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§52 Vector Fields#^cor-52-5|§52.5]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
 >
 > $$
 > \mathbf{X}_q(x^j) = D(\tilde x^j)(q) \qquad \text{for all } q \in V .
 > $$
 >
-> The right side is the function $D(\tilde x^j) \in C^\infty(M)$ evaluated at $q$; its restriction to $V$ is smooth. Now $(V, (x^1|_V, \ldots, x^m|_V))$ is a chart (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)), and in it the coefficients of $\mathbf{X}$ are $\mathbf{X}^j(q) = \mathbf{X}_q(x^j)$ (Proposition [[§51 Vector Fields#^prop-51-1|§51.1]]), which we have just shown to be smooth on $V$. By Proposition [[§51 Vector Fields#^prop-51-1|§51.1]], $\mathbf{X}$ is smooth on $V$. As $p$ was arbitrary, $\mathbf{X}$ is smooth, and $\mathbf{X} \in \mathfrak{X}(M)$.
+> The right side is the function $D(\tilde x^j) \in C^\infty(M)$ evaluated at $q$; its restriction to $V$ is smooth. Now $(V, (x^1|_V, \ldots, x^m|_V))$ is a chart (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)), and in it the coefficients of $\mathbf{X}$ are $\mathbf{X}^j(q) = \mathbf{X}_q(x^j)$ (Proposition [[§52 Vector Fields#^prop-52-1|§52.1]]), which we have just shown to be smooth on $V$. By Proposition [[§52 Vector Fields#^prop-52-1|§52.1]], $\mathbf{X}$ is smooth on $V$. As $p$ was arbitrary, $\mathbf{X}$ is smooth, and $\mathbf{X} \in \mathfrak{X}(M)$.
 >
-> *5. $D = D_\mathbf{X}$.* Let $f \in C^\infty(M)$ and $p \in M$. The function $f$ is a global representative of its own germ $[f]$ at $p$, so step 1 with $\gamma = [f]$ and the definition of $D_\mathbf{X}$ (Lemma [[§51 Vector Fields#^lem-51-3|§51.3]]) give
+> *5. $D = D_\mathbf{X}$.* Let $f \in C^\infty(M)$ and $p \in M$. The function $f$ is a global representative of its own germ $[f]$ at $p$, so step 1 with $\gamma = [f]$ and the definition of $D_\mathbf{X}$ (Lemma [[§52 Vector Fields#^lem-52-3|§52.3]]) give
 >
 > $$
 > (D_\mathbf{X} f)(p) = \mathbf{X}_p[f] = (Df)(p) .
@@ -435,7 +435,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > This holds for every $p$ and every $f$, so $D_\mathbf{X} f = Df$ for all $f$, i.e. $D_\mathbf{X} = D$.
 >
-> *6. Uniqueness.* *(Completion.)* Suppose $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ with $D_\mathbf{X} = D_\mathbf{Y}$. Fix $p$ and a germ $\gamma$ at $p$, with global representative $f$ (Corollary [[§51 Vector Fields#^cor-51-5|§51.5]]), so $\gamma = [f]$. Then
+> *6. Uniqueness.* *(Completion.)* Suppose $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ with $D_\mathbf{X} = D_\mathbf{Y}$. Fix $p$ and a germ $\gamma$ at $p$, with global representative $f$ (Corollary [[§52 Vector Fields#^cor-52-5|§52.5]]), so $\gamma = [f]$. Then
 >
 > $$
 > \mathbf{X}_p(\gamma) = \mathbf{X}_p[f] = (D_\mathbf{X} f)(p) = (D_\mathbf{Y} f)(p) = \mathbf{Y}_p[f] = \mathbf{Y}_p(\gamma) .
@@ -443,34 +443,34 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > So $\mathbf{X}_p$ and $\mathbf{Y}_p$ agree on every germ, $\mathbf{X}_p = \mathbf{Y}_p$, for every $p$; that is, $\mathbf{X} = \mathbf{Y}$.
 
-^pf-51-7
+^pf-52-7
 
-*Uses:* [[§51 Vector Fields#^def-51-5|Def. §51.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§51 Vector Fields#^cor-51-5|§51.5]], [[§51 Vector Fields#^lem-51-6|§51.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§51 Vector Fields#^def-51-9|Def. §51.9]], [[§51 Vector Fields#^prop-51-4|§51.4]], [[§51 Vector Fields#^prop-51-1|§51.1]], [[§51 Vector Fields#^lem-51-3|§51.3]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
+*Uses:* [[§52 Vector Fields#^def-52-5|Def. §52.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§52 Vector Fields#^cor-52-5|§52.5]], [[§52 Vector Fields#^lem-52-6|§52.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§52 Vector Fields#^def-52-9|Def. §52.9]], [[§52 Vector Fields#^prop-52-4|§52.4]], [[§52 Vector Fields#^prop-52-1|§52.1]], [[§52 Vector Fields#^lem-52-3|§52.3]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
 
 So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: “you say to yourself, I'm thinking of $\mathbf{X}$ as an operator … if you say $\mathbf{X}(f)$, then it's an operator.”
 
 **Transcription note.** Page 43 of the handwritten notes asks “is $\mathbf{X}_p$ $C^\infty$?”; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
 
-> [!theorem] Lemma §51.8: A Smoothness Criterion for Vector Fields
+> [!theorem] Lemma §52.8: A Smoothness Criterion for Vector Fields
 > Let $\mathbf{X}$ be a [[§38 Fibrations#^def-38-3|section]] of $TM$, not assumed smooth, and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
 >
 > *Lee: Proposition 8.14*
 
-^lem-51-8
+^lem-52-8
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in, for use in Lecture 17's theorem on Lie algebras. The argument is step 4 of the proof of Proposition [[§51 Vector Fields#^prop-51-7|§51.7]].)* Two implications.
+> *(Not from lecture; filled in, for use in Lecture 17's theorem on Lie algebras. The argument is step 4 of the proof of Proposition [[§52 Vector Fields#^prop-52-7|§52.7]].)* Two implications.
 >
-> *$\mathbf{X}$ smooth $\Rightarrow$ every $\mathbf{X}f$ smooth.* If $\mathbf{X}$ is smooth, then $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{X}f$ is the function $D_\mathbf{X}f$, which is smooth by Lemma [[§51 Vector Fields#^lem-51-3|§51.3]].
+> *$\mathbf{X}$ smooth $\Rightarrow$ every $\mathbf{X}f$ smooth.* If $\mathbf{X}$ is smooth, then $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{X}f$ is the function $D_\mathbf{X}f$, which is smooth by Lemma [[§52 Vector Fields#^lem-52-3|§52.3]].
 >
-> *Every $\mathbf{X}f$ smooth $\Rightarrow$ $\mathbf{X}$ smooth.* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to show that every $p \in M$ has an open neighbourhood $V$ on which $\mathbf{X}$ is smooth. Let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§51 Vector Fields#^prop-51-4|§51.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$ (extended by $0$ outside $U$) be the global function of Corollary [[§51 Vector Fields#^cor-51-5|§51.5]]. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$, so they have the same germ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and the derivation $\mathbf{X}_q$, which acts on germs, gives them the same value. In the chart $(V, (x^j|_V))$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)) the coefficients of $\mathbf{X}$ (Proposition [[§51 Vector Fields#^prop-51-1|§51.1]]) are therefore
+> *Every $\mathbf{X}f$ smooth $\Rightarrow$ $\mathbf{X}$ smooth.* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to show that every $p \in M$ has an open neighbourhood $V$ on which $\mathbf{X}$ is smooth. Let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§52 Vector Fields#^prop-52-4|§52.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$ (extended by $0$ outside $U$) be the global function of Corollary [[§52 Vector Fields#^cor-52-5|§52.5]]. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$, so they have the same germ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and the derivation $\mathbf{X}_q$, which acts on germs, gives them the same value. In the chart $(V, (x^j|_V))$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)) the coefficients of $\mathbf{X}$ (Proposition [[§52 Vector Fields#^prop-52-1|§52.1]]) are therefore
 >
 > $$
 > \mathbf{X}^j(q) = \mathbf{X}_q[x^j] = \mathbf{X}_q[\tilde x^j] = (\mathbf{X}\tilde x^j)(q), \qquad q \in V,
 > $$
 >
-> and $\mathbf{X}\tilde x^j$ is smooth on $M$ by hypothesis, since $\tilde x^j \in C^\infty(M)$; so each $\mathbf{X}^j$ is smooth on $V$. So $\mathbf{X}$ is smooth on $V$, by Proposition [[§51 Vector Fields#^prop-51-1|§51.1]]; $p$ was arbitrary.
+> and $\mathbf{X}\tilde x^j$ is smooth on $M$ by hypothesis, since $\tilde x^j \in C^\infty(M)$; so each $\mathbf{X}^j$ is smooth on $V$. So $\mathbf{X}$ is smooth on $V$, by Proposition [[§52 Vector Fields#^prop-52-1|§52.1]]; $p$ was arbitrary.
 
-^pf-51-8
+^pf-52-8
 
-*Uses:* [[§51 Vector Fields#^lem-51-3|§51.3]], [[§51 Vector Fields#^def-51-9|Def. §51.9]], [[§51 Vector Fields#^prop-51-4|§51.4]], [[§51 Vector Fields#^cor-51-5|§51.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§51 Vector Fields#^prop-51-1|§51.1]], [[§51 Vector Fields#^prop-51-7|§51.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
+*Uses:* [[§52 Vector Fields#^lem-52-3|§52.3]], [[§52 Vector Fields#^def-52-9|Def. §52.9]], [[§52 Vector Fields#^prop-52-4|§52.4]], [[§52 Vector Fields#^cor-52-5|§52.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§52 Vector Fields#^prop-52-1|§52.1]], [[§52 Vector Fields#^prop-52-7|§52.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]

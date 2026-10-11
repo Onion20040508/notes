@@ -31,13 +31,13 @@ tags: [differentiable-manifolds, hub]
 - [[§38 Fibrations#^prop-38-1|Proposition §38.1: Fibres and Fibrations]]
 - [[§40 Immersions#^ex-40-1|Example §40.1: An Immersion That Crosses Itself]]
 - [[§41 Embeddings#^cor-41-3|Corollary §41.3: An Embedding Is a Diffeomorphism onto Its Image]]
-- [[§41 Embeddings#^prop-41-11|Proposition §41.11: The Irrational Line on the Torus]]
-- [[§41 Embeddings#^prop-41-12|Proposition §41.12: Images of Injective Immersions]]
+- [[§41 Embeddings#^prop-41-12|Proposition §41.12: The Irrational Line on the Torus]]
+- [[§41 Embeddings#^prop-41-13|Proposition §41.13: Images of Injective Immersions]]
 - [[§44 The Unit Quaternions and SU(2)#^prop-44-5|Proposition §44.5: S³ Is SU(2)]]
 - [[§45 SU(2) → SO(3)꞉ The Double Cover#^lem-45-3|Lemma §45.3: Translating the Differential]]
 - [[§45 SU(2) → SO(3)꞉ The Double Cover#^thm-45-4|Theorem §45.4: The Double Cover SU(2) → SO(3)]]
-- [[§55 Lie Groups and Left-Invariant Vector Fields#^ex-55-1|Example §55.1: Left-Invariant Fields on GL(n,ℝ)]]
-- [[§55 Lie Groups and Left-Invariant Vector Fields#^thm-55-5|Theorem §55.5: The Lie Algebra Is the Tangent Space at the Identity]]
+- [[§56 Lie Groups and Left-Invariant Vector Fields#^ex-56-1|Example §56.1: Left-Invariant Fields on GL(n,ℝ)]]
+- [[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5|Theorem §56.5: The Lie Algebra Is the Tangent Space at the Identity]]
 
 ## Connections
 - **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), differentials computed by curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]) and the [[Local Diffeomorphism Criterion]].

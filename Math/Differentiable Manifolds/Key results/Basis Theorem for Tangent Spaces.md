@@ -40,13 +40,13 @@ tags: [differentiable-manifolds, hub]
 - [[§48 The Tangent Bundle#^prop-48-1|Proposition §48.1: The Topology of TM]]
 - [[§48 The Tangent Bundle#^prop-48-2|Proposition §48.2: The Smooth Atlas of TM]]
 - [[§48 The Tangent Bundle#^cor-48-3|Corollary §48.3: The Tangent Bundle Is a Fibration]]
-- [[§51 Vector Fields#^prop-51-1|Proposition §51.1: Vector Fields in Coordinates]]
-- [[§51 Vector Fields#^prop-51-7|Proposition §51.7: Derivations Are Vector Fields]]
-- [[§53 Lie Bracket and Lie Algebra#^prop-53-2|Proposition §53.2: The Bracket in Coordinates]]
-- [[§54 Related Vector Fields#^ex-54-1|Example §54.1: Fields Related by a Projection]]
+- [[§52 Vector Fields#^prop-52-1|Proposition §52.1: Vector Fields in Coordinates]]
+- [[§52 Vector Fields#^prop-52-7|Proposition §52.7: Derivations Are Vector Fields]]
+- [[§54 Lie Bracket and Lie Algebra#^prop-54-2|Proposition §54.2: The Bracket in Coordinates]]
+- [[§55 Related Vector Fields#^ex-55-1|Example §55.1: Fields Related by a Projection]]
 
 ## Connections
 - **Used for.** dim T_pM = n, which finishes [[Ambient and Abstract Tangent Spaces Agree]] ([[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|§29.7]]). The coordinate bases give the [[Matrix of the Differential]], the dual bases dxⁱ|_p of T*_pM ([[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), the charts of TM ([[Tangent Bundle Is a Smooth Manifold]]) and the straight-line curves of [[Every Tangent Vector Is a Velocity]].
 - **Why only first derivatives survive.** The chart turns D into a derivation at a point of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]). There [[Hadamard's Lemma]], applied twice, writes a germ as a constant plus a linear term plus an element of I_p². D kills constants and I_p² by the Leibniz rule ([[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]]), so only the linear term is left ([[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|A Derivation Sees Only the First Derivatives]]).
 - **Same idea elsewhere.** The universal formula D = Σ D[xⁱ] ∂/∂xⁱ|_p is the expansion of a vector in a basis, with coefficients read off by the dual basis ([[§12 Duality#^ladr-3-114|LADR 3.114]]): D[xⁱ] = dxⁱ|_p(D). Changing the chart changes the basis by the Jacobian of the transition map ([[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), an instance of the change-of-basis formula ([[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]).
-- **Vector fields.** In a chart a vector field is X = Σ Xʲ ∂/∂xʲ, with coefficients Xʲ(p) = X_p[xʲ] given by the universal formula at each point, and it is smooth exactly when the Xʲ are ([[§51 Vector Fields#^prop-51-1|§51.1]]).
+- **Vector fields.** In a chart a vector field is X = Σ Xʲ ∂/∂xʲ, with coefficients Xʲ(p) = X_p[xʲ] given by the universal formula at each point, and it is smooth exactly when the Xʲ are ([[§52 Vector Fields#^prop-52-1|§52.1]]).
