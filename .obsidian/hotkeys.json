@@ -2,7 +2,7 @@
   "obsidian-git:push": [
     {
       "modifiers": [
-        "Alt",
+        "Mod",
         "Shift"
       ],
       "key": "P"
@@ -11,7 +11,7 @@
   "obsidian-git:pull": [
     {
       "modifiers": [
-        "Alt",
+        "Mod",
         "Shift"
       ],
       "key": "L"
