@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (71), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (25), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (84), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (93), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (28), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (30)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (84), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (94), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (28), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (30)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (21), [[Multivariable Analysis]] (14)
 
 ## Sections
@@ -31,7 +31,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]: 151 later results
-- [[Unique Maximal Atlas|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]: 150 later results
-- [[§19 Smooth Functions and Smooth Maps#^prop-19-3|Proposition §19.3: The Two Notions of Diffeomorphism Agree]]: 122 later results
-- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 117 later results
+- [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]: 190 later results
+- [[Unique Maximal Atlas|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]: 190 later results
+- [[Smoothness Is Chart-Independent|Proposition §19.2: Smoothness of a Map Does Not Depend on the Charts]]: 190 later results
+- [[§19 Smooth Functions and Smooth Maps#^prop-19-8|Proposition §19.8: The Product Smooth Structure]]: 190 later results

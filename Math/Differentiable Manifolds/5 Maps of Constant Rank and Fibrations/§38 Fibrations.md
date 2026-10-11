@@ -24,7 +24,13 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 > \phi_\alpha : \pi^{-1}(U_\alpha) \longrightarrow U_\alpha \times F \qquad \text{with} \qquad \mathrm{pr}_1 \circ \phi_\alpha = \pi|_{\pi^{-1}(U_\alpha)},
 > $$
 >
-> where $\pi^{-1}(U_\alpha)$ is an open submanifold of $M$, $U_\alpha \times F$ a product manifold ([[§19 Smooth Functions and Smooth Maps#^def-19-7|Definition §19.7]]), and $\mathrm{pr}_1 : U_\alpha \times F \to U_\alpha$ the projection. The $\phi_\alpha$ are called **local trivializations**. $M$ is the **total space** and $B$ the **base**.
+> where $\pi^{-1}(U_\alpha)$ is an open submanifold of $M$, $U_\alpha \times F$ a product manifold ([[§19 Smooth Functions and Smooth Maps#^def-19-7|Definition §19.7]]), and
+>
+> $$
+> \mathrm{pr}_1 : U_\alpha \times F \to U_\alpha, \qquad \mathrm{pr}_1(b, y) = b ,
+> $$
+>
+> the [[§3 Subspaces and Products#^def-3-4|projection]] onto the first factor (Definition §3.4; written $\mathrm{pr}_1$ rather than $\pi_1$ because $\pi$ already names the fibration), which is smooth ([[§19 Smooth Functions and Smooth Maps#^prop-19-9|Proposition §19.9]]). The condition $\mathrm{pr}_1 \circ \phi_\alpha = \pi|_{\pi^{-1}(U_\alpha)}$ says that $\phi_\alpha$ keeps the base point: for $x \in \pi^{-1}(U_\alpha)$ the first component of $\phi_\alpha(x)$ is $\pi(x)$, that is, $\phi_\alpha(x) = \big(\pi(x), y\big)$ for some $y \in F$. The $\phi_\alpha$ are called **local trivializations**. $M$ is the **total space** and $B$ the **base**.
 >
 > *Lee: Ch. 10, smooth fiber bundles*
 

@@ -9,8 +9,8 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (71), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (41), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (59), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (11), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (4)
+**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (2)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (71), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (41), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (60), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (11), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (4)
 **Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (66), [[Multivariable Analysis]] (5)
 
 ## Sections
@@ -37,6 +37,6 @@ tags: [chapter, differentiable-manifolds]
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 193 later results
-- [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]: 189 later results
-- [[§3 Subspaces and Products#^prop-3-9|Proposition §3.9: Coarsest Topology with Continuous Projections]]: 189 later results
-- [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]: 189 later results
+- [[§3 Subspaces and Products#^prop-3-7|Proposition §3.7: The Product Basis Generates a Topology]]: 193 later results
+- [[§3 Subspaces and Products#^prop-3-8|Proposition §3.8: Box Characterization of Open Sets]]: 192 later results
+- [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]: 190 later results

@@ -226,8 +226,19 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^rem-3-4
 
+> [!definition] Definition §3.4: Projections of a Product
+> For sets $X$ and $Y$, the **projections** of the product $X \times Y$ onto its factors are
+>
+> $$
+> \pi_X : X \times Y \to X, \ \ \pi_X(x, y) = x, \qquad\qquad \pi_Y : X \times Y \to Y, \ \ \pi_Y(x, y) = y .
+> $$
+>
+> For a product $M_1 \times M_2$ they are also written $\pi_1$ and $\pi_2$, or $\mathrm{pr}_1$ and $\mathrm{pr}_2$ when the letter $\pi$ already names another map (as for a [[§38 Fibrations#^def-38-1|fibration]], Definition §38.1).
+
+^def-3-4
+
 > [!theorem] Proposition §3.9: Coarsest Topology with Continuous Projections
-> Let $\pi_X : X \times Y \to X$ and $\pi_Y : X \times Y \to Y$ be the projection maps. The product topology is the *coarsest* topology on $X \times Y$ for which $\pi_X$ and $\pi_Y$ are both continuous.
+> Let $\pi_X : X \times Y \to X$ and $\pi_Y : X \times Y \to Y$ be the [[§3 Subspaces and Products#^def-3-4|projections]] (Definition §3.4). The product topology is the *coarsest* topology on $X \times Y$ for which $\pi_X$ and $\pi_Y$ are both continuous.
 >
 > *Lee: App. A, Subspaces, Products, Disjoint Unions, and Quotients*
 
