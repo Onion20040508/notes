@@ -12,7 +12,10 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
+- [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
 - [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Theorem §28.6: The Chain Rule]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Definition §29.1: Coordinate Functions of a Chart]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8: Dimension of the Tangent Space]]
 - [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4: The Tangent Space of a Product]]
 - [[§34 Submersions#^def-34-3|Definition §34.3: Regular Points and Critical Points]]
 - [[§34 Submersions#^def-34-4|Definition §34.4: Regular Values and Critical Values]]
@@ -20,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§35 Regular Submanifolds#^def-35-1|Definition §35.1: Regular Submanifold]]
 - [[§35 Regular Submanifolds#^prop-35-1|Proposition §35.1: Two Observations on Adapted Charts]]
 - [[§35 Regular Submanifolds#^def-35-2|Definition §35.2: Adapted Chart]]
+- [[§35 Regular Submanifolds#^prop-35-2|Proposition §35.2: The Induced Smooth Structure]]
 - [[§35 Regular Submanifolds#^prop-35-4|Proposition §35.4: Tangent Spaces of a Regular Submanifold]]
 
 ## Its proof uses (other subjects)
@@ -29,6 +33,7 @@ tags: [differentiable-manifolds, hub]
 - [[§35 Regular Submanifolds#^cor-35-8|Corollary §35.8: Fibres of Submersions Are Regular Submanifolds]]
 - [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
 - [[§41 The Unit Quaternions and SU(2)#^prop-41-4|Proposition §41.4: The Unit Quaternions]]
+- [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|Proposition §42.1: Conjugation by Unit Quaternions Is Rotation]]
 
 ## Connections
 - **Used for.** Every fibre of a submersion is a submanifold ([[§35 Regular Submanifolds#^cor-35-8|§35.8]]), in particular every fibre of a fibration ([[§36 Fibrations#^prop-36-2|§36.2]]). It contains the Euclidean versions, with the same smooth structure and tangent spaces ([[§35 Regular Submanifolds#^prop-35-9|§35.9]], [[§35 Regular Submanifolds#^rem-35-3|The Regular Value Theorems — Old and New]]).

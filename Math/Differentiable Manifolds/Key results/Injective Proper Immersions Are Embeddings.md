@@ -12,6 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§3 Subspaces and Products#^def-3-1|Definition §3.1: Subspace Topology]]
+- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]
 - [[§38 Embeddings#^def-38-1|Definition §38.1: Embedding]]
 - [[§38 Embeddings#^prop-38-4|Proposition §38.4: Proper Maps into Manifolds Are Closed]]
 

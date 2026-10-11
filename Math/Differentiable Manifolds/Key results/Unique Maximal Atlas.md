@@ -11,7 +11,9 @@ tags: [differentiable-manifolds, hub]
 - [[§17 Differentiable Structures#^thm-17-5|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]], in [[§17 Differentiable Structures]]
 
 ## Its proof uses
+- [[§2 Topological Manifolds#^prop-2-11|Proposition §2.11: Transition Functions Are Homeomorphisms]]
 - [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]
+- [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
 - [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
 - [[§17 Differentiable Structures#^def-17-7|Definition §17.7: Compatible Atlases]]
@@ -22,15 +24,22 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|Theorem §18.2: The Standard Atlas Is Smooth]]
+- [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|Corollary §18.5: Real Projective Space]]
 - [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1: Two Smooth Structures on the Real Line]]
+- [[§19 Smooth Functions and Smooth Maps#^prop-19-3|Proposition §19.3: The Two Notions of Diffeomorphism Agree]]
 - [[§19 Smooth Functions and Smooth Maps#^lem-19-4|Lemma §19.4: Composition of Smooth Maps]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-6|Proposition §19.6: Transport of Smooth Structure]]
 - [[§19 Smooth Functions and Smooth Maps#^cor-19-7|Corollary §19.7: Single-Chart Structures on ℝⁿ]]
 - [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2: Regular Level Sets Are Smooth Manifolds]]
 - [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|Proposition §22.2: A Vector Space Is a Smooth Manifold]]
+- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|Corollary §23.2: Consequences]]
 - [[§24 The Circle#^prop-24-1|Proposition §24.1: The Three Circle Atlases Define One Smooth Structure]]
 - [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]
+- [[§35 Regular Submanifolds#^prop-35-1|Proposition §35.1: Two Observations on Adapted Charts]]
+- [[§35 Regular Submanifolds#^prop-35-2|Proposition §35.2: The Induced Smooth Structure]]
+- [[§35 Regular Submanifolds#^prop-35-6|Proposition §35.6: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
 - [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
+- [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3: The Tangent Bundle Is a Fibration]]
 
 ## Connections
 - **Used for.** Writing down any atlas specifies a smooth structure ([[§17 Differentiable Structures#^def-17-9|Def. §17.9]]): the standard atlas of ℂPⁿ ([[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§24 The Circle#^prop-24-1|§24.1]]).

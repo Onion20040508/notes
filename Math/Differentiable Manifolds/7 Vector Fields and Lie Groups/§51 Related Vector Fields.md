@@ -70,11 +70,27 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 ^ex-51-1
 
 > [!proof]+ Proof
-> *(Lecture 17, as a question to the class: “What can I put in the blanks here?” The first component “has to be this guy”; the second, “anything”. The computation is filled in.)* Write $\mathbf{X} = a\, \partial_x + c\, \partial_y$. For $g \in C^\infty(\mathbb{R})$, $d\pi\big(\partial_x|_{(x,y)}\big)[g] = \partial_x (g \circ \pi)(x,y) = g'(x)$ and $d\pi\big(\partial_y|_{(x,y)}\big)[g] = \partial_y\, g(x) = 0$. So $d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = a(x, y)\, \frac{d}{dx}\big|_x$, and this equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ for all $(x, y)$ exactly when $a(x, y) = b(x)$.
-
+> *(Lecture 17, as a question to the class: “What can I put in the blanks here?” The first component “has to be this guy”; the second, “anything”. The computation is filled in.)* By Proposition [[§48 Vector Fields#^prop-48-1|§48.1]] in the standard chart of $\mathbb{R}^2$, every vector field on $\mathbb{R}^2$ can be written $\mathbf{X} = a\, \partial_x + c\, \partial_y$ with $a, c \in C^\infty(\mathbb{R}^2)$. Since $\pi(x, y) = x$, Definition [[§51 Related Vector Fields#^def-51-2|§51.2]] says that $\mathbf{X}$ is $\pi$-related to $\mathbf{Y}$ if and only if $d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = \mathbf{Y}_x$ for every $(x, y)$. So compute the left side.
+>
+> *The pushforwards of the coordinate vectors.* Let $[g]$ be a germ at $x$ on $\mathbb{R}$. The function $g \circ \pi$ is $(x', y') \mapsto g(x')$. By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] and then Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] in the standard chart,
+>
+> $$
+> d\pi\big(\partial_x|_{(x,y)}\big)[g] = \partial_x|_{(x,y)}[g \circ \pi] = \partial_x (g \circ \pi)(x,y) = g'(x) = \frac{d}{dx}\Big|_x [g], \qquad
+> d\pi\big(\partial_y|_{(x,y)}\big)[g] = \partial_y|_{(x,y)}[g \circ \pi] = \partial_y\, g(x) = 0 ,
+> $$
+>
+> where $d/dx|_x$ is the coordinate derivation of $\mathbb{R}$ at $x$ (Definition [[§32 The Cotangent Space#^def-32-2|§32.2]], with the coordinate written $x$), and $\partial_y\, g(x) = 0$ because $g(x)$ does not depend on $y$. Derivations that agree on every germ are equal, so $d\pi(\partial_x|_{(x,y)}) = d/dx|_x$ and $d\pi(\partial_y|_{(x,y)}) = 0$.
+>
+> *The condition.* $d\pi_{(x,y)}$ is linear (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), so
+>
+> $$
+> d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = a(x, y)\, d\pi\big(\partial_x|_{(x,y)}\big) + c(x, y)\, d\pi\big(\partial_y|_{(x,y)}\big) = a(x, y)\, \frac{d}{dx}\Big|_x .
+> $$
+>
+> This equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ if and only if $\big(a(x,y) - b(x)\big)\, \frac{d}{dx}\big|_x = 0$, that is, if and only if $a(x, y) = b(x)$, because $d/dx|_x \ne 0$ (it is a basis of $T_x\mathbb{R}$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]). So the fields $\pi$-related to $\mathbf{Y}$ are those with $a(x, y) = b(x)$ for all $(x, y)$, and $c$ is not constrained. Conversely, for every $c \in C^\infty(\mathbb{R}^2)$ the section $b(x)\,\partial_x + c\,\partial_y$ has smooth coefficients ($(x, y) \mapsto b(x)$ is $b \circ \pi$), so it is a vector field (Proposition [[§48 Vector Fields#^prop-48-1|§48.1]]), and by the computation it is $\pi$-related to $\mathbf{Y}$.
 ^pf-ex-51-1
 
-*Uses:* [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§48 Vector Fields#^prop-48-1|§48.1]]
+*Uses:* [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]
 
 “All I care about is the horizontal component … they all should be the same” along each vertical line, the fibre $\pi^{-1}(x)$, “corresponding to the value down here.”
 
@@ -100,19 +116,26 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 *The pullback $F^{\ast}$ intertwines the two fields as operators: the square commutes exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.*
 
 > [!proof]+ Proof
-> *(Lecture 17, “let's have a peek at the proof”; the step for the converse is filled in.)* Let $g \in C^\infty(N)$ and $p \in M$. By the definition of the pushforward ([[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6]]) — “we pull back germs, so we push forward derivations” —
+> *(Lecture 17, “let's have a peek at the proof”; the step for the converse is filled in.)* The two forms of the condition are the same, since $(\mathbf{X} \circ F^{\ast})(g) = \mathbf{X}(g \circ F)$ and $(F^{\ast} \circ \mathbf{Y})(g) = (\mathbf{Y}g) \circ F$; and both sides are functions on $M$, so the condition says that they agree at every $p \in M$, for every $g$. Let $g \in C^\infty(N)$ and $p \in M$. The value at $p$ of a field applied to a function is the tangent vector at $p$ applied to its germ (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]). With this, and the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) for $D = \mathbf{X}_p$ — “we pull back germs, so we push forward derivations” —
 >
 > $$
 > \mathbf{X}(g \circ F)(p) = \mathbf{X}_p[g \circ F] = dF_p(\mathbf{X}_p)[g],
 > \qquad
-> \big((\mathbf{Y}g) \circ F\big)(p) = \mathbf{Y}_{F(p)}[g] .
+> \big((\mathbf{Y}g) \circ F\big)(p) = (\mathbf{Y}g)\big(F(p)\big) = \mathbf{Y}_{F(p)}[g] .
 > $$
 >
-> If the fields are $F$-related the right-hand sides agree, for every $g$ and $p$. Conversely, if the left-hand sides agree for every $g \in C^\infty(N)$, the two [[§28 Derivations and the Abstract Tangent Space#^def-28-1|derivations]] $dF_p(\mathbf{X}_p)$ and $\mathbf{Y}_{F(p)}$ at $F(p)$ agree on every global function, hence on every [[§27 Germs#^def-27-2|germ]] at $F(p)$, since every germ has a global representative ([[§48 Vector Fields#^cor-48-5|Corollary §48.5]]); so they are equal. “It's a trivial if and only if once you realize” this.
-
+> *Related implies intertwining.* If the fields are $F$-related, then $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$ (Definition [[§51 Related Vector Fields#^def-51-2|§51.2]]), so the right-hand sides agree, for every $g$ and $p$; that is, $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$.
+>
+> *Intertwining implies related.* Conversely, suppose $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$ for every $g \in C^\infty(N)$, and fix $p \in M$. By the display, the two derivations $dF_p(\mathbf{X}_p)$ and $\mathbf{Y}_{F(p)}$ at $F(p)$ agree on every global function $g$. Every germ $[h]$ at $F(p)$ has a global representative $g \in C^\infty(N)$, $[g] = [h]$ (Corollary [[§48 Vector Fields#^cor-48-5|§48.5]]), so
+>
+> $$
+> dF_p(\mathbf{X}_p)[h] = dF_p(\mathbf{X}_p)[g] = \mathbf{Y}_{F(p)}[g] = \mathbf{Y}_{F(p)}[h] .
+> $$
+>
+> So the two derivations agree on every germ, and are equal as maps on $C^\infty_{F(p)}(N)$: $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$. As $p$ was arbitrary, the fields are $F$-related. “It's a trivial if and only if once you realize” this.
 ^pf-51-1
 
-*Uses:* [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§48 Vector Fields#^cor-48-5|§48.5]]
+*Uses:* [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§48 Vector Fields#^lem-48-3|§48.3]]
 
 > [!theorem] Proposition §51.2: Pushforward by a Diffeomorphism
 > Let $F : M \to N$ be a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] and $\mathbf{X} \in \mathfrak{X}(M)$. Then the [[§51 Related Vector Fields#^def-51-1|pushforward]] $F_{\ast}\mathbf{X}$ is smooth, it is the unique vector field on $N$ that is [[§51 Related Vector Fields#^def-51-2|F-related]] to $\mathbf{X}$, and for every $g \in C^\infty(N)$
@@ -126,8 +149,27 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 ^prop-51-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* For $q \in N$ put $p = F^{-1}(q)$. Then $(F_{\ast}\mathbf{X})_q[g] = dF_p(\mathbf{X}_p)[g] = \mathbf{X}_p[g \circ F] = \mathbf{X}(g \circ F)(F^{-1}(q))$, which is the formula. Its right side is smooth, as $\mathbf{X}(g \circ F)$ is smooth ([[§48 Vector Fields#^lem-48-3|Lemma §48.3]]) and $F^{-1}$ is smooth; so $F_{\ast}\mathbf{X}$ is smooth by [[§48 Vector Fields#^lem-48-8|Lemma §48.8]]. It is $F$-related to $\mathbf{X}$ by its definition. If $\mathbf{Y}$ is also $F$-related to $\mathbf{X}$, then $\mathbf{Y}_q = \mathbf{Y}_{F(p)} = dF_p(\mathbf{X}_p) = (F_{\ast}\mathbf{X})_q$ for every $q$, since $F$ is onto.
-
+> *(Not from lecture; filled in.)* Four things are claimed: the formula, smoothness, $F$-relatedness, and uniqueness. Here $(F_\ast\mathbf{X})\,g$ denotes the function $q \mapsto (F_\ast\mathbf{X})_q[g]$ on $N$, as in Lemma [[§48 Vector Fields#^lem-48-8|§48.8]].
+>
+> *The formula.* For $q \in N$ put $p = F^{-1}(q)$. By Definition [[§51 Related Vector Fields#^def-51-1|§51.1]], then Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $D = \mathbf{X}_p$, then Lemma [[§48 Vector Fields#^lem-48-3|§48.3]],
+>
+> $$
+> (F_\ast\mathbf{X})_q[g] = dF_p(\mathbf{X}_p)[g] = \mathbf{X}_p[g \circ F] = \mathbf{X}(g \circ F)(p) = \big(\mathbf{X}(g \circ F) \circ F^{-1}\big)(q) ,
+> $$
+>
+> which is the formula.
+>
+> *Smoothness.* At each $q$, $(F_\ast\mathbf{X})_q = dF_p(\mathbf{X}_p)$ lies in $T_{F(p)}N = T_qN$, so $F_\ast\mathbf{X}$ is a section of $TN$. In the formula, $g \circ F \in C^\infty(M)$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), so $\mathbf{X}(g \circ F)$ is smooth (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]); and $F^{-1}$ is smooth because $F$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]), so the composite $\mathbf{X}(g \circ F) \circ F^{-1}$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). This holds for every $g \in C^\infty(N)$, so $F_\ast\mathbf{X}$ is smooth by Lemma [[§48 Vector Fields#^lem-48-8|§48.8]].
+>
+> *$F$-related.* For $p \in M$, $F^{-1}(F(p)) = p$, so Definition [[§51 Related Vector Fields#^def-51-1|§51.1]] at $q = F(p)$ reads $(F_\ast\mathbf{X})_{F(p)} = dF_p(\mathbf{X}_p)$. This is Definition [[§51 Related Vector Fields#^def-51-2|§51.2]] with $\mathbf{Y} = F_\ast\mathbf{X}$.
+>
+> *Uniqueness.* If $\mathbf{Y} \in \mathfrak{X}(N)$ is also $F$-related to $\mathbf{X}$, let $q \in N$. Since $F$ is onto, $q = F(p)$ with $p = F^{-1}(q)$, and by Definition [[§51 Related Vector Fields#^def-51-2|§51.2]] and then Definition [[§51 Related Vector Fields#^def-51-1|§51.1]],
+>
+> $$
+> \mathbf{Y}_q = \mathbf{Y}_{F(p)} = dF_p(\mathbf{X}_p) = (F_\ast\mathbf{X})_q .
+> $$
+>
+> This holds for every $q$, so $\mathbf{Y} = F_\ast\mathbf{X}$.
 ^pf-51-2
 
 *Uses:* [[§51 Related Vector Fields#^def-51-1|Def. §51.1]], [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§48 Vector Fields#^lem-48-8|§48.8]]
@@ -142,17 +184,36 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 ^prop-51-3
 
 > [!proof]+ Proof
-> *(Omitted in Lecture 17 as an exercise: “it's just a matter of chasing the definitions … being $F$-related means that $F^{\ast}$ commutes with the derivations. So you just play with the symbols; it all comes out.” Filled in.)* Let $g \in C^\infty(N)$. Applying [[§51 Related Vector Fields#^prop-51-1|Proposition §51.1]] twice,
+> *(Omitted in Lecture 17 as an exercise: “it's just a matter of chasing the definitions \ldots being $F$-related means that $F^{\ast}$ commutes with the derivations. So you just play with the symbols; it all comes out.” Filled in.)* The brackets $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ and $[\mathbf{Y}_1, \mathbf{Y}_2] \in \mathfrak{X}(N)$ are vector fields (Lemma [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]]). By Proposition [[§51 Related Vector Fields#^prop-51-1|§51.1]], it suffices to show
 >
 > $$
-> \mathbf{X}_1\mathbf{X}_2(g \circ F) = \mathbf{X}_1\big((\mathbf{Y}_2 g) \circ F\big) = (\mathbf{Y}_1\mathbf{Y}_2 g) \circ F ,
+> [\mathbf{X}_1, \mathbf{X}_2](g \circ F) = \big([\mathbf{Y}_1, \mathbf{Y}_2]\, g\big) \circ F \qquad \text{for every } g \in C^\infty(N).
 > $$
 >
-> and in the same way $\mathbf{X}_2\mathbf{X}_1(g \circ F) = (\mathbf{Y}_2\mathbf{Y}_1 g) \circ F$. Subtracting, $[\mathbf{X}_1, \mathbf{X}_2](g \circ F) = \big([\mathbf{Y}_1, \mathbf{Y}_2]\, g\big) \circ F$, and [[§51 Related Vector Fields#^prop-51-1|Proposition §51.1]] again gives the claim.
-
+> Let $g \in C^\infty(N)$. The same proposition, applied to the pairs $(\mathbf{X}_i, \mathbf{Y}_i)$, gives $\mathbf{X}_i(h \circ F) = (\mathbf{Y}_i h) \circ F$ for every $h \in C^\infty(N)$ and $i = 1, 2$.
+>
+> *The composite $\mathbf{X}_1\mathbf{X}_2$.* Apply this first for $i = 2$ with $h = g$, and then for $i = 1$ with $h = \mathbf{Y}_2 g$, which lies in $C^\infty(N)$ by Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]:
+>
+> $$
+> \mathbf{X}_1\mathbf{X}_2(g \circ F) = \mathbf{X}_1\big((\mathbf{Y}_2 g) \circ F\big) = (\mathbf{Y}_1\mathbf{Y}_2 g) \circ F .
+> $$
+>
+> *The composite $\mathbf{X}_2\mathbf{X}_1$.* Apply it first for $i = 1$ with $h = g$, and then for $i = 2$ with $h = \mathbf{Y}_1 g$:
+>
+> $$
+> \mathbf{X}_2\mathbf{X}_1(g \circ F) = \mathbf{X}_2\big((\mathbf{Y}_1 g) \circ F\big) = (\mathbf{Y}_2\mathbf{Y}_1 g) \circ F .
+> $$
+>
+> *Subtracting.* By Definition [[§50 Lie Bracket and Lie Algebra#^def-50-1|§50.1]], and since $u \circ F - v \circ F = (u - v) \circ F$ for functions $u, v$ on $N$,
+>
+> $$
+> [\mathbf{X}_1, \mathbf{X}_2](g \circ F) = (\mathbf{Y}_1\mathbf{Y}_2 g) \circ F - (\mathbf{Y}_2\mathbf{Y}_1 g) \circ F = \big(\mathbf{Y}_1\mathbf{Y}_2 g - \mathbf{Y}_2\mathbf{Y}_1 g\big) \circ F = \big([\mathbf{Y}_1, \mathbf{Y}_2]\, g\big) \circ F ,
+> $$
+>
+> and Proposition [[§51 Related Vector Fields#^prop-51-1|§51.1]] again, with $\mathbf{X} = [\mathbf{X}_1, \mathbf{X}_2]$ and $\mathbf{Y} = [\mathbf{Y}_1, \mathbf{Y}_2]$, gives the claim.
 ^pf-51-3
 
-*Uses:* [[§51 Related Vector Fields#^prop-51-1|§51.1]], [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]]
+*Uses:* [[§51 Related Vector Fields#^prop-51-1|§51.1]], [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^lem-48-3|§48.3]]
 
 On omitting this proof: “In a class like this, you cannot prove everything. First of all, there is no time, and second, you would be bored to tears. … But on the other hand, if we just say, oh, you can read the proof, then you don't get a feeling for the subject. So there is a line there somewhere, or a zone, where you have to prove enough, but not too much.” Feedback on where that line should sit is “always welcome.”
 
@@ -164,8 +225,7 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 ^cor-51-4
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Each $\mathbf{X}_i$ is $F$-related to $F_{\ast}\mathbf{X}_i$, so $[\mathbf{X}_1, \mathbf{X}_2]$ is $F$-related to $[F_{\ast}\mathbf{X}_1, F_{\ast}\mathbf{X}_2]$ by [[§51 Related Vector Fields#^prop-51-3|Proposition §51.3]]. The only field $F$-related to $[\mathbf{X}_1, \mathbf{X}_2]$ is $F_{\ast}[\mathbf{X}_1, \mathbf{X}_2]$ ([[§51 Related Vector Fields#^prop-51-2|Proposition §51.2]]).
-
+> *(Not from lecture; filled in.)* By Proposition [[§51 Related Vector Fields#^prop-51-2|§51.2]], each $F_\ast\mathbf{X}_i$ is a vector field on $N$ and $\mathbf{X}_i$ is $F$-related to $F_\ast\mathbf{X}_i$, for $i = 1, 2$. So Proposition [[§51 Related Vector Fields#^prop-51-3|§51.3]], with $\mathbf{Y}_i = F_\ast\mathbf{X}_i$, shows that $[\mathbf{X}_1, \mathbf{X}_2]$ is $F$-related to $[F_\ast\mathbf{X}_1, F_\ast\mathbf{X}_2]$. On the other hand $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ (Lemma [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]]), so Proposition [[§51 Related Vector Fields#^prop-51-2|§51.2]], applied to this field, says that the only field on $N$ that is $F$-related to $[\mathbf{X}_1, \mathbf{X}_2]$ is $F_\ast[\mathbf{X}_1, \mathbf{X}_2]$. Both $[F_\ast\mathbf{X}_1, F_\ast\mathbf{X}_2]$ and $F_\ast[\mathbf{X}_1, \mathbf{X}_2]$ are such fields, so they are equal.
 ^pf-51-4
 
-*Uses:* [[§51 Related Vector Fields#^prop-51-3|§51.3]], [[§51 Related Vector Fields#^prop-51-2|§51.2]], [[§51 Related Vector Fields#^def-51-1|Def. §51.1]], [[§51 Related Vector Fields#^def-51-2|Def. §51.2]]
+*Uses:* [[§51 Related Vector Fields#^prop-51-3|§51.3]], [[§51 Related Vector Fields#^prop-51-2|§51.2]], [[§51 Related Vector Fields#^def-51-1|Def. §51.1]], [[§51 Related Vector Fields#^def-51-2|Def. §51.2]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]]

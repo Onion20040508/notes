@@ -42,11 +42,20 @@ The submersion half is the lecture's definition. Immersions were listed as the t
 ^prop-34-1
 
 > [!proof]+ Proof
-> (1) By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), a surjective linear map $T_pM \to T_{F(p)}N$ forces $n \le m$, and an injective one forces $m \le n$. (2) A linear map is bijective if and only if it is injective and surjective, so this is Theorem [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]]; then (1) gives $m = n$. (3) Between spaces of the same finite dimension, a linear map is injective iff surjective iff bijective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)); apply Theorem [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]].
-
+> Throughout, $F_{\ast p} : T_pM \to T_{F(p)}N$ is a linear map (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]) between spaces of dimensions $m$ and $n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), so rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) applies to it:
+>
+> $$
+> m = \dim T_pM = \dim\ker F_{\ast p} + \operatorname{rank} F_{\ast p} .
+> $$
+>
+> *(1)* By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), a surjective linear map $T_pM \to T_{F(p)}N$ forces $n \le m$, and an injective one forces $m \le n$. In detail: if $F$ is a submersion at $p$, then $F_{\ast p}$ is onto (Definition [[§34 Submersions#^def-34-1|§34.1]]), so $\operatorname{rank} F_{\ast p} = n$ and $m = \dim\ker F_{\ast p} + n \ge n$. If $F$ is an immersion at $p$, then $F_{\ast p}$ is injective (Definition [[§34 Submersions#^def-34-2|§34.2]]), so $\ker F_{\ast p} = 0$ and $m = \operatorname{rank} F_{\ast p} \le n$, the image being a subspace of the $n$-dimensional $T_{F(p)}N$.
+>
+> *(2)* By Theorem [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], $F$ is a local diffeomorphism if and only if $F_{\ast p}$ is bijective for every $p \in M$. A linear map is bijective if and only if it is injective and surjective, so this is Theorem [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]]: “$F_{\ast p}$ surjective for every $p$” says that $F$ is a submersion, and “$F_{\ast p}$ injective for every $p$” that it is an immersion (Definitions [[§34 Submersions#^def-34-1|§34.1]] and [[§34 Submersions#^def-34-2|§34.2]]). Then (1) gives $m = n$: at any $p \in M$ (the claim tacitly assumes $M \neq \emptyset$), the submersion half gives $n \le m$ and the immersion half gives $m \le n$.
+>
+> *(3)* Between spaces of the same finite dimension, a linear map is injective iff surjective iff bijective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)). So if $m = n$ and $F$ is a submersion at every point, each $F_{\ast p}$ is a surjection between spaces of the same dimension $m = n$, hence bijective; and if $F$ is an immersion at every point, each $F_{\ast p}$ is an injection between such spaces, hence again bijective. In either case apply Theorem [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]]: $F$ is a local diffeomorphism.
 ^pf-34-1
 
-*Uses:* [[§34 Submersions#^def-34-1|Def. §34.1]], [[§34 Submersions#^def-34-2|Def. §34.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§34 Submersions#^def-34-1|Def. §34.1]], [[§34 Submersions#^def-34-2|Def. §34.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
 > [!example] Example §34.1: Projections Are Submersions
 > The projection $\pi : \mathbb{R}^k \times \mathbb{R}^l \to \mathbb{R}^k$, $(x, y) \mapsto x$, is a submersion.
@@ -54,11 +63,16 @@ The submersion half is the lecture's definition. Immersions were listed as the t
 ^ex-34-1
 
 > [!proof]+ Proof
-> By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] the differential is the Jacobian $\big(I_k \mid 0\big)$, a $k \times (k+l)$ matrix of rank $k$.
-
+> $\pi$ is linear, hence smooth; we show that $\pi_{\ast a}$ is onto $T_{\pi(a)}\mathbb{R}^k$ for every $a \in \mathbb{R}^k \times \mathbb{R}^l = \mathbb{R}^{k+l}$ (Definition [[§34 Submersions#^def-34-1|§34.1]]). By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], applied with $W = \mathbb{R}^{k+l}$ and $F = \pi$, under the identifications $T_a\mathbb{R}^{k+l} \cong \mathbb{R}^{k+l}$ and $T_{\pi(a)}\mathbb{R}^k \cong \mathbb{R}^k$ the differential $\pi_{\ast a}$ is the Jacobian $\pi'(a)$. The components of $\pi$ are $\pi^i(r) = r^i$ for $i = 1, \ldots, k$, so $\partial \pi^i/\partial r^j(a) = \delta^i_j$ for $j = 1, \ldots, k+l$ (which is $0$ for every $j > k$), and row $i$ of the Jacobian is the $i$-th standard row vector (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]):
+>
+> $$
+> \pi'(a) = \big(I_k \mid 0\big),
+> $$
+>
+> a $k \times (k+l)$ matrix of rank $k$, since its first $k$ columns are the standard basis of $\mathbb{R}^k$. So $\pi'(a) : \mathbb{R}^{k+l} \to \mathbb{R}^k$ is onto, and $\pi_{\ast a}$, which corresponds to it under linear isomorphisms, is onto as well. As $a$ was arbitrary, $\pi$ is a submersion.
 ^pf-ex-34-1
 
-*Uses:* [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§34 Submersions#^def-34-1|Def. §34.1]]
+*Uses:* [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§34 Submersions#^def-34-1|Def. §34.1]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]]
 
 **Transcription note.** Page 28 of the handwritten notes writes the projection as $\mathbb{R}^m \times \mathbb{R}^l \to \mathbb{R}^k$; for a projection onto a factor the factor must be the target, $\mathbb{R}^k \times \mathbb{R}^l \to \mathbb{R}^k$. Projections of *product manifolds* $M_1 \times M_2 \to M_1$ are submersions for the same reason, but that needs the tangent space of a product — “they will be direct sums of tangent spaces” — which Uribe postponed to the next lecture.
 
@@ -72,11 +86,24 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 ^ex-34-2
 
 > [!proof]+ Proof
-> $\pi_{1*}\big(\Theta(v, w)\big) = \pi_{1*}\iota_{1*}v + \pi_{1*}\iota_{2*}w = v$, by the proof of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]; so $\pi_{1*}$ is onto $T_{p_1}M_1$.
-
+> Fix $p = (p_1, p_2) \in M_1 \times M_2$, and let $\iota_1 = \iota^{p_2}$ and $\iota_2 = \iota^{p_1}$ be the slice inclusions through $p$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), as in Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]. We must show that $\pi_{1\ast} : T_p(M_1 \times M_2) \to T_{p_1}M_1$ is onto. The proof of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] gives $\pi_{1\ast}\iota_{1\ast} = \mathrm{id}$ and $\pi_{1\ast}\iota_{2\ast} = 0$: the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to $\pi_1 \circ \iota_1 = \mathrm{id}_{M_1}$ and to the constant map $\pi_1 \circ \iota_2$, whose pushforward is zero. With the linearity of $\pi_{1\ast}$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), for $v \in T_{p_1}M_1$ and $w \in T_{p_2}M_2$,
+>
+> $$
+> \pi_{1\ast}\big(\Theta(v, w)\big) = \pi_{1\ast}\big(\iota_{1\ast}v + \iota_{2\ast}w\big) = \pi_{1\ast}\iota_{1\ast}v + \pi_{1\ast}\iota_{2\ast}w = v + 0 = v ,
+> $$
+>
+> by the proof of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]; so $\pi_{1\ast}$ is onto $T_{p_1}M_1$: given $v$, the vector $\Theta(v, 0) = \iota_{1\ast}v$ is a preimage. As $p$ was arbitrary, $\pi_1$ is a submersion.
+>
+> For $\pi_2$ the same proof gives, from $\pi_{2\ast}\iota_{1\ast} = 0$ and $\pi_{2\ast}\iota_{2\ast} = \mathrm{id}$,
+>
+> $$
+> \pi_{2\ast}\big(\Theta(v, w)\big) = \pi_{2\ast}\iota_{1\ast}v + \pi_{2\ast}\iota_{2\ast}w = 0 + w = w ,
+> $$
+>
+> so $\Theta(0, w) = \iota_{2\ast}w$ is a preimage of any $w \in T_{p_2}M_2$, and $\pi_{2\ast}$ is onto.
 ^pf-ex-34-2
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§34 Submersions#^def-34-1|Def. §34.1]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§34 Submersions#^def-34-1|Def. §34.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§40 Projective Spaces and the Hopf Fibration|§40]].
 
@@ -117,11 +144,22 @@ Uribe called (3) “kind of a trivial way to be [regular], but important”: it 
 ^prop-34-2
 
 > [!proof]+ Proof
-> The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition [[§32 The Cotangent Space#^def-32-3|§32.3]]), so it is $0$ or everything — “dimensions of images cannot be fractional.” The second equivalence is Lemma [[§32 The Cotangent Space#^lem-32-3|§32.3]].
-
+> Here $N = \mathbb{R}$, so $n = 1$, and by Definition [[§34 Submersions#^def-34-3|§34.3]] $p$ is a critical point of $f$ exactly when $f_{\ast p} : T_pM \to T_{f(p)}\mathbb{R}$ is not onto.
+>
+> *The dichotomy.* The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition [[§32 The Cotangent Space#^def-32-3|§32.3]]), so it is $0$ or everything — “dimensions of images cannot be fractional.” In detail: $df_p = \iota_{f(p)} \circ f_{\ast p}$ (Definition [[§32 The Cotangent Space#^def-32-5|§32.5]]), where $\iota_{f(p)} : T_{f(p)}\mathbb{R} \to \mathbb{R}$ is a linear isomorphism (Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]](3)). The image of $df_p$ is a subspace of $\mathbb{R}$, of dimension $0$ or $1$; so either $df_p = 0$ or $df_p$ is onto $\mathbb{R}$.
+>
+> *The first equivalence.* Since $\iota_{f(p)}$ is a bijection, $f_{\ast p}$ is onto $T_{f(p)}\mathbb{R}$ if and only if $df_p = \iota_{f(p)} \circ f_{\ast p}$ is onto $\mathbb{R}$. Hence
+>
+> $$
+> p \text{ critical} \iff f_{\ast p} \text{ not onto} \iff df_p \text{ not onto} \iff df_p = 0 ,
+> $$
+>
+> the last step by the dichotomy.
+>
+> *The second equivalence* is Lemma [[§32 The Cotangent Space#^lem-32-3|§32.3]]: in any chart at $p$, $df_p = \sum_i \partial f/\partial x^i(p)\, dx^i|_p$, and the $dx^i|_p$ form a basis of $T_p^{\ast}M$, so this combination is $0$ if and only if every coefficient $\partial f/\partial x^i(p)$ is $0$.
 ^pf-34-2
 
-*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§32 The Cotangent Space#^lem-32-3|§32.3]]
+*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^def-32-3|Def. §32.3]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§32 The Cotangent Space#^prop-32-1|§32.1]]
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$, critical points are where extrema can occur: [[§17 Optimization and Lagrange Multipliers#^thm-17-1|452 §17.1]] (Fermat's theorem).
@@ -136,11 +174,20 @@ This is the definition of critical point Uribe sent to the class by email, and i
 ^lem-34-3
 
 > [!proof]+ Proof
-> It is a homeomorphism onto an open subset of $\mathbb{R}^m$, so it is a chart. For any smooth chart $(W, \chi)$ of $M$, the transition maps $\hat\varphi \circ \chi^{-1}$ and $\chi \circ \hat\varphi^{-1}$ are coordinate representations of $\hat\varphi$ and $\hat\varphi^{-1}$, smooth because these maps are (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]). So $(U, \hat\varphi)$ is compatible with every chart of the maximal atlas, and therefore belongs to it (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]).
-
+> *It is a chart.* $\hat\varphi : U \to \hat\varphi(U)$ is a diffeomorphism, so it is a bijection that is continuous with continuous inverse (smooth maps are continuous, Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]): it is a homeomorphism onto an open subset of $\mathbb{R}^m$, so it is a chart (Definition [[§17 Differentiable Structures#^def-17-1|§17.1]]).
+>
+> *It is compatible with every smooth chart.* Let $(W, \chi)$ be any smooth chart of $M$; if $U \cap W = \emptyset$ there is nothing to check (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]). Otherwise the transition maps are
+>
+> $$
+> \hat\varphi \circ \chi^{-1} : \chi(U \cap W) \to \hat\varphi(U \cap W), \qquad \chi \circ \hat\varphi^{-1} : \hat\varphi(U \cap W) \to \chi(U \cap W) .
+> $$
+>
+> The first is the coordinate representation of the smooth map $\hat\varphi$, restricted to the open set $U \cap W$, in the charts $(U \cap W, \chi|_{U \cap W})$ of $M$ and $(\hat\varphi(U), \mathrm{id})$ of the open set $\hat\varphi(U) \subseteq \mathbb{R}^m$; the second is the coordinate representation of the smooth map $\hat\varphi^{-1}$ in the charts $(\hat\varphi(U \cap W), \mathrm{id})$ and $(U \cap W, \chi|_{U \cap W})$. Both are smooth, because these maps are (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], which allows any pair of smooth charts). They are inverse to each other, so the transition function is a diffeomorphism, and $(U, \hat\varphi)$ is compatible with $(W, \chi)$.
+>
+> *Conclusion.* So $(U, \hat\varphi)$ is compatible with every chart of the maximal atlas $\mathcal{A}$ of $M$, and therefore belongs to it (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]): the set $\overline{\mathcal{A}}$ of charts compatible with every chart of $\mathcal{A}$ is the unique maximal atlas containing $\mathcal{A}$, which is $\mathcal{A}$ itself.
 ^pf-34-3
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§17 Differentiable Structures#^thm-17-5|§17.5]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]]
 
 > [!theorem] Theorem §34.4: Local Normal Form for Submersions
 > Let $F : M \to N$ be a submersion at $p$, with $\dim M = m$ and $\dim N = n$. Then there are charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $F(p)$ with $F(U) \subseteq V$ in which the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \psi(V)$ is the projection onto the first $n$ coordinates:
@@ -173,7 +220,7 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 > [!proof]+ Proof (Lecture 11)
 > The steps are the lecture's, in the lecture's order. Sentences marked *(Completion.)* fill in details the lecture passed over.
 >
-> *1. Start with any coordinates.* “I start with any coordinates”: smooth charts $(U_0, \varphi_0 = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U_0) \subseteq V$. *(Completion.)* Such charts exist: take any charts and replace $U_0$ by the open set $U_0 \cap F^{-1}(V)$.
+> *1. Start with any coordinates.* “I start with any coordinates”: smooth charts $(U_0, \varphi_0 = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U_0) \subseteq V$. *(Completion.)* Such charts exist: take any charts and replace $U_0$ by the open set $U_0 \cap F^{-1}(V)$, open because $F$ is continuous, and $\varphi_0$ by its restriction (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1); its transition maps are restrictions of those of $\varphi_0$, so it is again a smooth chart).
 >
 > *2. The components and their matrix.* As before, define the components of $F$, $F^j = y^j \circ F : U_0 \to \mathbb{R}$. The submersion condition says that the matrix
 >
@@ -181,21 +228,23 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 > J = \Big[\frac{\partial F^j}{\partial x^i}(p)\Big]
 > $$
 >
-> has rank $n$. It “has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients” of the $F^j$. *(Completion.)* By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $J$ is the matrix of $F_{\ast p}$ in the coordinate bases, and $F_{\ast p}$ is onto, so $J$ has rank $n$.
+> has rank $n$. It “has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients” of the $F^j$. *(Completion.)* By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $J$ is the matrix of $F_{\ast p}$ in the coordinate bases, and $F_{\ast p}$ is onto, so $J$ has rank $n$: the rank of $F_{\ast p}$ is $\dim T_{F(p)}N = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and the rank of a linear map is the rank of its matrix (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)).
 >
-> *3. “It's the same matrix.”* A student asked whether the matrix should be written with $\tilde F$. Uribe: “It's the same thing… That's how we define partials. We define them by going downstairs and taking the ordinary partial derivative downstairs. So it's the same matrix.” That is Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]: writing $G = \psi \circ F \circ \varphi_0^{-1}$ for the coordinate representation in these first charts (the lecture's $\tilde F$ at this stage),
+> *3. “It's the same matrix.”* A student asked whether the matrix should be written with $\tilde F$. Uribe: “It's the same thing\ldots That's how we define partials. We define them by going downstairs and taking the ordinary partial derivative downstairs. So it's the same matrix.” That is Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]: writing $G = \psi \circ F \circ \varphi_0^{-1}$ for the coordinate representation in these first charts (the lecture's $\tilde F$ at this stage),
 >
 > $$
 > \frac{\partial F^j}{\partial x^i}(p) = \frac{\partial G^j}{\partial r^i}\big(\varphi_0(p)\big), \qquad J = G'\big(\varphi_0(p)\big).
 > $$
 >
-> *4. Reindex — “the only thing we need to do.”* $J$ has $n$ linearly independent columns; “I just put them at the beginning.” Rearranging the $x^i$, we can write $J$ in block form
+> *(Completion.)* The same proposition gives the identity of functions $F^j \circ \varphi_0^{-1} = G^j$ on $\varphi_0(U_0)$, used in step 7.
+>
+> *4. Reindex — “the only thing we need to do.”* $J$ has $n$ linearly independent columns; “I just put them at the beginning.” *(Completion.)* The rank of a matrix is the dimension of its column space, so among the $m$ columns of $J$, which has rank $n$, some $n$ are linearly independent. Rearranging the $x^i$, we can write $J$ in block form
 >
 > $$
 > J = \big(\, A \ \big|\ B \,\big), \qquad A \text{ an } n \times n \text{ non-singular matrix}, \quad B \text{ of size } n \times (m - n),
 > $$
 >
-> where $B$ is “the stuff that remains here that I'm not going to care about.” *(Completion.)* Rearranging the coordinates replaces $\varphi_0$ by $P \circ \varphi_0$ for a permutation $P$ of $\mathbb{R}^m$. This is again a smooth chart: a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]], and its transition maps are those of $\varphi_0$ composed with the linear map $P$ or $P^{-1}$, hence smooth. It permutes the columns of $J$ in the same way.
+> where $B$ is “the stuff that remains here that I'm not going to care about.” *(Completion.)* $A$ consists of the $n$ independent columns, so it is a square matrix with independent columns, hence non-singular. Rearranging the coordinates replaces $\varphi_0$ by $P \circ \varphi_0$ for a permutation $P$ of $\mathbb{R}^m$. This is again a smooth chart: a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]], and its transition maps are those of $\varphi_0$ composed with the linear map $P$ or $P^{-1}$, hence smooth. It permutes the columns of $J$ in the same way. From now on $\varphi_0 = (x^1, \ldots, x^m)$, $G$ and $J$ denote the rearranged chart, its coordinate representation, and its matrix.
 >
 > *5. The coordinates we want.* “The thing to do, you see, is to take the first $n$ components of $F$ as the first $n$ coordinate functions, and then we keep the remaining ones”:
 >
@@ -213,9 +262,15 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 > \begin{pmatrix} A & B \\ 0 & I_{m-n} \end{pmatrix},
 > $$
 >
-> and “by the block nature, the fact that we have a big zero there, this is non-degenerate” at $p$: its determinant is $\det A \ne 0$. *(Completion.)* “The Jacobian of $\hat\varphi$ in the $x$-coordinates” is the Jacobian at $\varphi_0(p)$ of the ordinary map $H = \hat\varphi \circ \varphi_0^{-1} : \varphi_0(U_0) \to \mathbb{R}^m$. Its rows are the partials of the components of $\hat\varphi$ by Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], applied with the identity chart on $\mathbb{R}^m$, and $\partial x^k/\partial x^i = \delta^k_i$ gives the identity and zero blocks.
+> and “by the block nature, the fact that we have a big zero there, this is non-degenerate” at $p$: its determinant is $\det A \ne 0$. *(Completion.)* “The Jacobian of $\hat\varphi$ in the $x$-coordinates” is the Jacobian at $\varphi_0(p)$ of the ordinary map $H = \hat\varphi \circ \varphi_0^{-1} : \varphi_0(U_0) \to \mathbb{R}^m$. Its rows are the partials of the components of $\hat\varphi$ by Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], applied with the identity chart on $\mathbb{R}^m$, and $\partial x^k/\partial x^i = \delta^k_i$ gives the identity and zero blocks. Concretely, for $r \in \varphi_0(U_0)$ put $q = \varphi_0^{-1}(r)$; then $F^j(q) = G^j(r)$ by step 3, and $x^k(q) = r^k$ because $x^k = r^k \circ \varphi_0$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), so
 >
-> *8. The inverse function theorem, “possibly after shrinking $U$.”* By the inverse function theorem (Theorem [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]]), possibly after shrinking, $\hat\varphi$ is a diffeomorphism onto $\hat\varphi(U)$. *(Completion.)* The theorem gives an open $W \ni \varphi_0(p)$, contained in $\varphi_0(U_0)$, with $H|_W$ a diffeomorphism onto the open set $H(W) \subseteq \mathbb{R}^m$. Put $U = \varphi_0^{-1}(W)$, an open neighbourhood of $p$. Then $\hat\varphi|_U = H|_W \circ \varphi_0|_U$ is a composite of diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), mapping $U$ onto the open set $\hat\varphi(U) = H(W)$.
+> $$
+> H(r) = \hat\varphi(q) = \big(F^1(q), \ldots, F^n(q), x^{n+1}(q), \ldots, x^m(q)\big) = \big(G^1(r), \ldots, G^n(r), r^{n+1}, \ldots, r^m\big).
+> $$
+>
+> The first $n$ rows of $H'(\varphi_0(p))$ are therefore the rows of $G'(\varphi_0(p)) = J = (A \mid B)$, and row $n + l$ is the gradient of $r^{n+l}$, the standard row vector with $1$ in place $n + l$. The matrix is block upper triangular, so its determinant is the product $\det A \cdot \det I_{m-n} = \det A$ of the determinants of the diagonal blocks.
+>
+> *8. The inverse function theorem, “possibly after shrinking $U$.”* By the inverse function theorem (Theorem [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]]), possibly after shrinking, $\hat\varphi$ is a diffeomorphism onto $\hat\varphi(U)$. *(Completion.)* The theorem gives an open $W \ni \varphi_0(p)$, contained in $\varphi_0(U_0)$, with $H|_W$ a diffeomorphism onto the open set $H(W) \subseteq \mathbb{R}^m$. (This is Theorem [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]] with $\Phi = H$ on the open set $\varphi_0(U_0)$ and $a = \varphi_0(p)$, where $H'(a)$ is invertible by step 7; the open sets that theorem calls $U_0$ and $V_0$ are here $W$ and $H(W)$, not to be confused with the chart domain $U_0$.) Put $U = \varphi_0^{-1}(W)$, an open neighbourhood of $p$. Then $\hat\varphi|_U = H|_W \circ \varphi_0|_U$ is a composite of diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), mapping $U$ onto the open set $\hat\varphi(U) = H(W)$. In detail: $H \circ \varphi_0 = \hat\varphi \circ \varphi_0^{-1} \circ \varphi_0 = \hat\varphi$ on $U_0$; $\varphi_0|_U : U \to W$ is the restriction of the diffeomorphism $\varphi_0 : U_0 \to \varphi_0(U_0)$ to the open set $U$, onto $\varphi_0(U) = W$; $H|_W$ is a diffeomorphism of open subsets of $\mathbb{R}^m$, hence of manifolds (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]); and the composite has the smooth inverse $(\varphi_0|_U)^{-1} \circ (H|_W)^{-1}$.
 >
 > *9. The intellectual step: $\hat\varphi$ is a chart.* “There's an intellectual step here that should not be overlooked. If I have a local diffeomorphism like this from an open set in $M$ into its image, which is open in $\mathbb{R}^m$, that is a chart”: it is a homeomorphism, and being smooth with smooth inverse makes it compatible with every other smooth chart, so it lies in the maximal atlas. This is Lemma [[§34 Submersions#^lem-34-3|§34.3]]. So $(U, \hat\varphi)$ is a smooth chart at $p$, and $F(U) \subseteq F(U_0) \subseteq V$.
 >
@@ -227,11 +282,18 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 > F^i\big(\hat\varphi^{-1}(r^1, \ldots, r^m)\big) = r^i \qquad (i = 1, \ldots, n).
 > $$
 >
-> Coming back down by $\psi$, the $i$-th coordinate of $\tilde F(r)$ is $y^i(F(q)) = F^i(q) = r^i$. So $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$: “this coordinate system labels every point in $U$; the first $n$ labels are the values of the $F$'s at that point.”
-
+> *(Completion.)* For $r \in \hat\varphi(U)$ the point $q = \hat\varphi^{-1}(r) \in U$ satisfies $\hat\varphi(q) = r$, that is, $\big(F^1(q), \ldots, F^n(q), x^{n+1}(q), \ldots, x^m(q)\big) = (r^1, \ldots, r^m)$; comparing the first $n$ entries gives the display. Coming back down by $\psi$, the $i$-th coordinate of $\tilde F(r)$ is $y^i(F(q)) = F^i(q) = r^i$. *(Completion.)* In one chain, using the definition of $\tilde F$, then $y^i = r^i \circ \psi$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), then $F^i = y^i \circ F$, then the display:
+>
+> $$
+> r^i\big(\tilde F(r)\big) = r^i\big(\psi(F(q))\big) = y^i\big(F(q)\big) = F^i(q) = r^i \qquad (i = 1, \ldots, n).
+> $$
+>
+> So $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$: “this coordinate system labels every point in $U$; the first $n$ labels are the values of the $F$'s at that point.”
+>
+> *(Completion.)* The charts of the theorem are $(U, \hat\varphi)$ and $(V, \psi)$, with $F(U) \subseteq V$ by step 9. For the equivalent form, the coordinate functions of the new chart are $r^j \circ \hat\varphi$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), and for $j \le n$ this is the $j$-th component of $\hat\varphi$, namely $F^j = y^j \circ F$. So, calling the new coordinate functions $x^j$ as in the statement, $y^j \circ F = F^j = x^j$ on $U$ for $j = 1, \ldots, n$. Finally $n \le m$ was shown in step 5.
 ^pf-34-4
 
-*Uses:* [[§34 Submersions#^def-34-1|Def. §34.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§34 Submersions#^prop-34-1|§34.1]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§34 Submersions#^lem-34-3|§34.3]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+*Uses:* [[§34 Submersions#^def-34-1|Def. §34.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§34 Submersions#^prop-34-1|§34.1]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§34 Submersions#^lem-34-3|§34.3]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]
 
 ![[m591-14-5.svg]]
 *The change of chart in one diagram. The first chart $\varphi_0$ and the new chart $\hat\varphi$ differ by $H$, a diffeomorphism near $\varphi_0(p)$ by step 8. In the new chart, $F$ becomes $\tilde F$, the projection (step 11). The lecture used the letters $\phi$ and $\tilde F$ both for the first charts and for the new ones. The notes write $\varphi_0$ and $G$ for the first, and $\hat\varphi$ and $\tilde F$ for the new, to keep the two stages apart.*
@@ -246,11 +308,12 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 ^cor-34-5
 
 > [!proof]+ Proof
-> In the charts of the theorem, $\tilde F$ is the projection, whose Jacobian $(I_n \mid 0)$ has rank $n$ at every point of $\hat\varphi(U)$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $F_{*q}$ is onto for every $q \in U$.
-
+> Let $(U, \hat\varphi)$ and $(V, \psi)$ be the charts of the theorem: $p \in U$, $F(U) \subseteq V$, and $\tilde F = \psi \circ F \circ \hat\varphi^{-1}$ is the projection $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$ on $\hat\varphi(U)$. The open set $U$ is a neighbourhood of $p$; we show that $F$ is a submersion at every $q \in U$.
+>
+> In the charts of the theorem, $\tilde F$ is the projection, whose Jacobian $(I_n \mid 0)$ has rank $n$ at every point of $\hat\varphi(U)$: its components are $\tilde F^j(r) = r^j$ ($j \le n$), so $\partial \tilde F^j/\partial r^i = \delta^j_i$ for $i = 1, \ldots, m$ at every point, and the first $n$ columns of the resulting matrix are the standard basis of $\mathbb{R}^n$. Now fix $q \in U$. The same two charts are charts at $q$ and at $F(q)$ with $F(U) \subseteq V$, so by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the matrix of $F_{\ast q}$ in the coordinate bases is $\tilde F'(\hat\varphi(q)) = (I_n \mid 0)$. Hence $\operatorname{rank} F_{\ast q} = n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)), and the image of $F_{\ast q}$ is an $n$-dimensional subspace of the $n$-dimensional space $T_{F(q)}N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), so it is all of it. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $F_{\ast q}$ is onto for every $q \in U$.
 ^pf-34-5
 
-*Uses:* [[§34 Submersions#^thm-34-4|§34.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
+*Uses:* [[§34 Submersions#^thm-34-4|§34.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
 > [!theorem] Corollary §34.6: Submersions Are Open Maps
 > If $F : M \to N$ is a submersion, then $F(W)$ is open in $N$ for every open $W \subseteq M$.
@@ -260,11 +323,18 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 ^cor-34-6
 
 > [!proof]+ Proof
-> Let $q = F(p)$ with $p \in W$, and take the charts of the theorem at $p$, shrinking $U$ to $U \cap W$. Then $F(U) = \psi^{-1}\big(\mathrm{pr}(\hat\varphi(U))\big)$, where $\mathrm{pr} : \mathbb{R}^m \to \mathbb{R}^n$ is the projection onto the first $n$ coordinates. Projections are open (Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]), and $\hat\varphi(U)$ is open, so $\mathrm{pr}(\hat\varphi(U))$ is an open subset of $\psi(V)$, and $F(U)$ is open in $N$. It contains $q$ and lies in $F(W)$.
-
+> $F$ is smooth, hence continuous, so by Definition [[§4 Quotient Spaces and Open Maps#^def-4-3|§4.3]] it remains to show that $F(W)$ is open for every open $W \subseteq M$. It suffices to find, for each point $q$ of $F(W)$, an open set containing $q$ and contained in $F(W)$, since then $F(W)$ is the union of these open sets.
+>
+> Let $q = F(p)$ with $p \in W$, and take the charts of the theorem at $p$, shrinking $U$ to $U \cap W$: the restriction of $\hat\varphi$ to the open set $U \cap W \ni p$ is again a smooth chart (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1); its transition maps are restrictions of those of $\hat\varphi$), still $F(U \cap W) \subseteq V$, and the coordinate representation is still the projection, now on $\hat\varphi(U \cap W)$. We write $U$ for $U \cap W$. Then $F(U) = \psi^{-1}\big(\mathrm{pr}(\hat\varphi(U))\big)$, where $\mathrm{pr} : \mathbb{R}^m \to \mathbb{R}^n$ is the projection onto the first $n$ coordinates. Indeed, on $U$ we have $F = \psi^{-1} \circ \tilde F \circ \hat\varphi$ (the definition of $\tilde F$, with $F(U) \subseteq V$), and $\tilde F = \mathrm{pr}$ on $\hat\varphi(U)$, so
+>
+> $$
+> F(U) = \psi^{-1}\big(\tilde F(\hat\varphi(U))\big) = \psi^{-1}\big(\mathrm{pr}(\hat\varphi(U))\big) .
+> $$
+>
+> Projections are open (Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]], for $\mathbb{R}^m = \mathbb{R}^n \times \mathbb{R}^{m-n}$), and $\hat\varphi(U)$ is open, being the image of a chart, so $\mathrm{pr}(\hat\varphi(U))$ is an open subset of $\psi(V)$; it lies in $\psi(V)$ because it equals $\tilde F(\hat\varphi(U))$. Since $\psi : V \to \psi(V)$ is a homeomorphism, $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$ (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2)), and $V$ is open in $N$; so $F(U)$ is open in $N$. It contains $q$ and lies in $F(W)$: $q = F(p)$ with $p \in U$, and $U \subseteq W$.
 ^pf-34-6
 
-*Uses:* [[§34 Submersions#^thm-34-4|§34.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex. §4.2]]
+*Uses:* [[§34 Submersions#^thm-34-4|§34.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 > [!theorem] Theorem §34.7: Submersions from Compact Manifolds
 > Let $M$ be compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]) and nonempty, $N$ connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]), and $F : M \to N$ a submersion ([[§34 Submersions#^def-34-1|Def. §34.1]]). Then $F$ is surjective, and $N$ is compact.
@@ -273,10 +343,16 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 
 > [!proof]+ Proof
 > *(Assignment 4, Problem 2, where $N = \mathbb{R}^k$; the same argument gives the general statement.)* $F(M)$ is open in $N$ because a submersion is an open map (Corollary [[§34 Submersions#^cor-34-6|§34.6]]), and compact, hence closed in the Hausdorff space $N$, because $M$ is compact. It is nonempty, and $N$ is connected, so $F(M) = N$. Then $N = F(M)$ is compact.
-
+>
+> In detail, the three properties of the subset $F(M) \subseteq N$ are:
+> - *open:* Corollary [[§34 Submersions#^cor-34-6|§34.6]] with $W = M$;
+> - *closed:* $F$ is continuous (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so $F(M)$ is compact as the continuous image of the compact space $M$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)); $N$ is Hausdorff, being a manifold; and a compact subspace of a Hausdorff space is closed (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](4));
+> - *nonempty:* $M \neq \emptyset$.
+>
+> In a connected space the only subsets that are both open and closed are $\emptyset$ and the whole space; $F(M)$ is such a subset and is not empty, so $F(M) = N$, i.e. $F$ is surjective. And $N = F(M)$ is compact, by the second item.
 ^pf-34-7
 
-*Uses:* [[§34 Submersions#^cor-34-6|§34.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]]
+*Uses:* [[§34 Submersions#^cor-34-6|§34.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
 
 > [!remark]- Connections
 > - The point-set steps: [[Continuous Image of a Compact Space is Compact|590 §18.3]], [[Compact Subspace of a Hausdorff Space is Closed|590 §18.4]], and clopen subsets of a connected space, [[§15 Connected Spaces#^lem-15-1|590 Lem. §15.1]]; in 591, [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] and [[§1 Point-Set Topology Review#^prop-1-7|§1.7]].
@@ -288,10 +364,11 @@ Uribe singled out Lemma [[§34 Submersions#^lem-34-3|§34.3]] as “an intellect
 
 > [!proof]+ Proof
 > *(Assignment 4, Problem 2.)* $\mathbb{R}^k$ is connected but not compact, since it is unbounded; apply Theorem [[§34 Submersions#^thm-34-7|§34.7]].
-
+>
+> In detail, suppose $F : M \to \mathbb{R}^k$ were a submersion. The hypotheses of Theorem [[§34 Submersions#^thm-34-7|§34.7]] hold: $M$ is compact and nonempty, and $N = \mathbb{R}^k$ is connected (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](4)). So the theorem gives that $\mathbb{R}^k$ is compact. But for $k \ge 1$, $\mathbb{R}^k$ is not bounded — it contains the points $(t, 0, \ldots, 0)$ for all $t \in \mathbb{R}$ — so it is not compact by Heine–Borel (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)). This contradiction shows that no such $F$ exists.
 ^pf-34-8
 
-*Uses:* [[§34 Submersions#^thm-34-7|§34.7]], [[§16 Connected Subspaces of ℝ#^thm-16-1|590 §16.1]], [[§15 Connected Spaces#^thm-15-6|590 §15.6]], [[Heine–Borel Theorem|590 §18.12]]
+*Uses:* [[§34 Submersions#^thm-34-7|§34.7]], [[§16 Connected Subspaces of ℝ#^thm-16-1|590 §16.1]], [[§15 Connected Spaces#^thm-15-6|590 §15.6]], [[Heine–Borel Theorem|590 §18.12]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
 
 > [!remark]- Connections
 > - Compact subsets of $\mathbb{R}^k$ are bounded: [[Heine–Borel Theorem]].

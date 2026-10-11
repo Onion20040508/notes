@@ -26,8 +26,31 @@ tags: [differentiable-manifolds, math591]
 ^prop-49-1
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Linearity: $g(af_1 + bf_2) = a\, gf_1 + b\, gf_2$. For (1), evaluate at a function $f$ and a point $p$: $(g + h)(p) f(p) = g(p) f(p) + h(p) f(p)$, $(gh)(p) f(p) = g(p)\big(h(p) f(p)\big)$, $1 \cdot f(p) = f(p)$ and $c f(p) = c\, f(p)$. For (2), $m_g(1) = g \cdot 1 = g$.
-
+> *(Not from lecture; filled in.)* Two operators are equal when they give the same function on every $f \in C^\infty(M)$, and two functions are equal when they agree at every point; operators are added pointwise, $(P + Q)f = Pf + Qf$, and composed by $(P \circ Q)f = P(Qf)$ (Definition [[§48 Vector Fields#^def-48-4|§48.4]] and the paragraph after it). So each claim is checked at a function $f$ and a point $p$.
+>
+> *$m_g$ is a linear operator.* $m_g f = gf$ is a product of smooth functions, so $m_g$ maps $C^\infty(M)$ to $C^\infty(M)$. For $f_1, f_2 \in C^\infty(M)$ and $a, b \in \mathbb{R}$, by distributivity in $\mathbb{R}$,
+>
+> $$
+> \big(m_g(af_1 + bf_2)\big)(p) = g(p)\big(a f_1(p) + b f_2(p)\big) = a\, g(p) f_1(p) + b\, g(p) f_2(p) = \big(a\, m_g f_1 + b\, m_g f_2\big)(p) .
+> $$
+>
+> *(1)* The four identities, by the arithmetic of $\mathbb{R}$ at the point $p$:
+>
+> $$
+> (m_{g+h} f)(p) = \big(g(p) + h(p)\big) f(p) = g(p) f(p) + h(p) f(p) = (m_g f)(p) + (m_h f)(p) = \big((m_g + m_h) f\big)(p),
+> $$
+>
+> $$
+> (m_{gh} f)(p) = \big(g(p) h(p)\big) f(p) = g(p)\big(h(p) f(p)\big) = g(p)\,(m_h f)(p) = \big(m_g(m_h f)\big)(p) = \big((m_g \circ m_h) f\big)(p),
+> $$
+>
+> $$
+> (m_1 f)(p) = 1 \cdot f(p) = f(p) = (\mathrm{id}\, f)(p), \qquad (m_c f)(p) = c\, f(p) = \big((c\,\mathrm{id}) f\big)(p) .
+> $$
+>
+> *(2)* Applying $m_g$ to the constant function $1$: $m_g(1) = g \cdot 1 = g$. So if $m_g = m_h$, then $g = m_g(1) = m_h(1) = h$.
+>
+> *The final sentence.* By (1), $g \mapsto m_g$ sends sums to sums, products to composites, and the unit $1$ to the unit $\mathrm{id}$, so it is a ring homomorphism; by (2) it is injective. Its image is commutative because $C^\infty(M)$ is, $gh = hg$ pointwise: by (1), $m_g \circ m_h = m_{gh} = m_{hg} = m_h \circ m_g$.
 ^pf-49-1
 
 *Uses:* [[§49 Differential Operators#^def-49-1|Def. §49.1]], [[§48 Vector Fields#^def-48-4|Def. §48.4]]
@@ -55,15 +78,24 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 ^prop-49-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Let $f \in C^\infty(M)$ and $p \in M$. (1) $g\mathbf{X}$ is a vector field by [[§48 Vector Fields#^prop-48-2|Proposition §48.2]] (4), and $(m_g D_\mathbf{X} f)(p) = g(p)\, \mathbf{X}_p[f] = \big(g(p)\, \mathbf{X}_p\big)[f] = (g\mathbf{X})_p[f] = (D_{g\mathbf{X}} f)(p)$. (2) By the product rule for the [[§48 Vector Fields#^def-48-5|derivation]] $D_\mathbf{X}$ ([[§48 Vector Fields#^lem-48-3|Lemma §48.3]]),
+> *(Not from lecture; filled in.)* Both parts are equalities of operators on $C^\infty(M)$: two operators are equal when they give the same function on every $f$, and two functions are equal when they agree at every point. So let $f \in C^\infty(M)$ and $p \in M$.
+>
+> *(1)* $g\mathbf{X}$ is a vector field by Proposition [[§48 Vector Fields#^prop-48-2|§48.2]](4), so $D_{g\mathbf{X}}$ is defined (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]). Using in turn Definition [[§49 Differential Operators#^def-49-1|§49.1]], the definition of $D_\mathbf{X}$ (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]), the pointwise scalar multiplication of derivations (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), and Definition [[§48 Vector Fields#^def-48-3|§48.3]]:
 >
 > $$
-> D_\mathbf{X}(m_g f) = D_\mathbf{X}(gf) = g\, D_\mathbf{X} f + f\, D_\mathbf{X} g = (m_g \circ D_\mathbf{X}) f + m_{\mathbf{X}g} f .
+> \big((m_g \circ D_\mathbf{X}) f\big)(p) = g(p)\,(D_\mathbf{X} f)(p) = g(p)\, \mathbf{X}_p[f] = \big(g(p)\, \mathbf{X}_p\big)[f] = (g\mathbf{X})_p[f] = (D_{g\mathbf{X}} f)(p) .
 > $$
-
+>
+> *(2)* By the product rule for the derivation $D_\mathbf{X}$ (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]), applied to the product $gf$:
+>
+> $$
+> D_\mathbf{X}(m_g f) = D_\mathbf{X}(gf) = g\, D_\mathbf{X} f + f\, D_\mathbf{X} g = (m_g \circ D_\mathbf{X}) f + m_{\mathbf{X}g} f = \big(m_g \circ D_\mathbf{X} + m_{\mathbf{X}g}\big) f .
+> $$
+>
+> The third equality uses $g\, D_\mathbf{X} f = m_g(D_\mathbf{X} f)$ and $f\, D_\mathbf{X} g = (\mathbf{X}g)\, f = m_{\mathbf{X}g} f$, with $\mathbf{X}g = D_\mathbf{X} g \in C^\infty(M)$; the last is the pointwise sum of operators. As $f$ was arbitrary, $D_\mathbf{X} \circ m_g = m_g \circ D_\mathbf{X} + m_{\mathbf{X}g}$.
 ^pf-49-2
 
-*Uses:* [[§48 Vector Fields#^def-48-3|Def. §48.3]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§49 Differential Operators#^def-49-1|Def. §49.1]]
+*Uses:* [[§48 Vector Fields#^def-48-3|Def. §48.3]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§49 Differential Operators#^def-49-1|Def. §49.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 > [!example] Example §49.1: Differential Operators in Coordinates
 > *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$, of [[§49 Differential Operators#^def-49-3|order]] $2$ ([[§49 Differential Operators#^def-49-3|Definition §49.3]] below). On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one, also of order $2$. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$ ([[§49 Differential Operators#^prop-49-2|Proposition §49.2]] (2)): for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. Rewriting every composite in this way is how [[§49 Differential Operators#^prop-49-4|Proposition §49.4]] below puts any differential operator, in a chart, in the form $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ — “they are given by differential expressions in local coordinates.”
@@ -91,11 +123,18 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^ex-49-2
 
 > [!proof]+ Proof
-> By [[§49 Differential Operators#^prop-49-2|Proposition §49.2]] (2) with $\mathbf{X} = \partial/\partial x$ and $g = x$: $\partial \circ m_x = m_x \circ \partial + m_{x'} = m_x \circ \partial + m_1$, and $m_1 = \mathrm{id}$.
-
+> *The identity.* By Proposition [[§49 Differential Operators#^prop-49-2|§49.2]](2) with $\mathbf{X} = \partial/\partial x$ and $g = x$: $\partial \circ m_x = m_x \circ \partial + m_{\mathbf{X}x}$. Here $\mathbf{X}x = D_{\partial/\partial x}\, x = x' = 1$, the derivative of the coordinate function (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]] with the single coefficient $1$). So
+>
+> $$
+> \partial \circ m_x = m_x \circ \partial + m_{x'} = m_x \circ \partial + m_1 ,
+> $$
+>
+> and $m_1 = \mathrm{id}$ (Proposition [[§49 Differential Operators#^prop-49-1|§49.1]](1)). Subtracting $m_x \circ \partial$ gives $\partial \circ m_x - m_x \circ \partial = \mathrm{id}$. Applied to $f$ this reads $(xf)' - xf' = f$, the product rule $(xf)' = f + xf'$.
+>
+> *The two consequences.* $\mathrm{Diff}(\mathbb{R})$ is not commutative, because $\partial \circ m_x \ne m_x \circ \partial$: their difference $\mathrm{id}$ sends the constant function $1$ to $1 \ne 0$. And the operator $\partial \circ m_x - m_x \circ \partial$ has order $0$ (Definition [[§49 Differential Operators#^def-49-3|§49.3]]): it equals $\mathrm{id}$, the empty composite ($r = 0$), so it lies in $\mathrm{Diff}_0(\mathbb{R})$; and it is not in $\mathrm{Diff}_{-1}(\mathbb{R}) = \{0\}$, being nonzero.
 ^pf-ex-49-2
 
-*Uses:* [[§49 Differential Operators#^prop-49-2|§49.2]], [[§49 Differential Operators#^prop-49-1|§49.1]], [[§49 Differential Operators#^def-49-3|Def. §49.3]]
+*Uses:* [[§49 Differential Operators#^prop-49-2|§49.2]], [[§49 Differential Operators#^prop-49-1|§49.1]], [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§48 Vector Fields#^lem-48-3|§48.3]]
 
 > [!theorem] Proposition §49.3: The Order Filtration
 > Let $M$ be a smooth manifold.
@@ -109,25 +148,52 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^prop-49-3
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* (1) A composite with at most $k$ vector-field factors has at most $k + 1$; sums of finite sums are finite sums; and every composite has some finite number of vector-field factors.
+> *(Not from lecture; filled in.)* Throughout, “composite” means a composite $A_1 \circ \cdots \circ A_r$ of generators, each $A_i$ a $D_\mathbf{X}$ or an $m_g$, and $\mathrm{Diff}_k(M)$ consists of the finite sums of composites with at most $k$ factors of the form $D_\mathbf{X}$ (Definition [[§49 Differential Operators#^def-49-3|§49.3]]). The empty sum is the operator $0 = m_0$.
 >
-> (2) Composition distributes over sums, $(P_1 + P_2) \circ Q = P_1 \circ Q + P_2 \circ Q$, and, because the operators are linear, $Q \circ (P_1 + P_2) = Q \circ P_1 + Q \circ P_2$. So it suffices to compose two composites with at most $k$ and at most $l$ vector-field factors; the result is a composite with at most $k + l$.
+> *(1)* *Inclusions.* A composite with at most $k$ vector-field factors has at most $k + 1$; so a finite sum of such composites is also a finite sum of composites with at most $k + 1$, and $\mathrm{Diff}_k(M) \subseteq \mathrm{Diff}_{k+1}(M)$. *Sums.* The sum of two finite sums of composites with at most $k$ vector-field factors is again a finite sum of such composites. *Union.* Each $\mathrm{Diff}_k(M)$ consists of finite sums of finite composites of generators, so lies in $\mathrm{Diff}(M)$ (Definition [[§49 Differential Operators#^def-49-2|§49.2]]). Conversely, let $P = C_1 + \cdots + C_s \in \mathrm{Diff}(M)$ with composites $C_i$, and let $k_i$ be the number of vector-field factors of $C_i$. With $k = \max_i k_i$ (and $k = 0$ if $s = 0$), every $C_i$ has at most $k$ vector-field factors, so $P \in \mathrm{Diff}_k(M)$.
 >
-> (3) A composite with no vector-field factor is $m_{g_1} \circ \cdots \circ m_{g_r} = m_{g_1 \cdots g_r}$, and a sum $\sum_i m_{h_i} = m_{\sum_i h_i}$ ([[§49 Differential Operators#^prop-49-1|Proposition §49.1]] (1)); conversely $m_g \in \mathrm{Diff}_0(M)$.
->
-> (4) A composite with exactly one vector-field factor $D_\mathbf{X}$ is $m_a \circ D_\mathbf{X} \circ m_b$, where $m_a$ is the composite of the multiplications to the left of it and $m_b$ that of those to the right (by (3); $a = 1$ or $b = 1$ if there are none). By [[§49 Differential Operators#^prop-49-2|Proposition §49.2]],
+> *(2)* Let $P = \sum_i C_i \in \mathrm{Diff}_k(M)$ and $Q = \sum_j E_j \in \mathrm{Diff}_l(M)$, with composites $C_i$ having at most $k$ and $E_j$ at most $l$ vector-field factors. Composition distributes over sums on both sides: for every $f$,
 >
 > $$
-> m_a \circ D_\mathbf{X} \circ m_b = m_a \circ \big( m_b \circ D_\mathbf{X} + m_{\mathbf{X}b} \big) = D_{ab\mathbf{X}} + m_{a\,\mathbf{X}b} .
+> \big((P_1 + P_2) \circ Q\big) f = P_1(Qf) + P_2(Qf), \qquad \big(Q \circ (P_1 + P_2)\big) f = Q(P_1 f + P_2 f) = Q(P_1 f) + Q(P_2 f),
 > $$
 >
-> So every composite with at most one vector-field factor is of the form $m_g + D_\mathbf{Y}$, and so is a sum of such: $(m_g + D_\mathbf{X}) + (m_h + D_\mathbf{Y}) = m_{g+h} + D_{\mathbf{X}+\mathbf{Y}}$, since $(\mathbf{X} + \mathbf{Y})_p[f] = \mathbf{X}_p[f] + \mathbf{Y}_p[f]$ and $\mathbf{X} + \mathbf{Y} \in \mathfrak{X}(M)$ ([[§48 Vector Fields#^prop-48-2|Proposition §48.2]]). Conversely $m_g + D_\mathbf{X} \in \mathrm{Diff}_1(M)$. For the uniqueness, a derivation kills constants: $D(1) = D(1 \cdot 1) = 2\, D(1)$, so $D(1) = 0$. Hence $P(1) = g \cdot 1 + D_\mathbf{X}(1) = g$, then $D_\mathbf{X} = P - m_g$, and $D_\mathbf{X}$ determines $\mathbf{X}$ by the uniqueness in [[§48 Vector Fields#^prop-48-7|Proposition §48.7]].
+> the first by the pointwise sum of operators, the second because $Q$ is linear. Hence $P \circ Q = \sum_i \sum_j C_i \circ E_j$. Each $C_i \circ E_j$ is a composite of generators — the factors of $C_i$ followed by those of $E_j$ — whose vector-field factors number at most $k + l$. So $P \circ Q$ is a finite sum of composites with at most $k + l$ vector-field factors: $P \circ Q \in \mathrm{Diff}_{k+l}(M)$. (If $k = -1$ or $l = -1$, then $P = 0$ or $Q = 0$, so $P \circ Q = 0$, which lies in $\mathrm{Diff}_{k+l}(M)$ whenever $k + l \ge -1$.)
 >
-> For the last sentence: $D_\mathbf{X}$ lies in $\mathrm{Diff}_1(M)$ and kills $1$; conversely if $P = m_g + D_\mathbf{X}$ has $P(1) = 0$ then $g = 0$ and $P = D_\mathbf{X}$, a derivation ([[§48 Vector Fields#^lem-48-3|Lemma §48.3]]).
-
+> *(3)* A composite with no vector-field factor is $m_{g_1} \circ \cdots \circ m_{g_r}$. By $m_{gh} = m_g \circ m_h$ (Proposition [[§49 Differential Operators#^prop-49-1|§49.1]](1)), applied $r - 1$ times, it equals $m_{g_1 \cdots g_r}$; for $r = 0$ it is $\mathrm{id} = m_1$. A finite sum of multiplication operators is again one, $\sum_i m_{h_i} = m_{\sum_i h_i}$, by $m_{g+h} = m_g + m_h$ (same proposition). So every element of $\mathrm{Diff}_0(M)$ is some $m_g$. Conversely $m_g$ is a composite of one generator with no vector-field factor, so $m_g \in \mathrm{Diff}_0(M)$.
+>
+> *(4)* *Every element has the form $m_g + D_\mathbf{Y}$.* A composite with no vector-field factor is $m_g$ by (3), and $m_g = m_g + D_\mathbf{0}$, since $(D_\mathbf{0} f)(p) = 0_p[f] = 0$. A composite with exactly one vector-field factor $D_\mathbf{X}$ is $m_a \circ D_\mathbf{X} \circ m_b$, where $m_a$ is the composite of the multiplications to the left of it and $m_b$ that of those to the right (by (3); $a = 1$ or $b = 1$ if there are none). Then, by Proposition [[§49 Differential Operators#^prop-49-2|§49.2]](2) with $g = b$, the linearity of $m_a$, Proposition [[§49 Differential Operators#^prop-49-1|§49.1]](1), and Proposition [[§49 Differential Operators#^prop-49-2|§49.2]](1) with $g = ab$,
+>
+> $$
+> m_a \circ D_\mathbf{X} \circ m_b = m_a \circ \big( m_b \circ D_\mathbf{X} + m_{\mathbf{X}b} \big) = m_a \circ m_b \circ D_\mathbf{X} + m_a \circ m_{\mathbf{X}b} = m_{ab} \circ D_\mathbf{X} + m_{a\,\mathbf{X}b} = D_{ab\mathbf{X}} + m_{a\,\mathbf{X}b} ,
+> $$
+>
+> where $ab\mathbf{X} \in \mathfrak{X}(M)$ by Proposition [[§48 Vector Fields#^prop-48-2|§48.2]](4). Finally, a sum of two operators of this form is again of this form:
+>
+> $$
+> (m_g + D_\mathbf{X}) + (m_h + D_\mathbf{Y}) = m_{g+h} + D_{\mathbf{X}+\mathbf{Y}} ,
+> $$
+>
+> because $m_g + m_h = m_{g+h}$ (Proposition [[§49 Differential Operators#^prop-49-1|§49.1]](1)), and $D_\mathbf{X} + D_\mathbf{Y} = D_{\mathbf{X}+\mathbf{Y}}$: for every $f$ and $p$, $\mathbf{X}_p[f] + \mathbf{Y}_p[f] = (\mathbf{X}_p + \mathbf{Y}_p)[f] = (\mathbf{X} + \mathbf{Y})_p[f]$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]] and [[§48 Vector Fields#^def-48-2|§48.2]]), with $\mathbf{X} + \mathbf{Y} \in \mathfrak{X}(M)$ (Proposition [[§48 Vector Fields#^prop-48-2|§48.2]](1)). The empty sum is $0 = m_0 + D_\mathbf{0}$. So every element of $\mathrm{Diff}_1(M)$ is of the form $m_g + D_\mathbf{Y}$. Conversely $m_g + D_\mathbf{X}$ is a sum of two composites of one generator each, with at most one vector-field factor, so it lies in $\mathrm{Diff}_1(M)$.
+>
+> *$g$ and $\mathbf{X}$ are determined by $P$.* First, $D_\mathbf{X}$ kills the constant function $1$: by its product rule (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]),
+>
+> $$
+> D_\mathbf{X}(1) = D_\mathbf{X}(1 \cdot 1) = 1 \cdot D_\mathbf{X}(1) + 1 \cdot D_\mathbf{X}(1) = 2\, D_\mathbf{X}(1), \qquad \text{so } D_\mathbf{X}(1) = 0 .
+> $$
+>
+> Hence for $P = m_g + D_\mathbf{X}$,
+>
+> $$
+> P(1) = m_g(1) + D_\mathbf{X}(1) = g \cdot 1 + 0 = g ,
+> $$
+>
+> and then $D_\mathbf{X} = P - m_g = P - m_{P(1)}$. If also $P = m_h + D_\mathbf{Y}$, the same computation gives $h = P(1) = g$ and $D_\mathbf{Y} = P - m_{P(1)} = D_\mathbf{X}$, and $D_\mathbf{Y} = D_\mathbf{X}$ forces $\mathbf{Y} = \mathbf{X}$ by the uniqueness in Proposition [[§48 Vector Fields#^prop-48-7|§48.7]].
+>
+> For the last sentence. *Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:* a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition [[§48 Vector Fields#^prop-48-7|§48.7]]); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (4), and $D_\mathbf{X}(1) = 0$ as just shown. *Conversely*, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (4); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]).
 ^pf-49-3
 
-*Uses:* [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^prop-49-1|§49.1]], [[§49 Differential Operators#^prop-49-2|§49.2]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§48 Vector Fields#^lem-48-3|§48.3]]
+*Uses:* [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^prop-49-1|§49.1]], [[§49 Differential Operators#^prop-49-2|§49.2]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§49 Differential Operators#^def-49-2|Def. §49.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§48 Vector Fields#^def-48-2|Def. §48.2]]
 
 > [!definition] Definition §49.4: Multi-Index Notation
 > A **multi-index** is an $m$-tuple $\alpha = (\alpha_1, \ldots, \alpha_m)$ of integers $\alpha_i \ge 0$, with **order** $|\alpha| = \alpha_1 + \cdots + \alpha_m$ and $\alpha! = \alpha_1! \cdots \alpha_m!$. In a chart $(U, (x^1, \ldots, x^m))$, with $\partial_i = \partial/\partial x^i$ acting on $C^\infty(U)$,
@@ -150,27 +216,40 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^prop-49-4
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *Existence.* Call an operator $Q$ on $C^\infty(U)$ *of form $j$* if $Q = \sum_{|\alpha| \le j} b_\alpha\, \partial^\alpha$ with $b_\alpha \in C^\infty(U)$. By linearity it suffices to show: if $A_1 \circ \cdots \circ A_r$ is a composite of generators with $j$ vector-field factors, then $(A_1 \cdots A_r f)|_U = Q(f|_U)$ for some $Q$ of form $j$ (and form $j$ is form $k$ for $j \le k$). Induct on $r$. For $r = 0$ take $Q = \mathrm{id} = \partial^{(0, \ldots, 0)}$. For $r \ge 1$ let $B = A_2 \circ \cdots \circ A_r$, with $(Bf)|_U = Q'(f|_U)$, $Q' = \sum b_\alpha\, \partial^\alpha$ of form $j'$.
-> - If $A_1 = m_g$ then $j = j'$ and $(gBf)|_U = g|_U\, Q'(f|_U)$, of form $j$ with coefficients $g|_U\, b_\alpha$.
-> - If $A_1 = D_\mathbf{X}$ then $j = j' + 1$, and on $U$, $D_\mathbf{X} h = \sum_i \mathbf{X}^i\, \partial_i h$ ([[§48 Vector Fields#^lem-48-3|Lemma §48.3]]), so
+> *(Not from lecture; filled in.)* Write $\varphi$ for the chart map. Two facts about the operators $\partial_i$ on $C^\infty(U)$ are used. First, $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition [[§48 Vector Fields#^prop-48-1|§48.1]], its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. Second, the $\partial_i$ commute: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal (Clairaut's theorem); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$.
+>
+> *Existence.* Call an operator $Q$ on $C^\infty(U)$ *of form $j$* if $Q = \sum_{|\alpha| \le j} b_\alpha\, \partial^\alpha$ with $b_\alpha \in C^\infty(U)$. An operator of form $j$ is of form $k$ for $j \le k$ (take $b_\alpha = 0$ for $j < |\alpha| \le k$), and a sum of operators of form $k$ is of form $k$ (add the coefficients of equal $\partial^\alpha$). Now $P$ is a finite sum $\sum_s C_s$ of composites $C_s$ of generators with at most $k$ vector-field factors (Definition [[§49 Differential Operators#^def-49-3|§49.3]]), and $(Pf)|_U = \sum_s (C_s f)|_U$. So it suffices to show: if $A_1 \circ \cdots \circ A_r$ is a composite of generators with $j$ vector-field factors, then $(A_1 \cdots A_r f)|_U = Q(f|_U)$ for all $f \in C^\infty(M)$, for some $Q$ of form $j$. Induct on $r$. For $r = 0$ take $Q = \mathrm{id} = \partial^{(0, \ldots, 0)}$, of form $0$. For $r \ge 1$ let $B = A_2 \circ \cdots \circ A_r$, with $j'$ vector-field factors; by the induction hypothesis $(Bf)|_U = Q'(f|_U)$ with $Q' = \sum_{|\alpha| \le j'} b_\alpha\, \partial^\alpha$ of form $j'$. Write $u = f|_U$.
+> - If $A_1 = m_g$ then $j = j'$, and restricting the product $g\,(Bf)$ to $U$,
 >
 > $$
-> (D_\mathbf{X} B f)|_U = \sum_i \mathbf{X}^i\, \partial_i \Big( \sum_\alpha b_\alpha\, \partial^\alpha (f|_U) \Big) = \sum_i \sum_\alpha \Big( \mathbf{X}^i\, (\partial_i b_\alpha)\, \partial^\alpha + \mathbf{X}^i\, b_\alpha\, \partial^{\alpha + e_i} \Big)(f|_U),
+> (m_g B f)|_U = g|_U\, (Bf)|_U = g|_U \sum_{|\alpha| \le j'} b_\alpha\, \partial^\alpha u = \sum_{|\alpha| \le j'} \big(g|_U\, b_\alpha\big)\, \partial^\alpha u ,
 > $$
 >
-> by the product rule and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$. The last step reorders the partial derivatives, which is allowed because mixed partials of smooth functions are equal ([[Schwarz–Clairaut Theorem|Clairaut's theorem]], applied to $f \circ \varphi^{-1}$). The right side has form $j' + 1 = j$.
->
-> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p))$, and fix $\beta$ with $|\beta| \le k$. By [[§48 Vector Fields#^cor-48-5|Corollary §48.5]] there is $f_\beta \in C^\infty(M)$ equal to $(x - c)^\beta / \beta!$ near $p$. For the polynomial $(x - c)^\beta$, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise; at $x = c$ it vanishes unless $\alpha = \beta$, where it is $\beta!$. Since $f_\beta$ agrees with $(x - c)^\beta/\beta!$ near $p$, its derivatives at $p$ are the same, and
+>     of form $j$ with the smooth coefficients $g|_U\, b_\alpha$.
+> - If $A_1 = D_\mathbf{X}$ then $j = j' + 1$. For $h \in C^\infty(M)$, Lemma [[§48 Vector Fields#^lem-48-3|§48.3]] gives $(D_\mathbf{X} h)|_U = \sum_i \mathbf{X}^i\, \partial_i (h|_U)$; here $\partial h/\partial x^i(q) = \partial_i(h|_U)(q)$, both being computed from $h \circ \varphi^{-1}$ on $\varphi(U)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). With $h = Bf$, the product rule for $\partial_i$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$,
 >
 > $$
-> 0 = \sum_\alpha c_\alpha(p)\, \partial^\alpha f_\beta(p) = c_\beta(p) .
+> (D_\mathbf{X} B f)|_U = \sum_i \mathbf{X}^i\, \partial_i \Big( \sum_\alpha b_\alpha\, \partial^\alpha u \Big) = \sum_i \sum_\alpha \mathbf{X}^i \Big( (\partial_i b_\alpha)\, \partial^\alpha u + b_\alpha\, \partial_i \partial^\alpha u \Big) = \sum_i \sum_\alpha \Big( \mathbf{X}^i\, (\partial_i b_\alpha)\, \partial^\alpha + \mathbf{X}^i\, b_\alpha\, \partial^{\alpha + e_i} \Big) u ,
 > $$
 >
-> As $p$ and $\beta$ were arbitrary, all $c_\beta = 0$; applied to the difference of two expressions for $P$, this is uniqueness.
-
+>     the sums over $|\alpha| \le j'$. The last step reorders the partial derivatives, which is allowed because mixed partials of smooth functions are equal (Clairaut's theorem, applied to $f \circ \varphi^{-1}$), as recalled above. The coefficients $\mathbf{X}^i\, \partial_i b_\alpha$ and $\mathbf{X}^i\, b_\alpha$ are smooth on $U$ ($\mathbf{X}^i$ by Proposition [[§48 Vector Fields#^prop-48-1|§48.1]]), and the multi-indices occurring have $|\alpha| \le j'$ and $|\alpha + e_i| = |\alpha| + 1 \le j' + 1$. Collecting the terms with the same multi-index, the right side has form $j' + 1 = j$.
+>
+> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary [[§48 Vector Fields#^cor-48-5|§48.5]] there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. In coordinates, $(x - c)^\beta \circ \varphi^{-1}(r) = \prod_i (r^i - c^i)^{\beta_i}$, a product of factors each depending on one variable, so
+>
+> $$
+> \frac{\partial^{|\alpha|}}{\partial r^\alpha} \prod_{i=1}^m (r^i - c^i)^{\beta_i} = \prod_{i=1}^m \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i}, \qquad \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i} = \begin{cases} \dfrac{\beta_i!}{(\beta_i - \alpha_i)!} (r^i - c^i)^{\beta_i - \alpha_i} & \alpha_i \le \beta_i, \\ 0 & \alpha_i > \beta_i . \end{cases}
+> $$
+>
+> That is, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise. At $x = c$, i.e. at the point $p$, the factor $(r^i - c^i)^{\beta_i - \alpha_i}$ is $1$ if $\alpha_i = \beta_i$ and $0$ if $\alpha_i < \beta_i$; so $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
+>
+> $$
+> 0 = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha (f_\beta|_U)(p) = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha\Big(\frac{(x - c)^\beta}{\beta!}\Big)(p) = c_\beta(p)\, \frac{\beta!}{\beta!} = c_\beta(p) .
+> $$
+>
+> As $p$ and $\beta$ were arbitrary, all $c_\beta = 0$. Applied to the difference of two expressions for $P$, $(Pf)|_U = \sum a_\alpha\, \partial^\alpha (f|_U) = \sum a'_\alpha\, \partial^\alpha (f|_U)$, with $c_\alpha = a_\alpha - a'_\alpha$, this gives $a_\alpha = a'_\alpha$ for every $\alpha$: uniqueness.
 ^pf-49-4
 
-*Uses:* [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^def-49-4|Def. §49.4]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§48 Vector Fields#^cor-48-5|§48.5]]
+*Uses:* [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^def-49-4|Def. §49.4]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
 
 > [!theorem] Corollary §49.5: Differential Operators on Euclidean Space
 > On $\mathbb{R}^m$, with its standard coordinates and $\partial_i = D_{\partial/\partial x^i}$,
@@ -184,11 +263,24 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^cor-49-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* The identity chart covers $\mathbb{R}^m$, so [[§49 Differential Operators#^prop-49-4|Proposition §49.4]] with $U = \mathbb{R}^m$ gives the inclusion $\subseteq$ and the uniqueness. Conversely, each $\partial_i$ is the operator of the global vector field $\partial/\partial x^i$, so $a_\alpha\, \partial^\alpha = m_{a_\alpha} \circ \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$ is a composite with $|\alpha|$ vector-field factors, in $\mathrm{Diff}_{|\alpha|}(\mathbb{R}^m) \subseteq \mathrm{Diff}_k(\mathbb{R}^m)$. For the order: $P$ lies in $\mathrm{Diff}_j$ exactly when its unique expansion has $a_\alpha = 0$ for $|\alpha| > j$.
-
+> *(Not from lecture; filled in.)* Here $\partial_i$ in the sense of Definition [[§49 Differential Operators#^def-49-4|§49.4]] for the identity chart, $f \mapsto \partial f/\partial x^i$, is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on $\mathbb{R}^m$ (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]], with coefficients $\delta^j_i$); $\partial/\partial x^i$ is a vector field by Proposition [[§48 Vector Fields#^prop-48-1|§48.1]], its coefficients being constant.
+>
+> *$\subseteq$ and uniqueness.* The identity chart $(\mathbb{R}^m, \mathrm{id})$ covers $\mathbb{R}^m$, so Proposition [[§49 Differential Operators#^prop-49-4|§49.4]] with $U = \mathbb{R}^m$ (where $f|_U = f$) gives, for $P \in \mathrm{Diff}_k(\mathbb{R}^m)$, unique $a_\alpha \in C^\infty(\mathbb{R}^m)$ with $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for all $f$.
+>
+> *$\supseteq$.* Conversely, each term is
+>
+> $$
+> a_\alpha\, \partial^\alpha = m_{a_\alpha} \circ \underbrace{\partial_1 \circ \cdots \circ \partial_1}_{\alpha_1} \circ \cdots \circ \underbrace{\partial_m \circ \cdots \circ \partial_m}_{\alpha_m} ,
+> $$
+>
+> a composite of generators with $\alpha_1 + \cdots + \alpha_m = |\alpha|$ vector-field factors, so it lies in $\mathrm{Diff}_{|\alpha|}(\mathbb{R}^m) \subseteq \mathrm{Diff}_k(\mathbb{R}^m)$ for $|\alpha| \le k$ (Proposition [[§49 Differential Operators#^prop-49-3|§49.3]](1)). A finite sum of such terms lies in $\mathrm{Diff}_k(\mathbb{R}^m)$, which is closed under sums (same proposition).
+>
+> *$\mathrm{Diff}(\mathbb{R}^m)$.* Since $\mathrm{Diff}(\mathbb{R}^m) = \bigcup_k \mathrm{Diff}_k(\mathbb{R}^m)$ (Proposition [[§49 Differential Operators#^prop-49-3|§49.3]](1)), the differential operators are exactly the finite expressions $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients.
+>
+> *The order.* Let $P \in \mathrm{Diff}_k(\mathbb{R}^m)$ with its unique coefficients $a_\alpha$, $|\alpha| \le k$. For $-1 \le j \le k$: $P \in \mathrm{Diff}_j(\mathbb{R}^m)$ if and only if $a_\alpha = 0$ for all $|\alpha| > j$. Indeed, if $P \in \mathrm{Diff}_j(\mathbb{R}^m)$, its expansion with $|\alpha| \le j$ (by $\subseteq$; for $j = -1$, $P = 0$ with the empty expansion), padded with zero coefficients for $j < |\alpha| \le k$, is an expansion with $|\alpha| \le k$, so by uniqueness it equals $(a_\alpha)$, and $a_\alpha = 0$ for $|\alpha| > j$. Conversely, if $a_\alpha = 0$ for $|\alpha| > j$, then $P = \sum_{|\alpha| \le j} a_\alpha\, \partial^\alpha \in \mathrm{Diff}_j(\mathbb{R}^m)$ by $\supseteq$ (for $j = -1$, $P = 0$). So for $P \ne 0$, with $\ell$ the largest $|\alpha|$ such that $a_\alpha \ne 0$, $P \in \mathrm{Diff}_\ell(\mathbb{R}^m)$ and $P \notin \mathrm{Diff}_{\ell - 1}(\mathbb{R}^m)$: $P$ has order $\ell$ (Definition [[§49 Differential Operators#^def-49-3|§49.3]]).
 ^pf-49-5
 
-*Uses:* [[§49 Differential Operators#^prop-49-4|§49.4]], [[§49 Differential Operators#^def-49-3|Def. §49.3]]
+*Uses:* [[§49 Differential Operators#^prop-49-4|§49.4]], [[§49 Differential Operators#^def-49-3|Def. §49.3]], [[§49 Differential Operators#^def-49-4|Def. §49.4]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§49 Differential Operators#^prop-49-3|§49.3]]
 
 > [!remark]- Connections
 > - The Laplacian $\Delta = \sum_i \partial_i^2$, an operator of order $2$ in $\mathrm{Diff}(\mathbb{R}^m)$: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|Multivariable Analysis, Definition §28.3]].

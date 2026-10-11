@@ -13,6 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§17 Differentiable Structures#^ex-17-1|Example §17.1: Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
+- [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-1|Definition §19.1: Smooth Chart]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-2|Definition §19.2: Smooth Function on a Manifold]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-3|Definition §19.3: Smooth Map]]
@@ -21,11 +22,21 @@ tags: [differentiable-manifolds, hub]
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
 
 ## Used in (Differentiable Manifolds)
+- [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1: Two Smooth Structures on the Real Line]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-6|Proposition §19.6: Transport of Smooth Structure]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-9|Proposition §19.9: Projections and Slice Inclusions Are Smooth]]
+- [[§20 Manifolds in Euclidean Space#^lem-20-3|Lemma §20.3: Smooth Maps into and out of Regular Level Sets]]
+- [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|Proposition §22.2: A Vector Space Is a Smooth Manifold]]
+- [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
+- [[§30 The Differential in Coordinates#^prop-30-8|Proposition §30.8: Regular Values Inside One Chart]]
+- [[§30 The Differential in Coordinates#^prop-30-10|Proposition §30.10: Maps with Zero Differential Are Constant]]
+- [[§33 Local Diffeomorphisms#^thm-33-2|Theorem §33.2: Local Diffeomorphisms Are Detected by the Differential]]
+- [[§33 Local Diffeomorphisms#^cor-33-3|Corollary §33.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]
 - [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]
 - [[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3: Smooth Maps and Regular Submanifolds]]
+- [[§37 Immersions#^thm-37-1|Theorem §37.1: Local Normal Form for Immersions]]
 - [[§47 One-Forms#^prop-47-1|Proposition §47.1: One-Forms in Coordinates]]
+- [[§47 One-Forms#^prop-47-5|Proposition §47.5: Pullbacks in Coordinates]]
 - [[§48 Vector Fields#^prop-48-1|Proposition §48.1: Vector Fields in Coordinates]]
 
 ## Connections

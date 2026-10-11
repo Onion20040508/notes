@@ -27,23 +27,76 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-42-1
 
 > [!proof]+ Proof
-> *(The problem stated (1) and the two-to-one property without proof; filled in. Part (3) contains the submitted computation: for $q = \gamma_j(t)$ it gives the rotation by $2t$ about $e_j$; the submitted computation itself is in the [[§42 SU(2) → SO(3)꞉ The Double Cover#^pf-42-4-2|second proof]] of [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|Theorem §42.4]].)* A quaternion $v$ is pure imaginary iff $\bar v = -v$, and then $\overline{q v \bar q} = q \bar v \bar q = -q v \bar q$, so $C_q(v) \in \mathbb{H}_0$; and $|C_q(v)| = |v|$ by [[§41 The Unit Quaternions and SU(2)#^prop-41-1|Proposition §41.1]]. So $C_q$ is a linear isometry of $\mathbb{R}^3$, $C_q \in \mathrm{O}(3)$.
+> *(The problem stated (1) and the two-to-one property without proof; filled in. Part (3) contains the submitted computation: for $q = \gamma_j(t)$ it gives the rotation by $2t$ about $e_j$; the submitted computation itself is in the second proof of Theorem [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|§42.4]].)* Throughout, $\mathbb{H}_0 \cong \mathbb{R}^3$ by $y_1 i + y_2 j + y_3 k \leftrightarrow (y_1, y_2, y_3)$, so $i, j, k$ correspond to $e_1, e_2, e_3$, and the norm, dot product and cross product of $\mathbb{R}^3$ are used on $\mathbb{H}_0$; matrices of maps $\mathbb{H}_0 \to \mathbb{H}_0$ are taken in the basis $i, j, k$.
 >
-> (1) $C_{pq}(v) = pq v \bar q \bar p = C_p(C_q(v))$. The entries of $C_q$ are quadratic polynomials in the coordinates of $q$, so $C$ is smooth into $\operatorname{Mat}(3, \mathbb{R})$, with values in the submanifold $\mathrm{O}(3)$ ([[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]]). $\det \circ C : S^3 \to \{\pm 1\}$ is continuous on the connected $S^3$ ([[§41 The Unit Quaternions and SU(2)#^prop-41-4|Proposition §41.4]]) and equals $1$ at $q = 1$, so $C$ takes values in $\mathrm{SO}(3)$, an open subset of $\mathrm{O}(3)$; hence $C$ is smooth into $\mathrm{SO}(3)$ ([[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]]).
->
-> (2) If $C_q = \mathrm{id}$, then $q$ commutes with $i$, $j$ and $k$. Writing $q = x_0 + x_1 i + x_2 j + x_3 k$, $qi = iq$ forces $x_2 = x_3 = 0$, and $qj = jq$ forces $x_1 = 0$; so $q = x_0$ is real, and $|q| = 1$ gives $q = \pm 1$. Conversely $C_{\pm 1} = \mathrm{id}$. Then $C_p = C_q$ iff $C_{p\bar q} = \mathrm{id}$ iff $p = \pm q$.
->
-> (3) Write $c = \cos\frac\theta2$, $s = \sin\frac\theta2$. For pure imaginary $u, v$ one has $uv = -u\cdot v + u \times v$, so $u$ commutes with $q$ and $C_q(u) = u q \bar q = u$. If $v \perp u$, then $vu = -uv$, hence $v\bar q = (c + su) v = qv$, and
+> *$C_q$ maps $\mathbb{H}_0$ to itself isometrically.* A quaternion $v = x_0 + w$ ($w$ pure imaginary) has $\bar v = x_0 - w$, so $\bar v = -v$ iff $x_0 = -x_0$ iff $x_0 = 0$: $v$ is pure imaginary iff $\bar v = -v$. For such $v$, applying $\overline{pq} = \bar q \bar p$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]]) twice and $\bar{\bar q} = q$,
 >
 > $$
-> C_q(v) = q^2 v = \big(\cos\theta + \sin\theta\, u\big) v = \cos\theta\, v + \sin\theta\, (u \times v) .
+> \overline{q v \bar q} = \bar{\bar q}\; \overline{qv} = q\, \bar v\, \bar q = q(-v)\bar q = -q v \bar q ,
 > $$
 >
-> That is the rotation by $\theta$ about $u$: it fixes $u$ and turns the plane $u^\perp$ through $\theta$.
-
+> so $C_q(v) \in \mathbb{H}_0$. By $|pq| = |p|\,|q|$, $|C_q(v)| = |q|\,|v|\,|\bar q| = |v|$. $C_q$ is $\mathbb{R}$-linear, since multiplication is bilinear. So $C_q$ is a linear isometry of $\mathbb{R}^3$. A linear map preserving norms preserves dot products, by polarization: $C_q v \cdot C_q w = \frac12\big(|C_q(v + w)|^2 - |C_q v|^2 - |C_q w|^2\big) = \frac12\big(|v + w|^2 - |v|^2 - |w|^2\big) = v \cdot w$. So the columns of its matrix are orthonormal, $C_q^{\mathsf T} C_q = I$, and $C_q \in \mathrm{O}(3)$.
+>
+> (1) *Homomorphism.* By $\overline{pq} = \bar q \bar p$ and associativity, for $v \in \mathbb{H}_0$,
+>
+> $$
+> C_{pq}(v) = (pq)\, v\, \overline{pq} = p q v \bar q \bar p = p\,(q v \bar q)\,\bar p = C_p(C_q(v)) ,
+> $$
+>
+> so $C_{pq} = C_p C_q$.
+>
+> *Smooth into $\operatorname{Mat}(3, \mathbb{R})$.* The $(a, b)$ entry of the matrix of $C_q$ is the $e_a$-coordinate of $q\, e_b\, \bar q$. With $q = \sum_c x_c e_c$ and $\bar q = \sum_d \pm x_d e_d$, bilinearity gives $q e_b \bar q = \sum_{c,d} \pm x_c x_d\, e_c e_b e_d$, and each $e_c e_b e_d$ is $\pm$ a basis element. So the entries of $C_q$ are quadratic polynomials in the coordinates $x_0, \ldots, x_3$ of $q$: $C$ is the restriction to $S^3$ of a smooth map $\mathbb{R}^4 \to \operatorname{Mat}(3, \mathbb{R})$, hence smooth from $S^3$ (compose with the inclusion, Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)).
+>
+> *Values in $\mathrm{SO}(3)$.* For $A \in \mathrm{O}(3)$, $\det(A)^2 = \det(A^{\mathsf T} A) = 1$, so $\det \circ C : S^3 \to \{\pm 1\}$. It is continuous, and $S^3$ is connected (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]]); if it took both values, the preimages of $1$ and of $-1$ would be disjoint nonempty open sets covering $S^3$. So it is constant, equal to its value $\det C_1 = \det I = 1$ at $q = 1$ (where $C_1(v) = v$). Hence $C$ takes values in $\mathrm{SO}(3)$.
+>
+> *Smooth into $\mathrm{SO}(3)$.* $\mathrm{O}(3)$ is the regular level set $F^{-1}(I)$ of $F(g) = gg^{\mathsf T}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), so a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Theorem [[§35 Regular Submanifolds#^thm-35-7|§35.7]]). $\mathrm{SO}(3)$ is open in $\mathrm{O}(3)$: $\mathrm{SO}(3) = \mathrm{O}(3) \cap W$ with $W = \det^{-1}\big((0, \infty)\big)$ open in $\operatorname{Mat}(3, \mathbb{R})$, because $\det = \pm 1$ on $\mathrm{O}(3)$. An adapted chart $(U, \varphi)$ of $\mathrm{O}(3)$, restricted to $U \cap W$, satisfies $(U \cap W) \cap \mathrm{SO}(3) = \{q \in U \cap W : x_b(q) = \vec 0\}$, so it is adapted to $\mathrm{SO}(3)$; thus $\mathrm{SO}(3)$ is a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Definition [[§35 Regular Submanifolds#^def-35-1|§35.1]]). Since $C$ is smooth into $\operatorname{Mat}(3, \mathbb{R})$ with values in $\mathrm{SO}(3)$, it is smooth into $\mathrm{SO}(3)$ (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2)).
+>
+> (2) *The kernel.* If $C_q = \mathrm{id}$, then $q v \bar q = v$ for all $v \in \mathbb{H}_0$; multiplying on the right by $q$ and using $\bar q q = 1$ gives $qv = vq$. So $q$ commutes with $i$, $j$ and $k$. Write $q = x_0 + x_1 i + x_2 j + x_3 k$. By the multiplication table,
+>
+> $$
+> qi - iq = (x_0 i - x_1 - x_2 k + x_3 j) - (x_0 i - x_1 + x_2 k - x_3 j) = 2x_3\, j - 2x_2\, k ,
+> $$
+>
+> $$
+> qj - jq = (x_0 j + x_1 k - x_2 - x_3 i) - (x_0 j - x_1 k - x_2 + x_3 i) = 2x_1\, k - 2x_3\, i .
+> $$
+>
+> So $qi = iq$ forces $x_2 = x_3 = 0$, and $qj = jq$ forces $x_1 = 0$; so $q = x_0$ is real, and $|q| = 1$ gives $q = \pm 1$. Conversely $C_{\pm 1}(v) = (\pm 1)\, v\, (\pm 1) = v$, so $C_{\pm 1} = \mathrm{id}$. Hence $\ker C = \{\pm 1\}$.
+>
+> *Fibres.* Since $C$ is a homomorphism and $\bar q = q^{-1}$, $C_{\bar q} = C_q^{-1}$, and $C_{p \bar q} = C_p C_q^{-1}$. So
+>
+> $$
+> C_p = C_q \iff C_{p\bar q} = \mathrm{id} \iff p\bar q = \pm 1 \iff p = \pm q ,
+> $$
+>
+> the last step by multiplying on the right by $q$ (and by $\bar q$ for the converse), using $\bar q q = q \bar q = 1$.
+>
+> (3) *Products of pure imaginary quaternions.* Write $c = \cos\frac\theta2$, $s = \sin\frac\theta2$, so $q = c + su$ and $\bar q = c - su$, with $|q|^2 = c^2 + s^2 |u|^2 = 1$. For pure imaginary $u = \sum_a u_a e_a$, $v = \sum_b v_b e_b$ ($a, b \in \{1, 2, 3\}$), bilinearity, $e_a^2 = -1$ and $ij = k = -ji$, $jk = i = -kj$, $ki = j = -ik$ give
+>
+> $$
+> uv = \sum_a u_a v_a\, e_a^2 + \sum_{a \neq b} u_a v_b\, e_a e_b = -u \cdot v + (u_2 v_3 - u_3 v_2)\, i + (u_3 v_1 - u_1 v_3)\, j + (u_1 v_2 - u_2 v_1)\, k = -u\cdot v + u \times v .
+> $$
+>
+> *The axis is fixed.* In particular $u^2 = -|u|^2 = -1$. So $u$ commutes with $q$: $uq = cu + s u^2 = qu$. Hence $C_q(u) = q u \bar q = u q \bar q = u\, |q|^2 = u$.
+>
+> *The plane $u^\perp$ is rotated.* If $v \in \mathbb{H}_0$ with $v \perp u$, then $u \cdot v = 0$, so $uv = u \times v$ and $vu = v \times u = -u \times v = -uv$. Hence $v \bar q = cv - s\, vu = cv + s\, uv = (c + su) v = qv$, and
+>
+> $$
+> C_q(v) = q\,(v \bar q) = q\,(q v) = q^2 v = \big(\cos\theta + \sin\theta\, u\big) v = \cos\theta\, v + \sin\theta\, (u \times v) ,
+> $$
+>
+> where $q^2 = c^2 + 2cs\, u + s^2 u^2 = (c^2 - s^2) + 2cs\, u = \cos\theta + \sin\theta\, u$ by the double-angle formulas, and the last step uses $uv = u \times v$.
+>
+> *This is the rotation by $\theta$ about $u$.* Choose a unit $v \perp u$ and put $w = u \times v$, a unit vector orthogonal to $u$ and $v$. Then $(v, w, u)$ is an orthonormal basis with $v \times w = v \times (u \times v) = u\,(v \cdot v) - v\,(v \cdot u) = u$, so $Q = (v \ w \ u)$, the matrix with these columns, lies in $\mathrm{SO}(3)$ ($\det Q = (v \times w) \cdot u = 1$) and $Q e_3 = u$. By the previous step, applied to $v$ and to $w \perp u$, and $u \times w = u \times (u \times v) = u\,(u \cdot v) - v\,(u \cdot u) = -v$,
+>
+> $$
+> C_q(v) = \cos\theta\, v + \sin\theta\, w, \qquad C_q(w) = \cos\theta\, w - \sin\theta\, v, \qquad C_q(u) = u .
+> $$
+>
+> So $C_q Q = Q R(\theta)$ with $R(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{pmatrix}$, i.e. $C_q = Q R(\theta) Q^{\mathsf T}$: by Example [[§25 The Geometric Tangent Space#^ex-25-4|§25.4]] this is the rotation about $Qe_3 = u$ by the angle $\theta$. It fixes $u$ and turns the plane $u^\perp$ through $\theta$.
 ^pf-42-1
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|§42.4]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§35 Regular Submanifolds#^thm-35-7|§35.7]], [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]]
 
 > [!remark]- Connections
 > - The half-angle in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]].
@@ -57,11 +110,26 @@ The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j
 ^lem-42-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* $\det(A - I) = \det(A - A A^{\mathsf T}) = \det A \, \det(I - A^{\mathsf T}) = \det(I - A) = -\det(A - I)$, the last step because $3$ is odd. So $\det(A - I) = 0$, and $Au = u$ for some unit $u$. $A$ preserves $u^\perp$ and restricts to an orientation-preserving isometry of that plane, a rotation by some $\theta$.
-
+> *(Not from lecture; filled in.)* We must find a unit $u$ and an angle $\theta$ with $A = Q R(\theta) Q^{\mathsf T}$ for some $Q \in \mathrm{SO}(3)$ with $Qe_3 = u$, which is the rotation by $\theta$ about $u$ (Example [[§25 The Geometric Tangent Space#^ex-25-4|§25.4]]). Recall $A^{\mathsf T} A = A A^{\mathsf T} = I$ and $\det A = 1$.
+>
+> *An axis.* Using $I = AA^{\mathsf T}$, multiplicativity of $\det$, $\det A = 1$, $\det B^{\mathsf T} = \det B$, and $\det(-B) = (-1)^3 \det B$ for $3 \times 3$ matrices,
+>
+> $$
+> \det(A - I) = \det(A - A A^{\mathsf T}) = \det A \, \det(I - A^{\mathsf T}) = \det\big((I - A)^{\mathsf T}\big) = \det(I - A) = -\det(A - I),
+> $$
+>
+> the last step because $3$ is odd. So $\det(A - I) = 0$, $A - I$ has a nonzero kernel vector $x$, and $u = x/|x|$ is a unit vector with $Au = u$.
+>
+> *The plane $u^\perp$.* $A$ preserves dot products ($Av \cdot Aw = v^{\mathsf T} A^{\mathsf T} A w = v \cdot w$), so for $v \perp u$, $Av \cdot u = Av \cdot Au = v \cdot u = 0$: $A$ preserves $u^\perp$ and restricts to an isometry of that plane. To see that it is an orientation-preserving one, a rotation by some $\theta$, choose a unit $v \perp u$ and put $w = u \times v$; as in the proof of Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](3), $Q = (v \ w \ u) \in \mathrm{SO}(3)$ and $Qe_3 = u$. The matrix $B = Q^{\mathsf T} A Q$ is orthogonal with $\det B = \det A = 1$, and its third column is $Q^{\mathsf T} A u = Q^{\mathsf T} u = e_3$. Its columns are orthonormal, so the first two are orthogonal to $e_3$ and have third entry $0$; so
+>
+> $$
+> B = \begin{pmatrix} b_{11} & b_{12} & 0 \\ b_{21} & b_{22} & 0 \\ 0 & 0 & 1 \end{pmatrix}, \qquad \begin{pmatrix} b_{11} & b_{12} \\ b_{21} & b_{22} \end{pmatrix} \text{ orthogonal with determinant } \det B = 1 .
+> $$
+>
+> The first column $(b_{11}, b_{21})$ is a unit vector, so equals $(\cos\theta, \sin\theta)$ for some $\theta$; the second is a unit vector orthogonal to it, so $\pm(-\sin\theta, \cos\theta)$; and determinant $1$ forces the sign $+$. So $B = R(\theta)$, and $A = Q B Q^{\mathsf T} = Q R(\theta) Q^{\mathsf T}$, the rotation by $\theta$ about $u$.
 ^pf-42-2
 
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-56|LADR 9.56]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-56|LADR 9.56]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]]
 
 > [!remark]- Connections
 > - Rotations in Quantum Mechanics, by Euler angles: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-2|QM Def. §C5.2.2]]; isometries in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
@@ -80,11 +148,32 @@ The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j
 ^lem-42-3
 
 > [!proof]+ Proof
-> *(The submitted solution's argument, isolated as a lemma; in its original form it is part of the [[§42 SU(2) → SO(3)꞉ The Double Cover#^pf-42-4-2|second proof]] of [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|Theorem §42.4]].)* $L_h$ is the restriction of the linear map $x \mapsto hx$, so it is smooth ([[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]]), with smooth inverse $L_{h^{-1}}$: a diffeomorphism, so its differentials are isomorphisms ([[§28 Derivations and the Abstract Tangent Space#^thm-28-6|chain rule]]). $G$ is a homomorphism, so $G \circ L_g = L_{G(g)} \circ G$; differentiating at $I$ gives $G_{\ast g} \circ (L_g)_{\ast I} = (L_{G(g)})_{\ast I} \circ G_{\ast I}$, and $(L_g)_{\ast I}^{-1} = (L_{g^{-1}})_{\ast g}$.
-
+> *(The submitted solution's argument, isolated as a lemma; in its original form it is part of the second proof of Theorem [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|§42.4]].)* Two claims: each $L_h$ (on $H$, and likewise on $K$) is a diffeomorphism, so its differentials are isomorphisms; and the displayed formula for $G_{\ast g}$.
+>
+> *Translations are diffeomorphisms.* Let $h \in H$. On the ambient matrix space the map $x \mapsto hx$ is linear, hence smooth; $L_h$ is its restriction to $H$, so it is smooth into the ambient space (compose with the inclusion, Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)), and its values lie in $H$ because $H$ is closed under products; so $L_h : H \to H$ is smooth (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2)). The same holds for $L_{h^{-1}}$, since $h^{-1} \in H$. By associativity, $L_h \circ L_{h^{-1}}(x) = h h^{-1} x = x$ and $L_{h^{-1}} \circ L_h(x) = x$; so $L_h$ is a diffeomorphism with smooth inverse $L_{h^{-1}}$. For every $x \in H$, the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to these two identities at $x$ and at $hx$ gives
+>
+> $$
+> (L_{h^{-1}})_{\ast hx} \circ (L_h)_{\ast x} = \mathrm{id}, \qquad (L_h)_{\ast x} \circ (L_{h^{-1}})_{\ast hx} = \mathrm{id},
+> $$
+>
+> so $(L_h)_{\ast x}$ is an isomorphism with inverse $(L_{h^{-1}})_{\ast hx}$. In particular, with $h = g$ and $x = I$: $(L_g)_{\ast I}^{-1} = (L_{g^{-1}})_{\ast g}$. The same argument applies verbatim to $K$, which is also closed under products and inverses; so each $(L_k)_{\ast}$, $k \in K$, is an isomorphism.
+>
+> *The formula.* $G$ is a homomorphism, so $G(I) = I$, and for all $x \in H$,
+>
+> $$
+> G(L_g(x)) = G(gx) = G(g)\,G(x) = L_{G(g)}(G(x)) ,
+> $$
+>
+> i.e. $G \circ L_g = L_{G(g)} \circ G$. Differentiating both sides at $I$ with the Chain Rule, using $L_g(I) = g$ and $G(I) = I$, gives
+>
+> $$
+> G_{\ast g} \circ (L_g)_{\ast I} = (L_{G(g)})_{\ast I} \circ G_{\ast I} .
+> $$
+>
+> Composing on the right with $(L_g)_{\ast I}^{-1} = (L_{g^{-1}})_{\ast g}$ gives $G_{\ast g} = (L_{G(g)})_{\ast I} \circ G_{\ast I} \circ (L_{g^{-1}})_{\ast g}$. If $G_{\ast I}$ is an isomorphism, the right side is a composite of three isomorphisms, so $G_{\ast g}$ is an isomorphism.
 ^pf-42-3
 
-*Uses:* [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]
+*Uses:* [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|§42.4]]
 
 > [!remark]- Connections
 > - The geometric version for the classical groups, $T^{\mathrm{geo}}_g G = g \cdot T^{\mathrm{geo}}_I G$: [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§25 The Geometric Tangent Space#^rem-25-7|Remark: Left and Right Translates]].
@@ -107,24 +196,51 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 ^thm-42-4
 
 > [!proof]+ Proof
-> *(The submitted solution computed $G_{\ast I}(\sigma_j)$ and proved the local diffeomorphism; surjectivity, the two-to-one property and the identification with $\mathbb{RP}^3$ are filled in; the submitted proof follows.)* $G$ is a smooth homomorphism, as a composite of $F^{-1}$ ([[§41 The Unit Quaternions and SU(2)#^prop-41-5|Proposition §41.5]]) and $C$.
+> *(The submitted solution computed $G_{\ast I}(\sigma_j)$ and proved the local diffeomorphism; surjectivity, the two-to-one property and the identification with $\mathbb{RP}^3$ are filled in; the submitted proof follows.)* *Smooth homomorphism.* $F : S^3 \to \mathrm{SU}(2)$ is a group isomorphism and a diffeomorphism (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]]), so $F^{-1}$ is a smooth homomorphism; and $C : S^3 \to \mathrm{SO}(3)$ is a smooth homomorphism (Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](1)). So $G$ is a smooth homomorphism, as a composite of $F^{-1}$ and $C$: a composite of smooth maps is smooth, and a composite of homomorphisms is a homomorphism.
 >
-> *The differential at $I$.* By the chain rule $G_{\ast I}(\sigma_j) = G_{\ast I}(F_{\ast 1}(\gamma_j'(0))) = C_{\ast 1}(\gamma_j'(0)) = (C \circ \gamma_j)'(0)$, and by [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|Proposition §42.1]](3) with $\theta = 2t$, $C(\gamma_j(t))$ is the rotation by $2t$ about $e_j$; for $j = 1$,
+> *The differential at $I$.* Since $G \circ F = C \circ F^{-1} \circ F = C$ and $F(1) = I$, the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives $G_{\ast I} \circ F_{\ast1} = C_{\ast1}$. By Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-6|§41.6]], $\sigma_j = F_{\ast1}(\gamma_j'(0))$, where $\gamma_j(t) = \cos t + \sin t\, u_j$ with $u_1 = i$, $u_2 = j$, $u_3 = k$. With the chain rule for curves (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]),
+>
+> $$
+> G_{\ast I}(\sigma_j) = G_{\ast I}\big(F_{\ast1}(\gamma_j'(0))\big) = C_{\ast1}(\gamma_j'(0)) = (C \circ \gamma_j)'(0) ,
+> $$
+>
+> the entrywise derivative of the curve $C(\gamma_j(t))$ in $\mathrm{SO}(3) \subseteq \operatorname{Mat}(3, \mathbb{R})$. Now $\gamma_j(t) = \cos\frac\theta2 + \sin\frac\theta2\, u_j$ with $\theta = 2t$, so by Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](3), $C(\gamma_j(t))$ is the rotation by $2t$ about $e_j$ ($u_j \leftrightarrow e_j$): it fixes $e_j$ and sends $v \perp e_j$ to $\cos 2t\, v + \sin 2t\, (e_j \times v)$. With $e_1 \times e_2 = e_3$, $e_2 \times e_3 = e_1$, $e_3 \times e_1 = e_2$, its columns are as follows. For $j = 1$: $e_1 \mapsto e_1$, $e_2 \mapsto \cos 2t\, e_2 + \sin 2t\, e_3$, $e_3 \mapsto \cos 2t\, e_3 - \sin 2t\, e_2$; so
 >
 > $$
 > C(\gamma_1(t)) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & \cos 2t & -\sin 2t \\ 0 & \sin 2t & \cos 2t \end{pmatrix}, \qquad \frac{d}{dt}\Big|_{t=0} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & -2 \\ 0 & 2 & 0 \end{pmatrix} = 2\,\hat e_1 ,
 > $$
 >
-> and likewise for $j = 2, 3$ ([[§25 The Geometric Tangent Space#^def-25-3|Definition §25.3]]). The $\hat e_j$ are a basis of $T_I\,\mathrm{SO}(3) = \operatorname{Skew}(3, \mathbb{R})$ ([[§25 The Geometric Tangent Space#^ex-25-4|Example §25.4]]), so $G_{\ast I}$ is an isomorphism.
+> using $\frac{d}{dt}\cos 2t|_0 = 0$ and $\frac{d}{dt}\sin 2t|_0 = 2$, and the hat map of Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]] with $v = e_1$. For $j = 2$: $e_2 \mapsto e_2$, $e_3 \mapsto \cos 2t\, e_3 + \sin 2t\, e_1$, $e_1 \mapsto \cos 2t\, e_1 - \sin 2t\, e_3$. For $j = 3$: $e_3 \mapsto e_3$, $e_1 \mapsto \cos 2t\, e_1 + \sin 2t\, e_2$, $e_2 \mapsto \cos 2t\, e_2 - \sin 2t\, e_1$. So
 >
-> *Local diffeomorphism.* By [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-3|Lemma §42.3]] every $G_{\ast g}$ is an isomorphism, so $G$ is a local diffeomorphism ([[§33 Local Diffeomorphisms#^thm-33-2|Theorem §33.2]]).
+> $$
+> C(\gamma_2(t)) = \begin{pmatrix} \cos 2t & 0 & \sin 2t \\ 0 & 1 & 0 \\ -\sin 2t & 0 & \cos 2t \end{pmatrix}, \qquad C(\gamma_3(t)) = \begin{pmatrix} \cos 2t & -\sin 2t & 0 \\ \sin 2t & \cos 2t & 0 \\ 0 & 0 & 1 \end{pmatrix},
+> $$
 >
-> *Surjective.* By [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|Lemma §42.2]], an element of $\mathrm{SO}(3)$ is a rotation by some $\theta$ about some $u$, which is $C_q = G(F(q))$ for $q = \cos\frac\theta2 + \sin\frac\theta2\, u$ by [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|Proposition §42.1]](3).
+> with derivatives at $t = 0$
 >
-> *Two-to-one.* $G(g) = G(h)$ iff $C_{F^{-1}(g)} = C_{F^{-1}(h)}$ iff $F^{-1}(h) = \pm F^{-1}(g)$ ([[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|Proposition §42.1]](2)) iff $h = \pm g$, since $F$ is a homomorphism with $F(-1) = -I$.
+> $$
+> \begin{pmatrix} 0 & 0 & 2 \\ 0 & 0 & 0 \\ -2 & 0 & 0 \end{pmatrix} = 2\,\hat e_2, \qquad \begin{pmatrix} 0 & -2 & 0 \\ 2 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix} = 2\,\hat e_3
+> $$
 >
-> *$\mathbb{RP}^3$.* $C$ is constant on the classes $\{\pm q\}$, so it induces a map $\bar C : S^3/\{\pm 1\} \to \mathrm{SO}(3)$, continuous by the [[§5 Quotient Maps#^cor-5-2|universal property of the quotient]], and bijective by the last two steps. $S^3/\{\pm 1\} = \mathbb{RP}^3$ ([[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|Corollary §18.5]]) is compact as the image of $S^3$, and $\mathrm{SO}(3)$ is Hausdorff, so $\bar C$ is a homeomorphism ([[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8]]); and $F$ identifies $S^3/\{\pm 1\}$ with $\mathrm{SU}(2)/\{\pm I\}$.
-
+> (Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]] with $v = e_2$, $e_3$). The hat map is a linear isomorphism $\mathbb{R}^3 \to \operatorname{Skew}(3, \mathbb{R})$, so the $\hat e_j$ are a basis of $T_I\,\mathrm{SO}(3) = \operatorname{Skew}(3, \mathbb{R})$ (Example [[§25 The Geometric Tangent Space#^ex-25-4|§25.4]]), and so are the $2\hat e_j$. Thus $G_{\ast I}$ maps the basis $\sigma_1, \sigma_2, \sigma_3$ of $T_I\,\mathrm{SU}(2)$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-6|§41.6]]) to a basis of $T_I\,\mathrm{SO}(3)$, so $G_{\ast I}$ is an isomorphism.
+>
+> *Local diffeomorphism.* $\mathrm{SU}(2)$ and $\mathrm{SO}(3)$ are groups of matrices, closed under products and inverses, and regular submanifolds of $\operatorname{Mat}(2, \mathbb{C})$ and $\operatorname{Mat}(3, \mathbb{R})$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]](3), and the proof of Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](1)). By Lemma [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-3|§42.3]], every $G_{\ast g}$ is an isomorphism, so $G$ is a local diffeomorphism (Theorem [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]]).
+>
+> *Surjective.* Let $A \in \mathrm{SO}(3)$. By Lemma [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|§42.2]], $A$ is the rotation by some $\theta$ about some unit $u \in \mathbb{R}^3 = \mathbb{H}_0$. Put $q = \cos\frac\theta2 + \sin\frac\theta2\, u \in S^3$. By Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](3), $C_q$ is that rotation, so
+>
+> $$
+> G(F(q)) = C\big(F^{-1}(F(q))\big) = C_q = A .
+> $$
+>
+> *Two-to-one.* $F$ is a homomorphism with $F(-1) = -I$ (the formula of Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]](2) at $x_0 = -1$), so $F(-q) = F(-1)F(q) = -F(q)$, and likewise $F^{-1}(-g) = -F^{-1}(g)$. Hence, using Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](2) for the middle step,
+>
+> $$
+> G(g) = G(h) \iff C_{F^{-1}(g)} = C_{F^{-1}(h)} \iff F^{-1}(h) = \pm F^{-1}(g) \iff h = \pm g .
+> $$
+>
+> Since $g \neq -g$, every fibre of $G$ has exactly two points.
+>
+> *$\mathbb{RP}^3$.* By Proposition [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]](2), $C_{-q} = C_q$: $C$ is constant on the classes $\{\pm q\}$, so it induces a map $\bar C : S^3/\{\pm 1\} \to \mathrm{SO}(3)$ with $\bar C \circ \pi = C$, continuous by the universal property of the quotient (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]](1)). It is surjective, since $C = G \circ F$ is ($G$ by the surjectivity step, $F$ bijective). It is injective: $\bar C(\pi(p)) = \bar C(\pi(q))$ means $C_p = C_q$, so $p = \pm q$ and $\pi(p) = \pi(q)$. $S^3$ is compact (closed and bounded in $\mathbb{R}^4$), so $S^3/\{\pm 1\} = \mathbb{RP}^3$ (Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]) is compact as the image of $S^3$ under the continuous $\pi$; and $\mathrm{SO}(3)$ is Hausdorff, as a subspace of $\operatorname{Mat}(3, \mathbb{R}) \cong \mathbb{R}^9$. So the continuous bijection $\bar C$ is a homeomorphism (Fact [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1), (2), (6)). Finally, since $F(-q) = -F(q)$, $F$ carries each class $\{\pm q\}$ onto the class $\{\pm F(q)\}$, so it induces a bijection $S^3/\{\pm 1\} \to \mathrm{SU}(2)/\{\pm I\}$, continuous with continuous inverse by the universal property applied to the continuous maps $F$ and $F^{-1}$ followed by the quotient maps; so $F$ identifies $S^3/\{\pm 1\}$ with $\mathrm{SU}(2)/\{\pm I\}$.
 ^pf-42-4
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§41 The Unit Quaternions and SU(2)#^prop-41-6|§41.6]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^prop-42-1|§42.1]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-2|§42.2]], [[§42 SU(2) → SO(3)꞉ The Double Cover#^lem-42-3|§42.3]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]

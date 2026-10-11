@@ -67,11 +67,34 @@ tags: [differentiable-manifolds, math591]
 ^prop-21-2
 
 > [!proof]+ Proof
-> If $v = \sum_j v^j e_j$, then $\varepsilon^i(v) = \sum_j v^j \delta^i_j = v^i$, which is the first formula: the dual basis *extracts the components* of a vector. The two sides of the second formula are covectors that agree on each $e_j$, both giving $\lambda(e_j)$, so they are equal by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](2); hence the $\varepsilon^i$ span $V^{\ast}$. If $\sum_i c_i \varepsilon^i = 0$, applying it to $e_j$ gives $c_j = 0$; so they are independent.
-
+> Three things are to be shown: the two formulas, and that $(\varepsilon^i)$ is a basis of $V^{\ast}$. Throughout, the defining property $\varepsilon^i(e_j) = \delta^i_j$ (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) and the pointwise operations of $V^{\ast}$ (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]) are used.
+>
+> *First formula.* Let $v \in V$. Since $(e_j)$ is a basis, $v = \sum_j v^j e_j$ for unique numbers $v^j$. Applying the linear map $\varepsilon^i$,
+>
+> $$
+> \varepsilon^i(v) = \varepsilon^i\Big(\sum_{j=1}^n v^j e_j\Big) = \sum_{j=1}^n v^j\, \varepsilon^i(e_j) = \sum_{j=1}^n v^j \delta^i_j = v^i ,
+> $$
+>
+> which is the first formula: substituting $v^i = \varepsilon^i(v)$ into $v = \sum_i v^i e_i$ gives $v = \sum_i \varepsilon^i(v)\, e_i$. The dual basis *extracts the components* of a vector.
+>
+> *Second formula.* Let $\lambda \in V^{\ast}$ and put $\mu = \sum_i \lambda(e_i)\, \varepsilon^i$, a linear combination of covectors, hence a covector. Both $\lambda$ and $\mu$ are linear maps $V \to \mathbb{R}$, so by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](2) it suffices that they agree on each $e_j$. Evaluating pointwise,
+>
+> $$
+> \mu(e_j) = \sum_{i=1}^n \lambda(e_i)\, \varepsilon^i(e_j) = \sum_{i=1}^n \lambda(e_i)\, \delta^i_j = \lambda(e_j) .
+> $$
+>
+> So $\lambda = \mu = \sum_i \lambda(e_i)\, \varepsilon^i$; hence the $\varepsilon^i$ span $V^{\ast}$.
+>
+> *Independence.* Suppose $\sum_i c_i \varepsilon^i = 0$, the zero covector. Applying it to $e_j$,
+>
+> $$
+> 0 = \Big(\sum_{i=1}^n c_i \varepsilon^i\Big)(e_j) = \sum_{i=1}^n c_i\, \delta^i_j = c_j ,
+> $$
+>
+> for every $j$; so they are independent. Being independent and spanning, the $n$ covectors $\varepsilon^1, \ldots, \varepsilon^n$ form a basis of $V^{\ast}$, and $\dim V^{\ast} = n = \dim V$.
 ^pf-21-2
 
-*Uses:* [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Linear map lemma|LADR 3.4]]
+*Uses:* [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Linear map lemma|LADR 3.4]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]]
 
 > [!remark]- Connections
 > - Home: [[§12 Duality#^ladr-3-114|LADR 3.114 (dual basis gives coefficients)]], [[§12 Duality#^ladr-3-116|LADR 3.116 (dual basis is a basis of the dual space)]], [[§12 Duality#^ladr-3-111|LADR 3.111]].
@@ -90,11 +113,36 @@ tags: [differentiable-manifolds, math591]
 ^prop-21-3
 
 > [!proof]+ Proof
-> $\iota$ is linear, since each $\lambda$ is. If $v \ne 0$, extend $v$ to a basis $(v, e_2, \ldots, e_n)$; the first dual basis covector $\varepsilon^1$ has $\iota(v)(\varepsilon^1) = \varepsilon^1(v) = 1 \ne 0$. So $\iota$ is injective, and $\dim V^{**} = \dim V^* = \dim V$ by Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], so $\iota$ is an isomorphism by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1).
-
+> To be shown: each $\iota(v)$ lies in $V^{\ast \ast }$, the map $\iota$ is linear, injective, and (by a dimension count) bijective. Canonicity is visible in the formula $\iota(v)(\lambda) = \lambda(v)$, which uses only $v$ and $\lambda$.
+>
+> *$\iota(v) \in V^{\ast \ast }$.* For $\lambda, \mu \in V^{\ast}$ and $c \in \mathbb{R}$, since the operations of $V^{\ast}$ are pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]),
+>
+> $$
+> \iota(v)(\lambda + c\mu) = (\lambda + c\mu)(v) = \lambda(v) + c\,\mu(v) = \iota(v)(\lambda) + c\,\iota(v)(\mu) ,
+> $$
+>
+> so $\iota(v) : V^{\ast} \to \mathbb{R}$ is linear.
+>
+> *$\iota$ is linear*, since each $\lambda$ is: for $v, w \in V$, $c \in \mathbb{R}$ and every $\lambda \in V^{\ast}$,
+>
+> $$
+> \iota(v + cw)(\lambda) = \lambda(v + cw) = \lambda(v) + c\,\lambda(w) = \iota(v)(\lambda) + c\,\iota(w)(\lambda) = \big(\iota(v) + c\,\iota(w)\big)(\lambda) ,
+> $$
+>
+> the last step by the pointwise operations of $V^{\ast \ast }$. As this holds for every $\lambda$, $\iota(v + cw) = \iota(v) + c\,\iota(w)$.
+>
+> *$\iota$ is injective.* It suffices that $\iota(v) \ne 0$ whenever $v \ne 0$ (then $\iota(v) = \iota(w)$ gives $\iota(v - w) = 0$, so $v = w$). If $v \ne 0$, the list $(v)$ is linearly independent, so it extends to a basis $(v, e_2, \ldots, e_n)$ of $V$; let $(\varepsilon^1, \ldots, \varepsilon^n)$ be the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]), whose first covector satisfies $\varepsilon^1(v) = 1$ because $v$ is the first basis vector. Then
+>
+> $$
+> \iota(v)(\varepsilon^1) = \varepsilon^1(v) = 1 \ne 0 ,
+> $$
+>
+> so $\iota(v) \ne 0$.
+>
+> *$\iota$ is an isomorphism.* By Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] applied to $V$, $\dim V^{\ast} = \dim V$, and applied again to the finite-dimensional space $V^{\ast}$, $\dim V^{\ast \ast } = \dim V^{\ast}$. So $\iota : V \to V^{\ast \ast }$ is an injective linear map between spaces of the same finite dimension, hence bijective by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1), i.e. a linear isomorphism.
 ^pf-21-3
 
-*Uses:* [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Every linearly independent list extends to a basis|LADR 2.32]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Every linearly independent list extends to a basis|LADR 2.32]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]]
 
 > [!remark]- Connections
 > - In LADR the canonical $V \cong V''$ is mentioned in the remark after [[§12 Duality#^ladr-3-111|LADR 3.111]] (the non-canonical $V \cong V'$ goes through [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]]).
@@ -131,15 +179,34 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 ^prop-21-4
 
 > [!proof]+ Proof
-> (1) $A^*(\lambda + c\mu) = (\lambda + c\mu) \circ A = A^*\lambda + c\,A^*\mu$, and $(B \circ A)^*(\lambda) = \lambda \circ B \circ A = A^*(B^*\lambda)$. For an isomorphism, apply this to $A^{-1} \circ A = \mathrm{id}$ and $A \circ A^{-1} = \mathrm{id}$.
+> Throughout, two elements of a dual space are equal when they take the same value at every vector, and their operations are pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]).
 >
-> (2) Let $(e_j)$ and $(f_i)$ be bases of $V$ and $W$, with dual bases $(\varepsilon^j)$ and $(\varphi^k)$, and $Ae_j = \sum_i a_{ij} f_i$. Then $A^*(\varphi^k)(e_j) = \varphi^k(Ae_j) = a_{kj}$, so by Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], $A^*(\varphi^k) = \sum_j a_{kj}\,\varepsilon^j$. The $k$-th column of the matrix of $A^*$ is therefore the $k$-th row of $[A]$.
+> *(1)* *$A^{\ast}\lambda$ is a covector:* $\lambda \circ A$ is a composite of linear maps, hence linear. *$A^{\ast}$ is linear:* for $\lambda, \mu \in W^{\ast}$, $c \in \mathbb{R}$ and $v \in V$,
 >
-> (3) By (2) and Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), $\operatorname{rank} A^* = \operatorname{rank} A$. Now $A$ is surjective iff $\operatorname{rank} A = \dim W$, iff $\operatorname{rank} A^* = \dim W^*$, which by rank–nullity means $A^*$ is injective. Likewise $A$ is injective iff $\operatorname{rank} A = \dim V = \dim V^*$, iff $A^*$ is surjective.
-
+> $$
+> A^{\ast}(\lambda + c\mu)(v) = (\lambda + c\mu)(Av) = \lambda(Av) + c\,\mu(Av) = (A^{\ast}\lambda)(v) + c\,(A^{\ast}\mu)(v) = \big(A^{\ast}\lambda + c\,A^{\ast}\mu\big)(v) ,
+> $$
+>
+> so $A^{\ast}(\lambda + c\mu) = (\lambda + c\mu) \circ A = A^{\ast}\lambda + c\,A^{\ast}\mu$. *Identity:* $(\mathrm{id}_V)^{\ast}(\lambda) = \lambda \circ \mathrm{id}_V = \lambda$ for every $\lambda \in V^{\ast}$. *Composition:* for $\lambda \in Z^{\ast}$, by associativity of composition, $(B \circ A)^{\ast}(\lambda) = \lambda \circ B \circ A = (\lambda \circ B) \circ A = A^{\ast}(B^{\ast}\lambda)$. *Isomorphisms:* let $A$ have inverse $A^{-1} : W \to V$. Applying the composition rule to $A^{-1} \circ A = \mathrm{id}_V$ and to $A \circ A^{-1} = \mathrm{id}_W$, and then the identity rule,
+>
+> $$
+> A^{\ast} \circ (A^{-1})^{\ast} = (A^{-1} \circ A)^{\ast} = (\mathrm{id}_V)^{\ast} = \mathrm{id}_{V^{\ast}}, \qquad (A^{-1})^{\ast} \circ A^{\ast} = (A \circ A^{-1})^{\ast} = (\mathrm{id}_W)^{\ast} = \mathrm{id}_{W^{\ast}} .
+> $$
+>
+> So $(A^{-1})^{\ast} : V^{\ast} \to W^{\ast}$ is a two-sided inverse of $A^{\ast}$: $A^{\ast}$ is an isomorphism with $(A^{\ast})^{-1} = (A^{-1})^{\ast}$.
+>
+> *(2)* Let $(e_j)$ and $(f_i)$ be bases of $V$ and $W$, with dual bases $(\varepsilon^j)$ and $(\varphi^k)$, and $Ae_j = \sum_i a_{ij} f_i$, so that $[A] = (a_{ij})$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)). Then, by linearity of $\varphi^k$ and $\varphi^k(f_i) = \delta^k_i$,
+>
+> $$
+> A^{\ast}(\varphi^k)(e_j) = \varphi^k(Ae_j) = \varphi^k\Big(\sum_i a_{ij} f_i\Big) = \sum_i a_{ij}\, \delta^k_i = a_{kj} .
+> $$
+>
+> By the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], applied to the covector $A^{\ast}(\varphi^k) \in V^{\ast}$, $A^{\ast}(\varphi^k) = \sum_j A^{\ast}(\varphi^k)(e_j)\,\varepsilon^j = \sum_j a_{kj}\,\varepsilon^j$. By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), the $k$-th column of the matrix of $A^{\ast}$ (in the bases $(\varphi^k)$ of $W^{\ast}$ and $(\varepsilon^j)$ of $V^{\ast}$) holds the coordinates of $A^{\ast}(\varphi^k)$, namely $a_{k1}, \ldots, a_{km}$. The $k$-th column of the matrix of $A^{\ast}$ is therefore the $k$-th row of $[A]$: the matrix of $A^{\ast}$ is $[A]^{\mathsf T}$.
+>
+> *(3)* By (2) and Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), $\operatorname{rank} A^{\ast} = \operatorname{rank} [A]^{\mathsf T} = \operatorname{rank} [A] = \operatorname{rank} A$. Also $\dim W^{\ast} = \dim W$ and $\dim V^{\ast} = \dim V$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]). A linear map is surjective exactly when its rank, the dimension of its image, equals the dimension of its target (a subspace of full dimension is the whole space), and injective exactly when its kernel is $0$, which by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) means its rank equals the dimension of its source. Now $A$ is surjective iff $\operatorname{rank} A = \dim W$, iff $\operatorname{rank} A^{\ast} = \dim W^{\ast}$, which by rank–nullity for $A^{\ast} : W^{\ast} \to V^{\ast}$ means $A^{\ast}$ is injective. Likewise $A$ is injective iff $\operatorname{rank} A = \dim V = \dim V^{\ast}$, iff $\operatorname{rank} A^{\ast} = \dim V^{\ast}$, iff $A^{\ast}$ is surjective.
 ^pf-21-4
 
-*Uses:* [[§21 Linear Algebra Toolkit#^def-21-3|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Fundamental theorem of linear maps|LADR 3.21]]
+*Uses:* [[§21 Linear Algebra Toolkit#^def-21-3|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]]
 
 > [!remark]- Connections
 > - Home: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]], [[§12 Duality#^ladr-3-120|LADR 3.120 (algebraic properties)]], [[§12 Duality#^ladr-3-132|LADR 3.132 (matrix of the dual map is the transpose)]]; (3) is [[§12 Duality#^ladr-3-128|LADR 3.128]] and [[§12 Duality#^ladr-3-130|LADR 3.130]] (null space and range of the dual map).
@@ -175,8 +242,15 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 ^thm-21-5
 
 > [!proof]+ Proof
-> Suppose $V$ is finite-dimensional, of dimension $n$; the other case is symmetric. Right non-degeneracy makes $B^\sharp : W \to V^*$ injective, so $W$ is isomorphic to a subspace of the $n$-dimensional $V^*$: it is finite-dimensional with $\dim W \le n$. Left non-degeneracy makes $B^\flat : V \to W^*$ injective, so $n \le \dim W^* = \dim W$. Hence $\dim V = \dim W$, and $B^\flat$, $B^\sharp$ are injective maps between spaces of equal finite dimension, hence isomorphisms by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1).
-
+> Suppose $V$ is finite-dimensional, of dimension $n$; the other case is symmetric, as explained at the end. By Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]], right non-degeneracy means $B^\sharp$ is injective and left non-degeneracy means $B^\flat$ is injective.
+>
+> *$W$ is finite-dimensional and $\dim W \le n$.* Right non-degeneracy makes $B^\sharp : W \to V^{\ast}$ injective, so $B^\sharp$ is a linear isomorphism of $W$ onto the subspace $B^\sharp(W)$ of $V^{\ast}$. The space $V^{\ast}$ has dimension $n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]), so its subspace $B^\sharp(W)$ is finite-dimensional of dimension $\le n$, and so is $W$, being isomorphic to it: $W$ is finite-dimensional with $\dim W \le n$.
+>
+> *$n \le \dim W$.* Now $W$ is finite-dimensional, so $\dim W^{\ast} = \dim W$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]). Left non-degeneracy makes $B^\flat : V \to W^{\ast}$ injective, so by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1) (an injective map has source dimension at most target dimension) $n = \dim V \le \dim W^{\ast} = \dim W$.
+>
+> *The isomorphisms.* Hence $\dim V = \dim W = n$, and also $\dim V^{\ast} = \dim W^{\ast} = n$. So $B^\flat : V \to W^{\ast}$ and $B^\sharp : W \to V^{\ast}$ are injective maps between spaces of equal finite dimension $n$, hence isomorphisms by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1).
+>
+> *The case $W$ finite-dimensional.* This is the case above after the renaming that swaps the two arguments: put $B'(w, v) = B(v, w)$, a bilinear pairing $W \times V \to \mathbb{R}$. Then $B'^\flat(w) = B'(w, \cdot\,) = B(\cdot\,, w) = B^\sharp(w)$ and $B'^\sharp(v) = B'(\cdot\,, v) = B(v, \cdot\,) = B^\flat(v)$, so $B'$ is non-degenerate because $B$ is, and the case already proved, applied to $B'$ with $W$ in the role of $V$, gives $\dim W = \dim V$ and that $B'^\flat = B^\sharp$ and $B'^\sharp = B^\flat$ are isomorphisms.
 ^pf-21-5
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
@@ -216,8 +290,23 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 ^prop-21-6
 
 > [!proof]+ Proof
-> (1) If $v - v' \in W$ and $u - u' \in W$, then $(v + u) - (v' + u') \in W$ and $cv - cv' \in W$, so the operations do not depend on representatives; the vector space axioms are inherited from $V$. $\pi$ is linear by the definition of the operations, surjective by construction, and $\pi(v) = 0 + W$ iff $v \in W$. (2) If $v - v' \in W$ then $A(v) - A(v') = A(v - v') = 0$, so $\bar A$ is well defined; it is linear because $A$ is; and it is unique because $\pi$ is surjective. (3) Rank–nullity for $\pi$.
-
+> Throughout, two vectors have the same coset iff their difference lies in $W$ (Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]]), and $W$, being a subspace, is closed under addition and scalar multiplication.
+>
+> *(1)* *Well defined.* Suppose $v + W = v' + W$ and $u + W = u' + W$, i.e. $v - v' \in W$ and $u - u' \in W$. Then
+>
+> $$
+> (v + u) - (v' + u') = (v - v') + (u - u') \in W, \qquad cv - cv' = c\,(v - v') \in W,
+> $$
+>
+> so $(v + u) + W = (v' + u') + W$ and $cv + W = cv' + W$: the operations do not depend on representatives. *Vector space.* The vector space axioms are inherited from $V$: each axiom, written out with the defining formulas, becomes the same axiom in $V$ inside a coset; for instance $\big((v+W) + (u+W)\big) + (x+W) = \big((v+u)+x\big) + W = \big(v+(u+x)\big) + W = (v+W) + \big((u+W)+(x+W)\big)$. The zero is $0 + W = W$ and the negative of $v + W$ is $(-v) + W$. *$\pi$ is linear* by the definition of the operations: $\pi(v + cu) = (v + cu) + W = (v + W) + c\,(u + W) = \pi(v) + c\,\pi(u)$. It is *surjective* by construction, every coset $v + W$ being $\pi(v)$. *Kernel:* $\pi(v) = 0 + W$ iff $v - 0 \in W$, i.e. iff $v \in W$; so $\ker \pi = W$.
+>
+> *(2)* *Well defined.* If $v + W = v' + W$, then $v - v' \in W \subseteq \ker A$, so $A(v) - A(v') = A(v - v') = 0$: the value $A(v)$ does not depend on the representative. *Linear*, because $A$ is: $\bar A\big((v + W) + c\,(u + W)\big) = \bar A\big((v + cu) + W\big) = A(v + cu) = A(v) + c\,A(u) = \bar A(v + W) + c\,\bar A(u + W)$. *$\bar A \circ \pi = A$:* $\bar A(\pi(v)) = \bar A(v + W) = A(v)$. *Unique*, because $\pi$ is surjective: if $\bar A'$ is linear with $\bar A' \circ \pi = A$, then every element of $V/W$ is $\pi(v)$ for some $v$, and $\bar A'(\pi(v)) = A(v) = \bar A(\pi(v))$, so $\bar A' = \bar A$.
+>
+> *(3)* Rank–nullity for $\pi$. The space $V/W$ is finite-dimensional, spanned by the images $\pi(e_i)$ of a basis $(e_i)$ of $V$ since $\pi$ is linear and surjective. By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1) for $\pi : V \to V/W$, with $\ker \pi = W$ and $\operatorname{rank} \pi = \dim V/W$ (surjectivity) from (1),
+>
+> $$
+> \dim V = \dim \ker \pi + \operatorname{rank} \pi = \dim W + \dim V/W .
+> $$
 ^pf-21-6
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-6|Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
@@ -256,8 +345,27 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 ^prop-21-7
 
 > [!proof]+ Proof
-> (1) Direct from the formulas; each $(v, w)$ is $\iota_V(v) + \iota_W(w)$, and $v = \pi_V(v, w)$, $w = \pi_W(v, w)$ are forced. (2) $(v, w) = \sum_i v^i (e_i, 0) + \sum_j w^j (0, f_j)$ for the coordinates $v^i$, $w^j$ of $v$ and $w$, and such a combination vanishes only if all $v^i$ and all $w^j$ do.
-
+> *(1)* Direct from the formulas of Definition [[§21 Linear Algebra Toolkit#^def-21-7|§21.7]]: for $v \in V$ and $w \in W$,
+>
+> $$
+> \pi_V \iota_V(v) = \pi_V(v, 0) = v, \quad \pi_W \iota_W(w) = \pi_W(0, w) = w, \quad \pi_W \iota_V(v) = \pi_W(v, 0) = 0, \quad \pi_V \iota_W(w) = \pi_V(0, w) = 0 .
+> $$
+>
+> *Injectivity.* If $\iota_V(v) = \iota_V(v')$, apply $\pi_V$: $v = \pi_V\iota_V(v) = \pi_V\iota_V(v') = v'$. Likewise $\iota_W$ is injective, using $\pi_W$ as a left inverse. *Internal direct sum* (Definition [[§21 Linear Algebra Toolkit#^def-21-8|§21.8]]). Existence: by componentwise addition each $(v, w)$ is $(v, 0) + (0, w) = \iota_V(v) + \iota_W(w)$. Uniqueness: suppose $(v, w) = \iota_V(v') + \iota_W(w')$ for some $v' \in V$, $w' \in W$. Applying the linear maps $\pi_V$ and $\pi_W$ and the four identities above,
+>
+> $$
+> v = \pi_V(v, w) = \pi_V\iota_V(v') + \pi_V\iota_W(w') = v' + 0, \qquad w = \pi_W(v, w) = \pi_W\iota_V(v') + \pi_W\iota_W(w') = 0 + w' ,
+> $$
+>
+> so $v = \pi_V(v, w)$ and $w = \pi_W(v, w)$ are forced, and the summands $\iota_V(v)$, $\iota_W(w)$ are unique.
+>
+> *(2)* Let $(e_1, \ldots, e_m)$ and $(f_1, \ldots, f_n)$ be the bases. *Spanning.* Given $(v, w)$, write $v = \sum_i v^i e_i$ and $w = \sum_j w^j f_j$ with the coordinates $v^i$, $w^j$ of $v$ and $w$. By the componentwise operations,
+>
+> $$
+> \sum_{i=1}^m v^i (e_i, 0) + \sum_{j=1}^n w^j (0, f_j) = \Big(\sum_{i=1}^m v^i e_i,\ 0\Big) + \Big(0,\ \sum_{j=1}^n w^j f_j\Big) = (v, w) .
+> $$
+>
+> *Independence.* If $\sum_i a^i (e_i, 0) + \sum_j b^j (0, f_j) = (0, 0)$, the same computation gives $\big(\sum_i a^i e_i,\ \sum_j b^j f_j\big) = (0, 0)$, so $\sum_i a^i e_i = 0$ in $V$ and $\sum_j b^j f_j = 0$ in $W$; by the independence of the two bases all $a^i$ and all $b^j$ vanish. So the $m + n$ vectors form a basis, and $\dim(V \oplus W) = m + n = \dim V + \dim W$.
 ^pf-21-7
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-7|Def. §21.7]], [[§21 Linear Algebra Toolkit#^def-21-8|Def. §21.8]]

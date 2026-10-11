@@ -12,6 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
+- [[§2 Topological Manifolds#^lem-2-10|Lemma §2.10: Restricting and Recomposing Charts]]
 - [[§3 Subspaces and Products#^def-3-1|Definition §3.1: Subspace Topology]]
 - [[§35 Regular Submanifolds#^def-35-1|Definition §35.1: Regular Submanifold]]
 - [[§35 Regular Submanifolds#^def-35-2|Definition §35.2: Adapted Chart]]
@@ -23,6 +24,7 @@ tags: [differentiable-manifolds, hub]
 - [[§10 Continuous Functions#^prop-10-2|590 §10.2: Equivalent Definition of Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
+- [[§38 Embeddings#^prop-38-2|Proposition §38.2: Immersions That Are Open onto Their Images]]
 - [[§38 Embeddings#^cor-38-3|Corollary §38.3: An Embedding Is a Diffeomorphism onto Its Image]]
 - [[§38 Embeddings#^prop-38-7|Proposition §38.7: Images of Embeddings Are Locally Closed]]
 - [[§38 Embeddings#^cor-38-8|Corollary §38.8: Dense Regular Submanifolds Are Open]]

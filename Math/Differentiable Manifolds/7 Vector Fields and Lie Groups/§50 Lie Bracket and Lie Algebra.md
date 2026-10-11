@@ -32,18 +32,47 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^lem-50-1
 
 > [!proof]+ Proof
-> *(Lecture 16 — “tedious algebra … the key thing is the product rule.”)* Linearity is clear, as a difference of composites of linear maps. For the product rule, apply the [[§48 Vector Fields#^lem-48-3|product rule]] for $\mathbf{Y}$ and then for $\mathbf{X}$:
+> *(Lecture 16 — “tedious algebra \ldots the key thing is the product rule.”)* By Definition [[§48 Vector Fields#^def-48-5|§48.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§48 Vector Fields#^lem-48-3|§48.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
+>
+> *An operator.* For $f \in C^\infty(M)$, $\mathbf{Y}f \in C^\infty(M)$ by Lemma [[§48 Vector Fields#^lem-48-3|§48.3]], and then $\mathbf{X}(\mathbf{Y}f) \in C^\infty(M)$ by the same lemma applied to the smooth function $\mathbf{Y}f$. Likewise $\mathbf{X}f$ and then $\mathbf{Y}(\mathbf{X}f)$ are smooth. So their difference $[\mathbf{X}, \mathbf{Y}](f)$ is smooth.
+>
+> *Linearity.* Linearity is clear, as a difference of composites of linear maps. Explicitly, for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$, by linearity of $\mathbf{Y}$ and then of $\mathbf{X}$,
 >
 > $$
-> \mathbf{X}\big(\mathbf{Y}(fg)\big) = \mathbf{X}\big(f\, \mathbf{Y}g + g\, \mathbf{Y}f\big) = \mathbf{X}f\; \mathbf{Y}g + f\, \mathbf{X}\mathbf{Y}g + \mathbf{X}g\; \mathbf{Y}f + g\, \mathbf{X}\mathbf{Y}f .
+> \mathbf{X}\big(\mathbf{Y}(af + bg)\big) = \mathbf{X}\big(a\,\mathbf{Y}f + b\,\mathbf{Y}g\big) = a\,\mathbf{X}\mathbf{Y}f + b\,\mathbf{X}\mathbf{Y}g ,
 > $$
 >
-> The same expression with $\mathbf{X}$ and $\mathbf{Y}$ exchanged is $\mathbf{Y}f\, \mathbf{X}g + f\,\mathbf{Y}\mathbf{X}g + \mathbf{Y}g\,\mathbf{X}f + g\,\mathbf{Y}\mathbf{X}f$. Subtracting, the first-order cross terms $\mathbf{X}f\,\mathbf{Y}g$ and $\mathbf{X}g\,\mathbf{Y}f$ cancel, leaving
+> and by linearity of $\mathbf{X}$ and then of $\mathbf{Y}$,
 >
 > $$
-> [\mathbf{X}, \mathbf{Y}](fg) = f\, [\mathbf{X}, \mathbf{Y}](g) + g\, [\mathbf{X}, \mathbf{Y}](f).
+> \mathbf{Y}\big(\mathbf{X}(af + bg)\big) = \mathbf{Y}\big(a\,\mathbf{X}f + b\,\mathbf{X}g\big) = a\,\mathbf{Y}\mathbf{X}f + b\,\mathbf{Y}\mathbf{X}g .
 > $$
-
+>
+> Subtracting the second line from the first and grouping the terms with $a$ and with $b$,
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}](af + bg) = a\,\big(\mathbf{X}\mathbf{Y}f - \mathbf{Y}\mathbf{X}f\big) + b\,\big(\mathbf{X}\mathbf{Y}g - \mathbf{Y}\mathbf{X}g\big) = a\,[\mathbf{X}, \mathbf{Y}](f) + b\,[\mathbf{X}, \mathbf{Y}](g) .
+> $$
+>
+> *Product rule.* For the product rule, apply the product rule for $\mathbf{Y}$, then the linearity of $\mathbf{X}$, and then the product rule for $\mathbf{X}$ to each of the two products $f \cdot \mathbf{Y}g$ and $g \cdot \mathbf{Y}f$:
+>
+> $$
+> \mathbf{X}\big(\mathbf{Y}(fg)\big) = \mathbf{X}\big(f\, \mathbf{Y}g + g\, \mathbf{Y}f\big) = \mathbf{X}\big(f\, \mathbf{Y}g\big) + \mathbf{X}\big(g\, \mathbf{Y}f\big) = \mathbf{X}f\; \mathbf{Y}g + f\, \mathbf{X}\mathbf{Y}g + \mathbf{X}g\; \mathbf{Y}f + g\, \mathbf{X}\mathbf{Y}f .
+> $$
+>
+> The same expression with $\mathbf{X}$ and $\mathbf{Y}$ exchanged — the product rule for $\mathbf{X}$, the linearity of $\mathbf{Y}$, the product rule for $\mathbf{Y}$ — is
+>
+> $$
+> \mathbf{Y}\big(\mathbf{X}(fg)\big) = \mathbf{Y}\big(f\, \mathbf{X}g + g\, \mathbf{X}f\big) = \mathbf{Y}\big(f\, \mathbf{X}g\big) + \mathbf{Y}\big(g\, \mathbf{X}f\big) = \mathbf{Y}f\; \mathbf{X}g + f\, \mathbf{Y}\mathbf{X}g + \mathbf{Y}g\; \mathbf{X}f + g\, \mathbf{Y}\mathbf{X}f .
+> $$
+>
+> Subtracting, the first-order cross terms $\mathbf{X}f\,\mathbf{Y}g$ and $\mathbf{X}g\,\mathbf{Y}f$ cancel, because functions multiply commutatively: $\mathbf{X}f\;\mathbf{Y}g - \mathbf{Y}g\;\mathbf{X}f = 0$ and $\mathbf{X}g\;\mathbf{Y}f - \mathbf{Y}f\;\mathbf{X}g = 0$. That leaves
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}](fg) = f\,\big(\mathbf{X}\mathbf{Y}g - \mathbf{Y}\mathbf{X}g\big) + g\,\big(\mathbf{X}\mathbf{Y}f - \mathbf{Y}\mathbf{X}f\big) = f\, [\mathbf{X}, \mathbf{Y}](g) + g\, [\mathbf{X}, \mathbf{Y}](f).
+> $$
+>
+> So $[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$. By Proposition [[§48 Vector Fields#^prop-48-7|§48.7]] it is the operator $D_\mathbf{Z}$ of a unique vector field $\mathbf{Z}$, and this field is again written $[\mathbf{X}, \mathbf{Y}]$.
 ^pf-50-1
 
 *Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§48 Vector Fields#^def-48-5|Def. §48.5]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^prop-48-7|§48.7]]
@@ -58,18 +87,25 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^ex-50-1
 
 > [!proof]+ Proof
-> *(Lecture 16 — “an exercise in multivariable calculus.”)* Apply both composites to a function $f$ and use the product rule:
+> *(Lecture 16 — “an exercise in multivariable calculus.”)* Both sides are vector fields: the left side by Lemma [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], the right side by Proposition [[§48 Vector Fields#^prop-48-1|§48.1]], since its coefficients are products of smooth functions. A vector field is determined by its operator (the uniqueness in Proposition [[§48 Vector Fields#^prop-48-7|§48.7]]), so it suffices that both sides give the same function when applied to any $f \in C^\infty(\mathbb{R}^2)$. In the standard chart, Lemma [[§48 Vector Fields#^lem-48-3|§48.3]] gives $\mathbf{X}h = a\, \partial h/\partial x$ and $\mathbf{Y}h = b\, \partial h/\partial y$ for every smooth $h$.
+>
+> Apply both composites to $f$ and use the product rule for the partial derivatives $\partial/\partial x$ and $\partial/\partial y$:
 >
 > $$
-> \mathbf{X}\mathbf{Y}f = a\, \partial_x(b\, \partial_y f) = a\, \frac{\partial b}{\partial x}\, \frac{\partial f}{\partial y} + ab\, \frac{\partial^2 f}{\partial x\, \partial y}, \qquad
-> \mathbf{Y}\mathbf{X}f = b\, \frac{\partial a}{\partial y}\, \frac{\partial f}{\partial x} + ba\, \frac{\partial^2 f}{\partial y\, \partial x} .
+> \mathbf{X}\mathbf{Y}f = a\, \frac{\partial}{\partial x}\Big(b\, \frac{\partial f}{\partial y}\Big) = a\, \frac{\partial b}{\partial x}\, \frac{\partial f}{\partial y} + ab\, \frac{\partial^2 f}{\partial x\, \partial y}, \qquad
+> \mathbf{Y}\mathbf{X}f = b\, \frac{\partial}{\partial y}\Big(a\, \frac{\partial f}{\partial x}\Big) = b\, \frac{\partial a}{\partial y}\, \frac{\partial f}{\partial x} + ba\, \frac{\partial^2 f}{\partial y\, \partial x} .
 > $$
 >
-> The second derivatives are [[Schwarz–Clairaut Theorem|equal]] and cancel in the difference, leaving the stated first-order operator.
-
+> The second derivatives are equal, $ab\, \partial^2 f/\partial x\, \partial y = ba\, \partial^2 f/\partial y\, \partial x$, because $ab = ba$ and the mixed partials of the smooth function $f$ agree (Clairaut's theorem). So they cancel in the difference, leaving
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}]f = \mathbf{X}\mathbf{Y}f - \mathbf{Y}\mathbf{X}f = a\, \frac{\partial b}{\partial x}\, \frac{\partial f}{\partial y} - b\, \frac{\partial a}{\partial y}\, \frac{\partial f}{\partial x} .
+> $$
+>
+> By Lemma [[§48 Vector Fields#^lem-48-3|§48.3]] again, the right side is the field $a\, (\partial b/\partial x)\, \partial/\partial y - b\, (\partial a/\partial y)\, \partial/\partial x$ applied to $f$. So the two fields have the same operator, and the bracket is the stated first-order operator.
 ^pf-ex-50-1
 
-*Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[Schwarz–Clairaut Theorem|452 §6.1]]
+*Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§48 Vector Fields#^lem-48-3|§48.3]]
 
 > [!theorem] Proposition §50.2: The Bracket in Coordinates
 > In a chart with $\mathbf{X} = \sum_i X^i\, \partial_i$ and $\mathbf{Y} = \sum_i Y^i\, \partial_i$, where $\partial_i = \partial/\partial x^i$,
@@ -83,11 +119,36 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^prop-50-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in — [[§50 Lie Bracket and Lie Algebra#^ex-50-1|Example §50.1]] is the case $\mathbf{X} = a\,\partial_x$, $\mathbf{Y} = b\,\partial_y$.)* The $j$-th coefficient of a vector field is its value on the coordinate function $x^j$ ([[§48 Vector Fields#^prop-48-1|Proposition §48.1]]), and $[\mathbf{X}, \mathbf{Y}](x^j) = \mathbf{X}(\mathbf{Y}x^j) - \mathbf{Y}(\mathbf{X}x^j) = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$. The second form expands $\mathbf{X}(Y^j) = \sum_i X^i\, \partial Y^j/\partial x^i$.
-
+> *(Not from lecture; filled in — Example [[§50 Lie Bracket and Lie Algebra#^ex-50-1|§50.1]] is the case $\mathbf{X} = a\,\partial_x$, $\mathbf{Y} = b\,\partial_y$.)* Let $U$ be the chart domain. The $X^i, Y^i \in C^\infty(U)$ are the coefficient functions of Proposition [[§48 Vector Fields#^prop-48-1|§48.1]], $X^i(q) = \mathbf{X}_q[x^i]$ and $Y^i(q) = \mathbf{Y}_q[x^i]$; and for $h \in C^\infty(U)$, $\mathbf{X}(h)$ denotes the function $q \mapsto \mathbf{X}_q[h]$ on $U$. The $j$-th coefficient of a vector field is its value on the coordinate function $x^j$ (Proposition [[§48 Vector Fields#^prop-48-1|§48.1]]); applied to the vector field $[\mathbf{X}, \mathbf{Y}]$ (Lemma [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]]), this gives $[\mathbf{X}, \mathbf{Y}]_q = \sum_j [\mathbf{X}, \mathbf{Y}]^j(q)\, \partial_j|_q$ at each $q \in U$, with $[\mathbf{X}, \mathbf{Y}]^j(q) = [\mathbf{X}, \mathbf{Y}]_q[x^j]$. So what has to be shown is
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}]_p[x^j] = \mathbf{X}_p[Y^j] - \mathbf{Y}_p[X^j] \qquad \text{for every } p \in U \text{ and every } j,
+> $$
+>
+> followed by the expansion of the right side. Informally this is $[\mathbf{X}, \mathbf{Y}](x^j) = \mathbf{X}(\mathbf{Y}x^j) - \mathbf{Y}(\mathbf{X}x^j) = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$; the one point to take care of is that the bracket acts on $C^\infty(M)$, while $x^j$ is defined only on $U$.
+>
+> *A global stand-in for $x^j$.* Fix $p \in U$. Let $\chi$ be a bump function at $p$ with $\operatorname{supp}\chi \subseteq U$ (Proposition [[§48 Vector Fields#^prop-48-4|§48.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \operatorname{supp}\chi \subseteq U$. By Corollary [[§48 Vector Fields#^cor-48-5|§48.5]], $\tilde x^j = \chi x^j$, extended by $0$ outside $U$, lies in $C^\infty(M)$, and it equals $x^j$ on $V$. So at every $q \in V$ the germs of $\tilde x^j$ and $x^j$ coincide, and
+>
+> $$
+> (\mathbf{Y}\tilde x^j)(q) = \mathbf{Y}_q[\tilde x^j] = \mathbf{Y}_q[x^j] = Y^j(q), \qquad (\mathbf{X}\tilde x^j)(q) = \mathbf{X}_q[\tilde x^j] = \mathbf{X}_q[x^j] = X^j(q) \qquad (q \in V).
+> $$
+>
+> *The coefficient at $p$.* By the last display, $\mathbf{Y}\tilde x^j$ and $Y^j$ agree on the open neighbourhood $V$ of $p$, so they have the same germ at $p$, and $\mathbf{X}_p$, which acts on germs, gives them the same value; likewise for $\mathbf{X}\tilde x^j$, $X^j$ and $\mathbf{Y}_p$. Hence, using first $[\tilde x^j] = [x^j]$ at $p$ and then Definition [[§50 Lie Bracket and Lie Algebra#^def-50-1|§50.1]] evaluated at $p$,
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}]_p[x^j] = [\mathbf{X}, \mathbf{Y}]_p[\tilde x^j] = \mathbf{X}_p[\mathbf{Y}\tilde x^j] - \mathbf{Y}_p[\mathbf{X}\tilde x^j] = \mathbf{X}_p[Y^j] - \mathbf{Y}_p[X^j] .
+> $$
+>
+> As $p \in U$ was arbitrary, this is the first formula: $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$ on $U$.
+>
+> *The second form.* By the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], $\mathbf{X}_p = \sum_i \mathbf{X}_p[x^i]\, \partial_i|_p = \sum_i X^i(p)\, \partial_i|_p$. Applied to the germ of $Y^j$, with Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], this expands $\mathbf{X}(Y^j) = \sum_i X^i\, \partial Y^j/\partial x^i$; with the letters $\mathbf{X}$ and $\mathbf{Y}$ exchanged, $\mathbf{Y}(X^j) = \sum_i Y^i\, \partial X^j/\partial x^i$. Substituting,
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j \qquad \text{on } U.
+> $$
 ^pf-50-2
 
-*Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^prop-48-1|§48.1]]
+*Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^prop-48-1|§48.1]], [[§50 Lie Bracket and Lie Algebra#^ex-50-1|Ex. §50.1]], [[§48 Vector Fields#^prop-48-4|§48.4]], [[§48 Vector Fields#^cor-48-5|§48.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
 
 > [!definition] Definition §50.2: Lie Algebra
 > A (real) **Lie algebra** $\mathfrak{g}$ is a real [[§2 Definition of Vector Space#^ladr-1-20|vector space]] together with a [[§38 Tensor Products#^ladr-9-77|bilinear]], skew-symmetric operation $[\cdot,\cdot] : \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$, the **Lie bracket**, satisfying the **Jacobi identity**
@@ -112,14 +173,35 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 ^prop-50-3
 
 > [!proof]+ Proof
-> *(Stated in Lecture 16 as “a general fact”; filled in. “The key thing is that it be an associative product.”)* Bilinearity and skew-symmetry are immediate. By associativity, triple products can be written without parentheses, and
+> *(Stated in Lecture 16 as “a general fact”; filled in. “The key thing is that it be an associative product.”)* By Definition [[§50 Lie Bracket and Lie Algebra#^def-50-2|§50.2]], three properties of the commutator have to be checked; it takes values in $A$, since $A$ is closed under $\ast$ and subtraction. Bilinearity of $\ast$ means $(aX + bX') \ast Y = a\,X \ast Y + b\,X' \ast Y$ and $X \ast (aY + bY') = a\,X \ast Y + b\,X \ast Y'$ for $a, b \in \mathbb{R}$.
+>
+> *Skew-symmetry.* Directly from the definition, $[Y, X] = Y \ast X - X \ast Y = -(X \ast Y - Y \ast X) = -[X, Y]$.
+>
+> *Bilinearity.* In the first argument, by the bilinearity of $\ast$ in each of its two slots,
 >
 > $$
-> [X, [Y, Z]] = XYZ - XZY - YZX + ZYX .
+> [aX + bX', Y] = (aX + bX') \ast Y - Y \ast (aX + bX') = a\,X \ast Y + b\,X' \ast Y - a\,Y \ast X - b\,Y \ast X' = a\,[X, Y] + b\,[X', Y] .
 > $$
 >
-> Permuting cyclically gives $[Y,[Z,X]] = YZX - YXZ - ZXY + XZY$ and $[Z,[X,Y]] = ZXY - ZYX - XYZ + YXZ$. In the sum each of the six words $XYZ, XZY, YZX, ZYX, YXZ, ZXY$ appears once with each sign, so the sum is $0$.
-
+> In the second argument it follows from the first and skew-symmetry:
+>
+> $$
+> [X, aY + bY'] = -[aY + bY', X] = -a\,[Y, X] - b\,[Y', X] = a\,[X, Y] + b\,[X, Y'] .
+> $$
+>
+> *Jacobi identity.* By associativity, triple products can be written without parentheses, $XYZ = (X \ast Y) \ast Z = X \ast (Y \ast Z)$. Expanding the inner bracket and then the outer one with the bilinearity of $\ast$,
+>
+> $$
+> [X, [Y, Z]{]} = X \ast (Y \ast Z - Z \ast Y) - (Y \ast Z - Z \ast Y) \ast X = XYZ - XZY - YZX + ZYX .
+> $$
+>
+> The other two terms of the Jacobi identity come from this one by the cyclic renaming $X \to Y \to Z \to X$, applied once and twice. Permuting cyclically gives
+>
+> $$
+> [Y,[Z,X]{]} = YZX - YXZ - ZXY + XZY, \qquad [Z,[X,Y]{]} = ZXY - ZYX - XYZ + YXZ .
+> $$
+>
+> In the sum of the three lines, each of the six words appears once with each sign: $XYZ$ with $+$ in the first and $-$ in the third; $XZY$ with $-$ in the first and $+$ in the second; $YZX$ with $-$ in the first and $+$ in the second; $ZYX$ with $+$ in the first and $-$ in the third; $YXZ$ with $-$ in the second and $+$ in the third; $ZXY$ with $-$ in the second and $+$ in the third. So the sum is $0$, and $(A, [\cdot,\cdot])$ is a Lie algebra.
 ^pf-50-3
 
 *Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]]
@@ -137,11 +219,35 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 ^cor-50-4
 
 > [!proof]+ Proof
-> *(Lecture 16: the bracket of fields “comes from the product, which is the composition, which is associative.” Filled in.)* The linear operators on $C^\infty(M)$ form an associative algebra under composition, so by [[§50 Lie Bracket and Lie Algebra#^prop-50-3|Proposition §50.3]] their commutator satisfies the Jacobi identity. By [[§50 Lie Bracket and Lie Algebra#^lem-50-1|Lemma §50.1]], $\mathfrak{X}(M)$, identified with the derivations, is closed under it; so the identity holds on $\mathfrak{X}(M)$.
-
+> *(Lecture 16: the bracket of fields “comes from the product, which is the composition, which is associative.” Filled in.)* By Definition [[§50 Lie Bracket and Lie Algebra#^def-50-2|§50.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§48 Vector Fields#^lem-48-3|§48.3]]), to keep the field and its operator apart.
+>
+> *The space and the bracket.* $\mathfrak{X}(M)$ is a real vector space by Proposition [[§48 Vector Fields#^prop-48-2|§48.2]]. By Lemma [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], $\mathfrak{X}(M)$, identified with the derivations, is closed under the commutator: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ the commutator of $D_\mathbf{X}$ and $D_\mathbf{Y}$ is the operator of the vector field $[\mathbf{X}, \mathbf{Y}]$,
+>
+> $$
+> D_{[\mathbf{X}, \mathbf{Y}]} = D_\mathbf{X} \circ D_\mathbf{Y} - D_\mathbf{Y} \circ D_\mathbf{X} .
+> $$
+>
+> *The operators form an associative algebra.* Let $A$ be the set of $\mathbb{R}$-linear operators on $C^\infty(M)$ (Definition [[§48 Vector Fields#^def-48-4|§48.4]]), a real vector space under $(aP + bQ)f = a\,Pf + b\,Qf$, with the product $P \ast Q = P \circ Q$, again a linear operator. Composition of maps is associative. It is bilinear: $\big((aP + bP') \circ Q\big)f = a\,P(Qf) + b\,P'(Qf)$ by the definition of the operations, and $\big(P \circ (aQ + bQ')\big)f = P(a\,Qf + b\,Q'f) = a\,P(Qf) + b\,P(Q'f)$ because $P$ is linear. So the linear operators on $C^\infty(M)$ form an associative algebra under composition, and by Proposition [[§50 Lie Bracket and Lie Algebra#^prop-50-3|§50.3]] their commutator $[P, Q] = P \circ Q - Q \circ P$ is bilinear, skew-symmetric and satisfies the Jacobi identity. The display above reads $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$.
+>
+> *From operators to fields.* The map $\mathbf{X} \mapsto D_\mathbf{X}$ is linear: for $f \in C^\infty(M)$ and $p \in M$, by Definition [[§48 Vector Fields#^def-48-2|§48.2]] and the pointwise operations of $T_pM$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]),
+>
+> $$
+> \big(D_{a\mathbf{X} + b\mathbf{Y}} f\big)(p) = \big(a\,\mathbf{X}_p + b\,\mathbf{Y}_p\big)[f] = a\,\mathbf{X}_p[f] + b\,\mathbf{Y}_p[f] = \big((a\,D_\mathbf{X} + b\,D_\mathbf{Y}) f\big)(p) .
+> $$
+>
+> It is injective, by the uniqueness in Proposition [[§48 Vector Fields#^prop-48-7|§48.7]]. So an identity between fields holds as soon as the corresponding identity between their operators holds. Using $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$ and the linearity of $\mathbf{X} \mapsto D_\mathbf{X}$:
+> - *bilinearity:* $D_{[a\mathbf{X} + b\mathbf{X}', \mathbf{Y}]} = [a\,D_\mathbf{X} + b\,D_{\mathbf{X}'}, D_\mathbf{Y}] = a\,[D_\mathbf{X}, D_\mathbf{Y}] + b\,[D_{\mathbf{X}'}, D_\mathbf{Y}] = D_{a[\mathbf{X}, \mathbf{Y}] + b[\mathbf{X}', \mathbf{Y}]}$, and in the second argument $D_{[\mathbf{X}, a\mathbf{Y} + b\mathbf{Y}']} = [D_\mathbf{X}, a\,D_\mathbf{Y} + b\,D_{\mathbf{Y}'}] = a\,[D_\mathbf{X}, D_\mathbf{Y}] + b\,[D_\mathbf{X}, D_{\mathbf{Y}'}] = D_{a[\mathbf{X}, \mathbf{Y}] + b[\mathbf{X}, \mathbf{Y}']}$;
+> - *skew-symmetry:* $D_{[\mathbf{Y}, \mathbf{X}]} = [D_\mathbf{Y}, D_\mathbf{X}] = -[D_\mathbf{X}, D_\mathbf{Y}] = D_{-[\mathbf{X}, \mathbf{Y}]}$;
+> - *Jacobi:* applying the identity twice, $D_{[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]}} = [D_\mathbf{X}, D_{[\mathbf{Y}, \mathbf{Z}]}] = [D_\mathbf{X}, [D_\mathbf{Y}, D_\mathbf{Z}]{]}$, and the same with $\mathbf{X}, \mathbf{Y}, \mathbf{Z}$ renamed cyclically; adding the three,
+>
+> $$
+> D_{[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]} + [\mathbf{Y}, [\mathbf{Z}, \mathbf{X}]{]} + [\mathbf{Z}, [\mathbf{X}, \mathbf{Y}]{]}} = [D_\mathbf{X}, [D_\mathbf{Y}, D_\mathbf{Z}]{]} + [D_\mathbf{Y}, [D_\mathbf{Z}, D_\mathbf{X}]{]} + [D_\mathbf{Z}, [D_\mathbf{X}, D_\mathbf{Y}]{]} = 0 = D_\mathbf{0} .
+> $$
+>
+> By injectivity each identity holds between the fields themselves; in particular the Jacobi identity holds on $\mathfrak{X}(M)$.
 ^pf-50-4
 
-*Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]], [[§50 Lie Bracket and Lie Algebra#^prop-50-3|§50.3]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^prop-48-7|§48.7]]
+*Uses:* [[§50 Lie Bracket and Lie Algebra#^def-50-1|Def. §50.1]], [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]], [[§50 Lie Bracket and Lie Algebra#^prop-50-3|§50.3]], [[§50 Lie Bracket and Lie Algebra#^lem-50-1|§50.1]], [[§48 Vector Fields#^lem-48-3|§48.3]], [[§48 Vector Fields#^prop-48-7|§48.7]], [[§48 Vector Fields#^prop-48-2|§48.2]], [[§48 Vector Fields#^def-48-4|Def. §48.4]], [[§48 Vector Fields#^def-48-2|Def. §48.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 “Which I don't recommend you check by hand. It's a big computation.” The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of [[§52 Lie Groups and Left-Invariant Vector Fields|§52]] sit inside it.
 
@@ -196,14 +302,38 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 ^ex-50-3
 
 > [!proof]+ Proof
-> *(Lecture 16 mentioned only that the cross product satisfies the Jacobi identity — “if you want to be really mean to your 215 students, give them the Jacobi identity for the cross product. Don't do that.” The proof via the hat map is filled in.)* By the [[§96 The Cross Product#^thm-96-8|identity]] $u \times (v \times w) = v\,(u \cdot w) - w\,(u \cdot v)$, for every $x \in \mathbb{R}^3$
+> *(Lecture 16 mentioned only that the cross product satisfies the Jacobi identity — “if you want to be really mean to your 215 students, give them the Jacobi identity for the cross product. Don't do that.” The proof via the hat map is filled in.)* There are three steps: the bracket identity $[\hat a, \hat b] = \widehat{a \times b}$; that $\operatorname{Skew}(3,\mathbb{R})$ is a Lie algebra under the commutator; and the transfer of the Lie algebra axioms to $(\mathbb{R}^3, \times)$ along the hat map.
+>
+> *The identity.* Two $3 \times 3$ matrices are equal if they agree on every $x \in \mathbb{R}^3$, so fix $x$. By Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]], $\hat v\, y = v \times y$ for all $v, y$, so $\hat a \hat b\, x = a \times (b \times x)$ and $\hat b \hat a\, x = b \times (a \times x)$. The vector identity $u \times (v \times w) = v\,(u \cdot w) - w\,(u \cdot v)$, with $(u, v, w) = (a, b, x)$ and with $(u, v, w) = (b, a, x)$, gives
+>
+> $$
+> a \times (b \times x) = b\,(a \cdot x) - x\,(a \cdot b), \qquad b \times (a \times x) = a\,(b \cdot x) - x\,(b \cdot a) ,
+> $$
+>
+> and the terms in $x$ cancel in the difference because $a \cdot b = b \cdot a$. The same identity with $(u, v, w) = (x, a, b)$, together with the antisymmetry of the cross product, gives $(a \times b) \times x = -\,x \times (a \times b) = -\big(a\,(x \cdot b) - b\,(x \cdot a)\big) = b\,(a \cdot x) - a\,(b \cdot x)$. Together, for every $x \in \mathbb{R}^3$,
 >
 > $$
 > [\hat a, \hat b]\, x = a \times (b \times x) - b \times (a \times x) = b\,(a \cdot x) - a\,(b \cdot x) = (a \times b) \times x = \widehat{a \times b}\, x .
 > $$
 >
-> $\operatorname{Skew}(3,\mathbb{R})$ is closed under the commutator ($[A,B]^{\mathsf T} = [B^{\mathsf T}, A^{\mathsf T}] = [B, A] = -[A,B]$ for skew $A, B$), so it is a Lie algebra by [[§50 Lie Bracket and Lie Algebra#^ex-50-2|Example §50.2]]. The hat map is a linear isomorphism carrying $\times$ to the commutator, so the cross product inherits bilinearity, skew-symmetry and the Jacobi identity — without the big computation.
-
+> *$\operatorname{Skew}(3,\mathbb{R})$ is a Lie algebra.* It is a linear subspace of $\operatorname{Mat}(3,\mathbb{R})$, since $A^{\mathsf T} = -A$ is a linear condition. It is closed under the commutator: for skew $A, B$, using $(XY)^{\mathsf T} = Y^{\mathsf T} X^{\mathsf T}$,
+>
+> $$
+> [A,B]^{\mathsf T} = B^{\mathsf T} A^{\mathsf T} - A^{\mathsf T} B^{\mathsf T} = [B^{\mathsf T}, A^{\mathsf T}] = (-B)(-A) - (-A)(-B) = [B, A] = -[A,B] .
+> $$
+>
+> So the commutator restricts to a bracket $\operatorname{Skew}(3,\mathbb{R}) \times \operatorname{Skew}(3,\mathbb{R}) \to \operatorname{Skew}(3,\mathbb{R})$, and bilinearity, skew-symmetry and the Jacobi identity hold there because they hold for all matrices; so it is a Lie algebra by Example [[§50 Lie Bracket and Lie Algebra#^ex-50-2|§50.2]].
+>
+> *Transfer.* The hat map is a linear isomorphism (Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]]) carrying $\times$ to the commutator, $\widehat{a \times b} = [\hat a, \hat b]$; so the cross product inherits bilinearity, skew-symmetry and the Jacobi identity — without the big computation. In detail, for $a, a', b, b', c \in \mathbb{R}^3$ and $s, t \in \mathbb{R}$, using the linearity of the hat map, the identity, and the properties of the commutator on $\operatorname{Skew}(3,\mathbb{R})$:
+> - *bilinearity:* $\widehat{(sa + ta') \times b} = [s\hat a + t\hat a', \hat b] = s\,[\hat a, \hat b] + t\,[\hat a', \hat b] = s\,\widehat{a \times b} + t\,\widehat{a' \times b}$, and $\widehat{a \times (sb + tb')} = [\hat a, s\hat b + t\hat b'] = s\,\widehat{a \times b} + t\,\widehat{a \times b'}$;
+> - *skew-symmetry:* $\widehat{b \times a} = [\hat b, \hat a] = -[\hat a, \hat b] = -\widehat{a \times b}$;
+> - *Jacobi:* applying the identity twice, $\widehat{a \times (b \times c)} = [\hat a, \widehat{b \times c}] = [\hat a, [\hat b, \hat c]{]}$, and likewise with $a, b, c$ renamed cyclically, so
+>
+> $$
+> \widehat{a \times (b \times c)} + \widehat{b \times (c \times a)} + \widehat{c \times (a \times b)} = [\hat a, [\hat b, \hat c]{]} + [\hat b, [\hat c, \hat a]{]} + [\hat c, [\hat a, \hat b]{]} = 0 .
+> $$
+>
+> Since the hat map is linear and injective, each equality between hats is the corresponding equality in $\mathbb{R}^3$. So $(\mathbb{R}^3, \times)$ is a Lie algebra, and the hat map, a linear bijection with $\widehat{a \times b} = [\hat a, \hat b]$, is an isomorphism of Lie algebras onto $\operatorname{Skew}(3,\mathbb{R})$.
 ^pf-ex-50-3
 
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]], [[§50 Lie Bracket and Lie Algebra#^ex-50-2|Ex. §50.2]], [[§50 Lie Bracket and Lie Algebra#^def-50-2|Def. §50.2]]

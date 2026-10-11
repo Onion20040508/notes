@@ -17,6 +17,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§9 Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|Corollary §15.5: When G/H Is Hausdorff and Second Countable]]
+- [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|Corollary §18.5: Real Projective Space]]
 
 ## Connections
 - **Used for.** [[ℂPⁿ Is Hausdorff and Second Countable]], and G/H for second countable G ([[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]]), hence the Grassmannians ([[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]]). Orbit relations of continuous actions are open ([[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]), so every orbit space of a second countable space is second countable.

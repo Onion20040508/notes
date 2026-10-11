@@ -66,27 +66,32 @@ a smooth manifold of dimension $k - \ell$ with $T^{\mathrm{geo}}_qS = \ker G'(q)
 Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, the square says the top-left corner is everything upstairs that lands in the bottom-left corner — $M = F^{-1}(S)$ and $T^{\mathrm{geo}}_pM = F'(p)^{-1}(T^{\mathrm{geo}}_qS)$ — and the triangle says the same set is cut out by the composite, $M = (G\circ F)^{-1}(0)$ and $T^{\mathrm{geo}}_pM = \ker (G\circ F)'(p)$. The theorem asserts that the preimage in the lower diagram is the geometric tangent space of the preimage in the upper one; [[§26 Transversality#^ex-26-2|Example §26.2]](b) shows this can fail without transversality.
 
 > [!proof]+ Proof
-> If $M = \emptyset$ there is nothing to prove, so assume otherwise; then $S \neq \emptyset$, and surjectivity of $G'(q) : \mathbb{R}^k \to \mathbb{R}^\ell$ at some $q \in S$ gives $k \ge \ell$.
+> If $M = \emptyset$ there is nothing to prove, so assume otherwise; then $S \neq \emptyset$ (a point $p \in M$ has $F(p) \in S$), and surjectivity of $G'(q) : \mathbb{R}^k \to \mathbb{R}^\ell$ at some $q \in S$ gives $k \ge \ell$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)). The plan: write $M$ as a level set of $G \circ F$, show $0$ is a regular value, and read off the dimension and the geometric tangent space from the regular value theorem and Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]].
 >
-> *$M$ is a level set.* $p \in F^{-1}(S) \iff F(p) \in G^{-1}(0) \iff G(F(p)) = 0$, so $M = (G \circ F)^{-1}(0)$, with $G \circ F : \mathbb{R}^N \to \mathbb{R}^\ell$ smooth.
+> *$M$ is a level set.* For $p \in \mathbb{R}^N$, by the definitions of preimage and of $S$,
 >
-> *$0$ is a regular value of $G \circ F$.* Let $p \in M$ and $q = F(p)$. By the [[Multivariable Chain Rule|chain rule]] $(G \circ F)'(p) = G'(q)\,F'(p)$. Given $w \in \mathbb{R}^\ell$, choose $u \in \mathbb{R}^k$ with $G'(q)u = w$, possible as $G'(q)$ is surjective. By transversality write $u = F'(p)v + t$ with $v \in \mathbb{R}^N$ and $t \in T^{\mathrm{geo}}_qS = \ker G'(q)$. Then
+> $$
+> p \in F^{-1}(S) \iff F(p) \in G^{-1}(0) \iff G(F(p)) = 0 ,
+> $$
+>
+> so $M = (G \circ F)^{-1}(0)$, with $G \circ F : \mathbb{R}^N \to \mathbb{R}^\ell$ smooth as a composite of smooth maps.
+>
+> *$0$ is a regular value of $G \circ F$.* Let $p \in M$ and $q = F(p) \in S$. By the chain rule $(G \circ F)'(p) = G'(q)\,F'(p)$. We show this is surjective. Given $w \in \mathbb{R}^\ell$, choose $u \in \mathbb{R}^k$ with $G'(q)u = w$, possible as $G'(q)$ is surjective ($0$ is a regular value of $G$ and $q \in G^{-1}(0)$). Transversality at $p$ (Definition [[§26 Transversality#^def-26-2|§26.2]]) says $\operatorname{im} F'(p) + T^{\mathrm{geo}}_qS = \mathbb{R}^k$, so we can write $u = F'(p)v + t$ with $v \in \mathbb{R}^N$ and $t \in T^{\mathrm{geo}}_qS = \ker G'(q)$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for $S$). Then, by linearity of $G'(q)$ and $G'(q)t = 0$,
 >
 > $$
 > w = G'(q)u = G'(q)F'(p)v + G'(q)t = G'(q)F'(p)v ,
 > $$
 >
-> so $(G\circ F)'(p)$ is surjective. As $p \in M$ was arbitrary, $0$ is a regular value, and surjectivity at a point of $M$ forces $N \ge \ell$.
+> so $w$ is in the image and $(G\circ F)'(p)$ is surjective. As $p \in M$ was arbitrary, $0$ is a regular value (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]), and surjectivity at a point of $M$ forces $N \ge \ell$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)).
 >
-> *Conclusion.* By Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], $M$ is a smooth manifold of dimension $N - \ell$, so $\operatorname{codim} M = N - (N - \ell) = \ell = \operatorname{codim} S$. By [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]],
+> *Conclusion.* By Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], applied to $G \circ F$ on $\mathbb{R}^N = \mathbb{R}^{(N-\ell)+\ell}$, $M$ is a smooth manifold of dimension $N - \ell$, so (Definition [[§26 Transversality#^def-26-1|§26.1]]) $\operatorname{codim} M = N - (N - \ell) = \ell = \operatorname{codim} S$. By Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] applied to $M = (G\circ F)^{-1}(0)$, then the chain rule, then the definition of the kernel, then Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for $S$,
 >
 > $$
-> T^{\mathrm{geo}}_pM = \ker\big(G'(q)F'(p)\big) = \{v \mid F'(p)v \in \ker G'(q)\} = F'(p)^{-1}(T^{\mathrm{geo}}_qS).
+> T^{\mathrm{geo}}_pM = \ker (G\circ F)'(p) = \ker\big(G'(q)F'(p)\big) = \{v \mid G'(q)\big(F'(p)v\big) = 0\} = \{v \mid F'(p)v \in \ker G'(q)\} = F'(p)^{-1}(T^{\mathrm{geo}}_qS).
 > $$
-
 ^pf-26-1
 
-*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 **Comparison with Lee.** Lee's Theorem 6.30 states this for a smooth map transverse to an *embedded submanifold* $S \subseteq M$, after the theory of submanifolds (Chapter 5). The course's version, for level sets in Euclidean space, needs only the regular value theorem. It is the case where $S$ is cut out by a single global defining map $G$, and the proof — pull $G$ back along $F$ — is the one Lee uses locally.
 
@@ -102,12 +107,23 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 ^prop-26-2
 
 > [!proof]+ Proof
-> ($\Rightarrow$) is the middle step of the proof of [[§26 Transversality#^pf-26-1|Theorem §26.1]]. ($\Leftarrow$) Suppose $G'(q)F'(p)$ is surjective and let $u \in \mathbb{R}^k$. Then $G'(q)u = G'(q)F'(p)v$ for some $v \in \mathbb{R}^N$, so $u - F'(p)v \in \ker G'(q) = T^{\mathrm{geo}}_qS$, and
+> Throughout, $T^{\mathrm{geo}}_qS = \ker G'(q)$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) and $(G \circ F)'(p) = G'(q)F'(p)$ (chain rule).
+>
+> ($\Rightarrow$) is the middle step of the proof of Theorem [[§26 Transversality#^thm-26-1|§26.1]], written out here at the single point $p$. Suppose $\operatorname{im} F'(p) + T^{\mathrm{geo}}_qS = \mathbb{R}^k$ and let $w \in \mathbb{R}^\ell$. Since $q \in S$ and $0$ is a regular value of $G$, $G'(q)$ is surjective, so $w = G'(q)u$ for some $u \in \mathbb{R}^k$. By the hypothesis, $u = F'(p)v + t$ with $v \in \mathbb{R}^N$ and $t \in \ker G'(q)$, and then
+>
+> $$
+> w = G'(q)u = G'(q)F'(p)v + G'(q)t = G'(q)F'(p)v = (G\circ F)'(p)\,v ,
+> $$
+>
+> so $(G \circ F)'(p)$ is surjective.
+>
+> ($\Leftarrow$) Suppose $G'(q)F'(p)$ is surjective and let $u \in \mathbb{R}^k$. Then $G'(q)u = G'(q)F'(p)v$ for some $v \in \mathbb{R}^N$, so by linearity $G'(q)\big(u - F'(p)v\big) = 0$, i.e. $u - F'(p)v \in \ker G'(q) = T^{\mathrm{geo}}_qS$, and
 >
 > $$
 > u = F'(p)v + \big(u - F'(p)v\big) \in \operatorname{im} F'(p) + T^{\mathrm{geo}}_qS.
 > $$
-
+>
+> *Consequently.* $F \pitchfork S$ means the left condition holds at every $p \in F^{-1}(S)$ (Definition [[§26 Transversality#^def-26-2|§26.2]]); by the equivalence just proved, this says $(G\circ F)'(p)$ is surjective at every $p \in F^{-1}(S)$. Since $F^{-1}(S) = (G \circ F)^{-1}(0)$ (first step of the proof of Theorem [[§26 Transversality#^thm-26-1|§26.1]]), that is exactly the statement that $0$ is a regular value of $G \circ F$ (Definitions [[§7 The Regular Value Theorem#^def-7-4|§7.4]] and [[§7 The Regular Value Theorem#^def-7-3|§7.3]]).
 ^pf-26-2
 
 *Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
@@ -123,11 +139,26 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 ^cor-26-3
 
 > [!proof]+ Proof
-> $\{c\} = G^{-1}(0)$ for $G(y) = y - c$, whose Jacobian is the identity, so $0$ is a regular value of $G$ with $\ell = k$, and $T^{\mathrm{geo}}_c\{c\} = \ker I = 0$. Transversality then reads $\operatorname{im} F'(p) = \mathbb{R}^k$ at every $p \in F^{-1}(c)$ — the [[§7 The Regular Value Theorem#^def-7-4|definition of a regular value]]. The conclusions are $\dim M = N - k$ and $T^{\mathrm{geo}}_pM = F'(p)^{-1}(0) = \ker F'(p)$.
-
+> To apply the theorem we present $\{c\}$ as a regular level set. $\{c\} = G^{-1}(0)$ for $G(y) = y - c$, $G : \mathbb{R}^k \to \mathbb{R}^k$, since $y - c = 0 \iff y = c$. Its Jacobian is the identity, $G'(y) = I$ for every $y$, which is surjective, so $0$ is a regular value of $G$ with $\ell = k$. By Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], $T^{\mathrm{geo}}_c\{c\} = \ker G'(c) = \ker I = 0$.
+>
+> *Transversality is the regular value condition.* With $T^{\mathrm{geo}}_{F(p)}S = 0$, the condition of Definition [[§26 Transversality#^def-26-2|§26.2]] at $p \in F^{-1}(c)$ reads
+>
+> $$
+> \operatorname{im} F'(p) + 0 = \operatorname{im} F'(p) = \mathbb{R}^k ,
+> $$
+>
+> i.e. $F'(p)$ is surjective. Transversality then reads $\operatorname{im} F'(p) = \mathbb{R}^k$ at every $p \in F^{-1}(c)$ — the definition of a regular value (Definitions [[§7 The Regular Value Theorem#^def-7-4|§7.4]] and [[§7 The Regular Value Theorem#^def-7-3|§7.3]]).
+>
+> *The conclusions.* With $\ell = k$, Theorem [[§26 Transversality#^thm-26-1|§26.1]] gives that $M = F^{-1}(c)$ is a smooth manifold of dimension $\dim M = N - k$ — the conclusion of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] with $N = n + k$ — and
+>
+> $$
+> T^{\mathrm{geo}}_pM = F'(p)^{-1}\big(T^{\mathrm{geo}}_c\{c\}\big) = F'(p)^{-1}(0) = \ker F'(p) .
+> $$
+>
+> This is the description of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for the regular level set $F^{-1}(c)$.
 ^pf-26-3
 
-*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]]
+*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]
 
 > [!remark]- Connections
 > - The regular value theorem for maps between manifolds: [[§35 Regular Submanifolds#^thm-35-7|§35.7]], compared with this version in [[§35 Regular Submanifolds#^prop-35-9|§35.9]].
@@ -163,17 +194,34 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 ^prop-26-4
 
 > [!proof]+ Proof
-> Write $T_i = T^{\mathrm{geo}}_qS_i = \ker G_i'(q)$, of dimension $k - \ell_i$. The kernel of the stacked map $(G_1,G_2)'(q) = \begin{pmatrix} G_1'(q) \\ G_2'(q)\end{pmatrix}$ is $T_1 \cap T_2$, so by [[Fundamental theorem of linear maps|rank–nullity]] it is surjective iff $\dim(T_1 \cap T_2) = k - \ell_1 - \ell_2$. On the other hand
+> Write $T_i = T^{\mathrm{geo}}_qS_i = \ker G_i'(q)$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]). Since $q \in S_i$ and $0$ is a regular value of $G_i$, $G_i'(q)$ is surjective, so by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) $T_i$ has dimension $k - \ell_i$. We show that both sides of the equivalence are the same condition on $\dim(T_1 \cap T_2)$.
+>
+> *The right side.* The rows of the Jacobian of $(G_1, G_2)$ are the gradients of the components (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]): first those of $G_1$, then those of $G_2$. So the Jacobian is the stacked matrix $(G_1,G_2)'(q) = \begin{pmatrix} G_1'(q) \\ G_2'(q)\end{pmatrix}$, and $(G_1,G_2)'(q)v = \big(G_1'(q)v,\ G_2'(q)v\big)$. This is $0$ iff $G_1'(q)v = 0$ and $G_2'(q)v = 0$, so the kernel is $T_1 \cap T_2$. By rank–nullity,
+>
+> $$
+> \dim \operatorname{im}\,(G_1,G_2)'(q) = k - \dim(T_1 \cap T_2) ,
+> $$
+>
+> and the image is all of $\mathbb{R}^{\ell_1+\ell_2}$ iff its dimension is $\ell_1 + \ell_2$. So $(G_1,G_2)'(q)$ is surjective iff $\dim(T_1 \cap T_2) = k - \ell_1 - \ell_2$.
+>
+> *The left side.* On the other hand, by the dimension formula for a sum of two subspaces,
 >
 > $$
 > \dim(T_1 + T_2) = \dim T_1 + \dim T_2 - \dim(T_1 \cap T_2) = (k - \ell_1) + (k - \ell_2) - \dim(T_1 \cap T_2),
 > $$
 >
-> which equals $k$ iff $\dim(T_1 \cap T_2) = k - \ell_1 - \ell_2$. The two conditions coincide. When they hold throughout $S_1 \cap S_2 = (G_1,G_2)^{-1}(0)$, the point $0$ is a regular value of $(G_1, G_2)$, and Theorems [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] give a manifold of codimension $\ell_1 + \ell_2$ with geometric tangent space $\ker(G_1,G_2)'(q) = T_1 \cap T_2$.
-
+> and the subspace $T_1 + T_2$ of $\mathbb{R}^k$ is all of $\mathbb{R}^k$ iff its dimension is $k$, which happens iff $\dim(T_1 \cap T_2) = k - \ell_1 - \ell_2$. The two conditions coincide.
+>
+> *The transverse intersection.* A point $q$ lies in $S_1 \cap S_2$ iff $G_1(q) = 0$ and $G_2(q) = 0$, iff $(G_1,G_2)(q) = 0$; so $S_1 \cap S_2 = (G_1,G_2)^{-1}(0)$. When the conditions hold throughout $S_1 \cap S_2$ (Definition [[§26 Transversality#^def-26-3|§26.3]]), the equivalence shows that $(G_1,G_2)'(q)$ is surjective at every point of this level set, i.e. the point $0$ is a regular value of $(G_1, G_2)$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] with Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] then makes $S_1 \cap S_2$ a smooth manifold of dimension $k - (\ell_1 + \ell_2)$, so by Definition [[§26 Transversality#^def-26-1|§26.1]]
+>
+> $$
+> \operatorname{codim}(S_1 \cap S_2) = k - \big(k - \ell_1 - \ell_2\big) = \ell_1 + \ell_2 = \operatorname{codim} S_1 + \operatorname{codim} S_2 ,
+> $$
+>
+> using $\operatorname{codim} S_i = k - (k - \ell_i) = \ell_i$. And Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] gives the geometric tangent space $T^{\mathrm{geo}}_q(S_1 \cap S_2) = \ker(G_1,G_2)'(q) = T_1 \cap T_2$.
 ^pf-26-4
 
-*Uses:* [[§26 Transversality#^def-26-3|Def. §26.3]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]]
+*Uses:* [[§26 Transversality#^def-26-3|Def. §26.3]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]
 
 > [!example] Example §26.1: The Sphere and the Plane Re-read
 > The figure in [[§7 The Regular Value Theorem#^rem-7-3|§7]] was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\mathrm{geo}}_qS_1 = q^\perp$ and $T^{\mathrm{geo}}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e. iff $q \neq \pm e_3$ — iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients.

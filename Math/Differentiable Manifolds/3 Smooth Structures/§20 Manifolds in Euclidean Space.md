@@ -105,21 +105,36 @@ The inverse $\varphi_J^{-1}$ is a parametrization of that piece of $M$, in the f
 The proof in one picture. The transition function between two graph charts factors through the ambient space: a parametrization up, followed by a linear projection down. Both legs are smooth in the Euclidean sense, so the composite is.
 
 > [!proof]+ Proof
-> *(Lecture 6 worked the surface of [[§20 Manifolds in Euclidean Space#^ex-20-1|Ex. §20.1]] first, then gave this general argument: “the general thing is just harder to write.”)* The domains cover $M$, since each $p \in M$ lies in some $U_J$. Let $(U_J, \varphi_J)$ and $(U_{J'}, \varphi_{J'})$ be two of the charts, with complementary index sets $I$ and $I'$. Two observations, each valid for every choice of $J$:
-> 1. $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth *in the Euclidean sense*: its components are either coordinates of $u$ or components of the smooth map $h_J$.
-> 2. $\varphi_{J'}$ is the restriction of the linear map $\pi_{I'}$, which is smooth on all of $\mathbb{R}^{n+k}$.
+> *(Lecture 6 worked the surface of Example [[§20 Manifolds in Euclidean Space#^ex-20-1|§20.1]] first, then gave this general argument: “the general thing is just harder to write.”)* What has to be shown: the charts $(U_J, \varphi_J)$ cover $M$ and are pairwise $C^\infty$-compatible, so that they form an atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]) on the topological manifold $M$; the smooth structure is then the maximal atlas containing them.
 >
-> The transition function is the composite of the two. On the open set $\varphi_J(U_J \cap U_{J'}) \subseteq \mathbb{R}^I$,
+> *$M$ is a topological $n$-manifold, and the $(U_J, \varphi_J)$ are charts.* By Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] for the open domain $W$ and the value $c$, $M = F^{-1}(c)$ with the subspace topology is a topological manifold of dimension $n$, and Step 3 of that proof shows that each $\varphi_J = \pi_I|_{U_J}$ is a homeomorphism of the open set $U_J \subseteq M$ onto the open set $V_J \subseteq \mathbb{R}^I \cong \mathbb{R}^n$ (with $|I| = n$), i.e. a chart (Definition [[§2 Topological Manifolds#^def-2-3|§2.3]]).
+>
+> *The domains cover $M$.* Each $p \in M$ lies in some $U_J$: the rank of $F'(p)$ is $k$ because $c$ is a regular value, so a set $J$ of $k$ independent columns exists at $p$, and the construction above produces a chart $(U_J, \varphi_J)$ with $p \in U_J$.
+>
+> *Compatibility.* Let $(U_J, \varphi_J)$ and $(U_{J'}, \varphi_{J'})$ be two of the charts, with complementary index sets $I$ and $I'$. If $U_J \cap U_{J'} = \emptyset$ there is nothing to check (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]); otherwise, two observations, each valid for every choice of $J$:
+> - $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth *in the Euclidean sense*: its components are either coordinates of $u$ or components of the smooth map $h_J$. Explicitly, for $u \in V_J$ and an index $l \in \{1, \ldots, n+k\}$, the $l$-th coordinate of $\varphi_J^{-1}(u)$ is $u^l$ if $l \in I$, a linear function of $u$, and $h_J^l(u)$ if $l \in J$, a component of the smooth map $h_J$; every component is smooth.
+> - $\varphi_{J'}$ is the restriction of the linear map $\pi_{I'}$, which is smooth on all of $\mathbb{R}^{n+k}$: its components are the coordinate functions $x \mapsto x^l$, $l \in I'$.
+>
+> The domain of the transition function is $\varphi_J(U_J \cap U_{J'})$. It is open in $\mathbb{R}^I$: $U_J \cap U_{J'}$ is open in $U_J$, the homeomorphism $\varphi_J$ carries it onto an open subset of the open set $V_J$, and an open subset of an open subset of $\mathbb{R}^I$ is open in $\mathbb{R}^I$. For $u$ in it, $\varphi_J^{-1}(u) \in U_J \cap U_{J'}$, and on $U_{J'}$ the map $\varphi_{J'}$ is $\pi_{I'}$ (observation 2). So on the open set $\varphi_J(U_J \cap U_{J'}) \subseteq \mathbb{R}^I$,
 >
 > $$
 > \varphi_{J'} \circ \varphi_J^{-1} = \pi_{I'} \circ \varphi_J^{-1},
 > $$
 >
-> a composite of smooth maps between open subsets of Euclidean spaces, hence smooth. Exchanging the roles of $J$ and $J'$ shows $\varphi_J \circ \varphi_{J'}^{-1}$ is smooth as well, so the transition function is a diffeomorphism and the two charts are $C^\infty$-compatible ([[§17 Differentiable Structures#^def-17-4|Def. §17.4]]). By Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] the atlas determines a smooth structure, of dimension $n$ by Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
-
+> a composite of smooth maps between open subsets of Euclidean spaces, hence smooth (chain rule). In components: for $l \in I'$, the $l$-th component of $\varphi_{J'} \circ \varphi_J^{-1}(u)$ is the $l$-th coordinate of $\varphi_J^{-1}(u)$, which by observation 1 is $u^l$ if $l \in I$ and $h_J^l(u)$ if $l \in J$.
+>
+> The same argument with $J$ and $J'$ interchanged (a literal renaming, which also interchanges $I$ and $I'$) shows that $\varphi_J \circ \varphi_{J'}^{-1}$ is smooth on $\varphi_{J'}(U_J \cap U_{J'})$. The two maps
+>
+> $$
+> \varphi_{J'} \circ \varphi_J^{-1} : \varphi_J(U_J \cap U_{J'}) \to \varphi_{J'}(U_J \cap U_{J'}), \qquad \varphi_J \circ \varphi_{J'}^{-1} : \varphi_{J'}(U_J \cap U_{J'}) \to \varphi_J(U_J \cap U_{J'})
+> $$
+>
+> are inverse to each other, since $(\varphi_J \circ \varphi_{J'}^{-1}) \circ (\varphi_{J'} \circ \varphi_J^{-1}) = \varphi_J \circ \varphi_J^{-1} = \mathrm{id}$ and likewise in the other order. So the transition function is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), and the two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]).
+>
+> *Conclusion.* The charts $(U_J, \varphi_J)$ cover $M$ and are pairwise compatible, so they form an atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]). By Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] the atlas lies in a unique maximal atlas, which is a smooth structure on $M$ (Definition [[§17 Differentiable Structures#^def-17-9|§17.9]]). Its charts take values in $\mathbb{R}^I \cong \mathbb{R}^n$, so $M$ is a smooth manifold of dimension $n$, the dimension of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 ^pf-20-2
 
-*Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§20 Manifolds in Euclidean Space#^ex-20-1|Ex. §20.1]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§20 Manifolds in Euclidean Space#^ex-20-1|Ex. §20.1]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-9|Def. §17.9]]
 
 > [!remark]- Connections
 > - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean), [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§34 Submersions#^def-34-4|Def. §34.4]] (manifolds).
@@ -173,11 +188,26 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 ^lem-20-3
 
 > [!proof]+ Proof
-> (1) $M \cap W'$ is open in $M$. For a graph chart $(U_J, \varphi_J)$, the parametrization $\varphi_J^{-1}$ is smooth into $\mathbb{R}^{n+k}$, so the coordinate representation $H \circ \varphi_J^{-1}$ is a composite of smooth maps between open subsets of Euclidean spaces. (2) $G$ is continuous into $M$ for the subspace topology. Given $q \in P$, take a graph chart $(U_J, \varphi_J)$ of $M$ at $G(q)$ and a chart $(V, \chi)$ of $P$ at $q$ with $G(V) \subseteq U_J$ (shrink $V$ to $V \cap G^{-1}(U_J)$). Then $\varphi_J \circ G \circ \chi^{-1} = \pi_I \circ (G \circ \chi^{-1})$ is a linear projection of a smooth map, hence smooth.
-
+> Both parts are checked against Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]: continuity, and at each point one pair of charts in which the coordinate representation is smooth. On the Euclidean side the chart is the identity chart $(\mathbb{R}^l, \mathrm{id})$ or $(\mathbb{R}^{n+k}, \mathrm{id})$ (Example [[§17 Differentiable Structures#^ex-17-1|§17.1]]); on the side of $M$ it is a graph chart $(U_J, \varphi_J)$ of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], whose parametrization $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth in the Euclidean sense (observation 1 in that proof) and whose coordinate map is $\varphi_J = \pi_I|_{U_J}$.
+>
+> *(1)* $M \cap W'$ is open in $M$ (an open set of $\mathbb{R}^{n+k}$ intersected with $M$, Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]), and it is a smooth manifold with the charts of $M$ restricted to it. *Continuity:* $H|_{M \cap W'}$ is the composite of the inclusion $M \cap W' \hookrightarrow W'$, continuous by Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](1), with the continuous map $H$. *Charts:* fix $p \in M \cap W'$ and a graph chart $(U_J, \varphi_J)$ with $p \in U_J$. Its restriction to the open set $U = U_J \cap W'$ is again a chart (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)), and $H(U) \subseteq \mathbb{R}^l$, the domain of the identity chart. The coordinate representation is
+>
+> $$
+> \mathrm{id} \circ H \circ (\varphi_J|_U)^{-1} = H \circ \varphi_J^{-1} : \varphi_J(U_J \cap W') \to \mathbb{R}^l .
+> $$
+>
+> Here $\varphi_J(U_J \cap W')$ is open in $\mathbb{R}^I$ (as in the proof of Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)), $\varphi_J^{-1}$ is smooth on it with values in $U_J \cap W' \subseteq W'$, and $H$ is smooth on the open set $W'$. So the coordinate representation is a composite of smooth maps between open subsets of Euclidean spaces, hence smooth.
+>
+> *(2)* *Continuity:* $G$ takes values in $M$, and composed with the inclusion $\iota : M \hookrightarrow \mathbb{R}^{n+k}$ it is the original map $\iota \circ G = G : P \to \mathbb{R}^{n+k}$, which is continuous because it is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]). By Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](2), $G$ is continuous into $M$ for the subspace topology. *Charts:* given $q \in P$, take a graph chart $(U_J, \varphi_J)$ of $M$ at $G(q)$ and any chart $(V_0, \chi_0)$ of $P$ at $q$. Put $V = V_0 \cap G^{-1}(U_J)$, open because $G : P \to M$ is continuous and $U_J$ is open in $M$, and $\chi = \chi_0|_V$, a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1); now $G(V) \subseteq U_J$. For $a \in \chi(V)$ the point $G(\chi^{-1}(a))$ lies in $U_J$, where $\varphi_J$ is $\pi_I$, so on $\chi(V)$
+>
+> $$
+> \varphi_J \circ G \circ \chi^{-1} = \pi_I \circ (G \circ \chi^{-1}) .
+> $$
+>
+> The map $G \circ \chi^{-1} = \mathrm{id} \circ G \circ \chi^{-1}$ is the coordinate representation of the smooth map $G : P \to \mathbb{R}^{n+k}$ in the charts $(V, \chi)$ and $(\mathbb{R}^{n+k}, \mathrm{id})$, hence smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]; and $\pi_I$ is linear, hence smooth. So $\varphi_J \circ G \circ \chi^{-1}$, a linear projection of a smooth map, is smooth, and the charts $(V, \chi)$ and $(U_J, \varphi_J)$ witness Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] at $q$.
 ^pf-20-3
 
-*Uses:* [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§35 Regular Submanifolds#^lem-35-3|§35.3]].

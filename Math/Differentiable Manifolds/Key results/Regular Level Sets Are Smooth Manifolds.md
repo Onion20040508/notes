@@ -11,10 +11,15 @@ tags: [differentiable-manifolds, hub]
 - [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2: Regular Level Sets Are Smooth Manifolds]], in [[§20 Manifolds in Euclidean Space]]
 
 ## Its proof uses
+- [[§2 Topological Manifolds#^def-2-3|Definition §2.3: Chart]]
 - [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
+- [[§7 The Regular Value Theorem#^cor-7-4|Corollary §7.4: Open Domains and Arbitrary Values]]
+- [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
 - [[§17 Differentiable Structures#^thm-17-5|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]
+- [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
+- [[§17 Differentiable Structures#^def-17-9|Definition §17.9: Smooth Manifold Structure]]
 - [[§20 Manifolds in Euclidean Space#^ex-20-1|Example §20.1: A Surface in ℝ³]]
 - [[§20 Manifolds in Euclidean Space#^def-20-3|Definition §20.3: Parametrization]]
 
@@ -28,7 +33,11 @@ tags: [differentiable-manifolds, hub]
 - [[§24 The Circle#^prop-24-1|Proposition §24.1: The Three Circle Atlases Define One Smooth Structure]]
 - [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5: The Classical Groups]]
 - [[§26 Transversality#^thm-26-1|Theorem §26.1: Preimages of Transverse Level Sets]]
+- [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
+- [[§33 Local Diffeomorphisms#^ex-33-1|Example §33.1: The Circle Covered by a Line]]
 - [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
+- [[§40 Projective Spaces and the Hopf Fibration#^ex-40-1|Example §40.1: Spheres Cover Projective Spaces]]
+- [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Example §40.3: The Hopf Fibration S²ⁿ⁺¹ → ℂPⁿ]]
 
 ## Connections
 - **Used for.** Smooth structures on O(n) and U(n) ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]]), on SL(n,ℝ) and on the spheres, hence the smooth half of [[Classical Groups Are Manifolds]] ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). Maps into and out of a level set are smooth when the ambient formulas are ([[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]]), which shows that the three circle atlases define one structure ([[§24 The Circle#^prop-24-1|§24.1]]).

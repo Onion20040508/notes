@@ -62,21 +62,34 @@ tags: [differentiable-manifolds, math591]
 ^prop-29-1
 
 > [!proof]+ Proof
-> *(Lecture 8: “it's linear, and the product rule will be inherited from the product rule of the ordinary partial derivatives” — the* Linear *and* Leibniz *steps below. Well-definedness is filled in.)* *Well defined.* If $(f,U_1) \sim (g,U_2)$, then $f = g$ on an open $W \ni p$, so $f_\varphi = g_\varphi$ on the open set $\varphi(W \cap U) \ni \varphi(p)$; partial derivatives at a point depend only on the function near that point, so the two values agree. (Shrinking the chart domain also changes nothing, for the same reason.)
+> *(Lecture 8: “it's linear, and the product rule will be inherited from the product rule of the ordinary partial derivatives” — the *Linear* and *Leibniz* steps below. Well-definedness is filled in.)*
 >
-> *Linear.* $(\lambda f + g)_\varphi = \lambda f_\varphi + g_\varphi$, and partial differentiation is linear.
+> Three things are to be shown: the value $\partial f_\varphi/\partial r^i(\varphi(p))$ does not depend on the representative of $[f]$; the resulting map is linear; and it satisfies the Leibniz rule of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]. For a representative $(f, U_1)$, $f_\varphi = f \circ \varphi^{-1}$ is defined on the open set $\varphi(U \cap U_1) \ni \varphi(p)$ and smooth there (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], applied on the open set $U \cap U_1$ with the restricted chart), so its partial derivatives at $\varphi(p)$ exist.
 >
-> *Leibniz.* $(fg)_\varphi = f_\varphi\, g_\varphi$, so by the ordinary product rule at $\varphi(p)$,
+> *Well defined.* If $(f,U_1) \sim (g,U_2)$, then $f = g$ on an open $W \ni p$ (Definition [[§27 Germs#^def-27-1|§27.1]]), so $f_\varphi = g_\varphi$ on the open set $\varphi(W \cap U) \ni \varphi(p)$ (open because $\varphi$ is a homeomorphism onto the open set $\varphi(U)$); partial derivatives at a point depend only on the function near that point, being limits of difference quotients that only use values in arbitrarily small neighbourhoods, so the two values agree. (Shrinking the chart domain also changes nothing, for the same reason.)
+>
+> *Linear.* $(\lambda f + g)_\varphi = \lambda f_\varphi + g_\varphi$ near $\varphi(p)$, since both sides take the value $\lambda f(\varphi^{-1}(r)) + g(\varphi^{-1}(r))$ at $r$; and partial differentiation is linear. So, by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] at both ends,
+>
+> $$
+> \frac{\partial}{\partial x^i}\Big|_p\big(\lambda[f] + [g]\big) = \frac{\partial (\lambda f + g)_\varphi}{\partial r^i}(\varphi(p)) = \lambda\,\frac{\partial f_\varphi}{\partial r^i}(\varphi(p)) + \frac{\partial g_\varphi}{\partial r^i}(\varphi(p)) = \lambda\,\frac{\partial}{\partial x^i}\Big|_p[f] + \frac{\partial}{\partial x^i}\Big|_p[g] .
+> $$
+>
+> *Leibniz.* $(fg)_\varphi = f_\varphi\, g_\varphi$ near $\varphi(p)$, since $(fg)(\varphi^{-1}(r)) = f(\varphi^{-1}(r))\, g(\varphi^{-1}(r))$, so by the ordinary product rule at $\varphi(p)$,
 >
 > $$
 > \frac{\partial (fg)_\varphi}{\partial r^i}(\varphi(p)) = f_\varphi(\varphi(p))\,\frac{\partial g_\varphi}{\partial r^i}(\varphi(p)) + g_\varphi(\varphi(p))\,\frac{\partial f_\varphi}{\partial r^i}(\varphi(p)),
 > $$
 >
-> and $f_\varphi(\varphi(p)) = f(p)$, $g_\varphi(\varphi(p)) = g(p)$.
-
+> and $f_\varphi(\varphi(p)) = f(\varphi^{-1}(\varphi(p))) = f(p)$, $g_\varphi(\varphi(p)) = g(p)$. By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] the left side is $\partial/\partial x^i|_p([f][g])$ and the two partial derivatives on the right are $\partial/\partial x^i|_p[g]$ and $\partial/\partial x^i|_p[f]$, so
+>
+> $$
+> \frac{\partial}{\partial x^i}\Big|_p\big([f][g]\big) = f(p)\,\frac{\partial}{\partial x^i}\Big|_p[g] + g(p)\,\frac{\partial}{\partial x^i}\Big|_p[f],
+> $$
+>
+> which is the Leibniz rule.
 ^pf-29-1
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§8 Algebra of Differentiable Functions#^thm-8-2|452 §8.2]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§8 Algebra of Differentiable Functions#^thm-8-2|452 §8.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]
 
 The proof of the Basis Theorem below needs a form of Taylor expansion whose remainder is not an estimate but an exact, *smooth* term — “a theorem from calculus” that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
 
@@ -94,14 +107,27 @@ The proof of the Basis Theorem below needs a form of Taylor expansion whose rema
 ^lem-29-2
 
 > [!proof]+ Proof
-> *(Lecture 9: “the proof is delightfully simple.”)* Fix $r \in B$. The segment $t \mapsto a + t(r - a)$, $t \in [0,1]$, runs from $a$ to $r$ and stays in $B$, a ball being convex. By the fundamental theorem of calculus and the chain rule,
+> *(Lecture 9: “the proof is delightfully simple.”)* Fix $r \in B$. The segment $t \mapsto a + t(r - a)$, $t \in [0,1]$, runs from $a$ to $r$ and stays in $B$, a ball being convex. Put $h(t) = f\big(a + t(r-a)\big)$. It is defined on the set of $t$ with $a + t(r-a) \in W$, which is open (the preimage of the open $W$ under a continuous map) and contains $[0,1]$, hence also open intervals around $0$ and $1$, hence an open interval containing $[0,1]$; there $h$ is smooth, as the composite of $f$ with an affine map. By the fundamental theorem of calculus, $f(r) - f(a) = h(1) - h(0) = \int_0^1 h'(t)\, dt$, and by the chain rule, since $\frac{d}{dt}\big(a^i + t(r^i - a^i)\big) = r^i - a^i$,
+>
+> $$
+> h'(t) = \sum_{i=1}^n \frac{\partial f}{\partial r^i}\big(a + t(r-a)\big)\,(r^i - a^i) .
+> $$
+>
+> Hence
 >
 > $$
 > f(r) - f(a) = \int_0^1 \frac{d}{dt} f\big(a + t(r-a)\big)\, dt = \int_0^1 \sum_{i=1}^n (r^i - a^i)\, \frac{\partial f}{\partial r^i}\big(a + t(r-a)\big)\, dt = \sum_{i=1}^n (r^i - a^i)\, f_i(r),
 > $$
 >
-> the factors $r^i - a^i$ coming out of the integral because they do not depend on $t$. Each $f_i$ is smooth on $B$: the integrand is smooth in $(t, r)$ on $[0,1] \times B$, so differentiation under the integral sign is legitimate to every order. At $r = a$ the integrand is constant, and $f_i(a) = \partial f/\partial r^i(a)$.
-
+> the factors $r^i - a^i$ coming out of the integral because they do not depend on $t$ (linearity of the integral), and $f_i$ being the integral of the statement. Adding $f(a)$ to both sides gives the identity.
+>
+> *Smoothness.* Each $f_i$ is smooth on $B$: the integrand $(t, r) \mapsto \partial f/\partial r^i\big(a + t(r-a)\big)$ is the composite of the smooth map $(t,r) \mapsto a + t(r-a)$ with the smooth function $\partial f/\partial r^i$, so it is smooth in $(t, r)$ on an open set containing $[0,1] \times B$, and all its partial derivatives in $r$ are continuous there; so differentiation under the integral sign over the compact interval $[0,1]$ is legitimate to every order.
+>
+> *Value at $a$.* At $r = a$ the integrand is constant: $a + t(a - a) = a$ for every $t$, so the integrand is the number $\partial f/\partial r^i(a)$, and
+>
+> $$
+> f_i(a) = \int_0^1 \frac{\partial f}{\partial r^i}(a)\, dt = \frac{\partial f}{\partial r^i}(a) .
+> $$
 ^pf-29-2
 
 *Uses:* [[Fundamental Theorem of Calculus|451 §34.1]], [[Multivariable Chain Rule|452 §12.2]]
@@ -124,18 +150,33 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 ^lem-29-3
 
 > [!proof]+ Proof
-> *(Lecture 9, exactly: first order, then “apply the claim to each $f_i$” and substitute back. Uribe wrote the quadratic term with a factor $\tfrac12$ — “doesn't matter” — which the notes absorb into $f_{ij}$; the value of $f_{ij}(a)$ at the end is a completion, the lecture needing only that the $f_{ij}$ are smooth.)* Apply Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]] to $f$, obtaining $f_1, \ldots, f_n$; then apply it again to each $f_i$, obtaining smooth $f_{ij}$ with
+> *(Lecture 9, exactly: first order, then “apply the claim to each $f_i$” and substitute back. Uribe wrote the quadratic term with a factor $\tfrac12$ — “doesn't matter” — which the notes absorb into $f_{ij}$; the value of $f_{ij}(a)$ at the end is a completion, the lecture needing only that the $f_{ij}$ are smooth.)*
+>
+> *Two applications of Hadamard.* Apply Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]] to $f$, obtaining smooth $f_1, \ldots, f_n$ on $B$ with
 >
 > $$
-> f_i(r) = f_i(a) + \sum_{j=1}^n (r^j - a^j)\, f_{ij}(r) = \frac{\partial f}{\partial r^i}(a) + \sum_{j=1}^n (r^j - a^j)\, f_{ij}(r).
+> f(r) = f(a) + \sum_{i=1}^n (r^i - a^i)\, f_i(r) \quad (r \in B), \qquad f_i(a) = \frac{\partial f}{\partial r^i}(a) .
 > $$
 >
-> Substituting this into $f(r) = f(a) + \sum_i (r^i - a^i) f_i(r)$ gives the identity. For the value at $a$: by Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]] applied to $f_i$, $f_{ij}(a) = \partial f_i/\partial r^j(a)$, and differentiating the integral formula for $f_i$ under the integral sign,
+> Then apply it again to each $f_i$, now with the open set $B$ in place of $W$ and the same ball $B$ (which is centred at $a$), obtaining smooth $f_{ij}$ on $B$ with $f_{ij}(a) = \partial f_i/\partial r^j(a)$ and
 >
 > $$
-> \frac{\partial f_i}{\partial r^j}(r) = \int_0^1 t\, \frac{\partial^2 f}{\partial r^j\,\partial r^i}\big(a + t(r-a)\big)\, dt, \qquad\text{so}\qquad \frac{\partial f_i}{\partial r^j}(a) = \frac12\, \frac{\partial^2 f}{\partial r^i\,\partial r^j}(a).
+> f_i(r) = f_i(a) + \sum_{j=1}^n (r^j - a^j)\, f_{ij}(r) = \frac{\partial f}{\partial r^i}(a) + \sum_{j=1}^n (r^j - a^j)\, f_{ij}(r),
 > $$
-
+>
+> the second equality by the value $f_i(a)$ from the first application.
+>
+> *Substitution.* Substituting this into $f(r) = f(a) + \sum_i (r^i - a^i) f_i(r)$ and multiplying out gives the identity:
+>
+> $$
+> f(r) = f(a) + \sum_{i=1}^n (r^i - a^i)\Big(\frac{\partial f}{\partial r^i}(a) + \sum_{j=1}^n (r^j - a^j)\, f_{ij}(r)\Big) = f(a) + \sum_{i=1}^n (r^i - a^i)\, \frac{\partial f}{\partial r^i}(a) + \sum_{i,j=1}^n (r^i - a^i)(r^j - a^j)\, f_{ij}(r) .
+> $$
+>
+> *The value at $a$.* By Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]] applied to $f_i$, $f_{ij}(a) = \partial f_i/\partial r^j(a)$. Differentiate the integral formula $f_i(r) = \int_0^1 \frac{\partial f}{\partial r^i}\big(a + t(r-a)\big)\, dt$ under the integral sign (legitimate, as in the proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]). By the chain rule, since $\partial\big(a^k + t(r^k - a^k)\big)/\partial r^j = t\,\delta^k_j$, the $r^j$-derivative of the integrand is $\sum_k \frac{\partial^2 f}{\partial r^k\,\partial r^i}\big(a + t(r-a)\big)\, t\,\delta^k_j = t\, \frac{\partial^2 f}{\partial r^j\,\partial r^i}\big(a + t(r-a)\big)$. At $r = a$ the second derivative is the constant $\frac{\partial^2 f}{\partial r^j\,\partial r^i}(a)$, and $\int_0^1 t\, dt = \tfrac12$; the order of the two partial derivatives does not matter, $f$ being smooth (equality of mixed partials). So
+>
+> $$
+> \frac{\partial f_i}{\partial r^j}(r) = \int_0^1 t\, \frac{\partial^2 f}{\partial r^j\,\partial r^i}\big(a + t(r-a)\big)\, dt, \qquad\text{so}\qquad \frac{\partial f_i}{\partial r^j}(a) = \frac{\partial^2 f}{\partial r^j\,\partial r^i}(a) \int_0^1 t\, dt = \frac12\, \frac{\partial^2 f}{\partial r^i\,\partial r^j}(a).
+> $$
 ^pf-29-3
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]
@@ -165,17 +206,40 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 ^cor-29-4
 
 > [!proof]+ Proof
-> Choose a representative $f$ on an open ball $B \subseteq W$ centred at $a$, which changes nothing since $D$ acts on germs, and apply $D$ to the identity of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]:
+> Two formulas are claimed; the second is the first read as an equality of derivations.
+>
+> *Reduction to a ball.* Let $(f, V)$ represent $[f]$. Choose an open ball $B \subseteq V \cap W$ centred at $a$ (possible since $V \cap W$ is open and contains $a$). Then $(f|_B, B) \sim (f, V)$, so we may take the representative $f$ on $B$, which changes nothing since $D$ acts on germs.
+>
+> *The germ identity.* Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]] gives smooth $f_{ij}$ on $B$ with $f(r) = f(a) + \sum_i (r^i - a^i)\,\partial f/\partial r^i(a) + \sum_{i,j} (r^i - a^i)(r^j - a^j) f_{ij}(r)$ for all $r \in B$. Functions equal on $B$ have equal germs, and the germ of a sum or product of functions on $B$ is the sum or product of their germs (Proposition [[§27 Germs#^prop-27-2|§27.2]]); so, writing $\underline{c}$ for constants as in Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]],
+>
+> $$
+> [f] = \big[\underline{f(a)}\big] + \sum_{i} \frac{\partial f}{\partial r^i}(a)\, \big[r^i - a^i\big] + \sum_{i,j} \big[r^i - a^i\big]\,\big[(r^j - a^j) f_{ij}\big] .
+> $$
+>
+> *Apply $D$.* Apply $D$ to this identity; $D$ is linear and the numbers $\partial f/\partial r^i(a)$ come out:
 >
 > $$
 > D[f] = D\big[\underline{f(a)}\big] + \sum_{i} \frac{\partial f}{\partial r^i}(a)\, D\big[r^i - a^i\big] + \sum_{i,j} D\Big[(r^i - a^i)\cdot\big((r^j - a^j) f_{ij}\big)\Big].
 > $$
 >
-> The constant term vanishes by Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1). Each quadratic term is $D$ of a product of two germs in $I_a$ — namely $r^i - a^i$ and $(r^j - a^j)f_{ij}$, both zero at $a$ — so it vanishes by Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](2). Finally $D[r^i - a^i] = D[r^i]$ by (1) again. So $D$ sees only the linear part of $f$: “the ultimate formula in the Euclidean case.”
-
+> The constant term vanishes by Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1). Each quadratic term is $D$ of a product of two germs in $I_a$ — namely $r^i - a^i$ and $(r^j - a^j)f_{ij}$, both zero at $a$, the values at $a$ being $a^i - a^i = 0$ and $0 \cdot f_{ij}(a) = 0$ — so it vanishes by Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](2). Finally $D[r^i - a^i] = D[r^i]$ by (1) again: $D[r^i - a^i] = D[r^i] - D[\underline{a^i}] = D[r^i] - 0$. What remains is
+>
+> $$
+> D[f] = 0 + \sum_{i=1}^n \frac{\partial f}{\partial r^i}(a)\, D[r^i] + 0 ,
+> $$
+>
+> the first formula. So $D$ sees only the linear part of $f$: “the ultimate formula in the Euclidean case.”
+>
+> *The second formula.* $\partial/\partial r^i|_a$ is the coordinate derivation (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]) of the identity chart $(W, \mathrm{id}_W)$, whose coordinate functions are the $r^i$ and in which $f_{\mathrm{id}} = f$; so $\partial/\partial r^i|_a[f] = \partial f/\partial r^i(a)$, and it is a derivation at $a$ (Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]]). Derivations are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), so for every germ $[f]$, by the first formula,
+>
+> $$
+> \Big(\sum_{i=1}^n D[r^i]\, \frac{\partial}{\partial r^i}\Big|_a\Big)[f] = \sum_{i=1}^n D[r^i]\, \frac{\partial f}{\partial r^i}(a) = D[f] .
+> $$
+>
+> The two derivations agree on every germ, so they are equal.
 ^pf-29-4
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§27 Germs#^prop-27-2|§27.2]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 > [!theorem] Theorem §29.5: Basis Theorem
 > Let $M$ be a smooth $n$-manifold, $p \in M$, and $(U, \varphi)$ any smooth chart with $p \in U$. Then
@@ -195,29 +259,45 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 ^thm-29-5
 
 > [!proof]+ Proof
-> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof — “this is how you push forward derivations … we'll come back to this construction immediately after” — and Uribe remarked that “the order of my presentation is not ideal.” The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§28, Pushing Derivations Forward]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$.
+> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof — “this is how you push forward derivations \ldots we'll come back to this construction immediately after” — and Uribe remarked that “the order of my presentation is not ideal.” The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space|§28]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$. What has to be shown: the $n$ derivations $\partial/\partial x^i|_p$, which lie in $T_pM$ by Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]], span $T_pM$ — this is the universal formula, Steps 1–3 — and are linearly independent, Step 4.
 >
-> *Step 1: push $D$ down.* Let $\tilde D = \varphi_{\ast p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]; so $\tilde D[g] = D[g \circ \varphi]$ for germs $g$ at $a$.
+> *Step 1: push $D$ down.* Let $\tilde D = \varphi_{\ast p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]] (with $D$ regarded as a derivation on germs on $U$, by the identification $T_pM = T_pU$ of Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $F = \varphi$, $\tilde D[g] = D\big(\varphi_p^{\ast}[g]\big) = D[g \circ \varphi]$ for germs $g$ at $a$.
 >
-> *Step 2: apply the Euclidean formula downstairs.* By Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4|§29.4]] on the open set $\varphi(U)$,
+> *Step 2: apply the Euclidean formula downstairs.* By Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4|§29.4]] on the open set $\varphi(U)$, applied to the derivation $\tilde D$ at $a$: for every germ $[g]$ at $a$,
 >
 > $$
 > \tilde D[g] = \sum_{i=1}^n \frac{\partial g}{\partial r^i}(a)\, \tilde D[r^i] .
 > $$
 >
-> *Step 3: read it back upstairs.* Let $[f]$ be a germ at $p$, and take $g = f_\varphi = f \circ \varphi^{-1}$. Then $f_\varphi \circ \varphi = f$ near $p$, so $\tilde D[f_\varphi] = D[f]$; by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $\partial f_\varphi/\partial r^i(a) = \partial/\partial x^i|_p[f]$; and $\tilde D[r^i] = D[r^i \circ \varphi] = D[x^i]$. Substituting,
+> *Step 3: read it back upstairs.* Let $[f]$ be a germ at $p$, with a representative $(f, V)$; replacing $V$ by $V \cap U$ does not change the germ, so assume $V \subseteq U$. Take $g = f_\varphi = f \circ \varphi^{-1}$, defined and smooth on the open set $\varphi(V) \ni a$. Three identities translate the terms of Step 2:
+> - $f_\varphi \circ \varphi = f \circ \varphi^{-1} \circ \varphi = f$ on $V$, so by Step 1, $\tilde D[f_\varphi] = D[f_\varphi \circ \varphi] = D[f]$;
+> - by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $\partial f_\varphi/\partial r^i(a) = \partial/\partial x^i|_p[f]$;
+> - by Step 1 and Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]] ($x^i = r^i \circ \varphi$), $\tilde D[r^i] = D[r^i \circ \varphi] = D[x^i]$.
+>
+> Substituting these into Step 2 with $g = f_\varphi$, and using that derivations are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]),
 >
 > $$
-> D[f] = \sum_{i=1}^n D[x^i]\, \frac{\partial}{\partial x^i}\Big|_p[f] \qquad\text{for every germ } [f],
+> D[f] = \tilde D[f_\varphi] = \sum_{i=1}^n \frac{\partial f_\varphi}{\partial r^i}(a)\, \tilde D[r^i] = \sum_{i=1}^n D[x^i]\, \frac{\partial}{\partial x^i}\Big|_p[f] = \Big(\sum_{i=1}^n D[x^i]\, \frac{\partial}{\partial x^i}\Big|_p\Big)[f] \qquad\text{for every germ } [f],
 > $$
 >
-> so $D = \sum_i D[x^i]\, \partial/\partial x^i|_p$ and the coordinate derivations span.
+> so $D = \sum_i D[x^i]\, \partial/\partial x^i|_p$, two derivations being equal when they agree on every germ. As $D$ was arbitrary, the coordinate derivations span.
 >
-> *Step 4: independence.* If $\sum_i c_i\, \partial/\partial x^i|_p = 0$, apply it to $[x^j]$. Since $(x^j)_\varphi = r^j$, we get $\partial/\partial x^i|_p[x^j] = \partial r^j/\partial r^i = \delta^j_i$, hence $c_j = 0$. So the $n$ coordinate derivations form a basis, and the coefficients of $D$ are the numbers $D[x^i]$ — uniquely.
-
+> *Step 4: independence.* First, for all $i, j$: since $(x^j)_\varphi = r^j$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](3)) and the projection $r^j$ has $i$-th partial derivative $1$ if $i = j$ and $0$ otherwise, Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] gives
+>
+> $$
+> \frac{\partial}{\partial x^i}\Big|_p[x^j] = \frac{\partial (x^j)_\varphi}{\partial r^i}(a) = \frac{\partial r^j}{\partial r^i}(a) = \delta^j_i .
+> $$
+>
+> Now suppose $\sum_i c_i\, \partial/\partial x^i|_p = 0$, and apply it to $[x^j]$. Evaluating pointwise,
+>
+> $$
+> 0 = \Big(\sum_{i=1}^n c_i\, \frac{\partial}{\partial x^i}\Big|_p\Big)[x^j] = \sum_{i=1}^n c_i\, \frac{\partial}{\partial x^i}\Big|_p[x^j] = \sum_{i=1}^n c_i\, \delta^j_i = c_j ,
+> $$
+>
+> hence $c_j = 0$, for every $j$. So the $n$ coordinate derivations form a basis, and $\dim T_pM = n$. The coefficients of $D$ are the numbers $D[x^i]$ — uniquely: if also $D = \sum_i b_i\, \partial/\partial x^i|_p$, the same evaluation at $[x^j]$ gives $D[x^j] = \sum_i b_i\, \delta^j_i = b_j$.
 ^pf-29-5
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4|§29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4|§29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 ![[m591-12-8.svg]]
 
@@ -249,11 +329,20 @@ $$
 ^thm-29-6
 
 > [!proof]+ Proof
-> **Announced in lecture.** Stated in lecture in answer to a student's question — “are the ambient and the abstract tangent spaces the same, just defined differently?” — with the answer that they are, but that it has to be proved. Injectivity is Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; that $D_v$ really is a derivation is Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]]; surjectivity follows from the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|basis theorem]], both spaces having dimension $n$. Even once it is proved, the notes keep the notations apart: $T^{\mathrm{geo}}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
-
+> **Announced in lecture.** Stated in lecture in answer to a student's question — “are the ambient and the abstract tangent spaces the same, just defined differently?” — with the answer that they are, but that it has to be proved. Injectivity is Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; that $D_v$ really is a derivation is Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]]; surjectivity follows from the basis theorem (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), both spaces having dimension $n$. In detail:
+>
+> *The map lands in $T_pM$.* Near $p$, $M$ is the graph of a smooth function, after permuting coordinates (Step 2 of the proof of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), and passing to this open piece changes neither the geometric tangent space (Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]]) nor the germs at $p$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]); so $D_v$ is defined by Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]]. By Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]](1), $D_v(f)$ depends only on the germ $[f]$, so $D_v$ is a map $C_p^\infty(M) \to \mathbb{R}$; by (3) it is linear and obeys the Leibniz rule, so it is a derivation at $p$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), $D_v \in T_pM$; and by (2) it does not depend on the graph piece used, only on $v$.
+>
+> *Linear.* In the graph chart, $v = (u, G'(x_0)u)$, so $u$ consists of the graph-variable components of $v$ and depends linearly on $v$; and $D_v(f) = u \cdot \nabla f_\varphi(x_0)$ is linear in $u$. Hence $D_{\lambda v + w}(f) = \lambda\, D_v(f) + D_w(f)$ for every $f$, i.e. $D_{\lambda v + w} = \lambda D_v + D_w$ (pointwise operations, Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]).
+>
+> *Injective.* If $D_v = D_{v'}$ then $v = v'$ (Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]).
+>
+> *Bijective.* $\dim T^{\mathrm{geo}}_pM = n$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) and $\dim T_pM = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], $M$ being a smooth $n$-manifold). A linear map between spaces of the same finite dimension is injective if and only if it is surjective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), so $v \mapsto D_v$ is a linear bijection, i.e. an isomorphism of vector spaces.
+>
+> Even once it is proved, the notes keep the notations apart: $T^{\mathrm{geo}}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
 ^pf-29-6
 
-*Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
+*Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark]- Connections
 > - The same argument, with both dimension counts cited ([[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for $T^{\mathrm{geo}}_pM$, the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|basis theorem]] for $T_pM$), is recorded as [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Consequences, §29.7]].
@@ -267,11 +356,12 @@ $$
 ^cor-29-7
 
 > [!proof]+ Proof
-> The first claim is Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]. For the second, $v \mapsto D_v$ is linear and injective (Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]) between spaces of dimension $n$ — the geometric tangent space $T^{\mathrm{geo}}_pM$ by Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], the abstract tangent space $T_pM$ by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]] — hence an isomorphism.
-
+> *First claim.* The first claim is Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]: in any chart at $p$ the $n$ coordinate derivations $\partial/\partial x^i|_p$ form a basis of $T_pM$, so $\dim T_pM = n$.
+>
+> *Second claim.* For the second, $v \mapsto D_v$ is linear and injective (Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; it lands in $T_pM$ and is linear as shown in the proof of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) between spaces of dimension $n$ — the geometric tangent space $T^{\mathrm{geo}}_pM$ by Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], the abstract tangent space $T_pM$ by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]] — hence an isomorphism: by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), an injective linear map between spaces of equal finite dimension is also surjective.
 ^pf-29-7
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]], [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]], [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark]- Connections
 > - The same argument as the proof of [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Ambient and Abstract Agree, §29.6]], stated just above, with both dimension counts cited.
@@ -295,8 +385,7 @@ $$
 ^thm-29-8
 
 > [!proof]+ Proof
-> *(The last clause of the basis theorem, recorded as a theorem in its own right.)* Any chart $(U, \varphi)$ at $p$ has $n$ coordinate functions ([[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]]), and by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]] the $n$ derivations $\partial/\partial x^i|_p$ form a basis of $T_pM$. A different chart gives a different basis, but every basis of a finite-dimensional vector space has the same number of elements ([[§6 Dimension#^ladr-2-34|LADR 2.34]]).
-
+> *(The last clause of the basis theorem, recorded as a theorem in its own right.)* Fix $p \in M$. Since $M$ is a smooth $n$-manifold, there is a chart $(U, \varphi)$ at $p$, with $\varphi(U) \subseteq \mathbb{R}^n$. Any chart $(U, \varphi)$ at $p$ has $n$ coordinate functions $x^1, \ldots, x^n$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), and by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]] the $n$ derivations $\partial/\partial x^i|_p$ form a basis of $T_pM$; so $\dim T_pM = n$. A different chart gives a different basis, but every basis of a finite-dimensional vector space has the same number of elements, namely its dimension; so every chart yields the same count $n$. Since $p$ was arbitrary, $\dim T_pM = n$ at every point.
 ^pf-29-8
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§6 Dimension#^ladr-2-34|LADR 2.34]]
@@ -309,11 +398,22 @@ This is less obvious than it looks: the space of germs $C^\infty_p(M)$ ([[§27 G
 ^cor-29-9
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Let $p \in U$. By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $(F^{-1})_{\ast F(p)} \circ F_{\ast p}$ and $F_{\ast p} \circ (F^{-1})_{\ast F(p)}$ are the pushforwards of the identity maps, hence identities, so $F_{\ast p} : T_pU \to T_{F(p)}V$ is a linear isomorphism. By Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], applied to the open sets $U$ and $V$ with their identity charts, these spaces have dimensions $m$ and $n$, so $m = n$. For two charts $(U_1, \varphi_1)$ and $(U_2, \varphi_2)$ at $p$ with targets $\mathbb{R}^m$ and $\mathbb{R}^n$, apply this to the transition map $\varphi_2 \circ \varphi_1^{-1} : \varphi_1(U_1 \cap U_2) \to \varphi_2(U_1 \cap U_2)$, a diffeomorphism between nonempty open sets.
-
+> *(Not from lecture; filled in.)* Give $U$ and $V$ their standard smooth structures, with the identity charts $(U, \mathrm{id}_U)$ and $(V, \mathrm{id}_V)$; they are smooth manifolds of dimensions $m$ and $n$, and $F$ and $F^{-1}$ are smooth maps between them (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]). Let $p \in U$, which exists since $U$ is nonempty.
+>
+> *$F_{\ast p}$ is an isomorphism.* By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $(F^{-1})_{\ast F(p)} \circ F_{\ast p}$ and $F_{\ast p} \circ (F^{-1})_{\ast F(p)}$ are the pushforwards of the identity maps, hence identities:
+>
+> $$
+> (F^{-1})_{\ast F(p)} \circ F_{\ast p} = (F^{-1} \circ F)_{\ast p} = (\mathrm{id}_U)_{\ast p} = \mathrm{id}_{T_pU}, \qquad F_{\ast p} \circ (F^{-1})_{\ast F(p)} = (F \circ F^{-1})_{\ast F(p)} = (\mathrm{id}_V)_{\ast F(p)} = \mathrm{id}_{T_{F(p)}V},
+> $$
+>
+> using $F^{-1}(F(p)) = p$ in the second. So $F_{\ast p} : T_pU \to T_{F(p)}V$ is a linear isomorphism (linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]); this is Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]] for $\Phi = F$.
+>
+> *The dimensions.* By Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], applied to the open sets $U$ and $V$ with their identity charts, these spaces have dimensions $m$ and $n$. A linear isomorphism is injective and surjective, so by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) $m \le n$ and $m \ge n$; so $m = n$.
+>
+> *Charts.* For two charts $(U_1, \varphi_1)$ and $(U_2, \varphi_2)$ at $p$ with targets $\mathbb{R}^m$ and $\mathbb{R}^n$, apply this to the transition map $\varphi_2 \circ \varphi_1^{-1} : \varphi_1(U_1 \cap U_2) \to \varphi_2(U_1 \cap U_2)$, a diffeomorphism between nonempty open sets: the two sets are open because $U_1 \cap U_2$ is open and the charts are homeomorphisms onto open sets, nonempty because they contain $\varphi_1(p)$ and $\varphi_2(p)$, and the transition map is a bijection which is smooth with smooth inverse $\varphi_1 \circ \varphi_2^{-1}$ because the two charts are compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]).
 ^pf-29-9
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]]
 
 > [!remark]- Connections
 > - The topological statement, true but hard: [[§2 Topological Manifolds#^thm-2-1|Topological Invariance of Dimension, §2.1]].

@@ -11,11 +11,17 @@ tags: [differentiable-manifolds, hub]
 - [[§45 The Tangent Bundle#^prop-45-2|Proposition §45.2: The Smooth Atlas of TM]], in [[§45 The Tangent Bundle]]
 
 ## Its proof uses
+- [[§2 Topological Manifolds#^prop-2-11|Proposition §2.11: Transition Functions Are Homeomorphisms]]
+- [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
 - [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
+- [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2: The Abstract Tangent Space]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Definition §29.2: Coordinate Derivations]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5: Basis Theorem]]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
+- [[§45 The Tangent Bundle#^prop-45-1|Proposition §45.1: The Topology of TM]]
 - [[§45 The Tangent Bundle#^def-45-4|Definition §45.4: Local Trivializations of TM]]
+- [[§45 The Tangent Bundle#^def-45-5|Definition §45.5: Charts of TM]]
 
 ## Its proof uses (other subjects)
 - [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84 Change-of-basis formula]]

@@ -34,8 +34,39 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-41-1
 
 > [!proof]+ Proof
-> *(Not proved in the submitted solution, where the problem stated it; filled in.)* Both sides of $\overline{pq} = \bar q \bar p$ are real-bilinear in $(p, q)$, so it suffices to check basis elements, where it reads, for instance, $\overline{ij} = \bar k = -k$ and $\bar j \bar i = (-j)(-i) = ji = -k$. Expanding $q \bar q$, the cross terms cancel in pairs ($x_1 x_2 (-ij - ji) = 0$, and so on) and the squares give $x_0^2 + x_1^2 + x_2^2 + x_3^2$. Then $|pq|^2 = pq\, \overline{pq} = p\, q \bar q\, \bar p = |q|^2 p \bar p = |p|^2 |q|^2$, using that the real number $|q|^2$ commutes with everything. The rest follows.
-
+> *(Not proved in the submitted solution, where the problem stated it; filled in.)* Write $e_0 = 1$, $e_1 = i$, $e_2 = j$, $e_3 = k$, so $q = \sum_a x_a e_a$. Two elementary facts are used throughout: multiplication is $\mathbb{R}$-bilinear and associative, with $1$ as identity (Definition [[§41 The Unit Quaternions and SU(2)#^def-41-1|§41.1]]); and a real number $r = r e_0$ commutes with every quaternion, since by bilinearity $r q = r(1 \cdot q) = q\,(r \cdot 1) = q r$. Conjugation $q \mapsto \bar q$ is $\mathbb{R}$-linear (it changes the signs of $x_1, x_2, x_3$).
+>
+> *$\overline{pq} = \bar q\, \bar p$.* Both sides are real-bilinear in $(p, q)$: the left side is a bilinear map followed by the linear conjugation, the right side a bilinear map applied to linear functions of $q$ and $p$. So if the identity holds for all pairs of basis elements, then for $p = \sum_a y_a e_a$ and $q = \sum_b x_b e_b$,
+>
+> $$
+> \overline{pq} = \sum_{a,b} y_a x_b\, \overline{e_a e_b} = \sum_{a,b} y_a x_b\, \bar e_b\, \bar e_a = \Big(\sum_b x_b \bar e_b\Big)\Big(\sum_a y_a \bar e_a\Big) = \bar q\, \bar p .
+> $$
+>
+> It remains to check basis elements. If $e_a = 1$ or $e_b = 1$, both sides equal the conjugate of the other factor, since $\bar 1 = 1$. If $e_a = e_b = u \in \{i, j, k\}$, then $\overline{u u} = \overline{-1} = -1$ and $\bar u \bar u = (-u)(-u) = u^2 = -1$. If $u, v \in \{i, j, k\}$ are distinct, then $uv = -vu$ is $\pm$ the third unit, a pure imaginary quaternion, so $\overline{uv} = -uv$, while $\bar v \bar u = (-v)(-u) = vu = -uv$. For instance $\overline{ij} = \bar k = -k$ and $\bar j \bar i = (-j)(-i) = ji = -k$.
+>
+> *$q \bar q = \bar q q = |q|^2$.* Write $q = x_0 + v$ with $v = x_1 i + x_2 j + x_3 k$, so $\bar q = x_0 - v$. Since $x_0$ is real it commutes with $v$, and
+>
+> $$
+> q \bar q = (x_0 + v)(x_0 - v) = x_0^2 - x_0 v + v x_0 - v^2 = x_0^2 - v^2, \qquad \bar q q = (x_0 - v)(x_0 + v) = x_0^2 - v^2 .
+> $$
+>
+> Expanding $v^2$ by bilinearity, the cross terms cancel in pairs, because $e_a e_b + e_b e_a = 0$ for distinct $a, b \in \{1, 2, 3\}$ (for instance $x_1 x_2 (ij + ji) = 0$), and the squares give $e_a^2 = -1$:
+>
+> $$
+> v^2 = \sum_{a=1}^3 x_a^2\, e_a^2 + \sum_{1 \le a < b \le 3} x_a x_b\, (e_a e_b + e_b e_a) = -(x_1^2 + x_2^2 + x_3^2) .
+> $$
+>
+> Hence $q \bar q = \bar q q = x_0^2 + x_1^2 + x_2^2 + x_3^2 = |q|^2$.
+>
+> *$|pq| = |p|\,|q|$.* Using the previous step for $pq$, then $\overline{pq} = \bar q \bar p$, associativity, the previous step for $q$, that the real number $|q|^2$ commutes with everything, and the previous step for $p$:
+>
+> $$
+> |pq|^2 = (pq)\, \overline{pq} = p\, q \bar q\, \bar p = p\, |q|^2\, \bar p = |q|^2\, p \bar p = |p|^2 |q|^2 .
+> $$
+>
+> Both norms are nonnegative, so taking square roots gives $|pq| = |p|\,|q|$.
+>
+> *The rest.* If $q \neq 0$ then $|q|^2 > 0$, and by the second step $q\,(\bar q/|q|^2) = (\bar q/|q|^2)\, q = |q|^2/|q|^2 = 1$, so $q^{-1} = \bar q/|q|^2$. For $S^3$: $|1| = 1$; if $|p| = |q| = 1$ then $|pq| = |p|\,|q| = 1$; and for $|q| = 1$ the inverse is $q^{-1} = \bar q$, with $|\bar q| = |q| = 1$ since conjugation only changes signs of coordinates. Associativity is inherited from $\mathbb{H}$. So $S^3$ is a group, with $q^{-1} = \bar q$.
 ^pf-41-1
 
 *Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]
@@ -134,11 +165,30 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-41-4
 
 > [!proof]+ Proof
-> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ ([[§35 Regular Submanifolds#^thm-35-7|Theorem §35.7]]). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ ([[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]]). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
-
+> *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* Three claims: $S^3$ is a regular submanifold of dimension $3$; multiplication and inversion are smooth; and $S^3$ is connected, via the polar form.
+>
+> *Submanifold.* Let $f : \mathbb{R}^4 \to \mathbb{R}$, $f(x) = |x|^2 = x_0^2 + x_1^2 + x_2^2 + x_3^2$, so $S^3 = f^{-1}(1)$. Its Jacobian is the row $f'(x) = 2x^{\mathsf T} = (2x_0, 2x_1, 2x_2, 2x_3)$, which is nonzero for $x \in S^3$ because $x \neq 0$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] this row is the matrix of $f_{\ast x}$, so $f_{\ast x} : T_x\mathbb{R}^4 \to T_{1}\mathbb{R}$ has rank $1$ and is onto the $1$-dimensional target: $1$ is a regular value of $f$ (Definition [[§34 Submersions#^def-34-4|§34.4]]). By Theorem [[§35 Regular Submanifolds#^thm-35-7|§35.7]], $S^3$ is a regular submanifold of $\mathbb{R}^4$ of codimension $1$, so of dimension $3$.
+>
+> *Multiplication.* By bilinearity, for $p = \sum_a y_a e_a$ and $q = \sum_b x_b e_b$ (with $e_0 = 1$, $e_1 = i$, $e_2 = j$, $e_3 = k$) we have $pq = \sum_{a,b} y_a x_b\, e_a e_b$, and each $e_a e_b$ is $\pm$ one of the $e_c$ (Definition [[§41 The Unit Quaternions and SU(2)#^def-41-1|§41.1]]). So each coordinate of $pq$ is a polynomial in $y_0, \ldots, y_3, x_0, \ldots, x_3$, and $m(p, q) = pq$ is smooth $\mathbb{R}^4 \times \mathbb{R}^4 \to \mathbb{R}^4$. On $S^3 \times S^3$ the multiplication is $m \circ (\iota \circ \mathrm{pr}_1, \iota \circ \mathrm{pr}_2)$, where $\iota : S^3 \to \mathbb{R}^4$ is the inclusion, smooth by Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1), and the projections are smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]); a map into $\mathbb{R}^8$ whose components are smooth is smooth, so the multiplication is smooth into $\mathbb{R}^4$. It lands in $S^3$ by Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]] ($|pq| = |p|\,|q| = 1$), so it is smooth into $S^3$ by Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2).
+>
+> *Inversion.* On $S^3$, $q^{-1} = \bar q$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]]), so inversion is $\iota$ followed by the linear map $(x_0, x_1, x_2, x_3) \mapsto (x_0, -x_1, -x_2, -x_3)$: smooth into $\mathbb{R}^4$. It lands in $S^3$ ($|\bar q| = |q| = 1$), so it is smooth into $S^3$ by Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2).
+>
+> *The polar form.* Let $q \in S^3$, $q \neq \pm 1$, and write $q = x_0 + v$ with $v = x_1 i + x_2 j + x_3 k \in \mathbb{H}_0$. Then $v \neq 0$: otherwise $q = x_0$ is real with $|x_0| = 1$, i.e. $q = \pm 1$. Also $x_0^2 + |v|^2 = |q|^2 = 1$, so $x_0^2 = 1 - |v|^2 < 1$ and $x_0 \in (-1, 1)$. Put $\theta = \arccos x_0 \in (0, \pi)$ and $u = v/|v|$, a unit vector in $\mathbb{H}_0$. Since $\sin\theta > 0$ on $(0, \pi)$,
+>
+> $$
+> \sin\theta = \sqrt{1 - \cos^2\theta} = \sqrt{1 - x_0^2} = |v|, \qquad \text{so} \qquad \cos\theta + \sin\theta\, u = x_0 + |v|\, \frac{v}{|v|} = q .
+> $$
+>
+> *Connected.* The path $c(t) = \cos t + \sin t\, u$, $t \in [0, \theta]$, is continuous with $c(0) = 1$ and $c(\theta) = q$. It stays in $S^3$: its coordinates are $(\cos t, \sin t\, u_1, \sin t\, u_2, \sin t\, u_3)$, so
+>
+> $$
+> |c(t)|^2 = \cos^2 t + \sin^2 t\,(u_1^2 + u_2^2 + u_3^2) = \cos^2 t + \sin^2 t = 1 .
+> $$
+>
+> The point $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$, which lies in $S^3$ by the same computation with $u = i$ and ends at $\cos\pi = -1$; and $1$ is joined to itself by a constant path. So every point of $S^3$ is joined to $1$ by a path in $S^3$: $S^3$ is path-connected, hence connected.
 ^pf-41-4
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§35 Regular Submanifolds#^thm-35-7|§35.7]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§35 Regular Submanifolds#^thm-35-7|§35.7]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§34 Submersions#^def-34-4|Def. §34.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]
 
 > [!proof]+ Second proof of the submanifold claim: hyperspherical charts (the submitted solution)
 >
@@ -168,21 +218,70 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 ^prop-41-5
 
 > [!proof]+ Proof
-> *(The submitted warm-up gave the matrix in (1) and (2); the problem stated the rest, and the proof of (3) is new, using [[§38 Embeddings|§38]]; the submitted proof of (3), with adapted charts, follows.)* (1) Left multiplication by $c \in \mathbb{C}$ commutes with right multiplication by $q$ (associativity), so $R_q$ is complex-linear. Using $jc = \bar c\, j$ for $c \in \mathbb{C}$ and $j^2 = -1$,
+> *(The submitted warm-up gave the matrix in (1) and (2); the problem stated the rest, and the proof of (3) is new, using [[§38 Embeddings|§38]]; the submitted proof of (3), with adapted charts, follows.)* *The identification.* For $z = a_0 + a_1 i$ and $w = b_0 + b_1 i$ in $\mathbb{C}$, using $ij = k$,
 >
 > $$
-> (z + wj)(a + bj) = za + zbj + w\bar a\, j + w \bar b\, j^2 = (az - \bar b w) + (bz + \bar a w)\, j ,
+> z + wj = a_0 + a_1 i + b_0 j + b_1 k ,
 > $$
 >
-> which is the matrix shown. Its determinant is $|a|^2 + |b|^2 = |q|^2$; and $R_q$ preserves norms when $|q| = 1$ ([[§41 The Unit Quaternions and SU(2)#^prop-41-1|Proposition §41.1]]), and the norm of $\mathbb{H}$ is the Hermitian norm of $\mathbb{C}^2$, so the matrix is unitary. Hence it lies in $\mathrm{SU}(2)$.
+> so $(z, w) \mapsto z + wj$ is an $\mathbb{R}$-linear bijection $\mathbb{C}^2 \to \mathbb{H}$ with $|z + wj|^2 = |z|^2 + |w|^2$: the norm of $\mathbb{H}$ is the Hermitian norm of $\mathbb{C}^2$. For $c \in \mathbb{C}$, $c(z + wj) = cz + (cw)j$, so left multiplication by $c$ is the complex scalar multiplication $(z, w) \mapsto (cz, cw)$ of $\mathbb{C}^2$. We use the rule $jc = \bar c\, j$ for $c = c_0 + c_1 i \in \mathbb{C}$, which holds because $jc = c_0 j + c_1 ji = c_0 j - c_1 k$ and $\bar c j = c_0 j - c_1 ij = c_0 j - c_1 k$.
 >
-> (2) $q^{-1} = \bar q = \bar a - bj$, so (1) with $(a, b)$ replaced by $(\bar a, -b)$ gives the formula. $F$ is a homomorphism because $R_{(pq)^{-1}}(x) = x q^{-1} p^{-1} = R_{p^{-1}}(R_{q^{-1}}(x))$ — the inverse is there to make the order come out right. It is injective, since $R_{q^{-1}} = \mathrm{id}$ forces $q^{-1} = 1 \cdot q^{-1} = 1$. It is surjective: a matrix $\begin{pmatrix} \alpha & \beta \\ \gamma & \delta \end{pmatrix} \in \mathrm{SU}(2)$ has inverse $\begin{pmatrix} \delta & -\beta \\ -\gamma & \alpha \end{pmatrix}$ (determinant $1$) equal to its conjugate transpose $\begin{pmatrix} \bar\alpha & \bar\gamma \\ \bar\beta & \bar\delta \end{pmatrix}$, so $\delta = \bar\alpha$ and $\gamma = -\bar\beta$, with $|\alpha|^2 + |\beta|^2 = 1$; this is $F(a + bj)$ for $a = \bar\alpha$, $b = \bar\beta$.
+> (1) $R_q$ is $\mathbb{R}$-linear, because multiplication is bilinear. Left multiplication by $c \in \mathbb{C}$ commutes with right multiplication by $q$ (associativity): $R_q(cx) = (cx)q = c(xq) = c\,R_q(x)$. So $R_q$ is complex-linear. Using bilinearity, associativity, $jc = \bar c\, j$ for $c \in \mathbb{C}$, $j^2 = -1$, and commutativity of $\mathbb{C}$,
 >
-> (3) The formula defines an $\mathbb{R}$-linear map $L : \mathbb{R}^4 \to \operatorname{Mat}(2, \mathbb{C})$ with $F = L|_{S^3}$, and $L$ is injective (its first row determines $x$). An injective linear map is an embedding — an immersion, and a homeomorphism onto its image, with the inverse a restriction of a linear map — and so is $L|_{S^3}$, as the composite of the embeddings $S^3 \hookrightarrow \mathbb{R}^4 \xrightarrow{L} \operatorname{Mat}(2, \mathbb{C})$. Its image is $F(S^3) = \mathrm{SU}(2)$ by (2), so $\mathrm{SU}(2)$ is a regular submanifold of dimension $3$ ([[§38 Embeddings#^thm-38-1|Theorem §38.1]]) and $F$ is a diffeomorphism onto it ([[§38 Embeddings#^cor-38-3|Corollary §38.3]]).
-
+> $$
+> (z + wj)(a + bj) = za + zbj + w(ja) + w(jb)j = za + zbj + w\bar a\, j + w \bar b\, j^2 = (az - \bar b w) + (bz + \bar a w)\, j .
+> $$
+>
+> So in the coordinates $(z, w)$, $R_q(z, w) = (az - \bar b w,\ bz + \bar a w)$, which is the matrix $A = \begin{pmatrix} a & -\bar b \\ b & \bar a \end{pmatrix}$ applied to the column $(z, w)$. Its determinant is $a \bar a - (-\bar b) b = |a|^2 + |b|^2 = |q|^2$, since $q = a + bj$ has real coordinates $(\operatorname{Re} a, \operatorname{Im} a, \operatorname{Re} b, \operatorname{Im} b)$. For $|q| = 1$ the determinant is $1$. And $R_q$ preserves norms when $|q| = 1$, since $|xq| = |x|\,|q| = |x|$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]]), and the norm of $\mathbb{H}$ is the Hermitian norm of $\mathbb{C}^2$, so the matrix is unitary. Directly:
+>
+> $$
+> A^{\ast} A = \begin{pmatrix} \bar a & \bar b \\ -b & a \end{pmatrix} \begin{pmatrix} a & -\bar b \\ b & \bar a \end{pmatrix} = \begin{pmatrix} |a|^2 + |b|^2 & -\bar a \bar b + \bar b \bar a \\ -ab + ab & |b|^2 + |a|^2 \end{pmatrix} = |q|^2 I = I .
+> $$
+>
+> A unitary matrix of determinant $1$ lies in $\mathrm{SU}(2)$.
+>
+> (2) *The formula.* For $q = a + bj \in S^3$, $q^{-1} = \bar q$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]]). With $a = x_0 + x_1 i$ and $b = x_2 + x_3 i$, so $q = x_0 + x_1 i + x_2 j + x_3 k$,
+>
+> $$
+> \bar q = x_0 - x_1 i - x_2 j - x_3 k = (x_0 - x_1 i) + (-x_2 - x_3 i)\, j = \bar a - bj ,
+> $$
+>
+> so (1) with $(a, b)$ replaced by $(\bar a, -b)$ gives
+>
+> $$
+> F(q) = \begin{pmatrix} \bar a & -\overline{(-b)} \\ -b & \bar{\bar a} \end{pmatrix} = \begin{pmatrix} \bar a & \bar b \\ -b & a \end{pmatrix} = \begin{pmatrix} x_0 - x_1 i & x_2 - x_3 i \\ -x_2 - x_3 i & x_0 + x_1 i \end{pmatrix} .
+> $$
+>
+> Since $|\bar q| = |q| = 1$, (1) applied to $\bar q$ shows $F(q) \in \mathrm{SU}(2)$.
+>
+> *Homomorphism.* In the group $S^3$, $(pq)^{-1} = q^{-1} p^{-1}$, so for all $x \in \mathbb{H}$, by associativity,
+>
+> $$
+> R_{(pq)^{-1}}(x) = x\, q^{-1} p^{-1} = (x q^{-1})\, p^{-1} = R_{p^{-1}}\big(R_{q^{-1}}(x)\big) .
+> $$
+>
+> So $R_{(pq)^{-1}} = R_{p^{-1}} \circ R_{q^{-1}}$, and since the matrix of a composite of linear maps is the product of the matrices, $F(pq) = F(p)\,F(q)$ — the inverse is there to make the order come out right.
+>
+> *Injective.* If $F(q) = I$, then $R_{q^{-1}} = \mathrm{id}$, and evaluating at $1$ gives $q^{-1} = 1 \cdot q^{-1} = 1$, so $q = 1$. A homomorphism with trivial kernel is injective: $F(p) = F(q)$ gives $F(p q^{-1}) = F(p) F(q)^{-1} = I$, so $p = q$.
+>
+> *Surjective.* Let $M = \begin{pmatrix} \alpha & \beta \\ \gamma & \delta \end{pmatrix} \in \mathrm{SU}(2)$. Since $\det M = 1$, its inverse is the adjugate, $M^{-1} = \begin{pmatrix} \delta & -\beta \\ -\gamma & \alpha \end{pmatrix}$; since $M$ is unitary, $M^{-1} = M^{\ast} = \begin{pmatrix} \bar\alpha & \bar\gamma \\ \bar\beta & \bar\delta \end{pmatrix}$. Comparing the $(1,1)$ and $(1,2)$ entries gives $\delta = \bar\alpha$ and $-\beta = \bar\gamma$, i.e. $\gamma = -\bar\beta$. Then $1 = \det M = \alpha\bar\alpha - \beta(-\bar\beta) = |\alpha|^2 + |\beta|^2$. Put $a = \bar\alpha$, $b = \bar\beta$ and $q = a + bj$; then $|q|^2 = |a|^2 + |b|^2 = 1$, so $q \in S^3$, and by the formula
+>
+> $$
+> F(q) = \begin{pmatrix} \bar a & \bar b \\ -b & a \end{pmatrix} = \begin{pmatrix} \alpha & \beta \\ -\bar\beta & \bar\alpha \end{pmatrix} = \begin{pmatrix} \alpha & \beta \\ \gamma & \delta \end{pmatrix} = M .
+> $$
+>
+> So $F$ is a bijective homomorphism, a group isomorphism.
+>
+> (3) *The linear map $L$.* The formula of (2) defines a map $L : \mathbb{R}^4 \to \operatorname{Mat}(2, \mathbb{C})$ for all $x \in \mathbb{R}^4$; each entry is a real linear combination of $x_0, \ldots, x_3$, so $L$ is $\mathbb{R}$-linear, and $F = L|_{S^3} = L \circ \iota$, with $\iota : S^3 \to \mathbb{R}^4$ the inclusion. $L$ is injective, since its first row determines $x$: let $P : \operatorname{Mat}(2, \mathbb{C}) \to \mathbb{R}^4$ be the $\mathbb{R}$-linear map $P(m) = (\operatorname{Re} m_{11}, -\operatorname{Im} m_{11}, \operatorname{Re} m_{12}, -\operatorname{Im} m_{12})$; then $P \circ L = \mathrm{id}_{\mathbb{R}^4}$.
+>
+> *$L$ is an embedding.* An injective linear map is an embedding (Definition [[§38 Embeddings#^def-38-1|§38.1]]) — an immersion, and a homeomorphism onto its image, with the inverse a restriction of a linear map. In detail: $L$ is smooth, being linear, and by Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] its differential at every point is $L$ itself under the identification $v \mapsto D_v$ ($L_{\ast a}(D_v|_a) = D_{Lv}|_{La}$), which is injective; so $L$ is an immersion. As a map onto $L(\mathbb{R}^4)$ it is a continuous bijection whose inverse is the restriction of the continuous map $P$; so it is a homeomorphism onto its image.
+>
+> *$F = L \circ \iota$ is an embedding.* The inclusion $\iota$ is smooth (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)) and an immersion ($\iota_{\ast p}$ is injective, Proposition [[§35 Regular Submanifolds#^prop-35-4|§35.4]]); so by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) $(L \circ \iota)_{\ast p} = L_{\ast p} \circ \iota_{\ast p}$ is a composite of injective maps, injective. And $L \circ \iota : S^3 \to L(S^3)$ is a continuous bijection whose inverse is the restriction of $P$ to $L(S^3)$, continuous into $\mathbb{R}^4$ with values in $S^3$, hence continuous into $S^3$ with its subspace topology. So $L|_{S^3}$, the composite of the embeddings $S^3 \hookrightarrow \mathbb{R}^4 \xrightarrow{L} \operatorname{Mat}(2, \mathbb{C})$, is an embedding.
+>
+> *Conclusion.* Its image is $F(S^3) = \mathrm{SU}(2)$ by (2). By Theorem [[§38 Embeddings#^thm-38-1|§38.1]], with $m = \dim S^3 = 3$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]]) and $n = \dim_{\mathbb{R}} \operatorname{Mat}(2, \mathbb{C}) = 8$, $\mathrm{SU}(2)$ is a regular submanifold of $\operatorname{Mat}(2, \mathbb{C}) \cong \mathbb{R}^8$ of codimension $8 - 3 = 5$, i.e. of dimension $3$; and by Corollary [[§38 Embeddings#^cor-38-3|§38.3]], $F : S^3 \to \mathrm{SU}(2)$ is a diffeomorphism onto it.
 ^pf-41-5
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§38 Embeddings#^def-38-1|Def. §38.1]], [[§38 Embeddings#^thm-38-1|§38.1]], [[§38 Embeddings#^cor-38-3|§38.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^def-41-1|Def. §41.1]], [[§41 The Unit Quaternions and SU(2)#^prop-41-1|§41.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§38 Embeddings#^def-38-1|Def. §38.1]], [[§38 Embeddings#^thm-38-1|§38.1]], [[§38 Embeddings#^cor-38-3|§38.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§41 The Unit Quaternions and SU(2)#^prop-41-4|§41.4]]
 
 > [!proof]+ Second proof of (3): adapted charts (the submitted solution)
 >
@@ -264,19 +363,46 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 ^prop-41-6
 
 > [!proof]+ Proof
-> *(The submitted solution computed the $\sigma_j$ — “use curves, not coordinates”, as the problem's hint said; the identification of the tangent space is filled in; the submitted computation, with the curves obtained from a hyperspherical chart, follows.)* By the chain rule for curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3]]), $F_{\ast 1}(\gamma_j'(0)) = (F \circ \gamma_j)'(0)$, the entrywise derivative of
+> *(The submitted solution computed the $\sigma_j$ — “use curves, not coordinates”, as the problem's hint said; the identification of the tangent space is filled in; the submitted computation, with the curves obtained from a hyperspherical chart, follows.)* Three claims: the curves and their velocities; the formulas for the $\sigma_j$; and that the $\sigma_j$ form a basis of $T_I\,\mathrm{SU}(2) = \mathfrak{su}(2)$. Tangent spaces of the submanifolds $S^3 \subseteq \mathbb{R}^4$ and $\mathrm{SU}(2) \subseteq \operatorname{Mat}(2, \mathbb{C})$ are identified with their images under the differential of the inclusion (Proposition [[§35 Regular Submanifolds#^prop-35-4|§35.4]]), and tangent spaces of a vector space with the vector space (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]); in this identification the velocity of a curve in a vector space is its ordinary derivative at $t = 0$, entry by entry (Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]] in the standard coordinates).
+>
+> *The curves.* Write $u_1 = i$, $u_2 = j$, $u_3 = k$, so $\gamma_j(t) = \cos t + \sin t\, u_j$. Its coordinates are $\cos t$ in slot $0$, $\sin t$ in slot $j$, and $0$ elsewhere, so $|\gamma_j(t)|^2 = \cos^2 t + \sin^2 t = 1$: $\gamma_j$ is a smooth curve in $S^3$ (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2)), with $\gamma_j(0) = 1$. As a curve in $\mathbb{R}^4 = \mathbb{H}$ its derivative is $\gamma_j'(0) = -\sin 0 + \cos 0\, u_j = u_j$; by the curve statement of Proposition [[§35 Regular Submanifolds#^prop-35-4|§35.4]], this is its velocity in $T_1 S^3$. So the velocities are $i, j, k$.
+>
+> *The $\sigma_j$.* By the chain rule for curves (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]), $F_{\ast1}(\gamma_j'(0)) = (F \circ \gamma_j)'(0)$, and $F \circ \gamma_j$ is a curve in $\mathrm{SU}(2) \subseteq \operatorname{Mat}(2, \mathbb{C})$, so its velocity is the entrywise derivative. Substituting the coordinates of $\gamma_j(t)$ into the formula of Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]](2) — $(x_0, x_1, x_2, x_3) = (\cos t, \sin t, 0, 0)$, $(\cos t, 0, \sin t, 0)$, $(\cos t, 0, 0, \sin t)$ — and using $\cos t \mp i \sin t = e^{\mp it}$,
 >
 > $$
 > F(\gamma_1(t)) = \begin{pmatrix} e^{-it} & 0 \\ 0 & e^{it} \end{pmatrix}, \quad
 > F(\gamma_2(t)) = \begin{pmatrix} \cos t & \sin t \\ -\sin t & \cos t \end{pmatrix}, \quad
-> F(\gamma_3(t)) = \begin{pmatrix} \cos t & -i\sin t \\ -i\sin t & \cos t \end{pmatrix}
+> F(\gamma_3(t)) = \begin{pmatrix} \cos t & -i\sin t \\ -i\sin t & \cos t \end{pmatrix} .
 > $$
 >
-> at $t = 0$. The three matrices are linearly independent (compare the $(1,1)$, $(1,2)$ and $(2,1)$ entries), and $T_I\,\mathrm{SU}(2)$ has dimension $3$ ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8]]), so they are a basis. Each lies in $\mathfrak{su}(2)$, which has real dimension $3$: a skew-Hermitian $2 \times 2$ matrix has imaginary diagonal and $x_{21} = -\bar x_{12}$, four real parameters, and $\operatorname{tr} X = 0$ removes one. So $T_I\,\mathrm{SU}(2) = \operatorname{Span}\{\sigma_j\} = \mathfrak{su}(2)$.
-
+> Differentiating entrywise at $t = 0$, with $\frac{d}{dt} e^{\mp it}|_0 = \mp i$, $\frac{d}{dt}\cos t|_0 = 0$ and $\frac{d}{dt}\sin t|_0 = 1$, gives the three matrices $\sigma_1, \sigma_2, \sigma_3$ of the statement.
+>
+> *Linearly independent.* If $a\sigma_1 + b\sigma_2 + c\sigma_3 = 0$ with $a, b, c \in \mathbb{R}$, then
+>
+> $$
+> a\sigma_1 + b\sigma_2 + c\sigma_3 = \begin{pmatrix} -ai & b - ci \\ -b - ci & ai \end{pmatrix} = 0 ;
+> $$
+>
+> the $(1,1)$ entry gives $a = 0$, and the real and imaginary parts of the $(1,2)$ entry give $b = 0$ and $c = 0$. (The $(2,1)$ entry gives the same.) $\mathrm{SU}(2)$ is a manifold of dimension $3$ (Proposition [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]](3)), so $T_I\,\mathrm{SU}(2)$ has dimension $3$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and three linearly independent vectors in it are a basis.
+>
+> *Each $\sigma_j$ lies in $\mathfrak{su}(2)$.* Conjugate-transposing,
+>
+> $$
+> \sigma_1^{\ast} = \begin{pmatrix} i & 0 \\ 0 & -i \end{pmatrix} = -\sigma_1, \qquad \sigma_2^{\ast} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = -\sigma_2, \qquad \sigma_3^{\ast} = \begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix} = -\sigma_3 ,
+> $$
+>
+> and each has trace $0$.
+>
+> *$\mathfrak{su}(2)$ has real dimension $3$.* It is a real vector space, since both conditions are real-linear in $X$. If $X^{\ast} = -X$, the diagonal entries satisfy $\bar x_{kk} = -x_{kk}$, so they are imaginary, $x_{11} = i s$ and $x_{22} = i s'$ with $s, s' \in \mathbb{R}$; and the off-diagonal entries satisfy $x_{21} = -\bar x_{12}$. So a skew-Hermitian $2 \times 2$ matrix has four real parameters $s, s', \operatorname{Re} x_{12}, \operatorname{Im} x_{12}$, and $\operatorname{tr} X = i(s + s') = 0$ removes one, $s' = -s$:
+>
+> $$
+> \mathfrak{su}(2) = \Big\{ \begin{pmatrix} is & w \\ -\bar w & -is \end{pmatrix} : s \in \mathbb{R},\ w \in \mathbb{C} \Big\}, \qquad \dim_{\mathbb{R}} \mathfrak{su}(2) = 3 .
+> $$
+>
+> *Conclusion.* $T_I\,\mathrm{SU}(2) = \operatorname{Span}\{\sigma_j\}$ is a $3$-dimensional subspace of the $3$-dimensional space $\mathfrak{su}(2)$, so the two are equal: $T_I\,\mathrm{SU}(2) = \operatorname{Span}\{\sigma_j\} = \mathfrak{su}(2)$.
 ^pf-41-6
 
-*Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]]
+*Uses:* [[§41 The Unit Quaternions and SU(2)#^prop-41-5|§41.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]]
 
 > [!proof]+ Second proof of the formulas for the $\sigma_j$: curves from a hyperspherical chart (the submitted solution)
 >

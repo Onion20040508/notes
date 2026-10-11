@@ -47,14 +47,36 @@ tags: [differentiable-manifolds, math591]
 ^def-28-2
 
 > [!proof]+ Verification that $T_pM$ is a vector space
-> $D + D'$ and $\lambda D$ are linear, being pointwise combinations of linear maps, and each satisfies the Leibniz rule because the rule is linear in $D$: for instance
+> What has to be shown. The set of *all* maps $C_p^\infty(M) \to \mathbb{R}$ is a real vector space under the pointwise operations $(D + D')[f] = D[f] + D'[f]$ and $(\lambda D)[f] = \lambda\, D[f]$: each vector space axiom is an identity between values at a germ $[f]$, and it holds there because it holds in $\mathbb{R}$. $T_pM$ is a subset of this space, so it is a vector space under the same operations as soon as it contains the zero map and is closed under sums and scalar multiples, i.e. as soon as $D + D'$ and $\lambda D$ are again derivations whenever $D$ and $D'$ are (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]). $D + D'$ and $\lambda D$ are linear, being pointwise combinations of linear maps, and each satisfies the Leibniz rule because the rule is linear in $D$. In detail, fix germs $[f], [g] \in C_p^\infty(M)$ and numbers $a, b \in \mathbb{R}$.
+>
+> *Zero.* The zero map is linear, and it satisfies the Leibniz rule since $0 = f(p) \cdot 0 + g(p) \cdot 0$.
+>
+> *The sum is linear.* By the definition of $D + D'$, then the linearity of $D$ and of $D'$, then the definition of $D + D'$ again:
 >
 > $$
-> (D+D')([f][g]) = f(p)D[g] + g(p)D[f] + f(p)D'[g] + g(p)D'[f] = f(p)(D+D')[g] + g(p)(D+D')[f].
+> (D+D')\big(a[f] + b[g]\big) = D\big(a[f] + b[g]\big) + D'\big(a[f] + b[g]\big) = a\,D[f] + b\,D[g] + a\,D'[f] + b\,D'[g] = a\,(D+D')[f] + b\,(D+D')[g] .
 > $$
 >
-> The zero map is a derivation, and the vector space axioms hold pointwise.
-
+> *The sum satisfies the Leibniz rule.* By the definition of $D + D'$, the Leibniz rules of $D$ and of $D'$ separately, regrouping the four terms, and the definition of $D + D'$ again:
+>
+> $$
+> \begin{aligned}
+> (D+D')([f][g]) &= D([f][g]) + D'([f][g]) = f(p)D[g] + g(p)D[f] + f(p)D'[g] + g(p)D'[f] \\
+> &= f(p)\big(D[g] + D'[g]\big) + g(p)\big(D[f] + D'[f]\big) = f(p)(D+D')[g] + g(p)(D+D')[f].
+> \end{aligned}
+> $$
+>
+> *The scalar multiple.* By the definition of $\lambda D$ and the linearity, resp. the Leibniz rule, of $D$:
+>
+> $$
+> (\lambda D)\big(a[f] + b[g]\big) = \lambda\big(a\,D[f] + b\,D[g]\big) = a\,(\lambda D)[f] + b\,(\lambda D)[g],
+> $$
+>
+> $$
+> (\lambda D)([f][g]) = \lambda\big(f(p)D[g] + g(p)D[f]\big) = f(p)\,(\lambda D)[g] + g(p)\,(\lambda D)[f].
+> $$
+>
+> So $T_pM$ is a linear subspace of the space of all maps $C_p^\infty(M) \to \mathbb{R}$, and the vector space axioms hold in it pointwise.
 ^pf-def-28-2
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]
@@ -89,11 +111,20 @@ tags: [differentiable-manifolds, math591]
 ^lem-28-1
 
 > [!proof]+ Proof
-> $I_p$ is the kernel of the algebra homomorphism of evaluation (Proposition [[§27 Germs#^prop-27-2|§27.2]]), hence a linear subspace and an ideal: $[g][f] \in I_p$ whenever $[f] \in I_p$, since $g(p)f(p) = 0$. $I_p^2$ is closed under sums by construction and under scalars since $c\,[u][w] = [cu][w]$ with $[cu] \in I_p$; and each product $[u][w]$ lies in $I_p$, since $u(p)w(p) = 0$.
-
+> Three things are claimed: $I_p$ is a linear subspace and an ideal; $I_p^2$ is a linear subspace; and $I_p^2 \subseteq I_p$. Throughout, evaluation $[f] \mapsto f(p)$ is an algebra homomorphism $C_p^\infty(M) \to \mathbb{R}$ (Proposition [[§27 Germs#^prop-27-2|§27.2]], Definition [[§27 Germs#^def-27-3|§27.3]]), so the value at $p$ of a sum, scalar multiple or product of germs is the sum, scalar multiple or product of the values.
+>
+> *$I_p$.* $I_p$ is the kernel of the algebra homomorphism of evaluation (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-3|§28.3]]), hence a linear subspace and an ideal. Explicitly: if $[f], [g] \in I_p$ and $a, b \in \mathbb{R}$, then $(a[f] + b[g])(p) = a\,f(p) + b\,g(p) = a \cdot 0 + b \cdot 0 = 0$, so $a[f] + b[g] \in I_p$; and $[g][f] \in I_p$ whenever $[f] \in I_p$ and $[g] \in C_p^\infty(M)$ is arbitrary, since $([g][f])(p) = g(p)f(p) = g(p) \cdot 0 = 0$.
+>
+> *$I_p^2$ is a subspace.* It contains $0$, the empty sum (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-4|§28.4]]). It is closed under sums by construction: the sum of two finite sums of products $[u][w]$ with $[u], [w] \in I_p$ is again such a finite sum. It is closed under scalars since $c\,[u][w] = [cu][w]$ (the algebra axioms of Proposition [[§27 Germs#^prop-27-2|§27.2]]) with $[cu] \in I_p$, because $(cu)(p) = c \cdot 0 = 0$; so
+>
+> $$
+> c \sum_k [u_k][w_k] = \sum_k [cu_k][w_k] \in I_p^2 .
+> $$
+>
+> *$I_p^2 \subseteq I_p$.* Each product $[u][w]$ with $[u], [w] \in I_p$ lies in $I_p$, since $u(p)w(p) = 0 \cdot 0 = 0$; and $I_p$ is closed under finite sums, being a subspace. So every element $\sum_k [u_k][w_k]$ of $I_p^2$ lies in $I_p$.
 ^pf-28-1
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]]
 
 > [!theorem] Lemma §28.2: First Properties of Derivations
 > Let $D$ be a derivation at $p$, and $I_p$, $I_p^2$ as in Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-3|§28.3]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-4|§28.4]].
@@ -105,19 +136,30 @@ tags: [differentiable-manifolds, math591]
 ^lem-28-2
 
 > [!proof]+ Proof
-> (1) The germ of the constant $1$ satisfies $[\underline 1] = [\underline 1][\underline 1]$, so by the Leibniz rule
+> (1) The constant function $1$ satisfies $1 \cdot 1 = 1$, so its germ satisfies $[\underline 1] = [\underline 1][\underline 1]$ (products of germs are taken on representatives, Proposition [[§27 Germs#^prop-27-2|§27.2]]), and its value at $p$ is $1$. By the Leibniz rule (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]) with $[f] = [g] = [\underline 1]$,
 >
 > $$
 > D[\underline 1] = D\big([\underline 1][\underline 1]\big) = 1 \cdot D[\underline 1] + 1 \cdot D[\underline 1] = 2\, D[\underline 1],
 > $$
 >
-> whence $D[\underline 1] = 0$. For general $c$, linearity gives $D[\underline c] = c\, D[\underline 1] = 0$.
+> whence, subtracting $D[\underline 1]$ from both sides, $D[\underline 1] = 0$. For general $c$, the constant germ is the scalar multiple $[\underline c] = c\,[\underline 1]$, and linearity gives $D[\underline c] = c\, D[\underline 1] = c \cdot 0 = 0$.
 >
-> (2) Immediate from the Leibniz rule: $D([f][g]) = f(p)D[g] + g(p)D[f] = 0 + 0 = 0$. A general element of $I_p^2$ is a finite sum of such products, and $D$ is linear.
-
+> For the consequence, let $[f]$ be any germ. As germs, $[f] = \big[f - \underline{f(p)}\big] + \big[\underline{f(p)}\big]$, and $\big[f - \underline{f(p)}\big] \in I_p$, since its value at $p$ is $f(p) - f(p) = 0$. By linearity and the first part,
+>
+> $$
+> D[f] = D\big[f - \underline{f(p)}\big] + D\big[\underline{f(p)}\big] = D\big[f - \underline{f(p)}\big] + 0 .
+> $$
+>
+> So if two derivations agree on $I_p$, they agree on every germ: $D$ is determined by its values on $I_p$.
+>
+> (2) Immediate from the Leibniz rule: if $[f], [g] \in I_p$ then $f(p) = g(p) = 0$, so $D([f][g]) = f(p)D[g] + g(p)D[f] = 0 \cdot D[g] + 0 \cdot D[f] = 0$. A general element of $I_p^2$ is a finite sum $\sum_k [u_k][w_k]$ of such products (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-4|§28.4]]), and $D$ is linear, so
+>
+> $$
+> D\Big(\sum_k [u_k][w_k]\Big) = \sum_k D\big([u_k][w_k]\big) = \sum_k 0 = 0 .
+> $$
 ^pf-28-2
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]]
 
 Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is “a very simple consequence of the product rule” and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$, the notation used in the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] at the end of [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]].
 
@@ -134,8 +176,31 @@ Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is �
 ^prop-28-3
 
 > [!proof]+ Proof, granting smooth bump functions
-> Taking germs is an algebra homomorphism $C^\infty(M) \to C_p^\infty(M)$ compatible with evaluation at $p$, so $v_D$ is a derivation, and $D \mapsto v_D$ is linear. Both remaining steps use a *bump function*: for an open $U \ni p$, a smooth $\psi : M \to [0,1]$ supported in $U$ with $\psi \equiv 1$ near $p$ (Lee, Proposition 2.25; these notes do not construct one). *Injective:* every germ $[f]$, with $f$ defined on $U$, has the global representative $\psi f$, extended by zero; so if $v_D = 0$ then $D[f] = v_D(\psi f) = 0$ for every germ. *Surjective:* given Lee's $v$, set $D[f] = v(\tilde f)$ for any global $\tilde f$ representing $[f]$. This is well defined because $v$ is local — if $\tilde f = \tilde g$ near $p$ then $v\tilde f = v\tilde g$ (Lee, Proposition 3.8, whose proof uses a bump function) — it is a derivation on germs, and $v_D = v$.
-
+> Three things are to be shown: each $v_D$ is a derivation of $C^\infty(M)$ at $p$; $D \mapsto v_D$ is linear; and it is bijective.
+>
+> *$v_D$ is a derivation, and $D \mapsto v_D$ is linear.* Taking germs, $f \mapsto [f]$ (the class of the pair $(f, M)$), is an algebra homomorphism $C^\infty(M) \to C_p^\infty(M)$ compatible with evaluation at $p$: by the definition of the germ operations (Proposition [[§27 Germs#^prop-27-2|§27.2]]), with $W = M$, $[af + bg] = a[f] + b[g]$ and $[fg] = [f][g]$, and $[f](p) = f(p)$. Hence, for $f, g \in C^\infty(M)$ and $a, b \in \mathbb{R}$, by the linearity and the Leibniz rule of $D$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]),
+>
+> $$
+> v_D(af + bg) = D\big(a[f] + b[g]\big) = a\,v_D(f) + b\,v_D(g), \qquad v_D(fg) = D\big([f][g]\big) = f(p)\,v_D(g) + g(p)\,v_D(f),
+> $$
+>
+> so $v_D$ is a derivation in Lee's sense. And for $D, E \in T_pM$, by the pointwise operations of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]], $v_{aD + bE}(f) = (aD + bE)[f] = a\,D[f] + b\,E[f] = a\,v_D(f) + b\,v_E(f)$ for every $f$, so $v_{aD + bE} = a\,v_D + b\,v_E$.
+>
+> Both remaining steps use a *bump function*: for an open $U \ni p$, a smooth $\psi : M \to [0,1]$ supported in $U$ with $\psi \equiv 1$ near $p$ (Lee, Proposition 2.25; these notes do not construct one).
+>
+> *Injective.* Every germ $[f]$, with $f$ defined on $U$, has the global representative $\psi f$, extended by zero. (It is smooth: on $U$ it is the product of smooth functions, on the open set $M \setminus \operatorname{supp}\psi$ it is $0$, and these two open sets cover $M$. It equals $f$ on the open set near $p$ where $\psi \equiv 1$, so $[\psi f] = [f]$.) So if $v_D = 0$ then $D[f] = D[\psi f] = v_D(\psi f) = 0$ for every germ, i.e. $D = 0$; a linear map with zero kernel is injective.
+>
+> *Surjective.* Given Lee's $v$, set $D[f] = v(\tilde f)$ for any global $\tilde f$ representing $[f]$; one exists by the previous paragraph. This is well defined because $v$ is local — if $\tilde f = \tilde g$ near $p$ then $v\tilde f = v\tilde g$ (Lee, Proposition 3.8, whose proof uses a bump function) — and two global representatives of the same germ agree near $p$. It is a derivation on germs: if $\tilde f$ and $\tilde g$ represent $[f]$ and $[g]$, then $a\tilde f + b\tilde g$ and $\tilde f \tilde g$ represent $a[f] + b[g]$ and $[f][g]$, so
+>
+> $$
+> D\big(a[f] + b[g]\big) = v(a\tilde f + b\tilde g) = a\,v(\tilde f) + b\,v(\tilde g) = a\,D[f] + b\,D[g],
+> $$
+>
+> $$
+> D\big([f][g]\big) = v(\tilde f\tilde g) = \tilde f(p)\, v(\tilde g) + \tilde g(p)\, v(\tilde f) = f(p)\, D[g] + g(p)\, D[f],
+> $$
+>
+> using $\tilde f(p) = f(p)$ and $\tilde g(p) = g(p)$. Finally $v_D = v$: a global $f$ is itself a global representative of its germ, so $v_D(f) = D[f] = v(f)$.
 ^pf-28-3
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§27 Germs#^prop-27-2|§27.2]]
@@ -177,13 +242,20 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 > [!proof]+ Proof
 > *Well defined.* For a representative $(g, V)$, the set $F^{-1}(V)$ is open and contains $p$ because $F$ is continuous, and $g \circ F$ is smooth there by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]. If $(g, V)$ and $(g', V')$ represent the same germ at $F(p)$, then $g = g'$ on some open $W$ with $F(p) \in W \subseteq V \cap V'$; so $g \circ F = g' \circ F$ on the open set $F^{-1}(W) \ni p$, and the two pulled-back germs at $p$ are equal.
 >
-> *Algebra homomorphism.* Composition with $F$ respects the pointwise operations: $(g + h)\circ F = g \circ F + h \circ F$, $(gh) \circ F = (g\circ F)(h \circ F)$, $(\lambda g)\circ F = \lambda (g \circ F)$, and $1 \circ F = 1$.
+> *Algebra homomorphism.* Composition with $F$ respects the pointwise operations: $(g + h)\circ F = g \circ F + h \circ F$, $(gh) \circ F = (g\circ F)(h \circ F)$, $(\lambda g)\circ F = \lambda (g \circ F)$, and $1 \circ F = 1$, since each side takes the same value at every point $q$ (for instance $((g+h) \circ F)(q) = g(F(q)) + h(F(q))$). To pass to germs, let $(g, V)$ and $(h, V')$ represent $[g]$ and $[h]$, and let $W$ be open with $F(p) \in W \subseteq V \cap V'$, so that $[g] + [h] = [g|_W + h|_W]$ (Proposition [[§27 Germs#^prop-27-2|§27.2]]). The set $F^{-1}(W)$ is open, contains $p$, and lies in the domains of $g \circ F$ and $h \circ F$, so by the definition of the sum of germs at $p$,
 >
-> *Evaluation.* $(g \circ F)(p) = g(F(p))$ by definition of composition.
-
+> $$
+> F_p^{\ast}\big([g] + [h]\big) = \big[(g|_W + h|_W) \circ F\big] = \big[(g \circ F)|_{F^{-1}(W)} + (h \circ F)|_{F^{-1}(W)}\big] = [g \circ F] + [h \circ F] = F_p^{\ast}[g] + F_p^{\ast}[h] .
+> $$
+>
+> The same chain with every $+$ replaced by a product gives $F_p^{\ast}([g][h]) = F_p^{\ast}[g]\, F_p^{\ast}[h]$. For scalars, $F_p^{\ast}(\lambda[g]) = [(\lambda g) \circ F] = [\lambda (g \circ F)] = \lambda\, F_p^{\ast}[g]$, and for the unit, $F_p^{\ast}[1] = [1 \circ F] = [1]$.
+>
+> *Evaluation.* $(g \circ F)(p) = g(F(p))$ by definition of composition; this is the displayed formula, since the value of the germ $F_p^{\ast}[g] = [g \circ F]$ at $p$ is $(g \circ F)(p)$ (Definition [[§27 Germs#^def-27-3|§27.3]]).
+>
+> *In particular.* If $[g] \in I_{F(p)}$, i.e. $g(F(p)) = 0$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-3|§28.3]]), then by the evaluation formula $(F_p^{\ast}[g])(p) = g(F(p)) = 0$, so $F_p^{\ast}[g] \in I_p$.
 ^pf-28-4
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§27 Germs#^def-27-3|Def. §27.3]]
 
 > [!definition] Definition §28.6: Pushforward — the Differential
 > Let $F : M \to N$ be smooth and $p \in M$, and let $D \in T_pM$ be a tangent vector at $p$ — that is, a derivation at $p$, a linear map $D : C^\infty_p(M) \to \mathbb{R}$ satisfying the Leibniz rule. The **pushforward** of $D$ along $F$ is the map
@@ -221,22 +293,37 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 ^prop-28-5
 
 > [!proof]+ Proof
-> $F_{*p}D = D \circ F_p^*$ is linear, as a composite of linear maps. For the Leibniz rule, let $[g],[h] \in C^\infty_{F(p)}(N)$. Then
+> Two claims: for fixed $D$, the map $F_{\ast p}D : C^\infty_{F(p)}(N) \to \mathbb{R}$ is a derivation at $F(p)$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), i.e. linear and satisfying the Leibniz rule with the values at $F(p)$; and $D \mapsto F_{\ast p}D$ is linear.
+>
+> *$F_{\ast p}D$ is linear.* $F_{\ast p}D = D \circ F_p^{\ast}$ is linear, as a composite of linear maps: $F_p^{\ast}$ is linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], and $D$ is linear. Explicitly, for germs $[g], [h]$ at $F(p)$ and $a, b \in \mathbb{R}$, by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]], the linearity of $F_p^{\ast}$, the linearity of $D$, and Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] again,
+>
+> $$
+> \big(F_{\ast p}D\big)\big(a[g] + b[h]\big) = D\big(F_p^{\ast}(a[g] + b[h])\big) = D\big(a\,F_p^{\ast}[g] + b\,F_p^{\ast}[h]\big) = a\,D\big(F_p^{\ast}[g]\big) + b\,D\big(F_p^{\ast}[h]\big) = a\,\big(F_{\ast p}D\big)[g] + b\,\big(F_{\ast p}D\big)[h] .
+> $$
+>
+> *Leibniz rule.* Let $[g],[h] \in C^\infty_{F(p)}(N)$. Then
 >
 > $$
 > \begin{aligned}
-> \big(F_{*p}D\big)\big([g][h]\big)
-> &= D\big(F_p^*[g]\cdot F_p^*[h]\big) \\
-> &= \big(F_p^*[g]\big)(p)\, D\big(F_p^*[h]\big) + \big(F_p^*[h]\big)(p)\, D\big(F_p^*[g]\big) \\
-> &= g(F(p))\,\big(F_{*p}D\big)[h] + h(F(p))\,\big(F_{*p}D\big)[g],
+> \big(F_{\ast p}D\big)\big([g][h]\big)
+> &= D\big(F_p^{\ast}([g][h])\big) = D\big(F_p^{\ast}[g]\cdot F_p^{\ast}[h]\big) \\
+> &= \big(F_p^{\ast}[g]\big)(p)\, D\big(F_p^{\ast}[h]\big) + \big(F_p^{\ast}[h]\big)(p)\, D\big(F_p^{\ast}[g]\big) \\
+> &= g(F(p))\,\big(F_{\ast p}D\big)[h] + h(F(p))\,\big(F_{\ast p}D\big)[g],
 > \end{aligned}
 > $$
 >
-> using, in turn, that $F_p^*$ is multiplicative, the Leibniz rule for $D$ at $p$, and compatibility with evaluation. So $F_{*p}D$ is a derivation at $F(p)$. Linearity in $D$ holds because $(D + \lambda D')\circ F_p^* = D \circ F_p^* + \lambda\, D' \circ F_p^*$.
-
+> using, in turn, Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]], that $F_p^{\ast}$ is multiplicative, the Leibniz rule for $D$ at $p$ applied to the two germs $F_p^{\ast}[g], F_p^{\ast}[h] \in C^\infty_p(M)$, and compatibility with evaluation, $(F_p^{\ast}[g])(p) = g(F(p))$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]]), together with Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] once more. So $F_{\ast p}D$ is a derivation at $F(p)$.
+>
+> *Linearity in $D$.* Linearity in $D$ holds because $(D + \lambda D')\circ F_p^{\ast} = D \circ F_p^{\ast} + \lambda\, D' \circ F_p^{\ast}$: for every germ $[g]$ at $F(p)$, by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] and the pointwise operations on derivations (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]),
+>
+> $$
+> \big(F_{\ast p}(D + \lambda D')\big)[g] = (D + \lambda D')\big(F_p^{\ast}[g]\big) = D\big(F_p^{\ast}[g]\big) + \lambda\, D'\big(F_p^{\ast}[g]\big) = \big(F_{\ast p}D + \lambda\, F_{\ast p}D'\big)[g] .
+> $$
+>
+> The two derivations agree on every germ, so $F_{\ast p}(D + \lambda D') = F_{\ast p}D + \lambda\, F_{\ast p}D'$.
 ^pf-28-5
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 Every object of this section, with what it is and where it lives. The rows go in order of the diagram above: germs travel backwards, from $N$ to $M$, and derivations forwards, from $M$ to $N$.
 
@@ -266,17 +353,26 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^thm-28-6
 
 > [!proof]+ Proof
-> *(Lecture 10: “the proof of the chain rule is one line” — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise, “use this to conclude the proof”; it is filled in.)* Pullback reverses composition: $(G\circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$, since $g \circ (G \circ F) = (g \circ G) \circ F$. Hence for $D \in T_pM$ and a germ $[g]$ at $G(F(p))$,
+> *(Lecture 10: “the proof of the chain rule is one line” — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise, “use this to conclude the proof”; it is filled in.)* $G \circ F$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), so $(G \circ F)_{\ast p}$ is defined. Two linear maps $T_pM \to T_{G(F(p))}P$ are equal if they agree at every $D$, and two derivations at $G(F(p))$ are equal if they agree at every germ; so fix $D \in T_pM$ and a germ $[g]$ at $G(F(p))$.
+>
+> *Pullback reverses composition:* $(G\circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$, since $g \circ (G \circ F) = (g \circ G) \circ F$. Indeed, by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] applied three times (to $G \circ F$ at $p$, to $F$ at $p$, and to $G$ at $F(p)$),
 >
 > $$
-> \big((G\circ F)_{*p}D\big)[g] = D\big(F_p^*\, G_{F(p)}^*[g]\big) = \big(F_{*p}D\big)\big(G_{F(p)}^*[g]\big) = \big(G_{*F(p)}\,F_{*p}D\big)[g].
+> (G\circ F)_p^{\ast}[g] = \big[g \circ (G \circ F)\big] = \big[(g \circ G) \circ F\big] = F_p^{\ast}[g \circ G] = F_p^{\ast}\big(G_{F(p)}^{\ast}[g]\big).
 > $$
 >
-> The identity pulls back every germ to itself, so it pushes every derivation to itself.
-
+> *Dualization.* Hence
+>
+> $$
+> \big((G\circ F)_{\ast p}D\big)[g] = D\big((G\circ F)_p^{\ast}[g]\big) = D\big(F_p^{\ast}\, G_{F(p)}^{\ast}[g]\big) = \big(F_{\ast p}D\big)\big(G_{F(p)}^{\ast}[g]\big) = \big(G_{\ast F(p)}\,F_{\ast p}D\big)[g].
+> $$
+>
+> The first equality is Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] for $G \circ F$ at $p$; the second is the reversal just shown; the third is Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] for $F$ at $p$, applied to the germ $G_{F(p)}^{\ast}[g]$ at $F(p)$; the fourth is Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] for $G$ at $F(p)$, applied to the derivation $F_{\ast p}D \in T_{F(p)}N$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]).
+>
+> *Identity.* The identity pulls back every germ to itself, $(\mathrm{id}_M)_p^{\ast}[f] = [f \circ \mathrm{id}_M] = [f]$, so it pushes every derivation to itself: $\big((\mathrm{id}_M)_{\ast p}D\big)[f] = D\big((\mathrm{id}_M)_p^{\ast}[f]\big) = D[f]$ for every germ $[f]$ at $p$, i.e. $(\mathrm{id}_M)_{\ast p}D = D$.
 ^pf-28-6
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 ![[m591-12-5.svg]]
 *The upper row is the composite of maps; the lower row says its differential is the composite of the differentials. In coordinates (Corollary [[§30 The Differential in Coordinates#^cor-30-3|§30.3]]) it becomes the multiplication of Jacobian matrices — the chain rule of calculus, now as a statement about manifolds.*
@@ -295,8 +391,14 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^cor-28-7
 
 > [!proof]+ Proof
-> Apply Proposition [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]] to $\Phi^{-1} \circ \Phi = \mathrm{id}_M$ and $\Phi \circ \Phi^{-1} = \mathrm{id}_N$.
-
+> Since $\Phi$ is a diffeomorphism, $\Phi$ and $\Phi^{-1}$ are both smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]), so their pushforwards are defined, and they are linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]. Apply Proposition [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]] to $\Phi^{-1} \circ \Phi = \mathrm{id}_M$ at $p$ and to $\Phi \circ \Phi^{-1} = \mathrm{id}_N$ at $\Phi(p)$, using $\Phi^{-1}(\Phi(p)) = p$:
+>
+> $$
+> (\Phi^{-1})_{\ast \Phi(p)} \circ \Phi_{\ast p} = (\Phi^{-1} \circ \Phi)_{\ast p} = (\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM}, \qquad
+> \Phi_{\ast p} \circ (\Phi^{-1})_{\ast \Phi(p)} = (\Phi \circ \Phi^{-1})_{\ast \Phi(p)} = (\mathrm{id}_N)_{\ast \Phi(p)} = \mathrm{id}_{T_{\Phi(p)}N} .
+> $$
+>
+> So $\Phi_{\ast p}$ has the two-sided inverse $(\Phi^{-1})_{\ast \Phi(p)}$; a linear bijection is a linear isomorphism.
 ^pf-28-7
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
@@ -309,11 +411,24 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^lem-28-8
 
 > [!proof]+ Proof
-> Restriction is well defined and an algebra homomorphism by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]]. It is surjective because a germ at $p$ on $U$ has a representative defined on an open subset of $U$, which is open in $M$ and so already represents a germ on $M$; and injective because if $f|_U$ and $g|_U$ agree near $p$ then $f$ and $g$ agree near $p$. A derivation on one algebra corresponds to exactly one on the other by composing with this isomorphism, so $\iota_{*p}$ is a bijection; it is linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]].
-
+> The inclusion $\iota$ is smooth (in a chart of $M$ restricted to an open subset of $U$, its coordinate representation is the identity), and by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] it pulls back the germ of $(f, V)$ to $\iota_p^{\ast}[f] = [f \circ \iota] = [f|_{U \cap V}]$: restriction of germs.
+>
+> *Algebra homomorphism.* Restriction is well defined and an algebra homomorphism by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], and it is compatible with evaluation: $(\iota_p^{\ast}[f])(p) = f(p)$.
+>
+> *Surjective.* It is surjective because a germ at $p$ on $U$ has a representative $(g, V')$ defined on an open subset $V'$ of $U$, which is open in $M$ ($U$ being open in $M$) and so already represents a germ on $M$; and $\iota_p^{\ast}[g] = [g|_{V' \cap U}] = [g|_{V'}]$, the given germ, since $V' \subseteq U$.
+>
+> *Injective.* It is injective because if $f|_U$ and $g|_U$ agree near $p$ then $f$ and $g$ agree near $p$: they agree on an open $W \ni p$ of $U$, and $W$ is also open in $M$, so $[f] = [g]$ in $C^\infty_p(M)$ (Definition [[§27 Germs#^def-27-1|§27.1]]). A bijective algebra homomorphism is an algebra isomorphism; write $\rho = (\iota_p^{\ast})^{-1}$ for its inverse, again an algebra homomorphism compatible with evaluation.
+>
+> *The derivations.* A derivation on one algebra corresponds to exactly one on the other by composing with this isomorphism. By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]], $\iota_{\ast p}D = D \circ \iota_p^{\ast}$ for $D \in T_pU$. In the other direction, for $E \in T_pM$ the composite $E \circ \rho$ is a derivation at $p$ on $U$: it is linear, as a composite of linear maps, and for germs $[f], [g]$ on $U$, since $\rho$ is multiplicative and compatible with evaluation,
+>
+> $$
+> (E \circ \rho)\big([f][g]\big) = E\big(\rho[f]\, \rho[g]\big) = f(p)\, E(\rho[g]) + g(p)\, E(\rho[f]) .
+> $$
+>
+> The two assignments are mutually inverse: $\iota_{\ast p}(E \circ \rho) = E \circ \rho \circ \iota_p^{\ast} = E$ and $(\iota_{\ast p}D) \circ \rho = D \circ \iota_p^{\ast} \circ \rho = D$. So $\iota_{\ast p}$ is a bijection; it is linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]].
 ^pf-28-8
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
 
 > [!theorem] Proposition §28.9: Charts Are Diffeomorphisms
 > If $(U, \varphi)$ is a smooth chart of $M$, then $\varphi : U \to \varphi(U)$ is a diffeomorphism. Consequently, for every $p \in U$,
@@ -327,8 +442,15 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^prop-28-9
 
 > [!proof]+ Proof
-> In the charts $(U,\varphi)$ on $U$ and $(\varphi(U), \mathrm{id})$ on $\varphi(U)$, both $\varphi$ and $\varphi^{-1}$ have coordinate representation the identity, so both are smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]). The isomorphism is then Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] followed by Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]].
-
+> *$\varphi$ is a diffeomorphism.* $\varphi : U \to \varphi(U)$ is a bijection, and a homeomorphism, so $\varphi$ and $\varphi^{-1}$ are continuous. In the charts $(U,\varphi)$ on $U$ and $(\varphi(U), \mathrm{id})$ on $\varphi(U)$, both $\varphi$ and $\varphi^{-1}$ have coordinate representation the identity:
+>
+> $$
+> \mathrm{id} \circ \varphi \circ \varphi^{-1} = \mathrm{id}_{\varphi(U)}, \qquad \varphi \circ \varphi^{-1} \circ \mathrm{id}^{-1} = \mathrm{id}_{\varphi(U)},
+> $$
+>
+> which is smooth; so both are smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), and $\varphi$ is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
+>
+> *The isomorphism.* The isomorphism is then Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] followed by Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]: the first identifies $T_pM$ with $T_pU$ by the linear isomorphism $\iota_{\ast p}$; the second, applied to the diffeomorphism $\Phi = \varphi : U \to \varphi(U)$, says that $\varphi_{\ast p} : T_pU \to T_{\varphi(p)}\varphi(U)$ is a linear isomorphism with inverse $(\varphi^{-1})_{\ast \varphi(p)}$.
 ^pf-28-9
 
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]

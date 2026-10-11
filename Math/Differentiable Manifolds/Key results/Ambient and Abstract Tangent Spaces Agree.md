@@ -11,14 +11,20 @@ tags: [differentiable-manifolds, hub]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6: Ambient and Abstract Agree]], in [[§29 Coordinate Derivations and the Basis Theorem]]
 
 ## Its proof uses
+- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
 - [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1: Geometric Tangent Space]]
+- [[§25 The Geometric Tangent Space#^lem-25-1|Lemma §25.1: Locality of the Geometric Tangent Space]]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
 - [[§25 The Geometric Tangent Space#^def-25-4|Definition §25.4: The Directional Derivative Attached to a Tangent Vector]]
 - [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8: Basic Properties of D_v]]
 - [[§25 The Geometric Tangent Space#^prop-25-9|Proposition §25.9: D_v Determines v]]
+- [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1: Derivation at a Point]]
+- [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2: The Abstract Tangent Space]]
+- [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|Lemma §28.8: Open Subsets Have the Same Abstract Tangent Spaces]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5: Basis Theorem]]
 
 ## Used in (Differentiable Manifolds)
+- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Corollary §29.7: Consequences]]
 - [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
 
 ## Connections

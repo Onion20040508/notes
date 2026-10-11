@@ -11,9 +11,12 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]], in [[§25 The Geometric Tangent Space]]
 
 ## Its proof uses
+- [[§7 The Regular Value Theorem#^def-7-1|Definition §7.1: Jacobian Matrix]]
 - [[§7 The Regular Value Theorem#^def-7-3|Definition §7.3: Regular Point]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
+- [[§7 The Regular Value Theorem#^cor-7-4|Corollary §7.4: Open Domains and Arbitrary Values]]
 - [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Value]]
+- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
 - [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1: Geometric Tangent Space]]
 - [[§25 The Geometric Tangent Space#^lem-25-1|Lemma §25.1: Locality of the Geometric Tangent Space]]
 - [[§25 The Geometric Tangent Space#^lem-25-2|Lemma §25.2: The Geometric Tangent Space of a Graph]]
@@ -33,6 +36,7 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6: Ambient and Abstract Agree]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Corollary §29.7: Consequences]]
+- [[§35 Regular Submanifolds#^thm-35-7|Theorem §35.7: The Regular Value Theorem for Manifolds]]
 - [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
 
 ## Connections

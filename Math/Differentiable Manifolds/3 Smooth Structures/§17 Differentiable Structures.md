@@ -122,18 +122,45 @@ tags: [differentiable-manifolds, math591]
 ^thm-17-1
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. It reconciles two phrasings: Lecture 5 asked that the transition function be a diffeomorphism, Lecture 6 that the transition functions in both directions be smooth.)* Throughout, write $A = \varphi(U \cap V)$ and $B = \psi(U \cap V)$, both open in $\mathbb{R}^n$, and $\tau = \psi \circ \varphi^{-1} : A \to B$, a homeomorphism with inverse $\tau^{-1} = \varphi \circ \psi^{-1}$.
+> *(Not from lecture; filled in. It reconciles two phrasings: Lecture 5 asked that the transition function be a diffeomorphism, Lecture 6 that the transition functions in both directions be smooth.)* Throughout, write $A = \varphi(U \cap V)$ and $B = \psi(U \cap V)$, both open in $\mathbb{R}^n$, and $\tau = \psi \circ \varphi^{-1} : A \to B$, a homeomorphism with inverse $\tau^{-1} = \varphi \circ \psi^{-1}$ (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]). In (2) the charts are restricted to $U \cap V$, so by Definition [[§17 Differentiable Structures#^def-17-2|§17.2]]: $h$ is smooth in the sense of $\varphi$ iff $h = f \circ \varphi$ on $U \cap V$ for some smooth $f : A \to \mathbb{R}$, and $h$ is smooth in the sense of $\psi$ iff $h = g \circ \psi$ on $U \cap V$ for some smooth $g : B \to \mathbb{R}$.
 >
-> $(1 \Rightarrow 2)$ Suppose $\tau$ is a diffeomorphism, and let $h = f \circ \varphi$ with $f$ smooth on $A$. Put $g = f \circ \tau^{-1}$, smooth on $B$ as a composite of smooth maps. Then
+> $(1 \Rightarrow 2)$ Suppose $\tau$ is a diffeomorphism, so that $\tau$ and $\tau^{-1}$ are both smooth (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), and fix $h : U \cap V \to \mathbb{R}$.
+>
+> *Smooth in the sense of $\varphi$ implies smooth in the sense of $\psi$.* Let $h = f \circ \varphi$ with $f$ smooth on $A$. Put $g = f \circ \tau^{-1}$, smooth on $B$ as a composite of smooth maps (chain rule). Then, using $\tau^{-1} = \varphi \circ \psi^{-1}$ and $\psi^{-1} \circ \psi = \mathrm{id}_{U \cap V}$,
 >
 > $$
 > g \circ \psi = f \circ \tau^{-1} \circ \psi = f \circ \varphi \circ \psi^{-1} \circ \psi = f \circ \varphi = h,
 > $$
 >
-> so $h$ is smooth in the sense of $\psi$. The converse implication is the same computation with $\tau$ in place of $\tau^{-1}$, using smoothness of $\tau$.
+> so $h$ is smooth in the sense of $\psi$.
 >
-> $(2 \Rightarrow 1)$ Apply (2) to the $n$ coordinate functions of $\varphi$. Let $\pi^i : \mathbb{R}^n \to \mathbb{R}$ be the $i$-th coordinate projection and $h_i = \pi^i \circ \varphi$, which is smooth in the sense of $\varphi$ (take $f = \pi^i$). By (2), $h_i = g_i \circ \psi$ for some smooth $g_i$ on $B$, i.e. $g_i = h_i \circ \psi^{-1} = \pi^i \circ \varphi \circ \psi^{-1} = \pi^i \circ \tau^{-1}$. So every component of $\tau^{-1}$ is smooth, hence $\tau^{-1}$ is smooth; symmetrically $\tau$ is smooth. Both being continuous bijections already, $\tau$ is a diffeomorphism.
-
+> *Smooth in the sense of $\psi$ implies smooth in the sense of $\varphi$.* The converse implication is the same computation with $\tau$ in place of $\tau^{-1}$, using smoothness of $\tau$. Written out: let $h = g \circ \psi$ with $g$ smooth on $B$, and put $f = g \circ \tau$, smooth on $A$ as a composite of the smooth maps $\tau : A \to B$ and $g$. Using $\tau = \psi \circ \varphi^{-1}$ and $\varphi^{-1} \circ \varphi = \mathrm{id}_{U \cap V}$,
+>
+> $$
+> f \circ \varphi = g \circ \tau \circ \varphi = g \circ \psi \circ \varphi^{-1} \circ \varphi = g \circ \psi = h,
+> $$
+>
+> so $h$ is smooth in the sense of $\varphi$.
+>
+> $(2 \Rightarrow 1)$ Apply (2) to the $n$ coordinate functions of $\varphi$, and then to those of $\psi$. Let $\pi^i : \mathbb{R}^n \to \mathbb{R}$ be the $i$-th coordinate projection, a linear and hence smooth function. Recall that a map into $\mathbb{R}^n$ is smooth if and only if each of its $n$ components is.
+>
+> *$\tau^{-1}$ is smooth.* Let $h_i = \pi^i \circ \varphi$ on $U \cap V$, which is smooth in the sense of $\varphi$ (take $f = \pi^i$, restricted to $A$). By (2), $h_i = g_i \circ \psi$ for some smooth $g_i$ on $B$. Composing on the right with $\psi^{-1} : B \to U \cap V$,
+>
+> $$
+> g_i = g_i \circ \psi \circ \psi^{-1} = h_i \circ \psi^{-1} = \pi^i \circ \varphi \circ \psi^{-1} = \pi^i \circ \tau^{-1} .
+> $$
+>
+> So the $i$-th component of $\tau^{-1}$ is the smooth function $g_i$, for every $i$; hence every component of $\tau^{-1}$ is smooth, and $\tau^{-1}$ is smooth.
+>
+> *$\tau$ is smooth.* Symmetrically, with the roles of $(\varphi, A)$ and $(\psi, B)$ interchanged. Let $k_i = \pi^i \circ \psi$ on $U \cap V$, which is smooth in the sense of $\psi$ (take $g = \pi^i$, restricted to $B$). By (2), $k_i = f_i \circ \varphi$ for some smooth $f_i$ on $A$, and composing on the right with $\varphi^{-1} : A \to U \cap V$,
+>
+> $$
+> f_i = f_i \circ \varphi \circ \varphi^{-1} = k_i \circ \varphi^{-1} = \pi^i \circ \psi \circ \varphi^{-1} = \pi^i \circ \tau .
+> $$
+>
+> So every component of $\tau$ is smooth, and $\tau$ is smooth.
+>
+> *Conclusion.* Both being continuous bijections already (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]), $\tau$ is a bijection $A \to B$ with $\tau$ and $\tau^{-1}$ smooth, that is, a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]); so the two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]).
 ^pf-17-1
 
 *Uses:* [[§17 Differentiable Structures#^def-17-2|Def. §17.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[Multivariable Chain Rule|452 §12.2]]
@@ -157,11 +184,27 @@ tags: [differentiable-manifolds, math591]
 ^prop-17-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *Reflexive:* the transition function of a chart with itself is the identity. *Symmetric:* the transition function in the other direction is the inverse diffeomorphism. *Not transitive:* on $M = \mathbb{R}$ let $\varphi_1 = \mathrm{id}$ on $U_1 = \mathbb{R}$, $\varphi_2 = \mathrm{id}$ on $U_2 = (0,\infty)$, and $\varphi_3(t) = t^3$ on $U_3 = \mathbb{R}$. Then $(U_1,\varphi_1)$ and $(U_2,\varphi_2)$ are compatible, and so are $(U_2,\varphi_2)$ and $(U_3,\varphi_3)$, since on $(0,\infty)$ the transition $t \mapsto t^{1/3}$ is smooth with smooth inverse. But $(U_1,\varphi_1)$ and $(U_3,\varphi_3)$ are not: the transition $\varphi_1 \circ \varphi_3^{-1}(t) = t^{1/3}$ fails to be differentiable at $0$.
-
+> *(Not from lecture; filled in.)* Recall that $(U,\varphi)$ and $(V,\psi)$ are compatible when the transition function $\psi \circ \varphi^{-1} : \varphi(U \cap V) \to \psi(U \cap V)$ is a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), and that it is always a homeomorphism with inverse $\varphi \circ \psi^{-1}$ (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]).
+>
+> *Reflexive:* the transition function of a chart with itself is the identity. Explicitly, for a chart $(U,\varphi)$ it is $\varphi \circ \varphi^{-1} = \mathrm{id}_{\varphi(U)}$, the identity of the open set $\varphi(U)$; it is a bijection, smooth (its components are the coordinate functions), and equal to its own inverse, so it is a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]).
+>
+> *Symmetric:* the transition function in the other direction is the inverse diffeomorphism. Explicitly, if $(U,\varphi)$ is compatible with $(V,\psi)$, then $\tau = \psi \circ \varphi^{-1} : \varphi(U \cap V) \to \psi(U \cap V)$ is a bijection with $\tau$ and $\tau^{-1}$ smooth. The transition function of $(V,\psi)$ with $(U,\varphi)$ is $\varphi \circ \psi^{-1} = \tau^{-1} : \psi(U \cap V) \to \varphi(U \cap V)$, a bijection which is smooth and whose inverse $(\tau^{-1})^{-1} = \tau$ is smooth; so it is a diffeomorphism, and $(V,\psi)$ is compatible with $(U,\varphi)$.
+>
+> *Not transitive:* on $M = \mathbb{R}$ let $\varphi_1 = \mathrm{id}$ on $U_1 = \mathbb{R}$, $\varphi_2 = \mathrm{id}$ on $U_2 = (0,\infty)$, and $\varphi_3(t) = t^3$ on $U_3 = \mathbb{R}$. These are charts (Definition [[§17 Differentiable Structures#^def-17-1|§17.1]]): $\varphi_1$ and $\varphi_2$ are identities of open sets, and $\varphi_3$ is a homeomorphism of $\mathbb{R}$ onto $\mathbb{R}$, with continuous inverse $t \mapsto t^{1/3}$ (the real cube root). The three pairs:
+> - $(U_1,\varphi_1)$ and $(U_2,\varphi_2)$: here $U_1 \cap U_2 = (0,\infty)$ and the transition $\varphi_2 \circ \varphi_1^{-1}$ is the identity of $(0,\infty)$, a diffeomorphism as in the reflexive case. So they are compatible.
+> - $(U_2,\varphi_2)$ and $(U_3,\varphi_3)$: here $U_2 \cap U_3 = (0,\infty)$, with $\varphi_2\big((0,\infty)\big) = (0,\infty) = \varphi_3\big((0,\infty)\big)$. The transition $\varphi_3 \circ \varphi_2^{-1}(t) = t^3$ has inverse $\varphi_2 \circ \varphi_3^{-1}(t) = t^{1/3}$; the first is a polynomial, and the second equals $\exp\big(\tfrac13 \ln t\big)$ for $t > 0$, a composite of smooth functions. So they are compatible, since on $(0,\infty)$ the transition $t \mapsto t^{1/3}$ is smooth with smooth inverse.
+> - $(U_1,\varphi_1)$ and $(U_3,\varphi_3)$: here $U_1 \cap U_3 = \mathbb{R}$, and the transition $\varphi_1 \circ \varphi_3^{-1}(t) = t^{1/3}$ fails to be differentiable at $0$: its difference quotient at $0$ is
+>
+> $$
+> \frac{t^{1/3} - 0}{t - 0} = t^{-2/3} \longrightarrow +\infty \qquad (t \to 0).
+> $$
+>
+>     So this transition is not smooth, not a diffeomorphism, and the two charts are not compatible.
+>
+> So $(U_1,\varphi_1)$ is compatible with $(U_2,\varphi_2)$, and $(U_2,\varphi_2)$ with $(U_3,\varphi_3)$, but $(U_1,\varphi_1)$ is not compatible with $(U_3,\varphi_3)$.
 ^pf-17-2
 
-*Uses:* [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]]
+*Uses:* [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]]
 
 > [!remark] Remark
 > This is exactly why [[§17 Differentiable Structures#^thm-17-5|§17.5]] below cannot be proved by “collect all charts compatible with a given one.” The chart $(U_2,\varphi_2)$ is compatible with both of two charts that are incompatible with each other.
@@ -283,8 +326,13 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 ^prop-17-4
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* If $V \ne S^1$, pick $q \notin V$ and a rotation $\rho$ of $S^1$ with $\rho(q) = N$. The stereographic projection $\sigma_N : S^1 \setminus \{N\} \to \mathbb{R}$ of [[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]] above is a homeomorphism, so $\sigma_N \circ \rho$ maps $V$ homeomorphically onto a connected open subset of $\mathbb{R}$, which is an open interval; this is a chart. Conversely, $S^1$ is not a chart domain, by [[§17 Differentiable Structures#^prop-17-3|§17.3]].
-
+> *(Not from lecture; filled in.)* There are two implications to prove, and the description of $V$.
+>
+> *If $V \ne S^1$, then $V$ is a chart domain.* Pick $q \notin V$, say $q = (\cos\alpha, \sin\alpha)$, and a rotation $\rho$ of $S^1$ with $\rho(q) = N$: the rotation of $\mathbb{R}^2$ by the angle $\pi/2 - \alpha$, restricted to $S^1$, which sends $(\cos\alpha, \sin\alpha)$ to $(\cos\tfrac{\pi}{2}, \sin\tfrac{\pi}{2}) = N$. A rotation preserves lengths, so it maps $S^1$ into $S^1$; it is linear, hence continuous, and its inverse is the rotation by $\alpha - \pi/2$, also continuous. So $\rho$ is a homeomorphism of $S^1$. Since $q \notin V$ and $\rho$ is injective, $N = \rho(q) \notin \rho(V)$, so $\rho(V) \subseteq S^1 \setminus \{N\}$; and $\rho(V)$ is open in $S^1$ ($\rho$ is a homeomorphism), hence open in $S^1 \setminus \{N\}$. The stereographic projection $\sigma_N : S^1 \setminus \{N\} \to \mathbb{R}$ of Example [[§17 Differentiable Structures#^ex-17-3|§17.3]] above is a homeomorphism, so $\sigma_N \circ \rho$ maps $V$ homeomorphically onto $\sigma_N(\rho(V))$, which is open in $\mathbb{R}$ (the image of an open set under a homeomorphism onto $\mathbb{R}$). This image is connected, as the continuous image of the connected set $V$; and a connected open subset of $\mathbb{R}$ is an open interval (the connected subsets of $\mathbb{R}$ are the intervals, and an open one is an open interval, possibly unbounded). So $\sigma_N \circ \rho$ maps $V$ homeomorphically onto a connected open subset of $\mathbb{R}$, which is an open interval; this is a chart, by Definition [[§17 Differentiable Structures#^def-17-1|§17.1]].
+>
+> *$V$ is an open arc.* The same map shows that $V$ is homeomorphic to the open interval $I = \sigma_N(\rho(V))$, and $V = \rho^{-1}\big(\sigma_N^{-1}(I)\big)$ is the image of $I$ under the continuous injection $\rho^{-1} \circ \sigma_N^{-1}$, an open arc of the circle.
+>
+> *Conversely*, $S^1$ is not a chart domain, by Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]]: a chart with domain $S^1$ would by itself be a one-chart atlas.
 ^pf-17-4
 
 *Uses:* [[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]], [[§17 Differentiable Structures#^prop-17-3|§17.3]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§16 Connected Subspaces of ℝ#^rem-16-1|590 §16 (connected subsets of ℝ are intervals)]]
@@ -351,21 +399,34 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 ^thm-17-5
 
 > [!proof]+ Proof
-> *$\overline{\mathcal{A}}$ is an atlas.* *(Lecture 6's sketch, completed.)* It contains $\mathcal{A}$ (whose charts are pairwise compatible), so its domains cover $M$. The content is that any two of its charts are compatible with *each other* — which does not follow formally, compatibility not being transitive. Let $(V,\psi), (W,\chi) \in \overline{\mathcal{A}}$; we show $\chi \circ \psi^{-1}$ is smooth on $\psi(V \cap W)$. Smoothness is a local property, so it suffices to prove it near each point $\psi(p)$, $p \in V \cap W$. Choose $(U,\varphi) \in \mathcal{A}$ with $p \in U$, possible since $\mathcal{A}$ covers $M$. On the open set $\psi(U \cap V \cap W) \ni \psi(p)$,
+> *$\overline{\mathcal{A}}$ is an atlas.* *(Lecture 6's sketch, completed.)* By Definition [[§17 Differentiable Structures#^def-17-6|§17.6]] two things are needed: the domains of the charts of $\overline{\mathcal{A}}$ cover $M$, and any two charts of $\overline{\mathcal{A}}$ are compatible.
+>
+> *Cover.* It contains $\mathcal{A}$ (whose charts are pairwise compatible), so its domains cover $M$. Indeed, a chart $(U,\varphi) \in \mathcal{A}$ is compatible with every other chart of $\mathcal{A}$ because $\mathcal{A}$ is an atlas, and with itself because compatibility is reflexive (Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]); so $(U,\varphi) \in \overline{\mathcal{A}}$. The domains of $\mathcal{A}$ already cover $M$.
+>
+> *Pairwise compatible.* The content is that any two of its charts are compatible with *each other* — which does not follow formally, compatibility not being transitive (Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]). Let $(V,\psi), (W,\chi) \in \overline{\mathcal{A}}$. If $V \cap W = \emptyset$ they are compatible by Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]. Otherwise $\chi \circ \psi^{-1} : \psi(V \cap W) \to \chi(V \cap W)$ is a homeomorphism with inverse $\psi \circ \chi^{-1}$ (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]), so by Definitions [[§17 Differentiable Structures#^def-17-4|§17.4]] and [[§17 Differentiable Structures#^def-17-3|§17.3]] it remains to show that both $\chi \circ \psi^{-1}$ and $\psi \circ \chi^{-1}$ are smooth.
+>
+> We show $\chi \circ \psi^{-1}$ is smooth on $\psi(V \cap W)$. Smoothness is a local property — a map on an open subset of $\mathbb{R}^n$ is smooth as soon as every point has an open neighbourhood on which it is smooth, since partial derivatives at a point involve only values near it — so it suffices to prove it near each point $\psi(p)$, $p \in V \cap W$. Choose $(U,\varphi) \in \mathcal{A}$ with $p \in U$, possible since $\mathcal{A}$ covers $M$. The set $O = U \cap V \cap W$ is open and contains $p$, so $\psi(O)$ is an open subset of $\mathbb{R}^n$ containing $\psi(p)$. For $b \in \psi(O)$ the point $\psi^{-1}(b)$ lies in $U$, so $\varphi^{-1}\big(\varphi(\psi^{-1}(b))\big) = \psi^{-1}(b)$ and
+>
+> $$
+> (\chi \circ \psi^{-1})(b) = \chi\Big(\varphi^{-1}\big(\varphi(\psi^{-1}(b))\big)\Big) = \big((\chi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})\big)(b).
+> $$
+>
+> That is, on the open set $\psi(U \cap V \cap W) \ni \psi(p)$,
 >
 > $$
 > \chi \circ \psi^{-1} = (\chi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1}),
 > $$
 >
-> and both factors are smooth because $(U,\varphi)$ is compatible with each of $(W,\chi)$ and $(V,\psi)$ — this factorization is the “little bit of diagram chasing” of the lecture. Hence $\chi \circ \psi^{-1}$ is smooth near $\psi(p)$. As $p$ was arbitrary it is smooth on all of $\psi(V\cap W)$, and exchanging the roles of the two charts gives smoothness of the inverse.
+> where $\varphi \circ \psi^{-1}$ maps $\psi(O)$ into $\varphi(O) \subseteq \varphi(U \cap W)$, the domain of $\chi \circ \varphi^{-1}$. Both factors are smooth because $(U,\varphi)$ is compatible with each of $(W,\chi)$ and $(V,\psi)$ — this factorization is the “little bit of diagram chasing” of the lecture. In detail: $(V,\psi) \in \overline{\mathcal{A}}$ is compatible with $(U,\varphi) \in \mathcal{A}$, so by symmetry of compatibility (Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]) the transition $\varphi \circ \psi^{-1} : \psi(U \cap V) \to \varphi(U \cap V)$ is a diffeomorphism, in particular smooth; and $(W,\chi) \in \overline{\mathcal{A}}$ is compatible with $(U,\varphi)$, so the transition $\chi \circ \varphi^{-1} : \varphi(U \cap W) \to \chi(U \cap W)$ is smooth. A composite of smooth maps is smooth (chain rule). Hence $\chi \circ \psi^{-1}$ is smooth near $\psi(p)$. As $p$ was arbitrary it is smooth on all of $\psi(V\cap W)$, and exchanging the roles of the two charts gives smoothness of the inverse: the same argument with $(V,\psi)$ and $(W,\chi)$ renamed into each other shows that $\psi \circ \chi^{-1}$ is smooth on $\chi(V \cap W)$. So $(V,\psi)$ and $(W,\chi)$ are compatible, and $\overline{\mathcal{A}}$ is an atlas.
 >
-> *$\overline{\mathcal{A}}$ is maximal.* If a chart $(V,\psi)$ is compatible with every chart of $\overline{\mathcal{A}}$, then in particular with every chart of $\mathcal{A} \subseteq \overline{\mathcal{A}}$, so $(V,\psi) \in \overline{\mathcal{A}}$ by definition.
+> *$\overline{\mathcal{A}}$ is maximal.* If a chart $(V,\psi)$ is compatible with every chart of $\overline{\mathcal{A}}$, then in particular with every chart of $\mathcal{A} \subseteq \overline{\mathcal{A}}$, so $(V,\psi) \in \overline{\mathcal{A}}$ by definition. This is the condition of Definition [[§17 Differentiable Structures#^def-17-8|§17.8]].
 >
-> *Uniqueness.* Let $\mathcal{M}$ be any maximal atlas with $\mathcal{A} \subseteq \mathcal{M}$. If $(V,\psi) \in \mathcal{M}$ then it is compatible with every chart of $\mathcal{M}$, hence with every chart of $\mathcal{A}$, so $(V,\psi) \in \overline{\mathcal{A}}$; thus $\mathcal{M} \subseteq \overline{\mathcal{A}}$. Since $\overline{\mathcal{A}}$ is an atlas containing $\mathcal{M}$ and $\mathcal{M}$ is maximal, $\mathcal{M} = \overline{\mathcal{A}}$.
-
+> *Uniqueness.* Let $\mathcal{M}$ be any maximal atlas with $\mathcal{A} \subseteq \mathcal{M}$. If $(V,\psi) \in \mathcal{M}$ then it is compatible with every chart of $\mathcal{M}$ (with the others because $\mathcal{M}$ is an atlas, with itself by reflexivity), hence with every chart of $\mathcal{A} \subseteq \mathcal{M}$, so $(V,\psi) \in \overline{\mathcal{A}}$; thus $\mathcal{M} \subseteq \overline{\mathcal{A}}$. Since $\overline{\mathcal{A}}$ is an atlas containing $\mathcal{M}$ and $\mathcal{M}$ is maximal (contained in no strictly larger atlas, Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]), $\mathcal{M} = \overline{\mathcal{A}}$.
+>
+> *Compatible atlases.* Let $\mathcal{A}'$ be a second atlas. If $\mathcal{A}$ and $\mathcal{A}'$ are compatible (Definition [[§17 Differentiable Structures#^def-17-7|§17.7]]), every chart of $\mathcal{A}'$ is compatible with every chart of $\mathcal{A}$, so $\mathcal{A}' \subseteq \overline{\mathcal{A}}$; as also $\mathcal{A} \subseteq \overline{\mathcal{A}}$, both lie in the maximal atlas $\overline{\mathcal{A}}$. Conversely, if $\mathcal{A}$ and $\mathcal{A}'$ both lie in one maximal atlas $\mathcal{M}$, then a chart of $\mathcal{A}$ and a chart of $\mathcal{A}'$ are two charts of the atlas $\mathcal{M}$, hence compatible (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]); so $\mathcal{A}$ and $\mathcal{A}'$ are compatible.
 ^pf-17-5
 
-*Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-7|Def. §17.7]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§17 Differentiable Structures#^prop-17-2|§17.2]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-7|Def. §17.7]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§17 Differentiable Structures#^prop-17-2|§17.2]], [[Multivariable Chain Rule|452 §12.2]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
 
 Lecture 5 argued uniqueness only (“anything in one is contained in the other, so they are equal”), taking for granted that the collection of all compatible charts is an atlas. Lecture 6 returned to the lemma: Uribe defined $\overline{\mathcal{A}}$ as above, called maximality “not that hard” and the atlas property “more substantial”, and sketched it — a point of the overlap lies in some chart of $\mathcal{A}$, compatible with both charts, “and then you have to do a little bit of diagram chasing” — skipping the details for time. The proof above completes that sketch. That step is the one with content, and the [[§17 Differentiable Structures#^rem-17-7|remark on non-transitivity above]] shows it really needs the mediating chart $(U,\varphi) \in \mathcal{A}$: without an atlas to pass through, pairwise compatibility with a single chart proves nothing. Compare Lee, Proposition 1.17.
 

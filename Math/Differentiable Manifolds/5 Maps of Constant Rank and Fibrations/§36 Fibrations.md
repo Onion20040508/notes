@@ -51,11 +51,44 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 ^prop-36-1
 
 > [!proof]+ Proof
-> *(Stated in lecture; (2) as “chain rule and stuff”.)* (1) Choose $\alpha$ with $b \in U_\alpha$. Because the diagram commutes and $\phi_\alpha$ is a bijection, $\phi_\alpha$ maps $\pi^{-1}(b)$ onto $\mathrm{pr}_1^{-1}(b) = \{b\} \times F$; it restricts to a homeomorphism with the subspace topologies. And $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a homeomorphism, with inverse $f \mapsto (b, f)$. (2) On the open set $\pi^{-1}(U_\alpha)$, $\pi = \mathrm{pr}_1 \circ \phi_\alpha$; by the [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Chain Rule]] $\pi_{\ast p} = (\mathrm{pr}_1)_{\ast} \circ (\phi_\alpha)_{\ast p}$, a composite of an isomorphism and a surjection ([[§34 Submersions#^ex-34-2|Example §34.2]]), hence onto. Every $b$ lies in some $U_\alpha$, and its fibre is a copy of $F$, nonempty if $F$ is. (3) [[§34 Submersions#^cor-34-6|Corollary §34.6]].
-
+> *(Stated in lecture; (2) as “chain rule and stuff”.)* Throughout, recall from Definition [[§36 Fibrations#^def-36-1|§36.1]] that the sets $U_\alpha$ cover $B$, that each $\pi^{-1}(U_\alpha)$ is open in $M$ (the preimage of an open set under the continuous map $\pi$), and that on it $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ — the commuting diagram.
+>
+> *(1)* Fix $b \in B$ and choose $\alpha$ with $b \in U_\alpha$; then $\pi^{-1}(b) \subseteq \pi^{-1}(U_\alpha)$, the domain of $\phi_\alpha$.
+>
+> *$\phi_\alpha$ maps $\pi^{-1}(b)$ onto $\mathrm{pr}_1^{-1}(b) = \{b\} \times F$.* This is where the commuting diagram and the bijectivity of $\phi_\alpha$ are used. If $x \in \pi^{-1}(b)$, then $\mathrm{pr}_1(\phi_\alpha(x)) = \pi(x) = b$, so $\phi_\alpha(x) \in \{b\} \times F$. Conversely, if $(b, f) \in \{b\} \times F \subseteq U_\alpha \times F$, then $x = \phi_\alpha^{-1}(b, f)$ is defined, $\phi_\alpha$ being a bijection onto $U_\alpha \times F$, and
+>
+> $$
+> \pi(x) = \mathrm{pr}_1\big(\phi_\alpha(x)\big) = \mathrm{pr}_1(b, f) = b ,
+> $$
+>
+> so $x \in \pi^{-1}(b)$ with $\phi_\alpha(x) = (b, f)$. Thus $\phi_\alpha$ restricts to a bijection $\pi^{-1}(b) \to \{b\} \times F$.
+>
+> *The restriction is a homeomorphism with the subspace topologies.* $\phi_\alpha$ is a diffeomorphism, in particular a homeomorphism, so its restriction to the subset $\pi^{-1}(b)$ is a homeomorphism onto its image $\{b\} \times F$ (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3)). The subspace topology of $\pi^{-1}(b)$ is the same whether it is taken from $\pi^{-1}(U_\alpha)$ or from $M$, since $\big(O \cap \pi^{-1}(U_\alpha)\big) \cap \pi^{-1}(b) = O \cap \pi^{-1}(b)$ for every $O$ open in $M$.
+>
+> *$\{b\} \times F$ is a copy of $F$.* The map $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a homeomorphism, with inverse $f \mapsto (b, f)$. The first is the restriction of the projection $\mathrm{pr}_2$, which is continuous; the second is continuous into $U_\alpha \times F$ because its two components, the constant map $b$ and $\mathrm{id}_F$, are continuous (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](4)), hence continuous into the subspace $\{b\} \times F$ (Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](2)); and the two maps are inverse to each other. Composing, $\pi^{-1}(b) \to \{b\} \times F \to F$ is a homeomorphism.
+>
+> *(2)* *$\pi$ is a submersion.* Fix $p \in M$; we show that $\pi_{\ast p}$ is onto $T_{\pi(p)}B$. Choose $\alpha$ with $\pi(p) \in U_\alpha$, let $W = \pi^{-1}(U_\alpha)$, an open submanifold of $M$ containing $p$, and write $\pi|_W : W \to U_\alpha$ for the restriction. On the open set $W$, $\pi|_W = \mathrm{pr}_1 \circ \phi_\alpha$; by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]),
+>
+> $$
+> (\pi|_W)_{\ast p} = (\mathrm{pr}_1)_{\ast\phi_\alpha(p)} \circ (\phi_\alpha)_{\ast p} ,
+> $$
+>
+> a composite of an isomorphism and a surjection. Indeed $(\phi_\alpha)_{\ast p}$ is an isomorphism because $\phi_\alpha$ is a diffeomorphism (Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]), and $(\mathrm{pr}_1)_{\ast\phi_\alpha(p)}$ is onto because the projection of the product manifold $U_\alpha \times F$ onto its first factor is a submersion (Example [[§34 Submersions#^ex-34-2|§34.2]], with $M_1 = U_\alpha$ and $M_2 = F$). So, given $w \in T_{\pi(p)}U_\alpha$, choose $u$ with $(\mathrm{pr}_1)_{\ast\phi_\alpha(p)}u = w$ and put $v = (\phi_\alpha)_{\ast p}^{-1}u$; then $(\pi|_W)_{\ast p}v = w$, and $(\pi|_W)_{\ast p}$ is onto.
+>
+> It remains to pass from $\pi|_W$ to $\pi$. With the inclusions $\iota_W : W \hookrightarrow M$ and $\iota_{U_\alpha} : U_\alpha \hookrightarrow B$ we have $\pi \circ \iota_W = \iota_{U_\alpha} \circ \pi|_W$, so by the Chain Rule
+>
+> $$
+> \pi_{\ast p} \circ (\iota_W)_{\ast p} = (\iota_{U_\alpha})_{\ast\pi(p)} \circ (\pi|_W)_{\ast p} .
+> $$
+>
+> The right side is onto $T_{\pi(p)}B$, because $(\iota_{U_\alpha})_{\ast\pi(p)}$ is an isomorphism (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]) and $(\pi|_W)_{\ast p}$ is onto. Hence the left side is onto, and therefore so is $\pi_{\ast p}$. As $p$ was arbitrary, $\pi$ is a submersion (Definition [[§34 Submersions#^def-34-1|§34.1]]).
+>
+> *$\pi$ is surjective if $F \neq \emptyset$.* Every $b$ lies in some $U_\alpha$, and its fibre is a copy of $F$ by (1), nonempty if $F$ is; any $x \in \pi^{-1}(b)$ has $\pi(x) = b$.
+>
+> *(3)* By (2), $\pi$ is a submersion, so by Corollary [[§34 Submersions#^cor-34-6|§34.6]] $\pi(O)$ is open in $B$ for every open $O \subseteq M$: $\pi$ is an open map.
 ^pf-36-1
 
-*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§34 Submersions#^def-34-1|Def. §34.1]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§34 Submersions#^cor-34-6|§34.6]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
+*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§34 Submersions#^def-34-1|Def. §34.1]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§34 Submersions#^cor-34-6|§34.6]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]
 
 The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§40 Projective Spaces and the Hopf Fibration|§40]].
 
@@ -83,11 +116,20 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^prop-36-2
 
 > [!proof]+ Proof
-> *(Claimed in Lecture 12 — “I claim that they are diffeomorphic to this fibre, to the third manifold that is sitting outside, looking over [the] landscape”; filled in.)* $\pi$ is a submersion ([[§36 Fibrations#^prop-36-1|Proposition §36.1]]), so $\pi^{-1}(b)$ is a submanifold ([[§35 Regular Submanifolds#^cor-35-8|Corollary §35.8]]); likewise $\{b\} \times F = \mathrm{pr}_1^{-1}(b)$ is a submanifold of $U_\alpha \times F$ ([[§34 Submersions#^ex-34-2|Example §34.2]]). Because the diagram commutes, $\phi_\alpha$ maps $\pi^{-1}(b)$ bijectively onto $\{b\} \times F$. The restriction and its inverse are smooth as maps into $U_\alpha \times F$ and into $E$ (restrictions of $\phi_\alpha$, $\phi_\alpha^{-1}$ to submanifolds, [[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]](1)), hence smooth into the submanifolds $\{b\} \times F$ and $\pi^{-1}(b)$ ([[§35 Regular Submanifolds#^lem-35-3|Lemma §35.3]](2)). Finally $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a diffeomorphism by the same lemma, with inverse $f \mapsto (b, f)$.
-
+> *(Claimed in Lecture 12 — “I claim that they are diffeomorphic to this fibre, to the third manifold that is sitting outside, looking over [the] landscape”; filled in.)* Three things are claimed: $\pi^{-1}(b)$ is a regular submanifold of $E$; $\phi_\alpha$ restricts to a diffeomorphism $\pi^{-1}(b) \to \{b\} \times F$; and $\{b\} \times F$ is diffeomorphic to $F$.
+>
+> *The two submanifolds.* $\pi$ is a submersion (Proposition [[§36 Fibrations#^prop-36-1|§36.1]](2)), so its fibre $\pi^{-1}(b)$ is a regular submanifold of $E$ (Corollary [[§35 Regular Submanifolds#^cor-35-8|§35.8]]). Likewise the projection $\mathrm{pr}_1 : U_\alpha \times F \to U_\alpha$ is a submersion (Example [[§34 Submersions#^ex-34-2|§34.2]]), so its fibre $\{b\} \times F = \mathrm{pr}_1^{-1}(b)$ is a regular submanifold of $U_\alpha \times F$ (Corollary [[§35 Regular Submanifolds#^cor-35-8|§35.8]] again). Both carry their induced smooth structures (Proposition [[§35 Regular Submanifolds#^prop-35-2|§35.2]]).
+>
+> *A bijection.* Because the diagram commutes, $\phi_\alpha$ maps $\pi^{-1}(b)$ bijectively onto $\{b\} \times F$: this is the first step of the proof of Proposition [[§36 Fibrations#^prop-36-1|§36.1]](1), namely $\mathrm{pr}_1(\phi_\alpha(x)) = \pi(x) = b$ for $x \in \pi^{-1}(b)$, and $\pi\big(\phi_\alpha^{-1}(b, f)\big) = \mathrm{pr}_1(b, f) = b$ for $(b, f) \in \{b\} \times F$. Write $\Phi : \pi^{-1}(b) \to \{b\} \times F$ for the restriction of $\phi_\alpha$; its inverse is the restriction of $\phi_\alpha^{-1}$ to $\{b\} \times F$.
+>
+> *$\Phi$ is smooth.* The inclusion $\iota : \pi^{-1}(b) \hookrightarrow E$ is smooth (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)). It takes values in the open subset $\pi^{-1}(U_\alpha)$, so it is also smooth as a map into the open submanifold $\pi^{-1}(U_\alpha)$, whose smooth charts are the charts of $E$ with domain inside $\pi^{-1}(U_\alpha)$. Hence $\phi_\alpha \circ \iota : \pi^{-1}(b) \to U_\alpha \times F$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). It takes values in the submanifold $\{b\} \times F$, so it is smooth as a map into $\{b\} \times F$ (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2)); that map is $\Phi$.
+>
+> *$\Phi^{-1}$ is smooth.* The inclusion $\iota' : \{b\} \times F \hookrightarrow U_\alpha \times F$ is smooth (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)), and $\phi_\alpha^{-1} \circ \iota'$ is smooth into $\pi^{-1}(U_\alpha)$, hence into $E$, the inclusion of an open submanifold being smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). It takes values in the submanifold $\pi^{-1}(b)$, so it is smooth as a map into $\pi^{-1}(b)$ (Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2)); that map is $\Phi^{-1}$. So $\Phi$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]): the restriction and its inverse are smooth as maps into $U_\alpha \times F$ and into $E$, hence smooth into the submanifolds $\{b\} \times F$ and $\pi^{-1}(b)$.
+>
+> *$\{b\} \times F \cong F$.* Finally $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a diffeomorphism by the same lemma, with inverse $f \mapsto (b, f)$. Explicitly: the first map is $\mathrm{pr}_2 \circ \iota'$, smooth because $\mathrm{pr}_2$ and $\iota'$ are (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](1)). The second is the slice inclusion $\iota^{b} : F \to U_\alpha \times F$, $f \mapsto (b, f)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]; it takes values in $\{b\} \times F$, so it is smooth into $\{b\} \times F$ by Lemma [[§35 Regular Submanifolds#^lem-35-3|§35.3]](2). The two maps are inverse to each other. Composing with $\Phi$ gives the diffeomorphism $\pi^{-1}(b) \to \{b\} \times F \cong F$.
 ^pf-36-2
 
-*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-1|§36.1]], [[§35 Regular Submanifolds#^cor-35-8|§35.8]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]]
+*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-1|§36.1]], [[§35 Regular Submanifolds#^cor-35-8|§35.8]], [[§34 Submersions#^ex-34-2|Ex. §34.2]], [[§35 Regular Submanifolds#^lem-35-3|§35.3]], [[§35 Regular Submanifolds#^prop-35-2|§35.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
 
 ![[m591-16-3.svg]]
 *The fibre over $b$ and the model fibre. The trivialization $\phi_\alpha$ carries the submanifold $\pi^{-1}(b)$ onto the submanifold $\{b\} \times F$ — this is where the commuting triangle of [[§36 Fibrations#^def-36-1|Definition §36.1]] is used — and $\mathrm{pr}_2$ identifies that with $F$.*
@@ -100,11 +142,18 @@ This upgrades [[§36 Fibrations#^prop-36-1|Proposition §36.1]](1) from homeomor
 ^ex-36-1
 
 > [!proof]+ Proof
-> *(Lecture 12.)* $\pi$ is the restriction of the projection $\mathbb{R}^2 \to \mathbb{R}$ to an open subset, so it is a submersion ([[§34 Submersions#^ex-34-1|Example §34.1]]), and it is onto. Its fibres are the vertical lines $\{x\} \times \mathbb{R}$ for $x \ne 0$, “except for one”: over $0$ the fibre is $\{0\} \times (\mathbb{R} \setminus \{1\})$, two half-lines — “it wants to be a vertical line, but there's a point missing.” If $\pi$ were a fibration with fibre $F$, all fibres would be diffeomorphic to $F$ ([[§36 Fibrations#^prop-36-2|Proposition §36.2]]), hence to each other; but $\{1\} \times \mathbb{R}$ is connected and $\{0\} \times (\mathbb{R} \setminus \{1\})$ is not, and connectedness is preserved by homeomorphisms.
-
+> *(Lecture 12.)* Three things are claimed: $\pi$ is a submersion, it is onto, and it is not a fibration.
+>
+> *Submersion.* $E$ is open in $\mathbb{R}^2$, the complement of the closed set $\{(0, 1)\}$. $\pi$ is the restriction of the projection $\mathrm{pr} : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ to an open subset, so it is a submersion (Example [[§34 Submersions#^ex-34-1|§34.1]], with $k = l = 1$). In detail: with $\iota_E : E \hookrightarrow \mathbb{R}^2$ the inclusion, $\pi = \mathrm{pr} \circ \iota_E$, so by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) $\pi_{\ast q} = \mathrm{pr}_{\ast q} \circ (\iota_E)_{\ast q}$ for $q \in E$; here $(\iota_E)_{\ast q}$ is an isomorphism (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]) and $\mathrm{pr}_{\ast q}$ is onto, so $\pi_{\ast q}$ is onto.
+>
+> *Onto.* For $x \in \mathbb{R}$, the point $(x, 0)$ is not $(0, 1)$, so it lies in $E$, and $\pi(x, 0) = x$.
+>
+> *The fibres.* Its fibres are the vertical lines $\{x\} \times \mathbb{R}$ for $x \ne 0$, “except for one”: over $0$ the fibre is $\{0\} \times (\mathbb{R} \setminus \{1\})$, two half-lines — “it wants to be a vertical line, but there's a point missing.” Indeed $\pi^{-1}(x) = \{(x, y) : (x, y) \neq (0, 1)\}$, and the excluded point has $x = 0$.
+>
+> *Not a fibration.* If $\pi$ were a fibration with fibre $F$, all fibres would be diffeomorphic to $F$ (Proposition [[§36 Fibrations#^prop-36-2|§36.2]]), hence to each other (compose one diffeomorphism with the inverse of the other), and in particular homeomorphic. But $\{1\} \times \mathbb{R}$ is connected and $\{0\} \times (\mathbb{R} \setminus \{1\})$ is not, and connectedness is preserved by homeomorphisms. In detail: $\{1\} \times \mathbb{R}$ is homeomorphic to $\mathbb{R}$ by $(1, y) \mapsto y$, hence connected (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](4)). $\{0\} \times (\mathbb{R} \setminus \{1\})$ is the union of the two disjoint nonempty sets $\{0\} \times (-\infty, 1)$ and $\{0\} \times (1, \infty)$, each open in it, being its intersection with the open half-plane $\{y < 1\}$, resp. $\{y > 1\}$; so it is not connected. And the image of a connected space under a homeomorphism, a continuous map, is connected (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](1)).
 ^pf-ex-36-1
 
-*Uses:* [[§34 Submersions#^ex-34-1|Ex. §34.1]], [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-2|§36.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§16 Connected Subspaces of ℝ#^cor-16-2|590 §16.2]]
+*Uses:* [[§34 Submersions#^ex-34-1|Ex. §34.1]], [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^prop-36-2|§36.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§16 Connected Subspaces of ℝ#^cor-16-2|590 §16.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]
 
 ![[m591-16-4.svg]]
 *The punctured plane over the $x$-axis. Every fibre is a whole vertical line except the one over $0$, which is broken at the missing point into two half-lines. The fibres are all submanifolds ([[§35 Regular Submanifolds#^cor-35-8|Corollary §35.8]]), but not all of the same type.*
@@ -203,8 +252,15 @@ A section in the sense of [[§36 Fibrations#^def-36-2|Definition §36.2]] is a l
 ^prop-36-4
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* $s$ is smooth, a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$; and $\pi(s(u)) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1(u, f_0) = u$, because $\pi = \mathrm{pr}_1 \circ \phi$.
-
+> *(Not from lecture; filled in.)* Two things are to be shown (Definition [[§36 Fibrations#^def-36-3|§36.3]]): $s : U \to E$ is smooth, and $\pi \circ s = \mathrm{id}_U$.
+>
+> *Smooth.* $s$ is a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$. The first map is the slice inclusion $\iota^{f_0} : U \to U \times F$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], with $M_1 = U$ and $M_2 = F$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]. Then $\phi^{-1} : U \times F \to \pi^{-1}(U)$ is smooth, and so is the inclusion of the open submanifold $\pi^{-1}(U)$ into $E$. So $s$ is smooth as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]).
+>
+> *Section.* For $u \in U$, using $\pi = \mathrm{pr}_1 \circ \phi$ on $\pi^{-1}(U)$ (the commuting triangle of Definition [[§36 Fibrations#^def-36-1|§36.1]]) and $\phi \circ \phi^{-1} = \mathrm{id}$,
+>
+> $$
+> \pi\big(s(u)\big) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1\big(\phi(\phi^{-1}(u, f_0))\big) = \mathrm{pr}_1(u, f_0) = u .
+> $$
 ^pf-36-4
 
-*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]
+*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]

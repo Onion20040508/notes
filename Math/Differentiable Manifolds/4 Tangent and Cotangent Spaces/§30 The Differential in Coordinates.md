@@ -36,11 +36,24 @@ $$
 ^prop-30-1
 
 > [!proof]+ Proof
-> $F^j \circ \varphi^{-1} = y^j \circ F \circ \varphi^{-1} = r^j \circ \psi \circ F \circ \varphi^{-1} = r^j \circ \tilde F = \tilde F^j$ on $\varphi(U)$, using $y^j = r^j \circ \psi$. So the coordinate representation of the function $F^j$ is $\tilde F^j$, and by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $\partial F^j/\partial x^i(p) = \partial (F^j \circ \varphi^{-1})/\partial r^i(\varphi(p)) = \partial \tilde F^j/\partial r^i(\varphi(p))$.
-
+> Two things are claimed: the identity of functions $F^j \circ \varphi^{-1} = \tilde F^j$ on $\varphi(U)$, and the equality of the two partial derivatives at every $p \in U$.
+>
+> *The identity of functions.* Both sides are defined on all of $\varphi(U)$: for $r \in \varphi(U)$ the point $\varphi^{-1}(r)$ lies in $U$, so $F(\varphi^{-1}(r)) \in F(U) \subseteq V$, where $y^j$ and $\psi$ are defined. By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](2), applied to the chart $(V, \psi)$ of $N$, its coordinate functions are $y^j = r^j \circ \psi$ on $V$. Hence, on $\varphi(U)$,
+>
+> $$
+> F^j \circ \varphi^{-1} = y^j \circ F \circ \varphi^{-1} = r^j \circ \psi \circ F \circ \varphi^{-1} = r^j \circ \tilde F = \tilde F^j ,
+> $$
+>
+> where the first equality is the definition $F^j = y^j \circ F$, the second is $y^j = r^j \circ \psi$, the third is the definition $\tilde F = \psi \circ F \circ \varphi^{-1}$, and the fourth is the definition $\tilde F^j = r^j \circ \tilde F$. By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](3), the left side is the coordinate representation $(F^j)_\varphi$ of the function $F^j$ in the chart $(U, \varphi)$. So the coordinate representation of $F^j$ is $\tilde F^j$, on all of $\varphi(U)$. In particular $(F^j)_\varphi$ is smooth, since $\tilde F$ is (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]), so $F^j$ is smooth on $U$ and its partial derivatives are defined.
+>
+> *The partial derivatives.* By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], the upstairs partial derivative of $F^j$ at $p$ is the ordinary partial derivative of its coordinate representation at $\varphi(p)$; and the two functions $F^j \circ \varphi^{-1}$ and $\tilde F^j$, being equal on the open set $\varphi(U) \ni \varphi(p)$, have the same partial derivatives there. So
+>
+> $$
+> \frac{\partial F^j}{\partial x^i}(p) = \frac{\partial (F^j)_\varphi}{\partial r^i}\big(\varphi(p)\big) = \frac{\partial (F^j \circ \varphi^{-1})}{\partial r^i}\big(\varphi(p)\big) = \frac{\partial \tilde F^j}{\partial r^i}\big(\varphi(p)\big) .
+> $$
 ^pf-30-1
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark] Remark: Why This Identity Carries So Much
 > Uribe stated it in Lecture 10 and recalled it at the decisive moment of Lecture 11 — it is marked with “!!!” on page 30 of the handwritten notes. When a student asked whether the matrix in the proof of the normal form should be written with $\tilde F$, the answer was: “it's the same thing … that's how we define partials.” Partial derivatives on a manifold are *defined* by going downstairs, so the matrix of partials of the components $F^j$ upstairs is literally the ordinary Jacobian of $\tilde F$ downstairs. This is what turns every local computation on a manifold into calculus in $\mathbb{R}^m$, and it is used in:
@@ -73,17 +86,28 @@ $$
 ^thm-30-2
 
 > [!proof]+ Proof
-> *(Lecture 10 — “once you think about it a little bit, it's a one-line proof.”)* Linearity is Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]. The $i$-th column of the matrix consists of the coefficients of $F_{\ast p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$, and the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], applied at $F(p)$ with the chart $\psi$, says the $j$-th coefficient of any derivation is its value on $[y^j]$. By the definition of the pushforward,
+> *(Lecture 10 — “once you think about it a little bit, it's a one-line proof.”)* Three things are claimed: $F_{\ast p}$ is linear; the displayed formula for $F_{\ast p}(\partial/\partial x^i|_p)$; and the description of the matrix of $F_{\ast p}$.
+>
+> *Linearity.* This is Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]: $F_{\ast p}$ maps $T_pM$ into $T_{F(p)}N$ and is linear.
+>
+> *The formula.* Fix $i$ and put $E = F_{\ast p}(\partial/\partial x^i|_p)$, a derivation at $F(p)$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]). The universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], applied at the point $F(p)$ of $N$ with the chart $(V, \psi)$, whose coordinate functions are $y^1, \ldots, y^n$, says that the $j$-th coefficient of any derivation at $F(p)$ is its value on the germ $[y^j]$:
 >
 > $$
-> F_{*p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)\big[y^j\big] = \frac{\partial}{\partial x^i}\Big|_p\big[y^j \circ F\big] = \frac{\partial F^j}{\partial x^i}(p).
+> E = \sum_{j=1}^n E\big[y^j\big]\, \frac{\partial}{\partial y^j}\Big|_{F(p)} .
 > $$
 >
-> That is the formula. For the identification with $\tilde F'(\varphi(p))$ — the “claim” of the lecture — this is Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]: the partials are *defined* through the chart, and $F^j \circ \varphi^{-1} = \tilde F^j$, so $\partial F^j/\partial x^i(p) = \partial \tilde F^j/\partial r^i(\varphi(p))$, the $(j,i)$ entry of $\tilde F'(\varphi(p))$. “It's all the same.”
-
+> So it suffices to compute $E[y^j]$. By the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]), $E[y^j] = \partial/\partial x^i|_p\,[y^j \circ F]$; the function $y^j \circ F$ is the component $F^j$, defined on $U$ because $F(U) \subseteq V$; and $\partial/\partial x^i|_p[F^j]$ is what Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] writes $\partial F^j/\partial x^i(p)$. In one chain:
+>
+> $$
+> F_{\ast p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)\big[y^j\big] = \frac{\partial}{\partial x^i}\Big|_p\big[y^j \circ F\big] = \frac{\partial}{\partial x^i}\Big|_p\big[F^j\big] = \frac{\partial F^j}{\partial x^i}(p).
+> $$
+>
+> Substituting these coefficients into the universal formula gives $F_{\ast p}(\partial/\partial x^i|_p) = \sum_j \partial F^j/\partial x^i(p)\, \partial/\partial y^j|_{F(p)}$. That is the formula.
+>
+> *The matrix.* By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), with the basis $e_i = \partial/\partial x^i|_p$ of $T_pM$ (the basis $\mathcal{B}_M$) and the basis $f_j = \partial/\partial y^j|_{F(p)}$ of $T_{F(p)}N$ (the basis $\mathcal{B}_N$), the $i$-th column of the matrix of $F_{\ast p}$ consists of the coefficients of $F_{\ast p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$, and its entry in row $j$ is the coefficient of $f_j$. By the formula, that coefficient is $\partial F^j/\partial x^i(p)$; so $j$ is the row index and $i$ the column index. For the identification with $\tilde F'(\varphi(p))$ — the “claim” of the lecture — this is Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]: the partials are *defined* through the chart, and $F^j \circ \varphi^{-1} = \tilde F^j$, so $\partial F^j/\partial x^i(p) = \partial \tilde F^j/\partial r^i(\varphi(p))$, which is the $(j,i)$ entry of $\tilde F'(\varphi(p))$, row $j$ of the Jacobian being the gradient of the $j$-th component $\tilde F^j$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]). So the two $n \times m$ matrices agree entry by entry. “It's all the same.”
 ^pf-30-2
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§9 Matrices#^ladr-3-31|LADR 3.31]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§9 Matrices#^ladr-3-31|LADR 3.31]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]]
 
 > [!remark]- Connections
 > - The matrix of a linear map with respect to bases: [[§9 Matrices#^ladr-3-31|LADR 3.31]]; the Jacobian matrix of calculus: [[§7 Differentiability#^def-7-3|452 Def. §7.3]].
@@ -110,11 +134,33 @@ $$
 ^cor-30-3
 
 > [!proof]+ Proof
-> $\chi \circ G \circ F \circ \varphi^{-1} = (\chi \circ G \circ \psi^{-1}) \circ (\psi \circ F \circ \varphi^{-1})$ on $\varphi(U)$. By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) the matrix of $(G\circ F)_{*p}$ is the product of the matrices of $G_{*F(p)}$ and $F_{*p}$, and by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the three matrices are the three Jacobians. The formula is also the Euclidean chain rule applied to $\tilde G \circ \tilde F$; the two routes agree, as they must.
-
+> Two things are claimed: the equality $\widetilde{G \circ F} = \tilde G \circ \tilde F$ on $\varphi(U)$, and the matrix identity.
+>
+> *The coordinate representations.* First, the charts $(U, \varphi)$ and $(W, \chi)$ are admissible for $G \circ F$: $(G \circ F)(U) = G(F(U)) \subseteq G(V) \subseteq W$. Let $r \in \varphi(U)$ and $q = \varphi^{-1}(r) \in U$. Then $F(q) \in F(U) \subseteq V$, so $\psi^{-1}(\psi(F(q))) = F(q)$: the identity $\psi^{-1} \circ \psi$ of $V$ may be inserted between $G$ and $F$. Hence $\chi \circ G \circ F \circ \varphi^{-1} = (\chi \circ G \circ \psi^{-1}) \circ (\psi \circ F \circ \varphi^{-1})$ on $\varphi(U)$, that is,
+>
+> $$
+> \widetilde{G \circ F}(r) = \chi\big(G(F(q))\big) = \chi\Big(G\big(\psi^{-1}(\psi(F(q)))\big)\Big) = \big(\chi \circ G \circ \psi^{-1}\big)\big((\psi \circ F \circ \varphi^{-1})(r)\big) = \tilde G\big(\tilde F(r)\big),
+> $$
+>
+> where $\tilde F(r) = \psi(F(q))$ lies in $\psi(V)$, the domain of $\tilde G$.
+>
+> *The matrices.* Apply Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] three times, each time in the coordinate bases of the two charts named:
+> - to $F$ at $p$, with $(U, \varphi)$ and $(V, \psi)$: the matrix of $F_{\ast p}$ is $\tilde F'(\varphi(p))$;
+> - to $G$ at $F(p)$, with $(V, \psi)$ and $(W, \chi)$: the matrix of $G_{\ast F(p)}$ is $\tilde G'(\psi(F(p)))$;
+> - to $G \circ F$ at $p$ (smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), with $(U, \varphi)$ and $(W, \chi)$, admissible by the inclusion above: the matrix of $(G \circ F)_{\ast p}$ is $(\widetilde{G \circ F})'(\varphi(p))$.
+>
+> By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $(G \circ F)_{\ast p} = G_{\ast F(p)} \circ F_{\ast p}$. By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3) the matrix of a composite is the product of the matrices, $[AB] = [A][B]$, provided the same basis is used on the middle space for both factors — here the coordinate basis of $\psi$ at $F(p)$, which is the case. So
+>
+> $$
+> \big(\widetilde{G \circ F}\big)'\big(\varphi(p)\big) = \big[(G \circ F)_{\ast p}\big] = \big[G_{\ast F(p)} \circ F_{\ast p}\big] = \big[G_{\ast F(p)}\big]\,\big[F_{\ast p}\big] = \tilde G'\big(\psi(F(p))\big)\; \tilde F'\big(\varphi(p)\big):
+> $$
+>
+> the three matrices are the three Jacobians, and the matrix of $(G \circ F)_{\ast p}$ is the product of the matrices of $G_{\ast F(p)}$ and $F_{\ast p}$.
+>
+> *A second route.* The formula is also the Euclidean chain rule applied to $\widetilde{G \circ F} = \tilde G \circ \tilde F$ at $\varphi(p)$, where $\tilde F(\varphi(p)) = \psi(F(p))$: the Jacobian of a composite of smooth maps between open subsets of Euclidean spaces is the product of the Jacobians, the outer one taken at the image point. The two routes agree, as they must.
 ^pf-30-3
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[Multivariable Chain Rule|452 §12.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 ![[m591-12-11.svg]]
 *Upstairs the composite of maps between manifolds; downstairs the composite of their coordinate representations. Each square commutes, so the outer rectangle does, and differentiating the bottom row at $\varphi(p)$ multiplies the Jacobians.*
@@ -136,11 +182,22 @@ $$
 ^cor-30-4
 
 > [!proof]+ Proof
-> Apply Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] to $F = \mathrm{id}_M$, with the chart $\tilde\varphi$ on the source and $\varphi$ on the target. Then $F^i = x^i$, the coordinate representation is the transition $\varphi \circ \tilde\varphi^{-1}$, and $(\mathrm{id}_M)_{*p} = \mathrm{id}$ by Proposition [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]].
-
+> Write $n = \dim M$. The claim is an equality of tangent vectors at $p$ for each $j$, together with the identification of the coefficient matrix.
+>
+> *Setting up.* Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] needs a source chart whose domain is mapped into the domain of the target chart. Restrict both charts to the open set $U \cap \tilde U \ni p$; a restriction of a smooth chart to an open subset is again a smooth chart (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)). This changes neither the coordinate derivations at $p$ nor the partial derivatives at $p$, since these are ordinary partial derivatives at $\varphi(p)$, resp. $\tilde\varphi(p)$, which depend only on the functions near that point (the remark on shrinking the chart domain in the proof of Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]]). So we may assume $U = \tilde U$.
+>
+> *Applying the theorem.* Take $F = \mathrm{id}_M$, which is smooth, with the chart $(\tilde U, \tilde\varphi)$, coordinates $\tilde x^j$, on the source and the chart $(U, \varphi)$, coordinates $x^i$, on the target; then $\mathrm{id}_M(\tilde U) = U$. The components of $F$ in the target chart are $F^i = x^i \circ \mathrm{id}_M = x^i$, and the coordinate representation is $\varphi \circ \mathrm{id}_M \circ \tilde\varphi^{-1} = \varphi \circ \tilde\varphi^{-1}$, the transition function. Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], with $\tilde x^j$ in the role of the source coordinates and $x^i$ in the role of the target coordinates, gives
+>
+> $$
+> (\mathrm{id}_M)_{\ast p}\Big(\frac{\partial}{\partial \tilde x^j}\Big|_p\Big) = \sum_{i=1}^n \frac{\partial x^i}{\partial \tilde x^j}(p)\, \frac{\partial}{\partial x^i}\Big|_p .
+> $$
+>
+> By Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], $(\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM}$, so the left side is $\partial/\partial \tilde x^j|_p$. That is the formula.
+>
+> *The matrix.* The formula says that the $j$-th new basis vector $\partial/\partial \tilde x^j|_p$ has the coordinates $\partial x^i/\partial \tilde x^j(p)$ in the old basis $\partial/\partial x^i|_p$, so the change-of-basis matrix $P$ of Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](4) (defined by $e'_j = \sum_i P_{ij}\, e_i$) has entries $P_{ij} = \partial x^i/\partial \tilde x^j(p)$. This is the matrix of $(\mathrm{id}_M)_{\ast p}$ in the two coordinate bases, and by the second part of Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the Jacobian of the coordinate representation $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$.
 ^pf-30-4
 
-*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark]- Connections
 > - The change-of-basis formula of linear algebra: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
@@ -180,11 +237,32 @@ $$
 ^prop-30-5
 
 > [!proof]+ Proof
-> Apply Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] with the identity charts: then $\tilde F = F$, and the matrix of $F_{*a}$ is $F'(a)$. The second statement is the chain rule applied to $t \mapsto g(a + tv)$.
-
+> On $W$ use the identity chart $(W, \mathrm{id}_W)$, whose coordinate functions are the standard coordinates $r^1, \ldots, r^m$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), and on $\mathbb{R}^n$ the identity chart, with coordinates $r^1, \ldots, r^n$. In an identity chart the coordinate representation of a function $g$ is $g$ itself, so by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] the coordinate derivation $\partial/\partial r^i|_a$ sends $[g]$ to the ordinary partial derivative $\partial g/\partial r^i(a)$.
+>
+> *The differential.* Apply Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] with the identity charts; this is allowed, since $F(W) \subseteq \mathbb{R}^n$. The coordinate representation is $\tilde F = \mathrm{id} \circ F \circ \mathrm{id}^{-1} = F$, so the theorem gives
+>
+> $$
+> F_{\ast a}\Big(\frac{\partial}{\partial r^i}\Big|_a\Big) = \sum_{j=1}^n \frac{\partial F^j}{\partial r^i}(a)\, \frac{\partial}{\partial r^j}\Big|_{F(a)} ,
+> $$
+>
+> and the matrix of $F_{\ast a}$ in these bases is $F'(a)$. Under the identifications $\partial/\partial r^i|_a \mapsto e_i$ and $\partial/\partial r^j|_{F(a)} \mapsto e_j$, this says that the linear map $\mathbb{R}^m \to \mathbb{R}^n$ corresponding to $F_{\ast a}$ sends $e_i$ to $\sum_j \partial F^j/\partial r^i(a)\, e_j$, the $i$-th column of $F'(a)$, which is $F'(a)\,e_i$. Two linear maps that agree on a basis are equal (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](2)), so $F_{\ast a}$ corresponds to $F'(a)$. This is also the differential $dF_a$ of [[§22 The Differential of a Map Between Vector Spaces|§22]]: in Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|§22.5]] with the identity coordinates $L = \mathrm{id}$ and $K = \mathrm{id}$, $dF_a = K^{-1} \circ F'(a) \circ L = F'(a)$.
+>
+> *The directional derivative.* Under the identification, $v = \sum_i v^i e_i$ corresponds to $D = \sum_i v^i\, \partial/\partial r^i|_a$. For a germ $[g]$ at $a$, since derivations are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]) and by the identity-chart partials above,
+>
+> $$
+> D[g] = \sum_{i=1}^m v^i\, \frac{\partial}{\partial r^i}\Big|_a[g] = \sum_{i=1}^m v^i\, \frac{\partial g}{\partial r^i}(a) .
+> $$
+>
+> For the second expression, apply the chain rule to $t \mapsto g(a + tv)$: the curve $c(t) = a + tv$ lies in the open domain of a representative $g$ for $|t|$ small, with $c(0) = a$ and $c'(0) = v$, so by the chain rule for a curve (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]])
+>
+> $$
+> \frac{d}{dt}\Big|_{t=0} g(a + tv) = \nabla g(a) \cdot c'(0) = \sum_{i=1}^m \frac{\partial g}{\partial r^i}(a)\, v^i ,
+> $$
+>
+> the same number. So $D$ is the directional derivative $D_v$.
 ^pf-30-5
 
-*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[Multivariable Chain Rule|452 §12.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]]
 
 > [!remark]- Connections
 > - The differential between vector spaces: [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]]; in calculus, [[§10 The Differential#^def-10-1|452 Def. §10.1]] and [[Directional Derivative Formula|452 §9.1 (Directional Derivative Formula)]].
@@ -203,11 +281,50 @@ $$
 ^cor-30-6
 
 > [!proof]+ Proof
-> For linear $L$, $L_{*a}(D_v|_a)[g] = D_v|_a[g \circ L] = \frac{d}{dt}\big|_0\, g(La + t\,Lv) = D_{Lv}|_{La}[g]$. Now take $L = L_0 : V \to \mathbb{R}^m$ a linear coordinate system. It is a chart, hence a diffeomorphism (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), so $(L_0)_{*a}$ is an isomorphism, and it carries $D_v|_a$ to $D_{L_0 v}|_{L_0 a}$, which is $\sum_i (L_0 v)^i\,\partial/\partial r^i$ by Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]. The composite $v \mapsto L_0 v \mapsto \sum_i (L_0v)^i\,\partial/\partial r^i$ is an isomorphism, hence so is $v \mapsto D_v|_a$. The defining formula mentions no basis.
-
+> Let $m = \dim V$. To show: $D_v|_a$ is a well-defined derivation at $a$; the transformation rule for linear $L$; that $v \mapsto D_v|_a$ is a linear isomorphism; and that no basis is involved.
+>
+> *Well defined on germs.* Let $b, w$ be vectors of a finite-dimensional vector space and $g$ smooth on an open neighbourhood of $b$. For $|t|$ small, $b + tw$ lies in that neighbourhood, and $t \mapsto g(b + tw)$ is smooth, as the composite of $g$ with the smooth curve $t \mapsto b + tw$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). Its derivative at $0$ depends only on the values of $g$ near $b$, hence only on the germ $[g]$. So $D_w|_b[g] = \frac{d}{dt}\big|_0\, g(b + tw)$ is a well-defined map on germs at $b$.
+>
+> *A computation on germs.* Let $L : V \to W$ be linear, $b, w \in V$, and $[g]$ a germ at $Lb$ on $W$. Since $L(b + tw) = Lb + t\,Lw$ by linearity,
+>
+> $$
+> D_w|_b[g \circ L] = \frac{d}{dt}\Big|_{t=0} g\big(L(b + tw)\big) = \frac{d}{dt}\Big|_{t=0} g\big(Lb + t\,Lw\big) = D_{Lw}|_{Lb}[g] . \tag{A}
+> $$
+>
+> *$D_v|_a$ is a derivation.* Choose a linear coordinate system $L_0 : V \to \mathbb{R}^m$. It is a chart of $V$ with domain $V$ and image $\mathbb{R}^m$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]), hence a diffeomorphism $V \to \mathbb{R}^m$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), with linear inverse $L_0^{-1}$. Apply (A) to the linear map $L_0^{-1} : \mathbb{R}^m \to V$, at the point $b = L_0a$, with the vector $w = L_0v$: for every germ $[g]$ at $a$ on $V$,
+>
+> $$
+> D_{L_0v}|_{L_0a}\big[g \circ L_0^{-1}\big] = D_v|_a[g] .
+> $$
+>
+> By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] (its second statement, on $\mathbb{R}^m$), $D_{L_0v}|_{L_0a} = \sum_i (L_0v)^i\, \partial/\partial r^i|_{L_0a}$, a linear combination of coordinate derivations (Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]]), hence a derivation at $L_0a$. So by the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) the left side is $\big((L_0^{-1})_{\ast L_0a} D_{L_0v}|_{L_0a}\big)[g]$, and
+>
+> $$
+> D_v|_a = (L_0^{-1})_{\ast L_0a}\Big(\sum_{i=1}^m (L_0v)^i\, \frac{\partial}{\partial r^i}\Big|_{L_0a}\Big) . \tag{B}
+> $$
+>
+> A pushforward of a derivation is a derivation (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), here at $L_0^{-1}(L_0a) = a$. So $D_v|_a \in T_aV$.
+>
+> *Isomorphism.* By (B), $v \mapsto D_v|_a$ is the composite of three maps:
+>
+> $$
+> V \xrightarrow{\ L_0\ } \mathbb{R}^m \longrightarrow T_{L_0a}\mathbb{R}^m \xrightarrow{\ (L_0^{-1})_{\ast L_0a}\ } T_aV, \qquad v \mapsto w = L_0v \mapsto \sum_i w^i\, \frac{\partial}{\partial r^i}\Big|_{L_0a} \mapsto D_v|_a .
+> $$
+>
+> The first is a linear isomorphism (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|§22.1]]); the second is a linear isomorphism because the $\partial/\partial r^i|_{L_0a}$ form a basis of $T_{L_0a}\mathbb{R}^m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], identity chart); the third is a linear isomorphism because $L_0^{-1}$ is a diffeomorphism (Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]). A composite of linear isomorphisms is one, so $v \mapsto D_v|_a$ is a linear isomorphism.
+>
+> *The rule for linear $L$.* A linear $L : V \to W$ is smooth: in linear coordinates $L_0$ on $V$ and $K$ on $W$ its coordinate representation $K \circ L \circ L_0^{-1}$ is linear, hence smooth (Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]). Both $L_{\ast a}(D_v|_a)$ and $D_{Lv}|_{La}$ are derivations at $La$ (by the previous steps, applied in $V$ and in $W$), and for every germ $[g]$ at $La$, by the definition of the pushforward and then (A),
+>
+> $$
+> L_{\ast a}(D_v|_a)[g] = D_v|_a[g \circ L] = \frac{d}{dt}\Big|_0\, g(La + t\,Lv) = D_{Lv}|_{La}[g] .
+> $$
+>
+> So $L_{\ast a}(D_v|_a) = D_{Lv}|_{La}$. In particular, for $L = L_0$, the isomorphism $(L_0)_{\ast a}$ carries $D_v|_a$ to $D_{L_0 v}|_{L_0 a}$, which is $\sum_i (L_0v)^i\,\partial/\partial r^i$ by Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]: this is (B) read backwards, $(L_0)_{\ast a}$ being the inverse of $(L_0^{-1})_{\ast L_0a}$ (Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]).
+>
+> *No basis.* The defining formula $D_v|_a[f] = \frac{d}{dt}\big|_0 f(a + tv)$ mentions no basis; the linear coordinates $L_0$ entered only in the proof.
 ^pf-30-6
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-1|§29.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]
 
 > [!remark] Remark
 > This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]]. It also closes a loop opened in [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
@@ -248,15 +365,28 @@ Moreover, all the tangent spaces of $V$ are identified with one another, and wit
 ^prop-30-7
 
 > [!proof]+ Proof
-> *(Lecture 17: “its pushforward is the identification”; filled in.)* (1) In linear coordinates $\tau_p$ is $x \mapsto x + \tilde p$, smooth, and so is its inverse $\tau_{-p}$. (2) The [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] along a diffeomorphism is an isomorphism ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|Corollary §28.7]]), and for $g$ smooth near $p$,
+> *(Lecture 17: “its pushforward is the identification”; filled in.)*
+>
+> *(1)* Fix a linear coordinate system $L : V \to \mathbb{R}^m$, a chart of $V$ with domain $V$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]), and put $\tilde p = L(p)$. For $x \in \mathbb{R}^m$, by the definition of $\tau_p$ and the linearity of $L$,
 >
 > $$
-> (\tau_p)_{*0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g] .
+> \big(L \circ \tau_p \circ L^{-1}\big)(x) = L\big(L^{-1}x + p\big) = x + \tilde p .
 > $$
-
+>
+> So in linear coordinates $\tau_p$ is $x \mapsto x + \tilde p$, which is smooth; and $\tau_p = L^{-1} \circ (x \mapsto x + \tilde p) \circ L$ is continuous. By Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]], $\tau_p$ is smooth. The same computation with $-p$ in place of $p$ shows that $\tau_{-p}$ is smooth, and $\tau_{-p}(\tau_p(v)) = v + p - p = v$, $\tau_p(\tau_{-p}(v)) = v - p + p = v$. So $\tau_p$ is a smooth bijection with smooth inverse $\tau_{-p}$, a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
+>
+> *(2)* Since $\tau_p(0) = p$, the pushforward goes $(\tau_p)_{\ast 0} : T_0V \to T_pV$. The pushforward along a diffeomorphism is a linear isomorphism (Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], applied to $\tau_p$ by (1)). For $v \in V$ and $g$ smooth near $p$, by the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]), the definition of $D_v|_0$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]) together with $(g \circ \tau_p)(0 + tv) = g(tv + p)$, and the definition of $D_v|_p$,
+>
+> $$
+> (\tau_p)_{\ast 0}\big(D_v|_0\big)[g] = D_v|_0[g \circ \tau_p] = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g] .
+> $$
+>
+> Both sides are derivations at $p$ that take the same value on every germ, so $(\tau_p)_{\ast 0}(D_v|_0) = D_v|_p$.
+>
+> *The composite.* The identification $V \cong T_0V$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] is $v \mapsto D_v|_0$; following it by $(\tau_p)_{\ast 0}$ gives, by (2), $v \mapsto D_v|_0 \mapsto D_v|_p$, the identification of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] at $p$.
 ^pf-30-7
 
-*Uses:* [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]
+*Uses:* [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
 
 “This is a canonical way to identify all of these tangent vectors. … That's what we did already”: a [[§25 The Geometric Tangent Space#^def-25-1|geometric tangent vector]] to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
 
@@ -315,21 +445,26 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 ^prop-30-8
 
 > [!proof]+ Proof
-> (1) Let $x \in \varphi(U)$ and $q = \varphi^{-1}(x) \in U$. Since $F(U) \subseteq V$ and $\psi$ is injective on $V$,
+> *(1)* Let $x \in \varphi(U)$ and $q = \varphi^{-1}(x) \in U$. Then $F(q) \in F(U) \subseteq V$ and $c \in V$, and $\psi$ is injective on $V$; with the definitions $\tilde F = \psi \circ F \circ \varphi^{-1}$ and $\tilde c = \psi(c)$,
 >
 > $$
 > \tilde F(x) = \tilde c \iff \psi\big(F(q)\big) = \psi(c) \iff F(q) = c .
 > $$
 >
-> So $\varphi\big(F^{-1}(c) \cap U\big) = \tilde F^{-1}(\tilde c)$, and $F^{-1}(c) \cap U = F^{-1}(c)$ by hypothesis. A homeomorphism restricts to a homeomorphism from any subset onto its image, both with the subspace topology.
+> So $x \in \tilde F^{-1}(\tilde c)$ exactly when $\varphi^{-1}(x) \in F^{-1}(c)$; as $\varphi : U \to \varphi(U)$ is a bijection, this says $\varphi\big(F^{-1}(c) \cap U\big) = \tilde F^{-1}(\tilde c)$. And $F^{-1}(c) \cap U = F^{-1}(c)$ by the hypothesis $F^{-1}(c) \subseteq U$. A homeomorphism restricts to a homeomorphism from any subset onto its image, both with the subspace topology (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3)); applied to the chart $\varphi : U \to \varphi(U)$ and the subset $F^{-1}(c)$, it gives the homeomorphism $F^{-1}(c) \to \tilde F^{-1}(\tilde c)$.
 >
-> (2) Let $p \in F^{-1}(c)$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], the matrix of $F_{*p}$ in the coordinate bases of the two charts is the Jacobian $\tilde F'(\varphi(p))$, and a linear map is surjective exactly when its matrix has rank equal to the dimension of the target (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]). So $p$ is a regular point of $F$ if and only if $\varphi(p)$ is a regular point of $\tilde F$. By (1), $p$ runs over $F^{-1}(c)$ exactly as $\varphi(p)$ runs over $\tilde F^{-1}(\tilde c)$.
+> *(2)* The map $\tilde F$ is smooth on the open set $\varphi(U)$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]), so its Jacobian is defined. Let $p \in F^{-1}(c)$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], the matrix of $F_{\ast p}$ in the coordinate bases of the two charts is the Jacobian $\tilde F'(\varphi(p))$. A linear map $A : T_pM \to T_{F(p)}N$ is surjective exactly when its image, a subspace of dimension $\operatorname{rank} A$, is all of the $n$-dimensional target, i.e. when $\operatorname{rank} A = n$; and $\operatorname{rank} A$ is the rank of its matrix (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)). So
 >
-> (3) By (2) and Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], applied on the open set $\varphi(U) \subseteq \mathbb{R}^m$ with $k = n$, the Euclidean level set $\tilde F^{-1}(\tilde c)$ is a topological manifold of dimension $m - n$. By (1), $F^{-1}(c)$ is homeomorphic to it, and being a topological manifold is preserved by homeomorphisms.
-
+> $$
+> F_{\ast p} \text{ surjective} \iff \operatorname{rank} \tilde F'\big(\varphi(p)\big) = n \iff \tilde F'\big(\varphi(p)\big) : \mathbb{R}^m \to \mathbb{R}^n \text{ surjective}:
+> $$
+>
+> $p$ is a regular point of $F$ (Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]]) if and only if $\varphi(p)$ is a regular point of $\tilde F$ (Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]], applied to $\tilde F$ on $\varphi(U)$). By (1), $p$ runs over $F^{-1}(c)$ exactly as $\varphi(p)$ runs over $\tilde F^{-1}(\tilde c)$. Hence every point of $F^{-1}(c)$ is a regular point of $F$ — that is, $c$ is a regular value of $F$ (Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]]) — if and only if every point of $\tilde F^{-1}(\tilde c)$ is a regular point of $\tilde F$ — that is, $\tilde c$ is a regular value of $\tilde F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]).
+>
+> *(3)* If $F^{-1}(c)$ is empty there is nothing to prove. Otherwise, at a point $p$ of it $F_{\ast p} : T_pM \to T_{F(p)}N$ is surjective, so $m \ge n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)). By (2), $\tilde c$ is a regular value of the smooth map $\tilde F$ on the open set $\varphi(U) \subseteq \mathbb{R}^m$, so Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], applied with $k = n$ and $m - n$ in place of its $n$ (so that $\mathbb{R}^{n+k}$ becomes $\mathbb{R}^m$), shows that the Euclidean level set $\tilde F^{-1}(\tilde c)$ is a topological manifold of dimension $m - n$. By (1), $F^{-1}(c)$ is homeomorphic to it, and being a topological manifold of a given dimension is preserved by homeomorphisms: second countability, the Hausdorff property and local Euclideanness (Definition [[§2 Topological Manifolds#^def-2-2|§2.2]]) are all defined through open sets, which a homeomorphism matches up.
 ^pf-30-8
 
-*Uses:* [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
+*Uses:* [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]]
 
 ![[m591-12-13.svg]]
 *The proposition in one square. The level set upstairs is carried by the chart onto a level set downstairs, in Euclidean space, and the question “is $c$ regular?” is carried with it: surjectivity of $F_{\ast p}$ upstairs is the rank of $\tilde F'$ downstairs.*
@@ -353,11 +488,21 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 ^cor-30-9
 
 > [!proof]+ Proof
-> Hausdorffness and second countability are inherited from $M$ (Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]). For local Euclideanness, let $p \in F^{-1}(c)$. Choose smooth charts $(V, \psi)$ around $c$ and $(U_0, \varphi_0)$ around $p$, and put $U = U_0 \cap F^{-1}(V)$, an open neighbourhood of $p$ because $F$ is continuous; restricting $\varphi_0$ gives a smooth chart $(U, \varphi)$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]]). Apply Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]] to the restriction $F|_U : U \to N$, a smooth map on the open submanifold $U$: its level set $F^{-1}(c) \cap U$ lies in $U$, it maps $U$ into $V$, and $c$ is still a regular value, since $T_qU = T_qM$ and $(F|_U)_{*q} = F_{*q}$ for $q \in U$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). So $F^{-1}(c) \cap U$, an open neighbourhood of $p$ in $F^{-1}(c)$, is a topological manifold of dimension $m - n$; in particular $p$ has a neighbourhood in $F^{-1}(c)$ homeomorphic to an open subset of $\mathbb{R}^{m-n}$.
-
+> By Definition [[§2 Topological Manifolds#^def-2-2|§2.2]], three properties of $F^{-1}(c)$, with the subspace topology, must be shown: Hausdorff, second countable, and locally Euclidean of dimension $m - n$.
+>
+> *Hausdorff and second countable.* Both are inherited from $M$ (Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]).
+>
+> *Locally Euclidean.* Let $p \in F^{-1}(c)$. Choose smooth charts $(V, \psi)$ around $c$ and $(U_0, \varphi_0)$ around $p$, and put $U = U_0 \cap F^{-1}(V)$, an open neighbourhood of $p$ because $F$ is continuous and $F(p) = c \in V$; restricting $\varphi_0$ gives a smooth chart $(U, \varphi)$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]]). Apply Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]] to the restriction $F|_U : U \to N$, a smooth map on the open submanifold $U$ (of dimension $m$), with the charts $(U, \varphi)$ and $(V, \psi)$. Its hypotheses hold:
+> - its level set $(F|_U)^{-1}(c) = F^{-1}(c) \cap U$ lies in $U$;
+> - $c \in V$;
+> - it maps $U$ into $V$, because $U \subseteq F^{-1}(V)$.
+>
+> And $c$ is still a regular value of $F|_U$. Indeed, $F|_U = F \circ \iota$ with $\iota : U \hookrightarrow M$ the inclusion, so for $q \in F^{-1}(c) \cap U$ the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives $(F|_U)_{\ast q} = F_{\ast q} \circ \iota_{\ast q}$; since $\iota_{\ast q}$ is the isomorphism by which $T_qU = T_qM$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]), $(F|_U)_{\ast q} = F_{\ast q}$ under this identification, and it is surjective because $q \in F^{-1}(c)$ is a regular point of $F$. By Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]](3), $F^{-1}(c) \cap U$ is a topological manifold of dimension $m - n$.
+>
+> It remains to place this inside $F^{-1}(c)$. The set $F^{-1}(c) \cap U$ is open in $F^{-1}(c)$, being the intersection of $F^{-1}(c)$ with the open set $U$ of $M$ (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]), and its topology as a subspace of $U$ and as a subspace of $F^{-1}(c)$ are both the subspace topology from $M$. A chart of the manifold $F^{-1}(c) \cap U$ at $p$ has a domain open in $F^{-1}(c) \cap U$, hence open in $F^{-1}(c)$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). So $p$ has a neighbourhood in $F^{-1}(c)$ homeomorphic to an open subset of $\mathbb{R}^{m-n}$.
 ^pf-30-9
 
-*Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]]
+*Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!remark]- Connections
 > - The smooth half, $F^{-1}(c)$ a submanifold with tangent space $\ker F_{*p}$: [[§35 Regular Submanifolds#^thm-35-7|§35.7]]; the Euclidean original: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
@@ -370,13 +515,37 @@ This is the topological half of the regular value theorem for manifolds, and it 
 ^prop-30-10
 
 > [!proof]+ Proof
-> *(Assignment 4, Problem 1: the submitted solution, condensed.)* *$F$ is locally constant.* Fix $p_0 \in M$. Take a chart $(V, \psi)$ at $F(p_0)$ and a chart at $p_0$ whose domain $U_0$ satisfies $F(U_0) \subseteq V$ and whose image is an open ball $B$ — shrink by continuity of $F$, then to a ball. The coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : B \to \mathbb{R}^n$ has Jacobian $\tilde F'(\varphi(p))$, the matrix of $F_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), so $\tilde F' \equiv 0$ on $B$. For $p \in U_0$, the segment from $\varphi(p_0)$ to $\varphi(p)$ stays in the convex $B$, and the [[§29 The Mean Value Theorem#^thm-29-3|mean value theorem]] applied to each component of $\tilde F$ along it gives $\tilde F(\varphi(p)) = \tilde F(\varphi(p_0))$; since $\psi$ is injective, $F(p) = F(p_0)$.
+> *(Assignment 4, Problem 1: the submitted solution, condensed.)* Two steps: first, every point has an open neighbourhood on which $F$ is constant; second, a map with this property on a connected space is constant. (If $M$ is empty there is nothing to prove.)
 >
-> *$F$ is constant.* Let $c = F(p_0)$. The set $F^{-1}(c)$ is closed, since $F$ is continuous, and open, since $F$ is locally constant; it is nonempty. As $M$ is connected, $F^{-1}(c) = M$.
-
+> *$F$ is locally constant.* Fix $p_0 \in M$.
+>
+> *Charts.* Take a chart $(V, \psi)$ at $F(p_0)$ and a chart $(U_1, \varphi_1)$ at $p_0$. The set $U_2 = U_1 \cap F^{-1}(V)$ is open, since $F$ is continuous, and contains $p_0$. Its image $\varphi_1(U_2)$ is open in $\mathbb{R}^m$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)) and contains $\varphi_1(p_0)$, so it contains an open ball $B$ centred at $\varphi_1(p_0)$. Put $U_0 = \varphi_1^{-1}(B)$ and $\varphi = \varphi_1|_{U_0}$: a chart at $p_0$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)) whose image is the ball $B$ and whose domain satisfies $F(U_0) \subseteq V$ — shrink by continuity of $F$, then to a ball.
+>
+> *Zero Jacobian.* The coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : B \to \mathbb{R}^n$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]). For $p \in U_0$, the matrix of $F_{\ast p}$ in the coordinate bases is the Jacobian $\tilde F'(\varphi(p))$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]). By hypothesis $F_{\ast p} = 0$, which sends every basis vector to $0$, so every entry of its matrix is $0$. As $p$ runs over $U_0$, $\varphi(p)$ runs over $B$; so $\tilde F' \equiv 0$ on $B$, that is, $\partial \tilde F^j/\partial r^i = 0$ on $B$ for all $i$ and $j$.
+>
+> *Mean value theorem.* Let $p \in U_0$, and put $a = \varphi(p_0)$ and $b = \varphi(p)$. The ball $B$ is convex, so the segment $\sigma(s) = a + s\,(b - a)$, $s \in [0, 1]$, stays in $B$ (and, $B$ being open, $\sigma$ stays in $B$ for $s$ in an open interval containing $[0,1]$). For each $j$, the function $h_j(s) = \tilde F^j(\sigma(s))$ is differentiable there, and by the chain rule for a curve (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]])
+>
+> $$
+> h_j'(s) = \sum_{i=1}^m \frac{\partial \tilde F^j}{\partial r^i}\big(\sigma(s)\big)\,(b^i - a^i) = 0 .
+> $$
+>
+> The mean value theorem gives some $\xi \in (0,1)$ with $h_j(1) - h_j(0) = h_j'(\xi)\,(1 - 0) = 0$, so $\tilde F^j(b) = \tilde F^j(a)$ for every $j$. Hence
+>
+> $$
+> \psi\big(F(p)\big) = \tilde F\big(\varphi(p)\big) = \tilde F\big(\varphi(p_0)\big) = \psi\big(F(p_0)\big),
+> $$
+>
+> and since $F(p), F(p_0) \in V$ and $\psi$ is injective on $V$, $F(p) = F(p_0)$. So $F$ is constant on the open neighbourhood $U_0$ of $p_0$.
+>
+> *$F$ is constant.* Let $c = F(p_0)$ and $A = F^{-1}(c)$.
+> - $A$ is closed. $N$ is Hausdorff (Definition [[§2 Topological Manifolds#^def-2-2|§2.2]]), so each $q \ne c$ has a neighbourhood not containing $c$ (Definition [[§1 Point-Set Topology Review#^def-1-8|§1.8]]); thus $N \setminus \{c\}$ is open and $\{c\}$ is closed, and $A = F^{-1}(\{c\})$ is closed since $F$ is continuous.
+> - $A$ is open. If $q \in A$, the first step at $q$ gives an open $U_q \ni q$ with $F \equiv F(q) = c$ on $U_q$, so $U_q \subseteq A$.
+> - $A$ is nonempty: $p_0 \in A$.
+>
+> Then $A$ and $M \setminus A$ are disjoint open sets with union $M$. As $M$ is connected, one of them is empty, and $A \ne \emptyset$; so $M \setminus A = \emptyset$, that is, $F^{-1}(c) = M$.
 ^pf-30-10
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 > [!remark]- Connections
 > - Connectedness via clopen sets: [[§15 Connected Spaces#^lem-15-1|590 Lem. §15.1]]; the one-variable original: [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (vanishing derivative means constant).
