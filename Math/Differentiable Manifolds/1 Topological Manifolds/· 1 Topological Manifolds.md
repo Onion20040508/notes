@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 192 later results
-- [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]: 188 later results
-- [[§3 Subspaces and Products#^prop-3-9|Proposition §3.9: Coarsest Topology with Continuous Projections]]: 188 later results
-- [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]: 188 later results
+- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 193 later results
+- [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]: 189 later results
+- [[§3 Subspaces and Products#^prop-3-9|Proposition §3.9: Coarsest Topology with Continuous Projections]]: 189 later results
+- [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]: 189 later results

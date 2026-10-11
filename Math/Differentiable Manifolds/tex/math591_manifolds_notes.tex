@@ -239,7 +239,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \node[draw=orange!70!black, fill=orange!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (L) at (4.6,-7.8) {\textbf{Linear} \ref*{sec:vector-spaces}--\ref*{sec:on-un-smooth}\\ vector spaces, differentials, $\Ogp(n)$, $\Ugp(n)$};
 \node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T1) at (0,-9.9) {\textbf{Geometric} \ref*{sec:tangent}--\ref*{sec:transversality}\\ $T^{\geo}_pM = \ker F'(p)$};
 \node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (T2) at (9.2,-9.9) {\textbf{Abstract} \ref*{sec:abstract-tangent}--\ref*{sec:velocities}\\ $T_pM$: derivations of germs};
-\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (C) at (4.6,-11.9) {\ref*{sec:cotangent}\\ cotangent space};
+\node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (C) at (4.6,-11.9) {\ref*{sec:cotangent}--\ref*{sec:cotangent-germs}\\ cotangent space};
 \node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (M) at (9.2,-13.6) {\ref*{sec:special-maps}--\ref*{sec:submersions}\\ local diffeomorphisms, submersions};
 \draw[->, thick, gray!70, ] (F) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (E1);
 \draw[->, thick, gray!70, ] (F) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {} (Q1);
@@ -7030,7 +7030,7 @@ Let $M$ be a smooth $n$-manifold and $p \in M$. Then the abstract tangent space 
 \textbf{Comparison with Lee.} Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition~3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition~5.38). The course starts geometrically, with $T^{\geo}_pM = \ker F'(p)$ inside the ambient space (Theorem~\ref{thm:tangent-kernel}), and reaches derivations afterwards. The consequence above is where the two orders meet.
 
 \begin{rembox}[A Derivation Sees Only the First Derivatives]\label{rem:derivation-sees-only-first-derivatives}
-The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the \emph{linear} term --- ``of the entire Taylor series of the germ, all I care about are the first partials.'' \S\ref{sub:cotangent-germs} says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to \emph{second} order (Proposition~\ref{prop:second-order}); and $I_p/I_p^2$ is canonically the \emph{cotangent space} $T_p^*M$ of Definition~\ref{def:cotangent}, built with no dualizing at all (Theorem~\ref{thm:cotangent-ideal}). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, ``it is more natural to define the dual'': the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
+The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the \emph{linear} term --- ``of the entire Taylor series of the germ, all I care about are the first partials.'' \ref{sec:cotangent-germs} says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to \emph{second} order (Proposition~\ref{prop:second-order}); and $I_p/I_p^2$ is canonically the \emph{cotangent space} $T_p^*M$ of Definition~\ref{def:cotangent}, built with no dualizing at all (Theorem~\ref{thm:cotangent-ideal}). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, ``it is more natural to define the dual'': the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
 \end{rembox}
 
 \begin{thmbox}[Dimension of the Tangent Space]\thmlabel{thm:tangent-dimension}
@@ -7804,7 +7804,7 @@ This is the second of Uribe's three views, and it uses the velocities of Assignm
 
 \section{The Cotangent Space}\label{sec:cotangent}
 
-\roadmark{Stage: abstract, dual}{Differentials of functions and the cotangent space: defined as a dual, then recovered from germs alone.}
+\roadmark{Stage: abstract, dual}{The cotangent space as the dual of the tangent space, and the differential of a function as a covector; in coordinates (\ref{sec:covector-coords}) and from germs alone (\ref{sec:cotangent-germs}) after this.}
 
 % ============================================================================
 % Lecture 10 (Wed Sep 23, 2026)
@@ -7892,6 +7892,47 @@ For every $D \in T_pM$, $\ df_p(D) = D[f]$. In particular $df_p\big(\partial/\pa
 By Definition~\ref{def:differential-function} and the definition of the pushforward (Definition~\ref{def:pushforward}), $df_p(D) = (f_{*p}D)[r] = D[r \circ f] = D[f]$, since $r \circ f = f$ ($r$ is the identity of $\mathbb{R}$, Definition~\ref{def:standard-coordinate-R}). For $D = \partial/\partial x^j|_p$ this is $\partial/\partial x^j|_p\,[f] = \partial f/\partial x^j(p)$ (Definition~\ref{def:coordinate-derivation}).
 \end{proof}
 
+\begin{corbox}[Properties of the Differential of a Function]\thmlabel{cor:df-properties}
+Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$.
+\begin{enumerate}
+    \item \emph{Linearity:} $d(af + bg)_p = a\,df_p + b\,dg_p$.
+    \item \emph{Product rule:} $d(fg)_p = f(p)\,dg_p + g(p)\,df_p$.
+    \item \emph{Chain rule:} if $h$ is smooth on an open interval containing the values of $f$ near $p$, then $d(h \circ f)_p = h'(f(p))\,df_p$.
+\end{enumerate}
+\leeref{Proposition 11.20}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} All three are equalities in $T_p^*M = (T_pM)^*$ (Definition~\ref{def:cotangent}), whose elements are functions on $T_pM$; two of them are equal when they take the same value at every $D \in T_pM$, and sums and scalar multiples in a dual space are taken pointwise, $(a\alpha + b\beta)(D) = a\,\alpha(D) + b\,\beta(D)$ (Definition~\ref{def:dual}). So fix $D \in T_pM$. Each step below uses one of: Proposition~\ref{prop:df-derivation}, $dk_p(D) = D[k]$ for any $k$ smooth near $p$; the algebra operations on germs (Proposition~\ref{prop:germ-algebra}), $[af + bg] = a[f] + b[g]$ and $[fg] = [f][g]$; and the two defining properties of the derivation $D$ (Definition~\ref{def:derivation}).
+
+\emph{(1)} By $\mathbb{R}$-linearity of $D$:
+\[
+d(af + bg)_p(D) = D\big[af + bg\big] = D\big(a[f] + b[g]\big) = a\,D[f] + b\,D[g] = a\,df_p(D) + b\,dg_p(D) = \big(a\,df_p + b\,dg_p\big)(D).
+\]
+
+\emph{(2)} By the Leibniz rule $D([f][g]) = f(p)\,D[g] + g(p)\,D[f]$, applied to the germs $[f]$ and $[g]$:
+\[
+d(fg)_p(D) = D\big[fg\big] = D\big([f][g]\big) = f(p)\,D[g] + g(p)\,D[f] = f(p)\,dg_p(D) + g(p)\,df_p(D) = \big(f(p)\,dg_p + g(p)\,df_p\big)(D).
+\]
+Here $f(p)$ and $g(p)$ are numbers, the values of the germs at $p$, so the right side is a linear combination of the covectors $dg_p$ and $df_p$.
+
+\emph{(3)} The composite $h \circ f$ is smooth near $p$, and $h$ is smooth near $f(p)$, so $[h]$ is a germ at $f(p)$ on $\mathbb{R}$. By the definition of the pushforward (Definition~\ref{def:pushforward}), $D[h \circ f] = (f_{*p}D)[h]$. By Definition~\ref{def:differential-function}, $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; this is an equality of derivations at $f(p)$, so both sides take the same value on $[h]$. With Definition~\ref{def:coordinate-derivation-R}:
+\[
+d(h \circ f)_p(D) = D[h \circ f] = (f_{*p}D)[h] = df_p(D)\,\frac{\partial}{\partial r}\Big|_{f(p)}[h] = df_p(D)\,h'(f(p)) = \big(h'(f(p))\,df_p\big)(D).
+\]
+Since $D$ was arbitrary, the three identities hold in $T_p^*M$.
+\end{proof}
+
+% ============================================================================
+% SECTION: COVECTORS IN COORDINATES
+% ============================================================================
+
+\section{Covectors in Coordinates}\label{sec:covector-coords}
+
+\roadmark{Stage: abstract, dual}{In a chart, the differentials $dx^i|_p$ of the coordinate functions form the basis of $T_p^*M$ dual to the coordinate derivations, and a covector is determined by its components.}
+
+\textit{Lecture 10, continued. The cotangent space and the differential of a function were defined in \ref{sec:cotangent} without coordinates; a chart now gives $T_p^*M$ a basis, and every covector components.}
+
 \begin{lembox}[The Differential in Coordinates]\thmlabel{lem:df-coords}
 Let $(x^1, \ldots, x^m)$ be coordinates near $p$, and write $dx^i|_p$ for the differential at $p$ of the coordinate function $x^i$. Then $\{dx^1|_p, \ldots, dx^m|_p\}$ is the dual basis of $\{\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p\}$, so $\dim T_p^*M = m$ (Proposition~\ref{prop:dual-basis}), and for every smooth $f$ defined near $p$,
 \[
@@ -7935,37 +7976,6 @@ The numbers $a_1, \ldots, a_m$ are the \textbf{components} of $\alpha$ in the ch
 \alpha\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, dx^j\big|_p\Big(\frac{\partial}{\partial x^k}\Big|_p\Big) = \sum_{j=1}^m a_j\, \delta^j_k = a_k .
 \]
 This is the second formula of Proposition~\ref{prop:dual-basis}, with $e_j = \partial/\partial x^j|_p$ and $\varepsilon^j = dx^j|_p$.
-\end{proof}
-
-\begin{corbox}[Properties of the Differential of a Function]\thmlabel{cor:df-properties}
-Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$.
-\begin{enumerate}
-    \item \emph{Linearity:} $d(af + bg)_p = a\,df_p + b\,dg_p$.
-    \item \emph{Product rule:} $d(fg)_p = f(p)\,dg_p + g(p)\,df_p$.
-    \item \emph{Chain rule:} if $h$ is smooth on an open interval containing the values of $f$ near $p$, then $d(h \circ f)_p = h'(f(p))\,df_p$.
-\end{enumerate}
-\leeref{Proposition 11.20}
-\end{corbox}
-
-\begin{proof}
-\textit{(Not from lecture; filled in.)} All three are equalities in $T_p^*M = (T_pM)^*$ (Definition~\ref{def:cotangent}), whose elements are functions on $T_pM$; two of them are equal when they take the same value at every $D \in T_pM$, and sums and scalar multiples in a dual space are taken pointwise, $(a\alpha + b\beta)(D) = a\,\alpha(D) + b\,\beta(D)$ (Definition~\ref{def:dual}). So fix $D \in T_pM$. Each step below uses one of: Proposition~\ref{prop:df-derivation}, $dk_p(D) = D[k]$ for any $k$ smooth near $p$; the algebra operations on germs (Proposition~\ref{prop:germ-algebra}), $[af + bg] = a[f] + b[g]$ and $[fg] = [f][g]$; and the two defining properties of the derivation $D$ (Definition~\ref{def:derivation}).
-
-\emph{(1)} By $\mathbb{R}$-linearity of $D$:
-\[
-d(af + bg)_p(D) = D\big[af + bg\big] = D\big(a[f] + b[g]\big) = a\,D[f] + b\,D[g] = a\,df_p(D) + b\,dg_p(D) = \big(a\,df_p + b\,dg_p\big)(D).
-\]
-
-\emph{(2)} By the Leibniz rule $D([f][g]) = f(p)\,D[g] + g(p)\,D[f]$, applied to the germs $[f]$ and $[g]$:
-\[
-d(fg)_p(D) = D\big[fg\big] = D\big([f][g]\big) = f(p)\,D[g] + g(p)\,D[f] = f(p)\,dg_p(D) + g(p)\,df_p(D) = \big(f(p)\,dg_p + g(p)\,df_p\big)(D).
-\]
-Here $f(p)$ and $g(p)$ are numbers, the values of the germs at $p$, so the right side is a linear combination of the covectors $dg_p$ and $df_p$.
-
-\emph{(3)} The composite $h \circ f$ is smooth near $p$, and $h$ is smooth near $f(p)$, so $[h]$ is a germ at $f(p)$ on $\mathbb{R}$. By the definition of the pushforward (Definition~\ref{def:pushforward}), $D[h \circ f] = (f_{*p}D)[h]$. By Definition~\ref{def:differential-function}, $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; this is an equality of derivations at $f(p)$, so both sides take the same value on $[h]$. With Definition~\ref{def:coordinate-derivation-R}:
-\[
-d(h \circ f)_p(D) = D[h \circ f] = (f_{*p}D)[h] = df_p(D)\,\frac{\partial}{\partial r}\Big|_{f(p)}[h] = df_p(D)\,h'(f(p)) = \big(h'(f(p))\,df_p\big)(D).
-\]
-Since $D$ was arbitrary, the three identities hold in $T_p^*M$.
 \end{proof}
 
 \begin{rembox}\label{rem:cotangent}
@@ -8020,9 +8030,15 @@ The differential as a covector, for $f(x,y) = y + 0.3x^2$ near $p = (0.8, 0)$. L
 ``The standard formula from Calc 3 now has this manifold general interpretation.'' The formula $df = \sum \partial f/\partial x^i\,dx^i$ of multivariable calculus is now a statement about covectors: the $dx^i|_p$ are not infinitesimals but the dual basis of the coordinate derivations, the coefficients are numbers, and the dual basis ``extracts the components of a vector in the original basis.'' What does \emph{not} survive on a manifold is the gradient. A function on $M$ has no gradient \emph{vector} --- converting $df_p$ into a vector requires an inner product on $T_pM$, i.e.\ a Riemannian metric --- but it always has its differential $df_p \in T_p^*M$, and that is where differentials of scalar functions live. Differential forms, later in the term, will be built from covectors, and will pull back as naturally as germs do. Uribe also announced that tangent vectors, written $D$ while thought of as derivations, will soon be written $v$.
 \end{rembox}
 
-\subsection{The Cotangent Space from Germs}\label{sub:cotangent-germs}
+% ============================================================================
+% SECTION: THE COTANGENT SPACE FROM GERMS
+% ============================================================================
 
-\textit{Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^*$. This subsection shows that it also has a description with no dualizing at all, in terms of germs alone --- ``as you can see, it has the natural definition $I_p/I_p^2$.'' The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the Linear Algebra Toolkit for free.}
+\section{The Cotangent Space from Germs}\label{sec:cotangent-germs}\label{sub:cotangent-germs}
+
+\roadmark{Stage: abstract, dual}{The cotangent space recovered from germs alone, $T_p^*M \cong I_p/I_p^2$, with no dualizing; covectors then pull back along smooth maps, as germs do.}
+
+\textit{Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^*$. This section shows that it also has a description with no dualizing at all, in terms of germs alone --- ``as you can see, it has the natural definition $I_p/I_p^2$.'' The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the Linear Algebra Toolkit for free.}
 
 \begin{defbox}[The Space $I_p/I_p^2$]\deflabel{def:Ip-quotient}
 $I_p/I_p^2$ is the quotient vector space (Definition~\ref{def:quotient-vs}) of $I_p$ by its subspace $I_p^2$ (Lemma~\ref{lem:Ip-subspaces}). The class of $[f] \in I_p$ is written $[[f]] = [f] + I_p^2$, and $[[f]] = [[f']]$ iff $[f'] - [f] \in I_p^2$.
@@ -8242,11 +8258,48 @@ F_p^*\big(df_{F(p)}\big)(v) = df_{F(p)}\big(F_{*p}v\big) = \big(F_{*p}v\big)[f] 
 The first equality is the definition of the dual map; the second, of the differential of a function, applied to the vector $F_{*p}v \in T_{F(p)}N$; the third, of the pushforward; the fourth, of the differential of $f \circ F$. Two covectors that agree on every $v$ are equal.
 \end{proof}
 
-In $\mathbb{R}^n$, with the dot-product identification of the figure above, the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_*$ ``we should have called the differential of $F$ ages ago'': for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{*p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
-
 \begin{rembox}[The Two Differentials Meet]\label{rem:pullback-d-chain-rule}
 In $\mathbb{R}^n$, with the dot-product identification of Remark~\ref{rem:differential-not-gradient}, the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_*$ ``we should have called the differential of $F$ ages ago'': for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{*p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
 \end{rembox}
+
+\textit{Not from lecture: the pullback of covectors in the germ picture of this section.} The pullback of germs (Definition~\ref{def:germ-pullback}) already moved functions backward along $F$, and the pushforward of derivations was built from it, $F_{*p}D = D \circ F_p^*$ (Definition~\ref{def:pushforward}). Through the isomorphism $\Phi$ of Theorem~\ref{thm:cotangent-ideal}, the pullback of covectors is that same pullback of germs.
+
+\begin{propbox}[Pullback of Covectors from the Pullback of Germs]\thmlabel{prop:pullback-germ-picture}
+Let $F : M \to N$ be smooth, $p \in M$, and $q = F(p)$.
+\begin{enumerate}
+    \item The pullback of germs $F_p^* : C^\infty_q(N) \to C^\infty_p(M)$ maps $I_q$ into $I_p$ and $I_q^2$ into $I_p^2$, so it induces a linear map
+    \[
+    \bar F_p^* : I_q/I_q^2 \longrightarrow I_p/I_p^2, \qquad [[g]] \longmapsto [[g \circ F]] .
+    \]
+    \item Under the isomorphisms $\Phi_q : I_q/I_q^2 \to T_q^*N$ and $\Phi_p : I_p/I_p^2 \to T_p^*M$ of Theorem~\ref{thm:cotangent-ideal}, $\bar F_p^*$ is the pullback of covectors (Definition~\ref{def:pullback-covector}):
+    \[
+    \Phi_p \circ \bar F_p^* = F_p^* \circ \Phi_q .
+    \]
+\end{enumerate}
+\end{propbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=4.2em, row sep=2.8em]
+I_q/I_q^2 \arrow[r, "\bar F_p^*"] \arrow[d, "\Phi_q"', "\cong"] & I_p/I_p^2 \arrow[d, "\Phi_p", "\cong"'] \\
+T_q^*N \arrow[r, "F_p^*"'] & T_p^*M
+\end{tikzcd}
+\end{center}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} \emph{(1)} By Proposition~\ref{prop:pullback-properties}, $F_p^*$ is a homomorphism of $\mathbb{R}$-algebras with $F_p^*(I_q) \subseteq I_p$. An element of $I_q^2$ is a finite sum $\sum_k [u_k][w_k]$ with $[u_k], [w_k] \in I_q$ (Definition~\ref{def:Ip-square}), and since $F_p^*$ preserves sums and products,
+\[
+F_p^*\Big(\sum_k [u_k][w_k]\Big) = \sum_k F_p^*[u_k]\; F_p^*[w_k],
+\]
+a finite sum of products of two elements of $I_p$, that is, an element of $I_p^2$. So the composite of $F_p^*|_{I_q} : I_q \to I_p$ with the projection $I_p \to I_p/I_p^2$ is linear and vanishes on $I_q^2$. By the universal property of quotient spaces (Proposition~\ref{prop:quotient-vs}(2)) it descends to a linear map $\bar F_p^*$ on $I_q/I_q^2$, with $\bar F_p^*[[g]] = [[F_p^*[g]]] = [[g \circ F]]$.
+
+\emph{(2)} Let $[[g]] \in I_q/I_q^2$. By Theorem~\ref{thm:cotangent-ideal}(2) at $p$, Proposition~\ref{prop:pullback-d}, and Theorem~\ref{thm:cotangent-ideal}(2) at $q$,
+\[
+\Phi_p\big(\bar F_p^*[[g]]\big) = \Phi_p\big([[g \circ F]]\big) = d(g \circ F)_p = F_p^*\big(dg_q\big) = F_p^*\big(\Phi_q[[g]]\big) .
+\]
+The two linear maps $\Phi_p \circ \bar F_p^*$ and $F_p^* \circ \Phi_q$ agree at every element, so they are equal.
+\end{proof}
+
+So in the germ picture no dual map is needed: a covector at $q$ is a class of germs vanishing at $q$, and it pulls back by composing with $F$, exactly as germs do. One operation, $[g] \mapsto [g \circ F]$, moves everything: tangent vectors act on germs, so they are pushed \emph{forward} by precomposing with it; covectors are classes of germs, so they are pulled \emph{back} by it. ``Functions pull back by composition'' (Lecture~15) covers covectors too.
 
 
 \chapter{Maps of Constant Rank and Fibrations}
@@ -14532,7 +14585,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:vector-spaces}\ Vector spaces and matrix groups & Appendix B; Chapter 11 (dual spaces); Example 1.24; Examples 7.27 and 7.29 \\
 \ref{sec:tangent}\ The geometric tangent space & Propositions 3.2, 5.37 and 5.38; Theorem 6.30 \\
 \ref{sec:abstract-tangent}--\ref{sec:velocities}\ Germs, derivations, the abstract tangent space & Chapter 3 throughout, including Proposition 3.14 (products) \\
-\ref{sec:cotangent}\ The cotangent space & Chapter 11, \emph{Covectors}; Problem 11-4 for $I_p/I_p^2$ \\
+\ref{sec:cotangent}--\ref{sec:cotangent-germs}\ The cotangent space & Chapter 11, \emph{Covectors}; Problem 11-4 for $I_p/I_p^2$ \\
 \ref{sec:special-maps}--\ref{sec:submersions}\ Local diffeomorphisms, submersions & Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 \\
 \ref{sec:submanifolds}\ Regular submanifolds & Chapter 5, \emph{Embedded Submanifolds} (Theorem 5.8, Corollary 5.14, Propositions 5.35--5.38) \\
 \ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee \\

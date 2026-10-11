@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 34.4", "local normal form for submersions", "Lee Theorem 4.12"]
+aliases: ["MATH 591 36.4", "local normal form for submersions", "Lee Theorem 4.12"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§36 Submersions#^thm-36-4]]

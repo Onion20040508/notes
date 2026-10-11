@@ -21,7 +21,7 @@ tags: [chapter, differentiable-manifolds]
 - [[§54 Lie Groups and Left-Invariant Vector Fields]]
 
 ## Central results
-- [[The Lie Algebra Is the Tangent Space at the Identity]] (§52.5)
+- [[The Lie Algebra Is the Tangent Space at the Identity]] (§54.5)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

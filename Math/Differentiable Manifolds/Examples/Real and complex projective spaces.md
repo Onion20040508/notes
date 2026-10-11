@@ -26,8 +26,8 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 - The quotient and Grassmannian topologies on $\mathbb{RP}^n$ agree, and $\mathbb{RP}^1 \cong S^1$ ([[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|§18]])
 - Dimension check: $\mathbb{CP}^n = \mathrm{U}(n+1)/(\mathrm{U}(1) \times \mathrm{U}(n))$ has dimension $2n$ ([[§25 The Geometric Tangent Space#^rem-25-9|§25]])
 - Regular level sets of the moment map $\mathbb{CP}^n \to \mathbb{R}^n$, computed in one chart ([[§30 The Differential in Coordinates#^rem-30-6|§30]])
-- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§42 Projective Spaces and the Hopf Fibration#^ex-42-1|§40]])
-- $S^n \to \mathbb{RP}^n$ is a covering map ([[§35 Local Diffeomorphisms#^rem-35-2|§33]])
+- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§42 Projective Spaces and the Hopf Fibration#^ex-42-1|§42]])
+- $S^n \to \mathbb{RP}^n$ is a covering map ([[§35 Local Diffeomorphisms#^rem-35-2|§35]])
 
 ## Definition: $\mathbb{CP}^n = S^{2n+1}/{\sim}$, with $z \sim \xi z$ for $\xi \in S^1$
 ![[§9 Complex Projective Space#^def-9-1]]

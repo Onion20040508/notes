@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 33.2", "Lee Theorem 4.5", "Lee Proposition 4.8"]
+aliases: ["MATH 591 35.2", "Lee Theorem 4.5", "Lee Proposition 4.8"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§35 Local Diffeomorphisms#^thm-35-2]]
@@ -31,5 +31,5 @@ tags: [differentiable-manifolds, hub]
 
 ## Connections
 - **Used for.** Diffeomorphisms are exactly the bijective local diffeomorphisms ([[§35 Local Diffeomorphisms#^cor-35-3|§35.3]]), and a map between manifolds of equal dimension that is a submersion, or an immersion, at every point is a local diffeomorphism ([[§36 Submersions#^prop-36-1|§36.1]]). The same inverse-function step, with [[§36 Submersions#^lem-36-3|§36.3]], builds the new chart in the [[Submersion Normal Form]].
-- **Local, not global.** t ↦ (cos t, sin t) on (0, 4π) is a local diffeomorphism onto S¹ that is neither injective nor a covering map: (1, 0) has one preimage and every other point two ([[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]], [[§35 Local Diffeomorphisms#^rem-35-2|Covering Maps]]). Injectivity is the entire difference from a diffeomorphism ([[§35 Local Diffeomorphisms#^rem-35-3|§33, Remark]]).
+- **Local, not global.** t ↦ (cos t, sin t) on (0, 4π) is a local diffeomorphism onto S¹ that is neither injective nor a covering map: (1, 0) has one preimage and every other point two ([[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]], [[§35 Local Diffeomorphisms#^rem-35-2|Covering Maps]]). Injectivity is the entire difference from a diffeomorphism ([[§35 Local Diffeomorphisms#^rem-35-3|§35, Remark]]).
 - **Same idea elsewhere.** The analytic input is the [[Inverse Function Theorem (several variables)]] of 452, applied to the coordinate representation, whose Jacobian is the matrix of F_*p ([[Matrix of the Differential]]). In 590, ℝ → S¹ is a covering map ([[§31 Covering Spaces#^thm-31-2|590 §31.2]]) while its restriction to (0, ∞) is a local homeomorphism that is not ([[§31 Covering Spaces#^ex-31-2|590 Ex. §31.2]]), the same failure as (0, 4π) → S¹.

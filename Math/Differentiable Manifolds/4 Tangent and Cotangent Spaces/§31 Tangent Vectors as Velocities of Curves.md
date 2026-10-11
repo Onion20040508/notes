@@ -158,7 +158,7 @@ This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve wit
 ^rem-31-2
 
 > [!remark]- Connections
-> - The two tangent spaces side by side: [[§41 Geometric and Abstract Manifolds#Tangent Vectors|§39, Tangent Vectors]].
+> - The two tangent spaces side by side: [[§41 Geometric and Abstract Manifolds#Tangent Vectors|§41, Tangent Vectors]].
 > - The identification for a regular level set: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]].
 
 ## Tangent Spaces of Products

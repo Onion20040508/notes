@@ -32,7 +32,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 
 > [!remark]- Connections
 > - The first major example: [[§47 The Tangent Bundle#^cor-47-3|the tangent bundle, §47.3]]; sections of a fibration: [[§38 Fibrations#^def-38-2|Def. §38.2]].
-> - The topological analogue with discrete fibre: [[§31 Covering Spaces#^def-31-2|covering maps, 590 Def. §31.2]]; in 591, [[§35 Local Diffeomorphisms#^rem-35-2|Remark: Covering Maps (§33)]].
+> - The topological analogue with discrete fibre: [[§31 Covering Spaces#^def-31-2|covering maps, 590 Def. §31.2]]; in 591, [[§35 Local Diffeomorphisms#^rem-35-2|Remark: Covering Maps (§35)]].
 
 ![[m591-16-1.svg]]
 *The local trivialization $\phi_\alpha$ over $U_\alpha$: the triangle commutes, $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$.*
@@ -99,7 +99,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^rem-38-1
 
 > [!remark]- Connections
-> - [[§47 The Tangent Bundle#^cor-47-3|The tangent bundle is a fibration, §47.3]]; [[§48 The Cotangent Bundle#^def-48-1|the cotangent bundle, Def. §48.1]]; [[§47 The Tangent Bundle#^rem-47-2|Remark: Vector Bundles (§45)]].
+> - [[§47 The Tangent Bundle#^cor-47-3|The tangent bundle is a fibration, §47.3]]; [[§48 The Cotangent Bundle#^def-48-1|the cotangent bundle, Def. §48.1]]; [[§47 The Tangent Bundle#^rem-47-2|Remark: Vector Bundles (§47)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 

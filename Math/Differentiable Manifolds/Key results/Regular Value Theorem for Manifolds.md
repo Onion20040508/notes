@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 35.7", "Lee Corollary 5.14", "Lee Proposition 5.38"]
+aliases: ["MATH 591 37.7", "Lee Corollary 5.14", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§37 Regular Submanifolds#^thm-37-7]]

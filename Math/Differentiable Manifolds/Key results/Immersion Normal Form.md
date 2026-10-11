@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 37.1", "local normal form for immersions", "Lee Theorem 4.12"]
+aliases: ["MATH 591 39.1", "local normal form for immersions", "Lee Theorem 4.12"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§39 Immersions#^thm-39-1]]
