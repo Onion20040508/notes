@@ -32,9 +32,9 @@ tags: [topology, hub]
 - [[§9 Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§13 Group Actions and Orbit Spaces#^cor-13-4|Corollary §13.4: Compact Group and Compact Hausdorff Space]]
 - [[§17 Differentiable Structures#^prop-17-3|Proposition §17.3: The Circle Needs More Than One Chart]]
-- [[§34 Submersions#^thm-34-7|Theorem §34.7: Submersions from Compact Manifolds]]
-- [[§38 Embeddings#^prop-38-4|Proposition §38.4: Proper Maps into Manifolds Are Closed]]
-- [[§38 Embeddings#^cor-38-6|Corollary §38.6: Injective Immersions of Compact Manifolds]]
+- [[§36 Submersions#^thm-36-7|Theorem §36.7: Submersions from Compact Manifolds]]
+- [[§40 Embeddings#^prop-40-4|Proposition §40.4: Proper Maps into Manifolds Are Closed]]
+- [[§40 Embeddings#^cor-40-6|Corollary §40.6: Injective Immersions of Compact Manifolds]]
 
 ## Connections
 - **Technique.** First separate x from each point of Y, then pass to a finite subcover. The same local-then-global argument, applied twice, proves [[§24 Normal Spaces#^thm-24-2|Every Compact Hausdorff Space is Normal]] ([[§24 Normal Spaces#^rem-24-4|The Two-Stage Pattern]]).

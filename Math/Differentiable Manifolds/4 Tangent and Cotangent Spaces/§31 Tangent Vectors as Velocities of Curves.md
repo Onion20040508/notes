@@ -158,7 +158,7 @@ This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve wit
 ^rem-31-2
 
 > [!remark]- Connections
-> - The two tangent spaces side by side: [[§39 Geometric and Abstract Manifolds#Tangent Vectors|§39, Tangent Vectors]].
+> - The two tangent spaces side by side: [[§41 Geometric and Abstract Manifolds#Tangent Vectors|§39, Tangent Vectors]].
 > - The identification for a regular level set: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]].
 
 ## Tangent Spaces of Products
@@ -222,7 +222,7 @@ Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_
 
 > [!remark]- Connections
 > - Linear algebra of products and direct sums: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92]] (dimension of a product), [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93]] (products and direct sums).
-> - The product smooth structure it rests on: [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]; projections of products are submersions: [[§34 Submersions#^ex-34-2|Ex. §34.2]].
+> - The product smooth structure it rests on: [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]; projections of products are submersions: [[§36 Submersions#^ex-36-2|Ex. §36.2]].
 
 **Partial derivatives in the $M_1$ variables.** For $v \in T_{p_1}M_1$ and a germ $[f]$ at $p$,
 

@@ -21,8 +21,8 @@ tags: [topology, hub]
 ## Used in (Differentiable Manifolds)
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|Definition §11.6: Special Linear Group]]
 - [[§30 The Differential in Coordinates#^prop-30-10|Proposition §30.10: Maps with Zero Differential Are Constant]]
-- [[§38 Embeddings#^thm-38-5|Theorem §38.5: Injective Proper Immersions Are Embeddings]]
-- [[§38 Embeddings#^prop-38-7|Proposition §38.7: Images of Embeddings Are Locally Closed]]
+- [[§40 Embeddings#^thm-40-5|Theorem §40.5: Injective Proper Immersions Are Embeddings]]
+- [[§40 Embeddings#^prop-40-7|Proposition §40.7: Images of Embeddings Are Locally Closed]]
 
 ## Connections
 - **Generalizes ε-δ.** Condition (4) is the topological form of the ε-δ definition ([[§10 Continuous Functions#^ex-10-1|Example §10.1]]; MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]]). It is recovered for metric spaces in [[§12 Metric Topology#^thm-12-7|ε-δ Characterization of Continuity]] (§12.7).

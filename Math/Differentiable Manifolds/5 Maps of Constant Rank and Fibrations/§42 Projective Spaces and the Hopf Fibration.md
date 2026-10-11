@@ -2,22 +2,22 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 5
-section: 40
+section: 42
 tags: [differentiable-manifolds, math591]
 ---
-← [[§39 Geometric and Abstract Manifolds]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§41 The Unit Quaternions and SU(2)]] →
+← [[§41 Geometric and Abstract Manifolds]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§43 The Unit Quaternions and SU(2)]] →
 
 *Stage: bundles — The maps of this chapter on projective spaces: $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism, and $S^{2n+1} \to \mathbb{CP}^n$ is a submersion and a fibration, the Hopf fibration, with local sections but no global one.*
 
-The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in [[§9 Complex Projective Space|Complex Projective Space]], an orbit map in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; the first is the quotient map of [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]], and both are read in the standard atlases of [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; *this section* shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \mathrm{SO}(3) \cong \mathbb{RP}^3$ in [[§42 SU(2) → SO(3)꞉ The Double Cover#^thm-42-4|The Double Cover]].
+The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in [[§9 Complex Projective Space|Complex Projective Space]], an orbit map in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; the first is the quotient map of [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]], and both are read in the standard atlases of [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; *this section* shows the first is a two-to-one local diffeomorphism and the second a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \mathrm{SO}(3) \cong \mathbb{RP}^3$ in [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-4|The Double Cover]].
 
-> [!example] Example §40.1: Spheres Cover Projective Spaces
+> [!example] Example §42.1: Spheres Cover Projective Spaces
 > The projection $\pi : S^n \to \mathbb{RP}^n$, $x \mapsto [x]$, is a local diffeomorphism, exactly two-to-one.
 
-^ex-40-1
+^ex-42-1
 
 > [!proof]+ Proof
-> *(Stated in Lecture 10 as an example, without proof — the covering-map distinction was “postponed”; filled in.)* Three things are claimed: $\pi$ is smooth; it is a local diffeomorphism, that is (Definition [[§33 Local Diffeomorphisms#^def-33-1|§33.1]]), every $x \in S^n$ has a neighbourhood $U$ that $\pi$ maps onto a neighbourhood $V$ of $\pi(x)$ with $\pi|_U^V$ having a smooth inverse; and every fibre of $\pi$ has exactly two points.
+> *(Stated in Lecture 10 as an example, without proof — the covering-map distinction was “postponed”; filled in.)* Three things are claimed: $\pi$ is smooth; it is a local diffeomorphism, that is (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]), every $x \in S^n$ has a neighbourhood $U$ that $\pi$ maps onto a neighbourhood $V$ of $\pi(x)$ with $\pi|_U^V$ having a smooth inverse; and every fibre of $\pi$ has exactly two points.
 >
 > *Setup.* Use coordinates $x_0, \ldots, x_n$ on $\mathbb{R}^{n+1}$, matching the charts $(U_i, \varphi_i)$ of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]: $U_i = \{[x] \mid x_i \neq 0\}$ and $\varphi_i([x]) = (x_k/x_i)_{k \neq i}$. Whether $x_i \neq 0$ does not depend on the representative, since $(\lambda x)_i = \lambda x_i$ with $\lambda \neq 0$. Give $S^n = \{|x|^2 = 1\}$ its level-set structure (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]), so that Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] applies to maps out of and into $S^n$. For each $i$ and $\varepsilon = \pm 1$ let
 >
@@ -57,32 +57,32 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 > \pi|_{U_i^\varepsilon} = \varphi_i^{-1} \circ (\varphi_i \circ \pi) = \varphi_i^{-1} \circ h : U_i^\varepsilon \to U_i
 > $$
 >
-> is a composite of diffeomorphisms, a diffeomorphism onto the open set $U_i$, with inverse $\kappa \circ \varphi_i$. In particular $\pi$ is smooth on each of the open sets $U_i^\varepsilon$, which cover $S^n$; since smoothness is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), $\pi$ is smooth. For $x \in U_i^\varepsilon$ the neighbourhoods $U = U_i^\varepsilon$ of $x$ and $V = U_i$ of $\pi(x)$ satisfy Definition [[§33 Local Diffeomorphisms#^def-33-1|§33.1]], with local inverse $\kappa \circ \varphi_i$.
+> is a composite of diffeomorphisms, a diffeomorphism onto the open set $U_i$, with inverse $\kappa \circ \varphi_i$. In particular $\pi$ is smooth on each of the open sets $U_i^\varepsilon$, which cover $S^n$; since smoothness is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), $\pi$ is smooth. For $x \in U_i^\varepsilon$ the neighbourhoods $U = U_i^\varepsilon$ of $x$ and $V = U_i$ of $\pi(x)$ satisfy Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]], with local inverse $\kappa \circ \varphi_i$.
 >
 > *Exactly two-to-one.* The hemispheres cover $S^n$, as shown in the setup. Let $x \in S^n$. A point $y \in S^n$ has $\pi(y) = \pi(x)$ iff $y$ lies on the line through $x$, i.e. $y = \lambda x$ with $\lambda \in \mathbb{R}^\times$, and then $1 = |y| = |\lambda|$, so $\lambda = \pm 1$. Hence $\pi^{-1}(\pi(x)) = \{x, -x\}$, two distinct points since $x \neq 0$; in particular $\pi(x) = \pi(-x)$.
 
-^pf-ex-40-1
+^pf-ex-42-1
 
-*Uses:* [[§33 Local Diffeomorphisms#^def-33-1|Def. §33.1]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
+*Uses:* [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
 
 > [!remark]- Connections
 > - As a covering map of topological spaces, for $n = 2$: [[§38 Fundamental Group of Some Surfaces#^thm-38-1|590 §38.1]] ($S^2 \to P^2$ is a covering map).
 
-> [!example] Example §40.2: The Projection $S^{2n+1} \to \mathbb{CP}^n$
+> [!example] Example §42.2: The Projection $S^{2n+1} \to \mathbb{CP}^n$
 > The projection $S^{2n+1} \to \mathbb{CP}^n$ of [[§9 Complex Projective Space|§9]] is a submersion.
 >
 > *Lee: Problem 4-5(a)*
 
-^ex-40-2
+^ex-42-2
 
-*Uses:* [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Ex. §40.3]], [[§36 Fibrations#^prop-36-1|§36.1]]
+*Uses:* [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Ex. §42.3]], [[§38 Fibrations#^prop-38-1|§38.1]]
 
 > [!remark]- Connections
-> - Proved below, as a consequence of the local triviality of the Hopf fibration: [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Ex. §40.3]] with [[§36 Fibrations#^prop-36-1|§36.1]](2).
+> - Proved below, as a consequence of the local triviality of the Hopf fibration: [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Ex. §42.3]] with [[§38 Fibrations#^prop-38-1|§38.1]](2).
 
-Stated in lecture as an example (“the projection you worked with from a sphere to complex projective space”); not proved in that lecture; the proof follows [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Example §40.3]] below. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map *out of* a level set in terms of the ambient Jacobian, which Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] makes available for smoothness but not yet for differentials.
+Stated in lecture as an example (“the projection you worked with from a sphere to complex projective space”); not proved in that lecture; the proof follows [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Example §42.3]] below. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map *out of* a level set in terms of the ambient Jacobian, which Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] makes available for smoothness but not yet for differentials.
 
-> [!example] Example §40.3: The Hopf Fibration $S^{2n+1} \to \mathbb{CP}^n$
+> [!example] Example §42.3: The Hopf Fibration $S^{2n+1} \to \mathbb{CP}^n$
 > The projection $\pi : S^{2n+1} \to \mathbb{CP}^n$, $\pi(z) = [z]$, is a fibration with fibre $S^1$. Over the chart domain $U_j = \{z_j \ne 0\}$ a local trivialization is
 >
 > $$
@@ -93,10 +93,10 @@ Stated in lecture as an example (“the projection you worked with from a sphere
 >
 > *Lee: Problem 4-5(a) and the Hopf map of Ch. 21*
 
-^ex-40-3
+^ex-42-3
 
 > [!proof]+ Proof
-> *(Claimed in lecture — a student supplied the fibre, $S^1$; the trivialization is filled in.)* By Definition [[§36 Fibrations#^def-36-1|§36.1]] we must show: $\pi$ is smooth; the sets $U_j$ form an open cover of $\mathbb{CP}^n$; and each $\phi_j$ is a diffeomorphism $\pi^{-1}(U_j) \to U_j \times S^1$ with $\mathrm{pr}_1 \circ \phi_j = \pi|_{\pi^{-1}(U_j)}$. Throughout, $S^{2n+1} = \{|z|^2 = 1\} \subseteq \mathbb{C}^{n+1} \cong \mathbb{R}^{2n+2}$ and $S^1 = \{|\lambda|^2 = 1\} \subseteq \mathbb{C} \cong \mathbb{R}^2$ carry their level-set structures (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]), so Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] applies to maps out of and into them.
+> *(Claimed in lecture — a student supplied the fibre, $S^1$; the trivialization is filled in.)* By Definition [[§38 Fibrations#^def-38-1|§38.1]] we must show: $\pi$ is smooth; the sets $U_j$ form an open cover of $\mathbb{CP}^n$; and each $\phi_j$ is a diffeomorphism $\pi^{-1}(U_j) \to U_j \times S^1$ with $\mathrm{pr}_1 \circ \phi_j = \pi|_{\pi^{-1}(U_j)}$. Throughout, $S^{2n+1} = \{|z|^2 = 1\} \subseteq \mathbb{C}^{n+1} \cong \mathbb{R}^{2n+2}$ and $S^1 = \{|\lambda|^2 = 1\} \subseteq \mathbb{C} \cong \mathbb{R}^2$ carry their level-set structures (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]), so Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] applies to maps out of and into them.
 >
 > *The cover.* The sets $U_j$ cover $\mathbb{CP}^n$: every $z \in S^{2n+1}$ is nonzero, so some $z_j \neq 0$ and $[z] \in U_j$. Each $U_j$ is open (Proposition [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]]). Whether $z_j \neq 0$ does not depend on the representative, since $(\xi z)_j = \xi z_j$ with $\xi \neq 0$; hence $\pi^{-1}(U_j) = S^{2n+1} \cap \{z_j \ne 0\}$, the intersection of $S^{2n+1}$ with an open subset of $\mathbb{C}^{n+1}$, which is open.
 >
@@ -128,27 +128,27 @@ Stated in lecture as an example (“the projection you worked with from a sphere
 >
 > *Conclusion.* So $\phi_j$ is a smooth bijection with smooth inverse $\psi_j$, a diffeomorphism. Finally $\mathrm{pr}_1 \circ \phi_j(z) = [z] = \pi(z)$, by the definition of $\phi_j$. So each $\phi_j$ is a local trivialization, and $\pi$ is a fibration with fibre $S^1$.
 
-^pf-ex-40-3
+^pf-ex-42-3
 
-*Uses:* [[§36 Fibrations#^def-36-1|Def. §36.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]
+*Uses:* [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]
 
 ![[m591-16-7.svg]]
 *The fibres of the Hopf fibration for $n = 1$, $S^3 \to \mathbb{CP}^1$, made visible in $\mathbb{R}^3$ by stereographic projection of $S^3$ from the point $(0, 1)$. Blue: the fibre through $(1, 0)$, which projects to the unit circle, and the fibre through $(0, 1)$ itself, which projects to the vertical axis closed up at infinity. Red: two more fibres, through points with $|z_1| = |z_2|$. Each fibre is a circle $\{\lambda z : |\lambda| = 1\}$, no two meet, and any two are linked: over each $U_j$ the circles sit side by side as in $U_j \times S^1$, but globally they are woven together.*
 
 > [!remark]- Connections
-> - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]]. The Hopf fibration has no section: [[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|Remark: Sections Need Not Exist]].
+> - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]]. The Hopf fibration has no section: [[§42 Projective Spaces and the Hopf Fibration#^rem-42-1|Remark: Sections Need Not Exist]].
 
-With [[§36 Fibrations#^prop-36-1|Proposition §36.1]](2), this also proves [[§40 Projective Spaces and the Hopf Fibration#^ex-40-2|Example §40.2]], which Lecture 10 stated without proof: the projection $S^{2n+1} \to \mathbb{CP}^n$ is a submersion. Its fibres are the circles $\{\lambda z : |\lambda| = 1\}$.
+With [[§38 Fibrations#^prop-38-1|Proposition §38.1]](2), this also proves [[§42 Projective Spaces and the Hopf Fibration#^ex-42-2|Example §42.2]], which Lecture 10 stated without proof: the projection $S^{2n+1} \to \mathbb{CP}^n$ is a submersion. Its fibres are the circles $\{\lambda z : |\lambda| = 1\}$.
 
 > [!remark] Remark: Sections Need Not Exist
-> “A fact”: the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Example §40.3]] — “the fibration that you're working with in homework” — has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections — the zero section at least — and in fact “a very infinite-dimensional space” of them.
+> “A fact”: the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Example §42.3]] — “the fibration that you're working with in homework” — has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections — the zero section at least — and in fact “a very infinite-dimensional space” of them.
 
-^rem-40-1
+^rem-42-1
 
-For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition §36.4]] holds: the circle acting on the fibres turns any local section into a local trivialization.
+For the Hopf fibration the converse of [[§38 Fibrations#^prop-38-4|Proposition §38.4]] holds: the circle acting on the fibres turns any local section into a local trivialization.
 
-> [!theorem] Proposition §40.1: Local Sections of the Hopf Fibration Give Trivializations
-> Let $\pi : S^{2n+1} \to \mathbb{CP}^n$ be the Hopf fibration ([[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Ex. §40.3]]), on which $S^1$ acts ([[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]]) by $\lambda \cdot z = \lambda z$, and let $s : U \to \pi^{-1}(U)$ be a local section ([[§36 Fibrations#^def-36-3|Def. §36.3]]). Then
+> [!theorem] Proposition §42.1: Local Sections of the Hopf Fibration Give Trivializations
+> Let $\pi : S^{2n+1} \to \mathbb{CP}^n$ be the Hopf fibration ([[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Ex. §42.3]]), on which $S^1$ acts ([[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]]) by $\lambda \cdot z = \lambda z$, and let $s : U \to \pi^{-1}(U)$ be a local section ([[§38 Fibrations#^def-38-3|Def. §38.3]]). Then
 >
 > $$
 > \Psi_s : U \times S^1 \longrightarrow \pi^{-1}(U), \qquad \Psi_s(u, \lambda) = \lambda\, s(u),
@@ -160,10 +160,10 @@ For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition 
 > \Psi_s^{-1}(z) = \Big( \pi(z),\ \big\langle z, s(\pi(z)) \big\rangle \Big), \qquad \langle z, w \rangle = \textstyle\sum_k z_k \bar w_k .
 > $$
 
-^prop-40-1
+^prop-42-1
 
 > [!proof]+ Proof
-> *(Assignment 4, Problem 4 did this for the explicit sections $s_i$ of the corollary below; the inner-product formula for the inverse, which works for every local section, is filled in.)* We show in turn: $\Psi_s$ takes values in $\pi^{-1}(U)$, with $\pi \circ \Psi_s = \mathrm{pr}_1$ and $\Psi_s(u, 1) = s(u)$; it is equivariant; it and the proposed inverse are smooth; and the two are mutually inverse. Here $s$ is a local section: a smooth map $U \to S^{2n+1}$ with $\pi \circ s = \mathrm{id}_U$ (Definition [[§36 Fibrations#^def-36-3|§36.3]]), so $|s(u)| = 1$ and $[s(u)] = u$. Two facts are used repeatedly. First, by Definition [[§9 Complex Projective Space#^def-9-1|§9.1]], two points $z, w \in S^{2n+1}$ have $\pi(z) = \pi(w)$ iff $w = \xi z$ for some $\xi \in S^1$. Second, $\langle z, w \rangle = \sum_k z_k \bar w_k$ is complex-linear in $z$ and conjugate-linear in $w$, and $\langle z, z \rangle = |z|^2$.
+> *(Assignment 4, Problem 4 did this for the explicit sections $s_i$ of the corollary below; the inner-product formula for the inverse, which works for every local section, is filled in.)* We show in turn: $\Psi_s$ takes values in $\pi^{-1}(U)$, with $\pi \circ \Psi_s = \mathrm{pr}_1$ and $\Psi_s(u, 1) = s(u)$; it is equivariant; it and the proposed inverse are smooth; and the two are mutually inverse. Here $s$ is a local section: a smooth map $U \to S^{2n+1}$ with $\pi \circ s = \mathrm{id}_U$ (Definition [[§38 Fibrations#^def-38-3|§38.3]]), so $|s(u)| = 1$ and $[s(u)] = u$. Two facts are used repeatedly. First, by Definition [[§9 Complex Projective Space#^def-9-1|§9.1]], two points $z, w \in S^{2n+1}$ have $\pi(z) = \pi(w)$ iff $w = \xi z$ for some $\xi \in S^1$. Second, $\langle z, w \rangle = \sum_k z_k \bar w_k$ is complex-linear in $z$ and conjugate-linear in $w$, and $\langle z, z \rangle = |z|^2$.
 >
 > *Values, $\pi \circ \Psi_s = \mathrm{pr}_1$, and $\Psi_s(u,1) = s(u)$.* For $(u, \lambda) \in U \times S^1$, $|\lambda s(u)| = |\lambda|\,|s(u)| = 1$, so $\lambda s(u) \in S^{2n+1}$; and $\lambda s(u)$ is obtained from $s(u)$ by the element $\lambda$ of $S^1$, so by the first fact
 >
@@ -181,7 +181,7 @@ For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition 
 >
 > *$\Psi_s$ is smooth.* The $k$-th entry of $\Psi_s(u, \lambda)$ is $\lambda\, s(u)_k$, the product of the smooth functions $(u, \lambda) \mapsto \lambda$ (the projection $\mathrm{pr}_2$, Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], followed by the inclusion $S^1 \to \mathbb{C}$) and $(u, \lambda) \mapsto s(u)_k$ (the projection $\mathrm{pr}_1$, then $s$, then the inclusion $S^{2n+1} \to \mathbb{C}^{n+1}$, then the $k$-th coordinate). So $\Psi_s$ is smooth into $\mathbb{C}^{n+1}$; it lands in $S^{2n+1}$, so it is smooth into $S^{2n+1}$ (Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]](2)), hence into the open subset $\pi^{-1}(U)$.
 >
-> *The proposed inverse is smooth.* Let $\Theta(z) = \big(\pi(z), \langle z, s(\pi(z)) \rangle\big)$ for $z \in \pi^{-1}(U)$. Its first component is $\pi$, smooth by Example [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|§40.3]], with values in $U$. Its second component is the composite of $z \mapsto \big(z, s(\pi(z))\big)$, smooth into $\mathbb{C}^{n+1} \times \mathbb{C}^{n+1}$, with the map $\langle \cdot, \cdot \rangle$, whose real and imaginary parts are polynomials in the real coordinates; so it is smooth into $\mathbb{C}$. Its values have modulus $1$: since $\pi(s(\pi(z))) = \pi(z)$, the first fact gives $s(\pi(z)) = \xi z$ for some $\xi \in S^1$, and then
+> *The proposed inverse is smooth.* Let $\Theta(z) = \big(\pi(z), \langle z, s(\pi(z)) \rangle\big)$ for $z \in \pi^{-1}(U)$. Its first component is $\pi$, smooth by Example [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|§42.3]], with values in $U$. Its second component is the composite of $z \mapsto \big(z, s(\pi(z))\big)$, smooth into $\mathbb{C}^{n+1} \times \mathbb{C}^{n+1}$, with the map $\langle \cdot, \cdot \rangle$, whose real and imaginary parts are polynomials in the real coordinates; so it is smooth into $\mathbb{C}$. Its values have modulus $1$: since $\pi(s(\pi(z))) = \pi(z)$, the first fact gives $s(\pi(z)) = \xi z$ for some $\xi \in S^1$, and then
 >
 > $$
 > \langle z, s(\pi(z)) \rangle = \langle z, \xi z \rangle = \bar\xi\, \langle z, z \rangle = \bar\xi\, |z|^2 = \bar\xi , \qquad |\bar\xi| = 1 . \tag{$\ast$}
@@ -203,30 +203,30 @@ For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition 
 >
 > So $\Psi_s$ is a smooth bijection with smooth inverse $\Theta = \Psi_s^{-1}$, a diffeomorphism.
 
-^pf-40-1
+^pf-42-1
 
-*Uses:* [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Ex. §40.3]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]
+*Uses:* [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Ex. §42.3]], [[§38 Fibrations#^def-38-3|Def. §38.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]
 
 > [!remark]- Connections
 > - The discrete-fibre analogue: the sheets over an evenly covered set, [[§31 Covering Spaces#^def-31-1|590 Def. §31.1]], each a local section of the covering map, [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]].
 > - $\mathbb{CP}^n$ as the orbit space of this circle action: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]].
 
 ![[m591-31-1.svg]]
-*Sections and trivializations. (a) A fibration $\pi : E \to B$ ([[§36 Fibrations#^def-36-1|Definition §36.1]]), drawn schematically with its fibres as grey curves; over the open set $U \subseteq B$ the shaded piece $\pi^{-1}(U)$, bounded by the dashed fibres over the ends of $U$, is carried by the local trivialization $\phi$ onto the box $U \times F$, where $\mathrm{pr}_1$ projects to $U$ and the vertical direction is the model fibre $F$. Fixing $f_0 \in F$ gives the red slice $U \times \{f_0\}$, which meets each vertical fibre $\{u\} \times F$ exactly once; its preimage under $\phi$ is the red curve $s(U)$, and $s(u) = \phi^{-1}(u, f_0)$ is the local section of [[§36 Fibrations#^prop-36-4|Proposition §36.4]] ([[§36 Fibrations#^def-36-3|Definition §36.3]]): it picks one point on the fibre over each $u$, which is $\pi \circ s = \mathrm{id}_U$. (b) The converse for the Hopf fibration, [[§40 Projective Spaces and the Hopf Fibration#^prop-40-1|Proposition §40.1]]. On the right, over $U \subseteq \mathbb{CP}^n$, each fibre of $\pi^{-1}(U) \subseteq S^{2n+1}$ is a circle (back halves dotted), and a local section picks the red point $s(u)$ on each, tracing the red curve $s(U)$. Multiplying by $\lambda = e^{i\theta}$ moves $s(u)$ along its own circle to the green point $\lambda\, s(u)$, and as $\theta$ runs from $0$ to $2\pi$ it sweeps out the whole circle exactly once. On the left the same motion in the product $U \times S^1$: the red line $U \times \{1\}$ and the green point $(u, \lambda)$ on the circle $\{u\} \times S^1$. The trivialization $\Psi_s(u, \lambda) = \lambda\, s(u)$ (orange) matches the two pictures, sending $U \times \{1\}$ to $s(U)$ and commuting with $\mathrm{pr}_1$ and $\pi$; for the sections $s_i$ of [[§40 Projective Spaces and the Hopf Fibration#^cor-40-2|Corollary §40.2]] its inverse is the trivialization of [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Example §40.3]]. The circles are drawn side by side as in $U \times S^1$; in $S^3$ they are linked, as in the stereographic picture after Example §38.3. (Drawn for these notes in the vault; not in the course tex.)*
+*Sections and trivializations. (a) A fibration $\pi : E \to B$ ([[§38 Fibrations#^def-38-1|Definition §38.1]]), drawn schematically with its fibres as grey curves; over the open set $U \subseteq B$ the shaded piece $\pi^{-1}(U)$, bounded by the dashed fibres over the ends of $U$, is carried by the local trivialization $\phi$ onto the box $U \times F$, where $\mathrm{pr}_1$ projects to $U$ and the vertical direction is the model fibre $F$. Fixing $f_0 \in F$ gives the red slice $U \times \{f_0\}$, which meets each vertical fibre $\{u\} \times F$ exactly once; its preimage under $\phi$ is the red curve $s(U)$, and $s(u) = \phi^{-1}(u, f_0)$ is the local section of [[§38 Fibrations#^prop-38-4|Proposition §38.4]] ([[§38 Fibrations#^def-38-3|Definition §38.3]]): it picks one point on the fibre over each $u$, which is $\pi \circ s = \mathrm{id}_U$. (b) The converse for the Hopf fibration, [[§42 Projective Spaces and the Hopf Fibration#^prop-42-1|Proposition §42.1]]. On the right, over $U \subseteq \mathbb{CP}^n$, each fibre of $\pi^{-1}(U) \subseteq S^{2n+1}$ is a circle (back halves dotted), and a local section picks the red point $s(u)$ on each, tracing the red curve $s(U)$. Multiplying by $\lambda = e^{i\theta}$ moves $s(u)$ along its own circle to the green point $\lambda\, s(u)$, and as $\theta$ runs from $0$ to $2\pi$ it sweeps out the whole circle exactly once. On the left the same motion in the product $U \times S^1$: the red line $U \times \{1\}$ and the green point $(u, \lambda)$ on the circle $\{u\} \times S^1$. The trivialization $\Psi_s(u, \lambda) = \lambda\, s(u)$ (orange) matches the two pictures, sending $U \times \{1\}$ to $s(U)$ and commuting with $\mathrm{pr}_1$ and $\pi$; for the sections $s_i$ of [[§42 Projective Spaces and the Hopf Fibration#^cor-42-2|Corollary §42.2]] its inverse is the trivialization of [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Example §42.3]]. The circles are drawn side by side as in $U \times S^1$; in $S^3$ they are linked, as in the stereographic picture after Example §38.3. (Drawn for these notes in the vault; not in the course tex.)*
 
-> [!theorem] Corollary §40.2: Local but Not Global Sections of the Hopf Fibration
-> Over each chart domain $U_i = \{[z] : z_i \neq 0\}$ of $\mathbb{CP}^n$ ([[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]]), the Hopf fibration has the local section ([[§36 Fibrations#^def-36-3|Def. §36.3]])
+> [!theorem] Corollary §42.2: Local but Not Global Sections of the Hopf Fibration
+> Over each chart domain $U_i = \{[z] : z_i \neq 0\}$ of $\mathbb{CP}^n$ ([[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]]), the Hopf fibration has the local section ([[§38 Fibrations#^def-38-3|Def. §38.3]])
 >
 > $$
 > s_i([z]) = \frac{\hat z}{|\hat z|}, \qquad \hat z = \frac{z}{z_i} ,
 > $$
 >
-> and the trivialization $\Psi_{s_i}^{-1}$ it gives is the one of Example [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|§40.3]], $z \mapsto ([z], z_i/|z_i|)$. For $n \ge 1$ there is no global section ([[§36 Fibrations#^def-36-2|Def. §36.2]]).
+> and the trivialization $\Psi_{s_i}^{-1}$ it gives is the one of Example [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|§42.3]], $z \mapsto ([z], z_i/|z_i|)$. For $n \ge 1$ there is no global section ([[§38 Fibrations#^def-38-2|Def. §38.2]]).
 
-^cor-40-2
+^cor-42-2
 
 > [!proof]+ Proof
-> *(Assignment 4, Problem 4; the global statement is the fact of Remark [[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|remark]] above, stated there without proof.)* Four things are claimed: $s_i$ is well defined; it is a local section over $U_i$ (Definition [[§36 Fibrations#^def-36-3|§36.3]]: smooth, with values in $S^{2n+1}$, and $\pi \circ s_i = \mathrm{id}_{U_i}$); $\Psi_{s_i}^{-1}$ is the trivialization of Example [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|§40.3]]; and there is no global section for $n \ge 1$.
+> *(Assignment 4, Problem 4; the global statement is the fact of Remark [[§42 Projective Spaces and the Hopf Fibration#^rem-42-1|remark]] above, stated there without proof.)* Four things are claimed: $s_i$ is well defined; it is a local section over $U_i$ (Definition [[§38 Fibrations#^def-38-3|§38.3]]: smooth, with values in $S^{2n+1}$, and $\pi \circ s_i = \mathrm{id}_{U_i}$); $\Psi_{s_i}^{-1}$ is the trivialization of Example [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|§42.3]]; and there is no global section for $n \ge 1$.
 >
 > *Well defined.* $\hat z$ is independent of the representative $z$: if $z' = \mu z$ with $\mu \neq 0$, then $z'/z'_i = \mu z/(\mu z_i) = z/z_i$.
 >
@@ -246,17 +246,17 @@ For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition 
 >
 > using $\frac{|z_i|}{z_i} = \frac{|z_i|\,\bar z_i}{z_i \bar z_i} = \frac{\bar z_i}{|z_i|}$. The factor $\bar z_i/|z_i|$ lies in $S^1$, so $s_i([z])$ is in the class of $z$ (Definition [[§9 Complex Projective Space#^def-9-1|§9.1]]): it spans the line of $z$, and $\pi(s_i([z])) = [z]$. So $\pi \circ s_i = \mathrm{id}_{U_i}$.
 >
-> *The trivialization.* By Proposition [[§40 Projective Spaces and the Hopf Fibration#^prop-40-1|§40.1]] with $s = s_i$, $\Psi_{s_i}^{-1}(z) = \big([z], \langle z, s_i([z]) \rangle\big)$ for $z \in \pi^{-1}(U_i)$. For $|z| = 1$ with $z_i \neq 0$, the formula $s_i([z]) = \bar z_i z / |z_i|$ just shown and conjugate-linearity of $\langle \cdot, \cdot \rangle$ in its second slot give
+> *The trivialization.* By Proposition [[§42 Projective Spaces and the Hopf Fibration#^prop-42-1|§42.1]] with $s = s_i$, $\Psi_{s_i}^{-1}(z) = \big([z], \langle z, s_i([z]) \rangle\big)$ for $z \in \pi^{-1}(U_i)$. For $|z| = 1$ with $z_i \neq 0$, the formula $s_i([z]) = \bar z_i z / |z_i|$ just shown and conjugate-linearity of $\langle \cdot, \cdot \rangle$ in its second slot give
 >
 > $$
 > \langle z, s_i([z]) \rangle = \Big\langle z, \frac{\bar z_i}{|z_i|}\, z \Big\rangle = \frac{z_i}{|z_i|}\, \langle z, z \rangle = \frac{z_i}{|z_i|}\, |z|^2 = \frac{z_i}{|z_i|} .
 > $$
 >
-> So $\Psi_{s_i}^{-1}(z) = ([z], z_i/|z_i|)$, which is $\phi_i$ of Example [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|§40.3]].
+> So $\Psi_{s_i}^{-1}(z) = ([z], z_i/|z_i|)$, which is $\phi_i$ of Example [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|§42.3]].
 >
-> *No global section.* A global section $s$ is a local section over $U = \mathbb{CP}^n$, and then Proposition [[§40 Projective Spaces and the Hopf Fibration#^prop-40-1|§40.1]] makes $\Psi_s : \mathbb{CP}^n \times S^1 \to \pi^{-1}(\mathbb{CP}^n) = S^{2n+1}$ a diffeomorphism: $\pi$ would be globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$. That this is impossible for $n \ge 1$ is the fact of Remark [[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|remark]], which states directly that $\pi$ has no continuous section, and a smooth section is in particular continuous.
+> *No global section.* A global section $s$ is a local section over $U = \mathbb{CP}^n$, and then Proposition [[§42 Projective Spaces and the Hopf Fibration#^prop-42-1|§42.1]] makes $\Psi_s : \mathbb{CP}^n \times S^1 \to \pi^{-1}(\mathbb{CP}^n) = S^{2n+1}$ a diffeomorphism: $\pi$ would be globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$. That this is impossible for $n \ge 1$ is the fact of Remark [[§42 Projective Spaces and the Hopf Fibration#^rem-42-1|remark]], which states directly that $\pi$ has no continuous section, and a smooth section is in particular continuous.
 
-^pf-40-2
+^pf-42-2
 
-*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§40 Projective Spaces and the Hopf Fibration#^ex-40-3|Ex. §40.3]], [[§40 Projective Spaces and the Hopf Fibration#^prop-40-1|§40.1]], [[§40 Projective Spaces and the Hopf Fibration#^rem-40-1|Remark: Sections Need Not Exist]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]]
+*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§38 Fibrations#^def-38-3|Def. §38.3]], [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Ex. §42.3]], [[§42 Projective Spaces and the Hopf Fibration#^prop-42-1|§42.1]], [[§42 Projective Spaces and the Hopf Fibration#^rem-42-1|Remark: Sections Need Not Exist]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]]
 

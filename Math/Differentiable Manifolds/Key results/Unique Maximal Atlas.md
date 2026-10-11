@@ -34,12 +34,12 @@ tags: [differentiable-manifolds, hub]
 - [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|Proposition §22.2: A Vector Space Is a Smooth Manifold]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|Corollary §23.2: Consequences]]
 - [[§24 The Circle#^prop-24-1|Proposition §24.1: The Three Circle Atlases Define One Smooth Structure]]
-- [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]
-- [[§35 Regular Submanifolds#^prop-35-1|Proposition §35.1: Two Observations on Adapted Charts]]
-- [[§35 Regular Submanifolds#^prop-35-2|Proposition §35.2: The Induced Smooth Structure]]
-- [[§35 Regular Submanifolds#^prop-35-6|Proposition §35.6: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
-- [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
-- [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3: The Tangent Bundle Is a Fibration]]
+- [[§36 Submersions#^lem-36-3|Lemma §36.3: Diffeomorphisms onto Open Sets Are Charts]]
+- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Two Observations on Adapted Charts]]
+- [[§37 Regular Submanifolds#^prop-37-2|Proposition §37.2: The Induced Smooth Structure]]
+- [[§37 Regular Submanifolds#^prop-37-6|Proposition §37.6: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
+- [[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9: The Old and New Versions Agree]]
+- [[§47 The Tangent Bundle#^cor-47-3|Corollary §47.3: The Tangent Bundle Is a Fibration]]
 
 ## Connections
 - **Used for.** Writing down any atlas specifies a smooth structure ([[§17 Differentiable Structures#^def-17-9|Def. §17.9]]): the standard atlas of ℂPⁿ ([[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§24 The Circle#^prop-24-1|§24.1]]).

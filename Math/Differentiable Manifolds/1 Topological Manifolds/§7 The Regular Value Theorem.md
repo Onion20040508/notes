@@ -61,7 +61,7 @@ tags: [differentiable-manifolds, math591]
 ^def-7-3
 
 > [!remark]- Connections
-> - The same notion defined again later, for smooth maps of manifolds: [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§34 Submersions#^def-34-3|Def. §34.3]].
+> - The same notion defined again later, for smooth maps of manifolds: [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§36 Submersions#^def-36-3|Def. §36.3]].
 
 > [!definition] Definition §7.4: Regular Value
 > Let $F : \mathbb{R}^N \to \mathbb{R}^m$ be $C^1$. A value $c \in \mathbb{R}^m$ is a **regular value** of $F$ if every point of the level set $F^{-1}(c)$ is a regular point ([[§7 The Regular Value Theorem#^def-7-3|Definition §7.3]]). Otherwise $c$ is a **critical value**. (If $F^{-1}(c) = \emptyset$, then $c$ is vacuously a regular value.) So for scalar-valued $F$, $c \in \mathbb{R}$ is a regular value iff $\nabla F$ vanishes nowhere on $F^{-1}(c)$.
@@ -71,7 +71,7 @@ tags: [differentiable-manifolds, math591]
 ^def-7-4
 
 > [!remark]- Connections
-> - The same notion defined again later: without coordinates, [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]; for smooth maps of manifolds, [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§34 Submersions#^def-34-4|Def. §34.4]].
+> - The same notion defined again later: without coordinates, [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]; for smooth maps of manifolds, [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§36 Submersions#^def-36-4|Def. §36.4]].
 
 > [!remark] Remark: The Constraint $N \ge m$
 > Regular points can exist only when $N \ge m$, and the case $N = m$ is special; both facts are made precise in [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5]], once the regular value theorem is available. Geometrically, one cannot cut an $N$-dimensional space down by more than $N$ independent constraints and have anything left — the dimension count $N - m$ would be negative. The boundary case $N = m$ belongs to the *inverse* function theorem rather than the implicit one. The situation of interest below is $N = n^2$, $m = 1$.
@@ -122,15 +122,15 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 ^thm-7-1
 
 > [!proof]+ Proof (sketch)
-> Lee deduces this from the Inverse Function Theorem ([[§33 Local Diffeomorphisms#^thm-33-1|Theorem §33.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Special cases are proved in MATH 452 (one equation: [[Implicit Function Theorem|452 §12]]; two variables: [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
+> Lee deduces this from the Inverse Function Theorem ([[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Special cases are proved in MATH 452 (one equation: [[Implicit Function Theorem|452 §12]]; two variables: [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
 
 ^pf-7-1
 
-*Uses:* [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[Inverse Function Theorem (several variables)|452 §16.2]]
+*Uses:* [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[Inverse Function Theorem (several variables)|452 §16.2]]
 
 > [!remark]- Connections
 > - The one-equation version is proved in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]] (hub: [[Implicit Function Theorem]]); this vector-valued version has its home here.
-> - Deduced from the inverse function theorem: [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
+> - Deduced from the inverse function theorem: [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
 
 > [!remark] Remark: Which Variables Are Solved For
 > The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when *some* $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting—after permuting coordinates. That permutation is the “WLOG” step in the proof of Proposition [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]] below.
@@ -201,7 +201,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 *Uses:* [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 > [!remark]- Connections
-> - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-9|§30.9]] and [[§35 Regular Submanifolds#^thm-35-7|§35.7]].
+> - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-9|§30.9]] and [[§37 Regular Submanifolds#^thm-37-7|§37.7]].
 > - Recovered as a special case of transversality: [[§26 Transversality#^cor-26-3|§26.3]].
 
 > [!theorem] Corollary §7.4: Open Domains and Arbitrary Values
@@ -216,7 +216,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 
 *Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]]
 
-This is the form needed on manifolds, where a chart has an open subset of Euclidean space as its image, not the whole space. The general version, for maps between manifolds and with the smooth structure and the tangent space included, is [[§35 Regular Submanifolds#^thm-35-7|Theorem §35.7]] (Lecture 12).
+This is the form needed on manifolds, where a chart has an open subset of Euclidean space as its image, not the whole space. The general version, for maps between manifolds and with the smooth structure and the tangent space included, is [[§37 Regular Submanifolds#^thm-37-7|Theorem §37.7]] (Lecture 12).
 
 **Comparison with Lee.** Lee meets level sets twice. Example 1.32 builds graph charts for the level set of a single function with nonvanishing gradient, and Corollary 5.14 proves, via the constant-rank theorem, that every regular level set is a properly embedded submanifold. The course takes the direct route of Example 1.32 in every codimension, using the implicit function theorem, and obtains the smooth structure separately ([[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]]).
 
@@ -288,7 +288,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 *Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
 
 > [!remark]- Connections
-> - The notion of submanifold the problem asks about: [[§35 Regular Submanifolds#^def-35-1|Def. §35.1]]; regular level sets are submanifolds by [[§35 Regular Submanifolds#^thm-35-7|§35.7]].
+> - The notion of submanifold the problem asks about: [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]; regular level sets are submanifolds by [[§37 Regular Submanifolds#^thm-37-7|§37.7]].
 
 > [!remark] Remark
 > **The workflow.** Every problem of this type runs the same five steps: (i) compute the Jacobian; (ii) find the locus where its rank drops; (iii) check that this locus *misses the level set*; (iv) read off the dimension; (v) compute the kernel. Step (iii) is the one most often skipped, and it is the point of the definition: the rank may drop anywhere at all, so long as it does not drop *on* $F^{-1}(c)$. Here it drops at exactly one point of $\mathbb{R}^4$, which happens to lie on a different level set.

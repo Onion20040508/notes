@@ -5,10 +5,10 @@ source: "[[Differentiable Manifolds]]"
 aliases: ["MATH 591 34.4", "local normal form for submersions", "Lee Theorem 4.12"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§34 Submersions#^thm-34-4]]
+![[§36 Submersions#^thm-36-4]]
 
 ## Treated in
-- [[§34 Submersions#^thm-34-4|Theorem §34.4: Local Normal Form for Submersions]], in [[§34 Submersions]]
+- [[§36 Submersions#^thm-36-4|Theorem §36.4: Local Normal Form for Submersions]], in [[§36 Submersions]]
 
 ## Its proof uses
 - [[§2 Topological Manifolds#^lem-2-10|Lemma §2.10: Restricting and Recomposing Charts]]
@@ -20,22 +20,22 @@ tags: [differentiable-manifolds, hub]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8: Dimension of the Tangent Space]]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
 - [[§30 The Differential in Coordinates#^thm-30-2|Theorem §30.2: The Matrix of the Differential]]
-- [[§33 Local Diffeomorphisms#^thm-33-1|Theorem §33.1: Inverse Function Theorem]]
-- [[§34 Submersions#^def-34-1|Definition §34.1: Submersion]]
-- [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]
-- [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]
+- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]
+- [[§36 Submersions#^def-36-1|Definition §36.1: Submersion]]
+- [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]
+- [[§36 Submersions#^lem-36-3|Lemma §36.3: Diffeomorphisms onto Open Sets Are Charts]]
 
 ## Its proof uses (other subjects)
 - [[Invertible ⟺ nonzero determinant]] (Linear Algebra)
 
 ## Used in (Differentiable Manifolds)
-- [[§34 Submersions#^cor-34-5|Corollary §34.5: Being a Submersion Is an Open Condition]]
-- [[§34 Submersions#^cor-34-6|Corollary §34.6: Submersions Are Open Maps]]
-- [[§35 Regular Submanifolds#^thm-35-7|Theorem §35.7: The Regular Value Theorem for Manifolds]]
-- [[§37 Immersions#^thm-37-1|Theorem §37.1: Local Normal Form for Immersions]]
+- [[§36 Submersions#^cor-36-5|Corollary §36.5: Being a Submersion Is an Open Condition]]
+- [[§36 Submersions#^cor-36-6|Corollary §36.6: Submersions Are Open Maps]]
+- [[§37 Regular Submanifolds#^thm-37-7|Theorem §37.7: The Regular Value Theorem for Manifolds]]
+- [[§39 Immersions#^thm-39-1|Theorem §39.1: Local Normal Form for Immersions]]
 
 ## Connections
-- **Used for.** Being a submersion is an open condition ([[§34 Submersions#^cor-34-5|§34.5]]), and submersions are open maps ([[§34 Submersions#^cor-34-6|§34.6]]), hence so are fibrations ([[§36 Fibrations#^prop-36-1|§36.1]]). It proves the [[Regular Value Theorem for Manifolds]]: near a point of the level set F is a projection, so the level set is a coordinate slice.
-- **How.** Complete F¹, …, Fⁿ by m − n of the old coordinates to m functions with invertible Jacobian; the [[Inverse Function Theorem (several variables)]] makes them a local diffeomorphism, and [[§34 Submersions#^lem-34-3|§34.3]] makes that a chart.
-- **Local, not global.** A surjective submersion need not be a fibration: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has a broken fibre over 0 ([[§36 Fibrations#^ex-36-1|Ex. §36.1]]). Ehresmann's theorem adds properness to get local triviality over the whole base ([[§36 Fibrations#^thm-36-3|§36.3]]).
-- **Same idea elsewhere.** The model is the projection ℝᵏ × ℝˡ → ℝᵏ ([[§34 Submersions#^ex-34-1|Ex. §34.1]]), and the mirror statement is the [[Immersion Normal Form]]. The 452 [[Implicit Function Theorem]] is the Euclidean shadow: near a regular point a level set is a graph.
+- **Used for.** Being a submersion is an open condition ([[§36 Submersions#^cor-36-5|§36.5]]), and submersions are open maps ([[§36 Submersions#^cor-36-6|§36.6]]), hence so are fibrations ([[§38 Fibrations#^prop-38-1|§38.1]]). It proves the [[Regular Value Theorem for Manifolds]]: near a point of the level set F is a projection, so the level set is a coordinate slice.
+- **How.** Complete F¹, …, Fⁿ by m − n of the old coordinates to m functions with invertible Jacobian; the [[Inverse Function Theorem (several variables)]] makes them a local diffeomorphism, and [[§36 Submersions#^lem-36-3|§36.3]] makes that a chart.
+- **Local, not global.** A surjective submersion need not be a fibration: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has a broken fibre over 0 ([[§38 Fibrations#^ex-38-1|Ex. §38.1]]). Ehresmann's theorem adds properness to get local triviality over the whole base ([[§38 Fibrations#^thm-38-3|§38.3]]).
+- **Same idea elsewhere.** The model is the projection ℝᵏ × ℝˡ → ℝᵏ ([[§36 Submersions#^ex-36-1|Ex. §36.1]]), and the mirror statement is the [[Immersion Normal Form]]. The 452 [[Implicit Function Theorem]] is the Euclidean shadow: near a regular point a level set is a graph.

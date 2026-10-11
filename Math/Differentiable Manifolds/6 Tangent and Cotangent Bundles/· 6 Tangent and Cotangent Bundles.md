@@ -12,18 +12,18 @@ tags: [chapter, differentiable-manifolds]
 **Builds on (other subjects):** [[Linear Algebra]] (4), [[Topology]] (3), [[Multivariable Analysis]] (2)
 
 ## Sections
-- [[§43 Recap꞉ Germs, Derivations and Tangent Vectors]]
-- [[§44 Recap꞉ Covectors and the Four Differentials]]
-- [[§45 The Tangent Bundle]]
-- [[§46 The Cotangent Bundle]]
-- [[§47 One-Forms]]
+- [[§45 Recap꞉ Germs, Derivations and Tangent Vectors]]
+- [[§46 Recap꞉ Covectors and the Four Differentials]]
+- [[§47 The Tangent Bundle]]
+- [[§48 The Cotangent Bundle]]
+- [[§49 One-Forms]]
 
 ## Central results
 - [[Tangent Bundle Is a Smooth Manifold]] (§45.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§45 The Tangent Bundle#^prop-45-1|Proposition §45.1: The Topology of TM]]: 33 later results
+- [[§47 The Tangent Bundle#^prop-47-1|Proposition §47.1: The Topology of TM]]: 33 later results
 - [[Tangent Bundle Is a Smooth Manifold|Proposition §45.2: The Smooth Atlas of TM]]: 33 later results
-- [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3: The Tangent Bundle Is a Fibration]]: 10 later results
-- [[§45 The Tangent Bundle#^prop-45-4|Proposition §45.4: The Tangent Bundle Is a Manifold (Claim)]]: 10 later results
+- [[§47 The Tangent Bundle#^cor-47-3|Corollary §47.3: The Tangent Bundle Is a Fibration]]: 10 later results
+- [[§47 The Tangent Bundle#^prop-47-4|Proposition §47.4: The Tangent Bundle Is a Manifold (Claim)]]: 10 later results

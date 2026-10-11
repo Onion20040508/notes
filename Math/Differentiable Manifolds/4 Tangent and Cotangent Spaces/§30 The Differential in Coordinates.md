@@ -60,7 +60,7 @@ $$
 > Uribe stated it in Lecture 10 and recalled it at the decisive moment of Lecture 11 — it is marked with “!!!” on page 30 of the handwritten notes. When a student asked whether the matrix in the proof of the normal form should be written with $\tilde F$, the answer was: “it's the same thing … that's how we define partials.” Partial derivatives on a manifold are *defined* by going downstairs, so the matrix of partials of the components $F^j$ upstairs is literally the ordinary Jacobian of $\tilde F$ downstairs. This is what turns every local computation on a manifold into calculus in $\mathbb{R}^m$, and it is used in:
 > 1. the matrix of the differential (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), which is a one-line proof because of it;
 > 2. regular values in one chart (Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]]): the rank of $F_{*p}$ is the rank of $\tilde F'(\varphi(p))$;
-> 3. the proof of the local normal form (Theorem [[§34 Submersions#^thm-34-4|§34.4]]), where the matrix $\big[\partial F^j/\partial x^i(p)\big]$ is built from the components $F^j$ but is the Jacobian of $\tilde F$;
+> 3. the proof of the local normal form (Theorem [[§36 Submersions#^thm-36-4|§36.4]]), where the matrix $\big[\partial F^j/\partial x^i(p)\big]$ is built from the components $F^j$ but is the Jacobian of $\tilde F$;
 > 4. [[§30 The Differential in Coordinates#^rem-30-6|Assignment 3, Problem 4]], whose “matching coefficients” step computes $F_{*p}(\partial/\partial u_k|_p)[x^j]$ as an ordinary partial derivative of $F_\varphi$.
 >
 > Both sides depend on the charts: changing $\varphi$ or $\psi$ changes the matrix (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), while $F_{*p}$ itself does not.
@@ -399,7 +399,7 @@ Moreover, all the tangent spaces of $V$ are identified with one another, and wit
 
 **Transcription note (Lecture 17).** Page 45 of the handwritten notes writes the identification as “$T_pM \cong T_0V \cong V$”; it is $T_pV \cong T_0V \cong V$.
 
-Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§52 Lie Groups and Left-Invariant Vector Fields#^def-52-1|Lie group]] $(V, +)$ ([[§52 Lie Groups and Left-Invariant Vector Fields#^ex-52-2|Example §52.2]]).
+Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§54 Lie Groups and Left-Invariant Vector Fields#^def-54-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§54 Lie Groups and Left-Invariant Vector Fields#^def-54-1|Lie group]] $(V, +)$ ([[§54 Lie Groups and Left-Invariant Vector Fields#^ex-54-2|Example §54.2]]).
 
 > [!definition] Definition §30.2: Rank of a Smooth Map
 > Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation.
@@ -419,8 +419,8 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 ^def-30-3
 
 > [!remark]- Connections
-> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]; restated with critical points in [[§34 Submersions#^def-34-3|Def. §34.3]].
-> - A regular point is a point where $F$ is a submersion: [[§34 Submersions#^def-34-1|Def. §34.1]].
+> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]; restated with critical points in [[§36 Submersions#^def-36-3|Def. §36.3]].
+> - A regular point is a point where $F$ is a submersion: [[§36 Submersions#^def-36-1|Def. §36.1]].
 
 > [!definition] Definition §30.4: Regular Value of a Smooth Map
 > Let $F : M \to N$ be a smooth map. A value $c \in N$ is a **regular value** if every $p \in F^{-1}(c)$ is a regular point ([[§30 The Differential in Coordinates#^def-30-3|Definition §30.3]]).
@@ -430,10 +430,10 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 ^def-30-4
 
 > [!remark]- Connections
-> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical values in [[§34 Submersions#^def-34-4|Def. §34.4]].
+> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical values in [[§36 Submersions#^def-36-4|Def. §36.4]].
 
 > [!remark] Remark: The Map Is Intrinsic — the Matrix Is Not
-> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§34 Submersions#^def-34-1|§34.1]]; maps with bijective, surjective and injective differentials are the subject of [[§33 Local Diffeomorphisms|§33]].
+> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§36 Submersions#^def-36-1|§36.1]]; maps with bijective, surjective and injective differentials are the subject of [[§35 Local Diffeomorphisms|§35]].
 
 ^rem-30-5
 
@@ -488,7 +488,7 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 
 ^rem-30-6
 
-Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§40 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§42 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 
 > [!theorem] Corollary §30.9: Regular Level Sets Are Topological Manifolds
 > Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$, and $c \in N$ a regular value of $F$. Then $F^{-1}(c)$, with the subspace topology, is a topological manifold of dimension $m - n$ (or empty).
@@ -514,9 +514,9 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 *Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!remark]- Connections
-> - The smooth half, $F^{-1}(c)$ a submanifold with tangent space $\ker F_{*p}$: [[§35 Regular Submanifolds#^thm-35-7|§35.7]]; the Euclidean original: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
+> - The smooth half, $F^{-1}(c)$ a submanifold with tangent space $\ker F_{*p}$: [[§37 Regular Submanifolds#^thm-37-7|§37.7]]; the Euclidean original: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 
-This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{\ast p}$ — came in Lecture 12, as Theorem [[§35 Regular Submanifolds#^thm-35-7|§35.7]], proved with the local normal form for submersions (Theorem [[§34 Submersions#^thm-34-4|§34.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.
+This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{\ast p}$ — came in Lecture 12, as Theorem [[§37 Regular Submanifolds#^thm-37-7|§37.7]], proved with the local normal form for submersions (Theorem [[§36 Submersions#^thm-36-4|§36.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.
 
 > [!theorem] Proposition §30.10: Maps with Zero Differential Are Constant
 > Let $F : M \to N$ be smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]), with $M$ connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]). If $F_{\ast p} = 0$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]) for every $p \in M$, then $F$ is constant.

@@ -197,7 +197,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 ^def-13-4
 
 > [!remark]- Connections
-> - In 591, submersions are open maps, [[§34 Submersions#^cor-34-6|591 Cor. §34.6]], and open equivalence relations (open quotient maps) are where its quotient criteria apply, [[§4 Quotient Spaces and Open Maps#^def-4-4|591 Def. §4.4]].
+> - In 591, submersions are open maps, [[§36 Submersions#^cor-36-6|591 Cor. §36.6]], and open equivalence relations (open quotient maps) are where its quotient criteria apply, [[§4 Quotient Spaces and Open Maps#^def-4-4|591 Def. §4.4]].
 
 > [!theorem] Proposition §13.2
 > If $p: X \to Y$ is a surjective continuous map that is either open or closed, then $p$ is a quotient map.

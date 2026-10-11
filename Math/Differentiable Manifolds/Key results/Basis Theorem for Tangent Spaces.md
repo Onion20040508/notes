@@ -31,22 +31,22 @@ tags: [differentiable-manifolds, hub]
 - [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4: The Tangent Space of a Product]]
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|Corollary §31.5: Product Coordinates]]
 - [[§32 The Cotangent Space#^prop-32-1|Proposition §32.1: The Tangent Spaces of ℝ]]
-- [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3: The Differential in Coordinates]]
-- [[§32 The Cotangent Space#^prop-32-7|Proposition §32.7: A Basis of I_p/I_p²]]
-- [[§32 The Cotangent Space#^thm-32-9|Theorem §32.9: The Cotangent Space from Germs]]
-- [[§35 Regular Submanifolds#^prop-35-4|Proposition §35.4: Tangent Spaces of a Regular Submanifold]]
-- [[§37 Immersions#^ex-37-1|Example §37.1: An Immersion That Crosses Itself]]
-- [[§43 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-43-1|Example §43.1: Vectors in the Plane in Three Ways]]
-- [[§45 The Tangent Bundle#^prop-45-1|Proposition §45.1: The Topology of TM]]
-- [[§45 The Tangent Bundle#^prop-45-2|Proposition §45.2: The Smooth Atlas of TM]]
-- [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3: The Tangent Bundle Is a Fibration]]
-- [[§48 Vector Fields#^prop-48-1|Proposition §48.1: Vector Fields in Coordinates]]
-- [[§48 Vector Fields#^prop-48-7|Proposition §48.7: Derivations Are Vector Fields]]
-- [[§50 Lie Bracket and Lie Algebra#^prop-50-2|Proposition §50.2: The Bracket in Coordinates]]
-- [[§51 Related Vector Fields#^ex-51-1|Example §51.1: Fields Related by a Projection]]
+- [[§33 Covectors in Coordinates#^lem-33-1|Lemma §33.1: The Differential in Coordinates]]
+- [[§34 The Cotangent Space from Germs#^prop-34-2|Proposition §34.2: A Basis of I_p/I_p²]]
+- [[§34 The Cotangent Space from Germs#^thm-34-4|Theorem §34.4: The Cotangent Space from Germs]]
+- [[§37 Regular Submanifolds#^prop-37-4|Proposition §37.4: Tangent Spaces of a Regular Submanifold]]
+- [[§39 Immersions#^ex-39-1|Example §39.1: An Immersion That Crosses Itself]]
+- [[§45 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-45-1|Example §45.1: Vectors in the Plane in Three Ways]]
+- [[§47 The Tangent Bundle#^prop-47-1|Proposition §47.1: The Topology of TM]]
+- [[§47 The Tangent Bundle#^prop-47-2|Proposition §47.2: The Smooth Atlas of TM]]
+- [[§47 The Tangent Bundle#^cor-47-3|Corollary §47.3: The Tangent Bundle Is a Fibration]]
+- [[§50 Vector Fields#^prop-50-1|Proposition §50.1: Vector Fields in Coordinates]]
+- [[§50 Vector Fields#^prop-50-7|Proposition §50.7: Derivations Are Vector Fields]]
+- [[§52 Lie Bracket and Lie Algebra#^prop-52-2|Proposition §52.2: The Bracket in Coordinates]]
+- [[§53 Related Vector Fields#^ex-53-1|Example §53.1: Fields Related by a Projection]]
 
 ## Connections
-- **Used for.** dim T_pM = n, which finishes [[Ambient and Abstract Tangent Spaces Agree]] ([[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|§29.7]]). The coordinate bases give the [[Matrix of the Differential]], the dual bases dxⁱ|_p of T*_pM ([[§32 The Cotangent Space#^lem-32-3|§32.3]]), the charts of TM ([[Tangent Bundle Is a Smooth Manifold]]) and the straight-line curves of [[Every Tangent Vector Is a Velocity]].
+- **Used for.** dim T_pM = n, which finishes [[Ambient and Abstract Tangent Spaces Agree]] ([[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|§29.7]]). The coordinate bases give the [[Matrix of the Differential]], the dual bases dxⁱ|_p of T*_pM ([[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), the charts of TM ([[Tangent Bundle Is a Smooth Manifold]]) and the straight-line curves of [[Every Tangent Vector Is a Velocity]].
 - **Why only first derivatives survive.** The chart turns D into a derivation at a point of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]). There [[Hadamard's Lemma]], applied twice, writes a germ as a constant plus a linear term plus an element of I_p². D kills constants and I_p² by the Leibniz rule ([[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]]), so only the linear term is left ([[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|A Derivation Sees Only the First Derivatives]]).
 - **Same idea elsewhere.** The universal formula D = Σ D[xⁱ] ∂/∂xⁱ|_p is the expansion of a vector in a basis, with coefficients read off by the dual basis ([[§12 Duality#^ladr-3-114|LADR 3.114]]): D[xⁱ] = dxⁱ|_p(D). Changing the chart changes the basis by the Jacobian of the transition map ([[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), an instance of the change-of-basis formula ([[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]).
-- **Vector fields.** In a chart a vector field is X = Σ Xʲ ∂/∂xʲ, with coefficients Xʲ(p) = X_p[xʲ] given by the universal formula at each point, and it is smooth exactly when the Xʲ are ([[§48 Vector Fields#^prop-48-1|§48.1]]).
+- **Vector fields.** In a chart a vector field is X = Σ Xʲ ∂/∂xʲ, with coefficients Xʲ(p) = X_p[xʲ] given by the universal formula at each point, and it is smooth exactly when the Xʲ are ([[§50 Vector Fields#^prop-50-1|§50.1]]).

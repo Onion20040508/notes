@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, hub]
 - [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]], in [[§7 The Regular Value Theorem]]
 
 ## Its proof uses
-- [[§33 Local Diffeomorphisms#^thm-33-1|Theorem §33.1: Inverse Function Theorem]]
+- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]
 
 ## Its proof uses (other subjects)
 - [[Implicit Function Theorem]] (Multivariable Analysis)

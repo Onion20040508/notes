@@ -99,9 +99,9 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home: [[§12 Duality#^ladr-3-114|LADR 3.114 (dual basis gives coefficients)]], [[§12 Duality#^ladr-3-116|LADR 3.116 (dual basis is a basis of the dual space)]], [[§12 Duality#^ladr-3-111|LADR 3.111]].
-> - Applied to $V = T_pM$ with the coordinate basis $e_j = \partial/\partial x^j|_p$: the dual basis is $\varepsilon^i = dx^i|_p$, the differentials of the coordinate functions. This identification is **not** a consequence of duality — the $dx^i|_p$ are defined independently, as differentials ([[§32 The Cotangent Space#^def-32-5|Def. §32.5]]), and the relation $dx^i|_p(\partial/\partial x^j|_p) = \delta^i_j$ is computed from $df_p(D) = D[f]$ and $x^i \circ \varphi^{-1} = r^i$ in Step 1 of [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3]]. Everything after that is this proposition.
-> - The second formula, $\lambda = \sum_i \lambda(e_i)\,\varepsilon^i$, with $\lambda = \alpha \in T_p^{\ast}M$: the components $\xi_i = \alpha(\partial/\partial x^i|_p)$ of a covector, [[§32 The Cotangent Space#^cor-32-4|Cor. §32.4]].
-> - Those components are the fibre coordinates of the standard chart $(p, \alpha) \mapsto (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$, [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]]; the first formula, $v = \sum_i \varepsilon^i(v)\,e_i$, gives the fibre coordinates of $TM$ in the same way, [[§45 The Tangent Bundle#^def-45-5|Def. §45.5]].
+> - Applied to $V = T_pM$ with the coordinate basis $e_j = \partial/\partial x^j|_p$: the dual basis is $\varepsilon^i = dx^i|_p$, the differentials of the coordinate functions. This identification is **not** a consequence of duality — the $dx^i|_p$ are defined independently, as differentials ([[§32 The Cotangent Space#^def-32-5|Def. §32.5]]), and the relation $dx^i|_p(\partial/\partial x^j|_p) = \delta^i_j$ is computed from $df_p(D) = D[f]$ and $x^i \circ \varphi^{-1} = r^i$ in Step 1 of [[§33 Covectors in Coordinates#^lem-33-1|Lemma §33.1]]. Everything after that is this proposition.
+> - The second formula, $\lambda = \sum_i \lambda(e_i)\,\varepsilon^i$, with $\lambda = \alpha \in T_p^{\ast}M$: the components $\xi_i = \alpha(\partial/\partial x^i|_p)$ of a covector, [[§33 Covectors in Coordinates#^cor-33-2|Cor. §33.2]].
+> - Those components are the fibre coordinates of the standard chart $(p, \alpha) \mapsto (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$, [[§48 The Cotangent Bundle#^def-48-5|Def. §48.5]]; the first formula, $v = \sum_i \varepsilon^i(v)\,e_i$, gives the fibre coordinates of $TM$ in the same way, [[§47 The Tangent Bundle#^def-47-5|Def. §47.5]].
 
 > [!theorem] Proposition §21.3: The Double Dual
 > For a finite-dimensional $V$, the map
@@ -263,11 +263,11 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
-> - Applied to the pairing of tangent vectors with germs: [[§32 The Cotangent Space#^prop-32-8|§32.8]], [[§32 The Cotangent Space#^thm-32-9|§32.9]].
+> - Applied to the pairing of tangent vectors with germs: [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]], [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]].
 > - Bilinear forms on a single space in LADR: [[§35 Bilinear Forms and Quadratic Forms|9A Bilinear Forms and Quadratic Forms]].
 
 > [!remark] Remark
-> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^{\ast} \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast \ast}$ is injective without being onto. [[§32 The Cotangent Space#^thm-32-9|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
+> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^{\ast} \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast \ast}$ is injective without being onto. [[§34 The Cotangent Space from Germs#^thm-34-4|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
 
 ^rem-21-2
 
@@ -322,11 +322,11 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 ![[m591-10-2.svg]]
 *The universal property of the quotient: a linear map $A$ with $W \subseteq \ker A$ factors uniquely as $A = \bar A \circ \pi$.*
 
-The universal property as a triangle: a linear map that kills $W$ descends to $V/W$. It is the linear counterpart of the universal property of quotient maps, Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]], with “vanishes on $W$” in place of “constant on the fibres” — and the proof is the same: define the map on a class by choosing a representative, and check the choice does not matter. [[§32 The Cotangent Space#^prop-32-8|Assignment 3, Problem 3(a)]] is an instance: a derivation kills $I_p^2$, so its restriction to $I_p$ descends to $I_p/I_p^2$.
+The universal property as a triangle: a linear map that kills $W$ descends to $V/W$. It is the linear counterpart of the universal property of quotient maps, Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]], with “vanishes on $W$” in place of “constant on the fibres” — and the proof is the same: define the map on a class by choosing a representative, and check the choice does not matter. [[§34 The Cotangent Space from Germs#^prop-34-3|Assignment 3, Problem 3(a)]] is an instance: a derivation kills $I_p^2$, so its restriction to $I_p$ descends to $I_p/I_p^2$.
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103 (quotient space is a vector space)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105 (dimension)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-106|LADR 3.106]] and [[First isomorphism theorem|LADR 3.107 (first isomorphism theorem)]] for the induced map.
-> - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§32 The Cotangent Space#^def-32-6|Def. §32.6]].
+> - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§34 The Cotangent Space from Germs#^def-34-1|Def. §34.1]].
 
 > [!definition] Definition §21.7: Direct Sum
 > The **direct sum** of vector spaces $V$ and $W$ is $V \oplus W = V \times W$ with the componentwise operations $(v, w) + (v', w') = (v + v', w + w')$ and $c(v, w) = (cv, cw)$. It comes with the **inclusions** $\iota_V(v) = (v, 0)$, $\iota_W(w) = (0, w)$ and the **projections** $\pi_V(v, w) = v$, $\pi_W(v, w) = w$, all linear.

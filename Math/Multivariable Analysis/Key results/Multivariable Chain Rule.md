@@ -58,8 +58,8 @@ tags: [multivariable-analysis, hub]
 - [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|Lemma §29.2: Hadamard's Lemma]]
 - [[§30 The Differential in Coordinates#^cor-30-3|Corollary §30.3: The Chain Rule in Coordinates]]
 - [[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5: Agreement with the Vector-Space Differential]]
-- [[§35 Regular Submanifolds#^prop-35-9|Proposition §35.9: The Old and New Versions Agree]]
-- [[§46 The Cotangent Bundle#^prop-46-2|Proposition §46.2: The Smooth Atlas of T^*M]]
+- [[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9: The Old and New Versions Agree]]
+- [[§48 The Cotangent Bundle#^prop-48-2|Proposition §48.2: The Smooth Atlas of T^*M]]
 
 ## Connections
 - **Proof idea.** Split the increment of g into single-variable increments and apply the one-variable [[Mean Value Theorem]]. Continuity of the partials controls the intermediate points. The 451 version is the [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]] (§28.3). Under differentiability alone, see [[§8 Algebra of Differentiable Functions#^thm-8-7|Theorem §8.7]].

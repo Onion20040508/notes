@@ -19,9 +19,9 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 - $\mathbb{RP}^1$ is homeomorphic to $S^1$ ([[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|§18]])
 - The circle in three descriptions: level set, graph, parametrization ([[§24 The Circle#^ex-24-1|§24]])
 - The three circle atlases agree with the level-set structure ([[§24 The Circle#^prop-24-1|§24]])
-- $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective ([[§33 Local Diffeomorphisms#^ex-33-1|§33]])
-- $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not ([[§33 Local Diffeomorphisms#^rem-33-2|§33]])
-- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§36 Fibrations#^ex-36-2|§36]])
+- $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective ([[§35 Local Diffeomorphisms#^ex-35-1|§33]])
+- $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not ([[§35 Local Diffeomorphisms#^rem-35-2|§33]])
+- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§38 Fibrations#^ex-38-2|§36]])
 
 ## The torus $T^n = S^1 \times \cdots \times S^1$ inherits $T_2$ and second countability from its factors
 ![[§3 Subspaces and Products#^rem-3-6]]
@@ -63,10 +63,10 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 ![[§24 The Circle#^prop-24-1]]
 
 ## $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective
-![[§33 Local Diffeomorphisms#^ex-33-1]]
+![[§35 Local Diffeomorphisms#^ex-35-1]]
 
 ## $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not
-![[§33 Local Diffeomorphisms#^rem-33-2]]
+![[§35 Local Diffeomorphisms#^rem-35-2]]
 
 ## The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product
-![[§36 Fibrations#^ex-36-2]]
+![[§38 Fibrations#^ex-38-2]]

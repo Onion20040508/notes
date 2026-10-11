@@ -12,16 +12,16 @@ tags: [chapter, differentiable-manifolds]
 **Builds on (other subjects):** [[Linear Algebra]] (15), [[Topology]] (44), [[Multivariable Analysis]] (6)
 
 ## Sections
-- [[§33 Local Diffeomorphisms]]
-- [[§34 Submersions]]
-- [[§35 Regular Submanifolds]]
-- [[§36 Fibrations]]
-- [[§37 Immersions]]
-- [[§38 Embeddings]]
-- [[§39 Geometric and Abstract Manifolds]]
-- [[§40 Projective Spaces and the Hopf Fibration]]
-- [[§41 The Unit Quaternions and SU(2)]]
-- [[§42 SU(2) → SO(3)꞉ The Double Cover]]
+- [[§35 Local Diffeomorphisms]]
+- [[§36 Submersions]]
+- [[§37 Regular Submanifolds]]
+- [[§38 Fibrations]]
+- [[§39 Immersions]]
+- [[§40 Embeddings]]
+- [[§41 Geometric and Abstract Manifolds]]
+- [[§42 Projective Spaces and the Hopf Fibration]]
+- [[§43 The Unit Quaternions and SU(2)]]
+- [[§44 SU(2) → SO(3)꞉ The Double Cover]]
 
 ## Central results
 - [[Local Diffeomorphism Criterion]] (§33.2)
@@ -34,7 +34,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§33 Local Diffeomorphisms#^thm-33-1|Theorem §33.1: Inverse Function Theorem]]: 64 later results
+- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 64 later results
 - [[Local Diffeomorphism Criterion|Theorem §33.2: Local Diffeomorphisms Are Detected by the Differential]]: 29 later results
-- [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]: 28 later results
-- [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]: 27 later results
+- [[§36 Submersions#^lem-36-3|Lemma §36.3: Diffeomorphisms onto Open Sets Are Charts]]: 28 later results
+- [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]: 27 later results

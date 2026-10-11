@@ -27,7 +27,7 @@ tags: [linear-algebra, hub]
 ## Used in (Differentiable Manifolds)
 - [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|Proposition §15.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]
 - [[§21 Linear Algebra Toolkit#^prop-21-2|Proposition §21.2: The Dual Basis]]
-- [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3: The Differential in Coordinates]]
+- [[§33 Covectors in Coordinates#^lem-33-1|Lemma §33.1: The Differential in Coordinates]]
 
 ## Connections
 - The reason a linear map is the same data as its matrix: [[§9 Matrices#^ladr-3-31|Matrix of a linear map, M(T)]], and why $\mathcal{M}$ is bijective in [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
