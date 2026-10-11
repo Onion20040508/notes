@@ -35,7 +35,7 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Transversality#^thm-26-1|Theorem §26.1: Preimages of Transverse Level Sets]]
 - [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
 - [[§35 Local Diffeomorphisms#^ex-35-1|Example §35.1: The Circle Covered by a Line]]
-- [[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9: The Old and New Versions Agree]]
+- [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
 - [[§42 Projective Spaces and the Hopf Fibration#^ex-42-1|Example §42.1: Spheres Cover Projective Spaces]]
 - [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3|Example §42.3: The Hopf Fibration S²ⁿ⁺¹ → ℂPⁿ]]
 

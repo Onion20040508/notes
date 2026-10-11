@@ -54,7 +54,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
-> - The external description becomes the regular value theorem for manifolds, [[§37 Regular Submanifolds#^thm-37-7|§37.7]], and adapted charts, [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-6|§37.6]]); the internal one becomes the local normal form for immersions, [[§39 Immersions#^thm-39-1|§39.1]].
+> - The external description becomes the regular value theorem for manifolds, [[§37 Regular Submanifolds#^thm-37-9|§37.9]], and adapted charts, [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-8|§37.8]]); the internal one becomes the local normal form for immersions, [[§39 Immersions#^thm-39-1|§39.1]].
 > - The tangent space in both pictures: [[§25 The Geometric Tangent Space#^cor-25-4|§25.4]].
 
 The circle in its three descriptions is collected in [[§24 The Circle|§24]].
@@ -112,8 +112,9 @@ The proof in one picture. The transition function between two graph charts facto
 > *The domains cover $M$.* Each $p \in M$ lies in some $U_J$: the rank of $F'(p)$ is $k$ because $c$ is a regular value, so a set $J$ of $k$ independent columns exists at $p$, and the construction above produces a chart $(U_J, \varphi_J)$ with $p \in U_J$.
 >
 > *Compatibility.* Let $(U_J, \varphi_J)$ and $(U_{J'}, \varphi_{J'})$ be two of the charts, with complementary index sets $I$ and $I'$. If $U_J \cap U_{J'} = \emptyset$ there is nothing to check (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]); otherwise, two observations, each valid for every choice of $J$:
-> - $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth *in the Euclidean sense*: its components are either coordinates of $u$ or components of the smooth map $h_J$. Explicitly, for $u \in V_J$ and an index $l \in \{1, \ldots, n+k\}$, the $l$-th coordinate of $\varphi_J^{-1}(u)$ is $u^l$ if $l \in I$, a linear function of $u$, and $h_J^l(u)$ if $l \in J$, a component of the smooth map $h_J$; every component is smooth.
-> - $\varphi_{J'}$ is the restriction of the linear map $\pi_{I'}$, which is smooth on all of $\mathbb{R}^{n+k}$: its components are the coordinate functions $x \mapsto x^l$, $l \in I'$.
+>
+> 1. $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth *in the Euclidean sense*: its components are either coordinates of $u$ or components of the smooth map $h_J$. Explicitly, for $u \in V_J$ and an index $l \in \{1, \ldots, n+k\}$, the $l$-th coordinate of $\varphi_J^{-1}(u)$ is $u^l$ if $l \in I$, a linear function of $u$, and $h_J^l(u)$ if $l \in J$, a component of the smooth map $h_J$; every component is smooth.
+> 2. $\varphi_{J'}$ is the restriction of the linear map $\pi_{I'}$, which is smooth on all of $\mathbb{R}^{n+k}$: its components are the coordinate functions $x \mapsto x^l$, $l \in I'$.
 >
 > The domain of the transition function is $\varphi_J(U_J \cap U_{J'})$. It is open in $\mathbb{R}^I$: $U_J \cap U_{J'}$ is open in $U_J$, the homeomorphism $\varphi_J$ carries it onto an open subset of the open set $V_J$, and an open subset of an open subset of $\mathbb{R}^I$ is open in $\mathbb{R}^I$. For $u$ in it, $\varphi_J^{-1}(u) \in U_J \cap U_{J'}$, and on $U_{J'}$ the map $\varphi_{J'}$ is $\pi_{I'}$ (observation 2). So on the open set $\varphi_J(U_J \cap U_{J'}) \subseteq \mathbb{R}^I$,
 >
@@ -139,7 +140,7 @@ The proof in one picture. The transition function between two graph charts facto
 
 > [!remark]- Connections
 > - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean), [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§36 Submersions#^def-36-4|Def. §36.4]] (manifolds).
-> - Generalized to level sets in manifolds: [[§37 Regular Submanifolds#^thm-37-7|§37.7]]; the two structures agree by [[§37 Regular Submanifolds#^prop-37-9|§37.9]].
+> - Generalized to level sets in manifolds: [[§37 Regular Submanifolds#^thm-37-9|§37.9]]; the two structures agree by [[§37 Regular Submanifolds#^prop-37-11|§37.11]].
 
 > [!example] Example §20.1: A Surface in $\mathbb{R}^3$
 > The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ *two* partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Then $p$ lies in the domains of two charts built from different solved-for variables:
@@ -163,7 +164,7 @@ The proof in one picture. The transition function between two graph charts facto
 
 *Uses:* [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]]
 
-The same level sets are submanifolds in the sense of Lecture 12, and their graph-chart structure is the induced one (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]).
+The same level sets are submanifolds in the sense of Lecture 12, and their graph-chart structure is the induced one (Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]).
 
 > [!remark] Remark
 > The only thing that varies between charts is *which* $k$ coordinates are solved for, and the whole proof is the observation that a projection composed with a parametrization is smooth no matter which choice is made. Uribe made the same point while declining to write the general indices out: “the notation becomes a mess, but it's the same thing.” Note also that the charts are graphs of smooth maps, which is what makes the parametrization smooth — the topological argument of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] only needed $h_J$ continuous.
@@ -212,7 +213,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 *Uses:* [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark]- Connections
-> - The same statement for embedded submanifolds of any manifold: [[§37 Regular Submanifolds#^lem-37-3|§37.3]].
+> - The same statement for embedded submanifolds of any manifold: [[§37 Regular Submanifolds#^lem-37-5|§37.5]].
 
 Not stated in lecture; filled in because it is used repeatedly — tacitly in the proof of [[§24 The Circle#^prop-24-1|Proposition §24.1]], and explicitly for $S^n \to \mathbb{RP}^n$ in [[§42 Projective Spaces and the Hopf Fibration#^ex-42-1|Ex. §42.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 

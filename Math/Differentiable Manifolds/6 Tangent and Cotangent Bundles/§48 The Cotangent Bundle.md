@@ -206,11 +206,11 @@ The definitions and results of this section run parallel to those for the tangen
 > \zeta(M) \cap T^{\ast}U = \{\, (q, \xi) \in T^{\ast}U : \xi_1 = \cdots = \xi_m = 0 \,\},
 > $$
 >
-> so the charts $\hat\varphi$ are adapted to $\zeta(M)$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and $\zeta(M)$ is a submanifold of codimension $m$ (Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]], with $2m$ coordinates and $k = m$).
+> so the charts $\hat\varphi$ are adapted to $\zeta(M)$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $\zeta(M)$ is a submanifold of codimension $m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]], with $2m$ coordinates and $k = m$).
 
 ^pf-48-3
 
-*Uses:* [[§48 The Cotangent Bundle#^prop-48-1|§48.1]], [[§48 The Cotangent Bundle#^prop-48-2|§48.2]], [[§48 The Cotangent Bundle#^def-48-4|Def. §48.4]], [[§48 The Cotangent Bundle#^def-48-5|Def. §48.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§47 The Tangent Bundle#^cor-47-3|§47.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§48 The Cotangent Bundle#^def-48-2|Def. §48.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§47 The Tangent Bundle#^rem-47-2|§47.2]]
+*Uses:* [[§48 The Cotangent Bundle#^prop-48-1|§48.1]], [[§48 The Cotangent Bundle#^prop-48-2|§48.2]], [[§48 The Cotangent Bundle#^def-48-4|Def. §48.4]], [[§48 The Cotangent Bundle#^def-48-5|Def. §48.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§47 The Tangent Bundle#^cor-47-3|§47.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§48 The Cotangent Bundle#^def-48-2|Def. §48.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§47 The Tangent Bundle#^rem-47-2|§47.2]]
 
 ## Lecture 15 and the Standard Coordinates
 

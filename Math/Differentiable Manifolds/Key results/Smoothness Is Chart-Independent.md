@@ -23,8 +23,9 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1: Two Smooth Structures on the Real Line]]
-- [[§19 Smooth Functions and Smooth Maps#^prop-19-6|Proposition §19.6: Transport of Smooth Structure]]
-- [[§19 Smooth Functions and Smooth Maps#^prop-19-9|Proposition §19.9: Projections and Slice Inclusions Are Smooth]]
+- [[§19 Smooth Functions and Smooth Maps#^prop-19-5|Proposition §19.5: Inclusions of and Maps into Open Subsets]]
+- [[§19 Smooth Functions and Smooth Maps#^prop-19-7|Proposition §19.7: Transport of Smooth Structure]]
+- [[§19 Smooth Functions and Smooth Maps#^prop-19-10|Proposition §19.10: Projections and Slice Inclusions Are Smooth]]
 - [[§20 Manifolds in Euclidean Space#^lem-20-3|Lemma §20.3: Smooth Maps into and out of Regular Level Sets]]
 - [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|Proposition §22.2: A Vector Space Is a Smooth Manifold]]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
@@ -33,14 +34,14 @@ tags: [differentiable-manifolds, hub]
 - [[§35 Local Diffeomorphisms#^thm-35-2|Theorem §35.2: Local Diffeomorphisms Are Detected by the Differential]]
 - [[§35 Local Diffeomorphisms#^cor-35-3|Corollary §35.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]
 - [[§36 Submersions#^lem-36-3|Lemma §36.3: Diffeomorphisms onto Open Sets Are Charts]]
-- [[§37 Regular Submanifolds#^lem-37-3|Lemma §37.3: Smooth Maps and Regular Submanifolds]]
+- [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]
 - [[§39 Immersions#^thm-39-1|Theorem §39.1: Local Normal Form for Immersions]]
 - [[§49 One-Forms#^prop-49-1|Proposition §49.1: One-Forms in Coordinates]]
 - [[§49 One-Forms#^prop-49-5|Proposition §49.5: Pullbacks in Coordinates]]
 - [[§50 Vector Fields#^prop-50-1|Proposition §50.1: Vector Fields in Coordinates]]
 
 ## Connections
-- **Used for.** Transport of smooth structure ([[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]]), smoothness of projections and slice inclusions ([[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]), diffeomorphisms onto open sets being charts ([[§36 Submersions#^lem-36-3|§36.3]], the step that finishes the [[Submersion Normal Form]]) and smooth maps into submanifolds ([[§37 Regular Submanifolds#^lem-37-3|§37.3]]).
+- **Used for.** Transport of smooth structure ([[§19 Smooth Functions and Smooth Maps#^prop-19-7|§19.7]]), smoothness of projections and slice inclusions ([[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]), diffeomorphisms onto open sets being charts ([[§36 Submersions#^lem-36-3|§36.3]], the step that finishes the [[Submersion Normal Form]]) and smooth maps into submanifolds ([[§37 Regular Submanifolds#^lem-37-5|§37.5]]).
 - **Why compatibility is needed.** The proof pays one transition function, which is smooth because both charts lie in one maximal atlas ([[Unique Maximal Atlas]], [[§17 Differentiable Structures#^thm-17-1|§17.1]]). Charts from different structures give different answers: with ℝ̃ the line with the chart ∛x, the identity ℝ → ℝ̃ is not smooth, while x ↦ x³ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^ex-19-1|Ex. §19.1]]).
 - **Same idea elsewhere.** The Euclidean core is the 452 [[Multivariable Chain Rule]]: a smooth map composed with a diffeomorphism is smooth. Between vector spaces the same check is independence of linear coordinates ([[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]]).
 - **Coming later in the course.** Every later construction made in charts, from vector fields to integrals of differential forms, needs the same independence check; for integrals it comes from the [[Change of Variables Formula (multiple integrals)|change-of-variables formula]].

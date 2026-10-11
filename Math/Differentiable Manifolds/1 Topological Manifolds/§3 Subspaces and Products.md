@@ -177,7 +177,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; arbitrary products in [[§11 Product Topology on Arbitrary Products#^def-11-1|590 Def. §11.1]].
-> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-8|The Product Smooth Structure, §19.8]].
+> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-9|The Product Smooth Structure, §19.9]].
 
 > [!theorem] Proposition §3.7: The Product Basis Generates a Topology
 > The collection $\mathcal{B}$ of products $U \times V$ of open sets satisfies the axioms of [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]], so it is a basis for a topology on $X \times Y$.
@@ -279,7 +279,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1 (Continuity into Product Spaces)]]; imported in [[§1 Point-Set Topology Review#^prop-1-5|§1.5]].
-> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]].
+> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]].
 
 > [!remark] Remark: Why the Universal Property Matters
 > “To check that $F$ is continuous, you just check component by component.” Uribe flagged that the same pattern will reappear for *differentiability*: a map into a product of manifolds will be smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.16), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
@@ -321,7 +321,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: second countability of products is [[§22 Countability Axioms#^thm-22-3|590 §22.3]].
-> - Gives product manifolds their point-set hygiene: [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]].
+> - Gives product manifolds their point-set hygiene: [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]].
 
 > [!remark] Remark
 > Both statements extend to finite products by induction. For *infinite* products the story is subtler (product vs. box topology, 590 [[§11 Product Topology on Arbitrary Products#^def-11-2|§11]]), but finite products are all we need: they are how product manifolds like the torus $T^n = S^1 \times \cdots \times S^1$ will get their point-set hygiene for free, leaving only local Euclideanness to check.

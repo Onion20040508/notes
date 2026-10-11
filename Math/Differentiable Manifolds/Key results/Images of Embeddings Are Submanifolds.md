@@ -14,8 +14,8 @@ tags: [differentiable-manifolds, hub]
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
 - [[§2 Topological Manifolds#^lem-2-10|Lemma §2.10: Restricting and Recomposing Charts]]
 - [[§3 Subspaces and Products#^def-3-1|Definition §3.1: Subspace Topology]]
-- [[§37 Regular Submanifolds#^def-37-1|Definition §37.1: Regular Submanifold]]
-- [[§37 Regular Submanifolds#^def-37-2|Definition §37.2: Adapted Chart]]
+- [[§37 Regular Submanifolds#^def-37-2|Definition §37.2: Regular Submanifold]]
+- [[§37 Regular Submanifolds#^def-37-3|Definition §37.3: Adapted Chart]]
 - [[§39 Immersions#^thm-39-1|Theorem §39.1: Local Normal Form for Immersions]]
 - [[§39 Immersions#^cor-39-2|Corollary §39.2: The Local Image of an Immersion]]
 - [[§40 Embeddings#^def-40-1|Definition §40.1: Embedding]]
@@ -35,4 +35,4 @@ tags: [differentiable-manifolds, hub]
 - **Used for.** An embedding is a diffeomorphism onto its image, with the induced smooth structure of the submanifold ([[§40 Embeddings#^cor-40-3|§40.3]]). Combined with [[Injective Proper Immersions Are Embeddings]], the image of an injective immersion of a compact manifold is a submanifold.
 - **Why the topological condition.** The [[Immersion Normal Form]] only makes the image locally a submanifold, near F(p) for p in a small U ([[§39 Immersions#^cor-39-2|§39.2]]). Other parts of the image may come back into every neighbourhood: the irrational line on the [[Torus|torus]] is an injective immersion with dense image ([[§40 Embeddings#^prop-40-11|Prop. §40.11]]). Openness of F(U) in F(M) is what cuts those parts away.
 - **Injectivity is not used.** The proof needs only that F be open onto its image ([[§40 Embeddings#^rem-40-1|Where Is Injectivity Used?]]), which gives [[§40 Embeddings#^prop-40-2|§40.2]]; the covering t ↦ (cos t, sin t) of S¹ is an example ([[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]]).
-- **Same idea elsewhere.** The other main source of submanifolds is level sets, by the [[Regular Value Theorem for Manifolds]]. Both are checked against the same definition, a chart in which the subset is a coordinate slice ([[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]).
+- **Same idea elsewhere.** The other main source of submanifolds is level sets, by the [[Regular Value Theorem for Manifolds]]. Both are checked against the same definition, a chart in which the subset is a coordinate slice ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]).

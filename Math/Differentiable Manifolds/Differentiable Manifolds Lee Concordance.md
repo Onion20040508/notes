@@ -27,7 +27,7 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $H_{x_0}$, the isotropy group | $G_p$ | Definition [[§14 Homogeneous Spaces#^def-14-3\|§14.3]]. |
 | $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ | $F : G/G_p \to M$ | Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]; Lee, Theorem 21.18. |
 | $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§54 Lie Groups and Left-Invariant Vector Fields\|§54]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§54 Lie Groups and Left-Invariant Vector Fields\|§54]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§54 Lie Groups and Left-Invariant Vector Fields#^def-54-4\|§54.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§54 Lie Groups and Left-Invariant Vector Fields#^thm-54-5\|§54.5]]. |
-| $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-7\|§19.7]]). |
+| $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-8\|§19.8]]). |
 
 ## A.2 Where the routes diverge
 
@@ -92,7 +92,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 1.17 | [[§17 Differentiable Structures#^def-17-7\|Def. §17.7]], [[§17 Differentiable Structures#^thm-17-5\|Thm. §17.5]] |
 | Example 1.21 | [[§2 Topological Manifolds#^prop-2-5\|Prop. §2.5]] |
 | Example 1.22 | [[§17 Differentiable Structures#^ex-17-1\|Ex. §17.1]] |
-| Example 1.23 | [[§19 Smooth Functions and Smooth Maps#^ex-19-1\|Ex. §19.1]], [[§19 Smooth Functions and Smooth Maps#^cor-19-7\|Cor. §19.7]], [[§19 Smooth Functions and Smooth Maps#^ex-19-2\|Ex. §19.2]] |
+| Example 1.23 | [[§19 Smooth Functions and Smooth Maps#^ex-19-1\|Ex. §19.1]], [[§19 Smooth Functions and Smooth Maps#^cor-19-8\|Cor. §19.8]], [[§19 Smooth Functions and Smooth Maps#^ex-19-2\|Ex. §19.2]] |
 | Example 1.24 | [[§22 The Differential of a Map Between Vector Spaces#^def-22-1\|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2\|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2\|Prop. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4\|Def. §22.4]] |
 | Example 1.25 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-2\|Def. §11.2]] |
 | Example 1.26 | [[§3 Subspaces and Products#^prop-3-6\|Prop. §3.6]], [[§3 Subspaces and Products#^def-3-2\|Def. §3.2]] |
@@ -100,17 +100,17 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.31 | [[§17 Differentiable Structures#^ex-17-2\|Ex. §17.2]] |
 | Example 1.32 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]] |
 | Example 1.33 | [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5\|Cor. §18.5]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6\|Prop. §18.6]] |
-| Example 1.34 | [[§19 Smooth Functions and Smooth Maps#^prop-19-8\|Prop. §19.8]] |
+| Example 1.34 | [[§19 Smooth Functions and Smooth Maps#^prop-19-9\|Prop. §19.9]] |
 | Lemma 1.35 | [[§47 The Tangent Bundle#^prop-47-1\|Prop. §47.1]], [[§48 The Cotangent Bundle#^prop-48-1\|Prop. §48.1]] |
 | Example 1.36 | [[§15 The Topology of G∕H and Real Grassmannians#^def-15-3\|Def. §15.3]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8\|Cor. §15.8]] |
 | Problem 1-1 | [[§1 Point-Set Topology Review#^ex-1-4\|Ex. §1.4]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-1\|Ex. §4.1]] |
 | Problem 1-2 | [[§2 Topological Manifolds#^ex-2-3\|Ex. §2.3]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]] |
-| Problem 1-6 | [[§19 Smooth Functions and Smooth Maps#^prop-19-6\|Prop. §19.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-6\|Def. §19.6]], [[§19 Smooth Functions and Smooth Maps#^cor-19-7\|Cor. §19.7]] |
+| Problem 1-6 | [[§19 Smooth Functions and Smooth Maps#^prop-19-7\|Prop. §19.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-6\|Def. §19.6]], [[§19 Smooth Functions and Smooth Maps#^cor-19-8\|Cor. §19.8]] |
 | Problem 1-7 | [[§17 Differentiable Structures#^ex-17-3\|Ex. §17.3]] |
 | Problem 1-9 | [[§9 Complex Projective Space#^def-9-1\|Def. §9.1]], [[§9 Complex Projective Space#^prop-9-1\|Prop. §9.1]], [[§9 Complex Projective Space#^prop-9-2\|Prop. §9.2]], [[§9 Complex Projective Space#^prop-9-3\|Prop. §9.3]], [[§13 Group Actions and Orbit Spaces#^ex-13-3\|Ex. §13.3]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-1\|Def. §18.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2\|Def. §18.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1\|Prop. §18.1]], [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2\|Thm. §18.2]] |
 | Proposition 2.5 | [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|Prop. §19.2]] |
 | Proposition 2.10 | [[§19 Smooth Functions and Smooth Maps#^lem-19-4\|Lem. §19.4]] |
-| Proposition 2.15 | [[§19 Smooth Functions and Smooth Maps#^prop-19-5\|Prop. §19.5]] |
+| Proposition 2.15 | [[§19 Smooth Functions and Smooth Maps#^prop-19-6\|Prop. §19.6]] |
 | Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§50 Vector Fields#^prop-50-4\|Prop. §50.4]] |
 | Lemma 2.26 | [[§50 Vector Fields#^cor-50-5\|Cor. §50.5]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
@@ -140,12 +140,12 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§42 Projective Spaces and the Hopf Fibration#^ex-42-2\|Ex. §42.2]], [[§42 Projective Spaces and the Hopf Fibration#^ex-42-3\|Ex. §42.3]] |
 | Proposition 5.2 | [[§40 Embeddings#^thm-40-1\|Thm. §40.1]] |
 | Proposition 5.5 | [[§40 Embeddings#^prop-40-9\|Prop. §40.9]] |
-| Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-1\|Def. §37.1]], [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-2\|Prop. §37.2]] |
-| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§37 Regular Submanifolds#^thm-37-7\|Thm. §37.7]] |
-| Corollary 5.30 | [[§37 Regular Submanifolds#^lem-37-3\|Lem. §37.3]] |
-| Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-4\|Prop. §37.4]] |
-| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§37 Regular Submanifolds#^prop-37-4\|Prop. §37.4]] |
-| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§37 Regular Submanifolds#^thm-37-7\|Thm. §37.7]] |
+| Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3\|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3\|Prop. §37.3]] |
+| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§37 Regular Submanifolds#^thm-37-9\|Thm. §37.9]] |
+| Corollary 5.30 | [[§37 Regular Submanifolds#^lem-37-5\|Lem. §37.5]] |
+| Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
+| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
+| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§37 Regular Submanifolds#^thm-37-9\|Thm. §37.9]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§54 Lie Groups and Left-Invariant Vector Fields#^prop-54-1\|Prop. §54.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |

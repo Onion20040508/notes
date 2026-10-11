@@ -173,7 +173,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - A subspace: [[§12 Duality#^ladr-3-124|The annihilator is a subspace]]. Dimension: [[§12 Duality#^ladr-3-125|Dimension of the annihilator]].
-> - The conormal space of a submanifold is the annihilator of its tangent space: [[§37 Regular Submanifolds#^def-37-3|591 Def. §37.3]], of dimension the codimension by [[§37 Regular Submanifolds#^prop-37-5|591 Prop. §37.5]].
+> - The conormal space of a submanifold is the annihilator of its tangent space: [[§37 Regular Submanifolds#^def-37-4|591 Def. §37.4]], of dimension the codimension by [[§37 Regular Submanifolds#^prop-37-7|591 Prop. §37.7]].
 
 > [!example] Example 3.122: Element of an annihilator (p. 109)
 > Let $U\subseteq\Poly(\R)$ be the polynomial multiples of $x^2$ and $\varphi(p)=p'(0)$. For $p=x^2q$, $p'(0)=\big(2xq+x^2q'\big)(0)=0$, so $\varphi\in U^0$.

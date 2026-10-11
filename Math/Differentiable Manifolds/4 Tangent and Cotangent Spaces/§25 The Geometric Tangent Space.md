@@ -181,7 +181,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]], [[Multivariable Chain Rule|452 §12.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-39|LADR 2.39]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark]- Connections
-> - Identified with the abstract tangent space: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Ambient and Abstract Agree, §29.6]]; for submanifolds, [[§37 Regular Submanifolds#^prop-37-4|§37.4]].
+> - Identified with the abstract tangent space: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Ambient and Abstract Agree, §29.6]]; for submanifolds, [[§37 Regular Submanifolds#^prop-37-6|§37.6]].
 > - Orthogonality to the gradients is the geometry behind [[Method of Lagrange Multipliers|452 §17.2 (Lagrange multipliers)]].
 
 > [!remark] Remark
