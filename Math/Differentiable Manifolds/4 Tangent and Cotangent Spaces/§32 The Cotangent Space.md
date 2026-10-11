@@ -162,24 +162,43 @@ Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: 
 > - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§46 The Cotangent Bundle#^def-46-4|Def. §46.4]], [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]].
 
 > [!theorem] Corollary §32.5: Properties of the Differential of a Function
-> Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$. Then
->
-> $$
-> d(af + bg)_p = a\,df_p + b\,dg_p, \qquad d(fg)_p = f(p)\,dg_p + g(p)\,df_p,
-> $$
->
-> and if $h$ is smooth on an open interval containing the values of $f$ near $p$, then $d(h \circ f)_p = h'(f(p))\,df_p$.
+> Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$.
+> 1. *Linearity:* $d(af + bg)_p = a\,df_p + b\,dg_p$.
+> 2. *Product rule:* $d(fg)_p = f(p)\,dg_p + g(p)\,df_p$.
+> 3. *Chain rule:* if $h$ is smooth on an open interval containing the values of $f$ near $p$, then $d(h \circ f)_p = h'(f(p))\,df_p$.
 >
 > *Lee: Proposition 11.20*
 
 ^cor-32-5
 
 > [!proof]+ Proof
-> Evaluate at $D \in T_pM$ using Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]. The first two identities are the linearity and the Leibniz rule of $D$. For the third, $D[h \circ f] = (f_{*p}D)[h]$, and by [[§32 The Cotangent Space#^def-32-5|Definition §32.5]], $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; applying this to $h$ gives $df_p(D)\,\partial/\partial r|_{f(p)}[h] = df_p(D)\,h'(f(p))$ ([[§32 The Cotangent Space#^def-32-2|Definition §32.2]]).
+> *(Not from lecture; filled in.)* All three are equalities in $T_p^{\ast}M = (T_pM)^{\ast}$ ([[§32 The Cotangent Space#^def-32-4|Definition §32.4]]), whose elements are functions on $T_pM$; two of them are equal when they take the same value at every $D \in T_pM$, and sums and scalar multiples in a dual space are taken pointwise, $(a\alpha + b\beta)(D) = a\,\alpha(D) + b\,\beta(D)$ ([[§21 Linear Algebra Toolkit#^def-21-1|Definition §21.1]]). So fix $D \in T_pM$. Each step below uses one of: [[§32 The Cotangent Space#^prop-32-2|Proposition §32.2]], $dk_p(D) = D[k]$ for any $k$ smooth near $p$; the algebra operations on [[§27 Germs#^def-27-2|germs]] ([[§27 Germs#^prop-27-2|Proposition §27.2]]), $[af + bg] = a[f] + b[g]$ and $[fg] = [f][g]$; and the two defining properties of the [[§28 Derivations and the Abstract Tangent Space#^def-28-1|derivation]] $D$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]).
+>
+> *(1)* By $\mathbb{R}$-linearity of $D$:
+>
+> $$
+> d(af + bg)_p(D) = D\big[af + bg\big] = D\big(a[f] + b[g]\big) = a\,D[f] + b\,D[g] = a\,df_p(D) + b\,dg_p(D) = \big(a\,df_p + b\,dg_p\big)(D).
+> $$
+>
+> *(2)* By the Leibniz rule $D([f][g]) = f(p)\,D[g] + g(p)\,D[f]$, applied to the germs $[f]$ and $[g]$:
+>
+> $$
+> d(fg)_p(D) = D\big[fg\big] = D\big([f][g]\big) = f(p)\,D[g] + g(p)\,D[f] = f(p)\,dg_p(D) + g(p)\,df_p(D) = \big(f(p)\,dg_p + g(p)\,df_p\big)(D).
+> $$
+>
+> Here $f(p)$ and $g(p)$ are numbers, the values of the germs at $p$, so the right side is a linear combination of the covectors $dg_p$ and $df_p$.
+>
+> *(3)* The composite $h \circ f$ is smooth near $p$, and $h$ is smooth near $f(p)$, so $[h]$ is a germ at $f(p)$ on $\mathbb{R}$. By the definition of the pushforward ([[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6]]), $D[h \circ f] = (f_{*p}D)[h]$. By [[§32 The Cotangent Space#^def-32-5|Definition §32.5]], $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; this is an equality of derivations at $f(p)$, so both sides take the same value on $[h]$. With [[§32 The Cotangent Space#^def-32-2|Definition §32.2]]:
+>
+> $$
+> d(h \circ f)_p(D) = D[h \circ f] = (f_{*p}D)[h] = df_p(D)\,\frac{\partial}{\partial r}\Big|_{f(p)}[h] = df_p(D)\,h'(f(p)) = \big(h'(f(p))\,df_p\big)(D).
+> $$
+>
+> Since $D$ was arbitrary, the three identities hold in $T_p^{\ast}M$.
 
 ^pf-32-5
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]]
 
 > [!remark] Remark
 > Equivalently, by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] with the coordinate $r$ on the target, the matrix of $f_{*p}$ is the $1 \times m$ row

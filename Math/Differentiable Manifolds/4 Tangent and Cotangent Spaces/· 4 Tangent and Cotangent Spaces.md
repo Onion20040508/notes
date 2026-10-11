@@ -7,7 +7,7 @@ tags: [chapter, differentiable-manifolds]
 # 4 Tangent and Cotangent Spaces
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (23), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 3 Smooth Structures|3 Smooth Structures]] (44)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (23), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 3 Smooth Structures|3 Smooth Structures]] (45)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (58), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (33), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (28)
 **Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (6), [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (11)
 
