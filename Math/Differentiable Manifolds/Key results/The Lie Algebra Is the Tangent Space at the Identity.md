@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 55.5", "Lie(G) ≅ T_eG", "left-invariant fields and T_eG", "Lee Theorem 8.37"]
+aliases: ["MATH 591 56.5", "Lie(G) ≅ T_eG", "left-invariant fields and T_eG", "Lee Theorem 8.37"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5]]

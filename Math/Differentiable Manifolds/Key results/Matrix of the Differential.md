@@ -35,6 +35,7 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Submersions#^cor-36-5|Corollary §36.5: Being a Submersion Is an Open Condition]]
 - [[§37 Regular Submanifolds#^prop-37-6|Proposition §37.6: Tangent Spaces of a Regular Submanifold]]
 - [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
+- [[§37 Regular Submanifolds#^thm-37-12|Theorem §37.12: Preimages of Transverse Submanifolds]]
 - [[§40 Immersions#^ex-40-1|Example §40.1: An Immersion That Crosses Itself]]
 - [[§40 Immersions#^thm-40-1|Theorem §40.1: Local Normal Form for Immersions]]
 - [[§41 Embeddings#^prop-41-12|Proposition §41.12: The Irrational Line on the Torus]]
@@ -43,6 +44,9 @@ tags: [differentiable-manifolds, hub]
 - [[§46 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-46-1|Example §46.1: Vectors in the Plane in Three Ways]]
 - [[§47 Recap꞉ Covectors and the Four Differentials#^ex-47-1|Example §47.1: Covectors in the Plane]]
 - [[§50 One-Forms#^prop-50-5|Proposition §50.5: Pullbacks in Coordinates]]
+- [[§51 Critical Points and the Hessian#^prop-51-4|Proposition §51.4: The Zero Section Is a Regular Submanifold]]
+- [[§51 Critical Points and the Hessian#^prop-51-5|Proposition §51.5: The Vertical Space of T^*M Along the Zero Section]]
+- [[§51 Critical Points and the Hessian#^prop-51-6|Proposition §51.6: The Differential of df at a Critical Point]]
 
 ## Connections
 - **Used for.** Every local computation with differentials: the chain rule and change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), agreement with the Jacobian on ℝⁿ ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), regular values inside one chart ([[§30 The Differential in Coordinates#^prop-30-8|§30.8]]), the [[Local Diffeomorphism Criterion]], the [[Submersion Normal Form]] and the transition maps of TM ([[Tangent Bundle Is a Smooth Manifold]]).

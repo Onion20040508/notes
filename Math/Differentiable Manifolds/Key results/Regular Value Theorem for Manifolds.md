@@ -32,6 +32,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§37 Regular Submanifolds#^cor-37-10|Corollary §37.10: Fibres of Submersions Are Regular Submanifolds]]
 - [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
+- [[§37 Regular Submanifolds#^thm-37-12|Theorem §37.12: Preimages of Transverse Submanifolds]]
 - [[§44 The Unit Quaternions and SU(2)#^prop-44-4|Proposition §44.4: The Unit Quaternions]]
 - [[§45 SU(2) → SO(3)꞉ The Double Cover#^prop-45-1|Proposition §45.1: Conjugation by Unit Quaternions Is Rotation]]
 

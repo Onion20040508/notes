@@ -28,6 +28,7 @@ tags: [differentiable-manifolds, hub]
 - [[§41 Embeddings#^cor-41-3|Corollary §41.3: An Embedding Is a Diffeomorphism onto Its Image]]
 - [[§41 Embeddings#^prop-41-7|Proposition §41.7: Images of Embeddings Are Locally Closed]]
 - [[§41 Embeddings#^cor-41-8|Corollary §41.8: Dense Regular Submanifolds Are Open]]
+- [[§41 Embeddings#^prop-41-10|Proposition §41.10: Sections Are Closed Embeddings]]
 - [[§41 Embeddings#^prop-41-15|Proposition §41.15: When an Immersed Submanifold Is Regular]]
 - [[§44 The Unit Quaternions and SU(2)#^prop-44-5|Proposition §44.5: S³ Is SU(2)]]
 

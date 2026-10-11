@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Vector fields and multiplications by functions generate a ring of operators on $C^\infty(M)$; its elements have an order, and in a chart they are the linear partial differential operators with smooth coefficients.*
 
-*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§52 Vector Fields#^lem-52-6|Lemma §52.6]]): its definition, the fact that its elements are local, and Peetre's theorem “FYI”. Those are collected here. Everything else in this subsection — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§54 Lie Bracket and Lie Algebra#^prop-54-6|§53]] — is not from lecture; it makes precise the remark that differential operators “are given by differential expressions in local coordinates.”*
+*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§52 Vector Fields#^lem-52-6|Lemma §52.6]]): its definition, the fact that its elements are local, and Peetre's theorem “FYI”. Those are collected here. Everything else in this subsection — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§54 Lie Bracket and Lie Algebra#^prop-54-6|§54]] — is not from lecture; it makes precise the remark that differential operators “are given by differential expressions in local coordinates.”*
 
 > [!definition] Definition §53.1: Multiplication Operator
 > For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
