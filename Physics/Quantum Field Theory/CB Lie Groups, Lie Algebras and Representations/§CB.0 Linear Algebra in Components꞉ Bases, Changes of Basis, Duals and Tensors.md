@@ -242,7 +242,7 @@ The real case with a metric. The basic facts below were first stated for spaceti
 >
 > **What the proof shows**
 > - Only nondegeneracy is used, not positivity: the identification works for any signature, which is why "metric" rather than "inner product".
-> - In differential geometry this is the musical isomorphism of a pseudo-Riemannian metric on one tangent space ([[§32 The Cotangent Space#^def-32-1|591 Def. §32.1]]).
+> - In differential geometry this is the musical isomorphism of a pseudo-Riemannian metric on one tangent space ([[§32 The Cotangent Space#^def-32-4|591 Def. §32.4]]).
 > - Equivalence: this is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]] word for word; the physics section keeps the spacetime reading (four-vectors, covectors as gradients).
 
 ^pf-cb-0-12

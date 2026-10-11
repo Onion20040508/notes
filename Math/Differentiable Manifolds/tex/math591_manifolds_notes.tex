@@ -6760,7 +6760,46 @@ This is the second of Uribe's three views, and it uses the velocities of Assignm
 
 \textit{Lecture 10: ``a very special case --- a very important case.'' The target is $N = \mathbb{R}$, and the differential of a scalar function becomes a covector.}
 
-On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mathbb{R}$ the abstract tangent space $T_c\mathbb{R}$ has the basis $\{\partial/\partial r|_c\}$ (Theorem~\ref{thm:tangent-basis}), and we identify $T_c\mathbb{R} \cong \mathbb{R}$ once and for all by $\partial/\partial r|_c \mapsto 1$ --- ``we identify this with $\mathbb{R}$ forever.''
+The target $\mathbb{R}$ is itself a smooth manifold, so $f_{*p}$ lands in a tangent space of $\mathbb{R}$. The lecture disposed of these tangent spaces in one line --- ``we identify this with $\mathbb{R}$ forever'' --- and the next three boxes spell that line out: the chart and coordinate of $\mathbb{R}$, its coordinate derivation, and the identification.
+
+\begin{defbox}[The Standard Coordinate on $\mathbb{R}$]\deflabel{def:standard-coordinate-R}
+$\mathbb{R}$ is a smooth $1$-manifold, with the smooth structure of the single global chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$ (Definition~\ref{def:vs-structure}, with $X = \mathbb{R}$ and $L = \mathrm{id}_\mathbb{R}$). Its coordinate function (Definition~\ref{def:coordinate-functions}) is written $r$:
+\[
+r : \mathbb{R} \to \mathbb{R}, \qquad r(t) = t .
+\]
+Because the chart is the identity, a smooth function $h$ on an open subset of $\mathbb{R}$ is its own coordinate representation: $h_{\mathrm{id}} = h \circ \mathrm{id}^{-1} = h$.
+\end{defbox}
+
+\begin{defbox}[The Coordinate Derivation on $\mathbb{R}$]\deflabel{def:coordinate-derivation-R}
+For $c \in \mathbb{R}$, $\partial/\partial r|_c \in T_c\mathbb{R}$ is the coordinate derivation (Definition~\ref{def:coordinate-derivation}) of the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$ at $c$. Since $h_{\mathrm{id}} = h$ (Definition~\ref{def:standard-coordinate-R}), it is the ordinary derivative at $c$:
+\[
+\frac{\partial}{\partial r}\Big|_c [h] = h'(c) \qquad \text{for every germ } [h] \text{ at } c .
+\]
+In particular $\partial/\partial r|_c\,[r] = r'(c) = 1$.
+\end{defbox}
+
+\begin{propbox}[The Tangent Spaces of $\mathbb{R}$]\thmlabel{prop:tangent-space-R}
+Let $c \in \mathbb{R}$.
+\begin{enumerate}
+    \item $T_c\mathbb{R}$ is one-dimensional, with basis $\{\partial/\partial r|_c\}$.
+    \item Every $v \in T_c\mathbb{R}$ is $v = v[r]\,\partial/\partial r|_c$: its coefficient on the basis vector is its value on the coordinate function $r$.
+    \item The map $\iota_c : T_c\mathbb{R} \to \mathbb{R}$, $\iota_c(v) = v[r]$, is a linear isomorphism, with $\iota_c\big(a\,\partial/\partial r|_c\big) = a$ for $a \in \mathbb{R}$ and inverse $a \mapsto a\,\partial/\partial r|_c$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} (1) and (2) are the Basis Theorem (Theorem~\ref{thm:tangent-basis}) for the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$, with $n = 1$ and $x^1 = r$; (2) is its universal formula. (3) $\iota_c$ is linear because the vector-space operations of $T_c\mathbb{R}$ are pointwise on germs (Definition~\ref{def:abstract-tangent}): $(v + w)[r] = v[r] + w[r]$ and $(av)[r] = a\,v[r]$. By Definition~\ref{def:coordinate-derivation-R}, $\iota_c(a\,\partial/\partial r|_c) = a \cdot 1 = a$, so $\iota_c$ is surjective, and $a \mapsto a\,\partial/\partial r|_c$ is a right inverse; it is also a left inverse by (2), $v = \iota_c(v)\,\partial/\partial r|_c$.
+\end{proof}
+
+\begin{defbox}[The Standard Identification of $T_c\mathbb{R}$ with $\mathbb{R}$]\deflabel{def:identification-TR}
+For every $c \in \mathbb{R}$, $T_c\mathbb{R}$ is identified with $\mathbb{R}$ by the isomorphism $\iota_c$ of Proposition~\ref{prop:tangent-space-R}:
+\[
+T_c\mathbb{R} \xrightarrow{\ \iota_c\ } \mathbb{R}, \qquad a\,\frac{\partial}{\partial r}\Big|_c \longmapsto a, \qquad \text{equivalently} \quad v \longmapsto v[r] .
+\]
+\end{defbox}
+
+Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: differentiation at $c$ at speed $a$, the velocity of the curve $t \mapsto c + at$. The identification records the speed $a$ and forgets the base point $c$; this is why it can be made for all $c$ at once.
+
 
 \begin{defbox}[Cotangent Space]\deflabel{def:cotangent}
 Let $M$ be a smooth manifold and $p \in M$. The \textbf{cotangent space} of $M$ at $p$ is the dual of the abstract tangent space,
@@ -6771,13 +6810,21 @@ T_p^*M = (T_pM)^* .
 \end{defbox}
 
 \begin{defbox}[The Differential of a Function]\deflabel{def:differential-function}
-Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}.
+Let $M$ be a smooth manifold and $p \in M$, and let $f : M \to \mathbb{R}$ be smooth (or defined and smooth only near $p$). Its pushforward at $p$ (Definition~\ref{def:pushforward}) is a linear map into the tangent space of $\mathbb{R}$ at the point $f(p)$:
+\[
+f_{*p} : T_pM \longrightarrow T_{f(p)}\mathbb{R}, \qquad \big(f_{*p}D\big)[h] = D[\,h \circ f\,] .
+\]
+The \textbf{differential} of $f$ at $p$ is this map followed by the standard identification $\iota_{f(p)} : T_{f(p)}\mathbb{R} \to \mathbb{R}$ (Definition~\ref{def:identification-TR}):
+\[
+df_p = \iota_{f(p)} \circ f_{*p} : T_pM \longrightarrow \mathbb{R}, \qquad df_p(D) = \big(f_{*p}D\big)[r] .
+\]
+So $df_p(D)$ is the coefficient of $f_{*p}D$ on the basis vector $\partial/\partial r|_{f(p)}$ of $T_{f(p)}\mathbb{R}$ (Proposition~\ref{prop:tangent-space-R}): $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$. As a composite of linear maps, $df_p$ is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}. Proposition~\ref{prop:df-derivation} computes it: $df_p(D) = D[f]$.
 \leeref{Ch.~11, \emph{Covectors}}
 \end{defbox}
 
 \begin{center}
 \begin{tikzcd}[column sep=4.4em, row sep=2.6em]
-T_pM \arrow[r, "f_{*p}"] \arrow[rr, bend right=22, "df_p"'] & T_{f(p)}\mathbb{R} \arrow[r, "\partial_r \,\mapsto\, 1", "\cong"'] & \mathbb{R}
+T_pM \arrow[r, "f_{*p}"] \arrow[rr, bend right=22, "df_p"'] & T_{f(p)}\mathbb{R} \arrow[r, "\iota_{f(p)}", "\cong"'] & \mathbb{R}
 \end{tikzcd}
 \end{center}
 
@@ -6789,7 +6836,7 @@ For every $D \in T_pM$, $\ df_p(D) = D[f]$. In particular $df_p\big(\partial/\pa
 \end{propbox}
 
 \begin{proof}
-By the universal formula at $f(p)$ with the coordinate $r$, $f_{*p}D = (f_{*p}D)[r]\,\partial/\partial r|_{f(p)}$, and $(f_{*p}D)[r] = D[r \circ f] = D[f]$. Under the identification, $\partial/\partial r|_{f(p)} \mapsto 1$.
+By Definition~\ref{def:differential-function} and the definition of the pushforward (Definition~\ref{def:pushforward}), $df_p(D) = (f_{*p}D)[r] = D[r \circ f] = D[f]$, since $r \circ f = f$ ($r$ is the identity of $\mathbb{R}$, Definition~\ref{def:standard-coordinate-R}). For $D = \partial/\partial x^j|_p$ this is $\partial/\partial x^j|_p\,[f] = \partial f/\partial x^j(p)$ (Definition~\ref{def:coordinate-derivation}).
 \end{proof}
 
 \begin{lembox}[The Differential in Coordinates]\thmlabel{lem:df-coords}
@@ -6827,7 +6874,7 @@ and if $h$ is smooth on an open interval containing the values of $f$ near $p$, 
 \end{corbox}
 
 \begin{proof}
-Evaluate at $D \in T_pM$ using Proposition~\ref{prop:df-derivation}. The first two identities are the linearity and the Leibniz rule of $D$. For the third, $D[h \circ f] = (f_{*p}D)[h]$, and under the identification of Definition~\ref{def:cotangent}, $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; applying this to $h$ gives $df_p(D)\,h'(f(p))$.
+Evaluate at $D \in T_pM$ using Proposition~\ref{prop:df-derivation}. The first two identities are the linearity and the Leibniz rule of $D$. For the third, $D[h \circ f] = (f_{*p}D)[h]$, and by Definition~\ref{def:differential-function}, $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; applying this to $h$ gives $df_p(D)\,\partial/\partial r|_{f(p)}[h] = df_p(D)\,h'(f(p))$ (Definition~\ref{def:coordinate-derivation-R}).
 \end{proof}
 
 \begin{rembox}\label{rem:cotangent}
@@ -7265,7 +7312,7 @@ in any chart at $p$.
 \end{propbox}
 
 \begin{proof}
-The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition~\ref{def:cotangent}), so it is $0$ or everything --- ``dimensions of images cannot be fractional.'' The second equivalence is Lemma~\ref{lem:df-coords}.
+The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition~\ref{def:identification-TR}), so it is $0$ or everything --- ``dimensions of images cannot be fractional.'' The second equivalence is Lemma~\ref{lem:df-coords}.
 \end{proof}
 
 This is the definition of critical point Uribe sent to the class by email, and it agrees with Definition~\ref{def:regular-point} for $m = 1$: there $p$ is regular iff $\nabla F(p) \ne 0$.
@@ -8886,7 +8933,15 @@ normal vectors, spanned by $\nabla F^1, \ldots, \nabla F^k$ & Definition~\ref{de
 \end{center}
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:differential-function} (The Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}.
+\textbf{Recall: Definition~\ref{def:differential-function} (The Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$, and let $f : M \to \mathbb{R}$ be smooth (or defined and smooth only near $p$). Its pushforward at $p$ (Definition~\ref{def:pushforward}) is a linear map into the tangent space of $\mathbb{R}$ at the point $f(p)$:
+\[
+f_{*p} : T_pM \longrightarrow T_{f(p)}\mathbb{R}, \qquad \big(f_{*p}D\big)[h] = D[\,h \circ f\,] .
+\]
+The \textbf{differential} of $f$ at $p$ is this map followed by the standard identification $\iota_{f(p)} : T_{f(p)}\mathbb{R} \to \mathbb{R}$ (Definition~\ref{def:identification-TR}):
+\[
+df_p = \iota_{f(p)} \circ f_{*p} : T_pM \longrightarrow \mathbb{R}, \qquad df_p(D) = \big(f_{*p}D\big)[r] .
+\]
+So $df_p(D)$ is the coefficient of $f_{*p}D$ on the basis vector $\partial/\partial r|_{f(p)}$ of $T_{f(p)}\mathbb{R}$ (Proposition~\ref{prop:tangent-space-R}): $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$. As a composite of linear maps, $df_p$ is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}. Proposition~\ref{prop:df-derivation} computes it: $df_p(D) = D[f]$.
 \end{quote}
 
 \begin{quote}
@@ -9781,7 +9836,15 @@ df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p
 (Lemma~\ref{lem:df-coords}); the components of any covector are found by evaluation, $\alpha = \sum_j \alpha(\partial/\partial x^j|_p)\, dx^j|_p$ (Corollary~\ref{cor:covector-components}). This is the formula of multivariable calculus, but $df_p$ is \emph{not} the gradient: turning the covector $df_p$ into a vector needs an inner product, which a manifold does not come with (Remark~\ref{rem:differential-not-gradient}). In $\mathbb{R}^n$ with the dot product, $df_p(v) = \nabla f(p) \cdot v$.
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:differential-function} (The Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}.
+\textbf{Recall: Definition~\ref{def:differential-function} (The Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$, and let $f : M \to \mathbb{R}$ be smooth (or defined and smooth only near $p$). Its pushforward at $p$ (Definition~\ref{def:pushforward}) is a linear map into the tangent space of $\mathbb{R}$ at the point $f(p)$:
+\[
+f_{*p} : T_pM \longrightarrow T_{f(p)}\mathbb{R}, \qquad \big(f_{*p}D\big)[h] = D[\,h \circ f\,] .
+\]
+The \textbf{differential} of $f$ at $p$ is this map followed by the standard identification $\iota_{f(p)} : T_{f(p)}\mathbb{R} \to \mathbb{R}$ (Definition~\ref{def:identification-TR}):
+\[
+df_p = \iota_{f(p)} \circ f_{*p} : T_pM \longrightarrow \mathbb{R}, \qquad df_p(D) = \big(f_{*p}D\big)[r] .
+\]
+So $df_p(D)$ is the coefficient of $f_{*p}D$ on the basis vector $\partial/\partial r|_{f(p)}$ of $T_{f(p)}\mathbb{R}$ (Proposition~\ref{prop:tangent-space-R}): $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$. As a composite of linear maps, $df_p$ is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}. Proposition~\ref{prop:df-derivation} computes it: $df_p(D) = D[f]$.
 \end{quote}
 
 \begin{quote}

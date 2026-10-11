@@ -38,7 +38,7 @@ In words: a one-form chooses one covector at every point of $M$, and the choice 
 
 > [!remark]- Connections
 > - On open subsets of $\mathbb{R}^n$: [[§36 Introduction to Differential Forms#^def-36-2|452 Def. §36.2]] (differential forms, here in degree 1).
-> - The value at one point is a covector, an element of a dual space: [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§12 Duality#^ladr-3-110|LADR 3.110]].
+> - The value at one point is a covector, an element of a dual space: [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§12 Duality#^ladr-3-110|LADR 3.110]].
 
 Uribe on the notation: “$\theta$ is really a function of two variables, a point and a vector, and you want to make room for the vector variable” — so the point goes into the subscript and the vector into the parentheses. A student asked where a $\theta_p$ comes from; the answer is that the definition describes *every* one-form, and the examples come next.
 
@@ -67,7 +67,7 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 
 ^pf-47-1
 
-*Uses:* [[§47 One-Forms#^def-47-1|Def. §47.1]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§46 The Cotangent Bundle#^def-46-1|Def. §46.1]], [[§46 The Cotangent Bundle#^prop-46-2|§46.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]]
+*Uses:* [[§47 One-Forms#^def-47-1|Def. §47.1]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^cor-32-4|§32.4]], [[§46 The Cotangent Bundle#^def-46-1|Def. §46.1]], [[§46 The Cotangent Bundle#^prop-46-2|§46.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]]
 
 ## The Operator $d$
 
@@ -85,14 +85,14 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 ^prop-47-2
 
 > [!proof]+ Proof
-> *(The coordinate formula is [[§32 The Cotangent Space#^lem-32-2|Lemma §32.2]], which Lecture 15 recalled; the rest is filled in.)* The coefficients $\partial f/\partial x^j$ are smooth, so $df$ is smooth by [[§47 One-Forms#^prop-47-1|Proposition §47.1]]. For $v \in T_pM$, $d(fg)_p(v) = v[fg] = f(p)\, v[g] + g(p)\, v[f]$ because $v$ is a derivation, and linearity is the same one line.
+> *(The coordinate formula is [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3]], which Lecture 15 recalled; the rest is filled in.)* The coefficients $\partial f/\partial x^j$ are smooth, so $df$ is smooth by [[§47 One-Forms#^prop-47-1|Proposition §47.1]]. For $v \in T_pM$, $d(fg)_p(v) = v[fg] = f(p)\, v[g] + g(p)\, v[f]$ because $v$ is a derivation, and linearity is the same one line.
 
 ^pf-47-2
 
-*Uses:* [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§47 One-Forms#^def-47-1|Def. §47.1]], [[§47 One-Forms#^prop-47-1|§47.1]]
+*Uses:* [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§47 One-Forms#^def-47-1|Def. §47.1]], [[§47 One-Forms#^prop-47-1|§47.1]]
 
 > [!remark]- Connections
-> - The same rules at a single point: [[§32 The Cotangent Space#^cor-32-4|§32.4]].
+> - The same rules at a single point: [[§32 The Cotangent Space#^cor-32-5|§32.5]].
 > - On $\mathbb{R}^3$, $d$ on functions is the gradient: [[§38 The Exterior Derivative#^prop-38-1|452 §38.1]], [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1]].
 
 > [!example] Example §47.1: Two One-Forms on the Plane
@@ -158,7 +158,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 ^def-47-3
 
 > [!definition] Definition §47.4: Pullback of One-Forms
-> Let $F : M \to N$ be smooth. For a one-form $\theta$ on $N$, the **pullback** $F^{\ast}\theta$ is the section of $T^{\ast}M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ ([[§32 The Cotangent Space#^def-32-5|Definition §32.5]]):
+> Let $F : M \to N$ be smooth. For a one-form $\theta$ on $N$, the **pullback** $F^{\ast}\theta$ is the section of $T^{\ast}M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ ([[§32 The Cotangent Space#^def-32-8|Definition §32.8]]):
 >
 > $$
 > (F^*\theta)_p = F_p^*\big(\theta_{F(p)}\big), \qquad (F^*\theta)_p(v) = \theta_{F(p)}\big(F_{*p}v\big) .
@@ -181,11 +181,11 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 ^cor-47-4
 
 > [!proof]+ Proof
-> *(Lecture 15 stated it in this form, “one says that the pullback map commutes with $d$”.)* At each $p \in M$ the two sides are $F_p^{\ast}(df_{F(p)})$ and $d(f \circ F)_p$, which agree by [[§32 The Cotangent Space#^prop-32-10|Proposition §32.10]].
+> *(Lecture 15 stated it in this form, “one says that the pullback map commutes with $d$”.)* At each $p \in M$ the two sides are $F_p^{\ast}(df_{F(p)})$ and $d(f \circ F)_p$, which agree by [[§32 The Cotangent Space#^prop-32-11|Proposition §32.11]].
 
 ^pf-47-4
 
-*Uses:* [[§47 One-Forms#^def-47-3|Def. §47.3]], [[§47 One-Forms#^def-47-4|Def. §47.4]], [[§47 One-Forms#^prop-47-2|§47.2]], [[§32 The Cotangent Space#^prop-32-10|§32.10]]
+*Uses:* [[§47 One-Forms#^def-47-3|Def. §47.3]], [[§47 One-Forms#^def-47-4|Def. §47.4]], [[§47 One-Forms#^prop-47-2|§47.2]], [[§32 The Cotangent Space#^prop-32-11|§32.11]]
 
 > [!theorem] Proposition §47.5: Pullbacks in Coordinates
 > In charts $(x^i)$ on $M$ and $(y^j)$ on $N$, with $F^j = y^j \circ F$,
@@ -203,7 +203,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ^pf-47-5
 
-*Uses:* [[§47 One-Forms#^def-47-4|Def. §47.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§47 One-Forms#^prop-47-1|§47.1]]
+*Uses:* [[§47 One-Forms#^def-47-4|Def. §47.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^cor-32-4|§32.4]], [[§47 One-Forms#^prop-47-1|§47.1]]
 
 > [!remark]- Connections
 > - The substitution $dx_i = \sum_j (\partial x_i/\partial u_j)\, du_j$ of 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]; the matrix of a dual map is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].

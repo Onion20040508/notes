@@ -21,8 +21,8 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $[f] \in C_p^\infty(M)$, germs | — | Lee works with global functions $C^\infty(M)$ (Definition [[§27 Germs#^def-27-2\|§27.2]]). |
 | $f_\varphi = f \circ \varphi^{-1}$, $\tilde F = \psi \circ F \circ \varphi^{-1}$ | $\hat f$, $\widehat F$ | Coordinate representations (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1\|§29.1]]). |
 | $\sum_i a^i\, \partial/\partial x^i\vert_p$ | $a^i\, \partial/\partial x^i\vert_p$ | Lee uses the Einstein summation convention; the notes always write the sum. |
-| $T_p^*M$, $df_p$, $dx^i\vert_p$ | the same | Definition [[§32 The Cotangent Space#^def-32-1\|§32.1]], Lemma [[§32 The Cotangent Space#^lem-32-2\|§32.2]]. |
-| $I_p$, $I_p^2$, $I_p/I_p^2$, of germs | $I_p$, $I_p^2$ of global functions (Problem 11-4) | Theorem [[§32 The Cotangent Space#^thm-32-8\|§32.8]]; Lee's version needs bump functions. |
+| $T_p^*M$, $df_p$, $dx^i\vert_p$ | the same | Definition [[§32 The Cotangent Space#^def-32-4\|§32.4]], Lemma [[§32 The Cotangent Space#^lem-32-3\|§32.3]]. |
+| $I_p$, $I_p^2$, $I_p/I_p^2$, of germs | $I_p$, $I_p^2$ of global functions (Problem 11-4) | Theorem [[§32 The Cotangent Space#^thm-32-9\|§32.9]]; Lee's version needs bump functions. |
 | $\Gamma = \{(x, g \cdot x)\}$, the orbit relation | $\mathcal{O} = \{(g \cdot p, p)\}$ | The same set with the factors swapped (proof of Lee, Proposition 21.4). |
 | $H_{x_0}$, the isotropy group | $G_p$ | Definition [[§14 Homogeneous Spaces#^def-14-3\|§14.3]]. |
 | $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ | $F : G/G_p \to M$ | Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]; Lee, Theorem 21.18. |
@@ -41,7 +41,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | Homogeneous spaces | $G/H$ compact and $X$ Hausdorff (Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]); the hypothesis is needed (Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2\|§15.2]]) | Smooth version, no compactness (Theorem 21.18) |
 | Tangent vectors | Derivations of germs; locality is built in, and no bump functions are needed | Derivations of $C^\infty(M)$; locality from bump functions (Proposition 3.8) |
 | Order of ideas | Geometric first, $T^{\mathrm{geo}}_pM = \ker F'(p)$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3\|§25.3]]), then derivations | Derivations first; $T_pS = \ker d\Phi_p$ later (Proposition 5.38) |
-| Cotangent space | The dual, and also $I_p/I_p^2$ of germs, via a non-degenerate pairing (Theorem [[§32 The Cotangent Space#^thm-32-8\|§32.8]]) | The dual in the text (Chapter 11); $I_p/I_p^2$ of global functions, via $f \mapsto df_p$, as Problem 11-4 |
+| Cotangent space | The dual, and also $I_p/I_p^2$ of germs, via a non-degenerate pairing (Theorem [[§32 The Cotangent Space#^thm-32-9\|§32.9]]) | The dual in the text (Chapter 11); $I_p/I_p^2$ of global functions, via $f \mapsto df_p$, as Problem 11-4 |
 | Transversality | Level sets in Euclidean space (Theorem [[§26 Transversality#^thm-26-1\|§26.1]]) | Embedded submanifolds (Theorem 6.30) |
 | Linear algebra | The toolkit of [[§21 Linear Algebra Toolkit\|§21]], including the pairing theorem (Theorem [[§21 Linear Algebra Toolkit#^thm-21-5\|§21.5]]) | Appendix B; dual spaces in Chapter 11 |
 
@@ -174,9 +174,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |
 | Proposition 11.9 | [[§46 The Cotangent Bundle#^def-46-4\|Def. §46.4]], [[§46 The Cotangent Bundle#^def-46-5\|Def. §46.5]], [[§46 The Cotangent Bundle#^prop-46-1\|Prop. §46.1]], [[§46 The Cotangent Bundle#^prop-46-2\|Prop. §46.2]], [[§46 The Cotangent Bundle#^cor-46-3\|Cor. §46.3]] |
 | Proposition 11.11 | [[§47 One-Forms#^prop-47-1\|Prop. §47.1]] |
-| Proposition 11.20 | [[§32 The Cotangent Space#^cor-32-4\|Cor. §32.4]] |
-| Proposition 11.25 | [[§32 The Cotangent Space#^prop-32-10\|Prop. §32.10]], [[§47 One-Forms#^cor-47-4\|Cor. §47.4]] |
-| Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§32 The Cotangent Space#^prop-32-5\|Prop. §32.5]], [[§32 The Cotangent Space#^prop-32-6\|Prop. §32.6]], [[§32 The Cotangent Space#^thm-32-8\|Thm. §32.8]] |
+| Proposition 11.20 | [[§32 The Cotangent Space#^cor-32-5\|Cor. §32.5]] |
+| Proposition 11.25 | [[§32 The Cotangent Space#^prop-32-11\|Prop. §32.11]], [[§47 One-Forms#^cor-47-4\|Cor. §47.4]] |
+| Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§32 The Cotangent Space#^prop-32-6\|Prop. §32.6]], [[§32 The Cotangent Space#^prop-32-7\|Prop. §32.7]], [[§32 The Cotangent Space#^thm-32-9\|Thm. §32.9]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Lemma 21.1 | [[§13 Group Actions and Orbit Spaces#^lem-13-2\|Lem. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3\|Lem. §13.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]] |
 | Example 21.3 | [[§13 Group Actions and Orbit Spaces#^ex-13-6\|Ex. §13.6]] |

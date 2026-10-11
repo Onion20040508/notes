@@ -40,7 +40,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Dimension: [[§12 Duality#^ladr-3-111|Dim V′ = dim V]]. Basis: [[§12 Duality#^ladr-3-112|Dual basis]], [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]]. Maps induce dual maps: [[§12 Duality#^ladr-3-118|Dual map, T′]].
 > - For a normed space 556 keeps only the bounded functionals and adds the dual norm: [[§37 Bras, Kets, and the Riesz Map#^def-37-1|556 Def. §37.1]] and [[§37 Bras, Kets, and the Riesz Map#^def-37-2|556 Def. §37.2]].
-> - Same definition in 591 ([[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]]); the dual of a tangent space is the cotangent space, [[§32 The Cotangent Space#^def-32-1|591 Def. §32.1]].
+> - Same definition in 591 ([[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]]); the dual of a tangent space is the cotangent space, [[§32 The Cotangent Space#^def-32-4|591 Def. §32.4]].
 
 > [!theorem] Theorem 3.111: Dim V′ = dim V
 > If $V$ is finite-dimensional, then $V'$ is finite-dimensional and $\dim V'=\dim V$.
@@ -73,7 +73,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - $\varphi_j$ reads off the $j$-th coordinate: [[§12 Duality#^ladr-3-114|Dual basis gives coefficients for linear combination]]. It is a basis: [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]].
 > - Physics: $\langle e_j|$ against an orthonormal $|e_k\rangle$; index notation $e^j(e_k)=\delta^j_k$ for upper/lower indices.
-> - Same in 591: [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]], a basis of the dual by [[§21 Linear Algebra Toolkit#^prop-21-2|591 Prop. §21.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§32 The Cotangent Space#^lem-32-2|591 Lemma §32.2]].
+> - Same in 591: [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]], a basis of the dual by [[§21 Linear Algebra Toolkit#^prop-21-2|591 Prop. §21.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§32 The Cotangent Space#^lem-32-3|591 Lemma §32.3]].
 
 > [!example] Example 3.113: The dual basis of the standard basis of Fⁿ (p. 106)
 > On $\F^n$ let $\varphi_j(x_1,\dots,x_n)=x_j$ (select the $j$-th coordinate). Then $\varphi_j(e_k)=1$ if $k=j$ and $0$ otherwise, so $\varphi_1,\dots,\varphi_n$ is the dual basis of the standard basis ([[§12 Duality#^ladr-3-112|3.112]]). In index notation: $e^j(e_k)=\delta^j_k$.
@@ -128,7 +128,7 @@ tags: [linear-algebra]
 > - Algebra: [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]]. Null space and range: [[§12 Duality#^ladr-3-128|The null space of T′]], [[§12 Duality#^ladr-3-130|The range of T′]]. Matrix is the transpose: [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]].
 > - Not the adjoint $T^*$ of Chapter 7 ([[§23 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
 > - Same definition in 591, written with a star and called the transpose: [[§21 Linear Algebra Toolkit#^def-21-3|591 Def. §21.3]], with its properties in [[§21 Linear Algebra Toolkit#^prop-21-4|591 Prop. §21.4]].
-> - On a manifold, the dual map of the pushforward is the pullback of covectors: [[§32 The Cotangent Space#^def-32-5|591 Def. §32.5]].
+> - On a manifold, the dual map of the pushforward is the pullback of covectors: [[§32 The Cotangent Space#^def-32-8|591 Def. §32.8]].
 
 > [!example] Example 3.119: Dual map of the differentiation linear map (p. 108)
 > $D:\Poly(\R)\to\Poly(\R)$, $Dp=p'$. The dual map $D'$ pulls a functional back by precomposing with $D$:

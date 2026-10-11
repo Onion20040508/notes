@@ -117,11 +117,11 @@ Uribe called (3) “kind of a trivial way to be [regular], but important”: it 
 ^prop-34-2
 
 > [!proof]+ Proof
-> The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition [[§32 The Cotangent Space#^def-32-1|§32.1]]), so it is $0$ or everything — “dimensions of images cannot be fractional.” The second equivalence is Lemma [[§32 The Cotangent Space#^lem-32-2|§32.2]].
+> The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition [[§32 The Cotangent Space#^def-32-3|§32.3]]), so it is $0$ or everything — “dimensions of images cannot be fractional.” The second equivalence is Lemma [[§32 The Cotangent Space#^lem-32-3|§32.3]].
 
 ^pf-34-2
 
-*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^lem-32-2|§32.2]]
+*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§32 The Cotangent Space#^lem-32-3|§32.3]]
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$, critical points are where extrema can occur: [[§17 Optimization and Lagrange Multipliers#^thm-17-1|452 §17.1]] (Fermat's theorem).

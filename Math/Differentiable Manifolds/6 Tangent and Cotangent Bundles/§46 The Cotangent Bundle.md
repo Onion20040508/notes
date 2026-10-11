@@ -18,7 +18,7 @@ tags: [differentiable-manifolds, math591]
 > T^*M = \bigcup_{p \in M} \{p\} \times T_p^*M = \{\, (p, \xi) : p \in M,\ \xi \in T_p^*M \,\},
 > $$
 >
-> all the cotangent spaces ([[§32 The Cotangent Space#^def-32-1|Definition §32.1]]) put together.
+> all the cotangent spaces ([[§32 The Cotangent Space#^def-32-4|Definition §32.4]]) put together.
 >
 > *Lee: Ch. 11, The Cotangent Bundle*
 
@@ -64,7 +64,7 @@ The definitions and results of this section run parallel to those for the tangen
 > \Psi : T^*U \longrightarrow U \times \mathbb{R}^m, \qquad \Psi(p, \xi) = (p, \xi_1, \ldots, \xi_m), \qquad \text{where } \xi = \sum_{i=1}^m \xi_i\, dx^i\big|_p ,
 > $$
 >
-> the components of $\xi$ in the dual basis. Because the bases $dx^i|_p$ and $\partial/\partial x^i|_p$ are dual to each other, the components are computed by evaluation, $\xi_i = \xi\big(\partial/\partial x^i|_p\big)$ ([[§32 The Cotangent Space#^cor-32-3|Corollary §32.3]]). $\Psi$ is a bijection, and $\mathrm{pr}_1 \circ \Psi = \pi$.
+> the components of $\xi$ in the dual basis. Because the bases $dx^i|_p$ and $\partial/\partial x^i|_p$ are dual to each other, the components are computed by evaluation, $\xi_i = \xi\big(\partial/\partial x^i|_p\big)$ ([[§32 The Cotangent Space#^cor-32-4|Corollary §32.4]]). $\Psi$ is a bijection, and $\mathrm{pr}_1 \circ \Psi = \pi$.
 >
 > *Lee: Proposition 11.9*
 
@@ -89,7 +89,7 @@ The definitions and results of this section run parallel to those for the tangen
 > \xi = \sum_{i=1}^m \xi_i\, dx^i\big|_p, \qquad \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)
 > $$
 >
-> ([[§32 The Cotangent Space#^cor-32-3|Corollary §32.3]]). So the first $m$ coordinates of $\hat\varphi(p, \xi)$ locate the point $p$, and the last $m$ list the components of the covector $\xi$. $\hat\varphi$ is a bijection, with inverse
+> ([[§32 The Cotangent Space#^cor-32-4|Corollary §32.4]]). So the first $m$ coordinates of $\hat\varphi(p, \xi)$ locate the point $p$, and the last $m$ list the components of the covector $\xi$. $\hat\varphi$ is a bijection, with inverse
 >
 > $$
 > (r, b_1, \ldots, b_m) \longmapsto \Big(\varphi^{-1}(r),\ \sum_{i=1}^m b_i\, dx^i\big|_{\varphi^{-1}(r)}\Big), \qquad r \in \varphi(U),\ (b_1, \ldots, b_m) \in \mathbb{R}^m .
@@ -137,12 +137,12 @@ The definitions and results of this section run parallel to those for the tangen
 ^prop-46-2
 
 > [!proof]+ Proof
-> *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* The formula for $dx^i|_p$ is [[§32 The Cotangent Space#^lem-32-2|Lemma §32.2]] applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in [[§45 The Tangent Bundle#^prop-45-2|Proposition §45.2]]; the fibration and linearity statements follow as in [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3]].
+> *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* The formula for $dx^i|_p$ is [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3]] applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in [[§45 The Tangent Bundle#^prop-45-2|Proposition §45.2]]; the fibration and linearity statements follow as in [[§45 The Tangent Bundle#^cor-45-3|Corollary §45.3]].
 > Explicitly, with $p = \varphi^{-1}(r)$, the matrix $\big[\partial y^i/\partial x^j(p)\big]$ is $\tau'(r)$ ([[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1]]), so $\big[\partial x^i/\partial y^j(p)\big] = \tau'(r)^{-1}$ and $\eta = \big(\tau'(r)^{-1}\big)^{\mathsf T}\xi$, which is the displayed transition map. Its entries are smooth in $r$: those of $\tau'(r)$ are, and the inverse of an invertible matrix is given by Cramer's rule, a quotient of polynomials in the entries by the nonzero determinant. The inverse transition map is the same formula with the two charts exchanged.
 
 ^pf-46-2
 
-*Uses:* [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§45 The Tangent Bundle#^prop-45-2|§45.2]], [[§45 The Tangent Bundle#^cor-45-3|§45.3]], [[Multivariable Chain Rule|452 §12.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]
+*Uses:* [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§45 The Tangent Bundle#^prop-45-2|§45.2]], [[§45 The Tangent Bundle#^cor-45-3|§45.3]], [[Multivariable Chain Rule|452 §12.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]
 
 > [!remark]- Connections
 > - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
@@ -167,7 +167,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 ## Lecture 15 and the Standard Coordinates
 
-*Lecture 15 returned to the cotangent bundle — “we did define it, but it was all very quick” — because the homework uses it: “the standard coordinates on $T^{\ast}M$, which are also trivializations”, with the components found by evaluating on the dual basis, as in [[§46 The Cotangent Bundle#^def-46-4|Definitions §46.4]] and [[§46 The Cotangent Bundle#^def-46-5|§46.5]]. He also recalled that the cotangent space has a description from germs, $T_p^{\ast}M \cong I_p/I_p^2$ ([[§32 The Cotangent Space#^thm-32-8|Theorem §32.8]]): “the cotangent space is, in a way, very extremely natural from the point of view of functions.”*
+*Lecture 15 returned to the cotangent bundle — “we did define it, but it was all very quick” — because the homework uses it: “the standard coordinates on $T^{\ast}M$, which are also trivializations”, with the components found by evaluating on the dual basis, as in [[§46 The Cotangent Bundle#^def-46-4|Definitions §46.4]] and [[§46 The Cotangent Bundle#^def-46-5|§46.5]]. He also recalled that the cotangent space has a description from germs, $T_p^{\ast}M \cong I_p/I_p^2$ ([[§32 The Cotangent Space#^thm-32-9|Theorem §32.9]]): “the cotangent space is, in a way, very extremely natural from the point of view of functions.”*
 
 **Transcription note.** Page 40 of the handwritten notes writes the standard coordinates as a map on $T^{\ast}M$; they are defined on $T^{\ast}U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
 

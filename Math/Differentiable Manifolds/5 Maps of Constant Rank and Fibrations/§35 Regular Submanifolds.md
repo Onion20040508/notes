@@ -174,7 +174,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-35-5
 
-*Uses:* [[§35 Regular Submanifolds#^def-35-3|Def. §35.3]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]]
+*Uses:* [[§35 Regular Submanifolds#^def-35-3|Def. §35.3]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§35 Regular Submanifolds#^prop-35-4|§35.4]]
 
 > [!remark]- Connections
 > - The dimension count in general: [[§12 Duality#^ladr-3-125|LADR 3.125]] ($\dim U^0 = \dim V - \dim U$).

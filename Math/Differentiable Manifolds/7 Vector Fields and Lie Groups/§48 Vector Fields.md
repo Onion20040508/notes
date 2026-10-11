@@ -93,7 +93,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 ^pf-48-1
 
-*Uses:* [[§48 Vector Fields#^def-48-1|Def. §48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§45 The Tangent Bundle#^def-45-4|Def. §45.4]], [[§45 The Tangent Bundle#^prop-45-2|§45.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
+*Uses:* [[§48 Vector Fields#^def-48-1|Def. §48.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§45 The Tangent Bundle#^def-45-4|Def. §45.4]], [[§45 The Tangent Bundle#^prop-45-2|§45.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!theorem] Proposition §48.2: The Space of Vector Fields Is a Real Vector Space
 > Let $M$ be a smooth manifold.

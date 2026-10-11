@@ -13,9 +13,58 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 10: “a very special case — a very important case.” The target is $N = \mathbb{R}$, and the differential of a scalar function becomes a covector.*
 
-On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mathbb{R}$ the abstract tangent space $T_c\mathbb{R}$ has the basis $\{\partial/\partial r|_c\}$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), and we identify $T_c\mathbb{R} \cong \mathbb{R}$ once and for all by $\partial/\partial r|_c \mapsto 1$ — “we identify this with $\mathbb{R}$ forever.”
+The target $\mathbb{R}$ is itself a smooth manifold, so $f_{\ast p}$ lands in a tangent space of $\mathbb{R}$. The lecture disposed of these tangent spaces in one line — “we identify this with $\mathbb{R}$ forever” — and the next three boxes spell that line out: the chart and coordinate of $\mathbb{R}$, its coordinate derivation, and the identification.
 
-> [!definition] Definition §32.1: Cotangent Space
+> [!definition] Definition §32.1: The Standard Coordinate on $\mathbb{R}$
+> $\mathbb{R}$ is a smooth $1$-manifold, with the smooth structure of the single global chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$ ([[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Definition §22.4]], with $X = \mathbb{R}$ and $L = \mathrm{id}_\mathbb{R}$). Its [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|coordinate function]] is written $r$:
+>
+> $$
+> r : \mathbb{R} \to \mathbb{R}, \qquad r(t) = t .
+> $$
+>
+> Because the chart is the identity, a smooth function $h$ on an open subset of $\mathbb{R}$ is its own coordinate representation: $h_{\mathrm{id}} = h \circ \mathrm{id}^{-1} = h$.
+
+^def-32-1
+
+> [!definition] Definition §32.2: The Coordinate Derivation on $\mathbb{R}$
+> For $c \in \mathbb{R}$, $\partial/\partial r|_c \in T_c\mathbb{R}$ is the [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|coordinate derivation]] of the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$ at $c$. Since $h_{\mathrm{id}} = h$ ([[§32 The Cotangent Space#^def-32-1|Definition §32.1]]), it is the ordinary derivative at $c$:
+>
+> $$
+> \frac{\partial}{\partial r}\Big|_c [h] = h'(c) \qquad \text{for every germ } [h] \text{ at } c .
+> $$
+>
+> In particular $\partial/\partial r|_c\,[r] = r'(c) = 1$.
+
+^def-32-2
+
+> [!theorem] Proposition §32.1: The Tangent Spaces of $\mathbb{R}$
+> Let $c \in \mathbb{R}$.
+> 1. $T_c\mathbb{R}$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|abstract tangent space]]) is one-dimensional, with basis $\{\partial/\partial r|_c\}$.
+> 2. Every $v \in T_c\mathbb{R}$ is $v = v[r]\,\partial/\partial r|_c$: its coefficient on the basis vector is its value on the coordinate function $r$.
+> 3. The map $\iota_c : T_c\mathbb{R} \to \mathbb{R}$, $\iota_c(v) = v[r]$, is a linear isomorphism, with $\iota_c\big(a\,\partial/\partial r|_c\big) = a$ for $a \in \mathbb{R}$ and inverse $a \mapsto a\,\partial/\partial r|_c$.
+
+^prop-32-1
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* (1) and (2) are the Basis Theorem ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5]]) for the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$, with $n = 1$ and $x^1 = r$; (2) is its universal formula. (3) $\iota_c$ is linear because the vector-space operations of $T_c\mathbb{R}$ are pointwise on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]): $(v + w)[r] = v[r] + w[r]$ and $(av)[r] = a\,v[r]$. By [[§32 The Cotangent Space#^def-32-2|Definition §32.2]], $\iota_c(a\,\partial/\partial r|_c) = a \cdot 1 = a$, so $\iota_c$ is surjective, and $a \mapsto a\,\partial/\partial r|_c$ is a right inverse; it is also a left inverse by (2), $v = \iota_c(v)\,\partial/\partial r|_c$.
+
+^pf-32-1
+
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]]
+
+> [!definition] Definition §32.3: The Standard Identification of $T_c\mathbb{R}$ with $\mathbb{R}$
+> For every $c \in \mathbb{R}$, $T_c\mathbb{R}$ is identified with $\mathbb{R}$ by the isomorphism $\iota_c$ of [[§32 The Cotangent Space#^prop-32-1|Proposition §32.1]]:
+>
+> $$
+> T_c\mathbb{R} \xrightarrow{\ \iota_c\ } \mathbb{R}, \qquad a\,\frac{\partial}{\partial r}\Big|_c \longmapsto a, \qquad \text{equivalently} \quad v \longmapsto v[r] .
+> $$
+
+^def-32-3
+
+Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: differentiation at $c$ at speed $a$, the [[§31 Tangent Vectors as Velocities of Curves|velocity]] of the curve $t \mapsto c + at$. The identification records the speed $a$ and forgets the base point $c$; this is why it can be made for all $c$ at once.
+
+
+> [!definition] Definition §32.4: Cotangent Space
 > Let $M$ be a smooth manifold and $p \in M$. The **cotangent space** of $M$ at $p$ is the dual of the abstract tangent space,
 >
 > $$
@@ -24,14 +73,26 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 >
 > *Lee: Ch. 11, Covectors*
 
-^def-32-1
+^def-32-4
 
-> [!definition] Definition §32.2: The Differential of a Function
-> Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the **differential** of $f$ at $p$ is $df_p = f_{\ast p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]]); it is linear, so $df_p \in T_p^{\ast}M$, the cotangent space of [[§32 The Cotangent Space#^def-32-1|Definition §32.1]].
+> [!definition] Definition §32.5: The Differential of a Function
+> Let $M$ be a smooth manifold and $p \in M$, and let $f : M \to \mathbb{R}$ be smooth (or defined and smooth only near $p$). Its [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] at $p$ is a linear map into the tangent space of $\mathbb{R}$ at the point $f(p)$:
+>
+> $$
+> f_{*p} : T_pM \longrightarrow T_{f(p)}\mathbb{R}, \qquad \big(f_{*p}D\big)[h] = D[\,h \circ f\,] .
+> $$
+>
+> The **differential** of $f$ at $p$ is this map followed by the standard identification $\iota_{f(p)} : T_{f(p)}\mathbb{R} \to \mathbb{R}$ ([[§32 The Cotangent Space#^def-32-3|Definition §32.3]]):
+>
+> $$
+> df_p = \iota_{f(p)} \circ f_{*p} : T_pM \longrightarrow \mathbb{R}, \qquad df_p(D) = \big(f_{*p}D\big)[r] .
+> $$
+>
+> So $df_p(D)$ is the coefficient of $f_{\ast p}D$ on the basis vector $\partial/\partial r|_{f(p)}$ of $T_{f(p)}\mathbb{R}$ ([[§32 The Cotangent Space#^prop-32-1|Proposition §32.1]]): $f_{\ast p}D = df_p(D)\,\partial/\partial r|_{f(p)}$. As a composite of linear maps, $df_p$ is linear, so $df_p \in T_p^{\ast}M$, the [[§32 The Cotangent Space#^def-32-4|cotangent space]] of Definition §32.4. [[§32 The Cotangent Space#^prop-32-2|Proposition §32.2]] computes it: $df_p(D) = D[f]$.
 >
 > *Lee: Ch. 11, Covectors*
 
-^def-32-2
+^def-32-5
 
 ![[m591-13-1.svg]]
 *The differential of a function is its pushforward followed by the permanent identification of every tangent space of $\mathbb{R}$ with $\mathbb{R}$; so $df_p$ is the pushforward $f_{\ast p}$ under another name. The notation $T_p^{\ast}M$ puts the star on the $T$ “to save some ink.”*
@@ -42,21 +103,21 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > - Assembled over all of $M$: the cotangent bundle, [[§46 The Cotangent Bundle#^def-46-1|Def. §46.1]].
 > - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
-> [!theorem] Proposition §32.1: The Differential Evaluates Derivations
+> [!theorem] Proposition §32.2: The Differential Evaluates Derivations
 > For every $D \in T_pM$, $\ df_p(D) = D[f]$. In particular $df_p\big(\partial/\partial x^j|_p\big) = \partial f/\partial x^j(p)$ in any chart.
 >
 > *Lee: Ch. 11, Covectors*
 
-^prop-32-1
+^prop-32-2
 
 > [!proof]+ Proof
-> By the universal formula ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]) at $f(p)$ with the coordinate $r$, $f_{*p}D = (f_{*p}D)[r]\,\partial/\partial r|_{f(p)}$, and $(f_{*p}D)[r] = D[r \circ f] = D[f]$. Under the identification, $\partial/\partial r|_{f(p)} \mapsto 1$.
+> By [[§32 The Cotangent Space#^def-32-5|Definition §32.5]] and the definition of the pushforward ([[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6]]), $df_p(D) = (f_{*p}D)[r] = D[r \circ f] = D[f]$, since $r \circ f = f$ ($r$ is the identity of $\mathbb{R}$, [[§32 The Cotangent Space#^def-32-1|Definition §32.1]]). For $D = \partial/\partial x^j|_p$ this is $\partial/\partial x^j|_p\,[f] = \partial f/\partial x^j(p)$ ([[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Definition §29.2]]).
 
-^pf-32-1
+^pf-32-2
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]]
+*Uses:* [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
 
-> [!theorem] Lemma §32.2: The Differential in Coordinates
+> [!theorem] Lemma §32.3: The Differential in Coordinates
 > Let $(x^1, \ldots, x^m)$ be coordinates near $p$, and write $dx^i|_p$ for the differential at $p$ of the coordinate function $x^i$. Then $\{dx^1|_p, \ldots, dx^m|_p\}$ is the dual basis of $\{\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p\}$, so $\dim T_p^*M = m$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]), and for every smooth $f$ defined near $p$,
 >
 > $$
@@ -65,19 +126,19 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 >
 > *Lee: Ch. 11, Covectors*
 
-^lem-32-2
+^lem-32-3
 
 > [!proof]+ Proof
-> *(Lecture 10: “it suffices to check the identity on basis vectors.” In lecture the left side came from the matrix of $f_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), a $1 \times m$ row — “remember, gradients are across”, after a student first proposed $m \times 1$ — whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]] gives the same value directly.)* By Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]], $dx^i|_p(\partial/\partial x^j|_p) = \partial x^i/\partial x^j(p) = \partial r^i/\partial r^j = \delta^i_j$, which is the defining property of the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]). Two linear functionals agree if they agree on a basis (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](2)), so it suffices to evaluate both sides of the formula on $\partial/\partial x^j|_p$. The left side gives $\partial f/\partial x^j(p)$, again by Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]]; the right side gives $\sum_i \partial f/\partial x^i(p)\,\delta^i_j = \partial f/\partial x^j(p)$.
+> *(Lecture 10: “it suffices to check the identity on basis vectors.” In lecture the left side came from the matrix of $f_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), a $1 \times m$ row — “remember, gradients are across”, after a student first proposed $m \times 1$ — whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] gives the same value directly.)* By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], $dx^i|_p(\partial/\partial x^j|_p) = \partial x^i/\partial x^j(p) = \partial r^i/\partial r^j = \delta^i_j$, which is the defining property of the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]). Two linear functionals agree if they agree on a basis (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](2)), so it suffices to evaluate both sides of the formula on $\partial/\partial x^j|_p$. The left side gives $\partial f/\partial x^j(p)$, again by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]; the right side gives $\sum_i \partial f/\partial x^i(p)\,\delta^i_j = \partial f/\partial x^j(p)$.
 
-^pf-32-2
+^pf-32-3
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]]
 
 > [!remark]- Connections
 > - The dual basis and its coefficients: [[§12 Duality#^ladr-3-112|LADR 3.112]], [[§12 Duality#^ladr-3-114|LADR 3.114]], [[§12 Duality#^ladr-3-116|LADR 3.116]].
 
-> [!theorem] Corollary §32.3: Components of a Covector
+> [!theorem] Corollary §32.4: Components of a Covector
 > In a chart $(x^1, \ldots, x^m)$ near $p$, every covector $\alpha \in T_p^*M$ is
 >
 > $$
@@ -88,19 +149,19 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 >
 > *Lee: Ch. 11, Covectors*
 
-^cor-32-3
+^cor-32-4
 
 > [!proof]+ Proof
-> *(Lecture 15 recalled the basis $dx^j|_p$ — “a fact that I forgot to mention to remind you” — and read off the components by evaluation.)* By [[§32 The Cotangent Space#^lem-32-2|Lemma §32.2]] the $dx^j|_p$ form the basis of $T_p^{\ast}M$ dual to the $\partial/\partial x^j|_p$, and [[§21 Linear Algebra Toolkit#^prop-21-2|Proposition §21.2]] expands every element of a dual space in the dual basis with the coefficients $\alpha(\partial/\partial x^j|_p)$.
+> *(Lecture 15 recalled the basis $dx^j|_p$ — “a fact that I forgot to mention to remind you” — and read off the components by evaluation.)* By [[§32 The Cotangent Space#^lem-32-3|Lemma §32.3]] the $dx^j|_p$ form the basis of $T_p^{\ast}M$ dual to the $\partial/\partial x^j|_p$, and [[§21 Linear Algebra Toolkit#^prop-21-2|Proposition §21.2]] expands every element of a dual space in the dual basis with the coefficients $\alpha(\partial/\partial x^j|_p)$.
 
-^pf-32-3
+^pf-32-4
 
-*Uses:* [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]
+*Uses:* [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]
 
 > [!remark]- Connections
 > - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§46 The Cotangent Bundle#^def-46-4|Def. §46.4]], [[§46 The Cotangent Bundle#^def-46-5|Def. §46.5]].
 
-> [!theorem] Corollary §32.4: Properties of the Differential of a Function
+> [!theorem] Corollary §32.5: Properties of the Differential of a Function
 > Let $f, g$ be smooth near $p$ and $a, b \in \mathbb{R}$. Then
 >
 > $$
@@ -111,14 +172,14 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 >
 > *Lee: Proposition 11.20*
 
-^cor-32-4
+^cor-32-5
 
 > [!proof]+ Proof
-> Evaluate at $D \in T_pM$ using Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]]. The first two identities are the linearity and the Leibniz rule of $D$. For the third, $D[h \circ f] = (f_{*p}D)[h]$, and under the identification of Definition [[§32 The Cotangent Space#^def-32-1|§32.1]], $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; applying this to $h$ gives $df_p(D)\,h'(f(p))$.
+> Evaluate at $D \in T_pM$ using Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]. The first two identities are the linearity and the Leibniz rule of $D$. For the third, $D[h \circ f] = (f_{*p}D)[h]$, and by [[§32 The Cotangent Space#^def-32-5|Definition §32.5]], $f_{*p}D = df_p(D)\,\partial/\partial r|_{f(p)}$; applying this to $h$ gives $df_p(D)\,\partial/\partial r|_{f(p)}[h] = df_p(D)\,h'(f(p))$ ([[§32 The Cotangent Space#^def-32-2|Definition §32.2]]).
 
-^pf-32-4
+^pf-32-5
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]]
 
 > [!remark] Remark
 > Equivalently, by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] with the coordinate $r$ on the target, the matrix of $f_{*p}$ is the $1 \times m$ row
@@ -127,7 +188,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > \Big( \frac{\partial f}{\partial x^1}(p) \ \ \cdots \ \ \frac{\partial f}{\partial x^m}(p) \Big).
 > $$
 >
-> A student proposed $m \times 1$; it is $1 \times m$ — “gradients go across” — since the target is one-dimensional. The lecture's proof took this route and paused over the shape of the matrix; the version above goes through Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]] instead, which avoids the question.
+> A student proposed $m \times 1$; it is $1 \times m$ — “gradients go across” — since the target is one-dimensional. The lecture's proof took this route and paused over the shape of the matrix; the version above goes through Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] instead, which avoids the question.
 
 ^rem-32-1
 
@@ -148,15 +209,15 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 *Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^{\ast}$. This subsection shows that it also has a description with no dualizing at all, in terms of germs alone — “as you can see, it has the natural definition $I_p/I_p^2$.” The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the [[§21 Linear Algebra Toolkit#^thm-21-5|Linear Algebra Toolkit]] for free.*
 
-> [!definition] Definition §32.3: The Space $I_p/I_p^2$
+> [!definition] Definition §32.6: The Space $I_p/I_p^2$
 > $I_p/I_p^2$ is the quotient vector space (Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]]) of $I_p$ by its subspace $I_p^2$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-1|§28.1]]). The class of $[f] \in I_p$ is written ${[}[f]{]} = [f] + I_p^2$, and ${[}[f]{]} = {[}[f']{]}$ iff $[f'] - [f] \in I_p^2$.
 
-^def-32-3
+^def-32-6
 
 > [!remark]- Connections
 > - The quotient space construction: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
 
-> [!theorem] Proposition §32.5: Germs Vanishing to Second Order
+> [!theorem] Proposition §32.6: Germs Vanishing to Second Order
 > For $[f] \in C_p^\infty(M)$ the following are equivalent:
 > 1. $[f] \in I_p^2$;
 > 2. $f(p) = 0$ and $df_p = 0$;
@@ -164,12 +225,12 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 >
 > *Lee: Problem 11-4(a)*
 
-^prop-32-5
+^prop-32-6
 
 > [!proof]+ Proof
-> (2)$\iff$(3): by Lemma [[§32 The Cotangent Space#^lem-32-2|§32.2]], $df_p = \sum_i \partial f/\partial x^i(p)\,dx^i|_p$, and the $dx^i|_p$ form a basis. Condition (2) mentions no chart, which is why “one” chart implies “every”.
+> (2)$\iff$(3): by Lemma [[§32 The Cotangent Space#^lem-32-3|§32.3]], $df_p = \sum_i \partial f/\partial x^i(p)\,dx^i|_p$, and the $dx^i|_p$ form a basis. Condition (2) mentions no chart, which is why “one” chart implies “every”.
 >
-> (1)$\Rightarrow$(2): every element of $I_p^2$ lies in $I_p$, so it vanishes at $p$. And for $[u], [w] \in I_p$ and any $D \in T_pM$, Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]] and Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](2) give $d(uw)_p(D) = D([u][w]) = 0$. So $d(uw)_p = 0$, and by linearity $df_p = 0$ for every $[f] \in I_p^2$.
+> (1)$\Rightarrow$(2): every element of $I_p^2$ lies in $I_p$, so it vanishes at $p$. And for $[u], [w] \in I_p$ and any $D \in T_pM$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](2) give $d(uw)_p(D) = D([u][w]) = 0$. So $d(uw)_p = 0$, and by linearity $df_p = 0$ for every $[f] \in I_p^2$.
 >
 > (3)$\Rightarrow$(1): *(Assignment 3, Problem 3.)* Fix a chart $(U,\varphi)$ at $p$, a representative $f : V \to \mathbb{R}$, and put $a = \varphi(p)$ and $f_\varphi = f \circ \varphi^{-1}$. The hypotheses say $f_\varphi(a) = 0$ and $\partial f_\varphi/\partial r^i(a) = 0$. On an open ball $B \subseteq \varphi(U \cap V)$ centred at $a$, Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]) gives smooth $f_i$ with
 >
@@ -185,9 +246,9 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 >
 > an identity of germs: $[f] = \sum_i [x^i - x^i(p)]\,[f_i \circ \varphi]$. Both factors of each term vanish at $p$ — the second because $f_i(a) = 0$ — so each term is a product of two elements of $I_p$, and $[f] \in I_p^2$.
 
-^pf-32-5
+^pf-32-6
 
-*Uses:* [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]
+*Uses:* [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]
 
 > [!remark] Remark
 > The proposition is the conceptual centre of Problem 3. $I_p$ consists of the germs vanishing to *first* order at $p$, and $I_p^2$ of those vanishing to *second* order — value and first derivatives zero. So the quotient $I_p/I_p^2$ remembers exactly the first derivatives of a germ that vanishes at $p$, and nothing else. It only needs first-order Hadamard: the vanishing of $f_i(a)$ is what puts the second factor in $I_p$.
@@ -195,9 +256,9 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 ^rem-32-3
 
 ![[m591-13-4.svg]]
-*Classes in $I_p/I_p^2$, for $M = \mathbb{R}$. The blue germs $f_1$ and $f_2$ both vanish at $p$ with the same slope $c$, so $f_1 - f_2$ vanishes to second order and ${[}[f_1]{]} = {[}[f_2]{]} = c\,{[}[x - p]{]}$: the class keeps only the red tangent line and forgets the curvature. The green $g$ has value and slope zero at $p$, so $[g] \in I_p^2$ and ${[}[g]{]} = 0$ (Proposition [[§32 The Cotangent Space#^prop-32-5|§32.5]]).*
+*Classes in $I_p/I_p^2$, for $M = \mathbb{R}$. The blue germs $f_1$ and $f_2$ both vanish at $p$ with the same slope $c$, so $f_1 - f_2$ vanishes to second order and ${[}[f_1]{]} = {[}[f_2]{]} = c\,{[}[x - p]{]}$: the class keeps only the red tangent line and forgets the curvature. The green $g$ has value and slope zero at $p$, so $[g] \in I_p^2$ and ${[}[g]{]} = 0$ (Proposition [[§32 The Cotangent Space#^prop-32-6|§32.6]]).*
 
-> [!theorem] Proposition §32.6: A Basis of $I_p/I_p^2$
+> [!theorem] Proposition §32.7: A Basis of $I_p/I_p^2$
 > Let $(U, \varphi)$ be a chart at $p$ with coordinate functions $x^1, \ldots, x^n$. For every $[f] \in I_p$,
 >
 > $$
@@ -208,7 +269,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 >
 > *Lee: cf. Problem 11-4(a)*
 
-^prop-32-6
+^prop-32-7
 
 > [!proof]+ Proof
 > Each $x^i - x^i(p)$ is smooth on $U$ and vanishes at $p$, so its germ lies in $I_p$. Put $g = f - \sum_i \partial f/\partial x^i(p)\,(x^i - x^i(p))$ near $p$. Then $g(p) = 0$ and, using $\partial x^i/\partial x^j = \delta^i_j$,
@@ -217,42 +278,42 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 > \frac{\partial g}{\partial x^j}(p) = \frac{\partial f}{\partial x^j}(p) - \sum_i \frac{\partial f}{\partial x^i}(p)\,\delta^i_j = 0,
 > $$
 >
-> so $[g] \in I_p^2$ by Proposition [[§32 The Cotangent Space#^prop-32-5|§32.5]]. This is the displayed expansion, which shows that the classes span. For independence, suppose $\sum_i c_i\,{[}[x^i - x^i(p)]{]} = 0$, i.e. $\sum_i c_i\,[x^i - x^i(p)] \in I_p^2$. By Proposition [[§32 The Cotangent Space#^prop-32-5|§32.5]] its $j$-th partial at $p$ vanishes, and that partial is $c_j$.
+> so $[g] \in I_p^2$ by Proposition [[§32 The Cotangent Space#^prop-32-6|§32.6]]. This is the displayed expansion, which shows that the classes span. For independence, suppose $\sum_i c_i\,{[}[x^i - x^i(p)]{]} = 0$, i.e. $\sum_i c_i\,[x^i - x^i(p)] \in I_p^2$. By Proposition [[§32 The Cotangent Space#^prop-32-6|§32.6]] its $j$-th partial at $p$ vanishes, and that partial is $c_j$.
 
-^pf-32-6
+^pf-32-7
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-5|§32.5]], [[§32 The Cotangent Space#^def-32-3|Def. §32.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-6|§32.6]], [[§32 The Cotangent Space#^def-32-6|Def. §32.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]]
 
 This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]): the coefficients of ${[}[f]{]}$ are the first partials of $f$, just as the coefficients of a derivation $D$ were its values $D[x^i]$.
 
-> [!definition] Definition §32.4: The Pairing Between Tangent Vectors and $I_p/I_p^2$
+> [!definition] Definition §32.7: The Pairing Between Tangent Vectors and $I_p/I_p^2$
 > The **pairing** of $T_pM$ with $I_p/I_p^2$ is
 >
 > $$
 > \langle\ ,\ \rangle : T_pM \times I_p/I_p^2 \to \mathbb{R}, \qquad \langle D, {[}[f]{]} \rangle = D[f] .
 > $$
 
-^def-32-4
+^def-32-7
 
-> [!theorem] Proposition §32.7: The Pairing Is Well Defined and Non-Degenerate
-> The pairing of Definition [[§32 The Cotangent Space#^def-32-4|§32.4]] is well defined, bilinear, and non-degenerate in the sense of Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]].
+> [!theorem] Proposition §32.8: The Pairing Is Well Defined and Non-Degenerate
+> The pairing of Definition [[§32 The Cotangent Space#^def-32-7|§32.7]] is well defined, bilinear, and non-degenerate in the sense of Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]].
 >
 > *Lee: no counterpart; Lee proves Problem 11-4(b) without a pairing*
 
-^prop-32-7
+^prop-32-8
 
 > [!proof]+ Proof
 > *Well defined* *(Problem 3(a))*. Each $D$ is a linear functional on $I_p$ that vanishes on $I_p^2$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](2)), so it descends to $I_p/I_p^2$ by the universal property of quotient spaces (Proposition [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]](2)). *Bilinear:* derivations are linear, and they are added and scaled pointwise.
 >
 > *Left non-degenerate.* If $D[f] = 0$ for every $[f] \in I_p$, then $D = 0$, because a derivation is determined by its values on $I_p$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)).
 >
-> *Right non-degenerate.* If $[f] \in I_p$ and $D[f] = 0$ for every $D \in T_pM$, then $df_p = 0$ by Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]]; with $f(p) = 0$, Proposition [[§32 The Cotangent Space#^prop-32-5|§32.5]] gives $[f] \in I_p^2$, i.e. ${[}[f]{]} = 0$.
+> *Right non-degenerate.* If $[f] \in I_p$ and $D[f] = 0$ for every $D \in T_pM$, then $df_p = 0$ by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]; with $f(p) = 0$, Proposition [[§32 The Cotangent Space#^prop-32-6|§32.6]] gives $[f] \in I_p^2$, i.e. ${[}[f]{]} = 0$.
 
-^pf-32-7
+^pf-32-8
 
-*Uses:* [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§32 The Cotangent Space#^prop-32-5|§32.5]]
+*Uses:* [[§32 The Cotangent Space#^def-32-7|Def. §32.7]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^prop-32-6|§32.6]]
 
-> [!theorem] Theorem §32.8: The Cotangent Space from Germs
+> [!theorem] Theorem §32.9: The Cotangent Space from Germs
 > 1. The pairing induces isomorphisms
 >
 >    $$
@@ -266,14 +327,14 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 >
 > *Lee: Problem 11-4(b), with global functions in place of germs (see the comparison below)*
 
-^thm-32-8
+^thm-32-9
 
 > [!proof]+ Proof
-> (1) $T_pM$ is finite-dimensional (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]) and the pairing is non-degenerate (Proposition [[§32 The Cotangent Space#^prop-32-7|§32.7]]), so Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]] applies. (2) $\Phi({[}[f]{]})(D) = \langle D, {[}[f]{]} \rangle = D[f] = df_p(D)$ by Proposition [[§32 The Cotangent Space#^prop-32-1|§32.1]]. (3) By (2), $\Phi({[}[x^i - x^i(p)]{]}) = d(x^i - x^i(p))_p = dx^i|_p$, since a constant has zero differential (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)); and the $dx^i|_p$ are dual to the $\partial/\partial x^i|_p$ by Lemma [[§32 The Cotangent Space#^lem-32-2|§32.2]]. Every map in (1) is defined by $\langle D, {[}[f]{]} \rangle = D[f]$, which mentions no chart.
+> (1) $T_pM$ is finite-dimensional (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]) and the pairing is non-degenerate (Proposition [[§32 The Cotangent Space#^prop-32-8|§32.8]]), so Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]] applies. (2) $\Phi({[}[f]{]})(D) = \langle D, {[}[f]{]} \rangle = D[f] = df_p(D)$ by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]. (3) By (2), $\Phi({[}[x^i - x^i(p)]{]}) = d(x^i - x^i(p))_p = dx^i|_p$, since a constant has zero differential (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)); and the $dx^i|_p$ are dual to the $\partial/\partial x^i|_p$ by Lemma [[§32 The Cotangent Space#^lem-32-3|§32.3]]. Every map in (1) is defined by $\langle D, {[}[f]{]} \rangle = D[f]$, which mentions no chart.
 
-^pf-32-8
+^pf-32-9
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-7|§32.7]], [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§32 The Cotangent Space#^prop-32-8|§32.8]], [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^def-32-7|Def. §32.7]]
 
 ![[m591-13-3.svg]]
 *The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. Uribe's $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
@@ -283,35 +344,35 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 ^rem-32-4
 
-> [!theorem] Theorem §32.9: Dimension of the Cotangent Space
+> [!theorem] Theorem §32.10: Dimension of the Cotangent Space
 > Let $M$ be a smooth $m$-manifold and $p \in M$. Then
 >
 > $$
 > \dim T_p^{\ast}M \;=\; \dim \big(I_p/I_p^2\big) \;=\; \dim T_pM \;=\; m .
 > $$
 >
-> The cotangent space ([[§32 The Cotangent Space#^def-32-1|Def. §32.1]]) has the same dimension as the tangent space, at every point.
+> The cotangent space ([[§32 The Cotangent Space#^def-32-4|Def. §32.4]]) has the same dimension as the tangent space, at every point.
 
-^thm-32-9
+^thm-32-10
 
 > [!proof]+ Proof
-> *(Collected from the results above; not stated as a single theorem in lecture.)* $T_p^{\ast}M = (T_pM)^{\ast}$ is the dual of a space of dimension $m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and the dual of a finite-dimensional space has the same dimension (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]); explicitly, the $m$ covectors $dx^i|_p$ form a basis (Lemma [[§32 The Cotangent Space#^lem-32-2|§32.2]]). And $I_p/I_p^2$ has the basis of $m$ classes ${[}[x^i - x^i(p)]{]}$ (Proposition [[§32 The Cotangent Space#^prop-32-6|§32.6]]), or equivalently is isomorphic to $T_p^{\ast}M$ by $\Phi$ (Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]]).
+> *(Collected from the results above; not stated as a single theorem in lecture.)* $T_p^{\ast}M = (T_pM)^{\ast}$ is the dual of a space of dimension $m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and the dual of a finite-dimensional space has the same dimension (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]); explicitly, the $m$ covectors $dx^i|_p$ form a basis (Lemma [[§32 The Cotangent Space#^lem-32-3|§32.3]]). And $I_p/I_p^2$ has the basis of $m$ classes ${[}[x^i - x^i(p)]{]}$ (Proposition [[§32 The Cotangent Space#^prop-32-7|§32.7]]), or equivalently is isomorphic to $T_p^{\ast}M$ by $\Phi$ (Theorem [[§32 The Cotangent Space#^thm-32-9|§32.9]]).
 
-^pf-32-9
+^pf-32-10
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^prop-32-6|§32.6]], [[§32 The Cotangent Space#^thm-32-8|§32.8]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§32 The Cotangent Space#^lem-32-3|§32.3]], [[§32 The Cotangent Space#^prop-32-7|§32.7]], [[§32 The Cotangent Space#^thm-32-9|§32.9]]
 
-Equal dimension is what makes the isomorphisms of Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§46 The Cotangent Bundle|§46]]).
+Equal dimension is what makes the isomorphisms of Theorem [[§32 The Cotangent Space#^thm-32-9|§32.9]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§32 The Cotangent Space#^thm-32-9|§32.9]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§46 The Cotangent Bundle|§46]]).
 
-**Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§32 The Cotangent Space#^prop-32-7|§32.7]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
+**Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§32 The Cotangent Space#^prop-32-8|§32.8]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
 
-**Comparison with Lee.** In the text of Chapter 11, Lee defines the cotangent space as the dual $(T_pM)^{\ast}$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem 11-4. Part (a) is Proposition [[§32 The Cotangent Space#^prop-32-5|§32.5]], down to the phrase “vanishes to second order”, and part (b) is Theorem [[§32 The Cotangent Space#^thm-32-8|§32.8]](1)–(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]]). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment 3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^{\ast}M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual — the order Uribe called in some ways more natural — and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem 3-8; here Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]]). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
+**Comparison with Lee.** In the text of Chapter 11, Lee defines the cotangent space as the dual $(T_pM)^{\ast}$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem 11-4. Part (a) is Proposition [[§32 The Cotangent Space#^prop-32-6|§32.6]], down to the phrase “vanishes to second order”, and part (b) is Theorem [[§32 The Cotangent Space#^thm-32-9|§32.9]](1)–(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]]). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment 3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^{\ast}M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual — the order Uribe called in some ways more natural — and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem 3-8; here Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]]). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
 
 ## Pulling Back Covectors
 
 *Lecture 15. A smooth map pushes tangent vectors forward; dually, it pulls covectors back. “Functions pull back by composition, and you can pull back actually any one-form by using the dual map of the forward star.”*
 
-> [!definition] Definition §32.5: Pullback of Covectors
+> [!definition] Definition §32.8: Pullback of Covectors
 > Let $F : M \to N$ be smooth and $p \in M$. The **pullback of covectors** at $p$ is the dual map ([[§21 Linear Algebra Toolkit#^def-21-3|Definition §21.3]]) of the pushforward $F_{\ast p} : T_pM \to T_{F(p)}N$:
 >
 > $$
@@ -320,7 +381,7 @@ Equal dimension is what makes the isomorphisms of Theorem [[§32 The Cotangent S
 >
 > *Lee: Ch. 11, Pullbacks of Covector Fields*
 
-^def-32-5
+^def-32-8
 
 > [!remark]- Connections
 > - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§47 One-Forms#^def-47-4|Def. §47.4]].
@@ -328,11 +389,11 @@ Equal dimension is what makes the isomorphisms of Theorem [[§32 The Cotangent S
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
 
 > [!remark] Remark: One Symbol for Two Pullbacks
-> The symbol $F_p^{\ast}$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]); on covectors it is the dual map $T^{\ast}_{F(p)}N \to T_p^{\ast}M$ of [[§32 The Cotangent Space#^def-32-5|Definition §32.5]]. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^{\ast}(dg_{F(p)}) = d\big(F_p^{\ast}[g]\big)_p$.
+> The symbol $F_p^{\ast}$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]); on covectors it is the dual map $T^{\ast}_{F(p)}N \to T_p^{\ast}M$ of [[§32 The Cotangent Space#^def-32-8|Definition §32.8]]. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^{\ast}(dg_{F(p)}) = d\big(F_p^{\ast}[g]\big)_p$.
 
 ^rem-32-5
 
-> [!theorem] Proposition §32.10: Pullback Commutes with $d$
+> [!theorem] Proposition §32.11: Pullback Commutes with $d$
 > Let $F : M \to N$ be smooth, $p \in M$, and $f$ smooth near $F(p)$. Then
 >
 > $$
@@ -341,7 +402,7 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 >
 > *Lee: Proposition 11.25*
 
-^prop-32-10
+^prop-32-11
 
 > [!proof]+ Proof
 > *(Lecture 15 — “every equal sign is a definition … maybe this is best to be reflected upon at your coffee shop of choice.”)* For $v \in T_pM$:
@@ -352,9 +413,9 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 >
 > The first equality is the definition of the dual map; the second, of the differential of a function, applied to the vector $F_{\ast p}v \in T_{F(p)}N$; the third, of the pushforward; the fourth, of the differential of $f \circ F$. Two covectors that agree on every $v$ are equal.
 
-^pf-32-10
+^pf-32-11
 
-*Uses:* [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§21 Linear Algebra Toolkit#^def-21-3|Def. §21.3]]
+*Uses:* [[§32 The Cotangent Space#^def-32-8|Def. §32.8]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§21 Linear Algebra Toolkit#^def-21-3|Def. §21.3]]
 
 > [!remark] Remark: The Two Differentials Meet
 > In $\mathbb{R}^n$, with the dot-product identification of [[§32 The Cotangent Space#^rem-32-2|Remark (Differential — Not Gradient)]], the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_{\ast}$ “we should have called the differential of $F$ ages ago”: for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{\ast p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.

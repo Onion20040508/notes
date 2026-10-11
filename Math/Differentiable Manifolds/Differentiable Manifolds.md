@@ -113,7 +113,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§48
 - [[Ambient and Abstract Tangent Spaces Agree]] (§29.6)
 - [[Matrix of the Differential]] (§30.2)
 - [[Every Tangent Vector Is a Velocity]] (§31.2)
-- [[Cotangent Space from Germs]] (§32.8)
+- [[Cotangent Space from Germs]] (§32.9)
 - [[Local Diffeomorphism Criterion]] (§33.2)
 - [[Submersion Normal Form]] (§34.4)
 - [[Regular Value Theorem for Manifolds]] (§35.7)

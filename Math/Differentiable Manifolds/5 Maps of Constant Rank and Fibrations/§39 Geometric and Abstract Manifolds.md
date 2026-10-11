@@ -113,16 +113,16 @@ The two differentials are built in opposite directions. The Jacobian is computed
 
 | Geometric | Abstract | How they correspond |
 |---|---|---|
-| the gradient $\nabla f(p)$, a row of the Jacobian | Definition [[§32 The Cotangent Space#^def-32-2\|§32.2]] ($df_p \in T_p^*M$); Lemma [[§32 The Cotangent Space#^lem-32-2\|§32.2]] | the remark [[§32 The Cotangent Space#^rem-32-2\|Differential — Not Gradient]]: a gradient needs an inner product |
-| the transpose $J_F^{\mathsf T}$ of the Jacobian | Definition [[§32 The Cotangent Space#^def-32-5\|§32.5]] (pullback of covectors, the dual map of $F_{\ast p}$) | in dual bases the matrix of $F_p^{\ast}$ is the transpose of the matrix of $F_{\ast p}$ |
-| $\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) | Proposition [[§32 The Cotangent Space#^prop-32-10\|§32.10]] ($F_p^{\ast}\, df = d(f \circ F)$) | the remark [[§32 The Cotangent Space#^rem-32-6\|The Two Differentials Meet]] |
+| the gradient $\nabla f(p)$, a row of the Jacobian | Definition [[§32 The Cotangent Space#^def-32-5\|§32.5]] ($df_p \in T_p^*M$); Lemma [[§32 The Cotangent Space#^lem-32-3\|§32.3]] | the remark [[§32 The Cotangent Space#^rem-32-2\|Differential — Not Gradient]]: a gradient needs an inner product |
+| the transpose $J_F^{\mathsf T}$ of the Jacobian | Definition [[§32 The Cotangent Space#^def-32-8\|§32.8]] (pullback of covectors, the dual map of $F_{\ast p}$) | in dual bases the matrix of $F_p^{\ast}$ is the transpose of the matrix of $F_{\ast p}$ |
+| $\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) | Proposition [[§32 The Cotangent Space#^prop-32-11\|§32.11]] ($F_p^{\ast}\, df = d(f \circ F)$) | the remark [[§32 The Cotangent Space#^rem-32-6\|The Two Differentials Meet]] |
 | normal vectors, spanned by $\nabla F^1, \ldots, \nabla F^k$ | Definition [[§35 Regular Submanifolds#^def-35-3\|§35.3]] (conormal space); Proposition [[§35 Regular Submanifolds#^prop-35-5\|§35.5]] (basis $dF^i|_p$) | the remark [[§35 Regular Submanifolds#^rem-35-1\|No Normal Vectors Without a Metric]] |
-
-![[§32 The Cotangent Space#^def-32-2]]
 
 ![[§32 The Cotangent Space#^def-32-5]]
 
-![[§32 The Cotangent Space#^prop-32-10]]
+![[§32 The Cotangent Space#^def-32-8]]
+
+![[§32 The Cotangent Space#^prop-32-11]]
 
 ![[§32 The Cotangent Space#^rem-32-6]]
 
