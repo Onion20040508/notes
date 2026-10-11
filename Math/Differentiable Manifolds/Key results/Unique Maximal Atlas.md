@@ -42,6 +42,7 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^prop-37-4|Proposition §37.4: Open Submanifolds Are the Regular Submanifolds of Codimension 0]]
 - [[§37 Regular Submanifolds#^prop-37-8|Proposition §37.8: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
 - [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
+- [[§38 Fibrations#^prop-38-3|Proposition §38.3: The Möbius Band Is a Fibration]]
 - [[§47 The Tangent Bundle#^cor-47-3|Corollary §47.3: The Tangent Bundle Is a Fibration]]
 
 ## Connections

@@ -9369,6 +9369,28 @@ The diagram \emph{commutes}. A student asked what that means; Uribe: ``whenever 
 
 Uribe's cartoon, and why it matters: ``these cartoons are incredibly important.'' On the left, the global product $B \times F$, with each fibre $\{b\} \times F$ standing over its point. On the right, a total space that need not be a product: its fibres may twist as they travel over $B$. But over each $U_\alpha$ the part $\pi^{-1}(U_\alpha)$ is identified by $\phi_\alpha$ with the straight product $U_\alpha \times F$, and the identification respects the base points, which is the commuting diagram.
 
+\begin{defbox}[Trivial Fibration]\deflabel{def:trivial-fibration}
+A fibration $\pi : M \to B$ with fibre $F$ (Definition~\ref{def:fibration}) is \textbf{trivial} if it has a local trivialization over all of $B$: a diffeomorphism $\phi : M \to B \times F$ with $\mathrm{pr}_1 \circ \phi = \pi$.
+\end{defbox}
+
+\begin{exbox}[Product Fibrations]\exlabel{ex:product-fibration}
+\textit{(Not from lecture.)} For smooth manifolds $B$ and $F$, the projection $\mathrm{pr}_1 : B \times F \to B$, $\mathrm{pr}_1(b, y) = b$, is a trivial fibration with fibre $F$, with one open set $U = B$ and one local trivialization $\phi = \mathrm{id}_{B \times F}$. Every trivial fibration is this one up to the diffeomorphism $\phi$: if $\phi : M \to B \times F$ is a global trivialization of $\pi$, then $\pi = \mathrm{pr}_1 \circ \phi$.
+\end{exbox}
+
+\begin{proof}
+Check Definition~\ref{def:fibration} with $M = B \times F$ and $\pi = \mathrm{pr}_1$. The map $\mathrm{pr}_1$ is smooth (Proposition~\ref{prop:product-maps}). The single set $U = B$ covers $B$, and $\mathrm{pr}_1^{-1}(B) = B \times F$. The identity $\mathrm{id}_{B \times F}$ is a diffeomorphism $\mathrm{pr}_1^{-1}(B) \to B \times F$, and $\mathrm{pr}_1 \circ \mathrm{id}_{B \times F} = \mathrm{pr}_1 = \pi|_{\pi^{-1}(B)}$. So $\mathrm{pr}_1$ is a fibration with fibre $F$, trivial by Definition~\ref{def:trivial-fibration}. The last sentence is the condition $\mathrm{pr}_1 \circ \phi = \pi$ of that definition.
+\end{proof}
+
+\begin{rembox}[Where Explicit Trivializations Come From]\label{rem:canonical-trivializations}
+\textit{(Not from lecture.)} In Definition~\ref{def:fibration} the local trivializations $\phi_\alpha$ are part of the data: a fibration has some, and nothing in the definition says how to find them --- the charts of the base $B$ carry no information about the total space or the fibre. So a fibration is a map that is, over each $U_\alpha$, a product fibration (Example~\ref{ex:product-fibration}), but there is no general formula for $\phi_\alpha$. Explicit trivializations come from extra structure:
+\begin{itemize}
+    \item for the tangent and cotangent bundles (\ref{sec:tangent-bundle}, \ref{sub:cotangent-bundle}), a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ also gives every fibre a basis, $\partial/\partial x^i|_p$ of $T_pM$ and $dx^i|_p$ of $T_p^*M$ (Theorem~\ref{thm:tangent-basis}, Lemma~\ref{lem:df-coords}), and writing a vector or covector in that basis is the trivialization, $v \mapsto (p, v^1, \ldots, v^m)$ (Definition~\ref{def:tb-charts}) and $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$ (Definition~\ref{def:ctb-trivialization});
+    \item for a quotient by a group action, a description of the total space as a quotient gives them, as for the Möbius band (Proposition~\ref{prop:mobius-fibration} below);
+    \item for the Hopf fibration, local sections give them (Proposition~\ref{prop:hopf-section-trivialization}).
+\end{itemize}
+Ehresmann's theorem (Theorem~\ref{thm:ehresmann}) produces trivializations for proper submersions, but not by a formula.
+\end{rembox}
+
 \begin{propbox}[Fibres and Fibrations]\thmlabel{prop:fibration-properties}
 Let $\pi : M \to B$ be a fibration with fibre $F$.
 \begin{enumerate}
@@ -9501,7 +9523,7 @@ The Möbius band fibres over its core circle, with an interval as fibre: ``no ma
 \leeref{Example 10.3}
 \end{exbox}
 
-\textit{Status.} In lecture this was a picture, not a proof: the claims that $\pi$ is a fibration with fibre $(-1, 1)$, and that $E$ is not globally the product $S^1 \times (-1, 1)$, are stated, not proved, here. Over any arc of the circle shorter than the whole, the twist can be undone, which is the local product structure; the obstruction is global, and it is visible in the picture: the band has a single boundary curve, while the product $S^1 \times (-1, 1)$ closed up would have two. Lee's Möbius bundle takes the fibre $\mathbb{R}$ in place of $(-1, 1)$.
+\textit{Status.} In lecture this was a picture, not a proof: the claim that $\pi$ is a fibration with fibre $(-1, 1)$ is proved, with explicit local trivializations, in Proposition~\ref{prop:mobius-fibration} below; the claim that $E$ is not globally the product $S^1 \times (-1, 1)$ is stated, not proved, here. Over any arc of the circle shorter than the whole, the twist can be undone, which is the local product structure; the obstruction is global, and it is visible in the picture: the band has a single boundary curve, while the product $S^1 \times (-1, 1)$ closed up would have two. Lee's Möbius bundle takes the fibre $\mathbb{R}$ in place of $(-1, 1)$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.9]
@@ -9560,6 +9582,51 @@ The Möbius band fibres over its core circle, with an interval as fibre: ``no ma
 \end{center}
 
 Left: the strip $[0, 1] \times (-1, 1)$, ruled by its fibres, with the core circle in orange; glue the two ends with a half-twist, matching the arrows. Right: the band itself. Each grey segment is a fibre, lying over one point of the orange core circle, and the boundary is a single curve.
+
+\begin{propbox}[The Möbius Band Is a Fibration]\thmlabel{prop:mobius-fibration}
+Let $E = \big(\mathbb{R} \times (-1, 1)\big)/{\sim}$ and $\pi[s, t] = [s]$ be as in Example~\ref{ex:mobius}, let $q : \mathbb{R} \times (-1, 1) \to E$ be the quotient map, and identify $\mathbb{R}/\mathbb{Z}$ with $S^1$ by $h[s] = (\cos 2\pi s, \sin 2\pi s)$. For $a \in \{0, \tfrac12\}$ put $I_a = (a, a + 1)$, $U_a = \{[s] : s \in I_a\} \subseteq \mathbb{R}/\mathbb{Z}$ and $W_a = q\big(I_a \times (-1, 1)\big) \subseteq E$.
+\begin{enumerate}
+    \item $E$ is a topological $2$-manifold, and the two maps $\psi_a = \big(q|_{I_a \times (-1,1)}\big)^{-1} : W_a \to I_a \times (-1, 1)$ form a smooth atlas, with transition
+    \[
+    \psi_{1/2} \circ \psi_0^{-1}(s, t) = \begin{cases} (s, t), & \tfrac12 < s < 1, \\ (s + 1, -t), & 0 < s < \tfrac12. \end{cases}
+    \]
+    \item With this smooth structure $\pi$ is smooth, $\pi^{-1}(U_a) = W_a$, and
+    \[
+    \phi_a : \pi^{-1}(U_a) \to U_a \times (-1, 1), \qquad \phi_a[s, t] = \big([s], t\big) \quad (s \in I_a),
+    \]
+    are local trivializations. So $\pi$ is a fibration with fibre $(-1, 1)$.
+    \item On $U_0 \cap U_{1/2}$ the two trivializations differ by a sign on one arc:
+    \[
+    \phi_{1/2} \circ \phi_0^{-1}\big([s], t\big) = \begin{cases} \big([s], t\big), & \tfrac12 < s < 1, \\ \big([s], -t\big), & 0 < s < \tfrac12. \end{cases}
+    \]
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Write $g_n(s, t) = \big(s + n, (-1)^n t\big)$ for $n \in \mathbb{Z}$, so that $(s, t) \sim (s', t')$ exactly when $(s', t') = g_n(s, t)$ for some $n$. Each $g_n$ is a homeomorphism of $\mathbb{R} \times (-1, 1)$, with inverse $g_{-n}$, since $g_n \circ g_m = g_{n+m}$ and $g_0 = \mathrm{id}$.
+
+\emph{$q$ is open.} For $O$ open in $\mathbb{R} \times (-1, 1)$, the saturation $q^{-1}(q(O)) = \bigcup_{n \in \mathbb{Z}} g_n(O)$ is a union of open sets, so $q(O)$ is open in the quotient topology (Definition~\ref{def:quotient-topology}).
+
+\emph{$q$ restricted to $I_a \times (-1, 1)$.} It is injective: if $q(s, t) = q(s', t')$ with $s, s' \in I_a$, then $(s', t') = g_n(s, t)$, so $s' - s = n$ is an integer with $|s' - s| < 1$, hence $n = 0$ and $(s', t') = (s, t)$. It is continuous, as a restriction of $q$, and open, since an open subset of $I_a \times (-1, 1)$ is open in $\mathbb{R} \times (-1, 1)$ and $q$ is open. So it is a homeomorphism onto the open set $W_a$, and $\psi_a$ is a homeomorphism of $W_a$ onto the open subset $I_a \times (-1, 1)$ of $\mathbb{R}^2$.
+
+\emph{(1) $E$ is a topological $2$-manifold.} The sets $W_0, W_{1/2}$ cover $E$: every $s \in \mathbb{R}$ has $s - n \in (0, 1)$ for some $n \in \mathbb{Z}$ unless $s$ is an integer, and then $s - n = 1 \in I_{1/2}$ for $n = s - 1$; and $q(s, t) = q\big(g_{-n}(s, t)\big)$. \emph{Hausdorff:} let $x \ne y$ in $E$. If both lie in one $W_a$, separate them there, $W_a$ being homeomorphic to a subset of $\mathbb{R}^2$ and open in $E$. Otherwise one lies in $W_0 \setminus W_{1/2} = q\big(\{\tfrac12\} \times (-1, 1)\big)$ and the other in $W_{1/2} \setminus W_0 = q\big(\{1\} \times (-1, 1)\big)$; then $q\big((\tfrac14, \tfrac34) \times (-1, 1)\big)$ and $q\big((\tfrac34, \tfrac54) \times (-1, 1)\big)$ are open neighbourhoods of them, disjoint because two of their points with first coordinates $s \in (\tfrac14, \tfrac34)$, $s' \in (\tfrac34, \tfrac54)$ have $0 < s' - s < 1$, not an integer. \emph{Second countable:} each $W_a$ has a countable basis of sets open in $W_a$, hence in $E$, and the union of the two bases is a countable basis of $E$. With the charts $\psi_a$, $E$ is a topological $2$-manifold (Definition~\ref{def:manifold}).
+
+\emph{(1) The transition.} $W_0 \cap W_{1/2} = q\big(((0, \tfrac12) \cup (\tfrac12, 1)) \times (-1, 1)\big)$. Let $(s, t) \in \psi_0(W_0 \cap W_{1/2})$. If $\tfrac12 < s < 1$, then $s \in I_{1/2}$ and $\psi_{1/2}(q(s, t)) = (s, t)$. If $0 < s < \tfrac12$, then $q(s, t) = q\big(g_1(s, t)\big) = q(s + 1, -t)$ with $s + 1 \in I_{1/2}$, so $\psi_{1/2}(q(s, t)) = (s + 1, -t)$. Both branches are smooth, and so is the inverse, $(s, t) \mapsto (s, t)$ or $(s - 1, -t)$. So the two charts are compatible (Definition~\ref{def:compatible}) and form a smooth atlas (Theorem~\ref{thm:maximal-atlas}).
+
+\emph{The base.} $h$ is well defined and bijective because $(\cos 2\pi s, \sin 2\pi s)$ depends exactly on $s$ modulo $1$; $\mathbb{R}/\mathbb{Z}$ carries the topology and smooth structure of $S^1$ transported along $h$ (Proposition~\ref{prop:transport-structure}). For $s \in I_0 = (0, 1)$ the angle $2\pi s$ lies in $(0, 2\pi)$, and for $s \in I_{1/2}$ in $(\pi, 3\pi)$; so the maps $\chi_a : U_a \to I_a$, $\chi_a[s] = s$ ($s \in I_a$), are $\chi_0 = \tfrac{1}{2\pi}\,\varphi_a \circ h$ and $\chi_{1/2} = \tfrac{1}{2\pi}\,\varphi_b \circ h$, with $\varphi_a, \varphi_b$ the angle charts of Example~\ref{ex:circle-angle}. Rescaling by the diffeomorphism $\theta \mapsto \theta/2\pi$ of $\mathbb{R}$ keeps a chart in the smooth structure (as in the proof of Proposition~\ref{prop:adapted-flex}), so $\chi_0, \chi_{1/2}$ are smooth charts of $\mathbb{R}/\mathbb{Z}$ with domains $U_0, U_{1/2}$.
+
+\emph{(2) $\pi$ is smooth and $\pi^{-1}(U_a) = W_a$.} $\pi$ is well defined, since $\pi[g_n(s, t)] = [s + n] = [s]$. If $[s] \in U_a$ then $s - n \in I_a$ for some $n$ and $q(s, t) = q(g_{-n}(s, t)) \in W_a$; conversely $\pi(W_a) \subseteq U_a$. So $\pi^{-1}(U_a) = W_a$, and in the charts $\psi_a$ and $\chi_a$,
+\[
+\chi_a \circ \pi \circ \psi_a^{-1}(s, t) = \chi_a[s] = s \qquad \big((s, t) \in I_a \times (-1, 1)\big),
+\]
+a smooth map. The $W_a$ cover $E$, so $\pi$ is smooth (Definition~\ref{def:smooth-map}, Proposition~\ref{prop:smooth-map-charts}).
+
+\emph{(2) The trivializations.} $\phi_a = (\chi_a^{-1} \times \mathrm{id}) \circ \psi_a$, since $\psi_a[s, t] = (s, t)$ and $\chi_a^{-1}(s) = [s]$ for $s \in I_a$. Here $\psi_a : W_a \to I_a \times (-1, 1)$ is a diffeomorphism, a chart of the open submanifold $W_a$ (Proposition~\ref{prop:chart-diffeo}), and $\chi_a^{-1} \times \mathrm{id} : I_a \times (-1, 1) \to U_a \times (-1, 1)$ is a diffeomorphism, with inverse $\chi_a \times \mathrm{id}$, both having the identity as coordinate representation in the product chart $(U_a \times (-1, 1), \chi_a \times \mathrm{id})$. So $\phi_a$ is a diffeomorphism, and $\mathrm{pr}_1 \circ \phi_a[s, t] = [s] = \pi[s, t]$. With the open cover $\{U_0, U_{1/2}\}$ of $\mathbb{R}/\mathbb{Z}$, Definition~\ref{def:fibration} holds with fibre $(-1, 1)$.
+
+\emph{(3)} Let $[s] \in U_0 \cap U_{1/2}$ with $s \in I_0$. Then $\phi_0^{-1}([s], t) = q(s, t)$, and by the transition in (1), $q(s, t) = q(s, t)$ with $s \in I_{1/2}$ if $\tfrac12 < s < 1$, and $q(s, t) = q(s + 1, -t)$ with $s + 1 \in I_{1/2}$ if $0 < s < \tfrac12$. Applying $\phi_{1/2}$ gives $([s], t)$ in the first case and $([s + 1], -t) = ([s], -t)$ in the second.
+\end{proof}
+
+The sign in (3) is the half-twist: going once around the circle, the two trivializations agree on one arc and differ by $t \mapsto -t$ on the other. Over either arc alone the band is a product; the sign is what a global product would have to remove.
 
 % ============================================================
 % Lecture 13 (Wed Sep 30, 2026)

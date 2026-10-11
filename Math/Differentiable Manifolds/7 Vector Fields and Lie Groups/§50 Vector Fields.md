@@ -26,7 +26,7 @@ tags: [differentiable-manifolds, math591]
 > \mathbf{X}(p) \in T_pM \qquad \text{for every } p \in M .
 > $$
 >
-> Equivalently, $\pi \circ \mathbf{X} = \mathrm{id}_M$ for the projection $\pi : TM \to M$: a vector field is a section of the tangent bundle ([[§38 Fibrations#^def-38-2|Definition §38.2]]).
+> Equivalently, $\pi \circ \mathbf{X} = \mathrm{id}_M$ for the projection $\pi : TM \to M$: a vector field is a section of the tangent bundle ([[§38 Fibrations#^def-38-3|Definition §38.3]]).
 >
 > *Lee: Ch. 8, Vector Fields*
 
@@ -452,7 +452,7 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 **Transcription note.** Page 43 of the handwritten notes asks “is $\mathbf{X}_p$ $C^\infty$?”; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
 
 > [!theorem] Lemma §50.8: A Smoothness Criterion for Vector Fields
-> Let $\mathbf{X}$ be a [[§38 Fibrations#^def-38-2|section]] of $TM$, not assumed smooth, and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
+> Let $\mathbf{X}$ be a [[§38 Fibrations#^def-38-3|section]] of $TM$, not assumed smooth, and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
 >
 > *Lee: Proposition 8.14*
 

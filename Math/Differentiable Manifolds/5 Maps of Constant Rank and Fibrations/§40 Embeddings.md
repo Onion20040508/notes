@@ -150,7 +150,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ## Proper Maps
 
-*Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem ([[§38 Fibrations#^thm-38-3|Theorem §38.3]]).*
+*Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem ([[§38 Fibrations#^thm-38-4|Theorem §38.4]]).*
 
 > [!definition] Definition §40.2: Proper Map
 > A continuous map $F : X \to Y$ is **proper** if $F^{-1}(K)$ is compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]) for every compact $K \subseteq Y$.
@@ -161,7 +161,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 > [!remark]- Connections
 > - The same definition, given earlier for proper actions: [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]].
-> - The properness hypothesis of [[§38 Fibrations#^thm-38-3|Ehresmann's theorem, §38.3]].
+> - The properness hypothesis of [[§38 Fibrations#^thm-38-4|Ehresmann's theorem, §38.4]].
 
 > [!theorem] Proposition §40.4: Proper Maps into Manifolds Are Closed
 > Let $F : M \to N$ be a continuous proper map ([[§40 Embeddings#^def-40-2|Def. §40.2]]), $N$ a topological manifold ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]). Then $F$ is closed ([[§13 Quotient Topology#^def-13-4|590 Def. §13.4]]): $F(C)$ is closed in $N$ for every closed $C \subseteq M$.

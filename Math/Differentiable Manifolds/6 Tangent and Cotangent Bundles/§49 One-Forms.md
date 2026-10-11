@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions — “which will be the beginning of a chain of operators when we discuss the de Rham cohomology.”*
 
-A one-form is a section of the cotangent bundle ([[§38 Fibrations#^def-38-2|Definition §38.2]]): it picks a covector in every fibre $T_p^{\ast}M$. Every vector bundle has sections, the zero section at least — unlike a general fibration: the Hopf fibration has none ([[§42 Projective Spaces and the Hopf Fibration#^rem-42-1|Remark in §42]]).
+A one-form is a section of the cotangent bundle ([[§38 Fibrations#^def-38-3|Definition §38.3]]): it picks a covector in every fibre $T_p^{\ast}M$. Every vector bundle has sections, the zero section at least — unlike a general fibration: the Hopf fibration has none ([[§42 Projective Spaces and the Hopf Fibration#^rem-42-1|Remark in §42]]).
 
 ## One-Forms and Their Coordinates
 
@@ -28,7 +28,7 @@ A one-form is a section of the cotangent bundle ([[§38 Fibrations#^def-38-2|Def
 > \theta_p \in T_p^*M \qquad \text{for every } p \in M .
 > $$
 >
-> Equivalently, $\pi \circ \theta = \mathrm{id}_M$ for the projection $\pi : T^{\ast}M \to M$: a one-form is a section of the cotangent bundle ([[§38 Fibrations#^def-38-2|Definition §38.2]]).
+> Equivalently, $\pi \circ \theta = \mathrm{id}_M$ for the projection $\pi : T^{\ast}M \to M$: a one-form is a section of the cotangent bundle ([[§38 Fibrations#^def-38-3|Definition §38.3]]).
 >
 > *Lee: Ch. 11, Covector Fields*
 

@@ -200,7 +200,7 @@ tags: [differentiable-manifolds, math591]
 > \frac{t^{1/3} - 0}{t - 0} = t^{-2/3} \longrightarrow +\infty \qquad (t \to 0).
 > $$
 >
->     So this transition is not smooth, not a diffeomorphism, and the two charts are not compatible.
+> So this transition is not smooth, not a diffeomorphism, and the two charts are not compatible.
 >
 > So $(U_1,\varphi_1)$ is compatible with $(U_2,\varphi_2)$, and $(U_2,\varphi_2)$ with $(U_3,\varphi_3)$, but $(U_1,\varphi_1)$ is not compatible with $(U_3,\varphi_3)$.
 

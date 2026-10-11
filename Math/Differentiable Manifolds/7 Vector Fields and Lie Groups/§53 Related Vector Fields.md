@@ -35,7 +35,7 @@ The exception is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorph
 ^rem-53-2
 
 > [!definition] Definition §53.1: Pushforward of a Vector Field by a Diffeomorphism
-> Let $F : M \to N$ be a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] and $\mathbf{X} \in \mathfrak{X}(M)$. The **pushforward** of $\mathbf{X}$ is the [[§38 Fibrations#^def-38-2|section]] $F_{\ast}\mathbf{X}$ of $TN$ given by
+> Let $F : M \to N$ be a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] and $\mathbf{X} \in \mathfrak{X}(M)$. The **pushforward** of $\mathbf{X}$ is the [[§38 Fibrations#^def-38-3|section]] $F_{\ast}\mathbf{X}$ of $TN$ given by
 >
 > $$
 > (F_{\ast}\mathbf{X})_q = dF_{F^{-1}(q)}\big(\mathbf{X}_{F^{-1}(q)}\big), \qquad q \in N .

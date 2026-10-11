@@ -168,7 +168,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Corollary 8.31 | [[§53 Related Vector Fields#^cor-53-4\|Cor. §53.4]] |
 | Proposition 8.33 | [[§54 Lie Groups and Left-Invariant Vector Fields#^cor-54-4\|Cor. §54.4]] |
 | Theorem 8.37 | [[§54 Lie Groups and Left-Invariant Vector Fields#^thm-54-5\|Thm. §54.5]] |
-| Example 10.3 | [[§38 Fibrations#^ex-38-2\|Ex. §38.2]] |
+| Example 10.3 | [[§38 Fibrations#^ex-38-3\|Ex. §38.3]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |

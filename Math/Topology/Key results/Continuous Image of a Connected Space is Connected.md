@@ -23,7 +23,7 @@ tags: [topology, hub]
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7: Connectedness and Components]]
 - [[§17 Differentiable Structures#^prop-17-4|Proposition §17.4: Chart Domains on the Circle]]
-- [[§38 Fibrations#^ex-38-1|Example §38.1: A Submersion That Is Not a Fibration]]
+- [[§38 Fibrations#^ex-38-2|Example §38.2: A Submersion That Is Not a Fibration]]
 - [[§39 Immersions#^ex-39-1|Example §39.1: An Immersion That Crosses Itself]]
 - [[§44 SU(2) → SO(3)꞉ The Double Cover#^prop-44-1|Proposition §44.1: Conjugation by Unit Quaternions Is Rotation]]
 
