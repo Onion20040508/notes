@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (44), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (66), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (64), [[· CA Mathematical Methods|CA Mathematical Methods]] (35), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (52)
-**Used by:** [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (3)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (44), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (78), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (70), [[· CA Mathematical Methods|CA Mathematical Methods]] (38), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (70)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
@@ -61,11 +61,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.5 Charge Conjugation#^thm-c9-5-4|§C9.5.4]] Transposes and Conjugates of the Chiral Dirac Matrices
 - [[§C9.5 Charge Conjugation#^thm-c9-5-5|§C9.5.5]] The Conjugate of u Is a v
 - [[§C9.5 Charge Conjugation#^thm-c9-5-6|§C9.5.6]] The Conjugate of v Is a u
-- [[§C9.5 Charge Conjugation#^thm-c9-5-7|§C9.5.7]] Charge Conjugation on the Dirac Field
-- [[§C9.5 Charge Conjugation#^thm-c9-5-8|§C9.5.8]] Charge Conjugation through the Dirac Conjugate
-- [[§C9.5 Charge Conjugation#^thm-c9-5-9|§C9.5.9]] Charge Conjugation on ψ† and ψ̄
-- [[§C9.5 Charge Conjugation#^thm-c9-5-10|§C9.5.10]] The Scalar Bilinear Is Charge-Conjugation Invariant
-- [[§C9.5 Charge Conjugation#^thm-c9-5-11|§C9.5.11]] The Vector Current Changes Sign under Charge Conjugation
+- [[§C9.5 Charge Conjugation#^thm-c9-5-7|§C9.5.7]] Charge Conjugation on the Dirac Field in Any Basis
+- [[§C9.5 Charge Conjugation#^thm-c9-5-8|§C9.5.8]] Charge Conjugation on the Dirac Field
+- [[§C9.5 Charge Conjugation#^thm-c9-5-9|§C9.5.9]] Charge Conjugation through the Dirac Conjugate
+- [[§C9.5 Charge Conjugation#^thm-c9-5-10|§C9.5.10]] Charge Conjugation on ψ† and ψ̄
+- [[§C9.5 Charge Conjugation#^thm-c9-5-11|§C9.5.11]] The Scalar Bilinear Is Charge-Conjugation Invariant
+- [[§C9.5 Charge Conjugation#^thm-c9-5-12|§C9.5.12]] The Vector Current Changes Sign under Charge Conjugation
 - [[§C9.6 Physical Spin versus Wave-Function Spin#^thm-c9-6-1|§C9.6.1]] The Spin Operator in Oscillator Form
 - [[§C9.6 Physical Spin versus Wave-Function Spin#^thm-c9-6-2|§C9.6.2]] The Reordering Sign in the Spin Operator
 - [[§C9.6 Physical Spin versus Wave-Function Spin#^thm-c9-6-3|§C9.6.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin

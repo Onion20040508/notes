@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # CB Lie Groups, Lie Algebras and Representations
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (47), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (3), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (52)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (47), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (70)
 
 ## Sections
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3), restatements of REL §B1.2, §B2.2 and QM §B6.1 (CB ordering pass); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
@@ -232,6 +232,8 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-15|§CB.18.15]] Every Tensorial (j₊, j₋) Lies in a Tensor Power of the Vector
 - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-16|§CB.18.16]] The TA's Theorem for the Lorentz Group
 - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-17|§CB.18.17]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
+- [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation
+- [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-21|§CB.18.21]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices
 - [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-6|§CB.19.6]] Structure of Antiunitary Operators
 - [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-7|§CB.19.7]] Wigner's Theorem
 - [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-8|§CB.19.8]] Connected Groups of Symmetries Act by Unitaries
