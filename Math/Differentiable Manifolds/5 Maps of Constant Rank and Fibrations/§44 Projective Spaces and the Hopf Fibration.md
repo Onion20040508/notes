@@ -226,7 +226,7 @@ For the Hopf fibration the converse of [[§38 Fibrations#^prop-38-4|Proposition 
 ^cor-44-2
 
 > [!proof]+ Proof
-> *(Assignment 4, Problem 4; the global statement is the fact of Remark [[§44 Projective Spaces and the Hopf Fibration#^rem-44-1|remark]] above, stated there without proof.)* Four things are claimed: $s_i$ is well defined; it is a local section over $U_i$ (Definition [[§38 Fibrations#^def-38-4|§38.4]]: smooth, with values in $S^{2n+1}$, and $\pi \circ s_i = \mathrm{id}_{U_i}$); $\Psi_{s_i}^{-1}$ is the trivialization of Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]]; and there is no global section for $n \ge 1$.
+> *(Assignment 4, Problem 4; the global statement is the fact of the remark *Sections Need Not Exist* in [[§44 Projective Spaces and the Hopf Fibration|§44]] above, stated there without proof.)* Four things are claimed: $s_i$ is well defined; it is a local section over $U_i$ (Definition [[§38 Fibrations#^def-38-4|§38.4]]: smooth, with values in $S^{2n+1}$, and $\pi \circ s_i = \mathrm{id}_{U_i}$); $\Psi_{s_i}^{-1}$ is the trivialization of Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]]; and there is no global section for $n \ge 1$.
 >
 > *Well defined.* $\hat z$ is independent of the representative $z$: if $z' = \mu z$ with $\mu \neq 0$, then $z'/z'_i = \mu z/(\mu z_i) = z/z_i$.
 >
@@ -254,9 +254,8 @@ For the Hopf fibration the converse of [[§38 Fibrations#^prop-38-4|Proposition 
 >
 > So $\Psi_{s_i}^{-1}(z) = ([z], z_i/|z_i|)$, which is $\phi_i$ of Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]].
 >
-> *No global section.* A global section $s$ is a local section over $U = \mathbb{CP}^n$, and then Proposition [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]] makes $\Psi_s : \mathbb{CP}^n \times S^1 \to \pi^{-1}(\mathbb{CP}^n) = S^{2n+1}$ a diffeomorphism: $\pi$ would be globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$. That this is impossible for $n \ge 1$ is the fact of Remark [[§44 Projective Spaces and the Hopf Fibration#^rem-44-1|remark]], which states directly that $\pi$ has no continuous section, and a smooth section is in particular continuous.
+> *No global section.* A global section $s$ is a local section over $U = \mathbb{CP}^n$, and then Proposition [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]] makes $\Psi_s : \mathbb{CP}^n \times S^1 \to \pi^{-1}(\mathbb{CP}^n) = S^{2n+1}$ a diffeomorphism: $\pi$ would be globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$. That this is impossible for $n \ge 1$ is the fact of the remark *Sections Need Not Exist* in [[§44 Projective Spaces and the Hopf Fibration|§44]], which states directly that $\pi$ has no continuous section, and a smooth section is in particular continuous.
 
 ^pf-44-2
 
-*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§38 Fibrations#^def-38-4|Def. §38.4]], [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|Ex. §44.3]], [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]], [[§44 Projective Spaces and the Hopf Fibration#^rem-44-1|Remark: Sections Need Not Exist]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]]
-
+*Uses:* [[§38 Fibrations#^def-38-4|Def. §38.4]], [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|Ex. §44.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]]

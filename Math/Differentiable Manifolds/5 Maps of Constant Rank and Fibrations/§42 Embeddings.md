@@ -23,11 +23,11 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^def-42-1
 
 > [!remark]- Connections
-> - Announced at the end of Lecture 13: [[§41 Immersions#^rem-41-1|Remark: Embeddings — Next Time (§40)]]; the two ways an immersion's image can fail to be a submanifold: [[§41 Immersions#^ex-41-1|Ex. §41.1]], [[§41 Immersions#^ex-41-2|Ex. §41.2]].
+> - Announced at the end of Lecture 13: [[§41 Immersions#^rem-41-1|Remark: Embeddings — Next Time (§41)]]; the two ways an immersion's image can fail to be a submanifold: [[§41 Immersions#^ex-41-1|Ex. §41.1]], [[§41 Immersions#^ex-41-2|Ex. §41.2]].
 > - Homeomorphisms in 590: [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].
 
 ![[m591-33-1.svg]]
-*An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§41 Immersions#Images of Immersions|§40]]) is an injective immersion for which the top arrow is not a homeomorphism.*
+*An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§41 Immersions#Images of Immersions|§41]]) is an injective immersion for which the top arrow is not a homeomorphism.*
 
 The standard non-example is the *irrational line on the torus*: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$. It is an injective immersion ([[§41 Immersions#^def-41-1|Def. §41.1]]) whose image is dense in $T^2$, and it is not an embedding ([[§42 Embeddings#^prop-42-12|Proposition §42.12]] below, from Assignment 4, Problem 5; Lee, Example 4.20). In lecture its image was also said not to be a regular submanifold of $T^2$ ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]).
 
@@ -78,11 +78,11 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > F(M) \cap (V' \cap W) = \big(F(M) \cap W\big) \cap V' = F(U) \cap V' = F(U) = F(U) \cap W = \{\, x \in V' : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\} \cap W .
 > $$
 >
-> The set $V' \cap W$ is open and contains $q \in F(U)$, and $(V' \cap W, \psi|_{V' \cap W})$ is a smooth chart (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)). So $(V' \cap W, \psi)$ is an adapted chart at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $F(M)$ is a submanifold of codimension $n - m$.
+> The set $V' \cap W$ is open and contains $q \in F(U)$, and $(V' \cap W, \psi|_{V' \cap W})$ is a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), $V' \cap W$ being an open subset of $V$). So $(V' \cap W, \psi)$ is an adapted chart at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $F(M)$ is a submanifold of codimension $n - m$.
 
 ^pf-42-1
 
-*Uses:* [[§42 Embeddings#^def-42-1|Def. §42.1]], [[§41 Immersions#^thm-41-1|§41.1]], [[§41 Immersions#^cor-41-2|§41.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§10 Continuous Functions#^prop-10-2|590 §10.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
+*Uses:* [[§41 Immersions#^cor-41-2|§41.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§42 Embeddings#^def-42-1|Def. §42.1]], [[§41 Immersions#^thm-41-1|§41.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]]
 
 ![[m591-33-3.svg]]
 *The key step. $V$ may contain other parts of $F(M)$ (black) besides $F(U)$ (orange). Because $F(U)$ is open in $F(M)$, it is $W \cap F(M)$ for an open $W$ (shaded), and $W$ cuts the other parts away; $F(M)$ continues beyond $F(U)$ only by leaving $W$. For the irrational line no such $W$ exists, which is exactly the failure of openness.*
@@ -120,13 +120,13 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > F(M) \cap (V' \cap W) = \big(F(M) \cap W\big) \cap V' = F(U) \cap V' = F(U) = F(U) \cap W = \{\, x \in V' \cap W : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\},
 > $$
 >
-> the last equality by $(\ast)$ intersected with $W$. So the smooth chart $(V' \cap W, \psi|_{V' \cap W})$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)), whose domain contains $q$, is adapted at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = n - m$), and $F(M)$ is a regular submanifold of codimension $n - m$.
+> the last equality by $(\ast)$ intersected with $W$. So the smooth chart $(V' \cap W, \psi|_{V' \cap W})$ (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), $V' \cap W$ being an open subset of $V$), whose domain contains $q$, is adapted at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = n - m$), and $F(M)$ is a regular submanifold of codimension $n - m$.
 >
 > For example, $t \mapsto (\cos t, \sin t)$ is an immersion of $\mathbb{R}$, open onto $S^1$ and far from injective — every point of $S^1$ has infinitely many preimages — and its image $S^1$ is a submanifold of $\mathbb{R}^2$. (It is an immersion into $\mathbb{R}^2$ because its velocity $(-\sin t, \cos t)$ never vanishes, as in Example [[§41 Immersions#^ex-41-1|§41.1]]. It is open onto $S^1$ because it is a local diffeomorphism onto $S^1$ (Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]]): each $t$ has an open neighbourhood $U_t$ mapped homeomorphically onto an open subset of $S^1$, so for $O \subseteq \mathbb{R}$ open the image of $O \cap U_t$ is open in that subset, hence in $S^1$, and the image of $O$ is the union of these open sets.) The figure-eight is not open onto its image, consistent with its image not being a submanifold. (For $\beta(t) = (\sin 2t, \sin t)$ on $(-\pi, \pi)$, the set $\beta\big((-\pi/2, \pi/2)\big)$ is not open in the image: every open set of $\mathbb{R}^2$ around $\beta(0) = (0, 0)$ contains $\beta(t)$ for $t$ near $\pm\pi$, because $\beta(t) \to (\sin(\pm 2\pi), \sin(\pm\pi)) = (0, 0)$ as $t \to \pm\pi$, and these points are not in $\beta\big((-\pi/2, \pi/2)\big)$ since $\beta$ is injective.)
 
 ^pf-42-2
 
-*Uses:* [[§42 Embeddings#^pf-42-1|proof of §42.1]], [[§41 Immersions#^thm-41-1|§41.1]], [[§41 Immersions#^cor-41-2|§41.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]], [[§36 Submersions#^cor-36-9|§36.9]], [[§41 Immersions#^ex-41-2|Ex. §41.2]], [[§42 Embeddings#^thm-42-1|§42.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§41 Immersions#^ex-41-1|Ex. §41.1]]
+*Uses:* [[§42 Embeddings#^thm-42-1|§42.1]], [[§41 Immersions#^thm-41-1|§41.1]], [[§41 Immersions#^cor-41-2|§41.2]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§41 Immersions#^ex-41-1|Ex. §41.1]], [[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]]
 
 > [!theorem] Corollary §42.3: An Embedding Is a Diffeomorphism onto Its Image
 > If $F : M \to N$ is an embedding ([[§42 Embeddings#^def-42-1|Def. §42.1]]), then $F : M \to F(M)$ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]), $F(M)$ carrying its induced smooth structure as a regular submanifold ([[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
@@ -295,7 +295,7 @@ This is the precise form of Uribe's “no matter how you shrink $V$, you won't b
 > 1. $s$ is an embedding (Definition [[§42 Embeddings#^def-42-1|§42.1]]);
 > 2. its image $s(M) = \{ y \in E : s(\pi(y)) = y \}$ is closed in $E$.
 >
-> So $s(M)$ is a closed regular submanifold of $E$ of dimension $\dim M$ (Theorem [[§42 Embeddings#^thm-42-1|§42.1]]), and $s$ is proper (Proposition [[§42 Embeddings#^prop-42-9|§42.9]]). In particular the image of every section of a fibration is one — the zero sections of $TM$ and $T^{\ast}M$, and the image $\{(p, df_p)\}$ of the one-form $df$.
+> So $s(M)$ is a closed regular submanifold of $E$ of dimension $\dim M$ (Theorem [[§42 Embeddings#^thm-42-1|§42.1]]), and $s$ is proper (Proposition [[§42 Embeddings#^prop-42-9|§42.9]]). In particular the image of every section of a fibration (Definition [[§38 Fibrations#^def-38-3|§38.3]]) is one.
 
 ^prop-42-10
 
@@ -314,11 +314,16 @@ This is the precise form of Uribe's “no matter how you shrink $V$, you won't b
 >
 > *(2) The image.* If $y = s(p)$, then $s(\pi(y)) = s(p) = y$; conversely, if $s(\pi(y)) = y$, then $y \in s(M)$. So $s(M) = \{ y : s(\pi(y)) = y \}$. Its complement is open: let $s(\pi(y)) \ne y$. $E$ is Hausdorff (Definition [[§2 Topological Manifolds#^def-2-2|§2.2]]), so there are disjoint open sets $O \ni s(\pi(y))$ and $O' \ni y$. The set $(s \circ \pi)^{-1}(O) \cap O'$ is open, as $s \circ \pi$ is continuous, and contains $y$; for $y'$ in it, $s(\pi(y')) \in O$ and $y' \in O'$, so $s(\pi(y')) \ne y'$. So every point outside $s(M)$ has a neighbourhood outside $s(M)$, and $s(M)$ is closed.
 >
-> The last two sentences: $s(M)$ is a regular submanifold of codimension $\dim E - \dim M$ by Theorem [[§42 Embeddings#^thm-42-1|§42.1]], closed by (2), so $s$ is proper by Proposition [[§42 Embeddings#^prop-42-9|§42.9]]. For a fibration, a section is such an $s$ (Definition [[§38 Fibrations#^def-38-3|§38.3]]); the zero section of $TM$ or $T^{\ast}M$ is one, and so is $p \mapsto (p, df_p)$, smooth by Proposition [[§51 One-Forms#^prop-51-2|§51.2]].
+> The last two sentences: $s(M)$ is a regular submanifold of codimension $\dim E - \dim M$ by Theorem [[§42 Embeddings#^thm-42-1|§42.1]], closed by (2), so $s$ is proper by Proposition [[§42 Embeddings#^prop-42-9|§42.9]]. For a fibration, a section is such an $s$ (Definition [[§38 Fibrations#^def-38-3|§38.3]]).
 
 ^pf-42-10
 
-*Uses:* [[§38 Fibrations#^prop-38-5|§38.5]], [[§36 Submersions#^def-36-2|Def. §36.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§42 Embeddings#^thm-42-1|§42.1]], [[§42 Embeddings#^prop-42-9|§42.9]], [[§38 Fibrations#^def-38-3|Def. §38.3]], [[§51 One-Forms#^prop-51-2|§51.2]]
+*Uses:* [[§38 Fibrations#^prop-38-5|§38.5]], [[§36 Submersions#^def-36-2|Def. §36.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§42 Embeddings#^thm-42-1|§42.1]], [[§42 Embeddings#^prop-42-9|§42.9]], [[§38 Fibrations#^def-38-3|Def. §38.3]]
+
+> [!remark] Remark: Sections of the Tangent and Cotangent Bundles
+> The main examples come later: the zero sections of $TM$ and $T^{\ast}M$ (Definitions [[§49 The Tangent Bundle#^def-49-3|§49.3]] and [[§50 The Cotangent Bundle#^def-50-3|§50.3]], later, in [[§49 The Tangent Bundle|§49]] and [[§50 The Cotangent Bundle|§50]]), and the section $p \mapsto (p, df_p)$ of $T^{\ast}M$ given by a smooth function $f$, smooth by Proposition [[§51 One-Forms#^prop-51-2|§51.2]] (later, in [[§51 One-Forms|§51]]). Each is such an $s$, so by Proposition [[§42 Embeddings#^prop-42-10|§42.10]] its image — the zero section, resp. the image $\{(p, df_p)\}$ of the one-form $df$ — is a closed regular submanifold of dimension $\dim M$.
+
+^rem-42-2
 
 | Map | Image | Example separating it from the row above |
 |---|---|---|

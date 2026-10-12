@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 41.1", "embedded submanifold", "Lee Proposition 5.2"]
+aliases: ["MATH 591 42.1", "embedded submanifold", "Lee Proposition 5.2"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§42 Embeddings#^thm-42-1]]
@@ -12,16 +12,13 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
-- [[§2 Topological Manifolds#^lem-2-10|Lemma §2.10: Restricting and Recomposing Charts]]
 - [[§3 Subspaces and Products#^def-3-1|Definition §3.1: Subspace Topology]]
+- [[§17 Differentiable Structures#^lem-17-6|Lemma §17.6: Restricting and Recomposing Smooth Charts]]
 - [[§37 Regular Submanifolds#^def-37-2|Definition §37.2: Regular Submanifold]]
 - [[§37 Regular Submanifolds#^def-37-3|Definition §37.3: Adapted Chart]]
 - [[§41 Immersions#^thm-41-1|Theorem §41.1: Local Normal Form for Immersions]]
 - [[§41 Immersions#^cor-41-2|Corollary §41.2: The Local Image of an Immersion]]
 - [[§42 Embeddings#^def-42-1|Definition §42.1: Embedding]]
-
-## Its proof uses (other subjects)
-- [[§10 Continuous Functions#^prop-10-2|590 §10.2: Equivalent Definition of Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
 - [[§42 Embeddings#^prop-42-2|Proposition §42.2: Immersions That Are Open onto Their Images]]

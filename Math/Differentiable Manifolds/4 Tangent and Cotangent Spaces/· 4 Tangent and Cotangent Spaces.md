@@ -7,9 +7,9 @@ tags: [chapter, differentiable-manifolds]
 # 4 Tangent and Cotangent Spaces
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (41), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (8), [[· 3 Smooth Structures|3 Smooth Structures]] (86)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (123), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (73), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (58)
-**Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (6), [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (11)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (39), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (8), [[· 3 Smooth Structures|3 Smooth Structures]] (101)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (144), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (78), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (51)
+**Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (4), [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (10)
 
 ## Sections
 - [[§25 The Geometric Tangent Space]]
@@ -27,16 +27,16 @@ tags: [chapter, differentiable-manifolds]
 - [[Geometric Tangent Space Is the Kernel of the Jacobian]] (§25.3)
 - [[Transverse Preimage Theorem]] (§26.1)
 - [[Chain Rule for Differentials]] (§28.6)
-- [[Hadamard's Lemma]] (§29.2)
-- [[Basis Theorem for Tangent Spaces]] (§29.5)
-- [[Ambient and Abstract Tangent Spaces Agree]] (§29.6)
+- [[Hadamard's Lemma]] (§29.3)
+- [[Basis Theorem for Tangent Spaces]] (§29.6)
+- [[Ambient and Abstract Tangent Spaces Agree]] (§29.7)
 - [[Matrix of the Differential]] (§30.2)
 - [[Every Tangent Vector Is a Velocity]] (§31.2)
 - [[Cotangent Space from Germs]] (§34.4)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 139 later results
-- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 139 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 139 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 131 later results
+- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 152 later results
+- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 152 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 152 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 144 later results

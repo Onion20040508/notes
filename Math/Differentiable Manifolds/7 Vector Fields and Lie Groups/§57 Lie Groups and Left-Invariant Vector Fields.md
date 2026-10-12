@@ -31,7 +31,7 @@ For a topological group the two maps had to be continuous; “now we ask that th
 ^prop-57-1
 
 > [!proof]+ Proof
-> *(Stated in Lecture 16 — “all the matrix groups that we have seen \ldots are Lie groups”; filled in.)* By Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]], for each group $G$ of the list it has to be shown that multiplication $G \times G \to G$ and inversion $G \to G$ are smooth; they are then continuous, so $G$ is also a topological group (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|§11.1]]).
+> *(Stated in Lecture 16 — “all the matrix groups that we have seen … are Lie groups”; filled in.)* By Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]], for each group $G$ of the list it has to be shown that multiplication $G \times G \to G$ and inversion $G \to G$ are smooth; they are then continuous, so $G$ is also a topological group (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|§11.1]]).
 >
 > *The setting.* Each group $G$ is an open subset or a submanifold of a space of matrices $\operatorname{Mat}$, which is $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ or $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ (real and imaginary parts of the entries) (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]; for $\mathrm{SU}(2)$, Proposition [[§45 The Unit Quaternions and SU(2)#^prop-45-5|§45.5]]). The inclusion $\iota : G \hookrightarrow \operatorname{Mat}$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]]). And a smooth map into $\operatorname{Mat}$ that lands in $G$ is smooth into $G$: by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2) for a submanifold; for an open subset because its chart is the restriction of the linear chart of $\operatorname{Mat}$ (proof of Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]), so the map has the same coordinate representations as a map into $G$ and as a map into $\operatorname{Mat}$.
 >
@@ -132,7 +132,7 @@ Left invariance in one line: “using [left translations], you can push vectors 
 
 *Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-2|Def. §57.2]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|Def. §57.3]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
 
-Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^{\mathrm{geo}}_g G = g \cdot T^{\mathrm{geo}}_I G$ for the classical groups: a left-invariant field moves the tangent space at the identity around the group by left multiplication.
+Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^{\mathrm{geo}}_g G = g \cdot T^{\mathrm{geo}}_I G$ for the classical groups: a left-invariant field moves the tangent space at the identity around the group by left multiplication. Later in this section, $\mathbf{X}^A$ is the left-invariant extension of $A \in T_IG$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]]): by the differential of $L_g$ computed in the proof above, $(L_g)_{\ast I}(A) = gA = \mathbf{X}^A_g$.
 
 > [!definition] Definition §57.4: The Lie Algebra of a Lie Group
 > The **Lie algebra** of a [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Lie group]] $G$ is
@@ -197,49 +197,68 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 
 *Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-3|§57.3]], [[§56 Related Vector Fields#^def-56-2|Def. §56.2]], [[§56 Related Vector Fields#^prop-56-3|§56.3]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|Def. §57.3]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|Def. §57.4]], [[§55 Lie Bracket and Lie Algebra#^cor-55-5|§55.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§53 Vector Fields#^def-53-2|Def. §53.2]], [[§55 Lie Bracket and Lie Algebra#^def-55-2|Def. §55.2]]
 
-“It's a Lie subalgebra of the infinite-dimensional algebra of all vector fields on $G$.” Vector fields can be added and scaled, so $\mathfrak{X}(G)$ is a [[§53 Vector Fields#^def-53-2|vector space]] (“in fact, it's an algebra over the smooth functions, but I want to think of it as a vector space”). “At this point, maybe it's not clear what [$\mathfrak{g}$] is. It could be, I don't know, still infinite-dimensional, or something, or empty.” [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|The theorem]] settles it.
+“It's a Lie subalgebra of the infinite-dimensional algebra of all vector fields on $G$.” Vector fields can be added and scaled, so $\mathfrak{X}(G)$ is a [[§53 Vector Fields#^def-53-2|vector space]] (“in fact, it's an algebra over the smooth functions, but I want to think of it as a vector space”). “At this point, maybe it's not clear what [$\mathfrak{g}$] is. It could be, I don't know, still infinite-dimensional, or something, or empty.” [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|The theorem]] below settles it. Its proof rests on a construction, made in Lecture 17 and finished in Lecture 18, which comes first.
 
-> [!theorem] Theorem §57.7: The Lie Algebra Is the Tangent Space at the Identity
-> Let $G$ be a [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Lie group]] with identity $e$. The evaluation map
+> [!definition] Definition §57.5: Left-Invariant Extension
+> Let $G$ be a Lie group with identity $e$, and $v \in T_eG$. The **left-invariant extension** of $v$ is the map $\mathbf{X}^v : G \to TG$, $g \mapsto \mathbf{X}^v_g$, with
 >
 > $$
-> \mathrm{ev} : \mathfrak{g} \to T_eG, \qquad \mathbf{X} \mapsto \mathbf{X}_e ,
+> \mathbf{X}^v_g = d(L_g)_e(v) \in T_gG, \qquad g \in G :
 > $$
 >
-> is a linear isomorphism. In particular $\dim \mathfrak{g} = \dim G$.
+> the vector $v$ carried from $e$ to $g$ by the differential of the left translation $L_g$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-2|§57.2]]). It is a *rough* vector field (Lee's term), a tangent vector at every point, not yet known to be smooth.
 >
-> *Lee: Theorem 8.37*
+> *Lee: proof of Theorem 8.37*
 
-^thm-57-7
+^def-57-5
+
+“Just as with vector fields” on a vector space (Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]]), there is a unique left translation carrying $e$ to $g$, and $\mathbf{X}^v_g$ is $v$ carried along it.
+
+> [!theorem] Lemma §57.5: The Left-Invariant Extension Is Left-Invariant
+> Let $G$ be a Lie group with identity $e$.
+>
+> 1. For $v \in T_eG$, $\mathbf{X}^v_g \in T_gG$ for every $g \in G$, and $\mathbf{X}^v_e = v$.
+> 2. For $v \in T_eG$, $\mathbf{X}^v$ satisfies the identity of Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]: $d(L_g)_h\big(\mathbf{X}^v_h\big) = \mathbf{X}^v_{gh}$ for all $g, h \in G$.
+> 3. Every $\mathbf{X} \in \mathfrak{g}$ is the left-invariant extension of its value at $e$: $\mathbf{X}_g = d(L_g)_e(\mathbf{X}_e)$ for every $g \in G$, that is, $\mathbf{X} = \mathbf{X}^{\mathbf{X}_e}$.
+>
+> *Lee: proof of Theorem 8.37*
+
+^lem-57-5
 
 > [!proof]+ Proof
-> *(Lecture 17 — “it'll be an incomplete proof \ldots there is one detail that we're not prepared to prove” — completed in Lecture 18. The lecture's steps.)* $\mathrm{ev}$ is linear: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and $a, b \in \mathbb{R}$, $\mathrm{ev}(a\mathbf{X} + b\mathbf{Y}) = (a\mathbf{X} + b\mathbf{Y})_e = a\,\mathbf{X}_e + b\,\mathbf{Y}_e$ by Definition [[§53 Vector Fields#^def-53-2|§53.2]]. It remains to show that $\mathrm{ev}$ is injective and surjective.
+> *(Lecture 17, steps of the proof that $\mathfrak{g}$ is $T_eG$; (2) is filled in.)*
 >
-> *The basic idea.* For $g \in G$, $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_gG$, and for $\mathbf{X} \in \mathfrak{g}$, left-invariance (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]) with $h = e$ reads
+> *(1)* $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_{L_g(e)}G = T_{ge}G = T_gG$, and $\mathbf{X}^v_g = d(L_g)_e(v)$ lies in $T_gG$. And $L_e = \mathrm{id}_G$ (as $eh = h$), so $\mathbf{X}^v_e = (\mathrm{id}_G)_{\ast e}(v) = v$ by Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]].
 >
-> $$
-> d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_g ;
-> $$
->
-> more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. “There's only one choice really.”
->
-> *Injective.* By the basic idea, $\mathbf{X}$ is determined by its value at $e$. So $\mathbf{X}_e = 0$ forces $\mathbf{X}_g = d(L_g)_e(0) = 0$ for all $g$, since $d(L_g)_e$ is linear (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]). So the kernel of the linear map $\mathrm{ev}$ is $\{\mathbf{0}\}$, and $\mathrm{ev}$ is injective.
->
-> *Surjective.* Start with $v \in T_eG$; we want a left-invariant $\mathbf{X}$ with $\mathbf{X}_e = v$. The basic idea says there is no choice: we must define
->
-> $$
-> \mathbf{X}^v_g = d(L_g)_e(v), \qquad g \in G .
-> $$
->
-> “Just as with vector fields” on a vector space (Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]]), there is a unique left translation carrying $e$ to $g$, and $\mathbf{X}^v_g$ is $v$ carried along it. This defines $\mathbf{X}^v$ as a section of $TG$ with $\mathbf{X}^v_e = v$: $\mathbf{X}^v_g$ lies in $T_{L_g(e)}G = T_{ge}G = T_gG$; and $L_e = \mathrm{id}_G$ (as $eh = h$), so $\mathbf{X}^v_e = (\mathrm{id}_G)_{\ast e}(v) = v$ by Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]. *(Filled in.)* It is left-invariant: $L_g \circ L_h = L_{gh}$, since $g(hk) = (gh)k$, and $L_h(e) = h$; so by the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]])
+> *(2)* $L_g \circ L_h = L_{gh}$, since $g(hk) = (gh)k$, and $L_h(e) = h$; so by Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]] and the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]])
 >
 > $$
 > d(L_g)_h\big(\mathbf{X}^v_h\big) = d(L_g)_h\, d(L_h)_e(v) = d(L_g \circ L_h)_e(v) = d(L_{gh})_e(v) = \mathbf{X}^v_{gh} .
 > $$
 >
-> *Smooth.* Lecture 17 stopped here: “The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point \ldots and we don't have the tools to do that at this point.” Lecture 18 finished it — “in fact, we can just use this partial derivative construction” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field, Lee's term for a section not yet known to be smooth: “the piece of the construction that has not been justified is that this thing is smooth.”
+> *(3)* Let $\mathbf{X} \in \mathfrak{g}$ and $g \in G$. Left-invariance (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]) with $h = e$ reads $d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_{ge} = \mathbf{X}_g$, and by Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]] with $v = \mathbf{X}_e$ the left side is $\mathbf{X}^{\mathbf{X}_e}_g$.
+
+^pf-57-5
+
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|Def. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|Def. §57.3]]
+
+> [!theorem] Proposition §57.6: The Left-Invariant Extension Is Smooth
+> Let $G$ be a Lie group with identity $e$ and $v \in T_eG$. For $f \in C^\infty(G)$ let $\varphi : G \times G \to \mathbb{R}$, $\varphi(g, x) = f(gx)$. Then $\varphi$ is smooth, and
 >
-> *The claim.* It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. “This function is still well defined regardless of whether $\mathbf{X}^v$ is smooth or not \ldots because I have a vector at every point, and I can let that act on any function.” The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]); “but the $a^j$ are precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$.” This is Lemma [[§53 Vector Fields#^lem-53-8|§53.8]], whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
+> $$
+> \mathbf{X}^v f = \partial_v\varphi \in C^\infty(G),
+> $$
+>
+> the partial derivative of $\varphi$ in the second variable in the direction $v$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]). Hence $\mathbf{X}^v$ is smooth: $\mathbf{X}^v \in \mathfrak{g}$, a left-invariant vector field with $\mathbf{X}^v_e = v$.
+>
+> *Lee: proof of Theorem 8.37*
+
+^prop-57-6
+
+> [!proof]+ Proof
+> *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: “The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point … and we don't have the tools to do that at this point.” Lecture 18 finished it — “in fact, we can just use this partial derivative construction” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](1) and (2)), Lee's term for a section not yet known to be smooth: “the piece of the construction that has not been justified is that this thing is smooth.”
+>
+> *The claim.* It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. “This function is still well defined regardless of whether $\mathbf{X}^v$ is smooth or not … because I have a vector at every point, and I can let that act on any function.” The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]); “but the $a^j$ are precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$.” This is Lemma [[§53 Vector Fields#^lem-53-8|§53.8]], whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
 >
 > *The construction.* Let $f \in C^\infty(G)$ and $g \in G$. By the definition of $\mathbf{X}^v$ and of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]),
 >
@@ -259,13 +278,51 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > (\mathbf{X}^v f)(g) = v\big[\varphi(g, \cdot)\big] = \partial_v\varphi(g) .
 > $$
 >
-> “We're letting $v$ act on the second variable, and so that means that it is smooth”: $\partial_v\varphi \in C^\infty(G)$ by Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](3). By the claim, $\mathbf{X}^v$ is smooth. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$. “So this finishes completely the proof of that theorem.”
+> “We're letting $v$ act on the second variable, and so that means that it is smooth”: $\partial_v\varphi \in C^\infty(G)$ by Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](3). By the claim, $\mathbf{X}^v$ is smooth. It is left-invariant (Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](2)), so $\mathbf{X}^v \in \mathfrak{g}$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|§57.4]]), and $\mathbf{X}^v_e = v$ (Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](1)).
+
+^pf-57-6
+
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§53 Vector Fields#^lem-53-8|§53.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Def. §57.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|Def. §57.4]]
+
+> [!theorem] Theorem §57.7: The Lie Algebra Is the Tangent Space at the Identity
+> Let $G$ be a [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Lie group]] with identity $e$. The evaluation map
+>
+> $$
+> \mathrm{ev} : \mathfrak{g} \to T_eG, \qquad \mathbf{X} \mapsto \mathbf{X}_e ,
+> $$
+>
+> is a linear isomorphism. In particular $\dim \mathfrak{g} = \dim G$.
+>
+> *Lee: Theorem 8.37*
+
+^thm-57-7
+
+> [!proof]+ Proof
+> *(Lecture 17 — “it'll be an incomplete proof … there is one detail that we're not prepared to prove” — completed in Lecture 18. The lecture's steps.)* $\mathrm{ev}$ is linear: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and $a, b \in \mathbb{R}$, $\mathrm{ev}(a\mathbf{X} + b\mathbf{Y}) = (a\mathbf{X} + b\mathbf{Y})_e = a\,\mathbf{X}_e + b\,\mathbf{Y}_e$ by Definition [[§53 Vector Fields#^def-53-2|§53.2]]. It remains to show that $\mathrm{ev}$ is injective and surjective.
+>
+> *The basic idea.* For $g \in G$, $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_gG$, and for $\mathbf{X} \in \mathfrak{g}$, left-invariance (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]) with $h = e$ reads
+>
+> $$
+> d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_g ;
+> $$
+>
+> more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. “There's only one choice really”: $\mathbf{X}$ is the left-invariant extension of $\mathbf{X}_e$ (Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](3)).
+>
+> *Injective.* By the basic idea, $\mathbf{X}$ is determined by its value at $e$. So $\mathbf{X}_e = 0$ forces $\mathbf{X}_g = d(L_g)_e(0) = 0$ for all $g$, since $d(L_g)_e$ is linear (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]). So the kernel of the linear map $\mathrm{ev}$ is $\{\mathbf{0}\}$, and $\mathrm{ev}$ is injective.
+>
+> *Surjective.* Start with $v \in T_eG$; we want a left-invariant $\mathbf{X}$ with $\mathbf{X}_e = v$. The basic idea says there is no choice: we must take the left-invariant extension of $v$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]]),
+>
+> $$
+> \mathbf{X}^v_g = d(L_g)_e(v), \qquad g \in G .
+> $$
+>
+> By Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](1) and (2), which are Lecture 17's steps, $\mathbf{X}^v$ is a rough vector field, a tangent vector at every point, with $\mathbf{X}^v_e = v$ and satisfying the left-invariance identity. *Smooth.* This is where Lecture 17 stopped; Lecture 18 finished it, and by Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]] $\mathbf{X}^v$ is smooth, through $\mathbf{X}^v f = \partial_v\varphi$ for $\varphi(g, x) = f(gx)$. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$. “So this finishes completely the proof of that theorem.”
 >
 > Finally, a linear isomorphism preserves dimension, so $\dim \mathfrak{g} = \dim T_eG = \dim G$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]).
 
 ^pf-57-7
 
-*Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Def. §57.1]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-2|Def. §57.2]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|Def. §57.3]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|Def. §57.4]], [[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§53 Vector Fields#^lem-53-8|§53.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§53 Vector Fields#^def-53-2|Def. §53.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]]
+*Uses:* [[§53 Vector Fields#^def-53-2|Def. §53.2]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|Def. §57.3]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|Def. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]
 
 > [!remark]- Connections
 > - The matrix-group version, with $\mathfrak g$ defined through the exponential and identified with $T_{\mathbb 1}G$ and with the left-invariant fields: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|QFT Theorem §CB.1.16]].
@@ -273,9 +330,9 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 ![[m591-50-1.svg]]
 *The left-invariant field $\mathbf{X}^v$: the vector $v \in T_eG$ carried to $g$ by the differential of the left translation $L_g$.*
 
-**Comparison with Lee.** Lee's proof (Theorem 8.37) differentiates $f(g\,\gamma(t))$ along a curve $\gamma$ adapted to $v$, which is Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](1) applied to the same $\varphi$: $(\mathbf{X}^v f)(g) = \frac{d}{dt}\big|_{t=0} \varphi(g, \gamma(t))$. The course packages that step once and for all as the partial derivative $\partial_v\varphi$.
+**Comparison with Lee.** Lee's proof (Theorem 8.37) differentiates $f(g\,\gamma(t))$ along a curve $\gamma$ adapted to $v$, which is Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](1) applied to the function $\varphi(g, x) = f(gx)$ of Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]]: $(\mathbf{X}^v f)(g) = \frac{d}{dt}\big|_{t=0} \varphi(g, \gamma(t))$. The course packages that step once and for all as the partial derivative $\partial_v\varphi$.
 
-On the proof as a whole, Uribe passed on a remark a student made in office hours: “this subject is not so much about solving problems \ldots it's about constructing an architecture inside one's brain.”
+On the proof as a whole, Uribe passed on a remark a student made in office hours: “this subject is not so much about solving problems … it's about constructing an architecture inside one's brain.”
 
 > [!example] Example §57.2: The Additive Group of a Vector Space
 > Let $V$ be a finite-dimensional vector space, a [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Lie group]] under addition with identity $0$, so that $L_p = \tau_p$ is translation by $p$. Its [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|left-invariant vector fields]] are the constant fields $\mathbf{X}^v : p \mapsto D_v|_p$, $v \in V$, and all their [[§55 Lie Bracket and Lie Algebra#^def-55-1|brackets]] vanish: $\mathfrak{g} \cong V$ with the zero bracket.
@@ -285,13 +342,13 @@ On the proof as a whole, Uribe passed on a remark a student made in office hours
 > [!proof]+ Proof
 > *(Not from lecture; filled in, after the remark in Lecture 17 that the translations of a vector space give “a left-invariant vector field”.)* *$V$ is a Lie group.* In linear coordinates (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]), addition $(p, q) \mapsto p + q$ and inversion $p \mapsto -p$ are linear, hence smooth; so $V$ is a Lie group (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]]), with $L_p(q) = p + q = \tau_p(q)$.
 >
-> *The left-invariant fields.* By Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], every element of $T_0V$ is $D_v|_0$ for a unique $v \in V$. By Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]], the left-invariant fields are exactly the fields $\mathbf{X}^w$, $w \in T_0V$, with $\mathbf{X}^w_p = d(L_p)_0(w)$. For $w = D_v|_0$, Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]](2) gives
+> *The left-invariant fields.* By Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], every element of $T_0V$ is $D_v|_0$ for a unique $v \in V$. By Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]] and Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](3), the left-invariant fields are exactly the left-invariant extensions $\mathbf{X}^w$, $w \in T_0V$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]]), with $\mathbf{X}^w_p = d(L_p)_0(w)$. For $w = D_v|_0$, Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]](2) gives
 >
 > $$
 > \mathbf{X}^{w}_p = d(\tau_p)_0\big(D_v|_0\big) = D_v|_p ,
 > $$
 >
-> so the field $\mathbf{X}^v$ of the theorem, with $\mathbf{X}^v_0 = D_v|_0$, is $p \mapsto D_v|_p$; by the theorem these are all the left-invariant fields. The map $v \mapsto \mathbf{X}^v$ is the composite of the isomorphism $v \mapsto D_v|_0$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] with $\mathrm{ev}^{-1}$, so it is a linear isomorphism $V \cong \mathfrak{g}$.
+> so the field $\mathbf{X}^v$ of the example, the left-invariant extension of $D_v|_0$, is $p \mapsto D_v|_p$; by the theorem these are all the left-invariant fields. The map $v \mapsto \mathbf{X}^v$ is the composite of the isomorphism $v \mapsto D_v|_0$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] with $\mathrm{ev}^{-1}$, so it is a linear isomorphism $V \cong \mathfrak{g}$.
 >
 > *The brackets vanish.* Choose a basis of $V$ and the corresponding linear coordinates $x^1, \ldots, x^n$, a global chart, and write $v = \sum_i v^i e_i$. The coefficients of $\mathbf{X}^v$ (Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]) are, using Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] and the linearity of $x^i$,
 >
@@ -303,10 +360,10 @@ On the proof as a whole, Uribe passed on a remark a student made in office hours
 
 ^pf-ex-57-2
 
-*Uses:* [[§30 The Differential in Coordinates#^rem-30-4|§30, Remark: Translations Identify the Tangent Spaces of a Vector Space]], [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Def. §57.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], [[§53 Vector Fields#^prop-53-1|§53.1]]
+*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Def. §57.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|Def. §57.5]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]]
 
 > [!definition] Definition §57.6: The Lie Bracket on $T_eG$
-> Let $G$ be a [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Lie group]] and, for $v \in T_eG$, let $\mathbf{X}^v \in \mathfrak{g}$ be the left-invariant field with $\mathbf{X}^v_e = v$ ([[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|Theorem §57.7]]). The **Lie bracket** on $T_eG$ is
+> Let $G$ be a [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|Lie group]] and, for $v \in T_eG$, let $\mathbf{X}^v \in \mathfrak{g}$ be its left-invariant extension (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]] and Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]]), the left-invariant field with $\mathbf{X}^v_e = v$, unique by Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]. The **Lie bracket** on $T_eG$ is
 >
 > $$
 > [v, w] = \big[\mathbf{X}^v, \mathbf{X}^w\big]_e , \qquad v, w \in T_eG .
@@ -326,7 +383,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 ^thm-57-8
 
 > [!proof]- Proof (to be filled)
-> Stated in Lecture 17 — “for all matrix groups, the answer \ldots is just the matrix commutator”; “that requires computation. You actually have to compute something.” Lecture 18 set up the general tool, that Lie group morphisms preserve brackets ([[§57 Lie Groups and Left-Invariant Vector Fields|§57]]); the computation is planned for Lecture 19, “first for the general linear group, and then \ldots for any linear group.” The left-invariant fields are already known (Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|§57.1]]: $\mathbf{X}^A_g = gA$).
+> Stated in Lecture 17 — “for all matrix groups, the answer … is just the matrix commutator”; “that requires computation. You actually have to compute something.” Lecture 18 set up the general tool, that Lie group morphisms preserve brackets ([[§57 Lie Groups and Left-Invariant Vector Fields|§57]]); the computation is planned for Lecture 19, “first for the general linear group, and then … for any linear group.” The left-invariant fields are already known (Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|§57.1]]: $\mathbf{X}^A_g = gA$).
 
 ^pf-57-8
 
@@ -346,9 +403,9 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 *Lecture 18. “Next, we want to talk about Lie group morphisms and the Lie algebra, because we can do something now that we couldn't before.”*
 
 > [!remark] Remark: From Now On: $\mathfrak{g}$ Is $T_eG$
-> “From now on, as you can imagine, we will identify” the Lie algebra with the tangent space at the identity, $\mathfrak{g} \cong T_eG$ by $\mathrm{ev}$ (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]), as vector spaces, “keeping in mind that the Lie bracket comes from \ldots commuting left-invariant fields.” That is Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|§57.4]] read through Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]]: to compute the bracket of $A, B \in T_eG$,
+> “From now on, as you can imagine, we will identify” the Lie algebra with the tangent space at the identity, $\mathfrak{g} \cong T_eG$ by $\mathrm{ev}$ (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]), as vector spaces, “keeping in mind that the Lie bracket comes from … commuting left-invariant fields.” That is Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|§57.4]] read through Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]]: to compute the bracket of $A, B \in T_eG$,
 >
-> 1. extend $A$ and $B$ to the left-invariant fields $\mathbf{X}^A$, $\mathbf{X}^B$ (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]);
+> 1. extend $A$ and $B$ to the left-invariant fields $\mathbf{X}^A$, $\mathbf{X}^B$, their left-invariant extensions (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]]; they lie in $\mathfrak{g}$ by Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]]);
 > 2. take the commutator $[\mathbf{X}^A, \mathbf{X}^B]$ of vector fields;
 > 3. evaluate it at the identity: $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$.
 >
@@ -356,8 +413,13 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 
 ^rem-57-3
 
-> [!remark] Remark: Linear Groups
-> Matrix groups “are called linear groups, by the way. And not every Lie group is isomorphic to a matrix group \ldots the nonlinear groups arise naturally from making covers” of matrix groups. *(Filled in: the standard example is the universal cover of $\mathrm{SL}(2,\mathbb{R})$, a Lie group isomorphic to no group of matrices.)* The question of Lecture 17, restated: for a matrix group, “can we identify the bracket directly on the tangent space at the identity?” The answer is the matrix commutator (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]); to get there, the course uses the general idea below.
+> [!definition] Definition §57.7: Linear Group
+> A **linear group**, or **matrix group**, is a Lie group $G$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]]) that is a subgroup of $\mathrm{GL}(n,\mathbb{R})$ or $\mathrm{GL}(n,\mathbb{C})$ for some $n$, with matrix multiplication as its group product — for instance each classical group of Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1|§57.1]].
+
+^def-57-7
+
+> [!remark] Remark: Nonlinear Groups
+> Matrix groups “are called linear groups, by the way” (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-7|§57.7]]). “And not every Lie group is isomorphic to a matrix group … the nonlinear groups arise naturally from making covers” of matrix groups. *(Filled in: the standard example is the universal cover of $\mathrm{SL}(2,\mathbb{R})$, a Lie group isomorphic to no group of matrices.)* The question of Lecture 17, restated: for a matrix group, “can we identify the bracket directly on the tangent space at the identity?” The answer is the matrix commutator (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]); to get there, the course uses the general idea below.
 
 ^rem-57-4
 
@@ -383,6 +445,55 @@ a linear map between the Lie algebras, and “the natural question is whether th
 
 ^def-57-9
 
+> [!theorem] Lemma §57.9: Left-Invariant Fields Related by a Morphism
+> Let $F : H \to G$ be a Lie group morphism (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|§57.8]]) and $A \in T_eH$, and put $\tilde A = dF_e(A) \in T_eG$. Let $\mathbf{X}^A \in \mathfrak{X}(H)$ and $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant extensions of $A$ and of $\tilde A$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]]; smooth by Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]]). Then $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related (Definition [[§56 Related Vector Fields#^def-56-2|§56.2]]):
+>
+> $$
+> dF_h\big(\mathbf{X}^A_h\big) = \mathbf{Y}^{\tilde A}_{F(h)} \in T_{F(h)}G \qquad \text{for every } h \in H .
+> $$
+>
+> *Lee: proof of Theorem 8.44*
+
+^lem-57-9
+
+> [!proof]+ Proof
+> *(Lecture 18: the “claim” in the proof that Lie group morphisms preserve brackets. The final diagram chase, left to the class as the lecture ran out of time, is completed.)* Fix $h \in H$; the displayed equality is to be shown. *$F(e) = e$.* As noted after Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|§57.8]], $F(e_H) = F(e_He_H) = F(e_H)F(e_H)$, and multiplying on the left by $F(e_H)^{-1}$ gives $F(e_H) = e_G$; so $dF_e$ maps $T_eH$ to $T_eG$, and $\tilde A \in T_eG$.
+>
+> *The square.* “We have to use very much that $F$ is a group morphism.” Consider the square
+>
+> $$
+> F \circ L_h = L_{F(h)} \circ F : H \to G .
+> $$
+>
+> It commutes: for $x \in H$, $F(L_h(x)) = F(hx) = F(h)F(x) = L_{F(h)}(F(x))$, where $L$ is “always left multiplication in the corresponding group.” Differentiate it at $e \in H$. Since $L_h(e) = h$ and $F(e) = e$, the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives the commutative square of differentials
+>
+> $$
+> dF_h \circ d(L_h)_e = d\big(L_{F(h)}\big)_e \circ dF_e : T_eH \to T_{F(h)}G .
+> $$
+>
+> *The chase.* *(Completed.)* “Chase where $A$ goes under this diagram”:
+>
+> $$
+> \begin{aligned}
+> &\text{along the bottom, then up:} && A \mapsto d(L_h)_e(A) = \mathbf{X}^A_h \mapsto dF_h(\mathbf{X}^A_h), \\
+> &\text{up, then along the top:} && A \mapsto dF_e(A) = \tilde A \mapsto d(L_{F(h)})_e(\tilde A) = \mathbf{Y}^{\tilde A}_{F(h)},
+> \end{aligned}
+> $$
+>
+> both by Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]], for $H$ at the point $h$ and for $G$ at the point $F(h)$. The square commutes, so $dF_h(\mathbf{X}^A_h) = \mathbf{Y}^{\tilde A}_{F(h)}$; as $h$ was arbitrary, this is the claim.
+
+^pf-57-9
+
+*Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|Def. §57.8]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|Def. §57.5]]
+
+![[m591-56-1.svg]]
+
+![[m591-56-2.svg]]
+
+![[m591-56-3.svg]]
+
+*Top left: the group square, which commutes because $F$ is a morphism. Top right: its differential at $e$, which commutes by the chain rule. Below: where $A$ goes. Both routes end at the same vector, which is the statement that $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related.*
+
 > [!theorem] Proposition §57.10: Lie Group Morphisms Preserve Brackets
 > Let $F : H \to G$ be a [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|Lie group morphism]]. For all $A, B \in T_eH$,
 >
@@ -397,7 +508,7 @@ a linear map between the Lie algebras, and “the natural question is whether th
 ^prop-57-10
 
 > [!proof]+ Proof
-> *(Lecture 18 — “kind of a soft proof”. The final diagram chase, left to the class as the lecture ran out of time, is completed.)* “Since the bracket is defined in terms of vector fields, I have to pass to vector fields to do the proof.” For $A \in T_eH$ let $\mathbf{X}^A \in \mathfrak{X}(H)$ be the left-invariant field with $\mathbf{X}^A_e = A$; put $\tilde A = dF_e(A) \in T_eG$, and let $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant field with $\mathbf{Y}^{\tilde A}_e = \tilde A$ (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]], applied to $H$ and to $G$).
+> *(Lecture 18 — “kind of a soft proof”.)* “Since the bracket is defined in terms of vector fields, I have to pass to vector fields to do the proof.” For $A \in T_eH$ let $\mathbf{X}^A \in \mathfrak{X}(H)$ be the left-invariant extension of $A$, the left-invariant field with $\mathbf{X}^A_e = A$; put $\tilde A = dF_e(A) \in T_eG$, and let $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant extension of $\tilde A$, with $\mathbf{Y}^{\tilde A}_e = \tilde A$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]] and Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]], applied to $H$ and to $G$).
 >
 > *Claim.* $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related (Definition [[§56 Related Vector Fields#^def-56-2|§56.2]]).
 >
@@ -407,47 +518,12 @@ a linear map between the Lie algebras, and “the natural question is whether th
 > dF_e\big([\mathbf{X}^A, \mathbf{X}^B]_e\big) = [\mathbf{Y}^{\tilde A}, \mathbf{Y}^{\tilde B}]_{F(e)} = [\mathbf{Y}^{\tilde A}, \mathbf{Y}^{\tilde B}]_e .
 > $$
 >
-> By Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]] the left side is $dF_e([A, B])$ and the right side is $[\tilde A, \tilde B] = [dF_e(A), dF_e(B)]$: “that's exactly” the proposition. “So the fight is to prove the claim.”
->
-> *Proof of the claim.* Being $F$-related means: for every $h \in H$,
->
-> $$
-> dF_h\big(\mathbf{X}^A_h\big) = \mathbf{Y}^{\tilde A}_{F(h)} \in T_{F(h)}G .
-> $$
->
-> “We have to use very much that $F$ is a group morphism.” Consider the square
->
-> $$
-> F \circ L_h = L_{F(h)} \circ F : H \to G .
-> $$
->
-> It commutes: for $x \in H$, $F(L_h(x)) = F(hx) = F(h)F(x) = L_{F(h)}(F(x))$, where $L$ is “always left multiplication in the corresponding group.” Differentiate it at $e \in H$. Since $L_h(e) = h$ and $F(e) = e$, the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives the commutative square of differentials
->
-> $$
-> dF_h \circ d(L_h)_e = d\big(L_{F(h)}\big)_e \circ dF_e : T_eH \to T_{F(h)}G .
-> $$
->
-> *(Completed.)* “Chase where $A$ goes under this diagram”:
->
-> $$
-> \begin{aligned}
-> &\text{along the bottom, then up:} && A \mapsto d(L_h)_e(A) = \mathbf{X}^A_h \mapsto dF_h(\mathbf{X}^A_h), \\
-> &\text{up, then along the top:} && A \mapsto dF_e(A) = \tilde A \mapsto d(L_{F(h)})_e(\tilde A) = \mathbf{Y}^{\tilde A}_{F(h)},
-> \end{aligned}
-> $$
->
-> both by the construction of left-invariant fields in Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]. The square commutes, so $dF_h(\mathbf{X}^A_h) = \mathbf{Y}^{\tilde A}_{F(h)}$ for every $h$: the claim.
+> By Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]] the left side is $dF_e([A, B])$ and the right side is $[\tilde A, \tilde B] = [dF_e(A), dF_e(B)]$: “that's exactly” the proposition. “So the fight is to prove the claim”: it is Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-9|§57.9]], applied to $F$ and $A$, whose proof is the diagram chase above.
 
 ^pf-57-10
 
-*Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]], [[§56 Related Vector Fields#^def-56-2|Def. §56.2]], [[§56 Related Vector Fields#^prop-56-3|§56.3]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|Def. §57.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+*Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|Def. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]], [[§56 Related Vector Fields#^def-56-2|Def. §56.2]], [[§56 Related Vector Fields#^prop-56-3|§56.3]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|Def. §57.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-9|§57.9]]
 
-![[m591-56-1.svg]]
-
-![[m591-56-2.svg]]
-
-![[m591-56-3.svg]]
-
-*Top left: the group square, which commutes because $F$ is a morphism. Top right: its differential at $e$, which commutes by the chain rule. Below: where $A$ goes. Both routes end at the same vector, which is the statement that $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related. Next: the commutator, “first for the general linear group, and then \ldots for any linear group” (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]).*
+Next: the commutator, “first for the general linear group, and then … for any linear group” (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]).
 
 **Transcription note (Lecture 18).** Page 47 of the handwritten notes begins the proof with “take $A \in T_hH$”; $A \in T_eH$. Page 48 writes the second field as $\mathbf{Y}^{\hat B}$ in one place; it is $\mathbf{Y}^{\tilde B}$, with $\tilde B = dF_e(B)$.

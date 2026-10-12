@@ -29,7 +29,6 @@ tags: [linear-algebra, hub]
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|Definition §11.5: General Linear Group]]
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9: Complex Matrices and GL(n,ℂ)]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|Lemma §23.3: A One-Sided Inverse Suffices]]
-- [[§36 Submersions#^thm-36-6|Theorem §36.6: Local Normal Form for Submersions]]
 - [[§46 SU(2) → SO(3)꞉ The Double Cover#^lem-46-2|Lemma §46.2: Every Rotation Has an Axis]]
 
 ## Connections

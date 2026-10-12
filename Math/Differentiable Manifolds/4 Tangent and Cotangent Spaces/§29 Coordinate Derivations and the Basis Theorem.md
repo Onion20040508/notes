@@ -56,6 +56,32 @@ tags: [differentiable-manifolds, math591]
 
 ^def-29-2
 
+> [!theorem] Lemma §29.1: Partial Derivatives of a Smooth Function Are Smooth
+> Let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $M$ and $f : U \to \mathbb{R}$ smooth, $f \in C^\infty(U)$ — for instance the restriction to $U$ of a smooth function on $M$. For each $j$, the function $\partial f/\partial x^j : U \to \mathbb{R}$, $q \mapsto \partial f/\partial x^j(q)$, satisfies
+>
+> $$
+> \frac{\partial f}{\partial x^j} \circ \varphi^{-1} = \frac{\partial f_\varphi}{\partial r^j} \qquad \text{on } \varphi(U),
+> $$
+>
+> and it is smooth: $\partial f/\partial x^j \in C^\infty(U)$.
+
+^lem-29-1
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* The open set $U$ is a smooth manifold whose smooth charts are the smooth charts of $M$ with domain in $U$ (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]]); in particular $(U, \varphi)$ is a smooth chart of $U$. Two things are claimed: the identity of functions on $\varphi(U)$, and the smoothness of $\partial f/\partial x^j$.
+>
+> *The identity.* By Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], applied to the smooth function $f$ on the manifold $U$ and its smooth chart $(U, \varphi)$, the coordinate representation $f_\varphi = f \circ \varphi^{-1}$ is smooth on $\varphi(U)$. So $f$ is smooth near every $q \in U$, and $\partial f/\partial x^j(q)$ is defined (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). For $r \in \varphi(U)$, Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] at the point $q = \varphi^{-1}(r)$ gives
+>
+> $$
+> \Big(\frac{\partial f}{\partial x^j} \circ \varphi^{-1}\Big)(r) = \frac{\partial f}{\partial x^j}\big(\varphi^{-1}(r)\big) = \frac{\partial f_\varphi}{\partial r^j}\big(\varphi(\varphi^{-1}(r))\big) = \frac{\partial f_\varphi}{\partial r^j}(r) .
+> $$
+>
+> *Smoothness.* $f_\varphi$ is smooth on the open set $\varphi(U)$, so its partial derivative $\partial f_\varphi/\partial r^j$ is smooth too: every partial derivative of it, of any order, is a partial derivative of $f_\varphi$, hence exists and is continuous. By the identity, $\partial f_\varphi/\partial r^j$ is the coordinate representation of $\partial f/\partial x^j$ in the chart $(U, \varphi)$, which contains every point of $U$; so $\partial f/\partial x^j$ is smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]).
+
+^pf-29-1
+
+*Uses:* [[§17 Differentiable Structures#^prop-17-7|§17.7]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]]
+
 > [!theorem] Proposition §29.2: Coordinate Derivations Are Derivations
 > $\dfrac{\partial}{\partial x^i}\Big|_p$ is well defined on germs and is a derivation at $p$.
 
@@ -64,7 +90,7 @@ tags: [differentiable-manifolds, math591]
 > [!proof]+ Proof
 > *(Lecture 8: “it's linear, and the product rule will be inherited from the product rule of the ordinary partial derivatives” — the *Linear* and *Leibniz* steps below. Well-definedness is filled in.)*
 >
-> Three things are to be shown: the value $\partial f_\varphi/\partial r^i(\varphi(p))$ does not depend on the representative of $[f]$; the resulting map is linear; and it satisfies the Leibniz rule of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]. For a representative $(f, U_1)$, $f_\varphi = f \circ \varphi^{-1}$ is defined on the open set $\varphi(U \cap U_1) \ni \varphi(p)$ and smooth there (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], applied on the open set $U \cap U_1$ with the restricted chart), so its partial derivatives at $\varphi(p)$ exist.
+> Three things are to be shown: the value $\partial f_\varphi/\partial r^i(\varphi(p))$ does not depend on the representative of $[f]$; the resulting map is linear; and it satisfies the Leibniz rule of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]. For a representative $(f, U_1)$, $f_\varphi = f \circ \varphi^{-1}$ is defined on the open set $\varphi(U \cap U_1) \ni \varphi(p)$ and smooth there (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], applied on the open set $U \cap U_1$ with the restricted chart, a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)), so its partial derivatives at $\varphi(p)$ exist.
 >
 > *Well defined.* If $(f,U_1) \sim (g,U_2)$, then $f = g$ on an open $W \ni p$ (Definition [[§27 Germs#^def-27-1|§27.1]]), so $f_\varphi = g_\varphi$ on the open set $\varphi(W \cap U) \ni \varphi(p)$ (open because $\varphi$ is a homeomorphism onto the open set $\varphi(U)$); partial derivatives at a point depend only on the function near that point, being limits of difference quotients that only use values in arbitrarily small neighbourhoods, so the two values agree. (Shrinking the chart domain also changes nothing, for the same reason.)
 >
@@ -90,7 +116,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-29-2
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§8 Algebra of Differentiable Functions#^thm-8-2|452 §8.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
 
 The proof of the Basis Theorem below needs a form of Taylor expansion whose remainder is not an estimate but an exact, *smooth* term — “a theorem from calculus” that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
 
@@ -263,7 +289,7 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 ^thm-29-6
 
 > [!proof]+ Proof
-> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof — “this is how you push forward derivations \ldots we'll come back to this construction immediately after” — and Uribe remarked that “the order of my presentation is not ideal.” The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space|§28]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$. What has to be shown: the $n$ derivations $\partial/\partial x^i|_p$, which lie in $T_pM$ by Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]], span $T_pM$ — this is the universal formula, Steps 1–3 — and are linearly independent, Step 4.
+> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof — “this is how you push forward derivations … we'll come back to this construction immediately after” — and Uribe remarked that “the order of my presentation is not ideal.” The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space|§28]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$. What has to be shown: the $n$ derivations $\partial/\partial x^i|_p$, which lie in $T_pM$ by Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]], span $T_pM$ — this is the universal formula, Steps 1–3 — and are linearly independent, Step 4.
 >
 > *Step 1: push $D$ down.* Let $\tilde D = \varphi_{\ast p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]] (with $D$ regarded as a derivation on germs on $U$, by the identification $T_pM = T_pU$ of Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $F = \varphi$, $\tilde D[g] = D\big(\varphi_p^{\ast}[g]\big) = D[g \circ \varphi]$ for germs $g$ at $a$.
 >

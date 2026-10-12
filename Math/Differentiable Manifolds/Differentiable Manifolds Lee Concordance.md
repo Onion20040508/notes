@@ -65,6 +65,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§35 Local Diffeomorphisms\|§35]]–[[§36 Submersions\|§36]] Local diffeomorphisms, submersions | Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 |
 | [[§37 Regular Submanifolds\|§37]] Regular submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.14, Propositions 5.35–5.38) |
 | [[§38 Fibrations\|§38]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
+| [[§40 The Normal Bundle of a Submanifold of Euclidean Space\|§40]] The normal bundle of a submanifold of Euclidean space | Chapter 6, *Tubular Neighborhoods* (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, *Morse Theory*, §6) |
 | [[§41 Immersions\|§41]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
 | [[§42 Embeddings\|§42]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
 | [[§43 Geometric and Abstract Manifolds\|§43]] Geometric and abstract manifolds (comparison) | Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) |
@@ -167,7 +168,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.30 | [[§56 Related Vector Fields#^prop-56-3\|Prop. §56.3]] |
 | Corollary 8.31 | [[§56 Related Vector Fields#^cor-56-4\|Cor. §56.4]] |
 | Proposition 8.33 | [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4\|Cor. §57.4]] |
-| Theorem 8.37 | [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7\|Thm. §57.7]] |
+| Theorem 8.37 | [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5\|Def. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5\|Lem. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6\|Prop. §57.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7\|Thm. §57.7]] |
+| Theorem 8.44 | [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-9\|Lem. §57.9]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10\|Prop. §57.10]] |
 | Example 10.3 | [[§39 Examples of Fibrations#^ex-39-2\|Ex. §39.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |

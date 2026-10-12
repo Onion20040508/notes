@@ -24,13 +24,13 @@ tags: [differentiable-manifolds, math591]
 The exception is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]], where each $q \in N$ is $F(p)$ for exactly one $p$.
 
 > [!remark] Remark: Notation: $dF_p$
-> *Lecture 17:* “I'm going to switch the notation to $dF$ … $dF$ will replace $F_{\ast}$. It's a more common notation.” From here on the [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] of [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6]] is written
+> *Lecture 17:* “I'm going to switch the notation to $dF$ … $dF$ will replace $F_\ast$. It's a more common notation.” From here on the [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] is written
 >
 > $$
 > dF_p = F_{\ast p} : T_pM \to T_{F(p)}N ,
 > $$
 >
-> as in Lee. It agrees with the [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|differential of a map between vector spaces]] ([[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Definition §22.5]]) under the identification $v \leftrightarrow D_v|_a$ of [[§30 The Differential in Coordinates#^cor-30-6|Corollary §30.6]] ([[§30 The Differential in Coordinates#^rem-30-3|§30, Remark]]), so the two uses of $dF_p$ do not clash. Earlier sections keep $F_{\ast p}$.
+> as in Lee. It agrees with the [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|differential of a map between vector spaces]] (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|§22.5]]) under the identification $v \leftrightarrow D_v|_a$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] (the remark in [[§30 The Differential in Coordinates|§30]]), so the two uses of $dF_p$ do not clash. Earlier sections keep $F_{\ast p}$.
 
 ^rem-56-2
 
@@ -187,7 +187,7 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 ^prop-56-3
 
 > [!proof]+ Proof
-> *(Omitted in Lecture 17 as an exercise: “it's just a matter of chasing the definitions \ldots being $F$-related means that $F^{\ast}$ commutes with the derivations. So you just play with the symbols; it all comes out.” Filled in.)* The brackets $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ and $[\mathbf{Y}_1, \mathbf{Y}_2] \in \mathfrak{X}(N)$ are vector fields (Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]). By Proposition [[§56 Related Vector Fields#^prop-56-1|§56.1]], it suffices to show
+> *(Omitted in Lecture 17 as an exercise: “it's just a matter of chasing the definitions … being $F$-related means that $F^{\ast}$ commutes with the derivations. So you just play with the symbols; it all comes out.” Filled in.)* The brackets $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ and $[\mathbf{Y}_1, \mathbf{Y}_2] \in \mathfrak{X}(N)$ are vector fields (Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]). By Proposition [[§56 Related Vector Fields#^prop-56-1|§56.1]], it suffices to show
 >
 > $$
 > [\mathbf{X}_1, \mathbf{X}_2](g \circ F) = \big([\mathbf{Y}_1, \mathbf{Y}_2]\, g\big) \circ F \qquad \text{for every } g \in C^\infty(N).

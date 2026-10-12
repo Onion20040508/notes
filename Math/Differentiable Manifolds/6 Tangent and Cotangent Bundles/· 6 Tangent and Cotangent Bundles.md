@@ -7,9 +7,9 @@ tags: [chapter, differentiable-manifolds]
 # 6 Tangent and Cotangent Bundles
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (17), [[· 3 Smooth Structures|3 Smooth Structures]] (40), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (73), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (21)
-**Used by:** [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (6)
-**Builds on (other subjects):** [[Linear Algebra]] (4), [[Topology]] (3), [[Multivariable Analysis]] (2)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (13), [[· 3 Smooth Structures|3 Smooth Structures]] (46), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (78), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (30)
+**Used by:** [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (7)
+**Builds on (other subjects):** [[Linear Algebra]] (2), [[Multivariable Analysis]] (1)
 
 ## Sections
 - [[§47 Recap꞉ Germs, Derivations and Tangent Vectors]]
@@ -20,11 +20,11 @@ tags: [chapter, differentiable-manifolds]
 - [[§52 Critical Points and the Hessian]]
 
 ## Central results
-- [[Tangent Bundle Is a Smooth Manifold]] (§48.2)
+- [[Tangent Bundle Is a Smooth Manifold]] (§49.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§49 The Tangent Bundle#^prop-49-1|Proposition §49.1: The Topology of TM]]: 45 later results
-- [[Tangent Bundle Is a Smooth Manifold|Proposition §48.2: The Smooth Atlas of TM]]: 45 later results
-- [[§49 The Tangent Bundle#^cor-49-3|Corollary §49.3: The Tangent Bundle Is a Fibration]]: 21 later results
-- [[§49 The Tangent Bundle#^prop-49-4|Proposition §49.4: The Tangent Bundle Is a Manifold (Claim)]]: 21 later results
+- [[§49 The Tangent Bundle#^prop-49-1|Proposition §49.1: The Topology of TM]]: 48 later results
+- [[Tangent Bundle Is a Smooth Manifold|Proposition §49.2: The Smooth Atlas of TM]]: 48 later results
+- [[§49 The Tangent Bundle#^cor-49-3|Corollary §49.3: The Tangent Bundle Is a Fibration]]: 22 later results
+- [[§49 The Tangent Bundle#^prop-49-4|Proposition §49.4: The Tangent Bundle Is a Manifold (Claim)]]: 22 later results

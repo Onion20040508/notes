@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 36.4", "local normal form for submersions", "Lee Theorem 4.12"]
+aliases: ["MATH 591 36.6", "local normal form for submersions", "Lee Theorem 4.12"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§36 Submersions#^thm-36-6]]
@@ -11,7 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Submersions#^thm-36-6|Theorem §36.6: Local Normal Form for Submersions]], in [[§36 Submersions]]
 
 ## Its proof uses
-- [[§2 Topological Manifolds#^lem-2-10|Lemma §2.10: Restricting and Recomposing Charts]]
+- [[§17 Differentiable Structures#^lem-17-6|Lemma §17.6: Restricting and Recomposing Smooth Charts]]
+- [[§19 Smooth Functions and Smooth Maps#^lem-19-3|Lemma §19.3: A Chart Mapped into a Given Chart]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-4|Proposition §19.4: The Two Notions of Diffeomorphism Agree]]
 - [[§19 Smooth Functions and Smooth Maps#^lem-19-5|Lemma §19.5: Composition of Smooth Maps]]
 - [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
@@ -21,18 +22,13 @@ tags: [differentiable-manifolds, hub]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
 - [[§30 The Differential in Coordinates#^thm-30-2|Theorem §30.2: The Matrix of the Differential]]
 - [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]
-- [[§36 Submersions#^def-36-1|Definition §36.1: Submersion]]
 - [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]
 - [[§36 Submersions#^lem-36-5|Lemma §36.5: Diffeomorphisms onto Open Sets Are Charts]]
 
-## Its proof uses (other subjects)
-- [[Invertible ⟺ nonzero determinant]] (Linear Algebra)
-
 ## Used in (Differentiable Manifolds)
 - [[§36 Submersions#^cor-36-7|Corollary §36.7: Being a Submersion Is an Open Condition]]
-- [[§36 Submersions#^cor-36-9|Corollary §36.9: Submersions Are Open Maps]]
+- [[§37 Regular Submanifolds#^lem-37-11|Lemma §37.11: Level Sets Near a Regular Point]]
 - [[§37 Regular Submanifolds#^thm-37-12|Theorem §37.12: The Regular Value Theorem for Manifolds]]
-- [[§37 Regular Submanifolds#^thm-37-15|Theorem §37.15: Preimages of Transverse Submanifolds]]
 - [[§41 Immersions#^thm-41-1|Theorem §41.1: Local Normal Form for Immersions]]
 
 ## Connections

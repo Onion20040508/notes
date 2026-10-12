@@ -419,7 +419,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^lem-28-8
 
 > [!proof]+ Proof
-> The inclusion $\iota$ is smooth (in a chart of $M$ restricted to an open subset of $U$, its coordinate representation is the identity), and by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] it pulls back the germ of $(f, V)$ to $\iota_p^{\ast}[f] = [f \circ \iota] = [f|_{U \cap V}]$: restriction of germs.
+> The inclusion $\iota$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]](1): in a chart of $M$ restricted to an open subset of $U$, a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), its coordinate representation is the identity), and by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] it pulls back the germ of $(f, V)$ to $\iota_p^{\ast}[f] = [f \circ \iota] = [f|_{U \cap V}]$: restriction of germs.
 >
 > *Algebra homomorphism.* Restriction is well defined and an algebra homomorphism by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], and it is compatible with evaluation: $(\iota_p^{\ast}[f])(p) = f(p)$.
 >
@@ -437,7 +437,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 
 ^pf-28-8
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 > [!theorem] Proposition §28.9: Charts Are Diffeomorphisms
 > If $(U, \varphi)$ is a smooth chart of $M$, then $\varphi : U \to \varphi(U)$ is a diffeomorphism. Consequently, for every $p \in U$,
@@ -469,3 +469,38 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > This is the $\tilde D$ of the lecture: for $D \in T_pM$, $\tilde D = \varphi_{*p}D$ acts by $\tilde D[g] = D[g \circ \varphi]$, identifying tangent vectors on $M$ with derivations at a point of an open subset of $\mathbb{R}^n$. Everything about the abstract tangent space $T_pM$ can therefore be settled in $\mathbb{R}^n$, which is how the basis theorem is proved.
 
 ^rem-28-3
+
+> [!theorem] Lemma §28.10: The Pushforward Along a Constant Map
+> 1. Let $\kappa : X \to Y$ be a constant map of smooth manifolds, with value $q_0$. Then $\kappa$ is smooth, and $\kappa_{\ast x} = 0 : T_xX \to T_{q_0}Y$ for every $x \in X$.
+> 2. Let $\iota : S \to M$ and $F : M \to N$ be smooth maps such that $F \circ \iota$ is constant. Then for every $p \in S$
+>
+> $$
+> F_{\ast\iota(p)} \circ \iota_{\ast p} = 0, \qquad\text{that is,}\qquad \iota_{\ast p}\big(T_pS\big) \subseteq \ker F_{\ast\iota(p)} .
+> $$
+
+^lem-28-10
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)*
+>
+> *(1) $\kappa$ is smooth.* We check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. $\kappa$ is continuous: the preimage of any set is $X$ or $\emptyset$. Let $x \in X$, and choose smooth charts $(U, \varphi)$ of $X$ at $x$ and $(V, \psi)$ of $Y$ at $q_0$ (the smooth charts cover $X$ and $Y$, Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]). Then $\kappa(U) = \{q_0\} \subseteq V$, and the coordinate representation $\psi \circ \kappa \circ \varphi^{-1}$ is the constant map $\varphi(U) \to \mathbb{R}^{\dim Y}$ with value $\psi(q_0)$, which is smooth.
+>
+> *(1) $\kappa_{\ast x} = 0$.* Let $D \in T_xX$ and let $[g]$ be a germ at $q_0$, with $g$ defined on an open set $O \ni q_0$. Then $\kappa^{-1}(O) = X$, and $g \circ \kappa$ is the constant function $g(q_0)$ on $X$, whose germ at $x$ is the constant germ $\underline{g(q_0)}$. By the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and because derivations kill constants (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)),
+>
+> $$
+> (\kappa_{\ast x} D)[g] = D[g \circ \kappa] = D\big[\underline{g(q_0)}\big] = 0 .
+> $$
+>
+> So $\kappa_{\ast x}D$ is the zero derivation, for every $D$: $\kappa_{\ast x} = 0$.
+>
+> *(2)* $F \circ \iota$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]) and constant, so by (1), $(F \circ \iota)_{\ast p} = 0$. By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]),
+>
+> $$
+> F_{\ast\iota(p)} \circ \iota_{\ast p} = (F \circ \iota)_{\ast p} = 0 .
+> $$
+>
+> So for every $v \in T_pS$, $F_{\ast\iota(p)}\big(\iota_{\ast p}v\big) = 0$, i.e. $\iota_{\ast p}v \in \ker F_{\ast\iota(p)}$.
+
+^pf-28-10
+
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]

@@ -172,24 +172,37 @@ $$
 > - The Euclidean chain rule for Jacobians: [[§12 Composition of Functions and the Chain Rule#^rem-12-4|452 §12 (Chain Rule for Jacobians)]]; matrix of a product: [[§9 Matrices#^ladr-3-43|LADR 3.43]].
 
 > [!theorem] Corollary §30.4: Change of Coordinates
-> If $(U, \varphi)$ and $(\tilde U, \tilde\varphi)$ are two smooth charts at $p$, with coordinates $x^i$ and $\tilde x^j$, then
+> Let $(U, \varphi)$ and $(\tilde U, \tilde\varphi)$ be two smooth charts at $p$, with coordinates $x^i$ and $\tilde x^j$, and $n = \dim M$.
+>
+> 1. The coordinate derivations transform by
 >
 > $$
 > \frac{\partial}{\partial \tilde x^j}\Big|_p = \sum_{i=1}^n \frac{\partial x^i}{\partial \tilde x^j}(p)\, \frac{\partial}{\partial x^i}\Big|_p ,
 > $$
 >
 > and the change-of-basis matrix is the Jacobian of the transition function $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$.
+> 2. The components of a tangent vector transform by
+>
+> $$
+> v\big[\tilde x^j\big] = \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, v\big[x^i\big] \qquad (v \in T_pM,\ j = 1, \ldots, n).
+> $$
+>
+> 3. The $n \times n$ matrices $A = \big[\partial \tilde x^j/\partial x^i(p)\big]$ (row $j$, column $i$) and $B = \big[\partial x^i/\partial \tilde x^j(p)\big]$ (row $i$, column $j$) are inverse to each other:
+>
+> $$
+> \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, \frac{\partial x^i}{\partial \tilde x^l}(p) = \delta^j_l, \qquad \sum_{j=1}^n \frac{\partial x^i}{\partial \tilde x^j}(p)\, \frac{\partial \tilde x^j}{\partial x^k}(p) = \delta^i_k .
+> $$
 >
 > *Lee: Ch. 3, Computations in Coordinates*
 
 ^cor-30-4
 
 > [!proof]+ Proof
-> Write $n = \dim M$. The claim is an equality of tangent vectors at $p$ for each $j$, together with the identification of the coefficient matrix.
+> *(Items (2) and (3) not from lecture; filled in.)* Item (1) is an equality of tangent vectors at $p$ for each $j$, together with the identification of the coefficient matrix; (2) and (3) then follow from the Basis Theorem.
 >
-> *Setting up.* Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] needs a source chart whose domain is mapped into the domain of the target chart. Restrict both charts to the open set $U \cap \tilde U \ni p$; a restriction of a smooth chart to an open subset is again a smooth chart (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)). This changes neither the coordinate derivations at $p$ nor the partial derivatives at $p$, since these are ordinary partial derivatives at $\varphi(p)$, resp. $\tilde\varphi(p)$, which depend only on the functions near that point (the remark on shrinking the chart domain in the proof of Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]]). So we may assume $U = \tilde U$.
+> *(1) Setting up.* Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] needs a source chart whose domain is mapped into the domain of the target chart. Restrict both charts to the open set $U \cap \tilde U \ni p$; by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), applied to the open subset $U \cap \tilde U$ of $U$ and of $\tilde U$, the restrictions are again smooth charts. This changes neither the coordinate derivations at $p$ nor the partial derivatives at $p$, since these are ordinary partial derivatives at $\varphi(p)$, resp. $\tilde\varphi(p)$, which depend only on the functions near that point (the remark on shrinking the chart domain in the proof of Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]]). So we may assume $U = \tilde U$.
 >
-> *Applying the theorem.* Take $F = \mathrm{id}_M$, which is smooth, with the chart $(\tilde U, \tilde\varphi)$, coordinates $\tilde x^j$, on the source and the chart $(U, \varphi)$, coordinates $x^i$, on the target; then $\mathrm{id}_M(\tilde U) = U$. The components of $F$ in the target chart are $F^i = x^i \circ \mathrm{id}_M = x^i$, and the coordinate representation is $\varphi \circ \mathrm{id}_M \circ \tilde\varphi^{-1} = \varphi \circ \tilde\varphi^{-1}$, the transition function. Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], with $\tilde x^j$ in the role of the source coordinates and $x^i$ in the role of the target coordinates, gives
+> *(1) Applying the theorem.* Take $F = \mathrm{id}_M$, which is smooth, with the chart $(\tilde U, \tilde\varphi)$, coordinates $\tilde x^j$, on the source and the chart $(U, \varphi)$, coordinates $x^i$, on the target; then $\mathrm{id}_M(\tilde U) = U$. The components of $F$ in the target chart are $F^i = x^i \circ \mathrm{id}_M = x^i$, and the coordinate representation is $\varphi \circ \mathrm{id}_M \circ \tilde\varphi^{-1} = \varphi \circ \tilde\varphi^{-1}$, the transition function. Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], with $\tilde x^j$ in the role of the source coordinates and $x^i$ in the role of the target coordinates, gives
 >
 > $$
 > (\mathrm{id}_M)_{\ast p}\Big(\frac{\partial}{\partial \tilde x^j}\Big|_p\Big) = \sum_{i=1}^n \frac{\partial x^i}{\partial \tilde x^j}(p)\, \frac{\partial}{\partial x^i}\Big|_p .
@@ -197,11 +210,37 @@ $$
 >
 > By Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], $(\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM}$, so the left side is $\partial/\partial \tilde x^j|_p$. That is the formula.
 >
-> *The matrix.* The formula says that the $j$-th new basis vector $\partial/\partial \tilde x^j|_p$ has the coordinates $\partial x^i/\partial \tilde x^j(p)$ in the old basis $\partial/\partial x^i|_p$, so the change-of-basis matrix $P$ of Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](4) (defined by $e'_j = \sum_i P_{ij}\, e_i$) has entries $P_{ij} = \partial x^i/\partial \tilde x^j(p)$. This is the matrix of $(\mathrm{id}_M)_{\ast p}$ in the two coordinate bases, and by the second part of Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the Jacobian of the coordinate representation $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$.
+> *(1) The matrix.* The formula says that the $j$-th new basis vector $\partial/\partial \tilde x^j|_p$ has the coordinates $\partial x^i/\partial \tilde x^j(p)$ in the old basis $\partial/\partial x^i|_p$, so the change-of-basis matrix $P$ of Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](4) (defined by $e'_j = \sum_i P_{ij}\, e_i$) has entries $P_{ij} = \partial x^i/\partial \tilde x^j(p)$. This is the matrix of $(\mathrm{id}_M)_{\ast p}$ in the two coordinate bases, and by the second part of Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the Jacobian of the coordinate representation $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$.
+>
+> *(2)* Fix $v \in T_pM$. The universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], in the chart $(U, \varphi)$, gives $v = \sum_i v[x^i]\, \partial/\partial x^i|_p$. Apply both sides to the germ $[\tilde x^j]$ at $p$ ($\tilde x^j$ is smooth on $\tilde U \ni p$). Derivations are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), and $\partial/\partial x^i|_p[\tilde x^j]$ is what Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] writes $\partial \tilde x^j/\partial x^i(p)$; so
+>
+> $$
+> v\big[\tilde x^j\big] = \sum_{i=1}^n v\big[x^i\big]\, \frac{\partial}{\partial x^i}\Big|_p\big[\tilde x^j\big] = \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, v\big[x^i\big] .
+> $$
+>
+> *(3)* First, a coordinate function differentiated with respect to the coordinates of its own chart gives the Kronecker delta: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] in the chart $(\tilde U, \tilde\varphi)$, and $(\tilde x^j)_{\tilde\varphi} = r^j$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](3)),
+>
+> $$
+> \frac{\partial \tilde x^j}{\partial \tilde x^l}(p) = \frac{\partial (\tilde x^j)_{\tilde\varphi}}{\partial r^l}\big(\tilde\varphi(p)\big) = \frac{\partial r^j}{\partial r^l}\big(\tilde\varphi(p)\big) = \delta^j_l ,
+> $$
+>
+> and in the same way $\partial x^i/\partial x^k(p) = \delta^i_k$ in the chart $(U, \varphi)$. Now evaluate the germ $[\tilde x^j]$ on the vector $\partial/\partial \tilde x^l|_p$ in two ways: directly it gives $\delta^j_l$; and by (2), applied to $v = \partial/\partial \tilde x^l|_p$, whose components are $v[x^i] = \partial x^i/\partial \tilde x^l(p)$,
+>
+> $$
+> \delta^j_l = \frac{\partial}{\partial \tilde x^l}\Big|_p\big[\tilde x^j\big] = \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, \frac{\partial}{\partial \tilde x^l}\Big|_p\big[x^i\big] = \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, \frac{\partial x^i}{\partial \tilde x^l}(p) = (AB)_{jl} .
+> $$
+>
+> The second identity is the same computation with the two charts exchanged (rename $(U, \varphi, x^i) \leftrightarrow (\tilde U, \tilde\varphi, \tilde x^j)$). Written out: (2) for the exchanged charts reads $v[x^i] = \sum_j \partial x^i/\partial \tilde x^j(p)\, v[\tilde x^j]$, and with $v = \partial/\partial x^k|_p$,
+>
+> $$
+> \delta^i_k = \frac{\partial}{\partial x^k}\Big|_p\big[x^i\big] = \sum_{j=1}^n \frac{\partial x^i}{\partial \tilde x^j}(p)\, \frac{\partial}{\partial x^k}\Big|_p\big[\tilde x^j\big] = \sum_{j=1}^n \frac{\partial x^i}{\partial \tilde x^j}(p)\, \frac{\partial \tilde x^j}{\partial x^k}(p) = (BA)_{ik} .
+> $$
+>
+> So $AB = I = BA$. (Either identity alone suffices: an $n \times n$ matrix $A$ with $BA = I$ is injective, hence invertible by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1), and then $B = BAA^{-1} = A^{-1}$.) By (1), $B$ is the Jacobian of $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$, and, by (1) with the charts exchanged, $A$ is the Jacobian of $\tilde\varphi \circ \varphi^{-1}$ at $\varphi(p)$: (3) says that the Jacobians of the two mutually inverse transition functions are inverse matrices, as the Euclidean chain rule predicts.
 
 ^pf-30-4
 
-*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]]
 
 > [!remark]- Connections
 > - The change-of-basis formula of linear algebra: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
@@ -500,7 +539,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 >
 > *Hausdorff and second countable.* Both are inherited from $M$ (Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]).
 >
-> *Locally Euclidean.* Let $p \in F^{-1}(c)$. Choose smooth charts $(V, \psi)$ around $c$ and $(U_0, \varphi_0)$ around $p$, and put $U = U_0 \cap F^{-1}(V)$, an open neighbourhood of $p$ because $F$ is continuous and $F(p) = c \in V$; restricting $\varphi_0$ gives a smooth chart $(U, \varphi)$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]]). Apply Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]] to the restriction $F|_U : U \to N$, a smooth map on the open submanifold $U$ (of dimension $m$), with the charts $(U, \varphi)$ and $(V, \psi)$. Its hypotheses hold:
+> *Locally Euclidean.* Let $p \in F^{-1}(c)$. Choose smooth charts $(V, \psi)$ around $c$ and $(U_0, \varphi_0)$ around $p$, and put $U = U_0 \cap F^{-1}(V)$, an open neighbourhood of $p$ because $F$ is continuous and $F(p) = c \in V$; restricting $\varphi_0$ gives a smooth chart $(U, \varphi)$ with $F(U) \subseteq V$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]](1)). Apply Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]] to the restriction $F|_U : U \to N$, a smooth map on the open submanifold $U$ (of dimension $m$), with the charts $(U, \varphi)$ and $(V, \psi)$. Its hypotheses hold:
 > - its level set $(F|_U)^{-1}(c) = F^{-1}(c) \cap U$ lies in $U$;
 > - $c \in V$;
 > - it maps $U$ into $V$, because $U \subseteq F^{-1}(V)$.
@@ -511,7 +550,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 
 ^pf-30-9
 
-*Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!remark]- Connections
 > - The smooth half, $F^{-1}(c)$ a submanifold with tangent space $\ker F_{*p}$: [[§37 Regular Submanifolds#^thm-37-12|§37.12]]; the Euclidean original: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
@@ -528,7 +567,7 @@ This is the topological half of the regular value theorem for manifolds, and it 
 >
 > *$F$ is locally constant.* Fix $p_0 \in M$.
 >
-> *Charts.* Take a chart $(V, \psi)$ at $F(p_0)$ and a chart $(U_1, \varphi_1)$ at $p_0$. The set $U_2 = U_1 \cap F^{-1}(V)$ is open, since $F$ is continuous, and contains $p_0$. Its image $\varphi_1(U_2)$ is open in $\mathbb{R}^m$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)) and contains $\varphi_1(p_0)$, so it contains an open ball $B$ centred at $\varphi_1(p_0)$. Put $U_0 = \varphi_1^{-1}(B)$ and $\varphi = \varphi_1|_{U_0}$: a chart at $p_0$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)) whose image is the ball $B$ and whose domain satisfies $F(U_0) \subseteq V$ — shrink by continuity of $F$, then to a ball.
+> *Charts.* Take a chart $(V, \psi)$ at $F(p_0)$ and a chart $(U_1, \varphi_1)$ at $p_0$. The set $U_2 = U_1 \cap F^{-1}(V)$ is open, since $F$ is continuous, contains $p_0$, and satisfies $F(U_2) \subseteq V$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]](1)). Its image $\varphi_1(U_2)$ is open in $\mathbb{R}^m$ (Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1)) and contains $\varphi_1(p_0)$, so it contains an open ball $B$ centred at $\varphi_1(p_0)$. Put $U_0 = \varphi_1^{-1}(B)$ and $\varphi = \varphi_1|_{U_0}$: a smooth chart at $p_0$ (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)) whose image is the ball $B$ and whose domain satisfies $F(U_0) \subseteq V$ — shrink by continuity of $F$, then to a ball.
 >
 > *Zero Jacobian.* The coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : B \to \mathbb{R}^n$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]). For $p \in U_0$, the matrix of $F_{\ast p}$ in the coordinate bases is the Jacobian $\tilde F'(\varphi(p))$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]). By hypothesis $F_{\ast p} = 0$, which sends every basis vector to $0$, so every entry of its matrix is $0$. As $p$ runs over $U_0$, $\varphi(p)$ runs over $B$; so $\tilde F' \equiv 0$ on $B$, that is, $\partial \tilde F^j/\partial r^i = 0$ on $B$ for all $i$ and $j$.
 >
@@ -555,7 +594,7 @@ This is the topological half of the regular value theorem for manifolds, and it 
 
 ^pf-30-10
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 > [!remark]- Connections
 > - Connectedness via clopen sets: [[§15 Connected Spaces#^lem-15-1|590 Lem. §15.1]]; the one-variable original: [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (vanishing derivative means constant).

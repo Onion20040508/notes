@@ -441,6 +441,47 @@ Lecture 5 argued uniqueness only (“anything in one is contained in the other, 
 
 ^def-17-9
 
+> [!theorem] Lemma §17.6: Restricting and Recomposing Smooth Charts
+> Let $(M, \mathcal{A})$ be a smooth $n$-manifold and $(U, \varphi) \in \mathcal{A}$.
+>
+> 1. If $U' \subseteq U$ is open, then $(U', \varphi|_{U'})$ belongs to $\mathcal{A}$.
+> 2. If $h : W \to h(W)$ is a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]) of an open set $W \supseteq \varphi(U)$ of $\mathbb{R}^n$ onto an open set $h(W) \subseteq \mathbb{R}^n$, then $(U, h \circ \varphi)$ belongs to $\mathcal{A}$.
+>
+> So a chart of the smooth structure may be shrunk to any smaller open domain, and recomposed with any diffeomorphism of Euclidean open sets (a translation, a permutation of the coordinates, an invertible linear map), without leaving the smooth structure. This is the smooth version of Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]].
+
+^lem-17-6
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in. It is used, often tacitly, wherever a chart is shrunk or its coordinates are rearranged.)* In both parts the new pair is a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]]; what has to be shown is that it is compatible with every chart of $\mathcal{A}$ (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), because then it belongs to $\mathcal{A}$ by maximality (Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]). So fix $(V, \chi) \in \mathcal{A}$. Since $(U, \varphi)$ and $(V, \chi)$ are two charts of the atlas $\mathcal{A}$, they are compatible (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]): the transition functions
+>
+> $$
+> \chi \circ \varphi^{-1} : \varphi(U \cap V) \to \chi(U \cap V), \qquad \varphi \circ \chi^{-1} : \chi(U \cap V) \to \varphi(U \cap V)
+> $$
+>
+> are smooth (Definitions [[§17 Differentiable Structures#^def-17-4|§17.4]] and [[§17 Differentiable Structures#^def-17-3|§17.3]]). Two facts from calculus are used: the restriction of a smooth map to an open subset of its domain is smooth, since partial derivatives at a point involve only values near it; and a composite of smooth maps is smooth (chain rule).
+>
+> *(1)* $(U', \varphi|_{U'})$ is a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1). If $U' \cap V = \emptyset$, it is compatible with $(V, \chi)$ by Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]. Otherwise the overlap is $U' \cap V$, an open subset of $U \cap V$, and since $(\varphi|_{U'})^{-1}$ is $\varphi^{-1}$ restricted to $\varphi(U')$, and $\varphi|_{U'}$ agrees with $\varphi$ on $U' \cap V$, the two transition functions are
+>
+> $$
+> \chi \circ (\varphi|_{U'})^{-1} = \big(\chi \circ \varphi^{-1}\big)\big|_{\varphi(U' \cap V)}, \qquad \varphi|_{U'} \circ \chi^{-1} = \big(\varphi \circ \chi^{-1}\big)\big|_{\chi(U' \cap V)} .
+> $$
+>
+> The sets $\varphi(U' \cap V)$ and $\chi(U' \cap V)$ are open in $\mathbb{R}^n$: by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1), applied to the open subset $U' \cap V$ of $U$ and of $V$, the restrictions of $\varphi$ and $\chi$ to it are charts, whose images are open by Definition [[§17 Differentiable Structures#^def-17-1|§17.1]]. So both transition functions are restrictions of smooth maps to open subsets of their domains, hence smooth. They are mutually inverse bijections (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]], for the charts $(U', \varphi|_{U'})$ and $(V, \chi)$), so $\chi \circ (\varphi|_{U'})^{-1}$ is a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]) and the two charts are compatible.
+>
+> *(2)* A diffeomorphism is a homeomorphism (it is continuous, and so is its inverse, being smooth), so $(U, h \circ \varphi)$ is a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](2). If $U \cap V = \emptyset$ there is nothing to show. Otherwise the overlap is $U \cap V$, and $(h \circ \varphi)(U \cap V) = h\big(\varphi(U \cap V)\big)$ is open in $\mathbb{R}^n$, as the image of the open set $\varphi(U \cap V) \subseteq W$ under the homeomorphism $h$ onto the open set $h(W)$. On $h(\varphi(U))$ we have $(h \circ \varphi)^{-1} = \varphi^{-1} \circ h^{-1}$, so for $b \in h(\varphi(U \cap V))$ and $a \in \chi(U \cap V)$
+>
+> $$
+> \chi \circ (h \circ \varphi)^{-1}(b) = \big(\chi \circ \varphi^{-1}\big)\big(h^{-1}(b)\big), \qquad (h \circ \varphi) \circ \chi^{-1}(a) = h\big((\varphi \circ \chi^{-1})(a)\big) .
+> $$
+>
+> In the first, $h^{-1}$ is smooth on the open set $h(\varphi(U \cap V)) \subseteq h(W)$ and maps it onto $\varphi(U \cap V)$, the domain of the smooth map $\chi \circ \varphi^{-1}$. In the second, $\varphi \circ \chi^{-1}$ is smooth on $\chi(U \cap V)$ with values in $\varphi(U \cap V) \subseteq \varphi(U) \subseteq W$, where $h$ is smooth. So both transition functions are composites of smooth maps, hence smooth, and they are mutually inverse bijections (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]); so the charts are compatible (Definitions [[§17 Differentiable Structures#^def-17-3|§17.3]] and [[§17 Differentiable Structures#^def-17-4|§17.4]]).
+>
+> *Conclusion.* In both parts the new chart is compatible with every chart of $\mathcal{A}$, so it belongs to $\mathcal{A}$, by Definition [[§17 Differentiable Structures#^def-17-8|§17.8]].
+
+^pf-17-6
+
+*Uses:* [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§2 Topological Manifolds#^prop-2-11|§2.11]]
+
 > [!theorem] Proposition §17.7: Open Subsets of a Smooth Manifold Are Smooth Manifolds
 > Let $M$ be a smooth $m$-manifold and $S \subseteq M$ an open subset, with the subspace topology.
 >
@@ -454,13 +495,13 @@ Lecture 5 argued uniqueness only (“anything in one is contained in the other, 
 > [!proof]+ Proof
 > *(Not from lecture; filled in. The argument was first needed for $\mathrm{SO}(n) \subseteq \mathrm{O}(n)$ in Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23.2]].)* By Proposition [[§3 Subspaces and Products#^prop-3-6|§3.6]], $S$ is a topological $m$-manifold.
 >
-> *(1) The restricted charts.* Let $(U, \varphi)$ be a smooth chart of $M$. The set $U \cap S$ is open in $M$, so $(U \cap S, \varphi|_{U \cap S})$ is a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1); its domain lies in $S$ and is open there. These domains cover $S$, because the domains $U$ cover $M$. For two smooth charts $(U, \varphi)$ and $(U', \varphi')$ of $M$, the transition function of the restrictions is
+> *(1) The restricted charts.* Let $(U, \varphi)$ be a smooth chart of $M$. The set $U \cap S$ is open in $M$, so $(U \cap S, \varphi|_{U \cap S})$ is a chart by Lemma [[§2 Topological Manifolds#^lem-2-10|§2.10]](1), and even a smooth chart of $M$ — a chart of the maximal atlas of $M$ — by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), applied to the open subset $U \cap S$ of $U$; its domain lies in $S$ and is open there. These domains cover $S$, because the domains $U$ cover $M$. For two smooth charts $(U, \varphi)$ and $(U', \varphi')$ of $M$, the transition function of the restrictions is
 >
 > $$
 > \varphi'|_{U' \cap S} \circ \big(\varphi|_{U \cap S}\big)^{-1} = \big(\varphi' \circ \varphi^{-1}\big)\big|_{\varphi(U \cap U' \cap S)} ,
 > $$
 >
-> the restriction of the transition function $\varphi' \circ \varphi^{-1}$ to the open subset $\varphi(U \cap U' \cap S)$ of $\varphi(U \cap U')$ (open because $\varphi$ is a homeomorphism onto an open subset of $\mathbb{R}^m$). The restriction of a smooth map to an open subset is smooth, and the same applies to the inverse $\varphi \circ \varphi'^{-1}$. So the restricted charts are pairwise compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]) and form an atlas $\mathcal{A}_S$ on $S$ (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]); it determines a smooth structure $\overline{\mathcal{A}_S}$ (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]).
+> the restriction of the transition function $\varphi' \circ \varphi^{-1}$ to the open subset $\varphi(U \cap U' \cap S)$ of $\varphi(U \cap U')$ (open because $\varphi$ is a homeomorphism onto an open subset of $\mathbb{R}^m$). It is a diffeomorphism, with inverse the restriction of $\varphi \circ \varphi'^{-1}$: the two restricted charts both belong to the maximal atlas of $M$, as just shown, and any two charts of an atlas are compatible (Definitions [[§17 Differentiable Structures#^def-17-6|§17.6]] and [[§17 Differentiable Structures#^def-17-4|§17.4]]). So the restricted charts are pairwise compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]) and form an atlas $\mathcal{A}_S$ on $S$ (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]); it determines a smooth structure $\overline{\mathcal{A}_S}$ (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]).
 >
 > *(2) The charts of $\overline{\mathcal{A}_S}$.* By Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]], $\overline{\mathcal{A}_S}$ consists of the charts on $S$ compatible with every chart of $\mathcal{A}_S$, and the smooth structure of $M$ of the charts on $M$ compatible with every smooth chart of $M$.
 > - *A smooth chart $(V, \psi)$ of $M$ with $V \subseteq S$ lies in $\overline{\mathcal{A}_S}$.* $V$ is open in $M$ and contained in $S$, hence open in $S$, so $(V, \psi)$ is a chart on $S$. For a restricted chart $(U \cap S, \varphi|_{U \cap S})$, the overlap is $U \cap S \cap V = U \cap V$, since $V \subseteq S$, and the transition maps are $\psi \circ \varphi^{-1}$ and $\varphi \circ \psi^{-1}$ on $\varphi(U \cap V)$ and $\psi(U \cap V)$, smooth because $(V, \psi)$ and $(U, \varphi)$ are compatible in $M$.
@@ -470,7 +511,7 @@ Lecture 5 argued uniqueness only (“anything in one is contained in the other, 
 
 ^pf-17-7
 
-*Uses:* [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23.2]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!remark] Remark: On the Connectedness Assumption
 > The board wrote “let $M$ be a topological manifold (connected).” Nothing in this section uses connectedness, and the definitions above are stated without it. It is a harmless convenience — with $n$ fixed in advance ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]) the dimension is already constant — and it can be dropped. It does matter under the convention where $n$ is allowed to vary with the point ([[§2 Topological Manifolds#^cor-2-2|§2.2]]).

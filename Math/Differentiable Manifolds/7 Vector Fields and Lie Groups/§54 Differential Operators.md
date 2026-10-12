@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Vector fields and multiplications by functions generate a ring of operators on $C^\infty(M)$; its elements have an order, and in a chart they are the linear partial differential operators with smooth coefficients.*
 
-*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§53 Vector Fields#^lem-53-6|Lemma §53.6]]): its definition, the fact that its elements are local, and Peetre's theorem “FYI”. Those are collected here. Everything else in this subsection — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§55 Lie Bracket and Lie Algebra#^prop-55-6|§54]] — is not from lecture; it makes precise the remark that differential operators “are given by differential expressions in local coordinates.”*
+*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§53 Vector Fields#^lem-53-6|Lemma §53.6]]): its definition, the fact that its elements are local, and Peetre's theorem “FYI”. Those are collected here. Everything else in this subsection — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§55 Lie Bracket and Lie Algebra#^prop-55-6|§55]] — is not from lecture; it makes precise the remark that differential operators “are given by differential expressions in local coordinates.”*
 
 > [!definition] Definition §54.1: Multiplication Operator
 > For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
@@ -298,7 +298,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^rem-54-1
 
 > [!theorem] Theorem §54.6: Local Operators Are Differential Operators
-> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a chart neighbourhood $U$ on which $(Pf)|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha (f|_U)$ for all $f \in C^\infty(M)$, for some $k$ and some $a_\alpha \in C^\infty(U)$ — the form of [[§54 Differential Operators#^prop-54-4|Proposition §54.4]]. Conversely, every differential operator is local ([[§54 Differential Operators#^rem-54-1|Remark: Differential Operators Are Local]]).
+> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a chart neighbourhood $U$ on which $(Pf)|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha (f|_U)$ for all $f \in C^\infty(M)$, for some $k$ and some $a_\alpha \in C^\infty(U)$ — the form of Proposition [[§54 Differential Operators#^prop-54-4|§54.4]]. Conversely, every differential operator is local (the remark *[[§54 Differential Operators#^rem-54-1|Differential Operators Are Local]]* in [[§54 Differential Operators|§54]]).
 
 ^thm-54-6
 

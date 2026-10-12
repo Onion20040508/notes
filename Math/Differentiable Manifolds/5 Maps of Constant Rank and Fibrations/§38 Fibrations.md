@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *References: Lee Ch. 10. Lectures 11–13.*
 
-The submersions that look locally like the projection $U \times F \to U$. Their fibres are submanifolds ([[§37 Regular Submanifolds|§37]]), all copies of one fibre; the tangent bundle of the next section is the first major example.
+The submersions that look locally like the projection $U \times F \to U$. Their fibres are submanifolds ([[§37 Regular Submanifolds|§37]]), all copies of one fibre; the tangent bundle, later ([[§49 The Tangent Bundle|§49]]), is the first major example.
 
 ## Fibrations
 
@@ -55,7 +55,8 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 
 > [!theorem] Proposition §38.1: Fibres and Fibrations
 > Let $\pi : M \to B$ be a fibration with fibre $F$.
-> 1. For every $b \in B$, the fibre $\pi^{-1}(b)$ is homeomorphic to $F$: every fibre is a copy of the model fibre.
+>
+> 1. For every $b \in B$ and every $\alpha$ with $b \in U_\alpha$, the local trivialization $\phi_\alpha$ restricts to a bijection $\pi^{-1}(b) \to \{b\} \times F$, which is a homeomorphism for the subspace topologies; so the fibre $\pi^{-1}(b)$ is homeomorphic to $F$: every fibre is a copy of the model fibre.
 > 2. $\pi$ is a submersion, and it is surjective if $F \ne \emptyset$.
 > 3. $\pi$ is an open map.
 
@@ -64,7 +65,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 > [!proof]+ Proof
 > *(Stated in lecture; (2) as “chain rule and stuff”.)* Throughout, recall from Definition [[§38 Fibrations#^def-38-1|§38.1]] that the sets $U_\alpha$ cover $B$, that each $\pi^{-1}(U_\alpha)$ is open in $M$ (the preimage of an open set under the continuous map $\pi$), and that on it $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ — the commuting diagram.
 >
-> *(1)* Fix $b \in B$ and choose $\alpha$ with $b \in U_\alpha$; then $\pi^{-1}(b) \subseteq \pi^{-1}(U_\alpha)$, the domain of $\phi_\alpha$.
+> *(1)* Fix $b \in B$ and $\alpha$ with $b \in U_\alpha$ (there is one, the $U_\alpha$ covering $B$); then $\pi^{-1}(b) \subseteq \pi^{-1}(U_\alpha)$, the domain of $\phi_\alpha$.
 >
 > *$\phi_\alpha$ maps $\pi^{-1}(b)$ onto $\mathrm{pr}_1^{-1}(b) = \{b\} \times F$.* This is where the commuting diagram and the bijectivity of $\phi_\alpha$ are used. If $x \in \pi^{-1}(b)$, then $\mathrm{pr}_1(\phi_\alpha(x)) = \pi(x) = b$, so $\phi_\alpha(x) \in \{b\} \times F$. Conversely, if $(b, f) \in \{b\} \times F \subseteq U_\alpha \times F$, then $x = \phi_\alpha^{-1}(b, f)$ is defined, $\phi_\alpha$ being a bijection onto $U_\alpha \times F$, and
 >
@@ -100,7 +101,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 
 ^pf-38-1
 
-*Uses:* [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§36 Submersions#^ex-36-2|Ex. §36.2]], [[§36 Submersions#^cor-36-9|§36.9]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]
+*Uses:* [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§36 Submersions#^ex-36-2|Ex. §36.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§36 Submersions#^cor-36-9|§36.9]]
 
 The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§44 Projective Spaces and the Hopf Fibration|§44]].
 
@@ -110,7 +111,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^rem-38-1
 
 > [!remark]- Connections
-> - [[§49 The Tangent Bundle#^cor-49-3|The tangent bundle is a fibration, §49.3]]; [[§50 The Cotangent Bundle#^def-50-1|the cotangent bundle, Def. §50.1]]; [[§49 The Tangent Bundle#^rem-49-2|Remark: Vector Bundles (§48)]].
+> - [[§49 The Tangent Bundle#^cor-49-3|The tangent bundle is a fibration, §49.3]]; [[§50 The Cotangent Bundle#^def-50-1|the cotangent bundle, Def. §50.1]]; [[§49 The Tangent Bundle#^rem-49-2|Remark: Vector Bundles (§49)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 
@@ -132,7 +133,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 >
 > *The two submanifolds.* $\pi$ is a submersion (Proposition [[§38 Fibrations#^prop-38-1|§38.1]](2)), so its fibre $\pi^{-1}(b)$ is a regular submanifold of $E$ (Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]]). Likewise the projection $\mathrm{pr}_1 : U_\alpha \times F \to U_\alpha$ is a submersion (Example [[§36 Submersions#^ex-36-2|§36.2]]), so its fibre $\{b\} \times F = \mathrm{pr}_1^{-1}(b)$ is a regular submanifold of $U_\alpha \times F$ (Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]] again). Both carry their induced smooth structures (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
 >
-> *A bijection.* Because the diagram commutes, $\phi_\alpha$ maps $\pi^{-1}(b)$ bijectively onto $\{b\} \times F$: this is the first step of the proof of Proposition [[§38 Fibrations#^prop-38-1|§38.1]](1), namely $\mathrm{pr}_1(\phi_\alpha(x)) = \pi(x) = b$ for $x \in \pi^{-1}(b)$, and $\pi\big(\phi_\alpha^{-1}(b, f)\big) = \mathrm{pr}_1(b, f) = b$ for $(b, f) \in \{b\} \times F$. Write $\Phi : \pi^{-1}(b) \to \{b\} \times F$ for the restriction of $\phi_\alpha$; its inverse is the restriction of $\phi_\alpha^{-1}$ to $\{b\} \times F$.
+> *A bijection.* Because the diagram commutes, $\phi_\alpha$ maps $\pi^{-1}(b)$ bijectively onto $\{b\} \times F$: this is Proposition [[§38 Fibrations#^prop-38-1|§38.1]](1), for this $\alpha$; explicitly, $\mathrm{pr}_1(\phi_\alpha(x)) = \pi(x) = b$ for $x \in \pi^{-1}(b)$, and $\pi\big(\phi_\alpha^{-1}(b, f)\big) = \mathrm{pr}_1(b, f) = b$ for $(b, f) \in \{b\} \times F$. Write $\Phi : \pi^{-1}(b) \to \{b\} \times F$ for the restriction of $\phi_\alpha$; its inverse is the restriction of $\phi_\alpha^{-1}$ to $\{b\} \times F$.
 >
 > *$\Phi$ is smooth.* The inclusion $\iota : \pi^{-1}(b) \hookrightarrow E$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)). It takes values in the open subset $\pi^{-1}(U_\alpha)$, so it is also smooth as a map into the open submanifold $\pi^{-1}(U_\alpha)$, whose smooth charts are the charts of $E$ with domain inside $\pi^{-1}(U_\alpha)$. Hence $\phi_\alpha \circ \iota : \pi^{-1}(b) \to U_\alpha \times F$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). It takes values in the submanifold $\{b\} \times F$, so it is smooth as a map into $\{b\} \times F$ (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)); that map is $\Phi$.
 >
@@ -142,7 +143,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 
 ^pf-38-2
 
-*Uses:* [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§38 Fibrations#^prop-38-1|§38.1]], [[§37 Regular Submanifolds#^cor-37-13|§37.13]], [[§36 Submersions#^ex-36-2|Ex. §36.2]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
+*Uses:* [[§38 Fibrations#^prop-38-1|§38.1]], [[§37 Regular Submanifolds#^cor-37-13|§37.13]], [[§36 Submersions#^ex-36-2|Ex. §36.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
 
 ![[m591-16-3.svg]]
 *The fibre over $b$ and the model fibre. The trivialization $\phi_\alpha$ carries the submanifold $\pi^{-1}(b)$ onto the submanifold $\{b\} \times F$ — this is where the commuting triangle of [[§38 Fibrations#^def-38-1|Definition §38.1]] is used — and $\mathrm{pr}_2$ identifies that with $F$.*

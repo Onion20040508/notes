@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 48.2", "smooth atlas of TM", "Lee Proposition 3.18"]
+aliases: ["MATH 591 49.2", "smooth atlas of TM", "Lee Proposition 3.18"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§49 The Tangent Bundle#^prop-49-2]]

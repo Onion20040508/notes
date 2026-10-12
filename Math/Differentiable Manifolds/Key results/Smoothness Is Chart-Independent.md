@@ -23,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1: Two Smooth Structures on the Real Line]]
+- [[§19 Smooth Functions and Smooth Maps#^lem-19-3|Lemma §19.3: A Chart Mapped into a Given Chart]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-6|Proposition §19.6: Inclusions of and Maps into Open Subsets]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-8|Proposition §19.8: Transport of Smooth Structure]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-11|Proposition §19.11: Projections and Slice Inclusions Are Smooth]]

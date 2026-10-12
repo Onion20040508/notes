@@ -107,6 +107,28 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]]
 
+> [!theorem] Lemma §19.3: A Chart Mapped into a Given Chart
+> Let $F : M \to N$ be a continuous map between smooth manifolds (for instance a smooth map), and $p \in M$.
+>
+> 1. For every smooth chart $(V, \psi)$ of $N$ with $F(p) \in V$ and every smooth chart $(U_0, \varphi_0)$ of $M$ with $p \in U_0$, the set $U = U_0 \cap F^{-1}(V)$ is an open neighbourhood of $p$, $(U, \varphi_0|_U)$ is a smooth chart of $M$, and $F(U) \subseteq V$.
+> 2. For every open neighbourhood $W$ of $p$ there are smooth charts $(U, \varphi)$ of $M$ with $p \in U \subseteq W$ and $(V, \psi)$ of $N$ with $F(p) \in V$ such that $F(U) \subseteq V$.
+> 3. If $F$ is smooth, then in the charts of (1) (with $\varphi = \varphi_0|_U$) or of (2) the coordinate representation $\psi \circ F \circ \varphi^{-1} : \varphi(U) \to \psi(V)$ is smooth.
+
+^lem-19-3
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in — the shrinking step used, mostly tacitly, whenever charts are chosen on both sides of a map.)*
+>
+> *(1)* $V$ is open in $N$ and $F$ is continuous, so $F^{-1}(V)$ is open in $M$, and $U = U_0 \cap F^{-1}(V)$ is open as an intersection of two open sets. It contains $p$, since $p \in U_0$ and $F(p) \in V$. As $U$ is an open subset of $U_0$, Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1) shows that $(U, \varphi_0|_U)$ is a smooth chart of $M$. Finally, every $q \in U$ lies in $F^{-1}(V)$, so $F(q) \in V$; that is, $F(U) \subseteq V$.
+>
+> *(2)* The domains of the smooth charts cover $M$ and $N$ (the maximal atlases are atlases, Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]), so there are a smooth chart $(V, \psi)$ of $N$ with $F(p) \in V$ and a smooth chart $(U_1, \varphi_1)$ of $M$ with $p \in U_1$. The set $U_0 = U_1 \cap W$ is open and contains $p$, and $(U_0, \varphi_1|_{U_0})$ is a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1). Part (1), applied to it and to $(V, \psi)$, gives the smooth chart $(U, \varphi) = (U_0 \cap F^{-1}(V), \varphi_1|_U)$ at $p$, with $U \subseteq U_0 \subseteq W$ and $F(U) \subseteq V$.
+>
+> *(3)* In both cases $(U, \varphi)$ and $(V, \psi)$ are smooth charts with $F(U) \subseteq V$, so Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]] applies to them: the coordinate representation $\psi \circ F \circ \varphi^{-1}$ is smooth.
+
+^pf-19-3
+
+*Uses:* [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
+
 > [!definition] Definition §19.5: Diffeomorphic Manifolds
 > Smooth manifolds $M$ and $N$ are **diffeomorphic** if there is a diffeomorphism $F : M \to N$. Diffeomorphic manifolds are also called **isomorphic as smooth manifolds**.
 >
@@ -158,7 +180,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 >
 > *Step 1: charts for $G$ at $F(p)$.* Since $G$ is smooth, there are smooth charts $(V, \psi)$ of $N$ with $F(p) \in V$ and $(W, \chi)$ of $P$ with $G(V) \subseteq W$ such that $\chi \circ G \circ \psi^{-1}$ is smooth on $\psi(V)$.
 >
-> *Step 2: a chart for $F$ at $p$ landing inside $V$.* Since $F$ is smooth, there are smooth charts $(U_0, \varphi)$ of $M$ with $p \in U_0$ and $(V_0, \psi_0)$ of $N$ with $F(U_0) \subseteq V_0$ such that $\psi_0 \circ F \circ \varphi^{-1}$ is smooth. The chart $(V_0,\psi_0)$ need not be the $(V,\psi)$ of Step 1, so we adjust. Put $U = U_0 \cap F^{-1}(V)$, an open neighborhood of $p$ since $F$ is continuous, and keep the coordinate map $\varphi|_U$; $(U, \varphi|_U)$ is still a smooth chart (a restriction of one to an open subset). Indeed, it is a homeomorphism of $U$ onto the open set $\varphi(U)$, and for any chart $(U'',\varphi'')$ of the maximal atlas of $M$ its transition functions $\varphi'' \circ (\varphi|_U)^{-1}$ and $\varphi|_U \circ \varphi''^{-1}$ are the restrictions of $\varphi'' \circ \varphi^{-1}$ and $\varphi \circ \varphi''^{-1}$ to the open sets $\varphi(U \cap U'')$ and $\varphi''(U \cap U'')$, hence smooth; so it is compatible with every chart of the maximal atlas and belongs to it (Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]). Now $F(U) \subseteq V \cap V_0$: for $a \in \varphi(U)$ the point $y = F(\varphi^{-1}(a))$ lies in $V \cap V_0$, so $\psi_0^{-1}(\psi_0(y)) = y$. Hence on $\varphi(U)$
+> *Step 2: a chart for $F$ at $p$ landing inside $V$.* Since $F$ is smooth, there are smooth charts $(U_0, \varphi)$ of $M$ with $p \in U_0$ and $(V_0, \psi_0)$ of $N$ with $F(U_0) \subseteq V_0$ such that $\psi_0 \circ F \circ \varphi^{-1}$ is smooth. The chart $(V_0,\psi_0)$ need not be the $(V,\psi)$ of Step 1, so we adjust. Put $U = U_0 \cap F^{-1}(V)$ and keep the coordinate map $\varphi|_U$. By Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]](1), applied to the continuous map $F$, the chart $(V, \psi)$ of Step 1 and the chart $(U_0, \varphi)$: $U$ is an open neighborhood of $p$, since $F$ is continuous; $(U, \varphi|_U)$ is still a smooth chart, a restriction of one to an open subset (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)); and $F(U) \subseteq V$. Now $F(U) \subseteq V \cap V_0$: for $a \in \varphi(U)$ the point $y = F(\varphi^{-1}(a))$ lies in $V \cap V_0$, so $\psi_0^{-1}(\psi_0(y)) = y$. Hence on $\varphi(U)$
 >
 > $$
 > \psi \circ F \circ \varphi^{-1} = (\psi \circ \psi_0^{-1}) \circ (\psi_0 \circ F \circ \varphi^{-1}),
@@ -176,7 +198,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-5
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§17 Differentiable Structures#^lem-17-6|§17.6]]
 
 > [!theorem] Proposition §19.6: Inclusions of and Maps into Open Subsets
 > Let $M$ and $N$ be smooth manifolds and $S \subseteq M$ open, with the smooth structure of Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]], and let $\iota : S \to M$ be the inclusion.
@@ -190,7 +212,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 > [!proof]+ Proof
 > *(Not from lecture; filled in — these are used, mostly tacitly, wherever a map is restricted to, or lands in, an open subset.)* Throughout, the smooth charts of $S$ are the smooth charts of $M$ with domain in $S$ (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](2)).
 >
-> *(1)* $\iota$ is continuous, as the inclusion of a subspace. Let $p \in S$ and let $(U, \varphi)$ be a smooth chart of $M$ at $p$ with $U \subseteq S$ (restrict any chart at $p$ to its intersection with $S$, Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](1)). It is a chart of $S$ and of $M$, $\iota(U) = U$, and the coordinate representation of $\iota$ in these charts is
+> *(1)* $\iota$ is continuous, as the inclusion of a subspace. Let $p \in S$ and let $(U, \varphi)$ be a smooth chart of $M$ at $p$ with $U \subseteq S$ (restrict any chart at $p$ to its intersection with $S$: a smooth chart of $M$ by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), and a chart of $S$ by Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](1)). It is a chart of $S$ and of $M$, $\iota(U) = U$, and the coordinate representation of $\iota$ in these charts is
 >
 > $$
 > \varphi \circ \iota \circ \varphi^{-1} = \mathrm{id}_{\varphi(U)} ,
@@ -200,7 +222,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 >
 > *(2)* $F|_S = F \circ \iota$ is a composite of smooth maps, hence smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]).
 >
-> *(3)* If $G$ is smooth, so is $\iota \circ G$, by (1) and Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]. Conversely, suppose $\iota \circ G$ is smooth. Then $G$ is continuous into $S$: for $O \subseteq S$ open in $S$, $O$ is open in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so $G^{-1}(O) = (\iota \circ G)^{-1}(O)$ is open. Let $x \in P$, and choose a smooth chart $(U, \varphi)$ of $M$ at $G(x)$ with $U \subseteq S$, a chart of $S$ as well, and a smooth chart $(W, \chi)$ of $P$ at $x$ with $G(W) \subseteq U$ (shrink $W$ to $W \cap G^{-1}(U)$, open by continuity). The coordinate representation of $G$ in $\chi$ and $\varphi$ is
+> *(3)* If $G$ is smooth, so is $\iota \circ G$, by (1) and Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]. Conversely, suppose $\iota \circ G$ is smooth. Then $G$ is continuous into $S$: for $O \subseteq S$ open in $S$, $O$ is open in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so $G^{-1}(O) = (\iota \circ G)^{-1}(O)$ is open. Let $x \in P$, and choose a smooth chart $(U, \varphi)$ of $M$ at $G(x)$ with $U \subseteq S$, a chart of $S$ as well, and a smooth chart $(W, \chi)$ of $P$ at $x$ with $G(W) \subseteq U$ (shrink any smooth chart of $P$ at $x$ to its intersection with $G^{-1}(U)$, open by continuity: Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]](1), applied to the continuous map $G : P \to S$ and the chart $(U, \varphi)$ of $S$). The coordinate representation of $G$ in $\chi$ and $\varphi$ is
 >
 > $$
 > \varphi \circ G \circ \chi^{-1} = \varphi \circ (\iota \circ G) \circ \chi^{-1} \quad \text{on } \chi(W),
@@ -210,7 +232,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-6
 
-*Uses:* [[§17 Differentiable Structures#^prop-17-7|§17.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
+*Uses:* [[§17 Differentiable Structures#^prop-17-7|§17.7]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!theorem] Proposition §19.7: Being Diffeomorphic Is an Equivalence Relation
 > 1. Being diffeomorphic is an equivalence relation on smooth manifolds.
@@ -333,7 +355,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 >
 > the identity of $\psi(V)$, which is smooth; so $h$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]). For $h^{-1} : N \to X$ at $y \in N$ use a chart $(V,\psi)$ at $y$ and $(h^{-1}(V), \psi \circ h)$, which contains $h^{-1}(V)$; the representation is $(\psi \circ h) \circ h^{-1} \circ \psi^{-1} = \mathrm{id}_{\psi(V)}$, smooth. So $h$ is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
 >
-> (3) Suppose $h$ is a diffeomorphism for some smooth structure $\mathcal{S}$ on $X$, and let $(W, \chi) \in \mathcal{S}$. Then $(\psi \circ h) \circ \chi^{-1} = \psi \circ h \circ \chi^{-1}$ is a coordinate representation of $h$, and $\chi \circ (\psi \circ h)^{-1} = \chi \circ h^{-1} \circ \psi^{-1}$ one of $h^{-1}$; both are smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]. In detail, fix a chart $(h^{-1}(V), \psi \circ h)$ of $\mathcal{A}_h$; if $W \cap h^{-1}(V) = \emptyset$ the two charts are compatible by Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]. Otherwise put $W' = W \cap h^{-1}(V)$, open in $X$, and $V' = V \cap h(W)$, open in $N$ ($h$ is a homeomorphism), so that $h(W') = V'$. The restriction $(W', \chi|_{W'})$ belongs to $\mathcal{S}$ and $(V', \psi|_{V'})$ to the maximal atlas of $N$, because the restriction of a chart of a maximal atlas to an open subset has as transition functions the restrictions of the original ones to open sets, so it is compatible with every chart of the atlas and belongs to it by maximality (Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]).
+> (3) Suppose $h$ is a diffeomorphism for some smooth structure $\mathcal{S}$ on $X$, and let $(W, \chi) \in \mathcal{S}$. Then $(\psi \circ h) \circ \chi^{-1} = \psi \circ h \circ \chi^{-1}$ is a coordinate representation of $h$, and $\chi \circ (\psi \circ h)^{-1} = \chi \circ h^{-1} \circ \psi^{-1}$ one of $h^{-1}$; both are smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]. In detail, fix a chart $(h^{-1}(V), \psi \circ h)$ of $\mathcal{A}_h$; if $W \cap h^{-1}(V) = \emptyset$ the two charts are compatible by Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]. Otherwise put $W' = W \cap h^{-1}(V)$, open in $X$, and $V' = V \cap h(W)$, open in $N$ ($h$ is a homeomorphism), so that $h(W') = V'$. The restriction $(W', \chi|_{W'})$ belongs to $\mathcal{S}$ and $(V', \psi|_{V'})$ to the maximal atlas of $N$, by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), applied in the smooth manifold $(X, \mathcal{S})$ to the open subset $W'$ of $W$ and in $N$ to the open subset $V'$ of $V$: the restriction of a chart of a maximal atlas to an open subset has as transition functions the restrictions of the original ones to open sets, so it is compatible with every chart of the atlas and belongs to it by maximality.
 > - The transition $(\psi \circ h) \circ \chi^{-1}$ on $\chi(W')$ is $\psi \circ h \circ (\chi|_{W'})^{-1}$, the coordinate representation of $h$ in the charts $(W', \chi|_{W'})$ of $X$ and $(V, \psi)$ of $N$, which satisfy $h(W') \subseteq V$. Since $h$ is smooth, it is smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]].
 > - The transition $\chi \circ (\psi \circ h)^{-1} = \chi \circ h^{-1} \circ \psi^{-1}$ on $(\psi \circ h)(W') = \psi(V')$ is the coordinate representation of $h^{-1}$ in the charts $(V', \psi|_{V'})$ of $N$ and $(W, \chi)$ of $X$, which satisfy $h^{-1}(V') = W' \subseteq W$. Since $h^{-1}$ is smooth, it is smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]].
 >
@@ -341,7 +363,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-8
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§2 Topological Manifolds#^prop-2-11|§2.11]]
+*Uses:* [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]]
 
 > [!definition] Definition §19.6: Transported Smooth Structure
 > In the situation of [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], the smooth structure on $X$ generated by $\mathcal{A}_h$ — the unique one for which $h$ is a diffeomorphism — is the smooth structure **transported** along $h$.

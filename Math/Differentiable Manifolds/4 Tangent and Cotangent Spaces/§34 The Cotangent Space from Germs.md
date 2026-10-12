@@ -92,7 +92,7 @@ tags: [differentiable-manifolds, math591]
 > \frac{\partial\big(x^i - x^i(p)\big)}{\partial x^j}(p) = \frac{\partial x^i}{\partial x^j}(p) - 0 = \delta^i_j ,
 > $$
 >
-> because a derivation kills constants (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)) and $\partial x^i/\partial x^j(p) = \delta^i_j$ (Step 1 of the proof of Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
+> because a derivation kills constants (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)) and $\partial x^i/\partial x^j(p) = dx^i|_p(\partial/\partial x^j|_p) = \delta^i_j$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], then Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]: the $dx^i|_p$ are the basis dual to the $\partial/\partial x^j|_p$, Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]).
 >
 > *The expansion.* Let $[f] \in I_p$, write $c_i = \partial f/\partial x^i(p)$, and put $g = f - \sum_i c_i\,(x^i - x^i(p))$ near $p$. Then $g(p) = f(p) - \sum_i c_i \cdot 0 = 0$, and for each $j$
 >
@@ -114,7 +114,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-34-2
 
-*Uses:* [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]], [[§34 The Cotangent Space from Germs#^def-34-1|Def. §34.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]]
 
 This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]): the coefficients of ${[}[f]{]}$ are the first partials of $f$, just as the coefficients of a derivation $D$ were its values $D[x^i]$.
 
@@ -189,7 +189,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 > *(1)* Apply Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]] with $V = T_pM$, $W = I_p/I_p^2$ and $B = \langle\ ,\ \rangle$. Its hypotheses hold: the pairing is bilinear and non-degenerate (Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]]), and $T_pM$ is finite-dimensional, of dimension $m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). So the two induced maps of Definition [[§21 Linear Algebra Toolkit#^def-21-4|§21.4]],
 >
 > $$
-> B^\flat : T_pM \to \big(I_p/I_p^2\big)^*, \ \ D \mapsto \langle D, \cdot\,\rangle, \qquad\qquad \Phi = B^\sharp : I_p/I_p^2 \to (T_pM)^*, \ \ {[}[f]{]} \mapsto \langle \cdot\,, {[}[f]{]} \rangle,
+> B^\flat : T_pM \to \big(I_p/I_p^2\big)^{\ast}, \ \ D \mapsto \langle D, \cdot\,\rangle, \qquad\qquad \Phi = B^\sharp : I_p/I_p^2 \to (T_pM)^{\ast}, \ \ {[}[f]{]} \mapsto \langle \cdot\,, {[}[f]{]} \rangle,
 > $$
 >
 > are isomorphisms.
@@ -208,13 +208,13 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 > \Phi\big({[}[x^i - x^i(p)]{]}\big) = d\big(x^i - x^i(p)\big)_p = dx^i|_p - d\big(x^i(p)\big)_p = dx^i|_p ,
 > $$
 >
-> because the differential of a constant $c$ is $0$: $dc_p(D) = D[\underline{c}] = 0$ for every $D$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)). The $dx^i|_p$ are the basis dual to the $\partial/\partial x^i|_p$ by Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]].
+> because the differential of a constant function $c$ is $0$: by Definition [[§32 The Cotangent Space#^def-32-5|§32.5]], $dc_p = \iota_c \circ c_{\ast p}$, and $c_{\ast p} = 0$ by Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]](1), $c$ being a constant map $M \to \mathbb{R}$. Directly, $dc_p(D) = D[\underline{c}] = 0$ for every $D$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)). The $dx^i|_p$ are the basis dual to the $\partial/\partial x^i|_p$ by Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]].
 >
 > *No chart.* The pairing $\langle D, {[}[f]{]} \rangle = D[f]$ is defined without coordinates, and so are $B^\flat$ and $\Phi$, which are built from it alone; a chart enters only in (3), to name the bases.
 
 ^pf-34-4
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]], [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^def-34-2|Def. §34.2]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§32 The Cotangent Space#^cor-32-3|§32.3]]
+*Uses:* [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]
 
 ![[m591-13-3.svg]]
 *The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. Uribe's $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
@@ -298,7 +298,13 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 *Uses:* [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§21 Linear Algebra Toolkit#^def-21-3|Def. §21.3]]
 
 > [!remark] Remark: The Two Differentials Meet
-> In $\mathbb{R}^n$, with the dot-product identification of [[§33 Covectors in Coordinates#^rem-33-2|Remark (Differential — Not Gradient)]], the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_{\ast}$ “we should have called the differential of $F$ ages ago”: for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{\ast p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
+> In $\mathbb{R}^n$, with the dot-product identification $v \mapsto \xi_v$ of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]], under which $dh_p = \xi_{\nabla h(p)}$ (its part (3), with the gradient of Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]]), the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Explicitly, for $F$ smooth on an open subset of $\mathbb{R}^m$ with values in $\mathbb{R}^n$ and $J_F(p)$ its Jacobian, $F_{\ast p}(D_w|_p) = D_{J_F(p)w}|_{F(p)}$ (Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), so for every $w \in \mathbb{R}^m$
+>
+> $$
+> \xi_{\nabla(f \circ F)(p)}\big(D_w|_p\big) = d(f \circ F)_p\big(D_w|_p\big) = df_{F(p)}\big(D_{J_F(p)w}|_{F(p)}\big) = \nabla f(F(p)) \cdot J_F(p)w = \big(J_F(p)^{\mathsf T}\, \nabla f(F(p))\big) \cdot w = \xi_{J_F(p)^{\mathsf T} \nabla f(F(p))}\big(D_w|_p\big) ,
+> $$
+>
+> the first and third equalities being part (3) of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] (for $f \circ F$ at $p$, and for $f$ at $F(p)$), the second the proposition above together with the definition of $F_p^{\ast}$; as $v \mapsto \xi_v$ is injective, $\nabla(f \circ F)(p) = J_F(p)^{\mathsf T}\, \nabla f(F(p))$. Uribe added that the pushforward $F_\ast$ “we should have called the differential of $F$ ages ago”: for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{\ast p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
 
 ^rem-34-4
 

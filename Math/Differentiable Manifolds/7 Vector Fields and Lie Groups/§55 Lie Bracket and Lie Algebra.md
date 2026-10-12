@@ -32,7 +32,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^lem-55-1
 
 > [!proof]+ Proof
-> *(Lecture 16 — “tedious algebra \ldots the key thing is the product rule.”)* By Definition [[§53 Vector Fields#^def-53-5|§53.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§53 Vector Fields#^lem-53-3|§53.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
+> *(Lecture 16 — “tedious algebra … the key thing is the product rule.”)* By Definition [[§53 Vector Fields#^def-53-5|§53.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§53 Vector Fields#^lem-53-3|§53.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
 >
 > *An operator.* For $f \in C^\infty(M)$, $\mathbf{Y}f \in C^\infty(M)$ by Lemma [[§53 Vector Fields#^lem-53-3|§53.3]], and then $\mathbf{X}(\mathbf{Y}f) \in C^\infty(M)$ by the same lemma applied to the smooth function $\mathbf{Y}f$. Likewise $\mathbf{X}f$ and then $\mathbf{Y}(\mathbf{X}f)$ are smooth. So their difference $[\mathbf{X}, \mathbf{Y}](f)$ is smooth.
 >
@@ -175,19 +175,25 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > v\big[\mathbf{W} f\big] = \sum_{j=1}^m \Big( v\big[W^j\big]\, \frac{\partial f}{\partial x^j}(p) + W^j(p)\, v\Big[\frac{\partial f}{\partial x^j}\Big] \Big) .
 > $$
 >
-> At a critical point $\partial f/\partial x^j(p) = df_p(\partial/\partial x^j|_p) = 0$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]), so the first terms vanish. In the second, $W^j(p) = w^j$, the components of $w = \mathbf{W}_p$, and with $v = \sum_i v^i\, \partial/\partial x^i|_p$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) and Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]](1),
+> At a critical point $\partial f/\partial x^j(p) = df_p(\partial/\partial x^j|_p) = 0$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]), so the first terms vanish. In the second, $W^j(p) = w^j$, the components of $w = \mathbf{W}_p$. By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]](1), in its form $(\mathrm{Hess}_p f)^\sharp(\partial/\partial x^j|_p) = d(\partial f/\partial x^j)_p$, which does not use the symmetry of the Hessian,
 >
 > $$
-> v\Big[\frac{\partial f}{\partial x^j}\Big] = \sum_{i=1}^m v^i\, \frac{\partial}{\partial x^i}\Big|_p\Big(\frac{\partial f}{\partial x^j}\Big) = \sum_{i=1}^m v^i\, H_{ij}(p) .
+> v\Big[\frac{\partial f}{\partial x^j}\Big] = d\Big(\frac{\partial f}{\partial x^j}\Big)_p(v) = (\mathrm{Hess}_p f)^\sharp\Big(\frac{\partial}{\partial x^j}\Big|_p\Big)(v) = \mathrm{Hess}_p f\Big(v, \frac{\partial}{\partial x^j}\Big|_p\Big) ;
 > $$
 >
-> So $v[\mathbf{W}f] = \sum_{i,j} H_{ij}(p)\, v^i w^j = \mathrm{Hess}_p f(v, w)$, which involves $\mathbf{W}$ only through $w$.
+> in components, with $v = \sum_i v^i\, \partial/\partial x^i|_p$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) and Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]](1), this is $\sum_i v^i\, \frac{\partial}{\partial x^i}\big|_p\big(\frac{\partial f}{\partial x^j}\big) = \sum_i v^i\, H_{ij}(p)$. So, by the bilinearity of $\mathrm{Hess}_p f$ (Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]]),
+>
+> $$
+> v\big[\mathbf{W}f\big] = \sum_{j=1}^m w^j\, \mathrm{Hess}_p f\Big(v, \frac{\partial}{\partial x^j}\Big|_p\Big) = \mathrm{Hess}_p f\Big(v, \sum_{j=1}^m w^j\, \frac{\partial}{\partial x^j}\Big|_p\Big) = \mathrm{Hess}_p f(v, w) = \sum_{i,j} H_{ij}(p)\, v^i w^j ,
+> $$
+>
+> which involves $\mathbf{W}$ only through $w$.
 >
 > For the last display: by what was just shown, $\mathrm{Hess}_p f(v, w) = v[\mathbf{W}f] = \mathbf{V}_p[\mathbf{W}f] = (\mathbf{V}(\mathbf{W}f))(p)$, and likewise $\mathrm{Hess}_p f(w, v) = (\mathbf{W}(\mathbf{V}f))(p)$. Their difference is $([\mathbf{V}, \mathbf{W}]f)(p)$ (Definition [[§55 Lie Bracket and Lie Algebra#^def-55-1|§55.1]]); $[\mathbf{V}, \mathbf{W}]$ is a vector field (Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]), so this is $[\mathbf{V}, \mathbf{W}]_p[f] = df_p([\mathbf{V}, \mathbf{W}]_p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]), which is $0$ because $df_p = 0$. This is a second proof of the symmetry of $\mathrm{Hess}_p f$, without Clairaut's theorem.
 
 ^pf-55-3
 
-*Uses:* [[§53 Vector Fields#^prop-53-1|§53.1]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]], [[§55 Lie Bracket and Lie Algebra#^def-55-1|Def. §55.1]], [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]], [[§32 The Cotangent Space#^prop-32-2|§32.2]]
+*Uses:* [[§53 Vector Fields#^prop-53-1|§53.1]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]], [[§52 Critical Points and the Hessian#^def-52-2|Def. §52.2]], [[§55 Lie Bracket and Lie Algebra#^def-55-1|Def. §55.1]], [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]
 
 > [!definition] Definition §55.2: Lie Algebra
 > A (real) **Lie algebra** $\mathfrak{g}$ is a real [[§2 Definition of Vector Space#^ladr-1-20|vector space]] together with a [[§38 Tensor Products#^ladr-9-77|bilinear]], skew-symmetric operation $[\cdot,\cdot] : \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$, the **Lie bracket**, satisfying the **Jacobi identity**

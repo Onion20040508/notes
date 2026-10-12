@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 37.9", "Lee Corollary 5.14", "Lee Proposition 5.38"]
+aliases: ["MATH 591 37.12", "Lee Corollary 5.14", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§37 Regular Submanifolds#^thm-37-12]]
@@ -13,21 +13,12 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
-- [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Theorem §28.6: The Chain Rule]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Definition §29.1: Coordinate Functions of a Chart]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|Theorem §29.9: Dimension of the Tangent Space]]
-- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4: The Tangent Space of a Product]]
-- [[§36 Submersions#^def-36-3|Definition §36.3: Regular Points and Critical Points]]
-- [[§36 Submersions#^def-36-4|Definition §36.4: Regular Values and Critical Values]]
+- [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|Lemma §28.10: The Pushforward Along a Constant Map]]
 - [[§36 Submersions#^thm-36-6|Theorem §36.6: Local Normal Form for Submersions]]
-- [[§37 Regular Submanifolds#^def-37-2|Definition §37.2: Regular Submanifold]]
 - [[§37 Regular Submanifolds#^prop-37-2|Proposition §37.2: Two Observations on Adapted Charts]]
-- [[§37 Regular Submanifolds#^def-37-3|Definition §37.3: Adapted Chart]]
 - [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]
 - [[§37 Regular Submanifolds#^prop-37-6|Proposition §37.6: Tangent Spaces of a Regular Submanifold]]
-
-## Its proof uses (other subjects)
-- [[Fundamental theorem of linear maps]] (Linear Algebra)
+- [[§37 Regular Submanifolds#^lem-37-11|Lemma §37.11: Level Sets Near a Regular Point]]
 
 ## Used in (Differentiable Manifolds)
 - [[§37 Regular Submanifolds#^cor-37-13|Corollary §37.13: Fibres of Submersions Are Regular Submanifolds]]
