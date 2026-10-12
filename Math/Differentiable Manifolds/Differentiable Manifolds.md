@@ -164,7 +164,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§37 Determinants#^ladr-9-46|Theorem 9.46: Formula for determinant of a matrix]] (2)
 
 **[[Group Theory]]**
-- [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]] (4)
+- [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]] (5)
 - [[§4 Subgroups#^def-4-1|Definition §4.1: Subgroup]] (3)
 - [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Corollary §21.4: Parity of a Permutation]] (1)
 - [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Theorem §21.2: Three Formulas for the Sign]] (1)

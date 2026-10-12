@@ -20,6 +20,9 @@ tags: [differentiable-manifolds, hub]
 - [[§30 The Differential in Coordinates#^prop-30-7|Proposition §30.7: Translations Identify the Tangent Spaces of a Vector Space]]
 - [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2: Velocity of a Curve]]
 - [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2: Every Tangent Vector Is a Velocity]]
+- [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Definition §31.3: Partial Derivative in One Factor]]
+- [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|Proposition §31.7: Partial Derivatives by Curves and in Coordinates]]
+- [[§52 Vector Fields#^prop-52-1|Proposition §52.1: Vector Fields in Coordinates]]
 - [[§52 Vector Fields#^def-52-2|Definition §52.2: The Space of Vector Fields]]
 - [[§52 Vector Fields#^lem-52-8|Lemma §52.8: A Smoothness Criterion for Vector Fields]]
 - [[§56 Lie Groups and Left-Invariant Vector Fields#^def-56-1|Definition §56.1: Lie Group]]
@@ -29,6 +32,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§56 Lie Groups and Left-Invariant Vector Fields#^ex-56-2|Example §56.2: The Additive Group of a Vector Space]]
+- [[§56 Lie Groups and Left-Invariant Vector Fields#^prop-56-7|Proposition §56.7: Lie Group Morphisms Preserve Brackets]]
 
 ## Connections
 - TODO

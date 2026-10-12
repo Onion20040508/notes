@@ -9,7 +9,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (4), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (3), [[· 3 Smooth Structures|3 Smooth Structures]] (30), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (56), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (6), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (6)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (4), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (3), [[· 3 Smooth Structures|3 Smooth Structures]] (31), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (58), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (6), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (6)
 **Used by:** —
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Topology]] (2), [[Multivariable Analysis]] (2)
 
@@ -25,7 +25,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§52 Vector Fields#^prop-52-1|Proposition §52.1: Vector Fields in Coordinates]]: 21 later results
-- [[§52 Vector Fields#^prop-52-2|Proposition §52.2: The Space of Vector Fields Is a Real Vector Space]]: 21 later results
-- [[§52 Vector Fields#^prop-52-4|Proposition §52.4: Bump Functions Exist]]: 20 later results
-- [[§52 Vector Fields#^lem-52-3|Lemma §52.3: A Vector Field Is a Derivation]]: 19 later results
+- [[§52 Vector Fields#^prop-52-1|Proposition §52.1: Vector Fields in Coordinates]]: 22 later results
+- [[§52 Vector Fields#^prop-52-2|Proposition §52.2: The Space of Vector Fields Is a Real Vector Space]]: 22 later results
+- [[§52 Vector Fields#^prop-52-4|Proposition §52.4: Bump Functions Exist]]: 21 later results
+- [[§52 Vector Fields#^lem-52-3|Lemma §52.3: A Vector Field Is a Derivation]]: 20 later results

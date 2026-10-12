@@ -7859,6 +7859,83 @@ D_\gamma = \Theta\big(D_{\gamma_1}, D_{\gamma_2}\big) = \iota_{1*}D_{\gamma_1} +
 
 This is the second of Uribe's three views, and it uses the velocities of Assignment~3, Problem~2 (\ref{sub:velocities}).
 
+% ============================================================================
+% Lecture 18 (Mon Oct 12, 2026): partial differentiation
+% ============================================================================
+
+\textit{Lecture 18. Uribe opened with this construction --- ``I realize that we can't prove the theorem of last time completely'' without it --- to finish the proof that left-invariant fields are smooth (Theorem~\ref{thm:lie-algebra-TeG}). It is the partial derivative in the $M_1$ variables above, now with the base point in the other factor allowed to vary.}
+
+\begin{defbox}[Partial Derivative in One Factor]\deflabel{def:partial-derivative-factor}
+Let $\varphi : M \times N \to \mathbb{R}$ be smooth, $p \in M$ and $v \in T_pM$. The \textbf{partial derivative of $\varphi$ in the direction $v$} is the function $\partial_v\varphi : N \to \mathbb{R}$,
+\[
+\partial_v\varphi(q) = \Theta(v, 0)[\varphi] = (\iota^q_{*}v)[\varphi] = v\big[\varphi(\cdot, q)\big], \qquad q \in N,
+\]
+where $\Theta(v, 0) \in T_{(p,q)}(M \times N)$ is the vector $(v, 0)$ under $T_{(p,q)}(M \times N) = T_pM \oplus T_qN$ (Theorem~\ref{thm:tangent-product}), $0 \in T_qN$, and $\iota^q : M \to M \times N$, $x \mapsto (x, q)$, is the slice inclusion (Definition~\ref{def:slice-inclusions}). In the same way, for $w \in T_qN$, the partial derivative \textbf{in the second variable} is $\partial_w\varphi : M \to \mathbb{R}$, $\partial_w\varphi(p) = \Theta(0, w)[\varphi] = w\big[\varphi(p, \cdot)\big]$.
+\end{defbox}
+
+``This is our notation. I don't think it's in Lee.'' The dependence on $q$ ``is hidden in the fact that'' the pair $(v, 0)$ is a tangent vector at $(p, q)$: the $0$ is the zero of $T_qN$, so the point at which $(v,0)$ sits moves with $q$. The three equal expressions in the definition are equal by the definition of $\Theta$ and of the pushforward (Definition~\ref{def:pushforward}): $\Theta(v, 0) = \iota^q_*v + \iota^p_*0 = \iota^q_*v$, and $(\iota^q_*v)[\varphi] = v[\varphi \circ \iota^q]$ with $(\varphi \circ \iota^q)(x) = \varphi(x, q)$.
+
+\begin{propbox}[Partial Derivatives by Curves and in Coordinates]\thmlabel{prop:partial-derivative-factor}
+Let $\varphi \in C^\infty(M \times N)$, $p \in M$ and $v \in T_pM$.
+\begin{enumerate}[nosep]
+\item If $\gamma : (-\varepsilon, \varepsilon) \to M$ is a smooth curve \emph{adapted to $v$}, i.e.\ $\gamma(0) = p$ and $D_\gamma = v$, then for every $q \in N$
+\[
+\partial_v\varphi(q) = \frac{d}{dt}\Big|_{t=0} \varphi\big(\gamma(t), q\big).
+\]
+\item In charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $q$, if $v = \sum_{j=1}^m v^j\, \partial/\partial x^j|_p$, then
+\[
+\partial_v\varphi(q) = \sum_{j=1}^m v^j\, \frac{\partial\varphi}{\partial x^j}(p, q) .
+\]
+\item $\partial_v\varphi \in C^\infty(N)$.
+\end{enumerate}
+The same holds in the second variable: for $w \in T_qN$, $\partial_w\varphi \in C^\infty(M)$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~18, in the lecture's order: curves, then coordinates, from which smoothness is read off. Details filled in.)}
+
+\emph{1. Curves.} ``Using curves, which I have said is a very good thing to do when you're working on manifolds'': $t \mapsto (\gamma(t), q) = \iota^q(\gamma(t))$ ``is a horizontal curve \ldots\ changing the first entry and not the second.'' By the definition and Definition~\ref{def:velocity},
+\[
+\partial_v\varphi(q) = v[\varphi \circ \iota^q] = D_\gamma[\varphi \circ \iota^q] = \frac{d}{dt}\Big|_{t=0} (\varphi \circ \iota^q)(\gamma(t)) = \frac{d}{dt}\Big|_{t=0} \varphi\big(\gamma(t), q\big).
+\]
+Equivalently, $\Theta(v, 0)$ is the velocity of the horizontal curve (Corollary~\ref{cor:tangent-product-curves}).
+
+\emph{2. Coordinates.} ``The $x$ and the $y$ together form a coordinate chart of $M \times N$'' (Definition~\ref{def:product-manifold}). By linearity of $\Theta$ and Corollary~\ref{cor:tangent-product-coords}, $\Theta(v, 0) = \sum_j v^j\, \iota^q_*\big(\partial/\partial x^j|_p\big) = \sum_j v^j\, \partial/\partial x^j|_{(p,q)}$, and applying this to $\varphi$ gives the formula: ``we're just differentiating in the $x$ variable.''
+
+\emph{3. Smoothness.} ``This coordinate description \ldots\ makes it clear that whenever we do this construction, it's a smooth function on $N$.'' \textit{(Filled in.)} Fix charts $(U, \phi_U = (x^j))$ of $M$ at $p$ and $(V, \psi = (y^k))$ of $N$, and let $\hat\varphi(r, s) = \varphi\big(\phi_U^{-1}(r), \psi^{-1}(s)\big)$, a smooth function on $\phi_U(U) \times \psi(V)$, the coordinate representation of $\varphi$ in the product chart. By 2, for $q \in V$,
+\[
+\partial_v\varphi\big(\psi^{-1}(s)\big) = \sum_{j=1}^m v^j\, \frac{\partial\hat\varphi}{\partial r^j}\big(\phi_U(p), s\big), \qquad s \in \psi(V).
+\]
+Each $\partial\hat\varphi/\partial r^j$ is smooth, and $s \mapsto (\phi_U(p), s)$ is smooth, so the right side is a smooth function of $s$: the coordinate representation of $\partial_v\varphi$ on $V$ is smooth. Charts $(V, \psi)$ cover $N$, so $\partial_v\varphi \in C^\infty(N)$. The second variable is the same with the factors exchanged.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\fill[gray!5] (0,0) rectangle (4.4,3); \draw[gray!55] (0,0) rectangle (4.4,3);
+\node[font=\footnotesize, gray!70!black, anchor=south east] at (4.4,3.02) {$M \times N$};
+\draw[violet!75!black, thick] (0,-0.6) -- (4.4,-0.6) node[right, font=\footnotesize] {$M$};
+\draw[teal!60!black, thick] (-0.6,0) -- (-0.6,3) node[above, font=\footnotesize] {$N$};
+\draw[gray!55, dashed] (1.8,0) -- (1.8,3);
+\node[font=\scriptsize, gray!70!black, anchor=south] at (1.8,3.02) {$\{p\} \times N$};
+\foreach \y/\lab in {0.6/q_1, 1.5/q_2, 2.4/q_3} {
+  \draw[violet!40] (0,\y) -- (4.4,\y);
+  \draw[orange!85!black, thick] (1.2,\y) -- (2.4,\y);
+  \draw[->, very thick, orange!85!black] (1.8,\y) -- (2.75,\y);
+  \fill (1.8,\y) circle (1.4pt);
+  \fill[teal!60!black] (-0.6,\y) circle (1.4pt) node[left, font=\scriptsize] {$\lab$};
+}
+\node[font=\scriptsize, anchor=west, orange!85!black] at (4.5,2.4) {$\Theta(v, 0)$ at $(p, q_3)$};
+\node[font=\scriptsize, anchor=west, violet!75!black] at (4.5,1.5) {curve $t \mapsto \big(\gamma(t), q_2\big)$};
+\fill[violet!75!black] (1.8,-0.6) circle (1.5pt) node[below, font=\scriptsize] {$p$};
+\draw[->, very thick, violet!75!black] (1.8,-0.6) -- (2.75,-0.6) node[below, font=\scriptsize] {$v$};
+\node[font=\scriptsize, anchor=west, align=left] at (4.5,0.55) {$\partial_v\varphi(q)$: differentiate $\varphi$ along the\\ horizontal arrow at height $q$; let $q$ vary.};
+\end{tikzpicture}
+\end{center}
+
+The picture of the definition: one horizontal curve through $(p, q)$ for each $q$, all with the same velocity $v$ in the $M$ direction. Differentiating $\varphi$ along each gives one number per $q$, and Proposition~\ref{prop:partial-derivative-factor}(3) says these numbers vary smoothly with $q$.
+
+\textbf{Transcription note (Lecture 18).} Page~47 of the handwritten notes writes the splitting as ``$T_{(p,q)}(M \times N) = T_pM \oplus T_qM$'' (Uribe corrected it in lecture: ``should be an $N$''); it is $T_pM \oplus T_qN$. The curves line has ``$\forall\, q \in M$'' for $q \in N$, and the coordinate formula sums to $n$ and evaluates at $q$; the sum runs to $m = \dim M$, and the partials are evaluated at $(p, q)$.
+
 \section{The Cotangent Space}\label{sec:cotangent}
 
 \roadmark{Stage: abstract, dual}{The cotangent space as the dual of the tangent space, and the differential of a function as a covector; in coordinates (\ref{sec:covector-coords}) and from germs alone (\ref{sec:cotangent-germs}) after this.}
@@ -15306,7 +15383,7 @@ with the Lie bracket of vector fields.
 \leeref{Ch.~8, \emph{Lie Algebras}}
 \end{defbox}
 
-\textit{Status.} Defined in Lecture~16 --- ``this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.'' For $\GL(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ (Example~\ref{ex:left-invariant-GL}). The two facts announced then were proved in Lecture~17, in \S\ref{sub:lie-algebra-TeG} below: $\mathfrak{g}$ is closed under the bracket, and $\mathbf{X} \mapsto \mathbf{X}_e$ is an isomorphism onto $T_eG$.
+\textit{Status.} Defined in Lecture~16 --- ``this is going to be quickly identified with the tangent space at the identity. But originally we think of them as a certain very special type of vector field, because that's where the Lie bracket comes from.'' For $\GL(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ (Example~\ref{ex:left-invariant-GL}). The two facts announced then were proved in Lecture~17, in \S\ref{sub:lie-algebra-TeG} below: $\mathfrak{g}$ is closed under the bracket, and $\mathbf{X} \mapsto \mathbf{X}_e$ is an isomorphism onto $T_eG$ (its last step, smoothness, completed in Lecture~18).
 
 \subsection{The Lie Algebra and the Tangent Space at the Identity}\label{sub:lie-algebra-TeG}
 
@@ -15353,7 +15430,7 @@ is a linear isomorphism. In particular $\dim \mathfrak{g} = \dim G$.
 \end{thmbox}
 
 \begin{proof}
-\textit{(Lecture~17 --- ``it'll be an incomplete proof \ldots\ there is one detail that we're not prepared to prove.'' The lecture's steps, then that detail.)} $\mathrm{ev}$ is linear: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and $a, b \in \mathbb{R}$, $\mathrm{ev}(a\mathbf{X} + b\mathbf{Y}) = (a\mathbf{X} + b\mathbf{Y})_e = a\,\mathbf{X}_e + b\,\mathbf{Y}_e$ by Definition~\ref{def:vector-fields-space}. It remains to show that $\mathrm{ev}$ is injective and surjective.
+\textit{(Lecture~17 --- ``it'll be an incomplete proof \ldots\ there is one detail that we're not prepared to prove'' --- completed in Lecture~18. The lecture's steps.)} $\mathrm{ev}$ is linear: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and $a, b \in \mathbb{R}$, $\mathrm{ev}(a\mathbf{X} + b\mathbf{Y}) = (a\mathbf{X} + b\mathbf{Y})_e = a\,\mathbf{X}_e + b\,\mathbf{Y}_e$ by Definition~\ref{def:vector-fields-space}. It remains to show that $\mathrm{ev}$ is injective and surjective.
 
 \textit{The basic idea.} For $g \in G$, $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_gG$, and for $\mathbf{X} \in \mathfrak{g}$, left-invariance (Definition~\ref{def:left-invariant}) with $h = e$ reads
 \[
@@ -15372,15 +15449,23 @@ more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. ``There's
 d(L_g)_h\big(\mathbf{X}^v_h\big) = d(L_g)_h\, d(L_h)_e(v) = d(L_g \circ L_h)_e(v) = d(L_{gh})_e(v) = \mathbf{X}^v_{gh} .
 \]
 
-\emph{Smooth.} ``The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point \ldots\ and we don't have the tools to do that at this point.'' \textit{(Not from lecture: Lee's argument, filled in; it uses only Theorem~\ref{thm:every-vector-velocity} and Lemma~\ref{lem:vf-smooth-criterion}. The argument Uribe has in mind, for later, may be different.)} By Lemma~\ref{lem:vf-smooth-criterion} it suffices that $\mathbf{X}^v f$ is smooth for every $f \in C^\infty(G)$. By Theorem~\ref{thm:every-vector-velocity} choose a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to G$ with $\gamma(0) = e$ and $D_\gamma = v$. Then, by the definition of $\mathbf{X}^v$, Definition~\ref{def:pushforward}, and Definition~\ref{def:velocity},
+\emph{Smooth.} Lecture~17 stopped here: ``The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point \ldots\ and we don't have the tools to do that at this point.'' Lecture~18 finished it --- ``in fact, we can just use this partial derivative construction'' (Definition~\ref{def:partial-derivative-factor}). So far $\mathbf{X}^v$ is a left-invariant \emph{rough} field, Lee's term for a section not yet known to be smooth: ``the piece of the construction that has not been justified is that this thing is smooth.''
+
+\emph{The claim.} It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. ``This function is still well defined regardless of whether $\mathbf{X}^v$ is smooth or not \ldots\ because I have a vector at every point, and I can let that act on any function.'' The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition~\ref{prop:vf-coords}); ``but the $a^j$ are precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$.'' This is Lemma~\ref{lem:vf-smooth-criterion}, whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
+
+\emph{The construction.} Let $f \in C^\infty(G)$ and $g \in G$. By the definition of $\mathbf{X}^v$ and of the pushforward (Definition~\ref{def:pushforward}),
 \[
-(\mathbf{X}^v f)(g) = d(L_g)_e(D_\gamma)[f] = D_\gamma[f \circ L_g] = \frac{d}{dt}\Big|_{t=0} f\big(g\,\gamma(t)\big).
+(\mathbf{X}^v f)(g) = d(L_g)_e(v)[f] = v[f \circ L_g] \in \mathbb{R},
 \]
-Put $\phi(t, g) = f(g\,\gamma(t))$ on $(-\varepsilon, \varepsilon) \times G$. It is smooth, as the composite of $(t, g) \mapsto (g, \gamma(t))$, multiplication and $f$ (Lemma~\ref{lem:composition-smooth}). The first map is smooth: in product charts its coordinate representation is $(t, r) \mapsto \big(r, \psi'(\gamma(t))\big)$, where $r$ is the coordinate of $g$ in a chart of $G$ and $\psi'$ is a chart of $G$ near $\gamma(t)$, and both components are smooth because $\gamma$ is. Multiplication is smooth by Definition~\ref{def:lie-group}. So $(\mathbf{X}^v f)(g) = \partial\phi/\partial t\,(0, g)$. In a chart $(U, \psi)$ of $G$ this is a partial derivative of a smooth function of $(t, x)$, evaluated at $t = 0$, hence smooth in $x$: with $\tilde\phi(t, x) = \phi\big(t, \psi^{-1}(x)\big)$, smooth on $(-\varepsilon, \varepsilon) \times \psi(U)$,
+and ``we want to show that as a function of $g$, this is smooth.'' Construct ``a trick that occurred to me''
 \[
-(\mathbf{X}^v f)\big(\psi^{-1}(x)\big) = \frac{\partial\tilde\phi}{\partial t}(0, x), \qquad x \in \psi(U),
+\varphi : G \times G \xrightarrow{\ \text{multiplication}\ } G \xrightarrow{\ f\ } \mathbb{R}, \qquad \varphi(g, x) = f(gx) = (f \circ L_g)(x).
 \]
-and $\partial\tilde\phi/\partial t$ is smooth (all its partial derivatives are partial derivatives of $\tilde\phi$), so its composite with the smooth map $x \mapsto (0, x)$ is smooth. So $\mathbf{X}^v f$ is smooth on each chart domain, hence on $G$; by Lemma~\ref{lem:vf-smooth-criterion}, $\mathbf{X}^v$ is smooth. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$.
+It is smooth, as the composite of the multiplication, smooth by Definition~\ref{def:lie-group}, with $f$ (Lemma~\ref{lem:composition-smooth}). Fixing $g$ in the first variable, $f \circ L_g = \varphi(g, \cdot)$, so by Definition~\ref{def:partial-derivative-factor}, in the second variable with $w = v \in T_eG$,
+\[
+(\mathbf{X}^v f)(g) = v\big[\varphi(g, \cdot)\big] = \partial_v\varphi(g) .
+\]
+``We're letting $v$ act on the second variable, and so that means that it is smooth'': $\partial_v\varphi \in C^\infty(G)$ by Proposition~\ref{prop:partial-derivative-factor}(3). By the claim, $\mathbf{X}^v$ is smooth. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$. ``So this finishes completely the proof of that theorem.''
 
 Finally, a linear isomorphism preserves dimension, so $\dim \mathfrak{g} = \dim T_eG = \dim G$ (Theorem~\ref{thm:tangent-dimension}).
 \end{proof}
@@ -15397,6 +15482,10 @@ Finally, a linear isomorphism preserves dimension, so $\dim \mathfrak{g} = \dim 
 \node[gray!70!black, font=\scriptsize] at (0.0,-0.95) {$L_g$};
 \end{tikzpicture}
 \end{center}
+
+\textbf{Comparison with Lee.} Lee's proof (Theorem~8.37) differentiates $f(g\,\gamma(t))$ along a curve $\gamma$ adapted to $v$, which is Proposition~\ref{prop:partial-derivative-factor}(1) applied to the same $\varphi$: $(\mathbf{X}^v f)(g) = \frac{d}{dt}\big|_{t=0} \varphi(g, \gamma(t))$. The course packages that step once and for all as the partial derivative $\partial_v\varphi$.
+
+On the proof as a whole, Uribe passed on a remark a student made in office hours: ``this subject is not so much about solving problems \ldots\ it's about constructing an architecture inside one's brain.''
 
 \begin{exbox}[The Additive Group of a Vector Space]\exlabel{ex:vs-lie-algebra}
 Let $V$ be a finite-dimensional vector space, a Lie group under addition with identity $0$, so that $L_p = \tau_p$ is translation by $p$. Its left-invariant vector fields are the constant fields $\mathbf{X}^v : p \mapsto D_v|_p$, $v \in V$, and all their brackets vanish: $\mathfrak{g} \cong V$ with the zero bracket.
@@ -15435,7 +15524,7 @@ Let $G = \GL(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subs
 \end{thmbox}
 
 \begin{proof}[Proof (to be filled)]
-Stated in Lecture~17 --- ``for all matrix groups, the answer \ldots\ is just the matrix commutator''; ``that requires computation. You actually have to compute something'' --- to begin on Monday (Lecture~18). The left-invariant fields are already known (Example~\ref{ex:left-invariant-GL}: $\mathbf{X}^A_g = gA$).
+Stated in Lecture~17 --- ``for all matrix groups, the answer \ldots\ is just the matrix commutator''; ``that requires computation. You actually have to compute something.'' Lecture~18 set up the general tool, that Lie group morphisms preserve brackets (\S\ref{sub:lie-group-morphisms}); the computation is planned for Lecture~19, ``first for the general linear group, and then \ldots\ for any linear group.'' The left-invariant fields are already known (Example~\ref{ex:left-invariant-GL}: $\mathbf{X}^A_g = gA$).
 \end{proof}
 
 \begin{rembox}[Left or Right: The Sign of the Bracket]\label{rem:bracket-on-TeG}
@@ -15443,6 +15532,105 @@ Stated in Lecture~17 --- ``for all matrix groups, the answer \ldots\ is just the
 \end{rembox}
 
 \textbf{Transcription note (Lecture 17).} Page~46 of the handwritten notes says the construction gives ``$\mathbf{X} : M \to TM$''; the manifold is the group, $\mathbf{X} : G \to TG$.
+
+\subsection{Lie Group Morphisms}\label{sub:lie-group-morphisms}
+
+\textit{Lecture 18. ``Next, we want to talk about Lie group morphisms and the Lie algebra, because we can do something now that we couldn't before.''}
+
+\begin{rembox}[From Now On: $\mathfrak{g}$ Is $T_eG$]\label{rem:g-is-TeG}
+``From now on, as you can imagine, we will identify'' the Lie algebra with the tangent space at the identity, $\mathfrak{g} \cong T_eG$ by $\mathrm{ev}$ (Theorem~\ref{thm:lie-algebra-TeG}), as vector spaces, ``keeping in mind that the Lie bracket comes from \ldots\ commuting left-invariant fields.'' That is Definition~\ref{def:lie-algebra-of-group} read through Definition~\ref{def:bracket-TeG}: to compute the bracket of $A, B \in T_eG$,
+\begin{enumerate}[nosep]
+\item extend $A$ and $B$ to the left-invariant fields $\mathbf{X}^A$, $\mathbf{X}^B$ (Theorem~\ref{thm:lie-algebra-TeG});
+\item take the commutator $[\mathbf{X}^A, \mathbf{X}^B]$ of vector fields;
+\item evaluate it at the identity: $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$.
+\end{enumerate}
+``That's the definition.'' Elements of $T_eG$ are now written with capital letters: ``I really kind of think of them as matrices.''
+\end{rembox}
+
+\begin{rembox}[Linear Groups]\label{rem:linear-groups}
+Matrix groups ``are called linear groups, by the way. And not every Lie group is isomorphic to a matrix group \ldots\ the nonlinear groups arise naturally from making covers'' of matrix groups. \textit{(Filled in: the standard example is the universal cover of $\SL(2,\mathbb{R})$, a Lie group isomorphic to no group of matrices.)} The question of Lecture~17, restated: for a matrix group, ``can we identify the bracket directly on the tangent space at the identity?'' The answer is the matrix commutator (Theorem~\ref{thm:gl-bracket}); to get there, the course uses the general idea below.
+\end{rembox}
+
+\begin{defbox}[Lie Group Morphism]\deflabel{def:lie-group-morphism}
+Let $H$ and $G$ be Lie groups. A \textbf{Lie group morphism} (homomorphism) $F : H \to G$ is a map that is both smooth and a group morphism: $F(gh) = F(g)F(h)$ for all $g, h \in H$.
+\leeref{Ch.~7, \emph{Lie Group Homomorphisms}}
+\end{defbox}
+
+A Lie group is ``a manifold and a group, and the various maps are smooth'', so a morphism ``preserves both structures.'' In particular $F(e_H) = e_G$. \textit{(Filled in: $F(e_H) = F(e_He_H) = F(e_H)F(e_H)$; multiply on the left by $F(e_H)^{-1}$.)} So $F$ has a differential at the identity,
+\[
+dF_e : T_{e}H \longrightarrow T_{e}G, \qquad \text{that is,} \qquad dF_e : \mathfrak{h} \longrightarrow \mathfrak{g},
+\]
+a linear map between the Lie algebras, and ``the natural question is whether this map preserves commutators.''
+
+\begin{defbox}[Lie Algebra Morphism]\deflabel{def:lie-algebra-morphism}
+Let $\mathfrak{h}$ and $\mathfrak{g}$ be Lie algebras (Definition~\ref{def:lie-algebra}). A \textbf{Lie algebra morphism} is a linear map $\phi : \mathfrak{h} \to \mathfrak{g}$ that preserves brackets: $\phi([A, B]) = [\phi(A), \phi(B)]$ for all $A, B \in \mathfrak{h}$.
+\leeref{Ch.~8, \emph{Induced Lie Algebra Homomorphisms}}
+\end{defbox}
+
+\begin{propbox}[Lie Group Morphisms Preserve Brackets]\thmlabel{prop:morphism-preserves-bracket}
+Let $F : H \to G$ be a Lie group morphism. For all $A, B \in T_eH$,
+\[
+dF_e\big([A, B]\big) = \big[dF_e(A), dF_e(B)\big] \in T_eG ,
+\]
+that is, $dF_e : \mathfrak{h} \to \mathfrak{g}$ is a Lie algebra morphism (Definition~\ref{def:lie-algebra-morphism}).
+\leeref{Theorem 8.44}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~18 --- ``kind of a soft proof''. The final diagram chase, left to the class as the lecture ran out of time, is completed.)} ``Since the bracket is defined in terms of vector fields, I have to pass to vector fields to do the proof.'' For $A \in T_eH$ let $\mathbf{X}^A \in \mathfrak{X}(H)$ be the left-invariant field with $\mathbf{X}^A_e = A$; put $\tilde A = dF_e(A) \in T_eG$, and let $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant field with $\mathbf{Y}^{\tilde A}_e = \tilde A$ (Theorem~\ref{thm:lie-algebra-TeG}, applied to $H$ and to $G$).
+
+\emph{Claim.} $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related (Definition~\ref{def:F-related}).
+
+\emph{The proposition follows from the claim.} Let also $B \in T_eH$ and $\tilde B = dF_e(B)$. By the claim, $\mathbf{X}^A$ is $F$-related to $\mathbf{Y}^{\tilde A}$ and $\mathbf{X}^B$ to $\mathbf{Y}^{\tilde B}$, so by Proposition~\ref{prop:bracket-naturality}, $[\mathbf{X}^A, \mathbf{X}^B]$ is $F$-related to $[\mathbf{Y}^{\tilde A}, \mathbf{Y}^{\tilde B}]$. Evaluate at $e \in H$, using $F(e) = e$:
+\[
+dF_e\big([\mathbf{X}^A, \mathbf{X}^B]_e\big) = [\mathbf{Y}^{\tilde A}, \mathbf{Y}^{\tilde B}]_{F(e)} = [\mathbf{Y}^{\tilde A}, \mathbf{Y}^{\tilde B}]_e .
+\]
+By Definition~\ref{def:bracket-TeG} the left side is $dF_e([A, B])$ and the right side is $[\tilde A, \tilde B] = [dF_e(A), dF_e(B)]$: ``that's exactly'' the proposition. ``So the fight is to prove the claim.''
+
+\emph{Proof of the claim.} Being $F$-related means: for every $h \in H$,
+\[
+dF_h\big(\mathbf{X}^A_h\big) = \mathbf{Y}^{\tilde A}_{F(h)} \in T_{F(h)}G .
+\]
+``We have to use very much that $F$ is a group morphism.'' Consider the square
+\[
+F \circ L_h = L_{F(h)} \circ F : H \to G .
+\]
+It commutes: for $x \in H$, $F(L_h(x)) = F(hx) = F(h)F(x) = L_{F(h)}(F(x))$, where $L$ is ``always left multiplication in the corresponding group.'' Differentiate it at $e \in H$. Since $L_h(e) = h$ and $F(e) = e$, the chain rule (Theorem~\ref{prop:pushforward-functorial}) gives the commutative square of differentials
+\[
+dF_h \circ d(L_h)_e = d\big(L_{F(h)}\big)_e \circ dF_e : T_eH \to T_{F(h)}G .
+\]
+\textit{(Completed.)} ``Chase where $A$ goes under this diagram'':
+\[
+\begin{aligned}
+&\text{along the bottom, then up:} && A \mapsto d(L_h)_e(A) = \mathbf{X}^A_h \mapsto dF_h(\mathbf{X}^A_h), \\
+&\text{up, then along the top:} && A \mapsto dF_e(A) = \tilde A \mapsto d(L_{F(h)})_e(\tilde A) = \mathbf{Y}^{\tilde A}_{F(h)},
+\end{aligned}
+\]
+both by the construction of left-invariant fields in Theorem~\ref{thm:lie-algebra-TeG}. The square commutes, so $dF_h(\mathbf{X}^A_h) = \mathbf{Y}^{\tilde A}_{F(h)}$ for every $h$: the claim.
+\end{proof}
+
+\begin{center}
+\begin{tikzcd}[column sep=5em, row sep=3em]
+G \arrow[r, "L_{F(h)}"] & G \\
+H \arrow[u, "F"] \arrow[r, "L_h"'] & H \arrow[u, "F"']
+\end{tikzcd}
+\qquad\qquad
+\begin{tikzcd}[column sep=5em, row sep=3em]
+T_eG \arrow[r, "d(L_{F(h)})_e"] & T_{F(h)}G \\
+T_eH \arrow[u, "dF_e"] \arrow[r, "d(L_h)_e"'] & T_hH \arrow[u, "dF_h"']
+\end{tikzcd}
+\end{center}
+
+\begin{center}
+\begin{tikzcd}[column sep=5em, row sep=3em]
+\tilde A \arrow[r, mapsto] & \mathbf{Y}^{\tilde A}_{F(h)} \\
+A \arrow[u, mapsto] \arrow[r, mapsto] & \mathbf{X}^A_h \arrow[u, mapsto]
+\end{tikzcd}
+\end{center}
+
+Top left: the group square, which commutes because $F$ is a morphism. Top right: its differential at $e$, which commutes by the chain rule. Below: where $A$ goes. Both routes end at the same vector, which is the statement that $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related. Next: the commutator, ``first for the general linear group, and then \ldots\ for any linear group'' (Theorem~\ref{thm:gl-bracket}).
+
+\textbf{Transcription note (Lecture 18).} Page~47 of the handwritten notes begins the proof with ``take $A \in T_hH$''; $A \in T_eH$. Page~48 writes the second field as $\mathbf{Y}^{\hat B}$ in one place; it is $\mathbf{Y}^{\tilde B}$, with $\tilde B = dF_e(B)$.
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -15525,7 +15713,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
 \ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
 \ref{sec:lie-bracket}\ Lie bracket and Lie algebra; related fields & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28); \emph{Vector Fields and Smooth Maps} (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 \\
-\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorem 8.37) \\
+\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields; Lie group morphisms & Chapter 7 (Examples 7.3, 7.27--7.30; \emph{Lie Group Homomorphisms}); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorems 8.37 and 8.44) \\
 \bottomrule
 \end{longtable}
 
@@ -15602,7 +15790,7 @@ Corollary 5.30 & Lem.~\ref{lem:maps-into-submanifold} \\
 Proposition 5.35 & Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.37 & Def.~\ref{def:geometric-tangent}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.38 & Thm.~\ref{thm:tangent-kernel}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Thm.~\ref{thm:rvt-manifolds} \\
-Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection} \\
+Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Prop.~\ref{prop:transverse-normal-spaces} \\
 Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
 Proposition 7.26 & Def.~\ref{def:orbit-map} \\
 Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
@@ -15624,6 +15812,7 @@ Proposition 8.30 & Prop.~\ref{prop:bracket-naturality} \\
 Corollary 8.31 & Cor.~\ref{cor:diffeo-bracket} \\
 Proposition 8.33 & Cor.~\ref{cor:lie-subalgebra} \\
 Theorem 8.37 & Thm.~\ref{thm:lie-algebra-TeG} \\
+Theorem 8.44 & Prop.~\ref{prop:morphism-preserves-bracket} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
@@ -15673,5 +15862,7 @@ Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
 \end{longtable}
 }
 
+
+\end{document}
 
 \end{document}

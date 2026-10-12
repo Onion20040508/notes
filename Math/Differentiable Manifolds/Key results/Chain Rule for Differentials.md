@@ -41,6 +41,7 @@ tags: [differentiable-manifolds, hub]
 - [[§51 Critical Points and the Hessian#^prop-51-5|Proposition §51.5: The Vertical Space of T^*M Along the Zero Section]]
 - [[§56 Lie Groups and Left-Invariant Vector Fields#^ex-56-1|Example §56.1: Left-Invariant Fields on GL(n,ℝ)]]
 - [[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5|Theorem §56.5: The Lie Algebra Is the Tangent Space at the Identity]]
+- [[§56 Lie Groups and Left-Invariant Vector Fields#^prop-56-7|Proposition §56.7: Lie Group Morphisms Preserve Brackets]]
 
 ## Connections
 - **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), differentials computed by curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]) and the [[Local Diffeomorphism Criterion]].

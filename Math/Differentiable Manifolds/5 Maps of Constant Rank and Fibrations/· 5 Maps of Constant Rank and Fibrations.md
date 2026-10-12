@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 211 later results
-- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 209 later results
+- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 213 later results
+- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 211 later results
 - [[Local Diffeomorphism Criterion|Theorem §35.2: Local Diffeomorphisms Are Detected by the Differential]]: 38 later results
 - [[§36 Submersions#^lem-36-3|Lemma §36.3: Diffeomorphisms onto Open Sets Are Charts]]: 37 later results

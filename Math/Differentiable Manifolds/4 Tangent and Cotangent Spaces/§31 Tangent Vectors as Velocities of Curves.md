@@ -301,3 +301,70 @@ to push $v$ forward, restrict $f$ to the slice $M_1 \times \{p_2\}$ and differen
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]
 
 This is the second of Uribe's three views, and it uses the velocities of Assignment 3, Problem 2 ([[§31 Tangent Vectors as Velocities of Curves|§31, Tangent Vectors as Velocities of Curves]]).
+
+*Lecture 18. Uribe opened with this construction — “I realize that we can't prove the theorem of last time completely” without it — to finish the proof that left-invariant fields are smooth (Theorem [[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5|§56.5]]). It is the partial derivative in the $M_1$ variables above, now with the base point in the other factor allowed to vary.*
+
+> [!definition] Definition §31.3: Partial Derivative in One Factor
+> Let $\varphi : M \times N \to \mathbb{R}$ be smooth, $p \in M$ and $v \in T_pM$. The **partial derivative of $\varphi$ in the direction $v$** is the function $\partial_v\varphi : N \to \mathbb{R}$,
+>
+> $$
+> \partial_v\varphi(q) = \Theta(v, 0)[\varphi] = (\iota^q_{\ast}v)[\varphi] = v\big[\varphi(\cdot, q)\big], \qquad q \in N,
+> $$
+>
+> where $\Theta(v, 0) \in T_{(p,q)}(M \times N)$ is the vector $(v, 0)$ under $T_{(p,q)}(M \times N) = T_pM \oplus T_qN$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]), $0 \in T_qN$, and $\iota^q : M \to M \times N$, $x \mapsto (x, q)$, is the slice inclusion (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]). In the same way, for $w \in T_qN$, the partial derivative **in the second variable** is $\partial_w\varphi : M \to \mathbb{R}$, $\partial_w\varphi(p) = \Theta(0, w)[\varphi] = w\big[\varphi(p, \cdot)\big]$.
+
+^def-31-3
+
+“This is our notation. I don't think it's in Lee.” The dependence on $q$ “is hidden in the fact that” the pair $(v, 0)$ is a tangent vector at $(p, q)$: the $0$ is the zero of $T_qN$, so the point at which $(v,0)$ sits moves with $q$. The three equal expressions in the definition are equal by the definition of $\Theta$ and of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]): $\Theta(v, 0) = \iota^q_\ast v + \iota^p_\ast0 = \iota^q_\ast v$, and $(\iota^q_\ast v)[\varphi] = v[\varphi \circ \iota^q]$ with $(\varphi \circ \iota^q)(x) = \varphi(x, q)$.
+
+> [!theorem] Proposition §31.7: Partial Derivatives by Curves and in Coordinates
+> Let $\varphi \in C^\infty(M \times N)$, $p \in M$ and $v \in T_pM$.
+>
+> 1. If $\gamma : (-\varepsilon, \varepsilon) \to M$ is a smooth curve *adapted to $v$*, i.e. $\gamma(0) = p$ and $D_\gamma = v$, then for every $q \in N$
+>
+> $$
+> \partial_v\varphi(q) = \frac{d}{dt}\Big|_{t=0} \varphi\big(\gamma(t), q\big).
+> $$
+>
+> 2. In charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $q$, if $v = \sum_{j=1}^m v^j\, \partial/\partial x^j|_p$, then
+>
+> $$
+> \partial_v\varphi(q) = \sum_{j=1}^m v^j\, \frac{\partial\varphi}{\partial x^j}(p, q) .
+> $$
+>
+> 3. $\partial_v\varphi \in C^\infty(N)$.
+>
+> The same holds in the second variable: for $w \in T_qN$, $\partial_w\varphi \in C^\infty(M)$.
+
+^prop-31-7
+
+> [!proof]+ Proof
+> *(Lecture 18, in the lecture's order: curves, then coordinates, from which smoothness is read off. Details filled in.)*
+>
+> *1. Curves.* “Using curves, which I have said is a very good thing to do when you're working on manifolds”: $t \mapsto (\gamma(t), q) = \iota^q(\gamma(t))$ “is a horizontal curve \ldots changing the first entry and not the second.” By the definition and Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]],
+>
+> $$
+> \partial_v\varphi(q) = v[\varphi \circ \iota^q] = D_\gamma[\varphi \circ \iota^q] = \frac{d}{dt}\Big|_{t=0} (\varphi \circ \iota^q)(\gamma(t)) = \frac{d}{dt}\Big|_{t=0} \varphi\big(\gamma(t), q\big).
+> $$
+>
+> Equivalently, $\Theta(v, 0)$ is the velocity of the horizontal curve (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-6|§31.6]]).
+>
+> *2. Coordinates.* “The $x$ and the $y$ together form a coordinate chart of $M \times N$” (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]]). By linearity of $\Theta$ and Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], $\Theta(v, 0) = \sum_j v^j\, \iota^q_\ast\big(\partial/\partial x^j|_p\big) = \sum_j v^j\, \partial/\partial x^j|_{(p,q)}$, and applying this to $\varphi$ gives the formula: “we're just differentiating in the $x$ variable.”
+>
+> *3. Smoothness.* “This coordinate description \ldots makes it clear that whenever we do this construction, it's a smooth function on $N$.” *(Filled in.)* Fix charts $(U, \phi_U = (x^j))$ of $M$ at $p$ and $(V, \psi = (y^k))$ of $N$, and let $\hat\varphi(r, s) = \varphi\big(\phi_U^{-1}(r), \psi^{-1}(s)\big)$, a smooth function on $\phi_U(U) \times \psi(V)$, the coordinate representation of $\varphi$ in the product chart. By 2, for $q \in V$,
+>
+> $$
+> \partial_v\varphi\big(\psi^{-1}(s)\big) = \sum_{j=1}^m v^j\, \frac{\partial\hat\varphi}{\partial r^j}\big(\phi_U(p), s\big), \qquad s \in \psi(V).
+> $$
+>
+> Each $\partial\hat\varphi/\partial r^j$ is smooth, and $s \mapsto (\phi_U(p), s)$ is smooth, so the right side is a smooth function of $s$: the coordinate representation of $\partial_v\varphi$ on $V$ is smooth. Charts $(V, \psi)$ cover $N$, so $\partial_v\varphi \in C^\infty(N)$. The second variable is the same with the factors exchanged.
+
+^pf-31-7
+
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-6|§31.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]
+
+![[m591-31-2.svg]]
+
+*The picture of the definition: one horizontal curve through $(p, q)$ for each $q$, all with the same velocity $v$ in the $M$ direction. Differentiating $\varphi$ along each gives one number per $q$, and Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](3) says these numbers vary smoothly with $q$.*
+
+**Transcription note (Lecture 18).** Page 47 of the handwritten notes writes the splitting as “$T_{(p,q)}(M \times N) = T_pM \oplus T_qM$” (Uribe corrected it in lecture: “should be an $N$”); it is $T_pM \oplus T_qN$. The curves line has “$\forall\, q \in M$” for $q \in N$, and the coordinate formula sums to $n$ and evaluates at $q$; the sum runs to $m = \dim M$, and the partials are evaluated at $(p, q)$.
