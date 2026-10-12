@@ -2,14 +2,14 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 6
-section: 47
+section: 48
 tags: [differentiable-manifolds, math591]
 ---
-← [[§46 Recap꞉ Germs, Derivations and Tangent Vectors]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§48 The Tangent Bundle]] →
+← [[§47 Recap꞉ Germs, Derivations and Tangent Vectors]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§49 The Tangent Bundle]] →
 
 *Stage: recap — Covectors, the differential of a function, pullbacks — and the four objects that the course calls “the differential”, side by side.*
 
-*Not from lecture: a recap written for these notes, continuing [[§46 Recap꞉ Germs, Derivations and Tangent Vectors|§46]]. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.*
+*Not from lecture: a recap written for these notes, continuing [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]]. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.*
 
 Keep one picture in mind: $M$ is a surface, $f$ is the temperature on it, and you are walking on it. A tangent vector is a direction to walk in. This section is about the objects that *eat* directions.
 
@@ -31,7 +31,7 @@ $$
 df_p \in T_p^*M, \qquad df_p(v) = v[f]
 $$
 
-([[§32 The Cotangent Space#^def-32-5|Definition §32.5]] and [[§32 The Cotangent Space#^prop-32-2|Proposition §32.2]]): feed it a direction, and it returns how fast the temperature changes that way. Officially $df_p$ is the pushforward $f_{\ast p} : T_pM \to T_{f(p)}\mathbb{R}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$, so it is the differential of Step 5 of [[§46 Recap꞉ Germs, Derivations and Tangent Vectors|§46]] for the special target $N = \mathbb{R}$. In a chart the differentials $dx^i|_p$ of the coordinate functions form the basis dual to $\partial/\partial x^i|_p$, and
+([[§32 The Cotangent Space#^def-32-5|Definition §32.5]] and [[§32 The Cotangent Space#^prop-32-2|Proposition §32.2]]): feed it a direction, and it returns how fast the temperature changes that way. Officially $df_p$ is the pushforward $f_{\ast p} : T_pM \to T_{f(p)}\mathbb{R}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$, so it is the differential of Step 5 of [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]] for the special target $N = \mathbb{R}$. In a chart the differentials $dx^i|_p$ of the coordinate functions form the basis dual to $\partial/\partial x^i|_p$, and
 
 $$
 df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p
@@ -54,7 +54,7 @@ $$
 
 ![[§34 The Cotangent Space from Germs#^thm-34-4]]
 
-**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-6|Proposition §34.6]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§46 Recap꞉ Germs, Derivations and Tangent Vectors|§46]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-3|Remark: One Symbol for Two Pullbacks]] explains.
+**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-6|Proposition §34.6]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-3|Remark: One Symbol for Two Pullbacks]] explains.
 
 ![[§34 The Cotangent Space from Germs#^def-34-3]]
 
@@ -67,9 +67,9 @@ $$
 | differential of a map between vector spaces | $dF_p$ | a vector in $X$ to a vector in $Y$ (the Jacobian) | [[§22 The Differential of a Map Between Vector Spaces#^def-22-5\|Definition §22.5]] |
 | differential (pushforward) of a smooth map | $F_{\ast p}$ | $T_pM \to T_{F(p)}N$ | [[§28 Derivations and the Abstract Tangent Space#^def-28-6\|Definition §28.6]] |
 | differential of a function at $p$ | $df_p$ | $T_pM \to \mathbb{R}$, a covector | [[§32 The Cotangent Space#^def-32-5\|Definition §32.5]] |
-| the operator $d$ | $d$ | a function $f$ to the one-form $df$ | [[§50 One-Forms#^prop-50-2\|Proposition §50.2]] |
+| the operator $d$ | $d$ | a function $f$ to the one-form $df$ | [[§51 One-Forms#^prop-51-2\|Proposition §51.2]] |
 
-How they fit: on open subsets of $\mathbb{R}^n$ the second is the first ([[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5]]); Lee writes $dF_p$ for what these notes call $F_{\ast p}$, and Uribe said in Lecture 15 that $F_{\ast p}$ “we should have called the differential of $F$ ages ago”. The third is the second for maps into $\mathbb{R}$. The fourth collects the third over all points: $df$ is the field $p \mapsto df_p$, a one-form ([[§50 One-Forms|§50]]).
+How they fit: on open subsets of $\mathbb{R}^n$ the second is the first ([[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5]]); Lee writes $dF_p$ for what these notes call $F_{\ast p}$, and Uribe said in Lecture 15 that $F_{\ast p}$ “we should have called the differential of $F$ ages ago”. The third is the second for maps into $\mathbb{R}$. The fourth collects the third over all points: $df$ is the field $p \mapsto df_p$, a one-form ([[§51 One-Forms|§51]]).
 
 **Step 7: forward and backward.** Given $F : M \to N$:
 
@@ -83,16 +83,16 @@ How they fit: on open subsets of $\mathbb{R}^n$ the second is the first ([[§30 
 
 Things that *are* somewhere move forward with the points; things that *eat* move backward, because to evaluate one on $M$ you push its input forward and evaluate on $N$.
 
-**What this chapter builds.** So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ ([[§48 The Tangent Bundle|§48]]), and the cotangent spaces into the cotangent bundle $T^{\ast}M$ ([[§49 The Cotangent Bundle|§49]]). A smooth choice of a covector at every point is a one-form; $d$ turns functions into one-forms, and $F^{\ast}$ pulls one-forms back ([[§50 One-Forms|§50]]). The next chapter turns to the sections of $TM$: a smooth choice of a tangent vector at every point is a vector field, and a vector field differentiates functions everywhere at once ([[§52 Vector Fields|§52]]).
+**What this chapter builds.** So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ ([[§49 The Tangent Bundle|§49]]), and the cotangent spaces into the cotangent bundle $T^{\ast}M$ ([[§50 The Cotangent Bundle|§50]]). A smooth choice of a covector at every point is a one-form; $d$ turns functions into one-forms, and $F^{\ast}$ pulls one-forms back ([[§51 One-Forms|§51]]). The next chapter turns to the sections of $TM$: a smooth choice of a tangent vector at every point is a vector field, and a vector field differentiates functions everywhere at once ([[§53 Vector Fields|§53]]).
 
-> [!example] Example §47.1: Covectors in the Plane
-> Continue [[§46 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-46-1|Example §46.1]]: $p = (1, 2)$, $f = x^2 y$, $v = 3\,\partial_x - \partial_y$, and $F(x, y) = (x^2, x + y)$ with $F(p) = (1, 3)$ and $F_{\ast p}v = 6\,\partial_u + 2\,\partial_w$.
+> [!example] Example §48.1: Covectors in the Plane
+> Continue [[§47 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-47-1|Example §47.1]]: $p = (1, 2)$, $f = x^2 y$, $v = 3\,\partial_x - \partial_y$, and $F(x, y) = (x^2, x + y)$ with $F(p) = (1, 3)$ and $F_{\ast p}v = 6\,\partial_u + 2\,\partial_w$.
 > 1. *The differential of $f$.* $df_p = \partial_x f(p)\, dx + \partial_y f(p)\, dy = 4\, dx + dy$, and $df_p(v) = 4 \cdot 3 + 1 \cdot (-1) = 11 = v[f]$, as Step 3 promises.
 > 2. *A covector at $F(p)$.* Let $g(u, w) = u w^2$ on the target. Then $dg_{F(p)} = w^2\, du + 2uw\, dw = 9\, du + 6\, dw$ at $(1, 3)$.
 > 3. *Its pullback, by definition.* $(F_p^{\ast} dg_{F(p)})(v) = dg_{F(p)}(F_{\ast p}v) = 9 \cdot 6 + 6 \cdot 2 = 66$.
 > 4. *Its pullback, by the chain rule.* $g \circ F = x^2 (x + y)^2$, with $\partial_x (g \circ F)(p) = 2x(x+y)^2 + 2x^2(x+y) = 18 + 6 = 24$ and $\partial_y (g \circ F)(p) = 2x^2(x+y) = 6$. So $d(g \circ F)_p = 24\, dx + 6\, dy$, and $d(g \circ F)_p(v) = 72 - 6 = 66$: the two agree, as [[§34 The Cotangent Space from Germs#^prop-34-6|Proposition §34.6]] says.
 > 5. *The transpose.* The components of $F_p^{\ast}$ come from the *transpose* of the Jacobian: $\begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 9 \\ 6 \end{pmatrix} = \begin{pmatrix} 24 \\ 6 \end{pmatrix}$. Vectors are pushed forward by the Jacobian, covectors pulled back by its transpose.
 
-^ex-47-1
+^ex-48-1
 
 *Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]

@@ -2,10 +2,10 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 6
-section: 46
+section: 47
 tags: [differentiable-manifolds, math591]
 ---
-← [[§45 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§47 Recap꞉ Covectors and the Four Differentials]] →
+← [[§46 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§48 Recap꞉ Covectors and the Four Differentials]] →
 
 *Stage: recap — Chapter 4's road from arrows to derivations, retraced in one place before tangent vectors are gathered into bundles and fields.*
 
@@ -47,11 +47,11 @@ $$
 D = \sum_{i=1}^m D[x^i]\, \frac{\partial}{\partial x^i}\Big|_p
 $$
 
-([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5]]). So $\dim T_pM = m$, and for a level set in $\mathbb{R}^N$ the derivations are exactly the old arrows: $v \mapsto D_v$ is an isomorphism ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]]).
+([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]]). So $\dim T_pM = m$, and for a level set in $\mathbb{R}^N$ the derivations are exactly the old arrows: $v \mapsto D_v$ is an isomorphism ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]]).
 
 ![[§29 Coordinate Derivations and the Basis Theorem#^def-29-2]]
 
-![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5]]
+![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6]]
 
 **Step 5: maps push vectors forward.** Let $F : M \to N$ be smooth. Germs travel *backwards* along $F$: a germ $[g]$ at $F(p)$ pulls back to the germ $F_p^{\ast}[g] = [g \circ F]$ at $p$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]). Tangent vectors then travel *forwards*: the *pushforward*, or *differential*, of $F$ at $p$ is
 
@@ -82,7 +82,7 @@ $$
 | $F_{\ast p}$ | pushforward (differential) of $F$ | vector at $p$ $\mapsto$ vector at $F(p)$ |
 | $D_\gamma$ | velocity of a curve | the arrow picture, on any manifold |
 
-> [!example] Example §46.1: Vectors in the Plane in Three Ways
+> [!example] Example §47.1: Vectors in the Plane in Three Ways
 > On $M = \mathbb{R}^2$ with coordinates $(x, y)$, let $p = (1, 2)$, $f(x, y) = x^2 y$, and
 >
 > $$
@@ -99,8 +99,8 @@ $$
 >
 >    By the definition instead: $(F_{\ast p}v)[u] = v[u \circ F] = v[x^2] = 3 \cdot 2 = 6$ and $(F_{\ast p}v)[w] = v[x + y] = 3 - 1 = 2$, the same components by the universal formula.
 >
-> The example continues with covectors in [[§47 Recap꞉ Covectors and the Four Differentials#^ex-47-1|Example §47.1]].
+> The example continues with covectors in [[§48 Recap꞉ Covectors and the Four Differentials#^ex-48-1|Example §48.1]].
 
-^ex-46-1
+^ex-47-1
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]

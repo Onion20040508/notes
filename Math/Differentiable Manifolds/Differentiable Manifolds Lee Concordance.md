@@ -14,8 +14,8 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | These notes | Lee | Remark |
 |---|---|---|
 | $T_pM$: derivations of germs $C_p^\infty(M)$ | $T_pM$: derivations of $C^\infty(M)$ at $p$ | Isomorphic, by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|§28.3]]; Lee's version needs bump functions. |
-| $T^{\mathrm{geo}}_pM$, the geometric tangent space | $\mathbb{R}^n_a$ in $\mathbb{R}^n$; $T_pS \subseteq T_pM$ for embedded $S$ | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|§29.6]]; Lee, Propositions 3.2 and 5.38. |
-| $F_{*p}$; from Lecture 17, $dF_p$ | $dF_p$ | Through [[§54 Lie Bracket and Lie Algebra\|§54]] the notes keep $dF_p$ for the vector-space differential (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5\|§22.5]]) and $df_p$ for functions; from Remark [[§55 Related Vector Fields#^rem-55-2\|Notation]] on, $dF_p$ is the pushforward, which agrees with the vector-space differential (Corollary [[§30 The Differential in Coordinates#^cor-30-6\|§30.6]]). |
+| $T^{\mathrm{geo}}_pM$, the geometric tangent space | $\mathbb{R}^n_a$ in $\mathbb{R}^n$; $T_pS \subseteq T_pM$ for embedded $S$ | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|§29.7]]; Lee, Propositions 3.2 and 5.38. |
+| $F_{*p}$; from Lecture 17, $dF_p$ | $dF_p$ | Through [[§55 Lie Bracket and Lie Algebra\|§55]] the notes keep $dF_p$ for the vector-space differential (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5\|§22.5]]) and $df_p$ for functions; from Remark [[§56 Related Vector Fields#^rem-56-2\|Notation]] on, $dF_p$ is the pushforward, which agrees with the vector-space differential (Corollary [[§30 The Differential in Coordinates#^cor-30-6\|§30.6]]). |
 | $D_\gamma$, the velocity | $\gamma'(0)$ | The notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, a geometric vector (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2\|§31.2]]). |
 | $D_v$, $D_v\vert_a$ | $D_v\vert_a$ | The directional derivative (Definition [[§25 The Geometric Tangent Space#^def-25-4\|§25.4]]). |
 | $[f] \in C_p^\infty(M)$, germs | — | Lee works with global functions $C^\infty(M)$ (Definition [[§27 Germs#^def-27-2\|§27.2]]). |
@@ -26,8 +26,8 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $\Gamma = \{(x, g \cdot x)\}$, the orbit relation | $\mathcal{O} = \{(g \cdot p, p)\}$ | The same set with the factors swapped (proof of Lee, Proposition 21.4). |
 | $H_{x_0}$, the isotropy group | $G_p$ | Definition [[§14 Homogeneous Spaces#^def-14-3\|§14.3]]. |
 | $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ | $F : G/G_p \to M$ | Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]; Lee, Theorem 21.18. |
-| $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§56 Lie Groups and Left-Invariant Vector Fields\|§56]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§56 Lie Groups and Left-Invariant Vector Fields\|§56]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§56 Lie Groups and Left-Invariant Vector Fields#^def-56-4\|§56.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5\|§56.5]]. |
-| $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-8\|§19.8]]). |
+| $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§57 Lie Groups and Left-Invariant Vector Fields\|§57]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§57 Lie Groups and Left-Invariant Vector Fields\|§57]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4\|§57.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7\|§57.7]]. |
+| $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-9\|§19.9]]). |
 
 ## A.2 Where the routes diverge
 
@@ -65,17 +65,17 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§35 Local Diffeomorphisms\|§35]]–[[§36 Submersions\|§36]] Local diffeomorphisms, submersions | Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 |
 | [[§37 Regular Submanifolds\|§37]] Regular submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.14, Propositions 5.35–5.38) |
 | [[§38 Fibrations\|§38]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
-| [[§40 Immersions\|§40]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
-| [[§41 Embeddings\|§41]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
-| [[§42 Geometric and Abstract Manifolds\|§42]] Geometric and abstract manifolds (comparison) | Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) |
-| [[§44 The Unit Quaternions and SU(2)\|§44]]–[[§45 SU(2) → SO(3)꞉ The Double Cover\|§45]] The unit quaternions and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
-| [[§46 Recap꞉ Germs, Derivations and Tangent Vectors\|§46]]–[[§47 Recap꞉ Covectors and the Four Differentials\|§47]] Recaps: tangent vectors, covectors | Chapters 3 and 11 (overview) |
-| [[§48 The Tangent Bundle\|§48]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
-| [[§49 The Cotangent Bundle\|§49]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
-| [[§50 One-Forms\|§50]] One-forms, the operator $d$, pullbacks | Chapter 11, *Covector Fields* (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) |
-| [[§52 Vector Fields\|§52]] Vector fields | Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) |
-| [[§54 Lie Bracket and Lie Algebra\|§54]] Lie bracket and Lie algebra; related fields | Chapter 8, *Lie Brackets* and *Lie Algebras* (Lemma 8.25, Propositions 8.26 and 8.28); *Vector Fields and Smooth Maps* (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 |
-| [[§56 Lie Groups and Left-Invariant Vector Fields\|§56]] Lie groups and left-invariant vector fields | Chapter 7 (Examples 7.3, 7.27–7.30); Chapter 8, *Lie Algebras* (Proposition 8.33, Theorem 8.37) |
+| [[§41 Immersions\|§41]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
+| [[§42 Embeddings\|§42]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
+| [[§43 Geometric and Abstract Manifolds\|§43]] Geometric and abstract manifolds (comparison) | Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) |
+| [[§45 The Unit Quaternions and SU(2)\|§45]]–[[§46 SU(2) → SO(3)꞉ The Double Cover\|§46]] The unit quaternions and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
+| [[§47 Recap꞉ Germs, Derivations and Tangent Vectors\|§47]]–[[§48 Recap꞉ Covectors and the Four Differentials\|§48]] Recaps: tangent vectors, covectors | Chapters 3 and 11 (overview) |
+| [[§49 The Tangent Bundle\|§49]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
+| [[§50 The Cotangent Bundle\|§50]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
+| [[§51 One-Forms\|§51]] One-forms, the operator $d$, pullbacks | Chapter 11, *Covector Fields* (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) |
+| [[§53 Vector Fields\|§53]] Vector fields | Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) |
+| [[§55 Lie Bracket and Lie Algebra\|§55]] Lie bracket and Lie algebra; related fields | Chapter 8, *Lie Brackets* and *Lie Algebras* (Lemma 8.25, Propositions 8.26 and 8.28); *Vector Fields and Smooth Maps* (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 |
+| [[§57 Lie Groups and Left-Invariant Vector Fields\|§57]] Lie groups and left-invariant vector fields | Chapter 7 (Examples 7.3, 7.27–7.30); Chapter 8, *Lie Algebras* (Proposition 8.33, Theorem 8.37) |
 
 ## A.4 Index from Lee to these notes
 
@@ -92,7 +92,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 1.17 | [[§17 Differentiable Structures#^def-17-7\|Def. §17.7]], [[§17 Differentiable Structures#^thm-17-5\|Thm. §17.5]] |
 | Example 1.21 | [[§2 Topological Manifolds#^prop-2-5\|Prop. §2.5]] |
 | Example 1.22 | [[§17 Differentiable Structures#^ex-17-1\|Ex. §17.1]] |
-| Example 1.23 | [[§19 Smooth Functions and Smooth Maps#^ex-19-1\|Ex. §19.1]], [[§19 Smooth Functions and Smooth Maps#^cor-19-8\|Cor. §19.8]], [[§19 Smooth Functions and Smooth Maps#^ex-19-2\|Ex. §19.2]] |
+| Example 1.23 | [[§19 Smooth Functions and Smooth Maps#^ex-19-1\|Ex. §19.1]], [[§19 Smooth Functions and Smooth Maps#^cor-19-9\|Cor. §19.9]], [[§19 Smooth Functions and Smooth Maps#^ex-19-2\|Ex. §19.2]] |
 | Example 1.24 | [[§22 The Differential of a Map Between Vector Spaces#^def-22-1\|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2\|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2\|Prop. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4\|Def. §22.4]] |
 | Example 1.25 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-2\|Def. §11.2]] |
 | Example 1.26 | [[§3 Subspaces and Products#^prop-3-6\|Prop. §3.6]], [[§3 Subspaces and Products#^def-3-2\|Def. §3.2]] |
@@ -100,82 +100,82 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.31 | [[§17 Differentiable Structures#^ex-17-2\|Ex. §17.2]] |
 | Example 1.32 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]] |
 | Example 1.33 | [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5\|Cor. §18.5]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6\|Prop. §18.6]] |
-| Example 1.34 | [[§19 Smooth Functions and Smooth Maps#^prop-19-9\|Prop. §19.9]] |
-| Lemma 1.35 | [[§48 The Tangent Bundle#^prop-48-1\|Prop. §48.1]], [[§49 The Cotangent Bundle#^prop-49-1\|Prop. §49.1]] |
+| Example 1.34 | [[§19 Smooth Functions and Smooth Maps#^prop-19-10\|Prop. §19.10]] |
+| Lemma 1.35 | [[§49 The Tangent Bundle#^prop-49-1\|Prop. §49.1]], [[§50 The Cotangent Bundle#^prop-50-1\|Prop. §50.1]] |
 | Example 1.36 | [[§15 The Topology of G∕H and Real Grassmannians#^def-15-3\|Def. §15.3]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8\|Cor. §15.8]] |
 | Problem 1-1 | [[§1 Point-Set Topology Review#^ex-1-4\|Ex. §1.4]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-1\|Ex. §4.1]] |
 | Problem 1-2 | [[§2 Topological Manifolds#^ex-2-3\|Ex. §2.3]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]] |
-| Problem 1-6 | [[§19 Smooth Functions and Smooth Maps#^prop-19-7\|Prop. §19.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-6\|Def. §19.6]], [[§19 Smooth Functions and Smooth Maps#^cor-19-8\|Cor. §19.8]] |
+| Problem 1-6 | [[§19 Smooth Functions and Smooth Maps#^prop-19-8\|Prop. §19.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-6\|Def. §19.6]], [[§19 Smooth Functions and Smooth Maps#^cor-19-9\|Cor. §19.9]] |
 | Problem 1-7 | [[§17 Differentiable Structures#^ex-17-3\|Ex. §17.3]] |
 | Problem 1-9 | [[§9 Complex Projective Space#^def-9-1\|Def. §9.1]], [[§9 Complex Projective Space#^prop-9-1\|Prop. §9.1]], [[§9 Complex Projective Space#^prop-9-2\|Prop. §9.2]], [[§9 Complex Projective Space#^prop-9-3\|Prop. §9.3]], [[§13 Group Actions and Orbit Spaces#^ex-13-3\|Ex. §13.3]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-1\|Def. §18.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2\|Def. §18.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1\|Prop. §18.1]], [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2\|Thm. §18.2]] |
 | Proposition 2.5 | [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|Prop. §19.2]] |
-| Proposition 2.10 | [[§19 Smooth Functions and Smooth Maps#^lem-19-4\|Lem. §19.4]] |
-| Proposition 2.15 | [[§19 Smooth Functions and Smooth Maps#^prop-19-6\|Prop. §19.6]] |
-| Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§52 Vector Fields#^prop-52-4\|Prop. §52.4]] |
-| Lemma 2.26 | [[§52 Vector Fields#^cor-52-5\|Cor. §52.5]] |
+| Proposition 2.10 | [[§19 Smooth Functions and Smooth Maps#^lem-19-5\|Lem. §19.5]] |
+| Proposition 2.15 | [[§19 Smooth Functions and Smooth Maps#^prop-19-7\|Prop. §19.7]] |
+| Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§53 Vector Fields#^prop-53-4\|Prop. §53.4]] |
+| Lemma 2.26 | [[§53 Vector Fields#^cor-53-5\|Cor. §53.5]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
-| Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2\|Lem. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4\|Cor. §29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]] |
-| Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-4\|Cor. §29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5\|Thm. §29.5]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
+| Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]] |
+| Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
 | Lemma 3.4 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
 | Proposition 3.6 | [[§28 Derivations and the Abstract Tangent Space#^thm-28-6\|Thm. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7\|Cor. §28.7]] |
 | Proposition 3.8 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]] |
 | Proposition 3.9 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-8\|Lem. §28.8]] |
-| Proposition 3.10 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7\|Cor. §29.7]] |
+| Proposition 3.10 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-8\|Cor. §29.8]] |
 | Proposition 3.13 | [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]], [[§30 The Differential in Coordinates#^cor-30-6\|Cor. §30.6]] |
 | Proposition 3.14 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|Thm. §31.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]], [[§36 Submersions#^ex-36-2\|Ex. §36.2]] |
-| Proposition 3.15 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5\|Thm. §29.5]] |
-| Proposition 3.18 | [[§48 The Tangent Bundle#^def-48-4\|Def. §48.4]], [[§48 The Tangent Bundle#^def-48-5\|Def. §48.5]], [[§48 The Tangent Bundle#^prop-48-1\|Prop. §48.1]], [[§48 The Tangent Bundle#^prop-48-2\|Prop. §48.2]], [[§48 The Tangent Bundle#^prop-48-4\|Prop. §48.4]] |
+| Proposition 3.15 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]] |
+| Proposition 3.18 | [[§49 The Tangent Bundle#^def-49-4\|Def. §49.4]], [[§49 The Tangent Bundle#^def-49-5\|Def. §49.5]], [[§49 The Tangent Bundle#^prop-49-1\|Prop. §49.1]], [[§49 The Tangent Bundle#^prop-49-2\|Prop. §49.2]], [[§49 The Tangent Bundle#^prop-49-4\|Prop. §49.4]] |
 | Proposition 3.23 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2\|Thm. §31.2]] |
 | Proposition 3.24 | [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3\|Cor. §31.3]] |
 | Corollary 3.25 | [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|Thm. §22.3]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3\|Cor. §31.3]] |
-| Proposition 4.1 | [[§36 Submersions#^cor-36-5\|Cor. §36.5]] |
+| Proposition 4.1 | [[§36 Submersions#^cor-36-7\|Cor. §36.7]] |
 | Theorem 4.5 | [[§35 Local Diffeomorphisms#^thm-35-2\|Thm. §35.2]] |
 | Proposition 4.6 | [[§35 Local Diffeomorphisms#^cor-35-3\|Cor. §35.3]] |
 | Proposition 4.8 | [[§35 Local Diffeomorphisms#^thm-35-2\|Thm. §35.2]], [[§36 Submersions#^prop-36-1\|Prop. §36.1]] |
-| Theorem 4.12 | [[§36 Submersions#^thm-36-4\|Thm. §36.4]], [[§40 Immersions#^thm-40-1\|Thm. §40.1]] |
-| Example 4.20 | [[§41 Embeddings#^prop-41-12\|Prop. §41.12]] |
-| Lemma 4.21 | [[§41 Embeddings#^lem-41-11\|Lem. §41.11]] |
-| Proposition 4.22 | [[§41 Embeddings#^thm-41-5\|Thm. §41.5]], [[§41 Embeddings#^cor-41-6\|Cor. §41.6]] |
-| Proposition 4.28 | [[§36 Submersions#^cor-36-6\|Cor. §36.6]] |
-| Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§43 Projective Spaces and the Hopf Fibration#^ex-43-2\|Ex. §43.2]], [[§43 Projective Spaces and the Hopf Fibration#^ex-43-3\|Ex. §43.3]] |
-| Proposition 5.2 | [[§41 Embeddings#^thm-41-1\|Thm. §41.1]] |
-| Proposition 5.5 | [[§41 Embeddings#^prop-41-9\|Prop. §41.9]] |
+| Theorem 4.12 | [[§36 Submersions#^thm-36-6\|Thm. §36.6]], [[§41 Immersions#^thm-41-1\|Thm. §41.1]] |
+| Example 4.20 | [[§42 Embeddings#^prop-42-12\|Prop. §42.12]] |
+| Lemma 4.21 | [[§42 Embeddings#^lem-42-11\|Lem. §42.11]] |
+| Proposition 4.22 | [[§42 Embeddings#^thm-42-5\|Thm. §42.5]], [[§42 Embeddings#^cor-42-6\|Cor. §42.6]] |
+| Proposition 4.28 | [[§36 Submersions#^cor-36-9\|Cor. §36.9]] |
+| Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§44 Projective Spaces and the Hopf Fibration#^ex-44-2\|Ex. §44.2]], [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3\|Ex. §44.3]] |
+| Proposition 5.2 | [[§42 Embeddings#^thm-42-1\|Thm. §42.1]] |
+| Proposition 5.5 | [[§42 Embeddings#^prop-42-9\|Prop. §42.9]] |
 | Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3\|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3\|Prop. §37.3]] |
-| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§37 Regular Submanifolds#^thm-37-9\|Thm. §37.9]] |
+| Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§37 Regular Submanifolds#^thm-37-12\|Thm. §37.12]] |
 | Corollary 5.30 | [[§37 Regular Submanifolds#^lem-37-5\|Lem. §37.5]] |
 | Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
-| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
-| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§37 Regular Submanifolds#^thm-37-9\|Thm. §37.9]] |
+| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]], [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
+| Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]], [[§37 Regular Submanifolds#^thm-37-12\|Thm. §37.12]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
-| Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§56 Lie Groups and Left-Invariant Vector Fields#^prop-56-1\|Prop. §56.1]] |
+| Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
-| Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5\|Prop. §11.5]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2\|Cor. §23.2]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§56 Lie Groups and Left-Invariant Vector Fields#^prop-56-1\|Prop. §56.1]] |
-| Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§56 Lie Groups and Left-Invariant Vector Fields#^prop-56-1\|Prop. §56.1]] |
-| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2\|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5\|Cor. §23.5]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§56 Lie Groups and Left-Invariant Vector Fields#^prop-56-1\|Prop. §56.1]] |
-| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§56 Lie Groups and Left-Invariant Vector Fields#^prop-56-1\|Prop. §56.1]] |
+| Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5\|Prop. §11.5]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2\|Cor. §23.2]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
+| Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
+| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2\|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5\|Cor. §23.5]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
+| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
 | Problem 7-4 | [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1\|Prop. §12.1]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2\|Cor. §12.2]] |
-| Problem 7-22 | [[§44 The Unit Quaternions and SU(2)#^def-44-1\|Def. §44.1]] |
-| Proposition 8.1 | [[§52 Vector Fields#^prop-52-1\|Prop. §52.1]] |
-| Proposition 8.14 | [[§52 Vector Fields#^lem-52-8\|Lem. §52.8]] |
-| Proposition 8.15 | [[§52 Vector Fields#^prop-52-7\|Prop. §52.7]] |
-| Proposition 8.16 | [[§55 Related Vector Fields#^prop-55-1\|Prop. §55.1]] |
-| Proposition 8.19 | [[§55 Related Vector Fields#^prop-55-2\|Prop. §55.2]] |
-| Corollary 8.21 | [[§55 Related Vector Fields#^prop-55-2\|Prop. §55.2]] |
-| Lemma 8.25 | [[§54 Lie Bracket and Lie Algebra#^lem-54-1\|Lem. §54.1]] |
-| Proposition 8.26 | [[§54 Lie Bracket and Lie Algebra#^prop-54-2\|Prop. §54.2]] |
-| Proposition 8.28 | [[§54 Lie Bracket and Lie Algebra#^cor-54-5\|Cor. §54.5]] |
-| Proposition 8.30 | [[§55 Related Vector Fields#^prop-55-3\|Prop. §55.3]] |
-| Corollary 8.31 | [[§55 Related Vector Fields#^cor-55-4\|Cor. §55.4]] |
-| Proposition 8.33 | [[§56 Lie Groups and Left-Invariant Vector Fields#^cor-56-4\|Cor. §56.4]] |
-| Theorem 8.37 | [[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5\|Thm. §56.5]] |
+| Problem 7-22 | [[§45 The Unit Quaternions and SU(2)#^def-45-1\|Def. §45.1]] |
+| Proposition 8.1 | [[§53 Vector Fields#^prop-53-1\|Prop. §53.1]] |
+| Proposition 8.14 | [[§53 Vector Fields#^lem-53-8\|Lem. §53.8]] |
+| Proposition 8.15 | [[§53 Vector Fields#^prop-53-7\|Prop. §53.7]] |
+| Proposition 8.16 | [[§56 Related Vector Fields#^prop-56-1\|Prop. §56.1]] |
+| Proposition 8.19 | [[§56 Related Vector Fields#^prop-56-2\|Prop. §56.2]] |
+| Corollary 8.21 | [[§56 Related Vector Fields#^prop-56-2\|Prop. §56.2]] |
+| Lemma 8.25 | [[§55 Lie Bracket and Lie Algebra#^lem-55-1\|Lem. §55.1]] |
+| Proposition 8.26 | [[§55 Lie Bracket and Lie Algebra#^prop-55-2\|Prop. §55.2]] |
+| Proposition 8.28 | [[§55 Lie Bracket and Lie Algebra#^cor-55-5\|Cor. §55.5]] |
+| Proposition 8.30 | [[§56 Related Vector Fields#^prop-56-3\|Prop. §56.3]] |
+| Corollary 8.31 | [[§56 Related Vector Fields#^cor-56-4\|Cor. §56.4]] |
+| Proposition 8.33 | [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4\|Cor. §57.4]] |
+| Theorem 8.37 | [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7\|Thm. §57.7]] |
 | Example 10.3 | [[§39 Examples of Fibrations#^ex-39-2\|Ex. §39.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |
-| Proposition 11.9 | [[§49 The Cotangent Bundle#^def-49-4\|Def. §49.4]], [[§49 The Cotangent Bundle#^def-49-5\|Def. §49.5]], [[§49 The Cotangent Bundle#^prop-49-1\|Prop. §49.1]], [[§49 The Cotangent Bundle#^prop-49-2\|Prop. §49.2]], [[§49 The Cotangent Bundle#^cor-49-3\|Cor. §49.3]] |
-| Proposition 11.11 | [[§50 One-Forms#^prop-50-1\|Prop. §50.1]] |
+| Proposition 11.9 | [[§50 The Cotangent Bundle#^def-50-4\|Def. §50.4]], [[§50 The Cotangent Bundle#^def-50-5\|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-1\|Prop. §50.1]], [[§50 The Cotangent Bundle#^prop-50-2\|Prop. §50.2]], [[§50 The Cotangent Bundle#^cor-50-3\|Cor. §50.3]] |
+| Proposition 11.11 | [[§51 One-Forms#^prop-51-1\|Prop. §51.1]] |
 | Proposition 11.20 | [[§32 The Cotangent Space#^cor-32-3\|Cor. §32.3]] |
-| Proposition 11.25 | [[§34 The Cotangent Space from Germs#^prop-34-6\|Prop. §34.6]], [[§50 One-Forms#^cor-50-4\|Cor. §50.4]] |
+| Proposition 11.25 | [[§34 The Cotangent Space from Germs#^prop-34-6\|Prop. §34.6]], [[§51 One-Forms#^cor-51-4\|Cor. §51.4]] |
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Lemma 21.1 | [[§13 Group Actions and Orbit Spaces#^lem-13-2\|Lem. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3\|Lem. §13.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]] |
@@ -205,10 +205,10 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition A.45 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Proposition A.50 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Lemma A.52 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
-| Theorem A.57 | [[§41 Embeddings#^prop-41-4\|Prop. §41.4]] |
+| Theorem A.57 | [[§42 Embeddings#^prop-42-4\|Prop. §42.4]] |
 | Corollary B.21 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Proposition B.24 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
-| Theorem C.15 | [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2\|Lem. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]] |
+| Theorem C.15 | [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4\|Lem. §29.4]] |
 | Theorem C.34 | [[§35 Local Diffeomorphisms#^thm-35-1\|Thm. §35.1]] |
 | Example C.37 | [[§30 The Differential in Coordinates#^ex-30-1\|Ex. §30.1]] |
 | Theorem C.40 | [[§7 The Regular Value Theorem#^thm-7-1\|Thm. §7.1]], [[§7 The Regular Value Theorem#^cor-7-2\|Cor. §7.2]] |

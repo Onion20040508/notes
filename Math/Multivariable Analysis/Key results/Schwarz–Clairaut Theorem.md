@@ -27,9 +27,9 @@ tags: [multivariable-analysis, hub]
 - [[§39 Closed and Exact Forms#^prop-39-4|Proposition §39.4: d² = 0 Is Clairaut's Theorem in Forms Language]]
 
 ## Used in (Differentiable Manifolds)
-- [[§50 One-Forms#^prop-50-3|Proposition §50.3: A Necessary Condition for Being a Differential]]
-- [[§53 Differential Operators#^prop-53-4|Proposition §53.4: Differential Operators in a Chart]]
-- [[§54 Lie Bracket and Lie Algebra#^ex-54-1|Example §54.1: A Bracket in the Plane]]
+- [[§51 One-Forms#^prop-51-3|Proposition §51.3: A Necessary Condition for Being a Differential]]
+- [[§54 Differential Operators#^prop-54-4|Proposition §54.4: Differential Operators in a Chart]]
+- [[§55 Lie Bracket and Lie Algebra#^ex-55-1|Example §55.1: A Bracket in the Plane]]
 
 ## Connections
 - **Proof idea.** The mixed second difference I(h, k) is symmetric in the two directions. Applying the one-variable [[Mean Value Theorem]] twice, in either order, writes it as f_xy at one nearby point and as f_yx at another. Continuity at the point finishes the proof.

@@ -35,7 +35,7 @@ tags: [real-analysis, hub]
 - [[§26 Applications of Tonelli's Theorem#^thm-26-7|Theorem §26.7: Layer Cake Formula (Cavalieri's Principle)]]
 
 ## Used in (Differentiable Manifolds)
-- [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|Lemma §29.2: Hadamard's Lemma]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|Lemma §29.3: Hadamard's Lemma]]
 
 ## Used in (Functional Analysis)
 - [[§13 The Completion of a Normed Space#^prop-13-4|Proposition §13.4: (C²[a,b], ∣·∣_X) is Not Complete]]

@@ -15,10 +15,10 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 
 ## Open Submanifolds
 
-*(Not from lecture.)* Which subsets of a smooth manifold $M$ inherit a smooth structure from $M$? An arbitrary subset with the subspace topology need not even be a manifold — $\mathbb{Q} \subseteq \mathbb{R}$ is not locally Euclidean (the remark *What Subspaces Do Not Inherit* in [[§3 Subspaces and Products#^rem-3-3|§3]]) — and when it is a lower-dimensional one, the charts of $M$ do not restrict to charts of it: for a chart $(U, \varphi)$, the set $\varphi(U \cap S)$ is in general not open in $\mathbb{R}^m$ (for the circle in $\mathbb{R}^2$ it is a piece of a curve). Open subsets are the easy case: the charts of $M$ simply restrict (Proposition [[§17 Differentiable Structures#^prop-17-6|§17.6]]). Regular submanifolds, in the rest of this section, are the general answer, and the two meet in codimension $0$ (Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]).
+*(Not from lecture.)* Which subsets of a smooth manifold $M$ inherit a smooth structure from $M$? An arbitrary subset with the subspace topology need not even be a manifold — $\mathbb{Q} \subseteq \mathbb{R}$ is not locally Euclidean (the remark *What Subspaces Do Not Inherit* in [[§3 Subspaces and Products#^rem-3-3|§3]]) — and when it is a lower-dimensional one, the charts of $M$ do not restrict to charts of it: for a chart $(U, \varphi)$, the set $\varphi(U \cap S)$ is in general not open in $\mathbb{R}^m$ (for the circle in $\mathbb{R}^2$ it is a piece of a curve). Open subsets are the easy case: the charts of $M$ simply restrict (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]]). Regular submanifolds, in the rest of this section, are the general answer, and the two meet in codimension $0$ (Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]).
 
 > [!definition] Definition §37.1: Open Submanifold of a Smooth Manifold
-> An **open submanifold** of a smooth manifold $M$ is an open subset $S \subseteq M$ with the subspace topology and the smooth structure of Proposition [[§17 Differentiable Structures#^prop-17-6|§17.6]], whose charts are the smooth charts of $M$ with domain in $S$. It is the smooth counterpart of Definition [[§3 Subspaces and Products#^def-3-2|§3.2]]; its inclusion into $M$ is smooth, and maps into $S$ are smooth exactly when they are smooth into $M$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-5|§19.5]]).
+> An **open submanifold** of a smooth manifold $M$ is an open subset $S \subseteq M$ with the subspace topology and the smooth structure of Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]], whose charts are the smooth charts of $M$ with domain in $S$. It is the smooth counterpart of Definition [[§3 Subspaces and Products#^def-3-2|§3.2]]; its inclusion into $M$ is smooth, and maps into $S$ are smooth exactly when they are smooth into $M$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]]).
 
 ^def-37-1
 
@@ -28,17 +28,17 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^prop-37-1
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *Open.* $U \times M_2 = \mathrm{pr}_1^{-1}(U)$, open because $\mathrm{pr}_1$ is continuous (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]).
+> *(Not from lecture; filled in.)* *Open.* $U \times M_2 = \mathrm{pr}_1^{-1}(U)$, open because $\mathrm{pr}_1$ is continuous (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]).
 >
 > *Same topology.* The product topology of $U \times M_2$ has the basis of sets $A' \times B$ with $A'$ open in $U$ and $B$ open in $M_2$ (Definition [[§3 Subspaces and Products#^def-3-3|§3.3]]); since $U$ is open, the sets $A'$ open in $U$ are the sets $A \cap U$ with $A$ open in $M_1$. The subspace topology of $U \times M_2$ in $M_1 \times M_2$ has the basis of sets $(A \times B) \cap (U \times M_2) = (A \cap U) \times B$. The two bases are the same, so the topologies agree.
 >
-> *Same smooth structure.* A product chart of $U \times M_2$ is $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ with $(U_1, \varphi_1)$ a smooth chart of the open submanifold $U$ and $(U_2, \varphi_2)$ one of $M_2$. By Proposition [[§17 Differentiable Structures#^prop-17-6|§17.6]](2), $(U_1, \varphi_1)$ is a smooth chart of $M_1$ with $U_1 \subseteq U$, so $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ is a product chart of $M_1 \times M_2$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]]) with domain in $U \times M_2$ — a smooth chart of the open submanifold $U \times M_2$, by Proposition [[§17 Differentiable Structures#^prop-17-6|§17.6]](2) again. So the product charts of $U \times M_2$, an atlas generating its product structure, all lie in the smooth structure of the open submanifold; by the uniqueness in Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] the two smooth structures are equal.
+> *Same smooth structure.* A product chart of $U \times M_2$ is $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ with $(U_1, \varphi_1)$ a smooth chart of the open submanifold $U$ and $(U_2, \varphi_2)$ one of $M_2$. By Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](2), $(U_1, \varphi_1)$ is a smooth chart of $M_1$ with $U_1 \subseteq U$, so $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ is a product chart of $M_1 \times M_2$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]) with domain in $U \times M_2$ — a smooth chart of the open submanifold $U \times M_2$, by Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](2) again. So the product charts of $U \times M_2$, an atlas generating its product structure, all lie in the smooth structure of the open submanifold; by the uniqueness in Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] the two smooth structures are equal.
 >
 > *The projection.* Both maps send $(b, y)$ to $b$.
 
 ^pf-37-1
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§17 Differentiable Structures#^prop-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§17 Differentiable Structures#^thm-17-5|§17.5]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§17 Differentiable Structures#^prop-17-7|§17.7]], [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]], [[§17 Differentiable Structures#^thm-17-5|§17.5]]
 
 ## Regular Submanifolds
 
@@ -51,17 +51,17 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 > U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
 > $$
 >
-> Regular submanifolds are also called **embedded** submanifolds, as opposed to the [[§41 Embeddings#^def-41-4|immersed submanifolds]] of [[§41 Embeddings#^def-41-4|Definition §41.4]]. In these notes, “submanifold” without qualification means a regular submanifold.
+> Regular submanifolds are also called **embedded** submanifolds, as opposed to the [[§42 Embeddings#^def-42-4|immersed submanifolds]] of [[§42 Embeddings#^def-42-4|Definition §42.4]]. In these notes, “submanifold” without qualification means a regular submanifold.
 >
 > *Lee: Theorem 5.8*
 
 ^def-37-2
 
 > [!remark]- Connections
-> - The other kind of submanifold: [[§41 Embeddings#^def-41-4|immersed submanifolds, Def. §41.4]]; when an immersed submanifold is regular: [[§41 Embeddings#^prop-41-15|§41.15]]; local images of immersions: [[§40 Immersions#^cor-40-2|§40.2]].
+> - The other kind of submanifold: [[§42 Embeddings#^def-42-4|immersed submanifolds, Def. §42.4]]; when an immersed submanifold is regular: [[§42 Embeddings#^prop-42-15|§42.15]]; local images of immersions: [[§41 Immersions#^cor-41-2|§41.2]].
 > - Codimension in the Euclidean setting: [[§26 Transversality#^def-26-1|Def. §26.1]].
-> - The geometric stage: in $\mathbb{R}^{n+k}$ the submanifolds are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]] — the external, internal and graph descriptions ([[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) — and the slice of this definition is a fourth: [[§37 Regular Submanifolds#^prop-37-8|§37.8]].
-> - Their tangent spaces: $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^rem-37-2|Remark: The Tangent Spaces Match]], [[§37 Regular Submanifolds#^prop-37-11|§37.11]]).
+> - The geometric stage: in $\mathbb{R}^{n+k}$ the submanifolds are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]] — the external, internal and graph descriptions ([[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) — and the slice of this definition is a fourth: [[§37 Regular Submanifolds#^prop-37-9|§37.9]].
+> - Their tangent spaces: $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^rem-37-2|Remark: The Tangent Spaces Match]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]]).
 
 > [!definition] Definition §37.3: Adapted Chart
 > Let $M$, $S$ and $k$ be as in [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]]. Such charts — smooth charts $(U, \varphi)$ of $M$ with $U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}$ — are **adapted** to $S$; “a random chart of $M$ is not adapted.” In an adapted chart, $U \cap S$ is cut out by the $k$ equations $x^{m-k+1} = \cdots = x^m = 0$, exactly as in the local model.
@@ -71,7 +71,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^def-37-3
 
 > [!remark]- Connections
-> - In Euclidean space an adapted chart comes from a graph chart ([[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) by straightening the graph: [[§37 Regular Submanifolds#^prop-37-8|§37.8]] and its figure.
+> - In Euclidean space an adapted chart comes from a graph chart ([[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) by straightening the graph: [[§37 Regular Submanifolds#^prop-37-9|§37.9]] and its figure.
 
 > [!theorem] Proposition §37.2: Two Observations on Adapted Charts
 > Let $(U, \varphi)$ be a smooth chart of $M$, and suppose that $U \cap S$ is cut out in it by setting some $k$ of the coordinates equal to constants:
@@ -162,20 +162,20 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* For $k = 0$ the chart has no last coordinates: $x_a = \varphi$ and $x_b$ is empty, so the condition $x_b(q) = \vec 0$ in Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] holds for every $q$. A chart $(U, \varphi)$ is therefore adapted to $S$ with $k = 0$ exactly when $U \cap S = U$, that is, when $U \subseteq S$.
 >
-> *(1)* Let $S$ be open and $p \in S$. For a smooth chart $(U, \varphi)$ of $M$ at $p$, its restriction $(U \cap S, \varphi|_{U \cap S})$ is a smooth chart of $M$ (Proposition [[§17 Differentiable Structures#^prop-17-6|§17.6]](2)) with domain inside $S$, hence adapted with $k = 0$. So $S$ is a regular submanifold of codimension $0$. The induced chart of an adapted chart $(U, \varphi)$ with $U \subseteq S$ is $\varphi_S = x_a|_{U \cap S} = \varphi$, the chart itself; so the atlas $\mathcal{A}_S$ of Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] consists of the smooth charts of $M$ with domain in $S$, which generate the open-submanifold structure (Proposition [[§17 Differentiable Structures#^prop-17-6|§17.6]](2)). The two smooth structures are therefore equal (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]).
+> *(1)* Let $S$ be open and $p \in S$. For a smooth chart $(U, \varphi)$ of $M$ at $p$, its restriction $(U \cap S, \varphi|_{U \cap S})$ is a smooth chart of $M$ (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](2)) with domain inside $S$, hence adapted with $k = 0$. So $S$ is a regular submanifold of codimension $0$. The induced chart of an adapted chart $(U, \varphi)$ with $U \subseteq S$ is $\varphi_S = x_a|_{U \cap S} = \varphi$, the chart itself; so the atlas $\mathcal{A}_S$ of Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] consists of the smooth charts of $M$ with domain in $S$, which generate the open-submanifold structure (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](2)). The two smooth structures are therefore equal (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]).
 >
 > *(2)* Let $S$ be a regular submanifold of codimension $0$. Each $p \in S$ lies in the domain $U_p$ of an adapted chart, and $U_p \subseteq S$ by the observation above. So $S = \bigcup_{p \in S} U_p$ is a union of open sets of $M$, hence open.
 
 ^pf-37-4
 
-*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§17 Differentiable Structures#^prop-17-6|§17.6]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-5|§17.5]]
+*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§17 Differentiable Structures#^prop-17-7|§17.7]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-5|§17.5]]
 
 ![[m591-15-1.svg]]
 *An adapted chart ($m = 2$, $k = 1$). The chart $\varphi$ straightens $U \cap S$ onto the part of the $x_a$-axis inside $\varphi(U)$ — exactly the set $\varphi(U) \cap \{x_b = 0\}$, running from rim to rim — and the induced chart $\varphi_S$ keeps only the coordinate $x_a$, landing on an open interval of $\mathbb{R}^{m-k}$.*
 
 > [!remark]- Connections
 > - The subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
-> - The Euclidean prototype, level sets with graph charts: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; the two structures agree by [[§37 Regular Submanifolds#^prop-37-11|§37.11]].
+> - The Euclidean prototype, level sets with graph charts: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; the two structures agree by [[§37 Regular Submanifolds#^prop-37-14|§37.14]].
 
 **Extending charts.** A student asked whether every chart of $S$ extends to an adapted chart of $M$. Uribe: “The answer is yes” — since everything reduces to the local Euclidean picture, the $m - k$ functions of a chart of $S$ extend to a neighbourhood in $M$. This is stated, not proved, here; likewise his remark that smooth functions on $S$ extend to smooth functions near $S$.
 
@@ -216,7 +216,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^prop-37-6
 
 > [!proof]+ Proof
-> *(Lecture 12: “immediate from the definitions”; filled in.)* Fix an adapted chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and its induced chart $(U \cap S, \varphi_S)$ of $S$, whose coordinate functions are $x^1, \ldots, x^{m-k}$ restricted to $U \cap S$; by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]] the $\partial/\partial x^i|^S_p$, $i \le m - k$, form a basis of $T_pS$, and the $\partial/\partial x^l|_p$, $l \le m$, a basis of $T_pM$.
+> *(Lecture 12: “immediate from the definitions”; filled in.)* Fix an adapted chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and its induced chart $(U \cap S, \varphi_S)$ of $S$, whose coordinate functions are $x^1, \ldots, x^{m-k}$ restricted to $U \cap S$; by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]] the $\partial/\partial x^i|^S_p$, $i \le m - k$, form a basis of $T_pS$, and the $\partial/\partial x^l|_p$, $l \le m$, a basis of $T_pM$.
 >
 > *The formula.* By Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) the coordinate representation of $\iota$ is $j$, whose Jacobian is the $m \times (m-k)$ matrix $\binom{I_{m-k}}{0}$: the components of $j(r) = (r, \vec 0)$ are $j^l(r) = r^l$ for $l \le m - k$ and $j^l(r) = 0$ for $l > m - k$, so $\partial j^l/\partial r^i = \delta^l_i$ for $l \le m - k$ and $0$ for $l > m - k$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] this is the matrix of $\iota_{\ast p}$ in the coordinate bases; its $i$-th column gives the formula. Explicitly, the formula of that theorem, with the upstairs partials replaced by the entries of the Jacobian of $j$, reads
 >
@@ -228,11 +228,11 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 >
 > *Injectivity.* The columns of $\binom{I_{m-k}}{0}$ are independent, so $\iota_{\ast p}$ is injective. In terms of vectors: if $\iota_{\ast p}\big(\sum_i a_i\, \partial/\partial x^i|^S_p\big) = \sum_i a_i\, \partial/\partial x^i|_p = 0$, then every $a_i = 0$, because the $\partial/\partial x^i|_p$ are part of a basis of $T_pM$.
 >
-> *Curves.* The statement for curves is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], applied to the smooth map $F = \iota$ and a smooth curve $\gamma$ in $S$ with $\gamma(0) = p$: it gives $\iota_{\ast p} D_\gamma = D_{\iota \circ \gamma}$, where $\iota \circ \gamma$ is $\gamma$ regarded as a curve in $M$, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]].
+> *Curves.* The statement for curves is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], applied to the smooth map $F = \iota$ and a smooth curve $\gamma$ in $S$ with $\gamma(0) = p$: it gives $\iota_{\ast p} D_\gamma = D_{\iota \circ \gamma}$, where $\iota \circ \gamma$ is $\gamma$ regarded as a curve in $M$, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]].
 
 ^pf-37-6
 
-*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
 
 So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) \subseteq T_pM$, the “intrinsic tangent space” inside the ambient one — “for some reason this class, and maybe all abstract classes, keep identifying things with each other.” The second description is the one from Assignment 3, Problem 2: think of a curve in $S$ composed with the inclusion as a curve in $M$, and take its velocity there.
 
@@ -250,10 +250,10 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 > [!remark]- Connections
 > - The annihilator of a subspace: [[§12 Duality#^ladr-3-121|LADR 3.121]].
 
-> [!theorem] Proposition §37.7: A Basis of the Conormal Space
+> [!theorem] Proposition §37.8: A Basis of the Conormal Space
 > In an adapted chart at $p$, $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$. In particular $\dim N_pS = k$, the codimension of $S$.
 
-^prop-37-7
+^prop-37-8
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* Fix an adapted chart $(x^1, \ldots, x^m)$ at $p$. Write $\xi = \sum_j \xi_j\, dx^j|_p$ in the dual basis (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]), so that $\xi(\partial/\partial x^i|_p) = \xi_i$. (By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] the $dx^j|_p$ are the basis dual to the $\partial/\partial x^j|_p$, and the coefficients are the components $\xi_i = \xi(\partial/\partial x^i|_p)$ of Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]].) By Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], $\xi$ vanishes on $\iota_{\ast p}(T_pS)$ if and only if $\xi_i = 0$ for all $i \le m - k$. Indeed, $\iota_{\ast p}(T_pS)$ is the span of $\partial/\partial x^1|_p, \ldots, \partial/\partial x^{m-k}|_p$, and a linear functional vanishes on a span if and only if it vanishes on each spanning vector; so
@@ -264,7 +264,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 >
 > So $N_pS$ is spanned by the $dx^j|_p$ with $j > m - k$, which are linearly independent as part of a basis. (Each of them does lie in $N_pS$, by the same equivalence: for $j > m - k$ and $i \le m - k$, $dx^j|_p(\partial/\partial x^i|_p) = \delta^j_i = 0$.) So they form a basis of $N_pS$, and $\dim N_pS = m - (m - k) = k$, the codimension of $S$.
 
-^pf-37-7
+^pf-37-8
 
 *Uses:* [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]
 
@@ -287,14 +287,14 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 *Not from lecture: the link back to the geometric stage.* Inside a Euclidean space, [[§20 Manifolds in Euclidean Space|§20]] described a manifold $X \subseteq \mathbb{R}^{n+k}$ near a point in three ways — externally, by equations ([[§20 Manifolds in Euclidean Space#^def-20-1|Definition §20.1]]); internally, by a parametrization ([[§20 Manifolds in Euclidean Space#^def-20-2|Definition §20.2]]); and as a graph — and [[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1]] showed that they agree. [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]] adds a fourth, the *slice* description: a chart of the ambient space in which $X$ is a coordinate plane. The fourth agrees with the other three, so in $\mathbb{R}^{n+k}$ the submanifolds of codimension $k$ are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]], and Definition §35.1 is their description made intrinsic to the ambient manifold.
 
-> [!theorem] Proposition §37.8: Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description
+> [!theorem] Proposition §37.9: Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description
 > Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. The following are equivalent:
 > 1. near $p$, $X$ is described [[§20 Manifolds in Euclidean Space#^def-20-1|externally]] ([[§20 Manifolds in Euclidean Space#^def-20-1|Definition §20.1]]) — equivalently, [[§20 Manifolds in Euclidean Space#^def-20-2|internally]] or as a graph ([[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1]]);
 > 2. *(slice)* there is a smooth chart $(U, \varphi = (x_a, x_b))$ of $\mathbb{R}^{n+k}$ with $p \in U$, $x_a$ its first $n$ and $x_b$ its last $k$ components, such that $U \cap X = \{\, q \in U : x_b(q) = \vec 0 \,\}$, that is, a chart [[§37 Regular Submanifolds#^def-37-3|adapted]] to $X$ ([[§37 Regular Submanifolds#^def-37-3|Definition §37.3]]).
 >
 > In particular $X$ is a [[§37 Regular Submanifolds#^def-37-2|regular submanifold]] of $\mathbb{R}^{n+k}$ of codimension $k$ ([[§37 Regular Submanifolds#^def-37-2|Definition §37.2]]) if and only if every point of $X$ has the descriptions of [[§20 Manifolds in Euclidean Space|§20]].
 
-^prop-37-8
+^prop-37-9
 
 > [!proof]+ Proof
 > *(Not from lecture.)* By Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] the external, internal and graph descriptions near $p$ are equivalent, so for (1)$\iff$(2) it suffices to prove graph $\Rightarrow$ slice and slice $\Rightarrow$ external; together with external $\Rightarrow$ graph (Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) these close the cycle.
@@ -307,7 +307,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 >
 > So $\Phi$ is a diffeomorphism of $U$ onto an open set (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), hence a smooth chart of $\mathbb{R}^{n+k}$: it is a homeomorphism onto an open set, and its transition maps with the identity chart are $\Phi$ and $\Phi^{-1}$, so it is compatible with the atlas $\{(\mathbb{R}^{n+k}, \mathrm{id})\}$ and lies in the maximal atlas it generates (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]). Its last $k$ components $y - h(x)$ vanish exactly on $X \cap U$: for $(x, y) \in U$, $y - h(x) = 0$ iff $y = h(x)$ iff $(x, y) \in X \cap (V \times V')$. So $\Phi$ is a chart adapted to $X$ at $p$.
 >
-> *Slice $\Rightarrow$ external.* Let $F = x_b : U \to \mathbb{R}^k$, the last $k$ components of $\varphi$; it is smooth, its components being components of the smooth map $\varphi$. A chart is a diffeomorphism onto its image (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]; it is a diffeomorphism of open subsets of $\mathbb{R}^{n+k}$ by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]), so the Jacobian $\varphi'(q)$ is invertible at every $q \in U$: the ordinary chain rule applied to $\varphi^{-1} \circ \varphi = \mathrm{id}_U$ gives $(\varphi^{-1})'(\varphi(q))\, \varphi'(q) = I$. Its last $k$ rows, which form $F'(q)$, are linearly independent, since the rows of an invertible matrix are; and row $l$ of $\varphi'(q)$ is the gradient of the $l$-th component of $\varphi$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), so these rows are exactly the rows of $F'(q)$. Hence $F'(q)$ has rank $k$ everywhere, $\vec 0$ is a regular value of $F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]: every point of $F^{-1}(\vec 0)$, indeed every point of $U$, is a regular point), and
+> *Slice $\Rightarrow$ external.* Let $F = x_b : U \to \mathbb{R}^k$, the last $k$ components of $\varphi$; it is smooth, its components being components of the smooth map $\varphi$. A chart is a diffeomorphism onto its image (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]; it is a diffeomorphism of open subsets of $\mathbb{R}^{n+k}$ by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]]), so the Jacobian $\varphi'(q)$ is invertible at every $q \in U$: the ordinary chain rule applied to $\varphi^{-1} \circ \varphi = \mathrm{id}_U$ gives $(\varphi^{-1})'(\varphi(q))\, \varphi'(q) = I$. Its last $k$ rows, which form $F'(q)$, are linearly independent, since the rows of an invertible matrix are; and row $l$ of $\varphi'(q)$ is the gradient of the $l$-th component of $\varphi$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), so these rows are exactly the rows of $F'(q)$. Hence $F'(q)$ has rank $k$ everywhere, $\vec 0$ is a regular value of $F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]: every point of $F^{-1}(\vec 0)$, indeed every point of $U$, is a regular point), and
 >
 > $$
 > X \cap U = \{\, q \in U : x_b(q) = \vec 0 \,\} = F^{-1}(\vec 0) ,
@@ -317,9 +317,9 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 >
 > The final statement follows, since Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] asks for (2) at every point of $X$: $X$ is a regular submanifold of codimension $k$ iff every $p \in X$ has an adapted chart, i.e. satisfies (2), iff every $p \in X$ satisfies (1), by the equivalence just proved.
 
-^pf-37-8
+^pf-37-9
 
-*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§20 Manifolds in Euclidean Space#^def-20-2|Def. §20.2]], [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
+*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§20 Manifolds in Euclidean Space#^def-20-2|Def. §20.2]], [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
 
 ![[m591-35-3.svg]]
 *Straightening a graph. The map $\Phi(x, y) = (x, y - h(x))$ keeps $x$ and measures the height above the graph; it carries the graph $X$ to the slice $z = 0$, and the parallel graphs $y = h(x) + c$ to the slices $z = c$. This is the passage from the graph charts of [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]], which flatten $X$ alone, to an adapted chart, which straightens a whole neighbourhood of $X$ in the ambient space.*
@@ -327,7 +327,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph is $z = \sqrt{1 - x^2 - y^2}$, and $(x, y, z) \mapsto (x, y, z - \sqrt{1 - x^2 - y^2})$ is an adapted chart; so is $(x, y, z) \mapsto (x, y, x^2 + y^2 + z^2 - 1)$ near any point with $z \neq 0$, whose last coordinate is the defining function of the external description.
 
 > [!remark] Remark: The Tangent Spaces Match
-> *(Not from lecture.)* The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]]). In the slice chart of [[§37 Regular Submanifolds#^prop-37-8|Proposition §37.8]], with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^prop-37-6|Proposition §37.6]]). [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11]] below makes the identification precise, together with the agreement of the two smooth structures.
+> *(Not from lecture.)* The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]]). In the slice chart of [[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9]], with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^prop-37-6|Proposition §37.6]]). [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14]] below makes the identification precise, together with the agreement of the two smooth structures.
 
 ^rem-37-2
 
@@ -335,7 +335,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 
 *Lecture 12. “And now we go back to submersions” — to “[the] wonderful version of the regular value theorem.”*
 
-> [!theorem] Theorem §37.9: The Regular Value Theorem for Manifolds
+> [!theorem] Theorem §37.12: The Regular Value Theorem for Manifolds
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition [[§36 Submersions#^def-36-4|§36.4]]). Then $S = F^{-1}(q)$ is a regular submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
 >
 > $$
@@ -344,10 +344,10 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > *Lee: Corollary 5.14 and Proposition 5.38*
 
-^thm-37-9
+^thm-37-12
 
 > [!proof]+ Proof
-> *$S$ is a submanifold (Lecture 12).* We check the definition at each $p \in S$: we need an adapted chart at $p$. (If $S = \emptyset$ there is nothing to check.) By assumption $F$ is a submersion at $p$, so the normal form (Theorem [[§36 Submersions#^thm-36-4|§36.4]]) gives charts $(U, \hat\varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $q = F(p)$, with $F(U) \subseteq V$ and $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$. What are the equations of $S \cap U$ in these coordinates? For $q' \in U$,
+> *$S$ is a submanifold (Lecture 12).* We check the definition at each $p \in S$: we need an adapted chart at $p$. (If $S = \emptyset$ there is nothing to check.) By assumption $F$ is a submersion at $p$, so the normal form (Theorem [[§36 Submersions#^thm-36-6|§36.6]]) gives charts $(U, \hat\varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $q = F(p)$, with $F(U) \subseteq V$ and $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$. What are the equations of $S \cap U$ in these coordinates? For $q' \in U$,
 >
 > $$
 > \begin{aligned}q' \in S &\iff F(q') = q \iff \psi\big(F(q')\big) = \psi(q) \\
@@ -356,11 +356,11 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > “These are not of the type $x_b = 0$, but of the type $x_a$ equals a constant”: the first $n$ coordinates equal a constant vector. By the observations after the definition (Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]]) — any constant, and any $n$ of the coordinates — $S$ has an adapted chart at $p$, of codimension $n$. *(Completion.)* The second equivalence uses that $\psi$ is injective on $V$, which contains $F(q')$; the last is the normal form. In detail: the first equivalence is $S = F^{-1}(q)$; the second holds because $F(q')$ and $q$ both lie in $V$, on which $\psi$ is injective; the third because $\psi \circ F = \tilde F \circ \hat\varphi$ on $U$, by the definition $\tilde F = \psi \circ F \circ \hat\varphi^{-1}$; and the last because $\tilde F(\hat\varphi(q'))$ consists of the first $n$ entries $x^1(q'), \ldots, x^n(q')$ of $\hat\varphi(q')$, while $\psi(q) = (y^1(q), \ldots, y^n(q))$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]). So Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] applies with $k = n$, the coordinates $x^1, \ldots, x^n$ and the constant vector $\vec c = \psi(q)$, and here $n \le m$ by the normal form. As $p \in S$ was arbitrary, $S$ is a regular submanifold of codimension $n$, and $\dim S = m - n$ by Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]].
 >
-> *The tangent space.* *(Completion. In lecture: “I won't bother checking the kernel thing, because everything really reduces to the Euclidean [case].”)* The composite $F \circ \iota : S \to N$ is constant, with value $q$, and the pushforward along a constant map is zero (as in the proof of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]); so $F_{\ast p} \circ \iota_{\ast p} = 0$ and $\iota_{\ast p}(T_pS) \subseteq \ker F_{\ast p}$. Explicitly, by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $F_{\ast p} \circ \iota_{\ast p} = (F \circ \iota)_{\ast p} = 0$, so $F_{\ast p}(\iota_{\ast p}v) = 0$ for every $v \in T_pS$. The left side has dimension $m - n$, since $\iota_{\ast p}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]); the right side has dimension $m - n$ by rank–nullity, since $F_{\ast p}$ is onto (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]). In detail: $\dim \iota_{\ast p}(T_pS) = \dim T_pS = \dim S = m - n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), an injective linear map preserving dimension; and $m = \dim T_pM = \dim\ker F_{\ast p} + \operatorname{rank} F_{\ast p} = \dim\ker F_{\ast p} + n$. A subspace of the same finite dimension is everything, so the two are equal. This is the argument of Lecture 8 for $T^{\mathrm{geo}}_pM = \ker F'(p)$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), one level up.
+> *The tangent space.* *(Completion. In lecture: “I won't bother checking the kernel thing, because everything really reduces to the Euclidean [case].”)* The composite $F \circ \iota : S \to N$ is constant, with value $q$, and the pushforward along a constant map is zero (as in the proof of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]); so $F_{\ast p} \circ \iota_{\ast p} = 0$ and $\iota_{\ast p}(T_pS) \subseteq \ker F_{\ast p}$. Explicitly, by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $F_{\ast p} \circ \iota_{\ast p} = (F \circ \iota)_{\ast p} = 0$, so $F_{\ast p}(\iota_{\ast p}v) = 0$ for every $v \in T_pS$. The left side has dimension $m - n$, since $\iota_{\ast p}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]); the right side has dimension $m - n$ by rank–nullity, since $F_{\ast p}$ is onto (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]). In detail: $\dim \iota_{\ast p}(T_pS) = \dim T_pS = \dim S = m - n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), an injective linear map preserving dimension; and $m = \dim T_pM = \dim\ker F_{\ast p} + \operatorname{rank} F_{\ast p} = \dim\ker F_{\ast p} + n$. A subspace of the same finite dimension is everything, so the two are equal. This is the argument of Lecture 8 for $T^{\mathrm{geo}}_pM = \ker F'(p)$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), one level up.
 
-^pf-37-9
+^pf-37-12
 
-*Uses:* [[§36 Submersions#^def-36-3|Def. §36.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^thm-36-4|§36.4]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
+*Uses:* [[§36 Submersions#^def-36-3|Def. §36.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^thm-36-6|§36.6]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
 
 ![[m591-15-5.svg]]
 *The proof in one square, as on the board. In the normal-form charts $\tilde F$ is the projection onto the first $n$ coordinates, so the level set $S \cap U = F^{-1}(q) \cap U$ is carried by $\hat\varphi$ onto a fibre of a projection: the slice where the first $n$ coordinates equal $\psi(q)$.*
@@ -372,17 +372,17 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 
 **Transcription note.** Page 33 of the handwritten notes states the theorem for “$q \in M$ a regular value”; the regular value lies in the target, $q \in N$.
 
-> [!theorem] Corollary §37.10: Fibres of Submersions Are Regular Submanifolds
+> [!theorem] Corollary §37.13: Fibres of Submersions Are Regular Submanifolds
 > If $F : M \to N$ is a submersion, then every fibre $F^{-1}(q)$, $q \in N$, is a regular submanifold of $M$ of codimension $n$ — “they could be empty, some of them.”
 
-^cor-37-10
+^cor-37-13
 
 > [!proof]+ Proof
-> Every $q \in N$ is a regular value: every point of $F^{-1}(q)$ is a regular point, and if $F^{-1}(q)$ is empty the condition holds vacuously. Indeed, $F$ is a submersion at every point of $M$ (Definition [[§36 Submersions#^def-36-1|§36.1]]), in particular at every $p \in F^{-1}(q)$, which is what Definition [[§36 Submersions#^def-36-4|§36.4]](2) asks of a regular value; and if $q \notin F(M)$, it is a regular value by Definition [[§36 Submersions#^def-36-4|§36.4]](3). Apply Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]]: $F^{-1}(q)$ is a regular submanifold of $M$ of codimension $n$.
+> Every $q \in N$ is a regular value: every point of $F^{-1}(q)$ is a regular point, and if $F^{-1}(q)$ is empty the condition holds vacuously. Indeed, $F$ is a submersion at every point of $M$ (Definition [[§36 Submersions#^def-36-1|§36.1]]), in particular at every $p \in F^{-1}(q)$, which is what Definition [[§36 Submersions#^def-36-4|§36.4]](2) asks of a regular value; and if $q \notin F(M)$, it is a regular value by Definition [[§36 Submersions#^def-36-4|§36.4]](3). Apply Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]: $F^{-1}(q)$ is a regular submanifold of $M$ of codimension $n$.
 
-^pf-37-10
+^pf-37-13
 
-*Uses:* [[§36 Submersions#^def-36-3|Def. §36.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^thm-37-9|§37.9]], [[§36 Submersions#^def-36-1|Def. §36.1]]
+*Uses:* [[§36 Submersions#^def-36-3|Def. §36.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[§36 Submersions#^def-36-1|Def. §36.1]]
 
 > [!remark] Remark: The Regular Value Theorems — Old and New
 > The notes now contain the regular value theorem in five forms. They are one idea met at increasing generality, not competing statements.
@@ -393,23 +393,23 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > | Prop. [[§20 Manifolds in Euclidean Space#^prop-20-2\|§20.2]] | the same | smooth manifold, by graph charts | the Euclidean case (Lecture 6) |
 > | Prop. [[§30 The Differential in Coordinates#^prop-30-8\|§30.8]] | $F : M \to N$, level set inside one chart | regular for $F$ iff for $\tilde F$ | a computational tool |
 > | Cor. [[§30 The Differential in Coordinates#^cor-30-9\|§30.9]] | $F : M \to N$ | topological manifold | subsumed; a more elementary proof |
-> | Thm. [[§37 Regular Submanifolds#^thm-37-9\|§37.9]] | $F : M \to N$ | submanifold, with $\iota_{*p}(T_pS) = \ker F_{*p}$ | the general theorem (Lecture 12) |
+> | Thm. [[§37 Regular Submanifolds#^thm-37-12\|§37.12]] | $F : M \to N$ | submanifold, with $\iota_{*p}(T_pS) = \ker F_{*p}$ | the general theorem (Lecture 12) |
 >
 > The general theorem contains the others: taking $M$ an open subset of Euclidean space recovers the first two. Its proof goes through the normal form, which rests on the inverse function theorem and not on [[§7 The Regular Value Theorem|§7]], so nothing is circular. The next proposition shows that the old and new versions give the same smooth structure and the same tangent spaces.
 
 ^rem-37-3
 
-> [!theorem] Proposition §37.11: The Old and New Versions Agree
+> [!theorem] Proposition §37.14: The Old and New Versions Agree
 > Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, $c$ a regular value, and $S = F^{-1}(c)$.
-> 1. The smooth structure on $S$ given by the graph charts (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) is the induced structure of $S$ as a regular submanifold of $W$ (Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]]).
-> 2. In the setting of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], under the identification $T_pW = \mathbb{R}^{n+k}$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], the subspace $\iota_{*p}(T_pS)$ is $T^{\mathrm{geo}}_pS = \ker F'(p)$.
+> 1. The smooth structure on $S$ given by the graph charts (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) is the induced structure of $S$ as a regular submanifold of $W$ (Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]).
+> 2. In the setting of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], under the identification $T_pW = \mathbb{R}^{n+k}$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], the subspace $\iota_{*p}(T_pS)$ is $T^{\mathrm{geo}}_pS = \ker F'(p)$.
 
-^prop-37-11
+^prop-37-14
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* First, $c$ is a regular value in both senses, since the matrix of $F_{\ast p}$ in the standard coordinates is $F'(p)$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]). In detail: with the identity charts on $W$ and on $\mathbb{R}^k$, the coordinate representation of $F$ is $F$ itself, so Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] says the matrix of $F_{\ast p}$ in the coordinate bases is $F'(p)$. A linear map is onto $T_{F(p)}\mathbb{R}^k$ iff its rank is $k$, and its rank is that of its matrix (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)); so $F_{\ast p}$ is onto (Definition [[§36 Submersions#^def-36-4|§36.4]]) iff $F'(p)$ has rank $k$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Hence Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]] applies to $F : W \to \mathbb{R}^k$, and $S$ is a regular submanifold of $W$ of codimension $k$.
+> *(Not from lecture; filled in.)* First, $c$ is a regular value in both senses, since the matrix of $F_{\ast p}$ in the standard coordinates is $F'(p)$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]). In detail: with the identity charts on $W$ and on $\mathbb{R}^k$, the coordinate representation of $F$ is $F$ itself, so Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] says the matrix of $F_{\ast p}$ in the coordinate bases is $F'(p)$. A linear map is onto $T_{F(p)}\mathbb{R}^k$ iff its rank is $k$, and its rank is that of its matrix (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)); so $F_{\ast p}$ is onto (Definition [[§36 Submersions#^def-36-4|§36.4]]) iff $F'(p)$ has rank $k$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Hence Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]] applies to $F : W \to \mathbb{R}^k$, and $S$ is a regular submanifold of $W$ of codimension $k$.
 >
-> (1) Let $p \in S$. As in the construction of the graph charts, after reordering the coordinates write the points of $\mathbb{R}^{n+k}$ as $(x, y) \in \mathbb{R}^n \times \mathbb{R}^k$ with $\partial F/\partial y\,(p)$ invertible, so that the graph chart near $p$ is $(x, y) \mapsto x$ on $S$. (Here $x = x_I$, $y = x_J$ in the notation of the construction before Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], and the graph chart is $\varphi_J = \pi_I|_{U_J}$. The reordering is a permutation $P$ of coordinates; the chart produced below is then $\Phi \circ P$, a smooth chart for the reason given in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]], with the same last $k$ components. We suppress $P$.) Let $\Phi(x, y) = (x, F(x, y) - c)$. Its Jacobian at $p$ is $\begin{pmatrix} I_n & 0 \\ \partial F/\partial x & \partial F/\partial y \end{pmatrix}$, which is invertible: it is block lower triangular, so its determinant is $\det I_n \cdot \det\big(\partial F/\partial y\,(p)\big) \ne 0$. So by the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], with $\Phi$ on $W$ and $a = p$) $\Phi$ restricts to a diffeomorphism of an open $U \ni p$ onto an open set, and by Lemma [[§36 Submersions#^lem-36-3|§36.3]] (with $M = W$, the diffeomorphism being one of manifolds by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]]) it is a smooth chart of $W$. Its last $k$ components are $F - c$, which vanish exactly on $S \cap U$, so $\Phi$ is adapted, and its induced chart is $\Phi_S = x|_{S \cap U}$: the graph chart. More precisely, $\Phi_S$ and the graph chart $\varphi_J$ are both restrictions of the projection $(x, y) \mapsto x$, so they agree on $S \cap U \cap U_J$, an open neighbourhood of $p$ in $S$. The same construction works at every point $p'$ of the graph chart's domain $U_J$, with the same splitting $(x, y)$: there $S$ is the graph $y = h_J(x)$, and differentiating $F(x, h_J(x)) = c$ gives $\partial F/\partial x = -\,\partial F/\partial y \cdot h_J'$, so $F'(p') = \partial F/\partial y\,(p') \cdot \big({-h_J'} \mid I_k\big)$; as $F'(p')$ has rank $k$, the $k \times k$ matrix $\partial F/\partial y\,(p')$ has rank $k$, i.e. is invertible. So near each of its points, every graph chart is an induced chart. Induced charts are pairwise compatible, and smoothness of a transition map is local, so every graph chart is compatible with every induced chart, and the two atlases determine the same maximal atlas (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]). In detail: let $(U_J, \varphi_J)$ be a graph chart and $(V \cap S, \psi_S)$ an induced chart. Near each point $\varphi_J(p')$ of the domain of $\psi_S \circ \varphi_J^{-1}$, by what was just shown, $\varphi_J$ agrees with an induced chart $\Phi_S$ on an open neighbourhood $O$ of $p'$ in $S$; on $\varphi_J(O \cap V)$ the map $\psi_S \circ \varphi_J^{-1}$ equals $\psi_S \circ \Phi_S^{-1}$, a transition map between induced charts, smooth by Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]](2). The same holds for $\varphi_J \circ \psi_S^{-1}$ near each point. So the two charts are compatible, the union of the two atlases is an atlas, and both generate the maximal atlas containing it.
+> (1) Let $p \in S$. As in the construction of the graph charts, after reordering the coordinates write the points of $\mathbb{R}^{n+k}$ as $(x, y) \in \mathbb{R}^n \times \mathbb{R}^k$ with $\partial F/\partial y\,(p)$ invertible, so that the graph chart near $p$ is $(x, y) \mapsto x$ on $S$. (Here $x = x_I$, $y = x_J$ in the notation of the construction before Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], and the graph chart is $\varphi_J = \pi_I|_{U_J}$. The reordering is a permutation $P$ of coordinates; the chart produced below is then $\Phi \circ P$, a smooth chart for the reason given in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]], with the same last $k$ components. We suppress $P$.) Let $\Phi(x, y) = (x, F(x, y) - c)$. Its Jacobian at $p$ is $\begin{pmatrix} I_n & 0 \\ \partial F/\partial x & \partial F/\partial y \end{pmatrix}$, which is invertible: it is block lower triangular, so its determinant is $\det I_n \cdot \det\big(\partial F/\partial y\,(p)\big) \ne 0$. So by the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], with $\Phi$ on $W$ and $a = p$) $\Phi$ restricts to a diffeomorphism of an open $U \ni p$ onto an open set, and by Lemma [[§36 Submersions#^lem-36-5|§36.5]] (with $M = W$, the diffeomorphism being one of manifolds by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]]) it is a smooth chart of $W$. Its last $k$ components are $F - c$, which vanish exactly on $S \cap U$, so $\Phi$ is adapted, and its induced chart is $\Phi_S = x|_{S \cap U}$: the graph chart. More precisely, $\Phi_S$ and the graph chart $\varphi_J$ are both restrictions of the projection $(x, y) \mapsto x$, so they agree on $S \cap U \cap U_J$, an open neighbourhood of $p$ in $S$. The same construction works at every point $p'$ of the graph chart's domain $U_J$, with the same splitting $(x, y)$: there $S$ is the graph $y = h_J(x)$, and differentiating $F(x, h_J(x)) = c$ gives $\partial F/\partial x = -\,\partial F/\partial y \cdot h_J'$, so $F'(p') = \partial F/\partial y\,(p') \cdot \big({-h_J'} \mid I_k\big)$; as $F'(p')$ has rank $k$, the $k \times k$ matrix $\partial F/\partial y\,(p')$ has rank $k$, i.e. is invertible. So near each of its points, every graph chart is an induced chart. Induced charts are pairwise compatible, and smoothness of a transition map is local, so every graph chart is compatible with every induced chart, and the two atlases determine the same maximal atlas (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]). In detail: let $(U_J, \varphi_J)$ be a graph chart and $(V \cap S, \psi_S)$ an induced chart. Near each point $\varphi_J(p')$ of the domain of $\psi_S \circ \varphi_J^{-1}$, by what was just shown, $\varphi_J$ agrees with an induced chart $\Phi_S$ on an open neighbourhood $O$ of $p'$ in $S$; on $\varphi_J(O \cap V)$ the map $\psi_S \circ \varphi_J^{-1}$ equals $\psi_S \circ \Phi_S^{-1}$, a transition map between induced charts, smooth by Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]](2). The same holds for $\varphi_J \circ \psi_S^{-1}$ near each point. So the two charts are compatible, the union of the two atlases is an atlas, and both generate the maximal atlas containing it.
 >
 > (2) Let $v \in T^{\mathrm{geo}}_pS$, and let $\gamma$ be the lifted line of Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], a curve in $S$ with $\gamma(0) = p$ and $\gamma'(0) = v$, so that $D_v = D_\gamma$. (It is smooth into $\mathbb{R}^{n+k}$ with values in $S$, hence smooth into $S$ by Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]](2); by (1) the structure there is the induced one, so $T_pS$ and $\iota_{\ast p}$ are unambiguous. And $D_v = D_\gamma$ because both send $f$ to $\frac{d}{dt}|_{t=0} f(\gamma(t))$, by Definitions [[§25 The Geometric Tangent Space#^def-25-4|§25.4]] and [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]].) By Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], $\iota_{\ast p}D_v = D_{\iota \circ \gamma}$, the derivation $g \mapsto (g \circ \gamma)'(0) = \nabla g(p) \cdot v$ at $p$ — the directional derivative in the direction $v$, which is $v$ under Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]. In detail, for a germ $[g]$ at $p$ on $W$, by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]] and the chain rule (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]),
 >
@@ -417,11 +417,11 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > (\iota_{\ast p}D_v)[g] = D_{\iota \circ \gamma}[g] = \frac{d}{dt}\Big|_{t=0} g\big(\gamma(t)\big) = \nabla g(p) \cdot \gamma'(0) = \nabla g(p) \cdot v = \frac{d}{dt}\Big|_{t=0} g(p + tv) = D_v|_p[g] ,
 > $$
 >
-> where $D_v|_p \in T_pW$ is the derivation of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], the vector $v$ under the identification $T_pW = \mathbb{R}^{n+k}$; the fifth equality is the chain rule for the line $t \mapsto p + tv$. Since $v \mapsto D_v$ is onto $T_pS$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), $\iota_{\ast p}(T_pS) = T^{\mathrm{geo}}_pS$: every element of $T_pS$ is $D_v$ for some $v \in T^{\mathrm{geo}}_pS$, and its image is the vector $v$. And $T^{\mathrm{geo}}_pS = \ker F'(p)$ by Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]. This matches $\ker F_{\ast p}$ in Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]], $F_{\ast p}$ being $F'(p)$: by Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], $F_{\ast p}$ corresponds to $F'(p)$ under the identification $\partial/\partial r^i|_p \mapsto e_i$, which is the identification of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], since $D_{e_i}|_p[g] = \frac{d}{dt}|_{t=0}\, g(p + te_i) = \partial g/\partial r^i(p)$; so $\ker F_{\ast p}$ corresponds to $\ker F'(p)$.
+> where $D_v|_p \in T_pW$ is the derivation of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], the vector $v$ under the identification $T_pW = \mathbb{R}^{n+k}$; the fifth equality is the chain rule for the line $t \mapsto p + tv$. Since $v \mapsto D_v$ is onto $T_pS$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), $\iota_{\ast p}(T_pS) = T^{\mathrm{geo}}_pS$: every element of $T_pS$ is $D_v$ for some $v \in T^{\mathrm{geo}}_pS$, and its image is the vector $v$. And $T^{\mathrm{geo}}_pS = \ker F'(p)$ by Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]. This matches $\ker F_{\ast p}$ in Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], $F_{\ast p}$ being $F'(p)$: by Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], $F_{\ast p}$ corresponds to $F'(p)$ under the identification $\partial/\partial r^i|_p \mapsto e_i$, which is the identification of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], since $D_{e_i}|_p[g] = \frac{d}{dt}|_{t=0}\, g(p + te_i) = \partial g/\partial r^i(p)$; so $\ker F_{\ast p}$ corresponds to $\ker F'(p)$.
 
-^pf-37-11
+^pf-37-14
 
-*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§36 Submersions#^lem-36-3|§36.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§37 Regular Submanifolds#^thm-37-9|§37.9]], [[Directional Derivative Formula|452 §9.1]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]
+*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§36 Submersions#^lem-36-5|§36.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[Directional Derivative Formula|452 §9.1]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]
 
 *Assignment 5, Problem 2.* [[§26 Transversality|§26]] treated transversality in Euclidean space: a smooth map $F : \mathbb{R}^N \to \mathbb{R}^k$ transverse to a regular level set $S = G^{-1}(0)$ (Definition [[§26 Transversality#^def-26-2|§26.2]]) pulls $S$ back to a manifold of the same codimension, with $T^{\mathrm{geo}}_pF^{-1}(S) = F'(p)^{-1}(T^{\mathrm{geo}}_{F(p)}S)$ (Theorem [[§26 Transversality#^thm-26-1|§26.1]]). That proof needed a global defining map $G$. With regular submanifolds and their adapted charts, the same statement holds for any smooth map between manifolds and any regular submanifold of the target — an adapted chart supplies a defining map $x_b$ near each point, which is the localization announced in Remark [[§26 Transversality#^rem-26-2|remark]].
 
@@ -438,7 +438,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 
 ^def-37-5
 
-> [!theorem] Theorem §37.12: Preimages of Transverse Submanifolds
+> [!theorem] Theorem §37.15: Preimages of Transverse Submanifolds
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, let $S \subseteq N$ be a regular submanifold of codimension $k$, and suppose $F \pitchfork S$ (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]). Let $\iota : S \to N$ and $j : F^{-1}(S) \to M$ be the inclusions.
 >
 > 1. $F^{-1}(S)$ is a regular submanifold of $M$ of codimension $k$, the codimension of $S$ in $N$ (possibly empty). If it is nonempty, then $k \le m$ and $\dim F^{-1}(S) = m - k$.
@@ -452,10 +452,10 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > *Lee: Theorem 6.30(a)*
 
-^thm-37-12
+^thm-37-15
 
 > [!proof]+ Proof
-> *(Assignment 5, Problem 2; the student's route, with two steps completed — the normal form is applied at a single point, and the kernel of $(x_b)_{\ast q}$ is computed directly, without the regular value theorem.)* For (1) we must produce, at every $p \in F^{-1}(S)$, a smooth chart of $M$ adapted to $F^{-1}(S)$ with $k$ equations (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]). If $F^{-1}(S) = \emptyset$ there is nothing to check, since the condition of Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] is one condition at each point of the subset (the convention of Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]], whose fibres may be empty); and (2) is then vacuous. So fix $p \in F^{-1}(S)$ and put $q = F(p)$, a point of $S$. The plan: an adapted chart of $S$ at $q$ supplies a local defining map $x_b$ for $S$; transversality makes $G = x_b \circ F$ a submersion at $p$; the normal form of $G$ then straightens $F^{-1}(S)$ near $p$. Throughout, the tangent space of an open subset at a point is identified with that of the ambient manifold (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]), as everywhere in the notes; by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), applied to a restriction $F|_V = F \circ \iota_V$ with $\iota_V$ the inclusion of the open set $V$, this identification turns the differential of a restriction of $F$ into $F_{\ast p}$.
+> *(Assignment 5, Problem 2; the student's route, with two steps completed — the normal form is applied at a single point, and the kernel of $(x_b)_{\ast q}$ is computed directly, without the regular value theorem.)* For (1) we must produce, at every $p \in F^{-1}(S)$, a smooth chart of $M$ adapted to $F^{-1}(S)$ with $k$ equations (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]). If $F^{-1}(S) = \emptyset$ there is nothing to check, since the condition of Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] is one condition at each point of the subset (the convention of Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], whose fibres may be empty); and (2) is then vacuous. So fix $p \in F^{-1}(S)$ and put $q = F(p)$, a point of $S$. The plan: an adapted chart of $S$ at $q$ supplies a local defining map $x_b$ for $S$; transversality makes $G = x_b \circ F$ a submersion at $p$; the normal form of $G$ then straightens $F^{-1}(S)$ near $p$. Throughout, the tangent space of an open subset at a point is identified with that of the ambient manifold (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]), as everywhere in the notes; by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), applied to a restriction $F|_V = F \circ \iota_V$ with $\iota_V$ the inclusion of the open set $V$, this identification turns the differential of a restriction of $F$ into $F_{\ast p}$.
 >
 > *Step 1: an adapted chart at $q$.* Since $q \in S$ and $S$ is a regular submanifold of codimension $k$, there is a smooth chart $(U, \varphi = (x^1, \ldots, x^n))$ of $N$ with $q \in U$ and
 >
@@ -484,8 +484,8 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > Two consequences.
 >
-> 1. [(a)] *$(x_b)_{\ast q}$ is onto $T_{\vec 0}\mathbb{R}^k$.* Its image is a subspace containing, by the second case, every vector $\partial/\partial r^j|_{\vec 0}$ of the coordinate basis of $T_{\vec 0}\mathbb{R}^k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), hence their span, which is everything.
-> 2. [(b)] *$\ker (x_b)_{\ast q} = \iota_{\ast q}(T_qS)$.* By the first case, $(x_b)_{\ast q}$ kills $\partial/\partial x^1|_q, \ldots, \partial/\partial x^{n-k}|_q$, hence, being linear, their span; by Step 1 that span is $\iota_{\ast q}(T_qS)$, so $\iota_{\ast q}(T_qS) \subseteq \ker (x_b)_{\ast q}$. The span has dimension $n - k$, its spanning vectors being part of a basis of $T_qN$. On the other side, by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) with $\dim T_qN = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]) and $\operatorname{rank}(x_b)_{\ast q} = k$ by (a),
+> 1. [(a)] *$(x_b)_{\ast q}$ is onto $T_{\vec 0}\mathbb{R}^k$.* Its image is a subspace containing, by the second case, every vector $\partial/\partial r^j|_{\vec 0}$ of the coordinate basis of $T_{\vec 0}\mathbb{R}^k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), hence their span, which is everything.
+> 2. [(b)] *$\ker (x_b)_{\ast q} = \iota_{\ast q}(T_qS)$.* By the first case, $(x_b)_{\ast q}$ kills $\partial/\partial x^1|_q, \ldots, \partial/\partial x^{n-k}|_q$, hence, being linear, their span; by Step 1 that span is $\iota_{\ast q}(T_qS)$, so $\iota_{\ast q}(T_qS) \subseteq \ker (x_b)_{\ast q}$. The span has dimension $n - k$, its spanning vectors being part of a basis of $T_qN$. On the other side, by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) with $\dim T_qN = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]) and $\operatorname{rank}(x_b)_{\ast q} = k$ by (a),
 >
 > $$
 > \dim \ker (x_b)_{\ast q} = \dim T_qN - \operatorname{rank}(x_b)_{\ast q} = n - k .
@@ -499,7 +499,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > G = x_b \circ F|_V : V \longrightarrow \mathbb{R}^k .
 > $$
 >
-> It is smooth: $F|_V$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-5|§19.5]](2)), and smooth as a map into the open submanifold $U$, since it takes values in $U$ and its composite with the inclusion $U \hookrightarrow N$ is the smooth map $F|_V$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-5|§19.5]](3)); then $G$ is a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) and the identifications $T_pV = T_pM$, $T_qU = T_qN$,
+> It is smooth: $F|_V$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]](2)), and smooth as a map into the open submanifold $U$, since it takes values in $U$ and its composite with the inclusion $U \hookrightarrow N$ is the smooth map $F|_V$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]](3)); then $G$ is a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) and the identifications $T_pV = T_pM$, $T_qU = T_qN$,
 >
 > $$
 > G_{\ast p} = (x_b)_{\ast q} \circ F_{\ast p} : T_pM \longrightarrow T_{\vec 0}\mathbb{R}^k .
@@ -519,16 +519,16 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > w = (x_b)_{\ast q}u = (x_b)_{\ast q}F_{\ast p}v + (x_b)_{\ast q}t = (x_b)_{\ast q}F_{\ast p}v + 0 = G_{\ast p}v .
 > $$
 >
-> So $G_{\ast p}$ is onto, i.e. $G$ is a submersion at $p$ (Definition [[§36 Submersions#^def-36-1|§36.1]]). In particular $k \le m$: a surjective linear map $T_pM \to T_{\vec 0}\mathbb{R}^k$ has $\dim T_pM \ge \dim T_{\vec 0}\mathbb{R}^k$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), and these dimensions are $m$ and $k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]).
+> So $G_{\ast p}$ is onto, i.e. $G$ is a submersion at $p$ (Definition [[§36 Submersions#^def-36-1|§36.1]]). In particular $k \le m$: a surjective linear map $T_pM \to T_{\vec 0}\mathbb{R}^k$ has $\dim T_pM \ge \dim T_{\vec 0}\mathbb{R}^k$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), and these dimensions are $m$ and $k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]).
 >
-> *Step 6: the normal form of $G$ at $p$.* The normal form (Theorem [[§36 Submersions#^thm-36-4|§36.4]]) requires $G$ to be a submersion only at the one point $p$, which is Step 5. (That $G$ is then a submersion on a whole neighbourhood of $p$, Corollary [[§36 Submersions#^cor-36-5|§36.5]], is a consequence of the normal form, not a hypothesis of it; no shrinking of $V$ is needed.) Applied to $G : V \to \mathbb{R}^k$ at $p$, it gives smooth charts $(W, \theta = (z^1, \ldots, z^m))$ of $V$ at $p$ and $(Y, \chi)$ of $\mathbb{R}^k$ at $G(p) = \vec 0$, with $G(W) \subseteq Y$ and
+> *Step 6: the normal form of $G$ at $p$.* The normal form (Theorem [[§36 Submersions#^thm-36-6|§36.6]]) requires $G$ to be a submersion only at the one point $p$, which is Step 5. (That $G$ is then a submersion on a whole neighbourhood of $p$, Corollary [[§36 Submersions#^cor-36-7|§36.7]], is a consequence of the normal form, not a hypothesis of it; no shrinking of $V$ is needed.) Applied to $G : V \to \mathbb{R}^k$ at $p$, it gives smooth charts $(W, \theta = (z^1, \ldots, z^m))$ of $V$ at $p$ and $(Y, \chi)$ of $\mathbb{R}^k$ at $G(p) = \vec 0$, with $G(W) \subseteq Y$ and
 >
 > $$
 > \chi \circ G \circ \theta^{-1}\big(r^1, \ldots, r^m\big) = \big(r^1, \ldots, r^k\big) \quad \text{on } \theta(W),
 > $$
 >
 > that is, $\chi\big(G(p')\big) = \big(z^1(p'), \ldots, z^k(p')\big)$ for $p' \in W$ (apply the first identity at $\theta(p')$).
-> Since $W \subseteq V$ is open in $V$, hence in $M$, $(W, \theta)$ is also a smooth chart of $M$ (Proposition [[§17 Differentiable Structures#^prop-17-6|§17.6]](2)). Put $\vec c = \chi(\vec 0) = (c_1, \ldots, c_k)$.
+> Since $W \subseteq V$ is open in $V$, hence in $M$, $(W, \theta)$ is also a smooth chart of $M$ (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]](2)). Put $\vec c = \chi(\vec 0) = (c_1, \ldots, c_k)$.
 >
 > *Step 7: an adapted chart at $p$.* For $p' \in W$,
 >
@@ -546,7 +546,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > *Conclusion of (1).* As $p \in F^{-1}(S)$ was arbitrary, every point of $F^{-1}(S)$ lies in a chart of $M$ adapted to $F^{-1}(S)$ with $k$ equations, so $F^{-1}(S)$ is a regular submanifold of $M$ of codimension $k$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and $\dim F^{-1}(S) = m - k$ by Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]. The codimension of $S$ in $N$ is also $k$, by hypothesis.
 >
-> *(2): $j_{\ast p}(T_pF^{-1}(S)) \subseteq \ker G_{\ast p}$.* The set $V \cap F^{-1}(S)$ is open in $F^{-1}(S)$ (subspace topology) and contains $p$, so its tangent space at $p$ is $T_pF^{-1}(S)$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). On it the composite $G \circ j$ is defined (as $j$ maps it into $V$; its restriction is smooth into the open set $V$ by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) and Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-5|§19.5]](3)) and constant with value $\vec 0$, by Step 4. The differential of a constant map is zero: for a derivation $D$ at $p$ and a germ $[g]$ at $\vec 0$, $(G \circ j)_{\ast p}D\,[g] = D[g \circ G \circ j]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]), and $g \circ G \circ j$ is the constant $g(\vec 0)$ near $p$, whose germ $D$ kills (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)). So, by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]),
+> *(2): $j_{\ast p}(T_pF^{-1}(S)) \subseteq \ker G_{\ast p}$.* The set $V \cap F^{-1}(S)$ is open in $F^{-1}(S)$ (subspace topology) and contains $p$, so its tangent space at $p$ is $T_pF^{-1}(S)$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). On it the composite $G \circ j$ is defined (as $j$ maps it into $V$; its restriction is smooth into the open set $V$ by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) and Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]](3)) and constant with value $\vec 0$, by Step 4. The differential of a constant map is zero: for a derivation $D$ at $p$ and a germ $[g]$ at $\vec 0$, $(G \circ j)_{\ast p}D\,[g] = D[g \circ G \circ j]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]), and $g \circ G \circ j$ is the constant $g(\vec 0)$ near $p$, whose germ $D$ kills (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)). So, by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]),
 >
 > $$
 > G_{\ast p} \circ j_{\ast p} = (G \circ j)_{\ast p} = 0 ,
@@ -554,7 +554,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > that is, $G_{\ast p}(j_{\ast p}v) = 0$ for every $v \in T_pF^{-1}(S)$.
 >
-> *(2): dimensions.* $j_{\ast p}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], for the submanifold $F^{-1}(S) \subseteq M$), so, by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]] and (1),
+> *(2): dimensions.* $j_{\ast p}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], for the submanifold $F^{-1}(S) \subseteq M$), so, by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]] and (1),
 >
 > $$
 > \dim j_{\ast p}\big(T_pF^{-1}(S)\big) = \dim T_pF^{-1}(S) = \dim F^{-1}(S) = m - k .
@@ -574,13 +574,13 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > &= \big\{\, v \in T_pM : F_{\ast p}v \in \ker (x_b)_{\ast q} \,\big\} = \big\{\, v \in T_pM : F_{\ast p}v \in \iota_{\ast q}(T_qS) \,\big\} ,\end{aligned}
 > $$
 >
-> which is $(F_{\ast p})^{-1}\big(\iota_{\ast q}(T_qS)\big)$. With the previous paragraph, $j_{\ast p}(T_pF^{-1}(S)) = (F_{\ast p})^{-1}\big(\iota_{\ast q}(T_qS)\big)$. This is the argument of the tangent-space half of Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]], run for $G$, followed by the computation of $\ker G_{\ast p}$ that ends the proof of Theorem [[§26 Transversality#^thm-26-1|§26.1]].
+> which is $(F_{\ast p})^{-1}\big(\iota_{\ast q}(T_qS)\big)$. With the previous paragraph, $j_{\ast p}(T_pF^{-1}(S)) = (F_{\ast p})^{-1}\big(\iota_{\ast q}(T_qS)\big)$. This is the argument of the tangent-space half of Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], run for $G$, followed by the computation of $\ker G_{\ast p}$ that ends the proof of Theorem [[§26 Transversality#^thm-26-1|§26.1]].
 
-^pf-37-12
+^pf-37-15
 
-*Uses:* [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^thm-37-9|§37.9]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§36 Submersions#^thm-36-4|§36.4]], [[§36 Submersions#^cor-36-5|§36.5]], [[§17 Differentiable Structures#^prop-17-6|§17.6]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§26 Transversality#^thm-26-1|§26.1]]
+*Uses:* [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§36 Submersions#^thm-36-6|§36.6]], [[§36 Submersions#^cor-36-7|§36.7]], [[§17 Differentiable Structures#^prop-17-7|§17.7]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§26 Transversality#^thm-26-1|§26.1]]
 
-> [!theorem] Proposition §37.13: Normal Spaces Under a Transverse Map
+> [!theorem] Proposition §37.16: Normal Spaces Under a Transverse Map
 > Let $F : M \to N$ be smooth, $S \subseteq N$ a regular submanifold of codimension $k$ with inclusion $\iota$, $p \in F^{-1}(S)$ and $q = F(p)$. Put
 >
 > $$
@@ -596,9 +596,9 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > 2. $\bar F_{\ast p}$ is injective.
 > 3. $\bar F_{\ast p}$ is surjective if and only if $F$ is transverse to $S$ at $p$ (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]).
 >
-> So if $F \pitchfork S$, then $K_p = j_{\ast p}(T_pF^{-1}(S))$, with $j$ the inclusion of $F^{-1}(S)$ (Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]) and $\bar F_{\ast p}$ is an isomorphism $T_pM/T_pF^{-1}(S) \cong T_qN/T_qS$ of the normal spaces: both have dimension $k$, which is the reason the codimension is preserved.
+> So if $F \pitchfork S$, then $K_p = j_{\ast p}(T_pF^{-1}(S))$, with $j$ the inclusion of $F^{-1}(S)$ (Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]]) and $\bar F_{\ast p}$ is an isomorphism $T_pM/T_pF^{-1}(S) \cong T_qN/T_qS$ of the normal spaces: both have dimension $k$, which is the reason the codimension is preserved.
 
-^prop-37-13
+^prop-37-16
 
 > [!proof]+ Proof
 > *(Not from lecture.)* Write $E = \iota_{\ast q}(T_qS)$, a subspace of $T_qN$ (the image of a linear map), and $\pi_N : T_qN \to T_qN/E$, $\pi_M : T_pM \to T_pM/K_p$ for the projections. $K_p$ is a subspace of $T_pM$, as the preimage of the subspace $E$ under the linear map $F_{\ast p}$: if $F_{\ast p}v, F_{\ast p}v' \in E$, then $F_{\ast p}(v + cv') = F_{\ast p}v + c\,F_{\ast p}v' \in E$. Throughout, two vectors have the same coset iff their difference lies in the subspace (Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]]).
@@ -623,7 +623,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > For the last equivalence: if $u - F_{\ast p}v = t \in E$, then $u = F_{\ast p}v + t$ lies in the sum; conversely if $u = F_{\ast p}v + t$ with $t \in E$, then $u - F_{\ast p}v = t \in E$. The last condition says $F_{\ast p}(T_pM) + \iota_{\ast q}(T_qS) = T_qN$, since the sum is a subspace of $T_qN$ in any case; this is transversality at $p$ (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]).
 >
-> *The transverse case.* If $F \pitchfork S$, then $\bar F_{\ast p}$ is injective by (2) and surjective by (3), hence an isomorphism, and $K_p = j_{\ast p}(T_pF^{-1}(S))$ by Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]](2). The dimensions are $\dim T_pM = m$ and $\dim T_qN = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]); $\dim E = \dim T_qS = n - k$, as $\iota_{\ast q}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]); and $\dim K_p = m - k$ (Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]](1)). So by Proposition [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]](3)
+> *The transverse case.* If $F \pitchfork S$, then $\bar F_{\ast p}$ is injective by (2) and surjective by (3), hence an isomorphism, and $K_p = j_{\ast p}(T_pF^{-1}(S))$ by Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]](2). The dimensions are $\dim T_pM = m$ and $\dim T_qN = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]); $\dim E = \dim T_qS = n - k$, as $\iota_{\ast q}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]); and $\dim K_p = m - k$ (Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]](1)). So by Proposition [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]](3)
 >
 > $$
 > \dim T_pM/K_p = m - (m - k) = k = n - (n - k) = \dim T_qN/E ,
@@ -631,14 +631,14 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > as an isomorphism requires. Read backwards, the isomorphism alone gives $\dim K_p = m - \dim T_qN/E = m - k$: the codimension of $F^{-1}(S)$ in $M$ is the dimension of its normal space $T_pM/K_p$, and transversality makes $F_{\ast p}$ carry that normal space isomorphically onto the normal space of $S$, of dimension $k$.
 
-^pf-37-13
+^pf-37-16
 
-*Uses:* [[§21 Linear Algebra Toolkit#^def-21-6|Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]]
+*Uses:* [[§21 Linear Algebra Toolkit#^def-21-6|Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]], [[§37 Regular Submanifolds#^thm-37-15|§37.15]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]]
 
 > [!remark] Remark: Special Cases of Transversality
 > *(Not from lecture.)* Let $F : M \to N$ be smooth, $\dim M = m$, $\dim N = n$.
 >
-> 1. *A point.* For $c \in N$, $\{c\}$ is a regular submanifold of $N$ of codimension $n$: it is the fibre $\mathrm{id}_N^{-1}(c)$ of the identity, a submersion since $(\mathrm{id}_N)_{\ast} = \mathrm{id}$ (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), so Corollary [[§37 Regular Submanifolds#^cor-37-10|§37.10]] applies. Its tangent space is $0$ (dimension $n - n = 0$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), so transversality at $p \in F^{-1}(c)$ reads $F_{\ast p}(T_pM) + 0 = T_cN$: $F_{\ast p}$ is onto. Thus $F \pitchfork \{c\}$ iff $F$ is a submersion at every point of $F^{-1}(c)$, iff $c$ is a regular value (Definition [[§36 Submersions#^def-36-4|§36.4]], the empty case included). Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]] then returns the regular value theorem, Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]]: $F^{-1}(c)$ is a regular submanifold of codimension $n$, and $j_{\ast p}(T_pF^{-1}(c)) = (F_{\ast p})^{-1}(0) = \ker F_{\ast p}$. This is the manifold version of Corollary [[§26 Transversality#^cor-26-3|§26.3]].
+> 1. *A point.* For $c \in N$, $\{c\}$ is a regular submanifold of $N$ of codimension $n$: it is the fibre $\mathrm{id}_N^{-1}(c)$ of the identity, a submersion since $(\mathrm{id}_N)_{\ast} = \mathrm{id}$ (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), so Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]] applies. Its tangent space is $0$ (dimension $n - n = 0$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so transversality at $p \in F^{-1}(c)$ reads $F_{\ast p}(T_pM) + 0 = T_cN$: $F_{\ast p}$ is onto. Thus $F \pitchfork \{c\}$ iff $F$ is a submersion at every point of $F^{-1}(c)$, iff $c$ is a regular value (Definition [[§36 Submersions#^def-36-4|§36.4]], the empty case included). Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]] then returns the regular value theorem, Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]: $F^{-1}(c)$ is a regular submanifold of codimension $n$, and $j_{\ast p}(T_pF^{-1}(c)) = (F_{\ast p})^{-1}(0) = \ker F_{\ast p}$. This is the manifold version of Corollary [[§26 Transversality#^cor-26-3|§26.3]].
 > 2. *Two submanifolds.* Let $S' \subseteq N$ be another regular submanifold, of codimension $k'$, and $F = \iota' : S' \to N$ its inclusion. Then $F^{-1}(S) = S' \cap S$ and $F_{\ast p}(T_pS') = \iota'_{\ast p}(T_pS')$, so $\iota' \pitchfork S$ says
 >
 > $$
@@ -646,7 +646,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > $$
 >
 > a condition symmetric in $S$ and $S'$: the two submanifolds *intersect transversally*. In that case the theorem makes $S' \cap S$ a regular submanifold of $S'$ of codimension $k = \operatorname{codim} S$, so of dimension $(n - k') - k = n - (k' + k)$ — the codimensions add, as for level sets in Proposition [[§26 Transversality#^prop-26-4|§26.4]] — and its tangent space, inside $T_pS'$, consists of the vectors whose image in $T_pN$ lies in $\iota_{\ast p}(T_pS)$: with all tangent spaces regarded as subspaces of $T_pN$, $T_p(S' \cap S) = T_pS' \cap T_pS$.
-> 3. *Submersions.* If $F$ is a submersion, then $F_{\ast p}(T_pM) = T_{F(p)}N$ already, so $F$ is transverse to *every* regular submanifold $S \subseteq N$, and $F^{-1}(S)$ is a regular submanifold of the same codimension. For $S = \{c\}$ a point this is Corollary [[§37 Regular Submanifolds#^cor-37-10|§37.10]]: a submersion is transverse to every point, and its fibres are regular submanifolds of codimension $n$.
+> 3. *Submersions.* If $F$ is a submersion, then $F_{\ast p}(T_pM) = T_{F(p)}N$ already, so $F$ is transverse to *every* regular submanifold $S \subseteq N$, and $F^{-1}(S)$ is a regular submanifold of the same codimension. For $S = \{c\}$ a point this is Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]]: a submersion is transverse to every point, and its fibres are regular submanifolds of codimension $n$.
 >
 > *Lee: Theorem 6.30(b), for (2)*
 
@@ -654,17 +654,17 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 
 *Assignment 5, Problem 4 (“Revisiting Lagrange multipliers”), in the notation of these notes: the assignment's submanifold $M \subset N$ is here $S \subseteq M$, with $M$ the ambient manifold of dimension $m$; its conormal space $\mathcal{N}_pM$ is $N_pS$ (Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]); and $d(G^j)_p$ is written $dG^j|_p$. The problem: (a) a point is a critical point of the restriction $f = \Phi|_S$ of a smooth function $\Phi$ on $M$ exactly when $d\Phi_p$ is conormal to $S$; (b) for a regular level set $S = G^{-1}(0)$ the differentials $dG^1|_p, \ldots, dG^k|_p$ form a basis of $N_pS$, and the method of Lagrange multipliers follows. The proofs are the submitted solution's, written out.*
 
-> [!theorem] Proposition §37.14: Critical Points of a Restriction
+> [!theorem] Proposition §37.18: Critical Points of a Restriction
 > Let $S \subseteq M$ be a regular submanifold, $\iota : S \to M$ the inclusion, $p \in S$, and $\iota_p^{\ast} : T_p^{\ast}M \to T_p^{\ast}S$ the pullback of covectors (Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]). Let $\Phi : M \to \mathbb{R}$ be smooth and $f = \Phi \circ \iota = \Phi|_S : S \to \mathbb{R}$ its restriction.
 >
 > 1. $N_pS = \ker \iota_p^{\ast}$.
 > 2. $df_p = \iota_p^{\ast}\big(d\Phi_p\big)$.
 > 3. $p$ is a critical point of $f$ if and only if $d\Phi_p \in N_pS$.
 
-^prop-37-14
+^prop-37-18
 
 > [!proof]+ Proof
-> *(Assignment 5, Problem 4(a).)* The restriction $f = \Phi \circ \iota$ is smooth, as a composite of smooth maps (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) and Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), so $df_p \in T_p^{\ast}S$ is defined. By Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]] with $F = \iota$ and $F(p) = \iota(p) = p$, the pullback of a covector $\xi \in T_p^{\ast}M$ is the covector on $T_pS$
+> *(Assignment 5, Problem 4(a).)* The restriction $f = \Phi \circ \iota$ is smooth, as a composite of smooth maps (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) and Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $df_p \in T_p^{\ast}S$ is defined. By Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]] with $F = \iota$ and $F(p) = \iota(p) = p$, the pullback of a covector $\xi \in T_p^{\ast}M$ is the covector on $T_pS$
 >
 > $$
 > \big(\iota_p^{\ast}\xi\big)(v) = \xi\big(\iota_{\ast p}v\big), \qquad v \in T_pS .
@@ -694,19 +694,19 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > In words: $p$ is critical for the restriction exactly when $d\Phi_p$ vanishes on every vector tangent to $S$ at $p$.
 
-^pf-37-14
+^pf-37-18
 
-*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^prop-36-2|§36.2]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^prop-36-2|§36.2]]
 
-> [!theorem] Proposition §37.15: The Conormal Space of a Regular Level Set
+> [!theorem] Proposition §37.19: The Conormal Space of a Regular Level Set
 > Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth, with $0$ a regular value of $G$ (Definition [[§36 Submersions#^def-36-4|§36.4]]), and let $S = G^{-1}(0)$. Then for every $p \in S$ the covectors $dG^1|_p, \ldots, dG^k|_p$ form a basis of the conormal space $N_pS$.
 
-^prop-37-15
+^prop-37-19
 
 > [!proof]+ Proof
-> *(Assignment 5, Problem 4(b), first part. The dimension count cites Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], which the submitted solution re-derives in an adapted chart.)* Let $r^1, \ldots, r^k$ be the standard coordinates of $\mathbb{R}^k$, so that $G^j = r^j \circ G$; each $G^j$ is smooth, as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). Fix $p \in S$. We show three things: $\dim N_pS = k$; each $dG^j|_p$ lies in $N_pS$; and the $k$ covectors $dG^j|_p$ are linearly independent. Then they span a $k$-dimensional subspace of the $k$-dimensional space $N_pS$, and a subspace of the same finite dimension is the whole space; so they are a basis.
+> *(Assignment 5, Problem 4(b), first part. The dimension count cites Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]], which the submitted solution re-derives in an adapted chart.)* Let $r^1, \ldots, r^k$ be the standard coordinates of $\mathbb{R}^k$, so that $G^j = r^j \circ G$; each $G^j$ is smooth, as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). Fix $p \in S$. We show three things: $\dim N_pS = k$; each $dG^j|_p$ lies in $N_pS$; and the $k$ covectors $dG^j|_p$ are linearly independent. Then they span a $k$-dimensional subspace of the $k$-dimensional space $N_pS$, and a subspace of the same finite dimension is the whole space; so they are a basis.
 >
-> *$S$ is a regular submanifold, and $\dim N_pS = k$.* By Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]], applied to $G : M \to \mathbb{R}^k$ and the regular value $0$ (so $n = k$ there), $S$ is a regular submanifold of $M$ of codimension $k$; so $N_pS$ is defined, and $\dim N_pS = k$ by Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]]. Recall the computation: in an adapted chart $(x^1, \ldots, x^m)$ at $p$, a covector $\xi = \sum_i \xi_i\, dx^i|_p$ lies in $N_pS$ exactly when $\xi_i = 0$ for $i \le m - k$, so $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$.
+> *$S$ is a regular submanifold, and $\dim N_pS = k$.* By Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], applied to $G : M \to \mathbb{R}^k$ and the regular value $0$ (so $n = k$ there), $S$ is a regular submanifold of $M$ of codimension $k$; so $N_pS$ is defined, and $\dim N_pS = k$ by Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]]. Recall the computation: in an adapted chart $(x^1, \ldots, x^m)$ at $p$, a covector $\xi = \sum_i \xi_i\, dx^i|_p$ lies in $N_pS$ exactly when $\xi_i = 0$ for $i \le m - k$, so $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$.
 >
 > *Each $dG^j|_p$ lies in $N_pS$.* Let $1 \le j \le k$. Every $q \in S = G^{-1}(0)$ has $G(q) = 0$, so $(G^j \circ \iota)(q) = G^j(q) = 0$: the function $G^j \circ \iota$ is the constant $0$ on $S$, and its germ at $p$ is the constant germ $[\underline 0]$. So for every $v \in T_pS$, by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1) (a derivation annihilates constants, here $c = 0$),
 >
@@ -714,15 +714,15 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > d\big(G^j \circ \iota\big)_p(v) = v\big[G^j \circ \iota\big] = v\big[\underline 0\big] = 0 ,
 > $$
 >
-> that is, $d(G^j \circ \iota)_p = 0$. By Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](2) with $\Phi = G^j$,
+> that is, $d(G^j \circ \iota)_p = 0$. By Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]](2) with $\Phi = G^j$,
 >
 > $$
 > \iota_p^{\ast}\big(dG^j|_p\big) = d\big(G^j \circ \iota\big)_p = 0 ,
 > $$
 >
-> so $dG^j|_p \in \ker \iota_p^{\ast} = N_pS$ by Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](1).
+> so $dG^j|_p \in \ker \iota_p^{\ast} = N_pS$ by Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]](1).
 >
-> *The components of $G_{\ast p}$.* For $v \in T_pM$, the vector $G_{\ast p}v \in T_0\mathbb{R}^k$ is, by the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]] in the identity chart of $\mathbb{R}^k$, $G_{\ast p}v = \sum_j (G_{\ast p}v)[r^j]\, \partial/\partial r^j|_0$, and its coefficients are, by the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
+> *The components of $G_{\ast p}$.* For $v \in T_pM$, the vector $G_{\ast p}v \in T_0\mathbb{R}^k$ is, by the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]] in the identity chart of $\mathbb{R}^k$, $G_{\ast p}v = \sum_j (G_{\ast p}v)[r^j]\, \partial/\partial r^j|_0$, and its coefficients are, by the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
 >
 > $$
 > \big(G_{\ast p}v\big)[r^j] = v\big[r^j \circ G\big] = v\big[G^j\big] = dG^j|_p(v) .
@@ -736,7 +736,7 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > Since $0$ is a regular value and $p \in G^{-1}(0)$, $G$ is a submersion at $p$ (Definition [[§36 Submersions#^def-36-4|§36.4]](2)): $G_{\ast p}$ is onto $T_0\mathbb{R}^k$ (Definition [[§36 Submersions#^def-36-1|§36.1]]).
 >
-> *Linear independence, without coordinates.* Suppose $\sum_{j=1}^k c_j\, dG^j|_p = 0$ for some $c = (c_1, \ldots, c_k) \in \mathbb{R}^k$; we show $c = 0$. Since $G_{\ast p}$ is onto, the vector $\sum_j c_j\, \partial/\partial r^j|_0$ of $T_0\mathbb{R}^k$ is $G_{\ast p}v$ for some $v \in T_pM$. Comparing with $(\ast)$, and using that the coefficients of a vector in the basis $\partial/\partial r^j|_0$ are unique (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), $dG^j|_p(v) = c_j$ for every $j$. Evaluating the assumed relation at this $v$, with the pointwise operations of $T_p^{\ast}M$,
+> *Linear independence, without coordinates.* Suppose $\sum_{j=1}^k c_j\, dG^j|_p = 0$ for some $c = (c_1, \ldots, c_k) \in \mathbb{R}^k$; we show $c = 0$. Since $G_{\ast p}$ is onto, the vector $\sum_j c_j\, \partial/\partial r^j|_0$ of $T_0\mathbb{R}^k$ is $G_{\ast p}v$ for some $v \in T_pM$. Comparing with $(\ast)$, and using that the coefficients of a vector in the basis $\partial/\partial r^j|_0$ are unique (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), $dG^j|_p(v) = c_j$ for every $j$. Evaluating the assumed relation at this $v$, with the pointwise operations of $T_p^{\ast}M$,
 >
 > $$
 > 0 = \Big(\sum_{j=1}^k c_j\, dG^j|_p\Big)(v) = \sum_{j=1}^k c_j\, dG^j|_p(v) = \sum_{j=1}^k c_j^{\,2} = |c|^2 ,
@@ -754,13 +754,13 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 >
 > *Conclusion.* $dG^1|_p, \ldots, dG^k|_p$ are $k$ linearly independent elements of $N_pS$, which has dimension $k$, so they form a basis of $N_pS$. As $p \in S$ was arbitrary, this holds at every point of $S$.
 
-^pf-37-15
+^pf-37-19
 
-*Uses:* [[§37 Regular Submanifolds#^prop-37-7|§37.7]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§37 Regular Submanifolds#^thm-37-9|§37.9]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+*Uses:* [[§37 Regular Submanifolds#^prop-37-8|§37.8]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§37 Regular Submanifolds#^prop-37-18|§37.18]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
-The assignment adds that a regular submanifold is *locally* always a regular level set. *(Filled in.)* Given an adapted chart $(U, \varphi = (x_a, x_b))$, put $G = x_b : U \to \mathbb{R}^k$. Then $U \cap S = G^{-1}(0)$ by Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], and $G$ is a submersion at every point of $U$: in the charts $\varphi$ and $\mathrm{id}_{\mathbb{R}^k}$ its coordinate representation is $(r^1, \ldots, r^m) \mapsto (r^{m-k+1}, \ldots, r^m)$, whose Jacobian $(0 \mid I_k)$ has rank $k$ (the computation of Step 2 in the proof of Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], with $n$ there replaced by $m$). So Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]] and the theorem below apply to $U \cap S \subseteq U$. For this $G$ the basis $dG^j|_p = dx^{m-k+j}|_p$ is the basis of Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]].
+The assignment adds that a regular submanifold is *locally* always a regular level set. *(Filled in.)* Given an adapted chart $(U, \varphi = (x_a, x_b))$, put $G = x_b : U \to \mathbb{R}^k$. Then $U \cap S = G^{-1}(0)$ by Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], and $G$ is a submersion at every point of $U$: in the charts $\varphi$ and $\mathrm{id}_{\mathbb{R}^k}$ its coordinate representation is $(r^1, \ldots, r^m) \mapsto (r^{m-k+1}, \ldots, r^m)$, whose Jacobian $(0 \mid I_k)$ has rank $k$ (the computation of Step 2 in the proof of Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]], with $n$ there replaced by $m$). So Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]] and the theorem below apply to $U \cap S \subseteq U$. For this $G$ the basis $dG^j|_p = dx^{m-k+j}|_p$ is the basis of Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]].
 
-> [!theorem] Theorem §37.16: Lagrange Multipliers
+> [!theorem] Theorem §37.20: Lagrange Multipliers
 > Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth with $0$ a regular value, $S = G^{-1}(0)$, $\Phi : M \to \mathbb{R}$ smooth, and $f = \Phi|_S$.
 >
 > 1. If $f$ has a local extremum at $p \in S$ — $f(q) \le f(p)$ for all $q$ in some neighbourhood of $p$ in $S$, or $f(q) \ge f(p)$ for all such $q$ — then $p$ is a critical point of $f$.
@@ -784,16 +784,16 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 >
 > $m + k$ equations in the $m + k$ unknowns $(p, \lambda) \in \mathbb{R}^m \times \mathbb{R}^k$.
 
-^thm-37-16
+^thm-37-20
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$, with proofs by the implicit function theorem: [[Method of Lagrange Multipliers|452 hub]], [[§17 Optimization and Lagrange Multipliers#^thm-17-3|452 Thm. §17.3]] (several constraints); computational treatment: [[§114 Lagrange Multipliers#^thm-114-1|Calc Thm. §114.1]].
 > - In mechanics, constraint forces as multipliers: [[§B6.3 Constraints and Lagrange Multipliers#^thm-b6-3-1|CM Thm. §B6.3.1]].
 
 > [!proof]+ Proof
-> *(Assignment 5, Problem 4(b), second part: “explain how the method of Lagrange multipliers follows.”)* By Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]], $S$ is a regular submanifold of $M$, and $f = \Phi \circ \iota$ is smooth on it (Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]]).
+> *(Assignment 5, Problem 4(b), second part: “explain how the method of Lagrange multipliers follows.”)* By Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], $S$ is a regular submanifold of $M$, and $f = \Phi \circ \iota$ is smooth on it (Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]]).
 >
-> *(1)* By Proposition [[§36 Submersions#^prop-36-2|§36.2]] we must show $df_p = 0$, that is, $df_p(v) = 0$ for every $v \in T_pS$. Fix $v \in T_pS$. By Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], applied on the manifold $S$, there is a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to S$ with $\gamma(0) = p$ and $D_\gamma = v$. Let $W$ be a neighbourhood of $p$ in $S$ — an open subset of $S$ containing $p$ (Definition [[§1 Point-Set Topology Review#^def-1-4|§1.4]]) — on which $f \le f(p)$ (or $f \ge f(p)$). As $\gamma$ is continuous, $\gamma^{-1}(W)$ is open in $(-\varepsilon, \varepsilon)$ and contains $0$, so it contains an interval $(-\delta, \delta)$; for $|t| < \delta$, $(f \circ \gamma)(t) \le f(p) = (f \circ \gamma)(0)$ (or $\ge$). So the function $f \circ \gamma$ of one variable, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], has a local maximum (or minimum) at the interior point $0$, and its derivative there is $0$ (the one-variable fact: at an interior local extremum of a differentiable function the derivative vanishes). By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]],
+> *(1)* By Proposition [[§36 Submersions#^prop-36-2|§36.2]] we must show $df_p = 0$, that is, $df_p(v) = 0$ for every $v \in T_pS$. Fix $v \in T_pS$. By Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], applied on the manifold $S$, there is a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to S$ with $\gamma(0) = p$ and $D_\gamma = v$. Let $W$ be a neighbourhood of $p$ in $S$ — an open subset of $S$ containing $p$ (Definition [[§1 Point-Set Topology Review#^def-1-4|§1.4]]) — on which $f \le f(p)$ (or $f \ge f(p)$). As $\gamma$ is continuous, $\gamma^{-1}(W)$ is open in $(-\varepsilon, \varepsilon)$ and contains $0$, so it contains an interval $(-\delta, \delta)$; for $|t| < \delta$, $(f \circ \gamma)(t) \le f(p) = (f \circ \gamma)(0)$ (or $\ge$). So the function $f \circ \gamma$ of one variable, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], has a local maximum (or minimum) at the interior point $0$, and its derivative there is $0$ (the one-variable fact: at an interior local extremum of a differentiable function the derivative vanishes). By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]],
 >
 > $$
 > df_p(v) = D_\gamma[f] = \frac{d}{dt}\Big|_{t=0} f\big(\gamma(t)\big) = (f \circ \gamma)'(0) = 0 .
@@ -801,7 +801,7 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 >
 > As $v$ was arbitrary, $df_p = 0$. So the method, which looks for the critical points of $f$, finds in particular all local extrema of $\Phi$ subject to the constraint $G = 0$.
 >
-> *(2)* By Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](3), $p$ is a critical point of $f$ iff $d\Phi_p \in N_pS$. By Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]], $N_pS$ is the span of $dG^1|_p, \ldots, dG^k|_p$. So if $p$ is critical, $d\Phi_p$ is a linear combination $\sum_j \lambda_j\, dG^j|_p$; conversely, such a combination lies in $N_pS$, which is a subspace (the kernel of the linear map $\iota_p^{\ast}$, Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](1)) containing every $dG^j|_p$, so $p$ is critical. *Uniqueness:* if $\sum_j \lambda_j\, dG^j|_p = \sum_j \mu_j\, dG^j|_p$, then $\sum_j (\lambda_j - \mu_j)\, dG^j|_p = 0$, and linear independence (Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]]) gives $\lambda_j = \mu_j$ for every $j$. *The equivalent form:* the function $\Phi - \sum_j \lambda_j G^j$ is smooth on $M$, and linearity of $d$ (Corollary [[§32 The Cotangent Space#^cor-32-3|§32.3]](1), applied once for each of the $k$ terms) gives
+> *(2)* By Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]](3), $p$ is a critical point of $f$ iff $d\Phi_p \in N_pS$. By Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]], $N_pS$ is the span of $dG^1|_p, \ldots, dG^k|_p$. So if $p$ is critical, $d\Phi_p$ is a linear combination $\sum_j \lambda_j\, dG^j|_p$; conversely, such a combination lies in $N_pS$, which is a subspace (the kernel of the linear map $\iota_p^{\ast}$, Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]](1)) containing every $dG^j|_p$, so $p$ is critical. *Uniqueness:* if $\sum_j \lambda_j\, dG^j|_p = \sum_j \mu_j\, dG^j|_p$, then $\sum_j (\lambda_j - \mu_j)\, dG^j|_p = 0$, and linear independence (Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]]) gives $\lambda_j = \mu_j$ for every $j$. *The equivalent form:* the function $\Phi - \sum_j \lambda_j G^j$ is smooth on $M$, and linearity of $d$ (Corollary [[§32 The Cotangent Space#^cor-32-3|§32.3]](1), applied once for each of the $k$ terms) gives
 >
 > $$
 > d\Big(\Phi - \sum_{j=1}^k \lambda_j G^j\Big)_p = d\Phi_p - \sum_{j=1}^k \lambda_j\, dG^j|_p ,
@@ -817,36 +817,36 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 >
 > With $G(p) = 0$ from (2) this is the system stated: $m$ scalar equations from the gradients and $k$ from the constraints, in the $m$ coordinates of $p$ and the $k$ multipliers. (The count makes a finite set of solutions plausible; it is not a theorem that there are any, or finitely many.)
 
-^pf-37-16
+^pf-37-20
 
-*Uses:* [[§37 Regular Submanifolds#^thm-37-9|§37.9]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§36 Submersions#^prop-36-2|§36.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§37 Regular Submanifolds#^prop-37-15|§37.15]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]
+*Uses:* [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[§37 Regular Submanifolds#^prop-37-18|§37.18]], [[§36 Submersions#^prop-36-2|§36.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§37 Regular Submanifolds#^prop-37-19|§37.19]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]
 
 *(Not from the assignment.)* In (3) the system is the vanishing of the gradient of the single function $L(x, \lambda) = \Phi(x) - \sum_j \lambda_j G^j(x)$ on $\mathbb{R}^{m+k}$: its partial derivatives at $(p, \lambda)$ are $\partial\Phi/\partial r^i(p) - \sum_j \lambda_j\, \partial G^j/\partial r^i(p)$ in the direction of $x^i$ and $-G^j(p)$ in the direction of $\lambda_j$, so $\nabla L(p, \lambda) = 0$ is exactly the $m + k$ equations above.
 
 > [!remark] Remark: The Conormal Bundle
-> *(Not from the assignment. It uses the cotangent bundle $T^{\ast}M$ with its standard coordinates, [[§49 The Cotangent Bundle|§49]] and [[§51 Critical Points and the Hessian|§51]], later in the notes.)* Put all the conormal spaces together, as the cotangent spaces are put together in $T^{\ast}M$ (Definition [[§49 The Cotangent Bundle#^def-49-1|§49.1]]): the **conormal bundle** of $S$ is
+> *(Not from the assignment. It uses the cotangent bundle $T^{\ast}M$ with its standard coordinates, [[§50 The Cotangent Bundle|§50]] and [[§52 Critical Points and the Hessian|§52]], later in the notes.)* Put all the conormal spaces together, as the cotangent spaces are put together in $T^{\ast}M$ (Definition [[§50 The Cotangent Bundle#^def-50-1|§50.1]]): the **conormal bundle** of $S$ is
 >
 > $$
 > N^{\ast}S = \{\, (p, \alpha) \in T^{\ast}M : p \in S,\ \alpha \in N_pS \,\} .
 > $$
 >
-> As in [[§51 Critical Points and the Hessian|§51]], covectors are named $\alpha$ here, keeping $\xi_i$ for coordinate functions. Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart adapted to $S$ (codimension $k$), and $(T^{\ast}U, \hat\varphi)$ the chart of $T^{\ast}M$ over it (Definition [[§49 The Cotangent Bundle#^def-49-5|§49.5]]), with coordinates $\bar x^i = x^i \circ \pi$ and $\xi_i(q, \alpha) = \alpha(\partial/\partial x^i|_q)$. A point $(q, \alpha) \in T^{\ast}U$ lies in $N^{\ast}S$ iff $q \in U \cap S$, that is, $\bar x^{m-k+1} = \cdots = \bar x^m = 0$ at $(q, \alpha)$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $\alpha \in N_qS$, that is, $\xi_1 = \cdots = \xi_{m-k} = 0$ at $(q, \alpha)$ (the computation in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], at the point $q$, where the same chart is adapted). So
+> As in [[§52 Critical Points and the Hessian|§52]], covectors are named $\alpha$ here, keeping $\xi_i$ for coordinate functions. Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart adapted to $S$ (codimension $k$), and $(T^{\ast}U, \hat\varphi)$ the chart of $T^{\ast}M$ over it (Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]]), with coordinates $\bar x^i = x^i \circ \pi$ and $\xi_i(q, \alpha) = \alpha(\partial/\partial x^i|_q)$. A point $(q, \alpha) \in T^{\ast}U$ lies in $N^{\ast}S$ iff $q \in U \cap S$, that is, $\bar x^{m-k+1} = \cdots = \bar x^m = 0$ at $(q, \alpha)$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $\alpha \in N_qS$, that is, $\xi_1 = \cdots = \xi_{m-k} = 0$ at $(q, \alpha)$ (the computation in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]], at the point $q$, where the same chart is adapted). So
 >
 > $$
 > N^{\ast}S \cap T^{\ast}U = \{\, \bar x^{m-k+1} = \cdots = \bar x^m = 0,\ \ \xi_1 = \cdots = \xi_{m-k} = 0 \,\} ,
 > $$
 >
-> $k + (m - k) = m$ of the $2m$ coordinates of the smooth chart $\hat\varphi$ of the $2m$-manifold $T^{\ast}M$ (Proposition [[§49 The Cotangent Bundle#^prop-49-2|§49.2]]) set equal to $0$. Every point $(p, \alpha)$ of $N^{\ast}S$ lies in such a $T^{\ast}U$, taking an adapted chart at $p$; so by Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] (any $m$ of the coordinates, the constant $\vec 0$) $N^{\ast}S$ is a regular submanifold of $T^{\ast}M$ of codimension $m$, of dimension $2m - m = m$ whatever $k$ is. (In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, in Uribe's words in the remark *No Normal Vectors Without a Metric*, Hamiltonian mechanics takes place.) The two extreme cases:
+> $k + (m - k) = m$ of the $2m$ coordinates of the smooth chart $\hat\varphi$ of the $2m$-manifold $T^{\ast}M$ (Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]) set equal to $0$. Every point $(p, \alpha)$ of $N^{\ast}S$ lies in such a $T^{\ast}U$, taking an adapted chart at $p$; so by Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] (any $m$ of the coordinates, the constant $\vec 0$) $N^{\ast}S$ is a regular submanifold of $T^{\ast}M$ of codimension $m$, of dimension $2m - m = m$ whatever $k$ is. (In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, in Uribe's words in the remark *No Normal Vectors Without a Metric*, Hamiltonian mechanics takes place.) The two extreme cases:
 >
-> 1. $S = M$ (codimension $0$, Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]): $N_pM = 0$, since a covector vanishing on all of $T_pM$ is zero, and $N^{\ast}M = \mathcal{Z}$ is the zero section, cut out by $\xi_1 = \cdots = \xi_m = 0$ (Proposition [[§51 Critical Points and the Hessian#^prop-51-4|§51.4]](1));
+> 1. $S = M$ (codimension $0$, Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]): $N_pM = 0$, since a covector vanishing on all of $T_pM$ is zero, and $N^{\ast}M = \mathcal{Z}$ is the zero section, cut out by $\xi_1 = \cdots = \xi_m = 0$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](1));
 > 2. $S = \{p\}$ (codimension $m$): $T_p\{p\} = 0$, so $N_p\{p\} = T_p^{\ast}M$, and $N^{\ast}\{p\} = \pi^{-1}(p)$ is the fibre over $p$, cut out by $\bar x^1 = \cdots = \bar x^m = 0$ in a chart with $\varphi(p) = 0$.
 >
-> *Critical points.* With $s_\Phi : M \to T^{\ast}M$, $s_\Phi(p) = (p, d\Phi_p)$, the one-form $d\Phi$ regarded as a map (as in [[§51 Critical Points and the Hessian|§51]]), Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](3) says: $p \in S$ is a critical point of $\Phi|_S$ iff $(p, d\Phi_p) \in N^{\ast}S$. So
+> *Critical points.* With $s_\Phi : M \to T^{\ast}M$, $s_\Phi(p) = (p, d\Phi_p)$, the one-form $d\Phi$ regarded as a map (as in [[§52 Critical Points and the Hessian|§52]]), Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]](3) says: $p \in S$ is a critical point of $\Phi|_S$ iff $(p, d\Phi_p) \in N^{\ast}S$. So
 >
 > $$
 > \operatorname{Crit}\big(\Phi|_S\big) = s_\Phi^{-1}\big(N^{\ast}S\big) :
 > $$
 >
-> the critical points of the restriction are where the graph of $d\Phi$ meets the conormal bundle. For $S = M$ this is $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$, the starting point of [[§51 Critical Points and the Hessian|§51]], where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§51 Critical Points and the Hessian#^thm-51-7|§51.7]]). *Lagrange multipliers.* For $S = G^{-1}(0)$, each fibre $N_pS$ has the basis $dG^1|_p, \ldots, dG^k|_p$ (Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]]), so $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$ is a bijection $S \times \mathbb{R}^k \to N^{\ast}S$; at a critical point $p$, the multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem [[§37 Regular Submanifolds#^thm-37-16|§37.16]] are the coordinates of the point $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in this basis.
+> the critical points of the restriction are where the graph of $d\Phi$ meets the conormal bundle. For $S = M$ this is $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$, the starting point of [[§52 Critical Points and the Hessian|§52]], where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]]). *Lagrange multipliers.* For $S = G^{-1}(0)$, each fibre $N_pS$ has the basis $dG^1|_p, \ldots, dG^k|_p$ (Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]]), so $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$ is a bijection $S \times \mathbb{R}^k \to N^{\ast}S$; at a critical point $p$, the multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem [[§37 Regular Submanifolds#^thm-37-20|§37.20]] are the coordinates of the point $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in this basis.
 
 ^rem-37-5

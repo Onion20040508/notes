@@ -46,11 +46,11 @@ The target $\mathbb{R}$ is itself a smooth manifold, so $f_{\ast p}$ lands in a 
 ^prop-32-1
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* (1) and (2) are the Basis Theorem ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5]]) for the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$, with $n = 1$ and $x^1 = r$; (2) is its universal formula. (3) $\iota_c$ is linear because the vector-space operations of $T_c\mathbb{R}$ are pointwise on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]): $(v + w)[r] = v[r] + w[r]$ and $(av)[r] = a\,v[r]$. By [[§32 The Cotangent Space#^def-32-2|Definition §32.2]], $\iota_c(a\,\partial/\partial r|_c) = a \cdot 1 = a$, so $\iota_c$ is surjective, and $a \mapsto a\,\partial/\partial r|_c$ is a right inverse; it is also a left inverse by (2), $v = \iota_c(v)\,\partial/\partial r|_c$.
+> *(Not from lecture; filled in.)* (1) and (2) are the Basis Theorem ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]]) for the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$, with $n = 1$ and $x^1 = r$; (2) is its universal formula. (3) $\iota_c$ is linear because the vector-space operations of $T_c\mathbb{R}$ are pointwise on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]): $(v + w)[r] = v[r] + w[r]$ and $(av)[r] = a\,v[r]$. By [[§32 The Cotangent Space#^def-32-2|Definition §32.2]], $\iota_c(a\,\partial/\partial r|_c) = a \cdot 1 = a$, so $\iota_c$ is surjective, and $a \mapsto a\,\partial/\partial r|_c$ is a right inverse; it is also a left inverse by (2), $v = \iota_c(v)\,\partial/\partial r|_c$.
 
 ^pf-32-1
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]]
 
 > [!definition] Definition §32.3: The Standard Identification of $T_c\mathbb{R}$ with $\mathbb{R}$
 > For every $c \in \mathbb{R}$, $T_c\mathbb{R}$ is identified with $\mathbb{R}$ by the isomorphism $\iota_c$ of [[§32 The Cotangent Space#^prop-32-1|Proposition §32.1]]:
@@ -100,7 +100,7 @@ Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: 
 > [!remark]- Connections
 > - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].
 > - In multivariable calculus: [[§10 The Differential#^def-10-1|452 Def. §10.1]] and [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1 (gradient = differential = 1-form)]].
-> - Assembled over all of $M$: the cotangent bundle, [[§49 The Cotangent Bundle#^def-49-1|Def. §49.1]].
+> - Assembled over all of $M$: the cotangent bundle, [[§50 The Cotangent Bundle#^def-50-1|Def. §50.1]].
 > - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
 > [!theorem] Proposition §32.2: The Differential Evaluates Derivations

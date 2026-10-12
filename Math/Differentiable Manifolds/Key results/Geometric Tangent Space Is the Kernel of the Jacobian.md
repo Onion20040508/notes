@@ -34,11 +34,11 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Transversality#^prop-26-2|Proposition §26.2: Transversality Is the Regular Value Condition]]
 - [[§26 Transversality#^cor-26-3|Corollary §26.3: The Regular Value Theorem as a Special Case]]
 - [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6: Ambient and Abstract Agree]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Corollary §29.7: Consequences]]
-- [[§37 Regular Submanifolds#^thm-37-9|Theorem §37.9: The Regular Value Theorem for Manifolds]]
-- [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
-- [[§39 Examples of Fibrations#^ex-39-3|Example §39.3: Focal Points of the Parabola]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7: Ambient and Abstract Agree]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-8|Corollary §29.8: Consequences]]
+- [[§37 Regular Submanifolds#^thm-37-12|Theorem §37.12: The Regular Value Theorem for Manifolds]]
+- [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14: The Old and New Versions Agree]]
+- [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^ex-40-1|Example §40.1: Focal Points of the Parabola]]
 
 ## Connections
 - **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§26 Transversality#^prop-26-4|§26.4]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.

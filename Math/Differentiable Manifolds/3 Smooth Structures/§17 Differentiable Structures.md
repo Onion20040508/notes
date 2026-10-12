@@ -68,7 +68,7 @@ tags: [differentiable-manifolds, math591]
 ^def-17-3
 
 > [!remark]- Connections
-> - The general notion for smooth manifolds: [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]; the two agree by [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]].
+> - The general notion for smooth manifolds: [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]; the two agree by [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]].
 > - The local version: [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]]; detected by the differential via the [[§35 Local Diffeomorphisms#^thm-35-1|inverse function theorem, §35.1]].
 > - The $C^1$ version is the class of substitutions in the change of variables formula, [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]].
 > - The topological analogue: homeomorphism, [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].
@@ -441,7 +441,7 @@ Lecture 5 argued uniqueness only (“anything in one is contained in the other, 
 
 ^def-17-9
 
-> [!theorem] Proposition §17.6: Open Subsets of a Smooth Manifold Are Smooth Manifolds
+> [!theorem] Proposition §17.7: Open Subsets of a Smooth Manifold Are Smooth Manifolds
 > Let $M$ be a smooth $m$-manifold and $S \subseteq M$ an open subset, with the subspace topology.
 >
 > 1. For every smooth chart $(U, \varphi)$ of $M$, the restriction $(U \cap S, \varphi|_{U \cap S})$ is a chart on $S$, and these restricted charts form a smooth atlas on $S$.
@@ -449,7 +449,7 @@ Lecture 5 argued uniqueness only (“anything in one is contained in the other, 
 >
 > So $S$ is a smooth $m$-manifold, whose charts are the charts of $M$ that live inside $S$.
 
-^prop-17-6
+^prop-17-7
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in. The argument was first needed for $\mathrm{SO}(n) \subseteq \mathrm{O}(n)$ in Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23.2]].)* By Proposition [[§3 Subspaces and Products#^prop-3-6|§3.6]], $S$ is a topological $m$-manifold.
@@ -468,7 +468,7 @@ Lecture 5 argued uniqueness only (“anything in one is contained in the other, 
 >
 > Every chart in $\overline{\mathcal{A}_S}$ takes values in $\mathbb{R}^m$, so $S$ is a smooth $m$-manifold.
 
-^pf-17-6
+^pf-17-7
 
 *Uses:* [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 

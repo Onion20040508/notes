@@ -19,7 +19,7 @@ tags: [multivariable-analysis, hub]
 - [[§39 Closed and Exact Forms#^prop-39-1|Proposition §39.1: Gradient = Differential = 1-Form]]
 
 ## Used in (Differentiable Manifolds)
-- [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
+- [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14: The Old and New Versions Agree]]
 
 ## Connections
 - **Proof.** Substitute h = ρ cos α and k = ρ sin α into the definition of [[§7 Differentiability#^def-7-1|differentiability]] and let ρ → 0. The unit-vector form, with the total derivative L = Df, is [[§7 Differentiability#^thm-7-1|Theorem §7.1]].

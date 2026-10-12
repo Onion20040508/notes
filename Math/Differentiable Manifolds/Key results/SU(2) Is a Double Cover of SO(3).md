@@ -5,10 +5,10 @@ source: "[[Differentiable Manifolds]]"
 aliases: ["MATH 591 45.4", "SU(2) → SO(3) double cover", "spin double cover"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§45 SU(2) → SO(3)꞉ The Double Cover#^thm-45-4]]
+![[§46 SU(2) → SO(3)꞉ The Double Cover#^thm-46-4]]
 
 ## Treated in
-- [[§45 SU(2) → SO(3)꞉ The Double Cover#^thm-45-4|Theorem §45.4: The Double Cover SU(2) → SO(3)]], in [[§45 SU(2) → SO(3)꞉ The Double Cover]]
+- [[§46 SU(2) → SO(3)꞉ The Double Cover#^thm-46-4|Theorem §46.4: The Double Cover SU(2) → SO(3)]], in [[§46 SU(2) → SO(3)꞉ The Double Cover]]
 
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
@@ -24,11 +24,11 @@ tags: [differentiable-manifolds, hub]
 - [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]
 - [[§35 Local Diffeomorphisms#^thm-35-2|Theorem §35.2: Local Diffeomorphisms Are Detected by the Differential]]
 - [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]
-- [[§44 The Unit Quaternions and SU(2)#^prop-44-5|Proposition §44.5: S³ Is SU(2)]]
-- [[§44 The Unit Quaternions and SU(2)#^prop-44-6|Proposition §44.6: The Tangent Space of SU(2) at the Identity]]
-- [[§45 SU(2) → SO(3)꞉ The Double Cover#^prop-45-1|Proposition §45.1: Conjugation by Unit Quaternions Is Rotation]]
-- [[§45 SU(2) → SO(3)꞉ The Double Cover#^lem-45-2|Lemma §45.2: Every Rotation Has an Axis]]
-- [[§45 SU(2) → SO(3)꞉ The Double Cover#^lem-45-3|Lemma §45.3: Translating the Differential]]
+- [[§45 The Unit Quaternions and SU(2)#^prop-45-5|Proposition §45.5: S³ Is SU(2)]]
+- [[§45 The Unit Quaternions and SU(2)#^prop-45-6|Proposition §45.6: The Tangent Space of SU(2) at the Identity]]
+- [[§46 SU(2) → SO(3)꞉ The Double Cover#^prop-46-1|Proposition §46.1: Conjugation by Unit Quaternions Is Rotation]]
+- [[§46 SU(2) → SO(3)꞉ The Double Cover#^lem-46-2|Lemma §46.2: Every Rotation Has an Axis]]
+- [[§46 SU(2) → SO(3)꞉ The Double Cover#^lem-46-3|Lemma §46.3: Translating the Differential]]
 
 ## Its proof uses (other subjects)
 - [[§15 Homomorphisms#^def-15-1|493 §15.1: Group Homomorphism]]
@@ -41,6 +41,6 @@ tags: [differentiable-manifolds, hub]
 - (not cited later in the course)
 
 ## Connections
-- **How.** Identify $S^3$ with the unit quaternions and with $\mathrm{SU}(2)$ ([[§44 The Unit Quaternions and SU(2)#^prop-44-5|§44.5]]); conjugation on the imaginary quaternions $\cong \mathbb{R}^3$ gives a homomorphism onto $\mathrm{SO}(3)$ with kernel $\{\pm 1\}$ ([[§45 SU(2) → SO(3)꞉ The Double Cover#^prop-45-1|§45.1]], [[§45 SU(2) → SO(3)꞉ The Double Cover#^lem-45-2|§45.2]]), and a homomorphism of Lie groups is a local diffeomorphism once its differential at the identity is invertible ([[§45 SU(2) → SO(3)꞉ The Double Cover#^lem-45-3|§45.3]]).
-- **Topology.** So $\mathrm{SO}(3) \cong S^3/\{\pm 1\} = \mathbb{RP}^3$, and $S^3 \to \mathrm{SO}(3)$ is a two-sheeted covering ([[§43 Projective Spaces and the Hopf Fibration#^ex-43-1|Ex. §43.1]] for $S^n \to \mathbb{RP}^n$).
+- **How.** Identify $S^3$ with the unit quaternions and with $\mathrm{SU}(2)$ ([[§45 The Unit Quaternions and SU(2)#^prop-45-5|§45.5]]); conjugation on the imaginary quaternions $\cong \mathbb{R}^3$ gives a homomorphism onto $\mathrm{SO}(3)$ with kernel $\{\pm 1\}$ ([[§46 SU(2) → SO(3)꞉ The Double Cover#^prop-46-1|§46.1]], [[§46 SU(2) → SO(3)꞉ The Double Cover#^lem-46-2|§46.2]]), and a homomorphism of Lie groups is a local diffeomorphism once its differential at the identity is invertible ([[§46 SU(2) → SO(3)꞉ The Double Cover#^lem-46-3|§46.3]]).
+- **Topology.** So $\mathrm{SO}(3) \cong S^3/\{\pm 1\} = \mathbb{RP}^3$, and $S^3 \to \mathrm{SO}(3)$ is a two-sheeted covering ([[§44 Projective Spaces and the Hopf Fibration#^ex-44-1|Ex. §44.1]] for $S^n \to \mathbb{RP}^n$).
 - **Used in physics.** The same double cover is why spin-½ states change sign under a $2\pi$ rotation: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].

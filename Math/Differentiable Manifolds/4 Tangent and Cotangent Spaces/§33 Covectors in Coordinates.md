@@ -31,7 +31,7 @@ tags: [differentiable-manifolds, math591]
 > dx^i|_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \frac{\partial}{\partial x^j}\Big|_p\big[x^i\big] = \frac{\partial (x^i \circ \varphi^{-1})}{\partial r^j}\big(\varphi(p)\big) = \frac{\partial r^i}{\partial r^j}\big(\varphi(p)\big) = \delta^i_j .
 > $$
 >
-> This is the defining property of the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) of the basis $\{\partial/\partial x^j|_p\}$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]). By Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] the $dx^i|_p$ form a basis of $T_p^{\ast}M$, and $\dim T_p^{\ast}M = m$.
+> This is the defining property of the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) of the basis $\{\partial/\partial x^j|_p\}$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). By Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] the $dx^i|_p$ form a basis of $T_p^{\ast}M$, and $\dim T_p^{\ast}M = m$.
 >
 > *Step 2: the formula.* Both sides are linear functionals on $T_pM$, so by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](2) it suffices that they agree on each basis vector $\partial/\partial x^j|_p$. The left side gives, by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
 >
@@ -49,7 +49,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-33-1
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]
 
 > [!remark]- Connections
 > - The dual basis and its coefficients: [[§12 Duality#^ladr-3-112|LADR 3.112]], [[§12 Duality#^ladr-3-114|LADR 3.114]], [[§12 Duality#^ladr-3-116|LADR 3.116]].
@@ -61,7 +61,7 @@ tags: [differentiable-manifolds, math591]
 > \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big), \qquad i = 1, \ldots, m,
 > $$
 >
-> the values of $\xi$ on the coordinate basis of $T_pM$. They are the covector counterpart of the components $v^i = v[x^i]$ of a tangent vector $v \in T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]). The letters $\xi$ and $\xi_i$ are used for a covector and its components from here on, as in the coordinates $(x^1, \ldots, x^m, \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$ ([[§49 The Cotangent Bundle|§49]]).
+> the values of $\xi$ on the coordinate basis of $T_pM$. They are the covector counterpart of the components $v^i = v[x^i]$ of a tangent vector $v \in T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). The letters $\xi$ and $\xi_i$ are used for a covector and its components from here on, as in the coordinates $(x^1, \ldots, x^m, \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$ ([[§50 The Cotangent Bundle|§50]]).
 
 ^def-33-1
 
@@ -92,7 +92,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^def-33-1|Def. §33.1]]
 
 > [!remark]- Connections
-> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§49 The Cotangent Bundle#^def-49-4|Def. §49.4]], [[§49 The Cotangent Bundle#^def-49-5|Def. §49.5]].
+> - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§50 The Cotangent Bundle#^def-50-4|Def. §50.4]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]].
 
 > [!remark] Remark
 > Equivalently, by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] with the coordinate $r$ on the target, the matrix of $f_{*p}$ is the $1 \times m$ row

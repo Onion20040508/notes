@@ -26,7 +26,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§26 Transversality#^prop-26-2|Proposition §26.2: Transversality Is the Regular Value Condition]]
 - [[§26 Transversality#^cor-26-3|Corollary §26.3: The Regular Value Theorem as a Special Case]]
-- [[§37 Regular Submanifolds#^thm-37-12|Theorem §37.12: Preimages of Transverse Submanifolds]]
+- [[§37 Regular Submanifolds#^thm-37-15|Theorem §37.15: Preimages of Transverse Submanifolds]]
 
 ## Connections
 - **Used for.** Transversality of F to S = G⁻¹(0) is exactly the regular value condition for G ∘ F ([[§26 Transversality#^prop-26-2|§26.2]]), so the conclusion involves only F and S. The [[Regular Value Theorem (Euclidean)]] is the case S = {c} ([[§26 Transversality#^cor-26-3|§26.3]]), and transverse intersections, with codimensions adding, are the companion statement ([[§26 Transversality#^prop-26-4|§26.4]]).

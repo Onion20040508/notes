@@ -7,10 +7,10 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§27 Germs]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§29 Coordinate Derivations and the Basis Theorem]] →
 
-*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]).*
+*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]).*
 
 > [!remark] Remark: Two Faces of a Tangent Vector
-> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces — “like Janus.” It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
+> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces — “like Janus.” It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
 
 ^rem-28-1
 
@@ -83,8 +83,8 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]
 
 > [!remark]- Connections
-> - The geometric tangent space it replaces: [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]]; the two agree by [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]].
-> - Its dual, the cotangent space: [[§32 The Cotangent Space#^def-32-4|Def. §32.4]]; all the $T_pM$ together: [[§48 The Tangent Bundle#^def-48-1|the tangent bundle, Def. §48.1]].
+> - The geometric tangent space it replaces: [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]]; the two agree by [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]].
+> - Its dual, the cotangent space: [[§32 The Cotangent Space#^def-32-4|Def. §32.4]]; all the $T_pM$ together: [[§49 The Tangent Bundle#^def-49-1|the tangent bundle, Def. §49.1]].
 
 > [!definition] Definition §28.3: The Ideal of Germs Vanishing at a Point
 > The **ideal of germs vanishing at $p$** is
@@ -167,7 +167,7 @@ tags: [differentiable-manifolds, math591]
 Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is “a very simple consequence of the product rule” and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$, the notation used in the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] at the end of [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]].
 
 > [!remark] Remark
-> Uribe listed exactly these two as what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|basis theorem]], and deferred them to the following lecture. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
+> Uribe listed exactly these two as what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|basis theorem]], and deferred them to the following lecture. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
 
 ^rem-28-2
 
@@ -209,7 +209,7 @@ Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is �
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§27 Germs#^prop-27-2|§27.2]]
 
-Both steps borrowed from Lee are now in these notes: bump functions are Proposition [[§52 Vector Fields#^prop-52-4|§52.4]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§52 Vector Fields#^cor-52-5|§52.5]], and locality of derivations is Lemma [[§52 Vector Fields#^lem-52-6|§52.6]] (Lecture 16).
+Both steps borrowed from Lee are now in these notes: bump functions are Proposition [[§53 Vector Fields#^prop-53-4|§53.4]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§53 Vector Fields#^cor-53-5|§53.5]], and locality of derivations is Lemma [[§53 Vector Fields#^lem-53-6|§53.6]] (Lecture 16).
 
 **Comparison with Lee.** This is where the course's algebraic route and Lee's part company. Lee works with global functions and pays for locality with bump functions: Proposition 3.8 shows a derivation of $C^\infty(M)$ only sees a function near $p$, and Proposition 3.9 identifies $T_pU$ with $T_pM$. Germs build locality into the definition, so the course needs no bump functions at all — Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] is pure algebra. The proposition above is the bridge. Since the two spaces are isomorphic, every result about $T_pM$ in these notes transfers to Lee's, and conversely.
 
@@ -220,7 +220,7 @@ Both steps borrowed from Lee are now in these notes: bump functions are Proposit
 Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The construction has two steps: functions are pulled back, and derivations, being linear functionals on functions, are pushed forward by duality.
 
 > [!definition] Definition §28.5: Pullback of Germs
-> Let $F : M \to N$ be a smooth map between smooth manifolds, and $p \in M$, so that $F(p)$ is a point of $N$. Let $[g] \in C^\infty_{F(p)}(N)$ be a germ *at the point $F(p)$ of $N$*, with a representative $(g, V)$: $V \subseteq N$ is open with $F(p) \in V$, and $g : V \to \mathbb{R}$ is smooth. Then $F^{-1}(V)$ is an open neighbourhood of $p$ in $M$, and $g \circ F : F^{-1}(V) \to \mathbb{R}$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), so $(g \circ F, F^{-1}(V))$ represents a germ at $p$ on $M$. The **pullback** of germs along $F$ at $p$ is the map
+> Let $F : M \to N$ be a smooth map between smooth manifolds, and $p \in M$, so that $F(p)$ is a point of $N$. Let $[g] \in C^\infty_{F(p)}(N)$ be a germ *at the point $F(p)$ of $N$*, with a representative $(g, V)$: $V \subseteq N$ is open with $F(p) \in V$, and $g : V \to \mathbb{R}$ is smooth. Then $F^{-1}(V)$ is an open neighbourhood of $p$ in $M$, and $g \circ F : F^{-1}(V) \to \mathbb{R}$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $(g \circ F, F^{-1}(V))$ represents a germ at $p$ on $M$. The **pullback** of germs along $F$ at $p$ is the map
 >
 > $$
 > F_p^* : C^\infty_{F(p)}(N) \longrightarrow C^\infty_p(M), \qquad F_p^*[g] = [\,g \circ F\,],
@@ -244,7 +244,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 ^prop-28-4
 
 > [!proof]+ Proof
-> *Well defined.* For a representative $(g, V)$, the set $F^{-1}(V)$ is open and contains $p$ because $F$ is continuous, and $g \circ F$ is smooth there by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]. If $(g, V)$ and $(g', V')$ represent the same germ at $F(p)$, then $g = g'$ on some open $W$ with $F(p) \in W \subseteq V \cap V'$; so $g \circ F = g' \circ F$ on the open set $F^{-1}(W) \ni p$, and the two pulled-back germs at $p$ are equal.
+> *Well defined.* For a representative $(g, V)$, the set $F^{-1}(V)$ is open and contains $p$ because $F$ is continuous, and $g \circ F$ is smooth there by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]. If $(g, V)$ and $(g', V')$ represent the same germ at $F(p)$, then $g = g'$ on some open $W$ with $F(p) \in W \subseteq V \cap V'$; so $g \circ F = g' \circ F$ on the open set $F^{-1}(W) \ni p$, and the two pulled-back germs at $p$ are equal.
 >
 > *Algebra homomorphism.* Composition with $F$ respects the pointwise operations: $(g + h)\circ F = g \circ F + h \circ F$, $(gh) \circ F = (g\circ F)(h \circ F)$, $(\lambda g)\circ F = \lambda (g \circ F)$, and $1 \circ F = 1$, since each side takes the same value at every point $q$ (for instance $((g+h) \circ F)(q) = g(F(q)) + h(F(q))$). To pass to germs, let $(g, V)$ and $(h, V')$ represent $[g]$ and $[h]$, and let $W$ be open with $F(p) \in W \subseteq V \cap V'$, so that $[g] + [h] = [g|_W + h|_W]$ (Proposition [[§27 Germs#^prop-27-2|§27.2]]). The set $F^{-1}(W)$ is open, contains $p$, and lies in the domains of $g \circ F$ and $h \circ F$, so by the definition of the sum of germs at $p$,
 >
@@ -260,7 +260,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 
 ^pf-28-4
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§27 Germs#^def-27-3|Def. §27.3]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§27 Germs#^def-27-3|Def. §27.3]]
 
 > [!definition] Definition §28.6: Pushforward — the Differential
 > Let $F : M \to N$ be smooth and $p \in M$, and let $D \in T_pM$ be a tangent vector at $p$ — that is, a derivation at $p$, a linear map $D : C^\infty_p(M) \to \mathbb{R}$ satisfying the Leibniz rule. The **pushforward** of $D$ along $F$ is the map
@@ -359,7 +359,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^thm-28-6
 
 > [!proof]+ Proof
-> *(Lecture 10: “the proof of the chain rule is one line” — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise, “use this to conclude the proof”; it is filled in.)* $G \circ F$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), so $(G \circ F)_{\ast p}$ is defined. Two linear maps $T_pM \to T_{G(F(p))}P$ are equal if they agree at every $D$, and two derivations at $G(F(p))$ are equal if they agree at every germ; so fix $D \in T_pM$ and a germ $[g]$ at $G(F(p))$.
+> *(Lecture 10: “the proof of the chain rule is one line” — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise, “use this to conclude the proof”; it is filled in.)* $G \circ F$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $(G \circ F)_{\ast p}$ is defined. Two linear maps $T_pM \to T_{G(F(p))}P$ are equal if they agree at every $D$, and two derivations at $G(F(p))$ are equal if they agree at every germ; so fix $D \in T_pM$ and a germ $[g]$ at $G(F(p))$.
 >
 > *Pullback reverses composition:* $(G\circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$, since $g \circ (G \circ F) = (g \circ G) \circ F$. Indeed, by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] applied three times (to $G \circ F$ at $p$, to $F$ at $p$, and to $G$ at $F(p)$),
 >
@@ -379,7 +379,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 
 ^pf-28-6
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 ![[m591-12-5.svg]]
 *The upper row is the composite of maps; the lower row says its differential is the composite of the differentials. In coordinates (Corollary [[§30 The Differential in Coordinates#^cor-30-3|§30.3]]) it becomes the multiplication of Jacobian matrices — the chain rule of calculus, now as a statement about manifolds.*

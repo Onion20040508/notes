@@ -23,7 +23,7 @@ tags: [linear-algebra, hub]
 - [[§21 Linear Algebra Toolkit#^prop-21-3|Proposition §21.3: The Double Dual]]
 - [[§21 Linear Algebra Toolkit#^thm-21-5|Theorem §21.5: Non-Degenerate Pairings]]
 - [[§25 The Geometric Tangent Space#^cor-25-4|Corollary §25.4: Three Descriptions of the Geometric Tangent Space]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Corollary §29.7: Consequences]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-8|Corollary §29.8: Consequences]]
 - [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]
 
 ## Connections
