@@ -651,3 +651,202 @@ For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph 
 > *Lee: Theorem 6.30(b), for (2)*
 
 ^rem-37-4
+
+*Assignment 5, Problem 4 (“Revisiting Lagrange multipliers”), in the notation of these notes: the assignment's submanifold $M \subset N$ is here $S \subseteq M$, with $M$ the ambient manifold of dimension $m$; its conormal space $\mathcal{N}_pM$ is $N_pS$ (Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]); and $d(G^j)_p$ is written $dG^j|_p$. The problem: (a) a point is a critical point of the restriction $f = \Phi|_S$ of a smooth function $\Phi$ on $M$ exactly when $d\Phi_p$ is conormal to $S$; (b) for a regular level set $S = G^{-1}(0)$ the differentials $dG^1|_p, \ldots, dG^k|_p$ form a basis of $N_pS$, and the method of Lagrange multipliers follows. The proofs are the submitted solution's, written out.*
+
+> [!theorem] Proposition §37.14: Critical Points of a Restriction
+> Let $S \subseteq M$ be a regular submanifold, $\iota : S \to M$ the inclusion, $p \in S$, and $\iota_p^{\ast} : T_p^{\ast}M \to T_p^{\ast}S$ the pullback of covectors (Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]). Let $\Phi : M \to \mathbb{R}$ be smooth and $f = \Phi \circ \iota = \Phi|_S : S \to \mathbb{R}$ its restriction.
+>
+> 1. $N_pS = \ker \iota_p^{\ast}$.
+> 2. $df_p = \iota_p^{\ast}\big(d\Phi_p\big)$.
+> 3. $p$ is a critical point of $f$ if and only if $d\Phi_p \in N_pS$.
+
+^prop-37-14
+
+> [!proof]+ Proof
+> *(Assignment 5, Problem 4(a).)* The restriction $f = \Phi \circ \iota$ is smooth, as a composite of smooth maps (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) and Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]), so $df_p \in T_p^{\ast}S$ is defined. By Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]] with $F = \iota$ and $F(p) = \iota(p) = p$, the pullback of a covector $\xi \in T_p^{\ast}M$ is the covector on $T_pS$
+>
+> $$
+> \big(\iota_p^{\ast}\xi\big)(v) = \xi\big(\iota_{\ast p}v\big), \qquad v \in T_pS .
+> $$
+>
+> *(1)* Let $\xi \in T_p^{\ast}M$. A covector is zero when it vanishes at every vector, and every element of $\iota_{\ast p}(T_pS)$ is $\iota_{\ast p}v$ for some $v \in T_pS$; so
+>
+> $$
+> \iota_p^{\ast}\xi = 0 \iff \xi\big(\iota_{\ast p}v\big) = 0 \ \text{ for all } v \in T_pS \iff \xi(w) = 0 \ \text{ for all } w \in \iota_{\ast p}(T_pS) \iff \xi \in N_pS ,
+> $$
+>
+> the last step by Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]. So the annihilator of the tangent space, which is how Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]] describes $N_pS$, is the kernel of the pullback, which is how the assignment describes it.
+>
+> *(2)* This is Proposition [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]] with $F = \iota$ and the function $\Phi$, smooth near $\iota(p) = p$: it gives $\iota_p^{\ast}(d\Phi_p) = d(\Phi \circ \iota)_p = df_p$. Written out for $v \in T_pS$, by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]), Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] again, and the formula for $\iota_p^{\ast}$ above,
+>
+> $$
+> df_p(v) = v\big[\Phi \circ \iota\big] = \big(\iota_{\ast p}v\big)[\Phi] = d\Phi_p\big(\iota_{\ast p}v\big) = \big(\iota_p^{\ast}(d\Phi_p)\big)(v) .
+> $$
+>
+> Two covectors on $T_pS$ that agree at every $v$ are equal.
+>
+> *(3)* By Proposition [[§36 Submersions#^prop-36-2|§36.2]], applied to the smooth function $f$ on the manifold $S$, then (2), then (1),
+>
+> $$
+> p \text{ is a critical point of } f \iff df_p = 0 \iff \iota_p^{\ast}\big(d\Phi_p\big) = 0 \iff d\Phi_p \in \ker \iota_p^{\ast} = N_pS .
+> $$
+>
+> In words: $p$ is critical for the restriction exactly when $d\Phi_p$ vanishes on every vector tangent to $S$ at $p$.
+
+^pf-37-14
+
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^prop-36-2|§36.2]]
+
+> [!theorem] Proposition §37.15: The Conormal Space of a Regular Level Set
+> Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth, with $0$ a regular value of $G$ (Definition [[§36 Submersions#^def-36-4|§36.4]]), and let $S = G^{-1}(0)$. Then for every $p \in S$ the covectors $dG^1|_p, \ldots, dG^k|_p$ form a basis of the conormal space $N_pS$.
+
+^prop-37-15
+
+> [!proof]+ Proof
+> *(Assignment 5, Problem 4(b), first part. The dimension count cites Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], which the submitted solution re-derives in an adapted chart.)* Let $r^1, \ldots, r^k$ be the standard coordinates of $\mathbb{R}^k$, so that $G^j = r^j \circ G$; each $G^j$ is smooth, as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]]). Fix $p \in S$. We show three things: $\dim N_pS = k$; each $dG^j|_p$ lies in $N_pS$; and the $k$ covectors $dG^j|_p$ are linearly independent. Then they span a $k$-dimensional subspace of the $k$-dimensional space $N_pS$, and a subspace of the same finite dimension is the whole space; so they are a basis.
+>
+> *$S$ is a regular submanifold, and $\dim N_pS = k$.* By Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]], applied to $G : M \to \mathbb{R}^k$ and the regular value $0$ (so $n = k$ there), $S$ is a regular submanifold of $M$ of codimension $k$; so $N_pS$ is defined, and $\dim N_pS = k$ by Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]]. Recall the computation: in an adapted chart $(x^1, \ldots, x^m)$ at $p$, a covector $\xi = \sum_i \xi_i\, dx^i|_p$ lies in $N_pS$ exactly when $\xi_i = 0$ for $i \le m - k$, so $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$.
+>
+> *Each $dG^j|_p$ lies in $N_pS$.* Let $1 \le j \le k$. Every $q \in S = G^{-1}(0)$ has $G(q) = 0$, so $(G^j \circ \iota)(q) = G^j(q) = 0$: the function $G^j \circ \iota$ is the constant $0$ on $S$, and its germ at $p$ is the constant germ $[\underline 0]$. So for every $v \in T_pS$, by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1) (a derivation annihilates constants, here $c = 0$),
+>
+> $$
+> d\big(G^j \circ \iota\big)_p(v) = v\big[G^j \circ \iota\big] = v\big[\underline 0\big] = 0 ,
+> $$
+>
+> that is, $d(G^j \circ \iota)_p = 0$. By Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](2) with $\Phi = G^j$,
+>
+> $$
+> \iota_p^{\ast}\big(dG^j|_p\big) = d\big(G^j \circ \iota\big)_p = 0 ,
+> $$
+>
+> so $dG^j|_p \in \ker \iota_p^{\ast} = N_pS$ by Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](1).
+>
+> *The components of $G_{\ast p}$.* For $v \in T_pM$, the vector $G_{\ast p}v \in T_0\mathbb{R}^k$ is, by the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]] in the identity chart of $\mathbb{R}^k$, $G_{\ast p}v = \sum_j (G_{\ast p}v)[r^j]\, \partial/\partial r^j|_0$, and its coefficients are, by the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
+>
+> $$
+> \big(G_{\ast p}v\big)[r^j] = v\big[r^j \circ G\big] = v\big[G^j\big] = dG^j|_p(v) .
+> $$
+>
+> Hence
+>
+> $$
+> G_{\ast p}v = \sum_{j=1}^k dG^j|_p(v)\, \frac{\partial}{\partial r^j}\Big|_0 \qquad (v \in T_pM). \tag{$\ast$}
+> $$
+>
+> Since $0$ is a regular value and $p \in G^{-1}(0)$, $G$ is a submersion at $p$ (Definition [[§36 Submersions#^def-36-4|§36.4]](2)): $G_{\ast p}$ is onto $T_0\mathbb{R}^k$ (Definition [[§36 Submersions#^def-36-1|§36.1]]).
+>
+> *Linear independence, without coordinates.* Suppose $\sum_{j=1}^k c_j\, dG^j|_p = 0$ for some $c = (c_1, \ldots, c_k) \in \mathbb{R}^k$; we show $c = 0$. Since $G_{\ast p}$ is onto, the vector $\sum_j c_j\, \partial/\partial r^j|_0$ of $T_0\mathbb{R}^k$ is $G_{\ast p}v$ for some $v \in T_pM$. Comparing with $(\ast)$, and using that the coefficients of a vector in the basis $\partial/\partial r^j|_0$ are unique (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]), $dG^j|_p(v) = c_j$ for every $j$. Evaluating the assumed relation at this $v$, with the pointwise operations of $T_p^{\ast}M$,
+>
+> $$
+> 0 = \Big(\sum_{j=1}^k c_j\, dG^j|_p\Big)(v) = \sum_{j=1}^k c_j\, dG^j|_p(v) = \sum_{j=1}^k c_j^{\,2} = |c|^2 ,
+> $$
+>
+> so $c = 0$. In the assignment's words: the relation says $c \cdot G_{\ast p}(v) = 0$ for every $v$, and since $G_{\ast p}$ is onto we may take $G_{\ast p}(v) = c$.
+>
+> *Linear independence, by the Jacobian.* Fix any chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$, and let $J$ be the $k \times m$ matrix with entries $J_{ji} = \partial G^j/\partial x^i(p)$. By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $dG^j|_p = \sum_{i=1}^m J_{ji}\, dx^i|_p$: row $j$ of $J$ holds the components of $dG^j|_p$. Hence, collecting the coefficient of each $dx^i|_p$,
+>
+> $$
+> \sum_{j=1}^k c_j\, dG^j|_p = \sum_{i=1}^m \Big(\sum_{j=1}^k c_j J_{ji}\Big) dx^i|_p ,
+> $$
+>
+> and since the $dx^i|_p$ form a basis of $T_p^{\ast}M$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), this is $0$ if and only if $\sum_j c_j J_{ji} = 0$ for every $i$, that is, $J^{\mathsf T} c = 0$. Next, $J$ is the matrix of $G_{\ast p}$ in the bases $\partial/\partial x^i|_p$ and $\partial/\partial r^j|_0$: by $(\ast)$ with $v = \partial/\partial x^i|_p$ and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], $G_{\ast p}(\partial/\partial x^i|_p) = \sum_j J_{ji}\, \partial/\partial r^j|_0$, so the $i$-th column of $J$ holds the coordinates of the image of the $i$-th basis vector (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)). As $G_{\ast p}$ is onto the $k$-dimensional $T_0\mathbb{R}^k$, its rank is $k$, so $J$ has rank $k$, and so has $J^{\mathsf T}$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3): the rank of a matrix equals that of its transpose). By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) for $J^{\mathsf T} : \mathbb{R}^k \to \mathbb{R}^m$, $\dim\ker J^{\mathsf T} = k - k = 0$. So $J^{\mathsf T} c = 0$ forces $c = 0$.
+>
+> *Conclusion.* $dG^1|_p, \ldots, dG^k|_p$ are $k$ linearly independent elements of $N_pS$, which has dimension $k$, so they form a basis of $N_pS$. As $p \in S$ was arbitrary, this holds at every point of $S$.
+
+^pf-37-15
+
+*Uses:* [[§37 Regular Submanifolds#^prop-37-7|§37.7]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§37 Regular Submanifolds#^thm-37-9|§37.9]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+
+The assignment adds that a regular submanifold is *locally* always a regular level set. *(Filled in.)* Given an adapted chart $(U, \varphi = (x_a, x_b))$, put $G = x_b : U \to \mathbb{R}^k$. Then $U \cap S = G^{-1}(0)$ by Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], and $G$ is a submersion at every point of $U$: in the charts $\varphi$ and $\mathrm{id}_{\mathbb{R}^k}$ its coordinate representation is $(r^1, \ldots, r^m) \mapsto (r^{m-k+1}, \ldots, r^m)$, whose Jacobian $(0 \mid I_k)$ has rank $k$ (the computation of Step 2 in the proof of Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], with $n$ there replaced by $m$). So Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]] and the theorem below apply to $U \cap S \subseteq U$. For this $G$ the basis $dG^j|_p = dx^{m-k+j}|_p$ is the basis of Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]].
+
+> [!theorem] Theorem §37.16: Lagrange Multipliers
+> Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth with $0$ a regular value, $S = G^{-1}(0)$, $\Phi : M \to \mathbb{R}$ smooth, and $f = \Phi|_S$.
+>
+> 1. If $f$ has a local extremum at $p \in S$ — $f(q) \le f(p)$ for all $q$ in some neighbourhood of $p$ in $S$, or $f(q) \ge f(p)$ for all such $q$ — then $p$ is a critical point of $f$.
+> 2. A point $p \in S$ is a critical point of $f$ if and only if there are $\lambda_1, \ldots, \lambda_k \in \mathbb{R}$ with
+>
+> $$
+> d\Phi_p = \sum_{j=1}^k \lambda_j\, dG^j|_p ,
+> $$
+>
+> and the **Lagrange multipliers** $\lambda_j$ are then unique. Equivalently, the critical points of $f$ are the points $p \in M$ for which there is $\lambda \in \mathbb{R}^k$ with
+>
+> $$
+> d\Big(\Phi - \sum_{j=1}^k \lambda_j G^j\Big)_p = 0, \qquad G(p) = 0 .
+> $$
+>
+> 3. If $M = \mathbb{R}^m$, with the gradient $\nabla h(p) = \big(\partial h/\partial r^1(p), \ldots, \partial h/\partial r^m(p)\big)$, the vector with $\nabla h(p) \cdot v = dh_p(v)$, the conditions of (2) read
+>
+> $$
+> \nabla\Phi(p) = \sum_{j=1}^k \lambda_j\, \nabla G^j(p), \qquad G^1(p) = \cdots = G^k(p) = 0 ,
+> $$
+>
+> $m + k$ equations in the $m + k$ unknowns $(p, \lambda) \in \mathbb{R}^m \times \mathbb{R}^k$.
+
+^thm-37-16
+
+> [!remark]- Connections
+> - In $\mathbb{R}^n$, with proofs by the implicit function theorem: [[Method of Lagrange Multipliers|452 hub]], [[§17 Optimization and Lagrange Multipliers#^thm-17-3|452 Thm. §17.3]] (several constraints); computational treatment: [[§114 Lagrange Multipliers#^thm-114-1|Calc Thm. §114.1]].
+> - In mechanics, constraint forces as multipliers: [[§B6.3 Constraints and Lagrange Multipliers#^thm-b6-3-1|CM Thm. §B6.3.1]].
+
+> [!proof]+ Proof
+> *(Assignment 5, Problem 4(b), second part: “explain how the method of Lagrange multipliers follows.”)* By Theorem [[§37 Regular Submanifolds#^thm-37-9|§37.9]], $S$ is a regular submanifold of $M$, and $f = \Phi \circ \iota$ is smooth on it (Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]]).
+>
+> *(1)* By Proposition [[§36 Submersions#^prop-36-2|§36.2]] we must show $df_p = 0$, that is, $df_p(v) = 0$ for every $v \in T_pS$. Fix $v \in T_pS$. By Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], applied on the manifold $S$, there is a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to S$ with $\gamma(0) = p$ and $D_\gamma = v$. Let $W$ be a neighbourhood of $p$ in $S$ — an open subset of $S$ containing $p$ (Definition [[§1 Point-Set Topology Review#^def-1-4|§1.4]]) — on which $f \le f(p)$ (or $f \ge f(p)$). As $\gamma$ is continuous, $\gamma^{-1}(W)$ is open in $(-\varepsilon, \varepsilon)$ and contains $0$, so it contains an interval $(-\delta, \delta)$; for $|t| < \delta$, $(f \circ \gamma)(t) \le f(p) = (f \circ \gamma)(0)$ (or $\ge$). So the function $f \circ \gamma$ of one variable, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], has a local maximum (or minimum) at the interior point $0$, and its derivative there is $0$ (the one-variable fact: at an interior local extremum of a differentiable function the derivative vanishes). By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]],
+>
+> $$
+> df_p(v) = D_\gamma[f] = \frac{d}{dt}\Big|_{t=0} f\big(\gamma(t)\big) = (f \circ \gamma)'(0) = 0 .
+> $$
+>
+> As $v$ was arbitrary, $df_p = 0$. So the method, which looks for the critical points of $f$, finds in particular all local extrema of $\Phi$ subject to the constraint $G = 0$.
+>
+> *(2)* By Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](3), $p$ is a critical point of $f$ iff $d\Phi_p \in N_pS$. By Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]], $N_pS$ is the span of $dG^1|_p, \ldots, dG^k|_p$. So if $p$ is critical, $d\Phi_p$ is a linear combination $\sum_j \lambda_j\, dG^j|_p$; conversely, such a combination lies in $N_pS$, which is a subspace (the kernel of the linear map $\iota_p^{\ast}$, Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](1)) containing every $dG^j|_p$, so $p$ is critical. *Uniqueness:* if $\sum_j \lambda_j\, dG^j|_p = \sum_j \mu_j\, dG^j|_p$, then $\sum_j (\lambda_j - \mu_j)\, dG^j|_p = 0$, and linear independence (Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]]) gives $\lambda_j = \mu_j$ for every $j$. *The equivalent form:* the function $\Phi - \sum_j \lambda_j G^j$ is smooth on $M$, and linearity of $d$ (Corollary [[§32 The Cotangent Space#^cor-32-3|§32.3]](1), applied once for each of the $k$ terms) gives
+>
+> $$
+> d\Big(\Phi - \sum_{j=1}^k \lambda_j G^j\Big)_p = d\Phi_p - \sum_{j=1}^k \lambda_j\, dG^j|_p ,
+> $$
+>
+> which is $0$ iff $d\Phi_p = \sum_j \lambda_j\, dG^j|_p$; and a point $p \in M$ lies in $S = G^{-1}(0)$ iff $G(p) = 0$.
+>
+> *(3)* Use the identity chart of $\mathbb{R}^m$, with coordinate functions $r^1, \ldots, r^m$; its coordinate derivations are the ordinary partial derivatives, $\partial/\partial r^i|_p[h] = \partial h/\partial r^i(p)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], the chart being the identity). For a smooth $h$ on $\mathbb{R}^m$, Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] gives $dh_p = \sum_i \partial h/\partial r^i(p)\, dr^i|_p$: the components of $dh_p$ are the entries of $\nabla h(p)$. (So for $v = \sum_i v^i\, \partial/\partial r^i|_p$, identified with $(v^1, \ldots, v^m) \in \mathbb{R}^m$ as in Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], $dh_p(v) = \sum_i \partial h/\partial r^i(p)\, v^i = \nabla h(p) \cdot v$.) Two covectors are equal iff their components in the basis $dr^i|_p$ are equal, so, applying this to $h = \Phi$ and $h = G^j$,
+>
+> $$
+> d\Phi_p = \sum_{j=1}^k \lambda_j\, dG^j|_p \iff \frac{\partial \Phi}{\partial r^i}(p) = \sum_{j=1}^k \lambda_j\, \frac{\partial G^j}{\partial r^i}(p) \ \ (i = 1, \ldots, m) \iff \nabla\Phi(p) = \sum_{j=1}^k \lambda_j\, \nabla G^j(p) .
+> $$
+>
+> With $G(p) = 0$ from (2) this is the system stated: $m$ scalar equations from the gradients and $k$ from the constraints, in the $m$ coordinates of $p$ and the $k$ multipliers. (The count makes a finite set of solutions plausible; it is not a theorem that there are any, or finitely many.)
+
+^pf-37-16
+
+*Uses:* [[§37 Regular Submanifolds#^thm-37-9|§37.9]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§36 Submersions#^prop-36-2|§36.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§37 Regular Submanifolds#^prop-37-15|§37.15]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]
+
+*(Not from the assignment.)* In (3) the system is the vanishing of the gradient of the single function $L(x, \lambda) = \Phi(x) - \sum_j \lambda_j G^j(x)$ on $\mathbb{R}^{m+k}$: its partial derivatives at $(p, \lambda)$ are $\partial\Phi/\partial r^i(p) - \sum_j \lambda_j\, \partial G^j/\partial r^i(p)$ in the direction of $x^i$ and $-G^j(p)$ in the direction of $\lambda_j$, so $\nabla L(p, \lambda) = 0$ is exactly the $m + k$ equations above.
+
+> [!remark] Remark: The Conormal Bundle
+> *(Not from the assignment. It uses the cotangent bundle $T^{\ast}M$ with its standard coordinates, [[§49 The Cotangent Bundle|§49]] and [[§51 Critical Points and the Hessian|§51]], later in the notes.)* Put all the conormal spaces together, as the cotangent spaces are put together in $T^{\ast}M$ (Definition [[§49 The Cotangent Bundle#^def-49-1|§49.1]]): the **conormal bundle** of $S$ is
+>
+> $$
+> N^{\ast}S = \{\, (p, \alpha) \in T^{\ast}M : p \in S,\ \alpha \in N_pS \,\} .
+> $$
+>
+> As in [[§51 Critical Points and the Hessian|§51]], covectors are named $\alpha$ here, keeping $\xi_i$ for coordinate functions. Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart adapted to $S$ (codimension $k$), and $(T^{\ast}U, \hat\varphi)$ the chart of $T^{\ast}M$ over it (Definition [[§49 The Cotangent Bundle#^def-49-5|§49.5]]), with coordinates $\bar x^i = x^i \circ \pi$ and $\xi_i(q, \alpha) = \alpha(\partial/\partial x^i|_q)$. A point $(q, \alpha) \in T^{\ast}U$ lies in $N^{\ast}S$ iff $q \in U \cap S$, that is, $\bar x^{m-k+1} = \cdots = \bar x^m = 0$ at $(q, \alpha)$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $\alpha \in N_qS$, that is, $\xi_1 = \cdots = \xi_{m-k} = 0$ at $(q, \alpha)$ (the computation in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], at the point $q$, where the same chart is adapted). So
+>
+> $$
+> N^{\ast}S \cap T^{\ast}U = \{\, \bar x^{m-k+1} = \cdots = \bar x^m = 0,\ \ \xi_1 = \cdots = \xi_{m-k} = 0 \,\} ,
+> $$
+>
+> $k + (m - k) = m$ of the $2m$ coordinates of the smooth chart $\hat\varphi$ of the $2m$-manifold $T^{\ast}M$ (Proposition [[§49 The Cotangent Bundle#^prop-49-2|§49.2]]) set equal to $0$. Every point $(p, \alpha)$ of $N^{\ast}S$ lies in such a $T^{\ast}U$, taking an adapted chart at $p$; so by Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] (any $m$ of the coordinates, the constant $\vec 0$) $N^{\ast}S$ is a regular submanifold of $T^{\ast}M$ of codimension $m$, of dimension $2m - m = m$ whatever $k$ is. (In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, in Uribe's words in the remark *No Normal Vectors Without a Metric*, Hamiltonian mechanics takes place.) The two extreme cases:
+>
+> 1. $S = M$ (codimension $0$, Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]): $N_pM = 0$, since a covector vanishing on all of $T_pM$ is zero, and $N^{\ast}M = \mathcal{Z}$ is the zero section, cut out by $\xi_1 = \cdots = \xi_m = 0$ (Proposition [[§51 Critical Points and the Hessian#^prop-51-4|§51.4]](1));
+> 2. $S = \{p\}$ (codimension $m$): $T_p\{p\} = 0$, so $N_p\{p\} = T_p^{\ast}M$, and $N^{\ast}\{p\} = \pi^{-1}(p)$ is the fibre over $p$, cut out by $\bar x^1 = \cdots = \bar x^m = 0$ in a chart with $\varphi(p) = 0$.
+>
+> *Critical points.* With $s_\Phi : M \to T^{\ast}M$, $s_\Phi(p) = (p, d\Phi_p)$, the one-form $d\Phi$ regarded as a map (as in [[§51 Critical Points and the Hessian|§51]]), Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]](3) says: $p \in S$ is a critical point of $\Phi|_S$ iff $(p, d\Phi_p) \in N^{\ast}S$. So
+>
+> $$
+> \operatorname{Crit}\big(\Phi|_S\big) = s_\Phi^{-1}\big(N^{\ast}S\big) :
+> $$
+>
+> the critical points of the restriction are where the graph of $d\Phi$ meets the conormal bundle. For $S = M$ this is $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$, the starting point of [[§51 Critical Points and the Hessian|§51]], where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§51 Critical Points and the Hessian#^thm-51-7|§51.7]]). *Lagrange multipliers.* For $S = G^{-1}(0)$, each fibre $N_pS$ has the basis $dG^1|_p, \ldots, dG^k|_p$ (Proposition [[§37 Regular Submanifolds#^prop-37-15|§37.15]]), so $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$ is a bijection $S \times \mathbb{R}^k \to N^{\ast}S$; at a critical point $p$, the multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem [[§37 Regular Submanifolds#^thm-37-16|§37.16]] are the coordinates of the point $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in this basis.
+
+^rem-37-5

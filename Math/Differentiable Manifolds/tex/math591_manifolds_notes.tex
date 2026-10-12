@@ -9551,6 +9551,154 @@ as an isomorphism requires. Read backwards, the isomorphism alone gives $\dim K_
 \leeref{Theorem 6.30(b), for (2)}
 \end{rembox}
 
+\textit{Assignment~5, Problem~4 (``Revisiting Lagrange multipliers''), in the notation of these notes: the assignment's submanifold $M \subset N$ is here $S \subseteq M$, with $M$ the ambient manifold of dimension $m$; its conormal space $\mathcal{N}_pM$ is $N_pS$ (Definition~\ref{def:conormal}); and $d(G^j)_p$ is written $dG^j|_p$. The problem: (a) a point is a critical point of the restriction $f = \Phi|_S$ of a smooth function $\Phi$ on $M$ exactly when $d\Phi_p$ is conormal to $S$; (b) for a regular level set $S = G^{-1}(0)$ the differentials $dG^1|_p, \ldots, dG^k|_p$ form a basis of $N_pS$, and the method of Lagrange multipliers follows. The proofs are the submitted solution's, written out.}
+
+\begin{propbox}[Critical Points of a Restriction]\thmlabel{prop:restriction-critical}
+Let $S \subseteq M$ be a regular submanifold, $\iota : S \to M$ the inclusion, $p \in S$, and $\iota_p^* : T_p^*M \to T_p^*S$ the pullback of covectors (Definition~\ref{def:pullback-covector}). Let $\Phi : M \to \mathbb{R}$ be smooth and $f = \Phi \circ \iota = \Phi|_S : S \to \mathbb{R}$ its restriction.
+\begin{enumerate}
+    \item $N_pS = \ker \iota_p^*$.
+    \item $df_p = \iota_p^*\big(d\Phi_p\big)$.
+    \item $p$ is a critical point of $f$ if and only if $d\Phi_p \in N_pS$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~5, Problem~4(a).)} The restriction $f = \Phi \circ \iota$ is smooth, as a composite of smooth maps (Lemma~\ref{lem:maps-into-submanifold}(1) and Lemma~\ref{lem:composition-smooth}), so $df_p \in T_p^*S$ is defined. By Definition~\ref{def:pullback-covector} with $F = \iota$ and $F(p) = \iota(p) = p$, the pullback of a covector $\xi \in T_p^*M$ is the covector on $T_pS$
+\[
+\big(\iota_p^*\xi\big)(v) = \xi\big(\iota_{*p}v\big), \qquad v \in T_pS .
+\]
+
+\emph{(1)} Let $\xi \in T_p^*M$. A covector is zero when it vanishes at every vector, and every element of $\iota_{*p}(T_pS)$ is $\iota_{*p}v$ for some $v \in T_pS$; so
+\[
+\iota_p^*\xi = 0 \iff \xi\big(\iota_{*p}v\big) = 0 \ \text{ for all } v \in T_pS \iff \xi(w) = 0 \ \text{ for all } w \in \iota_{*p}(T_pS) \iff \xi \in N_pS ,
+\]
+the last step by Definition~\ref{def:conormal}. So the annihilator of the tangent space, which is how Definition~\ref{def:conormal} describes $N_pS$, is the kernel of the pullback, which is how the assignment describes it.
+
+\emph{(2)} This is Proposition~\ref{prop:pullback-d} with $F = \iota$ and the function $\Phi$, smooth near $\iota(p) = p$: it gives $\iota_p^*(d\Phi_p) = d(\Phi \circ \iota)_p = df_p$. Written out for $v \in T_pS$, by Proposition~\ref{prop:df-derivation}, the definition of the pushforward (Definition~\ref{def:pushforward}), Proposition~\ref{prop:df-derivation} again, and the formula for $\iota_p^*$ above,
+\[
+df_p(v) = v\big[\Phi \circ \iota\big] = \big(\iota_{*p}v\big)[\Phi] = d\Phi_p\big(\iota_{*p}v\big) = \big(\iota_p^*(d\Phi_p)\big)(v) .
+\]
+Two covectors on $T_pS$ that agree at every $v$ are equal.
+
+\emph{(3)} By Proposition~\ref{prop:critical-functions}, applied to the smooth function $f$ on the manifold $S$, then (2), then (1),
+\[
+p \text{ is a critical point of } f \iff df_p = 0 \iff \iota_p^*\big(d\Phi_p\big) = 0 \iff d\Phi_p \in \ker \iota_p^* = N_pS .
+\]
+In words: $p$ is critical for the restriction exactly when $d\Phi_p$ vanishes on every vector tangent to $S$ at $p$.
+\end{proof}
+
+\begin{propbox}[The Conormal Space of a Regular Level Set]\thmlabel{prop:conormal-defining-functions}
+Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth, with $0$ a regular value of $G$ (Definition~\ref{def:regular-critical-value}), and let $S = G^{-1}(0)$. Then for every $p \in S$ the covectors $dG^1|_p, \ldots, dG^k|_p$ form a basis of the conormal space $N_pS$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~5, Problem~4(b), first part. The dimension count cites Proposition~\ref{prop:conormal-basis}, which the submitted solution re-derives in an adapted chart.)} Let $r^1, \ldots, r^k$ be the standard coordinates of $\mathbb{R}^k$, so that $G^j = r^j \circ G$; each $G^j$ is smooth, as a composite of smooth maps (Lemma~\ref{lem:composition-smooth}). Fix $p \in S$. We show three things: $\dim N_pS = k$; each $dG^j|_p$ lies in $N_pS$; and the $k$ covectors $dG^j|_p$ are linearly independent. Then they span a $k$-dimensional subspace of the $k$-dimensional space $N_pS$, and a subspace of the same finite dimension is the whole space; so they are a basis.
+
+\emph{$S$ is a regular submanifold, and $\dim N_pS = k$.} By Theorem~\ref{thm:rvt-manifolds}, applied to $G : M \to \mathbb{R}^k$ and the regular value $0$ (so $n = k$ there), $S$ is a regular submanifold of $M$ of codimension $k$; so $N_pS$ is defined, and $\dim N_pS = k$ by Proposition~\ref{prop:conormal-basis}. Recall the computation: in an adapted chart $(x^1, \ldots, x^m)$ at $p$, a covector $\xi = \sum_i \xi_i\, dx^i|_p$ lies in $N_pS$ exactly when $\xi_i = 0$ for $i \le m - k$, so $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$.
+
+\emph{Each $dG^j|_p$ lies in $N_pS$.} Let $1 \le j \le k$. Every $q \in S = G^{-1}(0)$ has $G(q) = 0$, so $(G^j \circ \iota)(q) = G^j(q) = 0$: the function $G^j \circ \iota$ is the constant $0$ on $S$, and its germ at $p$ is the constant germ $[\underline 0]$. So for every $v \in T_pS$, by Proposition~\ref{prop:df-derivation} and Lemma~\ref{lem:derivation-properties}(1) (a derivation annihilates constants, here $c = 0$),
+\[
+d\big(G^j \circ \iota\big)_p(v) = v\big[G^j \circ \iota\big] = v\big[\underline 0\big] = 0 ,
+\]
+that is, $d(G^j \circ \iota)_p = 0$. By Proposition~\ref{prop:restriction-critical}(2) with $\Phi = G^j$,
+\[
+\iota_p^*\big(dG^j|_p\big) = d\big(G^j \circ \iota\big)_p = 0 ,
+\]
+so $dG^j|_p \in \ker \iota_p^* = N_pS$ by Proposition~\ref{prop:restriction-critical}(1).
+
+\emph{The components of $G_{*p}$.} For $v \in T_pM$, the vector $G_{*p}v \in T_0\mathbb{R}^k$ is, by the universal formula of Theorem~\ref{thm:tangent-basis} in the identity chart of $\mathbb{R}^k$, $G_{*p}v = \sum_j (G_{*p}v)[r^j]\, \partial/\partial r^j|_0$, and its coefficients are, by the definition of the pushforward (Definition~\ref{def:pushforward}) and Proposition~\ref{prop:df-derivation},
+\[
+\big(G_{*p}v\big)[r^j] = v\big[r^j \circ G\big] = v\big[G^j\big] = dG^j|_p(v) .
+\]
+Hence
+\[
+G_{*p}v = \sum_{j=1}^k dG^j|_p(v)\, \frac{\partial}{\partial r^j}\Big|_0 \qquad (v \in T_pM). \tag{$\ast$}
+\]
+Since $0$ is a regular value and $p \in G^{-1}(0)$, $G$ is a submersion at $p$ (Definition~\ref{def:regular-critical-value}(2)): $G_{*p}$ is onto $T_0\mathbb{R}^k$ (Definition~\ref{def:submersion}).
+
+\emph{Linear independence, without coordinates.} Suppose $\sum_{j=1}^k c_j\, dG^j|_p = 0$ for some $c = (c_1, \ldots, c_k) \in \mathbb{R}^k$; we show $c = 0$. Since $G_{*p}$ is onto, the vector $\sum_j c_j\, \partial/\partial r^j|_0$ of $T_0\mathbb{R}^k$ is $G_{*p}v$ for some $v \in T_pM$. Comparing with $(\ast)$, and using that the coefficients of a vector in the basis $\partial/\partial r^j|_0$ are unique (Theorem~\ref{thm:tangent-basis}), $dG^j|_p(v) = c_j$ for every $j$. Evaluating the assumed relation at this $v$, with the pointwise operations of $T_p^*M$,
+\[
+0 = \Big(\sum_{j=1}^k c_j\, dG^j|_p\Big)(v) = \sum_{j=1}^k c_j\, dG^j|_p(v) = \sum_{j=1}^k c_j^{\,2} = |c|^2 ,
+\]
+so $c = 0$. In the assignment's words: the relation says $c \cdot G_{*p}(v) = 0$ for every $v$, and since $G_{*p}$ is onto we may take $G_{*p}(v) = c$.
+
+\emph{Linear independence, by the Jacobian.} Fix any chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$, and let $J$ be the $k \times m$ matrix with entries $J_{ji} = \partial G^j/\partial x^i(p)$. By Lemma~\ref{lem:df-coords}, $dG^j|_p = \sum_{i=1}^m J_{ji}\, dx^i|_p$: row $j$ of $J$ holds the components of $dG^j|_p$. Hence, collecting the coefficient of each $dx^i|_p$,
+\[
+\sum_{j=1}^k c_j\, dG^j|_p = \sum_{i=1}^m \Big(\sum_{j=1}^k c_j J_{ji}\Big) dx^i|_p ,
+\]
+and since the $dx^i|_p$ form a basis of $T_p^*M$ (Lemma~\ref{lem:df-coords}), this is $0$ if and only if $\sum_j c_j J_{ji} = 0$ for every $i$, that is, $J^{\mathsf T} c = 0$. Next, $J$ is the matrix of $G_{*p}$ in the bases $\partial/\partial x^i|_p$ and $\partial/\partial r^j|_0$: by $(\ast)$ with $v = \partial/\partial x^i|_p$ and Proposition~\ref{prop:df-derivation}, $G_{*p}(\partial/\partial x^i|_p) = \sum_j J_{ji}\, \partial/\partial r^j|_0$, so the $i$-th column of $J$ holds the coordinates of the image of the $i$-th basis vector (Proposition~\ref{fact:linalg}(3)). As $G_{*p}$ is onto the $k$-dimensional $T_0\mathbb{R}^k$, its rank is $k$, so $J$ has rank $k$, and so has $J^{\mathsf T}$ (Proposition~\ref{fact:linalg}(3): the rank of a matrix equals that of its transpose). By rank--nullity (Proposition~\ref{fact:linalg}(1)) for $J^{\mathsf T} : \mathbb{R}^k \to \mathbb{R}^m$, $\dim\ker J^{\mathsf T} = k - k = 0$. So $J^{\mathsf T} c = 0$ forces $c = 0$.
+
+\emph{Conclusion.} $dG^1|_p, \ldots, dG^k|_p$ are $k$ linearly independent elements of $N_pS$, which has dimension $k$, so they form a basis of $N_pS$. As $p \in S$ was arbitrary, this holds at every point of $S$.
+\end{proof}
+
+The assignment adds that a regular submanifold is \emph{locally} always a regular level set. \textit{(Filled in.)} Given an adapted chart $(U, \varphi = (x_a, x_b))$, put $G = x_b : U \to \mathbb{R}^k$. Then $U \cap S = G^{-1}(0)$ by Definition~\ref{def:adapted-chart}, and $G$ is a submersion at every point of $U$: in the charts $\varphi$ and $\mathrm{id}_{\mathbb{R}^k}$ its coordinate representation is $(r^1, \ldots, r^m) \mapsto (r^{m-k+1}, \ldots, r^m)$, whose Jacobian $(0 \mid I_k)$ has rank $k$ (the computation of Step~2 in the proof of Theorem~\ref{thm:transverse-submanifold-preimage}, with $n$ there replaced by $m$). So Proposition~\ref{prop:conormal-defining-functions} and the theorem below apply to $U \cap S \subseteq U$. For this $G$ the basis $dG^j|_p = dx^{m-k+j}|_p$ is the basis of Proposition~\ref{prop:conormal-basis}.
+
+\begin{thmbox}[Lagrange Multipliers]\thmlabel{thm:lagrange-multipliers}
+Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth with $0$ a regular value, $S = G^{-1}(0)$, $\Phi : M \to \mathbb{R}$ smooth, and $f = \Phi|_S$.
+\begin{enumerate}
+    \item If $f$ has a local extremum at $p \in S$ --- $f(q) \le f(p)$ for all $q$ in some neighbourhood of $p$ in $S$, or $f(q) \ge f(p)$ for all such $q$ --- then $p$ is a critical point of $f$.
+    \item A point $p \in S$ is a critical point of $f$ if and only if there are $\lambda_1, \ldots, \lambda_k \in \mathbb{R}$ with
+    \[
+    d\Phi_p = \sum_{j=1}^k \lambda_j\, dG^j|_p ,
+    \]
+    and the \textbf{Lagrange multipliers} $\lambda_j$ are then unique. Equivalently, the critical points of $f$ are the points $p \in M$ for which there is $\lambda \in \mathbb{R}^k$ with
+    \[
+    d\Big(\Phi - \sum_{j=1}^k \lambda_j G^j\Big)_p = 0, \qquad G(p) = 0 .
+    \]
+    \item If $M = \mathbb{R}^m$, with the gradient $\nabla h(p) = \big(\partial h/\partial r^1(p), \ldots, \partial h/\partial r^m(p)\big)$, the vector with $\nabla h(p) \cdot v = dh_p(v)$, the conditions of (2) read
+    \[
+    \nabla\Phi(p) = \sum_{j=1}^k \lambda_j\, \nabla G^j(p), \qquad G^1(p) = \cdots = G^k(p) = 0 ,
+    \]
+    $m + k$ equations in the $m + k$ unknowns $(p, \lambda) \in \mathbb{R}^m \times \mathbb{R}^k$.
+\end{enumerate}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Assignment~5, Problem~4(b), second part: ``explain how the method of Lagrange multipliers follows.'')} By Theorem~\ref{thm:rvt-manifolds}, $S$ is a regular submanifold of $M$, and $f = \Phi \circ \iota$ is smooth on it (Proposition~\ref{prop:restriction-critical}).
+
+\emph{(1)} By Proposition~\ref{prop:critical-functions} we must show $df_p = 0$, that is, $df_p(v) = 0$ for every $v \in T_pS$. Fix $v \in T_pS$. By Theorem~\ref{thm:every-vector-velocity}, applied on the manifold $S$, there is a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to S$ with $\gamma(0) = p$ and $D_\gamma = v$. Let $W$ be a neighbourhood of $p$ in $S$ --- an open subset of $S$ containing $p$ (Definition~\ref{def:neighborhood}) --- on which $f \le f(p)$ (or $f \ge f(p)$). As $\gamma$ is continuous, $\gamma^{-1}(W)$ is open in $(-\varepsilon, \varepsilon)$ and contains $0$, so it contains an interval $(-\delta, \delta)$; for $|t| < \delta$, $(f \circ \gamma)(t) \le f(p) = (f \circ \gamma)(0)$ (or $\ge$). So the function $f \circ \gamma$ of one variable, smooth by Lemma~\ref{lem:composition-smooth}, has a local maximum (or minimum) at the interior point $0$, and its derivative there is $0$ (the one-variable fact: at an interior local extremum of a differentiable function the derivative vanishes). By Proposition~\ref{prop:df-derivation} and Definition~\ref{def:velocity},
+\[
+df_p(v) = D_\gamma[f] = \frac{d}{dt}\Big|_{t=0} f\big(\gamma(t)\big) = (f \circ \gamma)'(0) = 0 .
+\]
+As $v$ was arbitrary, $df_p = 0$. So the method, which looks for the critical points of $f$, finds in particular all local extrema of $\Phi$ subject to the constraint $G = 0$.
+
+\emph{(2)} By Proposition~\ref{prop:restriction-critical}(3), $p$ is a critical point of $f$ iff $d\Phi_p \in N_pS$. By Proposition~\ref{prop:conormal-defining-functions}, $N_pS$ is the span of $dG^1|_p, \ldots, dG^k|_p$. So if $p$ is critical, $d\Phi_p$ is a linear combination $\sum_j \lambda_j\, dG^j|_p$; conversely, such a combination lies in $N_pS$, which is a subspace (the kernel of the linear map $\iota_p^*$, Proposition~\ref{prop:restriction-critical}(1)) containing every $dG^j|_p$, so $p$ is critical. \emph{Uniqueness:} if $\sum_j \lambda_j\, dG^j|_p = \sum_j \mu_j\, dG^j|_p$, then $\sum_j (\lambda_j - \mu_j)\, dG^j|_p = 0$, and linear independence (Proposition~\ref{prop:conormal-defining-functions}) gives $\lambda_j = \mu_j$ for every $j$. \emph{The equivalent form:} the function $\Phi - \sum_j \lambda_j G^j$ is smooth on $M$, and linearity of $d$ (Corollary~\ref{cor:df-properties}(1), applied once for each of the $k$ terms) gives
+\[
+d\Big(\Phi - \sum_{j=1}^k \lambda_j G^j\Big)_p = d\Phi_p - \sum_{j=1}^k \lambda_j\, dG^j|_p ,
+\]
+which is $0$ iff $d\Phi_p = \sum_j \lambda_j\, dG^j|_p$; and a point $p \in M$ lies in $S = G^{-1}(0)$ iff $G(p) = 0$.
+
+\emph{(3)} Use the identity chart of $\mathbb{R}^m$, with coordinate functions $r^1, \ldots, r^m$; its coordinate derivations are the ordinary partial derivatives, $\partial/\partial r^i|_p[h] = \partial h/\partial r^i(p)$ (Definition~\ref{def:coordinate-derivation}, the chart being the identity). For a smooth $h$ on $\mathbb{R}^m$, Lemma~\ref{lem:df-coords} gives $dh_p = \sum_i \partial h/\partial r^i(p)\, dr^i|_p$: the components of $dh_p$ are the entries of $\nabla h(p)$. (So for $v = \sum_i v^i\, \partial/\partial r^i|_p$, identified with $(v^1, \ldots, v^m) \in \mathbb{R}^m$ as in Corollary~\ref{cor:tangent-vs}, $dh_p(v) = \sum_i \partial h/\partial r^i(p)\, v^i = \nabla h(p) \cdot v$.) Two covectors are equal iff their components in the basis $dr^i|_p$ are equal, so, applying this to $h = \Phi$ and $h = G^j$,
+\[
+d\Phi_p = \sum_{j=1}^k \lambda_j\, dG^j|_p \iff \frac{\partial \Phi}{\partial r^i}(p) = \sum_{j=1}^k \lambda_j\, \frac{\partial G^j}{\partial r^i}(p) \ \ (i = 1, \ldots, m) \iff \nabla\Phi(p) = \sum_{j=1}^k \lambda_j\, \nabla G^j(p) .
+\]
+With $G(p) = 0$ from (2) this is the system stated: $m$ scalar equations from the gradients and $k$ from the constraints, in the $m$ coordinates of $p$ and the $k$ multipliers. (The count makes a finite set of solutions plausible; it is not a theorem that there are any, or finitely many.)
+\end{proof}
+
+\textit{(Not from the assignment.)} In (3) the system is the vanishing of the gradient of the single function $L(x, \lambda) = \Phi(x) - \sum_j \lambda_j G^j(x)$ on $\mathbb{R}^{m+k}$: its partial derivatives at $(p, \lambda)$ are $\partial\Phi/\partial r^i(p) - \sum_j \lambda_j\, \partial G^j/\partial r^i(p)$ in the direction of $x^i$ and $-G^j(p)$ in the direction of $\lambda_j$, so $\nabla L(p, \lambda) = 0$ is exactly the $m + k$ equations above.
+
+\begin{rembox}[The Conormal Bundle]\label{rem:conormal-bundle}
+\textit{(Not from the assignment. It uses the cotangent bundle $T^*M$ with its standard coordinates, \ref{sub:cotangent-bundle} and \ref{sub:ctb-zero-section}, later in the notes.)} Put all the conormal spaces together, as the cotangent spaces are put together in $T^*M$ (Definition~\ref{def:cotangent-bundle}): the \textbf{conormal bundle} of $S$ is
+\[
+N^*S = \{\, (p, \alpha) \in T^*M : p \in S,\ \alpha \in N_pS \,\} .
+\]
+As in \ref{sub:ctb-zero-section}, covectors are named $\alpha$ here, keeping $\xi_i$ for coordinate functions. Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart adapted to $S$ (codimension $k$), and $(T^*U, \hat\varphi)$ the chart of $T^*M$ over it (Definition~\ref{def:ctb-chart}), with coordinates $\bar x^i = x^i \circ \pi$ and $\xi_i(q, \alpha) = \alpha(\partial/\partial x^i|_q)$. A point $(q, \alpha) \in T^*U$ lies in $N^*S$ iff $q \in U \cap S$, that is, $\bar x^{m-k+1} = \cdots = \bar x^m = 0$ at $(q, \alpha)$ (Definition~\ref{def:adapted-chart}), and $\alpha \in N_qS$, that is, $\xi_1 = \cdots = \xi_{m-k} = 0$ at $(q, \alpha)$ (the computation in the proof of Proposition~\ref{prop:conormal-basis}, at the point $q$, where the same chart is adapted). So
+\[
+N^*S \cap T^*U = \{\, \bar x^{m-k+1} = \cdots = \bar x^m = 0,\ \ \xi_1 = \cdots = \xi_{m-k} = 0 \,\} ,
+\]
+$k + (m - k) = m$ of the $2m$ coordinates of the smooth chart $\hat\varphi$ of the $2m$-manifold $T^*M$ (Proposition~\ref{prop:cotangent-transition}) set equal to $0$. Every point $(p, \alpha)$ of $N^*S$ lies in such a $T^*U$, taking an adapted chart at $p$; so by Proposition~\ref{prop:adapted-flex} (any $m$ of the coordinates, the constant $\vec 0$) $N^*S$ is a regular submanifold of $T^*M$ of codimension $m$, of dimension $2m - m = m$ whatever $k$ is. (In the language of symplectic geometry, not developed in these notes, $N^*S$ is a Lagrangian submanifold of $T^*M$ --- the cotangent side where, in Uribe's words in the remark \emph{No Normal Vectors Without a Metric}, Hamiltonian mechanics takes place.) The two extreme cases:
+\begin{enumerate}
+    \item $S = M$ (codimension $0$, Proposition~\ref{prop:open-codim0}): $N_pM = 0$, since a covector vanishing on all of $T_pM$ is zero, and $N^*M = \mathcal{Z}$ is the zero section, cut out by $\xi_1 = \cdots = \xi_m = 0$ (Proposition~\ref{prop:zero-section-submanifold}(1));
+    \item $S = \{p\}$ (codimension $m$): $T_p\{p\} = 0$, so $N_p\{p\} = T_p^*M$, and $N^*\{p\} = \pi^{-1}(p)$ is the fibre over $p$, cut out by $\bar x^1 = \cdots = \bar x^m = 0$ in a chart with $\varphi(p) = 0$.
+\end{enumerate}
+\emph{Critical points.} With $s_\Phi : M \to T^*M$, $s_\Phi(p) = (p, d\Phi_p)$, the one-form $d\Phi$ regarded as a map (as in \ref{sec:hessian}), Proposition~\ref{prop:restriction-critical}(3) says: $p \in S$ is a critical point of $\Phi|_S$ iff $(p, d\Phi_p) \in N^*S$. So
+\[
+\operatorname{Crit}\big(\Phi|_S\big) = s_\Phi^{-1}\big(N^*S\big) :
+\]
+the critical points of the restriction are where the graph of $d\Phi$ meets the conormal bundle. For $S = M$ this is $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$, the starting point of \ref{sec:hessian}, where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem~\ref{thm:morse-transverse}). \emph{Lagrange multipliers.} For $S = G^{-1}(0)$, each fibre $N_pS$ has the basis $dG^1|_p, \ldots, dG^k|_p$ (Proposition~\ref{prop:conormal-defining-functions}), so $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$ is a bijection $S \times \mathbb{R}^k \to N^*S$; at a critical point $p$, the multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem~\ref{thm:lagrange-multipliers} are the coordinates of the point $(p, d\Phi_p) \in N^*S$ in its fibre, in this basis.
+\end{rembox}
+
+
 
 \section{Fibrations}\label{sec:fibrations}
 
@@ -9937,7 +10085,7 @@ The dimension formula: $s_{*p}$ is injective, so $\dim s_{*p}(T_pM) = \dim T_pM 
 
 \section{Examples of Fibrations}\label{sec:fibration-examples}
 
-\roadmark{Stage: bundles}{The trivial fibrations, the Möbius band with its two trivializations and their half-twist, and where the other fibrations of the course appear.}
+\roadmark{Stage: bundles}{The trivial fibrations, the Möbius band with its two trivializations and their half-twist, the normal bundle of a submanifold of $\mathbb{R}^n$ and its focal points, and where the other fibrations of the course appear.}
 
 \textit{The examples of \ref{sec:fibrations}, collected: the product fibrations, which every fibration imitates locally, and the Möbius band (Lecture~12), the first fibration that is not a product. The non-examples --- a submersion that is not a fibration, and one whose fibres are all diffeomorphic but which is still not a fibration --- stay with Ehresmann's theorem in \ref{sub:ehresmann}, whose hypotheses they explain.}
 
@@ -10077,11 +10225,332 @@ a smooth map. The $W_a$ cover $E$, so $\pi$ is smooth (Definition~\ref{def:smoot
 
 The sign in (3) is the half-twist: going once around the circle, the two trivializations agree on one arc and differ by $t \mapsto -t$ on the other. Over either arc alone the band is a product; the sign is what a global product would have to remove.
 
+\subsection{The Normal Bundle of a Submanifold of Euclidean Space}\label{sub:normal-bundle}
+
+\textit{Assignment~5, Problem~5.} A submanifold $M \subseteq \mathbb{R}^n$ has, at each of its points, the vectors perpendicular to it; collecting all pairs (point, perpendicular vector) gives the \emph{normal bundle}. Part~(a) of the problem shows that it is a manifold of dimension $n$, whatever the dimension of $M$; part~(b) introduces the endpoint map and finds the focal points of a parabola. The normal bundle is the Euclidean shadow of the conormal bundle (the remark \emph{The Conormal Bundle} in \ref{sec:submanifolds}): Uribe's ``if we had a metric \ldots\ this would be the normal space'' (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}) is realized here by the dot product of $\mathbb{R}^n$, and the remark \emph{Normal and Conormal} below makes the identification explicit. That the projection to $M$ is a fibration (Proposition~\ref{prop:normal-bundle-fibration}), and what focal points mean geometrically (the remark \emph{Focal Points Are Centres of Curvature} below), are added.
+
+\emph{Setting.} Throughout this subsection $M \subseteq \mathbb{R}^n$ is a regular submanifold of dimension $m < n$, that is, of codimension $n - m$ (Definition~\ref{def:submanifold}), and $v \cdot w = \sum_l v^l w^l$ is the dot product of $\mathbb{R}^n$. Tangent spaces are the geometric ones: for $p \in M$, $T^{\geo}_pM \subseteq \mathbb{R}^n$ is the set of velocities $\gamma'(0)$ of smooth curves $\gamma$ in $\mathbb{R}^n$ with $\gamma(0) = p$ that stay in $M$ (Definition~\ref{def:geometric-tangent}, whose formula makes sense verbatim for any subset of $\mathbb{R}^n$). This is the assignment's ``$T_pM$ identified with the ambient tangent space''; its identification with $\iota_{*p}(T_pM)$ is the remark \emph{The Tangent Spaces Match} in \ref{sec:submanifolds}. It is computed in an adapted chart, as follows. Let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $\mathbb{R}^n$ adapted to $M$ (Definition~\ref{def:adapted-chart}), so that
+\[
+U \cap M = \{\, q \in U : x^{m+1}(q) = \cdots = x^n(q) = 0 \,\},
+\]
+and put
+\[
+G = (G^1, \ldots, G^{n-m}) = (x^{m+1}, \ldots, x^n) : U \to \mathbb{R}^{n-m}, \qquad J(q) = G'(q) \quad (q \in U),
+\]
+the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^n$, whose $s$-th row is the gradient $\nabla G^s(q)$ (Definition~\ref{def:jacobian}). Every point of $M$ lies in such a chart (Definition~\ref{def:submanifold}). Two facts are used throughout.
+\begin{enumerate}
+    \item \emph{$\varphi'(q)$ is invertible and $J(q)$ has rank $n - m$, for every $q \in U$.} The chart $\varphi : U \to \varphi(U)$ is a diffeomorphism of open subsets of $\mathbb{R}^n$ (Propositions~\ref{prop:chart-diffeo} and~\ref{prop:diffeo-agree}), and the chain rule applied to $\varphi \circ \varphi^{-1} = \mathrm{id}_{\varphi(U)}$ at $\varphi(q)$ gives
+    \[
+    \varphi'(q)\, (\varphi^{-1})'\big(\varphi(q)\big) = I_n ,
+    \]
+    so $\varphi'(q)$ is invertible, with inverse $(\varphi^{-1})'(\varphi(q))$. The rows of an invertible matrix are linearly independent, and row $l$ of $\varphi'(q)$ is $\nabla x^l(q)$ (Definition~\ref{def:jacobian}); the rows of $J(q)$ are the last $n - m$ of these, $\nabla x^{m+1}(q), \ldots, \nabla x^n(q)$, so they are independent and $J(q)$ has rank $n - m$ (Definition~\ref{def:rank}). This is the computation in the proof of Proposition~\ref{prop:submanifold-euclidean} (slice $\Rightarrow$ external, with $m$ and $n - m$ in place of $n$ and $k$).
+    \item \emph{For every $q \in U \cap M$,}
+    \[
+    T^{\geo}_qM = T^{\geo}_q(U \cap M) = \ker J(q), \qquad \dim T^{\geo}_qM = m. \tag{$\sharp$}
+    \]
+    By (1), $\vec 0$ is a regular value of $G$ on the open set $U$ (Definition~\ref{def:regular-value}), and $U \cap M = G^{-1}(\vec 0)$ by the displayed description of $U \cap M$. The first equality is Lemma~\ref{lem:tangent-local}, since $U \cap M$ is open in $M$ (its proof uses only that $U \cap M$ is open in the subset $M$ of the Euclidean space). The second, and the dimension, are Theorem~\ref{thm:tangent-kernel} for the regular level set $U \cap M = G^{-1}(\vec 0)$, with $W = U$, $F = G$, $c = \vec 0$ and $m$, $n - m$ in place of $n$, $k$: the kernel of the surjective $J(q) : \mathbb{R}^n \to \mathbb{R}^{n-m}$ has dimension $n - (n - m) = m$ (Proposition~\ref{fact:linalg}(1)).
+\end{enumerate}
+
+\begin{defbox}[Normal Bundle]\deflabel{def:normal-bundle}
+Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m < n$. For $p \in M$ write
+\[
+(T^{\geo}_pM)^\perp = \{\, v \in \mathbb{R}^n : v \cdot w = 0 \text{ for all } w \in T^{\geo}_pM \,\}
+\]
+for the orthogonal complement of the geometric tangent space with respect to the dot product. The \textbf{normal bundle} of $M$ is
+\[
+\mathcal{N} = \{\, (p, v) \in \mathbb{R}^n \times \mathbb{R}^n : p \in M \text{ and } v \in (T^{\geo}_pM)^\perp \,\} \subseteq \mathbb{R}^{2n},
+\]
+with the \textbf{projection} $\pi : \mathcal{N} \to M$, $\pi(p, v) = p$. Its fibre over $p$ is $\pi^{-1}(p) = \{p\} \times (T^{\geo}_pM)^\perp$, a copy of the normal space at $p$.
+\leeref{Ch.~6, \emph{Tubular Neighborhoods}}
+\end{defbox}
+
+\begin{propbox}[The Normal Bundle Is a Submanifold]\thmlabel{prop:normal-bundle-submanifold}
+$\mathcal{N}$ is a regular submanifold of $\mathbb{R}^{2n} = \mathbb{R}^n \times \mathbb{R}^n$ of codimension $n$, hence a smooth manifold of dimension $n$ with the induced structure (Proposition~\ref{prop:submanifold-structure}).
+\leeref{Ch.~6, \emph{Tubular Neighborhoods}}
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~5, Problem~5(a); the student's route, following the hint. Two steps are completed: that the first $m$ coordinate vectors span the tangent space is proved from $(\sharp)$, and the Jacobian, which the hint computes in the coordinates $(x, v)$, is converted to the standard coordinates of $\mathbb{R}^{2n}$, so that the external description of \ref{sec:euclidean} applies.)} By the last statement of Proposition~\ref{prop:submanifold-euclidean}, applied to $X = \mathcal{N} \subseteq \mathbb{R}^{2n} = \mathbb{R}^{n+k}$ with $k = n$, it suffices to describe $\mathcal{N}$ externally near each of its points (Definition~\ref{def:ext-int}): for each $(p_0, v_0) \in \mathcal{N}$ we need an open $W \ni (p_0, v_0)$ in $\mathbb{R}^{2n}$ and a smooth $F : W \to \mathbb{R}^n$ having $\vec 0$ as a regular value with $\mathcal{N} \cap W = F^{-1}(\vec 0)$. Fix $(p_0, v_0) \in \mathcal{N}$. Then $p_0 \in M$, so there is an adapted chart $(U, \varphi = (x^1, \ldots, x^n))$ at $p_0$ as in the Setting; put $W = U \times \mathbb{R}^n$, open in $\mathbb{R}^{2n}$ as a product of open sets, and containing $(p_0, v_0)$.
+
+\emph{Step 1: the vector fields $X_j$.} For $q \in U$ and $j = 1, \ldots, n$ put
+\[
+X_j(q) = \frac{\partial \varphi^{-1}}{\partial r^j}\big(\varphi(q)\big) \in \mathbb{R}^n ,
+\]
+the $j$-th column of the Jacobian $(\varphi^{-1})'(\varphi(q))$, with components $X_j^l(q)$, $l = 1, \ldots, n$. This is the hint's coordinate field $\partial/\partial x^j$ ``regarded as a vector field on $U$ in the sense of Calc~III'': the velocity of the $j$-th coordinate line $t \mapsto \varphi^{-1}(\varphi(q) + t e_j)$ at $t = 0$, by the chain rule. Each $X_j^l$ is smooth on $U$, as the composite of the smooth $\varphi$ with the partial derivative $\partial(\varphi^{-1})^l/\partial r^j$ of the smooth map $\varphi^{-1}$.
+\begin{enumerate}
+    \item[(i)] \emph{$X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$, and $\varphi'(q)\, X_j(q) = e_j$.} By fact~(1) of the Setting, $(\varphi^{-1})'(\varphi(q))$ is the inverse of $\varphi'(q)$; so it is invertible, its columns $X_1(q), \ldots, X_n(q)$ form a basis, and $\varphi'(q)\, X_j(q)$, the $j$-th column of $\varphi'(q)\,(\varphi^{-1})'(\varphi(q)) = I_n$, is $e_j$.
+    \item[(ii)] \emph{For $q \in U \cap M$, $X_1(q), \ldots, X_m(q)$ form a basis of $T^{\geo}_qM$.} The rows of $J(q)$ are the last $n - m$ rows of $\varphi'(q)$ (fact~(1) of the Setting), so $J(q)\, X_j(q)$ consists of the last $n - m$ entries of $\varphi'(q)\, X_j(q) = e_j$, by (i). For $j \le m$ these entries are all $0$, so $X_j(q) \in \ker J(q) = T^{\geo}_qM$ by $(\sharp)$. The $m$ vectors $X_1(q), \ldots, X_m(q)$ are linearly independent, as part of the basis in (i), and lie in the $m$-dimensional space $T^{\geo}_qM$ $(\sharp)$; $m$ independent vectors in an $m$-dimensional space form a basis. So
+    \[
+    T^{\geo}_qM = \Span\{X_1(q), \ldots, X_m(q)\}.
+    \]
+\end{enumerate}
+The submitted solution quotes this span from the computation of Problem~2 for the inclusion of a regular submanifold in an adapted chart: $\iota_{*q}(T_qM) = \Span\{\partial/\partial x^1|_q, \ldots, \partial/\partial x^m|_q\}$ (Proposition~\ref{prop:submanifold-tangent}), read in $\mathbb{R}^n$ through the remark \emph{The Tangent Spaces Match} in \ref{sec:submanifolds}.
+
+\emph{Step 2: the map $F$.} Define $F : W = U \times \mathbb{R}^n \to \mathbb{R}^n$ by
+\[
+F(q, v) = \big( x^{m+1}(q), \ldots, x^n(q),\ y^1(q, v), \ldots, y^m(q, v) \big), \qquad y^j(q, v) = X_j(q) \cdot v = \sum_{l=1}^n X_j^l(q)\, v^l .
+\]
+It is smooth: its first $n - m$ components are components of the smooth chart $\varphi$, and each $y^j$ is a sum of products of the smooth functions $X_j^l(q)$ and the coordinates $v^l$.
+
+\emph{Step 3: $F^{-1}(\vec 0) = \mathcal{N} \cap W$.} For $(q, v) \in W$,
+\begin{align*}
+F(q, v) = \vec 0 &\iff x^{m+s}(q) = 0 \ (1 \le s \le n - m) \ \text{ and } \ X_j(q) \cdot v = 0 \ (1 \le j \le m) \\
+&\iff q \in U \cap M \ \text{ and } \ X_j(q) \cdot v = 0 \ (1 \le j \le m) \\
+&\iff q \in U \cap M \ \text{ and } \ v \in (T^{\geo}_qM)^\perp \\
+&\iff (q, v) \in \mathcal{N} \cap W .
+\end{align*}
+The first equivalence is the definition of $F$. The second is the adapted-chart description $U \cap M = \{x^{m+1} = \cdots = x^n = 0\}$, with $q \in U$. For the third, $q \in U \cap M$, so $T^{\geo}_qM = \Span\{X_1(q), \ldots, X_m(q)\}$ by Step~1(ii); a vector $v$ is orthogonal to every element $\sum_j c_j X_j(q)$ of this span if and only if it is orthogonal to each $X_j(q)$, because $v \cdot \sum_j c_j X_j(q) = \sum_j c_j\, \big(v \cdot X_j(q)\big)$ by linearity of the dot product (``if'' by this formula, ``only if'' by taking $c = e_j$). The fourth is Definition~\ref{def:normal-bundle}, together with $q \in U$ and $W = U \times \mathbb{R}^n$.
+
+\emph{Step 4: the Jacobian in the coordinates $(x, v)$ (the submitted computation).} On $W$ use the coordinates $(x, v) = (x^1(q), \ldots, x^n(q), v^1, \ldots, v^n)$, i.e.\ the map $\varphi \times \mathrm{id} : W \to \varphi(U) \times \mathbb{R}^n$, $(q, v) \mapsto (\varphi(q), v)$, a bijection with inverse $\varphi^{-1} \times \mathrm{id}$; in them the $x$'s and the $v$'s are independent variables. The coordinate representation of $F$ is $\tilde F = F \circ (\varphi^{-1} \times \mathrm{id}) : \varphi(U) \times \mathbb{R}^n \to \mathbb{R}^n$,
+\[
+\tilde F(r, v) = \Big( r^{m+1}, \ldots, r^n,\ \tilde X_1(r) \cdot v, \ldots, \tilde X_m(r) \cdot v \Big), \qquad \tilde X_j(r) = \frac{\partial \varphi^{-1}}{\partial r^j}(r),
+\]
+using $x^{m+s}(\varphi^{-1}(r)) = r^{m+s}$ and $X_j(\varphi^{-1}(r)) = \tilde X_j(r)$. Its partial derivatives at $(r, v)$, for $1 \le i, l \le n$, are as follows.
+\begin{itemize}
+    \item The component $r^{m+s}$ ($1 \le s \le n - m$) depends only on $r$, and is the $(m+s)$-th coordinate:
+    \[
+    \frac{\partial r^{m+s}}{\partial r^i} = \delta^{m+s}_i, \qquad \frac{\partial r^{m+s}}{\partial v^l} = 0 .
+    \]
+    \item The component $\tilde y^j(r, v) = \tilde X_j(r) \cdot v = \sum_l \tilde X_j^l(r)\, v^l$: differentiating each term by the product rule, with $v$ independent of $r$ and $\tilde X_j$ independent of $v$,
+    \[
+    \frac{\partial \tilde y^j}{\partial r^i} = \sum_{l=1}^n v^l\, \frac{\partial^2 (\varphi^{-1})^l}{\partial r^i\, \partial r^j}(r), \qquad \frac{\partial \tilde y^j}{\partial v^l} = \tilde X_j^l(r) .
+    \]
+\end{itemize}
+Grouping the columns as $(r^1, \ldots, r^m)$, $(r^{m+1}, \ldots, r^n)$, $(v^1, \ldots, v^n)$, the $n \times 2n$ Jacobian at $(\varphi(q), v)$ is therefore
+\[
+\tilde F'\big(\varphi(q), v\big) = \begin{pmatrix} 0_{(n-m) \times m} & I_{n-m} & 0_{(n-m) \times n} \\ \ast & \ast & X(q) \end{pmatrix},
+\]
+where the entries $\ast$ are the second-derivative sums above, and $X(q)$ is the $m \times n$ matrix whose $j$-th row is $X_j(q)^{\mathsf T} = \big(X_j^1(q), \ldots, X_j^n(q)\big)$ (recall $\tilde X_j(\varphi(q)) = X_j(q)$).
+
+\emph{It has rank $n$.} Write the $s$-th of the first $n - m$ rows as $(0, e_s, 0)$, with $e_s \in \mathbb{R}^{n-m}$, and the $j$-th of the last $m$ rows as $(\ast, \ast, X_j(q)^{\mathsf T})$, and suppose a linear combination of the rows vanishes:
+\[
+\sum_{s=1}^{n-m} c_s\, (0, e_s, 0) + \sum_{j=1}^m b_j\, \big(\ast, \ast, X_j(q)^{\mathsf T}\big) = 0, \qquad c_s, b_j \in \mathbb{R}.
+\]
+In the last $n$ columns the first $n - m$ rows have zeros, so these columns give $\sum_j b_j X_j(q)^{\mathsf T} = 0$; since $X_1(q), \ldots, X_m(q)$ are linearly independent (Step~1(i)), $b_1 = \cdots = b_m = 0$. With all $b_j = 0$, columns $m+1, \ldots, n$ give $\sum_s c_s e_s = 0$, so $c_1 = \cdots = c_{n-m} = 0$. So the $n$ rows are linearly independent, and $\tilde F'(\varphi(q), v)$ has rank $n$ (Definition~\ref{def:rank}).
+
+\emph{Step 5: back to the standard coordinates.} On $W$, $F = \tilde F \circ (\varphi \times \mathrm{id})$, and $\varphi \times \mathrm{id}$ is smooth with the block-diagonal Jacobian
+\[
+(\varphi \times \mathrm{id})'(q, v) = \begin{pmatrix} \varphi'(q) & 0 \\ 0 & I_n \end{pmatrix},
+\]
+which is invertible, with inverse $\operatorname{diag}\big((\varphi^{-1})'(\varphi(q)), I_n\big)$, by fact~(1) of the Setting. By the chain rule,
+\[
+F'(q, v) = \tilde F'\big(\varphi(q), v\big)\, (\varphi \times \mathrm{id})'(q, v) .
+\]
+Multiplying on the right by an invertible matrix does not change the image: $\operatorname{im}(AB) = A(\operatorname{im} B) = A(\mathbb{R}^{2n}) = \operatorname{im} A$ when $B$ is onto. So $F'(q, v)$ has the same image as $\tilde F'(\varphi(q), v)$, which is all of $\mathbb{R}^n$ by Step~4. Thus every point of $W$ is a regular point of $F$ (Definition~\ref{def:regular-point}), and in particular $\vec 0$ is a regular value of $F$ on $W$ (Definition~\ref{def:regular-value}, applied on the open set $W$ as in Corollary~\ref{cor:rvt-open}).
+
+\emph{Step 6: conclusion.} By Steps~2, 3 and~5, $W$ is an open neighbourhood of $(p_0, v_0)$ in $\mathbb{R}^{2n}$, $F : W \to \mathbb{R}^n$ is smooth with $\vec 0$ as a regular value, and $\mathcal{N} \cap W = F^{-1}(\vec 0)$: $\mathcal{N}$ is described externally near $(p_0, v_0)$ (Definition~\ref{def:ext-int}, with $n + k = 2n$ and $k = n$). As $(p_0, v_0) \in \mathcal{N}$ was arbitrary, Proposition~\ref{prop:submanifold-euclidean} gives that $\mathcal{N}$ is a regular submanifold of $\mathbb{R}^{2n}$ of codimension $n$, and by Proposition~\ref{prop:submanifold-structure} it is a smooth manifold of dimension $2n - n = n$.
+
+\emph{The submitted ending.} The solution as submitted concludes without leaving the coordinates $(x, v)$. By Theorem~\ref{lem:differential-matrix}, $\tilde F'(\varphi(q), v)$ is the matrix of $F_{*(q,v)}$, so by Step~4 $F$ is a submersion on the open submanifold $W$ of $\mathbb{R}^{2n}$, and the regular value theorem for manifolds (Theorem~\ref{thm:rvt-manifolds}) makes $F^{-1}(\vec 0) = \mathcal{N} \cap W$ a regular submanifold of $W$ of codimension $n$. An adapted chart $(W', \theta)$ of $W$ at $(p_0, v_0)$ is a smooth chart of $\mathbb{R}^{2n}$ (Proposition~\ref{prop:open-smooth}(2)), and since $W' \subseteq W$,
+\[
+W' \cap \mathcal{N} = W' \cap \mathcal{N} \cap W = W' \cap F^{-1}(\vec 0) ,
+\]
+so it is adapted to $\mathcal{N}$ in $\mathbb{R}^{2n}$ (Definition~\ref{def:adapted-chart}), with $n$ vanishing coordinates. The two endings are the same argument: Proposition~\ref{prop:submanifold-euclidean} packages the passage from a regular level set to an adapted chart.
+\end{proof}
+
+\begin{propbox}[The Normal Bundle Is a Fibration]\thmlabel{prop:normal-bundle-fibration}
+Let $(U, \varphi = (x^1, \ldots, x^n))$ be a chart of $\mathbb{R}^n$ adapted to $M$, with $G = (x^{m+1}, \ldots, x^n)$ and $J(q) = G'(q)$ as in the Setting, and let $\mathcal{N}$ carry the smooth structure of Proposition~\ref{prop:normal-bundle-submanifold}.
+\begin{enumerate}
+    \item For $q \in U \cap M$ the gradients $\nabla G^1(q), \ldots, \nabla G^{n-m}(q)$, the rows of $J(q)$, form a basis of $(T^{\geo}_qM)^\perp$; and for every $q \in U$ the $(n-m) \times (n-m)$ matrix $J(q) J(q)^{\mathsf T}$ is invertible.
+    \item The map
+    \[
+    \Phi_U : \pi^{-1}(U \cap M) \longrightarrow (U \cap M) \times \mathbb{R}^{n-m}, \qquad \Phi_U(q, v) = \Big(q,\ \big(J(q) J(q)^{\mathsf T}\big)^{-1} J(q)\, v\Big),
+    \]
+    is a diffeomorphism, with inverse $(q, c) \mapsto \big(q, J(q)^{\mathsf T} c\big)$, and $\mathrm{pr}_1 \circ \Phi_U = \pi|_{\pi^{-1}(U \cap M)}$. On each fibre $\pi^{-1}(q) = \{q\} \times (T^{\geo}_qM)^\perp$ it is a linear isomorphism $(T^{\geo}_qM)^\perp \to \mathbb{R}^{n-m}$.
+    \item $\pi : \mathcal{N} \to M$ is a fibration with fibre $\mathbb{R}^{n-m}$ (Definition~\ref{def:fibration}), the maps $\Phi_U$ of (2), over all adapted charts, being local trivializations.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment; filled in.)} Throughout, $M$ carries its induced structure as a regular submanifold of $\mathbb{R}^n$, $U \cap M$ is open in $M$ (subspace topology, $U$ being open in $\mathbb{R}^n$) and is an open submanifold of $M$ (Definition~\ref{def:open-submanifold-smooth}), and $(U \cap M) \times \mathbb{R}^{n-m}$ is a product manifold (Definition~\ref{def:product-manifold}).
+
+\emph{$\pi$ is smooth, and $\pi^{-1}(U \cap M)$.} Let $\iota_{\mathcal{N}} : \mathcal{N} \to \mathbb{R}^{2n}$ be the inclusion, smooth by Lemma~\ref{lem:maps-into-submanifold}(1), and $\mathrm{pr} : \mathbb{R}^{2n} \to \mathbb{R}^n$, $\mathrm{pr}(p, v) = p$, which is linear, hence smooth. Then $\pi = \mathrm{pr} \circ \iota_{\mathcal{N}}$ as maps into $\mathbb{R}^n$, smooth as a composite (Lemma~\ref{lem:composition-smooth}); its values lie in $M$ by Definition~\ref{def:normal-bundle}, so $\pi$ is smooth as a map into $M$ (Lemma~\ref{lem:maps-into-submanifold}(2)). Next,
+\[
+\mathcal{N}_U := \pi^{-1}(U \cap M) = \{\, (q, v) \in \mathcal{N} : q \in U \,\} = \mathcal{N} \cap (U \times \mathbb{R}^n),
+\]
+the first equality because $\pi(q, v) = q$ and $q \in M$ for every $(q, v) \in \mathcal{N}$. It is open in $\mathcal{N}$, being the intersection of $\mathcal{N}$ with an open set of $\mathbb{R}^{2n}$, and is an open submanifold of $\mathcal{N}$.
+
+\emph{(1) The gradients span the normal space.} Fix $q \in U \cap M$. \emph{They are normal:} for $w \in T^{\geo}_qM = \ker J(q)$ $(\sharp)$, the $s$-th entry of $J(q)\, w$ is $\nabla G^s(q) \cdot w$ (the $s$-th row of $J(q)$ is $\nabla G^s(q)$, Definition~\ref{def:jacobian}), and $J(q)\, w = 0$; so $\nabla G^s(q) \cdot w = 0$, and $\nabla G^s(q) \in (T^{\geo}_qM)^\perp$. \emph{They are independent:} $J(q)$ has rank $n - m$ (fact~(1) of the Setting), so its $n - m$ rows are linearly independent (Definition~\ref{def:rank}). \emph{The normal space has dimension $n - m$:} choose a basis $w_1, \ldots, w_m$ of $T^{\geo}_qM$ ($\dim = m$ by $(\sharp)$), and let $B$ be the $m \times n$ matrix with rows $w_1^{\mathsf T}, \ldots, w_m^{\mathsf T}$. A vector is orthogonal to $T^{\geo}_qM$ if and only if it is orthogonal to each $w_i$ (linearity of the dot product, as in Step~3 of the previous proof), that is, iff $Bv = 0$; so $(T^{\geo}_qM)^\perp = \ker B$. The rows of $B$ are independent, so $B$ has rank $m$, and rank--nullity (Proposition~\ref{fact:linalg}(1)) gives $\dim \ker B = n - m$. So the $n - m$ independent vectors $\nabla G^s(q)$ lie in the $(n-m)$-dimensional space $(T^{\geo}_qM)^\perp$, and form a basis of it. In matrix form, since $J(q)^{\mathsf T} c = \sum_s c^s\, \nabla G^s(q)$ for $c = (c^1, \ldots, c^{n-m}) \in \mathbb{R}^{n-m}$ (the columns of $J(q)^{\mathsf T}$ are the rows of $J(q)$):
+\[
+(T^{\geo}_qM)^\perp = \{\, J(q)^{\mathsf T} c : c \in \mathbb{R}^{n-m} \,\}, \qquad c \mapsto J(q)^{\mathsf T} c \ \text{ injective}. \tag{$\flat$}
+\]
+\emph{The Gram matrix.} Now let $q \in U$ be arbitrary; $J(q)$ still has rank $n - m$, so $c \mapsto J(q)^{\mathsf T} c$ is injective (its columns are the independent rows of $J(q)$). If $J(q) J(q)^{\mathsf T} c = 0$, then
+\[
+0 = c \cdot \big(J(q) J(q)^{\mathsf T} c\big) = c^{\mathsf T} J(q) J(q)^{\mathsf T} c = \big(J(q)^{\mathsf T} c\big) \cdot \big(J(q)^{\mathsf T} c\big) = \big|J(q)^{\mathsf T} c\big|^2 ,
+\]
+so $J(q)^{\mathsf T} c = 0$, and $c = 0$ by injectivity. A square matrix with zero kernel is invertible (Proposition~\ref{fact:linalg}(1)). ($J J^{\mathsf T}$ is the Gram matrix of the gradients: its $(s, s')$ entry is $\nabla G^s(q) \cdot \nabla G^{s'}(q)$.)
+
+\emph{(2) The map and its inverse.} For $q \in U$ put $A(q) = \big(J(q) J(q)^{\mathsf T}\big)^{-1} J(q)$, an $(n-m) \times n$ matrix. Its entries are smooth functions on $U$: the entries of $J(q)$ are partial derivatives $\partial x^{m+s}/\partial r^l(q)$ of components of the smooth chart $\varphi$; those of $J J^{\mathsf T}$ are sums of products of these; and by the cofactor formula $(J J^{\mathsf T})^{-1} = \adj(J J^{\mathsf T}) / \det(J J^{\mathsf T})$, each entry of the inverse is a polynomial in the entries of $J J^{\mathsf T}$ divided by $\det(J J^{\mathsf T})$, which is smooth and, by (1), nowhere zero on $U$. Define
+\[
+\Phi_U(q, v) = \big(q, A(q)\, v\big) \quad \big((q, v) \in \mathcal{N}_U\big), \qquad \Theta_U(q, c) = \big(q, J(q)^{\mathsf T} c\big) \quad \big((q, c) \in (U \cap M) \times \mathbb{R}^{n-m}\big).
+\]
+\emph{Targets.} For $(q, v) \in \mathcal{N}_U$, $q \in U \cap M$, so $\Phi_U(q, v) \in (U \cap M) \times \mathbb{R}^{n-m}$. For $q \in U \cap M$ and $c \in \mathbb{R}^{n-m}$, $J(q)^{\mathsf T} c \in (T^{\geo}_qM)^\perp$ by $(\flat)$, so $(q, J(q)^{\mathsf T} c) \in \mathcal{N}$, and it lies in $\mathcal{N}_U$ since $q \in U$.
+
+\emph{Mutually inverse.} For $(q, c) \in (U \cap M) \times \mathbb{R}^{n-m}$,
+\[
+\Phi_U\big(\Theta_U(q, c)\big) = \Big(q,\ \big(J J^{\mathsf T}\big)^{-1} J\, J^{\mathsf T} c\Big) = \Big(q,\ \big(J J^{\mathsf T}\big)^{-1} \big(J J^{\mathsf T}\big) c\Big) = (q, c),
+\]
+with $J = J(q)$. For $(q, v) \in \mathcal{N}_U$, $v \in (T^{\geo}_qM)^\perp$, so by $(\flat)$ $v = J^{\mathsf T} c$ for some $c \in \mathbb{R}^{n-m}$, and
+\[
+\Theta_U\big(\Phi_U(q, v)\big) = \Big(q,\ J^{\mathsf T} \big(J J^{\mathsf T}\big)^{-1} J\, v\Big) = \Big(q,\ J^{\mathsf T} \big(J J^{\mathsf T}\big)^{-1} \big(J J^{\mathsf T}\big) c\Big) = \big(q, J^{\mathsf T} c\big) = (q, v).
+\]
+So $\Phi_U$ is a bijection with inverse $\Theta_U$.
+
+\emph{Commuting triangle and linearity on fibres.} $\mathrm{pr}_1\big(\Phi_U(q, v)\big) = q = \pi(q, v)$ for every $(q, v) \in \mathcal{N}_U$. On the fibre $\pi^{-1}(q) = \{q\} \times (T^{\geo}_qM)^\perp$, $\Phi_U$ is $v \mapsto A(q)\, v$ in the second component, a linear map; it is a bijection onto $\mathbb{R}^{n-m}$, because $\Phi_U$ and $\Theta_U$ are mutually inverse and both keep the first component $q$, so that $c \mapsto J(q)^{\mathsf T} c$ is its inverse.
+
+\emph{$\Phi_U$ is smooth.} Let $\varphi_M = (x^1, \ldots, x^m)|_{U \cap M}$ be the induced chart of $M$ (Proposition~\ref{prop:submanifold-structure}); its domain is all of $U \cap M$, so it is also a chart of the open submanifold $U \cap M$ (Proposition~\ref{prop:open-smooth}(2)), with image $V_M = \varphi_M(U \cap M)$ open in $\mathbb{R}^m$. With the identity chart of $\mathbb{R}^{n-m}$ it gives the product chart $\big((U \cap M) \times \mathbb{R}^{n-m}, \varphi_M \times \mathrm{id}\big)$, whose domain is the whole product (Proposition~\ref{prop:product-manifold}); so $\varphi_M \times \mathrm{id} : (U \cap M) \times \mathbb{R}^{n-m} \to V_M \times \mathbb{R}^{n-m}$ is a diffeomorphism (Proposition~\ref{prop:chart-diffeo}). Now
+\[
+(\varphi_M \times \mathrm{id}) \circ \Phi_U(q, v) = \big(x^1(q), \ldots, x^m(q),\ A(q)\, v\big) = \hat\Phi(q, v), \qquad \hat\Phi : U \times \mathbb{R}^n \to \mathbb{R}^m \times \mathbb{R}^{n-m},
+\]
+where $\hat\Phi$ is defined by the same formula on all of $U \times \mathbb{R}^n$ and is smooth, its components being components of $\varphi$ and sums of products of the smooth entries of $A(q)$ with the coordinates $v^l$. The inclusion $\iota_U : \mathcal{N}_U \to U \times \mathbb{R}^n$ is smooth: the inclusion $\mathcal{N}_U \to \mathcal{N}$ is smooth (Proposition~\ref{prop:open-inclusion-smooth}(1)), and so is $\iota_{\mathcal{N}}$; their composite $\mathcal{N}_U \to \mathbb{R}^{2n}$ takes values in the open set $U \times \mathbb{R}^n$, hence is smooth into it (Proposition~\ref{prop:open-inclusion-smooth}(3)). So $\hat\Phi \circ \iota_U$ is smooth (Lemma~\ref{lem:composition-smooth}); it takes values in the open set $V_M \times \mathbb{R}^{n-m}$ of $\mathbb{R}^n$, hence is smooth into it (Proposition~\ref{prop:open-inclusion-smooth}(3)); and
+\[
+\Phi_U = (\varphi_M \times \mathrm{id})^{-1} \circ \big(\hat\Phi \circ \iota_U\big)
+\]
+is a composite of smooth maps, hence smooth.
+
+\emph{$\Theta_U$ is smooth.} Recall $\varphi_M^{-1}(r) = \varphi^{-1}(r, \vec 0)$ for $r \in V_M$ (the proof of Proposition~\ref{prop:submanifold-structure}). So for $(r, c) \in V_M \times \mathbb{R}^{n-m}$,
+\[
+\Theta_U \circ (\varphi_M \times \mathrm{id})^{-1}(r, c) = \Big(\varphi^{-1}(r, \vec 0),\ J\big(\varphi^{-1}(r, \vec 0)\big)^{\mathsf T} c\Big) =: \hat\Theta(r, c) \in \mathbb{R}^{2n},
+\]
+and $\hat\Theta : V_M \times \mathbb{R}^{n-m} \to \mathbb{R}^{2n}$ is smooth: $r \mapsto (r, \vec 0)$ is linear with values in $\varphi(U)$ for $r \in V_M$, $\varphi^{-1}$ is smooth on $\varphi(U)$, and the entries of $J$ are smooth on $U$. Hence $\Theta_U = \hat\Theta \circ (\varphi_M \times \mathrm{id})$ is smooth as a map into $\mathbb{R}^{2n}$ (Lemma~\ref{lem:composition-smooth}). Its values lie in $\mathcal{N}$ (\emph{Targets} above), so it is smooth into $\mathcal{N}$ (Lemma~\ref{lem:maps-into-submanifold}(2)), and they lie in the open subset $\mathcal{N}_U$, so it is smooth into $\mathcal{N}_U$ (Proposition~\ref{prop:open-inclusion-smooth}(3)).
+
+So $\Phi_U$ is a smooth bijection with smooth inverse $\Theta_U$, a diffeomorphism (Definition~\ref{def:diffeomorphism}).
+
+\emph{(3) The fibration.} The sets $U \cap M$, over all charts $(U, \varphi)$ of $\mathbb{R}^n$ adapted to $M$, are open in $M$ and cover $M$, since every point of $M$ lies in an adapted chart (Definition~\ref{def:submanifold}). The projection $\pi$ is smooth (first paragraph), and over each $U \cap M$ the map $\Phi_U$ of (2) is a diffeomorphism $\pi^{-1}(U \cap M) \to (U \cap M) \times \mathbb{R}^{n-m}$ with $\mathrm{pr}_1 \circ \Phi_U = \pi|_{\pi^{-1}(U \cap M)}$. This is Definition~\ref{def:fibration} with total space $\mathcal{N}$, base $M$, fibre $\mathbb{R}^{n-m}$ and the cover $\{U \cap M\}$.
+\end{proof}
+
+The trivialization is the recipe of the remark \emph{Where Explicit Trivializations Come From} at the start of this section: a basis of each fibre that depends smoothly on the base point --- here the gradients $\nabla G^s(q)$ --- and, for a vector $v$ of the fibre, its components $c = (J J^{\mathsf T})^{-1} J v$ in that basis, $v = \sum_s c^s\, \nabla G^s(q)$. The gradients are the vectors that the dot product attaches to the covectors $dG^s|_q = dx^{m+s}|_q$: for $w \in \mathbb{R}^n$, $dG^s|_q(D_w|_q) = D_w|_q[G^s] = \nabla G^s(q) \cdot w$ (Proposition~\ref{prop:df-derivation} and Proposition~\ref{prop:differential-agree}). Those covectors form a basis of the conormal space $N_qM$ (Proposition~\ref{prop:conormal-basis}; for a general defining map, Proposition~\ref{prop:conormal-defining-functions}). So (1) is the basis of the conormal space, read through the metric; the remark \emph{Normal and Conormal} below says this for the whole bundle.
+
+\begin{defbox}[Endpoint Map]\deflabel{def:endpoint-map}
+The \textbf{endpoint map} of $M$ is
+\[
+E : \mathcal{N} \to \mathbb{R}^n, \qquad E(p, v) = p + v ,
+\]
+the endpoint of the normal vector $v$ drawn from $p$. It is smooth: $E = L \circ \iota_{\mathcal{N}}$, where $\iota_{\mathcal{N}} : \mathcal{N} \to \mathbb{R}^{2n}$ is the inclusion, smooth by Lemma~\ref{lem:maps-into-submanifold}(1), and $L(p, v) = p + v$ is linear, hence smooth; a composite of smooth maps is smooth (Lemma~\ref{lem:composition-smooth}).
+\leeref{Ch.~6, \emph{Tubular Neighborhoods}}
+\end{defbox}
+
+\begin{defbox}[Focal Point]\deflabel{def:focal-point}
+A point $q \in \mathbb{R}^n$ is a \textbf{focal point} of $M$ if $q = E(p, v)$ for some critical point $(p, v) \in \mathcal{N}$ of the endpoint map $E$ (Definition~\ref{def:endpoint-map}), that is, for some $(p, v)$ at which $E_{*(p,v)} : T_{(p,v)}\mathcal{N} \to T_q\mathbb{R}^n$ (written $dE_{(p,v)}$ in the assignment) is not of maximal rank. Since $\dim \mathcal{N} = n = \dim \mathbb{R}^n$ (Proposition~\ref{prop:normal-bundle-submanifold}), maximal rank means rank $n$, so $(p, v)$ is critical exactly when $E_{*(p,v)}$ is not onto --- a critical point in the sense of Definition~\ref{def:regular-critical} --- equivalently (Proposition~\ref{fact:linalg}(1)) not bijective.
+\end{defbox}
+
+\begin{exbox}[Focal Points of the Parabola]\exlabel{ex:parabola-focal}
+Let $M = \{(x, y) \in \mathbb{R}^2 : y = x^2\}$. The set of focal points of $M$ is the image of the smooth curve
+\[
+\mathbf{r} : \mathbb{R} \to \mathbb{R}^2, \qquad \mathbf{r}(a) = \Big(-4a^3,\ 3a^2 + \tfrac12\Big),
+\]
+where $\mathbf{r}(a) = E(p, v)$ for the unique critical point $(p, v)$ of $E$ with $p = (a, a^2)$: the focal point on the normal line to the parabola at $(a, a^2)$.
+\end{exbox}
+
+\begin{proof}[Working out the example]
+\textit{(Assignment~5, Problem~5(b), as submitted; the smoothness of the parametrization and the passage from $E_*$ to a Jacobian are made explicit.)} In this example $(x, y)$ are the standard coordinates of $\mathbb{R}^2$, so $n = 2$ and $m = 1$.
+
+\emph{$M$ is a submanifold.} $M = g^{-1}(0)$ for $g(x, y) = y - x^2$, $g : \mathbb{R}^2 \to \mathbb{R}$, whose Jacobian $g'(x, y) = (-2x, 1)$ is nonzero, i.e.\ has rank $1$, at every point. So $0$ is a regular value (Definition~\ref{def:regular-value}), and $M = g^{-1}(0)$ is an external description of $M$ near each of its points with $W = \mathbb{R}^2$ (Definition~\ref{def:ext-int}). By Proposition~\ref{prop:submanifold-euclidean}, $M$ is a regular submanifold of $\mathbb{R}^2$ of codimension $1$, i.e.\ of dimension $1$; and by Proposition~\ref{prop:normal-bundle-submanifold}, $\mathcal{N}$ is a regular submanifold of $\mathbb{R}^4$ of dimension $2$.
+
+\emph{Tangent and normal spaces.} Every $p \in M$ is $p = (a, a^2)$ for a unique $a \in \mathbb{R}$, namely its first coordinate. By Theorem~\ref{thm:tangent-kernel} with $W = \mathbb{R}^2$, $F = g$, $c = 0$,
+\[
+T^{\geo}_pM = \ker g'(p) = \{\, (u, w) : -2a\, u + w = 0 \,\} = \{\, (u, 2a\, u) : u \in \mathbb{R} \,\} = \Span\{(1, 2a)\}.
+\]
+(The submission finds the same line as the velocity of the curve $t \mapsto (a + t, (a + t)^2)$ in $M$ at $t = 0$, which is $(1, 2a)$, together with $\dim M = 1$.) The vector $(-2a, 1)$ is nonzero and
+\[
+(-2a, 1) \cdot (1, 2a) = -2a + 2a = 0 ,
+\]
+so it lies in $(T^{\geo}_pM)^\perp$; and $\dim (T^{\geo}_pM)^\perp = 2 - 1 = 1$, as in the proof of Proposition~\ref{prop:normal-bundle-fibration}(1). Hence
+\[
+(T^{\geo}_pM)^\perp = \Span\{(-2a, 1)\}, \qquad \mathcal{N} = \Big\{\, \big((a, a^2),\ \lambda(-2a, 1)\big) : a, \lambda \in \mathbb{R} \,\Big\}.
+\]
+Note that $(-2a, 1) = \nabla g(p)$, as Proposition~\ref{prop:normal-bundle-fibration}(1) predicts: $\varphi(x, y) = (x, y - x^2)$ is a chart of $\mathbb{R}^2$ adapted to $M$ with $U = \mathbb{R}^2$ and $G = g$ (the chart $\Phi$ of the proof of Proposition~\ref{prop:submanifold-euclidean}, graph $\Rightarrow$ slice, for $h(x) = x^2$).
+
+\emph{A global parametrization of $\mathcal{N}$.} Define
+\[
+\Psi : \mathbb{R}^2 \to \mathcal{N}, \qquad \Psi(a, \lambda) = \big((a, a^2),\ \lambda(-2a, 1)\big) = \big(a,\ a^2,\ -2\lambda a,\ \lambda\big).
+\]
+\begin{itemize}
+    \item \emph{Smooth.} As a map into $\mathbb{R}^4$ its components are polynomials, so it is smooth; its values lie in $\mathcal{N}$ by the description of $\mathcal{N}$ just found, so it is smooth into $\mathcal{N}$ (Lemma~\ref{lem:maps-into-submanifold}(2)).
+    \item \emph{Bijective.} It is onto $\mathcal{N}$ by that description. It is injective: if $\Psi(a, \lambda) = \Psi(a', \lambda')$, the first coordinates give $a = a'$ and the fourth give $\lambda = \lambda'$.
+    \item \emph{Its differential is bijective.} The Jacobian of $\Psi$ as a map into $\mathbb{R}^4$,
+    \[
+    D\Psi(a, \lambda) = \begin{pmatrix} 1 & 0 \\ 2a & 0 \\ -2\lambda & -2a \\ 0 & 1 \end{pmatrix},
+    \]
+    has rank $2$, since its first and fourth rows form $I_2$; so $D\Psi(a, \lambda) u = 0$ forces $u = 0$. With $\iota_{\mathcal{N}} : \mathcal{N} \to \mathbb{R}^4$ the inclusion, $\iota_{\mathcal{N}} \circ \Psi$ is $\Psi$ regarded as a map into $\mathbb{R}^4$, and its differential corresponds to $D\Psi(a, \lambda)$ (Proposition~\ref{prop:differential-agree}). By the Chain Rule (Theorem~\ref{prop:pushforward-functorial}), $(\iota_{\mathcal{N}})_{*} \circ \Psi_{*(a,\lambda)} = (\iota_{\mathcal{N}} \circ \Psi)_{*(a,\lambda)}$, which is injective; so $\Psi_{*(a,\lambda)}$ is injective (if $\Psi_{*}u = 0$ then $(\iota_{\mathcal{N}} \circ \Psi)_{*}u = 0$, so $u = 0$). It is a linear map between spaces of the same dimension $2$, $T_{(a,\lambda)}\mathbb{R}^2$ and $T_{\Psi(a,\lambda)}\mathcal{N}$ (Theorem~\ref{thm:tangent-dimension}), hence bijective (Proposition~\ref{fact:linalg}(1)).
+\end{itemize}
+By Corollary~\ref{cor:bijective-local-diffeo} (a smooth bijection with bijective differential everywhere; this is where the inverse function theorem, Theorem~\ref{thm:inverse-function}, enters), $\Psi : \mathbb{R}^2 \to \mathcal{N}$ is a diffeomorphism, and $\Psi^{-1}$ is a global chart of $\mathcal{N}$: its transition maps with any smooth chart $\chi$ of $\mathcal{N}$ are $\chi \circ \Psi$ and $\Psi^{-1} \circ \chi^{-1}$, smooth as composites of smooth maps. (In the language of Proposition~\ref{prop:normal-bundle-fibration}, $\Psi(a, \lambda) = \Theta_U\big((a, a^2), \lambda\big)$ with $G = g$: the normal bundle of the parabola is trivial.)
+
+\emph{The endpoint map in coordinates.} Put
+\[
+\hat E = E \circ \Psi : \mathbb{R}^2 \to \mathbb{R}^2, \qquad \hat E(a, \lambda) = (a, a^2) + \lambda(-2a, 1) = \big(a - 2\lambda a,\ a^2 + \lambda\big).
+\]
+By the Chain Rule, $\hat E_{*(a,\lambda)} = E_{*\Psi(a,\lambda)} \circ \Psi_{*(a,\lambda)}$. Since $\Psi_{*(a,\lambda)}$ is a bijection onto $T_{\Psi(a,\lambda)}\mathcal{N}$, the two maps $\hat E_{*(a,\lambda)}$ and $E_{*\Psi(a,\lambda)}$ have the same image; so $E_{*\Psi(a,\lambda)}$ is onto iff $\hat E_{*(a,\lambda)}$ is onto, iff (Proposition~\ref{prop:differential-agree}) the $2 \times 2$ Jacobian $D\hat E(a, \lambda)$ has rank $2$, iff $\det D\hat E(a, \lambda) \neq 0$.
+
+\emph{Critical points of $E$.} Differentiating the components $a - 2\lambda a$ and $a^2 + \lambda$ with respect to $a$ and $\lambda$,
+\[
+D\hat E(a, \lambda) = \begin{pmatrix} 1 - 2\lambda & -2a \\ 2a & 1 \end{pmatrix}, \qquad \det D\hat E(a, \lambda) = (1 - 2\lambda)\cdot 1 - (-2a)(2a) = 1 - 2\lambda + 4a^2 .
+\]
+So $\Psi(a, \lambda)$ is a critical point of $E$ (Definition~\ref{def:focal-point}) if and only if $1 - 2\lambda + 4a^2 = 0$, that is,
+\[
+\lambda = \frac{4a^2 + 1}{2} .
+\]
+For each $a$ there is exactly one such $\lambda$, and every point of $\mathcal{N}$ is $\Psi(a, \lambda)$ for exactly one $(a, \lambda)$; so the critical points of $E$ are exactly the points $\Psi\big(a, \tfrac{4a^2+1}{2}\big)$, one over each $p = (a, a^2) \in M$.
+
+\emph{The focal points.} A point of $\mathbb{R}^2$ is a focal point iff it is $E(\Psi(a, \lambda)) = \hat E(a, \lambda)$ with $\lambda = \frac{4a^2+1}{2}$, for some $a \in \mathbb{R}$. Substituting,
+\[
+a - 2\lambda a = a - a(4a^2 + 1) = -4a^3, \qquad a^2 + \lambda = a^2 + 2a^2 + \tfrac12 = 3a^2 + \tfrac12 .
+\]
+So the set of focal points is the image of $\mathbf{r}(a) = \big(-4a^3, 3a^2 + \frac12\big)$, a smooth curve, its components being polynomials in $a$; and $\mathbf{r}(a) = E(p, v)$ for the critical point over $p = (a, a^2)$.
+
+\emph{Shape.} $\mathbf{r}(-a) = \big(4a^3, 3a^2 + \frac12\big)$ is the reflection of $\mathbf{r}(a)$ in the $y$-axis, so the curve is symmetric about the axis of the parabola. Its velocity $\mathbf{r}'(a) = (-12a^2, 6a)$ vanishes only at $a = 0$, where the curve has a cusp at $\mathbf{r}(0) = (0, \frac12)$ (the remark \emph{Focal Points Are Centres of Curvature} gives its equation, $(y - \frac12)^3 = \frac{27}{16}x^2$).
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+\draw[->, gray!70!black] (-2.4,0) -- (2.4,0) node[right, font=\scriptsize, text=black] {$x$};
+\draw[->, gray!70!black] (0,-0.3) -- (0,2.9) node[above, font=\scriptsize, text=black] {$y$};
+\draw[blue, thick, domain=-1.6:1.6, samples=100, variable=\t] plot ({\t}, {(\t)*(\t)});
+\draw[red, thick, domain=-0.82:0.82, samples=200, variable=\t] plot ({-4*(\t)*(\t)*(\t)}, {3*(\t)*(\t) + 0.5});
+\fill (0,0.5) circle (1.5pt);
+\node[font=\scriptsize, anchor=west] at (0.1,0.58) {$(0, \tfrac12)$};
+\draw[blue, thick] (-2.2,-0.7) -- (-1.8,-0.7) node[right, font=\scriptsize, text=black] {parabola $y = x^2$};
+\draw[red, thick] (0.3,-0.7) -- (0.7,-0.7) node[right, font=\scriptsize, text=black] {focal points $\mathbf{r}(a)$};
+\end{tikzpicture}
+\end{center}
+
+The parabola $y = x^2$ (blue, drawn for $|x| \le 1.6$) and its set of focal points, the curve $\mathbf{r}$ (red, drawn for $|a| \le 0.82$). The red curve is symmetric about the $y$-axis and has a cusp at $(0, \frac12)$ (the dot), the focal point over the vertex; as $|a|$ grows the focal points move out and up, $\mathbf{r}(a)$ lying on the normal line at $(a, a^2)$, on the concave side. The cusp is not the optical focus $(0, \frac14)$ of the parabola: ``focal'' here refers to the endpoint map, and the remark \emph{Focal Points Are Centres of Curvature} explains what these points are.
+
+\begin{rembox}[Focal Points Are Centres of Curvature]\label{rem:focal-curvature}
+\textit{(Not from the assignment.)} At the critical point over $p = (a, a^2)$ the normal vector is $v = \lambda(-2a, 1)$ with $\lambda = \frac{1 + 4a^2}{2}$, of length
+\[
+|v| = \lambda\, \big|(-2a, 1)\big| = \frac{1 + 4a^2}{2}\, \sqrt{1 + 4a^2} = \frac{(1 + 4a^2)^{3/2}}{2} .
+\]
+This is the radius of curvature of the graph $y = f(x)$ at $x = a$, $R = (1 + f'(a)^2)^{3/2} / |f''(a)|$, for $f(x) = x^2$: $f'(a) = 2a$ and $f''(a) = 2$ give $R = (1 + 4a^2)^{3/2}/2$. And $v$ points to the concave (upper) side, since $\lambda > 0$ and $(-2a, 1)$ has positive second component. So the focal point $p + v$ on the normal line at $p$ is the \emph{centre of curvature}, the centre of the osculating circle at $p$, and the curve $\mathbf{r}$ of focal points is the \emph{evolute} of the parabola. As a check, the classical formula for the centre of curvature of a graph, $\big(a - f'(1 + f'^2)/f'',\ f + (1 + f'^2)/f''\big)$, gives
+\[
+\Big(a - \frac{2a(1 + 4a^2)}{2},\ a^2 + \frac{1 + 4a^2}{2}\Big) = \Big(-4a^3,\ 3a^2 + \tfrac12\Big) = \mathbf{r}(a).
+\]
+\emph{The evolute as a curve.} From $x = -4a^3$ and $y - \frac12 = 3a^2$: $(y - \frac12)^3 = 27a^6$ and $x^2 = 16a^6$, so
+\[
+\Big(y - \tfrac12\Big)^3 = \tfrac{27}{16}\, x^2 ,
+\]
+a semicubical parabola with its cusp at $(0, \frac12)$. Conversely every point of this curve is on $\mathbf{r}$: given $(x, y)$ with $(y - \frac12)^3 = \frac{27}{16}x^2$, let $a$ be the real cube root of $-x/4$; then $-4a^3 = x$, and $y - \frac12 = \big(\frac{27}{16}x^2\big)^{1/3} = 3\,(x/4)^{2/3} = 3a^2$. The cusp is the centre of curvature at the vertex, where the radius of curvature is $R = \frac12$: the osculating circle there is $x^2 + (y - \frac12)^2 = \frac14$.
+
+\emph{In general} (stated, not proved here): for a submanifold $M \subseteq \mathbb{R}^n$, $(p, v) \in \mathcal{N}$ is a critical point of $E$ if and only if $1$ is an eigenvalue of the shape operator (second fundamental form) of $M$ at $p$ in the normal direction $v$, and the dimension of $\ker E_{*(p,v)}$ is the multiplicity of that eigenvalue (Milnor, \emph{Morse Theory}, \S6). For a curve in the plane the shape operator in the direction of a normal $v$ is multiplication by $\kappa\, (v \cdot \mathbf{n})$, with $\kappa$ the curvature and $\mathbf{n}$ the unit normal toward the concave side; so the focal point on each normal line is at distance $|v| = 1/\kappa$ on the concave side, the centre of curvature, as found above. For the parabola, $\kappa = 2/(1 + 4a^2)^{3/2}$.
+\end{rembox}
+
+\begin{rembox}[Normal and Conormal]\label{rem:normal-conormal}
+\textit{(Not from the assignment.)} Fix $p \in M$. By Corollary~\ref{cor:tangent-vs} every tangent vector of $\mathbb{R}^n$ at $p$ is $D_w|_p$ for a unique $w \in \mathbb{R}^n$, so the dot product defines a linear map
+\[
+\mathbb{R}^n \to T_p^*\mathbb{R}^n, \qquad v \longmapsto \xi_v, \qquad \xi_v\big(D_w|_p\big) = v \cdot w .
+\]
+It is injective, since $\xi_v(D_v|_p) = |v|^2 \neq 0$ for $v \neq 0$, and both spaces have dimension $n$, so it is an isomorphism (Proposition~\ref{fact:linalg}(1)): the metric identifies vectors with covectors. Under $w \mapsto D_w|_p$ the subspace $\iota_{*p}(T_pM)$ is $T^{\geo}_pM$ (the remark \emph{The Tangent Spaces Match} in \ref{sec:submanifolds}; Proposition~\ref{prop:rvt-agree}(2) applied to the level set $U \cap M = G^{-1}(\vec 0)$ of the Setting). So $\xi_v$ lies in the conormal space $N_pM$ (Definition~\ref{def:conormal}) iff $v \cdot w = 0$ for all $w \in T^{\geo}_pM$, iff $v \in (T^{\geo}_pM)^\perp$:
+\[
+(T^{\geo}_pM)^\perp \xrightarrow{\ \cong\ } N_pM, \qquad v \mapsto \xi_v ,
+\]
+an isomorphism between spaces of dimension $n - m$ (Propositions~\ref{prop:normal-bundle-fibration}(1) and~\ref{prop:conormal-basis}). It sends the gradient $\nabla G^s(p)$ to the differential $dG^s|_p$, as computed after Proposition~\ref{prop:normal-bundle-fibration}. Hence $(p, v) \mapsto (p, \xi_v)$ maps the normal bundle $\mathcal{N}$ bijectively onto the conormal bundle $\{(p, \xi) : p \in M,\ \xi \in N_pM\}$ of the remark \emph{The Conormal Bundle} in \ref{sec:submanifolds}, fibre by fibre and linearly on each fibre: $\mathcal{N}$ is the conormal bundle read through the metric of $\mathbb{R}^n$. This is Uribe's remark that with an inner product the conormal space ``would be the normal space'' (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}), and it is why both bundles have dimension $n$: $m$ dimensions of base point, plus $n - m$ of normal vector or conormal covector.
+\end{rembox}
+
 \subsection{Further Examples}\label{sub:fibration-examples-more}
 
 \textit{(Not from lecture: a guide to the fibrations that appear later.)}
 \begin{itemize}
     \item \emph{The Hopf fibration} $S^{2n+1} \to \mathbb{CP}^n$, with fibre $S^1$ and the explicit trivializations $\phi_j(z) = ([z], z_j/|z_j|)$ (Example~\ref{ex:hopf-fibration}); it has local sections but no global one (Corollary~\ref{cor:hopf-local-sections}).
+    \item \emph{The normal bundle} $\mathcal{N} \to M$ of a submanifold $M \subseteq \mathbb{R}^n$, with fibre $\mathbb{R}^{n-m}$ (Proposition~\ref{prop:normal-bundle-fibration}, above).
     \item \emph{The tangent and cotangent bundles} $TM \to M$ and $T^*M \to M$, with fibre $\mathbb{R}^m$, whose trivializations come from charts of $M$ (Corollaries~\ref{cor:tb-fibration} and~\ref{cor:ctb-fibration}).
     \item \emph{Two-to-one local diffeomorphisms}: $S^n \to \mathbb{RP}^n$ (Example~\ref{ex:sn-rpn}) and $\mathrm{SU}(2) \to \SO(3)$ (Theorem~\ref{thm:double-cover}). These are fibrations with a two-point fibre (two-sheeted coverings); the notes prove the local-diffeomorphism and two-to-one statements, not the fibration property.
 \end{itemize}

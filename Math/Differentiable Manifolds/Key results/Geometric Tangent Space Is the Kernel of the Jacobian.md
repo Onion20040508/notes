@@ -38,6 +38,7 @@ tags: [differentiable-manifolds, hub]
 - [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Corollary §29.7: Consequences]]
 - [[§37 Regular Submanifolds#^thm-37-9|Theorem §37.9: The Regular Value Theorem for Manifolds]]
 - [[§37 Regular Submanifolds#^prop-37-11|Proposition §37.11: The Old and New Versions Agree]]
+- [[§39 Examples of Fibrations#^ex-39-3|Example §39.3: Focal Points of the Parabola]]
 
 ## Connections
 - **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§26 Transversality#^prop-26-4|§26.4]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.

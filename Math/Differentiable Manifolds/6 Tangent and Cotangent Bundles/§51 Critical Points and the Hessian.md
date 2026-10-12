@@ -489,6 +489,9 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 
 ^thm-51-7
 
+> [!remark]- Connections
+> - The same picture for a restriction $\Phi|_S$: critical points are where the graph of $d\Phi$ meets the conormal bundle of $S$, the remark [[§37 Regular Submanifolds#^rem-37-5|The Conormal Bundle]] (§37); the zero section is the case $S = M$.
+
 > [!proof]+ Proof
 > *(Assignment 5, Problem 3(a). This proof runs through the vectors of the submitted solution and the splitting of Proposition [[§51 Critical Points and the Hessian#^prop-51-5|§51.5]]; the submitted determinant follows as the second proof.)*
 >

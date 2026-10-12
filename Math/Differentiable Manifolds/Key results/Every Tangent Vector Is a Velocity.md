@@ -20,6 +20,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3: Velocity of a Composite — Computing Differentials by Curves]]
+- [[§37 Regular Submanifolds#^thm-37-16|Theorem §37.16: Lagrange Multipliers]]
 - [[§44 The Unit Quaternions and SU(2)#^prop-44-6|Proposition §44.6: The Tangent Space of SU(2) at the Identity]]
 - [[§56 Lie Groups and Left-Invariant Vector Fields#^thm-56-5|Theorem §56.5: The Lie Algebra Is the Tangent Space at the Identity]]
 
