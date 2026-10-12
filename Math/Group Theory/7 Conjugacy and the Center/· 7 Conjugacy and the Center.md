@@ -28,7 +28,7 @@ Conjugation is the action of a group on itself that detects non-commutativity. T
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]: 11 later results
-- [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]: 7 later results
+- [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]: 13 later results
+- [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]: 9 later results
 - [[§33 Conjugacy Classes#^lem-33-1|Lemma §33.1: Conjugation Relabels the Entries]]: 6 later results
-- [[§33 Conjugacy Classes#^prop-33-2|Proposition §33.2: Conjugacy Class of (1 2) in Sₙ]]: 3 later results
+- [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]: 5 later results

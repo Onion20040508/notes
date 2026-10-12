@@ -26,6 +26,7 @@ tags: [group-theory, hub]
 - [[§40 Quotient Groups#^thm-40-1|Theorem §40.1: G/N Is a Group]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Corollary §41.8: Index of an Intersection, Normal Case]]
 - [[§43 Simple Groups#^prop-43-6|Proposition §43.6: A_5 Is Simple]]
+- [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1: p-Subgroups Lie in a Conjugate of a Sylow Subgroup]]
 
 ## Connections
 - **Used for.** ord(g) divides |G| and g^|G| = e ([[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]), hence [[§29 The Index and Lagrange's Theorem#^cor-29-4|Fermat's Little Theorem]]. Also [[Groups of Prime Order Are Cyclic]] and the [[Orbit–Stabilizer Theorem]]. It rules out subgroups, e.g. S₃ has none of order 4 or 5 ([[§29 The Index and Lagrange's Theorem#^rem-29-1|Uses of Lagrange]]), and together with class sizes it proves [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].

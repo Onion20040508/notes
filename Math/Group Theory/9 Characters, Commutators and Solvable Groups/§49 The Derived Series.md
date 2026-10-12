@@ -24,7 +24,7 @@ tags: [group-theory, math493]
 > [!theorem] Theorem §49.1: Solvability via the Derived Series
 > $G$ is [[§48 Solvable Groups#^def-48-1|solvable]] if and only if $D_N(G) = \{e\}$ for some $N$.
 >
-> *Source: WS 9.6; lecture 10/9*
+> *Source: WS 9.6; lecture 10/9, 10/12*
 
 ^thm-49-1
 
@@ -35,11 +35,19 @@ tags: [group-theory, math493]
 >
 > is a chain as in [[§48 Solvable Groups#^def-48-1|the definition]], read upwards ($G_j = D_{N-j}(G)$), and $G$ is solvable.
 >
-> **($\Rightarrow$).** *[To be proved; not done in class.]*
+> **($\Rightarrow$) (lecture 10/12).** Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ be a chain with abelian quotients. We claim that $D_k(G) \subseteq G_{N-k}$ for $k = 0, 1, \ldots, N$; the case $k = N$ gives $D_N(G) \subseteq G_0 = \{e\}$. Two facts are used:
+> 1. if $H \subseteq K$ are subgroups, then $D(H) \subseteq D(K)$: every commutator of elements of $H$ is a commutator of elements of $K$, so the subgroup $D(K)$ contains all the generators of $D(H)$ ([[§47 Commutators#^def-47-2|Definition §47.2]]);
+> 2. if $M \trianglelefteq H$ and $H/M$ is abelian, then $D(H) \subseteq M$ (Abelian Quotients and Commutators, [[§47 Commutators#^prop-47-11|Proposition §47.11]]).
+>
+> *Base case.* $D_0(G) = G = G_N$. *Inductive step.* If $D_{k-1}(G) \subseteq G_{N-k+1}$, then
+>
+> $$ D_k(G) = D\big(D_{k-1}(G)\big) \subseteq D(G_{N-k+1}) \subseteq G_{N-k}, $$
+>
+> by fact (1) and then fact (2), applied to $G_{N-k} \trianglelefteq G_{N-k+1}$, whose quotient is abelian. (The board indexes the chain downwards, $G = G_0 \trianglerighteq G_1 \trianglerighteq \cdots \trianglerighteq G_m = \{e\}$, and proves $D_k(G) \subseteq G_k$; it is the same argument.) In words: the derived series descends at least as fast as any chain with abelian quotients.
 
 ^pf-49-1
 
-*Uses:* [[§49 The Derived Series#^def-49-1|Def. §49.1]], [[§47 Commutators#^prop-47-4|§47.4]], [[§47 Commutators#^prop-47-6|§47.6]], [[§48 Solvable Groups#^def-48-1|Def. §48.1]]
+*Uses:* [[§49 The Derived Series#^def-49-1|Def. §49.1]], [[§47 Commutators#^prop-47-4|§47.4]], [[§47 Commutators#^prop-47-6|§47.6]], [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§47 Commutators#^def-47-2|Def. §47.2]], [[§47 Commutators#^prop-47-11|§47.11]]
 
 > [!example] Example §49.1: Derived Series of $S_3$, $S_4$ and $S_n$
 > 1. $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$: $D(S_3) = A_3$ by The Commutator Subgroup and Characters of $S_n$ ([[§47 Commutators#^thm-47-5|Theorem §47.5]]), and $D(A_3) = \{e\}$ since $A_3$ is [[§1 The Definition of a Group#^def-1-2|abelian]].

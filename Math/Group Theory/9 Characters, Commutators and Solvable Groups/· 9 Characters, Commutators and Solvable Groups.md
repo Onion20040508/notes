@@ -7,7 +7,7 @@ tags: [chapter, group-theory]
 # 9 Characters, Commutators and Solvable Groups
 ↑ [[Group Theory]]
 
-*Source: Lecture (Wed Sept 23); PS 2.3 and 2.4; Worksheet 9 (Wed Oct 7).*
+*Source: Lecture (Wed Sept 23); PS 2.3 and 2.4; Worksheet 9 (Wed Oct 7); Lecture (Fri Oct 9); Lecture (Mon Oct 12).*
 
 [[§46 Characters#^def-46-1|Characters]] are homomorphisms to abelian groups. They [[§46 Characters#^prop-46-1|cannot distinguish conjugate elements]] and they [[§47 Commutators#^prop-47-1|kill every commutator]], which makes them a practical tool for proving that an element is *not* a commutator; the chapter determines [[§47 Commutators#^thm-47-5|the commutator subgroup]] of $S_n$, and with it [[§47 Commutators#^cor-47-7|all characters]] of $S_n$, and ends with the [[§47 Commutators#^def-47-3|abelianization]] and [[§47 Commutators#^prop-47-8|commuting normal subgroups]] (Problem Set 4). Characters are also the first step toward the representation theory of the second half of the course.
 
@@ -28,5 +28,5 @@ tags: [chapter, group-theory]
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§47 Commutators#^prop-47-1|Proposition §47.1: Characters Kill Commutators]]: 7 later results
 - [[§47 Commutators#^prop-47-2|Proposition §47.2: 3-Cycles Are Commutators]]: 5 later results
+- [[§47 Commutators#^prop-47-11|Proposition §47.11: Abelian Quotients and Commutators]]: 5 later results
 - [[§47 Commutators#^prop-47-4|Proposition §47.4: Properties of the Commutator Subgroup]]: 4 later results
-- [[§47 Commutators#^prop-47-11|Proposition §47.11: Abelian Quotients and Commutators]]: 4 later results

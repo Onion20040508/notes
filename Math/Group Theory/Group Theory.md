@@ -47,8 +47,8 @@ graph TD
   C5 --> C6
   C6 --> C7
   C7 --> C8
-  C7 --> C10
   C8 --> C9
+  C8 --> C10
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C4 -.->|on credit| C2

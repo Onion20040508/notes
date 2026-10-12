@@ -122,7 +122,7 @@ tags: [group-theory, math493]
 > [!theorem] Theorem §29.6: Cauchy's Theorem
 > Let $G$ be finite and $p$ a prime dividing $|G|$. Then $G$ has an element of order $p$.
 >
-> *Source: not from class; cf. Pinter Ch. 13*
+> *Source: stated in lecture 10/12; cf. Pinter Ch. 13*
 
 ^thm-29-6
 
