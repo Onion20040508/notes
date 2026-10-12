@@ -22,7 +22,7 @@ This is the spinor counterpart of [[§C2a.4 Particles and Relativistic Normaliza
 > |\mathbf p, s\rangle \equiv \sqrt{2E_{\mathbf p}}\,\hat a^{s\dagger}_{\mathbf p}|0\rangle, \qquad |\mathbf p, s\rangle^c \equiv \sqrt{2E_{\mathbf p}}\,\hat b^{s\dagger}_{\mathbf p}|0\rangle
 > $$
 >
-> (the vacuum of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]], relativistic normalization as in [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) are eigenstates of $:\!\hat H\!:$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]) with eigenvalue $+E_{\mathbf p}$ and carry momentum $\mathbf p$ and spin label $s$: $\hat a^\dagger$ creates a **particle** (fermion; for the electron field an electron) and $\hat b^\dagger$ an **antiparticle** (antifermion; a positron), the $c$ standing for "conjugate". Both have mass $m$ and two spin states; their charges are opposite ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]]). Their overlaps are positive and Lorentz invariant,
+> (the vacuum of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]], relativistic normalization as in [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) are eigenstates of $:\!\hat H\!:$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]) with eigenvalue $+E_{\mathbf p}$ and carry momentum $\mathbf p$ and spin label $s$ (for the antiparticle the label is its physical spin only with the two-spinors $\eta^s = \xi^{-s}$ of Lecture 12, [[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]: its wave-function spin is opposite, [[§C9.6 Physical Spin versus Wave-Function Spin|§C9.6]]): $\hat a^\dagger$ creates a **particle** (fermion; for the electron field an electron) and $\hat b^\dagger$ an **antiparticle** (antifermion; a positron), the $c$ standing for "conjugate". Both have mass $m$ and two spin states; their charges are opposite ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]]). Their overlaps are positive and Lorentz invariant,
 >
 > $$
 > \langle\mathbf p, r|\mathbf q, s\rangle = {}^c\langle\mathbf p, r|\mathbf q, s\rangle^c = 2E_{\mathbf p}(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q), \qquad {}^c\langle\mathbf p, r|\mathbf q, s\rangle = 0 ,
@@ -103,7 +103,7 @@ This is the spinor counterpart of [[§C2a.4 Particles and Relativistic Normaliza
 > \hat J_z\,\hat a^{s\dagger}_{\mathbf 0}|0\rangle = \sum_r\Bigl(\xi^{r\dagger}\tfrac{\sigma^3}{2}\xi^s\Bigr)\hat a^{r\dagger}_{\mathbf 0}|0\rangle, \qquad \hat J_z\,\hat b^{s\dagger}_{\mathbf 0}|0\rangle = -\sum_r\Bigl(\eta^{s\dagger}\tfrac{\sigma^3}{2}\eta^r\Bigr)\hat b^{r\dagger}_{\mathbf 0}|0\rangle .
 > $$
 >
-> For $\sigma^3$-eigenvectors $\xi^s, \eta^s \in \{(1, 0)^T, (0, 1)^T\}$: the fermion has $J_z = \pm\frac12$, the antifermion $J_z = \mp\frac12$, opposite to its two-spinor.
+> For $\sigma^3$-eigenvectors $\xi^s, \eta^s \in \{(1, 0)^T, (0, 1)^T\}$: the fermion has $J_z = \pm\frac12$, the antifermion $J_z = \mp\frac12$, opposite to its two-spinor. With the choice $\eta^s = \xi^{-s}$ ([[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]) the antifermion created by $\hat b^{s\dagger}_{\mathbf 0}$ has $J_z = \pm\frac12$, like the fermion ([[§C9.6 Physical Spin versus Wave-Function Spin#^thm-c9-6-3|Theorem §C9.6.3]]).
 >
 > *Source: PS §3.5, pp. 60–61, eqs. (3.111)–(3.112)*
 

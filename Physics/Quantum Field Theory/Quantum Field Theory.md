@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C9 (§C9.1, §C9.3–§C9.4 parity, taught; ★ §C9.2 scalar parity), CA written, CB skeleton (all statements in reading order; proofs being filled)
+status: level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C9 (§C9.1, §C9.3–§C9.4 parity, §C9.5–§C9.8 charge conjugation, physical spin, time reversal and CPT, taught; ★ §C9.2 scalar parity), CA written, CB skeleton (all statements in reading order; proofs being filled)
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -65,12 +65,12 @@ graph TD
   C3 -->|7| C5b
   C4 -->|1| C5b
   C5a -->|161| C5b
-  C1a -->|9| C9
+  C1a -->|12| C9
   C1b -->|6| C9
-  C2a -->|40| C9
-  C2b -->|2| C9
-  C5a -->|39| C9
-  C5b -->|17| C9
+  C2a -->|44| C9
+  C2b -->|4| C9
+  C5a -->|66| C9
+  C5b -->|64| C9
   C1a -->|2| CA
   C1b -->|3| CA
   C2a -->|7| CA
@@ -112,19 +112,20 @@ graph TD
   C5b -.->|9| C4
   CA -.->|150| C4
   C5b -.->|35| C5a
-  C9 -.->|1| C5a
+  C9 -.->|7| C5a
   CA -.->|7| C5a
   CB -.->|173| C5a
+  C9 -.->|4| C5b
   CA -.->|121| C5b
   CB -.->|5| C5b
-  CA -.->|26| C9
-  CB -.->|10| C9
+  CA -.->|35| C9
+  CB -.->|52| C9
 ```
 
 ## Planned
 Chapters without notes yet (Yu's numbering).
 
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
-C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (started: parity, §C9.1–§C9.4; charge conjugation, time reversal, CPT and Majorana fields pending) · C10 The S-matrix and correlation functions · C11 Path-integral quantization
+C6 Interactions of quantum fields · C7 Feynman diagrams · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.4, charge conjugation §C9.5, physical spin §C9.6, time reversal §C9.7, CPT §C9.8; Majorana fields pending) · C10 The S-matrix and correlation functions · C11 Path-integral quantization
 
 **Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.21 for "option 1", physics refers to mathematics; §CB.1 split on 2026-10-08, its SU(2)/SO(3) part is now §CB.2): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.3, Bargmann's theorem in §CB.19, Mackey and Wigner–Mackey in §CB.20★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C5a moved in batch B2 (2026-10-08; the Lorentz-algebra section split, now §CB.5–§CB.6; §C5a.0–§C5a.11 and §C9.4 with "The mathematics used here" blocks; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1), and those of C1a and C9 (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), and the dual space, multilinear tensors and their transformation law) moved in batch B3 (2026-10-08; "The mathematics used here" blocks in §C1a.3–§C1a.7, §C1b.1 and §C9.1; the preview folder of the option-1 demo removed): **option 1 is done**. §CB.21 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).

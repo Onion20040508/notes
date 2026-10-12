@@ -538,8 +538,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 > **Step 4** (orthonormal basis). $(\lambda\xi_{-\lambda})^\dagger(\lambda'\xi_{-\lambda'}) = \lambda\lambda'\delta_{\lambda\lambda'} = \delta_{\lambda\lambda'}$ ($\lambda^2 = 1$; [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|Theorem §C5a.10.11]]). Theorems §C5a.10.3, §C5a.10.4 and §C5a.10.8 then apply.
 >
 > **What the derivation shows**
-> - ⚑ By-product: the column $v_\lambda(p)$ has helicity $-\lambda/2$, yet it is labelled $\lambda$: the label is the helicity of the *antiparticle* that its coefficient creates, which is opposite to that of the column. This is shown only after quantization (Yu §5.5.4; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]); the factor $\lambda$ is a phase convention.
-> - With $-i\sigma^2 = \begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$ and [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|Theorem §C5a.10.11]]: $-i\sigma^2\xi_+^* = (-e^{-i\varphi}\sin\frac\theta2, \cos\frac\theta2) = \xi_-$ and $-i\sigma^2\xi_-^* = (-\cos\frac\theta2, -e^{i\varphi}\sin\frac\theta2) = -\xi_+$, i.e. $\lambda\xi_{-\lambda} = -i\sigma^2\xi_\lambda^*$: Yu's $v$ spinor is built from the conjugate-spin two-spinor, the pairing that charge conjugation will make systematic (QFT C9, planned).
+> - ⚑ By-product: the column $v_\lambda(p)$ has helicity $-\lambda/2$, yet it is labelled $\lambda$: the label is the helicity of the *antiparticle* that its coefficient creates, which is opposite to that of the column. This is shown only after quantization (Yu §5.5.4; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]; [[§C9.6 Physical Spin versus Wave-Function Spin#^thm-c9-6-3|Theorem §C9.6.3]]); the factor $\lambda$ is a phase convention.
+> - With $-i\sigma^2 = \begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$ and [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|Theorem §C5a.10.11]]: $-i\sigma^2\xi_+^* = (-e^{-i\varphi}\sin\frac\theta2, \cos\frac\theta2) = \xi_-$ and $-i\sigma^2\xi_-^* = (-\cos\frac\theta2, -e^{i\varphi}\sin\frac\theta2) = -\xi_+$, i.e. $\lambda\xi_{-\lambda} = -i\sigma^2\xi_\lambda^*$: Yu's $v$ spinor is built from the conjugate-spin two-spinor, the pairing that charge conjugation makes systematic: $\lambda\xi_{-\lambda} = \xi^{-s}$ for $\lambda = \pm \leftrightarrow s = 1, 2$, the course's choice from Lecture 12 on ([[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]; [[§C9.6 Physical Spin versus Wave-Function Spin#^rem-c9-6-6|§C9.6, Remark: The choice η^s = ξ^{−s} in these notes, Peskin–Schroeder and Yu]]).
 
 ^der-c5a-10-13
 
@@ -599,7 +599,7 @@ In the massless limit helicity becomes chirality, the eigenvalue of $\gamma^5$, 
 ^rem-c5a-10-4
 
 > [!remark] Remark: The solutions at a glance
-> For the Dirac equation $(i\slashed{\partial} - m)\psi = 0$, with $p^0 = +E_{\mathbf p}$ in both columns and orthonormal bases $\xi^s$, $\eta^s$:
+> For the Dirac equation $(i\slashed{\partial} - m)\psi = 0$, with $p^0 = +E_{\mathbf p}$ in both columns and orthonormal bases $\xi^s$, $\eta^s$ (for example $\xi^{1,2} = (1, 0)^{\mathsf T}, (0, 1)^{\mathsf T}$ and, from Lecture 12 on, $\eta^s = \xi^{-s}$, i.e. $\eta^{1,2} = (0, 1)^{\mathsf T}, (-1, 0)^{\mathsf T}$, [[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]):
 >
 > | | positive frequency | negative frequency |
 > |---|---|---|

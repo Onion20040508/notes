@@ -425,7 +425,7 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 > **6. Assemble.** Conjugating step 4 by $e^{-i\pi J^{(j_+)}_2}\otimes e^{-i\pi J^{(j_-)}_2}$ turns it into $\bar{\mathbf J}_+ = \mathbb 1\otimes\mathbf J^{(j_-)}$, $\bar{\mathbf J}_- = \mathbf J^{(j_+)}\otimes\mathbb 1$; the swap of the two factors (as in Theorem §CB.17.12, step 3) gives $(j_-, j_+)$. ⚑ By-product: for $j = \frac12$, $e^{-i\pi\sigma_2/2} = -i\sigma_2$, so $\sigma_2\psi^{\ast}$ transforms like the other Weyl spinor.
 >
 > **What the derivation shows**
-> - In the course: Peskin–Schroeder's $\sigma^2\psi_L^{\ast}$ (eq. (3.38); [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]]; QFT C9, planned) (moved here from the By-product of step 6, CB ordering pass).
+> - In the course: Peskin–Schroeder's $\sigma^2\psi_L^{\ast}$ (eq. (3.38); [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]]; charge conjugation, [[§C9.5 Charge Conjugation#^thm-c9-5-3|Theorem §C9.5.3]]) (moved here from the By-product of step 6, CB ordering pass).
 > - In the factorization of Theorem §CB.6.3, conjugation turns the angle $\boldsymbol\theta - i\boldsymbol\eta$ into $\boldsymbol\theta + i\boldsymbol\eta$: it exchanges the copies because the two angles are conjugates.
 > - The operator $e^{-i\pi J_2}$ is the one that, followed by complex conjugation, is time reversal in Quantum Mechanics ([[§C8.3★ Time Reversal#^thm-c8-3-6|QM Theorem §C8.3.6]]): both use that only $J_2$ is imaginary in the standard basis.
 > - A real field (a real four-vector, a real $F^{\mu\nu}$) must contain, with $(j_+, j_-)$, also $(j_-, j_+)$ or be of the form $(j, j)$.

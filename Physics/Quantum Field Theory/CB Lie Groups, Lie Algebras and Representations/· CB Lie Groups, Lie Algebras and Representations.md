@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (47), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (3), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (10)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (52)
 
 ## Sections
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3), restatements of REL §B1.2, §B2.2 and QM §B6.1 (CB ordering pass); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
@@ -240,6 +240,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-12|§CB.19.12]] Bargmann's Theorem
 - [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-14|§CB.19.14]] The Square of an Antiunitary Involution Is ±1
 - [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-15|§CB.19.15]] An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
+- [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-16|§CB.19.16]] Conjugation by an Antiunitary Operator
 - [[§CB.20★ The Poincaré Group and Induced Representations#^thm-cb-20-2|§CB.20.2]] The Semidirect Product Is a Group with N Normal
 - [[§CB.20★ The Poincaré Group and Induced Representations#^thm-cb-20-5|§CB.20.5]] The Poincaré Group as a Matrix Lie Group, and Its Lie Algebra
 - [[§CB.20★ The Poincaré Group and Induced Representations#^thm-cb-20-8|§CB.20.8]] The Little Groups in SL(2,ℂ)

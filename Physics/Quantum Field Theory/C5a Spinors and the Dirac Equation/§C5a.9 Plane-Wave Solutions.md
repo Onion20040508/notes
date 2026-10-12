@@ -261,7 +261,7 @@ Theorem §C5a.9.4 uses the spin matrices built from the spinor generators and th
 > \xi^{r\dagger}\xi^s = \delta^{rs}, \qquad \sum_{s=1,2}\xi^s\xi^{s\dagger} = \mathbb 1_2 ,
 > $$
 >
-> and the same for $\eta^s$. The standard choice is spin along $\pm z$, $\xi^1 = \xi_\uparrow = (1, 0)^{\mathsf T}$, $\xi^2 = \xi_\downarrow = (0, 1)^{\mathsf T}$; spin along any other axis (e.g. along $\mathbf p$: [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-2|Def. §C5a.10.2]]) is equally good. Results below use only orthonormality and completeness.
+> and the same for $\eta^s$. The standard choice is spin along $\pm z$, $\xi^1 = \xi_\uparrow = (1, 0)^{\mathsf T}$, $\xi^2 = \xi_\downarrow = (0, 1)^{\mathsf T}$; spin along any other axis (e.g. along $\mathbf p$: [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-2|Def. §C5a.10.2]]) is equally good. Results below use only orthonormality and completeness. Which basis $\eta^s$ the $v$'s use is fixed in Lecture 12: $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$ ([[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]), so that $s$ labels the physical spin of the antiparticle ([[§C9.6 Physical Spin versus Wave-Function Spin|§C9.6]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.2 (Definition "The two-spinor ξ and the spin basis"), §9.4 (completeness of the $\xi^s$) · PHY 513 Lecture 9, Part A, Step 3; Part B ("Completeness for Dirac Spinors") · PS §3.3, pp. 47–49*
 
@@ -720,7 +720,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 ^rem-c5a-9-5
 
 > [!theorem] Theorem §C5a.9.11: The Negative-Frequency Spinors v(p)
-> For every $\mathbf p$ and $s = 1, 2$, with a spin basis $\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]),
+> For every $\mathbf p$ and $s = 1, 2$, with a spin basis $\eta^s$ ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]; from Lecture 12 on $\eta^s = \xi^{-s}$, [[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]),
 >
 > $$
 > v^s(p) = \begin{pmatrix}\sqrt{p\cdot\sigma}\;\eta^s\\ -\sqrt{p\cdot\bar\sigma}\;\eta^s\end{pmatrix}, \qquad \psi(x) = v^s(p)\,e^{+ip\cdot x}\ \text{ solves the Dirac equation},\quad (\slashed{p} + m)\,v^s(p) = 0 .
@@ -760,7 +760,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 > **What the derivation shows**
 > - Every difference between $v$ and $u$ is one sign, traced to the exponent; the boost matrix is the same.
 > - With $u^1, u^2$ (eigenvalue $+m$) the $v^1, v^2$ (eigenvalue $-m$) complete a basis of $\mathbb C^4$ for $m > 0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]], 2); the completeness relation that expresses this is [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-10|Theorem §C5a.10.10]].
-> - Which $\eta^s$ goes with which spin state of the antiparticle is decided at quantization (PS §3.5 finds that the spin assignment is reversed for the antiparticle, eq. (3.112); Yu chooses $\eta = \lambda\xi_{-\lambda}$ in the helicity basis, [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-13|Theorem §C5a.10.13]]; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]).
+> - Which $\eta^s$ goes with which spin state of the antiparticle is decided at quantization (PS §3.5 finds that the spin assignment is reversed for the antiparticle, eq. (3.112); Yu chooses $\eta = \lambda\xi_{-\lambda}$ in the helicity basis, [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-13|Theorem §C5a.10.13]]; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]). Lecture 12 fixes $\eta^s = \xi^{-s}$ ([[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]), the same choice as Peskin–Schroeder's (3.136) and Yu's, with which $\hat b^{s\dagger}$ creates an antiparticle of physical spin $s$ ([[§C9.6 Physical Spin versus Wave-Function Spin#^thm-c9-6-3|Theorem §C9.6.3]]).
 > - Used next: the Dirac conjugate $\bar v^s(p)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]).
 
 ^der-c5a-9-11
@@ -879,7 +879,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 *Uses:* [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]]
 
 > [!caution] Caution: η means two things
-> The lecture, the slides and Peskin–Schroeder use $\eta$ both for the rapidity and for the two-spinor in $v$. Here $\eta^s$, with a spin index, is always the two-spinor; the rapidity never carries an index.
+> The lecture, the slides and Peskin–Schroeder use $\eta$ both for the rapidity and for the two-spinor in $v$. Here $\eta^s$, with a spin index, is always the two-spinor; the rapidity never carries an index. In C9 a third use appears, the parity phases $\eta_a$, $\eta_b$ ([[§C9.3 Parity on States, Spinors and the Dirac Field#^cau-c9-3-2|§C9.3, Caution: η means three things]]). The two-spinor itself is fixed from Lecture 12 on as $\eta^s = \xi^{-s}$ ([[§C9.5 Charge Conjugation#^def-c9-5-5|Def. §C9.5.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Caution "η means two things")*
 

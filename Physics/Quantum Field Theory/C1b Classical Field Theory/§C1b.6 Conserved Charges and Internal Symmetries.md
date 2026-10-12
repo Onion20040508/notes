@@ -107,7 +107,7 @@ What does a conserved current conserve, how unique is it, and what do the intern
 > - The current is conserved **on solutions**; off shell, $\partial_\mu j^\mu$ is minus the Euler–Lagrange expression times $\Delta\phi$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]).
 > - The charge is conserved **subject to boundary conditions** ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]]).
 > - The current is **not unique**: improvement terms change it without changing $\partial_\mu j^\mu$ or $Q$ ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-2|Theorem §C1b.6.2]]). Likewise $\delta\mathcal L = 0$ says only $\partial_\mu\mathcal J^\mu = 0$; taking $\mathcal J = 0$ is a choice, the natural one because $\mathcal J$ is a name for whatever makes $\delta\mathcal L$ a total derivative. Any other admissible $\mathcal J$ shifts $j^\mu$ by an identically conserved vector and gives the same conservation law.
-> - The theorem needs a Lagrangian and a continuous family; discrete symmetries (parity, charge conjugation) give no current (QFT C9, planned).
+> - The theorem needs a Lagrangian and a continuous family; discrete symmetries (parity, charge conjugation) give no current ([[§C9.3 Parity on States, Spinors and the Dirac Field|§C9.3]], [[§C9.5 Charge Conjugation|§C9.5]]).
 
 ^cau-c1b-6-2
 
