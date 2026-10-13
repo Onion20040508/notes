@@ -4,7 +4,7 @@ subject: "[[Group Theory]]"
 problem_set: 5
 tags: [group-theory, math493]
 ---
-← [[493 Problem Set 4]] · ↑ [[Group Theory]]
+← [[493 Problem Set 4]] · ↑ [[Group Theory]] · [[493 Problem Set 6]] →
 
 # Problem Set 5
 

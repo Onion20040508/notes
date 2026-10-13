@@ -65,4 +65,4 @@ The determinant is the model character of $GL_n(k)$, and a character is the same
 
 ![[§47 Commutators#^ex-47-2]]
 
-*$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§51 p-Groups and Sylow Subgroups#^prop-51-3|Chapter 10]] → (where $GL_n(\mathbb{F}_p)$ appears once) · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
+*$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Chapter 10]] → (where $GL_n(\mathbb{F}_p)$ appears once) · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]

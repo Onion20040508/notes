@@ -193,6 +193,46 @@ So $K \cong U_8$ ([[§16 Isomorphisms#^prop-16-8|Proposition §16.8]]): the Klei
 ![[m493-36-2.svg]]
 *The normal subgroups of $S_4$ as unions of conjugacy classes (class sizes in parentheses): $K$ (red) is $\{e\}$ together with the class of type $2^2$, and $A_4$ (blue) adds the eight $3$-cycles. Apart from $\{e\}$ and $S_4$, no other union of classes containing $e$ has a size dividing $24$.*
 
+> [!example] Example §39.4: Normality Is Not Transitive
+> Let $G_1 = \{e, (1\,2)(3\,4)\}$. Then
+>
+> $$
+> G_1 \trianglelefteq K \trianglelefteq S_4, \qquad \text{but } G_1 \text{ is not normal in } S_4 .
+> $$
+>
+> So $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$.
+>
+> *Source: PS 6.1*
+
+^ex-39-4
+
+> [!proof]+ Proof
+> Products of permutations are composed from right to left.
+>
+> *$G_1$ is a subgroup of $K$.* $G_1 \subseteq K$ (Definition [[§39 Sources of Normal Subgroups#^def-39-1|§39.1]]), it contains $e$, and $\big((1\,2)(3\,4)\big)^2 = e$ because the disjoint transpositions $(1\,2)$ and $(3\,4)$ commute (Lemma [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]]) and each squares to $e$; so $G_1$ is closed under products and inverses.
+>
+> *$G_1 \trianglelefteq K$.* $K$ is abelian (Proposition [[§39 Sources of Normal Subgroups#^prop-39-8|§39.8]]), and every subgroup of an abelian group is normal (Proposition [[§38 Normal Subgroups#^prop-38-1|§38.1]](1)). Directly: conjugation relabels the entries of each cycle (Proposition [[§12 Multiplying and Conjugating Cycles#^prop-12-1|§12.1]]), so for $\sigma \in S_4$
+>
+> $$
+> \sigma\,(1\,2)(3\,4)\,\sigma^{-1} = \sigma(1\,2)\sigma^{-1}\cdot\sigma(3\,4)\sigma^{-1} = \big(\sigma(1)\ \sigma(2)\big)\big(\sigma(3)\ \sigma(4)\big);
+> $$
+>
+> for $\sigma = (1\,3)(2\,4)$ this is $(3\,4)(1\,2) = (1\,2)(3\,4)$, for $\sigma = (1\,4)(2\,3)$ it is $(4\,3)(2\,1) = (1\,2)(3\,4)$, and for $\sigma \in \{e, (1\,2)(3\,4)\}$ it is $(1\,2)(3\,4)$ because $\sigma$ commutes with it.
+>
+> *$K \trianglelefteq S_4$.* Example [[§39 Sources of Normal Subgroups#^ex-39-3|§39.3]].
+>
+> *$G_1$ is not normal in $S_4$.* For $\sigma = (1\,2\,3\,4)$, so $\sigma(1) = 2$, $\sigma(2) = 3$, $\sigma(3) = 4$, $\sigma(4) = 1$, the same relabelling gives
+>
+> $$
+> \sigma\,(1\,2)(3\,4)\,\sigma^{-1} = (2\,3)(4\,1) = (1\,4)(2\,3) \notin G_1 .
+> $$
+
+^pf-ex-39-4
+
+*Uses:* [[§39 Sources of Normal Subgroups#^def-39-1|Def. §39.1]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§39 Sources of Normal Subgroups#^prop-39-8|§39.8]], [[§38 Normal Subgroups#^prop-38-1|§38.1]], [[§12 Multiplying and Conjugating Cycles#^prop-12-1|§12.1]], [[§39 Sources of Normal Subgroups#^ex-39-3|Ex. §39.3]]
+
+*(Not from the problem set.)* Any of the three subgroups of order $2$ of $K$ would do. The three products of two disjoint transpositions have the same cycle type, so they form a single conjugacy class of $S_4$ (Theorem [[§33 Conjugacy Classes#^thm-33-3|§33.3]]); a subgroup $\{e, \tau\}$ with $\tau$ one of them is not a union of conjugacy classes, hence not normal in $S_4$ (Proposition [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]]). $K$ itself is normal precisely because it is that whole class together with $e$.
+
 > [!theorem] Proposition §39.9: Normal Subgroups of $GL_2(\mathbb{R})$
 > In $GL_2(\mathbb{R})$:
 > 1. the subgroup of invertible diagonal matrices is *not* normal;

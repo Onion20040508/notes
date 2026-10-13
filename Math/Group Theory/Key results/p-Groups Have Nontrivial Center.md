@@ -18,7 +18,7 @@ tags: [group-theory, hub]
 - [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]
 
 ## Used in (Group Theory)
-- (not cited later in the course)
+- [[§51 p-Groups and Sylow Subgroups#^thm-51-7|Theorem §51.7: Groups of Order p²]]
 
 ## Connections
 - **Proof idea.** In the [[Class Equation]], every class has size dividing pᵏ ([[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]]), so the non-central ones have size divisible by p. Hence p divides |Z(G)| ([[§35 The Center#^cor-35-4|§35.4]]).

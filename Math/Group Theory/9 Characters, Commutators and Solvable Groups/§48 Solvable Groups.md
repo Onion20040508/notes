@@ -21,7 +21,7 @@ tags: [group-theory, math493]
 ^def-48-1
 
 > [!remark] Remark: Normal in the Next Term Only
-> Each $G_{j-1}$ is required to be [[§38 Normal Subgroups#^def-38-1|normal]] in $G_j$, not in $G$. For example, in the chain for $S_4$ [[§48 Solvable Groups#^prop-48-1|below]], $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (PS 6.1; an example will be added once Problem Set 6 is submitted). Every [[§1 The Definition of a Group#^def-1-2|abelian]] group is [[§48 Solvable Groups#^def-48-1|solvable]], via the chain $\{e\} \trianglelefteq G$.
+> Each $G_{j-1}$ is required to be [[§38 Normal Subgroups#^def-38-1|normal]] in $G_j$, not in $G$. For example, in the chain for $S_4$ [[§48 Solvable Groups#^prop-48-1|below]], $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (Example [[§39 Sources of Normal Subgroups#^ex-39-4|§39.4]], PS 6.1). Every [[§1 The Definition of a Group#^def-1-2|abelian]] group is [[§48 Solvable Groups#^def-48-1|solvable]], via the chain $\{e\} \trianglelefteq G$.
 
 ^rem-48-1
 

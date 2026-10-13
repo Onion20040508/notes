@@ -10,7 +10,7 @@ tags: [group-theory, math493]
 *Reference: Worksheet 10. Throughout, $p$ is a prime and the groups are finite.*
 
 > [!remark] Remark: The Strategy
-> Every finite group $G$ is a subgroup of some $GL_n(\mathbb{F}_p)$ (Every Finite Group Is a Matrix Group, [[§25 Actions#^cor-25-6|Corollary §25.6]]), and $\Gamma = GL_n(\mathbb{F}_p)$ has an explicit Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, [[§51 p-Groups and Sylow Subgroups#^prop-51-3|Proposition §51.3]]). The plan is to transfer Sylow subgroups from the large group $\Gamma$ down to its subgroup $G$, by letting $G$ act on $\Gamma/\Pi$ (WS 10.3, [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]). The lecture sketched the key step in the case where $G$ is itself a $p$-group: the next lemma.
+> Every finite group $G$ is a subgroup of some $GL_n(\mathbb{F}_p)$ (Every Finite Group Is a Matrix Group, [[§25 Actions#^cor-25-6|Corollary §25.6]]), and $\Gamma = GL_n(\mathbb{F}_p)$ has an explicit Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]). The plan is to transfer Sylow subgroups from the large group $\Gamma$ down to its subgroup $G$, by letting $G$ act on $\Gamma/\Pi$ (WS 10.3, [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]). The lecture sketched the key step in the case where $G$ is itself a $p$-group: the next lemma.
 >
 > *Source: lecture 10/12*
 
@@ -38,11 +38,11 @@ tags: [group-theory, math493]
 ^cor-52-2
 
 > [!proof]+ Proof
-> By WS 10.2 ([[§51 p-Groups and Sylow Subgroups#^prop-51-3|Proposition §51.3]]), $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. By [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]] with $\Gamma = GL_n(\mathbb{F}_p)$ and $\Pi = P$, $Q \subseteq \gamma P \gamma^{-1}$ for some $\gamma$; conjugating by $\gamma^{-1}$, $\gamma^{-1} Q \gamma \subseteq \gamma^{-1}(\gamma P \gamma^{-1})\gamma = P$.
+> By WS 10.2 ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]), $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. By [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]] with $\Gamma = GL_n(\mathbb{F}_p)$ and $\Pi = P$, $Q \subseteq \gamma P \gamma^{-1}$ for some $\gamma$; conjugating by $\gamma^{-1}$, $\gamma^{-1} Q \gamma \subseteq \gamma^{-1}(\gamma P \gamma^{-1})\gamma = P$.
 
 ^pf-52-2
 
-*Uses:* [[§51 p-Groups and Sylow Subgroups#^prop-51-3|§51.3]], [[§52 The Sylow Theorems#^lem-52-1|§52.1]]
+*Uses:* [[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]], [[§52 The Sylow Theorems#^lem-52-1|§52.1]]
 
 > [!remark] Remark: A Surprising Consequence
 > The corollary is not obvious from linear algebra. For instance, any subgroup with $16$ elements of $GL_{10^6}(\mathbb{F}_2)$, however its matrices look, becomes a group of upper triangular matrices after a single change of basis. The proof gives no formula for the change of basis; it comes from a counting argument.

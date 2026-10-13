@@ -19,6 +19,7 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|Lemma §21.6: Adjacent Transpositions from (1 j)'s]]
 - [[§33 Conjugacy Classes#^lem-33-1|Lemma §33.1: Conjugation Relabels the Entries]]
+- [[§39 Sources of Normal Subgroups#^ex-39-4|Example §39.4: Normality Is Not Transitive]]
 - [[§43 Simple Groups#^lem-43-8|Lemma §43.8: 3-Cycles Are Conjugate in Aₙ for n ≥ 5]]
 - [[§43 Simple Groups#^thm-43-9|Theorem §43.9: Aₙ Is Simple for n ≥ 5]]
 

@@ -26,6 +26,7 @@ tags: [group-theory, hub]
 - [[§40 Quotient Groups#^thm-40-1|Theorem §40.1: G/N Is a Group]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Corollary §41.8: Index of an Intersection, Normal Case]]
 - [[§43 Simple Groups#^prop-43-6|Proposition §43.6: A_5 Is Simple]]
+- [[§51 p-Groups and Sylow Subgroups#^thm-51-7|Theorem §51.7: Groups of Order p²]]
 - [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1: p-Subgroups Lie in a Conjugate of a Sylow Subgroup]]
 
 ## Connections

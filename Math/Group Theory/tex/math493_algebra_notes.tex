@@ -3923,6 +3923,29 @@ So $K \cong U_8$ (Proposition~\ref{prop:u8-u7}): the Klein four-group met in Cha
 (For $S_3$, compare the lattice in Figure~\ref{fig:lattice-s3}.) In the language of Chapter~\ref{ch:conjugacy}: $G$ acts on itself by conjugation, the orbits are the conjugacy classes, and a subgroup is normal precisely when it is a union of orbits --- stable under the action. This gives a quick normality test once the conjugacy classes are known. In $S_3$ the classes are $\{e\}$, the three transpositions, and the two $3$-cycles (\ref{sec:conjugation-action}), so a normal subgroup must be a union of these containing $e$ with order dividing $6$: the only options are $\{e\}$, $\{e, (1\,2\,3), (1\,3\,2)\}$, and $S_3$, confirming that $\{e, (1\,2)\}$ is not normal. In $S_4$, with class sizes $1, 6, 3, 8, 6$, a normal subgroup has order a sum of class sizes including the $1$ and dividing $24$; this singles out $\{e\}$, $1 + 3 = 4$ (the Klein four-group $K$ of Definition~\ref{def:klein-four-group}, $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$), $1 + 3 + 8 = 12$ ($A_4$), and $S_4$, and each is indeed a normal subgroup.
 \end{exbox}
 
+\begin{exbox}[{Normality Is Not Transitive (PS 6.1)}]\label{ex:normality-not-transitive}
+Let $G_1 = \{e, (1\,2)(3\,4)\}$. Then
+\[ G_1 \trianglelefteq K \trianglelefteq S_4, \qquad \text{but } G_1 \text{ is not normal in } S_4 . \]
+So $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$.
+\end{exbox}
+
+\begin{proof}
+Products of permutations are composed from right to left.
+
+\emph{$G_1$ is a subgroup of $K$.} $G_1 \subseteq K$ (Definition~\ref{def:klein-four-group}), it contains $e$, and $\big((1\,2)(3\,4)\big)^2 = e$ because the disjoint transpositions $(1\,2)$ and $(3\,4)$ commute (Lemma~\ref{lem:disjoint-cycles-commute}) and each squares to $e$; so $G_1$ is closed under products and inverses.
+
+\emph{$G_1 \trianglelefteq K$.} $K$ is abelian (Proposition~\ref{prop:klein-four-group}), and every subgroup of an abelian group is normal (Proposition~\ref{prop:first-examples-normal-subgroups}(1)). Directly: conjugation relabels the entries of each cycle (Proposition~\ref{prop:conjugation-relabels-cycle}), so for $\sigma \in S_4$
+\[ \sigma\,(1\,2)(3\,4)\,\sigma^{-1} = \sigma(1\,2)\sigma^{-1}\cdot\sigma(3\,4)\sigma^{-1} = \big(\sigma(1)\ \sigma(2)\big)\big(\sigma(3)\ \sigma(4)\big); \]
+for $\sigma = (1\,3)(2\,4)$ this is $(3\,4)(1\,2) = (1\,2)(3\,4)$, for $\sigma = (1\,4)(2\,3)$ it is $(4\,3)(2\,1) = (1\,2)(3\,4)$, and for $\sigma \in \{e, (1\,2)(3\,4)\}$ it is $(1\,2)(3\,4)$ because $\sigma$ commutes with it.
+
+\emph{$K \trianglelefteq S_4$.} Example~\ref{ex:normal-subgroups-s3-s4}.
+
+\emph{$G_1$ is not normal in $S_4$.} For $\sigma = (1\,2\,3\,4)$, so $\sigma(1) = 2$, $\sigma(2) = 3$, $\sigma(3) = 4$, $\sigma(4) = 1$, the same relabelling gives
+\[ \sigma\,(1\,2)(3\,4)\,\sigma^{-1} = (2\,3)(4\,1) = (1\,4)(2\,3) \notin G_1 . \qedhere \]
+\end{proof}
+
+\textit{(Not from the problem set.)} Any of the three subgroups of order $2$ of $K$ would do. The three products of two disjoint transpositions have the same cycle type, so they form a single conjugacy class of $S_4$ (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}); a subgroup $\{e, \tau\}$ with $\tau$ one of them is not a union of conjugacy classes, hence not normal in $S_4$ (Proposition~\ref{prop:normal-subgroups-unions-conjugacy-classes}). $K$ itself is normal precisely because it is that whole class together with $e$.
+
 \begin{propbox}[{Normal Subgroups of $GL_2(\mathbb{R})$ (WS 6.3)}]\label{prop:normal-subgroups-gl2-r}
 In $GL_2(\mathbb{R})$:
 \begin{enumerate}
@@ -4286,6 +4309,20 @@ An abelian group $G$ is simple if and only if $G \cong \mathbb{Z}/p\mathbb{Z}$ f
 
 ($\Rightarrow$) Let $G$ be abelian and simple. As $G \neq \{e\}$, pick $g \neq e$. The subgroup $\langle g \rangle$ is nontrivial and, $G$ being abelian, normal; by simplicity $\langle g \rangle = G$, so $G$ is cyclic. If $G$ were infinite cyclic, $G \cong \mathbb{Z}$, which is not simple since $2\mathbb{Z}$ is a proper nontrivial (normal) subgroup. So $G$ is cyclic of finite order $n \geq 2$ (\ref{sec:cyclic}). Suppose $n = ab$ with $1 < a < n$. Then $(g^a)^b = g^n = e$, while for $0 < k < b$ we have $0 < ak < n$, so $(g^a)^k \neq e$; thus $g^a$ has order $b$, and $\langle g^a \rangle$ is a subgroup with $1 < b < n$ elements --- proper, nontrivial, and normal, contradicting simplicity. Hence $n$ is prime, and $G \cong \mathbb{Z}/n\mathbb{Z}$.
 \end{proof}
+
+\begin{proof}[Second proof of ($\Rightarrow$) (PS 6.2)]
+Let $A$ be a nontrivial abelian group. Every subgroup of $A$ is normal (Proposition~\ref{prop:first-examples-normal-subgroups}(1)), so $A$ is simple exactly when its only subgroups are $\{e\}$ and $A$ (Definition~\ref{def:simple-group}). Fix $g \in A$ with $g \neq e$. Recall that if $g$ has finite order $c$, then $g^N = e$ if and only if $c \mid N$, and $|\langle g \rangle| = c$ (Proposition~\ref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}(2),(3)).
+
+\emph{(1) If $\langle g \rangle \neq A$, then $A$ is not simple.} $\langle g \rangle$ is a subgroup (Proposition~\ref{prop:gen-g-subgroup}), nontrivial because it contains $g \neq e$, proper by assumption, and normal. (The problem set writes the hypothesis as $\langle g \rangle g \neq A$; since $g \in \langle g \rangle$, the coset $\langle g \rangle g$ is $\langle g \rangle$ itself.)
+
+\emph{(2) If $g$ has infinite order, then $A$ is not simple.} Let $H = \langle g^2 \rangle$. It is nontrivial: $g^2 \neq e$, since $g$ has infinite order. It is proper: if $g \in H$, then $g = (g^2)^n = g^{2n}$ for some $n \in \mathbb{Z}$, so $g^{2n-1} = e$ with $2n - 1 \neq 0$ (it is odd), contradicting infinite order. So $H$ is a proper nontrivial normal subgroup.
+
+\emph{(3) If $g$ has finite composite order $c$, then $A$ is not simple.} Let $p$ be a prime divisor of $c$, so $1 < p < c$, and let $H = \langle g^p \rangle$. It is nontrivial: $c \nmid p$ since $0 < p < c$, so $g^p \neq e$. It is proper: if $g \in H$, then $g = g^{pn}$ for some $n \in \mathbb{Z}$, so $g^{pn-1} = e$ and $c \mid pn - 1$; as $p \mid c$, also $p \mid pn - 1$, and with $p \mid pn$ this gives $p \mid 1$, which is impossible.
+
+\emph{Conclusion.} If $A$ is simple, then by (2) $g$ has finite order $c$; $c \neq 1$ since $g \neq e$; by (3) $c$ is not composite, so $c = p$ is prime; and by (1) $A = \langle g \rangle \cong \mathbb{Z}/p\mathbb{Z}$ (Proposition~\ref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}(3)).
+\end{proof}
+
+The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle g^p \rangle$, which the first proof obtains from $\mathbb{Z} \supsetneq 2\mathbb{Z}$ and from a factorization $n = ab$.
 
 \begin{corbox}[{$S_n$ Is Not Simple for $n \geq 3$}]\label{cor:sn-not-simple-n-ge-3}
 For $n \geq 3$, $A_n$ is a proper nontrivial normal subgroup of $S_n$; hence $S_n$ is not simple.
@@ -4893,7 +4930,7 @@ in which each $G_{j-1}$ is normal in $G_j$ and each quotient $G_j/G_{j-1}$ is ab
 \end{defbox}
 
 \begin{rembox}[{Normal in the Next Term Only}]\label{rem:normal-in-next-term}
-Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ below, $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (PS 6.1; an example will be added once Problem Set 6 is submitted). Every abelian group is solvable, via the chain $\{e\} \trianglelefteq G$.
+Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ below, $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (Example~\ref{ex:normality-not-transitive}, PS 6.1). Every abelian group is solvable, via the chain $\{e\} \trianglelefteq G$.
 \end{rembox}
 
 \begin{propbox}[{$S_3$ and $S_4$ Are Solvable (WS 9.1)}]\label{prop:s3-s4-solvable}
@@ -5083,7 +5120,7 @@ Worksheet 10 begins by restating the definition of a $p$-group, already met with
 \textbf{Recall: Definition~\ref{def:p-group} ($p$-Group).} For a prime $p$, a \textbf{$p$-group} is a group of order $p^k$ for some $k \geq 0$.
 \end{quote}
 
-Nontrivial $p$-groups have nontrivial center (Theorem~\ref{thm:groups-prime-power-order-have-nontrivial-center}, PS 3.5).
+Nontrivial $p$-groups have nontrivial center (Theorem~\ref{thm:groups-prime-power-order-have-nontrivial-center}, PS 3.5); for groups of order $p^2$ this already decides the group (\ref{sub:order-p-squared}, PS 6.3).
 
 \begin{defbox}[{$p$-Subgroup (WS 10)}]\label{def:p-subgroup}
 For a group $G$, a \textbf{$p$-subgroup} of $G$ is a subgroup of $G$ which is a $p$-group.
@@ -5109,14 +5146,50 @@ A \textbf{Sylow $p$-subgroup} of $G$ is a subgroup of $G$ of order $p^k$.
 The numbers of Sylow subgroups are $3, 1$ for $S_3$ and $3, 4$ for $S_4$, each $\equiv 1 \pmod p$, as the Third Sylow Theorem (Theorem~\ref{thm:sylow-third}) predicts.
 \end{exbox}
 
+\textit{(PS 6.4.)} The order of $GL_n(\mathbb{F}_p)$ is found by counting bases of $\mathbb{F}_p^n$: an invertible matrix is the same as an ordered list of $n$ linearly independent columns.
+
+\begin{lembox}[{Invertible Matrices Have Independent Columns (not from class)}]\label{lem:invertible-iff-columns-independent}
+Let $k$ be a field and $M \in \operatorname{Mat}_n(k)$ with columns $\vec m_1, \ldots, \vec m_n$. Then $M \in GL_n(k)$ if and only if $(\vec m_1, \ldots, \vec m_n)$ is linearly independent.
+\end{lembox}
+
+\begin{proof}
+For $\vec c = (c_1, \ldots, c_n) \in k^n$, $M\vec c = \sum_{i=1}^n c_i \vec m_i$. So the columns are linearly independent if and only if $M\vec c = \vec 0$ forces $\vec c = \vec 0$, that is, if and only if the linear map $\vec c \mapsto M\vec c$ of $k^n$ is injective. If $M$ is invertible, this map has the inverse $\vec c \mapsto M^{-1}\vec c$, so it is injective. Conversely, if it is injective, its kernel is $0$, so by rank--nullity its image has dimension $n$ and is all of $k^n$; the map is then a bijective linear map, its inverse is linear, and the matrix $N$ of the inverse satisfies $MN = NM = I_n$, so $M \in GL_n(k)$ (Definition~\ref{def:general-linear-groups-gln-k}).
+\end{proof}
+
+\begin{lembox}[{Counting Linearly Independent Tuples (PS 6.4(1))}]\label{lem:count-independent-tuples}
+For $1 \leq k$, the number of linearly independent $k$-tuples $(\vec v_1, \ldots, \vec v_k)$ of vectors in $\mathbb{F}_p^n$ is
+\[ (p^n - 1)(p^n - p) \cdots (p^n - p^{k-1}) . \]
+\end{lembox}
+
+\begin{proof}
+By induction on $k$. Throughout, $|\mathbb{F}_p^n| = p^n$: each of the $n$ entries is one of the $p$ elements of $\mathbb{F}_p$.
+
+\emph{Base case $k = 1$.} $(\vec v_1)$ is linearly independent if and only if $\vec v_1 \neq \vec 0$: if $\vec v_1 = \vec 0$, then $1 \cdot \vec v_1 = \vec 0$ is a nontrivial relation; if $\vec v_1 \neq \vec 0$ and $c\vec v_1 = \vec 0$ with $c \neq 0$, then $\vec v_1 = c^{-1}(c\vec v_1) = \vec 0$, a contradiction. So there are $p^n - 1$ such $1$-tuples.
+
+\emph{Inductive step.} Assume the count for $k$. If $(\vec v_1, \ldots, \vec v_{k+1})$ is linearly independent, so is $(\vec v_1, \ldots, \vec v_k)$ (a relation among the first $k$ is one among all $k+1$ with coefficient $0$ on $\vec v_{k+1}$). So it suffices to show: \emph{for each linearly independent $(\vec v_1, \ldots, \vec v_k)$ there are exactly $p^n - p^k$ vectors $\vec v_{k+1}$ with $(\vec v_1, \ldots, \vec v_{k+1})$ linearly independent}; then the count for $k+1$ is the count for $k$ times $p^n - p^k$. Let $S = \operatorname{span}(\vec v_1, \ldots, \vec v_k)$.
+\begin{enumerate}
+    \item \emph{$(\vec v_1, \ldots, \vec v_{k+1})$ is dependent if and only if $\vec v_{k+1} \in S$.} If $\vec v_{k+1} = \sum_i c_i\vec v_i$, then $\sum_i c_i \vec v_i - 1\cdot\vec v_{k+1} = \vec 0$ is a nontrivial relation. Conversely, let $\sum_i c_i\vec v_i + c\,\vec v_{k+1} = \vec 0$ be a nontrivial relation. If $c = 0$ it is a nontrivial relation among $\vec v_1, \ldots, \vec v_k$, which is impossible; so $c \neq 0$ and $\vec v_{k+1} = -\sum_i c^{-1}c_i\,\vec v_i \in S$.
+    \item \emph{$|S| = p^k$.} The map $\mathbb{F}_p^k \to S$, $(c_1, \ldots, c_k) \mapsto \sum_i c_i\vec v_i$, is onto by the definition of the span, and one-to-one: $\sum_i c_i\vec v_i = \sum_i d_i\vec v_i$ gives $\sum_i (c_i - d_i)\vec v_i = \vec 0$, so $c_i = d_i$ by independence. Hence $|S| = |\mathbb{F}_p^k| = p^k$.
+\end{enumerate}
+So exactly $p^k$ of the $p^n$ vectors $\vec v_{k+1}$ give a dependent tuple, and $p^n - p^k$ give an independent one.
+\end{proof}
+
+For $k > n$ the product contains the factor $p^n - p^n = 0$, in agreement with there being no $n+1$ linearly independent vectors in $\mathbb{F}_p^n$.
+
 \begin{propbox}[{The Order of $GL_n(\mathbb{F}_p)$ (stated on WS 10; PS 6)}]\label{prop:order-gln-fp}
 \[ |GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} \prod_{k=1}^{n} (p^k - 1). \]
 In particular a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ has order $p^{\binom{n}{2}}$, since $p \nmid p^k - 1$.
 \end{propbox}
 
-\proofpending
+\begin{proof}
+\textit{(PS 6.4(2); the last step, rewriting the product, is not from the problem set.)} A matrix $M \in \operatorname{Mat}_n(\mathbb{F}_p)$ is the same as the ordered list $(\vec m_1, \ldots, \vec m_n)$ of its columns, and $M \in GL_n(\mathbb{F}_p)$ exactly when that list is linearly independent (Lemma~\ref{lem:invertible-iff-columns-independent}). So by Lemma~\ref{lem:count-independent-tuples} with $k = n$,
+\[ |GL_n(\mathbb{F}_p)| = (p^n - 1)(p^n - p) \cdots (p^n - p^{n-1}) = \prod_{i=0}^{n-1} (p^n - p^i) . \]
+Each factor is $p^n - p^i = p^i(p^{n-i} - 1)$, so
+\[ |GL_n(\mathbb{F}_p)| = p^{0 + 1 + \cdots + (n-1)} \prod_{i=0}^{n-1} (p^{n-i} - 1) = p^{\binom{n}{2}} \prod_{k=1}^{n} (p^k - 1), \]
+with $0 + 1 + \cdots + (n-1) = \binom{n}{2}$ and $k = n - i$. Finally $p \nmid p^k - 1$ for $k \geq 1$ (as $p \mid p^k$, it would divide $1$), so by unique factorization the largest power of $p$ dividing $|GL_n(\mathbb{F}_p)|$ is $p^{\binom{n}{2}}$, which is the order of a Sylow $p$-subgroup (Definition~\ref{def:sylow-subgroup}).
+\end{proof}
 
-Worksheet 10 quotes this order from the coming problem set (Problem Set 6, open; the proof is held back until it is submitted).
+Worksheet 10 quotes this order from Problem Set 6; the proof above is the submitted solution of Problem 6.4.
 
 \begin{propbox}[{The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ (WS 10.2)}]\label{prop:unitriangular-sylow}
 Let $P \subseteq GL_n(\mathbb{F}_p)$ be the group of matrices of the form
@@ -5125,6 +5198,61 @@ Then $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$.
 \end{propbox}
 
 \proofpending
+
+\subsection{\texorpdfstring{Groups of Order $p^2$}{Groups of Order p²}}\label{sub:order-p-squared}
+
+\textit{(PS 6.3.)} A nontrivial central element, which every nontrivial $p$-group has, is enough to classify the groups of order $p^2$. The splitting step is a general criterion, isolated first.
+
+\begin{lembox}[{Internal Direct Products (from PS 6.3(5))}]\label{lem:internal-direct-product}
+Let $G$ be a finite group and $H, L \leq G$ subgroups with
+\begin{enumerate}
+    \item every element of $H$ commuting with every element of $L$,
+    \item $H \cap L = \{e\}$, and
+    \item $|H|\,|L| = |G|$.
+\end{enumerate}
+Then $\varphi: H \times L \to G$, $\varphi(h, l) = hl$, is an isomorphism. Condition (1) holds in particular if $H$ is central ($H \subseteq Z(G)$), or if $H$ and $L$ are both normal and (2) holds.
+\end{lembox}
+
+\begin{proof}
+\emph{Homomorphism.} For $h, h' \in H$ and $l, l' \in L$, using $lh' = h'l$ from (1),
+\[ \varphi\big((h, l)(h', l')\big) = \varphi(hh', ll') = hh'll' = hlh'l' = \varphi(h, l)\,\varphi(h', l') \]
+(the product in $H \times L$ is componentwise, Definition~\ref{def:direct-products}). \emph{Injective.} If $\varphi(h, l) = hl = e$, then $h = l^{-1}$ lies in $H \cap L = \{e\}$, so $(h, l) = (e, e)$: the kernel is trivial. \emph{Bijective.} $|H \times L| = |H|\,|L| = |G|$, and an injective map between finite sets of the same size is a bijection. So $\varphi$ is an isomorphism.
+
+\emph{The two sufficient conditions for (1).} If $H \subseteq Z(G)$ (Definition~\ref{def:center-z-g}), every $h \in H$ commutes with everything. If $H, L \trianglelefteq G$ and $H \cap L = \{e\}$, let $h \in H$, $l \in L$ and consider $hlh^{-1}l^{-1}$: grouped as $(hlh^{-1})\,l^{-1}$ it lies in $L$, since $hlh^{-1} \in L$ by normality of $L$; grouped as $h\,(lh^{-1}l^{-1})$ it lies in $H$, since $lh^{-1}l^{-1} \in H$ by normality of $H$. So $hlh^{-1}l^{-1} \in H \cap L = \{e\}$, i.e.\ $hl = lh$. \textit{(Not from the problem set: the problem used only the central case.)}
+\end{proof}
+
+\begin{thmbox}[{Groups of Order $p^2$ (PS 6.3)}]\label{thm:groups-order-p-squared}
+Let $p$ be prime and $|G| = p^2$. Then $G \cong \mathbb{Z}/p^2\mathbb{Z}$ or $G \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$.
+\end{thmbox}
+
+\begin{proof}
+Throughout: if $h \in G$ has finite order $c$, then $|\langle h \rangle| = c$ and $h^N = e$ iff $c \mid N$ (Proposition~\ref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}); and \emph{every $h \neq e$ in $G$ has order $p$ or $p^2$}, since $|\langle h \rangle|$ divides $p^2$ (Theorem~\ref{thm:lagrange}) and is not $1$.
+
+By Theorem~\ref{thm:groups-prime-power-order-have-nontrivial-center} (PS 3.5) there is $z \neq e$ with $zg = gz$ for all $g \in G$.
+
+\emph{(1) If $z$ has order $p^2$.} Then $\langle z \rangle \subseteq G$ both have $p^2$ elements, so $G = \langle z \rangle \cong \mathbb{Z}/p^2\mathbb{Z}$ (Proposition~\ref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}(3)). From now on $z$ has order $p$.
+
+\emph{(2) $\langle z \rangle \trianglelefteq G$ and $G/\langle z \rangle \cong \mathbb{Z}/p\mathbb{Z}$.} By induction on $k \geq 0$, $gz^k = z^kg$ for every $g \in G$: $gz^k = (gz^{k-1})z = z^{k-1}gz = z^{k-1}zg = z^kg$. So $g h g^{-1} = h$ for all $h \in \langle z \rangle = \{e, z, \ldots, z^{p-1}\}$, and $\langle z \rangle$ is normal (Definition~\ref{def:normal-subgroup}); the quotient $G/\langle z \rangle$ is a group (Definition~\ref{def:quotient-group}) of order $[G : \langle z \rangle] = p^2/p = p$ (Theorem~\ref{thm:lagrange}), hence $\cong \mathbb{Z}/p\mathbb{Z}$ (Theorem~\ref{thm:groups-prime-order}, PS 2.5).
+
+\emph{(3) A generator.} Let $\bar g$ generate $G/\langle z \rangle$ and let $g \in G$ with $g\langle z \rangle = \bar g$. As $\bar g$ generates a group of order $p$, it has order $p$, so $g^p\langle z \rangle = \bar g^{\,p} = \langle z \rangle$ and $g^p \in \langle z \rangle$: $g^p = z^m$, and writing $m = qp + a$ with $0 \leq a < p$, $g^p = (z^p)^q z^a = z^a$. Also $g \neq e$, since $\bar g \neq \langle z \rangle$ (the quotient has $p \geq 2$ elements).
+
+\emph{(4) If $a \neq 0$.} Then $p \nmid a$, so $g^p = z^a \neq e$; $g$ has order $p$ or $p^2$, and not $p$, so order $p^2$, and $G = \langle g \rangle \cong \mathbb{Z}/p^2\mathbb{Z}$ as in (1).
+
+\emph{(5) If $a = 0$.} Then $g^p = e$, so $g$ has order $p$ and $\langle g \rangle \cong \mathbb{Z}/p\mathbb{Z} \cong \langle z \rangle$. The subgroup $\langle z \rangle \cap \langle g \rangle$ of $\langle g \rangle$ has order $1$ or $p$ (Theorem~\ref{thm:lagrange}); order $p$ would give $\langle g \rangle \subseteq \langle z \rangle$, so $g \in \langle z \rangle$ and $\bar g = \langle z \rangle$, which is false. So $\langle z \rangle \cap \langle g \rangle = \{e\}$. Lemma~\ref{lem:internal-direct-product} with $H = \langle z \rangle$ (central) and $L = \langle g \rangle$, $|H|\,|L| = p \cdot p = |G|$, gives
+\[ G \cong \langle z \rangle \times \langle g \rangle \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z} . \qedhere \]
+\end{proof}
+
+\begin{corbox}[{Groups of Order $p^2$ Are Abelian}]\label{cor:order-p-squared-abelian}
+Every group of order $p^2$, $p$ prime, is abelian.
+\end{corbox}
+
+\begin{proof}
+By Theorem~\ref{thm:groups-order-p-squared}, $G$ is isomorphic to $\mathbb{Z}/p^2\mathbb{Z}$ or to $\mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$, both abelian (the product componentwise, Definition~\ref{def:direct-products}); and a group isomorphic to an abelian group is abelian, since $\varphi(ab) = \varphi(a)\varphi(b) = \varphi(b)\varphi(a) = \varphi(ba)$ and $\varphi$ is injective.
+\end{proof}
+
+\begin{rembox}[{Groups of Order $p^k$ (PS 6, stated, not proved)}]\label{rem:groups-order-pk}
+Speyer, on Problem Set 6: one can continue classifying groups of order $p^k$ in this way for any particular $k$, although the number of cases grows rapidly; groups of order $p^3$ are ``tractable for an undergraduate''. The largest exponent fully classified is $k = 7$ (O'Brien and Vaughan-Lee, ``The groups with order $p^7$ for odd prime $p$'', \emph{Journal of Algebra}, 2005), with partial progress on $k = 8$ and $9$ published as recently as 2026.
+\end{rembox}
 
 \textit{$GL_n$ elsewhere: previous, Chapter~9 (\ref{sec:rev-ch9-gl}); no later appearance yet.}
 
@@ -5269,7 +5397,7 @@ Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the r
     \item A Latin square need not be a group table, since associativity is not visible row by row (\ref{sec:consequences}).
     \item Additive notation ($+$, $0$, $-g$) is used only for abelian groups (\ref{sec:def-group}).
     \item $3$-cycles are conjugate in $A_n$ only for $n \geq 5$: in $A_4$, $(1\,2\,3)$ and $(1\,3\,2)$ are conjugate in $S_4$ but not in $A_4$ (\ref{sec:simple}).
-    \item Do not ``cancel $N$'': for $\pi: G \to G/N$, $\pi(G_j)/\pi(G_{j-1})$ is a \emph{quotient} of $G_j/G_{j-1}$, not isomorphic to it in general (\ref{sec:solvable}). Likewise normality is not transitive (PS 6.1).
+    \item Do not ``cancel $N$'': for $\pi: G \to G/N$, $\pi(G_j)/\pi(G_{j-1})$ is a \emph{quotient} of $G_j/G_{j-1}$, not isomorphic to it in general (\ref{sec:solvable}). Likewise normality is not transitive (Example~\ref{ex:normality-not-transitive}, PS 6.1).
     \item A homomorphism \emph{into} a simple group can be neither surjective nor trivial, e.g.\ $\mathbb{Z}/3\mathbb{Z} \to A_5$; only homomorphisms \emph{out of} a simple group are forced to be injective or trivial (WS 7.1--7.2, \ref{sec:simple}).
     \item $G/H$ is a group only when $H$ is normal; otherwise coset multiplication is not well defined (\ref{sec:multiplying-cosets}).
     \item In the First Isomorphism Theorem the target is the \emph{image}: $G/\operatorname{Ker}\alpha \cong \operatorname{Im}\alpha$, which equals $H$ only when $\alpha$ is surjective (\ref{sec:first-iso}).
@@ -5307,6 +5435,7 @@ Wed Oct 7 \newline lecture; Worksheet 9 & Solvable groups; $S_3$, $S_4$ solvable
 Wed Oct 7 \newline Worksheet 10 (handed out) & $p$-groups, Sylow subgroups, the three Sylow theorems: statements only, not yet covered in lecture & \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
 Fri Oct 9 \newline lecture; quiz & WS 9.2--9.3 completed; abelian quotients via commutators; subquotient injection/surjection; derived series as a test (one direction of WS 9.6) & \ref{sec:commutators}, \ref{sec:solvable}, \ref{sec:derived-series} \\
 Mon Oct 12 \newline lecture; Worksheet 10 & WS 9.6 completed; $p$-subgroups and Sylow subgroups; conjugating a $p$-subgroup into a Sylow subgroup & \ref{sec:derived-series}, \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
+Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
 \textbf{Material not from class.} A few results were added to fill gaps and are tagged in their titles: those marked \emph{cf.\ Pinter} or \emph{cf.\ MATH 412} come from the textbook or from the MATH 412 worksheets, not from MATH 493, and are not part of the examinable content unless Speyer covers them. Everything tagged with a worksheet number, a problem-set number, or a lecture date is course material.
@@ -5551,6 +5680,32 @@ For the group $G$ of block matrices $\begin{bmatrix} I_p & A & C \\ 0 & I_q & B 
 \end{hwbox}
 \textit{Treated in \ref{sec:commutators}.}
 
+\section*{Problem Set 6}
+\phantomsection
+\addcontentsline{toc}{section}{Problem Set 6}
+
+\textit{Submitted. Each problem is treated in the main text, at the location indicated.}
+
+\begin{hwbox}[{Normality Is Not Transitive}]{6.1}\label{hw:6.1}
+Let $G_3 = S_4$ and let $G_2$ be the Klein $4$-group $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\} \subset S_4$. Give an example of a subgroup $G_1$ of $K$ which is normal in $K$, but which is not normal in $S_4$; so $G_1 \trianglelefteq G_2 \trianglelefteq G_3$ but $G_1$ is not normal in $G_3$.
+\end{hwbox}
+\textit{Treated in \ref{sec:normal-sources} (Example~\ref{ex:normality-not-transitive}).}
+
+\begin{hwbox}[{Simple Abelian Groups}]{6.2}\label{hw:6.2}
+Let $A$ be a non-trivial abelian group. (1) Show that every subgroup of $A$ is normal. Let $g$ be a nontrivial element of $A$. (2) If $\langle g \rangle g \neq A$, show that $A$ is not simple. (3) If the order of $g$ is infinite, show that $A$ is not simple. (4) If the order of $g$ is a finite composite number, show that $A$ is not simple. So the only case where $A$ is simple is $A = \langle g \rangle \cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$.
+\end{hwbox}
+\textit{Treated in \ref{sec:simple} (second proof of Theorem~\ref{thm:abelian-simple-groups}); (1) is Proposition~\ref{prop:first-examples-normal-subgroups}(1).}
+
+\begin{hwbox}[{Groups of Order $p^2$}]{6.3}\label{hw:6.3}
+Let $p$ be prime and $|G| = p^2$; by Problem 3.5 there is $z \neq e$ with $zg = gz$ for all $g \in G$. (1) Show that $z$ has order $p$ or $p^2$, and that if it has order $p^2$ then $G = \langle z \rangle \cong \mathbb{Z}/p^2\mathbb{Z}$. Assume now that $z$ has order $p$. (2) Show that $\langle z \rangle$ is normal in $G$ and $G/\langle z \rangle \cong \mathbb{Z}/p\mathbb{Z}$. Let $\bar g$ generate $G/\langle z \rangle$ and let $g$ be a preimage. (3) Show that $g^p = z^a$ for some $0 \leq a < p$. (4) If $a \neq 0$, show that $G = \langle g \rangle \cong \mathbb{Z}/p^2\mathbb{Z}$. (5) If $a = 0$, show that $G \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$.
+\end{hwbox}
+\textit{Treated in \ref{sec:p-groups} (Theorem~\ref{thm:groups-order-p-squared}, Lemma~\ref{lem:internal-direct-product}, Corollary~\ref{cor:order-p-squared-abelian}).}
+
+\begin{hwbox}[{The Order of $GL_n(\mathbb{F}_p)$}]{6.4}\label{hw:6.4}
+(1) Prove by induction on $k$ that the number of linearly independent $k$-tuples $(\vec v_1, \ldots, \vec v_k)$ in $\mathbb{F}_p^n$ is $(p^n - 1)(p^n - p) \cdots (p^n - p^{k-1})$. (2) Show that $|GL_n(\mathbb{F}_p)| = (p^n - 1)(p^n - p) \cdots (p^n - p^{n-1})$.
+\end{hwbox}
+\textit{Treated in \ref{sec:p-groups} (Lemmas~\ref{lem:invertible-iff-columns-independent} and~\ref{lem:count-independent-tuples}, Proposition~\ref{prop:order-gln-fp}).}
+
 \chapter{Index of Definitions and Results}\label{ch:index}
 
 Terms defined in the definition boxes, and named theorems, propositions, lemmas and corollaries, with the page where each appears.
@@ -5736,6 +5891,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Coprime to Each Factor, Coprime to the Product\dotfill \pageref{lem:coprime-each-factor-coprime-product}\par
 \noindent\hangindent=1em Cosets Are Orbits\dotfill \pageref{prop:cosets-orbits}\par
 \noindent\hangindent=1em Cosets Are the Equivalence Classes\dotfill \pageref{prop:cosets-equivalence-classes}\par
+\noindent\hangindent=1em Counting Linearly Independent Tuples\dotfill \pageref{lem:count-independent-tuples}\par
 \noindent\hangindent=1em Cyclic iff There Is an Element of Order $|G|$\dotfill \pageref{cor:cyclic-iff-element-order-g}\par
 \noindent\hangindent=1em Descending a Map to $\mathbb{Z}/n\mathbb{Z}$\dotfill \pageref{lem:descending-map-z-nz}\par
 \noindent\hangindent=1em Dichotomy for Subgroups of $\mathbb{R}$\dotfill \pageref{prop:dichotomy-subgroups-r}\par
@@ -5769,6 +5925,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em $GL_3(\mathbb{R})$ Acting on $\mathbb{R}^3$\dotfill \pageref{prop:gl3-r-acting-r3}\par
 \noindent\hangindent=1em $G/N$ Is a Group\dotfill \pageref{thm:g-n-group}\par
 \noindent\hangindent=1em Groups of Order $4$ Are Abelian\dotfill \pageref{prop:groups-order-4-abelian}\par
+\noindent\hangindent=1em Groups of Order $p^2$\dotfill \pageref{thm:groups-order-p-squared}\par
+\noindent\hangindent=1em Groups of Order $p^2$ Are Abelian\dotfill \pageref{cor:order-p-squared-abelian}\par
 \noindent\hangindent=1em Groups of Prime Order\dotfill \pageref{thm:groups-prime-order}\par
 \noindent\hangindent=1em Groups of Prime Order Have No Proper Nontrivial Subgroups\dotfill \pageref{cor:groups-prime-order-have-no-proper-nontrivial}\par
 \noindent\hangindent=1em Groups of Prime-Power Order Have Nontrivial Center\dotfill \pageref{thm:groups-prime-power-order-have-nontrivial-center}\par
@@ -5783,10 +5941,12 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Index of an Intersection\dotfill \pageref{prop:index-intersection}\par
 \noindent\hangindent=1em Index of an Intersection, Normal Case\dotfill \pageref{cor:index-intersection-normal}\par
 \noindent\hangindent=1em Index of the Stabilizer\dotfill \pageref{cor:index-stabilizer}\par
+\noindent\hangindent=1em Internal Direct Products\dotfill \pageref{lem:internal-direct-product}\par
 \noindent\hangindent=1em Intersections of Subgroups\dotfill \pageref{prop:intersections-subgroups}\par
 \noindent\hangindent=1em Inverse of a Product\dotfill \pageref{prop:inverse-product}\par
 \noindent\hangindent=1em Inverse of a Product of $n$ Elements\dotfill \pageref{cor:inverse-product-n-elements}\par
 \noindent\hangindent=1em Invertibility Criterion\dotfill \pageref{prop:invertibility-criterion}\par
+\noindent\hangindent=1em Invertible Matrices Have Independent Columns\dotfill \pageref{lem:invertible-iff-columns-independent}\par
 \noindent\hangindent=1em Isomorphism Invariants\dotfill \pageref{prop:isomorphism-invariants}\par
 \noindent\hangindent=1em $K$ Is an Abelian Subgroup of $S_4$\dotfill \pageref{prop:klein-four-group}\par
 \noindent\hangindent=1em Kernels Are Normal\dotfill \pageref{prop:kernels-normal}\par

@@ -44,6 +44,23 @@ tags: [group-theory, math493]
 
 *Uses:* [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]], [[§38 Normal Subgroups#^prop-38-1|§38.1]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§4 Subgroups#^def-4-7|Def. §4.7]], [[§4 Subgroups#^def-4-8|Def. §4.8]], [[§17 Cyclic Groups#^thm-17-1|§17.1]]
 
+> [!proof]+ Second proof of (⇒) (PS 6.2)
+> Let $A$ be a nontrivial abelian group. Every subgroup of $A$ is normal (Proposition [[§38 Normal Subgroups#^prop-38-1|§38.1]](1)), so $A$ is simple exactly when its only subgroups are $\{e\}$ and $A$ (Definition [[§43 Simple Groups#^def-43-1|§43.1]]). Fix $g \in A$ with $g \neq e$. Recall that if $g$ has finite order $c$, then $g^N = e$ if and only if $c \mid N$, and $|\langle g \rangle| = c$ (Proposition [[§17 Cyclic Groups#^prop-17-3|§17.3]](2),(3)).
+>
+> *(1) If $\langle g \rangle \neq A$, then $A$ is not simple.* $\langle g \rangle$ is a subgroup (Proposition [[§4 Subgroups#^prop-4-5|§4.5]]), nontrivial because it contains $g \neq e$, proper by assumption, and normal. (The problem set writes the hypothesis as $\langle g \rangle g \neq A$; since $g \in \langle g \rangle$, the coset $\langle g \rangle g$ is $\langle g \rangle$ itself.)
+>
+> *(2) If $g$ has infinite order, then $A$ is not simple.* Let $H = \langle g^2 \rangle$. It is nontrivial: $g^2 \neq e$, since $g$ has infinite order. It is proper: if $g \in H$, then $g = (g^2)^n = g^{2n}$ for some $n \in \mathbb{Z}$, so $g^{2n-1} = e$ with $2n - 1 \neq 0$ (it is odd), contradicting infinite order. So $H$ is a proper nontrivial normal subgroup.
+>
+> *(3) If $g$ has finite composite order $c$, then $A$ is not simple.* Let $p$ be a prime divisor of $c$, so $1 < p < c$, and let $H = \langle g^p \rangle$. It is nontrivial: $c \nmid p$ since $0 < p < c$, so $g^p \neq e$. It is proper: if $g \in H$, then $g = g^{pn}$ for some $n \in \mathbb{Z}$, so $g^{pn-1} = e$ and $c \mid pn - 1$; as $p \mid c$, also $p \mid pn - 1$, and with $p \mid pn$ this gives $p \mid 1$, which is impossible.
+>
+> *Conclusion.* If $A$ is simple, then by (2) $g$ has finite order $c$; $c \neq 1$ since $g \neq e$; by (3) $c$ is not composite, so $c = p$ is prime; and by (1) $A = \langle g \rangle \cong \mathbb{Z}/p\mathbb{Z}$ (Proposition [[§17 Cyclic Groups#^prop-17-3|§17.3]](3)).
+
+^pf-43-1-2
+
+*Uses:* [[§38 Normal Subgroups#^prop-38-1|§38.1]], [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§17 Cyclic Groups#^prop-17-3|§17.3]], [[§4 Subgroups#^prop-4-5|§4.5]]
+
+The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle g^p \rangle$, which the first proof obtains from $\mathbb{Z} \supsetneq 2\mathbb{Z}$ and from a factorization $n = ab$.
+
 > [!theorem] Corollary §43.2: $S_n$ Is Not Simple for $n \geq 3$
 > For $n \geq 3$, $A_n$ is a proper nontrivial normal subgroup of $S_n$; hence $S_n$ is not simple.
 
