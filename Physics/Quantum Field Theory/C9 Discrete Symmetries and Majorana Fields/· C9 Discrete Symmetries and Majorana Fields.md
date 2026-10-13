@@ -56,7 +56,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|]] ★ Theorem §C9.4.6: The Parity Image of a Solution Solves the Dirac Equation
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|]] ★ Theorem §C9.4.7: Parity Exchanges Left- and Right-Handed Fields and Currents
 - [[§C9.5 Charge Conjugation#^thm-c9-5-1|§C9.5.1]] Charge Conjugation on Creation Operators and One-Particle States
-- [[§C9.5 Charge Conjugation#^thm-c9-5-2|§C9.5.2]] Mode Expansion of the Starred Field
+- [[§C9.5 Charge Conjugation#^thm-c9-5-2|§C9.5.2]] Mode Expansion of the Transposed Adjoint
 - [[§C9.5 Charge Conjugation#^thm-c9-5-3|§C9.5.3]] Conjugation Reverses the Spin of a Two-Spinor
 - [[§C9.5 Charge Conjugation#^thm-c9-5-4|§C9.5.4]] Transposes and Conjugates of the Chiral Dirac Matrices
 - [[§C9.5 Charge Conjugation#^thm-c9-5-5|§C9.5.5]] The Conjugate of u Is a v
