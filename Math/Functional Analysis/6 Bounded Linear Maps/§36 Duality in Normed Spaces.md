@@ -116,6 +116,8 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 > **Step 3: conclusion.** By Step 2, $\sup_{\|\ell\| \le 1} |\ell(y_0)| \ge |L_0(y_0)| = \|y_0\|$; with Step 1 the supremum equals $\|y_0\|$, and it is attained at $L_0$, so it is a maximum.
 
 ^pf-36-2
+![[m556-36-2.svg]]
+*Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] in $\mathbb{R}^2$ with the norm $\|x\| = |x_1| + |x_2|$, whose unit ball is the blue square. A functional $\ell(x) = c_1 x_1 + c_2 x_2$ has norm $\max(|c_1|, |c_2|)$, and $\|\ell\| \le 1$ means that the ball lies in the strip $|\ell| \le 1$. A norming functional for $y_0$ ($\|\ell\| = 1$, $\ell(y_0) = \|y_0\| = 1$) is a line $\ell = 1$ touching the ball at $y_0$ with the ball on one side — a supporting line. Left: at a point of an edge it is unique. Right: at a corner there are many; this is the non-uniqueness of Hahn–Banach extensions (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]) seen in the plane.*
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
@@ -147,6 +149,8 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 > a sum of non-negative terms; hence $|a_n| = 1$ for every $n$, contradicting $a_n \to 0$.
 
 ^ex-36-1
+![[m556-36-4.svg]]
+*Example [[§36 Duality in Normed Spaces#^ex-36-1|§36.1]]: the values $\ell(a^{(N)}) = 1 - 2^{-N}$ on the unit vectors $a^{(N)} = (1, \ldots, 1, 0, \ldots)$ of $c_0$ increase to $\|\ell\| = 1$. Reaching $1$ would need $|a_n| = 1$ for every $n$, which no element of $c_0$ has: the supremum over the unit ball of $X$ is not attained, while the maximum over the unit ball of $X'$ in Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] always is.*
 
 > [!theorem] Corollary §36.3: Bounded Functionals Separate Points
 > Let $X$ be a normed linear space. If $x \in X$ and $\ell(x) = 0$ for every $\ell \in X'$, then $x = 0$. Equivalently, for $x \neq x'$ there is $\ell \in X'$ with $\ell(x) \neq \ell(x')$.
@@ -315,6 +319,8 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 > For $1 < p < \infty$ the maximum can also be exhibited directly: for $a \neq 0$, $b_j = |a_j|^{p-2} a_j / \|a\|_p^{p-1}$ ($b_j = 0$ where $a_j = 0$) has $\|b\|_{p'}^{p'} = \sum_j |a_j|^{(p-1)p'} / \|a\|_p^{(p-1)p'} = 1$, since $(p-1)p' = p$, and $\sum_j a_j \overline{b_j} = \sum_j |a_j|^p / \|a\|_p^{p-1} = \|a\|_p$; for $p = 1$ take $b_j = a_j/|a_j|$ where $a_j \neq 0$ and $b_j = 1$ elsewhere. Together with Hölder this proves Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]] without Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], and the same choice $g = |f|^{p-2} f / \|f\|_{L^p}^{p-1}$ shows the supremum for functions is a maximum for $1 \le p < \infty$. This is Lax's route to Minkowski's inequality (Concordance, C.2). What Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] adds is that *every* bounded functional on $\ell^p$ is of the form $\ell_b$.
 
 ^rem-36-4
+![[m556-36-3.svg]]
+*Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (the remark Why Duality Formulas are Useful) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.*
 
 > [!remark] Remark: The Dual of $L^p$, Revisited
 > Wu: similarly, for any measure space $(X, \mu)$, e.g. $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]. For those who have learned measure theory, the candidate is found with the Radon–Nikodym theorem, and the rest goes as for sequences; Wu left the proof to the class (an outline is given after Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]).
@@ -332,6 +338,8 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 > (Stated in lecture without proof.) We show that $a \mapsto \ell_a$, $\ell^1 \to (\ell^\infty)'$, is not onto. Step 1 of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] works for $p = \infty$, $p' = 1$: each $a \in \ell^1$ gives $\ell_a \in (\ell^\infty)'$. Let $c \subset \ell^\infty$ be the linear subspace of convergent sequences and $\lambda(x) = \lim_{j \to \infty} x_j$ on $c$. Then $\lambda$ is linear and $|\lambda(x)| \le \sup_j |x_j| = \|x\|_\infty$, so $\|\lambda\|_c \le 1$. By Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]], $\lambda$ extends to some $L \in (\ell^\infty)'$. If $L = \ell_a$ with $a \in \ell^1$, then $\overline{a_j} = L(e_j) = \lambda(e_j) = 0$ for every $j$ (since $e_j \in c$ tends to $0$), so $a = 0$ and $L = 0$; but $L(1, 1, 1, \ldots) = \lambda(1, 1, 1, \ldots) = 1$. So $L$ is not of the form $\ell_a$.
 
 ^pf-ex-36-2
+![[m556-36-5.svg]]
+*Why Step 3 of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] needs $p < \infty$. Left: for $x \in \ell^p$ the truncation $x^{(n)}$ (blue, here $n = 5$) differs from $x$ by a tail whose $p$-th power sum tends to $0$, so finite sequences are dense and a bounded functional is determined by its values $\ell(e_j)$. Right: in $\ell^\infty$ the tail of $(1, 1, 1, \ldots)$ always has supremum $1$; the finite sequences are not dense, and the functional of Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]] vanishes on every $e_j$ without being $0$.*
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
