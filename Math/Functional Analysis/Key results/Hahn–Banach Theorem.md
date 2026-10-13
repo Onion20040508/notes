@@ -18,6 +18,7 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§8 The Hyperplane Separation Theorem#^thm-8-1|Theorem §8.1: Hyperplane Separation; Geometric Hahn–Banach]]
 - [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|Theorem §9.2: Complex Hahn–Banach]]
+- [[§36 Duality in Normed Spaces#^thm-36-1|Theorem §36.1: Hahn–Banach for Normed Spaces]]
 
 ## Connections
 - **How.** All the analysis is in the [[One-Step Extension Lemma]]: extending by one dimension comes down to choosing one number L(x₀) in an interval, which is nonempty by subadditivity. [[Zorn's Lemma]] then says “repeat until done” on the pairs (Z, ℓ_Z), ordered by extension ([[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]]). In a separable normed space, ordinary induction along a countable dense sequence would do instead ([[§6 Proof of the Hahn–Banach Theorem#^rem-6-4|Remark §6]]).

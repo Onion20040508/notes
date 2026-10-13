@@ -23,7 +23,7 @@ tags: [functional-analysis, math556]
 ^def-31-1
 
 > [!remark]- Connections
-> - The same space in the companion chapter, with the norm as an infimum: [[§37 Bras, Kets, and the Riesz Map#^def-37-1|Def. §37.1]], [[§37 Bras, Kets, and the Riesz Map#^def-37-2|Def. §37.2]], [[§37 Bras, Kets, and the Riesz Map#^lem-37-1|§37.1]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$: [[§38 The Completeness Relation#^def-38-1|Def. §38.1]].
+> - The same space in the companion chapter, with the norm as an infimum: [[§38 Bras, Kets, and the Riesz Map#^def-38-1|Def. §38.1]], [[§38 Bras, Kets, and the Riesz Map#^def-38-2|Def. §38.2]], [[§38 Bras, Kets, and the Riesz Map#^lem-38-1|§38.1]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$: [[§39 The Completeness Relation#^def-39-1|Def. §39.1]].
 > - The algebraic dual in finite dimensions: [[§12 Duality#^ladr-3-108|LADR 3.108]], [[§12 Duality#^ladr-3-109|LADR 3.109]], [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]].
 
 > [!theorem] Corollary §31.1: The Dual is Always a Banach Space
@@ -71,7 +71,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]
 
 > [!remark]- Connections
-> - This course's first statement, without norms: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]; the companion chapter's isometric Riesz map: [[§37 Bras, Kets, and the Riesz Map#^thm-37-2|§37.2]].
+> - This course's first statement, without norms: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]; the companion chapter's isometric Riesz map: [[§38 Bras, Kets, and the Riesz Map#^thm-38-2|§38.2]].
 > - Finite-dimensional home: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]]).
 
 > [!theorem] Corollary §31.3: The Riesz Map: $H' \cong H$
@@ -90,10 +90,10 @@ tags: [functional-analysis, math556]
 *Uses:* [[§31 Dual Spaces#^thm-31-2|§31.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
 
 > [!remark]- Connections
-> - The same map in the companion chapter, in bra–ket notation: [[§37 Bras, Kets, and the Riesz Map#^thm-37-2|§37.2]].
+> - The same map in the companion chapter, in bra–ket notation: [[§38 Bras, Kets, and the Riesz Map#^thm-38-2|§38.2]].
 
 > [!remark] Remark
-> Wu called $R$ an isometry and concluded that the dual of a Hilbert space can be identified with the space itself, $H' = H$, “through this Riesz representation.” Over $\mathbb{C}$ the identification is conjugate-linear, which is harmless for norms and distances: $\|R(a) - R(b)\| = \|R(a - b)\| = \|a - b\|$. The companion chapter writes the same map in bra–ket notation (Theorem [[§37 Bras, Kets, and the Riesz Map#^thm-37-2|§37.2]]).
+> Wu called $R$ an isometry and concluded that the dual of a Hilbert space can be identified with the space itself, $H' = H$, “through this Riesz representation.” Over $\mathbb{C}$ the identification is conjugate-linear, which is harmless for norms and distances: $\|R(a) - R(b)\| = \|R(a - b)\| = \|a - b\|$. The companion chapter writes the same map in bra–ket notation (Theorem [[§38 Bras, Kets, and the Riesz Map#^thm-38-2|§38.2]]).
 
 ^rem-31-2
 
@@ -111,7 +111,7 @@ tags: [functional-analysis, math556]
 ^ex-31-1
 
 > [!remark] Remark: Not Every Space is its Own Dual
-> A student asked whether the dual of every space is itself. No: the identification $X' = X$ is a Hilbert-space phenomenon, and “almost always” $X' \neq X$. The standard example, stated in lecture and to be proved next time, is below; the reason the exponent $p'$ appears is [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Hölder's inequality]], which makes $\int f g$ meaningful for $f \in L^p$, $g \in L^{p'}$.
+> A student asked whether the dual of every space is itself. No: the identification $X' = X$ is a Hilbert-space phenomenon, and “almost always” $X' \neq X$. The standard example, stated in lecture and proved for sequences in Lecture 13 (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]), is below; the reason the exponent $p'$ appears is [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Hölder's inequality]], which makes $\int f g$ meaningful for $f \in L^p$, $g \in L^{p'}$.
 
 ^rem-31-3
 
@@ -125,13 +125,25 @@ tags: [functional-analysis, math556]
 
 ^thm-31-4
 
-> [!proof]+ Proof
-> Next lecture.
+> [!proof]+ Proof (outline; not proved in lecture)
+> Not proved in lecture. In Lecture 13 Wu proved the sequence version, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], and said that the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon–Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course (it will not be tested).
+>
+> *Outline, along that route.* Measure-theoretic facts are used freely. Suppose first that $\Omega$ has finite measure $m(\Omega)$, and let $\ell \in (L^p)'$.
+>
+> (i) *The candidate.* For measurable $E \subset \Omega$ put $\nu(E) = \ell(\chi_E)$. If $E = \bigcup_k E_k$ is a disjoint union, then $\|\chi_E - \sum_{k \le n} \chi_{E_k}\|_{L^p} = m\bigl( \bigcup_{k > n} E_k \bigr)^{1/p} \to 0$ (here $p < \infty$), so continuity of $\ell$ gives $\nu(E) = \sum_k \nu(E_k)$; and $m(E) = 0$ gives $\chi_E = 0$ in $L^p$, so $\nu(E) = 0$. Thus $\nu$ is a (real or complex) measure with $\nu \ll m$. Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] is stated for positive measures; applied to the positive and negative parts of $\operatorname{Re}\nu$ and $\operatorname{Im}\nu$ (Jordan decomposition), it gives $g \in L^1(\Omega)$ with $\ell(\chi_E) = \int_E g$ for all $E$. By linearity $\ell(s) = \int s g$ for simple $s$; and since a bounded measurable $f$ is a uniform limit of simple $s_k$, with $\|f - s_k\|_{L^p} \le m(\Omega)^{1/p} \|f - s_k\|_\infty \to 0$ and $|\int (f - s_k) g| \le \|f - s_k\|_\infty \|g\|_{L^1} \to 0$, also $\ell(f) = \int f g$ for bounded measurable $f$. This is the analogue of (F) in the proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]].
+>
+> (ii) *$g \in L^{p'}$, as in Step 2 of the proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]].* For $1 < p < \infty$ test with the bounded function $f_n = |g|^{p'-2}\, \bar g\, \chi_{\{0 < |g| \le n\}}$: then $|f_n|^p = |g|^{p'} \chi_{\{|g| \le n\}}$ and $\ell(f_n) = \int_{\{|g| \le n\}} |g|^{p'} =: S_n$, so $S_n \le \|\ell\|\, S_n^{1/p}$, hence $S_n^{1/p'} \le \|\ell\|$, and the monotone convergence theorem gives $\|g\|_{L^{p'}} \le \|\ell\|$. For $p = 1$ and $\varepsilon > 0$, test with $f = \chi_A\, \bar g/|g|$, $A = \{ |g| > \|\ell\| + \varepsilon \}$: then $(\|\ell\| + \varepsilon)\, m(A) \le \int_A |g| = \ell(f) \le \|\ell\|\, m(A)$, so $m(A) = 0$ and $\|g\|_{L^\infty} \le \|\ell\|$.
+>
+> (iii) *$\ell(f) = \int f g$ on all of $L^p$, as in Step 3 of that proof.* The bounded functions $f\, \chi_{\{|f| \le n\}}$ converge to $f$ in $L^p$ (dominated convergence, $p < \infty$); both sides of $\ell(f) = \int f g$ are continuous in $f$ (the right side by Hölder), so the identity extends from bounded $f$ to all $f \in L^p$. Hölder gives $\|\ell\| \le \|g\|_{L^{p'}}$, so $\|\ell\| = \|g\|_{L^{p'}}$; and $g$ is unique, since $\int_E (g - \tilde g) = 0$ for all $E$ forces $g = \tilde g$ a.e.
+>
+> (iv) *$\Omega$ of infinite measure.* Apply (i)–(iii) on $\Omega_k = \Omega \cap B_k(0)$ to the restriction of $\ell$ to functions vanishing outside $\Omega_k$; by uniqueness the resulting $g_k$ agree a.e. on overlaps and define one $g$ on $\Omega$ with $\|g\, \chi_{\Omega_k}\|_{L^{p'}} \le \|\ell\|$ for all $k$, hence $\|g\|_{L^{p'}} \le \|\ell\|$; and the functions vanishing outside some $\Omega_k$ are dense in $L^p(\Omega)$.
 
 ^pf-31-4
 
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]
+
 > [!remark] Remark
-> On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), which was not covered.
+> On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), as Wu noted in Lecture 13 (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
 
 ^rem-31-4
 

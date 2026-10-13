@@ -5,7 +5,7 @@ chapter: 6
 section: 35
 tags: [functional-analysis, math556]
 ---
-← [[§34 Weak Solutions of the Dirichlet Problem]] · ↑ [[· 6 Bounded Linear Maps]] · [[§36 ℝⁿ, Cᵐ and Lᵖ]] →
+← [[§34 Weak Solutions of the Dirichlet Problem]] · ↑ [[· 6 Bounded Linear Maps]] · [[§36 Duality in Normed Spaces]] →
 
 *Stage: maps — Thread: functionals. A density between two measures is the Riesz representer of a bounded functional on an $L^2$ space.*
 

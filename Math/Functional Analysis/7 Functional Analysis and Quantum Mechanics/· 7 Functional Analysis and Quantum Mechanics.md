@@ -14,14 +14,14 @@ This chapter is a companion to the course, not part of it: nothing here was cove
 **Builds on (other subjects):** [[Linear Algebra]] (1), [[Measure Theory]] (3)
 
 ## Sections
-- [[§37 Bras, Kets, and the Riesz Map]]
-- [[§38 The Completeness Relation]]
-- [[§39 Position Eigenstates and Continuous Resolutions]]
-- [[§40 Bound States Need Not Be Complete꞉ Hydrogen]]
+- [[§38 Bras, Kets, and the Riesz Map]]
+- [[§39 The Completeness Relation]]
+- [[§40 Position Eigenstates and Continuous Resolutions]]
+- [[§41 Bound States Need Not Be Complete꞉ Hydrogen]]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§38 The Completeness Relation#^prop-38-1|Proposition §38.1: Finite Sums of Outer Products are Projections]]: 1 later result
-- [[§38 The Completeness Relation#^thm-38-2|Theorem §38.2: The Completeness Relation]]: 1 later result
-- [[§39 Position Eigenstates and Continuous Resolutions#^prop-39-1|Proposition §39.1: Orthonormal Sets in Separable Spaces are Countable]]: 1 later result
-- [[§40 Bound States Need Not Be Complete꞉ Hydrogen#^thm-40-1|Theorem §40.1: Spectrum of the Hydrogen Atom]]: 1 later result
+- [[§39 The Completeness Relation#^prop-39-1|Proposition §39.1: Finite Sums of Outer Products are Projections]]: 1 later result
+- [[§39 The Completeness Relation#^thm-39-2|Theorem §39.2: The Completeness Relation]]: 1 later result
+- [[§40 Position Eigenstates and Continuous Resolutions#^prop-40-1|Proposition §40.1: Orthonormal Sets in Separable Spaces are Countable]]: 1 later result
+- [[§41 Bound States Need Not Be Complete꞉ Hydrogen#^thm-41-1|Theorem §41.1: Spectrum of the Hydrogen Atom]]: 1 later result

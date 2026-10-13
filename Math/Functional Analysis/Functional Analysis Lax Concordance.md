@@ -69,6 +69,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | [[§30 Boundedness and Continuity\|§30]] Bounded linear maps | §15.1, Thms 1–3 | Lax assumes Banach spaces throughout §15.1; not needed for Thm 1. |
 | [[§32 Sesquilinear Forms and the Lax–Milgram Theorem\|§32]] Lax–Milgram | §6.3, Thm 6 | Proved through the operator $A$ of [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1\|Theorem §32.1]]: one-to-one with a lower bound, closed range, dense range. |
 | [[§33 Sobolev Spaces and Weak Derivatives\|§33]] Sobolev spaces | §5.1, example (g) | Weak derivatives, $H^1_0$ and the Poincaré inequality are not in Lax's Chapters 1–15 as treated here. |
+| [[§36 Duality in Normed Spaces\|§36]] Duality in normed spaces | Ch. 8; §5.1, Thm 5 | Normed Hahn–Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch. 8 has not been checked against the text here, so no Ch. 8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. |
 | [[· 7 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
@@ -137,6 +138,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §5.1, Thm 3 | Theorem [[§13 The Completion of a Normed Space#^thm-13-1\|§13.1]] | The Completion of a Normed Space is a Banach Space |
 | §5.1, Thms 4–5 | Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1\|§18.1]] | Minkowski's Inequality for Sequences |
 | §5.1, Thm 4 | Proposition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-3\|§18.3]] | $\ell^p$ is a Normed Linear Space |
+| §5.1, Thm 5 | Corollary [[§36 Duality in Normed Spaces#^cor-36-5\|§36.5]] | Duality Formula for the $\ell^p$ Norm |
 | §5.2, Thm 6 | Theorem [[§20 Compactness and the Unit Ball#^thm-20-5\|§20.5]] | The Unit Ball of an Infinite-Dimensional Space is Not Compact |
 | §5.2, Lemma 7 | Lemma [[§20 Compactness and the Unit Ball#^lem-20-2\|§20.2]] | Riesz's Lemma |
 | §6.1, (i)–(iii) | Definition [[§22 Definition and Examples#^def-22-1\|§22.1]] | Inner Product; Scalar Product |

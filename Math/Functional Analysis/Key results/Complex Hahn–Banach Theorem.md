@@ -15,7 +15,7 @@ tags: [functional-analysis, hub]
 - [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|Lemma §9.1: Consequences of Complex Homogeneity]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§36 Duality in Normed Spaces#^thm-36-1|Theorem §36.1: Hahn–Banach for Normed Spaces]]
 
 ## Connections
 - **How.** The proof reduces to the real case through real parts. u = Re ℓ is real-linear and determines ℓ by ℓ(y) = u(y) − i u(iy). Extend u by the real [[Hahn–Banach Theorem]], which applies because p is positive homogeneous and subadditive on the underlying real space ([[§9 The Complex Hahn–Banach Theorem#^lem-9-1|§9.1]]), and set L(x) = U(x) − iU(ix). The bound |L(x)| ≤ p(x) comes from rotating x by a unimodular a so that L(ax) is real and non-negative ([[Functional Analysis Problem-Solving Techniques#^rem-t8|Technique 8]]). Splitting into real and imaginary parts would only give the constant √2 ([[§9 The Complex Hahn–Banach Theorem#^rem-9-2|Remark §9]]).

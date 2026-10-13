@@ -102,6 +102,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > - **Minkowski for sequences** (lecture, Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]): the cancellation of $\|a+b\|_p^{\,p-1}$ is only valid for finitely supported sequences; the general case follows by truncation.
 > - **Completeness of $\ell^p$**, Step 2 (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]): the order truncate $\to$ $m \to \infty$ $\to$ $k \to \infty$.
 > - **Hölder for finite sums** is the special case of Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]] with zero tails; conversely no truncation is needed there because every quantity is a sum of non-negative terms and inequalities in $[0,\infty]$ suffice.
+> - **The dual of $\ell^p$**, Step 2 (Lecture 13, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]): test $\ell$ on the truncated Hölder-extremal vector $x_j = |a_j|^{p'-2} a_j$, $j \le n$, divide the finite sum $S_n$ out, and let $n \to \infty$.
 
 ^ex-t6
 
@@ -278,9 +279,10 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 ^rem-t19
 
-> [!example] Example T19: Applications (Lectures 11–12)
+> [!example] Example T19: Applications (Lectures 11–13)
 > - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
+> - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
 
 ^ex-t19
 
@@ -308,3 +310,17 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > The [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Radon–Nikodym theorem]] (Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]): $\chi_{F_1}$, $\chi_{F_2}$ give $0 < g_0 \le 1$; $\chi_{E_k}/g_0$ gives the [[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|density]].
 
 ^ex-t21
+
+## Technique 22: Define the Functional Where There is No Choice, Then Extend
+
+> [!remark] Remark: Strategy
+> To produce a bounded functional with prescribed properties (a given value at a point, zero on a subspace, norm at most $1$), find the smallest subspace on which the requirements already determine it — the span of the point, or of the point and the subspace — define it there, and check its norm on that subspace by hand. Then Hahn–Banach for normed spaces (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]) extends it to the whole space without increasing the norm. Before defining it, check that the formula is well defined: the representation of an element of the span must be unique. Wu: “we really don't have a lot of choice” on the small space; “extensions are usually not unique”.
+
+^rem-t22
+
+> [!example] Example T22: Applications (Lecture 13)
+> - $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
+> - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
+> - $(\ell^\infty)' \neq \ell^1$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]): $\lambda(x) = \lim x_j$ on the convergent sequences.
+
+^ex-t22

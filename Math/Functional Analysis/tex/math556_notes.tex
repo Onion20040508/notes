@@ -5111,7 +5111,7 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 \chapter{Bounded Linear Maps}\label{ch:maps}
 
-Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the Lax--Milgram theorem, the Sobolev spaces it is applied to, and two applications of the representation theorems: weak solutions of the Dirichlet problem and the Radon--Nikodym theorem.
+Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the Lax--Milgram theorem, the Sobolev spaces it is applied to, and two applications of the representation theorems: weak solutions of the Dirichlet problem and the Radon--Nikodym theorem. It ends by returning to duality (Lax, Chapter 8): Hahn--Banach for normed spaces, norms and distances computed from the dual, the dual of $\ell^p$, and annihilators.
 
 % Lecture 9 (2026-09-29), last part
 
@@ -5440,7 +5440,7 @@ with $\|\ell\| = \|g\|_{L^2}$. Likewise every $\ell \in (\ell^2)'$ is $\ell(a) =
 \end{exbox}
 
 \begin{rembox}[Not Every Space is its Own Dual]\label{rem:not-every-space-own-dual}
-A student asked whether the dual of every space is itself. No: the identification $X' = X$ is a Hilbert-space phenomenon, and ``almost always'' $X' \neq X$. The standard example, stated in lecture and to be proved next time, is below; the reason the exponent $p'$ appears is H\"older's inequality, which makes $\int f g$ meaningful for $f \in L^p$, $g \in L^{p'}$.
+A student asked whether the dual of every space is itself. No: the identification $X' = X$ is a Hilbert-space phenomenon, and ``almost always'' $X' \neq X$. The standard example, stated in lecture and proved for sequences in Lecture 13 (Theorem~\ref{thm:lp-seq-dual}), is below; the reason the exponent $p'$ appears is H\"older's inequality, which makes $\int f g$ meaningful for $f \in L^p$, $g \in L^{p'}$.
 \end{rembox}
 
 \begin{thmbox}[{{The Dual of $L^p$}}]\boxlabel{thm:Lp-dual}
@@ -5448,13 +5448,25 @@ Let $1 \le p < \infty$ and $\frac1p + \frac{1}{p'} = 1$. Then $(L^p)' = L^{p'}$:
 \laxref{\S8.3, Thm~11}
 \end{thmbox}
 
-\begin{proof}
-Next lecture.
+\begin{proof}[Proof (outline; not proved in lecture)]
+%% Lecture 13 (2026-10-13): the placeholder "Next lecture." is replaced. Wu proved the sequence version and said the L^p case is similar.
+Not proved in lecture. In Lecture 13 Wu proved the sequence version, Theorem~\ref{thm:lp-seq-dual}, and said that the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon--Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course (it will not be tested).
+
+%% FILL-IN: outline of the L^p proof along Wu's route (not given in lecture).
+\emph{Outline, along that route.} Measure-theoretic facts are used freely. Suppose first that $\Omega$ has finite measure $m(\Omega)$, and let $\ell \in (L^p)'$.
+
+(i) \emph{The candidate.} For measurable $E \subset \Omega$ put $\nu(E) = \ell(\chi_E)$. If $E = \bigcup_k E_k$ is a disjoint union, then $\|\chi_E - \sum_{k \le n} \chi_{E_k}\|_{L^p} = m\bigl( \bigcup_{k > n} E_k \bigr)^{1/p} \to 0$ (here $p < \infty$), so continuity of $\ell$ gives $\nu(E) = \sum_k \nu(E_k)$; and $m(E) = 0$ gives $\chi_E = 0$ in $L^p$, so $\nu(E) = 0$. Thus $\nu$ is a (real or complex) measure with $\nu \ll m$. Theorem~\ref{thm:radon-nikodym} is stated for positive measures; applied to the positive and negative parts of $\operatorname{Re}\nu$ and $\operatorname{Im}\nu$ (Jordan decomposition), it gives $g \in L^1(\Omega)$ with $\ell(\chi_E) = \int_E g$ for all $E$. By linearity $\ell(s) = \int s g$ for simple $s$; and since a bounded measurable $f$ is a uniform limit of simple $s_k$, with $\|f - s_k\|_{L^p} \le m(\Omega)^{1/p} \|f - s_k\|_\infty \to 0$ and $|\int (f - s_k) g| \le \|f - s_k\|_\infty \|g\|_{L^1} \to 0$, also $\ell(f) = \int f g$ for bounded measurable $f$. This is the analogue of \eqref{eq:lp-finite} in the proof of Theorem~\ref{thm:lp-seq-dual}.
+
+(ii) \emph{$g \in L^{p'}$, as in Step 2 of the proof of Theorem~\ref{thm:lp-seq-dual}.} For $1 < p < \infty$ test with the bounded function $f_n = |g|^{p'-2}\, \bar g\, \chi_{\{0 < |g| \le n\}}$: then $|f_n|^p = |g|^{p'} \chi_{\{|g| \le n\}}$ and $\ell(f_n) = \int_{\{|g| \le n\}} |g|^{p'} =: S_n$, so $S_n \le \|\ell\|\, S_n^{1/p}$, hence $S_n^{1/p'} \le \|\ell\|$, and the monotone convergence theorem gives $\|g\|_{L^{p'}} \le \|\ell\|$. For $p = 1$ and $\varepsilon > 0$, test with $f = \chi_A\, \bar g/|g|$, $A = \{ |g| > \|\ell\| + \varepsilon \}$: then $(\|\ell\| + \varepsilon)\, m(A) \le \int_A |g| = \ell(f) \le \|\ell\|\, m(A)$, so $m(A) = 0$ and $\|g\|_{L^\infty} \le \|\ell\|$.
+
+(iii) \emph{$\ell(f) = \int f g$ on all of $L^p$, as in Step 3 of that proof.} The bounded functions $f\, \chi_{\{|f| \le n\}}$ converge to $f$ in $L^p$ (dominated convergence, $p < \infty$); both sides of $\ell(f) = \int f g$ are continuous in $f$ (the right side by H\"older), so the identity extends from bounded $f$ to all $f \in L^p$. H\"older gives $\|\ell\| \le \|g\|_{L^{p'}}$, so $\|\ell\| = \|g\|_{L^{p'}}$; and $g$ is unique, since $\int_E (g - \tilde g) = 0$ for all $E$ forces $g = \tilde g$ a.e.
+
+(iv) \emph{$\Omega$ of infinite measure.} Apply (i)--(iii) on $\Omega_k = \Omega \cap B_k(0)$ to the restriction of $\ell$ to functions vanishing outside $\Omega_k$; by uniqueness the resulting $g_k$ agree a.e.\ on overlaps and define one $g$ on $\Omega$ with $\|g\, \chi_{\Omega_k}\|_{L^{p'}} \le \|\ell\|$ for all $k$, hence $\|g\|_{L^{p'}} \le \|\ell\|$; and the functions vanishing outside some $\Omega_k$ are dense in $L^p(\Omega)$.
 \end{proof}
 
 %% >>> ADDED: remark (Claude commentary)
 \begin{rembox}\label{rem:dual-2}
-On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), which was not covered.
+On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), as Wu noted in Lecture 13 (Example~\ref{ex:linfty-dual}).
 \end{rembox}
 %% <<< END ADDED
 
@@ -6419,6 +6431,396 @@ The truncation in Step 5 is necessary, not cosmetic. On $X = [0,1]$ with $\mu$ L
 %% <<< END ADDED
 
 % ============================================================================
+% SECTION: DUALITY IN NORMED SPACES (Lecture 13)
+% ============================================================================
+% Lecture 13 (2026-10-13)
+
+\section{Duality in Normed Spaces}\label{sec:duality}
+
+\roadmark{Stage: maps}{Thread: functionals. Hahn--Banach with a multiple of the norm as dominating function: there are enough bounded functionals to compute norms and distances, and the dual of $\ell^p$ is $\ell^{p'}$.}
+
+Recall (\ref{sec:dual}) that for a normed linear space $X$ over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$ the dual space $X'$ consists of the bounded linear functionals $\ell : X \to \mathbb{F}$, with
+\[
+\|\ell\| = \sup_{x \neq 0} \frac{|\ell(x)|}{\|x\|} = \sup_{\|x\| = 1} |\ell(x)| ,
+\]
+and that $X'$ is a Banach space (Corollary~\ref{cor:dual-banach}).
+%% FILL-IN: why the two suprema agree, and the version with ||x|| <= 1 used below.
+(The suprema agree because $|\ell(x)|/\|x\| = |\ell(x/\|x\|)|$ and $x/\|x\|$ has norm $1$. Taking the supremum over $\|x\| \le 1$ gives the same number: for $0 < \|x\| \le 1$, $|\ell(x)| = \|x\|\, |\ell(x/\|x\|)| \le \sup_{\|x'\| = 1} |\ell(x')|$, and $\ell(0) = 0$. In particular $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$.)
+This lecture explains why $X'$ is called the \emph{dual} space: just as $\|\ell\|$ is computed by testing $\ell$ on the unit ball of $X$, norms and distances in $X$ can be computed by testing on the unit ball of $X'$.
+
+\subsection{Hahn--Banach for Normed Spaces}
+
+The Hahn--Banach theorem of Chapter~2 needed no norm, only a positive homogeneous subadditive $p$. On a normed space there is a more specific version, in which $p$ is a multiple of the norm.
+
+\begin{thmbox}[Hahn--Banach for Normed Spaces]\boxlabel{thm:hb-normed}
+Let $X$ be a normed linear space over $\mathbb{F}$, $Y$ a linear subspace of $X$ (a normed linear space with the same norm), and $\ell : Y \to \mathbb{F}$ a bounded linear functional on $Y$, with norm
+\[
+\|\ell\|_Y = \sup_{y \in Y,\ \|y\| \le 1} |\ell(y)| .
+\]
+Then $\ell$ has an extension $L \in X'$, $L|_Y = \ell$, with the same norm: $\|L\| = \|\ell\|_Y$.
+\end{thmbox}
+
+\begin{proof}
+Wu: ``this is really Hahn--Banach''; the abstract theorem is applied with
+\[
+p(x) = \|\ell\|_Y\, \|x\|, \qquad x \in X .
+\]
+%% FILL-IN: the properties of p and the bound |l(y)| <= p(y), which Wu stated.
+\textbf{Step 1: $p$ is admissible and dominates $\ell$ on $Y$.} For $a \in \mathbb{F}$, $p(ax) = \|\ell\|_Y\, |a|\, \|x\| = |a|\, p(x)$; in particular $p$ is positive homogeneous. By the triangle inequality, $p(x + x') \le p(x) + p(x')$. On $Y$, by the definition of $\|\ell\|_Y$ (the bound $|\ell(x)| \le \|\ell\|\,\|x\|$ noted at the start of this section, applied in the normed space $Y$), $|\ell(y)| \le \|\ell\|_Y\, \|y\|$, i.e.
+\[
+|\ell(y)| \le p(y) \qquad \text{for all } y \in Y .
+\]
+
+\textbf{Step 2: extend.} %% FILL-IN: Wu applied the real theorem (L <= p); the absolute value, and the complex case, are written out.
+\emph{Real case.} Since $\ell(y) \le |\ell(y)| \le p(y)$ on $Y$, Theorem~\ref{thm:hb} gives a linear functional $L : X \to \mathbb{R}$ with $L|_Y = \ell$ and $L(x) \le p(x)$ for all $x \in X$. Applied to $-x$, this gives $-L(x) = L(-x) \le p(-x) = p(x)$. Hence $|L(x)| \le p(x)$ for all $x$.
+
+\emph{Complex case.} By Step 1, $p$ satisfies conditions (1)--(2) of Theorem~\ref{thm:hb-complex}, and $|\ell| \le p$ on $Y$. That theorem gives a linear extension $L$ of $\ell$ with $|L(x)| \le p(x)$ for all $x \in X$.
+
+\textbf{Step 3: the norm.} In both cases $|L(x)| \le p(x) = \|\ell\|_Y\, \|x\|$ for all $x$, so $L$ is bounded, $L \in X'$, and $\|L\| \le \|\ell\|_Y$. Conversely, $L = \ell$ on $Y$, and the supremum defining $\|L\|$ runs over a larger set than the one defining $\|\ell\|_Y$:
+\[
+\|L\| = \sup_{x \in X,\ \|x\| \le 1} |L(x)| \ \ge\ \sup_{y \in Y,\ \|y\| \le 1} |\ell(y)| = \|\ell\|_Y .
+\]
+Hence $\|L\| = \|\ell\|_Y$.
+\end{proof}
+
+\begin{rembox}[{{The Pairing $\langle x, \ell \rangle$ Again}}]\label{rem:pairing-again}
+Wu: one often writes $\ell(x) = \langle x, \ell \rangle$ for $x \in X$, $\ell \in X'$ (as in \ref{sec:dual}). The expression is linear in $x$, and also linear in $\ell$, since $(c_1 \ell_1 + c_2 \ell_2)(x) = c_1 \ell_1(x) + c_2 \ell_2(x)$; so it is like a bilinear form on $X \times X'$, and it is convenient to think of $X$ and $X'$ as being in a dual relation. The notation comes from Hilbert space: a student asked whether ``the dual is itself'' means $H$ and $H'$ are isomorphic; Wu: by the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, a)$ for some $a \in H$, and $H'$ is identified with $H$ through $a \leftrightarrow \ell_a$ (Corollary~\ref{cor:riesz-map}).
+%% ADDED: last sentence (not said in lecture).
+Over $\mathbb{C}$ the two pairings differ slightly: $\langle x, \ell \rangle$ is linear in $\ell$, while $(x, a)$ is conjugate-linear in $a$; correspondingly, the Riesz map $a \mapsto \ell_a$ is conjugate-linear.
+\end{rembox}
+
+\subsection{The Norm as a Maximum over the Dual}
+
+For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x\| \le 1$. The opposite is also true.
+
+\begin{thmbox}[{{The Norm as a Maximum over the Dual}}]\boxlabel{thm:norm-max}
+Let $X$ be a normed linear space over $\mathbb{F}$. For every $y \in X$,
+\[
+\|y\| = \max \bigl\{ |\ell(y)| : \ell \in X',\ \|\ell\| \le 1 \bigr\} .
+\]
+If $X \neq \{0\}$, the maximum is attained by a functional of norm exactly $1$, so ``$\|\ell\| \le 1$'' may be replaced by ``$\|\ell\| = 1$''.
+\end{thmbox}
+
+\begin{proof}
+Fix $y_0 \in X$.
+
+\textbf{Step 1: $\sup \le \|y_0\|$.} Let $\ell \in X'$ with $\|\ell\| \le 1$. Then
+\[
+|\ell(y_0)| \le \|\ell\|\, \|y_0\| \le \|y_0\| .
+\]
+Taking the supremum over all such $\ell$, $\sup_{\|\ell\| \le 1} |\ell(y_0)| \le \|y_0\|$. At this point we do not yet know that the supremum is attained.
+
+\textbf{Step 2: a functional attaining $\|y_0\|$.} We want $L_0 \in X'$ with $\|L_0\| \le 1$ and $|L_0(y_0)| = \|y_0\|$.
+%% FILL-IN: the case y_0 = 0 (and the norm-one version), not mentioned in lecture.
+If $y_0 = 0$, then $L_0 = 0$ will do; and if $X \neq \{0\}$, applying the construction below to some $x_1 \neq 0$ produces an $L_0$ with $\|L_0\| = 1$, and $|L_0(0)| = 0 = \|0\|$. So assume $y_0 \neq 0$.
+
+Let $Y = \operatorname{span}\{y_0\} = \{ c\, y_0 : c \in \mathbb{F} \}$ and define $\ell_0 : Y \to \mathbb{F}$ by
+\[
+\ell_0(c\, y_0) = c\, \|y_0\|, \qquad \text{in particular } \ell_0(y_0) = \|y_0\| .
+\]
+%% FILL-IN: well-definedness and linearity of ell_0.
+(This is well defined because $y_0 \neq 0$: $c\, y_0 = c'\, y_0$ gives $(c - c')\, y_0 = 0$, so $c = c'$. It is linear: $\ell_0(c\, y_0 + c'\, y_0) = (c + c')\|y_0\|$ and $\ell_0(a\, c\, y_0) = a\, c\, \|y_0\|$.) It is bounded: every element of $Y$ is $c\, y_0$ for some $c$, and
+\[
+|\ell_0(c\, y_0)| = |c|\, \|y_0\| = \|c\, y_0\| .
+\]
+So $|\ell_0(y)| = \|y\|$ for every $y \in Y$, and $\|\ell_0\|_Y = 1$. By Theorem~\ref{thm:hb-normed}, $\ell_0$ extends to $L_0 \in X'$ with $\|L_0\| = \|\ell_0\|_Y = 1$, and $L_0(y_0) = \ell_0(y_0) = \|y_0\|$.
+
+\textbf{Step 3: conclusion.} By Step 2, $\sup_{\|\ell\| \le 1} |\ell(y_0)| \ge |L_0(y_0)| = \|y_0\|$; with Step 1 the supremum equals $\|y_0\|$, and it is attained at $L_0$, so it is a maximum.
+\end{proof}
+
+\begin{rembox}[Duality]\label{rem:duality-mirror}
+The two formulas
+\[
+\|\ell\| = \sup_{x \in X,\ \|x\| \le 1} |\ell(x)|, \qquad \|y\| = \max_{\ell \in X',\ \|\ell\| \le 1} |\ell(y)|
+\]
+mirror each other. Wu: both are very useful in practice, for estimates; abstractly the proof is not difficult. A student asked whether ``$\le 1$'' should be ``$= 1$''; Wu: either is a correct statement (``$\le$'' does not make the maximum bigger), as the theorem records.
+%% ADDED: sentence (not said in lecture).
+The two formulas are not perfectly symmetric: the supremum over $X$ need not be attained (Example~\ref{ex:sup-not-attained}), while the one over $X'$ always is; Hahn--Banach is what produces the maximizing functional.
+\end{rembox}
+
+%% >>> ADDED: example and corollary (not from lecture)
+\begin{exbox}[{{The Supremum in $\|\ell\|$ Need Not be Attained}}]\boxlabel{ex:sup-not-attained}
+On $c_0$, the sequences tending to $0$ with $\|a\| = \max_n |a_n|$ (Proposition~\ref{prop:c0}), let
+\[
+\ell(a) = \sum_{n=1}^\infty 2^{-n} a_n .
+\]
+The series converges absolutely, $|\ell(a)| \le \sum 2^{-n} |a_n| \le \|a\| \sum 2^{-n} = \|a\|$, and $\ell$ is linear; so $\ell \in c_0'$ with $\|\ell\| \le 1$. For $a^{(N)} = (1, \ldots, 1, 0, \ldots)$ ($N$ ones), $\|a^{(N)}\| = 1$ and $\ell(a^{(N)}) = 1 - 2^{-N} \to 1$; so $\|\ell\| = 1$. But no $a$ with $\|a\| \le 1$ has $|\ell(a)| = 1$: that would give
+\[
+1 = \Bigl| \sum_n 2^{-n} a_n \Bigr| \le \sum_n 2^{-n} |a_n| \le \sum_n 2^{-n} = 1, \qquad \text{so} \qquad \sum_n 2^{-n} \bigl( 1 - |a_n| \bigr) = 0 ,
+\]
+a sum of non-negative terms; hence $|a_n| = 1$ for every $n$, contradicting $a_n \to 0$.
+\end{exbox}
+
+\begin{corbox}[Bounded Functionals Separate Points]\boxlabel{cor:separate-points}
+Let $X$ be a normed linear space. If $x \in X$ and $\ell(x) = 0$ for every $\ell \in X'$, then $x = 0$. Equivalently, for $x \neq x'$ there is $\ell \in X'$ with $\ell(x) \neq \ell(x')$.
+\end{corbox}
+
+\begin{proof}
+By Theorem~\ref{thm:norm-max}, $\|x\| = \max_{\|\ell\| \le 1} |\ell(x)| = 0$. For the second form apply this to $x - x'$.
+\end{proof}
+
+This is the precise form of the remark in \ref{sec:hb-proof} that Hahn--Banach guarantees ``enough'' linear functionals: on a normed space there are enough \emph{bounded} ones to tell points apart.
+%% <<< END ADDED
+
+\subsection{The Dual of \texorpdfstring{$\ell^p$}{lp}}
+
+Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theorem~\ref{thm:Lp-dual}). This was Problem~3 of the current homework; Wu waived it after doing it in class. Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ denote the sequence with $1$ in the $j$-th place and $0$ elsewhere, and let $p'$ be the conjugate exponent of $p$ (Definition~\ref{def:conjugate-exponents}).
+
+\begin{thmbox}[{{The Dual of $\ell^p$}}]\boxlabel{thm:lp-seq-dual}
+Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$.
+\begin{enumerate}[label=(\arabic*)]
+    \item For $a = (a_1, a_2, \ldots) \in \ell^{p'}$,
+    \[
+    \ell_a(x) = \sum_{j=1}^\infty x_j\, \overline{a_j}, \qquad x = (x_1, x_2, \ldots) \in \ell^p,
+    \]
+    defines $\ell_a \in (\ell^p)'$, with $\|\ell_a\| \le \|a\|_{p'}$.
+    \item For every $\ell \in (\ell^p)'$, the numbers $a_j = \overline{\ell(e_j)}$ form a sequence $a \in \ell^{p'}$ with $\|a\|_{p'} \le \|\ell\|$, and $\ell = \ell_a$.
+\end{enumerate}
+Consequently $a \mapsto \ell_a$ is a one-to-one map of $\ell^{p'}$ onto $(\ell^p)'$ with $\|\ell_a\| = \|a\|_{p'}$; it is linear if $\mathbb{F} = \mathbb{R}$ and conjugate-linear if $\mathbb{F} = \mathbb{C}$. In this sense $(\ell^p)' = \ell^{p'}$.
+\end{thmbox}
+
+\begin{proof}
+Wu first treated $1 < p < \infty$ (so $p' < \infty$) and then indicated the changes for $p = 1$, $p' = \infty$; the reason for separating the cases is that $\|a\|_{p'}$ is written differently for $p' = \infty$.
+
+\textbf{Step 1: every $a \in \ell^{p'}$ gives a bounded functional.} Let $a \in \ell^{p'}$. By H\"older's inequality (Theorem~\ref{thm:holder-seq}, with the pair $p, p'$), for $x \in \ell^p$
+\[
+\sum_{j=1}^\infty |x_j\, \overline{a_j}| = \sum_{j=1}^\infty |x_j|\, |a_j| \le \|x\|_p\, \|a\|_{p'} < \infty .
+\]
+%% FILL-IN: absolute convergence and linearity spelled out.
+So the series defining $\ell_a(x)$ converges absolutely, hence converges, and $\ell_a$ is well defined. It is linear, because its partial sums are linear in $x$ and limits of sums are sums of limits. It is bounded, since $|\ell_a(x)| \le \sum_j |x_j|\,|a_j| \le \|a\|_{p'}\, \|x\|_p$. Hence $\ell_a \in (\ell^p)'$ and $\|\ell_a\| \le \|a\|_{p'}$. (Wu put the bar on $a_j$ ``just in case'' $\mathbb{F} = \mathbb{C}$, so that for $p = 2$ the formula is the inner product of $\ell^2$, as in Example~\ref{ex:L2-dual}.)
+
+\textbf{Step 2: the candidate $a$, and $a \in \ell^{p'}$.} Let $\ell \in (\ell^p)'$. We want to write $\ell$ as in Step 1. The $j$-th entry of $a$ can be read off by testing on $e_j \in \ell^p$: if $\ell = \ell_a$, then $\ell(e_j) = \overline{a_j}$. Inspired by this, \emph{define}
+\[
+a_j = \overline{\ell(e_j)} \in \mathbb{F}, \qquad a = (a_1, a_2, \ldots) .
+\]
+Infinite sums are difficult, so start with finite ones. A finite sequence $x = (x_1, \ldots, x_n, 0, 0, \ldots)$ is the finite linear combination $\sum_{j=1}^n x_j e_j$, so by linearity of $\ell$
+\begin{equation}\label{eq:lp-finite}
+\ell(x) = \sum_{j=1}^n x_j\, \ell(e_j) = \sum_{j=1}^n x_j\, \overline{a_j} .
+\end{equation}
+Now we show $a \in \ell^{p'}$, by computing its norm with a special choice of $x$.
+
+\emph{Case 1: $1 < p < \infty$, so $1 < p' < \infty$.} Fix $n$. The quantity to bound is $\sum_{j=1}^n |a_j|^{p'}$, and we write each term in the form $x_j\, \overline{a_j}$ of \eqref{eq:lp-finite}:
+\[
+|a_j|^{p'} = |a_j|^{p'-2}\, a_j\, \overline{a_j} .
+\]
+So take $x_j = |a_j|^{p'-2} a_j$ for $j \le n$, and $x^0 = (x_1, \ldots, x_n, 0, 0, \ldots) \in \ell^p$.
+%% FILL-IN: the exponent p'-2 may be negative; the definition at a_j = 0.
+(If $p' < 2$ and $a_j = 0$, the power $|a_j|^{p'-2}$ is undefined; set $x_j = 0$ then. The identity $|a_j|^{p'} = x_j\, \overline{a_j}$ still holds, both sides being $0$.) Its norm: $|x_j| = |a_j|^{p'-1}$, so
+\[
+\|x^0\|_p^p = \sum_{j=1}^n |x_j|^p = \sum_{j=1}^n |a_j|^{(p'-1)p} = \sum_{j=1}^n |a_j|^{p'},
+\]
+because $(p' - 1)\,p = p'$. %% FILL-IN: the exponent identity.
+(Multiplying $\frac1p + \frac1{p'} = 1$ by $p p'$ gives $p' + p = p p'$, so $(p'-1)\,p = p p' - p = p'$.) Wu: ``when things are correct, it will just work out fine.'' Write $S_n = \sum_{j=1}^n |a_j|^{p'}$. By \eqref{eq:lp-finite} and the choice of $x^0$,
+\[
+\ell(x^0) = \sum_{j=1}^n x_j\, \overline{a_j} = \sum_{j=1}^n |a_j|^{p'} = S_n ,
+\]
+and since $\ell$ is bounded,
+\[
+S_n = |\ell(x^0)| \le \|\ell\|\, \|x^0\|_p = \|\ell\|\, S_n^{1/p} .
+\]
+$S_n$ is a finite number, so we may divide. If $S_n = 0$ there is nothing to prove. Otherwise, dividing by $S_n^{1/p}$, $S_n^{1 - 1/p} \le \|\ell\|$, and $1 - \frac1p = \frac1{p'}$:
+\[
+\Bigl( \sum_{j=1}^n |a_j|^{p'} \Bigr)^{1/p'} \le \|\ell\| \qquad \text{for every } n .
+\]
+The left side increases with $n$ and is bounded, so letting $n \to \infty$,
+\[
+\|a\|_{p'} = \Bigl( \sum_{j=1}^\infty |a_j|^{p'} \Bigr)^{1/p'} \le \|\ell\| .
+\]
+So $a \in \ell^{p'}$, and \eqref{eq:lp-finite} says that $\ell(x) = \sum_j x_j \overline{a_j}$ for every finite sequence $x$.
+
+\textbf{Step 3: $\ell = \ell_a$ on all of $\ell^p$.} The formula holds on finite sequences, and these are dense in $\ell^p$; this is where $p < \infty$ is used. Let $x = (x_1, x_2, \ldots) \in \ell^p$ and $x^{(n)} = (x_1, \ldots, x_n, 0, 0, \ldots)$. Then $x^{(n)} \to x$ in $\ell^p$, because
+\[
+\|x - x^{(n)}\|_p^p = \sum_{j=n+1}^\infty |x_j|^p \to 0 \qquad (n \to \infty),
+\]
+the tail of a convergent series. A bounded linear functional is continuous (Proposition~\ref{prop:bounded-continuous}), so $\ell(x^{(n)}) \to \ell(x)$. On the other hand, by \eqref{eq:lp-finite},
+\[
+\ell(x^{(n)}) = \sum_{j=1}^n x_j\, \overline{a_j} ,
+\]
+and these are the partial sums of the series $\sum_j x_j \overline{a_j}$, which converges to $\ell_a(x)$ by Step 1 (H\"older, as $x \in \ell^p$ and $a \in \ell^{p'}$). Limits are unique, so $\ell(x) = \ell_a(x)$.
+
+\emph{Case 2: $p = 1$, $p' = \infty$.} Step 1 is unchanged, and so is Step 3. %% FILL-IN: Step 3 for p = 1 (Wu: "the rest is similar").
+(It uses only $\|x - x^{(n)}\|_1 = \sum_{j > n} |x_j| \to 0$ and H\"older with the pair $1, \infty$.) In Step 2 we still have \eqref{eq:lp-finite}, and now want $a \in \ell^\infty$, i.e.\ a bound on each $|a_j|$. If $a_j = 0$ there is nothing to prove. Otherwise write $|a_j| = \frac{a_j}{|a_j|}\, \overline{a_j}$ and let
+\[
+x = \frac{a_j}{|a_j|}\, e_j = \Bigl( 0, \ldots, 0, \frac{a_j}{|a_j|}, 0, \ldots \Bigr) ,
+\]
+zero except in one component. Then $\|x\|_1 = 1$, and by \eqref{eq:lp-finite} $\ell(x) = \frac{a_j}{|a_j|}\, \overline{a_j} = |a_j|$. Hence
+\[
+|a_j| = |\ell(x)| \le \|\ell\|\, \|x\|_1 = \|\ell\| \qquad \text{for all } j,
+\]
+so $\|a\|_\infty \le \|\ell\|$ and $a \in \ell^\infty$.
+
+%% FILL-IN: the consequences stated in the box (norm equality, one-to-one, conjugate-linearity).
+\textbf{Conclusion.} Let $a \in \ell^{p'}$. Applying Step 2 to $\ell = \ell_a$, the candidate is $a$ itself, since $\ell_a(e_j) = \overline{a_j}$; so $\|a\|_{p'} \le \|\ell_a\|$, and with Step 1, $\|\ell_a\| = \|a\|_{p'}$. The map $a \mapsto \ell_a$ is onto by Steps 2--3, and one-to-one: if $\ell_a = \ell_b$, then $\overline{a_j} = \ell_a(e_j) = \ell_b(e_j) = \overline{b_j}$ for every $j$. Termwise, $\ell_{a + b} = \ell_a + \ell_b$ and $\ell_{ca} = \bar c\, \ell_a$.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[The Pairing Without the Bar]\label{rem:lp-dual-bar}
+Over $\mathbb{C}$ one can equally use the pairing without the bar: $a \mapsto \ell_{\bar a}$, $\ell_{\bar a}(x) = \sum_j x_j a_j$, is a \emph{linear} one-to-one, onto, norm-preserving map $\ell^{p'} \to (\ell^p)'$, i.e.\ an isometric isomorphism. With the bar, the case $p = 2$ is the Riesz representation of $(\ell^2)'$ (Example~\ref{ex:L2-dual}), and the map is conjugate-linear exactly like the Riesz map (Corollary~\ref{cor:riesz-map}). The test vector $x_j = |a_j|^{p'-2} a_j$ of Step 2 is the vector for which H\"older's inequality is an equality; the same choice reappears below.
+\end{rembox}
+%% <<< END ADDED
+
+\begin{corbox}[{{Duality Formula for the $\ell^p$ Norm}}]\boxlabel{cor:lp-duality}
+Let $1 \le p < \infty$. For every $a \in \ell^p$,
+\[
+\|a\|_p = \max \Bigl\{ \Bigl| \sum_{j=1}^\infty a_j\, \overline{b_j} \Bigr| : b \in \ell^{p'},\ \|b\|_{p'} = 1 \Bigr\} .
+\]
+\laxref{\S5.1, Thm~5}
+\end{corbox}
+
+\begin{proof}
+By Theorem~\ref{thm:norm-max} with $X = \ell^p$ (in the version with $\|\ell\| = 1$), $\|a\|_p = \max \{ |\ell(a)| : \ell \in (\ell^p)',\ \|\ell\| = 1 \}$. By Theorem~\ref{thm:lp-seq-dual}, the functionals $\ell \in (\ell^p)'$ are exactly the $\ell_b$ with $b \in \ell^{p'}$, with $\|\ell_b\| = \|b\|_{p'}$ and $\ell_b(a) = \sum_j a_j \overline{b_j}$. Substituting gives the formula.
+\end{proof}
+
+\begin{rembox}[Why Duality Formulas are Useful]\label{rem:why-duality}
+Wu: instead of computing the $p$-th power sum $\bigl( \sum_j |a_j|^p \bigr)^{1/p}$, which can be awkward, one multiplies $a$ by an arbitrary $b$ in the unit sphere of $\ell^{p'}$ and maximizes; that is much easier to work with. ``This kind of formula is called duality.'' For functions it reads
+\[
+\|f\|_{L^p} = \sup \Bigl\{ \Bigl| \int f(x)\, \overline{g(x)}\, d\mu(x) \Bigr| : \|g\|_{L^{p'}} = 1 \Bigr\} .
+\]
+%% ADDED: the explicit maximizer (not from lecture).
+For $1 < p < \infty$ the maximum can also be exhibited directly: for $a \neq 0$, $b_j = |a_j|^{p-2} a_j / \|a\|_p^{p-1}$ ($b_j = 0$ where $a_j = 0$) has $\|b\|_{p'}^{p'} = \sum_j |a_j|^{(p-1)p'} / \|a\|_p^{(p-1)p'} = 1$, since $(p-1)p' = p$, and $\sum_j a_j \overline{b_j} = \sum_j |a_j|^p / \|a\|_p^{p-1} = \|a\|_p$; for $p = 1$ take $b_j = a_j/|a_j|$ where $a_j \neq 0$ and $b_j = 1$ elsewhere. Together with H\"older this proves Corollary~\ref{cor:lp-duality} without Theorem~\ref{thm:lp-seq-dual}, and the same choice $g = |f|^{p-2} f / \|f\|_{L^p}^{p-1}$ shows the supremum for functions is a maximum for $1 \le p < \infty$. This is Lax's route to Minkowski's inequality (Concordance, C.2). What Theorem~\ref{thm:lp-seq-dual} adds is that \emph{every} bounded functional on $\ell^p$ is of the form $\ell_b$.
+\end{rembox}
+
+\begin{rembox}[{{The Dual of $L^p$, Revisited}}]\label{rem:Lp-dual-measure}
+Wu: similarly, for any measure space $(X, \mu)$, e.g.\ $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem~\ref{thm:Lp-dual}. For those who have learned measure theory, the candidate is found with the Radon--Nikodym theorem, and the rest goes as for sequences; Wu left the proof to the class (an outline is given after Theorem~\ref{thm:Lp-dual}).
+%% ADDED: the sigma-finiteness caveat (not said in lecture).
+For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed. Wu also set the scope of the midterm: results that need measure theory (the $L^p$ spaces, beyond their basic properties) and the PDE applications will not be tested; $\ell^p$ will.
+\end{rembox}
+
+\begin{exbox}[{{$(\ell^\infty)'$ is Larger than $\ell^1$}}]\boxlabel{ex:linfty-dual}
+Wu: the theorem fails for $p = \infty$. $(\ell^\infty)' \neq \ell^1$, and likewise $(L^\infty)' \neq L^1$; the dual of $\ell^\infty$ can be described as a space of finite measures on $\mathbb{N}$.
+%% ADDED: precision (finitely additive), and the reason Step 3 fails.
+(Precisely: bounded \emph{finitely} additive set functions on the subsets of $\mathbb{N}$; the countably additive ones correspond to $\ell^1$.) In the homework the space is not $\ell^\infty$ but $c_0$, the sequences tending to $0$ (Proposition~\ref{prop:c0}); there the finite sequences are dense, and the same strategy as in Theorem~\ref{thm:lp-seq-dual} applies. In $\ell^\infty$ they are not dense: for every finite sequence $x$, $\|(1, 1, 1, \ldots) - x\|_\infty \ge 1$. So Step 3 of the proof breaks down.
+\end{exbox}
+
+\begin{proof}
+%% FILL-IN: a proof that (l^infty)' is not l^1 (stated in lecture without proof).
+(Stated in lecture without proof.) We show that $a \mapsto \ell_a$, $\ell^1 \to (\ell^\infty)'$, is not onto. Step 1 of Theorem~\ref{thm:lp-seq-dual} works for $p = \infty$, $p' = 1$: each $a \in \ell^1$ gives $\ell_a \in (\ell^\infty)'$. Let $c \subset \ell^\infty$ be the linear subspace of convergent sequences and $\lambda(x) = \lim_{j \to \infty} x_j$ on $c$. Then $\lambda$ is linear and $|\lambda(x)| \le \sup_j |x_j| = \|x\|_\infty$, so $\|\lambda\|_c \le 1$. By Theorem~\ref{thm:hb-normed}, $\lambda$ extends to some $L \in (\ell^\infty)'$. If $L = \ell_a$ with $a \in \ell^1$, then $\overline{a_j} = L(e_j) = \lambda(e_j) = 0$ for every $j$ (since $e_j \in c$ tends to $0$), so $a = 0$ and $L = 0$; but $L(1, 1, 1, \ldots) = \lambda(1, 1, 1, \ldots) = 1$. So $L$ is not of the form $\ell_a$.
+\end{proof}
+
+\subsection{Distance to a Subspace}
+
+The next theorem extends Theorem~\ref{thm:norm-max}, which is the case $Y = \{0\}$, from the norm of a vector to its distance from a subspace.
+
+\begin{thmbox}[Distance to a Subspace]\boxlabel{thm:distance}
+Let $X$ be a normed linear space over $\mathbb{F}$, $Y$ a linear subspace of $X$, and $z \in X$. Then
+\[
+\inf_{y \in Y} \|z - y\| = \max \bigl\{ |\ell(z)| : \ell \in X',\ \|\ell\| \le 1,\ \ell(y) = 0 \text{ for all } y \in Y \bigr\} .
+\]
+\end{thmbox}
+
+%% FIGURE (board): redrawn from Wu's board sketch; labels and caption by Claude
+\begin{center}
+\begin{tikzpicture}[scale=1.25, >=stealth]
+    \fill[blue!6] (-2.4,-0.7) -- (1.6,-0.7) -- (2.6,0.5) -- (-1.4,0.5) -- cycle;
+    \draw[thick, blue!70!black] (-2.4,-0.7) -- (1.6,-0.7) -- (2.6,0.5) -- (-1.4,0.5) -- cycle;
+    \node[blue!70!black] at (-1.85,-0.45) {$Y$};
+    \fill (-0.6,-0.25) circle (1.2pt) node[below left] {$0$};
+    \coordinate (P) at (0.7,-0.05);
+    \coordinate (Z) at (0.7,1.75);
+    \fill (Z) circle (1.4pt) node[above right] {$z$};
+    \fill (P) circle (1.2pt);
+    \draw[dashed, thick, red!75!black] (P) -- (Z);
+    \node[red!75!black, anchor=west, align=left] at (0.75,0.85) {$\inf_{y \in Y} \|z - y\|$};
+    \draw (P) ++(0,0.18) -- ++(0.16,0) -- ++(0,-0.18);
+    \draw[->, thick] (-1.5,0.1) -- (-1.5,1.55) node[above] {$Y^\perp$};
+    \draw[->] (-0.6,-0.25) -- (Z);
+\end{tikzpicture}
+\end{center}
+Wu's heuristic, ``cheating a little'' by pretending there is an inner product: the distance from $z$ to $Y$ is the length of the perpendicular from $z$ to $Y$, i.e.\ of the projection of $z$ onto the perpendicular direction $Y^\perp$. If $Y^\perp$ is spanned by orthonormal $e_j$, that projection is $\sum_j (z, e_j)\, e_j$, and each $(z, e_j)$ is a bounded functional of norm $1$ vanishing on $Y$, applied to $z$. In a normed space ``perpendicular to $Y$'' is replaced by ``a functional vanishing on $Y$'', and the theorem says the heuristic is exact.
+
+\begin{proof}
+\textbf{Step 1: $\sup \le \inf$.} Let $\ell \in X'$ with $\|\ell\| \le 1$ and $\ell(y) = 0$ for all $y \in Y$. Then $\ell(z) = \ell(z) - \ell(y) = \ell(z - y)$ for every $y \in Y$, so
+\[
+|\ell(z)| \le \|\ell\|\, \|z - y\| \le \|z - y\| \qquad \text{for all } y \in Y .
+\]
+(Wu: the bound $\|\ell\| \le 1$ is essential; otherwise $\ell$ could be multiplied by any constant.) Taking the infimum over $y$, $|\ell(z)| \le \inf_{y \in Y} \|z - y\|$; then taking the supremum over all such $\ell$,
+\[
+\sup \bigl\{ |\ell(z)| : \ell \in X',\ \|\ell\| \le 1,\ \ell|_Y = 0 \bigr\} \le \inf_{y \in Y} \|z - y\| .
+\]
+We do not yet know that the supremum is attained.
+
+\textbf{Step 2: a functional attaining the infimum.} Fix $z_0 \in X$; the functional found depends on $z_0$ (a student asked whether the same $\ell$ works for every $z$; it does not, just as the maximizing functional in Theorem~\ref{thm:norm-max} depends on $y_0$). Let
+\[
+m = \inf_{y \in Y} \|z_0 - y\| \ \ge 0 .
+\]
+We want $L \in X'$ with $\|L\| \le 1$, $L(y) = 0$ for all $y \in Y$, and $L(z_0) = m$.
+
+If $z_0 \in Y$, there is nothing to prove: %% FILL-IN: why (Wu: "nothing to prove").
+taking $y = z_0$ shows $m = 0$, and $L = 0$ does it. So assume $z_0 \notin Y$, and let
+\[
+Y_1 = \operatorname{span}\{z_0, Y\} = \{ c\, z_0 + y : c \in \mathbb{F},\ y \in Y \} .
+\]
+%% FILL-IN: uniqueness of the representation c z_0 + y, which makes the definition below legitimate.
+Each element of $Y_1$ has only one such representation: if $c\, z_0 + y = c'\, z_0 + y'$, then $(c - c')\, z_0 = y' - y \in Y$; if $c \neq c'$ this would put $z_0 = (y' - y)/(c - c')$ in $Y$, so $c = c'$, and then $y = y'$. Define $\ell : Y_1 \to \mathbb{F}$ by
+\[
+\ell(c\, z_0 + y) = c\, m, \qquad \text{so } \ell(z_0) = m \text{ and } \ell(y) = 0 \text{ for } y \in Y .
+\]
+It is linear: $(c\, z_0 + y) + (c'\, z_0 + y') = (c + c')\, z_0 + (y + y')$ is sent to $(c + c')\, m$, and $a(c\, z_0 + y) = (ac)\, z_0 + ay$ to $ac\, m$.
+
+\emph{$\|\ell\|_{Y_1} \le 1$.} Let $c\, z_0 + y \in Y_1$; then $|\ell(c\, z_0 + y)| = |c|\, m$. If $c \neq 0$, put the $c$ inside: since $-y/c \in Y$ and $m$ is the infimum of $\|z_0 - y_0\|$ over $y_0 \in Y$ (the name $y_0$ avoids a clash with $y$),
+\[
+|c|\, m \le |c|\, \Bigl\| z_0 - \Bigl( -\frac{y}{c} \Bigr) \Bigr\| = \Bigl\| c\, z_0 + y \Bigr\| .
+\]
+%% FILL-IN: the case c = 0.
+If $c = 0$, $|\ell(y)| = 0 \le \|y\|$. So $|\ell(w)| \le \|w\|$ for every $w \in Y_1$, i.e.\ $\|\ell\|_{Y_1} \le 1$.
+
+\emph{Extend.} By Theorem~\ref{thm:hb-normed}, $\ell$ has an extension $L \in X'$ with $\|L\| = \|\ell\|_{Y_1} \le 1$. Then $L(y) = \ell(y) = 0$ for $y \in Y$ and $L(z_0) = \ell(z_0) = m$.
+
+\textbf{Step 3: conclusion.} By Step 2 the supremum in Step 1 is at least $|L(z_0)| = m$; with Step 1 it equals $m$ and is attained at $L$. So it is a maximum, equal to $\inf_{y \in Y} \|z_0 - y\|$.
+\end{proof}
+
+\begin{rembox}[How to Find the Proof]\label{rem:distance-how}
+A student asked how one would think of the subspace $Y_1$. Wu: first, believe the statement, because it is true in a Hilbert space (the picture above). Then what is left is to find an $\ell$ with $\|\ell\| \le 1$, $\ell = 0$ on $Y$ (``somehow perpendicular to $Y$'') and $\ell(z_0) = m$. On the span of $z_0$ and $Y$ these requirements leave no choice (up to replacing $m$ by $e^{i\theta} m$), so define $\ell$ there, check its norm, and let Hahn--Banach extend it. Extensions are usually not unique; on the smaller space there is no choice. ``It's really just pure logic.'' The proof of Theorem~\ref{thm:norm-max} is the same argument with $Y = \{0\}$.
+%% ADDED: sentences (not said in lecture).
+Closedness of $Y$ is not needed: if $z_0$ lies in the closure of $Y$ but not in $Y$, then $m = 0$ and the construction gives $L = 0$. If $Y$ is closed and $z_0 \notin Y$, then $m > 0$ (a ball around $z_0$ misses $Y$), so there is an $L \in X'$ vanishing on $Y$ with $L(z_0) \neq 0$.
+\end{rembox}
+
+\subsection{The Annihilator}
+
+By now the duality is visible, and it is natural to define a ``perpendicular'' in a normed space.
+
+\begin{defbox}[Annihilator]\boxlabel{def:annihilator}
+Let $X$ be a normed linear space and $Y$ a linear subspace of $X$. The \textbf{annihilator} of $Y$ is
+\[
+Y^\perp = \{ \ell \in X' : \ell(y) = 0 \text{ for all } y \in Y \} ,
+\]
+the set of bounded linear functionals vanishing on $Y$.
+\end{defbox}
+
+In this notation Theorem~\ref{thm:distance} reads $\inf_{y \in Y} \|z - y\| = \max_{\ell \in Y^\perp,\ \|\ell\| \le 1} |\ell(z)|$.
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[Two Meanings of $Y^\perp$]\label{rem:two-perps}
+The annihilator is a subset of $X'$, while the orthogonal complement of a subspace of a Hilbert space (Definition~\ref{def:orth}) is a subset of $H$. The shared notation is consistent: under the Riesz map $a \mapsto \ell_a$, $\ell_a(y) = (y, a) = 0$ for all $y \in Y$ exactly when $a$ is orthogonal to $Y$, so the Riesz map carries the orthogonal complement of $Y$ onto its annihilator.
+\end{rembox}
+%% <<< END ADDED
+
+\begin{propbox}[The Annihilator is a Closed Subspace]\boxlabel{prop:annihilator-closed}
+Let $X$ be a normed linear space and $Y$ a linear subspace of $X$. Then $Y^\perp$ is a closed linear subspace of $X'$.
+\end{propbox}
+
+\begin{proof}
+\emph{Linear subspace.} The zero functional vanishes on $Y$. If $\ell_1, \ell_2$ vanish on $Y$ and $c_1, c_2 \in \mathbb{F}$, then $(c_1 \ell_1 + c_2 \ell_2)(y) = c_1 \ell_1(y) + c_2 \ell_2(y) = 0$ for $y \in Y$.
+
+\emph{Closed.} Let $\ell_n \in Y^\perp$ with $\ell_n \to \ell$ in $X'$. %% FILL-IN: why the limit vanishes on Y (Wu: "that's obvious").
+For $y \in Y$,
+\[
+|\ell(y)| = |\ell(y) - \ell_n(y)| = |(\ell - \ell_n)(y)| \le \|\ell - \ell_n\|\, \|y\| \to 0 ,
+\]
+so $\ell(y) = 0$, and $\ell \in Y^\perp$.
+\end{proof}
+
+\begin{thmbox}[{{The Dual of a Quotient}}]\boxlabel{thm:quotient-dual}
+Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem~\ref{thm:quotient-norm}). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$.
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+Not proved in lecture: a homework problem, due the following week.
+\end{proof}
+
+Wu's motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem~\ref{thm:orth-decomp}), and in any linear space $X \cong X/Y \oplus Y$ (Theorem~\ref{thm:quotient-iso}); so $X/Y$ and $Y^\perp$ look like each other's dual. A student asked what ``isometrically'' means: both sides carry a norm --- $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ --- and the isomorphism preserves it. Wu: although today's material looks simple, it will be on the midterm.
+
+% ============================================================================
 % SECTION 29: R^n, C^m AND L^p (EXAMPLES REVISITED)
 % ============================================================================
 
@@ -6895,6 +7297,7 @@ When two limits are present (an index $m \to \infty$ inside a sum over $i$, and 
 \item \textbf{Minkowski for sequences} (lecture, Theorem~\ref{thm:minkowski-seq}): the cancellation of $\|a+b\|_p^{\,p-1}$ is only valid for finitely supported sequences; the general case follows by truncation.
 \item \textbf{Completeness of $\ell^p$}, Step 2 (Theorem~\ref{thm:lp-complete}): the order truncate $\to$ $m \to \infty$ $\to$ $k \to \infty$.
 \item \textbf{H\"older for finite sums} is the special case of Theorem~\ref{thm:holder-seq} with zero tails; conversely no truncation is needed there because every quantity is a sum of non-negative terms and inequalities in $[0,\infty]$ suffice.
+\item \textbf{The dual of $\ell^p$}, Step 2 (Lecture 13, Theorem~\ref{thm:lp-seq-dual}): test $\ell$ on the truncated H\"older-extremal vector $x_j = |a_j|^{p'-2} a_j$, $j \le n$, divide the finite sum $S_n$ out, and let $n \to \infty$.
 \end{itemize}
 \end{exbox}
 
@@ -7089,10 +7492,11 @@ For a linear functional $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the ve
 To prove an inequality or identity between continuous quantities on a space, prove it on a dense subset, where the functions are smooth and the classical tools (fundamental theorem of calculus, integration by parts) apply; then approximate a general element and pass to the limit, using that norms (reverse triangle inequality) and inner products (Cauchy--Schwarz) are continuous. Wu: ``a usual technique \ldots\ we only need to show it for a dense subset.''
 \end{rembox}
 
-\begin{exbox}[Applications (Lectures 11--12)]\boxlabel{ex:tech19}
+\begin{exbox}[Applications (Lectures 11--13)]\boxlabel{ex:tech19}
 \begin{itemize}
 \item Poincar\'e on $H^1_0$ (Corollary~\ref{cor:poincare-H10}), from Poincar\'e on $C_c^\infty$.
 \item Limits in $W^{1,p}$ satisfy integration by parts (Proposition~\ref{prop:limit-ibp}).
+\item A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem~\ref{thm:lp-seq-dual}, Step 3); the same fails in $\ell^\infty$ (Example~\ref{ex:linfty-dual}).
 \end{itemize}
 \end{exbox}
 
@@ -7119,6 +7523,22 @@ When the Riesz theorem produces an element $g_0$ satisfying $\int f\,(\cdots g_0
 
 \begin{exbox}[Application (Lecture 12)]\boxlabel{ex:tech21}
 The Radon--Nikodym theorem (Theorem~\ref{thm:radon-nikodym}): $\chi_{F_1}$, $\chi_{F_2}$ give $0 < g_0 \le 1$; $\chi_{E_k}/g_0$ gives the density.
+\end{exbox}
+
+% --------------------------------------------------------------------------
+%% Lecture 13 (Claude): new technique.
+\subsection{Technique 22: Define the Functional Where There is No Choice, Then Extend}
+
+\begin{rembox}[Strategy]\label{rem:tech22}
+To produce a bounded functional with prescribed properties (a given value at a point, zero on a subspace, norm at most $1$), find the smallest subspace on which the requirements already determine it --- the span of the point, or of the point and the subspace --- define it there, and check its norm on that subspace by hand. Then Hahn--Banach for normed spaces (Theorem~\ref{thm:hb-normed}) extends it to the whole space without increasing the norm. Before defining it, check that the formula is well defined: the representation of an element of the span must be unique. Wu: ``we really don't have a lot of choice'' on the small space; ``extensions are usually not unique''.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 13)]\boxlabel{ex:tech22}
+\begin{itemize}
+\item $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem~\ref{thm:norm-max}): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
+\item The distance formula (Theorem~\ref{thm:distance}): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
+\item $(\ell^\infty)' \neq \ell^1$ (Example~\ref{ex:linfty-dual}): $\lambda(x) = \lim x_j$ on the convergent sequences.
+\end{itemize}
 \end{exbox}
 
 
@@ -7200,6 +7620,7 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:bounded-maps} Bounded linear maps & \S15.1, Thms~1--3 & Lax assumes Banach spaces throughout \S15.1; not needed for Thm~1. \\
 \ref{sec:lax-milgram} Lax--Milgram & \S6.3, Thm~6 & Proved through the operator $A$ of Theorem~\ref{thm:form-operator}: one-to-one with a lower bound, closed range, dense range. \\
 \ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
+\ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text here, so no Ch.~8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }
