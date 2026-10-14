@@ -62,6 +62,26 @@ From the recordings (Otter transcripts, garbled):
 - The non-relativistic limit of the Klein–Gordon equation (Lecture 2: "you can check … that the Klein–Gordon equation gives a sensible non-relativistic limit"): no QFT box; [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-3|§C1b.1, Remark: What the Klein–Gordon equation is, and what it is not]] points to Relativity §B4.1 (Notes Drill class exercise ^nd-cx-2-2).
 - Three alternative derivation routes in [[§C5a.9 Plane-Wave Solutions|§C5a.9]] Plane-Wave Solutions have no block IDs (the second route of Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|§C5a.9.7]] The Square-Root Identities, the third route of $u$ and of $\bar v$ after Derivation §C5a.9.9b), so the drill describes them by position.
 
+## Priority path: class + homework first
+
+Your rule (Oct 14): first what was **taught in class**, together with what **the homework** used, either directly or through the techniques it drilled. Every Notes Drill entry carries a tag: **[A]** taught in class *and* tied to the homework (a problem set, or a technique the problem sets use at least five times: γ-matrix algebra K5, index calculus K2, contours K13, commutator algebra K11, mode substitution K9, bilinears and projectors K7, invariants K1, exponentiating generators K4, dimensions K8, Noether K12, invariance arguments K14, discrete symmetries on fields K15); **[B]** only one of the two; **[C]** neither (book support, mathematics background). The [[PHY 513 PS Drill]] is homework by definition, so all of it is priority.
+
+| Topic | [A] entries | [A] questions | [A] hours | [B] entries | [B] hours | [C] entries |
+|---|---|---|---|---|---|---|
+| T1 Relativity, index notation and natural units | 9 | 48 | 1.6 | 27 | 3.9 | 0 |
+| T2 Causality and the single particle | 3 | 18 | 0.6 | 8 | 1.1 | 0 |
+| T3 Classical field theory: action, Euler–Lagrange, Hamiltonian, mass dimension | 10 | 54 | 1.8 | 20 | 2.8 | 7 |
+| T4 Noether: currents, charges, energy–momentum tensor, Lorentz charges | 8 | 45 | 1.5 | 22 | 3.1 | 9 |
+| T5 Canonical quantization of the scalar: modes, H, P, Q, states | 9 | 52 | 1.7 | 33 | 4.5 | 3 |
+| T6 Two-point functions, causality, Green's functions and propagators | 22 | 111 | 3.7 | 93 | 11.1 | 22 |
+| T7 Lorentz group, algebra and representations | 5 | 26 | 0.9 | 42 | 6.5 | 9 |
+| T8 Spinors, the Dirac equation and its solutions | 25 | 122 | 4.1 | 74 | 10.1 | 2 |
+| T9 Quantization of the Dirac field | 9 | 50 | 1.7 | 36 | 5.4 | 1 |
+| T10 Discrete symmetries P, C, T and CPT | 23 | 125 | 4.2 | 37 | 5.3 | 1 |
+| **All** | **123** | **651** | **22** | 392 | 54 | 54 |
+
+Hours assume about 2 minutes per question (recall about 1, a derivation step about 3). **Two days do not cover all of [A] and the PS Drill.** Within them, take first: the short-response round and PS7.1; the PS Drill for PS4–PS7; the [A] entries of T5, T6, T8, T9, T10; then [A] of T7 and the [A] definitions of T1–T4. [B] and [C] wait for the final.
+
 ## How the objects grew
 The course builds each object more than once, then shows the versions agree. Each row is drilled in [[PHY 513 Notes Drill#Equivalences|Notes Drill: Equivalences]].
 

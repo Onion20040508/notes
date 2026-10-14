@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591, review]
 
 # Midterm Review: Plan and Checklist
 
-**The exam.** Wednesday Oct 21, 6–8 pm. **Scope (course information, Lecture 19): through the end of vector fields, Lecture 18 at the latest** — so §58–§59 (Sard's theorem, Lecture 19) and the matrix-group bracket of Lecture 19 are not on the midterm. Review session Friday Oct 16 (previous exams and your questions). Two past midterms (2025, 2021) have the same three parts, 5 points per item:
+**The exam.** Wednesday Oct 21, 6–8 pm. **Scope (Uribe's email, Oct 14): everything through commutators of vector fields** — vector fields as sections of $TM$ and as operators on functions, the commutator of two vector fields ("make sure you know how to compute it"), and the notion and properties of $F$-related fields, finished in Lecture 17 (Fri Oct 9). "Nothing about Lie groups is included", so §57 and Chapter 8 (Sard) are out. Review session Friday Oct 16 (previous exams and your questions; you can email him topics or old exam questions in advance). He is not available during the break, but a meeting on Wednesday Oct 21 can be arranged by email. Two past midterms (2025, 2021) have the same three parts, 5 points per item:
 1. **Working with definitions**: explain or define precisely, e.g. $\partial/\partial x^j|_p$, $F_{\ast,p}$, a vector bundle, an atlas of $T^\ast M$, injective immersion vs embedding.
 2. **True or false with justification**: a proof or a counterexample.
 3. **Short proofs and computations**: a lecture theorem reproved from a normal form, a transversality condition, a matrix manifold and its tangent space, a differential computed from the definition.
@@ -41,11 +41,16 @@ Points he stressed in lecture, and where they live:
 - Tick a box only when you can do it on paper without looking.
 - The **Strategies** and **Counterexamples** sections at the end are the grammar and the vocabulary of the course; every proof checklist item names the strategy it uses.
 
-**Suggested order of passes** (topics are independent; no dates):
+**Suggested order of passes** (topics are independent; no dates). Priority follows what the exam draws on: what was **said in class** and what the **homework** did, directly or through its techniques. The [[Differentiable Manifolds Notes Drill]] groups every topic's entries this way:
+- **Priority 1**: homework.
+- **Priority 2**: class.
+- **Priority 3**: a technique the homework drills.
+- **Priority 4**: notes only.
+
 1. *Diagnostic.* Take the 2021 midterm cold, 2 hours, closed notes. Mark which topics hurt.
-2. *Language pass.* All Language boxes, every topic. This is the fastest gain on Part 1 and Part 2.
-3. *Proof pass.* The ★★ proofs, topic by topic; ★ ones where the diagnostic showed a gap.
-4. *Drill pass.* The homework drills, then redo the full homework problem from the decomposition.
+2. *Language pass.* The Language boxes and the Notes Drill definitions at Priority 1–2. This is the fastest gain on Part 1 and Part 2.
+3. *Homework drill.* All of [[Differentiable Manifolds HW Drill]]: the short proofs are "identical or close to" homework. Redo each full problem once its pieces are ticked.
+4. *Proof pass.* Notes Drill Priority 1–2 proofs, ★★ first; then Priority 3 for topics the diagnostic showed weak. Skip Priority 4 before the midterm.
 5. *Mock.* The 2025 midterm under exam conditions, 2 hours. Then repair, using the strategy and counterexample lists.
 
 **Not proved in the notes, so quote them:**
@@ -181,7 +186,8 @@ The notes show the course building each object more than once and then proving t
 **Proofs**
 - [ ] ★★ Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]] Local Diffeomorphisms Are Detected by the Differential, from the inverse function theorem.
 - [ ] ★★ Theorem [[§36 Submersions#^thm-36-6|§36.6]] Local Normal Form for Submersions: the engine of T7.
-- [ ] ★★ Corollary [[§36 Submersions#^cor-36-7|§36.7]] Being a Submersion Is an Open Condition, Corollary [[§36 Submersions#^cor-36-9|§36.9]] Submersions Are Open Maps, Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds
+- [ ] ★★ Corollary [[§36 Submersions#^cor-36-9|§36.9]] Submersions Are Open Maps (stressed in lecture: "locally they are projections"), Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds
+- [ ] ★ Corollary [[§36 Submersions#^cor-36-7|§36.7]] Being a Submersion Is an Open Condition
 - [ ] ★ Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]] Diffeomorphisms Are the Bijective Local Diffeomorphisms, Proposition [[§36 Submersions#^prop-36-4|§36.4]] Submersions to $\mathbb{R}^k$ and Independent Differentials
 
 **Drill**
@@ -266,15 +272,25 @@ The notes show the course building each object more than once and then proving t
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T10|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T10|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]
 
-## T11. Vector fields and Lie groups (§53–§57; check how far the exam goes)
+## T11. Vector fields, the bracket, $F$-related fields (§53–§56)
+In scope exactly as Uribe's email lists it. Lie groups (§57) are **not** on the midterm.
+
 **Language**
-- [ ] Definition [[§53 Vector Fields#^def-53-1|§53.1]] Vector Field, Definition [[§53 Vector Fields#^def-53-5|§53.5]] Derivation of $C^\infty(M)$, Definition [[§55 Lie Bracket and Lie Algebra#^def-55-1|§55.1]] The Lie Bracket of Vector Fields, Definition [[§55 Lie Bracket and Lie Algebra#^def-55-2|§55.2]] Lie Algebra, Definition [[§56 Related Vector Fields#^def-56-2|§56.2]] $F$-Related Vector Fields
-- [ ] Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]] Lie Group, Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]] Left-Invariant Vector Field, Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|§57.4]] The Lie Algebra of a Lie Group
+- [ ] Definition [[§53 Vector Fields#^def-53-1|§53.1]] Vector Field, Definition [[§53 Vector Fields#^def-53-2|§53.2]] The Space of Vector Fields, Definition [[§53 Vector Fields#^def-53-3|§53.3]] Product of a Function and a Vector Field: a vector field as a section of $TM$.
+- [ ] Definition [[§53 Vector Fields#^def-53-4|§53.4]] Operator on $C^\infty(M)$, Definition [[§53 Vector Fields#^def-53-5|§53.5]] Derivation of $C^\infty(M)$, Definition [[§53 Vector Fields#^def-53-6|§53.6]] Local Operator: a vector field as an operator on functions.
+- [ ] Definition [[§55 Lie Bracket and Lie Algebra#^def-55-1|§55.1]] The Lie Bracket of Vector Fields, Definition [[§55 Lie Bracket and Lie Algebra#^def-55-2|§55.2]] Lie Algebra
+- [ ] Definition [[§56 Related Vector Fields#^def-56-1|§56.1]] Pushforward of a Vector Field by a Diffeomorphism, Definition [[§56 Related Vector Fields#^def-56-2|§56.2]] $F$-Related Vector Fields
 
 **Proofs**
-- [ ] ★★ Lemma [[§53 Vector Fields#^lem-53-3|§53.3]] A Vector Field Is a Derivation and Proposition [[§53 Vector Fields#^prop-53-7|§53.7]] Derivations Are Vector Fields
-- [ ] ★★ Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]] The Bracket of Vector Fields Is a Vector Field
-- [ ] ★ Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]] Naturality of the Bracket, Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]] The Lie Algebra Is the Tangent Space at the Identity
+- [ ] ★★ Lemma [[§53 Vector Fields#^lem-53-3|§53.3]] A Vector Field Is a Derivation and Proposition [[§53 Vector Fields#^prop-53-7|§53.7]] Derivations Are Vector Fields: the two views agree (derivations of $C^\infty(M)$ are vector fields).
+- [ ] ★★ Lemma [[§53 Vector Fields#^lem-53-6|§53.6]] Derivations Are Local: derivations are local; uses Corollary [[§53 Vector Fields#^cor-53-5|§53.5]] Every Germ Has a Global Representative (quote Proposition [[§53 Vector Fields#^prop-53-4|§53.4]] Bump Functions Exist).
+- [ ] ★★ Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]] The Bracket of Vector Fields Is a Vector Field: the bracket is again a vector field.
+- [ ] ★★ Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]] The Bracket in Coordinates: **compute brackets in coordinates**, e.g. Example [[§55 Lie Bracket and Lie Algebra#^ex-55-1|§55.1]] A Bracket in the Plane.
+- [ ] ★★ Proposition [[§56 Related Vector Fields#^prop-56-1|§56.1]] Related Fields as Operators and Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]] Naturality of the Bracket: $F$-related fields as operators, and naturality of the bracket.
+- [ ] ★ Lemma [[§53 Vector Fields#^lem-53-8|§53.8]] A Smoothness Criterion for Vector Fields, Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-4|§55.4]] Commutators of an Associative Product, Corollary [[§55 Lie Bracket and Lie Algebra#^cor-55-5|§55.5]] Vector Fields Form a Lie Algebra, Proposition [[§56 Related Vector Fields#^prop-56-2|§56.2]] Pushforward by a Diffeomorphism, Corollary [[§56 Related Vector Fields#^cor-56-4|§56.4]] Diffeomorphisms Preserve Brackets, Example [[§56 Related Vector Fields#^ex-56-1|§56.1]] Fields Related by a Projection
+
+**Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T11|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T11|proofs and class exercises]]
 
 ## Strategies: the grammar of 591
 Each one is a reusable move. Before writing a proof, name the move.
