@@ -85,7 +85,7 @@ graph TD
 - [[· 7 Vector Fields and Lie Groups]]
 
 ## Planned topics (syllabus)
-Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§52, as derivations of $C^\infty(M)$; differential operators, §53; the Lie bracket, §54; related vector fields, §55); one-forms ✓ (§50; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §56; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
+Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§53, as derivations of $C^\infty(M)$; differential operators, §54; the Lie bracket, §55; related vector fields, §56); one-forms ✓ (§51; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §57; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)
@@ -124,6 +124,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§52
 - [[The Lie Algebra Is the Tangent Space at the Identity]] (§57.7)
 
 ## Summaries
+- [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]], every homework problem broken into small questions.
 - [[Differentiable Manifolds Lee Concordance]]: notation, where the course's route differs from Lee's, the chapter map, and every Lee result cited in these notes with its counterpart here.
 - [[Differentiable Manifolds Course Log]]: lectures and homework, and where each is in these notes.
 
