@@ -165,6 +165,8 @@ tags: [measure-theory, math551]
 > - (iii) $\displaystyle\int_{\mathbb{R}^p} m(E_x)\,dx = m(E)$.
 
 ^thm-25-4
+> [!remark]- Connections
+> - A compact-set version proved without measurability or integrals, used in the proof of Sard's theorem: [[§58 Sets of Measure Zero#^lem-58-5|591 §58.5]].
 
 ![[m551-17-1.svg]]
 *A cross-section: the vertical line over $x \in \mathbb{R}^p$ meets $E$ in $E_x$ (red; here two segments). The theorem says that integrating the sizes $m(E_x)$ over $x$ recovers $m(E)$ (Cavalieri's principle); it is Tonelli's theorem for $f = \chi_E$.*

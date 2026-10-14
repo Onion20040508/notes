@@ -338,17 +338,17 @@ $F(x,y,u,v) = (x^2-y^2-u^2+v^2+2u,\ 2xy-2uv+2v)$, $M = F^{-1}(-1,0)$. Show $M$ i
 
 ### HW2.4 The unitary group
 
-Prove $U(n) = F^{-1}(I)$ for $F : \mathrm{Mat}(n,\mathbb{C}) \to \mathrm{Herm}(n)$, $g \mapsto gg^*$ (both real vector spaces) inherits a smooth manifold structure; find $\dim U(n)$ and its geometric tangent space at $g$.
+Prove $U(n) = F^{-1}(I)$ for $F : \mathrm{Mat}(n,\mathbb{C}) \to \mathrm{Herm}(n)$, $g \mapsto gg^{\ast}$ (both real vector spaces) inherits a smooth manifold structure; find $\dim U(n)$ and its geometric tangent space at $g$.
 
 ^hw2-4
 
-- [ ] Q1 **[def]** Define $U(n)$. Show $gg^* = I$ implies $g^*g = I$.
+- [ ] Q1 **[def]** Define $U(n)$. Show $gg^{\ast} = I$ implies $g^{\ast}g = I$.
 - [ ] Q2 Compute $\dim_{\mathbb{R}}\mathrm{Mat}(n,\mathbb{C}) = 2n^2$ and $\dim_{\mathbb{R}}\mathrm{Herm}(n) = n^2$.
 - [ ] Q3 Compute $dF_g(h) = \frac{d}{dt}\big|_0 F(g+th)$.
 - [ ] Q4 Show $dF_g$ is onto $\mathrm{Herm}(n)$ for $g \in U(n)$ (find $h$ for a given Hermitian $A$).
-- [ ] Q5 Conclude $\dim U(n) = n^2$; show $\ker dF_g = \{Xg : X^* = -X\} = \mathfrak{u}(n)\,g$; why is this also $g\,\mathfrak{u}(n)$?
+- [ ] Q5 Conclude $\dim U(n) = n^2$; show $\ker dF_g = \{Xg : X^{\ast} = -X\} = \mathfrak{u}(n)\,g$; why is this also $g\,\mathfrak{u}(n)$?
 - [ ] Q6 **[why]** Why must the spaces be regarded as real? Show $dF_g(ih) \neq i\,dF_g(h)$ in general, and that $\mathrm{Herm}(n)$ is not a complex subspace.
-- [ ] Q7 **[why]** Why is the target $\mathrm{Herm}(n)$ and not $\mathrm{Mat}(n,\mathbb{C})$? (Could $I$ be a regular value of $g \mapsto gg^*$ into $\mathrm{Mat}(n,\mathbb{C})$?)
+- [ ] Q7 **[why]** Why is the target $\mathrm{Herm}(n)$ and not $\mathrm{Mat}(n,\mathbb{C})$? (Could $I$ be a regular value of $g \mapsto gg^{\ast}$ into $\mathrm{Mat}(n,\mathbb{C})$?)
 - [ ] Q8 **[why]** Where does $g \in U(n)$ enter the surjectivity proof? Compute $dF_0$.
 
 > [!tip]- Hints: definitions, results, strategy
@@ -359,7 +359,7 @@ Prove $U(n) = F^{-1}(I)$ for $F : \mathrm{Mat}(n,\mathbb{C}) \to \mathrm{Herm}(n
 >
 > **Key results.** One-sided inverse suffices [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|Lem §23.3]]; [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex §23.2]] (this problem), kernel [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-4|Prop §23.4]]; differential by curves [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|Thm §22.3]]; regular values without coordinates [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|Cor §22.4]]; [[§25 The Geometric Tangent Space#^ex-25-3|Ex §25.3]], [[§25 The Geometric Tangent Space#^rem-25-7|Remark: Left and Right Translates]]; contrast [[§7 The Regular Value Theorem#^rem-7-9|Remark: The Contrast with the Unitary Group]]; model case $O(n)$ [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex §23.1]].
 >
-> **Strategy (S5, S10).** RVT on $g \mapsto gg^*$; differentiate along $t \mapsto g + th$ to get $dF_g(h) = hg^* + gh^*$; surjective via $h = \tfrac12 Ag$; kernel via $h = Xg$.
+> **Strategy (S5, S10).** RVT on $g \mapsto gg^{\ast}$; differentiate along $t \mapsto g + th$ to get $dF_g(h) = hg^{\ast} + gh^{\ast}$; surjective via $h = \tfrac12 Ag$; kernel via $h = Xg$.
 >
 > **Difficulty 2.** Submitted solution: long, because it builds explicit coordinates $\phi$, $\phi_H$ and transports the atlas from $\mathbb{R}^{2n^2}$; Cor §22.4 makes that unnecessary. Tricks worth remembering: $h = \tfrac12 Ag$ and $h = Xg$.
 
@@ -441,7 +441,7 @@ For a smooth curve $\gamma : (-\epsilon,\epsilon) \to M$, $\gamma(0) = p$, let $
 - [ ] Q3 For $\gamma = \varphi^{-1}\circ c$, show $D_\gamma = \sum_j (c^j)'(0)\,\partial/\partial x^j|_p$ (chain rule).
 - [ ] Q4 Choose $\epsilon$ so that $c(t) = \varphi(p) + ta$ stays in $\varphi(U)$.
 - [ ] Q5 Conclude $D = D_\gamma$.
-- [ ] Q6 **[why]** Why is $D_\gamma$ a derivation (write it as $\gamma_{*0}(d/dt|_0)$)? Why must $\gamma$ be smooth and not just continuous?
+- [ ] Q6 **[why]** Why is $D_\gamma$ a derivation (write it as $\gamma_{\ast 0}(d/dt|_0)$)? Why must $\gamma$ be smooth and not just continuous?
 - [ ] Q7 Is $\gamma$ unique? What data of $\gamma$ does $D_\gamma$ depend on?
 
 > [!tip]- Hints: definitions, results, strategy
@@ -474,14 +474,14 @@ Explain why $T_pM \times (I_p/I_p^2) \to \mathbb{R}$, $(v, {[}[f]{]}) \mapsto v(
 
 #### (b)
 
-Show the (bilinear) pairing is non-degenerate, hence $I_p/I_p^2 \cong (T_pM)^*$; the isomorphism does not depend on a chart.
+Show the (bilinear) pairing is non-degenerate, hence $I_p/I_p^2 \cong (T_pM)^{\ast}$; the isomorphism does not depend on a chart.
 
 ^hw3-3-b
 
 - [ ] Q4 **[def]** State both halves of "non-degenerate pairing".
 - [ ] Q5 Show $v([1]) = 0$ and then left non-degeneracy.
 - [ ] Q6 State Hadamard's lemma (with the formula $f_i(a) = \partial f/\partial r^i(a)$) and prove right non-degeneracy.
-- [ ] Q7 Show a non-degenerate pairing of finite-dimensional spaces gives $V \cong W^*$: which half gives which inequality of dimensions?
+- [ ] Q7 Show a non-degenerate pairing of finite-dimensional spaces gives $V \cong W^{\ast}$: which half gives which inequality of dimensions?
 - [ ] Q8 Alternatively, show ${[}[x^i - x^i(p)]{]} \mapsto$ the dual basis of $\{\partial/\partial x^j|_p\}$.
 - [ ] Q9 **[why]** Why is the isomorphism chart-independent although a chart was used? Why is one half of non-degeneracy not enough without finite dimension (the remark after Thm §21.5)?
 
@@ -597,11 +597,11 @@ $A$ symmetric with distinct eigenvalues. Conjecture the critical points of $f_A$
 
 ### HW4.1 Zero differential implies constant
 
-$F : M \to N$ smooth with $F_{*,p} = 0$ for all $p$, $M$ connected. Prove $F$ is constant.
+$F : M \to N$ smooth with $F_{\ast ,p} = 0$ for all $p$, $M$ connected. Prove $F$ is constant.
 
 ^hw4-1
 
-- [ ] Q1 **[def]** Define $F_{*,p}$ and write its matrix in coordinate bases.
+- [ ] Q1 **[def]** Define $F_{\ast ,p}$ and write its matrix in coordinate bases.
 - [ ] Q2 Choose charts with $F(U_0) \subseteq V$ and $\varphi(U_0)$ a ball. Why can you?
 - [ ] Q3 Show the Jacobian of $\psi\circ F\circ\varphi^{-1}$ vanishes on the ball, hence (MVT on each component along a segment) $F$ is constant on $U_0$.
 - [ ] Q4 Show $\{p : F(p) = F(p_0)\}$ is open and closed. (Which property of $N$ makes it closed in one line?)
@@ -652,7 +652,7 @@ With $\vec e_1,\vec e_2,\vec e_3$ a basis of $T_1S^3$, compute $\sigma_j := dF_1
 
 - [ ] Q1 **[def]** Write the matrix of $R_q$ on $\mathbb{C}^2$ and the formula for $F(x)$, $x \in S^3$.
 - [ ] Q2 Show $T_1S^3 = \{x_0 = 0\}$ (level set of $|x|^2$, kernel of the gradient).
-- [ ] Q3 State the "velocity of a composite" rule $F_*(\gamma'(0)) = (F\circ\gamma)'(0)$.
+- [ ] Q3 State the "velocity of a composite" rule $F_\ast (\gamma'(0)) = (F\circ\gamma)'(0)$.
 - [ ] Q4 Compute $\sigma_1, \sigma_2, \sigma_3$. (Observe that $F$ is the restriction of a real-linear map $L$, so $dF_1 = L|_{T_1S^3}$.)
 - [ ] Q5 Check $\sigma_j$ is traceless and skew-Hermitian, i.e. lies in $\mathfrak{su}(2)$.
 
@@ -760,17 +760,17 @@ Let $\pi : E \to M$ be a surjective submersion. Show any section $s : M \to E$ (
 - [ ] Q1 **[def]** Define embedding and section.
 - [ ] Q2 Show $s$ is injective.
 - [ ] Q3 Show $\pi|_{s(M)}$ is a continuous inverse of $s : M \to s(M)$ (subspace topology).
-- [ ] Q4 Differentiate $\pi\circ s = \mathrm{id}_M$ and conclude $s_{*p}$ is injective.
+- [ ] Q4 Differentiate $\pi\circ s = \mathrm{id}_M$ and conclude $s_{\ast p}$ is injective.
 - [ ] Q5 **[why]** Which hypotheses are actually used? Are "surjective" and "submersion" needed?
 - [ ] Q6 Show $s(M) = \{y : s(\pi(y)) = y\}$ is closed in $E$. What property of $E$ does that use?
-- [ ] Q7 Show $T_{s(p)}E = \operatorname{im} s_{*p} \oplus \ker \pi_{*s(p)}$.
+- [ ] Q7 Show $T_{s(p)}E = \operatorname{im} s_{\ast p} \oplus \ker \pi_{\ast s(p)}$.
 
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.** Section [[§38 Fibrations#^def-38-3|Def §38.3]]; immersion [[§36 Submersions#^def-36-2|Def §36.2]]; embedding [[§42 Embeddings#^def-42-1|Def §42.1]]; vertical space [[§38 Fibrations#^def-38-5|Def §38.5]].
 >
 > **Key results.** [[§42 Embeddings#^prop-42-10|Prop §42.10]] (this problem: sections are closed embeddings); splitting along a section [[§38 Fibrations#^prop-38-5|Prop §38.5]]; chain rule [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Thm §28.6]].
 >
-> **Strategy (S14).** Differentiate $\pi\circ s = \mathrm{id}$: $\pi_*\circ s_* = \mathrm{id}$, so $s_*$ is injective; $\pi|_{s(M)}$ is a continuous inverse of $s$ onto its image.
+> **Strategy (S14).** Differentiate $\pi\circ s = \mathrm{id}$: $\pi_\ast \circ s_\ast  = \mathrm{id}$, so $s_\ast$ is injective; $\pi|_{s(M)}$ is a continuous inverse of $s$ onto its image.
 >
 > **Difficulty 1.** Submitted solution: short and complete. The notes observe it only uses $\pi\circ s = \mathrm{id}$, and add closedness.
 
@@ -781,10 +781,10 @@ $F : M \to N$ smooth, $S \subset N$ a regular submanifold, $F$ transverse to $S$
 ^hw5-2
 
 - [ ] Q1 **[def]** Define a regular submanifold, an adapted chart, and the codimension.
-- [ ] Q2 In an adapted chart $(x_a, x_b)$, show $x_b$ is a submersion with $x_b^{-1}(0) = U\cap S$ and $\ker(x_b)_{*q} = T_qS$.
-- [ ] Q3 Show $(x_b\circ F)_{*p}$ is surjective using transversality.
+- [ ] Q2 In an adapted chart $(x_a, x_b)$, show $x_b$ is a submersion with $x_b^{-1}(0) = U\cap S$ and $\ker(x_b)_{\ast q} = T_qS$.
+- [ ] Q3 Show $(x_b\circ F)_{\ast p}$ is surjective using transversality.
 - [ ] Q4 Apply the RVT (or the submersion normal form at $p$) to $x_b\circ F$ to get a chart of $M$ adapted to $F^{-1}(S)$. What is the codimension?
-- [ ] Q5 Show $T_pF^{-1}(S) \subseteq (F_{*p})^{-1}(T_{F(p)}S)$ by the chain rule, then equality by counting dimensions.
+- [ ] Q5 Show $T_pF^{-1}(S) \subseteq (F_{\ast p})^{-1}(T_{F(p)}S)$ by the chain rule, then equality by counting dimensions.
 - [ ] Q6 Special cases: $S$ a point (regular value theorem); $F$ the inclusion of a submanifold (transverse intersection of submanifolds). What do they say?
 - [ ] Q7 **[why]** Why is the condition imposed only at points of $F^{-1}(S)$? Give a non-transverse example where $F^{-1}(S)$ is not a submanifold.
 
@@ -795,7 +795,7 @@ $F : M \to N$ smooth, $S \subset N$ a regular submanifold, $F$ transverse to $S$
 >
 > **Strategy (S12, S11, S8, S6).** Locally $S = x_b^{-1}(0)$ with $x_b$ a submersion; transversality makes $x_b\circ F$ a submersion at $p$ (the HW2.5 lifting); RVT or normal form gives an adapted chart; tangent space by "$\subseteq$ + dimension count".
 >
-> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_*$ is computed directly (now Prop §37.7 and Lem §37.11).
+> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_\ast$ is computed directly (now Prop §37.7 and Lem §37.11).
 
 ### HW5.3 Morse functions and the zero section
 
@@ -809,16 +809,16 @@ $s_f(p) = (p, df_p)$; $s_f^{-1}(\mathcal{Z}) = \mathrm{Crit}(f)$. Show $s_f$ is 
 
 ^hw5-3-a
 
-- [ ] Q1 **[def]** Define the zero section, the standard coordinates $(\bar x^j, \xi_j)$ on $T^*M$, and show $\mathcal{Z} = \{\xi = 0\}$ locally (warm-up).
+- [ ] Q1 **[def]** Define the zero section, the standard coordinates $(\bar x^j, \xi_j)$ on $T^{\ast}M$, and show $\mathcal{Z} = \{\xi = 0\}$ locally (warm-up).
 - [ ] Q2 Write $s_f$ in standard coordinates; why is it smooth?
-- [ ] Q3 Compute $(s_f)_{*p}(\partial/\partial x^i|_p)$ at a critical point.
-- [ ] Q4 Compute $T_{(p,0)}\mathcal{Z}$ inside $T_{(p,0)}T^*M$.
+- [ ] Q3 Compute $(s_f)_{\ast p}(\partial/\partial x^i|_p)$ at a critical point.
+- [ ] Q4 Compute $T_{(p,0)}\mathcal{Z}$ inside $T_{(p,0)}T^{\ast}M$.
 - [ ] Q5 Show the sum is everything iff $\det H_p \neq 0$ (block determinant, or: modulo $T\mathcal{Z}$ only the $\xi$-components matter).
 - [ ] Q6 **[why]** Why is non-degeneracy of $H_p$ independent of the chart at a critical point, while the Hessian matrix itself depends on the chart elsewhere (Ex §52.1, Prop §52.2)?
 - [ ] Q7 **[why]** Why does transversality only need checking at critical points?
 
 > [!tip]- Hint (a): strategy
-> **Strategy (S1, S9, S7).** In standard coordinates $(\bar x, \xi)$: $s_f = (x, \partial f/\partial x)$, $(s_f)_*(\partial_{x^i}) = \partial_{\bar x^i} + \sum_j H_{ij}\partial_{\xi_j}$, $T\mathcal{Z} = \mathrm{span}\{\partial_{\bar x^i}\}$; $2m$ vectors span iff $\det\begin{pmatrix} I & I\\ H & 0\end{pmatrix} = (-1)^m\det H \neq 0$.
+> **Strategy (S1, S9, S7).** In standard coordinates $(\bar x, \xi)$: $s_f = (x, \partial f/\partial x)$, $(s_f)_\ast (\partial_{x^i}) = \partial_{\bar x^i} + \sum_j H_{ij}\partial_{\xi_j}$, $T\mathcal{Z} = \mathrm{span}\{\partial_{\bar x^i}\}$; $2m$ vectors span iff $\det\begin{pmatrix} I & I\\ H & 0\end{pmatrix} = (-1)^m\det H \neq 0$.
 
 #### (b)
 
@@ -836,7 +836,7 @@ $f$ is Morse iff all critical points are non-degenerate. What can you say about 
 > **Strategy (S12).** HW5.2: $\mathrm{Crit}(f) = s_f^{-1}(\mathcal{Z})$ is a regular submanifold of codimension $m$, i.e. dimension $0$: discrete.
 
 > [!tip]- Hints: definitions and results for the whole problem
-> **Topic and definitions.** Cotangent bundle [[§50 The Cotangent Bundle#^def-50-1|Def §50.1]]; zero section [[§50 The Cotangent Bundle#^def-50-3|Def §50.3]]; charts of $T^*M$ [[§50 The Cotangent Bundle#^def-50-5|Def §50.5]]; Hessian matrix [[§52 Critical Points and the Hessian#^def-52-1|Def §52.1]]; Hessian at a critical point [[§52 Critical Points and the Hessian#^def-52-2|Def §52.2]]; nondegenerate critical point [[§52 Critical Points and the Hessian#^def-52-3|Def §52.3]]; Morse function [[§52 Critical Points and the Hessian#^def-52-4|Def §52.4]]; critical set [[§36 Submersions#^def-36-5|Def §36.5]].
+> **Topic and definitions.** Cotangent bundle [[§50 The Cotangent Bundle#^def-50-1|Def §50.1]]; zero section [[§50 The Cotangent Bundle#^def-50-3|Def §50.3]]; charts of $T^{\ast}M$ [[§50 The Cotangent Bundle#^def-50-5|Def §50.5]]; Hessian matrix [[§52 Critical Points and the Hessian#^def-52-1|Def §52.1]]; Hessian at a critical point [[§52 Critical Points and the Hessian#^def-52-2|Def §52.2]]; nondegenerate critical point [[§52 Critical Points and the Hessian#^def-52-3|Def §52.3]]; Morse function [[§52 Critical Points and the Hessian#^def-52-4|Def §52.4]]; critical set [[§36 Submersions#^def-36-5|Def §36.5]].
 >
 > **Key results.** Zero section is a regular submanifold [[§52 Critical Points and the Hessian#^prop-52-5|Prop §52.5]]; Hessian change of coordinates [[§52 Critical Points and the Hessian#^prop-52-2|Prop §52.2]], [[§52 Critical Points and the Hessian#^ex-52-1|Ex §52.1]]; well defined at a critical point [[§52 Critical Points and the Hessian#^prop-52-3|Prop §52.3]]; vertical space along $\mathcal{Z}$ [[§52 Critical Points and the Hessian#^prop-52-8|Prop §52.8]]; $d(df)$ at a critical point [[§52 Critical Points and the Hessian#^prop-52-9|Prop §52.9]]; [[§52 Critical Points and the Hessian#^thm-52-10|Thm §52.10]] (part (a)); [[§52 Critical Points and the Hessian#^ex-52-2|Ex §52.2]]; [[§52 Critical Points and the Hessian#^cor-52-11|Cor §52.11]] (part (b)), [[§52 Critical Points and the Hessian#^cor-52-12|Cor §52.12]]; HW5.2 [[§37 Regular Submanifolds#^thm-37-15|Thm §37.15]].
 >
@@ -850,16 +850,16 @@ $f$ is Morse iff all critical points are non-degenerate. What can you say about 
 
 #### (a)
 
-$N_pM = \{\alpha \in T_p^*N : \alpha|_{T_pM} = 0\} = \ker\iota_p^*$. For $f = \iota^*\Phi$, explain why $p$ is critical for $f$ iff $d\Phi_p \in N_pM$.
+$N_pM = \{\alpha \in T_p^{\ast}N : \alpha|_{T_pM} = 0\} = \ker\iota_p^{\ast}$. For $f = \iota^{\ast}\Phi$, explain why $p$ is critical for $f$ iff $d\Phi_p \in N_pM$.
 
 ^hw5-4-a
 
-- [ ] Q1 **[def]** Define the conormal space and the pullback $\iota_p^*$.
-- [ ] Q2 Show $df_p = \iota_p^*(d\Phi_p)$.
-- [ ] Q3 Conclude, and show the two descriptions of $N_pM$ (annihilator, kernel of $\iota_p^*$) agree.
+- [ ] Q1 **[def]** Define the conormal space and the pullback $\iota_p^{\ast}$.
+- [ ] Q2 Show $df_p = \iota_p^{\ast}(d\Phi_p)$.
+- [ ] Q3 Conclude, and show the two descriptions of $N_pM$ (annihilator, kernel of $\iota_p^{\ast}$) agree.
 
 > [!tip]- Hint (a): strategy
-> **Strategy (S14).** Chain rule: $df_p = \iota_p^*(d\Phi_p)$.
+> **Strategy (S14).** Chain rule: $df_p = \iota_p^{\ast}(d\Phi_p)$.
 
 #### (b)
 
@@ -869,13 +869,13 @@ $M = G^{-1}(0)$, $G : N \to \mathbb{R}^k$, $0$ a regular value. Prove $\{dG^1_p,
 
 - [ ] Q4 Show $\dim N_pM = k$ using an adapted chart.
 - [ ] Q5 Show $dG^j_p \in N_pM$.
-- [ ] Q6 Show the $dG^j_p$ are independent: if $\sum c_j dG^j_p = 0$, pick $v$ with $G_{*p}v = c$.
+- [ ] Q6 Show the $dG^j_p$ are independent: if $\sum c_j dG^j_p = 0$, pick $v$ with $G_{\ast p}v = c$.
 - [ ] Q7 Derive $d\Phi_p = \sum\lambda_j dG^j_p$ (in $\mathbb{R}^n$: $\nabla\Phi = \sum\lambda_j\nabla G^j$) at critical points; why are the $\lambda_j$ unique?
 - [ ] Q8 Why are constrained local extrema critical points of $f$ (curves through $p$)?
 - [ ] Q9 **[why]** What fails without "regular value"? Minimize $\Phi(x,y) = x$ on $\{y^2 = x^3\}$ ($G = y^2 - x^3$): where is the minimum, and does $\nabla\Phi = \lambda\nabla G$ hold there?
 
 > [!tip]- Hint (b): strategy
-> **Strategy (S7, S6).** $\dim N_pM = k$ (adapted chart); each $dG^j_p \in N_pM$ ($G^j\circ\iota \equiv 0$); independent because $G_{*p}$ is onto; $k$ independent vectors in a $k$-dimensional space.
+> **Strategy (S7, S6).** $\dim N_pM = k$ (adapted chart); each $dG^j_p \in N_pM$ ($G^j\circ\iota \equiv 0$); independent because $G_{\ast p}$ is onto; $k$ independent vectors in a $k$-dimensional space.
 
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.** Conormal space [[§37 Regular Submanifolds#^def-37-4|Def §37.4]]; pullback of covectors [[§34 The Cotangent Space from Germs#^def-34-3|Def §34.3]]; differential of a function [[§32 The Cotangent Space#^def-32-5|Def §32.5]]; critical point [[§36 Submersions#^def-36-3|Def §36.3]].
@@ -940,7 +940,7 @@ Codes match the "Strategies" list in `review_spec.md` where they coincide (S1–
 7. **S7 Linear algebra closes the gap** (rank–nullity, injective between equal dimensions, $k$ independent vectors in a $k$-dimensional space, non-degenerate pairings). HW2.3, HW3.3(b), HW3.4(c), HW4.3(b), HW5.2, HW5.3(a), HW5.4(b).
 8. **S8 Normal forms and the inverse function theorem give charts, openness, local diffeomorphisms.** HW1.6 (IFT), HW4.2 (submersions are open), HW4.3(b) (IFT ⇒ local diffeomorphism), HW5.2 (submersion normal form), HW5.5(b) ($\Psi$ a diffeomorphism).
 9. **S9 A derivation is determined by its values on coordinate functions** (basis theorem, Hadamard, matching coefficients). HW3.2, HW3.3(b), HW3.4(c), HW5.3(a).
-10. **S10 Compute differentials with curves:** $F_*(\gamma'(0)) = (F\circ\gamma)'(0)$, or $\frac{d}{dt}F(g+th)$. HW2.4, HW3.2, HW4.3(a)(b), HW5.4(b) (extrema are critical).
+10. **S10 Compute differentials with curves:** $F_\ast (\gamma'(0)) = (F\circ\gamma)'(0)$, or $\frac{d}{dt}F(g+th)$. HW2.4, HW3.2, HW4.3(a)(b), HW5.4(b) (extrema are critical).
 11. **S12 Transversality = the images span ⇒ a composite is a submersion** (lift through the defining map, split off the kernel). HW2.5, HW5.2, HW5.3(a)(b).
 12. **S13 Compactness and Hausdorffness upgrade local to global** (continuous bijection compact → Hausdorff, compact images closed, compact group ⇒ Hausdorff orbit space, finitely many critical points). HW1.3 (failure: non-compact group), HW2.1(b), HW2.2(a), HW4.2, HW5.3(b).
 13. **S13′ Connectedness: local property + clopen set ⇒ global.** HW1.1, HW4.1, HW4.2. (Listed under S13 in `review_spec.md` only implicitly; worth naming.)

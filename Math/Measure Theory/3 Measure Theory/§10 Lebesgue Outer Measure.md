@@ -67,6 +67,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 > [!remark]- Connections
 > - MATH 452 counterpart using finite grids of squares instead of countable coverings: [[§20 Multivariable Integration#^def-20-6|outer Jordan content]] (452 Def. §20.6).
 > - Axiomatized in [[§12 Borel Sets and Measure Spaces#^def-12-3|Def. §12.3]] (outer measure on an arbitrary set).
+> - In 591, measure zero without measure theory (countable covers by rectangles) and on manifolds via charts: [[§58 Sets of Measure Zero#^def-58-1|591 Def. §58.1]], [[§58 Sets of Measure Zero#^def-58-2|591 Def. §58.2]]; used for [[§59 Sard's Theorem#^thm-59-1|Sard's theorem, 591 §59.1]].
 
 > [!remark] Remark
 > For outer measure, we have either $\sum_k |I_k| = \infty$ for every L-covering $\{I_k\}$ of $A$ (so $m^*(A) = \infty$), or $m^*(A) < \infty$. In the latter case, for every $\epsilon > 0$, there exists an L-covering $\{I_k\}$ of $A$ such that

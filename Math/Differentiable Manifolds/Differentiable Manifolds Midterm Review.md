@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591, review]
 
 # Midterm Review: Plan and Checklist
 
-**The exam.** Wednesday Oct 21, 6–8 pm. Two past midterms (2025, 2021) have the same three parts, 5 points per item:
+**The exam.** Wednesday Oct 21, 6–8 pm. **Scope (course information, Lecture 19): through the end of vector fields, Lecture 18 at the latest** — so §58–§59 (Sard's theorem, Lecture 19) and the matrix-group bracket of Lecture 19 are not on the midterm. Review session Friday Oct 16 (previous exams and your questions). Two past midterms (2025, 2021) have the same three parts, 5 points per item:
 1. **Working with definitions**: explain or define precisely, e.g. $\partial/\partial x^j|_p$, $F_{\ast,p}$, a vector bundle, an atlas of $T^\ast M$, injective immersion vs embedding.
 2. **True or false with justification**: a proof or a counterexample.
 3. **Short proofs and computations**: a lecture theorem reproved from a normal form, a transversality condition, a matrix manifold and its tangent space, a differential computed from the definition.
@@ -107,8 +107,8 @@ The notes show the course building each object more than once and then proving t
 
 **Proofs**
 - [ ] ★★ Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] Regular Value Theorem, from the implicit function theorem (quote it).
-- [ ] ★★ Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]] $1$ Is a Regular Value of $\det$ and Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]] $\SL({n,\mathbb{R}})$ Is a Manifold of Dimension $n^2 - 1$: $\mathrm{SL}(n)$.
-- [ ] ★★ $\mathrm{O}(n)$ and $\mathrm{U}(n)$ as regular level sets: Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] $\Ogp(n)$ Is a Smooth Manifold of Dimension $\tfrac{n(n-1)}{2}$, Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]] $\Ugp(n)$ Is a Smooth Manifold of Dimension $n^2$. The differential's kernel and surjectivity, Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]] The Kernel of the Differential.
+- [ ] ★★ Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]] $1$ Is a Regular Value of $\det$ and Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]] $\mathrm{SL}({n,\mathbb{R}})$ Is a Manifold of Dimension $n^2 - 1$: $\mathrm{SL}(n)$.
+- [ ] ★★ $\mathrm{O}(n)$ and $\mathrm{U}(n)$ as regular level sets: Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] $\mathrm{O}(n)$ Is a Smooth Manifold of Dimension $\tfrac{n(n-1)}{2}$, Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]] $\mathrm{U}(n)$ Is a Smooth Manifold of Dimension $n^2$. The differential's kernel and surjectivity, Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]] The Kernel of the Differential.
 - [ ] ★ Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] Coordinate-Free Formula for the Differential, Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] Regular Values Without Coordinates
 - [ ] ★ Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] The Two Descriptions Agree
 
@@ -253,12 +253,12 @@ The notes show the course building each object more than once and then proving t
 ## T10. Tangent and cotangent bundles, one-forms, the Hessian (§47–§52)
 **Language**
 - [ ] Definition [[§49 The Tangent Bundle#^def-49-1|§49.1]] The Tangent Bundle as a Set, Definition [[§49 The Tangent Bundle#^def-49-4|§49.4]] Local Trivializations of $TM$, Definition [[§49 The Tangent Bundle#^def-49-5|§49.5]] Charts of $TM$
-- [ ] Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]] Charts of $T^*M$: *give a smooth atlas of $T^\ast M$* (2021 Part 1.2).
+- [ ] Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]] Charts of $T^{\ast}M$: *give a smooth atlas of $T^\ast M$* (2021 Part 1.2).
 - [ ] Definition [[§51 One-Forms#^def-51-1|§51.1]] One-Form, Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]] Hessian at a Critical Point, Definition [[§52 Critical Points and the Hessian#^def-52-3|§52.3]] Nondegenerate Critical Point, Definition [[§52 Critical Points and the Hessian#^def-52-4|§52.4]] Morse Function
 
 **Proofs**
 - [ ] ★★ Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]] The Topology of $TM$ and Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] The Smooth Atlas of $TM$: topology, then atlas.
-- [ ] ★★ Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]] The Smooth Atlas of $T^*M$, Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]] The Tangent Bundle Is a Fibration
+- [ ] ★★ Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]] The Smooth Atlas of $T^{\ast}M$, Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]] The Tangent Bundle Is a Fibration
 - [ ] ★★ Proposition [[§51 One-Forms#^prop-51-2|§51.2]] The Differential of a Function Is a One-Form
 - [ ] ★ Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]] The Hessian at a Critical Point Is Well Defined, Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]] Transversality to the Zero Section (HW5.3), Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]] Critical Points of a Morse Function Are Isolated
 
@@ -293,7 +293,7 @@ Each one is a reusable move. Before writing a proof, name the move.
 - **S12 Transversality = the images span.** Reduce to a regular value of a composite with a local defining map: Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]] Preimages of Transverse Submanifolds.
 - **S13 Compactness upgrades local to global**: closed images, proper maps, finitely many critical points: Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds, Theorem [[§42 Embeddings#^thm-42-5|§42.5]] Injective Proper Immersions Are Embeddings, Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] Morse Functions on Compact Manifolds.
 - **S13′ Connectedness upgrades local to global**: a local property plus a clopen set gives a global one, Theorem [[§2 Topological Manifolds#^thm-2-8|§2.8]] Connected Manifolds Are Path Connected, Proposition [[§30 The Differential in Coordinates#^prop-30-10|§30.10]] Maps with Zero Differential Are Constant.
-- **S14 Differentiate an identity**, e.g. $\pi \circ s = \mathrm{id}$ or $G \circ F = $ const. Test closedness, Hausdorffness and continuity with sequences.
+- **S14 Differentiate an identity**, e.g. $\pi \circ s = \mathrm{id}$ or $G \circ F =$ const. Test closedness, Hausdorffness and continuity with sequences.
 - **S15 Symmetry**: prove it at one point (or on one slice), then move it by the group: homogeneous spaces, classical groups, $\mathrm{SU}(2)$.
 
 (The [[Differentiable Manifolds HW Drill]] lists which homework problems use which move, in its last section.)

@@ -76,7 +76,9 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§51 One-Forms\|§51]] One-forms, the operator $d$, pullbacks | Chapter 11, *Covector Fields* (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) |
 | [[§53 Vector Fields\|§53]] Vector fields | Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) |
 | [[§55 Lie Bracket and Lie Algebra\|§55]] Lie bracket and Lie algebra; related fields | Chapter 8, *Lie Brackets* and *Lie Algebras* (Lemma 8.25, Propositions 8.26 and 8.28); *Vector Fields and Smooth Maps* (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 |
-| [[§57 Lie Groups and Left-Invariant Vector Fields\|§57]] Lie groups and left-invariant vector fields | Chapter 7 (Examples 7.3, 7.27–7.30); Chapter 8, *Lie Algebras* (Proposition 8.33, Theorem 8.37) |
+| [[§57 Lie Groups and Left-Invariant Vector Fields\|§57]] Lie groups and left-invariant vector fields; Lie group morphisms; the bracket of a matrix group | Chapter 7 (Examples 7.3, 7.27–7.30); Chapter 8, *Lie Algebras* (Proposition 8.33, Theorem 8.37) |
+| [[§58 Sets of Measure Zero\|§58]] Sets of measure zero | Chapter 6, *Sets of Measure Zero* (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) |
+| [[§59 Sard's Theorem\|§59]] Sard's theorem | Chapter 6, *Sard's Theorem* (Theorem 6.10, Corollary 6.11) |
 
 ## A.4 Index from Lee to these notes
 
@@ -147,6 +149,13 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
 | Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]], [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
 | Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]], [[§37 Regular Submanifolds#^thm-37-12\|Thm. §37.12]] |
+| Exercise 6.1 | [[§58 Sets of Measure Zero#^lem-58-1\|Lem. §58.1]] |
+| Lemma 6.2 | [[§58 Sets of Measure Zero#^lem-58-5\|Lem. §58.5]] |
+| Proposition 6.5 | [[§58 Sets of Measure Zero#^lem-58-2\|Lem. §58.2]] |
+| Lemma 6.6 | [[§58 Sets of Measure Zero#^def-58-2\|Def. §58.2]], [[§58 Sets of Measure Zero#^prop-58-4\|Prop. §58.4]] |
+| Exercise 6.7 | [[§58 Sets of Measure Zero#^prop-58-4\|Prop. §58.4]] |
+| Theorem 6.10 | [[§59 Sard's Theorem#^thm-59-1\|Thm. §59.1]] |
+| Corollary 6.11 | [[§59 Sard's Theorem#^cor-59-2\|Cor. §59.2]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
@@ -169,7 +178,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Corollary 8.31 | [[§56 Related Vector Fields#^cor-56-4\|Cor. §56.4]] |
 | Proposition 8.33 | [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4\|Cor. §57.4]] |
 | Theorem 8.37 | [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5\|Def. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5\|Lem. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6\|Prop. §57.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7\|Thm. §57.7]] |
+| Proposition 8.41 | [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11\|Thm. §57.11]] |
 | Theorem 8.44 | [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-9\|Lem. §57.9]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10\|Prop. §57.10]] |
+| Theorem 8.46 | [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11\|Thm. §57.11]] |
 | Example 10.3 | [[§39 Examples of Fibrations#^ex-39-2\|Ex. §39.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
@@ -195,6 +206,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 21.35 | [[§16 The Classical Groups#^prop-16-1\|Prop. §16.1]], [[§16 The Classical Groups#^thm-16-2\|Thm. §16.2]] |
 | Example A.4 | [[§1 Point-Set Topology Review#^ex-1-2\|Ex. §1.2]] |
 | Example A.5 | [[§1 Point-Set Topology Review#^ex-1-3\|Ex. §1.3]], [[§1 Point-Set Topology Review#^prop-1-6\|Prop. §1.6]] |
+| Proposition A.16 | [[§58 Sets of Measure Zero#^lem-58-3\|Lem. §58.3]] |
 | Proposition A.17 | [[§3 Subspaces and Products#^prop-3-3\|Prop. §3.3]], [[§3 Subspaces and Products#^cor-3-4\|Cor. §3.4]] |
 | Lemma A.19 | [[§1 Point-Set Topology Review#^prop-1-5\|Prop. §1.5]] |
 | Proposition A.23 | [[§3 Subspaces and Products#^thm-3-10\|Thm. §3.10]], [[§3 Subspaces and Products#^cor-3-11\|Cor. §3.11]] |
@@ -211,6 +223,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Corollary B.21 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Proposition B.24 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Theorem C.15 | [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4\|Lem. §29.4]] |
+| Proposition C.18 | [[§58 Sets of Measure Zero#^lem-58-1\|Lem. §58.1]] |
+| Corollary C.25 | [[§58 Sets of Measure Zero#^lem-58-1\|Lem. §58.1]] |
 | Theorem C.34 | [[§35 Local Diffeomorphisms#^thm-35-1\|Thm. §35.1]] |
 | Example C.37 | [[§30 The Differential in Coordinates#^ex-30-1\|Ex. §30.1]] |
 | Theorem C.40 | [[§7 The Regular Value Theorem#^thm-7-1\|Thm. §7.1]], [[§7 The Regular Value Theorem#^cor-7-2\|Cor. §7.2]] |

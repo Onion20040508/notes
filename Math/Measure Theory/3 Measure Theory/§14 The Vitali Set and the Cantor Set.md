@@ -186,6 +186,8 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§10 Lebesgue Outer Measure#^ex-1
 > $$
 
 ^def-14-4
+> [!remark]- Connections
+> - In 591: a continuous map can enlarge a measure-zero set (the Cantor function), smooth maps cannot, [[§58 Sets of Measure Zero#^rem-58-1|591 Remark: Continuity Is Not Enough]], [[§58 Sets of Measure Zero#^lem-58-2|591 §58.2]].
 
 ![[m551-11-5.svg]]
 *The first steps of the Cantor construction: $C_{n+1}$ removes the open middle third (dashed red) of every interval of $C_n$, leaving $2^n$ intervals of length $3^{-n}$ with total length $(2/3)^n \to 0$. The labels under $C_1$ and $C_2$ are the first ternary digits of the points in each interval. Only $0$s and $2$s survive, which is how [[§14 The Vitali Set and the Cantor Set#^prop-14-7|Proposition §14.7]] (4) matches $C$ with binary sequences.*

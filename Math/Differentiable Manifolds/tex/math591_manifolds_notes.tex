@@ -208,7 +208,7 @@
 \begin{center}
 \fbox{\parbox{0.85\textwidth}{
 \textbf{Instructor:} A.\ Uribe. \quad \textbf{Text:} Lee, \emph{Introduction to Smooth Manifolds} (2nd ed.). \\
-\textbf{Office hours:} Thu 1:00--3:00 PM, 4062 East Hall; Fri 1:00--2:00 PM on Zoom (subject to occasional changes); also $\sim$20 min after each class. \\
+\textbf{Office hours:} Thu 1:00--3:00 PM, 4062 East Hall; Fri 12:00--1:00 PM (permanently, from Lecture~19; previously 1:00--2:00 on Zoom --- if that time does not work, let Uribe know); also $\sim$20 min after each class. \\
 \textbf{Midterm:} Wednesday, October 21, 6:00--8:00 PM (written as a 90-minute exam; room TBA). Covers through the end of vector fields (Lecture~18 at the latest). Format: definitions, true/false, short proofs (identical or close to homework). Exam booklets provided. \\
 \textbf{Review session:} Friday, October 16: previous exams (sent by email) and your questions. \\
 \textbf{Final:} Thursday, December 17, 10:30 AM--12:30 PM. \\
@@ -217,6 +217,7 @@
 \textbf{Prerequisites (for real):} multivariable calculus, point-set topology, linear algebra on abstract vector spaces.
 }}
 \end{center}
+
 
 
 \tableofcontents
@@ -282,6 +283,10 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[->, thick, gray!70] (BF) -- node[pos=0.28, font=\scriptsize, fill=white, inner sep=1.5pt] {sections of $TM$} (LG);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-22.3) {Ch.~7};
 \draw[gray!35, dashed] (-2.5,-21.15) -- (11.4,-21.15);
+\node[draw=orange!70!black, fill=orange!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (SA) at (4.6,-24.6) {\textbf{Sard's theorem} \ref*{sec:measure-zero}--\ref*{sec:sard}\\ sets of measure zero;\\ almost every value is regular};
+\draw[->, thick, gray!70] (SM.west) -- ++(-0.35,0) |- node[pos=0.75, font=\scriptsize, fill=white, inner sep=1.5pt] {regular values} (SA.west);
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-24.6) {Ch.~8};
+\draw[gray!35, dashed] (-2.5,-23.45) -- (11.4,-23.45);
 \end{tikzpicture}
 \end{center}
 
@@ -16444,14 +16449,15 @@ Let $G$ be a Lie group with identity $e$.
 \end{lembox}
 
 \begin{proof}
-\textit{(Lecture~17, steps of the proof that $\mathfrak{g}$ is $T_eG$; (2) is filled in.)}
+\textit{(Lecture~17, steps of the proof that $\mathfrak{g}$ is $T_eG$; (2) was left to check --- ``not a bad thing to do'' --- and done in the review at the start of Lecture~19.)}
 
 \emph{(1)} $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_{L_g(e)}G = T_{ge}G = T_gG$, and $\mathbf{X}^v_g = d(L_g)_e(v)$ lies in $T_gG$. And $L_e = \mathrm{id}_G$ (as $eh = h$), so $\mathbf{X}^v_e = (\mathrm{id}_G)_{*e}(v) = v$ by Theorem~\ref{prop:pushforward-functorial}.
 
-\emph{(2)} $L_g \circ L_h = L_{gh}$, since $g(hk) = (gh)k$, and $L_h(e) = h$; so by Definition~\ref{def:left-invariant-extension} and the chain rule (Theorem~\ref{prop:pushforward-functorial})
+\emph{(2)} \textit{(Lecture~19.)} Fix $h, g \in G$. ``If I want to end up at $g$, I have to start at $h^{-1}g$'': $L_h$ maps $h^{-1}g$ to $g$. By Definition~\ref{def:left-invariant-extension} and the chain rule (Theorem~\ref{prop:pushforward-functorial}),
 \[
-d(L_g)_h\big(\mathbf{X}^v_h\big) = d(L_g)_h\, d(L_h)_e(v) = d(L_g \circ L_h)_e(v) = d(L_{gh})_e(v) = \mathbf{X}^v_{gh} .
+d(L_h)_{h^{-1}g}\big(\mathbf{X}^v_{h^{-1}g}\big) = d(L_h)_{h^{-1}g}\, d(L_{h^{-1}g})_e(v) = d\big(L_h \circ L_{h^{-1}g}\big)_e(v) = d(L_g)_e(v) = \mathbf{X}^v_g ,
 \]
+because $L_h \circ L_{h^{-1}g} = L_g$: ``you multiply on the left by $h^{-1}g$, and then you multiply on the left by $h$, so the $h$ and the $h^{-1}$ cancel.'' Writing $k = h^{-1}g$, this says $d(L_h)_k(\mathbf{X}^v_k) = \mathbf{X}^v_{hk}$ for all $h, k \in G$, the identity of Definition~\ref{def:left-invariant}.
 
 \emph{(3)} Let $\mathbf{X} \in \mathfrak{g}$ and $g \in G$. Left-invariance (Definition~\ref{def:left-invariant}) with $h = e$ reads $d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_{ge} = \mathbf{X}_g$, and by Definition~\ref{def:left-invariant-extension} with $v = \mathbf{X}_e$ the left side is $\mathbf{X}^{\mathbf{X}_e}_g$.
 \end{proof}
@@ -16567,9 +16573,39 @@ Let $G = \GL(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subs
 \]
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled)]
-Stated in Lecture~17 --- ``for all matrix groups, the answer \ldots\ is just the matrix commutator''; ``that requires computation. You actually have to compute something.'' Lecture~18 set up the general tool, that Lie group morphisms preserve brackets (\S\ref{sub:lie-group-morphisms}); the computation is planned for Lecture~19, ``first for the general linear group, and then \ldots\ for any linear group.'' The left-invariant fields are already known (Example~\ref{ex:left-invariant-GL}: $\mathbf{X}^A_g = gA$).
+\begin{proof}
+\textit{(Lecture~19 --- ``we have run out of diagrams to chase. We actually have to compute something.'' The lecture's computation, with the index bookkeeping written out. Lecture~19 proved this together with Theorem~\ref{thm:linear-group-bracket}, which reduces every linear group to this case.)}
+
+\emph{Coordinates.} Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \GL(d, \mathbb{R})$ rather than $g$, ``because I want to think of it as a variable.'' The entries $x^i_j$ are the standard coordinates of $\Mat(d,\mathbb{R}) \cong \mathbb{R}^{d^2}$, ``indexed in a funny way'', and a tangent vector $V = (V^i_j) \in \Mat(d, \mathbb{R}) = T_X\GL(d,\mathbb{R})$ is $\sum_{i,j} V^i_j\, \partial/\partial x^i_j|_X$ (Corollary~\ref{cor:tangent-vs}). The basic computation is
+\[
+\frac{\partial}{\partial x^i_j}\big(x^l_n\big) = \delta_{il}\, \delta_{jn} ,
+\]
+``one or zero depending on whether I'm differentiating the same coordinate as I'm taking the partial.''
+
+\emph{The left-invariant field.} $\mathbf{X}^A_X = d(L_X)_I(A)$, and $L_X : \mathbb{R}^{d^2} \to \mathbb{R}^{d^2}$, $Y \mapsto XY$, is linear, ``so it's its own differential'' (Corollary~\ref{cor:tangent-vs}): $\mathbf{X}^A_X = XA$ (Example~\ref{ex:left-invariant-GL}). The $(i,j)$ entry of $XA$ is $\sum_k x^i_k a^k_j$, so
+\[
+\mathbf{X}^A = \sum_{i,j} \Big( \sum_k x^i_k\, a^k_j \Big) \frac{\partial}{\partial x^i_j}, \qquad
+\mathbf{X}^B = \sum_{l,n} \Big( \sum_m x^l_m\, b^m_n \Big) \frac{\partial}{\partial x^l_n},
+\]
+with independent indices for the second field, ``because these are independent.'' The $a^k_j$ and $b^m_n$ are constants; the $x$'s are functions. (A student asked why the sums can come out of the commutator: ``because the commutator is bilinear \ldots\ over constants, \ldots\ but you cannot pull the $x$'s out, because those are functions.'')
+
+\emph{The bracket.} ``We know that we don't care about the second derivatives because they're going to go away'' (Lemma~\ref{lem:bracket-field}): by Proposition~\ref{prop:bracket-coords}, the coefficient of $\partial/\partial x^l_n$ in $[\mathbf{X}^A, \mathbf{X}^B]$ is $\mathbf{X}^A$ applied to the coefficient of $\mathbf{X}^B$, minus the same with $A$ and $B$ exchanged. Applying the basic computation,
+\[
+\mathbf{X}^A\Big( \sum_m x^l_m\, b^m_n \Big) = \sum_{i,j,k,m} x^i_k\, a^k_j\, b^m_n\, \delta_{il}\, \delta_{jm} = \sum_{k} x^l_k \Big( \sum_j a^k_j\, b^j_n \Big) = \sum_k x^l_k\, (AB)^k_n :
+\]
+setting $i = l$ and $m = j$ is all that happens, and then ``these two guys together \ldots\ it's an entry of a matrix'', the $(k, n)$ entry of $AB$. So
+\[
+[\mathbf{X}^A, \mathbf{X}^B] = \sum_{l,n} \Big( \sum_k x^l_k\, (AB)^k_n \Big) \frac{\partial}{\partial x^l_n} - \big(\text{the same with } A \text{ and } B \text{ exchanged}\big) = \mathbf{X}^{AB} - \mathbf{X}^{BA},
+\]
+comparing with the formula for $\mathbf{X}^A$ with $AB$, resp.\ $BA$, in place of $A$.
+
+\emph{Evaluate at the identity.} By Definition~\ref{def:bracket-TeG} and $\mathbf{X}^C_I = C$,
+\[
+[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_I = \mathbf{X}^{AB}_I - \mathbf{X}^{BA}_I = AB - BA . \qedhere
+\]
 \end{proof}
+
+``You have to think about this on your own \ldots\ think about indices and so on. But this is essentially the reason.'' Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset of $\Mat(d,\mathbb{R})$ is linear in $X$, and the bracket of the linear fields $X \mapsto XA$ and $X \mapsto XB$ is the linear field $X \mapsto X(AB - BA)$.
 
 \begin{rembox}[Left or Right: The Sign of the Bracket]\label{rem:bracket-on-TeG}
 ``This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.'' Why left, then? An aside: ``Did you ever think what the world would look like if, instead of writing $f(x)$ \ldots\ we would have written $(x)f$? \ldots\ Imagine composing functions with that rule. \ldots\ Everything works much better if you write $(x)f$'': in that notation, composites read in the order the maps are applied.
@@ -16691,6 +16727,381 @@ Next: the commutator, ``first for the general linear group, and then \ldots\ for
 
 \textbf{Transcription note (Lecture 18).} Page~47 of the handwritten notes begins the proof with ``take $A \in T_hH$''; $A \in T_eH$. Page~48 writes the second field as $\mathbf{Y}^{\hat B}$ in one place; it is $\mathbf{Y}^{\tilde B}$, with $\tilde B = dF_e(B)$.
 
+% ============================================================================
+% Lecture 19 (Wed Oct 14, 2026): the bracket of a matrix group
+% ============================================================================
+
+\subsection{The Bracket of a Matrix Group}\label{sub:matrix-group-bracket}
+
+\textit{Lecture 19 began with a review, ``just because last time was a little bit complex'': the Lie algebra $\mathfrak{g}$ of left-invariant fields, closed under commutators (Corollary~\ref{cor:lie-subalgebra}); the isomorphism $\mathrm{ev} : \mathfrak{g} \to T_eG$ with inverse $A \mapsto \mathbf{X}^A$ (Theorem~\ref{thm:lie-algebra-TeG}), including the check that $\mathbf{X}^A$ is left-invariant (Lemma~\ref{lem:left-invariant-extension}(2)); and the bracket on $T_eG$, ``I keep forgetting to do it, but it's important to write it'' (Definition~\ref{def:bracket-TeG}), defined so that $\mathrm{ev}$ is an isomorphism of Lie algebras.}
+
+\begin{rembox}[The Lie Algebra in Practice]\label{rem:lie-algebra-practice}
+``In practice, when you say, `What's the Lie algebra of the orthogonal group?', the answer is never `some left-invariant fields', right? The answer is always: well, it's the tangent space at the identity'' --- with the bracket of Definition~\ref{def:bracket-TeG}, which for matrix groups is the matrix commutator (Theorem~\ref{thm:linear-group-bracket} below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\GL(d,\mathbb{R}) = \Mat(d,\mathbb{R})$ is standard.
+\end{rembox}
+
+\begin{thmbox}[The Bracket of a Linear Group]\thmlabel{thm:linear-group-bracket}
+Let $G \subseteq \GL(d, \mathbb{R})$ be a linear group (Definition~\ref{def:linear-group}) that is a \emph{Lie subgroup}: the inclusion $i : G \hookrightarrow \GL(d, \mathbb{R})$ is smooth and $di_I$ is injective --- for instance, $G$ a regular submanifold of $\Mat(d, \mathbb{R})$, as are the classical groups (Proposition~\ref{prop:classical-lie-groups}). Identify $T_IG$ with its image $di_I(T_IG) \subseteq \mathfrak{gl}(d,\mathbb{R}) = \Mat(d,\mathbb{R})$. Then the Lie bracket on $T_IG$ is
+\[
+[A, B] = AB - BA ,
+\]
+with matrix multiplication.
+\leeref{Proposition 8.41, Theorem 8.46}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture~19.)} ``By assumption, $G$ is included in some general linear group \ldots\ as a Lie subgroup, and the differential of the inclusion map at the identity is the inclusion'' $di_I : T_IG \hookrightarrow \mathfrak{gl}(d, \mathbb{R})$. The inclusion is a Lie group morphism (Definition~\ref{def:lie-group-morphism}): smooth by hypothesis, and a group morphism because the product on $G$ is matrix multiplication. So by Proposition~\ref{prop:morphism-preserves-bracket}, for $A, B \in T_IG$,
+\[
+di_I\big([A, B]_G\big) = \big[di_I(A), di_I(B)\big]_{\GL(d,\mathbb{R})} = di_I(A)\, di_I(B) - di_I(B)\, di_I(A),
+\]
+the last step by Theorem~\ref{thm:gl-bracket}. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. ``If we know that the bracket for the general linear group is a commutator, then for every linear group, it's got to be the commutator too, \ldots\ just some algebra.'' \textit{(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma~\ref{lem:maps-into-submanifold}(1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)}
+\end{proof}
+
+In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image of a bracket. Lecture~19 checked this directly in one case: ``we have a theorem, but it's good to check.''
+
+\begin{exbox}[The Commutator of Skew-Symmetric Matrices]\exlabel{ex:skew-bracket}
+$T_I\Ogp(n) = \Skew(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem~\ref{thm:classical-summary}). If $A, B \in \Skew(n,\mathbb{R})$, then $[A, B] = AB - BA \in \Skew(n,\mathbb{R})$.
+\end{exbox}
+
+\begin{proof}
+\textit{(Lecture~19.)} $[A, B]^{\mathsf T} = (AB - BA)^{\mathsf T} = B^{\mathsf T}A^{\mathsf T} - A^{\mathsf T}B^{\mathsf T} = (-B)(-A) - (-A)(-B) = BA - AB = -[A, B]$. ``You can do the same for the unitary [group] --- that was the homework problem. Instead of transpose, you have star, complex transpose conjugate, and the same computation works.''
+\end{proof}
+
+\textbf{Transcription note (Lecture 19).} Page~49 of the handwritten notes writes the evaluation map as $\mathfrak{g} \to T_eM$ and its inverse from $T_eM$; the group is $G$, so $T_eG$. The definition of the bracket there reads ``$[A, B] = [\mathbf{X}^A, \mathbf{X}^B]$''; the field bracket is evaluated at the identity, $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$ (Definition~\ref{def:bracket-TeG}), as Uribe said in lecture (``now we go back by evaluating at $e$'').
+
+
+% ============================================================================
+% CHAPTER: SARD'S THEOREM (Lecture 19, Wed Oct 14, 2026)
+
+% ============================================================================
+% CHAPTER: SARD'S THEOREM (Lecture 19, Wed Oct 14, 2026)
+% ============================================================================
+\chapter{Sard's Theorem}
+
+\textit{Lecture 19. ``I want to switch gears \ldots\ to a theorem that is very useful \ldots\ It's not about vector fields.'' Sard's theorem ``is a very important theorem that is proved using techniques that are never used again in the course. So I never prove this. It's a complicated proof, actually, and I never do it in class. It's of course in Lee, because everything is in Lee.'' The proofs below are filled in, following Lee, Chapter~6, and marked as such. The dynamical side of vector fields resumes after the midterm; meanwhile, ``topics that are kind of self-contained.''}
+
+% ============================================================================
+% SECTION: SETS OF MEASURE ZERO
+
+\section{Sets of Measure Zero}\label{sec:measure-zero}
+
+\roadmark{Stage: analysis}{Sets that are negligible, in Euclidean space and then on manifolds: ``this is not really measure theory. It's just the notion of sets of measure zero.''}
+
+\begin{defbox}[Measure Zero in $\mathbb{R}^n$]\deflabel{def:measure-zero-Rn}
+A set $S \subseteq \mathbb{R}^n$ has \textbf{measure zero} if for every $\varepsilon > 0$ there is a countable cover $\{C_a\}$ of $S$ such that each $C_a$ is an open \textbf{rectangle}, a product of open intervals $C_a = (\alpha_1, \beta_1) \times \cdots \times (\alpha_n, \beta_n)$, and
+\[
+\sum_a \operatorname{Vol}(C_a) < \varepsilon, \qquad \operatorname{Vol}(C_a) = \prod_{i=1}^n (\beta_i - \alpha_i) \ \ \text{(Euclidean volume)}.
+\]
+\leeref{Ch.~6, \emph{Sets of Measure Zero}; Appendix C}
+\end{defbox}
+
+``They could be closed, but let's say open.'' In three dimensions the rectangles are solid boxes. ``You should think of them as being very small, very thin. And for example, they cannot contain an open set. But it's much more than that, actually.''
+
+\begin{center}
+\begin{tikzpicture}[scale=1.25]
+\draw[->, gray!60] (-0.2,0.3) -- (3.5,0.3); \draw[->, gray!60] (-0.1,0.2) -- (-0.1,2.2);
+\draw[->, gray!60] (4.0,0.3) -- (7.7,0.3); \draw[->, gray!60] (4.1,0.2) -- (4.1,2.2);
+\draw[orange!85!black, fill=orange!20] (-0.010,1.230) rectangle (0.410,1.543);
+\draw[orange!85!black, fill=orange!20] (0.390,1.503) rectangle (0.810,1.744);
+\draw[orange!85!black, fill=orange!20] (0.790,1.704) rectangle (1.210,1.820);
+\draw[orange!85!black, fill=orange!20] (1.190,1.710) rectangle (1.610,1.820);
+\draw[orange!85!black, fill=orange!20] (1.590,1.514) rectangle (2.010,1.750);
+\draw[orange!85!black, fill=orange!20] (1.990,1.242) rectangle (2.410,1.554);
+\draw[orange!85!black, fill=orange!20] (2.390,0.967) rectangle (2.810,1.282);
+\draw[orange!85!black, fill=orange!20] (2.790,0.762) rectangle (3.210,1.007);
+\draw[violet!75!black, thick] plot[smooth] coordinates {(0.000,1.250) (0.016,1.261) (0.032,1.273) (0.048,1.284) (0.064,1.296) (0.080,1.307) (0.096,1.318) (0.112,1.330) (0.128,1.341) (0.144,1.352) (0.160,1.364) (0.176,1.375) (0.192,1.386) (0.208,1.397) (0.224,1.408) (0.240,1.419) (0.256,1.430) (0.272,1.440) (0.288,1.451) (0.304,1.462) (0.320,1.472) (0.336,1.483) (0.352,1.493) (0.368,1.503) (0.384,1.513) (0.400,1.523) (0.416,1.533) (0.432,1.543) (0.448,1.553) (0.464,1.562) (0.480,1.571) (0.496,1.581) (0.512,1.590) (0.528,1.599) (0.544,1.607) (0.560,1.616) (0.576,1.624) (0.592,1.633) (0.608,1.641) (0.624,1.649) (0.640,1.657) (0.656,1.664) (0.672,1.672) (0.688,1.679) (0.704,1.686) (0.720,1.693) (0.736,1.700) (0.752,1.706) (0.768,1.712) (0.784,1.718) (0.800,1.724) (0.816,1.730) (0.832,1.735) (0.848,1.741) (0.864,1.746) (0.880,1.751) (0.896,1.755) (0.912,1.760) (0.928,1.764) (0.944,1.768) (0.960,1.772) (0.976,1.775) (0.992,1.778) (1.008,1.781) (1.024,1.784) (1.040,1.787) (1.056,1.789) (1.072,1.791) (1.088,1.793) (1.104,1.795) (1.120,1.796) (1.136,1.798) (1.152,1.799) (1.168,1.799) (1.184,1.800) (1.200,1.800) (1.216,1.800) (1.232,1.800) (1.248,1.799) (1.264,1.799) (1.280,1.798) (1.296,1.796) (1.312,1.795) (1.328,1.793) (1.344,1.791) (1.360,1.789) (1.376,1.787) (1.392,1.784) (1.408,1.782) (1.424,1.779) (1.440,1.775) (1.456,1.772) (1.472,1.768) (1.488,1.764) (1.504,1.760) (1.520,1.755) (1.536,1.751) (1.552,1.746) (1.568,1.741) (1.584,1.736) (1.600,1.730) (1.616,1.725) (1.632,1.719) (1.648,1.713) (1.664,1.706) (1.680,1.700) (1.696,1.693) (1.712,1.686) (1.728,1.679) (1.744,1.672) (1.760,1.665) (1.776,1.657) (1.792,1.649) (1.808,1.641) (1.824,1.633) (1.840,1.625) (1.856,1.616) (1.872,1.608) (1.888,1.599) (1.904,1.590) (1.920,1.581) (1.936,1.572) (1.952,1.562) (1.968,1.553) (1.984,1.543) (2.000,1.534) (2.016,1.524) (2.032,1.514) (2.048,1.504) (2.064,1.493) (2.080,1.483) (2.096,1.473) (2.112,1.462) (2.128,1.452) (2.144,1.441) (2.160,1.430) (2.176,1.419) (2.192,1.408) (2.208,1.397) (2.224,1.386) (2.240,1.375) (2.256,1.364) (2.272,1.353) (2.288,1.342) (2.304,1.330) (2.320,1.319) (2.336,1.308) (2.352,1.296) (2.368,1.285) (2.384,1.273) (2.400,1.262) (2.416,1.250) (2.432,1.239) (2.448,1.228) (2.464,1.216) (2.480,1.205) (2.496,1.193) (2.512,1.182) (2.528,1.171) (2.544,1.159) (2.560,1.148) (2.576,1.137) (2.592,1.126) (2.608,1.115) (2.624,1.104) (2.640,1.093) (2.656,1.082) (2.672,1.071) (2.688,1.060) (2.704,1.049) (2.720,1.039) (2.736,1.028) (2.752,1.018) (2.768,1.007) (2.784,0.997) (2.800,0.987) (2.816,0.977) (2.832,0.967) (2.848,0.957) (2.864,0.948) (2.880,0.938) (2.896,0.929) (2.912,0.920) (2.928,0.911) (2.944,0.902) (2.960,0.893) (2.976,0.884) (2.992,0.876) (3.008,0.868) (3.024,0.859) (3.040,0.851) (3.056,0.844) (3.072,0.836) (3.088,0.829) (3.104,0.821) (3.120,0.814) (3.136,0.807) (3.152,0.801) (3.168,0.794) (3.184,0.788) (3.200,0.782)};
+\draw[orange!85!black, fill=orange!20] (4.190,1.230) rectangle (4.310,1.341);
+\draw[orange!85!black, fill=orange!20] (4.290,1.301) rectangle (4.410,1.411);
+\draw[orange!85!black, fill=orange!20] (4.390,1.371) rectangle (4.510,1.479);
+\draw[orange!85!black, fill=orange!20] (4.490,1.439) rectangle (4.610,1.543);
+\draw[orange!85!black, fill=orange!20] (4.590,1.503) rectangle (4.710,1.603);
+\draw[orange!85!black, fill=orange!20] (4.690,1.563) rectangle (4.810,1.657);
+\draw[orange!85!black, fill=orange!20] (4.790,1.617) rectangle (4.910,1.704);
+\draw[orange!85!black, fill=orange!20] (4.890,1.664) rectangle (5.010,1.744);
+\draw[orange!85!black, fill=orange!20] (4.990,1.704) rectangle (5.110,1.776);
+\draw[orange!85!black, fill=orange!20] (5.090,1.736) rectangle (5.210,1.800);
+\draw[orange!85!black, fill=orange!20] (5.190,1.760) rectangle (5.310,1.815);
+\draw[orange!85!black, fill=orange!20] (5.290,1.775) rectangle (5.410,1.820);
+\draw[orange!85!black, fill=orange!20] (5.390,1.776) rectangle (5.510,1.820);
+\draw[orange!85!black, fill=orange!20] (5.490,1.763) rectangle (5.610,1.816);
+\draw[orange!85!black, fill=orange!20] (5.590,1.741) rectangle (5.710,1.803);
+\draw[orange!85!black, fill=orange!20] (5.690,1.710) rectangle (5.810,1.781);
+\draw[orange!85!black, fill=orange!20] (5.790,1.671) rectangle (5.910,1.750);
+\draw[orange!85!black, fill=orange!20] (5.890,1.625) rectangle (6.010,1.711);
+\draw[orange!85!black, fill=orange!20] (5.990,1.572) rectangle (6.110,1.665);
+\draw[orange!85!black, fill=orange!20] (6.090,1.514) rectangle (6.210,1.612);
+\draw[orange!85!black, fill=orange!20] (6.190,1.450) rectangle (6.310,1.554);
+\draw[orange!85!black, fill=orange!20] (6.290,1.383) rectangle (6.410,1.490);
+\draw[orange!85!black, fill=orange!20] (6.390,1.313) rectangle (6.510,1.423);
+\draw[orange!85!black, fill=orange!20] (6.490,1.242) rectangle (6.610,1.353);
+\draw[orange!85!black, fill=orange!20] (6.590,1.170) rectangle (6.710,1.282);
+\draw[orange!85!black, fill=orange!20] (6.690,1.100) rectangle (6.810,1.210);
+\draw[orange!85!black, fill=orange!20] (6.790,1.032) rectangle (6.910,1.140);
+\draw[orange!85!black, fill=orange!20] (6.890,0.967) rectangle (7.010,1.072);
+\draw[orange!85!black, fill=orange!20] (6.990,0.907) rectangle (7.110,1.007);
+\draw[orange!85!black, fill=orange!20] (7.090,0.852) rectangle (7.210,0.947);
+\draw[orange!85!black, fill=orange!20] (7.190,0.803) rectangle (7.310,0.892);
+\draw[orange!85!black, fill=orange!20] (7.290,0.762) rectangle (7.410,0.843);
+\draw[violet!75!black, thick] plot[smooth] coordinates {(4.200,1.250) (4.216,1.261) (4.232,1.273) (4.248,1.284) (4.264,1.296) (4.280,1.307) (4.296,1.318) (4.312,1.330) (4.328,1.341) (4.344,1.352) (4.360,1.364) (4.376,1.375) (4.392,1.386) (4.408,1.397) (4.424,1.408) (4.440,1.419) (4.456,1.430) (4.472,1.440) (4.488,1.451) (4.504,1.462) (4.520,1.472) (4.536,1.483) (4.552,1.493) (4.568,1.503) (4.584,1.513) (4.600,1.523) (4.616,1.533) (4.632,1.543) (4.648,1.553) (4.664,1.562) (4.680,1.571) (4.696,1.581) (4.712,1.590) (4.728,1.599) (4.744,1.607) (4.760,1.616) (4.776,1.624) (4.792,1.633) (4.808,1.641) (4.824,1.649) (4.840,1.657) (4.856,1.664) (4.872,1.672) (4.888,1.679) (4.904,1.686) (4.920,1.693) (4.936,1.700) (4.952,1.706) (4.968,1.712) (4.984,1.718) (5.000,1.724) (5.016,1.730) (5.032,1.735) (5.048,1.741) (5.064,1.746) (5.080,1.751) (5.096,1.755) (5.112,1.760) (5.128,1.764) (5.144,1.768) (5.160,1.772) (5.176,1.775) (5.192,1.778) (5.208,1.781) (5.224,1.784) (5.240,1.787) (5.256,1.789) (5.272,1.791) (5.288,1.793) (5.304,1.795) (5.320,1.796) (5.336,1.798) (5.352,1.799) (5.368,1.799) (5.384,1.800) (5.400,1.800) (5.416,1.800) (5.432,1.800) (5.448,1.799) (5.464,1.799) (5.480,1.798) (5.496,1.796) (5.512,1.795) (5.528,1.793) (5.544,1.791) (5.560,1.789) (5.576,1.787) (5.592,1.784) (5.608,1.782) (5.624,1.779) (5.640,1.775) (5.656,1.772) (5.672,1.768) (5.688,1.764) (5.704,1.760) (5.720,1.755) (5.736,1.751) (5.752,1.746) (5.768,1.741) (5.784,1.736) (5.800,1.730) (5.816,1.725) (5.832,1.719) (5.848,1.713) (5.864,1.706) (5.880,1.700) (5.896,1.693) (5.912,1.686) (5.928,1.679) (5.944,1.672) (5.960,1.665) (5.976,1.657) (5.992,1.649) (6.008,1.641) (6.024,1.633) (6.040,1.625) (6.056,1.616) (6.072,1.608) (6.088,1.599) (6.104,1.590) (6.120,1.581) (6.136,1.572) (6.152,1.562) (6.168,1.553) (6.184,1.543) (6.200,1.534) (6.216,1.524) (6.232,1.514) (6.248,1.504) (6.264,1.493) (6.280,1.483) (6.296,1.473) (6.312,1.462) (6.328,1.452) (6.344,1.441) (6.360,1.430) (6.376,1.419) (6.392,1.408) (6.408,1.397) (6.424,1.386) (6.440,1.375) (6.456,1.364) (6.472,1.353) (6.488,1.342) (6.504,1.330) (6.520,1.319) (6.536,1.308) (6.552,1.296) (6.568,1.285) (6.584,1.273) (6.600,1.262) (6.616,1.250) (6.632,1.239) (6.648,1.228) (6.664,1.216) (6.680,1.205) (6.696,1.193) (6.712,1.182) (6.728,1.171) (6.744,1.159) (6.760,1.148) (6.776,1.137) (6.792,1.126) (6.808,1.115) (6.824,1.104) (6.840,1.093) (6.856,1.082) (6.872,1.071) (6.888,1.060) (6.904,1.049) (6.920,1.039) (6.936,1.028) (6.952,1.018) (6.968,1.007) (6.984,0.997) (7.000,0.987) (7.016,0.977) (7.032,0.967) (7.048,0.957) (7.064,0.948) (7.080,0.938) (7.096,0.929) (7.112,0.920) (7.128,0.911) (7.144,0.902) (7.160,0.893) (7.176,0.884) (7.192,0.876) (7.208,0.868) (7.224,0.859) (7.240,0.851) (7.256,0.844) (7.272,0.836) (7.288,0.829) (7.304,0.821) (7.320,0.814) (7.336,0.807) (7.352,0.801) (7.368,0.794) (7.384,0.788) (7.400,0.782)};
+\node[font=\scriptsize] at (1.6,0.0) {8 rectangles: total area $\approx 0.79$};
+\node[font=\scriptsize] at (5.8,0.0) {32 rectangles: total area $\approx 0.34$};
+\node[violet!75!black, font=\scriptsize] at (3.45,1.95) {$S$};
+\node[violet!75!black, font=\scriptsize] at (7.65,1.95) {$S$};
+\end{tikzpicture}
+\end{center}
+
+A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the total area: about $0.79$ with $8$ rectangles, about $0.34$ with $32$, and as small as desired with more --- so $S$ has measure zero.
+
+\begin{lembox}[Basic Properties of Measure Zero]\thmlabel{lem:measure-zero-basic}
+In $\mathbb{R}^n$:
+\begin{enumerate}[nosep]
+\item a subset of a set of measure zero has measure zero;
+\item a countable union of sets of measure zero has measure zero;
+\item in Definition~\ref{def:measure-zero-Rn}, the open rectangles may be replaced by closed rectangles, or by open or closed cubes;
+\item a nonempty open set does not have measure zero (for $n \ge 1$).
+\end{enumerate}
+\leeref{Proposition C.18, Exercise 6.1, Corollary C.25}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in. Item (4) is Uribe's ``they cannot contain an open set''.)}
+
+\emph{(1)} A cover of the larger set covers the smaller one.
+
+\emph{(2)} Let $S = \bigcup_{k \ge 1} S_k$ with each $S_k$ of measure zero, and $\varepsilon > 0$. Cover $S_k$ by countably many open rectangles of total volume $< \varepsilon/2^k$. All of these together, a countable family, cover $S$ with total volume $< \sum_k \varepsilon/2^k = \varepsilon$.
+
+\emph{(3)} \emph{Closed rectangles.} A closed rectangle $\prod[\alpha_i, \beta_i]$ lies in the open rectangle $\prod(\alpha_i - \eta, \beta_i + \eta)$, whose volume tends to $\prod(\beta_i - \alpha_i)$ as $\eta \to 0$; so given a cover by closed rectangles of total volume $< \varepsilon/2$, enlarging the $a$-th rectangle ($a = 1, 2, \ldots$) so that its volume grows by less than $\varepsilon/2^{a+1}$ gives an open cover of total volume $< \varepsilon$. Conversely an open rectangle lies in its closure, of the same volume.
+\emph{Cubes.} Cubes are rectangles, so a cover by cubes is a cover by rectangles. Conversely, let $R = \prod(\alpha_i, \beta_i)$ with sides $\ell_i = \beta_i - \alpha_i > 0$, and $0 < \delta \le \min_i \ell_i$. The closed cubes of side $\delta$ with corners in $\prod_i (\alpha_i + \delta\mathbb{Z})$ that meet $\overline R$ cover $R$; in the $i$-th direction at most $\lfloor \ell_i / \delta \rfloor + 2 \le \ell_i/\delta + 2 \le 3\ell_i/\delta$ of the intervals $[\alpha_i + t\delta, \alpha_i + (t+1)\delta]$ meet $[\alpha_i, \beta_i]$, so there are at most $\prod_i 3\ell_i/\delta$ such cubes, of total volume at most $3^n \operatorname{Vol}(R)$. Doing this for each rectangle of a cover of total volume $< \varepsilon/3^n$ gives a countable cover by closed cubes of total volume $< \varepsilon$; enlarging them as before gives open cubes.
+
+\emph{(4)} A nonempty open set contains a closed cube $Q$ of some side $s > 0$, so by (1) it suffices to show that $Q$ is not covered by open rectangles of total volume $< s^n = \operatorname{Vol}(Q)$. Suppose $Q \subseteq \bigcup_a C_a$. $Q$ is compact, so finitely many $C_1, \ldots, C_r$ cover it. Cut $\mathbb{R}^n$ by the hyperplanes $x^i = $ (an endpoint of a side of $Q$ or of some $C_b$): this divides $Q$ into finitely many closed grid cells $P$, and each $\overline{C_b} \cap Q$ into cells too, with $\operatorname{Vol}(Q) = \sum_{P \subseteq Q} \operatorname{Vol}(P)$ and $\operatorname{Vol}(C_b) \ge \sum_{P \subseteq \overline{C_b}} \operatorname{Vol}(P)$, since the volume of a rectangle is the sum of the volumes of the cells it is divided into (expand the product of the side lengths). An interior point of a cell $P \subseteq Q$ lies in some $C_b$; no cutting hyperplane passes through the interior of $P$, so $P$ lies on one side of each face of $C_b$, hence $P \subseteq \overline{C_b}$. So every cell of $Q$ is counted in some $\operatorname{Vol}(C_b)$, and $\operatorname{Vol}(Q) \le \sum_{b=1}^r \operatorname{Vol}(C_b) \le \sum_a \operatorname{Vol}(C_a)$.
+\end{proof}
+
+\begin{lembox}[Smooth Maps Preserve Measure Zero]\thmlabel{lem:smooth-measure-zero}
+Let $U \subseteq \mathbb{R}^n$ be open, $F : U \to \mathbb{R}^n$ smooth, and $S \subseteq U$ a set of measure zero. Then $F(S)$ has measure zero.
+\leeref{Proposition 6.5}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~19 gave the idea: ``I'm not going to prove this, but I want to tell you the idea of the proof.'' The details are filled in.)}
+
+\emph{The idea.} ``Differentiable maps, $C^\infty$ maps, are locally Lipschitz'': for every compact $K \subseteq U$ there is a constant $C$ with
+\[
+|F(x) - F(y)| \le C\, |x - y| \qquad \text{for all } x, y \in K,
+\]
+and ``somehow $C$ has to do with --- not quite, but it's essentially --- the sup of the partial derivatives over $K$.'' This ``of course implies continuity, but it's a lot more strong'': ``it's going to map cubes to cubes of comparable volume.''
+
+\emph{Reduction to a closed cube.} $U$ is the union of the countably many closed cubes with rational corners and rational side lengths that lie in $U$ (each $x \in U$ has an open ball in $U$ about it, and a small rational cube containing $x$ inside that ball). So $F(S) = \bigcup_Q F(S \cap Q)$ over countably many closed cubes $Q \subseteq U$, and by Lemma~\ref{lem:measure-zero-basic}(2) it suffices to show that $F(S \cap Q)$ has measure zero.
+
+\emph{The Lipschitz estimate on $Q$, in the sup norm $\|x\|_\infty = \max_i |x^i|$.} The partial derivatives $\partial F^i/\partial x^j$ are continuous on the compact set $Q$, so $M = \max_{i,j} \sup_Q |\partial F^i/\partial x^j|$ is finite. $Q$ is convex, so for $x, y \in Q$ the segment between them lies in $Q$, and the mean value theorem applied to $t \mapsto F^i(x + t(y - x))$ gives a point $\xi$ on the segment with
+\[
+|F^i(y) - F^i(x)| = \Big| \sum_j \frac{\partial F^i}{\partial x^j}(\xi)\, (y^j - x^j) \Big| \le n M\, \|y - x\|_\infty ,
+\]
+so $\|F(y) - F(x)\|_\infty \le C \|y - x\|_\infty$ with $C = nM + 1 > 0$.
+
+\emph{Cubes go to cubes.} A cube of side $t$ is a sup-norm ball. Let $\varepsilon > 0$, and by Lemma~\ref{lem:measure-zero-basic}(3) cover $S \cap Q$ by countably many open cubes $Q_a$, of sides $t_a$, with $\sum_a t_a^n < \varepsilon$. For each $a$ with $Q_a \cap Q \ne \varnothing$ pick $c_a \in Q_a \cap Q$. For $x \in Q_a \cap Q$, $\|x - c_a\|_\infty < t_a$, so $\|F(x) - F(c_a)\|_\infty < C t_a$: $F(Q_a \cap Q)$ lies in the open cube of side $2Ct_a$ centred at $F(c_a)$. These cubes cover $F(S \cap Q)$, with total volume $\sum_a (2C t_a)^n < (2C)^n \varepsilon$, as small as desired.
+\end{proof}
+
+\begin{rembox}[Continuity Is Not Enough]\label{rem:cantor-function}
+``You have to be careful. Just for fun, this is not true'': $F(S)$ may not have measure zero if $F$ is only continuous --- ``Cantor's function. It's a standard counterexample.'' \textit{(Filled in.)} The Cantor function $c : [0,1] \to [0,1]$ is continuous, nondecreasing, and maps the Cantor set, which has measure zero, onto all of $[0,1]$, which does not (Lemma~\ref{lem:measure-zero-basic}(4)). The smoothness used above is exactly the Lipschitz estimate, which $c$ lacks. ``As you can see, we're really talking about analysis here.''
+\end{rembox}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.15]
+\draw[->, gray!60] (-0.1,0) -- (3.35,0) node[right, font=\scriptsize, text=black] {$x$};
+\draw[->, gray!60] (0,-0.1) -- (0,3.35);
+\draw[gray!60] (3,-0.05) -- (3,0.05) node[below=3pt, font=\scriptsize, text=black] {$1$};
+\draw[gray!60] (-0.05,3) -- (0.05,3) node[left=3pt, font=\scriptsize, text=black] {$1$};
+\draw[violet!75!black, thick] plot coordinates {(0,0) (0.007,0.047) (0.015,0.094) (0.022,0.094) (0.03,0.141) (0.037,0.188) (0.045,0.188) (0.052,0.188) (0.06,0.188) (0.068,0.188) (0.075,0.2) (0.083,0.24) (0.09,0.281) (0.098,0.281) (0.105,0.328) (0.113,0.375) (0.12,0.375) (0.128,0.375) (0.135,0.375) (0.142,0.375) (0.15,0.375) (0.158,0.375) (0.165,0.375) (0.172,0.375) (0.18,0.375) (0.188,0.375) (0.195,0.375) (0.203,0.375) (0.21,0.375) (0.217,0.375) (0.225,0.4) (0.233,0.445) (0.24,0.469) (0.247,0.48) (0.255,0.516) (0.263,0.562) (0.27,0.562) (0.278,0.562) (0.285,0.562) (0.292,0.562) (0.3,0.6) (0.307,0.639) (0.315,0.656) (0.323,0.68) (0.33,0.715) (0.338,0.75) (0.345,0.75) (0.352,0.75) (0.36,0.75) (0.367,0.75) (0.375,0.75) (0.383,0.75) (0.39,0.75) (0.398,0.75) (0.405,0.75) (0.412,0.75) (0.42,0.75) (0.427,0.75) (0.435,0.75) (0.443,0.75) (0.45,0.75) (0.458,0.75) (0.465,0.75) (0.472,0.75) (0.48,0.75) (0.487,0.75) (0.495,0.75) (0.502,0.75) (0.51,0.75) (0.517,0.75) (0.525,0.75) (0.532,0.75) (0.54,0.75) (0.547,0.75) (0.555,0.75) (0.562,0.75) (0.57,0.75) (0.578,0.75) (0.585,0.75) (0.593,0.75) (0.6,0.75) (0.608,0.75) (0.615,0.75) (0.623,0.75) (0.63,0.75) (0.637,0.75) (0.645,0.75) (0.652,0.75) (0.66,0.75) (0.667,0.762) (0.675,0.8) (0.682,0.844) (0.69,0.844) (0.698,0.891) (0.705,0.938) (0.713,0.938) (0.72,0.938) (0.728,0.938) (0.735,0.938) (0.743,0.961) (0.75,1) (0.757,1.031) (0.765,1.031) (0.772,1.078) (0.78,1.125) (0.787,1.125) (0.795,1.125) (0.802,1.125) (0.81,1.125) (0.818,1.125) (0.825,1.125) (0.833,1.125) (0.84,1.125) (0.848,1.125) (0.855,1.125) (0.863,1.125) (0.87,1.125) (0.877,1.125) (0.885,1.125) (0.892,1.16) (0.9,1.2) (0.907,1.219) (0.915,1.242) (0.922,1.277) (0.93,1.312) (0.938,1.312) (0.945,1.312) (0.953,1.312) (0.96,1.312) (0.968,1.359) (0.975,1.4) (0.983,1.406) (0.99,1.43) (0.998,1.477) (1.005,1.5) (1.012,1.5) (1.02,1.5) (1.028,1.5) (1.035,1.5) (1.042,1.5) (1.05,1.5) (1.058,1.5) (1.065,1.5) (1.073,1.5) (1.08,1.5) (1.087,1.5) (1.095,1.5) (1.103,1.5) (1.11,1.5) (1.117,1.5) (1.125,1.5) (1.133,1.5) (1.14,1.5) (1.147,1.5) (1.155,1.5) (1.163,1.5) (1.17,1.5) (1.177,1.5) (1.185,1.5) (1.192,1.5) (1.2,1.5) (1.208,1.5) (1.215,1.5) (1.222,1.5) (1.23,1.5) (1.238,1.5) (1.245,1.5) (1.252,1.5) (1.26,1.5) (1.268,1.5) (1.275,1.5) (1.282,1.5) (1.29,1.5) (1.298,1.5) (1.305,1.5) (1.312,1.5) (1.32,1.5) (1.327,1.5) (1.335,1.5) (1.343,1.5) (1.35,1.5) (1.357,1.5) (1.365,1.5) (1.373,1.5) (1.38,1.5) (1.387,1.5) (1.395,1.5) (1.403,1.5) (1.41,1.5) (1.417,1.5) (1.425,1.5) (1.433,1.5) (1.44,1.5) (1.448,1.5) (1.455,1.5) (1.462,1.5) (1.47,1.5) (1.478,1.5) (1.485,1.5) (1.492,1.5) (1.5,1.5) (1.508,1.5) (1.515,1.5) (1.522,1.5) (1.53,1.5) (1.538,1.5) (1.545,1.5) (1.552,1.5) (1.56,1.5) (1.567,1.5) (1.575,1.5) (1.583,1.5) (1.59,1.5) (1.597,1.5) (1.605,1.5) (1.613,1.5) (1.62,1.5) (1.627,1.5) (1.635,1.5) (1.643,1.5) (1.65,1.5) (1.657,1.5) (1.665,1.5) (1.673,1.5) (1.68,1.5) (1.688,1.5) (1.695,1.5) (1.702,1.5) (1.71,1.5) (1.718,1.5) (1.725,1.5) (1.732,1.5) (1.74,1.5) (1.748,1.5) (1.755,1.5) (1.762,1.5) (1.77,1.5) (1.778,1.5) (1.785,1.5) (1.792,1.5) (1.8,1.5) (1.808,1.5) (1.815,1.5) (1.823,1.5) (1.83,1.5) (1.837,1.5) (1.845,1.5) (1.853,1.5) (1.86,1.5) (1.867,1.5) (1.875,1.5) (1.883,1.5) (1.89,1.5) (1.897,1.5) (1.905,1.5) (1.913,1.5) (1.92,1.5) (1.927,1.5) (1.935,1.5) (1.942,1.5) (1.95,1.5) (1.958,1.5) (1.965,1.5) (1.972,1.5) (1.98,1.5) (1.988,1.5) (1.995,1.5) (2.002,1.523) (2.01,1.57) (2.018,1.594) (2.025,1.6) (2.033,1.641) (2.04,1.688) (2.047,1.688) (2.055,1.688) (2.062,1.688) (2.07,1.688) (2.078,1.723) (2.085,1.758) (2.092,1.781) (2.1,1.8) (2.107,1.84) (2.115,1.875) (2.123,1.875) (2.13,1.875) (2.138,1.875) (2.145,1.875) (2.152,1.875) (2.16,1.875) (2.167,1.875) (2.175,1.875) (2.183,1.875) (2.19,1.875) (2.197,1.875) (2.205,1.875) (2.212,1.875) (2.22,1.875) (2.228,1.922) (2.235,1.969) (2.243,1.969) (2.25,2) (2.257,2.039) (2.265,2.062) (2.272,2.062) (2.28,2.062) (2.288,2.062) (2.295,2.062) (2.303,2.109) (2.31,2.156) (2.317,2.156) (2.325,2.2) (2.333,2.238) (2.34,2.25) (2.348,2.25) (2.355,2.25) (2.362,2.25) (2.37,2.25) (2.377,2.25) (2.385,2.25) (2.393,2.25) (2.4,2.25) (2.408,2.25) (2.415,2.25) (2.422,2.25) (2.43,2.25) (2.438,2.25) (2.445,2.25) (2.453,2.25) (2.46,2.25) (2.467,2.25) (2.475,2.25) (2.482,2.25) (2.49,2.25) (2.498,2.25) (2.505,2.25) (2.513,2.25) (2.52,2.25) (2.527,2.25) (2.535,2.25) (2.542,2.25) (2.55,2.25) (2.558,2.25) (2.565,2.25) (2.572,2.25) (2.58,2.25) (2.587,2.25) (2.595,2.25) (2.603,2.25) (2.61,2.25) (2.618,2.25) (2.625,2.25) (2.632,2.25) (2.64,2.25) (2.647,2.25) (2.655,2.25) (2.663,2.25) (2.67,2.285) (2.678,2.32) (2.685,2.344) (2.692,2.361) (2.7,2.4) (2.708,2.438) (2.715,2.438) (2.723,2.438) (2.73,2.438) (2.737,2.438) (2.745,2.484) (2.752,2.52) (2.76,2.531) (2.768,2.555) (2.775,2.6) (2.783,2.625) (2.79,2.625) (2.797,2.625) (2.805,2.625) (2.812,2.625) (2.82,2.625) (2.828,2.625) (2.835,2.625) (2.842,2.625) (2.85,2.625) (2.857,2.625) (2.865,2.625) (2.873,2.625) (2.88,2.625) (2.888,2.625) (2.895,2.672) (2.902,2.719) (2.91,2.719) (2.917,2.76) (2.925,2.8) (2.933,2.812) (2.94,2.812) (2.947,2.812) (2.955,2.812) (2.962,2.812) (2.97,2.859) (2.978,2.906) (2.985,2.906) (2.993,2.953) (3,3)};
+\foreach \a/\b in {0/0.111,0.222/0.333,0.667/0.778,0.889/1} {\draw[orange!85!black, line width=2.2pt] (3*\a,0) -- (3*\b,0);}
+\draw[teal!60!black, line width=2.2pt] (-0.12,0) -- (-0.12,3);
+\node[orange!85!black, font=\scriptsize, anchor=north] at (1.5,-0.25) {(a stage of) the Cantor set: total length $\to 0$};
+\node[teal!60!black, font=\scriptsize, anchor=east] at (-0.2,1.5) {image $[0,1]$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture.)} The Cantor function $c$: constant on each removed middle third, it climbs only on the Cantor set. So $c$ maps a set of measure zero (orange; shown at the second stage of the construction) onto the whole interval $[0,1]$ (teal). Its slopes are unbounded near the Cantor set, which is the Lipschitz estimate of Lemma~\ref{lem:smooth-measure-zero} failing.
+
+\textit{``Because of this lemma, we can define sets of measure zero on a manifold.''}
+
+\begin{defbox}[Measure Zero in a Manifold]\deflabel{def:measure-zero-manifold}
+Let $M$ be a smooth manifold of dimension $m$ and $S \subseteq M$ any subset (``I'm not assuming it's a submanifold. It's just a set''). $S$ has \textbf{measure zero} if $S$ can be covered by coordinate charts $\{(U_\alpha, \varphi_\alpha)\}$, $S \subseteq \bigcup_\alpha U_\alpha$, such that for every $\alpha$ the set $\varphi_\alpha(S \cap U_\alpha) \subseteq \mathbb{R}^m$ has measure zero (Definition~\ref{def:measure-zero-Rn}).
+\leeref{Ch.~6, \emph{Sets of Measure Zero}; Lemma 6.6}
+\end{defbox}
+
+A student asked whether any number of charts is allowed. ``Yeah, but you can always do with a countable [number], because of second countability'' --- the next lemma.
+
+\begin{lembox}[Countable Subcovers]\thmlabel{lem:countable-subcover}
+Let $X$ be a second-countable space (Definition~\ref{def:second-countable}), $A \subseteq X$, and $\{U_\alpha\}$ a family of open sets covering $A$. Then countably many of the $U_\alpha$ cover $A$.
+\leeref{Proposition A.16}
+\end{lembox}
+
+\begin{proof}
+\textit{(Filled in.)} Let $\mathcal{B}$ be a countable basis. For each $B \in \mathcal{B}$ that is contained in some $U_\alpha$, choose one such $U_{\alpha(B)}$; there are countably many choices. If $x \in A$, then $x \in U_\alpha$ for some $\alpha$, and since $\mathcal{B}$ is a basis there is $B \in \mathcal{B}$ with $x \in B \subseteq U_\alpha$; so $B$ was given a set $U_{\alpha(B)} \supseteq B \ni x$. So the chosen sets cover $A$.
+\end{proof}
+
+\begin{propbox}[Measure Zero Is Seen in Every Chart]\thmlabel{prop:measure-zero-every-chart}
+If $S \subseteq M$ has measure zero, then $\varphi(S \cap U)$ has measure zero in $\mathbb{R}^m$ for \emph{every} chart $(U, \varphi)$ of $M$. Consequently subsets and countable unions of sets of measure zero in $M$ have measure zero in $M$.
+\leeref{Lemma 6.6, Exercise 6.7}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~19 as an observation, ``by the lemma''; filled in.)} Let $\{(U_\alpha, \varphi_\alpha)\}$ be as in Definition~\ref{def:measure-zero-manifold}, and $(U, \varphi)$ any chart. By Lemma~\ref{lem:countable-subcover} (manifolds are second countable), countably many $U_\alpha$ cover $S \cap U$, and
+\[
+\varphi(S \cap U \cap U_\alpha) = \big(\varphi \circ \varphi_\alpha^{-1}\big)\big(\varphi_\alpha(S \cap U \cap U_\alpha)\big),
+\]
+where the transition map $\varphi \circ \varphi_\alpha^{-1} : \varphi_\alpha(U \cap U_\alpha) \to \varphi(U \cap U_\alpha)$ is a smooth map between open subsets of $\mathbb{R}^m$ (Definition~\ref{def:compatible}), and $\varphi_\alpha(S \cap U \cap U_\alpha) \subseteq \varphi_\alpha(S \cap U_\alpha)$ has measure zero (Lemma~\ref{lem:measure-zero-basic}(1)). By Lemma~\ref{lem:smooth-measure-zero}, each $\varphi(S \cap U \cap U_\alpha)$ has measure zero, and $\varphi(S \cap U)$ is their countable union (Lemma~\ref{lem:measure-zero-basic}(2)).
+
+For the consequences: if $T \subseteq S$, the charts covering $S$ cover $T$, and $\varphi_\alpha(T \cap U_\alpha) \subseteq \varphi_\alpha(S \cap U_\alpha)$. If $S = \bigcup_k S_k$ with each $S_k$ of measure zero, cover $S$ by all charts of $M$: for each chart, $\varphi(S \cap U) = \bigcup_k \varphi(S_k \cap U)$ is a countable union of sets of measure zero, by the first part.
+\end{proof}
+
+\begin{center}
+\begin{tikzcd}[column sep=1.2em, row sep=3.2em]
+ & S \cap U \cap U_\alpha \arrow[dl, "\varphi_\alpha"'] \arrow[dr, "\varphi"] & \\
+\varphi_\alpha(S \cap U \cap U_\alpha) \arrow[rr, "\varphi \circ \varphi_\alpha^{-1}"'] & & \varphi(S \cap U \cap U_\alpha)
+\end{tikzcd}
+\end{center}
+
+The same piece of $S$ seen in two charts. The transition map carries one picture to the other, and it is smooth, so by Lemma~\ref{lem:smooth-measure-zero} measure zero in one picture means measure zero in the other.
+
+\begin{lembox}[A Fubini Lemma for Compact Sets]\thmlabel{lem:fubini-measure-zero}
+Let $n \ge 2$ and $A \subseteq \mathbb{R}^n = \mathbb{R} \times \mathbb{R}^{n-1}$ compact, such that for every $c \in \mathbb{R}$ the slice $A_c = \{ x \in \mathbb{R}^{n-1} : (c, x) \in A \}$ has measure zero in $\mathbb{R}^{n-1}$. Then $A$ has measure zero in $\mathbb{R}^n$.
+\leeref{Lemma 6.2}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in, as a tool for Sard's theorem.)} Choose $a < b$ with $A \subseteq [a, b] \times \mathbb{R}^{n-1}$, and let $\delta > 0$.
+
+\emph{Each slice, thickened.} Fix $c \in [a, b]$. $A_c$ is compact (its image $\{c\} \times A_c = A \cap (\{c\} \times \mathbb{R}^{n-1})$ is compact) and has measure zero, so it is covered by countably many open rectangles of total volume $< \delta$, hence by finitely many of them; let $U_c \subseteq \mathbb{R}^{n-1}$ be their union. There is an open interval $J_c \ni c$, which we may take inside $(a - 1, b + 1)$, with $A \cap (J_c \times \mathbb{R}^{n-1}) \subseteq J_c \times U_c$. Otherwise there are points $(c_k, x_k) \in A$ with $c_k \to c$ and $x_k \notin U_c$; by compactness a subsequence converges to some $(c, x) \in A$, with $x \notin U_c$ because the complement of $U_c$ is closed; but $x \in A_c \subseteq U_c$.
+
+\emph{Finitely many strips.} The $J_c$ cover $[a, b]$; take a finite subcover, and from it a minimal one, $J_1, \ldots, J_r$ (for $c_1, \ldots, c_r$). No point lies in three of them: if $x$ lay in three, the one with the smallest left endpoint and the one with the largest right endpoint would both contain $x$, so their union, an interval, would contain the third, contradicting minimality. So $\sum_k \operatorname{length}(J_k) \le 2\,\operatorname{length}\big(\bigcup_k J_k\big) \le 2(b - a + 2)$.
+
+\emph{The cover.} $A \subseteq \bigcup_k J_k \times U_{c_k}$, and $J_k \times U_{c_k}$ is a union of finitely many open rectangles, (interval) $\times$ (rectangle of $U_{c_k}$), of total volume $< \operatorname{length}(J_k)\,\delta$. In total, finitely many open rectangles of total volume $< 2(b - a + 2)\,\delta$, which is as small as desired.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.35]
+\draw[->, gray!60] (-0.2,0) -- (3.5,0) node[right, font=\scriptsize, text=black] {$\mathbb{R}$ (first coordinate)};
+\draw[->, gray!60] (0,-0.2) -- (0,2.3) node[above, font=\scriptsize, text=black] {$\mathbb{R}^{n-1}$};
+\draw[orange!85!black, fill=orange!20] (0.78,0.305) rectangle (1.22,0.565);
+\draw[orange!85!black, fill=orange!20] (0.78,1.635) rectangle (1.22,1.895);
+\draw[violet!75!black, thick] plot[smooth] coordinates {(2.9,1.1) (2.898,1.139) (2.893,1.178) (2.884,1.217) (2.872,1.256) (2.856,1.294) (2.836,1.332) (2.814,1.369) (2.788,1.405) (2.758,1.44) (2.726,1.475) (2.69,1.508) (2.652,1.541) (2.61,1.572) (2.566,1.602) (2.519,1.63) (2.47,1.657) (2.418,1.683) (2.364,1.707) (2.308,1.729) (2.25,1.75) (2.19,1.768) (2.129,1.785) (2.066,1.8) (2.002,1.813) (1.936,1.824) (1.87,1.834) (1.803,1.841) (1.736,1.846) (1.668,1.849) (1.6,1.85) (1.532,1.849) (1.464,1.846) (1.397,1.841) (1.33,1.834) (1.264,1.824) (1.198,1.813) (1.134,1.8) (1.071,1.785) (1.01,1.768) (0.95,1.75) (0.892,1.729) (0.836,1.707) (0.782,1.683) (0.73,1.657) (0.681,1.63) (0.634,1.602) (0.59,1.572) (0.548,1.541) (0.51,1.508) (0.474,1.475) (0.442,1.44) (0.412,1.405) (0.386,1.369) (0.364,1.332) (0.344,1.294) (0.328,1.256) (0.316,1.217) (0.307,1.178) (0.302,1.139) (0.3,1.1) (0.302,1.061) (0.307,1.022) (0.316,0.983) (0.328,0.944) (0.344,0.906) (0.364,0.868) (0.386,0.831) (0.412,0.795) (0.442,0.76) (0.474,0.725) (0.51,0.692) (0.548,0.659) (0.59,0.628) (0.634,0.598) (0.681,0.57) (0.73,0.543) (0.782,0.517) (0.836,0.493) (0.892,0.471) (0.95,0.45) (1.01,0.432) (1.071,0.415) (1.134,0.4) (1.198,0.387) (1.264,0.376) (1.33,0.366) (1.397,0.359) (1.464,0.354) (1.532,0.351) (1.6,0.35) (1.668,0.351) (1.736,0.354) (1.803,0.359) (1.87,0.366) (1.936,0.376) (2.002,0.387) (2.066,0.4) (2.129,0.415) (2.19,0.432) (2.25,0.45) (2.308,0.471) (2.364,0.493) (2.418,0.517) (2.47,0.543) (2.519,0.57) (2.566,0.598) (2.61,0.628) (2.652,0.659) (2.69,0.692) (2.726,0.725) (2.758,0.76) (2.788,0.795) (2.814,0.831) (2.836,0.868) (2.856,0.906) (2.872,0.944) (2.884,0.983) (2.893,1.022) (2.898,1.061) (2.9,1.1)};
+\draw[teal!60!black, dashed] (1,0) -- (1,2.1) node[above, font=\scriptsize] {slice at $c$};
+\fill[teal!60!black] (1,0.435) circle (1.6pt); \fill[teal!60!black] (1,1.765) circle (1.6pt);
+\draw[orange!85!black, line width=2pt] (0.78,-0.12) -- (1.22,-0.12) node[below, midway, font=\scriptsize] {$J_c$};
+\node[violet!75!black, font=\scriptsize] at (3.05,1.75) {$A$};
+\node[orange!85!black, font=\scriptsize, anchor=west] at (3.1,0.95) {$J_c \times U_c$};
+\draw[orange!85!black, ->] (3.08,0.95) -- (1.25,0.435);
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture.)} The proof of Lemma~\ref{lem:fubini-measure-zero} for a compact $A$ in the plane ($n = 2$). The slice of $A$ at $c$ (teal) has measure zero, so it is covered by finitely many small intervals, $U_c$. By compactness the same intervals still cover the slices at all $c'$ near $c$, in an interval $J_c$, so $A \cap (J_c \times \mathbb{R})$ lies in the thin boxes $J_c \times U_c$ (orange). Finitely many $J_c$ cover the first coordinate's range, overlapping at most twice, and the total area is at most $2 \times$ (length) $\times$ (the slices' cover size).
+
+\begin{rembox}[Measure Zero and Lebesgue Measure]\label{rem:measure-zero-lebesgue}
+\textit{(Not from lecture.)} Uribe: ``this is not really measure theory. It's just the notion of sets of measure zero.'' For readers who know Lebesgue measure the dictionary is short.
+\begin{enumerate}
+\item $S \subseteq \mathbb{R}^n$ has measure zero in the sense of Definition~\ref{def:measure-zero-Rn} exactly when its Lebesgue outer measure is $m^*(S) = 0$ (outer measure is defined with countable covers by rectangles, open or closed, as in Lemma~\ref{lem:measure-zero-basic}(3)); such sets are Lebesgue measurable.
+\item Lemma~\ref{lem:measure-zero-basic}(1)--(2) are monotonicity and countable subadditivity of $m^*$; item (4) is $m^*(\text{closed rectangle}) = $ its volume.
+\item Lemma~\ref{lem:fubini-measure-zero} is the cross-section theorem (a consequence of Tonelli's theorem) for a compact, hence measurable, set: $m(A) = \int_{\mathbb{R}} m(A_c)\, dc = 0$. The proof above avoids measurability and integration and uses only compactness.
+\end{enumerate}
+\end{rembox}
+
+% ============================================================================
+% SECTION: SARD'S THEOREM
+
+\section{Sard's Theorem}\label{sec:sard}
+
+\roadmark{Stage: analysis}{Almost every value of a smooth map is regular.}
+
+\begin{rembox}[Recall: Regular and Singular Values]\label{rem:singular-values}
+For $F : M \to N$ smooth, $q \in N$ is a regular value if $dF_p$ is onto for every $p \in F^{-1}(q)$ (Definition~\ref{def:regular-critical-value}); in particular every $q \notin F(M)$ is a regular value. A value that is not regular is a \emph{singular value} --- Uribe's word in Lecture~19; ``critical value'' in Definition~\ref{def:regular-critical-value} and in Lee. Likewise $p \in M$ is a critical (singular) point if $dF_p$ is not onto (Definition~\ref{def:regular-critical}).
+\end{rembox}
+
+\begin{thmbox}[Sard's Theorem]\thmlabel{thm:sard}
+Let $F : M \to N$ be a smooth map, and
+\[
+S = \{\, q \in N : q \text{ is not a regular value of } F \,\},
+\]
+the set of singular values. Then $S$ has measure zero in $N$ (Definition~\ref{def:measure-zero-manifold}).
+\leeref{Theorem 6.10}
+\end{thmbox}
+
+``So almost all values are regular \ldots\ and this is going to have a lot of applications. Trust me, we're going to see them. They're very cute.''
+
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+\draw[->, gray!60] (-2.2,0) -- (2.3,0) node[below, font=\scriptsize, text=black] {$M = \mathbb{R}$};
+\draw[->, gray!60] (-2.6,-1.3) -- (-2.6,1.4) node[above, font=\scriptsize, text=black] {$N = \mathbb{R}$};
+\draw[violet!75!black, thick] plot[smooth] coordinates {(-1.845,-1.109) (-1.822,-1.000) (-1.799,-0.895) (-1.776,-0.793) (-1.753,-0.695) (-1.730,-0.600) (-1.707,-0.508) (-1.684,-0.420) (-1.660,-0.335) (-1.637,-0.254) (-1.614,-0.176) (-1.591,-0.100) (-1.568,-0.028) (-1.545,0.040) (-1.522,0.106) (-1.499,0.169) (-1.476,0.229) (-1.453,0.286) (-1.430,0.340) (-1.407,0.392) (-1.384,0.440) (-1.361,0.486) (-1.338,0.529) (-1.315,0.570) (-1.291,0.608) (-1.268,0.643) (-1.245,0.676) (-1.222,0.706) (-1.199,0.734) (-1.176,0.760) (-1.153,0.783) (-1.130,0.804) (-1.107,0.823) (-1.084,0.840) (-1.061,0.854) (-1.038,0.867) (-1.015,0.877) (-0.992,0.886) (-0.969,0.892) (-0.946,0.896) (-0.922,0.899) (-0.899,0.900) (-0.876,0.899) (-0.853,0.896) (-0.830,0.892) (-0.807,0.886) (-0.784,0.879) (-0.761,0.869) (-0.738,0.859) (-0.715,0.847) (-0.692,0.833) (-0.669,0.819) (-0.646,0.802) (-0.623,0.785) (-0.600,0.766) (-0.577,0.747) (-0.553,0.726) (-0.530,0.704) (-0.507,0.680) (-0.484,0.656) (-0.461,0.631) (-0.438,0.605) (-0.415,0.579) (-0.392,0.551) (-0.369,0.522) (-0.346,0.493) (-0.323,0.464) (-0.300,0.433) (-0.277,0.402) (-0.254,0.370) (-0.231,0.338) (-0.208,0.306) (-0.184,0.273) (-0.161,0.240) (-0.138,0.206) (-0.115,0.172) (-0.092,0.138) (-0.069,0.104) (-0.046,0.069) (-0.023,0.035) (0.000,0.000) (0.023,-0.035) (0.046,-0.069) (0.069,-0.104) (0.092,-0.138) (0.115,-0.172) (0.138,-0.206) (0.161,-0.240) (0.185,-0.273) (0.208,-0.306) (0.231,-0.338) (0.254,-0.370) (0.277,-0.402) (0.300,-0.433) (0.323,-0.464) (0.346,-0.493) (0.369,-0.522) (0.392,-0.551) (0.415,-0.579) (0.438,-0.605) (0.461,-0.631) (0.484,-0.656) (0.507,-0.680) (0.530,-0.704) (0.554,-0.726) (0.577,-0.747) (0.600,-0.766) (0.623,-0.785) (0.646,-0.802) (0.669,-0.819) (0.692,-0.833) (0.715,-0.847) (0.738,-0.859) (0.761,-0.869) (0.784,-0.879) (0.807,-0.886) (0.830,-0.892) (0.853,-0.896) (0.876,-0.899) (0.899,-0.900) (0.922,-0.899) (0.946,-0.896) (0.969,-0.892) (0.992,-0.886) (1.015,-0.877) (1.038,-0.867) (1.061,-0.854) (1.084,-0.840) (1.107,-0.823) (1.130,-0.804) (1.153,-0.783) (1.176,-0.760) (1.199,-0.734) (1.222,-0.706) (1.245,-0.676) (1.268,-0.643) (1.292,-0.608) (1.315,-0.570) (1.338,-0.529) (1.361,-0.486) (1.384,-0.440) (1.407,-0.392) (1.430,-0.340) (1.453,-0.286) (1.476,-0.229) (1.499,-0.169) (1.522,-0.106) (1.545,-0.040) (1.568,0.028) (1.591,0.100) (1.614,0.176) (1.637,0.254) (1.660,0.335) (1.684,0.420) (1.707,0.508) (1.730,0.600) (1.753,0.695) (1.776,0.793) (1.799,0.895) (1.822,1.000) (1.845,1.109)};
+\draw[red!70!black, dashed] (-0.900,0.900) -- (-2.6,0.900);
+\fill[red!70!black] (-0.900,0.900) circle (1.6pt);
+\fill[red!70!black] (-2.6,0.900) circle (1.8pt);
+\draw[red!70!black, dashed] (0.900,-0.900) -- (-2.6,-0.900);
+\fill[red!70!black] (0.900,-0.900) circle (1.6pt);
+\fill[red!70!black] (-2.6,-0.900) circle (1.8pt);
+\node[red!70!black, font=\scriptsize, anchor=east] at (-2.65,0.900) {$2$};
+\node[red!70!black, font=\scriptsize, anchor=east] at (-2.65,-0.900) {$-2$};
+\draw[teal!60!black, dashed] (-2.6,0.405) -- (1.679,0.405);
+\fill[teal!60!black] (-2.6,0.405) circle (1.6pt);
+\node[teal!60!black, font=\scriptsize, anchor=east] at (-2.65,0.405) {$c$};
+\fill[teal!60!black] (-1.401,0.405) circle (1.4pt);
+\draw[teal!60!black] (-1.599,-0.017) -- (-1.203,0.827);
+\fill[teal!60!black] (-0.279,0.405) circle (1.4pt);
+\draw[teal!60!black] (-0.477,0.673) -- (-0.081,0.137);
+\fill[teal!60!black] (1.679,0.405) circle (1.4pt);
+\draw[teal!60!black] (1.481,-0.332) -- (1.877,1.142);
+\node[font=\scriptsize, violet!75!black] at (0.5,1.3) {$f(x) = x^3 - 3x$};
+\node[font=\scriptsize, align=left, anchor=west] at (3.0,0.1) {\textcolor{red!70!black}{critical values $\pm 2$:}\\ \textcolor{red!70!black}{$f'(\pm 1) = 0$}\\[3pt] \textcolor{teal!60!black}{a regular value $c$:}\\ \textcolor{teal!60!black}{$f' \ne 0$ at all three}\\ \textcolor{teal!60!black}{preimages}};
+\end{tikzpicture}
+\end{center}
+
+The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical points are $x = \pm 1$, where $f' = 0$, so the singular values are just $f(\pm 1) = \mp 2$, two points, a set of measure zero. Every other $c$ is a regular value: at each of its preimages the slope is nonzero.
+
+\begin{proof}
+\textit{(Not given in lecture --- ``it's a big theorem. It's a long proof'' --- filled in, following Lee's proof of Theorem~6.10.)} Write $m = \dim M$, $n = \dim N$, and $C \subseteq M$ for the set of critical points, so that $S = F(C)$. We prove, by induction on $m$, the statement for all smooth maps between manifolds with $\dim M = m$.
+
+\emph{$m = 0$.} If $n = 0$, every $dF_p$ is onto the zero space, so $S = \varnothing$. If $n \ge 1$, $M$ is countable (a second-countable discrete space), so $S \subseteq F(M)$ is countable; a point of $\mathbb{R}^n$ lies in cubes of arbitrarily small volume, so a countable set has measure zero by Lemma~\ref{lem:measure-zero-basic}(2), in every chart of $N$.
+
+\emph{Reduction to Euclidean space.} Suppose $m \ge 1$ and the theorem holds whenever the domain has dimension $< m$. If $n = 0$ there is nothing to prove, so let $n \ge 1$. Each $p \in M$ has a chart $(U_p, \varphi_p)$ with $F(U_p)$ inside the domain of a chart $(V_p, \psi_p)$ of $N$ (shrink a chart at $p$ into $F^{-1}(V_p)$, by continuity). By Lemma~\ref{lem:countable-subcover} countably many $U_i = U_{p_i}$ cover $M$, so $S = \bigcup_i F(C \cap U_i)$. In the charts, $\hat F_i = \psi_i \circ F \circ \varphi_i^{-1} : \varphi_i(U_i) \to \mathbb{R}^n$, and since charts are diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), $p$ is a critical point of $F$ exactly when $\varphi_i(p)$ is one of $\hat F_i$; so $\psi_i\big(F(C \cap U_i)\big)$ is the set of singular values of $\hat F_i$. If that set has measure zero in $\mathbb{R}^n$, then $F(C \cap U_i)$, covered by the single chart $(V_i, \psi_i)$, has measure zero in $N$, and so does the countable union $S$ (Proposition~\ref{prop:measure-zero-every-chart}). So it suffices to treat $F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open, with $C = \{ x : \operatorname{rank} DF(x) < n \}$.
+
+\emph{A filtration of $C$.} For $k \ge 1$ let $C_k \subseteq C$ be the set of $x \in C$ at which all partial derivatives of $F$ of orders $1, \ldots, k$ vanish, so $C \supseteq C_1 \supseteq C_2 \supseteq \cdots$. These sets are closed in $U$: $C$ is where all $n \times n$ minors of $DF$ vanish, and $C_k$ is cut out of $C$ by finitely many more continuous functions. Fix an integer $k_0 \ge 1$ with $k_0 > m/n - 1$, that is, $n(k_0 + 1) > m$ (for instance $k_0 = \max(1, \lfloor m/n \rfloor)$; the condition $k_0 \ge 1$ matters when $m < n$). Then
+\[
+C = (C \setminus C_1) \cup \bigcup_{k=1}^{k_0 - 1} (C_k \setminus C_{k+1}) \cup C_{k_0},
+\]
+and it suffices to show that the image of each piece has measure zero.
+
+\emph{Step 1: $F(C \setminus C_1)$ has measure zero.} If $n = 1$ then $C \setminus C_1 = \varnothing$: a nonzero first partial at $x$ makes the $1 \times m$ matrix $DF(x)$ have rank $1$. Let $n \ge 2$. Replacing $U$ by the open set $U \setminus C_1$, we may assume $C_1 = \varnothing$. Let $a \in C$. Some first partial of $F$ is nonzero at $a$; renumbering coordinates, $\partial F^1/\partial x^1(a) \neq 0$. Then $h(x) = (F^1(x), x^2, \ldots, x^m)$ has invertible derivative at $a$, so by the inverse function theorem (Theorem~\ref{thm:inverse-function}) it is a diffeomorphism from an open $W_a \ni a$ onto an open set; choose a closed ball $K_a \ni a$ in $W_a$ with $a$ in its interior. In the coordinates $(u, v) = h(x)$, $u \in \mathbb{R}$, $v \in \mathbb{R}^{m-1}$, the map $G = F \circ h^{-1}$ has the form $G(u, v) = (u, G^2(u,v), \ldots, G^n(u, v))$, so
+\[
+DG(u, v) = \begin{pmatrix} 1 & 0 \\ * & \big(\partial G^i/\partial v^j\big) \end{pmatrix},
+\]
+and $(u, v)$ is a critical point of $G$ exactly when the $(n-1) \times (m-1)$ block has rank $< n - 1$. For $c \in \mathbb{R}$ let $G_c(v) = (G^2(c, v), \ldots, G^n(c, v))$, defined on the open set $\{ v : (c, v) \in h(W_a) \} \subseteq \mathbb{R}^{m-1}$; then $(c, v)$ is a critical point of $G$ exactly when $v$ is a critical point of $G_c$. The set $F(C \cap K_a) = G(h(C \cap K_a))$ is compact ($C \cap K_a$ is closed in the compact $K_a$), and its slice at $u = c$ consists of points $(c, G_c(v))$ with $v$ a critical point of $G_c$: it lies in $\{c\} \times$ (the singular values of $G_c$), which has measure zero in $\mathbb{R}^{n-1}$ by the induction hypothesis, $G_c$ having an $(m-1)$-dimensional domain. By Lemma~\ref{lem:fubini-measure-zero}, $F(C \cap K_a)$ has measure zero. The interiors of the $K_a$ cover $C$, so countably many do (Lemma~\ref{lem:countable-subcover}), and $F(C \setminus C_1)$ is a countable union of sets of measure zero.
+
+\emph{Step 2: $F(C_k \setminus C_{k+1})$ has measure zero, $k \ge 1$.} Replacing $U$ by $U \setminus C_{k+1}$, we may assume that at each $a \in C_k$ some partial derivative of order $k + 1$ of $F$ is nonzero. So there is a $k$-th order partial derivative $y = \partial^\alpha F^i$, $|\alpha| = k$, with $dy_a \neq 0$. Choose an open $V_a \ni a$ on which $dy \neq 0$. Then $0$ is a regular value of $y|_{V_a}$, and $Y = \{ x \in V_a : y(x) = 0 \}$ is a regular submanifold of $V_a$ of dimension $m - 1$ (Theorem~\ref{thm:rvt-manifolds}). All $k$-th order partials of $F$ vanish on $C_k$, so $C_k \cap V_a \subseteq Y$. At $p \in C_k \cap V_a$, all first partials vanish ($k \ge 1$), so $dF_p = 0$, and $d(F|_Y)_p = dF_p \circ d\iota_p = 0$ is not onto $\mathbb{R}^n$, $n \ge 1$ (chain rule, $\iota : Y \to U$ the inclusion, smooth by Lemma~\ref{lem:maps-into-submanifold}). So $F(C_k \cap V_a)$ lies in the set of singular values of $F|_Y : Y \to \mathbb{R}^n$, which has measure zero by the induction hypothesis. Countably many $V_a$ cover $C_k$, so $F(C_k \setminus C_{k+1})$ has measure zero.
+
+\emph{Step 3: $F(C_{k_0})$ has measure zero.} By the reduction in the proof of Lemma~\ref{lem:smooth-measure-zero}, it suffices to show that $F(C_{k_0} \cap E)$ has measure zero for a closed cube $E \subseteq U$, of side $R$. Let $A > 0$ bound the absolute values of all partial derivatives of order $k_0 + 1$ of $F$ on $E$ (continuous functions on a compact set; taking $A > 0$ keeps the cubes below nondegenerate). If $x' \in C_{k_0} \cap E$ and $x \in E$, Taylor's theorem along the segment from $x'$ to $x$, which lies in the convex set $E$, applied to each component $F^i$, has no terms of orders $1, \ldots, k_0$, so
+\[
+|F^i(x) - F^i(x')| \le \sum_{|\beta| = k_0 + 1} \frac{A}{\beta!}\, |(x - x')^\beta| \le A'\, \|x - x'\|_\infty^{k_0 + 1},
+\]
+with $A'$ depending only on $A$, $k_0$ and $m$. Divide $E$ into $K^m$ closed cubes $E_1, \ldots, E_{K^m}$ of side $R/K$. If $E_j$ contains a point $x'_j \in C_{k_0}$, then $F(E_j)$ lies in the closed cube of side $2A'(R/K)^{k_0 + 1}$ centred at $F(x'_j)$. So $F(C_{k_0} \cap E)$ lies in at most $K^m$ cubes of total volume
+\[
+K^m \big(2A'\big)^n \Big(\frac{R}{K}\Big)^{n(k_0 + 1)} = \big(2A'\big)^n R^{\,n(k_0 + 1)}\, K^{\,m - n(k_0 + 1)} ,
+\]
+which tends to $0$ as $K \to \infty$ because $n(k_0 + 1) > m$. By Lemma~\ref{lem:measure-zero-basic}(3), $F(C_{k_0} \cap E)$ has measure zero.
+
+Steps 1--3 cover all of $C$, which completes the induction.
+\end{proof}
+
+\begin{corbox}[Maps from Lower Dimension]\thmlabel{cor:sard-low-dim}
+If $F : M \to N$ is smooth and $\dim M < \dim N$, then the regular values of $F$ are exactly the points of $N \setminus F(M)$, and $F(M)$ has measure zero in $N$.
+\leeref{Corollary 6.11}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture~19.)} ``By linear algebra, no point in the image can be a regular value, because \ldots\ the dimensions don't work out'': for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem~\ref{thm:tangent-dimension}), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage --- ``this is a vacuous thing'' --- and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
+\end{proof}
+
+``That's one observation, but there will be many other nice applications of this.'' For instance, a smooth curve $\gamma : \mathbb{R} \to \mathbb{R}^2$ never fills an open set of the plane: its image has measure zero, and so does every subset of it (Lemma~\ref{lem:measure-zero-basic}(1)), while an open set does not (Lemma~\ref{lem:measure-zero-basic}(4)) --- in contrast with continuous space-filling curves.
+
+\textbf{Transcription note (Lecture 19).} Page~50 of the handwritten notes states the image lemma for ``$F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open''. As written, with $m$ unrestricted, it is false for $m > n$: the projection $\mathbb{R}^2 \to \mathbb{R}$, $(x, y) \mapsto x$, maps the $x$-axis, of measure zero in $\mathbb{R}^2$, onto $\mathbb{R}$. Lemma~\ref{lem:smooth-measure-zero} takes $m = n$, as Lee does and as the application to transition maps needs. (For $m < n$ the conclusion holds for every $S$, by Corollary~\ref{cor:sard-low-dim}.)
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -16773,7 +17184,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
 \ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
 \ref{sec:lie-bracket}\ Lie bracket and Lie algebra; related fields & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28); \emph{Vector Fields and Smooth Maps} (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 \\
-\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields; Lie group morphisms & Chapter 7 (Examples 7.3, 7.27--7.30; \emph{Lie Group Homomorphisms}); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorems 8.37 and 8.44) \\
+\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields; Lie group morphisms; the bracket of a matrix group & Chapter 7 (Examples 7.3, 7.27--7.30; \emph{Lie Group Homomorphisms}); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorems 8.37 and 8.44, Proposition 8.41) \\
+\ref{sec:measure-zero}\ Sets of measure zero & Chapter 6, \emph{Sets of Measure Zero} (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) \\
+\ref{sec:sard}\ Sard's theorem & Chapter 6, \emph{Sard's Theorem} (Theorem 6.10, Corollary 6.11) \\
 \bottomrule
 \end{longtable}
 
@@ -16850,7 +17263,14 @@ Corollary 5.30 & Lem.~\ref{lem:maps-into-submanifold} \\
 Proposition 5.35 & Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.37 & Def.~\ref{def:geometric-tangent}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.38 & Thm.~\ref{thm:tangent-kernel}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Thm.~\ref{thm:rvt-manifolds} \\
-Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Prop.~\ref{prop:transverse-normal-spaces} \\
+Proposition 6.1 & Lem.~\ref{lem:measure-zero-basic} \\
+Lemma 6.2 & Lem.~\ref{lem:fubini-measure-zero} \\
+Proposition 6.5 & Lem.~\ref{lem:smooth-measure-zero} \\
+Lemma 6.6 & Def.~\ref{def:measure-zero-manifold}, Prop.~\ref{prop:measure-zero-every-chart} \\
+Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
+Theorem 6.10 & Thm.~\ref{thm:sard} \\
+Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
+Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Cor.~\ref{cor:transverse-special-cases} \\
 Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
 Proposition 7.26 & Def.~\ref{def:orbit-map} \\
 Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
@@ -16872,7 +17292,9 @@ Proposition 8.30 & Prop.~\ref{prop:bracket-naturality} \\
 Corollary 8.31 & Cor.~\ref{cor:diffeo-bracket} \\
 Proposition 8.33 & Cor.~\ref{cor:lie-subalgebra} \\
 Theorem 8.37 & Def.~\ref{def:left-invariant-extension}, Lem.~\ref{lem:left-invariant-extension}, Prop.~\ref{prop:left-invariant-extension-smooth}, Thm.~\ref{thm:lie-algebra-TeG} \\
+Proposition 8.41 & Thm.~\ref{thm:linear-group-bracket} \\
 Theorem 8.44 & Lem.~\ref{lem:morphism-related}, Prop.~\ref{prop:morphism-preserves-bracket} \\
+Theorem 8.46 & Thm.~\ref{thm:linear-group-bracket} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
@@ -16898,6 +17320,7 @@ Proposition 21.34 & Thm.~\ref{thm:GL-two-components} \\
 Proposition 21.35 & Prop.~\ref{prop:GL-disconnected}, Thm.~\ref{thm:GL-two-components} \\
 Example A.4 & Ex.~\ref{ex:r-discrete} \\
 Example A.5 & Ex.~\ref{ex:metric-t2}, Prop.~\ref{fact:metric} \\
+Proposition A.16 & Lem.~\ref{lem:countable-subcover} \\
 Proposition A.17 & Prop.~\ref{prop:univ-subspace}, Cor.~\ref{cor:univ-subspace-characterizes} \\
 Lemma A.19 & Prop.~\ref{fact:cont} \\
 Proposition A.23 & Thm.~\ref{thm:univ-product}, Cor.~\ref{cor:univ-product-characterizes} \\
@@ -16914,6 +17337,8 @@ Theorem A.57 & Prop.~\ref{prop:proper-closed} \\
 Corollary B.21 & Prop.~\ref{fact:linalg} \\
 Proposition B.24 & Prop.~\ref{fact:linalg} \\
 Theorem C.15 & Lem.~\ref{lem:hadamard}, Lem.~\ref{lem:taylor-hadamard} \\
+Proposition C.18 & Lem.~\ref{lem:measure-zero-basic} \\
+Corollary C.25 & Lem.~\ref{lem:measure-zero-basic} \\
 Theorem C.34 & Thm.~\ref{thm:inverse-function} \\
 Example C.37 & Ex.~\ref{ex:polar-derivations} \\
 Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
@@ -16922,6 +17347,10 @@ Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
 \end{longtable}
 }
 
+
+\end{document}
+
+\end{document}
 
 \end{document}
 

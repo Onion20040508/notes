@@ -5,7 +5,7 @@ chapter: 7
 section: 57
 tags: [differentiable-manifolds, math591]
 ---
-← [[§56 Related Vector Fields]] · ↑ [[· 7 Vector Fields and Lie Groups]]
+← [[§56 Related Vector Fields]] · ↑ [[· 7 Vector Fields and Lie Groups]] · [[§58 Sets of Measure Zero]] →
 
 *Stage: symmetry — Groups that are manifolds, and the vector fields that respect the group: the start of Lie theory.*
 
@@ -226,15 +226,17 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 ^lem-57-5
 
 > [!proof]+ Proof
-> *(Lecture 17, steps of the proof that $\mathfrak{g}$ is $T_eG$; (2) is filled in.)*
+> *(Lecture 17, steps of the proof that $\mathfrak{g}$ is $T_eG$; (2) was left to check — “not a bad thing to do” — and done in the review at the start of Lecture 19.)*
 >
 > *(1)* $L_g$ maps $e$ to $g$, so $d(L_g)_e : T_eG \to T_{L_g(e)}G = T_{ge}G = T_gG$, and $\mathbf{X}^v_g = d(L_g)_e(v)$ lies in $T_gG$. And $L_e = \mathrm{id}_G$ (as $eh = h$), so $\mathbf{X}^v_e = (\mathrm{id}_G)_{\ast e}(v) = v$ by Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]].
 >
-> *(2)* $L_g \circ L_h = L_{gh}$, since $g(hk) = (gh)k$, and $L_h(e) = h$; so by Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]] and the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]])
+> *(2)* *(Lecture 19.)* Fix $h, g \in G$. “If I want to end up at $g$, I have to start at $h^{-1}g$”: $L_h$ maps $h^{-1}g$ to $g$. By Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]] and the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]),
 >
 > $$
-> d(L_g)_h\big(\mathbf{X}^v_h\big) = d(L_g)_h\, d(L_h)_e(v) = d(L_g \circ L_h)_e(v) = d(L_{gh})_e(v) = \mathbf{X}^v_{gh} .
+> d(L_h)_{h^{-1}g}\big(\mathbf{X}^v_{h^{-1}g}\big) = d(L_h)_{h^{-1}g}\, d(L_{h^{-1}g})_e(v) = d\big(L_h \circ L_{h^{-1}g}\big)_e(v) = d(L_g)_e(v) = \mathbf{X}^v_g ,
 > $$
+>
+> because $L_h \circ L_{h^{-1}g} = L_g$: “you multiply on the left by $h^{-1}g$, and then you multiply on the left by $h$, so the $h$ and the $h^{-1}$ cancel.” Writing $k = h^{-1}g$, this says $d(L_h)_k(\mathbf{X}^v_k) = \mathbf{X}^v_{hk}$ for all $h, k \in G$, the identity of Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]].
 >
 > *(3)* Let $\mathbf{X} \in \mathfrak{g}$ and $g \in G$. Left-invariance (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]) with $h = e$ reads $d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_{ge} = \mathbf{X}_g$, and by Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]] with $v = \mathbf{X}_e$ the left side is $\mathbf{X}^{\mathbf{X}_e}_g$.
 
@@ -382,10 +384,51 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 
 ^thm-57-8
 
-> [!proof]- Proof (to be filled)
-> Stated in Lecture 17 — “for all matrix groups, the answer … is just the matrix commutator”; “that requires computation. You actually have to compute something.” Lecture 18 set up the general tool, that Lie group morphisms preserve brackets ([[§57 Lie Groups and Left-Invariant Vector Fields|§57]]); the computation is planned for Lecture 19, “first for the general linear group, and then … for any linear group.” The left-invariant fields are already known (Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|§57.1]]: $\mathbf{X}^A_g = gA$).
+> [!proof]+ Proof
+> *(Lecture 19 — “we have run out of diagrams to chase. We actually have to compute something.” The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11|§57.11]], which reduces every linear group to this case.)*
+>
+> *Coordinates.* Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \mathrm{GL}(d, \mathbb{R})$ rather than $g$, “because I want to think of it as a variable.” The entries $x^i_j$ are the standard coordinates of $\operatorname{Mat}(d,\mathbb{R}) \cong \mathbb{R}^{d^2}$, “indexed in a funny way”, and a tangent vector $V = (V^i_j) \in \operatorname{Mat}(d, \mathbb{R}) = T_X\mathrm{GL}(d,\mathbb{R})$ is $\sum_{i,j} V^i_j\, \partial/\partial x^i_j|_X$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]). The basic computation is
+>
+> $$
+> \frac{\partial}{\partial x^i_j}\big(x^l_n\big) = \delta_{il}\, \delta_{jn} ,
+> $$
+>
+> “one or zero depending on whether I'm differentiating the same coordinate as I'm taking the partial.”
+>
+> *The left-invariant field.* $\mathbf{X}^A_X = d(L_X)_I(A)$, and $L_X : \mathbb{R}^{d^2} \to \mathbb{R}^{d^2}$, $Y \mapsto XY$, is linear, “so it's its own differential” (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]): $\mathbf{X}^A_X = XA$ (Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|§57.1]]). The $(i,j)$ entry of $XA$ is $\sum_k x^i_k a^k_j$, so
+>
+> $$
+> \mathbf{X}^A = \sum_{i,j} \Big( \sum_k x^i_k\, a^k_j \Big) \frac{\partial}{\partial x^i_j}, \qquad
+> \mathbf{X}^B = \sum_{l,n} \Big( \sum_m x^l_m\, b^m_n \Big) \frac{\partial}{\partial x^l_n},
+> $$
+>
+> with independent indices for the second field, “because these are independent.” The $a^k_j$ and $b^m_n$ are constants; the $x$'s are functions. (A student asked why the sums can come out of the commutator: “because the commutator is bilinear \ldots over constants, \ldots but you cannot pull the $x$'s out, because those are functions.”)
+>
+> *The bracket.* “We know that we don't care about the second derivatives because they're going to go away” (Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]): by Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], the coefficient of $\partial/\partial x^l_n$ in $[\mathbf{X}^A, \mathbf{X}^B]$ is $\mathbf{X}^A$ applied to the coefficient of $\mathbf{X}^B$, minus the same with $A$ and $B$ exchanged. Applying the basic computation,
+>
+> $$
+> \mathbf{X}^A\Big( \sum_m x^l_m\, b^m_n \Big) = \sum_{i,j,k,m} x^i_k\, a^k_j\, b^m_n\, \delta_{il}\, \delta_{jm} = \sum_{k} x^l_k \Big( \sum_j a^k_j\, b^j_n \Big) = \sum_k x^l_k\, (AB)^k_n :
+> $$
+>
+> setting $i = l$ and $m = j$ is all that happens, and then “these two guys together \ldots it's an entry of a matrix”, the $(k, n)$ entry of $AB$. So
+>
+> $$
+> [\mathbf{X}^A, \mathbf{X}^B] = \sum_{l,n} \Big( \sum_k x^l_k\, (AB)^k_n \Big) \frac{\partial}{\partial x^l_n} - \big(\text{the same with } A \text{ and } B \text{ exchanged}\big) = \mathbf{X}^{AB} - \mathbf{X}^{BA},
+> $$
+>
+> comparing with the formula for $\mathbf{X}^A$ with $AB$, resp. $BA$, in place of $A$.
+>
+> *Evaluate at the identity.* By Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]] and $\mathbf{X}^C_I = C$,
+>
+> $$
+> [A, B] = [\mathbf{X}^A, \mathbf{X}^B]_I = \mathbf{X}^{AB}_I - \mathbf{X}^{BA}_I = AB - BA .
+> $$
 
 ^pf-57-8
+
+*Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11|§57.11]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|Ex. §57.1]], [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]], [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|Def. §57.6]]
+
+“You have to think about this on your own \ldots think about indices and so on. But this is essentially the reason.” Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset of $\operatorname{Mat}(d,\mathbb{R})$ is linear in $X$, and the bracket of the linear fields $X \mapsto XA$ and $X \mapsto XB$ is the linear field $X \mapsto X(AB - BA)$.
 
 > [!remark]- Connections
 > - The commutator Lie algebra of matrices: [[§55 Lie Bracket and Lie Algebra#^ex-55-2|Ex. §55.2]].
@@ -527,3 +570,52 @@ a linear map between the Lie algebras, and “the natural question is whether th
 Next: the commutator, “first for the general linear group, and then … for any linear group” (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]).
 
 **Transcription note (Lecture 18).** Page 47 of the handwritten notes begins the proof with “take $A \in T_hH$”; $A \in T_eH$. Page 48 writes the second field as $\mathbf{Y}^{\hat B}$ in one place; it is $\mathbf{Y}^{\tilde B}$, with $\tilde B = dF_e(B)$.
+
+## The Bracket of a Matrix Group
+
+*Lecture 19 began with a review, “just because last time was a little bit complex”: the Lie algebra $\mathfrak{g}$ of left-invariant fields, closed under commutators (Corollary [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4|§57.4]]); the isomorphism $\mathrm{ev} : \mathfrak{g} \to T_eG$ with inverse $A \mapsto \mathbf{X}^A$ (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]), including the check that $\mathbf{X}^A$ is left-invariant (Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](2)); and the bracket on $T_eG$, “I keep forgetting to do it, but it's important to write it” (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]]), defined so that $\mathrm{ev}$ is an isomorphism of Lie algebras.*
+
+> [!remark] Remark: The Lie Algebra in Practice
+> “In practice, when you say, `What's the Lie algebra of the orthogonal group?', the answer is never `some left-invariant fields', right? The answer is always: well, it's the tangent space at the identity” — with the bracket of Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]], which for matrix groups is the matrix commutator (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11|§57.11]] below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\mathrm{GL}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$ is standard.
+
+^rem-57-5
+
+> [!theorem] Theorem §57.11: The Bracket of a Linear Group
+> Let $G \subseteq \mathrm{GL}(d, \mathbb{R})$ be a linear group (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-7|§57.7]]) that is a *Lie subgroup*: the inclusion $i : G \hookrightarrow \mathrm{GL}(d, \mathbb{R})$ is smooth and $di_I$ is injective — for instance, $G$ a regular submanifold of $\operatorname{Mat}(d, \mathbb{R})$, as are the classical groups (Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1|§57.1]]). Identify $T_IG$ with its image $di_I(T_IG) \subseteq \mathfrak{gl}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$. Then the Lie bracket on $T_IG$ is
+>
+> $$
+> [A, B] = AB - BA ,
+> $$
+>
+> with matrix multiplication.
+>
+> *Lee: Proposition 8.41, Theorem 8.46*
+
+^thm-57-11
+
+> [!proof]+ Proof
+> *(Lecture 19.)* “By assumption, $G$ is included in some general linear group \ldots as a Lie subgroup, and the differential of the inclusion map at the identity is the inclusion” $di_I : T_IG \hookrightarrow \mathfrak{gl}(d, \mathbb{R})$. The inclusion is a Lie group morphism (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|§57.8]]): smooth by hypothesis, and a group morphism because the product on $G$ is matrix multiplication. So by Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10|§57.10]], for $A, B \in T_IG$,
+>
+> $$
+> di_I\big([A, B]_G\big) = \big[di_I(A), di_I(B)\big]_{\mathrm{GL}(d,\mathbb{R})} = di_I(A)\, di_I(B) - di_I(B)\, di_I(A),
+> $$
+>
+> the last step by Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. “If we know that the bracket for the general linear group is a commutator, then for every linear group, it's got to be the commutator too, \ldots just some algebra.” *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
+
+^pf-57-11
+
+*Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|Def. §57.8]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10|§57.10]], [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]]
+
+In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image of a bracket. Lecture 19 checked this directly in one case: “we have a theorem, but it's good to check.”
+
+> [!example] Example §57.3: The Commutator of Skew-Symmetric Matrices
+> $T_I\mathrm{O}(n) = \operatorname{Skew}(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). If $A, B \in \operatorname{Skew}(n,\mathbb{R})$, then $[A, B] = AB - BA \in \operatorname{Skew}(n,\mathbb{R})$.
+
+^ex-57-3
+
+> [!proof]+ Proof
+> *(Lecture 19.)* $[A, B]^{\mathsf T} = (AB - BA)^{\mathsf T} = B^{\mathsf T}A^{\mathsf T} - A^{\mathsf T}B^{\mathsf T} = (-B)(-A) - (-A)(-B) = BA - AB = -[A, B]$. “You can do the same for the unitary [group] — that was the homework problem. Instead of transpose, you have star, complex transpose conjugate, and the same computation works.”
+
+^pf-ex-57-3
+
+**Transcription note (Lecture 19).** Page 49 of the handwritten notes writes the evaluation map as $\mathfrak{g} \to T_eM$ and its inverse from $T_eM$; the group is $G$, so $T_eG$. The definition of the bracket there reads “$[A, B] = [\mathbf{X}^A, \mathbf{X}^B]$”; the field bracket is evaluated at the identity, $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]]), as Uribe said in lecture (“now we go back by evaluating at $e$”).

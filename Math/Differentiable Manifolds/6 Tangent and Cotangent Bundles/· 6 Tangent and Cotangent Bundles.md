@@ -24,7 +24,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§49 The Tangent Bundle#^prop-49-1|Proposition §49.1: The Topology of TM]]: 48 later results
-- [[Tangent Bundle Is a Smooth Manifold|Proposition §49.2: The Smooth Atlas of TM]]: 48 later results
+- [[§49 The Tangent Bundle#^prop-49-1|Proposition §49.1: The Topology of TM]]: 49 later results
+- [[Tangent Bundle Is a Smooth Manifold|Proposition §49.2: The Smooth Atlas of TM]]: 49 later results
 - [[§49 The Tangent Bundle#^cor-49-3|Corollary §49.3: The Tangent Bundle Is a Fibration]]: 22 later results
 - [[§49 The Tangent Bundle#^prop-49-4|Proposition §49.4: The Tangent Bundle Is a Manifold (Claim)]]: 22 later results
