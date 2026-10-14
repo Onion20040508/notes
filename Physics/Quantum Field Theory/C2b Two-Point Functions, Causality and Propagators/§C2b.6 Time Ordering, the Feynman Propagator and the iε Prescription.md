@@ -75,7 +75,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 *Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]
 
 > [!remark] Remark: Why the later operator stands to the left
-> In $\langle0|\cdots|0\rangle$ operators act on the state from right to left, so reading right to left is reading the history: the earliest acts first. Time evolution composes the same way, $U(t_3, t_2)U(t_2, t_1) = U(t_3, t_1)$ ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation|QM §C3.1]]), and Dyson's formula for interacting fields will order its exponential this way (QFT C6, planned). In the lecture's words: time starts on the right, things happen, and time ends on the left.
+> In $\langle0|\cdots|0\rangle$ operators act on the state from right to left, so reading right to left is reading the history: the earliest acts first. Time evolution composes the same way, $U(t_3, t_2)U(t_2, t_1) = U(t_3, t_1)$ ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation|QM §C3.1]]), and Dyson's formula for interacting fields orders its exponential this way ([[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-5|Theorem §C6.3.5]]). In the lecture's words: time starts on the right, things happen, and time ends on the left.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.6*
 
@@ -315,7 +315,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > ⚑ By-product: at coincident points the same identity turns the zero-point energy into $D_W$ at zero separation → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]].
 >
 > **What the derivation shows.**
-> - A product of free fields is its normal-ordered part plus the vacuum two-point function; this is the $n = 2$ case of Wick's theorem (QFT C6, planned).
+> - A product of free fields is its normal-ordered part plus the vacuum two-point function; this is the $n = 2$ case of Wick's theorem (QFT C6, planned), the engine of the perturbation theory that starts from the master formula ([[§C6.4 The Interacting Vacuum and the Two-Point Function#^thm-c6-4-6|Theorem §C6.4.6]]) and Lectures 14–16.
 
 ^der-c2b-6-6
 
@@ -519,6 +519,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 
 > [!remark]- Connections
 > - The $\pm i\varepsilon$ as boundary conditions has a nonrelativistic twin: the outgoing and incoming resolvents $(E - \hat H_0 \pm i\varepsilon)^{-1}$ of scattering theory, whose $k$-plane contour is closed exactly as here ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]], [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^rem-c10-1-2|QM Remark: Why the sign of iε matters]]), and the causal energy transform of the propagator ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]).
+> - The time-ordered two-point function of the interacting theory reduces to $D_F$ at zero coupling, and the master formula writes it through time-ordered products of free fields, so every order of perturbation theory is built from this propagator — [[§C6.4 The Interacting Vacuum and the Two-Point Function#^def-c6-4-2|Def. §C6.4.2]], [[§C6.4 The Interacting Vacuum and the Two-Point Function#^ex-c6-4-1|Example §C6.4.1]], [[§C6.4 The Interacting Vacuum and the Two-Point Function#^thm-c6-4-6|Theorem §C6.4.6]].
 > - The contraction $D_F$ is the building block of Wick's theorem and of every internal line of a Feynman diagram (QFT C6–C7, planned); for spinor and vector fields the numerator changes but the $i\varepsilon$ does not (spinor: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], numerator [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]]; vector: [[§C4.9 Vector-Field Propagators#^thm-c4-9-3|Theorem §C4.9.3]] massive, [[§C4.9 Vector-Field Propagators#^thm-c4-9-6|Theorem §C4.9.6]] photon in the Feynman gauge; Yu eq. (6.262)).
 > - Normal ordering ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]) and time ordering meet in Theorem §C2b.6.6; the zero-point energy is the same divergence as the light-cone singularity of $D_W$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]]).
 > - The anti-Feynman function ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]) is the Feynman function of the time-reversed ordering; its $-i\varepsilon$ reappears as the complex conjugate amplitude in the Schwinger–Keldysh (closed-time-path) formalism and on the far side of Cutkosky cuts (QFT C7, planned).

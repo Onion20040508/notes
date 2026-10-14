@@ -6,7 +6,7 @@ chapter: C9
 tags: [chapter, quantum-field-theory]
 ---
 # C9 Discrete Symmetries and Majorana Fields
-← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
+← [[· C6 Interactions of Quantum Fields]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (53), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (101), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (74), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (100)
 **Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)

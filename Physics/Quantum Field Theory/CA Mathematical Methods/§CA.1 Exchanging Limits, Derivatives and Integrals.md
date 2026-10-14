@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §A.1 (Principle "Interchanging limits, derivatives and integrals"), citing Rudin, Principles of Mathematical Analysis, Ch. 6, 7 and 11.*
 
-Quantum field theory differentiates under integrals, lets regulators $e^{-\varepsilon p}$ go to zero, and exchanges limits with derivatives, usually without comment. None of these exchanges is automatic. This section collects the three theorems that license them for ordinary integrals, starting from dominated convergence ([[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]]), the mean value theorem ([[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]) and the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]), and says where each is used and where none applies. Integrals that do not converge even conditionally are generalized functions, the subject of [[§CA.2 Generalized Functions|§CA.2]]; there the exchanges hold by definition ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]). This chapter is the interim home of these tools until a math-side Mathematical Methods subject exists (planned).
+Quantum field theory differentiates under integrals, lets regulators $e^{-\varepsilon p}$ go to zero, and exchanges limits with derivatives, usually without comment. None of these exchanges is automatic. This section collects the three theorems that license them for ordinary integrals, starting from dominated convergence ([[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]]), the mean value theorem ([[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]) and the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]), and says where each is used and where none applies; a fourth theorem trades an iterated integral with ordered limits for an integral over a cube, the step behind the time-ordered exponential of perturbation theory. Integrals that do not converge even conditionally are generalized functions, the subject of [[§CA.2 Generalized Functions|§CA.2]]; there the exchanges hold by definition ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]). This chapter is the interim home of these tools until a math-side Mathematical Methods subject exists (planned).
 
 > [!theorem] Theorem §CA.1.1: Dominated Convergence and Differentiation under the Integral
 > 1. *(Dominated convergence)* If $f_n(p) \to f(p)$ for almost every $p$ and $|f_n| \le g$ with $\int g < \infty$, then $\int f_n \to \int f$.
@@ -105,6 +105,54 @@ Quantum field theory differentiates under integrals, lets regulators $e^{-\varep
 
 ^rem-ca-1-1
 
+One more exchange is needed by perturbation theory: of an iterated integral with ordered limits for an integral over a cube, the step behind Dyson's time-ordered exponential.
+
+> [!theorem] Theorem §CA.1.4: Ordered Integrals over the Simplex
+> Let $a \le b$, $n \ge 1$, and let $f\colon [a, b] \to M_N(\mathbb C)$ be continuous. For $t = (t_1, \dots, t_n) \in [a, b]^n$ let $\mathcal O(t) = f(t_{\sigma(1)})f(t_{\sigma(2)})\cdots f(t_{\sigma(n)})$, where $\sigma$ is a permutation with $t_{\sigma(1)} \ge t_{\sigma(2)} \ge \cdots \ge t_{\sigma(n)}$ (the factors ordered with the largest argument on the left; where two arguments coincide either choice may be made). Then:
+> 1. $\mathcal O$ is symmetric, $\mathcal O(t_{\tau(1)}, \dots, t_{\tau(n)}) = \mathcal O(t)$ for every permutation $\tau$, and integrable over the cube;
+> 2. with $\Delta_n = \{b \ge t_1 \ge t_2 \ge \cdots \ge t_n \ge a\}$,
+>
+> $$
+> \int_{[a, b]^n}\mathcal O(t)\,d^nt = n!\int_{\Delta_n}f(t_1)\cdots f(t_n)\,d^nt = n!\int_a^bdt_1\int_a^{t_1}dt_2\cdots\int_a^{t_{n-1}}dt_n\;f(t_1)f(t_2)\cdots f(t_n) ;
+> $$
+>
+> 3. in particular $\operatorname{vol}\Delta_n = (b - a)^n/n!$, and if the values $f(t)$ all commute, $\int_{\Delta_n}f(t_1)\cdots f(t_n)\,d^nt = \frac{1}{n!}\bigl(\int_a^bf\bigr)^n$.
+>
+> Integrals of matrix-valued functions are taken entry by entry.
+>
+> *Source: PS §4.2, pp. 84–85, eq. (4.21), Fig. 4.1 and the identity before eq. (4.22) ("not hard to convince oneself that it is true") · Yu §6.2, eqs. (6.116)–(6.118), Fig. 6.2 · proof written here*
+
+^thm-ca-1-4
+
+> [!derivation]- Derivation
+> **Step 1** (the cube is a union of $n!$ ordered regions). For a permutation $\sigma$ of $\{1, \dots, n\}$ let $\Delta_\sigma = \{t \in [a, b]^n : t_{\sigma(1)} \ge \cdots \ge t_{\sigma(n)}\}$; $\Delta_n = \Delta_{\mathrm{id}}$. Every point of the cube lies in some $\Delta_\sigma$ (sort its coordinates). Two different regions $\Delta_\sigma$, $\Delta_{\sigma'}$ intersect only where two coordinates are equal, a subset of the finitely many hyperplanes $t_i = t_j$, which have Jordan content zero; so the $n!$ regions are almost disjoint, closed and Jordan measurable (each is a polytope).
+>
+> **Step 2** ($\mathcal O$ on one region). On $\Delta_\sigma$, away from the hyperplanes, $\mathcal O(t) = g_\sigma(t) \equiv f(t_{\sigma(1)})\cdots f(t_{\sigma(n)})$, and $g_\sigma$ is continuous on the whole cube (a product of continuous matrix functions). So $\mathcal O$ is integrable on each $\Delta_\sigma$ with $\int_{\Delta_\sigma}\mathcal O = \int_{\Delta_\sigma}g_\sigma$ (the two differ only on a set of content zero, where both are bounded), and by additivity over almost disjoint domains ([[§22 Properties of the Integral#^thm-22-3|452 Thm. §22.3]], applied $n! - 1$ times) it is integrable on the cube with $\int_{[a,b]^n}\mathcal O = \sum_\sigma\int_{\Delta_\sigma}g_\sigma$.
+>
+> **Step 3** (symmetry, part 1). Permuting the arguments of $\mathcal O$ permutes the list $t_1, \dots, t_n$ but not its sorted version, and $\mathcal O$ depends only on the sorted list. (At coincident arguments the choice in the definition matters only on a set of content zero.)
+>
+> **Step 4** (each region gives the same integral). Change variables on $\Delta_\sigma$ by $u_k = t_{\sigma(k)}$, $k = 1, \dots, n$: a linear map permuting coordinates, whose matrix is a permutation matrix with $|\det| = 1$, and which maps $\Delta_\sigma$ onto $\Delta_n$ ($t_{\sigma(1)} \ge \cdots \ge t_{\sigma(n)}$ becomes $u_1 \ge \cdots \ge u_n$). Under it $g_\sigma(t) = f(u_1)\cdots f(u_n)$. By the change-of-variables formula ([[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], entry by entry),
+>
+> $$
+> \int_{\Delta_\sigma}g_\sigma(t)\,d^nt = \int_{\Delta_n}f(u_1)\cdots f(u_n)\,d^nu \qquad\text{for every } \sigma .
+> $$
+>
+> **Step 5** (sum). There are $n!$ permutations, so $\int_{[a, b]^n}\mathcal O = n!\int_{\Delta_n}f(t_1)\cdots f(t_n)\,d^nt$, the first equality of part 2.
+>
+> **Step 6** (the simplex as an iterated integral). $\Delta_n = \{a \le t_1 \le b,\ (t_2, \dots, t_n) \in \Delta_{n-1}(a, t_1)\}$, where $\Delta_{n-1}(a, t_1)$ is the simplex of $n - 1$ ordered times in $[a, t_1]$. For $n = 2$ this is the type-I region $\{a \le t_1 \le b,\ a \le t_2 \le t_1\}$ and Fubini gives $\int_a^bdt_1\int_a^{t_1}dt_2$ ([[§23 Fubini's Theorem#^thm-23-2|452 Thm. §23.2]] with $g_1 = a$, $g_2(t_1) = t_1$); for general $n$ apply the same slicing in $t_1$ and induct on $n$. This is the second equality, with the factors already in decreasing order of their arguments.
+>
+> **Step 7** (part 3). With $f = 1$ ($N = 1$), $\mathcal O = 1$ and part 2 reads $(b - a)^n = n!\operatorname{vol}\Delta_n$. If the $f(t)$ commute, $\mathcal O(t) = f(t_1)\cdots f(t_n)$ in any order, the cube integral factorizes into $\bigl(\int_a^bf\bigr)^n$ (Fubini on the cube, [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]] iterated), and part 2 divides it by $n!$.
+>
+> ⚑ By-product: the $\frac{1}{n!}$ of the exponential series and the $n!$ orderings of $n$ times cancel exactly; without commutativity this cancellation survives only for the *ordered* integrand → the time-ordered exponential, [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-4|Theorem §C6.3.4]].
+>
+> **What the derivation shows.**
+> - Only finite-dimensional linear algebra and Riemann integration were used; for operators on an infinite-dimensional space the same steps hold for norm-continuous bounded $f$ (Bochner integrals), and in field theory they are applied to the regularized theory.
+> - Used in: the Dyson series of the interaction picture ([[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-4|Theorem §C6.3.4]], [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-5|Theorem §C6.3.5]]).
+
+^der-ca-1-4
+
+*Uses:* [[§22 Properties of the Integral#^thm-22-3|452 Thm. §22.3]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§23 Fubini's Theorem#^thm-23-2|452 Thm. §23.2]], [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]]
+
 > [!remark]- Connections
 > - Dominated convergence is [[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]]; the whole content of Theorem §CA.1.1 is that the dominating function does not depend on the parameter, and the same check recurs in Sokhotski–Plemelj ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]), in nascent delta functions ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3) and in every boundary value ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]]).
 > - Abel's theorem says that a regulator $e^{-\varepsilon p}$ is harmless when the integral exists; the equal-time Wightman function shows the other case, where $e^{-\varepsilon E_{\mathbf p}}$ is not a regulator to be removed but the definition of a boundary value ([[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], Step 5).
@@ -113,4 +161,6 @@ Quantum field theory differentiates under integrals, lets regulators $e^{-\varep
 > - **Used in** (C1a–C1b places): Theorem §CA.1.1 — the single-particle amplitude as a boundary value and in closed form ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]), the Euler–Lagrange and Hamilton equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-1|Theorem §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]]), conservation of a Noether charge ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]], [[§C1b.5 Noether's Theorem#^rem-c1b-5-9|§C1b.5, Remark: In what sense these identities hold]]).
 > - **Used in** (C5a–C5b places): Theorem §CA.1.1 — a solution of the Dirac equation as a wave packet of plane-wave spinors, differentiated under the integral ([[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-6|§C5a.9, Remark: In what sense a general solution is a superposition of these plane waves]]).
 > - **Used in** (C4 places): Theorem §CA.1.1 — [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^rem-c4-4-1|§C4.4★, Remark: In what sense the Proca field is a distribution]], [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-5|Theorem §C4.4.5]], [[§C4.3★ Massive Polarization Vectors and Plane Waves|§C4.3★]], [[§C4.9 Vector-Field Propagators#^rem-c4-9-2|§C4.9, Remark: The sign of the photon propagator and negative norm]], [[§C4.9 Vector-Field Propagators#^thm-c4-9-7|Theorem §C4.9.7]], [[§C4.9 Vector-Field Propagators|§C4.9]].
+> - **Used in** (C6 places): Theorem §CA.1.4 — the time-ordered form of the iterated integrals of the Dyson series ([[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-4|Theorem §C6.3.4]]) and the Dyson series itself ([[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-5|Theorem §C6.3.5]]); Theorem §CA.1.1 — the vacuum projection ([[§C6.4 The Interacting Vacuum and the Two-Point Function#^thm-c6-4-1|Theorem §C6.4.1]]) and the free field equations of the interaction-picture field ([[§C6.2 The Interaction Picture#^thm-c6-2-2|Theorem §C6.2.2]]).
+> - The ordered simplex of Theorem §CA.1.4 is the same region Quantum Mechanics uses to bound the Dyson series, of volume $(t - t_0)^n/n!$ — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^der-c3-1-4|QM Derivation §C3.1.4]].
 > - **Used in** (Electromagnetism C places): Theorem §CA.1.1 — differentiating potentials under the integral sign: the homotopy formula for the potential, the Coulomb integrals, the solid angle, line-like and planar distributions, the second derivatives of $1/r$, and the spherical multipole expansions ([[§C1.2 The Field Equations and the Bianchi Identity#^thm-c1-2-5|EM Theorem §C1.2.5]], [[§C2.1 The Static Limit and the Field of a Charge Distribution#^thm-c2-1-3|EM Theorem §C2.1.3]], [[§C2.2 Gauss's Law and the Solid Angle#^thm-c2-2-1|EM Theorem §C2.2.1]], [[§C2.2 Gauss's Law and the Solid Angle#^thm-c2-2-4|EM Theorem §C2.2.4]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-3|EM Theorem §C3.1.3]], [[§C3.2 Spherical Multipole Expansions#^thm-c3-2-2|EM Theorem §C3.2.2]]).

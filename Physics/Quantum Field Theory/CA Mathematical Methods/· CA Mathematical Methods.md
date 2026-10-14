@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # CA Mathematical Methods
 ← [[· C9 Discrete Symmetries and Majorana Fields]] · ↑ [[Quantum Field Theory]] · [[· CB Lie Groups, Lie Algebras and Representations]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (7), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (43)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (45), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (32), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (197), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (429), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (150), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (2)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (7), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (43), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (3)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (45), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (32), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (197), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (429), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (150), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (21), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (2)
 
 ## Sections
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals]] — 513 notes App. A §A.1
@@ -23,6 +23,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|§CA.1.1]] Dominated Convergence and Differentiation under the Integral
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-2|§CA.1.2]] Conditionally Convergent Integrals: Dirichlet's Test and Abel's Theorem
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|§CA.1.3]] Limits of Derivatives
+- [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|§CA.1.4]] Ordered Integrals over the Simplex
 - [[§CA.2 Generalized Functions#^thm-ca-2-1|§CA.2.1]] Regular and Singular Tempered Distributions
 - [[§CA.2 Generalized Functions#^thm-ca-2-2|§CA.2.2]] Distributions Supported at a Point
 - [[§CA.2 Generalized Functions#^thm-ca-2-3|§CA.2.3]] Integration by Parts; the Gradient of a Delta Function

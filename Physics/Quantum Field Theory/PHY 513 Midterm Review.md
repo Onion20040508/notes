@@ -9,6 +9,8 @@ tags: [quantum-field-theory, phy513, review]
 
 **The exam.** Friday, October 16, 2026, in class (the syllabus lists Wednesday Oct 14 and the Problem Set 7 PDF Wednesday Oct 21; the date confirmed by the user is Friday Oct 16). It covers Lectures 1–12 (the slides) and Problem Sets 1–7. There are no past or practice exams, so the problem sets, broken into pieces, and the lectures' derivations are the whole review.
 
+**Practice exam** (built from the problem sets and Larsen's Lecture 13 description; not from Larsen): [[PHY 513 Practice Midterm]] (80 minutes, 100 points: a short-response round and five homework-like problems, each part tagged homework-literal, variation or extension; printable without tags at `~/Downloads/PHY513_practice_midterm.pdf`) · [[PHY 513 Practice Midterm 2 (Extended Set)]] (every problem set problem: its literal re-ask plus variations and extensions, by topic) · [[PHY 513 Practice Midterm Solutions]] (folded, each checked against its home box).
+
 What the course documents say, verbatim:
 - Syllabus, *Midterm and Exam*: "There will be one midterm exam. It is scheduled for Wednesday Oct 14 during regular class time." and "In principle, each test is on all material previously covered in lectures, textbook, and HW's."
 - Syllabus, rules: "The midterm and the final will be open book: you can bring a physical copy of the textbook. A printed copy is acceptable. In addition, you can bring one standard sheet of paper with your own hand-written notes. You can use both sides. No electronic devices are allowed."
@@ -39,7 +41,7 @@ From the recordings (Otter transcripts, garbled):
 2. *Definitions and conventions* (day 1). Every **Language** list, T1–T10, then the **Conventions traps**. Write each definition with its factors; check against the box. This is the short-response question's material.
 3. *Core derivations* (day 1, then day 2 morning). The ★★ items topic by topic, each from its Notes Drill entry; ★ items only where the diagnostic showed a gap. Use the "How the objects grew" table to do the scalar and the Dirac versions side by side.
 4. *Problem-set drill* (day 2). The [[PHY 513 PS Drill]], PS1–PS7: answer the small questions in order, then redo the whole problem in one go. Problem Sets 3, 4, 6 and 7 first (quantization, Green's functions, fermions, discrete symmetries).
-5. *Mock* (day 2, last). The short-response round again, timed (one minute per item), plus one long problem you did not redo in pass 4. Repair with the trap list and the technique list.
+5. *Mock* (day 2, last). [[PHY 513 Practice Midterm]], timed (80 minutes, closed solutions), then mark it with [[PHY 513 Practice Midterm Solutions]]; or the short-response round again, timed (one minute per item), plus one long problem you did not redo in pass 4. Repair with the trap list and the technique list.
 
 **Quoted without derivation** (the course states these; know the statement and how it is used):
 - Principle [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|§C5b.1.7]] The Spin–Statistics Theorem: Lecture 10, "The proof is complicated"; the free fields of the course are checked in Theorem [[§C5b.9 Spin and Statistics#^thm-c5b-9-1|§C5b.9.1]] The Free Fields of the Course Obey the Spin–Statistics Theorem.
