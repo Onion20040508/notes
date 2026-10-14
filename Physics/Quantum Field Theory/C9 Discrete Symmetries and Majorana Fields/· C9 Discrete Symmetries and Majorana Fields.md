@@ -13,10 +13,11 @@ tags: [chapter, quantum-field-theory]
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
-- [[§C9.2 Parity of the Scalar Field]] — Yu §9.1.1 (★, not in Lecture 11)
+- [[§C9.2 Parity of the Scalar Field]] — Yu §9.1.1; PHY 513, Problem Set 7, Problem 4
 - [[§C9.3 Parity on States, Spinors and the Dirac Field]] — 513 notes Ch. 11 §§11.2–11.4
 - [[§C9.4 Fermion Bilinears under Parity]] — 513 notes Ch. 11 §§11.5–11.7
-- [[§C9.5 Charge Conjugation on Oscillators and Spinors]] — 513 notes Ch. 12 §§12.1–12.3
+- [[§C9.5 Charge Conjugation on Oscillators and Spinors]] — 513 notes Ch. 12 §§12.1–12.2
+- [[§C9.6 Charge Conjugation on the Field and Bilinears]] — 513 notes Ch. 12 §12.3; PHY 513, Problem Set 7, Problem 2(b)
 - [[§C9.7 Physical Spin versus Wave-Function Spin]] — 513 notes Ch. 12 §12.4
 - [[§C9.8 Time Reversal]] — 513 notes Ch. 12 §12.5
 - [[§C9.9 CPT and the CPT Theorem]] — 513 notes Ch. 12 §§12.6–12.7
@@ -82,4 +83,4 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-1|§C9.9.1]] The Three Matrices Multiply to γ⁵
 - [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-2|§C9.9.2]] Θ Is Antiunitary
 - [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|§C9.9.3]] CPT on the Dirac Field
-- [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-4|§C9.9.4]] The CPT Theorem
+- [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-6|§C9.9.6]] The CPT Theorem

@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C9 (§C9.1, §C9.3–§C9.4 parity, §C9.5–§C9.9 charge conjugation, physical spin, time reversal and CPT, taught; ★ §C9.2 scalar parity), CA written, CB skeleton (all statements in reading order; proofs being filled)
+status: level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C9 (§C9.1–§C9.4 parity incl. the scalar field, §C9.5–§C9.9 charge conjugation, physical spin, time reversal and CPT, taught; §C9.10 C, T, CPT of the complex scalar field, Problem Set 7), CA written, CB skeleton (all statements in reading order; proofs being filled)
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -20,7 +20,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C4 The Quantum Vector Field]] (★ §C4.2, §C4.3, §C4.4, §C4.5)
 - [[· C5a Spinors and the Dirac Equation]]
 - [[· C5b The Quantum Spinor Field]]
-- [[· C9 Discrete Symmetries and Majorana Fields]] (★ §C9.2)
+- [[· C9 Discrete Symmetries and Majorana Fields]]
 - [[· CA Mathematical Methods]]
 - [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.20)
 
