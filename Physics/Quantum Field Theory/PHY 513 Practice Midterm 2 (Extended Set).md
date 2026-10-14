@@ -21,7 +21,7 @@ Conventions throughout ([[Larsen PHY 513]]): $g = \mathrm{diag}(+1,-1,-1,-1)$; $
 *Literal re-ask: [[PHY 513 PS Drill#^ps1-1|PS Drill, PS1.1]], parts (a)–(j).*
 
 **X1.1.1** *[variation of PS1.1]* Legal or illegal? If legal, name the tensor type (scalar, vector, covector, …), and say whether the expression is a pseudoscalar.
-(a) $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; (b) $\partial_\mu F^{\mu\nu} = j_\nu$; (c) $x^\mu\,\partial_\nu x^\nu\,x_\mu$; (d) $T^{\mu\nu}{}_\nu = S^\mu$; (e) $a_\mu b^\mu c_\mu$; (f) $\bar\psi\gamma^\mu\partial_\mu\psi = m\bar\psi\psi$.
+(a) $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; (b) $\partial_\mu F^{\mu\nu} = j_\nu$; (c) $x^\mu(\partial_\nu x^\nu)x_\mu$; (d) $T^{\mu\nu}{}_\nu = S^\mu$; (e) $a_\mu b^\mu c_\mu$; (f) $\bar\psi\,i\gamma^\mu\partial_\mu\psi = m\bar\psi\psi$.
 
 ^px-1-1-1
 
@@ -136,7 +136,7 @@ Conventions throughout ([[Larsen PHY 513]]): $g = \mathrm{diag}(+1,-1,-1,-1)$; $
 
 ^px-2-4-1
 
-**X2.4.2** *[extension of PS2.4(d)]* Show that the improved tensor $\hat T^{\mu\nu} = -F^{\mu\lambda}F^\nu{}_\lambda + \frac14g^{\mu\nu}F_{\lambda\sigma}F^{\lambda\sigma}$ is traceless in four dimensions. What changes in $d$ dimensions?
+**X2.4.2** *[extension of PS2.4(d)]* Show that the improved (Belinfante) tensor $T_B^{\mu\nu} = -F^{\mu\lambda}F^\nu{}_\lambda + \frac14g^{\mu\nu}F_{\lambda\sigma}F^{\lambda\sigma}$ (Peskin–Schroeder and the problem set: $\hat T^{\mu\nu}$) is traceless in four dimensions. What changes in $d$ dimensions?
 
 ^px-2-4-2
 
@@ -214,7 +214,7 @@ Conventions throughout ([[Larsen PHY 513]]): $g = \mathrm{diag}(+1,-1,-1,-1)$; $
 
 ^px-6-2-1
 
-**X6.2.2** *[variation of PS6.2]* Show $\hat H = \int d^3x\,:\!\hat\psi^\dagger H_{\text{s.p.}}\hat\psi\!: = \int\frac{d^3p}{(2\pi)^3}\sum_sE_{\mathbf p}(\hat a^{s\dagger}_{\mathbf p}\hat a^s_{\mathbf p} + \hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p})$, with $H_{\text{s.p.}}u^s(p) = E_{\mathbf p}u^s(p)$ and $H_{\text{s.p.}}v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$ in momentum space, and say where the sign of the antiparticle term comes from.
+**X6.2.2** *[variation of PS6.2]* Show $\hat H = \int d^3x\,:\!\hat\psi^\dagger H_{\text{s.p.}}\hat\psi\!: = \int\frac{d^3p}{(2\pi)^3}\sum_sE_{\mathbf p}(\hat a^{s\dagger}_{\mathbf p}\hat a^s_{\mathbf p} + \hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p})$, with the momentum-space matrix $H_{\text{s.p.}}(\mathbf p)$: $H_{\text{s.p.}}(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$ and $H_{\text{s.p.}}(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$, and say where the sign of the antiparticle term comes from.
 
 ^px-6-2-2
 
@@ -307,7 +307,7 @@ Conventions throughout ([[Larsen PHY 513]]): $g = \mathrm{diag}(+1,-1,-1,-1)$; $
 
 ^px-5-1-1
 
-**X5.1.2** *[variation of PS5.1(b)]* In the course convention, write the finite boost along $z$ with rapidity $\eta$ on the two-component spaces $(\frac12, 0)$ and $(0, \frac12)$. Which one grows on its upper component?
+**X5.1.2** *[variation of PS5.1(b)]* In the course convention, write the finite boost along $z$ with rapidity $\eta > 0$ on the two-component spaces $(\frac12, 0)$ and $(0, \frac12)$. Which one grows on its upper component?
 
 ^px-5-1-2
 
@@ -359,7 +359,7 @@ Conventions throughout ([[Larsen PHY 513]]): $g = \mathrm{diag}(+1,-1,-1,-1)$; $
 ### PS5.4 The Dirac energy–momentum tensor
 *Literal re-ask: [[PHY 513 PS Drill#^ps5-4|PS Drill, PS5.4]], parts (a)–(b).*
 
-**X5.4.1** *[variation of PS5.4(b)]* From $T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi - g^{\mu\nu}\mathcal L$, show that on solutions $H = \int d^3x\,T^{00} = \int d^3x\,\psi^\dagger(-i\boldsymbol\alpha\cdot\nabla + \beta m)\psi$, $\boldsymbol\alpha = \gamma^0\boldsymbol\gamma$, $\beta = \gamma^0$.
+**X5.4.1** *[variation of PS5.4(b)]* From $T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi - g^{\mu\nu}\mathcal L$, show that $H = \int d^3x\,T^{00} = \int d^3x\,\psi^\dagger(-i\boldsymbol\alpha\cdot\nabla + \beta m)\psi$ for every field configuration, and that on solutions it equals $\int d^3x\,\psi^\dagger i\partial_t\psi$, $\boldsymbol\alpha = \gamma^0\boldsymbol\gamma$, $\beta = \gamma^0$.
 
 ^px-5-4-1
 

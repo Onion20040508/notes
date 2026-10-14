@@ -18,7 +18,7 @@ Built from Larsen's description of the exam (Lecture 13, Oct 14: "much more like
 
 Short answers: a formula, a number, or a phrase. No derivations are needed. 2 points each.
 
-(a) In four spacetime dimensions, give the mass dimensions, as $M^\alpha$, of the coupling $G$ in a term $G\,(\bar\psi\psi)^2$ and of the coupling $\kappa$ in a term $\frac{\kappa}{3!}\phi^3$.
+(a) In four spacetime dimensions, give the mass dimensions, as $M^\alpha$, of the couplings $G$ and $\kappa$ in the Lagrangian-density terms $G\,(\bar\psi\psi)^2$ and $\frac{\kappa}{3!}\phi^3$ (each added to the free $\mathcal L$).
 *[variation of PS7.1(a)]*
 
 (b) Write the Euler–Lagrange equation for $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2 - \frac{\lambda}{4!}\phi^4$.
