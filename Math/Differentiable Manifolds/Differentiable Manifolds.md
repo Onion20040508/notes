@@ -124,7 +124,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§53
 - [[The Lie Algebra Is the Tangent Space at the Identity]] (§57.7)
 
 ## Summaries
-- [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]], every homework problem broken into small questions.
+- [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]] (every homework problem broken into small questions) and [[Differentiable Manifolds Notes Drill]] (definitions, core proofs, class exercises, equivalences).
 - [[Differentiable Manifolds Lee Concordance]]: notation, where the course's route differs from Lee's, the chapter map, and every Lee result cited in these notes with its counterpart here.
 - [[Differentiable Manifolds Course Log]]: lectures and homework, and where each is in these notes.
 

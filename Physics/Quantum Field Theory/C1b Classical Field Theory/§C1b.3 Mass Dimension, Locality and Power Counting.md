@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C1b.2 The Action Principle and the Euler–Lagrange Equations]] · ↑ [[· C1b Classical Field Theory]] · [[§C1b.4 Hamiltonian Field Theory]] →
 
-*Sources: the user's PHY 513 notes, Ch. 2 §2.4 (the action is dimensionless, dimensions in the scalar Lagrangian, units in the action, symmetry determines the action, locality and the principles of quantum field theory, relevant, marginal and irrelevant terms) · PHY 513 Lecture 2 (Larsen, 2 Sep 2026), Part C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2, §3.1 · Yu Zhao-Huan, 量子场论讲义, §1.2 and §1.6.2 · the user's pre-course notes, §1.2 and §1.6 · PHY 513, Problem Set 2, Problems 1(a) and 2(d), with the course solutions.*
+*Sources: the user's PHY 513 notes, Ch. 2 §2.4 (the action is dimensionless, dimensions in the scalar Lagrangian, units in the action, symmetry determines the action, locality and the principles of quantum field theory, relevant, marginal and irrelevant terms) · PHY 513 Lecture 2 (Larsen, 2 Sep 2026), Part C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2, §3.1 · Yu Zhao-Huan, 量子场论讲义, §1.2 and §1.6.2 · the user's pre-course notes, §1.2 and §1.6 · PHY 513, Problem Set 2, Problems 1(a) and 2(d), with the course solutions. · PHY 513, Problem Set 7, Problem 1(a) (Larsen; the user's solution).*
 
 Which terms may a relativistic Lagrangian contain, and which of them matter at long distances? The units are [[§C1a.2 Natural Units and Dimensional Analysis|§C1a.2]] (natural units, the mass dimension, the exponent rule and the counting rules, [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]]); the Lagrangian density and the action are [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-1|Def. §C1b.2.1]] and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]], and the field laws they must respect are [[§C1b.1 Fields and Their Transformation Laws|§C1b.1]]. This section is Part C of Lecture 2, in its order: the action is dimensionless, which fixes the mass dimensions of fields and of couplings; locality and relativistic invariance restrict the form of the density; and power counting orders the remaining terms by their importance at low energy, which leaves the scalar Lagrangian with a handful of parameters.
 
@@ -128,10 +128,29 @@ Which terms may a relativistic Lagrangian contain, and which of them matter at l
 
 ^ex-c1b-3-1
 
+> [!example] Example §C1b.3.2: The Yukawa Coupling Is Dimensionless
+> In four spacetime dimensions, find the mass dimensions of a real scalar field $\phi$, a Dirac field $\psi$, and the coupling $g$ of the interaction $g\,\phi\bar\psi\psi$, written as $M^\alpha$.
+>
+> **Answer:** $[\phi] = M^1$, $[\psi] = M^{3/2}$, $[g] = M^0$.
+>
+> **Step 1** (the Lagrangian). The action $S = \int d^4x\,\mathcal L$ is dimensionless and $[d^4x] = M^{-4}$, so $[\mathcal L] = M^4$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]]); a mass has $[m] = M$.
+>
+> **Step 2** (the scalar, from its mass term). $[m^2\phi^2] = M^2[\phi]^2 = M^4$, so $[\phi] = M$.
+>
+> **Step 3** (the spinor, from its mass term). The $\gamma^\mu$ are numerical matrices, hence dimensionless, and $[\bar\psi] = [\psi^\dagger] = [\psi]$; $[m\bar\psi\psi] = M[\psi]^2 = M^4$ gives $[\psi] = M^{3/2}$.
+>
+> **Step 4** (the coupling). $[g][\phi][\bar\psi\psi] = [g]\,M^1M^3 = M^4$, so $g$ is dimensionless: the Yukawa coupling is marginal ([[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]), as in step 3 of [[§C1b.3 Mass Dimension, Locality and Power Counting#^der-c1b-3-3|Derivation §C1b.3.3]].
+>
+> The solution reads the dimensions off the mass terms; [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]] reads them off the kinetic terms. The two agree because both terms of a free Lagrangian have dimension $4$ with $[\partial_\mu] = [m] = M$.
+>
+> *Source: PHY 513, Problem Set 7, Problem 1(a) (statement, Larsen; answer and reasoning as the user wrote them; the problem asks for the result only, as practice for the midterm's short-response question)*
+
+^ex-c1b-3-2
+
 ## Putting the units back in the action
 
 
-> [!example] Example §C1b.3.2: Units Restored in the Scalar Action
+> [!example] Example §C1b.3.3: Units Restored in the Scalar Action
 > Restore $\hbar$ and $c$ in $S = \int d^4x\bigl(\frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2\bigr)$ and in the dispersion relation $\omega = \sqrt{\mathbf k^2 + m^2}$ of its plane waves.
 >
 > **Step 1** (target). $S/\hbar$ is a pure number ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]]); so write $S/\hbar = \int d^4x\,\mathcal L$ and demand that this integral be dimensionless.
@@ -154,10 +173,10 @@ Which terms may a relativistic Lagrangian contain, and which of them matter at l
 >
 > *Source: PHY 513 Lecture 2, Part C ("Dimensional Analysis") · the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Units in the scalar action")*
 
-^ex-c1b-3-2
+^ex-c1b-3-3
 
 > [!caution] Caution: The physical dimension of a field is a normalization convention
-> Example §C1b.3.2 found $[\phi] = L^{-1}$ because it put all constants into $\mathcal L$ and integrated over $c\,dt\,d^3x$. Requiring instead that $\mathcal L$ be an energy density, $ML^{-1}T^{-2}$, gives $[\phi] = (MLT^{-2})^{1/2}$, the dimension of the electrostatic potential in Heaviside–Lorentz units. Both are correct: they differ by a fixed power of $\hbar c$ absorbed into $\phi$, and both give mass dimension $1$ by [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]]. What is not a convention is the mass dimension, fixed by the kinetic term ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]).
+> Example §C1b.3.3 found $[\phi] = L^{-1}$ because it put all constants into $\mathcal L$ and integrated over $c\,dt\,d^3x$. Requiring instead that $\mathcal L$ be an energy density, $ML^{-1}T^{-2}$, gives $[\phi] = (MLT^{-2})^{1/2}$, the dimension of the electrostatic potential in Heaviside–Lorentz units. Both are correct: they differ by a fixed power of $\hbar c$ absorbed into $\phi$, and both give mass dimension $1$ by [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]]. What is not a convention is the mass dimension, fixed by the kinetic term ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Caution "The physical dimension of a field is a normalization convention")*
 

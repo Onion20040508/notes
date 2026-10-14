@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C1b.1 Fields and Their Transformation Laws]] · ↑ [[· C1b Classical Field Theory]] · [[§C1b.3 Mass Dimension, Locality and Power Counting]] →
 
-*Sources: the user's PHY 513 notes, Ch. 2 §2.3 ("Actions and Lagrangian densities"), Ch. 3 §§3.1–3.3 · PHY 513 Lecture 2, Part B; Lecture 3, Part A (Larsen) · PHY 513 Problem Set 2, Problem 3(a), (c), with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2, §3.1 · Yu Zhao-Huan, 量子场论讲义, §1.6 · the user's pre-course notes, §1.6.*
+*Sources: the user's PHY 513 notes, Ch. 2 §2.3 ("Actions and Lagrangian densities"), Ch. 3 §§3.1–3.3 · PHY 513 Lecture 2, Part B; Lecture 3, Part A (Larsen) · PHY 513 Problem Set 2, Problem 3(a), (c), with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2, §3.1 · Yu Zhao-Huan, 量子场论讲义, §1.6 · the user's pre-course notes, §1.6. · PHY 513, Problem Set 7, Problem 1(b) (Larsen; the user's solution).*
 
 How does a field theory produce its equations of motion? The particle version is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action#^pr-b6-2-1|CM Principle §B6.2.1]]), with the calculus of variations of [[§B5.1 The Euler–Lagrange Equation|CM §B5.1]]; Relativity has the action of one real scalar field and its Euler–Lagrange equation, with $c$ explicit ([[§B4.1 The Klein–Gordon Equation#^def-b4-1-1|REL Def. §B4.1.1]], [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-2|REL Theorem §B4.1.2]]). This section states the action principle for any number of field components in natural units, makes the variation and the functional derivative precise (the latter is a distribution), proves the Euler–Lagrange equations with every surface term accounted for, and is the single home of the Lagrangian densities of the free real and complex scalar fields. The Hamiltonian form is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]], symmetries and currents [[§C1b.5 Noether's Theorem|§C1b.5]].
 
@@ -321,6 +321,25 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Dimensions of a field in an exponent: the dilaton (Problem Set 2)": "The equation of motion") · PHY 513 Problem Set 2, Problem 1(b), course solution*
 
 ^ex-c1b-2-1
+
+> [!example] Example §C1b.2.2: The Field Equation of a Cubic Self-Interaction
+> Write the Euler–Lagrange equation of
+>
+> $$
+> \mathcal L = \tfrac12\partial_\mu\phi\,\partial^\mu\phi - \tfrac12m^2\phi^2 - \frac{\lambda}{3!}\phi^3 .
+> $$
+>
+> **Answer:** $(\partial_\mu\partial^\mu + m^2)\phi + \frac{\lambda}{2}\phi^2 = 0$.
+>
+> **Step 1.** The Euler–Lagrange equation is $\partial_\mu\bigl(\partial\mathcal L/\partial(\partial_\mu\phi)\bigr) - \partial\mathcal L/\partial\phi = 0$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]).
+>
+> **Step 2.** $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$ (the kinetic term as in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]) and $\partial\mathcal L/\partial\phi = -m^2\phi - \frac{3\lambda}{3!}\phi^2 = -m^2\phi - \frac\lambda2\phi^2$.
+>
+> **Step 3.** $\partial_\mu\partial^\mu\phi + m^2\phi + \frac\lambda2\phi^2 = 0$: the Klein–Gordon equation with a nonlinear source; the $3!$ in the coupling is chosen so that the derivative leaves $\frac\lambda2$, and $\lambda$ has mass dimension $1$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]]).
+>
+> *Source: PHY 513, Problem Set 7, Problem 1(b) (statement, Larsen; answer and reasoning as the user wrote them)*
+
+^ex-c1b-2-2
 
 > [!remark] Remark: Kinetic minus potential, read term by term
 > - $\frac12\dot\phi^2$ is the kinetic term; it has no mass in front, because each point's "coordinate" $\phi$ has unit inertia.

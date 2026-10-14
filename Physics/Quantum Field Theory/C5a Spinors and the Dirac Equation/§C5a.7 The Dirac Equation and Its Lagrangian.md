@@ -507,13 +507,13 @@ The Weyl form splits spinor space by $\gamma^5$; Model §C5a.7.11 has no parity 
 
 ![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4]]
 
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-12]]
-
 ![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13]]
 
 ![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13]]
+
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14]]
+
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14]]
 
 ## The Weyl form and the Weyl equations
 
@@ -607,7 +607,7 @@ The Weyl form splits spinor space by $\gamma^5$; Model §C5a.7.11 has no parity 
 >
 > a **right-handed Weyl field** $\psi_R$ in $(0, \frac12)$ has $\mathcal L_R = i\psi_R^\dagger\sigma^\mu\partial_\mu\psi_R$ and $i\sigma^\mu\partial_\mu\psi_R = 0$. These are the **Weyl equations**.
 >
-> *Assumptions:* $m = 0$ (the two blocks of [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|Theorem §C5a.7.10]] decouple, and either may be kept alone, consistently both as a representation and dynamically); classical, free; no parity symmetry (parity exchanges the two, [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]]).
+> *Assumptions:* $m = 0$ (the two blocks of [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|Theorem §C5a.7.10]] decouple, and either may be kept alone, consistently both as a representation and dynamically); classical, free; no parity symmetry (parity exchanges the two, [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|Theorem §CB.17.13]]).
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Principle "The Weyl equations", eq. (weyl)) · PHY 513 Lecture 8, Part C ("Weyl Equation") · PS §3.2, eqs. (3.40), (3.44) · Yu §5.3, eq. (5.115)*
 
 ^mod-c5a-7-11
@@ -650,19 +650,26 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 
 *Uses:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]]
 
+> [!remark] Remark: Why "left-handed"
+> The name comes from the massless solutions. By [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-12|Theorem §C5a.7.12]], a positive-frequency solution of the left-handed Weyl equation, $\bar\sigma\cdot p\,\xi = 0$ with $p^0 = |\mathbf p|$, has $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi = -\xi$: its spin points against its momentum, helicity $-\frac12$. Curl the fingers of the left hand in the sense of the spin's rotation; the thumb then points along the motion — the screw sense of a left-handed helix. For a right-handed field the spin points along the momentum (right-hand rule). The label of the representation ($(\frac12, 0)$, $\gamma^5 = -1$: chirality, [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]) was named after this property of its massless particles. With a mass the two notions separate: chirality is a Lorentz-invariant label of the field's representation, helicity a frame-dependent property of a state (a massive particle can be overtaken, which reverses $\hat{\mathbf p}$), and the mass term couples the two chiralities ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-2|§C5a.5, Remark: Kinematics allows one handedness, a mass needs both]]; helicity of the massive spinors: [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]). In the massless limit of the Dirac spinors, negative helicity lives entirely in the left-handed half; the negative-frequency spinors are placed in the halves by [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|Theorem §C5a.10.14]], 3.
+>
+> *Source: the user's question while working on Problem Set 7 (2026-10-13: "why is it called left-handed") · the user's pre-course notes, §5.3 ("Weyl spinors") · PS §3.3, p. 47 (the high-energy limit as the origin of the names) · the screw-sense convention written here*
+
+^rem-c5a-7-6
+
 > [!remark] Remark: When the Weyl description is useful
 > Not for the electron of Dirac's problem: in hydrogen the electron's kinetic energy is tiny compared with its mass, and the mass couples the two halves at full strength. It is natural where the mass is zero or small, as for neutrinos: in the Standard Model the neutrinos are massless and only left-handed ones exist. Their observed small masses require going beyond it. A mass of the form of [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|Theorem §C5a.7.10]], a *Dirac* mass, needs a separate right-handed field.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (paragraph "When is the Weyl description useful?") · PHY 513 Lecture 8, Part C*
 
-^rem-c5a-7-6
+^rem-c5a-7-7
 
 > [!remark]- ★ Remark: A Majorana mass needs no second field
-> By [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|Theorem §CB.17.13]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], $\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, so a single left-handed field can supply its own partner: $\psi_L^{\mathsf T}\varepsilon\,\psi_L$ is Lorentz invariant, because $\Lambda_L^{\mathsf T}\varepsilon\Lambda_L = (\det\Lambda_L)\varepsilon = \varepsilon$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|Theorem §C5a.5.3]]). This is a *Majorana* mass. For commuting components it vanishes identically, $\psi^{\mathsf T}\varepsilon\psi = \psi_1\psi_2 - \psi_2\psi_1 = 0$ (with $\varepsilon^{12} = 1$); it exists only for anticommuting fields ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]; Majorana fields, QFT C9, planned). Whether neutrino masses are of Dirac or Majorana type is not known.
+> By [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], $\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, so a single left-handed field can supply its own partner: $\psi_L^{\mathsf T}\varepsilon\,\psi_L$ is Lorentz invariant, because $\Lambda_L^{\mathsf T}\varepsilon\Lambda_L = (\det\Lambda_L)\varepsilon = \varepsilon$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|Theorem §C5a.5.3]]). This is a *Majorana* mass. For commuting components it vanishes identically, $\psi^{\mathsf T}\varepsilon\psi = \psi_1\psi_2 - \psi_2\psi_1 = 0$ (with $\varepsilon^{12} = 1$); it exists only for anticommuting fields ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]; Majorana fields, QFT C9, planned). Whether neutrino masses are of Dirac or Majorana type is not known.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Caution "'A neutrino mass needs a right-handed neutrino'")*
 
-^rem-c5a-7-7
+^rem-c5a-7-8
 
 ## What depends on the basis
 
@@ -682,7 +689,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 >
 > *Source: PS §3.2, p. 41 · the user's PHY 513 notes, Ch. 8 §8.1 ("the choice of basis is a convention, like the choice of basis for spin-½"), §8.2 (Caution on "particle" and "antiparticle" components) · the table written here*
 
-^rem-c5a-7-8
+^rem-c5a-7-9
 
 > [!remark]- Connections
 > - Quantum Mechanics postulates the Dirac equation for a four-component wave function, with $\boldsymbol\alpha$, $\beta$ chosen to make the equation first order and the density positive; here $\psi$ is a field, the $\gamma$'s and the covariance come from the Lorentz group, the equation follows from a Lagrangian, and $\psi^\dagger\psi$ loses its probability meaning to become a charge density — [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]].

@@ -461,11 +461,11 @@ For a smooth curve $\gamma : (-\epsilon,\epsilon) \to M$, $\gamma(0) = p$, let $
 
 #### (a)
 
-Explain why $T_pM \times (I_p/I_p^2) \to \mathbb{R}$, $(v, [[f]]) \mapsto v(f)$, is well defined.
+Explain why $T_pM \times (I_p/I_p^2) \to \mathbb{R}$, $(v, {[}[f]{]}) \mapsto v(f)$, is well defined.
 
 ^hw3-3-a
 
-- [ ] Q1 **[def]** Define $I_p$, $I_p^2$, and the class $[[f]]$. Show $I_p^2$ is a subspace of $I_p$.
+- [ ] Q1 **[def]** Define $I_p$, $I_p^2$, and the class ${[}[f]{]}$. Show $I_p^2$ is a subspace of $I_p$.
 - [ ] Q2 Show $v(I_p^2) = 0$ for every derivation $v$.
 - [ ] Q3 Explain why Q2 is exactly the well-definedness (universal property of the quotient vector space).
 
@@ -482,11 +482,11 @@ Show the (bilinear) pairing is non-degenerate, hence $I_p/I_p^2 \cong (T_pM)^*$;
 - [ ] Q5 Show $v([1]) = 0$ and then left non-degeneracy.
 - [ ] Q6 State Hadamard's lemma (with the formula $f_i(a) = \partial f/\partial r^i(a)$) and prove right non-degeneracy.
 - [ ] Q7 Show a non-degenerate pairing of finite-dimensional spaces gives $V \cong W^*$: which half gives which inequality of dimensions?
-- [ ] Q8 Alternatively, show $[[x^i - x^i(p)]] \mapsto$ the dual basis of $\{\partial/\partial x^j|_p\}$.
+- [ ] Q8 Alternatively, show ${[}[x^i - x^i(p)]{]} \mapsto$ the dual basis of $\{\partial/\partial x^j|_p\}$.
 - [ ] Q9 **[why]** Why is the isomorphism chart-independent although a chart was used? Why is one half of non-degeneracy not enough without finite dimension (the remark after Thm §21.5)?
 
 > [!tip]- Hint (b): strategy
-> **Strategy (S9, S7).** Left: a derivation vanishing on $I_p$ and on constants is $0$. Right: if all first partials of $f \in I_p$ vanish, Hadamard writes $f = \sum (x^i - x^i(p))f_i$ with $f_i(p) = 0$, so $f \in I_p^2$. Then the pairing theorem (or the dual basis $[[x^i - x^i(p)]]$).
+> **Strategy (S9, S7).** Left: a derivation vanishing on $I_p$ and on constants is $0$. Right: if all first partials of $f \in I_p$ vanish, Hadamard writes $f = \sum (x^i - x^i(p))f_i$ with $f_i(p) = 0$, so $f \in I_p^2$. Then the pairing theorem (or the dual basis ${[}[x^i - x^i(p)]{]}$).
 
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.** $I_p$ and $I_p^2$ [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def §28.4]]; quotient vector space [[§21 Linear Algebra Toolkit#^def-21-6|Def §21.6]]; $I_p/I_p^2$ [[§34 The Cotangent Space from Germs#^def-34-1|Def §34.1]]; bilinear and non-degenerate pairing [[§21 Linear Algebra Toolkit#^def-21-4|Def §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def §21.5]]; dual space and dual basis [[§21 Linear Algebra Toolkit#^def-21-1|Def §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2|Def §21.2]]; cotangent space [[§32 The Cotangent Space#^def-32-4|Def §32.4]]; the pairing [[§34 The Cotangent Space from Germs#^def-34-2|Def §34.2]].

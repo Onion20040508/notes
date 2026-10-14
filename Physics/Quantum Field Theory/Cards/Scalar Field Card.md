@@ -139,7 +139,19 @@ Microcausality:
 | energy and number | $\Delta E = \int\frac{d^3p}{(2\pi)^3}\frac12\lvert\tilde j(p)\rvert^2$, $\bar N = \int\frac{d^3p}{(2\pi)^3}\frac{\lvert\tilde j(p)\rvert^2}{2E_{\mathbf p}}$, $p^0 = E_{\mathbf p}$ | [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3\|Theorem §C2b.8.3]] |
 | Gaussian point source | $j = g\,\delta^3(\mathbf x)\frac{e^{-t^2/2T^2}}{\sqrt{2\pi}T}$: $\bar N = \frac{g^2m^2}{16\pi^2}e^{-z}\bigl[K_1(z) - K_0(z)\bigr]$, $z = \frac12m^2T^2$ | [[§C2b.8 Particle Production by a Classical Source#^ex-c2b-8-1\|Example §C2b.8.1]] |
 
-## 8. Procedures
+## 8. Discrete symmetries (complex field)
+
+Problem Set 7 makes these course material; phases set to $1$. Dirac counterparts: [[Spinor Field Card]], §10–§11.
+
+| | Formula | Home |
+| --- | --- | --- |
+| $P$ | $U(\mathcal P)\hat a_{\mathbf p}U(\mathcal P)^{-1} = \eta_a\hat a_{-\mathbf p}$, $\hat b \to \eta_b\hat b_{-\mathbf p}$; $\hat\phi(x) \to \eta_a\hat\phi(\tilde x)$ iff $\eta_b = \eta_a^{\ast}$ ($\eta_a\eta_b = +1$; pair parity $(-1)^L$) | [[§C9.2 Parity of the Scalar Field#^def-c9-2-1\|Def. §C9.2.1]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-2\|Theorem §C9.2.2]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-9\|Theorem §C9.2.9]] |
+| $C$ | $U(\mathcal C)\hat a_{\mathbf p}U(\mathcal C)^{-1} = \hat b_{\mathbf p}$, $\hat b \to \hat a$ (unitary); $\hat\phi(x) \to \hat\phi^\dagger(x)$ (Problem Set 7's $\phi^{\ast}$) | [[§C9.10 C, T and CPT for the Complex Scalar Field#^def-c9-10-1\|Def. §C9.10.1]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-1\|Theorem §C9.10.1]] |
+| $T$ | $U(\mathcal T)\hat a_{\mathbf p}U(\mathcal T)^{-1} = \hat a_{-\mathbf p}$, $\hat b$ likewise, antiunitary; $\hat\phi(t, \mathbf x) \to \hat\phi(-t, \mathbf x)$; $\partial^\mu \to -\mathcal P^\mu{}_\nu\partial^\nu$; $U(\mathcal T)^2 = 1$ | [[§C9.10 C, T and CPT for the Complex Scalar Field#^def-c9-10-2\|Def. §C9.10.2]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-2\|Theorem §C9.10.2]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-3\|Theorem §C9.10.3]] |
+| current | $\hat j^\mu = i(\hat\phi\,\partial^\mu\hat\phi^\dagger - \hat\phi^\dagger\partial^\mu\hat\phi)$: $P$ $+\mathcal P^\mu{}_\nu\hat j^\nu(\tilde x)$, $C$ $-\hat j^\mu(x)$, $T$ $+\mathcal P^\mu{}_\nu\hat j^\nu(x_T)$ (Problem Set 7's $J^\mu = -\hat j^\mu$, same rules) | [[§C9.2 Parity of the Scalar Field#^thm-c9-2-6\|Theorem §C9.2.6]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4\|Theorem §C9.10.4]] |
+| CPT | $\Theta\hat\phi(x)\Theta^{-1} = \hat\phi^\dagger(-x)$; $\hat\phi^\dagger\hat\phi$, $\partial\hat\phi^\dagger\cdot\partial\hat\phi$ even, $\hat j^\mu \to -\hat j^\mu(-x)$; free $\mathcal L$ invariant under $C$, $P$, $T$ | [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6\|Theorem §C9.10.6]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-5\|Theorem §C9.10.5]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-7\|Theorem §C9.2.7]] |
+
+## 9. Procedures
 
 **[[P1 Canonical Quantization]]**
 1. Momenta $\pi_a = \partial\mathcal L/\partial\dot\phi_a$ — [[P1 Canonical Quantization#^p1-1|P1, step 1]]
@@ -161,7 +173,7 @@ Microcausality:
 6. $\mathbf p \to -\mathbf p$ in negative-frequency terms; recognize $D_W(\pm\xi)$, $iD$ — [[P2 Green's Functions by Contour Integration#^p2-6|P2, step 6]]
 7. Check: jump $-i$ in $G'$, support, on-shell differences, $m \to 0$ — [[P2 Green's Functions by Contour Integration#^p2-7|P2, step 7]]
 
-## 9. Pitfalls
+## 10. Pitfalls
 
 - $E_{\mathbf p}$ here is the lectures' $\omega_{\mathbf p}$, and $\pi$ their $\Pi$ — [[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution §C2a.1]]
 - $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$: the slides drop the $(2\pi)^3$ — [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-2|Caution §C2a.4]]

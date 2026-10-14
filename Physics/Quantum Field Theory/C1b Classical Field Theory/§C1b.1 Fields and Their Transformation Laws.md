@@ -29,9 +29,9 @@ Theorem §C1b.1.1 is the case of this general fact for the Poincaré group actin
 
 Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is one only up to sign, by the integration of the representations $(j_+, j_-)$:
 
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9]]
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10]]
 
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-9]]
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-10]]
 
 ## Fields
 
@@ -125,7 +125,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 >
 > **What the derivation shows**
 > - Two representations act at once: $D$ on the components at a point (finite-dimensional) and the motion of the argument on the space of functions (infinite-dimensional) → [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-2|Remark: Two representations at once]].
-> - Assumption used: $D$ itself is a representation; for spinors it is one only up to sign ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]]).
+> - Assumption used: $D$ itself is a representation; for spinors it is one only up to sign ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]]).
 > - Used next: the infinitesimal form ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]); in the quantum theory $T(g)$ is implemented by unitary operators on states, $U^{-1}\hat\phi U = T(g)\hat\phi$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]]; for the free field a theorem, [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-5|Theorem §C3.5.5]]).
 
 ^der-c1b-1-1
@@ -199,7 +199,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 ^ex-c1b-1-1
 
 > [!remark] Remark: Two representations at once
-> The law $\phi'_a(x) = D(\Lambda)_a{}^b\phi_b(\Lambda^{-1}x)$ combines a finite-dimensional representation $D$, acting on the components at one point (generators $S^{\mu\nu}$), with an infinite-dimensional one, acting on functions by moving the point (generators $x^\mu\partial^\nu - x^\nu\partial^\mu$). For a scalar the first is trivial, every element represented by the number $1$ (in the classification of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-2|Def. §CB.17.2]], the representation $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|Theorem §C3.3.4]]), but the scalar still changes through the second. Under parity a one-component field may still change sign: $D(\mathcal P) = +1$ for a scalar, $-1$ for a pseudoscalar (QFT C9, planned). A Lagrangian density must lie in the trivial representation for the action to be invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]); "contract all indices" is the rule that extracts that piece.
+> The law $\phi'_a(x) = D(\Lambda)_a{}^b\phi_b(\Lambda^{-1}x)$ combines a finite-dimensional representation $D$, acting on the components at one point (generators $S^{\mu\nu}$), with an infinite-dimensional one, acting on functions by moving the point (generators $x^\mu\partial^\nu - x^\nu\partial^\mu$). For a scalar the first is trivial, every element represented by the number $1$ (in the classification of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|Def. §CB.17.3]], the representation $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|Theorem §C3.3.4]]), but the scalar still changes through the second. Under parity a one-component field may still change sign: $D(\mathcal P) = +1$ for a scalar, $-1$ for a pseudoscalar (QFT C9, planned). A Lagrangian density must lie in the trivial representation for the action to be invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]); "contract all indices" is the rule that extracts that piece.
 >
 > *Source: the user's PHY 513 notes, Ch. 7 (Principle "Components and functions: the scalar field carries the trivial representation")*
 

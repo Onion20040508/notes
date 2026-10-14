@@ -23,9 +23,9 @@ Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of th
 
 ![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22]]
 
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14]]
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15]]
 
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14]]
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-15]]
 
 ![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13]]
 
@@ -36,7 +36,7 @@ Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of th
 ## Why ψ†ψ is not a scalar, and what is
 
 > [!remark] Remark: Why ψ†ψ is not a scalar
-> A Lagrangian must be a scalar, so $\psi$ needs a partner that transforms with $\Lambda_{1/2}^{-1}$. The quantum-mechanical candidate $\psi^\dagger$ transforms as $\psi^\dagger \to \psi^\dagger\Lambda_{1/2}^\dagger = \psi^\dagger\exp(+\frac i2\omega_{\mu\nu}S^{\mu\nu\dagger})$, which would be $\psi^\dagger\Lambda_{1/2}^{-1}$ if every $S^{\mu\nu}$ were Hermitian. The rotation generators $S^{ij}$ are; the boost generators $S^{0i}$ are anti-Hermitian ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]]). So $\Lambda_{1/2}$ is unitary on rotations and not on boosts, and $\psi^\dagger\psi$ is invariant under rotations only. This is not a defect of the basis: no finite-dimensional representation of the Lorentz group is unitary ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]]). Indeed $\psi^\dagger\psi$ will turn out to be the time component of the vector $\bar\psi\gamma^\mu\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]).
+> A Lagrangian must be a scalar, so $\psi$ needs a partner that transforms with $\Lambda_{1/2}^{-1}$. The quantum-mechanical candidate $\psi^\dagger$ transforms as $\psi^\dagger \to \psi^\dagger\Lambda_{1/2}^\dagger = \psi^\dagger\exp(+\frac i2\omega_{\mu\nu}S^{\mu\nu\dagger})$, which would be $\psi^\dagger\Lambda_{1/2}^{-1}$ if every $S^{\mu\nu}$ were Hermitian. The rotation generators $S^{ij}$ are; the boost generators $S^{0i}$ are anti-Hermitian ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]]). So $\Lambda_{1/2}$ is unitary on rotations and not on boosts, and $\psi^\dagger\psi$ is invariant under rotations only. This is not a defect of the basis: no finite-dimensional representation of the Lorentz group is unitary ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]]). Indeed $\psi^\dagger\psi$ will turn out to be the time component of the vector $\bar\psi\gamma^\mu\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.7 (opening paragraph; Derivation "Why $\psi^\dagger\psi$ fails", Step 1) · PHY 513 Lecture 8, Part B ("The Hermitean Conjugate Spinor") · PS §3.2, p. 43 · Yu §5.3, eqs. (5.83)–(5.85)*
 
@@ -261,7 +261,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 ^rem-c5a-6-2
 
 > [!remark]- Connections
-> - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].
-> - The sixteen bilinears are the Dirac field's analogue of decomposing a two-index tensor into trace, antisymmetric and symmetric parts: $(\frac12, 0)\oplus(0, \frac12)$ tensored with its conjugate gives $(0,0)$ twice, $(\frac12,\frac12)$ twice and $(1,0)\oplus(0,1)$, i.e. S, P, V, A and T — [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|Theorem §CB.17.11]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
+> - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].
+> - The sixteen bilinears are the Dirac field's analogue of decomposing a two-index tensor into trace, antisymmetric and symmetric parts: $(\frac12, 0)\oplus(0, \frac12)$ tensored with its conjugate gives $(0,0)$ twice, $(\frac12,\frac12)$ twice and $(1,0)\oplus(0,1)$, i.e. S, P, V, A and T — [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > - The tensor bilinear transforms like $F^{\mu\nu}$, and the Gordon identity shows it is the magnetic-moment part of the vector current, which gives $g = 2$ — [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]], [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]].
 > - The invariance of $\bar\psi\chi$ is the invariance of the Dirac form of [[§C5a.2 The Dirac Form|§C5a.2]] under $\Lambda_{1/2}$, as $g(v, w)$ is invariant under $\Lambda$ — [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].

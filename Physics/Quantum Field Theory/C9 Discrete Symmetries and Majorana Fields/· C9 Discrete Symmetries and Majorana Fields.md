@@ -8,19 +8,20 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (44), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (78), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (70), [[· CA Mathematical Methods|CA Mathematical Methods]] (38), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (70)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (53), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (101), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (74), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (100)
 **Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
 - [[§C9.2 Parity of the Scalar Field]] — Yu §9.1.1; PHY 513, Problem Set 7, Problem 4
 - [[§C9.3 Parity on States, Spinors and the Dirac Field]] — 513 notes Ch. 11 §§11.2–11.4
-- [[§C9.4 Fermion Bilinears under Parity]] — 513 notes Ch. 11 §§11.5–11.7
+- [[§C9.4 Fermion Bilinears under Parity]] — 513 notes Ch. 11 §§11.5–11.7; PHY 513, Problem Set 7, Problem 2(a)
 - [[§C9.5 Charge Conjugation on Oscillators and Spinors]] — 513 notes Ch. 12 §§12.1–12.2
 - [[§C9.6 Charge Conjugation on the Field and Bilinears]] — 513 notes Ch. 12 §12.3; PHY 513, Problem Set 7, Problem 2(b)
 - [[§C9.7 Physical Spin versus Wave-Function Spin]] — 513 notes Ch. 12 §12.4
-- [[§C9.8 Time Reversal]] — 513 notes Ch. 12 §12.5
-- [[§C9.9 CPT and the CPT Theorem]] — 513 notes Ch. 12 §§12.6–12.7
+- [[§C9.8 Time Reversal]] — 513 notes Ch. 12 §12.5; PHY 513, Problem Set 7, Problem 2(c)
+- [[§C9.9 CPT and the CPT Theorem]] — 513 notes Ch. 12 §§12.6–12.7; PHY 513, Problem Set 7, Problems 2–3, 4(c)
+- [[§C9.10 C, T and CPT for the Complex Scalar Field]] — Yu §9.1.2–§9.1.3; PHY 513, Problem Set 7, Problem 4
 
 ## Principles
 - [[§C9.7 Physical Spin versus Wave-Function Spin#^pr-c9-7-4|§C9.7.4]] Physical Spin Is the Eigenvalue of an Operator
@@ -68,6 +69,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-4|§C9.6.4]] Charge Conjugation on ψ† and ψ̄
 - [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-5|§C9.6.5]] The Scalar Bilinear Is Charge-Conjugation Invariant
 - [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-6|§C9.6.6]] The Vector Current Changes Sign under Charge Conjugation
+- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-7|§C9.6.7]] Charge Conjugation on a General Bilinear
+- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-8|§C9.6.8]] The Pseudoscalar Bilinear Is Charge-Conjugation Invariant
+- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-9|§C9.6.9]] The Axial Vector Is Charge-Conjugation Invariant
+- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-10|§C9.6.10]] The Tensor Bilinear Changes Sign under Charge Conjugation
+- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-11|§C9.6.11]] The Free Dirac Lagrangian Is Charge-Conjugation Invariant
+- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-12|]] ★ Theorem §C9.6.12: Charge Conjugation Exchanges the Chiral Currents
 - [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-1|§C9.7.1]] The Spin Operator in Oscillator Form
 - [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-2|§C9.7.2]] The Reordering Sign in the Spin Operator
 - [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-3|§C9.7.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin
@@ -80,7 +87,22 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.8 Time Reversal#^thm-c9-8-7|§C9.8.7]] Time Reversal on the Dirac Field
 - [[§C9.8 Time Reversal#^thm-c9-8-8|§C9.8.8]] Time Reversal on the Dirac Conjugate Field
 - [[§C9.8 Time Reversal#^thm-c9-8-9|§C9.8.9]] The Vector Current under Time Reversal
+- [[§C9.8 Time Reversal#^thm-c9-8-10|§C9.8.10]] Time Reversal on a General Bilinear
+- [[§C9.8 Time Reversal#^thm-c9-8-11|§C9.8.11]] The Scalar Bilinear Is Time-Reversal Invariant
+- [[§C9.8 Time Reversal#^thm-c9-8-12|§C9.8.12]] The Pseudoscalar Bilinear Changes Sign under Time Reversal
+- [[§C9.8 Time Reversal#^thm-c9-8-13|§C9.8.13]] The Axial Vector under Time Reversal
+- [[§C9.8 Time Reversal#^thm-c9-8-14|§C9.8.14]] The Tensor Bilinear under Time Reversal
+- [[§C9.8 Time Reversal#^thm-c9-8-15|§C9.8.15]] The Free Dirac Lagrangian Is Time-Reversal Invariant
+- [[§C9.8 Time Reversal#^thm-c9-8-16|§C9.8.16]] Time Reversal Twice Is −1 on Fermions
 - [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-1|§C9.9.1]] The Three Matrices Multiply to γ⁵
 - [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-2|§C9.9.2]] Θ Is Antiunitary
 - [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|§C9.9.3]] CPT on the Dirac Field
+- [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-4|§C9.9.4]] CPT in Another Order
+- [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|§C9.9.5]] The Bilinears under C, P, T and CPT
 - [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-6|§C9.9.6]] The CPT Theorem
+- [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-1|§C9.10.1]] Charge Conjugation on the Complex Scalar Field
+- [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-2|§C9.10.2]] Time Reversal on the Complex Scalar Field
+- [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-3|§C9.10.3]] Charge Conjugation and Time Reversal on the Derivatives
+- [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|§C9.10.4]] The U(1) Current under P, C and T
+- [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-5|§C9.10.5]] The Free Complex Scalar Lagrangian Is C and T Invariant
+- [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6|§C9.10.6]] CPT on the Complex Scalar Field

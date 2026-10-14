@@ -144,7 +144,7 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 >
 > **Step 3** (no inverse; what restores it). The fibre over $d$ is the coset $d\,M + \langle[\hbar], [c]\rangle$, a two-parameter family. A natural-units formula records only $d$; to name the point of the fibre one needs the ordinary dimension $(\alpha, \beta, \gamma)$, after which $(a, b) = (\beta + \gamma, -\beta - 2\gamma)$ is forced by Step 1.
 >
-> ⚑ By-product: the convention "mass dimension" is the choice of the complement $\mathbb Z M$; the complement $\mathbb Z L$ gives the length dimension, which is $-d$. Both are used: [[§C1b.3 Mass Dimension, Locality and Power Counting#^ex-c1b-3-2|Example §C1b.3.2]] finds $[\phi] = L^{-1}$, which is $[\phi] = 1$ here → [[§C1b.3 Mass Dimension, Locality and Power Counting#^cau-c1b-3-1|Caution: The physical dimension of a field is a normalization convention]].
+> ⚑ By-product: the convention "mass dimension" is the choice of the complement $\mathbb Z M$; the complement $\mathbb Z L$ gives the length dimension, which is $-d$. Both are used: [[§C1b.3 Mass Dimension, Locality and Power Counting#^ex-c1b-3-3|Example §C1b.3.3]] finds $[\phi] = L^{-1}$, which is $[\phi] = 1$ here → [[§C1b.3 Mass Dimension, Locality and Power Counting#^cau-c1b-3-1|Caution: The physical dimension of a field is a normalization convention]].
 >
 > **What the derivation shows.**
 > - Step 1 is "relabel" and Step 2 is "forget" ([[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-1|Remark: Relabelling is not forgetting]]); the exponent rule is the inverse of the change of basis.

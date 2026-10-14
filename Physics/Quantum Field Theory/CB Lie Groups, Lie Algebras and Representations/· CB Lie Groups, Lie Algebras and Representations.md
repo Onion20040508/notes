@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (47), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (70)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (73), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (100)
 
 ## Sections
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3), restatements of REL §B1.2, §B2.2 and QM §B6.1 (CB ordering pass); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
@@ -202,20 +202,20 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-11|§CB.16.11]] Cl⁰(1,3) ≅ Cl(3,0) ≅ M₂(ℂ)
 - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-12|§CB.16.12]] Spin(1,3)₀ Is SL(2,ℂ), and ρ Is the Course's Covering Map up to λ ↦ (λ†)⁻¹
 - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-13|§CB.16.13]] The Three Lie Algebras Agree
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-1|§CB.17.1]] Representations of SL(2,ℂ) Are Pairs of 𝔰𝔩(2,ℂ)-Representations
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-3|§CB.17.3]] The Lorentz Casimir on (j₊, j₋)
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-4|§CB.17.4]] (j₊, j₋) Is Irreducible
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|§CB.17.5]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋)
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|§CB.17.6]] The Vector Representation Is (½, ½)
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Irreducible Representations of SL(2,ℂ)
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-8|§CB.17.8]] Rotation Content and the Sign of a 2π Rotation
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|§CB.17.9]] Integer (j₊, j₋) Are Representations of SO⁺(1,3)
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|§CB.17.10]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|§CB.17.11]] Tensor Products Add Each Copy Separately
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|§CB.17.12]] The Parity Automorphism Exchanges the Two Copies
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] Complex Conjugation Exchanges the Two Copies
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|§CB.17.14]] No Finite-Dimensional Representation Is Unitary
-- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] Which (j₊, j₋) Descend to SO⁺(1,3)
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-2|§CB.17.2]] Representations of SL(2,ℂ) Are Pairs of 𝔰𝔩(2,ℂ)-Representations
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-4|§CB.17.4]] The Lorentz Casimir on (j₊, j₋)
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|§CB.17.5]] (j₊, j₋) Is Irreducible
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|§CB.17.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋)
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Vector Representation Is (½, ½)
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-8|§CB.17.8]] The Irreducible Representations of SL(2,ℂ)
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|§CB.17.9]] Rotation Content and the Sign of a 2π Rotation
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|§CB.17.10]] Integer (j₊, j₋) Are Representations of SO⁺(1,3)
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|§CB.17.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|§CB.17.12]] Tensor Products Add Each Copy Separately
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|§CB.17.14]] Complex Conjugation Exchanges the Two Copies
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary
+- [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-16|§CB.17.16]] Which (j₊, j₋) Descend to SO⁺(1,3)
 - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-2|§CB.18.2]] γ⁵ Is the Complex Volume Element (of the Opposite Orientation)
 - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3|§CB.18.3]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½)
 - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module

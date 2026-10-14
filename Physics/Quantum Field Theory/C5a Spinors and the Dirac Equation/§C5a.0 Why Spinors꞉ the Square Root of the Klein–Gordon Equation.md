@@ -212,7 +212,7 @@ The $4\times4$ solution is unique up to a change of basis (used next, in §C5a.1
 >
 > **What the derivation shows**
 > - Without mass, a two-component field has a first-order square root of $\partial^2$, because the second factor may use different matrices ($\sigma$ after $\bar\sigma$). With mass, the second factor must repeat the first, and the first would then need four anticommuting $2\times2$ matrices. The massive equation therefore needs a second two-component field, coupled through $m$: the pair of part 2, which is the Dirac equation with $\psi = (\psi_L, \psi_R)$, four components.
-> - Assumptions: constant coefficients, complex-linear equations, $C^2$ fields. A Majorana mass pairs $\psi_L$ with its own complex conjugate ($\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, PS eq. (3.38)); such an equation is not complex-linear, so part 3 does not apply to it ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-7|§C5a.7, ★ Remark: A Majorana mass needs no second field]]).
+> - Assumptions: constant coefficients, complex-linear equations, $C^2$ fields. A Majorana mass pairs $\psi_L$ with its own complex conjugate ($\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, PS eq. (3.38)); such an equation is not complex-linear, so part 3 does not apply to it ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-8|§C5a.7, ★ Remark: A Majorana mass needs no second field]]).
 > - Stacking $\sigma$ and $\bar\sigma$ off-diagonally is exactly the chiral $\gamma^\mu$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]): the pair condition of step 7 for $2\times2$ blocks is the Clifford relation for $4\times4$ matrices (Example §C5a.0.1).
 > - Used next: Remark "Why not two-component spinors?" below; the Weyl fields and their helicity ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-12|Theorem §C5a.7.12]]).
 
@@ -266,9 +266,9 @@ The ★ remark "What the Clifford relation induces" starts from the algebra the 
 
 The remark "Why not two-component spinors?" uses that parity exchanges the two copies of the Lorentz algebra:
 
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12]]
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13]]
 
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-12]]
+![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13]]
 
 ## What the γ's are for
 
@@ -296,8 +296,8 @@ The remark "Why not two-component spinors?" uses that parity exchanges the two c
 
 > [!remark] Remark: Why not two-component spinors?
 > - **Without mass, two components suffice.** The Weyl equation $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ squares to $\partial^2\psi_L = 0$, because the second factor may use the partner matrices $\sigma^\mu$ ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-4|Theorem §C5a.0.4]], 1; [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]]).
-> - **With mass, they do not.** A massive first-order equation for one two-component field cannot square to Klein–Gordon (Theorem §C5a.0.4, 3). The Dirac pair closes only through the partner, $\psi_L$ through $\psi_R$ and back (Theorem §C5a.0.4, 2); in the Lagrangian the kinetic terms keep the chiralities apart and the mass term $-m(\psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L)$ joins them ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]; [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-2|§C5a.5, Remark: Kinematics allows one handedness, a mass needs both]]). The exception is a Majorana mass ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-7|§C5a.7, ★ Remark: A Majorana mass needs no second field]]).
-> - **Parity exchanges the two.** The parity map $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ exchanges $\mathbf J_+ \leftrightarrow \mathbf J_-$, so it carries $(\frac12, 0)$ to $(0, \frac12)$, and a space with a parity operator contains both with equal multiplicity ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]]). How parity acts on Dirac spinors, by the block swap $\gamma^0$, is derived in [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-3|Theorem §C9.3.3]] and [[§C9.3 Parity on States, Spinors and the Dirac Field#^def-c9-3-2|Def. §C9.3.2]].
+> - **With mass, they do not.** A massive first-order equation for one two-component field cannot square to Klein–Gordon (Theorem §C5a.0.4, 3). The Dirac pair closes only through the partner, $\psi_L$ through $\psi_R$ and back (Theorem §C5a.0.4, 2); in the Lagrangian the kinetic terms keep the chiralities apart and the mass term $-m(\psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L)$ joins them ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]; [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-2|§C5a.5, Remark: Kinematics allows one handedness, a mass needs both]]). The exception is a Majorana mass ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-8|§C5a.7, ★ Remark: A Majorana mass needs no second field]]).
+> - **Parity exchanges the two.** The parity map $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ exchanges $\mathbf J_+ \leftrightarrow \mathbf J_-$, so it carries $(\frac12, 0)$ to $(0, \frac12)$, and a space with a parity operator contains both with equal multiplicity ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|Theorem §CB.17.13]]). How parity acts on Dirac spinors, by the block swap $\gamma^0$, is derived in [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-3|Theorem §C9.3.3]] and [[§C9.3 Parity on States, Spinors and the Dirac Field#^def-c9-3-2|Def. §C9.3.2]].
 >
 > So a fermion with a Dirac mass, in a theory that respects parity, needs both chiralities, $(\frac12, 0)\oplus(0, \frac12)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]]); the four-component formalism packages them as $\psi = (\psi_L, \psi_R)$, with $\gamma$'s that map each half to the other.
 >

@@ -37,7 +37,7 @@ Points he stressed in lecture, and where they live:
 - Every topic below has three checklists:
   - **Language**: state each definition from memory, then give one example and one non-example.
   - **Proofs**: reproduce closed-book. ★★ marks the core results (the past exams' Part 3 is built from these), ★ the supporting ones.
-  - **Drill**: the homework parts that exercise the topic, broken into small questions in [[Differentiable Manifolds HW Drill]], and the past-exam items, mapped but not solved; they are your self-test.
+  - **Drill**: the homework parts that exercise the topic, broken into small questions in [[Differentiable Manifolds HW Drill]]; the definitions, core proofs and everything Uribe left as practice in class, broken the same way in [[Differentiable Manifolds Notes Drill]]; and the past-exam items, mapped but not solved; they are your self-test.
 - Tick a box only when you can do it on paper without looking.
 - The **Strategies** and **Counterexamples** sections at the end are the grammar and the vocabulary of the course; every proof checklist item names the strategy it uses.
 
@@ -58,7 +58,7 @@ Points he stressed in lecture, and where they live:
 **Gap to close:** the definition of a **vector bundle** is not a box in the notes. Uribe postponed it; see the remark *Vector Bundles* in [[§49 The Tangent Bundle|§49]] and Lee Ch. 10, *Vector Bundles*. The 2025 midterm asked for it (Part 1.3). Write your own definition box, modelled on Definition [[§38 Fibrations#^def-38-1|§38.1]] Fibration plus "fibres are vector spaces, trivializations are linear on fibres".
 
 ## How the definitions grew
-The notes show the course building each object more than once and then proving the versions agree. Knowing the ladder *is* knowing the language:
+The notes show the course building each object more than once and then proving the versions agree. Knowing the ladder *is* knowing the language: each row is drilled as a proof in [[Differentiable Manifolds Notes Drill#Equivalences|Notes Drill: Equivalences]].
 
 | Object | Versions in the notes | The theorem that connects them |
 | --- | --- | --- |
@@ -94,6 +94,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]] Subspaces Inherit Both Conditions and Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]] Products Inherit Both Conditions
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T1|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T1|proofs and class exercises]]
 - [ ] 2021 midterm, Part 2.3: an orbit space of an $\mathbb{R}$-action, second countable? (T1, open quotients)
 - [ ] 2025 midterm, Part 2.4: second countable + locally Euclidean ⇒ Hausdorff? (counterexample library)
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw1-1|HW1.1]], [[Differentiable Manifolds HW Drill#^hw1-2|HW1.2]], [[Differentiable Manifolds HW Drill#^hw1-3|HW1.3]], [[Differentiable Manifolds HW Drill#^hw1-4|HW1.4]], [[Differentiable Manifolds HW Drill#^hw1-5|HW1.5]], [[Differentiable Manifolds HW Drill#^hw2-1|HW2.1]], [[Differentiable Manifolds HW Drill#^hw2-2|HW2.2]]
@@ -112,6 +113,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] The Two Descriptions Agree
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T2|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T2|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw1-6|HW1.6]], [[Differentiable Manifolds HW Drill#^hw2-3|HW2.3]], [[Differentiable Manifolds HW Drill#^hw2-4|HW2.4]], [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]]
 - [ ] 2025 midterm, Part 3.10: Hermitian matrices with fixed eigenvalues, a manifold, and its tangent space (regular value + kernel; the hint says which map).
 
@@ -131,6 +133,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]] Two Smooth Structures on the Real Line: two different smooth structures on $\mathbb{R}$, diffeomorphic anyway.
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T3|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T3|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw3-1|HW3.1]]
 
 ## T4. Tangent spaces (§25–§31)
@@ -154,6 +157,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]] Change of Coordinates, Proposition [[§30 The Differential in Coordinates#^prop-30-10|§30.10]] Maps with Zero Differential Are Constant
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T4|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T4|proofs and class exercises]]
 - [ ] 2021 midterm, Part 3.10: $d(\text{conjugation})_I$ on $G \subseteq \mathrm{GL}(n)$. Curves, plus Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] Agreement with the Vector-Space Differential.
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw3-2|HW3.2]], [[Differentiable Manifolds HW Drill#^hw3-4|HW3.4]], [[Differentiable Manifolds HW Drill#^hw4-1|HW4.1]]
 
@@ -167,6 +171,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Proposition [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]] Pullback Commutes with $d$, Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]] The Pairing Is Well Defined and Non-Degenerate
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T5|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T5|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw3-3|HW3.3]]
 
 ## T6. Local diffeomorphisms and submersions (§35–§36)
@@ -180,6 +185,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]] Diffeomorphisms Are the Bijective Local Diffeomorphisms, Proposition [[§36 Submersions#^prop-36-4|§36.4]] Submersions to $\mathbb{R}^k$ and Independent Differentials
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T6|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T6|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw4-2|HW4.2]], [[Differentiable Manifolds HW Drill#^hw3-5|HW3.5]]
 - [ ] 2021 midterm, Part 3.8: nonsingular $dF_p$ with image in a half-space. Which property of local diffeomorphisms decides it?
 - [ ] 2021 midterm, Part 2.6: two regular values, and the pair $(f, g)$ (compare Proposition [[§36 Submersions#^prop-36-4|§36.4]] Submersions to $\mathbb{R}^k$ and Independent Differentials).
@@ -200,6 +206,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Theorem [[§37 Regular Submanifolds#^thm-37-20|§37.20]] Lagrange Multipliers: HW5.4.
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T7|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T7|proofs and class exercises]]
 - [ ] 2025 midterm, Part 2.6: is a submersion transverse to every submanifold?
 - [ ] 2025 midterm, Part 3.9: graph and diagonal transverse. Use the tangent space of a product, Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] The Tangent Space of a Product.
 - [ ] 2021 midterm, Part 2.7: intersection of submanifolds of $\mathbb{R}^3$ vs transversality.
@@ -218,6 +225,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] Know the statement of Theorem [[§38 Fibrations#^thm-38-3|§38.3]] Ehresmann's Theorem, and why each hypothesis is needed: Example [[§38 Fibrations#^ex-38-1|§38.1]] A Submersion That Is Not a Fibration, Example [[§38 Fibrations#^ex-38-2|§38.2]] All Fibres Diffeomorphic but Not a Fibration.
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T8|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T8|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]], [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]]
 - [ ] 2025 midterm, Part 2.5: the punctured plane over a line, a fibration?
 - [ ] 2021 midterm, Part 2.5: is every surjective submersion a fibration?
@@ -236,6 +244,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Proposition [[§42 Embeddings#^prop-42-12|§42.12]] The Irrational Line on the Torus, Proposition [[§42 Embeddings#^prop-42-13|§42.13]] Images of Injective Immersions, Proposition [[§42 Embeddings#^prop-42-15|§42.15]] When an Immersed Submanifold Is Regular
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T9|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T9|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]], [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]]
 - [ ] 2021 midterm, Part 1.1: injective immersion vs embedding, compared and contrasted.
 - [ ] 2021 midterm, Part 2.4: is a composition of embeddings an embedding?
@@ -254,6 +263,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★ Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]] The Hessian at a Critical Point Is Well Defined, Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]] Transversality to the Zero Section (HW5.3), Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]] Critical Points of a Morse Function Are Isolated
 
 **Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T10|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T10|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]
 
 ## T11. Vector fields and Lie groups (§53–§57; check how far the exam goes)
@@ -309,3 +319,7 @@ The files are in the course folder (`Midterm/midterm-1.pdf` is 2021 and `Midterm
 | --- | --- | --- | --- |
 | 2021 (Oct 27) | 1 T9 · 2 T10 | 3 T1 · 4 T9 · 5 T8 · 6 T6 · 7 T7 | 8 T6 · 9 T7 · 10 T4 |
 | 2025 (Oct 15) | 1 T4 · 2 T4 · 3 T8 | 4 T1 · 5 T8 · 6 T7 · 7 T9 | 8 T9 · 9 T7 · 10 T2 |
+
+**Drill**
+- [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T11|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T11|proofs and class exercises]]
+
