@@ -30,7 +30,7 @@ The integers modulo $n$ are the first family of finite groups. This chapter buil
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Division Algorithm|Lemma §6.1: Division Algorithm]]: 53 later results
-- [[§6 Divisibility and Congruence#^prop-6-2|Proposition §6.2: Congruence Is an Equivalence Relation with Remainder Classes]]: 37 later results
+- [[Division Algorithm|Lemma §6.1: Division Algorithm]]: 54 later results
+- [[§6 Divisibility and Congruence#^prop-6-2|Proposition §6.2: Congruence Is an Equivalence Relation with Remainder Classes]]: 39 later results
+- [[§8 Invertibility and Unit Groups#^prop-8-1|Proposition §8.1: Invertibility Criterion]]: 20 later results
 - [[Descent Lemma|Lemma §7.2: Descending a Map to ℤ/nℤ]]: 18 later results
-- [[§8 Invertibility and Unit Groups#^prop-8-1|Proposition §8.1: Invertibility Criterion]]: 18 later results

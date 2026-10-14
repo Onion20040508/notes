@@ -204,7 +204,8 @@
 \begin{center}
 \fbox{\parbox{0.85\textwidth}{
 \textbf{Format:} $\sim$2/3 IBL. Worksheets Mon/Wed; Friday = catch-up lecture (first half) + 10-minute quiz (one homework problem), since Fri Sept 18. \\
-\textbf{Pace (from Oct 5):} about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: solvable groups. \\
+\textbf{Pace (from Oct 5):} about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: the Sylow theorems. \\
+\textbf{Schedule (from Oct 14):} Sylow II and III on Fri Oct 16, then fall break. No problem set over the break or in the week after it, because of the midterm; the topic list for the exam is on Canvas. After the break: representation theory or more finite group theory (undecided as of Oct 14). \\
 \textbf{Homework:} Due Thursday nights via Gradescope. \\
 \textbf{Midterm:} Thursday after fall break. \quad \textbf{Final:} Wednesday after classes end (per registrar). \\
 \textbf{Office hours:} Wed 3--4pm, Thu 10am--12pm, EH 1064 (IBL room). \quad \textbf{Email:} speyer@umich.edu \\
@@ -5102,7 +5103,7 @@ Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the rema
 
 \chapter{The Sylow Theorems}\label{ch:sylow}
 
-\textit{Source: Worksheet 10 (handed out with Worksheet 9, Wed Oct 7); Lecture and Worksheet 10 (Mon Oct 12). Proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
+\textit{Source: Worksheet 10 (handed out with Worksheet 9, Wed Oct 7); Lecture and Worksheet 10 (Mon Oct 12); worksheet session (Wed Oct 14). Proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
 
 Lagrange's theorem says that the order of a subgroup divides $|G|$, and its converse fails; Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: subgroups of that order exist, and any two are conjugate. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly, and pull it back with a fixed-point argument.
 
@@ -5199,6 +5200,10 @@ Then $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$.
 
 \proofpending
 
+\begin{exbox}[{A Sylow $5$-Subgroup of $GL_2(\mathbb{F}_5)$ (lecture 10/14)}]\label{ex:sylow-gl2-f5}
+$|GL_2(\mathbb{F}_5)| = (5^2 - 1)(5^2 - 5) = 24 \cdot 20 = 480 = 2^5 \cdot 3 \cdot 5$ (Proposition~\ref{prop:order-gln-fp}), so a Sylow $5$-subgroup has order $5$. The matrix $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ satisfies $u^j = \begin{pmatrix} 1 & j \\ 0 & 1 \end{pmatrix}$, so it has order $5$, and $\langle u \rangle$ is a Sylow $5$-subgroup. It is exactly the unitriangular group of WS 10.2 (Proposition~\ref{prop:unitriangular-sylow}) for $n = 2$, $p = 5$, which has $p^{\binom{2}{2}} = 5$ elements.
+\end{exbox}
+
 \subsection{\texorpdfstring{Groups of Order $p^2$}{Groups of Order p²}}\label{sub:order-p-squared}
 
 \textit{(PS 6.3.)} A nontrivial central element, which every nontrivial $p$-group has, is enough to classify the groups of order $p^2$. The splitting step is a general criterion, isolated first.
@@ -5284,7 +5289,7 @@ By WS 10.2 (Proposition~\ref{prop:unitriangular-sylow}), $P$ is a Sylow $p$-subg
 The corollary is not obvious from linear algebra. For instance, any subgroup with $16$ elements of $GL_{10^6}(\mathbb{F}_2)$, however its matrices look, becomes a group of upper triangular matrices after a single change of basis. The proof gives no formula for the change of basis; it comes from a counting argument.
 \end{rembox}
 
-\begin{propbox}[{Sylow Subgroups of a Subgroup (WS 10.3)}]\label{prop:sylow-of-subgroup}
+\begin{propbox}[{Sylow Subgroups of a Subgroup (WS 10.3; class 10/14)}]\label{prop:sylow-of-subgroup}
 Let $\Gamma$ be a finite group with a Sylow $p$-subgroup $\Pi$, and let $G$ be a subgroup of $\Gamma$.
 \begin{enumerate}
     \item $G$ has a Sylow $p$-subgroup $P$.
@@ -5292,17 +5297,32 @@ Let $\Gamma$ be a finite group with a Sylow $p$-subgroup $\Pi$, and let $G$ be a
 \end{enumerate}
 \end{propbox}
 
-\proofpending
+\begin{proof}
+\textit{(Class 10/14.)} Write $|\Gamma| = p^k m$ and $|G| = p^l n$ with $p \nmid m$ and $p \nmid n$, so $|\Pi| = p^k$; we must find a subgroup of $G$ of order $p^l$. Let $X = \Gamma/\Pi$, so $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$ (Theorem~\ref{thm:lagrange}). Let $G$ act on $X$ by left multiplication, the restriction to $G$ of the action of $\Gamma$ on its cosets.
+
+\emph{An orbit of size prime to $p$.} $X$ breaks up into $G$-orbits (Proposition~\ref{prop:orbits-partition-x}), and $|X|$ is the sum of their sizes. Since $p \nmid |X|$, at least one orbit $G \cdot (\gamma\Pi)$ has size $\not\equiv 0 \pmod p$.
+
+\emph{Its stabilizer.} For $h \in G$, $h\gamma\Pi = \gamma\Pi$ iff $\gamma^{-1}h\gamma \in \Pi$ iff $h \in \gamma\Pi\gamma^{-1}$. So
+\[ \operatorname{Stab}_G(\gamma\Pi) = G \cap \gamma\Pi\gamma^{-1}. \]
+
+\emph{Counting.} By orbit--stabilizer (Theorem~\ref{thm:orbit-stabilizer}),
+\[ p^l n = |G| = |G \cdot (\gamma\Pi)| \cdot |G \cap \gamma\Pi\gamma^{-1}|. \]
+The first factor is not divisible by $p$, so all $l$ factors of $p$ lie in the second: $p^l$ divides $|G \cap \gamma\Pi\gamma^{-1}|$. On the other hand, $G \cap \gamma\Pi\gamma^{-1}$ is a subgroup of $\gamma\Pi\gamma^{-1}$, which has order $|\Pi| = p^k$ (conjugation is an isomorphism, Proposition~\ref{prop:conjugation-automorphism}), so by Lagrange $|G \cap \gamma\Pi\gamma^{-1}| = p^j$ for some $j$ with $l \leq j \leq k$. It is also a subgroup of $G$, so $p^j$ divides $p^l n$, giving $j \leq l$. Hence $j = l$, and
+\[ P := G \cap \gamma\Pi\gamma^{-1} \]
+is a subgroup of $G$ of order $p^l$: a Sylow $p$-subgroup of $G$, of the form required in (2).
+\end{proof}
 
 \textit{Worksheet hint for (1): consider $G$ acting on $\Gamma/\Pi$. Worksheet hint for the next three results: use Proposition~\ref{prop:sylow-of-subgroup}.}
 
-\begin{thmbox}[{The First Sylow Theorem (WS 10.4)}]\label{thm:sylow-first}
+\begin{thmbox}[{The First Sylow Theorem (WS 10.4; class 10/14)}]\label{thm:sylow-first}
 Every finite group $G$ has a Sylow $p$-subgroup.
 \end{thmbox}
 
-\proofpending
+\begin{proof}
+\textit{(Class 10/14.)} Let $G$ be finite with $|G| = n$. By Every Finite Group Is a Matrix Group (Corollary~\ref{cor:every-finite-group-matrix-group}), $G$ is isomorphic to a subgroup $G'$ of $\Gamma = GL_n(\mathbb{F}_p)$, and $\Gamma$ has a Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, Proposition~\ref{prop:unitriangular-sylow}). By WS 10.3(1) (Proposition~\ref{prop:sylow-of-subgroup}), $G'$ has a Sylow $p$-subgroup; its preimage under the isomorphism $G \to G'$ is a Sylow $p$-subgroup of $G$. (The argument rests on WS 10.2, still marked \emph{[To be proved]}; the order of $GL_n(\mathbb{F}_p)$ it uses is Proposition~\ref{prop:order-gln-fp}, PS 6.4.)
+\end{proof}
 
-\begin{propbox}[{$p$-Subgroups and Conjugates of a Sylow Subgroup (WS 10.5)}]\label{prop:p-subgroups-conjugates-sylow}
+\begin{propbox}[{$p$-Subgroups and Conjugates of a Sylow Subgroup (WS 10.5; board 10/14)}]\label{prop:p-subgroups-conjugates-sylow}
 Let $G$ be a finite group and let $P$ be a Sylow $p$-subgroup with $|P| = p^k$.
 \begin{enumerate}
     \item If $Q$ is a $p$-subgroup of $G$, there is some $g \in G$ such that $Q \subseteq gPg^{-1}$.
@@ -5313,16 +5333,16 @@ Let $G$ be a finite group and let $P$ be a Sylow $p$-subgroup with $|P| = p^k$.
 \begin{proof}
 \textbf{(1)} This is Lemma~\ref{lem:p-subgroup-in-conjugate-sylow} with $\Gamma = G$ and $\Pi = P$.
 
-\textbf{(2)} \textcolor{gray}{[To be proved.]}
+\textbf{(2) (board 10/14).} Since $H \leq G$, $|H|$ divides $|G| = p^k m$ with $p \nmid m$ (Theorem~\ref{thm:lagrange}); as $p^k$ divides $|H|$, the largest power of $p$ dividing $|H|$ is exactly $p^k$. By the First Sylow Theorem (Theorem~\ref{thm:sylow-first}), $H$ has a Sylow $p$-subgroup $Q$, of order $p^k$. Then $Q$ is a $p$-subgroup of $G$, so by (1) $Q \subseteq gPg^{-1}$ for some $g \in G$; both have $p^k$ elements, so $Q = gPg^{-1}$. Hence $H \supseteq Q = gPg^{-1}$.
 \end{proof}
 
-\begin{thmbox}[{The Second Sylow Theorem (WS 10.6)}]\label{thm:sylow-second}
+\begin{thmbox}[{The Second Sylow Theorem (WS 10.6; stated 10/14, to be proved Fri Oct 16)}]\label{thm:sylow-second}
 Let $G$ be a finite group and let $P_1$ and $P_2$ be two Sylow $p$-subgroups of $G$. Then there is some $g \in G$ such that $P_2 = gP_1g^{-1}$.
 \end{thmbox}
 
 \proofpending
 
-\begin{thmbox}[{The Third Sylow Theorem (stated on WS 10; to be covered in lecture)}]\label{thm:sylow-third}
+\begin{thmbox}[{The Third Sylow Theorem (stated on WS 10 and 10/14; to be proved Fri Oct 16)}]\label{thm:sylow-third}
 For any finite group $G$, the number of Sylow $p$-subgroups of $G$ is congruent to $1 \bmod p$.
 \end{thmbox}
 
@@ -5435,6 +5455,7 @@ Wed Oct 7 \newline lecture; Worksheet 9 & Solvable groups; $S_3$, $S_4$ solvable
 Wed Oct 7 \newline Worksheet 10 (handed out) & $p$-groups, Sylow subgroups, the three Sylow theorems: statements only, not yet covered in lecture & \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
 Fri Oct 9 \newline lecture; quiz & WS 9.2--9.3 completed; abelian quotients via commutators; subquotient injection/surjection; derived series as a test (one direction of WS 9.6) & \ref{sec:commutators}, \ref{sec:solvable}, \ref{sec:derived-series} \\
 Mon Oct 12 \newline lecture; Worksheet 10 & WS 9.6 completed; $p$-subgroups and Sylow subgroups; conjugating a $p$-subgroup into a Sylow subgroup & \ref{sec:derived-series}, \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
+Wed Oct 14 \newline Worksheet 10 & WS 10.3 proved, hence the First Sylow Theorem; WS 10.5(2); Sylow I--III stated; $GL_2(\mathbb{F}_5)$ example & \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

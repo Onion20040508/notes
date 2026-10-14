@@ -20,6 +20,7 @@ tags: [group-theory, hub]
 - [[§30 Orbit–Stabilizer#^thm-30-6|Theorem §30.6: Burnside's Lemma]]
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|Proposition §32.3: Rotational Symmetries of the Cube]]
 - [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]
+- [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3: Sylow Subgroups of a Subgroup]]
 
 ## Connections
 - **Used for.** Class sizes divide |G| ([[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]]), hence the [[Class Equation]]. Also [[Burnside's Lemma]], the 24 rotations of the cube (6 faces, each with a stabilizer of order 4; [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|§32.3]]), and n! = (n − 1)! · n from the point stabilizer in Sₙ ([[§30 Orbit–Stabilizer#^cor-30-5|§30.5]]).

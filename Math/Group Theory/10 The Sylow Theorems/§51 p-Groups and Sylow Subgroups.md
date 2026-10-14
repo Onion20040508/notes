@@ -152,6 +152,13 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 
 ^pf-51-5
 
+> [!example] Example §51.2: A Sylow $5$-Subgroup of $GL_2(\mathbb{F}_5)$
+> $|GL_2(\mathbb{F}_5)| = (5^2 - 1)(5^2 - 5) = 24 \cdot 20 = 480 = 2^5 \cdot 3 \cdot 5$ (The Order of $GL_n(\mathbb{F}_p)$, [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Proposition §51.4]]), so a [[§51 p-Groups and Sylow Subgroups#^def-51-2|Sylow]] $5$-subgroup has order $5$. The matrix $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ satisfies $u^j = \begin{pmatrix} 1 & j \\ 0 & 1 \end{pmatrix}$, so it has order $5$, and $\langle u \rangle$ is a Sylow $5$-subgroup. It is exactly the unitriangular group of WS 10.2 ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]) for $n = 2$, $p = 5$, which has $p^{\binom{2}{2}} = 5$ elements.
+>
+> *Source: lecture 10/14*
+
+^ex-51-2
+
 
 ## Groups of Order p²
 

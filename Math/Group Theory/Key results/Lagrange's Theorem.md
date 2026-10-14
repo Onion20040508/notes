@@ -28,6 +28,8 @@ tags: [group-theory, hub]
 - [[§43 Simple Groups#^prop-43-6|Proposition §43.6: A_5 Is Simple]]
 - [[§51 p-Groups and Sylow Subgroups#^thm-51-7|Theorem §51.7: Groups of Order p²]]
 - [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1: p-Subgroups Lie in a Conjugate of a Sylow Subgroup]]
+- [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3: Sylow Subgroups of a Subgroup]]
+- [[§52 The Sylow Theorems#^prop-52-5|Proposition §52.5: p-Subgroups and Conjugates of a Sylow Subgroup]]
 
 ## Connections
 - **Used for.** ord(g) divides |G| and g^|G| = e ([[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]), hence [[§29 The Index and Lagrange's Theorem#^cor-29-4|Fermat's Little Theorem]]. Also [[Groups of Prime Order Are Cyclic]] and the [[Orbit–Stabilizer Theorem]]. It rules out subgroups, e.g. S₃ has none of order 4 or 5 ([[§29 The Index and Lagrange's Theorem#^rem-29-1|Uses of Lagrange]]), and together with class sizes it proves [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].
