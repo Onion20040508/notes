@@ -187,7 +187,7 @@ Microcausality:
 | | Formula | Home |
 | --- | --- | --- |
 | $C$ on modes | $U(\mathcal C)\,\hat a^s_{\mathbf p}\,U(\mathcal C)^{-1} = \hat b^s_{\mathbf p}$, $\hat b \to \hat a$ (same $\mathbf p$, $s$; phases $1$; unitary); $U(\mathcal C)|\mathbf p, s\rangle = |\mathbf p, s\rangle^c$ | [[§C9.5 Charge Conjugation#^def-c9-5-1\|Def. §C9.5.1]], [[§C9.5 Charge Conjugation#^thm-c9-5-1\|Theorem §C9.5.1]] |
-| transposed adjoint | $\hat\psi^{\dagger\mathsf T} \equiv (\hat\psi^\dagger)^{\mathsf T}$: $\dagger$ on operators, $\ast$ on numbers, still a column (slides, PS, the user's notes: $\psi^{\ast}$) | [[§C9.5 Charge Conjugation#^def-c9-5-2\|Def. §C9.5.2]] |
+| transposed adjoint | $\hat\psi^{\dagger\mathsf T} \equiv (\hat\psi^\dagger)^{\mathsf T}$, $(\hat\psi^{\dagger\mathsf T})_a = (\hat\psi_a)^\dagger$: $\dagger$ on operators, $\ast$ on numbers, still a column (slides, PS, the user's notes: $\psi^{\ast}$) | [[§C9.5 Charge Conjugation#^def-c9-5-2\|Def. §C9.5.2]] |
 | two-spinors | $\xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$: $\xi^{-1} = \xi^2$, $\xi^{-2} = -\xi^1$; $X^{-(-s)} = -X^s$; conjugation reverses spin | [[§C9.5 Charge Conjugation#^thm-c9-5-3\|Theorem §C9.5.3]], [[§C9.5 Charge Conjugation#^def-c9-5-4\|Def. §C9.5.4]] |
 | chiral $\gamma$'s | $\gamma^0, \gamma^2$ symmetric, $\gamma^1, \gamma^3$ antisymmetric; only $\gamma^2$ imaginary; $(-i\gamma^2)^2 = \mathbb 1$; $(\gamma^\mu)^{\mathsf T}\gamma^0\gamma^2 = -\gamma^0\gamma^2\gamma^\mu$ | [[§C9.5 Charge Conjugation#^thm-c9-5-4\|Theorem §C9.5.4]] |
 | $C$ spinors | $u^s(p)^{\ast} = -i\gamma^2v^s(p)$, $v^s(p)^{\ast} = -i\gamma^2u^s(p)$ (with $\eta^s = \xi^{-s}$) | [[§C9.5 Charge Conjugation#^thm-c9-5-5\|Theorem §C9.5.5]], [[§C9.5 Charge Conjugation#^thm-c9-5-6\|Theorem §C9.5.6]] |
