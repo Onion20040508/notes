@@ -375,7 +375,7 @@ Show that the 3-momentum of the beam particle in the cms is $p' = m_2p_{\rm lab}
 
 #### (e)
 
-Define the four-momentum transfer $q = p_1 - p_3$. For elastic scattering ($m_1 = m_3$, $m_2 = m_4$) show that $t \equiv q^2 = -2m_4(E_4 - m_4)$, where $E_4$ is the final lab energy of the particle initially at rest.
+⏸ **Skipped for now — to be redone.** Define the four-momentum transfer $q = p_1 - p_3$. For elastic scattering ($m_1 = m_3$, $m_2 = m_4$) show that $t \equiv q^2 = -2m_4(E_4 - m_4)$, where $E_4$ is the final lab energy of the particle initially at rest.
 
 ^ps1-5-e
 
@@ -390,7 +390,7 @@ Define the four-momentum transfer $q = p_1 - p_3$. For elastic scattering ($m_1 
 
 #### (f)
 
-Show that for elastic scattering $s \equiv (p_1 + p_2)^2 = E_{\rm cms}^2$ and $t = -4p'^2\sin^2(\theta'/2)$, with $p'$ the cms momentum and $\theta'$ the cms scattering angle.
+⏸ **Skipped for now — to be redone.** Show that for elastic scattering $s \equiv (p_1 + p_2)^2 = E_{\rm cms}^2$ and $t = -4p'^2\sin^2(\theta'/2)$, with $p'$ the cms momentum and $\theta'$ the cms scattering angle.
 
 ^ps1-5-f
 
@@ -412,7 +412,7 @@ Show that for elastic scattering $s \equiv (p_1 + p_2)^2 = E_{\rm cms}^2$ and $t
 
 ### PS1.6 Derivatives with four-vectors
 
-$\rho = x_\mu x^\mu$ is a radial coordinate on spacetime (a length squared; do not also use $\rho$ as a dummy index). Notation: $\partial_\mu = \partial/\partial x^\mu$, $\Box = \partial_\mu\partial^\mu$.
+⏸ **Skipped for now — to be redone.** $\rho = x_\mu x^\mu$ is a radial coordinate on spacetime (a length squared; do not also use $\rho$ as a dummy index). Notation: $\partial_\mu = \partial/\partial x^\mu$, $\Box = \partial_\mu\partial^\mu$.
 
 *Parts: (a), (b), (c), (d), (e), (f).*
 
