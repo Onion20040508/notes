@@ -124,6 +124,8 @@ Same field; $\hat H = \int d^3x\,\bigl[\frac12\hat\pi^2 + \frac12(\nabla\hat\phi
 
 ### W6. The momentum in modes
 
+Same field as W3–W5; in field form the momentum is $\hat{\mathbf P} = -\int d^3x\,\hat\pi\nabla\hat\phi$, the Noether charge of space translations.
+
 ^wq-6
 
 (a) Verify PS eqn 2.33. In other words, show that the momentum operator $\hat{\mathbf P} = -\int d^3x\,:\!\hat\pi(\mathbf x)\nabla\hat\phi(\mathbf x)\!:$ can be written in terms of scalar field ladder operators as $\hat{\mathbf P} = \int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p}$. The colons mean normal ordering: the introduction of operators through quantization comes with the instruction that $\hat a_{\mathbf p}$ is placed to the right of $\hat a^\dagger_{\mathbf p}$ from the outset; it amounts to the prescription that the (potentially infinite) constant due to reordering of $\hat a_{\mathbf p}$ and $\hat a^\dagger_{\mathbf p}$ must be omitted.
@@ -142,6 +144,8 @@ Same field; $\hat H = \int d^3x\,\bigl[\frac12\hat\pi^2 + \frac12(\nabla\hat\phi
 ^wq-6-c
 
 ### W7. States, normalization and the invariant measure
+
+The real field of W3, with the vacuum $\lvert0\rangle$ defined by $\hat a_{\mathbf p}\lvert0\rangle = 0$ for all $\mathbf p$.
 
 ^wq-7
 
@@ -211,6 +215,8 @@ A complex scalar field with $S = \int d^4x\,\bigl(\partial_\mu\phi^{\ast}\partia
 
 ### W10. The charge of the complex field
 
+The complex field of W9, with the expansions and the algebra of W9(b)–(c).
+
 ^wq-10
 
 (a) The action is invariant under $\phi \to e^{i\alpha}\phi$, $\phi^{\ast} \to e^{-i\alpha}\phi^{\ast}$; the conserved charge, in Peskin–Schroeder's normalization, is $\hat Q = \int d^3x\,\frac i2\bigl(\hat\phi^\dagger\hat\pi^\dagger - \hat\pi\hat\phi\bigr)$ (normal ordered). Rewrite $\hat Q$ in terms of creation and annihilation operators and determine the charge of the particles of each type.
@@ -239,6 +245,8 @@ A complex scalar field with $S = \int d^4x\,\bigl(\partial_\mu\phi^{\ast}\partia
 ^wq-10-e
 
 ### W11. Momentum and energy of the complex field
+
+The complex field of W9, with $\hat\pi = \partial_t\hat\phi^\dagger$ and $\hat\pi^\dagger = \partial_t\hat\phi$.
 
 ^wq-11
 
@@ -305,6 +313,8 @@ Which spinor identities do you need, and at which momenta?
 
 ### W14. The anticommutator algebra in both directions
 
+The expansion of W13 and its extraction formulas.
+
 ^wq-14
 
 (a) From the equal-time relations $\{\hat\psi_a(\mathbf x), \hat\psi^\dagger_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$, $\{\hat\psi, \hat\psi\} = \{\hat\psi^\dagger, \hat\psi^\dagger\} = 0$, derive $\{\hat a^r_{\mathbf p}, \hat a^{s\dagger}_{\mathbf q}\} = \{\hat b^r_{\mathbf p}, \hat b^{s\dagger}_{\mathbf q}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$.
@@ -355,6 +365,8 @@ $\hat H = \int d^3x\,\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$.
 
 ### W16. The Dirac Hamiltonian: fermionic reordering and the zero-point energy
 
+The $\hat H$ of W15(a), now with the anticommutators of W14(a); $E_0$ is the real scalar's zero-point energy of W5(b).
+
 ^wq-16
 
 (a) With the anticommutators of W14(a), reorder the $\hat H$ of W15(a): show $\hat H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}\bigl(\hat a^{s\dagger}_{\mathbf p}\hat a^s_{\mathbf p} + \hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p}\bigr) + E_0^{(\rm D)}$, find $E_0^{(\rm D)}$ in terms of the real scalar's $E_0$ of the same mass, and show that $:\!\hat H\!: \ge 0$ with $:\!\hat H\!:\lvert0\rangle = 0$.
@@ -373,6 +385,8 @@ $\hat H = \int d^3x\,\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$.
 ^wq-16-c
 
 ### W17. Momentum and charge in modes
+
+The expansion of W13 and the anticommutators of W14(a); the colons denote fermionic normal ordering.
 
 ^wq-17
 
