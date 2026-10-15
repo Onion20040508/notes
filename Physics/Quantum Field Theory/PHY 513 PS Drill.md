@@ -34,9 +34,9 @@ $a_\mu a_\nu b^{\mu\nu}$.
 
 ^ps1-1-a
 
-- [ ] Q1 **[def]** State the rules for a legal single term: how often may an index appear, and at which heights?
-- [ ] Q2 List each index of $a_\mu a_\nu b^{\mu\nu}$ with its height and count. Which are dummies, which are free?
-- [ ] Q3 Legal or illegal? If legal, what kind of object is it (scalar, vector, covector, which tensor type)?
+- [x] Q1 **[def]** State the rules for a legal single term: how often may an index appear, and at which heights?
+- [x] Q2 List each index of $a_\mu a_\nu b^{\mu\nu}$ with its height and count. Which are dummies, which are free?
+- [x] Q3 Legal or illegal? If legal, what kind of object is it (scalar, vector, covector, which tensor type)?
 
 #### (b)
 
@@ -44,9 +44,9 @@ $a_\mu a_\nu b^{\mu\rho}$.
 
 ^ps1-1-b
 
-- [ ] Q1 List each index with its height and count.
-- [ ] Q2 Legal or illegal?
-- [ ] Q3 If legal, name its free indices with their heights and its tensor type.
+- [x] Q1 List each index with its height and count.
+- [x] Q2 Legal or illegal?
+- [x] Q3 If legal, name its free indices with their heights and its tensor type.
 
 #### (c)
 
@@ -54,9 +54,9 @@ $a_\mu a_\nu b^{\mu\rho}a_\rho$.
 
 ^ps1-1-c
 
-- [ ] Q1 List each index with its height and count.
-- [ ] Q2 Legal or illegal? If legal, what object is it?
-- [ ] Q3 **[why]** Write how $b^{\mu\rho}a_\rho$ transforms under $\Lambda$ and show that the $\Lambda$'s carried by $\rho$ cancel. Which property of $\Lambda$ is used?
+- [x] Q1 List each index with its height and count.
+- [x] Q2 Legal or illegal? If legal, what object is it?
+- [x] Q3 **[why]** Write how $b^{\mu\rho}a_\rho$ transforms under $\Lambda$ and show that the $\Lambda$'s carried by $\rho$ cancel. Which property of $\Lambda$ is used?
 
 #### (d)
 
@@ -64,9 +64,9 @@ $a_\mu a_\nu b^{\mu\rho}a_\nu$.
 
 ^ps1-1-d
 
-- [ ] Q1 Count the occurrences and heights of $\nu$.
-- [ ] Q2 Legal or illegal? Which rule decides it?
-- [ ] Q3 **[why]** Write $\sum_\nu a_\nu a_\nu$ in components and compare it with $a^\nu a_\nu$ under a boost along $x^1$. Why is the first not an invariant?
+- [x] Q1 Count the occurrences and heights of $\nu$.
+- [x] Q2 Legal or illegal? Which rule decides it?
+- [x] Q3 **[why]** Write $\sum_\nu a_\nu a_\nu$ in components and compare it with $a^\nu a_\nu$ under a boost along $x^1$. Why is the first not an invariant?
 
 #### (e)
 
@@ -74,9 +74,9 @@ $a_\rho a_\nu b^{\mu\rho}a_\rho$.
 
 ^ps1-1-e
 
-- [ ] Q1 Count the occurrences and heights of $\rho$.
-- [ ] Q2 Legal or illegal? Which rule decides it?
-- [ ] Q3 Rename one index so that the expression becomes legal. What tensor type do you get?
+- [x] Q1 Count the occurrences and heights of $\rho$.
+- [x] Q2 Legal or illegal? Which rule decides it?
+- [x] Q3 Rename one index so that the expression becomes legal. What tensor type do you get?
 
 #### (f)
 
@@ -84,10 +84,10 @@ $a_\rho a_\nu b^{\rho\mu} = B_\nu{}^{\mu}$.
 
 ^ps1-1-f
 
-- [ ] Q1 **[def]** State the extra rule for an equation between two index expressions.
-- [ ] Q2 List the free indices of the left-hand side with their heights, and those of the right-hand side.
-- [ ] Q3 Legal or illegal?
-- [ ] Q4 **[conv]** For a tensor without symmetry, are $B_\nu{}^\mu$ and $B^\mu{}_\nu$ the same object? Does the horizontal order of the slots matter?
+- [x] Q1 **[def]** State the extra rule for an equation between two index expressions.
+- [x] Q2 List the free indices of the left-hand side with their heights, and those of the right-hand side.
+- [x] Q3 Legal or illegal?
+- [x] Q4 **[conv]** For a tensor without symmetry, are $B_\nu{}^\mu$ and $B^\mu{}_\nu$ the same object? Does the horizontal order of the slots matter?
 
 #### (g)
 
@@ -95,9 +95,9 @@ $a_\rho a_\nu b^{\rho\mu} = B^{\mu\sigma}{}_{\nu}\,h_\sigma$.
 
 ^ps1-1-g
 
-- [ ] Q1 What is the status of $\sigma$ on the right-hand side?
-- [ ] Q2 Compare the free indices and heights of the two sides.
-- [ ] Q3 Legal or illegal?
+- [x] Q1 What is the status of $\sigma$ on the right-hand side?
+- [x] Q2 Compare the free indices and heights of the two sides.
+- [x] Q3 Legal or illegal?
 
 #### (h)
 
@@ -105,9 +105,9 @@ $a_\rho a_\nu b^{\rho\mu} = B_\nu{}^{\mu\rho}$.
 
 ^ps1-1-h
 
-- [ ] Q1 What is the status of $\rho$ on each side?
-- [ ] Q2 Legal or illegal?
-- [ ] Q3 **[why]** A free index records a transformation factor $\Lambda$. Why can an index that is summed on one side not be free on the other?
+- [x] Q1 What is the status of $\rho$ on each side?
+- [x] Q2 Legal or illegal?
+- [x] Q3 **[why]** A free index records a transformation factor $\Lambda$. Why can an index that is summed on one side not be free on the other?
 
 #### (i)
 
@@ -115,9 +115,9 @@ $a_\rho a_\nu b^{\rho\mu} = B^{\mu\nu}$.
 
 ^ps1-1-i
 
-- [ ] Q1 Compare the heights of $\nu$ on the two sides.
-- [ ] Q2 Legal or illegal?
-- [ ] Q3 **[conv]** How would you repair the equation with the metric, and on which side?
+- [x] Q1 Compare the heights of $\nu$ on the two sides.
+- [x] Q2 Legal or illegal?
+- [x] Q3 **[conv]** How would you repair the equation with the metric, and on which side?
 
 #### (j)
 
@@ -125,9 +125,9 @@ $a_\rho a_\nu b^{\rho\mu} = B^{\mu\rho}{}_{\nu}\,z_\rho$.
 
 ^ps1-1-j
 
-- [ ] Q1 The letter $\rho$ appears on both sides. Is each occurrence a dummy within its own side? Does reusing the letter on both sides cause a problem?
-- [ ] Q2 Compare the free indices and heights of the two sides.
-- [ ] Q3 Legal or illegal?
+- [x] Q1 The letter $\rho$ appears on both sides. Is each occurrence a dummy within its own side? Does reusing the letter on both sides cause a problem?
+- [x] Q2 Compare the free indices and heights of the two sides.
+- [x] Q3 Legal or illegal?
 
 > [!tip]- Hints: definitions, results and your solution for the whole problem
 > **Topic and definitions.** T1 index notation. Four-vectors and index positions Definition [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|§C1a.5.1]] Four-Vectors and Index Positions in Natural Units; vectors and covectors through the metric Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors; Lorentz transformation Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading.
@@ -153,10 +153,10 @@ Rearrange the terms so the expression is equivalent to matrix multiplication: $C
 
 ^ps1-2-a
 
-- [ ] Q1 **[def]** When is an index expression a matrix product: which index of one factor must be contracted with which index of the next?
-- [ ] Q2 Identify the free indices with their heights. Which factor must stand first and which last?
-- [ ] Q3 Chain the remaining factors through the dummies and write the result as one matrix element.
-- [ ] Q4 **[why]** Why is the reordering allowed for the components, although the matrices themselves do not commute?
+- [x] Q1 **[def]** When is an index expression a matrix product: which index of one factor must be contracted with which index of the next?
+- [x] Q2 Identify the free indices with their heights. Which factor must stand first and which last?
+- [x] Q3 Chain the remaining factors through the dummies and write the result as one matrix element.
+- [x] Q4 **[why]** Why is the reordering allowed for the components, although the matrices themselves do not commute?
 
 #### (b)
 
@@ -164,10 +164,10 @@ Place indices on $B$ such that the equation $A^{\mu}{}_{\nu}\eta^{\nu\rho}A^{\al
 
 ^ps1-2-b
 
-- [ ] Q1 Which indices on the left are contracted and which are free, at which heights?
-- [ ] Q2 Write the left-hand side as a matrix product including the metric, and read off the indices $B$ must carry.
-- [ ] Q3 **[why]** Why do equal free indices at equal heights make the two sides transform identically?
-- [ ] Q4 **[why]** Does the order of the two indices on $B$ matter? Test whether $(AA\eta^{-1})^{\alpha\rho}$ is symmetric for a general matrix $A$.
+- [x] Q1 Which indices on the left are contracted and which are free, at which heights?
+- [x] Q2 Write the left-hand side as a matrix product including the metric, and read off the indices $B$ must carry.
+- [x] Q3 **[why]** Why do equal free indices at equal heights make the two sides transform identically?
+- [x] Q4 **[why]** Does the order of the two indices on $B$ matter? Test whether $(AA\eta^{-1})^{\alpha\rho}$ is symmetric for a general matrix $A$.
 
 #### (c)
 
@@ -175,10 +175,10 @@ Relabel indices to show that the two expressions are the same: $A^{\rho}{}_{\mu}
 
 ^ps1-2-c
 
-- [ ] Q1 Reorder each side so that contracted indices are neighbours. Which cyclic chain of factors appears on each side?
-- [ ] Q2 Find a renaming of the dummies of the right-hand side that maps it onto the left-hand side.
-- [ ] Q3 **[why]** Why may a contracted pair exchange heights, $C_{\lambda}{}^{\rho}A_{\rho\mu} = C_{\lambda\rho}A^{\rho}{}_{\mu}$?
-- [ ] Q4 Write both sides as the trace of one product of matrices.
+- [x] Q1 Reorder each side so that contracted indices are neighbours. Which cyclic chain of factors appears on each side?
+- [x] Q2 Find a renaming of the dummies of the right-hand side that maps it onto the left-hand side.
+- [x] Q3 **[why]** Why may a contracted pair exchange heights, $C_{\lambda}{}^{\rho}A_{\rho\mu} = C_{\lambda\rho}A^{\rho}{}_{\mu}$?
+- [x] Q4 Write both sides as the trace of one product of matrices.
 
 #### (d)
 
@@ -186,11 +186,11 @@ If $A$, $B$, $C$, $D$ are symmetric matrices, which of the following three expre
 
 ^ps1-2-d
 
-- [ ] Q1 **[def]** What does "symmetric" mean for a tensor with indices $T_{\mu\nu}$, and what does it allow for $T^{\mu}{}_{\nu}$ versus $T_{\nu}{}^{\mu}$?
-- [ ] Q2 Write each expression as the trace of a product, using cyclicity to put $A$ first.
-- [ ] Q3 For general matrices, are the three traces equal?
-- [ ] Q4 Using $\operatorname{tr}M = \operatorname{tr}M^{\mathsf T}$ and the symmetry of each factor, decide which cyclic orders become equal.
-- [ ] Q5 **[why]** Transposing a product reverses the cyclic order. Why does that identity need every factor to be symmetric?
+- [x] Q1 **[def]** What does "symmetric" mean for a tensor with indices $T_{\mu\nu}$, and what does it allow for $T^{\mu}{}_{\nu}$ versus $T_{\nu}{}^{\mu}$?
+- [x] Q2 Write each expression as the trace of a product, using cyclicity to put $A$ first.
+- [x] Q3 For general matrices, are the three traces equal?
+- [x] Q4 Using $\operatorname{tr}M = \operatorname{tr}M^{\mathsf T}$ and the symmetry of each factor, decide which cyclic orders become equal.
+- [x] Q5 **[why]** Transposing a product reverses the cyclic order. Why does that identity need every factor to be symmetric?
 
 > [!tip]- Hints: definitions, results and your solution for the whole problem
 > **Topic and definitions.** T1 index notation. Four-vectors and index positions Definition [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|§C1a.5.1]] Four-Vectors and Index Positions in Natural Units; metric identification Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors; Lorentz transformation Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading.
@@ -213,10 +213,10 @@ What are the values of $\epsilon^{0123}$, $\epsilon^{1230}$ and $\epsilon^{1213}
 
 ^ps1-3-a
 
-- [ ] Q1 **[def]** Define $\epsilon^{\mu\nu\rho\sigma}$ and an even or odd permutation.
-- [ ] Q2 Count the exchanges that take $(0123)$ to $(1230)$, and give the sign.
-- [ ] Q3 Why does $(1213)$ give zero? Name the property of $\epsilon$ that forces it.
-- [ ] Q4 **[conv]** With the course's $\epsilon^{0123} = +1$, what is $\epsilon_{0123}$? Which sign do Peskin–Schroeder use, and which quantities change sign between the two conventions?
+- [x] Q1 **[def]** Define $\epsilon^{\mu\nu\rho\sigma}$ and an even or odd permutation.
+- [x] Q2 Count the exchanges that take $(0123)$ to $(1230)$, and give the sign.
+- [x] Q3 Why does $(1213)$ give zero? Name the property of $\epsilon$ that forces it.
+- [x] Q4 **[conv]** With the course's $\epsilon^{0123} = +1$, what is $\epsilon_{0123}$? Which sign do Peskin–Schroeder use, and which quantities change sign between the two conventions?
 
 > [!tip]- Hint (a): route
 > **Strategy (K2).** Count transpositions; a repeated index gives zero.
@@ -227,12 +227,12 @@ Just as $p^2 = p^\mu p_\mu$ is invariant thanks to $\Lambda^{\mathsf T}\eta\Lamb
 
 ^ps1-3-b
 
-- [ ] Q1 **[why]** Why is the contraction invariant under $SO(1,3)$ but not under all of $O(1,3)$? Which identity relating $\epsilon$ and $\det\Lambda$ do you use?
-- [ ] Q2 Show that conservation also holds with lower indices.
-- [ ] Q3 Substitute $p_4 = -(p_1 + p_2 + p_3)$ and write the three resulting terms.
-- [ ] Q4 Prove that a tensor antisymmetric in a pair of indices contracted with one symmetric in the same pair gives zero, and apply it to each term.
-- [ ] Q5 Second route: identify the contraction with $\pm$ a $4\times4$ determinant whose columns are the four momenta. Which column operation shows that it vanishes?
-- [ ] Q6 **[why]** For four arbitrary vectors, when does the contraction vanish?
+- [x] Q1 **[why]** Why is the contraction invariant under $SO(1,3)$ but not under all of $O(1,3)$? Which identity relating $\epsilon$ and $\det\Lambda$ do you use?
+- [x] Q2 Show that conservation also holds with lower indices.
+- [x] Q3 Substitute $p_4 = -(p_1 + p_2 + p_3)$ and write the three resulting terms.
+- [x] Q4 Prove that a tensor antisymmetric in a pair of indices contracted with one symmetric in the same pair gives zero, and apply it to each term.
+- [x] Q5 Second route: identify the contraction with $\pm$ a $4\times4$ determinant whose columns are the four momenta. Which column operation shows that it vanishes?
+- [x] Q6 **[why]** For four arbitrary vectors, when does the contraction vanish?
 
 > [!tip]- Hint (b): route
 > **Strategy (K2).** Eliminate $p_4$ by conservation and contract a symmetric pair with an antisymmetric symbol; or read the contraction as a determinant with the momenta as columns.
@@ -258,11 +258,11 @@ Derive the formula for $E_{\rm CM}$, setting $c = 1$ from the start. (Hint: $p_\
 
 ^ps1-4-a
 
-- [ ] Q1 **[def]** Define the centre-of-mass frame. Write the lab four-momenta of the positron and the electron, with the mass-shell condition.
-- [ ] Q2 Which invariant equals $E_{\rm CM}^2$, and why is it the same before and after the annihilation?
-- [ ] Q3 Evaluate it in the lab frame.
-- [ ] Q4 Evaluate it in the centre-of-mass frame and equate.
-- [ ] Q5 **[why]** Why may the invariant be evaluated with the initial particles in one frame and read as the photons' energy in another?
+- [x] Q1 **[def]** Define the centre-of-mass frame. Write the lab four-momenta of the positron and the electron, with the mass-shell condition.
+- [x] Q2 Which invariant equals $E_{\rm CM}^2$, and why is it the same before and after the annihilation?
+- [x] Q3 Evaluate it in the lab frame.
+- [x] Q4 Evaluate it in the centre-of-mass frame and equate.
+- [x] Q5 **[why]** Why may the invariant be evaluated with the initial particles in one frame and read as the photons' energy in another?
 
 > [!tip]- Hint (a): route
 > **Strategy (K1).** The square of the total four-momentum, evaluated in the lab and in the centre-of-mass frame.
@@ -287,9 +287,9 @@ What is the energy of each photon in the centre-of-mass frame?
 
 ^ps1-4-c
 
-- [ ] Q1 What does the definition of the centre-of-mass frame say about the two photon three-momenta?
-- [ ] Q2 **[why]** Why does masslessness then force equal energies?
-- [ ] Q3 Express $E_\gamma$ in terms of $E$ and $m_e$.
+- [x] Q1 What does the definition of the centre-of-mass frame say about the two photon three-momenta?
+- [x] Q2 **[why]** Why does masslessness then force equal energies?
+- [x] Q3 Express $E_\gamma$ in terms of $E$ and $m_e$.
 
 > [!tip]- Hint (c): route
 > **Strategy (K1).** Back-to-back massless momenta.
