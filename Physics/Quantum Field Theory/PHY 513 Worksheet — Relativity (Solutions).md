@@ -658,11 +658,11 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > [!success]- Solution
 > **Answer.** $e^{-mr} \to e^{-mcr/\hbar}$; decay length $\hbar/m_\pi c = \hbar c/m_\pi c^2 = 197.3/139.6$ fm $= 1.41$ fm.
 >
-> **Step 1.** The argument of an exponential is dimensionless, so $mr$ must become $r$ divided by a length built from $m$: the only one is $\hbar/mc$ (mass dimension $-1$ restored with $\hbar^{\beta + \gamma}c^{-\beta - 2\gamma}$, $\beta = 1$, $\gamma = 0$, from $\hbar/mc$ itself).
+> **Step 1.** The argument of an exponential is dimensionless, so $mr = r/(1/m)$ must become $r$ divided by the length that $1/m$ stands for. A length has ordinary dimension $M^0L^1T^0$, so the exponent rule restores $1/m \to (1/m)\,\hbar^{1}c^{-1} = \hbar/mc$, and $e^{-mr} \to e^{-mcr/\hbar}$.
 >
 > **Step 2.** $\hbar c/(m_\pi c^2) = 197.3\ \text{MeV fm}/139.6\ \text{MeV} = 1.413$ fm: the range of the pion's correlations, the Yukawa range of the nuclear force.
 >
-> *Checked against:* [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2 ("$e^{-mt}$ … hides a scale"), [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]] (length $\hbar/mc$), [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]] (the $e^{-m\rho}$ leak, damped over the Compton wavelength $1/m$); numerical check.
+> *Checked against:* [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]], 2 (the exponent rule), [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2 ("$e^{-mt}$ … hides a scale"), [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]] (length $\hbar/mc$), [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]] (the $e^{-m\rho}$ leak, damped over the Compton wavelength $1/m$); numerical check.
 
 ^sol-wr-12-b
 
@@ -944,7 +944,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > [!success]- Solution
 > **Answer.** $B_x(a)B_y(b)B_x(-a)B_y(-b) = \mathbb 1 + [A, B] + O(3)$ with $A = -iaK_1$, $B = -ibK_2$, and $[A, B] = -ab[K_1, K_2] = -ab(-iJ_3) = iab\,J_3$: since $R_z(\theta) = \mathbb 1 - i\theta J_3 + \dots$, this is a rotation by $\theta = -ab$ about $z$. The commutator responsible is $[K_1, K_2] = -iJ_3$. In $SO(4)$, $[\tilde K_i, \tilde K_j] = +i\varepsilon_{ijk}J_k$ and the rotation would be by $+ab$.
 >
-> **Step 1** (second order). $e^{A}e^{B}e^{-A}e^{-B}$: expand each to second order; the terms $A - A$, $B - B$ cancel, the squares cancel against the cross terms $-A^2$, $-B^2$, and $AB - BA$ remains: $\mathbb 1 + [A, B] + O(3)$.
+> **Step 1** (second order). Write the four factors as $e^{X_i} = \mathbb 1 + X_i + \frac12X_i^2 + O(3)$ with $(X_1, X_2, X_3, X_4) = (A, B, -A, -B)$. First order: $\sum_iX_i = 0$. Second order: $\frac12\sum_iX_i^2 + \sum_{i<j}X_iX_j = (A^2 + B^2) + (AB - A^2 - AB - BA - B^2 + AB) = AB - BA$. So the product is $\mathbb 1 + [A, B] + O(3)$.
 >
 > **Step 2.** $B_x(a) = e^{-iaK_1}$, $B_y(b) = e^{-ibK_2}$, and $[K_1, K_2] = -iJ_3$ give $[A, B] = (-i)^2ab(-iJ_3) = iab\,J_3$. In matrices, $iabJ_3 = ab(E_{12} - E_{21})$, while $R_z(\theta) - \mathbb 1 \approx \theta(E_{21} - E_{12})$: $\theta = -ab$.
 >
@@ -1051,7 +1051,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (count). Symmetric: $10 = 9 + 1$; antisymmetric: $6$. Labels: each slot of $(\frac12, \frac12)\otimes(\frac12, \frac12)$ is a product of two spins $\frac12$, i.e. $1\oplus0$ (Clebsch–Gordan), slot by slot; the $(1, 1)$ is the $9$, $(1, 0)\oplus(0, 1)$ the $6$, $(0, 0)$ the trace.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]] (the decomposition is preserved), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]] (the labels); the user's Lorentz-representation review (2026-10-14), §10 "Exam summary".
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]] (the decomposition is preserved), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]] (the labels); the user's Lorentz-representation review (2026-10-14), §8 (Two-index tensors) and §10 (Exam summary).
 
 ^sol-wr-18-a
 
@@ -1081,7 +1081,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > [!success]- Solution
 > **Answer.** $\mathbf E - i\mathbf B$ carries $(1, 0)$ and $\mathbf E + i\mathbf B$ carries $(0, 1)$ (with $K_i = \mathcal J^{0i}$ and $F^{ij} = -\varepsilon_{ijk}B^k$). For real $F$ the two are complex conjugates of each other, so a real field contains both; $(1, 0)$ alone would be a complex field.
 >
-> **Step 1.** $-i\eta\,\hat{\mathbf x}\times(\mathbf E - i\mathbf B) = -i\eta\,\hat{\mathbf x}\times\mathbf E - \eta\,\hat{\mathbf x}\times\mathbf B = i\,\delta\mathbf B\cdot(-1) + \delta\mathbf E$, i.e. $\delta\mathbf E - i\delta\mathbf B$ by (b). The same with $+i$ for $\mathbf E + i\mathbf B$.
+> **Step 1.** $-i\eta\,\hat{\mathbf x}\times(\mathbf E - i\mathbf B) = -\eta\,\hat{\mathbf x}\times\mathbf B - i\,\eta\,\hat{\mathbf x}\times\mathbf E = \delta\mathbf E - i\,\delta\mathbf B$ by (b), using $(-i)(-i) = -1$. Likewise $+i\eta\,\hat{\mathbf x}\times(\mathbf E + i\mathbf B) = -\eta\,\hat{\mathbf x}\times\mathbf B + i\,\eta\,\hat{\mathbf x}\times\mathbf E = \delta\mathbf E + i\,\delta\mathbf B$.
 >
 > **Step 2** (which label). A Lorentz transformation acts as $e^{-i(\boldsymbol\theta - i\boldsymbol\eta)\cdot\mathbf J_+}e^{-i(\boldsymbol\theta + i\boldsymbol\eta)\cdot\mathbf J_-}$; on $(1, 0)$ only the first factor acts, a rotation of a three-vector by the complex angle $\boldsymbol\theta - i\boldsymbol\eta$, infinitesimally $\delta\mathbf v = (\boldsymbol\theta - i\boldsymbol\eta)\times\mathbf v$. That is the law of $\mathbf E - i\mathbf B$.
 >
