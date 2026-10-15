@@ -260,6 +260,17 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 
 ^rem-c5a-6-2
 
+> [!remark]- ★ Remark: The sixteen bilinears read through (j₊, j₋)
+> A bilinear $\bar\psi\Gamma\psi$ lies in $\bar\psi\otimes\psi$, not in $\psi\otimes\psi$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|Theorem §CB.18.14]], 2). In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) $\psi = (\psi_L, \psi_R)$ and $\bar\psi = \psi^\dagger\gamma^0 = (\psi_R^\dagger, \psi_L^\dagger)$; complex conjugation exchanges the labels ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]]), so $\psi_R^\dagger$ carries $(\frac12, 0)$ and $\psi_L^\dagger$ carries $(0, \frac12)$. By [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]]:
+> - $\psi_R^\dagger\otimes\psi_L$: $(\frac12, 0)\otimes(\frac12, 0) = (1, 0)\oplus(0, 0)$; $\psi_L^\dagger\otimes\psi_R$: $(0, \frac12)\otimes(0, \frac12) = (0, 1)\oplus(0, 0)$;
+> - $\psi_L^\dagger\otimes\psi_L$ and $\psi_R^\dagger\otimes\psi_R$: $(\frac12, \frac12)$ each.
+>
+> In total $(0, 0)\oplus(0, 0)\oplus(\frac12, \frac12)\oplus(\frac12, \frac12)\oplus(1, 0)\oplus(0, 1)$, $1 + 1 + 4 + 4 + 6 = 16$: the scalar $\bar\psi\psi = \psi_R^\dagger\psi_L + \psi_L^\dagger\psi_R$ and the pseudoscalar $\bar\psi\gamma^5\psi$ (the other combination of the two $(0, 0)$'s), the vector and axial vector (combinations of $\psi_L^\dagger\bar\sigma^\mu\psi_L$ and $\psi_R^\dagger\sigma^\mu\psi_R$), and the tensor $\bar\psi\sigma^{\mu\nu}\psi$ in $(1, 0)\oplus(0, 1)$. Because $\bar\psi$ carries the same labels as $\psi$ (the conjugate of $(\frac12, 0)\oplus(0, \frac12)$ is $(0, \frac12)\oplus(\frac12, 0)$), the list coincides with the decomposition of the square of the Dirac representation. The tensor bilinear sits where the field strength does ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]]), so $\bar\psi\sigma^{\mu\nu}\psi\,F_{\mu\nu}$ contains a $(0, 0)$ and the contraction is Lorentz invariant (the Pauli term).
+>
+> *Source: the user's Lorentz-representation review (2026-10-14), §9 ("Dirac bilinears"; there written as the square of the Dirac representation, the labels being the same) · the chiral bookkeeping written here · beyond the course (the Pauli term)*
+
+^rem-c5a-6-3
+
 > [!remark]- Connections
 > - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].
 > - The sixteen bilinears are the Dirac field's analogue of decomposing a two-index tensor into trace, antisymmetric and symmetric parts: $(\frac12, 0)\oplus(0, \frac12)$ tensored with its conjugate gives $(0,0)$ twice, $(\frac12,\frac12)$ twice and $(1,0)\oplus(0,1)$, i.e. S, P, V, A and T — [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].

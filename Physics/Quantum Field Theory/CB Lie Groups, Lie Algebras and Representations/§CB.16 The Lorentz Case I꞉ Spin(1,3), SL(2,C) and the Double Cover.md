@@ -141,7 +141,7 @@ That $SL(2, \mathbb C)$ is connected and simply connected, with the polar decomp
 >
 > Then $\Lambda(\lambda)$ is a proper orthochronous Lorentz transformation, $\Lambda(\lambda) \in SO^+(1,3)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]), $\Lambda(\lambda_1\lambda_2) = \Lambda(\lambda_1)\Lambda(\lambda_2)$, $\Lambda(\mathbb 1) = \mathbb 1$, and $\lambda \mapsto \Lambda(\lambda)$ is continuous: a continuous homomorphism $\pi: SL(2, \mathbb C) \to SO^+(1,3)$.
 >
-> *Source: Yu Exercise 3.7(b)–(c), eqs. (3.261)–(3.264), (d) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", parts (b), (d))*
+> *Source: Yu Exercise 3.7(b)–(c), eqs. (3.261)–(3.264), (d) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", parts (b), (d)) · the user's Lorentz-representation review (2026-10-14), §3 (Principle "One algebra, two connected groups": $A\,(x_\mu\sigma^\mu)A^\dagger = (\Lambda x)_\mu\sigma^\mu$, kernel $\{\pm\mathbb 1\}$)*
 
 ^thm-cb-16-4
 
