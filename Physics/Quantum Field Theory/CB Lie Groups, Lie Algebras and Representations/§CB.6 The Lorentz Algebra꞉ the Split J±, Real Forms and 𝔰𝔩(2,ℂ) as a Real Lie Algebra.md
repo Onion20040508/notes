@@ -98,7 +98,7 @@ The representation-level statement, a pair of commuting angular momenta on a com
 >
 > The combinations $\mathbf J_\pm$ are not in the real Lorentz algebra $\mathfrak{so}(1,3)$ but in its complexification $\mathfrak{so}(1,3)_{\mathbb C}$ ([[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-1|Theorem §CB.6.1]]), and $D(\mathbf J_\pm)$ means the complex-linear extension of $D$; the correspondence is between representations on a *complex* vector space $V$, where $i\,D(\mathbf K)$ is defined ([[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-9|Theorem §CB.4.9]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.4 (Derivation "The rotation–boost algebra and its complex split": "The change of basis is invertible") · PHY 513, Problem Set 5, Problem 1(a) (as the user wrote it) · Yu, Exercise 3.1, eqs. (3.219)–(3.220)*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4 (Derivation "The rotation–boost algebra and its complex split": "The change of basis is invertible") · PHY 513, Problem Set 5, Problem 1(a) (as the user wrote it) · Yu, Exercise 3.1, eqs. (3.219)–(3.220) · the user's Lorentz-representation review (2026-10-14), §5 (Definition "The split and the label")*
 
 ^thm-cb-6-2
 
@@ -137,7 +137,7 @@ The representation-level statement, a pair of commuting angular momenta on a com
 >
 > and the two factors commute: a Lorentz transformation acts as two commuting "rotations" through the complex-conjugate angles $\boldsymbol\theta - i\boldsymbol\eta$ and $\boldsymbol\theta + i\boldsymbol\eta$. A rotation has real, equal angles in both; a boost has imaginary ones.
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.4.2 (Principle "Every Lorentz transformation factorizes", eq. (lorentzfactor); checked numerically there) · PHY 513, Problem Set 5, Problem 1(b) (the substitution, as the user wrote it)*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.2 (Principle "Every Lorentz transformation factorizes", eq. (lorentzfactor); checked numerically there) · PHY 513, Problem Set 5, Problem 1(b) (the substitution, as the user wrote it) · the user's Lorentz-representation review (2026-10-14), §5 (Derivation "The full transformation law: complex rotation angles": the same substitution and its check on the Weyl spinors)*
 
 ^thm-cb-6-3
 
@@ -234,7 +234,7 @@ The representation-level statement, a pair of commuting angular momenta on a com
 > 2. Their conjugations differ ([[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-14|Theorem §CB.4.14]]): that of $\mathfrak{so}(4)$ maps each $\mathfrak{sl}(2, \mathbb C)$ summand to itself, that of $\mathfrak{so}(1,3)$ exchanges the two.
 > 3. $\mathfrak{so}(1,3)$ is simple as a real Lie algebra ([[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-12|Def. §CB.4.12]]). In particular $\mathfrak{so}(1,3) \not\cong \mathfrak{su}(2)\oplus\mathfrak{su}(2) \cong \mathfrak{so}(4)$: the real Lorentz algebra is **not** two copies of the rotation algebra; only its complexification is two copies of the complexified rotation algebra $\mathfrak{sl}(2, \mathbb C)$.
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §§7.4.1, 7.4.6 ("The accurate statement is that the algebra … decomposes") · Woit, §§21.2, 40.2 · Etingof, Lie Groups and Lie Algebras, §9.4, Remark 17.3 · written here (the proof)*
+> *Source: the user's PHY 513 notes, Ch. 7 §§7.4.1, 7.4.6 ("The accurate statement is that the algebra … decomposes") · Woit, §§21.2, 40.2 · Etingof, Lie Groups and Lie Algebras, §9.4, Remark 17.3 · the user's Lorentz-representation review (2026-10-14), §3 (Caution "SL(2,ℂ) is not SU(2) × SU(2)": the two real forms of one complex algebra) · written here (the proof)*
 
 ^thm-cb-6-5
 
@@ -392,6 +392,44 @@ The course's remark on what the split does and does not mean (PHY 513 Lecture 7;
 > Theorem §CB.6.9 transports the algebra of the representations, not unitarity and not the group: a representation of $\mathfrak{so}(4)$ that is unitary for $SU(2)\times SU(2)$ becomes a representation of $\mathfrak{so}(1,3)$ whose boosts are not unitary ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]]). Complete reducibility does survive, which is Weyl's unitary trick ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.7]]): it needs the compact-group theorem of §CB.7, so it is stated there, after that theorem, and not here.
 
 ^rem-cb-6-2
+
+## Joint eigenvectors of J₊₃ and J₋₃: rotation and boost weights
+
+The factorization of Theorem §CB.6.3, read on a single joint eigenvector of the two commuting third components: a rotation about the 3-axis sees the sum of the two eigenvalues, a boost along it the difference. In the representations $(j_+, j_-)$ the joint eigenvectors form a basis (used next in [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]); the course's component form, with the four-vector's tables, is QFT §C3.2 (pointer).
+
+> [!theorem] Theorem §CB.6.10: Rotation and Boost Weights of a Joint Eigenvector
+> Let $D$ be a representation of the Lorentz algebra on a complex vector space $V$, with $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$ as in [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-2|Theorem §CB.6.2]], and let $v \ne 0$ satisfy $J_{+3}v = m_+v$ and $J_{-3}v = m_-v$. Then:
+> 1. $J_3v = (m_+ + m_-)\,v$ and $K_3v = -i(m_+ - m_-)\,v$;
+> 2. for the parameters $\boldsymbol\theta = \theta\hat{\mathbf e}_3$, $\boldsymbol\eta = \eta\hat{\mathbf e}_3$ (rotation by $\theta$ about the 3-axis and boost of rapidity $\eta$ along it, [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-5|Theorem §CB.5.5]]; they commute, $[J_3, K_3] = 0$),
+>
+> $$
+> D(e^{\omega})\,v = e^{-i\theta J_3 - i\eta K_3}\,v = e^{-i\theta(m_+ + m_-)}\,e^{-\eta(m_+ - m_-)}\,v .
+> $$
+>
+> The rotation multiplies $v$ by the phase of its **rotation weight** $m = m_+ + m_-$; the boost multiplies it by the positive number $e^{-\eta(m_+ - m_-)}$ of its **boost weight** $m_+ - m_-$.
+>
+> *Source: the user's Lorentz-representation review (2026-10-14), §5 (Principle "What the eigenvalues mean"; Derivation "The full transformation law: complex rotation angles") · the user's PHY 513 notes, Ch. 7 §7.4.2 (eq. (lorentzfactor), the factorization it rests on) · the proof written here*
+
+^thm-cb-6-10
+
+> [!proof]- Proof
+> **1. The generators on v.** By [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-2|Theorem §CB.6.2]], $J_3 = J_{+3} + J_{-3}$ and $K_3 = -i(J_{+3} - J_{-3})$, so $J_3v = m_+v + m_-v = (m_+ + m_-)v$ and $K_3v = -i(m_+v - m_-v) = -i(m_+ - m_-)v$.
+>
+> **2. Rotation and boost about one axis commute.** $[J_3, K_3] = i\varepsilon_{33k}K_k = 0$ ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; $\varepsilon_{33k} = 0$), so by the argument of step 3 of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation §CB.6.3]] $e^{-i\theta J_3 - i\eta K_3} = e^{-i\theta J_3}e^{-i\eta K_3}$: the single exponential with these parameters is the rotation times the boost, in either order.
+>
+> **3. The exponent on v.** With step 1, $(-i\theta J_3 - i\eta K_3)v = \bigl(-i\theta(m_+ + m_-) + (-i)(-i)\eta(m_+ - m_-)\bigr)v = \bigl(-i\theta(m_+ + m_-) - \eta(m_+ - m_-)\bigr)v \equiv \lambda v$, using $(-i)(-i) = -1$.
+>
+> **4. The exponential on v.** If $Xv = \lambda v$ then $X^nv = \lambda^nv$ for every $n$, so summing the exponential series term by term, $e^Xv = \sum_n\frac{\lambda^n}{n!}v = e^\lambda v$. With $\lambda$ of step 3, $e^\lambda = e^{-i\theta(m_+ + m_-)}e^{-\eta(m_+ - m_-)}$.
+>
+> **5. The same from the factorization.** By [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|Theorem §CB.6.3]], $D(e^\omega) = e^{-i(\theta - i\eta)J_{+3}}e^{-i(\theta + i\eta)J_{-3}}$; on $v$ the factors give $e^{-i(\theta - i\eta)m_+}e^{-i(\theta + i\eta)m_-} = e^{-i\theta m_+ - \eta m_+}\,e^{-i\theta m_- + \eta m_-}$, the same number: the joint eigenvector is "rotated" by the complex angle $\theta - i\eta$ in the $+$ copy and $\theta + i\eta$ in the $-$ copy.
+>
+> **What the proof shows**
+> - A rotation about the axis gives a phase, $|e^{-i\theta m}| = 1$; a boost along it gives a real rescaling, $e^{-\eta(m_+ - m_-)} \ne 1$ unless $m_+ = m_-$. The eigenvalues of $K_3$ are imaginary, which is why no inner product makes the boosts unitary (used next in [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]], Theorem §CB.17.15, step 4).
+> - Two representations with the same rotation weights can differ in their boost weights: the pairs $(m_+ + m_-,\ m_+ - m_-)$ carry more information than the rotation content (the course's example, the four-vector against $(1, 0)\oplus(0, 0)$: QFT §C3.2, pointer).
+
+^pf-cb-6-10
+
+*Uses:* [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-2|Theorem §CB.6.2]], [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|Theorem §CB.6.3]], [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation §CB.6.3]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-5|Theorem §CB.5.5]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]
 
 > [!remark]- Connections
 > - The same algebra, $\mathfrak{so}(4) \cong \mathfrak{su}(2)\oplus\mathfrak{su}(2)$ over $\mathbb R$, is the hidden symmetry of the hydrogen atom ([[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-5|QM Theorem §C8.1.5]]): there the split needs no $i$ (Theorem §CB.6.4), for the Lorentz algebra it does (Theorem §CB.6.5).

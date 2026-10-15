@@ -77,7 +77,7 @@ The course's representations $(j_+, j_-)$ and their irreducibility, and the clas
 > \mathbf J_+ = \mathbf J^{(j_+)}\otimes\mathbb 1, \qquad \mathbf J_- = \mathbb 1\otimes\mathbf J^{(j_-)}, \qquad\text{i.e.}\qquad \mathbf J = \mathbf J^{(j_+)}\otimes\mathbb 1 + \mathbb 1\otimes\mathbf J^{(j_-)}, \quad \mathbf K = -i\bigl(\mathbf J^{(j_+)}\otimes\mathbb 1 - \mathbb 1\otimes\mathbf J^{(j_-)}\bigr) .
 > $$
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.4.3 (Definition "The representation (j₊, j₋)") · PHY 513, Problem Set 5, Problem 1(b) (statement) · PHY 513 Lecture 7, Part C (HW5 clue)*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.3 (Definition "The representation (j₊, j₋)") · PHY 513, Problem Set 5, Problem 1(b) (statement) · PHY 513 Lecture 7, Part C (HW5 clue) · the user's Lorentz-representation review (2026-10-14), §5 (Definition "The split and the label"; Principle "The logic chain", where "$|m_+, m_-\rangle$" denotes a joint eigenvector of $J_{+3}$, $J_{-3}$ in $V$)*
 
 ^def-cb-17-3
 
@@ -181,7 +181,7 @@ The first instance of the classification, by the Casimirs alone (first written i
 >
 > ($J_i$ acting only on the spatial components). Hence the vector representation is equivalent to $(\frac12, \frac12)$ ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|Def. §CB.17.3]]): there is an invertible linear map $T : \mathbb C^4 \to \mathbb C^2\otimes\mathbb C^2$ with $T\,R(X)\,T^{-1} = \rho(X)$ for every $X \in \mathfrak{so}(1,3)$, $R$ the vector representation and $\rho$ the representation $(\frac12, \frac12)$ (an invertible intertwiner, [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]]); one such map is $T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ through $\sum Y_{ab}e_a\otimes e_b \leftrightarrow (Y_{ab})$.
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.3 (Derivation "The spin content of a four-vector": $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$), §7.4.3 ("both $\mathbf J_+^2$ and $\mathbf J_-^2$ equal $\frac34$ … checked numerically") · Yu §4.2.2, eqs. (4.38)–(4.42) · the course's version: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|Theorem §C3.2.2]], the same statement and computation.*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.3 (Derivation "The spin content of a four-vector": $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$), §7.4.3 ("both $\mathbf J_+^2$ and $\mathbf J_-^2$ equal $\frac34$ … checked numerically") · Yu §4.2.2, eqs. (4.38)–(4.42) · the course's version: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|Theorem §C3.2.2]], the same statement and computation · the user's Lorentz-representation review (2026-10-14), §6 (Principles "The vector as a $2\times2$ array" and "Same vector in two bases": its array $C = (c_{ab})$, $C = \begin{pmatrix}A^1 - iA^2 & A^0 - A^3\\ -(A^0 + A^3) & -(A^1 + iA^2)\end{pmatrix}$, is exactly $T(A)$ of the second proof, and its rule $C \mapsto D_+CD_-^{\mathsf T}$ is step 1 there).*
 
 ^thm-cb-17-7
 
@@ -290,7 +290,7 @@ The first instance of the classification, by the Casimirs alone (first written i
 >
 > 3. Hence for $j_+ + j_-$ half-integer, $\Lambda \mapsto D(\Lambda)$ is not a representation of $SO^+(1,3)$: the identity $e^{2\pi M^{12}} = \mathbb 1$ is sent to $-\mathbb 1$, and $D(\Lambda)$ is defined only up to sign, a projective representation; for $j_+ + j_-$ an integer the sign is $+1$.
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.4.4 (Principle "Spin content, and the sign of a 2π rotation", eq. (twopisign)) · PHY 513 Lecture 7, Part B (Weyl spinors are spin ½ under rotations)*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.4 (Principle "Spin content, and the sign of a 2π rotation", eq. (twopisign)) · PHY 513 Lecture 7, Part B (Weyl spinors are spin ½ under rotations) · the user's Lorentz-representation review (2026-10-14), §5 (Principle "Eigenvalue table": the pairs $(m_+, m_-)$, the $J^3$ values $m_+ + m_-$ and the spin content of $(\frac12, 0)$, $(\frac12, \frac12)$, $(1, 0)$, $(1, 1)$)*
 
 ^thm-cb-17-9
 
@@ -303,7 +303,7 @@ The first instance of the classification, by the Casimirs alone (first written i
 >
 > **4. Consistency of the sign.** All spins in step 2 differ from $j_+ + j_-$ by integers, so $(-1)^{2j}$ is the same for each: a representation is either wholly "bosonic" or wholly "fermionic" under rotations.
 >
-> **5. Part 3.** $e^{2\pi M^{12}}$ is the rotation by $2\pi$ about $z$ ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-5|Theorem §CB.5.5]]), the identity of $SO^+(1,3)$. Its parameters are $\omega_{12} = 2\pi$, i.e. $\boldsymbol\theta = 2\pi\hat{\mathbf z}$, $\boldsymbol\eta = 0$, and step 3 assigns it $(-1)^{2(j_+ + j_-)}\mathbb 1$; a representation must send the identity to $\mathbb 1$. Since also $e^{0} = \mathbb 1$ is assigned $\mathbb 1$, the same group element receives both signs: the matrix is fixed only up to sign, a two-valued representation ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^def-cb-10-7|Def. §CB.10.7]]; the topology behind it, [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^rem-cb-10-2|§CB.10, Remark: The same pattern for the Lorentz group]]).
+> **5. Part 3.** $e^{2\pi M^{12}}$ is the rotation by $2\pi$ about $z$ ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-5|Theorem §CB.5.5]]), the identity of $SO^+(1,3)$. Its parameters are $\omega_{12} = 2\pi$, i.e. $\boldsymbol\theta = 2\pi\hat{\mathbf z}$, $\boldsymbol\eta = 0$, and step 3 assigns it $(-1)^{2(j_+ + j_-)}\mathbb 1$; a representation must send the identity to $\mathbb 1$. Since also $e^{0} = \mathbb 1$ is assigned $\mathbb 1$, the same group element receives both signs: the matrix is fixed only up to sign, a two-valued representation ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^def-cb-10-7|Def. §CB.10.7]]; the topology behind it, [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^rem-cb-10-3|§CB.10, Remark: The same pattern for the Lorentz group]]).
 >
 > **What the derivation shows**
 > - The rotation content of a Lorentz representation is ordinary addition of angular momentum; nothing about boosts enters.
@@ -397,7 +397,7 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 >
 > In particular $(\frac12, \frac12)\otimes(\frac12, \frac12) = (1, 1)\oplus(1, 0)\oplus(0, 1)\oplus(0, 0)$, $16 = 9 + 3 + 3 + 1$.
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.4.5 (Derivation "Products: two-index tensors are (1,1)⊕(1,0)⊕(0,1)⊕(0,0)")*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.5 (Derivation "Products: two-index tensors are (1,1)⊕(1,0)⊕(0,1)⊕(0,0)") · the user's Lorentz-representation review (2026-10-14), §8 (Derivation "Route A: Lorentz labels directly", steps 1–4)*
 
 ^thm-cb-17-12
 
@@ -427,9 +427,9 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 *Uses:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-1|Def. §CB.5.1]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|Def. §CB.17.3]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-14|Theorem §CB.10.14]]
 
 > [!remark] Remark: Sums versus products
-> $(\frac12, 0)\oplus(0, \frac12)$ (dimension $2 + 2$) and $(\frac12, \frac12)$ (dimension $2\times2$) are both four-dimensional and must not be confused. Two tests separate them. The Casimirs: on $(\frac12, \frac12)$, $\mathbf J_+^2 = \mathbf J_-^2 = \frac34$ on every vector (Theorem §C3.2.2); on the sum, $\mathbf J_+^2$ is $\frac34$ on one half and $0$ on the other. The $2\pi$ rotation (Theorem §CB.17.9): $+1$ on $(\frac12, \frac12)$, $-1$ on $(\frac12, 0)\oplus(0, \frac12)$. In a sum no vector feels both copies; in an irreducible $(j_+, j_-)$ with $j_\pm \ne 0$ every vector does. The Dirac spinor is the sum, the four-vector the product ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|Theorem §CB.18.5]] applies both tests to the Dirac matrices).
+> $(\frac12, 0)\oplus(0, \frac12)$ (dimension $2 + 2$) and $(\frac12, \frac12)$ (dimension $2\times2$) are both four-dimensional and must not be confused. Two tests separate them. The Casimirs: on $(\frac12, \frac12)$, $\mathbf J_+^2 = \mathbf J_-^2 = \frac34$ on every vector (Theorem §C3.2.2); on the sum, $\mathbf J_+^2$ is $\frac34$ on one half and $0$ on the other. The $2\pi$ rotation (Theorem §CB.17.9): $+1$ on $(\frac12, \frac12)$, $-1$ on $(\frac12, 0)\oplus(0, \frac12)$. In a sum no vector feels both copies; in an irreducible $(j_+, j_-)$ with $j_\pm \ne 0$ every vector does. The Dirac spinor is the sum, the four-vector the product ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|Theorem §CB.18.5]] applies both tests to the Dirac matrices). A third four-dimensional candidate, $(1, 0)\oplus(0, 0)$, passes the $2\pi$ test like $(\frac12, \frac12)$ and has the same rotation content $0\oplus1$; it is separated by the boost weights $m_+ - m_-$ of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-10|Theorem §CB.6.10]] and by complex conjugation (Theorem §CB.17.14 below), worked out for the four-vector in QFT §C3.2 (pointer).
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.4.5 (paragraph "Sums versus products")*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.5 (paragraph "Sums versus products") · the user's Lorentz-representation review (2026-10-14), §7 (Principle "Tests": the third candidate)*
 
 ^rem-cb-17-2
 
@@ -461,7 +461,7 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 > [!theorem] Theorem §CB.17.14: Complex Conjugation Exchanges the Two Copies
 > If $D$ is a representation, so is its complex conjugate $\bar D(\Lambda) = D(\Lambda)^*$, with generators $\bar D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\mu\nu})^*$. The conjugate of $(j_+, j_-)$ is equivalent to $(j_-, j_+)$; for spin $j$ the equivalence is $-\mathbf J^{(j)*} = R\,\mathbf J^{(j)}R^{-1}$ with $R = e^{-i\pi J^{(j)}_2}$, the rotation by $\pi$ about the $2$-axis.
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.4.6 ("Complex conjugation turns θ − iη into θ + iη and does the same exchange") · the derivation written out here*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.6 ("Complex conjugation turns θ − iη into θ + iη and does the same exchange") · the user's Lorentz-representation review (2026-10-14), §3 (Caution "SL(2,ℂ) is not SU(2) × SU(2)", second bullet: $(j_+, j_-)^\ast = (j_-, j_+)$) · the derivation written out here*
 
 ^thm-cb-17-14
 
@@ -496,7 +496,7 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 > - **The 2π rotation sees the parity of 2(j₊ + j₋).** It is $(-1)^{2(j_+ + j_-)}$, which sorts every representation into tensor and spinor parts ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|Theorem §CB.17.11]]); $(\frac12, 0)$ and $(0, \frac12)$ are the smallest spinor representations.
 > - **Parity and conjugation swap the copies.** Parity keeps $\mathbf J$ and reverses $\mathbf K$, so it exchanges $\mathbf J_+ \leftrightarrow \mathbf J_-$ and $(j_+, j_-) \leftrightarrow (j_-, j_+)$ ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|Theorem §CB.17.13]]); complex conjugation does the same ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]]). A spinor field on which parity acts must therefore contain $(\frac12, 0)$ and $(0, \frac12)$ together: the Dirac field is $(\frac12, 0)\oplus(0, \frac12)$ (the user's PHY 513 notes, Ch. 7 §7.4.6, paragraph "Parity and conjugation exchange the two copies"; how parity acts on Dirac fields is QFT C9, planned).
 >
-> *Source: PS §3.1–§3.2, pp. 38–44 · the user's PHY 513 notes, Ch. 7 §7.4 (Derivation "What a label (j₊, j₋) means, worked out"; §7.4.4; §7.4.6) · PHY 513 Lecture 7, Parts B–C · Yu §3.2 · the summary written here*
+> *Source: PS §3.1–§3.2, pp. 38–44 · the user's PHY 513 notes, Ch. 7 §7.4 (Derivation "What a label (j₊, j₋) means, worked out"; §7.4.4; §7.4.6) · PHY 513 Lecture 7, Parts B–C · Yu §3.2 · the user's Lorentz-representation review (2026-10-14), §5 (Principle "What the eigenvalues mean") · the summary written here*
 
 ^rem-cb-17-3
 
@@ -506,7 +506,7 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 > 1. In an inner product with $\mathbf J_\pm$ Hermitian (Theorem §CB.17.6), $\mathbf J$ is Hermitian and $\mathbf K$ anti-Hermitian; a boost $D = e^{-i\boldsymbol\eta\cdot\mathbf K} = e^{-\boldsymbol\eta\cdot(\mathbf J_+ - \mathbf J_-)}$ is Hermitian and positive, and unitary only if $\boldsymbol\eta\cdot\mathbf K = 0$.
 > 2. If a finite-dimensional representation of $SO^+(1,3)$ is unitary for some inner product, it is trivial: $D(\Lambda) = \mathbb 1$ for every $\Lambda$.
 >
-> *Source: the user's PHY 513 notes, Ch. 7 §7.3 (Principle "Hermitian generators do not make boosts unitary", citing Weinberg vol. 1 ch. 2 for the general theorem), §7.4.6 ("$\vec J$ can be taken Hermitian and $\vec K$ is then anti-Hermitian") · the proof for the Lorentz group written out here*
+> *Source: the user's PHY 513 notes, Ch. 7 §7.3 (Principle "Hermitian generators do not make boosts unitary", citing Weinberg vol. 1 ch. 2 for the general theorem), §7.4.6 ("$\vec J$ can be taken Hermitian and $\vec K$ is then anti-Hermitian") · the user's Lorentz-representation review (2026-10-14), §2 (Caution "Hermiticity"), §3 (unitarity does not transfer from $SU(2)\times SU(2)$) · the proof for the Lorentz group written out here*
 
 ^thm-cb-17-15
 
@@ -529,6 +529,17 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 ^der-cb-17-15
 
 *Uses:* [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|Theorem §CB.17.6]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-5|Theorem §CB.5.5]]
+
+> [!caution] Caution: SL(2,ℂ) is not SU(2) × SU(2)
+> The labels $(j_+, j_-)$ are pairs of spins, as for the group $SU(2)\times SU(2)$, and both groups are six-dimensional real Lie groups whose Lie algebras have isomorphic complexifications: $\mathfrak{sl}(2, \mathbb C)_{\mathbb R} \cong \mathfrak{so}(1,3)$ ([[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-8|Theorem §CB.6.8]]) and $\mathfrak{su}(2)\oplus\mathfrak{su}(2) \cong \mathfrak{so}(4)$ ([[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-4|Theorem §CB.6.4]]) are two real forms of $\mathfrak{sl}(2, \mathbb C)\oplus\mathfrak{sl}(2, \mathbb C)$ ([[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-5|Theorem §CB.6.5]]). The groups are not isomorphic, and only part of the representation theory carries over.
+> 1. **Compactness.** $SU(2)\times SU(2)$ is compact, each factor being homeomorphic to the sphere $S^3$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-8|Theorem §CB.10.8]], 1). $SL(2, \mathbb C)$ is homeomorphic to $\mathbb R^3\times SU(2)$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9|Theorem §CB.10.9]]) and is not compact: the boosts $e^{-\eta\sigma^3/2} = \operatorname{diag}(e^{-\eta/2}, e^{\eta/2})$ lie in it for every real $\eta$, and their entries grow without bound, so $SL(2, \mathbb C)$ is not a bounded subset of $M_2(\mathbb C) \cong \mathbb C^4$. A continuous isomorphism would map the compact group onto the other, and continuous images of compact sets are compact; so there is no isomorphism of Lie groups.
+> 2. **What each covers.** $SL(2, \mathbb C)$ is the double cover of $SO^+(1,3)$ ([[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|Theorem §CB.16.9]]). $SU(2)\times SU(2)$ is the double cover of $SO(4)$, the Euclidean group of Theorem §CB.6.4: write $x \in \mathbb R^4$ as $q = x^0\mathbb 1 + ix^k\sigma^k$, so that $\det q = (x^0)^2 + \lvert\mathbf x\rvert^2$, and let $(a, b)$ act by $q \mapsto aqb^{-1}$. This is real-linear on $\mathbb R^4$ and preserves $\det$, hence the Euclidean length; the pairs acting trivially satisfy $aqb^{-1} = q$ for all $q$, which at $q = \mathbb 1$ gives $a = b$ and then $aq = qa$ for all $q$, so $a = b = \pm\mathbb 1$: the kernel is $\{(\mathbb 1, \mathbb 1), (-\mathbb 1, -\mathbb 1)\}$ (that the image is all of $SO(4)$ is quoted, not proved in this chapter). The Lorentz group is the "Wick-rotated" relative: the same complex algebra, the other real form.
+> 3. **What carries over.** The finite-dimensional representations on complex spaces correspond, with their invariant subspaces and intertwiners ([[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-9|Theorem §CB.6.9]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-2|Theorem §CB.17.2]]), which is why both are labelled by pairs of spins, and why the compact group can be used to prove complete reducibility ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|Theorem §CB.17.6]], step 2).
+> 4. **What does not.** *Unitarity:* every finite-dimensional representation of the compact $SU(2)\times SU(2)$ is unitary in some inner product, while no nontrivial one of the Lorentz group is ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]]). *Complex conjugation:* for $SU(2)\times SU(2)$ the conjugate of spin $j_1$ in the first factor and $j_2$ in the second is equivalent to itself ($-\mathbf J^{(j)\ast} \cong \mathbf J^{(j)}$ in each factor, step 5 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation §CB.17.14]]), while for the Lorentz algebra the conjugate of $(j_+, j_-)$ is $(j_-, j_+)$ (Theorem §CB.17.14), because the $i$ in $\mathbf J \pm i\mathbf K$ changes sign. Hence a representation by real matrices must contain $(j_-, j_+)$ together with every $(j_+, j_-)$.
+>
+> *Source: the user's Lorentz-representation review (2026-10-14), §3 (Caution "SL(2,ℂ) is not SU(2) × SU(2)") · the arguments written out here from the cited theorems; the quaternion action $q \mapsto aqb^{-1}$ is the standard description of $SO(4)$*
+
+^cau-cb-17-1
 
 ## Descent to SO⁺(1,3)
 
