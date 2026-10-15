@@ -190,6 +190,18 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 
 *Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-3|Def. §C1a.2.3]]
 
+> [!remark] Remark: Why a derivative has mass dimension one
+> Three readings of $[\partial_\mu] = 1$ (rule 4 of [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]]):
+> 1. *Length is an inverse mass.* With $\hbar = c = 1$ a length $L$ corresponds to the energy $\hbar c/L$, so $[x^\mu] = -1$ ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]); numerically $1\ \text{fm} \leftrightarrow (197.3\ \text{MeV})^{-1}$ ([[§C1a.2 Natural Units and Dimensional Analysis#^cau-c1a-2-1|Caution: One number, several readings]]).
+> 2. *A derivative divides by its variable.* $\partial_\mu = \partial/\partial x^\mu$, so $[\partial_\mu] = -[x^\mu] = 1$; with $\hbar$ and $c$ restored, $\partial_\mu$ has the dimension of an inverse length.
+> 3. *It brings down a momentum.* On a plane wave $\partial_\mu e^{-ip\cdot x} = -ip_\mu e^{-ip\cdot x}$, and the momentum operator is $\hat p_\mu = i\partial_\mu$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]]); a momentum has dimension $1$.
+>
+> This is what fixes the field dimensions: $[d^4x] = -4$ and a dimensionless action give $[\mathcal L] = 4$, then $\frac12\partial_\mu\phi\,\partial^\mu\phi$ gives $2 + 2[\phi] = 4$, $[\phi] = 1$, and $\bar\psi\,i\slashed\partial\,\psi$ gives $1 + 2[\psi] = 4$, $[\psi] = \frac32$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]).
+>
+> *Source: PHY 513 Lecture 2, Part C ("Mass Dimensions") · the user's PHY 513 notes, Ch. 2 §2.4 · user's question (2026-10-14)*
+
+^rem-c1a-2-3
+
 ## Putting the units back
 
 > [!example] Example §C1a.2.1: The Annihilation Photons

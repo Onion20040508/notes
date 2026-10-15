@@ -69,6 +69,23 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 *Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
 
+> [!remark] Remark: When slashes commute
+> The components $a_\mu$, $b_\mu$ are numbers and commute; the matrices $\gamma^\mu$ do not. By [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]],
+>
+> $$
+> \{\slashed a, \slashed b\} = 2a^\mu b_\mu, \qquad [\slashed a, \slashed b] = -2i\sigma^{\mu\nu}a_\mu b_\nu ,
+> $$
+>
+> 1. $\slashed a$ and $\slashed b$ **commute** exactly when $\sigma^{\mu\nu}a_\mu b_\nu = 0$; the six $\sigma^{\mu\nu}$ are linearly independent ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]]), so this means $a_\mu b_\nu - a_\nu b_\mu = 0$, i.e. $b = \lambda a$. In particular $\slashed a\slashed a = a^\mu a_\mu$, which is why $(\slashed p + m)(\slashed p - m) = p^2 - m^2$.
+> 2. They **anticommute** exactly when $a^\mu b_\mu = 0$ (e.g. $\gamma^0$ and $\gamma^i$: orthogonal unit vectors).
+> 3. Otherwise neither: move one past the other with $\slashed p\slashed k = 2p^\mu k_\mu - \slashed k\slashed p$; order matters inside traces and spinor sandwiches.
+> 4. *Complex components.* Nothing changes: the product $a^\mu b_\mu = g_{\mu\nu}a^\mu b^\nu$ is bilinear (no complex conjugation) and symmetric, and $b = \lambda a$ with $\lambda \in \mathbb C$. New is that a complex $a \neq 0$ can have $a^\mu a_\mu = 0$, and then $\slashed a\slashed a = 0$ (nilpotent). The Hermitian product $(a^\mu)^{\ast}b_\mu$ is a different object, with $(a^\mu)^{\ast}b_\mu = \bigl((b^\mu)^{\ast}a_\mu\bigr)^{\ast}$; it enters only through adjoints, $\slashed a^\dagger = \gamma^0\slashed a^{\ast}\gamma^0$ with $\slashed a^{\ast} \equiv \gamma^\mu a_\mu^{\ast}$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]).
+> 5. *Operator components.* If $a_\mu$ is an operator (e.g. $\partial_\mu$) its components no longer commute with what follows: $\slashed\partial(f\psi) = (\slashed\partial f)\psi + f\slashed\partial\psi$.
+>
+> *Source: [[§C5a.11 Gamma-Matrix Technology#^der-c5a-11-1|Derivation §C5a.11.1]], steps 3–5 · user's question (2026-10-14)*
+
+^rem-c5a-11-1
+
 ## Contractions
 
 > [!theorem] Theorem §C5a.11.2: Contraction Identities
@@ -182,7 +199,7 @@ Traces are basis-independent because any two sets of Dirac matrices are related 
 > **What the derivation shows**
 > - Only the Clifford algebra, $\gamma^5$ and cyclicity are used: the traces are basis independent. Tracelessness of $\gamma^\mu$ alone is also [[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], part 2 (with $\gamma^\nu$ in place of $\gamma^5$).
 > - ⚑ By-product: $\operatorname{tr}(\Gamma_A\Gamma_B) = 0$ for distinct elements of the sixteen-element basis and $\ne 0$ for equal ones: the trace is an inner product in which the basis is orthogonal; this is how the basis property is proved ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]]) and how a matrix is expanded in it, $M = \frac14\sum_A\operatorname{tr}(\Gamma_A^{-1}M)\,\Gamma_A$.
-> - Used next: spin sums turn squared amplitudes into traces ([[§C5a.11 Gamma-Matrix Technology#^rem-c5a-11-1|Remark: Why traces]]).
+> - Used next: spin sums turn squared amplitudes into traces ([[§C5a.11 Gamma-Matrix Technology#^rem-c5a-11-3|Remark: Why traces]]).
 
 ^der-c5a-11-3
 
@@ -220,6 +237,15 @@ Traces are basis-independent because any two sets of Dirac matrices are related 
 
 *Uses:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]
 
+> [!remark] Remark: Cyclicity is not reordering
+> $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ holds for any two matrices, and with $A$, $B$ products it moves a whole block from one end to the other: $\operatorname{tr}(ABC) = \operatorname{tr}(BCA) = \operatorname{tr}(CAB)$. It does **not** give $\operatorname{tr}(ABC) = \operatorname{tr}(BAC)$: swapping neighbours inside the product needs the algebra, here $\gamma^\mu\gamma^\nu = -\gamma^\nu\gamma^\mu + 2g^{\mu\nu}$. Example with Pauli matrices: $\operatorname{tr}(\sigma^1\sigma^2\sigma^3) = 2i$ but $\operatorname{tr}(\sigma^2\sigma^1\sigma^3) = -2i$.
+> 1. In $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5)$ each swap of two neighbouring $\gamma$'s gives a sign plus a $g$-term proportional to $\operatorname{tr}(\gamma\gamma\gamma^5) = 0$ ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|Theorem §C5a.11.4]]); so the trace is totally antisymmetric, hence $\propto\varepsilon^{\mu\nu\rho\sigma}$, and the constant $-4i$ is fixed by $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$ ([[§C5a.11 Gamma-Matrix Technology#^der-c5a-11-4|Derivation §C5a.11.4]], step 6).
+> 2. The genuinely cyclic move agrees: $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = \operatorname{tr}(\gamma^\sigma\gamma^5\gamma^\mu\gamma^\nu\gamma^\rho) = -\operatorname{tr}(\gamma^\sigma\gamma^\mu\gamma^\nu\gamma^\rho\gamma^5)$ (one anticommutation of $\gamma^5$), and $\varepsilon^{\sigma\mu\nu\rho} = -\varepsilon^{\mu\nu\rho\sigma}$ (a cyclic shift of four indices is odd).
+>
+> *Source: [[§C5a.11 Gamma-Matrix Technology#^der-c5a-11-4|Derivation §C5a.11.4]] · user's question (2026-10-14)*
+
+^rem-c5a-11-2
+
 > [!caution] Caution: The sign of the ε trace across sources
 > The convention-free statements are $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$ and $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$. With $\varepsilon^{0123} = +1$ (these notes, the course, Yu) they give $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$, $\gamma^{[\mu\nu\rho\sigma]} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ and $\gamma^5 = -\frac i{4!}\varepsilon^{\mu\nu\rho\sigma}\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma$. Peskin–Schroeder state $\varepsilon^{0123} = -1$, and their p. 50 is not uniform: (3.68) and $\gamma^{\mu\nu\rho\sigma} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ hold as printed only for $\varepsilon^{0123} = +1$, while $\gamma^{\mu\nu\rho} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma_\sigma\gamma^5$ holds for their $\varepsilon^{0123} = -1$ (it is Theorem §C5a.11.6 with the sign of $\varepsilon$ flipped). Check: $\gamma^0\gamma^1\gamma^2 = -i\gamma^3\gamma^5$ from the definition of $\gamma^5$. Compare sources through the convention-free forms.
 >
@@ -232,7 +258,7 @@ Traces are basis-independent because any two sets of Dirac matrices are related 
 >
 > *Source: Yu §7.1, eq. (7.47) and the paragraph after it; §8.2.1, eq. (8.43)*
 
-^rem-c5a-11-1
+^rem-c5a-11-3
 
 ### The mathematics used here: the volume element
 
@@ -441,7 +467,7 @@ $\gamma^5$ is the volume element; Theorem §C5a.11.5 is its formula in the cours
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.6 (paragraph "What the Gordon identity says")*
 
-^rem-c5a-11-2
+^rem-c5a-11-4
 
 > [!remark]- ★ Remark: The simplest Fierz identity
 > Products of two bilinears can be rearranged by **Fierz identities**. The simplest rests on the $2\times2$ identity
@@ -454,7 +480,7 @@ $\gamma^5$ is the volume element; Theorem §C5a.11.5 is its formula in the cours
 >
 > *Source: PS §3.4, pp. 51–52, eqs. (3.77)–(3.82)*
 
-^rem-c5a-11-3
+^rem-c5a-11-5
 
 > [!remark]- Connections
 > - The trace is the inner product that makes the sixteen $\Gamma$'s an orthogonal basis; the same idea expands any $2\times2$ matrix in Pauli matrices (the Fierz check above) and underlies the basis theorem — [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
