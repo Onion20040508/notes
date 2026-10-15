@@ -328,10 +328,10 @@ Sketch the kinematic configuration in the laboratory frame and in the cms.
 
 ^ps1-5-a
 
-- [ ] Q1 **[def]** Define the cms.
-- [ ] Q2 Sketch the lab frame: what is at rest, and from which axis are $\theta_3$, $\theta_4$ measured?
-- [ ] Q3 Sketch the cms: which momenta are back to back, and where is $\theta'$?
-- [ ] Q4 **[why]** Why is the cms obtained from the lab by a boost along the beam axis?
+- [x] Q1 **[def]** Define the cms.
+- [x] Q2 Sketch the lab frame: what is at rest, and from which axis are $\theta_3$, $\theta_4$ measured?
+- [x] Q3 Sketch the cms: which momenta are back to back, and where is $\theta'$?
+- [x] Q4 **[why]** Why is the cms obtained from the lab by a boost along the beam axis?
 
 #### (b)
 
@@ -339,9 +339,9 @@ Use invariant scalar products between four-vectors to show that the total cms en
 
 ^ps1-5-b
 
-- [ ] Q1 Write the lab four-momenta $p_1$, $p_2$.
-- [ ] Q2 **[def]** Define $s$. Why does it equal $E_{\rm cms}^2$?
-- [ ] Q3 Expand $(p_1 + p_2)^2 = p_1^2 + p_2^2 + 2p_1\cdot p_2$ and evaluate each term in the lab.
+- [x] Q1 Write the lab four-momenta $p_1$, $p_2$.
+- [x] Q2 **[def]** Define $s$. Why does it equal $E_{\rm cms}^2$?
+- [x] Q3 Expand $(p_1 + p_2)^2 = p_1^2 + p_2^2 + 2p_1\cdot p_2$ and evaluate each term in the lab.
 
 > [!tip]- Hint (b): route
 > **Strategy (K1).** $s = (p_1 + p_2)^2$ in the lab and in the cms.
@@ -363,12 +363,12 @@ Show that the 3-momentum of the beam particle in the cms is $p' = m_2p_{\rm lab}
 
 ^ps1-5-d
 
-- [ ] Q1 **[def]** Write the transformation law of $T_{\mu\nu}$ under $\Lambda$.
-- [ ] Q2 For a boost along $x^1$, which components of $\Lambda$ are trivial, and which components of $T_{\mu\nu}$ are therefore unchanged?
-- [ ] Q3 Write $T_{23}$ explicitly: which components of $\epsilon_{23\rho\sigma}$ survive?
-- [ ] Q4 Evaluate $T_{23}$ in the lab.
-- [ ] Q5 Evaluate $T_{23}$ in the cms and equate.
-- [ ] Q6 **[conv]** How does the sign of $\epsilon_{2301}$ depend on the convention for $\epsilon^{0123}$, and why does it drop out of the result?
+- [x] Q1 **[def]** Write the transformation law of $T_{\mu\nu}$ under $\Lambda$.
+- [x] Q2 For a boost along $x^1$, which components of $\Lambda$ are trivial, and which components of $T_{\mu\nu}$ are therefore unchanged?
+- [x] Q3 Write $T_{23}$ explicitly: which components of $\epsilon_{23\rho\sigma}$ survive?
+- [x] Q4 Evaluate $T_{23}$ in the lab.
+- [x] Q5 Evaluate $T_{23}$ in the cms and equate.
+- [x] Q6 **[conv]** How does the sign of $\epsilon_{2301}$ depend on the convention for $\epsilon^{0123}$, and why does it drop out of the result?
 
 > [!tip]- Hint (d): route
 > **Strategy (K1, K2).** A tensor component transverse to the boost is the same in both frames; evaluate it in each and equate.
@@ -507,11 +507,11 @@ Compute the mass dimension of the dilaton $\tau$ and of the constant $f$.
 
 ^ps2-1-a
 
-- [ ] Q1 **[def]** Define the mass dimension. Why is $[\mathcal L] = 4$ in four dimensions?
-- [ ] Q2 **[why]** Why must $\tau$ be dimensionless?
-- [ ] Q3 Find $[\partial_\mu\tau]$ and $[(\partial\tau)^2]$.
-- [ ] Q4 Solve for $[f]$.
-- [ ] Q5 **[conv]** With the metric $(+,-,-,-)$, does $-f^2e^{-2\tau}(\partial\tau)^2$ have the sign of a standard kinetic term? Does the overall sign affect the field equation of (b)?
+- [x] Q1 **[def]** Define the mass dimension. Why is $[\mathcal L] = 4$ in four dimensions?
+- [x] Q2 **[why]** Why must $\tau$ be dimensionless?
+- [x] Q3 Find $[\partial_\mu\tau]$ and $[(\partial\tau)^2]$.
+- [x] Q4 Solve for $[f]$.
+- [x] Q5 **[conv]** With the metric $(+,-,-,-)$, does $-f^2e^{-2\tau}(\partial\tau)^2$ have the sign of a standard kinetic term? Does the overall sign affect the field equation of (b)?
 
 > [!tip]- Hint (a): route
 > **Strategy (K8).** A field in an exponent is dimensionless; $[\mathcal L] = 4$ fixes the rest.
@@ -522,12 +522,12 @@ Use the Euler–Lagrange equation to show that the EOM for $\tau$ is $\Box\tau =
 
 ^ps2-1-b
 
-- [ ] Q1 **[def]** State the Euler–Lagrange equation for one field.
-- [ ] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\tau)$. Why do both factors of $(\partial\tau)^2$ contribute?
-- [ ] Q3 Take the divergence: where does the product rule act on $e^{-2\tau}$?
-- [ ] Q4 Compute $\partial\mathcal L/\partial\tau$.
-- [ ] Q5 Equate and simplify. Why may you divide by $f^2e^{-2\tau}$?
-- [ ] Q6 **[why]** Two terms proportional to $(\partial\tau)^2$ meet in the final equation. Where does each come from, and with which relative sign?
+- [x] Q1 **[def]** State the Euler–Lagrange equation for one field.
+- [x] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\tau)$. Why do both factors of $(\partial\tau)^2$ contribute?
+- [x] Q3 Take the divergence: where does the product rule act on $e^{-2\tau}$?
+- [x] Q4 Compute $\partial\mathcal L/\partial\tau$.
+- [x] Q5 Equate and simplify. Why may you divide by $f^2e^{-2\tau}$?
+- [x] Q6 **[why]** Two terms proportional to $(\partial\tau)^2$ meet in the final equation. Where does each come from, and with which relative sign?
 
 > [!tip]- Hint (b): route
 > **Strategy (K2).** Rename the dummy, differentiate both factors of $(\partial\tau)^2$, and keep the derivative of the exponential.
@@ -553,11 +553,11 @@ Use the Euler–Lagrange equations to find the equations of motion for $\phi_1$ 
 
 ^ps2-2-a
 
-- [ ] Q1 **[def]** Write the Euler–Lagrange equation for $\phi_i$.
-- [ ] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi_i)$ for a kinetic term without $\frac12$.
-- [ ] Q3 Compute $\partial\mathcal L/\partial\phi_1$ and $\partial\mathcal L/\partial\phi_2$: which potential terms contribute to each?
-- [ ] Q4 Assemble both equations and divide by the common factor. Which coefficient ends up fractional, and why?
-- [ ] Q5 **[why]** Rescale to canonically normalised fields $\phi_i = \chi_i/\sqrt2$. What are the mass and the couplings in the canonical form?
+- [x] Q1 **[def]** Write the Euler–Lagrange equation for $\phi_i$.
+- [x] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi_i)$ for a kinetic term without $\frac12$.
+- [x] Q3 Compute $\partial\mathcal L/\partial\phi_1$ and $\partial\mathcal L/\partial\phi_2$: which potential terms contribute to each?
+- [x] Q4 Assemble both equations and divide by the common factor. Which coefficient ends up fractional, and why?
+- [x] Q5 **[why]** Rescale to canonically normalised fields $\phi_i = \chi_i/\sqrt2$. What are the mass and the couplings in the canonical form?
 
 > [!tip]- Hint (a): route
 > **Strategy (K2).** One Euler–Lagrange equation per field; the kinetic term without $\frac12$ doubles the derivative term.
@@ -568,10 +568,10 @@ Calculate the conjugate momenta for $\phi_1$ and $\phi_2$.
 
 ^ps2-2-b
 
-- [ ] Q1 **[def]** Define the momentum density conjugate to $\phi_i$.
-- [ ] Q2 Write the kinetic terms in time and space components.
-- [ ] Q3 Compute $\pi_1$ and $\pi_2$.
-- [ ] Q4 **[conv]** Compare with the canonical normalisation, where $\pi = \dot\phi$. What changes?
+- [x] Q1 **[def]** Define the momentum density conjugate to $\phi_i$.
+- [x] Q2 Write the kinetic terms in time and space components.
+- [x] Q3 Compute $\pi_1$ and $\pi_2$.
+- [x] Q4 **[conv]** Compare with the canonical normalisation, where $\pi = \dot\phi$. What changes?
 
 #### (c)
 
@@ -579,10 +579,10 @@ Construct the Hamiltonian density $\mathcal H$.
 
 ^ps2-2-c
 
-- [ ] Q1 **[def]** State the Legendre transform for two fields.
-- [ ] Q2 Compute $\mathcal H$ in terms of the velocities.
-- [ ] Q3 Eliminate the velocities in favour of $\pi_1$, $\pi_2$.
-- [ ] Q4 **[why]** Why must the Hamiltonian contain no time derivatives?
+- [x] Q1 **[def]** State the Legendre transform for two fields.
+- [x] Q2 Compute $\mathcal H$ in terms of the velocities.
+- [x] Q3 Eliminate the velocities in favour of $\pi_1$, $\pi_2$.
+- [x] Q4 **[why]** Why must the Hamiltonian contain no time derivatives?
 
 > [!tip]- Hint (c): route
 > **Strategy.** Legendre transform, then eliminate every velocity.
@@ -593,10 +593,10 @@ Compute the mass dimension of $\{m^2, \mu, \lambda\}$ in natural units.
 
 ^ps2-2-d
 
-- [ ] Q1 **[def]** Why is $[\mathcal L] = 4$, and $[\partial_\mu] = 1$?
-- [ ] Q2 Find $[\phi_i]$ from the kinetic term. Does the missing $\frac12$ change it?
-- [ ] Q3 Find $[m^2]$, $[\mu]$, $[\lambda]$.
-- [ ] Q4 **[why]** Classify each term as relevant, marginal or irrelevant.
+- [x] Q1 **[def]** Why is $[\mathcal L] = 4$, and $[\partial_\mu] = 1$?
+- [x] Q2 Find $[\phi_i]$ from the kinetic term. Does the missing $\frac12$ change it?
+- [x] Q3 Find $[m^2]$, $[\mu]$, $[\lambda]$.
+- [x] Q4 **[why]** Classify each term as relevant, marginal or irrelevant.
 
 > [!tip]- Hint (d): route
 > **Strategy (K8).** $[\mathcal L] = 4$; the kinetic term fixes $[\phi_i]$; each term then fixes its coupling.
@@ -623,9 +623,9 @@ Find the Euler–Lagrange equations.
 ^ps2-3-a
 
 - [ ] Q1 **[def]** Why may $\phi$ and $\phi^{\ast}$ be treated as independent variables?
-- [ ] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi)$ and $\partial\mathcal L/\partial(\partial_\mu\phi^{\ast})$. How many factors respond, compared with the real field?
-- [ ] Q3 Compute $\partial V/\partial\phi$ by the chain rule.
-- [ ] Q4 Write both equations.
+- [x] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi)$ and $\partial\mathcal L/\partial(\partial_\mu\phi^{\ast})$. How many factors respond, compared with the real field?
+- [x] Q3 Compute $\partial V/\partial\phi$ by the chain rule.
+- [x] Q4 Write both equations.
 - [ ] Q5 **[why]** Why are the two equations complex conjugates of each other, and does one suffice?
 
 > [!tip]- Hint (a): route
@@ -637,10 +637,10 @@ Determine the canonical momenta and the Hamiltonian.
 
 ^ps2-3-b
 
-- [ ] Q1 **[def]** Define $\pi$ and $\pi^{\ast}$. Which velocity is conjugate to $\phi$?
-- [ ] Q2 Carry out the Legendre transform.
-- [ ] Q3 Eliminate the velocities.
-- [ ] Q4 **[conv]** With $\phi = (\phi_1 + i\phi_2)/\sqrt2$, check that the result is two canonically normalised real fields. Why is there no $\frac12$ in the complex Lagrangian?
+- [x] Q1 **[def]** Define $\pi$ and $\pi^{\ast}$. Which velocity is conjugate to $\phi$?
+- [x] Q2 Carry out the Legendre transform.
+- [x] Q3 Eliminate the velocities.
+- [x] Q4 **[conv]** With $\phi = (\phi_1 + i\phi_2)/\sqrt2$, check that the result is two canonically normalised real fields. Why is there no $\frac12$ in the complex Lagrangian?
 
 #### (c)
 
