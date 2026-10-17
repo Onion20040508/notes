@@ -87,8 +87,8 @@ The notes show the course building each object more than once and then proving t
 **Language**
 - [x] Definition [[§1 Point-Set Topology Review#^def-1-6|§1.6]] Second Countable and Definition [[§1 Point-Set Topology Review#^def-1-8|§1.8]] Hausdorff ($T_2$)
 - [x] Definition [[§1 Point-Set Topology Review#^def-1-5|§1.5]] Basis of Neighborhoods at a Point and Definition [[§1 Point-Set Topology Review#^def-1-7|§1.7]] First Countable at a Point: first countability, the local version of second countability (Proposition [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] Second Countable Implies First Countable; HW1.4)
-- [ ] Definition [[§2 Topological Manifolds#^def-2-1|§2.1]] Locally Euclidean, Definition [[§2 Topological Manifolds#^def-2-2|§2.2]] Topological Manifold, Definition [[§2 Topological Manifolds#^def-2-3|§2.3]] Chart
-- [ ] Definition [[§3 Subspaces and Products#^def-3-1|§3.1]] Subspace Topology, Definition [[§3 Subspaces and Products#^def-3-3|§3.3]] Product Topology
+- [x] Definition [[§2 Topological Manifolds#^def-2-1|§2.1]] Locally Euclidean, Definition [[§2 Topological Manifolds#^def-2-2|§2.2]] Topological Manifold, Definition [[§2 Topological Manifolds#^def-2-3|§2.3]] Chart
+- [x] Definition [[§3 Subspaces and Products#^def-3-1|§3.1]] Subspace Topology, Definition [[§3 Subspaces and Products#^def-3-3|§3.3]] Product Topology
 - [ ] Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]] Quotient Topology, Definition [[§5 Quotient Maps#^def-5-1|§5.1]] Quotient Map, Definition [[§4 Quotient Spaces and Open Maps#^def-4-3|§4.3]] Open Map, Definition [[§4 Quotient Spaces and Open Maps#^def-4-4|§4.4]] Open Equivalence Relation
 - [ ] Definition [[§4 Quotient Spaces and Open Maps#^def-4-5|§4.5]] Saturation and Definition [[§4 Quotient Spaces and Open Maps#^def-4-6|§4.6]] Saturated Set
 - [ ] Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|§11.1]] Topological Group, Definition [[§13 Group Actions and Orbit Spaces#^def-13-2|§13.2]] Continuous Action, Definition [[§13 Group Actions and Orbit Spaces#^def-13-5|§13.5]] Orbit Space, Definition [[§13 Group Actions and Orbit Spaces#^def-13-7|§13.7]] Proper Action
