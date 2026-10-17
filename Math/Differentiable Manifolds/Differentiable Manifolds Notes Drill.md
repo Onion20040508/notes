@@ -25,7 +25,7 @@ The route of each proof in the notes is folded under **Hints**. Results that are
 3. **Homework technique**: filled in by the notes, but its proof uses a strategy the homework drills often (S1, S2, S4, S5, S6, S7, S8, S9, S10, S13, S14, S15).
 4. **Notes only**: optional before the midterm.
 
-Entries: 61 homework, 208 class, 13 homework technique, 16 notes only (Lie-group entries excluded).
+Entries: 61 homework, 210 class, 13 homework technique, 16 notes only (Lie-group entries excluded).
 
 # T1. Topological manifolds, quotients, group actions
 
@@ -2952,6 +2952,21 @@ An open $S \subseteq M$ with the smooth charts of $M$ whose domains lie in $S$, 
 > - Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]], Definition [[§3 Subspaces and Products#^def-3-2|§3.2]]; Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]].
 > - Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] (germs see only a neighbourhood). Q4: Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|§11.5]], Definition [[§38 Fibrations#^def-38-1|§38.1]]; Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]].
 
+#### Transverse submanifolds · P2
+
+Regular submanifolds $S_1,S_2\subseteq N$ intersect transversally, $S_1\pitchfork S_2$, if $T_qS_1+T_qS_2=T_qN$ for every $q\in S_1\cap S_2$, see Definition [[§37 Regular Submanifolds#^def-37-7|§37.7]]. *Source: review session (class), Oct 16.*
+
+^nd-def-37-7
+
+- [ ] Q1 **[def]** State the definition. In which space does the sum $T_qS_1+T_qS_2$ live, and through which maps?
+- [ ] Q2 **[use]** Restate it as a condition on a map transverse to a submanifold (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]).
+- [ ] Q3 **[why]** Why does it hold when $S_1\cap S_2=\emptyset$? Uribe's remark on the notation $S_1\pitchfork S_2$: a statement, not a set.
+- [ ] Q4 **[why]** Two lines in $\mathbb{R}^3$ meeting at a point: transverse or not? Count codimensions.
+
+> [!tip]- Hints: where it lives
+> - Definition [[§37 Regular Submanifolds#^def-37-7|§37.7]], Proposition [[§37 Regular Submanifolds#^prop-37-21|§37.21]], Theorem [[§37 Regular Submanifolds#^thm-37-22|§37.22]].
+> - Q4: $1+1<3$, so the tangent lines cannot span $\mathbb{R}^3$; codimensions $2+2=4>3$ would force an empty intersection.
+
 ### Priority 4 · notes only (optional before the midterm)
 
 #### Normal space · P4
@@ -3050,6 +3065,25 @@ $p\in S=G^{-1}(0)$ is critical for $\Phi|_S$ iff $d\Phi_p=\sum_j\lambda_j\,dG^j|
 ^nd-thm-37-20
 
 ### Priority 2 · stated or done in class
+
+#### Transverse intersections of submanifolds in a manifold · P2
+
+If $S_1,S_2\subseteq N$ are regular submanifolds with $S_1\pitchfork S_2$, then $S_1\cap S_2$ is a regular submanifold, $\operatorname{codim}(S_1\cap S_2)=\operatorname{codim}S_1+\operatorname{codim}S_2$ and $T_q(S_1\cap S_2)=T_qS_1\cap T_qS_2$, see Theorem [[§37 Regular Submanifolds#^thm-37-22|§37.22]]; and $S_1\pitchfork S_2$ iff the inclusion of $S_1$ is transverse to $S_2$, see Proposition [[§37 Regular Submanifolds#^prop-37-21|§37.21]]. *Source: review session (class), Oct 16: Uribe, "the theorem that you proved in homework"; the manifold version is filled in.*
+
+^nd-thm-37-22
+
+- [ ] Q1 **[state]** State the theorem with the definition of $S_1\pitchfork S_2$ (Definition [[§37 Regular Submanifolds#^def-37-7|§37.7]]), including the case $S_1\cap S_2=\emptyset$.
+- [ ] Q2 Why is "$S_1\pitchfork S_2$" the same as "$\iota_1\pitchfork S_2$" (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]])? Identify $\iota_1^{-1}(S_2)$ and $(\iota_1)_{\ast q}(T_qS_1)$.
+- [ ] Q3 Near $q\in S_1\cap S_2$, write each $S_i$ as the zero set of a local defining map $G_i:U_i\to\mathbb{R}^{k_i}$. Where does $G_i$ come from, and why is $\ker(dG_i)_q=T_qS_i$?
+- [ ] Q4 With $G=(G_1,G_2)$, what is $\ker dG_q$? Using the dimension formula for $K_1+K_2$, show: $T_qS_1+T_qS_2=T_qN$ iff $dG_q$ is onto.
+- [ ] Q5 Which theorem finishes, and why does "regular submanifold" being a local condition let you pass from $W\cap S_1\cap S_2$ to $S_1\cap S_2$?
+- [ ] Q6 **[why]** A surface and a curve in $\mathbb{R}^3$ meeting transversally: what is the intersection? Two surfaces tangent at a point: which conclusion fails? (Compare Example [[§26 Transversality#^ex-26-1|§26.1]].)
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: S5 (regular value theorem on a well-chosen map), S7 (linear algebra closes the gap); the Euclidean case is Proposition [[§26 Transversality#^prop-26-4|§26.4]].
+> - $G_i$ = the last $k_i$ coordinates of a slice chart (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); $T_qS_i$ via Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]].
+> - $\dim(K_1\cap K_2)=2n-k_1-k_2-\dim(K_1+K_2)$, so the sum is everything iff $\dim\ker dG_q=n-k_1-k_2$ iff rank $k_1+k_2$.
+> - Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]] on $W=U_1\cap U_2$.
 
 #### Two observations on adapted charts · P2
 

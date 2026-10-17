@@ -157,6 +157,11 @@ This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve wit
 
 ^rem-31-2
 
+> [!remark] Remark: Review Session: The Two Definitions of $T_pM$
+> *Review session, Oct 16, in answer to “we have a lot of characterizations of the tangent space, like derivations and curves.”* “Those are the only two” — the ambient one is “more or less the same as curves.” For a regular submanifold $M \subseteq \mathbb{R}^N$, the ambient tangent space is $\{\, \dot{\tilde\gamma}(0) : \gamma : (-\varepsilon, \varepsilon) \to M,\ \gamma(0) = p \,\}$, where $\tilde\gamma = \iota \circ \gamma$ is $\gamma$ regarded as a curve in $\mathbb{R}^N$: the derivative $\dot{\tilde\gamma}(0)$ “uses the vector space structure of the ambient space,” through the difference quotient. “Ambient” is “our terminology … used in this classroom, nowhere else in the world. But I find it … pedagogically useful.” On an abstract manifold, $T_pM$ is the space of derivations of germs. The bridge is the homework proposition: a curve $\gamma$ through $p$ defines a derivation, $D_\gamma[f] = \frac{d}{dt}\big|_{0} f(\gamma(t))$, the $\dot\gamma(0)$ of the lecture (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]]), and every derivation arises this way (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]]); this is what identifies the two for $M \subseteq \mathbb{R}^N$ (Remark [[§31 Tangent Vectors as Velocities of Curves#^rem-31-2|remark]]). Lee's order of definitions differs: “everybody does it a little bit differently.”
+
+^rem-31-3
+
 > [!remark]- Connections
 > - The two tangent spaces side by side: [[§43 Geometric and Abstract Manifolds#Tangent Vectors|§43, Tangent Vectors]].
 > - The identification for a regular level set: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]].

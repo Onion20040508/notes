@@ -54,7 +54,7 @@ $$
 
 ![[§34 The Cotangent Space from Germs#^thm-34-4]]
 
-**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-6|Proposition §34.6]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-3|Remark: One Symbol for Two Pullbacks]] explains.
+**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-6|Proposition §34.6]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-4|Remark: One Symbol for Two Pullbacks]] explains.
 
 ![[§34 The Cotangent Space from Germs#^def-34-3]]
 

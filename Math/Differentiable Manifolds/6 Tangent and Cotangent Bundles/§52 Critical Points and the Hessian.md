@@ -692,6 +692,19 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 
 *Uses:* [[§52 Critical Points and the Hessian#^def-52-1|Def. §52.1]], [[§51 One-Forms#^prop-51-1|§51.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]
 
+> [!remark] Remark: Review Session: Why the Hessian Needs a Critical Point
+> *Review session, Oct 16, in answer to “is there a careful definition of the Hessian?” — “That's a beautiful question.”* The fact: for $f : M \to \mathbb{R}$, $\operatorname{Hess}_p f$ is only *intrinsically* defined if $df_p = 0$. If $df_p = 0$ it is a well-defined quadratic form, a symmetric bilinear form on $T_pM$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]]); if $df_p \neq 0$ it is not: “of course you can write everything in coordinates and take the Hessian in coordinates. But … when you change coordinates, the new Hessian would involve first derivatives of $f$. So it doesn't transform as a quadratic form” (Proposition [[§52 Critical Points and the Hessian#^prop-52-2|§52.2]], Example [[§52 Critical Points and the Hessian#^ex-52-1|§52.1]]).
+>
+> “And there's a beautiful geometric reason,” in $T^{\ast}M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^{\ast}M$ splits canonically into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^{\ast}M$ itself (Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]]): $T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus j_p(T_p^{\ast}M)$. “This is the crucial thing that allows you to identify the quadratic form”: push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{\ast p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]). *(Filled in.)* Away from the zero section the vertical space is still canonical, but there is no canonical complement to project along, so “the vertical component of $(s_f)_{\ast p}v$” depends on the chart — the geometric counterpart of the first-derivative term in the transformation law. Uribe ran out of time here; the full argument is the one already in these notes.
+
+^rem-52-4
+
+![[m591-52-1.svg]]
+
+The picture from the review session. At $(p, 0)$ the tangent vector $(s_f)_{\ast p}v$ to $S_f$ splits into a part along the zero section, $\zeta_{\ast p}v$, and a vertical part in the fibre $T_p^{\ast}M$; the vertical part is $\operatorname{Hess}_p f(v, \cdot)$.
+
+**Transcription note (review session).** Page 52 of the handwritten notes writes the key identification as “$T_pZ \cong T_p^{\ast}M$”. The tangent space of the zero section is $T_p\mathcal{Z} \cong T_pM$; it is the *vertical* space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^{\ast}M)/T_p\mathcal{Z}$, that is canonically $T_p^{\ast}M$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]]).
+
 ## Critical Points of Morse Functions
 
 > [!theorem] Corollary §52.11: Critical Points of a Morse Function Are Isolated

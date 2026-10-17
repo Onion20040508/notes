@@ -977,3 +977,70 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 > *(Not from the assignment.)* The conormal spaces $N_pS$, $p \in S$, can be put together, as the cotangent spaces are put together in the cotangent bundle $T^{\ast}M$, into the *conormal bundle* $N^{\ast}S \subseteq T^{\ast}M$. This is done later, in [[§52 Critical Points and the Hessian|§52]], once $T^{\ast}M$ and its standard coordinates are available (Definition [[§52 Critical Points and the Hessian#^def-52-6|§52.6]]). There $N^{\ast}S$ is shown to be a regular submanifold of $T^{\ast}M$ of dimension $m$, whatever the codimension of $S$, cut out in the standard coordinates over an adapted chart by the description of $N_pS$ in Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]](1) (Proposition [[§52 Critical Points and the Hessian#^prop-52-6|§52.6]]); the critical points of a restriction $\Phi|_S$ are where the graph of $d\Phi$ meets it, by Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]](3) (Corollary [[§52 Critical Points and the Hessian#^cor-52-7|§52.7]]); and for $S = G^{-1}(0)$ the Lagrange multipliers of Theorem [[§37 Regular Submanifolds#^thm-37-20|§37.20]] are the coordinates of $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in the basis $dG^1|_p, \ldots, dG^k|_p$ of Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]].
 
 ^rem-37-5
+
+## Transverse Submanifolds
+
+*Review session, Oct 16 (and Uribe's email before it). The homework defined a map transverse to a submanifold (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]). “We can also talk about two submanifolds being transverse to each other, which was the original definition historically, and then it was generalized.” The Euclidean version is Definition [[§26 Transversality#^def-26-3|§26.3]].*
+
+> [!definition] Definition §37.7: Transverse Submanifolds
+> Let $S_1, S_2 \subseteq N$ be regular submanifolds. $S_1$ **intersects $S_2$ transversally**, written $S_1 \pitchfork S_2$, if
+>
+> $$
+> T_qS_1 + T_qS_2 = T_qN \qquad \text{for every } q \in S_1 \cap S_2 ,
+> $$
+>
+> with $T_qS_i \subseteq T_qN$ through the inclusions (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]). The condition holds vacuously if $S_1 \cap S_2 = \varnothing$.
+>
+> *Lee: Ch. 6, Transversality*
+
+^def-37-7
+
+On the notation: “I don't like it … to me it's very confusing, because intersection to me is an operation … This is a statement, not a set.”
+
+> [!theorem] Proposition §37.21: Transverse Submanifolds and Transverse Maps
+> $S_1 \pitchfork S_2$ if and only if the inclusion $\iota_1 : S_1 \hookrightarrow N$ is transverse to $S_2$ (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]).
+
+^prop-37-21
+
+> [!proof]+ Proof
+> *(Stated in the review session: “if you look at the definitions, it's the same”; written out.)* $\iota_1^{-1}(S_2) = S_1 \cap S_2$, and for $q$ in it, $(\iota_1)_{\ast q}(T_qS_1)$ is $T_qS_1$ regarded as a subspace of $T_qN$. So the condition of Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]] for $F = \iota_1$ at $q$ is $T_qS_1 + T_qS_2 = T_qN$.
+
+^pf-37-21
+
+*Uses:* [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]]
+
+> [!theorem] Theorem §37.22: Transverse Intersections in a Manifold
+> If $S_1 \pitchfork S_2$ in $N$, then $S_1 \cap S_2$ is a regular submanifold of $N$, with
+>
+> $$
+> \operatorname{codim}(S_1 \cap S_2) = \operatorname{codim} S_1 + \operatorname{codim} S_2, \qquad T_q(S_1 \cap S_2) = T_qS_1 \cap T_qS_2 .
+> $$
+>
+> *Lee: Theorem 6.30(b)*
+
+^thm-37-22
+
+> [!proof]+ Proof
+> *(The theorem “that you proved in homework”, first in the Euclidean case, Proposition [[§26 Transversality#^prop-26-4|§26.4]]; “again, that's just a linear algebra thing.” The manifold version is filled in, along the Euclidean proof.)* Let $n = \dim N$, $k_i = \operatorname{codim} S_i$, and $q \in S_1 \cap S_2$.
+>
+> *Local defining functions.* Take a slice chart $(U_i, \varphi_i)$ for $S_i$ at $q$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), so that $U_i \cap S_i = G_i^{-1}(0)$, where $G_i : U_i \to \mathbb{R}^{k_i}$ is the last $k_i$ coordinates of $\varphi_i$. $G_i$ is a submersion (a coordinate projection composed with a chart), so by the regular value theorem (Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]) $T_qS_i = \ker (dG_i)_q$, a subspace of $T_qN$ of dimension $n - k_i$.
+>
+> *Transversality is a regular value condition.* On $W = U_1 \cap U_2$ put $G = (G_1, G_2) : W \to \mathbb{R}^{k_1 + k_2}$, so that $W \cap S_1 \cap S_2 = G^{-1}(0)$ and $\ker dG_q = K_1 \cap K_2$, with $K_i = \ker (dG_i)_q = T_qS_i$. By the dimension formula for subspaces,
+>
+> $$
+> \dim(K_1 \cap K_2) = \dim K_1 + \dim K_2 - \dim(K_1 + K_2) = 2n - k_1 - k_2 - \dim(K_1 + K_2).
+> $$
+>
+> So $K_1 + K_2 = T_qN$ if and only if $\dim \ker dG_q = n - k_1 - k_2$, if and only if $dG_q$ has rank $k_1 + k_2$, that is, is onto. Since $S_1 \pitchfork S_2$, this holds at every point of $G^{-1}(0)$: $0$ is a regular value of $G$.
+>
+> *Conclusion.* By Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], $G^{-1}(0) = W \cap S_1 \cap S_2$ is a regular submanifold of $W$ of codimension $k_1 + k_2$, with $T_q(S_1 \cap S_2) = \ker dG_q = T_qS_1 \cap T_qS_2$. Being a regular submanifold is a local condition (slice charts at each point), and $W$ is open in $N$; $q$ was arbitrary, so $S_1 \cap S_2$ is a regular submanifold of $N$ of codimension $k_1 + k_2$.
+
+^pf-37-22
+
+*Uses:* [[§26 Transversality#^prop-26-4|§26.4]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]]
+
+*The picture*, asked for by a student (“wonderful picture … great question, I haven't drawn enough pictures”). In $\mathbb{R}^3$, if $S_1$ is a surface and $S_2$ a curve, at a point of intersection the tangent plane and the tangent line must add up to all of $\mathbb{R}^3$, so the curve “has to come across like that … it has to pierce” the surface. If both are surfaces, two planes add up to $\mathbb{R}^3$ exactly when they are different, and then they meet in a line: the surfaces cut through each other along a curve. “It's really a local picture … just the vector space picture.”
+
+![[m591-37-1.svg]]
+
+Codimensions add: $1 + 2 = 3$ for a surface and a curve, a point; $1 + 1 = 2$ for two surfaces, a curve. In the Morse problem of the homework the same thing happened in $T^{\ast}M$: the section $s_f = df$ “was actually an embedding because it was a section, so it's the same as intersecting the image of the embedding with the zero section” (Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]]), and there $m + m = 2m$, the full dimension: the intersection is a set of isolated points.

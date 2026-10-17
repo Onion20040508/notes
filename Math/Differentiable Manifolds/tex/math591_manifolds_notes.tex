@@ -209,8 +209,8 @@
 \fbox{\parbox{0.85\textwidth}{
 \textbf{Instructor:} A.\ Uribe. \quad \textbf{Text:} Lee, \emph{Introduction to Smooth Manifolds} (2nd ed.). \\
 \textbf{Office hours:} Thu 1:00--3:00 PM, 4062 East Hall; Fri 12:00--1:00 PM, hybrid (permanently, from Lecture~19; previously 1:00--2:00 on Zoom --- if that time does not work, let Uribe know); Uribe is not available during fall break, and a meeting on the Wednesday of the exam can be arranged by email; also $\sim$20 min after each class. \\
-\textbf{Midterm:} Wednesday, October 21, 6:00--8:00 PM (written as a 90-minute exam; room TBA). Covers everything through commutators of vector fields (Uribe's email of Oct 14): vector fields as sections of $TM$ and as operators on functions, the commutator of two vector fields (``make sure you know how to compute it''), and the notion and properties of $F$-related fields --- finished in Lecture~17 (Fri Oct 9). ``Nothing about Lie groups is included.'' Format: definitions, true/false, short proofs (identical or close to homework). Exam booklets provided. \\
-\textbf{Review session:} Friday, October 16: previous exams (sent by email) and your questions; topics or old exam questions can be emailed to Uribe in advance. \\
+\textbf{Midterm:} Wednesday, October 21, 6:00--8:00 PM; 100 minutes (review session, Oct 16); bring only writing instruments; room TBA, details by email. Covers everything through commutators of vector fields (Uribe's email of Oct 14): vector fields as sections of $TM$ and as operators on functions, the commutator of two vector fields (``make sure you know how to compute it''), and the notion and properties of $F$-related fields --- finished in Lecture~17 (Fri Oct 9). ``Nothing about Lie groups is included.'' Format: definitions, true/false, short proofs (identical or close to homework). Exam booklets provided. \\
+\textbf{Review session:} Friday, October 16: previous exams (sent by email) and your questions; topics or old exam questions can be emailed to Uribe in advance. Held as questions from the class: the standard atlases of $TM$ and $T^*M$ (\ref{sub:ctb-lecture15}), transversality of submanifolds (\ref{sub:transverse-submanifolds}), open relations and orbit relations (\ref{sec:open-quotients}), the two definitions of the tangent space, and the Hessian (\ref{sub:hessian-critical}). ``Everything that is contained in the assignments is fair game.'' \\
 \textbf{Final:} Thursday, December 17, 10:30 AM--12:30 PM. \\
 \textbf{Homework:} due Sunday midnight, uploaded to Canvas as a legible PDF (typed or handwritten). \\
 % Week of Sep 7 only: in-person OH moved to Wednesday (ending 4 PM); Friday OH on Zoom.
@@ -7861,6 +7861,10 @@ T^{\geo}_pM \;\cong\; T_pM, \qquad \gamma'(0) \longleftrightarrow D_\gamma ,
 and \emph{from now on the course always makes this identification, ``without further notice''}: ``if you're working with submanifolds of $\mathbb{R}^n$, you can use a geometric tangent space in your computations, and we know that that agrees with the abstract notion.'' For a regular level set the precise statement is Theorem~\ref{thm:ambient-abstract}. Earlier chapters keep the notations $T^{\geo}_pM$ and $T_pM$ apart, and are left as they are.
 \end{rembox}
 
+\begin{rembox}[Review Session: The Two Definitions of $T_pM$]\label{rem:review-tangent-definitions}
+\textit{Review session, Oct 16, in answer to ``we have a lot of characterizations of the tangent space, like derivations and curves.''} ``Those are the only two'' --- the ambient one is ``more or less the same as curves.'' For a regular submanifold $M \subseteq \mathbb{R}^N$, the ambient tangent space is $\{\, \dot{\tilde\gamma}(0) : \gamma : (-\varepsilon, \varepsilon) \to M,\ \gamma(0) = p \,\}$, where $\tilde\gamma = \iota \circ \gamma$ is $\gamma$ regarded as a curve in $\mathbb{R}^N$: the derivative $\dot{\tilde\gamma}(0)$ ``uses the vector space structure of the ambient space,'' through the difference quotient. ``Ambient'' is ``our terminology \ldots\ used in this classroom, nowhere else in the world. But I find it \ldots\ pedagogically useful.'' On an abstract manifold, $T_pM$ is the space of derivations of germs. The bridge is the homework proposition: a curve $\gamma$ through $p$ defines a derivation, $D_\gamma[f] = \frac{d}{dt}\big|_{0} f(\gamma(t))$, the $\dot\gamma(0)$ of the lecture (Definition~\ref{def:velocity}), and every derivation arises this way (Theorem~\ref{thm:every-vector-velocity}); this is what identifies the two for $M \subseteq \mathbb{R}^N$ (Remark~\ref{rem:identify-tangent-spaces}). Lee's order of definitions differs: ``everybody does it a little bit differently.''
+\end{rembox}
+
 \subsection{Tangent Spaces of Products}\label{sub:tangent-products}
 
 \textit{Lecture 11. ``There is a natural isomorphism'' between the tangent space of a product and the direct sum of the tangent spaces of the factors --- ``natural meaning coordinate-free.'' Uribe gave three ways to see it: by the inclusions of the factors, by curves, and in coordinates. He added that this part of the course is, in his experience, ``the most abstract, somehow the hardest part'', and that while physicists tend to favour coordinates and pure mathematicians abstract settings, ``you need both.''}
@@ -8520,6 +8524,10 @@ because the differential of a constant function $c$ is $0$: by Definition~\ref{d
 Lecture~15 came back to this theorem: ``the cotangent space is, in a way, very extremely natural from the point of view of functions.'' The tangent space needed derivations; the cotangent space needs only functions --- germs vanishing at $p$, modulo those vanishing to second order. This is one reason why the cotangent bundle will turn out to carry structure that the tangent bundle does not.
 \end{rembox}
 
+\begin{rembox}[Review Session: The More Natural Space]\label{rem:review-cotangent-natural}
+\textit{Review session, Oct 16, recalling this homework problem.} $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^*M \cong I_p/I_p^2$ naturally: ``nothing with curves, nothing with ambient spaces \ldots\ very, very general and very quick.'' Uribe recalled a professor of his at MIT: ``this tells you that the cotangent space really is the more natural space. \ldots\ It has a one-page definition, and it has this symplectic structure that is \ldots\ God-given. It's just sitting there'' --- even though we are less used to working with the dual object.
+\end{rembox}
+
 \begin{center}
 \begin{tikzcd}[row sep=1.4em, column sep=3.6em]
 I_p/I_p^2 \arrow[r, "\Phi", "\cong"'] & T_p^*M \arrow[r, dash, "\text{dual to}"] & T_pM \\
@@ -8632,7 +8640,6 @@ The two linear maps $\Phi_p \circ \bar F_p^*$ and $F_p^* \circ \Phi_q$ agree at 
 \end{proof}
 
 So in the germ picture no dual map is needed: a covector at $q$ is a class of germs vanishing at $q$, and it pulls back by composing with $F$, exactly as germs do. One operation, $[g] \mapsto [g \circ F]$, moves everything: tangent vectors act on germs, so they are pushed \emph{forward} by precomposing with it; covectors are classes of germs, so they are pulled \emph{back} by it. ``Functions pull back by composition'' (Lecture~15) covers covectors too.
-
 
 \chapter{Maps of Constant Rank and Fibrations}
 
@@ -10076,6 +10083,82 @@ With $G(p) = 0$ from (2) this is the system stated: $m$ scalar equations from th
 \end{rembox}
 
 
+
+% ============================================================================
+% Review session (Fri Oct 16, 2026): transversality of two submanifolds
+% ============================================================================
+
+\subsection{Transverse Submanifolds}\label{sub:transverse-submanifolds}
+
+\textit{Review session, Oct 16 (and Uribe's email before it). The homework defined a map transverse to a submanifold (Definition~\ref{def:transverse-submanifold}). ``We can also talk about two submanifolds being transverse to each other, which was the original definition historically, and then it was generalized.'' The Euclidean version is Definition~\ref{def:transverse-intersection}.}
+
+\begin{defbox}[Transverse Submanifolds]\deflabel{def:transverse-submanifolds}
+Let $S_1, S_2 \subseteq N$ be regular submanifolds. $S_1$ \textbf{intersects $S_2$ transversally}, written $S_1 \pitchfork S_2$, if
+\[
+T_qS_1 + T_qS_2 = T_qN \qquad \text{for every } q \in S_1 \cap S_2 ,
+\]
+with $T_qS_i \subseteq T_qN$ through the inclusions (Proposition~\ref{prop:submanifold-tangent}). The condition holds vacuously if $S_1 \cap S_2 = \varnothing$.
+\leeref{Ch.~6, \emph{Transversality}}
+\end{defbox}
+
+On the notation: ``I don't like it \ldots\ to me it's very confusing, because intersection to me is an operation \ldots\ This is a statement, not a set.''
+
+\begin{propbox}[Transverse Submanifolds and Transverse Maps]\thmlabel{prop:transverse-submanifolds-maps}
+$S_1 \pitchfork S_2$ if and only if the inclusion $\iota_1 : S_1 \hookrightarrow N$ is transverse to $S_2$ (Definition~\ref{def:transverse-submanifold}).
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in the review session: ``if you look at the definitions, it's the same''; written out.)} $\iota_1^{-1}(S_2) = S_1 \cap S_2$, and for $q$ in it, $(\iota_1)_{*q}(T_qS_1)$ is $T_qS_1$ regarded as a subspace of $T_qN$. So the condition of Definition~\ref{def:transverse-submanifold} for $F = \iota_1$ at $q$ is $T_qS_1 + T_qS_2 = T_qN$.
+\end{proof}
+
+\begin{thmbox}[Transverse Intersections in a Manifold]\thmlabel{thm:transverse-intersection-manifold}
+If $S_1 \pitchfork S_2$ in $N$, then $S_1 \cap S_2$ is a regular submanifold of $N$, with
+\[
+\operatorname{codim}(S_1 \cap S_2) = \operatorname{codim} S_1 + \operatorname{codim} S_2, \qquad T_q(S_1 \cap S_2) = T_qS_1 \cap T_qS_2 .
+\]
+\leeref{Theorem 6.30(b)}
+\end{thmbox}
+
+\begin{proof}
+\textit{(The theorem ``that you proved in homework'', first in the Euclidean case, Proposition~\ref{prop:transverse-intersection}; ``again, that's just a linear algebra thing.'' The manifold version is filled in, along the Euclidean proof.)} Let $n = \dim N$, $k_i = \operatorname{codim} S_i$, and $q \in S_1 \cap S_2$.
+
+\emph{Local defining functions.} Take a slice chart $(U_i, \varphi_i)$ for $S_i$ at $q$ (Definition~\ref{def:submanifold}), so that $U_i \cap S_i = G_i^{-1}(0)$, where $G_i : U_i \to \mathbb{R}^{k_i}$ is the last $k_i$ coordinates of $\varphi_i$. $G_i$ is a submersion (a coordinate projection composed with a chart), so by the regular value theorem (Theorem~\ref{thm:rvt-manifolds}) $T_qS_i = \ker (dG_i)_q$, a subspace of $T_qN$ of dimension $n - k_i$.
+
+\emph{Transversality is a regular value condition.} On $W = U_1 \cap U_2$ put $G = (G_1, G_2) : W \to \mathbb{R}^{k_1 + k_2}$, so that $W \cap S_1 \cap S_2 = G^{-1}(0)$ and $\ker dG_q = K_1 \cap K_2$, with $K_i = \ker (dG_i)_q = T_qS_i$. By the dimension formula for subspaces,
+\[
+\dim(K_1 \cap K_2) = \dim K_1 + \dim K_2 - \dim(K_1 + K_2) = 2n - k_1 - k_2 - \dim(K_1 + K_2).
+\]
+So $K_1 + K_2 = T_qN$ if and only if $\dim \ker dG_q = n - k_1 - k_2$, if and only if $dG_q$ has rank $k_1 + k_2$, that is, is onto. Since $S_1 \pitchfork S_2$, this holds at every point of $G^{-1}(0)$: $0$ is a regular value of $G$.
+
+\emph{Conclusion.} By Theorem~\ref{thm:rvt-manifolds}, $G^{-1}(0) = W \cap S_1 \cap S_2$ is a regular submanifold of $W$ of codimension $k_1 + k_2$, with $T_q(S_1 \cap S_2) = \ker dG_q = T_qS_1 \cap T_qS_2$. Being a regular submanifold is a local condition (slice charts at each point), and $W$ is open in $N$; $q$ was arbitrary, so $S_1 \cap S_2$ is a regular submanifold of $N$ of codimension $k_1 + k_2$.
+\end{proof}
+
+\textit{The picture}, asked for by a student (``wonderful picture \ldots\ great question, I haven't drawn enough pictures''). In $\mathbb{R}^3$, if $S_1$ is a surface and $S_2$ a curve, at a point of intersection the tangent plane and the tangent line must add up to all of $\mathbb{R}^3$, so the curve ``has to come across like that \ldots\ it has to pierce'' the surface. If both are surfaces, two planes add up to $\mathbb{R}^3$ exactly when they are different, and then they meet in a line: the surfaces cut through each other along a curve. ``It's really a local picture \ldots\ just the vector space picture.''
+
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+\fill[red!7] (0,0.3) -- (2.6,0.0) -- (3.2,1.4) -- (0.6,1.7) -- cycle;
+\draw[red!70!black, thick] (0,0.3) -- (2.6,0.0) -- (3.2,1.4) -- (0.6,1.7) -- cycle;
+\node[red!70!black, font=\scriptsize] at (0.45,0.55) {$S_1$};
+\draw[blue!70!black, thick, dashed] (1.6,0.85) .. controls (1.5,0.45) and (1.35,0.1) .. (1.25,-0.15);
+\draw[blue!70!black, thick] (1.25,-0.15) .. controls (1.15,-0.45) and (1.05,-0.7) .. (0.95,-0.9);
+\draw[blue!70!black, thick] (1.6,0.85) .. controls (1.75,1.45) and (1.95,2.0) .. (2.25,2.45);
+\node[blue!70!black, font=\scriptsize] at (2.5,2.35) {$S_2$};
+\fill (1.6,0.85) circle (1.6pt) node[right, font=\scriptsize, xshift=1pt] {$q$};
+\node[font=\scriptsize, align=center] at (1.6,-1.35) {surface and curve in $\mathbb{R}^3$:\\ codim $1 + 2 = 3$, a point};
+\fill[blue!8] (5.3,-0.7) -- (7.0,-0.2) -- (7.0,2.3) -- (5.3,1.8) -- cycle;
+\draw[blue!70!black, thick] (5.3,-0.7) -- (7.0,-0.2) -- (7.0,2.3) -- (5.3,1.8) -- cycle;
+\fill[red!7, opacity=0.8] (4.5,0.3) -- (7.1,0.0) -- (7.7,1.4) -- (5.1,1.7) -- cycle;
+\draw[red!70!black, thick] (4.5,0.3) -- (7.1,0.0) -- (7.7,1.4) -- (5.1,1.7) -- cycle;
+\draw[orange!85!black, very thick] (5.3,0.75) -- (7.0,0.95);
+\node[red!70!black, font=\scriptsize] at (7.95,1.35) {$S_1$};
+\node[blue!70!black, font=\scriptsize] at (7.25,2.3) {$S_2$};
+\node[orange!85!black, font=\scriptsize, anchor=west] at (7.75,0.75) {$S_1 \cap S_2$};
+\node[font=\scriptsize, align=center] at (6.1,-1.35) {two surfaces in $\mathbb{R}^3$:\\ codim $1 + 1 = 2$, a curve};
+\end{tikzpicture}
+\end{center}
+
+Codimensions add: $1 + 2 = 3$ for a surface and a curve, a point; $1 + 1 = 2$ for two surfaces, a curve. In the Morse problem of the homework the same thing happened in $T^*M$: the section $s_f = df$ ``was actually an embedding because it was a section, so it's the same as intersecting the image of the embedding with the zero section'' (Theorem~\ref{thm:morse-transverse}), and there $m + m = 2m$, the full dimension: the intersection is a set of isolated points.
 
 \section{Fibrations}\label{sec:fibrations}
 
@@ -13610,8 +13693,22 @@ so the charts $\hat\varphi$ are adapted to $\zeta(M)$ (Definition~\ref{def:adapt
 
 ``We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.'' $TM$ and $T^*M$ are isomorphic as vector bundles, ``but not naturally isomorphic --- we have to make choices to construct an isomorphism'' (a metric, for instance, as in the remark on conormal spaces). This is stated, not proved, here.
 
+\begin{rembox}[Review Session: The Standard Atlases]\label{rem:review-standard-atlases}
+\textit{Review session, Friday Oct 16, in answer to ``can you go over the construction of the atlas for the tangent bundle and cotangent bundle?''} Any manifold has ``some sort of large infinity of coordinate charts''; the \emph{standard} ones are the most useful. Start with any chart $(U, \varphi = (x^1, \ldots, x^m))$. Then
+\[
+\begin{aligned}
+TU = \pi^{-1}(U) &\longrightarrow U \times \mathbb{R}^m \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \\
+(p, v) &\longmapsto (p, v^1, \ldots, v^m) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big),
+\end{aligned}
+\]
+where the first arrow is ``in the language of bundles, a trivialization'' (Definitions~\ref{def:tb-charts} and~\ref{def:tb-chart}). ``What makes this thing hard is that I don't have an explicit formula for the $v^i$'' --- they are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$ --- to which a student answered that there is one, $v^i = v[x^i]$: ``That's true. Thank you. That's very good'' (Theorem~\ref{thm:tangent-basis}). For $T^*M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and again ``a dual way of writing what the $\alpha_i$ are'': $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary~\ref{cor:covector-components}). There is a unique topology on $TM$ making these charts homeomorphisms (``we didn't prove this; we just accepted it'' in lecture; Proposition~\ref{prop:ctb-topology} for $T^*M$), and the transition functions are smooth (Proposition~\ref{prop:cotangent-transition}).
+
+\emph{Coordinates on $T^*M$.} By a ``slight abuse of notation'' the first $m$ components of the chart of $T^*U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are ``traditionally called $p_1, \ldots, p_m$'', $p_i(\alpha) = \alpha_i$ --- the $\xi_i$ of these notes. A student asked about tangent vectors to $T^*M$ and germs on it: ``at this point you have to say, okay, I just have a manifold that has dimension $2m$ \ldots\ and now I apply the general theory'': $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. ``You can keep taking tangent bundles forever.'' In November, with differential forms, the cotangent bundle will turn out to carry an intrinsically defined two-form, the \emph{symplectic form} --- ``and you who are interested in physics will see how this comes up in Hamiltonian mechanics.''
+\end{rembox}
+
 % ============================================================================
 % SECTION: ONE-FORMS
+
 % ============================================================================
 
 \section{One-Forms}\label{sub:one-forms}\label{sec:d-operator}
@@ -14450,6 +14547,37 @@ On $M = \mathbb{R}$, with the global chart $\mathrm{id}$ and coordinate $x$, and
 In the chart $\mathrm{id}$, $f_{\mathrm{id}} = f$, so $\partial f/\partial x = f'$ and $H(x) = f''(x)$ (Definition~\ref{def:hessian-matrix}); the coordinate representation of $s_f$ is $x \mapsto (x, f'(x))$ (Proposition~\ref{prop:one-form-coords}(2), with $\theta = df$, whose coefficient is $\partial f/\partial x = f'$), and $\operatorname{Crit}(f) = \{x : f'(x) = 0\}$ (Proposition~\ref{prop:critical-functions}). In the notation of the proof of Theorem~\ref{thm:morse-transverse}, $z_1 = \partial/\partial \bar x|_{(0,0)}$ and $w_1 = \partial/\partial \bar x|_{(0,0)} + f''(0)\, \partial/\partial \xi|_{(0,0)}$ (Proposition~\ref{prop:ddf-critical}(2)). (1) $f'(x) = 2x$ vanishes only at $0$, and $w_1 - z_1 = 2\, \partial/\partial \xi|_{(0,0)}$, so $z_1, w_1$ span the $2$-dimensional $T_{(0,0)}(T^*\mathbb{R})$. (2) $f'(x) = 3x^2$ vanishes only at $0$, $f''(0) = 0$, so $w_1 = z_1$ and $z_1, w_1$ span only a line: the transversality condition fails at the critical point $0$.
 \end{proof}
 
+\begin{rembox}[Review Session: Why the Hessian Needs a Critical Point]\label{rem:review-hessian}
+\textit{Review session, Oct 16, in answer to ``is there a careful definition of the Hessian?'' --- ``That's a beautiful question.''} The fact: for $f : M \to \mathbb{R}$, $\operatorname{Hess}_p f$ is only \emph{intrinsically} defined if $df_p = 0$. If $df_p = 0$ it is a well-defined quadratic form, a symmetric bilinear form on $T_pM$ (Proposition~\ref{prop:hessian-well-defined}); if $df_p \neq 0$ it is not: ``of course you can write everything in coordinates and take the Hessian in coordinates. But \ldots\ when you change coordinates, the new Hessian would involve first derivatives of $f$. So it doesn't transform as a quadratic form'' (Proposition~\ref{prop:hessian-transformation}, Example~\ref{ex:hessian-chart-dependent}).
+
+``And there's a beautiful geometric reason,'' in $T^*M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^*M$ splits canonically into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^*M$ itself (Proposition~\ref{prop:zero-section-vertical}): $T_{(p,0)}(T^*M) = \zeta_{*p}(T_pM) \oplus j_p(T_p^*M)$. ``This is the crucial thing that allows you to identify the quadratic form'': push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{*p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition~\ref{prop:ddf-critical}). \textit{(Filled in.)} Away from the zero section the vertical space is still canonical, but there is no canonical complement to project along, so ``the vertical component of $(s_f)_{*p}v$'' depends on the chart --- the geometric counterpart of the first-derivative term in the transformation law. Uribe ran out of time here; the full argument is the one already in these notes.
+\end{rembox}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+\draw[gray!60] (0,0.9) rectangle (5.2,3.3);
+\node[font=\footnotesize, gray!70!black, anchor=north west] at (0.02,3.28) {$T^*M$};
+\draw[thick, gray!75!black] (0,2.0) -- (5.2,2.0) node[right, font=\scriptsize, text=black] {$\mathcal{Z}$ (zero section)};
+\draw[gray!55, dashed] (2.6,0.9) -- (2.6,3.3) node[above, font=\scriptsize, text=gray!70!black] {fibre $T_p^*M$};
+\draw[violet!75!black, thick] plot[smooth] coordinates {(0.300,1.761) (0.350,1.744) (0.400,1.728) (0.450,1.712) (0.500,1.697) (0.550,1.682) (0.600,1.668) (0.650,1.654) (0.700,1.642) (0.750,1.630) (0.800,1.619) (0.850,1.609) (0.900,1.600) (0.950,1.592) (1.000,1.584) (1.050,1.579) (1.100,1.574) (1.150,1.570) (1.200,1.568) (1.250,1.567) (1.300,1.567) (1.350,1.568) (1.400,1.571) (1.450,1.575) (1.500,1.580) (1.550,1.587) (1.600,1.594) (1.650,1.604) (1.700,1.614) (1.750,1.626) (1.800,1.640) (1.850,1.654) (1.900,1.670) (1.950,1.687) (2.000,1.705) (2.050,1.725) (2.100,1.745) (2.150,1.767) (2.200,1.789) (2.250,1.813) (2.300,1.837) (2.350,1.863) (2.400,1.889) (2.450,1.916) (2.500,1.943) (2.550,1.971) (2.600,2.000) (2.650,2.029) (2.700,2.059) (2.750,2.088) (2.800,2.118) (2.850,2.148) (2.900,2.178) (2.950,2.208) (3.000,2.238) (3.050,2.267) (3.100,2.296) (3.150,2.325) (3.200,2.353) (3.250,2.381) (3.300,2.408) (3.350,2.434) (3.400,2.459) (3.450,2.483) (3.500,2.506) (3.550,2.528) (3.600,2.549) (3.650,2.568) (3.700,2.586) (3.750,2.603) (3.800,2.618) (3.850,2.631) (3.900,2.643) (3.950,2.654) (4.000,2.662) (4.050,2.669) (4.100,2.674) (4.150,2.677) (4.200,2.678) (4.250,2.677) (4.300,2.674) (4.350,2.670) (4.400,2.663) (4.450,2.655) (4.500,2.644) (4.550,2.632) (4.600,2.617) (4.650,2.601) (4.700,2.583) (4.750,2.563) (4.800,2.541) (4.850,2.517) (4.900,2.491)};
+\node[violet!75!black, font=\scriptsize] at (0.95,1.25) {$S_f = s_f(M)$};
+\draw[->, very thick, orange!85!black] (2.6,2.0) -- (3.5,2.520) node[above, font=\scriptsize] {$(s_f)_{*p}v$};
+\draw[->, thick, gray!75!black] (2.6,2.0) -- (3.5,2.0);
+\draw[->, thick, teal!60!black] (3.5,2.0) -- (3.5,2.520);
+\node[teal!60!black, font=\scriptsize, anchor=west] at (3.55,2.250) {$\operatorname{Hess}_p f(v,\cdot)$};
+\node[gray!75!black, font=\scriptsize, anchor=north] at (3.1500000000000004,1.98) {$\zeta_{*p}v$};
+\fill (2.6,2.0) circle (1.6pt);
+\draw[thick, gray!75!black] (0,0) -- (5.2,0) node[right, font=\scriptsize, text=black] {$M$};
+\fill (2.6,0) circle (1.5pt) node[below, font=\scriptsize] {$p$};
+\draw[->, very thick, gray!75!black] (2.6,0) -- (3.5,0) node[below, font=\scriptsize] {$v$};
+\draw[->, gray!55] (5.6,1.9) -- node[right, font=\scriptsize] {$\pi$} (5.6,0.25);
+\end{tikzpicture}
+\end{center}
+
+The picture from the review session. At $(p, 0)$ the tangent vector $(s_f)_{*p}v$ to $S_f$ splits into a part along the zero section, $\zeta_{*p}v$, and a vertical part in the fibre $T_p^*M$; the vertical part is $\operatorname{Hess}_p f(v, \cdot)$.
+
+\textbf{Transcription note (review session).} Page~52 of the handwritten notes writes the key identification as ``$T_pZ \cong T_p^*M$''. The tangent space of the zero section is $T_p\mathcal{Z} \cong T_pM$; it is the \emph{vertical} space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^*M)/T_p\mathcal{Z}$, that is canonically $T_p^*M$ (Proposition~\ref{prop:zero-section-vertical}).
+
 \subsection{Critical Points of Morse Functions}\label{sub:morse-critical-set}
 
 \begin{corbox}[Critical Points of a Morse Function Are Isolated]\thmlabel{cor:morse-isolated}
@@ -14499,6 +14627,7 @@ Let $f$ be a Morse function on $M$.
 
 % ============================================================================
 % CHAPTER: VECTOR FIELDS AND LIE GROUPS
+
 % ============================================================================
 \chapter{Vector Fields and Lie Groups}
 
@@ -17270,7 +17399,7 @@ Lemma 6.6 & Def.~\ref{def:measure-zero-manifold}, Prop.~\ref{prop:measure-zero-e
 Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
 Theorem 6.10 & Thm.~\ref{thm:sard} \\
 Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
-Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Cor.~\ref{cor:transverse-special-cases} \\
+Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Cor.~\ref{cor:transverse-special-cases}, Thm.~\ref{thm:transverse-intersection-manifold} \\
 Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
 Proposition 7.26 & Def.~\ref{def:orbit-map} \\
 Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
@@ -17346,7 +17475,6 @@ Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
 \bottomrule
 \end{longtable}
 }
-
 
 \end{document}
 

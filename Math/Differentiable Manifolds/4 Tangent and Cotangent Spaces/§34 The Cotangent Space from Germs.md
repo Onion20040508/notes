@@ -224,6 +224,11 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 ^rem-34-2
 
+> [!remark] Remark: Review Session: The More Natural Space
+> *Review session, Oct 16, recalling this homework problem.* $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^{\ast}M \cong I_p/I_p^2$ naturally: “nothing with curves, nothing with ambient spaces … very, very general and very quick.” Uribe recalled a professor of his at MIT: “this tells you that the cotangent space really is the more natural space. … It has a one-page definition, and it has this symplectic structure that is … God-given. It's just sitting there” — even though we are less used to working with the dual object.
+
+^rem-34-3
+
 > [!theorem] Theorem §34.5: Dimension of the Cotangent Space
 > Let $M$ be a smooth $m$-manifold and $p \in M$. Then
 >
@@ -271,7 +276,7 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 > [!remark] Remark: One Symbol for Two Pullbacks
 > The symbol $F_p^{\ast}$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]); on covectors it is the dual map $T^{\ast}_{F(p)}N \to T_p^{\ast}M$ of [[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^{\ast}(dg_{F(p)}) = d\big(F_p^{\ast}[g]\big)_p$.
 
-^rem-34-3
+^rem-34-4
 
 > [!theorem] Proposition §34.6: Pullback Commutes with $d$
 > Let $F : M \to N$ be smooth, $p \in M$, and $f$ smooth near $F(p)$. Then
@@ -306,7 +311,7 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 >
 > the first and third equalities being part (3) of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] (for $f \circ F$ at $p$, and for $f$ at $F(p)$), the second the proposition above together with the definition of $F_p^{\ast}$; as $v \mapsto \xi_v$ is injective, $\nabla(f \circ F)(p) = J_F(p)^{\mathsf T}\, \nabla f(F(p))$. Uribe added that the pushforward $F_\ast$ “we should have called the differential of $F$ ages ago”: for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{\ast p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
 
-^rem-34-4
+^rem-34-5
 
 > [!remark]- Connections
 > - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]. The field version: [[§51 One-Forms#^cor-51-4|Cor. §51.4]].

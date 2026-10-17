@@ -20,9 +20,16 @@ Results from lecture may be quoted (2021 also allowed the textbooks), and clarit
 **From the recordings.** In the Lecture 17 recording (Fri Oct 9), Uribe described the exam:
 - There will be "a section where we work with definitions", because "there are so many definitions in this class", then "quick true/false questions", then "short proofs".
 - The short proofs "will be either identical to homework problems, or very close to pieces of homework problems, or quick things". **So the homework, broken into pieces, is the core of the review**, which is exactly the [[Differentiable Manifolds HW Drill]].
-- The exam is planned as 1.5 hours in the 2-hour slot, in exam booklets.
+- The exam is planned as 1.5 hours in the 2-hour slot, in exam booklets. **Update (review session, Oct 16): 100 minutes; bring only writing instruments.**
 - There will be a review session (ask him to go over specific things), he will distribute previous exams, and he will post homework solutions.
 - Technical proofs that are "not used in homework" (bump functions, Lecture 16) are lower priority.
+
+**From the review session (Fri Oct 16).** "Everything that is contained in the assignments is fair game." The class asked about five topics; each answer is now a box in the notes:
+1. the standard atlases of $TM$ and $T^\ast M$ (Remark *Review Session: The Standard Atlases* in [[§50 The Cotangent Bundle#^rem-50-1|§50]]);
+2. two submanifolds intersecting transversally: [[§37 Regular Submanifolds#^def-37-7|Definition §37.7]], its equivalence with the map version, and [[§37 Regular Submanifolds#^thm-37-22|Theorem §37.22]] (codimensions add);
+3. open relations and orbit relations ([[§6 Open Quotients|§6]]; no new box);
+4. the two definitions of $T_pM$, curves and derivations (Remark *Review Session: The Two Definitions of* $T_pM$ in [[§31 Tangent Vectors as Velocities of Curves#^rem-31-3|§31]]); the germ version $T_p^\ast M \cong I_p/I_p^2$ (Remark in [[§34 The Cotangent Space from Germs#^rem-34-3|§34]]);
+5. why the Hessian needs a critical point (Remark *Review Session: Why the Hessian Needs a Critical Point* in [[§52 Critical Points and the Hessian#^rem-52-4|§52]]).
 
 Points he stressed in lecture, and where they live:
 - the line with two origins as *the* interesting non-example (Example [[§2 Topological Manifolds#^ex-2-1|§2.1]] Fails $T_2$: The Line with Two Origins);

@@ -214,3 +214,19 @@ The definitions and results of this section run parallel to those for the tangen
 **Transcription note.** Page 40 of the handwritten notes writes the standard coordinates as a map on $T^{\ast}M$; they are defined on $T^{\ast}U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
 
 “We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§37 Regular Submanifolds#^rem-37-1|remark on conormal spaces]]). This is stated, not proved, here.
+
+> [!remark] Remark: Review Session: The Standard Atlases
+> *Review session, Friday Oct 16, in answer to “can you go over the construction of the atlas for the tangent bundle and cotangent bundle?”* Any manifold has “some sort of large infinity of coordinate charts”; the *standard* ones are the most useful. Start with any chart $(U, \varphi = (x^1, \ldots, x^m))$. Then
+>
+> $$
+> \begin{aligned}
+> TU = \pi^{-1}(U) &\longrightarrow U \times \mathbb{R}^m \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \\
+> (p, v) &\longmapsto (p, v^1, \ldots, v^m) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big),
+> \end{aligned}
+> $$
+>
+> where the first arrow is “in the language of bundles, a trivialization” (Definitions [[§49 The Tangent Bundle#^def-49-4|§49.4]] and [[§49 The Tangent Bundle#^def-49-5|§49.5]]). “What makes this thing hard is that I don't have an explicit formula for the $v^i$” — they are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$ — to which a student answered that there is one, $v^i = v[x^i]$: “That's true. Thank you. That's very good” (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). For $T^{\ast}M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and again “a dual way of writing what the $\alpha_i$ are”: $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). There is a unique topology on $TM$ making these charts homeomorphisms (“we didn't prove this; we just accepted it” in lecture; Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] for $T^{\ast}M$), and the transition functions are smooth (Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]).
+>
+> *Coordinates on $T^{\ast}M$.* By a “slight abuse of notation” the first $m$ components of the chart of $T^{\ast}U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are “traditionally called $p_1, \ldots, p_m$”, $p_i(\alpha) = \alpha_i$ — the $\xi_i$ of these notes. A student asked about tangent vectors to $T^{\ast}M$ and germs on it: “at this point you have to say, okay, I just have a manifold that has dimension $2m$ … and now I apply the general theory”: $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. “You can keep taking tangent bundles forever.” In November, with differential forms, the cotangent bundle will turn out to carry an intrinsically defined two-form, the *symplectic form* — “and you who are interested in physics will see how this comes up in Hamiltonian mechanics.”
+
+^rem-50-1

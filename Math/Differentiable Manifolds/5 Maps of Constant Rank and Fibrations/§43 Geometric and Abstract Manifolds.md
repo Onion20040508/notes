@@ -20,7 +20,7 @@ The course has built manifolds in two ways. The *geometric* picture is the equat
 | smooth maps | smooth between vector spaces | smooth in charts | Lemma [[§37 Regular Submanifolds#^lem-37-5\|§37.5]] |
 | tangent space | velocities, $\ker F'(p)$ | derivations of germs | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|§29.7]] |
 | differential | Jacobian $F'(p)$ | pushforward $F_{\ast p}$ | Theorem [[§30 The Differential in Coordinates#^thm-30-2\|§30.2]] |
-| covectors | gradient $\nabla f$, transpose $J^{\mathsf T}$ | $df_p$, pullback $F_p^{\ast}$ | the remark [[§34 The Cotangent Space from Germs#^rem-34-4\|The Two Differentials Meet]] |
+| covectors | gradient $\nabla f$, transpose $J^{\mathsf T}$ | $df_p$, pullback $F_p^{\ast}$ | the remark [[§34 The Cotangent Space from Germs#^rem-34-5\|The Two Differentials Meet]] |
 | regular points | $F'(p)$ surjective | $F_{\ast p}$ surjective | Proposition [[§30 The Differential in Coordinates#^prop-30-8\|§30.8]] |
 | key theorems | implicit and inverse function theorems | normal form; local diffeomorphism criterion | proved through charts |
 | regular values | level sets are manifolds | level sets are submanifolds | Proposition [[§37 Regular Submanifolds#^prop-37-14\|§37.14]] |
@@ -115,7 +115,7 @@ The two differentials are built in opposite directions. The Jacobian is computed
 |---|---|---|
 | the gradient $\nabla f(p)$, a row of the Jacobian | Definition [[§32 The Cotangent Space#^def-32-5\|§32.5]] ($df_p \in T_p^*M$); Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]] | the remark [[§33 Covectors in Coordinates#^rem-33-2\|Differential — Not Gradient]]: a gradient needs an inner product |
 | the transpose $J_F^{\mathsf T}$ of the Jacobian | Definition [[§34 The Cotangent Space from Germs#^def-34-3\|§34.3]] (pullback of covectors, the dual map of $F_{\ast p}$) | in dual bases the matrix of $F_p^{\ast}$ is the transpose of the matrix of $F_{\ast p}$ |
-| $\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) | Proposition [[§34 The Cotangent Space from Germs#^prop-34-6\|§34.6]] ($F_p^{\ast}\, df = d(f \circ F)$) | the remark [[§34 The Cotangent Space from Germs#^rem-34-4\|The Two Differentials Meet]] |
+| $\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) | Proposition [[§34 The Cotangent Space from Germs#^prop-34-6\|§34.6]] ($F_p^{\ast}\, df = d(f \circ F)$) | the remark [[§34 The Cotangent Space from Germs#^rem-34-5\|The Two Differentials Meet]] |
 | normal vectors, spanned by $\nabla F^1, \ldots, \nabla F^k$ | Definition [[§37 Regular Submanifolds#^def-37-4\|§37.4]] (conormal space); Proposition [[§37 Regular Submanifolds#^prop-37-8\|§37.8]] (basis $dF^i|_p$) | the remark [[§37 Regular Submanifolds#^rem-37-1\|No Normal Vectors Without a Metric]] |
 
 ![[§32 The Cotangent Space#^def-32-5]]
@@ -124,7 +124,7 @@ The two differentials are built in opposite directions. The Jacobian is computed
 
 ![[§34 The Cotangent Space from Germs#^prop-34-6]]
 
-![[§34 The Cotangent Space from Germs#^rem-34-4]]
+![[§34 The Cotangent Space from Germs#^rem-34-5]]
 
 ![[§37 Regular Submanifolds#^def-37-4]]
 

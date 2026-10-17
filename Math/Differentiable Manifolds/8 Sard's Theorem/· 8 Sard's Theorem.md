@@ -15,6 +15,9 @@ tags: [chapter, differentiable-manifolds]
 - [[§58 Sets of Measure Zero]]
 - [[§59 Sard's Theorem]]
 
+## Central results
+- [[Sard's Theorem]] (§59.1)
+
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§58 Sets of Measure Zero#^lem-58-1|Lemma §58.1: Basic Properties of Measure Zero]]: 3 later results
