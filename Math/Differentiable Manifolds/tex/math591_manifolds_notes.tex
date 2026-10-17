@@ -1621,6 +1621,25 @@ F^{-1}\big(\overline{F}(W)\big) = \pi^{-1}\big(\overline{F}^{-1}(\overline{F}(W)
 using $F = \overline{F} \circ \pi$ for the first equality and injectivity of $\overline{F}$ for the second; and $\pi^{-1}(W)$ is open because $W$ is.
 \end{proof}
 
+\begin{proof}[Second proof of the homeomorphism (one chain of equivalences)]
+\textit{(Not from lecture; added on request.)} $\overline{F}$ is a bijection with $F = \overline{F} \circ \pi$, as in the first proof. For any $V \subseteq Y$, the factorization gives $\pi^{-1}\big(\overline{F}^{-1}(V)\big) = (\overline{F} \circ \pi)^{-1}(V) = F^{-1}(V)$. Hence
+\[
+\overline{F}^{-1}(V) \text{ open in } X/{\sim}
+\iff \pi^{-1}\big(\overline{F}^{-1}(V)\big) \text{ open in } X
+\iff F^{-1}(V) \text{ open in } X
+\iff V \text{ open in } Y .
+\]
+The first equivalence is the definition of the quotient topology on $X/{\sim}$ (Definition~\ref{def:quotient-topology}); the second is the identity above; the last is the hypothesis that $F$ is a quotient map (Definition~\ref{def:quotient-map}), the only place it is used.
+
+\emph{$\overline{F}$ is continuous}: read the chain from right to left; if $V$ is open, so is $\overline{F}^{-1}(V)$.
+
+\emph{$\overline{F}^{-1}$ is continuous}: let $O \subseteq X/{\sim}$ be open and put $V = \overline{F}(O)$. Since $\overline{F}$ is a bijection, $\overline{F}^{-1}(V) = O$, which is open; reading the chain from left to right, $V = \overline{F}(O)$ is open. So $\overline{F}$ is an open map, which for a bijection is continuity of $\overline{F}^{-1}$.
+\end{proof}
+
+\begin{rembox}[Without the Quotient-Map Hypothesis]\label{rem:continuous-surjection-not-quotient}
+\textit{(Not from lecture.)} For a continuous surjection $F$ that is not a quotient map, $\overline{F}$ is still a continuous bijection (the first proof's argument for continuity uses only that $F$ is continuous), but it need not be a homeomorphism. Example: $f : [0, 2\pi) \to S^1$, $f(t) = (\cos t, \sin t)$, is a continuous bijection. Its fibres are single points, so $\sim$ is equality, $[0, 2\pi)/{\sim} = [0, 2\pi)$, and $\overline{f} = f$. It is not a quotient map: $U = [0, \pi)$ is open in $[0, 2\pi)$ and $f^{-1}(f(U)) = U$ ($f$ is injective), but $f(U) = \{(\cos t, \sin t) : 0 \leq t < \pi\}$ is not open in $S^1$, since every neighborhood of $f(0) = (1, 0)$ in $S^1$ contains points $(\cos t, \sin t)$ with $t$ close to $2\pi$, which are not in $f(U)$. So $f^{-1}$ is not continuous at $(1, 0)$, and $[0, 2\pi)$ and $S^1$ are not homeomorphic through $f$ (nor through any map: $S^1$ is compact and $[0, 2\pi)$ is not).
+\end{rembox}
+
 \begin{rembox}\label{rem:new-spaces-3}
 So ``quotient map'' and ``presentation of the target as a quotient space'' are the same notion, and one may use whichever is convenient: to recognize a quotient topology, exhibit a quotient map onto it. Stated without proof in PSet 1, Problem 5.
 \end{rembox}

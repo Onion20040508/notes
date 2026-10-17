@@ -162,13 +162,38 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
 
+> [!proof]+ Second proof of the homeomorphism (one chain of equivalences)
+> *(Not from lecture; added on request.)* $\overline{F}$ is a bijection with $F = \overline{F} \circ \pi$, as in the first proof. For any $V \subseteq Y$, the factorization gives $\pi^{-1}\big(\overline{F}^{-1}(V)\big) = (\overline{F} \circ \pi)^{-1}(V) = F^{-1}(V)$. Hence
+>
+> $$
+> \overline{F}^{-1}(V) \text{ open in } X/{\sim}
+> \iff \pi^{-1}\big(\overline{F}^{-1}(V)\big) \text{ open in } X
+> \iff F^{-1}(V) \text{ open in } X
+> \iff V \text{ open in } Y .
+> $$
+>
+> The first equivalence is the definition of the quotient topology on $X/{\sim}$ (Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]]); the second is the identity above; the last is the hypothesis that $F$ is a quotient map (Definition [[§5 Quotient Maps#^def-5-1|§5.1]]), the only place it is used.
+>
+> *$\overline{F}$ is continuous*: read the chain from right to left; if $V$ is open, so is $\overline{F}^{-1}(V)$.
+>
+> *$\overline{F}^{-1}$ is continuous*: let $O \subseteq X/{\sim}$ be open and put $V = \overline{F}(O)$. Since $\overline{F}$ is a bijection, $\overline{F}^{-1}(V) = O$, which is open; reading the chain from left to right, $V = \overline{F}(O)$ is open. So $\overline{F}$ is an open map, which for a bijection is continuity of $\overline{F}^{-1}$.
+
+^pf-5-4-2
+
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]]
+
 > [!remark]- Connections
 > - Home in MATH 590: [[§13 Quotient Topology#^cor-13-4|590 §13.4 (Induced Bijection from Quotient)]].
+
+> [!remark] Remark: Without the Quotient-Map Hypothesis
+> *(Not from lecture.)* For a continuous surjection $F$ that is not a quotient map, $\overline{F}$ is still a continuous bijection (the first proof's argument for continuity uses only that $F$ is continuous), but it need not be a homeomorphism. Example: $f : [0, 2\pi) \to S^1$, $f(t) = (\cos t, \sin t)$, is a continuous bijection. Its fibres are single points, so $\sim$ is equality, $[0, 2\pi)/{\sim} = [0, 2\pi)$, and $\overline{f} = f$. It is not a quotient map: $U = [0, \pi)$ is open in $[0, 2\pi)$ and $f^{-1}(f(U)) = U$ ($f$ is injective), but $f(U) = \{(\cos t, \sin t) : 0 \leq t < \pi\}$ is not open in $S^1$, since every neighborhood of $f(0) = (1, 0)$ in $S^1$ contains points $(\cos t, \sin t)$ with $t$ close to $2\pi$, which are not in $f(U)$. So $f^{-1}$ is not continuous at $(1, 0)$, and $[0, 2\pi)$ and $S^1$ are not homeomorphic through $f$ (nor through any map: $S^1$ is compact and $[0, 2\pi)$ is not).
+
+^rem-5-2
 
 > [!remark] Remark
 > So “quotient map” and “presentation of the target as a quotient space” are the same notion, and one may use whichever is convenient: to recognize a quotient topology, exhibit a quotient map onto it. Stated without proof in PSet 1, Problem 5.
 
-^rem-5-2
+^rem-5-3
 
 > [!theorem] Proposition §5.5: Open Surjections Are Quotient Maps
 > A continuous open surjection $F : X \to Y$ is a quotient map.
@@ -196,7 +221,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > [!remark] Remark
 > This is PSet 1, Problem 5, where it is proved directly from the definition. The direct argument is worth seeing once: writing an open $\pi_i^{-1}(U)$ as a union of boxes $\bigcup_x U_{x,1} \times \cdots \times U_{x,n}$ and projecting gives $U = \bigcup_x U_{x,i}$, a union of open sets—and the step $\pi_i(U_{x,1} \times \cdots \times U_{x,n}) = U_{x,i}$ is exactly where nonemptiness of the other factors enters.
 
-^rem-5-3
+^rem-5-4
 
 > [!theorem] Lemma §5.6: Open Surjections Push Bases Forward
 > Let $\pi : Y \to Q$ be a continuous open surjection and $\mathcal{B}$ a basis for the topology of $Y$. Then $\pi(\mathcal{B}) = \{\pi(B) \mid B \in \mathcal{B}\}$ is a basis for the topology of $Q$. In particular, if $Y$ is second countable, so is $Q$.
@@ -265,4 +290,4 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > [!remark] Remark
 > Both hypotheses are used, at different steps: that $W$ is a full preimage gives $q^{-1}(A) = p^{-1}(A)$, and that $V$ is open makes a set open in $W$ open in $X$. Without them the restriction of a quotient map need not be a quotient map. The lemma is what allows the universal property ([[§5 Quotient Maps#^thm-5-1|Theorem §5.1]]) to be applied *locally*, on an open piece of a quotient — which is exactly the situation of a chart on a quotient space ([[§18 Projective Spaces as Smooth Manifolds|§18, Projective Spaces as Smooth Manifolds]]). Both lemmas are from Assignment 2, Problem 2.
 
-^rem-5-4
+^rem-5-5
