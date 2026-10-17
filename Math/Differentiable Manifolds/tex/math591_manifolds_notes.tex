@@ -650,6 +650,35 @@ Parts (1), (2) and (4) are proved in MATH 590 (\S13--\S14; see the Topology note
 Proved in MATH 590 (\S15; see the Topology notes); to be filled.
 \end{proof}
 
+\begin{lembox}[Open Balls Are Homeomorphic to $\mathbb{R}^n$]\thmlabel{lem:ball-homeo-rn}
+Let $c \in \mathbb{R}^n$ and $r > 0$, and write $B(c, r) = \{x \in \mathbb{R}^n : |x - c| < r\}$.
+\begin{enumerate}
+    \item \emph{Every ball is homeomorphic to the unit ball.} $a : B(c, r) \to B(0, 1)$, $a(x) = \dfrac{x - c}{r}$, is a homeomorphism, with inverse $b : B(0, 1) \to B(c, r)$, $b(y) = c + ry$.
+    \item \emph{The unit ball is homeomorphic to $\mathbb{R}^n$.} $u : B(0, 1) \to \mathbb{R}^n$, $u(y) = \dfrac{y}{1 - |y|}$, is a homeomorphism, with inverse $w : \mathbb{R}^n \to B(0, 1)$, $w(z) = \dfrac{z}{1 + |z|}$.
+    \item Hence $u \circ a : B(c, r) \to \mathbb{R}^n$, $(u \circ a)(x) = \dfrac{x - c}{r - |x - c|}$, is a homeomorphism, with inverse $b \circ w$, $(b \circ w)(z) = c + \dfrac{rz}{1 + |z|}$. Every open ball of $\mathbb{R}^n$ is homeomorphic to $\mathbb{R}^n$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; added on request, as the first step of the second proof of Proposition~\ref{prop:open-charts}.)} In each part we check that both maps are continuous, that each maps into the stated target, and that they are inverse to each other.
+
+\emph{(1).} $a$ and $b$ are continuous: each coordinate is a polynomial of degree $1$ in the coordinates of $x$, resp.\ $y$. They map into the stated balls: for $x \in B(c, r)$, $|a(x)| = |x - c|/r < 1$; for $y \in B(0, 1)$, $|b(y) - c| = r|y| < r$. They are inverse to each other:
+\[
+b(a(x)) = c + r \cdot \frac{x - c}{r} = x, \qquad a(b(y)) = \frac{(c + ry) - c}{r} = y .
+\]
+
+\emph{(2).} $u$ is continuous on $B(0, 1)$: $y \mapsto y$ and $y \mapsto 1 - |y|$ are continuous (the norm is continuous), and $1 - |y| > 0$ there. $w$ is continuous on $\mathbb{R}^n$, since $1 + |z| \geq 1$. $w$ maps into $B(0, 1)$: $|w(z)| = |z|/(1 + |z|) < 1$. For $y \in B(0, 1)$ put $s = |y| < 1$; then $|u(y)| = s/(1 - s)$, so $1 + |u(y)| = 1/(1 - s)$ and
+\[
+w(u(y)) = \frac{y}{1 - s} \cdot (1 - s) = y .
+\]
+For $z \in \mathbb{R}^n$, $|w(z)| = |z|/(1 + |z|)$, so $1 - |w(z)| = 1/(1 + |z|)$ and
+\[
+u(w(z)) = \frac{z}{1 + |z|} \cdot (1 + |z|) = z .
+\]
+
+\emph{(3).} A composite of homeomorphisms is a homeomorphism: $u \circ a$ is continuous with continuous inverse $(u \circ a)^{-1} = a^{-1} \circ u^{-1} = b \circ w$. The formulas: $(u \circ a)(x) = \dfrac{(x - c)/r}{1 - |x - c|/r} = \dfrac{x - c}{r - |x - c|}$ and $(b \circ w)(z) = c + r \cdot \dfrac{z}{1 + |z|}$.
+\end{proof}
+
 % ============================================================================
 % SECTION 2: TOPOLOGICAL MANIFOLDS
 % ============================================================================
@@ -740,6 +769,18 @@ For $z \in \mathbb{R}^n$ put $v = g(z) - c = \dfrac{rz}{1+|z|}$; then $|v| = \df
 h(g(z)) = \frac{v}{r - |v|} = \frac{rz}{1+|z|} \cdot \frac{1+|z|}{r} = z.
 \]
 Thus $h$ is a bijection with continuous inverse $g$, i.e.\ a homeomorphism $B \to \mathbb{R}^n$, and $h \circ \varphi|_{U'} : U' \to \mathbb{R}^n$ is a homeomorphism from a neighborhood of $p$ onto $\mathbb{R}^n$, as required.
+\end{proof}
+
+\begin{proof}[Second proof (via Lemma~\ref{lem:ball-homeo-rn})]
+\textit{(Added on request: restrict the chart to a ball, then compose with the homeomorphisms of the lemma.)} Only the converse needs proof. Let $\varphi : U \to A$ be a homeomorphism onto an open set $A \subseteq \mathbb{R}^n$, with $U$ a neighborhood of $p$, and put $c = \varphi(p)$.
+
+\emph{Restrict to a ball.} Since $A$ is open and $c \in A$, there is $r > 0$ with $B(c, r) \subseteq A$. Let $V = \varphi^{-1}(B(c, r))$. It contains $p$; it is open in $U$ because $\varphi$ is continuous, hence open in $X$ because $U$ is. The restriction $\varphi|_V : V \to B(c, r)$ is a homeomorphism: it is onto because $B(c, r) \subseteq A = \varphi(U)$, it is continuous as a restriction of $\varphi$, and its inverse is the restriction of $\varphi^{-1}$ to $B(c, r)$, also continuous.
+
+\emph{Compose.} By Lemma~\ref{lem:ball-homeo-rn}(1)--(2), $a : B(c, r) \to B(0, 1)$, $a(x) = (x - c)/r$, and $u : B(0, 1) \to \mathbb{R}^n$, $u(y) = y/(1 - |y|)$, are homeomorphisms. So
+\[
+\psi = u \circ a \circ \varphi|_V : V \longrightarrow B(c, r) \longrightarrow B(0, 1) \longrightarrow \mathbb{R}^n, \qquad \psi(q) = \frac{\varphi(q) - c}{r - |\varphi(q) - c|},
+\]
+is a homeomorphism, as a composite of homeomorphisms, with inverse $\psi^{-1}(z) = \varphi^{-1}\big(c + rz/(1 + |z|)\big)$. Thus $p$ has a neighborhood $V$ homeomorphic to $\mathbb{R}^n$, which is Definition~\ref{def:locally-euclidean}. (The map $\psi$ is the $h \circ \varphi|_{U'}$ of the first proof, with $U' = V$: the first proof does the two steps of the lemma in one formula.)
 \end{proof}
 
 \begin{rembox}\label{rem:manifolds}

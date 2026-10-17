@@ -438,3 +438,37 @@ The line with two origins through the course: defined by its neighbourhood bases
 > Proved in MATH 590 ([[§18 Compact Spaces|590 §18]]); to be filled.
 
 ^pf-1-8
+
+> [!theorem] Lemma §1.9: Open Balls Are Homeomorphic to $\mathbb{R}^n$
+> Let $c \in \mathbb{R}^n$ and $r > 0$, and write $B(c, r) = \{x \in \mathbb{R}^n : |x - c| < r\}$.
+>
+> 1. *Every ball is homeomorphic to the unit ball.* $a : B(c, r) \to B(0, 1)$, $a(x) = \dfrac{x - c}{r}$, is a homeomorphism, with inverse $b : B(0, 1) \to B(c, r)$, $b(y) = c + ry$.
+> 2. *The unit ball is homeomorphic to $\mathbb{R}^n$.* $u : B(0, 1) \to \mathbb{R}^n$, $u(y) = \dfrac{y}{1 - |y|}$, is a homeomorphism, with inverse $w : \mathbb{R}^n \to B(0, 1)$, $w(z) = \dfrac{z}{1 + |z|}$.
+> 3. Hence $u \circ a : B(c, r) \to \mathbb{R}^n$, $(u \circ a)(x) = \dfrac{x - c}{r - |x - c|}$, is a homeomorphism, with inverse $b \circ w$, $(b \circ w)(z) = c + \dfrac{rz}{1 + |z|}$. Every open ball of $\mathbb{R}^n$ is homeomorphic to $\mathbb{R}^n$.
+
+^lem-1-9
+
+> [!proof]+ Proof
+> *(Not from lecture; added on request, as the first step of the second proof of Proposition [[§2 Topological Manifolds#^prop-2-3|§2.3]].)* In each part we check that both maps are continuous, that each maps into the stated target, and that they are inverse to each other.
+>
+> *(1).* $a$ and $b$ are continuous: each coordinate is a polynomial of degree $1$ in the coordinates of $x$, resp. $y$. They map into the stated balls: for $x \in B(c, r)$, $|a(x)| = |x - c|/r < 1$; for $y \in B(0, 1)$, $|b(y) - c| = r|y| < r$. They are inverse to each other:
+>
+> $$
+> b(a(x)) = c + r \cdot \frac{x - c}{r} = x, \qquad a(b(y)) = \frac{(c + ry) - c}{r} = y .
+> $$
+>
+> *(2).* $u$ is continuous on $B(0, 1)$: $y \mapsto y$ and $y \mapsto 1 - |y|$ are continuous (the norm is continuous), and $1 - |y| > 0$ there. $w$ is continuous on $\mathbb{R}^n$, since $1 + |z| \geq 1$. $w$ maps into $B(0, 1)$: $|w(z)| = |z|/(1 + |z|) < 1$. For $y \in B(0, 1)$ put $s = |y| < 1$; then $|u(y)| = s/(1 - s)$, so $1 + |u(y)| = 1/(1 - s)$ and
+>
+> $$
+> w(u(y)) = \frac{y}{1 - s} \cdot (1 - s) = y .
+> $$
+>
+> For $z \in \mathbb{R}^n$, $|w(z)| = |z|/(1 + |z|)$, so $1 - |w(z)| = 1/(1 + |z|)$ and
+>
+> $$
+> u(w(z)) = \frac{z}{1 + |z|} \cdot (1 + |z|) = z .
+> $$
+>
+> *(3).* A composite of homeomorphisms is a homeomorphism: $u \circ a$ is continuous with continuous inverse $(u \circ a)^{-1} = a^{-1} \circ u^{-1} = b \circ w$. The formulas: $(u \circ a)(x) = \dfrac{(x - c)/r}{1 - |x - c|/r} = \dfrac{x - c}{r - |x - c|}$ and $(b \circ w)(z) = c + r \cdot \dfrac{z}{1 + |z|}$.
+
+^pf-1-9

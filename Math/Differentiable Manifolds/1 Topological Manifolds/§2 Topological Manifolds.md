@@ -128,6 +128,24 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 *Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (3), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
 
+> [!proof]+ Second proof (via Lemma [[§1 Point-Set Topology Review#^lem-1-9|§1.9]])
+> *(Added on request: restrict the chart to a ball, then compose with the homeomorphisms of the lemma.)* Only the converse needs proof. Let $\varphi : U \to A$ be a homeomorphism onto an open set $A \subseteq \mathbb{R}^n$, with $U$ a neighborhood of $p$, and put $c = \varphi(p)$.
+>
+> *Restrict to a ball.* Since $A$ is open and $c \in A$, there is $r > 0$ with $B(c, r) \subseteq A$. Let $V = \varphi^{-1}(B(c, r))$. It contains $p$; it is open in $U$ because $\varphi$ is continuous, hence open in $X$ because $U$ is. The restriction $\varphi|_V : V \to B(c, r)$ is a homeomorphism: it is onto because $B(c, r) \subseteq A = \varphi(U)$, it is continuous as a restriction of $\varphi$, and its inverse is the restriction of $\varphi^{-1}$ to $B(c, r)$, also continuous.
+>
+> *Compose.* By Lemma [[§1 Point-Set Topology Review#^lem-1-9|§1.9]](1)–(2), $a : B(c, r) \to B(0, 1)$, $a(x) = (x - c)/r$, and $u : B(0, 1) \to \mathbb{R}^n$, $u(y) = y/(1 - |y|)$, are homeomorphisms. So
+>
+> $$
+> \psi = u \circ a \circ \varphi|_V : V \longrightarrow B(c, r) \longrightarrow B(0, 1) \longrightarrow \mathbb{R}^n, \qquad \psi(q) = \frac{\varphi(q) - c}{r - |\varphi(q) - c|},
+> $$
+>
+> is a homeomorphism, as a composite of homeomorphisms, with inverse $\psi^{-1}(z) = \varphi^{-1}\big(c + rz/(1 + |z|)\big)$. Thus $p$ has a neighborhood $V$ homeomorphic to $\mathbb{R}^n$, which is Definition [[§2 Topological Manifolds#^def-2-1|§2.1]]. (The map $\psi$ is the $h \circ \varphi|_{U'}$ of the first proof, with $U' = V$: the first proof does the two steps of the lemma in one formula.)
+
+^pf-2-3-2
+
+*Uses:* [[§1 Point-Set Topology Review#^lem-1-9|§1.9]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]
+
+
 > [!remark] Remark
 > Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used in the $S^2$ example ([[§8 Spheres#^ex-8-1|Ex. §8.1]]).
 
