@@ -124,7 +124,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-ex-14-1
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^prop-4-4|§4.4]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]]
 
 > [!remark]- Connections
 > - $X$ is indiscrete, the standard non-$T_1$ space: [[Discrete and indiscrete topologies]].

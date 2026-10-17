@@ -447,11 +447,11 @@ Uribe singled out Lemma [[§36 Submersions#^lem-36-5|§36.5]] as “an intellect
 > F(U) = \psi^{-1}\big(\tilde F(\hat\varphi(U))\big) = \psi^{-1}\big(\mathrm{pr}(\hat\varphi(U))\big) .
 > $$
 >
-> Projections are open (Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]], for $\mathbb{R}^m = \mathbb{R}^n \times \mathbb{R}^{m-n}$), and $\hat\varphi(U)$ is open, being the image of a chart, so $\mathrm{pr}(\hat\varphi(U))$ is an open subset of $\psi(V)$; it lies in $\psi(V)$ because it equals $\tilde F(\hat\varphi(U))$. Since $\psi : V \to \psi(V)$ is a homeomorphism, $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$ (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2)), and $V$ is open in $N$; so $F(U)$ is open in $N$. It contains $q$ and lies in $F(W)$: $q = F(p)$ with $p \in U$, and $U \subseteq W$.
+> Projections are open (Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], for $\mathbb{R}^m = \mathbb{R}^n \times \mathbb{R}^{m-n}$), and $\hat\varphi(U)$ is open, being the image of a chart, so $\mathrm{pr}(\hat\varphi(U))$ is an open subset of $\psi(V)$; it lies in $\psi(V)$ because it equals $\tilde F(\hat\varphi(U))$. Since $\psi : V \to \psi(V)$ is a homeomorphism, $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$ (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2)), and $V$ is open in $N$; so $F(U)$ is open in $N$. It contains $q$ and lies in $F(W)$: $q = F(p)$ with $p \in U$, and $U \subseteq W$.
 
 ^pf-36-9
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex. §4.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 > [!theorem] Theorem §36.10: Submersions from Compact Manifolds
 > Let $M$ be compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]) and nonempty, $N$ connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]), and $F : M \to N$ a submersion ([[§36 Submersions#^def-36-1|Def. §36.1]]). Then $F$ is surjective, and $N$ is compact.

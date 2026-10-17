@@ -187,11 +187,11 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > - Applied to $G \to G/H$: [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2|§15.2]].
 
 > [!example] Example §5.2: Projections Are Quotient Maps
-> If $X_1, \ldots, X_n$ are nonempty topological spaces, every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open ([[§4 Quotient Spaces and Open Maps#^ex-4-2|Example §4.2]] and induction), so [[§5 Quotient Maps#^prop-5-5|Proposition §5.5]] applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
+> If $X_1, \ldots, X_n$ are nonempty topological spaces, every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open ([[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]] and induction), so [[§5 Quotient Maps#^prop-5-5|Proposition §5.5]] applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
 
 ^ex-5-2
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex. §4.2]], [[§5 Quotient Maps#^prop-5-5|§5.5]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§5 Quotient Maps#^prop-5-5|§5.5]]
 
 > [!remark] Remark
 > This is PSet 1, Problem 5, where it is proved directly from the definition. The direct argument is worth seeing once: writing an open $\pi_i^{-1}(U)$ as a union of boxes $\bigcup_x U_{x,1} \times \cdots \times U_{x,n}$ and projecting gives $U = \bigcup_x U_{x,i}$, a union of open sets—and the step $\pi_i(U_{x,1} \times \cdots \times U_{x,n}) = U_{x,i}$ is exactly where nonemptiness of the other factors enters.

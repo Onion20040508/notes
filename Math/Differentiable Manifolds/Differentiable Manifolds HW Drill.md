@@ -141,7 +141,7 @@ $X = \mathbb{R}/\sim$ with $x \sim y$ iff $x = y$ or $x, y \in \mathbb{Z}$; all 
 > - Second countable: [[§1 Point-Set Topology Review#^def-1-6|Def §1.6]]; first countable at a point [[§1 Point-Set Topology Review#^def-1-7|Def §1.7]]
 > - (b) Quotient topology [[§4 Quotient Spaces and Open Maps#^def-4-2|Def §4.2]]; saturation, saturated set [[§4 Quotient Spaces and Open Maps#^def-4-5|Def §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def §4.6]]
 >
-> **Key results.** (a) [[§1 Point-Set Topology Review#^prop-1-4|Prop §1.4]], [[§1 Point-Set Topology Review#^prop-1-3|Prop §1.3]]. (b) [[§4 Quotient Spaces and Open Maps#^ex-4-4|Ex §4.4]] (this problem, proof in the notes), [[§4 Quotient Spaces and Open Maps#^rem-4-4|Remark: Why the Diagonal]] (why the diagonal), openness via saturations [[§4 Quotient Spaces and Open Maps#^prop-4-5|Prop §4.5]]; contrast: open quotients stay second countable [[§6 Open Quotients#^thm-6-3|Thm §6.3]].
+> **Key results.** (a) [[§1 Point-Set Topology Review#^prop-1-4|Prop §1.4]], [[§1 Point-Set Topology Review#^prop-1-3|Prop §1.3]]. (b) [[§4 Quotient Spaces and Open Maps#^ex-4-3|Ex §4.3]] (this problem, proof in the notes), [[§4 Quotient Spaces and Open Maps#^rem-4-4|Remark: Why the Diagonal]] (why the diagonal), openness via saturations [[§4 Quotient Spaces and Open Maps#^prop-4-6|Prop §4.6]]; contrast: open quotients stay second countable [[§6 Open Quotients#^thm-6-3|Thm §6.3]].
 >
 > **Difficulty** (a) 1, (b) 2. Submitted solution: caps radii at $1/4$ so the arms stay disjoint, proves $\pi^{-1}(\pi(U)) = U$ for open $U \supseteq \mathbb{Z}$, and uses $b_n = a_{n,n}/2$ with the witness $w_j = j + \tfrac34 a_{j,j}$. Careful bookkeeping of $\mathbb{N}$ vs $\mathbb{Z}$ indices.
 
@@ -164,7 +164,7 @@ A quotient map is a surjection with $U$ open iff $F^{-1}(U)$ open; then $Y \cong
 > - Product topology, projections: [[§3 Subspaces and Products#^def-3-3|Def §3.3]], [[§3 Subspaces and Products#^def-3-4|Def §3.4]]
 > - Open map: [[§4 Quotient Spaces and Open Maps#^def-4-3|Def §4.3]]
 >
-> **Key results.** Box characterization [[§3 Subspaces and Products#^prop-3-8|Prop §3.8]]; projections are open [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex §4.2]]; open surjections are quotient maps [[§5 Quotient Maps#^prop-5-5|Prop §5.5]]; [[§5 Quotient Maps#^ex-5-2|Ex §5.2]] (this problem); a quotient map presents its target [[§5 Quotient Maps#^prop-5-4|Prop §5.4]].
+> **Key results.** Box characterization [[§3 Subspaces and Products#^prop-3-8|Prop §3.8]]; projections are open [[§4 Quotient Spaces and Open Maps#^lem-4-3|Lem §4.3]]; open surjections are quotient maps [[§5 Quotient Maps#^prop-5-5|Prop §5.5]]; [[§5 Quotient Maps#^ex-5-2|Ex §5.2]] (this problem); a quotient map presents its target [[§5 Quotient Maps#^prop-5-4|Prop §5.4]].
 >
 > **Strategy (S4).** Continuous + open + surjective ⇒ quotient map; openness from $\pi_i(\text{box}) = U_{x,i}$.
 >

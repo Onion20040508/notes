@@ -59,7 +59,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 > &\iff \exists\, z \in U,\ \xi \in S^1 \text{ with } w = \xi z \iff w \in \bigcup_{\xi \in S^1} R_\xi(U),
 > \end{aligned}$$
 >
-> so the saturation $\pi^{-1}(\pi(U)) = \bigcup_{\xi \in S^1} R_\xi(U)$ is a union of open sets, hence open. By [[§4 Quotient Spaces and Open Maps#^prop-4-5|Proposition §4.5]], $\sim$ is open.
+> so the saturation $\pi^{-1}(\pi(U)) = \bigcup_{\xi \in S^1} R_\xi(U)$ is a union of open sets, hence open. By [[§4 Quotient Spaces and Open Maps#^prop-4-6|Proposition §4.6]], $\sim$ is open.
 >
 > *The graph is closed.* Define
 >
@@ -80,7 +80,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-1
 
-*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§18 Compact Spaces#^thm-18-9|590 §18.9]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§12 Metric Topology#^thm-12-4|590 §12.4]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§18 Compact Spaces#^thm-18-9|590 §18.9]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§12 Metric Topology#^thm-12-4|590 §12.4]]
 
 > [!remark]- Connections
 > - The general form for compact groups acting on compact Hausdorff spaces: [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], of which this is a special case ([[§13 Group Actions and Orbit Spaces#^rem-13-9|§13, Remark]]).

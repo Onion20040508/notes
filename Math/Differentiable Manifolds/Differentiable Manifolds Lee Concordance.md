@@ -210,7 +210,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition A.17 | [[§3 Subspaces and Products#^prop-3-3\|Prop. §3.3]], [[§3 Subspaces and Products#^cor-3-4\|Cor. §3.4]] |
 | Lemma A.19 | [[§1 Point-Set Topology Review#^prop-1-5\|Prop. §1.5]] |
 | Proposition A.23 | [[§3 Subspaces and Products#^thm-3-10\|Thm. §3.10]], [[§3 Subspaces and Products#^cor-3-11\|Cor. §3.11]] |
-| Theorem A.27 | [[§4 Quotient Spaces and Open Maps#^prop-4-4\|Prop. §4.4]], [[§5 Quotient Maps#^thm-5-1\|Thm. §5.1]], [[§5 Quotient Maps#^cor-5-3\|Cor. §5.3]], [[§5 Quotient Maps#^lem-5-7\|Lem. §5.7]], [[§5 Quotient Maps#^lem-5-8\|Lem. §5.8]] |
+| Theorem A.27 | [[§4 Quotient Spaces and Open Maps#^prop-4-5\|Prop. §4.5]], [[§5 Quotient Maps#^thm-5-1\|Thm. §5.1]], [[§5 Quotient Maps#^cor-5-3\|Cor. §5.3]], [[§5 Quotient Maps#^lem-5-7\|Lem. §5.7]], [[§5 Quotient Maps#^lem-5-8\|Lem. §5.8]] |
 | Theorem A.30 | [[§5 Quotient Maps#^thm-5-1\|Thm. §5.1]], [[§5 Quotient Maps#^cor-5-2\|Cor. §5.2]] |
 | Theorem A.31 | [[§5 Quotient Maps#^prop-5-4\|Prop. §5.4]] |
 | Proposition A.39 | [[§1 Point-Set Topology Review#^prop-1-7\|Prop. §1.7]] |

@@ -29,7 +29,7 @@ The line with two origins through the course: defined by its neighbourhood bases
 
 ^ex-10-1
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§12 Metric Topology#^lem-12-8|590 §12.8]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§12 Metric Topology#^lem-12-8|590 §12.8]]
 
 > [!remark]- Connections
 > - “A closed set contains the limits of its convergent sequences” is the [[§12 Metric Topology#^lem-12-8|Sequence Lemma, 590 §12.8]].

@@ -62,7 +62,7 @@ $X$ is first countable at $x_0$ if $x_0$ has a countable basis of neighborhoods,
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§1 Point-Set Topology Review#^def-1-7|§1.7]], Proposition [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] (the remark after it: the contrapositive).
 > - Q4: balls $B(x, 1/n)$ give a countable local basis in any metric space; the discrete metric on $\mathbb{R}$ is first countable but not second countable (Example [[§1 Point-Set Topology Review#^ex-1-2|§1.2]]).
-> - Q5: the bouquet of countably many circles, Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]]: a diagonal argument shrinks every candidate neighborhood.
+> - Q5: the bouquet of countably many circles, Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]]: a diagonal argument shrinks every candidate neighborhood.
 
 ### Priority 2 · stated or done in class
 
@@ -80,7 +80,7 @@ $X$ is second countable if it has a basis $\{U_\alpha\}_{\alpha \in A}$ with $A$
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§1 Point-Set Topology Review#^def-1-6|§1.6]]; basis: Definition [[§1 Point-Set Topology Review#^def-1-1|§1.1]].
 > - Example [[§1 Point-Set Topology Review#^ex-1-1|§1.1]] (balls with rational centres and rational radii). Non-examples: Example [[§1 Point-Set Topology Review#^ex-1-2|§1.2]] (every singleton is forced into the basis), Example [[§2 Topological Manifolds#^ex-2-3|§2.3]].
-> - Used in: Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]], Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]] (needs an open relation; Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]] shows a quotient that is not second countable).
+> - Used in: Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]], Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]] (needs an open relation; Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] shows a quotient that is not second countable).
 
 #### Hausdorff · P2
 
@@ -175,7 +175,7 @@ The topology on $X \times Y$ with basis the boxes $U \times V$, $U$, $V$ open, s
 - [ ] Q4 **[why]** Is every open subset of $X \times Y$ a box? What is the correct description of open sets (the "box around each point" picture)?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§3 Subspaces and Products#^def-3-3|§3.3]]; Proposition [[§3 Subspaces and Products#^prop-3-8|§3.8]]; Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]]; Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]] (an open set is a union of boxes, and $\pi_X(U \times V) = U$), Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]] (separate by boxes).
+> - Definition [[§3 Subspaces and Products#^def-3-3|§3.3]]; Proposition [[§3 Subspaces and Products#^prop-3-8|§3.8]]; Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]]; Q3: Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]] (an open set is a union of boxes, and $\pi_X(U \times V) = U$), Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]] (separate by boxes).
 > - The box picture is used again in Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] and Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]].
 
 #### Quotient topology · P2
@@ -192,7 +192,7 @@ $W \subseteq X/{\sim}$ is open iff $\pi^{-1}(W)$ is open in $X$, see Definition 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§4 Quotient Spaces and Open Maps#^def-4-1|§4.1]], Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]]; Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]]; the remark *Warning: Nothing Is Automatically Inherited* in [[§4 Quotient Spaces and Open Maps|§4]].
-> - Q3: Definition [[§9 Complex Projective Space#^def-9-1|§9.1]]. Q4: Example [[§4 Quotient Spaces and Open Maps#^ex-4-1|§4.1]], Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]].
+> - Q3: Definition [[§9 Complex Projective Space#^def-9-1|§9.1]]. Q4: Example [[§4 Quotient Spaces and Open Maps#^ex-4-1|§4.1]], Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]].
 > - Q5: Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-2|§4.2]], whose proof the notes leave as an exercise ("Assigned in lecture"): pull each basic set of Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]] back along $\pi$.
 
 #### Quotient map · P2
@@ -210,7 +210,7 @@ A surjection $F : X \to Y$ with $U$ open iff $F^{-1}(U)$ open, see Definition [[
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§5 Quotient Maps#^def-5-1|§5.1]]; constant on fibres: Definition [[§5 Quotient Maps#^def-5-2|§5.2]]; Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]].
 > - Q2: Example [[§5 Quotient Maps#^ex-5-1|§5.1]], Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]] (→ also drilled as [[Differentiable Manifolds HW Drill#^hw1-5|HW1.5]]).
-> - Q4: Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2|§15.2]] ($\mathbb{R}_{\mathrm{disc}} \to \mathbb{R}$; a bijective quotient map is a homeomorphism). Q5: the projection of Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]].
+> - Q4: Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2|§15.2]] ($\mathbb{R}_{\mathrm{disc}} \to \mathbb{R}$; a bijective quotient map is a homeomorphism). Q5: the projection of Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]].
 
 #### Open map · P2
 
@@ -224,8 +224,8 @@ A continuous $F$ with $F(U)$ open for every open $U$, see Definition [[§4 Quoti
 - [ ] Q4 **[use]** Which theorems about quotients need the projection to be open?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-3|§4.3]]; Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]; Corollary [[§36 Submersions#^cor-36-9|§36.9]] ("locally they are projections").
-> - Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]]. Q4: Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]], Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]].
+> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-3|§4.3]]; Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]; Corollary [[§36 Submersions#^cor-36-9|§36.9]] ("locally they are projections").
+> - Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]. Q4: Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]], Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]].
 
 #### Open equivalence relation · P2
 
@@ -240,9 +240,9 @@ $\sim$ is open if $\pi : X \to X/{\sim}$ is an open map, see Definition [[§4 Qu
 - [ ] Q5 **[why]** Where does the proof of second countability use openness? Which non-open quotient of $\mathbb{R}$ fails to be second countable?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-4|§4.4]]; Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]].
-> - Q2: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] ($\tilde U = \bigcup_{g} gU$, each $gU$ open by Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]]). Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]].
-> - Q4: Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]]. Q5: images of a countable basis are open only if $\pi$ is open (Lemma [[§5 Quotient Maps#^lem-5-6|§5.6]]); Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]].
+> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-4|§4.4]]; Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]].
+> - Q2: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] ($\tilde U = \bigcup_{g} gU$, each $gU$ open by Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]]). Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]].
+> - Q4: Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]]. Q5: images of a countable basis are open only if $\pi$ is open (Lemma [[§5 Quotient Maps#^lem-5-6|§5.6]]); Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]].
 
 #### Saturation · P2
 
@@ -256,8 +256,8 @@ $\tilde U = \pi^{-1}(\pi(U))$, the union of the classes meeting $U$, see Definit
 - [ ] Q4 **[use]** Restate "$\sim$ is open" using saturations.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-5|§4.5]]; Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]].
-> - Q2: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] (Uribe stressed: the saturation is the union of the translates $gU$). Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]]. Q4: Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]].
+> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-5|§4.5]]; Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-4|§4.4]].
+> - Q2: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] (Uribe stressed: the saturation is the union of the translates $gU$). Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]. Q4: Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]].
 
 #### Saturated set · P2
 
@@ -271,7 +271,7 @@ $S$ is saturated if $S = \tilde S$, equivalently a union of classes, equivalentl
 - [ ] Q4 **[example]** For the orbit relation of $\mathrm{SO}(2)$ on $\mathbb{R}^2$, which open sets are saturated?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-6|§4.6]]; Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]] (part 4); Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-4|§4.4]].
+> - Definition [[§4 Quotient Spaces and Open Maps#^def-4-6|§4.6]]; Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-4|§4.4]] (part 4); Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]].
 > - Q4: Example [[§13 Group Actions and Orbit Spaces#^ex-13-4|§13.4]] (orbits are the circles about $0$ and the origin).
 
 #### Topological group · P2
@@ -533,7 +533,7 @@ A subspace of a $T_2$ (resp. second countable) space is $T_2$ (resp. second coun
 - [ ] Q3 Subspace, second countable: which family is a countable basis of $S$, and which lemma says it is a basis (Lemma [[§3 Subspaces and Products#^lem-3-1|§3.1]])?
 - [ ] Q4 Product, $T_2$: if $(x,y) \ne (x',y')$, say $x \ne x'$, which two open sets of $X \times Y$ separate them?
 - [ ] Q5 Product, second countable: why is $\{U_\alpha \times V_\beta\}$ a basis? (Use the box characterization, Proposition [[§3 Subspaces and Products#^prop-3-8|§3.8]].)
-- [ ] Q6 **[why]** Quotients do *not* inherit these properties: which two examples show it (Example [[§4 Quotient Spaces and Open Maps#^ex-4-1|§4.1]], Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]])?
+- [ ] Q6 **[why]** Quotients do *not* inherit these properties: which two examples show it (Example [[§4 Quotient Spaces and Open Maps#^ex-4-1|§4.1]], Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Subspace: intersect the separating sets (resp. the basis) with $S$.
@@ -542,9 +542,9 @@ A subspace of a $T_2$ (resp. second countable) space is $T_2$ (resp. second coun
 
 #### Projections are open · P2
 
-$\pi_X : X \times Y \to X$ is an open map, see Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]. *Source: Lecture 2 ("go home and prove them. Check yourself"); filled in.* **[class exercise, Lecture 2]**
+$\pi_X : X \times Y \to X$ is an open map, see Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]. *Source: Lecture 2 ("go home and prove them. Check yourself"); filled in.* **[class exercise, Lecture 2]**
 
-^nd-ex-4-2
+^nd-lem-4-3
 
 - [ ] Q1 **[def]** Define an open map (Definition [[§4 Quotient Spaces and Open Maps#^def-4-3|§4.3]]).
 - [ ] Q2 Compute $\pi_X(U \times V)$ for a basic open set. What if $V = \emptyset$?
@@ -575,15 +575,15 @@ The quotient of two copies of $\mathbb{R}$ glued along $x \neq 0$ is homeomorphi
 
 #### Openness via saturations · P2
 
-An equivalence relation is open iff the saturation $\tilde U = \pi^{-1}(\pi(U))$ of every open $U$ is open, see Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]]. *Source: Lecture 2 (stated); proof filled in.*
+An equivalence relation is open iff the saturation $\tilde U = \pi^{-1}(\pi(U))$ of every open $U$ is open, see Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]]. *Source: Lecture 2 (stated); proof filled in.*
 
-^nd-prop-4-5
+^nd-prop-4-6
 
 - [ ] Q1 **[def]** Define an open equivalence relation (Definition [[§4 Quotient Spaces and Open Maps#^def-4-4|§4.4]]) and the saturation (Definition [[§4 Quotient Spaces and Open Maps#^def-4-5|§4.5]]).
 - [ ] Q2 **[state]** State the proposition.
 - [ ] Q3 By the definition of the quotient topology, when is $\pi(U)$ open in $X/{\sim}$?
 - [ ] Q4 Conclude the equivalence in one line.
-- [ ] Q5 **[why]** Give a relation that is not open (Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]]): which open set has a non-open saturation?
+- [ ] Q5 **[why]** Give a relation that is not open (Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]): which open set has a non-open saturation?
 
 > [!tip]- Hints: route of the proof in the notes
 > - $\pi(U)$ open $\iff \pi^{-1}(\pi(U))$ open, by definition of the quotient topology.
@@ -598,7 +598,7 @@ If $\pi : Y \to Q$ is a continuous open surjection and $\mathcal{B}$ a basis of 
 - [ ] Q1 **[state]** State the lemma.
 - [ ] Q2 Why is each $\pi(B)$ open?
 - [ ] Q3 Given $q \in W$ open: lift $q$ to $y$, find $B \in \mathcal{B}$ with $y \in B \subseteq \pi^{-1}(W)$, and conclude $q \in \pi(B) \subseteq W$.
-- [ ] Q4 **[why]** Which hypotheses are used where? Why does a non-open quotient map fail to preserve second countability (Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]])?
+- [ ] Q4 **[why]** Which hypotheses are used where? Why does a non-open quotient map fail to preserve second countability (Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Openness gives open images; continuity and surjectivity give the basis property; $\pi(\pi^{-1}(W)) \subseteq W$.
@@ -630,7 +630,7 @@ If $\sim$ is open and $X$ is second countable, then $X/{\sim}$ is second countab
 - [ ] Q1 **[state]** State the theorem.
 - [ ] Q2 Why is $\pi : X \to X/{\sim}$ a continuous open surjection?
 - [ ] Q3 Which lemma finishes, and what is the countable basis of the quotient?
-- [ ] Q4 **[why]** Without openness the conclusion fails: describe $\mathbb{R}$ with $\mathbb{Z}$ collapsed (Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]], [[Differentiable Manifolds HW Drill#^hw1-4-b|HW1.4(b)]]).
+- [ ] Q4 **[why]** Without openness the conclusion fails: describe $\mathbb{R}$ with $\mathbb{Z}$ collapsed (Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]], [[Differentiable Manifolds HW Drill#^hw1-4-b|HW1.4(b)]]).
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S4.
@@ -681,7 +681,7 @@ For a continuous action, the orbit relation is open: the saturation of an open $
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S4 (orbit spaces are open quotients).
-> - Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]]; $y \sim x$ for some $x \in U$ iff $y = g \cdot x$, i.e. $y \in L_g(U)$.
+> - Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]]; $y \sim x$ for some $x \in U$ iff $y = g \cdot x$, i.e. $y \in L_g(U)$.
 > - Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]]: homeomorphisms are open; union of open is open.
 > - Consequence: Theorem [[§6 Open Quotients#^thm-6-3|§6.3]] applies to every continuous action.
 
@@ -849,7 +849,7 @@ A continuous open surjection is a quotient map, see Proposition [[§5 Quotient M
 - [ ] Q1 **[state]** State the proposition; what has to be shown, given the definition of quotient map?
 - [ ] Q2 Which direction of "$U$ open $\iff F^{-1}(U)$ open" is continuity?
 - [ ] Q3 For the other direction, compute $F(F^{-1}(U))$. Which hypotheses do you use, and where?
-- [ ] Q4 **[why]** Give a quotient map that is not open (the quotient of Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]]), so the converse fails.
+- [ ] Q4 **[why]** Give a quotient map that is not open (the quotient of Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]), so the converse fails.
 - [ ] Q5 Name two places the course uses this: projections ([[Differentiable Manifolds HW Drill#^hw1-5|HW1.5]]), the coset map $G \to G/H$ (Corollary [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2|§15.2]]).
 
 > [!tip]- Hints: route of the proof in the notes
@@ -2832,7 +2832,7 @@ A submersion maps open sets to open sets, see Corollary [[§36 Submersions#^cor-
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S8.
-> - Projections are open (Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]); $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$.
+> - Projections are open (Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]); $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$.
 
 ### Priority 4 · notes only (optional before the midterm)
 

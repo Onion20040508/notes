@@ -1349,9 +1349,9 @@ The single most useful fact about the quotient topology --- that a map \emph{out
 A continuous map $F : X \to Y$ between topological spaces is \textbf{open} if for every open $U \subseteq X$, the image $F(U)$ is open in $Y$.
 \end{defbox}
 
-\begin{exbox}[Projections Are Open]\exlabel{ex:proj-open}
+\begin{lembox}[Projections Are Open]\thmlabel{lem:proj-open}
 $\pi_X : X \times Y \to X$ is always an open map.
-\end{exbox}
+\end{lembox}
 
 \begin{proof}[Proof (not given in lecture --- ``go home and check yourself'')]
 First, for a basis element: $\pi_X(U \times V) = U$ if $V \neq \emptyset$ (and $= \emptyset$ if $V = \emptyset$), open either way. A general open $A \subseteq X \times Y$ is a union of basis elements, $A = \bigcup_i U_i \times V_i$, and images commute with unions:
@@ -1634,7 +1634,7 @@ A continuous open surjection $F : X \to Y$ is a quotient map.
 \end{proof}
 
 \begin{exbox}[Projections Are Quotient Maps]\exlabel{ex:proj-quotient}
-If $X_1, \ldots, X_n$ are nonempty topological spaces, every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open (Example~\ref{ex:proj-open} and induction), so Proposition~\ref{prop:open-surj-quotient} applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
+If $X_1, \ldots, X_n$ are nonempty topological spaces, every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open (Lemma~\ref{lem:proj-open} and induction), so Proposition~\ref{prop:open-surj-quotient} applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
 \end{exbox}
 
 \begin{rembox}\label{rem:new-spaces-4}
@@ -9240,7 +9240,7 @@ Let $q = F(p)$ with $p \in W$, and take the charts of the theorem at $p$, shrink
 \[
 F(U) = \psi^{-1}\big(\tilde F(\hat\varphi(U))\big) = \psi^{-1}\big(\mathrm{pr}(\hat\varphi(U))\big) .
 \]
-Projections are open (Example~\ref{ex:proj-open}, for $\mathbb{R}^m = \mathbb{R}^n \times \mathbb{R}^{m-n}$), and $\hat\varphi(U)$ is open, being the image of a chart, so $\mathrm{pr}(\hat\varphi(U))$ is an open subset of $\psi(V)$; it lies in $\psi(V)$ because it equals $\tilde F(\hat\varphi(U))$. Since $\psi : V \to \psi(V)$ is a homeomorphism, $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$ (Proposition~\ref{fact:cont}(2)), and $V$ is open in $N$; so $F(U)$ is open in $N$. It contains $q$ and lies in $F(W)$: $q = F(p)$ with $p \in U$, and $U \subseteq W$.
+Projections are open (Lemma~\ref{lem:proj-open}, for $\mathbb{R}^m = \mathbb{R}^n \times \mathbb{R}^{m-n}$), and $\hat\varphi(U)$ is open, being the image of a chart, so $\mathrm{pr}(\hat\varphi(U))$ is an open subset of $\psi(V)$; it lies in $\psi(V)$ because it equals $\tilde F(\hat\varphi(U))$. Since $\psi : V \to \psi(V)$ is a homeomorphism, $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$ (Proposition~\ref{fact:cont}(2)), and $V$ is open in $N$; so $F(U)$ is open in $N$. It contains $q$ and lies in $F(W)$: $q = F(p)$ with $p \in U$, and $U \subseteq W$.
 \end{proof}
 
 \begin{thmbox}[Submersions from Compact Manifolds]\thmlabel{thm:compact-submersion}
