@@ -86,6 +86,7 @@ The notes show the course building each object more than once and then proving t
 ## T1. Topological manifolds, quotients, group actions (§1–§16)
 **Language**
 - [ ] Definition [[§1 Point-Set Topology Review#^def-1-6|§1.6]] Second Countable and Definition [[§1 Point-Set Topology Review#^def-1-8|§1.8]] Hausdorff ($T_2$)
+- [ ] Definition [[§1 Point-Set Topology Review#^def-1-5|§1.5]] Basis of Neighborhoods at a Point and Definition [[§1 Point-Set Topology Review#^def-1-7|§1.7]] First Countable at a Point: first countability, the local version of second countability (Proposition [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] Second Countable Implies First Countable; HW1.4)
 - [ ] Definition [[§2 Topological Manifolds#^def-2-1|§2.1]] Locally Euclidean, Definition [[§2 Topological Manifolds#^def-2-2|§2.2]] Topological Manifold, Definition [[§2 Topological Manifolds#^def-2-3|§2.3]] Chart
 - [ ] Definition [[§3 Subspaces and Products#^def-3-1|§3.1]] Subspace Topology, Definition [[§3 Subspaces and Products#^def-3-3|§3.3]] Product Topology
 - [ ] Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]] Quotient Topology, Definition [[§5 Quotient Maps#^def-5-1|§5.1]] Quotient Map, Definition [[§4 Quotient Spaces and Open Maps#^def-4-3|§4.3]] Open Map, Definition [[§4 Quotient Spaces and Open Maps#^def-4-4|§4.4]] Open Equivalence Relation

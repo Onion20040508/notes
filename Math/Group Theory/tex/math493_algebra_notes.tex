@@ -5103,7 +5103,7 @@ Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the rema
 
 \chapter{The Sylow Theorems}\label{ch:sylow}
 
-\textit{Source: Worksheet 10 (handed out with Worksheet 9, Wed Oct 7); Lecture and Worksheet 10 (Mon Oct 12); worksheet session (Wed Oct 14). Proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
+\textit{Source: Worksheet 10 (handed out with Worksheet 9, Wed Oct 7); Lecture and Worksheet 10 (Mon Oct 12); worksheet session (Wed Oct 14); lecture (Fri Oct 16). Proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
 
 Lagrange's theorem says that the order of a subgroup divides $|G|$, and its converse fails; Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: subgroups of that order exist, and any two are conjugate. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly, and pull it back with a fixed-point argument.
 
@@ -5336,17 +5336,116 @@ Let $G$ be a finite group and let $P$ be a Sylow $p$-subgroup with $|P| = p^k$.
 \textbf{(2) (board 10/14).} Since $H \leq G$, $|H|$ divides $|G| = p^k m$ with $p \nmid m$ (Theorem~\ref{thm:lagrange}); as $p^k$ divides $|H|$, the largest power of $p$ dividing $|H|$ is exactly $p^k$. By the First Sylow Theorem (Theorem~\ref{thm:sylow-first}), $H$ has a Sylow $p$-subgroup $Q$, of order $p^k$. Then $Q$ is a $p$-subgroup of $G$, so by (1) $Q \subseteq gPg^{-1}$ for some $g \in G$; both have $p^k$ elements, so $Q = gPg^{-1}$. Hence $H \supseteq Q = gPg^{-1}$.
 \end{proof}
 
-\begin{thmbox}[{The Second Sylow Theorem (WS 10.6; stated 10/14, to be proved Fri Oct 16)}]\label{thm:sylow-second}
+\begin{thmbox}[{The Second Sylow Theorem (WS 10.6; lecture 10/16)}]\label{thm:sylow-second}
 Let $G$ be a finite group and let $P_1$ and $P_2$ be two Sylow $p$-subgroups of $G$. Then there is some $g \in G$ such that $P_2 = gP_1g^{-1}$.
 \end{thmbox}
 
-\proofpending
+\begin{proof}
+\textit{(Lecture 10/16, ``by 10.3''.)} Let $|G| = p^k m$ with $p \nmid m$, so $|P_1| = |P_2| = p^k$. Apply WS 10.3(2) (Proposition~\ref{prop:sylow-of-subgroup}) with $\Gamma = G$, $\Pi = P_1$, and the subgroup $P_2$ in the role of $G$: there is $g \in G$ such that $P_2 \cap gP_1g^{-1}$ is a Sylow $p$-subgroup of $P_2$. Since $|P_2| = p^k$, a Sylow $p$-subgroup of $P_2$ has $p^k$ elements, so it is $P_2$ itself:
+\[ P_2 \cap gP_1g^{-1} = P_2, \qquad\text{that is,}\qquad P_2 \subseteq gP_1g^{-1}. \]
+Conjugation by $g$ is an isomorphism (Proposition~\ref{prop:conjugation-automorphism}), so $|gP_1g^{-1}| = |P_1| = p^k = |P_2|$, and the inclusion is an equality: $P_2 = gP_1g^{-1}$.
+\end{proof}
 
-\begin{thmbox}[{The Third Sylow Theorem (stated on WS 10 and 10/14; to be proved Fri Oct 16)}]\label{thm:sylow-third}
+\begin{corbox}[{A Normal Sylow Subgroup Is the Only One (lecture 10/16)}]\label{cor:sylow-normal-unique}
+Let $P$ be a Sylow $p$-subgroup of a finite group $G$.
+\begin{enumerate}
+    \item If $P \trianglelefteq G$, then $P$ is the only Sylow $p$-subgroup of $G$.
+    \item Conversely, if $P$ is the only Sylow $p$-subgroup of $G$, then $P \trianglelefteq G$.
+\end{enumerate}
+\end{corbox}
+
+\begin{proof}
+\textbf{(1) (lecture).} Let $Q$ be any Sylow $p$-subgroup. By the Second Sylow Theorem (Theorem~\ref{thm:sylow-second}), $Q = gPg^{-1}$ for some $g \in G$, and $gPg^{-1} = P$ because $P$ is normal (Definition~\ref{def:normal-subgroup}). So $Q = P$.
+
+\textbf{(2)} \textit{(Not stated in lecture; used in the example of order $15$ below.)} For $g \in G$, $gPg^{-1}$ is a subgroup with $|gPg^{-1}| = |P|$ (Proposition~\ref{prop:conjugation-automorphism}), so it is a Sylow $p$-subgroup, hence equal to $P$. So $gPg^{-1} = P$ for every $g \in G$: $P$ is normal.
+\end{proof}
+
+\begin{lembox}[{The Order of a Product of Subgroups}]\label{lem:order-product-subgroups}
+Let $H$ and $K$ be finite subgroups of a group $G$, and $HK = \{hk : h \in H,\ k \in K\}$ (Definition~\ref{def:product-set-hn}). Then
+\[ |HK| = \frac{|H|\,|K|}{|H \cap K|}. \]
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in. The lecture uses the formula in the proof of the Third Sylow Theorem.)} Consider the surjective map $\mu : H \times K \to HK$, $\mu(h, k) = hk$. We show that every element of $HK$ has exactly $|H \cap K|$ preimages; then $|H \times K| = |HK| \cdot |H \cap K|$, which is the formula.
+
+Fix $hk \in HK$. For $d \in H \cap K$, $(hd, d^{-1}k) \in H \times K$ and $\mu(hd, d^{-1}k) = hdd^{-1}k = hk$; distinct $d$ give distinct pairs. Conversely, if $\mu(h', k') = hk$, put $d = h^{-1}h'$. Then $d \in H$, and $d = h^{-1}h' = k\,k'^{-1}$ (from $h'k' = hk$), so $d \in K$; and $h' = hd$, $k' = d^{-1}k$. So the preimages of $hk$ are exactly the $|H \cap K|$ pairs $(hd, d^{-1}k)$, $d \in H \cap K$.
+\end{proof}
+
+\begin{thmbox}[{The Third Sylow Theorem (stated on WS 10; lecture 10/16)}]\label{thm:sylow-third}
 For any finite group $G$, the number of Sylow $p$-subgroups of $G$ is congruent to $1 \bmod p$.
 \end{thmbox}
 
-\proofpending
+\begin{proof}
+\textit{(Lecture 10/16.)} Let $|G| = p^k m$ with $p \nmid m$, and let $X$ be the set of Sylow $p$-subgroups of $G$. $X$ is nonempty by the First Sylow Theorem (Theorem~\ref{thm:sylow-first}); fix $P \in X$.
+
+\emph{The action.} $G$ acts on $X$ by conjugation, $g \star Q = gQg^{-1}$: $gQg^{-1}$ is a subgroup with $|gQg^{-1}| = |Q|$ (Proposition~\ref{prop:conjugation-automorphism}), so it lies in $X$, and the action axioms are checked as for the conjugation action on elements (Proposition~\ref{prop:conjugation-action}). By the Second Sylow Theorem there is only one orbit. Restrict the action to $P$.
+
+\emph{Counting modulo $p$.} $X$ breaks up into $P$-orbits (Proposition~\ref{prop:orbits-partition-x}). Each $P$-orbit has size dividing $|P| = p^k$ (Orbit--Stabilizer, Theorem~\ref{thm:orbit-stabilizer}), so size $p^\ell$ for some $\ell \geq 0$; it is $\equiv 0 \pmod p$ unless $\ell = 0$, that is, unless the orbit is a single fixed point. Writing $X^P = \{Q \in X : xQx^{-1} = Q \text{ for all } x \in P\}$ for the set of points fixed by $P$,
+\[ |X| \equiv |X^P| \pmod p. \]
+$P$ itself is in $X^P$: for $x \in P$, $xPx^{-1} = P$.
+
+\emph{No other fixed point.} We show that if $Q \in X$ and $Q \neq P$, then $P$ does not fix $Q$. Assume for contradiction that $xQx^{-1} = Q$ for all $x \in P$.
+
+\emph{Claim: $PQ$ is a subgroup of $G$.} For $x_1, x_2 \in P$ and $q_1, q_2 \in Q$,
+\[ (x_1q_1)(x_2q_2) = (x_1x_2)\,(x_2^{-1}q_1x_2)\,q_2 , \]
+with $x_1x_2 \in P$ and $x_2^{-1}q_1x_2 \in Q$ by the assumption (applied to $x_2^{-1} \in P$); so $PQ$ is closed under products. \textit{(Filled in:)} $e = ee \in PQ$, and $(xq)^{-1} = q^{-1}x^{-1} = x^{-1}\,(xq^{-1}x^{-1}) \in PQ$, again by the assumption. This proves the claim.
+
+\emph{Its order.} $P \cap Q$ is a subgroup of $P$, so $|P \cap Q| = p^j$ with $j \leq k$ (Lagrange, Theorem~\ref{thm:lagrange}); and $j < k$, since $j = k$ would give $P = P \cap Q \subseteq Q$, hence $P = Q$ (both have $p^k$ elements). By the Order of a Product of Subgroups (Lemma~\ref{lem:order-product-subgroups}),
+\[ |PQ| = \frac{|P|\,|Q|}{|P \cap Q|} = \frac{p^k \cdot p^k}{p^j} = p^{2k - j}, \qquad 2k - j > k. \]
+But $p^k$ is the largest power of $p$ dividing $|G|$, so $|PQ| \nmid |G|$, contradicting Lagrange. So $P$ fixes no $Q \neq P$.
+
+\emph{Conclusion.} $X^P = \{P\}$, so $|X| = 1 + (\text{sizes } p^\ell,\ \ell \geq 1, \text{ of the other orbits}) \equiv 1 \pmod p$.
+\end{proof}
+
+\begin{corbox}[{The Number of Sylow Subgroups Divides $|G|$ (lecture 10/16)}]\label{cor:sylow-number-divides}
+Let $G$ be finite, $|G| = p^k m$ with $p \nmid m$, and let $n_p$ be the number of Sylow $p$-subgroups of $G$. Then $n_p$ divides $|G|$; in fact $n_p$ divides $m$. Together with the Third Sylow Theorem: $n_p \mid m$ and $n_p \equiv 1 \pmod p$.
+\end{corbox}
+
+\begin{proof}
+By the Second Sylow Theorem, the conjugation action of $G$ on the set $X$ of Sylow $p$-subgroups (proof of Theorem~\ref{thm:sylow-third}) has one orbit, $X = G \star P$. By Orbit--Stabilizer (Theorem~\ref{thm:orbit-stabilizer}), $|G| = n_p \cdot |\operatorname{Stab}_G(P)|$, so $n_p$ divides $|G|$ (lecture). \textit{(Not from lecture:)} $P \subseteq \operatorname{Stab}_G(P)$, since $xPx^{-1} = P$ for $x \in P$; so $p^k$ divides $|\operatorname{Stab}_G(P)|$ (Lagrange), and $n_p = p^k m / |\operatorname{Stab}_G(P)|$ divides $m$.
+\end{proof}
+
+\begin{exbox}[{The Sylow $5$-Subgroups of $S_5$ (lecture 10/16)}]\label{ex:sylow-5-s5}
+$|S_5| = 120 = 2^3 \cdot 3 \cdot 5$, so a Sylow $5$-subgroup has order $5$. It is cyclic, generated by each of its $4$ non-identity elements (Groups of Prime Order, Theorem~\ref{thm:groups-prime-order}), and an element of order $5$ in $S_5$ is a $5$-cycle. There are $4! = 24$ five-cycles: writing a $5$-cycle as $(1\,a\,b\,c\,d)$, it is determined by the order of $a, b, c, d$. Two distinct subgroups of order $5$ meet in a subgroup whose order divides $5$ and is not $5$, so only in $e$. Hence the $24$ five-cycles fall into disjoint groups of $4$, one for each Sylow $5$-subgroup:
+\[ n_5 = \frac{24}{4} = 6 . \]
+As the Sylow theorems require, $6 \equiv 1 \pmod 5$ and $6$ divides $120 / 5 = 24$ (Corollary~\ref{cor:sylow-number-divides}).
+\end{exbox}
+
+\subsection{\texorpdfstring{Groups of Order $pq$}{Groups of Order pq}}\label{sub:order-pq}
+
+\textit{Lecture 10/16.} The first classification by the Sylow theorems: counting Sylow subgroups forces them to be normal, and two normal subgroups of coprime orders split the group.
+
+\begin{exbox}[{Groups of Order $15$ (lecture 10/16)}]\label{ex:groups-order-15}
+Let $|G| = 15 = 3 \cdot 5$. Then $G \cong \mathbb{Z}/15\mathbb{Z}$.
+\begin{enumerate}
+    \item \emph{One Sylow $3$-subgroup.} $n_3$ divides $15$, so $n_3 \in \{1, 3, 5, 15\}$ (Corollary~\ref{cor:sylow-number-divides}), and $n_3 \equiv 1 \pmod 3$ (Theorem~\ref{thm:sylow-third}); only $1$ qualifies. So there is one Sylow $3$-subgroup $P_3$, and it is normal (Corollary~\ref{cor:sylow-normal-unique}(2)).
+    \item \emph{One Sylow $5$-subgroup.} The same for $5$: of $1, 3, 5, 15$ only $1$ is $\equiv 1 \pmod 5$. So $P_5$ is unique and normal.
+    \item \emph{Trivial intersection.} $|P_3 \cap P_5|$ divides $3$ and $5$ (Lagrange), so $P_3 \cap P_5 = \{e\}$.
+    \item \emph{Splitting.} $P_3$ and $P_5$ are normal with trivial intersection and $|P_3|\,|P_5| = 15 = |G|$, so by Internal Direct Products (Lemma~\ref{lem:internal-direct-product}) $G = P_3P_5 \cong P_3 \times P_5$. Each $P_i$ has prime order, hence is cyclic (Theorem~\ref{thm:groups-prime-order}):
+    \[ G \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \cong \mathbb{Z}/15\mathbb{Z} \]
+    by the Chinese Remainder Theorem (Theorem~\ref{thm:chinese-remainder-theorem}).
+\end{enumerate}
+So every group with $15$ elements is cyclic.
+\end{exbox}
+
+\begin{propbox}[{Groups of Order $pq$ (lecture 10/16: ``same for $|G| = pq$'')}]\label{prop:groups-order-pq}
+Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G \cong \mathbb{Z}/pq\mathbb{Z}$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Filled in, following the case $|G| = 15$.)} The divisors of $pq$ are $1, p, q, pq$.
+
+\emph{$n_q = 1$.} $n_q$ divides $pq$ and $n_q \equiv 1 \pmod q$ (Corollary~\ref{cor:sylow-number-divides}, Theorem~\ref{thm:sylow-third}). Modulo $q$: $q \equiv pq \equiv 0$, and $p \not\equiv 1$ since $1 < p < q$. So $n_q = 1$.
+
+\emph{$n_p = 1$.} $n_p$ divides $pq$ and $n_p \equiv 1 \pmod p$. Modulo $p$: $p \equiv pq \equiv 0$, and $q \not\equiv 1$ by hypothesis. So $n_p = 1$.
+
+\emph{Conclusion.} The unique Sylow subgroups $P_p$ and $P_q$ are normal (Corollary~\ref{cor:sylow-normal-unique}(2)), of prime orders $p$ and $q$, so cyclic (Theorem~\ref{thm:groups-prime-order}); $P_p \cap P_q = \{e\}$ because its order divides $p$ and $q$ (Lagrange); and $|P_p|\,|P_q| = pq = |G|$. By Internal Direct Products (Lemma~\ref{lem:internal-direct-product}) and the Chinese Remainder Theorem (Theorem~\ref{thm:chinese-remainder-theorem}, $\gcd(p, q) = 1$),
+\[ G \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z} \cong \mathbb{Z}/pq\mathbb{Z}. \]
+\end{proof}
+
+\begin{rembox}[{When $q \equiv 1 \pmod p$}]\label{rem:order-pq-hypothesis}
+\textit{(Not from lecture.)} The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step.
+\end{rembox}
 
 Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
 
@@ -5456,6 +5555,7 @@ Wed Oct 7 \newline Worksheet 10 (handed out) & $p$-groups, Sylow subgroups, the 
 Fri Oct 9 \newline lecture; quiz & WS 9.2--9.3 completed; abelian quotients via commutators; subquotient injection/surjection; derived series as a test (one direction of WS 9.6) & \ref{sec:commutators}, \ref{sec:solvable}, \ref{sec:derived-series} \\
 Mon Oct 12 \newline lecture; Worksheet 10 & WS 9.6 completed; $p$-subgroups and Sylow subgroups; conjugating a $p$-subgroup into a Sylow subgroup & \ref{sec:derived-series}, \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
 Wed Oct 14 \newline Worksheet 10 & WS 10.3 proved, hence the First Sylow Theorem; WS 10.5(2); Sylow I--III stated; $GL_2(\mathbb{F}_5)$ example & \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
+Fri Oct 16 \newline lecture & Sylow II proved from WS 10.3; Sylow III proved ($P$ acting on the Sylow subgroups by conjugation); a normal Sylow subgroup is unique; $n_p \mid |G|$; the six Sylow $5$-subgroups of $S_5$; groups of order $15$ and $pq$ & \ref{sec:sylow-theorems} \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

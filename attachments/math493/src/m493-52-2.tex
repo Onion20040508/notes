@@ -1,0 +1,12 @@
+% Figure from MATH 493 notes, section 52. Compile with the notes preamble.
+\begin{tikzpicture}[font=\scriptsize]
+  \foreach \c [count=\i from 0] in {3\,4\,5, 3\,5\,4, 4\,3\,5, 4\,5\,3, 5\,3\,4, 5\,4\,3} {
+    \pgfmathsetmacro{\a}{90 - 60*\i}
+    \fill[figB!8, rotate=\a] (0,0) .. controls (1.0,0.75) and (2.4,0.75) .. (2.85,0) .. controls (2.4,-0.75) and (1.0,-0.75) .. (0,0);
+    \draw[figB!70!black, rotate=\a] (0,0) .. controls (1.0,0.75) and (2.4,0.75) .. (2.85,0) .. controls (2.4,-0.75) and (1.0,-0.75) .. (0,0);
+    \node at (\a:1.95) {$\langle (1\,2\,\c) \rangle$};
+    \node[black!55] at (\a:3.35) {$4$ five-cycles};
+  }
+  \fill[white] (0,0) circle (0.28); \draw (0,0) circle (0.28); \node at (0,0) {$e$};
+  \node[font=\small] at (0,-4.0) {$24$ five-cycles $= 6 \times 4$, \quad $n_5 = 6 \equiv 1 \pmod 5$};
+\end{tikzpicture}

@@ -54,7 +54,7 @@ Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m
 > 1. $|S_3| = 6 = 2 \cdot 3$. The [[§51 p-Groups and Sylow Subgroups#^def-51-2|Sylow]] $2$-subgroups are $\langle (1\,2) \rangle$, $\langle (1\,3) \rangle$, $\langle (2\,3) \rangle$, and the only Sylow $3$-subgroup is $A_3 = \langle (1\,2\,3) \rangle$.
 > 2. $|S_4| = 24 = 2^3 \cdot 3$. The Sylow $2$-subgroups have order $8$: they are the three subgroups $K \cup \tau K$ ($\tau$ a transposition) containing $K$, found in The Correspondence for $S_4$ and $K$ ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Example §45.2]]). The Sylow $3$-subgroups are the four subgroups $\langle (1\,2\,3) \rangle$, $\langle (1\,2\,4) \rangle$, $\langle (1\,3\,4) \rangle$, $\langle (2\,3\,4) \rangle$.
 >
-> The numbers of Sylow subgroups are $3, 1$ for $S_3$ and $3, 4$ for $S_4$, each $\equiv 1 \pmod p$, as the Third Sylow Theorem ([[§52 The Sylow Theorems#^thm-52-7|Theorem §52.7]]) predicts.
+> The numbers of Sylow subgroups are $3, 1$ for $S_3$ and $3, 4$ for $S_4$, each $\equiv 1 \pmod p$, as the Third Sylow Theorem ([[§52 The Sylow Theorems#^thm-52-9|Theorem §52.9]]) predicts.
 >
 > *Source: lecture 10/12; the counts are not from class*
 

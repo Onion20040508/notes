@@ -118,6 +118,10 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Third Isomorphism Theorem for Groups]] (§42.5)
 - [[Aₙ Is Simple for n ≥ 5]] (§43.9)
 - [[Groups of Order p²]] (§51.7)
+- [[First Sylow Theorem]] (§52.4)
+- [[Second Sylow Theorem]] (§52.6)
+- [[Third Sylow Theorem]] (§52.9)
+- [[Groups of Order pq]] (§52.11)
 
 ## Summaries
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.

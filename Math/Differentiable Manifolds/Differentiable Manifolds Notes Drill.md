@@ -25,11 +25,44 @@ The route of each proof in the notes is folded under **Hints**. Results that are
 3. **Homework technique**: filled in by the notes, but its proof uses a strategy the homework drills often (S1, S2, S4, S5, S6, S7, S8, S9, S10, S13, S14, S15).
 4. **Notes only**: optional before the midterm.
 
-Entries: 61 homework, 210 class, 13 homework technique, 16 notes only (Lie-group entries excluded).
+Entries: 63 homework, 210 class, 13 homework technique, 16 notes only (Lie-group entries excluded).
 
 # T1. Topological manifolds, quotients, group actions
 
 ## Definitions T1
+
+### Priority 1 · homework (directly or extended)
+
+#### Basis of neighborhoods at a point · P1
+
+A basis of neighborhoods (local basis) of $p \in X$ is a collection $(V_\alpha)_{\alpha \in A_p}$ of neighborhoods of $p$ such that every neighborhood $U$ of $p$ contains some $V_\alpha$, see Definition [[§1 Point-Set Topology Review#^def-1-5|§1.5]]. *Source: Lecture 1; used in [[Differentiable Manifolds HW Drill#^hw1-4|HW1.4]].*
+
+^nd-def-1-5
+
+- [ ] Q1 **[def]** State the definition. Must the $V_\alpha$ be open?
+- [ ] Q2 **[example]** Give a countable basis of neighborhoods of a point of $\mathbb{R}^n$.
+- [ ] Q3 **[use]** How is a basis of the topology of $X$ (Definition [[§1 Point-Set Topology Review#^def-1-1|§1.1]]) related to bases of neighborhoods of its points?
+- [ ] Q4 **[why]** Is $\{(-1/n, 1/n)\}$ a basis of neighborhoods of $0$ in $\mathbb{R}$? Is $\{(-1, 1/n)\}$? Which "for every $U$" fails?
+
+> [!tip]- Hints: where it lives
+> - Definition [[§1 Point-Set Topology Review#^def-1-5|§1.5]]; used in Definition [[§1 Point-Set Topology Review#^def-1-7|§1.7]] and Proposition [[§1 Point-Set Topology Review#^prop-1-4|§1.4]].
+
+#### First countable · P1
+
+$X$ is first countable at $x_0$ if $x_0$ has a countable basis of neighborhoods, and first countable if it is so at every point, see Definition [[§1 Point-Set Topology Review#^def-1-7|§1.7]]. A second countable space is first countable (Proposition [[§1 Point-Set Topology Review#^prop-1-4|§1.4]]). *Source: Lecture 1; [[Differentiable Manifolds HW Drill#^hw1-4|HW1.4]].*
+
+^nd-def-1-7
+
+- [ ] Q1 **[def]** State first countable at a point, and first countable, through Definition [[§1 Point-Set Topology Review#^def-1-5|§1.5]].
+- [ ] Q2 **[use]** Why does second countable imply first countable? From a countable basis $\mathcal{B}$, which members form a local basis at $x_0$? → drilled as [[Differentiable Manifolds HW Drill#^hw1-4-a|HW1.4(a)]].
+- [ ] Q3 **[use]** Why is the contrapositive the useful direction? What does one point that is not first countable prove?
+- [ ] Q4 **[why]** Is every metric space first countable? Is every metric space second countable? (Think of $\mathbb{R}$ with the discrete metric.)
+- [ ] Q5 **[example]** In $\mathbb{R}/\mathbb{Z}$ with all integers collapsed to one point $x_0$, which point fails to be first countable? → drilled as [[Differentiable Manifolds HW Drill#^hw1-4-b|HW1.4(b)]].
+
+> [!tip]- Hints: where it lives, examples
+> - Definition [[§1 Point-Set Topology Review#^def-1-7|§1.7]], Proposition [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] (the remark after it: the contrapositive).
+> - Q4: balls $B(x, 1/n)$ give a countable local basis in any metric space; the discrete metric on $\mathbb{R}$ is first countable but not second countable (Example [[§1 Point-Set Topology Review#^ex-1-2|§1.2]]).
+> - Q5: the bouquet of countably many circles, Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]]: a diagonal argument shrinks every candidate neighborhood.
 
 ### Priority 2 · stated or done in class
 
