@@ -6,7 +6,7 @@ tags: ["math591", "workhorse"]
 ---
 The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{SO}(n)$ and $\mathrm{U}(n)$, topologized as subsets of a Euclidean space of matrices: “our friends for the semester.” $\mathrm{GL}(n,\mathbb{R})$ is open in the space of matrices, and $\mathrm{SL}$, $\mathrm{O}$ and $\mathrm{U}$ are cut out by matrix equations ($\det g = 1$, $gg^{\mathsf T} = I$, $gg^* = I$), so the regular value theorem makes them manifolds, Jacobi's formula and the curve method compute the differentials, and the tangent spaces at the identity (trace-zero, skew-symmetric and skew-Hermitian matrices) are the future Lie algebras. Acting on $\mathbb{R}^n$, on spheres and on subspaces, they also produce the course's orbit spaces and homogeneous spaces. Their algebra (subgroups, the determinant homomorphism) is in [[Matrix groups GLₙ, SLₙ and O(n)]] (MATH 493). Its uses in MATH 591:
 
-- $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$ ([[§7 The Regular Value Theorem#^rem-7-9|§7]])
+- $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$ ([[§7 The Regular Value Theorem#^rem-7-10|§7]])
 - $\mathrm{GL}(n,\mathbb{R})$ is a topological group ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11]])
 - $\mathrm{GL}(n,\mathbb{R})$ has exactly two components ([[§16 The Classical Groups#^thm-16-2|§16]])
 - $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$ ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11]])
@@ -38,7 +38,7 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 - Dimension checks through homogeneous spaces of classical groups ([[§25 The Geometric Tangent Space#^rem-25-9|§25]])
 
 ## $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$
-![[§7 The Regular Value Theorem#^rem-7-9]]
+![[§7 The Regular Value Theorem#^rem-7-10]]
 
 ## $\mathrm{GL}(n,\mathbb{R})$ is a topological group
 ![[§11 Topological Groups and Classical Matrix Groups#^prop-11-4]]

@@ -181,7 +181,27 @@ Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the 
 ^rem-22-2
 
 > [!remark]- Connections
-> - A witness for the first point, with every directional derivative at the origin but no derivative: [[§7 Differentiability#^rem-7-4|452 §7, Warning: The Converse Is False]].
+> - A witness for the first point, with every directional derivative at the origin but no derivative: [[§7 Differentiability#^rem-7-4|452 §7, Warning: The Converse Is False]]. There the directional derivatives $a^2/b$ are not even linear in the direction; [[§22 The Differential of a Map Between Vector Spaces#^ex-22-1|Example §22.1]] below is a stronger witness, whose directional derivatives are all $0$.
+
+> [!example] Example §22.1: All Directional Derivatives but Not Differentiable
+> *(Not from lecture; added on request.)* Let $f : \mathbb{R}^2 \to \mathbb{R}$,
+>
+> $$
+> f(x, y) = \frac{x^3 y}{x^6 + y^2} \quad \text{for } (x, y) \neq (0, 0), \qquad f(0, 0) = 0.
+> $$
+>
+> 1. *Every directional derivative at $0$ exists and is $0$.* Let $v = (v_1, v_2) \neq 0$ and $t \neq 0$. If $v_2 \neq 0$,
+>
+> $$
+> \frac{f(tv) - f(0)}{t} = \frac{1}{t} \cdot \frac{t^4 v_1^3 v_2}{t^6 v_1^6 + t^2 v_2^2} = \frac{t\, v_1^3 v_2}{t^4 v_1^6 + v_2^2} \longrightarrow \frac{0}{v_2^2} = 0 \quad (t \to 0);
+> $$
+>
+> if $v_2 = 0$, then $f(tv) = 0$ for all $t$. So $\frac{d}{dt}\big|_0 f(tv) = 0$ for every $v$, which is even linear in $v$: the candidate derivative would be the zero map.
+> 2. *$f$ is not differentiable at $0$; it is not even continuous there.* Along the curve $y = x^3$, $x \neq 0$: $f(x, x^3) = \dfrac{x^6}{x^6 + x^6} = \dfrac12$, while $f(0, 0) = 0$. A map differentiable at a point is continuous there, since $f(p + v) - f(p) = Df_p\, v + o(|v|) \to 0$.
+>
+> So the formula $Df_p(v) = \frac{d}{dt}\big|_0 f(p + tv)$ cannot be used to *prove* differentiability. The lines miss the problem: a line $y = mx$ meets the curve $y = x^3$ only at $0$ and at $x = \pm\sqrt{m}$ (when $m > 0$), a fixed distance away, and the axes meet it only at $0$; so near $0$ no line sees the value $\tfrac12$.
+
+^ex-22-1
 
 > [!theorem] Corollary §22.4: Regular Values Without Coordinates
 > Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth, and let $\widetilde F = K \circ F \circ L^{-1}$ and $\tilde p = L(p)$ be taken in linear coordinates $L$, $K$, as in [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]]. Then for $p \in X$,

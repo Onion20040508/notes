@@ -1834,6 +1834,19 @@ regarded as the linear map $DF_p : \mathbb{R}^N \to \mathbb{R}^m$, $v \mapsto DF
 \leeref{App.~C, \emph{Total and Partial Derivatives}}
 \end{defbox}
 
+\begin{rembox}[Computing the Jacobian by Directional Derivatives]\label{rem:jacobian-directional}
+\textit{(Not from lecture; added on request.)} Let $F$ be $C^1$ near $p$ and $v \in \mathbb{R}^N$. The line $\gamma(t) = p + tv$ has $\gamma(0) = p$ and $\gamma'(0) = v$, so the chain rule above gives
+\[
+DF_p\, v = \frac{d}{dt}\Big|_{t=0} F(p + tv).
+\]
+\begin{enumerate}
+    \item For $v = e_j$ the right side is $\partial F/\partial x_j(p)$: column $j$ of $DF_p$ is the directional derivative of $F$ along $e_j$.
+    \item For an arbitrary $v$ the right side is the whole linear map $v \mapsto DF_p\, v$ at once, and a linear map is determined by its values on all $v$. This is how derivatives of maps on matrix spaces are computed without writing out the $N$ partial derivatives: for $F(A) = A^{\mathsf T}A$ on $\Mat_{n \times n}(\mathbb{R})$, $\frac{d}{dt}\big|_0 (A + tH)^{\mathsf T}(A + tH) = H^{\mathsf T}A + A^{\mathsf T}H$, so $DF_A\, H = H^{\mathsf T}A + A^{\mathsf T}H$.
+    \item The hypothesis that $F$ is $C^1$ (so differentiable) comes first: the formula computes a derivative that is known to exist. Directional derivatives alone do not show that $F$ is differentiable (the example after Theorem~\ref{thm:vs-differential-curves}).
+\end{enumerate}
+The same formula without coordinates is Theorem~\ref{thm:vs-differential-curves}, and with arbitrary curves in place of lines it is Corollary~\ref{cor:velocity-composite}, the form that makes sense on a manifold.
+\end{rembox}
+
 \begin{defbox}[Rank]\deflabel{def:rank}
 The \textbf{rank} of an $m \times N$ matrix is the dimension of its image in $\mathbb{R}^m$, equivalently the number of linearly independent rows (equivalently, columns). It is at most $\min(m, N)$. The Jacobian $DF_p$ of Definition~\ref{def:jacobian} has \textbf{rank $m$} (\textbf{full rank} when $N \ge m$) iff it is surjective onto $\mathbb{R}^m$, iff the $m$ gradients $\nabla F_1(p), \ldots, \nabla F_m(p)$ are linearly independent. For $m = 1$ this just says $\nabla F(p) \neq 0$; for $m = 2$ it says $\nabla F_1(p)$ and $\nabla F_2(p)$ are nonzero and not parallel.
 \leeref{App.~C, \emph{Total and Partial Derivatives}}
@@ -5426,6 +5439,22 @@ The second expression for $dF_p(v)$ is the definition of the derivative of the $
 \begin{rembox}\label{rem:vector-spaces-4}
 Two things are worth isolating. First, the hypothesis that $F$ is smooth is used: it is what makes $\widetilde F$ differentiable so that the chain rule applies. A map can have all directional derivatives $\frac{d}{dt}\big|_0 F(p+tv)$ at a point without being differentiable there, and for such a map the formula defines nothing linear. Second, the formula uses the vector space structure of \emph{both} spaces, in two different places: that of $X$ to form the line $p + tv$, and that of $Y$ to form the difference quotient $\frac1t\big(F(p+tv) - F(p)\big)$. Uribe stopped to ask the class where $Y$'s structure enters, and this is the answer. Neither can be dropped, which is why the same formula will \emph{not} serve as the definition of the differential on a general manifold: there is no ``$p + tv$'' and no ``$F(p+tv) - F(p)$.'' That is the problem \ref{sec:tangent} begins to address.
 \end{rembox}
+
+\begin{exbox}[All Directional Derivatives but Not Differentiable]\exlabel{ex:directional-not-differentiable}
+\textit{(Not from lecture; added on request.)} Let $f : \mathbb{R}^2 \to \mathbb{R}$,
+\[
+f(x, y) = \frac{x^3 y}{x^6 + y^2} \quad \text{for } (x, y) \neq (0, 0), \qquad f(0, 0) = 0.
+\]
+\begin{enumerate}
+    \item \emph{Every directional derivative at $0$ exists and is $0$.} Let $v = (v_1, v_2) \neq 0$ and $t \neq 0$. If $v_2 \neq 0$,
+    \[
+    \frac{f(tv) - f(0)}{t} = \frac{1}{t} \cdot \frac{t^4 v_1^3 v_2}{t^6 v_1^6 + t^2 v_2^2} = \frac{t\, v_1^3 v_2}{t^4 v_1^6 + v_2^2} \longrightarrow \frac{0}{v_2^2} = 0 \quad (t \to 0);
+    \]
+    if $v_2 = 0$, then $f(tv) = 0$ for all $t$. So $\frac{d}{dt}\big|_0 f(tv) = 0$ for every $v$, which is even linear in $v$: the candidate derivative would be the zero map.
+    \item \emph{$f$ is not differentiable at $0$; it is not even continuous there.} Along the curve $y = x^3$, $x \neq 0$: $f(x, x^3) = \dfrac{x^6}{x^6 + x^6} = \dfrac12$, while $f(0, 0) = 0$. A map differentiable at a point is continuous there, since $f(p + v) - f(p) = Df_p\, v + o(|v|) \to 0$.
+\end{enumerate}
+So the formula $Df_p(v) = \frac{d}{dt}\big|_0 f(p + tv)$ cannot be used to \emph{prove} differentiability. The lines miss the problem: a line $y = mx$ meets the curve $y = x^3$ only at $0$ and at $x = \pm\sqrt{m}$ (when $m > 0$), a fixed distance away, and the axes meet it only at $0$; so near $0$ no line sees the value $\tfrac12$.
+\end{exbox}
 
 \begin{corbox}[Regular Values Without Coordinates]\thmlabel{cor:vs-regular}
 Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth, and let $\widetilde F = K \circ F \circ L^{-1}$ and $\tilde p = L(p)$ be taken in linear coordinates $L$, $K$, as in Definition~\ref{def:vs-differential}. Then for $p \in X$,

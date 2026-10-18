@@ -40,6 +40,21 @@ tags: [differentiable-manifolds, math591]
 > - Home in 452: the total derivative and Jacobian, [[§7 Differentiability#^def-7-2|452 Def. §7.2]] and [[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]]; the differential, [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 > - Coordinate-free differential: [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]].
 
+> [!remark] Remark: Computing the Jacobian by Directional Derivatives
+> *(Not from lecture; added on request.)* Let $F$ be $C^1$ near $p$ and $v \in \mathbb{R}^N$. The line $\gamma(t) = p + tv$ has $\gamma(0) = p$ and $\gamma'(0) = v$, so the chain rule above gives
+>
+> $$
+> DF_p\, v = \frac{d}{dt}\Big|_{t=0} F(p + tv).
+> $$
+>
+> 1. For $v = e_j$ the right side is $\partial F/\partial x_j(p)$: column $j$ of $DF_p$ is the directional derivative of $F$ along $e_j$.
+> 2. For an arbitrary $v$ the right side is the whole linear map $v \mapsto DF_p\, v$ at once, and a linear map is determined by its values on all $v$. This is how derivatives of maps on matrix spaces are computed without writing out the $N$ partial derivatives: for $F(A) = A^{\mathsf T}A$ on $\operatorname{Mat}_{n \times n}(\mathbb{R})$, $\frac{d}{dt}\big|_0 (A + tH)^{\mathsf T}(A + tH) = H^{\mathsf T}A + A^{\mathsf T}H$, so $DF_A\, H = H^{\mathsf T}A + A^{\mathsf T}H$.
+> 3. The hypothesis that $F$ is $C^1$ (so differentiable) comes first: the formula computes a derivative that is known to exist. Directional derivatives alone do not show that $F$ is differentiable (the example after Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]]).
+>
+> The same formula without coordinates is Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], and with arbitrary curves in place of lines it is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], the form that makes sense on a manifold.
+
+^rem-7-2
+
 > [!definition] Definition §7.2: Rank
 > The **rank** of an $m \times N$ matrix is the dimension of its image in $\mathbb{R}^m$, equivalently the number of linearly independent rows (equivalently, columns). It is at most $\min(m, N)$. The Jacobian $DF_p$ of [[§7 The Regular Value Theorem#^def-7-1|Definition §7.1]] has **rank $m$** (**full rank** when $N \ge m$) iff it is surjective onto $\mathbb{R}^m$, iff the $m$ gradients $\nabla F_1(p), \ldots, \nabla F_m(p)$ are linearly independent. For $m = 1$ this just says $\nabla F(p) \neq 0$; for $m = 2$ it says $\nabla F_1(p)$ and $\nabla F_2(p)$ are nonzero and not parallel.
 >
@@ -76,7 +91,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark] Remark: The Constraint $N \ge m$
 > Regular points can exist only when $N \ge m$, and the case $N = m$ is special; both facts are made precise in [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5]], once the regular value theorem is available. Geometrically, one cannot cut an $N$-dimensional space down by more than $N$ independent constraints and have anything left — the dimension count $N - m$ would be negative. The boundary case $N = m$ belongs to the *inverse* function theorem rather than the implicit one. The situation of interest below is $N = n^2$, $m = 1$.
 
-^rem-7-2
+^rem-7-3
 
 > [!example] Example §7.1: Regular and Critical Values of $x^2 + y^2$
 > Let $f(x,y) = x^2 + y^2$ on $\mathbb{R}^2$, so $\nabla f = (2x, 2y)$, which vanishes only at the origin. Then $c > 0$ is a regular value and $f^{-1}(c)$ is a circle, a $1$-manifold; $c = 0$ is a critical value and $f^{-1}(0) = \{(0,0)\}$ is a single point, not a $1$-manifold; $c < 0$ is vacuously regular. Note the logic: one critical point on the level set makes the value critical, while the value stays regular no matter how many critical points $f$ has *off* that level set.
@@ -89,7 +104,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark] Remark: Why the Notion Matters
 > The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Example §23.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Proposition [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]] below.
 
-^rem-7-3
+^rem-7-4
 
 ![[m591-4-1.svg]]
 *Two equations in $\mathbb{R}^3$: a sphere and a plane meeting transversally (left, rank $2$, a curve) and tangentially (right, rank $1$, a single point).*
@@ -135,7 +150,7 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 > [!remark] Remark: Which Variables Are Solved For
 > The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when *some* $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting—after permuting coordinates. That permutation is the “WLOG” step in the proof of Proposition [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]] below.
 
-^rem-7-4
+^rem-7-5
 
 ![[m591-7-5.svg]]
 
@@ -311,7 +326,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 > [!remark] Remark: Reading the Dimension
 > The level set of $k$ independent equations in $\mathbb{R}^{n+k}$ has dimension $(n+k) - k = n$: each independent constraint costs one dimension. The independence is exactly the rank condition, and it is needed at every point of the level set, not just at one — that is what “regular *value*” means ([[§7 The Regular Value Theorem#^def-7-4|Definition §7.4]]). The theorem is the general form of the computation carried out for $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]], the case $k = 1$, $n + k = n^2$; the smooth version, giving $X$ a smooth structure rather than just a topology, comes in [[· 3 Smooth Structures|Chapter 3]].
 
-^rem-7-5
+^rem-7-6
 
 > [!theorem] Proposition §7.5: Regular Points When $N \le m$
 > Let $W \subseteq \mathbb{R}^N$ be open and $F : W \to \mathbb{R}^m$ smooth.
@@ -376,7 +391,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 > [!remark] Remark
 > **The workflow.** Every problem of this type runs the same five steps: (i) compute the Jacobian; (ii) find the locus where its rank drops; (iii) check that this locus *misses the level set*; (iv) read off the dimension; (v) compute the kernel. Step (iii) is the one most often skipped, and it is the point of the definition: the rank may drop anywhere at all, so long as it does not drop *on* $F^{-1}(c)$. Here it drops at exactly one point of $\mathbb{R}^4$, which happens to lie on a different level set.
 
-^rem-7-6
+^rem-7-7
 
 **On the word “submanifold.”** The problem asks to show $M$ is a *submanifold* of $\mathbb{R}^4$, a notion not yet defined in the course; Assignment 2's own background defers it (“after the theory of submanifolds is developed”). What has been proved is that $M$ is a smooth manifold, and that its topology is the subspace topology from $\mathbb{R}^4$.
 
@@ -412,7 +427,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >
 > A real $2 \times 2$ matrix is of this form iff it commutes with multiplication by $i$. Polynomials in $z_1, \ldots, z_N$ (with no $\bar z_j$) are holomorphic, by the product and chain rules; maps involving complex conjugation generally are not.
 
-^rem-7-7
+^rem-7-8
 
 > [!theorem] Lemma §7.6: Real Rank of a Complex-Linear Map
 > Let $A : \mathbb{C}^N \to \mathbb{C}^m$ be $\mathbb{C}$-linear of complex rank $r$. Regarded as an $\mathbb{R}$-linear map $\mathbb{R}^{2N} \to \mathbb{R}^{2m}$, it has real rank $2r$. In particular the real rank of a $\mathbb{C}$-linear map is always even.
@@ -451,12 +466,12 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >
 > The kernel is complex too. At $x_0$, i.e. $(z,w) = (i, 0)$, the complex gradient is $(2i, 2)$, and its kernel is the complex line $\{2i\,h + 2k = 0\} = \{k = -i h\}$. Writing $h = h_1 + i h_2$ and $k = k_1 + i k_2$, the condition $k = -ih = h_2 - i h_1$ reads $k_1 = h_2$, $k_2 = -h_1$ — which is $\{(x,y,y,-x)\}$ from Step 5. As [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7]] predicts, it is a complex subspace.
 
-^rem-7-8
+^rem-7-9
 
 > [!remark] Remark: The Contrast with the Unitary Group
 > The map $F(g) = gg^{\ast}$ presenting $\mathrm{U}(n)$ (Assignment 2, Problem 4) involves $\bar g$ and is *not* holomorphic: its derivative $h \mapsto hg^{\ast} + gh^{\ast}$ satisfies $DF_g(ih) = i\,hg^{\ast} - i\,gh^{\ast}$, which is not $i\,DF_g(h)$ in general. So [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7]] is unavailable, and one is forced to regard $\operatorname{Mat}(n,\mathbb{C})$ and the Hermitian matrices as *real* vector spaces — which is exactly why that problem insists on it. The outcome shows the difference: $\dim \mathrm{U}(n) = n^2$ is odd for odd $n$ (for instance $\mathrm{U}(1) = S^1$ has dimension $1$), which no holomorphic regular level set can be.
 
-^rem-7-9
+^rem-7-10
 
 > [!remark]- Connections
 > - Assignment 2, Problem 4 worked out: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]] ($\dim \mathrm{U}(n) = n^2$); $\mathrm{U}(1) = S^1$ is [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|Ex. §11.3]].
