@@ -151,6 +151,75 @@ $$
 
 nonsingular where $y \neq 0$; there the circle is the graph of $F(x) = \big(\sqrt{1 - h^2 - x^2},\ h\big)$ over an interval $V_0$, and each slice $\{x\} \times W_0$ (a square in the $yz$-direction) meets it in exactly one point. The two-dimensional figure above is the case $n = k = 1$.
 
+The three pictures, written out. In each example the steps are the same: the full Jacobian $D\Phi$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), its square block in the variables to be solved for, the set where that block is invertible, explicit $V_0$, $W_0$ and $F$ with a check of “$\Phi = c \iff y = F(x)$” on $V_0 \times W_0$, and the derivative of $F$. For the last step, differentiating $\Phi(x, F(x)) = c$ by the chain rule gives
+
+$$
+\frac{\partial \Phi}{\partial x}\big(x, F(x)\big) + \frac{\partial \Phi}{\partial y}\big(x, F(x)\big)\, DF(x) = 0,
+\qquad\text{so}\qquad
+DF(x) = -\Big(\frac{\partial \Phi}{\partial y}\big(x, F(x)\big)\Big)^{-1} \frac{\partial \Phi}{\partial x}\big(x, F(x)\big),
+$$
+
+where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free variables and $\partial\Phi/\partial y$ the $k \times k$ block of the theorem; each example checks this against the derivative of its explicit $F$.
+
+> [!example] Example §7.2: The Circle: One Free Variable and One Equation
+> *(Not from lecture; added on request.)* $n = k = 1$: free variable $x$, solved-for variable $y$.
+>
+> 1. *The equation.* $\Phi : \mathbb{R}^2 \to \mathbb{R}$, $\Phi(x, y) = x^2 + y^2$, $c = 1$; $\Phi^{-1}(1)$ is the unit circle.
+> 2. *Full Jacobian* ($1 \times 2$): $D\Phi_{(x,y)} = \begin{pmatrix} 2x & 2y \end{pmatrix}$, so $\dfrac{\partial\Phi}{\partial x} = 2x$ and the block to invert is $\dfrac{\partial\Phi}{\partial y} = (2y)$.
+> 3. *Where the theorem applies.* $(2y)$ is invertible iff $y \neq 0$: at every point of the circle except $(\pm 1, 0)$.
+> 4. *$V_0$, $W_0$, $F$* at a point $(a, b)$ with $b > 0$: $V_0 = (-1, 1)$, $W_0 = (0, 2)$, $F(x) = \sqrt{1 - x^2}$. *Check:* for $x \in V_0$, $1 - x^2 > 0$, so $F$ is smooth with values in $(0, 1] \subseteq W_0$; and for $(x, y) \in V_0 \times W_0$, $x^2 + y^2 = 1 \iff y^2 = 1 - x^2 \iff y = \sqrt{1 - x^2}$, the last step because $y > 0$ on $W_0$. (At $b < 0$: $W_0 = (-2, 0)$ and $F(x) = -\sqrt{1 - x^2}$.)
+> 5. *Derivative.* Directly, $F'(x) = \dfrac{-x}{\sqrt{1 - x^2}}$. From the formula, $-(2y)^{-1}(2x) = -x/y = -x/\sqrt{1 - x^2}$ at $y = F(x)$: the same.
+> 6. *At $(1, 0)$* the block $(2y) = (0)$ is singular, but $\partial\Phi/\partial x = (2x) = (2)$ is not: the theorem applies with the roles of $x$ and $y$ exchanged, and near $(1, 0)$ the circle is $x = G(y) = \sqrt{1 - y^2}$, $y \in (-1, 1)$, $x \in (0, 2)$.
+
+^ex-7-2
+
+> [!example] Example §7.3: The Sphere as a Graph over a Disk: Two Free Variables and One Equation
+> *(Not from lecture; added on request.)* $n = 2$, $k = 1$: free variables $(x, y)$, solved-for variable $z$.
+>
+> 1. *The equation.* $\Phi : \mathbb{R}^3 \to \mathbb{R}$, $\Phi(x, y, z) = x^2 + y^2 + z^2$, $c = 1$; $\Phi^{-1}(1) = S^2$.
+> 2. *Full Jacobian* ($1 \times 3$): $D\Phi_{(x,y,z)} = \begin{pmatrix} 2x & 2y & 2z \end{pmatrix}$, so $\dfrac{\partial\Phi}{\partial(x, y)} = \begin{pmatrix} 2x & 2y \end{pmatrix}$ and the block to invert is $\dfrac{\partial\Phi}{\partial z} = (2z)$.
+> 3. *Where the theorem applies.* $(2z)$ is invertible iff $z \neq 0$: off the equator.
+> 4. *$V_0$, $W_0$, $F$* at a point with $z > 0$: $V_0 = \{(x, y) : x^2 + y^2 < 1\}$, the open unit disk, $W_0 = (0, 2)$, $F(x, y) = \sqrt{1 - x^2 - y^2}$. *Check:* on $V_0$, $1 - x^2 - y^2 > 0$, so $F$ is smooth with values in $(0, 1] \subseteq W_0$; and on $V_0 \times W_0$, $x^2 + y^2 + z^2 = 1 \iff z = \sqrt{1 - x^2 - y^2}$, since $z > 0$.
+> 5. *Derivative* ($1 \times 2$). Directly, $DF_{(x,y)} = \begin{pmatrix} \dfrac{-x}{F} & \dfrac{-y}{F} \end{pmatrix}$. From the formula, $-(2z)^{-1}\begin{pmatrix} 2x & 2y \end{pmatrix} = \begin{pmatrix} -x/z & -y/z \end{pmatrix}$ at $z = F(x, y)$: the same.
+> 6. *On the equator* ($z = 0$, say at $(1, 0, 0)$) the block $(2z)$ is singular, but $\partial\Phi/\partial x = (2)$ is not, and there the sphere is a graph $x = \sqrt{1 - y^2 - z^2}$ over the disk in the $(y, z)$-plane.
+
+^ex-7-3
+
+> [!example] Example §7.4: A Circle of Latitude as a Graph over an Interval: One Free Variable and Two Equations
+> *(Not from lecture; added on request.)* $n = 1$, $k = 2$: free variable $x$, solved-for variables $(y, z)$. Fix $h$ with $|h| < 1$ and put $r = \sqrt{1 - h^2} > 0$.
+>
+> 1. *The equations.* $\Phi : \mathbb{R}^3 \to \mathbb{R}^2$, $\Phi(x, y, z) = (x^2 + y^2 + z^2,\ z)$, $c = (1, h)$. $\Phi^{-1}(c)$ is the circle $x^2 + y^2 = r^2$ in the plane $z = h$, the sphere cut by the plane.
+> 2. *Full Jacobian* ($2 \times 3$):
+>
+> $$
+> D\Phi_{(x,y,z)} = \begin{pmatrix} 2x & 2y & 2z \\ 0 & 0 & 1 \end{pmatrix},
+> \qquad
+> \frac{\partial\Phi}{\partial x} = \begin{pmatrix} 2x \\ 0 \end{pmatrix},
+> \qquad
+> \frac{\partial(\Phi^1, \Phi^2)}{\partial(y, z)} = \begin{pmatrix} 2y & 2z \\ 0 & 1 \end{pmatrix}.
+> $$
+>
+> 3. *Where the theorem applies.* $\det \dfrac{\partial(\Phi^1, \Phi^2)}{\partial(y, z)} = 2y$, so the block is invertible iff $y \neq 0$: at every point of the circle except $(\pm r, 0, h)$.
+> 4. *$V_0$, $W_0$, $F$* at a point with $y > 0$: $V_0 = (-r, r)$, $W_0 = (0, 2) \times (-2, 2) \subseteq \mathbb{R}^2_{(y,z)}$, and
+>
+> $$
+> F : V_0 \to W_0, \qquad F(x) = \big(\sqrt{r^2 - x^2},\ h\big).
+> $$
+>
+> *Check:* on $V_0$, $r^2 - x^2 > 0$, so $F$ is smooth, with $F(x) \in (0, r] \times \{h\} \subseteq W_0$. For $(x, y, z) \in V_0 \times W_0$: $\Phi(x, y, z) = (1, h)$ iff $z = h$ and $x^2 + y^2 = 1 - h^2 = r^2$, iff $z = h$ and $y = \sqrt{r^2 - x^2}$ (as $y > 0$), iff $(y, z) = F(x)$.
+> 5. *Derivative* ($2 \times 1$). Directly, $DF(x) = \begin{pmatrix} -x/\sqrt{r^2 - x^2} \\ 0 \end{pmatrix}$. From the formula, with
+>
+> $$
+> \begin{pmatrix} 2y & 2z \\ 0 & 1 \end{pmatrix}^{-1} = \frac{1}{2y}\begin{pmatrix} 1 & -2z \\ 0 & 2y \end{pmatrix},
+> \qquad
+> -\frac{1}{2y}\begin{pmatrix} 1 & -2z \\ 0 & 2y \end{pmatrix}\begin{pmatrix} 2x \\ 0 \end{pmatrix} = \begin{pmatrix} -x/y \\ 0 \end{pmatrix},
+> $$
+>
+> the same at $y = \sqrt{r^2 - x^2}$. The second component is $0$: along the circle $z$ stays equal to $h$.
+> 6. *Other choices of variables.* The block in $(x, z)$ is $\begin{pmatrix} 2x & 2z \\ 0 & 1 \end{pmatrix}$, with determinant $2x$: at $(\pm r, 0, h)$, where the first choice fails, the circle is a graph $(x, z) = (\pm\sqrt{r^2 - y^2},\ h)$ over $y$. The block in $(x, y)$ is $\begin{pmatrix} 2x & 2y \\ 0 & 0 \end{pmatrix}$, singular everywhere: $z$ can never be the free variable, as it is constant on the circle.
+
+^ex-7-4
+
 We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^N$ as $x = (x', x_N)$ with $x' \in \mathbb{R}^{N-1}$.
 
 > [!theorem] Corollary §7.2: Implicit Function Theorem — Scalar Case
@@ -258,7 +327,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 
 *Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
-> [!example] Example §7.2: A Level Set in $\mathbb{R}^4$
+> [!example] Example §7.5: A Level Set in $\mathbb{R}^4$
 > *(Qualifying Review, August 2013; Assignment 2, Problem 3.)* Define
 >
 > $$
@@ -271,7 +340,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 > \ker F'(x_0) = \operatorname{span}\{(1,0,0,-1),\ (0,1,1,0)\}.
 > $$
 
-^ex-7-2
+^ex-7-5
 
 > [!proof]+ Working out the example
 > *Step 1: the Jacobian.* Writing $a = 2x$, $b = 2y$, $c = 2 - 2u$, $d = 2v$,
@@ -297,7 +366,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 >
 > which vanishes iff $u = y$ and $v = -x$. So $\ker F'(x_0) = \{(x, y, y, -x)\}$, spanned by the two displayed vectors, of dimension $2 = \dim M$ as it must be. By [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] this kernel is the geometric tangent space $T^{\mathrm{geo}}_{x_0}M$.
 
-^pf-ex-7-2
+^pf-ex-7-5
 
 *Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
 
@@ -313,7 +382,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 
 ## Holomorphic Level Sets
 
-Step 2 of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]] found something it did not look for: the rank of $F'(p)$ is either $2$ or $0$, and never $1$. That is not a coincidence of this particular $F$. With $z = x + iy$ and $w = u + iv$,
+Step 2 of [[§7 The Regular Value Theorem#^ex-7-5|Example §7.5]] found something it did not look for: the rank of $F'(p)$ is either $2$ or $0$, and never $1$. That is not a coincidence of this particular $F$. With $z = x + iy$ and $w = u + iv$,
 
 $$
 F = (\operatorname{Re} f,\ \operatorname{Im} f), \qquad f(z,w) = z^2 - w^2 + 2w,
@@ -327,7 +396,7 @@ as expanding $f$ shows; so $F$ is a complex polynomial in disguise, and its rank
 ![[m591-4-4.svg]]
 *Its derivative at a point: the complex gradient $f'(p)$ and the real Jacobian $F'(p)$.*
 
-Left, the map; right, its derivative at a point. The vertical arrows are the identifications of [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9]]. On the right, the top arrow is the complex gradient $(2z,\ 2-2w)$, a $1 \times 2$ complex matrix, and the bottom arrow is the real $2 \times 4$ Jacobian of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]]. Everything that follows is about what the top row forces on the bottom one.
+Left, the map; right, its derivative at a point. The vertical arrows are the identifications of [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9]]. On the right, the top arrow is the complex gradient $(2z,\ 2-2w)$, a $1 \times 2$ complex matrix, and the bottom arrow is the real $2 \times 4$ Jacobian of [[§7 The Regular Value Theorem#^ex-7-5|Example §7.5]]. Everything that follows is about what the top row forces on the bottom one.
 
 > [!definition] Definition §7.5: Holomorphic Map
 > Let $W \subseteq \mathbb{C}^N$ be open. A map $F : W \to \mathbb{C}^m$ is **holomorphic** if it is $C^1$ as a map between open subsets of $\mathbb{R}^{2N}$ and $\mathbb{R}^{2m}$ and its real derivative $DF_p : \mathbb{C}^N \to \mathbb{C}^m$ is $\mathbb{C}$-linear at every $p \in W$. The $\mathbb{C}$-linear map $DF_p$ is then written $F'(p)$, the **complex Jacobian**, an $m \times N$ complex matrix of partial derivatives $\partial F_a / \partial z_b$.
@@ -372,7 +441,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 *Uses:* [[§7 The Regular Value Theorem#^lem-7-6|§7.6]], [[§7 The Regular Value Theorem#^def-7-5|Def. §7.5]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]
 
 > [!remark] Remark: The Example Re-read
-> For $f(z,w) = z^2 - w^2 + 2w$ the complex Jacobian is the row $(2z,\ 2 - 2w)$. In the notation of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]], $2z = a + ib$ and $2 - 2w = c - id$, and the $\mathbb{C}$-linear functional $(h, k) \mapsto (a+ib)h + (c-id)k$ has real and imaginary parts
+> For $f(z,w) = z^2 - w^2 + 2w$ the complex Jacobian is the row $(2z,\ 2 - 2w)$. In the notation of [[§7 The Regular Value Theorem#^ex-7-5|Example §7.5]], $2z = a + ib$ and $2 - 2w = c - id$, and the $\mathbb{C}$-linear functional $(h, k) \mapsto (a+ib)h + (c-id)k$ has real and imaginary parts
 >
 > $$
 > \operatorname{Re}:\ (a,\ -b,\ c,\ d), \qquad \operatorname{Im}:\ (b,\ a,\ -d,\ c)
@@ -392,10 +461,10 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 > [!remark]- Connections
 > - Assignment 2, Problem 4 worked out: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]] ($\dim \mathrm{U}(n) = n^2$); $\mathrm{U}(1) = S^1$ is [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|Ex. §11.3]].
 
-> [!example] Example §7.3: The Level Set Is a Cylinder
-> The regular value theorem says that $M$ of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]] is a $2$-manifold, but not which one. In fact $M$ is homeomorphic to $\mathbb{C}^\times$, hence to the cylinder $S^1 \times \mathbb{R}$.
+> [!example] Example §7.6: The Level Set Is a Cylinder
+> The regular value theorem says that $M$ of [[§7 The Regular Value Theorem#^ex-7-5|Example §7.5]] is a $2$-manifold, but not which one. In fact $M$ is homeomorphic to $\mathbb{C}^\times$, hence to the cylinder $S^1 \times \mathbb{R}$.
 
-^ex-7-3
+^ex-7-6
 
 > [!proof]+ Proof
 > In complex coordinates, completing the square,
@@ -413,9 +482,9 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >
 > are continuous (indeed holomorphic) and mutually inverse, because the second factor $z + w - 1 = -2/s$ is determined by the first. So $M \cong \mathbb{C}^\times$. And $\mathbb{C}^\times \cong S^1 \times \mathbb{R}$ via $s \mapsto \big(s/|s|,\ \log|s|\big)$. The base point $x_0 = (0,1,0,0)$, i.e. $(z,w) = (i,0)$, corresponds to $s = 1+i$.
 
-^pf-ex-7-3
+^pf-ex-7-6
 
-*Uses:* [[§7 The Regular Value Theorem#^ex-7-2|Ex. §7.2]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]], [[Polar and spherical coordinates]]
+*Uses:* [[§7 The Regular Value Theorem#^ex-7-5|Ex. §7.5]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]], [[Polar and spherical coordinates]]
 
 > [!remark]- Connections
 > - $\mathbb{C}^\times = \mathbb{R}^2 \setminus \{0\}$ in 590: [[Punctured plane]], which deformation retracts onto $S^1$ ([[§35 Deformation Retracts and Homotopy Type#^ex-35-6|590 Ex. §35.6]]).

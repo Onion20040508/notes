@@ -330,7 +330,7 @@ $F(x,y,u,v) = (x^2-y^2-u^2+v^2+2u,\ 2xy-2uv+2v)$, $M = F^{-1}(-1,0)$. Show $M$ i
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.** Regular value [[§7 The Regular Value Theorem#^def-7-4|Def §7.4]]; geometric tangent space [[§25 The Geometric Tangent Space#^def-25-1|Def §25.1]]; holomorphic map [[§7 The Regular Value Theorem#^def-7-5|Def §7.5]].
 >
-> **Key results.** [[§7 The Regular Value Theorem#^ex-7-2|Ex §7.2]] (this problem), [[§7 The Regular Value Theorem#^ex-7-3|Ex §7.3]] (it is a cylinder); [[§7 The Regular Value Theorem#^cor-7-4|Cor §7.4]]; holomorphic RVT [[§7 The Regular Value Theorem#^cor-7-7|Cor §7.7]], [[§7 The Regular Value Theorem#^rem-7-8|Remark: The Example Re-read]]; tangent space is the kernel [[§25 The Geometric Tangent Space#^thm-25-3|Thm §25.3]].
+> **Key results.** [[§7 The Regular Value Theorem#^ex-7-5|Ex §7.5]] (this problem), [[§7 The Regular Value Theorem#^ex-7-6|Ex §7.6]] (it is a cylinder); [[§7 The Regular Value Theorem#^cor-7-4|Cor §7.4]]; holomorphic RVT [[§7 The Regular Value Theorem#^cor-7-7|Cor §7.7]], [[§7 The Regular Value Theorem#^rem-7-8|Remark: The Example Re-read]]; tangent space is the kernel [[§25 The Geometric Tangent Space#^thm-25-3|Thm §25.3]].
 >
 > **Strategy (S5, S6).** Find where the rank drops (only at $p_0 = (0,0,1,0)$), check $p_0 \notin M$; tangent space $= \ker F'(x_0)$.
 >
