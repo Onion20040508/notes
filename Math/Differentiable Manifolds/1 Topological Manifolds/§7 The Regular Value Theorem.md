@@ -137,6 +137,20 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 
 ^rem-7-4
 
+![[m591-7-5.svg]]
+
+*(Not from lecture; added on request.)* The theorem for $n = k = 1$, with $\Phi(x, y) = x^2 + y^2$ and $c = 1$, so that $\Phi^{-1}(1)$ is the unit circle and $\partial\Phi/\partial y = 2y$. *Left:* at a point $(a, b)$ with $b > 0$ the $1 \times 1$ matrix $(2b)$ is nonsingular, and the theorem gives a box $V_0 \times W_0$ in which the circle is exactly the graph of $F(x) = \sqrt{1 - x^2}$: each vertical line $\{x\} \times W_0$, $x \in V_0$, meets the circle in exactly one point. The box must be small: $W_0$ has to exclude the lower half of the circle, where the same $x$ has the second solution $-\sqrt{1 - x^2}$. *Right:* at $(1, 0)$, $\partial\Phi/\partial y = 0$ and the conclusion fails for every box around $(1, 0)$: vertical lines just left of $x = 1$ meet the circle twice, and those to the right not at all, so the circle is not a graph over $x$ there. But $\partial\Phi/\partial x(1, 0) = 2 \neq 0$, so by the theorem with the roles of $x$ and $y$ exchanged (the remark above) it is a graph over $y$: $x = \sqrt{1 - y^2}$, each horizontal line meeting it once.
+
+![[m591-7-6.svg]]
+
+*(Not from lecture; added on request.)* The two splittings of $\mathbb{R}^3 = \mathbb{R}^n \times \mathbb{R}^k$, with $n$ free variables and $k$ equations. *Left, $n = 2$, $k = 1$:* one equation $\Phi = x^2 + y^2 + z^2 = 1$, solved for the single variable $z$; the $1 \times 1$ block is $\partial\Phi/\partial z = 2z$, nonzero on the upper hemisphere, and near such a point the sphere is the graph of $F(x, y) = \sqrt{1 - x^2 - y^2}$ over a square $V_0$ of the $xy$-plane: each vertical line through $V_0$ meets it once inside the box $V_0 \times W_0$. *Right, $n = 1$, $k = 2$:* two equations $\Phi = (x^2 + y^2 + z^2,\ z) = (1, h)$ with $|h| < 1$, the circle where the sphere meets the plane $z = h$, solved for the two variables $(y, z)$. The $2 \times 2$ block is
+
+$$
+\frac{\partial(\Phi^1, \Phi^2)}{\partial(y, z)} = \begin{pmatrix} 2y & 2z \\ 0 & 1 \end{pmatrix}, \qquad \det = 2y,
+$$
+
+nonsingular where $y \neq 0$; there the circle is the graph of $F(x) = \big(\sqrt{1 - h^2 - x^2},\ h\big)$ over an interval $V_0$, and each slice $\{x\} \times W_0$ (a square in the $yz$-direction) meets it in exactly one point. The two-dimensional figure above is the case $n = k = 1$.
+
 We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^N$ as $x = (x', x_N)$ with $x' \in \mathbb{R}^{N-1}$.
 
 > [!theorem] Corollary §7.2: Implicit Function Theorem — Scalar Case
