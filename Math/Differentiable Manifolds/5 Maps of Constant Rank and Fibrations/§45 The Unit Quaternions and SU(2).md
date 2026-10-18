@@ -152,7 +152,13 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 >
 > a diffeomorphism onto the open set $\tau(W)$, hence a chart about $p$, with last component $y^4 = r - 1$. For $\vec u = \Phi(r, \theta') \in U_p$ we have $|\vec u| = r$ by (i), so $\vec u \in S^3 \iff r = 1 \iff y^4(\vec u) = 0$. Thus $\psi_p$ is adapted to $S^3$.
 >
-> *(v) Adapted charts on $B$.* Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|isometry]] of $\mathbb{R}^4$ with $\det P = \pm 1$, and $\tilde\Phi = P \circ \Phi$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)–(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
+> *(v) Adapted charts on $B$.* Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|isometry]] of $\mathbb{R}^4$ with $\det P = 1$ (it swaps two pairs of coordinates, $x_0 \leftrightarrow x_2$ and $x_1 \leftrightarrow x_3$, an even permutation), and $\tilde\Phi = P \circ \Phi$. In matrix form,
+>
+> $$
+> P = \begin{pmatrix} 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix} ,
+> $$
+>
+> so $\tilde\Phi'(r, \theta) = P\, \Phi'(r, \theta)$: the rows of $\Phi'$ in the order $3, 4, 1, 2$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)–(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
 >
 > Hence every point of $S^3$ lies in an adapted chart.
 
@@ -431,6 +437,13 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > $$
 > \frac{\partial}{\partial y^1}\Big|_{\vec e_0} = -\vec e_2, \qquad \frac{\partial}{\partial y^2}\Big|_{\vec e_0} = -\vec e_3, \qquad \frac{\partial}{\partial y^3}\Big|_{\vec e_0} = \vec e_1 .
 > $$
+> *(Computed; not from lecture.)* In full, with columns indexed by $r, \theta_1, \theta_2, \theta_3$, and for $(\psi^{-1})'$ by $y^1, y^2, y^3, y^4$ (its columns are $P$ applied to the $\theta_1$, $\theta_2$, $\theta_3$ and $r$ columns of $\Phi'$),
+>
+> $$
+> \Phi'\big(1, \tfrac{\pi}{2}, \tfrac{\pi}{2}, 0\big) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \qquad (\psi^{-1})'\big(\psi(\vec e_0)\big) = \begin{pmatrix} 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ -1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix} ,
+> $$
+>
+> that is, $(\psi^{-1})'(\psi(\vec e_0)) = (-\vec e_2 \mid -\vec e_3 \mid \vec e_1 \mid \vec e_0)$.
 >
 > Therefore
 >

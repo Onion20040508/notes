@@ -172,6 +172,17 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 > $$
 >
 > and $f_{ij}(a) = \tfrac12\, \dfrac{\partial^2 f}{\partial r^i\,\partial r^j}(a)$. This is an identity, not an approximation.
+> In matrix form, with $r - a$ written as a column, the quadratic term is
+>
+> $$
+> \sum_{i,j=1}^n (r^i - a^i)(r^j - a^j)\, f_{ij}(r) = (r - a)^{\mathsf T} \begin{pmatrix} f_{11}(r) & \cdots & f_{1n}(r) \\ \vdots & \ddots & \vdots \\ f_{n1}(r) & \cdots & f_{nn}(r) \end{pmatrix} (r - a),
+> $$
+>
+> and at $r = a$ the $n \times n$ matrix of the $f_{ij}$ is half the Hessian of $f$:
+>
+> $$
+> \begin{pmatrix} f_{11}(a) & \cdots & f_{1n}(a) \\ \vdots & \ddots & \vdots \\ f_{n1}(a) & \cdots & f_{nn}(a) \end{pmatrix} = \frac12 \begin{pmatrix} \dfrac{\partial^2 f}{\partial r^1\,\partial r^1}(a) & \cdots & \dfrac{\partial^2 f}{\partial r^1\,\partial r^n}(a) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial^2 f}{\partial r^n\,\partial r^1}(a) & \cdots & \dfrac{\partial^2 f}{\partial r^n\,\partial r^n}(a) \end{pmatrix} .
+> $$
 >
 > *Lee: cf. Theorem C.15*
 

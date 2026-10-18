@@ -137,7 +137,22 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 ^thm-7-1
 
 > [!proof]+ Proof (sketch)
-> Lee deduces this from the Inverse Function Theorem ([[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Special cases are proved in MATH 452 (one equation: [[Implicit Function Theorem|452 §12]]; two variables: [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
+> Lee deduces this from the Inverse Function Theorem ([[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1]]; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Written out at $(a,b)$, with rows the components $(x^1, \ldots, x^n, \Phi^1, \ldots, \Phi^k)$ of the map and columns the variables $(x, y)$,
+>
+> $$
+> \left(\begin{array}{c|c}
+> I_n & 0 \\[1mm] \hline
+> \dfrac{\partial \Phi}{\partial x}(a,b) & \dfrac{\partial \Phi}{\partial y}(a,b)
+> \end{array}\right),
+> \qquad
+> \dfrac{\partial \Phi}{\partial y}(a,b) = \begin{pmatrix}
+> \dfrac{\partial \Phi^1}{\partial y^1}(a,b) & \cdots & \dfrac{\partial \Phi^1}{\partial y^k}(a,b) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial \Phi^k}{\partial y^1}(a,b) & \cdots & \dfrac{\partial \Phi^k}{\partial y^k}(a,b)
+> \end{pmatrix},
+> $$
+>
+> where $\dfrac{\partial \Phi}{\partial x}(a,b) = \big(\partial\Phi^i/\partial x^j(a,b)\big)$ is the $k \times n$ block in the free variables. Special cases are proved in MATH 452 (one equation: [[Implicit Function Theorem|452 §12]]; two variables: [[Inverse Function Theorem (several variables)|452 §13]]); Lee's proofs are in Appendix C.
 
 ^pf-7-1
 
@@ -273,6 +288,17 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 > *Locally Euclidean.* Fix $p \in X$.
 >
 > *Step 1 (relabelling the coordinates).* $F'(p)$ is a $k \times (n+k)$ matrix of rank $k$, so $k$ of its $n+k$ columns are linearly independent. Let $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ be the coordinate permutation carrying those $k$ positions to the last $k$, and put $\widetilde F = F \circ \rho^{-1}$. Then $\widetilde F$ is smooth, $\widetilde F^{-1}(\vec 0) = \rho(X)$, and $\widetilde F'(\rho(p)) = F'(p)\,\rho^{-1}$ is $F'(p)$ with its columns permuted, so its last $k$ columns are independent. As $\rho$ restricts to a homeomorphism $X \to \rho(X)$, and local Euclideanness is a topological property, we may replace $(X, F, p)$ by $(\rho(X), \widetilde F, \rho(p))$: WLOG, writing the coordinates as $(x,y) \in \mathbb{R}^n \times \mathbb{R}^k$, the $k \times k$ matrix $\big(\partial F^i/\partial y^j (p)\big)$ — the last $k$ columns of $F'(p)$ — is nonsingular.
+> Written out,
+>
+> $$
+> F'(p) = \left(\begin{array}{ccc|ccc}
+> \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^n}(p) & \dfrac{\partial F^1}{\partial y^1}(p) & \cdots & \dfrac{\partial F^1}{\partial y^k}(p) \\[2mm]
+> \vdots & & \vdots & \vdots & & \vdots \\[1mm]
+> \dfrac{\partial F^k}{\partial x^1}(p) & \cdots & \dfrac{\partial F^k}{\partial x^n}(p) & \dfrac{\partial F^k}{\partial y^1}(p) & \cdots & \dfrac{\partial F^k}{\partial y^k}(p)
+> \end{array}\right),
+> $$
+>
+> a $k \times n$ block followed by the $k \times k$ block that is nonsingular.
 >
 > *Step 2 (the implicit function theorem).* Write $p = (a,b)$. By [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1]] applied to $\Phi = F$ on $U = \mathbb{R}^{n+k}$ with $c = \vec 0$, there are neighborhoods $V_0 \subseteq \mathbb{R}^n$ of $a$ and $W_0 \subseteq \mathbb{R}^k$ of $b$ and a smooth $G : V_0 \to W_0$ with
 >
@@ -415,6 +441,15 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 
 > [!definition] Definition §7.5: Holomorphic Map
 > Let $W \subseteq \mathbb{C}^N$ be open. A map $F : W \to \mathbb{C}^m$ is **holomorphic** if it is $C^1$ as a map between open subsets of $\mathbb{R}^{2N}$ and $\mathbb{R}^{2m}$ and its real derivative $DF_p : \mathbb{C}^N \to \mathbb{C}^m$ is $\mathbb{C}$-linear at every $p \in W$. The $\mathbb{C}$-linear map $DF_p$ is then written $F'(p)$, the **complex Jacobian**, an $m \times N$ complex matrix of partial derivatives $\partial F_a / \partial z_b$.
+> Written out,
+>
+> $$
+> F'(p) = \begin{pmatrix}
+> \dfrac{\partial F_1}{\partial z_1}(p) & \cdots & \dfrac{\partial F_1}{\partial z_N}(p) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial F_m}{\partial z_1}(p) & \cdots & \dfrac{\partial F_m}{\partial z_N}(p)
+> \end{pmatrix}.
+> $$
 
 ^def-7-5
 

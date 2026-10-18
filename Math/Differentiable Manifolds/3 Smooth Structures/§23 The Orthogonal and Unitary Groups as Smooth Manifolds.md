@@ -21,6 +21,16 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > $$
 >
 > Reading off those entries in a fixed order gives a linear isomorphism $\operatorname{Sym}(n,\mathbb{R}) \cong \mathbb{R}^{n(n+1)/2}$, which we use to regard maps into $\operatorname{Sym}(n,\mathbb{R})$ as maps into a Euclidean space. Being linear, it changes neither smoothness nor rank.
+> Explicitly, the free entries are the $s_{ij}$ with $i \le j$:
+>
+> $$
+> S = \begin{pmatrix}
+> s_{11} & s_{12} & \cdots & s_{1n} \\
+> s_{12} & s_{22} & \cdots & s_{2n} \\
+> \vdots & \vdots & \ddots & \vdots \\
+> s_{1n} & s_{2n} & \cdots & s_{nn}
+> \end{pmatrix}.
+> $$
 
 ^def-23-1
 
@@ -223,7 +233,18 @@ The unitary group $\mathrm{U}(n)$ is treated the same way, with $F(g) = gg^*$ ma
 Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mathrm{U}(n) = \{g \in \operatorname{Mat}(n,\mathbb{C}) \mid g^{\ast} g = I\}$. Throughout, $\operatorname{Mat}(n,\mathbb{C})$ is regarded as a *real* vector space of dimension $2n^2$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]]).
 
 > [!definition] Definition §23.2: Hermitian Matrices as a Real Vector Space
-> Let $\operatorname{Herm}(n) = \{A \in \operatorname{Mat}(n,\mathbb{C}) \mid A^{\ast} = A\}$. It is closed under addition and under multiplication by *real* scalars, so it is a real vector space; it is *not* a complex subspace, since $(iA)^{\ast} = -iA$. A Hermitian matrix has real diagonal entries ($a_{jj} = \overline{a_{jj}}$), arbitrary complex entries above the diagonal, and entries below the diagonal determined by $a_{kj} = \overline{a_{jk}}$. Hence
+> Let $\operatorname{Herm}(n) = \{A \in \operatorname{Mat}(n,\mathbb{C}) \mid A^{\ast} = A\}$. It is closed under addition and under multiplication by *real* scalars, so it is a real vector space; it is *not* a complex subspace, since $(iA)^{\ast} = -iA$. A Hermitian matrix has real diagonal entries ($a_{jj} = \overline{a_{jj}}$), arbitrary complex entries above the diagonal, and entries below the diagonal determined by $a_{kj} = \overline{a_{jk}}$. Written out,
+>
+> $$
+> A = \begin{pmatrix}
+> a_{11} & a_{12} & \cdots & a_{1n} \\
+> \overline{a_{12}} & a_{22} & \cdots & a_{2n} \\
+> \vdots & \vdots & \ddots & \vdots \\
+> \overline{a_{1n}} & \overline{a_{2n}} & \cdots & a_{nn}
+> \end{pmatrix},
+> \qquad a_{11}, \ldots, a_{nn} \in \mathbb{R}.
+> $$
+> Hence
 >
 > $$
 > \dim_{\mathbb{R}} \operatorname{Herm}(n) = n + 2\binom{n}{2} = n^2 ,
@@ -363,7 +384,17 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > so $g\cdot\mathfrak{u}(n) \subseteq \mathfrak{u}(n)\cdot g$; and for $X \in \mathfrak{u}(n)$, $Xg = g\,(g^{\ast}Xg)$, where $g^{\ast}Xg \in \mathfrak{u}(n)$ by the same computation with $g^{\ast}$ in place of $g$: $(g^{\ast}Xg)^{\ast} = g^{\ast}X^{\ast}g^{\ast \ast } = g^{\ast}X^{\ast}g = -g^{\ast}Xg$. So $\mathfrak{u}(n)\cdot g \subseteq g\cdot\mathfrak{u}(n)$.
 >
-> *Dimension.* A skew-Hermitian matrix has purely imaginary diagonal ($n$ real parameters) and arbitrary complex entries above the diagonal ($2\binom n2$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(n) = n^2$ — agreeing with $\dim \mathrm{U}(n)$ by rank–nullity, $2n^2 - n^2$. In detail: $X^{\ast} = -X$ says $\overline{x_{kj}} = -x_{jk}$ for all $j, k$. For $j = k$ this is $\overline{x_{jj}} = -x_{jj}$, i.e. $\operatorname{Re} x_{jj} = 0$, so each diagonal entry is $i$ times a free real number; for $j < k$ the entry $x_{jk}$ is an arbitrary complex number (two real parameters), and the entry below the diagonal is then determined, $x_{kj} = -\overline{x_{jk}}$. Hence
+> *Dimension.* A skew-Hermitian matrix has purely imaginary diagonal ($n$ real parameters) and arbitrary complex entries above the diagonal ($2\binom n2$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(n) = n^2$ — agreeing with $\dim \mathrm{U}(n)$ by rank–nullity, $2n^2 - n^2$. In detail: $X^{\ast} = -X$ says $\overline{x_{kj}} = -x_{jk}$ for all $j, k$. For $j = k$ this is $\overline{x_{jj}} = -x_{jj}$, i.e. $\operatorname{Re} x_{jj} = 0$, so each diagonal entry is $i$ times a free real number; for $j < k$ the entry $x_{jk}$ is an arbitrary complex number (two real parameters), and the entry below the diagonal is then determined, $x_{kj} = -\overline{x_{jk}}$. Written out, with $x_{jj} = i\,t_j$, $t_j \in \mathbb{R}$,
+>
+> $$
+> X = \begin{pmatrix}
+> i\,t_1 & x_{12} & \cdots & x_{1n} \\
+> -\overline{x_{12}} & i\,t_2 & \cdots & x_{2n} \\
+> \vdots & \vdots & \ddots & \vdots \\
+> -\overline{x_{1n}} & -\overline{x_{2n}} & \cdots & i\,t_n
+> \end{pmatrix}.
+> $$
+> Hence
 >
 > $$
 > \dim_{\mathbb{R}}\mathfrak{u}(n) = n + 2\binom n2 = n + n(n-1) = n^2 .

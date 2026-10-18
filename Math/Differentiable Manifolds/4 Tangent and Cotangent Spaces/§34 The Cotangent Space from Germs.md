@@ -272,6 +272,18 @@ Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent S
 > - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§51 One-Forms#^def-51-4|Def. §51.4]].
 
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
+*(Computed; not from lecture.)* With $m = \dim M$, $n = \dim N$ and charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, $F^j = y^j \circ F$ and $\tilde F = \psi \circ F \circ \varphi^{-1}$ as in Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $(F_p^{\ast}\,dy^j|_{F(p)})(\partial/\partial x^i|_p) = dy^j|_{F(p)}\big(F_{\ast p}\,\partial/\partial x^i|_p\big) = \partial F^j/\partial x^i(p)$, so $F_p^{\ast}\,dy^j|_{F(p)} = \sum_i \partial F^j/\partial x^i(p)\, dx^i|_p$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). In the dual bases the $m \times n$ matrix of $F_p^{\ast}$ is therefore the transpose of the $n \times m$ matrix of $F_{\ast p}$:
+
+$$
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^1}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F^1}{\partial x^m}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix}
+= \Big(\tilde F'\big(\varphi(p)\big)\Big)^{\mathsf T},
+$$
+
+its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
 
 > [!remark] Remark: One Symbol for Two Pullbacks
 > The symbol $F_p^{\ast}$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]); on covectors it is the dual map $T^{\ast}_{F(p)}N \to T_p^{\ast}M$ of [[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^{\ast}(dg_{F(p)}) = d\big(F_p^{\ast}[g]\big)_p$.
@@ -303,7 +315,7 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 *Uses:* [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§21 Linear Algebra Toolkit#^def-21-3|Def. §21.3]]
 
 > [!remark] Remark: The Two Differentials Meet
-> In $\mathbb{R}^n$, with the dot-product identification $v \mapsto \xi_v$ of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]], under which $dh_p = \xi_{\nabla h(p)}$ (its part (3), with the gradient of Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]]), the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Explicitly, for $F$ smooth on an open subset of $\mathbb{R}^m$ with values in $\mathbb{R}^n$ and $J_F(p)$ its Jacobian, $F_{\ast p}(D_w|_p) = D_{J_F(p)w}|_{F(p)}$ (Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), so for every $w \in \mathbb{R}^m$
+> In $\mathbb{R}^n$, with the dot-product identification $v \mapsto \xi_v$ of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]], under which $dh_p = \xi_{\nabla h(p)}$ (its part (3), with the gradient of Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]]), the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$, with the gradients written as columns. (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]] writes the gradients $\nabla F_a(p)$ as the rows of the Jacobian; in that row convention the same identity reads $\nabla(f \circ F) = \nabla f \; J_F$, the transpose of this one.) Explicitly, for $F$ smooth on an open subset of $\mathbb{R}^m$ with values in $\mathbb{R}^n$ and $J_F(p)$ its Jacobian, $F_{\ast p}(D_w|_p) = D_{J_F(p)w}|_{F(p)}$ (Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), so for every $w \in \mathbb{R}^m$
 >
 > $$
 > \xi_{\nabla(f \circ F)(p)}\big(D_w|_p\big) = d(f \circ F)_p\big(D_w|_p\big) = df_{F(p)}\big(D_{J_F(p)w}|_{F(p)}\big) = \nabla f(F(p)) \cdot J_F(p)w = \big(J_F(p)^{\mathsf T}\, \nabla f(F(p))\big) \cdot w = \xi_{J_F(p)^{\mathsf T} \nabla f(F(p))}\big(D_w|_p\big) ,

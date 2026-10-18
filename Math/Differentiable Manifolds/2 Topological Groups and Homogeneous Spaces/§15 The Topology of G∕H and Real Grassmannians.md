@@ -137,7 +137,7 @@ The same triangle with $G = \mathbb{R}$. The exponential wraps the line around t
 > [!remark]- Connections
 > - In 590 the circle is the quotient $[0,1]/(0 \sim 1)$ via the same map $e^{2\pi i t}$: [[§13 Quotient Topology#^ex-13-2|590 Ex. §13.2]].
 
-The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-10|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
 
 > [!example] Example §15.2: A Continuous Bijection That Is Not a Homeomorphism
 > Let $G = \mathbb{R}_{\mathrm{disc}}$, the additive group of real numbers with the discrete topology — a topological group, since every map out of a discrete space is continuous. It acts on $X = \mathbb{R}$, with its usual topology, by translation, $t \cdot x = x + t$. The action is continuous, because $G \times X$ is the disjoint union of the open sets $\{t\} \times X$, on each of which it is a translation. It is transitive, the isotropy group of $0$ is $\{0\}$, and so $G/H = \mathbb{R}_{\mathrm{disc}}$. The map $\Phi : \mathbb{R}_{\mathrm{disc}} \to \mathbb{R}$, $t \mapsto t$, is a continuous bijection but not a homeomorphism: $\{0\}$ is open in $\mathbb{R}_{\mathrm{disc}}$ and not in $\mathbb{R}$. Here $X$ is Hausdorff and $G/H$ is not compact, so Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]](2) does not apply — and its conclusion genuinely fails.
@@ -242,6 +242,12 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 > *(Set in Lecture 4 as a “linear algebra exercise”; filled in.)* *Action.* $gV$ is a linear subspace (image of a subspace under a linear map) of dimension $k$ ($g$ is injective), so $gV \in \mathrm{Gr}_k(\mathbb{R}^n)$; $IV = V$; and $g(g'V) = (gg')V$ by associativity.
 >
 > *Transitive* (“a linear algebra exercise”). Let $V, W \in \mathrm{Gr}_k(\mathbb{R}^n)$. Choose an orthonormal basis $v_1, \ldots, v_k$ of $V$ (Gram–Schmidt applied to any basis of $V$) and extend it to an orthonormal basis $v_1, \ldots, v_n$ of $\mathbb{R}^n$ (apply Gram–Schmidt to a basis of the orthogonal complement $V^\perp$, which has dimension $n - k$). Do the same for $W$: an orthonormal basis $w_1, \ldots, w_n$ of $\mathbb{R}^n$ with $w_1, \ldots, w_k$ spanning $W$. Let $g$ be the linear map with $g v_i = w_i$ for all $i$. Since $g$ carries an orthonormal basis to an orthonormal basis, $(gx) \cdot (gy) = x \cdot y$ for all $x, y$ (expand $x, y$ in the $v_i$), so $g \in \mathrm{O}(n)$; and $gV = g\,\operatorname{span}(v_1, \ldots, v_k) = \operatorname{span}(w_1, \ldots, w_k) = W$.
+> *(Computed; not from lecture.)* In matrix form, as the matrix with orthonormal columns $v_1, \ldots, v_n$ is orthogonal,
+>
+> $$
+> g = \begin{pmatrix} | & & | \\ w_1 & \cdots & w_n \\ | & & | \end{pmatrix}
+> \begin{pmatrix} | & & | \\ v_1 & \cdots & v_n \\ | & & | \end{pmatrix}^{T}.
+> $$
 
 ^pf-15-6
 
@@ -264,7 +270,22 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ^prop-15-7
 
 > [!proof]+ Proof
-> *(Stated in Lecture 4, with the block picture of $\mathrm{O}(k) \times \mathrm{O}(n-k)$; filled in.)* Write $g \in \mathrm{O}(n)$ in blocks $g = \begin{pmatrix} A & C \\ D & B \end{pmatrix}$ with $A$ of size $k \times k$. Then $gV_0 = V_0$ iff $g e_j \in V_0$ for $j \le k$ iff the first $k$ columns have zero lower part, i.e. $D = 0$ (then $g$ maps $V_0$ into $V_0$, and injectivity plus $\dim$ gives $gV_0 = V_0$). Now orthogonal maps preserve orthogonal complements: if $gV_0 = V_0$ and $u \in V_0^\perp$, then for all $v \in V_0$, $(gu) \cdot v = (gu) \cdot (g g^{-1} v) = u \cdot g^{-1}v = 0$ since $g^{-1}v \in V_0$; so $g V_0^\perp \subseteq V_0^\perp$, i.e. $C = 0$. With $C = D = 0$, the condition $g^T g = I$ reads $A^T A = I_k$ and $B^T B = I_{n-k}$, i.e. $A \in \mathrm{O}(k)$, $B \in \mathrm{O}(n-k)$. Conversely every such block-diagonal matrix is orthogonal and fixes $V_0$. The map $(A, B) \mapsto \mathrm{diag}(A, B)$ is a group isomorphism from the product group and a homeomorphism (it is a linear embedding of coordinates).
+> *(Stated in Lecture 4, with the block picture of $\mathrm{O}(k) \times \mathrm{O}(n-k)$; filled in.)* Write $g \in \mathrm{O}(n)$ in blocks $g = \begin{pmatrix} A & C \\ D & B \end{pmatrix}$ with $A$ of size $k \times k$. Written out with the block sizes,
+>
+> $$
+> g = \left(\begin{array}{c|c} A & C \\ \hline D & B \end{array}\right),
+> \qquad
+> \begin{array}{ll} A : k \times k, & C : k \times (n-k), \\ D : (n-k) \times k, & B : (n-k) \times (n-k), \end{array}
+> $$
+>
+> so the first $k$ columns of $g$ are the columns of $\begin{pmatrix} A \\ D \end{pmatrix}$. Then $gV_0 = V_0$ iff $g e_j \in V_0$ for $j \le k$ iff the first $k$ columns have zero lower part, i.e. $D = 0$ (then $g$ maps $V_0$ into $V_0$, and injectivity plus $\dim$ gives $gV_0 = V_0$). Now orthogonal maps preserve orthogonal complements: if $gV_0 = V_0$ and $u \in V_0^\perp$, then for all $v \in V_0$, $(gu) \cdot v = (gu) \cdot (g g^{-1} v) = u \cdot g^{-1}v = 0$ since $g^{-1}v \in V_0$; so $g V_0^\perp \subseteq V_0^\perp$, i.e. $C = 0$. With $C = D = 0$, the condition $g^T g = I$ reads
+> $$
+> g^T g = \begin{pmatrix} A^T & 0 \\ 0 & B^T \end{pmatrix}\begin{pmatrix} A & 0 \\ 0 & B \end{pmatrix} = \begin{pmatrix} A^T A & 0 \\ 0 & B^T B \end{pmatrix} = \begin{pmatrix} I_k & 0 \\ 0 & I_{n-k} \end{pmatrix},
+> $$
+>
+> that is,
+>
+> $A^T A = I_k$ and $B^T B = I_{n-k}$, i.e. $A \in \mathrm{O}(k)$, $B \in \mathrm{O}(n-k)$. Conversely every such block-diagonal matrix is orthogonal and fixes $V_0$. The map $(A, B) \mapsto \mathrm{diag}(A, B)$ is a group isomorphism from the product group and a homeomorphism (it is a linear embedding of coordinates).
 
 ^pf-15-7
 

@@ -9,13 +9,20 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: examples — The circle in one place: its external, graph and internal descriptions, and the one smooth structure defined by its three atlases.*
 
-The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in *this section*; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-10|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in *this section*; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
 
 > [!example] Example §24.1: The Circle in Three Descriptions
 > Near the point $p = (0,1)$ of $S^1 \subseteq \mathbb{R}^2$ (here $n = k = 1$):
 > - **External:** $F(x,y) = x^2 + y^2 - 1$, with $\nabla F = (2x, 2y) \neq 0$ on $S^1$, so $0$ is a regular value and $S^1 = F^{-1}(0)$.
 > - **Graph:** on $(-1,1) \times (0,\infty)$, $S^1$ is the graph of $h(x) = \sqrt{1-x^2}$ — which is the chart $\varphi_2$ of [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]], read backwards.
 > - **Internal:** $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $\theta \in (0,\pi)$, with $\alpha'(\theta) = (-\sin\theta, \cos\theta) \neq 0$ — the angle chart of [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]], read backwards.
+> As the Jacobian of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]], the $2 \times 1$ matrix
+>
+> $$
+> D\alpha_\theta = \begin{pmatrix} -\sin\theta \\ \cos\theta \end{pmatrix}
+> $$
+>
+> has rank $1 = n$.
 >
 > The three are related exactly as in the proof of [[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1]]: $h$ comes from $F$ by the implicit function theorem, and $\alpha$ comes from $h$ by $x \mapsto (x, h(x))$ followed by the reparametrization $x = \cos\theta$.
 

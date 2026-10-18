@@ -171,6 +171,16 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 > $$
 > \tilde\psi \circ \tilde\varphi^{-1}(r, v) = \Big( \psi \circ \varphi^{-1}(r), \ \ \sum_{j=1}^m \frac{\partial y^1}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j, \ \ldots, \ \sum_{j=1}^m \frac{\partial y^m}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j \Big) .
 > $$
+> In matrix form, the last $m$ components are the column $v$ multiplied by the Jacobian $\big[\partial y^i/\partial x^j\big]$ of the change of coordinates (row $i$, column $j$), evaluated at $\varphi^{-1}(r)$:
+>
+> $$
+> \begin{pmatrix}
+> \dfrac{\partial y^1}{\partial x^1} & \cdots & \dfrac{\partial y^1}{\partial x^m} \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial y^m}{\partial x^1} & \cdots & \dfrac{\partial y^m}{\partial x^m}
+> \end{pmatrix}
+> \begin{pmatrix} v^1 \\ \vdots \\ v^m \end{pmatrix} .
+> $$
 >
 > *Lee: Proposition 3.18*
 

@@ -125,6 +125,20 @@ The definitions and results of this section run parallel to those for the tangen
 > $$
 > dx^i|_p = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, dy^j|_p, \qquad \eta_j = \sum_i \frac{\partial x^i}{\partial y^j}(p)\, \xi_i .
 > $$
+> In matrix form, with row index $j$ and column index $i$,
+>
+> $$
+> \begin{pmatrix} \eta_1 \\ \vdots \\ \eta_m \end{pmatrix}
+> =
+> \begin{pmatrix}
+> \dfrac{\partial x^1}{\partial y^1}(p) & \cdots & \dfrac{\partial x^m}{\partial y^1}(p) \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial x^1}{\partial y^m}(p) & \cdots & \dfrac{\partial x^m}{\partial y^m}(p)
+> \end{pmatrix}
+> \begin{pmatrix} \xi_1 \\ \vdots \\ \xi_m \end{pmatrix} ,
+> $$
+>
+> the matrix being the transpose of $\big[\partial x^i/\partial y^j(p)\big]$ (row $i$, column $j$).
 >
 > So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components: with $\tau = \psi \circ \varphi^{-1}$, the transition map is
 >
@@ -149,7 +163,22 @@ The definitions and results of this section run parallel to those for the tangen
 >
 > The $dy^j|_p$ form a basis of $T_p^{\ast}M$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] for the chart $\psi$), so the coefficients of $\xi$ in it are unique; comparing coefficients of $dy^j|_p$ with $\xi = \sum_j \eta_j\, dy^j|_p$ gives $\eta_j = \sum_i \partial x^i/\partial y^j(p)\, \xi_i$.
 >
-> *The inverse matrix.* Write $A = \big[\partial y^i/\partial x^j(p)\big]$ (row $i$, column $j$) and $B = \big[\partial x^i/\partial y^j(p)\big]$. That $B = A^{-1}$ is the chain rule: Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]](3), applied to the two charts $\varphi = (x^i)$ and $\psi = (y^j)$ at $p$, says that $A$ is invertible with inverse $B$. (With the covectors of this section it can also be read off the formula for $dx^i|_p$: evaluating it on $\partial/\partial x^k|_p$ and using $dx^i|_p(\partial/\partial x^k|_p) = \delta^i_k$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]) and $dy^j|_p(\partial/\partial x^k|_p) = \partial y^j/\partial x^k(p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]) gives $\delta^i_k = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, \frac{\partial y^j}{\partial x^k}(p) = (BA)_{ik}$.) By Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] the tangent components transform by $A$, $w = Av$; and the formula for $\eta_j$ reads $\eta_j = \sum_i B_{ij}\, \xi_i = (B^{\mathsf T} \xi)_j$, so the covector components transform by $B^{\mathsf T} = (A^{-1})^{\mathsf T}$.
+> *The inverse matrix.* Write $A = \big[\partial y^i/\partial x^j(p)\big]$ (row $i$, column $j$) and $B = \big[\partial x^i/\partial y^j(p)\big]$. Written out,
+>
+> $$
+> A = \begin{pmatrix}
+> \dfrac{\partial y^1}{\partial x^1}(p) & \cdots & \dfrac{\partial y^1}{\partial x^m}(p) \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial y^m}{\partial x^1}(p) & \cdots & \dfrac{\partial y^m}{\partial x^m}(p)
+> \end{pmatrix},
+> \qquad
+> B = \begin{pmatrix}
+> \dfrac{\partial x^1}{\partial y^1}(p) & \cdots & \dfrac{\partial x^1}{\partial y^m}(p) \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial x^m}{\partial y^1}(p) & \cdots & \dfrac{\partial x^m}{\partial y^m}(p)
+> \end{pmatrix} .
+> $$
+> That $B = A^{-1}$ is the chain rule: Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]](3), applied to the two charts $\varphi = (x^i)$ and $\psi = (y^j)$ at $p$, says that $A$ is invertible with inverse $B$. (With the covectors of this section it can also be read off the formula for $dx^i|_p$: evaluating it on $\partial/\partial x^k|_p$ and using $dx^i|_p(\partial/\partial x^k|_p) = \delta^i_k$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]) and $dy^j|_p(\partial/\partial x^k|_p) = \partial y^j/\partial x^k(p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]) gives $\delta^i_k = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, \frac{\partial y^j}{\partial x^k}(p) = (BA)_{ik}$.) By Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] the tangent components transform by $A$, $w = Av$; and the formula for $\eta_j$ reads $\eta_j = \sum_i B_{ij}\, \xi_i = (B^{\mathsf T} \xi)_j$, so the covector components transform by $B^{\mathsf T} = (A^{-1})^{\mathsf T}$.
 >
 > *The transition map.* Explicitly, let $(r, \xi) \in \hat\varphi(T^{\ast}U \cap T^{\ast}V) = \varphi(U \cap V) \times \mathbb{R}^m$ (an open set, by the same argument as for $TM$ in the proof of Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]], with Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] giving the basis $dx^i|_p$) and $p = \varphi^{-1}(r)$. By the inverse formula of Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]], $\hat\varphi^{-1}(r, \xi) = \big(p, \sum_i \xi_i\, dx^i|_p\big)$, and by the same definition for $\psi$ and the formula for $\eta$, $\hat\psi$ sends this point to $(\psi(p), \eta) = (\tau(r), B^{\mathsf T}\xi)$. With $p = \varphi^{-1}(r)$, the matrix $A = \big[\partial y^i/\partial x^j(p)\big]$ is $\tau'(r)$ (Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], applied to $F = \mathrm{id}_M$ exactly as in the proof of Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]]), so $B = \big[\partial x^i/\partial y^j(p)\big] = \tau'(r)^{-1}$ and $\eta = \big(\tau'(r)^{-1}\big)^{\mathsf T}\xi$, which is the displayed transition map.
 >

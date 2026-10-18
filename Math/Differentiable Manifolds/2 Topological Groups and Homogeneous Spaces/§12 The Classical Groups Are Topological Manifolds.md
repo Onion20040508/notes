@@ -43,6 +43,16 @@ Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [
 > $$
 >
 > and $\det(g)$ is a constant, so it suffices to show $\frac{d}{dt}\big|_{t=0} \det(I + tV) = \operatorname{tr} V$. By the Leibniz formula, with $(I + tV)_{ij} = \delta_{ij} + t V_{ij}$,
+> that is,
+>
+> $$
+> I + tV = \begin{pmatrix}
+> 1 + tV_{11} & tV_{12} & \cdots & tV_{1n} \\
+> tV_{21} & 1 + tV_{22} & \cdots & tV_{2n} \\
+> \vdots & \vdots & \ddots & \vdots \\
+> tV_{n1} & tV_{n2} & \cdots & 1 + tV_{nn}
+> \end{pmatrix},
+> $$
 >
 > $$
 > \det(I + tV) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n \big( \delta_{i,\sigma(i)} + t\, V_{i,\sigma(i)} \big).
@@ -79,6 +89,20 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 > $$
 >
 > as an element of $\mathbb{R}^{n^2}$ arranged as an $n \times n$ matrix; equivalently $\dfrac{\partial \det}{\partial x_{ij}}(g) = \operatorname{adj}(g)_{ji}$, the $(i,j)$ cofactor of $g$.
+> Written out,
+>
+> $$
+> \nabla\det(g) = \begin{pmatrix}
+> \dfrac{\partial \det}{\partial x_{11}}(g) & \cdots & \dfrac{\partial \det}{\partial x_{1n}}(g) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial \det}{\partial x_{n1}}(g) & \cdots & \dfrac{\partial \det}{\partial x_{nn}}(g)
+> \end{pmatrix}
+> = \begin{pmatrix}
+> \operatorname{adj}(g)_{11} & \cdots & \operatorname{adj}(g)_{n1} \\
+> \vdots & & \vdots \\
+> \operatorname{adj}(g)_{1n} & \cdots & \operatorname{adj}(g)_{nn}
+> \end{pmatrix}.
+> $$
 >
 > *Lee: Problem 7-4*
 
@@ -99,6 +123,13 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 
 > [!remark] Remark: The Gradient Itself
 > Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1]] is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$.
+> *(Computed; not from lecture.)* For $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $\det g = ad - bc$ and $g^{-1} = \dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, so
+>
+> $$
+> \nabla\det(g) = \begin{pmatrix} \partial_a(ad - bc) & \partial_b(ad - bc) \\ \partial_c(ad - bc) & \partial_d(ad - bc) \end{pmatrix}
+> = \begin{pmatrix} d & -c \\ -b & a \end{pmatrix}
+> = (ad - bc)\,(g^{-1})^{\mathsf T}.
+> $$
 
 ^rem-12-2
 

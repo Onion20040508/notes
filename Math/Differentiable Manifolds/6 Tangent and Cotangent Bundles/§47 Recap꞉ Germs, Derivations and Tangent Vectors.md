@@ -60,6 +60,17 @@ F_{*p} : T_pM \to T_{F(p)}N, \qquad (F_{*p}D)[g] = D\big(F_p^*[g]\big) = D[g \ci
 $$
 
 ([[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6]]) — to see how $F_{\ast p}D$ differentiates $g$, pull $g$ back and let $D$ differentiate it. The chain rule is $(G \circ F)_{\ast p} = G_{\ast F(p)} \circ F_{\ast p}$ ([[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Theorem §28.6]]). In charts the matrix of $F_{\ast p}$ is the Jacobian of the coordinate representation ([[§30 The Differential in Coordinates#^thm-30-2|Theorem §30.2]], with [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1]]), and on open subsets of Euclidean space $F_{\ast p}$ *is* the ordinary derivative, the differential $dF_p$ of [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Definition §22.5]] ([[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5]]).
+Written out, in charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $F(p)$, with $F^j = y^j \circ F$, the matrix of $F_{\ast p}$ in the coordinate bases is the $n \times m$ Jacobian
+
+$$
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix},
+$$
+
+whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p)$.
 
 ![[§28 Derivations and the Abstract Tangent Space#^def-28-5]]
 
@@ -95,6 +106,10 @@ $$
 >
 >    $$
 >    F_{*p} v = (2 \cdot 3 + 0)\, \frac{\partial}{\partial u}\Big|_{F(p)} + (3 - 1)\, \frac{\partial}{\partial w}\Big|_{F(p)} = 6\, \frac{\partial}{\partial u} + 2\, \frac{\partial}{\partial w} .
+> \]
+> In matrix form, the Jacobian acts on the column of components of $v$:
+> \[
+> \begin{pmatrix} 2 & 0 \ 1 & 1 \end{pmatrix} \begin{pmatrix} 3 \ -1 \end{pmatrix} = \begin{pmatrix} 6 \ 2 \end{pmatrix} .
 >    $$
 >
 >    By the definition instead: $(F_{\ast p}v)[u] = v[u \circ F] = v[x^2] = 3 \cdot 2 = 6$ and $(F_{\ast p}v)[w] = v[x + y] = 3 - 1 = 2$, the same components by the universal formula.

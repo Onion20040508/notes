@@ -57,7 +57,18 @@ tags: [differentiable-manifolds, math591]
 ## Classical Matrix Groups
 
 > [!definition] Definition §11.2: Matrices as a Euclidean Space
-> Let $\operatorname{Mat}(n, \mathbb{R})$ be the set of all $n \times n$ real matrices, a real vector space under entrywise addition and scalar multiplication. For $1 \le i, j \le n$ let $E_{ij} \in \operatorname{Mat}(n,\mathbb{R})$ be the matrix with a $1$ in position $(i,j)$ and $0$ elsewhere. Every $g$ can be written uniquely as $g = \sum_{i,j} g_{ij} E_{ij}$, so $\{E_{ij}\}$ is a basis and $\dim \operatorname{Mat}(n,\mathbb{R}) = n^2$. Fix the coordinate map
+> Let $\operatorname{Mat}(n, \mathbb{R})$ be the set of all $n \times n$ real matrices, a real vector space under entrywise addition and scalar multiplication. For $1 \le i, j \le n$ let $E_{ij} \in \operatorname{Mat}(n,\mathbb{R})$ be the matrix with a $1$ in position $(i,j)$ and $0$ elsewhere. Every $g$ can be written uniquely as $g = \sum_{i,j} g_{ij} E_{ij}$, so $\{E_{ij}\}$ is a basis and $\dim \operatorname{Mat}(n,\mathbb{R}) = n^2$. Written out,
+>
+> $$
+> g = \begin{pmatrix}
+> g_{11} & g_{12} & \cdots & g_{1n} \\
+> g_{21} & g_{22} & \cdots & g_{2n} \\
+> \vdots & \vdots & \ddots & \vdots \\
+> g_{n1} & g_{n2} & \cdots & g_{nn}
+> \end{pmatrix}
+> = g_{11}E_{11} + g_{12}E_{12} + \cdots + g_{nn}E_{nn}.
+> $$
+> Fix the coordinate map
 >
 > $$
 > \operatorname{Mat}(n,\mathbb{R}) \longrightarrow \mathbb{R}^{n^2}, \qquad g \longmapsto (g_{11}, g_{12}, \ldots, g_{1n},\ g_{21}, \ldots, g_{2n},\ \ldots,\ g_{n1}, \ldots, g_{nn}),
@@ -223,7 +234,18 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 ^prop-11-5
 
 > [!proof]+ Proof
-> *(Stated in Lecture 3 — “$g \in \mathrm{O}(n) \iff g^{-1} = g^{\mathsf T}$”; filled in.)* Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. (ii) $\iff$ (iii) since for square matrices a one-sided inverse is two-sided. Finally $1 = \det(I) = \det(g^T g) = \det(g^T)\det(g) = \det(g)^2$.
+> *(Stated in Lecture 3 — “$g \in \mathrm{O}(n) \iff g^{-1} = g^{\mathsf T}$”; filled in.)* Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. *(Computed; not from lecture.)* Since $e_i^T g^T g\, e_j = (ge_i) \cdot (ge_j)$ and $ge_j = g_j$ is the $j$-th column of $g$, written out
+>
+> $$
+> g^T g = \begin{pmatrix}
+> g_1 \cdot g_1 & g_1 \cdot g_2 & \cdots & g_1 \cdot g_n \\
+> g_2 \cdot g_1 & g_2 \cdot g_2 & \cdots & g_2 \cdot g_n \\
+> \vdots & \vdots & \ddots & \vdots \\
+> g_n \cdot g_1 & g_n \cdot g_2 & \cdots & g_n \cdot g_n
+> \end{pmatrix},
+> $$
+>
+> so $g^T g = I$ says exactly that the columns of $g$ are orthonormal. (ii) $\iff$ (iii) since for square matrices a one-sided inverse is two-sided. Finally $1 = \det(I) = \det(g^T g) = \det(g^T)\det(g) = \det(g)^2$.
 
 ^pf-11-5
 
@@ -306,4 +328,4 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 > [!remark]- Connections
 > - The circle group in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]]; $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ as an orbit space: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]].
 
-The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-10|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].

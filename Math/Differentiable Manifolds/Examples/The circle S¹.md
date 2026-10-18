@@ -15,7 +15,7 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 - The chart domains are exactly the open arcs, the connected open sets other than $S^1$ ([[§17 Differentiable Structures#^prop-17-4|§17]])
 - The stereographic atlas, with transition $u \mapsto 1/u$ ([[§17 Differentiable Structures#^ex-17-3|§17]])
 - The angle atlas, with translations as transition maps ([[§17 Differentiable Structures#^ex-17-4|§17]])
-- Three atlases, one smooth structure ([[§17 Differentiable Structures#^rem-17-9|§17]])
+- Three atlases, one smooth structure ([[§17 Differentiable Structures#^rem-17-10|§17]])
 - $\mathbb{RP}^1$ is homeomorphic to $S^1$ ([[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|§18]])
 - The circle in three descriptions: level set, graph, parametrization ([[§24 The Circle#^ex-24-1|§24]])
 - The three circle atlases agree with the level-set structure ([[§24 The Circle#^prop-24-1|§24]])
@@ -51,7 +51,7 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 ![[§17 Differentiable Structures#^ex-17-4]]
 
 ## Three atlases, one smooth structure
-![[§17 Differentiable Structures#^rem-17-9]]
+![[§17 Differentiable Structures#^rem-17-10]]
 
 ## $\mathbb{RP}^1$ is homeomorphic, indeed diffeomorphic, to $S^1$
 ![[§18 Projective Spaces as Smooth Manifolds#^prop-18-6]]

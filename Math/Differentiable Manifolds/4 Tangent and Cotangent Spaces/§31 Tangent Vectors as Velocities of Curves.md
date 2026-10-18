@@ -134,6 +134,19 @@ Assignment 3's solution first treats the basis vectors $\partial/\partial x^i|_p
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
 
 This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve with velocity $D$ and differentiate $F$ along it. It is the manifold version of Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], and it is how Lee computes the differential of the determinant (Problem 7-4).
+*(Computed; not from lecture.)* With $m = \dim M$, $n = \dim N$, charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, and $F^j = y^j \circ F$, the coefficients of $D_\gamma$ and $D_{F \circ \gamma}$ are $(x^i \circ \gamma)'(0)$ and $(y^j \circ F \circ \gamma)'(0)$ (Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]]), and by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the identity $D_{F \circ \gamma} = F_{\ast p}(D_\gamma)$ reads
+
+$$
+\begin{pmatrix} (y^1 \circ F \circ \gamma)'(0) \\ \vdots \\ (y^n \circ F \circ \gamma)'(0) \end{pmatrix}
+= \begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix}
+\begin{pmatrix} (x^1 \circ \gamma)'(0) \\ \vdots \\ (x^m \circ \gamma)'(0) \end{pmatrix} :
+$$
+
+the Jacobian carries the velocity of the coordinate curve $\varphi \circ \gamma$ to that of $\psi \circ F \circ \gamma$.
 
 ![[m591-12-14.svg]]
 *The proof in one picture. Downstairs, in the chart, the curve is the straight line through $\varphi(p)$ in the direction of the coefficient vector $a = (D[x^1], \ldots, D[x^n])$. The chart carries it upstairs to a curve $\gamma$ in $M$, bent by whatever distortion $\varphi^{-1}$ introduces. The bending is invisible to the velocity, which depends only on $(\varphi \circ \gamma)'(0) = a$ — so the velocity is $D$.*
@@ -270,6 +283,13 @@ to push $v$ forward, restrict $f$ to the slice $M_1 \times \{p_2\}$ and differen
 > $$
 >
 > *The bases.* The $\partial/\partial x^i|_{p_1}$ form a basis of $T_{p_1}M_1$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), and $\iota_{1\ast }$ is linear and injective (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). An injective linear map carries a basis of its domain to a basis of its image (the images span the image, and a linear relation among them pulls back to one among the originals). So the $\partial/\partial x^i|_p = \iota_{1\ast }(\partial/\partial x^i|_{p_1})$ form a basis of the first summand $\iota_{1\ast }(T_{p_1}M_1)$; in the same way, with $\iota_{2\ast }$ and the basis $\partial/\partial y^j|_{p_2}$ of $T_{p_2}M_2$, the $\partial/\partial y^j|_p$ form a basis of the second summand.
+> *(Computed; not from lecture.)* Placing the two Jacobians side by side: in the basis $(\partial/\partial x^i|_{p_1}, 0), (0, \partial/\partial y^j|_{p_2})$ of $T_{p_1}M_1 \oplus T_{p_2}M_2$ and the product-coordinate basis of $T_p(M_1 \times M_2)$, the matrix of $\Theta(v, w) = \iota_{1\ast}v + \iota_{2\ast}w$ is
+>
+> $$
+> \left(\begin{array}{c|c} I_{m_1} & 0 \\ \hline 0 & I_{m_2} \end{array}\right) = I_{m_1 + m_2},
+> $$
+>
+> its first $m_1$ columns being the Jacobian of $\iota_1$ and its last $m_2$ columns that of $\iota_2$.
 
 ^pf-31-5
 

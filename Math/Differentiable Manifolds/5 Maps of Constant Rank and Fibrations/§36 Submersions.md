@@ -249,7 +249,12 @@ This is the definition of critical point Uribe sent to the class by email, and i
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!proof]+ Second proof of (2), by the Jacobian
-> *(The second independence argument of the submitted solution, Assignment 5, Problem 4(b), run in both directions.)* Fix any chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$, and let $J$ be the $k \times m$ matrix with entries $J_{ji} = \partial G^j/\partial x^i(p)$. By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $dG^j|_p = \sum_{i=1}^m J_{ji}\, dx^i|_p$: row $j$ of $J$ holds the components of $dG^j|_p$. Hence, for $c \in \mathbb{R}^k$, collecting the coefficient of each $dx^i|_p$,
+> *(The second independence argument of the submitted solution, Assignment 5, Problem 4(b), run in both directions.)* Fix any chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$, and let $J$ be the $k \times m$ matrix with entries $J_{ji} = \partial G^j/\partial x^i(p)$. Written out,
+>
+> $$
+> J = \begin{pmatrix} \dfrac{\partial G^1}{\partial x^1}(p) & \cdots & \dfrac{\partial G^1}{\partial x^m}(p) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial G^k}{\partial x^1}(p) & \cdots & \dfrac{\partial G^k}{\partial x^m}(p) \end{pmatrix} .
+> $$
+> By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $dG^j|_p = \sum_{i=1}^m J_{ji}\, dx^i|_p$: row $j$ of $J$ holds the components of $dG^j|_p$. Hence, for $c \in \mathbb{R}^k$, collecting the coefficient of each $dx^i|_p$,
 >
 > $$
 > \sum_{j=1}^k c_j\, dG^j|_p = \sum_{i=1}^m \Big(\sum_{j=1}^k c_j J_{ji}\Big) dx^i|_p ,
@@ -330,7 +335,12 @@ Uribe singled out Lemma [[§36 Submersions#^lem-36-5|§36.5]] as “an intellect
 > J = \Big[\frac{\partial F^j}{\partial x^i}(p)\Big]
 > $$
 >
-> has rank $n$. It “has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients” of the $F^j$. *(Completion.)* By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $J$ is the matrix of $F_{\ast p}$ in the coordinate bases, and $F_{\ast p}$ is onto, so $J$ has rank $n$: the rank of $F_{\ast p}$ is $\dim T_{F(p)}N = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), and the rank of a linear map is the rank of its matrix (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)).
+> has rank $n$. It “has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients” of the $F^j$. Written out,
+>
+> $$
+> J = \begin{pmatrix} \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p) \end{pmatrix} \qquad (n \text{ rows}, \ m \text{ columns}).
+> $$
+> *(Completion.)* By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $J$ is the matrix of $F_{\ast p}$ in the coordinate bases, and $F_{\ast p}$ is onto, so $J$ has rank $n$: the rank of $F_{\ast p}$ is $\dim T_{F(p)}N = n$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), and the rank of a linear map is the rank of its matrix (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)).
 >
 > *3. “It's the same matrix.”* A student asked whether the matrix should be written with $\tilde F$. Uribe: “It's the same thing… That's how we define partials. We define them by going downstairs and taking the ordinary partial derivative downstairs. So it's the same matrix.” That is Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]: writing $G = \psi \circ F \circ \varphi_0^{-1}$ for the coordinate representation in these first charts (the lecture's $\tilde F$ at this stage),
 >
@@ -370,7 +380,12 @@ Uribe singled out Lemma [[§36 Submersions#^lem-36-5|§36.5]] as “an intellect
 > H(r) = \hat\varphi(q) = \big(F^1(q), \ldots, F^n(q), x^{n+1}(q), \ldots, x^m(q)\big) = \big(G^1(r), \ldots, G^n(r), r^{n+1}, \ldots, r^m\big).
 > $$
 >
-> The first $n$ rows of $H'(\varphi_0(p))$ are therefore the rows of $G'(\varphi_0(p)) = J = (A \mid B)$, and row $n + l$ is the gradient of $r^{n+l}$, the standard row vector with $1$ in place $n + l$. The matrix is block upper triangular, so its determinant is the product $\det A \cdot \det I_{m-n} = \det A$ of the determinants of the diagonal blocks.
+> The first $n$ rows of $H'(\varphi_0(p))$ are therefore the rows of $G'(\varphi_0(p)) = J = (A \mid B)$, and row $n + l$ is the gradient of $r^{n+l}$, the standard row vector with $1$ in place $n + l$. Written out, with all partials at $\varphi_0(p)$,
+>
+> $$
+> H'\big(\varphi_0(p)\big) = \left(\begin{array}{ccc|ccc} \dfrac{\partial G^1}{\partial r^1} & \cdots & \dfrac{\partial G^1}{\partial r^n} & \dfrac{\partial G^1}{\partial r^{n+1}} & \cdots & \dfrac{\partial G^1}{\partial r^m} \\ \vdots & & \vdots & \vdots & & \vdots \\ \dfrac{\partial G^n}{\partial r^1} & \cdots & \dfrac{\partial G^n}{\partial r^n} & \dfrac{\partial G^n}{\partial r^{n+1}} & \cdots & \dfrac{\partial G^n}{\partial r^m} \\ \hline 0 & \cdots & 0 & 1 & \cdots & 0 \\ \vdots & & \vdots & \vdots & \ddots & \vdots \\ 0 & \cdots & 0 & 0 & \cdots & 1 \end{array}\right) = \begin{pmatrix} A & B \\ 0 & I_{m-n} \end{pmatrix} .
+> $$
+> The matrix is block upper triangular, so its determinant is the product $\det A \cdot \det I_{m-n} = \det A$ of the determinants of the diagonal blocks.
 >
 > *8. The inverse function theorem, “possibly after shrinking $U$.”* By the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]), possibly after shrinking, $\hat\varphi$ is a diffeomorphism onto $\hat\varphi(U)$. *(Completion.)* The theorem gives an open $W \ni \varphi_0(p)$, contained in $\varphi_0(U_0)$, with $H|_W$ a diffeomorphism onto the open set $H(W) \subseteq \mathbb{R}^m$. (This is Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] with $\Phi = H$ on the open set $\varphi_0(U_0)$ and $a = \varphi_0(p)$, where $H'(a)$ is invertible by step 7; the open sets that theorem calls $U_0$ and $V_0$ are here $W$ and $H(W)$, not to be confused with the chart domain $U_0$.) Put $U = \varphi_0^{-1}(W)$, an open neighbourhood of $p$. Then $\hat\varphi|_U = H|_W \circ \varphi_0|_U$ is a composite of diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), mapping $U$ onto the open set $\hat\varphi(U) = H(W)$. In detail: $H \circ \varphi_0 = \hat\varphi \circ \varphi_0^{-1} \circ \varphi_0 = \hat\varphi$ on $U_0$; $\varphi_0|_U : U \to W$ is the restriction of the diffeomorphism $\varphi_0 : U_0 \to \varphi_0(U_0)$ to the open set $U$, onto $\varphi_0(U) = W$; $H|_W$ is a diffeomorphism of open subsets of $\mathbb{R}^m$, hence of manifolds (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]]); and the composite has the smooth inverse $(\varphi_0|_U)^{-1} \circ (H|_W)^{-1}$.
 >
@@ -413,7 +428,12 @@ Uribe singled out Lemma [[§36 Submersions#^lem-36-5|§36.5]] as “an intellect
 > [!proof]+ Proof
 > Let $(U, \hat\varphi)$ and $(V, \psi)$ be the charts of the theorem: $p \in U$, $F(U) \subseteq V$, and $\tilde F = \psi \circ F \circ \hat\varphi^{-1}$ is the projection $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$ on $\hat\varphi(U)$. The open set $U$ is a neighbourhood of $p$; we show that $F$ is a submersion at every $q \in U$.
 >
-> In the charts of the theorem, $\tilde F$ is the projection, whose Jacobian $(I_n \mid 0)$ has rank $n$ at every point of $\hat\varphi(U)$: its components are $\tilde F^j(r) = r^j$ ($j \le n$), so $\partial \tilde F^j/\partial r^i = \delta^j_i$ for $i = 1, \ldots, m$ at every point, and the first $n$ columns of the resulting matrix are the standard basis of $\mathbb{R}^n$. Now fix $q \in U$. The same two charts are charts at $q$ and at $F(q)$ with $F(U) \subseteq V$, so by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the matrix of $F_{\ast q}$ in the coordinate bases is $\tilde F'(\hat\varphi(q)) = (I_n \mid 0)$. Hence $\operatorname{rank} F_{\ast q} = n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)), and the image of $F_{\ast q}$ is an $n$-dimensional subspace of the $n$-dimensional space $T_{F(q)}N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so it is all of it. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $F_{\ast q}$ is onto for every $q \in U$.
+> In the charts of the theorem, $\tilde F$ is the projection, whose Jacobian $(I_n \mid 0)$ has rank $n$ at every point of $\hat\varphi(U)$: its components are $\tilde F^j(r) = r^j$ ($j \le n$), so $\partial \tilde F^j/\partial r^i = \delta^j_i$ for $i = 1, \ldots, m$ at every point, and the first $n$ columns of the resulting matrix are the standard basis of $\mathbb{R}^n$. Written out, for every $r \in \hat\varphi(U)$,
+>
+> $$
+> \tilde F'(r) = \left(\begin{array}{cccc|ccc} 1 & 0 & \cdots & 0 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 & 0 & \cdots & 0 \\ \vdots & & \ddots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 1 & 0 & \cdots & 0 \end{array}\right) = (I_n \mid 0) \qquad (n \text{ rows}, \ m \text{ columns}).
+> $$
+> Now fix $q \in U$. The same two charts are charts at $q$ and at $F(q)$ with $F(U) \subseteq V$, so by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the matrix of $F_{\ast q}$ in the coordinate bases is $\tilde F'(\hat\varphi(q)) = (I_n \mid 0)$. Hence $\operatorname{rank} F_{\ast q} = n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)), and the image of $F_{\ast q}$ is an $n$-dimensional subspace of the $n$-dimensional space $T_{F(q)}N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so it is all of it. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $F_{\ast q}$ is onto for every $q \in U$.
 
 ^pf-36-7
 

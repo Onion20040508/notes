@@ -46,7 +46,16 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ![[m591-5-1.svg]]
 *$\mathrm{O}(2)$ as two circles: the rotations $\mathrm{SO}(2)$ over $\det = +1$ and the reflections $R_\theta S$ over $\det = -1$.*
 
-$\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ — if $\det A = -1$ then $AS \in \mathrm{SO}(2)$ — a second circle. The determinant is continuous with only the values $\pm 1$ on $\mathrm{O}(n)$, so it splits $\mathrm{O}(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\mathrm{GL}(n,\mathbb{R})$ ([[§16 The Classical Groups#^prop-16-1|Proposition §16.1]]). That each piece is connected, so that $\mathrm{O}(n)$ has exactly two components, is Lee's Proposition 21.34.
+$\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ — if $\det A = -1$ then $AS \in \mathrm{SO}(2)$ — a second circle. *(Computed; not from lecture.)* Explicitly,
+
+$$
+R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix},
+\qquad
+S = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+\qquad
+R_\theta S = \begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix}.
+$$
+The determinant is continuous with only the values $\pm 1$ on $\mathrm{O}(n)$, so it splits $\mathrm{O}(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\mathrm{GL}(n,\mathbb{R})$ ([[§16 The Classical Groups#^prop-16-1|Proposition §16.1]]). That each piece is connected, so that $\mathrm{O}(n)$ has exactly two components, is Lee's Proposition 21.34.
 
 > [!example] Example §16.1: Why $\mathrm{SO}(n)$ Is a Proper Subgroup of $\mathrm{O}(n)$
 > A student asked why one bothers to intersect with $\mathrm{SL}$: does $\mathrm{O}(n)$ not already sit inside $\mathrm{SL}(n)$? No: $\det = \pm 1$, and both signs occur. The reflection

@@ -232,6 +232,13 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 > [!example] Example §26.1: The Sphere and the Plane Re-read
 > The figure in [[§7 The Regular Value Theorem#^rem-7-4|§7]] was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\mathrm{geo}}_qS_1 = q^\perp$ and $T^{\mathrm{geo}}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e. iff $q \neq \pm e_3$ — iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients.
+> *(Computed; not from lecture.)* In the form of Proposition [[§26 Transversality#^prop-26-4|§26.4]], cut out $S_1$ by $G_1(x,y,z) = x^2 + y^2 + z^2 - 1$ and $S_2$ by $G_2(x,y,z) = z - c$; at $q = (x,y,z)$ the stacked $2 \times 3$ Jacobian is
+>
+> $$
+> (G_1, G_2)'(q) = \begin{pmatrix} G_1'(q) \\ G_2'(q) \end{pmatrix} = \begin{pmatrix} 2x & 2y & 2z \\ 0 & 0 & 1 \end{pmatrix},
+> $$
+>
+> whose $2 \times 2$ minors are $2x$, $2y$ (columns $1,3$ and $2,3$) and $0$ (columns $1,2$); so it has rank $2$ iff $(x,y) \neq (0,0)$, which on $S^2$ means $q \neq \pm e_3$.
 > - $|c| < 1$: every point of $S_1 \cap S_2$ has $x^2 + y^2 = 1 - c^2 > 0$, so $q \neq \pm e_3$ and the intersection is transverse. Codimensions add, $1 + 1 = 2$, and $S_1 \cap S_2$ is a curve: the circle of radius $\sqrt{1-c^2}$.
 > - $c = \pm 1$: $S_1 \cap S_2 = \{\pm e_3\}$, where $T^{\mathrm{geo}}_qS_1 = T^{\mathrm{geo}}_qS_2$. Not transverse, and the intersection is a point rather than the predicted curve.
 > - $|c| > 1$: the intersection is empty, and transversality holds vacuously.
@@ -244,6 +251,11 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > Let $S$ be the $x$-axis in $\mathbb{R}^2$, cut out by $G(x,y) = y$, so $T^{\mathrm{geo}}_qS$ is the $x$-axis at every $q \in S$, and $\ell = 1$. For $F : \mathbb{R} \to \mathbb{R}^2$ the theorem predicts $\dim F^{-1}(S) = 1 - 1 = 0$.
 > - (a) $F(t) = (t, 0)$. Then $F^{-1}(S) = \mathbb{R}$, of dimension $1$: the *dimension* is wrong. Here $\operatorname{im} F'(t)$ is the $x$-axis, so $\operatorname{im} F'(t) + T S$ is the $x$-axis, not $\mathbb{R}^2$.
 > - (b) $F(t) = (t, t^2)$. Then $F^{-1}(S) = \{0\}$, which has the predicted dimension $0$; but $F'(0) = (1,0)$ lies in $T^{\mathrm{geo}}_0S$, so $F'(0)^{-1}(T^{\mathrm{geo}}_0S) = \mathbb{R}$, while the geometric tangent space of a point is $0$: the *tangent formula* is wrong. Correspondingly $(G \circ F)(t) = t^2$ has $(G\circ F)'(0) = 0$, as [[§26 Transversality#^prop-26-2|Proposition §26.2]] predicts.
+> *(Computed; not from lecture.)* As a product of Jacobians, with the $1 \times 2$ Jacobian $G'(x,y) = \begin{pmatrix} 0 & 1 \end{pmatrix}$ of $G(x,y) = y$ and the $2 \times 1$ Jacobian $F'(t) = \begin{pmatrix} 1 \\ 2t \end{pmatrix}$,
+>
+> $$
+> (G \circ F)'(0) = G'(F(0))\,F'(0) = \begin{pmatrix} 0 & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = 0 .
+> $$
 > - (c) $F(t) = (t, t^2 - \varepsilon)$ with $\varepsilon > 0$. Now $F^{-1}(S) = \{\pm\sqrt\varepsilon\}$, and at these points $F'(t) = (1, 2t)$ has nonzero second component, so $\operatorname{im} F'(t) + TS = \mathbb{R}^2$: transverse, two points, and every conclusion of the theorem holds.
 
 ^ex-26-2

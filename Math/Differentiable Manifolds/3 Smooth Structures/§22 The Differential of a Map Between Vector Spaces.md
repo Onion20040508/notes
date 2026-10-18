@@ -113,6 +113,15 @@ Commutativity means: apply $F$ and then take coordinates, or take coordinates an
 ^rem-22-1
 
 Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the same vertical arrows but a *linear* map along the bottom: the linear map $\mathbb{R}^m \to \mathbb{R}^n$ given by the Jacobian matrix $\widetilde F'(\tilde p)$, where $\tilde p = L(p)$ is the coordinate vector of $p$.
+Written out, with $\widetilde F = (\widetilde F^1, \ldots, \widetilde F^n)$ and coordinates $(r^1, \ldots, r^m)$ on $\mathbb{R}^m$, it is the $n \times m$ matrix
+
+$$
+\widetilde F'(\tilde p) = \begin{pmatrix}
+\dfrac{\partial \widetilde F^1}{\partial r^1}(\tilde p) & \cdots & \dfrac{\partial \widetilde F^1}{\partial r^m}(\tilde p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial \widetilde F^n}{\partial r^1}(\tilde p) & \cdots & \dfrac{\partial \widetilde F^n}{\partial r^m}(\tilde p)
+\end{pmatrix}.
+$$
 
 > [!definition] Definition §22.5: The Differential
 > Let $F : X \to Y$ be smooth and $p \in X$. Choose linear coordinates $L$ on $X$ and $K$ on $Y$, let $\widetilde F = K \circ F \circ L^{-1}$ be the coordinate representation ([[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]]), and put $\tilde p = L(p)$. The **differential** of $F$ at $p$ is the unique linear map $dF_p : X \to Y$ making the square commute:

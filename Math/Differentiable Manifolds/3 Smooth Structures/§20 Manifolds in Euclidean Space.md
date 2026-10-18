@@ -43,10 +43,39 @@ tags: [differentiable-manifolds, math591]
 > *External $\Rightarrow$ (G).* This is Steps 1–3 of the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]]: the rank condition lets one permute coordinates so that $\big(\partial F^i/\partial y^j(p)\big)$ is nonsingular, and Theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] produces the smooth $h$ with $F(x,y) = \vec 0 \iff y = h(x)$ on a box.
 >
 > *(G) $\Rightarrow$ external.* Take $W = V \times V'$ and $F(x,y) = y - h(x)$, smooth, with $F^{-1}(\vec 0) = X \cap W$ by hypothesis. Its Jacobian is the $k \times (n+k)$ block matrix $\big(-Dh_x \ \big| \ I_k\big)$, of rank $k$ everywhere because of the identity block; so $\vec 0$ is a regular value.
+> Written out, with $h = (h^1, \ldots, h^k)$,
+>
+> $$
+> DF_{(x,y)} = \left(\begin{array}{ccc|ccc}
+> -\dfrac{\partial h^1}{\partial x^1}(x) & \cdots & -\dfrac{\partial h^1}{\partial x^n}(x) & 1 & & 0 \\[2mm]
+> \vdots & & \vdots & & \ddots & \\[1mm]
+> -\dfrac{\partial h^k}{\partial x^1}(x) & \cdots & -\dfrac{\partial h^k}{\partial x^n}(x) & 0 & & 1
+> \end{array}\right).
+> $$
 >
 > *(G) $\Rightarrow$ internal.* Take $\alpha(x) = (x, h(x))$ on $V$. It is smooth, its Jacobian $\big(I_n \, ; \, Dh_x\big)$ has rank $n$, and it is a homeomorphism onto $X \cap (V \times V')$ with inverse the restriction of the projection $(x,y) \mapsto x$.
+> Written out, the $(n+k) \times n$ Jacobian is
 >
-> *Internal $\Rightarrow$ (G).* Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. Then $D(\alpha_1)_q$ is invertible, so by the [[§35 Local Diffeomorphisms#^thm-35-1|inverse function theorem]] (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$, so it equals $X \cap (V_2 \times V')$ for a suitable box.
+> $$
+> D\alpha_x = \left(\begin{array}{ccc}
+> 1 & & 0 \\
+> & \ddots & \\
+> 0 & & 1 \\[1mm] \hline
+> \dfrac{\partial h^1}{\partial x^1}(x) & \cdots & \dfrac{\partial h^1}{\partial x^n}(x) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial h^k}{\partial x^1}(x) & \cdots & \dfrac{\partial h^k}{\partial x^n}(x)
+> \end{array}\right),
+> $$
+>
+> whose top $n \times n$ block is $I_n$.
+>
+> *Internal $\Rightarrow$ (G).* Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. In blocks,
+>
+> $$
+> D\alpha_q = \begin{pmatrix} D(\alpha_1)_q \\[1mm] D(\alpha_2)_q \end{pmatrix},
+> $$
+>
+> with $D(\alpha_1)_q$ the $n \times n$ block of the $n$ independent rows and $D(\alpha_2)_q$ the remaining $k \times n$ block. Then $D(\alpha_1)_q$ is invertible, so by the [[§35 Local Diffeomorphisms#^thm-35-1|inverse function theorem]] (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$, so it equals $X \cap (V_2 \times V')$ for a suitable box.
 
 ^pf-20-1
 
@@ -143,7 +172,13 @@ The proof in one picture. The transition function between two graph charts facto
 > - Generalized to level sets in manifolds: [[§37 Regular Submanifolds#^thm-37-12|§37.12]]; the two structures agree by [[§37 Regular Submanifolds#^prop-37-14|§37.14]].
 
 > [!example] Example §20.1: A Surface in $\mathbb{R}^3$
-> The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ *two* partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Then $p$ lies in the domains of two charts built from different solved-for variables:
+> The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ *two* partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Written out, the last two entries of the $1 \times 3$ Jacobian
+>
+> $$
+> F'(p) = \begin{pmatrix} \dfrac{\partial F}{\partial x}(p) & \dfrac{\partial F}{\partial y}(p) & \dfrac{\partial F}{\partial z}(p) \end{pmatrix}
+> $$
+>
+> are nonzero. Then $p$ lies in the domains of two charts built from different solved-for variables:
 >
 > $$
 > \begin{aligned}

@@ -263,6 +263,20 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 > $$
 > F^*\Big(\sum_j \theta_j\, dy^j\Big) = \sum_i \Big( \sum_j (\theta_j \circ F)\, \frac{\partial F^j}{\partial x^i} \Big)\, dx^i .
 > $$
+> In matrix form, with $m = \dim M$ and $n = \dim N$, the column of coefficients of $F^{\ast}\theta$ is the transpose of the Jacobian $\big[\partial F^j/\partial x^i\big]$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]) applied to the column of the $\theta_j \circ F$:
+>
+> $$
+> \begin{pmatrix}
+> \sum_j (\theta_j \circ F)\, \dfrac{\partial F^j}{\partial x^1} \\ \vdots \\ \sum_j (\theta_j \circ F)\, \dfrac{\partial F^j}{\partial x^m}
+> \end{pmatrix}
+> =
+> \begin{pmatrix}
+> \dfrac{\partial F^1}{\partial x^1} & \cdots & \dfrac{\partial F^n}{\partial x^1} \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial F^1}{\partial x^m} & \cdots & \dfrac{\partial F^n}{\partial x^m}
+> \end{pmatrix}
+> \begin{pmatrix} \theta_1 \circ F \\ \vdots \\ \theta_n \circ F \end{pmatrix} .
+> $$
 >
 > In particular $F^{\ast}\theta$ is smooth whenever $\theta$ is.
 

@@ -387,7 +387,15 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 > [!proof]+ Proof
 > *(Lecture 19 — “we have run out of diagrams to chase. We actually have to compute something.” The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11|§57.11]], which reduces every linear group to this case.)*
 >
-> *Coordinates.* Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \mathrm{GL}(d, \mathbb{R})$ rather than $g$, “because I want to think of it as a variable.” The entries $x^i_j$ are the standard coordinates of $\operatorname{Mat}(d,\mathbb{R}) \cong \mathbb{R}^{d^2}$, “indexed in a funny way”, and a tangent vector $V = (V^i_j) \in \operatorname{Mat}(d, \mathbb{R}) = T_X\mathrm{GL}(d,\mathbb{R})$ is $\sum_{i,j} V^i_j\, \partial/\partial x^i_j|_X$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]). The basic computation is
+> *Coordinates.* Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \mathrm{GL}(d, \mathbb{R})$ rather than $g$, “because I want to think of it as a variable.” Written out,
+>
+> $$
+> A = \begin{pmatrix} a^1_1 & \cdots & a^1_d \\ \vdots & \ddots & \vdots \\ a^d_1 & \cdots & a^d_d \end{pmatrix},
+> \qquad
+> X = \begin{pmatrix} x^1_1 & \cdots & x^1_d \\ \vdots & \ddots & \vdots \\ x^d_1 & \cdots & x^d_d \end{pmatrix},
+> $$
+>
+> the upper index numbering the rows and the lower index the columns. The entries $x^i_j$ are the standard coordinates of $\operatorname{Mat}(d,\mathbb{R}) \cong \mathbb{R}^{d^2}$, “indexed in a funny way”, and a tangent vector $V = (V^i_j) \in \operatorname{Mat}(d, \mathbb{R}) = T_X\mathrm{GL}(d,\mathbb{R})$ is $\sum_{i,j} V^i_j\, \partial/\partial x^i_j|_X$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]). The basic computation is
 >
 > $$
 > \frac{\partial}{\partial x^i_j}\big(x^l_n\big) = \delta_{il}\, \delta_{jn} ,
@@ -609,7 +617,17 @@ Next: the commutator, “first for the general linear group, and then … for an
 In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image of a bracket. Lecture 19 checked this directly in one case: “we have a theorem, but it's good to check.”
 
 > [!example] Example §57.3: The Commutator of Skew-Symmetric Matrices
-> $T_I\mathrm{O}(n) = \operatorname{Skew}(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). If $A, B \in \operatorname{Skew}(n,\mathbb{R})$, then $[A, B] = AB - BA \in \operatorname{Skew}(n,\mathbb{R})$.
+> $T_I\mathrm{O}(n) = \operatorname{Skew}(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). Written out, an element of $\operatorname{Skew}(n, \mathbb{R})$ has zero diagonal, and its entries below the diagonal are the negatives of those above:
+>
+> $$
+> A = \begin{pmatrix}
+> 0 & a_{12} & \cdots & a_{1n} \\
+> -a_{12} & 0 & \cdots & a_{2n} \\
+> \vdots & \vdots & \ddots & \vdots \\
+> -a_{1n} & -a_{2n} & \cdots & 0
+> \end{pmatrix} .
+> $$
+> If $A, B \in \operatorname{Skew}(n,\mathbb{R})$, then $[A, B] = AB - BA \in \operatorname{Skew}(n,\mathbb{R})$.
 
 ^ex-57-3
 

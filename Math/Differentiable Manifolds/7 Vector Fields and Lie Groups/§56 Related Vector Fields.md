@@ -59,6 +59,18 @@ It is smooth, so $F_{\ast}\mathbf{X} \in \mathfrak{X}(N)$: this is [[§56 Relate
 ^def-56-2
 
 The definition was completed in class by a student: push the value of $\mathbf{X}$ at $p$ forward, “and if it happens that every time I do that, I get the value of $\mathbf{Y}$ at the same point, then we say that the two vector fields are related by $F$.” No injectivity or surjectivity is assumed. Points outside $F(M)$ impose nothing on $\mathbf{Y}$, and two points with the same image must push forward to the same vector. “It's a very useful notion at times.”
+*(Computed; not from lecture.)* In charts $(U, (x^1, \ldots, x^m))$ of $M$ and $(V, (y^1, \ldots, y^n))$ of $N$ with $F(U) \subseteq V$, $m = \dim M$, $n = \dim N$, write $F^j = y^j \circ F$, $\mathbf{X} = \sum_i \mathbf{X}^i\, \partial/\partial x^i$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial y^j$. The matrix of $dF_p$ is the Jacobian of Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], so the condition reads, at every $p \in U$,
+
+$$
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix}
+\begin{pmatrix} \mathbf{X}^1(p) \\ \vdots \\ \mathbf{X}^m(p) \end{pmatrix}
+=
+\begin{pmatrix} \mathbf{Y}^1(F(p)) \\ \vdots \\ \mathbf{Y}^n(F(p)) \end{pmatrix} .
+$$
 
 > [!example] Example §56.1: Fields Related by a Projection
 > Let $\pi : \mathbb{R}^2 \to \mathbb{R}$, $\pi(x, y) = x$, and $\mathbf{Y} = b(x)\, \dfrac{d}{dx}$ with $b \in C^\infty(\mathbb{R})$ — “any vector field on $\mathbb{R}$ I can write like this.” The fields on $\mathbb{R}^2$ that are [[§56 Related Vector Fields#^def-56-2|π-related]] to $\mathbf{Y}$ are exactly
@@ -80,6 +92,11 @@ The definition was completed in class by a student: push the value of $\mathbf{X
 > $$
 >
 > where $d/dx|_x$ is the coordinate derivation of $\mathbb{R}$ at $x$ (Definition [[§32 The Cotangent Space#^def-32-2|§32.2]], with the coordinate written $x$), and $\partial_y\, g(x) = 0$ because $g(x)$ does not depend on $y$. Derivations that agree on every germ are equal, so $d\pi(\partial_x|_{(x,y)}) = d/dx|_x$ and $d\pi(\partial_y|_{(x,y)}) = 0$.
+> In matrix form (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), the matrix of $d\pi_{(x,y)}$ is the $1 \times 2$ Jacobian of $\pi$, and it sends the column of components of $\mathbf{X}_{(x,y)} = a\,\partial_x + c\,\partial_y$ to
+>
+> $$
+> \begin{pmatrix} 1 & 0 \end{pmatrix} \begin{pmatrix} a(x, y) \\ c(x, y) \end{pmatrix} = a(x, y) .
+> $$
 >
 > *The condition.* $d\pi_{(x,y)}$ is linear (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), so
 >

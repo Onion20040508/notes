@@ -170,6 +170,12 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 > This is the previous example one dimension up, with spheres in place of circles. Let $\mathrm{SO}(3,\mathbb{R})$ act on $\mathbb{R}^3$ by matrix multiplication. Orthogonal matrices preserve the norm ($|gx|^2 = (gx)\cdot(gx) = x \cdot x = |x|^2$), so each orbit lies in a sphere $S_r = \{|x| = r\}$ centered at the origin. In fact:
 > - $\mathcal{O}_0 = \{0\}$.
 > - For $x \neq 0$, $\mathcal{O}_x = S_{|x|}$, the whole sphere of radius $|x|$: given $y$ with $|y| = |x| = r$, let $u = x/r$, $v = y/r$, extend $u$ to an orthonormal basis $(u, u_2, u_3)$ and $v$ to an orthonormal basis $(v, v_2, v_3)$ of $\mathbb{R}^3$ (Gram–Schmidt), replacing $u_3$ by $-u_3$ if necessary so that both bases are positively oriented; then the matrix $g$ with $g u = v$, $g u_2 = v_2$, $g u_3 = v_3$ maps an orthonormal basis to an orthonormal basis, so $g \in \mathrm{O}(3)$, and it maps a positive basis to a positive basis, so $\det g > 0$, i.e. $g \in \mathrm{SO}(3)$; and $g x = r\, g u = r v = y$.
+> *(Computed; not from lecture.)* Explicitly, the matrix with orthonormal columns $u, u_2, u_3$ has its transpose as inverse, so
+>
+> $$
+> g = \begin{pmatrix} | & | & | \\ v & v_2 & v_3 \\ | & | & | \end{pmatrix}
+> \begin{pmatrix} | & | & | \\ u & u_2 & u_3 \\ | & | & | \end{pmatrix}^{\mathsf T}.
+> $$
 >
 > So the orbits are the concentric spheres together with the origin, and the orbit space is parametrized by the radius:
 >

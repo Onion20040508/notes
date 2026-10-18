@@ -81,6 +81,22 @@ $$
 > $$
 >
 > with $j$ the row index and $i$ the column index.
+> Written out,
+>
+> $$
+> \Big[\, \frac{\partial F^j}{\partial x^i}(p) \,\Big]_{j, i} = \begin{pmatrix}
+> \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+> \end{pmatrix}
+> = \begin{pmatrix}
+> \dfrac{\partial \tilde F^1}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^1}{\partial r^m}\big(\varphi(p)\big) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial \tilde F^n}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^n}{\partial r^m}\big(\varphi(p)\big)
+> \end{pmatrix},
+> $$
+>
+> whose $i$-th column lists the coefficients of $F_{\ast p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$.
 >
 > *Lee: Ch. 3, Computations in Coordinates*
 
@@ -158,6 +174,27 @@ $$
 > $$
 >
 > the three matrices are the three Jacobians, and the matrix of $(G \circ F)_{\ast p}$ is the product of the matrices of $G_{\ast F(p)}$ and $F_{\ast p}$.
+> Written out, with $\ell = \dim O$, the partials of $\widetilde{G \circ F}$ and $\tilde F$ taken at $\varphi(p)$ and those of $\tilde G$ at $\psi(F(p))$, this is the product of an $\ell \times n$ and an $n \times m$ matrix:
+>
+> $$
+> \begin{pmatrix}
+> \dfrac{\partial (\widetilde{G \circ F})^1}{\partial r^1} & \cdots & \dfrac{\partial (\widetilde{G \circ F})^1}{\partial r^m} \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial (\widetilde{G \circ F})^\ell}{\partial r^1} & \cdots & \dfrac{\partial (\widetilde{G \circ F})^\ell}{\partial r^m}
+> \end{pmatrix}
+> = \begin{pmatrix}
+> \dfrac{\partial \tilde G^1}{\partial r^1} & \cdots & \dfrac{\partial \tilde G^1}{\partial r^n} \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial \tilde G^\ell}{\partial r^1} & \cdots & \dfrac{\partial \tilde G^\ell}{\partial r^n}
+> \end{pmatrix}
+> \begin{pmatrix}
+> \dfrac{\partial \tilde F^1}{\partial r^1} & \cdots & \dfrac{\partial \tilde F^1}{\partial r^m} \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial \tilde F^n}{\partial r^1} & \cdots & \dfrac{\partial \tilde F^n}{\partial r^m}
+> \end{pmatrix},
+> $$
+>
+> that is, entry by entry, $\dfrac{\partial (\widetilde{G \circ F})^k}{\partial r^i}\big(\varphi(p)\big) = \displaystyle\sum_{j=1}^n \dfrac{\partial \tilde G^k}{\partial r^j}\big(\psi(F(p))\big)\, \dfrac{\partial \tilde F^j}{\partial r^i}\big(\varphi(p)\big)$.
 >
 > *A second route.* The formula is also the Euclidean chain rule applied to $\widetilde{G \circ F} = \tilde G \circ \tilde F$ at $\varphi(p)$, where $\tilde F(\varphi(p)) = \psi(F(p))$: the Jacobian of a composite of smooth maps between open subsets of Euclidean spaces is the product of the Jacobians, the outer one taken at the image point. The two routes agree, as they must.
 
@@ -181,10 +218,30 @@ $$
 > $$
 >
 > and the change-of-basis matrix is the Jacobian of the transition function $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$.
+> Written out (row $i$, column $j$; the $j$-th column holds the old components of the $j$-th new basis vector):
+>
+> $$
+> \begin{pmatrix}
+> \dfrac{\partial x^1}{\partial \tilde x^1}(p) & \cdots & \dfrac{\partial x^1}{\partial \tilde x^n}(p) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial x^n}{\partial \tilde x^1}(p) & \cdots & \dfrac{\partial x^n}{\partial \tilde x^n}(p)
+> \end{pmatrix}
+> = \big(\varphi \circ \tilde\varphi^{-1}\big)'\big(\tilde\varphi(p)\big) .
+> $$
 > 2. The components of a tangent vector transform by
 >
 > $$
 > v\big[\tilde x^j\big] = \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, v\big[x^i\big] \qquad (v \in T_pM,\ j = 1, \ldots, n).
+> \]
+> In matrix form, the column of new components is the matrix $A$ of (3) times the column of old components:
+> \[
+> \begin{pmatrix} v[\tilde x^1] \ \vdots \ v[\tilde x^n] \end{pmatrix}
+> = \begin{pmatrix}
+> \dfrac{\partial \tilde x^1}{\partial x^1}(p) & \cdots & \dfrac{\partial \tilde x^1}{\partial x^n}(p) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial \tilde x^n}{\partial x^1}(p) & \cdots & \dfrac{\partial \tilde x^n}{\partial x^n}(p)
+> \end{pmatrix}
+> \begin{pmatrix} v[x^1] \ \vdots \ v[x^n] \end{pmatrix} .
 > $$
 >
 > 3. The $n \times n$ matrices $A = \big[\partial \tilde x^j/\partial x^i(p)\big]$ (row $j$, column $i$) and $B = \big[\partial x^i/\partial \tilde x^j(p)\big]$ (row $i$, column $j$) are inverse to each other:
@@ -255,6 +312,12 @@ $$
 > $$
 >
 > the coefficients being $\partial x/\partial r$, $\partial y/\partial r$ and $\partial x/\partial\theta$, $\partial y/\partial\theta$.
+> In matrix form, the change-of-basis matrix of Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]](1) — the Jacobian of the transition $(r, \theta) \mapsto (r\cos\theta, r\sin\theta)$ — has these coefficients as its columns:
+>
+> $$
+> \begin{pmatrix} \dfrac{\partial x}{\partial r} & \dfrac{\partial x}{\partial \theta} \\[3mm] \dfrac{\partial y}{\partial r} & \dfrac{\partial y}{\partial \theta} \end{pmatrix}
+> = \begin{pmatrix} \cos\theta & -r\sin\theta \\ \sin\theta & r\cos\theta \end{pmatrix} .
+> $$
 >
 > *Lee: cf. Example C.37*
 
@@ -472,7 +535,13 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 > - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical values in [[§36 Submersions#^def-36-4|Def. §36.4]].
 
 > [!remark] Remark: The Map Is Intrinsic — the Matrix Is Not
-> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§36 Submersions#^def-36-1|§36.1]]; maps with bijective, surjective and injective differentials are the subject of [[§35 Local Diffeomorphisms|§35]].
+> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. *(Computed; not from lecture.)* Explicitly, if $(U', \varphi')$ and $(V', \psi')$ are other charts at $p$ and $F(p)$ with $F(U') \subseteq V'$, and $\hat F = \psi' \circ F \circ \varphi'^{-1}$ is the coordinate representation in them, then near $\varphi'(p)$, $\hat F = (\psi' \circ \psi^{-1}) \circ \tilde F \circ (\varphi \circ \varphi'^{-1})$, and the Euclidean chain rule gives the product of an $n \times n$, an $n \times m$ and an $m \times m$ matrix,
+>
+> $$
+> \hat F'\big(\varphi'(p)\big) = \big(\psi' \circ \psi^{-1}\big)'\big(\psi(F(p))\big)\; \tilde F'\big(\varphi(p)\big)\; \big(\varphi \circ \varphi'^{-1}\big)'\big(\varphi'(p)\big),
+> $$
+>
+> the outer two factors being invertible. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§36 Submersions#^def-36-1|§36.1]]; maps with bijective, surjective and injective differentials are the subject of [[§35 Local Diffeomorphisms|§35]].
 
 ^rem-30-5
 

@@ -120,7 +120,22 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 >
 > This is smooth into $\mathbb{R}^{n+k}$: the first component is affine in $t$, and the second is the composite of the smooth $G$ with that affine map. It takes values in $M$, since $\gamma(t) = (x, G(x))$ with $x = x_0 + tu \in A$. It has $\gamma(0) = (x_0, G(x_0)) = p$. And by the chain rule, $\frac{d}{dt}\big|_{t=0} G(x_0 + tu) = G'(x_0)\,u$, so $\gamma'(0) = (u, G'(x_0)u)$. Hence $\Gamma \subseteq T^{\mathrm{geo}}_pM$.
 >
-> *Dimension.* The map $\iota : \mathbb{R}^n \to \mathbb{R}^{n+k}$, $\iota(u) = (u, Lu)$, is linear because $L$ is: $\iota(au + bu') = (au + bu', aLu + bLu') = a\,\iota(u) + b\,\iota(u')$. Its image is $\Gamma$, so $\Gamma$ is a linear subspace of $\mathbb{R}^{n+k}$. It is injective, because $\iota(u) = 0$ forces the first component $u$ to be $0$. By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), $\dim \Gamma = \dim \operatorname{im}\iota = n - \dim\ker\iota = n - 0 = n$.
+> *Dimension.* The map $\iota : \mathbb{R}^n \to \mathbb{R}^{n+k}$, $\iota(u) = (u, Lu)$, is linear because $L$ is: $\iota(au + bu') = (au + bu', aLu + bLu') = a\,\iota(u) + b\,\iota(u')$. In matrix form, $\iota$ is multiplication by the $(n+k) \times n$ matrix with the identity stacked on top of the $k \times n$ Jacobian $L = G'(x_0)$:
+>
+> $$
+> \iota(u) = \left(\begin{array}{c} I_n \\ \hline L \end{array}\right) u = \begin{pmatrix} u \\ Lu \end{pmatrix},
+> \qquad
+> \left(\begin{array}{c} I_n \\ \hline L \end{array}\right) = \left(\begin{array}{ccc}
+> 1 & \cdots & 0 \\
+> \vdots & \ddots & \vdots \\
+> 0 & \cdots & 1 \\ \hline
+> \dfrac{\partial G_1}{\partial x_1}(x_0) & \cdots & \dfrac{\partial G_1}{\partial x_n}(x_0) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial G_k}{\partial x_1}(x_0) & \cdots & \dfrac{\partial G_k}{\partial x_n}(x_0)
+> \end{array}\right),
+> $$
+>
+> where $G = (G_1, \ldots, G_k)$. The top block $I_n$ is what makes $\iota$ injective below. Its image is $\Gamma$, so $\Gamma$ is a linear subspace of $\mathbb{R}^{n+k}$. It is injective, because $\iota(u) = 0$ forces the first component $u$ to be $0$. By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), $\dim \Gamma = \dim \operatorname{im}\iota = n - \dim\ker\iota = n - 0 = n$.
 
 ^pf-25-2
 
@@ -135,7 +150,17 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > - For $n = 2$, $k = 1$ this is the tangent plane to a graph $z = f(x, y)$, [[§7 Differentiability#^def-7-4|452 Def. §7.4]].
 
 > [!theorem] Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian
-> $T^{\mathrm{geo}}_pM = \ker F'(p)$, where $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is the Jacobian at $p$. In particular $T^{\mathrm{geo}}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
+> $T^{\mathrm{geo}}_pM = \ker F'(p)$, where $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is the Jacobian at $p$. Written out, with $F = (F_1, \ldots, F_k)$ and coordinates $x_1, \ldots, x_{n+k}$ on $\mathbb{R}^{n+k}$, it is the $k \times (n+k)$ matrix (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]])
+>
+> $$
+> F'(p) = \begin{pmatrix}
+> \dfrac{\partial F_1}{\partial x_1}(p) & \cdots & \dfrac{\partial F_1}{\partial x_{n+k}}(p) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial F_k}{\partial x_1}(p) & \cdots & \dfrac{\partial F_k}{\partial x_{n+k}}(p)
+> \end{pmatrix},
+> $$
+>
+> with one row per equation and one column per ambient coordinate. In particular $T^{\mathrm{geo}}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
 >
 > *Lee: Proposition 5.38*
 
@@ -242,7 +267,12 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 ## Examples
 
 > [!example] Example §25.1: The Sphere
-> For $S^n = F^{-1}(1)$ with $F(x) = |x|^2 = \sum x_i^2$ on $\mathbb{R}^{n+1}$, the Jacobian at $p$ is the row vector $F'(p) = 2p^{\mathsf T}$, and $1$ is a regular value since $p \neq 0$ on $S^n$. Hence
+> For $S^n = F^{-1}(1)$ with $F(x) = |x|^2 = \sum x_i^2$ on $\mathbb{R}^{n+1}$, the Jacobian at $p$ is the row vector $F'(p) = 2p^{\mathsf T}$, written out
+>
+> $$
+> F'(p) = \begin{pmatrix} \dfrac{\partial F}{\partial x_1}(p) & \cdots & \dfrac{\partial F}{\partial x_{n+1}}(p) \end{pmatrix} = \begin{pmatrix} 2p_1 & 2p_2 & \cdots & 2p_{n+1} \end{pmatrix}, \qquad p = (p_1, \ldots, p_{n+1}),
+> $$
+> and $1$ is a regular value since $p \neq 0$ on $S^n$. Hence
 >
 > $$
 > T^{\mathrm{geo}}_pS^n = \ker\big(2p^{\mathsf T}\big) = \{\, v \in \mathbb{R}^{n+1} \mid p \cdot v = 0 \,\} = p^{\perp},
@@ -532,7 +562,12 @@ $$
 > D_v(f) = \frac{d}{dt}\Big|_{t=0} f(\gamma(t)) = \frac{d}{dt}\Big|_{t=0} g(\gamma(t)) = D_v(g) .
 > $$
 >
-> *(2)* The chart $\varphi$ is the restriction to $M$ of the linear projection $\pi(x,y) = x$, so $\varphi \circ \sigma = \pi \circ \sigma$ is a smooth curve; it takes values in $A$, because $\sigma(t) \in M$ has the form $(x, G(x))$ with $x \in A$; and $(\varphi\circ\sigma)(0) = \varphi(p) = x_0$. Its velocity at $0$ is, since the derivative of the linear map $\pi$ is $\pi$ itself,
+> *(2)* The chart $\varphi$ is the restriction to $M$ of the linear projection $\pi(x,y) = x$, whose matrix is the $n \times (n+k)$ block row
+>
+> $$
+> \pi = \left(\begin{array}{c|c} I_n & 0 \end{array}\right), \qquad \pi\begin{pmatrix} x \\ y \end{pmatrix} = I_n x + 0\,y = x \qquad (x \in \mathbb{R}^n,\ y \in \mathbb{R}^k),
+> $$
+> so $\varphi \circ \sigma = \pi \circ \sigma$ is a smooth curve; it takes values in $A$, because $\sigma(t) \in M$ has the form $(x, G(x))$ with $x \in A$; and $(\varphi\circ\sigma)(0) = \varphi(p) = x_0$. Its velocity at $0$ is, since the derivative of the linear map $\pi$ is $\pi$ itself,
 >
 > $$
 > (\varphi \circ \sigma)'(0) = \pi\big(\sigma'(0)\big) = \pi(v) = \pi\big(u, G'(x_0)u\big) = u ,

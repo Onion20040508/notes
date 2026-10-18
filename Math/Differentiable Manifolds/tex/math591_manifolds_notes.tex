@@ -1926,7 +1926,20 @@ is nonsingular, then there exist neighborhoods $V_0 \subseteq \mathbb{R}^n$ of $
 \end{thmbox}
 
 \begin{proof}[Proof (sketch)]
-Lee deduces this from the Inverse Function Theorem (Theorem~\ref{thm:inverse-function}; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Both theorems are proved in MATH 452; Lee's proofs are in Appendix C.
+Lee deduces this from the Inverse Function Theorem (Theorem~\ref{thm:inverse-function}; Lee, Theorem C.34), applied to the auxiliary map $(x,y) \mapsto (x, \Phi(x,y))$, whose total derivative is block lower triangular with nonsingular diagonal blocks $I_n$ and $(\partial\Phi^i/\partial y^j)$. Written out at $(a,b)$, with rows the components $(x^1, \ldots, x^n, \Phi^1, \ldots, \Phi^k)$ of the map and columns the variables $(x, y)$,
+\[
+\left(\begin{array}{c|c}
+I_n & 0 \\[1mm] \hline
+\dfrac{\partial \Phi}{\partial x}(a,b) & \dfrac{\partial \Phi}{\partial y}(a,b)
+\end{array}\right),
+\qquad
+\dfrac{\partial \Phi}{\partial y}(a,b) = \begin{pmatrix}
+\dfrac{\partial \Phi^1}{\partial y^1}(a,b) & \cdots & \dfrac{\partial \Phi^1}{\partial y^k}(a,b) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial \Phi^k}{\partial y^1}(a,b) & \cdots & \dfrac{\partial \Phi^k}{\partial y^k}(a,b)
+\end{pmatrix},
+\]
+where $\dfrac{\partial \Phi}{\partial x}(a,b) = \big(\partial\Phi^i/\partial x^j(a,b)\big)$ is the $k \times n$ block in the free variables. Both theorems are proved in MATH 452; Lee's proofs are in Appendix C.
 \end{proof}
 
 \begin{rembox}[Which Variables Are Solved For]\label{rem:which-variables-solved}
@@ -2171,7 +2184,15 @@ Let $F : \mathbb{R}^{n+k} \to \mathbb{R}^k$ be smooth and suppose $\vec 0 \in \m
 
 \emph{Locally Euclidean.} Fix $p \in X$.
 
-\emph{Step 1 (relabelling the coordinates).} $F'(p)$ is a $k \times (n+k)$ matrix of rank $k$, so $k$ of its $n+k$ columns are linearly independent. Let $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ be the coordinate permutation carrying those $k$ positions to the last $k$, and put $\widetilde F = F \circ \rho^{-1}$. Then $\widetilde F$ is smooth, $\widetilde F^{-1}(\vec 0) = \rho(X)$, and $\widetilde F'(\rho(p)) = F'(p)\,\rho^{-1}$ is $F'(p)$ with its columns permuted, so its last $k$ columns are independent. As $\rho$ restricts to a homeomorphism $X \to \rho(X)$, and local Euclideanness is a topological property, we may replace $(X, F, p)$ by $(\rho(X), \widetilde F, \rho(p))$: WLOG, writing the coordinates as $(x,y) \in \mathbb{R}^n \times \mathbb{R}^k$, the $k \times k$ matrix $\big(\partial F^i/\partial y^j (p)\big)$ --- the last $k$ columns of $F'(p)$ --- is nonsingular.
+\emph{Step 1 (relabelling the coordinates).} $F'(p)$ is a $k \times (n+k)$ matrix of rank $k$, so $k$ of its $n+k$ columns are linearly independent. Let $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ be the coordinate permutation carrying those $k$ positions to the last $k$, and put $\widetilde F = F \circ \rho^{-1}$. Then $\widetilde F$ is smooth, $\widetilde F^{-1}(\vec 0) = \rho(X)$, and $\widetilde F'(\rho(p)) = F'(p)\,\rho^{-1}$ is $F'(p)$ with its columns permuted, so its last $k$ columns are independent. As $\rho$ restricts to a homeomorphism $X \to \rho(X)$, and local Euclideanness is a topological property, we may replace $(X, F, p)$ by $(\rho(X), \widetilde F, \rho(p))$: WLOG, writing the coordinates as $(x,y) \in \mathbb{R}^n \times \mathbb{R}^k$, the $k \times k$ matrix $\big(\partial F^i/\partial y^j (p)\big)$ --- the last $k$ columns of $F'(p)$ --- is nonsingular. Written out,
+\[
+F'(p) = \left(\begin{array}{ccc|ccc}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^n}(p) & \dfrac{\partial F^1}{\partial y^1}(p) & \cdots & \dfrac{\partial F^1}{\partial y^k}(p) \\[2mm]
+\vdots & & \vdots & \vdots & & \vdots \\[1mm]
+\dfrac{\partial F^k}{\partial x^1}(p) & \cdots & \dfrac{\partial F^k}{\partial x^n}(p) & \dfrac{\partial F^k}{\partial y^1}(p) & \cdots & \dfrac{\partial F^k}{\partial y^k}(p)
+\end{array}\right),
+\]
+a $k \times n$ block followed by the $k \times k$ block that is nonsingular.
 
 \emph{Step 2 (the implicit function theorem).} Write $p = (a,b)$. By Theorem~\ref{thm:ift-general} applied to $\Phi = F$ on $U = \mathbb{R}^{n+k}$ with $c = \vec 0$, there are neighborhoods $V_0 \subseteq \mathbb{R}^n$ of $a$ and $W_0 \subseteq \mathbb{R}^k$ of $b$ and a smooth $G : V_0 \to W_0$ with
 \[
@@ -2318,7 +2339,14 @@ as expanding $f$ shows; so $F$ is a complex polynomial in disguise, and its rank
 Left, the map; right, its derivative at a point. The vertical arrows are the identifications of Definition~\ref{def:complex-groups}. On the right, the top arrow is the complex gradient $(2z,\ 2-2w)$, a $1 \times 2$ complex matrix, and the bottom arrow is the real $2 \times 4$ Jacobian of Example~\ref{ex:qr-level-set}. Everything that follows is about what the top row forces on the bottom one.
 
 \begin{defbox}[Holomorphic Map]\deflabel{def:holomorphic}
-Let $W \subseteq \mathbb{C}^N$ be open. A map $F : W \to \mathbb{C}^m$ is \textbf{holomorphic} if it is $C^1$ as a map between open subsets of $\mathbb{R}^{2N}$ and $\mathbb{R}^{2m}$ and its real derivative $DF_p : \mathbb{C}^N \to \mathbb{C}^m$ is $\mathbb{C}$-linear at every $p \in W$. The $\mathbb{C}$-linear map $DF_p$ is then written $F'(p)$, the \textbf{complex Jacobian}, an $m \times N$ complex matrix of partial derivatives $\partial F_a / \partial z_b$.
+Let $W \subseteq \mathbb{C}^N$ be open. A map $F : W \to \mathbb{C}^m$ is \textbf{holomorphic} if it is $C^1$ as a map between open subsets of $\mathbb{R}^{2N}$ and $\mathbb{R}^{2m}$ and its real derivative $DF_p : \mathbb{C}^N \to \mathbb{C}^m$ is $\mathbb{C}$-linear at every $p \in W$. The $\mathbb{C}$-linear map $DF_p$ is then written $F'(p)$, the \textbf{complex Jacobian}, an $m \times N$ complex matrix of partial derivatives $\partial F_a / \partial z_b$. Written out,
+\[
+F'(p) = \begin{pmatrix}
+\dfrac{\partial F_1}{\partial z_1}(p) & \cdots & \dfrac{\partial F_1}{\partial z_N}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F_m}{\partial z_1}(p) & \cdots & \dfrac{\partial F_m}{\partial z_N}(p)
+\end{pmatrix}.
+\]
 \end{defbox}
 
 \begin{rembox}\label{rem:rvt-2}
@@ -2673,7 +2701,16 @@ If $G$ is a topological group and $H \le G$ is a subgroup, then $H$ with the sub
 \subsection{Classical Matrix Groups}
 
 \begin{defbox}[Matrices as a Euclidean Space]\deflabel{def:mat-euclid}
-Let $\Mat(n, \mathbb{R})$ be the set of all $n \times n$ real matrices, a real vector space under entrywise addition and scalar multiplication. For $1 \le i, j \le n$ let $E_{ij} \in \Mat(n,\mathbb{R})$ be the matrix with a $1$ in position $(i,j)$ and $0$ elsewhere. Every $g$ can be written uniquely as $g = \sum_{i,j} g_{ij} E_{ij}$, so $\{E_{ij}\}$ is a basis and $\dim \Mat(n,\mathbb{R}) = n^2$. Fix the coordinate map
+Let $\Mat(n, \mathbb{R})$ be the set of all $n \times n$ real matrices, a real vector space under entrywise addition and scalar multiplication. For $1 \le i, j \le n$ let $E_{ij} \in \Mat(n,\mathbb{R})$ be the matrix with a $1$ in position $(i,j)$ and $0$ elsewhere. Every $g$ can be written uniquely as $g = \sum_{i,j} g_{ij} E_{ij}$, so $\{E_{ij}\}$ is a basis and $\dim \Mat(n,\mathbb{R}) = n^2$. Written out,
+\[
+g = \begin{pmatrix}
+g_{11} & g_{12} & \cdots & g_{1n} \\
+g_{21} & g_{22} & \cdots & g_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+g_{n1} & g_{n2} & \cdots & g_{nn}
+\end{pmatrix}
+= g_{11}E_{11} + g_{12}E_{12} + \cdots + g_{nn}E_{nn}.
+\] Fix the coordinate map
 \[
 \Mat(n,\mathbb{R}) \longrightarrow \mathbb{R}^{n^2}, \qquad g \longmapsto (g_{11}, g_{12}, \ldots, g_{1n},\ g_{21}, \ldots, g_{2n},\ \ldots,\ g_{n1}, \ldots, g_{nn}),
 \]
@@ -2769,7 +2806,16 @@ Consequently $\det(g)^2 = 1$, i.e.\ $\det g = \pm 1$, for every $g \in \Ogp(n,\m
 \end{propbox}
 
 \begin{proof}
-\textit{(Stated in Lecture~3 --- ``$g \in \Ogp(n) \iff g^{-1} = g^{\mathsf T}$''; filled in.)} Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. (ii) $\iff$ (iii) since for square matrices a one-sided inverse is two-sided. Finally $1 = \det(I) = \det(g^T g) = \det(g^T)\det(g) = \det(g)^2$.
+\textit{(Stated in Lecture~3 --- ``$g \in \Ogp(n) \iff g^{-1} = g^{\mathsf T}$''; filled in.)} Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. \textit{(Computed; not from lecture.)} Since $e_i^T g^T g\, e_j = (ge_i) \cdot (ge_j)$ and $ge_j = g_j$ is the $j$-th column of $g$, written out
+\[
+g^T g = \begin{pmatrix}
+g_1 \cdot g_1 & g_1 \cdot g_2 & \cdots & g_1 \cdot g_n \\
+g_2 \cdot g_1 & g_2 \cdot g_2 & \cdots & g_2 \cdot g_n \\
+\vdots & \vdots & \ddots & \vdots \\
+g_n \cdot g_1 & g_n \cdot g_2 & \cdots & g_n \cdot g_n
+\end{pmatrix},
+\]
+so $g^T g = I$ says exactly that the columns of $g$ are orthonormal. (ii) $\iff$ (iii) since for square matrices a one-sided inverse is two-sided. Finally $1 = \det(I) = \det(g^T g) = \det(g^T)\det(g) = \det(g)^2$.
 \end{proof}
 \begin{defbox}[Special Orthogonal Group]\deflabel{def:special-orthogonal-group}
 $\SO(n,\mathbb{R}) = \Ogp(n,\mathbb{R}) \cap \SL(n,\mathbb{R}) = \{\, g \in \Ogp(n,\mathbb{R}) \mid \det g = 1 \,\}$.
@@ -2841,7 +2887,15 @@ For the second, factor out $g$ (invertible): $g + tA = g\,(I + t g^{-1} A)$. Put
 \[
 \det(g + tA) = \det(g)\, \det(I + tV),
 \]
-and $\det(g)$ is a constant, so it suffices to show $\frac{d}{dt}\big|_{t=0} \det(I + tV) = \tr V$. By the Leibniz formula, with $(I + tV)_{ij} = \delta_{ij} + t V_{ij}$,
+and $\det(g)$ is a constant, so it suffices to show $\frac{d}{dt}\big|_{t=0} \det(I + tV) = \tr V$. By the Leibniz formula, with $(I + tV)_{ij} = \delta_{ij} + t V_{ij}$, that is,
+\[
+I + tV = \begin{pmatrix}
+1 + tV_{11} & tV_{12} & \cdots & tV_{1n} \\
+tV_{21} & 1 + tV_{22} & \cdots & tV_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+tV_{n1} & tV_{n2} & \cdots & 1 + tV_{nn}
+\end{pmatrix},
+\]
 \[
 \det(I + tV) = \sum_{\sigma \in S_n} \sgn(\sigma) \prod_{i=1}^n \big( \delta_{i,\sigma(i)} + t\, V_{i,\sigma(i)} \big).
 \]
@@ -2862,7 +2916,19 @@ For invertible $g$,
 \[
 \nabla\det(g) = \det(g)\,(g^{-1})^{\mathsf T}
 \]
-as an element of $\mathbb{R}^{n^2}$ arranged as an $n \times n$ matrix; equivalently $\dfrac{\partial \det}{\partial x_{ij}}(g) = \adj(g)_{ji}$, the $(i,j)$ cofactor of $g$.
+as an element of $\mathbb{R}^{n^2}$ arranged as an $n \times n$ matrix; equivalently $\dfrac{\partial \det}{\partial x_{ij}}(g) = \adj(g)_{ji}$, the $(i,j)$ cofactor of $g$. Written out,
+\[
+\nabla\det(g) = \begin{pmatrix}
+\dfrac{\partial \det}{\partial x_{11}}(g) & \cdots & \dfrac{\partial \det}{\partial x_{1n}}(g) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial \det}{\partial x_{n1}}(g) & \cdots & \dfrac{\partial \det}{\partial x_{nn}}(g)
+\end{pmatrix}
+= \begin{pmatrix}
+\adj(g)_{11} & \cdots & \adj(g)_{n1} \\
+\vdots & & \vdots \\
+\adj(g)_{1n} & \cdots & \adj(g)_{nn}
+\end{pmatrix}.
+\]
 \leeref{Problem 7-4}
 \end{corbox}
 
@@ -2875,7 +2941,12 @@ As this holds for every $A$, $\nabla\det(g) = \det(g)(g^{-1})^{\mathsf T}$. By t
 \end{proof}
 
 \begin{rembox}[The Gradient Itself]\label{rem:gradient-itself}
-Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of Proposition~\ref{prop:jacobi} is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$.
+Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of Proposition~\ref{prop:jacobi} is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$. \textit{(Computed; not from lecture.)} For $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $\det g = ad - bc$ and $g^{-1} = \dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, so
+\[
+\nabla\det(g) = \begin{pmatrix} \partial_a(ad - bc) & \partial_b(ad - bc) \\ \partial_c(ad - bc) & \partial_d(ad - bc) \end{pmatrix}
+= \begin{pmatrix} d & -c \\ -b & a \end{pmatrix}
+= (ad - bc)\,(g^{-1})^{\mathsf T}.
+\]
 \end{rembox}
 
 \begin{corbox}[$1$ Is a Regular Value of $\det$]\thmlabel{cor:regular-value}
@@ -3094,7 +3165,11 @@ Every point of a given circle is equivalent to every other point of it, and to n
 This is the previous example one dimension up, with spheres in place of circles. Let $\SO(3,\mathbb{R})$ act on $\mathbb{R}^3$ by matrix multiplication. Orthogonal matrices preserve the norm ($|gx|^2 = (gx)\cdot(gx) = x \cdot x = |x|^2$), so each orbit lies in a sphere $S_r = \{|x| = r\}$ centered at the origin. In fact:
 \begin{itemize}
     \item $\mathcal{O}_0 = \{0\}$.
-    \item For $x \neq 0$, $\mathcal{O}_x = S_{|x|}$, the whole sphere of radius $|x|$: given $y$ with $|y| = |x| = r$, let $u = x/r$, $v = y/r$, extend $u$ to an orthonormal basis $(u, u_2, u_3)$ and $v$ to an orthonormal basis $(v, v_2, v_3)$ of $\mathbb{R}^3$ (Gram--Schmidt), replacing $u_3$ by $-u_3$ if necessary so that both bases are positively oriented; then the matrix $g$ with $g u = v$, $g u_2 = v_2$, $g u_3 = v_3$ maps an orthonormal basis to an orthonormal basis, so $g \in \Ogp(3)$, and it maps a positive basis to a positive basis, so $\det g > 0$, i.e.\ $g \in \SO(3)$; and $g x = r\, g u = r v = y$.
+    \item For $x \neq 0$, $\mathcal{O}_x = S_{|x|}$, the whole sphere of radius $|x|$: given $y$ with $|y| = |x| = r$, let $u = x/r$, $v = y/r$, extend $u$ to an orthonormal basis $(u, u_2, u_3)$ and $v$ to an orthonormal basis $(v, v_2, v_3)$ of $\mathbb{R}^3$ (Gram--Schmidt), replacing $u_3$ by $-u_3$ if necessary so that both bases are positively oriented; then the matrix $g$ with $g u = v$, $g u_2 = v_2$, $g u_3 = v_3$ maps an orthonormal basis to an orthonormal basis, so $g \in \Ogp(3)$, and it maps a positive basis to a positive basis, so $\det g > 0$, i.e.\ $g \in \SO(3)$; and $g x = r\, g u = r v = y$. \textit{(Computed; not from lecture.)} Explicitly, the matrix with orthonormal columns $u, u_2, u_3$ has its transpose as inverse, so
+\[
+g = \begin{pmatrix} | & | & | \\ v & v_2 & v_3 \\ | & | & | \end{pmatrix}
+\begin{pmatrix} | & | & | \\ u & u_2 & u_3 \\ | & | & | \end{pmatrix}^{\mathsf T}.
+\]
 \end{itemize}
 So the orbits are the concentric spheres together with the origin, and the orbit space is parametrized by the radius:
 \[
@@ -3631,7 +3706,11 @@ For $g \in \Ogp(n)$ and $V \in \Gr_k(\mathbb{R}^n)$ set $g \cdot V = gV = \{\, g
 \begin{proof}
 \textit{(Set in Lecture~4 as a ``linear algebra exercise''; filled in.)} \emph{Action.} $gV$ is a linear subspace (image of a subspace under a linear map) of dimension $k$ ($g$ is injective), so $gV \in \Gr_k(\mathbb{R}^n)$; $IV = V$; and $g(g'V) = (gg')V$ by associativity.
 
-\emph{Transitive} (``a linear algebra exercise''). Let $V, W \in \Gr_k(\mathbb{R}^n)$. Choose an orthonormal basis $v_1, \ldots, v_k$ of $V$ (Gram--Schmidt applied to any basis of $V$) and extend it to an orthonormal basis $v_1, \ldots, v_n$ of $\mathbb{R}^n$ (apply Gram--Schmidt to a basis of the orthogonal complement $V^\perp$, which has dimension $n - k$). Do the same for $W$: an orthonormal basis $w_1, \ldots, w_n$ of $\mathbb{R}^n$ with $w_1, \ldots, w_k$ spanning $W$. Let $g$ be the linear map with $g v_i = w_i$ for all $i$. Since $g$ carries an orthonormal basis to an orthonormal basis, $(gx) \cdot (gy) = x \cdot y$ for all $x, y$ (expand $x, y$ in the $v_i$), so $g \in \Ogp(n)$; and $gV = g\,\Span(v_1, \ldots, v_k) = \Span(w_1, \ldots, w_k) = W$.
+\emph{Transitive} (``a linear algebra exercise''). Let $V, W \in \Gr_k(\mathbb{R}^n)$. Choose an orthonormal basis $v_1, \ldots, v_k$ of $V$ (Gram--Schmidt applied to any basis of $V$) and extend it to an orthonormal basis $v_1, \ldots, v_n$ of $\mathbb{R}^n$ (apply Gram--Schmidt to a basis of the orthogonal complement $V^\perp$, which has dimension $n - k$). Do the same for $W$: an orthonormal basis $w_1, \ldots, w_n$ of $\mathbb{R}^n$ with $w_1, \ldots, w_k$ spanning $W$. Let $g$ be the linear map with $g v_i = w_i$ for all $i$. Since $g$ carries an orthonormal basis to an orthonormal basis, $(gx) \cdot (gy) = x \cdot y$ for all $x, y$ (expand $x, y$ in the $v_i$), so $g \in \Ogp(n)$; and $gV = g\,\Span(v_1, \ldots, v_k) = \Span(w_1, \ldots, w_k) = W$. \textit{(Computed; not from lecture.)} In matrix form, as the matrix with orthonormal columns $v_1, \ldots, v_n$ is orthogonal,
+\[
+g = \begin{pmatrix} | & & | \\ w_1 & \cdots & w_n \\ | & & | \end{pmatrix}
+\begin{pmatrix} | & & | \\ v_1 & \cdots & v_n \\ | & & | \end{pmatrix}^{T}.
+\]
 \end{proof}
 
 \begin{propbox}[Isotropy of the Standard $k$-Plane]\thmlabel{prop:grassmann-isotropy}
@@ -3644,7 +3723,17 @@ block matrices with respect to the decomposition $\mathbb{R}^n = V_0 \oplus V_0^
 \end{propbox}
 
 \begin{proof}
-\textit{(Stated in Lecture~4, with the block picture of $\Ogp(k) \times \Ogp(n-k)$; filled in.)} Write $g \in \Ogp(n)$ in blocks $g = \begin{pmatrix} A & C \\ D & B \end{pmatrix}$ with $A$ of size $k \times k$. Then $gV_0 = V_0$ iff $g e_j \in V_0$ for $j \le k$ iff the first $k$ columns have zero lower part, i.e.\ $D = 0$ (then $g$ maps $V_0$ into $V_0$, and injectivity plus $\dim$ gives $gV_0 = V_0$). Now orthogonal maps preserve orthogonal complements: if $gV_0 = V_0$ and $u \in V_0^\perp$, then for all $v \in V_0$, $(gu) \cdot v = (gu) \cdot (g g^{-1} v) = u \cdot g^{-1}v = 0$ since $g^{-1}v \in V_0$; so $g V_0^\perp \subseteq V_0^\perp$, i.e.\ $C = 0$. With $C = D = 0$, the condition $g^T g = I$ reads $A^T A = I_k$ and $B^T B = I_{n-k}$, i.e.\ $A \in \Ogp(k)$, $B \in \Ogp(n-k)$. Conversely every such block-diagonal matrix is orthogonal and fixes $V_0$. The map $(A, B) \mapsto \mathrm{diag}(A, B)$ is a group isomorphism from the product group and a homeomorphism (it is a linear embedding of coordinates).
+\textit{(Stated in Lecture~4, with the block picture of $\Ogp(k) \times \Ogp(n-k)$; filled in.)} Write $g \in \Ogp(n)$ in blocks $g = \begin{pmatrix} A & C \\ D & B \end{pmatrix}$ with $A$ of size $k \times k$. Written out with the block sizes,
+\[
+g = \left(\begin{array}{c|c} A & C \\ \hline D & B \end{array}\right),
+\qquad
+\begin{array}{ll} A : k \times k, & C : k \times (n-k), \\ D : (n-k) \times k, & B : (n-k) \times (n-k), \end{array}
+\]
+so the first $k$ columns of $g$ are the columns of $\begin{pmatrix} A \\ D \end{pmatrix}$. Then $gV_0 = V_0$ iff $g e_j \in V_0$ for $j \le k$ iff the first $k$ columns have zero lower part, i.e.\ $D = 0$ (then $g$ maps $V_0$ into $V_0$, and injectivity plus $\dim$ gives $gV_0 = V_0$). Now orthogonal maps preserve orthogonal complements: if $gV_0 = V_0$ and $u \in V_0^\perp$, then for all $v \in V_0$, $(gu) \cdot v = (gu) \cdot (g g^{-1} v) = u \cdot g^{-1}v = 0$ since $g^{-1}v \in V_0$; so $g V_0^\perp \subseteq V_0^\perp$, i.e.\ $C = 0$. With $C = D = 0$, the condition $g^T g = I$ reads
+\[
+g^T g = \begin{pmatrix} A^T & 0 \\ 0 & B^T \end{pmatrix}\begin{pmatrix} A & 0 \\ 0 & B \end{pmatrix} = \begin{pmatrix} A^T A & 0 \\ 0 & B^T B \end{pmatrix} = \begin{pmatrix} I_k & 0 \\ 0 & I_{n-k} \end{pmatrix},
+\]
+that is, $A^T A = I_k$ and $B^T B = I_{n-k}$, i.e.\ $A \in \Ogp(k)$, $B \in \Ogp(n-k)$. Conversely every such block-diagonal matrix is orthogonal and fixes $V_0$. The map $(A, B) \mapsto \mathrm{diag}(A, B)$ is a group isomorphism from the product group and a homeomorphism (it is a linear embedding of coordinates).
 \end{proof}
 
 \textbf{Transcription note.} Page~13 of the handwritten notes writes the base point as the span of $e_1$ through $e_n$. A $k$-plane is spanned by $k$ vectors, so the base point is the span of $e_1$ through $e_k$, as above.
@@ -3718,7 +3807,14 @@ Not proved here (stated in lecture; Lee, Proposition 21.35). To be filled.
 \end{tikzpicture}
 \end{center}
 
-$\Ogp(2)$ drawn as two circles. The rotations $R_\theta$ form $\SO(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ --- if $\det A = -1$ then $AS \in \SO(2)$ --- a second circle. The determinant is continuous with only the values $\pm 1$ on $\Ogp(n)$, so it splits $\Ogp(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\GL(n,\mathbb{R})$ (Proposition~\ref{prop:GL-disconnected}). That each piece is connected, so that $\Ogp(n)$ has exactly two components, is Lee's Proposition~21.34.
+$\Ogp(2)$ drawn as two circles. The rotations $R_\theta$ form $\SO(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ --- if $\det A = -1$ then $AS \in \SO(2)$ --- a second circle. \textit{(Computed; not from lecture.)} Explicitly,
+\[
+R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix},
+\qquad
+S = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+\qquad
+R_\theta S = \begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix}.
+\] The determinant is continuous with only the values $\pm 1$ on $\Ogp(n)$, so it splits $\Ogp(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\GL(n,\mathbb{R})$ (Proposition~\ref{prop:GL-disconnected}). That each piece is connected, so that $\Ogp(n)$ has exactly two components, is Lee's Proposition~21.34.
 
 
 \begin{exbox}[Why $\SO(n)$ Is a Proper Subgroup of $\Ogp(n)$]\exlabel{ex:why-n-proper-subgroup-n}
@@ -3785,11 +3881,42 @@ Two charts $(U, \varphi)$ and $(V, \psi)$ on $M$ are \textbf{$C^\infty$-compatib
 \psi \circ \varphi^{-1} : \varphi(U \cap V) \longrightarrow \psi(U \cap V)
 \]
 is a diffeomorphism in the sense of Definition~\ref{def:diffeo-euclidean}. If $U \cap V = \emptyset$ the condition is vacuous and the charts are compatible.
+
+\emph{Explicitly} \textit{(added on request)}: write $\varphi = (x^1, \ldots, x^n)$ and $\psi = (y^1, \ldots, y^n)$, so that on $U \cap V$ each point has two coordinate tuples, and the transition function expresses the second in terms of the first,
+\[
+\psi \circ \varphi^{-1}(x^1, \ldots, x^n) = \big(y^1(x^1, \ldots, x^n), \ \ldots, \ y^n(x^1, \ldots, x^n)\big), \qquad y^i(x) := \big(\psi \circ \varphi^{-1}\big)^i(x) .
+\]
+The charts are $C^\infty$-compatible if and only if
+\begin{enumerate}
+    \item each of the $n$ functions $y^i(x^1, \ldots, x^n)$ is $C^\infty$ on the open set $\varphi(U \cap V) \subseteq \mathbb{R}^n$: for every order $k \ge 1$ and all indices $j_1, \ldots, j_k$, the partial derivative $\dfrac{\partial^k y^i}{\partial x^{j_1} \cdots \partial x^{j_k}}$ exists and is continuous there;
+    \item each of the $n$ functions $x^j(y^1, \ldots, y^n) := \big(\varphi \circ \psi^{-1}\big)^j(y)$ of the inverse transition $\varphi \circ \psi^{-1} = (\psi \circ \varphi^{-1})^{-1} : \psi(U \cap V) \to \varphi(U \cap V)$ is $C^\infty$ on $\psi(U \cap V)$ in the same sense.
+\end{enumerate}
+The two transition functions are automatically inverse bijections, $x\big(y(x)\big) = x$ and $y\big(x(y)\big) = y$, since both are composites of the bijections $\varphi|_{U \cap V}$, $\psi|_{U \cap V}$ and their inverses; (1) and (2) are the condition that both are smooth.
 \leeref{Ch.~1, \emph{Smooth Structures} (``smoothly compatible)}
 \end{defbox}
 
 \begin{rembox}\label{rem:smooth-structures-2}
 The domain and target are open subsets of $\mathbb{R}^n$, and $\psi \circ \varphi^{-1}$ is automatically a homeomorphism between them --- this is Proposition~\ref{prop:transition-homeo} from \S\ref{sub:charts}, which used nothing but the topological manifold structure. Compatibility asks for the one genuinely new thing: that this homeomorphism and its inverse be $C^\infty$. Note that requiring $\psi\circ\varphi^{-1}$ to be a diffeomorphism is symmetric in the two charts, since $(\psi \circ \varphi^{-1})^{-1} = \varphi \circ \psi^{-1}$.
+\end{rembox}
+
+\begin{rembox}[The Jacobians of Compatible Charts Are Inverse Matrices]\label{rem:compatible-jacobians}
+\textit{(Not from lecture; added on request.)} For compatible charts as in Definition~\ref{def:compatible}, differentiate the identity $(\varphi \circ \psi^{-1}) \circ (\psi \circ \varphi^{-1}) = \mathrm{id}$ on $\varphi(U \cap V)$ by the chain rule, at $r = \varphi(p)$, $p \in U \cap V$, and with $s = \psi(p) = \psi \circ \varphi^{-1}(r)$:
+\[
+\begin{pmatrix}
+\dfrac{\partial x^1}{\partial y^1}(s) & \cdots & \dfrac{\partial x^1}{\partial y^n}(s) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial x^n}{\partial y^1}(s) & \cdots & \dfrac{\partial x^n}{\partial y^n}(s)
+\end{pmatrix}
+\begin{pmatrix}
+\dfrac{\partial y^1}{\partial x^1}(r) & \cdots & \dfrac{\partial y^1}{\partial x^n}(r) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial y^n}{\partial x^1}(r) & \cdots & \dfrac{\partial y^n}{\partial x^n}(r)
+\end{pmatrix}
+= I_n ,
+\qquad\text{entrywise}\qquad
+\sum_{i=1}^n \frac{\partial x^j}{\partial y^i}(s)\, \frac{\partial y^i}{\partial x^l}(r) = \delta^j_l ;
+\]
+and differentiating $(\psi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1}) = \mathrm{id}$ at $s$ gives the product in the other order. So the Jacobian of a transition function is invertible at every point, $\det\big(\partial y^i/\partial x^j\big) \neq 0$, with inverse the Jacobian of the reverse transition. Later this matrix reappears as the change-of-basis matrix between the two coordinate bases of a tangent space (Corollary~\ref{cor:change-coords}).
 \end{rembox}
 
 
@@ -4837,7 +4964,14 @@ The projections $\pi_1 : M_1 \times M_2 \to M_1$, $\pi_2 : M_1 \times M_2 \to M_
     \]
     \item $\iota^{p_1}$, with $p_1 \in U_1$, in the charts $(U_2, \varphi_2)$ and $(U_1 \times U_2, \varphi_1 \times \varphi_2)$: likewise $(\varphi_1 \times \varphi_2)\big(p_1, \varphi_2^{-1}(s)\big) = \big(\varphi_1(p_1), s\big)$.
 \end{itemize}
-Each of these is linear or affine (a linear map plus a constant vector), hence smooth. Since smooth charts cover every manifold involved, every point of each domain lies in such a pair of charts, so all four maps satisfy Definition~\ref{def:smooth-map}. They are smooth, so the maps are smooth (Proposition~\ref{prop:smooth-map-charts}), and by that proposition their coordinate representations in any other smooth charts are smooth as well.
+Each of these is linear or affine (a linear map plus a constant vector), hence smooth. In matrix form, with $r \in \mathbb{R}^{m_1}$ and $s \in \mathbb{R}^{m_2}$, the four linear maps (for the inclusions, the linear parts) are
+\[
+\begin{pmatrix} I_{m_1} & 0 \end{pmatrix}, \qquad
+\begin{pmatrix} 0 & I_{m_2} \end{pmatrix}, \qquad
+\begin{pmatrix} I_{m_1} \\ 0 \end{pmatrix}, \qquad
+\begin{pmatrix} 0 \\ I_{m_2} \end{pmatrix},
+\]
+of sizes $m_1 \times (m_1 + m_2)$, $m_2 \times (m_1 + m_2)$, $(m_1 + m_2) \times m_1$ and $(m_1 + m_2) \times m_2$. Since smooth charts cover every manifold involved, every point of each domain lies in such a pair of charts, so all four maps satisfy Definition~\ref{def:smooth-map}. They are smooth, so the maps are smooth (Proposition~\ref{prop:smooth-map-charts}), and by that proposition their coordinate representations in any other smooth charts are smooth as well.
 \end{proof}
 
 \section{Manifolds in Euclidean Space}\label{sec:euclidean}
@@ -4872,11 +5006,33 @@ For $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$, the external and internal desc
 \begin{proof}[Proof (not given in lecture)]
 \emph{External $\Rightarrow$ (G).} This is Steps 1--3 of the proof of Theorem~\ref{thm:regular-value}: the rank condition lets one permute coordinates so that $\big(\partial F^i/\partial y^j(p)\big)$ is nonsingular, and Theorem~\ref{thm:ift-general} produces the smooth $h$ with $F(x,y) = \vec 0 \iff y = h(x)$ on a box.
 
-\emph{(G) $\Rightarrow$ external.} Take $W = V \times V'$ and $F(x,y) = y - h(x)$, smooth, with $F^{-1}(\vec 0) = X \cap W$ by hypothesis. Its Jacobian is the $k \times (n+k)$ block matrix $\big(-Dh_x \ \big| \ I_k\big)$, of rank $k$ everywhere because of the identity block; so $\vec 0$ is a regular value.
+\emph{(G) $\Rightarrow$ external.} Take $W = V \times V'$ and $F(x,y) = y - h(x)$, smooth, with $F^{-1}(\vec 0) = X \cap W$ by hypothesis. Its Jacobian is the $k \times (n+k)$ block matrix $\big(-Dh_x \ \big| \ I_k\big)$, of rank $k$ everywhere because of the identity block; so $\vec 0$ is a regular value. Written out, with $h = (h^1, \ldots, h^k)$,
+\[
+DF_{(x,y)} = \left(\begin{array}{ccc|ccc}
+-\dfrac{\partial h^1}{\partial x^1}(x) & \cdots & -\dfrac{\partial h^1}{\partial x^n}(x) & 1 & & 0 \\[2mm]
+\vdots & & \vdots & & \ddots & \\[1mm]
+-\dfrac{\partial h^k}{\partial x^1}(x) & \cdots & -\dfrac{\partial h^k}{\partial x^n}(x) & 0 & & 1
+\end{array}\right).
+\]
 
-\emph{(G) $\Rightarrow$ internal.} Take $\alpha(x) = (x, h(x))$ on $V$. It is smooth, its Jacobian $\big(I_n \, ; \, Dh_x\big)$ has rank $n$, and it is a homeomorphism onto $X \cap (V \times V')$ with inverse the restriction of the projection $(x,y) \mapsto x$.
+\emph{(G) $\Rightarrow$ internal.} Take $\alpha(x) = (x, h(x))$ on $V$. It is smooth, its Jacobian $\big(I_n \, ; \, Dh_x\big)$ has rank $n$, and it is a homeomorphism onto $X \cap (V \times V')$ with inverse the restriction of the projection $(x,y) \mapsto x$. Written out, the $(n+k) \times n$ Jacobian is
+\[
+D\alpha_x = \left(\begin{array}{ccc}
+1 & & 0 \\
+& \ddots & \\
+0 & & 1 \\[1mm] \hline
+\dfrac{\partial h^1}{\partial x^1}(x) & \cdots & \dfrac{\partial h^1}{\partial x^n}(x) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial h^k}{\partial x^1}(x) & \cdots & \dfrac{\partial h^k}{\partial x^n}(x)
+\end{array}\right),
+\]
+whose top $n \times n$ block is $I_n$.
 
-\emph{Internal $\Rightarrow$ (G).} Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. Then $D(\alpha_1)_q$ is invertible, so by the inverse function theorem (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$, so it equals $X \cap (V_2 \times V')$ for a suitable box.
+\emph{Internal $\Rightarrow$ (G).} Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. In blocks,
+\[
+D\alpha_q = \begin{pmatrix} D(\alpha_1)_q \\[1mm] D(\alpha_2)_q \end{pmatrix},
+\]
+with $D(\alpha_1)_q$ the $n \times n$ block of the $n$ independent rows and $D(\alpha_2)_q$ the remaining $k \times n$ block. Then $D(\alpha_1)_q$ is invertible, so by the inverse function theorem (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$, so it equals $X \cap (V_2 \times V')$ for a suitable box.
 \end{proof}
 
 The circle in its three descriptions is collected in Section~\ref{sec:ex-circle}.
@@ -4956,7 +5112,11 @@ are inverse to each other, since $(\varphi_J \circ \varphi_{J'}^{-1}) \circ (\va
 \emph{Conclusion.} The charts $(U_J, \varphi_J)$ cover $M$ and are pairwise compatible, so they form an atlas (Definition~\ref{def:atlas}). By Theorem~\ref{thm:maximal-atlas} the atlas lies in a unique maximal atlas, which is a smooth structure on $M$ (Definition~\ref{def:smooth-structure}). Its charts take values in $\mathbb{R}^I \cong \mathbb{R}^n$, so $M$ is a smooth manifold of dimension $n$, the dimension of Theorem~\ref{thm:regular-value}.
 \end{proof}
 \begin{exbox}[A Surface in $\mathbb{R}^3$]\exlabel{ex:surface-transition}
-The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ \emph{two} partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Then $p$ lies in the domains of two charts built from different solved-for variables:
+The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ \emph{two} partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Written out, the last two entries of the $1 \times 3$ Jacobian
+\[
+F'(p) = \begin{pmatrix} \dfrac{\partial F}{\partial x}(p) & \dfrac{\partial F}{\partial y}(p) & \dfrac{\partial F}{\partial z}(p) \end{pmatrix}
+\]
+are nonzero. Then $p$ lies in the domains of two charts built from different solved-for variables:
 \[
 \begin{aligned}
 \text{solving for } z: &\quad z = g(x,y), &\quad \varphi : U \to \mathbb{R}^2, &\quad \varphi(x,y,z) = (x,y);\\
@@ -5053,8 +5213,23 @@ Let $A : V \to W$ be linear, with $V$ and $W$ finite-dimensional.
 \begin{enumerate}
     \item \emph{Rank--nullity.} $\dim V = \dim\ker A + \operatorname{rank} A$. Consequently: if $A$ is injective then $\dim V \le \dim W$; if $A$ is surjective then $\dim V \ge \dim W$; and if $\dim V = \dim W$, then $A$ is injective $\iff$ surjective $\iff$ bijective.
     \item \emph{Bases determine linear maps.} A linear map is determined by its values on a basis, and any assignment of values to the vectors of a basis extends uniquely to a linear map. In particular, two linear maps that agree on a basis are equal.
-    \item \emph{Matrices.} Given bases $(e_1, \ldots, e_m)$ of $V$ and $(f_1, \ldots, f_n)$ of $W$, the matrix $[A] = (a_{ij})$ of $A$ is defined by $A e_j = \sum_i a_{ij} f_i$: its $j$-th \emph{column} holds the coordinates of $Ae_j$. Composition corresponds to matrix multiplication, $[AB] = [A][B]$, and $\operatorname{rank} A$ is the rank of $[A]$, which equals the rank of its transpose.
-    \item \emph{Change of basis.} If $e'_j = \sum_i P_{ij}\, e_i$ and $f'_l = \sum_k Q_{kl}\, f_k$ are new bases, with $P$ and $Q$ invertible, then the matrix of $A$ in the new bases is $Q^{-1} [A] P$.
+    \item \emph{Matrices.} Given bases $(e_1, \ldots, e_m)$ of $V$ and $(f_1, \ldots, f_n)$ of $W$, the matrix $[A] = (a_{ij})$ of $A$ is defined by $A e_j = \sum_i a_{ij} f_i$: its $j$-th \emph{column} holds the coordinates of $Ae_j$. Written out, $[A]$ is the $n \times m$ matrix
+\[
+[A] = \begin{pmatrix}
+a_{11} & \cdots & a_{1j} & \cdots & a_{1m} \\
+\vdots & & \vdots & & \vdots \\
+a_{n1} & \cdots & a_{nj} & \cdots & a_{nm}
+\end{pmatrix},
+\qquad
+Ae_j = a_{1j} f_1 + \cdots + a_{nj} f_n.
+\] Composition corresponds to matrix multiplication, $[AB] = [A][B]$, and $\operatorname{rank} A$ is the rank of $[A]$, which equals the rank of its transpose.
+    \item \emph{Change of basis.} If $e'_j = \sum_i P_{ij}\, e_i$ and $f'_l = \sum_k Q_{kl}\, f_k$ are new bases, with $P$ and $Q$ invertible, then the matrix of $A$ in the new bases is $Q^{-1} [A] P$. Here
+\[
+P = \begin{pmatrix} P_{11} & \cdots & P_{1m} \\ \vdots & & \vdots \\ P_{m1} & \cdots & P_{mm} \end{pmatrix},
+\qquad
+Q = \begin{pmatrix} Q_{11} & \cdots & Q_{1n} \\ \vdots & & \vdots \\ Q_{n1} & \cdots & Q_{nn} \end{pmatrix},
+\]
+the $j$-th column of $P$ holding the old coordinates of $e'_j$, and the $l$-th column of $Q$ those of $f'_l$.
 \end{enumerate}
 \leeref{Corollary B.21 and Proposition B.24}
 \end{propbox}
@@ -5188,7 +5363,20 @@ So $(A^{-1})^* : V^* \to W^*$ is a two-sided inverse of $A^*$: $A^*$ is an isomo
 \[
 A^*(\varphi^k)(e_j) = \varphi^k(Ae_j) = \varphi^k\Big(\sum_i a_{ij} f_i\Big) = \sum_i a_{ij}\, \delta^k_i = a_{kj} .
 \]
-By the second formula of Proposition~\ref{prop:dual-basis}, applied to the covector $A^*(\varphi^k) \in V^*$, $A^*(\varphi^k) = \sum_j A^*(\varphi^k)(e_j)\,\varepsilon^j = \sum_j a_{kj}\,\varepsilon^j$. By Proposition~\ref{fact:linalg}(3), the $k$-th column of the matrix of $A^*$ (in the bases $(\varphi^k)$ of $W^*$ and $(\varepsilon^j)$ of $V^*$) holds the coordinates of $A^*(\varphi^k)$, namely $a_{k1}, \ldots, a_{km}$. The $k$-th column of the matrix of $A^*$ is therefore the $k$-th row of $[A]$: the matrix of $A^*$ is $[A]^{\mathsf T}$.
+By the second formula of Proposition~\ref{prop:dual-basis}, applied to the covector $A^*(\varphi^k) \in V^*$, $A^*(\varphi^k) = \sum_j A^*(\varphi^k)(e_j)\,\varepsilon^j = \sum_j a_{kj}\,\varepsilon^j$. By Proposition~\ref{fact:linalg}(3), the $k$-th column of the matrix of $A^*$ (in the bases $(\varphi^k)$ of $W^*$ and $(\varepsilon^j)$ of $V^*$) holds the coordinates of $A^*(\varphi^k)$, namely $a_{k1}, \ldots, a_{km}$. The $k$-th column of the matrix of $A^*$ is therefore the $k$-th row of $[A]$: the matrix of $A^*$ is $[A]^{\mathsf T}$. Written out, as an $m \times n$ matrix,
+\[
+[A^*] = \begin{pmatrix}
+a_{11} & a_{21} & \cdots & a_{n1} \\
+\vdots & \vdots & & \vdots \\
+a_{1m} & a_{2m} & \cdots & a_{nm}
+\end{pmatrix} = [A]^{\mathsf T},
+\qquad
+[A] = \begin{pmatrix}
+a_{11} & \cdots & a_{1m} \\
+\vdots & & \vdots \\
+a_{n1} & \cdots & a_{nm}
+\end{pmatrix}.
+\]
 
 \emph{(3)} By (2) and Proposition~\ref{fact:linalg}(3), $\operatorname{rank} A^* = \operatorname{rank} [A]^{\mathsf T} = \operatorname{rank} [A] = \operatorname{rank} A$. Also $\dim W^* = \dim W$ and $\dim V^* = \dim V$ (Proposition~\ref{prop:dual-basis}). A linear map is surjective exactly when its rank, the dimension of its image, equals the dimension of its target (a subspace of full dimension is the whole space), and injective exactly when its kernel is $0$, which by rank--nullity (Proposition~\ref{fact:linalg}(1)) means its rank equals the dimension of its source. Now $A$ is surjective iff $\operatorname{rank} A = \dim W$, iff $\operatorname{rank} A^* = \dim W^*$, which by rank--nullity for $A^* : W^* \to V^*$ means $A^*$ is injective. Likewise $A$ is injective iff $\operatorname{rank} A = \dim V = \dim V^*$, iff $\operatorname{rank} A^* = \dim V^*$, iff $A^*$ is surjective.
 \end{proof}
@@ -5390,7 +5578,14 @@ A finite-dimensional real vector space $X$ of dimension $m$ is given the topolog
 This is the sense in which $\Mat(n,\mathbb{R})$, $\Sym(n,\mathbb{R})$, and $\Mat(n,\mathbb{C})$ are smooth manifolds without anyone having chosen coordinates on them. Uribe: ``you can think of this as an abstract vector space that I make into a manifold by choosing a linear chart, and it won't matter which linear chart I choose --- they are all smoothly compatible.''
 \end{rembox}
 
-Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the same vertical arrows but a \emph{linear} map along the bottom: the linear map $\mathbb{R}^m \to \mathbb{R}^n$ given by the Jacobian matrix $\widetilde F'(\tilde p)$, where $\tilde p = L(p)$ is the coordinate vector of $p$.
+Now suppose $F$ is smooth and fix $p \in X$. There is a second square, with the same vertical arrows but a \emph{linear} map along the bottom: the linear map $\mathbb{R}^m \to \mathbb{R}^n$ given by the Jacobian matrix $\widetilde F'(\tilde p)$, where $\tilde p = L(p)$ is the coordinate vector of $p$. Written out, with $\widetilde F = (\widetilde F^1, \ldots, \widetilde F^n)$ and coordinates $(r^1, \ldots, r^m)$ on $\mathbb{R}^m$, it is the $n \times m$ matrix
+\[
+\widetilde F'(\tilde p) = \begin{pmatrix}
+\dfrac{\partial \widetilde F^1}{\partial r^1}(\tilde p) & \cdots & \dfrac{\partial \widetilde F^1}{\partial r^m}(\tilde p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial \widetilde F^n}{\partial r^1}(\tilde p) & \cdots & \dfrac{\partial \widetilde F^n}{\partial r^m}(\tilde p)
+\end{pmatrix}.
+\]
 
 \begin{defbox}[The Differential]\deflabel{def:vs-differential}
 Let $F : X \to Y$ be smooth and $p \in X$. Choose linear coordinates $L$ on $X$ and $K$ on $Y$, let $\widetilde F = K \circ F \circ L^{-1}$ be the coordinate representation (Definition~\ref{def:vs-coordinate-representation}), and put $\tilde p = L(p)$. The \textbf{differential} of $F$ at $p$ is the unique linear map $dF_p : X \to Y$ making the square commute:
@@ -5498,7 +5693,15 @@ Let $\Sym(n,\mathbb{R}) = \{\, S \in \Mat(n,\mathbb{R}) \mid S^{\mathsf T} = S \
 \[
 \dim \Sym(n,\mathbb{R}) = n + (n-1) + \cdots + 1 = \frac{n(n+1)}{2}.
 \]
-Reading off those entries in a fixed order gives a linear isomorphism $\Sym(n,\mathbb{R}) \cong \mathbb{R}^{n(n+1)/2}$, which we use to regard maps into $\Sym(n,\mathbb{R})$ as maps into a Euclidean space. Being linear, it changes neither smoothness nor rank.
+Reading off those entries in a fixed order gives a linear isomorphism $\Sym(n,\mathbb{R}) \cong \mathbb{R}^{n(n+1)/2}$, which we use to regard maps into $\Sym(n,\mathbb{R})$ as maps into a Euclidean space. Being linear, it changes neither smoothness nor rank. Explicitly, the free entries are the $s_{ij}$ with $i \le j$:
+\[
+S = \begin{pmatrix}
+s_{11} & s_{12} & \cdots & s_{1n} \\
+s_{12} & s_{22} & \cdots & s_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+s_{1n} & s_{2n} & \cdots & s_{nn}
+\end{pmatrix}.
+\]
 \end{defbox}
 
 \begin{exbox}[$\Ogp(n)$ Is a Smooth Manifold of Dimension $\tfrac{n(n-1)}{2}$]\exlabel{ex:On-smooth}
@@ -5646,7 +5849,16 @@ Every level set met so far is now a smooth manifold: $\SL(n,\mathbb{R})$, $\Ogp(
 Write $A^* = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\Ugp(n) = \{g \in \Mat(n,\mathbb{C}) \mid g^* g = I\}$. Throughout, $\Mat(n,\mathbb{C})$ is regarded as a \emph{real} vector space of dimension $2n^2$ (Definition~\ref{def:complex-groups}).
 
 \begin{defbox}[Hermitian Matrices as a Real Vector Space]\deflabel{def:herm}
-Let $\Herm(n) = \{A \in \Mat(n,\mathbb{C}) \mid A^* = A\}$. It is closed under addition and under multiplication by \emph{real} scalars, so it is a real vector space; it is \emph{not} a complex subspace, since $(iA)^* = -iA$. A Hermitian matrix has real diagonal entries ($a_{jj} = \overline{a_{jj}}$), arbitrary complex entries above the diagonal, and entries below the diagonal determined by $a_{kj} = \overline{a_{jk}}$. Hence
+Let $\Herm(n) = \{A \in \Mat(n,\mathbb{C}) \mid A^* = A\}$. It is closed under addition and under multiplication by \emph{real} scalars, so it is a real vector space; it is \emph{not} a complex subspace, since $(iA)^* = -iA$. A Hermitian matrix has real diagonal entries ($a_{jj} = \overline{a_{jj}}$), arbitrary complex entries above the diagonal, and entries below the diagonal determined by $a_{kj} = \overline{a_{jk}}$. Written out,
+\[
+A = \begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+\overline{a_{12}} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\overline{a_{1n}} & \overline{a_{2n}} & \cdots & a_{nn}
+\end{pmatrix},
+\qquad a_{11}, \ldots, a_{nn} \in \mathbb{R}.
+\] Hence
 \[
 \dim_{\mathbb{R}} \Herm(n) = n + 2\binom{n}{2} = n^2 ,
 \]
@@ -5755,7 +5967,15 @@ gY = (gYg^*)\,g, \qquad gYg^* \in \mathfrak{u}(n),
 \]
 so $g\cdot\mathfrak{u}(n) \subseteq \mathfrak{u}(n)\cdot g$; and for $X \in \mathfrak{u}(n)$, $Xg = g\,(g^*Xg)$, where $g^*Xg \in \mathfrak{u}(n)$ by the same computation with $g^*$ in place of $g$: $(g^*Xg)^* = g^*X^*g^{**} = g^*X^*g = -g^*Xg$. So $\mathfrak{u}(n)\cdot g \subseteq g\cdot\mathfrak{u}(n)$.
 
-\emph{Dimension.} A skew-Hermitian matrix has purely imaginary diagonal ($n$ real parameters) and arbitrary complex entries above the diagonal ($2\binom n2$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(n) = n^2$ --- agreeing with $\dim \Ugp(n)$ by rank--nullity, $2n^2 - n^2$. In detail: $X^* = -X$ says $\overline{x_{kj}} = -x_{jk}$ for all $j, k$. For $j = k$ this is $\overline{x_{jj}} = -x_{jj}$, i.e.\ $\operatorname{Re} x_{jj} = 0$, so each diagonal entry is $i$ times a free real number; for $j < k$ the entry $x_{jk}$ is an arbitrary complex number (two real parameters), and the entry below the diagonal is then determined, $x_{kj} = -\overline{x_{jk}}$. Hence
+\emph{Dimension.} A skew-Hermitian matrix has purely imaginary diagonal ($n$ real parameters) and arbitrary complex entries above the diagonal ($2\binom n2$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(n) = n^2$ --- agreeing with $\dim \Ugp(n)$ by rank--nullity, $2n^2 - n^2$. In detail: $X^* = -X$ says $\overline{x_{kj}} = -x_{jk}$ for all $j, k$. For $j = k$ this is $\overline{x_{jj}} = -x_{jj}$, i.e.\ $\operatorname{Re} x_{jj} = 0$, so each diagonal entry is $i$ times a free real number; for $j < k$ the entry $x_{jk}$ is an arbitrary complex number (two real parameters), and the entry below the diagonal is then determined, $x_{kj} = -\overline{x_{jk}}$. Written out, with $x_{jj} = i\,t_j$, $t_j \in \mathbb{R}$,
+\[
+X = \begin{pmatrix}
+i\,t_1 & x_{12} & \cdots & x_{1n} \\
+-\overline{x_{12}} & i\,t_2 & \cdots & x_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+-\overline{x_{1n}} & -\overline{x_{2n}} & \cdots & i\,t_n
+\end{pmatrix}.
+\] Hence
 \[
 \dim_{\mathbb{R}}\mathfrak{u}(n) = n + 2\binom n2 = n + n(n-1) = n^2 .
 \]
@@ -5796,7 +6016,11 @@ Near the point $p = (0,1)$ of $S^1 \subseteq \mathbb{R}^2$ (here $n = k = 1$):
 \begin{itemize}
     \item \textbf{External:} $F(x,y) = x^2 + y^2 - 1$, with $\nabla F = (2x, 2y) \neq 0$ on $S^1$, so $0$ is a regular value and $S^1 = F^{-1}(0)$.
     \item \textbf{Graph:} on $(-1,1) \times (0,\infty)$, $S^1$ is the graph of $h(x) = \sqrt{1-x^2}$ --- which is the chart $\varphi_2$ of Example~\ref{ex:circle-four}, read backwards.
-    \item \textbf{Internal:} $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $\theta \in (0,\pi)$, with $\alpha'(\theta) = (-\sin\theta, \cos\theta) \neq 0$ --- the angle chart of Example~\ref{ex:circle-angle}, read backwards.
+    \item \textbf{Internal:} $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $\theta \in (0,\pi)$, with $\alpha'(\theta) = (-\sin\theta, \cos\theta) \neq 0$ --- the angle chart of Example~\ref{ex:circle-angle}, read backwards. As the Jacobian of Definition~\ref{def:internal-description}, the $2 \times 1$ matrix
+\[
+D\alpha_\theta = \begin{pmatrix} -\sin\theta \\ \cos\theta \end{pmatrix}
+\]
+has rank $1 = n$.
 \end{itemize}
 The three are related exactly as in the proof of Theorem~\ref{thm:ext-int}: $h$ comes from $F$ by the implicit function theorem, and $\alpha$ comes from $h$ by $x \mapsto (x, h(x))$ followed by the reparametrization $x = \cos\theta$.
 \end{exbox}
@@ -5971,7 +6195,20 @@ $\supseteq$: given $u \in \mathbb{R}^n$, we must produce a curve in $M$ through 
 \]
 This is smooth into $\mathbb{R}^{n+k}$: the first component is affine in $t$, and the second is the composite of the smooth $G$ with that affine map. It takes values in $M$, since $\gamma(t) = (x, G(x))$ with $x = x_0 + tu \in A$. It has $\gamma(0) = (x_0, G(x_0)) = p$. And by the chain rule, $\frac{d}{dt}\big|_{t=0} G(x_0 + tu) = G'(x_0)\,u$, so $\gamma'(0) = (u, G'(x_0)u)$. Hence $\Gamma \subseteq T^{\geo}_pM$.
 
-\emph{Dimension.} The map $\iota : \mathbb{R}^n \to \mathbb{R}^{n+k}$, $\iota(u) = (u, Lu)$, is linear because $L$ is: $\iota(au + bu') = (au + bu', aLu + bLu') = a\,\iota(u) + b\,\iota(u')$. Its image is $\Gamma$, so $\Gamma$ is a linear subspace of $\mathbb{R}^{n+k}$. It is injective, because $\iota(u) = 0$ forces the first component $u$ to be $0$. By rank--nullity (Proposition~\ref{fact:linalg}(1)), $\dim \Gamma = \dim \operatorname{im}\iota = n - \dim\ker\iota = n - 0 = n$.
+\emph{Dimension.} The map $\iota : \mathbb{R}^n \to \mathbb{R}^{n+k}$, $\iota(u) = (u, Lu)$, is linear because $L$ is: $\iota(au + bu') = (au + bu', aLu + bLu') = a\,\iota(u) + b\,\iota(u')$. In matrix form, $\iota$ is multiplication by the $(n+k) \times n$ matrix with the identity stacked on top of the $k \times n$ Jacobian $L = G'(x_0)$:
+\[
+\iota(u) = \left(\begin{array}{c} I_n \\ \hline L \end{array}\right) u = \begin{pmatrix} u \\ Lu \end{pmatrix},
+\qquad
+\left(\begin{array}{c} I_n \\ \hline L \end{array}\right) = \left(\begin{array}{ccc}
+1 & \cdots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \cdots & 1 \\ \hline
+\dfrac{\partial G_1}{\partial x_1}(x_0) & \cdots & \dfrac{\partial G_1}{\partial x_n}(x_0) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial G_k}{\partial x_1}(x_0) & \cdots & \dfrac{\partial G_k}{\partial x_n}(x_0)
+\end{array}\right),
+\]
+where $G = (G_1, \ldots, G_k)$. The top block $I_n$ is what makes $\iota$ injective below. Its image is $\Gamma$, so $\Gamma$ is a linear subspace of $\mathbb{R}^{n+k}$. It is injective, because $\iota(u) = 0$ forces the first component $u$ to be $0$. By rank--nullity (Proposition~\ref{fact:linalg}(1)), $\dim \Gamma = \dim \operatorname{im}\iota = n - \dim\ker\iota = n - 0 = n$.
 \end{proof}
 
 \begin{rembox}\label{rem:tangent-2}
@@ -5979,7 +6216,15 @@ Uribe stated this lemma and left it as an exercise, calling it ``not a trivial e
 \end{rembox}
 
 \begin{thmbox}[The Geometric Tangent Space Is the Kernel of the Jacobian]\thmlabel{thm:tangent-kernel}
-$T^{\geo}_pM = \ker F'(p)$, where $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is the Jacobian at $p$. In particular $T^{\geo}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
+$T^{\geo}_pM = \ker F'(p)$, where $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is the Jacobian at $p$. Written out, with $F = (F_1, \ldots, F_k)$ and coordinates $x_1, \ldots, x_{n+k}$ on $\mathbb{R}^{n+k}$, it is the $k \times (n+k)$ matrix (Definition~\ref{def:jacobian})
+\[
+F'(p) = \begin{pmatrix}
+\dfrac{\partial F_1}{\partial x_1}(p) & \cdots & \dfrac{\partial F_1}{\partial x_{n+k}}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F_k}{\partial x_1}(p) & \cdots & \dfrac{\partial F_k}{\partial x_{n+k}}(p)
+\end{pmatrix},
+\]
+with one row per equation and one column per ambient coordinate. In particular $T^{\geo}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
 \leeref{Proposition 5.38}
 \end{thmbox}
 
@@ -6055,7 +6300,10 @@ The corollary is the infinitesimal form of \S\ref{sub:ext-int}: the geometric ta
 \subsection{Examples}
 
 \begin{exbox}[The Sphere]\exlabel{ex:tangent-sphere}
-For $S^n = F^{-1}(1)$ with $F(x) = |x|^2 = \sum x_i^2$ on $\mathbb{R}^{n+1}$, the Jacobian at $p$ is the row vector $F'(p) = 2p^{\mathsf T}$, and $1$ is a regular value since $p \neq 0$ on $S^n$. Hence
+For $S^n = F^{-1}(1)$ with $F(x) = |x|^2 = \sum x_i^2$ on $\mathbb{R}^{n+1}$, the Jacobian at $p$ is the row vector $F'(p) = 2p^{\mathsf T}$, written out
+\[
+F'(p) = \begin{pmatrix} \dfrac{\partial F}{\partial x_1}(p) & \cdots & \dfrac{\partial F}{\partial x_{n+1}}(p) \end{pmatrix} = \begin{pmatrix} 2p_1 & 2p_2 & \cdots & 2p_{n+1} \end{pmatrix}, \qquad p = (p_1, \ldots, p_{n+1}),
+\] and $1$ is a regular value since $p \neq 0$ on $S^n$. Hence
 \[
 T^{\geo}_pS^n = \ker\big(2p^{\mathsf T}\big) = \{\, v \in \mathbb{R}^{n+1} \mid p \cdot v = 0 \,\} = p^{\perp},
 \]
@@ -6292,7 +6540,10 @@ Throughout, $f$ is smooth on an open neighbourhood of $p$ in $M$, $f_\varphi = f
 D_v(f) = \frac{d}{dt}\Big|_{t=0} f(\gamma(t)) = \frac{d}{dt}\Big|_{t=0} g(\gamma(t)) = D_v(g) .
 \]
 
-\emph{(2)} The chart $\varphi$ is the restriction to $M$ of the linear projection $\pi(x,y) = x$, so $\varphi \circ \sigma = \pi \circ \sigma$ is a smooth curve; it takes values in $A$, because $\sigma(t) \in M$ has the form $(x, G(x))$ with $x \in A$; and $(\varphi\circ\sigma)(0) = \varphi(p) = x_0$. Its velocity at $0$ is, since the derivative of the linear map $\pi$ is $\pi$ itself,
+\emph{(2)} The chart $\varphi$ is the restriction to $M$ of the linear projection $\pi(x,y) = x$, whose matrix is the $n \times (n+k)$ block row
+\[
+\pi = \left(\begin{array}{c|c} I_n & 0 \end{array}\right), \qquad \pi\begin{pmatrix} x \\ y \end{pmatrix} = I_n x + 0\,y = x \qquad (x \in \mathbb{R}^n,\ y \in \mathbb{R}^k),
+\] so $\varphi \circ \sigma = \pi \circ \sigma$ is a smooth curve; it takes values in $A$, because $\sigma(t) \in M$ has the form $(x, G(x))$ with $x \in A$; and $(\varphi\circ\sigma)(0) = \varphi(p) = x_0$. Its velocity at $0$ is, since the derivative of the linear map $\pi$ is $\pi$ itself,
 \[
 (\varphi \circ \sigma)'(0) = \pi\big(\sigma'(0)\big) = \pi(v) = \pi\big(u, G'(x_0)u\big) = u ,
 \]
@@ -6511,7 +6762,11 @@ using $\operatorname{codim} S_i = k - (k - \ell_i) = \ell_i$. And Theorem~\ref{t
 \end{proof}
 
 \begin{exbox}[The Sphere and the Plane Re-read]\exlabel{ex:sphere-plane-transverse}
-The figure in \S\ref{sub:regular-values} was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\geo}_qS_1 = q^\perp$ and $T^{\geo}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e.\ iff $q \neq \pm e_3$ --- iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients.
+The figure in \S\ref{sub:regular-values} was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\geo}_qS_1 = q^\perp$ and $T^{\geo}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e.\ iff $q \neq \pm e_3$ --- iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients. \textit{(Computed; not from lecture.)} In the form of Proposition~\ref{prop:transverse-intersection}, cut out $S_1$ by $G_1(x,y,z) = x^2 + y^2 + z^2 - 1$ and $S_2$ by $G_2(x,y,z) = z - c$; at $q = (x,y,z)$ the stacked $2 \times 3$ Jacobian is
+\[
+(G_1, G_2)'(q) = \begin{pmatrix} G_1'(q) \\ G_2'(q) \end{pmatrix} = \begin{pmatrix} 2x & 2y & 2z \\ 0 & 0 & 1 \end{pmatrix},
+\]
+whose $2 \times 2$ minors are $2x$, $2y$ (columns $1,3$ and $2,3$) and $0$ (columns $1,2$); so it has rank $2$ iff $(x,y) \neq (0,0)$, which on $S^2$ means $q \neq \pm e_3$.
 \begin{itemize}
     \item $|c| < 1$: every point of $S_1 \cap S_2$ has $x^2 + y^2 = 1 - c^2 > 0$, so $q \neq \pm e_3$ and the intersection is transverse. Codimensions add, $1 + 1 = 2$, and $S_1 \cap S_2$ is a curve: the circle of radius $\sqrt{1-c^2}$.
     \item $c = \pm 1$: $S_1 \cap S_2 = \{\pm e_3\}$, where $T^{\geo}_qS_1 = T^{\geo}_qS_2$. Not transverse, and the intersection is a point rather than the predicted curve.
@@ -6526,7 +6781,10 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 Let $S$ be the $x$-axis in $\mathbb{R}^2$, cut out by $G(x,y) = y$, so $T^{\geo}_qS$ is the $x$-axis at every $q \in S$, and $\ell = 1$. For $F : \mathbb{R} \to \mathbb{R}^2$ the theorem predicts $\dim F^{-1}(S) = 1 - 1 = 0$.
 \begin{enumerate}
     \item[(a)] $F(t) = (t, 0)$. Then $F^{-1}(S) = \mathbb{R}$, of dimension $1$: the \emph{dimension} is wrong. Here $\operatorname{im} F'(t)$ is the $x$-axis, so $\operatorname{im} F'(t) + T S$ is the $x$-axis, not $\mathbb{R}^2$.
-    \item[(b)] $F(t) = (t, t^2)$. Then $F^{-1}(S) = \{0\}$, which has the predicted dimension $0$; but $F'(0) = (1,0)$ lies in $T^{\geo}_0S$, so $F'(0)^{-1}(T^{\geo}_0S) = \mathbb{R}$, while the geometric tangent space of a point is $0$: the \emph{tangent formula} is wrong. Correspondingly $(G \circ F)(t) = t^2$ has $(G\circ F)'(0) = 0$, as Proposition~\ref{prop:transverse-iff} predicts.
+    \item[(b)] $F(t) = (t, t^2)$. Then $F^{-1}(S) = \{0\}$, which has the predicted dimension $0$; but $F'(0) = (1,0)$ lies in $T^{\geo}_0S$, so $F'(0)^{-1}(T^{\geo}_0S) = \mathbb{R}$, while the geometric tangent space of a point is $0$: the \emph{tangent formula} is wrong. Correspondingly $(G \circ F)(t) = t^2$ has $(G\circ F)'(0) = 0$, as Proposition~\ref{prop:transverse-iff} predicts. \textit{(Computed; not from lecture.)} As a product of Jacobians, with the $1 \times 2$ Jacobian $G'(x,y) = \begin{pmatrix} 0 & 1 \end{pmatrix}$ of $G(x,y) = y$ and the $2 \times 1$ Jacobian $F'(t) = \begin{pmatrix} 1 \\ 2t \end{pmatrix}$,
+\[
+(G \circ F)'(0) = G'(F(0))\,F'(0) = \begin{pmatrix} 0 & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = 0 .
+\]
     \item[(c)] $F(t) = (t, t^2 - \varepsilon)$ with $\varepsilon > 0$. Now $F^{-1}(S) = \{\pm\sqrt\varepsilon\}$, and at these points $F'(t) = (1, 2t)$ has nonzero second component, so $\operatorname{im} F'(t) + TS = \mathbb{R}^2$: transverse, two points, and every conclusion of the theorem holds.
 \end{enumerate}
 \end{exbox}
@@ -7289,7 +7547,14 @@ In the setting of Lemma~\ref{lem:hadamard}, there are smooth functions $f_{ij}$ 
 \[
 f(r) \;=\; f(a) \;+\; \sum_{i=1}^n (r^i - a^i)\, \frac{\partial f}{\partial r^i}(a) \;+\; \sum_{i,j=1}^n (r^i - a^i)(r^j - a^j)\, f_{ij}(r) \qquad (r \in B),
 \]
-and $f_{ij}(a) = \tfrac12\, \dfrac{\partial^2 f}{\partial r^i\,\partial r^j}(a)$. This is an identity, not an approximation.
+and $f_{ij}(a) = \tfrac12\, \dfrac{\partial^2 f}{\partial r^i\,\partial r^j}(a)$. This is an identity, not an approximation. In matrix form, with $r - a$ written as a column, the quadratic term is
+\[
+\sum_{i,j=1}^n (r^i - a^i)(r^j - a^j)\, f_{ij}(r) = (r - a)^{\mathsf T} \begin{pmatrix} f_{11}(r) & \cdots & f_{1n}(r) \\ \vdots & \ddots & \vdots \\ f_{n1}(r) & \cdots & f_{nn}(r) \end{pmatrix} (r - a),
+\]
+and at $r = a$ the $n \times n$ matrix of the $f_{ij}$ is half the Hessian of $f$:
+\[
+\begin{pmatrix} f_{11}(a) & \cdots & f_{1n}(a) \\ \vdots & \ddots & \vdots \\ f_{n1}(a) & \cdots & f_{nn}(a) \end{pmatrix} = \frac12 \begin{pmatrix} \dfrac{\partial^2 f}{\partial r^1\,\partial r^1}(a) & \cdots & \dfrac{\partial^2 f}{\partial r^1\,\partial r^n}(a) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial^2 f}{\partial r^n\,\partial r^1}(a) & \cdots & \dfrac{\partial^2 f}{\partial r^n\,\partial r^n}(a) \end{pmatrix} .
+\]
 \leeref{cf.\ Theorem C.15}
 \end{lembox}
 
@@ -7605,7 +7870,20 @@ So the matrix of $F_{*p}$ in the bases $\mathcal{B}_M$, $\mathcal{B}_N$ has the 
 \[
 \Big[\, \frac{\partial F^j}{\partial x^i}(p) \,\Big]_{j, i} = \tilde F'\big(\varphi(p)\big),
 \]
-with $j$ the row index and $i$ the column index.
+with $j$ the row index and $i$ the column index. Written out,
+\[
+\Big[\, \frac{\partial F^j}{\partial x^i}(p) \,\Big]_{j, i} = \begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix}
+= \begin{pmatrix}
+\dfrac{\partial \tilde F^1}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^1}{\partial r^m}\big(\varphi(p)\big) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial \tilde F^n}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^n}{\partial r^m}\big(\varphi(p)\big)
+\end{pmatrix},
+\]
+whose $i$-th column lists the coefficients of $F_{*p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$.
 \leeref{Ch.~3, \emph{Computations in Coordinates}}
 \end{thmbox}
 
@@ -7638,7 +7916,25 @@ Let $F : M \to N$ and $G : N \to O$ be smooth, with charts $(U,\varphi)$ at $p$,
 \[
 \big(\widetilde{G \circ F}\big)'\big(\varphi(p)\big) = \tilde G'\big(\psi(F(p))\big)\; \tilde F'\big(\varphi(p)\big):
 \]
-the matrix of $(G \circ F)_{*p}$ is the product of the matrices of $G_{*F(p)}$ and $F_{*p}$.
+the matrix of $(G \circ F)_{*p}$ is the product of the matrices of $G_{*F(p)}$ and $F_{*p}$. Written out, with $\ell = \dim O$, the partials of $\widetilde{G \circ F}$ and $\tilde F$ taken at $\varphi(p)$ and those of $\tilde G$ at $\psi(F(p))$, this is the product of an $\ell \times n$ and an $n \times m$ matrix:
+\[
+\begin{pmatrix}
+\dfrac{\partial (\widetilde{G \circ F})^1}{\partial r^1} & \cdots & \dfrac{\partial (\widetilde{G \circ F})^1}{\partial r^m} \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial (\widetilde{G \circ F})^\ell}{\partial r^1} & \cdots & \dfrac{\partial (\widetilde{G \circ F})^\ell}{\partial r^m}
+\end{pmatrix}
+= \begin{pmatrix}
+\dfrac{\partial \tilde G^1}{\partial r^1} & \cdots & \dfrac{\partial \tilde G^1}{\partial r^n} \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial \tilde G^\ell}{\partial r^1} & \cdots & \dfrac{\partial \tilde G^\ell}{\partial r^n}
+\end{pmatrix}
+\begin{pmatrix}
+\dfrac{\partial \tilde F^1}{\partial r^1} & \cdots & \dfrac{\partial \tilde F^1}{\partial r^m} \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial \tilde F^n}{\partial r^1} & \cdots & \dfrac{\partial \tilde F^n}{\partial r^m}
+\end{pmatrix},
+\]
+that is, entry by entry, $\dfrac{\partial (\widetilde{G \circ F})^k}{\partial r^i}\big(\varphi(p)\big) = \displaystyle\sum_{j=1}^n \dfrac{\partial \tilde G^k}{\partial r^j}\big(\psi(F(p))\big)\, \dfrac{\partial \tilde F^j}{\partial r^i}\big(\varphi(p)\big)$.
 \leeref{Ch.~3, \emph{Computations in Coordinates}}
 \end{corbox}
 
@@ -7682,10 +7978,28 @@ Let $(U, \varphi)$ and $(\tilde U, \tilde\varphi)$ be two smooth charts at $p$, 
     \[
     \frac{\partial}{\partial \tilde x^j}\Big|_p = \sum_{i=1}^n \frac{\partial x^i}{\partial \tilde x^j}(p)\, \frac{\partial}{\partial x^i}\Big|_p ,
     \]
-    and the change-of-basis matrix is the Jacobian of the transition function $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$.
+    and the change-of-basis matrix is the Jacobian of the transition function $\varphi \circ \tilde\varphi^{-1}$ at $\tilde\varphi(p)$. Written out (row $i$, column $j$; the $j$-th column holds the old components of the $j$-th new basis vector):
+    \[
+    \begin{pmatrix}
+    \dfrac{\partial x^1}{\partial \tilde x^1}(p) & \cdots & \dfrac{\partial x^1}{\partial \tilde x^n}(p) \\[2mm]
+    \vdots & & \vdots \\[1mm]
+    \dfrac{\partial x^n}{\partial \tilde x^1}(p) & \cdots & \dfrac{\partial x^n}{\partial \tilde x^n}(p)
+    \end{pmatrix}
+    = \big(\varphi \circ \tilde\varphi^{-1}\big)'\big(\tilde\varphi(p)\big) .
+    \]
     \item The components of a tangent vector transform by
     \[
     v\big[\tilde x^j\big] = \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, v\big[x^i\big] \qquad (v \in T_pM,\ j = 1, \ldots, n).
+    \]
+    In matrix form, the column of new components is the matrix $A$ of (3) times the column of old components:
+    \[
+    \begin{pmatrix} v[\tilde x^1] \\ \vdots \\ v[\tilde x^n] \end{pmatrix}
+    = \begin{pmatrix}
+    \dfrac{\partial \tilde x^1}{\partial x^1}(p) & \cdots & \dfrac{\partial \tilde x^1}{\partial x^n}(p) \\[2mm]
+    \vdots & & \vdots \\[1mm]
+    \dfrac{\partial \tilde x^n}{\partial x^1}(p) & \cdots & \dfrac{\partial \tilde x^n}{\partial x^n}(p)
+    \end{pmatrix}
+    \begin{pmatrix} v[x^1] \\ \vdots \\ v[x^n] \end{pmatrix} .
     \]
     \item The $n \times n$ matrices $A = \big[\partial \tilde x^j/\partial x^i(p)\big]$ (row $j$, column $i$) and $B = \big[\partial x^i/\partial \tilde x^j(p)\big]$ (row $i$, column $j$) are inverse to each other:
     \[
@@ -7734,7 +8048,11 @@ On $M = \mathbb{R}^2 \setminus \{(x, 0) \mid x \le 0\}$ take the standard chart 
 \frac{\partial}{\partial r} = \cos\theta\, \frac{\partial}{\partial x} + \sin\theta\, \frac{\partial}{\partial y}, \qquad
 \frac{\partial}{\partial \theta} = -r\sin\theta\, \frac{\partial}{\partial x} + r\cos\theta\, \frac{\partial}{\partial y},
 \]
-the coefficients being $\partial x/\partial r$, $\partial y/\partial r$ and $\partial x/\partial\theta$, $\partial y/\partial\theta$.
+the coefficients being $\partial x/\partial r$, $\partial y/\partial r$ and $\partial x/\partial\theta$, $\partial y/\partial\theta$. In matrix form, the change-of-basis matrix of Corollary~\ref{cor:change-coords}(1) --- the Jacobian of the transition $(r, \theta) \mapsto (r\cos\theta, r\sin\theta)$ --- has these coefficients as its columns:
+\[
+\begin{pmatrix} \dfrac{\partial x}{\partial r} & \dfrac{\partial x}{\partial \theta} \\[3mm] \dfrac{\partial y}{\partial r} & \dfrac{\partial y}{\partial \theta} \end{pmatrix}
+= \begin{pmatrix} \cos\theta & -r\sin\theta \\ \sin\theta & r\cos\theta \end{pmatrix} .
+\]
 \leeref{cf.\ Example C.37}
 \end{exbox}
 
@@ -7901,7 +8219,11 @@ Let $F : M \to N$ be a smooth map. A value $c \in N$ is a \textbf{regular value}
 \end{defbox}
 
 \begin{rembox}[The Map Is Intrinsic --- the Matrix Is Not]\label{rem:map-intrinsic-matrix-not}
-Uribe's closing point. The linear map $F_{*p}$ is defined with no choices, but its matrix depends on both charts: by Corollary~\ref{cor:change-coords}, changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{*p}$ that survive such changes --- its rank, kernel and image, injectivity and surjectivity --- are properties of $F$, which is why the definition above is phrased through $F_{*p}$ rather than through a matrix. By Proposition~\ref{prop:differential-agree} it agrees with Definitions~\ref{def:regular-point} and~\ref{def:regular-value} in the Euclidean case. A regular point is exactly a point at which $F$ is a \emph{submersion}, in the sense of Definition~\ref{def:submersion}; maps with bijective, surjective and injective differentials are the subject of \ref{sec:special-maps}.
+Uribe's closing point. The linear map $F_{*p}$ is defined with no choices, but its matrix depends on both charts: by Corollary~\ref{cor:change-coords}, changing them multiplies the matrix on each side by the Jacobian of a transition function. \textit{(Computed; not from lecture.)} Explicitly, if $(U', \varphi')$ and $(V', \psi')$ are other charts at $p$ and $F(p)$ with $F(U') \subseteq V'$, and $\hat F = \psi' \circ F \circ \varphi'^{-1}$ is the coordinate representation in them, then near $\varphi'(p)$, $\hat F = (\psi' \circ \psi^{-1}) \circ \tilde F \circ (\varphi \circ \varphi'^{-1})$, and the Euclidean chain rule gives the product of an $n \times n$, an $n \times m$ and an $m \times m$ matrix,
+\[
+\hat F'\big(\varphi'(p)\big) = \big(\psi' \circ \psi^{-1}\big)'\big(\psi(F(p))\big)\; \tilde F'\big(\varphi(p)\big)\; \big(\varphi \circ \varphi'^{-1}\big)'\big(\varphi'(p)\big),
+\]
+the outer two factors being invertible. So only properties of $F_{*p}$ that survive such changes --- its rank, kernel and image, injectivity and surjectivity --- are properties of $F$, which is why the definition above is phrased through $F_{*p}$ rather than through a matrix. By Proposition~\ref{prop:differential-agree} it agrees with Definitions~\ref{def:regular-point} and~\ref{def:regular-value} in the Euclidean case. A regular point is exactly a point at which $F$ is a \emph{submersion}, in the sense of Definition~\ref{def:submersion}; maps with bijective, surjective and injective differentials are the subject of \ref{sec:special-maps}.
 \end{rembox}
 
 \begin{propbox}[Regular Values Inside One Chart]\thmlabel{prop:regular-one-chart}
@@ -8111,7 +8433,17 @@ D_{F \circ \gamma} = (F \circ \gamma)_{*0}\Big(\frac{d}{dt}\Big|_0\Big) = F_{*p}
 \emph{Consequence.} Let $D \in T_pM$ and let $\gamma$ be any smooth curve with $\gamma(0) = p$ and $D_\gamma = D$; such a curve exists by Theorem~\ref{thm:every-vector-velocity}. Then, by the identity just proved, $F_{*p}(D) = F_{*p}(D_\gamma) = D_{F \circ \gamma}$.
 \end{proof}
 
-This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve with velocity $D$ and differentiate $F$ along it. It is the manifold version of Theorem~\ref{thm:vs-differential-curves}, and it is how Lee computes the differential of the determinant (Problem~7-4).
+This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve with velocity $D$ and differentiate $F$ along it. It is the manifold version of Theorem~\ref{thm:vs-differential-curves}, and it is how Lee computes the differential of the determinant (Problem~7-4). \textit{(Computed; not from lecture.)} With $m = \dim M$, $n = \dim N$, charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, and $F^j = y^j \circ F$, the coefficients of $D_\gamma$ and $D_{F \circ \gamma}$ are $(x^i \circ \gamma)'(0)$ and $(y^j \circ F \circ \gamma)'(0)$ (Proposition~\ref{prop:velocity-coords}), and by Theorem~\ref{lem:differential-matrix} the identity $D_{F \circ \gamma} = F_{*p}(D_\gamma)$ reads
+\[
+\begin{pmatrix} (y^1 \circ F \circ \gamma)'(0) \\ \vdots \\ (y^n \circ F \circ \gamma)'(0) \end{pmatrix}
+= \begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix}
+\begin{pmatrix} (x^1 \circ \gamma)'(0) \\ \vdots \\ (x^m \circ \gamma)'(0) \end{pmatrix} :
+\]
+the Jacobian carries the velocity of the coordinate curve $\varphi \circ \gamma$ to that of $\psi \circ F \circ \gamma$.
 
 \begin{center}
 \begin{tikzpicture}
@@ -8269,7 +8601,11 @@ By Theorem~\ref{lem:differential-matrix}, whose matrix entries are these Jacobia
 \iota_{2*}\Big(\frac{\partial}{\partial y^j}\Big|_{p_2}\Big) = \sum_{k=1}^{m_1} 0 \cdot \frac{\partial}{\partial x^k}\Big|_p + \sum_{l=1}^{m_2} \delta^l_j\, \frac{\partial}{\partial y^l}\Big|_p = \frac{\partial}{\partial y^j}\Big|_p .
 \]
 
-\emph{The bases.} The $\partial/\partial x^i|_{p_1}$ form a basis of $T_{p_1}M_1$ (Theorem~\ref{thm:tangent-basis}), and $\iota_{1*}$ is linear and injective (Theorem~\ref{thm:tangent-product}). An injective linear map carries a basis of its domain to a basis of its image (the images span the image, and a linear relation among them pulls back to one among the originals). So the $\partial/\partial x^i|_p = \iota_{1*}(\partial/\partial x^i|_{p_1})$ form a basis of the first summand $\iota_{1*}(T_{p_1}M_1)$; in the same way, with $\iota_{2*}$ and the basis $\partial/\partial y^j|_{p_2}$ of $T_{p_2}M_2$, the $\partial/\partial y^j|_p$ form a basis of the second summand.
+\emph{The bases.} The $\partial/\partial x^i|_{p_1}$ form a basis of $T_{p_1}M_1$ (Theorem~\ref{thm:tangent-basis}), and $\iota_{1*}$ is linear and injective (Theorem~\ref{thm:tangent-product}). An injective linear map carries a basis of its domain to a basis of its image (the images span the image, and a linear relation among them pulls back to one among the originals). So the $\partial/\partial x^i|_p = \iota_{1*}(\partial/\partial x^i|_{p_1})$ form a basis of the first summand $\iota_{1*}(T_{p_1}M_1)$; in the same way, with $\iota_{2*}$ and the basis $\partial/\partial y^j|_{p_2}$ of $T_{p_2}M_2$, the $\partial/\partial y^j|_p$ form a basis of the second summand. \textit{(Computed; not from lecture.)} Placing the two Jacobians side by side: in the basis $(\partial/\partial x^i|_{p_1}, 0), (0, \partial/\partial y^j|_{p_2})$ of $T_{p_1}M_1 \oplus T_{p_2}M_2$ and the product-coordinate basis of $T_p(M_1 \times M_2)$, the matrix of $\Theta(v, w) = \iota_{1*}v + \iota_{2*}w$ is
+\[
+\left(\begin{array}{c|c} I_{m_1} & 0 \\ \hline 0 & I_{m_2} \end{array}\right) = I_{m_1 + m_2},
+\]
+its first $m_1$ columns being the Jacobian of $\iota_1$ and its last $m_2$ columns that of $\iota_2$.
 \end{proof}
 
 \begin{corbox}[Velocities of Curves in a Product]\thmlabel{cor:tangent-product-curves}
@@ -8872,7 +9208,16 @@ F_p^* : T^*_{F(p)}N \longrightarrow T_p^*M, \qquad (F_p^*\alpha)(v) = \alpha\big
 \leeref{Ch.~11, \emph{Pullbacks of Covector Fields}}
 \end{defbox}
 
-Directions: points and vectors move \emph{forward} along $F$, from $M$ to $N$; functions and covectors move \emph{backward}, from $N$ to $M$, because they are things that eat --- to evaluate one on $M$, push the input to $N$ and evaluate there.
+Directions: points and vectors move \emph{forward} along $F$, from $M$ to $N$; functions and covectors move \emph{backward}, from $N$ to $M$, because they are things that eat --- to evaluate one on $M$, push the input to $N$ and evaluate there. \textit{(Computed; not from lecture.)} With $m = \dim M$, $n = \dim N$ and charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, $F^j = y^j \circ F$ and $\tilde F = \psi \circ F \circ \varphi^{-1}$ as in Theorem~\ref{lem:differential-matrix}, $(F_p^*\,dy^j|_{F(p)})(\partial/\partial x^i|_p) = dy^j|_{F(p)}\big(F_{*p}\,\partial/\partial x^i|_p\big) = \partial F^j/\partial x^i(p)$, so $F_p^*\,dy^j|_{F(p)} = \sum_i \partial F^j/\partial x^i(p)\, dx^i|_p$ (Corollary~\ref{cor:covector-components}). In the dual bases the $m \times n$ matrix of $F_p^*$ is therefore the transpose of the $n \times m$ matrix of $F_{*p}$:
+\[
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^1}(p) \\[2mm]
+\vdots & & \vdots \\[1mm]
+\dfrac{\partial F^1}{\partial x^m}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix}
+= \Big(\tilde F'\big(\varphi(p)\big)\Big)^{\mathsf T},
+\]
+its $j$-th column holding the components of $F_p^*\,dy^j|_{F(p)}$.
 
 \begin{rembox}[One Symbol for Two Pullbacks]\label{rem:two-pullbacks}
 The symbol $F_p^*$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ (Definition~\ref{def:germ-pullback}); on covectors it is the dual map $T^*_{F(p)}N \to T_p^*M$ of Definition~\ref{def:pullback-covector}. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^*(dg_{F(p)}) = d\big(F_p^*[g]\big)_p$.
@@ -8895,7 +9240,7 @@ The first equality is the definition of the dual map; the second, of the differe
 \end{proof}
 
 \begin{rembox}[The Two Differentials Meet]\label{rem:pullback-d-chain-rule}
-In $\mathbb{R}^n$, with the dot-product identification $v \mapsto \xi_v$ of Proposition~\ref{prop:dot-product-identification}, under which $dh_p = \xi_{\nabla h(p)}$ (its part (3), with the gradient of Definition~\ref{def:gradient}), the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Explicitly, for $F$ smooth on an open subset of $\mathbb{R}^m$ with values in $\mathbb{R}^n$ and $J_F(p)$ its Jacobian, $F_{*p}(D_w|_p) = D_{J_F(p)w}|_{F(p)}$ (Proposition~\ref{prop:differential-agree}), so for every $w \in \mathbb{R}^m$
+In $\mathbb{R}^n$, with the dot-product identification $v \mapsto \xi_v$ of Proposition~\ref{prop:dot-product-identification}, under which $dh_p = \xi_{\nabla h(p)}$ (its part (3), with the gradient of Definition~\ref{def:gradient}), the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$, with the gradients written as columns. (Definition~\ref{def:jacobian} writes the gradients $\nabla F_a(p)$ as the rows of the Jacobian; in that row convention the same identity reads $\nabla(f \circ F) = \nabla f \; J_F$, the transpose of this one.) Explicitly, for $F$ smooth on an open subset of $\mathbb{R}^m$ with values in $\mathbb{R}^n$ and $J_F(p)$ its Jacobian, $F_{*p}(D_w|_p) = D_{J_F(p)w}|_{F(p)}$ (Proposition~\ref{prop:differential-agree}), so for every $w \in \mathbb{R}^m$
 \[
 \xi_{\nabla(f \circ F)(p)}\big(D_w|_p\big) = d(f \circ F)_p\big(D_w|_p\big) = df_{F(p)}\big(D_{J_F(p)w}|_{F(p)}\big) = \nabla f(F(p)) \cdot J_F(p)w = \big(J_F(p)^{\mathsf T}\, \nabla f(F(p))\big) \cdot w = \xi_{J_F(p)^{\mathsf T} \nabla f(F(p))}\big(D_w|_p\big) ,
 \]
@@ -9063,7 +9408,10 @@ a composite of three bijections (the outer two by Lemma~\ref{lem:germs-local}). 
 
 ($\Leftarrow$) Fix $p$; we must produce neighbourhoods $U' \ni p$, $V' \ni F(p)$ with $F(U') = V'$ and a smooth inverse of $F|_{U'}^{V'}$. Choose smooth charts $(U,\varphi)$ at $p$ and $(V,\psi)$ at $F(p)$ with $F(U) \subseteq V$, by Lemma~\ref{lem:charts-around-map}: take any chart $(V, \psi)$ at $F(p)$ and any chart $(U_1, \varphi_1)$ at $p$, and restrict $\varphi_1$ to the open set $U = U_1 \cap F^{-1}(V)$, open because $F$ is continuous. Let $\tilde F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \psi(V)$, smooth by Proposition~\ref{prop:smooth-map-charts}.
 
-A bijective linear map forces $\dim M = \dim N$: $F_{*p}$ is a bijection $T_pM \to T_{F(p)}N$ between spaces of dimensions $m = \dim M$ and $n = \dim N$ (Theorem~\ref{thm:tangent-dimension}), and rank--nullity (Proposition~\ref{fact:linalg}(1)) gives $m = \dim\ker F_{*p} + \operatorname{rank} F_{*p} = 0 + n$. By Theorem~\ref{lem:differential-matrix} the matrix of $F_{*p}$ is the square matrix $\tilde F'(\varphi(p))$; so the latter is invertible, since its rank is the rank of $F_{*p}$, namely $n$ (Proposition~\ref{fact:linalg}(3)).
+A bijective linear map forces $\dim M = \dim N$: $F_{*p}$ is a bijection $T_pM \to T_{F(p)}N$ between spaces of dimensions $m = \dim M$ and $n = \dim N$ (Theorem~\ref{thm:tangent-dimension}), and rank--nullity (Proposition~\ref{fact:linalg}(1)) gives $m = \dim\ker F_{*p} + \operatorname{rank} F_{*p} = 0 + n$. By Theorem~\ref{lem:differential-matrix} the matrix of $F_{*p}$ is the square matrix $\tilde F'(\varphi(p))$, written out in the standard coordinates $r^1, \ldots, r^n$ of $\varphi(U)$ as
+\[
+\tilde F'\big(\varphi(p)\big) = \begin{pmatrix} \dfrac{\partial \tilde F^1}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^1}{\partial r^n}\big(\varphi(p)\big) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial \tilde F^n}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^n}{\partial r^n}\big(\varphi(p)\big) \end{pmatrix} ;
+\] so the latter is invertible, since its rank is the rank of $F_{*p}$, namely $n$ (Proposition~\ref{fact:linalg}(3)).
 
 By the Inverse Function Theorem (Theorem~\ref{thm:inverse-function}), applied to $\Phi = \tilde F$ on $W = \varphi(U)$ at $a = \varphi(p)$, there are open sets $\tilde A \ni \varphi(p)$ in $\varphi(U)$ and $\tilde B \ni \tilde F(\varphi(p))$ such that $\tilde F(\tilde A) = \tilde B$ and $\tilde F|_{\tilde A} : \tilde A \to \tilde B$ is bijective with smooth inverse; note $\tilde B = \tilde F(\tilde A) \subseteq \psi(V)$. Put $U' = \varphi^{-1}(\tilde A)$ and $V' = \psi^{-1}(\tilde B)$, neighbourhoods of $p$ and $F(p)$: they are open because $\varphi$ and $\psi$ are homeomorphisms onto open sets --- ``shrinking $\varphi(U)$ is the same as shrinking $U$.'' On $U$ we have $F = \psi^{-1} \circ \tilde F \circ \varphi$, by the definition of $\tilde F$ and $F(U) \subseteq V$; so
 \[
@@ -9289,7 +9637,10 @@ as $\Lambda(v) \in E$; so $\sum_j c_j\, dG^j|_p = 0$ with $c \neq 0$, contradict
 \end{proof}
 
 \begin{proof}[Second proof of (2), by the Jacobian]
-\textit{(The second independence argument of the submitted solution, Assignment~5, Problem~4(b), run in both directions.)} Fix any chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$, and let $J$ be the $k \times m$ matrix with entries $J_{ji} = \partial G^j/\partial x^i(p)$. By Lemma~\ref{lem:df-coords}, $dG^j|_p = \sum_{i=1}^m J_{ji}\, dx^i|_p$: row $j$ of $J$ holds the components of $dG^j|_p$. Hence, for $c \in \mathbb{R}^k$, collecting the coefficient of each $dx^i|_p$,
+\textit{(The second independence argument of the submitted solution, Assignment~5, Problem~4(b), run in both directions.)} Fix any chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$, and let $J$ be the $k \times m$ matrix with entries $J_{ji} = \partial G^j/\partial x^i(p)$. Written out,
+\[
+J = \begin{pmatrix} \dfrac{\partial G^1}{\partial x^1}(p) & \cdots & \dfrac{\partial G^1}{\partial x^m}(p) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial G^k}{\partial x^1}(p) & \cdots & \dfrac{\partial G^k}{\partial x^m}(p) \end{pmatrix} .
+\] By Lemma~\ref{lem:df-coords}, $dG^j|_p = \sum_{i=1}^m J_{ji}\, dx^i|_p$: row $j$ of $J$ holds the components of $dG^j|_p$. Hence, for $c \in \mathbb{R}^k$, collecting the coefficient of each $dx^i|_p$,
 \[
 \sum_{j=1}^k c_j\, dG^j|_p = \sum_{i=1}^m \Big(\sum_{j=1}^k c_j J_{ji}\Big) dx^i|_p ,
 \]
@@ -9406,7 +9757,10 @@ The steps are the lecture's, in the lecture's order. Sentences marked \textit{(C
 \[
 J = \Big[\frac{\partial F^j}{\partial x^i}(p)\Big]
 \]
-has rank $n$. It ``has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients'' of the $F^j$. \textit{(Completion.)} By Theorem~\ref{lem:differential-matrix}, $J$ is the matrix of $F_{*p}$ in the coordinate bases, and $F_{*p}$ is onto, so $J$ has rank $n$: the rank of $F_{*p}$ is $\dim T_{F(p)}N = n$ (Theorem~\ref{thm:tangent-dimension}), and the rank of a linear map is the rank of its matrix (Proposition~\ref{fact:linalg}(3)).
+has rank $n$. It ``has $m$ columns, which are the $x$'s, and $n$ rows, that are the gradients'' of the $F^j$. Written out,
+\[
+J = \begin{pmatrix} \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p) \end{pmatrix} \qquad (n \text{ rows}, \ m \text{ columns}).
+\] \textit{(Completion.)} By Theorem~\ref{lem:differential-matrix}, $J$ is the matrix of $F_{*p}$ in the coordinate bases, and $F_{*p}$ is onto, so $J$ has rank $n$: the rank of $F_{*p}$ is $\dim T_{F(p)}N = n$ (Theorem~\ref{thm:tangent-dimension}), and the rank of a linear map is the rank of its matrix (Proposition~\ref{fact:linalg}(3)).
 
 \emph{3. ``It's the same matrix.''} A student asked whether the matrix should be written with $\tilde F$. Uribe: ``It's the same thing\ldots\ That's how we define partials. We define them by going downstairs and taking the ordinary partial derivative downstairs. So it's the same matrix.'' That is Proposition~\ref{prop:upstairs-downstairs}: writing $G = \psi \circ F \circ \varphi_0^{-1}$ for the coordinate representation in these first charts (the lecture's $\tilde F$ at this stage),
 \[
@@ -9436,7 +9790,10 @@ and ``by the block nature, the fact that we have a big zero there, this is non-d
 \[
 H(r) = \hat\varphi(q) = \big(F^1(q), \ldots, F^n(q), x^{n+1}(q), \ldots, x^m(q)\big) = \big(G^1(r), \ldots, G^n(r), r^{n+1}, \ldots, r^m\big).
 \]
-The first $n$ rows of $H'(\varphi_0(p))$ are therefore the rows of $G'(\varphi_0(p)) = J = (A \mid B)$, and row $n + l$ is the gradient of $r^{n+l}$, the standard row vector with $1$ in place $n + l$. The matrix is block upper triangular, so its determinant is the product $\det A \cdot \det I_{m-n} = \det A$ of the determinants of the diagonal blocks.
+The first $n$ rows of $H'(\varphi_0(p))$ are therefore the rows of $G'(\varphi_0(p)) = J = (A \mid B)$, and row $n + l$ is the gradient of $r^{n+l}$, the standard row vector with $1$ in place $n + l$. Written out, with all partials at $\varphi_0(p)$,
+\[
+H'\big(\varphi_0(p)\big) = \left(\begin{array}{ccc|ccc} \dfrac{\partial G^1}{\partial r^1} & \cdots & \dfrac{\partial G^1}{\partial r^n} & \dfrac{\partial G^1}{\partial r^{n+1}} & \cdots & \dfrac{\partial G^1}{\partial r^m} \\ \vdots & & \vdots & \vdots & & \vdots \\ \dfrac{\partial G^n}{\partial r^1} & \cdots & \dfrac{\partial G^n}{\partial r^n} & \dfrac{\partial G^n}{\partial r^{n+1}} & \cdots & \dfrac{\partial G^n}{\partial r^m} \\ \hline 0 & \cdots & 0 & 1 & \cdots & 0 \\ \vdots & & \vdots & \vdots & \ddots & \vdots \\ 0 & \cdots & 0 & 0 & \cdots & 1 \end{array}\right) = \begin{pmatrix} A & B \\ 0 & I_{m-n} \end{pmatrix} .
+\] The matrix is block upper triangular, so its determinant is the product $\det A \cdot \det I_{m-n} = \det A$ of the determinants of the diagonal blocks.
 
 \emph{8. The inverse function theorem, ``possibly after shrinking $U$.''} By the inverse function theorem (Theorem~\ref{thm:inverse-function}), possibly after shrinking, $\hat\varphi$ is a diffeomorphism onto $\hat\varphi(U)$. \textit{(Completion.)} The theorem gives an open $W \ni \varphi_0(p)$, contained in $\varphi_0(U_0)$, with $H|_W$ a diffeomorphism onto the open set $H(W) \subseteq \mathbb{R}^m$. (This is Theorem~\ref{thm:inverse-function} with $\Phi = H$ on the open set $\varphi_0(U_0)$ and $a = \varphi_0(p)$, where $H'(a)$ is invertible by step 7; the open sets that theorem calls $U_0$ and $V_0$ are here $W$ and $H(W)$, not to be confused with the chart domain $U_0$.) Put $U = \varphi_0^{-1}(W)$, an open neighbourhood of $p$. Then $\hat\varphi|_U = H|_W \circ \varphi_0|_U$ is a composite of diffeomorphisms (Proposition~\ref{prop:chart-diffeo}, Lemma~\ref{lem:composition-smooth}), mapping $U$ onto the open set $\hat\varphi(U) = H(W)$. In detail: $H \circ \varphi_0 = \hat\varphi \circ \varphi_0^{-1} \circ \varphi_0 = \hat\varphi$ on $U_0$; $\varphi_0|_U : U \to W$ is the restriction of the diffeomorphism $\varphi_0 : U_0 \to \varphi_0(U_0)$ to the open set $U$, onto $\varphi_0(U) = W$; $H|_W$ is a diffeomorphism of open subsets of $\mathbb{R}^m$, hence of manifolds (Proposition~\ref{prop:diffeo-agree}); and the composite has the smooth inverse $(\varphi_0|_U)^{-1} \circ (H|_W)^{-1}$.
 
@@ -9476,7 +9833,10 @@ If $F : M \to N$ is a submersion at $p$, then $F$ is a submersion at every point
 \begin{proof}
 Let $(U, \hat\varphi)$ and $(V, \psi)$ be the charts of the theorem: $p \in U$, $F(U) \subseteq V$, and $\tilde F = \psi \circ F \circ \hat\varphi^{-1}$ is the projection $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$ on $\hat\varphi(U)$. The open set $U$ is a neighbourhood of $p$; we show that $F$ is a submersion at every $q \in U$.
 
-In the charts of the theorem, $\tilde F$ is the projection, whose Jacobian $(I_n \mid 0)$ has rank $n$ at every point of $\hat\varphi(U)$: its components are $\tilde F^j(r) = r^j$ ($j \le n$), so $\partial \tilde F^j/\partial r^i = \delta^j_i$ for $i = 1, \ldots, m$ at every point, and the first $n$ columns of the resulting matrix are the standard basis of $\mathbb{R}^n$. Now fix $q \in U$. The same two charts are charts at $q$ and at $F(q)$ with $F(U) \subseteq V$, so by Theorem~\ref{lem:differential-matrix} the matrix of $F_{*q}$ in the coordinate bases is $\tilde F'(\hat\varphi(q)) = (I_n \mid 0)$. Hence $\operatorname{rank} F_{*q} = n$ (Proposition~\ref{fact:linalg}(3)), and the image of $F_{*q}$ is an $n$-dimensional subspace of the $n$-dimensional space $T_{F(q)}N$ (Theorem~\ref{thm:tangent-dimension}), so it is all of it. By Theorem~\ref{lem:differential-matrix}, $F_{*q}$ is onto for every $q \in U$.
+In the charts of the theorem, $\tilde F$ is the projection, whose Jacobian $(I_n \mid 0)$ has rank $n$ at every point of $\hat\varphi(U)$: its components are $\tilde F^j(r) = r^j$ ($j \le n$), so $\partial \tilde F^j/\partial r^i = \delta^j_i$ for $i = 1, \ldots, m$ at every point, and the first $n$ columns of the resulting matrix are the standard basis of $\mathbb{R}^n$. Written out, for every $r \in \hat\varphi(U)$,
+\[
+\tilde F'(r) = \left(\begin{array}{cccc|ccc} 1 & 0 & \cdots & 0 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 & 0 & \cdots & 0 \\ \vdots & & \ddots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 1 & 0 & \cdots & 0 \end{array}\right) = (I_n \mid 0) \qquad (n \text{ rows}, \ m \text{ columns}).
+\] Now fix $q \in U$. The same two charts are charts at $q$ and at $F(q)$ with $F(U) \subseteq V$, so by Theorem~\ref{lem:differential-matrix} the matrix of $F_{*q}$ in the coordinate bases is $\tilde F'(\hat\varphi(q)) = (I_n \mid 0)$. Hence $\operatorname{rank} F_{*q} = n$ (Proposition~\ref{fact:linalg}(3)), and the image of $F_{*q}$ is an $n$-dimensional subspace of the $n$-dimensional space $T_{F(q)}N$ (Theorem~\ref{thm:tangent-dimension}), so it is all of it. By Theorem~\ref{lem:differential-matrix}, $F_{*q}$ is onto for every $q \in U$.
 \end{proof}
 
 \begin{corbox}[The Critical Set Is Closed]\thmlabel{cor:critical-set-closed}
@@ -9719,7 +10079,10 @@ Equivalently, by curves: for a smooth curve $\gamma$ in $S$ with $\gamma(0) = p$
 \begin{proof}
 \textit{(Lecture~12: ``immediate from the definitions''; filled in.)} Fix an adapted chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and its induced chart $(U \cap S, \varphi_S)$ of $S$, whose coordinate functions are $x^1, \ldots, x^{m-k}$ restricted to $U \cap S$; by Theorem~\ref{thm:tangent-basis} the $\partial/\partial x^i|^S_p$, $i \le m - k$, form a basis of $T_pS$, and the $\partial/\partial x^l|_p$, $l \le m$, a basis of $T_pM$.
 
-\emph{The formula.} By Lemma~\ref{lem:maps-into-submanifold}(1) the coordinate representation of $\iota$ is $j$, whose Jacobian is the $m \times (m-k)$ matrix $\binom{I_{m-k}}{0}$: the components of $j(r) = (r, \vec 0)$ are $j^l(r) = r^l$ for $l \le m - k$ and $j^l(r) = 0$ for $l > m - k$, so $\partial j^l/\partial r^i = \delta^l_i$ for $l \le m - k$ and $0$ for $l > m - k$. By Theorem~\ref{lem:differential-matrix} this is the matrix of $\iota_{*p}$ in the coordinate bases; its $i$-th column gives the formula. Explicitly, the formula of that theorem, with the upstairs partials replaced by the entries of the Jacobian of $j$, reads
+\emph{The formula.} By Lemma~\ref{lem:maps-into-submanifold}(1) the coordinate representation of $\iota$ is $j$, whose Jacobian is the $m \times (m-k)$ matrix $\binom{I_{m-k}}{0}$: the components of $j(r) = (r, \vec 0)$ are $j^l(r) = r^l$ for $l \le m - k$ and $j^l(r) = 0$ for $l > m - k$, so $\partial j^l/\partial r^i = \delta^l_i$ for $l \le m - k$ and $0$ for $l > m - k$. Written out, at every point,
+\[
+j'(r) = \left(\begin{array}{ccc} 1 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & 1 \\ \hline 0 & \cdots & 0 \\ \vdots & & \vdots \\ 0 & \cdots & 0 \end{array}\right) = \begin{pmatrix} I_{m-k} \\ 0 \end{pmatrix} \qquad (m \text{ rows}, \ m - k \text{ columns}).
+\] By Theorem~\ref{lem:differential-matrix} this is the matrix of $\iota_{*p}$ in the coordinate bases; its $i$-th column gives the formula. Explicitly, the formula of that theorem, with the upstairs partials replaced by the entries of the Jacobian of $j$, reads
 \[
 \iota_{*p}\Big(\frac{\partial}{\partial x^i}\Big|^S_p\Big) = \sum_{l=1}^m \frac{\partial j^l}{\partial r^i}\big(\varphi_S(p)\big)\, \frac{\partial}{\partial x^l}\Big|_p = \sum_{l=1}^{m-k} \delta^l_i\, \frac{\partial}{\partial x^l}\Big|_p = \frac{\partial}{\partial x^i}\Big|_p \qquad (i \le m - k).
 \]
@@ -9754,7 +10117,10 @@ In particular, a regular submanifold is locally a regular level set: every point
 \[
 \mathrm{id} \circ x_b \circ \varphi^{-1}\big(r^1, \ldots, r^m\big) = \big(r^{m-k+1}, \ldots, r^m\big) \qquad \text{on } \varphi(U),
 \]
-because the $l$-th entry of $\varphi(q')$ is $x^l(q')$ (Definition~\ref{def:coordinate-functions}). This is a linear map, hence smooth, so $x_b$ is smooth (Definition~\ref{def:smooth-map}). Its components are $x_b^{\,j} = r^j \circ x_b = x^{m-k+j}$, $j = 1, \ldots, k$, and the Jacobian of the coordinate representation at every point is the $k \times m$ matrix $(0 \mid I_k)$: $\partial r^{m-k+j}/\partial r^i = \delta^{m-k+j}_i$. By Theorem~\ref{lem:differential-matrix}, whose upstairs partials $\partial x_b^{\,j}/\partial x^i(q) = \partial x^{m-k+j}/\partial x^i(q)$ are the entries of this Jacobian, for $q \in U$
+because the $l$-th entry of $\varphi(q')$ is $x^l(q')$ (Definition~\ref{def:coordinate-functions}). This is a linear map, hence smooth, so $x_b$ is smooth (Definition~\ref{def:smooth-map}). Its components are $x_b^{\,j} = r^j \circ x_b = x^{m-k+j}$, $j = 1, \ldots, k$, and the Jacobian of the coordinate representation at every point is the $k \times m$ matrix $(0 \mid I_k)$: $\partial r^{m-k+j}/\partial r^i = \delta^{m-k+j}_i$. Written out,
+\[
+\left(\begin{array}{ccc|ccc} 0 & \cdots & 0 & 1 & \cdots & 0 \\ \vdots & & \vdots & \vdots & \ddots & \vdots \\ 0 & \cdots & 0 & 0 & \cdots & 1 \end{array}\right) = (0 \mid I_k) \qquad (k \text{ rows}; \ m - k \text{ zero columns, then } k).
+\] By Theorem~\ref{lem:differential-matrix}, whose upstairs partials $\partial x_b^{\,j}/\partial x^i(q) = \partial x^{m-k+j}/\partial x^i(q)$ are the entries of this Jacobian, for $q \in U$
 \[
 (x_b)_{*q}\Big(\frac{\partial}{\partial x^i}\Big|_q\Big) = \sum_{j=1}^k \frac{\partial x^{m-k+j}}{\partial x^i}(q)\, \frac{\partial}{\partial r^j}\Big|_{x_b(q)} = \sum_{j=1}^k \delta^{m-k+j}_i\, \frac{\partial}{\partial r^j}\Big|_{x_b(q)} =
 \begin{cases} 0, & i \le m - k, \\[2pt] \dfrac{\partial}{\partial r^{\,i-(m-k)}}\Big|_{x_b(q)}, & i > m - k. \end{cases}
@@ -9860,9 +10226,21 @@ In particular $X$ is a regular submanifold of $\mathbb{R}^{n+k}$ of codimension 
     \item its image $\{(x, z) : x \in V,\ z + h(x) \in V'\}$ is open: it is the preimage of the open set $V \times V'$ under the continuous map $\Psi(x, z) = (x, z + h(x))$ on the open set $V \times \mathbb{R}^k$;
     \item its inverse is $\Psi$ restricted to the image, $(x, z) \mapsto (x, z + h(x))$, which is smooth.
 \end{itemize}
+\textit{(Computed; not from lecture.)} In matrix form, with $x \in \mathbb{R}^n$ and $y \in \mathbb{R}^k$, the Jacobians of $\Phi$ and of its inverse $\Psi$ are block lower triangular with identity diagonal blocks,
+\[
+\Phi'(x, y) = \begin{pmatrix} I_n & 0 \\ -Dh(x) & I_k \end{pmatrix},
+\qquad
+\Psi'(x, z) = \begin{pmatrix} I_n & 0 \\ Dh(x) & I_k \end{pmatrix},
+\qquad
+\Phi'(x, y)\, \Psi'\big(\Phi(x, y)\big) = I_{n+k},
+\]
+where $Dh(x)$ is the $k \times n$ Jacobian of $h$; in particular $\det \Phi' = 1$ everywhere.
 So $\Phi$ is a diffeomorphism of $U$ onto an open set (Definition~\ref{def:diffeo-euclidean}), hence a smooth chart of $\mathbb{R}^{n+k}$: it is a homeomorphism onto an open set, and its transition maps with the identity chart are $\Phi$ and $\Phi^{-1}$, so it is compatible with the atlas $\{(\mathbb{R}^{n+k}, \mathrm{id})\}$ and lies in the maximal atlas it generates (Theorem~\ref{thm:maximal-atlas}). Its last $k$ components $y - h(x)$ vanish exactly on $X \cap U$: for $(x, y) \in U$, $y - h(x) = 0$ iff $y = h(x)$ iff $(x, y) \in X \cap (V \times V')$. So $\Phi$ is a chart adapted to $X$ at $p$.
 
-\emph{Slice $\Rightarrow$ external.} Let $F = x_b : U \to \mathbb{R}^k$, the last $k$ components of $\varphi$; it is smooth, its components being components of the smooth map $\varphi$. A chart is a diffeomorphism onto its image (Proposition~\ref{prop:chart-diffeo}; it is a diffeomorphism of open subsets of $\mathbb{R}^{n+k}$ by Proposition~\ref{prop:diffeo-agree}), so the Jacobian $\varphi'(q)$ is invertible at every $q \in U$: the ordinary chain rule applied to $\varphi^{-1} \circ \varphi = \mathrm{id}_U$ gives $(\varphi^{-1})'(\varphi(q))\, \varphi'(q) = I$. Its last $k$ rows, which form $F'(q)$, are linearly independent, since the rows of an invertible matrix are; and row $l$ of $\varphi'(q)$ is the gradient of the $l$-th component of $\varphi$ (Definition~\ref{def:jacobian}), so these rows are exactly the rows of $F'(q)$. Hence $F'(q)$ has rank $k$ everywhere, $\vec 0$ is a regular value of $F$ (Definition~\ref{def:regular-value}: every point of $F^{-1}(\vec 0)$, indeed every point of $U$, is a regular point), and
+\emph{Slice $\Rightarrow$ external.} Let $F = x_b : U \to \mathbb{R}^k$, the last $k$ components of $\varphi$; it is smooth, its components being components of the smooth map $\varphi$. A chart is a diffeomorphism onto its image (Proposition~\ref{prop:chart-diffeo}; it is a diffeomorphism of open subsets of $\mathbb{R}^{n+k}$ by Proposition~\ref{prop:diffeo-agree}), so the Jacobian $\varphi'(q)$ is invertible at every $q \in U$: the ordinary chain rule applied to $\varphi^{-1} \circ \varphi = \mathrm{id}_U$ gives $(\varphi^{-1})'(\varphi(q))\, \varphi'(q) = I$. Its last $k$ rows, which form $F'(q)$, are linearly independent, since the rows of an invertible matrix are; and row $l$ of $\varphi'(q)$ is the gradient of the $l$-th component of $\varphi$ (Definition~\ref{def:jacobian}), so these rows are exactly the rows of $F'(q)$. In block form, with $\varphi = (\varphi^1, \ldots, \varphi^{n+k})$,
+\[
+\varphi'(q) = \left(\begin{array}{c} \nabla \varphi^1(q) \\ \vdots \\ \nabla \varphi^n(q) \\ \hline \nabla \varphi^{n+1}(q) \\ \vdots \\ \nabla \varphi^{n+k}(q) \end{array}\right) = \begin{pmatrix} x_a'(q) \\ F'(q) \end{pmatrix} \qquad (F = x_b).
+\] Hence $F'(q)$ has rank $k$ everywhere, $\vec 0$ is a regular value of $F$ (Definition~\ref{def:regular-value}: every point of $F^{-1}(\vec 0)$, indeed every point of $U$, is a regular point), and
 \[
 X \cap U = \{\, q \in U : x_b(q) = \vec 0 \,\} = F^{-1}(\vec 0) ,
 \]
@@ -9921,14 +10299,20 @@ Put
 \[
 G = (G^1, \ldots, G^{n-m}) = (x^{m+1}, \ldots, x^n) : U \to \mathbb{R}^{n-m}, \qquad J(q) = G'(q) \quad (q \in U),
 \]
-the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates, whose $s$-th row is the gradient $\nabla G^s(q)$ (Definitions~\ref{def:jacobian} and~\ref{def:gradient}). Tangent spaces are the geometric ones (Definition~\ref{def:geometric-tangent}, whose formula makes sense verbatim for any subset of $\mathbb{R}^n$), and $v \cdot w = \sum_l v^l w^l$ is the dot product.
+the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates, whose $s$-th row is the gradient $\nabla G^s(q)$ (Definitions~\ref{def:jacobian} and~\ref{def:gradient}):
+\[
+J(q) = \begin{pmatrix} \nabla G^1(q) \\ \vdots \\ \nabla G^{n-m}(q) \end{pmatrix} = \begin{pmatrix} \dfrac{\partial G^1}{\partial r^1}(q) & \cdots & \dfrac{\partial G^1}{\partial r^n}(q) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial G^{n-m}}{\partial r^1}(q) & \cdots & \dfrac{\partial G^{n-m}}{\partial r^n}(q) \end{pmatrix} .
+\] Tangent spaces are the geometric ones (Definition~\ref{def:geometric-tangent}, whose formula makes sense verbatim for any subset of $\mathbb{R}^n$), and $v \cdot w = \sum_l v^l w^l$ is the dot product.
 \begin{enumerate}
     \item For every $q \in U$, $\varphi'(q)$ is invertible, with inverse $(\varphi^{-1})'(\varphi(q))$, and $J(q)$ has rank $n - m$.
     \item For every $q \in U \cap M$,
     \[
     T^{\geo}_qM = T^{\geo}_q(U \cap M) = \ker J(q), \qquad \dim T^{\geo}_qM = m.
     \]
-    \item For $q \in U$ and $j = 1, \ldots, n$ let $X_j(q) = \dfrac{\partial \varphi^{-1}}{\partial r^j}\big(\varphi(q)\big) \in \mathbb{R}^n$, the $j$-th column of $(\varphi^{-1})'(\varphi(q))$, with components $X_j^l(q)$. Each $X_j^l$ is smooth on $U$; $X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$, with $\varphi'(q)\, X_j(q) = e_j$ (in particular $X_1(q), \ldots, X_m(q)$ are linearly independent for every $q \in U$); and for $q \in U \cap M$, $X_1(q), \ldots, X_m(q)$ form a basis of $T^{\geo}_qM$.
+    \item For $q \in U$ and $j = 1, \ldots, n$ let $X_j(q) = \dfrac{\partial \varphi^{-1}}{\partial r^j}\big(\varphi(q)\big) \in \mathbb{R}^n$, the $j$-th column of $(\varphi^{-1})'(\varphi(q))$, with components $X_j^l(q)$:
+\[
+(\varphi^{-1})'\big(\varphi(q)\big) = \big(\, X_1(q) \ \big|\ X_2(q) \ \big|\ \cdots \ \big|\ X_n(q) \,\big) = \begin{pmatrix} X_1^1(q) & \cdots & X_n^1(q) \\ \vdots & \ddots & \vdots \\ X_1^n(q) & \cdots & X_n^n(q) \end{pmatrix} .
+\] Each $X_j^l$ is smooth on $U$; $X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$, with $\varphi'(q)\, X_j(q) = e_j$ (in particular $X_1(q), \ldots, X_m(q)$ are linearly independent for every $q \in U$); and for $q \in U \cap M$, $X_1(q), \ldots, X_m(q)$ form a basis of $T^{\geo}_qM$.
     \item For $q \in U \cap M$, the gradients $\nabla G^1(q), \ldots, \nabla G^{n-m}(q)$ form a basis of the orthogonal complement
     \[
     (T^{\geo}_qM)^\perp = \{\, v \in \mathbb{R}^n : v \cdot w = 0 \text{ for all } w \in T^{\geo}_qM \,\} ;
@@ -9957,7 +10341,10 @@ so the square matrix $\varphi'(q)$ is invertible, with inverse $(\varphi^{-1})'(
     \]
 \end{itemize}
 
-\emph{(4)} Fix $q \in U \cap M$. \emph{The gradients are normal:} for $w \in T^{\geo}_qM = \ker J(q)$ (2), the $s$-th entry of $J(q)\, w$ is $\nabla G^s(q) \cdot w$ (the $s$-th row of $J(q)$ is $\nabla G^s(q)$, Definition~\ref{def:jacobian}), and $J(q)\, w = 0$; so $\nabla G^s(q) \cdot w = 0$, and $\nabla G^s(q) \in (T^{\geo}_qM)^\perp$. \emph{They are independent:} $J(q)$ has rank $n - m$ by (1), so its $n - m$ rows are linearly independent (Definition~\ref{def:rank}). \emph{The orthogonal complement has dimension $n - m$:} choose a basis $w_1, \ldots, w_m$ of $T^{\geo}_qM$ ($\dim = m$ by (2)), and let $B$ be the $m \times n$ matrix with rows $w_1^{\mathsf T}, \ldots, w_m^{\mathsf T}$. A vector $v$ is orthogonal to every element $\sum_i a_i w_i$ of $T^{\geo}_qM$ if and only if it is orthogonal to each $w_i$, because $v \cdot \sum_i a_i w_i = \sum_i a_i\, (v \cdot w_i)$ by linearity of the dot product (``if'' by this formula, ``only if'' by taking $a = e_i$); that is, iff $Bv = 0$. So $(T^{\geo}_qM)^\perp = \ker B$. The rows of $B$ are independent, so $B$ has rank $m$, and rank--nullity (Proposition~\ref{fact:linalg}(1)) gives $\dim \ker B = n - m$. So the $n - m$ independent vectors $\nabla G^s(q)$ lie in the $(n-m)$-dimensional space $(T^{\geo}_qM)^\perp$, and form a basis of it. \emph{Matrix form:} for $c = (c^1, \ldots, c^{n-m}) \in \mathbb{R}^{n-m}$, $J(q)^{\mathsf T} c = \sum_s c^s\, \nabla G^s(q)$, since the columns of $J(q)^{\mathsf T}$ are the rows of $J(q)$; so the set of all $J(q)^{\mathsf T} c$ is the span of the gradients, which is $(T^{\geo}_qM)^\perp$, and $c \mapsto J(q)^{\mathsf T} c$ is injective because the gradients are independent.
+\emph{(4)} Fix $q \in U \cap M$. \emph{The gradients are normal:} for $w \in T^{\geo}_qM = \ker J(q)$ (2), the $s$-th entry of $J(q)\, w$ is $\nabla G^s(q) \cdot w$ (the $s$-th row of $J(q)$ is $\nabla G^s(q)$, Definition~\ref{def:jacobian}), and $J(q)\, w = 0$; so $\nabla G^s(q) \cdot w = 0$, and $\nabla G^s(q) \in (T^{\geo}_qM)^\perp$. \emph{They are independent:} $J(q)$ has rank $n - m$ by (1), so its $n - m$ rows are linearly independent (Definition~\ref{def:rank}). \emph{The orthogonal complement has dimension $n - m$:} choose a basis $w_1, \ldots, w_m$ of $T^{\geo}_qM$ ($\dim = m$ by (2)), and let $B$ be the $m \times n$ matrix with rows $w_1^{\mathsf T}, \ldots, w_m^{\mathsf T}$. A vector $v$ is orthogonal to every element $\sum_i a_i w_i$ of $T^{\geo}_qM$ if and only if it is orthogonal to each $w_i$, because $v \cdot \sum_i a_i w_i = \sum_i a_i\, (v \cdot w_i)$ by linearity of the dot product (``if'' by this formula, ``only if'' by taking $a = e_i$); that is, iff $Bv = 0$. So $(T^{\geo}_qM)^\perp = \ker B$. The rows of $B$ are independent, so $B$ has rank $m$, and rank--nullity (Proposition~\ref{fact:linalg}(1)) gives $\dim \ker B = n - m$. So the $n - m$ independent vectors $\nabla G^s(q)$ lie in the $(n-m)$-dimensional space $(T^{\geo}_qM)^\perp$, and form a basis of it. \emph{Matrix form:} for $c = (c^1, \ldots, c^{n-m}) \in \mathbb{R}^{n-m}$, $J(q)^{\mathsf T} c = \sum_s c^s\, \nabla G^s(q)$, since the columns of $J(q)^{\mathsf T}$ are the rows of $J(q)$,
+\[
+J(q)^{\mathsf T} = \begin{pmatrix} \dfrac{\partial G^1}{\partial r^1}(q) & \cdots & \dfrac{\partial G^{n-m}}{\partial r^1}(q) \\ \vdots & & \vdots \\ \dfrac{\partial G^1}{\partial r^n}(q) & \cdots & \dfrac{\partial G^{n-m}}{\partial r^n}(q) \end{pmatrix} \qquad (\text{column } s \text{ holds the entries of } \nabla G^s(q));
+\] so the set of all $J(q)^{\mathsf T} c$ is the span of the gradients, which is $(T^{\geo}_qM)^\perp$, and $c \mapsto J(q)^{\mathsf T} c$ is injective because the gradients are independent.
 \end{proof}
 
 \begin{rembox}[The Tangent Spaces Match]\label{rem:tangent-spaces-match}
@@ -10082,7 +10469,10 @@ Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, $c$
 \begin{proof}
 \textit{(Not from lecture; filled in.)} First, $c$ is a regular value in both senses, since the matrix of $F_{*p}$ in the standard coordinates is $F'(p)$ (Theorem~\ref{lem:differential-matrix}). In detail: with the identity charts on $W$ and on $\mathbb{R}^k$, the coordinate representation of $F$ is $F$ itself, so Theorem~\ref{lem:differential-matrix} says the matrix of $F_{*p}$ in the coordinate bases is $F'(p)$. A linear map is onto $T_{F(p)}\mathbb{R}^k$ iff its rank is $k$, and its rank is that of its matrix (Proposition~\ref{fact:linalg}(3)); so $F_{*p}$ is onto (Definition~\ref{def:regular-critical-value}) iff $F'(p)$ has rank $k$ (Definition~\ref{def:regular-value}). Hence Theorem~\ref{thm:rvt-manifolds} applies to $F : W \to \mathbb{R}^k$, and $S$ is a regular submanifold of $W$ of codimension $k$.
 
-(1) Let $p \in S$. As in the construction of the graph charts, after reordering the coordinates write the points of $\mathbb{R}^{n+k}$ as $(x, y) \in \mathbb{R}^n \times \mathbb{R}^k$ with $\partial F/\partial y\,(p)$ invertible, so that the graph chart near $p$ is $(x, y) \mapsto x$ on $S$. (Here $x = x_I$, $y = x_J$ in the notation of the construction before Proposition~\ref{prop:level-set-smooth}, and the graph chart is $\varphi_J = \pi_I|_{U_J}$. The reordering is a permutation $P$ of coordinates; the chart produced below is then $\Phi \circ P$, with the same last $k$ components, a smooth chart by Lemma~\ref{lem:smooth-chart-modify}: (2), applied to the identity chart with the linear isomorphism $h = P$, and (1), restricting to an open set, make $P$ a smooth chart on $P^{-1}(U)$, and (2) again, with the diffeomorphism $h = \Phi|_U$, gives $\Phi \circ P$. We suppress $P$.) Let $\Phi(x, y) = (x, F(x, y) - c)$. Its Jacobian at $p$ is $\begin{pmatrix} I_n & 0 \\ \partial F/\partial x & \partial F/\partial y \end{pmatrix}$, which is invertible: it is block lower triangular, so its determinant is $\det I_n \cdot \det\big(\partial F/\partial y\,(p)\big) \ne 0$. So by the inverse function theorem (Theorem~\ref{thm:inverse-function}, with $\Phi$ on $W$ and $a = p$) $\Phi$ restricts to a diffeomorphism of an open $U \ni p$ onto an open set, and by Lemma~\ref{lem:diffeo-chart} (with $M = W$, the diffeomorphism being one of manifolds by Proposition~\ref{prop:diffeo-agree}) it is a smooth chart of $W$. Its last $k$ components are $F - c$, which vanish exactly on $S \cap U$, so $\Phi$ is adapted, and its induced chart is $\Phi_S = x|_{S \cap U}$: the graph chart. More precisely, $\Phi_S$ and the graph chart $\varphi_J$ are both restrictions of the projection $(x, y) \mapsto x$, so they agree on $S \cap U \cap U_J$, an open neighbourhood of $p$ in $S$. The same construction works at every point $p'$ of the graph chart's domain $U_J$, with the same splitting $(x, y)$: there $S$ is the graph $y = h_J(x)$, and differentiating $F(x, h_J(x)) = c$ gives $\partial F/\partial x = -\,\partial F/\partial y \cdot h_J'$, so $F'(p') = \partial F/\partial y\,(p') \cdot \big({-h_J'} \mid I_k\big)$; as $F'(p')$ has rank $k$, the $k \times k$ matrix $\partial F/\partial y\,(p')$ has rank $k$, i.e.\ is invertible. So near each of its points, every graph chart is an induced chart. Induced charts are pairwise compatible, and smoothness of a transition map is local, so every graph chart is compatible with every induced chart, and the two atlases determine the same maximal atlas (Theorem~\ref{thm:maximal-atlas}). In detail: let $(U_J, \varphi_J)$ be a graph chart and $(V \cap S, \psi_S)$ an induced chart. Near each point $\varphi_J(p')$ of the domain of $\psi_S \circ \varphi_J^{-1}$, by what was just shown, $\varphi_J$ agrees with an induced chart $\Phi_S$ on an open neighbourhood $O$ of $p'$ in $S$; on $\varphi_J(O \cap V)$ the map $\psi_S \circ \varphi_J^{-1}$ equals $\psi_S \circ \Phi_S^{-1}$, a transition map between induced charts, smooth by Proposition~\ref{prop:submanifold-structure}(2). The same holds for $\varphi_J \circ \psi_S^{-1}$ near each point. So the two charts are compatible, the union of the two atlases is an atlas, and both generate the maximal atlas containing it.
+(1) Let $p \in S$. As in the construction of the graph charts, after reordering the coordinates write the points of $\mathbb{R}^{n+k}$ as $(x, y) \in \mathbb{R}^n \times \mathbb{R}^k$ with $\partial F/\partial y\,(p)$ invertible, so that the graph chart near $p$ is $(x, y) \mapsto x$ on $S$. (Here $x = x_I$, $y = x_J$ in the notation of the construction before Proposition~\ref{prop:level-set-smooth}, and the graph chart is $\varphi_J = \pi_I|_{U_J}$. The reordering is a permutation $P$ of coordinates; the chart produced below is then $\Phi \circ P$, with the same last $k$ components, a smooth chart by Lemma~\ref{lem:smooth-chart-modify}: (2), applied to the identity chart with the linear isomorphism $h = P$, and (1), restricting to an open set, make $P$ a smooth chart on $P^{-1}(U)$, and (2) again, with the diffeomorphism $h = \Phi|_U$, gives $\Phi \circ P$. We suppress $P$.) Let $\Phi(x, y) = (x, F(x, y) - c)$. Its Jacobian at $p$ is $\begin{pmatrix} I_n & 0 \\ \partial F/\partial x & \partial F/\partial y \end{pmatrix}$, which is invertible: it is block lower triangular, so its determinant is $\det I_n \cdot \det\big(\partial F/\partial y\,(p)\big) \ne 0$. Written out, with $x = (x^1, \ldots, x^n)$, $y = (y^1, \ldots, y^k)$, $F = (F^1, \ldots, F^k)$ and all partials at $p$,
+\[
+\Phi'(p) = \left(\begin{array}{ccc|ccc} 1 & \cdots & 0 & 0 & \cdots & 0 \\ \vdots & \ddots & \vdots & \vdots & & \vdots \\ 0 & \cdots & 1 & 0 & \cdots & 0 \\ \hline \dfrac{\partial F^1}{\partial x^1} & \cdots & \dfrac{\partial F^1}{\partial x^n} & \dfrac{\partial F^1}{\partial y^1} & \cdots & \dfrac{\partial F^1}{\partial y^k} \\ \vdots & & \vdots & \vdots & & \vdots \\ \dfrac{\partial F^k}{\partial x^1} & \cdots & \dfrac{\partial F^k}{\partial x^n} & \dfrac{\partial F^k}{\partial y^1} & \cdots & \dfrac{\partial F^k}{\partial y^k} \end{array}\right) = \begin{pmatrix} I_n & 0 \\ \dfrac{\partial F}{\partial x} & \dfrac{\partial F}{\partial y} \end{pmatrix} .
+\] So by the inverse function theorem (Theorem~\ref{thm:inverse-function}, with $\Phi$ on $W$ and $a = p$) $\Phi$ restricts to a diffeomorphism of an open $U \ni p$ onto an open set, and by Lemma~\ref{lem:diffeo-chart} (with $M = W$, the diffeomorphism being one of manifolds by Proposition~\ref{prop:diffeo-agree}) it is a smooth chart of $W$. Its last $k$ components are $F - c$, which vanish exactly on $S \cap U$, so $\Phi$ is adapted, and its induced chart is $\Phi_S = x|_{S \cap U}$: the graph chart. More precisely, $\Phi_S$ and the graph chart $\varphi_J$ are both restrictions of the projection $(x, y) \mapsto x$, so they agree on $S \cap U \cap U_J$, an open neighbourhood of $p$ in $S$. The same construction works at every point $p'$ of the graph chart's domain $U_J$, with the same splitting $(x, y)$: there $S$ is the graph $y = h_J(x)$, and differentiating $F(x, h_J(x)) = c$ gives $\partial F/\partial x = -\,\partial F/\partial y \cdot h_J'$, so $F'(p') = \partial F/\partial y\,(p') \cdot \big({-h_J'} \mid I_k\big)$; as $F'(p')$ has rank $k$, the $k \times k$ matrix $\partial F/\partial y\,(p')$ has rank $k$, i.e.\ is invertible. So near each of its points, every graph chart is an induced chart. Induced charts are pairwise compatible, and smoothness of a transition map is local, so every graph chart is compatible with every induced chart, and the two atlases determine the same maximal atlas (Theorem~\ref{thm:maximal-atlas}). In detail: let $(U_J, \varphi_J)$ be a graph chart and $(V \cap S, \psi_S)$ an induced chart. Near each point $\varphi_J(p')$ of the domain of $\psi_S \circ \varphi_J^{-1}$, by what was just shown, $\varphi_J$ agrees with an induced chart $\Phi_S$ on an open neighbourhood $O$ of $p'$ in $S$; on $\varphi_J(O \cap V)$ the map $\psi_S \circ \varphi_J^{-1}$ equals $\psi_S \circ \Phi_S^{-1}$, a transition map between induced charts, smooth by Proposition~\ref{prop:submanifold-structure}(2). The same holds for $\varphi_J \circ \psi_S^{-1}$ near each point. So the two charts are compatible, the union of the two atlases is an atlas, and both generate the maximal atlas containing it.
 
 (2) Let $v \in T^{\geo}_pS$, and let $\gamma$ be the lifted line of Definition~\ref{def:Dv}, a curve in $S$ with $\gamma(0) = p$ and $\gamma'(0) = v$, so that $D_v = D_\gamma$. (It is smooth into $\mathbb{R}^{n+k}$ with values in $S$, hence smooth into $S$ by Lemma~\ref{lem:level-set-maps}(2); by (1) the structure there is the induced one, so $T_pS$ and $\iota_{*p}$ are unambiguous. And $D_v = D_\gamma$ because both send $f$ to $\frac{d}{dt}|_{t=0} f(\gamma(t))$, by Definitions~\ref{def:Dv} and~\ref{def:velocity}.) By Corollary~\ref{cor:velocity-composite}, $\iota_{*p}D_v = D_{\iota \circ \gamma}$, the derivation $g \mapsto (g \circ \gamma)'(0) = \nabla g(p) \cdot v$ at $p$ --- the directional derivative in the direction $v$, which is $v$ under Corollary~\ref{cor:tangent-vs}. In detail, for a germ $[g]$ at $p$ on $W$, by Definition~\ref{def:velocity} and the chain rule (Definition~\ref{def:jacobian}),
 \[
@@ -10428,7 +10818,11 @@ If $S_1 \pitchfork S_2$ in $N$, then $S_1 \cap S_2$ is a regular submanifold of 
 \[
 \dim(K_1 \cap K_2) = \dim K_1 + \dim K_2 - \dim(K_1 + K_2) = 2n - k_1 - k_2 - \dim(K_1 + K_2).
 \]
-So $K_1 + K_2 = T_qN$ if and only if $\dim \ker dG_q = n - k_1 - k_2$, if and only if $dG_q$ has rank $k_1 + k_2$, that is, is onto. Since $S_1 \pitchfork S_2$, this holds at every point of $G^{-1}(0)$: $0$ is a regular value of $G$.
+So $K_1 + K_2 = T_qN$ if and only if $\dim \ker dG_q = n - k_1 - k_2$, if and only if $dG_q$ has rank $k_1 + k_2$, that is, is onto. In a chart $(x^1, \ldots, x^n)$ at $q$, with $G_i = (G_i^1, \ldots, G_i^{k_i})$, the matrix of $dG_q$ is the $(k_1 + k_2) \times n$ matrix that stacks those of $(dG_1)_q$ and $(dG_2)_q$:
+\[
+\left(\begin{array}{ccc} \dfrac{\partial G_1^1}{\partial x^1}(q) & \cdots & \dfrac{\partial G_1^1}{\partial x^n}(q) \\ \vdots & & \vdots \\ \dfrac{\partial G_1^{k_1}}{\partial x^1}(q) & \cdots & \dfrac{\partial G_1^{k_1}}{\partial x^n}(q) \\ \hline \dfrac{\partial G_2^1}{\partial x^1}(q) & \cdots & \dfrac{\partial G_2^1}{\partial x^n}(q) \\ \vdots & & \vdots \\ \dfrac{\partial G_2^{k_2}}{\partial x^1}(q) & \cdots & \dfrac{\partial G_2^{k_2}}{\partial x^n}(q) \end{array}\right) ,
+\]
+so a vector is in its kernel exactly when it is killed by both blocks. Since $S_1 \pitchfork S_2$, this holds at every point of $G^{-1}(0)$: $0$ is a regular value of $G$.
 
 \emph{Conclusion.} By Theorem~\ref{thm:rvt-manifolds}, $G^{-1}(0) = W \cap S_1 \cap S_2$ is a regular submanifold of $W$ of codimension $k_1 + k_2$, with $T_q(S_1 \cap S_2) = \ker dG_q = T_qS_1 \cap T_qS_2$. Being a regular submanifold is a local condition (slice charts at each point), and $W$ is open in $N$; $q$ was arbitrary, so $S_1 \cap S_2$ is a regular submanifold of $N$ of codimension $k_1 + k_2$.
 \end{proof}
@@ -10968,7 +11362,11 @@ Let $E = \big(\mathbb{R} \times (-1, 1)\big)/{\sim}$ and $\pi[s, t] = [s]$ be as
 
 \emph{(1) $E$ is a topological $2$-manifold.} The sets $W_0, W_{1/2}$ cover $E$: every $s \in \mathbb{R}$ has $s - n \in (0, 1)$ for some $n \in \mathbb{Z}$ unless $s$ is an integer, and then $s - n = 1 \in I_{1/2}$ for $n = s - 1$; and $q(s, t) = q\big(g_{-n}(s, t)\big)$. \emph{Hausdorff:} let $x \ne y$ in $E$. If both lie in one $W_a$, separate them there, $W_a$ being homeomorphic to a subset of $\mathbb{R}^2$ and open in $E$. Otherwise one lies in $W_0 \setminus W_{1/2} = q\big(\{\tfrac12\} \times (-1, 1)\big)$ and the other in $W_{1/2} \setminus W_0 = q\big(\{1\} \times (-1, 1)\big)$; then $q\big((\tfrac14, \tfrac34) \times (-1, 1)\big)$ and $q\big((\tfrac34, \tfrac54) \times (-1, 1)\big)$ are open neighbourhoods of them, disjoint because two of their points with first coordinates $s \in (\tfrac14, \tfrac34)$, $s' \in (\tfrac34, \tfrac54)$ have $0 < s' - s < 1$, not an integer. \emph{Second countable:} each $W_a$ has a countable basis of sets open in $W_a$, hence in $E$, and the union of the two bases is a countable basis of $E$. With the charts $\psi_a$, $E$ is a topological $2$-manifold (Definition~\ref{def:manifold}).
 
-\emph{(1) The transition.} $W_0 \cap W_{1/2} = q\big(((0, \tfrac12) \cup (\tfrac12, 1)) \times (-1, 1)\big)$. Let $(s, t) \in \psi_0(W_0 \cap W_{1/2})$. If $\tfrac12 < s < 1$, then $s \in I_{1/2}$ and $\psi_{1/2}(q(s, t)) = (s, t)$. If $0 < s < \tfrac12$, then $q(s, t) = q\big(g_1(s, t)\big) = q(s + 1, -t)$ with $s + 1 \in I_{1/2}$, so $\psi_{1/2}(q(s, t)) = (s + 1, -t)$. Both branches are smooth, and so is the inverse, $(s, t) \mapsto (s, t)$ or $(s - 1, -t)$. So the two charts are compatible (Definition~\ref{def:compatible}) and form a smooth atlas (Theorem~\ref{thm:maximal-atlas}).
+\emph{(1) The transition.} $W_0 \cap W_{1/2} = q\big(((0, \tfrac12) \cup (\tfrac12, 1)) \times (-1, 1)\big)$. Let $(s, t) \in \psi_0(W_0 \cap W_{1/2})$. If $\tfrac12 < s < 1$, then $s \in I_{1/2}$ and $\psi_{1/2}(q(s, t)) = (s, t)$. If $0 < s < \tfrac12$, then $q(s, t) = q\big(g_1(s, t)\big) = q(s + 1, -t)$ with $s + 1 \in I_{1/2}$, so $\psi_{1/2}(q(s, t)) = (s + 1, -t)$. Both branches are smooth, and so is the inverse, $(s, t) \mapsto (s, t)$ or $(s - 1, -t)$. \textit{(Computed; not from lecture.)} Their Jacobians are constant on each branch,
+\[
+\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \quad \big(\tfrac12 < s < 1\big), \qquad \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \quad \big(0 < s < \tfrac12\big),
+\]
+the second being the half-twist $t \mapsto -t$. So the two charts are compatible (Definition~\ref{def:compatible}) and form a smooth atlas (Theorem~\ref{thm:maximal-atlas}).
 
 \emph{The base.} $h$ is well defined and bijective because $(\cos 2\pi s, \sin 2\pi s)$ depends exactly on $s$ modulo $1$; $\mathbb{R}/\mathbb{Z}$ carries the topology and smooth structure of $S^1$ transported along $h$ (Proposition~\ref{prop:transport-structure}). For $s \in I_0 = (0, 1)$ the angle $2\pi s$ lies in $(0, 2\pi)$, and for $s \in I_{1/2}$ in $(\pi, 3\pi)$; so the maps $\chi_a : U_a \to I_a$, $\chi_a[s] = s$ ($s \in I_a$), are $\chi_0 = \tfrac{1}{2\pi}\,\varphi_a \circ h$ and $\chi_{1/2} = \tfrac{1}{2\pi}\,\varphi_b \circ h$, with $\varphi_a, \varphi_b$ the angle charts of Example~\ref{ex:circle-angle}. Rescaling by the diffeomorphism $\theta \mapsto \theta/2\pi$ of $\mathbb{R}$ keeps a smooth chart smooth (Lemma~\ref{lem:smooth-chart-modify}(2), applied to the smooth charts $\varphi_a \circ h$ and $\varphi_b \circ h$ of $\mathbb{R}/\mathbb{Z}$, with the transported structure, and to this rescaling as the diffeomorphism), so $\chi_0, \chi_{1/2}$ are smooth charts of $\mathbb{R}/\mathbb{Z}$ with domains $U_0, U_{1/2}$.
 
@@ -11100,7 +11498,11 @@ Grouping the columns as $(r^1, \ldots, r^m)$, $(r^{m+1}, \ldots, r^n)$, $(v^1, \
 \[
 \tilde F'\big(\varphi(q), v\big) = \begin{pmatrix} 0_{(n-m) \times m} & I_{n-m} & 0_{(n-m) \times n} \\ \ast & \ast & X(q) \end{pmatrix},
 \]
-where the entries $\ast$ are the second-derivative sums above, and $X(q)$ is the $m \times n$ matrix whose $j$-th row is $X_j(q)^{\mathsf T} = \big(X_j^1(q), \ldots, X_j^n(q)\big)$ (recall $\tilde X_j(\varphi(q)) = X_j(q)$).
+where the entries $\ast$ are the second-derivative sums above, and $X(q)$ is the $m \times n$ matrix whose $j$-th row is $X_j(q)^{\mathsf T} = \big(X_j^1(q), \ldots, X_j^n(q)\big)$ (recall $\tilde X_j(\varphi(q)) = X_j(q)$). Written out, with the partials of the $\tilde y^j$ taken at $(\varphi(q), v)$,
+\[
+\tilde F'\big(\varphi(q), v\big) = \left(\begin{array}{ccc|ccc|ccc} 0 & \cdots & 0 & 1 & \cdots & 0 & 0 & \cdots & 0 \\ \vdots & & \vdots & \vdots & \ddots & \vdots & \vdots & & \vdots \\ 0 & \cdots & 0 & 0 & \cdots & 1 & 0 & \cdots & 0 \\ \hline \dfrac{\partial \tilde y^1}{\partial r^1} & \cdots & \dfrac{\partial \tilde y^1}{\partial r^m} & \dfrac{\partial \tilde y^1}{\partial r^{m+1}} & \cdots & \dfrac{\partial \tilde y^1}{\partial r^n} & X_1^1(q) & \cdots & X_1^n(q) \\ \vdots & & \vdots & \vdots & & \vdots & \vdots & & \vdots \\ \dfrac{\partial \tilde y^m}{\partial r^1} & \cdots & \dfrac{\partial \tilde y^m}{\partial r^m} & \dfrac{\partial \tilde y^m}{\partial r^{m+1}} & \cdots & \dfrac{\partial \tilde y^m}{\partial r^n} & X_m^1(q) & \cdots & X_m^n(q) \end{array}\right) ,
+\]
+with $n - m$ rows above the line and $m$ below, and $m$, $n - m$, $n$ columns in the three groups.
 
 \emph{It has rank $n$.} Write the $s$-th of the first $n - m$ rows as $(0, e_s, 0)$, with $e_s \in \mathbb{R}^{n-m}$, and the $j$-th of the last $m$ rows as $(\ast, \ast, X_j(q)^{\mathsf T})$, and suppose a linear combination of the rows vanishes:
 \[
@@ -11157,7 +11559,10 @@ the first equality because $\pi(q, v) = q$ and $q \in M$ for every $(q, v) \in \
 \[
 0 = c \cdot \big(J(q) J(q)^{\mathsf T} c\big) = c^{\mathsf T} J(q) J(q)^{\mathsf T} c = \big(J(q)^{\mathsf T} c\big) \cdot \big(J(q)^{\mathsf T} c\big) = \big|J(q)^{\mathsf T} c\big|^2 ,
 \]
-so $J(q)^{\mathsf T} c = 0$, and $c = 0$ by injectivity. A square matrix with zero kernel is invertible (Proposition~\ref{fact:linalg}(1)). ($J J^{\mathsf T}$ is the Gram matrix of the gradients: its $(s, s')$ entry is $\nabla G^s(q) \cdot \nabla G^{s'}(q)$.)
+so $J(q)^{\mathsf T} c = 0$, and $c = 0$ by injectivity. A square matrix with zero kernel is invertible (Proposition~\ref{fact:linalg}(1)). ($J J^{\mathsf T}$ is the Gram matrix of the gradients: its $(s, s')$ entry is $\nabla G^s(q) \cdot \nabla G^{s'}(q)$.) Written out,
+\[
+J(q) J(q)^{\mathsf T} = \begin{pmatrix} \nabla G^1(q) \cdot \nabla G^1(q) & \cdots & \nabla G^1(q) \cdot \nabla G^{n-m}(q) \\ \vdots & \ddots & \vdots \\ \nabla G^{n-m}(q) \cdot \nabla G^1(q) & \cdots & \nabla G^{n-m}(q) \cdot \nabla G^{n-m}(q) \end{pmatrix} .
+\]
 
 \emph{(2) The map and its inverse.} For $q \in U$ put $A(q) = \big(J(q) J(q)^{\mathsf T}\big)^{-1} J(q)$, an $(n-m) \times n$ matrix. Its entries are smooth functions on $U$: the entries of $J(q)$ are partial derivatives $\partial x^{m+s}/\partial r^l(q)$ of components of the smooth chart $\varphi$; those of $J J^{\mathsf T}$ are sums of products of these; and by the cofactor formula $(J J^{\mathsf T})^{-1} = \adj(J J^{\mathsf T}) / \det(J J^{\mathsf T})$, each entry of the inverse is a polynomial in the entries of $J J^{\mathsf T}$ divided by $\det(J J^{\mathsf T})$, which is smooth and, by (1), nowhere zero on $U$. Define
 \[
@@ -11244,7 +11649,7 @@ so it lies in $(T^{\geo}_pM)^\perp$; and $\dim (T^{\geo}_pM)^\perp = n - m = 2 -
 \[
 (T^{\geo}_pM)^\perp = \Span\{(-2a, 1)\}, \qquad \mathcal{N} = \Big\{\, \big((a, a^2),\ \lambda(-2a, 1)\big) : a, \lambda \in \mathbb{R} \,\Big\}.
 \]
-Note that $(-2a, 1) = \nabla g(p)$, as Proposition~\ref{prop:normal-bundle-fibration}(1) predicts: $\varphi(x, y) = (x, y - x^2)$ is a chart of $\mathbb{R}^2$ adapted to $M$ with $U = \mathbb{R}^2$ and $G = g$. Indeed $\varphi$ is a diffeomorphism of $\mathbb{R}^2$ onto itself, smooth with the smooth inverse $(x, z) \mapsto (x, z + x^2)$, so $(\mathbb{R}^2, \varphi) = (\mathbb{R}^2, \varphi \circ \mathrm{id})$ is a smooth chart by Lemma~\ref{lem:smooth-chart-modify}(2), applied to the identity chart of $\mathbb{R}^2$ and the diffeomorphism $\varphi$; and its second coordinate $y - x^2 = g(x, y)$ vanishes exactly on $M$ (Definition~\ref{def:adapted-chart}, with $k = 1$). It is the chart $\Phi$ of the proof of Proposition~\ref{prop:submanifold-euclidean}, graph $\Rightarrow$ slice, for $h(x) = x^2$.
+Note that $(-2a, 1) = \nabla g(p)$, as Proposition~\ref{prop:normal-bundle-fibration}(1) predicts: $\varphi(x, y) = (x, y - x^2)$ is a chart of $\mathbb{R}^2$ adapted to $M$ with $U = \mathbb{R}^2$ and $G = g$. \textit{(Computed; not from lecture.)} Its Jacobian is $\varphi'(x, y) = \begin{pmatrix} 1 & 0 \\ -2x & 1 \end{pmatrix}$, with determinant $1$; the second row is $\nabla g(x, y) = (-2x, 1)$. Indeed $\varphi$ is a diffeomorphism of $\mathbb{R}^2$ onto itself, smooth with the smooth inverse $(x, z) \mapsto (x, z + x^2)$, so $(\mathbb{R}^2, \varphi) = (\mathbb{R}^2, \varphi \circ \mathrm{id})$ is a smooth chart by Lemma~\ref{lem:smooth-chart-modify}(2), applied to the identity chart of $\mathbb{R}^2$ and the diffeomorphism $\varphi$; and its second coordinate $y - x^2 = g(x, y)$ vanishes exactly on $M$ (Definition~\ref{def:adapted-chart}, with $k = 1$). It is the chart $\Phi$ of the proof of Proposition~\ref{prop:submanifold-euclidean}, graph $\Rightarrow$ slice, for $h(x) = x^2$.
 
 \emph{A global parametrization of $\mathcal{N}$.} Define
 \[
@@ -11389,9 +11794,15 @@ The steps are the lecture's, in the lecture's order; sentences marked \textit{(C
 
 \emph{1. Start with any coordinates.} Take charts $(U_0, \varphi_0 = (x^1, \ldots, x^m))$ at $p$ and $(V_0, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U_0) \subseteq V_0$, shrinking $U_0$ if necessary, and write $F^j = y^j \circ F$. \textit{(Completion.)} Such charts exist by Lemma~\ref{lem:charts-around-map}. Shrinking means: replace $U_0$ by $U_0 \cap F^{-1}(V_0)$, which is open because $F$ is continuous and contains $p$; the restriction of the smooth chart $\varphi_0$ to it is again a smooth chart (Lemma~\ref{lem:smooth-chart-modify}(1); its transition maps are restrictions of the old ones). The components $F^j : U_0 \to \mathbb{R}$ are smooth, since $F^j \circ \varphi_0^{-1}$ is the $j$-th component of the smooth coordinate representation $\psi \circ F \circ \varphi_0^{-1}$ (Proposition~\ref{prop:upstairs-downstairs}).
 
-\emph{2. The Jacobian is taller than wide.} $J = \big[\partial F^j/\partial x^i(p)\big]$ is the matrix of $F_{*p}$ (Theorem~\ref{lem:differential-matrix}): $n$ rows and $m$ columns, ``fewer columns than rows.'' $F_{*p}$ is injective, so $J$ has rank $m$: it has $m$ linearly independent row vectors. \textit{(Completion.)} By Theorem~\ref{lem:differential-matrix}, $F_{*p}(\partial/\partial x^i|_p) = \sum_j \partial F^j/\partial x^i(p)\, \partial/\partial y^j|_{F(p)}$, so the $i$-th column of $J$ holds the coordinates of $F_{*p}(\partial/\partial x^i|_p)$, and $J$ is the matrix of $F_{*p}$ in the coordinate bases (Proposition~\ref{fact:linalg}(3)). Since $F_{*p}$ is injective, $\ker F_{*p} = 0$, and rank--nullity (Proposition~\ref{fact:linalg}(1)) gives $\operatorname{rank} F_{*p} = \dim T_pM = m$. So $J$ has rank $m$, and so does its transpose (Proposition~\ref{fact:linalg}(3)), whose columns are the rows of $J$: among the $n$ rows of $J$ there are $m$ linearly independent ones.
+\emph{2. The Jacobian is taller than wide.} $J = \big[\partial F^j/\partial x^i(p)\big]$ is the matrix of $F_{*p}$ (Theorem~\ref{lem:differential-matrix}): $n$ rows and $m$ columns, ``fewer columns than rows.'' Written out,
+\[
+J = \begin{pmatrix} \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\ \vdots & & \vdots \\ \vdots & & \vdots \\ \dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p) \end{pmatrix} .
+\] $F_{*p}$ is injective, so $J$ has rank $m$: it has $m$ linearly independent row vectors. \textit{(Completion.)} By Theorem~\ref{lem:differential-matrix}, $F_{*p}(\partial/\partial x^i|_p) = \sum_j \partial F^j/\partial x^i(p)\, \partial/\partial y^j|_{F(p)}$, so the $i$-th column of $J$ holds the coordinates of $F_{*p}(\partial/\partial x^i|_p)$, and $J$ is the matrix of $F_{*p}$ in the coordinate bases (Proposition~\ref{fact:linalg}(3)). Since $F_{*p}$ is injective, $\ker F_{*p} = 0$, and rank--nullity (Proposition~\ref{fact:linalg}(1)) gives $\operatorname{rank} F_{*p} = \dim T_pM = m$. So $J$ has rank $m$, and so does its transpose (Proposition~\ref{fact:linalg}(3)), whose columns are the rows of $J$: among the $n$ rows of $J$ there are $m$ linearly independent ones.
 
-\emph{3. Relabel the $y$'s.} Reordering the coordinates of $\psi$ --- again a smooth chart, by Lemma~\ref{lem:smooth-chart-modify}(2) with a permutation of coordinates, a linear isomorphism of $\mathbb{R}^n$, as the diffeomorphism --- we may assume the top $m \times m$ block $A$ of $J$ is invertible. \textit{(Completion.)} Let rows $j_1, \ldots, j_m$ of $J$ be linearly independent, and let $P : \mathbb{R}^n \to \mathbb{R}^n$ be a permutation of coordinates moving positions $j_1, \ldots, j_m$ to positions $1, \ldots, m$. Replacing $\psi$ by $P \circ \psi$ lists the same coordinate functions $y^j$ in a new order; so it lists the components $F^j = y^j \circ F$, and hence the rows of $J$, in the same new order. Afterwards rows $1, \ldots, m$ of $J$ are linearly independent, so the top block $A$, which consists of them, is an $m \times m$ matrix of rank $m$, that is, invertible. We keep the names $\psi = (y^1, \ldots, y^n)$, $F^j$ and $J$ for the reordered chart, components and matrix.
+\emph{3. Relabel the $y$'s.} Reordering the coordinates of $\psi$ --- again a smooth chart, by Lemma~\ref{lem:smooth-chart-modify}(2) with a permutation of coordinates, a linear isomorphism of $\mathbb{R}^n$, as the diffeomorphism --- we may assume the top $m \times m$ block $A$ of $J$ is invertible:
+\[
+J = \left(\begin{array}{ccc} \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial F^m}{\partial x^1}(p) & \cdots & \dfrac{\partial F^m}{\partial x^m}(p) \\ \hline \dfrac{\partial F^{m+1}}{\partial x^1}(p) & \cdots & \dfrac{\partial F^{m+1}}{\partial x^m}(p) \\ \vdots & & \vdots \\ \dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p) \end{array}\right) = \begin{pmatrix} A \\ \ast \end{pmatrix}, \qquad A \ (m \times m) \text{ invertible}.
+\] \textit{(Completion.)} Let rows $j_1, \ldots, j_m$ of $J$ be linearly independent, and let $P : \mathbb{R}^n \to \mathbb{R}^n$ be a permutation of coordinates moving positions $j_1, \ldots, j_m$ to positions $1, \ldots, m$. Replacing $\psi$ by $P \circ \psi$ lists the same coordinate functions $y^j$ in a new order; so it lists the components $F^j = y^j \circ F$, and hence the rows of $J$, in the same new order. Afterwards rows $1, \ldots, m$ of $J$ are linearly independent, so the top block $A$, which consists of them, is an $m \times m$ matrix of rank $m$, that is, invertible. We keep the names $\psi = (y^1, \ldots, y^n)$, $F^j$ and $J$ for the reordered chart, components and matrix.
 
 \emph{4. The first $m$ components of $F$ are coordinates on $M$.} $A$ is the Jacobian at $p$, in the $x$-coordinates, of the map $U_0 \to \mathbb{R}^m$ that sends $q$ to the first $m$ components $\big(F^1(q), \ldots, F^m(q)\big)$ (Proposition~\ref{prop:upstairs-downstairs}). \textit{(Completion.)} Read in the $x$-coordinates, this map is $\Phi = (F^1, \ldots, F^m) \circ \varphi_0^{-1} : \varphi_0(U_0) \to \mathbb{R}^m$, with components $F^j \circ \varphi_0^{-1}$. By Definition~\ref{def:coordinate-derivation}, $\partial F^j/\partial x^i(p) = \partial (F^j \circ \varphi_0^{-1})/\partial r^i\big(\varphi_0(p)\big)$, so
 \[
@@ -11417,7 +11828,11 @@ with $G = (G^1, \ldots, G^{n-m})$ smooth on $\tilde\varphi(U)$: $G^k = r^{m+k} \
 \[
 \tilde y^i = y^i \quad (1 \le i \le m), \qquad \tilde y^i = y^i - G^{i-m}\big(y^1, \ldots, y^m\big) \quad (m+1 \le i \le n),
 \]
-and $\tilde\psi = (\tilde y^1, \ldots, \tilde y^n)$. \textit{(Completion.)} This is $\tilde\psi = \Sigma \circ \psi$, where $\Sigma(y_a, y_b) = \big(y_a, \, y_b - G(y_a)\big)$ for $y_a = (y^1, \ldots, y^m)$ and $y_b = (y^{m+1}, \ldots, y^n)$: the components of $\Sigma \circ \psi$ are exactly the $\tilde y^i$ above. $\Sigma$ is defined on $\tilde\varphi(U) \times \mathbb{R}^{n-m}$, and is a diffeomorphism of that open set onto itself, with inverse $(y_a, z) \mapsto (y_a, z + G(y_a))$. In detail: $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ is open in $\mathbb{R}^n$, a product of open sets; $\Sigma$ and the proposed inverse both leave the first block $y_a$ unchanged, so both map this set into itself; the two composites are the identity, since $\big(y_a, (y_b - G(y_a)) + G(y_a)\big) = (y_a, y_b)$ and $\big(y_a, (z + G(y_a)) - G(y_a)\big) = (y_a, z)$; and both are smooth, their components being $y_a$ and $y_b \mp G(y_a)$ with $G$ smooth (step~5). So on the open set $V = \psi^{-1}\big(\tilde\varphi(U) \times \mathbb{R}^{n-m}\big) \cap V_0$ the map $\tilde\psi$ is a smooth chart. In detail: $V$ is open, the preimage of an open set under the continuous $\psi$, and $V \subseteq V_0$, so $(V, \psi|_V)$ is a smooth chart (Lemma~\ref{lem:smooth-chart-modify}(1)), whose image $\psi(V) = \psi(V_0) \cap \big(\tilde\varphi(U) \times \mathbb{R}^{n-m}\big)$ lies in the domain of $\Sigma$. On $V$, $\tilde\psi = \Sigma \circ \psi|_V$, so $(V, \tilde\psi)$ is a smooth chart by Lemma~\ref{lem:smooth-chart-modify}(2), applied to $(V, \psi|_V)$ and the diffeomorphism $\Sigma$ of $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ onto itself. (Equivalently: $\psi|_V$ is a diffeomorphism of $V$ onto the open set $\psi(V)$ (Proposition~\ref{prop:chart-diffeo}, for the restricted chart), and $\Sigma$ restricts to a diffeomorphism of $\psi(V)$ onto $\Sigma(\psi(V))$, which is open because $\Sigma$ is a homeomorphism of the open set $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ onto itself (Proposition~\ref{fact:cont}(3)); so $\tilde\psi$ is a diffeomorphism onto an open subset of $\mathbb{R}^n$, hence a chart by Lemma~\ref{lem:diffeo-chart}.) And $F(U) \subseteq V$, because the first $m$ coordinates of $\psi(F(u))$ are $\tilde\varphi(u) \in \tilde\varphi(U)$: by step~5, $\psi(F(u)) = \hat F(\tilde\varphi(u)) = \big(\tilde\varphi(u), G(\tilde\varphi(u))\big)$, and $F(u) \in V_0$. In particular $F(p) \in V$.
+and $\tilde\psi = (\tilde y^1, \ldots, \tilde y^n)$. \textit{(Completion.)} This is $\tilde\psi = \Sigma \circ \psi$, where $\Sigma(y_a, y_b) = \big(y_a, \, y_b - G(y_a)\big)$ for $y_a = (y^1, \ldots, y^m)$ and $y_b = (y^{m+1}, \ldots, y^n)$: the components of $\Sigma \circ \psi$ are exactly the $\tilde y^i$ above. $\Sigma$ is defined on $\tilde\varphi(U) \times \mathbb{R}^{n-m}$, and is a diffeomorphism of that open set onto itself, with inverse $(y_a, z) \mapsto (y_a, z + G(y_a))$. \textit{(Computed; not from lecture.)} In matrix form its Jacobian is block lower triangular,
+\[
+\Sigma'(y_a, y_b) = \begin{pmatrix} I_m & 0 \\ -DG(y_a) & I_{n-m} \end{pmatrix},
+\]
+with $DG(y_a)$ the $(n-m) \times m$ Jacobian of $G$, so $\det \Sigma' = 1$. In detail: $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ is open in $\mathbb{R}^n$, a product of open sets; $\Sigma$ and the proposed inverse both leave the first block $y_a$ unchanged, so both map this set into itself; the two composites are the identity, since $\big(y_a, (y_b - G(y_a)) + G(y_a)\big) = (y_a, y_b)$ and $\big(y_a, (z + G(y_a)) - G(y_a)\big) = (y_a, z)$; and both are smooth, their components being $y_a$ and $y_b \mp G(y_a)$ with $G$ smooth (step~5). So on the open set $V = \psi^{-1}\big(\tilde\varphi(U) \times \mathbb{R}^{n-m}\big) \cap V_0$ the map $\tilde\psi$ is a smooth chart. In detail: $V$ is open, the preimage of an open set under the continuous $\psi$, and $V \subseteq V_0$, so $(V, \psi|_V)$ is a smooth chart (Lemma~\ref{lem:smooth-chart-modify}(1)), whose image $\psi(V) = \psi(V_0) \cap \big(\tilde\varphi(U) \times \mathbb{R}^{n-m}\big)$ lies in the domain of $\Sigma$. On $V$, $\tilde\psi = \Sigma \circ \psi|_V$, so $(V, \tilde\psi)$ is a smooth chart by Lemma~\ref{lem:smooth-chart-modify}(2), applied to $(V, \psi|_V)$ and the diffeomorphism $\Sigma$ of $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ onto itself. (Equivalently: $\psi|_V$ is a diffeomorphism of $V$ onto the open set $\psi(V)$ (Proposition~\ref{prop:chart-diffeo}, for the restricted chart), and $\Sigma$ restricts to a diffeomorphism of $\psi(V)$ onto $\Sigma(\psi(V))$, which is open because $\Sigma$ is a homeomorphism of the open set $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ onto itself (Proposition~\ref{fact:cont}(3)); so $\tilde\psi$ is a diffeomorphism onto an open subset of $\mathbb{R}^n$, hence a chart by Lemma~\ref{lem:diffeo-chart}.) And $F(U) \subseteq V$, because the first $m$ coordinates of $\psi(F(u))$ are $\tilde\varphi(u) \in \tilde\varphi(U)$: by step~5, $\psi(F(u)) = \hat F(\tilde\varphi(u)) = \big(\tilde\varphi(u), G(\tilde\varphi(u))\big)$, and $F(u) \in V_0$. In particular $F(p) \in V$.
 
 \emph{7. These do the job.} ``We're not changing the first $m$ --- we already have the inclusion here --- but we're fixing the other ones.'' \textit{(Completion.)} For $r \in \tilde\varphi(U)$,
 \[
@@ -11468,7 +11883,10 @@ U \arrow[r, "F"] \arrow[d, "\varphi"'] & V \arrow[d, "\psi"] \\
 \end{tikzcd}
 \end{center}
 
-The immersion normal form, as on the board: the mirror image of the submersion normal form (Theorem~\ref{thm:submersion-normal-form}). There $\tilde F$ forgot the last $m - n$ coordinates; here it appends $n - m$ zeros.
+The immersion normal form, as on the board: the mirror image of the submersion normal form (Theorem~\ref{thm:submersion-normal-form}). There $\tilde F$ forgot the last $m - n$ coordinates; here it appends $n - m$ zeros. \textit{(Computed; not from lecture.)} In Jacobians, at every point, the $n \times m$ matrix here and the $n \times m$ matrix of Theorem~\ref{thm:submersion-normal-form} there (with the letters of each theorem):
+\[
+\tilde F'(r) = \left(\begin{array}{ccc} 1 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & 1 \\ \hline 0 & \cdots & 0 \\ \vdots & & \vdots \\ 0 & \cdots & 0 \end{array}\right) = \begin{pmatrix} I_m \\ 0 \end{pmatrix} \quad \text{(immersion)}, \qquad \tilde F'(r) = \big(I_n \mid 0\big) \quad \text{(submersion)}.
+\]
 
 \textit{Status.} Stated in Lecture~13 --- ``a little bit technical \ldots\ better do it fresh at the beginning of the class'' --- and proved at the start of Lecture~14, above. It is the counterpart of Theorem~\ref{thm:submersion-normal-form}: there $F$ was locally a projection, here it is locally an inclusion.
 
@@ -11514,7 +11932,11 @@ $\gamma : \mathbb{R} \to \mathbb{R}^2$, $\gamma(t) = (t^2 - 1, \ t^3 - t)$, is a
 \begin{proof}
 \textit{(Lecture~13 drew a curve crossing itself and gave the argument below; the specific curve is filled in.)} Three things are claimed: $\gamma$ is an immersion, it is not injective, and its image is not a submanifold.
 
-\emph{Immersion.} $\gamma'(t) = (2t, 3t^2 - 1)$ never vanishes --- the first component vanishes only at $t = 0$, where the second is $-1$ --- so $\gamma$ is an immersion. In detail: in the identity charts of $\mathbb{R}$ (coordinate $r$) and of $\mathbb{R}^2$ (coordinates $r^1, r^2$), Theorem~\ref{lem:differential-matrix} gives
+\emph{Immersion.} $\gamma'(t) = (2t, 3t^2 - 1)$, as a $2 \times 1$ Jacobian
+\[
+\gamma'(t) = \begin{pmatrix} 2t \\ 3t^2 - 1 \end{pmatrix} ,
+\]
+never vanishes --- the first component vanishes only at $t = 0$, where the second is $-1$ --- so $\gamma$ is an immersion. In detail: in the identity charts of $\mathbb{R}$ (coordinate $r$) and of $\mathbb{R}^2$ (coordinates $r^1, r^2$), Theorem~\ref{lem:differential-matrix} gives
 \[
 \gamma_{*t}\Big(\frac{\partial}{\partial r}\Big|_t\Big) = 2t\, \frac{\partial}{\partial r^1}\Big|_{\gamma(t)} + (3t^2 - 1)\, \frac{\partial}{\partial r^2}\Big|_{\gamma(t)} ,
 \]
@@ -11528,7 +11950,11 @@ which is nonzero, because the coordinate derivations are linearly independent (T
 \[
 \gamma_{*1}\Big(\frac{\partial}{\partial r}\Big|_1\Big) = 2\, \frac{\partial}{\partial r^1}\Big|_0 + 2\, \frac{\partial}{\partial r^2}\Big|_0, \qquad \gamma_{*(-1)}\Big(\frac{\partial}{\partial r}\Big|_{-1}\Big) = -2\, \frac{\partial}{\partial r^1}\Big|_0 + 2\, \frac{\partial}{\partial r^2}\Big|_0 ,
 \]
-two linearly independent vectors of $T_0\mathbb{R}^2$: the determinant of their coefficients is $2 \cdot 2 - (-2) \cdot 2 = 8 \neq 0$. Both lie in $\iota_{*0}(T_0C)$. Indeed $\gamma$ is smooth into $\mathbb{R}^2$ with values in $C$, so $\gamma = \iota \circ c$ with $c : \mathbb{R} \to C$ smooth (Lemma~\ref{lem:maps-into-submanifold}(2)), and by the Chain Rule (Theorem~\ref{prop:pushforward-functorial}) $\gamma_{*t} = \iota_{*0} \circ c_{*t}$ for $t = \pm 1$, where $\gamma(\pm 1) = 0$. By Proposition~\ref{prop:submanifold-tangent}, $\iota_{*0}(T_0C)$ is spanned by the first $2 - k$ coordinate derivations of an adapted chart, so it has dimension $2 - k$. Containing two independent vectors, it has dimension $2$, so $k = 0$. But for $k = 0$ the condition of Definition~\ref{def:adapted-chart} on an adapted chart $(U, \varphi)$ at $(0, 0)$ has no equations, and reads $U \cap C = U$: the open set $U \ni (0, 0)$ would lie in $C$. That is false. $U$ contains a point $(0, s)$ with $s \neq 0$, and $(0, s) \notin C$, since $\gamma(t) = (0, s)$ forces $t^2 - 1 = 0$ and then $s = t^3 - t = t(t^2 - 1) = 0$. So $C$ is not a regular submanifold.
+two linearly independent vectors of $T_0\mathbb{R}^2$: the determinant of their coefficients is $2 \cdot 2 - (-2) \cdot 2 = 8 \neq 0$:
+\[
+\det \begin{pmatrix} 2 & -2 \\ 2 & 2 \end{pmatrix} = 8 ,
+\]
+the columns holding the coefficients of $\gamma_{*1}(\partial/\partial r|_1)$ and $\gamma_{*(-1)}(\partial/\partial r|_{-1})$. Both lie in $\iota_{*0}(T_0C)$. Indeed $\gamma$ is smooth into $\mathbb{R}^2$ with values in $C$, so $\gamma = \iota \circ c$ with $c : \mathbb{R} \to C$ smooth (Lemma~\ref{lem:maps-into-submanifold}(2)), and by the Chain Rule (Theorem~\ref{prop:pushforward-functorial}) $\gamma_{*t} = \iota_{*0} \circ c_{*t}$ for $t = \pm 1$, where $\gamma(\pm 1) = 0$. By Proposition~\ref{prop:submanifold-tangent}, $\iota_{*0}(T_0C)$ is spanned by the first $2 - k$ coordinate derivations of an adapted chart, so it has dimension $2 - k$. Containing two independent vectors, it has dimension $2$, so $k = 0$. But for $k = 0$ the condition of Definition~\ref{def:adapted-chart} on an adapted chart $(U, \varphi)$ at $(0, 0)$ has no equations, and reads $U \cap C = U$: the open set $U \ni (0, 0)$ would lie in $C$. That is false. $U$ contains a point $(0, s)$ with $s \neq 0$, and $(0, s) \notin C$, since $\gamma(t) = (0, s)$ forces $t^2 - 1 = 0$ and then $s = t^3 - t = t(t^2 - 1) = 0$. So $C$ is not a regular submanifold.
 \end{proof}
 
 \begin{center}
@@ -12280,7 +12706,7 @@ F_p^*\big(df_{F(p)}\big) = d(f \circ F)_p \quad \text{in } T_p^*M .
 \end{quote}
 
 \begin{quote}
-\textbf{Recall: the remark \emph{The Two Differentials Meet}.} In $\mathbb{R}^n$, with the dot-product identification $v \mapsto \xi_v$ of Proposition~\ref{prop:dot-product-identification}, under which $dh_p = \xi_{\nabla h(p)}$ (its part (3), with the gradient of Definition~\ref{def:gradient}), the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_*$ ``we should have called the differential of $F$ ages ago'': for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{*p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
+\textbf{Recall: the remark \emph{The Two Differentials Meet}.} In $\mathbb{R}^n$, with the dot-product identification $v \mapsto \xi_v$ of Proposition~\ref{prop:dot-product-identification}, under which $dh_p = \xi_{\nabla h(p)}$ (its part (3), with the gradient of Definition~\ref{def:gradient}), the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$, with the gradients written as columns. (Definition~\ref{def:jacobian} writes the gradients $\nabla F_a(p)$ as the rows of the Jacobian; in that row convention the same identity reads $\nabla(f \circ F) = \nabla f \; J_F$, the transpose of this one.) Uribe added that the pushforward $F_*$ ``we should have called the differential of $F$ ages ago'': for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{*p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
 \end{quote}
 
 \begin{quote}
@@ -12291,7 +12717,11 @@ N_pS = \{\, \xi \in T_p^*M : \xi(v) = 0 \text{ for all } v \in \iota_{*p}(T_pS) 
 the covectors at $p$ that vanish on the tangent space of $S$ --- the annihilator of $T_pS$ in $T_p^*M$.
 \end{quote}
 
-In $\mathbb{R}^n$ the dot product identifies covectors with vectors, so the differential $df_p$ appears as the gradient, a pulled-back covector as the transpose of the Jacobian applied to a gradient, and a conormal covector $dF^i|_p$ as the normal vector $\nabla F^i(p)$. An abstract manifold has no dot product, so the covector versions are the intrinsic ones; an inner product on each tangent space --- a metric --- would turn them back into vectors.
+In $\mathbb{R}^n$ the dot product identifies covectors with vectors, so the differential $df_p$ appears as the gradient, a pulled-back covector as the transpose of the Jacobian applied to a gradient, and a conormal covector $dF^i|_p$ as the normal vector $\nabla F^i(p)$. For $F = (F_1, \ldots, F_m) : \mathbb{R}^N \to \mathbb{R}^m$ as in the recalled Definition~\ref{def:jacobian}, $f$ smooth near $F(p)$, and $y_1, \ldots, y_m$ the coordinates of $\mathbb{R}^m$, the chain rule $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$, with the gradients written as columns, reads
+\[
+\begin{pmatrix} \dfrac{\partial (f \circ F)}{\partial x_1}(p) \\ \vdots \\ \dfrac{\partial (f \circ F)}{\partial x_N}(p) \end{pmatrix} = \begin{pmatrix} \dfrac{\partial F_1}{\partial x_1}(p) & \cdots & \dfrac{\partial F_m}{\partial x_1}(p) \\ \vdots & & \vdots \\ \dfrac{\partial F_1}{\partial x_N}(p) & \cdots & \dfrac{\partial F_m}{\partial x_N}(p) \end{pmatrix} \begin{pmatrix} \dfrac{\partial f}{\partial y_1}\big(F(p)\big) \\ \vdots \\ \dfrac{\partial f}{\partial y_m}\big(F(p)\big) \end{pmatrix} ,
+\]
+the $N \times m$ matrix in the middle being $(DF_p)^{\mathsf T}$. An abstract manifold has no dot product, so the covector versions are the intrinsic ones; an inner product on each tangent space --- a metric --- would turn them back into vectors.
 
 \subsection{Regular Points, Regular Values and the Theorems Behind Them}
 
@@ -12676,7 +13106,11 @@ such a chart is \emph{adapted} to $S^3$. Any diffeomorphism from an open subset 
 \]
 a diffeomorphism onto the open set $\tau(W)$, hence a chart about $p$, with last component $y^4 = r - 1$. For $\vec u = \Phi(r, \theta') \in U_p$ we have $|\vec u| = r$ by (i), so $\vec u \in S^3 \iff r = 1 \iff y^4(\vec u) = 0$. Thus $\psi_p$ is adapted to $S^3$.
 
-\emph{(v) Adapted charts on $B$.} Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear isometry of $\mathbb{R}^4$ with $\det P = \pm 1$, and $\tilde\Phi = P \circ \Phi$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)--(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
+\emph{(v) Adapted charts on $B$.} Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear isometry of $\mathbb{R}^4$ with $\det P = 1$ (it swaps two pairs of coordinates, $x_0 \leftrightarrow x_2$ and $x_1 \leftrightarrow x_3$, an even permutation), and $\tilde\Phi = P \circ \Phi$. In matrix form,
+\[
+P = \begin{pmatrix} 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix} ,
+\]
+so $\tilde\Phi'(r, \theta) = P\, \Phi'(r, \theta)$: the rows of $\Phi'$ in the order $3, 4, 1, 2$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)--(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
 
 Hence every point of $S^3$ lies in an adapted chart.
 \end{proof}
@@ -12879,6 +13313,11 @@ For $i = 1, 2, 3$, the $i$-th column of the Jacobian of $\psi^{-1}$ there is $P$
 \[
 \frac{\partial}{\partial y^1}\Big|_{\vec e_0} = -\vec e_2, \qquad \frac{\partial}{\partial y^2}\Big|_{\vec e_0} = -\vec e_3, \qquad \frac{\partial}{\partial y^3}\Big|_{\vec e_0} = \vec e_1 .
 \]
+\textit{(Computed; not from lecture.)} In full, with columns indexed by $r, \theta_1, \theta_2, \theta_3$, and for $(\psi^{-1})'$ by $y^1, y^2, y^3, y^4$ (its columns are $P$ applied to the $\theta_1$, $\theta_2$, $\theta_3$ and $r$ columns of $\Phi'$),
+\[
+\Phi'\big(1, \tfrac{\pi}{2}, \tfrac{\pi}{2}, 0\big) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \qquad (\psi^{-1})'\big(\psi(\vec e_0)\big) = \begin{pmatrix} 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ -1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix} ,
+\]
+that is, $(\psi^{-1})'(\psi(\vec e_0)) = (-\vec e_2 \mid -\vec e_3 \mid \vec e_1 \mid \vec e_0)$.
 Therefore
 \[
 T_{\vec e_0} S^3 = \operatorname{span}\{ \vec e_1, \vec e_2, \vec e_3 \} = \{ \vec x \in \mathbb{R}^4 : x_0 = 0 \}.
@@ -12961,7 +13400,11 @@ C_{pq}(v) = (pq)\, v\, \overline{pq} = p q v \bar q \bar p = p\,(q v \bar q)\,\b
 \]
 so $C_{pq} = C_p C_q$.
 
-\emph{Smooth into $\Mat(3, \mathbb{R})$.} The $(a, b)$ entry of the matrix of $C_q$ is the $e_a$-coordinate of $q\, e_b\, \bar q$. With $q = \sum_c x_c e_c$ and $\bar q = \sum_d \pm x_d e_d$, bilinearity gives $q e_b \bar q = \sum_{c,d} \pm x_c x_d\, e_c e_b e_d$, and each $e_c e_b e_d$ is $\pm$ a basis element. So the entries of $C_q$ are quadratic polynomials in the coordinates $x_0, \ldots, x_3$ of $q$: $C$ is the restriction to $S^3$ of a smooth map $\mathbb{R}^4 \to \Mat(3, \mathbb{R})$, hence smooth from $S^3$ (compose with the inclusion, Lemma~\ref{lem:maps-into-submanifold}(1)).
+\emph{Smooth into $\Mat(3, \mathbb{R})$.} The $(a, b)$ entry of the matrix of $C_q$ is the $e_a$-coordinate of $q\, e_b\, \bar q$. With $q = \sum_c x_c e_c$ and $\bar q = \sum_d \pm x_d e_d$, bilinearity gives $q e_b \bar q = \sum_{c,d} \pm x_c x_d\, e_c e_b e_d$, and each $e_c e_b e_d$ is $\pm$ a basis element. So the entries of $C_q$ are quadratic polynomials in the coordinates $x_0, \ldots, x_3$ of $q$: $C$ is the restriction to $S^3$ of a smooth map $\mathbb{R}^4 \to \Mat(3, \mathbb{R})$, hence smooth from $S^3$ (compose with the inclusion, Lemma~\ref{lem:maps-into-submanifold}(1)). \textit{(Computed; not from lecture.)} Explicitly, for $q = x_0 + x_1 i + x_2 j + x_3 k$, column $b$ holding the coordinates of $q\, e_b\, \bar q$,
+\[
+C_q = \begin{pmatrix} x_0^2 + x_1^2 - x_2^2 - x_3^2 & 2(x_1 x_2 - x_0 x_3) & 2(x_1 x_3 + x_0 x_2) \\ 2(x_1 x_2 + x_0 x_3) & x_0^2 - x_1^2 + x_2^2 - x_3^2 & 2(x_2 x_3 - x_0 x_1) \\ 2(x_1 x_3 - x_0 x_2) & 2(x_2 x_3 + x_0 x_1) & x_0^2 - x_1^2 - x_2^2 + x_3^2 \end{pmatrix} ;
+\]
+for $q = \gamma_j(t)$ it gives the matrices $C(\gamma_j(t))$ of Theorem~\ref{thm:double-cover}.
 
 \emph{Values in $\SO(3)$.} For $A \in \Ogp(3)$, $\det(A)^2 = \det(A^{\mathsf T} A) = 1$, so $\det \circ C : S^3 \to \{\pm 1\}$. It is continuous, and $S^3$ is connected (Proposition~\ref{prop:s3-lie-group}); if it took both values, the preimages of $1$ and of $-1$ would be disjoint nonempty open sets covering $S^3$. So it is constant, equal to its value $\det C_1 = \det I = 1$ at $q = 1$ (where $C_1(v) = v$). Hence $C$ takes values in $\SO(3)$.
 
@@ -12995,7 +13438,11 @@ C_q(v) = q\,(v \bar q) = q\,(q v) = q^2 v = \big(\cos\theta + \sin\theta\, u\big
 \]
 where $q^2 = c^2 + 2cs\, u + s^2 u^2 = (c^2 - s^2) + 2cs\, u = \cos\theta + \sin\theta\, u$ by the double-angle formulas, and the last step uses $uv = u \times v$.
 
-\emph{This is the rotation by $\theta$ about $u$.} Choose a unit $v \perp u$ and put $w = u \times v$, a unit vector orthogonal to $u$ and $v$. Then $(v, w, u)$ is an orthonormal basis with $v \times w = v \times (u \times v) = u\,(v \cdot v) - v\,(v \cdot u) = u$, so $Q = (v \ w \ u)$, the matrix with these columns, lies in $\SO(3)$ ($\det Q = (v \times w) \cdot u = 1$) and $Q e_3 = u$. By the previous step, applied to $v$ and to $w \perp u$, and $u \times w = u \times (u \times v) = u\,(u \cdot v) - v\,(u \cdot u) = -v$,
+\emph{This is the rotation by $\theta$ about $u$.} Choose a unit $v \perp u$ and put $w = u \times v$, a unit vector orthogonal to $u$ and $v$. Then $(v, w, u)$ is an orthonormal basis with $v \times w = v \times (u \times v) = u\,(v \cdot v) - v\,(v \cdot u) = u$, so $Q = (v \ w \ u)$, the matrix with these columns, written in components $v = \sum_b v_b e_b$, $w = \sum_b w_b e_b$, $u = \sum_b u_b e_b$,
+\[
+Q = \begin{pmatrix} v_1 & w_1 & u_1 \\ v_2 & w_2 & u_2 \\ v_3 & w_3 & u_3 \end{pmatrix} ,
+\]
+lies in $\SO(3)$ ($\det Q = (v \times w) \cdot u = 1$) and $Q e_3 = u$. By the previous step, applied to $v$ and to $w \perp u$, and $u \times w = u \times (u \times v) = u\,(u \cdot v) - v\,(u \cdot u) = -v$,
 \[
 C_q(v) = \cos\theta\, v + \sin\theta\, w, \qquad C_q(w) = \cos\theta\, w - \sin\theta\, v, \qquad C_q(u) = u .
 \]
@@ -13318,7 +13765,15 @@ D \;=\; \sum_{i=1}^n D\big[x^i\big]\, \frac{\partial}{\partial x^i}\Big|_p .
 \[
 F_{*p} : T_pM \to T_{F(p)}N, \qquad (F_{*p}D)[g] = D\big(F_p^*[g]\big) = D[g \circ F]
 \]
-(Definition~\ref{def:pushforward}) --- to see how $F_{*p}D$ differentiates $g$, pull $g$ back and let $D$ differentiate it. The chain rule is $(G \circ F)_{*p} = G_{*F(p)} \circ F_{*p}$ (Theorem~\ref{prop:pushforward-functorial}). In charts the matrix of $F_{*p}$ is the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}, with Proposition~\ref{prop:upstairs-downstairs}), and on open subsets of Euclidean space $F_{*p}$ \emph{is} the ordinary derivative, the differential $dF_p$ of Definition~\ref{def:vs-differential} (Proposition~\ref{prop:differential-agree}).
+(Definition~\ref{def:pushforward}) --- to see how $F_{*p}D$ differentiates $g$, pull $g$ back and let $D$ differentiate it. The chain rule is $(G \circ F)_{*p} = G_{*F(p)} \circ F_{*p}$ (Theorem~\ref{prop:pushforward-functorial}). In charts the matrix of $F_{*p}$ is the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}, with Proposition~\ref{prop:upstairs-downstairs}), and on open subsets of Euclidean space $F_{*p}$ \emph{is} the ordinary derivative, the differential $dF_p$ of Definition~\ref{def:vs-differential} (Proposition~\ref{prop:differential-agree}). Written out, in charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $F(p)$, with $F^j = y^j \circ F$, the matrix of $F_{*p}$ in the coordinate bases is the $n \times m$ Jacobian
+\[
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix},
+\]
+whose $i$-th column lists the components of $F_{*p}(\partial/\partial x^i|_p)$.
 
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:germ-pullback} (Pullback of Germs).} Let $F : M \to N$ be a smooth map between smooth manifolds, and $p \in M$, so that $F(p)$ is a point of $N$. Let $[g] \in C^\infty_{F(p)}(N)$ be a germ \emph{at the point $F(p)$ of $N$}, with a representative $(g, V)$: $V \subseteq N$ is open with $F(p) \in V$, and $g : V \to \mathbb{R}$ is smooth. Then $F^{-1}(V)$ is an open neighbourhood of $p$ in $M$, and $g \circ F : F^{-1}(V) \to \mathbb{R}$ is smooth (Lemma~\ref{lem:composition-smooth}), so $(g \circ F, F^{-1}(V))$ represents a germ at $p$ on $M$. The \textbf{pullback} of germs along $F$ at $p$ is the map
@@ -13391,6 +13846,10 @@ v = 3\,\frac{\partial}{\partial x}\Big|_p - \frac{\partial}{\partial y}\Big|_p \
     \item \emph{Pushed forward.} Let $F : \mathbb{R}^2 \to \mathbb{R}^2$, $F(x, y) = (x^2,\ x + y)$, with coordinates $(u, w)$ on the target, so $F(p) = (1, 3)$. The Jacobian at $p$ is $\begin{pmatrix} 2x & 0 \\ 1 & 1 \end{pmatrix}_p = \begin{pmatrix} 2 & 0 \\ 1 & 1 \end{pmatrix}$, so
     \[
     F_{*p} v = (2 \cdot 3 + 0)\, \frac{\partial}{\partial u}\Big|_{F(p)} + (3 - 1)\, \frac{\partial}{\partial w}\Big|_{F(p)} = 6\, \frac{\partial}{\partial u} + 2\, \frac{\partial}{\partial w} .
+    \]
+    In matrix form, the Jacobian acts on the column of components of $v$:
+    \[
+    \begin{pmatrix} 2 & 0 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} 3 \\ -1 \end{pmatrix} = \begin{pmatrix} 6 \\ 2 \end{pmatrix} .
     \]
     By the definition instead: $(F_{*p}v)[u] = v[u \circ F] = v[x^2] = 3 \cdot 2 = 6$ and $(F_{*p}v)[w] = v[x + y] = 3 - 1 = 2$, the same components by the universal formula.
 \end{enumerate}
@@ -13514,7 +13973,15 @@ A covector drawn as a stack of parallel lines. In $\mathbb{R}^2$ (or in one tang
 The isomorphisms are defined without any chart.
 \end{quote}
 
-\textbf{Step 5: covectors pull back.} For $F : M \to N$, the dual map of $F_{*p}$ is the \emph{pullback of covectors} $F_p^* : T^*_{F(p)}N \to T_p^*M$, $(F_p^*\alpha)(v) = \alpha(F_{*p}v)$ (Definition~\ref{def:pullback-covector}). It commutes with differentials: $F_p^*(df_{F(p)}) = d(f \circ F)_p$ (Proposition~\ref{prop:pullback-d}), which is the chain rule in covector form. The same symbol $F_p^*$ already denoted the pullback of germs (Step~5 of \ref{sec:recap-tangent}); the two are compatible, as the remark \emph{One Symbol for Two Pullbacks} in \ref{sec:cotangent-germs} explains.
+\textbf{Step 5: covectors pull back.} For $F : M \to N$, the dual map of $F_{*p}$ is the \emph{pullback of covectors} $F_p^* : T^*_{F(p)}N \to T_p^*M$, $(F_p^*\alpha)(v) = \alpha(F_{*p}v)$ (Definition~\ref{def:pullback-covector}). It commutes with differentials: $F_p^*(df_{F(p)}) = d(f \circ F)_p$ (Proposition~\ref{prop:pullback-d}), which is the chain rule in covector form. The same symbol $F_p^*$ already denoted the pullback of germs (Step~5 of \ref{sec:recap-tangent}); the two are compatible, as the remark \emph{One Symbol for Two Pullbacks} in \ref{sec:cotangent-germs} explains. In charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $F(p)$, the matrix of $F_p^*$ in the dual bases $dy^j|_{F(p)}$ and $dx^i|_p$ is the transpose of the Jacobian of Step~5 of \ref{sec:recap-tangent} (Proposition~\ref{prop:dual-map}(2)):
+\[
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^1}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^1}{\partial x^m}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix},
+\]
+an $m \times n$ matrix whose $j$-th column lists the components of $F_p^*(dy^j|_{F(p)}) = d(F^j)_p$.
 
 \begin{quote}
 \textbf{Recall: Definition~\ref{def:pullback-covector} (Pullback of Covectors).} Let $F : M \to N$ be smooth and $p \in M$. The \textbf{pullback of covectors} at $p$ is the dual map (Definition~\ref{def:dual-map}) of the pushforward $F_{*p} : T_pM \to T_{F(p)}N$:
@@ -13736,6 +14203,15 @@ The charts $(TU, \tilde\varphi)$, as $(U, \varphi)$ ranges over the smooth chart
 \[
 \tilde\psi \circ \tilde\varphi^{-1}(r, v) = \Big( \psi \circ \varphi^{-1}(r), \ \ \sum_{j=1}^m \frac{\partial y^1}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j, \ \ldots, \ \sum_{j=1}^m \frac{\partial y^m}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j \Big) .
 \]
+In matrix form, the last $m$ components are the column $v$ multiplied by the Jacobian $\big[\partial y^i/\partial x^j\big]$ of the change of coordinates (row $i$, column $j$), evaluated at $\varphi^{-1}(r)$:
+\[
+\begin{pmatrix}
+\dfrac{\partial y^1}{\partial x^1} & \cdots & \dfrac{\partial y^1}{\partial x^m} \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial y^m}{\partial x^1} & \cdots & \dfrac{\partial y^m}{\partial x^m}
+\end{pmatrix}
+\begin{pmatrix} v^1 \\ \vdots \\ v^m \end{pmatrix} .
+\]
 \leeref{Proposition 3.18}
 \end{propbox}
 
@@ -13926,6 +14402,18 @@ The charts $(T^*U, \hat\varphi)$, as $(U, \varphi)$ ranges over the smooth chart
 \[
 dx^i|_p = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, dy^j|_p, \qquad \eta_j = \sum_i \frac{\partial x^i}{\partial y^j}(p)\, \xi_i .
 \]
+In matrix form, with row index $j$ and column index $i$,
+\[
+\begin{pmatrix} \eta_1 \\ \vdots \\ \eta_m \end{pmatrix}
+=
+\begin{pmatrix}
+\dfrac{\partial x^1}{\partial y^1}(p) & \cdots & \dfrac{\partial x^m}{\partial y^1}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial x^1}{\partial y^m}(p) & \cdots & \dfrac{\partial x^m}{\partial y^m}(p)
+\end{pmatrix}
+\begin{pmatrix} \xi_1 \\ \vdots \\ \xi_m \end{pmatrix} ,
+\]
+the matrix being the transpose of $\big[\partial x^i/\partial y^j(p)\big]$ (row $i$, column $j$).
 So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components: with $\tau = \psi \circ \varphi^{-1}$, the transition map is
 \[
 \hat\psi \circ \hat\varphi^{-1}(r, \xi) = \Big( \tau(r),\ \big(\tau'(r)^{-1}\big)^{\mathsf T} \xi \Big) .
@@ -13944,7 +14432,21 @@ So the covector components transform by the transpose of the inverse of the matr
 \]
 The $dy^j|_p$ form a basis of $T_p^*M$ (Lemma~\ref{lem:df-coords} for the chart $\psi$), so the coefficients of $\xi$ in it are unique; comparing coefficients of $dy^j|_p$ with $\xi = \sum_j \eta_j\, dy^j|_p$ gives $\eta_j = \sum_i \partial x^i/\partial y^j(p)\, \xi_i$.
 
-\emph{The inverse matrix.} Write $A = \big[\partial y^i/\partial x^j(p)\big]$ (row $i$, column $j$) and $B = \big[\partial x^i/\partial y^j(p)\big]$. That $B = A^{-1}$ is the chain rule: Corollary~\ref{cor:change-coords}(3), applied to the two charts $\varphi = (x^i)$ and $\psi = (y^j)$ at $p$, says that $A$ is invertible with inverse $B$. (With the covectors of this section it can also be read off the formula for $dx^i|_p$: evaluating it on $\partial/\partial x^k|_p$ and using $dx^i|_p(\partial/\partial x^k|_p) = \delta^i_k$ (Lemma~\ref{lem:df-coords}) and $dy^j|_p(\partial/\partial x^k|_p) = \partial y^j/\partial x^k(p)$ (Proposition~\ref{prop:df-derivation}) gives $\delta^i_k = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, \frac{\partial y^j}{\partial x^k}(p) = (BA)_{ik}$.) By Proposition~\ref{prop:tb-atlas} the tangent components transform by $A$, $w = Av$; and the formula for $\eta_j$ reads $\eta_j = \sum_i B_{ij}\, \xi_i = (B^{\mathsf T} \xi)_j$, so the covector components transform by $B^{\mathsf T} = (A^{-1})^{\mathsf T}$.
+\emph{The inverse matrix.} Write $A = \big[\partial y^i/\partial x^j(p)\big]$ (row $i$, column $j$) and $B = \big[\partial x^i/\partial y^j(p)\big]$. Written out,
+\[
+A = \begin{pmatrix}
+\dfrac{\partial y^1}{\partial x^1}(p) & \cdots & \dfrac{\partial y^1}{\partial x^m}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial y^m}{\partial x^1}(p) & \cdots & \dfrac{\partial y^m}{\partial x^m}(p)
+\end{pmatrix},
+\qquad
+B = \begin{pmatrix}
+\dfrac{\partial x^1}{\partial y^1}(p) & \cdots & \dfrac{\partial x^1}{\partial y^m}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial x^m}{\partial y^1}(p) & \cdots & \dfrac{\partial x^m}{\partial y^m}(p)
+\end{pmatrix} .
+\]
+ That $B = A^{-1}$ is the chain rule: Corollary~\ref{cor:change-coords}(3), applied to the two charts $\varphi = (x^i)$ and $\psi = (y^j)$ at $p$, says that $A$ is invertible with inverse $B$. (With the covectors of this section it can also be read off the formula for $dx^i|_p$: evaluating it on $\partial/\partial x^k|_p$ and using $dx^i|_p(\partial/\partial x^k|_p) = \delta^i_k$ (Lemma~\ref{lem:df-coords}) and $dy^j|_p(\partial/\partial x^k|_p) = \partial y^j/\partial x^k(p)$ (Proposition~\ref{prop:df-derivation}) gives $\delta^i_k = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, \frac{\partial y^j}{\partial x^k}(p) = (BA)_{ik}$.) By Proposition~\ref{prop:tb-atlas} the tangent components transform by $A$, $w = Av$; and the formula for $\eta_j$ reads $\eta_j = \sum_i B_{ij}\, \xi_i = (B^{\mathsf T} \xi)_j$, so the covector components transform by $B^{\mathsf T} = (A^{-1})^{\mathsf T}$.
 
 \emph{The transition map.} Explicitly, let $(r, \xi) \in \hat\varphi(T^*U \cap T^*V) = \varphi(U \cap V) \times \mathbb{R}^m$ (an open set, by the same argument as for $TM$ in the proof of Proposition~\ref{prop:tb-atlas}, with Lemma~\ref{lem:df-coords} giving the basis $dx^i|_p$) and $p = \varphi^{-1}(r)$. By the inverse formula of Definition~\ref{def:ctb-chart}, $\hat\varphi^{-1}(r, \xi) = \big(p, \sum_i \xi_i\, dx^i|_p\big)$, and by the same definition for $\psi$ and the formula for $\eta$, $\hat\psi$ sends this point to $(\psi(p), \eta) = (\tau(r), B^{\mathsf T}\xi)$. With $p = \varphi^{-1}(r)$, the matrix $A = \big[\partial y^i/\partial x^j(p)\big]$ is $\tau'(r)$ (Proposition~\ref{prop:upstairs-downstairs}, applied to $F = \mathrm{id}_M$ exactly as in the proof of Proposition~\ref{prop:tb-atlas}), so $B = \big[\partial x^i/\partial y^j(p)\big] = \tau'(r)^{-1}$ and $\eta = \big(\tau'(r)^{-1}\big)^{\mathsf T}\xi$, which is the displayed transition map.
 
@@ -14306,6 +14808,19 @@ In charts $(x^i)$ on $M$ and $(y^j)$ on $N$, with $F^j = y^j \circ F$,
 \[
 F^*\Big(\sum_j \theta_j\, dy^j\Big) = \sum_i \Big( \sum_j (\theta_j \circ F)\, \frac{\partial F^j}{\partial x^i} \Big)\, dx^i .
 \]
+In matrix form, with $m = \dim M$ and $n = \dim N$, the column of coefficients of $F^*\theta$ is the transpose of the Jacobian $\big[\partial F^j/\partial x^i\big]$ (Theorem~\ref{lem:differential-matrix}) applied to the column of the $\theta_j \circ F$:
+\[
+\begin{pmatrix}
+\sum_j (\theta_j \circ F)\, \dfrac{\partial F^j}{\partial x^1} \\ \vdots \\ \sum_j (\theta_j \circ F)\, \dfrac{\partial F^j}{\partial x^m}
+\end{pmatrix}
+=
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1} & \cdots & \dfrac{\partial F^n}{\partial x^1} \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^1}{\partial x^m} & \cdots & \dfrac{\partial F^n}{\partial x^m}
+\end{pmatrix}
+\begin{pmatrix} \theta_1 \circ F \\ \vdots \\ \theta_n \circ F \end{pmatrix} .
+\]
 In particular $F^*\theta$ is smooth whenever $\theta$ is.
 \end{propbox}
 
@@ -14344,7 +14859,15 @@ Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, $p \in U$, and
 \[
 H_{ij}(p) = \frac{\partial^2 f_\varphi}{\partial r^i\, \partial r^j}\big(\varphi(p)\big), \qquad i, j = 1, \ldots, m,
 \]
-also written $\partial^2 f/\partial x^i \partial x^j(p)$. It depends on the chart in general. Only the values of $f$ on $U$ enter, so the definition applies verbatim to a function smooth on an open set containing $U$.
+also written $\partial^2 f/\partial x^i \partial x^j(p)$. Written out,
+\[
+H_p = \begin{pmatrix}
+\dfrac{\partial^2 f_\varphi}{\partial r^1\, \partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial^2 f_\varphi}{\partial r^1\, \partial r^m}\big(\varphi(p)\big) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial^2 f_\varphi}{\partial r^m\, \partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial^2 f_\varphi}{\partial r^m\, \partial r^m}\big(\varphi(p)\big)
+\end{pmatrix} .
+\]
+ It depends on the chart in general. Only the values of $f$ on $U$ enter, so the definition applies verbatim to a function smooth on an open set containing $U$.
 \end{defbox}
 
 The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition~\ref{prop:some-any-function}), so its mixed partials are equal (Clairaut's theorem), and $H_p$ is symmetric, $H_{ij}(p) = H_{ji}(p)$. This is part (2) of the next proposition, which rewrites $H_p$ upstairs, on $M$.
@@ -14398,6 +14921,14 @@ the last step by (2). So $\Phi'(\varphi(p))$ and $H_p$ have the same entry $H_{j
 Let $(U, \varphi = (x^1, \ldots, x^m))$ and $(V, \psi = (y^1, \ldots, y^m))$ be smooth charts at $p$, with Hessian matrices $H^{(x)}_p$ and $H^{(y)}_p$ of $f$ at $p$, and let $J$ be the $m \times m$ matrix with entry
 \[
 J_{ki} = \frac{\partial y^k}{\partial x^i}(p) \qquad \text{in row } k \text{ and column } i .
+\]
+Written out,
+\[
+J = \begin{pmatrix}
+\dfrac{\partial y^1}{\partial x^1}(p) & \cdots & \dfrac{\partial y^1}{\partial x^m}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial y^m}{\partial x^1}(p) & \cdots & \dfrac{\partial y^m}{\partial x^m}(p)
+\end{pmatrix} .
 \]
 Then, for all $i, j$,
 \[
@@ -14496,7 +15027,11 @@ Let $p \in \operatorname{Crit}(f)$. The \textbf{Hessian} of $f$ at $p$ is the sy
 \[
 \operatorname{Hess}_p f : T_pM \times T_pM \longrightarrow \mathbb{R}, \qquad \operatorname{Hess}_p f(v, w) = \sum_{i,j=1}^m H_{ij}(p)\, v^i\, w^j, \quad v^i = v[x^i],\ w^j = w[x^j],
 \]
-computed in any smooth chart $(U, \varphi = (x^i))$ at $p$; it does not depend on the chart, and is bilinear and symmetric, by Proposition~\ref{prop:hessian-well-defined}. On the coordinate basis, $\operatorname{Hess}_p f\big(\partial/\partial x^i|_p, \partial/\partial x^j|_p\big) = H_{ij}(p)$.
+computed in any smooth chart $(U, \varphi = (x^i))$ at $p$; it does not depend on the chart, and is bilinear and symmetric, by Proposition~\ref{prop:hessian-well-defined}. In matrix form, with $H_p$ the Hessian matrix of the chart (Definition~\ref{def:hessian-matrix}),
+\[
+\operatorname{Hess}_p f(v, w) = \begin{pmatrix} v^1 & \cdots & v^m \end{pmatrix} H_p \begin{pmatrix} w^1 \\ \vdots \\ w^m \end{pmatrix} .
+\]
+ On the coordinate basis, $\operatorname{Hess}_p f\big(\partial/\partial x^i|_p, \partial/\partial x^j|_p\big) = H_{ij}(p)$.
 \end{defbox}
 
 The last formula holds because the components of $\partial/\partial x^i|_p$ are $\partial/\partial x^i|_p[x^l] = \delta^l_i$ (Lemma~\ref{lem:df-coords}: the $dx^l|_p$ form the basis dual to the $\partial/\partial x^i|_p$, and $\partial/\partial x^i|_p[x^l] = dx^l|_p(\partial/\partial x^i|_p)$ by Proposition~\ref{prop:df-derivation}), so only the term with $l = i$, $l' = j$ survives in $\sum_{l,l'} H_{ll'}(p)\, \delta^l_i\, \delta^{l'}_j$. At a point that is not critical no such form exists: by Example~\ref{ex:hessian-chart-dependent} the matrices of two charts need not even have the same rank.
@@ -14578,7 +15113,11 @@ Let $p \in \operatorname{Crit}(f)$. The \textbf{index} of $f$ at $p$ (the \textb
 \[
 f = f(p) - (y^1)^2 - \cdots - (y^\lambda)^2 + (y^{\lambda+1})^2 + \cdots + (y^m)^2 ;
 \]
-so nondegenerate critical points look, up to a change of chart, like the critical point of a nondegenerate quadratic form. Neither Sylvester's law nor the Morse lemma is proved in these notes.
+so nondegenerate critical points look, up to a change of chart, like the critical point of a nondegenerate quadratic form. Neither Sylvester's law nor the Morse lemma is proved in these notes. \textit{(Computed; not from lecture.)} In the chart of the Morse lemma the Hessian matrix at $p$ is block diagonal,
+\[
+H_p = \begin{pmatrix} -2\, I_\lambda & 0 \\ 0 & 2\, I_{m-\lambda} \end{pmatrix},
+\]
+with exactly $\lambda$ negative eigenvalues, the index.
 \end{rembox}
 
 \subsection{The Cotangent Bundle Along the Zero Section}\label{sub:ctb-zero-section}
@@ -14619,7 +15158,20 @@ In this section covectors at a point are named $\alpha$ or $\eta$, keeping the l
 \[
 \hat\varphi \circ \zeta \circ \varphi^{-1}(r) = (r, 0, \ldots, 0), \qquad r \in \varphi(U) .
 \]
-Its Jacobian is the $2m \times m$ matrix $\binom{I_m}{0}$: the first $m$ components are $r^k$, with $\partial r^k/\partial r^i = \delta^k_i$, and the last $m$ are the constant $0$. By Theorem~\ref{lem:differential-matrix}, applied to $\zeta$ with the source chart $\varphi$ and the target chart $\hat\varphi$, whose $2m$ coordinate functions are $\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m$, the $i$-th column of this matrix gives
+Its Jacobian is the $2m \times m$ matrix $\binom{I_m}{0}$: the first $m$ components are $r^k$, with $\partial r^k/\partial r^i = \delta^k_i$, and the last $m$ are the constant $0$. Written out, the first $m$ rows forming $I_m$ and the last $m$ rows zero,
+\[
+\begin{pmatrix} I_m \\ 0 \end{pmatrix}
+=
+\begin{pmatrix}
+1 & \cdots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \cdots & 1 \\
+0 & \cdots & 0 \\
+\vdots & & \vdots \\
+0 & \cdots & 0
+\end{pmatrix} .
+\]
+ By Theorem~\ref{lem:differential-matrix}, applied to $\zeta$ with the source chart $\varphi$ and the target chart $\hat\varphi$, whose $2m$ coordinate functions are $\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m$, the $i$-th column of this matrix gives
 \[
 \zeta_{*p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big) = \sum_{k=1}^m \delta^k_i\, \frac{\partial}{\partial \bar x^k}\Big|_{(p,0)} + \sum_{j=1}^m 0 \cdot \frac{\partial}{\partial \xi_j}\Big|_{(p,0)} = \frac{\partial}{\partial \bar x^i}\Big|_{(p,0)} .
 \]
@@ -14713,7 +15265,17 @@ The space $V_{(p,0)}$, the map $j_p$ and the splitting are defined without chart
 \begin{proof}
 \textit{(Not from lecture; filled in. The submitted solution uses the basis $\partial/\partial \bar x^i, \partial/\partial \xi_j$ directly; this proposition says what the two halves of the basis span.)}
 
-\emph{(1)} By Corollary~\ref{cor:ctb-fibration}(1), $\pi$ is smooth and its coordinate representation in the charts $\hat\varphi$ and $\varphi$ is $(r, b) \mapsto r$, with Jacobian the $m \times 2m$ matrix $(I_m \mid 0)$: the $k$-th component $r^k$ has partial derivative $\delta^k_i$ with respect to the $i$-th of the first $m$ variables and $0$ with respect to each of the last $m$. By Theorem~\ref{lem:differential-matrix}, applied to $\pi$ with the source chart $\hat\varphi$ (coordinates $\bar x^1, \ldots, \xi_m$) and the target chart $\varphi$, with $\pi(T^*U) \subseteq U$, the columns of this matrix give
+\emph{(1)} By Corollary~\ref{cor:ctb-fibration}(1), $\pi$ is smooth and its coordinate representation in the charts $\hat\varphi$ and $\varphi$ is $(r, b) \mapsto r$, with Jacobian the $m \times 2m$ matrix $(I_m \mid 0)$: the $k$-th component $r^k$ has partial derivative $\delta^k_i$ with respect to the $i$-th of the first $m$ variables and $0$ with respect to each of the last $m$. Written out, the first $m$ columns forming $I_m$ and the last $m$ columns zero,
+\[
+\left(\begin{array}{c|c} I_m & 0 \end{array}\right)
+=
+\left(\begin{array}{ccc|ccc}
+1 & \cdots & 0 & 0 & \cdots & 0 \\
+\vdots & \ddots & \vdots & \vdots & & \vdots \\
+0 & \cdots & 1 & 0 & \cdots & 0
+\end{array}\right) .
+\]
+ By Theorem~\ref{lem:differential-matrix}, applied to $\pi$ with the source chart $\hat\varphi$ (coordinates $\bar x^1, \ldots, \xi_m$) and the target chart $\varphi$, with $\pi(T^*U) \subseteq U$, the columns of this matrix give
 \[
 \pi_{*(p,0)}\Big(\frac{\partial}{\partial \bar x^i}\Big|_{(p,0)}\Big) = \sum_{k=1}^m \delta^k_i\, \frac{\partial}{\partial x^k}\Big|_p = \frac{\partial}{\partial x^i}\Big|_p, \qquad \pi_{*(p,0)}\Big(\frac{\partial}{\partial \xi_j}\Big|_{(p,0)}\Big) = \sum_{k=1}^m 0 \cdot \frac{\partial}{\partial x^k}\Big|_p = 0 .
 \]
@@ -14754,7 +15316,19 @@ Let $s_f : M \to T^*M$, $s_f(p) = (p, df_p)$, be the one-form $df$ regarded as a
     \[
     (s_f)_{*q}\Big(\frac{\partial}{\partial x^i}\Big|_q\Big) = \frac{\partial}{\partial \bar x^i}\Big|_{s_f(q)} + \sum_{j=1}^m H_{ij}(q)\, \frac{\partial}{\partial \xi_j}\Big|_{s_f(q)} ;
     \]
-    the matrix of $(s_f)_{*q}$ in the coordinate bases is the $2m \times m$ matrix $\binom{I_m}{H_q}$.
+    the matrix of $(s_f)_{*q}$ in the coordinate bases is the $2m \times m$ matrix $\binom{I_m}{H_q}$. Written out, with rows indexed by $\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m$ and columns by $\partial/\partial x^1|_q, \ldots, \partial/\partial x^m|_q$,
+    \[
+    \left(\begin{array}{c} I_m \\ \hline H_q \end{array}\right)
+    =
+    \left(\begin{array}{ccc}
+    1 & \cdots & 0 \\
+    \vdots & \ddots & \vdots \\
+    0 & \cdots & 1 \\ \hline
+    H_{11}(q) & \cdots & H_{1m}(q) \\
+    \vdots & \ddots & \vdots \\
+    H_{m1}(q) & \cdots & H_{mm}(q)
+    \end{array}\right) .
+    \]
     \item If $p \in \operatorname{Crit}(f)$, then $s_f(p) = (p, 0)$, and for $v \in T_pM$, in the splitting of Proposition~\ref{prop:zero-section-vertical}(3),
     \[
     (s_f)_{*p}v = \zeta_{*p}v + j_p\big(\operatorname{Hess}_p f(v, \cdot\,)\big):
@@ -16232,6 +16806,24 @@ In a chart with $\mathbf{X} = \sum_i X^i\, \partial_i$ and $\mathbf{Y} = \sum_i 
 \[
 [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j .
 \]
+\textit{(Computed; not from lecture.)} In matrix form, with the columns of components and the Jacobian matrices $\big[\partial Y^j/\partial x^i\big]$ and $\big[\partial X^j/\partial x^i\big]$ of the coefficient functions (row $j$, column $i$), the components $[\mathbf{X}, \mathbf{Y}]^j$ of the bracket are
+\[
+\begin{pmatrix} [\mathbf{X}, \mathbf{Y}]^1 \\ \vdots \\ [\mathbf{X}, \mathbf{Y}]^m \end{pmatrix}
+=
+\begin{pmatrix}
+\dfrac{\partial Y^1}{\partial x^1} & \cdots & \dfrac{\partial Y^1}{\partial x^m} \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial Y^m}{\partial x^1} & \cdots & \dfrac{\partial Y^m}{\partial x^m}
+\end{pmatrix}
+\begin{pmatrix} X^1 \\ \vdots \\ X^m \end{pmatrix}
+-
+\begin{pmatrix}
+\dfrac{\partial X^1}{\partial x^1} & \cdots & \dfrac{\partial X^1}{\partial x^m} \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial X^m}{\partial x^1} & \cdots & \dfrac{\partial X^m}{\partial x^m}
+\end{pmatrix}
+\begin{pmatrix} Y^1 \\ \vdots \\ Y^m \end{pmatrix} .
+\]
 \leeref{Proposition 8.26}
 \end{propbox}
 
@@ -16404,6 +16996,10 @@ $\mathbb{R}^3$ with the cross product is a Lie algebra, and the hat map of Defin
 \[
 [\hat a, \hat b] = \hat a \hat b - \hat b \hat a = \widehat{a \times b} .
 \]
+Here, written out (Definition~\ref{def:hat-map}), for $a = (a_1, a_2, a_3)$,
+\[
+\hat a = \begin{pmatrix} 0 & -a_3 & a_2 \\ a_3 & 0 & -a_1 \\ -a_2 & a_1 & 0 \end{pmatrix} .
+\]
 \end{exbox}
 
 \begin{proof}
@@ -16513,7 +17109,17 @@ dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)} \in T_{F(p)}N \qquad \text{for every } p 
 \leeref{Ch.~8, \emph{Vector Fields and Smooth Maps}}
 \end{defbox}
 
-The definition was completed in class by a student: push the value of $\mathbf{X}$ at $p$ forward, ``and if it happens that every time I do that, I get the value of $\mathbf{Y}$ at the same point, then we say that the two vector fields are related by $F$.'' No injectivity or surjectivity is assumed. Points outside $F(M)$ impose nothing on $\mathbf{Y}$, and two points with the same image must push forward to the same vector. ``It's a very useful notion at times.''
+The definition was completed in class by a student: push the value of $\mathbf{X}$ at $p$ forward, ``and if it happens that every time I do that, I get the value of $\mathbf{Y}$ at the same point, then we say that the two vector fields are related by $F$.'' No injectivity or surjectivity is assumed. Points outside $F(M)$ impose nothing on $\mathbf{Y}$, and two points with the same image must push forward to the same vector. ``It's a very useful notion at times.'' \textit{(Computed; not from lecture.)} In charts $(U, (x^1, \ldots, x^m))$ of $M$ and $(V, (y^1, \ldots, y^n))$ of $N$ with $F(U) \subseteq V$, $m = \dim M$, $n = \dim N$, write $F^j = y^j \circ F$, $\mathbf{X} = \sum_i \mathbf{X}^i\, \partial/\partial x^i$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial y^j$. The matrix of $dF_p$ is the Jacobian of Theorem~\ref{lem:differential-matrix}, so the condition reads, at every $p \in U$,
+\[
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix}
+\begin{pmatrix} \mathbf{X}^1(p) \\ \vdots \\ \mathbf{X}^m(p) \end{pmatrix}
+=
+\begin{pmatrix} \mathbf{Y}^1(F(p)) \\ \vdots \\ \mathbf{Y}^n(F(p)) \end{pmatrix} .
+\]
 
 \begin{exbox}[Fields Related by a Projection]\exlabel{ex:projection-related}
 Let $\pi : \mathbb{R}^2 \to \mathbb{R}$, $\pi(x, y) = x$, and $\mathbf{Y} = b(x)\, \dfrac{d}{dx}$ with $b \in C^\infty(\mathbb{R})$ --- ``any vector field on $\mathbb{R}$ I can write like this.'' The fields on $\mathbb{R}^2$ that are $\pi$-related to $\mathbf{Y}$ are exactly
@@ -16530,7 +17136,10 @@ Let $\pi : \mathbb{R}^2 \to \mathbb{R}$, $\pi(x, y) = x$, and $\mathbf{Y} = b(x)
 d\pi\big(\partial_x|_{(x,y)}\big)[g] = \partial_x|_{(x,y)}[g \circ \pi] = \partial_x (g \circ \pi)(x,y) = g'(x) = \frac{d}{dx}\Big|_x [g], \qquad
 d\pi\big(\partial_y|_{(x,y)}\big)[g] = \partial_y|_{(x,y)}[g \circ \pi] = \partial_y\, g(x) = 0 ,
 \]
-where $d/dx|_x$ is the coordinate derivation of $\mathbb{R}$ at $x$ (Definition~\ref{def:coordinate-derivation-R}, with the coordinate written $x$), and $\partial_y\, g(x) = 0$ because $g(x)$ does not depend on $y$. Derivations that agree on every germ are equal, so $d\pi(\partial_x|_{(x,y)}) = d/dx|_x$ and $d\pi(\partial_y|_{(x,y)}) = 0$.
+where $d/dx|_x$ is the coordinate derivation of $\mathbb{R}$ at $x$ (Definition~\ref{def:coordinate-derivation-R}, with the coordinate written $x$), and $\partial_y\, g(x) = 0$ because $g(x)$ does not depend on $y$. Derivations that agree on every germ are equal, so $d\pi(\partial_x|_{(x,y)}) = d/dx|_x$ and $d\pi(\partial_y|_{(x,y)}) = 0$. In matrix form (Theorem~\ref{lem:differential-matrix}), the matrix of $d\pi_{(x,y)}$ is the $1 \times 2$ Jacobian of $\pi$, and it sends the column of components of $\mathbf{X}_{(x,y)} = a\,\partial_x + c\,\partial_y$ to
+\[
+\begin{pmatrix} 1 & 0 \end{pmatrix} \begin{pmatrix} a(x, y) \\ c(x, y) \end{pmatrix} = a(x, y) .
+\]
 
 \emph{The condition.} $d\pi_{(x,y)}$ is linear (Proposition~\ref{prop:pushforward-derivation}), so
 \[
@@ -17005,7 +17614,13 @@ Let $G = \GL(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subs
 \begin{proof}
 \textit{(Lecture~19 --- ``we have run out of diagrams to chase. We actually have to compute something.'' The lecture's computation, with the index bookkeeping written out. Lecture~19 proved this together with Theorem~\ref{thm:linear-group-bracket}, which reduces every linear group to this case.)}
 
-\emph{Coordinates.} Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \GL(d, \mathbb{R})$ rather than $g$, ``because I want to think of it as a variable.'' The entries $x^i_j$ are the standard coordinates of $\Mat(d,\mathbb{R}) \cong \mathbb{R}^{d^2}$, ``indexed in a funny way'', and a tangent vector $V = (V^i_j) \in \Mat(d, \mathbb{R}) = T_X\GL(d,\mathbb{R})$ is $\sum_{i,j} V^i_j\, \partial/\partial x^i_j|_X$ (Corollary~\ref{cor:tangent-vs}). The basic computation is
+\emph{Coordinates.} Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \GL(d, \mathbb{R})$ rather than $g$, ``because I want to think of it as a variable.'' Written out,
+\[
+A = \begin{pmatrix} a^1_1 & \cdots & a^1_d \\ \vdots & \ddots & \vdots \\ a^d_1 & \cdots & a^d_d \end{pmatrix},
+\qquad
+X = \begin{pmatrix} x^1_1 & \cdots & x^1_d \\ \vdots & \ddots & \vdots \\ x^d_1 & \cdots & x^d_d \end{pmatrix},
+\]
+the upper index numbering the rows and the lower index the columns. The entries $x^i_j$ are the standard coordinates of $\Mat(d,\mathbb{R}) \cong \mathbb{R}^{d^2}$, ``indexed in a funny way'', and a tangent vector $V = (V^i_j) \in \Mat(d, \mathbb{R}) = T_X\GL(d,\mathbb{R})$ is $\sum_{i,j} V^i_j\, \partial/\partial x^i_j|_X$ (Corollary~\ref{cor:tangent-vs}). The basic computation is
 \[
 \frac{\partial}{\partial x^i_j}\big(x^l_n\big) = \delta_{il}\, \delta_{jn} ,
 \]
@@ -17188,7 +17803,16 @@ the last step by Theorem~\ref{thm:gl-bracket}. Under the identification of $T_IG
 In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image of a bracket. Lecture~19 checked this directly in one case: ``we have a theorem, but it's good to check.''
 
 \begin{exbox}[The Commutator of Skew-Symmetric Matrices]\exlabel{ex:skew-bracket}
-$T_I\Ogp(n) = \Skew(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem~\ref{thm:classical-summary}). If $A, B \in \Skew(n,\mathbb{R})$, then $[A, B] = AB - BA \in \Skew(n,\mathbb{R})$.
+$T_I\Ogp(n) = \Skew(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem~\ref{thm:classical-summary}). Written out, an element of $\Skew(n, \mathbb{R})$ has zero diagonal, and its entries below the diagonal are the negatives of those above:
+\[
+A = \begin{pmatrix}
+0 & a_{12} & \cdots & a_{1n} \\
+-a_{12} & 0 & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+-a_{1n} & -a_{2n} & \cdots & 0
+\end{pmatrix} .
+\]
+ If $A, B \in \Skew(n,\mathbb{R})$, then $[A, B] = AB - BA \in \Skew(n,\mathbb{R})$.
 \end{exbox}
 
 \begin{proof}
@@ -17489,7 +18113,14 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 
 \emph{$m = 0$.} If $n = 0$, every $dF_p$ is onto the zero space, so $S = \varnothing$. If $n \ge 1$, $M$ is countable (a second-countable discrete space), so $S \subseteq F(M)$ is countable; a point of $\mathbb{R}^n$ lies in cubes of arbitrarily small volume, so a countable set has measure zero by Lemma~\ref{lem:measure-zero-basic}(2), in every chart of $N$.
 
-\emph{Reduction to Euclidean space.} Suppose $m \ge 1$ and the theorem holds whenever the domain has dimension $< m$. If $n = 0$ there is nothing to prove, so let $n \ge 1$. Each $p \in M$ has a chart $(U_p, \varphi_p)$ with $F(U_p)$ inside the domain of a chart $(V_p, \psi_p)$ of $N$ (shrink a chart at $p$ into $F^{-1}(V_p)$, by continuity). By Lemma~\ref{lem:countable-subcover} countably many $U_i = U_{p_i}$ cover $M$, so $S = \bigcup_i F(C \cap U_i)$. In the charts, $\hat F_i = \psi_i \circ F \circ \varphi_i^{-1} : \varphi_i(U_i) \to \mathbb{R}^n$, and since charts are diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), $p$ is a critical point of $F$ exactly when $\varphi_i(p)$ is one of $\hat F_i$; so $\psi_i\big(F(C \cap U_i)\big)$ is the set of singular values of $\hat F_i$. If that set has measure zero in $\mathbb{R}^n$, then $F(C \cap U_i)$, covered by the single chart $(V_i, \psi_i)$, has measure zero in $N$, and so does the countable union $S$ (Proposition~\ref{prop:measure-zero-every-chart}). So it suffices to treat $F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open, with $C = \{ x : \operatorname{rank} DF(x) < n \}$.
+\emph{Reduction to Euclidean space.} Suppose $m \ge 1$ and the theorem holds whenever the domain has dimension $< m$. If $n = 0$ there is nothing to prove, so let $n \ge 1$. Each $p \in M$ has a chart $(U_p, \varphi_p)$ with $F(U_p)$ inside the domain of a chart $(V_p, \psi_p)$ of $N$ (shrink a chart at $p$ into $F^{-1}(V_p)$, by continuity). By Lemma~\ref{lem:countable-subcover} countably many $U_i = U_{p_i}$ cover $M$, so $S = \bigcup_i F(C \cap U_i)$. In the charts, $\hat F_i = \psi_i \circ F \circ \varphi_i^{-1} : \varphi_i(U_i) \to \mathbb{R}^n$, and since charts are diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), $p$ is a critical point of $F$ exactly when $\varphi_i(p)$ is one of $\hat F_i$; so $\psi_i\big(F(C \cap U_i)\big)$ is the set of singular values of $\hat F_i$. If that set has measure zero in $\mathbb{R}^n$, then $F(C \cap U_i)$, covered by the single chart $(V_i, \psi_i)$, has measure zero in $N$, and so does the countable union $S$ (Proposition~\ref{prop:measure-zero-every-chart}). So it suffices to treat $F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open, with $C = \{ x : \operatorname{rank} DF(x) < n \}$, where $DF(x)$ is the $n \times m$ Jacobian
+\[
+DF(x) = \begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(x) & \cdots & \dfrac{\partial F^1}{\partial x^m}(x) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^n}{\partial x^1}(x) & \cdots & \dfrac{\partial F^n}{\partial x^m}(x)
+\end{pmatrix} .
+\]
 
 \emph{A filtration of $C$.} For $k \ge 1$ let $C_k \subseteq C$ be the set of $x \in C$ at which all partial derivatives of $F$ of orders $1, \ldots, k$ vanish, so $C \supseteq C_1 \supseteq C_2 \supseteq \cdots$. These sets are closed in $U$: $C$ is where all $n \times n$ minors of $DF$ vanish, and $C_k$ is cut out of $C$ by finitely many more continuous functions. Fix an integer $k_0 \ge 1$ with $k_0 > m/n - 1$, that is, $n(k_0 + 1) > m$ (for instance $k_0 = \max(1, \lfloor m/n \rfloor)$; the condition $k_0 \ge 1$ matters when $m < n$). Then
 \[
@@ -17497,7 +18128,16 @@ C = (C \setminus C_1) \cup \bigcup_{k=1}^{k_0 - 1} (C_k \setminus C_{k+1}) \cup 
 \]
 and it suffices to show that the image of each piece has measure zero.
 
-\emph{Step 1: $F(C \setminus C_1)$ has measure zero.} If $n = 1$ then $C \setminus C_1 = \varnothing$: a nonzero first partial at $x$ makes the $1 \times m$ matrix $DF(x)$ have rank $1$. Let $n \ge 2$. Replacing $U$ by the open set $U \setminus C_1$, we may assume $C_1 = \varnothing$. Let $a \in C$. Some first partial of $F$ is nonzero at $a$; renumbering coordinates, $\partial F^1/\partial x^1(a) \neq 0$. Then $h(x) = (F^1(x), x^2, \ldots, x^m)$ has invertible derivative at $a$, so by the inverse function theorem (Theorem~\ref{thm:inverse-function}) it is a diffeomorphism from an open $W_a \ni a$ onto an open set; choose a closed ball $K_a \ni a$ in $W_a$ with $a$ in its interior. In the coordinates $(u, v) = h(x)$, $u \in \mathbb{R}$, $v \in \mathbb{R}^{m-1}$, the map $G = F \circ h^{-1}$ has the form $G(u, v) = (u, G^2(u,v), \ldots, G^n(u, v))$, so
+\emph{Step 1: $F(C \setminus C_1)$ has measure zero.} If $n = 1$ then $C \setminus C_1 = \varnothing$: a nonzero first partial at $x$ makes the $1 \times m$ matrix $DF(x)$ have rank $1$. Let $n \ge 2$. Replacing $U$ by the open set $U \setminus C_1$, we may assume $C_1 = \varnothing$. Let $a \in C$. Some first partial of $F$ is nonzero at $a$; renumbering coordinates, $\partial F^1/\partial x^1(a) \neq 0$. Then $h(x) = (F^1(x), x^2, \ldots, x^m)$ has invertible derivative at $a$, so by the inverse function theorem (Theorem~\ref{thm:inverse-function}) it is a diffeomorphism from an open $W_a \ni a$ onto an open set; choose a closed ball $K_a \ni a$ in $W_a$ with $a$ in its interior. \textit{(Computed; not from lecture.)} The derivative of $h$ is upper triangular,
+\[
+Dh(a) = \begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(a) & \dfrac{\partial F^1}{\partial x^2}(a) & \cdots & \dfrac{\partial F^1}{\partial x^m}(a) \\
+0 & 1 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & 1
+\end{pmatrix},
+\]
+so $\det Dh(a) = \partial F^1/\partial x^1(a) \neq 0$. In the coordinates $(u, v) = h(x)$, $u \in \mathbb{R}$, $v \in \mathbb{R}^{m-1}$, the map $G = F \circ h^{-1}$ has the form $G(u, v) = (u, G^2(u,v), \ldots, G^n(u, v))$, so
 \[
 DG(u, v) = \begin{pmatrix} 1 & 0 \\ * & \big(\partial G^i/\partial v^j\big) \end{pmatrix},
 \]

@@ -128,7 +128,13 @@ The two differentials are built in opposite directions. The Jacobian is computed
 
 ![[§37 Regular Submanifolds#^def-37-4]]
 
-In $\mathbb{R}^n$ the dot product identifies covectors with vectors, so the differential $df_p$ appears as the gradient, a pulled-back covector as the transpose of the Jacobian applied to a gradient, and a conormal covector $dF^i|_p$ as the normal vector $\nabla F^i(p)$. An abstract manifold has no dot product, so the covector versions are the intrinsic ones; an inner product on each tangent space — a metric — would turn them back into vectors.
+In $\mathbb{R}^n$ the dot product identifies covectors with vectors, so the differential $df_p$ appears as the gradient, a pulled-back covector as the transpose of the Jacobian applied to a gradient, and a conormal covector $dF^i|_p$ as the normal vector $\nabla F^i(p)$. For $F = (F_1, \ldots, F_m) : \mathbb{R}^N \to \mathbb{R}^m$ as in the recalled Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]], $f$ smooth near $F(p)$, and $y_1, \ldots, y_m$ the coordinates of $\mathbb{R}^m$, the chain rule $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$, with the gradients written as columns, reads
+
+$$
+\begin{pmatrix} \dfrac{\partial (f \circ F)}{\partial x_1}(p) \\ \vdots \\ \dfrac{\partial (f \circ F)}{\partial x_N}(p) \end{pmatrix} = \begin{pmatrix} \dfrac{\partial F_1}{\partial x_1}(p) & \cdots & \dfrac{\partial F_m}{\partial x_1}(p) \\ \vdots & & \vdots \\ \dfrac{\partial F_1}{\partial x_N}(p) & \cdots & \dfrac{\partial F_m}{\partial x_N}(p) \end{pmatrix} \begin{pmatrix} \dfrac{\partial f}{\partial y_1}\big(F(p)\big) \\ \vdots \\ \dfrac{\partial f}{\partial y_m}\big(F(p)\big) \end{pmatrix} ,
+$$
+
+the $N \times m$ matrix in the middle being $(DF_p)^{\mathsf T}$. An abstract manifold has no dot product, so the covector versions are the intrinsic ones; an inner product on each tangent space — a metric — would turn them back into vectors.
 
 ## Regular Points, Regular Values and the Theorems Behind Them
 

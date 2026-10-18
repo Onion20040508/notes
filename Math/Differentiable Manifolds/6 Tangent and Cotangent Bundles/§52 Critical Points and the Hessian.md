@@ -22,7 +22,16 @@ Throughout, $M$ is a smooth manifold of dimension $m$ and $f : M \to \mathbb{R}$
 > H_{ij}(p) = \frac{\partial^2 f_\varphi}{\partial r^i\, \partial r^j}\big(\varphi(p)\big), \qquad i, j = 1, \ldots, m,
 > $$
 >
-> also written $\partial^2 f/\partial x^i \partial x^j(p)$. It depends on the chart in general. Only the values of $f$ on $U$ enter, so the definition applies verbatim to a function smooth on an open set containing $U$.
+> also written $\partial^2 f/\partial x^i \partial x^j(p)$. Written out,
+>
+> $$
+> H_p = \begin{pmatrix}
+> \dfrac{\partial^2 f_\varphi}{\partial r^1\, \partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial^2 f_\varphi}{\partial r^1\, \partial r^m}\big(\varphi(p)\big) \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial^2 f_\varphi}{\partial r^m\, \partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial^2 f_\varphi}{\partial r^m\, \partial r^m}\big(\varphi(p)\big)
+> \end{pmatrix} .
+> $$
+> It depends on the chart in general. Only the values of $f$ on $U$ enter, so the definition applies verbatim to a function smooth on an open set containing $U$.
 
 ^def-52-1
 
@@ -95,6 +104,14 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 >
 > $$
 > J_{ki} = \frac{\partial y^k}{\partial x^i}(p) \qquad \text{in row } k \text{ and column } i .
+> \]
+> Written out,
+> \[
+> J = \begin{pmatrix}
+> \dfrac{\partial y^1}{\partial x^1}(p) & \cdots & \dfrac{\partial y^1}{\partial x^m}(p) \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial y^m}{\partial x^1}(p) & \cdots & \dfrac{\partial y^m}{\partial x^m}(p)
+> \end{pmatrix} .
 > $$
 >
 > Then, for all $i, j$,
@@ -231,7 +248,12 @@ At a critical point the transformation law is $H^{(x)}_p = J^{\mathsf T} H^{(y)}
 > \operatorname{Hess}_p f : T_pM \times T_pM \longrightarrow \mathbb{R}, \qquad \operatorname{Hess}_p f(v, w) = \sum_{i,j=1}^m H_{ij}(p)\, v^i\, w^j, \quad v^i = v[x^i],\ w^j = w[x^j],
 > $$
 >
-> computed in any smooth chart $(U, \varphi = (x^i))$ at $p$; it does not depend on the chart, and is bilinear and symmetric, by Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]]. On the coordinate basis, $\operatorname{Hess}_p f\big(\partial/\partial x^i|_p, \partial/\partial x^j|_p\big) = H_{ij}(p)$.
+> computed in any smooth chart $(U, \varphi = (x^i))$ at $p$; it does not depend on the chart, and is bilinear and symmetric, by Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]]. In matrix form, with $H_p$ the Hessian matrix of the chart (Definition [[§52 Critical Points and the Hessian#^def-52-1|§52.1]]),
+>
+> $$
+> \operatorname{Hess}_p f(v, w) = \begin{pmatrix} v^1 & \cdots & v^m \end{pmatrix} H_p \begin{pmatrix} w^1 \\ \vdots \\ w^m \end{pmatrix} .
+> $$
+> On the coordinate basis, $\operatorname{Hess}_p f\big(\partial/\partial x^i|_p, \partial/\partial x^j|_p\big) = H_{ij}(p)$.
 
 ^def-52-2
 
@@ -334,6 +356,13 @@ The next proposition makes the condition concrete. Since $\operatorname{Hess}_p 
 > $$
 >
 > so nondegenerate critical points look, up to a change of chart, like the critical point of a nondegenerate quadratic form. Neither Sylvester's law nor the Morse lemma is proved in these notes.
+> *(Computed; not from lecture.)* In the chart of the Morse lemma the Hessian matrix at $p$ is block diagonal,
+>
+> $$
+> H_p = \begin{pmatrix} -2\, I_\lambda & 0 \\ 0 & 2\, I_{m-\lambda} \end{pmatrix},
+> $$
+>
+> with exactly $\lambda$ negative eigenvalues, the index.
 
 ^rem-52-1
 
@@ -384,7 +413,21 @@ $$
 > \hat\varphi \circ \zeta \circ \varphi^{-1}(r) = (r, 0, \ldots, 0), \qquad r \in \varphi(U) .
 > $$
 >
-> Its Jacobian is the $2m \times m$ matrix $\binom{I_m}{0}$: the first $m$ components are $r^k$, with $\partial r^k/\partial r^i = \delta^k_i$, and the last $m$ are the constant $0$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], applied to $\zeta$ with the source chart $\varphi$ and the target chart $\hat\varphi$, whose $2m$ coordinate functions are $\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m$, the $i$-th column of this matrix gives
+> Its Jacobian is the $2m \times m$ matrix $\binom{I_m}{0}$: the first $m$ components are $r^k$, with $\partial r^k/\partial r^i = \delta^k_i$, and the last $m$ are the constant $0$. Written out, the first $m$ rows forming $I_m$ and the last $m$ rows zero,
+>
+> $$
+> \begin{pmatrix} I_m \\ 0 \end{pmatrix}
+> =
+> \begin{pmatrix}
+> 1 & \cdots & 0 \\
+> \vdots & \ddots & \vdots \\
+> 0 & \cdots & 1 \\
+> 0 & \cdots & 0 \\
+> \vdots & & \vdots \\
+> 0 & \cdots & 0
+> \end{pmatrix} .
+> $$
+> By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], applied to $\zeta$ with the source chart $\varphi$ and the target chart $\hat\varphi$, whose $2m$ coordinate functions are $\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m$, the $i$-th column of this matrix gives
 >
 > $$
 > \zeta_{\ast p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big) = \sum_{k=1}^m \delta^k_i\, \frac{\partial}{\partial \bar x^k}\Big|_{(p,0)} + \sum_{j=1}^m 0 \cdot \frac{\partial}{\partial \xi_j}\Big|_{(p,0)} = \frac{\partial}{\partial \bar x^i}\Big|_{(p,0)} .
@@ -509,7 +552,18 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > [!proof]+ Proof
 > *(Not from lecture; filled in. The submitted solution uses the basis $\partial/\partial \bar x^i, \partial/\partial \xi_j$ directly; this proposition says what the two halves of the basis span.)*
 >
-> *(1)* By Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]](1), $\pi$ is smooth and its coordinate representation in the charts $\hat\varphi$ and $\varphi$ is $(r, b) \mapsto r$, with Jacobian the $m \times 2m$ matrix $(I_m \mid 0)$: the $k$-th component $r^k$ has partial derivative $\delta^k_i$ with respect to the $i$-th of the first $m$ variables and $0$ with respect to each of the last $m$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], applied to $\pi$ with the source chart $\hat\varphi$ (coordinates $\bar x^1, \ldots, \xi_m$) and the target chart $\varphi$, with $\pi(T^{\ast}U) \subseteq U$, the columns of this matrix give
+> *(1)* By Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]](1), $\pi$ is smooth and its coordinate representation in the charts $\hat\varphi$ and $\varphi$ is $(r, b) \mapsto r$, with Jacobian the $m \times 2m$ matrix $(I_m \mid 0)$: the $k$-th component $r^k$ has partial derivative $\delta^k_i$ with respect to the $i$-th of the first $m$ variables and $0$ with respect to each of the last $m$. Written out, the first $m$ columns forming $I_m$ and the last $m$ columns zero,
+>
+> $$
+> \left(\begin{array}{c|c} I_m & 0 \end{array}\right)
+> =
+> \left(\begin{array}{ccc|ccc}
+> 1 & \cdots & 0 & 0 & \cdots & 0 \\
+> \vdots & \ddots & \vdots & \vdots & & \vdots \\
+> 0 & \cdots & 1 & 0 & \cdots & 0
+> \end{array}\right) .
+> $$
+> By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], applied to $\pi$ with the source chart $\hat\varphi$ (coordinates $\bar x^1, \ldots, \xi_m$) and the target chart $\varphi$, with $\pi(T^{\ast}U) \subseteq U$, the columns of this matrix give
 >
 > $$
 > \pi_{\ast(p,0)}\Big(\frac{\partial}{\partial \bar x^i}\Big|_{(p,0)}\Big) = \sum_{k=1}^m \delta^k_i\, \frac{\partial}{\partial x^k}\Big|_p = \frac{\partial}{\partial x^i}\Big|_p, \qquad \pi_{\ast(p,0)}\Big(\frac{\partial}{\partial \xi_j}\Big|_{(p,0)}\Big) = \sum_{k=1}^m 0 \cdot \frac{\partial}{\partial x^k}\Big|_p = 0 .
@@ -566,6 +620,20 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > $$
 >
 > the matrix of $(s_f)_{\ast q}$ in the coordinate bases is the $2m \times m$ matrix $\binom{I_m}{H_q}$.
+> Written out, with rows indexed by $\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m$ and columns by $\partial/\partial x^1|_q, \ldots, \partial/\partial x^m|_q$,
+>
+> $$
+> \left(\begin{array}{c} I_m \\ \hline H_q \end{array}\right)
+> =
+> \left(\begin{array}{ccc}
+> 1 & \cdots & 0 \\
+> \vdots & \ddots & \vdots \\
+> 0 & \cdots & 1 \\ \hline
+> H_{11}(q) & \cdots & H_{1m}(q) \\
+> \vdots & \ddots & \vdots \\
+> H_{m1}(q) & \cdots & H_{mm}(q)
+> \end{array}\right) .
+> $$
 > 3. If $p \in \operatorname{Crit}(f)$, then $s_f(p) = (p, 0)$, and for $v \in T_pM$, in the splitting of Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](3),
 >
 > $$

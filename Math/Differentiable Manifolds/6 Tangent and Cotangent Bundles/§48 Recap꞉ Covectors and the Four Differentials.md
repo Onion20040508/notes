@@ -54,7 +54,17 @@ $$
 
 ![[§34 The Cotangent Space from Germs#^thm-34-4]]
 
-**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-6|Proposition §34.6]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-4|Remark: One Symbol for Two Pullbacks]] explains.
+**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-6|Proposition §34.6]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-4|Remark: One Symbol for Two Pullbacks]] explains. In charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $F(p)$, the matrix of $F_p^{\ast}$ in the dual bases $dy^j|_{F(p)}$ and $dx^i|_p$ is the transpose of the Jacobian of Step 5 of [[§47 Recap꞉ Germs, Derivations and Tangent Vectors|§47]] (Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]](2)):
+
+$$
+\begin{pmatrix}
+\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^1}(p) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial F^1}{\partial x^m}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+\end{pmatrix},
+$$
+
+an $m \times n$ matrix whose $j$-th column lists the components of $F_p^{\ast}(dy^j|_{F(p)}) = d(F^j)_p$.
 
 ![[§34 The Cotangent Space from Germs#^def-34-3]]
 

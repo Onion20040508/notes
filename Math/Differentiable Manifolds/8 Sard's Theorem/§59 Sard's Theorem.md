@@ -40,7 +40,15 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 >
 > *$m = 0$.* If $n = 0$, every $dF_p$ is onto the zero space, so $S = \varnothing$. If $n \ge 1$, $M$ is countable (a second-countable discrete space), so $S \subseteq F(M)$ is countable; a point of $\mathbb{R}^n$ lies in cubes of arbitrarily small volume, so a countable set has measure zero by Lemma [[§58 Sets of Measure Zero#^lem-58-1|§58.1]](2), in every chart of $N$.
 >
-> *Reduction to Euclidean space.* Suppose $m \ge 1$ and the theorem holds whenever the domain has dimension $< m$. If $n = 0$ there is nothing to prove, so let $n \ge 1$. Each $p \in M$ has a chart $(U_p, \varphi_p)$ with $F(U_p)$ inside the domain of a chart $(V_p, \psi_p)$ of $N$ (shrink a chart at $p$ into $F^{-1}(V_p)$, by continuity). By Lemma [[§58 Sets of Measure Zero#^lem-58-3|§58.3]] countably many $U_i = U_{p_i}$ cover $M$, so $S = \bigcup_i F(C \cap U_i)$. In the charts, $\hat F_i = \psi_i \circ F \circ \varphi_i^{-1} : \varphi_i(U_i) \to \mathbb{R}^n$, and since charts are diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), $p$ is a critical point of $F$ exactly when $\varphi_i(p)$ is one of $\hat F_i$; so $\psi_i\big(F(C \cap U_i)\big)$ is the set of singular values of $\hat F_i$. If that set has measure zero in $\mathbb{R}^n$, then $F(C \cap U_i)$, covered by the single chart $(V_i, \psi_i)$, has measure zero in $N$, and so does the countable union $S$ (Proposition [[§58 Sets of Measure Zero#^prop-58-4|§58.4]]). So it suffices to treat $F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open, with $C = \{ x : \operatorname{rank} DF(x) < n \}$.
+> *Reduction to Euclidean space.* Suppose $m \ge 1$ and the theorem holds whenever the domain has dimension $< m$. If $n = 0$ there is nothing to prove, so let $n \ge 1$. Each $p \in M$ has a chart $(U_p, \varphi_p)$ with $F(U_p)$ inside the domain of a chart $(V_p, \psi_p)$ of $N$ (shrink a chart at $p$ into $F^{-1}(V_p)$, by continuity). By Lemma [[§58 Sets of Measure Zero#^lem-58-3|§58.3]] countably many $U_i = U_{p_i}$ cover $M$, so $S = \bigcup_i F(C \cap U_i)$. In the charts, $\hat F_i = \psi_i \circ F \circ \varphi_i^{-1} : \varphi_i(U_i) \to \mathbb{R}^n$, and since charts are diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), $p$ is a critical point of $F$ exactly when $\varphi_i(p)$ is one of $\hat F_i$; so $\psi_i\big(F(C \cap U_i)\big)$ is the set of singular values of $\hat F_i$. If that set has measure zero in $\mathbb{R}^n$, then $F(C \cap U_i)$, covered by the single chart $(V_i, \psi_i)$, has measure zero in $N$, and so does the countable union $S$ (Proposition [[§58 Sets of Measure Zero#^prop-58-4|§58.4]]). So it suffices to treat $F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open, with $C = \{ x : \operatorname{rank} DF(x) < n \}$, where $DF(x)$ is the $n \times m$ Jacobian
+>
+> $$
+> DF(x) = \begin{pmatrix}
+> \dfrac{\partial F^1}{\partial x^1}(x) & \cdots & \dfrac{\partial F^1}{\partial x^m}(x) \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial F^n}{\partial x^1}(x) & \cdots & \dfrac{\partial F^n}{\partial x^m}(x)
+> \end{pmatrix} .
+> $$ 
 >
 > *A filtration of $C$.* For $k \ge 1$ let $C_k \subseteq C$ be the set of $x \in C$ at which all partial derivatives of $F$ of orders $1, \ldots, k$ vanish, so $C \supseteq C_1 \supseteq C_2 \supseteq \cdots$. These sets are closed in $U$: $C$ is where all $n \times n$ minors of $DF$ vanish, and $C_k$ is cut out of $C$ by finitely many more continuous functions. Fix an integer $k_0 \ge 1$ with $k_0 > m/n - 1$, that is, $n(k_0 + 1) > m$ (for instance $k_0 = \max(1, \lfloor m/n \rfloor)$; the condition $k_0 \ge 1$ matters when $m < n$). Then
 >
@@ -50,7 +58,18 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 >
 > and it suffices to show that the image of each piece has measure zero.
 >
-> *Step 1: $F(C \setminus C_1)$ has measure zero.* If $n = 1$ then $C \setminus C_1 = \varnothing$: a nonzero first partial at $x$ makes the $1 \times m$ matrix $DF(x)$ have rank $1$. Let $n \ge 2$. Replacing $U$ by the open set $U \setminus C_1$, we may assume $C_1 = \varnothing$. Let $a \in C$. Some first partial of $F$ is nonzero at $a$; renumbering coordinates, $\partial F^1/\partial x^1(a) \neq 0$. Then $h(x) = (F^1(x), x^2, \ldots, x^m)$ has invertible derivative at $a$, so by the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]) it is a diffeomorphism from an open $W_a \ni a$ onto an open set; choose a closed ball $K_a \ni a$ in $W_a$ with $a$ in its interior. In the coordinates $(u, v) = h(x)$, $u \in \mathbb{R}$, $v \in \mathbb{R}^{m-1}$, the map $G = F \circ h^{-1}$ has the form $G(u, v) = (u, G^2(u,v), \ldots, G^n(u, v))$, so
+> *Step 1: $F(C \setminus C_1)$ has measure zero.* If $n = 1$ then $C \setminus C_1 = \varnothing$: a nonzero first partial at $x$ makes the $1 \times m$ matrix $DF(x)$ have rank $1$. Let $n \ge 2$. Replacing $U$ by the open set $U \setminus C_1$, we may assume $C_1 = \varnothing$. Let $a \in C$. Some first partial of $F$ is nonzero at $a$; renumbering coordinates, $\partial F^1/\partial x^1(a) \neq 0$. Then $h(x) = (F^1(x), x^2, \ldots, x^m)$ has invertible derivative at $a$, so by the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]) it is a diffeomorphism from an open $W_a \ni a$ onto an open set; choose a closed ball $K_a \ni a$ in $W_a$ with $a$ in its interior. *(Computed; not from lecture.)* The derivative of $h$ is upper triangular,
+>
+> $$
+> Dh(a) = \begin{pmatrix}
+> \dfrac{\partial F^1}{\partial x^1}(a) & \dfrac{\partial F^1}{\partial x^2}(a) & \cdots & \dfrac{\partial F^1}{\partial x^m}(a) \\
+> 0 & 1 & \cdots & 0 \\
+> \vdots & \vdots & \ddots & \vdots \\
+> 0 & 0 & \cdots & 1
+> \end{pmatrix},
+> $$
+>
+> so $\det Dh(a) = \partial F^1/\partial x^1(a) \neq 0$. In the coordinates $(u, v) = h(x)$, $u \in \mathbb{R}$, $v \in \mathbb{R}^{m-1}$, the map $G = F \circ h^{-1}$ has the form $G(u, v) = (u, G^2(u,v), \ldots, G^n(u, v))$, so
 >
 > $$
 > DG(u, v) = \begin{pmatrix} 1 & 0 \\ \ast & \big(\partial G^i/\partial v^j\big) \end{pmatrix},

@@ -115,6 +115,25 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > $$
 > [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j .
 > $$
+> *(Computed; not from lecture.)* In matrix form, with the columns of components and the Jacobian matrices $\big[\partial Y^j/\partial x^i\big]$ and $\big[\partial X^j/\partial x^i\big]$ of the coefficient functions (row $j$, column $i$), the components $[\mathbf{X}, \mathbf{Y}]^j$ of the bracket are
+>
+> $$
+> \begin{pmatrix} [\mathbf{X}, \mathbf{Y}]^1 \\ \vdots \\ [\mathbf{X}, \mathbf{Y}]^m \end{pmatrix}
+> =
+> \begin{pmatrix}
+> \dfrac{\partial Y^1}{\partial x^1} & \cdots & \dfrac{\partial Y^1}{\partial x^m} \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial Y^m}{\partial x^1} & \cdots & \dfrac{\partial Y^m}{\partial x^m}
+> \end{pmatrix}
+> \begin{pmatrix} X^1 \\ \vdots \\ X^m \end{pmatrix}
+> -
+> \begin{pmatrix}
+> \dfrac{\partial X^1}{\partial x^1} & \cdots & \dfrac{\partial X^1}{\partial x^m} \\
+> \vdots & \ddots & \vdots \\
+> \dfrac{\partial X^m}{\partial x^1} & \cdots & \dfrac{\partial X^m}{\partial x^m}
+> \end{pmatrix}
+> \begin{pmatrix} Y^1 \\ \vdots \\ Y^m \end{pmatrix} .
+> $$
 >
 > *Lee: Proposition 8.26*
 
@@ -344,6 +363,11 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 >
 > $$
 > [\hat a, \hat b] = \hat a \hat b - \hat b \hat a = \widehat{a \times b} .
+> $$
+> Here, written out (Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]]), for $a = (a_1, a_2, a_3)$,
+>
+> $$
+> \hat a = \begin{pmatrix} 0 & -a_3 & a_2 \\ a_3 & 0 & -a_1 \\ -a_2 & a_1 & 0 \end{pmatrix} .
 > $$
 
 ^ex-55-3

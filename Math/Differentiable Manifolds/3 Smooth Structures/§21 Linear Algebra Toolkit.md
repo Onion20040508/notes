@@ -15,8 +15,28 @@ tags: [differentiable-manifolds, math591]
 > Let $A : V \to W$ be linear, with $V$ and $W$ finite-dimensional.
 > 1. *Rank–nullity.* $\dim V = \dim\ker A + \operatorname{rank} A$. Consequently: if $A$ is injective then $\dim V \le \dim W$; if $A$ is surjective then $\dim V \ge \dim W$; and if $\dim V = \dim W$, then $A$ is injective $\iff$ surjective $\iff$ bijective.
 > 2. *Bases determine linear maps.* A linear map is determined by its values on a basis, and any assignment of values to the vectors of a basis extends uniquely to a linear map. In particular, two linear maps that agree on a basis are equal.
-> 3. *Matrices.* Given bases $(e_1, \ldots, e_m)$ of $V$ and $(f_1, \ldots, f_n)$ of $W$, the matrix $[A] = (a_{ij})$ of $A$ is defined by $A e_j = \sum_i a_{ij} f_i$: its $j$-th *column* holds the coordinates of $Ae_j$. Composition corresponds to matrix multiplication, $[AB] = [A][B]$, and $\operatorname{rank} A$ is the rank of $[A]$, which equals the rank of its transpose.
+> 3. *Matrices.* Given bases $(e_1, \ldots, e_m)$ of $V$ and $(f_1, \ldots, f_n)$ of $W$, the matrix $[A] = (a_{ij})$ of $A$ is defined by $A e_j = \sum_i a_{ij} f_i$: its $j$-th *column* holds the coordinates of $Ae_j$. Written out, $[A]$ is the $n \times m$ matrix
+>
+> $$
+> [A] = \begin{pmatrix}
+> a_{11} & \cdots & a_{1j} & \cdots & a_{1m} \\
+> \vdots & & \vdots & & \vdots \\
+> a_{n1} & \cdots & a_{nj} & \cdots & a_{nm}
+> \end{pmatrix},
+> \qquad
+> Ae_j = a_{1j} f_1 + \cdots + a_{nj} f_n.
+> $$
+> Composition corresponds to matrix multiplication, $[AB] = [A][B]$, and $\operatorname{rank} A$ is the rank of $[A]$, which equals the rank of its transpose.
 > 4. *Change of basis.* If $e'_j = \sum_i P_{ij}\, e_i$ and $f'_l = \sum_k Q_{kl}\, f_k$ are new bases, with $P$ and $Q$ invertible, then the matrix of $A$ in the new bases is $Q^{-1} [A] P$.
+> Here
+>
+> $$
+> P = \begin{pmatrix} P_{11} & \cdots & P_{1m} \\ \vdots & & \vdots \\ P_{m1} & \cdots & P_{mm} \end{pmatrix},
+> \qquad
+> Q = \begin{pmatrix} Q_{11} & \cdots & Q_{1n} \\ \vdots & & \vdots \\ Q_{n1} & \cdots & Q_{nn} \end{pmatrix},
+> $$
+>
+> the $j$-th column of $P$ holding the old coordinates of $e'_j$, and the $l$-th column of $Q$ those of $f'_l$.
 >
 > *Lee: Corollary B.21 and Proposition B.24*
 
@@ -207,6 +227,21 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 > $$
 >
 > By the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], applied to the covector $A^{\ast}(\varphi^k) \in V^{\ast}$, $A^{\ast}(\varphi^k) = \sum_j A^{\ast}(\varphi^k)(e_j)\,\varepsilon^j = \sum_j a_{kj}\,\varepsilon^j$. By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), the $k$-th column of the matrix of $A^{\ast}$ (in the bases $(\varphi^k)$ of $W^{\ast}$ and $(\varepsilon^j)$ of $V^{\ast}$) holds the coordinates of $A^{\ast}(\varphi^k)$, namely $a_{k1}, \ldots, a_{km}$. The $k$-th column of the matrix of $A^{\ast}$ is therefore the $k$-th row of $[A]$: the matrix of $A^{\ast}$ is $[A]^{\mathsf T}$.
+> Written out, as an $m \times n$ matrix,
+>
+> $$
+> [A^{\ast}] = \begin{pmatrix}
+> a_{11} & a_{21} & \cdots & a_{n1} \\
+> \vdots & \vdots & & \vdots \\
+> a_{1m} & a_{2m} & \cdots & a_{nm}
+> \end{pmatrix} = [A]^{\mathsf T},
+> \qquad
+> [A] = \begin{pmatrix}
+> a_{11} & \cdots & a_{1m} \\
+> \vdots & & \vdots \\
+> a_{n1} & \cdots & a_{nm}
+> \end{pmatrix}.
+> $$
 >
 > *(3)* By (2) and Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), $\operatorname{rank} A^{\ast} = \operatorname{rank} [A]^{\mathsf T} = \operatorname{rank} [A] = \operatorname{rank} A$. Also $\dim W^{\ast} = \dim W$ and $\dim V^{\ast} = \dim V$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]). A linear map is surjective exactly when its rank, the dimension of its image, equals the dimension of its target (a subspace of full dimension is the whole space), and injective exactly when its kernel is $0$, which by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) means its rank equals the dimension of its source. Now $A$ is surjective iff $\operatorname{rank} A = \dim W$, iff $\operatorname{rank} A^{\ast} = \dim W^{\ast}$, which by rank–nullity for $A^{\ast} : W^{\ast} \to V^{\ast}$ means $A^{\ast}$ is injective. Likewise $A$ is injective iff $\operatorname{rank} A = \dim V = \dim V^{\ast}$, iff $\operatorname{rank} A^{\ast} = \dim V^{\ast}$, iff $A^{\ast}$ is surjective.
 

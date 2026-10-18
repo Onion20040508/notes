@@ -131,6 +131,13 @@ the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^
 > $$
 >
 > where the entries $\ast$ are the second-derivative sums above, and $X(q)$ is the $m \times n$ matrix whose $j$-th row is $X_j(q)^{\mathsf T} = \big(X_j^1(q), \ldots, X_j^n(q)\big)$ (recall $\tilde X_j(\varphi(q)) = X_j(q)$).
+> Written out, with the partials of the $\tilde y^j$ taken at $(\varphi(q), v)$,
+>
+> $$
+> \tilde F'\big(\varphi(q), v\big) = \left(\begin{array}{ccc|ccc|ccc} 0 & \cdots & 0 & 1 & \cdots & 0 & 0 & \cdots & 0 \\ \vdots & & \vdots & \vdots & \ddots & \vdots & \vdots & & \vdots \\ 0 & \cdots & 0 & 0 & \cdots & 1 & 0 & \cdots & 0 \\ \hline \dfrac{\partial \tilde y^1}{\partial r^1} & \cdots & \dfrac{\partial \tilde y^1}{\partial r^m} & \dfrac{\partial \tilde y^1}{\partial r^{m+1}} & \cdots & \dfrac{\partial \tilde y^1}{\partial r^n} & X_1^1(q) & \cdots & X_1^n(q) \\ \vdots & & \vdots & \vdots & & \vdots & \vdots & & \vdots \\ \dfrac{\partial \tilde y^m}{\partial r^1} & \cdots & \dfrac{\partial \tilde y^m}{\partial r^m} & \dfrac{\partial \tilde y^m}{\partial r^{m+1}} & \cdots & \dfrac{\partial \tilde y^m}{\partial r^n} & X_m^1(q) & \cdots & X_m^n(q) \end{array}\right) ,
+> $$
+>
+> with $n - m$ rows above the line and $m$ below, and $m$, $n - m$, $n$ columns in the three groups.
 >
 > *It has rank $n$.* Write the $s$-th of the first $n - m$ rows as $(0, e_s, 0)$, with $e_s \in \mathbb{R}^{n-m}$, and the $j$-th of the last $m$ rows as $(\ast, \ast, X_j(q)^{\mathsf T})$, and suppose a linear combination of the rows vanishes:
 >
@@ -207,6 +214,11 @@ the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^
 > $$
 >
 > so $J(q)^{\mathsf T} c = 0$, and $c = 0$ by injectivity. A square matrix with zero kernel is invertible (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)). ($J J^{\mathsf T}$ is the Gram matrix of the gradients: its $(s, s')$ entry is $\nabla G^s(q) \cdot \nabla G^{s'}(q)$.)
+> Written out,
+>
+> $$
+> J(q) J(q)^{\mathsf T} = \begin{pmatrix} \nabla G^1(q) \cdot \nabla G^1(q) & \cdots & \nabla G^1(q) \cdot \nabla G^{n-m}(q) \\ \vdots & \ddots & \vdots \\ \nabla G^{n-m}(q) \cdot \nabla G^1(q) & \cdots & \nabla G^{n-m}(q) \cdot \nabla G^{n-m}(q) \end{pmatrix} .
+> $$
 >
 > *(2) The map and its inverse.* For $q \in U$ put $A(q) = \big(J(q) J(q)^{\mathsf T}\big)^{-1} J(q)$, an $(n-m) \times n$ matrix. Its entries are smooth functions on $U$: the entries of $J(q)$ are partial derivatives $\partial x^{m+s}/\partial r^l(q)$ of components of the smooth chart $\varphi$; those of $J J^{\mathsf T}$ are sums of products of these; and by the cofactor formula $(J J^{\mathsf T})^{-1} = \operatorname{adj}(J J^{\mathsf T}) / \det(J J^{\mathsf T})$, each entry of the inverse is a polynomial in the entries of $J J^{\mathsf T}$ divided by $\det(J J^{\mathsf T})$, which is smooth and, by (1), nowhere zero on $U$. Define
 >
@@ -324,7 +336,7 @@ $$
 > (T^{\mathrm{geo}}_pM)^\perp = \operatorname{Span}\{(-2a, 1)\}, \qquad \mathcal{N} = \Big\{\, \big((a, a^2),\ \lambda(-2a, 1)\big) : a, \lambda \in \mathbb{R} \,\Big\}.
 > $$
 >
-> Note that $(-2a, 1) = \nabla g(p)$, as Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]](1) predicts: $\varphi(x, y) = (x, y - x^2)$ is a chart of $\mathbb{R}^2$ adapted to $M$ with $U = \mathbb{R}^2$ and $G = g$. Indeed $\varphi$ is a diffeomorphism of $\mathbb{R}^2$ onto itself, smooth with the smooth inverse $(x, z) \mapsto (x, z + x^2)$, so $(\mathbb{R}^2, \varphi) = (\mathbb{R}^2, \varphi \circ \mathrm{id})$ is a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](2), applied to the identity chart of $\mathbb{R}^2$ and the diffeomorphism $\varphi$; and its second coordinate $y - x^2 = g(x, y)$ vanishes exactly on $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = 1$). It is the chart $\Phi$ of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], graph $\Rightarrow$ slice, for $h(x) = x^2$.
+> Note that $(-2a, 1) = \nabla g(p)$, as Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]](1) predicts: $\varphi(x, y) = (x, y - x^2)$ is a chart of $\mathbb{R}^2$ adapted to $M$ with $U = \mathbb{R}^2$ and $G = g$. *(Computed; not from lecture.)* Its Jacobian is $\varphi'(x, y) = \begin{pmatrix} 1 & 0 \\ -2x & 1 \end{pmatrix}$, with determinant $1$; the second row is $\nabla g(x, y) = (-2x, 1)$. Indeed $\varphi$ is a diffeomorphism of $\mathbb{R}^2$ onto itself, smooth with the smooth inverse $(x, z) \mapsto (x, z + x^2)$, so $(\mathbb{R}^2, \varphi) = (\mathbb{R}^2, \varphi \circ \mathrm{id})$ is a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](2), applied to the identity chart of $\mathbb{R}^2$ and the diffeomorphism $\varphi$; and its second coordinate $y - x^2 = g(x, y)$ vanishes exactly on $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = 1$). It is the chart $\Phi$ of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], graph $\Rightarrow$ slice, for $h(x) = x^2$.
 >
 > *A global parametrization of $\mathcal{N}$.* Define
 >

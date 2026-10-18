@@ -46,6 +46,13 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > so $C_{pq} = C_p C_q$.
 >
 > *Smooth into $\operatorname{Mat}(3, \mathbb{R})$.* The $(a, b)$ entry of the matrix of $C_q$ is the $e_a$-coordinate of $q\, e_b\, \bar q$. With $q = \sum_c x_c e_c$ and $\bar q = \sum_d \pm x_d e_d$, bilinearity gives $q e_b \bar q = \sum_{c,d} \pm x_c x_d\, e_c e_b e_d$, and each $e_c e_b e_d$ is $\pm$ a basis element. So the entries of $C_q$ are quadratic polynomials in the coordinates $x_0, \ldots, x_3$ of $q$: $C$ is the restriction to $S^3$ of a smooth map $\mathbb{R}^4 \to \operatorname{Mat}(3, \mathbb{R})$, hence smooth from $S^3$ (compose with the inclusion, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)).
+> *(Computed; not from lecture.)* Explicitly, for $q = x_0 + x_1 i + x_2 j + x_3 k$, column $b$ holding the coordinates of $q\, e_b\, \bar q$,
+>
+> $$
+> C_q = \begin{pmatrix} x_0^2 + x_1^2 - x_2^2 - x_3^2 & 2(x_1 x_2 - x_0 x_3) & 2(x_1 x_3 + x_0 x_2) \\ 2(x_1 x_2 + x_0 x_3) & x_0^2 - x_1^2 + x_2^2 - x_3^2 & 2(x_2 x_3 - x_0 x_1) \\ 2(x_1 x_3 - x_0 x_2) & 2(x_2 x_3 + x_0 x_1) & x_0^2 - x_1^2 - x_2^2 + x_3^2 \end{pmatrix} ;
+> $$
+>
+> for $q = \gamma_j(t)$ it gives the matrices $C(\gamma_j(t))$ of Theorem [[§46 SU(2) → SO(3)꞉ The Double Cover#^thm-46-4|§46.4]].
 >
 > *Values in $\mathrm{SO}(3)$.* For $A \in \mathrm{O}(3)$, $\det(A)^2 = \det(A^{\mathsf T} A) = 1$, so $\det \circ C : S^3 \to \{\pm 1\}$. It is continuous, and $S^3$ is connected (Proposition [[§45 The Unit Quaternions and SU(2)#^prop-45-4|§45.4]]); if it took both values, the preimages of $1$ and of $-1$ would be disjoint nonempty open sets covering $S^3$. So it is constant, equal to its value $\det C_1 = \det I = 1$ at $q = 1$ (where $C_1(v) = v$). Hence $C$ takes values in $\mathrm{SO}(3)$.
 >
@@ -87,7 +94,12 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 >
 > where $q^2 = c^2 + 2cs\, u + s^2 u^2 = (c^2 - s^2) + 2cs\, u = \cos\theta + \sin\theta\, u$ by the double-angle formulas, and the last step uses $uv = u \times v$.
 >
-> *This is the rotation by $\theta$ about $u$.* Choose a unit $v \perp u$ and put $w = u \times v$, a unit vector orthogonal to $u$ and $v$. Then $(v, w, u)$ is an orthonormal basis with $v \times w = v \times (u \times v) = u\,(v \cdot v) - v\,(v \cdot u) = u$, so $Q = (v \ w \ u)$, the matrix with these columns, lies in $\mathrm{SO}(3)$ ($\det Q = (v \times w) \cdot u = 1$) and $Q e_3 = u$. By the previous step, applied to $v$ and to $w \perp u$, and $u \times w = u \times (u \times v) = u\,(u \cdot v) - v\,(u \cdot u) = -v$,
+> *This is the rotation by $\theta$ about $u$.* Choose a unit $v \perp u$ and put $w = u \times v$, a unit vector orthogonal to $u$ and $v$. Then $(v, w, u)$ is an orthonormal basis with $v \times w = v \times (u \times v) = u\,(v \cdot v) - v\,(v \cdot u) = u$, so $Q = (v \ w \ u)$, the matrix with these columns, written in components $v = \sum_b v_b e_b$, $w = \sum_b w_b e_b$, $u = \sum_b u_b e_b$,
+>
+> $$
+> Q = \begin{pmatrix} v_1 & w_1 & u_1 \\ v_2 & w_2 & u_2 \\ v_3 & w_3 & u_3 \end{pmatrix} ,
+> $$
+> lies in $\mathrm{SO}(3)$ ($\det Q = (v \times w) \cdot u = 1$) and $Q e_3 = u$. By the previous step, applied to $v$ and to $w \perp u$, and $u \times w = u \times (u \times v) = u\,(u \cdot v) - v\,(u \cdot u) = -v$,
 >
 > $$
 > C_q(v) = \cos\theta\, v + \sin\theta\, w, \qquad C_q(w) = \cos\theta\, w - \sin\theta\, v, \qquad C_q(u) = u .

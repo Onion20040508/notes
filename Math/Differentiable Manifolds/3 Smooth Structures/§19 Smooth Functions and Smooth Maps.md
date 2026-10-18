@@ -505,7 +505,16 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 >
 > - $\iota^{p_1}$, with $p_1 \in U_1$, in the charts $(U_2, \varphi_2)$ and $(U_1 \times U_2, \varphi_1 \times \varphi_2)$: likewise $(\varphi_1 \times \varphi_2)\big(p_1, \varphi_2^{-1}(s)\big) = \big(\varphi_1(p_1), s\big)$.
 >
-> Each of these is linear or affine (a linear map plus a constant vector), hence smooth. Since smooth charts cover every manifold involved, every point of each domain lies in such a pair of charts, so all four maps satisfy Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. They are smooth, so the maps are smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]), and by that proposition their coordinate representations in any other smooth charts are smooth as well.
+> Each of these is linear or affine (a linear map plus a constant vector), hence smooth. In matrix form, with $r \in \mathbb{R}^{m_1}$ and $s \in \mathbb{R}^{m_2}$, the four linear maps (for the inclusions, the linear parts) are
+>
+> $$
+> \begin{pmatrix} I_{m_1} & 0 \end{pmatrix}, \qquad
+> \begin{pmatrix} 0 & I_{m_2} \end{pmatrix}, \qquad
+> \begin{pmatrix} I_{m_1} \\ 0 \end{pmatrix}, \qquad
+> \begin{pmatrix} 0 \\ I_{m_2} \end{pmatrix},
+> $$
+>
+> of sizes $m_1 \times (m_1 + m_2)$, $m_2 \times (m_1 + m_2)$, $(m_1 + m_2) \times m_1$ and $(m_1 + m_2) \times m_2$. Since smooth charts cover every manifold involved, every point of each domain lies in such a pair of charts, so all four maps satisfy Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. They are smooth, so the maps are smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]), and by that proposition their coordinate representations in any other smooth charts are smooth as well.
 
 ^pf-19-11
 
