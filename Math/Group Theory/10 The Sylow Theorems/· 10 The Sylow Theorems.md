@@ -21,6 +21,10 @@ tags: [chapter, group-theory]
 
 ## Central results
 - [[Groups of Order p²]] (§51.7)
+- [[First Sylow Theorem]] (§52.4)
+- [[Second Sylow Theorem]] (§52.6)
+- [[Third Sylow Theorem]] (§52.9)
+- [[Groups of Order pq]] (§52.11)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

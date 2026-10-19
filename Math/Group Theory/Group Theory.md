@@ -127,6 +127,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.
 - [[Group Theory Toolkit]]: how to show $H \le G$, well-definedness, (non-)isomorphism, normality; standard examples; exam traps.
 - [[Group Theory Course Log]]: what was taught when, and where it is in these notes.
+- [[Group Theory Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, the example library), with [[Group Theory HW Drill]] (every problem-set problem broken into small questions) and [[Group Theory Notes Drill]] (definitions, worksheet problems and core proofs as questions, by priority).
 - Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]], [[493 Problem Set 4|PS 4]], [[493 Problem Set 5|PS 5]], [[493 Problem Set 6|PS 6]].
 
 ## Prerequisites from other subjects
