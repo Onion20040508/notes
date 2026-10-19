@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591, review]
 
 # Homework Drill (HW1–HW5)
 
-Uribe on the midterm (Lecture 17, Oct 9): the short proofs "will be either identical to homework problems, or very close to pieces of homework problems". Every problem of Assignments 1–5 is broken here into small questions, in order. All five assignments are submitted.
+Uribe on the midterm (Lecture 17, Oct 9): the short proofs "will be either identical to homework problems, or very close to pieces of homework problems". Every problem of Assignments 1–5 is broken here into small questions, in order. All five assignments are submitted. Official solutions exist for Assignments 1, 2, 3 and 5; for Assignment 4 your submitted solution was distributed as the official one.
 
 **How to drill.**
 1. Read the statement and try the questions top to bottom on paper, closed book.
@@ -40,7 +40,7 @@ Show that a connected topological manifold is path connected.
 >
 > **Key results.** [[§2 Topological Manifolds#^thm-2-8|Thm §2.8]] (this problem, PSet 1 #1); concatenation and reversal of paths [[§2 Topological Manifolds#^lem-2-7|Lem §2.7]]; consequence [[§2 Topological Manifolds#^cor-2-9|Cor §2.9]].
 >
-> **Strategy (S13).** Clopen argument: the set of points reachable from $x_0$ by a path is nonempty, open and closed, because chart domains are path connected.
+> **Strategy (S13′).** Clopen argument: the set of points reachable from $x_0$ by a path is nonempty, open and closed, because chart domains are path connected.
 >
 > **Difficulty 1.** Submitted solution: standard, four explicit steps (path-connected chart neighbourhood, concatenation lemma, clopen set, conclusion). The same clopen template is reused in HW4.1.
 
@@ -235,7 +235,7 @@ If $G/H$ is compact and $X$ is Hausdorff, then $\Phi$ is a homeomorphism.
 - [ ] Q8 **[why]** The board version said "$G$ compact" with no condition on $X$. Why is that the wrong pair of hypotheses (which space must be compact, and why is Hausdorffness of $X$ needed)?
 
 > [!tip]- Hint (b): strategy
-> **Strategy (S12).** A continuous bijection from a compact space to a Hausdorff space is closed, hence a homeomorphism.
+> **Strategy (S13).** A continuous bijection from a compact space to a Hausdorff space is closed, hence a homeomorphism.
 
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.**
@@ -268,7 +268,7 @@ Explain why $\mathbb{CP}^n$ (complex lines in $\mathbb{C}^{n+1}$) is naturally $
 - [ ] Q7 **[why]** Where does the Hausdorff argument use that $|\lambda| = 1$ (isometric action) and that $S^1$ is compact? What goes wrong for $\mathbb{C}^\times$ acting on all of $\mathbb{C}^{n+1}$?
 
 > [!tip]- Hint (a): strategy
-> **Strategy (S3, S4, S12).** Normalization $z \mapsto z/|z|$ descends through the universal property in both directions; quotients by group actions are open, so bases push forward; compact group acting by isometries gives Hausdorff; continuous image of the compact sphere.
+> **Strategy (S3, S4, S13).** Normalization $z \mapsto z/|z|$ descends through the universal property in both directions; quotients by group actions are open, so bases push forward; compact group acting by isometries gives Hausdorff; continuous image of the compact sphere.
 
 #### (b)
 
@@ -383,7 +383,7 @@ $F : \mathbb{R}^N \to \mathbb{R}^k$, $G : \mathbb{R}^k \to \mathbb{R}^\ell$ smoo
 >
 > **Key results.** [[§26 Transversality#^thm-26-1|Thm §26.1]] (this problem); transversality is the regular value condition [[§26 Transversality#^prop-26-2|Prop §26.2]]; [[§26 Transversality#^cor-26-3|Cor §26.3]]; transverse intersections [[§26 Transversality#^prop-26-4|Prop §26.4]]; failures [[§26 Transversality#^ex-26-2|Ex §26.2]]; [[§25 The Geometric Tangent Space#^thm-25-3|Thm §25.3]].
 >
-> **Strategy (S11, S5).** $M = (G \circ F)^{-1}(0)$; transversality makes $G'(q)F'(p)$ surjective; $\ker(B \circ A) = A^{-1}(\ker B)$.
+> **Strategy (S12, S5).** $M = (G \circ F)^{-1}(0)$; transversality makes $G'(q)F'(p)$ surjective; $\ker(B \circ A) = A^{-1}(\ker B)$.
 >
 > **Difficulty 2.** Submitted solution: about one page; the same lifting argument is reused for HW5.2.
 >
@@ -612,7 +612,7 @@ $F : M \to N$ smooth with $F_{\ast ,p} = 0$ for all $p$, $M$ connected. Prove $F
 >
 > **Key results.** [[§30 The Differential in Coordinates#^prop-30-10|Prop §30.10]] (this problem); chart mapped into a chart [[§19 Smooth Functions and Smooth Maps#^lem-19-3|Lem §19.3]]; connectedness [[§1 Point-Set Topology Review#^prop-1-7|Prop §1.7]].
 >
-> **Strategy (S1, S13).** In a chart ball the Jacobian of the coordinate representation vanishes, so (MVT along segments) $F$ is locally constant; locally constant + connected ⇒ constant.
+> **Strategy (S1, S13′).** In a chart ball the Jacobian of the coordinate representation vanishes, so (MVT along segments) $F$ is locally constant; locally constant + connected ⇒ constant.
 >
 > **Difficulty 1.** Submitted solution: builds $C$ as the union of all neighbourhoods of $p_0$ on which $F$ is constant and shows it is clopen. Shorter: $F^{-1}(F(p_0))$ is closed because points of $N$ are closed.
 
@@ -634,7 +634,7 @@ Show that if $M$ is compact there is no submersion $F : M \to \mathbb{R}^k$ for 
 >
 > **Key results.** Local normal form for submersions [[§36 Submersions#^thm-36-6|Thm §36.6]]; submersions are open maps [[§36 Submersions#^cor-36-9|Cor §36.9]]; [[§36 Submersions#^thm-36-10|Thm §36.10]], [[§36 Submersions#^cor-36-11|Cor §36.11]] (this problem).
 >
-> **Strategy (S12, S13).** $F(M)$ is open (submersion), closed (compact in Hausdorff), nonempty; $\mathbb{R}^k$ connected ⇒ $F(M) = \mathbb{R}^k$, which is not compact.
+> **Strategy (S13, S13′).** $F(M)$ is open (submersion), closed (compact in Hausdorff), nonempty; $\mathbb{R}^k$ connected ⇒ $F(M) = \mathbb{R}^k$, which is not compact.
 >
 > **Difficulty 1.** Submitted solution: short; notes the $k = 0$ and $M = \emptyset$ edge cases.
 

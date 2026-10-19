@@ -43,6 +43,8 @@ The notes are arranged in logical order, not in the order of the lectures. This 
 
 All problem sets listed have been submitted.
 
+Official solutions to Assignments 1, 2, 3 and 5 were distributed before the midterm (in the course's Midterm folder, `math591_sols_hwk.tex`). For Assignment 4 your own submitted solution was taken as the official solution.
+
 | Homework | Problem | Treated in |
 |---|---|---|
 | PSet 1 | 1: connected manifolds are path connected | [[§2 Topological Manifolds#^rem-2-8\|Rem. in §2]], [[§2 Topological Manifolds#^thm-2-8\|Thm. §2.8]] |
