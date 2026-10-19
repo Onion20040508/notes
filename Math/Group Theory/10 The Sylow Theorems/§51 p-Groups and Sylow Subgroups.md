@@ -36,10 +36,48 @@ Nontrivial $p$-groups have nontrivial center ([[§35 The Center#^thm-35-3|Theore
 
 ^prop-51-1
 
-> [!proof]- Proof
-> *[To be proved.]*
+> [!proof]+ Proof
+> *(Not from lecture; filled in. The route is the counting the lecture of 10/16 used in the proof of the Third Sylow Theorem, Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]]: the orbits of a $p$-group have size a power of $p$, so $|X| \equiv |X^P| \pmod p$.)* Write $|P| = p^k$ (Definition [[§35 The Center#^def-35-3|§35.3]]), write $\star$ for the action (Definition [[§25 Actions#^def-25-1|§25.1]]), and let
+>
+> $$
+> X^P = \{ x \in X : g \star x = x \text{ for all } g \in P \} = \bigcap_{g \in P} \operatorname{Fix}(g)
+> $$
+>
+> be the set of points fixed by every element of $P$ (Definition [[§26 Stabilizers and Fixed Points#^def-26-2|§26.2]]). We must show $X^P \neq \varnothing$. We show that $|X^P| \equiv |X| \pmod p$.
+>
+> **(1) $X$ is the disjoint union of its orbits.** By Orbits Partition $X$ (Proposition [[§27 Orbits#^prop-27-1|§27.1]]), $X$ is the disjoint union of the distinct orbits $Px = \{ g \star x : g \in P \}$ (Definition [[§27 Orbits#^def-27-1|§27.1]]). Since $X$ is finite there are finitely many, say $O_1, \ldots, O_r$, and
+>
+> $$
+> |X| = |O_1| + |O_2| + \cdots + |O_r|.
+> $$
+>
+> **(2) Every orbit has size a power of $p$.** Let $x \in X$. By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]), with $\operatorname{Stab}(x)$ the stabilizer (Definition [[§26 Stabilizers and Fixed Points#^def-26-1|§26.1]]),
+>
+> $$
+> p^k = |P| = |Px| \cdot |\operatorname{Stab}(x)|,
+> $$
+>
+> so $|Px|$ is a positive divisor of $p^k$. If $|Px| > 1$, writing $|Px|$ and $|\operatorname{Stab}(x)|$ as products of primes gives a prime factorization of $p^k$, which by Unique Prime Factorization (Theorem [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]]) consists of $k$ copies of $p$; so every prime factor of $|Px|$ is $p$. Hence $|Px| = p^\ell$ for some $\ell$ with $0 \leq \ell \leq k$.
+>
+> **(3) The orbits of size $1$ are the fixed points.** Since $x = e \star x \in Px$,
+>
+> $$
+> |Px| = 1 \iff Px = \{x\} \iff g \star x = x \text{ for all } g \in P \iff x \in X^P.
+> $$
+>
+> So the orbits of size $1$ are exactly the singletons $\{x\}$ with $x \in X^P$, and there are $|X^P|$ of them. By (2), every other orbit has size $p^\ell$ with $\ell \geq 1$, which is divisible by $p$.
+>
+> **(4) Counting modulo $p$.** Split the sum in (1) into the orbits of size $1$ and the others, writing $|O_i| = p^{\ell_i}$ with $\ell_i \geq 1$ for the latter (by (3)):
+>
+> $$
+> |X| = \sum_{x \in X^P} 1 + \sum_{i \,:\, |O_i| > 1} p^{\ell_i} = |X^P| + p \sum_{i \,:\, |O_i| > 1} p^{\ell_i - 1} \equiv |X^P| \pmod p.
+> $$
+>
+> By hypothesis $|X| \not\equiv 0 \pmod p$, so $|X^P| \not\equiv 0 \pmod p$; in particular $|X^P| \neq 0$. So there is a point $x \in X^P$, that is, a point of $X$ fixed by every element of $P$.
 
 ^pf-51-1
+
+*Uses:* [[§52 The Sylow Theorems#^thm-52-9|§52.9]], [[§35 The Center#^def-35-3|Def. §35.3]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Stabilizers and Fixed Points#^def-26-2|Def. §26.2]], [[§27 Orbits#^prop-27-1|§27.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]]
 
 Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m$.
 
@@ -147,10 +185,73 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 
 ^prop-51-5
 
-> [!proof]- Proof
-> *[To be proved.]*
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Write $\operatorname{Mat}_n(\mathbb{F}_p)$ for the $n \times n$ matrices over $\mathbb{F}_p$, $I_n$ for the identity matrix, and
+>
+> $$
+> \mathcal{N} = \{ N \in \operatorname{Mat}_n(\mathbb{F}_p) : N_{ij} = 0 \text{ whenever } i \geq j \}
+> $$
+>
+> for the strictly upper triangular matrices. A matrix has the displayed form exactly when it is $I_n + N$ with $N \in \mathcal{N}$ (the entries $b_{ij}$, $i < j$, are the entries of $N$ above the diagonal), so
+>
+> $$
+> P = \{ I_n + N : N \in \mathcal{N} \} \subseteq \operatorname{Mat}_n(\mathbb{F}_p).
+> $$
+>
+> We show: **(1)** a product of $j$ matrices in $\mathcal{N}$ vanishes on and below the $(j-1)$-st diagonal above the main one; **(2)** $P$ contains $I_n$ and is closed under products; **(3)** every $A \in P$ is invertible with $A^{-1} \in P$, so $P$ is a subgroup of $GL_n(\mathbb{F}_p)$; **(4)** $|P| = p^{\binom{n}{2}}$; **(5)** $p^{\binom{n}{2}}$ is the order of a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. Matrix products are computed by the entry formula $(AB)_{ab} = \sum_{m=1}^{n} A_{am} B_{mb}$ (Definition [[§3 Basic Examples of Groups#^def-3-6|§3.6]]).
+>
+> **(1) Products of strictly upper triangular matrices.** *Claim: if $j \geq 1$ and $N_1, \ldots, N_j \in \mathcal{N}$, then $(N_1 N_2 \cdots N_j)_{ab} = 0$ unless $b \geq a + j$.* By induction on $j$. For $j = 1$ this is the definition of $\mathcal{N}$: $(N_1)_{ab} = 0$ unless $b > a$, that is, unless $b \geq a + 1$. Assume the claim for $j$. Then
+>
+> $$
+> (N_1 \cdots N_j N_{j+1})_{ab} = \sum_{m=1}^{n} (N_1 \cdots N_j)_{am} \, (N_{j+1})_{mb},
+> $$
+>
+> and the $m$-th term can be nonzero only if $m \geq a + j$ (induction hypothesis) and $b \geq m + 1$ (case $j = 1$), which together force $b \geq a + j + 1$. So the entry is $0$ unless $b \geq a + (j + 1)$, which proves the claim. Consequences:
+> - If $N, N' \in \mathcal{N}$, then $NN' \in \mathcal{N}$, and $N^j \in \mathcal{N}$ for every $j \geq 1$: by the claim (with $j = 2$, resp. all $N_i = N$), a nonzero entry in position $(a, b)$ needs $b \geq a + 2 > a$, resp. $b \geq a + j > a$.
+> - If $N \in \mathcal{N}$, then $N^n = 0$: a nonzero entry in position $(a, b)$ would need $b \geq a + n \geq 1 + n$, impossible since $b \leq n$.
+> - $\mathcal{N}$ is closed under sums and scalar multiples, since these are computed entrywise and $0 + 0 = c \cdot 0 = 0$.
+>
+> **(2) Identity and closure.** $I_n = I_n + 0$ with $0 \in \mathcal{N}$ (all $b_{ij} = 0$), so $I_n \in P$. Let $A = I_n + N$ and $B = I_n + N'$ with $N, N' \in \mathcal{N}$. Expanding by distributivity of matrix multiplication,
+>
+> $$
+> AB = (I_n + N)(I_n + N') = I_n + (N + N' + NN'),
+> $$
+>
+> and $N + N' + NN' \in \mathcal{N}$ by (1). So $AB \in P$.
+>
+> **(3) Inverses.** Let $A = I_n + N \in P$ with $N \in \mathcal{N}$, and put ($N^0 = I_n$)
+>
+> $$
+> B = I_n - N + N^2 - \cdots + (-1)^{n-1} N^{n-1} = \sum_{j=0}^{n-1} (-1)^j N^j = I_n + \sum_{j=1}^{n-1} (-1)^j N^j.
+> $$
+>
+> The last sum lies in $\mathcal{N}$ by (1), so $B \in P$. The product telescopes, shifting the index $j + 1 \to j$ in the second sum and using $N^n = 0$ from (1):
+>
+> $$
+> AB = B + NB = \sum_{j=0}^{n-1} (-1)^j N^j + \sum_{j=0}^{n-1} (-1)^j N^{j+1} = \sum_{j=0}^{n-1} (-1)^j N^j - \sum_{j=1}^{n} (-1)^j N^j = N^0 - (-1)^n N^n = I_n.
+> $$
+>
+> Since $N N^j = N^{j+1} = N^j N$, also $BN = NB$, so $BA = B + BN = B + NB = AB = I_n$. Hence $A$ is invertible with $A^{-1} = B \in P$; in particular $P \subseteq GL_n(\mathbb{F}_p)$ (Definition [[§3 Basic Examples of Groups#^def-3-6|§3.6]]). Together with (2), $P$ contains the identity and is closed under products and inverses, so $P$ is a subgroup of $GL_n(\mathbb{F}_p)$ (Definition [[§4 Subgroups#^def-4-1|§4.1]]).
+>
+> **(4) The order of $P$.** An element $I_n + N$ of $P$ is determined by the entries $b_{ij}$ of $N$ in the positions $(i, j)$ with $1 \leq i < j \leq n$; each of these may be any of the $p$ elements of $\mathbb{F}_p$, independently of the others, and different choices give different matrices. In row $i$ there are $n - i$ such positions ($j = i + 1, \ldots, n$), so the number of positions is
+>
+> $$
+> \sum_{i=1}^{n} (n - i) = (n - 1) + (n - 2) + \cdots + 1 + 0 = \frac{n(n-1)}{2} = \binom{n}{2},
+> $$
+>
+> and therefore $|P| = p^{\binom{n}{2}}$.
+>
+> **(5) Comparison with $|GL_n(\mathbb{F}_p)|$.** By The Order of $GL_n(\mathbb{F}_p)$ (Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-4|§51.4]]),
+>
+> $$
+> |GL_n(\mathbb{F}_p)| = \prod_{i=0}^{n-1} (p^n - p^i) = p^{\binom{n}{2}}\, m, \qquad m = \prod_{k=1}^{n} (p^k - 1),
+> $$
+>
+> and $p \nmid m$: for each $k \geq 1$, $p \nmid p^k - 1$ (since $p \mid p^k$, it would divide $1$), so by Euclid's Lemma (Lemma [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]]), applied $n - 1$ times, $p$ does not divide the product $m$. So in the factorization $|GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} m$ with $p \nmid m$, the exponent of $p$ is $\binom{n}{2}$, and a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ is a subgroup of order $p^{\binom{n}{2}}$ (Definition [[§51 p-Groups and Sylow Subgroups#^def-51-2|§51.2]]). By (3) and (4), $P$ is a subgroup of $GL_n(\mathbb{F}_p)$ of order $p^{\binom{n}{2}}$, hence a Sylow $p$-subgroup.
 
 ^pf-51-5
+
+*Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§51 p-Groups and Sylow Subgroups#^prop-51-4|§51.4]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§51 p-Groups and Sylow Subgroups#^def-51-2|Def. §51.2]]
 
 > [!example] Example §51.2: A Sylow $5$-Subgroup of $GL_2(\mathbb{F}_5)$
 > $|GL_2(\mathbb{F}_5)| = (5^2 - 1)(5^2 - 5) = 24 \cdot 20 = 480 = 2^5 \cdot 3 \cdot 5$ (The Order of $GL_n(\mathbb{F}_p)$, [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Proposition §51.4]]), so a [[§51 p-Groups and Sylow Subgroups#^def-51-2|Sylow]] $5$-subgroup has order $5$. The matrix $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ satisfies $u^j = \begin{pmatrix} 1 & j \\ 0 & 1 \end{pmatrix}$, so it has order $5$, and $\langle u \rangle$ is a Sylow $5$-subgroup. It is exactly the unitriangular group of WS 10.2 ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]) for $n = 2$, $p = 5$, which has $p^{\binom{2}{2}} = 5$ elements.

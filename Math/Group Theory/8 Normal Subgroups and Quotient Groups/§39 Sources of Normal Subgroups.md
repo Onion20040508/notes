@@ -90,10 +90,26 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 
 ^prop-39-4
 
-> [!proof]- Proof
-> *[To be proved.]*
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)*
+>
+> **(1) True.** Let $M := \varphi^{-1}(N) = \{x \in F : \varphi(x) \in N\}$. Since $N$ is a subgroup of $G$, $M$ is a subgroup of $F$ (Proposition [[§15 Homomorphisms#^prop-15-4|§15.4]](2)). To show $M \trianglelefteq F$ (Definition [[§38 Normal Subgroups#^def-38-1|§38.1]]), let $f \in F$ and $x \in M$; we must show $fxf^{-1} \in M$, i.e. $\varphi(fxf^{-1}) \in N$. Since $\varphi$ is a homomorphism and preserves inverses (Proposition [[§15 Homomorphisms#^prop-15-1|§15.1]]),
+>
+> $$ \varphi(fxf^{-1}) = \varphi(f)\,\varphi(x)\,\varphi(f^{-1}) = \varphi(f)\,\varphi(x)\,\varphi(f)^{-1}. $$
+>
+> Here $\varphi(x) \in N$ because $x \in M$, and $N \trianglelefteq G$, so the right side lies in $N$ (Definition [[§38 Normal Subgroups#^def-38-1|§38.1]] with $g = \varphi(f) \in G$). Hence $fxf^{-1} \in M$.
+>
+> **(2) False in general.** Take $G = \langle (1\,2) \rangle = \{e, (1\,2)\}$ and $N = G$, which is normal in $G$ (Proposition [[§38 Normal Subgroups#^prop-38-1|§38.1]](2)); take $H = S_3$ and $\psi: G \to S_3$ the inclusion. Then $\psi(N) = \{e, (1\,2)\}$, which is not normal in $S_3$ (Proposition [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]).
+>
+> **(3) True when $\psi$ is surjective.** $\psi(N)$ is a subgroup of $H$ (Proposition [[§15 Homomorphisms#^prop-15-4|§15.4]](1)). Let $h \in H$ and $y \in \psi(N)$; we must show $hyh^{-1} \in \psi(N)$. Write $y = \psi(n)$ with $n \in N$, and, since $\psi$ is surjective, $h = \psi(g)$ with $g \in G$. Then (Proposition [[§15 Homomorphisms#^prop-15-1|§15.1]])
+>
+> $$ hyh^{-1} = \psi(g)\,\psi(n)\,\psi(g)^{-1} = \psi(g)\,\psi(n)\,\psi(g^{-1}) = \psi(gng^{-1}), $$
+>
+> and $gng^{-1} \in N$ because $N \trianglelefteq G$. So $hyh^{-1} \in \psi(N)$. Surjectivity is used only to write the conjugating element $h$ as $\psi(g)$; in the example of (2), $h = (1\,3)$ is not of this form.
 
 ^pf-39-4
+
+*Uses:* [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§38 Normal Subgroups#^prop-38-1|§38.1]], [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]
 
 > [!theorem] Theorem §39.5: A Normal Subgroup Inside a Subgroup of Finite Index
 > Let $H$ be a subgroup of $G$ with $[G : H] = n$ finite. Then there is a normal subgroup $N$ of $G$ with $N \subseteq H \subseteq G$ and $[G : N] \leq n!$.
@@ -244,7 +260,39 @@ So $K \cong U_8$ ([[§16 Isomorphisms#^prop-16-8|Proposition §16.8]]): the Klei
 
 ^prop-39-9
 
-> [!proof]- Proof
-> *[To be proved.]*
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* All four sets are subgroups of $GL_2(\mathbb{R})$: (1)–(3) by Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]], and (4) because $(-I_2)^2 = I_2$, so $\{I_2, -I_2\}$ contains $I_2$ and is closed under products and inverses. By Definition [[§38 Normal Subgroups#^def-38-1|§38.1]], a subgroup $H$ is not normal as soon as there are $g \in GL_2(\mathbb{R})$ and $h \in H$ with $ghg^{-1} \notin H$.
+>
+> **(1) Not normal.** Let $D$ be the subgroup of invertible diagonal matrices, and take
+>
+> $$ h = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix} \in D, \qquad g = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}, \qquad g^{-1} = \begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix}. $$
+>
+> Then
+>
+> $$ ghg^{-1} = \begin{pmatrix} 1 & 2 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix} \notin D, $$
+>
+> since its $(1,2)$ entry is $1 \neq 0$. So $D$ is not normal.
+>
+> **(2) Not normal.** Let $T$ be the subgroup of invertible upper triangular matrices, and take
+>
+> $$ h = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} \in T, \qquad g = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = g^{-1} \quad (\text{as } g^2 = I_2). $$
+>
+> Then
+>
+> $$ ghg^{-1} = \begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix} \notin T, $$
+>
+> since its $(2,1)$ entry is $1 \neq 0$. So $T$ is not normal.
+>
+> **(3) Normal.** $\det: GL_2(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism with kernel $SL_2(\mathbb{R})$ (Example [[§15 Homomorphisms#^ex-15-1|§15.1]](1), Definition [[§3 Basic Examples of Groups#^def-3-7|§3.7]]), so $SL_2(\mathbb{R})$ is normal by Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]. Directly: for $g \in GL_2(\mathbb{R})$ and $A \in SL_2(\mathbb{R})$,
+>
+> $$ \det(gAg^{-1}) = \det g \cdot \det A \cdot \det(g^{-1}) = \det g \cdot 1 \cdot (\det g)^{-1} = 1. $$
+>
+> **(4) Normal.** For every $g \in GL_2(\mathbb{R})$ we have $gI_2g^{-1} = gg^{-1} = I_2$, and, since the scalar $-1$ can be pulled out of a matrix product,
+>
+> $$ g(-I_2)g^{-1} = -\big(gI_2g^{-1}\big) = -I_2 . $$
+>
+> So $g\{I_2, -I_2\}g^{-1} \subseteq \{I_2, -I_2\}$ for every $g$, and $\{I_2, -I_2\}$ is normal.
 
 ^pf-39-9
+
+*Uses:* [[§5 A Zoo of Subgroups#^ex-5-4|Ex. §5.4]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§15 Homomorphisms#^ex-15-1|Ex. §15.1]], [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]

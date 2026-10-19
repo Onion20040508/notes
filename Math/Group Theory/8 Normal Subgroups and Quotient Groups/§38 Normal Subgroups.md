@@ -100,10 +100,42 @@ tags: [group-theory, math493]
 
 ^thm-38-3
 
-> [!proof]- Proof
-> *[To be proved.]*
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* We show that each of (2), (3), (4), (5) is equivalent to (1). Throughout, recall that for a subgroup $N$ the inclusion “$gNg^{-1} \subseteq N$ for all $g \in G$” (Definition [[§38 Normal Subgroups#^def-38-1|§38.1]]) is equivalent to the equality (1), by Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], (1) $\Leftrightarrow$ (2).
+>
+> **(1) $\Rightarrow$ (2).** Let $n \in N$. Then $n = ene^{-1} \in \operatorname{Conj}(n)$ (Definition [[§33 Conjugacy Classes#^def-33-1|§33.1]]), and for every $h \in G$ we have $hnh^{-1} \in hNh^{-1} = N$ by (1); so $\operatorname{Conj}(n) \subseteq N$. Hence
+>
+> $$ N = \bigcup_{n \in N} \{n\} \subseteq \bigcup_{n \in N} \operatorname{Conj}(n) \subseteq N, $$
+>
+> so $N = \bigcup_{n \in N} \operatorname{Conj}(n)$ is a union of conjugacy classes of $G$.
+>
+> **(2) $\Rightarrow$ (1).** Write $N = \bigcup_{i \in I} \operatorname{Conj}(x_i)$. Let $g \in G$ and $n \in N$. Then $n \in \operatorname{Conj}(x_i)$ for some $i \in I$, i.e. $n = hx_ih^{-1}$ for some $h \in G$, and, using $(gh)^{-1} = h^{-1}g^{-1}$ (Proposition [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]),
+>
+> $$ gng^{-1} = g\,(hx_ih^{-1})\,g^{-1} = (gh)\,x_i\,(gh)^{-1} \in \operatorname{Conj}(x_i) \subseteq N. $$
+>
+> So $gNg^{-1} \subseteq N$ for every $g \in G$, and (1) follows by Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], (1) $\Rightarrow$ (2).
+>
+> **(1) $\Rightarrow$ (3).** By Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]](3), for every element $g'N$ of $G/N$,
+>
+> $$ \operatorname{Stab}(g'N) = g'N(g')^{-1} = N, $$
+>
+> the second equality by (1). So every element of $G/N$ has the same stabilizer, namely $N$.
+>
+> **(3) $\Rightarrow$ (1).** By (3), every element of $G/N$ has the same stabilizer as $eN$, and $\operatorname{Stab}(eN) = N$ by Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]](2). For $g \in G$, Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]](3) then gives
+>
+> $$ gNg^{-1} = \operatorname{Stab}(gN) = \operatorname{Stab}(eN) = N. $$
+>
+> **(1) $\Rightarrow$ (4).** Let $gN$ be a left coset. Multiplying the equality $gNg^{-1} = N$ of (1) on the right by $g$ (Remark [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]) gives $gN = Ng$; so $gN$ is the right coset $Ng$.
+>
+> **(4) $\Rightarrow$ (1).** Let $g \in G$. By (4), $gN = Nx$ for some $x \in G$. Now $g = ge \in gN = Nx$, and also $g = eg \in Ng$. The right cosets are the equivalence classes of $\equiv_r \pmod N$ (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]](2)), and two equivalence classes with a common element are equal (Proposition [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]]); so $Nx = Ng$. Hence $gN = Ng$, and multiplying on the right by $g^{-1}$ (Remark [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]) gives $gNg^{-1} = N$.
+>
+> **(1) $\Leftrightarrow$ (5).** Condition (5) says precisely that the rule $(g_1N)(g_2N) := (g_1g_2)N$ is a well-defined operation on $G/N$, i.e. that the result does not depend on the representatives $g_1, g_2$ chosen. By Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]], this holds if and only if $gNg^{-1} \subseteq N$ for all $g \in G$, which is equivalent to (1) by Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], (1) $\Leftrightarrow$ (2).
+>
+> Finally, since (1) is equivalent to “$gNg^{-1} \subseteq N$ for all $g \in G$”, which is Definition [[§38 Normal Subgroups#^def-38-1|§38.1]], the subgroups satisfying (1)–(5) are exactly the normal subgroups of $G$.
 
 ^pf-38-3
+
+*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]], [[§37 Multiplying Cosets#^prop-37-1|§37.1]]
 
 > [!remark]- Connections
 > - Lecture form: [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]].

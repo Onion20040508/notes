@@ -16,6 +16,7 @@ tags: [group-theory, hub]
 - [[§38 Normal Subgroups#^rem-38-2|Remark: Multiplying Sets]]
 
 ## Used in (Group Theory)
+- [[§38 Normal Subgroups#^thm-38-3|Theorem §38.3: Five Characterizations of Normality]]
 - [[§39 Sources of Normal Subgroups#^prop-39-1|Proposition §39.1: Subgroups of Index 2 Are Normal]]
 - [[§39 Sources of Normal Subgroups#^prop-39-6|Proposition §39.6: The Normal Core]]
 

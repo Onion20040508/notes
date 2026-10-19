@@ -11,10 +11,14 @@ tags: [group-theory, hub]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|Theorem §42.3: The Correspondence Theorem]], in [[§42 The Correspondence and Third Isomorphism Theorems]]
 
 ## Its proof uses
-- (only definitions)
+- [[§28 Left and Right Cosets#^def-28-1|Definition §28.1: Congruence Modulo a Subgroup]]
+- [[§28 Left and Right Cosets#^prop-28-2|Proposition §28.2: Cosets Are the Equivalence Classes]]
+- [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]
+- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|Proposition §42.1: Images of Subgroups Containing N]]
+- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|Proposition §42.2: Preimages of Subgroups of G/N]]
 
 ## Used in (Group Theory)
-- (not cited later in the course)
+- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: Quotients Along the Correspondence]]
 
 ## Connections
 - **How.** Push subgroups down with π and pull them back with π⁻¹ ([[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]]); the hypothesis N ⊆ A is what makes π⁻¹(π(A)) = A, and it is used exactly once, for “normal downstairs ⇒ normal upstairs”.

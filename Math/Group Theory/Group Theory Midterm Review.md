@@ -27,6 +27,8 @@ tags: [group-theory, math493, review]
 - [ ] The derived subgroup: Definition [[§47 Commutators#^def-47-2|§47.2]] Commutator Subgroup, Proposition [[§47 Commutators#^prop-47-4|§47.4]] Properties of the Commutator Subgroup ((1) is PS 4.4(1), WS 9.4), Proposition [[§47 Commutators#^prop-47-11|§47.11]] Abelian Quotients and Commutators (lecture 10/9).
 - [ ] The Sylow theorems: Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem (WS 10.4; class 10/14), Theorem [[§52 The Sylow Theorems#^thm-52-6|§52.6]] The Second Sylow Theorem (WS 10.6; lecture 10/16), Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]] The Third Sylow Theorem (stated on WS 10; lecture 10/16).
 
+**Your one page of notes.** A printable draft (both sides of one sheet, 6.5 pt) is in `~/Downloads/math493_midterm_notes_page.pdf`: the most-used definitions and theorems, a one-line proof sketch of every worksheet and problem-set problem, small groups, and core proofs.
+
 **Your week** (MATH 591 midterm is Wed Oct 21, 6–8 PM; this one Thu Oct 22, 6–8 PM):
 1. **Mon–Tue:** 591 first. For 493, one block each day on the worksheets: Mon Worksheets 1–5, Tue Worksheets 6–8.
 2. **Wed:** class with Speyer (bring the questions below), Worksheets 9–10, then the 591 exam.
@@ -88,12 +90,12 @@ Tick a problem when you can do it closed-book. "Proof not yet in the notes" mark
 - [ ] WS 5.4: Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]] The Action of $G$ on $G/H$ · [[Group Theory Notes Drill#^nd-prop-31-1|drill]]
 
 **Worksheet 6**
-- [ ] WS 6.1: Theorem [[§38 Normal Subgroups#^thm-38-3|§38.3]] Five Characterizations of Normality — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-thm-38-3|drill]]
+- [ ] WS 6.1: Theorem [[§38 Normal Subgroups#^thm-38-3|§38.3]] Five Characterizations of Normality · [[Group Theory Notes Drill#^nd-thm-38-3|drill]]
 - [ ] WS 6.2: Example [[§38 Normal Subgroups#^ex-38-1|§38.1]] A Non-Normal Subgroup of $S_3$ · [[Group Theory Notes Drill#^nd-ex-38-1|drill]]; Example [[§39 Sources of Normal Subgroups#^ex-39-1|§39.1]] Index-$2$ Examples
-- [ ] WS 6.3: Proposition [[§39 Sources of Normal Subgroups#^prop-39-9|§39.9]] Normal Subgroups of $GL_2(\mathbb{R})$ — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-39-9|drill]]
+- [ ] WS 6.3: Proposition [[§39 Sources of Normal Subgroups#^prop-39-9|§39.9]] Normal Subgroups of $GL_2(\mathbb{R})$ · [[Group Theory Notes Drill#^nd-prop-39-9|drill]]
 - [ ] WS 6.4: Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]] Kernels Are Normal · [[Group Theory Notes Drill#^nd-prop-39-2|drill]]
 - [ ] WS 6.5: Proposition [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]] Images Need Not Be Normal · [[Group Theory Notes Drill#^nd-prop-39-3|drill]]
-- [ ] WS 6.6: Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]] Preimages and Images of Normal Subgroups — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-39-4|drill]]
+- [ ] WS 6.6: Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]] Preimages and Images of Normal Subgroups · [[Group Theory Notes Drill#^nd-prop-39-4|drill]]
 
 **Worksheet 7**
 - [ ] WS 7.1: Proposition [[§43 Simple Groups#^prop-43-3|§43.3]] Homomorphisms out of a Simple Group · [[Group Theory Notes Drill#^nd-prop-43-3|drill]]
@@ -105,10 +107,10 @@ Tick a problem when you can do it closed-book. "Proof not yet in the notes" mark
 **Worksheet 8**
 - [ ] WS 8.1: Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]] $HN$ Is a Subgroup When $N$ Is Normal
 - [ ] WS 8.2: Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]] Second Isomorphism Theorem · [[Group Theory Notes Drill#^nd-thm-41-5|drill]]
-- [ ] WS 8.3: Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-6|§41.6]] The Order of $SN$ — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-cor-41-6|drill]]
+- [ ] WS 8.3: Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-6|§41.6]] The Order of $SN$ · [[Group Theory Notes Drill#^nd-cor-41-6|drill]]
 - [ ] WS 8.4: Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]] Images of Subgroups Containing $N$ · [[Group Theory Notes Drill#^nd-prop-42-1|drill]]
 - [ ] WS 8.5: Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]] Preimages of Subgroups of $G/N$ · [[Group Theory Notes Drill#^nd-prop-42-2|drill]]
-- [ ] WS 8.6: Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]] Quotients Along the Correspondence — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-42-4|drill]]
+- [ ] WS 8.6: Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]] Quotients Along the Correspondence · [[Group Theory Notes Drill#^nd-prop-42-4|drill]]
 
 **Worksheet 9**
 - [ ] WS 9.1: Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]] $S_3$ and $S_4$ Are Solvable · [[Group Theory Notes Drill#^nd-prop-48-1|drill]]
@@ -119,8 +121,8 @@ Tick a problem when you can do it closed-book. "Proof not yet in the notes" mark
 - [ ] WS 9.6: Theorem [[§49 The Derived Series#^thm-49-1|§49.1]] Solvability via the Derived Series · [[Group Theory Notes Drill#^nd-thm-49-1|drill]]
 
 **Worksheet 10**
-- [ ] WS 10.1: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-1|§51.1]] Fixed Points of a $p$-Group Action — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-51-1|drill]]
-- [ ] WS 10.2: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]] The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-51-5|drill]]
+- [ ] WS 10.1: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-1|§51.1]] Fixed Points of a $p$-Group Action · [[Group Theory Notes Drill#^nd-prop-51-1|drill]]
+- [ ] WS 10.2: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]] The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ · [[Group Theory Notes Drill#^nd-prop-51-5|drill]]
 - [ ] WS 10.3: Proposition [[§52 The Sylow Theorems#^prop-52-3|§52.3]] Sylow Subgroups of a Subgroup · [[Group Theory Notes Drill#^nd-prop-52-3|drill]]
 - [ ] WS 10.4: Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem · [[Group Theory Notes Drill#^nd-thm-52-4|drill]]
 - [ ] WS 10.5: Proposition [[§52 The Sylow Theorems#^prop-52-5|§52.5]] $p$-Subgroups and Conjugates of a Sylow Subgroup · [[Group Theory Notes Drill#^nd-prop-52-5|drill]]

@@ -3783,7 +3783,32 @@ Let $G$ be a group and $N$ a subgroup. The following are equivalent:
 A subgroup satisfying these conditions is a normal subgroup, $N \trianglelefteq G$.
 \end{thmbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)} We show that each of (2), (3), (4), (5) is equivalent to (1). Throughout, recall that for a subgroup $N$ the inclusion ``$gNg^{-1} \subseteq N$ for all $g \in G$'' (Definition~\ref{def:normal-subgroup}) is equivalent to the equality (1), by Proposition~\ref{prop:characterizations-normality}, (1)~$\Leftrightarrow$~(2).
+
+\textbf{(1) $\Rightarrow$ (2).} Let $n \in N$. Then $n = ene^{-1} \in \operatorname{Conj}(n)$ (Definition~\ref{def:conjugacy-class}), and for every $h \in G$ we have $hnh^{-1} \in hNh^{-1} = N$ by (1); so $\operatorname{Conj}(n) \subseteq N$. Hence
+\[ N = \bigcup_{n \in N} \{n\} \subseteq \bigcup_{n \in N} \operatorname{Conj}(n) \subseteq N, \]
+so $N = \bigcup_{n \in N} \operatorname{Conj}(n)$ is a union of conjugacy classes of $G$.
+
+\textbf{(2) $\Rightarrow$ (1).} Write $N = \bigcup_{i \in I} \operatorname{Conj}(x_i)$. Let $g \in G$ and $n \in N$. Then $n \in \operatorname{Conj}(x_i)$ for some $i \in I$, i.e.\ $n = hx_ih^{-1}$ for some $h \in G$, and, using $(gh)^{-1} = h^{-1}g^{-1}$ (Proposition~\ref{prop:inverse-product}),
+\[ gng^{-1} = g\,(hx_ih^{-1})\,g^{-1} = (gh)\,x_i\,(gh)^{-1} \in \operatorname{Conj}(x_i) \subseteq N. \]
+So $gNg^{-1} \subseteq N$ for every $g \in G$, and (1) follows by Proposition~\ref{prop:characterizations-normality}, (1)~$\Rightarrow$~(2).
+
+\textbf{(1) $\Rightarrow$ (3).} By Proposition~\ref{prop:action-g-g-h}(3), for every element $g'N$ of $G/N$,
+\[ \operatorname{Stab}(g'N) = g'N(g')^{-1} = N, \]
+the second equality by (1). So every element of $G/N$ has the same stabilizer, namely $N$.
+
+\textbf{(3) $\Rightarrow$ (1).} By (3), every element of $G/N$ has the same stabilizer as $eN$, and $\operatorname{Stab}(eN) = N$ by Proposition~\ref{prop:action-g-g-h}(2). For $g \in G$, Proposition~\ref{prop:action-g-g-h}(3) then gives
+\[ gNg^{-1} = \operatorname{Stab}(gN) = \operatorname{Stab}(eN) = N. \]
+
+\textbf{(1) $\Rightarrow$ (4).} Let $gN$ be a left coset. Multiplying the equality $gNg^{-1} = N$ of (1) on the right by $g$ (Remark~\ref{rem:multiplying-sets}) gives $gN = Ng$; so $gN$ is the right coset $Ng$.
+
+\textbf{(4) $\Rightarrow$ (1).} Let $g \in G$. By (4), $gN = Nx$ for some $x \in G$. Now $g = ge \in gN = Nx$, and also $g = eg \in Ng$. The right cosets are the equivalence classes of $\equiv_r \pmod N$ (Proposition~\ref{prop:cosets-equivalence-classes}(2)), and two equivalence classes with a common element are equal (Proposition~\ref{prop:equivalence-classes-partition-set}); so $Nx = Ng$. Hence $gN = Ng$, and multiplying on the right by $g^{-1}$ (Remark~\ref{rem:multiplying-sets}) gives $gNg^{-1} = N$.
+
+\textbf{(1) $\Leftrightarrow$ (5).} Condition (5) says precisely that the rule $(g_1N)(g_2N) := (g_1g_2)N$ is a well-defined operation on $G/N$, i.e.\ that the result does not depend on the representatives $g_1, g_2$ chosen. By Proposition~\ref{prop:when-coset-multiplication-well-defined}, this holds if and only if $gNg^{-1} \subseteq N$ for all $g \in G$, which is equivalent to (1) by Proposition~\ref{prop:characterizations-normality}, (1)~$\Leftrightarrow$~(2).
+
+Finally, since (1) is equivalent to ``$gNg^{-1} \subseteq N$ for all $g \in G$'', which is Definition~\ref{def:normal-subgroup}, the subgroups satisfying (1)--(5) are exactly the normal subgroups of $G$.
+\end{proof}
 
 \begin{rembox}[Relation to the Lecture]\label{rem:relation-lecture}
 Four of the five conditions have already appeared: (1) is characterization (2) of Characterizations of Normality (lecture), (4) is its characterization (4), (5) is the well-definedness of coset multiplication (\ref{sec:multiplying-cosets}), and (2) is Normal Subgroups Are Unions of Conjugacy Classes (\ref{sec:normal-sources}). Condition (3) is new: it phrases normality through the action of $G$ on $G/N$ from Worksheet 5 (\ref{sec:coset-action}).
@@ -3858,7 +3883,19 @@ Let $N \trianglelefteq G$.
 \end{enumerate}
 \end{propbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)}
+
+\textbf{(1) True.} Let $M := \varphi^{-1}(N) = \{x \in F : \varphi(x) \in N\}$. Since $N$ is a subgroup of $G$, $M$ is a subgroup of $F$ (Proposition~\ref{prop:images-preimages-subgroups}(2)). To show $M \trianglelefteq F$ (Definition~\ref{def:normal-subgroup}), let $f \in F$ and $x \in M$; we must show $fxf^{-1} \in M$, i.e.\ $\varphi(fxf^{-1}) \in N$. Since $\varphi$ is a homomorphism and preserves inverses (Proposition~\ref{prop:homomorphisms-preserve-identity-inverses}),
+\[ \varphi(fxf^{-1}) = \varphi(f)\,\varphi(x)\,\varphi(f^{-1}) = \varphi(f)\,\varphi(x)\,\varphi(f)^{-1}. \]
+Here $\varphi(x) \in N$ because $x \in M$, and $N \trianglelefteq G$, so the right side lies in $N$ (Definition~\ref{def:normal-subgroup} with $g = \varphi(f) \in G$). Hence $fxf^{-1} \in M$.
+
+\textbf{(2) False in general.} Take $G = \langle (1\,2) \rangle = \{e, (1\,2)\}$ and $N = G$, which is normal in $G$ (Proposition~\ref{prop:first-examples-normal-subgroups}(2)); take $H = S_3$ and $\psi: G \to S_3$ the inclusion. Then $\psi(N) = \{e, (1\,2)\}$, which is not normal in $S_3$ (Proposition~\ref{prop:images-need-not-normal}).
+
+\textbf{(3) True when $\psi$ is surjective.} $\psi(N)$ is a subgroup of $H$ (Proposition~\ref{prop:images-preimages-subgroups}(1)). Let $h \in H$ and $y \in \psi(N)$; we must show $hyh^{-1} \in \psi(N)$. Write $y = \psi(n)$ with $n \in N$, and, since $\psi$ is surjective, $h = \psi(g)$ with $g \in G$. Then (Proposition~\ref{prop:homomorphisms-preserve-identity-inverses})
+\[ hyh^{-1} = \psi(g)\,\psi(n)\,\psi(g)^{-1} = \psi(g)\,\psi(n)\,\psi(g^{-1}) = \psi(gng^{-1}), \]
+and $gng^{-1} \in N$ because $N \trianglelefteq G$. So $hyh^{-1} \in \psi(N)$. Surjectivity is used only to write the conjugating element $h$ as $\psi(g)$; in the example of (2), $h = (1\,3)$ is not of this form.
+\end{proof}
 
 \begin{thmbox}[{A Normal Subgroup Inside a Subgroup of Finite Index (PS 3.2; PS 4.3)}]\label{thm:normal-subgroup-inside-subgroup-finite-index}
 Let $H$ be a subgroup of $G$ with $[G : H] = n$ finite. Then there is a normal subgroup $N$ of $G$ with $N \subseteq H \subseteq G$ and $[G : N] \leq n!$.
@@ -3957,7 +3994,28 @@ In $GL_2(\mathbb{R})$:
 \end{enumerate}
 \end{propbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)} All four sets are subgroups of $GL_2(\mathbb{R})$: (1)--(3) by Example~\ref{ex:subgroups-gl2-r-gl3-r}, and (4) because $(-I_2)^2 = I_2$, so $\{I_2, -I_2\}$ contains $I_2$ and is closed under products and inverses. By Definition~\ref{def:normal-subgroup}, a subgroup $H$ is not normal as soon as there are $g \in GL_2(\mathbb{R})$ and $h \in H$ with $ghg^{-1} \notin H$.
+
+\textbf{(1) Not normal.} Let $D$ be the subgroup of invertible diagonal matrices, and take
+\[ h = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix} \in D, \qquad g = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}, \qquad g^{-1} = \begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix}. \]
+Then
+\[ ghg^{-1} = \begin{pmatrix} 1 & 2 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix} \notin D, \]
+since its $(1,2)$ entry is $1 \neq 0$. So $D$ is not normal.
+
+\textbf{(2) Not normal.} Let $T$ be the subgroup of invertible upper triangular matrices, and take
+\[ h = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} \in T, \qquad g = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = g^{-1} \quad (\text{as } g^2 = I_2). \]
+Then
+\[ ghg^{-1} = \begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix} \notin T, \]
+since its $(2,1)$ entry is $1 \neq 0$. So $T$ is not normal.
+
+\textbf{(3) Normal.} $\det: GL_2(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism with kernel $SL_2(\mathbb{R})$ (Example~\ref{ex:homomorphisms-their-kernels}(1), Definition~\ref{def:special-linear-orthogonal-special-orthogonal}), so $SL_2(\mathbb{R})$ is normal by Proposition~\ref{prop:kernels-normal}. Directly: for $g \in GL_2(\mathbb{R})$ and $A \in SL_2(\mathbb{R})$,
+\[ \det(gAg^{-1}) = \det g \cdot \det A \cdot \det(g^{-1}) = \det g \cdot 1 \cdot (\det g)^{-1} = 1. \]
+
+\textbf{(4) Normal.} For every $g \in GL_2(\mathbb{R})$ we have $gI_2g^{-1} = gg^{-1} = I_2$, and, since the scalar $-1$ can be pulled out of a matrix product,
+\[ g(-I_2)g^{-1} = -\big(gI_2g^{-1}\big) = -I_2 . \]
+So $g\{I_2, -I_2\}g^{-1} \subseteq \{I_2, -I_2\}$ for every $g$, and $\{I_2, -I_2\}$ is normal.
+\end{proof}
 
 \section{Quotient Groups}\label{sec:quotient}
 
@@ -4187,7 +4245,13 @@ Let $N \trianglelefteq G$ and $S \leq G$, with $S$ and $N$ finite. Then
 \[ |SN| = \frac{|S|\,|N|}{|S \cap N|}. \]
 \end{corbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)} By Lemma~\ref{lem:hn-subgroup-when-n-normal} (with $H = S$), $SN$ is a subgroup of $G$. It is finite: by Definition~\ref{def:product-set-hn} it is the image of the map $S \times N \to SN$, $(s, n) \mapsto sn$, so it has at most $|S|\,|N|$ elements. By the Second Isomorphism Theorem (Theorem~\ref{thm:second-isomorphism-theorem}, with $H = S$), $S \cap N \trianglelefteq S$, $N \trianglelefteq SN$, and
+\[ S/(S \cap N) \cong SN/N. \]
+An isomorphism is a bijection (Definition~\ref{def:isomorphism-isomorphic-groups}), so these two quotient groups have the same number of elements. By Theorem~\ref{thm:g-n-group} (the order of a quotient of a finite group), applied to $S \cap N \trianglelefteq S$ and to $N \trianglelefteq SN$,
+\[ \frac{|S|}{|S \cap N|} = |S/(S \cap N)| = |SN/N| = \frac{|SN|}{|N|}. \]
+Multiplying by $|N|$ gives $|SN| = |S|\,|N|/|S \cap N|$.
+\end{proof}
 
 \begin{corbox}[{Subgroup Representatives, Again (lecture 10/2)}]\label{cor:subgroup-representatives-again}
 If a set of representatives $S$ for $G/N$ is a subgroup, then $S \cong G/N$.
@@ -4247,7 +4311,7 @@ Let $N \trianglelefteq G$, $\pi: G \to G/N$, and let $B$ be a subgroup of $G/N$.
 \begin{proof}
 \textbf{(1) (lecture 10/5).} $\pi^{-1}(B) = \{g \in G : \pi(g) \in B\}$. If $n \in N$, then $\pi(n) = e \in B$, so $n \in \pi^{-1}(B)$; in particular $\pi^{-1}(B)$ contains $e$. If $g_1, g_2 \in \pi^{-1}(B)$, then $\pi(g_1g_2) = g_1g_2N = (g_1N)(g_2N) \in B$, since $B$ is a subgroup; so $g_1g_2 \in \pi^{-1}(B)$. Closure under inverses is the same, as $\pi(g^{-1}) = \pi(g)^{-1}$. (This is also a case of Images and Preimages of Subgroups, \ref{prop:images-preimages-subgroups}.)
 
-\textbf{(2).} \textit{To be filled (WS 8.5(2) was not done in class).}
+\textbf{(2).} \textit{(Not from lecture; filled in.)} Let $A := \pi^{-1}(B)$. By (1), $A$ is a subgroup of $G$ containing $N$, so Proposition~\ref{prop:images-subgroups-containing-n}(2) applies to it: $A \trianglelefteq G$ if and only if $\pi(A) \trianglelefteq G/N$. It remains to show $\pi(A) = B$. If $g \in A$, then $\pi(g) \in B$ by the definition of $A$; so $\pi(A) \subseteq B$. Conversely, let $b \in B$. Since $\pi$ is surjective (Proposition~\ref{prop:every-normal-subgroup-kernel}), $b = \pi(g)$ for some $g \in G$; then $\pi(g) \in B$, so $g \in A$ and $b = \pi(g) \in \pi(A)$. Hence $\pi(A) = B$, and therefore $\pi^{-1}(B) = A$ is normal in $G$ if and only if $B = \pi(A)$ is normal in $G/N$.
 \end{proof}
 
 \begin{thmbox}[{The Correspondence Theorem (the ``third/fourth isomorphism theorem'' of WS 8)}]\label{thm:correspondence}
@@ -4256,7 +4320,21 @@ Let $N \trianglelefteq G$ and $\pi: G \to G/N$. The maps $A \mapsto \pi(A)$ and 
 and they take normal subgroups to normal subgroups. (In the lecture's summary: $\downarrow$ is WS 8.4, Proposition~\ref{prop:images-subgroups-containing-n}; $\uparrow$ is WS 8.5, Proposition~\ref{prop:preimages-subgroups-quotient}.)
 \end{thmbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Write $\Phi(A) := \pi(A)$ for a subgroup $A$ of $G$ containing $N$, and $\Psi(B) := \pi^{-1}(B)$ for a subgroup $B$ of $G/N$.
+
+\textbf{(1) The maps land where claimed.} If $A$ is a subgroup of $G$ with $N \subseteq A$, then $\Phi(A) = \pi(A)$ is a subgroup of $G/N$ (Proposition~\ref{prop:images-subgroups-containing-n}(1)). If $B$ is a subgroup of $G/N$, then $\Psi(B) = \pi^{-1}(B)$ is a subgroup of $G$ containing $N$ (Proposition~\ref{prop:preimages-subgroups-quotient}(1)).
+
+\textbf{(2) $\Phi(\Psi(B)) = B$, i.e.\ $\pi(\pi^{-1}(B)) = B$.} If $g \in \pi^{-1}(B)$, then $\pi(g) \in B$ by the definition of the preimage; so $\pi(\pi^{-1}(B)) \subseteq B$. Conversely, let $b \in B$. Since $\pi$ is surjective (Proposition~\ref{prop:every-normal-subgroup-kernel}), $b = \pi(g)$ for some $g \in G$; then $g \in \pi^{-1}(B)$, so $b \in \pi(\pi^{-1}(B))$.
+
+\textbf{(3) $\Psi(\Phi(A)) = A$, i.e.\ $\pi^{-1}(\pi(A)) = A$ when $N \subseteq A$.} If $a \in A$, then $\pi(a) \in \pi(A)$; so $A \subseteq \pi^{-1}(\pi(A))$. Conversely, let $g \in \pi^{-1}(\pi(A))$. Then $\pi(g) = \pi(a)$ for some $a \in A$, i.e.\ $gN = aN$, which by the coset criterion (Proposition~\ref{prop:cosets-equivalence-classes}(1), Definition~\ref{def:congruence-modulo-subgroup}) means $a^{-1}g \in N$. Since $N \subseteq A$, also $a^{-1}g \in A$, and by closure of $A$ under products
+\[ g = a\,(a^{-1}g) \in A . \]
+So $\pi^{-1}(\pi(A)) \subseteq A$. (The hypothesis $N \subseteq A$ is needed: for $A = \{e\}$ one gets $\pi^{-1}(\pi(A)) = \pi^{-1}(\{N\}) = N$.)
+
+By (2) and (3), $\Phi \circ \Psi$ and $\Psi \circ \Phi$ are identity maps, so $\Phi$ and $\Psi$ are mutually inverse bijections.
+
+\textbf{(4) Normal subgroups.} If $A \supseteq N$ is normal in $G$, then $\pi(A) \trianglelefteq G/N$ by Proposition~\ref{prop:images-subgroups-containing-n}(2). If $B \trianglelefteq G/N$, then $\pi^{-1}(B) \trianglelefteq G$ by Proposition~\ref{prop:preimages-subgroups-quotient}(2). So $\Phi$ and $\Psi$ restrict to mutually inverse bijections between the normal subgroups of $G$ containing $N$ and the normal subgroups of $G/N$.
+\end{proof}
 
 \begin{propbox}[{Quotients Along the Correspondence (WS 8.6)}]\label{prop:quotients-along-correspondence}
 Let $N \subseteq A_1 \subseteq A_2 \subseteq G$ be subgroups containing the normal subgroup $N$, and let $B_1 = \pi(A_1)$, $B_2 = \pi(A_2)$.
@@ -4267,13 +4345,52 @@ Let $N \subseteq A_1 \subseteq A_2 \subseteq G$ be subgroups containing the norm
 \end{enumerate}
 \end{propbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Here $A_2/A_1$ is the set of left cosets $gA_1$ with $g \in A_2$ (Definition~\ref{def:index}, for the subgroup $A_1$ of the group $A_2$), and likewise $B_2/B_1$. By Proposition~\ref{prop:images-subgroups-containing-n}(1), $B_1$ and $B_2$ are subgroups of $G/N$, and $B_1 \subseteq B_2$ because $A_1 \subseteq A_2$. We use one fact from the Correspondence Theorem (Theorem~\ref{thm:correspondence}, step (3) of its proof, with $A = A_1 \supseteq N$): $\pi^{-1}(B_1) = A_1$, that is,
+\[ (\ast) \qquad \text{for } x \in G: \quad x \in A_1 \iff \pi(x) \in B_1 . \]
+
+\textbf{(1)} Define $f: A_2/A_1 \to B_2/B_1$ by $f(gA_1) = \pi(g)B_1$ for $g \in A_2$; note $\pi(g) \in \pi(A_2) = B_2$, so $\pi(g)B_1 \in B_2/B_1$. For $g, g' \in A_2$,
+\[ \begin{aligned} gA_1 = g'A_1 &\iff g^{-1}g' \in A_1 \iff \pi(g^{-1}g') \in B_1 \\ &\iff \pi(g)^{-1}\pi(g') \in B_1 \iff \pi(g)B_1 = \pi(g')B_1 . \end{aligned} \]
+The first and the last equivalence are the coset criterion (Proposition~\ref{prop:cosets-equivalence-classes}(1), Definition~\ref{def:congruence-modulo-subgroup}), for the subgroup $A_1$ of $A_2$ and for the subgroup $B_1$ of $B_2$; the second is $(\ast)$ with $x = g^{-1}g'$; the third holds because $\pi$ is a homomorphism (Proposition~\ref{prop:homomorphisms-preserve-identity-inverses}). Read from left to right, the chain says that $\pi(g)B_1$ does not depend on the representative $g$ of $gA_1$, so $f$ is well defined; read from right to left, it says that $f$ is injective. $f$ is surjective: an element of $B_2/B_1$ is $bB_1$ with $b \in B_2 = \pi(A_2)$, so $b = \pi(g)$ for some $g \in A_2$, and $bB_1 = f(gA_1)$.
+
+\textbf{(2)} (The argument of Proposition~\ref{prop:images-subgroups-containing-n}(2), carried out inside $A_2$.)
+
+($\Rightarrow$) Suppose $A_1 \trianglelefteq A_2$. Let $b_1 \in B_1$ and $b_2 \in B_2$, and write $b_1 = \pi(a_1)$, $b_2 = \pi(a_2)$ with $a_1 \in A_1$, $a_2 \in A_2$. Then (Proposition~\ref{prop:homomorphisms-preserve-identity-inverses})
+\[ b_2b_1b_2^{-1} = \pi(a_2)\,\pi(a_1)\,\pi(a_2)^{-1} = \pi(a_2a_1a_2^{-1}) \in \pi(A_1) = B_1, \]
+since $a_2a_1a_2^{-1} \in A_1$ (Definition~\ref{def:normal-subgroup}). So $B_1 \trianglelefteq B_2$.
+
+($\Leftarrow$) Suppose $B_1 \trianglelefteq B_2$. Let $a_1 \in A_1$ and $a_2 \in A_2$. Then
+\[ \pi(a_2a_1a_2^{-1}) = \pi(a_2)\,\pi(a_1)\,\pi(a_2)^{-1} \in B_1, \]
+because $\pi(a_1) \in B_1$, $\pi(a_2) \in B_2$ and $B_1 \trianglelefteq B_2$. By $(\ast)$, $a_2a_1a_2^{-1} \in A_1$. So $A_1 \trianglelefteq A_2$.
+
+\textbf{(3)} Suppose $A_1 \trianglelefteq A_2$; then $B_1 \trianglelefteq B_2$ by (2), so $A_2/A_1$ and $B_2/B_1$ are groups under coset multiplication (Definition~\ref{def:quotient-group}, Theorem~\ref{thm:g-n-group}). The bijection $f$ of (1) is a homomorphism: for $g, g' \in A_2$,
+\[ f\big((gA_1)(g'A_1)\big) = f(gg'A_1) = \pi(gg')B_1 = \big(\pi(g)\pi(g')\big)B_1 = \big(\pi(g)B_1\big)\big(\pi(g')B_1\big) = f(gA_1)\,f(g'A_1). \]
+So $f$ is an isomorphism (Definition~\ref{def:isomorphism-isomorphic-groups}), and $A_2/A_1 \cong B_2/B_1$.
+\end{proof}
 
 \begin{thmbox}[{Third Isomorphism Theorem (named in lecture 10/2; not covered)}]\label{thm:third-isomorphism-theorem}
 Let $N \subseteq K$ be normal subgroups of $G$. Then $K/N$ is a normal subgroup of $G/N$, and $(G/N)/(K/N) \cong G/K$.
 \end{thmbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Let $\pi: G \to G/N$ be the projection.
+
+\textbf{$K/N$ is normal in $G/N$.} By Remark~\ref{rem:notation-a-n}, $K/N = \pi(K)$. Since $K$ is a subgroup of $G$ containing $N$ and $K \trianglelefteq G$, Proposition~\ref{prop:images-subgroups-containing-n}(2) gives $\pi(K) \trianglelefteq G/N$.
+
+\textbf{The isomorphism.} Apply Proposition~\ref{prop:quotients-along-correspondence} with $A_1 = K$ and $A_2 = G$, so that $N \subseteq K \subseteq G$, $B_1 = \pi(K) = K/N$, and $B_2 = \pi(G) = G/N$ because $\pi$ is surjective (Proposition~\ref{prop:every-normal-subgroup-kernel}). Since $K \trianglelefteq G$, part (3) gives the isomorphism
+\[ G/K \to (G/N)/(K/N), \qquad gK \mapsto \pi(g)\,(K/N) = (gN)(K/N), \]
+and its inverse is an isomorphism (Proposition~\ref{prop:inverse-isomorphism-isomorphism}), so $(G/N)/(K/N) \cong G/K$.
+
+\textbf{Second route, through the First Isomorphism Theorem.} Define $\alpha: G/N \to G/K$ by $\alpha(gN) = gK$.
+\emph{Well defined:} if $gN = g'N$, then $g^{-1}g' \in N \subseteq K$ by the coset criterion (Proposition~\ref{prop:cosets-equivalence-classes}(1), Definition~\ref{def:congruence-modulo-subgroup}), so $gK = g'K$.
+\emph{Homomorphism:} by Definition~\ref{def:quotient-group}, applied in $G/N$ and in $G/K$,
+\[ \alpha\big((gN)(g'N)\big) = \alpha(gg'N) = gg'K = (gK)(g'K) = \alpha(gN)\,\alpha(g'N). \]
+\emph{Surjective:} every $gK$ equals $\alpha(gN)$.
+\emph{Kernel:} the identity of $G/K$ is $eK = K$ (Theorem~\ref{thm:g-n-group}), and $gK = eK$ if and only if $g^{-1}e = g^{-1} \in K$, i.e.\ $g \in K$ (coset criterion); so
+\[ \operatorname{Ker}\alpha = \{gN : g \in K\} = \pi(K) = K/N . \]
+(This reproves $K/N \trianglelefteq G/N$, by Proposition~\ref{prop:kernels-normal}.) The First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}) gives
+\[ (G/N)/(K/N) = (G/N)/\operatorname{Ker}\alpha \cong \operatorname{Im}\alpha = G/K . \]
+\end{proof}
 
 \begin{rembox}[{The Isomorphism Theorems}]\label{rem:isomorphism-theorems}
 The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The first identifies $G/N$ with an image; the second and third compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
@@ -5131,7 +5248,26 @@ For a group $G$, a \textbf{$p$-subgroup} of $G$ is a subgroup of $G$ which is a 
 Let $P$ be a $p$-group and let $X$ be a finite set on which $P$ acts. If $|X| \not\equiv 0 \pmod p$, then $P$ fixes some point of $X$.
 \end{propbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in. The route is the counting the lecture of 10/16 used in the proof of the Third Sylow Theorem, Theorem~\ref{thm:sylow-third}: the orbits of a $p$-group have size a power of $p$, so $|X| \equiv |X^P| \pmod p$.)} Write $|P| = p^k$ (Definition~\ref{def:p-group}), write $\star$ for the action (Definition~\ref{def:action-right-action}), and let
+\[ X^P = \{ x \in X : g \star x = x \text{ for all } g \in P \} = \bigcap_{g \in P} \operatorname{Fix}(g) \]
+be the set of points fixed by every element of $P$ (Definition~\ref{def:fixed-points}). We must show $X^P \neq \varnothing$. We show that $|X^P| \equiv |X| \pmod p$.
+
+\textbf{(1) $X$ is the disjoint union of its orbits.} By Orbits Partition $X$ (Proposition~\ref{prop:orbits-partition-x}), $X$ is the disjoint union of the distinct orbits $Px = \{ g \star x : g \in P \}$ (Definition~\ref{def:orbit-orbit-space}). Since $X$ is finite there are finitely many, say $O_1, \ldots, O_r$, and
+\[ |X| = |O_1| + |O_2| + \cdots + |O_r|. \]
+
+\textbf{(2) Every orbit has size a power of $p$.} Let $x \in X$. By Orbit--Stabilizer (Theorem~\ref{thm:orbit-stabilizer}), with $\operatorname{Stab}(x)$ the stabilizer (Definition~\ref{def:stabilizer-fixed-points}),
+\[ p^k = |P| = |Px| \cdot |\operatorname{Stab}(x)|, \]
+so $|Px|$ is a positive divisor of $p^k$. If $|Px| > 1$, writing $|Px|$ and $|\operatorname{Stab}(x)|$ as products of primes gives a prime factorization of $p^k$, which by Unique Prime Factorization (Theorem~\ref{thm:unique-prime-factorization}) consists of $k$ copies of $p$; so every prime factor of $|Px|$ is $p$. Hence $|Px| = p^\ell$ for some $\ell$ with $0 \leq \ell \leq k$.
+
+\textbf{(3) The orbits of size $1$ are the fixed points.} Since $x = e \star x \in Px$,
+\[ |Px| = 1 \iff Px = \{x\} \iff g \star x = x \text{ for all } g \in P \iff x \in X^P. \]
+So the orbits of size $1$ are exactly the singletons $\{x\}$ with $x \in X^P$, and there are $|X^P|$ of them. By (2), every other orbit has size $p^\ell$ with $\ell \geq 1$, which is divisible by $p$.
+
+\textbf{(4) Counting modulo $p$.} Split the sum in (1) into the orbits of size $1$ and the others, writing $|O_i| = p^{\ell_i}$ with $\ell_i \geq 1$ for the latter (by (3)):
+\[ |X| = \sum_{x \in X^P} 1 + \sum_{i \,:\, |O_i| > 1} p^{\ell_i} = |X^P| + p \sum_{i \,:\, |O_i| > 1} p^{\ell_i - 1} \equiv |X^P| \pmod p. \]
+By hypothesis $|X| \not\equiv 0 \pmod p$, so $|X^P| \not\equiv 0 \pmod p$; in particular $|X^P| \neq 0$. So there is a point $x \in X^P$, that is, a point of $X$ fixed by every element of $P$.
+\end{proof}
 
 Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m$.
 
@@ -5198,7 +5334,40 @@ Let $P \subseteq GL_n(\mathbb{F}_p)$ be the group of matrices of the form
 Then $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$.
 \end{propbox}
 
-\proofpending
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Write $\operatorname{Mat}_n(\mathbb{F}_p)$ for the $n \times n$ matrices over $\mathbb{F}_p$, $I_n$ for the identity matrix, and
+\[ \mathcal{N} = \{ N \in \operatorname{Mat}_n(\mathbb{F}_p) : N_{ij} = 0 \text{ whenever } i \geq j \} \]
+for the strictly upper triangular matrices. A matrix has the displayed form exactly when it is $I_n + N$ with $N \in \mathcal{N}$ (the entries $b_{ij}$, $i < j$, are the entries of $N$ above the diagonal), so
+\[ P = \{ I_n + N : N \in \mathcal{N} \} \subseteq \operatorname{Mat}_n(\mathbb{F}_p). \]
+We show: \textbf{(1)} a product of $j$ matrices in $\mathcal{N}$ vanishes on and below the $(j-1)$-st diagonal above the main one; \textbf{(2)} $P$ contains $I_n$ and is closed under products; \textbf{(3)} every $A \in P$ is invertible with $A^{-1} \in P$, so $P$ is a subgroup of $GL_n(\mathbb{F}_p)$; \textbf{(4)} $|P| = p^{\binom{n}{2}}$; \textbf{(5)} $p^{\binom{n}{2}}$ is the order of a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. Matrix products are computed by the entry formula $(AB)_{ab} = \sum_{m=1}^{n} A_{am} B_{mb}$ (Definition~\ref{def:general-linear-groups-gln-k}).
+
+\textbf{(1) Products of strictly upper triangular matrices.} \emph{Claim: if $j \geq 1$ and $N_1, \ldots, N_j \in \mathcal{N}$, then $(N_1 N_2 \cdots N_j)_{ab} = 0$ unless $b \geq a + j$.} By induction on $j$. For $j = 1$ this is the definition of $\mathcal{N}$: $(N_1)_{ab} = 0$ unless $b > a$, that is, unless $b \geq a + 1$. Assume the claim for $j$. Then
+\[ (N_1 \cdots N_j N_{j+1})_{ab} = \sum_{m=1}^{n} (N_1 \cdots N_j)_{am} \, (N_{j+1})_{mb}, \]
+and the $m$-th term can be nonzero only if $m \geq a + j$ (induction hypothesis) and $b \geq m + 1$ (case $j = 1$), which together force $b \geq a + j + 1$. So the entry is $0$ unless $b \geq a + (j + 1)$, which proves the claim. Consequences:
+\begin{itemize}
+    \item If $N, N' \in \mathcal{N}$, then $NN' \in \mathcal{N}$, and $N^j \in \mathcal{N}$ for every $j \geq 1$: by the claim (with $j = 2$, resp.\ all $N_i = N$), a nonzero entry in position $(a, b)$ needs $b \geq a + 2 > a$, resp.\ $b \geq a + j > a$.
+    \item If $N \in \mathcal{N}$, then $N^n = 0$: a nonzero entry in position $(a, b)$ would need $b \geq a + n \geq 1 + n$, impossible since $b \leq n$.
+    \item $\mathcal{N}$ is closed under sums and scalar multiples, since these are computed entrywise and $0 + 0 = c \cdot 0 = 0$.
+\end{itemize}
+
+\textbf{(2) Identity and closure.} $I_n = I_n + 0$ with $0 \in \mathcal{N}$ (all $b_{ij} = 0$), so $I_n \in P$. Let $A = I_n + N$ and $B = I_n + N'$ with $N, N' \in \mathcal{N}$. Expanding by distributivity of matrix multiplication,
+\[ AB = (I_n + N)(I_n + N') = I_n + (N + N' + NN'), \]
+and $N + N' + NN' \in \mathcal{N}$ by (1). So $AB \in P$.
+
+\textbf{(3) Inverses.} Let $A = I_n + N \in P$ with $N \in \mathcal{N}$, and put ($N^0 = I_n$)
+\[ B = I_n - N + N^2 - \cdots + (-1)^{n-1} N^{n-1} = \sum_{j=0}^{n-1} (-1)^j N^j = I_n + \sum_{j=1}^{n-1} (-1)^j N^j. \]
+The last sum lies in $\mathcal{N}$ by (1), so $B \in P$. The product telescopes, shifting the index $j + 1 \to j$ in the second sum and using $N^n = 0$ from (1):
+\[ AB = B + NB = \sum_{j=0}^{n-1} (-1)^j N^j + \sum_{j=0}^{n-1} (-1)^j N^{j+1} = \sum_{j=0}^{n-1} (-1)^j N^j - \sum_{j=1}^{n} (-1)^j N^j = N^0 - (-1)^n N^n = I_n. \]
+Since $N N^j = N^{j+1} = N^j N$, also $BN = NB$, so $BA = B + BN = B + NB = AB = I_n$. Hence $A$ is invertible with $A^{-1} = B \in P$; in particular $P \subseteq GL_n(\mathbb{F}_p)$ (Definition~\ref{def:general-linear-groups-gln-k}). Together with (2), $P$ contains the identity and is closed under products and inverses, so $P$ is a subgroup of $GL_n(\mathbb{F}_p)$ (Definition~\ref{def:subgroup}).
+
+\textbf{(4) The order of $P$.} An element $I_n + N$ of $P$ is determined by the entries $b_{ij}$ of $N$ in the positions $(i, j)$ with $1 \leq i < j \leq n$; each of these may be any of the $p$ elements of $\mathbb{F}_p$, independently of the others, and different choices give different matrices. In row $i$ there are $n - i$ such positions ($j = i + 1, \ldots, n$), so the number of positions is
+\[ \sum_{i=1}^{n} (n - i) = (n - 1) + (n - 2) + \cdots + 1 + 0 = \frac{n(n-1)}{2} = \binom{n}{2}, \]
+and therefore $|P| = p^{\binom{n}{2}}$.
+
+\textbf{(5) Comparison with $|GL_n(\mathbb{F}_p)|$.} By The Order of $GL_n(\mathbb{F}_p)$ (Proposition~\ref{prop:order-gln-fp}),
+\[ |GL_n(\mathbb{F}_p)| = \prod_{i=0}^{n-1} (p^n - p^i) = p^{\binom{n}{2}}\, m, \qquad m = \prod_{k=1}^{n} (p^k - 1), \]
+and $p \nmid m$: for each $k \geq 1$, $p \nmid p^k - 1$ (since $p \mid p^k$, it would divide $1$), so by Euclid's Lemma (Lemma~\ref{lem:euclids-lemma}), applied $n - 1$ times, $p$ does not divide the product $m$. So in the factorization $|GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} m$ with $p \nmid m$, the exponent of $p$ is $\binom{n}{2}$, and a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ is a subgroup of order $p^{\binom{n}{2}}$ (Definition~\ref{def:sylow-subgroup}). By (3) and (4), $P$ is a subgroup of $GL_n(\mathbb{F}_p)$ of order $p^{\binom{n}{2}}$, hence a Sylow $p$-subgroup.
+\end{proof}
 
 \begin{exbox}[{A Sylow $5$-Subgroup of $GL_2(\mathbb{F}_5)$ (lecture 10/14)}]\label{ex:sylow-gl2-f5}
 $|GL_2(\mathbb{F}_5)| = (5^2 - 1)(5^2 - 5) = 24 \cdot 20 = 480 = 2^5 \cdot 3 \cdot 5$ (Proposition~\ref{prop:order-gln-fp}), so a Sylow $5$-subgroup has order $5$. The matrix $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ satisfies $u^j = \begin{pmatrix} 1 & j \\ 0 & 1 \end{pmatrix}$, so it has order $5$, and $\langle u \rangle$ is a Sylow $5$-subgroup. It is exactly the unitriangular group of WS 10.2 (Proposition~\ref{prop:unitriangular-sylow}) for $n = 2$, $p = 5$, which has $p^{\binom{2}{2}} = 5$ elements.
@@ -5274,7 +5443,7 @@ Let $\Gamma$ be a finite group with a Sylow $p$-subgroup $\Pi$, and let $P \leq 
 \end{lembox}
 
 \begin{proof}
-Write $|\Gamma| = p^k m$ with $p \nmid m$, so $|\Pi| = p^k$. Let $X = \Gamma/\Pi$; by Lagrange (Theorem~\ref{thm:lagrange}), $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$. Let $P$ act on $X$ by left multiplication, the restriction to $P$ of the action of $\Gamma$ on $\Gamma/\Pi$ (The Action of $G$ on $G/H$, Proposition~\ref{prop:action-g-g-h}). By WS 10.1 (Proposition~\ref{prop:p-group-fixed-point}), $P$ fixes some coset $\gamma\Pi \in X$, i.e.\ $P \subseteq \operatorname{Stab}(\gamma\Pi)$. By part (3) of Proposition~\ref{prop:action-g-g-h}, $\operatorname{Stab}(\gamma\Pi) = \gamma\Pi\gamma^{-1}$. Hence $P \subseteq \gamma\Pi\gamma^{-1}$. (The argument rests on WS 10.1, whose proof is still to be filled in.)
+Write $|\Gamma| = p^k m$ with $p \nmid m$, so $|\Pi| = p^k$. Let $X = \Gamma/\Pi$; by Lagrange (Theorem~\ref{thm:lagrange}), $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$. Let $P$ act on $X$ by left multiplication, the restriction to $P$ of the action of $\Gamma$ on $\Gamma/\Pi$ (The Action of $G$ on $G/H$, Proposition~\ref{prop:action-g-g-h}). By WS 10.1 (Proposition~\ref{prop:p-group-fixed-point}), $P$ fixes some coset $\gamma\Pi \in X$, i.e.\ $P \subseteq \operatorname{Stab}(\gamma\Pi)$. By part (3) of Proposition~\ref{prop:action-g-g-h}, $\operatorname{Stab}(\gamma\Pi) = \gamma\Pi\gamma^{-1}$. Hence $P \subseteq \gamma\Pi\gamma^{-1}$.
 \end{proof}
 
 \begin{corbox}[{$p$-Subgroups of $GL_n(\mathbb{F}_p)$ Are Conjugate into Unitriangular Matrices (lecture 10/12)}]\label{cor:p-subgroups-gln-unitriangular}
@@ -5319,7 +5488,7 @@ Every finite group $G$ has a Sylow $p$-subgroup.
 \end{thmbox}
 
 \begin{proof}
-\textit{(Class 10/14.)} Let $G$ be finite with $|G| = n$. By Every Finite Group Is a Matrix Group (Corollary~\ref{cor:every-finite-group-matrix-group}), $G$ is isomorphic to a subgroup $G'$ of $\Gamma = GL_n(\mathbb{F}_p)$, and $\Gamma$ has a Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, Proposition~\ref{prop:unitriangular-sylow}). By WS 10.3(1) (Proposition~\ref{prop:sylow-of-subgroup}), $G'$ has a Sylow $p$-subgroup; its preimage under the isomorphism $G \to G'$ is a Sylow $p$-subgroup of $G$. (The argument rests on WS 10.2, still marked \emph{[To be proved]}; the order of $GL_n(\mathbb{F}_p)$ it uses is Proposition~\ref{prop:order-gln-fp}, PS 6.4.)
+\textit{(Class 10/14.)} Let $G$ be finite with $|G| = n$. By Every Finite Group Is a Matrix Group (Corollary~\ref{cor:every-finite-group-matrix-group}), $G$ is isomorphic to a subgroup $G'$ of $\Gamma = GL_n(\mathbb{F}_p)$, and $\Gamma$ has a Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, Proposition~\ref{prop:unitriangular-sylow}). By WS 10.3(1) (Proposition~\ref{prop:sylow-of-subgroup}), $G'$ has a Sylow $p$-subgroup; its preimage under the isomorphism $G \to G'$ is a Sylow $p$-subgroup of $G$. (The order of $GL_n(\mathbb{F}_p)$ that WS 10.2 uses is Proposition~\ref{prop:order-gln-fp}, PS 6.4.)
 \end{proof}
 
 \begin{propbox}[{$p$-Subgroups and Conjugates of a Sylow Subgroup (WS 10.5; board 10/14)}]\label{prop:p-subgroups-conjugates-sylow}

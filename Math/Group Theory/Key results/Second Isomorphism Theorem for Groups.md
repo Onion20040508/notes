@@ -20,6 +20,7 @@ tags: [group-theory, hub]
 - [[§41 The First and Second Isomorphism Theorems#^lem-41-3|Lemma §41.3: HN Is a Subgroup When N Is Normal]]
 
 ## Used in (Group Theory)
+- [[§41 The First and Second Isomorphism Theorems#^cor-41-6|Corollary §41.6: The Order of SN]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-7|Corollary §41.7: Subgroup Representatives, Again]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Corollary §41.8: Index of an Intersection, Normal Case]]
 

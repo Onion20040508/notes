@@ -206,10 +206,20 @@ tags: [group-theory, math493]
 
 ^cor-41-6
 
-> [!proof]- Proof
-> *[To be proved.]*
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* By Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]] (with $H = S$), $SN$ is a subgroup of $G$. It is finite: by Definition [[§41 The First and Second Isomorphism Theorems#^def-41-1|§41.1]] it is the image of the map $S \times N \to SN$, $(s, n) \mapsto sn$, so it has at most $|S|\,|N|$ elements. By the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], with $H = S$), $S \cap N \trianglelefteq S$, $N \trianglelefteq SN$, and
+>
+> $$ S/(S \cap N) \cong SN/N. $$
+>
+> An isomorphism is a bijection (Definition [[§16 Isomorphisms#^def-16-1|§16.1]]), so these two quotient groups have the same number of elements. By Theorem [[§40 Quotient Groups#^thm-40-1|§40.1]] (the order of a quotient of a finite group), applied to $S \cap N \trianglelefteq S$ and to $N \trianglelefteq SN$,
+>
+> $$ \frac{|S|}{|S \cap N|} = |S/(S \cap N)| = |SN/N| = \frac{|SN|}{|N|}. $$
+>
+> Multiplying by $|N|$ gives $|SN| = |S|\,|N|/|S \cap N|$.
 
 ^pf-41-6
+
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], [[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]]
 
 > [!theorem] Corollary §41.7: Subgroup Representatives, Again
 > If a [[§40 Quotient Groups#^def-40-2|set of representatives]] $S$ for $G/N$ is a [[§4 Subgroups#^def-4-1|subgroup]], then $S \cong G/N$.

@@ -12,7 +12,7 @@ tags: [chapter, group-theory]
 The integers modulo $n$ are the first family of finite groups. This chapter builds $\mathbb{Z}/n\mathbb{Z}$ ([[§7 The Group ℤ∕nℤ#^def-7-1|Def. §7.1]]) from congruence and proves its operation well defined; the [[§7 The Group ℤ∕nℤ#^lem-7-2|Descent Lemma]] used there is the template for every later well-definedness argument. It then determines which classes are invertible, giving the unit groups $U_n$ ([[§8 Invertibility and Unit Groups#^def-8-4|Def. §8.4]]), and assembles the number theory used later: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Euclid's lemma]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|unique factorization]], and the [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|Chinese remainder theorem]].
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (15), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (4)
-**Used by:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (4), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (14), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (9), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (2), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (2), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (2), [[· 10 The Sylow Theorems|10 The Sylow Theorems]] (3)
+**Used by:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (4), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (14), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (9), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (2), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (2), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (2), [[· 10 The Sylow Theorems|10 The Sylow Theorems]] (5)
 **Builds on (other subjects):** [[Single Variable Analysis]] (5)
 
 ## Sections
@@ -30,7 +30,7 @@ The integers modulo $n$ are the first family of finite groups. This chapter buil
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Division Algorithm|Lemma §6.1: Division Algorithm]]: 57 later results
-- [[§6 Divisibility and Congruence#^prop-6-2|Proposition §6.2: Congruence Is an Equivalence Relation with Remainder Classes]]: 42 later results
-- [[§8 Invertibility and Unit Groups#^prop-8-1|Proposition §8.1: Invertibility Criterion]]: 23 later results
-- [[§7 The Group ℤ∕nℤ#^prop-7-1|Proposition §7.1: Addition of Residue Classes Is Well-Defined; ℤ/nℤ Is a Group]]: 20 later results
+- [[Division Algorithm|Lemma §6.1: Division Algorithm]]: 60 later results
+- [[§6 Divisibility and Congruence#^prop-6-2|Proposition §6.2: Congruence Is an Equivalence Relation with Remainder Classes]]: 47 later results
+- [[§8 Invertibility and Unit Groups#^prop-8-1|Proposition §8.1: Invertibility Criterion]]: 28 later results
+- [[§7 The Group ℤ∕nℤ#^prop-7-1|Proposition §7.1: Addition of Residue Classes Is Well-Defined; ℤ/nℤ Is a Group]]: 24 later results

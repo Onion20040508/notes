@@ -24,7 +24,7 @@ tags: [group-theory, math493]
 ^lem-52-1
 
 > [!proof]+ Proof
-> Write $|\Gamma| = p^k m$ with $p \nmid m$, so $|\Pi| = p^k$. Let $X = \Gamma/\Pi$; by Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]), $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$. Let $P$ act on $X$ by left multiplication, the restriction to $P$ of the action of $\Gamma$ on $\Gamma/\Pi$ (The Action of $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|Proposition §31.1]]). By WS 10.1 ([[§51 p-Groups and Sylow Subgroups#^prop-51-1|Proposition §51.1]]), $P$ fixes some coset $\gamma\Pi \in X$, i.e. $P \subseteq \operatorname{Stab}(\gamma\Pi)$. By part (3) of Proposition §31.1, $\operatorname{Stab}(\gamma\Pi) = \gamma\Pi\gamma^{-1}$. Hence $P \subseteq \gamma\Pi\gamma^{-1}$. (The argument rests on WS 10.1, whose proof is still to be filled in.)
+> Write $|\Gamma| = p^k m$ with $p \nmid m$, so $|\Pi| = p^k$. Let $X = \Gamma/\Pi$; by Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]), $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$. Let $P$ act on $X$ by left multiplication, the restriction to $P$ of the action of $\Gamma$ on $\Gamma/\Pi$ (The Action of $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|Proposition §31.1]]). By WS 10.1 ([[§51 p-Groups and Sylow Subgroups#^prop-51-1|Proposition §51.1]]), $P$ fixes some coset $\gamma\Pi \in X$, i.e. $P \subseteq \operatorname{Stab}(\gamma\Pi)$. By part (3) of Proposition §31.1, $\operatorname{Stab}(\gamma\Pi) = \gamma\Pi\gamma^{-1}$. Hence $P \subseteq \gamma\Pi\gamma^{-1}$.
 
 ^pf-52-1
 
@@ -93,7 +93,7 @@ tags: [group-theory, math493]
 ^thm-52-4
 
 > [!proof]+ Proof
-> *(Class 10/14.)* Let $G$ be finite with $|G| = n$. By Every Finite Group Is a Matrix Group ([[§25 Actions#^cor-25-6|Corollary §25.6]]), $G$ is isomorphic to a subgroup $G'$ of $\Gamma = GL_n(\mathbb{F}_p)$, and $\Gamma$ has a Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]). By WS 10.3(1) ([[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]), $G'$ has a Sylow $p$-subgroup; its preimage under the isomorphism $G \to G'$ is a Sylow $p$-subgroup of $G$. (The argument rests on WS 10.2, still to be proved; the order of $GL_n(\mathbb{F}_p)$ it uses is [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Proposition §51.4]], PS 6.4.)
+> *(Class 10/14.)* Let $G$ be finite with $|G| = n$. By Every Finite Group Is a Matrix Group ([[§25 Actions#^cor-25-6|Corollary §25.6]]), $G$ is isomorphic to a subgroup $G'$ of $\Gamma = GL_n(\mathbb{F}_p)$, and $\Gamma$ has a Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]). By WS 10.3(1) ([[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]), $G'$ has a Sylow $p$-subgroup; its preimage under the isomorphism $G \to G'$ is a Sylow $p$-subgroup of $G$. (The order of $GL_n(\mathbb{F}_p)$ that WS 10.2 uses is [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Proposition §51.4]], PS 6.4.)
 
 ^pf-52-4
 
