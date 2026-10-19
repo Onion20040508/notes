@@ -7,21 +7,124 @@ tags: [group-theory, math493, review]
 
 # MATH 493 Midterm Review
 
-**The exam.** Thursday, October 22, 6:00–8:00 PM (syllabus). Speyer (lecture Wed Oct 14): "on the Canvas site there are information about and basic lists of topics for the exam. Please look at those"; bring questions to class on **Wednesday Oct 21**. *The Canvas topic list is not in these notes yet: paste it here and the plan below will be trimmed to it.* Until then the scope is taken to be everything taught through the lecture of Fri Oct 16 (the Sylow theorems and groups of order $pq$).
+**The exam** (Speyer's announcement). Thursday, October 22, 6:00–8:00 PM, **Weiser 260**. Bring: one or more writing implements, **one page of notes**, and a watch.
 
-**What the exam is likely to look like.** Every Friday quiz was "one fairly straightforward problem from each homework", in 10 minutes, without notes. So the problem sets are the best model: the [[Group Theory HW Drill|Problem Set Drill]] breaks all of them into small questions. Worksheets are the course itself (IBL): their problems are the theorems of the notes, drilled in the [[Group Theory Notes Drill|Notes Drill]].
+**Where the problems come from.**
+1. **About 1/2: the class worksheets**, possibly with minor edits. All 65 worksheet problems are listed below, each linked to its box in the notes and its Notes Drill entry. **This is the core of the review.**
+2. **About 1/4: the homework**, possibly with minor edits: the [[Group Theory HW Drill|Problem Set Drill]] breaks all 30 problems into small questions.
+3. **About 1/4: new problems** on the main concepts and results (Speyer's list, next section). Practise with the example library at the end.
+
+**Speyer's list of main concepts and results**, with their homes in the notes:
+- [ ] The definitions of groups and subgroups: Definition [[§1 The Definition of a Group#^def-1-1|§1.1]] Group, Definition [[§4 Subgroups#^def-4-1|§4.1]] Subgroup, Proposition [[§4 Subgroups#^prop-4-2|§4.2]] Equivalent Subgroup Criteria.
+- [ ] Lagrange's theorem: Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]] Lagrange, Corollary [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]] Order of an Element Divides $|G|$; $g^{|G|} = e$.
+- [ ] The definitions of action, orbit and stabilizer: Definition [[§25 Actions#^def-25-1|§25.1]] Action (WS 4), Definition [[§27 Orbits#^def-27-1|§27.1]] Orbit (WS 4), Definition [[§26 Stabilizers and Fixed Points#^def-26-1|§26.1]] Stabilizer (WS 4).
+- [ ] The orbit–stabilizer theorem: Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]] Orbit–Stabilizer (WS 5.3).
+- [ ] The definition of normal subgroups and quotient groups: Definition [[§38 Normal Subgroups#^def-38-1|§38.1]] Normal Subgroup (lecture; WS 6), Theorem [[§38 Normal Subgroups#^thm-38-3|§38.3]] Five Characterizations of Normality (WS 6.1), Definition [[§40 Quotient Groups#^def-40-1|§40.1]] Quotient Group (lecture), Theorem [[§40 Quotient Groups#^thm-40-1|§40.1]] $G/N$ Is a Group (lecture).
+- [ ] The first, second and third isomorphism theorems: Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]] First Isomorphism Theorem (lecture), Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]] Second Isomorphism Theorem (lecture 10/2, 10/5; WS 8.2), Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|§42.5]] Third Isomorphism Theorem (named in lecture 10/2; not covered) (with the correspondence theorem Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]] The Correspondence Theorem (the ``third/fourth isomorphism theorem'' of WS 8)).
+- [ ] The definition of simple groups: Definition [[§43 Simple Groups#^def-43-1|§43.1]] Simple Group (lecture 9/21, 9/28; WS 7).
+- [ ] The alternating group is simple (for $n \geq 5$): Theorem [[§43 Simple Groups#^thm-43-9|§43.9]] $A_n$ Is Simple for $n \geq 5$ (WS 7.5; lecture 9/28, 9/30), Proposition [[§43 Simple Groups#^prop-43-6|§43.6]] $A_5$ Is Simple (WS 7.4; class 9/30).
+- [ ] The definition and basic properties of solvable groups: Definition [[§48 Solvable Groups#^def-48-1|§48.1]] Solvable Group (WS 9), Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]] Subgroups of Solvable Groups Are Solvable (WS 9.2; lecture 10/7, 10/9), Proposition [[§48 Solvable Groups#^prop-48-3|§48.3]] Quotients of Solvable Groups Are Solvable (WS 9.3; lecture 10/9), Theorem [[§49 The Derived Series#^thm-49-1|§49.1]] Solvability via the Derived Series (WS 9.6; lecture 10/9, 10/12).
+- [ ] The derived subgroup: Definition [[§47 Commutators#^def-47-2|§47.2]] Commutator Subgroup, Proposition [[§47 Commutators#^prop-47-4|§47.4]] Properties of the Commutator Subgroup ((1) is PS 4.4(1), WS 9.4), Proposition [[§47 Commutators#^prop-47-11|§47.11]] Abelian Quotients and Commutators (lecture 10/9).
+- [ ] The Sylow theorems: Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem (WS 10.4; class 10/14), Theorem [[§52 The Sylow Theorems#^thm-52-6|§52.6]] The Second Sylow Theorem (WS 10.6; lecture 10/16), Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]] The Third Sylow Theorem (stated on WS 10; lecture 10/16).
 
 **Your week** (MATH 591 midterm is Wed Oct 21, 6–8 PM; this one Thu Oct 22, 6–8 PM):
-1. **Mon–Tue:** 591 first. For 493, one block each day: Mon the Language lists of T1–T5 (mostly early material, fast), Tue the Problem Set Drill PS1–PS3.
-2. **Wed:** class with Speyer (bring the questions collected below), then the 591 exam.
-3. **Thu:** Problem Set Drill PS4–PS6, then the ★★ proofs of T6–T10 (orbit–stabilizer, class equation, quotients and isomorphism theorems, $A_n$ simple, Sylow I–III, groups of order $p^2$ and $pq$), then the example library.
+1. **Mon–Tue:** 591 first. For 493, one block each day on the worksheets: Mon Worksheets 1–5, Tue Worksheets 6–8.
+2. **Wed:** class with Speyer (bring the questions below), Worksheets 9–10, then the 591 exam.
+3. **Thu:** the Problem Set Drill (PS4–PS6 first: quotients, simplicity, $p$-groups), Speyer's list, the one page of notes, the example library.
 
-**Three layers.** The exam rewards (1) **language**: definitions stated exactly, (2) **strategies**: knowing which move proves what (codes G1–G14, listed at the end of the [[Group Theory HW Drill|Problem Set Drill]]), (3) **a library of examples**: small groups in which to test a claim in a minute. Priorities inside each topic follow the same rule as for 591: problem sets first, then worksheets and lectures, then techniques the problem sets drill, then notes-only material.
+**Three layers.** The exam rewards (1) **language**: definitions stated exactly, (2) **strategies**: knowing which move proves what (codes G1–G14, listed at the end of the [[Group Theory HW Drill|Problem Set Drill]]), (3) **a library of examples**: small groups in which to test a claim in a minute.
 
 **Questions to bring on Wednesday.** (Fill in as you review.)
-- [ ] Is the Canvas topic list everything through Sylow III and groups of order $pq$?
-- [ ] Will results be quotable by name (e.g. "by Sylow III", "by the class equation")?
+- [ ] Can results be quoted by name (e.g. "by Sylow III", "by the class equation")?
 - [ ] 
+
+## The worksheets (about half of the exam)
+Tick a problem when you can do it closed-book. "Proof not yet in the notes" marks a worksheet problem whose proof the notes do not contain yet.
+
+**Worksheet 1**
+- [ ] WS 1.1: Proposition [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]] Cancellation, and What the Mixed Hypothesis Really Gives · [[Group Theory Notes Drill#^nd-prop-2-1|drill]]; Example [[§2 First Consequences of the Axioms#^ex-2-1|§2.1]] The Mixed Hypothesis Does Not Cancel; Example [[§13 The Symmetric Group S₃#^ex-13-1|§13.1]] The Mixed Hypothesis of WS 1.1, Revisited
+- [ ] WS 1.2: Proposition [[§2 First Consequences of the Axioms#^prop-2-2|§2.2]] Uniqueness of the Identity · [[Group Theory Notes Drill#^nd-prop-2-2|drill]]
+- [ ] WS 1.3: Proposition [[§2 First Consequences of the Axioms#^prop-2-3|§2.3]] Uniqueness of Inverses · [[Group Theory Notes Drill#^nd-prop-2-3|drill]]
+- [ ] WS 1.4: Proposition [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]] Inverse of a Product · [[Group Theory Notes Drill#^nd-prop-2-4|drill]]
+- [ ] WS 1.5: Proposition [[§4 Subgroups#^prop-4-5|§4.5]] $\langle g \rangle$ Is a Subgroup · [[Group Theory Notes Drill#^nd-prop-4-5|drill]]
+- [ ] WS 1.6: Example [[§4 Subgroups#^ex-4-1|§4.1]] Crafting the Definition of $\langle g_1, \ldots, g_k \rangle$ · [[Group Theory Notes Drill#^nd-ex-4-1|drill]]
+- [ ] WS 1.7: Proposition [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]] Subgroups of $\mathbb{Z}$ · [[Group Theory Notes Drill#^nd-prop-5-1|drill]]; Example [[§5 A Zoo of Subgroups#^ex-5-1|§5.1]] Subgroups of $\mathbb{Z}^2$: a Partial List · [[Group Theory Notes Drill#^nd-ex-5-1|drill]]; Example [[§5 A Zoo of Subgroups#^ex-5-2|§5.2]] Subgroups of $\mathbb{R}$: a List; Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]] Subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$ · [[Group Theory Notes Drill#^nd-ex-5-4|drill]]; Proposition [[§13 The Symmetric Group S₃#^prop-13-1|§13.1]] Subgroups of $S_3$ · [[Group Theory Notes Drill#^nd-prop-13-1|drill]]
+
+**Worksheet 2**
+- [ ] WS 2.1: Example [[§14 Multiplication Tables#^ex-14-2|§14.2]] Table of $\mathbb{Z}/6\mathbb{Z}$ · [[Group Theory Notes Drill#^nd-ex-14-2|drill]]
+- [ ] WS 2.2: Example [[§14 Multiplication Tables#^ex-14-3|§14.3]] Table of $U_7$ · [[Group Theory Notes Drill#^nd-ex-14-3|drill]]
+- [ ] WS 2.3: Example [[§14 Multiplication Tables#^ex-14-4|§14.4]] Table of $U_8$ · [[Group Theory Notes Drill#^nd-ex-14-4|drill]]
+- [ ] WS 2.4: Example [[§14 Multiplication Tables#^ex-14-5|§14.5]] Table of $S_3$ · [[Group Theory Notes Drill#^nd-ex-14-5|drill]]
+- [ ] WS 2.5: Proposition [[§16 Isomorphisms#^prop-16-7|§16.7]] $\mathbb{Z}/4\mathbb{Z} \cong U_5$ · [[Group Theory Notes Drill#^nd-prop-16-7|drill]]
+- [ ] WS 2.6: Proposition [[§16 Isomorphisms#^prop-16-3|§16.3]] Two Isomorphism Invariants · [[Group Theory Notes Drill#^nd-prop-16-3|drill]]
+- [ ] WS 2.7: Proposition [[§16 Isomorphisms#^prop-16-8|§16.8]] $U_8$ and $U_7$ · [[Group Theory Notes Drill#^nd-prop-16-8|drill]]
+- [ ] WS 2.8: Proposition [[§16 Isomorphisms#^prop-16-9|§16.9]] Structure of $\mathbb{R}^\times$ and $\mathbb{Q}^\times$ · [[Group Theory Notes Drill#^nd-prop-16-9|drill]]
+- [ ] WS 2.9: Proposition [[§15 Homomorphisms#^prop-15-1|§15.1]] Homomorphisms Preserve Identity and Inverses · [[Group Theory Notes Drill#^nd-prop-15-1|drill]]
+- [ ] WS 2.10: Proposition [[§15 Homomorphisms#^prop-15-2|§15.2]] Image and Kernel Are Subgroups · [[Group Theory Notes Drill#^nd-prop-15-2|drill]]
+
+**Worksheet 3**
+- [ ] WS 3.1: Proposition [[§17 Cyclic Groups#^prop-17-3|§17.3]] The Homomorphism $k \mapsto g^k$ and $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$ · [[Group Theory Notes Drill#^nd-prop-17-3|drill]]
+- [ ] WS 3.2: Proposition [[§33 Conjugacy Classes#^prop-33-2|§33.2]] Conjugacy Class of $(1\,2)$ in $S_n$ · [[Group Theory Notes Drill#^nd-prop-33-2|drill]]
+- [ ] WS 3.3: Proposition [[§33 Conjugacy Classes#^prop-33-4|§33.4]] Conjugacy Class of a Diagonal Matrix · [[Group Theory Notes Drill#^nd-prop-33-4|drill]]
+- [ ] WS 3.4: Proposition [[§18 Conjugation, Products, and Pointwise Products#^prop-18-5|§18.5]] Characterizations of Abelian Groups, Worksheet Form · [[Group Theory Notes Drill#^nd-prop-18-5|drill]]
+- [ ] WS 3.5: Proposition [[§35 The Center#^prop-35-1|§35.1]] Central iff Singleton Conjugacy Class · [[Group Theory Notes Drill#^nd-prop-35-1|drill]]
+- [ ] WS 3.6: Proposition [[§35 The Center#^prop-35-2|§35.2]] The Center Is a Subgroup · [[Group Theory Notes Drill#^nd-prop-35-2|drill]]
+
+**Worksheet 4**
+- [ ] WS 4.1: Proposition [[§25 Actions#^prop-25-1|§25.1]] A Left Action Gives a Right Action · [[Group Theory Notes Drill#^nd-prop-25-1|drill]]
+- [ ] WS 4.2: Proposition [[§25 Actions#^prop-25-2|§25.2]] Each Group Element Acts Bijectively · [[Group Theory Notes Drill#^nd-prop-25-2|drill]]
+- [ ] WS 4.3: Theorem [[§25 Actions#^thm-25-3|§25.3]] Actions Are Homomorphisms to $S_X$ · [[Group Theory Notes Drill#^nd-thm-25-3|drill]]
+- [ ] WS 4.4: Proposition [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]] The Stabilizer Is a Subgroup · [[Group Theory Notes Drill#^nd-prop-26-1|drill]]
+- [ ] WS 4.5: Proposition [[§26 Stabilizers and Fixed Points#^prop-26-2|§26.2]] Stabilizers of Points in the Same Orbit Are Conjugate · [[Group Theory Notes Drill#^nd-prop-26-2|drill]]
+- [ ] WS 4.6: Proposition [[§27 Orbits#^prop-27-1|§27.1]] Orbits Partition $X$ · [[Group Theory Notes Drill#^nd-prop-27-1|drill]]
+- [ ] WS 4.7: Proposition [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|§32.1]] $GL_3(\mathbb{R})$ Acting on $\mathbb{R}^3$ · [[Group Theory Notes Drill#^nd-prop-32-1|drill]]
+- [ ] WS 4.8: Proposition [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|§32.2]] $O_3(\mathbb{R})$ Acting on $\mathbb{R}^3$ · [[Group Theory Notes Drill#^nd-prop-32-2|drill]]
+- [ ] WS 4.9: Proposition [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|§32.3]] Rotational Symmetries of the Cube · [[Group Theory Notes Drill#^nd-prop-32-3|drill]]
+
+**Worksheet 5**
+- [ ] WS 5.1: Proposition [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]] When Two Group Elements Move $x$ to the Same Place · [[Group Theory Notes Drill#^nd-prop-30-1|drill]]
+- [ ] WS 5.2: Proposition [[§30 Orbit–Stabilizer#^prop-30-2|§30.2]] The Orbit Bijection · [[Group Theory Notes Drill#^nd-prop-30-2|drill]]
+- [ ] WS 5.3: Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]] Orbit–Stabilizer · [[Group Theory Notes Drill#^nd-thm-30-3|drill]]
+- [ ] WS 5.4: Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]] The Action of $G$ on $G/H$ · [[Group Theory Notes Drill#^nd-prop-31-1|drill]]
+
+**Worksheet 6**
+- [ ] WS 6.1: Theorem [[§38 Normal Subgroups#^thm-38-3|§38.3]] Five Characterizations of Normality — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-thm-38-3|drill]]
+- [ ] WS 6.2: Example [[§38 Normal Subgroups#^ex-38-1|§38.1]] A Non-Normal Subgroup of $S_3$ · [[Group Theory Notes Drill#^nd-ex-38-1|drill]]; Example [[§39 Sources of Normal Subgroups#^ex-39-1|§39.1]] Index-$2$ Examples
+- [ ] WS 6.3: Proposition [[§39 Sources of Normal Subgroups#^prop-39-9|§39.9]] Normal Subgroups of $GL_2(\mathbb{R})$ — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-39-9|drill]]
+- [ ] WS 6.4: Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]] Kernels Are Normal · [[Group Theory Notes Drill#^nd-prop-39-2|drill]]
+- [ ] WS 6.5: Proposition [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]] Images Need Not Be Normal · [[Group Theory Notes Drill#^nd-prop-39-3|drill]]
+- [ ] WS 6.6: Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]] Preimages and Images of Normal Subgroups — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-39-4|drill]]
+
+**Worksheet 7**
+- [ ] WS 7.1: Proposition [[§43 Simple Groups#^prop-43-3|§43.3]] Homomorphisms out of a Simple Group · [[Group Theory Notes Drill#^nd-prop-43-3|drill]]
+- [ ] WS 7.2: Proposition [[§43 Simple Groups#^prop-43-4|§43.4]] Homomorphisms into a Simple Group
+- [ ] WS 7.3: Theorem [[§43 Simple Groups#^thm-43-1|§43.1]] Abelian Simple Groups · [[Group Theory Notes Drill#^nd-thm-43-1|drill]]
+- [ ] WS 7.4: Proposition [[§43 Simple Groups#^prop-43-6|§43.6]] $A_5$ Is Simple · [[Group Theory Notes Drill#^nd-prop-43-6|drill]]
+- [ ] WS 7.5: Theorem [[§43 Simple Groups#^thm-43-9|§43.9]] $A_n$ Is Simple for $n \geq 5$ · [[Group Theory Notes Drill#^nd-thm-43-9|drill]]
+
+**Worksheet 8**
+- [ ] WS 8.1: Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]] $HN$ Is a Subgroup When $N$ Is Normal
+- [ ] WS 8.2: Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]] Second Isomorphism Theorem · [[Group Theory Notes Drill#^nd-thm-41-5|drill]]
+- [ ] WS 8.3: Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-6|§41.6]] The Order of $SN$ — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-cor-41-6|drill]]
+- [ ] WS 8.4: Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]] Images of Subgroups Containing $N$ · [[Group Theory Notes Drill#^nd-prop-42-1|drill]]
+- [ ] WS 8.5: Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]] Preimages of Subgroups of $G/N$ · [[Group Theory Notes Drill#^nd-prop-42-2|drill]]
+- [ ] WS 8.6: Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]] Quotients Along the Correspondence — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-42-4|drill]]
+
+**Worksheet 9**
+- [ ] WS 9.1: Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]] $S_3$ and $S_4$ Are Solvable · [[Group Theory Notes Drill#^nd-prop-48-1|drill]]
+- [ ] WS 9.2: Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]] Subgroups of Solvable Groups Are Solvable · [[Group Theory Notes Drill#^nd-prop-48-2|drill]]
+- [ ] WS 9.3: Proposition [[§48 Solvable Groups#^prop-48-3|§48.3]] Quotients of Solvable Groups Are Solvable · [[Group Theory Notes Drill#^nd-prop-48-3|drill]]
+- [ ] WS 9.4: Proposition [[§47 Commutators#^prop-47-4|§47.4]] Properties of the Commutator Subgroup · [[Group Theory Notes Drill#^nd-prop-47-4|drill]]
+- [ ] WS 9.5: Proposition [[§47 Commutators#^prop-47-6|§47.6]] The Abelianization Is Abelian
+- [ ] WS 9.6: Theorem [[§49 The Derived Series#^thm-49-1|§49.1]] Solvability via the Derived Series · [[Group Theory Notes Drill#^nd-thm-49-1|drill]]
+
+**Worksheet 10**
+- [ ] WS 10.1: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-1|§51.1]] Fixed Points of a $p$-Group Action — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-51-1|drill]]
+- [ ] WS 10.2: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]] The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ — **proof not yet in the notes** · [[Group Theory Notes Drill#^nd-prop-51-5|drill]]
+- [ ] WS 10.3: Proposition [[§52 The Sylow Theorems#^prop-52-3|§52.3]] Sylow Subgroups of a Subgroup · [[Group Theory Notes Drill#^nd-prop-52-3|drill]]
+- [ ] WS 10.4: Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem · [[Group Theory Notes Drill#^nd-thm-52-4|drill]]
+- [ ] WS 10.5: Proposition [[§52 The Sylow Theorems#^prop-52-5|§52.5]] $p$-Subgroups and Conjugates of a Sylow Subgroup · [[Group Theory Notes Drill#^nd-prop-52-5|drill]]
+- [ ] WS 10.6: Theorem [[§52 The Sylow Theorems#^thm-52-6|§52.6]] The Second Sylow Theorem · [[Group Theory Notes Drill#^nd-thm-52-6|drill]]
 
 ## T1. Groups and subgroups (§1–§5)
 **Language**
