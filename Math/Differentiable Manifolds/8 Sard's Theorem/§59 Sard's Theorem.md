@@ -5,7 +5,7 @@ chapter: 8
 section: 59
 tags: [differentiable-manifolds, math591]
 ---
-← [[§58 Sets of Measure Zero]] · ↑ [[· 8 Sard's Theorem]]
+← [[§58 Sets of Measure Zero]] · ↑ [[· 8 Sard's Theorem]] · [[§60 Parametric Transversality]] →
 
 *Stage: analysis — Almost every value of a smooth map is regular.*
 
