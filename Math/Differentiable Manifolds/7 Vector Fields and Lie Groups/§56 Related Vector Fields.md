@@ -251,3 +251,21 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 ^pf-56-4
 
 *Uses:* [[§56 Related Vector Fields#^prop-56-3|§56.3]], [[§56 Related Vector Fields#^prop-56-2|§56.2]], [[§56 Related Vector Fields#^def-56-1|Def. §56.1]], [[§56 Related Vector Fields#^def-56-2|Def. §56.2]], [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]
+
+*(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)* A vector field $\mathbf{X}$ on $M$, pointwise, globally and in components. Chart $(U, \varphi = (x^1, \ldots, x^m))$; the numbers on the arrows refer to the remark below.
+
+![[m591-56-4.svg]]
+
+> [!remark] Remark: Conversion Diagram for Vector Fields
+> 1. *Section to operator.* $(\mathbf{X}f)(p) = \mathbf{X}_p[f]$, a derivation of $C^\infty(M)$: $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$ (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]); $\mathbf{X}f$ is smooth for every smooth $f$ exactly when $\mathbf{X}$ is smooth (Lemma [[§53 Vector Fields#^lem-53-8|§53.8]]).
+> 2. *Operator to section.* Every derivation of $C^\infty(M)$ is a vector field: $\mathbf{X}_p[f] = (\mathbf{X}\tilde f)(p)$ for a global $\tilde f$ with the same germ at $p$, which exists by bump functions and does not depend on the choice (Corollary [[§53 Vector Fields#^cor-53-5|§53.5]], Lemma [[§53 Vector Fields#^lem-53-6|§53.6]], Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]).
+> 3. *Section to components.* On $U$, $X^j = \mathbf{X}(x^j)$, that is, $X^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p)$.
+> 4. *Components to section.* $\mathbf{X}_p = \sum_j X^j(p)\, \partial/\partial x^j|_p$, smooth if and only if all $X^j$ are (Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]); then $\mathbf{X}f = \sum_j X^j\, \partial f/\partial x^j$.
+>
+> *The same three faces for:*
+> - *the bracket.* Globally $[\mathbf{X}, \mathbf{Y}]f = \mathbf{X}(\mathbf{Y}f) - \mathbf{Y}(\mathbf{X}f)$ (Definition [[§55 Lie Bracket and Lie Algebra#^def-55-1|§55.1]]). Pointwise $[\mathbf{X}, \mathbf{Y}]_p[f] = \mathbf{X}_p[\mathbf{Y}f] - \mathbf{Y}_p[\mathbf{X}f]$, which needs the global function $\mathbf{Y}f$, not only the vector $\mathbf{Y}_p$. In components $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(Y^j) - \mathbf{Y}(X^j) = \sum_i \big(X^i\, \partial Y^j/\partial x^i - Y^i\, \partial X^j/\partial x^i\big)$ (Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]]).
+> - *$F$-related fields.* Pointwise $F_{\ast p}\mathbf{X}_p = \mathbf{Y}_{F(p)}$ (Definition [[§56 Related Vector Fields#^def-56-2|§56.2]]). Globally $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$ for all $g$ (Proposition [[§56 Related Vector Fields#^prop-56-1|§56.1]]). In components $Y^i(F(p)) = \sum_j \frac{\partial F^i}{\partial x^j}(p)\, X^j(p)$. For a diffeomorphism, $\mathbf{Y} = F_\ast\mathbf{X}$ with $(F_\ast\mathbf{X})_q = F_{\ast}\mathbf{X}_{F^{-1}(q)}$ (Definition [[§56 Related Vector Fields#^def-56-1|§56.1]]).
+> - *one-forms.* Pointwise $\theta_p \in T_p^{\ast}M$; globally the function $p \mapsto \theta_p(\mathbf{X}_p)$ for each vector field $\mathbf{X}$; in components $\theta_j = \theta(\partial/\partial x^j)$ and $\theta = \sum_j \theta_j\, dx^j$ (Proposition [[§51 One-Forms#^prop-51-1|§51.1]]). For $\theta = df$, $df(\mathbf{X}) = \mathbf{X}f$.
+> - *the tangent bundle.* The section $\mathbf{X}$ in the standard chart of $TM$ ([[§49 The Tangent Bundle|§49]]) is $p \mapsto (x^1, \ldots, x^m, X^1, \ldots, X^m)$, with transition $(r, v) \mapsto (\tau(r), \tau'(r)v)$, $\tau$ the transition function of the base.
+
+^rem-56-3

@@ -69,7 +69,30 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^pf-2-1
 
-**Not proved in this course.** The theorem follows from Brouwer's *invariance of domain*; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology—no differentiability is assumed—which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs. $\mathbb{R}^3$ needs more.
+> [!proof]+ Proof of the cases $n \le 1$ or $m \le 1$
+> *(Not from lecture; added on request. Only point-set topology is used: this is the connectedness argument mentioned below, written out.)* Let $h : A \to B$ be a homeomorphism, suppose $n \neq m$ and that the smaller of $n, m$ is $0$ or $1$; we derive a contradiction. Since $h^{-1} : B \to A$ is also a homeomorphism, we may exchange the roles of $A$ and $B$ and assume $n < m$. So $n \in \{0, 1\}$ and $m \ge n + 1$.
+>
+> *Case $n = 0$.* $\mathbb{R}^0$ is a single point, so the nonempty set $A$ is that point, and $B = h(A)$ is a single point. But $B$ is a nonempty open subset of $\mathbb{R}^m$ with $m \ge 1$: it contains a ball $B(b, r)$ with $r > 0$, and the points $b + t e_1$, $0 \le t < r$, of that ball are pairwise distinct. So $B$ is infinite, a contradiction.
+>
+> *Case $n = 1$, $m \ge 2$.* Fix $a \in A$ and put $b = h(a)$.
+>
+> 1. *Shrink to a ball.* $B$ is open and $b \in B$, so there is $r > 0$ with $D = B(b, r) \subseteq B$. Let $J = h^{-1}(D)$. It is open in $A$, as $h$ is continuous, hence open in $\mathbb{R}$, as $A$ is; and $a \in J$. By Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3), $h$ restricts to a homeomorphism $J \to D$, and, since $h$ is a bijection with $h(a) = b$, to a homeomorphism $J \setminus \{a\} \to D \setminus \{b\}$.
+> 2. *$J \setminus \{a\}$ is not connected.* As $J$ is open in $\mathbb{R}$ and $a \in J$, there is $\delta > 0$ with $(a - \delta, a + \delta) \subseteq J$. The sets $L = J \cap (-\infty, a)$ and $R = J \cap (a, \infty)$ are open in $J \setminus \{a\}$ (intersections with open subsets of $\mathbb{R}$), disjoint, cover $J \setminus \{a\}$, and are nonempty: $a - \delta/2 \in L$ and $a + \delta/2 \in R$. So $J \setminus \{a\}$ is disconnected.
+> 3. *$D \setminus \{b\}$ is connected.* We show it is path connected, which implies connected (590 §14). Let $x, y \in D \setminus \{b\}$ with $x \neq y$. The ball $D$ is convex, so every segment $[x', y'] = \{(1-t)x' + ty' : t \in [0, 1]\}$ with endpoints in $D$ lies in $D$. If $b \notin [x, y]$, then $t \mapsto (1-t)x + ty$ is a path from $x$ to $y$ in $D \setminus \{b\}$. Otherwise $b$ lies on the line $\ell$ through $x$ and $y$. Since $m \ge 2$, there is a unit vector $u$ orthogonal to $y - x$; put $z = b + \tfrac{r}{2}u$. Then $z \in D$, as $|z - b| = r/2 < r$, and $z \notin \ell$, as the points of $\ell$ are $b + s(y - x)$, $s \in \mathbb{R}$, and $\tfrac r2 u$ is not a multiple of $y - x$. The segment $[x, z]$ avoids $b$: otherwise, since $b \neq x$, the line through $x$ and $b$, which is $\ell$, would contain $z$. In the same way $[z, y]$ avoids $b$. So
+>
+> $$
+> \gamma(t) = \begin{cases} x + 2t\,(z - x), & t \in [0, \tfrac12], \\ z + (2t - 1)(y - z), & t \in [\tfrac12, 1], \end{cases}
+> $$
+>
+> runs in $D \setminus \{b\}$ from $x$ to $y$, and it is continuous by the pasting lemma (590 §9), the two formulas agreeing at $t = \tfrac12$.
+>
+> A homeomorphism carries connected spaces to connected spaces (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](1), applied to $h^{-1}$). By 1 and 3, $J \setminus \{a\} = h^{-1}(D \setminus \{b\})$ would be connected, contradicting 2.
+
+^pf-2-1-2
+
+*Uses:* [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]
+
+**Not proved in this course.** The theorem follows from Brouwer's *invariance of domain*; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology—no differentiability is assumed—which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs. $\mathbb{R}^3$ needs more. The connectedness argument is the proof of the cases $n \le 1$ or $m \le 1$ above.
 
 > [!remark]- Connections
 > - The case ℝ² ≇ ℝ³ is proved in 590 by comparing π₁ of the punctured spaces: [[§29 The Fundamental Group#^rem-29-2|590 §29, Remark: What π₁ Cannot See]].
@@ -144,7 +167,6 @@ The fact that the dimension of a manifold is well-defined rests on the following
 ^pf-2-3-2
 
 *Uses:* [[§1 Point-Set Topology Review#^lem-1-9|§1.9]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]
-
 
 > [!remark] Remark
 > Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used in the $S^2$ example ([[§8 Spheres#^ex-8-1|Ex. §8.1]]).

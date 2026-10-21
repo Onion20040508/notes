@@ -26,10 +26,11 @@ tags: [differentiable-manifolds, math591]
 > *Lee: Theorem 6.10*
 
 ^thm-59-1
+
 > [!remark]- Connections
 > - "Measure zero" is Lebesgue-null: outer measure [[§10 Lebesgue Outer Measure#^def-10-4|551 Def. §10.4]]; so the regular values of a smooth map are of full measure (almost every value is regular).
 
-“So almost all values are regular \ldots and this is going to have a lot of applications. Trust me, we're going to see them. They're very cute.”
+“So almost all values are regular … and this is going to have a lot of applications. Trust me, we're going to see them. They're very cute.”
 
 ![[m591-59-1.svg]]
 
@@ -105,11 +106,12 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 > *Lee: Corollary 6.11*
 
 ^cor-59-2
+
 > [!remark]- Connections
 > - A measure-theory relative: the graph of a measurable function has measure zero, [[§26 Applications of Tonelli's Theorem#^cor-26-4|551 §26.4]].
 
 > [!proof]+ Proof
-> *(Lecture 19.)* “By linear algebra, no point in the image can be a regular value, because \ldots the dimensions don't work out”: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage — “this is a vacuous thing” — and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
+> *(Lecture 19.)* “By linear algebra, no point in the image can be a regular value, because … the dimensions don't work out”: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage — “this is a vacuous thing” — and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
 
 ^pf-59-2
 
@@ -118,5 +120,3 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 “That's one observation, but there will be many other nice applications of this.” For instance, a smooth curve $\gamma : \mathbb{R} \to \mathbb{R}^2$ never fills an open set of the plane: its image has measure zero, and so does every subset of it (Lemma [[§58 Sets of Measure Zero#^lem-58-1|§58.1]](1)), while an open set does not (Lemma [[§58 Sets of Measure Zero#^lem-58-1|§58.1]](4)) — in contrast with continuous space-filling curves.
 
 **Transcription note (Lecture 19).** Page 50 of the handwritten notes states the image lemma for “$F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open”. As written, with $m$ unrestricted, it is false for $m > n$: the projection $\mathbb{R}^2 \to \mathbb{R}$, $(x, y) \mapsto x$, maps the $x$-axis, of measure zero in $\mathbb{R}^2$, onto $\mathbb{R}$. Lemma [[§58 Sets of Measure Zero#^lem-58-2|§58.2]] takes $m = n$, as Lee does and as the application to transition maps needs. (For $m < n$ the conclusion holds for every $S$, by Corollary [[§59 Sard's Theorem#^cor-59-2|§59.2]].)
-
-\appendix

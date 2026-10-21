@@ -22,7 +22,7 @@ tags: [differentiable-manifolds, hub]
 - [[§58 Sets of Measure Zero#^lem-58-5|Lemma §58.5: A Fubini Lemma for Compact Sets]]
 
 ## Used in (Differentiable Manifolds)
-- (not cited later in the course)
+- [[§60 Parametric Transversality#^cor-60-2|Corollary §60.2: Almost Every Member Is Transverse]]
 
 ## Connections
 - TODO

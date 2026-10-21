@@ -105,4 +105,25 @@ Things that *are* somewhere move forward with the points; things that *eat* move
 
 ^ex-48-1
 
+*(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)* The differential of a smooth $F : M \to N$ at $p$, in four equivalent forms. Charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$, $F^i = y^i \circ F$.
+
+![[m591-48-1.svg]]
+
 *Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
+
+> [!remark] Remark: Conversion Diagram for the Differential
+> 1. *Germs and curves.* $(F_{\ast p}D)[g] = D[g \circ F]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]); for $D = D_\gamma$, $F_{\ast p}D_\gamma = D_{F \circ \gamma}$, i.e. $F_{\ast}(\gamma'(0)) = (F \circ \gamma)'(0)$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]).
+> 2. *Germs and the Jacobian.* $F_{\ast p}\big(\partial/\partial x^j|_p\big) = \sum_i \frac{\partial F^i}{\partial x^j}(p)\, \partial/\partial y^i|_{F(p)}$: column $j$ of the Jacobian of $\psi \circ F \circ \varphi^{-1}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]); on components, $(F_{\ast p}v)^i = \sum_j \frac{\partial F^i}{\partial x^j}(p)\, v^j$.
+> 3. *The Jacobian and the vector-space formula.* Between open subsets of vector spaces, $F_{\ast p}v = \frac{d}{dt}\big|_{t=0} F(p + tv)$ once $F$ is known to be smooth, and any curve with velocity $v$ may replace the line (Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]).
+>
+> *For a function $f : M \to \mathbb{R}$*, five faces of $df_p \in T_p^{\ast}M$:
+>
+> $$
+> df_p(v) = v[f] = f_{\ast p}(v) = (f \circ \gamma)'(0) = \sum_j \frac{\partial f}{\partial x^j}(p)\, v^j ,
+> $$
+>
+> with $f_{\ast p}(v)$ read through $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ and $\gamma$ any curve with velocity $v$; $df_p = \sum_j \frac{\partial f}{\partial x^j}(p)\, dx^j|_p$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]); in $\mathbb{R}^n$, $df_p(v) = \nabla f(p) \cdot v$; and, on germs, $df_p$ corresponds to the class of $f - f(p)$ in $I_p/I_p^2$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]).
+>
+> *Covectors.* Components $\xi_j = \xi(\partial/\partial x^j|_p)$, $\xi = \sum_j \xi_j\, dx^j|_p$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]); under a change of chart $\xi_i = \sum_j \frac{\partial \tilde x^j}{\partial x^i}(p)\, \tilde\xi_j$, the transpose of the rule for vectors. The pullback $F_p^{\ast}\xi = \xi \circ F_{\ast p}$ has the transposed Jacobian as its matrix (Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]), and $F_p^{\ast}\big(dg_{F(p)}\big) = d(g \circ F)_p$ (Proposition [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]]).
+
+^rem-48-1

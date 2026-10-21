@@ -830,3 +830,93 @@ The converse fails: in Example [[§52 Critical Points and the Hessian#^ex-52-2|�
 ^pf-52-12
 
 *Uses:* [[§36 Submersions#^cor-36-8|§36.8]], [[§36 Submersions#^prop-36-2|§36.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]]
+
+## The Hessian from the Zero Section
+
+*Lecture 20, the day of the midterm. “What I want to do today and Friday is go over certain topics that … don't fit in the narrative of vector fields. … Math doesn't exist as a narrative, right? It's all there at the same time, and we make stories about it, because that's what people do.” Vector fields resume, from the dynamical point of view, on Monday. First the Hessian: “I mentioned something last time, but I didn't write anything down … Let's take the time to do it.”*
+
+*The claim* (Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]] and Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]]): if $f : M \to \mathbb{R}$ is smooth and $df_p = 0$, there is a well-defined quadratic form, a symmetric bilinear form $\operatorname{Hess}_p f : T_pM \times T_pM \to \mathbb{R}$, whose matrix in any coordinates is $\big(\partial^2 f/\partial x^i \partial x^j(p)\big)$. “You can always, in any coordinate system, at any point, write this matrix, but it doesn't define a coordinate-independent quadratic form unless you are at a critical point.” Lecture 20 explained why, coordinate-free.
+
+*The observation that makes it go.* At a point $(p, 0)$ of the zero section $\mathcal{Z}$ of $T^{\ast}M$, the zero section and the fibre $\pi^{-1}(p) = T_p^{\ast}M$ are transverse and complementary, so (Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]])
+
+$$
+T_{(p,0)}(T^{\ast}M) = T_{(p,0)}\mathcal{Z} \oplus T_{(p,0)}\pi^{-1}(p) \cong T_pM \oplus T_p^{\ast}M ,
+$$
+
+“without choosing any coordinates”: the zero section is naturally $M$, and the tangent space to the fibre, a vector space, is the fibre itself. Now consider the section $s_f : M \to T^{\ast}M$, $q \mapsto (q, df_q)$, of the homework. If $df_p = 0$, then $s_f(p) = (p, 0)$, and $\operatorname{Im}(s_f)_{\ast p} \subseteq T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$.
+
+> [!theorem] Proposition §52.13: The Hessian as the Graph of $(s_f)_{\ast p}$
+> Let $f : M \to \mathbb{R}$ be smooth and $p \in \operatorname{Crit}(f)$. In the splitting $T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$ above, $\operatorname{Im}(s_f)_{\ast p}$ is the graph of a unique linear map $h_p : T_pM \to T_p^{\ast}M$, and
+>
+> $$
+> \operatorname{Hess}_p f(u, v) = h_p(u)(v), \qquad u, v \in T_pM .
+> $$
+>
+> In a chart, the matrix of $(s_f)_{\ast p}$ is $\binom{I}{H_p}$, with $H_p = \big(\partial^2 f/\partial x^i \partial x^j(p)\big)$ the block of $h_p$.
+
+^prop-52-13
+
+> [!proof]+ Proof
+> *(Lecture 20, with the details Uribe skipped — “I will skip the details” — filled in from the propositions already in these notes.)* *A graph.* Since $s_f$ is a section, $\pi \circ s_f = \mathrm{id}_M$, so $\pi_{\ast(p,0)} \circ (s_f)_{\ast p} = \mathrm{id}$ by the chain rule. The projection onto the first summand of the splitting is $\pi_{\ast(p,0)}$ (it kills the vertical summand, Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](1), and is the identity on $T_{(p,0)}\mathcal{Z} \cong T_pM$, as $\pi \circ \zeta = \mathrm{id}_M$). So $(s_f)_{\ast p}u = (u, h_p(u))$ for a unique $h_p(u) \in T_p^{\ast}M$, and $h_p$ is linear because $(s_f)_{\ast p}$ is: the image “passes the vertical line test”, an $m$-dimensional subspace that is the graph of $h_p$. “For example, if $f$ is constant, then this is zero, and you get just the horizontal.”
+>
+> *The Hessian.* “A map from a vector space to its dual … is the same as a bilinear map”: $(u, v) \mapsto h_p(u)(v)$. By Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](3), the vertical component of $(s_f)_{\ast p}u$ is $\operatorname{Hess}_p f(u, \cdot\,)$, so $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. In coordinates, the matrix of $(s_f)_{\ast p}$ is $\binom{I}{H_p}$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](2), the homework computation), and “once you unravel everything … the matrix of $h_p$ in the induced coordinates is just this bottom” block.
+
+^pf-52-13
+
+*Uses:* [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]
+
+![[m591-52-2.svg]]
+
+The splitting at a point of the zero section, and the image of $(s_f)_{\ast p}$ in it: a line through the origin that “passes the vertical line test”, the graph of $h_p$. Its slope is the Hessian: $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. A line through the origin is such a graph exactly when it meets the vertical axis (the fibre direction) only in $0$.
+
+*Away from a critical point.* The horizontal summand “has nothing to do with $f$. It's just because … we have the zero section, and then we have the fibre, and they're just sitting there”; at $(p, df_p)$ with $df_p \neq 0$ the fibre is still there, but there is no zero section through the point. A student asked why one cannot use some other section through $(p, df_p)$: “Yeah, you can put a section, but you have to make a choice … because you make a choice, you don't have a well-defined” Hessian. In coordinates (“which we haven't done much of”), with two charts $(x^i)$ and $(y^j)$, $\partial f/\partial x^i = \sum_j (\partial y^j/\partial x^i)\, \partial f/\partial y^j$, and differentiating again,
+
+$$
+\frac{\partial^2 f}{\partial x^k \partial x^i} = \sum_j \frac{\partial^2 y^j}{\partial x^k \partial x^i}\, \frac{\partial f}{\partial y^j} + \sum_{j,l} \frac{\partial y^j}{\partial x^i}\, \frac{\partial y^l}{\partial x^k}\, \frac{\partial^2 f}{\partial y^l \partial y^j} :
+$$
+
+the first sum “will not go away in general”, so the matrix “doesn't transform like a quadratic form unless these guys are zero” (Proposition [[§52 Critical Points and the Hessian#^prop-52-2|§52.2]]).
+
+> [!remark] Remark: Natural Is Not Canonical
+> “Natural is not the same thing as canonical. This was [drilled] into me when I was your age. *Canonical* means that this is how we do it: we follow the canon, an established set of traditions. *Natural* means that this is how nature does it. It's not a convention. It's just sitting there, in the mathematical world.” The splitting $T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$ “is natural. It's not canonical.”
+
+^rem-52-5
+
+*Jets.* “In the same sort of direction”: for every $k$ the quotient of germs by a power of $I_p$ makes sense, generalizing $T_p^{\ast}M \cong I_p/I_p^2$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]).
+
+> [!definition] Definition §52.7: Jets
+> Let $p \in M$ and $k \ge 0$. The space of **$k$-jets** at $p$ is
+>
+> $$
+> J^k_p = C^\infty_p(M) \big/ I_p^{k+1},
+> $$
+>
+> where $I_p^{k+1}$ is spanned by products of $k + 1$ germs vanishing at $p$. The class of a germ is its $k$-jet.
+
+^def-52-7
+
+> [!theorem] Proposition §52.14: Jets Are Taylor Polynomials
+> In a chart $(x^1, \ldots, x^m)$ centred at $p$, two germs have the same $k$-jet if and only if their partial derivatives of all orders $\le k$ agree at $p$, that is, their Taylor polynomials of degree $k$ at $p$ agree. So $J^k_p$ is isomorphic to the space of polynomials of degree $\le k$ in $m$ variables.
+
+^prop-52-14
+
+> [!proof]+ Proof
+> *(Lecture 20: “this just isolates … the partial sum of the Taylor series. You kill derivatives of order $k+1$ and higher.” Filled in.)* It suffices to show that $[g] \in I_p^{k+1}$ if and only if all partials of $g$ of orders $0, \ldots, k$ vanish at $p$. *Only if.* A product $g_1 \cdots g_{k+1}$ of germs vanishing at $p$: by the Leibniz rule, a partial derivative of order $\le k$ of the product is a sum of products in each of which some factor $g_i$ is not differentiated, and so vanishes at $p$; sums of such products behave the same. *If.* Applying Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]) repeatedly to the coefficient functions, as in the proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]], gives, on a ball about $p$,
+>
+> $$
+> g = \sum_{|\alpha| \le k} \frac{\partial^\alpha g(p)}{\alpha!}\, x^\alpha + \sum_{|\beta| = k+1} x^\beta\, g_\beta
+> $$
+>
+> with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, every polynomial of degree $\le k$ is the Taylor polynomial of a germ (itself), so the map from $J^k_p$ to Taylor polynomials is onto.
+
+^pf-52-14
+
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]
+
+![[m591-52-3.svg]]
+
+*(Not from lecture; figure added.)* The jets of a function $f$ of one variable at $p$, drawn as its Taylor polynomials (Proposition [[§52 Critical Points and the Hessian#^prop-52-14|§52.14]]): the $0$-jet $T_0$ is the value $f(p)$, the $1$-jet $T_1$ the tangent line, the $2$-jet $T_2$ the osculating parabola. Two germs have the same $k$-jet when their difference lies in $I_p^{k+1}$, that is, vanishes to order $k + 1$ at $p$. For $k = 1$, removing the value leaves $I_p/I_p^2 \cong T_p^{\ast}M$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]): the $1$-jet of a germ vanishing at $p$ is its differential.
+
+“This is called a space of jets … they are useful in some circles. If you take $k = 2$, you can package the information contained in the function — the value, the first derivative, the second derivative — in some abstract object.” But “within them you cannot separate naturally the first and the second partials, unless you have a special situation” — a critical point being the special situation that gives the Hessian.
+
+**Transcription note (Lecture 20).** Page 53 of the handwritten notes writes the jet space as $C^\infty_p(M)/I_p^k$, which keeps derivatives through order $k - 1$; Uribe corrected it in lecture (“maybe I should put $k + 1$ here”), and the $k$-jet is $C^\infty_p(M)/I_p^{k+1}$. The splitting there is written at “$(0, p)$”; in these notes the point of the zero section over $p$ is $(p, 0)$.

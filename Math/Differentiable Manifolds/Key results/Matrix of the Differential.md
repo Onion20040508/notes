@@ -23,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§9 Matrices#^ladr-3-31|LADR 3.31 Matrix of a linear map, M(T)]]
 
 ## Used in (Differentiable Manifolds)
+- [[§30 The Differential in Coordinates#^ex-30-2|Example §30.2: The Moment Map on ℂPⁿ]]
 - [[§30 The Differential in Coordinates#^cor-30-3|Corollary §30.3: The Chain Rule in Coordinates]]
 - [[§30 The Differential in Coordinates#^cor-30-4|Corollary §30.4: Change of Coordinates]]
 - [[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5: Agreement with the Vector-Space Differential]]

@@ -118,4 +118,19 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 
 ^ex-47-1
 
+*(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)* One tangent vector at $p$, in four equivalent forms. Chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$; the numbers on the arrows refer to the remark below.
+
+![[m591-47-2.svg]]
+
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+
+> [!remark] Remark: Conversion Diagram for a Tangent Vector
+> 1. *Curve to derivation.* $D_\gamma[f] = (f \circ \gamma)'(0)$, the velocity (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]]).
+> 2. *Derivation to curve.* Every $D$ is a velocity: $\gamma(t) = \varphi^{-1}\big(\varphi(p) + t\,(v^1, \ldots, v^m)\big)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]]).
+> 3. *Derivation to components.* $v^j = D[x^j] = dx^j|_p(D)$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
+> 4. *Components to derivation.* $D = \sum_j v^j\, \partial/\partial x^j|_p$, where $\partial/\partial x^j|_p[f] = \partial (f \circ \varphi^{-1})/\partial r^j\,(\varphi(p))$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]).
+> 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a submanifold $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
+>
+> *Change of chart.* $\tilde v^j = \sum_i \frac{\partial \tilde x^j}{\partial x^i}(p)\, v^i$, the Jacobian of the transition function acting on the components (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]).
+
+^rem-47-1

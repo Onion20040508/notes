@@ -31,6 +31,7 @@ Show that a connected topological manifold is path connected.
 - [ ] Q5 Show $M \setminus S$ is open.
 - [ ] Q6 Conclude $S = M$; then explain how to join two arbitrary points $x, y$ (reversal + concatenation).
 - [ ] Q7 **[why]** Give a connected space that is not path connected (topologist's sine curve). Which step of Q4–Q5 breaks for it, and which hypothesis on $M$ prevented that?
+- [ ] Q8 State and prove, for a general topological space: connected and locally path connected implies path connected. Which steps of Q4–Q5 used only local path connectedness?
 
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.** Topological manifolds; connectedness vs path connectedness.
@@ -57,6 +58,7 @@ Let $X = (\mathbb{R}\times\{1\}) \cup (\mathbb{R}\times\{2\})$ and $(x,1) \sim (
 - [ ] Q5 Prove: in any topological space, the limit of a sequence lying in a closed set lies in that set (no metric needed).
 - [ ] Q6 **[why]** To conclude that the quotient is not Hausdorff from "$\Gamma$ not closed", which hypothesis of Thm §6.1 must you check? Does it hold here?
 - [ ] Q7 Show the quotient (the line with two origins) is locally Euclidean and second countable. Which manifold axiom fails?
+- [ ] Q8 **[why]** Which direction of "closed $\iff$ sequentially closed" holds in every space, and which needs first countability, and of which space ($X \times X$, not $\Gamma$)? Why is $X \times X$ first countable here (HW1.4(a))?
 
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.** Quotients and the Hausdorff property.
@@ -69,7 +71,7 @@ Let $X = (\mathbb{R}\times\{1\}) \cup (\mathbb{R}\times\{2\})$ and $(x,1) \sim (
 >
 > **Strategy (S14).** Sequence test: $\big((1/n,1),(1/n,2)\big) \in \Gamma$ converges to $\big((0,1),(0,2)\big) \notin \Gamma$.
 >
-> **Difficulty 1.** Submitted solution: phrased as "the limit is a limit point of $\Gamma$", checked on basis boxes $V_1 \times V_2$; the notes (§10) add that the sequence argument needs no metrizability.
+> **Difficulty 1.** Submitted solution: phrased as "the limit is a limit point of $\Gamma$", checked on basis boxes $V_1 \times V_2$; the notes (§10) add that the sequence argument needs no metrizability. Official solution: opens with "$X$ 2C $\Rightarrow \Gamma$ 1C, so closed iff sequentially closed"; correct but beside the point, since only "closed $\Rightarrow$ sequentially closed" is used, and that holds in every space (Q8).
 
 ### HW1.3 A non-Hausdorff orbit space
 
@@ -85,6 +87,7 @@ Let $\mathbb{R}^+$ act on $X = \mathbb{R}^2\setminus\{0\}$ by $t\cdot(x,y) = (tx
 - [ ] Q6 Why does a sequence in a Hausdorff space have at most one limit?
 - [ ] Q7 **[why]** Cor §13.4 says a compact group acting on a Hausdorff space has a Hausdorff orbit space. Which hypothesis fails here? Explain how non-compactness of $\mathbb{R}^+$ lets the two half-axis orbits be approached by the same hyperbolas.
 - [ ] Q8 Alternative route: show the graph of the orbit relation is not closed and apply Thm §6.1 (why is the relation open?).
+- [ ] Q9 Show $X/\mathbb{R}^+$ is second countable (open relation, Thm §6.3) and locally Euclidean, so it fails only $T_2$, the same profile as the line with two origins.
 
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.** Group actions and orbit spaces.
@@ -131,6 +134,7 @@ $X = \mathbb{R}/\sim$ with $x \sim y$ iff $x = y$ or $x, y \in \mathbb{Z}$; all 
 - [ ] Q5 For each $j$, exhibit a point of $U_j$ not in $W$, and conclude.
 - [ ] Q6 **[why]** Why must infinitely many integers be identified? (If only finitely many points are collapsed, what goes wrong with the diagonal argument?)
 - [ ] Q7 **[why]** $\mathbb{R}$ is second countable; Thm §6.3 says open quotients of second countable spaces are second countable. Why is $\pi$ not an open map?
+- [ ] Q8 **[why]** Why cap the radii, $a_{j,n} \le \tfrac14$? Without a cap, give radii for which the witness $x \in (j - a_{j,j}, j + a_{j,j}) \setminus (j - \tfrac12 a_{j,j}, j + \tfrac12 a_{j,j})$ lies in another arm of $W$. (For instance $a_{j,j} = 3$, $x = j + 2.2$, and $a_{j+2,j+2} > 0.4$.)
 
 > [!tip]- Hint (b): strategy
 > **Strategy (S4, diagonal).** Neighbourhoods of $x_0$ are open sets of $\mathbb{R}$ containing $\mathbb{Z}$; given countably many, build one whose $j$-th arm is smaller than the $j$-th arm of the $j$-th set.
@@ -143,7 +147,7 @@ $X = \mathbb{R}/\sim$ with $x \sim y$ iff $x = y$ or $x, y \in \mathbb{Z}$; all 
 >
 > **Key results.** (a) [[§1 Point-Set Topology Review#^prop-1-4|Prop §1.4]], [[§1 Point-Set Topology Review#^prop-1-3|Prop §1.3]]. (b) [[§4 Quotient Spaces and Open Maps#^ex-4-3|Ex §4.3]] (this problem, proof in the notes), [[§4 Quotient Spaces and Open Maps#^rem-4-4|Remark: Why the Diagonal]] (why the diagonal), openness via saturations [[§4 Quotient Spaces and Open Maps#^prop-4-6|Prop §4.6]]; contrast: open quotients stay second countable [[§6 Open Quotients#^thm-6-3|Thm §6.3]].
 >
-> **Difficulty** (a) 1, (b) 2. Submitted solution: caps radii at $1/4$ so the arms stay disjoint, proves $\pi^{-1}(\pi(U)) = U$ for open $U \supseteq \mathbb{Z}$, and uses $b_n = a_{n,n}/2$ with the witness $w_j = j + \tfrac34 a_{j,j}$. Careful bookkeeping of $\mathbb{N}$ vs $\mathbb{Z}$ indices.
+> **Difficulty** (a) 1, (b) 2. Submitted solution: caps radii at $1/4$ so the arms stay disjoint, proves $\pi^{-1}(\pi(U)) = U$ for open $U \supseteq \mathbb{Z}$, and uses $b_n = a_{n,n}/2$ with the witness $w_j = j + \tfrac34 a_{j,j}$. Careful bookkeeping of $\mathbb{N}$ vs $\mathbb{Z}$ indices. Official solution of (b): the radii are never capped, so its witness may fall into another arm of the constructed set, which is exactly the trap of Q8; do not reuse that step.
 
 ### HW1.5 Projections are quotient maps
 
@@ -157,6 +161,7 @@ A quotient map is a surjection with $U$ open iff $F^{-1}(U)$ open; then $Y \cong
 - [ ] Q4 Prove: a continuous open surjection is a quotient map (use $\pi(\pi^{-1}(U)) = U$).
 - [ ] Q5 **[why]** What happens if some $X_k$, $k \ne i$, is empty? Which step uses nonemptiness?
 - [ ] Q6 Give a quotient map that is not open (e.g. the map of HW1.4(b)).
+- [ ] Q7 **[def]** (Optional) Show the product topology is the coarsest topology making all the projections $\pi_i$ continuous.
 
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.**
@@ -266,6 +271,7 @@ Explain why $\mathbb{CP}^n$ (complex lines in $\mathbb{C}^{n+1}$) is naturally $
 - [ ] Q5 Hausdorff: either quote Cor §13.4, or show directly that two distinct orbits are compact, disjoint, at positive distance $d$, and that $S^1 \cdot B(u, d/3)$, $S^1 \cdot B(v, d/3)$ are disjoint saturated open sets.
 - [ ] Q6 Why is $S^{2n+1}/S^1$ compact?
 - [ ] Q7 **[why]** Where does the Hausdorff argument use that $|\lambda| = 1$ (isometric action) and that $S^1$ is compact? What goes wrong for $\mathbb{C}^\times$ acting on all of $\mathbb{C}^{n+1}$?
+- [ ] Q8 **[why]** Openness of the orbit relation gives second countability (Thm §6.3). Why does it not give Hausdorff (HW1.3 is an open relation with a non-Hausdorff quotient)? Which extra hypothesis of Thm §6.1 must be checked for $S^{2n+1}/S^1$?
 
 > [!tip]- Hint (a): strategy
 > **Strategy (S3, S4, S13).** Normalization $z \mapsto z/|z|$ descends through the universal property in both directions; quotients by group actions are open, so bases push forward; compact group acting by isometries gives Hausdorff; continuous image of the compact sphere.
@@ -277,9 +283,9 @@ $U_i = \{\ell : \ell \cap \{z_i = 0\} = \{0\}\}$, $\varphi_i([z]) = (z_0/z_i, \l
 ^hw2-2-b
 
 - [ ] Q1 Show: $\ell \in U_i$ iff $z_i \neq 0$ for one (equivalently every) nonzero $z \in \ell$.
-- [ ] Q2 Show $U_i$ is open.
+- [ ] Q2 Show $U_i$ is open. (Alternative: under $\mathbb{CP}^n \cong S^{2n+1}/S^1$, $U_i = \pi(\{z \in S^{2n+1} : z_i \neq 0\})$ is the image of an open set under the open projection.)
 - [ ] Q3 **[def]** What does "well defined" mean for $\varphi_i$? Check it.
-- [ ] Q4 State and prove: the restriction of a quotient map $p$ to $p^{-1}(V)$, $V$ open, is a quotient map onto $V$ (Lem §5.7). Which two hypotheses are used where?
+- [ ] Q4 State and prove: the restriction of a quotient map $p$ to $p^{-1}(V)$, $V$ open, is a quotient map onto $V$ (Lem §5.7). Which two hypotheses are used where? Give a quotient map whose restriction to a subspace is not a quotient map: $t \mapsto e^{2\pi i t}$, $[0,1] \to S^1$, restricted to $[0,1)$.
 - [ ] Q5 Deduce $\varphi_i$ continuous; show $\psi_i = \pi \circ s$ (insert $1$) is a continuous inverse.
 - [ ] Q6 **[why]** Why can the universal property not be applied to $\pi : \mathbb{C}^{n+1}\setminus 0 \to \mathbb{CP}^n$ itself to get $\varphi_i$?
 
@@ -311,7 +317,7 @@ Show $\{(U_i, \varphi_i)\}$ is a $C^\infty$ atlas (FYI: transitions are holomorp
 >
 > **Key results.** [[§9 Complex Projective Space#^prop-9-1|Prop §9.1]] (Hausdorff, 2C), [[§9 Complex Projective Space#^prop-9-2|Prop §9.2]] (compact), [[§9 Complex Projective Space#^prop-9-3|Prop §9.3]] (lines); open surjections push bases forward [[§5 Quotient Maps#^lem-5-6|Lem §5.6]]; restricting a quotient map over an open set [[§5 Quotient Maps#^lem-5-7|Lem §5.7]]; orbit relations are open [[§13 Group Actions and Orbit Spaces#^lem-13-3|Lem §13.3]]; [[§13 Group Actions and Orbit Spaces#^cor-13-4|Cor §13.4]]; [[§6 Open Quotients#^thm-6-3|Thm §6.3]]; [[§5 Quotient Maps#^thm-5-1|Thm §5.1]]; charts [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|Prop §18.1]]; atlas [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|Thm §18.2]]; complex manifold [[§18 Projective Spaces as Smooth Manifolds#^cor-18-3|Cor §18.3]].
 >
-> **Difficulty** (a) 2, (b) 2, (c) 1. Submitted solution: the longest of HW2; proves Hausdorff directly via the distance between compact orbits (radius $d/3$, isometric action), and proves the "open surjections push bases forward" and "restriction over an open set" lemmas inline. These are now Lem §5.6, Lem §5.7 and the "direct proof" after Prop §9.1; Cor §13.4 gives Hausdorff in one line.
+> **Difficulty** (a) 2, (b) 2, (c) 1. Submitted solution: the longest of HW2; proves Hausdorff directly via the distance between compact orbits (radius $d/3$, isometric action), and proves the "open surjections push bases forward" and "restriction over an open set" lemmas inline. These are now Lem §5.6, Lem §5.7 and the "direct proof" after Prop §9.1; Cor §13.4 gives Hausdorff in one line. Official solution: (a) derives Hausdorff from "the relation is open", which gives only second countability (Q8 of (a)); Hausdorff needs the closed graph, as in your solution. (b) Its homeomorphism argument is not correct as written: the map $(z_1, \ldots, z_n)$ on $\{z \in S^{2n+1} : z_0 \neq 0\}$ is not $\varphi_0 \circ \pi$, its image is the open unit ball rather than $\mathbb{C}^n$, and the restriction of a quotient map to an arbitrary subspace need not be a quotient map (Q4 of (b)). Do not reuse these two steps.
 
 ### HW2.3 A level set in $\mathbb{R}^4$ (QR August 2013)
 
@@ -371,7 +377,7 @@ $F : \mathbb{R}^N \to \mathbb{R}^k$, $G : \mathbb{R}^k \to \mathbb{R}^\ell$ smoo
 
 - [ ] Q1 **[def]** State the transversality condition and the definition of codimension.
 - [ ] Q2 Show $M = (G\circ F)^{-1}(0)$.
-- [ ] Q3 Show $(G\circ F)'(p)$ is surjective: lift $w$ through $G'(q)$, split the lift as $F'(p)v + t$ with $t \in \ker G'(q)$.
+- [ ] Q3 Show $(G\circ F)'(p)$ is surjective: lift $w$ through $G'(q)$, split the lift as $F'(p)v + t$ with $t \in \ker G'(q)$. (Alternative in one line: $\operatorname{im}(G'F') = G'(\operatorname{im}F' + \ker G') = G'(\mathbb{R}^k)$, using $B(W + \ker B) = B(W)$; the official route, [[§26 Transversality#^rem-26-2|Remark: The Surjectivity Step as an Image Computation]].)
 - [ ] Q4 Prove $\ker(B\circ A) = A^{-1}(\ker B)$ and deduce $T_pM = F'(p)^{-1}(T_{F(p)}S)$.
 - [ ] Q5 Compute both codimensions.
 - [ ] Q6 Prove the converse: if $(G\circ F)'(p)$ is onto for all $p \in M$, then $F$ is transverse to $S$ (Prop §26.2).
@@ -466,7 +472,7 @@ Explain why $T_pM \times (I_p/I_p^2) \to \mathbb{R}$, $(v, {[}[f]{]}) \mapsto v(
 ^hw3-3-a
 
 - [ ] Q1 **[def]** Define $I_p$, $I_p^2$, and the class ${[}[f]{]}$. Show $I_p^2$ is a subspace of $I_p$.
-- [ ] Q2 Show $v(I_p^2) = 0$ for every derivation $v$.
+- [ ] Q2 Show $v(I_p^2) = 0$ for every derivation $v$. **[why]** Why is checking $v(h^2) = 0$, or $v(uw) = 0$ for a single product, not literally enough? $I_p^2$ consists of finite sums $\sum_k u_k w_k$; use linearity.
 - [ ] Q3 Explain why Q2 is exactly the well-definedness (universal property of the quotient vector space).
 
 > [!tip]- Hint (a): strategy
@@ -493,7 +499,7 @@ Show the (bilinear) pairing is non-degenerate, hence $I_p/I_p^2 \cong (T_pM)^{\a
 >
 > **Key results.** [[§28 Derivations and the Abstract Tangent Space#^lem-28-1|Lem §28.1]]; derivations kill constants [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|Lem §28.2]]; universal property of quotient vector spaces [[§21 Linear Algebra Toolkit#^prop-21-6|Prop §21.6]]; non-degenerate pairings [[§21 Linear Algebra Toolkit#^thm-21-5|Thm §21.5]]; Hadamard's lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|Lem §29.3]]; second-order vanishing [[§34 The Cotangent Space from Germs#^prop-34-1|Prop §34.1]]; basis of $I_p/I_p^2$ [[§34 The Cotangent Space from Germs#^prop-34-2|Prop §34.2]]; [[§34 The Cotangent Space from Germs#^prop-34-3|Prop §34.3]], [[§34 The Cotangent Space from Germs#^thm-34-4|Thm §34.4]] (this problem).
 >
-> **Difficulty** (a) 1, (b) 2. Submitted solution: proves the isomorphism by injectivity (right non-degeneracy) plus surjectivity (dual basis), rather than the dimension-count pairing theorem; the notes discuss both routes after Thm §34.4.
+> **Difficulty** (a) 1, (b) 2. Submitted solution: proves the isomorphism by injectivity (right non-degeneracy) plus surjectivity (dual basis), rather than the dimension-count pairing theorem; the notes discuss both routes after Thm §34.4. Official solution of (a): writes an element of $I_p^2$ as a single square $h^2$; the argument must handle finite sums of products (Q2).
 
 ### HW3.4 The moment map on $\mathbb{CP}^n$
 
@@ -533,7 +539,7 @@ For $c$ in the interior of $\Delta$, $dF_p$ is surjective for every $p \in F^{-1
 - [ ] Q7 Show the interior of $\Delta$ is $\{t_j > 0, \sum t_j < 1\}$, and that every $p \in F^{-1}(c)$ has all $z_j \neq 0$.
 - [ ] Q8 Explain why $dF_p$ is onto iff the Jacobian of $F\circ\varphi_0^{-1}$ at $\varphi_0(p)$ has rank $n$ (Thm §30.2).
 - [ ] Q9 Compute $\partial F^j_\varphi/\partial u_k = \frac{2u_k}{S^2}(\delta_{jk}S - |w_j|^2)$, and the $v_k$ analogue, with $S = 1 + |w|^2$.
-- [ ] Q10 Show the rank is $n$ using $w_k \neq 0$. (Shortcut to try: $F\circ\varphi_0^{-1} = \Phi \circ Q$ with $Q(w) = (|w_1|^2,\ldots,|w_n|^2)$ and $\Phi(s) = s/(1+\sum s_l)$; why is $\Phi$ a local diffeomorphism?)
+- [ ] Q10 Show the rank is $n$ using $w_k \neq 0$. (Shortcut to try: $F\circ\varphi_0^{-1} = \Phi \circ Q$ with $Q(w) = (|w_1|^2,\ldots,|w_n|^2)$ and $\Phi(s) = s/(1+\sum s_l)$; why is $\Phi$ a local diffeomorphism?) Principle: if $F = \Phi \circ \psi$ with $\Phi$ a diffeomorphism, then $F$ is a submersion at $p$ iff $\psi$ is. Official variant: $\psi(w) = (|w_1|, \ldots, |w_n|)$ and $\Phi(x) = \big(x_j^2/(1+|x|^2)\big)_j$, a diffeomorphism $\mathbb{R}^n_{>0} \to \mathring\Delta$ with explicit inverse $H(t) = \big(\sqrt{t_j/(1 - \sum_l t_l)}\big)_j$, so no inverse function theorem is needed ([[§30 The Differential in Coordinates#^ex-30-2|Ex §30.2]]).
 - [ ] Q11 **[why]** What fails at a boundary point of $\Delta$ (some $c_j = 0$, or $\sum c_j = 1$)? Is $F$ submersive there?
 
 > [!tip]- Hint (c): strategy
@@ -544,7 +550,7 @@ For $c$ in the interior of $\Delta$, $dF_p$ is surjective for every $p \in F^{-1
 >
 > **Key results.** [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|Thm §18.2]]; matrix of the differential [[§30 The Differential in Coordinates#^thm-30-2|Thm §30.2]]; partials upstairs/downstairs [[§30 The Differential in Coordinates#^prop-30-1|Prop §30.1]]; regular values inside one chart [[§30 The Differential in Coordinates#^prop-30-8|Prop §30.8]] and [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]] (this problem); [[§30 The Differential in Coordinates#^cor-30-9|Cor §30.9]].
 >
-> **Difficulty** (a) 1, (b) 1, (c) 2. Submitted solution: long "matching coefficients" derivation of the Jacobian; the rank argument factors columns as $u_k\eta_k$, $v_k\eta_k$ and proves the $\eta_k$ independent by summing the equations ($\sigma = \sum a_k = 0$). The notes cite it as the model case of Prop §30.8.
+> **Difficulty** (a) 1, (b) 1, (c) 2. Submitted solution: long "matching coefficients" derivation of the Jacobian; the rank argument factors columns as $u_k\eta_k$, $v_k\eta_k$ and proves the $\eta_k$ independent by summing the equations ($\sigma = \sum a_k = 0$). The notes cite it as the model case of Prop §30.8. The notes now carry both routes for (c): the official factorization and your $\eta_k$ computation as the second proof ([[§30 The Differential in Coordinates#^ex-30-2|Ex §30.2]]).
 
 ### HW3.5 Critical points of $f_A$ on $\mathbb{RP}^2$ (not integrated in the notes)
 
@@ -562,7 +568,7 @@ $A = \mathrm{diag}(\lambda_1,\lambda_2,\lambda_3)$, $\lambda_1<\lambda_2<\lambda
 - [ ] Q2 Show $f_A$ is well defined on $\mathbb{RP}^2$.
 - [ ] Q3 Compute $f_A\circ\varphi_0^{-1}(r) = \dfrac{\lambda_1 + \lambda_2 (r^1)^2 + \lambda_3 (r^2)^2}{1 + (r^1)^2 + (r^2)^2}$ and its partials.
 - [ ] Q4 Solve "both partials $= 0$" using $\lambda_1 < \lambda_2 < \lambda_3$.
-- [ ] Q5 Symmetry: for a permutation matrix $P$, show $[v] \mapsto [Pv]$ is a diffeomorphism with $f_A \circ \bar P = f_{P^{\mathsf T}AP}$; deduce the critical points in $U_1$ and $U_2$ from Q4. (After permuting, the diagonal entries are no longer in increasing order: check that the conclusion of Q4 holds whenever the three entries are merely distinct.)
+- [ ] Q5 Symmetry: for a permutation matrix $P$, show $[v] \mapsto [Pv]$ is a diffeomorphism with $f_A \circ \bar P = f_{P^{\mathsf T}AP}$; deduce the critical points in $U_1$ and $U_2$ from Q4. (After permuting, the diagonal entries are no longer in increasing order: check that the conclusion of Q4 holds whenever the three entries are merely distinct.) (Hint: in any chart $f = (c_1 + c_2X_1^2 + c_3X_2^2)/(1 + X_1^2 + X_2^2)$ with the $c_i$ distinct. If both $X_i \neq 0$, the two bracket equations give $X_2^2 = \frac{c_2 - c_1}{c_3 - c_2}$ and $X_1^2 = \frac{c_1 - c_3}{c_3 - c_2}$, so $X_1^2 + X_2^2 = -1$; if exactly one $X_i$ is $0$, the other equation forces $c_2 = c_1$ or $c_3 = c_1$. So distinctness alone suffices, with no ordering.)
 - [ ] Q6 Identify the maximum, minimum and the third critical point. Why must a function on compact $\mathbb{RP}^2$ have at least two critical points?
 - [ ] Q7 **[why]** What is the critical set if $\lambda_1 = \lambda_2 < \lambda_3$? Are the critical points still isolated?
 
@@ -580,6 +586,7 @@ $A$ symmetric with distinct eigenvalues. Conjecture the critical points of $f_A$
 - [ ] Q10 Show $G$ is a diffeomorphism of $\mathbb{RP}^2$ (coordinate representations are ratios of affine functions; inverse $[v] \mapsto [gv]$).
 - [ ] Q11 Use the chain rule to show $\ell$ is critical for $f_A$ iff $G(\ell)$ is critical for $f_D$.
 - [ ] Q12 **[why]** Where are "symmetric" and "orthogonal" used? What breaks for a non-symmetric $A$ with real distinct eigenvalues?
+- [ ] Q13 (Optional) Alternative through HW5.4: $f_A \circ \pi|_{S^2} = \Phi|_{S^2}$ with $\Phi(v) = \langle Av, v\rangle$ and $G(v) = |v|^2 - 1$. Since $\pi : S^2 \to \mathbb{RP}^2$ is a local diffeomorphism, $[v]$ is critical iff $\nabla\Phi = \mu\nabla G$, i.e. $Av = \mu v$. Which hypotheses of the main route (diagonalization, distinct eigenvalues) does this not need, and where is symmetry used?
 
 > [!tip]- Hint (b): strategy
 > **Strategy (S15, S14).** $f_A = f_D \circ G$ with $G([v]) = [g^{\mathsf T}v]$ a diffeomorphism; critical points correspond under $G$ (chain rule).
@@ -589,7 +596,7 @@ $A$ symmetric with distinct eigenvalues. Conjecture the critical points of $f_A$
 >
 > **Key results.** Critical points of real-valued functions [[§36 Submersions#^prop-36-2|Prop §36.2]]; local extrema are critical [[§36 Submersions#^prop-36-3|Prop §36.3]]; matrix of the differential [[§30 The Differential in Coordinates#^thm-30-2|Thm §30.2]]; chain rule [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Thm §28.6]]; diffeomorphisms induce isomorphisms [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|Cor §28.7]].
 >
-> **Difficulty 2.** Submitted solution: (a) computes directly in all three charts rather than using the symmetry argument; (b) proves continuity of $G$ via the open quotient map $\mathbb{R}^3\setminus 0 \to \mathbb{RP}^2$ pushing bases forward. No box in the notes is built from this problem.
+> **Difficulty 2.** Submitted solution: (a) computes directly in all three charts rather than using the symmetry argument; (b) proves continuity of $G$ via the open quotient map $\mathbb{R}^3\setminus 0 \to \mathbb{RP}^2$ pushing bases forward. No box in the notes is built from this problem. Expected level of detail: the official solution accepts "similarly" for the other two charts, and states without proof that $[v] \mapsto [g^{\mathsf T}v]$ is a diffeomorphism with inverse $[v] \mapsto [gv]$; on the exam one line suffices (coordinate representations are ratios of affine functions).
 >
 > ---
 >
@@ -787,6 +794,7 @@ $F : M \to N$ smooth, $S \subset N$ a regular submanifold, $F$ transverse to $S$
 - [ ] Q5 Show $T_pF^{-1}(S) \subseteq (F_{\ast p})^{-1}(T_{F(p)}S)$ by the chain rule, then equality by counting dimensions.
 - [ ] Q6 Special cases: $S$ a point (regular value theorem); $F$ the inclusion of a submanifold (transverse intersection of submanifolds). What do they say?
 - [ ] Q7 **[why]** Why is the condition imposed only at points of $F^{-1}(S)$? Give a non-transverse example where $F^{-1}(S)$ is not a submanifold.
+- [ ] Q8 Alternative (the official route, and the hint's intent): prove HW5.2 by reducing to HW2.5 in charts, transporting $F$ and $S$ by a chart of $M$ and an adapted chart of $N$. Which three facts must you check? (Transversality survives the chart differentials; HW2.5 holds on open subsets; slice charts pull back.) See the [[§37 Regular Submanifolds#^pf-37-15-2|second proof of Thm §37.15]].
 
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.** Regular submanifold [[§37 Regular Submanifolds#^def-37-2|Def §37.2]]; adapted chart [[§37 Regular Submanifolds#^def-37-3|Def §37.3]]; transversality to a submanifold [[§37 Regular Submanifolds#^def-37-5|Def §37.5]]; normal space [[§37 Regular Submanifolds#^def-37-6|Def §37.6]].
@@ -840,7 +848,7 @@ $f$ is Morse iff all critical points are non-degenerate. What can you say about 
 >
 > **Key results.** Zero section is a regular submanifold [[§52 Critical Points and the Hessian#^prop-52-5|Prop §52.5]]; Hessian change of coordinates [[§52 Critical Points and the Hessian#^prop-52-2|Prop §52.2]], [[§52 Critical Points and the Hessian#^ex-52-1|Ex §52.1]]; well defined at a critical point [[§52 Critical Points and the Hessian#^prop-52-3|Prop §52.3]]; vertical space along $\mathcal{Z}$ [[§52 Critical Points and the Hessian#^prop-52-8|Prop §52.8]]; $d(df)$ at a critical point [[§52 Critical Points and the Hessian#^prop-52-9|Prop §52.9]]; [[§52 Critical Points and the Hessian#^thm-52-10|Thm §52.10]] (part (a)); [[§52 Critical Points and the Hessian#^ex-52-2|Ex §52.2]]; [[§52 Critical Points and the Hessian#^cor-52-11|Cor §52.11]] (part (b)), [[§52 Critical Points and the Hessian#^cor-52-12|Cor §52.12]]; HW5.2 [[§37 Regular Submanifolds#^thm-37-15|Thm §37.15]].
 >
-> **Difficulty** (a) 2, (b) 1. Submitted solution: block determinant $\det A_p = (-1)^m\det H_p$, carefully derived $H_{ij} = \partial_{x^i}(\partial f/\partial x^j)$. The notes give a second proof through the vertical splitting along $\mathcal{Z}$ (Prop §52.8) and keep the determinant as the second proof.
+> **Difficulty** (a) 2, (b) 1. Submitted solution: block determinant $\det A_p = (-1)^m\det H_p$, carefully derived $H_{ij} = \partial_{x^i}(\partial f/\partial x^j)$. The notes give a second proof through the vertical splitting along $\mathcal{Z}$ (Prop §52.8) and keep the determinant as the second proof. Official solution of (b): stops at "$\mathrm{Crit}(f)$ is a regular submanifold" and never states the codimension $m$, i.e. that critical points are isolated (Q9–Q10); your solution and Cor §52.11 give the full answer.
 
 ### HW5.4 Lagrange multipliers revisited
 
@@ -867,7 +875,7 @@ $M = G^{-1}(0)$, $G : N \to \mathbb{R}^k$, $0$ a regular value. Prove $\{dG^1_p,
 
 ^hw5-4-b
 
-- [ ] Q4 Show $\dim N_pM = k$ using an adapted chart.
+- [ ] Q4 Show $\dim N_pM = k$ using an adapted chart. (Or without a chart: $\iota_p^{\ast}$ is onto because $\iota_{\ast p}$ is injective, the dual of an injection being a surjection; then rank–nullity. The official route, [[§37 Regular Submanifolds#^pf-37-8-2|second proof of Prop §37.8]].)
 - [ ] Q5 Show $dG^j_p \in N_pM$.
 - [ ] Q6 Show the $dG^j_p$ are independent: if $\sum c_j dG^j_p = 0$, pick $v$ with $G_{\ast p}v = c$.
 - [ ] Q7 Derive $d\Phi_p = \sum\lambda_j dG^j_p$ (in $\mathbb{R}^n$: $\nabla\Phi = \sum\lambda_j\nabla G^j$) at critical points; why are the $\lambda_j$ unique?
@@ -882,7 +890,7 @@ $M = G^{-1}(0)$, $G : N \to \mathbb{R}^k$, $0$ a regular value. Prove $\{dG^1_p,
 >
 > **Key results.** Critical points of a restriction [[§37 Regular Submanifolds#^prop-37-18|Prop §37.18]] (part (a)); basis of the conormal space [[§37 Regular Submanifolds#^prop-37-8|Prop §37.8]]; conormal space of a regular level set [[§37 Regular Submanifolds#^prop-37-19|Prop §37.19]] (part (b)); submersions to $\mathbb{R}^k$ and independent differentials [[§36 Submersions#^prop-36-4|Prop §36.4]]; Lagrange multipliers [[§37 Regular Submanifolds#^thm-37-20|Thm §37.20]]; pullback commutes with $d$ [[§34 The Cotangent Space from Germs#^prop-34-6|Prop §34.6]]; local extrema are critical [[§36 Submersions#^prop-36-3|Prop §36.3]]; adapted charts give local defining maps [[§37 Regular Submanifolds#^prop-37-7|Prop §37.7]].
 >
-> **Difficulty 2.** Submitted solution: gives two independence arguments (Jacobian rank and the coordinate-free "$|c|^2 = 0$" trick); the notes make them the two proofs of Prop §36.4.
+> **Difficulty 2.** Submitted solution: gives two independence arguments (Jacobian rank and the coordinate-free "$|c|^2 = 0$" trick); the notes make them the two proofs of Prop §36.4. Official solution of (b): its independence argument takes partials of $G$ in a chart of $M$, where $G$ is constant, so every such partial is $0$; the full-rank matrix is the Jacobian of $G$ in a chart of $N$ (or use Q6). Its Lagrange step names $df_p$, which is $0$ at a critical point, where it means $d\Phi_p$.
 
 ### HW5.5 The normal bundle and focal points
 
@@ -926,7 +934,7 @@ $E(p,v) = p + v$; $q$ is a focal point if $q = E(p,v)$ with $dE_{(p,v)}$ not of 
 >
 > **Key results.** [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-1|Prop §40.1]] (part (a)); adapted chart of a submanifold of $\mathbb{R}^n$ [[§37 Regular Submanifolds#^lem-37-10|Lem §37.10]]; fourth description [[§37 Regular Submanifolds#^prop-37-9|Prop §37.9]]; normal bundle is a fibration [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|Prop §40.2]]; [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^ex-40-1|Ex §40.1]] (part (b)); focal points are centres of curvature [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^rem-40-1|Remark: Focal Points Are Centres of Curvature]].
 >
-> **Difficulty** (a) 2, (b) 1. Submitted solution: follows the hint; result $r(a) = (-4a^3, 3a^2 + \tfrac12)$, cusp at $(0, \tfrac12)$ (the evolute). The notes record two completed steps in (a): that the first $m$ coordinate vectors span $T_pM$ (Lem §37.10(3)), and converting the Jacobian from the coordinates $(x, v)$ to standard coordinates of $\mathbb{R}^{2n}$.
+> **Difficulty** (a) 2, (b) 1. Submitted solution: follows the hint; result $r(a) = (-4a^3, 3a^2 + \tfrac12)$, cusp at $(0, \tfrac12)$ (the evolute). The notes record two completed steps in (a): that the first $m$ coordinate vectors span $T_pM$ (Lem §37.10(3)), and converting the Jacobian from the coordinates $(x, v)$ to standard coordinates of $\mathbb{R}^{2n}$. Official solution: (a) writes the lower-left block of $dF$ as $(P \ \ 0)$, while it is generally full; the rank argument is unaffected. (b) uses $(t, s) \mapsto ((t, t^2), s(2t, -1))$ as coordinates on $\mathcal{N}$ without showing it is a diffeomorphism onto $\mathcal{N}$ (Q8).
 
 ## Strategy codes
 Codes match the "Strategies" list in `review_spec.md` where they coincide (S1–S13); S14–S15 are additional.

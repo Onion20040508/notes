@@ -733,7 +733,25 @@ Let $A \subseteq \mathbb{R}^n$ and $B \subseteq \mathbb{R}^m$ be nonempty open s
 Not proved in this course (Lee proves it as Theorem 17.26). To be filled.
 \end{proof}
 
-\textbf{Not proved in this course.} The theorem follows from Brouwer's \emph{invariance of domain}; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology---no differentiability is assumed---which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs.\ $\mathbb{R}^3$ needs more.
+\begin{proof}[Proof of the cases $n \le 1$ or $m \le 1$]
+\textit{(Not from lecture; added on request. Only point-set topology is used: this is the connectedness argument mentioned below, written out.)} Let $h : A \to B$ be a homeomorphism, suppose $n \neq m$ and that the smaller of $n, m$ is $0$ or $1$; we derive a contradiction. Since $h^{-1} : B \to A$ is also a homeomorphism, we may exchange the roles of $A$ and $B$ and assume $n < m$. So $n \in \{0, 1\}$ and $m \ge n + 1$.
+
+\emph{Case $n = 0$.} $\mathbb{R}^0$ is a single point, so the nonempty set $A$ is that point, and $B = h(A)$ is a single point. But $B$ is a nonempty open subset of $\mathbb{R}^m$ with $m \ge 1$: it contains a ball $B(b, r)$ with $r > 0$, and the points $b + t e_1$, $0 \le t < r$, of that ball are pairwise distinct. So $B$ is infinite, a contradiction.
+
+\emph{Case $n = 1$, $m \ge 2$.} Fix $a \in A$ and put $b = h(a)$.
+\begin{enumerate}
+    \item \emph{Shrink to a ball.} $B$ is open and $b \in B$, so there is $r > 0$ with $D = B(b, r) \subseteq B$. Let $J = h^{-1}(D)$. It is open in $A$, as $h$ is continuous, hence open in $\mathbb{R}$, as $A$ is; and $a \in J$. By Proposition~\ref{fact:cont}(3), $h$ restricts to a homeomorphism $J \to D$, and, since $h$ is a bijection with $h(a) = b$, to a homeomorphism $J \setminus \{a\} \to D \setminus \{b\}$.
+    \item \emph{$J \setminus \{a\}$ is not connected.} As $J$ is open in $\mathbb{R}$ and $a \in J$, there is $\delta > 0$ with $(a - \delta, a + \delta) \subseteq J$. The sets $L = J \cap (-\infty, a)$ and $R = J \cap (a, \infty)$ are open in $J \setminus \{a\}$ (intersections with open subsets of $\mathbb{R}$), disjoint, cover $J \setminus \{a\}$, and are nonempty: $a - \delta/2 \in L$ and $a + \delta/2 \in R$. So $J \setminus \{a\}$ is disconnected.
+    \item \emph{$D \setminus \{b\}$ is connected.} We show it is path connected, which implies connected (590 \S14). Let $x, y \in D \setminus \{b\}$ with $x \neq y$. The ball $D$ is convex, so every segment $[x', y'] = \{(1-t)x' + ty' : t \in [0, 1]\}$ with endpoints in $D$ lies in $D$. If $b \notin [x, y]$, then $t \mapsto (1-t)x + ty$ is a path from $x$ to $y$ in $D \setminus \{b\}$. Otherwise $b$ lies on the line $\ell$ through $x$ and $y$. Since $m \ge 2$, there is a unit vector $u$ orthogonal to $y - x$; put $z = b + \tfrac{r}{2}u$. Then $z \in D$, as $|z - b| = r/2 < r$, and $z \notin \ell$, as the points of $\ell$ are $b + s(y - x)$, $s \in \mathbb{R}$, and $\tfrac r2 u$ is not a multiple of $y - x$. The segment $[x, z]$ avoids $b$: otherwise, since $b \neq x$, the line through $x$ and $b$, which is $\ell$, would contain $z$. In the same way $[z, y]$ avoids $b$. So
+    \[
+    \gamma(t) = \begin{cases} x + 2t\,(z - x), & t \in [0, \tfrac12], \\ z + (2t - 1)(y - z), & t \in [\tfrac12, 1], \end{cases}
+    \]
+    runs in $D \setminus \{b\}$ from $x$ to $y$, and it is continuous by the pasting lemma (590 \S9), the two formulas agreeing at $t = \tfrac12$.
+\end{enumerate}
+A homeomorphism carries connected spaces to connected spaces (Proposition~\ref{fact:conn}(1), applied to $h^{-1}$). By 1 and 3, $J \setminus \{a\} = h^{-1}(D \setminus \{b\})$ would be connected, contradicting 2.
+\end{proof}
+
+\textbf{Not proved in this course.} The theorem follows from Brouwer's \emph{invariance of domain}; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology---no differentiability is assumed---which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs.\ $\mathbb{R}^3$ needs more. The connectedness argument is the proof of the cases $n \le 1$ or $m \le 1$ above.
 
 \begin{corbox}[Dimension is Locally Constant]\thmlabel{cor:dim-loc-const}
 Suppose $X$ satisfies the definition of ``locally Euclidean'' with $n$ allowed to depend on $p$. Then for each $p$ the integer $n(p)$ is well-defined, and $p \mapsto n(p)$ is constant on each connected component of $X$.
@@ -2509,7 +2527,7 @@ Consider the sphere $S^{2n+1} \subseteq \mathbb{R}^{2n+2}$, and identify $\mathb
 \[
 (x, y) \longmapsto x + iy, \qquad x, y \in \mathbb{R}^{n+1}
 \]
-(any such identification works). So points of $S^{2n+1}$ are complex vectors $z = (z_1, \dots, z_{n+1}) \in \mathbb{C}^{n+1}$ with $|z| = 1$. Let $S^1 = \{\xi \in \mathbb{C} \mid |\xi| = 1\}$ be the unit circle, and define a relation $\sim$ on $S^{2n+1}$ by
+(any such identification works). So points of $S^{2n+1}$ are complex vectors $z = (z_0, \dots, z_n) \in \mathbb{C}^{n+1}$ with $|z| = 1$, indexed from $0$ as in the homogeneous coordinates of \ref{sec:projective-smooth} and in the assignments. Let $S^1 = \{\xi \in \mathbb{C} \mid |\xi| = 1\}$ be the unit circle, and define a relation $\sim$ on $S^{2n+1}$ by
 \[
 z \sim w \iff \exists\, \xi \in S^1 \text{ such that } w = \xi z
 \]
@@ -6667,6 +6685,14 @@ T^{\geo}_pM = \ker (G\circ F)'(p) = \ker\big(G'(q)F'(p)\big) = \{v \mid G'(q)\bi
 \]
 \end{proof}
 
+\begin{rembox}[The Surjectivity Step as an Image Computation]\label{rem:transverse-image-computation}
+\textit{(Not from lecture; the route of the official solution of Assignment~2, Problem~5.)} For a linear map $B$ and a subspace $W$ of its domain, $B(W + \ker B) = B(W)$: an element of the left side is $B(w + t) = Bw + Bt = Bw$ with $w \in W$ and $t \in \ker B$, and $W \subseteq W + \ker B$ gives the other inclusion. Take $B = G'(q)$ and $W = \operatorname{im} F'(p)$. Then $\ker G'(q) = T^{\geo}_qS$ (Theorem~\ref{thm:tangent-kernel}), transversality says $\operatorname{im} F'(p) + T^{\geo}_qS = \mathbb{R}^k$, and
+\[
+\operatorname{im}\,(G \circ F)'(p) = G'(q)\big(\operatorname{im} F'(p)\big) = G'(q)\big(\operatorname{im} F'(p) + \ker G'(q)\big) = G'(q)\big(\mathbb{R}^k\big) = \mathbb{R}^\ell ,
+\]
+by the chain rule, the identity, transversality, and surjectivity of $G'(q)$ ($0$ is a regular value of $G$ and $q \in G^{-1}(0)$). This is the lifting step of the proof in one line; it is used again in the second proof of Theorem~\ref{thm:transverse-submanifold-preimage}.
+\end{rembox}
+
 \textbf{Comparison with Lee.} Lee's Theorem~6.30 states this for a smooth map transverse to an \emph{embedded submanifold} $S \subseteq M$, after the theory of submanifolds (Chapter~5). The course's version, for level sets in Euclidean space, needs only the regular value theorem. It is the case where $S$ is cut out by a single global defining map $G$, and the proof --- pull $G$ back along $F$ --- is the one Lee uses locally.
 
 \begin{propbox}[Transversality Is the Regular Value Condition]\thmlabel{prop:transverse-iff}
@@ -8272,8 +8298,70 @@ To show that $c$ is a regular value of a map between manifolds, and to see its l
     \item \emph{Compute as in \ref{sec:rvt}.} Check that the Jacobian of $\tilde F$ has full rank $n$ at every point of the Euclidean level set $\tilde F^{-1}(\tilde c)$.
     \item \emph{Come back up.} By Proposition~\ref{prop:regular-one-chart}, $c$ is a regular value of $F$, and $F^{-1}(c)$ is homeomorphic, through the chart, to a Euclidean regular level set: a manifold of dimension $\dim M - \dim N$.
 \end{enumerate}
-Assignment~3, Problem~4 is exactly this. For the moment map $F : \mathbb{CP}^n \to \mathbb{R}^n$ and $c$ in the interior of the simplex, every point of $F^{-1}(c)$ has all homogeneous coordinates nonzero, so $F^{-1}(c) \subseteq U_0$ (step 1). The target chart is the identity of $\mathbb{R}^n$, and $\varphi_0(U_0) = \mathbb{C}^n \cong \mathbb{R}^{2n}$, so $\tilde F$ is an explicit rational map $\mathbb{R}^{2n} \to \mathbb{R}^n$ (step 2). Its Jacobian has rank $n$ on the level set (step 3). So the fibre is an $n$-dimensional manifold (step 4) --- in this case a regular level set of $\mathbb{R}^{2n}$ itself, exactly the situation of \ref{sec:rvt}. When a level set does not fit in one chart, the same argument applies around each of its points separately, as the next corollary shows.
+Assignment~3, Problem~4 is exactly this. For the moment map $F : \mathbb{CP}^n \to \mathbb{R}^n$ and $c$ in the interior of the simplex, every point of $F^{-1}(c)$ has all homogeneous coordinates nonzero, so $F^{-1}(c) \subseteq U_0$ (step 1). The target chart is the identity of $\mathbb{R}^n$, and $\varphi_0(U_0) = \mathbb{C}^n \cong \mathbb{R}^{2n}$, so $\tilde F$ is an explicit rational map $\mathbb{R}^{2n} \to \mathbb{R}^n$ (step 2). Its Jacobian has rank $n$ on the level set (step 3; computed in Example~\ref{ex:moment-map}). So the fibre is an $n$-dimensional manifold (step 4) --- in this case a regular level set of $\mathbb{R}^{2n}$ itself, exactly the situation of \ref{sec:rvt}. When a level set does not fit in one chart, the same argument applies around each of its points separately, as the next corollary shows.
 \end{rembox}
+
+\begin{exbox}[The Moment Map on $\mathbb{CP}^n$]\exlabel{ex:moment-map}
+Let $F : \mathbb{CP}^n \to \mathbb{R}^n$ be the moment map,
+\[
+F\big([z_0 : \cdots : z_n]\big) = \Big( \frac{|z_1|^2}{|\vec z|^2}, \ldots, \frac{|z_n|^2}{|\vec z|^2} \Big), \qquad |\vec z|^2 = \sum_{i=0}^n |z_i|^2 ,
+\]
+and let $\mathring\Delta = \{\, t \in \mathbb{R}^n : t_j > 0 \text{ for all } j, \ \sum_j t_j < 1 \,\}$ be the open simplex. Every $c \in \mathring\Delta$ is a regular value of $F$.
+\end{exbox}
+
+\textit{Assignment~3, Problem~4.} Parts (a) and (b) show that $F$ is well defined and smooth, with image the closed simplex $\Delta = \{t : t_j \ge 0, \ \sum_j t_j \le 1\}$, whose interior is $\mathring\Delta$; part (c) is the statement above.
+
+\begin{proof}
+\textit{(Assignment~3, Problem~4(c); the route of the official solution. It supplies the computation that step~3 of the remark \emph{The Strategy} only asserts.)} We follow the four steps of the remark, with the chart $(U_0, \varphi_0)$ of Definition~\ref{def:cpn-charts} and the identity chart of $\mathbb{R}^n$.
+
+\emph{Step 1: locate the level sets.} For $[\vec z] \in \mathbb{CP}^n$ with $F([\vec z]) = t$,
+\[
+\sum_{j=1}^n t_j = \frac{|\vec z|^2 - |z_0|^2}{|\vec z|^2} = 1 - \frac{|z_0|^2}{|\vec z|^2} .
+\]
+So $t_j > 0$ for all $j \ge 1$ if and only if $z_j \neq 0$ for all $j \ge 1$, and $\sum_j t_j < 1$ if and only if $z_0 \neq 0$. Hence $F^{-1}(\mathring\Delta)$ is the set of points with all homogeneous coordinates nonzero. It lies in $U_0$, and $\varphi_0$ maps it onto the open set $O = \{ w \in \mathbb{C}^n : w_j \neq 0 \text{ for all } j \}$.
+
+\emph{Step 2: go downstairs.} By Proposition~\ref{prop:cpn-chart}, $\varphi_0^{-1}(w) = [1 : w_1 : \cdots : w_n]$, so
+\[
+\tilde F(w) = F\big(\varphi_0^{-1}(w)\big) = \Big( \frac{|w_1|^2}{1 + |w|^2}, \ldots, \frac{|w_n|^2}{1 + |w|^2} \Big), \qquad |w|^2 = \sum_{l=1}^n |w_l|^2 .
+\]
+On $O$ it factors as $\tilde F = \Phi \circ \psi$, with $\mathbb{R}^n_{>0} = \{x \in \mathbb{R}^n : x_j > 0 \text{ for all } j\}$ and
+\[
+\psi : O \to \mathbb{R}^n_{>0}, \quad \psi(w) = \big(|w_1|, \ldots, |w_n|\big), \qquad
+\Phi : \mathbb{R}^n_{>0} \to \mathring\Delta, \quad \Phi(x) = \Big( \frac{x_1^2}{1 + |x|^2}, \ldots, \frac{x_n^2}{1 + |x|^2} \Big),
+\]
+since $\Phi(\psi(w))_j = |w_j|^2 / (1 + \sum_l |w_l|^2) = \tilde F(w)_j$.
+
+\emph{Step 3a: $\Phi$ is a diffeomorphism.} $\Phi$ takes values in $\mathring\Delta$: $\Phi(x)_j > 0$, and $\sum_j \Phi(x)_j = |x|^2/(1 + |x|^2) < 1$. Let
+\[
+H : \mathring\Delta \to \mathbb{R}^n_{>0}, \qquad H(t) = \Big( \sqrt{\frac{t_1}{1 - \sum_l t_l}}, \ldots, \sqrt{\frac{t_n}{1 - \sum_l t_l}} \Big) .
+\]
+Both maps are smooth: their components are rational functions with nonvanishing denominators, composed in $H$ with the square root on $(0, \infty)$. They are inverse to each other. For $x \in \mathbb{R}^n_{>0}$ and $t = \Phi(x)$: $1 - \sum_l t_l = 1/(1 + |x|^2)$, so $t_j/(1 - \sum_l t_l) = x_j^2$ and $H(t)_j = x_j$, as $x_j > 0$. For $t \in \mathring\Delta$ and $x = H(t)$: $|x|^2 = \sum_l t_l/(1 - \sum_l t_l)$, so $1 + |x|^2 = 1/(1 - \sum_l t_l)$ and $\Phi(x)_j = x_j^2\,(1 - \sum_l t_l) = t_j$. By the chain rule applied to $H \circ \Phi = \mathrm{id}$, $H'(\Phi(x))\,\Phi'(x) = I_n$, so the $n \times n$ matrix $\Phi'(x)$ is invertible.
+
+\emph{Step 3b: $\psi'$ has rank $n$.} In the real coordinates $w_j = u_j + i v_j$, ordered $(u_1, v_1, \ldots, u_n, v_n)$ as in Definition~\ref{def:complex-groups}, $\psi_j = \sqrt{u_j^2 + v_j^2}$ is smooth on $O$, with $\partial\psi_j/\partial u_j = u_j/|w_j|$, $\partial\psi_j/\partial v_j = v_j/|w_j|$, and all other partials $0$:
+\[
+\psi'(w) = \begin{pmatrix}
+\frac{u_1}{|w_1|} & \frac{v_1}{|w_1|} & 0 & 0 & \cdots & 0 & 0 \\
+0 & 0 & \frac{u_2}{|w_2|} & \frac{v_2}{|w_2|} & \cdots & 0 & 0 \\
+\vdots & & & & \ddots & & \vdots \\
+0 & 0 & 0 & 0 & \cdots & \frac{u_n}{|w_n|} & \frac{v_n}{|w_n|}
+\end{pmatrix} \qquad (n \times 2n).
+\]
+Row $j$ is nonzero, its two entries forming the unit vector $(u_j, v_j)/|w_j|$, and different rows have nonzero entries in disjoint columns. So the rows are linearly independent and $\operatorname{rank}\psi'(w) = n$.
+
+\emph{Step 3c: $\tilde F'$ has rank $n$ on $O$.} By the chain rule, $\tilde F'(w) = \Phi'(\psi(w))\,\psi'(w)$. Multiplying by the invertible matrix $\Phi'(\psi(w))$ does not change the rank, so $\operatorname{rank}\tilde F'(w) = n$. In words: if $F = \Phi \circ \psi$ with $\Phi$ a diffeomorphism, then $F$ is a submersion exactly where $\psi$ is.
+
+\emph{Step 4: come back up.} Let $c \in \mathring\Delta$ and $p \in F^{-1}(c)$. By Step~1, $p \in U_0$ and $w = \varphi_0(p) \in O$. By Theorem~\ref{lem:differential-matrix}, the matrix of $F_{*p}$ in the coordinate bases of $\varphi_0$ and of the identity chart is $\tilde F'(w)$, of rank $n$ by Step~3c. So $F_{*p}$ is onto the $n$-dimensional space $T_c\mathbb{R}^n$, and $c$ is a regular value. By Proposition~\ref{prop:regular-one-chart}, $F^{-1}(c)$ is a manifold of dimension $2n - n = n$.
+\end{proof}
+
+\begin{proof}[Second proof (as submitted, Assignment~3)]
+Step~3 by a direct computation of $\tilde F'$, without the factorization. Write $S = 1 + \sum_{l=1}^n (u_l^2 + v_l^2)$ and $|w_j|^2 = u_j^2 + v_j^2$, so that $\tilde F^j = |w_j|^2/S$ with $S \ge 1$. Since $\partial |w_j|^2/\partial u_k = 2u_k\delta_{jk}$ and $\partial S/\partial u_k = 2u_k$, the quotient rule gives
+\[
+\frac{\partial \tilde F^j}{\partial u_k} = \frac{2u_k}{S^2}\big(\delta_{jk}\,S - |w_j|^2\big), \qquad \frac{\partial \tilde F^j}{\partial v_k} = \frac{2v_k}{S^2}\big(\delta_{jk}\,S - |w_j|^2\big).
+\]
+With $\eta_k \in \mathbb{R}^n$, $(\eta_k)_j = \delta_{jk}S - |w_j|^2$, the $u_k$-column of $\tilde F'(w)$ is $\tfrac{2u_k}{S^2}\eta_k$ and the $v_k$-column is $\tfrac{2v_k}{S^2}\eta_k$. At a point of $O$, $w_k \neq 0$, so $u_k$ or $v_k$ is nonzero, and one of these two columns is a nonzero multiple of $\eta_k$. Choosing one such column for each $k$ gives $n$ columns, which are linearly independent once $\eta_1, \ldots, \eta_n$ are.
+
+\emph{The $\eta_k$ are linearly independent.} Suppose $\sum_k a_k\eta_k = 0$ and put $\sigma = \sum_k a_k$. The $j$-th component reads $a_j S = |w_j|^2 \sigma$. Summing over $j$ gives $\sigma S = \sigma \sum_j |w_j|^2 = \sigma (S - 1)$, so $\sigma = 0$; then $a_j S = 0$ and $a_j = 0$, as $S \ge 1$. So $\tilde F'(w)$ has rank $n$, and Step~4 of the first proof concludes.
+\end{proof}
 
 Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in Section~\ref{sec:ex-cpn}; the circle group $\Ugp(1)$ acting there in Example~\ref{ex:1-circle}; an orbit space in Example~\ref{ex:cpn-orbit}; a smooth and complex manifold through its standard atlas in Section~\ref{sec:projective-smooth}; a homogeneous space of $\Ugp(n+1)$ in the remark \emph{Dimension Checks through Homogeneous Spaces} in \ref{sec:tangent}; the domain of the moment map in the remark \emph{The Strategy} in \ref{sec:differential-coords}; and the base of the Hopf fibration in Section~\ref{sec:ex-hopf}.
 
@@ -10170,6 +10258,14 @@ Let $(x^1, \ldots, x^m)$ be an adapted chart at $p$, and write a covector $\xi \
 So $N_pS$ is spanned by the $dx^j|_p$ with $j > m - k$, which are linearly independent as part of a basis. (Each of them does lie in $N_pS$, by (1): for $j > m - k$ and $i \le m - k$, the $i$-th component of $dx^j|_p$ is $dx^j|_p(\partial/\partial x^i|_p) = \delta^j_i = 0$.) So they form a basis of $N_pS$, and $\dim N_pS = m - (m - k) = k$, the codimension of $S$.
 \end{proof}
 
+\begin{proof}[Second proof that $\dim N_pS = k$ (without a chart)]
+\textit{(Not from lecture; the chart-free count of the official solution of Assignment~5, Problem~4.)} Let $\iota_p^* : T_p^*M \to T_p^*S$ be the pullback of covectors by the inclusion (Definition~\ref{def:pullback-covector}), $\iota_p^*\xi = \xi \circ \iota_{*p}$. By Definition~\ref{def:conormal}, $\xi \in N_pS$ if and only if $\xi(\iota_{*p}v) = 0$ for all $v \in T_pS$, that is, $\iota_p^*\xi = 0$; so $N_pS = \ker\iota_p^*$. The map $\iota_{*p}$ is injective (Proposition~\ref{prop:submanifold-tangent}), so its dual map $\iota_p^*$ is surjective (Proposition~\ref{prop:dual-map}(3)). Concretely, a functional on the subspace $\iota_{*p}(T_pS)$ extends to $T_pM$: extend a basis of the subspace to a basis of $T_pM$ and send the new vectors to $0$. The dimensions are $\dim T_p^*M = m$ and $\dim T_p^*S = \dim T_pS = m - k$ (Theorem~\ref{thm:tangent-dimension}, Proposition~\ref{prop:dual-basis}, and $\dim S = m - k$ by Proposition~\ref{prop:submanifold-structure}). Rank--nullity (Proposition~\ref{fact:linalg}(1)) gives
+\[
+\dim N_pS = \dim\ker\iota_p^* = \dim T_p^*M - \operatorname{rank}\iota_p^* = m - (m - k) = k .
+\]
+This is the linear-algebra fact that the annihilator of a $d$-dimensional subspace of an $m$-dimensional space has dimension $m - d$.
+\end{proof}
+
 \begin{rembox}[No Normal Vectors Without a Metric]\label{rem:no-normal-vectors-without-metric}
 ``We don't have normal vectors, because we don't have a metric \ldots\ There is no notion of orthogonality, but there is an intrinsic'' definition: the conormal space. ``If we had a metric, [an] inner product on $T_pM$, we could identify $T^*_pM$ with $T_pM$, and this would be the normal space.'' Uribe added that he regards the cotangent side as ``actually more natural'' than the tangent side --- ``that's where Hamiltonian mechanics takes place.''
 \end{rembox}
@@ -10567,6 +10663,28 @@ the intersection cut out in the smooth chart $(W, \theta)$ of $M$ by setting $k$
 &= \big\{\, v \in T_pM : F_{*p}v \in \ker (x_b)_{*q} \,\big\} = \big\{\, v \in T_pM : F_{*p}v \in \iota_{*q}(T_qS) \,\big\} ,
 \end{align*}
 which is $(F_{*p})^{-1}\big(\iota_{*q}(T_qS)\big)$. With the previous paragraph, $j_{*p}(T_pF^{-1}(S)) = (F_{*p})^{-1}\big(\iota_{*q}(T_qS)\big)$. This is Lemma~\ref{lem:rvt-local}(3) --- the argument of the tangent-space half of Theorem~\ref{thm:rvt-manifolds} --- run for $G$, followed by the computation of $\ker G_{*p}$ that ends the proof of Theorem~\ref{thm:transverse-preimage}.
+\end{proof}
+
+\begin{proof}[Second proof (reduction to Theorem~\ref{thm:transverse-preimage} in charts)]
+\textit{(Not from lecture; the route of the official solution of Assignment~5, Problem~2, and the one its hint intends. The three facts that transport the Euclidean theorem are checked explicitly.)} Fix $p \in F^{-1}(S)$ and $q = F(p)$. As in Steps~1 and~3 of the first proof, take a chart $(U, \varphi = (x^1, \ldots, x^n))$ of $N$ adapted to $S$ at $q$, so $U \cap S = x_b^{-1}(\vec 0)$, and a chart $(V, \psi)$ of $M$ at $p$ with $F(V) \subseteq U$. Downstairs, set
+\[
+\tilde F = \varphi \circ F \circ \psi^{-1} : \psi(V) \to \mathbb{R}^n, \qquad \tilde G : \mathbb{R}^n \to \mathbb{R}^k, \quad \tilde G(y) = (y^{n-k+1}, \ldots, y^n) .
+\]
+$\tilde G$ is linear with $\tilde G' = (0 \mid I_k)$ surjective everywhere, so $\tilde S = \tilde G^{-1}(\vec 0) = \mathbb{R}^{n-k} \times \{\vec 0\}$ is a regular level set with $T^{\geo}_y\tilde S = \ker\tilde G' = \mathbb{R}^{n-k} \times \{\vec 0\}$, and $\varphi(U \cap S) = \tilde S \cap \varphi(U)$. As $\tilde F$ takes values in $\varphi(U)$,
+\[
+\tilde F^{-1}(\tilde S) = \psi\big(V \cap F^{-1}(S)\big) .
+\]
+
+\emph{Fact 1: transversality survives the charts.} Let $p' \in V \cap F^{-1}(S)$, $q' = F(p')$, $x' = \psi(p')$. By the Chain Rule (Theorem~\ref{prop:pushforward-functorial}), $\tilde F_{*x'} = \varphi_{*q'} \circ F_{*p'} \circ (\psi^{-1})_{*x'}$, and $(\psi^{-1})_{*x'}$ is onto (Proposition~\ref{prop:chart-diffeo}), so $\operatorname{im}\tilde F_{*x'} = \varphi_{*q'}(\operatorname{im}F_{*p'})$. The chart is adapted at $q'$ too, so $\iota_{*q'}(T_{q'}S)$ is spanned by the $\partial/\partial x^i|_{q'}$ with $i \le n - k$ (Proposition~\ref{prop:submanifold-tangent}), which $\varphi_{*q'}$ sends to the $\partial/\partial r^i|_{\varphi(q')}$, that is, to $e_1, \ldots, e_{n-k}$ under the identification of Proposition~\ref{prop:differential-agree}. Applying the isomorphism $\varphi_{*q'}$ to $\operatorname{im}F_{*p'} + \iota_{*q'}(T_{q'}S) = T_{q'}N$ gives
+\[
+\operatorname{im}\tilde F'(x') + T^{\geo}_{\tilde F(x')}\tilde S = \mathbb{R}^n .
+\]
+
+\emph{Fact 2: Theorem~\ref{thm:transverse-preimage} on an open set.} Its proof is pointwise until the regular value theorem is invoked: the surjectivity step (or the remark \emph{The Surjectivity Step as an Image Computation}) uses only Fact~1 at each point. So $0$ is a regular value of $\tilde H = \tilde G \circ \tilde F : \psi(V) \to \mathbb{R}^k$, and $\tilde H^{-1}(\vec 0) = \tilde F^{-1}(\tilde S) = \psi(V \cap F^{-1}(S))$. Note $\tilde H = x_b \circ F \circ \psi^{-1}$.
+
+\emph{Fact 3: slice charts pull back.} By the Regular Value Theorem for manifolds (Theorem~\ref{thm:rvt-manifolds}), applied to $\tilde H$ on the open submanifold $\psi(V)$ of $\mathbb{R}^m$, there is a chart $(W', \theta)$ of $\psi(V)$ at $x' = \psi(p)$ adapted to $\tilde H^{-1}(\vec 0)$, with $k$ equations. Then $\theta \circ \psi : \psi^{-1}(W') \to \theta(W')$ is a diffeomorphism onto an open set, so a smooth chart of $M$ (Lemma~\ref{lem:diffeo-chart}), and for $p'' \in \psi^{-1}(W') \subseteq V$, the last $k$ coordinates of $\theta(\psi(p''))$ vanish if and only if $\psi(p'') \in \tilde H^{-1}(\vec 0)$, if and only if $p'' \in F^{-1}(S)$. So $(\psi^{-1}(W'), \theta \circ \psi)$ is a chart of $M$ adapted to $F^{-1}(S)$ at $p$, with $k$ equations.
+
+As $p$ was arbitrary, $F^{-1}(S)$ is a regular submanifold of codimension $k$, which is (1). For (2), $G = x_b \circ F|_V = \tilde H \circ \psi$ is the map of the first proof; it is a submersion at $p$, since $\tilde H$ is one at $\psi(p)$ and $\psi_{*p}$ is an isomorphism; and (2) follows as there.
 \end{proof}
 
 \begin{defbox}[Normal Space]\deflabel{def:normal-space}
@@ -13856,6 +13974,26 @@ v = 3\,\frac{\partial}{\partial x}\Big|_p - \frac{\partial}{\partial y}\Big|_p \
 The example continues with covectors in Example~\ref{ex:recap-covectors-plane}.
 \end{exbox}
 
+\textit{(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)} One tangent vector at $p$, in four equivalent forms. Chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$; the numbers on the arrows refer to the remark below.
+
+\begin{center}
+\begin{tikzcd}[column sep=3.4em, row sep=3.2em, font=\footnotesize]
+\text{curve } \gamma,\ \gamma(0) = p \arrow[r, shift left, "(1)"] & \text{derivation } D \in T_pM \arrow[l, shift left, "(2)"] \arrow[d, shift left, "(3)"] \\
+\text{arrow } w \in \mathbb{R}^N \ (M \subseteq \mathbb{R}^N) \arrow[ur, "(5)"] & \text{components } (v^1, \ldots, v^m) \in \mathbb{R}^m \arrow[u, shift left, "(4)"]
+\end{tikzcd}
+\end{center}
+
+\begin{rembox}[Conversion Diagram for a Tangent Vector]\label{rem:conversion-tangent}
+\begin{enumerate}
+    \item \emph{Curve to derivation.} $D_\gamma[f] = (f \circ \gamma)'(0)$, the velocity (Definition~\ref{def:velocity}).
+    \item \emph{Derivation to curve.} Every $D$ is a velocity: $\gamma(t) = \varphi^{-1}\big(\varphi(p) + t\,(v^1, \ldots, v^m)\big)$ (Theorem~\ref{thm:every-vector-velocity}).
+    \item \emph{Derivation to components.} $v^j = D[x^j] = dx^j|_p(D)$ (Theorem~\ref{thm:tangent-basis}, Lemma~\ref{lem:df-coords}).
+    \item \emph{Components to derivation.} $D = \sum_j v^j\, \partial/\partial x^j|_p$, where $\partial/\partial x^j|_p[f] = \partial (f \circ \varphi^{-1})/\partial r^j\,(\varphi(p))$ (Definition~\ref{def:coordinate-derivation}).
+    \item \emph{Arrow to derivation.} For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a submanifold $T^{\geo}_pM \cong T_pM$ (Theorem~\ref{thm:ambient-abstract}), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
+\end{enumerate}
+\emph{Change of chart.} $\tilde v^j = \sum_i \frac{\partial \tilde x^j}{\partial x^i}(p)\, v^i$, the Jacobian of the transition function acting on the components (Corollary~\ref{cor:change-coords}).
+\end{rembox}
+
 
 % ============================================================================
 % SECTION: RECAP: COVECTORS AND THE FOUR DIFFERENTIALS
@@ -14046,6 +14184,30 @@ Continue Example~\ref{ex:recap-vectors-plane}: $p = (1, 2)$, $f = x^2 y$, $v = 3
     \item \emph{The transpose.} The components of $F_p^*$ come from the \emph{transpose} of the Jacobian: $\begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 9 \\ 6 \end{pmatrix} = \begin{pmatrix} 24 \\ 6 \end{pmatrix}$. Vectors are pushed forward by the Jacobian, covectors pulled back by its transpose.
 \end{enumerate}
 \end{exbox}
+
+\textit{(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)} The differential of a smooth $F : M \to N$ at $p$, in four equivalent forms. Charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$, $F^i = y^i \circ F$.
+
+\begin{center}
+\begin{tikzcd}[column sep=3.4em, row sep=3.4em, font=\footnotesize]
+F_{*p}D = D \circ F^* \ \text{(germs)} \arrow[r, leftrightarrow, "(1)"] \arrow[d, leftrightarrow, "(2)"'] & (F \circ \gamma)'(0) \ \text{(curves)} \\
+\Big[\dfrac{\partial F^i}{\partial x^j}(p)\Big] \ \text{(Jacobian)} \arrow[r, leftrightarrow, "(3)"'] & \dfrac{d}{dt}\Big|_{t=0} F(p + tv) \ \text{(vector spaces)}
+\end{tikzcd}
+\end{center}
+
+\begin{rembox}[Conversion Diagram for the Differential]\label{rem:conversion-differential}
+\begin{enumerate}
+    \item \emph{Germs and curves.} $(F_{*p}D)[g] = D[g \circ F]$ (Definition~\ref{def:pushforward}); for $D = D_\gamma$, $F_{*p}D_\gamma = D_{F \circ \gamma}$, i.e.\ $F_{*}(\gamma'(0)) = (F \circ \gamma)'(0)$ (Corollary~\ref{cor:velocity-composite}).
+    \item \emph{Germs and the Jacobian.} $F_{*p}\big(\partial/\partial x^j|_p\big) = \sum_i \frac{\partial F^i}{\partial x^j}(p)\, \partial/\partial y^i|_{F(p)}$: column $j$ of the Jacobian of $\psi \circ F \circ \varphi^{-1}$ (Theorem~\ref{lem:differential-matrix}); on components, $(F_{*p}v)^i = \sum_j \frac{\partial F^i}{\partial x^j}(p)\, v^j$.
+    \item \emph{The Jacobian and the vector-space formula.} Between open subsets of vector spaces, $F_{*p}v = \frac{d}{dt}\big|_{t=0} F(p + tv)$ once $F$ is known to be smooth, and any curve with velocity $v$ may replace the line (Theorem~\ref{thm:vs-differential-curves}, Proposition~\ref{prop:differential-agree}).
+\end{enumerate}
+\emph{For a function $f : M \to \mathbb{R}$}, five faces of $df_p \in T_p^*M$:
+\[
+df_p(v) = v[f] = f_{*p}(v) = (f \circ \gamma)'(0) = \sum_j \frac{\partial f}{\partial x^j}(p)\, v^j ,
+\]
+with $f_{*p}(v)$ read through $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ and $\gamma$ any curve with velocity $v$; $df_p = \sum_j \frac{\partial f}{\partial x^j}(p)\, dx^j|_p$ (Lemma~\ref{lem:df-coords}); in $\mathbb{R}^n$, $df_p(v) = \nabla f(p) \cdot v$; and, on germs, $df_p$ corresponds to the class of $f - f(p)$ in $I_p/I_p^2$ (Theorem~\ref{thm:cotangent-ideal}).
+
+\emph{Covectors.} Components $\xi_j = \xi(\partial/\partial x^j|_p)$, $\xi = \sum_j \xi_j\, dx^j|_p$ (Corollary~\ref{cor:covector-components}); under a change of chart $\xi_i = \sum_j \frac{\partial \tilde x^j}{\partial x^i}(p)\, \tilde\xi_j$, the transpose of the rule for vectors. The pullback $F_p^*\xi = \xi \circ F_{*p}$ has the transposed Jacobian as its matrix (Definition~\ref{def:pullback-covector}), and $F_p^*\big(dg_{F(p)}\big) = d(g \circ F)_p$ (Proposition~\ref{prop:pullback-d}).
+\end{rembox}
 
 
 % ============================================================================
@@ -15587,8 +15749,110 @@ Let $f$ be a Morse function on $M$.
 
 
 % ============================================================================
-% CHAPTER: VECTOR FIELDS AND LIE GROUPS
+% Lecture 20 (Wed Oct 21, 2026): the Hessian from the zero section; jets
+% ============================================================================
 
+\subsection{The Hessian from the Zero Section}\label{sub:hessian-zero-section}
+
+\textit{Lecture 20, the day of the midterm. ``What I want to do today and Friday is go over certain topics that \ldots\ don't fit in the narrative of vector fields. \ldots\ Math doesn't exist as a narrative, right? It's all there at the same time, and we make stories about it, because that's what people do.'' Vector fields resume, from the dynamical point of view, on Monday. First the Hessian: ``I mentioned something last time, but I didn't write anything down \ldots\ Let's take the time to do it.''}
+
+\textit{The claim} (Proposition~\ref{prop:hessian-well-defined} and Definition~\ref{def:hessian-critical}): if $f : M \to \mathbb{R}$ is smooth and $df_p = 0$, there is a well-defined quadratic form, a symmetric bilinear form $\operatorname{Hess}_p f : T_pM \times T_pM \to \mathbb{R}$, whose matrix in any coordinates is $\big(\partial^2 f/\partial x^i \partial x^j(p)\big)$. ``You can always, in any coordinate system, at any point, write this matrix, but it doesn't define a coordinate-independent quadratic form unless you are at a critical point.'' Lecture~20 explained why, coordinate-free.
+
+\emph{The observation that makes it go.} At a point $(p, 0)$ of the zero section $\mathcal{Z}$ of $T^*M$, the zero section and the fibre $\pi^{-1}(p) = T_p^*M$ are transverse and complementary, so (Proposition~\ref{prop:zero-section-vertical})
+\[
+T_{(p,0)}(T^*M) = T_{(p,0)}\mathcal{Z} \oplus T_{(p,0)}\pi^{-1}(p) \cong T_pM \oplus T_p^*M ,
+\]
+``without choosing any coordinates'': the zero section is naturally $M$, and the tangent space to the fibre, a vector space, is the fibre itself. Now consider the section $s_f : M \to T^*M$, $q \mapsto (q, df_q)$, of the homework. If $df_p = 0$, then $s_f(p) = (p, 0)$, and $\operatorname{Im}(s_f)_{*p} \subseteq T_{(p,0)}(T^*M) = T_pM \oplus T_p^*M$.
+
+\begin{propbox}[The Hessian as the Graph of $(s_f)_{*p}$]\thmlabel{prop:hessian-graph}
+Let $f : M \to \mathbb{R}$ be smooth and $p \in \operatorname{Crit}(f)$. In the splitting $T_{(p,0)}(T^*M) = T_pM \oplus T_p^*M$ above, $\operatorname{Im}(s_f)_{*p}$ is the graph of a unique linear map $h_p : T_pM \to T_p^*M$, and
+\[
+\operatorname{Hess}_p f(u, v) = h_p(u)(v), \qquad u, v \in T_pM .
+\]
+In a chart, the matrix of $(s_f)_{*p}$ is $\binom{I}{H_p}$, with $H_p = \big(\partial^2 f/\partial x^i \partial x^j(p)\big)$ the block of $h_p$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~20, with the details Uribe skipped --- ``I will skip the details'' --- filled in from the propositions already in these notes.)} \emph{A graph.} Since $s_f$ is a section, $\pi \circ s_f = \mathrm{id}_M$, so $\pi_{*(p,0)} \circ (s_f)_{*p} = \mathrm{id}$ by the chain rule. The projection onto the first summand of the splitting is $\pi_{*(p,0)}$ (it kills the vertical summand, Proposition~\ref{prop:zero-section-vertical}(1), and is the identity on $T_{(p,0)}\mathcal{Z} \cong T_pM$, as $\pi \circ \zeta = \mathrm{id}_M$). So $(s_f)_{*p}u = (u, h_p(u))$ for a unique $h_p(u) \in T_p^*M$, and $h_p$ is linear because $(s_f)_{*p}$ is: the image ``passes the vertical line test'', an $m$-dimensional subspace that is the graph of $h_p$. ``For example, if $f$ is constant, then this is zero, and you get just the horizontal.''
+
+\emph{The Hessian.} ``A map from a vector space to its dual \ldots\ is the same as a bilinear map'': $(u, v) \mapsto h_p(u)(v)$. By Proposition~\ref{prop:ddf-critical}(3), the vertical component of $(s_f)_{*p}u$ is $\operatorname{Hess}_p f(u, \cdot\,)$, so $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. In coordinates, the matrix of $(s_f)_{*p}$ is $\binom{I}{H_p}$ (Proposition~\ref{prop:ddf-critical}(2), the homework computation), and ``once you unravel everything \ldots\ the matrix of $h_p$ in the induced coordinates is just this bottom'' block.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.3, font=\scriptsize]
+\draw[->, gray!75!black] (-2.3,0) -- (2.5,0) node[right, text=black] {$T_{(p,0)}\mathcal{Z} \cong T_pM$};
+\draw[->, gray!75!black] (0,-1.7) -- (0,1.8) node[above, text=black] {$T_{(p,0)}\pi^{-1}(p) \cong T_p^*M$};
+\draw[<->, blue!70!black, thick] (-2.0,1.3) -- (2.1,-1.365) node[right] {$\operatorname{Im}(s_f)_{*p} = \operatorname{graph}(h_p)$};
+\draw[gray!60, dashed] (1.2,0) -- (1.2,-0.78);
+\draw[gray!60, dashed] (0,-0.78) -- (1.2,-0.78);
+\fill (1.2,0) circle (1.4pt) node[above=1pt] {$u$};
+\fill (0,-0.78) circle (1.4pt) node[left] {$h_p(u)$};
+\fill[blue!70!black] (1.2,-0.78) circle (1.7pt);
+\node[blue!70!black, anchor=west] at (1.3,-0.5) {$(s_f)_{*p}u = (u, h_p(u))$};
+\draw[orange!85!black, thick, ->] (-0.9,0) arc (180:146:0.9);
+\node[orange!85!black, anchor=south east, align=right] at (-1.05,0.1) {slope $= h_p$,\\ i.e.\ $\operatorname{Hess}_pf(u,\cdot)$};
+\node[gray!70!black, anchor=north west, align=left] at (-2.3,-1.0) {a line through $(p,0)$ meeting\\ the fibre only in $0$: a graph};
+\end{tikzpicture}
+\end{center}
+
+The splitting at a point of the zero section, and the image of $(s_f)_{*p}$ in it: a line through the origin that ``passes the vertical line test'', the graph of $h_p$. Its slope is the Hessian: $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. A line through the origin is such a graph exactly when it meets the vertical axis (the fibre direction) only in $0$.
+
+\textit{Away from a critical point.} The horizontal summand ``has nothing to do with $f$. It's just because \ldots\ we have the zero section, and then we have the fibre, and they're just sitting there''; at $(p, df_p)$ with $df_p \neq 0$ the fibre is still there, but there is no zero section through the point. A student asked why one cannot use some other section through $(p, df_p)$: ``Yeah, you can put a section, but you have to make a choice \ldots\ because you make a choice, you don't have a well-defined'' Hessian. In coordinates (``which we haven't done much of''), with two charts $(x^i)$ and $(y^j)$, $\partial f/\partial x^i = \sum_j (\partial y^j/\partial x^i)\, \partial f/\partial y^j$, and differentiating again,
+\[
+\frac{\partial^2 f}{\partial x^k \partial x^i} = \sum_j \frac{\partial^2 y^j}{\partial x^k \partial x^i}\, \frac{\partial f}{\partial y^j} + \sum_{j,l} \frac{\partial y^j}{\partial x^i}\, \frac{\partial y^l}{\partial x^k}\, \frac{\partial^2 f}{\partial y^l \partial y^j} :
+\]
+the first sum ``will not go away in general'', so the matrix ``doesn't transform like a quadratic form unless these guys are zero'' (Proposition~\ref{prop:hessian-transformation}).
+
+\begin{rembox}[Natural Is Not Canonical]\label{rem:natural-canonical}
+``Natural is not the same thing as canonical. This was [drilled] into me when I was your age. \emph{Canonical} means that this is how we do it: we follow the canon, an established set of traditions. \emph{Natural} means that this is how nature does it. It's not a convention. It's just sitting there, in the mathematical world.'' The splitting $T_{(p,0)}(T^*M) = T_pM \oplus T_p^*M$ ``is natural. It's not canonical.''
+\end{rembox}
+
+\textit{Jets.} ``In the same sort of direction'': for every $k$ the quotient of germs by a power of $I_p$ makes sense, generalizing $T_p^*M \cong I_p/I_p^2$ (Theorem~\ref{thm:cotangent-ideal}).
+
+\begin{defbox}[Jets]\deflabel{def:jets}
+Let $p \in M$ and $k \ge 0$. The space of \textbf{$k$-jets} at $p$ is
+\[
+J^k_p = C^\infty_p(M) \big/ I_p^{k+1},
+\]
+where $I_p^{k+1}$ is spanned by products of $k + 1$ germs vanishing at $p$. The class of a germ is its $k$-jet.
+\end{defbox}
+
+\begin{propbox}[Jets Are Taylor Polynomials]\thmlabel{prop:jets-taylor}
+In a chart $(x^1, \ldots, x^m)$ centred at $p$, two germs have the same $k$-jet if and only if their partial derivatives of all orders $\le k$ agree at $p$, that is, their Taylor polynomials of degree $k$ at $p$ agree. So $J^k_p$ is isomorphic to the space of polynomials of degree $\le k$ in $m$ variables.
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~20: ``this just isolates \ldots\ the partial sum of the Taylor series. You kill derivatives of order $k+1$ and higher.'' Filled in.)} It suffices to show that $[g] \in I_p^{k+1}$ if and only if all partials of $g$ of orders $0, \ldots, k$ vanish at $p$. \emph{Only if.} A product $g_1 \cdots g_{k+1}$ of germs vanishing at $p$: by the Leibniz rule, a partial derivative of order $\le k$ of the product is a sum of products in each of which some factor $g_i$ is not differentiated, and so vanishes at $p$; sums of such products behave the same. \emph{If.} Applying Hadamard's lemma (Lemma~\ref{lem:hadamard}) repeatedly to the coefficient functions, as in the proof of Lemma~\ref{lem:taylor-hadamard}, gives, on a ball about $p$,
+\[
+g = \sum_{|\alpha| \le k} \frac{\partial^\alpha g(p)}{\alpha!}\, x^\alpha + \sum_{|\beta| = k+1} x^\beta\, g_\beta
+\]
+with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, every polynomial of degree $\le k$ is the Taylor polynomial of a germ (itself), so the map from $J^k_p$ to Taylor polynomials is onto.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.25, font=\scriptsize]
+\draw[->, gray!60] (-2.2,0) -- (2.4,0) node[right, text=black] {$x$};
+\draw[->, gray!60] (0,-0.3) -- (0,2.6);
+% f(x) = 1 + 0.5 x + 0.4 x^2 + 0.25 x^3 around p = 0
+\draw[violet!75!black, very thick] plot[smooth, domain=-2:1.7] (\x,{1+0.5*\x+0.4*\x*\x+0.15*\x*\x*\x});
+\draw[gray!70!black, thick] (-2,1) -- (2.2,1) node[right] {$T_0$: $0$-jet (value)};
+\draw[teal!60!black, thick] (-1.6,0.2) -- (2.2,2.1) node[right] {$T_1$: $1$-jet};
+\draw[orange!85!black, thick, dashed] plot[smooth, domain=-2:1.75] (\x,{1+0.5*\x+0.4*\x*\x});
+\node[orange!85!black, anchor=west] at (1.6,2.55) {$T_2$: $2$-jet};
+\node[violet!75!black, anchor=east] at (-2.05,0.4) {$f$};
+\fill (0,1) circle (1.6pt); \node[below right] at (0,1) {$p$};
+\node[align=center] at (0.1,-0.75) {germs at $p$ modulo $I_p^{k+1}$ $=$ Taylor polynomials of degree $k$;\\ $k = 1$, value removed: $I_p/I_p^2 \cong T_p^*M$, the differential};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The jets of a function $f$ of one variable at $p$, drawn as its Taylor polynomials (Proposition~\ref{prop:jets-taylor}): the $0$-jet $T_0$ is the value $f(p)$, the $1$-jet $T_1$ the tangent line, the $2$-jet $T_2$ the osculating parabola. Two germs have the same $k$-jet when their difference lies in $I_p^{k+1}$, that is, vanishes to order $k + 1$ at $p$. For $k = 1$, removing the value leaves $I_p/I_p^2 \cong T_p^*M$ (Theorem~\ref{thm:cotangent-ideal}): the $1$-jet of a germ vanishing at $p$ is its differential.
+
+``This is called a space of jets \ldots\ they are useful in some circles. If you take $k = 2$, you can package the information contained in the function --- the value, the first derivative, the second derivative --- in some abstract object.'' But ``within them you cannot separate naturally the first and the second partials, unless you have a special situation'' --- a critical point being the special situation that gives the Hessian.
+
+\textbf{Transcription note (Lecture 20).} Page~53 of the handwritten notes writes the jet space as $C^\infty_p(M)/I_p^k$, which keeps derivatives through order $k - 1$; Uribe corrected it in lecture (``maybe I should put $k + 1$ here''), and the $k$-jet is $C^\infty_p(M)/I_p^{k+1}$. The splitting there is written at ``$(0, p)$''; in these notes the point of the zero section over $p$ is $(p, 0)$.
+
+% ============================================================================
+% CHAPTER: VECTOR FIELDS AND LIE GROUPS
 % ============================================================================
 \chapter{Vector Fields and Lie Groups}
 
@@ -17399,6 +17663,31 @@ If $F : M \to N$ is a diffeomorphism and $\mathbf{X}_1, \mathbf{X}_2 \in \mathfr
 \textit{(Not from lecture; filled in.)} By Proposition~\ref{prop:vf-pushforward}, each $F_*\mathbf{X}_i$ is a vector field on $N$ and $\mathbf{X}_i$ is $F$-related to $F_*\mathbf{X}_i$, for $i = 1, 2$. So Proposition~\ref{prop:bracket-naturality}, with $\mathbf{Y}_i = F_*\mathbf{X}_i$, shows that $[\mathbf{X}_1, \mathbf{X}_2]$ is $F$-related to $[F_*\mathbf{X}_1, F_*\mathbf{X}_2]$. On the other hand $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ (Lemma~\ref{lem:bracket-field}), so Proposition~\ref{prop:vf-pushforward}, applied to this field, says that the only field on $N$ that is $F$-related to $[\mathbf{X}_1, \mathbf{X}_2]$ is $F_*[\mathbf{X}_1, \mathbf{X}_2]$. Both $[F_*\mathbf{X}_1, F_*\mathbf{X}_2]$ and $F_*[\mathbf{X}_1, \mathbf{X}_2]$ are such fields, so they are equal.
 \end{proof}
 
+\textit{(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)} A vector field $\mathbf{X}$ on $M$, pointwise, globally and in components. Chart $(U, \varphi = (x^1, \ldots, x^m))$; the numbers on the arrows refer to the remark below.
+
+\begin{center}
+\begin{tikzcd}[column sep=3.6em, row sep=3.2em, font=\footnotesize]
+\text{section } p \mapsto \mathbf{X}_p \in T_pM \arrow[r, shift left, "(1)"] \arrow[d, shift left, "(3)"] & \text{operator } \mathbf{X} : C^\infty(M) \to C^\infty(M) \arrow[l, shift left, "(2)"] \\
+\mathbf{X} = \sum_j X^j \dfrac{\partial}{\partial x^j} \ \text{on } U \arrow[u, shift left, "(4)"] &
+\end{tikzcd}
+\end{center}
+
+\begin{rembox}[Conversion Diagram for Vector Fields]\label{rem:conversion-vector-fields}
+\begin{enumerate}
+    \item \emph{Section to operator.} $(\mathbf{X}f)(p) = \mathbf{X}_p[f]$, a derivation of $C^\infty(M)$: $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$ (Lemma~\ref{lem:vf-derivation}); $\mathbf{X}f$ is smooth for every smooth $f$ exactly when $\mathbf{X}$ is smooth (Lemma~\ref{lem:vf-smooth-criterion}).
+    \item \emph{Operator to section.} Every derivation of $C^\infty(M)$ is a vector field: $\mathbf{X}_p[f] = (\mathbf{X}\tilde f)(p)$ for a global $\tilde f$ with the same germ at $p$, which exists by bump functions and does not depend on the choice (Corollary~\ref{cor:germ-extension}, Lemma~\ref{lem:derivation-local}, Proposition~\ref{prop:derivations-are-fields}).
+    \item \emph{Section to components.} On $U$, $X^j = \mathbf{X}(x^j)$, that is, $X^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p)$.
+    \item \emph{Components to section.} $\mathbf{X}_p = \sum_j X^j(p)\, \partial/\partial x^j|_p$, smooth if and only if all $X^j$ are (Proposition~\ref{prop:vf-coords}); then $\mathbf{X}f = \sum_j X^j\, \partial f/\partial x^j$.
+\end{enumerate}
+\emph{The same three faces for:}
+\begin{itemize}
+    \item \emph{the bracket.} Globally $[\mathbf{X}, \mathbf{Y}]f = \mathbf{X}(\mathbf{Y}f) - \mathbf{Y}(\mathbf{X}f)$ (Definition~\ref{def:lie-bracket}). Pointwise $[\mathbf{X}, \mathbf{Y}]_p[f] = \mathbf{X}_p[\mathbf{Y}f] - \mathbf{Y}_p[\mathbf{X}f]$, which needs the global function $\mathbf{Y}f$, not only the vector $\mathbf{Y}_p$. In components $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(Y^j) - \mathbf{Y}(X^j) = \sum_i \big(X^i\, \partial Y^j/\partial x^i - Y^i\, \partial X^j/\partial x^i\big)$ (Proposition~\ref{prop:bracket-coords}).
+    \item \emph{$F$-related fields.} Pointwise $F_{*p}\mathbf{X}_p = \mathbf{Y}_{F(p)}$ (Definition~\ref{def:F-related}). Globally $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$ for all $g$ (Proposition~\ref{prop:F-related-operator}). In components $Y^i(F(p)) = \sum_j \frac{\partial F^i}{\partial x^j}(p)\, X^j(p)$. For a diffeomorphism, $\mathbf{Y} = F_*\mathbf{X}$ with $(F_*\mathbf{X})_q = F_{*}\mathbf{X}_{F^{-1}(q)}$ (Definition~\ref{def:vf-pushforward}).
+    \item \emph{one-forms.} Pointwise $\theta_p \in T_p^*M$; globally the function $p \mapsto \theta_p(\mathbf{X}_p)$ for each vector field $\mathbf{X}$; in components $\theta_j = \theta(\partial/\partial x^j)$ and $\theta = \sum_j \theta_j\, dx^j$ (Proposition~\ref{prop:one-form-coords}). For $\theta = df$, $df(\mathbf{X}) = \mathbf{X}f$.
+    \item \emph{the tangent bundle.} The section $\mathbf{X}$ in the standard chart of $TM$ (\ref{sec:tangent-bundle}) is $p \mapsto (x^1, \ldots, x^m, X^1, \ldots, X^m)$, with transition $(r, v) \mapsto (\tau(r), \tau'(r)v)$, $\tau$ the transition function of the base.
+\end{itemize}
+\end{rembox}
+
 % ============================================================================
 % SECTION: LIE GROUPS AND LEFT-INVARIANT VECTOR FIELDS
 % ============================================================================
@@ -18258,6 +18547,158 @@ If $F : M \to N$ is smooth and $\dim M < \dim N$, then the regular values of $F$
 
 \textbf{Transcription note (Lecture 19).} Page~50 of the handwritten notes states the image lemma for ``$F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open''. As written, with $m$ unrestricted, it is false for $m > n$: the projection $\mathbb{R}^2 \to \mathbb{R}$, $(x, y) \mapsto x$, maps the $x$-axis, of measure zero in $\mathbb{R}^2$, onto $\mathbb{R}$. Lemma~\ref{lem:smooth-measure-zero} takes $m = n$, as Lee does and as the application to transition maps needs. (For $m < n$ the conclusion holds for every $S$, by Corollary~\ref{cor:sard-low-dim}.)
 
+\section{Parametric Transversality}\label{sec:parametric-transversality}
+
+\roadmark{Stage: analysis}{Transversality of a whole family passes, by Sard's theorem, to almost every member.}
+
+\textit{Lecture 20. ``Next topic \ldots\ one of my favorite theorems in the whole course \ldots\ a really beautiful, useful theorem, called the transversality theorem of René Thom, or parametric transversality, that will have really beautiful consequences together with Sard's theorem.''}
+
+\begin{defbox}[Smooth Family of Maps]\deflabel{def:smooth-family}
+Let $S$, $M$, $N$ be smooth manifolds. A \textbf{smooth family} of maps $M \to N$, parametrized by $S$, is a collection $\{F_s\}_{s \in S}$ of maps $F_s : M \to N$ such that $F : S \times M \to N$, $F(s, p) = F_s(p)$, is smooth. $S$ is the \textbf{parameter space}.
+\leeref{Ch.~6, \emph{The Transversality Homotopy Theorem}}
+\end{defbox}
+
+``Smoothness of the family is the same as smoothness of the big map'' --- jointly in $s$ and $p$. Each $F_s = F \circ \iota_s$, with $\iota_s : M \to S \times M$, $p \mapsto (s, p)$, the slice inclusion (Definition~\ref{def:slice-inclusions}), so each $F_s$ is smooth.
+
+\begin{thmbox}[Parametric Transversality]\thmlabel{thm:parametric-transversality}
+Let $F : S \times M \to N$ be smooth, $Z \subseteq N$ a regular submanifold, and suppose $F \pitchfork Z$ (Definition~\ref{def:transverse-submanifold}). Then $W = F^{-1}(Z)$ is a regular submanifold of $S \times M$, and with $\pi : W \to S$ the restriction of the projection $(s, p) \mapsto s$: for $s \in S$,
+\[
+s \text{ is a regular value of } \pi \iff F_s : M \to N \text{ is transverse to } Z .
+\]
+\leeref{Theorem 6.35 (proof)}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture~20 --- ``a nice exercise'' --- proved the direction ``that matters for applications'', $(\Rightarrow)$; the converse is filled in.)}
+
+\emph{Preliminaries.} $W$ is a regular submanifold of $S \times M$ and, for $(s, p) \in W$ with $q = F(s, p)$,
+\[
+T_{(s,p)}W = \big(dF_{(s,p)}\big)^{-1}\big(T_qZ\big) \tag{1}
+\]
+(Theorem~\ref{thm:transverse-submanifold-preimage}; a student supplied this in class: ``it's the preimage of the tangent space of $Z$ by the differential''). $\pi$ is smooth, as the restriction of the smooth projection to a regular submanifold. Write tangent vectors to $S \times M$ as pairs $(\sigma, u) \in T_sS \oplus T_pM$ (Theorem~\ref{thm:tangent-product}); then $d\pi(\sigma, u) = \sigma$, and
+\[
+dF_{(s,p)}(0, u) = d(F_s)_p(u), \tag{2}
+\]
+because $F_s = F \circ \iota_s$ and $d(\iota_s)_p(u) = (0, u)$: ``it's a partial derivative \ldots\ when I compute this derivative, I freeze the first entry to $s$'' (Definition~\ref{def:partial-derivative-factor}).
+
+\emph{$(\Rightarrow)$} Let $s$ be a regular value of $\pi$, and $p \in M$ with $q = F_s(p) = F(s,p) \in Z$. We must show $\operatorname{Im} d(F_s)_p + T_qZ = T_qN$; ``clearly we have one inclusion.'' Let $w \in T_qN$. Since $F \pitchfork Z$, there are $(\sigma, u) \in T_{(s,p)}(S \times M)$ and $v \in T_qZ$ with
+\[
+w = dF_{(s,p)}(\sigma, u) + v . \tag{$*$}
+\]
+``Since $s$ is a regular value of $\pi$ \ldots\ I can hit $\sigma$'': there is a tangent vector to $W$ at $(s, p)$ projecting to $\sigma$, and since $d\pi$ only reads the first component, it has the form $(\sigma, \tau)$ for some $\tau \in T_pM$. Write $(\sigma, u) = (\sigma, \tau) + (0, u - \tau)$ and substitute into $(*)$:
+\[
+w = dF_{(s,p)}(\sigma, \tau) + dF_{(s,p)}(0, u - \tau) + v = d(F_s)_p(u - \tau) + \big(dF_{(s,p)}(\sigma, \tau) + v\big),
+\]
+by (2). By (1), $dF_{(s,p)}(\sigma, \tau) \in T_qZ$, so the bracket is tangent to $Z$, and $w \in \operatorname{Im} d(F_s)_p + T_qZ$. ``So this implies that $F_s$ intersects $Z$ transversely.''
+
+\emph{$(\Leftarrow)$} \textit{(Filled in.)} Suppose $F_s \pitchfork Z$, and let $(s, p) \in \pi^{-1}(s)$, so $q = F_s(p) \in Z$; we show $d\pi_{(s,p)}$ is onto $T_sS$. Let $\sigma \in T_sS$. By transversality of $F_s$, $dF_{(s,p)}(\sigma, 0) = d(F_s)_p(u) + v$ for some $u \in T_pM$, $v \in T_qZ$. By (2), $dF_{(s,p)}(\sigma, -u) = dF_{(s,p)}(\sigma, 0) - d(F_s)_p(u) = v \in T_qZ$, so $(\sigma, -u) \in T_{(s,p)}W$ by (1), and $d\pi(\sigma, -u) = \sigma$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.15, font=\scriptsize]
+\fill[gray!6] (0,0) rectangle (4.6,3.6); \draw[gray!55] (0,0) rectangle (4.6,3.6);
+\node[gray!70!black, anchor=south west] at (0,3.6) {$S \times M$};
+% W = F^{-1}(Z): sideways parabola s = s' + c (m - 1.8)^2
+\draw[orange!85!black, very thick] plot[smooth, domain=-1.75:1.75] ({1.1+0.55*\x*\x},{1.8+\x});
+\node[orange!85!black, anchor=south] at (2.8,3.6) {$W = F^{-1}(Z)$};
+% slices
+\draw[red!70!black, dashed, thick] (1.1,0) -- (1.1,3.6);
+\draw[teal!60!black, thick] (2.2,0) -- (2.2,3.6);
+\draw[gray!55, dotted, thick] (3.9,0) -- (3.9,3.6);
+\fill[red!70!black] (1.1,1.8) circle (1.8pt);
+\fill (2.2,{1.8+sqrt(1.1/0.55)}) circle (1.6pt); \fill (2.2,{1.8-sqrt(1.1/0.55)}) circle (1.6pt);
+% parameter line S
+\draw[thick, gray!75!black] (0,-0.9) -- (4.6,-0.9) node[right, text=black] {$S$};
+\draw[->, gray!60] (-0.35,2.2) -- node[left] {$\pi$} (-0.35,-0.7);
+\foreach \x/\c/\l in {1.1/red!70!black/{s'},2.2/teal!60!black/s,3.9/gray!70!black/{s''}} {\fill[\c] (\x,-0.9) circle (1.5pt); \node[\c, below] at (\x,-0.95) {$\l$};}
+% outcomes
+\node[red!70!black, align=center, anchor=north] at (0.45,-1.3) {slice tangent to $W$:\\ $s'$ critical value\\ of $\pi$; $F_{s'}$ may\\ fail $\pitchfork$};
+\node[teal!60!black, align=center, anchor=north] at (2.45,-1.3) {crosses $W$:\\ $s$ regular value\\ of $\pi$; $F_s \pitchfork Z$};
+\node[gray!70!black, align=center, anchor=north] at (4.45,-1.3) {misses $W$:\\ $F_{s''}^{-1}(Z) = \varnothing$,\\ so $F_{s''} \pitchfork Z$};
+% the map F
+\draw[->, gray!65] (4.9,1.8) -- node[above] {$F$} (5.9,1.8);
+\node[anchor=west, align=left] at (6.0,1.8) {$N \supseteq Z$\\ $F \pitchfork Z$};
+\end{tikzpicture}
+\end{center}
+
+The cartoon, in $S \times M$ with $S$ horizontal. $W = F^{-1}(Z)$ is the orange curve and $\pi$ projects it to $S$. At $s$ the slice $\{s\} \times M$ crosses $W$ transversally: $s$ is a regular value of $\pi$, and $F_s \pitchfork Z$. At $s'$ the slice is tangent to $W$: $s'$ is a singular value, and $F_{s'}$ need not be transverse to $Z$. At $s''$ the slice misses $W$: $F_{s''}(M) \cap Z = \varnothing$, vacuously transverse. (``I can't make a useful cartoon of what happens to the right.'')
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0, font=\scriptsize]
+% left: N = R^2, Z = parabola, F_s(x) = (x,s)
+\begin{scope}
+\draw[->, gray!60] (-2,0) -- (2.2,0) node[right, text=black] {$x$};
+\draw[->, gray!60] (0,-1.2) -- (0,2.6) node[above, text=black] {$y$};
+\draw[blue!70!black, very thick] plot[smooth, domain=-1.55:1.55] (\x,{\x*\x});
+\node[blue!70!black, anchor=west] at (1.5,2.35) {$Z = \{y = x^2\}$};
+\foreach \s/\c in {1.4/teal!60!black, 0/red!70!black, -0.8/gray!60} {\draw[\c, thick] (-1.9,\s) -- (1.9,\s);}
+\node[teal!60!black, anchor=east] at (-1.9,1.4) {$F_s$, $s > 0$};
+\node[red!70!black, anchor=east] at (-1.9,0) {$F_0$};
+\node[gray!60!black, anchor=east] at (-1.9,-0.8) {$F_s$, $s < 0$};
+\fill[teal!60!black] ({sqrt(1.4)},1.4) circle (1.5pt); \fill[teal!60!black] ({-sqrt(1.4)},1.4) circle (1.5pt);
+\fill[red!70!black] (0,0) circle (1.6pt);
+\node[align=center] at (0,-1.75) {$N = \mathbb{R}^2$, lines $F_s(x) = (x, s)$};
+\end{scope}
+% right: S x M with W = {s = x^2}
+\begin{scope}[xshift=6.2cm]
+\draw[->, gray!60] (-1.3,0) -- (2.4,0) node[right, text=black] {$s$};
+\draw[->, gray!60] (0,-1.7) -- (0,1.9) node[above, text=black] {$x$};
+\draw[orange!85!black, very thick] plot[smooth, domain=-1.4:1.4] ({\x*\x},\x);
+\node[orange!85!black, anchor=west] at (1.95,1.4) {$W = \{s = x^2\}$};
+\draw[red!70!black, dashed] (0,-1.6) -- (0,1.6);
+\draw[teal!60!black] (1.4,-1.6) -- (1.4,1.6);
+\fill[red!70!black] (0,0) circle (1.6pt);
+\node[align=center] at (0.6,-2.25) {$S \times M = \mathbb{R} \times \mathbb{R}$: $\pi(s,x) = s$ on $W$\\ is critical only at $s = 0$, where $F_0$ is tangent to $Z$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} An explicit instance of the cartoon. Take $S = M = \mathbb{R}$, $N = \mathbb{R}^2$, $Z = \{ y = x^2 \}$ and $F(s, x) = (x, s)$, so $F_s$ parametrizes the horizontal line at height $s$. Then $F$ is a diffeomorphism, so $F \pitchfork Z$, and $W = F^{-1}(Z) = \{ (s, x) : s = x^2 \}$. Parametrizing $W$ by $x \mapsto (x^2, x)$, the projection is $\pi(x^2, x) = x^2$, with derivative $2x$: the only critical point is $x = 0$, and the only critical value is $s = 0$. For $s > 0$, $F_s$ crosses $Z$ transversally at $x = \pm\sqrt{s}$; for $s < 0$, $F_s^{-1}(Z) = \varnothing$; at $s = 0$, $\operatorname{Im} d(F_0)_0 = \operatorname{span}\{(1, 0)\} = T_{(0,0)}Z$, so $F_0$ is tangent to $Z$, not transverse --- exactly as Theorem~\ref{thm:parametric-transversality} predicts.
+
+\begin{corbox}[Almost Every Member Is Transverse]\thmlabel{cor:parametric-sard}
+If $F : S \times M \to N$ is smooth and $F \pitchfork Z$, then $F_s \pitchfork Z$ for almost every $s \in S$: the set of $s$ with $F_s$ not transverse to $Z$ has measure zero in $S$.
+\leeref{Theorem 6.35}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture~20: ``pairing this with Sard's theorem''.)} By Sard's theorem (Theorem~\ref{thm:sard}) applied to $\pi : W \to S$, the singular values of $\pi$ form a set of measure zero; for every other $s$, $F_s \pitchfork Z$ by Theorem~\ref{thm:parametric-transversality}.
+\end{proof}
+
+``You go from transversality of the family to transversality of individual elements in the family. That's the beauty of this.''
+
+\begin{exbox}[Translates Are Generically Transverse]\exlabel{ex:translates-transverse}
+Let $Y, Z \subseteq \mathbb{R}^d$ be regular submanifolds. For almost every $a \in \mathbb{R}^d$, the translate $a + Y$ intersects $Z$ transversally.
+\end{exbox}
+
+\begin{proof}
+\textit{(Lecture~20, the ``first classical, very geometric application''; details filled in.)} The parameter space is $\mathbb{R}^d$ itself: $F : \mathbb{R}^d \times Y \to \mathbb{R}^d$, $F(a, p) = a + p$, ``I use the vector space structure to translate.'' Then $F_a(Y) = a + Y$. \emph{$F$ is a submersion}: fixing $p$ and varying $a$, $dF_{(a,p)}(\sigma, 0) = \sigma$ for every $\sigma \in T_a\mathbb{R}^d = \mathbb{R}^d$ --- ``if you just vary $a$, you get anything.'' So $F \pitchfork Z$ (Corollary~\ref{cor:transverse-special-cases}(3)), and $F^{-1}(Z) = \{ (a, p) : a + p \in Z \}$. By Corollary~\ref{cor:parametric-sard}, $F_a \pitchfork Z$ for almost every $a$. Finally $F_a : Y \to \mathbb{R}^d$ is the inclusion of $a + Y$ composed with the diffeomorphism $Y \to a + Y$, $p \mapsto a + p$ (``the translate \ldots\ just the inclusion''), and $a + Y$ is a regular submanifold, a translate of one, so $F_a \pitchfork Z$ says $(a + Y) \pitchfork Z$ (Proposition~\ref{prop:transverse-submanifolds-maps}).
+\end{proof}
+
+``Isn't that nice?'' If $\dim Y + \dim Z < d$, a transverse intersection must be empty, since $T_qY + T_qZ$ has dimension at most $\dim Y + \dim Z$. So two curves in $\mathbb{R}^3$ ($1 + 1 < 3$): ``translate one by a generic vector, it'll cease to intersect the other one.'' For two curves in the plane that are tangent, a generic translate either separates them or makes them cross transversally. This is the idea of \emph{general position}: a configuration is not in general position if moving one of the objects a little changes the geometry radically. ``General position things are transverse, which may mean that they don't intersect. But vacuous intersection is a statement. It's a powerful statement.''
+
+\begin{center}
+\begin{tikzpicture}[scale=1.05, font=\scriptsize]
+\foreach \dx/\dy/\lab/\cap [count=\i] in {0/0/Y/{$Y$ and $Z$ tangent:\\ not transverse}, 4.3/0.75/{a+Y}/{$a + Y$: two\\ transverse crossings}, 8.6/-0.75/{a'+Y}/{$a' + Y$: disjoint,\\ vacuously transverse}} {
+  \begin{scope}[xshift=\dx cm]
+  \draw[blue!70!black, thick] plot[smooth, domain=-1.7:1.7] (\x,{0.45*\x*\x});
+  \node[blue!70!black, anchor=west] at (1.7,1.3) {$Z$};
+  \draw[red!70!black, thick] plot[smooth, domain=-1.7:1.7] (\x,{-0.45*\x*\x+\dy});
+  \node[red!70!black, anchor=west] at (1.7,{-1.3+\dy}) {$\lab$};
+  \node[align=center] at (0,-2.35) {\cap};
+  \end{scope}}
+\fill (0,0) circle (1.5pt);
+\fill ({4.3-sqrt(0.75/0.9)},{0.45*0.75/0.9}) circle (1.5pt); \fill ({4.3+sqrt(0.75/0.9)},{0.45*0.75/0.9}) circle (1.5pt);
+\draw[->, gray!70!black] (4.3,-1.3) -- node[right] {$a$} (4.3,-0.55);
+\draw[->, gray!70!black] (8.6,-0.05) -- node[right] {$a'$} (8.6,-0.7);
+\end{tikzpicture}
+\end{center}
+
+Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a translate $a + Y$ meeting $Z$ in two transverse crossings; another translate $a' + Y$ disjoint from $Z$. Only translates making them tangent again are excluded, and those form a set of measure zero.
+
+``I will give you a homework problem, an application of this \ldots\ to show that if you have a manifold inside $\mathbb{R}^2$ [as transcribed], almost all linear functions restricted to the manifold are Morse. So you have a lot of Morse functions'' (Definition~\ref{def:morse-function}).
+
+\textbf{Transcription note (Lecture 20).} Page~54 of the handwritten notes writes ``$\pi$ onto'' under $F^{-1}(Z) \to \mathbb{R}^d$; Uribe paused (``that's not at all \ldots\ yeah, it's onto''), and it is onto --- for $p \in Y$ and $z \in Z$, $(z - p, p) \in F^{-1}(Z)$ when $Z \neq \varnothing$ --- but surjectivity plays no role in the argument.
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -18343,6 +18784,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:lie-groups}\ Lie groups and left-invariant vector fields; Lie group morphisms; the bracket of a matrix group & Chapter 7 (Examples 7.3, 7.27--7.30; \emph{Lie Group Homomorphisms}); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorems 8.37 and 8.44, Proposition 8.41) \\
 \ref{sec:measure-zero}\ Sets of measure zero & Chapter 6, \emph{Sets of Measure Zero} (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) \\
 \ref{sec:sard}\ Sard's theorem & Chapter 6, \emph{Sard's Theorem} (Theorem 6.10, Corollary 6.11) \\
+\ref{sec:parametric-transversality}\ Parametric transversality & Chapter 6, \emph{The Transversality Homotopy Theorem} (Theorem 6.35) \\
 \bottomrule
 \end{longtable}
 
@@ -18427,6 +18869,7 @@ Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
 Theorem 6.10 & Thm.~\ref{thm:sard} \\
 Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
 Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Cor.~\ref{cor:transverse-special-cases}, Thm.~\ref{thm:transverse-intersection-manifold} \\
+Theorem 6.35 & Thm.~\ref{thm:parametric-transversality}, Cor.~\ref{cor:parametric-sard} \\
 Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
 Proposition 7.26 & Def.~\ref{def:orbit-map} \\
 Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\

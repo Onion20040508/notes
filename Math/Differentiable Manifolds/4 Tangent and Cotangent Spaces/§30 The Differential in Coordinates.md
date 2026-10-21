@@ -587,14 +587,96 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 
 > [!remark] Remark: The Strategy
 > To show that $c$ is a regular value of a map between manifolds, and to see its level set:
+>
 > 1. *Locate the level set.* Show that $F^{-1}(c)$ lies inside a single chart domain $U$, and that $F(U)$ lies in a chart domain $V$ around $c$.
 > 2. *Go downstairs.* Write the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$, an ordinary map between open subsets of Euclidean spaces.
 > 3. *Compute as in [[§7 The Regular Value Theorem|§7]].* Check that the Jacobian of $\tilde F$ has full rank $n$ at every point of the Euclidean level set $\tilde F^{-1}(\tilde c)$.
 > 4. *Come back up.* By Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], $c$ is a regular value of $F$, and $F^{-1}(c)$ is homeomorphic, through the chart, to a Euclidean regular level set: a manifold of dimension $\dim M - \dim N$.
 >
-> Assignment 3, Problem 4 is exactly this. For the moment map $F : \mathbb{CP}^n \to \mathbb{R}^n$ and $c$ in the interior of the simplex, every point of $F^{-1}(c)$ has all homogeneous coordinates nonzero, so $F^{-1}(c) \subseteq U_0$ (step 1). The target chart is the identity of $\mathbb{R}^n$, and $\varphi_0(U_0) = \mathbb{C}^n \cong \mathbb{R}^{2n}$, so $\tilde F$ is an explicit rational map $\mathbb{R}^{2n} \to \mathbb{R}^n$ (step 2). Its Jacobian has rank $n$ on the level set (step 3). So the fibre is an $n$-dimensional manifold (step 4) — in this case a regular level set of $\mathbb{R}^{2n}$ itself, exactly the situation of [[§7 The Regular Value Theorem|§7]]. When a level set does not fit in one chart, the same argument applies around each of its points separately, as the next corollary shows.
+> Assignment 3, Problem 4 is exactly this. For the moment map $F : \mathbb{CP}^n \to \mathbb{R}^n$ and $c$ in the interior of the simplex, every point of $F^{-1}(c)$ has all homogeneous coordinates nonzero, so $F^{-1}(c) \subseteq U_0$ (step 1). The target chart is the identity of $\mathbb{R}^n$, and $\varphi_0(U_0) = \mathbb{C}^n \cong \mathbb{R}^{2n}$, so $\tilde F$ is an explicit rational map $\mathbb{R}^{2n} \to \mathbb{R}^n$ (step 2). Its Jacobian has rank $n$ on the level set (step 3; computed in Example [[§30 The Differential in Coordinates#^ex-30-2|§30.2]]). So the fibre is an $n$-dimensional manifold (step 4) — in this case a regular level set of $\mathbb{R}^{2n}$ itself, exactly the situation of [[§7 The Regular Value Theorem|§7]]. When a level set does not fit in one chart, the same argument applies around each of its points separately, as the next corollary shows.
 
 ^rem-30-6
+
+> [!example] Example §30.2: The Moment Map on $\mathbb{CP}^n$
+> Let $F : \mathbb{CP}^n \to \mathbb{R}^n$ be the moment map,
+>
+> $$
+> F\big([z_0 : \cdots : z_n]\big) = \Big( \frac{|z_1|^2}{|\vec z|^2}, \ldots, \frac{|z_n|^2}{|\vec z|^2} \Big), \qquad |\vec z|^2 = \sum_{i=0}^n |z_i|^2 ,
+> $$
+>
+> and let $\mathring\Delta = \{\, t \in \mathbb{R}^n : t_j > 0 \text{ for all } j, \ \sum_j t_j < 1 \,\}$ be the open simplex. Every $c \in \mathring\Delta$ is a regular value of $F$.
+
+^ex-30-2
+
+*Assignment 3, Problem 4.* Parts (a) and (b) show that $F$ is well defined and smooth, with image the closed simplex $\Delta = \{t : t_j \ge 0, \ \sum_j t_j \le 1\}$, whose interior is $\mathring\Delta$; part (c) is the statement above.
+
+> [!proof]+ Proof
+> *(Assignment 3, Problem 4(c); the route of the official solution. It supplies the computation that step 3 of the remark *The Strategy* only asserts.)* We follow the four steps of the remark, with the chart $(U_0, \varphi_0)$ of Definition [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|§18.2]] and the identity chart of $\mathbb{R}^n$.
+>
+> *Step 1: locate the level sets.* For $[\vec z] \in \mathbb{CP}^n$ with $F([\vec z]) = t$,
+>
+> $$
+> \sum_{j=1}^n t_j = \frac{|\vec z|^2 - |z_0|^2}{|\vec z|^2} = 1 - \frac{|z_0|^2}{|\vec z|^2} .
+> $$
+>
+> So $t_j > 0$ for all $j \ge 1$ if and only if $z_j \neq 0$ for all $j \ge 1$, and $\sum_j t_j < 1$ if and only if $z_0 \neq 0$. Hence $F^{-1}(\mathring\Delta)$ is the set of points with all homogeneous coordinates nonzero. It lies in $U_0$, and $\varphi_0$ maps it onto the open set $O = \{ w \in \mathbb{C}^n : w_j \neq 0 \text{ for all } j \}$.
+>
+> *Step 2: go downstairs.* By Proposition [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]], $\varphi_0^{-1}(w) = [1 : w_1 : \cdots : w_n]$, so
+>
+> $$
+> \tilde F(w) = F\big(\varphi_0^{-1}(w)\big) = \Big( \frac{|w_1|^2}{1 + |w|^2}, \ldots, \frac{|w_n|^2}{1 + |w|^2} \Big), \qquad |w|^2 = \sum_{l=1}^n |w_l|^2 .
+> $$
+>
+> On $O$ it factors as $\tilde F = \Phi \circ \psi$, with $\mathbb{R}^n_{>0} = \{x \in \mathbb{R}^n : x_j > 0 \text{ for all } j\}$ and
+>
+> $$
+> \psi : O \to \mathbb{R}^n_{>0}, \quad \psi(w) = \big(|w_1|, \ldots, |w_n|\big), \qquad
+> \Phi : \mathbb{R}^n_{>0} \to \mathring\Delta, \quad \Phi(x) = \Big( \frac{x_1^2}{1 + |x|^2}, \ldots, \frac{x_n^2}{1 + |x|^2} \Big),
+> $$
+>
+> since $\Phi(\psi(w))_j = |w_j|^2 / (1 + \sum_l |w_l|^2) = \tilde F(w)_j$.
+>
+> *Step 3a: $\Phi$ is a diffeomorphism.* $\Phi$ takes values in $\mathring\Delta$: $\Phi(x)_j > 0$, and $\sum_j \Phi(x)_j = |x|^2/(1 + |x|^2) < 1$. Let
+>
+> $$
+> H : \mathring\Delta \to \mathbb{R}^n_{>0}, \qquad H(t) = \Big( \sqrt{\frac{t_1}{1 - \sum_l t_l}}, \ldots, \sqrt{\frac{t_n}{1 - \sum_l t_l}} \Big) .
+> $$
+>
+> Both maps are smooth: their components are rational functions with nonvanishing denominators, composed in $H$ with the square root on $(0, \infty)$. They are inverse to each other. For $x \in \mathbb{R}^n_{>0}$ and $t = \Phi(x)$: $1 - \sum_l t_l = 1/(1 + |x|^2)$, so $t_j/(1 - \sum_l t_l) = x_j^2$ and $H(t)_j = x_j$, as $x_j > 0$. For $t \in \mathring\Delta$ and $x = H(t)$: $|x|^2 = \sum_l t_l/(1 - \sum_l t_l)$, so $1 + |x|^2 = 1/(1 - \sum_l t_l)$ and $\Phi(x)_j = x_j^2\,(1 - \sum_l t_l) = t_j$. By the chain rule applied to $H \circ \Phi = \mathrm{id}$, $H'(\Phi(x))\,\Phi'(x) = I_n$, so the $n \times n$ matrix $\Phi'(x)$ is invertible.
+>
+> *Step 3b: $\psi'$ has rank $n$.* In the real coordinates $w_j = u_j + i v_j$, ordered $(u_1, v_1, \ldots, u_n, v_n)$ as in Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]], $\psi_j = \sqrt{u_j^2 + v_j^2}$ is smooth on $O$, with $\partial\psi_j/\partial u_j = u_j/|w_j|$, $\partial\psi_j/\partial v_j = v_j/|w_j|$, and all other partials $0$:
+>
+> $$
+> \psi'(w) = \begin{pmatrix}
+> \frac{u_1}{|w_1|} & \frac{v_1}{|w_1|} & 0 & 0 & \cdots & 0 & 0 \\
+> 0 & 0 & \frac{u_2}{|w_2|} & \frac{v_2}{|w_2|} & \cdots & 0 & 0 \\
+> \vdots & & & & \ddots & & \vdots \\
+> 0 & 0 & 0 & 0 & \cdots & \frac{u_n}{|w_n|} & \frac{v_n}{|w_n|}
+> \end{pmatrix} \qquad (n \times 2n).
+> $$
+>
+> Row $j$ is nonzero, its two entries forming the unit vector $(u_j, v_j)/|w_j|$, and different rows have nonzero entries in disjoint columns. So the rows are linearly independent and $\operatorname{rank}\psi'(w) = n$.
+>
+> *Step 3c: $\tilde F'$ has rank $n$ on $O$.* By the chain rule, $\tilde F'(w) = \Phi'(\psi(w))\,\psi'(w)$. Multiplying by the invertible matrix $\Phi'(\psi(w))$ does not change the rank, so $\operatorname{rank}\tilde F'(w) = n$. In words: if $F = \Phi \circ \psi$ with $\Phi$ a diffeomorphism, then $F$ is a submersion exactly where $\psi$ is.
+>
+> *Step 4: come back up.* Let $c \in \mathring\Delta$ and $p \in F^{-1}(c)$. By Step 1, $p \in U_0$ and $w = \varphi_0(p) \in O$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], the matrix of $F_{\ast p}$ in the coordinate bases of $\varphi_0$ and of the identity chart is $\tilde F'(w)$, of rank $n$ by Step 3c. So $F_{\ast p}$ is onto the $n$-dimensional space $T_c\mathbb{R}^n$, and $c$ is a regular value. By Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]], $F^{-1}(c)$ is a manifold of dimension $2n - n = n$.
+
+^pf-ex-30-2
+
+*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§30 The Differential in Coordinates#^prop-30-8|§30.8]]
+
+> [!proof]+ Second proof (as submitted, Assignment 3)
+> Step 3 by a direct computation of $\tilde F'$, without the factorization. Write $S = 1 + \sum_{l=1}^n (u_l^2 + v_l^2)$ and $|w_j|^2 = u_j^2 + v_j^2$, so that $\tilde F^j = |w_j|^2/S$ with $S \ge 1$. Since $\partial |w_j|^2/\partial u_k = 2u_k\delta_{jk}$ and $\partial S/\partial u_k = 2u_k$, the quotient rule gives
+>
+> $$
+> \frac{\partial \tilde F^j}{\partial u_k} = \frac{2u_k}{S^2}\big(\delta_{jk}\,S - |w_j|^2\big), \qquad \frac{\partial \tilde F^j}{\partial v_k} = \frac{2v_k}{S^2}\big(\delta_{jk}\,S - |w_j|^2\big).
+> $$
+>
+> With $\eta_k \in \mathbb{R}^n$, $(\eta_k)_j = \delta_{jk}S - |w_j|^2$, the $u_k$-column of $\tilde F'(w)$ is $\tfrac{2u_k}{S^2}\eta_k$ and the $v_k$-column is $\tfrac{2v_k}{S^2}\eta_k$. At a point of $O$, $w_k \neq 0$, so $u_k$ or $v_k$ is nonzero, and one of these two columns is a nonzero multiple of $\eta_k$. Choosing one such column for each $k$ gives $n$ columns, which are linearly independent once $\eta_1, \ldots, \eta_n$ are.
+>
+> *The $\eta_k$ are linearly independent.* Suppose $\sum_k a_k\eta_k = 0$ and put $\sigma = \sum_k a_k$. The $j$-th component reads $a_j S = |w_j|^2 \sigma$. Summing over $j$ gives $\sigma S = \sigma \sum_j |w_j|^2 = \sigma (S - 1)$, so $\sigma = 0$; then $a_j S = 0$ and $a_j = 0$, as $S \ge 1$. So $\tilde F'(w)$ has rank $n$, and Step 4 of the first proof concludes.
+
+^pf-ex-30-2-2
 
 Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§44 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 

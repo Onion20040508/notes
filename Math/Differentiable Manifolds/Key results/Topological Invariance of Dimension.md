@@ -11,7 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§2 Topological Manifolds#^thm-2-1|Theorem §2.1: Topological Invariance of Dimension]], in [[§2 Topological Manifolds]]
 
 ## Its proof uses
-- (only definitions)
+- [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
+- [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7: Connectedness and Components]]
 
 ## Used in (Differentiable Manifolds)
 - [[§2 Topological Manifolds#^cor-2-2|Corollary §2.2: Dimension is Locally Constant]]

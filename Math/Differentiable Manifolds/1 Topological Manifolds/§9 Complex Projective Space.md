@@ -20,7 +20,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 > (x, y) \longmapsto x + iy, \qquad x, y \in \mathbb{R}^{n+1}
 > $$
 >
-> (any such identification works). So points of $S^{2n+1}$ are complex vectors $z = (z_1, \dots, z_{n+1}) \in \mathbb{C}^{n+1}$ with $|z| = 1$. Let $S^1 = \{\xi \in \mathbb{C} \mid |\xi| = 1\}$ be the unit circle, and define a relation $\sim$ on $S^{2n+1}$ by
+> (any such identification works). So points of $S^{2n+1}$ are complex vectors $z = (z_0, \dots, z_n) \in \mathbb{C}^{n+1}$ with $|z| = 1$, indexed from $0$ as in the homogeneous coordinates of [[§18 Projective Spaces as Smooth Manifolds|§18]] and in the assignments. Let $S^1 = \{\xi \in \mathbb{C} \mid |\xi| = 1\}$ be the unit circle, and define a relation $\sim$ on $S^{2n+1}$ by
 >
 > $$
 > z \sim w \iff \exists\, \xi \in S^1 \text{ such that } w = \xi z

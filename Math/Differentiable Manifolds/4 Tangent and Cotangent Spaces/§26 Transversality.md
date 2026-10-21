@@ -97,6 +97,17 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > [!remark]- Connections
 > - On manifolds, for preimages of regular submanifolds: [[§37 Regular Submanifolds#^thm-37-15|Thm. §37.15]] (Assignment 5, Problem 2).
 
+> [!remark] Remark: The Surjectivity Step as an Image Computation
+> *(Not from lecture; the route of the official solution of Assignment 2, Problem 5.)* For a linear map $B$ and a subspace $W$ of its domain, $B(W + \ker B) = B(W)$: an element of the left side is $B(w + t) = Bw + Bt = Bw$ with $w \in W$ and $t \in \ker B$, and $W \subseteq W + \ker B$ gives the other inclusion. Take $B = G'(q)$ and $W = \operatorname{im} F'(p)$. Then $\ker G'(q) = T^{\mathrm{geo}}_qS$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), transversality says $\operatorname{im} F'(p) + T^{\mathrm{geo}}_qS = \mathbb{R}^k$, and
+>
+> $$
+> \operatorname{im}\,(G \circ F)'(p) = G'(q)\big(\operatorname{im} F'(p)\big) = G'(q)\big(\operatorname{im} F'(p) + \ker G'(q)\big) = G'(q)\big(\mathbb{R}^k\big) = \mathbb{R}^\ell ,
+> $$
+>
+> by the chain rule, the identity, transversality, and surjectivity of $G'(q)$ ($0$ is a regular value of $G$ and $q \in G^{-1}(0)$). This is the lifting step of the proof in one line; it is used again in the second proof of Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]].
+
+^rem-26-2
+
 **Comparison with Lee.** Lee's Theorem 6.30 states this for a smooth map transverse to an *embedded submanifold* $S \subseteq M$, after the theory of submanifolds (Chapter 5). The course's version, for level sets in Euclidean space, needs only the regular value theorem. It is the case where $S$ is cut out by a single global defining map $G$, and the proof — pull $G$ back along $F$ — is the one Lee uses locally.
 
 > [!theorem] Proposition §26.2: Transversality Is the Regular Value Condition
@@ -136,7 +147,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > [!remark] Remark: An Intrinsic Statement with a Chosen Proof
 > [[§26 Transversality#^prop-26-2|Proposition §26.2]] is the precise content of the parenthetical. Transversality is not merely a sufficient condition: it *is* the regular value condition for $G \circ F$, rewritten so that $G$ disappears. The hypothesis of [[§26 Transversality#^thm-26-1|Theorem §26.1]] and both of its conclusions — that $M$ is a manifold, and the formula for $T^{\mathrm{geo}}_pM$ — involve only $F$ and $S$; only the proof picks a defining function $G$. This is the same pattern as for charts: a statement that does not depend on a choice, proved by making one. Two things remain for later. The smooth structure on $M$ is built through $G$, and its independence of $G$ is a statement about submanifolds. And $S$ need only be cut out by some $G$ *near each point*, which will turn out to hold for every embedded submanifold, so the theorem localizes.
 
-^rem-26-2
+^rem-26-3
 
 > [!theorem] Corollary §26.3: The Regular Value Theorem as a Special Case
 > Let $c \in \mathbb{R}^k$ and $S = \{c\}$. Then $F \pitchfork \{c\}$ if and only if $c$ is a regular value of $F$, and in that case [[§26 Transversality#^thm-26-1|Theorem §26.1]] returns [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] together with $T^{\mathrm{geo}}_pM = \ker F'(p)$.
@@ -266,10 +277,10 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > [!remark] Remark
 > Transversality protects the dimension and the tangent formula *independently*: (a) loses the first, (b) keeps the first and loses the second. And (c) shows what happens to the tangency of (b) under an arbitrarily small perturbation: it disappears, replaced by two transverse crossings (for $\varepsilon > 0$) or by no intersection at all (for $\varepsilon < 0$). The same happens to the tangent plane of [[§26 Transversality#^ex-26-1|Example §26.1]] when it is moved slightly up or down.
 
-^rem-26-3
+^rem-26-4
 
 > [!remark] Remark: Looking Ahead: Transversality Is Generic
-> Two points of [[§26 Transversality#^rem-26-3|the remark above]] will be taken up once abstract manifolds and submanifolds are in place. First, the definition makes sense verbatim for a smooth map $F : X \to Y$ between abstract manifolds and a submanifold $S \subseteq Y$, with *abstract* tangent spaces and the differential of [[§28 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§28]] in place of $T^{\mathrm{geo}}$ and the Jacobian:
+> Two points of [[§26 Transversality#^rem-26-4|the remark above]] will be taken up once abstract manifolds and submanifolds are in place. First, the definition makes sense verbatim for a smooth map $F : X \to Y$ between abstract manifolds and a submanifold $S \subseteq Y$, with *abstract* tangent spaces and the differential of [[§28 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§28]] in place of $T^{\mathrm{geo}}$ and the Jacobian:
 >
 > $$
 > dF_p(T_pX) + T_{F(p)}S = T_{F(p)}Y \qquad \text{for all } p \in F^{-1}(S),
@@ -277,9 +288,9 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 >
 > and [[§26 Transversality#^thm-26-1|Theorem §26.1]] becomes the statement that *the preimage of a submanifold under a transverse map is a submanifold of the same codimension*. Second, as [[§26 Transversality#^ex-26-2|Example §26.2]](c) suggests, transversality is the *typical* situation: any smooth map can be made transverse to a given submanifold by an arbitrarily small perturbation, and tangencies are non-generic accidents. This is the transversality theorem of Thom, and it is the entry point to intersection theory (Guillemin–Pollack, Ch. 2). Neither is part of the course yet.
 
-^rem-26-4
+^rem-26-5
 
 > [!remark] Remark: What Is Still Missing
 > Everything above presupposes an ambient $\mathbb{R}^{n+k}$: [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1]] of the geometric tangent space $T^{\mathrm{geo}}_pM$ uses its vector space structure to differentiate $\gamma$, and [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available — “if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.” [[§27 Germs|The next sections]] build the *abstract* tangent space $T_pM$ from the charts alone.
 
-^rem-26-5
+^rem-26-6

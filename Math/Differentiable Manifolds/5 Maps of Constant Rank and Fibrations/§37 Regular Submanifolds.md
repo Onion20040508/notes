@@ -334,6 +334,19 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 *Uses:* [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]]
 
+> [!proof]+ Second proof that $\dim N_pS = k$ (without a chart)
+> *(Not from lecture; the chart-free count of the official solution of Assignment 5, Problem 4.)* Let $\iota_p^{\ast} : T_p^{\ast}M \to T_p^{\ast}S$ be the pullback of covectors by the inclusion (Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]), $\iota_p^{\ast}\xi = \xi \circ \iota_{\ast p}$. By Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]], $\xi \in N_pS$ if and only if $\xi(\iota_{\ast p}v) = 0$ for all $v \in T_pS$, that is, $\iota_p^{\ast}\xi = 0$; so $N_pS = \ker\iota_p^{\ast}$. The map $\iota_{\ast p}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]), so its dual map $\iota_p^{\ast}$ is surjective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]](3)). Concretely, a functional on the subspace $\iota_{\ast p}(T_pS)$ extends to $T_pM$: extend a basis of the subspace to a basis of $T_pM$ and send the new vectors to $0$. The dimensions are $\dim T_p^{\ast}M = m$ and $\dim T_p^{\ast}S = \dim T_pS = m - k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], and $\dim S = m - k$ by Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]). Rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) gives
+>
+> $$
+> \dim N_pS = \dim\ker\iota_p^{\ast} = \dim T_p^{\ast}M - \operatorname{rank}\iota_p^{\ast} = m - (m - k) = k .
+> $$
+>
+> This is the linear-algebra fact that the annihilator of a $d$-dimensional subspace of an $m$-dimensional space has dimension $m - d$.
+
+^pf-37-8-2
+
+*Uses:* [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+
 > [!remark]- Connections
 > - The dimension count in general: [[§12 Duality#^ladr-3-125|LADR 3.125]] ($\dim U^0 = \dim V - \dim U$).
 
@@ -759,6 +772,35 @@ The local half of the theorem below holds at a single point where a map is a sub
 ^pf-37-15
 
 *Uses:* [[§37 Regular Submanifolds#^prop-37-7|§37.7]], [[§37 Regular Submanifolds#^lem-37-11|§37.11]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§26 Transversality#^thm-26-1|§26.1]]
+
+> [!proof]+ Second proof (reduction to Theorem [[§26 Transversality#^thm-26-1|§26.1]] in charts)
+> *(Not from lecture; the route of the official solution of Assignment 5, Problem 2, and the one its hint intends. The three facts that transport the Euclidean theorem are checked explicitly.)* Fix $p \in F^{-1}(S)$ and $q = F(p)$. As in Steps 1 and 3 of the first proof, take a chart $(U, \varphi = (x^1, \ldots, x^n))$ of $N$ adapted to $S$ at $q$, so $U \cap S = x_b^{-1}(\vec 0)$, and a chart $(V, \psi)$ of $M$ at $p$ with $F(V) \subseteq U$. Downstairs, set
+>
+> $$
+> \tilde F = \varphi \circ F \circ \psi^{-1} : \psi(V) \to \mathbb{R}^n, \qquad \tilde G : \mathbb{R}^n \to \mathbb{R}^k, \quad \tilde G(y) = (y^{n-k+1}, \ldots, y^n) .
+> $$
+>
+> $\tilde G$ is linear with $\tilde G' = (0 \mid I_k)$ surjective everywhere, so $\tilde S = \tilde G^{-1}(\vec 0) = \mathbb{R}^{n-k} \times \{\vec 0\}$ is a regular level set with $T^{\mathrm{geo}}_y\tilde S = \ker\tilde G' = \mathbb{R}^{n-k} \times \{\vec 0\}$, and $\varphi(U \cap S) = \tilde S \cap \varphi(U)$. As $\tilde F$ takes values in $\varphi(U)$,
+>
+> $$
+> \tilde F^{-1}(\tilde S) = \psi\big(V \cap F^{-1}(S)\big) .
+> $$
+>
+> *Fact 1: transversality survives the charts.* Let $p' \in V \cap F^{-1}(S)$, $q' = F(p')$, $x' = \psi(p')$. By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $\tilde F_{\ast x'} = \varphi_{\ast q'} \circ F_{\ast p'} \circ (\psi^{-1})_{\ast x'}$, and $(\psi^{-1})_{\ast x'}$ is onto (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), so $\operatorname{im}\tilde F_{\ast x'} = \varphi_{\ast q'}(\operatorname{im}F_{\ast p'})$. The chart is adapted at $q'$ too, so $\iota_{\ast q'}(T_{q'}S)$ is spanned by the $\partial/\partial x^i|_{q'}$ with $i \le n - k$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]), which $\varphi_{\ast q'}$ sends to the $\partial/\partial r^i|_{\varphi(q')}$, that is, to $e_1, \ldots, e_{n-k}$ under the identification of Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]. Applying the isomorphism $\varphi_{\ast q'}$ to $\operatorname{im}F_{\ast p'} + \iota_{\ast q'}(T_{q'}S) = T_{q'}N$ gives
+>
+> $$
+> \operatorname{im}\tilde F'(x') + T^{\mathrm{geo}}_{\tilde F(x')}\tilde S = \mathbb{R}^n .
+> $$
+>
+> *Fact 2: Theorem [[§26 Transversality#^thm-26-1|§26.1]] on an open set.* Its proof is pointwise until the regular value theorem is invoked: the surjectivity step (or the remark *The Surjectivity Step as an Image Computation*) uses only Fact 1 at each point. So $0$ is a regular value of $\tilde H = \tilde G \circ \tilde F : \psi(V) \to \mathbb{R}^k$, and $\tilde H^{-1}(\vec 0) = \tilde F^{-1}(\tilde S) = \psi(V \cap F^{-1}(S))$. Note $\tilde H = x_b \circ F \circ \psi^{-1}$.
+>
+> *Fact 3: slice charts pull back.* By the Regular Value Theorem for manifolds (Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]), applied to $\tilde H$ on the open submanifold $\psi(V)$ of $\mathbb{R}^m$, there is a chart $(W', \theta)$ of $\psi(V)$ at $x' = \psi(p)$ adapted to $\tilde H^{-1}(\vec 0)$, with $k$ equations. Then $\theta \circ \psi : \psi^{-1}(W') \to \theta(W')$ is a diffeomorphism onto an open set, so a smooth chart of $M$ (Lemma [[§36 Submersions#^lem-36-5|§36.5]]), and for $p'' \in \psi^{-1}(W') \subseteq V$, the last $k$ coordinates of $\theta(\psi(p''))$ vanish if and only if $\psi(p'') \in \tilde H^{-1}(\vec 0)$, if and only if $p'' \in F^{-1}(S)$. So $(\psi^{-1}(W'), \theta \circ \psi)$ is a chart of $M$ adapted to $F^{-1}(S)$ at $p$, with $k$ equations.
+>
+> As $p$ was arbitrary, $F^{-1}(S)$ is a regular submanifold of codimension $k$, which is (1). For (2), $G = x_b \circ F|_V = \tilde H \circ \psi$ is the map of the first proof; it is a submersion at $p$, since $\tilde H$ is one at $\psi(p)$ and $\psi_{\ast p}$ is an isomorphism; and (2) follows as there.
+
+^pf-37-15-2
+
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§26 Transversality#^thm-26-1|§26.1]], [[§37 Regular Submanifolds#^thm-37-12|§37.12]], [[§36 Submersions#^lem-36-5|§36.5]]
 
 > [!definition] Definition §37.6: Normal Space
 > Let $S \subseteq M$ be a regular submanifold with inclusion $\iota$, and $p \in S$. The **normal space** of $S$ at $p$ is the quotient vector space (Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]])
