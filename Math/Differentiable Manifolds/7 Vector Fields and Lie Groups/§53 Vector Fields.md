@@ -76,13 +76,13 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 ^def-53-3
 
 > [!theorem] Proposition §53.1: Vector Fields in Coordinates
-> Let $\mathbf{X}$ be a section of $TM$ (not assumed smooth) and $(U, \varphi = (x^j))$ a chart. Then on $U$
+> Let $\mathbf{X}$ be a section of $TM$ (not assumed smooth), $m = \dim M$, and $(U, \varphi = (x^1, \ldots, x^m))$ a chart *of $M$*: $U \subseteq M$ open, with coordinate functions $x^j : U \to \mathbb{R}$. Then on $U$
 >
 > $$
 > \mathbf{X} = \sum_{j=1}^m \mathbf{X}^j\, \frac{\partial}{\partial x^j}, \qquad \mathbf{X}^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p),
 > $$
 >
-> and $\mathbf{X}$ is smooth on $U$ if and only if the coefficient functions $\mathbf{X}^1, \ldots, \mathbf{X}^m$ are smooth on $U$.
+> where $\partial/\partial x^j$ is the coordinate vector field of the chart ($p \mapsto \partial/\partial x^j|_p \in T_pM$) and the coefficients $\mathbf{X}^j : U \to \mathbb{R}$ are functions on $U \subseteq M$. Moreover $\mathbf{X}$ is smooth on $U$ if and only if the coefficient functions $\mathbf{X}^1, \ldots, \mathbf{X}^m$ are smooth on $U$; smoothness of $\mathbf{X} : U \to TU$ is tested in the chart $\tilde\varphi$ of $TM$ induced by $\varphi$ (Definition [[§49 The Tangent Bundle#^def-49-5|§49.5]]), whose $2m$ coordinates are $x^1, \ldots, x^m$ and the components $v^j = dx^j(v)$.
 >
 > *Lee: Proposition 8.1*
 
