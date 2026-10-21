@@ -14769,6 +14769,93 @@ The mixed-partials condition is necessary but not sufficient, and Uribe flagged 
 It satisfies the condition: both mixed partials equal $(y^2 - x^2)/(x^2 + y^2)^2$. But it is not $df$. Along the circle $c(t) = (\cos t, \sin t)$, with velocity $c'(t) = -\sin t\, \partial_x + \cos t\, \partial_y$ (\ref{sec:velocities}), one finds $\omega(c'(t)) = 1$. If $\omega = df$, then $(f \circ c)'(t) = df(c'(t)) = 1$, so $f(c(2\pi)) - f(c(0)) = 2\pi$; but $c(2\pi) = c(0)$. The hole at the origin is what makes this possible: on all of $\mathbb{R}^2$ --- indeed on any star-shaped domain --- the condition is sufficient (Lee, Corollary~11.50).
 \end{rembox}
 
+\begin{exbox}[The Angle Form on the Punctured Plane]\exlabel{ex:angle-form}
+\textit{(Not from lecture; added on request: the remark above, written out.)} The form is $\omega = (x\,dy - y\,dx)/(x^2+y^2)$. Names, used below: a one-form $\omega$ is \textbf{closed} if its coefficients satisfy the mixed-partials condition of Proposition~\ref{prop:exactness-test} in every chart, and \textbf{exact} if $\omega = df$ for some smooth function $f$. Proposition~\ref{prop:exactness-test} says exact $\Rightarrow$ closed. This example shows closed $\not\Rightarrow$ exact.
+\begin{enumerate}
+    \item \emph{The manifold.} $M = \mathbb{R}^2 \setminus \{0\}$, an open subset of $\mathbb{R}^2$, hence an open submanifold (Definition~\ref{def:open-submanifold-smooth}), with the single chart $\mathrm{id}_M$ and coordinates $x, y$. Its coordinate derivations $\partial_x, \partial_y$ are the ordinary partial derivatives.
+    \item \emph{The one-form.} $\omega = a\, dx + b\, dy$ with coefficient functions
+    \[
+    a, b : M \to \mathbb{R}, \qquad a(x,y) = \frac{-y}{x^2 + y^2}, \qquad b(x,y) = \frac{x}{x^2 + y^2} .
+    \]
+    They are smooth on $M$ because $x^2 + y^2 > 0$ there; so $\omega$ is a one-form on $M$ (Proposition~\ref{prop:one-form-coords}): at each $p \in M$ it is the covector $\omega_p = a(p)\, dx|_p + b(p)\, dy|_p \in T_p^*M$, a linear map $T_pM \to \mathbb{R}$. It is not defined at $0$.
+    \item \emph{$\omega$ is closed.} By the quotient rule,
+    \[
+    \frac{\partial b}{\partial x} = \frac{(x^2 + y^2) - x \cdot 2x}{(x^2 + y^2)^2} = \frac{y^2 - x^2}{(x^2 + y^2)^2},
+    \qquad
+    \frac{\partial a}{\partial y} = -\frac{(x^2 + y^2) - y \cdot 2y}{(x^2 + y^2)^2} = \frac{y^2 - x^2}{(x^2 + y^2)^2} ,
+    \]
+    so $\partial a/\partial y = \partial b/\partial x$ on $M$: the necessary condition of Proposition~\ref{prop:exactness-test} holds. (Compare $\theta = \tfrac12(x\,dy - y\,dx)$ of Example~\ref{ex:two-one-forms}, where the two sides are $\tfrac12$ and $-\tfrac12$.)
+    \item \emph{The test curve.} $c : \mathbb{R} \to M$, $c(t) = (\cos t, \sin t)$, the unit circle run once around in time $2\pi$. It is smooth and lands in $M$ ($|c(t)| = 1$). Its velocity at time $t$ is the tangent vector (Proposition~\ref{prop:velocity-coords}, components $(x \circ c)'(t)$, $(y \circ c)'(t)$)
+    \[
+    D_c(t) = -\sin t\; \partial_x|_{c(t)} + \cos t\; \partial_y|_{c(t)} \in T_{c(t)}M .
+    \]
+    \item \emph{$\omega$ along the curve.} Evaluating the covector $\omega_{c(t)}$ on this tangent vector, with $x^2 + y^2 = 1$ on the circle,
+    \[
+    \omega_{c(t)}\big(D_c(t)\big) = a(c(t))\,(-\sin t) + b(c(t))\,\cos t = (-\sin t)(-\sin t) + (\cos t)(\cos t) = 1 \qquad \text{for every } t .
+    \]
+    \item \emph{$\omega$ is not exact.} Suppose $\omega = df$ for some $f \in C^\infty(M)$. The function $f \circ c : \mathbb{R} \to \mathbb{R}$ is smooth, and by the definition of the velocity (Definition~\ref{def:velocity}) and Proposition~\ref{prop:df-derivation},
+    \[
+    (f \circ c)'(t) = D_c(t)[f] = df_{c(t)}\big(D_c(t)\big) = \omega_{c(t)}\big(D_c(t)\big) = 1 .
+    \]
+    By the fundamental theorem of calculus, $f(c(2\pi)) - f(c(0)) = \int_0^{2\pi} (f \circ c)'(t)\, dt = 2\pi$. But $c(2\pi) = (1, 0) = c(0)$, so the left side is $0$. Contradiction: no such $f$ exists on $M$.
+    \item \emph{What $f$ would have to be: the angle.} Let $U = M \setminus \{(x, 0) : x < 0\}$, the plane slit along the negative $x$-axis, and $\vartheta : U \to (-\pi, \pi)$ the polar angle, so that $x = r\cos\vartheta$, $y = r\sin\vartheta$ with $r = \sqrt{x^2 + y^2}$ (the polar coordinates of Example~\ref{ex:polar-derivations}; $(r, \vartheta)$ is a chart on $U$, so $\vartheta$ is smooth there). In that chart
+    \[
+    dx = \cos\vartheta\, dr - r\sin\vartheta\, d\vartheta, \qquad dy = \sin\vartheta\, dr + r\cos\vartheta\, d\vartheta ,
+    \]
+    \[
+    x\,dy - y\,dx = r\cos\vartheta\,(\sin\vartheta\, dr + r\cos\vartheta\, d\vartheta) - r\sin\vartheta\,(\cos\vartheta\, dr - r\sin\vartheta\, d\vartheta) = r^2\, d\vartheta ,
+    \]
+    so $\omega = r^2\, d\vartheta / r^2 = d\vartheta$ on $U$: on the slit plane $\omega$ \emph{is} exact, with $f = \vartheta$. The obstruction is global: going once around the hole, $\vartheta$ increases by $2\pi$ (step 6), so it cannot be continued continuously across the slit, where it jumps from near $\pi$ (just above) to near $-\pi$ (just below). Any $f$ with $df = \omega$ on all of $M$ would be such a continuation (two functions with the same differential on a connected open set differ by a constant).
+    \item \emph{Why the hole matters.} On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Corollary~11.50, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
+\end{enumerate}
+\end{exbox}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.15, font=\scriptsize]
+\draw[->, gray!55] (-2.6,0) -- (2.7,0) node[right, text=black] {$x$};
+\draw[->, gray!55] (0,-2.4) -- (0,2.5) node[above, text=black] {$y$};
+\draw[red!70!black, line width=1.4pt] (-2.5,0) -- (0,0);
+\node[red!70!black, anchor=south] at (-1.7,0.05) {$\vartheta \to \pi$};
+\node[red!70!black, anchor=north] at (-1.7,-0.05) {$\vartheta \to -\pi$};
+\draw[->, violet!75!black, thick] (0.573,0.177) -- (0.411,0.703);
+\draw[->, violet!75!black, thick] (0.133,0.585) -- (-0.403,0.707);
+\draw[->, violet!75!black, thick] (-0.44,0.408) -- (-0.814,0.004);
+\draw[->, violet!75!black, thick] (-0.573,-0.177) -- (-0.411,-0.703);
+\draw[->, violet!75!black, thick] (-0.133,-0.585) -- (0.403,-0.707);
+\draw[->, violet!75!black, thick] (0.44,-0.408) -- (0.814,-0.004);
+\draw[->, violet!75!black, thick] (1.29,0.399) -- (1.217,0.632);
+\draw[->, violet!75!black, thick] (0.809,1.081) -- (0.613,1.227);
+\draw[->, violet!75!black, thick] (0.019,1.35) -- (-0.225,1.353);
+\draw[->, violet!75!black, thick] (-0.778,1.103) -- (-0.978,0.962);
+\draw[->, violet!75!black, thick] (-1.278,0.435) -- (-1.357,0.204);
+\draw[->, violet!75!black, thick] (-1.29,-0.399) -- (-1.217,-0.632);
+\draw[->, violet!75!black, thick] (-0.809,-1.081) -- (-0.613,-1.227);
+\draw[->, violet!75!black, thick] (-0.019,-1.35) -- (0.225,-1.353);
+\draw[->, violet!75!black, thick] (0.778,-1.103) -- (0.978,-0.962);
+\draw[->, violet!75!black, thick] (1.278,-0.435) -- (1.357,-0.204);
+\draw[->, violet!75!black, thick] (1.958,0.606) -- (1.911,0.76);
+\draw[->, violet!75!black, thick] (1.502,1.396) -- (1.392,1.513);
+\draw[->, violet!75!black, thick] (0.747,1.909) -- (0.598,1.968);
+\draw[->, violet!75!black, thick] (-0.155,2.044) -- (-0.315,2.032);
+\draw[->, violet!75!black, thick] (-1.026,1.775) -- (-1.166,1.694);
+\draw[->, violet!75!black, thick] (-1.695,1.153) -- (-1.785,1.02);
+\draw[->, violet!75!black, thick] (-2.027,0.304) -- (-2.051,0.145);
+\draw[->, violet!75!black, thick] (-1.958,-0.606) -- (-1.911,-0.76);
+\draw[->, violet!75!black, thick] (-1.502,-1.396) -- (-1.392,-1.513);
+\draw[->, violet!75!black, thick] (-0.747,-1.909) -- (-0.598,-1.968);
+\draw[->, violet!75!black, thick] (0.155,-2.044) -- (0.315,-2.032);
+\draw[->, violet!75!black, thick] (1.026,-1.775) -- (1.166,-1.694);
+\draw[->, violet!75!black, thick] (1.695,-1.153) -- (1.785,-1.02);
+\draw[->, violet!75!black, thick] (2.027,-0.304) -- (2.051,-0.145);
+\draw[teal!60!black, thick, dashed] (0,0) circle (1);
+\node[teal!60!black, anchor=west] (C) at (2.35,-1.25) {$c(t) = (\cos t, \sin t)$};
+\draw[teal!60!black, thin] (C.west) -- (0.82,-0.57);
+\fill[white] (0,0) circle (2.2pt); \draw (0,0) circle (2.2pt);
+\node[anchor=north west] at (0.05,-0.05) {hole};
+\node[align=center] at (0,-2.85) {$\omega = \dfrac{x\,dy - y\,dx}{x^2 + y^2}$ drawn as arrows (length $1/r$): along every circle;\\ $\omega = d\vartheta$ off the red slit, where the angle $\vartheta$ jumps by $2\pi$};
+\end{tikzpicture}
+\end{center}
+
 \subsection{Pullbacks of One-Forms}\label{sub:pullback-one-forms}
 
 \begin{defbox}[Pullback of Functions]\deflabel{def:pullback-function}

@@ -205,6 +205,62 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ^rem-51-1
 
+> [!example] Example §51.2: The Angle Form on the Punctured Plane
+> *(Not from lecture; added on request: the remark above, written out.)* The form is $\omega = (x\,dy - y\,dx)/(x^2+y^2)$. Names, used below: a one-form $\omega$ is **closed** if its coefficients satisfy the mixed-partials condition of Proposition [[§51 One-Forms#^prop-51-3|§51.3]] in every chart, and **exact** if $\omega = df$ for some smooth function $f$. Proposition [[§51 One-Forms#^prop-51-3|§51.3]] says exact $\Rightarrow$ closed. This example shows closed $\not\Rightarrow$ exact.
+>
+> 1. *The manifold.* $M = \mathbb{R}^2 \setminus \{0\}$, an open subset of $\mathbb{R}^2$, hence an open submanifold (Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]]), with the single chart $\mathrm{id}_M$ and coordinates $x, y$. Its coordinate derivations $\partial_x, \partial_y$ are the ordinary partial derivatives.
+> 2. *The one-form.* $\omega = a\, dx + b\, dy$ with coefficient functions
+>
+> $$
+> a, b : M \to \mathbb{R}, \qquad a(x,y) = \frac{-y}{x^2 + y^2}, \qquad b(x,y) = \frac{x}{x^2 + y^2} .
+> $$
+>
+> They are smooth on $M$ because $x^2 + y^2 > 0$ there; so $\omega$ is a one-form on $M$ (Proposition [[§51 One-Forms#^prop-51-1|§51.1]]): at each $p \in M$ it is the covector $\omega_p = a(p)\, dx|_p + b(p)\, dy|_p \in T_p^{\ast}M$, a linear map $T_pM \to \mathbb{R}$. It is not defined at $0$.
+> 3. *$\omega$ is closed.* By the quotient rule,
+>
+> $$
+> \frac{\partial b}{\partial x} = \frac{(x^2 + y^2) - x \cdot 2x}{(x^2 + y^2)^2} = \frac{y^2 - x^2}{(x^2 + y^2)^2},
+> \qquad
+> \frac{\partial a}{\partial y} = -\frac{(x^2 + y^2) - y \cdot 2y}{(x^2 + y^2)^2} = \frac{y^2 - x^2}{(x^2 + y^2)^2} ,
+> $$
+>
+> so $\partial a/\partial y = \partial b/\partial x$ on $M$: the necessary condition of Proposition [[§51 One-Forms#^prop-51-3|§51.3]] holds. (Compare $\theta = \tfrac12(x\,dy - y\,dx)$ of Example [[§51 One-Forms#^ex-51-1|§51.1]], where the two sides are $\tfrac12$ and $-\tfrac12$.)
+> 4. *The test curve.* $c : \mathbb{R} \to M$, $c(t) = (\cos t, \sin t)$, the unit circle run once around in time $2\pi$. It is smooth and lands in $M$ ($|c(t)| = 1$). Its velocity at time $t$ is the tangent vector (Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], components $(x \circ c)'(t)$, $(y \circ c)'(t)$)
+>
+> $$
+> D_c(t) = -\sin t\; \partial_x|_{c(t)} + \cos t\; \partial_y|_{c(t)} \in T_{c(t)}M .
+> $$
+>
+> 5. *$\omega$ along the curve.* Evaluating the covector $\omega_{c(t)}$ on this tangent vector, with $x^2 + y^2 = 1$ on the circle,
+>
+> $$
+> \omega_{c(t)}\big(D_c(t)\big) = a(c(t))\,(-\sin t) + b(c(t))\,\cos t = (-\sin t)(-\sin t) + (\cos t)(\cos t) = 1 \qquad \text{for every } t .
+> $$
+>
+> 6. *$\omega$ is not exact.* Suppose $\omega = df$ for some $f \in C^\infty(M)$. The function $f \circ c : \mathbb{R} \to \mathbb{R}$ is smooth, and by the definition of the velocity (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
+>
+> $$
+> (f \circ c)'(t) = D_c(t)[f] = df_{c(t)}\big(D_c(t)\big) = \omega_{c(t)}\big(D_c(t)\big) = 1 .
+> $$
+>
+> By the fundamental theorem of calculus, $f(c(2\pi)) - f(c(0)) = \int_0^{2\pi} (f \circ c)'(t)\, dt = 2\pi$. But $c(2\pi) = (1, 0) = c(0)$, so the left side is $0$. Contradiction: no such $f$ exists on $M$.
+> 7. *What $f$ would have to be: the angle.* Let $U = M \setminus \{(x, 0) : x < 0\}$, the plane slit along the negative $x$-axis, and $\vartheta : U \to (-\pi, \pi)$ the polar angle, so that $x = r\cos\vartheta$, $y = r\sin\vartheta$ with $r = \sqrt{x^2 + y^2}$ (the polar coordinates of Example [[§30 The Differential in Coordinates#^ex-30-1|§30.1]]; $(r, \vartheta)$ is a chart on $U$, so $\vartheta$ is smooth there). In that chart
+>
+> $$
+> dx = \cos\vartheta\, dr - r\sin\vartheta\, d\vartheta, \qquad dy = \sin\vartheta\, dr + r\cos\vartheta\, d\vartheta ,
+> $$
+>
+> $$
+> x\,dy - y\,dx = r\cos\vartheta\,(\sin\vartheta\, dr + r\cos\vartheta\, d\vartheta) - r\sin\vartheta\,(\cos\vartheta\, dr - r\sin\vartheta\, d\vartheta) = r^2\, d\vartheta ,
+> $$
+>
+> so $\omega = r^2\, d\vartheta / r^2 = d\vartheta$ on $U$: on the slit plane $\omega$ *is* exact, with $f = \vartheta$. The obstruction is global: going once around the hole, $\vartheta$ increases by $2\pi$ (step 6), so it cannot be continued continuously across the slit, where it jumps from near $\pi$ (just above) to near $-\pi$ (just below). Any $f$ with $df = \omega$ on all of $M$ would be such a continuation (two functions with the same differential on a connected open set differ by a constant).
+> 8. *Why the hole matters.* On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Corollary 11.50, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
+
+^ex-51-2
+
+![[m591-51-1.svg]]
+
 > [!remark]- Connections
 > - The same form in 452, closed but not exact: [[§39 Closed and Exact Forms#^prop-39-6|452 §39.6]]; sufficiency on star-shaped domains: [[Poincaré Lemma|452 §39.7]].
 

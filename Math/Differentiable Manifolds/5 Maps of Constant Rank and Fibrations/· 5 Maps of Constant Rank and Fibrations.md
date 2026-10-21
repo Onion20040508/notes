@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (69), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (14), [[· 3 Smooth Structures|3 Smooth Structures]] (155), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (143)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (30), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (7), [[· 8 Sard's Theorem|8 Sard's Theorem]] (3)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (31), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (7), [[· 8 Sard's Theorem|8 Sard's Theorem]] (3)
 **Builds on (other subjects):** [[Linear Algebra]] (12), [[Topology]] (41), [[Multivariable Analysis]] (4)
 
 ## Sections

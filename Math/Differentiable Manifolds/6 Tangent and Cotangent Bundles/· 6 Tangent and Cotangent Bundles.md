@@ -7,7 +7,7 @@ tags: [chapter, differentiable-manifolds]
 # 6 Tangent and Cotangent Bundles
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (13), [[· 3 Smooth Structures|3 Smooth Structures]] (46), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (78), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (30)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (13), [[· 3 Smooth Structures|3 Smooth Structures]] (46), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (82), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (31)
 **Used by:** [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (7)
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Multivariable Analysis]] (1)
 
