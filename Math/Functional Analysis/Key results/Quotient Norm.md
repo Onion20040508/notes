@@ -23,6 +23,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§14 New Normed Spaces from Old#^prop-14-9|Proposition §14.9: The Quotient Seminorm; Closedness is Necessary]]
+- [[§36 Duality in Normed Spaces#^thm-36-8|Theorem §36.8: The Dual of a Quotient]]
 
 ## Connections
 - **How.** ‖[x]‖ is the infimum of the norms in the coset, i.e. the distance from 0 to the translate x + Y. Homogeneity follows by substituting y = ay′. Subadditivity uses ε-near minimizers in [x] and [y] ([[Characterization of the Supremum]]). Positivity is where closedness enters: if ‖[x]‖ = 0, then elements of Y converge to −x.

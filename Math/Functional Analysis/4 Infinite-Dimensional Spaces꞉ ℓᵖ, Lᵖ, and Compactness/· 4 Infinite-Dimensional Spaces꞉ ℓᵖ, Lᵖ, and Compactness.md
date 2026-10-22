@@ -28,7 +28,7 @@ To produce normed spaces beyond $\mathbb{R}^n$ one needs the $p$-norms on sequen
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§16 Means and Young's Inequality#^lem-16-3|Lemma §16.3: Young's Inequality]]: 24 later results
-- [[§17 Hölder's Inequality for Sequences#^thm-17-1|Theorem §17.1: Hölder's Inequality for Sequences]]: 22 later results
+- [[§16 Means and Young's Inequality#^lem-16-3|Lemma §16.3: Young's Inequality]]: 25 later results
+- [[§17 Hölder's Inequality for Sequences#^thm-17-1|Theorem §17.1: Hölder's Inequality for Sequences]]: 23 later results
 - [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|Theorem §18.1: Minkowski's Inequality for Sequences]]: 10 later results
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Theorem §19.1: Hölder's Inequality for Functions]]: 7 later results

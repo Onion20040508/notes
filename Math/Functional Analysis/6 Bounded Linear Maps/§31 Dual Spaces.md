@@ -23,7 +23,7 @@ tags: [functional-analysis, math556]
 ^def-31-1
 
 > [!remark]- Connections
-> - The same space in the companion chapter, with the norm as an infimum: [[§38 Bras, Kets, and the Riesz Map#^def-38-1|Def. §38.1]], [[§38 Bras, Kets, and the Riesz Map#^def-38-2|Def. §38.2]], [[§38 Bras, Kets, and the Riesz Map#^lem-38-1|§38.1]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$: [[§39 The Completeness Relation#^def-39-1|Def. §39.1]].
+> - The same space in the companion chapter, with the norm as an infimum: [[§39 Bras, Kets, and the Riesz Map#^def-39-1|Def. §39.1]], [[§39 Bras, Kets, and the Riesz Map#^def-39-2|Def. §39.2]], [[§39 Bras, Kets, and the Riesz Map#^lem-39-1|§39.1]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$: [[§40 The Completeness Relation#^def-40-1|Def. §40.1]].
 > - The algebraic dual in finite dimensions: [[§12 Duality#^ladr-3-108|LADR 3.108]], [[§12 Duality#^ladr-3-109|LADR 3.109]], [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]].
 
 > [!theorem] Corollary §31.1: The Dual is Always a Banach Space
@@ -71,7 +71,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]
 
 > [!remark]- Connections
-> - This course's first statement, without norms: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]; the companion chapter's isometric Riesz map: [[§38 Bras, Kets, and the Riesz Map#^thm-38-2|§38.2]].
+> - This course's first statement, without norms: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]; the companion chapter's isometric Riesz map: [[§39 Bras, Kets, and the Riesz Map#^thm-39-2|§39.2]].
 > - Finite-dimensional home: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]]).
 
 > [!theorem] Corollary §31.3: The Riesz Map: $H' \cong H$
@@ -90,10 +90,10 @@ tags: [functional-analysis, math556]
 *Uses:* [[§31 Dual Spaces#^thm-31-2|§31.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
 
 > [!remark]- Connections
-> - The same map in the companion chapter, in bra–ket notation: [[§38 Bras, Kets, and the Riesz Map#^thm-38-2|§38.2]].
+> - The same map in the companion chapter, in bra–ket notation: [[§39 Bras, Kets, and the Riesz Map#^thm-39-2|§39.2]].
 
 > [!remark] Remark
-> Wu called $R$ an isometry and concluded that the dual of a Hilbert space can be identified with the space itself, $H' = H$, “through this Riesz representation.” Over $\mathbb{C}$ the identification is conjugate-linear, which is harmless for norms and distances: $\|R(a) - R(b)\| = \|R(a - b)\| = \|a - b\|$. The companion chapter writes the same map in bra–ket notation (Theorem [[§38 Bras, Kets, and the Riesz Map#^thm-38-2|§38.2]]).
+> Wu called $R$ an isometry and concluded that the dual of a Hilbert space can be identified with the space itself, $H' = H$, “through this Riesz representation.” Over $\mathbb{C}$ the identification is conjugate-linear, which is harmless for norms and distances: $\|R(a) - R(b)\| = \|R(a - b)\| = \|a - b\|$. The companion chapter writes the same map in bra–ket notation (Theorem [[§39 Bras, Kets, and the Riesz Map#^thm-39-2|§39.2]]).
 
 ^rem-31-2
 

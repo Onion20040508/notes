@@ -15,7 +15,9 @@ tags: [functional-analysis, hub]
 - [[§36 Duality in Normed Spaces#^thm-36-2|Theorem §36.2: The Norm as a Maximum over the Dual]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|Theorem §37.1: Spanning Criterion]]
 
 ## Connections
-- TODO
+- Distance $0$ gives the [[Spanning Criterion]]; the dual statement (distance from a functional to $Y^\perp$, attained) is [[§37 Separable Duals and Reflexive Spaces#^prop-37-9|Proposition §37.9]].
+- Hilbert-space version: the distance is attained at the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection]].
+- Method: [[Functional Analysis Problem-Solving Techniques#^rem-t22|Technique 22]] (define the functional where there is no choice, then extend).

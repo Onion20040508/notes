@@ -5,7 +5,7 @@ chapter: 6
 section: 36
 tags: [functional-analysis, math556]
 ---
-← [[§35 Measures and the Radon–Nikodym Theorem]] · ↑ [[· 6 Bounded Linear Maps]] · [[§37 ℝⁿ, Cᵐ and Lᵖ]] →
+← [[§35 Measures and the Radon–Nikodym Theorem]] · ↑ [[· 6 Bounded Linear Maps]] · [[§37 Separable Duals and Reflexive Spaces]] →
 
 *Stage: maps — Thread: functionals. Hahn–Banach with a multiple of the norm as dominating function: there are enough bounded functionals to compute norms and distances, and the dual of $\ell^p$ is $\ell^{p'}$.*
 
@@ -466,9 +466,80 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]] read
 
 ^thm-36-8
 
-> [!proof]+ Proof (to be filled)
-> Not proved in lecture: a homework problem, due the following week.
+> [!proof]+ Proof
+> (HW7, Problem 1.) Throughout, $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$ is the scalar field, $[x] = x + Y$ denotes the class of $x \in X$, and
+>
+> $$
+> Y^\perp = \{ \ell \in X' : \ell(y) = 0 \text{ for all } y \in Y \},
+> $$
+>
+> with the norm of $X'$ (Definition [[§36 Duality in Normed Spaces#^def-36-1|§36.1]]). Since $Y$ is closed, $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]])
+>
+> $$
+> \|[x]\| = \inf_{y \in Y} \|x + y\| ,
+> $$
+>
+> so its dual $(X/Y)'$ is defined, with $\|\lambda\| = \sup_{[x] \neq [0]} |\lambda([x])| / \|[x]\|$. Let $\pi : X \to X/Y$, $\pi(x) = [x]$, be the quotient map. It is linear, and taking $y = 0$ in the infimum gives
+>
+> $$
+> \|\pi(x)\| = \|[x]\| \le \|x\| \qquad \text{for all } x \in X. \tag{1}
+> $$
+>
+> **Step 1: the map $T$.** For $\lambda \in (X/Y)'$ define $T\lambda = \lambda \circ \pi$, i.e.
+>
+> $$
+> (T\lambda)(x) = \lambda([x]), \qquad x \in X .
+> $$
+>
+> $T\lambda$ is linear as a composition of linear maps, and by (1),
+>
+> $$
+> |(T\lambda)(x)| = |\lambda([x])| \le \|\lambda\|\, \|[x]\| \le \|\lambda\|\, \|x\| ,
+> $$
+>
+> so $T\lambda \in X'$ with $\|T\lambda\| \le \|\lambda\|$. For $y \in Y$, $[y] = [0]$, so $(T\lambda)(y) = \lambda([0]) = 0$. Hence $T\lambda \in Y^\perp$, and $T : (X/Y)' \to Y^\perp$. $T$ is linear: for $\lambda_1, \lambda_2 \in (X/Y)'$, $c_1, c_2 \in \mathbb{F}$ and $x \in X$,
+>
+> $$
+> T(c_1 \lambda_1 + c_2 \lambda_2)(x) = c_1 \lambda_1([x]) + c_2 \lambda_2([x]) = \bigl( c_1 T\lambda_1 + c_2 T\lambda_2 \bigr)(x) .
+> $$
+>
+> **Step 2: $T$ is an isometry.** Step 1 gives $\|T\lambda\| \le \|\lambda\|$. For the reverse inequality, let $x \in X$ and $\varepsilon > 0$. By definition of the infimum there is $y \in Y$ with $\|x + y\| \le \|[x]\| + \varepsilon$. Since $[x + y] = [x]$,
+>
+> $$
+> |\lambda([x])| = |\lambda([x + y])| = |(T\lambda)(x + y)| \le \|T\lambda\|\, \|x + y\| \le \|T\lambda\| \bigl( \|[x]\| + \varepsilon \bigr) .
+> $$
+>
+> Letting $\varepsilon \to 0$, $|\lambda([x])| \le \|T\lambda\|\, \|[x]\|$ for every $[x] \in X/Y$, so $\|\lambda\| \le \|T\lambda\|$. Hence
+>
+> $$
+> \|T\lambda\| = \|\lambda\| \qquad \text{for all } \lambda \in (X/Y)' .
+> $$
+>
+> In particular $T$ is one-to-one: if $T\lambda_1 = T\lambda_2$, then $\|\lambda_1 - \lambda_2\| = \|T(\lambda_1 - \lambda_2)\| = 0$.
+>
+> **Step 3: $T$ is onto.** Let $\ell \in Y^\perp$. Define $\lambda : X/Y \to \mathbb{F}$ by
+>
+> $$
+> \lambda([x]) = \ell(x) .
+> $$
+>
+> This is well defined: if $[x] = [x']$, then $x - x' \in Y$, so $\ell(x) - \ell(x') = \ell(x - x') = 0$. It is linear: $\lambda(c_1 [x_1] + c_2 [x_2]) = \lambda([c_1 x_1 + c_2 x_2]) = \ell(c_1 x_1 + c_2 x_2) = c_1 \lambda([x_1]) + c_2 \lambda([x_2])$. It is bounded: for every $y \in Y$, $\ell(y) = 0$, so
+>
+> $$
+> |\lambda([x])| = |\ell(x)| = |\ell(x + y)| \le \|\ell\|\, \|x + y\| ,
+> $$
+>
+> and taking the infimum over $y \in Y$ gives $|\lambda([x])| \le \|\ell\|\, \|[x]\|$. Hence $\lambda \in (X/Y)'$, and $(T\lambda)(x) = \lambda([x]) = \ell(x)$ for all $x$, i.e. $T\lambda = \ell$.
+>
+> **Conclusion.** $T : (X/Y)' \to Y^\perp$ is linear (Step 1), norm-preserving and one-to-one (Step 2), and onto (Step 3). So $T$ is an isometric isomorphism of $(X/Y)'$ onto $Y^\perp$.
 
 ^pf-36-8
+
+*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]
+
+> [!remark] Remark: No Hahn–Banach Needed Here
+> *(Not from lecture.)* Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (the remark after Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-9|§37.9]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, $Y^\perp = (\overline{Y})^\perp$ (a bounded functional vanishing on $Y$ vanishes on its closure), and the theorem applies to $\overline{Y}$.
+
+^rem-36-8
 
 Wu's motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]); so $X/Y$ and $Y^\perp$ look like each other's dual. A student asked what “isometrically” means: both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it. Wu: although today's material looks simple, it will be on the midterm.

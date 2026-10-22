@@ -5111,7 +5111,7 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 \chapter{Bounded Linear Maps}\label{ch:maps}
 
-Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the Lax--Milgram theorem, the Sobolev spaces it is applied to, and two applications of the representation theorems: weak solutions of the Dirichlet problem and the Radon--Nikodym theorem. It ends by returning to duality (Lax, Chapter 8): Hahn--Banach for normed spaces, norms and distances computed from the dual, the dual of $\ell^p$, and annihilators.
+Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the Lax--Milgram theorem, the Sobolev spaces it is applied to, and two applications of the representation theorems: weak solutions of the Dirichlet problem and the Radon--Nikodym theorem. It ends by returning to duality (Lax, Chapter 8): Hahn--Banach for normed spaces, norms and distances computed from the dual, the dual of $\ell^p$, annihilators, the spanning criterion, separability of duals, and reflexive spaces.
 
 % Lecture 9 (2026-09-29), last part
 
@@ -6586,7 +6586,7 @@ a sum of non-negative terms; hence $|a_n| = 1$ for every $n$, contradicting $a_n
   \draw[->, gray] (0,0) -- (9.2,0) node[right] {$N$};
   \draw[->, gray] (0,0) -- (0,1.3);
   \foreach \y in {0.5,1} \draw[gray] (-0.08,\y) -- (0.08,\y) node[left=4pt, black, font=\footnotesize] {$\y$};
-  \draw[dashed, red!75!black] (0,1) -- (9,1) node[above left=1pt and 0pt, font=\footnotesize, fill=white, inner sep=1pt] {$\|\ell\| = 1$, never reached};
+  \draw[dashed, red!75!black] (0,1) -- (9,1) node[above left=1pt, font=\footnotesize, fill=white, inner sep=1pt] {$\|\ell\| = 1$, never reached};
   \draw[blue!70!black, thick] (1,0) -- (1,0.5); \fill[blue!70!black] (1,0.5) circle (1.6pt);
   \draw[blue!70!black, thick] (2,0) -- (2,0.75); \fill[blue!70!black] (2,0.75) circle (1.6pt);
   \draw[blue!70!black, thick] (3,0) -- (3,0.875); \fill[blue!70!black] (3,0.875) circle (1.6pt);
@@ -6927,11 +6927,492 @@ so $\ell(y) = 0$, and $\ell \in Y^\perp$.
 Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem~\ref{thm:quotient-norm}). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$.
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled)]
-Not proved in lecture: a homework problem, due the following week.
+\begin{proof}
+(HW7, Problem 1.) Throughout, $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$ is the scalar field, $[x] = x + Y$ denotes the class of $x \in X$, and
+\[
+Y^\perp = \{ \ell \in X' : \ell(y) = 0 \text{ for all } y \in Y \},
+\]
+with the norm of $X'$ (Definition~\ref{def:annihilator}). Since $Y$ is closed, $X/Y$ is a normed linear space with the quotient norm (Theorem~\ref{thm:quotient-norm})
+\[
+\|[x]\| = \inf_{y \in Y} \|x + y\| ,
+\]
+so its dual $(X/Y)'$ is defined, with $\|\lambda\| = \sup_{[x] \neq [0]} |\lambda([x])| / \|[x]\|$. Let $\pi : X \to X/Y$, $\pi(x) = [x]$, be the quotient map. It is linear, and taking $y = 0$ in the infimum gives
+\[
+\|\pi(x)\| = \|[x]\| \le \|x\| \qquad \text{for all } x \in X. \tag{1}
+\]
+
+\textbf{Step 1: the map $T$.} For $\lambda \in (X/Y)'$ define $T\lambda = \lambda \circ \pi$, i.e.
+\[
+(T\lambda)(x) = \lambda([x]), \qquad x \in X .
+\]
+$T\lambda$ is linear as a composition of linear maps, and by (1),
+\[
+|(T\lambda)(x)| = |\lambda([x])| \le \|\lambda\|\, \|[x]\| \le \|\lambda\|\, \|x\| ,
+\]
+so $T\lambda \in X'$ with $\|T\lambda\| \le \|\lambda\|$. For $y \in Y$, $[y] = [0]$, so $(T\lambda)(y) = \lambda([0]) = 0$. Hence $T\lambda \in Y^\perp$, and $T : (X/Y)' \to Y^\perp$. $T$ is linear: for $\lambda_1, \lambda_2 \in (X/Y)'$, $c_1, c_2 \in \mathbb{F}$ and $x \in X$,
+\[
+T(c_1 \lambda_1 + c_2 \lambda_2)(x) = c_1 \lambda_1([x]) + c_2 \lambda_2([x]) = \bigl( c_1 T\lambda_1 + c_2 T\lambda_2 \bigr)(x) .
+\]
+
+\textbf{Step 2: $T$ is an isometry.} Step 1 gives $\|T\lambda\| \le \|\lambda\|$. For the reverse inequality, let $x \in X$ and $\varepsilon > 0$. By definition of the infimum there is $y \in Y$ with $\|x + y\| \le \|[x]\| + \varepsilon$. Since $[x + y] = [x]$,
+\[
+|\lambda([x])| = |\lambda([x + y])| = |(T\lambda)(x + y)| \le \|T\lambda\|\, \|x + y\| \le \|T\lambda\| \bigl( \|[x]\| + \varepsilon \bigr) .
+\]
+Letting $\varepsilon \to 0$, $|\lambda([x])| \le \|T\lambda\|\, \|[x]\|$ for every $[x] \in X/Y$, so $\|\lambda\| \le \|T\lambda\|$. Hence
+\[
+\|T\lambda\| = \|\lambda\| \qquad \text{for all } \lambda \in (X/Y)' .
+\]
+In particular $T$ is one-to-one: if $T\lambda_1 = T\lambda_2$, then $\|\lambda_1 - \lambda_2\| = \|T(\lambda_1 - \lambda_2)\| = 0$.
+
+\textbf{Step 3: $T$ is onto.} Let $\ell \in Y^\perp$. Define $\lambda : X/Y \to \mathbb{F}$ by
+\[
+\lambda([x]) = \ell(x) .
+\]
+This is well defined: if $[x] = [x']$, then $x - x' \in Y$, so $\ell(x) - \ell(x') = \ell(x - x') = 0$. It is linear: $\lambda(c_1 [x_1] + c_2 [x_2]) = \lambda([c_1 x_1 + c_2 x_2]) = \ell(c_1 x_1 + c_2 x_2) = c_1 \lambda([x_1]) + c_2 \lambda([x_2])$. It is bounded: for every $y \in Y$, $\ell(y) = 0$, so
+\[
+|\lambda([x])| = |\ell(x)| = |\ell(x + y)| \le \|\ell\|\, \|x + y\| ,
+\]
+and taking the infimum over $y \in Y$ gives $|\lambda([x])| \le \|\ell\|\, \|[x]\|$. Hence $\lambda \in (X/Y)'$, and $(T\lambda)(x) = \lambda([x]) = \ell(x)$ for all $x$, i.e.\ $T\lambda = \ell$.
+
+\textbf{Conclusion.} $T : (X/Y)' \to Y^\perp$ is linear (Step 1), norm-preserving and one-to-one (Step 2), and onto (Step 3). So $T$ is an isometric isomorphism of $(X/Y)'$ onto $Y^\perp$.
 \end{proof}
 
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[No Hahn--Banach Needed Here]\label{rem:quotient-dual-no-hb}
+\textit{(Not from lecture.)} Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (the remark after Proposition~\ref{prop:dual-distance}), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn--Banach (Theorem~\ref{thm:hb-normed}). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, $Y^\perp = (\overline{Y})^\perp$ (a bounded functional vanishing on $Y$ vanishes on its closure), and the theorem applies to $\overline{Y}$.
+\end{rembox}
+%% <<< END ADDED
+
 Wu's motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem~\ref{thm:orth-decomp}), and in any linear space $X \cong X/Y \oplus Y$ (Theorem~\ref{thm:quotient-iso}); so $X/Y$ and $Y^\perp$ look like each other's dual. A student asked what ``isometrically'' means: both sides carry a norm --- $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ --- and the isomorphism preserves it. Wu: although today's material looks simple, it will be on the midterm.
+
+% ============================================================================
+% SECTION: SEPARABLE DUALS AND REFLEXIVE SPACES (Lecture 14)
+% ============================================================================
+% Lecture 14 (2026-10-22). Source: Tianshuo's handwritten notes of the lecture (no transcript).
+
+\section{Separable Duals and Reflexive Spaces}\label{sec:reflexive}
+
+\roadmark{Stage: maps}{Thread: functionals. The spanning criterion turns density into a statement about functionals; with it, separability passes from $X'$ to $X$, and the second dual $X''$ contains $X$.}
+
+\subsection{The Spanning Criterion}
+
+\begin{thmbox}[Spanning Criterion]\boxlabel{thm:spanning}
+Let $X$ be a normed linear space over $\mathbb{F}$ ($= \mathbb{R}$ or $\mathbb{C}$) and $\{y_i\}_{i \in \Lambda} \subset X$, with $\Lambda$ any index set. Then for every $z \in X$:
+\[
+z \in \overline{\operatorname{span}\{y_i\}_{i \in \Lambda}} \iff \bigl( \text{for all } \ell \in X' : \ \ell(y_i) = 0 \text{ for all } i \in \Lambda \implies \ell(z) = 0 \bigr) .
+\]
+\end{thmbox}
+
+\begin{proof}
+\textbf{($\Rightarrow$)} Assume $z \in \overline{\operatorname{span}\{y_i\}}$. Let $\ell \in X'$ with $\ell(y_i) = 0$ for all $i \in \Lambda$; we want $\ell(z) = 0$. By linearity,
+\[
+\ell\Bigl( \sum_{j=1}^n a_j\, y_{i_j} \Bigr) = \sum_{j=1}^n a_j\, \ell(y_{i_j}) = 0
+\]
+for every finite linear combination $\sum_j a_j y_{i_j}$, and these make up $\operatorname{span}\{y_i\}$ (Proposition~\ref{prop:span-as-finite-linear}). So $\ell(y) = 0$ for every $y \in \operatorname{span}\{y_i\}$. Now $z$ is in the closure, so there is a sequence $z_k \in \operatorname{span}\{y_i\}$ with $z_k \to z$ (Definition~\ref{def:closure}). Since $\ell$ is bounded, hence continuous (Proposition~\ref{prop:bounded-continuous}), $\ell(z_k) \to \ell(z)$; and $\ell(z_k) = 0$ for every $k$. Hence $\ell(z) = 0$.
+
+\textbf{($\Leftarrow$)} Assume that every $\ell \in X'$ with $\ell(y_i) = 0$ for all $i$ has $\ell(z) = 0$. Let $Y = \operatorname{span}\{y_i\}_{i \in \Lambda}$. A functional vanishes on all of $Y$ exactly when it vanishes on every $y_i$: one direction is the computation above, the other holds because each $y_i \in Y$. So the assumption says $\ell(z) = 0$ for every $\ell \in Y^\perp$, and by the distance formula (Theorem~\ref{thm:distance})
+\[
+\inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in X',\ \|\ell\| \le 1 \\ \ell(y) = 0\ \forall y \in Y}} |\ell(z)| = 0 .
+\]
+%% FILL-IN: from inf = 0 to membership in the closure.
+Since the infimum is $0$, for each $k$ there is $y_k \in Y$ with $\|z - y_k\| < 1/k$; so $y_k \to z$ and $z \in \overline{Y} = \overline{\operatorname{span}\{y_i\}}$.
+\end{proof}
+
+%% >>> ADDED: corollary (the two forms in which the criterion is used below)
+\begin{corbox}[Two Forms of the Spanning Criterion]\boxlabel{cor:spanning}
+Let $X$ be a normed linear space.
+\begin{enumerate}[label=(\arabic*)]
+    \item $\overline{\operatorname{span}\{y_i\}_{i \in \Lambda}} = X$ if and only if the only $\ell \in X'$ with $\ell(y_i) = 0$ for all $i$ is $\ell = 0$.
+    \item If $Y$ is a closed linear subspace of $X$, then $Y = \{ z \in X : \ell(z) = 0 \text{ for all } \ell \in Y^\perp \}$.
+\end{enumerate}
+\end{corbox}
+
+\begin{proof}
+(1) If only $\ell = 0$ vanishes on every $y_i$, then the condition of Theorem~\ref{thm:spanning} holds for every $z \in X$, so every $z$ lies in the closed span. Conversely, if the closed span is $X$ and $\ell$ vanishes on every $y_i$, then $\ell(z) = 0$ for every $z \in X$ by Theorem~\ref{thm:spanning}, i.e.\ $\ell = 0$.
+
+(2) Apply Theorem~\ref{thm:spanning} with the family $\{y\}_{y \in Y}$: its span is $Y$, whose closure is $Y$, and the functionals vanishing on all of it form $Y^\perp$.
+\end{proof}
+
+\begin{rembox}[Hilbert-Space Form]\label{rem:spanning-hilbert}
+In a Hilbert space, with $Y^\perp$ the orthogonal complement, (1) reads: a set has dense span if and only if only $0$ is orthogonal to it; and (2) is $(Y^\perp)^\perp = Y$ for closed $Y$ (Theorem~\ref{thm:double-perp}, Lemma~\ref{lem:perp-span}). The spanning criterion is the normed-space version, with functionals in place of vectors.
+\end{rembox}
+%% <<< END ADDED
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=1.2, >=stealth]
+    \draw[dashed, red!75!black] (-2.4,0.4) -- (2.4,2.0) node[right, font=\footnotesize] {$\ell = \ell(z) \neq 0$};
+    \draw[dashed, red!40] (-2.4,-2.0) -- (2.4,-0.4) node[right, font=\footnotesize] {$\ell = -\ell(z)$};
+    \draw[very thick, blue!70!black] (-2.4,-0.8) -- (2.4,0.8) node[right, align=left, font=\footnotesize] {$Y = \overline{\operatorname{span}\{y_i\}}$\\ $\subset \{\ell = 0\}$};
+    \fill (0,0) circle (1.2pt) node[below right] {$0$};
+    \fill[blue!70!black] (0.9,0.3) circle (1.5pt) node[below right] {$y_1$};
+    \fill[blue!70!black] (-1.5,-0.5) circle (1.5pt) node[below right] {$y_2$};
+    \fill[red!75!black] (0.3,1.3) circle (1.6pt) node[above left] {$z$};
+    \draw[->, thick, red!75!black] (-1.9,-0.633) -- (-1.68,0.027) node[left, font=\footnotesize] {$\ell$ grows};
+\end{tikzpicture}
+\end{center}
+The spanning criterion in a picture: a point $z$ outside the closed subspace $Y = \overline{\operatorname{span}\{y_i\}}$ (blue) is detected by a bounded functional $\ell$ that vanishes on $Y$ but not at $z$ (red level lines, parallel to $Y$). The criterion says this is the only way to be outside: if every $\ell$ that vanishes on all $y_i$ also vanishes at $z$, then $z \in Y$.
+%% <<< END ADDED
+
+\subsection{Separability of the Dual}
+
+\begin{rembox}[Duals of the Sequence Spaces]\label{rem:seq-duals}
+Recall $(\ell^p)' = \ell^{p'}$ for $1 \le p < \infty$, $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$ (Theorem~\ref{thm:lp-seq-dual}). In particular:
+\begin{itemize}
+    \item $(\ell^\infty)' \neq \ell^1$ (Example~\ref{ex:linfty-dual});
+    \item $(c_0)' = \ell^1$, where $c_0 = \ell^\infty_0 = \{ (a_1, a_2, \ldots) : \lim_{n \to \infty} a_n = 0 \}$ with $\|a\| = \max_i |a_i| < \infty$ (homework; $c_0$ is the Banach space of Proposition~\ref{prop:c0});
+    \item $(\ell^1)' = \ell^\infty$ (the case $p = 1$).
+\end{itemize}
+The last example shows that a separable space can have a non-separable dual: $\ell^1$ is separable (Proposition~\ref{prop:lp-separable}), but $\ell^\infty$ is not (Proposition~\ref{prop:linfty-nonsep}). The other direction holds.
+\end{rembox}
+
+\begin{thmbox}[{{A Separable Dual Forces a Separable Space}}]\boxlabel{thm:dual-sep}
+Let $X$ be a normed linear space. If $X'$ is separable, then $X$ is separable.
+\end{thmbox}
+
+\begin{proof}
+%% FILL-IN: the trivial case X = {0} (no unit vectors exist).
+If $X = \{0\}$ there is nothing to prove, so assume $X \neq \{0\}$. Since $X'$ is separable, there is a countable set $D = \{\ell_j\}_{j=1}^\infty \subset X'$ that is dense in $X'$. For each $j$ take $z_j \in X$ with
+\[
+\|z_j\| = 1 \qquad \text{and} \qquad |\ell_j(z_j)| \ge \tfrac12 \|\ell_j\| .
+\]
+%% FILL-IN: why such z_j exists.
+(This is possible because $\|\ell_j\| = \sup_{\|z\| = 1} |\ell_j(z)|$: if $\ell_j = 0$ any unit vector will do; if $\ell_j \neq 0$, then $\frac12 \|\ell_j\| < \|\ell_j\|$ is not an upper bound of $\{|\ell_j(z)| : \|z\| = 1\}$.) The set $\{z_j\}$ is countable.
+
+\textbf{Step 1: $\overline{\operatorname{span}\{z_j\}_{j=1}^\infty} = X$.} By Corollary~\ref{cor:spanning}(1) it suffices to show: if $\ell \in X'$ and $\ell(z_j) = 0$ for all $j = 1, 2, \ldots$, then $\ell = 0$ in $X'$. Let $\ell$ be such a functional. Since $D$ is dense in $X'$, there is a sequence $\{\ell_{j_k}\}_{k=1}^\infty \subset D$ with $\|\ell_{j_k} - \ell\| \to 0$ as $k \to \infty$. Using $\ell(z_{j_k}) = 0$ and $\|z_{j_k}\| = 1$,
+\[
+\tfrac12 \|\ell_{j_k}\| \le |\ell_{j_k}(z_{j_k})| = |(\ell_{j_k} - \ell)(z_{j_k})| \le \|\ell_{j_k} - \ell\|\, \|z_{j_k}\| = \|\ell_{j_k} - \ell\| \xrightarrow[k \to \infty]{} 0 .
+\]
+So $\|\ell_{j_k}\| \to 0$, i.e.\ $\ell_{j_k} \to 0$ in $X'$. %% FILL-IN: why this forces l = 0.
+Since also $\ell_{j_k} \to \ell$ and limits are unique ($\|\ell\| \le \|\ell - \ell_{j_k}\| + \|\ell_{j_k}\| \to 0$), $\ell = 0$.
+
+\textbf{Step 2: a countable dense set.} Let $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q}$ if $\mathbb{F} = \mathbb{R}$ and $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q} + i\mathbb{Q}$ if $\mathbb{F} = \mathbb{C}$, and
+\[
+D_1 = \Bigl\{ \sum_{j=1}^n a_j z_j : a_j \in \mathbb{Q}_{\mathbb{F}},\ n \in \mathbb{N} \Bigr\} .
+\]
+$D_1$ is countable and $\overline{D_1} = \overline{\operatorname{span}\{z_j\}} = X$.
+%% FILL-IN: countability and density of D_1.
+\emph{Countable:} for fixed $n$, $D_1$'s elements with $n$ terms are the image of $\mathbb{Q}_{\mathbb{F}}^n$, a countable set, and a countable union of countable sets is countable. \emph{Dense:} let $x \in X$ and $\varepsilon > 0$. By Step 1 there is $y = \sum_{j=1}^n c_j z_j$ in the span with $\|x - y\| < \varepsilon$. Choose $a_j \in \mathbb{Q}_{\mathbb{F}}$ with $|c_j - a_j| < \varepsilon/n$ ($\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$). Then $d = \sum_{j=1}^n a_j z_j \in D_1$ and, since $\|z_j\| = 1$,
+\[
+\|x - d\| \le \|x - y\| + \sum_{j=1}^n |c_j - a_j|\, \|z_j\| < 2\varepsilon .
+\]
+So $D_1$ is a countable dense subset of $X$, and $X$ is separable.
+\end{proof}
+
+\begin{rembox}[The Converse Fails]\label{rem:dual-sep-converse}
+The converse is false: $\ell^1$ is separable, while $(\ell^1)' = \ell^\infty$ is not. ``Dual separable $\Rightarrow$ separable'', not conversely.
+\end{rembox}
+
+\begin{corbox}[{{The Duals of $\ell^\infty$ and $L^\infty$}}]\boxlabel{cor:linfty-dual-nonsep}
+$(\ell^\infty)'$ is not separable, and neither is $(L^\infty(E))'$ for $E \subset \mathbb{R}^n$ measurable with $m(E) > 0$. In particular $(\ell^\infty)' \neq \ell^1$ and $(L^\infty)' \neq L^1$.
+\end{corbox}
+
+\begin{proof}
+If $(\ell^\infty)'$ were separable, Theorem~\ref{thm:dual-sep} would make $\ell^\infty$ separable, contradicting Proposition~\ref{prop:linfty-nonsep}. Likewise for $L^\infty(E)$, by Proposition~\ref{prop:Linfty-nonsep}.
+%% FILL-IN: why non-separability rules out an identification with l^1, L^1.
+Now $\ell^1$ and $L^1(E)$ are separable (Propositions~\ref{prop:lp-separable} and~\ref{prop:Lp-separable}), and separability is preserved by an isometric isomorphism $T$ (indeed by any linear bijection with $T$ and $T^{-1}$ bounded): if $D$ is countable and dense in $\ell^1$ and $\|x - d_n\| \to 0$ with $d_n \in D$, then $\|Tx - Td_n\| \le \|T\|\,\|x - d_n\| \to 0$, so $T(D)$ is countable and dense. Hence $(\ell^\infty)'$ is not isometrically isomorphic to $\ell^1$, nor $(L^\infty)'$ to $L^1$.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[Every Identification is Ruled Out]\label{rem:linfty-dual-every}
+This is stronger than Example~\ref{ex:linfty-dual}, which only showed that the particular map $a \mapsto \ell_a$, $\ell^1 \to (\ell^\infty)'$, is not onto. The corollary rules out \emph{every} identification of $(\ell^\infty)'$ with $\ell^1$ as normed spaces, by a property (separability) that any such identification would preserve.
+\end{rembox}
+%% <<< END ADDED
+
+\subsection{The Second Dual and Reflexive Spaces}
+
+Let $X$ be a normed linear space. Then $X'$ is a Banach space (Corollary~\ref{cor:dual-banach}), and applying the same fact to $X'$, so is its dual
+\[
+X'' = (X')' ,
+\]
+the \textbf{second dual} of $X$. Every $x_0 \in X$ gives an element of $X''$ by evaluation.
+
+\begin{propbox}[{{The Canonical Embedding $X \to X''$}}]\boxlabel{prop:canonical-embedding}
+Let $X$ be a normed linear space and $x_0 \in X$. Then
+\[
+\eta(\ell) = \ell(x_0), \qquad \ell \in X',
+\]
+defines $\eta \in X''$ with $\|\eta\| = \|x_0\|$. The map $i : X \to X''$, $i(x_0) = \eta$, that is,
+\[
+i(x_0)(\ell) = \ell(x_0) \qquad \text{for all } \ell \in X',
+\]
+is linear and an isometry, $\|i(x_0)\| = \|x_0\|$: $i$ is an \textbf{isometric embedding} of $X$ into $X''$.
+\end{propbox}
+
+\begin{proof}
+$\eta$ is linear in $\ell$: $\eta(c_1 \ell_1 + c_2 \ell_2) = (c_1 \ell_1 + c_2 \ell_2)(x_0) = c_1 \ell_1(x_0) + c_2 \ell_2(x_0) = c_1 \eta(\ell_1) + c_2 \eta(\ell_2)$. It is bounded, since $|\eta(\ell)| = |\ell(x_0)| \le \|\ell\|\, \|x_0\|$. Hence $\eta \in (X')' = X''$, and by Theorem~\ref{thm:norm-max}
+\[
+\|\eta\| = \sup_{\ell \in X',\ \|\ell\| = 1} |\ell(x_0)| = \|x_0\| .
+\]
+%% FILL-IN: X = {0}, linearity of i, and injectivity.
+(If $X = \{0\}$ then $X' = \{0\}$ and both sides are $0$.) $i$ is linear: for every $\ell \in X'$, $i(ax + by)(\ell) = \ell(ax + by) = a\,\ell(x) + b\,\ell(y) = \bigl( a\, i(x) + b\, i(y) \bigr)(\ell)$. Being linear and norm-preserving, $i$ preserves distances, $\|i(x) - i(y)\| = \|i(x - y)\| = \|x - y\|$, and in particular is one-to-one; so $i$ identifies $X$ with the subspace $i(X)$ of $X''$, norms included.
+\end{proof}
+
+\begin{exbox}[{{Hilbert Space: $\langle x, \ell \rangle$ from Both Sides}}]\boxlabel{ex:pairing-both-sides}
+Let $X = H$ be a Hilbert space. Each $\ell \in H'$ is $\ell(x) = (x, a) = \langle x, \ell \rangle$ for some $a \in H$, with $\|\ell\| = \|a\|$ (Theorem~\ref{thm:riesz-norm}). For $x_0 \in H$, $i(x_0)$ is the functional $\ell \mapsto \ell(x_0) = \langle x_0, \ell \rangle$ on $H'$: in the pairing $\langle x, \ell \rangle$, fixing $\ell$ gives an element of $X'$, and fixing $x$ gives an element of $X''$.
+\end{exbox}
+
+\begin{defbox}[Reflexive Space]\boxlabel{def:reflexive}
+Let $X$ be a normed linear space and $i : X \to X''$ the map with $i(x_0)(\ell) = \ell(x_0)$ for all $\ell \in X'$. If $i$ is onto, $X$ is called \textbf{reflexive} (a \textbf{reflexive Banach space}); one writes $X = X''$.
+\end{defbox}
+
+\begin{propbox}[A Reflexive Space is a Banach Space]\boxlabel{prop:reflexive-banach}
+If $X$ is reflexive, then $X$ is complete.
+\end{propbox}
+
+\begin{proof}
+%% FILL-IN: stated on the board ("reflexive => Banach") without proof.
+\textit{(Stated in lecture without proof; filled in.)} Let $\{x_n\}$ be Cauchy in $X$. Since $i$ is an isometry, $\|i(x_n) - i(x_m)\| = \|x_n - x_m\|$, so $\{i(x_n)\}$ is Cauchy in $X''$, which is a Banach space; let $\eta = \lim_n i(x_n)$. As $i$ is onto, $\eta = i(x)$ for some $x \in X$, and $\|x_n - x\| = \|i(x_n) - i(x)\| \to 0$.
+\end{proof}
+
+\begin{exbox}[Hilbert Spaces are Reflexive]\boxlabel{ex:hilbert-reflexive}
+Let $H$ be a Hilbert space. Then $H$ is reflexive: $H' = H$ and $(H')' = H$.
+\end{exbox}
+
+\begin{proof}
+%% FILL-IN: the board gives the identifications H' = H, (H')' = H; the check that they compose to the canonical map i is Claude's.
+The two identifications must be combined so that the result is the map $i$ of Definition~\ref{def:reflexive}. Let $\eta \in H''$. For $a \in H$ let $\ell_a = (\,\cdot\,, a) \in H'$ and put
+\[
+\varphi(a) = \overline{\eta(\ell_a)}, \qquad a \in H .
+\]
+Since $\ell_{a + b} = \ell_a + \ell_b$ and $\ell_{ca} = \bar c\, \ell_a$ (Corollary~\ref{cor:riesz-map}), $\varphi(a + b) = \varphi(a) + \varphi(b)$ and $\varphi(ca) = \overline{\bar c\, \eta(\ell_a)} = c\, \varphi(a)$: $\varphi$ is linear. It is bounded, $|\varphi(a)| \le \|\eta\|\, \|\ell_a\| = \|\eta\|\, \|a\|$. By the Riesz representation theorem there is $x \in H$ with $\varphi(a) = (a, x)$ for all $a$. Hence
+\[
+\eta(\ell_a) = \overline{(a, x)} = (x, a) = \ell_a(x) = i(x)(\ell_a) .
+\]
+Every $\ell \in H'$ is some $\ell_a$ (Theorem~\ref{thm:riesz-norm}), so $\eta = i(x)$, and $i$ is onto.
+\end{proof}
+
+\begin{exbox}[{{$\ell^p$ is Reflexive for $1 < p < \infty$}}]\boxlabel{ex:lp-reflexive}
+Let $1 < p < \infty$. Since $(\ell^p)' = \ell^{p'}$ with $1 < p' < \infty$ as well,
+\[
+(\ell^p)'' = (\ell^{p'})' = \ell^p ,
+\]
+so $\ell^p$ is reflexive for all $1 < p < \infty$. By contrast, $(\ell^1)' = \ell^\infty$ but $(\ell^\infty)' \neq \ell^1$.
+\end{exbox}
+
+\begin{proof}
+%% FILL-IN: as for Hilbert spaces, the composite identification is checked to be the canonical map i.
+Let $\eta \in (\ell^p)''$. By Theorem~\ref{thm:lp-seq-dual}, every element of $(\ell^p)'$ is $\ell_b(x) = \sum_j x_j \overline{b_j}$ for a unique $b \in \ell^{p'}$, with $\ell_{b + b'} = \ell_b + \ell_{b'}$, $\ell_{cb} = \bar c\, \ell_b$ and $\|\ell_b\| = \|b\|_{p'}$. Put $\varphi(b) = \overline{\eta(\ell_b)}$ for $b \in \ell^{p'}$. As in Example~\ref{ex:hilbert-reflexive}, $\varphi$ is linear and $|\varphi(b)| \le \|\eta\|\, \|b\|_{p'}$, so $\varphi \in (\ell^{p'})'$. Since $1 < p' < \infty$ and the conjugate exponent of $p'$ is $p$, Theorem~\ref{thm:lp-seq-dual} applied to $\ell^{p'}$ gives $x \in \ell^p$ with $\varphi(b) = \sum_j b_j \overline{x_j}$ for all $b$. Hence
+\[
+\eta(\ell_b) = \overline{\varphi(b)} = \sum_j x_j\, \overline{b_j} = \ell_b(x) = i(x)(\ell_b)
+\]
+for every $b$, i.e.\ $\eta = i(x)$.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[Why the Check is Needed]\label{rem:reflexive-check}
+Reflexivity asks that the \emph{specific} map $i$ be onto, not merely that $X''$ be isometrically isomorphic to $X$ in some way. The two differ: there are Banach spaces (James' space) isometrically isomorphic to their second dual that are not reflexive. That is why the two examples above compose the identifications explicitly and check that the result is $i$.
+\end{rembox}
+%% <<< END ADDED
+
+\begin{exbox}[{{$C[0,1]$ is Not Reflexive}}]\boxlabel{ex:C-nonreflexive}
+$(C[0,1], \|\cdot\|_\infty)$ is not reflexive.
+\end{exbox}
+
+\begin{proof}
+Suppose it is: $\bigl( (C[0,1])' \bigr)' = C[0,1]$. Now $C[0,1]$ is separable, because the polynomials with rational coefficients are dense.
+%% FILL-IN: density of rational polynomials, and why separability passes to the dual.
+(By the Weierstrass approximation theorem, for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 above.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary~\ref{cor:linfty-dual-nonsep}), and Theorem~\ref{thm:dual-sep}, applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
+
+This is not true. For $s \in [0,1]$ define $\ell_s(f) = f(s)$ for $f \in C[0,1]$. Then $\ell_s : C[0,1] \to \mathbb{R}$ is linear, and
+\[
+|\ell_s(f)| = |f(s)| \le \max_{x \in [0,1]} |f(x)| = \|f\|_\infty ,
+\]
+so $\|\ell_s\| \le 1$ and $\ell_s \in (C[0,1])'$. For $s, t \in [0,1]$, $(\ell_s - \ell_t)(f) = f(s) - f(t)$, and for $s \neq t$
+\[
+\|\ell_s - \ell_t\| = \sup_{\substack{f \in C[0,1] \\ \|f\|_\infty \le 1}} |(\ell_s - \ell_t)(f)| = \sup_{\substack{f \in C[0,1] \\ \|f\|_\infty \le 1}} |f(s) - f(t)| = 2 .
+\]
+%% FILL-IN: why the supremum is exactly 2.
+($\le 2$ because $|f(s) - f(t)| \le |f(s)| + |f(t)|$; and the continuous $f$ that is linear from $f(s) = 1$ to $f(t) = -1$ between $s$ and $t$ and constant outside has $\|f\|_\infty = 1$ and $f(s) - f(t) = 2$.) The family $\{\ell_s\}_{s \in [0,1]}$ is not countable, and its members are at mutual distance $2$, so $(C[0,1])'$ is not separable (as in Proposition~\ref{prop:linfty-nonsep}: balls of radius $1$ about the $\ell_s$ are disjoint, and a dense set would need a point in each). This contradiction shows that $C[0,1]$ is not reflexive.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[xscale=6, yscale=1.4, >=stealth]
+    \draw[->, gray] (0,0) -- (1.08,0) node[right] {$x$};
+    \draw[->, gray] (0,-1.3) -- (0,1.35);
+    \draw[dotted] (0,1) -- (1,1) (0,-1) -- (1,-1);
+    \draw[gray] (1,-0.04) -- (1,0.04);
+    \node[left, font=\footnotesize] at (0,1) {$1$};
+    \node[left, font=\footnotesize] at (0,-1) {$-1$};
+    \node[below, font=\footnotesize] at (1,0) {$1$};
+    \draw[very thick, blue!70!black] (0,1) -- (0.3,1) -- (0.65,-1) -- (1,-1);
+    \node[blue!70!black, font=\footnotesize] at (0.48,0.45) {$f$};
+    \draw[dashed] (0.3,0) -- (0.3,1) (0.65,0) -- (0.65,-1);
+    \node[below left, font=\footnotesize] at (0.3,0) {$s$};
+    \node[above right, font=\footnotesize] at (0.65,0) {$t$};
+    \fill[red!75!black] (0.3,1) circle (0.25pt and 1.07pt);
+    \fill[red!75!black] (0.65,-1) circle (0.25pt and 1.07pt);
+    \draw[<->, thick, red!75!black] (0.85,1) -- (0.85,-1);
+    \node[right, red!75!black, font=\footnotesize, align=left] at (1.02,0.35) {$f(s) - f(t) = 2$\\ $= \|\ell_s - \ell_t\|$};
+\end{tikzpicture}
+\end{center}
+Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, equals $1$ up to $s$ and $-1$ from $t$ on, so $(\ell_s - \ell_t)(f) = f(s) - f(t) = 2$ (red). However close $s$ and $t$ are, $f$ can drop from $1$ to $-1$ between them, so the uncountably many point evaluations stay at mutual distance $2$.
+%% <<< END ADDED
+
+%% >>> ADDED: corollary (the argument above, in general form)
+\begin{corbox}[{{Separability of $X$ and $X'$ for Reflexive $X$}}]\boxlabel{cor:reflexive-sep}
+Let $X$ be reflexive. Then $X$ is separable if and only if $X'$ is separable. In particular $\ell^1$ is not reflexive.
+\end{corbox}
+
+\begin{proof}
+If $X'$ is separable, so is $X$ (Theorem~\ref{thm:dual-sep}; reflexivity is not needed). If $X$ is separable, then $X'' = i(X)$ is separable, being isometrically isomorphic to $X$, and Theorem~\ref{thm:dual-sep} applied to the normed space $X'$ shows that $X'$ is separable. For $\ell^1$: it is separable, but its dual is isometrically isomorphic to $\ell^\infty$ (Theorem~\ref{thm:lp-seq-dual}, with the bar-free pairing of the remark after it), which is not separable; so $\ell^1$ is not reflexive. The proof of Example~\ref{ex:C-nonreflexive} is this argument for $X = C[0,1]$. A variant shows that $c_0$ is not reflexive: if it were, $c_0'' = i(c_0)$ would be separable like $c_0$ (Proposition~\ref{prop:c0}), while $c_0'' \cong (\ell^1)' \cong \ell^\infty$ is not (Proposition~\ref{prop:linfty-nonsep}). Here the corollary itself gives nothing, since $c_0$ and $c_0' \cong \ell^1$ are both separable.
+\end{proof}
+%% <<< END ADDED
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small,
+    sep/.style={draw=green!50!black, fill=green!8, rounded corners=2pt, minimum width=2.3cm, minimum height=0.62cm},
+    non/.style={draw=red!75!black, fill=red!8, rounded corners=2pt, minimum width=2.3cm, minimum height=0.62cm}]
+    \node[font=\footnotesize\bfseries] at (0,0.75) {$X$};
+    \node[font=\footnotesize\bfseries] at (3.2,0.75) {$X'$};
+    \node[font=\footnotesize\bfseries] at (6.4,0.75) {$X''$};
+    \node[font=\footnotesize\bfseries] at (9.3,0.75) {reflexive?};
+    \node[sep] (a1) at (0,0) {$\ell^p$, $1<p<\infty$};
+    \node[sep] (a2) at (3.2,0) {$\ell^{p'}$};
+    \node[sep] (a3) at (6.4,0) {$\ell^p = i(\ell^p)$};
+    \node at (9.3,0) {yes};
+    \node[sep] (b1) at (0,-1) {$c_0$};
+    \node[sep] (b2) at (3.2,-1) {$\ell^1$};
+    \node[non] (b3) at (6.4,-1) {$\ell^\infty$};
+    \node at (9.3,-1) {no};
+    \node[sep] (c1) at (0,-2) {$\ell^1$};
+    \node[non] (c2) at (3.2,-2) {$\ell^\infty$};
+    \node[non] (c3) at (6.4,-2) {$(\ell^\infty)'$};
+    \node at (9.3,-2) {no};
+    \foreach \r in {a,b,c} {
+        \draw[->] (\r1) -- node[above, font=\scriptsize] {dual} (\r2);
+        \draw[->] (\r2) -- node[above, font=\scriptsize] {dual} (\r3);
+    }
+    \node[sep, minimum width=1.2cm] at (1.0,-2.9) {};
+    \node[right, font=\footnotesize] at (1.7,-2.9) {separable};
+    \node[non, minimum width=1.2cm] at (4.3,-2.9) {};
+    \node[right, font=\footnotesize] at (5.0,-2.9) {not separable};
+\end{tikzpicture}
+\end{center}
+Separability along the chain $X \to X' \to X''$ (green: separable; red: not). By Theorem~\ref{thm:dual-sep} a green box can only have green boxes to its left, so once red appears it stays red. A reflexive space has $X'' = i(X)$, so its first and last boxes have the same colour; the rows for $c_0$ and $\ell^1$ end in red after starting in green, so neither is reflexive. ($c_0' = \ell^1$ is the homework statement of the remark \emph{Duals of the Sequence Spaces}.)
+%% <<< END ADDED
+
+\subsection{Closed Subspaces of Reflexive Spaces}
+
+\begin{thmbox}[{{Closed Subspaces of Reflexive Spaces are Reflexive}}]\boxlabel{thm:reflexive-subspace}
+Let $X$ be a reflexive Banach space and $Y$ a closed linear subspace of $X$. Then $Y$ is reflexive.
+\end{thmbox}
+
+\begin{proof}
+Assume $X = X''$; we want $Y = Y''$. That is, we want: for every $\eta_0 \in (Y')'$ there is $y_0 \in Y$ with
+\[
+\eta_0(\ell_0) = \ell_0(y_0) \qquad \text{for all } \ell_0 \in Y' ,
+\]
+in the pairing notation $\langle \ell_0, \eta_0 \rangle = \langle y_0, \ell_0 \rangle$.
+
+\textbf{Restriction.} For every $\ell \in X'$ define $R(\ell)$ by
+\[
+R(\ell)(y) = \ell(y) \qquad \text{for all } y \in Y ,
+\]
+the restriction of $\ell$ to $Y$. Then $|R(\ell)(y)| \le \|\ell\|\, \|y\|$, so $R(\ell) \in Y'$ with $\|R(\ell)\| \le \|\ell\|$, and $R : X' \to Y'$. %% FILL-IN: linearity of R.
+$R$ is linear, since $(c_1 \ell_1 + c_2 \ell_2)|_Y = c_1\, \ell_1|_Y + c_2\, \ell_2|_Y$. (Here $R$ is the restriction map, not the Riesz map of Corollary~\ref{cor:riesz-map}.)
+
+Let $\eta_0 : Y' \to \mathbb{F}$ be a bounded linear functional. Then $\eta_0 \circ R : X' \to \mathbb{F}$ is linear, and for $\ell \in X'$
+\[
+|\eta_0 \circ R(\ell)| = |\eta_0(R(\ell))| \le \|\eta_0\|\, \|R(\ell)\| \le \|\eta_0\|\, \|\ell\| ,
+\]
+so $\eta_0 \circ R \in X''$. Since $X'' = X$, there is $x_0 \in X$ with
+\[
+\eta_0 \circ R(\ell) = \ell(x_0) \qquad \text{for all } \ell \in X' .
+\]
+
+\textbf{Step 1: $x_0 \in Y$.} Since $Y$ is a closed linear subspace, by Corollary~\ref{cor:spanning}(2) it suffices to show that $\ell(x_0) = 0$ for every $\ell \in Y^\perp$. Take $\ell \in Y^\perp$. Then $R(\ell) = 0$, since $R(\ell)(y) = \ell(y) = 0$ for all $y \in Y$. Hence
+\[
+\ell(x_0) = \eta_0 \circ R(\ell) = \eta_0(R(\ell)) = \eta_0(0) = 0 ,
+\]
+and so $x_0 \in Y$.
+
+\textbf{Step 2: $\eta_0(\ell_0) = \ell_0(x_0)$ for $\ell_0 \in Y'$.} Let $\ell_0 \in Y'$. By Hahn--Banach (Theorem~\ref{thm:hb-normed}) there is an extension of $\ell_0$ to $X$; call it $\ell$: $\ell \in X'$ and $\ell(y) = \ell_0(y)$ for all $y \in Y$. That says $R(\ell) = \ell_0$. Therefore, using $x_0 \in Y$ from Step 1,
+\[
+\eta_0(\ell_0) = \eta_0(R(\ell)) = \ell(x_0) = \ell_0(x_0) .
+\]
+So $y_0 = x_0$ works, and $Y$ is reflexive.
+\end{proof}
+
+%% >>> ADDED: figure (Claude)
+\begin{center}
+\begin{tikzpicture}[>=stealth, scale=1.1]
+    \node (Xp) at (0,0) {$X'$};
+    \node (Yp) at (3,0) {$Y'$};
+    \node (F) at (6,0) {$\mathbb{F}$};
+    \draw[->] (Xp) -- node[above] {$R$ (restrict)} (Yp);
+    \draw[->] (Yp) -- node[above] {$\eta_0$} (F);
+    \draw[->, red!75!black] (Xp) to[bend left=40] node[above] {$\eta_0 \circ R = i(x_0)$, \ $x_0 \in X$} (F);
+    \draw[->, dashed, blue!70!black] (Yp) to[bend left=40] node[below] {Hahn--Banach: $\ell_0 = R(\ell)$} (Xp);
+\end{tikzpicture}
+\end{center}
+The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction $R$ to an element of $X''$, which reflexivity of $X$ represents by some $x_0$; functionals vanishing on $Y$ die under $R$, which puts $x_0$ in $Y$ (Step 1), and Hahn--Banach makes $R$ onto, so $x_0$ represents $\eta_0$ on all of $Y'$ (Step 2).
+%% <<< END ADDED
+
+\subsection{Distance in the Dual}
+
+The distance formula (Theorem~\ref{thm:distance}) computes the distance from a vector to a subspace $Y$ by functionals in $Y^\perp$. The dual statement computes the distance from a functional to $Y^\perp$ by vectors in $Y$.
+
+\begin{propbox}[{{Distance from a Functional to $Y^\perp$}}]\boxlabel{prop:dual-distance}
+Let $X$ be a normed linear space and $Y$ a linear subspace. Then for every $\ell \in X'$,
+\[
+\min_{m \in Y^\perp} \|\ell - m\| = \sup_{\substack{z \in Y \\ \|z\| = 1}} |\ell(z)| ,
+\]
+the norm of the restriction $\ell|_Y \in Y'$. Compare $\displaystyle \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in Y^\perp \\ \|\ell\| \le 1}} |\ell(z)|$: now the minimum is attained on the side of the dual.
+\end{propbox}
+
+\begin{proof}
+%% FILL-IN: the case Y = {0}.
+(If $Y = \{0\}$, read the right side as $\|\ell|_Y\|_Y = 0$; then $Y^\perp = X'$ and $m = \ell$ gives $0$. Assume $Y \neq \{0\}$.)
+
+\textbf{Step 1: $\sup \le \inf$.} Let $\ell \in X'$ and $z \in Y$. For every $m \in Y^\perp$, $m(z) = 0$, so
+\[
+\ell(z) = (\ell - m)(z), \qquad |\ell(z)| \le \|\ell - m\|\, \|z\| .
+\]
+Hence $\sup_{z \in Y,\ \|z\| = 1} |\ell(z)| \le \|\ell - m\|$ for all $m \in Y^\perp$, and so
+\[
+\sup_{\substack{z \in Y \\ \|z\| = 1}} |\ell(z)| \le \inf_{m \in Y^\perp} \|\ell - m\| .
+\]
+%% FILL-IN: correction -- the notes write the sup over z in Y^perp in this display; it is over z in Y.
+
+\textbf{Step 2: an $m_0 \in Y^\perp$ attaining it.} We want $m_0 \in Y^\perp$ with $\|\ell - m_0\| = \sup_{z \in Y,\ \|z\| = 1} |\ell(z)|$. Consider $\ell_0 = \ell|_Y : Y \to \mathbb{F}$. Then $\ell_0 \in Y'$ and
+\[
+\sup_{\substack{z \in Y \\ \|z\| = 1}} |\ell_0(z)| = \|\ell_0\|_Y .
+\]
+By Hahn--Banach (Theorem~\ref{thm:hb-normed}) there is an extension of $\ell_0$ to $\ell_1 \in X'$ with $\|\ell_1\| = \|\ell_0\|_Y$. Take $\ell - m_0 = \ell_1$, i.e.\ $m_0 = \ell - \ell_1$.
+%% FILL-IN: sign corrected (the notes have m_0 = l_1 - l), and why m_0 lies in Y^perp.
+Then $m_0 \in Y^\perp$, since $m_0(y) = \ell(y) - \ell_1(y) = \ell_0(y) - \ell_0(y) = 0$ for $y \in Y$, and
+\[
+\|\ell - m_0\| = \|\ell_1\| = \|\ell_0\|_Y = \sup_{\substack{z \in Y \\ \|z\| = 1}} |\ell(z)| .
+\]
+With Step 1, the infimum equals the supremum and is attained at $m_0$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=1.25, >=stealth]
+    \draw[very thick, blue!70!black] (-2.3,0) -- (3.4,0) node[right] {$Y^\perp \subset X'$};
+    \fill (-1.6,0) circle (1.2pt) node[below] {$0$};
+    \fill[red!6] (-0.6,0) rectangle (2.2,2.8);
+    \draw[thick, red!75!black] (-0.6,0) rectangle (2.2,2.8);
+    \draw[line width=2.2pt, orange!85!black] (-0.6,0) -- (2.2,0);
+    \fill (0.8,1.4) circle (1.5pt) node[above right] {$\ell$};
+    \fill[orange!85!black] (0.2,0) circle (1.6pt) node[below] {$m_0$};
+    \draw[->, dashed] (0.8,1.4) -- (0.2,0.05);
+    \node[right, align=left, font=\footnotesize, red!75!black] at (2.25,2.2) {ball about $\ell$ of radius\\ $\|\ell|_Y\|_Y = \min_{m \in Y^\perp} \|\ell - m\|$};
+    \node[below, align=center, font=\footnotesize, orange!85!black] at (0.8,-0.35) {every $m = \ell - \ell_1$, $\ell_1$ a norm-preserving extension of $\ell|_Y$};
+\end{tikzpicture}
+\end{center}
+The distance from $\ell$ to $Y^\perp$, drawn in $X'$: the smallest ball about $\ell$ (red, drawn square as for a maximum norm) that meets $Y^\perp$ (blue) has radius $\|\ell|_Y\|_Y$, and it does meet $Y^\perp$, so the minimum is attained. The points of contact (orange) are exactly the $m_0 = \ell - \ell_1$ with $\ell_1$ a norm-preserving extension of $\ell|_Y$; extensions need not be unique, and neither need the closest point, unlike the projection in a Hilbert space.
+%% <<< END ADDED
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[{{$Y' \cong X'/Y^\perp$}}]\label{rem:subspace-dual-quotient}
+$Y^\perp$ is a closed subspace of $X'$ (Proposition~\ref{prop:annihilator-closed}), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem~\ref{thm:quotient-norm}). The proposition says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$, so $[\ell] \mapsto \ell|_Y$ is a well-defined, linear, norm-preserving map $X'/Y^\perp \to Y'$, and it is onto by Hahn--Banach. Hence $Y'$ is isometrically isomorphic to $X'/Y^\perp$: the dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem~\ref{thm:quotient-dual}).
+\end{rembox}
+%% <<< END ADDED
 
 % ============================================================================
 % SECTION 29: R^n, C^m AND L^p (EXAMPLES REVISITED)
@@ -6958,6 +7439,10 @@ Differentiation is the test case for boundedness. With the $C^m$ norm on the dom
 The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R}^n)$ with norm at most $1$ (Example~\ref{ex:fourier-L1}). By the Riesz representation theorem, $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ (Example~\ref{ex:L2-dual}); this is a Hilbert-space phenomenon (Remark~\ref{rem:not-every-space-own-dual}), and for $1 \le p < \infty$ the dual of $L^p$ is $L^{p'}$ (Theorem~\ref{thm:Lp-dual}).
 
 Lecture~12 used $L^2$ twice more. The Dirichlet problem is solved in $H^1_0(\Omega)$, a completion inside $L^2$, where the source term $f \in L^2(\Omega)$ gives the bounded functional $v \mapsto \int_\Omega f v$ (Theorem~\ref{thm:dirichlet-weak}); and the Radon--Nikodym theorem applies the Riesz representation theorem in $L^2(\mu + \nu)$ for an abstract measure (Theorem~\ref{thm:radon-nikodym}).
+
+%% >>> ADDED: Lecture 14 in the revisit section
+\textit{(Not from lecture; summary of Lecture 14.)} Lecture~14 sorted the course's spaces by reflexivity. Hilbert spaces, in particular $L^2$ and $\ell^2$, and $\ell^p$ for $1 < p < \infty$ are reflexive (Examples~\ref{ex:hilbert-reflexive} and~\ref{ex:lp-reflexive}); $C[0,1]$, $\ell^1$ and $c_0$ are not (Example~\ref{ex:C-nonreflexive}, Corollary~\ref{cor:reflexive-sep}), and the duals of $\ell^\infty$ and $L^\infty$ are not separable, so they are not $\ell^1$ and $L^1$ (Corollary~\ref{cor:linfty-dual-nonsep}).
+%% <<< END ADDED
 
 \noindent\textit{Chain:} $\leftarrow$ Chapter~5 (\ref{sec:rev-ch5}) $\cdot$ Chapter~7, $L^2(\mathbb{R}^n)$ as a state space (Theorem~\ref{thm:L2-separable}) $\rightarrow$
 
@@ -7562,10 +8047,11 @@ To show a space is separable, write down a countable set built from finitely man
 To show a space is not separable, find uncountably many elements at mutual distance at least $\delta > 0$. The balls of radius $\delta/2$ about them are disjoint, a dense set must meet each of them, and choosing one point of the dense set in each ball gives a one-to-one map from an uncountable set into the dense set. Indicator functions (or indicator sequences) are the usual source: in a supremum norm two different indicators are at distance $1$.
 \end{rembox}
 
-\begin{exbox}[Applications (HW5)]\boxlabel{ex:tech16}
+\begin{exbox}[{{Applications (HW5, Lecture 14)}}]\boxlabel{ex:tech16}
 \begin{itemize}
 \item $L^\infty([0,1])$ (P1(b), Proposition~\ref{prop:Linfty-nonsep}): $\chi_{[0,t]}$, $t \in (0,1]$.
 \item $\ell^\infty$ (Proposition~\ref{prop:linfty-nonsep}): $\chi_S$, $S \subset \mathbb{N}$.
+\item $(C[0,1])'$ (Lecture 14, Example~\ref{ex:C-nonreflexive}): the point evaluations $\ell_s(f) = f(s)$, $s \in [0,1]$, at mutual distance $2$.
 \end{itemize}
 \end{exbox}
 
@@ -7646,11 +8132,28 @@ The Radon--Nikodym theorem (Theorem~\ref{thm:radon-nikodym}): $\chi_{F_1}$, $\ch
 To produce a bounded functional with prescribed properties (a given value at a point, zero on a subspace, norm at most $1$), find the smallest subspace on which the requirements already determine it --- the span of the point, or of the point and the subspace --- define it there, and check its norm on that subspace by hand. Then Hahn--Banach for normed spaces (Theorem~\ref{thm:hb-normed}) extends it to the whole space without increasing the norm. Before defining it, check that the formula is well defined: the representation of an element of the span must be unique. Wu: ``we really don't have a lot of choice'' on the small space; ``extensions are usually not unique''.
 \end{rembox}
 
-\begin{exbox}[Applications (Lecture 13)]\boxlabel{ex:tech22}
+\begin{exbox}[Applications (Lectures 13--14)]\boxlabel{ex:tech22}
 \begin{itemize}
 \item $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem~\ref{thm:norm-max}): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
 \item The distance formula (Theorem~\ref{thm:distance}): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
 \item $(\ell^\infty)' \neq \ell^1$ (Example~\ref{ex:linfty-dual}): $\lambda(x) = \lim x_j$ on the convergent sequences.
+\item Distance from a functional to $Y^\perp$ (Lecture 14, Proposition~\ref{prop:dual-distance}): extend $\ell|_Y$ with the same norm.
+\item Closed subspaces of reflexive spaces (Lecture 14, Theorem~\ref{thm:reflexive-subspace}, Step 2): extending makes the restriction map $X' \to Y'$ onto.
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+%% Lecture 14 (Claude): new technique.
+\subsection{Technique 23: Density by Testing Against Functionals}
+
+\begin{rembox}[Strategy]\label{rem:tech23}
+To show that a set spans a dense subspace, or that a vector lies in a closed subspace, do not approximate directly: by the spanning criterion (Theorem~\ref{thm:spanning}, Corollary~\ref{cor:spanning}) it suffices to show that every bounded functional vanishing on the set vanishes at the vector (or is zero). The functional side is often easier, because a functional is controlled by a single number, its norm, and vanishing on a set is a linear condition. This is the normed-space form of ``only $0$ is orthogonal to it''.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 14)]\boxlabel{ex:tech23}
+\begin{itemize}
+\item $X'$ separable $\Rightarrow$ $X$ separable (Theorem~\ref{thm:dual-sep}, Step 1): a functional vanishing on all $z_j$ is a limit of $\ell_{j_k}$ with $\tfrac12\|\ell_{j_k}\| \le \|\ell_{j_k} - \ell\|$, hence $0$.
+\item Closed subspaces of reflexive spaces (Theorem~\ref{thm:reflexive-subspace}, Step 1): $x_0 \in Y$ because every $\ell \in Y^\perp$ kills it.
 \end{itemize}
 \end{exbox}
 
@@ -7734,6 +8237,7 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:lax-milgram} Lax--Milgram & \S6.3, Thm~6 & Proved through the operator $A$ of Theorem~\ref{thm:form-operator}: one-to-one with a lower bound, closed range, dense range. \\
 \ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
 \ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text here, so no Ch.~8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
+\ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked. \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }

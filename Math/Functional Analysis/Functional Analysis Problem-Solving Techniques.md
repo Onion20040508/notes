@@ -240,9 +240,10 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 ^rem-t16
 
-> [!example] Example T16: Applications (HW5)
+> [!example] Example T16: Applications (HW5, Lecture 14)
 > - $L^\infty([0,1])$ (P1(b), Proposition [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]): $\chi_{[0,t]}$, $t \in (0,1]$.
 > - $\ell^\infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]): $\chi_S$, $S \subset \mathbb{N}$.
+> - $(C[0,1])'$ (Lecture 14, Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]]): the point evaluations $\ell_s(f) = f(s)$, $s \in [0,1]$, at mutual distance $2$.
 
 ^ex-t16
 
@@ -318,9 +319,24 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 ^rem-t22
 
-> [!example] Example T22: Applications (Lecture 13)
+> [!example] Example T22: Applications (Lectures 13–14)
 > - $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
 > - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
 > - $(\ell^\infty)' \neq \ell^1$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]): $\lambda(x) = \lim x_j$ on the convergent sequences.
+> - Distance from a functional to $Y^\perp$ (Lecture 14, Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-9|§37.9]]): extend $\ell|_Y$ with the same norm.
+> - Closed subspaces of reflexive spaces (Lecture 14, Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], Step 2): extending makes the restriction map $X' \to Y'$ onto.
 
 ^ex-t22
+
+## Technique 23: Density by Testing Against Functionals
+
+> [!remark] Remark: Strategy
+> To show that a set spans a [[§11 Normed Linear Spaces#^def-11-8|dense]] subspace, or that a vector lies in a closed subspace, do not approximate directly: by the [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|spanning criterion]] (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|§37.1]], Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]]) it suffices to show that every bounded functional vanishing on the set vanishes at the vector (or is zero). The functional side is often easier, because a functional is controlled by a single number, its norm, and vanishing on a set is a linear condition. This is the normed-space form of “only $0$ is orthogonal to it”.
+
+^rem-t23
+
+> [!example] Example T23: Applications (Lecture 14)
+> - $X'$ separable $\Rightarrow$ $X$ separable (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], Step 1): a functional vanishing on all $z_j$ is a limit of $\ell_{j_k}$ with $\tfrac12\|\ell_{j_k}\| \le \|\ell_{j_k} - \ell\|$, hence $0$.
+> - Closed subspaces of reflexive spaces (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], Step 1): $x_0 \in Y$ because every $\ell \in Y^\perp$ (the [[§36 Duality in Normed Spaces#^def-36-1|annihilator]] of $Y$) kills it.
+
+^ex-t23

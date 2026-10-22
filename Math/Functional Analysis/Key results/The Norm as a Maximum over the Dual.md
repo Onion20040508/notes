@@ -17,6 +17,7 @@ tags: [functional-analysis, hub]
 - [[§36 Duality in Normed Spaces#^cor-36-3|Corollary §36.3: Bounded Functionals Separate Points]]
 - [[§36 Duality in Normed Spaces#^cor-36-5|Corollary §36.5: Duality Formula for the ℓ^p Norm]]
 - [[§36 Duality in Normed Spaces#^thm-36-6|Theorem §36.6: Distance to a Subspace]]
+- [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|Proposition §37.5: The Canonical Embedding X → X'']]
 
 ## Connections
 - TODO

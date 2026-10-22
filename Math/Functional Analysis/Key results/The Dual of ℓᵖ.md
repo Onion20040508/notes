@@ -18,6 +18,8 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§36 Duality in Normed Spaces#^ex-36-2|Example §36.2: (ℓ^∞)' is Larger than ell¹]]
 - [[§36 Duality in Normed Spaces#^cor-36-5|Corollary §36.5: Duality Formula for the ℓ^p Norm]]
+- [[§37 Separable Duals and Reflexive Spaces#^ex-37-3|Example §37.3: ℓ^p is Reflexive for 1 < p < ∞]]
+- [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|Corollary §37.7: Separability of X and X' for Reflexive X]]
 
 ## Connections
 - TODO
