@@ -27,7 +27,7 @@ tags: [group-theory, math493, review]
 - [ ] The derived subgroup: Definition [[§47 Commutators#^def-47-2|§47.2]] Commutator Subgroup, Proposition [[§47 Commutators#^prop-47-4|§47.4]] Properties of the Commutator Subgroup ((1) is PS 4.4(1), WS 9.4), Proposition [[§47 Commutators#^prop-47-11|§47.11]] Abelian Quotients and Commutators (lecture 10/9).
 - [ ] The Sylow theorems: Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem (WS 10.4; class 10/14), Theorem [[§52 The Sylow Theorems#^thm-52-6|§52.6]] The Second Sylow Theorem (WS 10.6; lecture 10/16), Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]] The Third Sylow Theorem (stated on WS 10; lecture 10/16).
 
-**Your one page of notes.** A printable draft (both sides of one sheet, 6.5 pt) is in `~/Downloads/math493_midterm_notes_page.pdf`: the most-used definitions and theorems, a one-line proof sketch of every worksheet and problem-set problem, small groups, and core proofs.
+**Your one page of notes.** A printable sheet (both sides of one sheet, 7.1 pt) is in the OneDrive `493 Honor Algebra/Midterm` folder (and `~/Downloads/math493_midterm_notes_page.pdf`), in priority order: all main definitions; every worksheet theorem (with the lecture's main results) as statement plus numbered proof steps; every problem-set theorem the same way; then the toolkit results proved in the notes, examples, and small groups.
 
 **Your week** (MATH 591 midterm is Wed Oct 21, 6–8 PM; this one Thu Oct 22, 6–8 PM):
 1. **Mon–Tue:** 591 first. For 493, one block each day on the worksheets: Mon Worksheets 1–5, Tue Worksheets 6–8.
@@ -168,7 +168,7 @@ Tick a problem when you can do it closed-book. "Proof not yet in the notes" mark
 **Language**
 - [ ] Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|§20.6]] Permutation Matrices, Definition [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|§21.2]] The Sign; Even and Odd Permutations, Definition [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|§21.3]] The Alternating Group $A_n$, Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|§20.7]] Representation
 **Proofs**
-- [ ] ★★ Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]] The Sign Is a Homomorphism (PS 1.5(2)): the sign is a homomorphism; Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]] Generators of $S_n$ (PS 1.5(3)), Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]] Generators of $A_n$ (PS 1.5(4)): generators of $S_n$ and $A_n$ (G7).
+- [ ] ★★ Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]] The Sign Is a Homomorphism (PS 1.5(2); review 10/21): the sign is a homomorphism; Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]] Generators of $S_n$ (PS 1.5(3)), Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]] Generators of $A_n$ (PS 1.5(4)): generators of $S_n$ and $A_n$ (G7).
 - [ ] ★ Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]] $\sigma \mapsto M(\sigma)$ Is an Injective Homomorphism $S_n \to GL_n(k)$ (permutation matrices), Theorem [[§22 The Structure of Uₙ#^thm-22-2|§22.2]] $U_n$ as a Product of Prime-Power Unit Groups (PS 1.6(3)) ($U_n$ as a product).
 
 ## T6. Actions, cosets, Lagrange, orbit–stabilizer (§24–§32)
