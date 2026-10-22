@@ -256,6 +256,21 @@ tags: [group-theory, math493]
 
 ^ex-47-2
 
+> [!remark] Remark: PS 5.4 Pictured
+> Identify $T(0, 0, M)$ with the matrix $M \in \mathbb{R}^{p \times r} \cong \mathbb{R}^{pr}$. Multiplication becomes addition, $T(0,0,M_1)\,T(0,0,M_2) = T(0,0,M_1 + M_2)$, so:
+> - the *commutators* correspond to the set $C = \{AY - XB\}$;
+> - *products* of commutators correspond to sums of elements of $C$, and every $M$ is such a sum, $M = \sum_i (A_iY_i - X_iB_i)$ (part (2) of [[§47 Commutators#^ex-47-2|Example §47.2]]).
+>
+> So $[G, G] = \langle C \rangle$ is all of $\mathbb{R}^{pr}$. The set $C$ is closed under scaling, $\lambda(AY - XB) = (\lambda A)Y - (\lambda X)B$, and consists of matrices of rank $\leq 2q$; when $2q < \min(p, r)$, as in part (3), it is a thin, cone-shaped subset. In fact $C$ is exactly the set of matrices of rank $\leq 2q$ *(not from class)*: such an $M$ factors as $M = UV$ with $U$ of size $p \times 2q$ and $V$ of size $2q \times r$, and writing $U = [\,A \mid -X\,]$ and $V = \begin{bmatrix} Y \\ B \end{bmatrix}$ gives $M = AY - XB$. (So when $2q \geq \min(p, r)$, every element of $[G, G]$ is a commutator.)
+>
+> *Source: review session 10/21*
+
+^rem-47-6
+
+![[m493-47-1.svg]]
+
+*The commutators of the group of PS 5.4 form a cone $C$ inside $\mathbb{R}^{pr}$ (sketch, after the review session's picture; the case $2q < \min(p, r)$). The cone is not closed under addition, but its sums fill the whole space, which is $[G,G]$.*
+
 *Lecture, Fri Oct 9.*
 
 > [!theorem] Proposition §47.11: Abelian Quotients and Commutators
@@ -284,4 +299,4 @@ tags: [group-theory, math493]
 > [!remark] Remark: $D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient
 > With $N = D(H)$, the proposition recovers The Abelianization Is Abelian ([[§47 Commutators#^prop-47-6|Proposition §47.6]]). Conversely, it says that $D(H)$ is contained in every normal subgroup with abelian quotient. So $H^{\mathrm{ab}} = H/D(H)$ is the largest abelian quotient of $H$. This is the fact used in [[§48 Solvable Groups|§48]]: in a chain with abelian quotients, every commutator of $G_j$ lies in $G_{j-1}$.
 
-^rem-47-6
+^rem-47-7

@@ -93,7 +93,7 @@ tags: [group-theory, math493]
 > [!theorem] Theorem §21.3: The Sign Is a Homomorphism
 > $\operatorname{sgn}: S_n \to \{\pm 1\}$ is a group [[§15 Homomorphisms#^def-15-1|homomorphism]], where $\{\pm 1\}$ is a group under multiplication.
 >
-> *Source: PS 1.5(2)*
+> *Source: PS 1.5(2); second proof: review session 10/21*
 
 ^thm-21-3
 
@@ -103,6 +103,21 @@ tags: [group-theory, math493]
 ^pf-21-3
 
 *Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§37 Determinants#^ladr-9-49|LADR 9.49]]
+
+> [!proof]+ Second proof, via $\Delta$ (review session 10/21)
+> By [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]] and [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|the definition of the sign]], $\sigma \cdot \Delta = \operatorname{sgn}(\sigma)\,\Delta$ for every $\sigma \in S_n$. The action of $S_n$ on polynomials is compatible with composition and respects products ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|Compatibility of the Action with Composition]]); since a constant polynomial $c$ is fixed, $\sigma \cdot c = c$, this gives $\sigma \cdot (c f) = (\sigma \cdot c)(\sigma \cdot f) = c\,(\sigma \cdot f)$. Hence
+>
+> $$ (\sigma\tau) \cdot \Delta = \sigma \cdot (\tau \cdot \Delta) = \sigma \cdot \big(\operatorname{sgn}(\tau)\,\Delta\big) = \operatorname{sgn}(\tau)\,(\sigma \cdot \Delta) = \operatorname{sgn}(\tau)\operatorname{sgn}(\sigma)\,\Delta. $$
+>
+> The left side is also $\operatorname{sgn}(\sigma\tau)\,\Delta$, and $\Delta \neq 0$, so $\operatorname{sgn}(\sigma\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$. This is the argument of Theorem [[§46 Characters#^thm-46-2|§46.2]] (A Common Eigenvector Yields a Character), with the common eigenvector $\Delta$.
+
+^pf-21-3-2
+
+*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|§21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|§20.1]], [[§46 Characters#^thm-46-2|§46.2]]
+
+![[m493-21-2.svg]]
+
+*$\sigma \cdot \Delta = \prod_{i<j}(x_{\sigma(i)} - x_{\sigma(j)})$ for $n = 3$, a factor $x_a - x_b$ drawn as an arrow from $a$ to $b$. In $\Delta$ every arrow runs from the smaller to the larger number; each inversion of $\sigma$ reverses one arrow and contributes a factor $-1$. So $\sigma \cdot \Delta = (-1)^{\operatorname{inv}(\sigma)}\Delta = \operatorname{sgn}(\sigma)\,\Delta$, the identity behind the second proof. (Not from lecture; added.)*
 
 > [!remark]- Connections
 > - Linear-algebra home: [[§37 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).

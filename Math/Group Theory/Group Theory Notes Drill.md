@@ -3658,7 +3658,7 @@ For $N \subseteq A_1 \subseteq A_2$: $A_2/A_1 \leftrightarrow B_2/B_1$, $A_1 \tr
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G5 and G2.
 > - $gN \mapsto gK$ is well defined as $N \subseteq K$; its kernel is $K/N$; First Isomorphism Theorem.
-> - Remark [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-3|§42]]: $A_1 = K$, $A_2 = G$.
+> - Remark [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-4|§42]]: $A_1 = K$, $A_2 = G$.
 
 #### Abelian simple groups · P1
 
@@ -4193,7 +4193,7 @@ $G^{\mathrm{ab}} = G/[G, G]$, see Definition [[§47 Commutators#^def-47-3|§47.3
 
 > [!tip]- Hints: where it lives, examples
 > - Example [[§47 Commutators#^ex-47-1|§47.1]]: $S_n/A_n \cong \{\pm 1\}$; Proposition [[§47 Commutators#^prop-47-6|§47.6]] ([[Group Theory HW Drill#^ps4-4-2|PS4.4(2)]]).
-> - Remark [[§47 Commutators#^rem-47-6|§47]].
+> - Remark [[§47 Commutators#^rem-47-7|§47]].
 
 ## Proofs T9
 
@@ -4317,7 +4317,7 @@ For $N \trianglelefteq H$: $H/N$ abelian $\iff$ every commutator of $H$ lies in 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G8.
 > - The commutator of cosets is the coset of the commutator; $D(H)$ is the smallest subgroup containing the commutators.
-> - Used in Propositions [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§48 Solvable Groups#^prop-48-3|§48.3]] and Theorem [[§49 The Derived Series#^thm-49-1|§49.1]]; remark [[§47 Commutators#^rem-47-6|§47]].
+> - Used in Propositions [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§48 Solvable Groups#^prop-48-3|§48.3]] and Theorem [[§49 The Derived Series#^thm-49-1|§49.1]]; remark [[§47 Commutators#^rem-47-7|§47]].
 
 #### Subquotients: an injection and a surjection · P3
 

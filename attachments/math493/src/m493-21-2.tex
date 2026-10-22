@@ -1,0 +1,24 @@
+% Figure from MATH 493 notes, section 21 (added, not from lecture). Compile with the notes preamble.
+\begin{tikzpicture}[scale=1.15, font=\small, >=Stealth]
+\foreach \dx/\nm/\a/\b/\c [count=\k] in {0/{(1\,2)}/2/1/3, 4.6/{(1\,2\,3)}/2/3/1} {
+\begin{scope}[xshift=\dx cm]
+\coordinate (v1) at (0,0); \coordinate (v2) at (2,0); \coordinate (v3) at (1,1.6);
+\foreach \i in {1,2,3} \fill (v\i) circle (1.3pt);
+\node[below left] at (v1) {$1$}; \node[below right] at (v2) {$2$}; \node[above] at (v3) {$3$};
+\node at (1,-0.75) {$\sigma = \nm$};
+\end{scope}}
+% sigma = (1 2): factors x_{s(i)} - x_{s(j)}: {1,2}->(2,1) flipped; {1,3}->(2,3); {2,3}->(1,3)
+\begin{scope}
+\draw[->, red!70!black, very thick] (2,0) -- (0.08,0);
+\draw[->, teal!60!black, thick] (2,0) -- (1.04,1.52);
+\draw[->, teal!60!black, thick] (0,0) -- (0.96,1.52);
+\node[align=center, font=\scriptsize] at (1,-1.3) {one arrow reversed:\\ $\sigma\cdot\Delta = -\Delta$};
+\end{scope}
+% sigma = (1 2 3): {1,2}->(2,3); {1,3}->(2,1) flipped; {2,3}->(3,1) flipped
+\begin{scope}[xshift=4.6cm]
+\draw[->, teal!60!black, thick] (2,0) -- (1.04,1.52);
+\draw[->, red!70!black, very thick] (2,0) -- (0.08,0);
+\draw[->, red!70!black, very thick] (1,1.6) -- (0.04,0.07);
+\node[align=center, font=\scriptsize] at (1,-1.3) {two arrows reversed:\\ $\sigma\cdot\Delta = +\Delta$};
+\end{scope}
+\end{tikzpicture}

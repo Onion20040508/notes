@@ -133,6 +133,17 @@ tags: [group-theory, math493]
 
 *Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
+> [!remark] Remark: Indices Along the Correspondence
+> By part (1) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Quotients Along the Correspondence]], $A_2/A_1$ and $B_2/B_1$ are in bijection, so $[A_2 : A_1] = [B_2 : B_1]$: the correspondence preserves indices. For $G = S_4$ and $N = K$, with $S_4/K \cong S_3$ ([[§43 Simple Groups#^prop-43-10|the pair-partition homomorphism]]), the subgroup $A_4$ corresponds to $A_3$ and $K$ to $\{e\}$: $[A_4 : K] = 3 = [A_3 : \{e\}]$ and $[S_4 : A_4] = 2 = [S_3 : A_3]$.
+>
+> *Source: review session 10/21*
+
+^rem-42-2
+
+![[m493-42-2.svg]]
+
+*The correspondence for $G = S_4$ and $N = K$: the subgroups of $S_4$ containing $K$ (left; $P_1, P_2, P_3$ are the three subgroups of order $8$) and the subgroups of $S_4/K \cong S_3$ (right; $\tau_1, \tau_2, \tau_3$ the transpositions). Lines denote inclusion, and each red number is the index of the smaller group in the larger; corresponding lines carry the same index. (Not from lecture; added.)*
+
 > [!theorem] Theorem §42.5: Third Isomorphism Theorem
 > Let $N \subseteq K$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$. Then $K/N$ is a normal subgroup of $G/N$ ([[§40 Quotient Groups#^def-40-1|Def. §40.1]]), and $(G/N)/(K/N) \cong G/K$.
 >
@@ -170,11 +181,11 @@ tags: [group-theory, math493]
 > [!remark] Remark: The Isomorphism Theorems
 > The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|first]] identifies $G/N$ with an image; the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|second]] and [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|third]] compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
 
-^rem-42-2
+^rem-42-3
 
 > [!remark] Remark: Naming the Isomorphism Theorems
 > Part (3) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4]] with $A_1 = K$ and $A_2 = G$ is the Third Isomorphism Theorem, $G/K \cong (G/N)/(K/N)$, [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|Theorem §42.5]], just above. Worksheet 8 calls the correspondence theorem the “third/fourth isomorphism theorem”; textbooks vary, and many call it the correspondence (or lattice) theorem and number it fourth. Note also that the worksheet's “$N \subset A$” allows $A = N$, which corresponds to the trivial subgroup of $G/N$.
 
-^rem-42-3
+^rem-42-4
 
 [[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Example §45.2]], in the $S_4$ part of [[§45 S₃, S₄, A₄ and A₅|§45]], lists the six subgroups of $S_4$ containing $K$.

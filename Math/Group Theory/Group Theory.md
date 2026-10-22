@@ -56,6 +56,7 @@ graph TD
   C7 -.->|on credit| C4
   C7 -.->|on credit| C6
   C8 -.->|on credit| C6
+  C9 -.->|on credit| C5
   C9 -.->|on credit| C8
   X1 -.->|3| C1
   X1 -.->|17| C5

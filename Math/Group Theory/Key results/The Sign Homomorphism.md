@@ -12,8 +12,11 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]]
+- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|Proposition §20.1: Compatibility of the Action with Composition]]
 - [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|Proposition §20.5: σ ↦ M(σ) Is an Injective Homomorphism Sₙ → GLₙ(k)]]
 - [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Definition §21.2: The Sign; Even and Odd Permutations]]
+- [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Theorem §21.2: Three Formulas for the Sign]]
+- [[§46 Characters#^thm-46-2|Theorem §46.2: A Common Eigenvector Yields a Character]]
 
 ## Its proof uses (other subjects)
 - [[§37 Determinants#^ladr-9-49|LADR 9.49 Determinant is multiplicative]]
