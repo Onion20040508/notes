@@ -52,6 +52,7 @@ graph TD
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C4 -.->|on credit| C2
+  C6 -.->|on credit| C1
   C6 -.->|on credit| C4
   C7 -.->|on credit| C4
   C7 -.->|on credit| C6

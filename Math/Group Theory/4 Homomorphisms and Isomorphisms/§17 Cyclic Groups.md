@@ -21,6 +21,8 @@ tags: [group-theory, math493]
 ^thm-17-1
 
 > [!proof]+ Proof
+> *Idea:* $k \mapsto g^k$ maps $\mathbb{Z}$ onto $G$ with kernel $n\mathbb{Z}$ or $\{0\}$; descend to $\mathbb{Z}/n\mathbb{Z}$.
+>
 > Define $\varphi(k) = g^k$ on $\mathbb{Z}$; it is a homomorphism $(\mathbb{Z}, +) \to G$ by the [[§4 Subgroups#^lem-4-4|Exponent Laws]] ($g^{k+l} = g^k g^l$), and surjective since $G = \langle g \rangle$.
 >
 > **(1)** *Kernel:* $g^k = e$ iff $n \mid k$: if $k = qn + r$ with $0 \leq r < n$, then $g^k = (g^n)^q g^r = g^r$, which is $e$ iff $r = 0$ by minimality of $n$. So $\operatorname{Ker}\varphi = n\mathbb{Z}$. *Descent to $\mathbb{Z}/n\mathbb{Z}$:* since $\operatorname{Ker}\varphi = n\mathbb{Z}$, the [[§7 The Group ℤ∕nℤ#^lem-7-2|Descent Lemma]] (§7.2) gives a well-defined homomorphism $\bar\varphi([k]) = g^k$ on $\mathbb{Z}/n\mathbb{Z}$ — explicitly, $k' = k + nm$ implies $g^{k'} = g^k (g^n)^m = g^k$ — still surjective. *Injective:* $\bar\varphi([k]) = e$ iff $n \mid k$ iff $[k] = [0]$, so $\operatorname{Ker}\bar\varphi = \{[0]\}$; by the [[§15 Homomorphisms#^prop-15-3|injectivity criterion]], $\bar\varphi$ is injective. Hence $\bar\varphi$ is an isomorphism, and $|G| = n$ with $G = \{g^0, \ldots, g^{n-1}\}$.
@@ -66,6 +68,8 @@ tags: [group-theory, math493]
 ^prop-17-3
 
 > [!proof]+ Proof
+> *Idea:* Division with remainder gives $\operatorname{Ker}\varphi_g = N\mathbb{Z}$; descend $k \mapsto g^k$ to $\mathbb{Z}/N\mathbb{Z}$.
+>
 > **(1)** $\varphi_g(k + l) = g^{k+l} = g^k g^l = \varphi_g(k)\varphi_g(l)$ by the [[§4 Subgroups#^lem-4-4|Exponent Laws]] (§4.4). Its image is $\{g^k : k \in \mathbb{Z}\} = \langle g \rangle$.
 >
 > **(2)** $g^k = e$ iff $N \mid k$: write $k = qN + r$ with $0 \leq r < N$; then $g^k = (g^N)^q g^r = g^r$, which equals $e$ iff $r = 0$, by minimality of $N$. So $\operatorname{Ker}\varphi_g = N\mathbb{Z}$.
@@ -103,6 +107,8 @@ tags: [group-theory, math493]
 ^thm-17-4
 
 > [!proof]+ Proof
+> *Idea:* Take the least positive $m$ with $g^m \in H$; division with remainder gives $H = \langle g^m \rangle$.
+>
 > If $H = \{e\}$, then $H = \langle e \rangle$. Otherwise $H$ contains some $g^t$ with $t \neq 0$, and also its inverse $g^{-t}$, so it contains a positive power of $g$; by [[§1 The Set ℕ of Natural Numbers#^thm-1-2|well-ordering]] the least such exponent $m$ exists. Since $g^m \in H$, $\langle g^m \rangle \subseteq H$. Conversely let $g^t \in H$ and write $t = qm + r$ with $0 \leq r < m$. Then $g^r = g^t (g^m)^{-q} \in H$, so minimality of $m$ forces $r = 0$: $t = qm$ and $g^t = (g^m)^q \in \langle g^m \rangle$. So $H = \langle g^m \rangle$, and the argument shows every such $t$ is a multiple of $m$. (For $G = \mathbb{Z}$ this is the [[§5 A Zoo of Subgroups#^prop-5-1|classification of subgroups of ℤ]], §5.1, by the same division-algorithm argument.)
 
 ^pf-17-4
@@ -125,6 +131,8 @@ tags: [group-theory, math493]
 ^prop-17-5
 
 > [!proof]+ Proof
+> *Idea:* $(g^k)^m = e$ iff $n \mid km$ iff $n/d \mid m$, by Euclid's lemma.
+>
 > Let $d = \gcd(n, k)$ and write $n = dn'$, $k = dk'$ with $\gcd(n', k') = 1$. For $m \in \mathbb{Z}$: $(g^k)^m = g^{km} = e$ iff $n \mid km$ ([[§17 Cyclic Groups#^prop-17-3|§17.3]], since the exponents killing $g$ are exactly the multiples of $n$) iff $n' \mid k'm$ iff $n' \mid m$, the last step by [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Euclid's Lemma]] in its general form (§9.1), as $\gcd(n', k') = 1$. So the least positive $m$ with $(g^k)^m = e$ is $n' = n/d$.
 
 ^pf-17-5
@@ -144,6 +152,8 @@ tags: [group-theory, math493]
 ^cor-17-6
 
 > [!proof]+ Proof
+> *Idea:* Generators have order $n$; a subgroup of order $d$ is $\langle g^m \rangle$ with $m = n/d$.
+>
 > **(1)** $g^k$ generates $G$ iff $\operatorname{ord}(g^k) = n$ (Cyclic iff There Is an Element of Order $|G|$, [[§17 Cyclic Groups#^cor-17-2|§17.2]]), iff $n/\gcd(n,k) = n$, iff $\gcd(k, n) = 1$. The elements of $G$ are $g^0, \ldots, g^{n-1}$, so the generators correspond to the $k \in \{0, \ldots, n-1\}$ coprime to $n$, of which there are $\varphi(n)$.
 >
 > **(2)** *Existence:* $\operatorname{ord}(g^{n/d}) = n/\gcd(n, n/d) = n/(n/d) = d$, so $\langle g^{n/d} \rangle$ has order $d$. *Uniqueness:* let $H \leq G$ have order $d$. By [[§17 Cyclic Groups#^thm-17-4|Subgroups of Cyclic Groups Are Cyclic]] (above), $H = \langle g^m \rangle$ with $m$ the least positive exponent in $H$, and since $g^n = e \in H$, $m \mid n$. Then $|H| = \operatorname{ord}(g^m) = n/\gcd(n, m) = n/m$, so $|H| = d$ forces $m = n/d$ and $H = \langle g^{n/d} \rangle$. The last clause is [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]] (§29.2).

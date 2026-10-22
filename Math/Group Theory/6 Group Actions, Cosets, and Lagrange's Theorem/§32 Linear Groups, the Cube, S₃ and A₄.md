@@ -19,6 +19,8 @@ tags: [group-theory, math493]
 ^prop-32-1
 
 > [!proof]+ Proof
+> *Idea:* An invertible matrix with first column $v$ sends $e_1$ to $v$.
+>
 > **(1)** $A0 = 0$ for every $A$, so $\{0\}$ is an orbit. If $v \neq 0$, extend $v$ to a basis $(v, v_2, v_3)$ of $\mathbb{R}^3$; the matrix $P = [\,v \mid v_2 \mid v_3\,]$ is invertible and $Pe_1 = v$. Hence every nonzero vector lies in the orbit of $e_1$, and $\mathbb{R}^3 \setminus \{0\}$ is a single orbit.
 >
 > **(2)** $Ae_1$ is the first column of $A$, so $Ae_1 = e_1$ says exactly that the first column is $e_1$: $A = \begin{pmatrix} 1 & b \\ 0 & B \end{pmatrix}$. Expanding $\det A$ along the first column gives $\det A = \det B$, so $A$ is invertible iff $B \in GL_2(\mathbb{R})$; the row $b$ is unconstrained.
@@ -45,6 +47,8 @@ tags: [group-theory, math493]
 ^prop-32-2
 
 > [!proof]+ Proof
+> *Idea:* Orthogonal maps preserve length; orthonormal bases through $v/r$ and $w/r$ give $A$ with $Av = w$.
+>
 > **(1)** Orthogonal matrices preserve the inner product $v^{\mathsf{T}}w$: $(Av)^{\mathsf{T}}(Aw) = v^{\mathsf{T}}A^{\mathsf{T}}Aw = v^{\mathsf{T}}w$. In particular $|Av|^2 = (Av)^{\mathsf{T}}(Av) = v^{\mathsf{T}}v = |v|^2$, so each orbit lies in a single sphere $S_r$ (or is $\{0\}$). Conversely, given $v, w$ with $|v| = |w| = r > 0$, extend $v/r$ to an orthonormal basis $(v/r, v_2, v_3)$ and $w/r$ to $(w/r, w_2, w_3)$ ([[Gram–Schmidt procedure|Gram–Schmidt]]); the matrices $P = [\,v/r \mid v_2 \mid v_3\,]$ and $Q = [\,w/r \mid w_2 \mid w_3\,]$ are orthogonal (orthonormal columns), and $A = QP^{-1} = QP^{\mathsf{T}}$ is orthogonal with $Av = Q(P^{\mathsf{T}}v) = Q(re_1) = w$. So $O_3$ acts transitively on each sphere.
 >
 > **(2)** $Ae_1 = e_1$ means the first column of $A$ is $e_1$. Orthonormality of the columns then forces the first row to be $(1, 0, 0)$ as well (the other columns are orthogonal to $e_1$), so $A = \begin{pmatrix} 1 & 0 \\ 0 & B \end{pmatrix}$, and $A^{\mathsf{T}}A = I$ iff $B^{\mathsf{T}}B = I$. The map $B \mapsto \begin{pmatrix} 1 & 0 \\ 0 & B \end{pmatrix}$ is an injective homomorphism $O_2 \to O_3$ (block multiplication) with image the stabilizer.
@@ -81,6 +85,8 @@ tags: [group-theory, math493]
 ^prop-32-3
 
 > [!proof]+ Proof
+> *Idea:* Orbit–stabilizer on the faces: any of $6$ faces on top, then $4$ turns.
+>
 > **(1)** Apply [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer]] to the action on the six faces. The action is transitive: any face can be brought to the top, so the orbit has $6$ elements. The stabilizer of a face consists of the rotations about the axis through its centre, namely by $0^\circ, 90^\circ, 180^\circ, 270^\circ$, so $|\operatorname{Stab}| = 4$. Hence $|G| = 6 \cdot 4 = 24$. (Informally: pick the cube up and set it down again — any of $6$ faces on top, then $4$ ways to turn it.)
 >
 > **(2)** Each row is the same computation.
@@ -94,6 +100,35 @@ tags: [group-theory, math493]
 ^pf-32-3
 
 *Uses:* [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-3|Def. §27.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]
+
+> [!proof]+ Second proof (signed permutation matrices)
+> *Idea:* $G$ is the signed permutation matrices of determinant $1$; solve $Av = v$ there.
+>
+> *(Not from lecture; from the student's worksheet solutions.)* As matrices, $G$ consists of the *signed permutation matrices* of determinant $1$: the matrices with exactly one nonzero entry, equal to $\pm 1$, in each row and each column, i.e. $A = DM(\sigma)$ with $\sigma \in S_3$, $M(\sigma)$ the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|permutation matrix]], and $D$ diagonal with diagonal entries $\pm 1$. (The face centres $\pm e_1, \pm e_2, \pm e_3$ are the points of the boundary of $C$ nearest the origin, and an orthogonal symmetry of $C$ preserves both $C$ and lengths, so it permutes them; hence each column $Ae_i$ is some $\pm e_j$, with distinct $j$ for distinct $i$. Conversely such an $A$ permutes the coordinates up to sign, so it maps $C = \{|x|, |y|, |z| \leq 1\}$ onto itself.) There are $3! \cdot 2^3 = 48$ signed permutation matrices, which is (3). Since $\det(DM(\sigma)) = \det D \cdot \operatorname{sgn}(\sigma) = \pm 1$ ([[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|sign]]), and changing the sign of the first column is a bijection between those of determinant $1$ and those of determinant $-1$, exactly half, $24$, have determinant $1$: this is (1), matching [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer]] $6 \cdot 4$.
+>
+> *Stabilizer of $(1,0,0)$.* $Ae_1 = e_1$ says the first column is $e_1$; the first row is then $(1, 0, 0)$ as well (one nonzero entry per row), and the remaining $2 \times 2$ block is a signed permutation matrix of determinant $1$, namely $\pm I_2$ or $\pm\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$. These are the rotations about the $x$-axis by $k\pi/2$,
+>
+> $$ R_\theta = \begin{pmatrix} 1 & 0 & 0 \\ 0 & \cos\theta & -\sin\theta \\ 0 & \sin\theta & \cos\theta \end{pmatrix}, \qquad \theta \in \{0, \tfrac{\pi}{2}, \pi, \tfrac{3\pi}{2}\}; $$
+>
+> each has first column $e_1$, so fixes $(1,0,0)$, and $\det R_\theta = \cos^2\theta + \sin^2\theta = 1$. Since $R_\theta R_{\theta'} = R_{\theta + \theta'}$, $\operatorname{Stab}(1,0,0) = \langle R_{\pi/2} \rangle$ is cyclic of order $4$.
+>
+> *Stabilizer of $(1,1,0)$.* $A(1,1,0)^{\mathsf{T}} = Ae_1 + Ae_2$ is a sum of two vectors $\pm e_j$ with distinct $j$, and it equals $e_1 + e_2$ only if $\{Ae_1, Ae_2\} = \{e_1, e_2\}$; then $Ae_3 = \pm e_3$, the sign being forced by $\det A = 1$. If $Ae_1 = e_1$ and $Ae_2 = e_2$ this gives $A = I$; if $Ae_1 = e_2$ and $Ae_2 = e_1$ it gives
+>
+> $$ A = \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & -1 \end{pmatrix}, \qquad A\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}, \qquad \det A = (-1) \det\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = 1, $$
+>
+> the $180^\circ$ rotation about the axis through $(1,1,0)$ and $(-1,-1,0)$. So $\operatorname{Stab}(1,1,0) = \{I, A\}$ has order $2$.
+>
+> *Stabilizer of $(1,1,1)$.* If the columns of $A$ are $s_i e_{\sigma(i)}$ with signs $s_i = \pm 1$, then $A(1,1,1)^{\mathsf{T}} = \sum_i s_i e_{\sigma(i)}$, which equals $(1,1,1)$ iff every $s_i = 1$, i.e. iff $A = M(\sigma)$ is a permutation matrix; then $\det A = \operatorname{sgn}(\sigma) = 1$ forces $\sigma \in A_3 = \{e, (1\,2\,3), (1\,3\,2)\}$ ([[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|alternating group]]). So $\operatorname{Stab}(1,1,1)$ consists of $I$ and the two cyclic coordinate permutations
+>
+> $$ M\big((1\,2\,3)\big) = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}, \qquad M\big((1\,3\,2)\big) = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}, $$
+>
+> each with a single $1$ in every row (so fixing $(1,1,1)$) and determinant $\operatorname{sgn} = 1$ ($3$-cycles are even): the identity and the $120^\circ$ and $240^\circ$ rotations about the body diagonal, a cyclic group of order $3$.
+>
+> *Orbits.* Signed permutation matrices carry $(1,0,0)$ into the $6$ vectors $\pm e_i$, $(1,1,0)$ into the $12$ vectors with two coordinates $\pm 1$ and one $0$, and $(1,1,1)$ into the $8$ vectors $(\pm 1, \pm 1, \pm 1)$. By orbit–stabilizer the orbits have $24/4 = 6$, $24/2 = 12$ and $24/3 = 8$ elements, so they are exactly these sets, and $|\text{orbit}| \cdot |\operatorname{Stab}| = 6 \cdot 4 = 12 \cdot 2 = 8 \cdot 3 = 24 = |G|$.
+
+^pf-32-3-2
+
+*Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|Def. §20.6]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§27 Orbits#^def-27-1|Def. §27.1]]
 
 ![[m493-30-1.svg]]
 *Left: a net of the three-coloured cube from lecture (opposite faces share a colour). Right: the three kinds of rotation axis, each through one of the worksheet's points — face axis through $(1,0,0)$, edge axis through $(1,1,0)$, vertex axis through $(1,1,1)$ — with the order of the rotations about it.*

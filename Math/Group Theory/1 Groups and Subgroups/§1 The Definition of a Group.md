@@ -12,7 +12,7 @@ tags: [group-theory, math493]
 > [!definition] Definition §1.1: Group
 > A **group** $G$ is a set with a binary operation $\ast : G \times G \to G$ obeying the properties:
 > 1. **(Identity)** There is an element $e \in G$ such that $e \ast  g = g \ast  e = g$ for all $g \in G$.
-> 2. **(Inverses)** For all $g \in G$, there is an element $g^{-1}$ obeying $g \ast  g^{-1} = g^{-1} \ast  g = e$.
+> 2. **(Inverses)** For all $g \in G$, there is an element $g^{-1} \in G$ obeying $g \ast  g^{-1} = g^{-1} \ast  g = e$.
 > 3. **(Associativity)** For all $g_1, g_2, g_3 \in G$, we have $(g_1 \ast  g_2) \ast  g_3 = g_1 \ast  (g_2 \ast  g_3)$.
 
 ^def-1-1
@@ -44,6 +44,8 @@ tags: [group-theory, math493]
 ^prop-1-1
 
 > [!proof]+ Proof
+> *Idea:* Induct on $n$: split at the outermost product and reassociate to peel off $g_n$.
+>
 > Let $L_n = (\cdots((g_1g_2)g_3)\cdots)g_n$ be the left-normed product; we show by induction on $n$ that every parenthesization equals $L_n$. The cases $n \leq 2$ are trivial. For $n \geq 3$, any parenthesization has an outermost multiplication $A \cdot B$, where $A$ is a parenthesization of $g_1 \cdots g_j$ and $B$ of $g_{j+1} \cdots g_n$ for some $1 \leq j < n$. By induction $A = L_j$ and $B$ equals the left-normed product of $g_{j+1}, \ldots, g_n$. If $j = n - 1$, then $B = g_n$ and $AB = L_{n-1}g_n = L_n$. If $j < n - 1$, write $B = B'g_n$ with $B'$ the left-normed product of $g_{j+1}, \ldots, g_{n-1}$; then $AB = A(B'g_n) = (AB')g_n$ by axiom (3), and $AB'$ is a parenthesization of $g_1 \cdots g_{n-1}$, hence equals $L_{n-1}$ by induction. So $AB = L_{n-1}g_n = L_n$.
 
 ^pf-1-1

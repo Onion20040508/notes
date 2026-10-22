@@ -23,6 +23,7 @@ tags: [group-theory, hub]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-6|Corollary §41.6: The Order of SN]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-7|Corollary §41.7: Subgroup Representatives, Again]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Corollary §41.8: Index of an Intersection, Normal Case]]
+- [[§48 Solvable Groups#^prop-48-2|Proposition §48.2: Subgroups of Solvable Groups Are Solvable]]
 
 ## Connections
 - **How.** Two applications of the [[First Isomorphism Theorem for Groups]] to the projection π : G → G/N: restricted to H it has kernel H ∩ N, restricted to HN kernel N, and the two images agree, π(H) = π(HN) ([[§41 The First and Second Isomorphism Theorems#^pf-41-5|proof of §41.5]]).

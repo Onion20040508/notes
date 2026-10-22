@@ -52,6 +52,8 @@ tags: [group-theory, math493]
 ^prop-28-1
 
 > [!proof]+ Proof
+> *Idea:* The orbit of $g$ under right multiplication by $H$ is $\{gh : h \in H\} = gH$.
+>
 > (1) The right-action axioms are $g(h_1h_2) = (gh_1)h_2$ (associativity) and $ge = g$. The orbit of $g$ is $\{gh : h \in H\} = gH$. (2) Likewise with $(h_1h_2)g = h_1(h_2g)$, and orbit $Hg$. (3) The index counts left cosets, i.e. orbits in (1); Lagrange is [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]].
 
 ^pf-28-1
@@ -139,6 +141,8 @@ tags: [group-theory, math493]
 ^prop-28-3
 
 > [!proof]+ Proof
+> *Idea:* Both $gH = g'H$ and $Hg^{-1} = H(g')^{-1}$ say exactly $g^{-1}g' \in H$.
+>
 > For $g, g' \in G$: $gH = g'H$ iff $g^{-1}g' \in H$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]), while $Hg^{-1} = Hg'^{-1}$ iff $g^{-1}(g'^{-1})^{-1} = g^{-1}g' \in H$ (the [[§28 Left and Right Cosets#^prop-28-2|right-coset criterion]], with $H$ closed under inverses). The two conditions coincide, so $gH \mapsto Hg^{-1}$ is well defined and injective; it is surjective since every right coset is $Hg^{-1}$ for $g = (\text{its representative})^{-1}$. The inverse map $Hg \mapsto g^{-1}H$ is checked identically. Hence the numbers of left and right cosets agree.
 
 ^pf-28-3

@@ -27,6 +27,8 @@ tags: [group-theory, math493]
 ^lem-6-1
 
 > [!proof]+ Proof
+> *Idea:* The least nonnegative $m - kn$ is the remainder; uniqueness since $n \mid r' - r$ and $|r' - r| < n$.
+>
 > **Existence:** The set $\{m - kn : k \in \mathbb{Z}\} \cap \mathbb{Z}_{\geq 0}$ is nonempty (take $k = -|m|$; then $m - kn = m + |m| n \geq 0$ since $n \geq 1$). By [[§1 The Set ℕ of Natural Numbers#^thm-1-2|well-ordering]] it has a least element $r = m - qn \geq 0$. If $r \geq n$, then $r - n = m - (q+1)n$ is a smaller nonnegative element, contradiction; so $r < n$.
 >
 > **Uniqueness:** If $m = qn + r = q'n + r'$ with $0 \leq r, r' < n$, then $(q - q')n = r' - r$, and $|r' - r| < n$. The left side is a multiple of $n$ with absolute value less than $n$, hence zero: $q = q'$ and $r = r'$.

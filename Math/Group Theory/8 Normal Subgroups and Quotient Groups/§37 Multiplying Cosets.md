@@ -32,6 +32,8 @@ Since the right side is computed from the chosen representatives $g_1, g_2$, thi
 ^prop-37-1
 
 > [!proof]+ Proof
+> *Idea:* Well-definedness reduces to $v_1^{-1}(u_1^{-1}u_2)v_1 \in H$, a conjugate of an element of $H$.
+>
 > Well-definedness means: whenever $u_1H = u_2H$ and $v_1H = v_2H$, also $(u_1v_1)H = (u_2v_2)H$. By the coset criterion $aH = bH \iff a^{-1}b \in H$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]), the hypotheses are $u_1^{-1}u_2 \in H$ and $v_1^{-1}v_2 \in H$, and the desired conclusion is $(u_1v_1)^{-1}(u_2v_2) \in H$. Compute
 >
 > $$ (u_1v_1)^{-1}(u_2v_2) = v_1^{-1}u_1^{-1}u_2v_2 = \big(v_1^{-1}(u_1^{-1}u_2)v_1\big)\big(v_1^{-1}v_2\big). $$

@@ -24,6 +24,8 @@ tags: [group-theory, math493]
 ^prop-31-1
 
 > [!proof]+ Proof
+> *Idea:* Left multiplication on cosets is well defined; $g''(g')^{-1}$ carries $g'H$ to $g''H$.
+>
 > **(1)** *Well defined:* the rule uses a representative $g'$ of the coset $g'H$, so suppose $g'H = g''H$, i.e. $(g')^{-1}g'' \in H$. Then
 >
 > $$

@@ -21,6 +21,8 @@ tags: [group-theory, math493]
 ^thm-41-1
 
 > [!proof]+ Proof
+> *Idea:* $\alpha$ is constant on each coset of $N$ and takes different values on different cosets.
+>
 > **Well defined.** Suppose $gN = g'N$. Then $g = g'n$ for some $n \in N$, so $\alpha(g) = \alpha(g')\alpha(n) = \alpha(g')\,e_H = \alpha(g')$.
 >
 > **Injective.** Suppose $\beta(gN) = \beta(g'N)$, i.e. $\alpha(g) = \alpha(g')$. Let $h = g^{-1}g'$, so $gh = g'$. Then $\alpha(h) = \alpha(g)^{-1}\alpha(g') = e_H$, so $h \in N$, and $g'N = ghN = gN$.
@@ -116,6 +118,8 @@ tags: [group-theory, math493]
 ^lem-41-3
 
 > [!proof]+ Proof
+> *Idea:* Move elements of $N$ past elements of $H$: $nh = h\,(h^{-1}nh)$ with $h^{-1}nh \in N$.
+>
 > *Closure (lecture).* Let $h_1, h_2 \in H$ and $n_1, n_2 \in N$. Since $N$ is normal, $n_1h_2 = h_2n'$ for some $n' \in N$ ($n' = h_2^{-1}n_1h_2$). So $h_1n_1 \cdot h_2n_2 = h_1h_2 \cdot n'n_2 \in HN$. *Containment:* $h = he$ and $n = en$.
 >
 > *Identity (PS 4.1(2)).* $e = ee \in HN$, since $e \in H$ and $e \in N$.
@@ -165,6 +169,8 @@ tags: [group-theory, math493]
 ^thm-41-5
 
 > [!proof]+ Proof
+> *Idea:* Apply the First Isomorphism Theorem to $\pi$ restricted to $H$ and to $HN$.
+>
 > *$\pi(H) = \pi(HN)$.* For $h \in H$, $\pi(h) = \pi(he) \in \pi(HN)$. For $hn \in HN$, $\pi(hn) = \pi(h)\pi(n) = \pi(h) \in \pi(H)$, since $n \in N = \operatorname{Ker}\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]).
 >
 > *Two applications of the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]]* (§41). Restrict $\pi$ to $H$: the kernel is $\{h \in H : hN = N\} = H \cap N$, so $H \cap N$ is normal in $H$ ([[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]]) and $H/(H \cap N) \cong \pi(H)$. Restrict $\pi$ to $HN$: the kernel is $HN \cap N = N$, since $N \subseteq HN$ ([[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]), so $N \trianglelefteq HN$ and $HN/N \cong \pi(HN)$. Combining with $\pi(H) = \pi(HN)$ gives the chain.
@@ -177,7 +183,7 @@ tags: [group-theory, math493]
 *The “diamond” picture of the Second Isomorphism Theorem: lines denote inclusion, and the two marked quotients on opposite sides agree, $HN/N \cong H/(H \cap N)$.*
 
 > [!remark] Remark: The Second Isomorphism Theorem Revisited
-> The lemma ([[§41 The First and Second Isomorphism Theorems#^lem-41-4|Lemma §41.4]]) is exactly what the proof of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] uses: with $\pi: G \to G/N$, the restriction to $SN$ has kernel $N \cap SN = N$, the restriction to $S$ has kernel $N \cap S$, and both have the same image $\pi(SN) = \pi(S)$. So
+> The lemma ([[§41 The First and Second Isomorphism Theorems#^lem-41-4|Lemma §41.4]]) is exactly what the proof of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] uses: with $\pi: G \to G/N$ and a subgroup $S \leq G$ (WS 8.2's name for $H$), the restriction to $SN$ has kernel $N \cap SN = N$, the restriction to $S$ has kernel $N \cap S$, and both have the same image $\pi(SN) = \pi(S)$. So
 >
 > $$ SN/N \;\cong\; \pi(SN) \;=\; \pi(S) \;\cong\; S/(S \cap N), $$
 >
@@ -207,6 +213,8 @@ tags: [group-theory, math493]
 ^cor-41-6
 
 > [!proof]+ Proof
+> *Idea:* Take orders on both sides of $S/(S \cap N) \cong SN/N$.
+>
 > *(Not from lecture; filled in.)* By Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]] (with $H = S$), $SN$ is a subgroup of $G$. It is finite: by Definition [[§41 The First and Second Isomorphism Theorems#^def-41-1|§41.1]] it is the image of the map $S \times N \to SN$, $(s, n) \mapsto sn$, so it has at most $|S|\,|N|$ elements. By the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], with $H = S$), $S \cap N \trianglelefteq S$, $N \trianglelefteq SN$, and
 >
 > $$ S/(S \cap N) \cong SN/N. $$
@@ -229,6 +237,8 @@ tags: [group-theory, math493]
 ^cor-41-7
 
 > [!proof]+ Proof
+> *Idea:* The Second Isomorphism Theorem with $H = S$, where $SN = G$ and $S \cap N = \{e\}$.
+>
 > Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]], §40.4). The [[§41 The First and Second Isomorphism Theorems#^thm-41-5|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
 
 ^pf-41-7

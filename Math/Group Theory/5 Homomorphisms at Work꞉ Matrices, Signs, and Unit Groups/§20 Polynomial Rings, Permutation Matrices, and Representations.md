@@ -61,7 +61,7 @@ tags: [group-theory, math493]
 ^ex-20-1
 
 > [!theorem] Proposition §20.1: Compatibility of the Action with Composition
-> For all $\sigma, \tau \in S_n$ and $f \in k[x_1, \ldots, x_n]$:
+> For all $\sigma, \tau \in S_n$ and $f, g \in k[x_1, \ldots, x_n]$:
 >
 > $$
 > e \cdot f = f, \qquad \sigma \cdot (\tau \cdot f) = (\sigma\tau) \cdot f.
@@ -108,6 +108,8 @@ tags: [group-theory, math493]
 ^thm-20-2
 
 > [!proof]+ Proof
+> *Idea:* Define $T$ through the unique coordinates $c_i$; linearity forces uniqueness.
+>
 > **Existence:** Since every $v \in V$ has a unique expression $v = \sum c_i b_i$, the formula defines a function $T$ on all of $V$. It is linear: if $v = \sum c_i b_i$ and $v' = \sum c_i' b_i$, then $v + \lambda v' = \sum (c_i + \lambda c_i') b_i$, so $T(v + \lambda v') = \sum (c_i + \lambda c_i') w_i = T(v) + \lambda T(v')$. And $T(b_i) = w_i$ by taking $c_i = 1$, other coefficients $0$.
 >
 > **Uniqueness:** If $T'$ is linear with $T'(b_i) = w_i$, then by linearity $T'(\sum c_i b_i) = \sum c_i T'(b_i) = \sum c_i w_i = T(\sum c_i b_i)$, so $T' = T$.

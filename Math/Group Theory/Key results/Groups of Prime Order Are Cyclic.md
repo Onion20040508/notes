@@ -23,6 +23,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§29 The Index and Lagrange's Theorem#^cor-29-8|Corollary §29.8: Groups of Prime Order Have No Proper Nontrivial Subgroups]]
+- [[§48 Solvable Groups#^prop-48-1|Proposition §48.1: S_3 and S_4 Are Solvable]]
 - [[§51 p-Groups and Sylow Subgroups#^thm-51-7|Theorem §51.7: Groups of Order p²]]
 - [[§52 The Sylow Theorems#^prop-52-11|Proposition §52.11: Groups of Order pq]]
 

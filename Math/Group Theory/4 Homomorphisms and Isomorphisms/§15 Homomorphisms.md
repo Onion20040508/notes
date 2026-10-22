@@ -32,6 +32,8 @@ tags: [group-theory, math493]
 ^prop-15-1
 
 > [!proof]+ Proof
+> *Idea:* Cancel $\varphi(e_G)$ in $\varphi(e_G) = \varphi(e_G)\varphi(e_G)$; a one-sided inverse is two-sided.
+>
 > $\varphi(e_G) = \varphi(e_G \cdot e_G) = \varphi(e_G)\varphi(e_G)$; cancelling $\varphi(e_G)$ in $H$ ([[§2 First Consequences of the Axioms#^prop-2-1|Cancellation]], §2) gives $\varphi(e_G) = e_H$. Then $\varphi(g)\varphi(g^{-1}) = \varphi(g g^{-1}) = \varphi(e_G) = e_H$, so $\varphi(g^{-1})$ is a one-sided, hence two-sided, inverse of $\varphi(g)$ ([[§2 First Consequences of the Axioms#^prop-2-6|One-Sided Inverses Suffice]], §2).
 
 ^pf-15-1
@@ -94,6 +96,8 @@ tags: [group-theory, math493]
 ^prop-15-2
 
 > [!proof]+ Proof
+> *Idea:* Check the three subgroup conditions using $\varphi(e_G) = e_H$ and $\varphi(g^{-1}) = \varphi(g)^{-1}$.
+>
 > **Image.** $e_H = \varphi(e_G) \in \operatorname{Im}\varphi$. If $\varphi(g) \in \operatorname{Im}\varphi$, then $\varphi(g)^{-1} = \varphi(g^{-1}) \in \operatorname{Im}\varphi$. If $\varphi(g), \varphi(g') \in \operatorname{Im}\varphi$, then $\varphi(g)\varphi(g') = \varphi(gg') \in \operatorname{Im}\varphi$.
 >
 > **Kernel.** $\varphi(e_G) = e_H$, so $e_G \in \operatorname{Ker}\varphi$. If $\varphi(g) = e_H$, then $\varphi(g^{-1}) = \varphi(g)^{-1} = e_H$. If $\varphi(g) = \varphi(g') = e_H$, then $\varphi(gg') = e_H \cdot e_H = e_H$.
@@ -117,6 +121,8 @@ tags: [group-theory, math493]
 ^prop-15-3
 
 > [!proof]+ Proof
+> *Idea:* $\varphi(g_1) = \varphi(g_2)$ iff $g_1 g_2^{-1} \in \operatorname{Ker}\varphi$.
+>
 > (1) is the definition of surjective. (2) ($\Rightarrow$) $\varphi(e_G) = e_H$, and injectivity forbids any other element from mapping to $e_H$. ($\Leftarrow$) If $\varphi(g_1) = \varphi(g_2)$, then $\varphi(g_1 g_2^{-1}) = \varphi(g_1)\varphi(g_2)^{-1} = e_H$, so $g_1 g_2^{-1} \in \operatorname{Ker}\varphi = \{e_G\}$, giving $g_1 = g_2$. (3) combines (1), (2).
 
 ^pf-15-3
@@ -149,7 +155,7 @@ tags: [group-theory, math493]
 > Let $\varphi: G \to H$ be a group homomorphism.
 > 1. If $G' \leq G$, then $\varphi(G') = \{\varphi(g') : g' \in G'\}$ is a subgroup of $H$. (Taking $G' = G$ recovers $\operatorname{Im}\varphi \leq H$.)
 > 2. If $H' \leq H$, then $\varphi^{-1}(H') = \{g \in G : \varphi(g) \in H'\}$ is a subgroup of $G$. (Taking $H' = \{e_H\}$ recovers $\operatorname{Ker}\varphi \leq G$.)
-> 3. If $\varphi$ is injective, then $\varphi$ restricts to an isomorphism $G' \to \varphi(G')$, and $G' \mapsto \varphi(G')$ is injective on subgroups.
+> 3. If $\varphi$ is injective, then for every $G' \leq G$, $\varphi$ restricts to an isomorphism $G' \to \varphi(G')$, and $G' \mapsto \varphi(G')$ is injective on subgroups.
 
 ^prop-15-4
 

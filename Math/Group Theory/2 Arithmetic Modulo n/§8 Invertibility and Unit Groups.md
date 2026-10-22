@@ -22,7 +22,7 @@ tags: [group-theory, math493]
 >
 > $$ ax \equiv 1 \pmod n, $$
 >
-> i.e. $ax = 1 + kn$ for some $k$: some multiple of $a$ is one more than a multiple of $n$. Such an $x$ is called an **inverse of $a$ modulo $n$**, and $[x]$ is written $[a]^{-1}$. An invertible class is also called a **unit** modulo $n$.
+> i.e. $ax = 1 + kn$ for some $k \in \mathbb{Z}$: some multiple of $a$ is one more than a multiple of $n$. Such an $x$ is called an **inverse of $a$ modulo $n$**, and $[x]$ is written $[a]^{-1}$. An invertible class is also called a **unit** modulo $n$.
 
 ^def-8-2
 
@@ -47,6 +47,8 @@ tags: [group-theory, math493]
 ^prop-8-1
 
 > [!proof]+ Proof
+> *Idea:* A common divisor of $a, n$ divides $ax - kn = 1$; conversely, Bézout gives $ax + ny = 1$.
+>
 > ($\Rightarrow$) Suppose $ax = 1 + kn$, so $ax - kn = 1$. Any positive integer $d$ dividing both $a$ and $n$ divides $ax - kn = 1$, hence $d = 1$. So $\gcd(a, n) = 1$.
 >
 > ($\Leftarrow$) Suppose $\gcd(a, n) = 1$. By [[§5 A Zoo of Subgroups#^cor-5-2|Bézout's identity]] (proved later in this section as a corollary of the classification of subgroups of $\mathbb{Z}$), there are integers $x, y$ with $ax + ny = 1$. Reading this modulo $n$: $ax = 1 - ny \equiv 1 \pmod n$, so $[x]$ is an inverse of $[a]$.
@@ -170,11 +172,13 @@ tags: [group-theory, math493]
 ^ex-8-5
 
 > [!theorem] Proposition §8.2: Multiplication by a Nonzero Class Permutes the Nonzero Classes Modulo $p$
-> Let $p$ be prime and $p \nmid a$. Then $[x] \mapsto [a][x]$ is a bijection of $\{[1], \ldots, [p-1]\}$ onto itself. In particular $[a]$ is invertible modulo $p$.
+> Let $p$ be prime and $a \in \mathbb{Z}$ with $p \nmid a$. Then $[x] \mapsto [a][x]$ is a bijection of $\{[1], \ldots, [p-1]\}$ onto itself. In particular $[a]$ is invertible modulo $p$.
 
 ^prop-8-2
 
 > [!proof]+ Proof
+> *Idea:* Euclid's lemma makes $[x] \mapsto [a][x]$ injective on the $p - 1$ nonzero classes, hence onto.
+>
 > For $1 \leq x \leq p-1$, $p \nmid ax$ by Euclid's Lemma ([[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]]; it depends only on Bézout, [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]]), so the products land among the nonzero classes. They are pairwise distinct: if $ai \equiv aj$, then $p \mid a(i-j)$, so $p \mid i - j$ by Euclid's Lemma, forcing $i = j$. So the $p - 1$ products occupy $p - 1$ distinct nonzero classes, i.e. all of them, including $[1]$: some $x$ has $ax \equiv 1$.
 
 ^pf-8-2
@@ -207,6 +211,8 @@ tags: [group-theory, math493]
 ^prop-8-3
 
 > [!proof]+ Proof
+> *Idea:* Bézout identities $ax + ny = 1$: multiply two for closure; $[x]$ is the inverse of $[a]$.
+>
 > We verify each point in turn. Throughout we use [[§5 A Zoo of Subgroups#^cor-5-2|Bézout's identity]]: $\gcd(a, n) = 1$ if and only if there exist $x, y \in \mathbb{Z}$ with $ax + ny = 1$ (as in the [[§8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]] above).
 >
 > **Membership is well-defined:** If $[a] = [a']$, then $a' = a + kn$, and $\gcd(a', n) = \gcd(a + kn, n) = \gcd(a, n)$ (any common divisor of $a$ and $n$ divides $a + kn$, and conversely). So the condition $\gcd(a, n) = 1$ depends only on the class $[a]$.
@@ -244,6 +250,8 @@ tags: [group-theory, math493]
 ^prop-8-4
 
 > [!proof]+ Proof
+> *Idea:* Field iff every nonzero class is a unit, iff every $1 \leq a < n$ is coprime to $n$.
+>
 > $(\mathbb{Z}/n\mathbb{Z}, +)$ is an abelian group, and multiplication of classes is well defined, associative, commutative, has identity $[1] \neq [0]$, and distributes over addition, all inherited from $\mathbb{Z}$ exactly as in the verification for $U_n$ ([[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]]). So $\mathbb{Z}/n\mathbb{Z}$ is a field iff every nonzero class is invertible. If $n = p$ is prime, every $a \in \{1, \ldots, p-1\}$ has $\gcd(a, p) = 1$, so every nonzero class is a unit by the [[§8 Invertibility and Unit Groups#^prop-8-1|Invertibility Criterion]]. If $n = ab$ with $1 < a, b < n$, then $[a] \neq [0]$ but $\gcd(a, n) = a \neq 1$, so $[a]$ is not invertible (indeed $[a][b] = [0]$).
 
 ^pf-8-4

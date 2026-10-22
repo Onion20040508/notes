@@ -27,7 +27,7 @@ $S_3$ has exactly three normal subgroups, $\{e\}$, $A_3$ and $S_3$: $\langle (1\
 
 > [!example] Example §45.1: The Second Isomorphism Theorem in Action
 > 1. $G = S_3$, $N = A_3$ ([[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]]), $H = \langle (1\,2) \rangle$: $H \cap N = \{e\}$ and $HN = S_3$, so $\langle (1\,2) \rangle \cong S_3/A_3$.
-> 2. $G = S_4$, $N = K$ ([[§39 Sources of Normal Subgroups#^ex-39-3|Ex. §39.3]]), $H = \operatorname{Stab}(4) \cong S_3$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]): every non-identity element of $K$ moves $4$, so $H \cap K = \{e\}$, and $HV/K \cong H$ has $6 = 24/4 = |S_4/K|$ elements, so $HV/K = S_4/K$. Hence $S_4/K \cong S_3$, recovering [[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]] (§43) by a second route.
+> 2. $G = S_4$, $N = K$ ([[§39 Sources of Normal Subgroups#^ex-39-3|Ex. §39.3]]), $H = \operatorname{Stab}(4) \cong S_3$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]): every non-identity element of $K$ moves $4$, so $H \cap K = \{e\}$, and $HK/K \cong H$ has $6 = 24/4 = |S_4/K|$ elements, so $HK/K = S_4/K$. Hence $S_4/K \cong S_3$, recovering [[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]] (§43) by a second route.
 
 ^ex-45-1
 

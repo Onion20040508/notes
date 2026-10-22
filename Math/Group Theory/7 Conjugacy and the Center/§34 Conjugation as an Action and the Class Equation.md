@@ -65,6 +65,8 @@ tags: [group-theory, math493]
 ^cor-34-3
 
 > [!proof]+ Proof
+> *Idea:* Sum the class sizes $|G|/|C_G(g_i)|$ to $|G|$, then divide by $|G|$.
+>
 > The conjugacy classes partition $G$, so $|G| = \sum_i |\operatorname{Conj}(g_i)|$. By [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Class Sizes Divide the Group Order]], $|\operatorname{Conj}(g_i)| = |G|/|C_G(g_i)|$. Divide by $|G|$.
 
 ^pf-34-3
@@ -85,6 +87,8 @@ tags: [group-theory, math493]
 ^thm-34-4
 
 > [!proof]+ Proof
+> *Idea:* Singleton classes make up $Z(G)$; every other class has size $[G : C_G(g_i)]$.
+>
 > $G$ is the disjoint union of its conjugacy classes ([[§27 Orbits#^prop-27-1|orbits partition, §27.1]]). The one-element classes are exactly $\{z\}$ for $z \in Z(G)$ by (3) [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|above]], contributing $|Z(G)|$; the remaining classes are $\operatorname{Conj}(g_i)$, of size $[G : C_G(g_i)]$ by [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Class Sizes Divide the Group Order]].
 
 ^pf-34-4
@@ -107,6 +111,8 @@ tags: [group-theory, math493]
 ^prop-34-5
 
 > [!proof]+ Proof
+> *Idea:* In $\frac{1}{a} + \frac{1}{b} + \frac{1}{|G|} = 1$ with $a \leq b$, bound $a$, then $b$.
+>
 > Take representatives $g_1 = e, g_2, g_3$ (the class of $e$ is $\{e\}$). Then $C_G(e) = G$, and write $a = |C_G(g_2)| \leq b = |C_G(g_3)|$ after relabelling; both are at most $|G|$. The [[§34 Conjugation as an Action and the Class Equation#^cor-34-3|reciprocal class equation]] reads
 >
 > $$

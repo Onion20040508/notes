@@ -51,7 +51,7 @@ tags: [group-theory, math493]
 > - Linear-algebra counterpart: [[§36 Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]] (swapping two entries of a permutation changes the parity of the number of inversions).
 
 > [!theorem] Theorem §21.2: Three Formulas for the Sign
-> Let $\sigma \in S_n$, let $\Delta = \prod_{1 \leq i < j \leq n}(x_i - x_j) \in \mathbb{Q}[x_1, \ldots, x_n]$, and let $M(\sigma)$ be the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|permutation matrix]]. Then
+> Let $\sigma \in S_n$, let $\Delta = \prod_{1 \leq i < j \leq n}(x_i - x_j) \in \mathbb{Q}[x_1, \ldots, x_n]$, and let $M(\sigma) \in GL_n(\mathbb{Q})$ be the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|permutation matrix]]. Then
 >
 > $$
 > \frac{\sigma \cdot \Delta}{\Delta} \;=\; (-1)^{\operatorname{inv}(\sigma)} \;=\; \det M(\sigma).
@@ -62,6 +62,8 @@ tags: [group-theory, math493]
 ^thm-21-2
 
 > [!proof]+ Proof
+> *Idea:* Each inversion reverses one factor of $\Delta$; bubble sort swaps columns $\operatorname{inv}(\sigma)$ times.
+>
 > **First equality.** $\sigma \cdot \Delta = \prod_{i<j}(x_{\sigma(i)} - x_{\sigma(j)})$. Let $\mathcal{P}$ be the set of $2$-element subsets of $\{1, \ldots, n\}$; the factors of $\Delta$ correspond to $\mathcal{P}$, the subset $\{i, j\}$ ($i < j$) giving $x_i - x_j$ with the smaller index first. The map $\Sigma: \{i, j\} \mapsto \{\sigma(i), \sigma(j)\}$ is a bijection $\mathcal{P} \to \mathcal{P}$ (well-defined and lands in $\mathcal{P}$ by injectivity of $\sigma$; injective by applying $\sigma^{-1}$; surjective by surjectivity of $\sigma$). For a fixed pair $i < j$, the factor $x_{\sigma(i)} - x_{\sigma(j)}$ of $\sigma\cdot\Delta$ equals the $\Delta$-factor of $\Sigma(\{i,j\})$ if $\sigma(i) < \sigma(j)$, and equals *minus* it if $\sigma(i) > \sigma(j)$, i.e. exactly when $(i, j)$ is an inversion. Since multiplication of polynomials is commutative, the order of the factors is immaterial, and reindexing along $\Sigma$ gives
 >
 > $$
@@ -98,6 +100,8 @@ tags: [group-theory, math493]
 ^thm-21-3
 
 > [!proof]+ Proof
+> *Idea:* $\operatorname{sgn} = \det \circ M$ is a composite of two homomorphisms.
+>
 > By [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]], $M(\sigma\tau) = M(\sigma)M(\tau)$. Hence $\operatorname{sgn}(\sigma\tau) = \det(M(\sigma)M(\tau)) = \det M(\sigma)\det M(\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$, by [[§37 Determinants#^ladr-9-49|multiplicativity of the determinant]].
 
 ^pf-21-3
@@ -105,6 +109,8 @@ tags: [group-theory, math493]
 *Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§37 Determinants#^ladr-9-49|LADR 9.49]]
 
 > [!proof]+ Second proof, via $\Delta$ (review session 10/21)
+> *Idea:* $\Delta$ is a common eigenvector; compute $(\sigma\tau) \cdot \Delta$ in two ways.
+>
 > By [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]] and [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|the definition of the sign]], $\sigma \cdot \Delta = \operatorname{sgn}(\sigma)\,\Delta$ for every $\sigma \in S_n$. The action of $S_n$ on polynomials is compatible with composition and respects products ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|Compatibility of the Action with Composition]]); since a constant polynomial $c$ is fixed, $\sigma \cdot c = c$, this gives $\sigma \cdot (c f) = (\sigma \cdot c)(\sigma \cdot f) = c\,(\sigma \cdot f)$. Hence
 >
 > $$ (\sigma\tau) \cdot \Delta = \sigma \cdot (\tau \cdot \Delta) = \sigma \cdot \big(\operatorname{sgn}(\tau)\,\Delta\big) = \operatorname{sgn}(\tau)\,(\sigma \cdot \Delta) = \operatorname{sgn}(\tau)\operatorname{sgn}(\sigma)\,\Delta. $$
@@ -201,6 +207,8 @@ tags: [group-theory, math493]
 ^thm-21-7
 
 > [!proof]+ Proof
+> *Idea:* Bubble-sort $\sigma$ to $e$ by adjacent swaps, then read the swaps backwards.
+>
 > **(1)** Bubble-sort the sequence $(\sigma(1), \ldots, \sigma(n))$; by the [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-1|Sorting Lemma]] it performs $m = \operatorname{inv}(\sigma)$ swaps, at positions $(k_1, k_1{+}1), \ldots, (k_m, k_m{+}1)$ in that order, and ends at $(1, \ldots, n)$. By [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-1|Lemma (4)]], with $t_i = (k_i\ \ k_i{+}1)$, the final sequence is that of $\sigma t_1 t_2 \cdots t_m$; a permutation is determined by its sequence of values, and $(1, \ldots, n)$ is the sequence of $e$, so $\sigma t_1 \cdots t_m = e$. Hence $\sigma = (t_1 \cdots t_m)^{-1} = t_m^{-1} \cdots t_1^{-1} = t_m \cdots t_1$, since each transposition is its own inverse.
 >
 > **(2)** By (1), the adjacent transpositions generate $S_n$. By Adjacent Transpositions from $(1\,j)$'s ([[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|§21.6]]), each adjacent transposition is a product of elements $(1\,j)$, so substituting expresses every $\sigma$ as a product of $(1\,j)$'s; each $(1\,j)$ is its own inverse, so no inverses are needed.
@@ -229,6 +237,8 @@ tags: [group-theory, math493]
 ^thm-21-9
 
 > [!proof]+ Proof
+> *Idea:* Write $\sigma$ as an even number of $(1\,j)$'s and pair them into $3$-cycles.
+>
 > Let $C = \{(1\,2\,k) : 3 \leq k \leq n\}$.
 >
 > **$\langle C \rangle \subseteq A_n$:** $\operatorname{sgn}((1\,2\,k)) = \operatorname{sgn}((1\,k))\operatorname{sgn}((1\,2)) = (-1)(-1) = 1$, using the factorization from Products of Two $(1\,j)$'s ([[§21 The Sign Homomorphism and the Alternating Group#^lem-21-8|§21.8]]), [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Parity of a Permutation]] (1), and the [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|homomorphism property]]; so $C \subseteq A_n$; as $A_n$ is a subgroup ([[§15 Homomorphisms#^prop-15-2|a kernel]]), $\langle C \rangle \subseteq A_n$.

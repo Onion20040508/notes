@@ -25,6 +25,8 @@ tags: [group-theory, math493]
 ^prop-16-1
 
 > [!proof]+ Proof
+> *Idea:* Apply $\varphi^{-1}$ to $\varphi(g_1 g_2) = h_1 h_2$.
+>
 > Let $h_1, h_2 \in H$ and put $g_i = \varphi^{-1}(h_i)$, so that $\varphi(g_i) = h_i$. Since $\varphi$ is a homomorphism, $\varphi(g_1 g_2) = \varphi(g_1)\varphi(g_2) = h_1 h_2$. Applying $\varphi^{-1}$ to both sides gives $g_1 g_2 = \varphi^{-1}(h_1 h_2)$, i.e. $\varphi^{-1}(h_1 h_2) = \varphi^{-1}(h_1)\,\varphi^{-1}(h_2)$.
 
 ^pf-16-1
@@ -78,6 +80,8 @@ tags: [group-theory, math493]
 ^prop-16-3
 
 > [!proof]+ Proof
+> *Idea:* Transport the property through $\varphi$ or $\varphi^{-1}$ using the homomorphism identity.
+>
 > To prove two groups are *not* isomorphic, one shows no bijective homomorphism can exist; the method is to find a property preserved by isomorphisms that one group has and the other lacks.
 >
 > **(1)** Suppose $H$ is not commutative: there are $h_1, h_2 \in H$ with $h_1 h_2 \neq h_2 h_1$. Since $\varphi^{-1}$ is a homomorphism ([[§16 Isomorphisms#^prop-16-1|§16.1]]) and $G$ is commutative,
@@ -108,6 +112,8 @@ tags: [group-theory, math493]
 ^prop-16-4
 
 > [!proof]+ Proof
+> *Idea:* Divide $n$ by $d = \operatorname{ord}(\varphi(g))$; the remainder also kills $\varphi(g)$, so is $0$.
+>
 > **(1)** For $k \geq 0$ by induction: $\varphi(g^{k+1}) = \varphi(g^k g) = \varphi(g^k)\varphi(g) = \varphi(g)^{k+1}$. For $k < 0$, $\varphi(g^k) = \varphi((g^{-k})^{-1}) = \varphi(g^{-k})^{-1} = (\varphi(g)^{-k})^{-1} = \varphi(g)^k$, using [[§15 Homomorphisms#^prop-15-1|WS 2.9]].
 >
 > **(2)** $\varphi(g)^n = \varphi(g^n) = \varphi(e_G) = e_H$. Let $d$ be the order of $\varphi(g)$, so $d \leq n$. Write $n = qd + r$ with $0 \leq r < d$; then $e_H = \varphi(g)^n = (\varphi(g)^d)^q \varphi(g)^r = \varphi(g)^r$, and minimality of $d$ forces $r = 0$. So $d \mid n$.
@@ -124,11 +130,13 @@ tags: [group-theory, math493]
 > 2. $G$ is abelian iff $H$ is abelian;
 > 3. for each $n \geq 1$, $\varphi$ restricts to a bijection $\{g \in G : g^n = e_G\} \to \{h \in H : h^n = e_H\}$; in particular these sets have the same size;
 > 4. for each $n$, $G$ and $H$ have the same number of elements of order $n$;
-> 5. $G$ is cyclic iff $H$ is cyclic; more precisely, $G = \langle g \rangle$ iff $H = \langle \varphi(g) \rangle$.
+> 5. $G$ is cyclic iff $H$ is cyclic; more precisely, for $g \in G$, $G = \langle g \rangle$ iff $H = \langle \varphi(g) \rangle$.
 
 ^prop-16-5
 
 > [!proof]+ Proof
+> *Idea:* Apply the earlier results to both $\varphi$ and $\varphi^{-1}$.
+>
 > (1) $\varphi$ is a bijection. (2) [[§16 Isomorphisms#^prop-16-3|WS 2.6(1)]], applied to $\varphi$ and to $\varphi^{-1}$. (3) By [[§16 Isomorphisms#^prop-16-4|Homomorphisms and Orders of Elements]] (3) applied to $\varphi$ and to $\varphi^{-1}$, $g^n = e_G \iff \varphi(g)^n = e_H$, so $\varphi$ maps the first set into the second and $\varphi^{-1}$ maps the second into the first. (4) Same, since $\varphi$ preserves the order of each element. (5) If $G = \langle g \rangle$, every $h \in H$ is $h = \varphi(g^k) = \varphi(g)^k$ for some $k$, so $H = \langle \varphi(g) \rangle$; conversely apply $\varphi^{-1}$.
 
 ^pf-16-5
@@ -153,6 +161,8 @@ tags: [group-theory, math493]
 ^prop-16-6
 
 > [!proof]+ Proof
+> *Idea:* Transport centrality and subgroups through the bijective homomorphisms $\varphi$ and $\varphi^{-1}$.
+>
 > **(1)** Let $h \in H$. As $\varphi$ is surjective, $h = \varphi(g)$ for some $g \in G$, and then
 >
 > $$
@@ -184,6 +194,8 @@ tags: [group-theory, math493]
 ^prop-16-7
 
 > [!proof]+ Proof
+> *Idea:* $2^4 \equiv 1 \pmod 5$ makes $k \mapsto 2^k$ well defined; its four values exhaust $U_5$.
+>
 > To show two groups are isomorphic one must exhibit a bijection $\varphi$ with $\varphi(gh) = \varphi(g)\varphi(h)$.
 >
 > **Well-defined.** The formula uses a representative $k \in \mathbb{Z}$ of a class in $\mathbb{Z}/4\mathbb{Z}$. Since $2^4 = 16 \equiv 1 \pmod 5$, if $k' = k + 4m$ then $2^{k'} = 2^k (2^4)^m \equiv 2^k \pmod 5$, so $\varphi$ depends only on the class of $k$. Also $2^k$ is coprime to $5$, so the values lie in $U_5$.
@@ -213,6 +225,8 @@ tags: [group-theory, math493]
 ^prop-16-8
 
 > [!proof]+ Proof
+> *Idea:* (1) Match the tables of $U_8$ and $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$; (2) $3$ generates $U_7$.
+>
 > **(1)** In $U_8 = \{1, 3, 5, 7\}$ every element squares to $1$ ([[§14 Multiplication Tables#^ex-14-4|WS 2.3]]). Define $\varphi: U_8 \to \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ by
 >
 > $$
@@ -253,6 +267,8 @@ tags: [group-theory, math493]
 ^prop-16-9
 
 > [!proof]+ Proof
+> *Idea:* Split a nonzero number into absolute value and sign; factor rational absolute values into primes.
+>
 > **(1)** Define $\varphi(x) = (|x|, s(x))$, where $s(x) = [0]$ if $x > 0$ and $s(x) = [1]$ if $x < 0$. Homomorphism: $|xy| = |x||y|$, and the sign of a product is the product of signs, which in $\mathbb{Z}/2\mathbb{Z}$ reads $s(xy) = s(x) + s(y)$ (negative times negative is positive: $[1] + [1] = [0]$). Bijective: the inverse map is $(r, [0]) \mapsto r$, $(r, [1]) \mapsto -r$, which is well-defined since $r > 0$ and $-r < 0$ are distinct and every nonzero real is exactly one of these.
 >
 > **(2)** Let $p_1 = 2, p_2 = 3, p_3 = 5, \ldots$ be the primes. By [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|unique factorization]] (extended to negative exponents by clearing denominators), every $q \in \mathbb{Q}^\times$ has a unique expression
@@ -266,6 +282,19 @@ tags: [group-theory, math493]
 ^pf-16-9
 
 *Uses:* [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
+
+> [!proof]+ Second proof of (2) (valuations, with well-definedness)
+> *(Not from lecture; from the student's worksheet solutions.)* Let $p_1 = 2, p_2 = 3, p_3 = 5, \ldots$ be the primes in increasing order. By [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|Unique Prime Factorization]], every positive integer $m$ is uniquely $m = \prod_{i \geq 1} p_i^{v_i(m)}$ with $v_i(m) \in \mathbb{Z}_{\geq 0}$, almost all $0$. Multiplying the factorizations of positive integers $m, m'$ gives a factorization of $mm'$, so by uniqueness $v_i(mm') = v_i(m) + v_i(m')$ for all $i$.
+>
+> *Definition of $\alpha$.* For $q \in \mathbb{Q}^\times$, write $|q| = m/n$ with $m, n$ positive integers, and set $a_i(q) = v_i(m) - v_i(n) \in \mathbb{Z}$. This does not depend on the choice of $m, n$: if $m/n = m'/n'$, then $mn' = m'n$, so $v_i(m) + v_i(n') = v_i(m') + v_i(n)$, that is, $v_i(m) - v_i(n) = v_i(m') - v_i(n')$. Only finitely many primes divide $m$ or $n$, so $(a_i(q))_{i \geq 1} \in \mathbb{Z}^{\oplus\infty}$. Define $\alpha(q) = \big((a_i(q))_{i \geq 1},\, s(q)\big)$, with $s$ the sign class of (1).
+>
+> *Homomorphism.* Let $q, q' \in \mathbb{Q}^\times$ with $|q| = m/n$ and $|q'| = m'/n'$. Then $|qq'| = mm'/(nn')$, so $a_i(qq') = v_i(mm') - v_i(nn') = \big(v_i(m) - v_i(n)\big) + \big(v_i(m') - v_i(n')\big) = a_i(q) + a_i(q')$; together with $s(qq') = s(q) + s(q')$ this gives $\alpha(qq') = \alpha(q) + \alpha(q')$.
+>
+> *Bijection.* Define $\beta\big((a_i), \varepsilon\big) = (-1)^\varepsilon \prod_{i \geq 1} p_i^{a_i}$, a finite product since almost all $a_i$ are $0$; $(-1)^\varepsilon$ is well defined for $\varepsilon \in \mathbb{Z}/2\mathbb{Z}$ since $(-1)^2 = 1$. For $q \in \mathbb{Q}^\times$ with $|q| = m/n$, $\prod_i p_i^{a_i(q)} = \prod_i p_i^{v_i(m)} \big/ \prod_i p_i^{v_i(n)} = m/n = |q|$, so $\beta(\alpha(q)) = (-1)^{s(q)}|q| = q$. Conversely, given $\big((a_i), \varepsilon\big)$, the number $r = \prod_i p_i^{a_i} > 0$ equals $m/n$ with $m = \prod_{a_i > 0} p_i^{a_i}$ and $n = \prod_{a_i < 0} p_i^{-a_i}$, so $v_i(m) - v_i(n) = \max(a_i, 0) - \max(-a_i, 0) = a_i$; and $(-1)^\varepsilon r$ has absolute value $r$ and sign class $\varepsilon$. Hence $\alpha\big(\beta((a_i), \varepsilon)\big) = \big((a_i), \varepsilon\big)$. So $\beta$ is a two-sided inverse of $\alpha$, and $\alpha$ is an isomorphism.
+
+^pf-16-9-2
+
+*Uses:* [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark] Remark: Interpretation
 > Both isomorphisms split a multiplicative group into “size” and “sign.” In (2), the size part says that, as a group, the positive rationals are freely generated by the primes: $\mathbb{Q}_{>0} \cong \mathbb{Z}^{\oplus\infty}$ is the group-theoretic content of the [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|Fundamental Theorem of Arithmetic]].

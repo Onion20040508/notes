@@ -20,6 +20,8 @@ tags: [group-theory, math493]
 ^prop-30-1
 
 > [!proof]+ Proof
+> *Idea:* Apply $g_1^{-1}$, then use the coset criterion with $H = \operatorname{Stab}(x)$.
+>
 > (1) $\Leftrightarrow$ (2): apply $g_1^{-1}$ to both sides of (1) to get $x = (g_1^{-1}g_2) \star x$, which is (2); apply $g_1$ to (2) to recover (1). (2) $\Leftrightarrow$ (3): this is the coset criterion of [[§28 Left and Right Cosets#^prop-28-2|§28.2]], $g_1H = g_2H \iff g_1^{-1}g_2 \in H$, with $H = \operatorname{Stab}(x)$.
 
 ^pf-30-1
@@ -40,6 +42,8 @@ tags: [group-theory, math493]
 ^prop-30-2
 
 > [!proof]+ Proof
+> *Idea:* $g_1 \star x = g_2 \star x$ if and only if $g_1\operatorname{Stab}(x) = g_2\operatorname{Stab}(x)$.
+>
 > Write $H = \operatorname{Stab}(x)$. Three things must be checked, and the first is the one that is easy to overlook.
 >
 > **Well defined.** The formula uses a representative $g$ of the coset $gH$, so we must check the value is unchanged if another representative is used. Suppose $g_1 H = g_2 H$. Then $g_1 = g_2 h$ for some $h \in H$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]), and since $h \star x = x$ by definition of the stabilizer,
@@ -81,6 +85,8 @@ tags: [group-theory, math493]
 ^thm-30-3
 
 > [!proof]+ Proof
+> *Idea:* The orbit bijection gives $|Gx| = [G : \operatorname{Stab}(x)]$; then apply Lagrange.
+>
 > By [[§30 Orbit–Stabilizer#^prop-30-2|WS 5.2]], $|Gx| = |G/\operatorname{Stab}(x)| = [G : \operatorname{Stab}(x)]$, and $\operatorname{Stab}(x)$ is a subgroup ([[§26 Stabilizers and Fixed Points#^prop-26-1|WS 4.4]]). Lagrange gives $|G| = |\operatorname{Stab}(x)| \cdot [G : \operatorname{Stab}(x)]$.
 
 ^pf-30-3
@@ -139,6 +145,8 @@ tags: [group-theory, math493]
 ^prop-30-4
 
 > [!proof]+ Proof
+> *Idea:* Evaluate at $n$: $\alpha H = \beta H$ iff $\beta^{-1}\alpha$ fixes $n$.
+>
 > **Left cosets.** ($\Rightarrow$) Since $e \in H$, $\alpha = \alpha e \in \alpha H = \beta H$, so $\alpha = \beta h$ for some $h \in H$; evaluating at $n$ and using $h(n) = n$,
 >
 > $$
@@ -203,6 +211,8 @@ tags: [group-theory, math493]
 ^thm-30-6
 
 > [!proof]+ Proof
+> *Idea:* Count the pairs $(x, g)$ with $g \star x = x$ in two ways; apply orbit–stabilizer.
+>
 > Count the set $P = \{(x, g) \in X \times G : g \star x = x\}$ in two ways. Grouping by $g$, the pairs with second entry $g$ are those with $x \in \operatorname{Fix}(g)$; grouping by $x$, those with first entry $x$ are those with $g \in \operatorname{Stab}(x)$. So
 >
 > $$

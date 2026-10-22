@@ -55,6 +55,8 @@ tags: [group-theory, math493]
 ^prop-27-1
 
 > [!proof]+ Proof
+> *Idea:* A common point carries $x$ into $Gy$, so $Gx \subseteq Gy$, and symmetrically.
+>
 > Suppose $z \in Gx \cap Gy$, say $z = g \star x = h \star y$ with $g, h \in G$. Then $x = g^{-1} \star (h \star y) = (g^{-1}h) \star y \in Gy$, so for any $a \in G$, $a \star x = (ag^{-1}h) \star y \in Gy$; thus $Gx \subseteq Gy$. Symmetrically $Gy \subseteq Gx$. So a nonempty intersection forces equality. Every $x$ lies in its own orbit ($x = e \star x$), so the orbits cover $X$.
 
 ^pf-27-1

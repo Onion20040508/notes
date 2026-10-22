@@ -23,6 +23,8 @@ Recall from The Group $S_3$ in Detail ([[§10 Cycle Notation and the Group S₃#
 ^prop-13-1
 
 > [!proof]+ Proof
+> *Idea:* Two distinct transpositions give a $3$-cycle; then sort $H$ by the cycle types it contains.
+>
 > Each listed set is a subgroup: $\{e\}$ and $S_3$ trivially, and the others by [[§4 Subgroups#^prop-4-5|WS 1.5]] (each is $\langle g \rangle$ for some $g$; e.g. $\langle (1\,2) \rangle = \{e, (1\,2)\}$ since $(1\,2)^2 = e$).
 >
 > Conversely, let $H \leq S_3$ with $H \neq \{e\}$; we show $H$ is on the list.

@@ -51,6 +51,8 @@ tags: [group-theory, math493]
 ^prop-26-1
 
 > [!proof]+ Proof
+> *Idea:* Check identity, products and inverses directly from the two action axioms.
+>
 > $e \star x = x$, so $e \in \operatorname{Stab}(x)$. If $g, h \in \operatorname{Stab}(x)$, then $(gh) \star x = g \star (h \star x) = g \star x = x$. If $g \in \operatorname{Stab}(x)$, apply $g^{-1}$ to both sides of $g \star x = x$: $x = g^{-1} \star (g \star x) = g^{-1} \star x$, so $g^{-1} \in \operatorname{Stab}(x)$.
 
 ^pf-26-1
@@ -69,6 +71,8 @@ tags: [group-theory, math493]
 ^prop-26-2
 
 > [!proof]+ Proof
+> *Idea:* $h$ fixes $g \star x$ if and only if $g^{-1}hg$ fixes $x$.
+>
 > ($\subseteq$) Let $h \in \operatorname{Stab}(gx)$, i.e. $h \star (g \star x) = g \star x$. Applying $g^{-1}$ to both sides, $(g^{-1}hg) \star x = x$, so $g^{-1}hg \in \operatorname{Stab}(x)$, and hence $h = g(g^{-1}hg)g^{-1} \in g\operatorname{Stab}(x)g^{-1}$.
 >
 > ($\supseteq$) Let $h = g g_0 g^{-1}$ with $g_0 \in \operatorname{Stab}(x)$. Then $hg = g g_0$, so

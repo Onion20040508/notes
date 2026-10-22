@@ -10,13 +10,15 @@ tags: [group-theory, math493]
 *Reference: Pinter Ch. 22 (factoring into primes), Ch. 23 (simultaneous congruences).*
 
 > [!theorem] Lemma §9.1: Euclid's Lemma
-> Let $p$ be prime and $a, b \in \mathbb{Z}$. If $p \mid ab$, then $p \mid a$ or $p \mid b$. More generally, if $\gcd(c, a) = 1$ and $c \mid ab$, then $c \mid b$.
+> Let $p$ be prime and $a, b \in \mathbb{Z}$. If $p \mid ab$, then $p \mid a$ or $p \mid b$. More generally, for $c \in \mathbb{Z}$: if $\gcd(c, a) = 1$ and $c \mid ab$, then $c \mid b$.
 >
 > *Source: cf. Pinter Ch. 22*
 
 ^lem-9-1
 
 > [!proof]+ Proof
+> *Idea:* Multiply the Bézout identity $cx + ay = 1$ by $b$.
+>
 > Suppose $\gcd(c, a) = 1$ and $c \mid ab$. By [[§5 A Zoo of Subgroups#^cor-5-2|Bézout]], $cx + ay = 1$ for some $x, y$. Multiply by $b$: $b = cbx + aby$. Both terms are divisible by $c$ (the second since $c \mid ab$), so $c \mid b$. For prime $p$: if $p \nmid a$, then $\gcd(p, a) = 1$ (the only positive divisors of $p$ are $1$ and $p$), so the general statement gives $p \mid b$.
 
 ^pf-9-1
@@ -34,6 +36,8 @@ tags: [group-theory, math493]
 ^thm-9-2
 
 > [!proof]+ Proof
+> *Idea:* Existence by strong induction; for uniqueness, Euclid's lemma matches $p_1$ with some $q_j$, then cancel.
+>
 > **Existence** by strong induction on $n$: if $n$ is prime, done; otherwise $n = ab$ with $1 < a, b < n$, and each of $a, b$ is a product of primes by induction, so $n$ is too.
 >
 > **Uniqueness** by induction on $n$. Suppose $n = p_1 \cdots p_k = q_1 \cdots q_l$ with all $p_i, q_j$ prime. Then $p_1 \mid q_1 \cdots q_l$, so by [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Euclid's lemma]] (applied repeatedly) $p_1 \mid q_j$ for some $j$; as $q_j$ is prime, $p_1 = q_j$. Cancel this common factor: $p_2 \cdots p_k = \prod_{i \neq j} q_i$, a smaller number, whose factorization is unique by induction. So the multisets $\{p_i\}$ and $\{q_j\}$ coincide.
@@ -57,6 +61,8 @@ tags: [group-theory, math493]
 ^thm-9-3
 
 > [!proof]+ Proof
+> *Idea:* Reduction is injective by Euclid's lemma, between two sets of $mn$ elements.
+>
 > **Well-defined:** if $x \equiv x' \pmod{mn}$, then $mn \mid x - x'$, hence $m \mid x - x'$ and $n \mid x - x'$. **Homomorphism:** $\rho([x] + [y]) = ([x + y]_m, [x + y]_n) = \rho([x]) + \rho([y])$. **Injective:** if $\rho([x]) = \rho([y])$, then $m \mid x - y$ and $n \mid x - y$; write $x - y = mt$; then $n \mid mt$ with $\gcd(n, m) = 1$, so $n \mid t$ by [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Euclid's lemma]], and $mn \mid x - y$. **Surjective:** both sides have $mn$ elements and $\rho$ is injective. (Constructively: with $mu + nv = 1$ from [[§5 A Zoo of Subgroups#^cor-5-2|Bézout]], $x = s\,mu + r\,nv$ satisfies $x \equiv r \pmod m$ and $x \equiv s \pmod n$.) The several-moduli version follows by induction, since $\gcd(m_1 \cdots m_{k-1}, m_k) = 1$ when the $m_i$ are pairwise coprime.
 
 ^pf-9-3

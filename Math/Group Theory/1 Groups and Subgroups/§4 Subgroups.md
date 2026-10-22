@@ -89,6 +89,8 @@ tags: [group-theory, math493]
 ^lem-4-4
 
 > [!proof]+ Proof
+> *Idea:* Induct for nonnegative exponents; reduce negative ones to powers of $g^{-1}$ and inverses.
+>
 > **Step 0 ($g$ commutes with its own powers):** For $n \geq 0$, $g \, g^n = g^n g$, by induction: trivial for $n = 0$; and $g \, g^{n+1} = g (g^n g) = (g \, g^n) g = (g^n g) g = g^{n+1} g$.
 >
 > **Step 1 (law (2) for $m, n \geq 0$):** Induct on $n$. For $n = 0$: $g^m g^0 = g^m$. Assuming $g^m g^n = g^{m+n}$:
@@ -97,7 +99,7 @@ tags: [group-theory, math493]
 >
 > **Step 2 (law (1) for $n \geq 0$):** Induct on $n$. For $n = 0$: $(g^0)^{-1} = e^{-1} = e = g^{0}$. Assuming $(g^n)^{-1} = (g^{-1})^n$:
 >
-> $$ (g^{n+1})^{-1} = (g^n g)^{-1} \overset{\text{Prob. 1.4}}{=} g^{-1} (g^n)^{-1} = g^{-1} (g^{-1})^n \overset{\text{Step 0 for } g^{-1}}{=} (g^{-1})^n g^{-1} = (g^{-1})^{n+1} = g^{-(n+1)}. $$
+> $$ (g^{n+1})^{-1} = (g^n g)^{-1} \overset{\text{WS 1.4}}{=} g^{-1} (g^n)^{-1} = g^{-1} (g^{-1})^n \overset{\text{Step 0 for } g^{-1}}{=} (g^{-1})^n g^{-1} = (g^{-1})^{n+1} = g^{-(n+1)}. $$
 >
 > For $n < 0$, write $n = -p$ with $p > 0$: $(g^{-p})^{-1} = ((g^{-1})^p)^{-1} = ((g^{-1})^{-1})^p = g^p$, using the $\geq 0$ case applied to $g^{-1}$ and $(g^{-1})^{-1} = g$ (which holds since $g$ satisfies the defining property of the inverse of $g^{-1}$, and inverses are unique by [[§2 First Consequences of the Axioms#^prop-2-3|WS 1.3]]).
 >
@@ -152,6 +154,8 @@ tags: [group-theory, math493]
 ^prop-4-5
 
 > [!proof]+ Proof
+> *Idea:* The exponent laws supply the identity $g^0$, inverses $g^{-k}$ and products $g^{m+n}$.
+>
 > We check the three subgroup conditions, using the [[§4 Subgroups#^lem-4-4|Exponent Laws]] throughout.
 > 1. **Identity:** $e = g^0 \in \langle g \rangle$.
 > 2. **Inverses:** If $h = g^k \in \langle g \rangle$, then $h^{-1} = (g^k)^{-1} = g^{-k} \in \langle g \rangle$ by law (1).
@@ -191,7 +195,7 @@ tags: [group-theory, math493]
 >
 > **Counterexample in $S_3$:** Let $g_1 = (1\ 2)$ (swapping $1 \leftrightarrow 2$) and $g_2 = (2\ 3)$ (swapping $2 \leftrightarrow 3$). Since $g_1^2 = g_2^2 = e$, we have $g_1^{2k} = e$ and $g_1^{2k+1} = g_1$ (and similarly for $g_2$), so the fixed-order set collapses to
 >
-> $$ \{ g_1^{k_1} g_2^{k_2} : k_1, k_2 \in \mathbb{Z} \} = \{ 1,\ g_1,\ g_2,\ g_1 g_2 \}. $$
+> $$ \{ g_1^{k_1} g_2^{k_2} : k_1, k_2 \in \mathbb{Z} \} = \{ e,\ g_1,\ g_2,\ g_1 g_2 \}. $$
 >
 > Now compute $g_1 g_2$ (apply $g_2$ first, then $g_1$): it sends $1 \to 2$, $2 \to 3$, $3 \to 1$. Then
 >
@@ -233,7 +237,7 @@ tags: [group-theory, math493]
 >
 > with the empty word ($N = 0$) equal to $e$. Equivalently, since $g^{n}$ is itself a product of $|n|$ letters $g^{\pm 1}$, one may restrict to exponents $n_i \in \{-1, 1\}$:
 >
-> $$ \langle g_1, \ldots, g_k \rangle \;=\; \bigcup_{N=0}^{\infty} \left\{ g_{i_1}^{e_1} \cdots g_{i_N}^{e_N} \;:\; 1 \leq i_j \leq k,\ e_j \in \{-1, 1\} \right\}. $$
+> $$ \langle g_1, \ldots, g_k \rangle \;=\; \bigcup_{N=0}^{\infty} \left\{ g_{i_1}^{\varepsilon_1} \cdots g_{i_N}^{\varepsilon_N} \;:\; 1 \leq i_j \leq k,\ \varepsilon_j \in \{-1, 1\} \right\}. $$
 >
 > (The same definition, with the $g_i$ ranging over a set $S$, gives $\langle S \rangle$ for an arbitrary, possibly infinite, subset $S \subseteq G$.)
 
@@ -298,6 +302,8 @@ tags: [group-theory, math493]
 ^prop-4-8
 
 > [!proof]+ Proof
+> *Idea:* Pigeonhole: two of $g^0, \ldots, g^{|G|}$ coincide, so some $g^{j-i} = e$.
+>
 > Let $m = |G|$ and consider the $m + 1$ elements $g^0, g^1, g^2, \ldots, g^m$ of $G$. Since $G$ has only $m$ elements, they cannot be pairwise distinct: there are $0 \leq i < j \leq m$ with $g^i = g^j$. Multiplying both sides by $g^{-i}$ and using the [[§4 Subgroups#^lem-4-4|Exponent Laws]] gives
 >
 > $$ g^{\,j-i} = e, \qquad 1 \leq j - i \leq m. $$

@@ -37,6 +37,8 @@ Nontrivial $p$-groups have nontrivial center ([[§35 The Center#^thm-35-3|Theore
 ^prop-51-1
 
 > [!proof]+ Proof
+> *Idea:* Orbits of size $> 1$ have size divisible by $p$, so $|X| \equiv |X^P| \pmod p$.
+>
 > *(Not from lecture; filled in. The route is the counting the lecture of 10/16 used in the proof of the Third Sylow Theorem, Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]]: the orbits of a $p$-group have size a power of $p$, so $|X| \equiv |X^P| \pmod p$.)* Write $|P| = p^k$ (Definition [[§35 The Center#^def-35-3|§35.3]]), write $\star$ for the action (Definition [[§25 Actions#^def-25-1|§25.1]]), and let
 >
 > $$
@@ -129,6 +131,8 @@ Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m
 ^lem-51-3
 
 > [!proof]+ Proof
+> *Idea:* $\vec v_{k+1}$ must avoid the span of $\vec v_1, \ldots, \vec v_k$, which has $p^k$ elements.
+>
 > By induction on $k$. Throughout, $|\mathbb{F}_p^n| = p^n$: each of the $n$ entries is one of the $p$ elements of $\mathbb{F}_p$.
 >
 > *Base case $k = 1$.* $(\vec v_1)$ is linearly independent if and only if $\vec v_1 \neq \vec 0$: if $\vec v_1 = \vec 0$, then $1 \cdot \vec v_1 = \vec 0$ is a nontrivial relation; if $\vec v_1 \neq \vec 0$ and $c\vec v_1 = \vec 0$ with $c \neq 0$, then $\vec v_1 = c^{-1}(c\vec v_1) = \vec 0$, a contradiction. So there are $p^n - 1$ such $1$-tuples.
@@ -147,13 +151,15 @@ For $k > n$ the product contains the factor $p^n - p^n = 0$, in agreement with t
 >
 > $$ |GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} \prod_{k=1}^{n} (p^k - 1). $$
 >
-> In particular a [[§51 p-Groups and Sylow Subgroups#^def-51-2|Sylow $p$-subgroup]] of $GL_n(\mathbb{F}_p)$ ([[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], with $\mathbb{F}_p$ the field of [[§8 Invertibility and Unit Groups#^prop-8-4|§8.4]]) has order $p^{\binom{n}{2}}$, since $p \nmid p^k - 1$.
+> In particular a Sylow $p$-subgroup ([[§51 p-Groups and Sylow Subgroups#^def-51-2|Def. §51.2]]) of $GL_n(\mathbb{F}_p)$ ([[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], with $\mathbb{F}_p$ the field of [[§8 Invertibility and Unit Groups#^prop-8-4|§8.4]]) has order $p^{\binom{n}{2}}$, since $p \nmid p^k - 1$ for $k \geq 1$.
 >
 > *Source: stated on WS 10; PS 6*
 
 ^prop-51-4
 
 > [!proof]+ Proof
+> *Idea:* Count ordered bases of $\mathbb{F}_p^n$, then factor $p^i$ out of each $p^n - p^i$.
+>
 > *(PS 6.4(2); the last step, rewriting the product, is not from the problem set.)* A matrix $M \in \operatorname{Mat}_n(\mathbb{F}_p)$ is the same as the ordered list $(\vec m_1, \ldots, \vec m_n)$ of its columns, and $M \in GL_n(\mathbb{F}_p)$ exactly when that list is linearly independent (Lemma [[§51 p-Groups and Sylow Subgroups#^lem-51-2|§51.2]]). So by Lemma [[§51 p-Groups and Sylow Subgroups#^lem-51-3|§51.3]] with $k = n$,
 >
 > $$
@@ -186,6 +192,8 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 ^prop-51-5
 
 > [!proof]+ Proof
+> *Idea:* $P = I_n + \mathcal{N}$ with $\mathcal{N}$ nilpotent; count the $\binom{n}{2}$ free entries.
+>
 > *(Not from lecture; filled in.)* Write $\operatorname{Mat}_n(\mathbb{F}_p)$ for the $n \times n$ matrices over $\mathbb{F}_p$, $I_n$ for the identity matrix, and
 >
 > $$
@@ -198,15 +206,15 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 > P = \{ I_n + N : N \in \mathcal{N} \} \subseteq \operatorname{Mat}_n(\mathbb{F}_p).
 > $$
 >
-> We show: **(1)** a product of $j$ matrices in $\mathcal{N}$ vanishes on and below the $(j-1)$-st diagonal above the main one; **(2)** $P$ contains $I_n$ and is closed under products; **(3)** every $A \in P$ is invertible with $A^{-1} \in P$, so $P$ is a subgroup of $GL_n(\mathbb{F}_p)$; **(4)** $|P| = p^{\binom{n}{2}}$; **(5)** $p^{\binom{n}{2}}$ is the order of a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. Matrix products are computed by the entry formula $(AB)_{ab} = \sum_{m=1}^{n} A_{am} B_{mb}$ (Definition [[§3 Basic Examples of Groups#^def-3-6|§3.6]]).
+> We show: **(1)** a product of $j$ matrices in $\mathcal{N}$ vanishes on and below the $(j-1)$-st diagonal above the main one; **(2)** $P$ contains $I_n$ and is closed under products; **(3)** every $A \in P$ is invertible with $A^{-1} \in P$, so $P$ is a subgroup of $GL_n(\mathbb{F}_p)$; **(4)** $|P| = p^{\binom{n}{2}}$; **(5)** $p^{\binom{n}{2}}$ is the order of a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. Matrix products are computed by the entry formula $(AB)_{ab} = \sum_{r=1}^{n} A_{ar} B_{rb}$ (Definition [[§3 Basic Examples of Groups#^def-3-6|§3.6]]).
 >
 > **(1) Products of strictly upper triangular matrices.** *Claim: if $j \geq 1$ and $N_1, \ldots, N_j \in \mathcal{N}$, then $(N_1 N_2 \cdots N_j)_{ab} = 0$ unless $b \geq a + j$.* By induction on $j$. For $j = 1$ this is the definition of $\mathcal{N}$: $(N_1)_{ab} = 0$ unless $b > a$, that is, unless $b \geq a + 1$. Assume the claim for $j$. Then
 >
 > $$
-> (N_1 \cdots N_j N_{j+1})_{ab} = \sum_{m=1}^{n} (N_1 \cdots N_j)_{am} \, (N_{j+1})_{mb},
+> (N_1 \cdots N_j N_{j+1})_{ab} = \sum_{r=1}^{n} (N_1 \cdots N_j)_{ar} \, (N_{j+1})_{rb},
 > $$
 >
-> and the $m$-th term can be nonzero only if $m \geq a + j$ (induction hypothesis) and $b \geq m + 1$ (case $j = 1$), which together force $b \geq a + j + 1$. So the entry is $0$ unless $b \geq a + (j + 1)$, which proves the claim. Consequences:
+> and the $r$-th term can be nonzero only if $r \geq a + j$ (induction hypothesis) and $b \geq r + 1$ (case $j = 1$), which together force $b \geq a + j + 1$. So the entry is $0$ unless $b \geq a + (j + 1)$, which proves the claim. Consequences:
 > - If $N, N' \in \mathcal{N}$, then $NN' \in \mathcal{N}$, and $N^j \in \mathcal{N}$ for every $j \geq 1$: by the claim (with $j = 2$, resp. all $N_i = N$), a nonzero entry in position $(a, b)$ needs $b \geq a + 2 > a$, resp. $b \geq a + j > a$.
 > - If $N \in \mathcal{N}$, then $N^n = 0$: a nonzero entry in position $(a, b)$ would need $b \geq a + n \geq 1 + n$, impossible since $b \leq n$.
 > - $\mathcal{N}$ is closed under sums and scalar multiples, since these are computed entrywise and $0 + 0 = c \cdot 0 = 0$.
@@ -278,6 +286,8 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 ^lem-51-6
 
 > [!proof]+ Proof
+> *Idea:* $(h, l) \mapsto hl$ is an injective homomorphism between groups of equal size.
+>
 > *Homomorphism.* For $h, h' \in H$ and $l, l' \in L$, using $lh' = h'l$ from (1),
 >
 > $$
@@ -300,6 +310,8 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 ^thm-51-7
 
 > [!proof]+ Proof
+> *Idea:* Take a central $z \neq e$; either $G$ is cyclic or $G \cong \langle z \rangle \times \langle g \rangle$.
+>
 > Throughout: if $h \in G$ has finite order $c$, then $|\langle h \rangle| = c$ and $h^N = e$ iff $c \mid N$ (Proposition [[§17 Cyclic Groups#^prop-17-3|§17.3]]); and *every $h \neq e$ in $G$ has order $p$ or $p^2$*, since $|\langle h \rangle|$ divides $p^2$ (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]) and is not $1$.
 >
 > By Theorem [[§35 The Center#^thm-35-3|§35.3]] (PS 3.5) there is $z \neq e$ with $zg = gz$ for all $g \in G$.

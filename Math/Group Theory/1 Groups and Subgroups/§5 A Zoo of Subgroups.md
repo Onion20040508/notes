@@ -27,6 +27,8 @@ tags: [group-theory, math493]
 ^prop-5-1
 
 > [!proof]+ Proof
+> *Idea:* Take the least positive element $n$ of $H$; remainders on division by $n$ must vanish.
+>
 > **Each $n\mathbb{Z}$ is a subgroup:** it is $\langle n \rangle$ in additive notation, so this is [[§4 Subgroups#^prop-4-5|WS 1.5]] (or directly: $0 = n \cdot 0$; $-(nk) = n(-k)$; $nk + nl = n(k + l)$).
 >
 > **Every subgroup has this form:** Let $H \leq \mathbb{Z}$. If $H = \{0\}$, then $H = 0\mathbb{Z}$. Otherwise $H$ contains some $h \neq 0$; since $-h \in H$ as well, $H$ contains a positive integer. By [[§1 The Set ℕ of Natural Numbers#^thm-1-2|well-ordering]], let $n$ be the *smallest* positive element of $H$. Then $n\mathbb{Z} \subseteq H$ (closure under addition and negation, by induction). Conversely, let $h \in H$. By the [[§6 Divisibility and Congruence#^lem-6-1|division algorithm]], $h = qn + r$ with $0 \leq r < n$. Then
@@ -57,7 +59,9 @@ tags: [group-theory, math493]
 ^cor-5-2
 
 > [!proof]+ Proof
-> In additive notation, the [[§4 Subgroups#^def-4-5|words of the generated subgroup]] are sums of copies of $\pm a$ and $\pm b$, so $\langle a, b \rangle = \{ax + by : x, y \in \mathbb{Z}\} = a\mathbb{Z} + b\mathbb{Z}$. This is a nonzero subgroup of $\mathbb{Z}$, so by [[§5 A Zoo of Subgroups#^prop-5-1|the classification]] it equals $e\mathbb{Z}$ for a unique $e > 0$. We show $e = d$. Since $a, b \in e\mathbb{Z}$, $e$ is a common divisor of $a$ and $b$, so $e \leq d$. Since $e \in a\mathbb{Z} + b\mathbb{Z}$, write $e = ax + by$; as $d \mid a$ and $d \mid b$, $d \mid e$, so $d \leq e$. Hence $e = d$, and $d = ax + by$ is Bézout. Finally $d\mathbb{Z} = \mathbb{Z}$ iff $d = 1$.
+> *Idea:* Classify $a\mathbb{Z} + b\mathbb{Z}$ as $c\mathbb{Z}$; then $c$ is a common divisor divisible by $d$.
+>
+> In additive notation, the [[§4 Subgroups#^def-4-5|words of the generated subgroup]] are sums of copies of $\pm a$ and $\pm b$, so $\langle a, b \rangle = \{ax + by : x, y \in \mathbb{Z}\} = a\mathbb{Z} + b\mathbb{Z}$. This is a nonzero subgroup of $\mathbb{Z}$, so by [[§5 A Zoo of Subgroups#^prop-5-1|the classification]] it equals $c\mathbb{Z}$ for a unique $c > 0$. We show $c = d$. Since $a, b \in c\mathbb{Z}$, $c$ is a common divisor of $a$ and $b$, so $c \leq d$. Since $c \in a\mathbb{Z} + b\mathbb{Z}$, write $c = ax + by$; as $d \mid a$ and $d \mid b$, $d \mid c$, so $d \leq c$. Hence $c = d$, and $d = ax + by$ is Bézout. Finally $d\mathbb{Z} = \mathbb{Z}$ iff $d = 1$.
 
 ^pf-5-2
 
@@ -122,7 +126,9 @@ tags: [group-theory, math493]
 ^prop-5-3
 
 > [!proof]+ Proof
-> Since $H \neq \{0\}$, pick $h \in H \setminus \{0\}$; as $-h \in H$, the set $P = \{h \in H : h > 0\}$ is nonempty and bounded below by $0$. Let $a = \inf P \geq 0$.
+> *Idea:* Let $a$ be the infimum of the positive elements: $a > 0$ gives $H = a\mathbb{Z}$, $a = 0$ density.
+>
+> Since $H \neq \{0\}$, pick $h \in H \setminus \{0\}$; as $-h \in H$, the set $P = \{x \in H : x > 0\}$ is nonempty and bounded below by $0$. Let $a = \inf P \geq 0$.
 >
 > **Case $a > 0$.** First, $a \in H$: if not, then $a \notin P$, so by definition of infimum there is $h \in P$ with $a < h < 2a$, and then again some $h' \in P$ with $a < h' < h$. Now $h - h' \in H$ and $0 < h - h' < 2a - a = a$, so $h - h' \in P$ is a positive element of $H$ smaller than $a = \inf P$ — contradiction. So $a \in H$, hence $a\mathbb{Z} \subseteq H$. Conversely, given $h \in H$, set $q = \lfloor h/a \rfloor$, so $r = h - qa \in [0, a)$. Since $h \in H$ and $qa \in a\mathbb{Z} \subseteq H$, we get $r \in H$; if $r > 0$ it would be an element of $P$ below $\inf P$, so $r = 0$ and $h = qa$. Hence $H = a\mathbb{Z}$. Uniqueness: $a$ is the smallest positive element.
 >
@@ -162,6 +168,14 @@ tags: [group-theory, math493]
 > - **Rational and integer points**: $GL_n(\mathbb{Q})$  (products of rational matrices are rational; inverses by Cramer's rule are rational), and $GL_n(\mathbb{Z}) = \{A \text{ integer}: \det A = \pm 1\}$  (Cramer: the inverse of an integer matrix is integer iff $\det A \mid 1$; closure since $\det(AB) = \pm 1$).
 > - **Cyclic subgroups** $\langle A \rangle$ for any single $A$ ([[§4 Subgroups#^prop-4-5|WS 1.5]]), e.g. $\langle R_{2\pi/n} \rangle$, a copy of $C_n$ realized by rotations.
 > - In $GL_3(\mathbb{R})$: **block copies of smaller groups**, e.g. $\left\{ \begin{pmatrix} A & 0 \\ 0 & 1 \end{pmatrix} : A \in GL_2(\mathbb{R}) \right\}$  (block multiplication is componentwise in the blocks), so every subgroup of $GL_2(\mathbb{R})$ reappears inside $GL_3(\mathbb{R})$.
+>
+> *(Not from lecture; from the student's worksheet solutions.)* Further subgroups, using $\det(AB) = \det A \det B$ and $\det(A^{-1}) = (\det A)^{-1}$:
+> - $\{\pm I_n\}$ ($(\pm I_n)(\pm I_n) = \pm I_n$, and each element is its own inverse).
+> - $\{A : \det A > 0\}$ and $\{A : \det A = \pm 1\}$ (closed under products and inverses by the two determinant identities, since $\mathbb{R}_{>0}$ and $\{\pm 1\}$ are closed under products and reciprocals).
+> - $SL_n(\mathbb{Z}) = GL_n(\mathbb{Z}) \cap SL_n(\mathbb{R})$ ([[§4 Subgroups#^prop-4-3|an intersection of subgroups]]; for $GL_n(\mathbb{Z})$, the inverse $A^{-1} = (\det A)^{-1} \operatorname{adj} A$ has integer entries when $\det A = \pm 1$).
+> - The **[[§26 Stabilizers and Fixed Points#^def-26-1|stabilizer]]** $\{A : A e_1 = e_1\}$ of the first standard basis vector $e_1$ (if $A e_1 = B e_1 = e_1$, then $AB e_1 = A e_1 = e_1$ and $A^{-1} e_1 = A^{-1} A e_1 = e_1$).
+> - In $GL_2(\mathbb{R})$: the eight **signed permutation matrices** $\pm I_2$, $\pm\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, $\pm\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$, $\pm\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$, the symmetries of the square $[-1, 1]^2$ (exactly one nonzero entry, equal to $\pm 1$, in each row and column; this is preserved by products and by inverses, which are transposes).
+> - In $GL_3(\mathbb{R})$: the **rotations about the $z$-axis** $\left\{ \begin{pmatrix} R_\theta & 0 \\ 0 & 1 \end{pmatrix} : \theta \in \mathbb{R} \right\}$, a block copy of $SO(2)$ as in the previous list; and the **Heisenberg group** $\left\{ \begin{pmatrix} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & 1 \end{pmatrix} : a, b, c \in \mathbb{R} \right\}$, which is the unipotent group above for $n = 3$.
 >
 > *Source: WS 1.7*
 

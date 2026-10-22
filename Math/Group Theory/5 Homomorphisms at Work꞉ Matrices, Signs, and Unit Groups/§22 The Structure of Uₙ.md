@@ -40,6 +40,8 @@ tags: [group-theory, math493]
 ^thm-22-2
 
 > [!proof]+ Proof
+> *Idea:* Reduce modulo each $P_i$; the Chinese Remainder Theorem gives injectivity and surjectivity.
+>
 > The $P_i$ are pairwise coprime (a common prime factor of $P_i$ and $P_j$ would be both $p_i$ and $p_j$ by [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|unique factorization]]), so the [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|Chinese Remainder Theorem]] applies to them, and the product group is a group by iterating [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|§18.3]].
 >
 > **Well-defined.** If $m' = m + kn$, then since $P_i \mid n$, $m' \equiv m \pmod{P_i}$ for each $i$, so the tuple depends only on $[m]_n$. And if $\gcd(m, n) = 1$, then $\gcd(m, P_i) = 1$ for each $i$ (a common divisor of $m$ and $P_i$ divides $n$), so the tuple lies in the product of unit groups.
@@ -67,6 +69,8 @@ tags: [group-theory, math493]
 ^cor-22-3
 
 > [!proof]+ Proof
+> *Idea:* Take orders in $U_n \cong \prod_i U_{P_i}$; mod $p^a$, exactly $p^{a-1}$ residues are multiples of $p$.
+>
 > The first equality is $|U_n| = \prod_i |U_{p_i^{a_i}}|$, from the theorem $U_n$ as a Product of Prime-Power Unit Groups ([[§22 The Structure of Uₙ#^thm-22-2|§22.2]]). For a prime power $p^a$, an integer $m$ with $0 \leq m < p^a$ fails to be coprime to $p^a$ iff $p \mid m$ (the only prime dividing $p^a$ is $p$), and there are $p^{a-1}$ such $m$, namely $0, p, 2p, \ldots, (p^{a-1} - 1)p$. So $\varphi(p^a) = p^a - p^{a-1} = (p - 1)p^{a-1}$.
 
 ^pf-22-3

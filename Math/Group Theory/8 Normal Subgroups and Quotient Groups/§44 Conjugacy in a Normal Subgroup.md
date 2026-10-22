@@ -19,6 +19,8 @@ Two elements of a [[§38 Normal Subgroups#^def-38-1|normal subgroup]] $N$ that a
 ^prop-44-1
 
 > [!proof]+ Proof
+> *Idea:* $hgh^{-1} = ngn^{-1}$ exactly when $n^{-1}h \in C_G(g)$; move $N$ past $C_G(g)$ by normality.
+>
 > ($\Rightarrow$) If $hgh^{-1} = ngn^{-1}$ with $n \in N$, then $z := n^{-1}h$ satisfies $zgz^{-1} = n^{-1}(hgh^{-1})n = g$, so $z \in C_G(g)$. Then $h = nz = z\,(z^{-1}nz)$ with $z^{-1}nz \in N$ by normality, so $h \in C_G(g)N$.
 >
 > ($\Leftarrow$) If $h = zn'$ with $z \in C_G(g)$ and $n' \in N$, put $n'' = zn'z^{-1} \in N$. Since $zgz^{-1} = g$,
@@ -38,6 +40,8 @@ Two elements of a [[§38 Normal Subgroups#^def-38-1|normal subgroup]] $N$ that a
 ^prop-44-2
 
 > [!proof]+ Proof
+> *Idea:* Apply the criterion with $N = A_5$: decide whether $C_{S_5}(g)$ contains an odd permutation.
+>
 > Apply the criterion ([[§44 Conjugacy in a Normal Subgroup#^prop-44-1|Proposition §44.1]]) with $G = S_5$ and $N = A_5$.
 >
 > **(1)** Let $g = (1\,2\,3)$ and $h = (1\,2)$. By Conjugation Relabels the Entries ([[§33 Conjugacy Classes#^lem-33-1|§33.1]]), $hgh^{-1} = (2\,1\,3) = (1\,3\,2)$. Now $z = (4\,5)$ is disjoint from $g$, so $z \in C_{S_5}(g)$, and $h = (4\,5)\cdot\big((4\,5)(1\,2)\big)$ with $(4\,5)(1\,2) \in A_5$. So $h \in C_{S_5}(g)A_5$, and $(1\,3\,2)$ is conjugate to $(1\,2\,3)$ in $A_5$ (explicitly, by $(1\,2)(4\,5)$).
@@ -53,10 +57,10 @@ Two elements of a [[§38 Normal Subgroups#^def-38-1|normal subgroup]] $N$ that a
 *Uses:* [[§44 Conjugacy in a Normal Subgroup#^prop-44-1|§44.1]], [[§33 Conjugacy Classes#^lem-33-1|§33.1]], [[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]]
 
 > [!example] Example §44.1: The Conjugacy Classes of $A_5$, Explained
-> The criterion explains the class table of WS 7.4 ($A_5$ Is Simple, [[§43 Simple Groups#^prop-43-6|Proposition §43.6]]). Fix the odd permutation $\tau = (4\,5)$. For $g \in A_5$ with $S_5$-class $K$, every element of $K$ is $hgh^{-1}$ with $h$ even or $h$ odd; the even $h$ give the $A_5$-class of $g$, and the odd $h$ give the $A_5$-class of $\tau g\tau^{-1}$ (since $h = (h\tau)\tau$ with $h\tau$ even). So $K$ is one $A_5$-class if $C_{S_5}(g)$ contains an odd permutation, so that $C_{S_5}(g)A_5 = S_5$, and otherwise splits into two $A_5$-classes, swapped by $x \mapsto \tau x \tau^{-1}$, of size $|K|/2$ each. For the even cycle types of $S_5$:
-> - $3$-cycles: $|K| = \binom{5}{3} \cdot 2 = 20$, and $(4\,5)$ centralizes $(1\,2\,3)$: one class of size $20$;
-> - double transpositions: $|K| = 5 \cdot 3 = 15$, and $(1\,2)$ centralizes $(1\,2)(3\,4)$: one class of size $15$;
-> - $5$-cycles: $|K| = 5!/5 = 24$, and $C_{S_5}(g) = \langle g \rangle \subseteq A_5$: two classes of size $12$.
+> The criterion explains the class table of WS 7.4 ($A_5$ Is Simple, [[§43 Simple Groups#^prop-43-6|Proposition §43.6]]). Fix the odd permutation $\tau = (4\,5)$. For $g \in A_5$ with $S_5$-class $\mathcal{C}$, every element of $\mathcal{C}$ is $hgh^{-1}$ with $h$ even or $h$ odd; the even $h$ give the $A_5$-class of $g$, and the odd $h$ give the $A_5$-class of $\tau g\tau^{-1}$ (since $h = (h\tau)\tau$ with $h\tau$ even). So $\mathcal{C}$ is one $A_5$-class if $C_{S_5}(g)$ contains an odd permutation, so that $C_{S_5}(g)A_5 = S_5$, and otherwise splits into two $A_5$-classes, swapped by $x \mapsto \tau x \tau^{-1}$, of size $|\mathcal{C}|/2$ each. For the even cycle types of $S_5$:
+> - $3$-cycles: $|\mathcal{C}| = \binom{5}{3} \cdot 2 = 20$, and $(4\,5)$ centralizes $(1\,2\,3)$: one class of size $20$;
+> - double transpositions: $|\mathcal{C}| = 5 \cdot 3 = 15$, and $(1\,2)$ centralizes $(1\,2)(3\,4)$: one class of size $15$;
+> - $5$-cycles: $|\mathcal{C}| = 5!/5 = 24$, and $C_{S_5}(g) = \langle g \rangle \subseteq A_5$: two classes of size $12$.
 >
 > With the identity this gives $1 + 20 + 15 + 12 + 12 = 60$, the worksheet's table.
 >

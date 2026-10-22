@@ -45,6 +45,8 @@ tags: [group-theory, math493]
 ^prop-18-1
 
 > [!proof]+ Proof
+> *Idea:* Insert $a^{-1}a$ between $g$ and $h$; $c_{a^{-1}}$ undoes $c_a$.
+>
 > **(1)** For $g, h \in G$,
 >
 > $$
@@ -85,13 +87,15 @@ tags: [group-theory, math493]
 > [!theorem] Proposition §18.2: Pointwise Products of Homomorphisms
 > Let $G$ and $H$ be groups.
 > 1. If $H$ is abelian, then the pointwise product of two homomorphisms $G \to H$ is a homomorphism. In fact $\operatorname{Hom}(G, H)$ is then an abelian group under pointwise product, with identity the trivial homomorphism $g \mapsto e_H$ and inverse $\alpha^{-1}: g \mapsto \alpha(g)^{-1}$.
-> 2. Conversely, if $H$ is not abelian, then pointwise products can fail to be homomorphisms: the pointwise product of $\operatorname{id}_H$ with itself, $g \mapsto g^2$, is not a homomorphism.
+> 2. Conversely, if $H$ is not abelian, then pointwise products can fail to be homomorphisms: taking $G = H$, the pointwise product of $\operatorname{id}_H$ with itself, $g \mapsto g^2$, is not a homomorphism.
 >
 > *Source: PS 1.3*
 
 ^prop-18-2
 
 > [!proof]+ Proof
+> *Idea:* Commutativity of $H$ swaps $\alpha(b)$ and $\beta(a)$; for squaring, $abab = aabb$ forces $ab = ba$.
+>
 > **(1)** Let $\alpha, \beta \in \operatorname{Hom}(G, H)$ and $a, b \in G$. Then
 >
 > $$
@@ -123,13 +127,15 @@ tags: [group-theory, math493]
 ^prop-18-3
 
 > [!proof]+ Proof
+> *Idea:* Everything is componentwise: two pairs are equal iff both components agree.
+>
 > **(1)** Associativity: $((g_1,h_1)(g_2,h_2))(g_3,h_3) = ((g_1g_2)g_3, (h_1h_2)h_3) = (g_1(g_2g_3), h_1(h_2h_3)) = (g_1,h_1)((g_2,h_2)(g_3,h_3))$, by associativity in each component. Identity: $(e_G,e_H)(g,h) = (g,h) = (g,h)(e_G,e_H)$. Inverses: $(g,h)(g^{-1},h^{-1}) = (e_G,e_H) = (g^{-1},h^{-1})(g,h)$. If $G, H$ are abelian, $(g,h)(g',h') = (gg', hh') = (g'g, h'h) = (g',h')(g,h)$; conversely if, say, $gg' \neq g'g$ in $G$, then $(g, e_H)(g', e_H) \neq (g', e_H)(g, e_H)$.
 >
 > **(2)** $\pi_1((g_1,h_1)(g_2,h_2)) = \pi_1(g_1g_2, h_1h_2) = g_1g_2 = \pi_1(g_1,h_1)\pi_1(g_2,h_2)$; surjective since $\pi_1(g, e_H) = g$. Similarly for $\pi_2$. $\iota_1(g_1g_2) = (g_1g_2, e_H) = (g_1,e_H)(g_2,e_H) = \iota_1(g_1)\iota_1(g_2)$; injective since $\iota_1(g) = \iota_1(g')$ forces $g = g'$. Similarly for $\iota_2$.
 >
 > **(3)** Write $\varphi(k) = (\varphi_1(k), \varphi_2(k))$, so $\varphi_i = \pi_i \circ \varphi$. Then $\varphi(k k') = (\varphi_1(kk'), \varphi_2(kk'))$ and $\varphi(k)\varphi(k') = (\varphi_1(k)\varphi_1(k'), \varphi_2(k)\varphi_2(k'))$. Two pairs are equal iff both components agree, so $\varphi(kk') = \varphi(k)\varphi(k')$ for all $k, k'$ iff $\varphi_1(kk') = \varphi_1(k)\varphi_1(k')$ and $\varphi_2(kk') = \varphi_2(k)\varphi_2(k')$ for all $k, k'$.
 >
-> **(4)** $\Delta = (\operatorname{id}_G, \operatorname{id}_G)$ has both components homomorphisms, so $\Delta$ is a homomorphism by (3); directly, $\Delta(gh) = (gh, gh) = (g,g)(h,h) = \Delta(g)\Delta(h)$. It is injective since $\pi_1 \circ \Delta = \operatorname{id}_G$. Its image is a subgroup ([[§15 Homomorphisms#^prop-15-2|WS 2.10(1)]], or directly: closed under products and inverses, contains $(1,1)$), and $\Delta$ restricted to its image is a bijective homomorphism $G \to \operatorname{Im}(\Delta)$.
+> **(4)** $\Delta = (\operatorname{id}_G, \operatorname{id}_G)$ has both components homomorphisms, so $\Delta$ is a homomorphism by (3); directly, $\Delta(gh) = (gh, gh) = (g,g)(h,h) = \Delta(g)\Delta(h)$. It is injective since $\pi_1 \circ \Delta = \operatorname{id}_G$. Its image is a subgroup ([[§15 Homomorphisms#^prop-15-2|WS 2.10(1)]], or directly: closed under products and inverses, contains $(e_G, e_G)$), and $\Delta$ restricted to its image is a bijective homomorphism $G \to \operatorname{Im}(\Delta)$.
 
 ^pf-18-3
 
@@ -155,6 +161,8 @@ tags: [group-theory, math493]
 ^prop-18-4
 
 > [!proof]+ Proof
+> *Idea:* Each homomorphism condition reduces, after cancellation, to $gh = hg$.
+>
 > **(1) $\Rightarrow$ (2):** $\nabla = \pi_1 \cdot \pi_2$ is the pointwise product of the two projections (homomorphisms into $G$), hence a homomorphism when $G$ is abelian, by the [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|Pointwise Products proposition]].
 >
 > **(2) $\Rightarrow$ (1):** Let $g, h \in G$ and evaluate the homomorphism condition at the pair $(g, h), (g, h) \in G \times G$:

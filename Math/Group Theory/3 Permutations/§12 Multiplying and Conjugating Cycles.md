@@ -34,6 +34,8 @@ tags: [group-theory, math493]
 ^prop-12-1
 
 > [!proof]+ Proof
+> *Idea:* $\sigma\tau\sigma^{-1}$ sends $\sigma(a_i)$ to $\sigma(a_{i+1})$ and fixes every other point.
+>
 > Let $\tau = (a_1 \cdots a_r)$. For each $i$, $(\sigma\tau\sigma^{-1})(\sigma(a_i)) = \sigma(\tau(a_i)) = \sigma(a_{i+1})$ (indices mod $r$), and for $y$ not of the form $\sigma(a_i)$, $\sigma^{-1}(y)$ is not among the $a_i$, so $\tau$ fixes it and $(\sigma\tau\sigma^{-1})(y) = y$. This is exactly the cycle $(\sigma(a_1) \cdots \sigma(a_r))$. For a product of disjoint cycles, conjugate factor by factor: $\sigma (c_1 \cdots c_k) \sigma^{-1} = (\sigma c_1 \sigma^{-1}) \cdots (\sigma c_k \sigma^{-1})$, and the relabeled cycles remain disjoint since $\sigma$ is injective.
 
 ^pf-12-1
@@ -60,6 +62,8 @@ tags: [group-theory, math493]
 ^prop-12-2
 
 > [!proof]+ Proof
+> *Idea:* Track each $a_i$ through the product; then decompose into disjoint cycles.
+>
 > Track each element through the product, rightmost factor first. $a_1$: the rightmost factor sends it to $a_2$, which all remaining factors fix. $a_i$ for $2 \leq i < r$: it is fixed by each factor until $(a_1\ a_i)$ sends it to $a_1$, which the next factor $(a_1\ a_{i+1})$ sends to $a_{i+1}$, fixed thereafter. $a_r$: fixed until the last factor $(a_1\ a_r)$ sends it to $a_1$. Elements outside $\{a_i\}$ are fixed throughout. So the product is $a_1 \mapsto a_2 \mapsto \cdots \mapsto a_r \mapsto a_1$. By the [[§11 Disjoint Cycle Decomposition#^thm-11-3|Disjoint Cycle Decomposition]] every permutation is a product of cycles, hence of transpositions (the identity being the empty product).
 
 ^pf-12-2

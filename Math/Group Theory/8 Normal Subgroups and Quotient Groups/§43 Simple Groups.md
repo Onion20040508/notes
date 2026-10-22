@@ -36,6 +36,8 @@ tags: [group-theory, math493]
 ^thm-43-1
 
 > [!proof]+ Proof
+> *Idea:* Any $g \neq e$ generates a normal subgroup, so $G = \langle g \rangle$, whose order must be prime.
+>
 > ($\Leftarrow$) $\mathbb{Z}/p\mathbb{Z} \neq \{0\}$, and a group of prime order has no subgroups other than the trivial subgroup and itself ([[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]]); in particular no other normal subgroups.
 >
 > ($\Rightarrow$) Let $G$ be abelian and simple. As $G \neq \{e\}$, pick $g \neq e$. The subgroup $\langle g \rangle$ is nontrivial and, $G$ being abelian, normal; by simplicity $\langle g \rangle = G$, so $G$ is cyclic. If $G$ were infinite cyclic, $G \cong \mathbb{Z}$, which is not simple since $2\mathbb{Z}$ is a proper nontrivial (normal) subgroup. So $G$ is cyclic of finite order $n \geq 2$ ([[§17 Cyclic Groups#^thm-17-1|§17.1]]). Suppose $n = ab$ with $1 < a < n$. Then $(g^a)^b = g^n = e$, while for $0 < k < b$ we have $0 < ak < n$, so $(g^a)^k \neq e$; thus $g^a$ has order $b$, and $\langle g^a \rangle$ is a subgroup with $1 < b < n$ elements — proper, nontrivial, and normal, contradicting simplicity. Hence $n$ is prime, and $G \cong \mathbb{Z}/n\mathbb{Z}$.
@@ -86,6 +88,8 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ^prop-43-3
 
 > [!proof]+ Proof
+> *Idea:* The kernel is normal, hence $\{e_G\}$ or $G$.
+>
 > $\operatorname{Ker}\omega$ is normal in $G$ ([[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]], §39), so by simplicity $\operatorname{Ker}\omega = \{e_G\}$ or $\operatorname{Ker}\omega = G$. In the first case $\omega$ is injective ([[§15 Homomorphisms#^prop-15-3|Surjectivity and Injectivity via Image and Kernel]], §15); in the second, $\omega(g) = e_H$ for every $g$, i.e. $\omega$ is trivial.
 
 ^pf-43-3
@@ -100,7 +104,9 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ^prop-43-4
 
 > [!proof]+ Proof
-> $(1\,2\,3) = (1\,3)(1\,2)$ is even, so it lies in $A_5$, and it has order $3$; hence $[k] \mapsto (1\,2\,3)^k$ is a well-defined homomorphism (The Homomorphism $k \mapsto g^k$, [[§17 Cyclic Groups#^prop-17-3|§17.3]]). Its image $\{e, (1\,2\,3), (1\,3\,2)\}$ has $3$ elements: it is not $\{e\}$, and it is not all of $A_5$, which has $60$ elements. That $A_5$ is simple is [[§43 Simple Groups#^prop-43-6|WS 7.4]], below.
+> *Idea:* The image $\langle (1\,2\,3) \rangle$ is a proper nontrivial subgroup of $A_5$.
+>
+> $(1\,2\,3) = (1\,3)(1\,2)$ is even, so it lies in $A_5$, and it has order $3$; hence $[k] \mapsto (1\,2\,3)^k$ is a well-defined homomorphism (The Homomorphism $k \mapsto g^k$, [[§17 Cyclic Groups#^prop-17-3|§17.3]]). Its image $\{e, (1\,2\,3), (1\,3\,2)\}$ has $3$ elements: it is not $\{e\}$, and it is not all of $A_5$, which has $60$ elements. That $A_5$ is simple is [[§43 Simple Groups#^prop-43-6|WS 7.4]], below. *(Not from lecture; from the student's worksheet solutions.)* The example is an instance of a general source of counterexamples: if $L$ is a subgroup of a simple group $H$ with $\{e\} \neq L \neq H$, the inclusion $L \to H$ is a homomorphism that is neither trivial (as $L \neq \{e\}$) nor surjective (as $L \neq H$). Here $L = \langle (1\,2\,3) \rangle$ in $H = A_5$, and $\omega$ is this inclusion composed with the isomorphism $\mathbb{Z}/3\mathbb{Z} \to L$, $[k] \mapsto (1\,2\,3)^k$.
 
 ^pf-43-4
 
@@ -137,6 +143,8 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ^prop-43-6
 
 > [!proof]+ Proof
+> *Idea:* $|N|$ is $1$ plus a sum of class sizes, and must divide $60$.
+>
 > *(Worked in class, Wed Sept 30.)* Let $N \trianglelefteq A_5$. Then $N$ is a union of conjugacy classes of $A_5$ ([[§39 Sources of Normal Subgroups#^prop-39-7|Normal Subgroups Are Unions of Conjugacy Classes]], §39), and it contains the class $\{e\}$. So $|N| = 1 + s$, where $s$ is a sum of some of the numbers $20, 15, 12, 12$. The possible values of $1 + s$ are
 >
 > $$ 1,\ 13,\ 16,\ 21,\ 25,\ 28,\ 33,\ 36,\ 40,\ 45,\ 48,\ 60. $$
@@ -170,6 +178,8 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ^lem-43-8
 
 > [!proof]+ Proof
+> *Idea:* Conjugate in $S_n$; if the conjugator is odd, multiply it by a disjoint transposition.
+>
 > Choose $g \in S_n$ with $g(i) = i'$, $g(j) = j'$, $g(k) = k'$, extending these three assignments to a bijection of $\{1, \ldots, n\}$. Then $g\,(i\,j\,k)\,g^{-1} = (i'\,j'\,k')$ ([[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]], §12). If $g \in A_n$ we are done. If not, since $n \geq 5$ there are two points $x, y \notin \{i, j, k\}$; replace $g$ by $g(x\,y)$, which is even. Because $(x\,y)$ is disjoint from $(i\,j\,k)$, the two commute, so
 >
 > $$ \big[g(x\,y)\big]\,(i\,j\,k)\,\big[g(x\,y)\big]^{-1} = g\,(i\,j\,k)(x\,y)(x\,y)^{-1}\,g^{-1} = g\,(i\,j\,k)\,g^{-1} = (i'\,j'\,k'). $$
@@ -182,7 +192,7 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 > Let $n \geq 5$, let $N$ be a nontrivial normal subgroup of $A_n$, and let $g \in N$ with $g \neq e$.
 > 1. There is a $3$-cycle $(i\,j\,k) \in A_n$ that does not commute with $g$. Set $h = g\,(i\,j\,k)\,g^{-1}\,(i\,j\,k)^{-1}$.
 > 2. $h \in N$.
-> 3. $h$ has one of the cycle types $(a\,b\,c)(d\,e\,f)$, $(a\,b\,c\,d\,e)$, $(a\,b)(c\,d)$, $(a\,b\,c)$.
+> 3. $h$ has one of the cycle types $(a\,b\,c)(d\,e\,f)$, $(a\,b\,c\,d\,e)$, $(a\,b)(c\,d)$, $(a\,b\,c)$. (Here and below, $a, b, c, d, e, f$ denote distinct points of $\{1, \ldots, n\}$; the point $e$ is not the identity.)
 > 4. $N$ contains a $3$-cycle. (The case of type $(a\,b)(c\,d)$ uses $n \geq 5$.)
 > 5. $N = A_n$.
 >
@@ -193,7 +203,9 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ^thm-43-9
 
 > [!proof]+ Proof
-> *(Lecture 9/30 proved (1)–(3), the case $(a\,b)(c\,d)$ of (4), and (5). The cases of a $5$-cycle and of two $3$-cycles in (4) were left to a PDF on the course page; they are computed here. The PDF's own route is in the remark after this proof, [[§43 Simple Groups#^rem-43-5|Remark (the course handout)]].)* Since $N$ is normal, $sgs^{-1} \in N$ for every $s \in A_n$ and $g \in N$.
+> *Idea:* Commutator $h \in N$ of $g$ and a $3$-cycle moves $\leq 6$ points; reduce it to a $3$-cycle.
+>
+> *(Lecture 9/30 proved (1)–(3), the case $(a\,b)(c\,d)$ of (4), and (5). The cases of a $5$-cycle and of two $3$-cycles in (4) were left to a PDF on the course page; they are computed here. The PDF's own route is in the remark after this proof, [[§43 Simple Groups#^rem-43-5|Remark (the course handout)]].)* Since $N$ is normal, $sxs^{-1} \in N$ for every $s \in A_n$ and $x \in N$.
 >
 > **(1)** As $g \neq e$, choose $i$ with $g(i) \neq i$, and then $j, k$ with $i, j, k$ distinct and $j, k \notin \{i, g(i)\}$ (possible since $n \geq 4$). By [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]], $g\,(i\,j\,k)\,g^{-1} = (g(i)\ g(j)\ g(k))$. This $3$-cycle sends $g(i) \mapsto g(j)$, whereas $(i\,j\,k)$ fixes $g(i)$, because $g(i) \notin \{i, j, k\}$; and $g(j) \neq g(i)$. So $g\,(i\,j\,k)\,g^{-1} \neq (i\,j\,k)$, i.e. $(i\,j\,k)$ does not commute with $g$.
 >
@@ -223,11 +235,44 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 
 *Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§12 Multiplying and Conjugating Cycles#^prop-12-1|§12.1]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§43 Simple Groups#^lem-43-8|§43.8]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]], [[§43 Simple Groups#^def-43-1|Def. §43.1]]
 
+> [!proof]+ Second proof (choosing j = g(i); WS 7.5)
+> *Idea:* Choosing $j = g(i)$ makes $h$ move at most $5$ points, leaving three cycle types.
+>
+> *(Not from lecture; from the student's worksheet solutions.)* Products are composed right to left. Steps (2) and (5) are as in the first proof; a sharper choice in (1) shortens (3) and (4).
+>
+> **(1)** Choose $i$ with $g(i) \neq i$, put $j = g(i)$, and choose $k \notin \{i, j, g(j)\}$ (possible since $n \geq 4$). By [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]], $g\,(i\,j\,k)\,g^{-1} = (g(i)\ g(j)\ g(k)) = (j\ g(j)\ g(k))$. This $3$-cycle sends $j \mapsto g(j)$, whereas $(i\,j\,k)$ sends $j \mapsto k \neq g(j)$. So $g\,(i\,j\,k)\,g^{-1} \neq (i\,j\,k)$, i.e. $(i\,j\,k)$ does not commute with $g$.
+>
+> **(3)** Grouping the factors of $h$ differently,
+>
+> $$ h = \big(g\,(i\,j\,k)\,g^{-1}\big)\,(i\,j\,k)^{-1} = (j\ g(j)\ g(k))\,(k\,j\,i). $$
+>
+> A point fixed by both factors is fixed by $h$, so $h$ moves only points of $\{i, j, k\} \cup \{j, g(j), g(k)\}$, a set of at most $5$ elements because $j$ lies in both. Moreover $h \in N \subseteq A_n$ is even, and $h \neq e$ by (1). Since an $r$-cycle has sign $(-1)^{r-1}$ ([[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]]), the cycle types moving at most $5$ points have the signs
+>
+> $$ \begin{array}{c|cccccc} \text{type} & (a\,b) & (a\,b\,c) & (a\,b\,c\,d) & (a\,b\,c\,d\,e) & (a\,b)(c\,d) & (a\,b)(c\,d\,e) \\ \hline \text{sign} & -1 & +1 & -1 & +1 & +1 & -1 \end{array} $$
+>
+> so $h$ has type $(a\,b\,c)$, $(a\,b\,c\,d\,e)$ or $(a\,b)(c\,d)$; the type $(a\,b\,c)(d\,e\,f)$ does not occur.
+>
+> **(4)** For $\sigma \in A_n$, put $h' := (\sigma h \sigma^{-1})\,h^{-1}$; it lies in $N$, since $\sigma h \sigma^{-1} \in N$ by normality and $h^{-1} \in N$. Take $\sigma$ to be a $3$-cycle, hence even, and compute $\sigma h \sigma^{-1}$ by relabelling the cycles of $h$ ([[§12 Multiplying and Conjugating Cycles#^prop-12-1|§12.1]]).
+> - *$h = (a\,b\,c)$:* $h$ itself is a $3$-cycle in $N$.
+> - *$h = (a\,b\,c\,d\,e)$:* take $\sigma = (a\,b\,c)$. Then $\sigma h \sigma^{-1} = (b\,c\,a\,d\,e)$ and $h^{-1} = (e\,d\,c\,b\,a)$, so
+>
+>   $$ h' = (b\,c\,a\,d\,e)(e\,d\,c\,b\,a) = (a\,b\,d): \qquad a \mapsto e \mapsto b,\quad b \mapsto a \mapsto d,\quad d \mapsto c \mapsto a,\quad c \mapsto b \mapsto c,\quad e \mapsto d \mapsto e. $$
+>
+> - *$h = (a\,b)(c\,d)$:* as $n \geq 5$, pick $f \notin \{a, b, c, d\}$ and take $\sigma = (a\,b\,f)$. Then $\sigma h \sigma^{-1} = (b\,f)(c\,d)$ and $h^{-1} = h$; since disjoint cycles commute and $(c\,d)^2 = e$,
+>
+>   $$ h' = (b\,f)(c\,d)(a\,b)(c\,d) = (b\,f)(a\,b) = (a\,f\,b): \qquad a \mapsto b \mapsto f,\quad f \mapsto f \mapsto b,\quad b \mapsto a \mapsto a. $$
+>
+> In every case $N$ contains a $3$-cycle, and (5) concludes as in the first proof.
+
+^pf-43-9-2
+
+*Uses:* [[§12 Multiplying and Conjugating Cycles#^prop-12-1|§12.1]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§43 Simple Groups#^thm-43-9|§43.9]]
+
 > [!remark] Remark: The Course Handout “Simplicity of $A_n$”
 > The handout posted for the cases left open in lecture proves the theorem along the same five steps, following Proof 2 of K. Conrad's note *Simplicity of $A_n$* with some cleverness replaced by computation. It differs from the proof above as follows. Products are composed right to left, as above.
 > - *Step (1), another choice of $k$.* Put $j = g(i) \neq i$ and choose $k \notin \{i, j, g(j)\}$, possible for $n \geq 4$. Then $[g\,(i\,j\,k)](i) = g(j)$, while $[(i\,j\,k)\,g](i) = (i\,j\,k)(j) = k \neq g(j)$, so $(i\,j\,k)$ does not commute with $g$. For $n = 3$ the step fails, since $A_3$ is abelian.
 > - *Step (1), conceptually.* The centralizer $C_{A_n}(g)$ ([[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]]; the handout writes $Z(g)$) is a subgroup of $A_n$. If it contained every $3$-cycle, it would contain a generating set of $A_n$ (Generators of $A_n$, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]]), so $C_{A_n}(g) = A_n$ and $g$ would be central in $A_n$. The handout notes that the center of $A_n$ is trivial for $n \geq 4$, but that proving this is no easier than step (1) directly; the viewpoint returns for $PSL_n(F)$ ([[§43 Simple Groups#^thm-43-13|Theorem §43.13]]).
-> - *Step (3).* With $i' = g(i)$, $j' = g(j)$, $k' = g(k)$, the handout writes $h = (i'\,j'\,k')(i\,j\,k)^{-1}$, which fixes every point outside $\{i, j, k, i', j', k'\}$. The type $(a\,b)(c\,d\,e\,f)$ is excluded as above: it needs all six points distinct, and then $h$ is of type $(a\,b\,c)(d\,e\,f)$.
+> - *Step (3).* With $i' = g(i)$, $j' = g(j)$, $k' = g(k)$, the handout writes $h = (i'\,j'\,k')(i\,j\,k)^{-1}$, which fixes every point outside $\{i, j, k, i', j', k'\}$. *(Not from lecture; from the student's worksheet solutions.)* With the handout's choice $j = g(i)$ in step (1), $i' = j$, so this set has at most $5$ elements, and the types $(a\,b\,c)(d\,e\,f)$ and $(a\,b)(c\,d\,e\,f)$, which move $6$ points, cannot occur (the $3+3$ row of the table below is needed only for other choices of $(i\,j\,k)$). For a choice with six distinct points, as in the first proof above, $(a\,b)(c\,d\,e\,f)$ is excluded as there.
 > - *Step (4), a table.* Each case multiplies $h$, or $h$ renamed, by a second element of $N$ of the same cycle type:
 >
 > | cycle type | product equal to a $3$-cycle | second factor $= \sigma(\text{first})\sigma^{-1}$ |
@@ -267,6 +312,8 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ^prop-43-10
 
 > [!proof]+ Proof
+> *Idea:* $\alpha$ is onto, so $|\operatorname{Ker}\alpha| = 4$; double transpositions fix every splitting, so $\operatorname{Ker}\alpha = K$.
+>
 > A permutation carries a splitting into pairs to another such splitting, so this is an action, and it gives $\alpha$ (Actions Are Homomorphisms to $S_X$, [[§25 Actions#^thm-25-3|§25.3]]). *Surjective:* the transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps $\{\{1,3\},\{2,4\}\} \leftrightarrow \{\{1,4\},\{2,3\}\}$; in the same way each transposition $(a\,b)$ fixes the splitting containing $\{a, b\}$ and swaps the other two. So the image contains all three transpositions of $S_P$, which generate it. *Kernel:* $|\operatorname{Ker}\alpha| = 24/6 = 4$ ($|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]]). Each double transposition preserves every splitting, e.g. $(1\,2)(3\,4)$ swaps $\{1,3\} \leftrightarrow \{2,4\}$ and $\{1,4\} \leftrightarrow \{2,3\}$. So $K \subseteq \operatorname{Ker}\alpha$, and as both have $4$ elements, $\operatorname{Ker}\alpha = K$.
 >
 > [[§39 Sources of Normal Subgroups#^prop-39-2|Kernels are normal]], so $K \trianglelefteq S_4$, and $K \trianglelefteq A_4$ because $K \subseteq A_4$. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] gives $S_4/K \cong S_3$. Restricted to $A_4$, $\alpha$ has kernel $K \cap A_4 = K$, so $A_4/K \cong \alpha(A_4)$, a subgroup of $S_3$ with $12/4 = 3$ elements. The only such subgroup is $A_3 = \langle (1\,2\,3) \rangle$ (Subgroups of $S_3$, [[§13 The Symmetric Group S₃#^prop-13-1|§13.1]]), and it is cyclic of order $3$.

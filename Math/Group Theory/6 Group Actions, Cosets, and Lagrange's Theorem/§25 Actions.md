@@ -84,6 +84,8 @@ tags: [group-theory, math493]
 ^prop-25-1
 
 > [!proof]+ Proof
+> *Idea:* Inversion reverses products: $(g_2g_1)^{-1} = g_1^{-1}g_2^{-1}$.
+>
 > Write $x \star g := g^{-1}x$. Then $x \star e = e^{-1}x = ex = x$, and
 >
 > $$
@@ -113,6 +115,8 @@ tags: [group-theory, math493]
 ^prop-25-2
 
 > [!proof]+ Proof
+> *Idea:* $\widehat{g^{-1}}$ is a two-sided inverse of $\hat g$, by the action axioms.
+>
 > (1) is the second axiom. (2) For $x \in X$, $\widehat{g^{-1}}(\hat g(x)) = g^{-1} \star (g \star x) = (g^{-1}g) \star x = e \star x = x$, and symmetrically $\hat g(\widehat{g^{-1}}(x)) = x$. So $\widehat{g^{-1}}$ is a two-sided inverse of $\hat g$, which is therefore a bijection.
 
 ^pf-25-2
@@ -133,6 +137,8 @@ tags: [group-theory, math493]
 ^thm-25-3
 
 > [!proof]+ Proof
+> *Idea:* The axiom $(g_1g_2) \star x = g_1 \star (g_2 \star x)$ is literally $\varphi(g_1g_2) = \varphi(g_1) \circ \varphi(g_2)$.
+>
 > **(1) Action $\Rightarrow$ homomorphism.** There are two things to check.
 >
 > *The values lie in $S_X$.* An element of $S_X$ is a bijection $X \to X$. For each $g$, the map $\hat g: X \to X$ has the two-sided inverse $\widehat{g^{-1}}$ ([[§25 Actions#^prop-25-2|WS 4.2]]): for every $x$,
@@ -239,6 +245,8 @@ tags: [group-theory, math493]
 ^thm-25-5
 
 > [!proof]+ Proof
+> *Idea:* Left multiplication is a faithful action of $G$ on itself.
+>
 > $G$ acts on itself by left multiplication, $g \star x = gx$: the axioms are $ex = x$ and associativity. The action is faithful: if $g$ acts trivially on every point then in particular $g = ge = e$ (equivalently, $\hat g_1 = \hat g_2$ gives $g_1 = g_1e = g_2e = g_2$). By Faithful Actions Embed $G$ in $S_X$ ([[§25 Actions#^prop-25-4|§25.4]]), the homomorphism $\varphi: G \to S_G$, $\varphi(g) = (x \mapsto gx)$, is injective, $G \cong \varphi(G) \leq S_G$, and relabelling the $n$ elements of $G$ as $1, \ldots, n$ gives an isomorphism $S_G \cong S_n$.
 
 ^pf-25-5
@@ -256,6 +264,8 @@ tags: [group-theory, math493]
 ^cor-25-6
 
 > [!proof]+ Proof
+> *Idea:* Compose Cayley's embedding $G \hookrightarrow S_n$ with the permutation representation $\sigma \mapsto M(\sigma)$.
+>
 > Compose the injective homomorphism $G \to S_n$ of [[§25 Actions#^thm-25-5|Cayley's theorem]] with the permutation representation $S_n \to GL_n(k)$, $\sigma \mapsto M(\sigma)$, which is an injective homomorphism ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]). The composite is an injective homomorphism, so it is an isomorphism onto its image, a subgroup of $GL_n(k)$ ([[§15 Homomorphisms#^prop-15-4|Images and Preimages of Subgroups]]).
 
 ^pf-25-6

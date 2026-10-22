@@ -46,6 +46,8 @@ tags: [group-theory, math493]
 ^thm-11-3
 
 > [!proof]+ Proof
+> *Idea:* Follow $a, \sigma(a), \sigma^2(a), \ldots$ back to $a$; these loops partition $\{1, \ldots, n\}$.
+>
 > **Existence.** Pick $a \in \{1, \ldots, n\}$ and follow the arrows $a,\ \sigma(a),\ \sigma^2(a),\ \ldots$. Since there are only $n$ values, some repetition $\sigma^i(a) = \sigma^j(a)$ with $i < j$ occurs; applying $\sigma^{-i}$ (i.e. cancelling, since $\sigma$ is injective) gives $\sigma^{j-i}(a) = a$. Let $r$ be the least positive integer with $\sigma^r(a) = a$; then $a, \sigma(a), \ldots, \sigma^{r-1}(a)$ are distinct (a repetition among them would give a smaller return time), and $\sigma$ acts on this set as the cycle $c_1 = (a\ \sigma(a)\ \cdots\ \sigma^{r-1}(a))$. Now choose any $b$ not in this set and repeat, obtaining $c_2$. The loops of $c_1$ and $c_2$ are disjoint: if they shared an element, following arrows forward from it would trace the same loop, since each element has exactly one outgoing arrow. Continue until every element is accounted for; then $\sigma = c_1 c_2 \cdots c_k$, because on each loop $\sigma$ agrees with the corresponding $c_i$ and the other $c_j$ act trivially there.
 >
 > **Uniqueness.** The loops are determined by $\sigma$ alone: the loop through $a$ is the set $\{\sigma^i(a)\}$, and the cyclic order on it is dictated by $\sigma$. So any disjoint-cycle expression for $\sigma$ must consist of exactly these loops, each written starting somewhere; and since [[§11 Disjoint Cycle Decomposition#^lem-11-2|disjoint cycles commute]], the order of the factors is immaterial.
@@ -79,6 +81,8 @@ tags: [group-theory, math493]
 ^prop-11-4
 
 > [!proof]+ Proof
+> *Idea:* Disjoint cycles commute and move disjoint sets, so $\sigma^m = e$ iff every $c_i^m = e$.
+>
 > (1) Since the $c_i$ commute, $(c_1 \cdots c_k)(c_1^{-1} \cdots c_k^{-1}) = e$ after pairing each $c_i$ with $c_i^{-1}$; the formula for a cycle's inverse is read off by reversing arrows. (2) Commuting factors can be regrouped: $(c_1 \cdots c_k)^m = c_1^m \cdots c_k^m$. (3) Since the $c_i^m$ act on disjoint sets, $\sigma^m = e$ iff each $c_i^m = e$, iff $r_i \mid m$ for every $i$, iff $\operatorname{lcm}(r_1, \ldots, r_k) \mid m$. The least such positive $m$ is the lcm.
 
 ^pf-11-4

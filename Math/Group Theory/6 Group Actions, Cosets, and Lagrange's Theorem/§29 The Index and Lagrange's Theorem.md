@@ -45,6 +45,8 @@ tags: [group-theory, math493]
 ^thm-29-2
 
 > [!proof]+ Proof
+> *Idea:* $G$ is a disjoint union of $[G : H]$ cosets, each of size $|H|$.
+>
 > By [[§29 The Index and Lagrange's Theorem#^prop-29-1|All Cosets Have the Same Size]], $G$ is the disjoint union of its distinct left cosets; there are $[G : H]$ of them, and each has exactly $|H|$ elements. Counting the elements of $G$ gives $|G| = |H| \cdot [G : H]$.
 
 ^pf-29-2
@@ -80,6 +82,8 @@ tags: [group-theory, math493]
 ^cor-29-4
 
 > [!proof]+ Proof
+> *Idea:* Lagrange in the group $(\mathbb{Z}/p\mathbb{Z})^\times$ of order $p - 1$.
+>
 > $(\mathbb{Z}/p\mathbb{Z})^\times$ is a group with $p - 1$ elements ([[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]]). For $p \nmid a$ we have $\gcd(a, p) = 1$, so $[a] \in (\mathbb{Z}/p\mathbb{Z})^\times$, and [[§29 The Index and Lagrange's Theorem#^cor-29-3|Order of an Element Divides]] $|G|$ gives $[a]^{p-1} = [1]$, i.e. $a^{p-1} \equiv 1 \pmod p$.
 
 ^pf-29-4
@@ -95,10 +99,10 @@ tags: [group-theory, math493]
 ^rem-29-1
 
 > [!theorem] Proposition §29.5: The Index Is Multiplicative
-> Let $K \leq H \leq G$ with $[G : H]$ and $[H : K]$ finite. Then $[G : K]$ is finite and
+> Let $L \leq H \leq G$ with $[G : H]$ and $[H : L]$ finite. Then $[G : L]$ is finite and
 >
 > $$
-> [G : K] = [G : H]\,[H : K].
+> [G : L] = [G : H]\,[H : L].
 > $$
 >
 > *Source: cf. Pinter Ch. 13, Ex. D1*
@@ -106,11 +110,11 @@ tags: [group-theory, math493]
 ^prop-29-5
 
 > [!proof]+ Proof
-> Let $g_1H, \ldots, g_mH$ be the distinct left cosets of $H$ in $G$, and $h_1K, \ldots, h_nK$ those of $K$ in $H$. We show the $mn$ sets $g_ih_jK$ are exactly the distinct left cosets of $K$ in $G$.
+> Let $g_1H, \ldots, g_mH$ be the distinct left cosets of $H$ in $G$, and $h_1L, \ldots, h_nL$ those of $L$ in $H$. We show the $mn$ sets $g_ih_jL$ are exactly the distinct left cosets of $L$ in $G$.
 >
-> *They cover $G$:* for $x \in G$, $x \in g_iH$ for some $i$, so $g_i^{-1}x \in H$ lies in some $h_jK$, and $x \in g_ih_jK$.
+> *They cover $G$:* for $x \in G$, $x \in g_iH$ for some $i$, so $g_i^{-1}x \in H$ lies in some $h_jL$, and $x \in g_ih_jL$.
 >
-> *They are distinct:* suppose $g_ih_jK = g_{i'}h_{j'}K$. Since $h_jK \subseteq H$, this coset lies in $g_iH$ and also in $g_{i'}H$; left cosets of $H$ are equal or disjoint, so $g_iH = g_{i'}H$ and $i = i'$. Cancelling $g_i$ on the left gives $h_jK = h_{j'}K$, so $j = j'$.
+> *They are distinct:* suppose $g_ih_jL = g_{i'}h_{j'}L$. Since $h_jL \subseteq H$, this coset lies in $g_iH$ and also in $g_{i'}H$; left cosets of $H$ are equal or disjoint, so $g_iH = g_{i'}H$ and $i = i'$. Cancelling $g_i$ on the left gives $h_jL = h_{j'}L$, so $j = j'$.
 
 ^pf-29-5
 
@@ -158,6 +162,8 @@ tags: [group-theory, math493]
 ^thm-29-7
 
 > [!proof]+ Proof
+> *Idea:* For $g \neq e$, $|\langle g \rangle|$ divides $p$ and exceeds $1$, so $\langle g \rangle = G$.
+>
 > Since $p \geq 2$, choose $g \in G$ with $g \neq e$. By the pigeonhole proposition ([[§4 Subgroups#^prop-4-8|§4.8]]) $g$ has finite order, so $\langle g \rangle$ is a subgroup of $G$ with $|\langle g \rangle| = \operatorname{ord}(g)$ ([[§17 Cyclic Groups#^prop-17-3|§17.3]]). By Lagrange, $|\langle g \rangle|$ divides $p$, hence equals $1$ or $p$. If it were $1$ then $\langle g \rangle = \{e\}$, forcing $g = e$, contrary to the choice of $g$. So $|\langle g \rangle| = p = |G|$, and a subset of a finite set with as many elements is the whole set: $\langle g \rangle = G$. Thus $G$ is cyclic of order $p$, and $G \cong \mathbb{Z}/p\mathbb{Z}$ by the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups (§17.1)]] — explicitly, $\varphi([k]) = g^k$ is well defined (if $k' = k + mp$ then $g^{k'} = g^k(g^p)^m = g^k$), is a homomorphism by the [[§4 Subgroups#^lem-4-4|Exponent Laws]], is surjective since $\langle g \rangle = G$, and is injective since $g^{k} = g^{k'}$ forces $p \mid k' - k$ by minimality of $\operatorname{ord}(g) = p$.
 
 ^pf-29-7
@@ -194,6 +200,8 @@ tags: [group-theory, math493]
 ^prop-29-9
 
 > [!proof]+ Proof
+> *Idea:* $aB \mapsto aH$ is a well-defined injection $A/B \to G/H$.
+>
 > Define $\varphi: A/B \to G/H$ by $\varphi(aB) = aH$. *Well defined:* if $aB = a'B$, then $a = a'b_0$ with $b_0 \in B \subseteq H$, so $aH = a'b_0H = a'H$. *Injective:* if $aH = a'H$, then $h := a'^{-1}a \in H$, and $h \in A$ by closure of $A$; so $h \in A \cap H = B$ and $aB = a'hB = a'B$. Hence $A/B$ injects into the finite set $G/H$, and $[A : B] = |A/B| \leq |G/H| = [G : H]$.
 
 ^pf-29-9

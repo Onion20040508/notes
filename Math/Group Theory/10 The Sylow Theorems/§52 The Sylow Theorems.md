@@ -10,21 +10,23 @@ tags: [group-theory, math493]
 *Reference: Worksheet 10; lectures 10/12–10/16. Throughout, $p$ is a prime and the groups are finite.*
 
 > [!remark] Remark: The Strategy
-> Every finite group $G$ is a subgroup of some $GL_n(\mathbb{F}_p)$ (Every Finite Group Is a Matrix Group, [[§25 Actions#^cor-25-6|Corollary §25.6]]), and $\Gamma = GL_n(\mathbb{F}_p)$ has an explicit Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]). The plan is to transfer Sylow subgroups from the large group $\Gamma$ down to its subgroup $G$, by letting $G$ act on $\Gamma/\Pi$ (WS 10.3, [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]). The lecture sketched the key step in the case where $G$ is itself a $p$-group: the next lemma.
+> Every finite group $G$ is isomorphic to a subgroup of some $GL_n(\mathbb{F}_p)$ (Every Finite Group Is a Matrix Group, [[§25 Actions#^cor-25-6|Corollary §25.6]]), and $\Gamma = GL_n(\mathbb{F}_p)$ has an explicit Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]). The plan is to transfer Sylow subgroups from the large group $\Gamma$ down to its subgroup $G$, by letting $G$ act on $\Gamma/\Pi$ (WS 10.3, [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]). The lecture sketched the key step in the case where $G$ is itself a $p$-group: the next lemma.
 >
 > *Source: lecture 10/12*
 
 ^rem-52-1
 
 > [!theorem] Lemma §52.1: $p$-Subgroups Lie in a Conjugate of a Sylow Subgroup
-> Let $\Gamma$ be a finite group with a [[§51 p-Groups and Sylow Subgroups#^def-51-2|Sylow $p$-subgroup]] $\Pi$, and let $P \leq \Gamma$ be a [[§51 p-Groups and Sylow Subgroups#^def-51-1|$p$-subgroup]]. Then there is $\gamma \in \Gamma$ with $P \subseteq \gamma \Pi \gamma^{-1}$.
+> Let $\Gamma$ be a finite group with a Sylow $p$-subgroup ([[§51 p-Groups and Sylow Subgroups#^def-51-2|Def. §51.2]]) $\Pi$, and let $P \leq \Gamma$ be a $p$-subgroup ([[§51 p-Groups and Sylow Subgroups#^def-51-1|Def. §51.1]]). Then there is $\gamma \in \Gamma$ with $P \subseteq \gamma \Pi \gamma^{-1}$.
 >
 > *Source: lecture 10/12*
 
 ^lem-52-1
 
 > [!proof]+ Proof
-> Write $|\Gamma| = p^k m$ with $p \nmid m$, so $|\Pi| = p^k$. Let $X = \Gamma/\Pi$; by Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]), $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$. Let $P$ act on $X$ by left multiplication, the restriction to $P$ of the action of $\Gamma$ on $\Gamma/\Pi$ (The Action of $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|Proposition §31.1]]). By WS 10.1 ([[§51 p-Groups and Sylow Subgroups#^prop-51-1|Proposition §51.1]]), $P$ fixes some coset $\gamma\Pi \in X$, i.e. $P \subseteq \operatorname{Stab}(\gamma\Pi)$. By part (3) of Proposition §31.1, $\operatorname{Stab}(\gamma\Pi) = \gamma\Pi\gamma^{-1}$. Hence $P \subseteq \gamma\Pi\gamma^{-1}$.
+> *Idea:* $P$ acts on $\Gamma/\Pi$, of size prime to $p$, so it fixes a coset $\gamma\Pi$.
+>
+> Write $|\Gamma| = p^k m$ with $p \nmid m$, so $|\Pi| = p^k$. Let $X = \Gamma/\Pi$; by Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]), $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$. Let $P$ act on $X$ by left multiplication, the restriction to $P$ of the action of $\Gamma$ on $\Gamma/\Pi$ (The Action of $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|Proposition §31.1]]). By WS 10.1 ([[§51 p-Groups and Sylow Subgroups#^prop-51-1|Proposition §51.1]]), $P$ fixes some coset $\gamma\Pi \in X$, with $\gamma \in \Gamma$, i.e. $P \subseteq \operatorname{Stab}(\gamma\Pi)$. By part (3) of Proposition §31.1, $\operatorname{Stab}(\gamma\Pi) = \gamma\Pi\gamma^{-1}$. Hence $P \subseteq \gamma\Pi\gamma^{-1}$.
 
 ^pf-52-1
 
@@ -38,7 +40,7 @@ tags: [group-theory, math493]
 ^cor-52-2
 
 > [!proof]+ Proof
-> By WS 10.2 ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]), $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. By [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]] with $\Gamma = GL_n(\mathbb{F}_p)$ and $\Pi = P$, $Q \subseteq \gamma P \gamma^{-1}$ for some $\gamma$; conjugating by $\gamma^{-1}$, $\gamma^{-1} Q \gamma \subseteq \gamma^{-1}(\gamma P \gamma^{-1})\gamma = P$.
+> By WS 10.2 ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]), $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$. By [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]] with $\Gamma = GL_n(\mathbb{F}_p)$ and $\Pi = P$, $Q \subseteq \gamma P \gamma^{-1}$ for some $\gamma \in GL_n(\mathbb{F}_p)$; conjugating by $\gamma^{-1}$, $\gamma^{-1} Q \gamma \subseteq \gamma^{-1}(\gamma P \gamma^{-1})\gamma = P$.
 
 ^pf-52-2
 
@@ -61,9 +63,11 @@ tags: [group-theory, math493]
 ^prop-52-3
 
 > [!proof]+ Proof
+> *Idea:* Some $G$-orbit in $\Gamma/\Pi$ has size prime to $p$; its stabilizer is Sylow in $G$.
+>
 > *(Class 10/14.)* Write $|\Gamma| = p^k m$ and $|G| = p^l n$ with $p \nmid m$ and $p \nmid n$, so $|\Pi| = p^k$; we must find a subgroup of $G$ of order $p^l$. Let $X = \Gamma/\Pi$, so $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$ (Lagrange, [[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]). Let $G$ act on $X$ by left multiplication, the restriction to $G$ of the action of $\Gamma$ on its cosets.
 >
-> *An orbit of size prime to $p$.* $X$ breaks up into $G$-orbits (Orbits Partition $X$, [[§27 Orbits#^prop-27-1|Proposition §27.1]]), and $|X|$ is the sum of their sizes. Since $p \nmid |X|$, at least one orbit $G \cdot (\gamma\Pi)$ has size $\not\equiv 0 \pmod p$.
+> *An orbit of size prime to $p$.* $X$ breaks up into $G$-orbits (Orbits Partition $X$, [[§27 Orbits#^prop-27-1|Proposition §27.1]]), and $|X|$ is the sum of their sizes. Since $p \nmid |X|$, at least one orbit $G \cdot (\gamma\Pi)$, with $\gamma \in \Gamma$, has size $\not\equiv 0 \pmod p$.
 >
 > *Its stabilizer.* For $h \in G$, $h\gamma\Pi = \gamma\Pi$ iff $\gamma^{-1}h\gamma \in \Pi$ iff $h \in \gamma\Pi\gamma^{-1}$. So
 >
@@ -93,6 +97,8 @@ tags: [group-theory, math493]
 ^thm-52-4
 
 > [!proof]+ Proof
+> *Idea:* Embed $G$ in $GL_n(\mathbb{F}_p)$, which has a Sylow $p$-subgroup, and apply WS 10.3.
+>
 > *(Class 10/14.)* Let $G$ be finite with $|G| = n$. By Every Finite Group Is a Matrix Group ([[§25 Actions#^cor-25-6|Corollary §25.6]]), $G$ is isomorphic to a subgroup $G'$ of $\Gamma = GL_n(\mathbb{F}_p)$, and $\Gamma$ has a Sylow $p$-subgroup $\Pi$, the unitriangular matrices (WS 10.2, [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]). By WS 10.3(1) ([[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]), $G'$ has a Sylow $p$-subgroup; its preimage under the isomorphism $G \to G'$ is a Sylow $p$-subgroup of $G$. (The order of $GL_n(\mathbb{F}_p)$ that WS 10.2 uses is [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Proposition §51.4]], PS 6.4.)
 
 ^pf-52-4
@@ -109,13 +115,28 @@ tags: [group-theory, math493]
 ^prop-52-5
 
 > [!proof]+ Proof
-> **(1)** This is [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]] with $\Gamma = G$ and $\Pi = P$.
+> *Idea:* (1) is [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]] with $\Gamma = G$; (2) a Sylow subgroup of $H$ is a conjugate of $P$.
+>
+> **(1)** This is [[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]] with $\Gamma = G$, $\Pi = P$, and $Q$ in the role of its $P$; the conjugating element lies in $\Gamma = G$.
 >
 > **(2)** *(Board 10/14.)* Since $H \leq G$, $|H|$ divides $|G| = p^k m$ with $p \nmid m$ (Lagrange, [[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]); as $p^k$ divides $|H|$, the largest power of $p$ dividing $|H|$ is exactly $p^k$. By the First Sylow Theorem ([[§52 The Sylow Theorems#^thm-52-4|Theorem §52.4]]), $H$ has a Sylow $p$-subgroup $Q$, of order $p^k$. Then $Q$ is a $p$-subgroup of $G$, so by (1) $Q \subseteq gPg^{-1}$ for some $g \in G$; both have $p^k$ elements, so $Q = gPg^{-1}$. Hence $H \supseteq Q = gPg^{-1}$.
 
 ^pf-52-5
 
 *Uses:* [[§52 The Sylow Theorems#^lem-52-1|§52.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§52 The Sylow Theorems#^thm-52-4|§52.4]]
+
+> [!proof]+ Second proof (directly from WS 10.3)
+> *Idea:* Apply WS 10.3(2) with $\Gamma = G$, $\Pi = P$ to the subgroups $Q$ and $H$.
+>
+> *(Not from lecture; from the student's worksheet solutions. This is the route of the worksheet hint.)* Write $|G| = p^k m$ with $p \nmid m$. Apply Sylow Subgroups of a Subgroup (WS 10.3(2), [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3]]) with $\Gamma = G$ and $\Pi = P$: for every subgroup $L \leq G$ there is some $g \in G$ (an element of $\Gamma = G$) such that $L \cap gPg^{-1}$ is a Sylow $p$-subgroup of $L$. Also $|gPg^{-1}| = |P| = p^k$, since conjugation by $g$ is a bijection ([[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Proposition §18.1]]).
+>
+> **(1)** Let $|Q| = p^j$. The largest power of $p$ dividing $|Q|$ is $p^j = |Q|$, so a Sylow $p$-subgroup of $Q$ is $Q$ itself. Taking $L = Q$ gives some $g \in G$ with $Q \cap gPg^{-1} = Q$, that is, $Q \subseteq gPg^{-1}$.
+>
+> **(2)** By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]), $|H|$ divides $|G| = p^k m$, and $p \nmid m$, so $p^{k+1} \nmid |H|$; together with $p^k \mid |H|$, a Sylow $p$-subgroup of $H$ has order $p^k$. Taking $L = H$ gives some $g \in G$ with $|H \cap gPg^{-1}| = p^k = |gPg^{-1}|$. A subset of the finite set $gPg^{-1}$ with as many elements is all of it, so $H \cap gPg^{-1} = gPg^{-1}$, that is, $gPg^{-1} \subseteq H$.
+
+^pf-52-5-2
+
+*Uses:* [[§52 The Sylow Theorems#^prop-52-3|§52.3]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
 > [!theorem] Theorem §52.6: The Second Sylow Theorem
 > Let $G$ be a finite group and let $P_1$ and $P_2$ be two Sylow $p$-subgroups of $G$. Then there is some $g \in G$ such that $P_2 = gP_1g^{-1}$.
@@ -125,6 +146,8 @@ tags: [group-theory, math493]
 ^thm-52-6
 
 > [!proof]+ Proof
+> *Idea:* WS 10.3(2) with $\Gamma = G$, $\Pi = P_1$ puts $P_2$ inside some $gP_1g^{-1}$, $g \in G$.
+>
 > *(Lecture 10/16, “by 10.3”.)* Let $|G| = p^k m$ with $p \nmid m$, so $|P_1| = |P_2| = p^k$. Apply WS 10.3(2) (Proposition [[§52 The Sylow Theorems#^prop-52-3|§52.3]]) with $\Gamma = G$, $\Pi = P_1$, and the subgroup $P_2$ in the role of $G$: there is $g \in G$ such that $P_2 \cap gP_1g^{-1}$ is a Sylow $p$-subgroup of $P_2$. Since $|P_2| = p^k$, a Sylow $p$-subgroup of $P_2$ has $p^k$ elements, so it is $P_2$ itself:
 >
 > $$ P_2 \cap gP_1g^{-1} = P_2, \qquad\text{that is,}\qquad P_2 \subseteq gP_1g^{-1}. $$
@@ -154,18 +177,18 @@ tags: [group-theory, math493]
 *Uses:* [[§52 The Sylow Theorems#^thm-52-6|§52.6]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]]
 
 > [!theorem] Lemma §52.8: The Order of a Product of Subgroups
-> Let $H$ and $K$ be finite subgroups of a group $G$, and $HK = \{hk : h \in H,\ k \in K\}$ (Definition [[§41 The First and Second Isomorphism Theorems#^def-41-1|§41.1]]). Then
+> Let $H$ and $L$ be finite subgroups of a group $G$, and $HL = \{hl : h \in H,\ l \in L\}$ (Definition [[§41 The First and Second Isomorphism Theorems#^def-41-1|§41.1]]). Then
 >
-> $$ |HK| = \frac{|H|\,|K|}{|H \cap K|}. $$
+> $$ |HL| = \frac{|H|\,|L|}{|H \cap L|}. $$
 >
 > *Source: not from lecture; the lecture uses it in the proof of the Third Sylow Theorem*
 
 ^lem-52-8
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Consider the surjective map $\mu : H \times K \to HK$, $\mu(h, k) = hk$. We show that every element of $HK$ has exactly $|H \cap K|$ preimages; then $|H \times K| = |HK| \cdot |H \cap K|$, which is the formula.
+> *(Not from lecture; filled in.)* Consider the surjective map $\mu : H \times L \to HL$, $\mu(h, l) = hl$. We show that every element of $HL$ has exactly $|H \cap L|$ preimages; then $|H \times L| = |HL| \cdot |H \cap L|$, which is the formula.
 >
-> Fix $hk \in HK$. For $d \in H \cap K$, $(hd, d^{-1}k) \in H \times K$ and $\mu(hd, d^{-1}k) = hdd^{-1}k = hk$; distinct $d$ give distinct pairs. Conversely, if $\mu(h', k') = hk$, put $d = h^{-1}h'$. Then $d \in H$, and $d = h^{-1}h' = k\,k'^{-1}$ (from $h'k' = hk$), so $d \in K$; and $h' = hd$, $k' = d^{-1}k$. So the preimages of $hk$ are exactly the $|H \cap K|$ pairs $(hd, d^{-1}k)$, $d \in H \cap K$.
+> Fix $hl \in HL$. For $d \in H \cap L$, $(hd, d^{-1}l) \in H \times L$ and $\mu(hd, d^{-1}l) = hdd^{-1}l = hl$; distinct $d$ give distinct pairs. Conversely, if $\mu(h', l') = hl$, put $d = h^{-1}h'$. Then $d \in H$, and $d = h^{-1}h' = l\,l'^{-1}$ (from $h'l' = hl$), so $d \in L$; and $h' = hd$, $l' = d^{-1}l$. So the preimages of $hl$ are exactly the $|H \cap L|$ pairs $(hd, d^{-1}l)$, $d \in H \cap L$.
 
 ^pf-52-8
 
@@ -179,6 +202,8 @@ tags: [group-theory, math493]
 ^thm-52-9
 
 > [!proof]+ Proof
+> *Idea:* Let $P$ act on the Sylow $p$-subgroups by conjugation; $P$ is its only fixed point.
+>
 > *(Lecture 10/16.)* Let $|G| = p^k m$ with $p \nmid m$, and let $X$ be the set of Sylow $p$-subgroups of $G$. $X$ is nonempty by the First Sylow Theorem (Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]]); fix $P \in X$.
 >
 > *The action.* $G$ acts on $X$ by conjugation, $g \star Q = gQg^{-1}$: $gQg^{-1}$ is a subgroup with $|gQg^{-1}| = |Q|$ (Proposition [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]]), so it lies in $X$, and the action axioms are checked as for the conjugation action on elements (Proposition [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]]). By the Second Sylow Theorem there is only one orbit. Restrict the action to $P$.
@@ -195,7 +220,7 @@ tags: [group-theory, math493]
 >
 > $$ (x_1q_1)(x_2q_2) = (x_1x_2)\,(x_2^{-1}q_1x_2)\,q_2 , $$
 >
-> with $x_1x_2 \in P$ and $x_2^{-1}q_1x_2 \in Q$ by the assumption (applied to $x_2^{-1} \in P$); so $PQ$ is closed under products. *(Filled in:)* $e = ee \in PQ$, and $(xq)^{-1} = q^{-1}x^{-1} = x^{-1}\,(xq^{-1}x^{-1}) \in PQ$, again by the assumption. This proves the claim.
+> with $x_1x_2 \in P$ and $x_2^{-1}q_1x_2 \in Q$ by the assumption (applied to $x_2^{-1} \in P$); so $PQ$ is closed under products. *(Filled in:)* $e = ee \in PQ$, and for $x \in P$, $q \in Q$, $(xq)^{-1} = q^{-1}x^{-1} = x^{-1}\,(xq^{-1}x^{-1}) \in PQ$, again by the assumption. This proves the claim.
 >
 > *Its order.* $P \cap Q$ is a subgroup of $P$, so $|P \cap Q| = p^j$ with $j \leq k$ (Lagrange, Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]); and $j < k$, since $j = k$ would give $P = P \cap Q \subseteq Q$, hence $P = Q$ (both have $p^k$ elements). By the Order of a Product of Subgroups (Lemma [[§52 The Sylow Theorems#^lem-52-8|§52.8]]),
 >
@@ -221,7 +246,9 @@ tags: [group-theory, math493]
 ^cor-52-10
 
 > [!proof]+ Proof
-> By the Second Sylow Theorem, the conjugation action of $G$ on the set $X$ of Sylow $p$-subgroups (proof of Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]]) has one orbit, $X = G \star P$. By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]), $|G| = n_p \cdot |\operatorname{Stab}_G(P)|$, so $n_p$ divides $|G|$ (lecture). *(Not from lecture:)* $P \subseteq \operatorname{Stab}_G(P)$, since $xPx^{-1} = P$ for $x \in P$; so $p^k$ divides $|\operatorname{Stab}_G(P)|$ (Lagrange), and $n_p = p^k m / |\operatorname{Stab}_G(P)|$ divides $m$.
+> *Idea:* Orbit–stabilizer for the single conjugation orbit; the stabilizer of $P$ contains $P$.
+>
+> By the Second Sylow Theorem, the conjugation action of $G$ on the set $X$ of Sylow $p$-subgroups (proof of Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]]) has one orbit, $X = G \star P$ for any $P \in X$. By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]), $|G| = n_p \cdot |\operatorname{Stab}_G(P)|$, so $n_p$ divides $|G|$ (lecture). *(Not from lecture:)* $P \subseteq \operatorname{Stab}_G(P)$, since $xPx^{-1} = P$ for $x \in P$; so $p^k$ divides $|\operatorname{Stab}_G(P)|$ (Lagrange), and $n_p = p^k m / |\operatorname{Stab}_G(P)|$ divides $m$.
 
 ^pf-52-10
 
@@ -271,6 +298,8 @@ tags: [group-theory, math493]
 ^prop-52-11
 
 > [!proof]+ Proof
+> *Idea:* Sylow counting forces $n_p = n_q = 1$; the two normal cyclic Sylow subgroups split $G$.
+>
 > *(Filled in, following the case $|G| = 15$.)* The divisors of $pq$ are $1, p, q, pq$.
 >
 > *$n_q = 1$.* $n_q$ divides $pq$ and $n_q \equiv 1 \pmod q$ (Corollary [[§52 The Sylow Theorems#^cor-52-10|§52.10]], Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]]). Modulo $q$: $q \equiv pq \equiv 0$, and $p \not\equiv 1$ since $1 < p < q$. So $n_q = 1$.

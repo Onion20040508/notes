@@ -76,6 +76,8 @@ tags: [group-theory, math493]
 ^thm-46-2
 
 > [!proof]+ Proof
+> *Idea:* Compute $(g_1g_2)v$ in two ways; since $v \neq 0$, the scalars must agree.
+>
 > **Values are nonzero.** If $\lambda(g) = 0$ then $gv = 0$, and applying $g^{-1}$ gives $v = g^{-1}(gv) = g^{-1}(0) = 0$ (each group element acts by a linear map, which sends $0$ to $0$, [[§7 Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]]), contradicting $v \neq 0$. So $\lambda(g) \in k \setminus \{0\} = k^\times$.
 >
 > **Eigenvalues are determined.** If $av = bv$ with $a, b \in k$, then $(a - b)v = 0$; were $a - b \neq 0$, multiplying by $(a-b)^{-1}$ would give $v = 0$. So $a = b$: the scalar $\lambda(g)$ is uniquely determined by $g$, and $\lambda$ is a well-defined function.

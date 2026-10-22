@@ -51,6 +51,8 @@ tags: [group-theory, math493]
 ^prop-38-2
 
 > [!proof]+ Proof
+> *Idea:* Apply (1) to $g^{-1}$ for equality; multiply set equalities by $g^{\pm 1}$; cosets partition $G$.
+>
 > **(2) $\Rightarrow$ (1)** is clear.
 >
 > **(1) $\Rightarrow$ (2).** Fix $g$. By (1), $gHg^{-1} \subseteq H$; we show $H \subseteq gHg^{-1}$. Let $h \in H$. Applying (1) with $g^{-1}$ in place of $g$ gives $h' := g^{-1}hg = g^{-1}h(g^{-1})^{-1} \in H$, and then $h = gh'g^{-1} \in gHg^{-1}$.
@@ -63,7 +65,7 @@ tags: [group-theory, math493]
 >
 > **(4) $\Rightarrow$ (3).** Let $g \in G$. By (4), the left coset $gH$ is also a right coset, and it contains $g$. The right cosets partition $G$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]), and the one containing $g$ is $Hg$; hence $gH = Hg$.
 >
-> **(1) $\Rightarrow$ (3) directly (lecture 9/25).** Let $n \in N$. Then $gn = (gng^{-1})g \in Ng$, because $gng^{-1} \in N$; so $gN \subseteq Ng$. Similarly $ng = g(g^{-1}ng) \in gN$, because $g^{-1}ng = g^{-1}n(g^{-1})^{-1} \in N$; so $Ng \subseteq gN$.
+> **(1) $\Rightarrow$ (3) directly (lecture 9/25).** Write $N := H$, and let $g \in G$ and $n \in N$. Then $gn = (gng^{-1})g \in Ng$, because $gng^{-1} \in N$; so $gN \subseteq Ng$. Similarly $ng = g(g^{-1}ng) \in gN$, because $g^{-1}ng = g^{-1}n(g^{-1})^{-1} \in N$; so $Ng \subseteq gN$.
 
 ^pf-38-2
 
@@ -101,6 +103,8 @@ tags: [group-theory, math493]
 ^thm-38-3
 
 > [!proof]+ Proof
+> *Idea:* Compare each condition with (1) via conjugacy classes, $\operatorname{Stab}(gN) = gNg^{-1}$, cosets, and well-definedness.
+>
 > *(Not from lecture; filled in.)* We show that each of (2), (3), (4), (5) is equivalent to (1). Throughout, recall that for a subgroup $N$ the inclusion “$gNg^{-1} \subseteq N$ for all $g \in G$” (Definition [[§38 Normal Subgroups#^def-38-1|§38.1]]) is equivalent to the equality (1), by Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], (1) $\Leftrightarrow$ (2).
 >
 > **(1) $\Rightarrow$ (2).** Let $n \in N$. Then $n = ene^{-1} \in \operatorname{Conj}(n)$ (Definition [[§33 Conjugacy Classes#^def-33-1|§33.1]]), and for every $h \in G$ we have $hnh^{-1} \in hNh^{-1} = N$ by (1); so $\operatorname{Conj}(n) \subseteq N$. Hence
@@ -136,6 +140,43 @@ tags: [group-theory, math493]
 ^pf-38-3
 
 *Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]], [[§37 Multiplying Cosets#^prop-37-1|§37.1]]
+
+> [!proof]+ Second proof (self-contained, via the cycle (1) ⇒ (4) ⇒ (5) ⇒ (1); WS 6.1)
+> *Idea:* Lemma (L) turns inclusions into equalities; then prove the cycle (1) $\Rightarrow$ (4) $\Rightarrow$ (5) $\Rightarrow$ (1).
+>
+> *(Not from lecture; from the student's worksheet solutions.)* We use one lemma.
+>
+> **(L)** *If $gNg^{-1} \subseteq N$ for all $g \in G$, then $gNg^{-1} = N$ for all $g \in G$.* Indeed, applying the hypothesis to $g^{-1}$ gives $g^{-1}Ng \subseteq N$, hence $N = g(g^{-1}Ng)g^{-1} \subseteq gNg^{-1}$.
+>
+> **(1) $\Rightarrow$ (2).** Let $n \in N$. For every $h \in G$, $hnh^{-1} \in hNh^{-1} = N$, so $\operatorname{Conj}(n) \subseteq N$ (Definition [[§33 Conjugacy Classes#^def-33-1|§33.1]]). Since $n \in \operatorname{Conj}(n)$, we get $N = \bigcup_{n \in N} \operatorname{Conj}(n)$, a union of conjugacy classes.
+>
+> **(2) $\Rightarrow$ (1).** The conjugacy classes are the orbits of the conjugation action (Proposition [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]]), so distinct classes are disjoint (Proposition [[§27 Orbits#^prop-27-1|§27.1]]). Let $g \in G$ and $n \in N$. By (2), $n$ lies in some class $C \subseteq N$; since $n \in C \cap \operatorname{Conj}(n)$, we have $C = \operatorname{Conj}(n)$. Thus $gng^{-1} \in \operatorname{Conj}(n) \subseteq N$. Hence $gNg^{-1} \subseteq N$ for all $g$, and (1) follows from (L).
+>
+> **(1) $\Leftrightarrow$ (3).** By Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]](3), $\operatorname{Stab}(gN) = gNg^{-1}$ for every $g \in G$; in particular $\operatorname{Stab}(eN) = N$. If (1) holds, every $\operatorname{Stab}(gN) = gNg^{-1} = N$, so all stabilizers coincide. Conversely, if all stabilizers coincide, then $gNg^{-1} = \operatorname{Stab}(gN) = \operatorname{Stab}(eN) = N$ for every $g$.
+>
+> **(1) $\Rightarrow$ (4).** Let $g \in G$. By (1) applied to $g^{-1}$, $g^{-1}Ng = N$, so
+>
+> $$ gN = g(g^{-1}Ng) = Ng. $$
+>
+> **(4) $\Rightarrow$ (5).** First, $gN = Ng$ for every $g \in G$. By (4), $gN = Nh$ for some $h \in G$. Then $g = ge \in gN = Nh$, say $g = n_0h$ with $n_0 \in N$, so $h = n_0^{-1}g$ and
+>
+> $$ Nh = \{nn_0^{-1}g : n \in N\} = Ng, $$
+>
+> since $n \mapsto nn_0^{-1}$ is a bijection $N \to N$. Hence $gN = Ng$. Now let $g_1N = g_1'N$ and $g_2N = g_2'N$. Then (Remark [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]])
+>
+> $$ g_1g_2N = g_1(Ng_2) = (g_1N)g_2 = (g_1'N)g_2 = g_1'(Ng_2) = g_1'(g_2N) = g_1'(g_2'N) = g_1'g_2'N. $$
+>
+> **(5) $\Rightarrow$ (1).** Let $g \in G$ and $n \in N$. Since $n \in N$, $nN = N = eN$. Applying (5) with $g_1 = n$, $g_1' = e$ and $g_2 = g_2' = g^{-1}$ gives
+>
+> $$ ng^{-1}N = g^{-1}N. $$
+>
+> By the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]](1)), $(g^{-1})^{-1}(ng^{-1}) = gng^{-1} \in N$. Hence $gNg^{-1} \subseteq N$ for all $g$, and (1) follows from (L).
+>
+> By (L), (1) is equivalent to “$gNg^{-1} \subseteq N$ for all $g \in G$”, which is Definition [[§38 Normal Subgroups#^def-38-1|§38.1]]; so the subgroups satisfying (1)–(5) are exactly the normal subgroups of $G$.
+
+^pf-38-3-2
+
+*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], [[§27 Orbits#^prop-27-1|§27.1]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
 
 > [!remark]- Connections
 > - Lecture form: [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]].

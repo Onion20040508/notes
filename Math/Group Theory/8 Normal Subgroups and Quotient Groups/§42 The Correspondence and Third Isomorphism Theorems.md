@@ -10,7 +10,7 @@ tags: [group-theory, math493]
 *Source: Lecture (Fri Oct 2); Lecture and Worksheet 8 (Mon Oct 5).*
 
 > [!remark] Remark: Notation $A/N$
-> For any subgroup $A$, the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] gives $\pi(A) \cong AN/N$. When $N \subseteq A$, $AN = A$, and $\pi(A) = \{aN : a \in A\}$ is written $A/N$: it is the quotient group $A/N$ (as $N \trianglelefteq A$), sitting inside $G/N$. In this notation, the question of WS 8.4(2) is: if $A/N \trianglelefteq G/N$, i.e. $(gag^{-1})N \in A/N$ for all $g$, must $A \trianglelefteq G$? Since $N \subseteq A$, $gAg^{-1}N = A$ forces $gAg^{-1} = A$ (lecture 10/5).
+> For any subgroup $A$, the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] gives $\pi(A) \cong AN/N$. When $N \subseteq A$, $AN = A$, and $\pi(A) = \{aN : a \in A\}$ is written $A/N$: it is the quotient group $A/N$ (as $N \trianglelefteq A$), sitting inside $G/N$. In this notation, the question of WS 8.4(2) is: if $A/N \trianglelefteq G/N$, i.e. $(gag^{-1})N \in A/N$ for all $g \in G$ and $a \in A$, must $A \trianglelefteq G$? Since $N \subseteq A$, $gAg^{-1}N = A$ forces $gAg^{-1} = A$ (lecture 10/5).
 
 ^rem-42-1
 
@@ -24,6 +24,8 @@ tags: [group-theory, math493]
 ^prop-42-1
 
 > [!proof]+ Proof
+> *Idea:* $\pi$ turns conjugation in $G$ into conjugation in $G/N$; $N \subseteq A$ keeps $a'n$ in $A$.
+>
 > **(1)** $\pi(A) = \operatorname{Im}(\pi|_A)$, the image of a homomorphism, hence a subgroup (Image and Kernel Are Subgroups, [[§15 Homomorphisms#^prop-15-2|§15.2]]).
 >
 > **(2), $\Leftarrow$.** Let $A \trianglelefteq G$, $\pi(a) \in \pi(A)$ and $gN \in G/N$. Then $(gN)\,\pi(a)\,(gN)^{-1} = \pi(g)\pi(a)\pi(g)^{-1} = \pi(gag^{-1})$, and $gag^{-1} \in A$, so this lies in $\pi(A)$.
@@ -48,6 +50,8 @@ tags: [group-theory, math493]
 ^prop-42-2
 
 > [!proof]+ Proof
+> *Idea:* $\pi^{-1}(B)$ contains $N$ and maps onto $B$, so the previous proposition applies.
+>
 > **(1) (lecture 10/5).** $\pi^{-1}(B) = \{g \in G : \pi(g) \in B\}$. If $n \in N$, then $\pi(n) = e \in B$, so $n \in \pi^{-1}(B)$; in particular $\pi^{-1}(B)$ contains $e$. If $g_1, g_2 \in \pi^{-1}(B)$, then $\pi(g_1g_2) = g_1g_2N = (g_1N)(g_2N) \in B$, since $B$ is a subgroup; so $g_1g_2 \in \pi^{-1}(B)$. Closure under inverses is the same, as $\pi(g^{-1}) = \pi(g)^{-1}$. (This is also a case of Images and Preimages of Subgroups, [[§15 Homomorphisms#^prop-15-4|§15.4]].)
 >
 > **(2).** *(Not from lecture; filled in.)* Let $A := \pi^{-1}(B)$. By (1), $A$ is a subgroup of $G$ containing $N$, so Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]](2) applies to it: $A \trianglelefteq G$ if and only if $\pi(A) \trianglelefteq G/N$. It remains to show $\pi(A) = B$. If $g \in A$, then $\pi(g) \in B$ by the definition of $A$; so $\pi(A) \subseteq B$. Conversely, let $b \in B$. Since $\pi$ is surjective (Proposition [[§40 Quotient Groups#^prop-40-2|§40.2]]), $b = \pi(g)$ for some $g \in G$; then $\pi(g) \in B$, so $g \in A$ and $b = \pi(g) \in \pi(A)$. Hence $\pi(A) = B$, and therefore $\pi^{-1}(B) = A$ is normal in $G$ if and only if $B = \pi(A)$ is normal in $G/N$.
@@ -68,6 +72,8 @@ tags: [group-theory, math493]
 ^thm-42-3
 
 > [!proof]+ Proof
+> *Idea:* $\pi(\pi^{-1}(B)) = B$ by surjectivity; $\pi^{-1}(\pi(A)) = A$ because $N \subseteq A$.
+>
 > *(Not from lecture; filled in.)* Write $\Phi(A) := \pi(A)$ for a subgroup $A$ of $G$ containing $N$, and $\Psi(B) := \pi^{-1}(B)$ for a subgroup $B$ of $G/N$.
 >
 > **(1) The maps land where claimed.** If $A$ is a subgroup of $G$ with $N \subseteq A$, then $\Phi(A) = \pi(A)$ is a subgroup of $G/N$ (Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]](1)). If $B$ is a subgroup of $G/N$, then $\Psi(B) = \pi^{-1}(B)$ is a subgroup of $G$ containing $N$ (Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]](1)).
@@ -89,7 +95,7 @@ tags: [group-theory, math493]
 *Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]]
 
 > [!theorem] Proposition §42.4: Quotients Along the Correspondence
-> Let $N \subseteq A_1 \subseteq A_2 \subseteq G$ be subgroups containing the normal subgroup $N$, and let $B_1 = \pi(A_1)$, $B_2 = \pi(A_2)$.
+> Let $N \subseteq A_1 \subseteq A_2 \subseteq G$ be subgroups containing the normal subgroup $N$, let $\pi: G \to G/N$ be the projection, and let $B_1 = \pi(A_1)$, $B_2 = \pi(A_2)$.
 > 1. $gA_1 \mapsto \pi(g)B_1$ is a bijection $A_2/A_1 \to B_2/B_1$.
 > 2. $A_1 \trianglelefteq A_2$ if and only if $B_1 \trianglelefteq B_2$.
 > 3. If $A_1 \trianglelefteq A_2$, then $A_2/A_1 \cong B_2/B_1$.
@@ -99,6 +105,8 @@ tags: [group-theory, math493]
 ^prop-42-4
 
 > [!proof]+ Proof
+> *Idea:* Since $\pi^{-1}(B_1) = A_1$, membership in $A_1$ can be tested after applying $\pi$.
+>
 > *(Not from lecture; filled in.)* Here $A_2/A_1$ is the set of left cosets $gA_1$ with $g \in A_2$ (Definition [[§29 The Index and Lagrange's Theorem#^def-29-1|§29.1]], for the subgroup $A_1$ of the group $A_2$), and likewise $B_2/B_1$. By Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]](1), $B_1$ and $B_2$ are subgroups of $G/N$, and $B_1 \subseteq B_2$ because $A_1 \subseteq A_2$. We use one fact from the Correspondence Theorem (Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], step (3) of its proof, with $A = A_1 \supseteq N$): $\pi^{-1}(B_1) = A_1$, that is,
 >
 > $$ (\ast) \qquad \text{for } x \in G: \quad x \in A_1 \iff \pi(x) \in B_1 . $$
@@ -145,13 +153,15 @@ tags: [group-theory, math493]
 *The correspondence for $G = S_4$ and $N = K$: the subgroups of $S_4$ containing $K$ (left; $P_1, P_2, P_3$ are the three subgroups of order $8$) and the subgroups of $S_4/K \cong S_3$ (right; $\tau_1, \tau_2, \tau_3$ the transpositions). Lines denote inclusion, and each red number is the index of the smaller group in the larger; corresponding lines carry the same index. (Not from lecture; added.)*
 
 > [!theorem] Theorem §42.5: Third Isomorphism Theorem
-> Let $N \subseteq K$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$. Then $K/N$ is a normal subgroup of $G/N$ ([[§40 Quotient Groups#^def-40-1|Def. §40.1]]), and $(G/N)/(K/N) \cong G/K$.
+> Let $N \subseteq K$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$ (here $K$ is arbitrary, not the Klein four-group). Then $K/N$ is a normal subgroup of $G/N$ ([[§40 Quotient Groups#^def-40-1|Def. §40.1]]), and $(G/N)/(K/N) \cong G/K$.
 >
 > *Source: named in lecture 10/2; not covered*
 
 ^thm-42-5
 
 > [!proof]+ Proof
+> *Idea:* $gN \mapsto gK$ is a surjective homomorphism $G/N \to G/K$ with kernel $K/N$.
+>
 > *(Not from lecture; filled in.)* Let $\pi: G \to G/N$ be the projection.
 >
 > **$K/N$ is normal in $G/N$.** By Remark [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-1|Notation A/N (§42)]], $K/N = \pi(K)$. Since $K$ is a subgroup of $G$ containing $N$ and $K \trianglelefteq G$, Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]](2) gives $\pi(K) \trianglelefteq G/N$.

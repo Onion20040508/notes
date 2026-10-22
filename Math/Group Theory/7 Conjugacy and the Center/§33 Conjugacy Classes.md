@@ -29,7 +29,7 @@ tags: [group-theory, math493]
 > Let $\sigma \in S_n$. For any cycle,
 >
 > $$
-> \sigma\,(i\ j\ k\ \cdots)\,\sigma^{-1} = \big(\sigma(i)\ \sigma(j)\ \sigma(k)\ \cdots\big).
+> \sigma\,(a_1\ a_2\ \cdots\ a_r)\,\sigma^{-1} = \big(\sigma(a_1)\ \sigma(a_2)\ \cdots\ \sigma(a_r)\big).
 > $$
 >
 > More generally, for a permutation written in disjoint-cycle notation ([[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]]), conjugating by $\sigma$ applies $\sigma$ to every entry:
@@ -77,6 +77,8 @@ tags: [group-theory, math493]
 ^prop-33-2
 
 > [!proof]+ Proof
+> *Idea:* $\tau(1\,2)\tau^{-1} = (\tau(1)\ \tau(2))$; choose $\tau$ with $\tau(1) = i$, $\tau(2) = j$.
+>
 > By [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries, §33.1]], for any $\tau \in S_n$,
 >
 > $$
@@ -106,6 +108,8 @@ tags: [group-theory, math493]
 ^thm-33-3
 
 > [!proof]+ Proof
+> *Idea:* Conjugation relabels entries; for equal cycle types, match the two decompositions entry by entry.
+>
 > ($\Rightarrow$) Let $\sigma = c_1 c_2 \cdots c_k$ with disjoint cycles of lengths $r_1, \ldots, r_k$, and let $\tau \in S_n$. By [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries, §33.1]], $\tau\sigma\tau^{-1} = (\tau c_1 \tau^{-1}) \cdots (\tau c_k \tau^{-1})$ is a product of disjoint cycles of the same lengths $r_1, \ldots, r_k$; i.e. $\lambda(\tau\sigma\tau^{-1}) = \lambda(\sigma)$.
 >
 > ($\Leftarrow$) Suppose $\lambda(\sigma) = \lambda(\sigma') = (r_1, \ldots, r_k)$. Write both decompositions with their cycles in the same length order:
@@ -176,7 +180,7 @@ tags: [group-theory, math493]
 > Let $D = \begin{pmatrix} 3 & 0 \\ 0 & 4 \end{pmatrix} \in GL_2(\mathbb{C})$. The conjugacy class of $D$ in $GL_2(\mathbb{C})$ is the set of all $2 \times 2$ complex matrices with eigenvalues $3$ and $4$:
 >
 > $$
-> \operatorname{Conj}(D) = \{ A \in GL_2(\mathbb{C}) : \det(xI - A) = (x - 3)(x - 4) \} = \{ A : \operatorname{tr} A = 7,\ \det A = 12 \}.
+> \operatorname{Conj}(D) = \{ A \in GL_2(\mathbb{C}) : \det(xI - A) = (x - 3)(x - 4) \} = \{ A \in \operatorname{Mat}_{2 \times 2}(\mathbb{C}) : \operatorname{tr} A = 7,\ \det A = 12 \}.
 > $$
 >
 > *Source: WS 3.3*
@@ -184,6 +188,8 @@ tags: [group-theory, math493]
 ^prop-33-4
 
 > [!proof]+ Proof
+> *Idea:* Distinct eigenvalues give an eigenvector basis $S = [\,v_3 \mid v_4\,]$, and then $A = SDS^{-1}$.
+>
 > ($\subseteq$) If $A = SDS^{-1}$, then $A$ is similar to $D$, so $\det(xI - A) = \det(xI - D) = (x - 3)(x - 4)$.
 >
 > ($\supseteq$) Suppose $\det(xI - A) = (x - 3)(x - 4)$, so $A$ has the two distinct eigenvalues $3$ and $4$. Choose eigenvectors $v_3, v_4 \in \mathbb{C}^2$ with $Av_3 = 3v_3$, $Av_4 = 4v_4$. [[Linearly independent eigenvectors|Eigenvectors for distinct eigenvalues are linearly independent]] (if $av_3 + bv_4 = 0$, apply $A$ to get $3av_3 + 4bv_4 = 0$; subtracting $3$ times the first relation gives $bv_4 = 0$, so $b = 0$, then $a = 0$), so $S = [\,v_3 \mid v_4\,]$ is invertible. Then $AS = [\,3v_3 \mid 4v_4\,] = SD$, i.e. $A = SDS^{-1} \in \operatorname{Conj}(D)$. Finally, a $2 \times 2$ matrix has characteristic polynomial $x^2 - (\operatorname{tr} A)x + \det A$, so the condition is $\operatorname{tr} A = 7$, $\det A = 12$; such $A$ is automatically invertible since $\det A \neq 0$.

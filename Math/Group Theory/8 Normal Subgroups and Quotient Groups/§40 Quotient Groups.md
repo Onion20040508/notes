@@ -41,6 +41,8 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^thm-40-1
 
 > [!proof]+ Proof
+> *Idea:* Each group axiom in $G/N$ follows from the same axiom in $G$, via representatives.
+>
 > The operation is well defined by [[§37 Multiplying Cosets#^prop-37-1|When Coset Multiplication Is Well Defined]] (§37); the lecture's set-product proof is recorded as a remark after [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets]] ([[§38 Normal Subgroups#^rem-38-3|§38]]). Every property reduces to the corresponding property of $G$ by computing with representatives: *associativity*, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; *identity*, $(eN)(gN) = gN = (gN)(eN)$; *inverses*, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
 
 ^pf-40-1
@@ -58,6 +60,8 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^prop-40-2
 
 > [!proof]+ Proof
+> *Idea:* $\pi$ is a homomorphism by the definition of the product, and $gN = N \iff g \in N$.
+>
 > $\pi(g_1g_2) = g_1g_2N = (g_1N)(g_2N) = \pi(g_1)\pi(g_2)$ by the definition of the operation; $\pi$ is surjective by construction. The identity of $G/N$ is $N$, so $\operatorname{Ker}\pi = \{g : gN = N\} = \{g : g \in N\} = N$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]).
 
 ^pf-40-2
@@ -104,6 +108,8 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^prop-40-3
 
 > [!proof]+ Proof
+> *Idea:* $s_3$ is the representative of the coset $s_1s_2N$.
+>
 > The coset $s_1s_2N$ contains exactly one $s_3 \in S$, and $s_3 \in s_1s_2N$ means $s_1s_2N = s_3N$, i.e. $n := s_3^{-1}s_1s_2 \in N$ and $s_1s_2 = s_3n$. Then $(s_1N)(s_2N) = s_1s_2N = s_3nN = s_3N$.
 
 ^pf-40-3
@@ -147,6 +153,8 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^prop-40-4
 
 > [!proof]+ Proof
+> *Idea:* $\pi$ restricted to $S$ is a homomorphism hitting each coset of $N$ exactly once.
+>
 > The composite is the restriction of the projection $\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]], §41.5.)
 
 ^pf-40-4

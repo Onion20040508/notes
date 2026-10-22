@@ -34,6 +34,8 @@ tags: [group-theory, math493]
 ^prop-35-1
 
 > [!proof]+ Proof
+> *Idea:* $gzg^{-1} = z$ for all $g$ is the same as $gz = zg$ for all $g$.
+>
 > For any $z$, $z \in \operatorname{Conj}(z)$ (take $g = e$), so $\operatorname{Conj}(z) = \{z\}$ says exactly that $gzg^{-1} = z$ for every $g \in G$. Multiplying on the right by $g$, this holds iff $gz = zg$ for every $g$, i.e. iff $z$ is central.
 
 ^pf-35-1
@@ -48,6 +50,8 @@ tags: [group-theory, math493]
 ^prop-35-2
 
 > [!proof]+ Proof
+> *Idea:* Subgroup test: a central element can be moved past any $g$.
+>
 > *Subgroup:* $eg = g = ge$ for all $g$, so $e \in Z(G)$. If $z_1, z_2 \in Z(G)$ and $g \in G$, then
 >
 > $$
@@ -82,6 +86,8 @@ tags: [group-theory, math493]
 ^thm-35-3
 
 > [!proof]+ Proof
+> *Idea:* Class sizes are powers of $p$; mod $p$ the class equation needs another singleton class.
+>
 > For each $g$, $|\operatorname{Conj}(g)| \cdot |C_G(g)| = p^k$, so $|\operatorname{Conj}(g)|$ is a divisor of $p^k$, hence ([[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|unique factorization]]) a power $p^{a}$ with $a \geq 0$. Take class representatives $g_1 = e, g_2, \ldots, g_c$, with $|\operatorname{Conj}(g_i)| = p^{a_i}$. Since the classes partition $G$,
 >
 > $$

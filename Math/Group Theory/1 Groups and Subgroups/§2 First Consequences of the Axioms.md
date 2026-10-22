@@ -21,6 +21,8 @@ tags: [group-theory, math493]
 ^prop-2-1
 
 > [!proof]+ Proof
+> *Idea:* Multiply by $g^{-1}$ on the same side; on opposite sides it conjugates instead of cancelling.
+>
 > **(1)** Suppose $g h_1 = g h_2$. Multiply both sides on the left by $g^{-1}$, which exists by axiom (2):
 >
 > $$ g^{-1} (g h_1) = g^{-1} (g h_2). $$
@@ -48,6 +50,12 @@ tags: [group-theory, math493]
 >
 > so $g h_1 = h_2 g$ — yet $h_1 = (2\,3) \neq (1\,3) = h_2$. Consistently with [[§2 First Consequences of the Axioms#^prop-2-1|part (2)]], $h_2 = g h_1 g^{-1}$: conjugating the swap $2 \leftrightarrow 3$ by the relabeling $1 \leftrightarrow 2$ produces the swap $1 \leftrightarrow 3$.
 >
+> *(Not from lecture; from the student's worksheet solutions.)* The same failure occurs in the [[§3 Basic Examples of Groups#^def-3-6|general linear group]] $GL_2(\mathbb{R})$: take $g = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$, $h_1 = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}$, $h_2 = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$, invertible with determinants $1$, $2$, $2$. Then
+>
+> $$ g h_1 = \begin{pmatrix} 1 & 2 \\ 0 & 2 \end{pmatrix} = h_2 g, $$
+>
+> yet $h_1 \neq h_2$, since their $(1,2)$ entries are $0$ and $1$. Again $h_2 = g h_1 g^{-1}$, as [[§2 First Consequences of the Axioms#^prop-2-1|part (2)]] predicts.
+>
 > *Source: WS 1.1*
 
 ^ex-2-1
@@ -71,6 +79,8 @@ tags: [group-theory, math493]
 ^prop-2-2
 
 > [!proof]+ Proof
+> *Idea:* Evaluate the single product $e \ast e'$ in two ways.
+>
 > Suppose $e$ and $e'$ both obey condition (1). Evaluate the single product $e * e'$ in two ways. Since $e'$ satisfies (1) (with $g = e$): $e * e' = e$. Since $e$ satisfies (1) (with $g = e'$): $e * e' = e'$. Hence $e = e * e' = e'$.
 
 ^pf-2-2
@@ -88,6 +98,8 @@ tags: [group-theory, math493]
 ^prop-2-3
 
 > [!proof]+ Proof
+> *Idea:* Two inverses $h, h'$ of $g$ satisfy $gh = gh'$; cancel $g$.
+>
 > Suppose $h$ and $h'$ both obey condition (2) for $g$, i.e. $g h = h g = e$ and $g h' = h' g = e$. Then $g h = e = g h'$, so by left cancellation ([[§2 First Consequences of the Axioms#^prop-2-1|Cancellation, §2.1]]), $h = h'$.
 >
 > *Alternative direct computation (avoiding [[§2 First Consequences of the Axioms#^prop-2-1|WS 1.1]]):*
@@ -114,6 +126,8 @@ tags: [group-theory, math493]
 ^prop-2-4
 
 > [!proof]+ Proof
+> *Idea:* Check that $h^{-1}g^{-1}$ has the defining property of $(gh)^{-1}$; inverses are unique.
+>
 > By [[§2 First Consequences of the Axioms#^prop-2-3|WS 1.3]], it suffices to verify that $h^{-1} g^{-1}$ satisfies the defining property of the inverse of $gh$:
 >
 > $$ (gh)(h^{-1} g^{-1}) = g (h h^{-1}) g^{-1} = g \cdot e \cdot g^{-1} = g g^{-1} = e, $$

@@ -42,6 +42,8 @@ tags: [group-theory, math493]
 ^prop-7-1
 
 > [!proof]+ Proof
+> *Idea:* Shifting $a, b$ by multiples of $n$ shifts $a + b$ by a multiple of $n$.
+>
 > The one point requiring proof is that the operation is *well defined*: the formula $[a] + [b] = [a+b]$ uses the *representatives* $a, b$, so we must check the result does not depend on which representatives we choose. Suppose $[a] = [a']$ and $[b] = [b']$, i.e. $a' = a + kn$ and $b' = b + ln$ for some $k, l \in \mathbb{Z}$. Then
 >
 > $$ a' + b' = (a + b) + (k + l)n \equiv a + b \pmod{n}, $$
@@ -58,14 +60,16 @@ tags: [group-theory, math493]
 > [!theorem] Lemma §7.2: Descending a Map to $\mathbb{Z}/n\mathbb{Z}$
 > Fix $n \geq 1$, let $X$ be any set, and let $f: \mathbb{Z} \to X$ be a function.
 > 1. There is a function $\bar f: \mathbb{Z}/n\mathbb{Z} \to X$ with $\bar f([k]) = f(k)$ for all $k \in \mathbb{Z}$ if and only if $f(k) = f(k + n)$ for all $k \in \mathbb{Z}$; and then $\bar f$ is unique.
-> 2. If $X = G$ is a group and $f = \varphi$ is a homomorphism $(\mathbb{Z}, +) \to G$, the condition holds if and only if $n\mathbb{Z} \subseteq \operatorname{Ker}(\varphi)$, i.e. $\varphi(n) = 1$; and then $\bar\varphi$ is a homomorphism.
+> 2. If $X = G$ is a group and $f = \varphi$ is a homomorphism $(\mathbb{Z}, +) \to G$, the condition holds if and only if $n\mathbb{Z} \subseteq \operatorname{Ker}(\varphi)$, i.e. $\varphi(n) = e_G$; and then $\bar\varphi$ is a homomorphism.
 
 ^lem-7-2
 
 > [!proof]+ Proof
+> *Idea:* Set $\bar f([k]) = f(k)$; $n$-periodicity of $f$ makes this independent of the representative.
+>
 > **(1)** ($\Rightarrow$) If such $\bar f$ exists, then since $[k] = [k+n]$ we get $f(k) = \bar f([k]) = \bar f([k+n]) = f(k+n)$. ($\Leftarrow$) Suppose $f(k) = f(k+n)$ for all $k$; by induction, $f(k) = f(k + mn)$ for all $m \in \mathbb{Z}$ (for $m < 0$ apply the hypothesis at $k + mn$). Now define $\bar f([k]) := f(k)$. This is unambiguous: if $[k] = [k']$, then $k' = k + mn$ for some $m$, so $f(k') = f(k)$. Uniqueness is forced, since every class is $[k]$ for some $k$.
 >
-> **(2)** $\varphi(k + n) = \varphi(k)\varphi(n)$, so $\varphi(k+n) = \varphi(k)$ for all $k$ iff $\varphi(n) = 1$ iff $n \in \operatorname{Ker}\varphi$, and $\operatorname{Ker}\varphi$ is a subgroup, so this is equivalent to $n\mathbb{Z} \subseteq \operatorname{Ker}\varphi$. Given this, $\bar\varphi([k] + [l]) = \bar\varphi([k+l]) = \varphi(k+l) = \varphi(k)\varphi(l) = \bar\varphi([k])\bar\varphi([l])$.
+> **(2)** $\varphi(k + n) = \varphi(k)\varphi(n)$, so $\varphi(k+n) = \varphi(k)$ for all $k$ iff $\varphi(n) = e_G$ iff $n \in \operatorname{Ker}\varphi$, and $\operatorname{Ker}\varphi$ is a subgroup, so this is equivalent to $n\mathbb{Z} \subseteq \operatorname{Ker}\varphi$. Given this, $\bar\varphi([k] + [l]) = \bar\varphi([k+l]) = \varphi(k+l) = \varphi(k)\varphi(l) = \bar\varphi([k])\bar\varphi([l])$.
 
 ^pf-7-2
 

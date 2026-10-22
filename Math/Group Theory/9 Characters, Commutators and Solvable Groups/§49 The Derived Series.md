@@ -29,6 +29,8 @@ tags: [group-theory, math493]
 ^thm-49-1
 
 > [!proof]+ Proof
+> *Idea:* ($\Leftarrow$) the derived series has abelian quotients; ($\Rightarrow$) $D_k(G) \subseteq G_{N-k}$ by induction.
+>
 > **($\Leftarrow$) (lecture 10/9).** Suppose $D_N(G) = \{e\}$. By Properties of the Commutator Subgroup ([[§47 Commutators#^prop-47-4|Proposition §47.4]]) and The Abelianization Is Abelian ([[§47 Commutators#^prop-47-6|Proposition §47.6]]), applied to the group $D_k(G)$, each $D_{k+1}(G) = D(D_k(G))$ is normal in $D_k(G)$ with abelian quotient $D_k(G)/D_{k+1}(G)$. So
 >
 > $$ \{e\} = D_N(G) \trianglelefteq D_{N-1}(G) \trianglelefteq \cdots \trianglelefteq D_1(G) \trianglelefteq D_0(G) = G $$
@@ -36,7 +38,7 @@ tags: [group-theory, math493]
 > is a chain as in [[§48 Solvable Groups#^def-48-1|the definition]], read upwards ($G_j = D_{N-j}(G)$), and $G$ is solvable.
 >
 > **($\Rightarrow$) (lecture 10/12).** Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ be a chain with abelian quotients. We claim that $D_k(G) \subseteq G_{N-k}$ for $k = 0, 1, \ldots, N$; the case $k = N$ gives $D_N(G) \subseteq G_0 = \{e\}$. Two facts are used:
-> 1. if $H \subseteq K$ are subgroups, then $D(H) \subseteq D(K)$: every commutator of elements of $H$ is a commutator of elements of $K$, so the subgroup $D(K)$ contains all the generators of $D(H)$ ([[§47 Commutators#^def-47-2|Definition §47.2]]);
+> 1. if $H \subseteq L$ are subgroups, then $D(H) \subseteq D(L)$: every commutator of elements of $H$ is a commutator of elements of $L$, so the subgroup $D(L)$ contains all the generators of $D(H)$ ([[§47 Commutators#^def-47-2|Definition §47.2]]);
 > 2. if $M \trianglelefteq H$ and $H/M$ is abelian, then $D(H) \subseteq M$ (Abelian Quotients and Commutators, [[§47 Commutators#^prop-47-11|Proposition §47.11]]).
 >
 > *Base case.* $D_0(G) = G = G_N$. *Inductive step.* If $D_{k-1}(G) \subseteq G_{N-k+1}$, then
