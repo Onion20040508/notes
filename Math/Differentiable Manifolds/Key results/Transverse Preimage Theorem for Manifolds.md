@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 37.15", "preimages of transverse submanifolds", "Lee Theorem 6.30"]
+aliases: ["MATH 591 39.1", "preimages of transverse submanifolds", "Lee Theorem 6.30"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§37 Regular Submanifolds#^thm-37-15]]
+![[§39 Transversality and Lagrange Multipliers#^thm-39-1]]
 
 ## Treated in
-- [[§37 Regular Submanifolds#^thm-37-15|Theorem §37.15: Preimages of Transverse Submanifolds]], in [[§37 Regular Submanifolds]]
+- [[§39 Transversality and Lagrange Multipliers#^thm-39-1|Theorem §39.1: Preimages of Transverse Submanifolds]], in [[§39 Transversality and Lagrange Multipliers]]
 
 ## Its proof uses
 - [[§17 Differentiable Structures#^lem-17-6|Lemma §17.6: Restricting and Recomposing Smooth Charts]]
@@ -28,17 +28,17 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^prop-37-2|Proposition §37.2: Two Observations on Adapted Charts]]
 - [[§37 Regular Submanifolds#^def-37-3|Definition §37.3: Adapted Chart]]
 - [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]
-- [[§37 Regular Submanifolds#^def-37-5|Definition §37.5: Transversality to a Submanifold]]
 - [[§37 Regular Submanifolds#^prop-37-6|Proposition §37.6: Tangent Spaces of a Regular Submanifold]]
 - [[§37 Regular Submanifolds#^prop-37-7|Proposition §37.7: Adapted Charts Give Local Defining Maps]]
-- [[§37 Regular Submanifolds#^lem-37-11|Lemma §37.11: Level Sets Near a Regular Point]]
-- [[§37 Regular Submanifolds#^thm-37-12|Theorem §37.12: The Regular Value Theorem for Manifolds]]
+- [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|Lemma §38.1: Level Sets Near a Regular Point]]
+- [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|Theorem §38.2: The Regular Value Theorem for Manifolds]]
+- [[§39 Transversality and Lagrange Multipliers#^def-39-1|Definition §39.1: Transversality to a Submanifold]]
 
 ## Used in (Differentiable Manifolds)
-- [[§37 Regular Submanifolds#^prop-37-16|Proposition §37.16: Normal Spaces Under a Transverse Map]]
-- [[§37 Regular Submanifolds#^cor-37-17|Corollary §37.17: Special Cases of Transversality]]
-- [[§52 Critical Points and the Hessian#^cor-52-12|Corollary §52.12: Critical Points of a Morse Function Are Isolated]]
-- [[§60 Parametric Transversality#^thm-60-1|Theorem §60.1: Parametric Transversality]]
+- [[§39 Transversality and Lagrange Multipliers#^prop-39-2|Proposition §39.2: Normal Spaces Under a Transverse Map]]
+- [[§39 Transversality and Lagrange Multipliers#^cor-39-3|Corollary §39.3: Special Cases of Transversality]]
+- [[§55 Morse Functions and the Zero Section#^cor-55-8|Corollary §55.8: Critical Points of a Morse Function Are Isolated]]
+- [[§64 Parametric Transversality#^thm-64-1|Theorem §64.1: Parametric Transversality]]
 
 ## Connections
 - TODO

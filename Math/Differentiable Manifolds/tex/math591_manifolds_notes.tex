@@ -226,7 +226,7 @@
 \chapter*{Roadmap}
 \addcontentsline{toc}{chapter}{Roadmap}
 
-These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:submersions}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}), which leads to embeddings, the immersions whose images are submanifolds (\ref{sec:embeddings}).
+These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:submersions}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}, \ref{sec:rvt-manifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}), which leads to embeddings, the immersions whose images are submanifolds (\ref{sec:embeddings}).
 
 \begin{center}
 \begin{tikzpicture}[scale=0.92, transform shape]
@@ -10447,11 +10447,17 @@ J(q)^{\mathsf T} = \begin{pmatrix} \dfrac{\partial G^1}{\partial r^1}(q) & \cdot
 \textit{(Not from lecture.)} The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\geo}_pX = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}). In the slice chart of Proposition~\ref{prop:submanifold-euclidean}, with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{*p}(T_pX)$ (Proposition~\ref{prop:submanifold-tangent}). Proposition~\ref{prop:rvt-agree} below makes the identification precise, together with the agreement of the two smooth structures.
 \end{rembox}
 
-\subsection{The Regular Value Theorem for Manifolds}\label{sub:rvt-manifolds}
+% ============================================================================
+% SECTION: THE REGULAR VALUE THEOREM FOR MANIFOLDS
+% ============================================================================
+
+\section{The Regular Value Theorem for Manifolds}\label{sec:rvt-manifolds}\label{sub:rvt-manifolds}
+
+\roadmark{Stage: submanifolds}{Regular level sets of smooth maps between manifolds are regular submanifolds --- the regular submanifolds of \ref{sec:submanifolds} as solution sets of equations.}
 
 \textit{Lecture 12. ``And now we go back to submersions'' --- to ``[the] wonderful version of the regular value theorem.''}
 
-The local half of the theorem below holds at a single point where a map is a submersion. It is isolated as a lemma because it is used twice: for level sets here, and for preimages of transverse submanifolds later in this section.
+The local half of the theorem below holds at a single point where a map is a submersion. It is isolated as a lemma because it is used twice: for level sets here, and for preimages of transverse submanifolds in \ref{sec:transversality-submanifolds}.
 
 \begin{lembox}[Level Sets Near a Regular Point]\thmlabel{lem:rvt-local}
 Let $V \subseteq M$ be open, $\dim M = m$, $G : V \to N$ smooth with $\dim N = n$, $p \in V$ a point at which $G$ is a submersion (Definition~\ref{def:submersion}), and $c = G(p)$.
@@ -10576,6 +10582,14 @@ Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, $c$
 \]
 where $D_v|_p \in T_pW$ is the derivation of Corollary~\ref{cor:tangent-vs}, the vector $v$ under the identification $T_pW = \mathbb{R}^{n+k}$; the fifth equality is the chain rule for the line $t \mapsto p + tv$. Since $v \mapsto D_v$ is onto $T_pS$ (Theorem~\ref{thm:ambient-abstract}), $\iota_{*p}(T_pS) = T^{\geo}_pS$: every element of $T_pS$ is $D_v$ for some $v \in T^{\geo}_pS$, and its image is the vector $v$. And $T^{\geo}_pS = \ker F'(p)$ by Theorem~\ref{thm:tangent-kernel}. This matches $\ker F_{*p}$ in Theorem~\ref{thm:rvt-manifolds}, $F_{*p}$ being $F'(p)$: by Proposition~\ref{prop:differential-agree}, $F_{*p}$ corresponds to $F'(p)$ under the identification $\partial/\partial r^i|_p \mapsto e_i$, which is the identification of Corollary~\ref{cor:tangent-vs}, since $D_{e_i}|_p[g] = \frac{d}{dt}|_{t=0}\, g(p + te_i) = \partial g/\partial r^i(p)$; so $\ker F_{*p}$ corresponds to $\ker F'(p)$.
 \end{proof}
+
+% ============================================================================
+% SECTION: TRANSVERSALITY AND LAGRANGE MULTIPLIERS
+% ============================================================================
+
+\section{Transversality and Lagrange Multipliers}\label{sec:transversality-submanifolds}
+
+\roadmark{Stage: submanifolds}{Preimages of transverse submanifolds are submanifolds; normal and conormal spaces, critical points of restrictions, Lagrange multipliers, and transverse intersections.}
 
 \textit{Assignment~5, Problem~2.} \ref{sec:transversality} treated transversality in Euclidean space: a smooth map $F : \mathbb{R}^N \to \mathbb{R}^k$ transverse to a regular level set $S = G^{-1}(0)$ (Definition~\ref{def:transverse}) pulls $S$ back to a manifold of the same codimension, with $T^{\geo}_pF^{-1}(S) = F'(p)^{-1}(T^{\geo}_{F(p)}S)$ (Theorem~\ref{thm:transverse-preimage}). That proof needed a global defining map $G$. With regular submanifolds and their adapted charts, the same statement holds for any smooth map between manifolds and any regular submanifold of the target --- an adapted chart supplies a defining map $x_b$ near each point, which is the localization announced in the remark \emph{An Intrinsic Statement with a Chosen Proof} in \ref{sec:transversality}.
 
@@ -10976,7 +10990,7 @@ Codimensions add: $1 + 2 = 3$ for a surface and a curve, a point; $1 + 1 = 2$ fo
 
 \roadmark{Stage: bundles}{Submersions that are locally products.}
 
-\textit{References: Lee Ch.~10. Lectures 11--13.} The submersions that look locally like the projection $U \times F \to U$. Their fibres are submanifolds (\ref{sec:submanifolds}), all copies of one fibre; the tangent bundle, later (\ref{sec:tangent-bundle}), is the first major example.
+\textit{References: Lee Ch.~10. Lectures 11--13.} The submersions that look locally like the projection $U \times F \to U$. Their fibres are submanifolds (\ref{sec:rvt-manifolds}), all copies of one fibre; the tangent bundle, later (\ref{sec:tangent-bundle}), is the first major example.
 
 \subsection{Fibrations}\label{sub:fibrations}
 
@@ -11519,12 +11533,12 @@ The sign in (3) is the half-twist: going once around the circle, the two trivial
 
 \roadmark{Stage: bundles}{The vectors perpendicular to a submanifold of $\mathbb{R}^n$, collected into an $n$-dimensional manifold that fibres over it; its endpoint map and focal points; and, through the dot product, normal vectors as conormal covectors.}
 
-\textit{Assignment~5, Problem~5.} A submanifold $M \subseteq \mathbb{R}^n$ has, at each of its points, the vectors perpendicular to it; collecting all pairs (point, perpendicular vector) gives the \emph{normal bundle}. Part~(a) of the problem shows that it is a manifold of dimension $n$, whatever the dimension of $M$; part~(b) introduces the endpoint map and finds the focal points of a parabola. The normal bundle is the Euclidean shadow of the conormal bundle (the remark \emph{The Conormal Bundle} in \ref{sec:submanifolds}; Definition~\ref{def:conormal-bundle}, later, in \ref{sub:ctb-zero-section}): Uribe's ``if we had a metric \ldots\ this would be the normal space'' (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}) is realized here by the dot product of $\mathbb{R}^n$, and Proposition~\ref{prop:normal-conormal} makes the identification explicit. That the projection to $M$ is a fibration (Proposition~\ref{prop:normal-bundle-fibration}) --- which is why the normal bundle stands next to the examples of fibrations (\ref{sec:fibration-examples}) --- and what focal points mean geometrically (the remark \emph{Focal Points Are Centres of Curvature} below), are added.
+\textit{Assignment~5, Problem~5.} A submanifold $M \subseteq \mathbb{R}^n$ has, at each of its points, the vectors perpendicular to it; collecting all pairs (point, perpendicular vector) gives the \emph{normal bundle}. Part~(a) of the problem shows that it is a manifold of dimension $n$, whatever the dimension of $M$; part~(b) introduces the endpoint map and finds the focal points of a parabola. The normal bundle is the Euclidean shadow of the conormal bundle (the remark \emph{The Conormal Bundle} in \ref{sec:transversality-submanifolds}; Definition~\ref{def:conormal-bundle}, later, in \ref{sub:ctb-zero-section}): Uribe's ``if we had a metric \ldots\ this would be the normal space'' (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}) is realized here by the dot product of $\mathbb{R}^n$, and Proposition~\ref{prop:normal-conormal} makes the identification explicit. That the projection to $M$ is a fibration (Proposition~\ref{prop:normal-bundle-fibration}) --- which is why the normal bundle stands next to the examples of fibrations (\ref{sec:fibration-examples}) --- and what focal points mean geometrically (the remark \emph{Focal Points Are Centres of Curvature} below), are added.
 
 \emph{Three meanings of ``normal''.} \textit{(Not from lecture.)} For a regular submanifold $S$ of a manifold $M$ and $p \in S$, three spaces in these notes carry the name:
 \begin{enumerate}
     \item the \emph{conormal space} $N_pS \subseteq T_p^*M$, the covectors that vanish on $\iota_{*p}(T_pS)$ (Definition~\ref{def:conormal}, \ref{sec:submanifolds}, Lecture~12) --- intrinsic, defined without any metric;
-    \item the \emph{normal space} $T_pM/\iota_{*p}(T_pS)$, a quotient (Definition~\ref{def:normal-space}, \ref{sec:submanifolds}) --- also intrinsic; $N_pS$ consists of the covectors that vanish on $\iota_{*p}(T_pS)$, which are the same as the linear forms on this quotient;
+    \item the \emph{normal space} $T_pM/\iota_{*p}(T_pS)$, a quotient (Definition~\ref{def:normal-space}, \ref{sec:transversality-submanifolds}) --- also intrinsic; $N_pS$ consists of the covectors that vanish on $\iota_{*p}(T_pS)$, which are the same as the linear forms on this quotient;
     \item for a submanifold of Euclidean space --- in this section, following the assignment, the submanifold is called $M$ and the ambient space is $\mathbb{R}^n$ --- the \emph{Euclidean normal space} $(T^{\geo}_pM)^\perp \subseteq \mathbb{R}^n$ of vectors perpendicular to $M$ (Definition~\ref{def:normal-bundle}), studied here; it needs the dot product.
 \end{enumerate}
 With the dot product the three agree: $(T^{\geo}_pM)^\perp$ is a complement of $T^{\geo}_pM$ in $\mathbb{R}^n$, so it maps isomorphically onto the quotient $\mathbb{R}^n/T^{\geo}_pM$, which is the normal space $T_p\mathbb{R}^n/\iota_{*p}(T_pM)$ under $w \mapsto D_w|_p$; and $v \mapsto \xi_v$ maps it isomorphically onto the conormal space $N_pM$ (Proposition~\ref{prop:normal-conormal}).
@@ -11881,7 +11895,7 @@ as in the paragraph after Proposition~\ref{prop:normal-bundle-fibration}. By Pro
 \end{proof}
 
 \begin{rembox}[Normal Bundle and Conormal Bundle]\label{rem:normal-conormal}
-\textit{(Not from the assignment.)} The set $\{(p, \xi) : p \in M,\ \xi \in N_pM\}$ of Proposition~\ref{prop:normal-conormal}(3) is the conormal bundle $N^*M$ of $M \subseteq \mathbb{R}^n$, announced in the remark \emph{The Conormal Bundle} in \ref{sec:submanifolds} and defined later, in \ref{sub:ctb-zero-section} (Definition~\ref{def:conormal-bundle}), once the cotangent bundle $T^*\mathbb{R}^n$ is available. So $\mathcal{N}$ is the conormal bundle read through the metric of $\mathbb{R}^n$. This is Uribe's remark that with an inner product the conormal space ``would be the normal space'' (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}), and it is why both bundles have dimension $n$: $m$ dimensions of base point, plus $n - m$ of normal vector or conormal covector.
+\textit{(Not from the assignment.)} The set $\{(p, \xi) : p \in M,\ \xi \in N_pM\}$ of Proposition~\ref{prop:normal-conormal}(3) is the conormal bundle $N^*M$ of $M \subseteq \mathbb{R}^n$, announced in the remark \emph{The Conormal Bundle} in \ref{sec:transversality-submanifolds} and defined later, in \ref{sub:ctb-zero-section} (Definition~\ref{def:conormal-bundle}), once the cotangent bundle $T^*\mathbb{R}^n$ is available. So $\mathcal{N}$ is the conormal bundle read through the metric of $\mathbb{R}^n$. This is Uribe's remark that with an inner product the conormal space ``would be the normal space'' (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}), and it is why both bundles have dimension $n$: $m$ dimensions of base point, plus $n - m$ of normal vector or conormal covector.
 \end{rembox}
 
 \section{Immersions}\label{sec:immersions}
@@ -15152,7 +15166,7 @@ The two covectors agree on every basis vector, so they are equal; as $p \in U$ w
 
 \section{Critical Points and the Hessian}\label{sec:hessian}
 
-\roadmark{Stage: fields}{The second derivatives of a function at a critical point form a symmetric bilinear form on the tangent space, the Hessian; it is nondegenerate at every critical point exactly when the one-form $df$, as a section of $T^*M$, is transverse to the zero section, and then the critical points are isolated.}
+\roadmark{Stage: fields}{The second derivatives of a function at a critical point form a symmetric bilinear form on the tangent space, the Hessian; nondegenerate critical points and Morse functions.}
 
 \textit{Assignment~5, Problem~3, with what its proof contains. Not from lecture. The problem: the section $p \mapsto (p, df_p)$ of $T^*M$ is transverse to the zero section exactly when every critical point of $f$ has a nondegenerate Hessian; and what is the critical set of a Morse function? The Hessian, the splitting of $T(T^*M)$ along the zero section, and the second proofs are filled in around the submitted solution.}
 
@@ -15426,6 +15440,14 @@ H_p = \begin{pmatrix} -2\, I_\lambda & 0 \\ 0 & 2\, I_{m-\lambda} \end{pmatrix},
 with exactly $\lambda$ negative eigenvalues, the index.
 \end{rembox}
 
+% ============================================================================
+% SECTION: MORSE FUNCTIONS AND THE ZERO SECTION
+% ============================================================================
+
+\section{Morse Functions and the Zero Section}\label{sec:morse-zero-section}
+
+\roadmark{Stage: fields}{The Hessian of \ref{sec:hessian} seen in $T^*M$: $df$, as a section, is transverse to the zero section exactly when every critical point is nondegenerate, and then the critical points are isolated; the Hessian as a graph, and jets.}
+
 \subsection{The Cotangent Bundle Along the Zero Section}\label{sub:ctb-zero-section}
 
 \emph{Notation.} Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $(T^*U, \hat\varphi)$ the chart of $T^*M$ over $U$ (Definition~\ref{def:ctb-chart}). Its $2m$ coordinate functions (Definition~\ref{def:coordinate-functions}(2)) are, at a point $(q, \alpha) \in T^*U$,
@@ -15485,7 +15507,7 @@ Its Jacobian is the $2m \times m$ matrix $\binom{I_m}{0}$: the first $m$ compone
 \emph{(3)} By (1), $\hat\varphi$ is an adapted chart at $(p, 0)$ whose first $2m - m = m$ coordinate functions are $\bar x^1, \ldots, \bar x^m$. Proposition~\ref{prop:submanifold-tangent}, applied to $\mathcal{Z} \subseteq T^*M$ with this chart, gives $\iota_*(T_{(p,0)}\mathcal{Z}) = \Span\{\partial/\partial \bar x^1|_{(p,0)}, \ldots, \partial/\partial \bar x^m|_{(p,0)}\}$. By (2), the linear map $\zeta_{*p}$ carries the basis $\partial/\partial x^i|_p$ of $T_pM$ (Theorem~\ref{thm:tangent-basis}) to these $m$ vectors; the image of a linear map is spanned by the images of a basis, so $\zeta_{*p}(T_pM)$ is the same span.
 \end{proof}
 
-The zero section is the first of a family of submanifolds of $T^*M$, one for each regular submanifold $S$ of $M$: put all the conormal spaces of $S$ together, as the cotangent spaces are put together in $T^*M$. \textit{(Not from the assignment; the conormal spaces are those of \ref{sec:submanifolds}, see the remark \emph{The Conormal Bundle} there.)}
+The zero section is the first of a family of submanifolds of $T^*M$, one for each regular submanifold $S$ of $M$: put all the conormal spaces of $S$ together, as the cotangent spaces are put together in $T^*M$. \textit{(Not from the assignment; the conormal spaces are those of \ref{sec:submanifolds}, see the remark \emph{The Conormal Bundle} in \ref{sec:transversality-submanifolds}.)}
 
 \begin{defbox}[Conormal Bundle]\deflabel{def:conormal-bundle}
 Let $S \subseteq M$ be a regular submanifold. The \textbf{conormal bundle} of $S$ is the subset
@@ -18242,7 +18264,13 @@ comparing with the formula for $\mathbf{X}^A$ with $AB$, resp.\ $BA$, in place o
 
 \textbf{Transcription note (Lecture 17).} Page~46 of the handwritten notes says the construction gives ``$\mathbf{X} : M \to TM$''; the manifold is the group, $\mathbf{X} : G \to TG$.
 
-\subsection{Lie Group Morphisms}\label{sub:lie-group-morphisms}
+% ============================================================================
+% SECTION: LIE GROUP MORPHISMS AND LINEAR GROUPS
+% ============================================================================
+
+\section{Lie Group Morphisms and Linear Groups}\label{sec:lie-morphisms}\label{sub:lie-group-morphisms}
+
+\roadmark{Stage: symmetry}{Maps of Lie groups induce maps of Lie algebras that preserve brackets; for a linear group the bracket is the matrix commutator.}
 
 \textit{Lecture 18. ``Next, we want to talk about Lie group morphisms and the Lie algebra, because we can do something now that we couldn't before.''}
 
@@ -19175,7 +19203,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:abstract-tangent}--\ref{sec:velocities}\ Germs, derivations, the abstract tangent space & Chapter 3 throughout, including Proposition 3.14 (products) \\
 \ref{sec:cotangent}--\ref{sec:cotangent-germs}\ The cotangent space & Chapter 11, \emph{Covectors}; Problem 11-4 for $I_p/I_p^2$ \\
 \ref{sec:special-maps}--\ref{sec:submersions}\ Local diffeomorphisms, submersions & Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 \\
-\ref{sec:submanifolds}\ Regular submanifolds & Chapter 5, \emph{Embedded Submanifolds} (Theorem 5.8, Corollary 5.14, Propositions 5.35--5.38) \\
+\ref{sec:submanifolds}\ Regular submanifolds & Chapter 5, \emph{Embedded Submanifolds} (Theorem 5.8, Corollary 5.30, Propositions 5.35 and 5.37) \\
+\ref{sec:rvt-manifolds}\ The regular value theorem for manifolds & Chapter 5 (Corollary 5.14, Proposition 5.38) \\
+\ref{sec:transversality-submanifolds}\ Transversality and Lagrange multipliers & Chapter 6, \emph{Transversality} (Theorem 6.30) \\
 \ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee \\
 \ref{sec:normal-bundle}\ The normal bundle of a submanifold of Euclidean space & Chapter 6, \emph{Tubular Neighborhoods} (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, \emph{Morse Theory}, \S6) \\
 \ref{sec:immersions}\ Immersions & Chapter 4, \emph{Immersions} (Theorem 4.12); Example 4.19 \\
@@ -19188,7 +19218,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
 \ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
 \ref{sec:lie-bracket}\ Lie bracket and Lie algebra; related fields & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28); \emph{Vector Fields and Smooth Maps} (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 \\
-\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields; Lie group morphisms; the bracket of a matrix group & Chapter 7 (Examples 7.3, 7.27--7.30; \emph{Lie Group Homomorphisms}); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorems 8.37 and 8.44, Proposition 8.41) \\
+\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorem 8.37) \\
+\ref{sec:lie-morphisms}\ Lie group morphisms and linear groups & Chapter 7, \emph{Lie Group Homomorphisms}; Chapter 8, \emph{Induced Lie Algebra Homomorphisms} (Theorem 8.44, Proposition 8.41, Theorem 8.46) \\
 \ref{sec:measure-zero}\ Sets of measure zero & Chapter 6, \emph{Sets of Measure Zero} (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) \\
 \ref{sec:sard}\ Sard's theorem & Chapter 6, \emph{Sard's Theorem} (Theorem 6.10, Corollary 6.11) \\
 \ref{sec:parametric-transversality}\ Parametric transversality & Chapter 6, \emph{The Transversality Homotopy Theorem} (Theorem 6.35) \\

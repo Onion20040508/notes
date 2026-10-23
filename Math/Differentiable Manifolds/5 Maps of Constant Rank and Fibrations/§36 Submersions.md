@@ -27,9 +27,9 @@ tags: [differentiable-manifolds, math591]
 ^def-36-2
 
 > [!remark]- Connections
-> - The lecture's definition of immersion, with its normal form: [[§41 Immersions#^def-41-1|Def. §41.1]], [[§41 Immersions#^thm-41-1|§41.1]].
+> - The lecture's definition of immersion, with its normal form: [[§43 Immersions#^def-43-1|Def. §43.1]], [[§43 Immersions#^thm-43-1|§43.1]].
 
-The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§41 Immersions|§41]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
+The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§43 Immersions|§43]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
 
 > [!theorem] Proposition §36.1: Dimension Constraints
 > Let $F : M \to N$ be smooth, $m = \dim M$, $n = \dim N$, and $p \in M$.
@@ -108,7 +108,7 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
-The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§44 Projective Spaces and the Hopf Fibration|§44]].
+The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
 
 > [!definition] Definition §36.3: Regular Points and Critical Points
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
@@ -181,7 +181,7 @@ This is the definition of critical point Uribe sent to the class by email, and i
 
 ^def-36-5
 
-*(Not from lecture: the notation of Assignment 5, Problem 3, used later, in [[§52 Critical Points and the Hessian|§52]].)*
+*(Not from lecture: the notation of Assignment 5, Problem 3, used later, in [[§54 Critical Points and the Hessian|§54]].)*
 
 > [!theorem] Proposition §36.3: Local Extrema Are Critical Points
 > Let $f : M \to \mathbb{R}$ be smooth and $p \in M$. If $f$ has a local extremum at $p$ — $f(q) \le f(p)$ for all $q$ in some neighbourhood of $p$, or $f(q) \ge f(p)$ for all such $q$ — then $df_p = 0$, that is, $p \in \operatorname{Crit}(f)$.
@@ -310,7 +310,7 @@ This is the definition of critical point Uribe sent to the class by email, and i
 ^thm-36-6
 
 > [!remark]- Connections
-> - The counterpart for immersions: [[§41 Immersions#^thm-41-1|§41.1]]. The main application: the regular value theorem for manifolds, [[§37 Regular Submanifolds#^thm-37-12|§37.12]].
+> - The counterpart for immersions: [[§43 Immersions#^thm-43-1|§43.1]]. The main application: the regular value theorem for manifolds, [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
 
 Stated in Lecture 10 and proved in Lecture 11, below. The inequality $n \le m$ needs no theorem — a surjective linear map cannot raise dimension — but the normal form does: it says that every submersion, in suitable coordinates, *is* a projection.
 

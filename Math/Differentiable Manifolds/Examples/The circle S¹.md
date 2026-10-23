@@ -21,7 +21,7 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 - The three circle atlases agree with the level-set structure ([[§24 The Circle#^prop-24-1|§24]])
 - $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism $\mathbb{R} \to S^1$ that is not injective ([[§35 Local Diffeomorphisms#^ex-35-1|§35]])
 - $\mathbb{R} \to S^1$ is a covering map, while its restriction to $(0, 4\pi)$ is not ([[§35 Local Diffeomorphisms#^rem-35-2|§35]])
-- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§39 Examples of Fibrations#^ex-39-2|§39]])
+- The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product ([[§41 Examples of Fibrations#^ex-41-2|§41]])
 
 ## The torus $T^n = S^1 \times \cdots \times S^1$ inherits $T_2$ and second countability from its factors
 ![[§3 Subspaces and Products#^rem-3-6]]
@@ -69,4 +69,4 @@ The unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$, which is
 ![[§35 Local Diffeomorphisms#^rem-35-2]]
 
 ## The Möbius band fibres over $S^1 = \mathbb{R}/\mathbb{Z}$ but is not a product
-![[§39 Examples of Fibrations#^ex-39-2]]
+![[§41 Examples of Fibrations#^ex-41-2]]

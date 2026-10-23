@@ -83,7 +83,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
-> - The external description becomes the regular value theorem for manifolds, [[§37 Regular Submanifolds#^thm-37-12|§37.12]], and adapted charts, [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-9|§37.9]]); the internal one becomes the local normal form for immersions, [[§41 Immersions#^thm-41-1|§41.1]].
+> - The external description becomes the regular value theorem for manifolds, [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], and adapted charts, [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-9|§37.9]]); the internal one becomes the local normal form for immersions, [[§43 Immersions#^thm-43-1|§43.1]].
 > - The tangent space in both pictures: [[§25 The Geometric Tangent Space#^cor-25-4|§25.4]].
 
 The circle in its three descriptions is collected in [[§24 The Circle|§24]].
@@ -169,7 +169,7 @@ The proof in one picture. The transition function between two graph charts facto
 
 > [!remark]- Connections
 > - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean), [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§36 Submersions#^def-36-4|Def. §36.4]] (manifolds).
-> - Generalized to level sets in manifolds: [[§37 Regular Submanifolds#^thm-37-12|§37.12]]; the two structures agree by [[§37 Regular Submanifolds#^prop-37-14|§37.14]].
+> - Generalized to level sets in manifolds: [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]; the two structures agree by [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]].
 
 > [!example] Example §20.1: A Surface in $\mathbb{R}^3$
 > The case $n = 2$, $k = 1$, where the indices can be written out. Let $F : W \subseteq \mathbb{R}^3 \to \mathbb{R}$ be smooth with regular value $c$, so $M = F^{-1}(c)$ is a surface and $F'(p) = \nabla F(p) \neq 0$ for $p \in M$. Suppose that at $p$ *two* partial derivatives are nonzero, say $\partial F/\partial z(p) \neq 0$ and $\partial F/\partial y(p) \neq 0$. Written out, the last two entries of the $1 \times 3$ Jacobian
@@ -199,7 +199,7 @@ The proof in one picture. The transition function between two graph charts facto
 
 *Uses:* [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]]
 
-The same level sets are submanifolds in the sense of Lecture 12, and their graph-chart structure is the induced one (Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]]).
+The same level sets are submanifolds in the sense of Lecture 12, and their graph-chart structure is the induced one (Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]).
 
 > [!remark] Remark
 > The only thing that varies between charts is *which* $k$ coordinates are solved for, and the whole proof is the observation that a projection composed with a parametrization is smooth no matter which choice is made. Uribe made the same point while declining to write the general indices out: “the notation becomes a mess, but it's the same thing.” Note also that the charts are graphs of smooth maps, which is what makes the parametrization smooth — the topological argument of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] only needed $h_J$ continuous.
@@ -250,6 +250,6 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§37 Regular Submanifolds#^lem-37-5|§37.5]].
 
-Not stated in lecture; filled in because it is used repeatedly — tacitly in the proof of [[§24 The Circle#^prop-24-1|Proposition §24.1]], and explicitly for $S^n \to \mathbb{RP}^n$ in [[§44 Projective Spaces and the Hopf Fibration#^ex-44-1|Ex. §44.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
+Not stated in lecture; filled in because it is used repeatedly — tacitly in the proof of [[§24 The Circle#^prop-24-1|Proposition §24.1]], and explicitly for $S^n \to \mathbb{RP}^n$ in [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Ex. §46.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 
 That the three circle atlases define one smooth structure is collected in [[§24 The Circle|§24]].

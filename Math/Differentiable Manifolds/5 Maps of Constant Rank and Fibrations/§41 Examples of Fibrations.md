@@ -2,55 +2,55 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 5
-section: 39
+section: 41
 tags: [differentiable-manifolds, math591]
 ---
-← [[§38 Fibrations]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§40 The Normal Bundle of a Submanifold of Euclidean Space]] →
+← [[§40 Fibrations]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§42 The Normal Bundle of a Submanifold of Euclidean Space]] →
 
 *Stage: bundles — The trivial fibrations, the Möbius band with its two trivializations and their half-twist, and where the other fibrations of the course appear; the normal bundle of a submanifold of $\mathbb{R}^n$ follows in the next section.*
 
-*The examples of [[§38 Fibrations|§38]], collected: the product fibrations, which every fibration imitates locally, and the Möbius band (Lecture 12), the first fibration that is not a product. The non-examples — a submersion that is not a fibration, and one whose fibres are all diffeomorphic but which is still not a fibration — stay with Ehresmann's theorem in [[§38 Fibrations|§38]], whose hypotheses they explain. The normal bundle of a submanifold of $\mathbb{R}^n$ (Assignment 5), a fibration with fibre $\mathbb{R}^{n-m}$, has the next section to itself ([[§40 The Normal Bundle of a Submanifold of Euclidean Space|§40]]), with its endpoint map and focal points.*
+*The examples of [[§40 Fibrations|§40]], collected: the product fibrations, which every fibration imitates locally, and the Möbius band (Lecture 12), the first fibration that is not a product. The non-examples — a submersion that is not a fibration, and one whose fibres are all diffeomorphic but which is still not a fibration — stay with Ehresmann's theorem in [[§40 Fibrations|§40]], whose hypotheses they explain. The normal bundle of a submanifold of $\mathbb{R}^n$ (Assignment 5), a fibration with fibre $\mathbb{R}^{n-m}$, has the next section to itself ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]), with its endpoint map and focal points.*
 
 > [!remark] Remark: Where Explicit Trivializations Come From
-> *(Not from lecture.)* In Definition [[§38 Fibrations#^def-38-1|§38.1]] the local trivializations $\phi_\alpha$ are part of the data: a fibration has some, and nothing in the definition says how to find them — the charts of the base $B$ carry no information about the total space or the fibre. So a fibration is a map that is, over each $U_\alpha$, a product fibration (Example [[§39 Examples of Fibrations#^ex-39-1|§39.1]]), but there is no general formula for $\phi_\alpha$. Explicit trivializations come from extra structure:
-> - *The tangent and cotangent bundles* ([[§49 The Tangent Bundle|§49]], [[§50 The Cotangent Bundle|§50]]) reverse the order: $TM$ and $T^{\ast}M$ start out as sets (Definitions [[§49 The Tangent Bundle#^def-49-1|§49.1]] and [[§50 The Cotangent Bundle#^def-50-1|§50.1]]), with no topology, and the trivializations are written down first. A chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives every fibre a basis, $\partial/\partial x^i|_p$ of $T_pM$ and $dx^i|_p$ of $T_p^{\ast}M$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), and writing a tangent vector $v \in T_pM$ or a covector $\xi \in T_p^{\ast}M$ in that basis,
+> *(Not from lecture.)* In Definition [[§40 Fibrations#^def-40-1|§40.1]] the local trivializations $\phi_\alpha$ are part of the data: a fibration has some, and nothing in the definition says how to find them — the charts of the base $B$ carry no information about the total space or the fibre. So a fibration is a map that is, over each $U_\alpha$, a product fibration (Example [[§41 Examples of Fibrations#^ex-41-1|§41.1]]), but there is no general formula for $\phi_\alpha$. Explicit trivializations come from extra structure:
+> - *The tangent and cotangent bundles* ([[§51 The Tangent Bundle|§51]], [[§52 The Cotangent Bundle|§52]]) reverse the order: $TM$ and $T^{\ast}M$ start out as sets (Definitions [[§51 The Tangent Bundle#^def-51-1|§51.1]] and [[§52 The Cotangent Bundle#^def-52-1|§52.1]]), with no topology, and the trivializations are written down first. A chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives every fibre a basis, $\partial/\partial x^i|_p$ of $T_pM$ and $dx^i|_p$ of $T_p^{\ast}M$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), and writing a tangent vector $v \in T_pM$ or a covector $\xi \in T_p^{\ast}M$ in that basis,
 >
 > $$
 > v = \sum_{i=1}^m v^i\, \frac{\partial}{\partial x^i}\Big|_p, \quad v^i = v[x^i], \qquad\qquad \xi = \sum_{i=1}^m \xi_i\, dx^i\big|_p, \quad \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big)
 > $$
 >
-> (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]), is the trivialization: $(p, v) \mapsto (p, v^1, \ldots, v^m)$ (Definition [[§49 The Tangent Bundle#^def-49-4|§49.4]]) and $(p, \xi) \mapsto (p, \xi_1, \ldots, \xi_m)$ (Definition [[§50 The Cotangent Bundle#^def-50-4|§50.4]]). The topology is then *defined* from them: it is the unique topology for which every $TU$ is open and every chart $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism (Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]]; for $T^{\ast}M$, Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]), and the smooth structure is the one generated by these charts (Propositions [[§49 The Tangent Bundle#^prop-49-2|§49.2]] and [[§50 The Cotangent Bundle#^prop-50-1|§50.1]]). So the trivializations make the total space a manifold, and are local trivializations in the sense of Definition [[§38 Fibrations#^def-38-1|§38.1]] by construction (Corollaries [[§49 The Tangent Bundle#^cor-49-4|§49.4]] and [[§50 The Cotangent Bundle#^cor-50-3|§50.3]]). For a general fibration the order is the other way: the total space is a manifold to begin with, and trivializations have to be found.
-> - *A quotient description* of the total space lies in between, as for the Möbius band (Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]]): the topology is the quotient topology, given in advance, but the smooth structure is defined by the same charts that give the trivializations.
-> - *Local sections* (Definition [[§38 Fibrations#^def-38-4|§38.4]]) give them for the Hopf fibration (Proposition [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]]), whose total space $S^{2n+1}$ is a manifold in advance.
+> (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]), is the trivialization: $(p, v) \mapsto (p, v^1, \ldots, v^m)$ (Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]) and $(p, \xi) \mapsto (p, \xi_1, \ldots, \xi_m)$ (Definition [[§52 The Cotangent Bundle#^def-52-4|§52.4]]). The topology is then *defined* from them: it is the unique topology for which every $TU$ is open and every chart $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism (Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]]; for $T^{\ast}M$, Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]), and the smooth structure is the one generated by these charts (Propositions [[§51 The Tangent Bundle#^prop-51-2|§51.2]] and [[§52 The Cotangent Bundle#^prop-52-1|§52.1]]). So the trivializations make the total space a manifold, and are local trivializations in the sense of Definition [[§40 Fibrations#^def-40-1|§40.1]] by construction (Corollaries [[§51 The Tangent Bundle#^cor-51-4|§51.4]] and [[§52 The Cotangent Bundle#^cor-52-3|§52.3]]). For a general fibration the order is the other way: the total space is a manifold to begin with, and trivializations have to be found.
+> - *A quotient description* of the total space lies in between, as for the Möbius band (Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]]): the topology is the quotient topology, given in advance, but the smooth structure is defined by the same charts that give the trivializations.
+> - *Local sections* (Definition [[§40 Fibrations#^def-40-4|§40.4]]) give them for the Hopf fibration (Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]), whose total space $S^{2n+1}$ is a manifold in advance.
 >
-> Ehresmann's theorem (Theorem [[§38 Fibrations#^thm-38-3|§38.3]]) produces trivializations for proper submersions, but not by a formula.
+> Ehresmann's theorem (Theorem [[§40 Fibrations#^thm-40-3|§40.3]]) produces trivializations for proper submersions, but not by a formula.
 
-^rem-39-1
+^rem-41-1
 
 ## Product Fibrations
 
-> [!example] Example §39.1: Product Fibrations
+> [!example] Example §41.1: Product Fibrations
 > *(Not from lecture.)* For smooth manifolds $B$ and $F$, the projection $\mathrm{pr}_1 : B \times F \to B$, $\mathrm{pr}_1(b, y) = b$, is a trivial fibration with fibre $F$, with one open set $U = B$ and one local trivialization $\phi = \mathrm{id}_{B \times F}$. Every trivial fibration is this one up to the diffeomorphism $\phi$: if $\phi : M \to B \times F$ is a global trivialization of $\pi$, then $\pi = \mathrm{pr}_1 \circ \phi$.
 
-^ex-39-1
+^ex-41-1
 
 > [!proof]+ Proof
-> Check Definition [[§38 Fibrations#^def-38-1|§38.1]] with $M = B \times F$ and $\pi = \mathrm{pr}_1$. The map $\mathrm{pr}_1$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]). The single set $U = B$ covers $B$, and $\mathrm{pr}_1^{-1}(B) = B \times F$. The identity $\mathrm{id}_{B \times F}$ is a diffeomorphism $\mathrm{pr}_1^{-1}(B) \to B \times F$, and $\mathrm{pr}_1 \circ \mathrm{id}_{B \times F} = \mathrm{pr}_1 = \pi|_{\pi^{-1}(B)}$. So $\mathrm{pr}_1$ is a fibration with fibre $F$, trivial by Definition [[§38 Fibrations#^def-38-2|§38.2]]. The last sentence is the condition $\mathrm{pr}_1 \circ \phi = \pi$ of that definition.
+> Check Definition [[§40 Fibrations#^def-40-1|§40.1]] with $M = B \times F$ and $\pi = \mathrm{pr}_1$. The map $\mathrm{pr}_1$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]). The single set $U = B$ covers $B$, and $\mathrm{pr}_1^{-1}(B) = B \times F$. The identity $\mathrm{id}_{B \times F}$ is a diffeomorphism $\mathrm{pr}_1^{-1}(B) \to B \times F$, and $\mathrm{pr}_1 \circ \mathrm{id}_{B \times F} = \mathrm{pr}_1 = \pi|_{\pi^{-1}(B)}$. So $\mathrm{pr}_1$ is a fibration with fibre $F$, trivial by Definition [[§40 Fibrations#^def-40-2|§40.2]]. The last sentence is the condition $\mathrm{pr}_1 \circ \phi = \pi$ of that definition.
 
-^pf-ex-39-1
+^pf-ex-41-1
 
-*Uses:* [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§38 Fibrations#^def-38-2|Def. §38.2]]
+*Uses:* [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§40 Fibrations#^def-40-2|Def. §40.2]]
 
 ## The Möbius Band
 
-> [!example] Example §39.2: The Möbius Band
+> [!example] Example §41.2: The Möbius Band
 > The Möbius band fibres over its core circle, with an interval as fibre: “no matter where you cut it, it just looks like a [strip]. But globally, it's not a product.” Concretely, let $E = \big(\mathbb{R} \times (-1, 1)\big)/{\sim}$ with $(s, t) \sim (s + n, (-1)^n t)$ for $n \in \mathbb{Z}$, and $\pi[s, t] = [s] \in \mathbb{R}/\mathbb{Z} \cong S^1$.
 >
 > *Lee: Example 10.3*
 
-^ex-39-2
+^ex-41-2
 
-*Status.* In lecture this was a picture, not a proof: the claim that $\pi$ is a fibration with fibre $(-1, 1)$ is proved, with explicit local trivializations, in [[§39 Examples of Fibrations#^prop-39-1|Proposition §39.1]] below; the claim that $E$ is not globally the product $S^1 \times (-1, 1)$ is stated, not proved, here. Over any arc of the circle shorter than the whole, the twist can be undone, which is the local product structure; the obstruction is global, and it is visible in the picture: the band has a single boundary curve, while the product $S^1 \times (-1, 1)$ closed up would have two. Lee's Möbius bundle takes the fibre $\mathbb{R}$ in place of $(-1, 1)$.
+*Status.* In lecture this was a picture, not a proof: the claim that $\pi$ is a fibration with fibre $(-1, 1)$ is proved, with explicit local trivializations, in [[§41 Examples of Fibrations#^prop-41-1|Proposition §41.1]] below; the claim that $E$ is not globally the product $S^1 \times (-1, 1)$ is stated, not proved, here. Over any arc of the circle shorter than the whole, the twist can be undone, which is the local product structure; the obstruction is global, and it is visible in the picture: the band has a single boundary curve, while the product $S^1 \times (-1, 1)$ closed up would have two. Lee's Möbius bundle takes the fibre $\mathbb{R}$ in place of $(-1, 1)$.
 
 ![[m591-16-5.svg]]
 *Left: the strip $[0, 1] \times (-1, 1)$, ruled by its fibres, with the core circle in orange; glue the two ends with a half-twist, matching the arrows. Right: the band itself. Each grey segment is a fibre, lying over one point of the orange core circle, and the boundary is a single curve.*
@@ -58,8 +58,8 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - $E$ is the orbit space of $\mathbb{Z}$ acting on $\mathbb{R} \times (-1,1)$: [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]]; quotient spaces in 590: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3]].
 
-> [!theorem] Proposition §39.1: The Möbius Band Is a Fibration
-> Let $E = \big(\mathbb{R} \times (-1, 1)\big)/{\sim}$ and $\pi[s, t] = [s]$ be as in Example [[§39 Examples of Fibrations#^ex-39-2|§39.2]], let $q : \mathbb{R} \times (-1, 1) \to E$ be the quotient map, and identify $\mathbb{R}/\mathbb{Z}$ with $S^1$ by $h[s] = (\cos 2\pi s, \sin 2\pi s)$. For $a \in \{0, \tfrac12\}$ put $I_a = (a, a + 1)$, $U_a = \{[s] : s \in I_a\} \subseteq \mathbb{R}/\mathbb{Z}$ and $W_a = q\big(I_a \times (-1, 1)\big) \subseteq E$.
+> [!theorem] Proposition §41.1: The Möbius Band Is a Fibration
+> Let $E = \big(\mathbb{R} \times (-1, 1)\big)/{\sim}$ and $\pi[s, t] = [s]$ be as in Example [[§41 Examples of Fibrations#^ex-41-2|§41.2]], let $q : \mathbb{R} \times (-1, 1) \to E$ be the quotient map, and identify $\mathbb{R}/\mathbb{Z}$ with $S^1$ by $h[s] = (\cos 2\pi s, \sin 2\pi s)$. For $a \in \{0, \tfrac12\}$ put $I_a = (a, a + 1)$, $U_a = \{[s] : s \in I_a\} \subseteq \mathbb{R}/\mathbb{Z}$ and $W_a = q\big(I_a \times (-1, 1)\big) \subseteq E$.
 >
 > 1. $E$ is a topological $2$-manifold, and the two maps $\psi_a = \big(q|_{I_a \times (-1,1)}\big)^{-1} : W_a \to I_a \times (-1, 1)$ form a smooth atlas, with transition
 >
@@ -80,7 +80,7 @@ tags: [differentiable-manifolds, math591]
 > \phi_{1/2} \circ \phi_0^{-1}\big([s], t\big) = \begin{cases} \big([s], t\big), & \tfrac12 < s < 1, \\ \big([s], -t\big), & 0 < s < \tfrac12. \end{cases}
 > $$
 
-^prop-39-1
+^prop-41-1
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* Write $g_n(s, t) = \big(s + n, (-1)^n t\big)$ for $n \in \mathbb{Z}$, so that $(s, t) \sim (s', t')$ exactly when $(s', t') = g_n(s, t)$ for some $n$. Each $g_n$ is a homeomorphism of $\mathbb{R} \times (-1, 1)$, with inverse $g_{-n}$, since $g_n \circ g_m = g_{n+m}$ and $g_0 = \mathrm{id}$.
@@ -109,20 +109,20 @@ tags: [differentiable-manifolds, math591]
 >
 > a smooth map. The $W_a$ cover $E$, so $\pi$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]).
 >
-> *(2) The trivializations.* $\phi_a = (\chi_a^{-1} \times \mathrm{id}) \circ \psi_a$, since $\psi_a[s, t] = (s, t)$ and $\chi_a^{-1}(s) = [s]$ for $s \in I_a$. Here $\psi_a : W_a \to I_a \times (-1, 1)$ is a diffeomorphism, a chart of the open submanifold $W_a$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), and $\chi_a^{-1} \times \mathrm{id} : I_a \times (-1, 1) \to U_a \times (-1, 1)$ is a diffeomorphism, with inverse $\chi_a \times \mathrm{id}$, both having the identity as coordinate representation in the product chart $(U_a \times (-1, 1), \chi_a \times \mathrm{id})$. So $\phi_a$ is a diffeomorphism, and $\mathrm{pr}_1 \circ \phi_a[s, t] = [s] = \pi[s, t]$. With the open cover $\{U_0, U_{1/2}\}$ of $\mathbb{R}/\mathbb{Z}$, Definition [[§38 Fibrations#^def-38-1|§38.1]] holds with fibre $(-1, 1)$.
+> *(2) The trivializations.* $\phi_a = (\chi_a^{-1} \times \mathrm{id}) \circ \psi_a$, since $\psi_a[s, t] = (s, t)$ and $\chi_a^{-1}(s) = [s]$ for $s \in I_a$. Here $\psi_a : W_a \to I_a \times (-1, 1)$ is a diffeomorphism, a chart of the open submanifold $W_a$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), and $\chi_a^{-1} \times \mathrm{id} : I_a \times (-1, 1) \to U_a \times (-1, 1)$ is a diffeomorphism, with inverse $\chi_a \times \mathrm{id}$, both having the identity as coordinate representation in the product chart $(U_a \times (-1, 1), \chi_a \times \mathrm{id})$. So $\phi_a$ is a diffeomorphism, and $\mathrm{pr}_1 \circ \phi_a[s, t] = [s] = \pi[s, t]$. With the open cover $\{U_0, U_{1/2}\}$ of $\mathbb{R}/\mathbb{Z}$, Definition [[§40 Fibrations#^def-40-1|§40.1]] holds with fibre $(-1, 1)$.
 >
 > *(3)* Let $[s] \in U_0 \cap U_{1/2}$ with $s \in I_0$. Then $\phi_0^{-1}([s], t) = q(s, t)$, and by the transition in (1), $q(s, t) = q(s, t)$ with $s \in I_{1/2}$ if $\tfrac12 < s < 1$, and $q(s, t) = q(s + 1, -t)$ with $s + 1 \in I_{1/2}$ if $0 < s < \tfrac12$. Applying $\phi_{1/2}$ gives $([s], t)$ in the first case and $([s + 1], -t) = ([s], -t)$ in the second.
 
-^pf-39-1
+^pf-41-1
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-4|Def. §13.4]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§11 Topological Groups and Classical Matrix Groups#^ex-11-1|Ex. §11.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§38 Fibrations#^def-38-1|Def. §38.1]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-4|Def. §13.4]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§11 Topological Groups and Classical Matrix Groups#^ex-11-1|Ex. §11.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]]
 
 The sign in (3) is the half-twist: going once around the circle, the two trivializations agree on one arc and differ by $t \mapsto -t$ on the other. Over either arc alone the band is a product; the sign is what a global product would have to remove.
 
 ## Further Examples
 
 *(Not from lecture: a guide to the fibrations that appear later.)*
-- *The Hopf fibration* $S^{2n+1} \to \mathbb{CP}^n$, with fibre $S^1$ and the explicit trivializations $\phi_j(z) = ([z], z_j/|z_j|)$ (Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]]); it has local sections but no global one (Corollary [[§44 Projective Spaces and the Hopf Fibration#^cor-44-2|§44.2]]).
-- *The normal bundle* $\mathcal{N} \to M$ of a submanifold $M \subseteq \mathbb{R}^n$, with fibre $\mathbb{R}^{n-m}$ (Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]], in the next section, [[§40 The Normal Bundle of a Submanifold of Euclidean Space|§40]]).
-- *The tangent and cotangent bundles* $TM \to M$ and $T^{\ast}M \to M$, with fibre $\mathbb{R}^m$, whose trivializations come from charts of $M$ (Corollaries [[§49 The Tangent Bundle#^cor-49-4|§49.4]] and [[§50 The Cotangent Bundle#^cor-50-3|§50.3]]).
-- *Two-to-one local diffeomorphisms*: $S^n \to \mathbb{RP}^n$ (Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-1|§44.1]]) and $\mathrm{SU}(2) \to \mathrm{SO}(3)$ (Theorem [[§46 SU(2) → SO(3)꞉ The Double Cover#^thm-46-4|§46.4]]). These are fibrations with a two-point fibre (two-sheeted coverings); the notes prove the local-diffeomorphism and two-to-one statements, not the fibration property.
+- *The Hopf fibration* $S^{2n+1} \to \mathbb{CP}^n$, with fibre $S^1$ and the explicit trivializations $\phi_j(z) = ([z], z_j/|z_j|)$ (Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]]); it has local sections but no global one (Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]]).
+- *The normal bundle* $\mathcal{N} \to M$ of a submanifold $M \subseteq \mathbb{R}^n$, with fibre $\mathbb{R}^{n-m}$ (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]], in the next section, [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]).
+- *The tangent and cotangent bundles* $TM \to M$ and $T^{\ast}M \to M$, with fibre $\mathbb{R}^m$, whose trivializations come from charts of $M$ (Corollaries [[§51 The Tangent Bundle#^cor-51-4|§51.4]] and [[§52 The Cotangent Bundle#^cor-52-3|§52.3]]).
+- *Two-to-one local diffeomorphisms*: $S^n \to \mathbb{RP}^n$ (Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]]) and $\mathrm{SU}(2) \to \mathrm{SO}(3)$ (Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|§48.4]]). These are fibrations with a two-point fibre (two-sheeted coverings); the notes prove the local-diffeomorphism and two-to-one statements, not the fibration property.

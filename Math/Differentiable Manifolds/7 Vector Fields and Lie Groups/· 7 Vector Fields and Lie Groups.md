@@ -14,18 +14,19 @@ tags: [chapter, differentiable-manifolds]
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Topology]] (2), [[Multivariable Analysis]] (2)
 
 ## Sections
-- [[§53 Vector Fields]]
-- [[§54 Differential Operators]]
-- [[§55 Lie Bracket and Lie Algebra]]
-- [[§56 Related Vector Fields]]
-- [[§57 Lie Groups and Left-Invariant Vector Fields]]
+- [[§56 Vector Fields]]
+- [[§57 Differential Operators]]
+- [[§58 Lie Bracket and Lie Algebra]]
+- [[§59 Related Vector Fields]]
+- [[§60 Lie Groups and Left-Invariant Vector Fields]]
+- [[§61 Lie Group Morphisms and Linear Groups]]
 
 ## Central results
-- [[The Lie Algebra Is the Tangent Space at the Identity]] (§57.7)
+- [[The Lie Algebra Is the Tangent Space at the Identity]] (§60.7)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§53 Vector Fields#^prop-53-4|Proposition §53.4: Bump Functions Exist]]: 31 later results
-- [[§53 Vector Fields#^prop-53-1|Proposition §53.1: Vector Fields in Coordinates]]: 29 later results
-- [[§53 Vector Fields#^prop-53-2|Proposition §53.2: The Space of Vector Fields Is a Real Vector Space]]: 29 later results
-- [[§53 Vector Fields#^lem-53-3|Lemma §53.3: A Vector Field Is a Derivation]]: 27 later results
+- [[§56 Vector Fields#^prop-56-4|Proposition §56.4: Bump Functions Exist]]: 31 later results
+- [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]: 29 later results
+- [[§56 Vector Fields#^prop-56-2|Proposition §56.2: The Space of Vector Fields Is a Real Vector Space]]: 29 later results
+- [[§56 Vector Fields#^lem-56-3|Lemma §56.3: A Vector Field Is a Derivation]]: 27 later results

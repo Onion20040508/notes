@@ -25,7 +25,7 @@ The route of each proof in the notes is folded under **Hints**. Results that are
 3. **Homework technique**: filled in by the notes, but its proof uses a strategy the homework drills often (S1, S2, S4, S5, S6, S7, S8, S9, S10, S13, S14, S15).
 4. **Notes only**: optional before the midterm.
 
-Entries: 63 homework, 210 class, 13 homework technique, 16 notes only (Lie-group entries excluded).
+Entries: 63 homework, 209 class, 12 homework technique, 18 notes only (Lie-group entries excluded).
 
 # T1. Topological manifolds, quotients, group actions
 
@@ -161,7 +161,7 @@ $V \subseteq S$ is open iff $V = U \cap S$ for some open $U \subseteq X$, see De
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]; Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]]; Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]; the remark *What Subspaces Do Not Inherit* in [[§3 Subspaces and Products|§3]].
-> - Used for: regular level sets, Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] (a regular submanifold carries the subspace topology), Definition [[§42 Embeddings#^def-42-1|§42.1]].
+> - Used for: regular level sets, Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] (a regular submanifold carries the subspace topology), Definition [[§44 Embeddings#^def-44-1|§44.1]].
 
 #### Product topology · P2
 
@@ -287,7 +287,7 @@ A group with a topology in which multiplication and inversion are continuous, se
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|§11.1]]; Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], Example [[§11 Topological Groups and Classical Matrix Groups#^ex-11-1|§11.1]], Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|§11.1]].
-> - Q4: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], used in Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]. Smooth version: Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]].
+> - Q4: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], used in Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]. Smooth version: Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]].
 
 #### Continuous action · P2
 
@@ -332,8 +332,8 @@ A continuous map is proper if preimages of compact sets are compact, see Definit
 - [ ] Q4 **[use]** Which property of proper maps into manifolds replaces compactness in later proofs?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] (the same notion is Definition [[§42 Embeddings#^def-42-2|§42.2]]).
-> - Q2: compact subsets of a Hausdorff space are closed, closed subsets of a compact space are compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]). Q4: Proposition [[§42 Embeddings#^prop-42-4|§42.4]] (proper maps into manifolds are closed).
+> - Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] (the same notion is Definition [[§44 Embeddings#^def-44-2|§44.2]]).
+> - Q2: compact subsets of a Hausdorff space are closed, closed subsets of a compact space are compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]). Q4: Proposition [[§44 Embeddings#^prop-44-4|§44.4]] (proper maps into manifolds are closed).
 
 #### Proper action · P2
 
@@ -348,7 +348,7 @@ A continuous action is proper if $\Psi : G \times X \to X \times X$, $\Psi(g, x)
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§13 Group Actions and Orbit Spaces#^def-13-7|§13.7]]; the map $(\ast)$ in the proof of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]]; the remark *Proper Actions* in [[§13 Group Actions and Orbit Spaces|§13]].
-> - Q2: $\operatorname{im} \Psi = \Gamma$, the graph of the orbit relation; Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]. Q4: Proposition [[§42 Embeddings#^prop-42-4|§42.4]] (the notes do not prove the proper-action theorem; Lee Ch. 21, Proposition 21.4).
+> - Q2: $\operatorname{im} \Psi = \Gamma$, the graph of the orbit relation; Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]. Q4: Proposition [[§44 Embeddings#^prop-44-4|§44.4]] (the notes do not prove the proper-action theorem; Lee Ch. 21, Proposition 21.4).
 
 #### Homogeneous space · P2
 
@@ -515,7 +515,7 @@ Every point of a topological manifold has an open neighbourhood with compact clo
 - [ ] Q2 Choose a chart at $q$ and a closed ball $\overline B_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Define $V$ and $K$.
 - [ ] Q3 Why is $K$ compact, and why is it closed in $M$? (Which axiom of a manifold is used?)
 - [ ] Q4 Conclude $\overline V \subseteq K$ is compact.
-- [ ] Q5 **[why]** Where is this used later (proper maps into manifolds are closed, Proposition [[§42 Embeddings#^prop-42-4|§42.4]])?
+- [ ] Q5 **[why]** Where is this used later (proper maps into manifolds are closed, Proposition [[§44 Embeddings#^prop-44-4|§44.4]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: go down to Euclidean space, take a ball, pull it up.
@@ -1062,7 +1062,7 @@ Near $p$, $X \cap W$ is the image of a smooth $\alpha : V \to \mathbb{R}^{n+k}$,
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]]; Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]] (a parametrization is an inverse chart); Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]].
-> - Q3: Example [[§42 Embeddings#^ex-42-1|§42.1]] (the figure-eight), Example [[§41 Immersions#^ex-41-2|§41.2]]. Q4: $\alpha(t) = (t^2, t^3)$ (not in the notes): smooth, injective, a homeomorphism onto the cusp $y^2 = x^3$, with $D\alpha_0 = 0$.
+> - Q3: Example [[§44 Embeddings#^ex-44-1|§44.1]] (the figure-eight), Example [[§43 Immersions#^ex-43-2|§43.2]]. Q4: $\alpha(t) = (t^2, t^3)$ (not in the notes): smooth, injective, a homeomorphism onto the cusp $y^2 = x^3$, with $D\alpha_0 = 0$.
 
 ## Proofs T2
 
@@ -1783,7 +1783,7 @@ A germ at $p$ is a class of pairs $(f, U)$, $f$ smooth on an open $U \ni p$, two
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§27 Germs#^def-27-1|§27.1]], Definition [[§27 Germs#^def-27-2|§27.2]], Definition [[§27 Germs#^def-27-3|§27.3]]; Proposition [[§27 Germs#^prop-27-1|§27.1]], Proposition [[§27 Germs#^prop-27-2|§27.2]].
 > - Q2: intersect the two sets $W$; Example [[§27 Germs#^ex-27-1|§27.1]]. Q4: Example [[§27 Germs#^ex-27-2|§27.2]], Definition [[§27 Germs#^def-27-4|§27.4]] ($e^{-1/s}$).
-> - Q5: Corollary [[§53 Vector Fields#^cor-53-5|§53.5]] (bump function).
+> - Q5: Corollary [[§56 Vector Fields#^cor-56-5|§56.5]] (bump function).
 
 #### Derivation at a point · P2
 
@@ -1815,7 +1815,7 @@ $T_pM$, the vector space of all derivations at $p$, see Definition [[§28 Deriva
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]; the remark *Two Faces of a Tangent Vector* in [[§28 Derivations and the Abstract Tangent Space|§28]].
-> - Q2: Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]] (needs bump functions, Corollary [[§53 Vector Fields#^cor-53-5|§53.5]]). Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]].
+> - Q2: Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]] (needs bump functions, Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]). Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]].
 > - Q4: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]] (Uribe: smoothness of the $g_i$ is "a key point": one applies $D$ to them).
 > - Q5: $D_v$, Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]].
 
@@ -1914,7 +1914,7 @@ If $F : M^m \to N^n$ is smooth and $c$ a regular value, $F^{-1}(c)$ is a topolog
 - [ ] Q2 **[state]** State both results.
 - [ ] Q3 Proposition: why does $\varphi$ carry $F^{-1}(c)$ onto $\tilde F^{-1}(\tilde c)$, and why are the two regularity conditions the same (matrix theorem)?
 - [ ] Q4 Corollary: at $p \in F^{-1}(c)$, which charts do you choose, and why is $c$ still a regular value of $F|_U$?
-- [ ] Q5 **[why]** This gives only a *topological* manifold. Which later theorem gives the smooth (regular submanifold) structure (Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]])?
+- [ ] Q5 **[why]** This gives only a *topological* manifold. Which later theorem gives the smooth (regular submanifold) structure (Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S5.
@@ -2031,7 +2031,7 @@ $D \mapsto (f \mapsto D[f])$ is a linear isomorphism from derivations of germs a
 - [ ] Q1 **[state]** State the proposition: both notions of tangent vector.
 - [ ] Q2 Why is $v_D$ a derivation of $C^\infty(M)$, and why is $D \mapsto v_D$ linear?
 - [ ] Q3 Where do bump functions enter (injectivity: every germ has a global representative)?
-- [ ] Q4 **[why]** Which result of the course is assumed and not proved here (Proposition [[§53 Vector Fields#^prop-53-4|§53.4]])? Why does the course prefer germs?
+- [ ] Q4 **[why]** Which result of the course is assumed and not proved here (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]])? Why does the course prefer germs?
 
 > [!tip]- Hints: route of the proof in the notes
 > - $f \mapsto [f]$ is an algebra map compatible with evaluation.
@@ -2401,7 +2401,7 @@ $T^\ast_pM = (T_pM)^\ast$, the dual of the abstract tangent space, see Definitio
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§32 The Cotangent Space#^def-32-4|§32.4]]; Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]], Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]].
 > - Q2: Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]. Q3: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]].
-> - Q4: none: $\sum_i \xi_i\,dx^i|_p = d\big(\sum_i \xi_i x^i\big)_p$. Pointwise every covector is a differential; for one-forms this fails (Proposition [[§51 One-Forms#^prop-51-3|§51.3]]).
+> - Q4: none: $\sum_i \xi_i\,dx^i|_p = d\big(\sum_i \xi_i x^i\big)_p$. Pointwise every covector is a differential; for one-forms this fails (Proposition [[§53 One-Forms#^prop-53-3|§53.3]]).
 
 #### Differential of a function $df_p$ · P2
 
@@ -2431,7 +2431,7 @@ $\xi_i = \xi(\partial/\partial x^i|_p)$, so $\xi = \sum_i \xi_i\,dx^i|_p$, see D
 - [ ] Q4 **[example]** What are the components of $df_p$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]; Q2: Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]. Q3: Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] versus Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]].
+> - Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]; Q2: Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]. Q3: Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]] versus Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]].
 > - Q4: $\partial f/\partial x^i(p)$, Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]].
 
 #### Pullback of covectors · P2
@@ -2593,7 +2593,7 @@ $F$ is a submersion at $p$ if $F_{\ast p}$ is onto, and a submersion if it is on
 - [ ] Q5 **[why]** True or false: there is a submersion from $S^2$ to $\mathbb{R}$. Which property of submersions decides it?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§36 Submersions#^def-36-1|§36.1]]; Example [[§36 Submersions#^ex-36-1|§36.1]], Example [[§36 Submersions#^ex-36-2|§36.2]], Proposition [[§38 Fibrations#^prop-38-1|§38.1]] (part 2).
+> - Definition [[§36 Submersions#^def-36-1|§36.1]]; Example [[§36 Submersions#^ex-36-1|§36.1]], Example [[§36 Submersions#^ex-36-2|§36.2]], Proposition [[§40 Fibrations#^prop-40-1|§40.1]] (part 2).
 > - Q3: Theorem [[§36 Submersions#^thm-36-6|§36.6]]; Corollary [[§36 Submersions#^cor-36-7|§36.7]], Corollary [[§36 Submersions#^cor-36-9|§36.9]] (open: "locally they are projections").
 > - Q4: $0$ is critical; $f(\mathbb{R}) = [0, \infty)$ is not open. Q5: Theorem [[§36 Submersions#^thm-36-10|§36.10]], Corollary [[§36 Submersions#^cor-36-11|§36.11]] → drilled as [[Differentiable Manifolds HW Drill#^hw4-2|HW4.2]].
 > - Also: for $G : M \to \mathbb{R}^k$, submersion at $p$ iff the $dG^j|_p$ are independent, Proposition [[§36 Submersions#^prop-36-4|§36.4]].
@@ -2611,9 +2611,9 @@ $F$ is an immersion at $p$ if $F_{\ast p}$ is injective, and an immersion if it 
 - [ ] Q5 **[why]** Is an immersion with $\dim M = \dim N$ a local diffeomorphism? Why?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§36 Submersions#^def-36-2|§36.2]] (= Definition [[§41 Immersions#^def-41-1|§41.1]]); Proposition [[§36 Submersions#^prop-36-1|§36.1]].
-> - Q2: Example [[§41 Immersions#^ex-41-1|§41.1]], Example [[§41 Immersions#^ex-41-2|§41.2]]. Q3: injective, not an immersion at $0$ (velocity $0$); the image is the cusp.
-> - Q4: Theorem [[§41 Immersions#^thm-41-1|§41.1]]. Q5: Proposition [[§36 Submersions#^prop-36-1|§36.1]] (part 3).
+> - Definition [[§36 Submersions#^def-36-2|§36.2]] (= Definition [[§43 Immersions#^def-43-1|§43.1]]); Proposition [[§36 Submersions#^prop-36-1|§36.1]].
+> - Q2: Example [[§43 Immersions#^ex-43-1|§43.1]], Example [[§43 Immersions#^ex-43-2|§43.2]]. Q3: injective, not an immersion at $0$ (velocity $0$); the image is the cusp.
+> - Q4: Theorem [[§43 Immersions#^thm-43-1|§43.1]]. Q5: Proposition [[§36 Submersions#^prop-36-1|§36.1]] (part 3).
 
 #### Regular point and critical point (manifolds) · P2
 
@@ -2643,7 +2643,7 @@ $q \in N$ is a regular value of $F$ if $F$ is a submersion at every $p \in F^{-1
 - [ ] Q5 **[example]** For the height function on $S^2$, find the critical values.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]], Definition [[§36 Submersions#^def-36-4|§36.4]]; Q2: Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]].
+> - Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]], Definition [[§36 Submersions#^def-36-4|§36.4]]; Q2: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
 > - Q3: $f(x, y) = y^2$ on $\mathbb{R}^2$: $0$ is critical, yet $f^{-1}(0)$ is the $x$-axis, a submanifold (not in the notes).
 > - Q4: exactly the values not attained; the preimage is empty. Q5: $\pm 1$ (the poles).
 
@@ -2659,7 +2659,7 @@ $\operatorname{Crit}(f) = \{p : df_p = 0\}$ for $f : M \to \mathbb{R}$, see Defi
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§36 Submersions#^def-36-5|§36.5]]; Proposition [[§36 Submersions#^prop-36-2|§36.2]]; Q2: Corollary [[§36 Submersions#^cor-36-8|§36.8]] (the regular points form an open set, Corollary [[§36 Submersions#^cor-36-7|§36.7]]).
-> - Q3: $p \in \operatorname{Crit}(f)$ iff $df(p)$ lies on the zero section, Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]].
+> - Q3: $p \in \operatorname{Crit}(f)$ iff $df(p)$ lies on the zero section, Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]].
 
 ## Proofs T6
 
@@ -2811,7 +2811,7 @@ If $F : M^m \to N^n$ is a submersion at $p$, there are charts $(U, \varphi)$ at 
 - [ ] Q4 Define the new coordinates $\hat\varphi = (F^1, \ldots, F^n, x^{n+1}, \ldots, x^m)$. Compute its Jacobian in the old coordinates and its determinant.
 - [ ] Q5 Why is $\hat\varphi$, after shrinking, a smooth chart (inverse function theorem, then Lemma [[§36 Submersions#^lem-36-5|§36.5]])?
 - [ ] Q6 Compute $\psi \circ F \circ \hat\varphi^{-1}$: why is its $i$-th component $r^i$ for $i \le n$?
-- [ ] Q7 **[why]** Why is the normal form only *local*? Which chart was changed and which kept? What does the theorem give for the fibres $F^{-1}(c)$ (Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]])?
+- [ ] Q7 **[why]** Why is the normal form only *local*? Which chart was changed and which kept? What does the theorem give for the fibres $F^{-1}(c)$ (Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S8 (normal forms give charts).
@@ -2869,8 +2869,8 @@ For a manifold $S \subseteq \mathbb{R}^k$ of dimension $s$, $\operatorname{codim
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§26 Transversality#^def-26-1|§26.1]], Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]].
-> - Q2: Theorem [[§26 Transversality#^thm-26-1|§26.1]], Proposition [[§26 Transversality#^prop-26-4|§26.4]], Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]], Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]].
-> - Q3: Proposition [[§37 Regular Submanifolds#^prop-37-16|§37.16]] (the normal spaces are isomorphic). Q4: $\dim N$; Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]] (part 1).
+> - Q2: Theorem [[§26 Transversality#^thm-26-1|§26.1]], Proposition [[§26 Transversality#^prop-26-4|§26.4]], Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]].
+> - Q3: Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]] (the normal spaces are isomorphic). Q4: $\dim N$; Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] (part 1).
 
 #### Transversality (Euclidean) · P1
 
@@ -2899,12 +2899,12 @@ Regular level sets $S_1, S_2 \subseteq \mathbb{R}^k$ intersect transversally if 
 - [ ] Q4 **[use]** What are the codimension and tangent space of a transverse intersection?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§26 Transversality#^def-26-3|§26.3]]; Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]] (part 2), Proposition [[§26 Transversality#^prop-26-4|§26.4]].
+> - Definition [[§26 Transversality#^def-26-3|§26.3]]; Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] (part 2), Proposition [[§26 Transversality#^prop-26-4|§26.4]].
 > - Q3: no: $1 + 1 < 3$, so the sum of the tangent lines cannot be $\mathbb{R}^3$; only disjoint curves are transverse.
 
 #### Transversality to a submanifold · P1
 
-$F \pitchfork S$ if $F_{\ast p}(T_pM) + \iota_{\ast F(p)}(T_{F(p)}S) = T_{F(p)}N$ at every $p \in F^{-1}(S)$, see Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]. *Source: Assignment 5, Problem 2.*
+$F \pitchfork S$ if $F_{\ast p}(T_pM) + \iota_{\ast F(p)}(T_{F(p)}S) = T_{F(p)}N$ at every $p \in F^{-1}(S)$, see Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]. *Source: Assignment 5, Problem 2.*
 
 ^nd-def-37-5
 
@@ -2915,8 +2915,8 @@ $F \pitchfork S$ if $F_{\ast p}(T_pM) + \iota_{\ast F(p)}(T_{F(p)}S) = T_{F(p)}N
 - [ ] Q5 **[example]** In $\mathbb{R}^2$, is the inclusion of the line $y = 1$ transverse to the unit circle? The line $y = \tfrac12$? What is the preimage in each case?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]; Q2: Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]] (part 3); Example [[§26 Transversality#^ex-26-2|§26.2]] (b), $t \mapsto (t, t^2)$.
-> - Q3: Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]] (part 1). Q4: Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]].
+> - Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]; Q2: Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] (part 3); Example [[§26 Transversality#^ex-26-2|§26.2]] (b), $t \mapsto (t, t^2)$.
+> - Q3: Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] (part 1). Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]].
 > - Q5: $y = 1$ is tangent at $(0, 1)$ (the tangent lines coincide), so not transverse; $y = \tfrac12$ meets in two points, transversally. Compare Example [[§26 Transversality#^ex-26-1|§26.1]].
 
 ### Priority 2 · stated or done in class
@@ -2935,8 +2935,8 @@ $S \subseteq M$ (subspace topology) is a regular submanifold of codimension $k$ 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] ($\varphi_S = x_a|_{U \cap S}$, dimension $m - k$).
-> - Q3: Proposition [[§42 Embeddings#^prop-42-12|§42.12]], Example [[§42 Embeddings#^ex-42-1|§42.1]] (dense, so would be open, Corollary [[§42 Embeddings#^cor-42-8|§42.8]]). Q4: Example [[§42 Embeddings#^ex-42-1|§42.1]] (removing the origin leaves four components).
-> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]], Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]. Also: maps into $M$ with image in $S$ are smooth into $S$, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]].
+> - Q3: Proposition [[§44 Embeddings#^prop-44-12|§44.12]], Example [[§44 Embeddings#^ex-44-1|§44.1]] (dense, so would be open, Corollary [[§44 Embeddings#^cor-44-8|§44.8]]). Q4: Example [[§44 Embeddings#^ex-44-1|§44.1]] (removing the origin leaves four components).
+> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]], Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]. Also: maps into $M$ with image in $S$ are smooth into $S$, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]].
 
 #### Adapted chart · P2
 
@@ -2952,7 +2952,7 @@ A smooth chart $(U, \varphi)$ of $M$ with $U \cap S = \{x^{m-k+1} = \cdots = x^m
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]] ("a random chart of $M$ is not adapted"); Q2: Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]].
-> - Q3: Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]]. Q4: Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]]; converse: Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]] (part 2).
+> - Q3: Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]]. Q4: Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]]; converse: Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (part 2).
 > - Q5: polar coordinates $(\theta, r - 1)$ on the slit plane, or the graph construction in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]].
 
 #### Conormal space · P2
@@ -2967,8 +2967,8 @@ $N_pS = \{\xi \in T^\ast_pM : \xi = 0 \text{ on } \iota_{\ast p}(T_pS)\}$, the a
 - [ ] Q4 **[example]** For $M \subseteq \mathbb{R}^n$, how does $N_pM$ match $(T^{\mathrm{geo}}_pM)^\perp$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]] ($dx^{m-k+1}|_p, \ldots, dx^m|_p$), Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]] ($dG^j|_p$).
-> - Q3: the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]. Q4: Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-3|§40.3]]. Bundle version: Definition [[§52 Critical Points and the Hessian#^def-52-6|§52.6]].
+> - Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]] ($dx^{m-k+1}|_p, \ldots, dx^m|_p$), Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]] ($dG^j|_p$).
+> - Q3: the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]. Q4: Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-3|§42.3]]. Bundle version: Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]].
 
 #### Open submanifold of a smooth manifold · P2
 
@@ -2983,28 +2983,28 @@ An open $S \subseteq M$ with the smooth charts of $M$ whose domains lie in $S$, 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]], Definition [[§3 Subspaces and Products#^def-3-2|§3.2]]; Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]].
-> - Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] (germs see only a neighbourhood). Q4: Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|§11.5]], Definition [[§38 Fibrations#^def-38-1|§38.1]]; Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]].
+> - Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] (germs see only a neighbourhood). Q4: Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|§11.5]], Definition [[§40 Fibrations#^def-40-1|§40.1]]; Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]].
 
 #### Transverse submanifolds · P2
 
-Regular submanifolds $S_1,S_2\subseteq N$ intersect transversally, $S_1\pitchfork S_2$, if $T_qS_1+T_qS_2=T_qN$ for every $q\in S_1\cap S_2$, see Definition [[§37 Regular Submanifolds#^def-37-7|§37.7]]. *Source: review session (class), Oct 16.*
+Regular submanifolds $S_1,S_2\subseteq N$ intersect transversally, $S_1\pitchfork S_2$, if $T_qS_1+T_qS_2=T_qN$ for every $q\in S_1\cap S_2$, see Definition [[§39 Transversality and Lagrange Multipliers#^def-39-3|§39.3]]. *Source: review session (class), Oct 16.*
 
 ^nd-def-37-7
 
 - [ ] Q1 **[def]** State the definition. In which space does the sum $T_qS_1+T_qS_2$ live, and through which maps?
-- [ ] Q2 **[use]** Restate it as a condition on a map transverse to a submanifold (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]).
+- [ ] Q2 **[use]** Restate it as a condition on a map transverse to a submanifold (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]).
 - [ ] Q3 **[why]** Why does it hold when $S_1\cap S_2=\emptyset$? Uribe's remark on the notation $S_1\pitchfork S_2$: a statement, not a set.
 - [ ] Q4 **[why]** Two lines in $\mathbb{R}^3$ meeting at a point: transverse or not? Count codimensions.
 
 > [!tip]- Hints: where it lives
-> - Definition [[§37 Regular Submanifolds#^def-37-7|§37.7]], Proposition [[§37 Regular Submanifolds#^prop-37-21|§37.21]], Theorem [[§37 Regular Submanifolds#^thm-37-22|§37.22]].
+> - Definition [[§39 Transversality and Lagrange Multipliers#^def-39-3|§39.3]], Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]], Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]].
 > - Q4: $1+1<3$, so the tangent lines cannot span $\mathbb{R}^3$; codimensions $2+2=4>3$ would force an empty intersection.
 
 ### Priority 4 · notes only (optional before the midterm)
 
 #### Normal space · P4
 
-$T_pM / \iota_{\ast p}(T_pS)$, see Definition [[§37 Regular Submanifolds#^def-37-6|§37.6]]. *Source: notes (not from lecture).*
+$T_pM / \iota_{\ast p}(T_pS)$, see Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]]. *Source: notes (not from lecture).*
 
 ^nd-def-37-6
 
@@ -3013,8 +3013,8 @@ $T_pM / \iota_{\ast p}(T_pS)$, see Definition [[§37 Regular Submanifolds#^def-3
 - [ ] Q3 **[use]** For $F \pitchfork S$, which map identifies the normal spaces of $F^{-1}(S)$ and of $S$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§37 Regular Submanifolds#^def-37-6|§37.6]], Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]].
-> - Q2: no complement is singled out without a metric; $N_pS$ is the dual of the normal space (annihilator of $T_pS$). Q3: Proposition [[§37 Regular Submanifolds#^prop-37-16|§37.16]].
+> - Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]], Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]].
+> - Q2: no complement is singled out without a metric; $N_pS$ is the dual of the normal space (annihilator of $T_pS$). Q3: Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]].
 
 ## Proofs T7
 
@@ -3065,7 +3065,7 @@ For an adapted chart $(U,\varphi=(x_a,x_b))$, the map $x_b:U\to\mathbb{R}^k$ is 
 > - Coordinate representation $(r^1,\dots,r^m)\mapsto(r^{m-k+1},\dots,r^m)$, Jacobian $(0\mid I_k)$.
 > - Inclusion: $(x_b)_{\ast q}$ kills $\partial/\partial x^i|_q$ for $i\le m-k$, whose span is $\iota_{\ast q}(T_qS)$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]).
 > - Dimensions: $m-k$ on both sides (rank–nullity, $\operatorname{rank}(x_b)_{\ast q}=k$).
-> - This is the input of Step 2 of Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]].
+> - This is the input of Step 2 of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]].
 
 #### Facts about an adapted chart in $\mathbb{R}^n$ · P1
 
@@ -3075,25 +3075,25 @@ For a chart of $\mathbb{R}^n$ adapted to $M$ with $G=(x^{m+1},\dots,x^n)$: $J(q)
 
 #### Preimages of transverse submanifolds · P1
 
-If $F\pitchfork S$ with $S\subseteq N$ a regular submanifold of codimension $k$, then $F^{-1}(S)$ is a regular submanifold of $M$ of codimension $k$ and $j_{\ast p}(T_pF^{-1}(S))=(F_{\ast p})^{-1}(\iota_{\ast F(p)}(T_{F(p)}S))$, see Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]].
+If $F\pitchfork S$ with $S\subseteq N$ a regular submanifold of codimension $k$, then $F^{-1}(S)$ is a regular submanifold of $M$ of codimension $k$ and $j_{\ast p}(T_pF^{-1}(S))=(F_{\ast p})^{-1}(\iota_{\ast F(p)}(T_{F(p)}S))$, see Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]].
 
 ^nd-thm-37-15
 
 #### Critical points of a restriction · P1
 
-$N_pS=\ker\iota_p^\ast$, $df_p=\iota_p^\ast(d\Phi_p)$ for $f=\Phi|_S$, and $p$ is critical for $f$ iff $d\Phi_p\in N_pS$, see Proposition [[§37 Regular Submanifolds#^prop-37-18|§37.18]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]].
+$N_pS=\ker\iota_p^\ast$, $df_p=\iota_p^\ast(d\Phi_p)$ for $f=\Phi|_S$, and $p$ is critical for $f$ iff $d\Phi_p\in N_pS$, see Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]].
 
 ^nd-prop-37-18
 
 #### The conormal space of a regular level set · P1
 
-For $S=G^{-1}(0)$ with $0$ a regular value, $dG^1|_p,\dots,dG^k|_p$ is a basis of $N_pS$, see Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]].
+For $S=G^{-1}(0)$ with $0$ a regular value, $dG^1|_p,\dots,dG^k|_p$ is a basis of $N_pS$, see Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]].
 
 ^nd-prop-37-19
 
 #### Lagrange multipliers · P1
 
-$p\in S=G^{-1}(0)$ is critical for $\Phi|_S$ iff $d\Phi_p=\sum_j\lambda_j\,dG^j|_p$ for unique $\lambda_j$, see Theorem [[§37 Regular Submanifolds#^thm-37-20|§37.20]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]].
+$p\in S=G^{-1}(0)$ is critical for $\Phi|_S$ iff $d\Phi_p=\sum_j\lambda_j\,dG^j|_p$ for unique $\lambda_j$, see Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]].
 
 ^nd-thm-37-20
 
@@ -3101,12 +3101,12 @@ $p\in S=G^{-1}(0)$ is critical for $\Phi|_S$ iff $d\Phi_p=\sum_j\lambda_j\,dG^j|
 
 #### Transverse intersections of submanifolds in a manifold · P2
 
-If $S_1,S_2\subseteq N$ are regular submanifolds with $S_1\pitchfork S_2$, then $S_1\cap S_2$ is a regular submanifold, $\operatorname{codim}(S_1\cap S_2)=\operatorname{codim}S_1+\operatorname{codim}S_2$ and $T_q(S_1\cap S_2)=T_qS_1\cap T_qS_2$, see Theorem [[§37 Regular Submanifolds#^thm-37-22|§37.22]]; and $S_1\pitchfork S_2$ iff the inclusion of $S_1$ is transverse to $S_2$, see Proposition [[§37 Regular Submanifolds#^prop-37-21|§37.21]]. *Source: review session (class), Oct 16: Uribe, "the theorem that you proved in homework"; the manifold version is filled in.*
+If $S_1,S_2\subseteq N$ are regular submanifolds with $S_1\pitchfork S_2$, then $S_1\cap S_2$ is a regular submanifold, $\operatorname{codim}(S_1\cap S_2)=\operatorname{codim}S_1+\operatorname{codim}S_2$ and $T_q(S_1\cap S_2)=T_qS_1\cap T_qS_2$, see Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]]; and $S_1\pitchfork S_2$ iff the inclusion of $S_1$ is transverse to $S_2$, see Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]]. *Source: review session (class), Oct 16: Uribe, "the theorem that you proved in homework"; the manifold version is filled in.*
 
 ^nd-thm-37-22
 
-- [ ] Q1 **[state]** State the theorem with the definition of $S_1\pitchfork S_2$ (Definition [[§37 Regular Submanifolds#^def-37-7|§37.7]]), including the case $S_1\cap S_2=\emptyset$.
-- [ ] Q2 Why is "$S_1\pitchfork S_2$" the same as "$\iota_1\pitchfork S_2$" (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]])? Identify $\iota_1^{-1}(S_2)$ and $(\iota_1)_{\ast q}(T_qS_1)$.
+- [ ] Q1 **[state]** State the theorem with the definition of $S_1\pitchfork S_2$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-3|§39.3]]), including the case $S_1\cap S_2=\emptyset$.
+- [ ] Q2 Why is "$S_1\pitchfork S_2$" the same as "$\iota_1\pitchfork S_2$" (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]])? Identify $\iota_1^{-1}(S_2)$ and $(\iota_1)_{\ast q}(T_qS_1)$.
 - [ ] Q3 Near $q\in S_1\cap S_2$, write each $S_i$ as the zero set of a local defining map $G_i:U_i\to\mathbb{R}^{k_i}$. Where does $G_i$ come from, and why is $\ker(dG_i)_q=T_qS_i$?
 - [ ] Q4 With $G=(G_1,G_2)$, what is $\ker dG_q$? Using the dimension formula for $K_1+K_2$, show: $T_qS_1+T_qS_2=T_qN$ iff $dG_q$ is onto.
 - [ ] Q5 Which theorem finishes, and why does "regular submanifold" being a local condition let you pass from $W\cap S_1\cap S_2$ to $S_1\cap S_2$?
@@ -3116,7 +3116,7 @@ If $S_1,S_2\subseteq N$ are regular submanifolds with $S_1\pitchfork S_2$, then 
 > - Strategy: S5 (regular value theorem on a well-chosen map), S7 (linear algebra closes the gap); the Euclidean case is Proposition [[§26 Transversality#^prop-26-4|§26.4]].
 > - $G_i$ = the last $k_i$ coordinates of a slice chart (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); $T_qS_i$ via Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]].
 > - $\dim(K_1\cap K_2)=2n-k_1-k_2-\dim(K_1+K_2)$, so the sum is everything iff $\dim\ker dG_q=n-k_1-k_2$ iff rank $k_1+k_2$.
-> - Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]] on $W=U_1\cap U_2$.
+> - Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] on $W=U_1\cap U_2$.
 
 #### Two observations on adapted charts · P2
 
@@ -3135,7 +3135,7 @@ If, in a chart $(U,\varphi)$, $U\cap S$ is cut out by setting $k$ of the coordin
 > - Strategy: S1 (work in a chart; modify the chart by a diffeomorphism of $\mathbb{R}^m$).
 > - $P$ moves positions $i_1,\dots,i_k$ to the end; $T(s)=s-(\vec 0,\vec c)$; $A=T\circ P$ is an affine diffeomorphism.
 > - Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](2): composing a smooth chart with a diffeomorphism of $\mathbb{R}^m$ gives a smooth chart.
-> - The last $k$ entries of $A\circ\varphi$ are $x^{i_l}-c_l$. Used in Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]](2) and the regular value theorem.
+> - The last $k$ entries of $A\circ\varphi$ are $x^{i_l}-c_l$. Used in Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]](2) and the regular value theorem.
 > - For Q6: $g=xy$ on $\mathbb{R}^2$ cuts out a cross, which is no submanifold near $0$.
 
 #### The induced smooth structure on a regular submanifold · P2
@@ -3176,7 +3176,7 @@ For each adapted chart $(U,\varphi=(x_a,x_b))$, $\varphi_S=x_a|_{U\cap S}$ is a 
 > - $\varphi_S=\mathrm{pr}\circ\varphi$ and $\varphi_S^{-1}=\varphi^{-1}\circ j$ on the induced chart, so $\varphi\circ\iota\circ\varphi_S^{-1}=j$.
 > - (2) Continuity: $G^{-1}(O\cap S)=G^{-1}(O)$ because $G(X)\subseteq S$, and the sets $O\cap S$ are the open sets of $S$.
 > - (2) Smoothness: $\varphi_S\circ G\circ\chi^{-1}=\mathrm{pr}\circ(\varphi\circ G\circ\chi^{-1})$.
-> - Used in Proposition [[§38 Fibrations#^prop-38-2|§38.2]] and Corollary [[§42 Embeddings#^cor-42-3|§42.3]].
+> - Used in Proposition [[§40 Fibrations#^prop-40-2|§40.2]] and Corollary [[§44 Embeddings#^cor-44-3|§44.3]].
 
 #### Tangent spaces of a regular submanifold · P2
 
@@ -3200,7 +3200,7 @@ $\iota_{\ast p}:T_pS\to T_pM$ is injective; in an adapted chart, $\iota_{\ast p}
 
 #### Level sets near a regular point · P2
 
-If $G:V\to N$ is a submersion at the single point $p$, $c=G(p)$, there are charts $\theta=(z^i)$ at $p$ and $\chi$ at $c$ with $\chi(G(p'))=(z^1(p'),\dots,z^n(p'))$, so that $W\cap G^{-1}(c)=\{z^1=c_1,\dots,z^n=c_n\}$; $\hat\theta=(z^{n+1},\dots,z^m,z^1-c_1,\dots,z^n-c_n)$ is adapted to $G^{-1}(c)$; and $\iota_{\ast p}(T_pS)=\ker G_{\ast p}$ for a submanifold $S$ that agrees with $G^{-1}(c)$ near $p$, see Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]]. *Source: Lecture 12's argument for the regular value theorem, isolated in the notes.*
+If $G:V\to N$ is a submersion at the single point $p$, $c=G(p)$, there are charts $\theta=(z^i)$ at $p$ and $\chi$ at $c$ with $\chi(G(p'))=(z^1(p'),\dots,z^n(p'))$, so that $W\cap G^{-1}(c)=\{z^1=c_1,\dots,z^n=c_n\}$; $\hat\theta=(z^{n+1},\dots,z^m,z^1-c_1,\dots,z^n-c_n)$ is adapted to $G^{-1}(c)$; and $\iota_{\ast p}(T_pS)=\ker G_{\ast p}$ for a submanifold $S$ that agrees with $G^{-1}(c)$ near $p$, see Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]. *Source: Lecture 12's argument for the regular value theorem, isolated in the notes.*
 
 ^nd-lem-37-11
 
@@ -3220,7 +3220,7 @@ If $G:V\to N$ is a submersion at the single point $p$, $c=G(p)$, there are chart
 
 #### The regular value theorem for manifolds · P2
 
-If $q\in N$ is a regular value of $F:M\to N$, then $S=F^{-1}(q)$ is a regular submanifold of codimension $n$ (possibly empty), and $\iota_{\ast p}(T_pS)=\ker F_{\ast p}$ for $p\in S$, see Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]]. *Source: Lecture 12; the tangent space "I won't bother checking the kernel thing" is completed in the notes.* **[class exercise, Lecture 12]**
+If $q\in N$ is a regular value of $F:M\to N$, then $S=F^{-1}(q)$ is a regular submanifold of codimension $n$ (possibly empty), and $\iota_{\ast p}(T_pS)=\ker F_{\ast p}$ for $p\in S$, see Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]. *Source: Lecture 12; the tangent space "I won't bother checking the kernel thing" is completed in the notes.* **[class exercise, Lecture 12]**
 
 ^nd-thm-37-12
 
@@ -3234,27 +3234,27 @@ If $q\in N$ is a regular value of $F:M\to N$, then $S=F^{-1}(q)$ is a regular su
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S8 (normal form), S5 (regular value theorem), S6 (tangent space = kernel).
 > - Normal form: $\tilde F(r)=(r^1,\dots,r^n)$, so $q'\in S\cap U$ iff $(x^1(q'),\dots,x^n(q'))=\psi(q)$.
-> - Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] gives the adapted chart $(x^{n+1},\dots,x^m,x^1-y^1(q),\dots,x^n-y^n(q))$; this is Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]] with $V=M$.
+> - Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] gives the adapted chart $(x^{n+1},\dots,x^m,x^1-y^1(q),\dots,x^n-y^n(q))$; this is Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] with $V=M$.
 > - Kernel: $F\circ\iota$ is constant, so $\iota_{\ast p}(T_pS)\subseteq\ker F_{\ast p}$; both have dimension $m-n$.
 > - For Q6: $F(x,y)=x^2-y^2$ and $q=0$ (a cross).
 
 #### Fibres of submersions are regular submanifolds · P2
 
-If $F:M\to N$ is a submersion, every fibre $F^{-1}(q)$ is a regular submanifold of codimension $n$, possibly empty, see Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]]. *Source: Lecture 12.*
+If $F:M\to N$ is a submersion, every fibre $F^{-1}(q)$ is a regular submanifold of codimension $n$, possibly empty, see Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]. *Source: Lecture 12.*
 
 ^nd-cor-37-13
 
 - [ ] Q1 **[state]** State the corollary.
 - [ ] Q2 Why is every $q\in N$ a regular value of a submersion, including $q\notin F(M)$?
 - [ ] Q3 Which theorem finishes the proof?
-- [ ] Q4 **[why]** Are all the fibres of a surjective submersion diffeomorphic to one another? Use Example [[§38 Fibrations#^ex-38-1|§38.1]].
-- [ ] Q5 Where is the corollary used for fibrations and for the vertical space (Definition [[§38 Fibrations#^def-38-5|§38.5]])?
+- [ ] Q4 **[why]** Are all the fibres of a surjective submersion diffeomorphic to one another? Use Example [[§40 Fibrations#^ex-40-1|§40.1]].
+- [ ] Q5 Where is the corollary used for fibrations and for the vertical space (Definition [[§40 Fibrations#^def-40-5|§40.5]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - A submersion is onto at every point, so every point of every fibre is regular; empty fibres are vacuous.
-> - Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]].
+> - Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
 > - The punctured plane over $\mathbb{R}$: one fibre is disconnected, the others are lines.
-> - Used in Proposition [[§38 Fibrations#^prop-38-2|§38.2]] and to read $V_y$ as the tangent space of the fibre.
+> - Used in Proposition [[§40 Fibrations#^prop-40-2|§40.2]] and to read $V_y$ as the tangent space of the fibre.
 
 #### Charts of a submanifold extend to adapted charts · P2
 
@@ -3288,7 +3288,7 @@ A smooth function on a regular submanifold $S\subseteq M$ extends, near each poi
 > [!tip]- Hints: route (not in the notes; a sketch)
 > - Strategy: S1, S11 (local, then global).
 > - $\tilde f$ is constant in the $x_b$ directions; on $S$, $x_a=\varphi_S$, so $\tilde f=f$.
-> - Gluing local extensions needs partitions of unity (Lee, Ch. 2); the notes only have bump functions (Proposition [[§53 Vector Fields#^prop-53-4|§53.4]]).
+> - Gluing local extensions needs partitions of unity (Lee, Ch. 2); the notes only have bump functions (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]).
 
 ### Priority 3 · filled in, using a technique the homework drills
 
@@ -3328,7 +3328,7 @@ In an adapted chart at $p$, $\xi=\sum_i\xi_i\,dx^i|_p$ lies in $N_pS$ if and onl
 > - $\iota_{\ast p}(T_pS)=\operatorname{span}\{\partial/\partial x^i|_p:i\le m-k\}$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]); $\xi_i=\xi(\partial/\partial x^i|_p)$.
 > - $\xi\in N_pS$ iff $\xi=\sum_{j>m-k}\xi_j\,dx^j|_p$.
 > - No metric, no orthogonality: with an inner product $T_p^\ast M\cong T_pM$ and $N_pS$ becomes the normal space (remark *No Normal Vectors Without a Metric*).
-> - Used in Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]] ([[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]]).
+> - Used in Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]] ([[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]]).
 
 #### Regular submanifolds of Euclidean space: the slice description · P3
 
@@ -3352,12 +3352,12 @@ For $X\subseteq\mathbb{R}^{n+k}$ and $p\in X$: $X$ is described externally (equi
 
 #### Normal spaces under a transverse map · P3
 
-With $K_p=(F_{\ast p})^{-1}(\iota_{\ast q}(T_qS))$, $F_{\ast p}$ induces a well-defined injective linear map $\bar F_{\ast p}:T_pM/K_p\to T_qN/\iota_{\ast q}(T_qS)$, which is onto exactly when $F$ is transverse to $S$ at $p$; if $F\pitchfork S$ it is an isomorphism of normal spaces, see Proposition [[§37 Regular Submanifolds#^prop-37-16|§37.16]]. *Source: filled in.*
+With $K_p=(F_{\ast p})^{-1}(\iota_{\ast q}(T_qS))$, $F_{\ast p}$ induces a well-defined injective linear map $\bar F_{\ast p}:T_pM/K_p\to T_qN/\iota_{\ast q}(T_qS)$, which is onto exactly when $F$ is transverse to $S$ at $p$; if $F\pitchfork S$ it is an isomorphism of normal spaces, see Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]]. *Source: filled in.*
 
 ^nd-prop-37-16
 
 - [ ] Q1 **[state]** State the three parts and the transverse case.
-- [ ] Q2 **[def]** Define the normal space $T_pM/\iota_{\ast p}(T_pS)$ (Definition [[§37 Regular Submanifolds#^def-37-6|§37.6]]). What is its dimension, and why is $K_p$ a subspace?
+- [ ] Q2 **[def]** Define the normal space $T_pM/\iota_{\ast p}(T_pS)$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]]). What is its dimension, and why is $K_p$ a subspace?
 - [ ] Q3 (1) With $A=\pi_N\circ F_{\ast p}$, compute $\ker A$. Which universal property gives $\bar F_{\ast p}$?
 - [ ] Q4 (2) Why is $\bar F_{\ast p}$ injective?
 - [ ] Q5 (3) Show: $\bar F_{\ast p}$ onto ⇔ every $u\in T_qN$ lies in $F_{\ast p}(T_pM)+\iota_{\ast q}(T_qS)$.
@@ -3371,13 +3371,13 @@ With $K_p=(F_{\ast p})^{-1}(\iota_{\ast q}(T_qS))$, $F_{\ast p}$ induces a well-
 
 #### Special cases of transversality · P3
 
-(1) $F\pitchfork\{c\}$ iff $c$ is a regular value, and Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]] returns the regular value theorem; (2) if $S,S'\subseteq N$ intersect transversally, $S'\cap S$ is a regular submanifold of $S'$ of codimension $k$ and of $N$ of codimension $k+k'$, with $T_p(S'\cap S)=T_pS'\cap T_pS$; (3) a submersion is transverse to every regular submanifold, see Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]]. *Source: filled in.*
+(1) $F\pitchfork\{c\}$ iff $c$ is a regular value, and Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] returns the regular value theorem; (2) if $S,S'\subseteq N$ intersect transversally, $S'\cap S$ is a regular submanifold of $S'$ of codimension $k$ and of $N$ of codimension $k+k'$, with $T_p(S'\cap S)=T_pS'\cap T_pS$; (3) a submersion is transverse to every regular submanifold, see Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]]. *Source: filled in.*
 
 ^nd-cor-37-17
 
 - [ ] Q1 **[state]** State the three special cases precisely, with the definition of transverse intersection.
 - [ ] Q2 (1) Why is $\{c\}$ a regular submanifold of codimension $n$, and what does the transversality condition reduce to at $p\in F^{-1}(c)$?
-- [ ] Q3 (2) Why is "$S$ and $S'$ intersect transversally" the condition $\iota'\pitchfork S$? What does Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]] applied to $\iota'$ give inside $S'$?
+- [ ] Q3 (2) Why is "$S$ and $S'$ intersect transversally" the condition $\iota'\pitchfork S$? What does Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] applied to $\iota'$ give inside $S'$?
 - [ ] Q4 (2) Inside $N$: with local defining maps $x_b$, $x'_b$ and $H=(x_b,x'_b)$, compute $H^{-1}(\vec 0)$ and $\ker H_{\ast p}$, and show $H$ is a submersion at $p$.
 - [ ] Q5 (2) Use $A(A^{-1}(E))=\operatorname{im}A\cap E$ to get $T_p(S'\cap S)=T_pS'\cap T_pS$.
 - [ ] Q6 (3) Why is a submersion transverse to every regular submanifold?
@@ -3385,8 +3385,8 @@ With $K_p=(F_{\ast p})^{-1}(\iota_{\ast q}(T_qS))$, $F_{\ast p}$ induces a well-
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S12 (transversality = images span), S7.
-> - (1) $\{c\}=\mathrm{id}_N^{-1}(c)$ (Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]]); $T_c\{c\}=0$, so transversality says $F_{\ast p}$ is onto.
-> - (2) $\dim\ker H_{\ast p}=(n-k)+(n-k')-n$, so $\operatorname{rank}H_{\ast p}=k+k'$; then Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]](2), (3).
+> - (1) $\{c\}=\mathrm{id}_N^{-1}(c)$ (Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]); $T_c\{c\}=0$, so transversality says $F_{\ast p}$ is onto.
+> - (2) $\dim\ker H_{\ast p}=(n-k)+(n-k')-n$, so $\operatorname{rank}H_{\ast p}=k+k'$; then Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]](2), (3).
 > - (3) $F_{\ast p}(T_pM)=T_{F(p)}N$ already.
 > - For Q7: the two tangent lines span at most a plane.
 
@@ -3418,7 +3418,7 @@ An open subset $S\subseteq M$ is a regular submanifold of codimension $0$ whose 
 
 #### Local section · P1
 
-A smooth $s : U \to E$ on an open $U \subseteq B$ with $\pi \circ s = \mathrm{id}_U$, see Definition [[§38 Fibrations#^def-38-4|§38.4]]. *Source: Lecture 13; Assignment 4.*
+A smooth $s : U \to E$ on an open $U \subseteq B$ with $\pi \circ s = \mathrm{id}_U$, see Definition [[§40 Fibrations#^def-40-4|§40.4]]. *Source: Lecture 13; Assignment 4.*
 
 ^nd-def-38-4
 
@@ -3428,14 +3428,14 @@ A smooth $s : U \to E$ on an open $U \subseteq B$ with $\pi \circ s = \mathrm{id
 - [ ] Q4 **[example]** Write a local section of the Hopf fibration over $U_i = \{z_i \neq 0\}$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§38 Fibrations#^def-38-4|§38.4]]; Q2: Proposition [[§38 Fibrations#^prop-38-4|§38.4]] ($s(u) = \phi^{-1}(u, f_0)$).
-> - Q3: Proposition [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]]; the remark *Trivializations and Frames* in [[§49 The Tangent Bundle|§49]] (one section suffices because the fibre is one orbit). Q4: Corollary [[§44 Projective Spaces and the Hopf Fibration#^cor-44-2|§44.2]].
+> - Definition [[§40 Fibrations#^def-40-4|§40.4]]; Q2: Proposition [[§40 Fibrations#^prop-40-4|§40.4]] ($s(u) = \phi^{-1}(u, f_0)$).
+> - Q3: Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]; the remark *Trivializations and Frames* in [[§51 The Tangent Bundle|§51]] (one section suffices because the fibre is one orbit). Q4: Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]].
 
 ### Priority 2 · stated or done in class
 
 #### Fibration · P2
 
-$\pi : M \to B$ is a fibration with fibre $F$ if $B$ has an open cover $\{U_\alpha\}$ with diffeomorphisms $\phi_\alpha : \pi^{-1}(U_\alpha) \to U_\alpha \times F$ satisfying $\mathrm{pr}_1 \circ \phi_\alpha = \pi$, see Definition [[§38 Fibrations#^def-38-1|§38.1]]. *Source: Lectures 11–13.*
+$\pi : M \to B$ is a fibration with fibre $F$ if $B$ has an open cover $\{U_\alpha\}$ with diffeomorphisms $\phi_\alpha : \pi^{-1}(U_\alpha) \to U_\alpha \times F$ satisfying $\mathrm{pr}_1 \circ \phi_\alpha = \pi$, see Definition [[§40 Fibrations#^def-40-1|§40.1]]. *Source: Lectures 11–13.*
 
 ^nd-def-38-1
 
@@ -3446,13 +3446,13 @@ $\pi : M \to B$ is a fibration with fibre $F$ if $B$ has an open cover $\{U_\alp
 - [ ] Q5 **[why]** State Ehresmann's theorem. Which hypothesis does the punctured plane violate? Why do diffeomorphic fibres not suffice?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§38 Fibrations#^def-38-1|§38.1]]; Q2: Proposition [[§38 Fibrations#^prop-38-1|§38.1]] (part 2: $\pi|_W = \mathrm{pr}_1 \circ \phi_\alpha$, chain rule; stated in lecture as "chain rule and stuff").
-> - Q3: Proposition [[§38 Fibrations#^prop-38-2|§38.2]]. Q4: Example [[§38 Fibrations#^ex-38-1|§38.1]] (fibres change: a line, then a line minus a point). Q5: Theorem [[§38 Fibrations#^thm-38-3|§38.3]] (proper; quoted), Example [[§38 Fibrations#^ex-38-2|§38.2]].
-> - Q1 examples: Example [[§39 Examples of Fibrations#^ex-39-1|§39.1]] (product), Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]] (Möbius band), Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]] (Hopf), Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]] ($TM$), Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]] (normal bundle).
+> - Definition [[§40 Fibrations#^def-40-1|§40.1]]; Q2: Proposition [[§40 Fibrations#^prop-40-1|§40.1]] (part 2: $\pi|_W = \mathrm{pr}_1 \circ \phi_\alpha$, chain rule; stated in lecture as "chain rule and stuff").
+> - Q3: Proposition [[§40 Fibrations#^prop-40-2|§40.2]]. Q4: Example [[§40 Fibrations#^ex-40-1|§40.1]] (fibres change: a line, then a line minus a point). Q5: Theorem [[§40 Fibrations#^thm-40-3|§40.3]] (proper; quoted), Example [[§40 Fibrations#^ex-40-2|§40.2]].
+> - Q1 examples: Example [[§41 Examples of Fibrations#^ex-41-1|§41.1]] (product), Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]] (Möbius band), Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]] (Hopf), Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]] ($TM$), Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]] (normal bundle).
 
 #### Trivial fibration · P2
 
-A fibration with a single trivialization over all of $B$: $\phi : M \to B \times F$, $\mathrm{pr}_1 \circ \phi = \pi$, see Definition [[§38 Fibrations#^def-38-2|§38.2]]. *Source: Lecture 12.*
+A fibration with a single trivialization over all of $B$: $\phi : M \to B \times F$, $\mathrm{pr}_1 \circ \phi = \pi$, see Definition [[§40 Fibrations#^def-40-2|§40.2]]. *Source: Lecture 12.*
 
 ^nd-def-38-2
 
@@ -3462,13 +3462,13 @@ A fibration with a single trivialization over all of $B$: $\phi : M \to B \times
 - [ ] Q4 **[why]** The Möbius band "looks like a strip wherever you cut it". Where does its pair of trivializations disagree, and why does that make a single global trivialization implausible?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§38 Fibrations#^def-38-2|§38.2]]; Q2: Example [[§39 Examples of Fibrations#^ex-39-1|§39.1]].
-> - Q3: a global trivialization gives a global section (Proposition [[§38 Fibrations#^prop-38-4|§38.4]]), and there is none, Corollary [[§44 Projective Spaces and the Hopf Fibration#^cor-44-2|§44.2]], the remark *Sections Need Not Exist* in [[§44 Projective Spaces and the Hopf Fibration|§44]].
-> - Q4: Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]] (part 3: a sign on one arc). The notes do not prove non-triviality.
+> - Definition [[§40 Fibrations#^def-40-2|§40.2]]; Q2: Example [[§41 Examples of Fibrations#^ex-41-1|§41.1]].
+> - Q3: a global trivialization gives a global section (Proposition [[§40 Fibrations#^prop-40-4|§40.4]]), and there is none, Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]], the remark *Sections Need Not Exist* in [[§46 Projective Spaces and the Hopf Fibration|§46]].
+> - Q4: Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]] (part 3: a sign on one arc). The notes do not prove non-triviality.
 
 #### Section · P2
 
-A smooth $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$, see Definition [[§38 Fibrations#^def-38-3|§38.3]]. *Source: Lecture 13.*
+A smooth $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$, see Definition [[§40 Fibrations#^def-40-3|§40.3]]. *Source: Lecture 13.*
 
 ^nd-def-38-3
 
@@ -3479,13 +3479,13 @@ A smooth $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$, see Definition [[§38
 - [ ] Q5 **[why]** Does every fibration have a global section? Does every vector bundle?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§38 Fibrations#^def-38-3|§38.3]]; Q2: Definition [[§49 The Tangent Bundle#^def-49-3|§49.3]], Definition [[§50 The Cotangent Bundle#^def-50-3|§50.3]], Definition [[§53 Vector Fields#^def-53-1|§53.1]], Definition [[§51 One-Forms#^def-51-1|§51.1]].
-> - Q3: Proposition [[§38 Fibrations#^prop-38-5|§38.5]]. Q4: Proposition [[§42 Embeddings#^prop-42-10|§42.10]].
-> - Q5: no (Hopf, Corollary [[§44 Projective Spaces and the Hopf Fibration#^cor-44-2|§44.2]]); yes, the zero section (the remark *Sections Need Not Exist* in [[§44 Projective Spaces and the Hopf Fibration|§44]]).
+> - Definition [[§40 Fibrations#^def-40-3|§40.3]]; Q2: Definition [[§51 The Tangent Bundle#^def-51-3|§51.3]], Definition [[§52 The Cotangent Bundle#^def-52-3|§52.3]], Definition [[§56 Vector Fields#^def-56-1|§56.1]], Definition [[§53 One-Forms#^def-53-1|§53.1]].
+> - Q3: Proposition [[§40 Fibrations#^prop-40-5|§40.5]]. Q4: Proposition [[§44 Embeddings#^prop-44-10|§44.10]].
+> - Q5: no (Hopf, Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]]); yes, the zero section (the remark *Sections Need Not Exist* in [[§46 Projective Spaces and the Hopf Fibration|§46]]).
 
 #### Vertical space · P2
 
-$V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§38 Fibrations#^def-38-5|§38.5]]. *Source: Lecture 13.*
+$V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§40 Fibrations#^def-40-5|§40.5]]. *Source: Lecture 13.*
 
 ^nd-def-38-5
 
@@ -3496,9 +3496,9 @@ $V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§38 Fibrations#^def-
 - [ ] Q5 **[example]** Compute the vertical space of $T^\ast M$ along the zero section.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§38 Fibrations#^def-38-5|§38.5]]; Q2: Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
-> - Q3: Proposition [[§38 Fibrations#^prop-38-5|§38.5]] ($P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$). Q4: no in general; along the image of a section, yes (Q3).
-> - Q5: Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]] (spanned by $\partial/\partial \xi_j$).
+> - Definition [[§40 Fibrations#^def-40-5|§40.5]]; Q2: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
+> - Q3: Proposition [[§40 Fibrations#^prop-40-5|§40.5]] ($P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$). Q4: no in general; along the image of a section, yes (Q3).
+> - Q5: Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]] (spanned by $\partial/\partial \xi_j$).
 
 #### Vector bundle · P2
 
@@ -3513,10 +3513,10 @@ A fibration $\pi : E \to M$ whose fibres are vector spaces and whose local trivi
 - [ ] Q5 **[why]** Why is the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ not a vector bundle for any choice of structure? (Two reasons: the fibre, and sections.)
 
 > [!tip]- Hints: where it lives, sources
-> - The notes: the remark *Vector Bundles* in [[§49 The Tangent Bundle|§49]] ("the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise"); the fibration it refines: Definition [[§38 Fibrations#^def-38-1|§38.1]].
+> - The notes: the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]] ("the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise"); the fibration it refines: Definition [[§40 Fibrations#^def-40-1|§40.1]].
 > - Lee, *Introduction to Smooth Manifolds* (2nd ed.), Ch. 10, "Vector Bundles": the definition of a (smooth) vector bundle of rank $k$; Lemma 10.5 for the transition functions $\tau : U \cap V \to \mathrm{GL}(k, \mathbb{R})$ (smooth); Example 10.3 for the Möbius bundle.
-> - Q4: Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]] (part 2: linear on each $T_pM$), Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] ($\tau$ = Jacobian of the chart change), Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] (transpose inverse), Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]] (part 2).
-> - Möbius: Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]] (part 3: $\tau = \pm 1$). Q5: fibre $S^1$ is not a vector space; a vector bundle has the zero section, the Hopf fibration has no global section (Corollary [[§44 Projective Spaces and the Hopf Fibration#^cor-44-2|§44.2]]).
+> - Q4: Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]] (part 2: linear on each $T_pM$), Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]] ($\tau$ = Jacobian of the chart change), Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]] (transpose inverse), Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]] (part 2).
+> - Möbius: Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]] (part 3: $\tau = \pm 1$). Q5: fibre $S^1$ is not a vector space; a vector bundle has the zero section, the Hopf fibration has no global section (Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]]).
 
 ## Proofs T8
 
@@ -3524,12 +3524,12 @@ A fibration $\pi : E \to M$ whose fibres are vector spaces and whose local trivi
 
 #### Local trivializations give local sections · P1
 
-If $\phi:\pi^{-1}(U)\to U\times F$ is a local trivialization and $f_0\in F$, then $s(u)=\phi^{-1}(u,f_0)$ is a local section over $U$, see Proposition [[§38 Fibrations#^prop-38-4|§38.4]]. *Source: filled in (principle behind Assignment 4, Problem 4).*
+If $\phi:\pi^{-1}(U)\to U\times F$ is a local trivialization and $f_0\in F$, then $s(u)=\phi^{-1}(u,f_0)$ is a local section over $U$, see Proposition [[§40 Fibrations#^prop-40-4|§40.4]]. *Source: filled in (principle behind Assignment 4, Problem 4).*
 
 ^nd-prop-38-4
 
 - [ ] Q1 **[state]** State the proposition.
-- [ ] Q2 **[def]** Define a section and a local section (Definitions [[§38 Fibrations#^def-38-3|§38.3]], [[§38 Fibrations#^def-38-4|§38.4]]).
+- [ ] Q2 **[def]** Define a section and a local section (Definitions [[§40 Fibrations#^def-40-3|§40.3]], [[§40 Fibrations#^def-40-4|§40.4]]).
 - [ ] Q3 Why is $s$ smooth? Write it as a composite of three smooth maps.
 - [ ] Q4 Prove $\pi\circ s=\mathrm{id}_U$ from the commuting triangle.
 - [ ] Q5 **[why]** Does a single local section always give a local trivialization? For which fibration in the notes does it, and what structure makes it work? Does a fibration always have a *global* section?
@@ -3538,16 +3538,16 @@ If $\phi:\pi^{-1}(U)\to U\times F$ is a local trivialization and $f_0\in F$, the
 > - Strategy: S14 (use $\mathrm{pr}_1\circ\phi=\pi$).
 > - $s=\iota_{\pi^{-1}(U)}\circ\phi^{-1}\circ\iota^{f_0}$ with the slice inclusion $\iota^{f_0}(u)=(u,f_0)$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]).
 > - $\pi(s(u))=\mathrm{pr}_1(\phi(\phi^{-1}(u,f_0)))=u$.
-> - Q5: the Hopf fibration, where $S^1$ acts freely and transitively on fibres (Proposition [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]]); it has no global section (remark *Sections Need Not Exist*). For $TM$ one needs $m$ independent sections (remark *Trivializations and Frames*).
+> - Q5: the Hopf fibration, where $S^1$ acts freely and transitively on fibres (Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]); it has no global section (remark *Sections Need Not Exist*). For $TM$ one needs $m$ independent sections (remark *Trivializations and Frames*).
 
 #### Splitting along a section · P1
 
-If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{id}$, so $s_{\ast p}$ is injective and $\pi_{\ast y}$ onto; $T_yE=s_{\ast p}(T_pM)\oplus V_y$; the projection onto $V_y$ is $\mathrm{id}-s_{\ast p}\circ\pi_{\ast y}$, see Proposition [[§38 Fibrations#^prop-38-5|§38.5]]. *Source: filled in; (1) is the heart of Assignment 5, Problem 1.*
+If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{id}$, so $s_{\ast p}$ is injective and $\pi_{\ast y}$ onto; $T_yE=s_{\ast p}(T_pM)\oplus V_y$; the projection onto $V_y$ is $\mathrm{id}-s_{\ast p}\circ\pi_{\ast y}$, see Proposition [[§40 Fibrations#^prop-40-5|§40.5]]. *Source: filled in; (1) is the heart of Assignment 5, Problem 1.*
 
 ^nd-prop-38-5
 
 - [ ] Q1 **[state]** State the three parts and the dimension formula.
-- [ ] Q2 **[def]** Define the vertical space $V_y$ (Definition [[§38 Fibrations#^def-38-5|§38.5]]). For a submersion, what is it the tangent space of?
+- [ ] Q2 **[def]** Define the vertical space $V_y$ (Definition [[§40 Fibrations#^def-40-5|§40.5]]). For a submersion, what is it the tangent space of?
 - [ ] Q3 (1) Which identity do you differentiate, and why does it give injectivity of $s_{\ast p}$ and surjectivity of $\pi_{\ast y}$?
 - [ ] Q4 (2) Write $w\in T_yE$ as a sum of a vector in $s_{\ast p}(T_pM)$ and a vertical vector.
 - [ ] Q5 (2) Why do the two subspaces meet only in $0$?
@@ -3558,29 +3558,29 @@ If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{i
 > - Strategy: S14 (differentiate $\pi\circ s=\mathrm{id}_M$), S7.
 > - $u=s_{\ast p}(\pi_{\ast y}w)$ and $w-u\in V_y$ by (1).
 > - If $w=s_{\ast p}v\in V_y$, then $v=\pi_{\ast y}w=0$.
-> - $V_y=\ker\pi_{\ast y}$ is intrinsic; the horizontal complement $s_{\ast p}(T_pM)$ changes with $s$. Used in Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]] ([[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]).
+> - $V_y=\ker\pi_{\ast y}$ is intrinsic; the horizontal complement $s_{\ast p}(T_pM)$ changes with $s$. Used in Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]] ([[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]).
 
 #### The normal bundle of a submanifold of $\mathbb{R}^n$ is a submanifold · P1
 
-$\mathcal{N}=\{(p,v):p\in M,\ v\perp T^{\mathrm{geo}}_pM\}$ is a regular submanifold of $\mathbb{R}^{2n}$ of dimension $n$, see Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-1|§40.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (a)).
+$\mathcal{N}=\{(p,v):p\in M,\ v\perp T^{\mathrm{geo}}_pM\}$ is a regular submanifold of $\mathbb{R}^{2n}$ of dimension $n$, see Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (a)).
 
 ^nd-prop-40-1
 
 #### Focal points of the parabola · P1
 
-The focal points of $y=x^2$ are the image of $\mathbf r(a)=(-4a^3,3a^2+\tfrac12)$, see Example [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^ex-40-1|§40.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (b)).
+The focal points of $y=x^2$ are the image of $\mathbf r(a)=(-4a^3,3a^2+\tfrac12)$, see Example [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^ex-42-1|§42.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (b)).
 
 ^nd-ex-40-1
 
 #### Local sections of the Hopf fibration give trivializations · P1
 
-For a local section $s$ of the Hopf fibration, $\Psi_s(u,\lambda)=\lambda s(u)$ is an equivariant diffeomorphism $U\times S^1\to\pi^{-1}(U)$, see Proposition [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
+For a local section $s$ of the Hopf fibration, $\Psi_s(u,\lambda)=\lambda s(u)$ is an equivariant diffeomorphism $U\times S^1\to\pi^{-1}(U)$, see Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
 
 ^nd-prop-44-1
 
 #### Local but not global sections of the Hopf fibration · P1
 
-The explicit local sections $s_i$ over $U_i$ and their trivializations, see Corollary [[§44 Projective Spaces and the Hopf Fibration#^cor-44-2|§44.2]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
+The explicit local sections $s_i$ over $U_i$ and their trivializations, see Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
 
 ^nd-cor-44-2
 
@@ -3588,12 +3588,12 @@ The explicit local sections $s_i$ over $U_i$ and their trivializations, see Coro
 
 #### Fibres and fibrations · P2
 
-For a fibration $\pi:M\to B$ with fibre $F$: (1) each $\phi_\alpha$ restricts to a homeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$; (2) $\pi$ is a submersion, onto if $F\neq\emptyset$; (3) $\pi$ is an open map, see Proposition [[§38 Fibrations#^prop-38-1|§38.1]]. *Source: stated in Lecture 11 ("chain rule and stuff"); Lecture 12: "Exercise: check that these are submersions"; filled in.* **[class exercise, Lectures 11–12]**
+For a fibration $\pi:M\to B$ with fibre $F$: (1) each $\phi_\alpha$ restricts to a homeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$; (2) $\pi$ is a submersion, onto if $F\neq\emptyset$; (3) $\pi$ is an open map, see Proposition [[§40 Fibrations#^prop-40-1|§40.1]]. *Source: stated in Lecture 11 ("chain rule and stuff"); Lecture 12: "Exercise: check that these are submersions"; filled in.* **[class exercise, Lectures 11–12]**
 
 ^nd-prop-38-1
 
 - [ ] Q1 **[state]** State the three parts.
-- [ ] Q2 **[def]** Define a fibration with fibre $F$ (Definition [[§38 Fibrations#^def-38-1|§38.1]]). What does the commuting triangle $\mathrm{pr}_1\circ\phi_\alpha=\pi$ say about $\phi_\alpha(x)$?
+- [ ] Q2 **[def]** Define a fibration with fibre $F$ (Definition [[§40 Fibrations#^def-40-1|§40.1]]). What does the commuting triangle $\mathrm{pr}_1\circ\phi_\alpha=\pi$ say about $\phi_\alpha(x)$?
 - [ ] Q3 (1) Show that $\phi_\alpha$ maps $\pi^{-1}(b)$ onto $\{b\}\times F$: one inclusion from the triangle, the other from bijectivity.
 - [ ] Q4 (1) Why is the restriction a homeomorphism for the subspace topologies, and why is $\{b\}\times F$ homeomorphic to $F$?
 - [ ] Q5 (2) Fix $p$, $W=\pi^{-1}(U_\alpha)$. Why is $(\pi|_W)_{\ast p}$ onto? How do you pass from $\pi|_W$ to $\pi$?
@@ -3605,11 +3605,11 @@ For a fibration $\pi:M\to B$ with fibre $F$: (1) each $\phi_\alpha$ restricts to
 > - (1) $\mathrm{pr}_1(\phi_\alpha(x))=\pi(x)=b$; conversely $x=\phi_\alpha^{-1}(b,f)$ has $\pi(x)=\mathrm{pr}_1(b,f)=b$.
 > - (2) $(\phi_\alpha)_{\ast p}$ is an isomorphism and $(\mathrm{pr}_1)_\ast$ is onto (Example [[§36 Submersions#^ex-36-2|§36.2]]); then $\pi_{\ast p}\circ(\iota_W)_{\ast p}=(\iota_{U_\alpha})_\ast\circ(\pi|_W)_{\ast p}$ with $(\iota_{U_\alpha})_\ast$ an isomorphism (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]).
 > - (3) Submersions are open (Corollary [[§36 Submersions#^cor-36-9|§36.9]]).
-> - Q7: Example [[§38 Fibrations#^ex-38-1|§38.1]].
+> - Q7: Example [[§40 Fibrations#^ex-40-1|§40.1]].
 
 #### Fibres are copies of the model fibre · P2
 
-For a fibration $\pi:E\to B$ with fibre $F$ and $b\in B$, $\pi^{-1}(b)$ is a regular submanifold of $E$, and $\phi_\alpha$ restricts to a diffeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$, see Proposition [[§38 Fibrations#^prop-38-2|§38.2]]. *Source: claimed in Lecture 12 ("I claim that they are diffeomorphic to this fibre"); filled in.* **[class exercise, Lecture 12]**
+For a fibration $\pi:E\to B$ with fibre $F$ and $b\in B$, $\pi^{-1}(b)$ is a regular submanifold of $E$, and $\phi_\alpha$ restricts to a diffeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$, see Proposition [[§40 Fibrations#^prop-40-2|§40.2]]. *Source: claimed in Lecture 12 ("I claim that they are diffeomorphic to this fibre"); filled in.* **[class exercise, Lecture 12]**
 
 ^nd-prop-38-2
 
@@ -3618,18 +3618,18 @@ For a fibration $\pi:E\to B$ with fibre $F$ and $b\in B$, $\pi^{-1}(b)$ is a reg
 - [ ] Q3 Why does $\phi_\alpha$ restrict to a bijection $\Phi:\pi^{-1}(b)\to\{b\}\times F$?
 - [ ] Q4 Why is $\Phi$ smooth? Factor it through $\phi_\alpha\circ\iota$ and say which lemma lets you shrink the target to $\{b\}\times F$.
 - [ ] Q5 Why is $\Phi^{-1}$ smooth? Why is $\{b\}\times F\to F$, $(b,f)\mapsto f$, a diffeomorphism?
-- [ ] Q6 **[why]** Proposition [[§38 Fibrations#^prop-38-1|§38.1]](1) only gives a homeomorphism. Which two inputs upgrade it to a diffeomorphism? And why is "every fibre is a submanifold" not enough to make all fibres diffeomorphic?
+- [ ] Q6 **[why]** Proposition [[§40 Fibrations#^prop-40-1|§40.1]](1) only gives a homeomorphism. Which two inputs upgrade it to a diffeomorphism? And why is "every fibre is a submanifold" not enough to make all fibres diffeomorphic?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S14; the key tool is Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2) (maps into a submanifold).
-> - Submanifolds: $\pi$ and $\mathrm{pr}_1$ are submersions (Proposition [[§38 Fibrations#^prop-38-1|§38.1]](2), Example [[§36 Submersions#^ex-36-2|§36.2]]); then Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]].
+> - Submanifolds: $\pi$ and $\mathrm{pr}_1$ are submersions (Proposition [[§40 Fibrations#^prop-40-1|§40.1]](2), Example [[§36 Submersions#^ex-36-2|§36.2]]); then Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]].
 > - $\Phi$: $\iota$ is smooth into the open set $\pi^{-1}(U_\alpha)$, then $\phi_\alpha$; values lie in $\{b\}\times F$.
 > - $\Phi^{-1}$: $\phi_\alpha^{-1}\circ\iota'$ with values in $\pi^{-1}(b)$. $\{b\}\times F\cong F$ via $\mathrm{pr}_2\circ\iota'$ and the slice inclusion (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]).
-> - Q6: Example [[§38 Fibrations#^ex-38-1|§38.1]].
+> - Q6: Example [[§40 Fibrations#^ex-40-1|§40.1]].
 
 #### A submersion that is not a fibration · P2
 
-$\pi:\mathbb{R}^2\setminus\{(0,1)\}\to\mathbb{R}$, $\pi(x,y)=x$, is a surjective submersion but not a fibration, see Example [[§38 Fibrations#^ex-38-1|§38.1]]. *Source: Lecture 12.*
+$\pi:\mathbb{R}^2\setminus\{(0,1)\}\to\mathbb{R}$, $\pi(x,y)=x$, is a surjective submersion but not a fibration, see Example [[§40 Fibrations#^ex-40-1|§40.1]]. *Source: Lecture 12.*
 
 ^nd-ex-38-1
 
@@ -3637,37 +3637,37 @@ $\pi:\mathbb{R}^2\setminus\{(0,1)\}\to\mathbb{R}$, $\pi(x,y)=x$, is a surjective
 - [ ] Q2 Why is $\pi$ a submersion? Why is it onto?
 - [ ] Q3 Describe every fibre. Which one is different?
 - [ ] Q4 Suppose $\pi$ were a fibration. Which proposition forces all fibres to be homeomorphic, and which topological property gives the contradiction?
-- [ ] Q5 **[why]** Which hypothesis of Ehresmann's theorem (Theorem [[§38 Fibrations#^thm-38-3|§38.3]]) fails here? Exhibit a compact $K\subseteq\mathbb{R}$ with $\pi^{-1}(K)$ not compact.
+- [ ] Q5 **[why]** Which hypothesis of Ehresmann's theorem (Theorem [[§40 Fibrations#^thm-40-3|§40.3]]) fails here? Exhibit a compact $K\subseteq\mathbb{R}$ with $\pi^{-1}(K)$ not compact.
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S14 (restriction of a projection to an open set), invariants under homeomorphism.
 > - $\pi=\mathrm{pr}\circ\iota_E$ with $(\iota_E)_\ast$ an isomorphism (Example [[§36 Submersions#^ex-36-1|§36.1]]); $(x,0)\mapsto x$ shows onto.
 > - Fibres: vertical lines, except $\{0\}\times(\mathbb{R}\setminus\{1\})$, two half-lines.
-> - Proposition [[§38 Fibrations#^prop-38-2|§38.2]]: all fibres would be diffeomorphic; but $\{1\}\times\mathbb{R}$ is connected and $\{0\}\times(\mathbb{R}\setminus\{1\})$ is not (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]).
+> - Proposition [[§40 Fibrations#^prop-40-2|§40.2]]: all fibres would be diffeomorphic; but $\{1\}\times\mathbb{R}$ is connected and $\{0\}\times(\mathbb{R}\setminus\{1\})$ is not (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]).
 > - Q5: $\pi^{-1}([-1,1])=([-1,1]\times\mathbb{R})\setminus\{(0,1)\}$ is unbounded (and not even closed in $\mathbb{R}^2$), hence not compact. Ehresmann is sufficient, not necessary: $\mathbb{R}^2\to\mathbb{R}$ is a fibration without being proper.
 
 #### Ehresmann's theorem · P2
 
-A surjective proper submersion $\pi:E\to B$ onto a connected $B$ is a fibration, see Theorem [[§38 Fibrations#^thm-38-3|§38.3]]. *Source: stated in Lecture 13, proof not given (uses connections); quote it.*
+A surjective proper submersion $\pi:E\to B$ onto a connected $B$ is a fibration, see Theorem [[§40 Fibrations#^thm-40-3|§40.3]]. *Source: stated in Lecture 13, proof not given (uses connections); quote it.*
 
 ^nd-thm-38-3
 
 - [ ] Q1 **[state]** State the theorem, with all three hypotheses.
-- [ ] Q2 **[def]** Define a proper map (Definition [[§42 Embeddings#^def-42-2|§42.2]]).
-- [ ] Q3 **[why]** In Example [[§38 Fibrations#^ex-38-1|§38.1]] (punctured plane), which hypothesis fails, and which conclusion fails?
-- [ ] Q4 **[why]** In Example [[§38 Fibrations#^ex-38-2|§38.2]] all fibres are diffeomorphic (why?) and still $\pi$ is not a fibration. Which hypothesis fails?
+- [ ] Q2 **[def]** Define a proper map (Definition [[§44 Embeddings#^def-44-2|§44.2]]).
+- [ ] Q3 **[why]** In Example [[§40 Fibrations#^ex-40-1|§40.1]] (punctured plane), which hypothesis fails, and which conclusion fails?
+- [ ] Q4 **[why]** In Example [[§40 Fibrations#^ex-40-2|§40.2]] all fibres are diffeomorphic (why?) and still $\pi$ is not a fibration. Which hypothesis fails?
 - [ ] Q5 **[why]** Why is $B$ assumed connected? What can go wrong with the fibres over two components of $B$?
 - [ ] Q6 How used: if $E$ is compact, $B$ connected and $\pi:E\to B$ a surjective submersion, what can you conclude, and why is such a $\pi$ proper?
 
 > [!tip]- Hints: what to know about the statement
-> - Proper: preimages of compact sets are compact; a map out of a compact space into a Hausdorff space is proper (proof of Corollary [[§42 Embeddings#^cor-42-6|§42.6]]).
-> - Example [[§38 Fibrations#^ex-38-2|§38.2]]: each fibre is a plane minus two points, all diffeomorphic by affine maps; the missing points collide as $t\to0$; $\pi$ is not proper.
+> - Proper: preimages of compact sets are compact; a map out of a compact space into a Hausdorff space is proper (proof of Corollary [[§44 Embeddings#^cor-44-6|§44.6]]).
+> - Example [[§40 Fibrations#^ex-40-2|§40.2]]: each fibre is a plane minus two points, all diffeomorphic by affine maps; the missing points collide as $t\to0$; $\pi$ is not proper.
 > - A fibration has one model fibre $F$; over different components the fibres could be different manifolds.
 > - Uribe's intuition: lift paths in $B$ via a connection, flow fibre to fibre; properness lets the flow run long enough.
 
 #### The Möbius band is a fibration · P2
 
-For $E=(\mathbb{R}\times(-1,1))/\sim$, $(s,t)\sim(s+n,(-1)^nt)$: $E$ is a topological $2$-manifold with the two charts $\psi_a=(q|_{I_a\times(-1,1)})^{-1}$, $a\in\{0,\tfrac12\}$, forming a smooth atlas; $\pi[s,t]=[s]$ is smooth and $\phi_a[s,t]=([s],t)$ are local trivializations; on the overlap they differ by $t\mapsto-t$ on one arc, see Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]]. *Source: Lecture 12 gave the picture (Example [[§39 Examples of Fibrations#^ex-39-2|§39.2]]); the proof is filled in.*
+For $E=(\mathbb{R}\times(-1,1))/\sim$, $(s,t)\sim(s+n,(-1)^nt)$: $E$ is a topological $2$-manifold with the two charts $\psi_a=(q|_{I_a\times(-1,1)})^{-1}$, $a\in\{0,\tfrac12\}$, forming a smooth atlas; $\pi[s,t]=[s]$ is smooth and $\phi_a[s,t]=([s],t)$ are local trivializations; on the overlap they differ by $t\mapsto-t$ on one arc, see Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]]. *Source: Lecture 12 gave the picture (Example [[§41 Examples of Fibrations#^ex-41-2|§41.2]]); the proof is filled in.*
 
 ^nd-prop-39-1
 
@@ -3686,67 +3686,9 @@ For $E=(\mathbb{R}\times(-1,1))/\sim$, $(s,t)\sim(s+n,(-1)^nt)$: $E$ is a topolo
 > - Transition: $(s,t)$ for $\tfrac12<s<1$, $(s+1,-t)$ for $0<s<\tfrac12$.
 > - $\phi_a=(\chi_a^{-1}\times\mathrm{id})\circ\psi_a$. Non-triviality is stated, not proved: one boundary curve versus two.
 
-#### Spheres cover projective spaces · P2
+#### The normal bundle is a fibration · P2
 
-$\pi:S^n\to\mathbb{RP}^n$, $x\mapsto[x]$, is a local diffeomorphism and exactly two-to-one, see Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-1|§44.1]]. *Source: stated in Lecture 10 as an example, without proof; filled in.* **[class exercise, Lecture 10]**
-
-^nd-ex-44-1
-
-- [ ] Q1 **[state]** State the example, including the definition of a local diffeomorphism (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]).
-- [ ] Q2 Define the open hemispheres $U_i^\varepsilon$. Why do they cover $S^n$, and why does $\pi$ map $U_i^\varepsilon$ bijectively onto $U_i=\{x_i\neq0\}$?
-- [ ] Q3 Write $h=\varphi_i\circ\pi$ on $U_i^\varepsilon$ and its inverse $\kappa(y)=\varepsilon\hat y/|\hat y|$. Why are both smooth (which lemma for maps out of and into $S^n$)?
-- [ ] Q4 Conclude that $\pi|_{U_i^\varepsilon}$ is a diffeomorphism onto $U_i$ and that $\pi$ is smooth.
-- [ ] Q5 Why is every fibre exactly $\{x,-x\}$?
-- [ ] Q6 **[why]** $\pi$ is a surjective local diffeomorphism. Why is it not a diffeomorphism? Which hypothesis of Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]] fails?
-
-> [!tip]- Hints: route of the proof in the notes
-> - Strategy: S1 (compute in the standard charts of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]).
-> - A line $[x]$ with $x_i\neq0$ meets $S^n$ in $\pm x/|x|$, exactly one of which lies in $U_i^\varepsilon$.
-> - $h(x)=(x_k/x_i)_{k\neq i}$ is smooth on $\{x_i\neq0\}$; $\kappa$ is smooth since $|\hat y|\ge1$; Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]].
-> - $\pi|_{U_i^\varepsilon}=\varphi_i^{-1}\circ h$. Two-to-one: $y=\lambda x$ with $|\lambda|=1$.
-
-#### The projection $S^{2n+1}\to\mathbb{CP}^n$ is a submersion · P2
-
-The quotient map $S^{2n+1}\to\mathbb{CP}^n$ is a submersion, see Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-2|§44.2]]. *Source: stated in Lecture 10 without proof; the notes deduce it from the Hopf fibration.* **[class exercise, Lecture 10]**
-
-^nd-ex-44-2
-
-- [ ] Q1 **[state]** State the claim. Are the dimensions consistent with a submersion?
-- [ ] Q2 Which two results of the notes give it at once?
-- [ ] Q3 Describe the fibres. Are they regular submanifolds, and of what dimension?
-- [ ] Q4 **[why]** Why is this map not a local diffeomorphism, unlike $S^n\to\mathbb{RP}^n$?
-
-> [!tip]- Hints: route of the proof in the notes
-> - Strategy: a fibration is a submersion.
-> - Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]] (it is a fibration) and Proposition [[§38 Fibrations#^prop-38-1|§38.1]](2).
-> - Fibres are the circles $\{\lambda z:|\lambda|=1\}$ (Corollary [[§37 Regular Submanifolds#^cor-37-13|§37.13]]): dimension $(2n+1)-2n=1$.
-> - Dimensions differ, so the differential cannot be bijective.
-
-#### The Hopf fibration · P2
-
-$\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$, is a fibration with fibre $S^1$, with local trivializations $\phi_j(z)=([z],z_j/|z_j|)$ over $U_j=\{z_j\neq0\}$, see Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]]. *Source: claimed in Lecture 11 ("We claim that this projection that we work with in homework is a fibration. What do you think the fibre is?"); the trivialization is filled in.* **[class exercise, Lecture 11]**
-
-^nd-ex-44-3
-
-- [ ] Q1 **[state]** State the example: fibre, cover, trivializations, and the inverse $([w],\lambda)\mapsto\lambda\hat w/|\hat w|$.
-- [ ] Q2 Why do the $U_j$ cover $\mathbb{CP}^n$, and why is $\pi^{-1}(U_j)$ open in $S^{2n+1}$?
-- [ ] Q3 Why is $\phi_j$ smooth? Treat its two components separately.
-- [ ] Q4 Why is the proposed inverse $\psi_j$ smooth, with values in $\pi^{-1}(U_j)$?
-- [ ] Q5 Check $\psi_j\circ\phi_j=\mathrm{id}$, $\phi_j\circ\psi_j=\mathrm{id}$ and $\mathrm{pr}_1\circ\phi_j=\pi$.
-- [ ] Q6 **[why]** The Hopf fibration has local sections but no global one (for $n\ge1$). If it had a global section, what would Proposition [[§44 Projective Spaces and the Hopf Fibration#^prop-44-1|§44.1]] give? Why is that impossible (stated, not proved)?
-
-> [!tip]- Hints: route of the proof in the notes
-> - Strategy: S1 (the charts $\varphi_j$ of $\mathbb{CP}^n$, Proposition [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]]), and Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] for maps out of and into level sets.
-> - First component: $\varphi_j\circ\pi(z)=(z_k/z_j)_{k\neq j}$; second: $z_j/|z_j|$, smooth where $z_j\neq0$, values in $S^1$.
-> - $\psi_j$ in the chart is $(u,\lambda)\mapsto\lambda\hat w(u)/|\hat w(u)|$ with $|\hat w(u)|\ge1$.
-> - $\psi_j(\phi_j(z))=\frac{z_j}{|z_j|}\cdot\frac{z}{z_j}\cdot\frac{|z_j|}{|z|}=z$.
-> - Q6: a global trivialization $S^{2n+1}\cong\mathbb{CP}^n\times S^1$ (the fundamental group rules it out).
-
-### Priority 3 · filled in, using a technique the homework drills
-
-#### The normal bundle is a fibration · P3
-
-Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, $G=(x^{m+1},\dots,x^n)$: $J(q)J(q)^{\mathsf T}$ is invertible on $U$, $\Phi_U(q,v)=(q,(JJ^{\mathsf T})^{-1}Jv)$ is a diffeomorphism $\pi^{-1}(U\cap M)\to(U\cap M)\times\mathbb{R}^{n-m}$ with inverse $(q,c)\mapsto(q,J^{\mathsf T}c)$, linear on fibres; so $\pi:\mathcal{N}\to M$ is a fibration with fibre $\mathbb{R}^{n-m}$, see Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]]. *Source: filled in (not from the assignment).*
+Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, $G=(x^{m+1},\dots,x^n)$: $J(q)J(q)^{\mathsf T}$ is invertible on $U$, $\Phi_U(q,v)=(q,(JJ^{\mathsf T})^{-1}Jv)$ is a diffeomorphism $\pi^{-1}(U\cap M)\to(U\cap M)\times\mathbb{R}^{n-m}$ with inverse $(q,c)\mapsto(q,J^{\mathsf T}c)$, linear on fibres; so $\pi:\mathcal{N}\to M$ is a fibration with fibre $\mathbb{R}^{n-m}$, see Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]]. *Source: filled in (not from the assignment).*
 
 ^nd-prop-40-2
 
@@ -3765,6 +3707,62 @@ Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, 
 > - Smooth: entries of $(JJ^{\mathsf T})^{-1}$ by the cofactor formula; $\Theta_U$ smooth into $\mathbb{R}^{2n}$ with values in $\mathcal{N}$, then Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
 > - Q7: the formula $\hat\Phi$ is written on all of $U\times\mathbb{R}^n$, which needs $\det(JJ^{\mathsf T})\neq0$ on $U$.
 
+#### Spheres cover projective spaces · P2
+
+$\pi:S^n\to\mathbb{RP}^n$, $x\mapsto[x]$, is a local diffeomorphism and exactly two-to-one, see Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]]. *Source: stated in Lecture 10 as an example, without proof; filled in.* **[class exercise, Lecture 10]**
+
+^nd-ex-44-1
+
+- [ ] Q1 **[state]** State the example, including the definition of a local diffeomorphism (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]).
+- [ ] Q2 Define the open hemispheres $U_i^\varepsilon$. Why do they cover $S^n$, and why does $\pi$ map $U_i^\varepsilon$ bijectively onto $U_i=\{x_i\neq0\}$?
+- [ ] Q3 Write $h=\varphi_i\circ\pi$ on $U_i^\varepsilon$ and its inverse $\kappa(y)=\varepsilon\hat y/|\hat y|$. Why are both smooth (which lemma for maps out of and into $S^n$)?
+- [ ] Q4 Conclude that $\pi|_{U_i^\varepsilon}$ is a diffeomorphism onto $U_i$ and that $\pi$ is smooth.
+- [ ] Q5 Why is every fibre exactly $\{x,-x\}$?
+- [ ] Q6 **[why]** $\pi$ is a surjective local diffeomorphism. Why is it not a diffeomorphism? Which hypothesis of Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]] fails?
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: S1 (compute in the standard charts of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]).
+> - A line $[x]$ with $x_i\neq0$ meets $S^n$ in $\pm x/|x|$, exactly one of which lies in $U_i^\varepsilon$.
+> - $h(x)=(x_k/x_i)_{k\neq i}$ is smooth on $\{x_i\neq0\}$; $\kappa$ is smooth since $|\hat y|\ge1$; Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]].
+> - $\pi|_{U_i^\varepsilon}=\varphi_i^{-1}\circ h$. Two-to-one: $y=\lambda x$ with $|\lambda|=1$.
+
+#### The projection $S^{2n+1}\to\mathbb{CP}^n$ is a submersion · P2
+
+The quotient map $S^{2n+1}\to\mathbb{CP}^n$ is a submersion, see Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-2|§46.2]]. *Source: stated in Lecture 10 without proof; the notes deduce it from the Hopf fibration.* **[class exercise, Lecture 10]**
+
+^nd-ex-44-2
+
+- [ ] Q1 **[state]** State the claim. Are the dimensions consistent with a submersion?
+- [ ] Q2 Which two results of the notes give it at once?
+- [ ] Q3 Describe the fibres. Are they regular submanifolds, and of what dimension?
+- [ ] Q4 **[why]** Why is this map not a local diffeomorphism, unlike $S^n\to\mathbb{RP}^n$?
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: a fibration is a submersion.
+> - Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]] (it is a fibration) and Proposition [[§40 Fibrations#^prop-40-1|§40.1]](2).
+> - Fibres are the circles $\{\lambda z:|\lambda|=1\}$ (Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]): dimension $(2n+1)-2n=1$.
+> - Dimensions differ, so the differential cannot be bijective.
+
+#### The Hopf fibration · P2
+
+$\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$, is a fibration with fibre $S^1$, with local trivializations $\phi_j(z)=([z],z_j/|z_j|)$ over $U_j=\{z_j\neq0\}$, see Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]]. *Source: claimed in Lecture 11 ("We claim that this projection that we work with in homework is a fibration. What do you think the fibre is?"); the trivialization is filled in.* **[class exercise, Lecture 11]**
+
+^nd-ex-44-3
+
+- [ ] Q1 **[state]** State the example: fibre, cover, trivializations, and the inverse $([w],\lambda)\mapsto\lambda\hat w/|\hat w|$.
+- [ ] Q2 Why do the $U_j$ cover $\mathbb{CP}^n$, and why is $\pi^{-1}(U_j)$ open in $S^{2n+1}$?
+- [ ] Q3 Why is $\phi_j$ smooth? Treat its two components separately.
+- [ ] Q4 Why is the proposed inverse $\psi_j$ smooth, with values in $\pi^{-1}(U_j)$?
+- [ ] Q5 Check $\psi_j\circ\phi_j=\mathrm{id}$, $\phi_j\circ\psi_j=\mathrm{id}$ and $\mathrm{pr}_1\circ\phi_j=\pi$.
+- [ ] Q6 **[why]** The Hopf fibration has local sections but no global one (for $n\ge1$). If it had a global section, what would Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]] give? Why is that impossible (stated, not proved)?
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: S1 (the charts $\varphi_j$ of $\mathbb{CP}^n$, Proposition [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]]), and Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] for maps out of and into level sets.
+> - First component: $\varphi_j\circ\pi(z)=(z_k/z_j)_{k\neq j}$; second: $z_j/|z_j|$, smooth where $z_j\neq0$, values in $S^1$.
+> - $\psi_j$ in the chart is $(u,\lambda)\mapsto\lambda\hat w(u)/|\hat w(u)|$ with $|\hat w(u)|\ge1$.
+> - $\psi_j(\phi_j(z))=\frac{z_j}{|z_j|}\cdot\frac{z}{z_j}\cdot\frac{|z_j|}{|z|}=z$.
+> - Q6: a global trivialization $S^{2n+1}\cong\mathbb{CP}^n\times S^1$ (the fundamental group rules it out).
+
 # T9. Immersions and embeddings
 
 ## Definitions T9
@@ -3773,7 +3771,7 @@ Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, 
 
 #### Locally closed subset · P1
 
-$S \subseteq N$ is locally closed if each point of $S$ has an open $V \subseteq N$ with $S \cap V$ closed in $V$; equivalently $S$ is closed in an open subset of $N$, see Definition [[§42 Embeddings#^def-42-3|§42.3]]. *Source: notes (prompted by Assignment 4, Problem 5).*
+$S \subseteq N$ is locally closed if each point of $S$ has an open $V \subseteq N$ with $S \cap V$ closed in $V$; equivalently $S$ is closed in an open subset of $N$, see Definition [[§44 Embeddings#^def-44-3|§44.3]]. *Source: notes (prompted by Assignment 4, Problem 5).*
 
 ^nd-def-42-3
 
@@ -3783,14 +3781,14 @@ $S \subseteq N$ is locally closed if each point of $S$ has an open $V \subseteq 
 - [ ] Q4 **[example]** Is an open disc in $\mathbb{R}^2$ locally closed? Is $\mathbb{Q} \subseteq \mathbb{R}$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§42 Embeddings#^def-42-3|§42.3]]; Q2: Proposition [[§42 Embeddings#^prop-42-7|§42.7]].
-> - Q3: it is dense, so it would be open (Corollary [[§42 Embeddings#^cor-42-8|§42.8]]); hence not a regular submanifold. Q4: yes (open); no (dense with empty interior).
+> - Definition [[§44 Embeddings#^def-44-3|§44.3]]; Q2: Proposition [[§44 Embeddings#^prop-44-7|§44.7]].
+> - Q3: it is dense, so it would be open (Corollary [[§44 Embeddings#^cor-44-8|§44.8]]); hence not a regular submanifold. Q4: yes (open); no (dense with empty interior).
 
 ### Priority 2 · stated or done in class
 
 #### Immersion (local picture) · P2
 
-$F$ is an immersion at $p$ if $F_{\ast p}$ is injective (forcing $m \le n$), see Definition [[§41 Immersions#^def-41-1|§41.1]]. *Source: Lecture 13.*
+$F$ is an immersion at $p$ if $F_{\ast p}$ is injective (forcing $m \le n$), see Definition [[§43 Immersions#^def-43-1|§43.1]]. *Source: Lecture 13.*
 
 ^nd-def-41-1
 
@@ -3800,13 +3798,13 @@ $F$ is an immersion at $p$ if $F_{\ast p}$ is injective (forcing $m \le n$), see
 - [ ] Q4 **[why]** Why is an immersion that is open onto its image enough for $F(M)$ to be a regular submanifold, even without injectivity? Give a non-injective example.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§41 Immersions#^def-41-1|§41.1]] (= Definition [[§36 Submersions#^def-36-2|§36.2]]); Theorem [[§41 Immersions#^thm-41-1|§41.1]], Corollary [[§41 Immersions#^cor-41-2|§41.2]].
-> - Q3: Example [[§41 Immersions#^ex-41-1|§41.1]] (not injective, X-shaped image), Example [[§41 Immersions#^ex-41-2|§41.2]] (injective, T-shaped image: not a homeomorphism onto the image).
-> - Q4: Proposition [[§42 Embeddings#^prop-42-2|§42.2]]; the remark *Where Is Injectivity Used?* in [[§42 Embeddings|§42]] ($\mathbb{R} \to S^1$, $S^2 \to \mathbb{RP}^2$).
+> - Definition [[§43 Immersions#^def-43-1|§43.1]] (= Definition [[§36 Submersions#^def-36-2|§36.2]]); Theorem [[§43 Immersions#^thm-43-1|§43.1]], Corollary [[§43 Immersions#^cor-43-2|§43.2]].
+> - Q3: Example [[§43 Immersions#^ex-43-1|§43.1]] (not injective, X-shaped image), Example [[§43 Immersions#^ex-43-2|§43.2]] (injective, T-shaped image: not a homeomorphism onto the image).
+> - Q4: Proposition [[§44 Embeddings#^prop-44-2|§44.2]]; the remark *Where Is Injectivity Used?* in [[§44 Embeddings|§44]] ($\mathbb{R} \to S^1$, $S^2 \to \mathbb{RP}^2$).
 
 #### Embedding · P2
 
-A smooth immersion $F : M \to N$ that is a homeomorphism onto $F(M)$ with the subspace topology, see Definition [[§42 Embeddings#^def-42-1|§42.1]]. *Source: Lecture 14.*
+A smooth immersion $F : M \to N$ that is a homeomorphism onto $F(M)$ with the subspace topology, see Definition [[§44 Embeddings#^def-44-1|§44.1]]. *Source: Lecture 14.*
 
 ^nd-def-42-1
 
@@ -3817,14 +3815,14 @@ A smooth immersion $F : M \to N$ that is a homeomorphism onto $F(M)$ with the su
 - [ ] Q5 **[use]** State two sufficient conditions for an injective immersion to be an embedding (properness, compactness), and when an embedding has closed image.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§42 Embeddings#^def-42-1|§42.1]]; Q2: Theorem [[§42 Embeddings#^thm-42-1|§42.1]], Corollary [[§42 Embeddings#^cor-42-3|§42.3]].
-> - Q3: Example [[§41 Immersions#^ex-41-2|§41.2]], Proposition [[§42 Embeddings#^prop-42-12|§42.12]] (irrational line, → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]]), Example [[§42 Embeddings#^ex-42-1|§42.1]] (figure-eight).
+> - Definition [[§44 Embeddings#^def-44-1|§44.1]]; Q2: Theorem [[§44 Embeddings#^thm-44-1|§44.1]], Corollary [[§44 Embeddings#^cor-44-3|§44.3]].
+> - Q3: Example [[§43 Immersions#^ex-43-2|§43.2]], Proposition [[§44 Embeddings#^prop-44-12|§44.12]] (irrational line, → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]]), Example [[§44 Embeddings#^ex-44-1|§44.1]] (figure-eight).
 > - Q4: $t \mapsto (t^3, 0)$ onto the $x$-axis, or the cusp $t \mapsto (t^2, t^3)$ (not immersions at $0$).
-> - Q5: Theorem [[§42 Embeddings#^thm-42-5|§42.5]], Corollary [[§42 Embeddings#^cor-42-6|§42.6]], Proposition [[§42 Embeddings#^prop-42-9|§42.9]]. Example: every section is a closed embedding, Proposition [[§42 Embeddings#^prop-42-10|§42.10]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
+> - Q5: Theorem [[§44 Embeddings#^thm-44-5|§44.5]], Corollary [[§44 Embeddings#^cor-44-6|§44.6]], Proposition [[§44 Embeddings#^prop-44-9|§44.9]]. Example: every section is a closed embedding, Proposition [[§44 Embeddings#^prop-44-10|§44.10]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
 
 #### Proper map · P2
 
-A continuous $F$ with $F^{-1}(K)$ compact for every compact $K$, see Definition [[§42 Embeddings#^def-42-2|§42.2]]. *Source: Lecture 14.*
+A continuous $F$ with $F^{-1}(K)$ compact for every compact $K$, see Definition [[§44 Embeddings#^def-44-2|§44.2]]. *Source: Lecture 14.*
 
 ^nd-def-42-2
 
@@ -3835,13 +3833,13 @@ A continuous $F$ with $F^{-1}(K)$ compact for every compact $K$, see Definition 
 - [ ] Q5 **[why]** Which hypothesis of Ehresmann's theorem is properness, and what does the punctured-plane projection show about dropping it?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§42 Embeddings#^def-42-2|§42.2]] (= Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]); Q2: Proposition [[§42 Embeddings#^prop-42-4|§42.4]] (manifolds are locally compact, Proposition [[§2 Topological Manifolds#^prop-2-12|§2.12]]).
-> - Q3: Theorem [[§42 Embeddings#^thm-42-5|§42.5]] (closed map onto the image ⇒ homeomorphism onto the image). Q4: no ($T^2$ compact, $\mathbb{R}$ not); no (image not closed, Proposition [[§42 Embeddings#^prop-42-9|§42.9]]).
-> - Q5: Theorem [[§38 Fibrations#^thm-38-3|§38.3]], Example [[§38 Fibrations#^ex-38-1|§38.1]].
+> - Definition [[§44 Embeddings#^def-44-2|§44.2]] (= Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]); Q2: Proposition [[§44 Embeddings#^prop-44-4|§44.4]] (manifolds are locally compact, Proposition [[§2 Topological Manifolds#^prop-2-12|§2.12]]).
+> - Q3: Theorem [[§44 Embeddings#^thm-44-5|§44.5]] (closed map onto the image ⇒ homeomorphism onto the image). Q4: no ($T^2$ compact, $\mathbb{R}$ not); no (image not closed, Proposition [[§44 Embeddings#^prop-44-9|§44.9]]).
+> - Q5: Theorem [[§40 Fibrations#^thm-40-3|§40.3]], Example [[§40 Fibrations#^ex-40-1|§40.1]].
 
 #### Immersed submanifold · P2
 
-$S \subseteq N$ with some manifold topology and smooth structure making the inclusion a smooth immersion, see Definition [[§42 Embeddings#^def-42-4|§42.4]]. *Source: notes (Lecture 14 material).*
+$S \subseteq N$ with some manifold topology and smooth structure making the inclusion a smooth immersion, see Definition [[§44 Embeddings#^def-44-4|§44.4]]. *Source: notes (Lecture 14 material).*
 
 ^nd-def-42-4
 
@@ -3851,8 +3849,8 @@ $S \subseteq N$ with some manifold topology and smooth structure making the incl
 - [ ] Q4 **[example]** Give an immersed submanifold of $T^2$ that is not regular, and one of $\mathbb{R}^2$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§42 Embeddings#^def-42-4|§42.4]]; Q2: Proposition [[§42 Embeddings#^prop-42-13|§42.13]]; every regular submanifold is one, Proposition [[§42 Embeddings#^prop-42-14|§42.14]].
-> - Q3: Proposition [[§42 Embeddings#^prop-42-15|§42.15]]. Q4: Example [[§42 Embeddings#^ex-42-1|§42.1]].
+> - Definition [[§44 Embeddings#^def-44-4|§44.4]]; Q2: Proposition [[§44 Embeddings#^prop-44-13|§44.13]]; every regular submanifold is one, Proposition [[§44 Embeddings#^prop-44-14|§44.14]].
+> - Q3: Proposition [[§44 Embeddings#^prop-44-15|§44.15]]. Q4: Example [[§44 Embeddings#^ex-44-1|§44.1]].
 
 ## Proofs T9
 
@@ -3860,11 +3858,11 @@ $S \subseteq N$ with some manifold topology and smooth structure making the incl
 
 #### Images of embeddings are locally closed · P1
 
-Every regular submanifold of $N$, in particular the image of an embedding, is locally closed: closed in some open subset of $N$ containing it, see Proposition [[§42 Embeddings#^prop-42-7|§42.7]]. *Source: filled in (prompted by Assignment 4, Problem 5).*
+Every regular submanifold of $N$, in particular the image of an embedding, is locally closed: closed in some open subset of $N$ containing it, see Proposition [[§44 Embeddings#^prop-44-7|§44.7]]. *Source: filled in (prompted by Assignment 4, Problem 5).*
 
 ^nd-prop-42-7
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define a locally closed subset (Definition [[§42 Embeddings#^def-42-3|§42.3]]) and its equivalent form.
+- [ ] Q1 **[state]** State the proposition. **[def]** Define a locally closed subset (Definition [[§44 Embeddings#^def-44-3|§44.3]]) and its equivalent form.
 - [ ] Q2 In an adapted chart $(V,\psi)$, why is $S\cap V$ closed in $V$?
 - [ ] Q3 With $U$ the union of these $V$'s, why is $U\setminus S$ open, so that $S$ is closed in $U$?
 - [ ] Q4 Prove the converse in the equivalence.
@@ -3877,13 +3875,13 @@ Every regular submanifold of $N$, in particular the image of an embedding, is lo
 
 #### Sections are closed embeddings · P1
 
-If $\pi\circ s=\mathrm{id}_M$, then $s$ is an embedding with closed image, see Proposition [[§42 Embeddings#^prop-42-10|§42.10]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
+If $\pi\circ s=\mathrm{id}_M$, then $s$ is an embedding with closed image, see Proposition [[§44 Embeddings#^prop-44-10|§44.10]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
 
 ^nd-prop-42-10
 
 #### The irrational line on the torus · P1
 
-$\gamma(t)=(e^{2\pi it},e^{2\pi i\alpha t})$, $\alpha$ irrational, is an injective immersion with dense image, not an embedding, see Proposition [[§42 Embeddings#^prop-42-12|§42.12]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]].
+$\gamma(t)=(e^{2\pi it},e^{2\pi i\alpha t})$, $\alpha$ irrational, is an injective immersion with dense image, not an embedding, see Proposition [[§44 Embeddings#^prop-44-12|§44.12]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]].
 
 ^nd-prop-42-12
 
@@ -3891,11 +3889,11 @@ $\gamma(t)=(e^{2\pi it},e^{2\pi i\alpha t})$, $\alpha$ irrational, is an injecti
 
 #### Local normal form for immersions · P2
 
-If $F:M\to N$ is an immersion at $p$ ($m\le n$), there are charts $(U,\varphi)$ at $p$ and $(V,\psi)$ at $F(p)$ with $F(U)\subseteq V$ and $\psi\circ F\circ\varphi^{-1}(r)=(r,\vec 0)$, see Theorem [[§41 Immersions#^thm-41-1|§41.1]]. *Source: stated in Lecture 13, proved in Lecture 14; details completed in the notes.*
+If $F:M\to N$ is an immersion at $p$ ($m\le n$), there are charts $(U,\varphi)$ at $p$ and $(V,\psi)$ at $F(p)$ with $F(U)\subseteq V$ and $\psi\circ F\circ\varphi^{-1}(r)=(r,\vec 0)$, see Theorem [[§43 Immersions#^thm-43-1|§43.1]]. *Source: stated in Lecture 13, proved in Lecture 14; details completed in the notes.*
 
 ^nd-thm-41-1
 
-- [ ] Q1 **[state]** State the theorem. **[def]** Define an immersion at $p$ (Definition [[§41 Immersions#^def-41-1|§41.1]]) and say why it forces $m\le n$.
+- [ ] Q1 **[state]** State the theorem. **[def]** Define an immersion at $p$ (Definition [[§43 Immersions#^def-43-1|§43.1]]) and say why it forces $m\le n$.
 - [ ] Q2 Start with charts $(U_0,\varphi_0)$ at $p$ and $(V_0,\psi)$ at $F(p)$ with $F(U_0)\subseteq V_0$. What is the size of the Jacobian $J=[\partial F^j/\partial x^i(p)]$, and why does it have rank $m$?
 - [ ] Q3 Why may you reorder the $y^j$ so that the top $m\times m$ block $A$ of $J$ is invertible? Why is the reordered $\psi$ still a smooth chart?
 - [ ] Q4 Why is $\tilde\varphi=(F^1,\dots,F^m)$ a chart on a smaller neighbourhood $U$ of $p$? Which theorem, applied to which map?
@@ -3912,7 +3910,7 @@ If $F:M\to N$ is an immersion at $p$ ($m\le n$), there are charts $(U,\varphi)$ 
 
 #### The local image of an immersion · P2
 
-In the charts of the normal form, $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n-m$, see Corollary [[§41 Immersions#^cor-41-2|§41.2]]. *Source: idea in Lecture 13 ("possibly after restricting $U$"); completed in the notes by shrinking $V$.*
+In the charts of the normal form, $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n-m$, see Corollary [[§43 Immersions#^cor-43-2|§43.2]]. *Source: idea in Lecture 13 ("possibly after restricting $U$"); completed in the notes by shrinking $V$.*
 
 ^nd-cor-41-2
 
@@ -3927,11 +3925,11 @@ In the charts of the normal form, $F|_U$ is injective and $F(U)$ is a regular su
 > - Injective: $\varphi$ and $\psi$ are injective.
 > - $V'=(\mathrm{pr}\circ\psi)^{-1}(\varphi(U))$.
 > - "⊇": $\psi(q)=(r,\vec 0)=\tilde F(r)=\psi(F(\varphi^{-1}(r)))$, and $\psi$ is injective.
-> - Points of $\psi(V)\cap(\mathbb{R}^m\times\{0\})$ with first block outside $\varphi(U)$ are removed by $V'$; other parts of $F(M)$ may still enter $V'$ (Theorem [[§42 Embeddings#^thm-42-1|§42.1]]).
+> - Points of $\psi(V)\cap(\mathbb{R}^m\times\{0\})$ with first block outside $\varphi(U)$ are removed by $V'$; other parts of $F(M)$ may still enter $V'$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]).
 
 #### An immersion that crosses itself · P2
 
-$\gamma(t)=(t^2-1,t^3-t)$ is an immersion $\mathbb{R}\to\mathbb{R}^2$, not injective, whose image is not a regular submanifold, see Example [[§41 Immersions#^ex-41-1|§41.1]]. *Source: Lecture 13 (a curve drawn crossing itself); the curve and the full argument are filled in.*
+$\gamma(t)=(t^2-1,t^3-t)$ is an immersion $\mathbb{R}\to\mathbb{R}^2$, not injective, whose image is not a regular submanifold, see Example [[§43 Immersions#^ex-43-1|§43.1]]. *Source: Lecture 13 (a curve drawn crossing itself); the curve and the full argument are filled in.*
 
 ^nd-ex-41-1
 
@@ -3951,7 +3949,7 @@ $\gamma(t)=(t^2-1,t^3-t)$ is an immersion $\mathbb{R}\to\mathbb{R}^2$, not injec
 
 #### An injective immersion that is not a homeomorphism onto its image · P2
 
-An injective immersion $\gamma:(a,b)\to\mathbb{R}^2$ whose end returns to a point $P=\gamma(t_0)$ of its image is not a homeomorphism onto its image, see Example [[§41 Immersions#^ex-41-2|§41.2]]. *Source: Lecture 13 ("making a hook with a piece of wire"); the argument is filled in.*
+An injective immersion $\gamma:(a,b)\to\mathbb{R}^2$ whose end returns to a point $P=\gamma(t_0)$ of its image is not a homeomorphism onto its image, see Example [[§43 Immersions#^ex-43-2|§43.2]]. *Source: Lecture 13 ("making a hook with a piece of wire"); the argument is filled in.*
 
 ^nd-ex-41-2
 
@@ -3969,13 +3967,13 @@ An injective immersion $\gamma:(a,b)\to\mathbb{R}^2$ whose end returns to a poin
 
 #### The image of an embedding is a regular submanifold · P2
 
-If $F:M\to N$ is an embedding, $F(M)$ is a regular submanifold of $N$ of codimension $n-m$, see Theorem [[§42 Embeddings#^thm-42-1|§42.1]]. *Source: Lecture 14; the final equality completed with Corollary [[§41 Immersions#^cor-41-2|§41.2]].*
+If $F:M\to N$ is an embedding, $F(M)$ is a regular submanifold of $N$ of codimension $n-m$, see Theorem [[§44 Embeddings#^thm-44-1|§44.1]]. *Source: Lecture 14; the final equality completed with Corollary [[§43 Immersions#^cor-43-2|§43.2]].*
 
 ^nd-thm-42-1
 
-- [ ] Q1 **[state]** State the theorem. **[def]** Define an embedding (Definition [[§42 Embeddings#^def-42-1|§42.1]]).
+- [ ] Q1 **[state]** State the theorem. **[def]** Define an embedding (Definition [[§44 Embeddings#^def-44-1|§44.1]]).
 - [ ] Q2 What must be produced at a point $q=F(p)$ of $F(M)$?
-- [ ] Q3 From the normal form and Corollary [[§41 Immersions#^cor-41-2|§41.2]], what does $(\ast)$ say about $F(U)$? Why is it not yet a statement about $F(M)\cap V'$?
+- [ ] Q3 From the normal form and Corollary [[§43 Immersions#^cor-43-2|§43.2]], what does $(\ast)$ say about $F(U)$? Why is it not yet a statement about $F(M)\cap V'$?
 - [ ] Q4 The key step: why is $F(U)$ open in $F(M)$, and what open $W\subseteq N$ does that give?
 - [ ] Q5 Shrink to $V'\cap W$: prove $F(M)\cap(V'\cap W)=\{x\in V'\cap W:y^{m+1}(x)=\dots=y^n(x)=0\}$.
 - [ ] Q6 **[why]** Where is the homeomorphism hypothesis used, and is injectivity used at all? Which example shows the theorem fails for an injective immersion?
@@ -3985,30 +3983,30 @@ If $F:M\to N$ is an embedding, $F(M)$ is a regular submanifold of $N$ of codimen
 > - $(\ast)$: $F(U)=\{x\in V':y^{m+1}(x)=\dots=y^n(x)=0\}$; other pieces of $F(M)$ may pass through $V'$.
 > - Homeomorphisms are open, so $F(U)=W\cap F(M)$ (subspace topology).
 > - $F(M)\cap(V'\cap W)=(F(M)\cap W)\cap V'=F(U)$.
-> - Only openness of $F$ onto its image is used (remark *Where Is Injectivity Used?*, Proposition [[§42 Embeddings#^prop-42-2|§42.2]]); fails for the irrational line (Proposition [[§42 Embeddings#^prop-42-12|§42.12]]).
+> - Only openness of $F$ onto its image is used (remark *Where Is Injectivity Used?*, Proposition [[§44 Embeddings#^prop-44-2|§44.2]]); fails for the irrational line (Proposition [[§44 Embeddings#^prop-44-12|§44.12]]).
 
 #### Immersions that are open onto their images · P2
 
-If $F:M\to N$ is an immersion and $F:M\to F(M)$ is open (subspace topology), then $F(M)$ is a regular submanifold of codimension $n-m$; $F$ need not be injective, see Proposition [[§42 Embeddings#^prop-42-2|§42.2]]. *Source: the class discussion in Lecture 14, confirmed in Uribe's follow-up email.*
+If $F:M\to N$ is an immersion and $F:M\to F(M)$ is open (subspace topology), then $F(M)$ is a regular submanifold of codimension $n-m$; $F$ need not be injective, see Proposition [[§44 Embeddings#^prop-44-2|§44.2]]. *Source: the class discussion in Lecture 14, confirmed in Uribe's follow-up email.*
 
 ^nd-prop-42-2
 
 - [ ] Q1 **[state]** State the proposition.
-- [ ] Q2 Which two ingredients of the proof of Theorem [[§42 Embeddings#^thm-42-1|§42.1]] are used, and which step changes its justification?
-- [ ] Q3 Why does neither the normal form nor Corollary [[§41 Immersions#^cor-41-2|§41.2]] use injectivity of $F$?
+- [ ] Q2 Which two ingredients of the proof of Theorem [[§44 Embeddings#^thm-44-1|§44.1]] are used, and which step changes its justification?
+- [ ] Q3 Why does neither the normal form nor Corollary [[§43 Immersions#^cor-43-2|§43.2]] use injectivity of $F$?
 - [ ] Q4 Check the example $t\mapsto(\cos t,\sin t)$: immersion, open onto $S^1$, not injective.
 - [ ] Q5 **[why]** Show the figure-eight $\beta$ is not open onto its image: which open set of $(-\pi,\pi)$ has non-open image?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S8.
 > - Ingredients: the normal form, and $F(U)$ open in $F(M)$.
-> - The injectivity used in Corollary [[§41 Immersions#^cor-41-2|§41.2]] is that of the chart $\psi$.
+> - The injectivity used in Corollary [[§43 Immersions#^cor-43-2|§43.2]] is that of the chart $\psi$.
 > - $\mathbb{R}\to S^1$ is a local diffeomorphism onto $S^1$, hence open.
 > - $\beta((-\pi/2,\pi/2))$: every neighbourhood of $(0,0)$ contains $\beta(t)$ for $t$ near $\pm\pi$.
 
 #### An embedding is a diffeomorphism onto its image · P2
 
-If $F:M\to N$ is an embedding, then $F:M\to F(M)$ is a diffeomorphism, $F(M)$ with its induced structure, see Corollary [[§42 Embeddings#^cor-42-3|§42.3]]. *Source: stated in Lecture 14 ("an embedding restricts to a diffeomorphism between $M$ and the image"); filled in.* **[class exercise, Lecture 14]**
+If $F:M\to N$ is an embedding, then $F:M\to F(M)$ is a diffeomorphism, $F(M)$ with its induced structure, see Corollary [[§44 Embeddings#^cor-44-3|§44.3]]. *Source: stated in Lecture 14 ("an embedding restricts to a diffeomorphism between $M$ and the image"); filled in.* **[class exercise, Lecture 14]**
 
 ^nd-cor-42-3
 
@@ -4021,18 +4019,18 @@ If $F:M\to N$ is an embedding, then $F:M\to F(M)$ is a diffeomorphism, $F(M)$ wi
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S7 (dimensions), Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
-> - $F(M)$ is a regular submanifold of dimension $m$ (Theorem [[§42 Embeddings#^thm-42-1|§42.1]]).
+> - $F(M)$ is a regular submanifold of dimension $m$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]).
 > - $F_{\ast p}=\iota_{\ast F(p)}\circ\bar F_{\ast p}$ is injective, so $\bar F_{\ast p}$ is.
 > - Equal dimensions: Proposition [[§36 Submersions#^prop-36-1|§36.1]](3); bijective local diffeomorphism: Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]].
-> - Q6: the image is not a regular submanifold (Example [[§42 Embeddings#^ex-42-1|§42.1]]).
+> - Q6: the image is not a regular submanifold (Example [[§44 Embeddings#^ex-44-1|§44.1]]).
 
 #### Proper maps into manifolds are closed · P2
 
-A continuous proper map $F:M\to N$ into a topological manifold is closed, see Proposition [[§42 Embeddings#^prop-42-4|§42.4]]. *Source: Lecture 14 ("you go back and forth literally"); Claim 2 not finished in lecture, "you can check the second claim"; completed in the notes.* **[class exercise, Lecture 14]**
+A continuous proper map $F:M\to N$ into a topological manifold is closed, see Proposition [[§44 Embeddings#^prop-44-4|§44.4]]. *Source: Lecture 14 ("you go back and forth literally"); Claim 2 not finished in lecture, "you can check the second claim"; completed in the notes.* **[class exercise, Lecture 14]**
 
 ^nd-prop-42-4
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define a proper map (Definition [[§42 Embeddings#^def-42-2|§42.2]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define a proper map (Definition [[§44 Embeddings#^def-44-2|§44.2]]).
 - [ ] Q2 What has to be shown about $\overline{F(C)}$ for $C\subseteq M$ closed?
 - [ ] Q3 Claim 1: for $K\subseteq N$ compact, why is $F(C)\cap K$ closed? Prove $F(C\cap F^{-1}(K))=F(C)\cap K$.
 - [ ] Q4 Claim 2: for $q\in\overline{F(C)}$ and $V\ni q$ with compact closure, why is $q\in\overline{F(C)\cap\overline V}$?
@@ -4048,7 +4046,7 @@ A continuous proper map $F:M\to N$ into a topological manifold is closed, see Pr
 
 #### Injective proper immersions are embeddings · P2
 
-An injective proper immersion $F:M\to N$ is an embedding, see Theorem [[§42 Embeddings#^thm-42-5|§42.5]]. *Source: Lecture 14 reduced it to Proposition [[§42 Embeddings#^prop-42-4|§42.4]]; the last step is filled in.*
+An injective proper immersion $F:M\to N$ is an embedding, see Theorem [[§44 Embeddings#^thm-44-5|§44.5]]. *Source: Lecture 14 reduced it to Proposition [[§44 Embeddings#^prop-44-4|§44.4]]; the last step is filled in.*
 
 ^nd-thm-42-5
 
@@ -4060,12 +4058,12 @@ An injective proper immersion $F:M\to N$ is an embedding, see Theorem [[§42 Emb
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13.
-> - Continuity of the inverse via closed sets: $F(C)$ is closed in $N$ (Proposition [[§42 Embeddings#^prop-42-4|§42.4]]), so $F(C)=F(C)\cap F(M)$ is closed in $F(M)$.
+> - Continuity of the inverse via closed sets: $F(C)$ is closed in $N$ (Proposition [[§44 Embeddings#^prop-44-4|§44.4]]), so $F(C)=F(C)\cap F(M)$ is closed in $F(M)$.
 > - Q5: the figure-eight $\beta$ on $(-\pi,\pi)$: the preimage of its compact image is $(-\pi,\pi)$; or the irrational line.
 
 #### Injective immersions of compact manifolds · P2
 
-If $M$ is compact, every injective immersion $F:M\to N$ is an embedding, see Corollary [[§42 Embeddings#^cor-42-6|§42.6]]. *Source: Uribe's follow-up email ("$F$ is proper if $M$ is compact, a fact that can be very useful!"); filled in.*
+If $M$ is compact, every injective immersion $F:M\to N$ is an embedding, see Corollary [[§44 Embeddings#^cor-44-6|§44.6]]. *Source: Uribe's follow-up email ("$F$ is proper if $M$ is compact, a fact that can be very useful!"); filled in.*
 
 ^nd-cor-42-6
 
@@ -4077,24 +4075,26 @@ If $M$ is compact, every injective immersion $F:M\to N$ is an embedding, see Cor
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13.
 > - $K$ compact in $N$ ⇒ closed ⇒ $F^{-1}(K)$ closed in compact $M$ ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]).
-> - Theorem [[§42 Embeddings#^thm-42-5|§42.5]].
-> - $T^2$ is compact, the irrational line is an injective immersion, and it is not an embedding (Proposition [[§42 Embeddings#^prop-42-12|§42.12]]).
+> - Theorem [[§44 Embeddings#^thm-44-5|§44.5]].
+> - $T^2$ is compact, the irrational line is an injective immersion, and it is not an embedding (Proposition [[§44 Embeddings#^prop-44-12|§44.12]]).
 
-#### Closed embeddings are the proper ones · P2
+### Priority 3 · filled in, using a technique the homework drills
 
-An embedding is proper if and only if its image is closed; an injective proper immersion is exactly an embedding with closed image, see Proposition [[§42 Embeddings#^prop-42-9|§42.9]]. *Source: filled in.*
+#### Closed embeddings are the proper ones · P3
+
+An embedding is proper if and only if its image is closed; an injective proper immersion is exactly an embedding with closed image, see Proposition [[§44 Embeddings#^prop-44-9|§44.9]]. *Source: filled in.*
 
 ^nd-prop-42-9
 
 - [ ] Q1 **[state]** State the proposition.
 - [ ] Q2 Proper ⇒ closed image: which proposition?
 - [ ] Q3 Closed image ⇒ proper: for $K$ compact, why is $K\cap F(M)$ compact, and why is $F^{-1}(K)$ compact? Where is the embedding hypothesis used?
-- [ ] Q4 Prove the last sentence from the two directions and Theorem [[§42 Embeddings#^thm-42-5|§42.5]].
+- [ ] Q4 Prove the last sentence from the two directions and Theorem [[§44 Embeddings#^thm-44-5|§44.5]].
 - [ ] Q5 **[why]** The figure-eight has compact, hence closed, image. Why is that not a contradiction? Is local closedness of the image sufficient for an embedding?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13.
-> - Proper ⇒ closed map (Proposition [[§42 Embeddings#^prop-42-4|§42.4]]), so $F(M)$ is closed.
+> - Proper ⇒ closed map (Proposition [[§44 Embeddings#^prop-44-4|§44.4]]), so $F(M)$ is closed.
 > - $F^{-1}(K)=F^{-1}(K\cap F(M))$ is the image of a compact set under the continuous inverse of $F:M\to F(M)$.
 > - Q5: the figure-eight is not an embedding at all; closedness only helps for embeddings.
 
@@ -4102,7 +4102,7 @@ An embedding is proper if and only if its image is closed; an injective proper i
 
 #### Dense regular submanifolds are open · P4
 
-A dense regular submanifold of $N$ is open in $N$ and has codimension $0$; so the image of an embedding with $\dim M<\dim N$ is never dense, see Corollary [[§42 Embeddings#^cor-42-8|§42.8]]. *Source: filled in.*
+A dense regular submanifold of $N$ is open in $N$ and has codimension $0$; so the image of an embedding with $\dim M<\dim N$ is never dense, see Corollary [[§44 Embeddings#^cor-44-8|§44.8]]. *Source: filled in.*
 
 ^nd-cor-42-8
 
@@ -4114,17 +4114,17 @@ A dense regular submanifold of $N$ is open in $N$ and has codimension $0$; so th
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13′-type (closed + dense in $U$ ⇒ all of $U$).
-> - Proposition [[§42 Embeddings#^prop-42-7|§42.7]]; density in $N$ gives density in $U$.
+> - Proposition [[§44 Embeddings#^prop-44-7|§44.7]]; density in $N$ gives density in $U$.
 > - Codimension: $\psi(S\cap V)$ would be a nonempty open subset of $\mathbb{R}^n$ inside a hyperplane.
-> - Q5: the image is dense (Proposition [[§42 Embeddings#^prop-42-12|§42.12]]).
+> - Q5: the image is dense (Proposition [[§44 Embeddings#^prop-44-12|§44.12]]).
 
 #### Images of injective immersions · P4
 
-For an injective immersion $F:M\to N$ there is exactly one topology and smooth structure on $S=F(M)$ making $F:M\to S$ a diffeomorphism, and with them $S$ is an immersed submanifold, see Proposition [[§42 Embeddings#^prop-42-13|§42.13]]. *Source: filled in (not from lecture).*
+For an injective immersion $F:M\to N$ there is exactly one topology and smooth structure on $S=F(M)$ making $F:M\to S$ a diffeomorphism, and with them $S$ is an immersed submanifold, see Proposition [[§44 Embeddings#^prop-44-13|§44.13]]. *Source: filled in (not from lecture).*
 
 ^nd-prop-42-13
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define an immersed submanifold (Definition [[§42 Embeddings#^def-42-4|§42.4]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define an immersed submanifold (Definition [[§44 Embeddings#^def-44-4|§44.4]]).
 - [ ] Q2 Which topology do you declare on $S$? Why is $h=F^{-1}:S\to M$ a homeomorphism?
 - [ ] Q3 Which proposition gives the smooth structure?
 - [ ] Q4 Why are the topology and the smooth structure unique?
@@ -4135,11 +4135,11 @@ For an injective immersion $F:M\to N$ there is exactly one topology and smooth s
 > - $U\subseteq S$ open iff $F^{-1}(U)$ open in $M$.
 > - Transport of structure, Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]].
 > - $\iota_{\ast q}=F_{\ast h(q)}\circ h_{\ast q}$: an injective map after an isomorphism.
-> - Q6: no; by Proposition [[§42 Embeddings#^prop-42-15|§42.15]] it would make $\gamma$ an embedding.
+> - Q6: no; by Proposition [[§44 Embeddings#^prop-44-15|§44.15]] it would make $\gamma$ an embedding.
 
 #### When an immersed submanifold is regular · P4
 
-For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[§42 Embeddings#^prop-42-13|§42.13]], the following are equivalent: (1) $F$ is an embedding; (2) the topology of $S$ is the subspace topology; (3) $S$ is a regular submanifold whose induced structure is that structure, see Proposition [[§42 Embeddings#^prop-42-15|§42.15]]. *Source: filled in (not from lecture).*
+For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[§44 Embeddings#^prop-44-13|§44.13]], the following are equivalent: (1) $F$ is an embedding; (2) the topology of $S$ is the subspace topology; (3) $S$ is a regular submanifold whose induced structure is that structure, see Proposition [[§44 Embeddings#^prop-44-15|§44.15]]. *Source: filled in (not from lecture).*
 
 ^nd-prop-42-15
 
@@ -4147,12 +4147,12 @@ For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[
 - [ ] Q2 (1) ⇔ (2): why is the equality of the two topologies the definition of an embedding, for an immersion?
 - [ ] Q3 (1) ⇒ (3): which theorem and corollary, and which uniqueness statement?
 - [ ] Q4 (3) ⇒ (2): which topology does the induced structure of a regular submanifold have?
-- [ ] Q5 **[why]** Example [[§42 Embeddings#^ex-42-1|§42.1]]: for the figure-eight and the irrational line, which of the three conditions fail, and why?
+- [ ] Q5 **[why]** Example [[§44 Embeddings#^ex-44-1|§44.1]]: for the figure-eight and the irrational line, which of the three conditions fail, and why?
 
 > [!tip]- Hints: route of the proof in the notes
-> - (1) ⇒ (3): Theorem [[§42 Embeddings#^thm-42-1|§42.1]] and Corollary [[§42 Embeddings#^cor-42-3|§42.3]], then uniqueness in Proposition [[§42 Embeddings#^prop-42-13|§42.13]].
+> - (1) ⇒ (3): Theorem [[§44 Embeddings#^thm-44-1|§44.1]] and Corollary [[§44 Embeddings#^cor-44-3|§44.3]], then uniqueness in Proposition [[§44 Embeddings#^prop-44-13|§44.13]].
 > - (3) ⇒ (2): Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] uses the subspace topology.
-> - Figure-eight: neighbourhoods of the origin are X's; irrational line: dense, so it would be open (Corollary [[§42 Embeddings#^cor-42-8|§42.8]]), but it meets a circle in a countable set.
+> - Figure-eight: neighbourhoods of the origin are X's; irrational line: dense, so it would be open (Corollary [[§44 Embeddings#^cor-44-8|§44.8]]), but it meets a circle in a countable set.
 
 # T10. Tangent and cotangent bundles, one-forms, the Hessian
 
@@ -4162,7 +4162,7 @@ For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[
 
 #### Hessian matrix · P1
 
-In a chart, $H_{ij}(p) = \frac{\partial^2 f_\varphi}{\partial r^i\,\partial r^j}(\varphi(p))$, see Definition [[§52 Critical Points and the Hessian#^def-52-1|§52.1]]. *Source: notes (Assignment 5).*
+In a chart, $H_{ij}(p) = \frac{\partial^2 f_\varphi}{\partial r^i\,\partial r^j}(\varphi(p))$, see Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]. *Source: notes (Assignment 5).*
 
 ^nd-def-52-1
 
@@ -4172,12 +4172,12 @@ In a chart, $H_{ij}(p) = \frac{\partial^2 f_\varphi}{\partial r^i\,\partial r^j}
 - [ ] Q4 **[use]** Express $H_p$ as the Jacobian of $\big(\partial f/\partial x^1, \ldots, \partial f/\partial x^m\big)$ in coordinates.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§52 Critical Points and the Hessian#^def-52-1|§52.1]]; Q2: Proposition [[§52 Critical Points and the Hessian#^prop-52-2|§52.2]] ($H^{(x)} = J^{\mathsf T}H^{(y)}J + \sum_k \frac{\partial f}{\partial y^k}(p)\,\partial^2 y^k$).
-> - Q3: Example [[§52 Critical Points and the Hessian#^ex-52-1|§52.1]] ($0$ versus $-2$). Q4: Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]].
+> - Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]; Q2: Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]] ($H^{(x)} = J^{\mathsf T}H^{(y)}J + \sum_k \frac{\partial f}{\partial y^k}(p)\,\partial^2 y^k$).
+> - Q3: Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]] ($0$ versus $-2$). Q4: Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]].
 
 #### Hessian at a critical point · P1
 
-For $p \in \operatorname{Crit}(f)$, $\operatorname{Hess}_pf(v, w) = \sum_{i,j} H_{ij}(p)\,v^iw^j$, a chart-independent symmetric bilinear form on $T_pM$, see Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]]. *Source: notes (Assignment 5).*
+For $p \in \operatorname{Crit}(f)$, $\operatorname{Hess}_pf(v, w) = \sum_{i,j} H_{ij}(p)\,v^iw^j$, a chart-independent symmetric bilinear form on $T_pM$, see Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]. *Source: notes (Assignment 5).*
 
 ^nd-def-52-2
 
@@ -4187,12 +4187,12 @@ For $p \in \operatorname{Crit}(f)$, $\operatorname{Hess}_pf(v, w) = \sum_{i,j} H
 - [ ] Q4 **[example]** Compute the Hessian of $x^2 - y^2$ at $0$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]]; Q2: Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]] via Proposition [[§52 Critical Points and the Hessian#^prop-52-2|§52.2]].
-> - Q3: Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-3|§55.3]]. Q4: $\mathrm{diag}(2, -2)$, the remark *The Morse Lemma* in [[§52 Critical Points and the Hessian|§52]].
+> - Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]; Q2: Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]] via Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]].
+> - Q3: Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-3|§58.3]]. Q4: $\mathrm{diag}(2, -2)$, the remark *The Morse Lemma* in [[§54 Critical Points and the Hessian|§54]].
 
 #### Nondegenerate critical point · P1
 
-$p \in \operatorname{Crit}(f)$ is nondegenerate if $\operatorname{Hess}_pf$ is a non-degenerate pairing, see Definition [[§52 Critical Points and the Hessian#^def-52-3|§52.3]]. *Source: notes (Assignment 5).*
+$p \in \operatorname{Crit}(f)$ is nondegenerate if $\operatorname{Hess}_pf$ is a non-degenerate pairing, see Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]]. *Source: notes (Assignment 5).*
 
 ^nd-def-52-3
 
@@ -4202,12 +4202,12 @@ $p \in \operatorname{Crit}(f)$ is nondegenerate if $\operatorname{Hess}_pf$ is a
 - [ ] Q4 **[use]** Why are nondegenerate critical points isolated?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§52 Critical Points and the Hessian#^def-52-3|§52.3]], Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]]; Q2: Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]].
-> - Q3: Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]]. Q4: Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]], Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+> - Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]], Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]]; Q2: Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]].
+> - Q3: Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]. Q4: Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]], Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
 
 #### Morse function · P1
 
-A smooth $f$ all of whose critical points are nondegenerate, see Definition [[§52 Critical Points and the Hessian#^def-52-4|§52.4]]. *Source: notes (Assignment 5).*
+A smooth $f$ all of whose critical points are nondegenerate, see Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]. *Source: notes (Assignment 5).*
 
 ^nd-def-52-4
 
@@ -4217,12 +4217,12 @@ A smooth $f$ all of whose critical points are nondegenerate, see Definition [[§
 - [ ] Q4 **[example]** Is the height function on $S^2$ Morse? Is $x^3$ on $\mathbb{R}$? What is the index of each critical point of $x^2 - y^2$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§52 Critical Points and the Hessian#^def-52-4|§52.4]], Definition [[§52 Critical Points and the Hessian#^def-52-5|§52.5]]; Q2: Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
-> - Q3: Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] (discrete) and compactness, Corollary [[§52 Critical Points and the Hessian#^cor-52-13|§52.13]]. Q4: yes (two nondegenerate critical points); no (Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]]); index $1$.
+> - Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]], Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]; Q2: Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+> - Q3: Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]] (discrete) and compactness, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]. Q4: yes (two nondegenerate critical points); no (Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]); index $1$.
 
 #### Conormal bundle · P1
 
-$N^\ast S = \{(p, \alpha) \in T^\ast M : p \in S, \alpha \in N_pS\}$, see Definition [[§52 Critical Points and the Hessian#^def-52-6|§52.6]]. *Source: notes (Assignment 5).*
+$N^\ast S = \{(p, \alpha) \in T^\ast M : p \in S, \alpha \in N_pS\}$, see Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]]. *Source: notes (Assignment 5).*
 
 ^nd-def-52-6
 
@@ -4232,14 +4232,14 @@ $N^\ast S = \{(p, \alpha) \in T^\ast M : p \in S, \alpha \in N_pS\}$, see Defini
 - [ ] Q4 **[use]** Relate the critical points of $\Phi|_S$ to $N^\ast S$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§52 Critical Points and the Hessian#^def-52-6|§52.6]]; Q2: Proposition [[§52 Critical Points and the Hessian#^prop-52-6|§52.6]] ($\bar x^{m-k+1}, \ldots, \bar x^m$ and $\xi_1, \ldots, \xi_{m-k}$).
-> - Q3: the remark *Extreme Cases of the Conormal Bundle* in [[§52 Critical Points and the Hessian|§52]] (the fibre $T^\ast_pM$; the zero section). Q4: Corollary [[§52 Critical Points and the Hessian#^cor-52-7|§52.7]].
+> - Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]]; Q2: Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]] ($\bar x^{m-k+1}, \ldots, \bar x^m$ and $\xi_1, \ldots, \xi_{m-k}$).
+> - Q3: the remark *Extreme Cases of the Conormal Bundle* in [[§54 Critical Points and the Hessian|§54]] (the fibre $T^\ast_pM$; the zero section). Q4: Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]].
 
 ### Priority 2 · stated or done in class
 
 #### Tangent bundle (as a set) · P2
 
-$TM = \{(p, v) : p \in M, v \in T_pM\}$ with $\pi(p, v) = p$ and zero section $\zeta(p) = (p, 0)$, see Definition [[§49 The Tangent Bundle#^def-49-1|§49.1]]. *Source: Lecture 12.*
+$TM = \{(p, v) : p \in M, v \in T_pM\}$ with $\pi(p, v) = p$ and zero section $\zeta(p) = (p, 0)$, see Definition [[§51 The Tangent Bundle#^def-51-1|§51.1]]. *Source: Lecture 12.*
 
 ^nd-def-49-1
 
@@ -4249,12 +4249,12 @@ $TM = \{(p, v) : p \in M, v \in T_pM\}$ with $\pi(p, v) = p$ and zero section $\
 - [ ] Q4 **[example]** For $M$ an open subset of $\mathbb{R}^m$, what is $TM$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§49 The Tangent Bundle#^def-49-1|§49.1]], Definition [[§49 The Tangent Bundle#^def-49-2|§49.2]], Definition [[§49 The Tangent Bundle#^def-49-3|§49.3]]; the remark *The Picture Changes* in [[§49 The Tangent Bundle|§49]].
-> - Q2: the zero vectors of different $T_pM$ must be different points of $TM$. Q3: Proposition [[§49 The Tangent Bundle#^prop-49-5|§49.5]], Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]]. Q4: $U \times \mathbb{R}^m$ via one chart.
+> - Definition [[§51 The Tangent Bundle#^def-51-1|§51.1]], Definition [[§51 The Tangent Bundle#^def-51-2|§51.2]], Definition [[§51 The Tangent Bundle#^def-51-3|§51.3]]; the remark *The Picture Changes* in [[§51 The Tangent Bundle|§51]].
+> - Q2: the zero vectors of different $T_pM$ must be different points of $TM$. Q3: Proposition [[§51 The Tangent Bundle#^prop-51-5|§51.5]], Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]]. Q4: $U \times \mathbb{R}^m$ via one chart.
 
 #### Local trivialization of $TM$ · P2
 
-For a chart $(U, \varphi = (x^i))$, $\Phi : TU \to U \times \mathbb{R}^m$, $\Phi(p, v) = (p, v^1, \ldots, v^m)$ with $v = \sum_i v^i\,\partial/\partial x^i|_p$, see Definition [[§49 The Tangent Bundle#^def-49-4|§49.4]]. *Source: Lecture 13.*
+For a chart $(U, \varphi = (x^i))$, $\Phi : TU \to U \times \mathbb{R}^m$, $\Phi(p, v) = (p, v^1, \ldots, v^m)$ with $v = \sum_i v^i\,\partial/\partial x^i|_p$, see Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]. *Source: Lecture 13.*
 
 ^nd-def-49-4
 
@@ -4264,12 +4264,12 @@ For a chart $(U, \varphi = (x^i))$, $\Phi : TU \to U \times \mathbb{R}^m$, $\Phi
 - [ ] Q4 **[use]** Which local sections does $\Phi$ give? (The coordinate frame.)
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§49 The Tangent Bundle#^def-49-4|§49.4]]; $v^i = v[x^i]$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]].
-> - Q3: Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]] (part 2); the remark *Vector Bundles* in [[§49 The Tangent Bundle|§49]]. Q4: the remark *Trivializations and Frames* in [[§49 The Tangent Bundle|§49]].
+> - Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]; $v^i = v[x^i]$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]].
+> - Q3: Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]] (part 2); the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]]. Q4: the remark *Trivializations and Frames* in [[§51 The Tangent Bundle|§51]].
 
 #### Charts of $TM$ (the tangent bundle atlas) · P2
 
-$\tilde\varphi(p, v) = (x^1(p), \ldots, x^m(p), v^1, \ldots, v^m)$ on $TU$, for each smooth chart $(U, \varphi)$ of $M$, see Definition [[§49 The Tangent Bundle#^def-49-5|§49.5]]. *Source: Lecture 13.*
+$\tilde\varphi(p, v) = (x^1(p), \ldots, x^m(p), v^1, \ldots, v^m)$ on $TU$, for each smooth chart $(U, \varphi)$ of $M$, see Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]. *Source: Lecture 13.*
 
 ^nd-def-49-5
 
@@ -4280,13 +4280,13 @@ $\tilde\varphi(p, v) = (x^1(p), \ldots, x^m(p), v^1, \ldots, v^m)$ on $TU$, for 
 - [ ] Q5 **[example]** For $M = \mathbb{R}$ with the charts $\mathrm{id}$ and $t \mapsto t^3$ on $(0, \infty)$, write the transition map of $TM$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§49 The Tangent Bundle#^def-49-5|§49.5]]; Q2: Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] (countably many charts; separate points in one chart or by disjoint $TU$, $TV$).
-> - Q3: Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]]: $(r, v) \mapsto (\psi \circ \varphi^{-1}(r), J(r)v)$ with $J$ the Jacobian of the chart change.
+> - Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]; Q2: Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] (countably many charts; separate points in one chart or by disjoint $TU$, $TV$).
+> - Q3: Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]]: $(r, v) \mapsto (\psi \circ \varphi^{-1}(r), J(r)v)$ with $J$ the Jacobian of the chart change.
 > - Q4: the transition maps need not even be continuous; the coordinate bases vary smoothly with $p$. Q5: $(r, v) \mapsto (r^3, 3r^2 v)$.
 
 #### Charts of $T^\ast M$ (the cotangent bundle atlas) · P2
 
-$\hat\varphi(p, \xi) = (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$ with $\xi = \sum_i \xi_i\,dx^i|_p$, $\xi_i = \xi(\partial/\partial x^i|_p)$, see Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]]. *Source: Lectures 13, 15.*
+$\hat\varphi(p, \xi) = (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$ with $\xi = \sum_i \xi_i\,dx^i|_p$, $\xi_i = \xi(\partial/\partial x^i|_p)$, see Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]. *Source: Lectures 13, 15.*
 
 ^nd-def-50-5
 
@@ -4297,13 +4297,13 @@ $\hat\varphi(p, \xi) = (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$ with $\xi
 - [ ] Q5 **[example]** For $M = \mathbb{R}$ with charts $x$ and $y = x^3$ on $(0, \infty)$, express $dx$ in terms of $dy$ and write the transition map.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§50 The Cotangent Bundle#^def-50-1|§50.1]], Definition [[§50 The Cotangent Bundle#^def-50-4|§50.4]], Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]]; Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]].
-> - Q2, Q3: Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] ($(r, \xi) \mapsto (\tau(r), (\tau'(r)^{-1})^{\mathsf T}\xi)$). Topology: Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]].
-> - Q4: Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]]. Q5: $dx = \frac{1}{3x^2}\,dy$; $(r, \xi) \mapsto (r^3, \xi/(3r^2))$.
+> - Definition [[§52 The Cotangent Bundle#^def-52-1|§52.1]], Definition [[§52 The Cotangent Bundle#^def-52-4|§52.4]], Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]; Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]].
+> - Q2, Q3: Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]] ($(r, \xi) \mapsto (\tau(r), (\tau'(r)^{-1})^{\mathsf T}\xi)$). Topology: Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]].
+> - Q4: Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]]. Q5: $dx = \frac{1}{3x^2}\,dy$; $(r, \xi) \mapsto (r^3, \xi/(3r^2))$.
 
 #### One-form · P2
 
-A smooth map $\theta : M \to T^\ast M$ with $\theta_p \in T^\ast_pM$, i.e. a section of $T^\ast M$, see Definition [[§51 One-Forms#^def-51-1|§51.1]]. *Source: Lecture 15.*
+A smooth map $\theta : M \to T^\ast M$ with $\theta_p \in T^\ast_pM$, i.e. a section of $T^\ast M$, see Definition [[§53 One-Forms#^def-53-1|§53.1]]. *Source: Lecture 15.*
 
 ^nd-def-51-1
 
@@ -4314,13 +4314,13 @@ A smooth map $\theta : M \to T^\ast M$ with $\theta_p \in T^\ast_pM$, i.e. a sec
 - [ ] Q5 **[why]** The condition is not sufficient: give the one-form on $\mathbb{R}^2 \setminus \{0\}$ that satisfies it but is not $df$, and the integral that proves it.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§51 One-Forms#^def-51-1|§51.1]], Definition [[§51 One-Forms#^def-51-2|§51.2]]; Q2: Proposition [[§51 One-Forms#^prop-51-1|§51.1]]. Q3: Proposition [[§51 One-Forms#^prop-51-2|§51.2]].
-> - Q4: Proposition [[§51 One-Forms#^prop-51-3|§51.3]] (mixed partials), Example [[§51 One-Forms#^ex-51-1|§51.1]] ($\tfrac12(x\,dy - y\,dx)$).
-> - Q5: the remark *The Condition Is Not Sufficient* in [[§51 One-Forms|§51]] ($\frac{x\,dy - y\,dx}{x^2 + y^2}$ around the circle gives $2\pi$).
+> - Definition [[§53 One-Forms#^def-53-1|§53.1]], Definition [[§53 One-Forms#^def-53-2|§53.2]]; Q2: Proposition [[§53 One-Forms#^prop-53-1|§53.1]]. Q3: Proposition [[§53 One-Forms#^prop-53-2|§53.2]].
+> - Q4: Proposition [[§53 One-Forms#^prop-53-3|§53.3]] (mixed partials), Example [[§53 One-Forms#^ex-53-1|§53.1]] ($\tfrac12(x\,dy - y\,dx)$).
+> - Q5: the remark *The Condition Is Not Sufficient* in [[§53 One-Forms|§53]] ($\frac{x\,dy - y\,dx}{x^2 + y^2}$ around the circle gives $2\pi$).
 
 #### Pullback of a one-form · P2
 
-$(F^\ast\theta)_p(v) = \theta_{F(p)}(F_{\ast p}v)$, see Definition [[§51 One-Forms#^def-51-4|§51.4]]. *Source: Lecture 15.*
+$(F^\ast\theta)_p(v) = \theta_{F(p)}(F_{\ast p}v)$, see Definition [[§53 One-Forms#^def-53-4|§53.4]]. *Source: Lecture 15.*
 
 ^nd-def-51-4
 
@@ -4331,8 +4331,8 @@ $(F^\ast\theta)_p(v) = \theta_{F(p)}(F_{\ast p}v)$, see Definition [[§51 One-Fo
 - [ ] Q5 **[why]** Why can one-forms be pulled back along every smooth $F$, while vector fields cannot be pushed forward? Name the two obstructions (non-injective, non-surjective $F$).
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§51 One-Forms#^def-51-3|§51.3]], Definition [[§51 One-Forms#^def-51-4|§51.4]]; the remark *Vector Fields Do Not Push Forward* in [[§56 Related Vector Fields|§56]].
-> - Q2: Proposition [[§51 One-Forms#^prop-51-5|§51.5]]. Q3: Corollary [[§51 One-Forms#^cor-51-4|§51.4]]. Q4: $dt$.
+> - Definition [[§53 One-Forms#^def-53-3|§53.3]], Definition [[§53 One-Forms#^def-53-4|§53.4]]; the remark *Vector Fields Do Not Push Forward* in [[§59 Related Vector Fields|§59]].
+> - Q2: Proposition [[§53 One-Forms#^prop-53-5|§53.5]]. Q3: Corollary [[§53 One-Forms#^cor-53-4|§53.4]]. Q4: $dt$.
 
 ## Proofs T10
 
@@ -4340,16 +4340,16 @@ $(F^\ast\theta)_p(v) = \theta_{F(p)}(F_{\ast p}v)$, see Definition [[§51 One-Fo
 
 #### Change of coordinates for the Hessian · P1
 
-For two charts at $p$ with $J_{ki}=\partial y^k/\partial x^i(p)$: $H^{(x)}_{ij}=\sum_{k,l}J_{ki}J_{lj}H^{(y)}_{kl}+\sum_k\frac{\partial f}{\partial y^k}(p)\frac{\partial^2y^k}{\partial x^i\partial x^j}(p)$; at a critical point $H^{(x)}_p=J^{\mathsf T}H^{(y)}_pJ$ and $\det H^{(x)}_p=(\det J)^2\det H^{(y)}_p$, see Proposition [[§52 Critical Points and the Hessian#^prop-52-2|§52.2]]. *Source: filled in (context of Assignment 5, Problem 3).*
+For two charts at $p$ with $J_{ki}=\partial y^k/\partial x^i(p)$: $H^{(x)}_{ij}=\sum_{k,l}J_{ki}J_{lj}H^{(y)}_{kl}+\sum_k\frac{\partial f}{\partial y^k}(p)\frac{\partial^2y^k}{\partial x^i\partial x^j}(p)$; at a critical point $H^{(x)}_p=J^{\mathsf T}H^{(y)}_pJ$ and $\det H^{(x)}_p=(\det J)^2\det H^{(y)}_p$, see Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]. *Source: filled in (context of Assignment 5, Problem 3).*
 
 ^nd-prop-52-2
 
-- [ ] Q1 **[state]** State the formula, its form at a critical point, and the determinant identity. **[def]** Define the Hessian matrix in a chart (Definition [[§52 Critical Points and the Hessian#^def-52-1|§52.1]]).
+- [ ] Q1 **[state]** State the formula, its form at a critical point, and the determinant identity. **[def]** Define the Hessian matrix in a chart (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]).
 - [ ] Q2 With the transition map $\tau=\psi\circ\varphi^{-1}$, why is $f_\varphi=f_\psi\circ\tau$? How are $J$ and $\partial^2y^k/\partial x^i\partial x^j(p)$ expressed through $\tau$?
 - [ ] Q3 Differentiate $f_\varphi=f_\psi\circ\tau$ once (chain rule), then again (product rule and chain rule).
 - [ ] Q4 Identify each term at $r=\varphi(p)$.
 - [ ] Q5 At a critical point, why does the second sum vanish? Why is $J$ invertible?
-- [ ] Q6 **[why]** Example [[§52 Critical Points and the Hessian#^ex-52-1|§52.1]]: for $f(t)=t$ on $\mathbb{R}$ and the charts $x=t$, $y=t+t^2$, compute both Hessians at $0$. What does this show at non-critical points?
+- [ ] Q6 **[why]** Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]]: for $f(t)=t$ on $\mathbb{R}$ and the charts $x=t$, $y=t+t^2$, compute both Hessians at $0$. What does this show at non-critical points?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1 (differentiate downstairs).
@@ -4360,7 +4360,7 @@ For two charts at $p$ with $J_{ki}=\partial y^k/\partial x^i(p)$: $H^{(x)}_{ij}=
 
 #### The Hessian as a map $T_pM\to T_p^\ast M$ · P1
 
-At $p\in\operatorname{Crit}(f)$, $B=\operatorname{Hess}_pf$ satisfies $B^\flat=B^\sharp$, $B^\flat(\partial/\partial x^i|_p)=d(\partial f/\partial x^i)_p$, with matrix $H_p$; and $p$ is nondegenerate iff $B^\flat$ is injective, iff bijective, iff $\det H_p\neq0$ in one (every) chart, iff the $d(\partial f/\partial x^i)_p$ are independent, see Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]]. *Source: filled in (condition (f) is the form used in Assignment 5, Problem 3).*
+At $p\in\operatorname{Crit}(f)$, $B=\operatorname{Hess}_pf$ satisfies $B^\flat=B^\sharp$, $B^\flat(\partial/\partial x^i|_p)=d(\partial f/\partial x^i)_p$, with matrix $H_p$; and $p$ is nondegenerate iff $B^\flat$ is injective, iff bijective, iff $\det H_p\neq0$ in one (every) chart, iff the $d(\partial f/\partial x^i)_p$ are independent, see Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]]. *Source: filled in (condition (f) is the form used in Assignment 5, Problem 3).*
 
 ^nd-prop-52-4
 
@@ -4369,36 +4369,36 @@ At $p\in\operatorname{Crit}(f)$, $B=\operatorname{Hess}_pf$ satisfies $B^\flat=B
 - [ ] Q3 Why is $B^\flat=B^\sharp$, and why is the matrix of $B^\flat$ equal to $H_p$?
 - [ ] Q4 Prove (a)⇔(b)⇔(c)⇔(d).
 - [ ] Q5 Why does $\det H_p\neq0$ in one chart give it in every chart? Give two reasons.
-- [ ] Q6 **[why]** Is $0$ a nondegenerate critical point of $x^3$? Is it isolated? What does this say about the converse of Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]?
+- [ ] Q6 **[why]** Is $0$ a nondegenerate critical point of $x^3$? Is it isolated? What does this say about the converse of Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]]?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S7 (linear algebra: same dimension, injective ⇔ bijective).
-> - Components of $B^\sharp(\partial_j)$ are $B(\partial_i,\partial_j)=H_{ij}(p)$; Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]](3).
+> - Components of $B^\sharp(\partial_j)$ are $B(\partial_i,\partial_j)=H_{ij}(p)$; Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](3).
 > - $\dim T_pM=\dim T_p^\ast M=m$.
 > - Every chart: $B^\flat$ is chart-free; or $\det H^{(x)}_p=(\det J)^2\det H^{(y)}_p$.
-> - Q6: Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]]: degenerate but isolated.
+> - Q6: Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]: degenerate but isolated.
 
 #### The zero section of $T^\ast M$ is a regular submanifold · P1
 
-$\mathcal Z$ is cut out by $\xi_1=\dots=\xi_m=0$ in standard coordinates, and $\zeta_{\ast p}(\partial/\partial x^i|_p)=\partial/\partial\bar x^i|_{(p,0)}$, see Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (the warm-up; see also Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]](3)).
+$\mathcal Z$ is cut out by $\xi_1=\dots=\xi_m=0$ in standard coordinates, and $\zeta_{\ast p}(\partial/\partial x^i|_p)=\partial/\partial\bar x^i|_{(p,0)}$, see Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (the warm-up; see also Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]](3)).
 
 ^nd-prop-52-5
 
 #### The differential of $df$ at a critical point · P1
 
-$(s_f)_{\ast q}(\partial/\partial x^i|_q)=\partial/\partial\bar x^i+\sum_jH_{ij}(q)\,\partial/\partial\xi_j$; at a critical point the vertical part of $(s_f)_{\ast p}v$ is $\operatorname{Hess}_pf(v,\cdot)$, see Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+$(s_f)_{\ast q}(\partial/\partial x^i|_q)=\partial/\partial\bar x^i+\sum_jH_{ij}(q)\,\partial/\partial\xi_j$; at a critical point the vertical part of $(s_f)_{\ast p}v$ is $\operatorname{Hess}_pf(v,\cdot)$, see Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
 
 ^nd-prop-52-9
 
 #### Transversality to the zero section · P1
 
-$s_f\pitchfork\mathcal Z$ iff every critical point of $f$ is nondegenerate, see Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (a)).
+$s_f\pitchfork\mathcal Z$ iff every critical point of $f$ is nondegenerate, see Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (a)).
 
 ^nd-thm-52-10
 
 #### Critical points of a Morse function are isolated · P1
 
-For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular submanifold of dimension $0$, hence discrete, see Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (b)).
+For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular submanifold of dimension $0$, hence discrete, see Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (b)).
 
 ^nd-cor-52-11
 
@@ -4406,12 +4406,12 @@ For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular
 
 #### The topology of the tangent bundle · P2
 
-There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi=(\varphi\times\mathrm{id})\circ\Phi:TU\to\varphi(U)\times\mathbb{R}^m$ is a homeomorphism; with it $TM$ is a topological manifold of dimension $2m$, see Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]]. *Source: stated in Lecture 13 without proof ("it's all point-set topology ... see Lee"); filled in.* **[class exercise, Lecture 13]**
+There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi=(\varphi\times\mathrm{id})\circ\Phi:TU\to\varphi(U)\times\mathbb{R}^m$ is a homeomorphism; with it $TM$ is a topological manifold of dimension $2m$, see Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]]. *Source: stated in Lecture 13 without proof ("it's all point-set topology ... see Lee"); filled in.* **[class exercise, Lecture 13]**
 
 ^nd-prop-49-1
 
 - [ ] Q1 **[state]** State the proposition.
-- [ ] Q2 **[def]** Define $TM$ as a set, the local trivialization $\Phi$ over a chart, and the chart $\tilde\varphi$ (Definitions [[§49 The Tangent Bundle#^def-49-1|§49.1]], [[§49 The Tangent Bundle#^def-49-4|§49.4]], [[§49 The Tangent Bundle#^def-49-5|§49.5]]).
+- [ ] Q2 **[def]** Define $TM$ as a set, the local trivialization $\Phi$ over a chart, and the chart $\tilde\varphi$ (Definitions [[§51 The Tangent Bundle#^def-51-1|§51.1]], [[§51 The Tangent Bundle#^def-51-4|§51.4]], [[§51 The Tangent Bundle#^def-51-5|§51.5]]).
 - [ ] Q3 Prove the two set-theoretic facts: $TU\cap TV=\pi^{-1}(U\cap V)$ and $\tilde\varphi(TU\cap TV)=\varphi(U\cap V)\times\mathbb{R}^m$, an open set.
 - [ ] Q4 Define the candidate topology $\tau$. Check the three axioms; where is injectivity of $\tilde\varphi$ used?
 - [ ] Q5 Why is each $TU$ open? Why is $\tilde\varphi$ open and continuous? (Which property of the transition maps do you need?) Why is the topology unique?
@@ -4422,12 +4422,12 @@ There is a unique topology on $TM$ for which every $TU$ is open and every chart 
 > - Strategy: S1; Lee's smooth manifold chart lemma.
 > - Every list of components occurs at each $p$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]); $\varphi(U\cap V)$ is open (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]).
 > - $W$ open iff $\tilde\varphi(W\cap TU)$ open in $\mathbb{R}^{2m}$ for every chart.
-> - Continuity: $\tilde\psi(W\cap TV)=(\tilde\psi\circ\tilde\varphi^{-1})(O\cap(\varphi(U\cap V)\times\mathbb{R}^m))$; transition maps are homeomorphisms (computed in Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] without any topology).
+> - Continuity: $\tilde\psi(W\cap TV)=(\tilde\psi\circ\tilde\varphi^{-1})(O\cap(\varphi(U\cap V)\times\mathbb{R}^m))$; transition maps are homeomorphisms (computed in Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]] without any topology).
 > - Hausdorff: same base point — use one chart; different base points — disjoint chart domains. Second countable: countably many chart domains $U_B$ from a countable basis.
 
 #### The smooth atlas of the tangent bundle · P2
 
-The charts $(TU,\tilde\varphi)$ form a smooth atlas on $TM$, with transition map $\tilde\psi\circ\tilde\varphi^{-1}(r,v)=(\tau(r),\tau'(r)v)$, $\tau=\psi\circ\varphi^{-1}$, see Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]]. *Source: Lecture 13 ("the only thing that I want to have a look at is ... the transition functions"); completed in the notes.*
+The charts $(TU,\tilde\varphi)$ form a smooth atlas on $TM$, with transition map $\tilde\psi\circ\tilde\varphi^{-1}(r,v)=(\tau(r),\tau'(r)v)$, $\tau=\psi\circ\varphi^{-1}$, see Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]]. *Source: Lecture 13 ("the only thing that I want to have a look at is ... the transition functions"); completed in the notes.*
 
 ^nd-prop-49-2
 
@@ -4437,7 +4437,7 @@ The charts $(TU,\tilde\varphi)$ form a smooth atlas on $TM$, with transition map
 - [ ] Q4 Deduce $w^i=\sum_j\frac{\partial y^i}{\partial x^j}(p)v^j$ for the components in the two bases.
 - [ ] Q5 Why is $\frac{\partial y^i}{\partial x^j}(\varphi^{-1}(r))$ the entry of $\tau'(r)$? Conclude smoothness of the transition map.
 - [ ] Q6 Why is the inverse transition map smooth, so that the charts are compatible?
-- [ ] Q7 **[why]** Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] uses this transition formula before $TM$ has a topology. Why is that not circular?
+- [ ] Q7 **[why]** Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] uses this transition formula before $TM$ has a topology. Why is that not circular?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S9 (a derivation is determined by its values on coordinate functions).
@@ -4448,7 +4448,7 @@ The charts $(TU,\tilde\varphi)$ form a smooth atlas on $TM$, with transition map
 
 #### The tangent bundle is a fibration · P2
 
-$TM$ is a smooth manifold of dimension $2m$, $\pi:TM\to M$ is smooth, the $\Phi$ are local trivializations (linear on fibres), so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and the zero section $\zeta(M)$ is a submanifold of codimension $m$, see Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]]. *Source: Lecture 13 ("a beautiful fibration"); details and the zero section filled in.*
+$TM$ is a smooth manifold of dimension $2m$, $\pi:TM\to M$ is smooth, the $\Phi$ are local trivializations (linear on fibres), so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and the zero section $\zeta(M)$ is a submanifold of codimension $m$, see Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]]. *Source: Lecture 13 ("a beautiful fibration"); details and the zero section filled in.*
 
 ^nd-cor-49-3
 
@@ -4468,16 +4468,16 @@ $TM$ is a smooth manifold of dimension $2m$, $\pi:TM\to M$ is smooth, the $\Phi$
 
 #### The smooth atlas of the cotangent bundle · P2
 
-The standard charts $(T^\ast U,\hat\varphi)$, $\hat\varphi(p,\xi)=(x^1(p),\dots,x^m(p),\xi_1,\dots,\xi_m)$ with $\xi_i=\xi(\partial/\partial x^i|_p)$, form a smooth atlas on $T^\ast M$; covector components transform by $\eta_j=\sum_i\frac{\partial x^i}{\partial y^j}(p)\xi_i$, so the transition map is $(r,\xi)\mapsto(\tau(r),(\tau'(r)^{-1})^{\mathsf T}\xi)$, see Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]]. *Source: Lecture 13 ("completely analogous", with the formula for $dx^i$); the rest filled in.*
+The standard charts $(T^\ast U,\hat\varphi)$, $\hat\varphi(p,\xi)=(x^1(p),\dots,x^m(p),\xi_1,\dots,\xi_m)$ with $\xi_i=\xi(\partial/\partial x^i|_p)$, form a smooth atlas on $T^\ast M$; covector components transform by $\eta_j=\sum_i\frac{\partial x^i}{\partial y^j}(p)\xi_i$, so the transition map is $(r,\xi)\mapsto(\tau(r),(\tau'(r)^{-1})^{\mathsf T}\xi)$, see Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]]. *Source: Lecture 13 ("completely analogous", with the formula for $dx^i$); the rest filled in.*
 
 ^nd-prop-50-2
 
 - [ ] Q1 **[state]** State the proposition: the two transformation formulas and the transition map.
-- [ ] Q2 **[def]** Define the local trivialization $\Psi$ and the standard coordinates $\hat\varphi$ of $T^\ast M$ (Definitions [[§50 The Cotangent Bundle#^def-50-4|§50.4]], [[§50 The Cotangent Bundle#^def-50-5|§50.5]]). How are the components $\xi_i$ computed?
+- [ ] Q2 **[def]** Define the local trivialization $\Psi$ and the standard coordinates $\hat\varphi$ of $T^\ast M$ (Definitions [[§52 The Cotangent Bundle#^def-52-4|§52.4]], [[§52 The Cotangent Bundle#^def-52-5|§52.5]]). How are the components $\xi_i$ computed?
 - [ ] Q3 Derive $dx^i|_p=\sum_j\frac{\partial x^i}{\partial y^j}(p)\,dy^j|_p$. Which lemma, applied to which function?
 - [ ] Q4 Substitute into $\xi=\sum_i\xi_i\,dx^i|_p$ and read off $\eta_j$.
 - [ ] Q5 Why is $B=[\partial x^i/\partial y^j(p)]$ the inverse of $A=[\partial y^i/\partial x^j(p)]$? Conclude that covector components transform by $(A^{-1})^{\mathsf T}$.
-- [ ] Q6 Why is the transition map smooth (entries of $\tau'(r)^{-1}$), and why do the charts form an atlas? Where does the topology of $T^\ast M$ come from (Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]])?
+- [ ] Q6 Why is the transition map smooth (entries of $\tau'(r)^{-1}$), and why do the charts form an atlas? Where does the topology of $T^\ast M$ come from (Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]])?
 - [ ] Q7 **[why]** Why can the covector components not transform by the same matrix $A$ as vector components? Which quantity must be independent of the chart?
 
 > [!tip]- Hints: route of the proof in the notes
@@ -4485,20 +4485,20 @@ The standard charts $(T^\ast U,\hat\varphi)$, $\hat\varphi(p,\xi)=(x^1(p),\dots,
 > - Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] for $f=x^i$ in the chart $\psi$.
 > - Collect coefficients of $dy^j|_p$; they are unique.
 > - $BA=I$: Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]](3), or evaluate the formula for $dx^i|_p$ on $\partial/\partial x^k|_p$.
-> - Cramer's rule: entries of $\tau'(r)^{-1}$ are cofactors over a nonzero determinant. Topology: Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] word for word.
-> - Q7: $\xi(v)=\sum_i\xi_iv^i$ must not depend on the chart. The fibration statement: Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]].
+> - Cramer's rule: entries of $\tau'(r)^{-1}$ are cofactors over a nonzero determinant. Topology: Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] word for word.
+> - Q7: $\xi(v)=\sum_i\xi_iv^i$ must not depend on the chart. The fibration statement: Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]].
 
 #### One-forms in coordinates · P2
 
-For a section $\theta$ of $T^\ast M$ (not assumed smooth) and a chart $(U,(x^i))$: $\theta=\sum_j\theta_j\,dx^j$ on $U$ with $\theta_j(p)=\theta_p(\partial/\partial x^j|_p)$; its coordinate representation is $r\mapsto(r,\theta_1(\varphi^{-1}(r)),\dots,\theta_m(\varphi^{-1}(r)))$; and $\theta$ is smooth on $U$ iff the $\theta_j$ are, see Proposition [[§51 One-Forms#^prop-51-1|§51.1]]. *Source: stated in Lecture 15; filled in.*
+For a section $\theta$ of $T^\ast M$ (not assumed smooth) and a chart $(U,(x^i))$: $\theta=\sum_j\theta_j\,dx^j$ on $U$ with $\theta_j(p)=\theta_p(\partial/\partial x^j|_p)$; its coordinate representation is $r\mapsto(r,\theta_1(\varphi^{-1}(r)),\dots,\theta_m(\varphi^{-1}(r)))$; and $\theta$ is smooth on $U$ iff the $\theta_j$ are, see Proposition [[§53 One-Forms#^prop-53-1|§53.1]]. *Source: stated in Lecture 15; filled in.*
 
 ^nd-prop-51-1
 
-- [ ] Q1 **[state]** State the three parts. **[def]** Define a one-form (Definition [[§51 One-Forms#^def-51-1|§51.1]]).
+- [ ] Q1 **[state]** State the three parts. **[def]** Define a one-form (Definition [[§53 One-Forms#^def-53-1|§53.1]]).
 - [ ] Q2 (1) Why is $\theta_p=\sum_j\theta_p(\partial/\partial x^j|_p)\,dx^j|_p$?
 - [ ] Q3 (2) Why does $\theta$ map $U$ into $T^\ast U$? Compute $\hat\varphi\circ\theta\circ\varphi^{-1}$.
 - [ ] Q4 (3) Prove both directions. In "smooth coefficients ⇒ smooth", why must continuity of $\theta$ be checked, and how?
-- [ ] Q5 **[why]** Where is it used that the charts $\hat\varphi$ are homeomorphisms (Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]])?
+- [ ] Q5 **[why]** Where is it used that the charts $\hat\varphi$ are homeomorphisms (Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1.
@@ -4508,7 +4508,7 @@ For a section $\theta$ of $T^\ast M$ (not assumed smooth) and a chart $(U,(x^i))
 
 #### The differential of a function is a one-form · P2
 
-For $f\in C^\infty(M)$, $df:p\mapsto df_p$ is a one-form, $df=\sum_j\frac{\partial f}{\partial x^j}dx^j$ in a chart, and $d$ is $\mathbb{R}$-linear with $d(fg)=f\,dg+g\,df$, see Proposition [[§51 One-Forms#^prop-51-2|§51.2]]. *Source: Lecture 15 recalled the coordinate formula; the rest filled in.*
+For $f\in C^\infty(M)$, $df:p\mapsto df_p$ is a one-form, $df=\sum_j\frac{\partial f}{\partial x^j}dx^j$ in a chart, and $d$ is $\mathbb{R}$-linear with $d(fg)=f\,dg+g\,df$, see Proposition [[§53 One-Forms#^prop-53-2|§53.2]]. *Source: Lecture 15 recalled the coordinate formula; the rest filled in.*
 
 ^nd-prop-51-2
 
@@ -4521,13 +4521,13 @@ For $f\in C^\infty(M)$, $df:p\mapsto df_p$ is a one-form, $df=\sum_j\frac{\parti
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S9.
 > - Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] at each $p$; $df_p(\partial/\partial x^j|_p)=\partial f/\partial x^j(p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]).
-> - Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], then Proposition [[§51 One-Forms#^prop-51-1|§51.1]](3).
+> - Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], then Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3).
 > - $d(fg)_p(v)=v[fg]=f(p)v[g]+g(p)v[f]$.
-> - Q5: Proposition [[§51 One-Forms#^prop-51-3|§51.3]].
+> - Q5: Proposition [[§53 One-Forms#^prop-53-3|§53.3]].
 
 #### A necessary condition for being a differential · P2
 
-If $\theta=\sum_j\theta_j\,dx^j=df$ on a chart domain, then $\partial\theta_j/\partial x^k=\partial\theta_k/\partial x^j$; so $\theta=\tfrac12(x\,dy-y\,dx)$ is not $df$ on any open subset of $\mathbb{R}^2$, see Proposition [[§51 One-Forms#^prop-51-3|§51.3]]. *Source: Lecture 15.*
+If $\theta=\sum_j\theta_j\,dx^j=df$ on a chart domain, then $\partial\theta_j/\partial x^k=\partial\theta_k/\partial x^j$; so $\theta=\tfrac12(x\,dy-y\,dx)$ is not $df$ on any open subset of $\mathbb{R}^2$, see Proposition [[§53 One-Forms#^prop-53-3|§53.3]]. *Source: Lecture 15.*
 
 ^nd-prop-51-3
 
@@ -4545,11 +4545,11 @@ If $\theta=\sum_j\theta_j\,dx^j=df$ on a chart domain, then $\partial\theta_j/\p
 
 #### Pullback commutes with $d$ · P2
 
-For $F:M\to N$ smooth and $f\in C^\infty(N)$, $F^\ast(df)=d(F^\ast f)$, where $(F^\ast\theta)_p(v)=\theta_{F(p)}(F_{\ast p}v)$ and $F^\ast f=f\circ F$, see Corollary [[§51 One-Forms#^cor-51-4|§51.4]]. *Source: Lecture 15 ("the pullback map commutes with $d$").*
+For $F:M\to N$ smooth and $f\in C^\infty(N)$, $F^\ast(df)=d(F^\ast f)$, where $(F^\ast\theta)_p(v)=\theta_{F(p)}(F_{\ast p}v)$ and $F^\ast f=f\circ F$, see Corollary [[§53 One-Forms#^cor-53-4|§53.4]]. *Source: Lecture 15 ("the pullback map commutes with $d$").*
 
 ^nd-cor-51-4
 
-- [ ] Q1 **[state]** State the corollary. **[def]** Define the pullback of functions and of one-forms (Definitions [[§51 One-Forms#^def-51-3|§51.3]], [[§51 One-Forms#^def-51-4|§51.4]]).
+- [ ] Q1 **[state]** State the corollary. **[def]** Define the pullback of functions and of one-forms (Definitions [[§53 One-Forms#^def-53-3|§53.3]], [[§53 One-Forms#^def-53-4|§53.4]]).
 - [ ] Q2 Compute the value of the left side at $p$.
 - [ ] Q3 Compute the value of the right side at $p$; why is $F^\ast f$ smooth?
 - [ ] Q4 Which pointwise proposition identifies the two? Prove it by evaluating on $v\in T_pM$.
@@ -4561,11 +4561,9 @@ For $F:M\to N$ smooth and $f\in C^\infty(N)$, $F^\ast(df)=d(F^\ast f)$, where $(
 > - Proposition [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]]: $df_{F(p)}(F_{\ast p}v)=(F_{\ast p}v)[f]=v[f\circ F]$.
 > - Q5: $F$ not injective — several candidates; not surjective — no candidate (remark *Vector Fields Do Not Push Forward*, §56).
 
-### Priority 3 · filled in, using a technique the homework drills
+#### Pullbacks in coordinates · P2
 
-#### Pullbacks in coordinates · P3
-
-In charts $(x^i)$ on $M$ and $(y^j)$ on $N$ with $F^j=y^j\circ F$: $F^\ast(\sum_j\theta_j\,dy^j)=\sum_i(\sum_j(\theta_j\circ F)\,\partial F^j/\partial x^i)\,dx^i$; in particular $F^\ast\theta$ is smooth, see Proposition [[§51 One-Forms#^prop-51-5|§51.5]]. *Source: filled in.*
+In charts $(x^i)$ on $M$ and $(y^j)$ on $N$ with $F^j=y^j\circ F$: $F^\ast(\sum_j\theta_j\,dy^j)=\sum_i(\sum_j(\theta_j\circ F)\,\partial F^j/\partial x^i)\,dx^i$; in particular $F^\ast\theta$ is smooth, see Proposition [[§53 One-Forms#^prop-53-5|§53.5]]. *Source: filled in.*
 
 ^nd-prop-51-5
 
@@ -4579,33 +4577,35 @@ In charts $(x^i)$ on $M$ and $(y^j)$ on $N$ with $F^j=y^j\circ F$: $F^\ast(\sum_
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1.
 > - $F_{\ast p}(\partial/\partial x^i|_p)=\sum_j\frac{\partial F^j}{\partial x^i}(p)\,\partial/\partial y^j|_{F(p)}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]).
-> - $\theta_j\circ F$ and $\partial F^j/\partial x^i$ are smooth (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]); Proposition [[§51 One-Forms#^prop-51-1|§51.1]](3).
+> - $\theta_j\circ F$ and $\partial F^j/\partial x^i$ are smooth (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]); Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3).
 > - Shrink $U$ to $U\cap F^{-1}(V)$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]]).
 > - Q6: $dt$.
 
+### Priority 3 · filled in, using a technique the homework drills
+
 #### The Hessian at a critical point is well defined · P3
 
-At $p\in\operatorname{Crit}(f)$, $\sum_{i,j}H_{ij}(p)v^iw^j$ (with $v^i=v[x^i]$, $w^j=w[x^j]$) does not depend on the chart and is bilinear and symmetric in $(v,w)$: the Hessian $\operatorname{Hess}_pf$, see Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]]. *Source: filled in.*
+At $p\in\operatorname{Crit}(f)$, $\sum_{i,j}H_{ij}(p)v^iw^j$ (with $v^i=v[x^i]$, $w^j=w[x^j]$) does not depend on the chart and is bilinear and symmetric in $(v,w)$: the Hessian $\operatorname{Hess}_pf$, see Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]]. *Source: filled in.*
 
 ^nd-prop-52-3
 
-- [ ] Q1 **[state]** State the proposition, and the resulting definition of $\operatorname{Hess}_pf$ (Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]]).
+- [ ] Q1 **[state]** State the proposition, and the resulting definition of $\operatorname{Hess}_pf$ (Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]).
 - [ ] Q2 How do the components of $v$ transform from the chart $(x^i)$ to $(y^k)$?
-- [ ] Q3 Substitute into $\sum_{k,l}H^{(y)}_{kl}v^{(y)k}w^{(y)l}$ and use Proposition [[§52 Critical Points and the Hessian#^prop-52-2|§52.2]] at the critical point.
+- [ ] Q3 Substitute into $\sum_{k,l}H^{(y)}_{kl}v^{(y)k}w^{(y)l}$ and use Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]] at the critical point.
 - [ ] Q4 Why is the expression bilinear, and why symmetric?
 - [ ] Q5 **[why]** Why must $p$ be a critical point? Which example shows that no chart-free Hessian exists at a regular point?
-- [ ] Q6 **[def]** Define a nondegenerate critical point and a Morse function (Definitions [[§52 Critical Points and the Hessian#^def-52-3|§52.3]], [[§52 Critical Points and the Hessian#^def-52-4|§52.4]]).
+- [ ] Q6 **[def]** Define a nondegenerate critical point and a Morse function (Definitions [[§54 Critical Points and the Hessian#^def-54-3|§54.3]], [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]).
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S2 (define in a chart, check independence).
 > - $v^{(y)k}=v[y^k]=\sum_iJ_{ki}v^i$ (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]](2)).
 > - $\sum_{k,l}J_{ki}H^{(y)}_{kl}J_{lj}=H^{(x)}_{ij}$ at a critical point.
-> - Symmetry: $H_{ij}=H_{ji}$ (Clairaut, Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]](2)).
-> - Q5: Example [[§52 Critical Points and the Hessian#^ex-52-1|§52.1]].
+> - Symmetry: $H_{ij}=H_{ji}$ (Clairaut, Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](2)).
+> - Q5: Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]].
 
 #### Morse functions on compact manifolds · P3
 
-$\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ is compact, $\operatorname{Crit}(f)$ is finite, see Corollary [[§52 Critical Points and the Hessian#^cor-52-13|§52.13]]. *Source: filled in.*
+$\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ is compact, $\operatorname{Crit}(f)$ is finite, see Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]. *Source: filled in.*
 
 ^nd-cor-52-12
 
@@ -4618,7 +4618,7 @@ $\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ i
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13 (compactness upgrades local to global).
 > - (1) Corollary [[§36 Submersions#^cor-36-8|§36.8]]; or $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ with $\mathcal Z$ closed.
-> - (2) Closed in compact ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]); the open cover by the singletons $W_p\cap\operatorname{Crit}(f)=\{p\}$ (Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]) has a finite subcover.
+> - (2) Closed in compact ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]); the open cover by the singletons $W_p\cap\operatorname{Crit}(f)=\{p\}$ (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]]) has a finite subcover.
 > - Q5: at $\cos x=0$, $(\sin)''=-\sin x=\mp1\neq0$.
 
 # T11. Vector fields and Lie groups
@@ -4629,7 +4629,7 @@ $\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ i
 
 #### Vector field · P2
 
-A smooth map $\mathbf{X} : M \to TM$ with $\mathbf{X}(p) \in T_pM$ for every $p$, i.e. a section of $TM$, see Definition [[§53 Vector Fields#^def-53-1|§53.1]]. *Source: Lecture 13.*
+A smooth map $\mathbf{X} : M \to TM$ with $\mathbf{X}(p) \in T_pM$ for every $p$, i.e. a section of $TM$, see Definition [[§56 Vector Fields#^def-56-1|§56.1]]. *Source: Lecture 13.*
 
 ^nd-def-53-1
 
@@ -4640,13 +4640,13 @@ A smooth map $\mathbf{X} : M \to TM$ with $\mathbf{X}(p) \in T_pM$ for every $p$
 - [ ] Q5 **[example]** Give the coordinate fields $\partial/\partial x^j$ on a chart domain; why are they only local vector fields?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§53 Vector Fields#^def-53-1|§53.1]]; Q2: Proposition [[§53 Vector Fields#^prop-53-1|§53.1]].
-> - Q3: $p \mapsto \mathbf{1}_{p > 0}\,\partial/\partial r|_p$ (not in the notes); Lemma [[§53 Vector Fields#^lem-53-8|§53.8]] ($\mathbf{X}f$ smooth for every $f$).
-> - Q4: Lemma [[§53 Vector Fields#^lem-53-3|§53.3]], Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]. Q5: the trivialization frame, the remark *Trivializations and Frames* in [[§49 The Tangent Bundle|§49]].
+> - Definition [[§56 Vector Fields#^def-56-1|§56.1]]; Q2: Proposition [[§56 Vector Fields#^prop-56-1|§56.1]].
+> - Q3: $p \mapsto \mathbf{1}_{p > 0}\,\partial/\partial r|_p$ (not in the notes); Lemma [[§56 Vector Fields#^lem-56-8|§56.8]] ($\mathbf{X}f$ smooth for every $f$).
+> - Q4: Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]. Q5: the trivialization frame, the remark *Trivializations and Frames* in [[§51 The Tangent Bundle|§51]].
 
 #### Derivation of $C^\infty(M)$ · P2
 
-An $\mathbb{R}$-linear $D : C^\infty(M) \to C^\infty(M)$ with $D(fg) = f\,Dg + g\,Df$, see Definition [[§53 Vector Fields#^def-53-5|§53.5]]. *Source: Lecture 16.*
+An $\mathbb{R}$-linear $D : C^\infty(M) \to C^\infty(M)$ with $D(fg) = f\,Dg + g\,Df$, see Definition [[§56 Vector Fields#^def-56-5|§56.5]]. *Source: Lecture 16.*
 
 ^nd-def-53-5
 
@@ -4656,13 +4656,13 @@ An $\mathbb{R}$-linear $D : C^\infty(M) \to C^\infty(M)$ with $D(fg) = f\,Dg + g
 - [ ] Q4 **[why]** Is the composite $\mathbf{X} \circ \mathbf{Y}$ of two derivations a derivation? What is the correction term?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§53 Vector Fields#^def-53-4|§53.4]], Definition [[§53 Vector Fields#^def-53-5|§53.5]], Definition [[§53 Vector Fields#^def-53-6|§53.6]]; Q2: Lemma [[§53 Vector Fields#^lem-53-6|§53.6]] (a bump function, Definition [[§53 Vector Fields#^def-53-9|§53.9]]).
-> - Q3: Proposition [[§53 Vector Fields#^prop-53-7|§53.7]] ($\mathbf{X}_p[f] = (D\tilde f)(p)$ with $\tilde f$ a global representative, Corollary [[§53 Vector Fields#^cor-53-5|§53.5]]).
-> - Q4: no; $\mathbf{X}\mathbf{Y}(fg)$ has the extra terms $(\mathbf{X}f)(\mathbf{Y}g) + (\mathbf{Y}f)(\mathbf{X}g)$, which cancel in the bracket, Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]].
+> - Definition [[§56 Vector Fields#^def-56-4|§56.4]], Definition [[§56 Vector Fields#^def-56-5|§56.5]], Definition [[§56 Vector Fields#^def-56-6|§56.6]]; Q2: Lemma [[§56 Vector Fields#^lem-56-6|§56.6]] (a bump function, Definition [[§56 Vector Fields#^def-56-9|§56.9]]).
+> - Q3: Proposition [[§56 Vector Fields#^prop-56-7|§56.7]] ($\mathbf{X}_p[f] = (D\tilde f)(p)$ with $\tilde f$ a global representative, Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]).
+> - Q4: no; $\mathbf{X}\mathbf{Y}(fg)$ has the extra terms $(\mathbf{X}f)(\mathbf{Y}g) + (\mathbf{Y}f)(\mathbf{X}g)$, which cancel in the bracket, Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]].
 
 #### Bump function · P2
 
-A compactly supported smooth $\chi$ with $\chi \equiv 1$ near $p$, see Definition [[§53 Vector Fields#^def-53-9|§53.9]]. *Source: Lecture 16.*
+A compactly supported smooth $\chi$ with $\chi \equiv 1$ near $p$, see Definition [[§56 Vector Fields#^def-56-9|§56.9]]. *Source: Lecture 16.*
 
 ^nd-def-53-9
 
@@ -4672,13 +4672,13 @@ A compactly supported smooth $\chi$ with $\chi \equiv 1$ near $p$, see Definitio
 - [ ] Q4 **[example]** Build a bump function on $\mathbb{R}$ from $h(s) = e^{-1/s}$ ($s > 0$), $h = 0$ ($s \le 0$).
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§53 Vector Fields#^def-53-7|§53.7]], Definition [[§53 Vector Fields#^def-53-8|§53.8]], Definition [[§53 Vector Fields#^def-53-9|§53.9]]; existence: Proposition [[§53 Vector Fields#^prop-53-4|§53.4]] (quoted; Uribe: lower priority).
-> - Q2: smoothness of the extension at points of $\partial U$ needs $\chi = 0$ on a neighbourhood of them. Q3: Corollary [[§53 Vector Fields#^cor-53-5|§53.5]], Lemma [[§53 Vector Fields#^lem-53-6|§53.6]], Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]].
+> - Definition [[§56 Vector Fields#^def-56-7|§56.7]], Definition [[§56 Vector Fields#^def-56-8|§56.8]], Definition [[§56 Vector Fields#^def-56-9|§56.9]]; existence: Proposition [[§56 Vector Fields#^prop-56-4|§56.4]] (quoted; Uribe: lower priority).
+> - Q2: smoothness of the extension at points of $\partial U$ needs $\chi = 0$ on a neighbourhood of them. Q3: Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], Lemma [[§56 Vector Fields#^lem-56-6|§56.6]], Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]].
 > - Q4: $\chi(x) = \dfrac{h(2 - |x|)}{h(2 - |x|) + h(|x| - 1)}$, equal to $1$ on $[-1, 1]$ (not in the notes; check it).
 
 #### Lie bracket of vector fields · P2
 
-$[\mathbf{X}, \mathbf{Y}]f = \mathbf{X}(\mathbf{Y}f) - \mathbf{Y}(\mathbf{X}f)$, see Definition [[§55 Lie Bracket and Lie Algebra#^def-55-1|§55.1]]. *Source: Lecture 16.*
+$[\mathbf{X}, \mathbf{Y}]f = \mathbf{X}(\mathbf{Y}f) - \mathbf{Y}(\mathbf{X}f)$, see Definition [[§58 Lie Bracket and Lie Algebra#^def-58-1|§58.1]]. *Source: Lecture 16.*
 
 ^nd-def-55-1
 
@@ -4689,12 +4689,12 @@ $[\mathbf{X}, \mathbf{Y}]f = \mathbf{X}(\mathbf{Y}f) - \mathbf{Y}(\mathbf{X}f)$,
 - [ ] Q5 **[example]** Compute $[a\,\partial_x, b\,\partial_y]$ on $\mathbb{R}^2$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§55 Lie Bracket and Lie Algebra#^def-55-1|§55.1]]; Q2: Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]. Q3: Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]] (equality of mixed partials).
-> - Q4: it has order $2$; Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-6|§55.6]] (commutators lower the order). Q5: Example [[§55 Lie Bracket and Lie Algebra#^ex-55-1|§55.1]].
+> - Definition [[§58 Lie Bracket and Lie Algebra#^def-58-1|§58.1]]; Q2: Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]. Q3: Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]] (equality of mixed partials).
+> - Q4: it has order $2$; Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-6|§58.6]] (commutators lower the order). Q5: Example [[§58 Lie Bracket and Lie Algebra#^ex-58-1|§58.1]].
 
 #### Lie algebra · P2
 
-A real vector space with a bilinear, skew-symmetric bracket satisfying the Jacobi identity, see Definition [[§55 Lie Bracket and Lie Algebra#^def-55-2|§55.2]]. *Source: Lecture 16.*
+A real vector space with a bilinear, skew-symmetric bracket satisfying the Jacobi identity, see Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]. *Source: Lecture 16.*
 
 ^nd-def-55-2
 
@@ -4704,12 +4704,12 @@ A real vector space with a bilinear, skew-symmetric bracket satisfying the Jacob
 - [ ] Q4 **[why]** Is $\mathfrak{X}(M)$ a Lie algebra over $C^\infty(M)$? Compute $[f\mathbf{X}, \mathbf{Y}]$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§55 Lie Bracket and Lie Algebra#^def-55-2|§55.2]]; Q2: Example [[§55 Lie Bracket and Lie Algebra#^ex-55-2|§55.2]], Example [[§55 Lie Bracket and Lie Algebra#^ex-55-3|§55.3]]. Q3: Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-4|§55.4]], Corollary [[§55 Lie Bracket and Lie Algebra#^cor-55-5|§55.5]].
+> - Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]; Q2: Example [[§58 Lie Bracket and Lie Algebra#^ex-58-2|§58.2]], Example [[§58 Lie Bracket and Lie Algebra#^ex-58-3|§58.3]]. Q3: Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]], Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]].
 > - Q4: no: $[f\mathbf{X}, \mathbf{Y}] = f[\mathbf{X}, \mathbf{Y}] - (\mathbf{Y}f)\mathbf{X}$, not $C^\infty(M)$-bilinear.
 
 #### Pushforward of a vector field by a diffeomorphism · P2
 
-$(F_\ast\mathbf{X})_q = dF_{F^{-1}(q)}(\mathbf{X}_{F^{-1}(q)})$, see Definition [[§56 Related Vector Fields#^def-56-1|§56.1]]. *Source: Lecture 17.*
+$(F_\ast\mathbf{X})_q = dF_{F^{-1}(q)}(\mathbf{X}_{F^{-1}(q)})$, see Definition [[§59 Related Vector Fields#^def-59-1|§59.1]]. *Source: Lecture 17.*
 
 ^nd-def-56-1
 
@@ -4719,12 +4719,12 @@ $(F_\ast\mathbf{X})_q = dF_{F^{-1}(q)}(\mathbf{X}_{F^{-1}(q)})$, see Definition 
 - [ ] Q4 **[use]** Why do diffeomorphisms preserve brackets: $F_\ast[\mathbf{X}, \mathbf{Y}] = [F_\ast\mathbf{X}, F_\ast\mathbf{Y}]$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§56 Related Vector Fields#^def-56-1|§56.1]]; Q2: the remark *Vector Fields Do Not Push Forward* in [[§56 Related Vector Fields|§56]].
-> - Q3: Proposition [[§56 Related Vector Fields#^prop-56-2|§56.2]]. Q4: Corollary [[§56 Related Vector Fields#^cor-56-4|§56.4]].
+> - Definition [[§59 Related Vector Fields#^def-59-1|§59.1]]; Q2: the remark *Vector Fields Do Not Push Forward* in [[§59 Related Vector Fields|§59]].
+> - Q3: Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]. Q4: Corollary [[§59 Related Vector Fields#^cor-59-4|§59.4]].
 
 #### $F$-related vector fields · P2
 
-$\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$ are $F$-related if $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$ for every $p \in M$, see Definition [[§56 Related Vector Fields#^def-56-2|§56.2]]. *Source: Lecture 17.*
+$\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$ are $F$-related if $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$ for every $p \in M$, see Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]. *Source: Lecture 17.*
 
 ^nd-def-56-2
 
@@ -4735,9 +4735,9 @@ $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$ are $F$-re
 - [ ] Q5 **[use]** Restate left-invariance of a field on a Lie group as relatedness.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§56 Related Vector Fields#^def-56-2|§56.2]]; Q2: Proposition [[§56 Related Vector Fields#^prop-56-1|§56.1]] ($\mathbf{X} \circ F^\ast = F^\ast \circ \mathbf{Y}$).
-> - Q3: Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]] (omitted in Lecture 17 as an exercise; apply Q2 twice).
-> - Q4: Example [[§56 Related Vector Fields#^ex-56-1|§56.1]] ($c(x, y)\,\partial_y$ arbitrary); none if $F$ is not injective and the values disagree. Q5: Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-3|§57.3]].
+> - Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]; Q2: Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]] ($\mathbf{X} \circ F^\ast = F^\ast \circ \mathbf{Y}$).
+> - Q3: Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]] (omitted in Lecture 17 as an exercise; apply Q2 twice).
+> - Q4: Example [[§59 Related Vector Fields#^ex-59-1|§59.1]] ($c(x, y)\,\partial_y$ arbitrary); none if $F$ is not injective and the values disagree. Q5: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]].
 
 ## Proofs T11
 
@@ -4745,11 +4745,11 @@ $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$ are $F$-re
 
 #### Vector fields in coordinates · P2
 
-For a section $\mathbf X$ of $TM$ (not assumed smooth) and a chart $(U,(x^j))$: $\mathbf X=\sum_j\mathbf X^j\,\partial/\partial x^j$ on $U$ with $\mathbf X^j(p)=\mathbf X_p[x^j]=dx^j|_p(\mathbf X_p)$, and $\mathbf X$ is smooth on $U$ iff the $\mathbf X^j$ are, see Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]. *Source: stated in Lecture 15, "analogously" to one-forms; filled in.*
+For a section $\mathbf X$ of $TM$ (not assumed smooth) and a chart $(U,(x^j))$: $\mathbf X=\sum_j\mathbf X^j\,\partial/\partial x^j$ on $U$ with $\mathbf X^j(p)=\mathbf X_p[x^j]=dx^j|_p(\mathbf X_p)$, and $\mathbf X$ is smooth on $U$ iff the $\mathbf X^j$ are, see Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]. *Source: stated in Lecture 15, "analogously" to one-forms; filled in.*
 
 ^nd-prop-53-1
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define a vector field (Definition [[§53 Vector Fields#^def-53-1|§53.1]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define a vector field (Definition [[§56 Vector Fields#^def-56-1|§56.1]]).
 - [ ] Q2 Why is $\mathbf X_p=\sum_j\mathbf X_p[x^j]\,\partial/\partial x^j|_p$, and why is $\mathbf X_p[x^j]=dx^j|_p(\mathbf X_p)$?
 - [ ] Q3 Compute the coordinate representation $\tilde\varphi\circ\mathbf X\circ\varphi^{-1}$ in the charts of $M$ and $TM$.
 - [ ] Q4 Prove both directions of the smoothness criterion; where is continuity of $\mathbf X$ checked?
@@ -4759,16 +4759,16 @@ For a section $\mathbf X$ of $TM$ (not assumed smooth) and a chart $(U,(x^j))$: 
 > - Strategy: S1, S9.
 > - Universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]].
 > - $\tilde\varphi\circ\mathbf X\circ\varphi^{-1}(r)=(r,\mathbf X^1(\varphi^{-1}(r)),\dots,\mathbf X^m(\varphi^{-1}(r)))$.
-> - Continuity: $\mathbf X=\tilde\varphi^{-1}\circ(\tilde\varphi\circ\mathbf X\circ\varphi^{-1})\circ\varphi$ (Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]]).
-> - Q5: Proposition [[§53 Vector Fields#^prop-53-7|§53.7]] step 4 and Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]] build a section first and prove smoothness after.
+> - Continuity: $\mathbf X=\tilde\varphi^{-1}\circ(\tilde\varphi\circ\mathbf X\circ\varphi^{-1})\circ\varphi$ (Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]]).
+> - Q5: Proposition [[§56 Vector Fields#^prop-56-7|§56.7]] step 4 and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]] build a section first and prove smoothness after.
 
 #### A vector field is a derivation · P2
 
-For $\mathbf X\in\mathfrak X(M)$, $D_{\mathbf X}f:p\mapsto\mathbf X_p[f]$ is smooth, $D_{\mathbf X}f=\sum_j\mathbf X^j\,\partial f/\partial x^j$ in a chart, and $D_{\mathbf X}$ is a derivation of $C^\infty(M)$, see Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]. *Source: Lecture 15 (linearity and product rule "an immediate consequence of the corresponding properties for tangent vectors"); smoothness filled in.* **[class exercise, Lecture 15]**
+For $\mathbf X\in\mathfrak X(M)$, $D_{\mathbf X}f:p\mapsto\mathbf X_p[f]$ is smooth, $D_{\mathbf X}f=\sum_j\mathbf X^j\,\partial f/\partial x^j$ in a chart, and $D_{\mathbf X}$ is a derivation of $C^\infty(M)$, see Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]. *Source: Lecture 15 (linearity and product rule "an immediate consequence of the corresponding properties for tangent vectors"); smoothness filled in.* **[class exercise, Lecture 15]**
 
 ^nd-lem-53-3
 
-- [ ] Q1 **[state]** State the lemma. **[def]** Define a derivation of $C^\infty(M)$ (Definition [[§53 Vector Fields#^def-53-5|§53.5]]) and compare it with a derivation at a point.
+- [ ] Q1 **[state]** State the lemma. **[def]** Define a derivation of $C^\infty(M)$ (Definition [[§56 Vector Fields#^def-56-5|§56.5]]) and compare it with a derivation at a point.
 - [ ] Q2 Derive the chart formula for $(D_{\mathbf X}f)(p)$.
 - [ ] Q3 Why is $D_{\mathbf X}f$ smooth? Write $(D_{\mathbf X}f)\circ\varphi^{-1}$ in terms of $\mathbf X^j\circ\varphi^{-1}$ and $\partial f_\varphi/\partial r^j$.
 - [ ] Q4 Prove linearity and the product rule pointwise, using germs.
@@ -4777,17 +4777,17 @@ For $\mathbf X\in\mathfrak X(M)$, $D_{\mathbf X}f:p\mapsto\mathbf X_p[f]$ is smo
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, pointwise properties.
 > - $\mathbf X_p=\sum_j\mathbf X^j(p)\,\partial/\partial x^j|_p$ applied to $[f]$.
-> - $\mathbf X^j$ smooth by Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]; $f_\varphi$ smooth.
+> - $\mathbf X^j$ smooth by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]; $f_\varphi$ smooth.
 > - The germ of $fg$ is $[f][g]$ (Proposition [[§27 Germs#^prop-27-2|§27.2]]); Leibniz rule of $\mathbf X_p$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]).
-> - Q5: smoothness of $D_{\mathbf X}f$ (an operator on $C^\infty(M)$ must land in $C^\infty(M)$); compare Lemma [[§53 Vector Fields#^lem-53-8|§53.8]].
+> - Q5: smoothness of $D_{\mathbf X}f$ (an operator on $C^\infty(M)$ must land in $C^\infty(M)$); compare Lemma [[§56 Vector Fields#^lem-56-8|§56.8]].
 
 #### Every germ has a global representative · P2
 
-If $f\in C^\infty(U)$ represents a germ at $p$ and $\chi$ is a bump function at $p$ subordinate to $U$, then $\tilde f=\chi f$ on $U$, $0$ outside $U$, is smooth on $M$ and has the same germ at $p$; bump functions exist (Proposition [[§53 Vector Fields#^prop-53-4|§53.4]], quoted), see Corollary [[§53 Vector Fields#^cor-53-5|§53.5]]. *Source: Lecture 16; the existence of bump functions is stated in Lectures 15–16, proof deferred ("technical things that you will not be using in homework").*
+If $f\in C^\infty(U)$ represents a germ at $p$ and $\chi$ is a bump function at $p$ subordinate to $U$, then $\tilde f=\chi f$ on $U$, $0$ outside $U$, is smooth on $M$ and has the same germ at $p$; bump functions exist (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]], quoted), see Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]. *Source: Lecture 16; the existence of bump functions is stated in Lectures 15–16, proof deferred ("technical things that you will not be using in homework").*
 
 ^nd-cor-53-5
 
-- [ ] Q1 **[state]** State the corollary, and the existence of bump functions. **[def]** Define support, $C^\infty_0(M)$ and a bump function at $p$ (Definitions [[§53 Vector Fields#^def-53-7|§53.7]]–[[§53 Vector Fields#^def-53-9|§53.9]]).
+- [ ] Q1 **[state]** State the corollary, and the existence of bump functions. **[def]** Define support, $C^\infty_0(M)$ and a bump function at $p$ (Definitions [[§56 Vector Fields#^def-56-7|§56.7]]–[[§56 Vector Fields#^def-56-9|§56.9]]).
 - [ ] Q2 Which two open sets cover $M$, and why is $\tilde f$ smooth on each?
 - [ ] Q3 Why does $\tilde f$ represent the same germ as $f$ at $p$?
 - [ ] Q4 **[why]** Why must the support be the *closure* of $\{\chi\neq0\}$? Where would the proof break with the non-closed set? Why can a bump function not be analytic?
@@ -4800,11 +4800,11 @@ If $f\in C^\infty(U)$ represents a germ at $p$ and $\chi$ is a bump function at 
 
 #### Derivations are local · P2
 
-Every derivation $D$ of $C^\infty(M)$ is local: if $f|_U=g|_U$ for an open $U$, then $(Df)|_U=(Dg)|_U$, see Lemma [[§53 Vector Fields#^lem-53-6|§53.6]]. *Source: Lecture 16, in full ("you'll see how incredibly powerful the product rule is").*
+Every derivation $D$ of $C^\infty(M)$ is local: if $f|_U=g|_U$ for an open $U$, then $(Df)|_U=(Dg)|_U$, see Lemma [[§56 Vector Fields#^lem-56-6|§56.6]]. *Source: Lecture 16, in full ("you'll see how incredibly powerful the product rule is").*
 
 ^nd-lem-53-6
 
-- [ ] Q1 **[state]** State the lemma. **[def]** Define a local operator (Definition [[§53 Vector Fields#^def-53-6|§53.6]]).
+- [ ] Q1 **[state]** State the lemma. **[def]** Define a local operator (Definition [[§56 Vector Fields#^def-56-6|§56.6]]).
 - [ ] Q2 Reduce to: $h|_U=0$ ⇒ $(Dh)|_U=0$. Why does linearity allow this?
 - [ ] Q3 Fix $p\in U$ and a bump function $\chi$ at $p$ subordinate to $U$. Why is $\chi h$ the zero function?
 - [ ] Q4 Apply the product rule to $D(\chi h)$ and evaluate at $p$.
@@ -4814,11 +4814,11 @@ Every derivation $D$ of $C^\infty(M)$ is local: if $f|_U=g|_U$ for an open $U$, 
 > - Strategy: S11; "like showing injectivity by showing the kernel is zero".
 > - $\chi h=0$: on $U$, $h=0$; off $U$, $\chi=0$.
 > - $0=\chi(p)(Dh)(p)+h(p)(D\chi)(p)=(Dh)(p)$.
-> - Ingredients: the product rule and bump functions (Proposition [[§53 Vector Fields#^prop-53-4|§53.4]]).
+> - Ingredients: the product rule and bump functions (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]).
 
 #### Derivations are vector fields · P2
 
-Every derivation $D$ of $C^\infty(M)$ is $D_{\mathbf X}$ for a unique $\mathbf X\in\mathfrak X(M)$, see Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]. *Source: Lecture 16, in the lecture's steps; the smoothness details ("I'm going to skip a little bit the details"), the derivation property of $\mathbf X_p$ and uniqueness are filled in.* **[class exercise, Lecture 16]**
+Every derivation $D$ of $C^\infty(M)$ is $D_{\mathbf X}$ for a unique $\mathbf X\in\mathfrak X(M)$, see Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]. *Source: Lecture 16, in the lecture's steps; the smoothness details ("I'm going to skip a little bit the details"), the derivation property of $\mathbf X_p$ and uniqueness are filled in.* **[class exercise, Lecture 16]**
 
 ^nd-prop-53-7
 
@@ -4832,15 +4832,15 @@ Every derivation $D$ of $C^\infty(M)$ is $D_{\mathbf X}$ for a unique $\mathbf X
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S11, S9.
-> - $\mathbf X_p(\gamma)=(Df)(p)$ with $[f]=\gamma$, $f\in C^\infty(M)$ (Corollary [[§53 Vector Fields#^cor-53-5|§53.5]]).
-> - Two representatives agree on an open $W\ni p$; Lemma [[§53 Vector Fields#^lem-53-6|§53.6]].
+> - $\mathbf X_p(\gamma)=(Df)(p)$ with $[f]=\gamma$, $f\in C^\infty(M)$ (Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]).
+> - Two representatives agree on an open $W\ni p$; Lemma [[§56 Vector Fields#^lem-56-6|§56.6]].
 > - Linearity and Leibniz of $D$ evaluated at $p$.
-> - Smoothness: $\mathbf X^j(q)=\mathbf X_q(x^j)=D(\tilde x^j)(q)$ for $q\in V$, a smooth function; Proposition [[§53 Vector Fields#^prop-53-1|§53.1]].
+> - Smoothness: $\mathbf X^j(q)=\mathbf X_q(x^j)=D(\tilde x^j)(q)$ for $q\in V$, a smooth function; Proposition [[§56 Vector Fields#^prop-56-1|§56.1]].
 > - Tangent vectors act on germs (local), $D$ acts on global functions.
 
 #### A smoothness criterion for vector fields · P2
 
-A section $\mathbf X$ of $TM$ is smooth iff $\mathbf Xf:p\mapsto\mathbf X_p[f]$ is smooth for every $f\in C^\infty(M)$, see Lemma [[§53 Vector Fields#^lem-53-8|§53.8]]. *Source: filled in, for Lecture 17's theorem on Lie algebras (the argument is step 4 of Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]; Lecture 18 used it).*
+A section $\mathbf X$ of $TM$ is smooth iff $\mathbf Xf:p\mapsto\mathbf X_p[f]$ is smooth for every $f\in C^\infty(M)$, see Lemma [[§56 Vector Fields#^lem-56-8|§56.8]]. *Source: filled in, for Lecture 17's theorem on Lie algebras (the argument is step 4 of Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]; Lecture 18 used it).*
 
 ^nd-lem-53-8
 
@@ -4852,35 +4852,35 @@ A section $\mathbf X$ of $TM$ is smooth iff $\mathbf Xf:p\mapsto\mathbf X_p[f]$ 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S11, S9.
-> - (⇒) Lemma [[§53 Vector Fields#^lem-53-3|§53.3]].
+> - (⇒) Lemma [[§56 Vector Fields#^lem-56-3|§56.3]].
 > - On $V$ (where $\chi\equiv1$), $\tilde x^j$ and $x^j$ have the same germ, so $\mathbf X_q[x^j]=\mathbf X_q[\tilde x^j]$.
 > - Q5: $x^j$ is only defined on the chart domain, not in $C^\infty(M)$.
 
 #### Vector fields and multiplication operators · P2
 
-$m_g\circ D_{\mathbf X}=D_{g\mathbf X}$ and $D_{\mathbf X}\circ m_g=m_g\circ D_{\mathbf X}+m_{\mathbf Xg}$; for instance $[\partial,m_x]=\mathrm{id}$ on $\mathbb{R}$, see Proposition [[§54 Differential Operators#^prop-54-2|§54.2]]. *Source: filled in (Lecture 15 introduced the ring of differential operators in passing).*
+$m_g\circ D_{\mathbf X}=D_{g\mathbf X}$ and $D_{\mathbf X}\circ m_g=m_g\circ D_{\mathbf X}+m_{\mathbf Xg}$; for instance $[\partial,m_x]=\mathrm{id}$ on $\mathbb{R}$, see Proposition [[§57 Differential Operators#^prop-57-2|§57.2]]. *Source: filled in (Lecture 15 introduced the ring of differential operators in passing).*
 
 ^nd-prop-54-2
 
-- [ ] Q1 **[state]** State both identities. **[def]** Define the multiplication operator $m_g$ and the ring of differential operators (Definitions [[§54 Differential Operators#^def-54-1|§54.1]], [[§54 Differential Operators#^def-54-2|§54.2]]).
+- [ ] Q1 **[state]** State both identities. **[def]** Define the multiplication operator $m_g$ and the ring of differential operators (Definitions [[§57 Differential Operators#^def-57-1|§57.1]], [[§57 Differential Operators#^def-57-2|§57.2]]).
 - [ ] Q2 Prove the first identity at a function $f$ and a point $p$.
 - [ ] Q3 Prove the second identity from the product rule of $D_{\mathbf X}$.
-- [ ] Q4 Use it to show $\partial\circ m_x-m_x\circ\partial=\mathrm{id}$ on $\mathbb{R}$ (Example [[§54 Differential Operators#^ex-54-2|§54.2]]).
+- [ ] Q4 Use it to show $\partial\circ m_x-m_x\circ\partial=\mathrm{id}$ on $\mathbb{R}$ (Example [[§57 Differential Operators#^ex-57-2|§57.2]]).
 - [ ] Q5 **[why]** The operator $\partial\circ m_x-m_x\circ\partial$ is written with a vector field in each term. What is its order, and why does that show the order is not "the number of vector fields in an expression"?
 
 > [!tip]- Hints: route of the proof in the notes
 > - $(m_g\circ D_{\mathbf X}f)(p)=g(p)\mathbf X_p[f]=(g\mathbf X)_p[f]$.
 > - $D_{\mathbf X}(gf)=g\,D_{\mathbf X}f+f\,D_{\mathbf X}g$.
 > - $\mathbf Xx=x'=1$ and $m_1=\mathrm{id}$.
-> - Order $0$ (Definition [[§54 Differential Operators#^def-54-3|§54.3]]): it equals $\mathrm{id}$.
+> - Order $0$ (Definition [[§57 Differential Operators#^def-57-3|§57.3]]): it equals $\mathrm{id}$.
 
 #### The bracket of vector fields is a vector field · P2
 
-For $\mathbf X,\mathbf Y\in\mathfrak X(M)$, $[\mathbf X,\mathbf Y]f=\mathbf X(\mathbf Yf)-\mathbf Y(\mathbf Xf)$ is a derivation of $C^\infty(M)$, hence a vector field, see Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]. *Source: Lecture 16 ("tedious algebra ... the key thing is the product rule"; "linearity of the commutator is trivial. Check").* **[class exercise, Lecture 16]**
+For $\mathbf X,\mathbf Y\in\mathfrak X(M)$, $[\mathbf X,\mathbf Y]f=\mathbf X(\mathbf Yf)-\mathbf Y(\mathbf Xf)$ is a derivation of $C^\infty(M)$, hence a vector field, see Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]. *Source: Lecture 16 ("tedious algebra ... the key thing is the product rule"; "linearity of the commutator is trivial. Check").* **[class exercise, Lecture 16]**
 
 ^nd-lem-55-1
 
-- [ ] Q1 **[state]** State the lemma. **[def]** Define the Lie bracket of vector fields (Definition [[§55 Lie Bracket and Lie Algebra#^def-55-1|§55.1]]).
+- [ ] Q1 **[state]** State the lemma. **[def]** Define the Lie bracket of vector fields (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-1|§58.1]]).
 - [ ] Q2 Why does $[\mathbf X,\mathbf Y]$ map $C^\infty(M)$ to $C^\infty(M)$?
 - [ ] Q3 Prove linearity.
 - [ ] Q4 Expand $\mathbf X(\mathbf Y(fg))$ and $\mathbf Y(\mathbf X(fg))$. Which terms cancel in the difference, and why?
@@ -4889,14 +4889,14 @@ For $\mathbf X,\mathbf Y\in\mathfrak X(M)$, $[\mathbf X,\mathbf Y]f=\mathbf X(\m
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: algebra with the product rule; S9.
-> - $\mathbf Yf$ is smooth (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]), so $\mathbf X(\mathbf Yf)$ is.
+> - $\mathbf Yf$ is smooth (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]), so $\mathbf X(\mathbf Yf)$ is.
 > - Cross terms $\mathbf Xf\,\mathbf Yg$ and $\mathbf Xg\,\mathbf Yf$ appear in both expansions and cancel.
-> - Proposition [[§53 Vector Fields#^prop-53-7|§53.7]].
+> - Proposition [[§56 Vector Fields#^prop-56-7|§56.7]].
 > - Q6: $\mathbf X\mathbf Y(fg)$ contains $\mathbf Xf\,\mathbf Yg+\mathbf Xg\,\mathbf Yf$; it is second order.
 
 #### A bracket in the plane · P2
 
-For $\mathbf X=a\,\partial_x$, $\mathbf Y=b\,\partial_y$ on $\mathbb{R}^2$: $[\mathbf X,\mathbf Y]=a\,\frac{\partial b}{\partial x}\partial_y-b\,\frac{\partial a}{\partial y}\partial_x$, see Example [[§55 Lie Bracket and Lie Algebra#^ex-55-1|§55.1]]. *Source: Lecture 16 ("an exercise in multivariable calculus").* **[class exercise, Lecture 16]**
+For $\mathbf X=a\,\partial_x$, $\mathbf Y=b\,\partial_y$ on $\mathbb{R}^2$: $[\mathbf X,\mathbf Y]=a\,\frac{\partial b}{\partial x}\partial_y-b\,\frac{\partial a}{\partial y}\partial_x$, see Example [[§58 Lie Bracket and Lie Algebra#^ex-58-1|§58.1]]. *Source: Lecture 16 ("an exercise in multivariable calculus").* **[class exercise, Lecture 16]**
 
 ^nd-ex-55-1
 
@@ -4907,14 +4907,14 @@ For $\mathbf X=a\,\partial_x$, $\mathbf Y=b\,\partial_y$ on $\mathbb{R}^2$: $[\m
 - [ ] Q5 **[why]** Compute $[\partial_x,x\,\partial_y]$ and $[\partial_x,\partial_y]$. Is the bracket of two fields with constant coefficients always zero? Is the bracket $C^\infty(M)$-bilinear?
 
 > [!tip]- Hints: route of the proof in the notes
-> - A field is determined by its operator (uniqueness in Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]).
+> - A field is determined by its operator (uniqueness in Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]).
 > - $\mathbf X\mathbf Yf=a\,b_x f_y+ab\,f_{yx}$, $\mathbf Y\mathbf Xf=b\,a_y f_x+ba\,f_{xy}$.
 > - Clairaut.
 > - Q5: $[\partial_x,x\partial_y]=\partial_y$; $[\mathbf X,g\mathbf Y]=g[\mathbf X,\mathbf Y]+(\mathbf Xg)\mathbf Y$, so not $C^\infty$-bilinear.
 
 #### The bracket in coordinates · P2
 
-$[\mathbf X,\mathbf Y]=\sum_j(\mathbf X(Y^j)-\mathbf Y(X^j))\,\partial_j=\sum_j\sum_i(X^i\partial_iY^j-Y^i\partial_iX^j)\,\partial_j$, see Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]]. *Source: filled in.*
+$[\mathbf X,\mathbf Y]=\sum_j(\mathbf X(Y^j)-\mathbf Y(X^j))\,\partial_j=\sum_j\sum_i(X^i\partial_iY^j-Y^i\partial_iX^j)\,\partial_j$, see Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]. *Source: filled in.*
 
 ^nd-prop-55-2
 
@@ -4926,17 +4926,17 @@ $[\mathbf X,\mathbf Y]=\sum_j(\mathbf X(Y^j)-\mathbf Y(X^j))\,\partial_j=\sum_j\
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S9 (a field is determined by its values on coordinate functions), S11.
-> - Proposition [[§53 Vector Fields#^prop-53-1|§53.1]] applied to the field $[\mathbf X,\mathbf Y]$.
-> - $\tilde x^j=\chi x^j$ (Corollary [[§53 Vector Fields#^cor-53-5|§53.5]]); on $V$, $\mathbf Y\tilde x^j=Y^j$ and $\mathbf X\tilde x^j=X^j$.
+> - Proposition [[§56 Vector Fields#^prop-56-1|§56.1]] applied to the field $[\mathbf X,\mathbf Y]$.
+> - $\tilde x^j=\chi x^j$ (Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]); on $V$, $\mathbf Y\tilde x^j=Y^j$ and $\mathbf X\tilde x^j=X^j$.
 > - Q5: $\mathbf Y(x^j)$ as an element of $C^\infty(M)$.
 
 #### Commutators of an associative product · P2
 
-The commutator $[X,Y]=X\ast Y-Y\ast X$ of a bilinear associative product is bilinear, skew-symmetric and satisfies the Jacobi identity, see Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-4|§55.4]]. *Source: stated in Lecture 16 as "a general fact" ("the key thing is that it be an associative product"); filled in.* **[class exercise, Lecture 16]**
+The commutator $[X,Y]=X\ast Y-Y\ast X$ of a bilinear associative product is bilinear, skew-symmetric and satisfies the Jacobi identity, see Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]]. *Source: stated in Lecture 16 as "a general fact" ("the key thing is that it be an associative product"); filled in.* **[class exercise, Lecture 16]**
 
 ^nd-prop-55-4
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define a Lie algebra (Definition [[§55 Lie Bracket and Lie Algebra#^def-55-2|§55.2]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define a Lie algebra (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]).
 - [ ] Q2 Prove skew-symmetry and bilinearity.
 - [ ] Q3 Expand $[X,[Y,Z]]$ into four words, and obtain the other two terms of the Jacobi identity by cyclic renaming.
 - [ ] Q4 Check that each of the six words cancels.
@@ -4945,11 +4945,11 @@ The commutator $[X,Y]=X\ast Y-Y\ast X$ of a bilinear associative product is bili
 > [!tip]- Hints: route of the proof in the notes
 > - Associativity lets you write $XYZ$ without parentheses.
 > - $[X,[Y,Z]]=XYZ-XZY-YZX+ZYX$.
-> - Q5: Example [[§55 Lie Bracket and Lie Algebra#^ex-55-3|§55.3]]: the hat map carries $\times$ to the matrix commutator.
+> - Q5: Example [[§58 Lie Bracket and Lie Algebra#^ex-58-3|§58.3]]: the hat map carries $\times$ to the matrix commutator.
 
 #### Vector fields form a Lie algebra · P2
 
-$(\mathfrak X(M),[\cdot,\cdot])$ is a Lie algebra, see Corollary [[§55 Lie Bracket and Lie Algebra#^cor-55-5|§55.5]]. *Source: Lecture 16 ("it comes from the product, which is the composition, which is associative"; Jacobi "I don't recommend you check by hand"); filled in.* **[class exercise, Lecture 16]**
+$(\mathfrak X(M),[\cdot,\cdot])$ is a Lie algebra, see Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]. *Source: Lecture 16 ("it comes from the product, which is the composition, which is associative"; Jacobi "I don't recommend you check by hand"); filled in.* **[class exercise, Lecture 16]**
 
 ^nd-cor-55-5
 
@@ -4960,17 +4960,17 @@ $(\mathfrak X(M),[\cdot,\cdot])$ is a Lie algebra, see Corollary [[§55 Lie Brac
 - [ ] Q5 **[why]** Why is injectivity of $\mathbf X\mapsto D_{\mathbf X}$ needed for the transfer?
 
 > [!tip]- Hints: route of the proof in the notes
-> - Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-4|§55.4]] for the operators.
-> - Injective: uniqueness in Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]; closure under brackets: Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]].
+> - Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]] for the operators.
+> - Injective: uniqueness in Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]; closure under brackets: Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]].
 > - An identity between fields holds once it holds between their operators.
 
 #### Related fields as operators · P2
 
-$\mathbf X\in\mathfrak X(M)$ and $\mathbf Y\in\mathfrak X(N)$ are $F$-related iff $\mathbf X(g\circ F)=(\mathbf Yg)\circ F$ for every $g\in C^\infty(N)$, i.e. $\mathbf X\circ F^\ast=F^\ast\circ\mathbf Y$, see Proposition [[§56 Related Vector Fields#^prop-56-1|§56.1]]. *Source: Lecture 17 ("let's have a peek at the proof ... it should be easy to complete the details"); the converse is filled in.* **[class exercise, Lecture 17]**
+$\mathbf X\in\mathfrak X(M)$ and $\mathbf Y\in\mathfrak X(N)$ are $F$-related iff $\mathbf X(g\circ F)=(\mathbf Yg)\circ F$ for every $g\in C^\infty(N)$, i.e. $\mathbf X\circ F^\ast=F^\ast\circ\mathbf Y$, see Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]]. *Source: Lecture 17 ("let's have a peek at the proof ... it should be easy to complete the details"); the converse is filled in.* **[class exercise, Lecture 17]**
 
 ^nd-prop-56-1
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define $F$-related vector fields (Definition [[§56 Related Vector Fields#^def-56-2|§56.2]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define $F$-related vector fields (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]).
 - [ ] Q2 Compute $\mathbf X(g\circ F)(p)$ and $((\mathbf Yg)\circ F)(p)$ in terms of $dF_p(\mathbf X_p)$ and $\mathbf Y_{F(p)}$.
 - [ ] Q3 Prove "related ⇒ intertwining".
 - [ ] Q4 Prove "intertwining ⇒ related". Why do global functions $g$ suffice to test equality of two derivations at $F(p)$?
@@ -4979,11 +4979,11 @@ $\mathbf X\in\mathfrak X(M)$ and $\mathbf Y\in\mathfrak X(N)$ are $F$-related if
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S9, S11.
 > - $\mathbf X_p[g\circ F]=dF_p(\mathbf X_p)[g]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]).
-> - Every germ at $F(p)$ has a global representative (Corollary [[§53 Vector Fields#^cor-53-5|§53.5]]).
+> - Every germ at $F(p)$ has a global representative (Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]).
 
 #### Fields related by a projection · P2
 
-For $\pi(x,y)=x$ and $\mathbf Y=b(x)\,d/dx$ on $\mathbb{R}$, the fields on $\mathbb{R}^2$ that are $\pi$-related to $\mathbf Y$ are exactly $b(x)\,\partial_x+c(x,y)\,\partial_y$ with $c$ arbitrary, see Example [[§56 Related Vector Fields#^ex-56-1|§56.1]]. *Source: Lecture 17, a question to the class ("What can I put in the blanks here?"); the computation is filled in.* **[class exercise, Lecture 17]**
+For $\pi(x,y)=x$ and $\mathbf Y=b(x)\,d/dx$ on $\mathbb{R}$, the fields on $\mathbb{R}^2$ that are $\pi$-related to $\mathbf Y$ are exactly $b(x)\,\partial_x+c(x,y)\,\partial_y$ with $c$ arbitrary, see Example [[§59 Related Vector Fields#^ex-59-1|§59.1]]. *Source: Lecture 17, a question to the class ("What can I put in the blanks here?"); the computation is filled in.* **[class exercise, Lecture 17]**
 
 ^nd-ex-56-1
 
@@ -4998,26 +4998,9 @@ For $\pi(x,y)=x$ and $\mathbf Y=b(x)\,d/dx$ on $\mathbb{R}$, the fields on $\mat
 > - $a(x,y)\,d/dx|_x=b(x)\,d/dx|_x$ iff $a(x,y)=b(x)$.
 > - Remark *Vector Fields Do Not Push Forward*: several candidates at one point, or none.
 
-#### Pushforward by a diffeomorphism · P2
-
-For a diffeomorphism $F$, $F_\ast\mathbf X$ (with $(F_\ast\mathbf X)_q=dF_{F^{-1}(q)}(\mathbf X_{F^{-1}(q)})$) is smooth, is the unique field $F$-related to $\mathbf X$, and $(F_\ast\mathbf X)g=(\mathbf X(g\circ F))\circ F^{-1}$, see Proposition [[§56 Related Vector Fields#^prop-56-2|§56.2]]. *Source: filled in.*
-
-^nd-prop-56-2
-
-- [ ] Q1 **[state]** State the proposition. **[def]** Define $F_\ast\mathbf X$ (Definition [[§56 Related Vector Fields#^def-56-1|§56.1]]).
-- [ ] Q2 Derive the formula for $(F_\ast\mathbf X)g$.
-- [ ] Q3 Why is $F_\ast\mathbf X$ smooth? Which criterion do you use?
-- [ ] Q4 Why is it $F$-related to $\mathbf X$, and why is it the only one?
-- [ ] Q5 **[why]** Which property of $F$ is used for smoothness, and which for uniqueness?
-
-> [!tip]- Hints: route of the proof in the notes
-> - $(F_\ast\mathbf X)_q[g]=\mathbf X_p[g\circ F]$, $p=F^{-1}(q)$.
-> - Smoothness: Lemma [[§53 Vector Fields#^lem-53-8|§53.8]], since $F^{-1}$ is smooth.
-> - Uniqueness: $F$ is onto, so every $q$ is some $F(p)$.
-
 #### Naturality of the bracket · P2
 
-If $\mathbf X_i$ is $F$-related to $\mathbf Y_i$ ($i=1,2$), then $[\mathbf X_1,\mathbf X_2]$ is $F$-related to $[\mathbf Y_1,\mathbf Y_2]$, see Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]]. *Source: omitted in Lecture 17 as an exercise ("it's just a matter of chasing the definitions"); filled in.* **[class exercise, Lecture 17]**
+If $\mathbf X_i$ is $F$-related to $\mathbf Y_i$ ($i=1,2$), then $[\mathbf X_1,\mathbf X_2]$ is $F$-related to $[\mathbf Y_1,\mathbf Y_2]$, see Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]]. *Source: omitted in Lecture 17 as an exercise ("it's just a matter of chasing the definitions"); filled in.* **[class exercise, Lecture 17]**
 
 ^nd-prop-56-3
 
@@ -5028,13 +5011,32 @@ If $\mathbf X_i$ is $F$-related to $\mathbf Y_i$ ($i=1,2$), then $[\mathbf X_1,\
 - [ ] Q5 **[why]** Why is the operator characterization the right tool here, rather than the definition with $dF_p$? What would you have to know about $[\mathbf X_1,\mathbf X_2]_p$ to use the definition directly?
 
 > [!tip]- Hints: route of the proof in the notes
-> - Strategy: chase the definitions; Proposition [[§56 Related Vector Fields#^prop-56-1|§56.1]].
-> - $\mathbf X_1\mathbf X_2(g\circ F)=\mathbf X_1((\mathbf Y_2g)\circ F)=(\mathbf Y_1\mathbf Y_2g)\circ F$; $\mathbf Y_2g\in C^\infty(N)$ by Lemma [[§53 Vector Fields#^lem-53-3|§53.3]].
+> - Strategy: chase the definitions; Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]].
+> - $\mathbf X_1\mathbf X_2(g\circ F)=\mathbf X_1((\mathbf Y_2g)\circ F)=(\mathbf Y_1\mathbf Y_2g)\circ F$; $\mathbf Y_2g\in C^\infty(N)$ by Lemma [[§56 Vector Fields#^lem-56-3|§56.3]].
 > - The bracket is defined as an operator; its value at $p$ has no direct formula in terms of $\mathbf X_{1,p}$, $\mathbf X_{2,p}$.
 
-#### Diffeomorphisms preserve brackets · P2
+### Priority 4 · notes only (optional before the midterm)
 
-For a diffeomorphism $F$, $F_\ast[\mathbf X_1,\mathbf X_2]=[F_\ast\mathbf X_1,F_\ast\mathbf X_2]$, see Corollary [[§56 Related Vector Fields#^cor-56-4|§56.4]]. *Source: filled in.*
+#### Pushforward by a diffeomorphism · P4
+
+For a diffeomorphism $F$, $F_\ast\mathbf X$ (with $(F_\ast\mathbf X)_q=dF_{F^{-1}(q)}(\mathbf X_{F^{-1}(q)})$) is smooth, is the unique field $F$-related to $\mathbf X$, and $(F_\ast\mathbf X)g=(\mathbf X(g\circ F))\circ F^{-1}$, see Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]. *Source: filled in.*
+
+^nd-prop-56-2
+
+- [ ] Q1 **[state]** State the proposition. **[def]** Define $F_\ast\mathbf X$ (Definition [[§59 Related Vector Fields#^def-59-1|§59.1]]).
+- [ ] Q2 Derive the formula for $(F_\ast\mathbf X)g$.
+- [ ] Q3 Why is $F_\ast\mathbf X$ smooth? Which criterion do you use?
+- [ ] Q4 Why is it $F$-related to $\mathbf X$, and why is it the only one?
+- [ ] Q5 **[why]** Which property of $F$ is used for smoothness, and which for uniqueness?
+
+> [!tip]- Hints: route of the proof in the notes
+> - $(F_\ast\mathbf X)_q[g]=\mathbf X_p[g\circ F]$, $p=F^{-1}(q)$.
+> - Smoothness: Lemma [[§56 Vector Fields#^lem-56-8|§56.8]], since $F^{-1}$ is smooth.
+> - Uniqueness: $F$ is onto, so every $q$ is some $F(p)$.
+
+#### Diffeomorphisms preserve brackets · P4
+
+For a diffeomorphism $F$, $F_\ast[\mathbf X_1,\mathbf X_2]=[F_\ast\mathbf X_1,F_\ast\mathbf X_2]$, see Corollary [[§59 Related Vector Fields#^cor-59-4|§59.4]]. *Source: filled in.*
 
 ^nd-cor-56-4
 
@@ -5044,7 +5046,7 @@ For a diffeomorphism $F$, $F_\ast[\mathbf X_1,\mathbf X_2]=[F_\ast\mathbf X_1,F_
 - [ ] Q4 **[why]** For a smooth $F$ that is not a diffeomorphism, can the statement even be formulated? What replaces it?
 
 > [!tip]- Hints: route of the proof in the notes
-> - Proposition [[§56 Related Vector Fields#^prop-56-2|§56.2]] gives $\mathbf X_i$ related to $F_\ast\mathbf X_i$; then Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]].
+> - Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]] gives $\mathbf X_i$ related to $F_\ast\mathbf X_i$; then Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]].
 > - The only field related to $[\mathbf X_1,\mathbf X_2]$ is $F_\ast[\mathbf X_1,\mathbf X_2]$.
 > - Q4: $F_\ast$ is undefined; naturality for related fields replaces it.
 
@@ -5054,7 +5056,7 @@ For a diffeomorphism $F$, $F_\ast[\mathbf X_1,\mathbf X_2]=[F_\ast\mathbf X_1,F_
 
 #### Lie group
 
-A topological group with a smooth structure in which multiplication and inversion are smooth, see Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]]. *Source: Lecture 16.*
+A topological group with a smooth structure in which multiplication and inversion are smooth, see Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]. *Source: Lecture 16.*
 
 ^nd-def-57-1
 
@@ -5065,13 +5067,13 @@ A topological group with a smooth structure in which multiplication and inversio
 - [ ] Q5 **[use]** Why does every Lie group have $T_gG = (L_g)_{\ast e}(T_eG)$, so that it is parallelizable?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]], Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|§11.1]]; Q2: Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1|§57.1]] (restriction of smooth maps to a regular submanifold, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]]); Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-7|§57.7]].
-> - Q3: Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-2|§57.2]] (inverse $L_{g^{-1}}$). Q4: no, the remark *Nonlinear Groups* in [[§57 Lie Groups and Left-Invariant Vector Fields|§57]].
-> - Q5: left-invariant extension, Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]], Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]].
+> - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]], Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|§11.1]]; Q2: Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]] (restriction of smooth maps to a regular submanifold, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]]); Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]].
+> - Q3: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-2|§60.2]] (inverse $L_{g^{-1}}$). Q4: no, the remark *Nonlinear Groups* in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]].
+> - Q5: left-invariant extension, Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]], Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
 
 #### Left-invariant vector field
 
-$\mathbf{X} \in \mathfrak{X}(G)$ with $(L_g)_{\ast h}\mathbf{X}_h = \mathbf{X}_{gh}$ for all $g, h$, see Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]. *Source: Lecture 17.*
+$\mathbf{X} \in \mathfrak{X}(G)$ with $(L_g)_{\ast h}\mathbf{X}_h = \mathbf{X}_{gh}$ for all $g, h$, see Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|§60.3]]. *Source: Lecture 17.*
 
 ^nd-def-57-3
 
@@ -5082,14 +5084,14 @@ $\mathbf{X} \in \mathfrak{X}(G)$ with $(L_g)_{\ast h}\mathbf{X}_h = \mathbf{X}_{
 - [ ] Q5 **[why]** Drop "smooth" from the definition of vector field: is $g \mapsto (L_g)_{\ast e}v$ automatically a vector field, or does that need proof?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-2|§57.2]], Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]; Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-3|§57.3]].
-> - Q2: Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|§57.1]] ($\mathbf{X}^A_g = gA$), Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-2|§57.2]] (constant fields).
-> - Q3: Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]], Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]], Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]. Q4: Corollary [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4|§57.4]] (naturality), the remark *Why Left?* in [[§57 Lie Groups and Left-Invariant Vector Fields|§57]].
-> - Q5: it needs proof (a "rough" field, Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]]), Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]].
+> - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|§60.2]], Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|§60.3]]; Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]].
+> - Q2: Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] ($\mathbf{X}^A_g = gA$), Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]] (constant fields).
+> - Q3: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]], Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]. Q4: Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-4|§60.4]] (naturality), the remark *Why Left?* in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]].
+> - Q5: it needs proof (a "rough" field, Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]), Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
 
 #### Lie algebra of a Lie group
 
-$\mathfrak{g}$, the left-invariant vector fields with the bracket of vector fields, identified with $T_eG$, see Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|§57.4]]. *Source: Lectures 16–17.*
+$\mathfrak{g}$, the left-invariant vector fields with the bracket of vector fields, identified with $T_eG$, see Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]]. *Source: Lectures 16–17.*
 
 ^nd-def-57-4
 
@@ -5100,16 +5102,16 @@ $\mathfrak{g}$, the left-invariant vector fields with the bracket of vector fiel
 - [ ] Q5 **[use]** How does a Lie group morphism $F : H \to G$ induce a Lie algebra morphism?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|§57.4]], Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]]; Q2: Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]. Q3: Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]].
-> - Q4: Corollary [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4|§57.4]]. Q5: Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|§57.8]], Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-9|§57.9]], Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-9|§57.9]], Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10|§57.10]].
+> - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]], Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]; Q2: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]. Q3: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-8|§60.8]].
+> - Q4: Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-4|§60.4]]. Q5: Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]], Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]], Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]].
 
 #### The classical groups are Lie groups
 
-$\mathrm{GL}(n,\mathbb{R})$, $\mathrm{GL}(n,\mathbb{C})$, $\mathrm{SL}(n,\mathbb{R})$, $\mathrm O(n)$, $\mathrm{SO}(n)$, $\mathrm U(n)$ and $\mathrm{SU}(2)$ are Lie groups, see Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1|§57.1]]. *Source: stated in Lecture 16 ("all the matrix groups that we have seen ... are Lie groups"); filled in.* **[class exercise, Lecture 16]**
+$\mathrm{GL}(n,\mathbb{R})$, $\mathrm{GL}(n,\mathbb{C})$, $\mathrm{SL}(n,\mathbb{R})$, $\mathrm O(n)$, $\mathrm{SO}(n)$, $\mathrm U(n)$ and $\mathrm{SU}(2)$ are Lie groups, see Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]]. *Source: stated in Lecture 16 ("all the matrix groups that we have seen ... are Lie groups"); filled in.* **[class exercise, Lecture 16]**
 
 ^nd-prop-57-1
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define a Lie group (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-1|§57.1]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define a Lie group (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]).
 - [ ] Q2 Each group is open in, or a regular submanifold of, a matrix space. Why is a smooth map into the matrix space with values in $G$ smooth into $G$, in both cases?
 - [ ] Q3 Why is multiplication $G\times G\to G$ smooth?
 - [ ] Q4 Why is inversion smooth?
@@ -5122,7 +5124,7 @@ $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{GL}(n,\mathbb{C})$, $\mathrm{SL}(n,\mathbb
 
 #### Left translations are diffeomorphisms
 
-$L_g(h)=gh$ is a diffeomorphism of a Lie group $G$ with inverse $L_{g^{-1}}$, see Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-2|§57.2]]. *Source: filled in, as for topological groups.*
+$L_g(h)=gh$ is a diffeomorphism of a Lie group $G$ with inverse $L_{g^{-1}}$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-2|§60.2]]. *Source: filled in, as for topological groups.*
 
 ^nd-lem-57-2
 
@@ -5138,11 +5140,11 @@ $L_g(h)=gh$ is a diffeomorphism of a Lie group $G$ with inverse $L_{g^{-1}}$, se
 
 #### Left-invariant fields on $\mathrm{GL}(n,\mathbb{R})$
 
-The left-invariant vector fields on $\mathrm{GL}(n,\mathbb{R})$ are exactly $\mathbf X^A_g=gA$, $A\in\mathrm{Mat}(n,\mathbb{R})=T_IG$, see Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|§57.1]]. *Source: filled in.*
+The left-invariant vector fields on $\mathrm{GL}(n,\mathbb{R})$ are exactly $\mathbf X^A_g=gA$, $A\in\mathrm{Mat}(n,\mathbb{R})=T_IG$, see Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]. *Source: filled in.*
 
 ^nd-ex-57-1
 
-- [ ] Q1 **[state]** State the example. **[def]** Define a left-invariant vector field (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-3|§57.3]]).
+- [ ] Q1 **[state]** State the example. **[def]** Define a left-invariant vector field (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|§60.3]]).
 - [ ] Q2 Why is $(L_g)_{\ast h}(v)=gv$ under $T_hG=\mathrm{Mat}(n,\mathbb{R})$?
 - [ ] Q3 Show every left-invariant field is some $\mathbf X^A$.
 - [ ] Q4 Show every $\mathbf X^A$ is left-invariant and smooth.
@@ -5156,11 +5158,11 @@ The left-invariant vector fields on $\mathrm{GL}(n,\mathbb{R})$ are exactly $\ma
 
 #### $\mathfrak g$ is a Lie subalgebra of $\mathfrak X(G)$
 
-$\mathbf X$ is left-invariant iff it is $L_g$-related to itself for every $g$; hence brackets of left-invariant fields are left-invariant, and $\mathfrak g$ is a Lie subalgebra of $\mathfrak X(G)$, see Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-3|§57.3]] and Corollary [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4|§57.4]]. *Source: Lecture 17 ("the big observation").*
+$\mathbf X$ is left-invariant iff it is $L_g$-related to itself for every $g$; hence brackets of left-invariant fields are left-invariant, and $\mathfrak g$ is a Lie subalgebra of $\mathfrak X(G)$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]] and Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-4|§60.4]]. *Source: Lecture 17 ("the big observation").*
 
 ^nd-cor-57-4
 
-- [ ] Q1 **[state]** State the lemma and the corollary. **[def]** Define the Lie algebra $\mathfrak g$ of $G$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-4|§57.4]]).
+- [ ] Q1 **[state]** State the lemma and the corollary. **[def]** Define the Lie algebra $\mathfrak g$ of $G$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]]).
 - [ ] Q2 Rephrase left-invariance as relatedness.
 - [ ] Q3 Why is $[\mathbf X,\mathbf Y]$ left-invariant for $\mathbf X,\mathbf Y\in\mathfrak g$?
 - [ ] Q4 Why is $\mathfrak g$ a linear subspace, and why does the bracket on $\mathfrak g$ satisfy the Lie algebra axioms?
@@ -5168,17 +5170,17 @@ $\mathbf X$ is left-invariant iff it is $L_g$-related to itself for every $g$; h
 
 > [!tip]- Hints: route of the proof in the notes
 > - $d(L_g)_h(\mathbf X_h)=\mathbf X_{gh}$ is relatedness with $F=L_g$, $\mathbf Y=\mathbf X$.
-> - Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]] with $F=L_g$.
-> - Linearity of $d(L_g)_h$; axioms inherited from Corollary [[§55 Lie Bracket and Lie Algebra#^cor-55-5|§55.5]].
-> - Q5: Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]].
+> - Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]] with $F=L_g$.
+> - Linearity of $d(L_g)_h$; axioms inherited from Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]].
+> - Q5: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]].
 
 #### The left-invariant extension is left-invariant
 
-For $v\in T_eG$, $\mathbf X^v_g=d(L_g)_e(v)$ satisfies $\mathbf X^v_e=v$ and $d(L_g)_h(\mathbf X^v_h)=\mathbf X^v_{gh}$; every $\mathbf X\in\mathfrak g$ is the extension of $\mathbf X_e$, see Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]]. *Source: Lecture 17's steps; Lecture 18: "You can check that ... we have a left invariant field"; (2) filled in.* **[class exercise, Lecture 18]**
+For $v\in T_eG$, $\mathbf X^v_g=d(L_g)_e(v)$ satisfies $\mathbf X^v_e=v$ and $d(L_g)_h(\mathbf X^v_h)=\mathbf X^v_{gh}$; every $\mathbf X\in\mathfrak g$ is the extension of $\mathbf X_e$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]]. *Source: Lecture 17's steps; Lecture 18: "You can check that ... we have a left invariant field"; (2) filled in.* **[class exercise, Lecture 18]**
 
 ^nd-lem-57-5
 
-- [ ] Q1 **[state]** State the three parts. **[def]** Define the left-invariant extension (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5|§57.5]]).
+- [ ] Q1 **[state]** State the three parts. **[def]** Define the left-invariant extension (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]).
 - [ ] Q2 (1) Why does $\mathbf X^v_g$ lie in $T_gG$, and why is $\mathbf X^v_e=v$?
 - [ ] Q3 (2) Prove the left-invariance identity with $L_g\circ L_h=L_{gh}$ and the chain rule.
 - [ ] Q4 (3) Why is every left-invariant field the extension of its value at $e$?
@@ -5188,11 +5190,11 @@ For $v\in T_eG$, $\mathbf X^v_g=d(L_g)_e(v)$ satisfies $\mathbf X^v_e=v$ and $d(
 > - $L_e=\mathrm{id}$; Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]].
 > - $d(L_g)_h\,d(L_h)_e(v)=d(L_{gh})_e(v)$.
 > - Left-invariance at $h=e$.
-> - Smoothness: Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]].
+> - Smoothness: Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
 
 #### The left-invariant extension is smooth
 
-For $v\in T_eG$ and $f\in C^\infty(G)$, with $\varphi(g,x)=f(gx)$: $\mathbf X^vf=\partial_v\varphi$ is smooth; hence $\mathbf X^v\in\mathfrak g$, see Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]]. *Source: Lecture 18, completing Lecture 17 ("a trick that occurred to me").*
+For $v\in T_eG$ and $f\in C^\infty(G)$, with $\varphi(g,x)=f(gx)$: $\mathbf X^vf=\partial_v\varphi$ is smooth; hence $\mathbf X^v\in\mathfrak g$, see Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]]. *Source: Lecture 18, completing Lecture 17 ("a trick that occurred to me").*
 
 ^nd-prop-57-6
 
@@ -5203,14 +5205,14 @@ For $v\in T_eG$ and $f\in C^\infty(G)$, with $\varphi(g,x)=f(gx)$: $\mathbf X^vf
 - [ ] Q5 **[why]** Why is "$\mathbf X^vf$ is a well-defined function" true even before smoothness of $\mathbf X^v$ is known, and why is smoothness of $\varphi$ in *both* variables essential?
 
 > [!tip]- Hints: route of the proof in the notes
-> - Strategy: S11, smoothness criterion Lemma [[§53 Vector Fields#^lem-53-8|§53.8]].
+> - Strategy: S11, smoothness criterion Lemma [[§56 Vector Fields#^lem-56-8|§56.8]].
 > - $d(L_g)_e(v)[f]=v[f\circ L_g]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]).
 > - $\varphi=f\circ\mu$; Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](3).
 > - A partial derivative of a function smooth in $(g,x)$ is smooth in $g$; smoothness of $f\circ L_g$ for each fixed $g$ would not be enough.
 
 #### The Lie algebra is the tangent space at the identity
 
-$\mathrm{ev}:\mathfrak g\to T_eG$, $\mathbf X\mapsto\mathbf X_e$, is a linear isomorphism; so $\dim\mathfrak g=\dim G$, see Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]. *Source: Lecture 17 ("an incomplete proof"), completed in Lecture 18.*
+$\mathrm{ev}:\mathfrak g\to T_eG$, $\mathbf X\mapsto\mathbf X_e$, is a linear isomorphism; so $\dim\mathfrak g=\dim G$, see Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]. *Source: Lecture 17 ("an incomplete proof"), completed in Lecture 18.*
 
 ^nd-thm-57-7
 
@@ -5219,17 +5221,17 @@ $\mathrm{ev}:\mathfrak g\to T_eG$, $\mathbf X\mapsto\mathbf X_e$, is a linear is
 - [ ] Q3 The basic idea: why is a left-invariant field determined by its value at $e$? Deduce injectivity.
 - [ ] Q4 Surjectivity: given $v\in T_eG$, which field must you take, and which two facts make it an element of $\mathfrak g$?
 - [ ] Q5 **[why]** Which step was "the incompleteness" in Lecture 17, and why is it not automatic?
-- [ ] Q6 **[def]** Define the Lie bracket on $T_eG$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]]). Why does $\mathrm{ev}$ become an isomorphism of Lie algebras?
+- [ ] Q6 **[def]** Define the Lie bracket on $T_eG$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]). Why does $\mathrm{ev}$ become an isomorphism of Lie algebras?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: "there is only one choice": the left-invariant extension.
-> - $\mathbf X_g=d(L_g)_e(\mathbf X_e)$ (Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](3)).
-> - Surjective: Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5|§57.5]](1), (2) and Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]].
+> - $\mathbf X_g=d(L_g)_e(\mathbf X_e)$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](3)).
+> - Surjective: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1), (2) and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
 > - $\dim T_eG=\dim G$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]).
 
 #### The additive group of a vector space
 
-For a vector space $V$ under addition, the left-invariant fields are the constant fields $p\mapsto D_v|_p$, and all brackets vanish: $\mathfrak g\cong V$ with the zero bracket, see Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-2|§57.2]]. *Source: filled in (after a remark in Lecture 17).*
+For a vector space $V$ under addition, the left-invariant fields are the constant fields $p\mapsto D_v|_p$, and all brackets vanish: $\mathfrak g\cong V$ with the zero bracket, see Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]]. *Source: filled in (after a remark in Lecture 17).*
 
 ^nd-ex-57-2
 
@@ -5241,34 +5243,34 @@ For a vector space $V$ under addition, the left-invariant fields are the constan
 
 > [!tip]- Hints: route of the proof in the notes
 > - $L_p=\tau_p$, translation; Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]](2).
-> - Constant coefficients $v^i$; Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]].
-> - Q5: $[A,B]=AB-BA=0$ when $A$, $B$ commute (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]).
+> - Constant coefficients $v^i$; Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]].
+> - Q5: $[A,B]=AB-BA=0$ when $A$, $B$ commute (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-8|§60.8]]).
 
 #### The Lie algebra of $\mathrm{GL}(d,\mathbb{R})$
 
-The Lie bracket on $T_I\mathrm{GL}(d,\mathbb{R})=\mathrm{Mat}(d,\mathbb{R})$ is the matrix commutator $[A,B]=AB-BA$, see Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]. *Source: stated in Lecture 17; proof "to be filled" (planned for Lecture 19). Quote it.*
+The Lie bracket on $T_I\mathrm{GL}(d,\mathbb{R})=\mathrm{Mat}(d,\mathbb{R})$ is the matrix commutator $[A,B]=AB-BA$, see Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-8|§60.8]]. *Source: stated in Lecture 17; proof "to be filled" (planned for Lecture 19). Quote it.*
 
 ^nd-thm-57-8
 
 - [ ] Q1 **[state]** State the theorem, including how the bracket on $T_IG$ is defined.
-- [ ] Q2 Write the left-invariant extensions $\mathbf X^A$, $\mathbf X^B$ (Example [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|§57.1]]) and the three steps "extend, commute, evaluate at $I$".
+- [ ] Q2 Write the left-invariant extensions $\mathbf X^A$, $\mathbf X^B$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]) and the three steps "extend, commute, evaluate at $I$".
 - [ ] Q3 **[why]** With right-invariant fields, what would the answer be?
-- [ ] Q4 How used: for a linear group $H\subseteq\mathrm{GL}(d,\mathbb{R})$, how does Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10|§57.10]] applied to the inclusion compute the bracket on $T_IH$?
+- [ ] Q4 How used: for a linear group $H\subseteq\mathrm{GL}(d,\mathbb{R})$, how does Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]] applied to the inclusion compute the bracket on $T_IH$?
 - [ ] Q5 How used: check that $\mathfrak{so}(3)$, the skew matrices, is closed under $AB-BA$.
 
 > [!tip]- Hints: what to know about the statement
-> - $[A,B]=[\mathbf X^A,\mathbf X^B]_I$ (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]], remark *From Now On*).
+> - $[A,B]=[\mathbf X^A,\mathbf X^B]_I$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], remark *From Now On*).
 > - Right-invariant fields give $-(AB-BA)$ (remark *Left or Right*).
 > - The inclusion is a Lie group morphism with injective differential, so brackets on $T_IH$ are matrix commutators.
-> - $(AB-BA)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}-A^{\mathsf T}B^{\mathsf T}=-(AB-BA)$ for skew $A$, $B$ (Example [[§55 Lie Bracket and Lie Algebra#^ex-55-3|§55.3]]).
+> - $(AB-BA)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}-A^{\mathsf T}B^{\mathsf T}=-(AB-BA)$ for skew $A$, $B$ (Example [[§58 Lie Bracket and Lie Algebra#^ex-58-3|§58.3]]).
 
 #### Left-invariant fields related by a morphism
 
-For a Lie group morphism $F:H\to G$ and $A\in T_eH$, the left-invariant extensions $\mathbf X^A$ and $\mathbf Y^{\tilde A}$, $\tilde A=dF_e(A)$, are $F$-related, see Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-9|§57.9]]. *Source: Lecture 18 (the "claim"); the diagram chase, left to the class ("just chase where $A$ goes under this diagram"), is completed in the notes.* **[class exercise, Lecture 18]**
+For a Lie group morphism $F:H\to G$ and $A\in T_eH$, the left-invariant extensions $\mathbf X^A$ and $\mathbf Y^{\tilde A}$, $\tilde A=dF_e(A)$, are $F$-related, see Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]]. *Source: Lecture 18 (the "claim"); the diagram chase, left to the class ("just chase where $A$ goes under this diagram"), is completed in the notes.* **[class exercise, Lecture 18]**
 
 ^nd-lem-57-9
 
-- [ ] Q1 **[state]** State the lemma. **[def]** Define a Lie group morphism (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|§57.8]]).
+- [ ] Q1 **[state]** State the lemma. **[def]** Define a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]).
 - [ ] Q2 Why is $F(e)=e$?
 - [ ] Q3 Why does $F\circ L_h=L_{F(h)}\circ F$ hold, and what does the chain rule give at $e$?
 - [ ] Q4 Chase $A$ along the two routes of the square of differentials.
@@ -5281,48 +5283,48 @@ For a Lie group morphism $F:H\to G$ and $A\in T_eH$, the left-invariant extensio
 
 #### Lie group morphisms preserve brackets
 
-For a Lie group morphism $F:H\to G$, $dF_e([A,B])=[dF_e(A),dF_e(B)]$: $dF_e:\mathfrak h\to\mathfrak g$ is a Lie algebra morphism, see Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10|§57.10]]. *Source: Lecture 18 ("I claim that the proposition follows from this. Can you see why?").* **[class exercise, Lecture 18]**
+For a Lie group morphism $F:H\to G$, $dF_e([A,B])=[dF_e(A),dF_e(B)]$: $dF_e:\mathfrak h\to\mathfrak g$ is a Lie algebra morphism, see Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]]. *Source: Lecture 18 ("I claim that the proposition follows from this. Can you see why?").* **[class exercise, Lecture 18]**
 
 ^nd-prop-57-10
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define a Lie algebra morphism (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-9|§57.9]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define a Lie algebra morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]]).
 - [ ] Q2 Why must one pass to vector fields to prove it?
-- [ ] Q3 Given the claim (Lemma [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-9|§57.9]]), which proposition gives relatedness of the brackets?
-- [ ] Q4 Evaluate at $e$ and identify both sides with Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|§57.6]].
+- [ ] Q3 Given the claim (Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]]), which proposition gives relatedness of the brackets?
+- [ ] Q4 Evaluate at $e$ and identify both sides with Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]].
 - [ ] Q5 **[why]** Where is $F(e)=e$ used in the last step?
 
 > [!tip]- Hints: route of the proof in the notes
 > - The bracket on $T_eG$ is defined through left-invariant fields.
-> - Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]].
+> - Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]].
 > - $dF_e([\mathbf X^A,\mathbf X^B]_e)=[\mathbf Y^{\tilde A},\mathbf Y^{\tilde B}]_{F(e)}$ and $F(e)=e$.
 
 #### The unit quaternions
 
-$S^3\subseteq\mathbb{H}$ is a regular submanifold, a group with smooth multiplication and inversion, and connected, see Proposition [[§45 The Unit Quaternions and SU(2)#^prop-45-4|§45.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
+$S^3\subseteq\mathbb{H}$ is a regular submanifold, a group with smooth multiplication and inversion, and connected, see Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
 
 ^nd-prop-45-4
 
 #### $S^3$ is $\mathrm{SU}(2)$
 
-$F:S^3\to\mathrm{SU}(2)$ is a group isomorphism and a diffeomorphism, see Proposition [[§45 The Unit Quaternions and SU(2)#^prop-45-5|§45.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
+$F:S^3\to\mathrm{SU}(2)$ is a group isomorphism and a diffeomorphism, see Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
 
 ^nd-prop-45-5
 
 #### The tangent space of $\mathrm{SU}(2)$ at the identity
 
-the matrices $\sigma_1=F_{\ast1}(i)$, $\sigma_2=F_{\ast1}(j)$, $\sigma_3=F_{\ast1}(k)$ form a basis of $\mathfrak{su}(2)$, see Proposition [[§45 The Unit Quaternions and SU(2)#^prop-45-6|§45.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (a)).
+the matrices $\sigma_1=F_{\ast1}(i)$, $\sigma_2=F_{\ast1}(j)$, $\sigma_3=F_{\ast1}(k)$ form a basis of $\mathfrak{su}(2)$, see Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (a)).
 
 ^nd-prop-45-6
 
 #### Translating the differential
 
-For a smooth homomorphism $G$ of matrix groups, $G_{\ast g}=(L_{G(g)})_{\ast I}\circ G_{\ast I}\circ(L_{g^{-1}})_{\ast g}$, see Lemma [[§46 SU(2) → SO(3)꞉ The Double Cover#^lem-46-3|§46.3]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
+For a smooth homomorphism $G$ of matrix groups, $G_{\ast g}=(L_{G(g)})_{\ast I}\circ G_{\ast I}\circ(L_{g^{-1}})_{\ast g}$, see Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
 
 ^nd-lem-46-3
 
 #### The double cover $\mathrm{SU}(2)\to\mathrm{SO}(3)$
 
-$G=C\circ F^{-1}$ is a surjective smooth homomorphism and a two-to-one local diffeomorphism with $G_{\ast I}(\sigma_j)=2\hat e_j$, see Theorem [[§46 SU(2) → SO(3)꞉ The Double Cover#^thm-46-4|§46.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
+$G=C\circ F^{-1}$ is a surjective smooth homomorphism and a two-to-one local diffeomorphism with $G_{\ast I}(\sigma_j)=2\hat e_j$, see Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|§48.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
 
 ^nd-thm-46-4
 
@@ -5430,11 +5432,11 @@ For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), inter
 > - Q2: Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], i.e. Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] ($k$ independent columns, implicit function theorem Theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]]).
 > - Q3: $F(x, y) = y - h(x)$ with Jacobian $(-Dh \mid I_k)$; $\alpha(x) = (x, h(x))$ with inverse the projection.
 > - Q4: inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]); then $\alpha(V_1)$ is open in $X \cap W$ because $\alpha$ is a homeomorphism onto it, so it is $X \cap$ (a box).
-> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§42 Embeddings#^ex-42-1|§42.1]] (figure-eight).
+> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§44 Embeddings#^ex-44-1|§44.1]] (figure-eight).
 
 ### Regular value theorem
 
-The Euclidean theorem ($F^{-1}(\vec 0)$ a topological, then smooth, manifold by graph charts) and the manifold theorem ($F^{-1}(q)$ a regular submanifold with $\iota_\ast(T_pS) = \ker F_{\ast p}$) agree on open subsets of $\mathbb{R}^{n+k}$, see Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]]. *Source: Lectures 3, 6, 12; Assignment 1.*
+The Euclidean theorem ($F^{-1}(\vec 0)$ a topological, then smooth, manifold by graph charts) and the manifold theorem ($F^{-1}(q)$ a regular submanifold with $\iota_\ast(T_pS) = \ker F_{\ast p}$) agree on open subsets of $\mathbb{R}^{n+k}$, see Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]. *Source: Lectures 3, 6, 12; Assignment 1.*
 
 ^nd-eq-6
 
@@ -5449,18 +5451,18 @@ The Euclidean theorem ($F^{-1}(\vec 0)$ a topological, then smooth, manifold by 
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S5 (regular value theorem), S8 (normal forms give charts), S6 (tangent space = kernel), S7.
 > - Q2: Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] (subspace inheritance, Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]; permutation, IFT, graph chart). Smooth: Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]].
-> - Q3: Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]], Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]] (parts 1–2), Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] (constants and any $k$ coordinates).
-> - Q4: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]] ($F \circ \iota$ constant), Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]] (part 3): both sides have dimension $m - n$.
-> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]] (1) (block lower triangular Jacobian, inverse function theorem, Lemma [[§36 Submersions#^lem-36-5|§36.5]]). Q6: Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]] (2), Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]].
+> - Q3: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (parts 1–2), Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] (constants and any $k$ coordinates).
+> - Q4: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]] ($F \circ \iota$ constant), Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (part 3): both sides have dimension $m - n$.
+> - Q5: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (1) (block lower triangular Jacobian, inverse function theorem, Lemma [[§36 Submersions#^lem-36-5|§36.5]]). Q6: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (2), Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]].
 > - Q7: Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]] (same set, different structures); regular in both senses since the matrix of $F_{\ast p}$ is $F'(p)$, Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]].
 
 ### Transversality
 
-The Euclidean notion ($\operatorname{im} F'(p) + T^{\mathrm{geo}}S = \mathbb{R}^k$, $S$ a regular level set) is the manifold notion ($F_{\ast p}(T_pM) + \iota_\ast(T_qS) = T_qN$) read in $\mathbb{R}^N$; both give preimages of the same codimension, and the manifold theorem contains the regular value theorem and transverse intersections, see Theorem [[§26 Transversality#^thm-26-1|§26.1]], Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]], Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]]. *Source: Assignments 2 and 5 (not from lecture).*
+The Euclidean notion ($\operatorname{im} F'(p) + T^{\mathrm{geo}}S = \mathbb{R}^k$, $S$ a regular level set) is the manifold notion ($F_{\ast p}(T_pM) + \iota_\ast(T_qS) = T_qN$) read in $\mathbb{R}^N$; both give preimages of the same codimension, and the manifold theorem contains the regular value theorem and transverse intersections, see Theorem [[§26 Transversality#^thm-26-1|§26.1]], Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]]. *Source: Assignments 2 and 5 (not from lecture).*
 
 ^nd-eq-7
 
-- [ ] Q1 **[state]** State both definitions (Definition [[§26 Transversality#^def-26-2|§26.2]], Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]) and the three results.
+- [ ] Q1 **[state]** State both definitions (Definition [[§26 Transversality#^def-26-2|§26.2]], Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]) and the three results.
 - [ ] Q2 **[state]** Show the two definitions agree for $F : \mathbb{R}^N \to \mathbb{R}^k$ and $S = G^{-1}(0)$: what do $F_{\ast p}(T_p\mathbb{R}^N)$ and $\iota_{\ast q}(T_qS)$ become under $T_q\mathbb{R}^k = \mathbb{R}^k$?
 - [ ] Q3 **[state]** Euclidean theorem: show $F \pitchfork S$ iff $0$ is a regular value of $G \circ F$, and read off $F^{-1}(S)$ and its tangent space → drilled as [[Differentiable Manifolds HW Drill#^hw2-5|HW2.5]].
 - [ ] Q4 **[state]** Manifold theorem: replace $G$ by the local defining map $x_b$ of an adapted chart at $q = F(p)$; show $x_b \circ F$ is a submersion at $p$, get an adapted chart for $F^{-1}(S)$, and compute the kernel → drilled as [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]].
@@ -5469,9 +5471,9 @@ The Euclidean notion ($\operatorname{im} F'(p) + T^{\mathrm{geo}}S = \mathbb{R}^
 
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S12 (transversality = the images span; reduce to a regular value of a composite), S5, S8.
-> - Q2: Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]] (2) and Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]: $\operatorname{im} F'(p)$ and $T^{\mathrm{geo}}_qS = \ker G'(q)$.
-> - Q3: Proposition [[§26 Transversality#^prop-26-2|§26.2]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]]).
-> - Q5: Corollary [[§37 Regular Submanifolds#^cor-37-17|§37.17]], Proposition [[§26 Transversality#^prop-26-4|§26.4]]. Q6: Example [[§26 Transversality#^ex-26-2|§26.2]]; Proposition [[§37 Regular Submanifolds#^prop-37-16|§37.16]] (normal spaces isomorphic).
+> - Q2: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (2) and Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]: $\operatorname{im} F'(p)$ and $T^{\mathrm{geo}}_qS = \ker G'(q)$.
+> - Q3: Proposition [[§26 Transversality#^prop-26-2|§26.2]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]).
+> - Q5: Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]], Proposition [[§26 Transversality#^prop-26-4|§26.4]]. Q6: Example [[§26 Transversality#^ex-26-2|§26.2]]; Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]] (normal spaces isomorphic).
 
 ### Diffeomorphism
 

@@ -35,9 +35,9 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Transversality#^thm-26-1|Theorem §26.1: Preimages of Transverse Level Sets]]
 - [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
 - [[§35 Local Diffeomorphisms#^ex-35-1|Example §35.1: The Circle Covered by a Line]]
-- [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14: The Old and New Versions Agree]]
-- [[§44 Projective Spaces and the Hopf Fibration#^ex-44-1|Example §44.1: Spheres Cover Projective Spaces]]
-- [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|Example §44.3: The Hopf Fibration S²ⁿ⁺¹ → ℂPⁿ]]
+- [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
+- [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Example §46.1: Spheres Cover Projective Spaces]]
+- [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Example §46.3: The Hopf Fibration S²ⁿ⁺¹ → ℂPⁿ]]
 
 ## Connections
 - **Used for.** Smooth structures on O(n) and U(n) ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]]), on SL(n,ℝ) and on the spheres, hence the smooth half of [[Classical Groups Are Manifolds]] ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). Maps into and out of a level set are smooth when the ambient formulas are ([[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]]), which shows that the three circle atlases define one structure ([[§24 The Circle#^prop-24-1|§24.1]]).

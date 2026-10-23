@@ -15,25 +15,27 @@ tags: [chapter, differentiable-manifolds]
 - [[§35 Local Diffeomorphisms]]
 - [[§36 Submersions]]
 - [[§37 Regular Submanifolds]]
-- [[§38 Fibrations]]
-- [[§39 Examples of Fibrations]]
-- [[§40 The Normal Bundle of a Submanifold of Euclidean Space]]
-- [[§41 Immersions]]
-- [[§42 Embeddings]]
-- [[§43 Geometric and Abstract Manifolds]]
-- [[§44 Projective Spaces and the Hopf Fibration]]
-- [[§45 The Unit Quaternions and SU(2)]]
-- [[§46 SU(2) → SO(3)꞉ The Double Cover]]
+- [[§38 The Regular Value Theorem for Manifolds]]
+- [[§39 Transversality and Lagrange Multipliers]]
+- [[§40 Fibrations]]
+- [[§41 Examples of Fibrations]]
+- [[§42 The Normal Bundle of a Submanifold of Euclidean Space]]
+- [[§43 Immersions]]
+- [[§44 Embeddings]]
+- [[§45 Geometric and Abstract Manifolds]]
+- [[§46 Projective Spaces and the Hopf Fibration]]
+- [[§47 The Unit Quaternions and SU(2)]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover]]
 
 ## Central results
 - [[Local Diffeomorphism Criterion]] (§35.2)
 - [[Submersion Normal Form]] (§36.6)
-- [[Regular Value Theorem for Manifolds]] (§37.12)
-- [[Transverse Preimage Theorem for Manifolds]] (§37.15)
-- [[Immersion Normal Form]] (§41.1)
-- [[Images of Embeddings Are Submanifolds]] (§42.1)
-- [[Injective Proper Immersions Are Embeddings]] (§42.5)
-- [[SU(2) Is a Double Cover of SO(3)]] (§46.4)
+- [[Regular Value Theorem for Manifolds]] (§38.2)
+- [[Transverse Preimage Theorem for Manifolds]] (§39.1)
+- [[Immersion Normal Form]] (§43.1)
+- [[Images of Embeddings Are Submanifolds]] (§44.1)
+- [[Injective Proper Immersions Are Embeddings]] (§44.5)
+- [[SU(2) Is a Double Cover of SO(3)]] (§48.4)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

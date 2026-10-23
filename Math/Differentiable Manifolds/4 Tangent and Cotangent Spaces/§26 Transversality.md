@@ -95,7 +95,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 *Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark]- Connections
-> - On manifolds, for preimages of regular submanifolds: [[§37 Regular Submanifolds#^thm-37-15|Thm. §37.15]] (Assignment 5, Problem 2).
+> - On manifolds, for preimages of regular submanifolds: [[§39 Transversality and Lagrange Multipliers#^thm-39-1|Thm. §39.1]] (Assignment 5, Problem 2).
 
 > [!remark] Remark: The Surjectivity Step as an Image Computation
 > *(Not from lecture; the route of the official solution of Assignment 2, Problem 5.)* For a linear map $B$ and a subspace $W$ of its domain, $B(W + \ker B) = B(W)$: an element of the left side is $B(w + t) = Bw + Bt = Bw$ with $w \in W$ and $t \in \ker B$, and $W \subseteq W + \ker B$ gives the other inclusion. Take $B = G'(q)$ and $W = \operatorname{im} F'(p)$. Then $\ker G'(q) = T^{\mathrm{geo}}_qS$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), transversality says $\operatorname{im} F'(p) + T^{\mathrm{geo}}_qS = \mathbb{R}^k$, and
@@ -104,7 +104,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > \operatorname{im}\,(G \circ F)'(p) = G'(q)\big(\operatorname{im} F'(p)\big) = G'(q)\big(\operatorname{im} F'(p) + \ker G'(q)\big) = G'(q)\big(\mathbb{R}^k\big) = \mathbb{R}^\ell ,
 > $$
 >
-> by the chain rule, the identity, transversality, and surjectivity of $G'(q)$ ($0$ is a regular value of $G$ and $q \in G^{-1}(0)$). This is the lifting step of the proof in one line; it is used again in the second proof of Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]].
+> by the chain rule, the identity, transversality, and surjectivity of $G'(q)$ ($0$ is a regular value of $G$ and $q \in G^{-1}(0)$). This is the lifting step of the proof in one line; it is used again in the second proof of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]].
 
 ^rem-26-2
 
@@ -178,7 +178,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 *Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]
 
 > [!remark]- Connections
-> - The regular value theorem for maps between manifolds: [[§37 Regular Submanifolds#^thm-37-12|§37.12]], compared with this version in [[§37 Regular Submanifolds#^prop-37-14|§37.14]].
+> - The regular value theorem for maps between manifolds: [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], compared with this version in [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]].
 
 > [!definition] Definition §26.3: Transverse Intersection
 > Regular level sets $S_1, S_2 \subseteq \mathbb{R}^k$ **intersect transversally** if
@@ -256,7 +256,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^ex-26-1
 
-The sphere through the course: a topological manifold with hemisphere charts in [[§8 Spheres|Spheres]]; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|the Riemann sphere]]; its geometric tangent spaces in [[§25 The Geometric Tangent Space#^ex-25-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§26 Transversality#^ex-26-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§44 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§45 The Unit Quaternions and SU(2)#^prop-45-5|the unit quaternions as SU(2)]].
+The sphere through the course: a topological manifold with hemisphere charts in [[§8 Spheres|Spheres]]; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|the Riemann sphere]]; its geometric tangent spaces in [[§25 The Geometric Tangent Space#^ex-25-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§26 Transversality#^ex-26-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§46 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§47 The Unit Quaternions and SU(2)#^prop-47-5|the unit quaternions as SU(2)]].
 
 > [!example] Example §26.2: Two Ways Transversality Can Fail
 > Let $S$ be the $x$-axis in $\mathbb{R}^2$, cut out by $G(x,y) = y$, so $T^{\mathrm{geo}}_qS$ is the $x$-axis at every $q \in S$, and $\ell = 1$. For $F : \mathbb{R} \to \mathbb{R}^2$ the theorem predicts $\dim F^{-1}(S) = 1 - 1 = 0$.

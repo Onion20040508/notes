@@ -212,7 +212,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 
 > [!remark]- Connections
 > - The topological side of the same hole: $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1)$ ([[§34 Retractions and Fixed Points#^thm-34-2|590 §34.2]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]); $\frac{1}{2\pi}\int_{\boldsymbol{\gamma}}\omega$ counts the winding.
-> - On a manifold: the same form on $\mathbb{R}^2 \setminus \{0\}$ satisfies the necessary condition for being a differential, [[§51 One-Forms#^prop-51-3|591 Prop. §51.3]], yet is not $df$, [[§51 One-Forms#^rem-51-1|591 Remark: The Condition Is Not Sufficient]].
+> - On a manifold: the same form on $\mathbb{R}^2 \setminus \{0\}$ satisfies the necessary condition for being a differential, [[§53 One-Forms#^prop-53-3|591 Prop. §53.3]], yet is not $df$, [[§53 One-Forms#^rem-53-1|591 Remark: The Condition Is Not Sufficient]].
 > - Used in Electromagnetism: $\omega$ is the field $\hat\varphi/s$ of a line current, curl-free off the axis with circulation $2\pi$ around it, so its curl is a delta function on the axis — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^ex-b1-2-2|EM Example §B1.2.2]]; the warning that curl-free is not enough on a region with a hole — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]].
 
 > [!theorem] Proposition §39.7: Poincaré Lemma

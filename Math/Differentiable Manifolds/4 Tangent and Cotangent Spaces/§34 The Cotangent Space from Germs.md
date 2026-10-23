@@ -247,7 +247,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^prop-34-2|§34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]
 
-Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§50 The Cotangent Bundle|§50]]).
+Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§52 The Cotangent Bundle|§52]]).
 
 **Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
 
@@ -269,7 +269,7 @@ Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent S
 ^def-34-3
 
 > [!remark]- Connections
-> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§51 One-Forms#^def-51-4|Def. §51.4]].
+> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§53 One-Forms#^def-53-4|Def. §53.4]].
 
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
 *(Computed; not from lecture.)* With $m = \dim M$, $n = \dim N$ and charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, $F^j = y^j \circ F$ and $\tilde F = \psi \circ F \circ \varphi^{-1}$ as in Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $(F_p^{\ast}\,dy^j|_{F(p)})(\partial/\partial x^i|_p) = dy^j|_{F(p)}\big(F_{\ast p}\,\partial/\partial x^i|_p\big) = \partial F^j/\partial x^i(p)$, so $F_p^{\ast}\,dy^j|_{F(p)} = \sum_i \partial F^j/\partial x^i(p)\, dx^i|_p$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). In the dual bases the $m \times n$ matrix of $F_p^{\ast}$ is therefore the transpose of the $n \times m$ matrix of $F_{\ast p}$:
@@ -326,7 +326,7 @@ its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
 ^rem-34-5
 
 > [!remark]- Connections
-> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]. The field version: [[§51 One-Forms#^cor-51-4|Cor. §51.4]].
+> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]. The field version: [[§53 One-Forms#^cor-53-4|Cor. §53.4]].
 
 *Not from lecture: the pullback of covectors in the germ picture of this section.* The pullback of germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]) already moved functions backward along $F$, and the pushforward of derivations was built from it, $F_{\ast p}D = D \circ F_p^{\ast}$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6]]). Through the isomorphism $\Phi$ of [[§34 The Cotangent Space from Germs#^thm-34-4|Theorem §34.4]], the pullback of covectors is that same pullback of germs.
 

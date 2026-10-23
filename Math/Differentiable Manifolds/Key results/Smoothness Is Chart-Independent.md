@@ -36,11 +36,11 @@ tags: [differentiable-manifolds, hub]
 - [[§35 Local Diffeomorphisms#^cor-35-3|Corollary §35.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]
 - [[§36 Submersions#^lem-36-5|Lemma §36.5: Diffeomorphisms onto Open Sets Are Charts]]
 - [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]
-- [[§39 Examples of Fibrations#^prop-39-1|Proposition §39.1: The Möbius Band Is a Fibration]]
-- [[§41 Immersions#^thm-41-1|Theorem §41.1: Local Normal Form for Immersions]]
-- [[§51 One-Forms#^prop-51-1|Proposition §51.1: One-Forms in Coordinates]]
-- [[§51 One-Forms#^prop-51-5|Proposition §51.5: Pullbacks in Coordinates]]
-- [[§53 Vector Fields#^prop-53-1|Proposition §53.1: Vector Fields in Coordinates]]
+- [[§41 Examples of Fibrations#^prop-41-1|Proposition §41.1: The Möbius Band Is a Fibration]]
+- [[§43 Immersions#^thm-43-1|Theorem §43.1: Local Normal Form for Immersions]]
+- [[§53 One-Forms#^prop-53-1|Proposition §53.1: One-Forms in Coordinates]]
+- [[§53 One-Forms#^prop-53-5|Proposition §53.5: Pullbacks in Coordinates]]
+- [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]
 
 ## Connections
 - **Used for.** Transport of smooth structure ([[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]), smoothness of projections and slice inclusions ([[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]), diffeomorphisms onto open sets being charts ([[§36 Submersions#^lem-36-5|§36.5]], the step that finishes the [[Submersion Normal Form]]) and smooth maps into submanifolds ([[§37 Regular Submanifolds#^lem-37-5|§37.5]]).

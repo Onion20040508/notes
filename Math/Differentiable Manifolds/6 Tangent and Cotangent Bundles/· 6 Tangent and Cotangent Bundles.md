@@ -12,20 +12,21 @@ tags: [chapter, differentiable-manifolds]
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Multivariable Analysis]] (1)
 
 ## Sections
-- [[§47 Recap꞉ Germs, Derivations and Tangent Vectors]]
-- [[§48 Recap꞉ Covectors and the Four Differentials]]
-- [[§49 The Tangent Bundle]]
-- [[§50 The Cotangent Bundle]]
-- [[§51 One-Forms]]
-- [[§52 Critical Points and the Hessian]]
+- [[§49 Recap꞉ Germs, Derivations and Tangent Vectors]]
+- [[§50 Recap꞉ Covectors and the Four Differentials]]
+- [[§51 The Tangent Bundle]]
+- [[§52 The Cotangent Bundle]]
+- [[§53 One-Forms]]
+- [[§54 Critical Points and the Hessian]]
+- [[§55 Morse Functions and the Zero Section]]
 
 ## Central results
-- [[Smooth Manifold Chart Lemma]] (§49.1)
-- [[Tangent Bundle Is a Smooth Manifold]] (§49.2)
+- [[Smooth Manifold Chart Lemma]] (§51.1)
+- [[Tangent Bundle Is a Smooth Manifold]] (§51.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Smooth Manifold Chart Lemma|Lemma §49.1: Building a Manifold from Charts]]: 56 later results
-- [[Tangent Bundle Is a Smooth Manifold|Proposition §49.2: The Transition Maps of TM]]: 56 later results
-- [[§49 The Tangent Bundle#^prop-49-3|Proposition §49.3: The Topology and Smooth Structure of TM]]: 56 later results
-- [[§49 The Tangent Bundle#^cor-49-4|Corollary §49.4: The Tangent Bundle Is a Fibration]]: 56 later results
+- [[Smooth Manifold Chart Lemma|Lemma §51.1: Building a Manifold from Charts]]: 56 later results
+- [[Tangent Bundle Is a Smooth Manifold|Proposition §51.2: The Transition Maps of TM]]: 56 later results
+- [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Topology and Smooth Structure of TM]]: 56 later results
+- [[§51 The Tangent Bundle#^cor-51-4|Corollary §51.4: The Tangent Bundle Is a Fibration]]: 56 later results

@@ -233,7 +233,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 > \pi_X : X \times Y \to X, \ \ \pi_X(x, y) = x, \qquad\qquad \pi_Y : X \times Y \to Y, \ \ \pi_Y(x, y) = y .
 > $$
 >
-> For a product $M_1 \times M_2$ they are also written $\pi_1$ and $\pi_2$, or $\mathrm{pr}_1$ and $\mathrm{pr}_2$ when the letter $\pi$ already names another map (as for a [[§38 Fibrations#^def-38-1|fibration]], Definition §38.1).
+> For a product $M_1 \times M_2$ they are also written $\pi_1$ and $\pi_2$, or $\mathrm{pr}_1$ and $\mathrm{pr}_2$ when the letter $\pi$ already names another map (as for a [[§40 Fibrations#^def-40-1|fibration]], Definition §38.1).
 
 ^def-3-4
 

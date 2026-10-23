@@ -70,7 +70,7 @@ Cartan–Dieudonné: reflections generate the orthogonal group (first stated wit
 > [!theorem] Theorem §CB.14.5: Cartan–Dieudonné
 > Every element of $O(V)$ is a product of at most $n = \dim V$ reflections $r_u$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-4|Theorem §CB.14.4]]) with $q(u) \ne 0$; the elements of $SO(V)$ are the products of an even number of them.
 >
-> *Source: Meinrenken, Clifford Algebras and Lie Groups, Ch. 1, Thm. 4.5 (Artin's proof) · stated in Figueroa-O'Farrill, Spin Geometry, Thm. 3.2, and Woit, §29.2.1 · the two cases the course needs are also reached directly ($SU(2) \to SO(3)$: [[§46 SU(2) → SO(3)꞉ The Double Cover#^thm-46-4|591 Thm. §46.4]]; $SL(2, \mathbb C) \to SO^+(1,3)$: [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|Theorem §CB.16.9]])*
+> *Source: Meinrenken, Clifford Algebras and Lie Groups, Ch. 1, Thm. 4.5 (Artin's proof) · stated in Figueroa-O'Farrill, Spin Geometry, Thm. 3.2, and Woit, §29.2.1 · the two cases the course needs are also reached directly ($SU(2) \to SO(3)$: [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|591 Thm. §48.4]]; $SL(2, \mathbb C) \to SO^+(1,3)$: [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|Theorem §CB.16.9]])*
 
 ^thm-cb-14-5
 

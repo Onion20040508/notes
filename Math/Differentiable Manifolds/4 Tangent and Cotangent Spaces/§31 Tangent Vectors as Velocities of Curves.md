@@ -176,7 +176,7 @@ the Jacobian carries the velocity of the coordinate curve $\varphi \circ \gamma$
 ^rem-31-3
 
 > [!remark]- Connections
-> - The two tangent spaces side by side: [[§43 Geometric and Abstract Manifolds#Tangent Vectors|§43, Tangent Vectors]].
+> - The two tangent spaces side by side: [[§45 Geometric and Abstract Manifolds#Tangent Vectors|§43, Tangent Vectors]].
 > - The identification for a regular level set: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]].
 
 ## Tangent Spaces of Products
@@ -321,7 +321,7 @@ to push $v$ forward, restrict $f$ to the slice $M_1 \times \{p_2\}$ and differen
 
 This is the second of Uribe's three views, and it uses the velocities of Assignment 3, Problem 2 ([[§31 Tangent Vectors as Velocities of Curves|§31, Tangent Vectors as Velocities of Curves]]).
 
-*Lecture 18. Uribe opened with this construction — “I realize that we can't prove the theorem of last time completely” without it — to finish the proof that left-invariant fields are smooth (Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7|§57.7]]). It is the partial derivative in the $M_1$ variables above, now with the base point in the other factor allowed to vary.*
+*Lecture 18. Uribe opened with this construction — “I realize that we can't prove the theorem of last time completely” without it — to finish the proof that left-invariant fields are smooth (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]). It is the partial derivative in the $M_1$ variables above, now with the base point in the other factor allowed to vary.*
 
 > [!definition] Definition §31.3: Partial Derivative in One Factor
 > Let $\varphi : M \times N \to \mathbb{R}$ be smooth, $p \in M$ and $v \in T_pM$. The **partial derivative of $\varphi$ in the direction $v$** is the function $\partial_v\varphi : N \to \mathbb{R}$,

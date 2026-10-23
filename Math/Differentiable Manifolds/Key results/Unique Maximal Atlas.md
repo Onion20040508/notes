@@ -39,10 +39,10 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]
 - [[§37 Regular Submanifolds#^prop-37-4|Proposition §37.4: Open Submanifolds Are the Regular Submanifolds of Codimension 0]]
 - [[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
-- [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14: The Old and New Versions Agree]]
-- [[§39 Examples of Fibrations#^prop-39-1|Proposition §39.1: The Möbius Band Is a Fibration]]
-- [[§49 The Tangent Bundle#^cor-49-4|Corollary §49.4: The Tangent Bundle Is a Fibration]]
-- [[§52 Critical Points and the Hessian#^ex-52-1|Example §52.1: The Hessian Matrix Depends on the Chart]]
+- [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
+- [[§41 Examples of Fibrations#^prop-41-1|Proposition §41.1: The Möbius Band Is a Fibration]]
+- [[§51 The Tangent Bundle#^cor-51-4|Corollary §51.4: The Tangent Bundle Is a Fibration]]
+- [[§54 Critical Points and the Hessian#^ex-54-1|Example §54.1: The Hessian Matrix Depends on the Chart]]
 
 ## Connections
 - **Used for.** Writing down any atlas specifies a smooth structure ([[§17 Differentiable Structures#^def-17-9|Def. §17.9]]): the standard atlas of ℂPⁿ ([[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§24 The Circle#^prop-24-1|§24.1]]).

@@ -11,15 +11,15 @@ tags: [subject, differentiable-manifolds]
 ---
 # Differentiable Manifolds
 
-MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§61 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
+MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§65 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
 
 ## Roadmap
-These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§36 Submersions|§36]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§37 Regular Submanifolds|§37]]); the submersions that are locally products are the fibrations ([[§38 Fibrations|§38]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§49 The Tangent Bundle|§49]]). Immersions, the maps dual to submersions, begin a new arc ([[§41 Immersions|§41]]), which leads to embeddings, the immersions whose images are submanifolds ([[§42 Embeddings|§42]]).
+These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§36 Submersions|§36]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§37 Regular Submanifolds|§37]]); the submersions that are locally products are the fibrations ([[§40 Fibrations|§40]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§51 The Tangent Bundle|§51]]). Immersions, the maps dual to submersions, begin a new arc ([[§43 Immersions|§43]]), which leads to embeddings, the immersions whose images are submanifolds ([[§44 Embeddings|§44]]).
 
 ![[m591-0-1.svg]]
 *The roadmap: the equations thread (teal), the quotients thread (violet), the linear stage (orange), and the bundles (blue); arrow labels are the bridges.*
 
-The labels on the arrows are the bridges. The regular value theorem ([[§7 The Regular Value Theorem|§7]]) turns equations into manifolds, and graph charts ([[Regular Level Sets Are Smooth Manifolds|§20.2]]) make them smooth. The differential between vector spaces ([[§21 Linear Algebra Toolkit|§21]]) gives $T^{\mathrm{geo}}_pM = \ker F'(p)$ ([[Geometric Tangent Space Is the Kernel of the Jacobian|§25.3]]). For the quotient-built manifolds, atlases are written down by hand ([[§17 Differentiable Structures|§17]]), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ ([[Ambient and Abstract Tangent Spaces Agree|§29.6]]); the abstract differential agrees with the Jacobian ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), and on any manifold the matrix of $F_{\ast p}$ in coordinates *is* the Jacobian of the coordinate representation ([[Matrix of the Differential|§30.2]]), because partial derivatives upstairs are defined downstairs ([[§30 The Differential in Coordinates#^prop-30-1|§30.1]]); and every abstract tangent vector is a velocity after all ([[Every Tangent Vector Is a Velocity|§31.2]]). At the bottom, the submersion normal form ([[Submersion Normal Form|§36.6]]) proves the regular value theorem for manifolds ([[Regular Value Theorem for Manifolds|§37.12]]), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles ([[§38 Fibrations|§38]], [[§49 The Tangent Bundle|§49]], [[§50 The Cotangent Bundle|§50]]); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds ([[§41 Immersions|§41]]), and globally so when they are embeddings ([[§42 Embeddings|§42]]). Each section opens with a line placing it on this map.
+The labels on the arrows are the bridges. The regular value theorem ([[§7 The Regular Value Theorem|§7]]) turns equations into manifolds, and graph charts ([[Regular Level Sets Are Smooth Manifolds|§20.2]]) make them smooth. The differential between vector spaces ([[§21 Linear Algebra Toolkit|§21]]) gives $T^{\mathrm{geo}}_pM = \ker F'(p)$ ([[Geometric Tangent Space Is the Kernel of the Jacobian|§25.3]]). For the quotient-built manifolds, atlases are written down by hand ([[§17 Differentiable Structures|§17]]), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ ([[Ambient and Abstract Tangent Spaces Agree|§29.6]]); the abstract differential agrees with the Jacobian ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), and on any manifold the matrix of $F_{\ast p}$ in coordinates *is* the Jacobian of the coordinate representation ([[Matrix of the Differential|§30.2]]), because partial derivatives upstairs are defined downstairs ([[§30 The Differential in Coordinates#^prop-30-1|§30.1]]); and every abstract tangent vector is a velocity after all ([[Every Tangent Vector Is a Velocity|§31.2]]). At the bottom, the submersion normal form ([[Submersion Normal Form|§36.6]]) proves the regular value theorem for manifolds ([[Regular Value Theorem for Manifolds|§38.2]]), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles ([[§40 Fibrations|§40]], [[§51 The Tangent Bundle|§51]], [[§52 The Cotangent Bundle|§52]]); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds ([[§43 Immersions|§43]]), and globally so when they are embeddings ([[§44 Embeddings|§44]]). Each section opens with a line placing it on this map.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (forward references in the notes). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
@@ -89,7 +89,7 @@ graph TD
 - [[· 8 Sard's Theorem]]
 
 ## Planned topics (syllabus)
-Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§53, as derivations of $C^\infty(M)$; differential operators, §54; the Lie bracket, §55; related vector fields, §56); one-forms ✓ (§51; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §57; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
+Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56, as derivations of $C^\infty(M)$; differential operators, §57; the Lie bracket, §58; related vector fields, §59); one-forms ✓ (§53; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §60; Lie group morphisms and linear groups, §61; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)
@@ -118,18 +118,18 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§53
 - [[Cotangent Space from Germs]] (§34.4)
 - [[Local Diffeomorphism Criterion]] (§35.2)
 - [[Submersion Normal Form]] (§36.6)
-- [[Regular Value Theorem for Manifolds]] (§37.12)
-- [[Transverse Preimage Theorem for Manifolds]] (§37.15)
-- [[Immersion Normal Form]] (§41.1)
-- [[Images of Embeddings Are Submanifolds]] (§42.1)
-- [[Injective Proper Immersions Are Embeddings]] (§42.5)
-- [[SU(2) Is a Double Cover of SO(3)]] (§46.4)
-- [[Smooth Manifold Chart Lemma]] (§49.1)
-- [[Tangent Bundle Is a Smooth Manifold]] (§49.2)
-- [[The Lie Algebra Is the Tangent Space at the Identity]] (§57.7)
-- [[Sard's Theorem]] (§59.3)
-- [[Parametric Transversality Theorem]] (§60.1)
-- [[Whitney Embedding Theorem]] (§61.4)
+- [[Regular Value Theorem for Manifolds]] (§38.2)
+- [[Transverse Preimage Theorem for Manifolds]] (§39.1)
+- [[Immersion Normal Form]] (§43.1)
+- [[Images of Embeddings Are Submanifolds]] (§44.1)
+- [[Injective Proper Immersions Are Embeddings]] (§44.5)
+- [[SU(2) Is a Double Cover of SO(3)]] (§48.4)
+- [[Smooth Manifold Chart Lemma]] (§51.1)
+- [[Tangent Bundle Is a Smooth Manifold]] (§51.2)
+- [[The Lie Algebra Is the Tangent Space at the Identity]] (§60.7)
+- [[Sard's Theorem]] (§63.3)
+- [[Parametric Transversality Theorem]] (§64.1)
+- [[Whitney Embedding Theorem]] (§65.4)
 
 ## Summaries
 - [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]] (every homework problem broken into small questions) and [[Differentiable Manifolds Notes Drill]] (definitions, core proofs, class exercises, equivalences).

@@ -2,10 +2,10 @@
 type: section
 subject: "[[Differentiable Manifolds]]"
 chapter: 6
-section: 47
+section: 49
 tags: [differentiable-manifolds, math591]
 ---
-← [[§46 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§48 Recap꞉ Covectors and the Four Differentials]] →
+← [[§48 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 6 Tangent and Cotangent Bundles]] · [[§50 Recap꞉ Covectors and the Four Differentials]] →
 
 *Stage: recap — Chapter 4's road from arrows to derivations, retraced in one place before tangent vectors are gathered into bundles and fields.*
 
@@ -93,7 +93,7 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 | $F_{\ast p}$ | pushforward (differential) of $F$ | vector at $p$ $\mapsto$ vector at $F(p)$ |
 | $D_\gamma$ | velocity of a curve | the arrow picture, on any manifold |
 
-> [!example] Example §47.1: Vectors in the Plane in Three Ways
+> [!example] Example §49.1: Vectors in the Plane in Three Ways
 > On $M = \mathbb{R}^2$ with coordinates $(x, y)$, let $p = (1, 2)$, $f(x, y) = x^2 y$, and
 >
 > $$
@@ -114,9 +114,9 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 >
 >    By the definition instead: $(F_{\ast p}v)[u] = v[u \circ F] = v[x^2] = 3 \cdot 2 = 6$ and $(F_{\ast p}v)[w] = v[x + y] = 3 - 1 = 2$, the same components by the universal formula.
 >
-> The example continues with covectors in [[§48 Recap꞉ Covectors and the Four Differentials#^ex-48-1|Example §48.1]].
+> The example continues with covectors in [[§50 Recap꞉ Covectors and the Four Differentials#^ex-50-1|Example §50.1]].
 
-^ex-47-1
+^ex-49-1
 
 *(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)* One tangent vector at $p$, in four equivalent forms. Chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$; the numbers on the arrows refer to the remark below.
 
@@ -133,4 +133,4 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 >
 > *Change of chart.* $\tilde v^j = \sum_i \frac{\partial \tilde x^j}{\partial x^i}(p)\, v^i$, the Jacobian of the transition function acting on the components (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]).
 
-^rem-47-1
+^rem-49-1
