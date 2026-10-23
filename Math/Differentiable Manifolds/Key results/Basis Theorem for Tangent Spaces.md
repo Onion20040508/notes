@@ -55,6 +55,7 @@ tags: [differentiable-manifolds, hub]
 - [[§55 Lie Bracket and Lie Algebra#^prop-55-2|Proposition §55.2: The Bracket in Coordinates]]
 - [[§55 Lie Bracket and Lie Algebra#^prop-55-3|Proposition §55.3: The Hessian at a Critical Point via Vector Fields]]
 - [[§56 Related Vector Fields#^ex-56-1|Example §56.1: Fields Related by a Projection]]
+- [[§56 Related Vector Fields#^lem-56-5|Lemma §56.5: Tangency in an Adapted Chart]]
 
 ## Connections
 - **Used for.** dim T_pM = n, which finishes [[Ambient and Abstract Tangent Spaces Agree]] ([[§29 Coordinate Derivations and the Basis Theorem#^cor-29-8|§29.8]]). The coordinate bases give the [[Matrix of the Differential]], the dual bases dxⁱ|_p of T*_pM ([[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), the charts of TM ([[Tangent Bundle Is a Smooth Manifold]]) and the straight-line curves of [[Every Tangent Vector Is a Velocity]].

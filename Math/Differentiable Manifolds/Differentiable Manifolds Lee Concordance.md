@@ -158,8 +158,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Exercise 6.7 | [[§58 Sets of Measure Zero#^prop-58-4\|Prop. §58.4]] |
 | Theorem 6.10 | [[§59 Sard's Theorem#^thm-59-3\|Thm. §59.3]] |
 | Corollary 6.11 | [[§59 Sard's Theorem#^cor-59-4\|Cor. §59.4]] |
-| Theorem 6.15 | [[§61 The Whitney Embedding Theorem#^thm-61-1\|Thm. §61.1]] |
-| Theorem 6.18 | [[§61 The Whitney Embedding Theorem#^thm-61-1\|Thm. §61.1]] |
+| Theorem 6.15 | [[§61 The Whitney Embedding Theorem#^thm-61-4\|Thm. §61.4]] |
+| Theorem 6.18 | [[§61 The Whitney Embedding Theorem#^thm-61-4\|Thm. §61.4]] |
 | Theorem 6.35 | [[§60 Parametric Transversality#^thm-60-1\|Thm. §60.1]], [[§60 Parametric Transversality#^cor-60-2\|Cor. §60.2]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
@@ -181,7 +181,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.28 | [[§55 Lie Bracket and Lie Algebra#^cor-55-5\|Cor. §55.5]] |
 | Proposition 8.30 | [[§56 Related Vector Fields#^prop-56-3\|Prop. §56.3]] |
 | Corollary 8.31 | [[§56 Related Vector Fields#^cor-56-4\|Cor. §56.4]] |
-| Corollary 8.32 | [[§56 Related Vector Fields#^prop-56-5\|Prop. §56.5]] |
+| Corollary 8.32 | [[§56 Related Vector Fields#^prop-56-6\|Prop. §56.6]] |
 | Proposition 8.33 | [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4\|Cor. §57.4]] |
 | Theorem 8.37 | [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5\|Def. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5\|Lem. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6\|Prop. §57.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7\|Thm. §57.7]] |
 | Proposition 8.41 | [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11\|Thm. §57.11]] |

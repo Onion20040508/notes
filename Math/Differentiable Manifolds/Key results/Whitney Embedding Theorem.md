@@ -2,23 +2,22 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 61.1", "Whitney immersion theorem", "embedding in R^(2m+1)", "Lee Theorem 6.15", "Lee Theorem 6.18"]
+aliases: ["MATH 591 61.4", "Whitney immersion theorem", "embedding in R^(2m+1)", "Lee Theorem 6.15", "Lee Theorem 6.18"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§61 The Whitney Embedding Theorem#^thm-61-1]]
+![[§61 The Whitney Embedding Theorem#^thm-61-4]]
 
 ## Treated in
-- [[§61 The Whitney Embedding Theorem#^thm-61-1|Theorem §61.1: The Whitney Embedding and Immersion Theorems]], in [[§61 The Whitney Embedding Theorem]]
+- [[§61 The Whitney Embedding Theorem#^thm-61-4|Theorem §61.4: The Whitney Embedding and Immersion Theorems]], in [[§61 The Whitney Embedding Theorem]]
 
 ## Its proof uses
-- [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|Corollary §18.5: Real Projective Space]]
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|Proposition §28.9: Charts Are Diffeomorphisms]]
-- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2: Every Tangent Vector Is a Velocity]]
+- [[§42 Embeddings#^thm-42-1|Theorem §42.1: The Image of an Embedding Is a Regular Submanifold]]
 - [[§42 Embeddings#^cor-42-6|Corollary §42.6: Injective Immersions of Compact Manifolds]]
-- [[§53 Vector Fields#^prop-53-4|Proposition §53.4: Bump Functions Exist]]
 - [[§58 Sets of Measure Zero#^lem-58-1|Lemma §58.1: Basic Properties of Measure Zero]]
 - [[§58 Sets of Measure Zero#^prop-58-4|Proposition §58.4: Measure Zero Is Seen in Every Chart]]
-- [[§59 Sard's Theorem#^cor-59-4|Corollary §59.4: Maps from Lower Dimension]]
+- [[§61 The Whitney Embedding Theorem#^lem-61-1|Lemma §61.1: Compact Manifolds Embed in Some ℝᵏ]]
+- [[§61 The Whitney Embedding Theorem#^lem-61-2|Lemma §61.2: Projections That Stay Injective]]
+- [[§61 The Whitney Embedding Theorem#^lem-61-3|Lemma §61.3: Projections That Stay Immersions]]
 
 ## Used in (Differentiable Manifolds)
 - (not cited later in the course)

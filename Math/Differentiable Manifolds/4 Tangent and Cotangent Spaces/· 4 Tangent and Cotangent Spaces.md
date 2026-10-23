@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (39), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (103)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (147), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (86), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (58), [[· 8 Sard's Theorem|8 Sard's Theorem]] (7)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (147), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (86), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (59), [[· 8 Sard's Theorem|8 Sard's Theorem]] (7)
 **Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (4), [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (10)
 
 ## Sections
@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 168 later results
-- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 168 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 168 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 162 later results
+- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 171 later results
+- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 171 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 171 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 165 later results

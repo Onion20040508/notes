@@ -28,6 +28,7 @@ tags: [differentiable-manifolds, hub]
 - [[§42 Embeddings#^prop-42-10|Proposition §42.10: Sections Are Closed Embeddings]]
 - [[§42 Embeddings#^prop-42-15|Proposition §42.15: When an Immersed Submanifold Is Regular]]
 - [[§45 The Unit Quaternions and SU(2)#^prop-45-5|Proposition §45.5: S³ Is SU(2)]]
+- [[§61 The Whitney Embedding Theorem#^thm-61-4|Theorem §61.4: The Whitney Embedding and Immersion Theorems]]
 
 ## Connections
 - **Used for.** An embedding is a diffeomorphism onto its image, with the induced smooth structure of the submanifold ([[§42 Embeddings#^cor-42-3|§42.3]]). Combined with [[Injective Proper Immersions Are Embeddings]], the image of an injective immersion of a compact manifold is a submanifold.

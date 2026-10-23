@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 262 later results
-- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 262 later results
-- [[§4 Quotient Spaces and Open Maps#^prop-4-1|Proposition §4.1: The Quotient Topology Is the Finest Making π Continuous]]: 259 later results
-- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 258 later results
+- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 265 later results
+- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 265 later results
+- [[§4 Quotient Spaces and Open Maps#^prop-4-1|Proposition §4.1: The Quotient Topology Is the Finest Making π Continuous]]: 262 later results
+- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 261 later results

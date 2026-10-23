@@ -297,7 +297,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ^prop-53-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function “is constructed in the Euclidean space first, and then you pull back with the chart.” Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§61 The Whitney Embedding Theorem#^thm-61-1|§61.1]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+> *(Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function “is constructed in the Euclidean space first, and then you pull back with the chart.” Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§61 The Whitney Embedding Theorem#^thm-61-4|§61.4]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
 >
 > *1. A smooth function vanishing to infinite order.* Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
 >
@@ -313,7 +313,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 ^pf-53-4
 
-*Uses:* [[§61 The Whitney Embedding Theorem#^thm-61-1|§61.1]], [[§53 Vector Fields#^def-53-9|Def. §53.9]]
+*Uses:* [[§61 The Whitney Embedding Theorem#^thm-61-4|§61.4]], [[§53 Vector Fields#^def-53-9|Def. §53.9]]
 
 ![[m591-53-1.svg]]
 

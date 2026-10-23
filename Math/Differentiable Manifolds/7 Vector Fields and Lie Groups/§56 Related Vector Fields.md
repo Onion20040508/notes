@@ -272,12 +272,49 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 
 *Lecture 21 opened with the last problem of the midterm — “there's always a question that is hard, but it's okay … I hope we're still friends.”*
 
-> [!theorem] Proposition §56.5: Brackets of Fields Tangent to a Submanifold
-> Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ *tangent to $S$*: $\mathbf{X}_p, \mathbf{Y}_p \in T_pS$ for every $p \in S$. Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
+> [!definition] Definition §56.3: Vector Field Tangent to a Submanifold
+> Let $S \subseteq M$ be a regular submanifold, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(M)$. Then $\mathbf{X}$ is **tangent to $S$** if
+>
+> $$
+> \mathbf{X}_p \in \iota_{\ast p}(T_pS) \qquad \text{for every } p \in S .
+> $$
+>
+> Identifying $T_pS$ with the subspace $\iota_{\ast p}(T_pS) \subseteq T_pM$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]), this reads $\mathbf{X}_p \in T_pS$ for every $p \in S$. Nothing is required at points of $M \setminus S$.
+>
+> *Lee: Ch. 8, Vector Fields on Submanifolds*
+
+^def-56-3
+
+> [!theorem] Lemma §56.5: Tangency in an Adapted Chart
+> Let $S \subseteq M$ be a regular submanifold of dimension $k$, and $(U, (x, y)) = (U, (x^1, \ldots, x^k, y^1, \ldots, y^{m-k}))$ an adapted chart with $S \cap U = \{ y = 0 \}$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]). Let $\mathbf{X} \in \mathfrak{X}(M)$ be written on $U$ as
+>
+> $$
+> \mathbf{X} = \sum_{i=1}^k f^i\, \frac{\partial}{\partial x^i} + \sum_{a=1}^{m-k} g^a\, \frac{\partial}{\partial y^a}
+> $$
+>
+> (Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]). Then $\mathbf{X}_p \in T_pS$ for every $p \in S \cap U$ if and only if $g^a(x, 0) = 0$ for every $a$ and every point $(x, 0)$ of $S \cap U$: along $S$, “there is no $y$ component.”
+
+^lem-56-5
+
+> [!proof]+ Proof
+> *(Not from lecture; the step the proof of Proposition [[§56 Related Vector Fields#^prop-56-6|§56.6]] uses, written out.)* Let $p \in S \cap U$. By Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{\ast p}(T_pS) = \operatorname{Span}\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), and
+>
+> $$
+> \mathbf{X}_p = \sum_i f^i(p)\, \frac{\partial}{\partial x^i}\Big|_p + \sum_a g^a(p)\, \frac{\partial}{\partial y^a}\Big|_p .
+> $$
+>
+> Since coefficients in a basis are unique, $\mathbf{X}_p$ lies in the span of the $\partial/\partial x^i|_p$ exactly when every $g^a(p) = 0$. The points of $S \cap U$ are those with $y = 0$, so the condition for all $p \in S \cap U$ is $g^a(x, 0) = 0$ for all $a$.
+
+^pf-56-5
+
+*Uses:* [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]
+
+> [!theorem] Proposition §56.6: Brackets of Fields Tangent to a Submanifold
+> Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ tangent to $S$ (Definition [[§56 Related Vector Fields#^def-56-3|§56.3]]). Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
 >
 > *Lee: Corollary 8.32*
 
-^prop-56-5
+^prop-56-6
 
 > [!proof]+ Proof
 > *(Lecture 21, “not in excruciating detail”; the bookkeeping is filled in.)* “Use adapted coordinates”: near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); on the exam, $M$ was two-dimensional, “but they could be vector-valued … the codimension or the dimension doesn't matter.” Write
@@ -287,7 +324,7 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 > \mathbf{Y} = \sum_i u^i\, \frac{\partial}{\partial x^i} + \sum_a v^a\, \frac{\partial}{\partial y^a} .
 > $$
 >
-> At points of $S$, $T_pS$ is spanned by the $\partial/\partial x^i|_p$, so tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: “there is no $y$ component.” We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], that component is
+> By Lemma [[§56 Related Vector Fields#^lem-56-5|§56.5]], tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: “there is no $y$ component.” We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], that component is
 >
 > $$
 > \mathbf{X}(v^b) - \mathbf{Y}(g^b) = \sum_i f^i\, \frac{\partial v^b}{\partial x^i} + \sum_a g^a\, \frac{\partial v^b}{\partial y^a} - \sum_i u^i\, \frac{\partial g^b}{\partial x^i} - \sum_a v^a\, \frac{\partial g^b}{\partial y^a} .
@@ -295,9 +332,9 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 >
 > Evaluate at $y = 0$. The terms with $\partial/\partial x^i$ vanish for one reason: “how do you evaluate the partial with respect to $x$ at $y = 0$? You fix $y$ to zero and differentiate with respect to $x$, but when I set $y$ to zero, I get zero” — $\frac{\partial v^b}{\partial x^i}(x, 0) = \frac{\partial}{\partial x^i}\big(v^b(x, 0)\big) = 0$, and likewise for $g^b$. The terms with $\partial/\partial y^a$ vanish “for a different reason”: “I don't know that these partials are zero, but these guys are” — the coefficients $g^a(x, 0)$ and $v^a(x, 0)$. So the $y$-components of $[\mathbf{X}, \mathbf{Y}]$ vanish on $S$, and $[\mathbf{X}, \mathbf{Y}]_p \in T_pS$ for $p \in S$.
 
-^pf-56-5
+^pf-56-6
 
-*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]]
+*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], [[§56 Related Vector Fields#^lem-56-5|§56.5]]
 
 ![[m591-56-5.svg]]
 

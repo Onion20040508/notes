@@ -17824,8 +17824,33 @@ If $F : M \to N$ is a diffeomorphism and $\mathbf{X}_1, \mathbf{X}_2 \in \mathfr
 
 \textit{Lecture 21 opened with the last problem of the midterm --- ``there's always a question that is hard, but it's okay \ldots\ I hope we're still friends.''}
 
+\begin{defbox}[Vector Field Tangent to a Submanifold]\deflabel{def:field-tangent}
+Let $S \subseteq M$ be a regular submanifold, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(M)$. Then $\mathbf{X}$ is \textbf{tangent to $S$} if
+\[
+\mathbf{X}_p \in \iota_{*p}(T_pS) \qquad \text{for every } p \in S .
+\]
+Identifying $T_pS$ with the subspace $\iota_{*p}(T_pS) \subseteq T_pM$ (Proposition~\ref{prop:submanifold-tangent}), this reads $\mathbf{X}_p \in T_pS$ for every $p \in S$. Nothing is required at points of $M \setminus S$.
+\leeref{Ch.~8, \emph{Vector Fields on Submanifolds}}
+\end{defbox}
+
+\begin{lembox}[Tangency in an Adapted Chart]\thmlabel{lem:tangent-adapted}
+Let $S \subseteq M$ be a regular submanifold of dimension $k$, and $(U, (x, y)) = (U, (x^1, \ldots, x^k, y^1, \ldots, y^{m-k}))$ an adapted chart with $S \cap U = \{ y = 0 \}$ (Definition~\ref{def:adapted-chart}). Let $\mathbf{X} \in \mathfrak{X}(M)$ be written on $U$ as
+\[
+\mathbf{X} = \sum_{i=1}^k f^i\, \frac{\partial}{\partial x^i} + \sum_{a=1}^{m-k} g^a\, \frac{\partial}{\partial y^a}
+\]
+(Proposition~\ref{prop:vf-coords}). Then $\mathbf{X}_p \in T_pS$ for every $p \in S \cap U$ if and only if $g^a(x, 0) = 0$ for every $a$ and every point $(x, 0)$ of $S \cap U$: along $S$, ``there is no $y$ component.''
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; the step the proof of Proposition~\ref{prop:bracket-tangent} uses, written out.)} Let $p \in S \cap U$. By Proposition~\ref{prop:submanifold-tangent}, applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{*p}(T_pS) = \Span\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem~\ref{thm:tangent-basis}), and
+\[
+\mathbf{X}_p = \sum_i f^i(p)\, \frac{\partial}{\partial x^i}\Big|_p + \sum_a g^a(p)\, \frac{\partial}{\partial y^a}\Big|_p .
+\]
+Since coefficients in a basis are unique, $\mathbf{X}_p$ lies in the span of the $\partial/\partial x^i|_p$ exactly when every $g^a(p) = 0$. The points of $S \cap U$ are those with $y = 0$, so the condition for all $p \in S \cap U$ is $g^a(x, 0) = 0$ for all $a$.
+\end{proof}
+
 \begin{propbox}[Brackets of Fields Tangent to a Submanifold]\thmlabel{prop:bracket-tangent}
-Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ \emph{tangent to $S$}: $\mathbf{X}_p, \mathbf{Y}_p \in T_pS$ for every $p \in S$. Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
+Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ tangent to $S$ (Definition~\ref{def:field-tangent}). Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
 \leeref{Corollary 8.32}
 \end{propbox}
 
@@ -17835,7 +17860,7 @@ Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \ma
 \mathbf{X} = \sum_i f^i\, \frac{\partial}{\partial x^i} + \sum_a g^a\, \frac{\partial}{\partial y^a}, \qquad
 \mathbf{Y} = \sum_i u^i\, \frac{\partial}{\partial x^i} + \sum_a v^a\, \frac{\partial}{\partial y^a} .
 \]
-At points of $S$, $T_pS$ is spanned by the $\partial/\partial x^i|_p$, so tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: ``there is no $y$ component.'' We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition~\ref{prop:bracket-coords}, that component is
+By Lemma~\ref{lem:tangent-adapted}, tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: ``there is no $y$ component.'' We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition~\ref{prop:bracket-coords}, that component is
 \[
 \mathbf{X}(v^b) - \mathbf{Y}(g^b) = \sum_i f^i\, \frac{\partial v^b}{\partial x^i} + \sum_a g^a\, \frac{\partial v^b}{\partial y^a} - \sum_i u^i\, \frac{\partial g^b}{\partial x^i} - \sum_a v^a\, \frac{\partial g^b}{\partial y^a} .
 \]
@@ -18940,21 +18965,15 @@ Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a 
 
 \textit{Lecture 21. ``There isn't enough time in the semester to cover everything that's on the syllabus, and the only way to cover more is to skip some proofs \ldots\ I never quite get to degree theory, which is a really cool topic that is officially on the syllabus. So I will be assigning reading.'' Then: ``Today we're going to talk about the Whitney embedding and immersion theorems.''}
 
-\begin{thmbox}[The Whitney Embedding and Immersion Theorems]\thmlabel{thm:whitney}
-Let $M$ be a smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
-\leeref{Theorems 6.15 and 6.18}
-\end{thmbox}
+The proof, for $M$ compact, has two parts with ``totally different'' ideas: bump functions embed $M$ in some $\mathbb{R}^k$ (Lemma~\ref{lem:compact-embeds}), and projections along well-chosen lines lower the dimension (Lemmas~\ref{lem:projection-injective} and~\ref{lem:projection-immersion}). The lemmas come first; Theorem~\ref{thm:whitney} assembles them.
 
-``In other words, any manifold is diffeomorphic to a submanifold of some Euclidean space'' (Theorem~\ref{thm:embedding-image}). The course proves it for $M$ compact. The noncompact case, which first makes the embedding proper, is assigned as reading in Lee (Lemma~6.14 and Theorem~6.15): ``he has a beautiful picture.''
+\begin{lembox}[Compact Manifolds Embed in Some $\mathbb{R}^k$]\thmlabel{lem:compact-embeds}
+Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embedding $F : M \to \mathbb{R}^k$ for some $k$.
+\leeref{proof of Theorem 6.15}
+\end{lembox}
 
-\begin{rembox}[The Hard Version]\label{rem:strong-whitney}
-In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). ``We will not discuss this at all. The proof is very specialized and really long \ldots\ The smaller the codimension, the tighter it is, and you have to wrestle the manifold more to get it in there. It's like packing your clothes in a suitcase.''
-\end{rembox}
-
-\begin{proof}[Proof for $M$ compact]
-\textit{(Lecture~21, ``two steps \ldots\ totally different. The technology, the ideas are totally different.'' Part~I in the lecture's steps with details filled in; in Part~II the injectivity is the lecture's, and the immersion step is a homework problem, recorded here as Uribe sketched it and to be filled in after the assignment.)}
-
-\emph{Part I: an embedding $M \to \mathbb{R}^k$ for some $k$.} ``We're going to use bump functions'' --- ``this idea of partition of unity \ldots\ is kind of behind it.''
+\begin{proof}
+\textit{(Lecture~21, Part~I of the proof of Theorem~\ref{thm:whitney}, in the lecture's steps with details filled in.)} ``We're going to use bump functions'' --- ``this idea of partition of unity \ldots\ is kind of behind it.''
 
 \emph{The cover.} For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ --- possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, ``and then I pull it back.'' Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition~\ref{prop:bump-existence}). The \emph{open} balls $B_x$ cover $M$ --- in lecture Uribe first wrote the cover with the $U_x$, and corrected it: ``I want to put a $B$. It's very important.'' $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
 
@@ -18969,27 +18988,8 @@ F = \big(\chi_1\varphi_1, \ldots, \chi_n\varphi_n, \chi_1, \ldots, \chi_n\big) :
 \emph{$F$ is an immersion.} Write $F = (F_1, \ldots, F_n, \chi_1, \ldots, \chi_n)$ with $F_j = \chi_j\varphi_j : M \to \mathbb{R}^m$. Let $p \in M$, $v \in T_pM$, and $\gamma$ a curve with $\gamma(0) = p$ and $D_\gamma = v$ (Theorem~\ref{thm:every-vector-velocity}). ``Use curves'': $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(\gamma(t)) = (v_1, \ldots, v_n, \ldots)$, with $v_j = d(F_j)_p(v) \in \mathbb{R}^m$, componentwise. Choose $i$ with $p \in B_i$. Then $\chi_i \equiv 1$ on the open set $B_i \ni p$, so $F_i = \varphi_i$ near $p$ and $v_i = d(\varphi_i)_p(v)$ --- equivalently $d(\chi_i)_p = 0$, since $\chi_i \equiv 1$ in a neighbourhood of $p$. As $\varphi_i$ is a diffeomorphism onto its image (Proposition~\ref{prop:chart-diffeo}), $v \neq 0$ gives $v_i \neq 0$, so $dF_p(v) \neq 0$: $dF_p$ is injective.
 
 \emph{An embedding.} An injective immersion of a compact manifold is an embedding (Corollary~\ref{cor:compact-embedding}). ``End of Part~I.''
-
-\emph{Part II: lower the ambient dimension.} By Part~I, assume $M \subseteq \mathbb{R}^N$ is a regular submanifold (the image of the embedding). Regard $\mathbb{R}^{N-1} \subseteq \mathbb{R}^N$ by $x \mapsto (x, 0)$. To every line $\ell \subseteq \mathbb{R}^N$ through $0$ that is transverse to $\mathbb{R}^{N-1}$, that is, not contained in it, so that $\mathbb{R}^N = \mathbb{R}^{N-1} \oplus \ell$, associate the projection along $\ell$, a linear map $\mathbb{R}^N \to \mathbb{R}^{N-1}$ with kernel $\ell$, and its restriction
-\[
-\pi_\ell : M \longrightarrow \mathbb{R}^{N-1} .
-\]
-(``Do you guys know the difference between complementary and supplementary? I learned that in elementary school, and I'm still trying to figure out what the difference is.'') We want: \emph{if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embedding.} Applying this repeatedly lowers $N$ to $2m + 1$, ``until we're out of parameters.''
-
-\emph{Injectivity.} ``The clever idea'': let $\Delta = \{ (p, p) : p \in M \}$, closed in $M \times M$ since $M$ is Hausdorff, and
-\[
-\sigma : (M \times M) \setminus \Delta \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, q) \longmapsto \operatorname{span}(q - p),
-\]
-the line through $0$ parallel to the secant from $p$ to $q$, ``the vector $\vec{pq}$, as in Calc~3''; $q - p \neq 0$ because $p \neq q$. \textit{(Filled in.)} $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary~\ref{cor:rpn-atlas} is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary~\ref{cor:sard-low-dim}). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension --- ``the things that are not transverse to $\mathbb{R}^{N-1}$ is a projective space of lower dimension'' --- whose image under the smooth inclusion has measure zero by the same corollary. A union of two sets of measure zero has measure zero (Proposition~\ref{prop:measure-zero-every-chart}), so its complement is dense (Lemma~\ref{lem:measure-zero-basic}(4), in charts): ``pick $\ell$ not in the image and transverse to $\mathbb{R}^{N-1}$.'' For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. ``I'm going to lose injectivity precisely when I have a $p$ and a $q$ parallel to the line of projection.'' The condition $2m < N - 1$ is $N > 2m + 1$, ``precisely the bound.''
-
-\emph{Immersion.} \textit{(The homework problem; Uribe's sketch, to be filled in after the assignment.)} ``The same idea \ldots\ instead of pairs $(p, q)$ to create a line, you take tangent vectors. You take $p$ and $q$ infinitesimally close together'': map nonzero tangent vectors to lines,
-\[
-TM \setminus \mathcal{Z} \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, v) \longmapsto \mathbb{R}v ,
-\]
-with $T_pM \subseteq \mathbb{R}^N$ (``in the homework you replace this by $v$ of length one''), and choose $\ell$ also outside its image. ``What remains to be proved is that if you have a line that is not in here, then you get an immersion, and that's going to be precisely because the differential of the projection is just the projection.'' To be filled.
-
-\emph{Conclusion.} With $\ell$ chosen outside both images, $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an injective immersion of a compact manifold, hence an embedding (Corollary~\ref{cor:compact-embedding}). Repeat while $N > 2m + 1$. The immersion into $\mathbb{R}^{2m}$ is part of the same homework, and is likewise to be filled.
 \end{proof}
+
 
 \begin{center}
 \begin{tikzpicture}[scale=1.1]
@@ -19006,6 +19006,26 @@ with $T_pM \subseteq \mathbb{R}^N$ (``in the homework you replace this by $v$ of
 \end{center}
 
 Uribe's cartoon for injectivity: $\chi_i \equiv 1$ on $\overline{B}_i$ (``it could be one a little bit outside too''), and zero outside $U_i$. So $\chi_i(q) = 1$ forces $q \in U_i$, where the chart $\varphi_i$ separates points.
+
+
+\textit{Part~II: lower the ambient dimension.} By Lemma~\ref{lem:compact-embeds}, a compact $M$ may be taken to be a regular submanifold $M \subseteq \mathbb{R}^N$ (the image of the embedding, Theorem~\ref{thm:embedding-image}). Regard $\mathbb{R}^{N-1} \subseteq \mathbb{R}^N$ by $x \mapsto (x, 0)$. To every line $\ell \subseteq \mathbb{R}^N$ through $0$ that is transverse to $\mathbb{R}^{N-1}$, that is, not contained in it, so that $\mathbb{R}^N = \mathbb{R}^{N-1} \oplus \ell$, associate the projection along $\ell$, a linear map $\mathbb{R}^N \to \mathbb{R}^{N-1}$ with kernel $\ell$, and its restriction
+\[
+\pi_\ell : M \longrightarrow \mathbb{R}^{N-1} .
+\]
+(``Do you guys know the difference between complementary and supplementary? I learned that in elementary school, and I'm still trying to figure out what the difference is.'') We want: \emph{if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embedding.} Applying this repeatedly lowers $N$ to $2m + 1$, ``until we're out of parameters.''
+
+\begin{lembox}[Projections That Stay Injective]\thmlabel{lem:projection-injective}
+Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N > 2m + 1$. Then the lines $\ell \subseteq \mathbb{R}^N$ through $0$ for which $\ell \subseteq \mathbb{R}^{N-1}$, or $\pi_\ell : M \to \mathbb{R}^{N-1}$ is not injective, form a set of measure zero in $\mathbb{RP}^{N-1}$. In particular there are lines $\ell \not\subseteq \mathbb{R}^{N-1}$ with $\pi_\ell$ injective.
+\leeref{Lemma 6.13}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~21, Part~II of the proof of Theorem~\ref{thm:whitney}.)} ``The clever idea'': let $\Delta = \{ (p, p) : p \in M \}$, closed in $M \times M$ since $M$ is Hausdorff, and
+\[
+\sigma : (M \times M) \setminus \Delta \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, q) \longmapsto \operatorname{span}(q - p),
+\]
+the line through $0$ parallel to the secant from $p$ to $q$, ``the vector $\vec{pq}$, as in Calc~3''; $q - p \neq 0$ because $p \neq q$. \textit{(Filled in.)} $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary~\ref{cor:rpn-atlas} is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary~\ref{cor:sard-low-dim}). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension --- ``the things that are not transverse to $\mathbb{R}^{N-1}$ is a projective space of lower dimension'' --- whose image under the smooth inclusion has measure zero by the same corollary. A union of two sets of measure zero has measure zero (Proposition~\ref{prop:measure-zero-every-chart}), so its complement is dense (Lemma~\ref{lem:measure-zero-basic}(4), in charts): ``pick $\ell$ not in the image and transverse to $\mathbb{R}^{N-1}$.'' For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. ``I'm going to lose injectivity precisely when I have a $p$ and a $q$ parallel to the line of projection.'' The condition $2m < N - 1$ is $N > 2m + 1$, ``precisely the bound.''
+\end{proof}
 
 \begin{center}
 \begin{tikzpicture}[scale=1.1]
@@ -19052,6 +19072,39 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 \textit{(Not from lecture; figure added.)} Why the bound is $2m + 1$. For a curve ($m = 1$) in $\mathbb{R}^3$ ($N = 3$), $(M \times M) \setminus \Delta$ has dimension $2m = 2 = N - 1$, so the secant directions $\sigma(p, q)$ can fill an open set of $\mathbb{RP}^2$ and Corollary~\ref{cor:sard-low-dim} does not apply. Indeed, projecting a curve in space onto a plane along $\ell$ typically produces crossings: here $q - p$ is parallel to $\ell$, and $\pi_\ell(p) = \pi_\ell(q)$. The shadow is still an immersed curve, matching the immersion into $\mathbb{R}^{2m}$ of Theorem~\ref{thm:whitney}, but not an embedded one.
 %% <<< END ADDED
 
+\begin{lembox}[Projections That Stay Immersions]\thmlabel{lem:projection-immersion}
+Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N > 2m + 1$. Then the lines $\ell \subseteq \mathbb{R}^N$ through $0$ for which $\ell \subseteq \mathbb{R}^{N-1}$, or $\pi_\ell : M \to \mathbb{R}^{N-1}$ is not an immersion, form a set of measure zero in $\mathbb{RP}^{N-1}$.
+\leeref{Lemma 6.13}
+\end{lembox}
+
+\begin{proof}[Proof (to be filled)]
+\textit{(A homework problem. Uribe's sketch from Lecture~21 is recorded as given; the proof is to be filled in after the assignment is submitted.)} ``The same idea \ldots\ instead of pairs $(p, q)$ to create a line, you take tangent vectors. You take $p$ and $q$ infinitesimally close together'': map nonzero tangent vectors to lines,
+\[
+TM \setminus \mathcal{Z} \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, v) \longmapsto \mathbb{R}v ,
+\]
+with $T_pM \subseteq \mathbb{R}^N$ (``in the homework you replace this by $v$ of length one''), and choose $\ell$ also outside its image. ``What remains to be proved is that if you have a line that is not in here, then you get an immersion, and that's going to be precisely because the differential of the projection is just the projection.'' To be filled.
+\end{proof}
+
+\begin{thmbox}[The Whitney Embedding and Immersion Theorems]\thmlabel{thm:whitney}
+Let $M$ be a smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
+\leeref{Theorems 6.15 and 6.18}
+\end{thmbox}
+
+``In other words, any manifold is diffeomorphic to a submanifold of some Euclidean space'' (Theorem~\ref{thm:embedding-image}). The course proves it for $M$ compact. The noncompact case, which first makes the embedding proper, is assigned as reading in Lee (Lemma~6.14 and Theorem~6.15): ``he has a beautiful picture.''
+
+\begin{rembox}[The Hard Version]\label{rem:strong-whitney}
+In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). ``We will not discuss this at all. The proof is very specialized and really long \ldots\ The smaller the codimension, the tighter it is, and you have to wrestle the manifold more to get it in there. It's like packing your clothes in a suitcase.''
+\end{rembox}
+
+\begin{proof}[Proof for $M$ compact]
+\textit{(Lecture~21, ``two steps \ldots\ totally different. The technology, the ideas are totally different.'' The steps are Lemma~\ref{lem:compact-embeds} and Lemmas~\ref{lem:projection-injective}--\ref{lem:projection-immersion}; the immersion lemma is a homework problem, to be filled in after the assignment.)}
+
+\emph{Step 1: some Euclidean space.} By Lemma~\ref{lem:compact-embeds} there is an embedding $M \to \mathbb{R}^N$ for some $N$. Its image is a regular submanifold diffeomorphic to $M$ (Theorem~\ref{thm:embedding-image}); replace $M$ by it.
+
+\emph{Step 2: one dimension less.} Suppose $N > 2m + 1$. By Lemmas~\ref{lem:projection-injective} and~\ref{lem:projection-immersion}, the lines $\ell$ that lie in $\mathbb{R}^{N-1}$, or for which $\pi_\ell$ is not injective, or not an immersion, form the union of two sets of measure zero in $\mathbb{RP}^{N-1}$, which has measure zero (Proposition~\ref{prop:measure-zero-every-chart}). A set of measure zero contains no nonempty open set (Lemma~\ref{lem:measure-zero-basic}(4), in a chart), so it is not all of $\mathbb{RP}^{N-1}$: choose $\ell$ outside it. Then $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an injective immersion of a compact manifold, hence an embedding (Corollary~\ref{cor:compact-embedding}), and its image is a regular submanifold of $\mathbb{R}^{N-1}$ diffeomorphic to $M$.
+
+\emph{Step 3: repeat.} Apply Step~2 while $N > 2m + 1$, lowering $N$ by one each time, ``until we're out of parameters'': this ends with an embedding $M \to \mathbb{R}^{2m+1}$. The immersion into $\mathbb{R}^{2m}$ is part of the same homework, and is likewise to be filled.
+\end{proof}
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}

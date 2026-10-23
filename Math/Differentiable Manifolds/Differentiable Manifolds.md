@@ -129,7 +129,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§53
 - [[The Lie Algebra Is the Tangent Space at the Identity]] (§57.7)
 - [[Sard's Theorem]] (§59.3)
 - [[Parametric Transversality Theorem]] (§60.1)
-- [[Whitney Embedding Theorem]] (§61.1)
+- [[Whitney Embedding Theorem]] (§61.4)
 
 ## Summaries
 - [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]] (every homework problem broken into small questions) and [[Differentiable Manifolds Notes Drill]] (definitions, core proofs, class exercises, equivalences).
