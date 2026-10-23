@@ -37,7 +37,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§37 Regular Submanifolds#^prop-37-16|Proposition §37.16: Normal Spaces Under a Transverse Map]]
 - [[§37 Regular Submanifolds#^cor-37-17|Corollary §37.17: Special Cases of Transversality]]
-- [[§52 Critical Points and the Hessian#^cor-52-11|Corollary §52.11: Critical Points of a Morse Function Are Isolated]]
+- [[§52 Critical Points and the Hessian#^cor-52-12|Corollary §52.12: Critical Points of a Morse Function Are Isolated]]
 - [[§60 Parametric Transversality#^thm-60-1|Theorem §60.1: Parametric Transversality]]
 
 ## Connections

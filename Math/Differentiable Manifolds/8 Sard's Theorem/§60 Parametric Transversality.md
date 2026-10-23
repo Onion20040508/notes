@@ -5,7 +5,7 @@ chapter: 8
 section: 60
 tags: [differentiable-manifolds, math591]
 ---
-← [[§59 Sard's Theorem]] · ↑ [[· 8 Sard's Theorem]]
+← [[§59 Sard's Theorem]] · ↑ [[· 8 Sard's Theorem]] · [[§61 The Whitney Embedding Theorem]] →
 
 *Stage: analysis — Transversality of a whole family passes, by Sard's theorem, to almost every member.*
 
@@ -84,11 +84,11 @@ The cartoon, in $S \times M$ with $S$ horizontal. $W = F^{-1}(Z)$ is the orange 
 ^cor-60-2
 
 > [!proof]+ Proof
-> *(Lecture 20: “pairing this with Sard's theorem”.)* By Sard's theorem (Theorem [[§59 Sard's Theorem#^thm-59-1|§59.1]]) applied to $\pi : W \to S$, the singular values of $\pi$ form a set of measure zero; for every other $s$, $F_s \pitchfork Z$ by Theorem [[§60 Parametric Transversality#^thm-60-1|§60.1]].
+> *(Lecture 20: “pairing this with Sard's theorem”.)* By Sard's theorem (Theorem [[§59 Sard's Theorem#^thm-59-3|§59.3]]) applied to $\pi : W \to S$, the singular values of $\pi$ form a set of measure zero; for every other $s$, $F_s \pitchfork Z$ by Theorem [[§60 Parametric Transversality#^thm-60-1|§60.1]].
 
 ^pf-60-2
 
-*Uses:* [[§59 Sard's Theorem#^thm-59-1|§59.1]], [[§60 Parametric Transversality#^thm-60-1|§60.1]]
+*Uses:* [[§59 Sard's Theorem#^thm-59-3|§59.3]], [[§60 Parametric Transversality#^thm-60-1|§60.1]]
 
 “You go from transversality of the family to transversality of individual elements in the family. That's the beauty of this.”
 

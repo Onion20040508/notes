@@ -30,7 +30,7 @@ tags: [differentiable-manifolds, hub]
 - [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-1|Proposition §40.1: The Normal Bundle Is a Submanifold]]
 - [[§45 The Unit Quaternions and SU(2)#^prop-45-4|Proposition §45.4: The Unit Quaternions]]
 - [[§46 SU(2) → SO(3)꞉ The Double Cover#^prop-46-1|Proposition §46.1: Conjugation by Unit Quaternions Is Rotation]]
-- [[§59 Sard's Theorem#^thm-59-1|Theorem §59.1: Sard's Theorem]]
+- [[§59 Sard's Theorem#^thm-59-3|Theorem §59.3: Sard's Theorem]]
 
 ## Connections
 - **Used for.** Every fibre of a submersion is a submanifold ([[§37 Regular Submanifolds#^cor-37-13|§37.13]]), in particular every fibre of a fibration ([[§38 Fibrations#^prop-38-2|§38.2]]). It contains the Euclidean versions, with the same smooth structure and tangent spaces ([[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§37 Regular Submanifolds#^rem-37-3|The Regular Value Theorems — Old and New]]).

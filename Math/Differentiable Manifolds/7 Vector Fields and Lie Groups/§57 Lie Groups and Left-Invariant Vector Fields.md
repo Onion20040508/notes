@@ -410,7 +410,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 > \mathbf{X}^B = \sum_{l,n} \Big( \sum_m x^l_m\, b^m_n \Big) \frac{\partial}{\partial x^l_n},
 > $$
 >
-> with independent indices for the second field, “because these are independent.” The $a^k_j$ and $b^m_n$ are constants; the $x$'s are functions. (A student asked why the sums can come out of the commutator: “because the commutator is bilinear \ldots over constants, \ldots but you cannot pull the $x$'s out, because those are functions.”)
+> with independent indices for the second field, “because these are independent.” The $a^k_j$ and $b^m_n$ are constants; the $x$'s are functions. (A student asked why the sums can come out of the commutator: “because the commutator is bilinear … over constants, … but you cannot pull the $x$'s out, because those are functions.”)
 >
 > *The bracket.* “We know that we don't care about the second derivatives because they're going to go away” (Lemma [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]]): by Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], the coefficient of $\partial/\partial x^l_n$ in $[\mathbf{X}^A, \mathbf{X}^B]$ is $\mathbf{X}^A$ applied to the coefficient of $\mathbf{X}^B$, minus the same with $A$ and $B$ exchanged. Applying the basic computation,
 >
@@ -418,7 +418,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 > \mathbf{X}^A\Big( \sum_m x^l_m\, b^m_n \Big) = \sum_{i,j,k,m} x^i_k\, a^k_j\, b^m_n\, \delta_{il}\, \delta_{jm} = \sum_{k} x^l_k \Big( \sum_j a^k_j\, b^j_n \Big) = \sum_k x^l_k\, (AB)^k_n :
 > $$
 >
-> setting $i = l$ and $m = j$ is all that happens, and then “these two guys together \ldots it's an entry of a matrix”, the $(k, n)$ entry of $AB$. So
+> setting $i = l$ and $m = j$ is all that happens, and then “these two guys together … it's an entry of a matrix”, the $(k, n)$ entry of $AB$. So
 >
 > $$
 > [\mathbf{X}^A, \mathbf{X}^B] = \sum_{l,n} \Big( \sum_k x^l_k\, (AB)^k_n \Big) \frac{\partial}{\partial x^l_n} - \big(\text{the same with } A \text{ and } B \text{ exchanged}\big) = \mathbf{X}^{AB} - \mathbf{X}^{BA},
@@ -436,7 +436,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§55 Lie Bracket and L
 
 *Uses:* [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11|§57.11]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^ex-57-1|Ex. §57.1]], [[§55 Lie Bracket and Lie Algebra#^lem-55-1|§55.1]], [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-6|Def. §57.6]]
 
-“You have to think about this on your own \ldots think about indices and so on. But this is essentially the reason.” Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset of $\operatorname{Mat}(d,\mathbb{R})$ is linear in $X$, and the bracket of the linear fields $X \mapsto XA$ and $X \mapsto XB$ is the linear field $X \mapsto X(AB - BA)$.
+“You have to think about this on your own … think about indices and so on. But this is essentially the reason.” Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset of $\operatorname{Mat}(d,\mathbb{R})$ is linear in $X$, and the bracket of the linear fields $X \mapsto XA$ and $X \mapsto XB$ is the linear field $X \mapsto X(AB - BA)$.
 
 > [!remark]- Connections
 > - The commutator Lie algebra of matrices: [[§55 Lie Bracket and Lie Algebra#^ex-55-2|Ex. §55.2]].
@@ -602,13 +602,13 @@ Next: the commutator, “first for the general linear group, and then … for an
 ^thm-57-11
 
 > [!proof]+ Proof
-> *(Lecture 19.)* “By assumption, $G$ is included in some general linear group \ldots as a Lie subgroup, and the differential of the inclusion map at the identity is the inclusion” $di_I : T_IG \hookrightarrow \mathfrak{gl}(d, \mathbb{R})$. The inclusion is a Lie group morphism (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|§57.8]]): smooth by hypothesis, and a group morphism because the product on $G$ is matrix multiplication. So by Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10|§57.10]], for $A, B \in T_IG$,
+> *(Lecture 19.)* “By assumption, $G$ is included in some general linear group … as a Lie subgroup, and the differential of the inclusion map at the identity is the inclusion” $di_I : T_IG \hookrightarrow \mathfrak{gl}(d, \mathbb{R})$. The inclusion is a Lie group morphism (Definition [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-8|§57.8]]): smooth by hypothesis, and a group morphism because the product on $G$ is matrix multiplication. So by Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-10|§57.10]], for $A, B \in T_IG$,
 >
 > $$
 > di_I\big([A, B]_G\big) = \big[di_I(A), di_I(B)\big]_{\mathrm{GL}(d,\mathbb{R})} = di_I(A)\, di_I(B) - di_I(B)\, di_I(A),
 > $$
 >
-> the last step by Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. “If we know that the bracket for the general linear group is a commutator, then for every linear group, it's got to be the commutator too, \ldots just some algebra.” *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
+> the last step by Theorem [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-8|§57.8]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. “If we know that the bracket for the general linear group is a commutator, then for every linear group, it's got to be the commutator too, … just some algebra.” *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
 
 ^pf-57-11
 

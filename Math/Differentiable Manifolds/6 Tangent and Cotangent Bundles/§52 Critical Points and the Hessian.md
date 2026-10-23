@@ -475,7 +475,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 
 ^pf-52-6
 
-*Uses:* [[§52 Critical Points and the Hessian#^def-52-6|Def. §52.6]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-8|§37.8]], [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]]
+*Uses:* [[§52 Critical Points and the Hessian#^def-52-6|Def. §52.6]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-8|§37.8]], [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], [[§50 The Cotangent Bundle#^prop-50-1|§50.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]
 
 > [!remark] Remark: Extreme Cases of the Conormal Bundle
 > *(Not from the assignment.)* The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is. The two extreme values of $k$:
@@ -512,11 +512,35 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 *Uses:* [[§36 Submersions#^def-36-5|Def. §36.5]], [[§52 Critical Points and the Hessian#^def-52-6|Def. §52.6]], [[§37 Regular Submanifolds#^prop-37-18|§37.18]]
 
 > [!remark] Remark: Critical Points and Lagrange Multipliers in the Conormal Bundle
-> *(Not from the assignment.)* For $S = M$ the conormal bundle is the zero section (the remark *Extreme Cases of the Conormal Bundle*), and Corollary [[§52 Critical Points and the Hessian#^cor-52-7|§52.7]] reads $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$: this is the starting point of the next subsection, Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](1) later in this section, where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]]). *Lagrange multipliers.* For $S = G^{-1}(0)$, each fibre $N_pS$ has the basis $dG^1|_p, \ldots, dG^k|_p$ (Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]]), so $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$ is a bijection $S \times \mathbb{R}^k \to N^{\ast}S$; at a critical point $p$, the multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem [[§37 Regular Submanifolds#^thm-37-20|§37.20]] are the coordinates of the point $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in this basis.
+> *(Not from the assignment.)* For $S = M$ the conormal bundle is the zero section (the remark *Extreme Cases of the Conormal Bundle*), and Corollary [[§52 Critical Points and the Hessian#^cor-52-7|§52.7]] reads $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$: this is the starting point of the next subsection, Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](1) later in this section, where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]]). *Lagrange multipliers.* For $S = G^{-1}(0)$, each fibre $N_pS$ has the basis $dG^1|_p, \ldots, dG^k|_p$ (Proposition [[§37 Regular Submanifolds#^prop-37-19|§37.19]]), so $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$ is a bijection $S \times \mathbb{R}^k \to N^{\ast}S$; at a critical point $p$, the multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem [[§37 Regular Submanifolds#^thm-37-20|§37.20]] are the coordinates of the point $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in this basis.
 
 ^rem-52-3
 
-> [!theorem] Proposition §52.8: The Vertical Space of $T^*M$ Along the Zero Section
+> [!theorem] Lemma §52.8: The Fibre Inclusion of $T^{\ast}M$
+> Let $p \in M$, give $T_p^{\ast}M$ its standard smooth structure (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]), and let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart at $p$. Then $L_p : T_p^{\ast}M \to \mathbb{R}^m$, $L_p(\eta) = (\eta_1, \ldots, \eta_m)$ with $\eta_j = \eta\big(\partial/\partial x^j|_p\big)$, is a smooth chart of $T_p^{\ast}M$, and the fibre inclusion
+>
+> $$
+> \iota_p : T_p^{\ast}M \longrightarrow T^{\ast}M, \qquad \iota_p(\eta) = (p, \eta),
+> $$
+>
+> is smooth; in the charts $L_p$ and $\hat\varphi$ it is $b \mapsto (\varphi(p), b)$.
+
+^lem-52-8
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Let $L_p : T_p^{\ast}M \to \mathbb{R}^m$, $L_p(\eta) = (\eta_1, \ldots, \eta_m)$, be the map to components. It is linear, since covectors are evaluated pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), and bijective, with inverse $b \mapsto \sum_j b_j\, dx^j|_p$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]); so it is a linear coordinate system (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|§22.1]]), hence a smooth chart of $T_p^{\ast}M$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]). The image of $\iota_p$ lies in $T^{\ast}U$, and by the inverse formula of Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]] (the point $\varphi^{-1}(\varphi(p)) = p$ with the covector $\sum_j b_j\, dx^j|_p$),
+>
+> $$
+> \hat\varphi \circ \iota_p \circ L_p^{-1}(b) = \hat\varphi\Big(p, \sum_{j=1}^m b_j\, dx^j\big|_p\Big) = \big(\varphi(p), b\big), \qquad b \in \mathbb{R}^m ,
+> $$
+>
+> a smooth map (constant first components, identity last components). And $\iota_p = \hat\varphi^{-1} \circ (\hat\varphi \circ \iota_p \circ L_p^{-1}) \circ L_p$ is continuous, a composite of continuous maps ($\hat\varphi$ is a homeomorphism, Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]). So $\iota_p$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]], with the charts $L_p$ and $\hat\varphi$).
+
+^pf-52-8
+
+*Uses:* [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
+
+> [!theorem] Proposition §52.9: The Vertical Space of $T^*M$ Along the Zero Section
 > Let $p \in M$, $(U, \varphi)$ a chart at $p$, and $(\bar x^i, \xi_j)$ the standard coordinates on $T^{\ast}U$.
 >
 > 1. $\pi_{\ast(p,0)}\big(\partial/\partial \bar x^i|_{(p,0)}\big) = \partial/\partial x^i|_p$ and $\pi_{\ast(p,0)}\big(\partial/\partial \xi_j|_{(p,0)}\big) = 0$. Hence the vertical space (Definition [[§38 Fibrations#^def-38-5|§38.5]]) is
@@ -547,7 +571,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 >
 > The space $V_{(p,0)}$, the map $j_p$ and the splitting are defined without charts; the coordinates only compute them. So, canonically, $T_{(p,0)}(T^{\ast}M) \cong T_{(p,0)}\mathcal{Z} \oplus T_p^{\ast}M$.
 
-^prop-52-8
+^prop-52-9
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in. The submitted solution uses the basis $\partial/\partial \bar x^i, \partial/\partial \xi_j$ directly; this proposition says what the two halves of the basis span.)*
@@ -563,6 +587,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > 0 & \cdots & 1 & 0 & \cdots & 0
 > \end{array}\right) .
 > $$
+>
 > By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], applied to $\pi$ with the source chart $\hat\varphi$ (coordinates $\bar x^1, \ldots, \xi_m$) and the target chart $\varphi$, with $\pi(T^{\ast}U) \subseteq U$, the columns of this matrix give
 >
 > $$
@@ -571,13 +596,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 >
 > Now let $w = \sum_i a^i\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j b_j\, \partial/\partial \xi_j|_{(p,0)}$ be any tangent vector at $(p, 0)$. By linearity, $\pi_{\ast(p,0)}w = \sum_i a^i\, \partial/\partial x^i|_p$, which is $0$ exactly when all $a^i = 0$, the $\partial/\partial x^i|_p$ being a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). So $\ker \pi_{\ast(p,0)}$ consists of the combinations of the $\partial/\partial \xi_j|_{(p,0)}$ alone; these $m$ vectors are part of a basis, hence independent, and $\dim V_{(p,0)} = m$.
 >
-> *(2) $\iota_p$ is smooth.* Let $L_p : T_p^{\ast}M \to \mathbb{R}^m$, $L_p(\eta) = (\eta_1, \ldots, \eta_m)$, be the map to components. It is linear, since covectors are evaluated pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), and bijective, with inverse $b \mapsto \sum_j b_j\, dx^j|_p$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]); so it is a linear coordinate system (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|§22.1]]), hence a smooth chart of $T_p^{\ast}M$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]). The image of $\iota_p$ lies in $T^{\ast}U$, and by the inverse formula of Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]] (the point $\varphi^{-1}(\varphi(p)) = p$ with the covector $\sum_j b_j\, dx^j|_p$),
->
-> $$
-> \hat\varphi \circ \iota_p \circ L_p^{-1}(b) = \hat\varphi\Big(p, \sum_{j=1}^m b_j\, dx^j\big|_p\Big) = \big(\varphi(p), b\big), \qquad b \in \mathbb{R}^m ,
-> $$
->
-> a smooth map (constant first components, identity last components). And $\iota_p = \hat\varphi^{-1} \circ (\hat\varphi \circ \iota_p \circ L_p^{-1}) \circ L_p$ is continuous, a composite of continuous maps ($\hat\varphi$ is a homeomorphism, Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]]). So $\iota_p$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]], with the charts $L_p$ and $\hat\varphi$).
+> *(2) $\iota_p$ is smooth* by Lemma [[§52 Critical Points and the Hessian#^lem-52-8|§52.8]], which also gives the chart $L_p(\eta) = (\eta_1, \ldots, \eta_m)$ of $T_p^{\ast}M$ used below.
 >
 > *(2) The formula for $j_p$.* Let $\eta \in T_p^{\ast}M$ and $E = j_p(\eta)$, a derivation at $\iota_p(0) = (p, 0)$. By the universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) in the chart $\hat\varphi$, $E = \sum_i E[\bar x^i]\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j E[\xi_j]\, \partial/\partial \xi_j|_{(p,0)}$, so it suffices to compute the values of $E$ on the coordinate functions. For a function $g$ smooth near $(p, 0)$, the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and of $D_\eta|_0$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]) give
 >
@@ -603,13 +622,13 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 >
 > with the first summand in $T_{(p,0)}\mathcal{Z}$ by Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](3). By uniqueness of the decomposition, $w^{\mathrm{hor}} = \sum_i a^i\, \partial/\partial \bar x^i|_{(p,0)}$ and $w^{\mathrm{ver}} = \eta$. Finally, $\pi$, $\zeta$, $\iota_p$ and $D_\eta|_0$ are all defined without charts, hence so are $V_{(p,0)} = \ker \pi_{\ast(p,0)}$, $T_{(p,0)}\mathcal{Z} = \zeta_{\ast p}(T_pM)$, $j_p$ and the decomposition.
 
-^pf-52-8
+^pf-52-9
 
-*Uses:* [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-1|§50.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§38 Fibrations#^prop-38-5|§38.5]]
+*Uses:* [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§38 Fibrations#^prop-38-5|§38.5]], [[§52 Critical Points and the Hessian#^lem-52-8|§52.8]]
 
 ## The Differential of $df$ and Transversality
 
-> [!theorem] Proposition §52.9: The Differential of $df$ at a Critical Point
+> [!theorem] Proposition §52.10: The Differential of $df$ at a Critical Point
 > Let $s_f : M \to T^{\ast}M$, $s_f(p) = (p, df_p)$, be the one-form $df$ regarded as a map.
 >
 > 1. $s_f$ is a smooth section of $\pi : T^{\ast}M \to M$, and $s_f^{-1}(\mathcal{Z}) = \operatorname{Crit}(f)$.
@@ -634,7 +653,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > H_{m1}(q) & \cdots & H_{mm}(q)
 > \end{array}\right) .
 > $$
-> 3. If $p \in \operatorname{Crit}(f)$, then $s_f(p) = (p, 0)$, and for $v \in T_pM$, in the splitting of Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](3),
+> 3. If $p \in \operatorname{Crit}(f)$, then $s_f(p) = (p, 0)$, and for $v \in T_pM$, in the splitting of Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](3),
 >
 > $$
 > (s_f)_{\ast p}v = \zeta_{\ast p}v + j_p\big(\operatorname{Hess}_p f(v, \cdot\,)\big):
@@ -642,7 +661,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 >
 > the vertical part of $(s_f)_{\ast p}v$ is $\operatorname{Hess}_p f(v, \cdot\,) = (\operatorname{Hess}_p f)^\flat(v) \in T_p^{\ast}M$.
 
-^prop-52-9
+^prop-52-10
 
 > [!proof]+ Proof
 > *(Assignment 5, Problem 3: the submitted solution's computation of $w_i = (s_f)_{\ast p}(\partial/\partial x^i|_p)$, written out; (3) is filled in.)*
@@ -669,7 +688,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > (s_f)_{\ast p}v = \sum_{i=1}^m v^i\, \frac{\partial}{\partial \bar x^i}\Big|_{(p,0)} + \sum_{j=1}^m \Big(\sum_{i=1}^m H_{ij}(p)\, v^i\Big) \frac{\partial}{\partial \xi_j}\Big|_{(p,0)} .
 > $$
 >
-> By the coordinate formula of Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](3), its horizontal part is $\sum_i v^i\, \partial/\partial \bar x^i|_{(p,0)}$, which is $\zeta_{\ast p}v$ by Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](2) and linearity, and its vertical part is the covector $\eta = \sum_j \big(\sum_i H_{ij}(p)\, v^i\big)\, dx^j|_p$, with components $\eta_j = \sum_i H_{ij}(p)\, v^i$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). On the other hand, $\operatorname{Hess}_p f(v, \cdot\,) = (\operatorname{Hess}_p f)^\flat(v)$ (Definition [[§21 Linear Algebra Toolkit#^def-21-4|§21.4]]), and $(\operatorname{Hess}_p f)^\flat$ is linear with $(\operatorname{Hess}_p f)^\flat(\partial/\partial x^i|_p) = \sum_j H_{ij}(p)\, dx^j|_p$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]](1)); so
+> By the coordinate formula of Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](3), its horizontal part is $\sum_i v^i\, \partial/\partial \bar x^i|_{(p,0)}$, which is $\zeta_{\ast p}v$ by Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](2) and linearity, and its vertical part is the covector $\eta = \sum_j \big(\sum_i H_{ij}(p)\, v^i\big)\, dx^j|_p$, with components $\eta_j = \sum_i H_{ij}(p)\, v^i$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). On the other hand, $\operatorname{Hess}_p f(v, \cdot\,) = (\operatorname{Hess}_p f)^\flat(v)$ (Definition [[§21 Linear Algebra Toolkit#^def-21-4|§21.4]]), and $(\operatorname{Hess}_p f)^\flat$ is linear with $(\operatorname{Hess}_p f)^\flat(\partial/\partial x^i|_p) = \sum_j H_{ij}(p)\, dx^j|_p$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]](1)); so
 >
 > $$
 > \operatorname{Hess}_p f(v, \cdot\,) = \sum_{i=1}^m v^i\, (\operatorname{Hess}_p f)^\flat\Big(\frac{\partial}{\partial x^i}\Big|_p\Big) = \sum_{i=1}^m v^i \sum_{j=1}^m H_{ij}(p)\, dx^j\big|_p = \sum_{j=1}^m \Big(\sum_{i=1}^m H_{ij}(p)\, v^i\Big) dx^j\big|_p = \eta ,
@@ -677,25 +696,25 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 >
 > and the vertical part is $\eta = \operatorname{Hess}_p f(v, \cdot\,)$.
 
-^pf-52-9
+^pf-52-10
 
-*Uses:* [[§51 One-Forms#^prop-51-2|§51.2]], [[§51 One-Forms#^def-51-1|Def. §51.1]], [[§51 One-Forms#^prop-51-1|§51.1]], [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]]
+*Uses:* [[§51 One-Forms#^prop-51-2|§51.2]], [[§51 One-Forms#^def-51-1|Def. §51.1]], [[§51 One-Forms#^prop-51-1|§51.1]], [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]]
 
 So along the zero section the differential of $df$ consists of two pieces: the horizontal piece is the differential of the zero section, the same for every $f$, and the vertical piece is the Hessian. This is what makes the next theorem work.
 
-> [!theorem] Theorem §52.10: Transversality to the Zero Section
+> [!theorem] Theorem §52.11: Transversality to the Zero Section
 > Let $f : M \to \mathbb{R}$ be smooth. Then $s_f \pitchfork \mathcal{Z}$ (Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]]) if and only if every critical point of $f$ is nondegenerate, that is, if and only if $f$ is a Morse function. More precisely, for $p \in \operatorname{Crit}(f)$,
 >
 > $$
 > (s_f)_{\ast p}(T_pM) + T_{(p,0)}\mathcal{Z} = T_{(p,0)}(T^{\ast}M) \iff p \text{ is nondegenerate} .
 > $$
 
-^thm-52-10
+^thm-52-11
 
 > [!proof]+ Proof
-> *(Assignment 5, Problem 3(a). This proof runs through the vectors of the submitted solution and the splitting of Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]]; the submitted determinant follows as the second proof.)*
+> *(Assignment 5, Problem 3(a). This proof runs through the vectors of the submitted solution and the splitting of Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]; the submitted determinant follows as the second proof.)*
 >
-> *Reduction to one critical point.* By Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](1), $\mathcal{Z}$ is a regular submanifold of $T^{\ast}M$, and $s_f$ is smooth with $s_f^{-1}(\mathcal{Z}) = \operatorname{Crit}(f)$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](1)), and $s_f(p) = (p, 0)$ for $p \in \operatorname{Crit}(f)$. By Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]], $s_f \pitchfork \mathcal{Z}$ means that the displayed equality of subspaces of $T_{(p,0)}(T^{\ast}M)$ holds at every $p \in \operatorname{Crit}(f)$, with $T_{(p,0)}\mathcal{Z}$ standing for its image under the inclusion. So it suffices to prove the displayed equivalence for one $p \in \operatorname{Crit}(f)$. Fix it, a chart $(U, \varphi = (x^i))$ at $p$, and the standard coordinates on $T^{\ast}U$. Write $A = (s_f)_{\ast p}(T_pM) + T_{(p,0)}\mathcal{Z}$ and $T = T_{(p,0)}(T^{\ast}M)$.
+> *Reduction to one critical point.* By Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](1), $\mathcal{Z}$ is a regular submanifold of $T^{\ast}M$, and $s_f$ is smooth with $s_f^{-1}(\mathcal{Z}) = \operatorname{Crit}(f)$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](1)), and $s_f(p) = (p, 0)$ for $p \in \operatorname{Crit}(f)$. By Definition [[§37 Regular Submanifolds#^def-37-5|§37.5]], $s_f \pitchfork \mathcal{Z}$ means that the displayed equality of subspaces of $T_{(p,0)}(T^{\ast}M)$ holds at every $p \in \operatorname{Crit}(f)$, with $T_{(p,0)}\mathcal{Z}$ standing for its image under the inclusion. So it suffices to prove the displayed equivalence for one $p \in \operatorname{Crit}(f)$. Fix it, a chart $(U, \varphi = (x^i))$ at $p$, and the standard coordinates on $T^{\ast}U$. Write $A = (s_f)_{\ast p}(T_pM) + T_{(p,0)}\mathcal{Z}$ and $T = T_{(p,0)}(T^{\ast}M)$.
 >
 > *The vectors.* Put
 >
@@ -703,13 +722,13 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 > z_i = \frac{\partial}{\partial \bar x^i}\Big|_{(p,0)}, \qquad w_i = (s_f)_{\ast p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big), \qquad u_i = w_i - z_i \qquad (i = 1, \ldots, m).
 > $$
 >
-> The $z_i$ span $T_{(p,0)}\mathcal{Z}$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](3)). The $w_i$ span $(s_f)_{\ast p}(T_pM)$, the images of the basis $\partial/\partial x^i|_p$ under a linear map. By Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](2) at $q = p$,
+> The $z_i$ span $T_{(p,0)}\mathcal{Z}$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](3)). The $w_i$ span $(s_f)_{\ast p}(T_pM)$, the images of the basis $\partial/\partial x^i|_p$ under a linear map. By Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](2) at $q = p$,
 >
 > $$
 > u_i = w_i - z_i = \sum_{j=1}^m H_{ij}(p)\, \frac{\partial}{\partial \xi_j}\Big|_{(p,0)} \in V_{(p,0)} ,
 > $$
 >
-> and by Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](3) with $v = \partial/\partial x^i|_p$ (whose image under $\zeta_{\ast p}$ is $z_i$), $u_i = j_p\big(\operatorname{Hess}_p f(\partial/\partial x^i|_p, \cdot\,)\big)$.
+> and by Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](3) with $v = \partial/\partial x^i|_p$ (whose image under $\zeta_{\ast p}$ is $z_i$), $u_i = j_p\big(\operatorname{Hess}_p f(\partial/\partial x^i|_p, \cdot\,)\big)$.
 >
 > *$A$ in terms of the $u_i$.* The sum of two subspaces is the span of the union of spanning sets, so $A = \operatorname{Span}\{w_1, \ldots, w_m, z_1, \ldots, z_m\}$. This equals $\operatorname{Span}\{u_1, \ldots, u_m, z_1, \ldots, z_m\}$: each $u_i = w_i - z_i$ lies in the first span, and each $w_i = u_i + z_i$ in the second. Hence
 >
@@ -717,18 +736,18 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 > A = T_{(p,0)}\mathcal{Z} + S_H, \qquad S_H = \operatorname{Span}\{u_1, \ldots, u_m\} \subseteq V_{(p,0)} .
 > $$
 >
-> *$A = T$ if and only if $S_H = V_{(p,0)}$.* If $S_H = V_{(p,0)}$, then $A = T_{(p,0)}\mathcal{Z} + V_{(p,0)} = T$ by Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](3). Conversely, suppose $A = T$ and let $\nu \in V_{(p,0)}$. Then $\nu \in A$, so $\nu = z + u$ with $z \in T_{(p,0)}\mathcal{Z}$ and $u \in S_H \subseteq V_{(p,0)}$. Then $z = \nu - u \in V_{(p,0)}$, so $z \in T_{(p,0)}\mathcal{Z} \cap V_{(p,0)} = \{0\}$, the sum of Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](3) being direct. So $\nu = u \in S_H$, and $V_{(p,0)} \subseteq S_H$; the other inclusion holds by construction.
+> *$A = T$ if and only if $S_H = V_{(p,0)}$.* If $S_H = V_{(p,0)}$, then $A = T_{(p,0)}\mathcal{Z} + V_{(p,0)} = T$ by Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](3). Conversely, suppose $A = T$ and let $\nu \in V_{(p,0)}$. Then $\nu \in A$, so $\nu = z + u$ with $z \in T_{(p,0)}\mathcal{Z}$ and $u \in S_H \subseteq V_{(p,0)}$. Then $z = \nu - u \in V_{(p,0)}$, so $z \in T_{(p,0)}\mathcal{Z} \cap V_{(p,0)} = \{0\}$, the sum of Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](3) being direct. So $\nu = u \in S_H$, and $V_{(p,0)} \subseteq S_H$; the other inclusion holds by construction.
 >
-> *$S_H = V_{(p,0)}$ if and only if $p$ is nondegenerate.* Let $B = \operatorname{Hess}_p f$. Since $u_i = j_p\big(B^\flat(\partial/\partial x^i|_p)\big)$ and $j_p \circ B^\flat$ is linear, $S_H$ is the image of $j_p \circ B^\flat : T_pM \to V_{(p,0)}$ (the image of a linear map is spanned by the images of a basis). As $j_p : T_p^{\ast}M \to V_{(p,0)}$ is a bijection (Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](2)), $S_H = V_{(p,0)}$ if and only if $B^\flat : T_pM \to T_p^{\ast}M$ is onto. Both spaces have dimension $m$, so $B^\flat$ is onto if and only if it is bijective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), which holds if and only if $p$ is nondegenerate (Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]](2), (a) $\Leftrightarrow$ (c)).
+> *$S_H = V_{(p,0)}$ if and only if $p$ is nondegenerate.* Let $B = \operatorname{Hess}_p f$. Since $u_i = j_p\big(B^\flat(\partial/\partial x^i|_p)\big)$ and $j_p \circ B^\flat$ is linear, $S_H$ is the image of $j_p \circ B^\flat : T_pM \to V_{(p,0)}$ (the image of a linear map is spanned by the images of a basis). As $j_p : T_p^{\ast}M \to V_{(p,0)}$ is a bijection (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](2)), $S_H = V_{(p,0)}$ if and only if $B^\flat : T_pM \to T_p^{\ast}M$ is onto. Both spaces have dimension $m$, so $B^\flat$ is onto if and only if it is bijective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), which holds if and only if $p$ is nondegenerate (Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]](2), (a) $\Leftrightarrow$ (c)).
 >
 > Chaining the three equivalences, $A = T$ if and only if $p$ is nondegenerate. As $p \in \operatorname{Crit}(f)$ was arbitrary, $s_f \pitchfork \mathcal{Z}$ if and only if every critical point is nondegenerate, which is Definition [[§52 Critical Points and the Hessian#^def-52-4|§52.4]]. (If $\operatorname{Crit}(f) = \emptyset$, both sides hold vacuously.)
 
-^pf-52-10
+^pf-52-11
 
-*Uses:* [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]], [[§52 Critical Points and the Hessian#^def-52-4|Def. §52.4]]
+*Uses:* [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]], [[§37 Regular Submanifolds#^def-37-5|Def. §37.5]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]], [[§52 Critical Points and the Hessian#^def-52-4|Def. §52.4]]
 
 > [!proof]+ Second proof (Assignment 5, Problem 3(a): the block determinant)
-> *(The submitted solution.)* Fix $p \in \operatorname{Crit}(f)$, a chart $(U, \varphi)$ at $p$, and $z_i$, $w_i$ as in the first proof, so that $A = (s_f)_{\ast p}(T_pM) + T_{(p,0)}\mathcal{Z} = \operatorname{Span}\{w_1, \ldots, w_m, z_1, \ldots, z_m\}$. The space $T_{(p,0)}(T^{\ast}M)$ has dimension $2m$ (Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]](1) and Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]); so $A$ is all of it if and only if these $2m$ vectors span it, if and only if they are linearly independent (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1), applied to the linear map $\mathbb{R}^{2m} \to T_{(p,0)}(T^{\ast}M)$ sending the standard basis to the $2m$ vectors), if and only if the $2m \times 2m$ matrix $A_p$ whose columns are their coordinates in the basis $\partial/\partial \bar x^1, \ldots, \partial/\partial \bar x^m, \partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$ at $(p, 0)$ is invertible. By Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](2), the column of $w_i$ has $e_i$ on top and $(H_{i1}(p), \ldots, H_{im}(p))^{\mathsf T}$ below, which is the $i$-th column of $H_p$ by symmetry (Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]](2)); the column of $z_i$ has $e_i$ on top and $0$ below. So
+> *(The submitted solution.)* Fix $p \in \operatorname{Crit}(f)$, a chart $(U, \varphi)$ at $p$, and $z_i$, $w_i$ as in the first proof, so that $A = (s_f)_{\ast p}(T_pM) + T_{(p,0)}\mathcal{Z} = \operatorname{Span}\{w_1, \ldots, w_m, z_1, \ldots, z_m\}$. The space $T_{(p,0)}(T^{\ast}M)$ has dimension $2m$ (Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]](1) and Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]); so $A$ is all of it if and only if these $2m$ vectors span it, if and only if they are linearly independent (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1), applied to the linear map $\mathbb{R}^{2m} \to T_{(p,0)}(T^{\ast}M)$ sending the standard basis to the $2m$ vectors), if and only if the $2m \times 2m$ matrix $A_p$ whose columns are their coordinates in the basis $\partial/\partial \bar x^1, \ldots, \partial/\partial \bar x^m, \partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$ at $(p, 0)$ is invertible. By Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](2), the column of $w_i$ has $e_i$ on top and $(H_{i1}(p), \ldots, H_{im}(p))^{\mathsf T}$ below, which is the $i$-th column of $H_p$ by symmetry (Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]](2)); the column of $z_i$ has $e_i$ on top and $0$ below. So
 >
 > $$
 > A_p = \begin{pmatrix} I_m & I_m \\ H_p & 0 \end{pmatrix}, \qquad \det A_p = \det I_m \cdot \det\big(0 - H_p\, I_m^{-1}\, I_m\big) = \det(-H_p) = (-1)^m \det H_p ,
@@ -738,9 +757,9 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 >
 > *Some chart or every chart.* The problem asks for the Hessian to be non-degenerate “for every critical point $p$ and any chart.” The transversality condition at $p$ involves no chart, and the computation holds in whichever chart at $p$ was fixed; so if $s_f \pitchfork \mathcal{Z}$, then $\det H_p \neq 0$ in every chart at $p$, and conversely $\det H_p \neq 0$ in a single chart at $p$ already gives the transversality condition at $p$. (This is the chart-independence of $\det H_p \neq 0$, Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]](2), (d) $\Leftrightarrow$ (e), found again.)
 
-^pf-52-10-2
+^pf-52-11-2
 
-*Uses:* [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]]
+*Uses:* [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]], [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]]
 
 > [!remark]- Connections
 > - The same picture for a restriction $\Phi|_S$: critical points are where the graph of $d\Phi$ meets the conormal bundle of $S$, the remark [[§37 Regular Submanifolds#^rem-37-5|The Conormal Bundle]] (§37); the zero section is the case $S = M$.
@@ -754,16 +773,16 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 ^ex-52-2
 
 > [!proof]+ Working out the example
-> In the chart $\mathrm{id}$, $f_{\mathrm{id}} = f$, so $\partial f/\partial x = f'$ and $H(x) = f''(x)$ (Definition [[§52 Critical Points and the Hessian#^def-52-1|§52.1]]); the coordinate representation of $s_f$ is $x \mapsto (x, f'(x))$ (Proposition [[§51 One-Forms#^prop-51-1|§51.1]](2), with $\theta = df$, whose coefficient is $\partial f/\partial x = f'$), and $\operatorname{Crit}(f) = \{x : f'(x) = 0\}$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]). In the notation of the proof of Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]], $z_1 = \partial/\partial \bar x|_{(0,0)}$ and $w_1 = \partial/\partial \bar x|_{(0,0)} + f''(0)\, \partial/\partial \xi|_{(0,0)}$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](2)). (1) $f'(x) = 2x$ vanishes only at $0$, and $w_1 - z_1 = 2\, \partial/\partial \xi|_{(0,0)}$, so $z_1, w_1$ span the $2$-dimensional $T_{(0,0)}(T^{\ast}\mathbb{R})$. (2) $f'(x) = 3x^2$ vanishes only at $0$, $f''(0) = 0$, so $w_1 = z_1$ and $z_1, w_1$ span only a line: the transversality condition fails at the critical point $0$.
+> In the chart $\mathrm{id}$, $f_{\mathrm{id}} = f$, so $\partial f/\partial x = f'$ and $H(x) = f''(x)$ (Definition [[§52 Critical Points and the Hessian#^def-52-1|§52.1]]); the coordinate representation of $s_f$ is $x \mapsto (x, f'(x))$ (Proposition [[§51 One-Forms#^prop-51-1|§51.1]](2), with $\theta = df$, whose coefficient is $\partial f/\partial x = f'$), and $\operatorname{Crit}(f) = \{x : f'(x) = 0\}$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]). In the notation of the proof of Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]], $z_1 = \partial/\partial \bar x|_{(0,0)}$ and $w_1 = \partial/\partial \bar x|_{(0,0)} + f''(0)\, \partial/\partial \xi|_{(0,0)}$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](2)). (1) $f'(x) = 2x$ vanishes only at $0$, and $w_1 - z_1 = 2\, \partial/\partial \xi|_{(0,0)}$, so $z_1, w_1$ span the $2$-dimensional $T_{(0,0)}(T^{\ast}\mathbb{R})$. (2) $f'(x) = 3x^2$ vanishes only at $0$, $f''(0) = 0$, so $w_1 = z_1$ and $z_1, w_1$ span only a line: the transversality condition fails at the critical point $0$.
 
 ^pf-ex-52-2
 
-*Uses:* [[§52 Critical Points and the Hessian#^def-52-1|Def. §52.1]], [[§51 One-Forms#^prop-51-1|§51.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]
+*Uses:* [[§52 Critical Points and the Hessian#^def-52-1|Def. §52.1]], [[§51 One-Forms#^prop-51-1|§51.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]], [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]]
 
 > [!remark] Remark: Review Session: Why the Hessian Needs a Critical Point
 > *Review session, Oct 16, in answer to “is there a careful definition of the Hessian?” — “That's a beautiful question.”* The fact: for $f : M \to \mathbb{R}$, $\operatorname{Hess}_p f$ is only *intrinsically* defined if $df_p = 0$. If $df_p = 0$ it is a well-defined quadratic form, a symmetric bilinear form on $T_pM$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]]); if $df_p \neq 0$ it is not: “of course you can write everything in coordinates and take the Hessian in coordinates. But … when you change coordinates, the new Hessian would involve first derivatives of $f$. So it doesn't transform as a quadratic form” (Proposition [[§52 Critical Points and the Hessian#^prop-52-2|§52.2]], Example [[§52 Critical Points and the Hessian#^ex-52-1|§52.1]]).
 >
-> “And there's a beautiful geometric reason,” in $T^{\ast}M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^{\ast}M$ splits canonically into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^{\ast}M$ itself (Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]]): $T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus j_p(T_p^{\ast}M)$. “This is the crucial thing that allows you to identify the quadratic form”: push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{\ast p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]). *(Filled in.)* Away from the zero section the vertical space is still canonical, but there is no canonical complement to project along, so “the vertical component of $(s_f)_{\ast p}v$” depends on the chart — the geometric counterpart of the first-derivative term in the transformation law. Uribe ran out of time here; the full argument is the one already in these notes.
+> “And there's a beautiful geometric reason,” in $T^{\ast}M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^{\ast}M$ splits canonically into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^{\ast}M$ itself (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]): $T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus j_p(T_p^{\ast}M)$. “This is the crucial thing that allows you to identify the quadratic form”: push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{\ast p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]]). *(Filled in.)* Away from the zero section the vertical space is still canonical, but there is no canonical complement to project along, so “the vertical component of $(s_f)_{\ast p}v$” depends on the chart — the geometric counterpart of the first-derivative term in the transformation law. Uribe ran out of time here; the full argument is the one already in these notes.
 
 ^rem-52-4
 
@@ -771,17 +790,17 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 
 The picture from the review session. At $(p, 0)$ the tangent vector $(s_f)_{\ast p}v$ to $S_f$ splits into a part along the zero section, $\zeta_{\ast p}v$, and a vertical part in the fibre $T_p^{\ast}M$; the vertical part is $\operatorname{Hess}_p f(v, \cdot)$.
 
-**Transcription note (review session).** Page 52 of the handwritten notes writes the key identification as “$T_pZ \cong T_p^{\ast}M$”. The tangent space of the zero section is $T_p\mathcal{Z} \cong T_pM$; it is the *vertical* space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^{\ast}M)/T_p\mathcal{Z}$, that is canonically $T_p^{\ast}M$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]]).
+**Transcription note (review session).** Page 52 of the handwritten notes writes the key identification as “$T_pZ \cong T_p^{\ast}M$”. The tangent space of the zero section is $T_p\mathcal{Z} \cong T_pM$; it is the *vertical* space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^{\ast}M)/T_p\mathcal{Z}$, that is canonically $T_p^{\ast}M$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]).
 
 ## Critical Points of Morse Functions
 
-> [!theorem] Corollary §52.11: Critical Points of a Morse Function Are Isolated
+> [!theorem] Corollary §52.12: Critical Points of a Morse Function Are Isolated
 > Let $f$ be a Morse function on $M$. Then $\operatorname{Crit}(f)$ is a regular submanifold of $M$ of codimension $m$, that is, of dimension $0$. Every critical point $p$ has an open neighbourhood $W$ in $M$ with $W \cap \operatorname{Crit}(f) = \{p\}$; so $\operatorname{Crit}(f)$ is discrete in the subspace topology.
 
-^cor-52-11
+^cor-52-12
 
 > [!proof]+ Proof (Assignment 5, Problem 3(b))
-> *(The submitted solution, written out.)* By Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]], $s_f \pitchfork \mathcal{Z}$, since every critical point is nondegenerate. Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]], applied to the smooth map $s_f : M \to T^{\ast}M$ and the regular submanifold $\mathcal{Z}$ of codimension $m$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](1)), shows that $s_f^{-1}(\mathcal{Z}) = \operatorname{Crit}(f)$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](1)) is a regular submanifold of $M$ of codimension $m$, the codimension of $\mathcal{Z}$ in $T^{\ast}M$ (indeed $2m - m$). Its dimension is $m - m = 0$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
+> *(The submitted solution, written out.)* By Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]], $s_f \pitchfork \mathcal{Z}$, since every critical point is nondegenerate. Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]], applied to the smooth map $s_f : M \to T^{\ast}M$ and the regular submanifold $\mathcal{Z}$ of codimension $m$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]](1)), shows that $s_f^{-1}(\mathcal{Z}) = \operatorname{Crit}(f)$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](1)) is a regular submanifold of $M$ of codimension $m$, the codimension of $\mathcal{Z}$ in $T^{\ast}M$ (indeed $2m - m$). Its dimension is $m - m = 0$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
 >
 > *Isolated.* Let $p \in \operatorname{Crit}(f)$. By Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] with $k = m$, so that all $m$ coordinates are cut, there is a smooth chart $(W, \theta = (\theta^1, \ldots, \theta^m))$ of $M$ at $p$ with
 >
@@ -793,9 +812,9 @@ The picture from the review session. At $(p, 0)$ the tangent vector $(s_f)_{\ast
 >
 > *Discrete.* $\{p\} = W \cap \operatorname{Crit}(f)$ is open in the subspace topology of $\operatorname{Crit}(f)$, for every $p$; so every subset of $\operatorname{Crit}(f)$, a union of such singletons, is open. With the induced structure, $\operatorname{Crit}(f)$ is a $0$-dimensional manifold, hence a countable discrete space (Proposition [[§2 Topological Manifolds#^prop-2-5|§2.5]]).
 
-^pf-52-11
+^pf-52-12
 
-*Uses:* [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]], [[§37 Regular Submanifolds#^thm-37-15|§37.15]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§2 Topological Manifolds#^prop-2-5|§2.5]]
+*Uses:* [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]], [[§37 Regular Submanifolds#^thm-37-15|§37.15]], [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]], [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§2 Topological Manifolds#^prop-2-5|§2.5]]
 
 > [!proof]+ Second proof, by the inverse function theorem
 > *(Not from the submitted solution; filled in. It uses only that the one point $p$ is nondegenerate.)* Let $p \in \operatorname{Crit}(f)$ and $(U, \varphi)$ a chart at $p$, and let $\Phi = (\partial f/\partial x^1, \ldots, \partial f/\partial x^m) \circ \varphi^{-1} : \varphi(U) \to \mathbb{R}^m$, smooth by Proposition [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]](3).
@@ -806,30 +825,30 @@ The picture from the review session. At $(p, 0)$ the tangent vector $(s_f)_{\ast
 >
 > *Conclusion.* Put $W = \varphi^{-1}(U_0)$, open in $U$ because $\varphi$ is continuous, hence open in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), and containing $p$. If $q \in W \cap \operatorname{Crit}(f)$, then $\Phi(\varphi(q)) = 0 = \Phi(\varphi(p))$ with $\varphi(q), \varphi(p) \in U_0$, so $\varphi(q) = \varphi(p)$ by injectivity, and $q = p$ since $\varphi$ is injective. So $W \cap \operatorname{Crit}(f) = \{p\}$. As $p$ was arbitrary, $\operatorname{Crit}(f)$ is discrete, as in the first proof. (In words: near a nondegenerate critical point the map $\Phi$ is a local diffeomorphism, so $0$ is hit only once.)
 
-^pf-52-11-2
+^pf-52-12-2
 
 *Uses:* [[§52 Critical Points and the Hessian#^prop-52-1|§52.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 The converse fails: in Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]](2), $0$ is an isolated critical point of $x^3$ but a degenerate one. And without nondegeneracy critical points need not be isolated at all: every point is critical for a constant function.
 
-> [!theorem] Corollary §52.12: Morse Functions on Compact Manifolds
+> [!theorem] Corollary §52.13: Morse Functions on Compact Manifolds
 > Let $f$ be a Morse function on $M$.
 >
 > 1. $\operatorname{Crit}(f)$ is closed in $M$.
 > 2. If $M$ is compact, then $\operatorname{Crit}(f)$ is finite.
 
-^cor-52-12
+^cor-52-13
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in. Part (1) does not use that $f$ is Morse.)*
 >
-> *(1)* This is Corollary [[§36 Submersions#^cor-36-8|§36.8]]: the set of critical points of any smooth function on $M$ is closed in $M$; that $f$ is Morse is not used. (Two direct arguments. First: let $q \in M \setminus \operatorname{Crit}(f)$ and $(U, \varphi)$ a chart at $q$. Since $df_q \neq 0$, some $\partial f/\partial x^j(q)$ is nonzero (Proposition [[§36 Submersions#^prop-36-2|§36.2]]). The function $\partial f/\partial x^j$ is smooth, hence continuous, on $U$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]), so $O = \{q' \in U : \partial f/\partial x^j(q') \neq 0\}$, the preimage of the open set $\mathbb{R} \setminus \{0\}$, is open in $U$, hence in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). It contains $q$, and every $q' \in O$ is a regular point, by Proposition [[§36 Submersions#^prop-36-2|§36.2]] again; so $M \setminus \operatorname{Crit}(f)$ is open. Second: $\operatorname{Crit}(f) = s_f^{-1}(\mathcal{Z})$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](1)) with $s_f$ continuous, and $\mathcal{Z}$ is closed in $T^{\ast}M$, its complement meeting each $T^{\ast}U$ in the open set $\hat\varphi^{-1}\big(\varphi(U) \times (\mathbb{R}^m \setminus \{0\})\big)$.)
+> *(1)* This is Corollary [[§36 Submersions#^cor-36-8|§36.8]]: the set of critical points of any smooth function on $M$ is closed in $M$; that $f$ is Morse is not used. (Two direct arguments. First: let $q \in M \setminus \operatorname{Crit}(f)$ and $(U, \varphi)$ a chart at $q$. Since $df_q \neq 0$, some $\partial f/\partial x^j(q)$ is nonzero (Proposition [[§36 Submersions#^prop-36-2|§36.2]]). The function $\partial f/\partial x^j$ is smooth, hence continuous, on $U$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]), so $O = \{q' \in U : \partial f/\partial x^j(q') \neq 0\}$, the preimage of the open set $\mathbb{R} \setminus \{0\}$, is open in $U$, hence in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). It contains $q$, and every $q' \in O$ is a regular point, by Proposition [[§36 Submersions#^prop-36-2|§36.2]] again; so $M \setminus \operatorname{Crit}(f)$ is open. Second: $\operatorname{Crit}(f) = s_f^{-1}(\mathcal{Z})$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](1)) with $s_f$ continuous, and $\mathcal{Z}$ is closed in $T^{\ast}M$, its complement meeting each $T^{\ast}U$ in the open set $\hat\varphi^{-1}\big(\varphi(U) \times (\mathbb{R}^m \setminus \{0\})\big)$.)
 >
-> *(2)* By (1), $\operatorname{Crit}(f)$ is a closed subset of the compact space $M$, hence compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). By Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]], each $p \in \operatorname{Crit}(f)$ has an open neighbourhood $W_p$ in $M$ with $W_p \cap \operatorname{Crit}(f) = \{p\}$. The sets $W_p \cap \operatorname{Crit}(f) = \{p\}$, $p \in \operatorname{Crit}(f)$, are open in the subspace topology of $\operatorname{Crit}(f)$ and cover it. By compactness finitely many of them cover it: $\operatorname{Crit}(f) = \{p_1\} \cup \cdots \cup \{p_N\}$. So $\operatorname{Crit}(f)$ is finite. (Equivalently: an infinite subset of a compact space has an accumulation point, and an accumulation point of $\operatorname{Crit}(f)$ would lie in $\operatorname{Crit}(f)$ by (1) without being isolated.)
+> *(2)* By (1), $\operatorname{Crit}(f)$ is a closed subset of the compact space $M$, hence compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). By Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]], each $p \in \operatorname{Crit}(f)$ has an open neighbourhood $W_p$ in $M$ with $W_p \cap \operatorname{Crit}(f) = \{p\}$. The sets $W_p \cap \operatorname{Crit}(f) = \{p\}$, $p \in \operatorname{Crit}(f)$, are open in the subspace topology of $\operatorname{Crit}(f)$ and cover it. By compactness finitely many of them cover it: $\operatorname{Crit}(f) = \{p_1\} \cup \cdots \cup \{p_N\}$. So $\operatorname{Crit}(f)$ is finite. (Equivalently: an infinite subset of a compact space has an accumulation point, and an accumulation point of $\operatorname{Crit}(f)$ would lie in $\operatorname{Crit}(f)$ by (1) without being isolated.)
 
-^pf-52-12
+^pf-52-13
 
-*Uses:* [[§36 Submersions#^cor-36-8|§36.8]], [[§36 Submersions#^prop-36-2|§36.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]]
+*Uses:* [[§36 Submersions#^cor-36-8|§36.8]], [[§36 Submersions#^prop-36-2|§36.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]
 
 ## The Hessian from the Zero Section
 
@@ -837,7 +856,7 @@ The converse fails: in Example [[§52 Critical Points and the Hessian#^ex-52-2|�
 
 *The claim* (Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]] and Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]]): if $f : M \to \mathbb{R}$ is smooth and $df_p = 0$, there is a well-defined quadratic form, a symmetric bilinear form $\operatorname{Hess}_p f : T_pM \times T_pM \to \mathbb{R}$, whose matrix in any coordinates is $\big(\partial^2 f/\partial x^i \partial x^j(p)\big)$. “You can always, in any coordinate system, at any point, write this matrix, but it doesn't define a coordinate-independent quadratic form unless you are at a critical point.” Lecture 20 explained why, coordinate-free.
 
-*The observation that makes it go.* At a point $(p, 0)$ of the zero section $\mathcal{Z}$ of $T^{\ast}M$, the zero section and the fibre $\pi^{-1}(p) = T_p^{\ast}M$ are transverse and complementary, so (Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]])
+*The observation that makes it go.* At a point $(p, 0)$ of the zero section $\mathcal{Z}$ of $T^{\ast}M$, the zero section and the fibre $\pi^{-1}(p) = T_p^{\ast}M$ are transverse and complementary, so (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]])
 
 $$
 T_{(p,0)}(T^{\ast}M) = T_{(p,0)}\mathcal{Z} \oplus T_{(p,0)}\pi^{-1}(p) \cong T_pM \oplus T_p^{\ast}M ,
@@ -845,7 +864,7 @@ $$
 
 “without choosing any coordinates”: the zero section is naturally $M$, and the tangent space to the fibre, a vector space, is the fibre itself. Now consider the section $s_f : M \to T^{\ast}M$, $q \mapsto (q, df_q)$, of the homework. If $df_p = 0$, then $s_f(p) = (p, 0)$, and $\operatorname{Im}(s_f)_{\ast p} \subseteq T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$.
 
-> [!theorem] Proposition §52.13: The Hessian as the Graph of $(s_f)_{\ast p}$
+> [!theorem] Proposition §52.14: The Hessian as the Graph of $(s_f)_{\ast p}$
 > Let $f : M \to \mathbb{R}$ be smooth and $p \in \operatorname{Crit}(f)$. In the splitting $T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$ above, $\operatorname{Im}(s_f)_{\ast p}$ is the graph of a unique linear map $h_p : T_pM \to T_p^{\ast}M$, and
 >
 > $$
@@ -854,16 +873,16 @@ $$
 >
 > In a chart, the matrix of $(s_f)_{\ast p}$ is $\binom{I}{H_p}$, with $H_p = \big(\partial^2 f/\partial x^i \partial x^j(p)\big)$ the block of $h_p$.
 
-^prop-52-13
+^prop-52-14
 
 > [!proof]+ Proof
-> *(Lecture 20, with the details Uribe skipped — “I will skip the details” — filled in from the propositions already in these notes.)* *A graph.* Since $s_f$ is a section, $\pi \circ s_f = \mathrm{id}_M$, so $\pi_{\ast(p,0)} \circ (s_f)_{\ast p} = \mathrm{id}$ by the chain rule. The projection onto the first summand of the splitting is $\pi_{\ast(p,0)}$ (it kills the vertical summand, Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]](1), and is the identity on $T_{(p,0)}\mathcal{Z} \cong T_pM$, as $\pi \circ \zeta = \mathrm{id}_M$). So $(s_f)_{\ast p}u = (u, h_p(u))$ for a unique $h_p(u) \in T_p^{\ast}M$, and $h_p$ is linear because $(s_f)_{\ast p}$ is: the image “passes the vertical line test”, an $m$-dimensional subspace that is the graph of $h_p$. “For example, if $f$ is constant, then this is zero, and you get just the horizontal.”
+> *(Lecture 20, with the details Uribe skipped — “I will skip the details” — filled in from the propositions already in these notes.)* *A graph.* Since $s_f$ is a section, $\pi \circ s_f = \mathrm{id}_M$, so $\pi_{\ast(p,0)} \circ (s_f)_{\ast p} = \mathrm{id}$ by the chain rule. The projection onto the first summand of the splitting is $\pi_{\ast(p,0)}$ (it kills the vertical summand, Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](1), and is the identity on $T_{(p,0)}\mathcal{Z} \cong T_pM$, as $\pi \circ \zeta = \mathrm{id}_M$). So $(s_f)_{\ast p}u = (u, h_p(u))$ for a unique $h_p(u) \in T_p^{\ast}M$, and $h_p$ is linear because $(s_f)_{\ast p}$ is: the image “passes the vertical line test”, an $m$-dimensional subspace that is the graph of $h_p$. “For example, if $f$ is constant, then this is zero, and you get just the horizontal.”
 >
-> *The Hessian.* “A map from a vector space to its dual … is the same as a bilinear map”: $(u, v) \mapsto h_p(u)(v)$. By Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](3), the vertical component of $(s_f)_{\ast p}u$ is $\operatorname{Hess}_p f(u, \cdot\,)$, so $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. In coordinates, the matrix of $(s_f)_{\ast p}$ is $\binom{I}{H_p}$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]](2), the homework computation), and “once you unravel everything … the matrix of $h_p$ in the induced coordinates is just this bottom” block.
+> *The Hessian.* “A map from a vector space to its dual … is the same as a bilinear map”: $(u, v) \mapsto h_p(u)(v)$. By Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](3), the vertical component of $(s_f)_{\ast p}u$ is $\operatorname{Hess}_p f(u, \cdot\,)$, so $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. In coordinates, the matrix of $(s_f)_{\ast p}$ is $\binom{I}{H_p}$ (Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]](2), the homework computation), and “once you unravel everything … the matrix of $h_p$ in the induced coordinates is just this bottom” block.
 
-^pf-52-13
+^pf-52-14
 
-*Uses:* [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]], [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]
+*Uses:* [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]], [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]]
 
 ![[m591-52-2.svg]]
 
@@ -895,10 +914,45 @@ the first sum “will not go away in general”, so the matrix “doesn't transf
 
 ^def-52-7
 
-> [!theorem] Proposition §52.14: Jets Are Taylor Polynomials
+> [!definition] Definition §52.8: Multi-Index Notation
+> A **multi-index** is an $m$-tuple $\alpha = (\alpha_1, \ldots, \alpha_m)$ of integers $\alpha_i \ge 0$, with **order** $|\alpha| = \alpha_1 + \cdots + \alpha_m$ and $\alpha! = \alpha_1! \cdots \alpha_m!$. In a chart $(U, (x^1, \ldots, x^m))$, with $\partial_i = \partial/\partial x^i$ acting on $C^\infty(U)$,
+>
+> $$
+> \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}, \qquad (x - c)^\alpha = (x^1 - c^1)^{\alpha_1} \cdots (x^m - c^m)^{\alpha_m} \quad (c \in \mathbb{R}^m),
+> $$
+>
+> and $\partial^{(0, \ldots, 0)} = \mathrm{id}$. Write $\beta \le \alpha$ if $\beta_i \le \alpha_i$ for every $i$, and $e_j$ for the multi-index with $1$ in place $j$ and $0$ elsewhere.
+
+^def-52-8
+
+> [!theorem] Lemma §52.15: Derivatives of Monomials
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart, $p \in U$, $c = \varphi(p)$, and $\alpha$, $\beta$ multi-indices. On $U$,
+>
+> $$
+> \partial^\alpha (x - c)^\beta = \begin{cases} \dfrac{\beta!}{(\beta - \alpha)!}\, (x - c)^{\beta - \alpha} & \text{if } \alpha \le \beta, \\[4pt] 0 & \text{otherwise,} \end{cases}
+> $$
+>
+> with $(\beta - \alpha)_i = \beta_i - \alpha_i$. In particular $\partial^\alpha (x - c)^\beta(p) = \beta!$ if $\alpha = \beta$ and $0$ if $\alpha \ne \beta$; so the coefficients of a polynomial $P = \sum_{|\beta| \le k} c_\beta\, (x - c)^\beta$ are $c_\beta = \partial^\beta P(p)/\beta!$.
+
+^lem-52-15
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Partial derivatives on $U$ are computed from coordinate representations: $(\partial_i u) \circ \varphi^{-1} = \partial(u \circ \varphi^{-1})/\partial r^i$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so, applying this $|\alpha|$ times, $(\partial^\alpha u) \circ \varphi^{-1} = \partial^{|\alpha|}(u \circ \varphi^{-1})/\partial r^\alpha$. In coordinates, $(x - c)^\beta \circ \varphi^{-1}(r) = \prod_i (r^i - c^i)^{\beta_i}$, a product of factors each depending on one variable, so
+>
+> $$
+> \frac{\partial^{|\alpha|}}{\partial r^\alpha} \prod_{i=1}^m (r^i - c^i)^{\beta_i} = \prod_{i=1}^m \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i}, \qquad \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i} = \begin{cases} \dfrac{\beta_i!}{(\beta_i - \alpha_i)!} (r^i - c^i)^{\beta_i - \alpha_i} & \alpha_i \le \beta_i, \\ 0 & \alpha_i > \beta_i . \end{cases}
+> $$
+>
+> That is, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise. At $x = c$, i.e. at the point $p$, the factor $(r^i - c^i)^{\beta_i - \alpha_i}$ is $1$ if $\alpha_i = \beta_i$ and $0$ if $\alpha_i < \beta_i$; so $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. For the last statement, apply $\partial^\alpha$ to $P$ and evaluate at $p$: $\partial^\alpha P(p) = \sum_\beta c_\beta\, \partial^\alpha (x - c)^\beta(p) = c_\alpha\, \alpha!$.
+
+^pf-52-15
+
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+
+> [!theorem] Proposition §52.16: Jets Are Taylor Polynomials
 > In a chart $(x^1, \ldots, x^m)$ centred at $p$, two germs have the same $k$-jet if and only if their partial derivatives of all orders $\le k$ agree at $p$, that is, their Taylor polynomials of degree $k$ at $p$ agree. So $J^k_p$ is isomorphic to the space of polynomials of degree $\le k$ in $m$ variables.
 
-^prop-52-14
+^prop-52-16
 
 > [!proof]+ Proof
 > *(Lecture 20: “this just isolates … the partial sum of the Taylor series. You kill derivatives of order $k+1$ and higher.” Filled in.)* It suffices to show that $[g] \in I_p^{k+1}$ if and only if all partials of $g$ of orders $0, \ldots, k$ vanish at $p$. *Only if.* A product $g_1 \cdots g_{k+1}$ of germs vanishing at $p$: by the Leibniz rule, a partial derivative of order $\le k$ of the product is a sum of products in each of which some factor $g_i$ is not differentiated, and so vanishes at $p$; sums of such products behave the same. *If.* Applying Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]) repeatedly to the coefficient functions, as in the proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]], gives, on a ball about $p$,
@@ -907,15 +961,15 @@ the first sum “will not go away in general”, so the matrix “doesn't transf
 > g = \sum_{|\alpha| \le k} \frac{\partial^\alpha g(p)}{\alpha!}\, x^\alpha + \sum_{|\beta| = k+1} x^\beta\, g_\beta
 > $$
 >
-> with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, every polynomial of degree $\le k$ is the Taylor polynomial of a germ (itself), so the map from $J^k_p$ to Taylor polynomials is onto.
+> with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, a polynomial $P = \sum_{|\beta| \le k} c_\beta\, x^\beta$ is the Taylor polynomial of its own germ, since $\partial^\beta P(p)/\beta! = c_\beta$ (Lemma [[§52 Critical Points and the Hessian#^lem-52-15|§52.15]], with $c = 0$ for the chart centred at $p$); so the map from $J^k_p$ to Taylor polynomials is onto.
 
-^pf-52-14
+^pf-52-16
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]], [[§52 Critical Points and the Hessian#^lem-52-15|§52.15]]
 
 ![[m591-52-3.svg]]
 
-*(Not from lecture; figure added.)* The jets of a function $f$ of one variable at $p$, drawn as its Taylor polynomials (Proposition [[§52 Critical Points and the Hessian#^prop-52-14|§52.14]]): the $0$-jet $T_0$ is the value $f(p)$, the $1$-jet $T_1$ the tangent line, the $2$-jet $T_2$ the osculating parabola. Two germs have the same $k$-jet when their difference lies in $I_p^{k+1}$, that is, vanishes to order $k + 1$ at $p$. For $k = 1$, removing the value leaves $I_p/I_p^2 \cong T_p^{\ast}M$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]): the $1$-jet of a germ vanishing at $p$ is its differential.
+*(Not from lecture; figure added.)* The jets of a function $f$ of one variable at $p$, drawn as its Taylor polynomials (Proposition [[§52 Critical Points and the Hessian#^prop-52-16|§52.16]]): the $0$-jet $T_0$ is the value $f(p)$, the $1$-jet $T_1$ the tangent line, the $2$-jet $T_2$ the osculating parabola. Two germs have the same $k$-jet when their difference lies in $I_p^{k+1}$, that is, vanishes to order $k + 1$ at $p$. For $k = 1$, removing the value leaves $I_p/I_p^2 \cong T_p^{\ast}M$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]): the $1$-jet of a germ vanishing at $p$ is its differential.
 
 “This is called a space of jets … they are useful in some circles. If you take $k = 2$, you can package the information contained in the function — the value, the first derivative, the second derivative — in some abstract object.” But “within them you cannot separate naturally the first and the second partials, unless you have a special situation” — a critical point being the special situation that gives the Hessian.
 

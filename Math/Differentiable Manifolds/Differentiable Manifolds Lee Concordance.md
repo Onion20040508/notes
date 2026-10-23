@@ -79,6 +79,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§57 Lie Groups and Left-Invariant Vector Fields\|§57]] Lie groups and left-invariant vector fields; Lie group morphisms; the bracket of a matrix group | Chapter 7 (Examples 7.3, 7.27–7.30); Chapter 8, *Lie Algebras* (Proposition 8.33, Theorem 8.37) |
 | [[§58 Sets of Measure Zero\|§58]] Sets of measure zero | Chapter 6, *Sets of Measure Zero* (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) |
 | [[§59 Sard's Theorem\|§59]] Sard's theorem | Chapter 6, *Sard's Theorem* (Theorem 6.10, Corollary 6.11) |
+| [[§60 Parametric Transversality\|§60]] Parametric transversality | Chapter 6, *The Transversality Homotopy Theorem* (Theorem 6.35) |
+| [[§61 The Whitney Embedding Theorem\|§61]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemma 6.13, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
 
 ## A.4 Index from Lee to these notes
 
@@ -104,7 +106,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.32 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]] |
 | Example 1.33 | [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5\|Cor. §18.5]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6\|Prop. §18.6]] |
 | Example 1.34 | [[§19 Smooth Functions and Smooth Maps#^prop-19-10\|Prop. §19.10]] |
-| Lemma 1.35 | [[§49 The Tangent Bundle#^prop-49-1\|Prop. §49.1]], [[§50 The Cotangent Bundle#^prop-50-1\|Prop. §50.1]] |
+| Lemma 1.35 | [[§49 The Tangent Bundle#^lem-49-1\|Lem. §49.1]], [[§49 The Tangent Bundle#^prop-49-3\|Prop. §49.3]], [[§50 The Cotangent Bundle#^prop-50-2\|Prop. §50.2]] |
 | Example 1.36 | [[§15 The Topology of G∕H and Real Grassmannians#^def-15-3\|Def. §15.3]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8\|Cor. §15.8]] |
 | Problem 1-1 | [[§1 Point-Set Topology Review#^ex-1-4\|Ex. §1.4]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-1\|Ex. §4.1]] |
 | Problem 1-2 | [[§2 Topological Manifolds#^ex-2-3\|Ex. §2.3]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]] |
@@ -127,7 +129,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.13 | [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]], [[§30 The Differential in Coordinates#^cor-30-6\|Cor. §30.6]] |
 | Proposition 3.14 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|Thm. §31.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]], [[§36 Submersions#^ex-36-2\|Ex. §36.2]] |
 | Proposition 3.15 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]] |
-| Proposition 3.18 | [[§49 The Tangent Bundle#^def-49-4\|Def. §49.4]], [[§49 The Tangent Bundle#^def-49-5\|Def. §49.5]], [[§49 The Tangent Bundle#^prop-49-1\|Prop. §49.1]], [[§49 The Tangent Bundle#^prop-49-2\|Prop. §49.2]], [[§49 The Tangent Bundle#^prop-49-4\|Prop. §49.4]] |
+| Proposition 3.18 | [[§49 The Tangent Bundle#^def-49-4\|Def. §49.4]], [[§49 The Tangent Bundle#^def-49-5\|Def. §49.5]], [[§49 The Tangent Bundle#^prop-49-3\|Prop. §49.3]], [[§49 The Tangent Bundle#^prop-49-2\|Prop. §49.2]], [[§49 The Tangent Bundle#^prop-49-5\|Prop. §49.5]] |
 | Proposition 3.23 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2\|Thm. §31.2]] |
 | Proposition 3.24 | [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3\|Cor. §31.3]] |
 | Corollary 3.25 | [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|Thm. §22.3]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3\|Cor. §31.3]] |
@@ -154,8 +156,11 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 6.5 | [[§58 Sets of Measure Zero#^lem-58-2\|Lem. §58.2]] |
 | Lemma 6.6 | [[§58 Sets of Measure Zero#^def-58-2\|Def. §58.2]], [[§58 Sets of Measure Zero#^prop-58-4\|Prop. §58.4]] |
 | Exercise 6.7 | [[§58 Sets of Measure Zero#^prop-58-4\|Prop. §58.4]] |
-| Theorem 6.10 | [[§59 Sard's Theorem#^thm-59-1\|Thm. §59.1]] |
-| Corollary 6.11 | [[§59 Sard's Theorem#^cor-59-2\|Cor. §59.2]] |
+| Theorem 6.10 | [[§59 Sard's Theorem#^thm-59-3\|Thm. §59.3]] |
+| Corollary 6.11 | [[§59 Sard's Theorem#^cor-59-4\|Cor. §59.4]] |
+| Theorem 6.15 | [[§61 The Whitney Embedding Theorem#^thm-61-1\|Thm. §61.1]] |
+| Theorem 6.18 | [[§61 The Whitney Embedding Theorem#^thm-61-1\|Thm. §61.1]] |
+| Theorem 6.35 | [[§60 Parametric Transversality#^thm-60-1\|Thm. §60.1]], [[§60 Parametric Transversality#^cor-60-2\|Cor. §60.2]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-1\|Prop. §57.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
@@ -176,6 +181,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.28 | [[§55 Lie Bracket and Lie Algebra#^cor-55-5\|Cor. §55.5]] |
 | Proposition 8.30 | [[§56 Related Vector Fields#^prop-56-3\|Prop. §56.3]] |
 | Corollary 8.31 | [[§56 Related Vector Fields#^cor-56-4\|Cor. §56.4]] |
+| Corollary 8.32 | [[§56 Related Vector Fields#^prop-56-5\|Prop. §56.5]] |
 | Proposition 8.33 | [[§57 Lie Groups and Left-Invariant Vector Fields#^cor-57-4\|Cor. §57.4]] |
 | Theorem 8.37 | [[§57 Lie Groups and Left-Invariant Vector Fields#^def-57-5\|Def. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^lem-57-5\|Lem. §57.5]], [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6\|Prop. §57.6]], [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-7\|Thm. §57.7]] |
 | Proposition 8.41 | [[§57 Lie Groups and Left-Invariant Vector Fields#^thm-57-11\|Thm. §57.11]] |
@@ -185,7 +191,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |
-| Proposition 11.9 | [[§50 The Cotangent Bundle#^def-50-4\|Def. §50.4]], [[§50 The Cotangent Bundle#^def-50-5\|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-1\|Prop. §50.1]], [[§50 The Cotangent Bundle#^prop-50-2\|Prop. §50.2]], [[§50 The Cotangent Bundle#^cor-50-3\|Cor. §50.3]] |
+| Proposition 11.9 | [[§50 The Cotangent Bundle#^def-50-4\|Def. §50.4]], [[§50 The Cotangent Bundle#^def-50-5\|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-2\|Prop. §50.2]], [[§50 The Cotangent Bundle#^prop-50-1\|Prop. §50.1]], [[§50 The Cotangent Bundle#^cor-50-3\|Cor. §50.3]] |
 | Proposition 11.11 | [[§51 One-Forms#^prop-51-1\|Prop. §51.1]] |
 | Proposition 11.20 | [[§32 The Cotangent Space#^cor-32-3\|Cor. §32.3]] |
 | Proposition 11.25 | [[§34 The Cotangent Space from Germs#^prop-34-6\|Prop. §34.6]], [[§51 One-Forms#^cor-51-4\|Cor. §51.4]] |

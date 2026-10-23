@@ -37,7 +37,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 ^def-38-1
 
 > [!remark]- Connections
-> - The first major example: [[§49 The Tangent Bundle#^cor-49-3|the tangent bundle, §49.3]]; sections of a fibration: [[§38 Fibrations#^def-38-3|Def. §38.3]].
+> - The first major example: [[§49 The Tangent Bundle#^cor-49-4|the tangent bundle, §49.4]]; sections of a fibration: [[§38 Fibrations#^def-38-3|Def. §38.3]].
 > - The topological analogue with discrete fibre: [[§31 Covering Spaces#^def-31-2|covering maps, 590 Def. §31.2]]; in 591, [[§35 Local Diffeomorphisms#^rem-35-2|Remark: Covering Maps (§35)]].
 
 ![[m591-16-1.svg]]
@@ -111,7 +111,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^rem-38-1
 
 > [!remark]- Connections
-> - [[§49 The Tangent Bundle#^cor-49-3|The tangent bundle is a fibration, §49.3]]; [[§50 The Cotangent Bundle#^def-50-1|the cotangent bundle, Def. §50.1]]; [[§49 The Tangent Bundle#^rem-49-2|Remark: Vector Bundles (§49)]].
+> - [[§49 The Tangent Bundle#^cor-49-4|The tangent bundle is a fibration, §49.4]]; [[§50 The Cotangent Bundle#^def-50-1|the cotangent bundle, Def. §50.1]]; [[§49 The Tangent Bundle#^rem-49-2|Remark: Vector Bundles (§49)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 

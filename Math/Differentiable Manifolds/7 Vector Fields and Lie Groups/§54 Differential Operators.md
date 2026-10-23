@@ -100,11 +100,11 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 *Uses:* [[§53 Vector Fields#^def-53-3|Def. §53.3]], [[§53 Vector Fields#^prop-53-2|§53.2]], [[§53 Vector Fields#^def-53-5|Def. §53.5]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§54 Differential Operators#^def-54-1|Def. §54.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 > [!example] Example §54.1: Differential Operators in Coordinates
-> *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$, of [[§54 Differential Operators#^def-54-3|order]] $2$ ([[§54 Differential Operators#^def-54-3|Definition §54.3]] below). On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one, also of order $2$. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$ ([[§54 Differential Operators#^prop-54-2|Proposition §54.2]] (2)): for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. Rewriting every composite in this way is how [[§54 Differential Operators#^prop-54-4|Proposition §54.4]] below puts any differential operator, in a chart, in the form $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ — “they are given by differential expressions in local coordinates.”
+> *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$, of [[§54 Differential Operators#^def-54-3|order]] $2$ ([[§54 Differential Operators#^def-54-3|Definition §54.3]] below). On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one, also of order $2$. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$ ([[§54 Differential Operators#^prop-54-2|Proposition §54.2]] (2)): for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. Rewriting every composite in this way is how [[§54 Differential Operators#^prop-54-6|Proposition §54.6]] below puts any differential operator, in a chart, in the form $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ — “they are given by differential expressions in local coordinates.”
 
 ^ex-54-1
 
-*Uses:* [[§54 Differential Operators#^prop-54-2|§54.2]], [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§54 Differential Operators#^prop-54-4|§54.4]]
+*Uses:* [[§54 Differential Operators#^prop-54-2|§54.2]], [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§54 Differential Operators#^prop-54-6|§54.6]]
 
 > [!definition] Definition §54.3: Order of a Differential Operator
 > For an integer $k \ge 0$, $\mathrm{Diff}_k(M)$ is the set of finite sums of composites $A_1 \circ \cdots \circ A_r$ of generators (each $A_i$ a $D_\mathbf{X}$ or an $m_g$, [[§54 Differential Operators#^def-54-2|Definition §54.2]]) in which *at most $k$* of the factors are of the form $D_\mathbf{X}$; the empty composite ($r = 0$) is $\mathrm{id}$. Set $\mathrm{Diff}_{-1}(M) = \{0\}$. A [[§54 Differential Operators#^def-54-2|differential operator]] $P$ has **order at most $k$** if $P \in \mathrm{Diff}_k(M)$, and **order $k$** if moreover $P \notin \mathrm{Diff}_{k-1}(M)$.
@@ -141,12 +141,9 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 > [!theorem] Proposition §54.3: The Order Filtration
 > Let $M$ be a smooth manifold.
+>
 > 1. $\mathrm{Diff}_0(M) \subseteq \mathrm{Diff}_1(M) \subseteq \mathrm{Diff}_2(M) \subseteq \cdots$, each $\mathrm{Diff}_k(M)$ is closed under sums, and $\bigcup_k \mathrm{Diff}_k(M) = \mathrm{Diff}(M)$.
 > 2. $\mathrm{Diff}_k(M) \circ \mathrm{Diff}_l(M) \subseteq \mathrm{Diff}_{k+l}(M)$: orders add, at most, under composition.
-> 3. $\mathrm{Diff}_0(M) = \{ m_g : g \in C^\infty(M) \}$.
-> 4. $\mathrm{Diff}_1(M) = \{ m_g + D_\mathbf{X} : g \in C^\infty(M),\ \mathbf{X} \in \mathfrak{X}(M) \}$, and $g$ and $\mathbf{X}$ are determined by the operator $P = m_g + D_\mathbf{X}$: $g = P(1)$ and $D_\mathbf{X} = P - m_{P(1)}$.
->
-> In particular the [[§53 Vector Fields#^def-53-5|derivations]] of $C^\infty(M)$ are exactly the $P \in \mathrm{Diff}_1(M)$ with $P(1) = 0$.
 
 ^prop-54-3
 
@@ -162,10 +159,27 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > $$
 >
 > the first by the pointwise sum of operators, the second because $Q$ is linear. Hence $P \circ Q = \sum_i \sum_j C_i \circ E_j$. Each $C_i \circ E_j$ is a composite of generators — the factors of $C_i$ followed by those of $E_j$ — whose vector-field factors number at most $k + l$. So $P \circ Q$ is a finite sum of composites with at most $k + l$ vector-field factors: $P \circ Q \in \mathrm{Diff}_{k+l}(M)$. (If $k = -1$ or $l = -1$, then $P = 0$ or $Q = 0$, so $P \circ Q = 0$, which lies in $\mathrm{Diff}_{k+l}(M)$ whenever $k + l \ge -1$.)
+
+^pf-54-3
+
+*Uses:* [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§54 Differential Operators#^prop-54-1|§54.1]], [[§54 Differential Operators#^prop-54-2|§54.2]], [[§53 Vector Fields#^prop-53-2|§53.2]], [[§53 Vector Fields#^prop-53-7|§53.7]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§54 Differential Operators#^def-54-2|Def. §54.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§53 Vector Fields#^def-53-2|Def. §53.2]]
+
+> [!theorem] Proposition §54.4: Differential Operators of Order 0 and 1
+> Let $M$ be a smooth manifold.
 >
-> *(3)* A composite with no vector-field factor is $m_{g_1} \circ \cdots \circ m_{g_r}$. By $m_{gh} = m_g \circ m_h$ (Proposition [[§54 Differential Operators#^prop-54-1|§54.1]](1)), applied $r - 1$ times, it equals $m_{g_1 \cdots g_r}$; for $r = 0$ it is $\mathrm{id} = m_1$. A finite sum of multiplication operators is again one, $\sum_i m_{h_i} = m_{\sum_i h_i}$, by $m_{g+h} = m_g + m_h$ (same proposition). So every element of $\mathrm{Diff}_0(M)$ is some $m_g$. Conversely $m_g$ is a composite of one generator with no vector-field factor, so $m_g \in \mathrm{Diff}_0(M)$.
+> 1. $\mathrm{Diff}_0(M) = \{ m_g : g \in C^\infty(M) \}$.
+> 2. $\mathrm{Diff}_1(M) = \{ m_g + D_\mathbf{X} : g \in C^\infty(M),\ \mathbf{X} \in \mathfrak{X}(M) \}$, and $g$ and $\mathbf{X}$ are determined by the operator $P = m_g + D_\mathbf{X}$: $g = P(1)$ and $D_\mathbf{X} = P - m_{P(1)}$.
 >
-> *(4)* *Every element has the form $m_g + D_\mathbf{Y}$.* A composite with no vector-field factor is $m_g$ by (3), and $m_g = m_g + D_\mathbf{0}$, since $(D_\mathbf{0} f)(p) = 0_p[f] = 0$. A composite with exactly one vector-field factor $D_\mathbf{X}$ is $m_a \circ D_\mathbf{X} \circ m_b$, where $m_a$ is the composite of the multiplications to the left of it and $m_b$ that of those to the right (by (3); $a = 1$ or $b = 1$ if there are none). Then, by Proposition [[§54 Differential Operators#^prop-54-2|§54.2]](2) with $g = b$, the linearity of $m_a$, Proposition [[§54 Differential Operators#^prop-54-1|§54.1]](1), and Proposition [[§54 Differential Operators#^prop-54-2|§54.2]](1) with $g = ab$,
+> In particular the derivations of $C^\infty(M)$ are exactly the $P \in \mathrm{Diff}_1(M)$ with $P(1) = 0$.
+
+^prop-54-4
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* As in the proof of Proposition [[§54 Differential Operators#^prop-54-3|§54.3]], “composite” means a composite of generators, each a $D_\mathbf{X}$ or an $m_g$, and $\mathrm{Diff}_k(M)$ consists of the finite sums of composites with at most $k$ factors of the form $D_\mathbf{X}$ (Definition [[§54 Differential Operators#^def-54-3|§54.3]]).
+>
+> *(1)* A composite with no vector-field factor is $m_{g_1} \circ \cdots \circ m_{g_r}$. By $m_{gh} = m_g \circ m_h$ (Proposition [[§54 Differential Operators#^prop-54-1|§54.1]](1)), applied $r - 1$ times, it equals $m_{g_1 \cdots g_r}$; for $r = 0$ it is $\mathrm{id} = m_1$. A finite sum of multiplication operators is again one, $\sum_i m_{h_i} = m_{\sum_i h_i}$, by $m_{g+h} = m_g + m_h$ (same proposition). So every element of $\mathrm{Diff}_0(M)$ is some $m_g$. Conversely $m_g$ is a composite of one generator with no vector-field factor, so $m_g \in \mathrm{Diff}_0(M)$.
+>
+> *(2)* *Every element has the form $m_g + D_\mathbf{Y}$.* A composite with no vector-field factor is $m_g$ by (1), and $m_g = m_g + D_\mathbf{0}$, since $(D_\mathbf{0} f)(p) = 0_p[f] = 0$. A composite with exactly one vector-field factor $D_\mathbf{X}$ is $m_a \circ D_\mathbf{X} \circ m_b$, where $m_a$ is the composite of the multiplications to the left of it and $m_b$ that of those to the right (by (1); $a = 1$ or $b = 1$ if there are none). Then, by Proposition [[§54 Differential Operators#^prop-54-2|§54.2]](2) with $g = b$, the linearity of $m_a$, Proposition [[§54 Differential Operators#^prop-54-1|§54.1]](1), and Proposition [[§54 Differential Operators#^prop-54-2|§54.2]](1) with $g = ab$,
 >
 > $$
 > m_a \circ D_\mathbf{X} \circ m_b = m_a \circ \big( m_b \circ D_\mathbf{X} + m_{\mathbf{X}b} \big) = m_a \circ m_b \circ D_\mathbf{X} + m_a \circ m_{\mathbf{X}b} = m_{ab} \circ D_\mathbf{X} + m_{a\,\mathbf{X}b} = D_{ab\mathbf{X}} + m_{a\,\mathbf{X}b} ,
@@ -179,12 +193,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > because $m_g + m_h = m_{g+h}$ (Proposition [[§54 Differential Operators#^prop-54-1|§54.1]](1)), and $D_\mathbf{X} + D_\mathbf{Y} = D_{\mathbf{X}+\mathbf{Y}}$: for every $f$ and $p$, $\mathbf{X}_p[f] + \mathbf{Y}_p[f] = (\mathbf{X}_p + \mathbf{Y}_p)[f] = (\mathbf{X} + \mathbf{Y})_p[f]$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]] and [[§53 Vector Fields#^def-53-2|§53.2]]), with $\mathbf{X} + \mathbf{Y} \in \mathfrak{X}(M)$ (Proposition [[§53 Vector Fields#^prop-53-2|§53.2]](1)). The empty sum is $0 = m_0 + D_\mathbf{0}$. So every element of $\mathrm{Diff}_1(M)$ is of the form $m_g + D_\mathbf{Y}$. Conversely $m_g + D_\mathbf{X}$ is a sum of two composites of one generator each, with at most one vector-field factor, so it lies in $\mathrm{Diff}_1(M)$.
 >
-> *$g$ and $\mathbf{X}$ are determined by $P$.* First, $D_\mathbf{X}$ kills the constant function $1$: by its product rule (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]),
->
-> $$
-> D_\mathbf{X}(1) = D_\mathbf{X}(1 \cdot 1) = 1 \cdot D_\mathbf{X}(1) + 1 \cdot D_\mathbf{X}(1) = 2\, D_\mathbf{X}(1), \qquad \text{so } D_\mathbf{X}(1) = 0 .
-> $$
->
+> *$g$ and $\mathbf{X}$ are determined by $P$.* First, $D_\mathbf{X}$ kills the constant function $1$: for every $p \in M$, $(D_\mathbf{X} 1)(p) = \mathbf{X}_p[1] = 0$ (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]), because the derivation $\mathbf{X}_p$ at $p$ annihilates constants (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)).
 > Hence for $P = m_g + D_\mathbf{X}$,
 >
 > $$
@@ -193,34 +202,38 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > and then $D_\mathbf{X} = P - m_g = P - m_{P(1)}$. If also $P = m_h + D_\mathbf{Y}$, the same computation gives $h = P(1) = g$ and $D_\mathbf{Y} = P - m_{P(1)} = D_\mathbf{X}$, and $D_\mathbf{Y} = D_\mathbf{X}$ forces $\mathbf{Y} = \mathbf{X}$ by the uniqueness in Proposition [[§53 Vector Fields#^prop-53-7|§53.7]].
 >
-> For the last sentence. *Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:* a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (4), and $D_\mathbf{X}(1) = 0$ as just shown. *Conversely*, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (4); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]).
+> For the last sentence. *Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:* a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition [[§53 Vector Fields#^prop-53-7|§53.7]]); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (2), and $D_\mathbf{X}(1) = 0$ as just shown. *Conversely*, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (2); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]).
 
-^pf-54-3
+^pf-54-4
 
-*Uses:* [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§54 Differential Operators#^prop-54-1|§54.1]], [[§54 Differential Operators#^prop-54-2|§54.2]], [[§53 Vector Fields#^prop-53-2|§53.2]], [[§53 Vector Fields#^prop-53-7|§53.7]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§54 Differential Operators#^def-54-2|Def. §54.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§53 Vector Fields#^def-53-2|Def. §53.2]]
+*Uses:* [[§54 Differential Operators#^prop-54-3|§54.3]], [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§54 Differential Operators#^prop-54-1|§54.1]], [[§54 Differential Operators#^prop-54-2|§54.2]], [[§53 Vector Fields#^prop-53-2|§53.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§53 Vector Fields#^def-53-2|Def. §53.2]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§53 Vector Fields#^prop-53-7|§53.7]]
 
-> [!definition] Definition §54.4: Multi-Index Notation
-> A **multi-index** is an $m$-tuple $\alpha = (\alpha_1, \ldots, \alpha_m)$ of integers $\alpha_i \ge 0$, with **order** $|\alpha| = \alpha_1 + \cdots + \alpha_m$ and $\alpha! = \alpha_1! \cdots \alpha_m!$. In a chart $(U, (x^1, \ldots, x^m))$, with $\partial_i = \partial/\partial x^i$ acting on $C^\infty(U)$,
+> [!theorem] Lemma §54.5: Coordinate Derivations on a Chart
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart and $\partial_i = \partial/\partial x^i : C^\infty(U) \to C^\infty(U)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]).
 >
-> $$
-> \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}, \qquad (x - c)^\alpha = (x^1 - c^1)^{\alpha_1} \cdots (x^m - c^m)^{\alpha_m} \quad (c \in \mathbb{R}^m),
-> $$
->
-> and $\partial^{(0, \ldots, 0)} = \mathrm{id}$. Write $\beta \le \alpha$ if $\beta_i \le \alpha_i$ for every $i$, and $e_j$ for the multi-index with $1$ in place $j$ and $0$ elsewhere.
+> 1. Each $\partial_i$ is a derivation of $C^\infty(U)$: $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$.
+> 2. The $\partial_i$ commute: $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Hence $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$ for every multi-index $\alpha$ (Definition [[§52 Critical Points and the Hessian#^def-52-8|§52.8]]).
 
-^def-54-4
+^lem-54-5
 
-> [!theorem] Proposition §54.4: Differential Operators in a Chart
-> Let $P \in \mathrm{Diff}_k(M)$ ([[§54 Differential Operators#^def-54-3|Definition §54.3]]) and let $(U, (x^1, \ldots, x^m))$ be a chart. Then there are *unique* functions $a_\alpha \in C^\infty(U)$, one for each [[§54 Differential Operators#^def-54-4|multi-index]] $\alpha$ with $|\alpha| \le k$, such that
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* *(1)* $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition [[§53 Vector Fields#^prop-53-1|§53.1]], its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. *(2)* The $\partial_i$ commute: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal (Clairaut's theorem); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Finally, $\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$, and moving the extra factor $\partial_i$ past $\partial_1^{\alpha_1}, \ldots, \partial_{i-1}^{\alpha_{i-1}}$ one factor at a time gives $\partial_i \circ \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_i^{\alpha_i + 1} \circ \cdots \circ \partial_m^{\alpha_m} = \partial^{\alpha + e_i}$.
+
+^pf-54-5
+
+*Uses:* [[§53 Vector Fields#^prop-53-1|§53.1]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+
+> [!theorem] Proposition §54.6: Differential Operators in a Chart
+> Let $P \in \mathrm{Diff}_k(M)$ ([[§54 Differential Operators#^def-54-3|Definition §54.3]]) and let $(U, (x^1, \ldots, x^m))$ be a chart. Then there are *unique* functions $a_\alpha \in C^\infty(U)$, one for each [[§52 Critical Points and the Hessian#^def-52-8|multi-index]] $\alpha$ with $|\alpha| \le k$, such that
 >
 > $$
 > (Pf)\big|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha \big(f|_U\big) \qquad \text{for all } f \in C^\infty(M).
 > $$
 
-^prop-54-4
+^prop-54-6
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Write $\varphi$ for the chart map. Two facts about the operators $\partial_i$ on $C^\infty(U)$ are used. First, $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition [[§53 Vector Fields#^prop-53-1|§53.1]], its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]]): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. Second, the $\partial_i$ commute: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal (Clairaut's theorem); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$.
+> *(Not from lecture; filled in.)* Write $\varphi$ for the chart map. By Lemma [[§54 Differential Operators#^lem-54-5|§54.5]], the $\partial_i$ are commuting derivations of $C^\infty(U)$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$.
 >
 > *Existence.* Call an operator $Q$ on $C^\infty(U)$ *of form $j$* if $Q = \sum_{|\alpha| \le j} b_\alpha\, \partial^\alpha$ with $b_\alpha \in C^\infty(U)$. An operator of form $j$ is of form $k$ for $j \le k$ (take $b_\alpha = 0$ for $j < |\alpha| \le k$), and a sum of operators of form $k$ is of form $k$ (add the coefficients of equal $\partial^\alpha$). Now $P$ is a finite sum $\sum_s C_s$ of composites $C_s$ of generators with at most $k$ vector-field factors (Definition [[§54 Differential Operators#^def-54-3|§54.3]]), and $(Pf)|_U = \sum_s (C_s f)|_U$. So it suffices to show: if $A_1 \circ \cdots \circ A_r$ is a composite of generators with $j$ vector-field factors, then $(A_1 \cdots A_r f)|_U = Q(f|_U)$ for all $f \in C^\infty(M)$, for some $Q$ of form $j$. Induct on $r$. For $r = 0$ take $Q = \mathrm{id} = \partial^{(0, \ldots, 0)}$, of form $0$. For $r \ge 1$ let $B = A_2 \circ \cdots \circ A_r$, with $j'$ vector-field factors; by the induction hypothesis $(Bf)|_U = Q'(f|_U)$ with $Q' = \sum_{|\alpha| \le j'} b_\alpha\, \partial^\alpha$ of form $j'$. Write $u = f|_U$.
 > - If $A_1 = m_g$ then $j = j'$, and restricting the product $g\,(Bf)$ to $U$,
@@ -236,15 +249,9 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > (D_\mathbf{X} B f)|_U = \sum_i \mathbf{X}^i\, \partial_i \Big( \sum_\alpha b_\alpha\, \partial^\alpha u \Big) = \sum_i \sum_\alpha \mathbf{X}^i \Big( (\partial_i b_\alpha)\, \partial^\alpha u + b_\alpha\, \partial_i \partial^\alpha u \Big) = \sum_i \sum_\alpha \Big( \mathbf{X}^i\, (\partial_i b_\alpha)\, \partial^\alpha + \mathbf{X}^i\, b_\alpha\, \partial^{\alpha + e_i} \Big) u ,
 > $$
 >
-> the sums over $|\alpha| \le j'$. The last step reorders the partial derivatives, which is allowed because mixed partials of smooth functions are equal (Clairaut's theorem, applied to $f \circ \varphi^{-1}$), as recalled above. The coefficients $\mathbf{X}^i\, \partial_i b_\alpha$ and $\mathbf{X}^i\, b_\alpha$ are smooth on $U$ ($\mathbf{X}^i$ by Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]), and the multi-indices occurring have $|\alpha| \le j'$ and $|\alpha + e_i| = |\alpha| + 1 \le j' + 1$. Collecting the terms with the same multi-index, the right side has form $j' + 1 = j$.
+> the sums over $|\alpha| \le j'$. The last step uses $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$, which reorders partial derivatives (Lemma [[§54 Differential Operators#^lem-54-5|§54.5]]). The coefficients $\mathbf{X}^i\, \partial_i b_\alpha$ and $\mathbf{X}^i\, b_\alpha$ are smooth on $U$ ($\mathbf{X}^i$ by Proposition [[§53 Vector Fields#^prop-53-1|§53.1]]), and the multi-indices occurring have $|\alpha| \le j'$ and $|\alpha + e_i| = |\alpha| + 1 \le j' + 1$. Collecting the terms with the same multi-index, the right side has form $j' + 1 = j$.
 >
-> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary [[§53 Vector Fields#^cor-53-5|§53.5]] there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. In coordinates, $(x - c)^\beta \circ \varphi^{-1}(r) = \prod_i (r^i - c^i)^{\beta_i}$, a product of factors each depending on one variable, so
->
-> $$
-> \frac{\partial^{|\alpha|}}{\partial r^\alpha} \prod_{i=1}^m (r^i - c^i)^{\beta_i} = \prod_{i=1}^m \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i}, \qquad \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i} = \begin{cases} \dfrac{\beta_i!}{(\beta_i - \alpha_i)!} (r^i - c^i)^{\beta_i - \alpha_i} & \alpha_i \le \beta_i, \\ 0 & \alpha_i > \beta_i . \end{cases}
-> $$
->
-> That is, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise. At $x = c$, i.e. at the point $p$, the factor $(r^i - c^i)^{\beta_i - \alpha_i}$ is $1$ if $\alpha_i = \beta_i$ and $0$ if $\alpha_i < \beta_i$; so $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
+> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary [[§53 Vector Fields#^cor-53-5|§53.5]] there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. By Lemma [[§52 Critical Points and the Hessian#^lem-52-15|§52.15]], $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
 >
 > $$
 > 0 = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha (f_\beta|_U)(p) = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha\Big(\frac{(x - c)^\beta}{\beta!}\Big)(p) = c_\beta(p)\, \frac{\beta!}{\beta!} = c_\beta(p) .
@@ -252,11 +259,11 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > As $p$ and $\beta$ were arbitrary, all $c_\beta = 0$. Applied to the difference of two expressions for $P$, $(Pf)|_U = \sum a_\alpha\, \partial^\alpha (f|_U) = \sum a'_\alpha\, \partial^\alpha (f|_U)$, with $c_\alpha = a_\alpha - a'_\alpha$, this gives $a_\alpha = a'_\alpha$ for every $\alpha$: uniqueness.
 
-^pf-54-4
+^pf-54-6
 
-*Uses:* [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§54 Differential Operators#^def-54-4|Def. §54.4]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§53 Vector Fields#^cor-53-5|§53.5]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§52 Critical Points and the Hessian#^def-52-8|Def. §52.8]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§53 Vector Fields#^cor-53-5|§53.5]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§54 Differential Operators#^lem-54-5|§54.5]], [[§52 Critical Points and the Hessian#^lem-52-15|§52.15]]
 
-> [!theorem] Corollary §54.5: Differential Operators on Euclidean Space
+> [!theorem] Corollary §54.7: Differential Operators on Euclidean Space
 > On $\mathbb{R}^m$, with its standard coordinates and $\partial_i = D_{\partial/\partial x^i}$,
 >
 > $$
@@ -265,12 +272,12 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > with the coefficients $a_\alpha$ uniquely determined by the operator. In particular $\mathrm{Diff}(\mathbb{R}^m)$ is exactly the set of linear partial differential operators with smooth coefficients, and the [[§54 Differential Operators#^def-54-3|order]] is the usual order: the largest $|\alpha|$ with $a_\alpha \ne 0$.
 
-^cor-54-5
+^cor-54-7
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Here $\partial_i$ in the sense of Definition [[§54 Differential Operators#^def-54-4|§54.4]] for the identity chart, $f \mapsto \partial f/\partial x^i$, is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on $\mathbb{R}^m$ (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]], with coefficients $\delta^j_i$); $\partial/\partial x^i$ is a vector field by Proposition [[§53 Vector Fields#^prop-53-1|§53.1]], its coefficients being constant.
+> *(Not from lecture; filled in.)* Here $\partial_i$ in the sense of Definition [[§52 Critical Points and the Hessian#^def-52-8|§52.8]] for the identity chart, $f \mapsto \partial f/\partial x^i$, is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on $\mathbb{R}^m$ (Lemma [[§53 Vector Fields#^lem-53-3|§53.3]], with coefficients $\delta^j_i$); $\partial/\partial x^i$ is a vector field by Proposition [[§53 Vector Fields#^prop-53-1|§53.1]], its coefficients being constant.
 >
-> *$\subseteq$ and uniqueness.* The identity chart $(\mathbb{R}^m, \mathrm{id})$ covers $\mathbb{R}^m$, so Proposition [[§54 Differential Operators#^prop-54-4|§54.4]] with $U = \mathbb{R}^m$ (where $f|_U = f$) gives, for $P \in \mathrm{Diff}_k(\mathbb{R}^m)$, unique $a_\alpha \in C^\infty(\mathbb{R}^m)$ with $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for all $f$.
+> *$\subseteq$ and uniqueness.* The identity chart $(\mathbb{R}^m, \mathrm{id})$ covers $\mathbb{R}^m$, so Proposition [[§54 Differential Operators#^prop-54-6|§54.6]] with $U = \mathbb{R}^m$ (where $f|_U = f$) gives, for $P \in \mathrm{Diff}_k(\mathbb{R}^m)$, unique $a_\alpha \in C^\infty(\mathbb{R}^m)$ with $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for all $f$.
 >
 > *$\supseteq$.* Conversely, each term is
 >
@@ -284,9 +291,9 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > *The order.* Let $P \in \mathrm{Diff}_k(\mathbb{R}^m)$ with its unique coefficients $a_\alpha$, $|\alpha| \le k$. For $-1 \le j \le k$: $P \in \mathrm{Diff}_j(\mathbb{R}^m)$ if and only if $a_\alpha = 0$ for all $|\alpha| > j$. Indeed, if $P \in \mathrm{Diff}_j(\mathbb{R}^m)$, its expansion with $|\alpha| \le j$ (by $\subseteq$; for $j = -1$, $P = 0$ with the empty expansion), padded with zero coefficients for $j < |\alpha| \le k$, is an expansion with $|\alpha| \le k$, so by uniqueness it equals $(a_\alpha)$, and $a_\alpha = 0$ for $|\alpha| > j$. Conversely, if $a_\alpha = 0$ for $|\alpha| > j$, then $P = \sum_{|\alpha| \le j} a_\alpha\, \partial^\alpha \in \mathrm{Diff}_j(\mathbb{R}^m)$ by $\supseteq$ (for $j = -1$, $P = 0$). So for $P \ne 0$, with $\ell$ the largest $|\alpha|$ such that $a_\alpha \ne 0$, $P \in \mathrm{Diff}_\ell(\mathbb{R}^m)$ and $P \notin \mathrm{Diff}_{\ell - 1}(\mathbb{R}^m)$: $P$ has order $\ell$ (Definition [[§54 Differential Operators#^def-54-3|§54.3]]).
 
-^pf-54-5
+^pf-54-7
 
-*Uses:* [[§54 Differential Operators#^prop-54-4|§54.4]], [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§54 Differential Operators#^def-54-4|Def. §54.4]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§54 Differential Operators#^prop-54-3|§54.3]]
+*Uses:* [[§54 Differential Operators#^prop-54-6|§54.6]], [[§54 Differential Operators#^def-54-3|Def. §54.3]], [[§52 Critical Points and the Hessian#^def-52-8|Def. §52.8]], [[§53 Vector Fields#^lem-53-3|§53.3]], [[§53 Vector Fields#^prop-53-1|§53.1]], [[§54 Differential Operators#^prop-54-3|§54.3]]
 
 > [!remark]- Connections
 > - The Laplacian $\Delta = \sum_i \partial_i^2$, an operator of order $2$ in $\mathrm{Diff}(\mathbb{R}^m)$: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|Multivariable Analysis, Definition §28.3]].
@@ -297,12 +304,12 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 ^rem-54-1
 
-> [!theorem] Theorem §54.6: Local Operators Are Differential Operators
-> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a chart neighbourhood $U$ on which $(Pf)|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha (f|_U)$ for all $f \in C^\infty(M)$, for some $k$ and some $a_\alpha \in C^\infty(U)$ — the form of Proposition [[§54 Differential Operators#^prop-54-4|§54.4]]. Conversely, every differential operator is local (the remark *[[§54 Differential Operators#^rem-54-1|Differential Operators Are Local]]* in [[§54 Differential Operators|§54]]).
+> [!theorem] Theorem §54.8: Local Operators Are Differential Operators
+> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a chart neighbourhood $U$ on which $(Pf)|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha (f|_U)$ for all $f \in C^\infty(M)$, for some $k$ and some $a_\alpha \in C^\infty(U)$ — the form of Proposition [[§54 Differential Operators#^prop-54-6|§54.6]]. Conversely, every differential operator is local (the remark *[[§54 Differential Operators#^rem-54-1|Differential Operators Are Local]]* in [[§54 Differential Operators|§54]]).
 
-^thm-54-6
+^thm-54-8
 
 > [!proof]+ Proof (not given in this course)
 > Stated in Lecture 15 “FYI”: “There's a theorem which is that every local operator … is a differential operator, and conversely, of course, the converse is easy. … We're not going to prove this theorem, but it's true.” It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
 
-^pf-54-6
+^pf-54-8

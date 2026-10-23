@@ -41,7 +41,7 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
 - [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14: The Old and New Versions Agree]]
 - [[§39 Examples of Fibrations#^prop-39-1|Proposition §39.1: The Möbius Band Is a Fibration]]
-- [[§49 The Tangent Bundle#^cor-49-3|Corollary §49.3: The Tangent Bundle Is a Fibration]]
+- [[§49 The Tangent Bundle#^cor-49-4|Corollary §49.4: The Tangent Bundle Is a Fibration]]
 - [[§52 Critical Points and the Hessian#^ex-52-1|Example §52.1: The Hessian Matrix Depends on the Chart]]
 
 ## Connections

@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (75), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (24), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (103), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (157), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (46), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (33), [[· 8 Sard's Theorem|8 Sard's Theorem]] (1)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (103), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (157), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (55), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (33), [[· 8 Sard's Theorem|8 Sard's Theorem]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (17), [[Multivariable Analysis]] (12)
 
 ## Sections
@@ -31,7 +31,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 254 later results
-- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 246 later results
-- [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]: 245 later results
-- [[Unique Maximal Atlas|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]: 245 later results
+- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 263 later results
+- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 255 later results
+- [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]: 254 later results
+- [[Unique Maximal Atlas|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]: 254 later results

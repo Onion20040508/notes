@@ -115,11 +115,11 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > \mathbf{X} = \tilde\varphi^{-1} \circ \big(\tilde\varphi \circ \mathbf{X} \circ \varphi^{-1}\big) \circ \varphi ,
 > $$
 >
-> a composite of continuous maps ($\varphi$ is a homeomorphism onto $\varphi(U)$, the middle map is smooth, and $\tilde\varphi^{-1}$ is continuous by Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]]). So Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] holds at every $p \in U$ with the charts $(U, \varphi)$ and $(TU, \tilde\varphi)$: $\mathbf{X}$ is smooth on $U$.
+> a composite of continuous maps ($\varphi$ is a homeomorphism onto $\varphi(U)$, the middle map is smooth, and $\tilde\varphi^{-1}$ is continuous by Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]]). So Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] holds at every $p \in U$ with the charts $(U, \varphi)$ and $(TU, \tilde\varphi)$: $\mathbf{X}$ is smooth on $U$.
 
 ^pf-53-1
 
-*Uses:* [[§53 Vector Fields#^def-53-1|Def. §53.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§49 The Tangent Bundle#^def-49-4|Def. §49.4]], [[§49 The Tangent Bundle#^prop-49-2|§49.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§49 The Tangent Bundle#^def-49-5|Def. §49.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§49 The Tangent Bundle#^prop-49-1|§49.1]]
+*Uses:* [[§53 Vector Fields#^def-53-1|Def. §53.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§49 The Tangent Bundle#^def-49-4|Def. §49.4]], [[§49 The Tangent Bundle#^prop-49-2|§49.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§49 The Tangent Bundle#^def-49-5|Def. §49.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§49 The Tangent Bundle#^prop-49-3|§49.3]]
 
 > [!theorem] Proposition §53.2: The Space of Vector Fields Is a Real Vector Space
 > Let $M$ be a smooth manifold.
@@ -296,10 +296,28 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 ^prop-53-4
 
-> [!proof]+ Proof (to be filled)
-> Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” To be filled.
+> [!proof]+ Proof
+> *(Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function “is constructed in the Euclidean space first, and then you pull back with the chart.” Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§61 The Whitney Embedding Theorem#^thm-61-1|§61.1]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+>
+> *1. A smooth function vanishing to infinite order.* Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
+>
+> *2. A plateau on $\mathbb{R}^m$.* Put
+>
+> $$
+> H(x) = \frac{h\big(r'^2 - |x|^2\big)}{h\big(r'^2 - |x|^2\big) + h\big(|x|^2 - r^2\big)}, \qquad x \in \mathbb{R}^m .
+> $$
+>
+> The denominator never vanishes: if $|x| < r'$ the first term is positive, and if $|x| \ge r' > r$ the second is. So $H$ is smooth, $0 \le H \le 1$, $H(x) = 1$ when $|x| \le r$ (the second term vanishes), and $H(x) = 0$ when $|x| \ge r'$.
+>
+> *3. Pull back by the chart.* Define $\chi = H\big(\varphi - \varphi(p)\big)$ on $V$ and $\chi = 0$ on $M \setminus V$. The set $K = \varphi^{-1}\big(\overline{B}(\varphi(p), r')\big)$ is compact, as the image of a compact set under the continuous map $\varphi^{-1}$, hence closed in the Hausdorff space $M$, and $K \subseteq V$. $\chi$ is smooth on the open set $V$ and zero on the open set $M \setminus K$; these two open sets cover $M$, so $\chi$ is smooth. Its support lies in $K$, so it is compact and inside $V \subseteq U$; and $\chi \equiv 1$ on $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$, which contains the open neighbourhood $\varphi^{-1}\big(B(\varphi(p), r)\big)$ of $p$. So $\chi$ is a bump function at $p$ (Definition [[§53 Vector Fields#^def-53-9|§53.9]]).
 
 ^pf-53-4
+
+*Uses:* [[§61 The Whitney Embedding Theorem#^thm-61-1|§61.1]], [[§53 Vector Fields#^def-53-9|Def. §53.9]]
+
+![[m591-53-1.svg]]
+
+*(Not from lecture; figure added.)* The two steps of the construction for $m = 1$. Left: $h(t) = e^{-1/t}$ for $t > 0$ and $h = 0$ for $t \le 0$ is smooth, with all derivatives $0$ at $t = 0$, so it switches on without a corner (Step 1). Right: the plateau $H(x) = h(r'^2 - x^2) / \big(h(r'^2 - x^2) + h(x^2 - r^2)\big)$ is $1$ on $|x| \le r$, $0$ for $|x| \ge r'$, and smooth in between (Step 2); pulling it back by a chart gives the bump function (Step 3).
 
 > [!remark]- Connections
 > - The flat function $e^{-1/x^2}$, smooth but not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]].

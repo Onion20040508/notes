@@ -1,0 +1,26 @@
+% Figure from MATH 591 notes, section 49 (Lemma: building a manifold from charts). Added, not from lecture.
+\begin{tikzpicture}[>=stealth, scale=1.0]
+    \draw[thick] (0,2.3) ellipse (3.2 and 1.25);
+    \node[font=\small] at (2.75,3.35) {$X$};
+    \begin{scope}
+        \clip (-0.85,2.3) ellipse (1.55 and 0.85);
+        \fill[violet!25] (0.85,2.3) ellipse (1.55 and 0.85);
+    \end{scope}
+    \draw[thick, blue!70!black] (-0.85,2.3) ellipse (1.55 and 0.85);
+    \draw[thick, orange!85!black] (0.85,2.3) ellipse (1.55 and 0.85);
+    \node[blue!70!black, font=\small] at (-1.75,2.3) {$U_\alpha$};
+    \node[orange!85!black, font=\small] at (1.75,2.3) {$U_\beta$};
+    \node[violet!80!black, font=\scriptsize] at (0,2.3) {$U_\alpha \cap U_\beta$};
+    \draw (-4.9,-2.6) rectangle (-1.3,-0.2); \node[font=\scriptsize, anchor=north west] at (-4.9,-0.2) {$\mathbb{R}^n$};
+    \draw (1.3,-2.6) rectangle (4.9,-0.2); \node[font=\scriptsize, anchor=north west] at (1.3,-0.2) {$\mathbb{R}^n$};
+    \draw[thick, blue!70!black, fill=blue!6] (-3.1,-1.4) ellipse (1.35 and 0.8);
+    \fill[violet!25] (-2.45,-1.4) ellipse (0.6 and 0.45); \draw[violet!80!black] (-2.45,-1.4) ellipse (0.6 and 0.45);
+    \draw[thick, orange!85!black, fill=orange!6] (3.1,-1.4) ellipse (1.35 and 0.8);
+    \fill[violet!25] (2.45,-1.4) ellipse (0.6 and 0.45); \draw[violet!80!black] (2.45,-1.4) ellipse (0.6 and 0.45);
+    \node[blue!70!black, font=\scriptsize] at (-3.65,-1.4) {$\varphi_\alpha(U_\alpha)$};
+    \node[orange!85!black, font=\scriptsize] at (3.75,-1.4) {$\varphi_\beta(U_\beta)$};
+    \draw[->, blue!70!black] (-1.6,1.55) -- node[left, font=\small] {$\varphi_\alpha$} (-2.9,-0.45);
+    \draw[->, orange!85!black] (1.6,1.55) -- node[right, font=\small] {$\varphi_\beta$} (2.9,-0.45);
+    \draw[->, thick, violet!80!black] (-1.8,-1.55) to[bend right=18] node[below, font=\scriptsize, align=center] {$\varphi_\beta \circ \varphi_\alpha^{-1}$\\ smooth (3)} (1.8,-1.55);
+    \node[font=\scriptsize, violet!80!black, align=center] at (0,-0.55) {open sets (2)};
+\end{tikzpicture}

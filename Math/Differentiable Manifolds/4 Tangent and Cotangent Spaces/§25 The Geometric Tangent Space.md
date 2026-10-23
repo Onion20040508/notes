@@ -177,7 +177,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 >
 > so $v \in \ker F'(p)$.
 >
-> *2. Everything is local near $p$, so WLOG $M$ is a graph.* “Since everything is local near $p$ \ldots these regular level sets are locally graphs of functions, for various choices of variables.” *(Completion.)* The proof of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] (open domain $W$, value $c$), gives the following. There is a permutation of coordinates $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ (Step 1 there), an open box $V \times V' \subseteq \mathbb{R}^n \times \mathbb{R}^k$ containing $\rho(p)$, and a smooth $G : V \to V'$ (Steps 2–3 there) with
+> *2. Everything is local near $p$, so WLOG $M$ is a graph.* “Since everything is local near $p$ … these regular level sets are locally graphs of functions, for various choices of variables.” *(Completion.)* The proof of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] (open domain $W$, value $c$), gives the following. There is a permutation of coordinates $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ (Step 1 there), an open box $V \times V' \subseteq \mathbb{R}^n \times \mathbb{R}^k$ containing $\rho(p)$, and a smooth $G : V \to V'$ (Steps 2–3 there) with
 >
 > $$
 > \rho(M) \cap (V \times V') = \{(x, G(x)) \mid x \in V\} .

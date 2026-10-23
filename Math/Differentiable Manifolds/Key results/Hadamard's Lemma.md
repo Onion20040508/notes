@@ -20,7 +20,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|Lemma §29.4: Taylor–Hadamard]]
 - [[§34 The Cotangent Space from Germs#^prop-34-1|Proposition §34.1: Germs Vanishing to Second Order]]
-- [[§52 Critical Points and the Hessian#^prop-52-14|Proposition §52.14: Jets Are Taylor Polynomials]]
+- [[§52 Critical Points and the Hessian#^prop-52-16|Proposition §52.16: Jets Are Taylor Polynomials]]
 
 ## Connections
 - **Used for.** Applied twice it gives Taylor–Hadamard ([[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]), hence every derivation on ℝⁿ is Σ D[rⁱ] ∂/∂rⁱ ([[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5|§29.5]]), hence the [[Basis Theorem for Tangent Spaces]]. It also shows that I_p² consists of the germs vanishing to second order ([[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]]), the key step of [[Cotangent Space from Germs]].

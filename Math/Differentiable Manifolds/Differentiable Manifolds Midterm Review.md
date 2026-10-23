@@ -271,10 +271,10 @@ The notes show the course building each object more than once and then proving t
 - [ ] Definition [[§51 One-Forms#^def-51-1|§51.1]] One-Form, Definition [[§52 Critical Points and the Hessian#^def-52-2|§52.2]] Hessian at a Critical Point, Definition [[§52 Critical Points and the Hessian#^def-52-3|§52.3]] Nondegenerate Critical Point, Definition [[§52 Critical Points and the Hessian#^def-52-4|§52.4]] Morse Function
 
 **Proofs**
-- [ ] ★★ Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]] The Topology of $TM$ and Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] The Smooth Atlas of $TM$: topology, then atlas.
-- [ ] ★★ Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]] The Smooth Atlas of $T^{\ast}M$, Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]] The Tangent Bundle Is a Fibration
+- [ ] ★★ Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] The Topology and Smooth Structure of $TM$ and Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] The Transition Maps of $TM$: topology, then atlas.
+- [ ] ★★ Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] The Transition Maps of $T^{\ast}M$, Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] The Topology and Smooth Structure of $TM$
 - [ ] ★★ Proposition [[§51 One-Forms#^prop-51-2|§51.2]] The Differential of a Function Is a One-Form
-- [ ] ★ Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]] The Hessian at a Critical Point Is Well Defined, Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]] Transversality to the Zero Section (HW5.3), Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]] Critical Points of a Morse Function Are Isolated
+- [ ] ★ Proposition [[§52 Critical Points and the Hessian#^prop-52-3|§52.3]] The Hessian at a Critical Point Is Well Defined, Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]] Transversality to the Zero Section (HW5.3), Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] Critical Points of a Morse Function Are Isolated
 
 **Drill**
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T10|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T10|proofs and class exercises]]
@@ -315,7 +315,7 @@ Each one is a reusable move. Before writing a proof, name the move.
 - **S10 Compute $F_{\ast}$ with curves**: $F_{\ast}(\gamma'(0)) = (F \circ \gamma)'(0)$, Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]] Velocity of a Composite.
 - **S11 Local, then global.** Germs, shrinking neighbourhoods, bump functions: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] Open Subsets Have the Same Abstract Tangent Spaces, Corollary [[§53 Vector Fields#^cor-53-5|§53.5]] Every Germ Has a Global Representative.
 - **S12 Transversality = the images span.** Reduce to a regular value of a composite with a local defining map: Theorem [[§37 Regular Submanifolds#^thm-37-15|§37.15]] Preimages of Transverse Submanifolds.
-- **S13 Compactness upgrades local to global**: closed images, proper maps, finitely many critical points: Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds, Theorem [[§42 Embeddings#^thm-42-5|§42.5]] Injective Proper Immersions Are Embeddings, Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] Morse Functions on Compact Manifolds.
+- **S13 Compactness upgrades local to global**: closed images, proper maps, finitely many critical points: Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds, Theorem [[§42 Embeddings#^thm-42-5|§42.5]] Injective Proper Immersions Are Embeddings, Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] Critical Points of a Morse Function Are Isolated.
 - **S13′ Connectedness upgrades local to global**: a local property plus a clopen set gives a global one, Theorem [[§2 Topological Manifolds#^thm-2-8|§2.8]] Connected Manifolds Are Path Connected, Proposition [[§30 The Differential in Coordinates#^prop-30-10|§30.10]] Maps with Zero Differential Are Constant.
 - **S14 Differentiate an identity**, e.g. $\pi \circ s = \mathrm{id}$ or $G \circ F =$ const. Test closedness, Hausdorffness and continuity with sequences.
 - **S15 Symmetry**: prove it at one point (or on one slice), then move it by the group: homogeneous spaces, classical groups, $\mathrm{SU}(2)$.

@@ -47,8 +47,8 @@ tags: [differentiable-manifolds, hub]
 - [[§48 Recap꞉ Covectors and the Four Differentials#^ex-48-1|Example §48.1: Covectors in the Plane]]
 - [[§51 One-Forms#^prop-51-5|Proposition §51.5: Pullbacks in Coordinates]]
 - [[§52 Critical Points and the Hessian#^prop-52-5|Proposition §52.5: The Zero Section Is a Regular Submanifold]]
-- [[§52 Critical Points and the Hessian#^prop-52-8|Proposition §52.8: The Vertical Space of T^*M Along the Zero Section]]
-- [[§52 Critical Points and the Hessian#^prop-52-9|Proposition §52.9: The Differential of df at a Critical Point]]
+- [[§52 Critical Points and the Hessian#^prop-52-9|Proposition §52.9: The Vertical Space of T^*M Along the Zero Section]]
+- [[§52 Critical Points and the Hessian#^prop-52-10|Proposition §52.10: The Differential of df at a Critical Point]]
 
 ## Connections
 - **Used for.** Every local computation with differentials: the chain rule and change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), agreement with the Jacobian on ℝⁿ ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), regular values inside one chart ([[§30 The Differential in Coordinates#^prop-30-8|§30.8]]), the [[Local Diffeomorphism Criterion]], the [[Submersion Normal Form]] and the transition maps of TM ([[Tangent Bundle Is a Smooth Manifold]]).

@@ -11,7 +11,7 @@ tags: [subject, differentiable-manifolds]
 ---
 # Differentiable Manifolds
 
-MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§60 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
+MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§61 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
 
 ## Roadmap
 These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§36 Submersions|§36]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§37 Regular Submanifolds|§37]]); the submersions that are locally products are the fibrations ([[§38 Fibrations|§38]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§49 The Tangent Bundle|§49]]). Immersions, the maps dual to submersions, begin a new arc ([[§41 Immersions|§41]]), which leads to embeddings, the immersions whose images are submanifolds ([[§42 Embeddings|§42]]).
@@ -44,8 +44,8 @@ graph TD
   C3 --> C4
   C4 --> C5
   C5 --> C6
-  C5 --> C8
   C6 --> C7
+  C7 --> C8
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C3 -.->|on credit| C2
@@ -53,6 +53,7 @@ graph TD
   C4 -.->|on credit| C2
   C5 -.->|on credit| C1
   C5 -.->|on credit| C3
+  C8 -.->|on credit| C7
   X4 -.->|9| C2
   X4 -.->|7| C5
   X3 -.->|8| C1
@@ -123,10 +124,12 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§53
 - [[Images of Embeddings Are Submanifolds]] (§42.1)
 - [[Injective Proper Immersions Are Embeddings]] (§42.5)
 - [[SU(2) Is a Double Cover of SO(3)]] (§46.4)
+- [[Smooth Manifold Chart Lemma]] (§49.1)
 - [[Tangent Bundle Is a Smooth Manifold]] (§49.2)
 - [[The Lie Algebra Is the Tangent Space at the Identity]] (§57.7)
-- [[Sard's Theorem]] (§59.1)
+- [[Sard's Theorem]] (§59.3)
 - [[Parametric Transversality Theorem]] (§60.1)
+- [[Whitney Embedding Theorem]] (§61.1)
 
 ## Summaries
 - [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]] (every homework problem broken into small questions) and [[Differentiable Manifolds Notes Drill]] (definitions, core proofs, class exercises, equivalences).

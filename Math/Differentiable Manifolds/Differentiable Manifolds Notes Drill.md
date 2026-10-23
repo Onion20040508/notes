@@ -2431,7 +2431,7 @@ $\xi_i = \xi(\partial/\partial x^i|_p)$, so $\xi = \sum_i \xi_i\,dx^i|_p$, see D
 - [ ] Q4 **[example]** What are the components of $df_p$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]; Q2: Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]. Q3: Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]] versus Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]].
+> - Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]; Q2: Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]. Q3: Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] versus Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]].
 > - Q4: $\partial f/\partial x^i(p)$, Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]].
 
 #### Pullback of covectors · P2
@@ -2659,7 +2659,7 @@ $\operatorname{Crit}(f) = \{p : df_p = 0\}$ for $f : M \to \mathbb{R}$, see Defi
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§36 Submersions#^def-36-5|§36.5]]; Proposition [[§36 Submersions#^prop-36-2|§36.2]]; Q2: Corollary [[§36 Submersions#^cor-36-8|§36.8]] (the regular points form an open set, Corollary [[§36 Submersions#^cor-36-7|§36.7]]).
-> - Q3: $p \in \operatorname{Crit}(f)$ iff $df(p)$ lies on the zero section, Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]].
+> - Q3: $p \in \operatorname{Crit}(f)$ iff $df(p)$ lies on the zero section, Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]].
 
 ## Proofs T6
 
@@ -3448,7 +3448,7 @@ $\pi : M \to B$ is a fibration with fibre $F$ if $B$ has an open cover $\{U_\alp
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§38 Fibrations#^def-38-1|§38.1]]; Q2: Proposition [[§38 Fibrations#^prop-38-1|§38.1]] (part 2: $\pi|_W = \mathrm{pr}_1 \circ \phi_\alpha$, chain rule; stated in lecture as "chain rule and stuff").
 > - Q3: Proposition [[§38 Fibrations#^prop-38-2|§38.2]]. Q4: Example [[§38 Fibrations#^ex-38-1|§38.1]] (fibres change: a line, then a line minus a point). Q5: Theorem [[§38 Fibrations#^thm-38-3|§38.3]] (proper; quoted), Example [[§38 Fibrations#^ex-38-2|§38.2]].
-> - Q1 examples: Example [[§39 Examples of Fibrations#^ex-39-1|§39.1]] (product), Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]] (Möbius band), Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]] (Hopf), Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]] ($TM$), Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]] (normal bundle).
+> - Q1 examples: Example [[§39 Examples of Fibrations#^ex-39-1|§39.1]] (product), Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]] (Möbius band), Example [[§44 Projective Spaces and the Hopf Fibration#^ex-44-3|§44.3]] (Hopf), Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]] ($TM$), Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]] (normal bundle).
 
 #### Trivial fibration · P2
 
@@ -3498,7 +3498,7 @@ $V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§38 Fibrations#^def-
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§38 Fibrations#^def-38-5|§38.5]]; Q2: Theorem [[§37 Regular Submanifolds#^thm-37-12|§37.12]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
 > - Q3: Proposition [[§38 Fibrations#^prop-38-5|§38.5]] ($P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$). Q4: no in general; along the image of a section, yes (Q3).
-> - Q5: Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]] (spanned by $\partial/\partial \xi_j$).
+> - Q5: Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]] (spanned by $\partial/\partial \xi_j$).
 
 #### Vector bundle · P2
 
@@ -3515,7 +3515,7 @@ A fibration $\pi : E \to M$ whose fibres are vector spaces and whose local trivi
 > [!tip]- Hints: where it lives, sources
 > - The notes: the remark *Vector Bundles* in [[§49 The Tangent Bundle|§49]] ("the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise"); the fibration it refines: Definition [[§38 Fibrations#^def-38-1|§38.1]].
 > - Lee, *Introduction to Smooth Manifolds* (2nd ed.), Ch. 10, "Vector Bundles": the definition of a (smooth) vector bundle of rank $k$; Lemma 10.5 for the transition functions $\tau : U \cap V \to \mathrm{GL}(k, \mathbb{R})$ (smooth); Example 10.3 for the Möbius bundle.
-> - Q4: Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]] (part 2: linear on each $T_pM$), Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] ($\tau$ = Jacobian of the chart change), Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]] (transpose inverse), Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]] (part 2).
+> - Q4: Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]] (part 2: linear on each $T_pM$), Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] ($\tau$ = Jacobian of the chart change), Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] (transpose inverse), Proposition [[§40 The Normal Bundle of a Submanifold of Euclidean Space#^prop-40-2|§40.2]] (part 2).
 > - Möbius: Proposition [[§39 Examples of Fibrations#^prop-39-1|§39.1]] (part 3: $\tau = \pm 1$). Q5: fibre $S^1$ is not a vector space; a vector bundle has the zero section, the Hopf fibration has no global section (Corollary [[§44 Projective Spaces and the Hopf Fibration#^cor-44-2|§44.2]]).
 
 ## Proofs T8
@@ -3558,7 +3558,7 @@ If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{i
 > - Strategy: S14 (differentiate $\pi\circ s=\mathrm{id}_M$), S7.
 > - $u=s_{\ast p}(\pi_{\ast y}w)$ and $w-u\in V_y$ by (1).
 > - If $w=s_{\ast p}v\in V_y$, then $v=\pi_{\ast y}w=0$.
-> - $V_y=\ker\pi_{\ast y}$ is intrinsic; the horizontal complement $s_{\ast p}(T_pM)$ changes with $s$. Used in Proposition [[§52 Critical Points and the Hessian#^prop-52-8|§52.8]] ([[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]).
+> - $V_y=\ker\pi_{\ast y}$ is intrinsic; the horizontal complement $s_{\ast p}(T_pM)$ changes with $s$. Used in Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]] ([[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]).
 
 #### The normal bundle of a submanifold of $\mathbb{R}^n$ is a submanifold · P1
 
@@ -4203,7 +4203,7 @@ $p \in \operatorname{Crit}(f)$ is nondegenerate if $\operatorname{Hess}_pf$ is a
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§52 Critical Points and the Hessian#^def-52-3|§52.3]], Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]]; Q2: Proposition [[§52 Critical Points and the Hessian#^prop-52-4|§52.4]].
-> - Q3: Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]]. Q4: Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]], Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+> - Q3: Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]]. Q4: Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]], Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
 
 #### Morse function · P1
 
@@ -4217,8 +4217,8 @@ A smooth $f$ all of whose critical points are nondegenerate, see Definition [[§
 - [ ] Q4 **[example]** Is the height function on $S^2$ Morse? Is $x^3$ on $\mathbb{R}$? What is the index of each critical point of $x^2 - y^2$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§52 Critical Points and the Hessian#^def-52-4|§52.4]], Definition [[§52 Critical Points and the Hessian#^def-52-5|§52.5]]; Q2: Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
-> - Q3: Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]] (discrete) and compactness, Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]. Q4: yes (two nondegenerate critical points); no (Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]]); index $1$.
+> - Definition [[§52 Critical Points and the Hessian#^def-52-4|§52.4]], Definition [[§52 Critical Points and the Hessian#^def-52-5|§52.5]]; Q2: Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+> - Q3: Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]] (discrete) and compactness, Corollary [[§52 Critical Points and the Hessian#^cor-52-13|§52.13]]. Q4: yes (two nondegenerate critical points); no (Example [[§52 Critical Points and the Hessian#^ex-52-2|§52.2]]); index $1$.
 
 #### Conormal bundle · P1
 
@@ -4250,7 +4250,7 @@ $TM = \{(p, v) : p \in M, v \in T_pM\}$ with $\pi(p, v) = p$ and zero section $\
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§49 The Tangent Bundle#^def-49-1|§49.1]], Definition [[§49 The Tangent Bundle#^def-49-2|§49.2]], Definition [[§49 The Tangent Bundle#^def-49-3|§49.3]]; the remark *The Picture Changes* in [[§49 The Tangent Bundle|§49]].
-> - Q2: the zero vectors of different $T_pM$ must be different points of $TM$. Q3: Proposition [[§49 The Tangent Bundle#^prop-49-4|§49.4]], Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]]. Q4: $U \times \mathbb{R}^m$ via one chart.
+> - Q2: the zero vectors of different $T_pM$ must be different points of $TM$. Q3: Proposition [[§49 The Tangent Bundle#^prop-49-5|§49.5]], Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]]. Q4: $U \times \mathbb{R}^m$ via one chart.
 
 #### Local trivialization of $TM$ · P2
 
@@ -4265,7 +4265,7 @@ For a chart $(U, \varphi = (x^i))$, $\Phi : TU \to U \times \mathbb{R}^m$, $\Phi
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§49 The Tangent Bundle#^def-49-4|§49.4]]; $v^i = v[x^i]$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]].
-> - Q3: Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]] (part 2); the remark *Vector Bundles* in [[§49 The Tangent Bundle|§49]]. Q4: the remark *Trivializations and Frames* in [[§49 The Tangent Bundle|§49]].
+> - Q3: Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]] (part 2); the remark *Vector Bundles* in [[§49 The Tangent Bundle|§49]]. Q4: the remark *Trivializations and Frames* in [[§49 The Tangent Bundle|§49]].
 
 #### Charts of $TM$ (the tangent bundle atlas) · P2
 
@@ -4280,7 +4280,7 @@ $\tilde\varphi(p, v) = (x^1(p), \ldots, x^m(p), v^1, \ldots, v^m)$ on $TU$, for 
 - [ ] Q5 **[example]** For $M = \mathbb{R}$ with the charts $\mathrm{id}$ and $t \mapsto t^3$ on $(0, \infty)$, write the transition map of $TM$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§49 The Tangent Bundle#^def-49-5|§49.5]]; Q2: Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]] (countably many charts; separate points in one chart or by disjoint $TU$, $TV$).
+> - Definition [[§49 The Tangent Bundle#^def-49-5|§49.5]]; Q2: Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] (countably many charts; separate points in one chart or by disjoint $TU$, $TV$).
 > - Q3: Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]]: $(r, v) \mapsto (\psi \circ \varphi^{-1}(r), J(r)v)$ with $J$ the Jacobian of the chart change.
 > - Q4: the transition maps need not even be continuous; the coordinate bases vary smoothly with $p$. Q5: $(r, v) \mapsto (r^3, 3r^2 v)$.
 
@@ -4298,7 +4298,7 @@ $\hat\varphi(p, \xi) = (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$ with $\xi
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§50 The Cotangent Bundle#^def-50-1|§50.1]], Definition [[§50 The Cotangent Bundle#^def-50-4|§50.4]], Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]]; Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]].
-> - Q2, Q3: Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]] ($(r, \xi) \mapsto (\tau(r), (\tau'(r)^{-1})^{\mathsf T}\xi)$). Topology: Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]].
+> - Q2, Q3: Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] ($(r, \xi) \mapsto (\tau(r), (\tau'(r)^{-1})^{\mathsf T}\xi)$). Topology: Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]].
 > - Q4: Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]], Proposition [[§52 Critical Points and the Hessian#^prop-52-5|§52.5]]. Q5: $dx = \frac{1}{3x^2}\,dy$; $(r, \xi) \mapsto (r^3, \xi/(3r^2))$.
 
 #### One-form · P2
@@ -4369,7 +4369,7 @@ At $p\in\operatorname{Crit}(f)$, $B=\operatorname{Hess}_pf$ satisfies $B^\flat=B
 - [ ] Q3 Why is $B^\flat=B^\sharp$, and why is the matrix of $B^\flat$ equal to $H_p$?
 - [ ] Q4 Prove (a)⇔(b)⇔(c)⇔(d).
 - [ ] Q5 Why does $\det H_p\neq0$ in one chart give it in every chart? Give two reasons.
-- [ ] Q6 **[why]** Is $0$ a nondegenerate critical point of $x^3$? Is it isolated? What does this say about the converse of Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]]?
+- [ ] Q6 **[why]** Is $0$ a nondegenerate critical point of $x^3$? Is it isolated? What does this say about the converse of Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S7 (linear algebra: same dimension, injective ⇔ bijective).
@@ -4386,19 +4386,19 @@ $\mathcal Z$ is cut out by $\xi_1=\dots=\xi_m=0$ in standard coordinates, and $\
 
 #### The differential of $df$ at a critical point · P1
 
-$(s_f)_{\ast q}(\partial/\partial x^i|_q)=\partial/\partial\bar x^i+\sum_jH_{ij}(q)\,\partial/\partial\xi_j$; at a critical point the vertical part of $(s_f)_{\ast p}v$ is $\operatorname{Hess}_pf(v,\cdot)$, see Proposition [[§52 Critical Points and the Hessian#^prop-52-9|§52.9]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+$(s_f)_{\ast q}(\partial/\partial x^i|_q)=\partial/\partial\bar x^i+\sum_jH_{ij}(q)\,\partial/\partial\xi_j$; at a critical point the vertical part of $(s_f)_{\ast p}v$ is $\operatorname{Hess}_pf(v,\cdot)$, see Proposition [[§52 Critical Points and the Hessian#^prop-52-10|§52.10]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
 
 ^nd-prop-52-9
 
 #### Transversality to the zero section · P1
 
-$s_f\pitchfork\mathcal Z$ iff every critical point of $f$ is nondegenerate, see Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (a)).
+$s_f\pitchfork\mathcal Z$ iff every critical point of $f$ is nondegenerate, see Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (a)).
 
 ^nd-thm-52-10
 
 #### Critical points of a Morse function are isolated · P1
 
-For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular submanifold of dimension $0$, hence discrete, see Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (b)).
+For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular submanifold of dimension $0$, hence discrete, see Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (b)).
 
 ^nd-cor-52-11
 
@@ -4406,7 +4406,7 @@ For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular
 
 #### The topology of the tangent bundle · P2
 
-There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi=(\varphi\times\mathrm{id})\circ\Phi:TU\to\varphi(U)\times\mathbb{R}^m$ is a homeomorphism; with it $TM$ is a topological manifold of dimension $2m$, see Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]]. *Source: stated in Lecture 13 without proof ("it's all point-set topology ... see Lee"); filled in.* **[class exercise, Lecture 13]**
+There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi=(\varphi\times\mathrm{id})\circ\Phi:TU\to\varphi(U)\times\mathbb{R}^m$ is a homeomorphism; with it $TM$ is a topological manifold of dimension $2m$, see Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]]. *Source: stated in Lecture 13 without proof ("it's all point-set topology ... see Lee"); filled in.* **[class exercise, Lecture 13]**
 
 ^nd-prop-49-1
 
@@ -4437,7 +4437,7 @@ The charts $(TU,\tilde\varphi)$ form a smooth atlas on $TM$, with transition map
 - [ ] Q4 Deduce $w^i=\sum_j\frac{\partial y^i}{\partial x^j}(p)v^j$ for the components in the two bases.
 - [ ] Q5 Why is $\frac{\partial y^i}{\partial x^j}(\varphi^{-1}(r))$ the entry of $\tau'(r)$? Conclude smoothness of the transition map.
 - [ ] Q6 Why is the inverse transition map smooth, so that the charts are compatible?
-- [ ] Q7 **[why]** Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]] uses this transition formula before $TM$ has a topology. Why is that not circular?
+- [ ] Q7 **[why]** Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] uses this transition formula before $TM$ has a topology. Why is that not circular?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S9 (a derivation is determined by its values on coordinate functions).
@@ -4448,7 +4448,7 @@ The charts $(TU,\tilde\varphi)$ form a smooth atlas on $TM$, with transition map
 
 #### The tangent bundle is a fibration · P2
 
-$TM$ is a smooth manifold of dimension $2m$, $\pi:TM\to M$ is smooth, the $\Phi$ are local trivializations (linear on fibres), so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and the zero section $\zeta(M)$ is a submanifold of codimension $m$, see Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]]. *Source: Lecture 13 ("a beautiful fibration"); details and the zero section filled in.*
+$TM$ is a smooth manifold of dimension $2m$, $\pi:TM\to M$ is smooth, the $\Phi$ are local trivializations (linear on fibres), so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and the zero section $\zeta(M)$ is a submanifold of codimension $m$, see Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]]. *Source: Lecture 13 ("a beautiful fibration"); details and the zero section filled in.*
 
 ^nd-cor-49-3
 
@@ -4468,7 +4468,7 @@ $TM$ is a smooth manifold of dimension $2m$, $\pi:TM\to M$ is smooth, the $\Phi$
 
 #### The smooth atlas of the cotangent bundle · P2
 
-The standard charts $(T^\ast U,\hat\varphi)$, $\hat\varphi(p,\xi)=(x^1(p),\dots,x^m(p),\xi_1,\dots,\xi_m)$ with $\xi_i=\xi(\partial/\partial x^i|_p)$, form a smooth atlas on $T^\ast M$; covector components transform by $\eta_j=\sum_i\frac{\partial x^i}{\partial y^j}(p)\xi_i$, so the transition map is $(r,\xi)\mapsto(\tau(r),(\tau'(r)^{-1})^{\mathsf T}\xi)$, see Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]. *Source: Lecture 13 ("completely analogous", with the formula for $dx^i$); the rest filled in.*
+The standard charts $(T^\ast U,\hat\varphi)$, $\hat\varphi(p,\xi)=(x^1(p),\dots,x^m(p),\xi_1,\dots,\xi_m)$ with $\xi_i=\xi(\partial/\partial x^i|_p)$, form a smooth atlas on $T^\ast M$; covector components transform by $\eta_j=\sum_i\frac{\partial x^i}{\partial y^j}(p)\xi_i$, so the transition map is $(r,\xi)\mapsto(\tau(r),(\tau'(r)^{-1})^{\mathsf T}\xi)$, see Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]]. *Source: Lecture 13 ("completely analogous", with the formula for $dx^i$); the rest filled in.*
 
 ^nd-prop-50-2
 
@@ -4477,7 +4477,7 @@ The standard charts $(T^\ast U,\hat\varphi)$, $\hat\varphi(p,\xi)=(x^1(p),\dots,
 - [ ] Q3 Derive $dx^i|_p=\sum_j\frac{\partial x^i}{\partial y^j}(p)\,dy^j|_p$. Which lemma, applied to which function?
 - [ ] Q4 Substitute into $\xi=\sum_i\xi_i\,dx^i|_p$ and read off $\eta_j$.
 - [ ] Q5 Why is $B=[\partial x^i/\partial y^j(p)]$ the inverse of $A=[\partial y^i/\partial x^j(p)]$? Conclude that covector components transform by $(A^{-1})^{\mathsf T}$.
-- [ ] Q6 Why is the transition map smooth (entries of $\tau'(r)^{-1}$), and why do the charts form an atlas? Where does the topology of $T^\ast M$ come from (Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]])?
+- [ ] Q6 Why is the transition map smooth (entries of $\tau'(r)^{-1}$), and why do the charts form an atlas? Where does the topology of $T^\ast M$ come from (Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]])?
 - [ ] Q7 **[why]** Why can the covector components not transform by the same matrix $A$ as vector components? Which quantity must be independent of the chart?
 
 > [!tip]- Hints: route of the proof in the notes
@@ -4485,7 +4485,7 @@ The standard charts $(T^\ast U,\hat\varphi)$, $\hat\varphi(p,\xi)=(x^1(p),\dots,
 > - Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] for $f=x^i$ in the chart $\psi$.
 > - Collect coefficients of $dy^j|_p$; they are unique.
 > - $BA=I$: Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]](3), or evaluate the formula for $dx^i|_p$ on $\partial/\partial x^k|_p$.
-> - Cramer's rule: entries of $\tau'(r)^{-1}$ are cofactors over a nonzero determinant. Topology: Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]] word for word.
+> - Cramer's rule: entries of $\tau'(r)^{-1}$ are cofactors over a nonzero determinant. Topology: Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]] word for word.
 > - Q7: $\xi(v)=\sum_i\xi_iv^i$ must not depend on the chart. The fibration statement: Corollary [[§50 The Cotangent Bundle#^cor-50-3|§50.3]].
 
 #### One-forms in coordinates · P2
@@ -4498,7 +4498,7 @@ For a section $\theta$ of $T^\ast M$ (not assumed smooth) and a chart $(U,(x^i))
 - [ ] Q2 (1) Why is $\theta_p=\sum_j\theta_p(\partial/\partial x^j|_p)\,dx^j|_p$?
 - [ ] Q3 (2) Why does $\theta$ map $U$ into $T^\ast U$? Compute $\hat\varphi\circ\theta\circ\varphi^{-1}$.
 - [ ] Q4 (3) Prove both directions. In "smooth coefficients ⇒ smooth", why must continuity of $\theta$ be checked, and how?
-- [ ] Q5 **[why]** Where is it used that the charts $\hat\varphi$ are homeomorphisms (Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]])?
+- [ ] Q5 **[why]** Where is it used that the charts $\hat\varphi$ are homeomorphisms (Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1.
@@ -4605,7 +4605,7 @@ At $p\in\operatorname{Crit}(f)$, $\sum_{i,j}H_{ij}(p)v^iw^j$ (with $v^i=v[x^i]$,
 
 #### Morse functions on compact manifolds · P3
 
-$\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ is compact, $\operatorname{Crit}(f)$ is finite, see Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]. *Source: filled in.*
+$\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ is compact, $\operatorname{Crit}(f)$ is finite, see Corollary [[§52 Critical Points and the Hessian#^cor-52-13|§52.13]]. *Source: filled in.*
 
 ^nd-cor-52-12
 
@@ -4618,7 +4618,7 @@ $\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ i
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13 (compactness upgrades local to global).
 > - (1) Corollary [[§36 Submersions#^cor-36-8|§36.8]]; or $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ with $\mathcal Z$ closed.
-> - (2) Closed in compact ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]); the open cover by the singletons $W_p\cap\operatorname{Crit}(f)=\{p\}$ (Corollary [[§52 Critical Points and the Hessian#^cor-52-11|§52.11]]) has a finite subcover.
+> - (2) Closed in compact ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]); the open cover by the singletons $W_p\cap\operatorname{Crit}(f)=\{p\}$ (Corollary [[§52 Critical Points and the Hessian#^cor-52-12|§52.12]]) has a finite subcover.
 > - Q5: at $\cos x=0$, $(\sin)''=-\sin x=\mp1\neq0$.
 
 # T11. Vector fields and Lie groups
@@ -4759,7 +4759,7 @@ For a section $\mathbf X$ of $TM$ (not assumed smooth) and a chart $(U,(x^j))$: 
 > - Strategy: S1, S9.
 > - Universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]].
 > - $\tilde\varphi\circ\mathbf X\circ\varphi^{-1}(r)=(r,\mathbf X^1(\varphi^{-1}(r)),\dots,\mathbf X^m(\varphi^{-1}(r)))$.
-> - Continuity: $\mathbf X=\tilde\varphi^{-1}\circ(\tilde\varphi\circ\mathbf X\circ\varphi^{-1})\circ\varphi$ (Proposition [[§49 The Tangent Bundle#^prop-49-1|§49.1]]).
+> - Continuity: $\mathbf X=\tilde\varphi^{-1}\circ(\tilde\varphi\circ\mathbf X\circ\varphi^{-1})\circ\varphi$ (Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]]).
 > - Q5: Proposition [[§53 Vector Fields#^prop-53-7|§53.7]] step 4 and Proposition [[§57 Lie Groups and Left-Invariant Vector Fields#^prop-57-6|§57.6]] build a section first and prove smoothness after.
 
 #### A vector field is a derivation · P2

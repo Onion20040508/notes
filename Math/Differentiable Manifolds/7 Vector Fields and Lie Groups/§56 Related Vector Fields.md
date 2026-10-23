@@ -269,3 +269,38 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 > - *the tangent bundle.* The section $\mathbf{X}$ in the standard chart of $TM$ ([[§49 The Tangent Bundle|§49]]) is $p \mapsto (x^1, \ldots, x^m, X^1, \ldots, X^m)$, with transition $(r, v) \mapsto (\tau(r), \tau'(r)v)$, $\tau$ the transition function of the base.
 
 ^rem-56-3
+
+*Lecture 21 opened with the last problem of the midterm — “there's always a question that is hard, but it's okay … I hope we're still friends.”*
+
+> [!theorem] Proposition §56.5: Brackets of Fields Tangent to a Submanifold
+> Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ *tangent to $S$*: $\mathbf{X}_p, \mathbf{Y}_p \in T_pS$ for every $p \in S$. Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
+>
+> *Lee: Corollary 8.32*
+
+^prop-56-5
+
+> [!proof]+ Proof
+> *(Lecture 21, “not in excruciating detail”; the bookkeeping is filled in.)* “Use adapted coordinates”: near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); on the exam, $M$ was two-dimensional, “but they could be vector-valued … the codimension or the dimension doesn't matter.” Write
+>
+> $$
+> \mathbf{X} = \sum_i f^i\, \frac{\partial}{\partial x^i} + \sum_a g^a\, \frac{\partial}{\partial y^a}, \qquad
+> \mathbf{Y} = \sum_i u^i\, \frac{\partial}{\partial x^i} + \sum_a v^a\, \frac{\partial}{\partial y^a} .
+> $$
+>
+> At points of $S$, $T_pS$ is spanned by the $\partial/\partial x^i|_p$, so tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: “there is no $y$ component.” We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]], that component is
+>
+> $$
+> \mathbf{X}(v^b) - \mathbf{Y}(g^b) = \sum_i f^i\, \frac{\partial v^b}{\partial x^i} + \sum_a g^a\, \frac{\partial v^b}{\partial y^a} - \sum_i u^i\, \frac{\partial g^b}{\partial x^i} - \sum_a v^a\, \frac{\partial g^b}{\partial y^a} .
+> $$
+>
+> Evaluate at $y = 0$. The terms with $\partial/\partial x^i$ vanish for one reason: “how do you evaluate the partial with respect to $x$ at $y = 0$? You fix $y$ to zero and differentiate with respect to $x$, but when I set $y$ to zero, I get zero” — $\frac{\partial v^b}{\partial x^i}(x, 0) = \frac{\partial}{\partial x^i}\big(v^b(x, 0)\big) = 0$, and likewise for $g^b$. The terms with $\partial/\partial y^a$ vanish “for a different reason”: “I don't know that these partials are zero, but these guys are” — the coefficients $g^a(x, 0)$ and $v^a(x, 0)$. So the $y$-components of $[\mathbf{X}, \mathbf{Y}]$ vanish on $S$, and $[\mathbf{X}, \mathbf{Y}]_p \in T_pS$ for $p \in S$.
+
+^pf-56-5
+
+*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§55 Lie Bracket and Lie Algebra#^prop-55-2|§55.2]]
+
+![[m591-56-5.svg]]
+
+**Comparison with Lee.** Lee proves this (Corollary 8.32) with related fields: on $S$, $\mathbf{X}$ and $\mathbf{Y}$ restrict to fields $\iota$-related to them, and the naturality of the bracket (Proposition [[§56 Related Vector Fields#^prop-56-3|§56.3]]) applied to the inclusion $\iota : S \to M$ does the rest. The coordinate proof above is the one given in class.
+
+**Transcription note (Lecture 21).** Page 55 of the handwritten notes records the $\partial_y$ component of $[f\partial_x, v\partial_y]$ as $\partial v/\partial x|_{y = 0}$; it is $f\, \partial v/\partial x|_{y = 0}$, which vanishes for the same reason.

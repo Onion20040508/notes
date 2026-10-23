@@ -28,7 +28,7 @@ tags: [multivariable-analysis, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§51 One-Forms#^prop-51-3|Proposition §51.3: A Necessary Condition for Being a Differential]]
-- [[§54 Differential Operators#^prop-54-4|Proposition §54.4: Differential Operators in a Chart]]
+- [[§54 Differential Operators#^prop-54-6|Proposition §54.6: Differential Operators in a Chart]]
 - [[§55 Lie Bracket and Lie Algebra#^ex-55-1|Example §55.1: A Bracket in the Plane]]
 
 ## Connections

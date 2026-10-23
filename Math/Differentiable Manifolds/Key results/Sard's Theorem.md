@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 59.1", "almost every value is regular", "singular values have measure zero", "Lee Theorem 6.10"]
+aliases: ["MATH 591 59.3", "almost every value is regular", "singular values have measure zero", "Lee Theorem 6.10"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§59 Sard's Theorem#^thm-59-1]]
+![[§59 Sard's Theorem#^thm-59-3]]
 
 ## Treated in
-- [[§59 Sard's Theorem#^thm-59-1|Theorem §59.1: Sard's Theorem]], in [[§59 Sard's Theorem]]
+- [[§59 Sard's Theorem#^thm-59-3|Theorem §59.3: Sard's Theorem]], in [[§59 Sard's Theorem]]
 
 ## Its proof uses
 - [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|Proposition §28.9: Charts Are Diffeomorphisms]]
@@ -20,6 +20,8 @@ tags: [differentiable-manifolds, hub]
 - [[§58 Sets of Measure Zero#^lem-58-3|Lemma §58.3: Countable Subcovers]]
 - [[§58 Sets of Measure Zero#^prop-58-4|Proposition §58.4: Measure Zero Is Seen in Every Chart]]
 - [[§58 Sets of Measure Zero#^lem-58-5|Lemma §58.5: A Fubini Lemma for Compact Sets]]
+- [[§59 Sard's Theorem#^lem-59-1|Lemma §59.1: Sard's Theorem Reduces to Euclidean Space]]
+- [[§59 Sard's Theorem#^lem-59-2|Lemma §59.2: Where All Derivatives up to Order k Vanish]]
 
 ## Used in (Differentiable Manifolds)
 - [[§60 Parametric Transversality#^cor-60-2|Corollary §60.2: Almost Every Member Is Transverse]]

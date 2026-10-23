@@ -211,7 +211,7 @@
 \textbf{Office hours:} Thu 1:00--3:00 PM, 4062 East Hall; Fri 12:00--1:00 PM, hybrid (permanently, from Lecture~19; previously 1:00--2:00 on Zoom --- if that time does not work, let Uribe know); Uribe is not available during fall break, and a meeting on the Wednesday of the exam can be arranged by email; also $\sim$20 min after each class. \\
 \textbf{Midterm:} Wednesday, October 21, 6:00--8:00 PM; 100 minutes (review session, Oct 16); bring only writing instruments; room TBA, details by email. Covers everything through commutators of vector fields (Uribe's email of Oct 14): vector fields as sections of $TM$ and as operators on functions, the commutator of two vector fields (``make sure you know how to compute it''), and the notion and properties of $F$-related fields --- finished in Lecture~17 (Fri Oct 9). ``Nothing about Lie groups is included.'' Format: definitions, true/false, short proofs (identical or close to homework). Exam booklets provided. \\
 \textbf{Review session:} Friday, October 16: previous exams (sent by email) and your questions; topics or old exam questions can be emailed to Uribe in advance. Held as questions from the class: the standard atlases of $TM$ and $T^*M$ (\ref{sub:ctb-lecture15}), transversality of submanifolds (\ref{sub:transverse-submanifolds}), open relations and orbit relations (\ref{sec:open-quotients}), the two definitions of the tangent space, and the Hessian (\ref{sub:hessian-critical}). ``Everything that is contained in the assignments is fair game.'' \\
-\textbf{Final:} Thursday, December 17, 10:30 AM--12:30 PM. \\
+\textbf{Final:} Thursday, December 17, 10:30 AM--12:30 PM; conducted the same way as the midterm (Lecture~21). Some proofs will be skipped in lecture and assigned as reading in Lee, to reach degree theory. \\
 \textbf{Homework:} due Sunday midnight, uploaded to Canvas as a legible PDF (typed or handwritten). \\
 % Week of Sep 7 only: in-person OH moved to Wednesday (ending 4 PM); Friday OH on Zoom.
 \textbf{Prerequisites (for real):} multivariable calculus, point-set topology, linear algebra on abstract vector spaces.
@@ -14314,54 +14314,88 @@ TU \arrow[r, "\Phi"] \arrow[dr, "\pi"'] \arrow[rr, bend left=28, "\tilde\varphi"
 
 The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ --- the fibration diagram of Definition~\ref{def:fibration} --- and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.
 
-\begin{propbox}[The Topology of $TM$]\thmlabel{prop:tb-topology}
-There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $TM$ is a topological manifold of dimension $2m$.
-\leeref{Lemma 1.35 and Proposition 3.18}
-\end{propbox}
+\begin{lembox}[Building a Manifold from Charts]\thmlabel{lem:chart-lemma}
+Let $X$ be a set and $n \ge 0$ an integer. Suppose given subsets $U_\alpha \subseteq X$, indexed by $\alpha$ in some set $A$, and injective maps $\varphi_\alpha : U_\alpha \to \mathbb{R}^n$, such that:
+\begin{enumerate}
+    \item each $\varphi_\alpha(U_\alpha)$ is open in $\mathbb{R}^n$;
+    \item each $\varphi_\alpha(U_\alpha \cap U_\beta)$, $\alpha, \beta \in A$, is open in $\mathbb{R}^n$;
+    \item each map $\varphi_\beta \circ \varphi_\alpha^{-1} : \varphi_\alpha(U_\alpha \cap U_\beta) \to \varphi_\beta(U_\alpha \cap U_\beta)$, $\alpha, \beta \in A$, is smooth;
+    \item countably many of the sets $U_\alpha$ cover $X$;
+    \item for distinct points $p, q \in X$, either some $U_\alpha$ contains both, or there are disjoint sets $U_\alpha \ni p$ and $U_\beta \ni q$.
+\end{enumerate}
+Then $X$ has a unique topology for which every $U_\alpha$ is open and every $\varphi_\alpha$ is a homeomorphism of $U_\alpha$ onto $\varphi_\alpha(U_\alpha)$. With it, $X$ is a topological manifold of dimension $n$, and the charts $(U_\alpha, \varphi_\alpha)$ form a smooth atlas on $X$, so they determine a smooth structure (Theorem~\ref{thm:maximal-atlas}).
+\leeref{Lemma 1.35}
+\end{lembox}
 
 \begin{proof}
-\textit{(Stated in Lecture~13 without proof --- ``it's all point-set topology, and of course everything is in Lee \ldots\ see Lee''; filled in, following Lee's smooth manifold chart lemma.)} Throughout, $(U, \varphi)$ and $(V, \psi)$ denote smooth charts of $M$. Three things have to be shown: a topology on $TM$ with the two stated properties exists; it is the only one; and with it $TM$ is second countable, Hausdorff and locally Euclidean of dimension $2m$, that is, a topological manifold of dimension $2m$ (Definition~\ref{def:manifold}).
+\textit{(Not from lecture: Lee's smooth manifold chart lemma. Lecture~13 called the construction of the topology of $TM$ ``all point-set topology \ldots\ see Lee''. The argument is written once here, in general, and applied to $TM$ in Proposition~\ref{prop:tb-topology} and to $T^*M$ in Proposition~\ref{prop:ctb-topology}.)} Three things have to be shown: a topology with the two stated properties exists; it is the only one; and with it $X$ is second countable, Hausdorff and locally Euclidean of dimension $n$ (Definition~\ref{def:manifold}), with the $(U_\alpha, \varphi_\alpha)$ a smooth atlas.
 
-\emph{Two set-theoretic facts.} First, a point $(p, v)$ lies in $TU \cap TV$ exactly when $p \in U$ and $p \in V$, so $TU \cap TV = \pi^{-1}(U \cap V)$. Second, by Definition~\ref{def:tb-chart}, $\tilde\varphi(p, v) = (\varphi(p), v^1, \ldots, v^m)$, and for each $p \in U \cap V$ every $(a^1, \ldots, a^m) \in \mathbb{R}^m$ occurs as the list of components of some $v \in T_pM$, namely of $v = \sum_i a^i\, \partial/\partial x^i|_p$ (Theorem~\ref{thm:tangent-basis}). Hence
-\[
-\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m ,
-\]
-and this set is open in $\mathbb{R}^{2m}$: $\varphi(U \cap V)$ is open in $\mathbb{R}^m$ (Proposition~\ref{prop:transition-homeo}), and a product of open sets is open. Taking $V = U$ gives $\tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$, also open.
+\emph{The transition maps are homeomorphisms.} Let $\alpha, \beta \in A$. Since $\varphi_\alpha$ and $\varphi_\beta$ are injective, $\varphi_\beta \circ \varphi_\alpha^{-1}$ is a bijection of $\varphi_\alpha(U_\alpha \cap U_\beta)$ onto $\varphi_\beta(U_\alpha \cap U_\beta)$, both open by (2), with inverse $\varphi_\alpha \circ \varphi_\beta^{-1}$. Both maps are smooth by (3) (the second with $\alpha$ and $\beta$ exchanged), hence continuous; so each transition map is a homeomorphism between open subsets of $\mathbb{R}^n$.
 
-\emph{The transition maps.} The computation in the proof of Proposition~\ref{prop:tb-atlas} below uses only the definitions of the charts, not any topology on $TM$. It shows that $\tilde\psi \circ \tilde\varphi^{-1}$ maps the open set $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ bijectively onto the open set $\psi(U \cap V) \times \mathbb{R}^m$, by a smooth map whose inverse, $\tilde\varphi \circ \tilde\psi^{-1}$, is given by the same formula with the two charts exchanged. Both maps are smooth, hence continuous, and they are inverse to each other because $\tilde\varphi$ and $\tilde\psi$ are bijections on $TU \cap TV$. So each transition map is a homeomorphism between open subsets of $\mathbb{R}^{2m}$.
-
-\emph{The topology.} Declare $W \subseteq TM$ open if $\tilde\varphi(W \cap TU)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$, and call the collection of these sets $\tau$. It is a topology; the three axioms are checked chart by chart.
+\emph{The topology.} Declare $W \subseteq X$ open if $\varphi_\alpha(W \cap U_\alpha)$ is open in $\mathbb{R}^n$ for every $\alpha \in A$, and call the collection of these sets $\tau$. It is a topology; the three axioms are checked chart by chart.
 \begin{itemize}
-    \item $\emptyset \in \tau$, since $\tilde\varphi(\emptyset) = \emptyset$; and $TM \in \tau$, since $\tilde\varphi(TM \cap TU) = \tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$ is open.
-    \item For any family $W_\alpha \in \tau$, images under any map commute with unions, so $\tilde\varphi\big((\bigcup_\alpha W_\alpha) \cap TU\big) = \bigcup_\alpha \tilde\varphi(W_\alpha \cap TU)$, a union of open sets.
-    \item For $W_1, W_2 \in \tau$, an injective map carries intersections to intersections, and $\tilde\varphi$ is injective on $TU$, so $\tilde\varphi(W_1 \cap W_2 \cap TU) = \tilde\varphi(W_1 \cap TU) \cap \tilde\varphi(W_2 \cap TU)$, an intersection of two open sets.
+    \item $\emptyset \in \tau$, since $\varphi_\alpha(\emptyset) = \emptyset$; and $X \in \tau$, since $\varphi_\alpha(X \cap U_\alpha) = \varphi_\alpha(U_\alpha)$ is open by (1).
+    \item For any family $W_\lambda \in \tau$, images under any map commute with unions, so $\varphi_\alpha\big((\bigcup_\lambda W_\lambda) \cap U_\alpha\big) = \bigcup_\lambda \varphi_\alpha(W_\lambda \cap U_\alpha)$, a union of open sets.
+    \item For $W_1, W_2 \in \tau$, an injective map carries intersections to intersections, and $\varphi_\alpha$ is injective, so $\varphi_\alpha(W_1 \cap W_2 \cap U_\alpha) = \varphi_\alpha(W_1 \cap U_\alpha) \cap \varphi_\alpha(W_2 \cap U_\alpha)$, an intersection of two open sets.
 \end{itemize}
 
-\emph{Each $TU$ is open.} For any chart $(V, \psi)$, the second set-theoretic fact with the roles of the charts exchanged gives $\tilde\psi(TU \cap TV) = \psi(U \cap V) \times \mathbb{R}^m$, which is open. So $TU \in \tau$.
+\emph{Each $U_\alpha$ is open.} For every $\beta \in A$, $\varphi_\beta(U_\alpha \cap U_\beta)$ is open by (2). So $U_\alpha \in \tau$.
 
-\emph{Each $\tilde\varphi$ is a homeomorphism onto the open set $\varphi(U) \times \mathbb{R}^m$.} Give $TU$ the subspace topology. By Definition~\ref{def:tb-chart}, $\tilde\varphi : TU \to \varphi(U) \times \mathbb{R}^m$ is a bijection; it remains to show that it is open and continuous.
+\emph{Each $\varphi_\alpha$ is a homeomorphism onto the open set $\varphi_\alpha(U_\alpha)$.} Give $U_\alpha$ the subspace topology. $\varphi_\alpha : U_\alpha \to \varphi_\alpha(U_\alpha)$ is a bijection; it remains to show that it is open and continuous.
 
-\emph{Open:} if $W \subseteq TU$ is open in $TU$, then $W$ is open in $TM$, because $TU$ is open (Lemma~\ref{lem:open-in-open}); so, by the definition of $\tau$ applied with the chart $(U, \varphi)$, $\tilde\varphi(W) = \tilde\varphi(W \cap TU)$ is open.
+\emph{Open:} if $W \subseteq U_\alpha$ is open in $U_\alpha$, then $W$ is open in $X$, because $U_\alpha$ is open (Lemma~\ref{lem:open-in-open}); so, by the definition of $\tau$ applied with $\alpha$, $\varphi_\alpha(W) = \varphi_\alpha(W \cap U_\alpha)$ is open.
 
-\emph{Continuous:} let $O \subseteq \varphi(U) \times \mathbb{R}^m$ be open and $W = \tilde\varphi^{-1}(O) \subseteq TU$. For any chart $(V, \psi)$, the set $W \cap TV$ consists of the points of $TU \cap TV$ whose image under $\tilde\varphi$ lies in $O$, so $\tilde\varphi(W \cap TV) = O \cap \tilde\varphi(TU \cap TV) = O \cap \big(\varphi(U \cap V) \times \mathbb{R}^m\big)$, and therefore
+\emph{Continuous:} let $O \subseteq \varphi_\alpha(U_\alpha)$ be open and $W = \varphi_\alpha^{-1}(O) \subseteq U_\alpha$. For any $\beta \in A$, the set $W \cap U_\beta$ consists of the points of $U_\alpha \cap U_\beta$ whose image under $\varphi_\alpha$ lies in $O$, so $\varphi_\alpha(W \cap U_\beta) = O \cap \varphi_\alpha(U_\alpha \cap U_\beta)$, and therefore
 \[
-\tilde\psi(W \cap TV) = \big(\tilde\psi \circ \tilde\varphi^{-1}\big)\Big(O \cap \big(\varphi(U \cap V) \times \mathbb{R}^m\big)\Big).
+\varphi_\beta(W \cap U_\beta) = \big(\varphi_\beta \circ \varphi_\alpha^{-1}\big)\Big(O \cap \varphi_\alpha(U_\alpha \cap U_\beta)\Big).
 \]
-The set in parentheses is open (an intersection of two open sets) and lies in the domain of the transition map; a homeomorphism carries it to a set open in the target $\psi(U \cap V) \times \mathbb{R}^m$, which is open in $\mathbb{R}^{2m}$, so the image is open in $\mathbb{R}^{2m}$ (Lemma~\ref{lem:open-in-open}). This holds for every chart, so $W \in \tau$; as $W \subseteq TU$, it is open in $TU$. A continuous open bijection is a homeomorphism.
+The set in parentheses is open (an intersection of two open sets) and lies in the domain of the transition map; a homeomorphism carries it to a set open in the target $\varphi_\beta(U_\alpha \cap U_\beta)$, which is open in $\mathbb{R}^n$, so the image is open in $\mathbb{R}^n$ (Lemma~\ref{lem:open-in-open}). This holds for every $\beta$, so $W \in \tau$; as $W \subseteq U_\alpha$, it is open in $U_\alpha$. A continuous open bijection is a homeomorphism.
 
-\emph{Uniqueness.} Let $\tau'$ be any topology in which every $TU$ is open and every $\tilde\varphi$ is a homeomorphism; we show $\tau' = \tau$. If $W \in \tau'$, then for each chart $W \cap TU$ is open in $TU$ (subspace topology of $\tau'$), so its image $\tilde\varphi(W \cap TU)$ under the homeomorphism $\tilde\varphi$ is open in $\varphi(U) \times \mathbb{R}^m$, hence in $\mathbb{R}^{2m}$; so $W \in \tau$. Conversely, let $W \in \tau$. For each chart, $\tilde\varphi(W \cap TU)$ is open, so $W \cap TU = \tilde\varphi^{-1}\big(\tilde\varphi(W \cap TU)\big)$ is open in $TU$ for $\tau'$, by continuity of $\tilde\varphi$; it is then open in $TM$ for $\tau'$, since $TU \in \tau'$ (Lemma~\ref{lem:open-in-open}). Every point $(p, v)$ of $TM$ lies in $TU$ for any chart $(U, \varphi)$ at $p$, so $W = \bigcup_U (W \cap TU)$, a union of members of $\tau'$; hence $W \in \tau'$.
+\emph{Uniqueness.} Let $\tau'$ be any topology in which every $U_\alpha$ is open and every $\varphi_\alpha$ is a homeomorphism onto its image; we show $\tau' = \tau$. If $W \in \tau'$, then for each $\alpha$, $W \cap U_\alpha$ is open in $U_\alpha$ (subspace topology of $\tau'$), so its image $\varphi_\alpha(W \cap U_\alpha)$ under the homeomorphism $\varphi_\alpha$ is open in $\varphi_\alpha(U_\alpha)$, hence in $\mathbb{R}^n$; so $W \in \tau$. Conversely, let $W \in \tau$. For each $\alpha$, $\varphi_\alpha(W \cap U_\alpha)$ is open, so $W \cap U_\alpha = \varphi_\alpha^{-1}\big(\varphi_\alpha(W \cap U_\alpha)\big)$ is open in $U_\alpha$ for $\tau'$, by continuity of $\varphi_\alpha$; it is then open in $X$ for $\tau'$, since $U_\alpha \in \tau'$ (Lemma~\ref{lem:open-in-open}). The $U_\alpha$ cover $X$ by (4), so $W = \bigcup_\alpha (W \cap U_\alpha)$, a union of members of $\tau'$; hence $W \in \tau'$.
 
-\emph{Locally Euclidean.} Let $(p, v) \in TM$ and choose a chart $(U, \varphi)$ of $M$ at $p$. Then $(p, v) \in TU$, which is open, and $\tilde\varphi$ is a homeomorphism of $TU$ onto the open subset $\varphi(U) \times \mathbb{R}^m$ of $\mathbb{R}^{2m}$. This is Definition~\ref{def:locally-euclidean} with $n = 2m$.
+\emph{Locally Euclidean.} Let $p \in X$. By (4), $p$ lies in some $U_\alpha$, which is open, and $\varphi_\alpha$ is a homeomorphism of $U_\alpha$ onto the open subset $\varphi_\alpha(U_\alpha)$ of $\mathbb{R}^n$. This is Definition~\ref{def:locally-euclidean}.
 
-\emph{Hausdorff.} Let $(p, v) \ne (q, w)$; we need disjoint open sets containing them (Definition~\ref{def:hausdorff-t2}). \emph{Case $p = q$}, so $v \ne w$. Both points lie in $TU$ for a chart $(U, \varphi)$ at $p$, and their images under the injective map $\tilde\varphi$ are distinct points of the Hausdorff space $\mathbb{R}^{2m}$, so they have disjoint open neighbourhoods $O_1$, $O_2$. The sets $\tilde\varphi^{-1}(O_1 \cap \tilde\varphi(TU))$ and $\tilde\varphi^{-1}(O_2 \cap \tilde\varphi(TU))$ are disjoint, contain $(p, v)$ and $(p, w)$ respectively, and are open in $TU$ by continuity of $\tilde\varphi$, hence open in $TM$ because $TU$ is (Lemma~\ref{lem:open-in-open}). \emph{Case $p \ne q$.} $M$ is Hausdorff, so there are disjoint open sets $U_0 \ni p$ and $V_0 \ni q$. Take charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $q$ and shrink their domains to $U \cap U_0$ and $V \cap V_0$; the restrictions are still smooth charts (Lemma~\ref{lem:smooth-chart-modify}(1), applied to the open subsets $U \cap U_0 \subseteq U$ and $V \cap V_0 \subseteq V$; their transition maps are restrictions of those of $\varphi$ and $\psi$ to open subsets). Now $T(U \cap U_0)$ and $T(V \cap V_0)$ are open, contain $(p, v)$ and $(q, w)$, and are disjoint: a common point $(x, u)$ would have $x \in U_0 \cap V_0 = \emptyset$.
+\emph{Hausdorff.} Let $p \ne q$ in $X$; we need disjoint open sets containing them (Definition~\ref{def:hausdorff-t2}). By (5) there are two cases. \emph{Both lie in one $U_\alpha$.} Their images under the injective map $\varphi_\alpha$ are distinct points of the Hausdorff space $\mathbb{R}^n$, so they have disjoint open neighbourhoods $O_1$, $O_2$. The sets $\varphi_\alpha^{-1}(O_1 \cap \varphi_\alpha(U_\alpha))$ and $\varphi_\alpha^{-1}(O_2 \cap \varphi_\alpha(U_\alpha))$ are disjoint, contain $p$ and $q$ respectively, and are open in $U_\alpha$ by continuity of $\varphi_\alpha$, hence open in $X$ because $U_\alpha$ is (Lemma~\ref{lem:open-in-open}). \emph{Disjoint $U_\alpha \ni p$ and $U_\beta \ni q$.} These are the required open sets.
 
-\emph{Second countable.} Let $\mathcal{B}$ be a countable basis of $M$ (Definition~\ref{def:second-countable}). For each $B \in \mathcal{B}$ contained in some chart domain, choose one such chart $(U_B, \varphi_B)$, so $B \subseteq U_B$. These countably many charts cover $M$: each $p$ lies in some chart domain $U$, and then, by Definition~\ref{def:basis}, in some $B \in \mathcal{B}$ with $p \in B \subseteq U$; this $B$ is contained in a chart domain, so $(U_B, \varphi_B)$ was chosen, and $p \in B \subseteq U_B$. So the countably many open sets $TU_B$ cover $TM$. Each $TU_B$ is homeomorphic to an open subset of $\mathbb{R}^{2m}$, which has a countable basis (for instance the balls with rational centres and rational radii contained in it), so $TU_B$ has a countable basis $\mathcal{C}_B$, whose members are open in $TU_B$ and hence in $TM$ (Lemma~\ref{lem:open-in-open}). The union $\mathcal{C} = \bigcup_B \mathcal{C}_B$ is a countable union of countable sets, so countable. It is a basis of $TM$: if $W$ is open in $TM$ and $(p, v) \in W$, choose $B$ with $(p, v) \in TU_B$; then $W \cap TU_B$ is open in $TU_B$ and contains $(p, v)$, so some $C \in \mathcal{C}_B$ has $(p, v) \in C \subseteq W \cap TU_B \subseteq W$.
+\emph{Second countable.} By (4) there are $\alpha_1, \alpha_2, \ldots \in A$ with $X = \bigcup_k U_{\alpha_k}$. Each $U_{\alpha_k}$ is homeomorphic to an open subset of $\mathbb{R}^n$, which has a countable basis (for instance the balls with rational centres and rational radii contained in it), so $U_{\alpha_k}$ has a countable basis $\mathcal{C}_k$, whose members are open in $U_{\alpha_k}$ and hence in $X$ (Lemma~\ref{lem:open-in-open}). The union $\mathcal{C} = \bigcup_k \mathcal{C}_k$ is a countable union of countable sets, so countable. It is a basis of $X$ (Definition~\ref{def:basis}): if $W$ is open in $X$ and $p \in W$, choose $k$ with $p \in U_{\alpha_k}$; then $W \cap U_{\alpha_k}$ is open in $U_{\alpha_k}$ and contains $p$, so some $C \in \mathcal{C}_k$ has $p \in C \subseteq W \cap U_{\alpha_k} \subseteq W$ (Definition~\ref{def:second-countable}).
+
+\emph{The smooth atlas.} Each $(U_\alpha, \varphi_\alpha)$ is a chart of the topological manifold $X$: a homeomorphism of an open set onto an open subset of $\mathbb{R}^n$. The domains cover $X$ by (4), and any two charts are $C^\infty$-compatible (Definition~\ref{def:compatible}), because each transition map $\varphi_\beta \circ \varphi_\alpha^{-1}$ is smooth with smooth inverse $\varphi_\alpha \circ \varphi_\beta^{-1}$ by (3), a diffeomorphism between open subsets of $\mathbb{R}^n$ (Definition~\ref{def:diffeo-euclidean}). So the charts form a smooth atlas (Definition~\ref{def:atlas}).
 \end{proof}
 
-The same argument, word for word, builds the topology of the cotangent bundle (\ref{sub:cotangent-bundle}), with the dual bases in place of the coordinate bases.
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, scale=1.0]
+    \draw[thick] (0,2.3) ellipse (3.2 and 1.25);
+    \node[font=\small] at (2.75,3.35) {$X$};
+    \begin{scope}
+        \clip (-0.85,2.3) ellipse (1.55 and 0.85);
+        \fill[violet!25] (0.85,2.3) ellipse (1.55 and 0.85);
+    \end{scope}
+    \draw[thick, blue!70!black] (-0.85,2.3) ellipse (1.55 and 0.85);
+    \draw[thick, orange!85!black] (0.85,2.3) ellipse (1.55 and 0.85);
+    \node[blue!70!black, font=\small] at (-1.75,2.3) {$U_\alpha$};
+    \node[orange!85!black, font=\small] at (1.75,2.3) {$U_\beta$};
+    \node[violet!80!black, font=\scriptsize] at (0,2.3) {$U_\alpha \cap U_\beta$};
+    \draw (-4.9,-2.6) rectangle (-1.3,-0.2); \node[font=\scriptsize, anchor=north west] at (-4.9,-0.2) {$\mathbb{R}^n$};
+    \draw (1.3,-2.6) rectangle (4.9,-0.2); \node[font=\scriptsize, anchor=north west] at (1.3,-0.2) {$\mathbb{R}^n$};
+    \draw[thick, blue!70!black, fill=blue!6] (-3.1,-1.4) ellipse (1.35 and 0.8);
+    \fill[violet!25] (-2.45,-1.4) ellipse (0.6 and 0.45); \draw[violet!80!black] (-2.45,-1.4) ellipse (0.6 and 0.45);
+    \draw[thick, orange!85!black, fill=orange!6] (3.1,-1.4) ellipse (1.35 and 0.8);
+    \fill[violet!25] (2.45,-1.4) ellipse (0.6 and 0.45); \draw[violet!80!black] (2.45,-1.4) ellipse (0.6 and 0.45);
+    \node[blue!70!black, font=\scriptsize] at (-3.65,-1.4) {$\varphi_\alpha(U_\alpha)$};
+    \node[orange!85!black, font=\scriptsize] at (3.75,-1.4) {$\varphi_\beta(U_\beta)$};
+    \draw[->, blue!70!black] (-1.6,1.55) -- node[left, font=\small] {$\varphi_\alpha$} (-2.9,-0.45);
+    \draw[->, orange!85!black] (1.6,1.55) -- node[right, font=\small] {$\varphi_\beta$} (2.9,-0.45);
+    \draw[->, thick, violet!80!black] (-1.8,-1.55) to[bend right=18] node[below, font=\scriptsize, align=center] {$\varphi_\beta \circ \varphi_\alpha^{-1}$\\ smooth (3)} (1.8,-1.55);
+    \node[font=\scriptsize, violet!80!black, align=center] at (0,-0.55) {open sets (2)};
+\end{tikzpicture}
+\end{center}
 
-\begin{propbox}[The Smooth Atlas of $TM$]\thmlabel{prop:tb-atlas}
-The charts $(TU, \tilde\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $TM$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$ of $M$, the transition map is
+The chart lemma in one picture. The set $X$ has no topology yet; it is only covered by sets $U_\alpha$, $U_\beta$ with injections into $\mathbb{R}^n$. Condition (2) asks that the overlap (shaded) go to open sets on both sides, and (3) that the transition map $\varphi_\beta \circ \varphi_\alpha^{-1}$ between these two open sets be smooth. The topology is then forced: a set is open exactly when each chart sends its part to an open set.
+%% <<< END ADDED
+
+\begin{propbox}[The Transition Maps of $TM$]\thmlabel{prop:tb-atlas}
+Let $(U, \varphi = (x^i))$ and $(V, \psi = (y^j))$ be smooth charts of $M$. Then $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, an open subset of $\mathbb{R}^{2m}$, and the transition map is
 \[
 \tilde\psi \circ \tilde\varphi^{-1}(r, v) = \Big( \psi \circ \varphi^{-1}(r), \ \ \sum_{j=1}^m \frac{\partial y^1}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j, \ \ldots, \ \sum_{j=1}^m \frac{\partial y^m}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j \Big) .
 \]
@@ -14374,13 +14408,12 @@ In matrix form, the last $m$ components are the column $v$ multiplied by the Jac
 \end{pmatrix}
 \begin{pmatrix} v^1 \\ \vdots \\ v^m \end{pmatrix} .
 \]
+It is a diffeomorphism of $\varphi(U \cap V) \times \mathbb{R}^m$ onto $\psi(U \cap V) \times \mathbb{R}^m$. No topology on $TM$ is used: the statement concerns only the bijections $\tilde\varphi$, $\tilde\psi$ of Definition~\ref{def:tb-chart}.
 \leeref{Proposition 3.18}
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture~13: ``the only thing that I want to have a look at is \ldots\ the transition functions of the atlas, because this is how people handle tangent vectors.'' Completed here.)} By Definition~\ref{def:atlas}, three things have to be shown: each $(TU, \tilde\varphi)$ is a chart of the topological manifold $TM$; their domains cover $TM$; and any two of them are $C^\infty$-compatible, that is (Definition~\ref{def:compatible}), each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is a diffeomorphism between open subsets of $\mathbb{R}^{2m}$. Along the way the formula for the transition map is derived.
-
-\emph{Charts that cover.} By Proposition~\ref{prop:tb-topology}, each $TU$ is open and $\tilde\varphi$ is a homeomorphism of $TU$ onto the open set $\varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, so $(TU, \tilde\varphi)$ is a chart. Every $(p, v) \in TM$ lies in $TU$ for any chart $(U, \varphi)$ of $M$ at $p$, so the domains cover $TM$.
+\textit{(Lecture~13: ``the only thing that I want to have a look at is \ldots\ the transition functions of the atlas, because this is how people handle tangent vectors.'' Completed here.)} Three things have to be shown: the domain and target of the transition map; its formula; and that it is a diffeomorphism, that is (Definition~\ref{def:diffeo-euclidean}), smooth with smooth inverse.
 
 \emph{The domain of the transition map.} A point $(p, v)$ lies in $TU \cap TV$ exactly when $p \in U \cap V$; for such $p$ every list of components $(v^1, \ldots, v^m) \in \mathbb{R}^m$ occurs (Theorem~\ref{thm:tangent-basis}). So the domain is $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, open in $\mathbb{R}^{2m}$ since $\varphi(U \cap V)$ is open (Proposition~\ref{prop:transition-homeo}); likewise the target is $\psi(U \cap V) \times \mathbb{R}^m$.
 
@@ -14412,7 +14445,7 @@ the entries of the Jacobian $\tau'(r)$ of the transition map of $M$. (Restrictin
 \]
 Its first $m$ components $\tau^i(r)$ are smooth because $\tau$ is; its last $m$ components $\sum_j \partial\tau^i/\partial r^j(r)\, v^j$ are sums of products of the smooth functions $\partial\tau^i/\partial r^j(r)$ with the coordinate functions $v^j$, hence smooth in $(r, v)$. A map into $\mathbb{R}^{2m}$ is smooth if all its components are, so $\tilde\psi \circ \tilde\varphi^{-1}$ is smooth.
 
-\emph{Compatibility.} The inverse of $\tilde\psi \circ \tilde\varphi^{-1}$ is $\tilde\varphi \circ \tilde\psi^{-1}$, and the computation above with the names exchanged --- $(U, \varphi, x^i)$ and $(V, \psi, y^i)$ swapped --- shows that it is $(s, w) \mapsto \big(\varphi \circ \psi^{-1}(s), (\varphi \circ \psi^{-1})'(s)\, w\big)$, smooth. So every transition map is a smooth bijection with smooth inverse, a diffeomorphism (Definition~\ref{def:diffeo-euclidean}), and the charts $(TU, \tilde\varphi)$ form a smooth atlas.
+\emph{The inverse.} The inverse of $\tilde\psi \circ \tilde\varphi^{-1}$ is $\tilde\varphi \circ \tilde\psi^{-1}$, and the computation above with the names exchanged --- $(U, \varphi, x^i)$ and $(V, \psi, y^i)$ swapped --- shows that it is $(s, w) \mapsto \big(\varphi \circ \psi^{-1}(s), (\varphi \circ \psi^{-1})'(s)\, w\big)$, smooth. So every transition map is a smooth bijection with smooth inverse, a diffeomorphism (Definition~\ref{def:diffeo-euclidean}).
 \end{proof}
 
 \begin{center}
@@ -14426,8 +14459,29 @@ The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as dr
 
 The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is Uribe's identity at work once more --- the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
 
+\begin{propbox}[The Topology and Smooth Structure of $TM$]\thmlabel{prop:tb-topology}
+There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $TM$ is a topological manifold of dimension $2m$, and the charts $(TU, \tilde\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on it.
+\leeref{Lemma 1.35 and Proposition 3.18}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~13 without proof --- ``it's all point-set topology, and of course everything is in Lee \ldots\ see Lee''; filled in.)} Apply Lemma~\ref{lem:chart-lemma} with $X = TM$, $n = 2m$, and the sets $TU$ with the maps $\tilde\varphi$, indexed by the smooth charts $(U, \varphi)$ of $M$. Each $\tilde\varphi$ is injective, being a bijection of $TU$ onto $\varphi(U) \times \mathbb{R}^m$ (Definition~\ref{def:tb-chart}). We check the five conditions of the lemma.
+
+\emph{(1) and (2).} By Proposition~\ref{prop:tb-atlas}, $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ is open in $\mathbb{R}^{2m}$ for any two charts; this is (2), and with $V = U$ it is (1), $\tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$.
+
+\emph{(3)} Each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is smooth by Proposition~\ref{prop:tb-atlas}.
+
+\emph{(4)} Let $\mathcal{B}$ be a countable basis of $M$ (Definition~\ref{def:second-countable}). For each $B \in \mathcal{B}$ contained in some chart domain, choose one such chart $(U_B, \varphi_B)$, so $B \subseteq U_B$. These countably many charts cover $M$: each $p$ lies in some chart domain $U$, and then, by Definition~\ref{def:basis}, in some $B \in \mathcal{B}$ with $p \in B \subseteq U$; this $B$ is contained in a chart domain, so $(U_B, \varphi_B)$ was chosen, and $p \in B \subseteq U_B$. A point $(p, v) \in TM$ lies in $TU_B$ for any $B$ with $p \in U_B$, so the countably many sets $TU_B$ cover $TM$.
+
+\emph{(5)} Let $(p, v) \ne (q, w)$. \emph{Case $p = q$.} Both points lie in $TU$ for any chart $(U, \varphi)$ at $p$. \emph{Case $p \ne q$.} $M$ is Hausdorff, so there are disjoint open sets $U_0 \ni p$ and $V_0 \ni q$. Take charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $q$ and shrink their domains to $U \cap U_0$ and $V \cap V_0$; the restrictions are still smooth charts (Lemma~\ref{lem:smooth-chart-modify}(1), applied to the open subsets $U \cap U_0 \subseteq U$ and $V \cap V_0 \subseteq V$; their transition maps are restrictions of those of $\varphi$ and $\psi$ to open subsets). Then $T(U \cap U_0) \ni (p, v)$ and $T(V \cap V_0) \ni (q, w)$ are disjoint: a common point $(x, u)$ would have $x \in U_0 \cap V_0 = \emptyset$.
+
+So Lemma~\ref{lem:chart-lemma} applies: $TM$ has a unique topology in which every $TU$ is open and every $\tilde\varphi$ is a homeomorphism onto $\varphi(U) \times \mathbb{R}^m$; with it, $TM$ is a topological manifold of dimension $2m$, and the charts $(TU, \tilde\varphi)$ form a smooth atlas.
+\end{proof}
+
+Lemma~\ref{lem:chart-lemma} builds the topology and smooth structure of the cotangent bundle (\ref{sub:cotangent-bundle}) in the same way, with the dual bases in place of the coordinate bases (Proposition~\ref{prop:ctb-topology}).
+
 \begin{corbox}[The Tangent Bundle Is a Fibration]\thmlabel{cor:tb-fibration}
-With the smooth structure of Proposition~\ref{prop:tb-atlas}:
+With the smooth structure of Proposition~\ref{prop:tb-topology}:
 \begin{enumerate}
     \item $TM$ is a smooth manifold of dimension $2m$, and $\pi : TM \to M$ is smooth;
     \item the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
@@ -14439,7 +14493,7 @@ With Proposition~\ref{prop:tb-topology}, this proves Proposition~\ref{prop:tange
 \begin{proof}
 \textit{((1) and (2) are the lecture's observations --- ``in these coordinates, the projection is just projection onto the first $m$ components \ldots\ so we get a beautiful fibration''; the details and (3) are filled in.)}
 
-\emph{(1)} By Proposition~\ref{prop:tb-topology}, $TM$ is a topological manifold of dimension $2m$, and by Proposition~\ref{prop:tb-atlas} the charts $(TU, \tilde\varphi)$ form a smooth atlas on it; so $TM$ is a smooth manifold of dimension $2m$, with the smooth structure determined by this atlas (Theorem~\ref{thm:maximal-atlas}). To see that $\pi$ is smooth, check Definition~\ref{def:smooth-map}. \emph{Continuity:} on each open set $TU$, by Definitions~\ref{def:tb-projection} and~\ref{def:tb-chart}, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \tilde\varphi$ with $\mathrm{pr}_1(r, v) = r$, a composite of continuous maps; the open sets $TU$ cover $TM$, so $\pi$ is continuous. \emph{Coordinate representation:} for $(p, v) \in TM$ take a chart $(U, \varphi)$ of $M$ at $p$; then $(TU, \tilde\varphi)$ is a chart at $(p, v)$ with $\pi(TU) \subseteq U$, and for $(r, v) \in \varphi(U) \times \mathbb{R}^m$, with $\tilde\varphi^{-1}(r, v) = (\varphi^{-1}(r), u)$ for some $u$ (Definition~\ref{def:tb-chart}),
+\emph{(1)} By Proposition~\ref{prop:tb-topology}, $TM$ is a topological manifold of dimension $2m$ and the charts $(TU, \tilde\varphi)$ form a smooth atlas on it; so $TM$ is a smooth manifold of dimension $2m$, with the smooth structure determined by this atlas (Theorem~\ref{thm:maximal-atlas}). To see that $\pi$ is smooth, check Definition~\ref{def:smooth-map}. \emph{Continuity:} on each open set $TU$, by Definitions~\ref{def:tb-projection} and~\ref{def:tb-chart}, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \tilde\varphi$ with $\mathrm{pr}_1(r, v) = r$, a composite of continuous maps; the open sets $TU$ cover $TM$, so $\pi$ is continuous. \emph{Coordinate representation:} for $(p, v) \in TM$ take a chart $(U, \varphi)$ of $M$ at $p$; then $(TU, \tilde\varphi)$ is a chart at $(p, v)$ with $\pi(TU) \subseteq U$, and for $(r, v) \in \varphi(U) \times \mathbb{R}^m$, with $\tilde\varphi^{-1}(r, v) = (\varphi^{-1}(r), u)$ for some $u$ (Definition~\ref{def:tb-chart}),
 \[
 \varphi \circ \pi \circ \tilde\varphi^{-1}(r, v) = \varphi\big(\pi(\varphi^{-1}(r), u)\big) = \varphi\big(\varphi^{-1}(r)\big) = r .
 \]
@@ -14542,25 +14596,8 @@ where $\xi_1, \ldots, \xi_m$ are the components of $\xi$ in the dual basis at $p
 \leeref{Proposition 11.9}
 \end{defbox}
 
-\begin{propbox}[The Topology of $T^*M$]\thmlabel{prop:ctb-topology}
-There is a unique topology on $T^*M$ for which every $T^*U$ is open and every chart $\hat\varphi : T^*U \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $T^*M$ is a topological manifold of dimension $2m$.
-\leeref{Lemma 1.35 and Proposition 11.9}
-\end{propbox}
-
-\begin{proof}
-\textit{(Not from lecture --- ``completely analogous''; filled in.)} The proof of Proposition~\ref{prop:tb-topology} uses only two facts about the charts $\tilde\varphi$: each is a bijection of $TU$ onto the open set $\varphi(U) \times \mathbb{R}^m$, and each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is a homeomorphism between the open sets $\varphi(U \cap V) \times \mathbb{R}^m$ and $\psi(U \cap V) \times \mathbb{R}^m$. Both hold for the charts $\hat\varphi$: the first by Definition~\ref{def:ctb-chart}, and the second by the computation in the proof of Proposition~\ref{prop:cotangent-transition} below, which uses only the definitions of the charts, not any topology on $T^*M$. With $\hat\varphi$, $\hat\psi$ and $T^*U$ in place of $\tilde\varphi$, $\tilde\psi$ and $TU$, the proof then goes through word for word:
-\begin{itemize}
-    \item declare $W \subseteq T^*M$ open if $\hat\varphi(W \cap T^*U)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$; this is a topology, since each $\hat\varphi$ is a bijection;
-    \item each $T^*U$ is open, because $\hat\psi(T^*U \cap T^*V) = \psi(U \cap V) \times \mathbb{R}^m$ is open, and each $\hat\varphi$ is a homeomorphism onto its open image, because the transition maps are homeomorphisms;
-    \item any topology with these two properties has the same open sets, since $W = \bigcup_U (W \cap T^*U)$;
-    \item $T^*M$ is locally Euclidean of dimension $2m$, through the charts;
-    \item it is Hausdorff: two covectors at the same point lie in one $T^*U$, homeomorphic to a subset of $\mathbb{R}^{2m}$, and covectors at distinct points $p \neq q$ lie in the disjoint open sets $T^*U$, $T^*V$ for charts with disjoint domains $U \ni p$, $V \ni q$;
-    \item it is second countable: countably many chart domains $U_B$ cover $M$, so the countably many open sets $T^*U_B$, each with a countable basis, cover $T^*M$.
-\end{itemize}
-\end{proof}
-
-\begin{propbox}[The Smooth Atlas of $T^*M$]\thmlabel{prop:cotangent-transition}
-The charts $(T^*U, \hat\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $T^*M$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
+\begin{propbox}[The Transition Maps of $T^*M$]\thmlabel{prop:cotangent-transition}
+Let $(U, \varphi = (x^i))$ and $(V, \psi = (y^j))$ be smooth charts of $M$. Then $\hat\varphi(T^*U \cap T^*V) = \varphi(U \cap V) \times \mathbb{R}^m$, an open subset of $\mathbb{R}^{2m}$. For $p \in U \cap V$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
 \[
 dx^i|_p = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, dy^j|_p, \qquad \eta_j = \sum_i \frac{\partial x^i}{\partial y^j}(p)\, \xi_i .
 \]
@@ -14578,13 +14615,14 @@ In matrix form, with row index $j$ and column index $i$,
 the matrix being the transpose of $\big[\partial x^i/\partial y^j(p)\big]$ (row $i$, column $j$).
 So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components: with $\tau = \psi \circ \varphi^{-1}$, the transition map is
 \[
-\hat\psi \circ \hat\varphi^{-1}(r, \xi) = \Big( \tau(r),\ \big(\tau'(r)^{-1}\big)^{\mathsf T} \xi \Big) .
+\hat\psi \circ \hat\varphi^{-1}(r, \xi) = \Big( \tau(r),\ \big(\tau'(r)^{-1}\big)^{\mathsf T} \xi \Big) ,
 \]
+a diffeomorphism of $\varphi(U \cap V) \times \mathbb{R}^m$ onto $\psi(U \cap V) \times \mathbb{R}^m$. No topology on $T^*M$ is used.
 \leeref{Proposition 11.9}
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture~13: ``completely analogous'', with the change ``we use the dual basis'', and the formula for $dx^i$ given; the rest is filled in.)} Fix $p \in U \cap V$. Four things are to be shown, in order: the formula for $dx^i|_p$; the formula for $\eta_j$; that $\big[\partial x^i/\partial y^j(p)\big]$ is the inverse of $\big[\partial y^i/\partial x^j(p)\big]$, which gives the transition map; and that the transition maps are smooth, so the charts form a smooth atlas.
+\textit{(Lecture~13: ``completely analogous'', with the change ``we use the dual basis'', and the formula for $dx^i$ given; the rest is filled in.)} Fix $p \in U \cap V$. Four things are to be shown, in order: the formula for $dx^i|_p$; the formula for $\eta_j$; that $\big[\partial x^i/\partial y^j(p)\big]$ is the inverse of $\big[\partial y^i/\partial x^j(p)\big]$, which gives the transition map; and that the transition maps are diffeomorphisms.
 
 \emph{The formula for $dx^i|_p$.} It is Lemma~\ref{lem:df-coords} applied to the function $f = x^i$, smooth near $p$, in the chart $\psi = (y^1, \ldots, y^m)$ at $p$: the lemma gives $d(x^i)_p = \sum_j \partial x^i/\partial y^j(p)\, dy^j|_p$.
 
@@ -14612,11 +14650,30 @@ B = \begin{pmatrix}
 
 \emph{The transition map.} Explicitly, let $(r, \xi) \in \hat\varphi(T^*U \cap T^*V) = \varphi(U \cap V) \times \mathbb{R}^m$ (an open set, by the same argument as for $TM$ in the proof of Proposition~\ref{prop:tb-atlas}, with Lemma~\ref{lem:df-coords} giving the basis $dx^i|_p$) and $p = \varphi^{-1}(r)$. By the inverse formula of Definition~\ref{def:ctb-chart}, $\hat\varphi^{-1}(r, \xi) = \big(p, \sum_i \xi_i\, dx^i|_p\big)$, and by the same definition for $\psi$ and the formula for $\eta$, $\hat\psi$ sends this point to $(\psi(p), \eta) = (\tau(r), B^{\mathsf T}\xi)$. With $p = \varphi^{-1}(r)$, the matrix $A = \big[\partial y^i/\partial x^j(p)\big]$ is $\tau'(r)$ (Proposition~\ref{prop:upstairs-downstairs}, applied to $F = \mathrm{id}_M$ exactly as in the proof of Proposition~\ref{prop:tb-atlas}), so $B = \big[\partial x^i/\partial y^j(p)\big] = \tau'(r)^{-1}$ and $\eta = \big(\tau'(r)^{-1}\big)^{\mathsf T}\xi$, which is the displayed transition map.
 
-\emph{Smoothness and the atlas.} Its entries are smooth in $r$: those of $\tau'(r)$ are, since $\tau$ is smooth (the charts of $M$ are compatible); $\det \tau'(r) \ne 0$ because $\tau'(r)$ is invertible; and the inverse of an invertible matrix is given by Cramer's rule, each entry a polynomial in the entries (a cofactor) divided by the nonzero determinant, hence smooth in $r$. So the first $m$ components $\tau^i(r)$ and the last $m$ components $\sum_i \big(\tau'(r)^{-1}\big)_{ij}\, \xi_i$ of the transition map are smooth in $(r, \xi)$, and the transition maps are smooth, as in Proposition~\ref{prop:tb-atlas}. The inverse transition map $\hat\varphi \circ \hat\psi^{-1}$ is the same formula with the two charts exchanged (rename $(U, \varphi, x^i) \leftrightarrow (V, \psi, y^j)$), hence smooth too, so each transition map is a diffeomorphism (Definition~\ref{def:diffeo-euclidean}). The charts $\hat\varphi$ are homeomorphisms of the open sets $T^*U$ onto open subsets of $\mathbb{R}^{2m}$ (Proposition~\ref{prop:ctb-topology}), and the $T^*U$ cover $T^*M$; so they form a smooth atlas (Definition~\ref{def:atlas}). The fibration and linearity statements follow as in Corollary~\ref{cor:tb-fibration}; they are written out in the next corollary.
+\emph{Smoothness.} Its entries are smooth in $r$: those of $\tau'(r)$ are, since $\tau$ is smooth (the charts of $M$ are compatible); $\det \tau'(r) \ne 0$ because $\tau'(r)$ is invertible; and the inverse of an invertible matrix is given by Cramer's rule, each entry a polynomial in the entries (a cofactor) divided by the nonzero determinant, hence smooth in $r$. So the first $m$ components $\tau^i(r)$ and the last $m$ components $\sum_i \big(\tau'(r)^{-1}\big)_{ij}\, \xi_i$ of the transition map are smooth in $(r, \xi)$, and the transition maps are smooth, as in Proposition~\ref{prop:tb-atlas}. The inverse transition map $\hat\varphi \circ \hat\psi^{-1}$ is the same formula with the two charts exchanged (rename $(U, \varphi, x^i) \leftrightarrow (V, \psi, y^j)$), hence smooth too, so each transition map is a diffeomorphism (Definition~\ref{def:diffeo-euclidean}).
+\end{proof}
+
+\begin{propbox}[The Topology and Smooth Structure of $T^*M$]\thmlabel{prop:ctb-topology}
+There is a unique topology on $T^*M$ for which every $T^*U$ is open and every chart $\hat\varphi : T^*U \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $T^*M$ is a topological manifold of dimension $2m$, and the charts $(T^*U, \hat\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on it.
+\leeref{Lemma 1.35 and Proposition 11.9}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture --- ``completely analogous''; filled in.)} Apply Lemma~\ref{lem:chart-lemma} with $X = T^*M$, $n = 2m$, and the sets $T^*U$ with the maps $\hat\varphi$, indexed by the smooth charts $(U, \varphi)$ of $M$. Each $\hat\varphi$ is injective, being a bijection of $T^*U$ onto $\varphi(U) \times \mathbb{R}^m$ (Definition~\ref{def:ctb-chart}). The five conditions:
+
+\emph{(1) and (2).} By Proposition~\ref{prop:cotangent-transition}, $\hat\varphi(T^*U \cap T^*V) = \varphi(U \cap V) \times \mathbb{R}^m$ is open in $\mathbb{R}^{2m}$; with $V = U$ this is $\hat\varphi(T^*U) = \varphi(U) \times \mathbb{R}^m$.
+
+\emph{(3)} Each transition map $\hat\psi \circ \hat\varphi^{-1}$ is smooth by Proposition~\ref{prop:cotangent-transition}.
+
+\emph{(4)} As in the proof of Proposition~\ref{prop:tb-topology}, a countable basis of $M$ gives countably many charts $(U_B, \varphi_B)$ whose domains cover $M$. A covector $(p, \xi)$ lies in $T^*U_B$ whenever $p \in U_B$, so the countably many sets $T^*U_B$ cover $T^*M$.
+
+\emph{(5)} Let $(p, \xi) \ne (q, \zeta)$. If $p = q$, both lie in $T^*U$ for any chart $(U, \varphi)$ at $p$. If $p \ne q$, take disjoint open sets $U_0 \ni p$, $V_0 \ni q$ ($M$ is Hausdorff) and charts $(U, \varphi)$ at $p$, $(V, \psi)$ at $q$, shrunk to $U \cap U_0$ and $V \cap V_0$ (Lemma~\ref{lem:smooth-chart-modify}(1)); then $T^*(U \cap U_0) \ni (p, \xi)$ and $T^*(V \cap V_0) \ni (q, \zeta)$ are disjoint, since a common point $(x, \eta)$ would have $x \in U_0 \cap V_0 = \emptyset$.
+
+So Lemma~\ref{lem:chart-lemma} applies: $T^*M$ has a unique topology in which every $T^*U$ is open and every $\hat\varphi$ is a homeomorphism onto $\varphi(U) \times \mathbb{R}^m$; with it, $T^*M$ is a topological manifold of dimension $2m$, and the charts $(T^*U, \hat\varphi)$, whose domains cover $T^*M$, form a smooth atlas. The fibration and linearity statements follow as in Corollary~\ref{cor:tb-fibration}; they are written out in the next corollary.
 \end{proof}
 
 \begin{corbox}[The Cotangent Bundle Is a Fibration]\thmlabel{cor:ctb-fibration}
-With the smooth structure of Proposition~\ref{prop:cotangent-transition}:
+With the smooth structure of Proposition~\ref{prop:ctb-topology}:
 \begin{enumerate}
     \item $T^*M$ is a smooth manifold of dimension $2m$, and $\pi : T^*M \to M$ is smooth; for each smooth chart $(U, \varphi)$ of $M$, its coordinate representation in the charts $\hat\varphi$ of $T^*M$ (Definition~\ref{def:ctb-chart}) and $\varphi$ of $M$ is $\varphi \circ \pi \circ \hat\varphi^{-1}(r, \xi) = r$, $(r, \xi) \in \varphi(U) \times \mathbb{R}^m$;
     \item the $\Psi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Psi$ restricts on the fibre $T_p^*M$ to a linear isomorphism $T_p^*M \to \{p\} \times \mathbb{R}^m$; so $T^*M$ is a vector bundle;
@@ -14628,7 +14685,7 @@ With the smooth structure of Proposition~\ref{prop:cotangent-transition}:
 \begin{proof}
 \textit{(Not from lecture; filled in, as Corollary~\ref{cor:tb-fibration}.)}
 
-\emph{(1)} By Propositions~\ref{prop:ctb-topology} and~\ref{prop:cotangent-transition}, $T^*M$ is a topological manifold of dimension $2m$ with a smooth atlas, hence a smooth manifold of dimension $2m$. To see that $\pi$ is smooth, check Definition~\ref{def:smooth-map}. \emph{Continuity:} on each open set $T^*U$, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \hat\varphi$ (Definitions~\ref{def:ctb-projection} and~\ref{def:ctb-chart}), a composite of continuous maps, and the $T^*U$ cover $T^*M$. \emph{Coordinate representation:} for $(p, \xi) \in T^*M$ take a chart $(U, \varphi)$ at $p$; then $(T^*U, \hat\varphi)$ is a chart at $(p, \xi)$ with $\pi(T^*U) \subseteq U$, and, as $\hat\varphi^{-1}(r, \xi) = \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$,
+\emph{(1)} By Proposition~\ref{prop:ctb-topology}, $T^*M$ is a topological manifold of dimension $2m$ with a smooth atlas, hence a smooth manifold of dimension $2m$. To see that $\pi$ is smooth, check Definition~\ref{def:smooth-map}. \emph{Continuity:} on each open set $T^*U$, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \hat\varphi$ (Definitions~\ref{def:ctb-projection} and~\ref{def:ctb-chart}), a composite of continuous maps, and the $T^*U$ cover $T^*M$. \emph{Coordinate representation:} for $(p, \xi) \in T^*M$ take a chart $(U, \varphi)$ at $p$; then $(T^*U, \hat\varphi)$ is a chart at $(p, \xi)$ with $\pi(T^*U) \subseteq U$, and, as $\hat\varphi^{-1}(r, \xi) = \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$,
 \[
 \varphi \circ \pi \circ \hat\varphi^{-1}(r, \xi) = \varphi\big(\varphi^{-1}(r)\big) = r .
 \]
@@ -15455,7 +15512,7 @@ Let $S \subseteq M$ be a regular submanifold of codimension $k$, $(U, \varphi = 
 
 \emph{(1)} Let $(q, \alpha) \in T^*U$, so $q \in U$. By Definition~\ref{def:conormal-bundle}, $(q, \alpha) \in N^*S$ if and only if $q \in S$ and $\alpha \in N_qS$; we translate both conditions into the coordinates of $\hat\varphi$. \emph{The point.} The chart is adapted, so $q \in U \cap S$ if and only if $x^{m-k+1}(q) = \cdots = x^m(q) = 0$ (Definition~\ref{def:adapted-chart}); as $\bar x^i(q, \alpha) = x^i(q)$, this says $\bar x^{m-k+1} = \cdots = \bar x^m = 0$ at $(q, \alpha)$. \emph{The covector.} For $q \in U \cap S$, the same chart is a chart adapted to $S$ at $q$, and Proposition~\ref{prop:conormal-basis}(1) (the description of $N_qS$ in an adapted chart at $q$) gives: $\alpha \in N_qS$ if and only if its components $\alpha(\partial/\partial x^i|_q)$ vanish for $i \le m - k$. As $\xi_i(q, \alpha) = \alpha(\partial/\partial x^i|_q)$, this says $\xi_1 = \cdots = \xi_{m-k} = 0$ at $(q, \alpha)$. Together the two translations give the displayed description.
 
-\emph{(2)} By Corollary~\ref{cor:ctb-fibration}(1), $T^*M$ is a smooth manifold of dimension $2m$, and $(T^*U, \hat\varphi)$ is one of its smooth charts (Proposition~\ref{prop:cotangent-transition}). Let $(p, \alpha) \in N^*S$. Since $p \in S$, there is a chart $(U, \varphi)$ of $M$ at $p$ adapted to $S$ (Definition~\ref{def:submanifold}), and then $(p, \alpha) \in T^*U$. By (1), $N^*S \cap T^*U$ is cut out in the chart $\hat\varphi$ by setting $m$ of its $2m$ coordinates equal to the constant $0$. Proposition~\ref{prop:adapted-flex}, applied to the subset $N^*S$ of the manifold $T^*M$ with this chart (any $m$ of the coordinates, (2) there; the constants all $0$), gives a chart with the same domain $T^*U$ adapted to $N^*S$, of codimension $m$: $\hat\varphi$ with its coordinates permuted so that the $m$ vanishing ones come last. So every point of $N^*S$ lies in the domain of a chart of $T^*M$ adapted to $N^*S$, and $N^*S$ is a regular submanifold of $T^*M$ of codimension $m$ (Definition~\ref{def:submanifold}), of dimension $2m - m = m$ (Proposition~\ref{prop:submanifold-structure}).
+\emph{(2)} By Corollary~\ref{cor:ctb-fibration}(1), $T^*M$ is a smooth manifold of dimension $2m$, and $(T^*U, \hat\varphi)$ is one of its smooth charts (Proposition~\ref{prop:ctb-topology}). Let $(p, \alpha) \in N^*S$. Since $p \in S$, there is a chart $(U, \varphi)$ of $M$ at $p$ adapted to $S$ (Definition~\ref{def:submanifold}), and then $(p, \alpha) \in T^*U$. By (1), $N^*S \cap T^*U$ is cut out in the chart $\hat\varphi$ by setting $m$ of its $2m$ coordinates equal to the constant $0$. Proposition~\ref{prop:adapted-flex}, applied to the subset $N^*S$ of the manifold $T^*M$ with this chart (any $m$ of the coordinates, (2) there; the constants all $0$), gives a chart with the same domain $T^*U$ adapted to $N^*S$, of codimension $m$: $\hat\varphi$ with its coordinates permuted so that the $m$ vanishing ones come last. So every point of $N^*S$ lies in the domain of a chart of $T^*M$ adapted to $N^*S$, and $N^*S$ is a regular submanifold of $T^*M$ of codimension $m$ (Definition~\ref{def:submanifold}), of dimension $2m - m = m$ (Proposition~\ref{prop:submanifold-structure}).
 \end{proof}
 
 \begin{rembox}[Extreme Cases of the Conormal Bundle]\label{rem:conormal-bundle-extreme}
@@ -15486,6 +15543,22 @@ and Proposition~\ref{prop:restriction-critical}(3), applied to $\Phi$ and $f = \
 \begin{rembox}[Critical Points and Lagrange Multipliers in the Conormal Bundle]\label{rem:conormal-critical}
 \textit{(Not from the assignment.)} For $S = M$ the conormal bundle is the zero section (the remark \emph{Extreme Cases of the Conormal Bundle}), and Corollary~\ref{cor:crit-restriction-conormal} reads $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$: this is the starting point of the next subsection, Proposition~\ref{prop:ddf-critical}(1) later in this section, where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem~\ref{thm:morse-transverse}). \emph{Lagrange multipliers.} For $S = G^{-1}(0)$, each fibre $N_pS$ has the basis $dG^1|_p, \ldots, dG^k|_p$ (Proposition~\ref{prop:conormal-defining-functions}), so $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$ is a bijection $S \times \mathbb{R}^k \to N^*S$; at a critical point $p$, the multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem~\ref{thm:lagrange-multipliers} are the coordinates of the point $(p, d\Phi_p) \in N^*S$ in its fibre, in this basis.
 \end{rembox}
+
+\begin{lembox}[The Fibre Inclusion of $T^*M$]\thmlabel{lem:fibre-inclusion}
+Let $p \in M$, give $T_p^*M$ its standard smooth structure (Definition~\ref{def:vs-structure}), and let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart at $p$. Then $L_p : T_p^*M \to \mathbb{R}^m$, $L_p(\eta) = (\eta_1, \ldots, \eta_m)$ with $\eta_j = \eta\big(\partial/\partial x^j|_p\big)$, is a smooth chart of $T_p^*M$, and the fibre inclusion
+\[
+\iota_p : T_p^*M \longrightarrow T^*M, \qquad \iota_p(\eta) = (p, \eta),
+\]
+is smooth; in the charts $L_p$ and $\hat\varphi$ it is $b \mapsto (\varphi(p), b)$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Let $L_p : T_p^*M \to \mathbb{R}^m$, $L_p(\eta) = (\eta_1, \ldots, \eta_m)$, be the map to components. It is linear, since covectors are evaluated pointwise (Definition~\ref{def:dual}), and bijective, with inverse $b \mapsto \sum_j b_j\, dx^j|_p$ (Corollary~\ref{cor:covector-components}); so it is a linear coordinate system (Definition~\ref{def:linear-coords}), hence a smooth chart of $T_p^*M$ (Definition~\ref{def:vs-structure}). The image of $\iota_p$ lies in $T^*U$, and by the inverse formula of Definition~\ref{def:ctb-chart} (the point $\varphi^{-1}(\varphi(p)) = p$ with the covector $\sum_j b_j\, dx^j|_p$),
+\[
+\hat\varphi \circ \iota_p \circ L_p^{-1}(b) = \hat\varphi\Big(p, \sum_{j=1}^m b_j\, dx^j\big|_p\Big) = \big(\varphi(p), b\big), \qquad b \in \mathbb{R}^m ,
+\]
+a smooth map (constant first components, identity last components). And $\iota_p = \hat\varphi^{-1} \circ (\hat\varphi \circ \iota_p \circ L_p^{-1}) \circ L_p$ is continuous, a composite of continuous maps ($\hat\varphi$ is a homeomorphism, Proposition~\ref{prop:ctb-topology}). So $\iota_p$ is smooth (Definition~\ref{def:smooth-map}, with the charts $L_p$ and $\hat\varphi$).
+\end{proof}
 
 \begin{propbox}[The Vertical Space of $T^*M$ Along the Zero Section]\thmlabel{prop:zero-section-vertical}
 Let $p \in M$, $(U, \varphi)$ a chart at $p$, and $(\bar x^i, \xi_j)$ the standard coordinates on $T^*U$.
@@ -15530,11 +15603,7 @@ The space $V_{(p,0)}$, the map $j_p$ and the splitting are defined without chart
 \]
 Now let $w = \sum_i a^i\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j b_j\, \partial/\partial \xi_j|_{(p,0)}$ be any tangent vector at $(p, 0)$. By linearity, $\pi_{*(p,0)}w = \sum_i a^i\, \partial/\partial x^i|_p$, which is $0$ exactly when all $a^i = 0$, the $\partial/\partial x^i|_p$ being a basis (Theorem~\ref{thm:tangent-basis}). So $\ker \pi_{*(p,0)}$ consists of the combinations of the $\partial/\partial \xi_j|_{(p,0)}$ alone; these $m$ vectors are part of a basis, hence independent, and $\dim V_{(p,0)} = m$.
 
-\emph{(2) $\iota_p$ is smooth.} Let $L_p : T_p^*M \to \mathbb{R}^m$, $L_p(\eta) = (\eta_1, \ldots, \eta_m)$, be the map to components. It is linear, since covectors are evaluated pointwise (Definition~\ref{def:dual}), and bijective, with inverse $b \mapsto \sum_j b_j\, dx^j|_p$ (Corollary~\ref{cor:covector-components}); so it is a linear coordinate system (Definition~\ref{def:linear-coords}), hence a smooth chart of $T_p^*M$ (Definition~\ref{def:vs-structure}). The image of $\iota_p$ lies in $T^*U$, and by the inverse formula of Definition~\ref{def:ctb-chart} (the point $\varphi^{-1}(\varphi(p)) = p$ with the covector $\sum_j b_j\, dx^j|_p$),
-\[
-\hat\varphi \circ \iota_p \circ L_p^{-1}(b) = \hat\varphi\Big(p, \sum_{j=1}^m b_j\, dx^j\big|_p\Big) = \big(\varphi(p), b\big), \qquad b \in \mathbb{R}^m ,
-\]
-a smooth map (constant first components, identity last components). And $\iota_p = \hat\varphi^{-1} \circ (\hat\varphi \circ \iota_p \circ L_p^{-1}) \circ L_p$ is continuous, a composite of continuous maps ($\hat\varphi$ is a homeomorphism, Proposition~\ref{prop:ctb-topology}). So $\iota_p$ is smooth (Definition~\ref{def:smooth-map}, with the charts $L_p$ and $\hat\varphi$).
+\emph{(2) $\iota_p$ is smooth} by Lemma~\ref{lem:fibre-inclusion}, which also gives the chart $L_p(\eta) = (\eta_1, \ldots, \eta_m)$ of $T_p^*M$ used below.
 
 \emph{(2) The formula for $j_p$.} Let $\eta \in T_p^*M$ and $E = j_p(\eta)$, a derivation at $\iota_p(0) = (p, 0)$. By the universal formula (Theorem~\ref{thm:tangent-basis}) in the chart $\hat\varphi$, $E = \sum_i E[\bar x^i]\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j E[\xi_j]\, \partial/\partial \xi_j|_{(p,0)}$, so it suffices to compute the values of $E$ on the coordinate functions. For a function $g$ smooth near $(p, 0)$, the definition of the pushforward (Definition~\ref{def:pushforward}) and of $D_\eta|_0$ (Corollary~\ref{cor:tangent-vs}) give
 \[
@@ -15817,6 +15886,30 @@ J^k_p = C^\infty_p(M) \big/ I_p^{k+1},
 where $I_p^{k+1}$ is spanned by products of $k + 1$ germs vanishing at $p$. The class of a germ is its $k$-jet.
 \end{defbox}
 
+\begin{defbox}[Multi-Index Notation]\deflabel{def:multi-index}
+A \textbf{multi-index} is an $m$-tuple $\alpha = (\alpha_1, \ldots, \alpha_m)$ of integers $\alpha_i \ge 0$, with \textbf{order} $|\alpha| = \alpha_1 + \cdots + \alpha_m$ and $\alpha! = \alpha_1! \cdots \alpha_m!$. In a chart $(U, (x^1, \ldots, x^m))$, with $\partial_i = \partial/\partial x^i$ acting on $C^\infty(U)$,
+\[
+\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}, \qquad (x - c)^\alpha = (x^1 - c^1)^{\alpha_1} \cdots (x^m - c^m)^{\alpha_m} \quad (c \in \mathbb{R}^m),
+\]
+and $\partial^{(0, \ldots, 0)} = \mathrm{id}$. Write $\beta \le \alpha$ if $\beta_i \le \alpha_i$ for every $i$, and $e_j$ for the multi-index with $1$ in place $j$ and $0$ elsewhere.
+\end{defbox}
+
+\begin{lembox}[Derivatives of Monomials]\thmlabel{lem:monomial-derivatives}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart, $p \in U$, $c = \varphi(p)$, and $\alpha$, $\beta$ multi-indices. On $U$,
+\[
+\partial^\alpha (x - c)^\beta = \begin{cases} \dfrac{\beta!}{(\beta - \alpha)!}\, (x - c)^{\beta - \alpha} & \text{if } \alpha \le \beta, \\[4pt] 0 & \text{otherwise,} \end{cases}
+\]
+with $(\beta - \alpha)_i = \beta_i - \alpha_i$. In particular $\partial^\alpha (x - c)^\beta(p) = \beta!$ if $\alpha = \beta$ and $0$ if $\alpha \ne \beta$; so the coefficients of a polynomial $P = \sum_{|\beta| \le k} c_\beta\, (x - c)^\beta$ are $c_\beta = \partial^\beta P(p)/\beta!$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Partial derivatives on $U$ are computed from coordinate representations: $(\partial_i u) \circ \varphi^{-1} = \partial(u \circ \varphi^{-1})/\partial r^i$ (Definition~\ref{def:coordinate-derivation}), so, applying this $|\alpha|$ times, $(\partial^\alpha u) \circ \varphi^{-1} = \partial^{|\alpha|}(u \circ \varphi^{-1})/\partial r^\alpha$. In coordinates, $(x - c)^\beta \circ \varphi^{-1}(r) = \prod_i (r^i - c^i)^{\beta_i}$, a product of factors each depending on one variable, so
+\[
+\frac{\partial^{|\alpha|}}{\partial r^\alpha} \prod_{i=1}^m (r^i - c^i)^{\beta_i} = \prod_{i=1}^m \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i}, \qquad \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i} = \begin{cases} \dfrac{\beta_i!}{(\beta_i - \alpha_i)!} (r^i - c^i)^{\beta_i - \alpha_i} & \alpha_i \le \beta_i, \\ 0 & \alpha_i > \beta_i . \end{cases}
+\]
+That is, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise. At $x = c$, i.e.\ at the point $p$, the factor $(r^i - c^i)^{\beta_i - \alpha_i}$ is $1$ if $\alpha_i = \beta_i$ and $0$ if $\alpha_i < \beta_i$; so $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. For the last statement, apply $\partial^\alpha$ to $P$ and evaluate at $p$: $\partial^\alpha P(p) = \sum_\beta c_\beta\, \partial^\alpha (x - c)^\beta(p) = c_\alpha\, \alpha!$.
+\end{proof}
+
 \begin{propbox}[Jets Are Taylor Polynomials]\thmlabel{prop:jets-taylor}
 In a chart $(x^1, \ldots, x^m)$ centred at $p$, two germs have the same $k$-jet if and only if their partial derivatives of all orders $\le k$ agree at $p$, that is, their Taylor polynomials of degree $k$ at $p$ agree. So $J^k_p$ is isomorphic to the space of polynomials of degree $\le k$ in $m$ variables.
 \end{propbox}
@@ -15826,7 +15919,7 @@ In a chart $(x^1, \ldots, x^m)$ centred at $p$, two germs have the same $k$-jet 
 \[
 g = \sum_{|\alpha| \le k} \frac{\partial^\alpha g(p)}{\alpha!}\, x^\alpha + \sum_{|\beta| = k+1} x^\beta\, g_\beta
 \]
-with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, every polynomial of degree $\le k$ is the Taylor polynomial of a germ (itself), so the map from $J^k_p$ to Taylor polynomials is onto.
+with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, a polynomial $P = \sum_{|\beta| \le k} c_\beta\, x^\beta$ is the Taylor polynomial of its own germ, since $\partial^\beta P(p)/\beta! = c_\beta$ (Lemma~\ref{lem:monomial-derivatives}, with $c = 0$ for the chart centred at $p$); so the map from $J^k_p$ to Taylor polynomials is onto.
 \end{proof}
 
 \begin{center}
@@ -16681,9 +16774,42 @@ For every open $U \subseteq M$ and every $p \in U$ there is a bump function $\ch
 \leeref{Proposition 2.25}
 \end{propbox}
 
-\begin{proof}[Proof (to be filled)]
-Stated in Lecture~15, and again in Lecture~16 --- ``we're going to prove it next week, but not this week'' --- as ``technical things that you will not be using in homework.'' ``The existence is not so obvious, but it's true.'' To be filled.
+\begin{proof}
+\textit{(Stated in Lecture~15, and again in Lecture~16 --- ``we're going to prove it next week, but not this week'' --- as ``technical things that you will not be using in homework.'' ``The existence is not so obvious, but it's true.'' Lecture~21 gave the recipe while proving the Whitney embedding theorem: the function ``is constructed in the Euclidean space first, and then you pull back with the chart.'' Filled in along that recipe, following Lee, Lemmas 2.20--2.22.)} We prove slightly more, needed in Theorem~\ref{thm:whitney}: \emph{if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.} Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+
+\emph{1. A smooth function vanishing to infinite order.} Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
+
+\emph{2. A plateau on $\mathbb{R}^m$.} Put
+\[
+H(x) = \frac{h\big(r'^2 - |x|^2\big)}{h\big(r'^2 - |x|^2\big) + h\big(|x|^2 - r^2\big)}, \qquad x \in \mathbb{R}^m .
+\]
+The denominator never vanishes: if $|x| < r'$ the first term is positive, and if $|x| \ge r' > r$ the second is. So $H$ is smooth, $0 \le H \le 1$, $H(x) = 1$ when $|x| \le r$ (the second term vanishes), and $H(x) = 0$ when $|x| \ge r'$.
+
+\emph{3. Pull back by the chart.} Define $\chi = H\big(\varphi - \varphi(p)\big)$ on $V$ and $\chi = 0$ on $M \setminus V$. The set $K = \varphi^{-1}\big(\overline{B}(\varphi(p), r')\big)$ is compact, as the image of a compact set under the continuous map $\varphi^{-1}$, hence closed in the Hausdorff space $M$, and $K \subseteq V$. $\chi$ is smooth on the open set $V$ and zero on the open set $M \setminus K$; these two open sets cover $M$, so $\chi$ is smooth. Its support lies in $K$, so it is compact and inside $V \subseteq U$; and $\chi \equiv 1$ on $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$, which contains the open neighbourhood $\varphi^{-1}\big(B(\varphi(p), r)\big)$ of $p$. So $\chi$ is a bump function at $p$ (Definition~\ref{def:bump-function}).
 \end{proof}
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+    \draw[->, gray!70!black] (-1.2,0) -- (3.3,0) node[right, font=\scriptsize] {$t$};
+    \draw[->, gray!70!black] (0,-0.2) -- (0,1.6);
+    \draw[very thick, blue!70!black] (-1.000,0.000) -- (-0.975,0.000) -- (-0.950,0.000) -- (-0.925,0.000) -- (-0.900,0.000) -- (-0.875,0.000) -- (-0.850,0.000) -- (-0.825,0.000) -- (-0.800,0.000) -- (-0.775,0.000) -- (-0.750,0.000) -- (-0.725,0.000) -- (-0.700,0.000) -- (-0.675,0.000) -- (-0.650,0.000) -- (-0.625,0.000) -- (-0.600,0.000) -- (-0.575,0.000) -- (-0.550,0.000) -- (-0.525,0.000) -- (-0.500,0.000) -- (-0.475,0.000) -- (-0.450,0.000) -- (-0.425,0.000) -- (-0.400,0.000) -- (-0.375,0.000) -- (-0.350,0.000) -- (-0.325,0.000) -- (-0.300,0.000) -- (-0.275,0.000) -- (-0.250,0.000) -- (-0.225,0.000) -- (-0.200,0.000) -- (-0.175,0.000) -- (-0.150,0.000) -- (-0.125,0.000) -- (-0.100,0.000) -- (-0.075,0.000) -- (-0.050,0.000) -- (-0.025,0.000) -- (0.000,0.000) -- (0.025,0.000) -- (0.050,0.000) -- (0.075,0.000) -- (0.100,0.000) -- (0.125,0.001) -- (0.150,0.003) -- (0.175,0.007) -- (0.200,0.015) -- (0.225,0.026) -- (0.250,0.041) -- (0.275,0.059) -- (0.300,0.080) -- (0.325,0.103) -- (0.350,0.129) -- (0.375,0.156) -- (0.400,0.184) -- (0.425,0.213) -- (0.450,0.243) -- (0.475,0.273) -- (0.500,0.303) -- (0.525,0.333) -- (0.550,0.364) -- (0.575,0.394) -- (0.600,0.423) -- (0.625,0.452) -- (0.650,0.481) -- (0.675,0.509) -- (0.700,0.537) -- (0.725,0.564) -- (0.750,0.590) -- (0.775,0.616) -- (0.800,0.642) -- (0.825,0.667) -- (0.850,0.691) -- (0.875,0.714) -- (0.900,0.737) -- (0.925,0.760) -- (0.950,0.782) -- (0.975,0.803) -- (1.000,0.824) -- (1.025,0.844) -- (1.050,0.864) -- (1.075,0.884) -- (1.100,0.902) -- (1.125,0.921) -- (1.150,0.939) -- (1.175,0.956) -- (1.200,0.973) -- (1.225,0.990) -- (1.250,1.006) -- (1.275,1.022) -- (1.300,1.038) -- (1.325,1.053) -- (1.350,1.068) -- (1.375,1.082) -- (1.400,1.097) -- (1.425,1.110) -- (1.450,1.124) -- (1.475,1.137) -- (1.500,1.150) -- (1.525,1.163) -- (1.550,1.175) -- (1.575,1.187) -- (1.600,1.199) -- (1.625,1.211) -- (1.650,1.222) -- (1.675,1.233) -- (1.700,1.244) -- (1.725,1.255) -- (1.750,1.265) -- (1.775,1.275) -- (1.800,1.285) -- (1.825,1.295) -- (1.850,1.305) -- (1.875,1.314) -- (1.900,1.323) -- (1.925,1.332) -- (1.950,1.341) -- (1.975,1.350) -- (2.000,1.359) -- (2.025,1.367) -- (2.050,1.375) -- (2.075,1.383) -- (2.100,1.391) -- (2.125,1.399) -- (2.150,1.407) -- (2.175,1.414) -- (2.200,1.422) -- (2.225,1.429) -- (2.250,1.436) -- (2.275,1.443) -- (2.300,1.450) -- (2.325,1.457) -- (2.350,1.464) -- (2.375,1.470) -- (2.400,1.477) -- (2.425,1.483) -- (2.450,1.489) -- (2.475,1.495) -- (2.500,1.502) -- (2.525,1.507) -- (2.550,1.513) -- (2.575,1.519) -- (2.600,1.525) -- (2.625,1.530) -- (2.650,1.536) -- (2.675,1.541) -- (2.700,1.547) -- (2.725,1.552) -- (2.750,1.557) -- (2.775,1.562) -- (2.800,1.567) -- (2.825,1.572) -- (2.850,1.577) -- (2.875,1.582) -- (2.900,1.587) -- (2.925,1.591) -- (2.950,1.596) -- (2.975,1.601) -- (3.000,1.605);
+    \node[blue!70!black, font=\scriptsize, anchor=west] at (1.6,0.55) {$h(t) = e^{-1/t}$, $t > 0$};
+    \node[blue!70!black, font=\scriptsize] at (-0.6,0.25) {$h = 0$};
+    \node[font=\scriptsize, align=center] at (1.0,-0.65) {all derivatives $0$ at $t = 0$};
+    \draw[->, gray!70!black] (4.6,0) -- (9.9,0) node[right, font=\scriptsize] {$x$};
+    \draw[->, gray!70!black] (7.0,-0.2) -- (7.0,2.0);
+    \draw[very thick, red!70!black] (4.112,0.000) -- (4.139,0.000) -- (4.165,0.000) -- (4.191,0.000) -- (4.217,0.000) -- (4.244,0.000) -- (4.270,0.000) -- (4.296,0.000) -- (4.322,0.000) -- (4.349,0.000) -- (4.375,0.000) -- (4.401,0.000) -- (4.428,0.000) -- (4.454,0.000) -- (4.480,0.000) -- (4.506,0.000) -- (4.532,0.000) -- (4.559,0.000) -- (4.585,0.000) -- (4.611,0.000) -- (4.637,0.000) -- (4.664,0.000) -- (4.690,0.000) -- (4.716,0.000) -- (4.742,0.000) -- (4.769,0.000) -- (4.795,0.000) -- (4.821,0.000) -- (4.848,0.000) -- (4.874,0.000) -- (4.900,0.000) -- (4.926,0.000) -- (4.953,0.014) -- (4.979,0.074) -- (5.005,0.162) -- (5.031,0.254) -- (5.058,0.338) -- (5.084,0.410) -- (5.110,0.473) -- (5.136,0.527) -- (5.162,0.574) -- (5.189,0.615) -- (5.215,0.653) -- (5.241,0.687) -- (5.268,0.719) -- (5.294,0.750) -- (5.320,0.779) -- (5.346,0.807) -- (5.372,0.835) -- (5.399,0.863) -- (5.425,0.891) -- (5.451,0.920) -- (5.478,0.950) -- (5.504,0.982) -- (5.530,1.015) -- (5.556,1.051) -- (5.582,1.089) -- (5.609,1.130) -- (5.635,1.175) -- (5.661,1.223) -- (5.688,1.275) -- (5.714,1.331) -- (5.740,1.389) -- (5.766,1.447) -- (5.793,1.502) -- (5.819,1.548) -- (5.845,1.581) -- (5.871,1.596) -- (5.897,1.600) -- (5.924,1.600) -- (5.950,1.600) -- (5.976,1.600) -- (6.003,1.600) -- (6.029,1.600) -- (6.055,1.600) -- (6.081,1.600) -- (6.107,1.600) -- (6.134,1.600) -- (6.160,1.600) -- (6.186,1.600) -- (6.213,1.600) -- (6.239,1.600) -- (6.265,1.600) -- (6.291,1.600) -- (6.317,1.600) -- (6.344,1.600) -- (6.370,1.600) -- (6.396,1.600) -- (6.422,1.600) -- (6.449,1.600) -- (6.475,1.600) -- (6.501,1.600) -- (6.527,1.600) -- (6.554,1.600) -- (6.580,1.600) -- (6.606,1.600) -- (6.633,1.600) -- (6.659,1.600) -- (6.685,1.600) -- (6.711,1.600) -- (6.737,1.600) -- (6.764,1.600) -- (6.790,1.600) -- (6.816,1.600) -- (6.843,1.600) -- (6.869,1.600) -- (6.895,1.600) -- (6.921,1.600) -- (6.947,1.600) -- (6.974,1.600) -- (7.000,1.600) -- (7.026,1.600) -- (7.053,1.600) -- (7.079,1.600) -- (7.105,1.600) -- (7.131,1.600) -- (7.157,1.600) -- (7.184,1.600) -- (7.210,1.600) -- (7.236,1.600) -- (7.263,1.600) -- (7.289,1.600) -- (7.315,1.600) -- (7.341,1.600) -- (7.367,1.600) -- (7.394,1.600) -- (7.420,1.600) -- (7.446,1.600) -- (7.473,1.600) -- (7.499,1.600) -- (7.525,1.600) -- (7.551,1.600) -- (7.578,1.600) -- (7.604,1.600) -- (7.630,1.600) -- (7.656,1.600) -- (7.683,1.600) -- (7.709,1.600) -- (7.735,1.600) -- (7.761,1.600) -- (7.787,1.600) -- (7.814,1.600) -- (7.840,1.600) -- (7.866,1.600) -- (7.893,1.600) -- (7.919,1.600) -- (7.945,1.600) -- (7.971,1.600) -- (7.997,1.600) -- (8.024,1.600) -- (8.050,1.600) -- (8.076,1.600) -- (8.102,1.600) -- (8.129,1.596) -- (8.155,1.581) -- (8.181,1.548) -- (8.207,1.502) -- (8.234,1.447) -- (8.260,1.389) -- (8.286,1.331) -- (8.312,1.275) -- (8.339,1.223) -- (8.365,1.175) -- (8.391,1.130) -- (8.418,1.089) -- (8.444,1.051) -- (8.470,1.015) -- (8.496,0.982) -- (8.523,0.950) -- (8.549,0.920) -- (8.575,0.891) -- (8.601,0.863) -- (8.627,0.835) -- (8.654,0.807) -- (8.680,0.779) -- (8.706,0.750) -- (8.732,0.719) -- (8.759,0.687) -- (8.785,0.653) -- (8.811,0.615) -- (8.838,0.574) -- (8.864,0.527) -- (8.890,0.473) -- (8.916,0.410) -- (8.943,0.338) -- (8.969,0.254) -- (8.995,0.162) -- (9.021,0.074) -- (9.047,0.014) -- (9.074,0.000) -- (9.100,0.000) -- (9.126,0.000) -- (9.152,0.000) -- (9.179,0.000) -- (9.205,0.000) -- (9.231,0.000) -- (9.258,0.000) -- (9.284,0.000) -- (9.310,0.000) -- (9.336,0.000) -- (9.363,0.000) -- (9.389,0.000) -- (9.415,0.000) -- (9.441,0.000) -- (9.468,0.000) -- (9.494,0.000) -- (9.520,0.000) -- (9.546,0.000) -- (9.572,0.000) -- (9.599,0.000) -- (9.625,0.000) -- (9.651,0.000) -- (9.678,0.000) -- (9.704,0.000) -- (9.730,0.000) -- (9.756,0.000) -- (9.783,0.000) -- (9.809,0.000) -- (9.835,0.000) -- (9.861,0.000) -- (9.887,0.000);
+    \draw[dashed, gray!70!black] (5.95,0) -- (5.95,1.6) (8.05,0) -- (8.05,1.6);
+    \node[font=\scriptsize] at (5.95,-0.25) {$-r$}; \node[font=\scriptsize] at (8.05,-0.25) {$r$};
+    \node[font=\scriptsize] at (4.9,-0.25) {$-r'$}; \node[font=\scriptsize] at (9.1,-0.25) {$r'$};
+    \node[red!70!black, font=\scriptsize, anchor=south] at (7.0,1.65) {$H = 1$ on $|x| \le r$};
+    \node[red!70!black, font=\scriptsize, align=center] at (7.0,-0.75) {$H = 0$ for $|x| \ge r'$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The two steps of the construction for $m = 1$. Left: $h(t) = e^{-1/t}$ for $t > 0$ and $h = 0$ for $t \le 0$ is smooth, with all derivatives $0$ at $t = 0$, so it switches on without a corner (Step~1). Right: the plateau $H(x) = h(r'^2 - x^2) / \big(h(r'^2 - x^2) + h(x^2 - r^2)\big)$ is $1$ on $|x| \le r$, $0$ for $|x| \ge r'$, and smooth in between (Step~2); pulling it back by a chart gives the bump function (Step~3).
+%% <<< END ADDED
+
 
 \textit{Terminology (Lecture~16).} A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be \emph{subordinate to $U$}, ``because this is a condition that is going to show up several times.''
 
@@ -16950,10 +17076,7 @@ Let $M$ be a smooth manifold.
 \begin{enumerate}
     \item $\mathrm{Diff}_0(M) \subseteq \mathrm{Diff}_1(M) \subseteq \mathrm{Diff}_2(M) \subseteq \cdots$, each $\mathrm{Diff}_k(M)$ is closed under sums, and $\bigcup_k \mathrm{Diff}_k(M) = \mathrm{Diff}(M)$.
     \item $\mathrm{Diff}_k(M) \circ \mathrm{Diff}_l(M) \subseteq \mathrm{Diff}_{k+l}(M)$: orders add, at most, under composition.
-    \item $\mathrm{Diff}_0(M) = \{ m_g : g \in C^\infty(M) \}$.
-    \item $\mathrm{Diff}_1(M) = \{ m_g + D_\mathbf{X} : g \in C^\infty(M),\ \mathbf{X} \in \mathfrak{X}(M) \}$, and $g$ and $\mathbf{X}$ are determined by the operator $P = m_g + D_\mathbf{X}$: $g = P(1)$ and $D_\mathbf{X} = P - m_{P(1)}$.
 \end{enumerate}
-In particular the derivations of $C^\infty(M)$ are exactly the $P \in \mathrm{Diff}_1(M)$ with $P(1) = 0$.
 \end{propbox}
 
 \begin{proof}
@@ -16966,10 +17089,23 @@ In particular the derivations of $C^\infty(M)$ are exactly the $P \in \mathrm{Di
 \big((P_1 + P_2) \circ Q\big) f = P_1(Qf) + P_2(Qf), \qquad \big(Q \circ (P_1 + P_2)\big) f = Q(P_1 f + P_2 f) = Q(P_1 f) + Q(P_2 f),
 \]
 the first by the pointwise sum of operators, the second because $Q$ is linear. Hence $P \circ Q = \sum_i \sum_j C_i \circ E_j$. Each $C_i \circ E_j$ is a composite of generators --- the factors of $C_i$ followed by those of $E_j$ --- whose vector-field factors number at most $k + l$. So $P \circ Q$ is a finite sum of composites with at most $k + l$ vector-field factors: $P \circ Q \in \mathrm{Diff}_{k+l}(M)$. (If $k = -1$ or $l = -1$, then $P = 0$ or $Q = 0$, so $P \circ Q = 0$, which lies in $\mathrm{Diff}_{k+l}(M)$ whenever $k + l \ge -1$.)
+\end{proof}
 
-\emph{(3)} A composite with no vector-field factor is $m_{g_1} \circ \cdots \circ m_{g_r}$. By $m_{gh} = m_g \circ m_h$ (Proposition~\ref{prop:mult-operators}(1)), applied $r - 1$ times, it equals $m_{g_1 \cdots g_r}$; for $r = 0$ it is $\mathrm{id} = m_1$. A finite sum of multiplication operators is again one, $\sum_i m_{h_i} = m_{\sum_i h_i}$, by $m_{g+h} = m_g + m_h$ (same proposition). So every element of $\mathrm{Diff}_0(M)$ is some $m_g$. Conversely $m_g$ is a composite of one generator with no vector-field factor, so $m_g \in \mathrm{Diff}_0(M)$.
+\begin{propbox}[Differential Operators of Order 0 and 1]\thmlabel{prop:diff-low-order}
+Let $M$ be a smooth manifold.
+\begin{enumerate}
+    \item $\mathrm{Diff}_0(M) = \{ m_g : g \in C^\infty(M) \}$.
+    \item $\mathrm{Diff}_1(M) = \{ m_g + D_\mathbf{X} : g \in C^\infty(M),\ \mathbf{X} \in \mathfrak{X}(M) \}$, and $g$ and $\mathbf{X}$ are determined by the operator $P = m_g + D_\mathbf{X}$: $g = P(1)$ and $D_\mathbf{X} = P - m_{P(1)}$.
+\end{enumerate}
+In particular the derivations of $C^\infty(M)$ are exactly the $P \in \mathrm{Diff}_1(M)$ with $P(1) = 0$.
+\end{propbox}
 
-\emph{(4)} \emph{Every element has the form $m_g + D_\mathbf{Y}$.} A composite with no vector-field factor is $m_g$ by (3), and $m_g = m_g + D_\mathbf{0}$, since $(D_\mathbf{0} f)(p) = 0_p[f] = 0$. A composite with exactly one vector-field factor $D_\mathbf{X}$ is $m_a \circ D_\mathbf{X} \circ m_b$, where $m_a$ is the composite of the multiplications to the left of it and $m_b$ that of those to the right (by (3); $a = 1$ or $b = 1$ if there are none). Then, by Proposition~\ref{prop:vf-mult-commutation}(2) with $g = b$, the linearity of $m_a$, Proposition~\ref{prop:mult-operators}(1), and Proposition~\ref{prop:vf-mult-commutation}(1) with $g = ab$,
+\begin{proof}
+\textit{(Not from lecture; filled in.)} As in the proof of Proposition~\ref{prop:diff-filtration}, ``composite'' means a composite of generators, each a $D_\mathbf{X}$ or an $m_g$, and $\mathrm{Diff}_k(M)$ consists of the finite sums of composites with at most $k$ factors of the form $D_\mathbf{X}$ (Definition~\ref{def:diff-op-order}).
+
+\emph{(1)} A composite with no vector-field factor is $m_{g_1} \circ \cdots \circ m_{g_r}$. By $m_{gh} = m_g \circ m_h$ (Proposition~\ref{prop:mult-operators}(1)), applied $r - 1$ times, it equals $m_{g_1 \cdots g_r}$; for $r = 0$ it is $\mathrm{id} = m_1$. A finite sum of multiplication operators is again one, $\sum_i m_{h_i} = m_{\sum_i h_i}$, by $m_{g+h} = m_g + m_h$ (same proposition). So every element of $\mathrm{Diff}_0(M)$ is some $m_g$. Conversely $m_g$ is a composite of one generator with no vector-field factor, so $m_g \in \mathrm{Diff}_0(M)$.
+
+\emph{(2)} \emph{Every element has the form $m_g + D_\mathbf{Y}$.} A composite with no vector-field factor is $m_g$ by (1), and $m_g = m_g + D_\mathbf{0}$, since $(D_\mathbf{0} f)(p) = 0_p[f] = 0$. A composite with exactly one vector-field factor $D_\mathbf{X}$ is $m_a \circ D_\mathbf{X} \circ m_b$, where $m_a$ is the composite of the multiplications to the left of it and $m_b$ that of those to the right (by (1); $a = 1$ or $b = 1$ if there are none). Then, by Proposition~\ref{prop:vf-mult-commutation}(2) with $g = b$, the linearity of $m_a$, Proposition~\ref{prop:mult-operators}(1), and Proposition~\ref{prop:vf-mult-commutation}(1) with $g = ab$,
 \[
 m_a \circ D_\mathbf{X} \circ m_b = m_a \circ \big( m_b \circ D_\mathbf{X} + m_{\mathbf{X}b} \big) = m_a \circ m_b \circ D_\mathbf{X} + m_a \circ m_{\mathbf{X}b} = m_{ab} \circ D_\mathbf{X} + m_{a\,\mathbf{X}b} = D_{ab\mathbf{X}} + m_{a\,\mathbf{X}b} ,
 \]
@@ -16979,26 +17115,27 @@ where $ab\mathbf{X} \in \mathfrak{X}(M)$ by Proposition~\ref{prop:vf-vector-spac
 \]
 because $m_g + m_h = m_{g+h}$ (Proposition~\ref{prop:mult-operators}(1)), and $D_\mathbf{X} + D_\mathbf{Y} = D_{\mathbf{X}+\mathbf{Y}}$: for every $f$ and $p$, $\mathbf{X}_p[f] + \mathbf{Y}_p[f] = (\mathbf{X}_p + \mathbf{Y}_p)[f] = (\mathbf{X} + \mathbf{Y})_p[f]$ (Definitions~\ref{def:abstract-tangent} and~\ref{def:vector-fields-space}), with $\mathbf{X} + \mathbf{Y} \in \mathfrak{X}(M)$ (Proposition~\ref{prop:vf-vector-space}(1)). The empty sum is $0 = m_0 + D_\mathbf{0}$. So every element of $\mathrm{Diff}_1(M)$ is of the form $m_g + D_\mathbf{Y}$. Conversely $m_g + D_\mathbf{X}$ is a sum of two composites of one generator each, with at most one vector-field factor, so it lies in $\mathrm{Diff}_1(M)$.
 
-\emph{$g$ and $\mathbf{X}$ are determined by $P$.} First, $D_\mathbf{X}$ kills the constant function $1$: by its product rule (Lemma~\ref{lem:vf-derivation}),
-\[
-D_\mathbf{X}(1) = D_\mathbf{X}(1 \cdot 1) = 1 \cdot D_\mathbf{X}(1) + 1 \cdot D_\mathbf{X}(1) = 2\, D_\mathbf{X}(1), \qquad \text{so } D_\mathbf{X}(1) = 0 .
-\]
+\emph{$g$ and $\mathbf{X}$ are determined by $P$.} First, $D_\mathbf{X}$ kills the constant function $1$: for every $p \in M$, $(D_\mathbf{X} 1)(p) = \mathbf{X}_p[1] = 0$ (Lemma~\ref{lem:vf-derivation}), because the derivation $\mathbf{X}_p$ at $p$ annihilates constants (Lemma~\ref{lem:derivation-properties}(1)).
 Hence for $P = m_g + D_\mathbf{X}$,
 \[
 P(1) = m_g(1) + D_\mathbf{X}(1) = g \cdot 1 + 0 = g ,
 \]
 and then $D_\mathbf{X} = P - m_g = P - m_{P(1)}$. If also $P = m_h + D_\mathbf{Y}$, the same computation gives $h = P(1) = g$ and $D_\mathbf{Y} = P - m_{P(1)} = D_\mathbf{X}$, and $D_\mathbf{Y} = D_\mathbf{X}$ forces $\mathbf{Y} = \mathbf{X}$ by the uniqueness in Proposition~\ref{prop:derivations-are-fields}.
 
-For the last sentence. \emph{Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:} a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition~\ref{prop:derivations-are-fields}); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (4), and $D_\mathbf{X}(1) = 0$ as just shown. \emph{Conversely}, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (4); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma~\ref{lem:vf-derivation}).
+For the last sentence. \emph{Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:} a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition~\ref{prop:derivations-are-fields}); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (2), and $D_\mathbf{X}(1) = 0$ as just shown. \emph{Conversely}, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (2); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma~\ref{lem:vf-derivation}).
 \end{proof}
 
-\begin{defbox}[Multi-Index Notation]\deflabel{def:multi-index}
-A \textbf{multi-index} is an $m$-tuple $\alpha = (\alpha_1, \ldots, \alpha_m)$ of integers $\alpha_i \ge 0$, with \textbf{order} $|\alpha| = \alpha_1 + \cdots + \alpha_m$ and $\alpha! = \alpha_1! \cdots \alpha_m!$. In a chart $(U, (x^1, \ldots, x^m))$, with $\partial_i = \partial/\partial x^i$ acting on $C^\infty(U)$,
-\[
-\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}, \qquad (x - c)^\alpha = (x^1 - c^1)^{\alpha_1} \cdots (x^m - c^m)^{\alpha_m} \quad (c \in \mathbb{R}^m),
-\]
-and $\partial^{(0, \ldots, 0)} = \mathrm{id}$. Write $\beta \le \alpha$ if $\beta_i \le \alpha_i$ for every $i$, and $e_j$ for the multi-index with $1$ in place $j$ and $0$ elsewhere.
-\end{defbox}
+\begin{lembox}[Coordinate Derivations on a Chart]\thmlabel{lem:coord-derivations}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart and $\partial_i = \partial/\partial x^i : C^\infty(U) \to C^\infty(U)$ (Lemma~\ref{lem:partials-smooth}).
+\begin{enumerate}
+    \item Each $\partial_i$ is a derivation of $C^\infty(U)$: $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$.
+    \item The $\partial_i$ commute: $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Hence $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$ for every multi-index $\alpha$ (Definition~\ref{def:multi-index}).
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} \emph{(1)} $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition~\ref{prop:vf-coords}, its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma~\ref{lem:vf-derivation}): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. \emph{(2)} The $\partial_i$ commute: by Definition~\ref{def:coordinate-derivation}, $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal (Clairaut's theorem); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Finally, $\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$, and moving the extra factor $\partial_i$ past $\partial_1^{\alpha_1}, \ldots, \partial_{i-1}^{\alpha_{i-1}}$ one factor at a time gives $\partial_i \circ \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_i^{\alpha_i + 1} \circ \cdots \circ \partial_m^{\alpha_m} = \partial^{\alpha + e_i}$.
+\end{proof}
 
 \begin{propbox}[Differential Operators in a Chart]\thmlabel{prop:diff-op-coords}
 Let $P \in \mathrm{Diff}_k(M)$ and let $(U, (x^1, \ldots, x^m))$ be a chart. Then there are \emph{unique} functions $a_\alpha \in C^\infty(U)$, one for each multi-index $\alpha$ with $|\alpha| \le k$ (Definition~\ref{def:multi-index}), such that
@@ -17008,7 +17145,7 @@ Let $P \in \mathrm{Diff}_k(M)$ and let $(U, (x^1, \ldots, x^m))$ be a chart. The
 \end{propbox}
 
 \begin{proof}
-\textit{(Not from lecture; filled in.)} Write $\varphi$ for the chart map. Two facts about the operators $\partial_i$ on $C^\infty(U)$ are used. First, $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition~\ref{prop:vf-coords}, its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma~\ref{lem:vf-derivation}): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. Second, the $\partial_i$ commute: by Definition~\ref{def:coordinate-derivation}, $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal (Clairaut's theorem); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$.
+\textit{(Not from lecture; filled in.)} Write $\varphi$ for the chart map. By Lemma~\ref{lem:coord-derivations}, the $\partial_i$ are commuting derivations of $C^\infty(U)$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$.
 
 \emph{Existence.} Call an operator $Q$ on $C^\infty(U)$ \emph{of form $j$} if $Q = \sum_{|\alpha| \le j} b_\alpha\, \partial^\alpha$ with $b_\alpha \in C^\infty(U)$. An operator of form $j$ is of form $k$ for $j \le k$ (take $b_\alpha = 0$ for $j < |\alpha| \le k$), and a sum of operators of form $k$ is of form $k$ (add the coefficients of equal $\partial^\alpha$). Now $P$ is a finite sum $\sum_s C_s$ of composites $C_s$ of generators with at most $k$ vector-field factors (Definition~\ref{def:diff-op-order}), and $(Pf)|_U = \sum_s (C_s f)|_U$. So it suffices to show: if $A_1 \circ \cdots \circ A_r$ is a composite of generators with $j$ vector-field factors, then $(A_1 \cdots A_r f)|_U = Q(f|_U)$ for all $f \in C^\infty(M)$, for some $Q$ of form $j$. Induct on $r$. For $r = 0$ take $Q = \mathrm{id} = \partial^{(0, \ldots, 0)}$, of form $0$. For $r \ge 1$ let $B = A_2 \circ \cdots \circ A_r$, with $j'$ vector-field factors; by the induction hypothesis $(Bf)|_U = Q'(f|_U)$ with $Q' = \sum_{|\alpha| \le j'} b_\alpha\, \partial^\alpha$ of form $j'$. Write $u = f|_U$.
 \begin{itemize}
@@ -17021,14 +17158,10 @@ Let $P \in \mathrm{Diff}_k(M)$ and let $(U, (x^1, \ldots, x^m))$ be a chart. The
     \[
     (D_\mathbf{X} B f)|_U = \sum_i \mathbf{X}^i\, \partial_i \Big( \sum_\alpha b_\alpha\, \partial^\alpha u \Big) = \sum_i \sum_\alpha \mathbf{X}^i \Big( (\partial_i b_\alpha)\, \partial^\alpha u + b_\alpha\, \partial_i \partial^\alpha u \Big) = \sum_i \sum_\alpha \Big( \mathbf{X}^i\, (\partial_i b_\alpha)\, \partial^\alpha + \mathbf{X}^i\, b_\alpha\, \partial^{\alpha + e_i} \Big) u ,
     \]
-    the sums over $|\alpha| \le j'$. The last step reorders the partial derivatives, which is allowed because mixed partials of smooth functions are equal (Clairaut's theorem, applied to $f \circ \varphi^{-1}$), as recalled above. The coefficients $\mathbf{X}^i\, \partial_i b_\alpha$ and $\mathbf{X}^i\, b_\alpha$ are smooth on $U$ ($\mathbf{X}^i$ by Proposition~\ref{prop:vf-coords}), and the multi-indices occurring have $|\alpha| \le j'$ and $|\alpha + e_i| = |\alpha| + 1 \le j' + 1$. Collecting the terms with the same multi-index, the right side has form $j' + 1 = j$.
+    the sums over $|\alpha| \le j'$. The last step uses $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$, which reorders partial derivatives (Lemma~\ref{lem:coord-derivations}). The coefficients $\mathbf{X}^i\, \partial_i b_\alpha$ and $\mathbf{X}^i\, b_\alpha$ are smooth on $U$ ($\mathbf{X}^i$ by Proposition~\ref{prop:vf-coords}), and the multi-indices occurring have $|\alpha| \le j'$ and $|\alpha + e_i| = |\alpha| + 1 \le j' + 1$. Collecting the terms with the same multi-index, the right side has form $j' + 1 = j$.
 \end{itemize}
 
-\emph{Uniqueness.} Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary~\ref{cor:germ-extension} there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition~\ref{def:coordinate-derivation}), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. In coordinates, $(x - c)^\beta \circ \varphi^{-1}(r) = \prod_i (r^i - c^i)^{\beta_i}$, a product of factors each depending on one variable, so
-\[
-\frac{\partial^{|\alpha|}}{\partial r^\alpha} \prod_{i=1}^m (r^i - c^i)^{\beta_i} = \prod_{i=1}^m \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i}, \qquad \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i} = \begin{cases} \dfrac{\beta_i!}{(\beta_i - \alpha_i)!} (r^i - c^i)^{\beta_i - \alpha_i} & \alpha_i \le \beta_i, \\ 0 & \alpha_i > \beta_i . \end{cases}
-\]
-That is, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise. At $x = c$, i.e.\ at the point $p$, the factor $(r^i - c^i)^{\beta_i - \alpha_i}$ is $1$ if $\alpha_i = \beta_i$ and $0$ if $\alpha_i < \beta_i$; so $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
+\emph{Uniqueness.} Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary~\ref{cor:germ-extension} there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition~\ref{def:coordinate-derivation}), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. By Lemma~\ref{lem:monomial-derivatives}, $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
 \[
 0 = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha (f_\beta|_U)(p) = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha\Big(\frac{(x - c)^\beta}{\beta!}\Big)(p) = c_\beta(p)\, \frac{\beta!}{\beta!} = c_\beta(p) .
 \]
@@ -17339,7 +17472,7 @@ carry this to composites, using Proposition~\ref{prop:diff-filtration}(2).
 \end{itemize}
 \end{proof}
 
-So two differential operators commute ``up to lower order''. For $k = l = 1$, applied to $D_\mathbf{X}$ and $D_\mathbf{Y}$, the second-order parts of $\mathbf{X} \circ \mathbf{Y}$ and $\mathbf{Y} \circ \mathbf{X}$ cancel, as in Example~\ref{ex:bracket-plane}; what is left lies in $\mathrm{Diff}_1(M)$ and kills constants, and is the vector field $[\mathbf{X}, \mathbf{Y}]$ (Proposition~\ref{prop:diff-filtration}(4)).
+So two differential operators commute ``up to lower order''. For $k = l = 1$, applied to $D_\mathbf{X}$ and $D_\mathbf{Y}$, the second-order parts of $\mathbf{X} \circ \mathbf{Y}$ and $\mathbf{Y} \circ \mathbf{X}$ cancel, as in Example~\ref{ex:bracket-plane}; what is left lies in $\mathrm{Diff}_1(M)$ and kills constants, and is the vector field $[\mathbf{X}, \mathbf{Y}]$ (Proposition~\ref{prop:diff-low-order}(2)).
 
 
 \begin{exbox}[The Cross Product]\exlabel{ex:cross-product-lie}
@@ -17687,6 +17820,57 @@ If $F : M \to N$ is a diffeomorphism and $\mathbf{X}_1, \mathbf{X}_2 \in \mathfr
     \item \emph{the tangent bundle.} The section $\mathbf{X}$ in the standard chart of $TM$ (\ref{sec:tangent-bundle}) is $p \mapsto (x^1, \ldots, x^m, X^1, \ldots, X^m)$, with transition $(r, v) \mapsto (\tau(r), \tau'(r)v)$, $\tau$ the transition function of the base.
 \end{itemize}
 \end{rembox}
+
+
+\textit{Lecture 21 opened with the last problem of the midterm --- ``there's always a question that is hard, but it's okay \ldots\ I hope we're still friends.''}
+
+\begin{propbox}[Brackets of Fields Tangent to a Submanifold]\thmlabel{prop:bracket-tangent}
+Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ \emph{tangent to $S$}: $\mathbf{X}_p, \mathbf{Y}_p \in T_pS$ for every $p \in S$. Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
+\leeref{Corollary 8.32}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~21, ``not in excruciating detail''; the bookkeeping is filled in.)} ``Use adapted coordinates'': near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definition~\ref{def:submanifold}); on the exam, $M$ was two-dimensional, ``but they could be vector-valued \ldots\ the codimension or the dimension doesn't matter.'' Write
+\[
+\mathbf{X} = \sum_i f^i\, \frac{\partial}{\partial x^i} + \sum_a g^a\, \frac{\partial}{\partial y^a}, \qquad
+\mathbf{Y} = \sum_i u^i\, \frac{\partial}{\partial x^i} + \sum_a v^a\, \frac{\partial}{\partial y^a} .
+\]
+At points of $S$, $T_pS$ is spanned by the $\partial/\partial x^i|_p$, so tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: ``there is no $y$ component.'' We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition~\ref{prop:bracket-coords}, that component is
+\[
+\mathbf{X}(v^b) - \mathbf{Y}(g^b) = \sum_i f^i\, \frac{\partial v^b}{\partial x^i} + \sum_a g^a\, \frac{\partial v^b}{\partial y^a} - \sum_i u^i\, \frac{\partial g^b}{\partial x^i} - \sum_a v^a\, \frac{\partial g^b}{\partial y^a} .
+\]
+Evaluate at $y = 0$. The terms with $\partial/\partial x^i$ vanish for one reason: ``how do you evaluate the partial with respect to $x$ at $y = 0$? You fix $y$ to zero and differentiate with respect to $x$, but when I set $y$ to zero, I get zero'' --- $\frac{\partial v^b}{\partial x^i}(x, 0) = \frac{\partial}{\partial x^i}\big(v^b(x, 0)\big) = 0$, and likewise for $g^b$. The terms with $\partial/\partial y^a$ vanish ``for a different reason'': ``I don't know that these partials are zero, but these guys are'' --- the coefficients $g^a(x, 0)$ and $v^a(x, 0)$. So the $y$-components of $[\mathbf{X}, \mathbf{Y}]$ vanish on $S$, and $[\mathbf{X}, \mathbf{Y}]_p \in T_pS$ for $p \in S$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.25]
+\draw[->, gray!60] (-0.3,0) -- (4.6,0) node[right, font=\scriptsize, text=black] {$x$};
+\draw[->, gray!60] (0,-1.3) -- (0,1.5) node[above, font=\scriptsize, text=black] {$y$};
+\draw[violet!75!black, very thick] (0.2,0) -- (4.3,0);
+\node[violet!75!black, font=\scriptsize, anchor=west] at (4.35,-0.3) {$S = \{y = 0\}$};
+\draw[->, thick, orange!55] (0.60,-0.90) -- (1.014,-1.618);
+\draw[->, thick, orange!85!black] (0.60,0.00) -- (1.142,0.000);
+\draw[->, thick, orange!55] (0.60,0.90) -- (1.200,1.618);
+\draw[->, thick, orange!55] (1.50,-0.90) -- (2.052,-1.194);
+\draw[->, thick, orange!85!black] (1.50,0.00) -- (2.100,0.000);
+\draw[->, thick, orange!55] (1.50,0.90) -- (2.034,1.194);
+\draw[->, thick, orange!55] (2.40,-0.90) -- (2.998,-0.623);
+\draw[->, thick, orange!85!black] (2.40,0.00) -- (2.922,0.000);
+\draw[->, thick, orange!55] (2.40,0.90) -- (2.792,0.623);
+\draw[->, thick, orange!55] (3.30,-0.90) -- (3.810,-0.190);
+\draw[->, thick, orange!85!black] (3.30,0.00) -- (3.680,0.000);
+\draw[->, thick, orange!55] (3.30,0.90) -- (3.602,0.190);
+\node[font=\scriptsize, align=left, anchor=west] at (4.9,0.55) {$\mathbf{X} = f\,\partial_x + g\,\partial_y$\\ tangent to $S$: $g(x, 0) = 0$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Comparison with Lee.} Lee proves this (Corollary~8.32) with related fields: on $S$, $\mathbf{X}$ and $\mathbf{Y}$ restrict to fields $\iota$-related to them, and the naturality of the bracket (Proposition~\ref{prop:bracket-naturality}) applied to the inclusion $\iota : S \to M$ does the rest. The coordinate proof above is the one given in class.
+
+\textbf{Transcription note (Lecture 21).} Page~55 of the handwritten notes records the $\partial_y$ component of $[f\partial_x, v\partial_y]$ as $\partial v/\partial x|_{y = 0}$; it is $f\, \partial v/\partial x|_{y = 0}$, which vanishes for the same reason.
+
+% ============================================================================
+% SECTION: LIE GROUPS AND LEFT-INVARIANT VECTOR FIELDS
+% ============================================================================
 
 % ============================================================================
 % SECTION: LIE GROUPS AND LEFT-INVARIANT VECTOR FIELDS
@@ -18444,6 +18628,58 @@ Let $n \ge 2$ and $A \subseteq \mathbb{R}^n = \mathbb{R} \times \mathbb{R}^{n-1}
 For $F : M \to N$ smooth, $q \in N$ is a regular value if $dF_p$ is onto for every $p \in F^{-1}(q)$ (Definition~\ref{def:regular-critical-value}); in particular every $q \notin F(M)$ is a regular value. A value that is not regular is a \emph{singular value} --- Uribe's word in Lecture~19; ``critical value'' in Definition~\ref{def:regular-critical-value} and in Lee. Likewise $p \in M$ is a critical (singular) point if $dF_p$ is not onto (Definition~\ref{def:regular-critical}).
 \end{rembox}
 
+\begin{lembox}[Sard's Theorem Reduces to Euclidean Space]\thmlabel{lem:sard-reduction}
+Let $m, n \ge 0$. Suppose that for every open $U \subseteq \mathbb{R}^m$ and every smooth $G : U \to \mathbb{R}^n$, the set of singular values of $G$ has measure zero in $\mathbb{R}^n$. Then for every smooth map $F : M \to N$ with $\dim M = m$ and $\dim N = n$, the set of singular values of $F$ has measure zero in $N$.
+\leeref{proof of Theorem 6.10}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; the first step of Lee's proof of Theorem~6.10.)} Let $C \subseteq M$ be the set of critical points of $F$, so that its set of singular values is $S = F(C)$. If $n = 0$, every $dF_p$ is onto the zero space $T_{F(p)}N$, so $S = \varnothing$. Let $n \ge 1$. Each $p \in M$ has a chart $(U_p, \varphi_p)$ with $F(U_p)$ inside the domain of a chart $(V_p, \psi_p)$ of $N$ (shrink a chart at $p$ into $F^{-1}(V_p)$, by continuity). By Lemma~\ref{lem:countable-subcover} countably many $U_i = U_{p_i}$ cover $M$, so $S = \bigcup_i F(C \cap U_i)$. In the charts, $\hat F_i = \psi_i \circ F \circ \varphi_i^{-1} : \varphi_i(U_i) \to \mathbb{R}^n$, and since charts are diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), $p$ is a critical point of $F$ exactly when $\varphi_i(p)$ is one of $\hat F_i$; so $\psi_i\big(F(C \cap U_i)\big)$ is the set of singular values of $\hat F_i$. By hypothesis, applied to $\hat F_i$ on the open set $\varphi_i(U_i) \subseteq \mathbb{R}^m$, that set has measure zero in $\mathbb{R}^n$. So $F(C \cap U_i)$, covered by the single chart $(V_i, \psi_i)$, has measure zero in $N$, and so does the countable union $S$ (Proposition~\ref{prop:measure-zero-every-chart}).
+\end{proof}
+
+\begin{lembox}[Where All Derivatives up to Order $k$ Vanish]\thmlabel{lem:sard-flat-points}
+Let $U \subseteq \mathbb{R}^m$ be open, $F : U \to \mathbb{R}^n$ smooth with $n \ge 1$, and $k \ge 1$ an integer with $n(k + 1) > m$. Let $Z \subseteq U$ be a set at each point of which all partial derivatives of $F$ of orders $1, \ldots, k$ vanish. Then $F(Z)$ has measure zero in $\mathbb{R}^n$.
+\leeref{proof of Theorem 6.10}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; the last step of Lee's proof of Theorem~6.10.)} $U$ is the union of countably many closed cubes $E \subseteq U$ (the reduction to a closed cube in the proof of Lemma~\ref{lem:smooth-measure-zero}), so by Lemma~\ref{lem:measure-zero-basic}(2) it suffices to show that $F(Z \cap E)$ has measure zero for a closed cube $E \subseteq U$, of side $R$. Let $A > 0$ bound the absolute values of all partial derivatives of order $k + 1$ of $F$ on $E$ (continuous functions on a compact set; taking $A > 0$ keeps the cubes below nondegenerate). If $x' \in Z \cap E$ and $x \in E$, Taylor's theorem along the segment from $x'$ to $x$, which lies in the convex set $E$, applied to each component $F^i$, has no terms of orders $1, \ldots, k$, so
+\[
+|F^i(x) - F^i(x')| \le \sum_{|\beta| = k + 1} \frac{A}{\beta!}\, |(x - x')^\beta| \le A'\, \|x - x'\|_\infty^{k + 1},
+\]
+with $A'$ depending only on $A$, $k$ and $m$. Divide $E$ into $K^m$ closed cubes $E_1, \ldots, E_{K^m}$ of side $R/K$. If $E_j$ contains a point $x'_j \in Z$, then $F(E_j)$ lies in the closed cube of side $2A'(R/K)^{k + 1}$ centred at $F(x'_j)$. So $F(Z \cap E)$ lies in at most $K^m$ cubes of total volume
+\[
+K^m \big(2A'\big)^n \Big(\frac{R}{K}\Big)^{n(k + 1)} = \big(2A'\big)^n R^{\,n(k + 1)}\, K^{\,m - n(k + 1)} ,
+\]
+which tends to $0$ as $K \to \infty$ because $n(k + 1) > m$. By Lemma~\ref{lem:measure-zero-basic}(3), $F(Z \cap E)$ has measure zero.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, scale=1.0]
+    \foreach \c/\r in {1/1, 2/2, 3/3, 4/4, 2/3} {
+        \fill[red!12] ({0.5*\c},{0.5*\r}) rectangle ({0.5*\c+0.5},{0.5*\r+0.5});
+    }
+    \draw[step=0.5, gray!60] (0,0) grid (3,3);
+    \draw[thick] (0,0) rectangle (3,3);
+    \node[font=\small] at (1.5,3.3) {$E$, side $R$};
+    \draw[|<->|] (0,-0.15) -- node[below, font=\scriptsize] {$R/K$} (0.5,-0.15);
+    \foreach \x/\y in {0.68/0.62, 1.30/1.12, 1.78/1.71, 2.35/2.28, 1.22/1.86} {
+        \fill[red!75!black] (\x,\y) circle (1.6pt);
+    }
+    \node[red!75!black, font=\scriptsize, anchor=west] at (3.1,0.35) {points of $Z$};
+    \draw[->] (3.3,1.5) -- node[above, font=\small] {$F$} (5.0,1.5);
+    \draw[thick, ->] (5.8,-0.2) -- (5.8,3.4) node[above, font=\scriptsize] {$\mathbb{R}^n = \mathbb{R}$};
+    \foreach \y in {0.7, 1.25, 1.33, 1.95, 2.5} {
+        \draw[line width=2.4pt, red!75!black] (5.8,{\y-0.06}) -- (5.8,{\y+0.06});
+    }
+    \node[red!75!black, font=\scriptsize, anchor=west, align=left] at (6.0,1.6) {each of length\\ $\le 2A'(R/K)^{k+1}$};
+\end{tikzpicture}
+\end{center}
+
+Lemma~\ref{lem:sard-flat-points} for $m = 2$, $n = 1$, $k = 2$ ($n(k+1) = 3 > 2$). The square $E$ of side $R$ is cut into $K^2$ squares of side $R/K$ (here $K = 6$). A small square that contains a point of $Z$ (red) is mapped into an interval of length $2A'(R/K)^3$, because the Taylor expansion at that point starts in degree $3$. At most $K^2$ such intervals have total length $\le 2A' R^3 K^{-1} \to 0$: the exponent $n(k+1) = 3$ beats the count $K^m = K^2$.
+%% <<< END ADDED
+
 \begin{thmbox}[Sard's Theorem]\thmlabel{thm:sard}
 Let $F : M \to N$ be a smooth map, and
 \[
@@ -18485,11 +18721,15 @@ the set of singular values. Then $S$ has measure zero in $N$ (Definition~\ref{de
 The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical points are $x = \pm 1$, where $f' = 0$, so the singular values are just $f(\pm 1) = \mp 2$, two points, a set of measure zero. Every other $c$ is a regular value: at each of its preimages the slope is nonzero.
 
 \begin{proof}
-\textit{(Not given in lecture --- ``it's a big theorem. It's a long proof'' --- filled in, following Lee's proof of Theorem~6.10.)} Write $m = \dim M$, $n = \dim N$, and $C \subseteq M$ for the set of critical points, so that $S = F(C)$. We prove, by induction on $m$, the statement for all smooth maps between manifolds with $\dim M = m$.
+\textit{(Not given in lecture --- ``it's a big theorem. It's a long proof'' --- filled in, following Lee's proof of Theorem~6.10.)} By Lemma~\ref{lem:sard-reduction}, it suffices to prove, for every $m \ge 0$, the Euclidean statement
 
-\emph{$m = 0$.} If $n = 0$, every $dF_p$ is onto the zero space, so $S = \varnothing$. If $n \ge 1$, $M$ is countable (a second-countable discrete space), so $S \subseteq F(M)$ is countable; a point of $\mathbb{R}^n$ lies in cubes of arbitrarily small volume, so a countable set has measure zero by Lemma~\ref{lem:measure-zero-basic}(2), in every chart of $N$.
+\textbf{$(\mathrm{S}_m)$:} for every open $U \subseteq \mathbb{R}^m$, every $n \ge 0$ and every smooth $F : U \to \mathbb{R}^n$, the set $F(C)$ has measure zero in $\mathbb{R}^n$, where $C = \{ x \in U : \operatorname{rank} DF(x) < n \}$.
 
-\emph{Reduction to Euclidean space.} Suppose $m \ge 1$ and the theorem holds whenever the domain has dimension $< m$. If $n = 0$ there is nothing to prove, so let $n \ge 1$. Each $p \in M$ has a chart $(U_p, \varphi_p)$ with $F(U_p)$ inside the domain of a chart $(V_p, \psi_p)$ of $N$ (shrink a chart at $p$ into $F^{-1}(V_p)$, by continuity). By Lemma~\ref{lem:countable-subcover} countably many $U_i = U_{p_i}$ cover $M$, so $S = \bigcup_i F(C \cap U_i)$. In the charts, $\hat F_i = \psi_i \circ F \circ \varphi_i^{-1} : \varphi_i(U_i) \to \mathbb{R}^n$, and since charts are diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), $p$ is a critical point of $F$ exactly when $\varphi_i(p)$ is one of $\hat F_i$; so $\psi_i\big(F(C \cap U_i)\big)$ is the set of singular values of $\hat F_i$. If that set has measure zero in $\mathbb{R}^n$, then $F(C \cap U_i)$, covered by the single chart $(V_i, \psi_i)$, has measure zero in $N$, and so does the countable union $S$ (Proposition~\ref{prop:measure-zero-every-chart}). So it suffices to treat $F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open, with $C = \{ x : \operatorname{rank} DF(x) < n \}$, where $DF(x)$ is the $n \times m$ Jacobian
+Here $C$ is the set of critical points of $F$, so $F(C)$ is its set of singular values. We prove $(\mathrm{S}_m)$ by induction on $m$.
+
+\emph{$m = 0$.} $\mathbb{R}^0$ is a single point, so $F(C)$ has at most one point. If $n = 0$, then $C = \varnothing$, as no rank is $< 0$. If $n \ge 1$, a point lies in cubes of arbitrarily small volume, so it has measure zero. (Through Lemma~\ref{lem:sard-reduction} this covers manifolds of dimension $0$; directly, such an $M$ is countable, being second countable and discrete, so $F(M)$ is countable and has measure zero by Lemma~\ref{lem:measure-zero-basic}(2).)
+
+\emph{$m \ge 1$.} Assume $(\mathrm{S}_{m-1})$, let $U \subseteq \mathbb{R}^m$ be open and $F : U \to \mathbb{R}^n$ smooth. If $n = 0$, then $C = \varnothing$; so let $n \ge 1$. Here $DF(x)$ is the $n \times m$ Jacobian
 \[
 DF(x) = \begin{pmatrix}
 \dfrac{\partial F^1}{\partial x^1}(x) & \cdots & \dfrac{\partial F^1}{\partial x^m}(x) \\
@@ -18517,19 +18757,11 @@ so $\det Dh(a) = \partial F^1/\partial x^1(a) \neq 0$. In the coordinates $(u, v
 \[
 DG(u, v) = \begin{pmatrix} 1 & 0 \\ * & \big(\partial G^i/\partial v^j\big) \end{pmatrix},
 \]
-and $(u, v)$ is a critical point of $G$ exactly when the $(n-1) \times (m-1)$ block has rank $< n - 1$. For $c \in \mathbb{R}$ let $G_c(v) = (G^2(c, v), \ldots, G^n(c, v))$, defined on the open set $\{ v : (c, v) \in h(W_a) \} \subseteq \mathbb{R}^{m-1}$; then $(c, v)$ is a critical point of $G$ exactly when $v$ is a critical point of $G_c$. The set $F(C \cap K_a) = G(h(C \cap K_a))$ is compact ($C \cap K_a$ is closed in the compact $K_a$), and its slice at $u = c$ consists of points $(c, G_c(v))$ with $v$ a critical point of $G_c$: it lies in $\{c\} \times$ (the singular values of $G_c$), which has measure zero in $\mathbb{R}^{n-1}$ by the induction hypothesis, $G_c$ having an $(m-1)$-dimensional domain. By Lemma~\ref{lem:fubini-measure-zero}, $F(C \cap K_a)$ has measure zero. The interiors of the $K_a$ cover $C$, so countably many do (Lemma~\ref{lem:countable-subcover}), and $F(C \setminus C_1)$ is a countable union of sets of measure zero.
+and $(u, v)$ is a critical point of $G$ exactly when the $(n-1) \times (m-1)$ block has rank $< n - 1$. For $c \in \mathbb{R}$ let $G_c(v) = (G^2(c, v), \ldots, G^n(c, v))$, defined on the open set $\{ v : (c, v) \in h(W_a) \} \subseteq \mathbb{R}^{m-1}$; then $(c, v)$ is a critical point of $G$ exactly when $v$ is a critical point of $G_c$. The set $F(C \cap K_a) = G(h(C \cap K_a))$ is compact ($C \cap K_a$ is closed in the compact $K_a$), and its slice at $u = c$ consists of points $(c, G_c(v))$ with $v$ a critical point of $G_c$: it lies in $\{c\} \times$ (the singular values of $G_c$), which has measure zero in $\mathbb{R}^{n-1}$ by $(\mathrm{S}_{m-1})$, $G_c$ having an $(m-1)$-dimensional domain. By Lemma~\ref{lem:fubini-measure-zero}, $F(C \cap K_a)$ has measure zero. The interiors of the $K_a$ cover $C$, so countably many do (Lemma~\ref{lem:countable-subcover}), and $F(C \setminus C_1)$ is a countable union of sets of measure zero.
 
-\emph{Step 2: $F(C_k \setminus C_{k+1})$ has measure zero, $k \ge 1$.} Replacing $U$ by $U \setminus C_{k+1}$, we may assume that at each $a \in C_k$ some partial derivative of order $k + 1$ of $F$ is nonzero. So there is a $k$-th order partial derivative $y = \partial^\alpha F^i$, $|\alpha| = k$, with $dy_a \neq 0$. Choose an open $V_a \ni a$ on which $dy \neq 0$. Then $0$ is a regular value of $y|_{V_a}$, and $Y = \{ x \in V_a : y(x) = 0 \}$ is a regular submanifold of $V_a$ of dimension $m - 1$ (Theorem~\ref{thm:rvt-manifolds}). All $k$-th order partials of $F$ vanish on $C_k$, so $C_k \cap V_a \subseteq Y$. At $p \in C_k \cap V_a$, all first partials vanish ($k \ge 1$), so $dF_p = 0$, and $d(F|_Y)_p = dF_p \circ d\iota_p = 0$ is not onto $\mathbb{R}^n$, $n \ge 1$ (chain rule, $\iota : Y \to U$ the inclusion, smooth by Lemma~\ref{lem:maps-into-submanifold}). So $F(C_k \cap V_a)$ lies in the set of singular values of $F|_Y : Y \to \mathbb{R}^n$, which has measure zero by the induction hypothesis. Countably many $V_a$ cover $C_k$, so $F(C_k \setminus C_{k+1})$ has measure zero.
+\emph{Step 2: $F(C_k \setminus C_{k+1})$ has measure zero, $k \ge 1$.} Replacing $U$ by $U \setminus C_{k+1}$, we may assume that at each $a \in C_k$ some partial derivative of order $k + 1$ of $F$ is nonzero. So there is a $k$-th order partial derivative $y = \partial^\alpha F^i$, $|\alpha| = k$, with $dy_a \neq 0$. Choose an open $V_a \ni a$ on which $dy \neq 0$. Then $0$ is a regular value of $y|_{V_a}$, and $Y = \{ x \in V_a : y(x) = 0 \}$ is a regular submanifold of $V_a$ of dimension $m - 1$ (Theorem~\ref{thm:rvt-manifolds}). All $k$-th order partials of $F$ vanish on $C_k$, so $C_k \cap V_a \subseteq Y$. At $p \in C_k \cap V_a$, all first partials vanish ($k \ge 1$), so $dF_p = 0$, and $d(F|_Y)_p = dF_p \circ d\iota_p = 0$ is not onto $\mathbb{R}^n$, $n \ge 1$ (chain rule, $\iota : Y \to U$ the inclusion, smooth by Lemma~\ref{lem:maps-into-submanifold}). So $F(C_k \cap V_a)$ lies in the set of singular values of $F|_Y : Y \to \mathbb{R}^n$, which has measure zero by $(\mathrm{S}_{m-1})$ and Lemma~\ref{lem:sard-reduction}, applied to the $(m-1)$-dimensional manifold $Y$ and $N = \mathbb{R}^n$. Countably many $V_a$ cover $C_k$, so $F(C_k \setminus C_{k+1})$ has measure zero.
 
-\emph{Step 3: $F(C_{k_0})$ has measure zero.} By the reduction in the proof of Lemma~\ref{lem:smooth-measure-zero}, it suffices to show that $F(C_{k_0} \cap E)$ has measure zero for a closed cube $E \subseteq U$, of side $R$. Let $A > 0$ bound the absolute values of all partial derivatives of order $k_0 + 1$ of $F$ on $E$ (continuous functions on a compact set; taking $A > 0$ keeps the cubes below nondegenerate). If $x' \in C_{k_0} \cap E$ and $x \in E$, Taylor's theorem along the segment from $x'$ to $x$, which lies in the convex set $E$, applied to each component $F^i$, has no terms of orders $1, \ldots, k_0$, so
-\[
-|F^i(x) - F^i(x')| \le \sum_{|\beta| = k_0 + 1} \frac{A}{\beta!}\, |(x - x')^\beta| \le A'\, \|x - x'\|_\infty^{k_0 + 1},
-\]
-with $A'$ depending only on $A$, $k_0$ and $m$. Divide $E$ into $K^m$ closed cubes $E_1, \ldots, E_{K^m}$ of side $R/K$. If $E_j$ contains a point $x'_j \in C_{k_0}$, then $F(E_j)$ lies in the closed cube of side $2A'(R/K)^{k_0 + 1}$ centred at $F(x'_j)$. So $F(C_{k_0} \cap E)$ lies in at most $K^m$ cubes of total volume
-\[
-K^m \big(2A'\big)^n \Big(\frac{R}{K}\Big)^{n(k_0 + 1)} = \big(2A'\big)^n R^{\,n(k_0 + 1)}\, K^{\,m - n(k_0 + 1)} ,
-\]
-which tends to $0$ as $K \to \infty$ because $n(k_0 + 1) > m$. By Lemma~\ref{lem:measure-zero-basic}(3), $F(C_{k_0} \cap E)$ has measure zero.
+\emph{Step 3: $F(C_{k_0})$ has measure zero.} At each point of $C_{k_0}$ all partial derivatives of $F$ of orders $1, \ldots, k_0$ vanish, and $n(k_0 + 1) > m$. So Lemma~\ref{lem:sard-flat-points}, with $k = k_0$ and $Z = C_{k_0}$, shows that $F(C_{k_0})$ has measure zero.
 
 Steps 1--3 cover all of $C$, which completes the induction.
 \end{proof}
@@ -18699,6 +18931,128 @@ Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a 
 
 \textbf{Transcription note (Lecture 20).} Page~54 of the handwritten notes writes ``$\pi$ onto'' under $F^{-1}(Z) \to \mathbb{R}^d$; Uribe paused (``that's not at all \ldots\ yeah, it's onto''), and it is onto --- for $p \in Y$ and $z \in Z$, $(z - p, p) \in F^{-1}(Z)$ when $Z \neq \varnothing$ --- but surjectivity plays no role in the argument.
 
+% ============================================================================
+% SECTION: THE WHITNEY EMBEDDING THEOREM (Lecture 21)
+% ============================================================================
+\section{The Whitney Embedding Theorem}\label{sec:whitney}
+
+\roadmark{Stage: analysis}{Every manifold sits inside some Euclidean space; Sard's theorem pushes the dimension down to $2m + 1$.}
+
+\textit{Lecture 21. ``There isn't enough time in the semester to cover everything that's on the syllabus, and the only way to cover more is to skip some proofs \ldots\ I never quite get to degree theory, which is a really cool topic that is officially on the syllabus. So I will be assigning reading.'' Then: ``Today we're going to talk about the Whitney embedding and immersion theorems.''}
+
+\begin{thmbox}[The Whitney Embedding and Immersion Theorems]\thmlabel{thm:whitney}
+Let $M$ be a smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
+\leeref{Theorems 6.15 and 6.18}
+\end{thmbox}
+
+``In other words, any manifold is diffeomorphic to a submanifold of some Euclidean space'' (Theorem~\ref{thm:embedding-image}). The course proves it for $M$ compact. The noncompact case, which first makes the embedding proper, is assigned as reading in Lee (Lemma~6.14 and Theorem~6.15): ``he has a beautiful picture.''
+
+\begin{rembox}[The Hard Version]\label{rem:strong-whitney}
+In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). ``We will not discuss this at all. The proof is very specialized and really long \ldots\ The smaller the codimension, the tighter it is, and you have to wrestle the manifold more to get it in there. It's like packing your clothes in a suitcase.''
+\end{rembox}
+
+\begin{proof}[Proof for $M$ compact]
+\textit{(Lecture~21, ``two steps \ldots\ totally different. The technology, the ideas are totally different.'' Part~I in the lecture's steps with details filled in; in Part~II the injectivity is the lecture's, and the immersion step is a homework problem, recorded here as Uribe sketched it and to be filled in after the assignment.)}
+
+\emph{Part I: an embedding $M \to \mathbb{R}^k$ for some $k$.} ``We're going to use bump functions'' --- ``this idea of partition of unity \ldots\ is kind of behind it.''
+
+\emph{The cover.} For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ --- possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, ``and then I pull it back.'' Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition~\ref{prop:bump-existence}). The \emph{open} balls $B_x$ cover $M$ --- in lecture Uribe first wrote the cover with the $U_x$, and corrected it: ``I want to put a $B$. It's very important.'' $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
+
+\emph{The map.} Each $\chi_i\varphi_i : M \to \mathbb{R}^m$, defined as $\chi_i \varphi_i$ on $U_i$ and $0$ outside, is smooth: it is smooth on $U_i$ and zero on the open set $M \setminus \operatorname{supp}\chi_i$, and these cover $M$ ($\operatorname{supp}\chi_i$ is compact, hence closed). Define
+\[
+F = \big(\chi_1\varphi_1, \ldots, \chi_n\varphi_n, \chi_1, \ldots, \chi_n\big) : M \to \mathbb{R}^{nm + n},
+\]
+``a super big'' Euclidean space: $n$ blocks of $m$ components, then $n$ scalars. ``It's really very, very clever.''
+
+\emph{$F$ is injective.} Suppose $F(p) = F(q)$. There is $i$ with $p \in B_i$, so $\chi_i(p) = 1$. The last $n$ components of $F$ are the $\chi$'s, so $\chi_i(q) = \chi_i(p) = 1$; in particular $\chi_i(q) \neq 0$, so $q \in U_i$, because $\chi_i$ vanishes outside $U_i$. ``I don't know that $q$ is in $B_i$, but I don't care.'' The $i$-th block gives $\chi_i(p)\varphi_i(p) = \chi_i(q)\varphi_i(q)$, that is, $\varphi_i(p) = \varphi_i(q)$; ``the charts are bijective, so $p = q$.'' ``Because we put the $\chi$'s here, we are able to conclude that $p$ and $q$ \ldots\ are in the same coordinate chart.''
+
+\emph{$F$ is an immersion.} Write $F = (F_1, \ldots, F_n, \chi_1, \ldots, \chi_n)$ with $F_j = \chi_j\varphi_j : M \to \mathbb{R}^m$. Let $p \in M$, $v \in T_pM$, and $\gamma$ a curve with $\gamma(0) = p$ and $D_\gamma = v$ (Theorem~\ref{thm:every-vector-velocity}). ``Use curves'': $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(\gamma(t)) = (v_1, \ldots, v_n, \ldots)$, with $v_j = d(F_j)_p(v) \in \mathbb{R}^m$, componentwise. Choose $i$ with $p \in B_i$. Then $\chi_i \equiv 1$ on the open set $B_i \ni p$, so $F_i = \varphi_i$ near $p$ and $v_i = d(\varphi_i)_p(v)$ --- equivalently $d(\chi_i)_p = 0$, since $\chi_i \equiv 1$ in a neighbourhood of $p$. As $\varphi_i$ is a diffeomorphism onto its image (Proposition~\ref{prop:chart-diffeo}), $v \neq 0$ gives $v_i \neq 0$, so $dF_p(v) \neq 0$: $dF_p$ is injective.
+
+\emph{An embedding.} An injective immersion of a compact manifold is an embedding (Corollary~\ref{cor:compact-embedding}). ``End of Part~I.''
+
+\emph{Part II: lower the ambient dimension.} By Part~I, assume $M \subseteq \mathbb{R}^N$ is a regular submanifold (the image of the embedding). Regard $\mathbb{R}^{N-1} \subseteq \mathbb{R}^N$ by $x \mapsto (x, 0)$. To every line $\ell \subseteq \mathbb{R}^N$ through $0$ that is transverse to $\mathbb{R}^{N-1}$, that is, not contained in it, so that $\mathbb{R}^N = \mathbb{R}^{N-1} \oplus \ell$, associate the projection along $\ell$, a linear map $\mathbb{R}^N \to \mathbb{R}^{N-1}$ with kernel $\ell$, and its restriction
+\[
+\pi_\ell : M \longrightarrow \mathbb{R}^{N-1} .
+\]
+(``Do you guys know the difference between complementary and supplementary? I learned that in elementary school, and I'm still trying to figure out what the difference is.'') We want: \emph{if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embedding.} Applying this repeatedly lowers $N$ to $2m + 1$, ``until we're out of parameters.''
+
+\emph{Injectivity.} ``The clever idea'': let $\Delta = \{ (p, p) : p \in M \}$, closed in $M \times M$ since $M$ is Hausdorff, and
+\[
+\sigma : (M \times M) \setminus \Delta \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, q) \longmapsto \operatorname{span}(q - p),
+\]
+the line through $0$ parallel to the secant from $p$ to $q$, ``the vector $\vec{pq}$, as in Calc~3''; $q - p \neq 0$ because $p \neq q$. \textit{(Filled in.)} $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary~\ref{cor:rpn-atlas} is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary~\ref{cor:sard-low-dim}). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension --- ``the things that are not transverse to $\mathbb{R}^{N-1}$ is a projective space of lower dimension'' --- whose image under the smooth inclusion has measure zero by the same corollary. A union of two sets of measure zero has measure zero (Proposition~\ref{prop:measure-zero-every-chart}), so its complement is dense (Lemma~\ref{lem:measure-zero-basic}(4), in charts): ``pick $\ell$ not in the image and transverse to $\mathbb{R}^{N-1}$.'' For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. ``I'm going to lose injectivity precisely when I have a $p$ and a $q$ parallel to the line of projection.'' The condition $2m < N - 1$ is $N > 2m + 1$, ``precisely the bound.''
+
+\emph{Immersion.} \textit{(The homework problem; Uribe's sketch, to be filled in after the assignment.)} ``The same idea \ldots\ instead of pairs $(p, q)$ to create a line, you take tangent vectors. You take $p$ and $q$ infinitesimally close together'': map nonzero tangent vectors to lines,
+\[
+TM \setminus \mathcal{Z} \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, v) \longmapsto \mathbb{R}v ,
+\]
+with $T_pM \subseteq \mathbb{R}^N$ (``in the homework you replace this by $v$ of length one''), and choose $\ell$ also outside its image. ``What remains to be proved is that if you have a line that is not in here, then you get an immersion, and that's going to be precisely because the differential of the projection is just the projection.'' To be filled.
+
+\emph{Conclusion.} With $\ell$ chosen outside both images, $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an injective immersion of a compact manifold, hence an embedding (Corollary~\ref{cor:compact-embedding}). Repeat while $N > 2m + 1$. The immersion into $\mathbb{R}^{2m}$ is part of the same homework, and is likewise to be filled.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+\draw[->, gray!60] (-2.6,0) -- (2.7,0) node[right, font=\scriptsize, text=black] {$M$};
+\draw[->, gray!60] (-2.4,-0.1) -- (-2.4,1.6);
+\draw[teal!60!black, thick] plot[smooth] coordinates {(-2.200,0.000) (-2.180,0.000) (-2.160,0.000) (-2.140,0.000) (-2.120,0.000) (-2.100,0.000) (-2.080,0.000) (-2.060,0.000) (-2.040,0.000) (-2.020,0.000) (-2.000,0.000) (-1.980,0.000) (-1.960,0.000) (-1.940,0.000) (-1.920,0.000) (-1.900,0.000) (-1.880,0.000) (-1.860,0.000) (-1.840,0.000) (-1.820,0.000) (-1.800,0.000) (-1.780,0.000) (-1.760,0.000) (-1.740,0.000) (-1.720,0.000) (-1.700,0.000) (-1.680,0.000) (-1.660,0.000) (-1.640,0.000) (-1.620,0.000) (-1.600,0.000) (-1.580,0.000) (-1.560,0.000) (-1.540,0.000) (-1.520,0.000) (-1.500,0.000) (-1.480,0.000) (-1.460,0.001) (-1.440,0.008) (-1.420,0.033) (-1.400,0.076) (-1.380,0.131) (-1.360,0.190) (-1.340,0.250) (-1.320,0.308) (-1.300,0.364) (-1.280,0.416) (-1.260,0.466) (-1.240,0.514) (-1.220,0.560) (-1.200,0.605) (-1.180,0.649) (-1.160,0.693) (-1.140,0.737) (-1.120,0.781) (-1.100,0.826) (-1.080,0.872) (-1.060,0.918) (-1.040,0.964) (-1.020,1.010) (-1.000,1.054) (-0.980,1.095) (-0.960,1.131) (-0.940,1.160) (-0.920,1.181) (-0.900,1.193) (-0.880,1.199) (-0.860,1.200) (-0.840,1.200) (-0.820,1.200) (-0.800,1.200) (-0.780,1.200) (-0.760,1.200) (-0.740,1.200) (-0.720,1.200) (-0.700,1.200) (-0.680,1.200) (-0.660,1.200) (-0.640,1.200) (-0.620,1.200) (-0.600,1.200) (-0.580,1.200) (-0.560,1.200) (-0.540,1.200) (-0.520,1.200) (-0.500,1.200) (-0.480,1.200) (-0.460,1.200) (-0.440,1.200) (-0.420,1.200) (-0.400,1.200) (-0.380,1.200) (-0.360,1.200) (-0.340,1.200) (-0.320,1.200) (-0.300,1.200) (-0.280,1.200) (-0.260,1.200) (-0.240,1.200) (-0.220,1.200) (-0.200,1.200) (-0.180,1.200) (-0.160,1.200) (-0.140,1.200) (-0.120,1.200) (-0.100,1.200) (-0.080,1.200) (-0.060,1.200) (-0.040,1.200) (-0.020,1.200) (0.000,1.200) (0.020,1.200) (0.040,1.200) (0.060,1.200) (0.080,1.200) (0.100,1.200) (0.120,1.200) (0.140,1.200) (0.160,1.200) (0.180,1.200) (0.200,1.200) (0.220,1.200) (0.240,1.200) (0.260,1.200) (0.280,1.200) (0.300,1.200) (0.320,1.200) (0.340,1.200) (0.360,1.200) (0.380,1.200) (0.400,1.200) (0.420,1.200) (0.440,1.200) (0.460,1.200) (0.480,1.200) (0.500,1.200) (0.520,1.200) (0.540,1.200) (0.560,1.200) (0.580,1.200) (0.600,1.200) (0.620,1.200) (0.640,1.200) (0.660,1.200) (0.680,1.200) (0.700,1.200) (0.720,1.200) (0.740,1.200) (0.760,1.200) (0.780,1.200) (0.800,1.200) (0.820,1.200) (0.840,1.200) (0.860,1.200) (0.880,1.199) (0.900,1.193) (0.920,1.181) (0.940,1.160) (0.960,1.131) (0.980,1.095) (1.000,1.054) (1.020,1.010) (1.040,0.964) (1.060,0.918) (1.080,0.872) (1.100,0.826) (1.120,0.781) (1.140,0.737) (1.160,0.693) (1.180,0.649) (1.200,0.605) (1.220,0.560) (1.240,0.514) (1.260,0.466) (1.280,0.416) (1.300,0.364) (1.320,0.308) (1.340,0.250) (1.360,0.190) (1.380,0.131) (1.400,0.076) (1.420,0.033) (1.440,0.008) (1.460,0.001) (1.480,0.000) (1.500,0.000) (1.520,0.000) (1.540,0.000) (1.560,0.000) (1.580,0.000) (1.600,0.000) (1.620,0.000) (1.640,0.000) (1.660,0.000) (1.680,0.000) (1.700,0.000) (1.720,0.000) (1.740,0.000) (1.760,0.000) (1.780,0.000) (1.800,0.000) (1.820,0.000) (1.840,0.000) (1.860,0.000) (1.880,0.000) (1.900,0.000) (1.920,0.000) (1.940,0.000) (1.960,0.000) (1.980,0.000) (2.000,0.000) (2.020,0.000) (2.040,0.000) (2.060,0.000) (2.080,0.000) (2.100,0.000) (2.120,0.000) (2.140,0.000) (2.160,0.000) (2.180,0.000) (2.200,0.000)};
+\node[teal!60!black, font=\scriptsize] at (1.6,1.05) {$\chi_i$};
+\draw[gray!70] (-2.47,1.2) -- (-2.33,1.2) node[left, xshift=-4pt, font=\scriptsize, text=black] {$1$};
+\draw[orange!85!black, very thick] (-0.8,-0.18) -- (0.8,-0.18); \node[orange!85!black, font=\scriptsize] at (0,-0.42) {$\overline{B}_i$};
+\draw[violet!75!black, thick, |-|] (-2.0,-0.65) -- (2.0,-0.65); \node[violet!75!black, font=\scriptsize] at (0,-0.9) {$U_i$};
+\draw[gray!55, dashed] (-1.5,0) -- (-1.5,-0.55); \draw[gray!55, dashed] (1.5,0) -- (1.5,-0.55);
+
+\end{tikzpicture}
+\end{center}
+
+Uribe's cartoon for injectivity: $\chi_i \equiv 1$ on $\overline{B}_i$ (``it could be one a little bit outside too''), and zero outside $U_i$. So $\chi_i(q) = 1$ forces $q \in U_i$, where the chart $\varphi_i$ separates points.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+\draw[->, gray!60] (-1.2,0) -- (3.4,0) node[right, font=\scriptsize, text=black] {$\mathbb{R}^{N-1}$};
+\draw[->, gray!60] (0,-0.6) -- (0,3.0);
+\draw[orange!85!black, thick] (-0.3,-0.6) -- (1.4,2.8) node[above, font=\scriptsize] {$\ell$};
+\draw[violet!75!black, thick] plot[smooth cycle] coordinates {(2.500,1.600) (2.497,1.647) (2.488,1.694) (2.472,1.740) (2.451,1.785) (2.424,1.830) (2.391,1.872) (2.353,1.913) (2.309,1.953) (2.260,1.990) (2.207,2.024) (2.149,2.056) (2.088,2.085) (2.022,2.112) (1.954,2.135) (1.883,2.154) (1.809,2.171) (1.733,2.183) (1.656,2.193) (1.578,2.198) (1.500,2.200) (1.422,2.198) (1.344,2.193) (1.267,2.183) (1.191,2.171) (1.117,2.154) (1.046,2.135) (0.978,2.112) (0.912,2.085) (0.851,2.056) (0.793,2.024) (0.740,1.990) (0.691,1.953) (0.647,1.913) (0.609,1.872) (0.576,1.830) (0.549,1.785) (0.528,1.740) (0.512,1.694) (0.503,1.647) (0.500,1.600) (0.503,1.553) (0.512,1.506) (0.528,1.460) (0.549,1.415) (0.576,1.370) (0.609,1.328) (0.647,1.287) (0.691,1.247) (0.740,1.210) (0.793,1.176) (0.851,1.144) (0.912,1.115) (0.978,1.088) (1.046,1.065) (1.117,1.046) (1.191,1.029) (1.267,1.017) (1.344,1.007) (1.422,1.002) (1.500,1.000) (1.578,1.002) (1.656,1.007) (1.733,1.017) (1.809,1.029) (1.883,1.046) (1.954,1.065) (2.022,1.088) (2.088,1.115) (2.149,1.144) (2.207,1.176) (2.260,1.210) (2.309,1.247) (2.353,1.287) (2.391,1.328) (2.424,1.370) (2.451,1.415) (2.472,1.460) (2.488,1.506) (2.497,1.553) (2.500,1.600)};
+\node[violet!75!black, font=\scriptsize] at (2.650,1.950) {$M$};
+\draw[gray!60, dashed] (1.787,2.175) -- (0.700,0);
+\draw[->, thick, red!70!black] (1.213,1.025) -- (1.787,2.175);
+\fill (1.213,1.025) circle (1.5pt) node[left, font=\scriptsize] {$p$};
+\fill (1.787,2.175) circle (1.5pt) node[right, font=\scriptsize] {$q$};
+\fill[red!70!black] (0.700,0) circle (1.6pt) node[below right, font=\scriptsize] {$\pi_\ell(p) = \pi_\ell(q)$};
+\draw[gray!60, dashed] (2.455,1.423) -- (1.744,0);
+\fill (2.455,1.423) circle (1.3pt); \fill[gray!70!black] (1.744,0) circle (1.3pt);
+\node[font=\scriptsize, align=left, anchor=west] at (3.3,1.6) {$q - p \parallel \ell$:\\ $\pi_\ell|_M$ not injective};
+\end{tikzpicture}
+\end{center}
+
+Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide along lines parallel to $\ell$ onto $\mathbb{R}^{N-1}$. Two points $p \neq q$ collide exactly when the secant $q - p$ is parallel to $\ell$; choosing $\ell$ outside the image of $\sigma$ avoids every such pair. ``That's a beautiful proof of the non-optimal Whitney embedding theorem.''
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, scale=1.1]
+    \fill[gray!8] (-2.9,-2.35) -- (2.1,-2.35) -- (2.9,-0.85) -- (-2.1,-0.85) -- cycle;
+    \draw[gray!60] (-2.9,-2.35) -- (2.1,-2.35) -- (2.9,-0.85) -- (-2.1,-0.85) -- cycle;
+    \node[font=\scriptsize, gray!50!black] at (2.25,-2.15) {$\mathbb{R}^2$};
+    \draw[thick, orange!85!black] (0.000,-1.600) -- (0.119,-1.583) -- (0.238,-1.565) -- (0.356,-1.548) -- (0.473,-1.531) -- (0.588,-1.514) -- (0.701,-1.497) -- (0.812,-1.480) -- (0.920,-1.463) -- (1.025,-1.447) -- (1.126,-1.430) -- (1.223,-1.414) -- (1.316,-1.398) -- (1.405,-1.382) -- (1.488,-1.366) -- (1.567,-1.350) -- (1.640,-1.335) -- (1.708,-1.320) -- (1.769,-1.305) -- (1.825,-1.291) -- (1.874,-1.277) -- (1.917,-1.263) -- (1.954,-1.249) -- (1.984,-1.236) -- (2.008,-1.223) -- (2.024,-1.211) -- (2.034,-1.199) -- (2.037,-1.187) -- (2.034,-1.176) -- (2.024,-1.165) -- (2.007,-1.155) -- (1.984,-1.145) -- (1.954,-1.136) -- (1.919,-1.127) -- (1.877,-1.118) -- (1.829,-1.110) -- (1.776,-1.102) -- (1.717,-1.095) -- (1.653,-1.089) -- (1.584,-1.083) -- (1.511,-1.077) -- (1.433,-1.072) -- (1.352,-1.067) -- (1.267,-1.063) -- (1.178,-1.060) -- (1.087,-1.057) -- (0.993,-1.054) -- (0.897,-1.052) -- (0.799,-1.051) -- (0.700,-1.050) -- (0.600,-1.050) -- (0.499,-1.050) -- (0.398,-1.051) -- (0.298,-1.052) -- (0.197,-1.054) -- (0.098,-1.057) -- (0.000,-1.060) -- (-0.096,-1.063) -- (-0.190,-1.067) -- (-0.281,-1.072) -- (-0.370,-1.077) -- (-0.455,-1.083) -- (-0.537,-1.089) -- (-0.616,-1.095) -- (-0.690,-1.102) -- (-0.760,-1.110) -- (-0.825,-1.118) -- (-0.886,-1.127) -- (-0.941,-1.136) -- (-0.991,-1.145) -- (-1.036,-1.155) -- (-1.076,-1.165) -- (-1.109,-1.176) -- (-1.137,-1.187) -- (-1.159,-1.199) -- (-1.176,-1.211) -- (-1.186,-1.223) -- (-1.191,-1.236) -- (-1.189,-1.249) -- (-1.182,-1.263) -- (-1.169,-1.277) -- (-1.150,-1.291) -- (-1.126,-1.305) -- (-1.097,-1.320) -- (-1.062,-1.335) -- (-1.022,-1.350) -- (-0.977,-1.366) -- (-0.928,-1.382) -- (-0.874,-1.398) -- (-0.817,-1.414) -- (-0.755,-1.430) -- (-0.690,-1.447) -- (-0.622,-1.463) -- (-0.550,-1.480) -- (-0.477,-1.497) -- (-0.401,-1.514) -- (-0.323,-1.531) -- (-0.243,-1.548) -- (-0.163,-1.565) -- (-0.082,-1.583) -- (-0.000,-1.600) -- (0.082,-1.617) -- (0.163,-1.635) -- (0.243,-1.652) -- (0.323,-1.669) -- (0.401,-1.686) -- (0.477,-1.703) -- (0.550,-1.720) -- (0.622,-1.737) -- (0.690,-1.753) -- (0.755,-1.770) -- (0.817,-1.786) -- (0.874,-1.802) -- (0.928,-1.818) -- (0.977,-1.834) -- (1.022,-1.850) -- (1.062,-1.865) -- (1.097,-1.880) -- (1.126,-1.895) -- (1.150,-1.909) -- (1.169,-1.923) -- (1.182,-1.937) -- (1.189,-1.951) -- (1.191,-1.964) -- (1.186,-1.977) -- (1.176,-1.989) -- (1.159,-2.001) -- (1.137,-2.013) -- (1.109,-2.024) -- (1.076,-2.035) -- (1.036,-2.045) -- (0.991,-2.055) -- (0.941,-2.064) -- (0.886,-2.073) -- (0.825,-2.082) -- (0.760,-2.090) -- (0.690,-2.098) -- (0.616,-2.105) -- (0.537,-2.111) -- (0.455,-2.117) -- (0.370,-2.123) -- (0.281,-2.128) -- (0.190,-2.133) -- (0.096,-2.137) -- (-0.000,-2.140) -- (-0.098,-2.143) -- (-0.197,-2.146) -- (-0.298,-2.148) -- (-0.398,-2.149) -- (-0.499,-2.150) -- (-0.600,-2.150) -- (-0.700,-2.150) -- (-0.799,-2.149) -- (-0.897,-2.148) -- (-0.993,-2.146) -- (-1.087,-2.143) -- (-1.178,-2.140) -- (-1.267,-2.137) -- (-1.352,-2.133) -- (-1.433,-2.128) -- (-1.511,-2.123) -- (-1.584,-2.117) -- (-1.653,-2.111) -- (-1.717,-2.105) -- (-1.776,-2.098) -- (-1.829,-2.090) -- (-1.877,-2.082) -- (-1.919,-2.073) -- (-1.954,-2.064) -- (-1.984,-2.055) -- (-2.007,-2.045) -- (-2.024,-2.035) -- (-2.034,-2.024) -- (-2.037,-2.013) -- (-2.034,-2.001) -- (-2.024,-1.989) -- (-2.008,-1.977) -- (-1.984,-1.964) -- (-1.954,-1.951) -- (-1.917,-1.937) -- (-1.874,-1.923) -- (-1.825,-1.909) -- (-1.769,-1.895) -- (-1.708,-1.880) -- (-1.640,-1.865) -- (-1.567,-1.850) -- (-1.488,-1.834) -- (-1.405,-1.818) -- (-1.316,-1.802) -- (-1.223,-1.786) -- (-1.126,-1.770) -- (-1.025,-1.753) -- (-0.920,-1.737) -- (-0.812,-1.720) -- (-0.701,-1.703) -- (-0.588,-1.686) -- (-0.473,-1.669) -- (-0.356,-1.652) -- (-0.238,-1.635) -- (-0.119,-1.617) -- (-0.000,-1.600);
+    \foreach \t in {40,90,140,220,270,320} {
+        \draw[gray!45, densely dotted] ({1.6*sin(2*\t)+0.6*sin(\t)},{0.55*sin(\t)+0.9+0.6*cos(\t)}) -- ({1.6*sin(2*\t)+0.6*sin(\t)},{0.55*sin(\t)-1.6});
+    }
+    \draw[very thick, blue!70!black] (0.000,1.500) -- (0.119,1.517) -- (0.238,1.533) -- (0.356,1.549) -- (0.473,1.564) -- (0.588,1.579) -- (0.701,1.592) -- (0.812,1.606) -- (0.920,1.618) -- (1.025,1.630) -- (1.126,1.641) -- (1.223,1.651) -- (1.316,1.660) -- (1.405,1.669) -- (1.488,1.677) -- (1.567,1.684) -- (1.640,1.691) -- (1.708,1.696) -- (1.769,1.701) -- (1.825,1.705) -- (1.874,1.709) -- (1.917,1.711) -- (1.954,1.713) -- (1.984,1.714) -- (2.008,1.714) -- (2.024,1.713) -- (2.034,1.712) -- (2.037,1.709) -- (2.034,1.706) -- (2.024,1.702) -- (2.007,1.698) -- (1.984,1.692) -- (1.954,1.686) -- (1.919,1.679) -- (1.877,1.671) -- (1.829,1.662) -- (1.776,1.653) -- (1.717,1.643) -- (1.653,1.632) -- (1.584,1.621) -- (1.511,1.608) -- (1.433,1.596) -- (1.352,1.582) -- (1.267,1.568) -- (1.178,1.553) -- (1.087,1.537) -- (0.993,1.521) -- (0.897,1.504) -- (0.799,1.487) -- (0.700,1.469) -- (0.600,1.450) -- (0.499,1.431) -- (0.398,1.411) -- (0.298,1.391) -- (0.197,1.370) -- (0.098,1.349) -- (0.000,1.328) -- (-0.096,1.306) -- (-0.190,1.284) -- (-0.281,1.261) -- (-0.370,1.238) -- (-0.455,1.214) -- (-0.537,1.191) -- (-0.616,1.166) -- (-0.690,1.142) -- (-0.760,1.118) -- (-0.825,1.093) -- (-0.886,1.068) -- (-0.941,1.043) -- (-0.991,1.018) -- (-1.036,0.992) -- (-1.076,0.967) -- (-1.109,0.941) -- (-1.137,0.916) -- (-1.159,0.890) -- (-1.176,0.865) -- (-1.186,0.839) -- (-1.191,0.814) -- (-1.189,0.788) -- (-1.182,0.763) -- (-1.169,0.738) -- (-1.150,0.713) -- (-1.126,0.688) -- (-1.097,0.664) -- (-1.062,0.639) -- (-1.022,0.615) -- (-0.977,0.591) -- (-0.928,0.568) -- (-0.874,0.545) -- (-0.817,0.522) -- (-0.755,0.499) -- (-0.690,0.477) -- (-0.622,0.456) -- (-0.550,0.434) -- (-0.477,0.414) -- (-0.401,0.393) -- (-0.323,0.374) -- (-0.243,0.354) -- (-0.163,0.336) -- (-0.082,0.318) -- (-0.000,0.300) -- (0.082,0.283) -- (0.163,0.267) -- (0.243,0.251) -- (0.323,0.236) -- (0.401,0.221) -- (0.477,0.208) -- (0.550,0.194) -- (0.622,0.182) -- (0.690,0.170) -- (0.755,0.159) -- (0.817,0.149) -- (0.874,0.140) -- (0.928,0.131) -- (0.977,0.123) -- (1.022,0.116) -- (1.062,0.109) -- (1.097,0.104) -- (1.126,0.099) -- (1.150,0.095) -- (1.169,0.091) -- (1.182,0.089) -- (1.189,0.087) -- (1.191,0.086) -- (1.186,0.086) -- (1.176,0.087) -- (1.159,0.088) -- (1.137,0.091) -- (1.109,0.094) -- (1.076,0.098) -- (1.036,0.102) -- (0.991,0.108) -- (0.941,0.114) -- (0.886,0.121) -- (0.825,0.129) -- (0.760,0.138) -- (0.690,0.147) -- (0.616,0.157) -- (0.537,0.168) -- (0.455,0.179) -- (0.370,0.192) -- (0.281,0.204) -- (0.190,0.218) -- (0.096,0.232) -- (-0.000,0.247) -- (-0.098,0.263) -- (-0.197,0.279) -- (-0.298,0.296) -- (-0.398,0.313) -- (-0.499,0.331) -- (-0.600,0.350) -- (-0.700,0.369) -- (-0.799,0.389) -- (-0.897,0.409) -- (-0.993,0.430) -- (-1.087,0.451) -- (-1.178,0.472) -- (-1.267,0.494) -- (-1.352,0.516) -- (-1.433,0.539) -- (-1.511,0.562) -- (-1.584,0.586) -- (-1.653,0.609) -- (-1.717,0.634) -- (-1.776,0.658) -- (-1.829,0.682) -- (-1.877,0.707) -- (-1.919,0.732) -- (-1.954,0.757) -- (-1.984,0.782) -- (-2.007,0.808) -- (-2.024,0.833) -- (-2.034,0.859) -- (-2.037,0.884) -- (-2.034,0.910) -- (-2.024,0.935) -- (-2.008,0.961) -- (-1.984,0.986) -- (-1.954,1.012) -- (-1.917,1.037) -- (-1.874,1.062) -- (-1.825,1.087) -- (-1.769,1.112) -- (-1.708,1.136) -- (-1.640,1.161) -- (-1.567,1.185) -- (-1.488,1.209) -- (-1.405,1.232) -- (-1.316,1.255) -- (-1.223,1.278) -- (-1.126,1.301) -- (-1.025,1.323) -- (-0.920,1.344) -- (-0.812,1.366) -- (-0.701,1.386) -- (-0.588,1.407) -- (-0.473,1.426) -- (-0.356,1.446) -- (-0.238,1.464) -- (-0.119,1.482) -- (-0.000,1.500);
+    \node[blue!70!black, font=\small] at (-2.3,1.7) {$M \subseteq \mathbb{R}^3$};
+    \draw[red!75!black, thick] (0,0.3) -- (0,1.5);
+    \draw[dashed, red!75!black] (0,0.3) -- (0,-1.6);
+    \fill[red!75!black] (0,1.5) circle (1.8pt) node[left, font=\scriptsize] {$q$};
+    \fill[red!75!black] (0,0.3) circle (1.8pt); \node[red!75!black, font=\scriptsize] at (-0.35,0.0) {$p$};
+    \fill[red!75!black] (0,-1.6) circle (1.8pt) node[below right, font=\scriptsize] {$\pi_\ell(p) = \pi_\ell(q)$};
+    \draw[->, thick, violet!80!black] (3.3,1.4) -- (3.3,-0.1) node[midway, right, font=\scriptsize] {$\ell$};
+    \node[orange!85!black, font=\scriptsize, anchor=west] at (2.6,-1.3) {shadow $\pi_\ell(M)$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Why the bound is $2m + 1$. For a curve ($m = 1$) in $\mathbb{R}^3$ ($N = 3$), $(M \times M) \setminus \Delta$ has dimension $2m = 2 = N - 1$, so the secant directions $\sigma(p, q)$ can fill an open set of $\mathbb{RP}^2$ and Corollary~\ref{cor:sard-low-dim} does not apply. Indeed, projecting a curve in space onto a plane along $\ell$ typically produces crossings: here $q - p$ is parallel to $\ell$, and $\pi_\ell(p) = \pi_\ell(q)$. The shadow is still an immersed curve, matching the immersion into $\mathbb{R}^{2m}$ of Theorem~\ref{thm:whitney}, but not an embedded one.
+%% <<< END ADDED
+
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -18785,6 +19139,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:measure-zero}\ Sets of measure zero & Chapter 6, \emph{Sets of Measure Zero} (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) \\
 \ref{sec:sard}\ Sard's theorem & Chapter 6, \emph{Sard's Theorem} (Theorem 6.10, Corollary 6.11) \\
 \ref{sec:parametric-transversality}\ Parametric transversality & Chapter 6, \emph{The Transversality Homotopy Theorem} (Theorem 6.35) \\
+\ref{sec:whitney}\ The Whitney embedding theorem & Chapter 6, \emph{The Whitney Embedding Theorem} (Lemma 6.13, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20--2.22 (bump functions) \\
 \bottomrule
 \end{longtable}
 
@@ -18816,7 +19171,7 @@ Example 1.31 & Ex.~\ref{ex:circle-four} \\
 Example 1.32 & Thm.~\ref{thm:regular-value}, Prop.~\ref{prop:level-set-smooth} \\
 Example 1.33 & Cor.~\ref{cor:rpn-atlas}, Prop.~\ref{prop:rpn-topologies} \\
 Example 1.34 & Prop.~\ref{prop:product-manifold} \\
-Lemma 1.35 & Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:ctb-topology} \\
+Lemma 1.35 & Lem.~\ref{lem:chart-lemma}, Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:ctb-topology} \\
 Example 1.36 & Def.~\ref{def:grassmannian}, Cor.~\ref{cor:grassmannian} \\
 Problem 1-1 & Ex.~\ref{ex:two-origins}, Prop.~\ref{prop:conditions-independent}, Ex.~\ref{ex:two-origins-quotient} \\
 Problem 1-2 & Ex.~\ref{ex:rdisc-times-r}, Prop.~\ref{prop:conditions-independent} \\
@@ -18868,6 +19223,8 @@ Lemma 6.6 & Def.~\ref{def:measure-zero-manifold}, Prop.~\ref{prop:measure-zero-e
 Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
 Theorem 6.10 & Thm.~\ref{thm:sard} \\
 Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
+Theorem 6.15 & Thm.~\ref{thm:whitney} \\
+Theorem 6.18 & Thm.~\ref{thm:whitney} \\
 Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Cor.~\ref{cor:transverse-special-cases}, Thm.~\ref{thm:transverse-intersection-manifold} \\
 Theorem 6.35 & Thm.~\ref{thm:parametric-transversality}, Cor.~\ref{cor:parametric-sard} \\
 Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
@@ -18889,6 +19246,7 @@ Proposition 8.26 & Prop.~\ref{prop:bracket-coords} \\
 Proposition 8.28 & Cor.~\ref{cor:vf-lie-algebra} \\
 Proposition 8.30 & Prop.~\ref{prop:bracket-naturality} \\
 Corollary 8.31 & Cor.~\ref{cor:diffeo-bracket} \\
+Corollary 8.32 & Prop.~\ref{prop:bracket-tangent} \\
 Proposition 8.33 & Cor.~\ref{cor:lie-subalgebra} \\
 Theorem 8.37 & Def.~\ref{def:left-invariant-extension}, Lem.~\ref{lem:left-invariant-extension}, Prop.~\ref{prop:left-invariant-extension-smooth}, Thm.~\ref{thm:lie-algebra-TeG} \\
 Proposition 8.41 & Thm.~\ref{thm:linear-group-bracket} \\

@@ -97,7 +97,7 @@ tags: [measure-theory, math551]
 
 ^cor-26-4
 > [!remark]- Connections
-> - Smooth analogue: the image of a smooth map from a lower-dimensional manifold has measure zero, [[§59 Sard's Theorem#^cor-59-2|591 §59.2]].
+> - Smooth analogue: the image of a smooth map from a lower-dimensional manifold has measure zero, [[§59 Sard's Theorem#^cor-59-4|591 §59.4]].
 
 > [!proof]+ Proof
 > First assume $m(E) < \infty$. For $\delta > 0$ and $k \in \mathbb{Z}$, define $E_k = \{x \in E : k\delta \leq f(x) < (k+1)\delta\}$. Each $E_k$ is [[§15 Measurable Functions#^prop-15-2|measurable]], and $E = \bigsqcup_{k=-\infty}^{\infty} E_k$ is a disjoint union. Then:

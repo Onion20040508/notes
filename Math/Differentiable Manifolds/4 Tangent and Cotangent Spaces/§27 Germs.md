@@ -93,7 +93,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^prop-27-2
 
 > [!proof]+ Proof
-> *(Lecture 8 sketched the operations — “taking representatives \ldots and shrinking to a common domain” — and skipped the checks as “tedious”; they are filled in here.)* Let $(f,U)$ and $(g,V)$ be representatives of $[f]$ and $[g]$. Four things must be checked: the operations produce germs, they do not depend on the choices, they satisfy the algebra axioms, and evaluation is a well-defined homomorphism.
+> *(Lecture 8 sketched the operations — “taking representatives … and shrinking to a common domain” — and skipped the checks as “tedious”; they are filled in here.)* Let $(f,U)$ and $(g,V)$ be representatives of $[f]$ and $[g]$. Four things must be checked: the operations produce germs, they do not depend on the choices, they satisfy the algebra axioms, and evaluation is a well-defined homomorphism.
 >
 > *Existence of $W$ and smoothness.* $U \cap V$ is open and contains $p$, so $W = U \cap V$ will do; $f|_W + g|_W$ and $f|_W\, g|_W$ are smooth on $W$, so they define germs. Likewise $\lambda f$ is smooth on $U$.
 >

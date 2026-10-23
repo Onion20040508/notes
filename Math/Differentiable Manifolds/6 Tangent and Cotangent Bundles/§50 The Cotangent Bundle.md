@@ -99,32 +99,13 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^def-50-5
 
-> [!theorem] Proposition §50.1: The Topology of $T^*M$
-> There is a unique topology on $T^{\ast}M$ for which every $T^{\ast}U$ is open and every chart $\hat\varphi : T^{\ast}U \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $T^{\ast}M$ is a topological manifold of dimension $2m$.
->
-> *Lee: Lemma 1.35 and Proposition 11.9*
-
-^prop-50-1
-
-> [!proof]+ Proof
-> *(Not from lecture — “completely analogous”; filled in.)* The proof of [[§49 The Tangent Bundle#^prop-49-1|Proposition §49.1]] uses only two facts about the charts $\tilde\varphi$: each is a bijection of $TU$ onto the open set $\varphi(U) \times \mathbb{R}^m$, and each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is a homeomorphism between the open sets $\varphi(U \cap V) \times \mathbb{R}^m$ and $\psi(U \cap V) \times \mathbb{R}^m$. Both hold for the charts $\hat\varphi$: the first by [[§50 The Cotangent Bundle#^def-50-5|Definition §50.5]], and the second by the computation in the proof of [[§50 The Cotangent Bundle#^prop-50-2|Proposition §50.2]] below, which uses only the definitions of the charts, not any topology on $T^{\ast}M$. With $\hat\varphi$, $\hat\psi$ and $T^{\ast}U$ in place of $\tilde\varphi$, $\tilde\psi$ and $TU$, the proof then goes through word for word:
-> - declare $W \subseteq T^{\ast}M$ open if $\hat\varphi(W \cap T^{\ast}U)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$; this is a topology, since each $\hat\varphi$ is a bijection;
-> - each $T^{\ast}U$ is open, because $\hat\psi(T^{\ast}U \cap T^{\ast}V) = \psi(U \cap V) \times \mathbb{R}^m$ is open, and each $\hat\varphi$ is a homeomorphism onto its open image, because the transition maps are homeomorphisms;
-> - any topology with these two properties has the same open sets, since $W = \bigcup_U (W \cap T^{\ast}U)$;
-> - $T^{\ast}M$ is locally Euclidean of dimension $2m$, through the charts;
-> - it is Hausdorff: two covectors at the same point lie in one $T^{\ast}U$, homeomorphic to a subset of $\mathbb{R}^{2m}$, and covectors at distinct points $p \neq q$ lie in the disjoint open sets $T^{\ast}U$, $T^{\ast}V$ for charts with disjoint domains $U \ni p$, $V \ni q$;
-> - it is second countable: countably many chart domains $U_B$ cover $M$, so the countably many open sets $T^{\ast}U_B$, each with a countable basis, cover $T^{\ast}M$.
-
-^pf-50-1
-
-*Uses:* [[§49 The Tangent Bundle#^prop-49-1|§49.1]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]
-
-> [!theorem] Proposition §50.2: The Smooth Atlas of $T^*M$
-> The charts $(T^{\ast}U, \hat\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $T^{\ast}M$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
+> [!theorem] Proposition §50.1: The Transition Maps of $T^{\ast}M$
+> Let $(U, \varphi = (x^i))$ and $(V, \psi = (y^j))$ be smooth charts of $M$. Then $\hat\varphi(T^{\ast}U \cap T^{\ast}V) = \varphi(U \cap V) \times \mathbb{R}^m$, an open subset of $\mathbb{R}^{2m}$. For $p \in U \cap V$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
 >
 > $$
 > dx^i|_p = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, dy^j|_p, \qquad \eta_j = \sum_i \frac{\partial x^i}{\partial y^j}(p)\, \xi_i .
 > $$
+>
 > In matrix form, with row index $j$ and column index $i$,
 >
 > $$
@@ -139,19 +120,20 @@ The definitions and results of this section run parallel to those for the tangen
 > $$
 >
 > the matrix being the transpose of $\big[\partial x^i/\partial y^j(p)\big]$ (row $i$, column $j$).
->
 > So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components: with $\tau = \psi \circ \varphi^{-1}$, the transition map is
 >
 > $$
-> \hat\psi \circ \hat\varphi^{-1}(r, \xi) = \Big( \tau(r),\ \big(\tau'(r)^{-1}\big)^{\mathsf T} \xi \Big) .
+> \hat\psi \circ \hat\varphi^{-1}(r, \xi) = \Big( \tau(r),\ \big(\tau'(r)^{-1}\big)^{\mathsf T} \xi \Big) ,
 > $$
+>
+> a diffeomorphism of $\varphi(U \cap V) \times \mathbb{R}^m$ onto $\psi(U \cap V) \times \mathbb{R}^m$. No topology on $T^{\ast}M$ is used.
 >
 > *Lee: Proposition 11.9*
 
-^prop-50-2
+^prop-50-1
 
 > [!proof]+ Proof
-> *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* Fix $p \in U \cap V$. Four things are to be shown, in order: the formula for $dx^i|_p$; the formula for $\eta_j$; that $\big[\partial x^i/\partial y^j(p)\big]$ is the inverse of $\big[\partial y^i/\partial x^j(p)\big]$, which gives the transition map; and that the transition maps are smooth, so the charts form a smooth atlas.
+> *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* Fix $p \in U \cap V$. Four things are to be shown, in order: the formula for $dx^i|_p$; the formula for $\eta_j$; that $\big[\partial x^i/\partial y^j(p)\big]$ is the inverse of $\big[\partial y^i/\partial x^j(p)\big]$, which gives the transition map; and that the transition maps are diffeomorphisms.
 >
 > *The formula for $dx^i|_p$.* It is Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] applied to the function $f = x^i$, smooth near $p$, in the chart $\psi = (y^1, \ldots, y^m)$ at $p$: the lemma gives $d(x^i)_p = \sum_j \partial x^i/\partial y^j(p)\, dy^j|_p$.
 >
@@ -178,19 +160,44 @@ The definitions and results of this section run parallel to those for the tangen
 > \dfrac{\partial x^m}{\partial y^1}(p) & \cdots & \dfrac{\partial x^m}{\partial y^m}(p)
 > \end{pmatrix} .
 > $$
+>
 > That $B = A^{-1}$ is the chain rule: Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]](3), applied to the two charts $\varphi = (x^i)$ and $\psi = (y^j)$ at $p$, says that $A$ is invertible with inverse $B$. (With the covectors of this section it can also be read off the formula for $dx^i|_p$: evaluating it on $\partial/\partial x^k|_p$ and using $dx^i|_p(\partial/\partial x^k|_p) = \delta^i_k$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]) and $dy^j|_p(\partial/\partial x^k|_p) = \partial y^j/\partial x^k(p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]) gives $\delta^i_k = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, \frac{\partial y^j}{\partial x^k}(p) = (BA)_{ik}$.) By Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]] the tangent components transform by $A$, $w = Av$; and the formula for $\eta_j$ reads $\eta_j = \sum_i B_{ij}\, \xi_i = (B^{\mathsf T} \xi)_j$, so the covector components transform by $B^{\mathsf T} = (A^{-1})^{\mathsf T}$.
 >
 > *The transition map.* Explicitly, let $(r, \xi) \in \hat\varphi(T^{\ast}U \cap T^{\ast}V) = \varphi(U \cap V) \times \mathbb{R}^m$ (an open set, by the same argument as for $TM$ in the proof of Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]], with Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] giving the basis $dx^i|_p$) and $p = \varphi^{-1}(r)$. By the inverse formula of Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]], $\hat\varphi^{-1}(r, \xi) = \big(p, \sum_i \xi_i\, dx^i|_p\big)$, and by the same definition for $\psi$ and the formula for $\eta$, $\hat\psi$ sends this point to $(\psi(p), \eta) = (\tau(r), B^{\mathsf T}\xi)$. With $p = \varphi^{-1}(r)$, the matrix $A = \big[\partial y^i/\partial x^j(p)\big]$ is $\tau'(r)$ (Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], applied to $F = \mathrm{id}_M$ exactly as in the proof of Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]]), so $B = \big[\partial x^i/\partial y^j(p)\big] = \tau'(r)^{-1}$ and $\eta = \big(\tau'(r)^{-1}\big)^{\mathsf T}\xi$, which is the displayed transition map.
 >
-> *Smoothness and the atlas.* Its entries are smooth in $r$: those of $\tau'(r)$ are, since $\tau$ is smooth (the charts of $M$ are compatible); $\det \tau'(r) \ne 0$ because $\tau'(r)$ is invertible; and the inverse of an invertible matrix is given by Cramer's rule, each entry a polynomial in the entries (a cofactor) divided by the nonzero determinant, hence smooth in $r$. So the first $m$ components $\tau^i(r)$ and the last $m$ components $\sum_i \big(\tau'(r)^{-1}\big)_{ij}\, \xi_i$ of the transition map are smooth in $(r, \xi)$, and the transition maps are smooth, as in Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]]. The inverse transition map $\hat\varphi \circ \hat\psi^{-1}$ is the same formula with the two charts exchanged (rename $(U, \varphi, x^i) \leftrightarrow (V, \psi, y^j)$), hence smooth too, so each transition map is a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]). The charts $\hat\varphi$ are homeomorphisms of the open sets $T^{\ast}U$ onto open subsets of $\mathbb{R}^{2m}$ (Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]]), and the $T^{\ast}U$ cover $T^{\ast}M$; so they form a smooth atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]). The fibration and linearity statements follow as in Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]]; they are written out in the next corollary.
+> *Smoothness.* Its entries are smooth in $r$: those of $\tau'(r)$ are, since $\tau$ is smooth (the charts of $M$ are compatible); $\det \tau'(r) \ne 0$ because $\tau'(r)$ is invertible; and the inverse of an invertible matrix is given by Cramer's rule, each entry a polynomial in the entries (a cofactor) divided by the nonzero determinant, hence smooth in $r$. So the first $m$ components $\tau^i(r)$ and the last $m$ components $\sum_i \big(\tau'(r)^{-1}\big)_{ij}\, \xi_i$ of the transition map are smooth in $(r, \xi)$, and the transition maps are smooth, as in Proposition [[§49 The Tangent Bundle#^prop-49-2|§49.2]]. The inverse transition map $\hat\varphi \circ \hat\psi^{-1}$ is the same formula with the two charts exchanged (rename $(U, \varphi, x^i) \leftrightarrow (V, \psi, y^j)$), hence smooth too, so each transition map is a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]).
 
-^pf-50-2
+^pf-50-1
 
-*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§49 The Tangent Bundle#^prop-49-2|§49.2]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§50 The Cotangent Bundle#^prop-50-1|§50.1]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§49 The Tangent Bundle#^cor-49-3|§49.3]]
+*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§49 The Tangent Bundle#^prop-49-2|§49.2]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§49 The Tangent Bundle#^cor-49-4|§49.4]]
 
 > [!remark]- Connections
 > - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
 > - The rule for $dx^i$ is the substitution step of the pullback in 452, [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]], applied to the transition map.
+
+> [!theorem] Proposition §50.2: The Topology and Smooth Structure of $T^{\ast}M$
+> There is a unique topology on $T^{\ast}M$ for which every $T^{\ast}U$ is open and every chart $\hat\varphi : T^{\ast}U \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $T^{\ast}M$ is a topological manifold of dimension $2m$, and the charts $(T^{\ast}U, \hat\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on it.
+>
+> *Lee: Lemma 1.35 and Proposition 11.9*
+
+^prop-50-2
+
+> [!proof]+ Proof
+> *(Not from lecture — “completely analogous”; filled in.)* Apply Lemma [[§49 The Tangent Bundle#^lem-49-1|§49.1]] with $X = T^{\ast}M$, $n = 2m$, and the sets $T^{\ast}U$ with the maps $\hat\varphi$, indexed by the smooth charts $(U, \varphi)$ of $M$. Each $\hat\varphi$ is injective, being a bijection of $T^{\ast}U$ onto $\varphi(U) \times \mathbb{R}^m$ (Definition [[§50 The Cotangent Bundle#^def-50-5|§50.5]]). The five conditions:
+>
+> *(1) and (2).* By Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]], $\hat\varphi(T^{\ast}U \cap T^{\ast}V) = \varphi(U \cap V) \times \mathbb{R}^m$ is open in $\mathbb{R}^{2m}$; with $V = U$ this is $\hat\varphi(T^{\ast}U) = \varphi(U) \times \mathbb{R}^m$.
+>
+> *(3)* Each transition map $\hat\psi \circ \hat\varphi^{-1}$ is smooth by Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]].
+>
+> *(4)* As in the proof of Proposition [[§49 The Tangent Bundle#^prop-49-3|§49.3]], a countable basis of $M$ gives countably many charts $(U_B, \varphi_B)$ whose domains cover $M$. A covector $(p, \xi)$ lies in $T^{\ast}U_B$ whenever $p \in U_B$, so the countably many sets $T^{\ast}U_B$ cover $T^{\ast}M$.
+>
+> *(5)* Let $(p, \xi) \ne (q, \zeta)$. If $p = q$, both lie in $T^{\ast}U$ for any chart $(U, \varphi)$ at $p$. If $p \ne q$, take disjoint open sets $U_0 \ni p$, $V_0 \ni q$ ($M$ is Hausdorff) and charts $(U, \varphi)$ at $p$, $(V, \psi)$ at $q$, shrunk to $U \cap U_0$ and $V \cap V_0$ (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)); then $T^{\ast}(U \cap U_0) \ni (p, \xi)$ and $T^{\ast}(V \cap V_0) \ni (q, \zeta)$ are disjoint, since a common point $(x, \eta)$ would have $x \in U_0 \cap V_0 = \emptyset$.
+>
+> So Lemma [[§49 The Tangent Bundle#^lem-49-1|§49.1]] applies: $T^{\ast}M$ has a unique topology in which every $T^{\ast}U$ is open and every $\hat\varphi$ is a homeomorphism onto $\varphi(U) \times \mathbb{R}^m$; with it, $T^{\ast}M$ is a topological manifold of dimension $2m$, and the charts $(T^{\ast}U, \hat\varphi)$, whose domains cover $T^{\ast}M$, form a smooth atlas. The fibration and linearity statements follow as in Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]]; they are written out in the next corollary.
+
+^pf-50-2
+
+*Uses:* [[§49 The Tangent Bundle#^prop-49-3|§49.3]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§50 The Cotangent Bundle#^prop-50-1|§50.1]], [[§49 The Tangent Bundle#^lem-49-1|§49.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§49 The Tangent Bundle#^cor-49-4|§49.4]]
 
 > [!theorem] Corollary §50.3: The Cotangent Bundle Is a Fibration
 > With the smooth structure of Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]:
@@ -204,9 +211,9 @@ The definitions and results of this section run parallel to those for the tangen
 ^cor-50-3
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in, as Corollary [[§49 The Tangent Bundle#^cor-49-3|§49.3]].)*
+> *(Not from lecture; filled in, as Corollary [[§49 The Tangent Bundle#^cor-49-4|§49.4]].)*
 >
-> *(1)* By Propositions [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] and [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], $T^{\ast}M$ is a topological manifold of dimension $2m$ with a smooth atlas, hence a smooth manifold of dimension $2m$. To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $T^{\ast}U$, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \hat\varphi$ (Definitions [[§50 The Cotangent Bundle#^def-50-2|§50.2]] and [[§50 The Cotangent Bundle#^def-50-5|§50.5]]), a composite of continuous maps, and the $T^{\ast}U$ cover $T^{\ast}M$. *Coordinate representation:* for $(p, \xi) \in T^{\ast}M$ take a chart $(U, \varphi)$ at $p$; then $(T^{\ast}U, \hat\varphi)$ is a chart at $(p, \xi)$ with $\pi(T^{\ast}U) \subseteq U$, and, as $\hat\varphi^{-1}(r, \xi) = \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$,
+> *(1)* By Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], $T^{\ast}M$ is a topological manifold of dimension $2m$ with a smooth atlas, hence a smooth manifold of dimension $2m$. To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $T^{\ast}U$, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \hat\varphi$ (Definitions [[§50 The Cotangent Bundle#^def-50-2|§50.2]] and [[§50 The Cotangent Bundle#^def-50-5|§50.5]]), a composite of continuous maps, and the $T^{\ast}U$ cover $T^{\ast}M$. *Coordinate representation:* for $(p, \xi) \in T^{\ast}M$ take a chart $(U, \varphi)$ at $p$; then $(T^{\ast}U, \hat\varphi)$ is a chart at $(p, \xi)$ with $\pi(T^{\ast}U) \subseteq U$, and, as $\hat\varphi^{-1}(r, \xi) = \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$,
 >
 > $$
 > \varphi \circ \pi \circ \hat\varphi^{-1}(r, \xi) = \varphi\big(\varphi^{-1}(r)\big) = r .
@@ -234,7 +241,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^pf-50-3
 
-*Uses:* [[§49 The Tangent Bundle#^cor-49-3|§49.3]], [[§50 The Cotangent Bundle#^prop-50-1|§50.1]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§50 The Cotangent Bundle#^def-50-2|Def. §50.2]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§50 The Cotangent Bundle#^def-50-4|Def. §50.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+*Uses:* [[§49 The Tangent Bundle#^cor-49-4|§49.4]], [[§50 The Cotangent Bundle#^prop-50-2|§50.2]], [[§50 The Cotangent Bundle#^prop-50-1|§50.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§50 The Cotangent Bundle#^def-50-2|Def. §50.2]], [[§50 The Cotangent Bundle#^def-50-5|Def. §50.5]], [[§38 Fibrations#^def-38-1|Def. §38.1]], [[§50 The Cotangent Bundle#^def-50-4|Def. §50.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
 ## Lecture 15 and the Standard Coordinates
 
@@ -254,7 +261,7 @@ The definitions and results of this section run parallel to those for the tangen
 > \end{aligned}
 > $$
 >
-> where the first arrow is “in the language of bundles, a trivialization” (Definitions [[§49 The Tangent Bundle#^def-49-4|§49.4]] and [[§49 The Tangent Bundle#^def-49-5|§49.5]]). “What makes this thing hard is that I don't have an explicit formula for the $v^i$” — they are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$ — to which a student answered that there is one, $v^i = v[x^i]$: “That's true. Thank you. That's very good” (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). For $T^{\ast}M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and again “a dual way of writing what the $\alpha_i$ are”: $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). There is a unique topology on $TM$ making these charts homeomorphisms (“we didn't prove this; we just accepted it” in lecture; Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]] for $T^{\ast}M$), and the transition functions are smooth (Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]]).
+> where the first arrow is “in the language of bundles, a trivialization” (Definitions [[§49 The Tangent Bundle#^def-49-4|§49.4]] and [[§49 The Tangent Bundle#^def-49-5|§49.5]]). “What makes this thing hard is that I don't have an explicit formula for the $v^i$” — they are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$ — to which a student answered that there is one, $v^i = v[x^i]$: “That's true. Thank you. That's very good” (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). For $T^{\ast}M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and again “a dual way of writing what the $\alpha_i$ are”: $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). There is a unique topology on $TM$ making these charts homeomorphisms (“we didn't prove this; we just accepted it” in lecture; Proposition [[§50 The Cotangent Bundle#^prop-50-2|§50.2]] for $T^{\ast}M$), and the transition functions are smooth (Proposition [[§50 The Cotangent Bundle#^prop-50-1|§50.1]]).
 >
 > *Coordinates on $T^{\ast}M$.* By a “slight abuse of notation” the first $m$ components of the chart of $T^{\ast}U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are “traditionally called $p_1, \ldots, p_m$”, $p_i(\alpha) = \alpha_i$ — the $\xi_i$ of these notes. A student asked about tangent vectors to $T^{\ast}M$ and germs on it: “at this point you have to say, okay, I just have a manifold that has dimension $2m$ … and now I apply the general theory”: $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. “You can keep taking tangent bundles forever.” In November, with differential forms, the cotangent bundle will turn out to carry an intrinsically defined two-form, the *symplectic form* — “and you who are interested in physics will see how this comes up in Hamiltonian mechanics.”
 

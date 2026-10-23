@@ -1138,4 +1138,4 @@ On the notation: “I don't like it … to me it's very confusing, because inter
 
 ![[m591-37-1.svg]]
 
-Codimensions add: $1 + 2 = 3$ for a surface and a curve, a point; $1 + 1 = 2$ for two surfaces, a curve. In the Morse problem of the homework the same thing happened in $T^{\ast}M$: the section $s_f = df$ “was actually an embedding because it was a section, so it's the same as intersecting the image of the embedding with the zero section” (Theorem [[§52 Critical Points and the Hessian#^thm-52-10|§52.10]]), and there $m + m = 2m$, the full dimension: the intersection is a set of isolated points.
+Codimensions add: $1 + 2 = 3$ for a surface and a curve, a point; $1 + 1 = 2$ for two surfaces, a curve. In the Morse problem of the homework the same thing happened in $T^{\ast}M$: the section $s_f = df$ “was actually an embedding because it was a section, so it's the same as intersecting the image of the embedding with the zero section” (Theorem [[§52 Critical Points and the Hessian#^thm-52-11|§52.11]]), and there $m + m = 2m$, the full dimension: the intersection is a set of isolated points.
