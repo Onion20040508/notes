@@ -23,6 +23,8 @@ tags: [group-theory, hub]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|Theorem §42.5: Third Isomorphism Theorem]]
 - [[§43 Simple Groups#^prop-43-3|Proposition §43.3: Homomorphisms out of a Simple Group]]
 - [[§43 Simple Groups#^prop-43-10|Proposition §43.10: The Pair-Partition Homomorphism S_4 → S_3]]
+- [[§53 Simple Groups of Small Order#^prop-53-4|Proposition §53.4: The Conjugation Homomorphism G → S_n_p]]
+- [[§53 Simple Groups of Small Order#^lem-53-5|Lemma §53.5: Homomorphisms That Leave A_N]]
 
 ## Connections
 - **Converse.** Every normal subgroup is the kernel of G → G/N ([[§40 Quotient Groups#^prop-40-2|§40.2]]), so normal subgroups and kernels are the same thing ([[§40 Quotient Groups#^rem-40-2|Kernels and Normal Subgroups Are the Same Thing]]). Images need not be normal ([[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]).

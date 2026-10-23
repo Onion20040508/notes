@@ -19,6 +19,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§51 p-Groups and Sylow Subgroups#^thm-51-7|Theorem §51.7: Groups of Order p²]]
+- [[§53 Simple Groups of Small Order#^prop-53-1|Proposition §53.1: Primes and Prime Powers]]
 
 ## Connections
 - **Proof idea.** In the [[Class Equation]], every class has size dividing pᵏ ([[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]]), so the non-central ones have size divisible by p. Hence p divides |Z(G)| ([[§35 The Center#^cor-35-4|§35.4]]).

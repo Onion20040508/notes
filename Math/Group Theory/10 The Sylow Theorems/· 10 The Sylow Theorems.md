@@ -11,13 +11,14 @@ tags: [chapter, group-theory]
 
 [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]] says that the [[§4 Subgroups#^def-4-6|order]] of a [[§4 Subgroups#^def-4-1|subgroup]] divides $|G|$, and [[§29 The Index and Lagrange's Theorem#^ex-29-1|its converse fails]]; Cauchy's theorem ([[§29 The Index and Lagrange's Theorem#^thm-29-6|Theorem §29.6]]) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: [[§52 The Sylow Theorems#^thm-52-4|subgroups of that order exist]], and [[§52 The Sylow Theorems#^thm-52-6|any two are conjugate]]. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|the unitriangular matrices]]), and pull it back with a fixed-point argument ([[§52 The Sylow Theorems#^lem-52-1|Lemma §52.1]]).
 
-**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (12), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (5), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (6), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (24), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (5), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (6)
+**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (12), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (5), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (6), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (2), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (30), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (7), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (12)
 **Used by:** —
 **Builds on (other subjects):** —
 
 ## Sections
 - [[§51 p-Groups and Sylow Subgroups]]
 - [[§52 The Sylow Theorems]]
+- [[§53 Simple Groups of Small Order]]
 
 ## Central results
 - [[Groups of Order p²]] (§51.7)
@@ -28,7 +29,7 @@ tags: [chapter, group-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§51 p-Groups and Sylow Subgroups#^lem-51-2|Lemma §51.2: Invertible Matrices Have Independent Columns]]: 10 later results
-- [[§51 p-Groups and Sylow Subgroups#^lem-51-3|Lemma §51.3: Counting Linearly Independent Tuples]]: 10 later results
-- [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3: Sylow Subgroups of a Subgroup]]: 10 later results
-- [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Proposition §51.4: The Order of GLₙ(𝔽_p)]]: 9 later results
+- [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3: Sylow Subgroups of a Subgroup]]: 14 later results
+- [[Second Sylow Theorem|Theorem §52.6: The Second Sylow Theorem]]: 12 later results
+- [[§51 p-Groups and Sylow Subgroups#^lem-51-2|Lemma §51.2: Invertible Matrices Have Independent Columns]]: 11 later results
+- [[§51 p-Groups and Sylow Subgroups#^lem-51-3|Lemma §51.3: Counting Linearly Independent Tuples]]: 11 later results

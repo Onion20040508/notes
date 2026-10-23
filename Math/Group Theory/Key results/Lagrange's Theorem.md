@@ -34,6 +34,9 @@ tags: [group-theory, hub]
 - [[§52 The Sylow Theorems#^thm-52-9|Theorem §52.9: The Third Sylow Theorem]]
 - [[§52 The Sylow Theorems#^cor-52-10|Corollary §52.10: The Number of Sylow Subgroups Divides ∣G∣]]
 - [[§52 The Sylow Theorems#^prop-52-11|Proposition §52.11: Groups of Order pq]]
+- [[§53 Simple Groups of Small Order#^prop-53-2|Proposition §53.2: n_p and the Normalizer]]
+- [[§53 Simple Groups of Small Order#^prop-53-4|Proposition §53.4: The Conjugation Homomorphism G → S_n_p]]
+- [[§53 Simple Groups of Small Order#^cor-53-6|Corollary §53.6: Simple Groups Land in A_n_p]]
 
 ## Connections
 - **Used for.** ord(g) divides |G| and g^|G| = e ([[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]), hence [[§29 The Index and Lagrange's Theorem#^cor-29-4|Fermat's Little Theorem]]. Also [[Groups of Prime Order Are Cyclic]] and the [[Orbit–Stabilizer Theorem]]. It rules out subgroups, e.g. S₃ has none of order 4 or 5 ([[§29 The Index and Lagrange's Theorem#^rem-29-1|Uses of Lagrange]]), and together with class sizes it proves [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].

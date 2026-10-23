@@ -24,6 +24,7 @@ tags: [group-theory, hub]
 - [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3: Sylow Subgroups of a Subgroup]]
 - [[§52 The Sylow Theorems#^thm-52-9|Theorem §52.9: The Third Sylow Theorem]]
 - [[§52 The Sylow Theorems#^cor-52-10|Corollary §52.10: The Number of Sylow Subgroups Divides ∣G∣]]
+- [[§53 Simple Groups of Small Order#^prop-53-2|Proposition §53.2: n_p and the Normalizer]]
 
 ## Connections
 - **Used for.** Class sizes divide |G| ([[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]]), hence the [[Class Equation]]. Also [[Burnside's Lemma]], the 24 rotations of the cube (6 faces, each with a stabilizer of order 4; [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|§32.3]]), and n! = (n − 1)! · n from the point stabilizer in Sₙ ([[§30 Orbit–Stabilizer#^cor-30-5|§30.5]]).

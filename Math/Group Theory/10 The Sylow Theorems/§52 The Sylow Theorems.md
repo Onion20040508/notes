@@ -5,7 +5,7 @@ chapter: 10
 section: 52
 tags: [group-theory, math493]
 ---
-← [[§51 p-Groups and Sylow Subgroups]] · ↑ [[· 10 The Sylow Theorems]]
+← [[§51 p-Groups and Sylow Subgroups]] · ↑ [[· 10 The Sylow Theorems]] · [[§53 Simple Groups of Small Order]] →
 
 *Reference: Worksheet 10; lectures 10/12–10/16. Throughout, $p$ is a prime and the groups are finite.*
 

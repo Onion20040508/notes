@@ -26,7 +26,7 @@ tags: [chapter, group-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§46 Characters#^thm-46-2|Theorem §46.2: A Common Eigenvector Yields a Character]]: 15 later results
+- [[§46 Characters#^thm-46-2|Theorem §46.2: A Common Eigenvector Yields a Character]]: 17 later results
 - [[§47 Commutators#^prop-47-1|Proposition §47.1: Characters Kill Commutators]]: 7 later results
 - [[§47 Commutators#^prop-47-2|Proposition §47.2: 3-Cycles Are Commutators]]: 5 later results
 - [[§47 Commutators#^prop-47-11|Proposition §47.11: Abelian Quotients and Commutators]]: 5 later results

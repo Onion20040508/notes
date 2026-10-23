@@ -278,7 +278,7 @@ These notes follow the course, and the course studies groups through two familie
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them. Chapter~10 begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders.
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them. Chapter~10 begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}).
 
 \chapter*{Conventions and Notation}
 \addcontentsline{toc}{chapter}{Conventions and Notation}
@@ -5765,7 +5765,7 @@ Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the rema
 
 \chapter{The Sylow Theorems}\label{ch:sylow}
 
-\textit{Source: Worksheet 10 (handed out with Worksheet 9, Wed Oct 7); Lecture and Worksheet 10 (Mon Oct 12); worksheet session (Wed Oct 14); lecture (Fri Oct 16). Proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
+\textit{Source: Worksheet 10 (handed out with Worksheet 9, Wed Oct 7); Lecture and Worksheet 10 (Mon Oct 12); worksheet session (Wed Oct 14); lecture (Fri Oct 16); lecture and slides (Fri Oct 23). Proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
 
 Lagrange's theorem says that the order of a subgroup divides $|G|$, and its converse fails; Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: subgroups of that order exist, and any two are conjugate. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly, and pull it back with a fixed-point argument.
 
@@ -6213,6 +6213,357 @@ Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G
 Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
 
 
+% ============================================================================
+% SECTION: SIMPLE GROUPS OF SMALL ORDER (Fri Oct 23)
+% ============================================================================
+\section{Simple Groups of Small Order}\label{sec:small-simple-groups}
+
+\textit{Source: Lecture and slides (Fri Oct 23). Reference: not covered in the Pinter chapters used so far.}
+
+\begin{rembox}[{The Game}]\label{rem:simplicity-game}
+Which numbers $n \leq 100$ are the order of a simple group? The slides list $n = 2, \ldots, 100$ and mark each $n$ with the test that rules it out: \emph{prime}; $\clubsuit$, a prime power (Proposition~\ref{prop:primes-prime-powers-simple}); $\diamondsuit p$, a prime $p$ for which $n_p = 1$ is forced (Corollary~\ref{cor:unique-sylow-not-simple}); $\blacksquare p$, a prime $p$ for which $|G|$ does not divide $n_p!$ (Proposition~\ref{prop:conjugation-hom-sylow}). After these tests only $30$, $56$, $60$ and $90$ survive. The orders $30$, $56$ and $90$ are ruled out on the homework, and $60$ is the order of $A_5$.
+\srcline{lecture 10/23}
+\end{rembox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[x=1.15cm, y=0.82cm, font=\scriptsize]
+\fill[gray!10] (-0.47,-0.42) rectangle (0.47,0.42); \node[align=center, inner sep=0pt] at (0,0) {1\\[-1pt] trivial};
+\fill[green!18] (0.53,-0.42) rectangle (1.47,0.42); \node[align=center, inner sep=0pt] at (1,0) {2\\[-1pt] prime};
+\fill[green!18] (1.53,-0.42) rectangle (2.4699999999999998,0.42); \node[align=center, inner sep=0pt] at (2,0) {3\\[-1pt] prime};
+\fill[blue!14] (2.5300000000000002,-0.42) rectangle (3.4699999999999998,0.42); \node[align=center, inner sep=0pt] at (3,0) {4\\[-1pt] $\clubsuit$};
+\fill[green!18] (3.5300000000000002,-0.42) rectangle (4.47,0.42); \node[align=center, inner sep=0pt] at (4,0) {5\\[-1pt] prime};
+\fill[orange!22] (4.53,-0.42) rectangle (5.47,0.42); \node[align=center, inner sep=0pt] at (5,0) {6\\[-1pt] $\diamondsuit$3};
+\fill[green!18] (5.53,-0.42) rectangle (6.47,0.42); \node[align=center, inner sep=0pt] at (6,0) {7\\[-1pt] prime};
+\fill[blue!14] (6.53,-0.42) rectangle (7.47,0.42); \node[align=center, inner sep=0pt] at (7,0) {8\\[-1pt] $\clubsuit$};
+\fill[blue!14] (7.53,-0.42) rectangle (8.47,0.42); \node[align=center, inner sep=0pt] at (8,0) {9\\[-1pt] $\clubsuit$};
+\fill[orange!22] (8.53,-0.42) rectangle (9.47,0.42); \node[align=center, inner sep=0pt] at (9,0) {10\\[-1pt] $\diamondsuit$5};
+\fill[green!18] (-0.47,-1.42) rectangle (0.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (0,-1) {11\\[-1pt] prime};
+\fill[violet!18] (0.53,-1.42) rectangle (1.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (1,-1) {12\\[-1pt] $\blacksquare$2};
+\fill[green!18] (1.53,-1.42) rectangle (2.4699999999999998,-0.5800000000000001); \node[align=center, inner sep=0pt] at (2,-1) {13\\[-1pt] prime};
+\fill[orange!22] (2.5300000000000002,-1.42) rectangle (3.4699999999999998,-0.5800000000000001); \node[align=center, inner sep=0pt] at (3,-1) {14\\[-1pt] $\diamondsuit$7};
+\fill[orange!22] (3.5300000000000002,-1.42) rectangle (4.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (4,-1) {15\\[-1pt] $\diamondsuit$3};
+\fill[blue!14] (4.53,-1.42) rectangle (5.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (5,-1) {16\\[-1pt] $\clubsuit$};
+\fill[green!18] (5.53,-1.42) rectangle (6.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (6,-1) {17\\[-1pt] prime};
+\fill[orange!22] (6.53,-1.42) rectangle (7.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (7,-1) {18\\[-1pt] $\diamondsuit$3};
+\fill[green!18] (7.53,-1.42) rectangle (8.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (8,-1) {19\\[-1pt] prime};
+\fill[orange!22] (8.53,-1.42) rectangle (9.47,-0.5800000000000001); \node[align=center, inner sep=0pt] at (9,-1) {20\\[-1pt] $\diamondsuit$5};
+\fill[orange!22] (-0.47,-2.42) rectangle (0.47,-1.58); \node[align=center, inner sep=0pt] at (0,-2) {21\\[-1pt] $\diamondsuit$7};
+\fill[orange!22] (0.53,-2.42) rectangle (1.47,-1.58); \node[align=center, inner sep=0pt] at (1,-2) {22\\[-1pt] $\diamondsuit$11};
+\fill[green!18] (1.53,-2.42) rectangle (2.4699999999999998,-1.58); \node[align=center, inner sep=0pt] at (2,-2) {23\\[-1pt] prime};
+\fill[violet!18] (2.5300000000000002,-2.42) rectangle (3.4699999999999998,-1.58); \node[align=center, inner sep=0pt] at (3,-2) {24\\[-1pt] $\blacksquare$2};
+\fill[blue!14] (3.5300000000000002,-2.42) rectangle (4.47,-1.58); \node[align=center, inner sep=0pt] at (4,-2) {25\\[-1pt] $\clubsuit$};
+\fill[orange!22] (4.53,-2.42) rectangle (5.47,-1.58); \node[align=center, inner sep=0pt] at (5,-2) {26\\[-1pt] $\diamondsuit$13};
+\fill[blue!14] (5.53,-2.42) rectangle (6.47,-1.58); \node[align=center, inner sep=0pt] at (6,-2) {27\\[-1pt] $\clubsuit$};
+\fill[orange!22] (6.53,-2.42) rectangle (7.47,-1.58); \node[align=center, inner sep=0pt] at (7,-2) {28\\[-1pt] $\diamondsuit$7};
+\fill[green!18] (7.53,-2.42) rectangle (8.47,-1.58); \node[align=center, inner sep=0pt] at (8,-2) {29\\[-1pt] prime};
+\fill[red!30] (8.53,-2.42) rectangle (9.47,-1.58); \node[align=center, inner sep=0pt] at (9,-2) {\bfseries 30\\[-1pt] HW};
+\fill[green!18] (-0.47,-3.42) rectangle (0.47,-2.58); \node[align=center, inner sep=0pt] at (0,-3) {31\\[-1pt] prime};
+\fill[blue!14] (0.53,-3.42) rectangle (1.47,-2.58); \node[align=center, inner sep=0pt] at (1,-3) {32\\[-1pt] $\clubsuit$};
+\fill[orange!22] (1.53,-3.42) rectangle (2.4699999999999998,-2.58); \node[align=center, inner sep=0pt] at (2,-3) {33\\[-1pt] $\diamondsuit$3};
+\fill[orange!22] (2.5300000000000002,-3.42) rectangle (3.4699999999999998,-2.58); \node[align=center, inner sep=0pt] at (3,-3) {34\\[-1pt] $\diamondsuit$17};
+\fill[orange!22] (3.5300000000000002,-3.42) rectangle (4.47,-2.58); \node[align=center, inner sep=0pt] at (4,-3) {35\\[-1pt] $\diamondsuit$5};
+\fill[violet!18] (4.53,-3.42) rectangle (5.47,-2.58); \node[align=center, inner sep=0pt] at (5,-3) {36\\[-1pt] $\blacksquare$3};
+\fill[green!18] (5.53,-3.42) rectangle (6.47,-2.58); \node[align=center, inner sep=0pt] at (6,-3) {37\\[-1pt] prime};
+\fill[orange!22] (6.53,-3.42) rectangle (7.47,-2.58); \node[align=center, inner sep=0pt] at (7,-3) {38\\[-1pt] $\diamondsuit$19};
+\fill[orange!22] (7.53,-3.42) rectangle (8.47,-2.58); \node[align=center, inner sep=0pt] at (8,-3) {39\\[-1pt] $\diamondsuit$13};
+\fill[orange!22] (8.53,-3.42) rectangle (9.47,-2.58); \node[align=center, inner sep=0pt] at (9,-3) {40\\[-1pt] $\diamondsuit$5};
+\fill[green!18] (-0.47,-4.42) rectangle (0.47,-3.58); \node[align=center, inner sep=0pt] at (0,-4) {41\\[-1pt] prime};
+\fill[orange!22] (0.53,-4.42) rectangle (1.47,-3.58); \node[align=center, inner sep=0pt] at (1,-4) {42\\[-1pt] $\diamondsuit$7};
+\fill[green!18] (1.53,-4.42) rectangle (2.4699999999999998,-3.58); \node[align=center, inner sep=0pt] at (2,-4) {43\\[-1pt] prime};
+\fill[orange!22] (2.5300000000000002,-4.42) rectangle (3.4699999999999998,-3.58); \node[align=center, inner sep=0pt] at (3,-4) {44\\[-1pt] $\diamondsuit$11};
+\fill[orange!22] (3.5300000000000002,-4.42) rectangle (4.47,-3.58); \node[align=center, inner sep=0pt] at (4,-4) {45\\[-1pt] $\diamondsuit$3};
+\fill[orange!22] (4.53,-4.42) rectangle (5.47,-3.58); \node[align=center, inner sep=0pt] at (5,-4) {46\\[-1pt] $\diamondsuit$23};
+\fill[green!18] (5.53,-4.42) rectangle (6.47,-3.58); \node[align=center, inner sep=0pt] at (6,-4) {47\\[-1pt] prime};
+\fill[violet!18] (6.53,-4.42) rectangle (7.47,-3.58); \node[align=center, inner sep=0pt] at (7,-4) {48\\[-1pt] $\blacksquare$2};
+\fill[blue!14] (7.53,-4.42) rectangle (8.47,-3.58); \node[align=center, inner sep=0pt] at (8,-4) {49\\[-1pt] $\clubsuit$};
+\fill[orange!22] (8.53,-4.42) rectangle (9.47,-3.58); \node[align=center, inner sep=0pt] at (9,-4) {50\\[-1pt] $\diamondsuit$5};
+\fill[orange!22] (-0.47,-5.42) rectangle (0.47,-4.58); \node[align=center, inner sep=0pt] at (0,-5) {51\\[-1pt] $\diamondsuit$3};
+\fill[orange!22] (0.53,-5.42) rectangle (1.47,-4.58); \node[align=center, inner sep=0pt] at (1,-5) {52\\[-1pt] $\diamondsuit$13};
+\fill[green!18] (1.53,-5.42) rectangle (2.4699999999999998,-4.58); \node[align=center, inner sep=0pt] at (2,-5) {53\\[-1pt] prime};
+\fill[orange!22] (2.5300000000000002,-5.42) rectangle (3.4699999999999998,-4.58); \node[align=center, inner sep=0pt] at (3,-5) {54\\[-1pt] $\diamondsuit$3};
+\fill[orange!22] (3.5300000000000002,-5.42) rectangle (4.47,-4.58); \node[align=center, inner sep=0pt] at (4,-5) {55\\[-1pt] $\diamondsuit$11};
+\fill[red!30] (4.53,-5.42) rectangle (5.47,-4.58); \node[align=center, inner sep=0pt] at (5,-5) {\bfseries 56\\[-1pt] HW};
+\fill[orange!22] (5.53,-5.42) rectangle (6.47,-4.58); \node[align=center, inner sep=0pt] at (6,-5) {57\\[-1pt] $\diamondsuit$19};
+\fill[orange!22] (6.53,-5.42) rectangle (7.47,-4.58); \node[align=center, inner sep=0pt] at (7,-5) {58\\[-1pt] $\diamondsuit$29};
+\fill[green!18] (7.53,-5.42) rectangle (8.47,-4.58); \node[align=center, inner sep=0pt] at (8,-5) {59\\[-1pt] prime};
+\fill[red!30] (8.53,-5.42) rectangle (9.47,-4.58); \node[align=center, inner sep=0pt] at (9,-5) {\bfseries 60\\[-1pt] $A_5$};
+\fill[green!18] (-0.47,-6.42) rectangle (0.47,-5.58); \node[align=center, inner sep=0pt] at (0,-6) {61\\[-1pt] prime};
+\fill[orange!22] (0.53,-6.42) rectangle (1.47,-5.58); \node[align=center, inner sep=0pt] at (1,-6) {62\\[-1pt] $\diamondsuit$31};
+\fill[orange!22] (1.53,-6.42) rectangle (2.4699999999999998,-5.58); \node[align=center, inner sep=0pt] at (2,-6) {63\\[-1pt] $\diamondsuit$7};
+\fill[blue!14] (2.5300000000000002,-6.42) rectangle (3.4699999999999998,-5.58); \node[align=center, inner sep=0pt] at (3,-6) {64\\[-1pt] $\clubsuit$};
+\fill[orange!22] (3.5300000000000002,-6.42) rectangle (4.47,-5.58); \node[align=center, inner sep=0pt] at (4,-6) {65\\[-1pt] $\diamondsuit$5};
+\fill[orange!22] (4.53,-6.42) rectangle (5.47,-5.58); \node[align=center, inner sep=0pt] at (5,-6) {66\\[-1pt] $\diamondsuit$11};
+\fill[green!18] (5.53,-6.42) rectangle (6.47,-5.58); \node[align=center, inner sep=0pt] at (6,-6) {67\\[-1pt] prime};
+\fill[orange!22] (6.53,-6.42) rectangle (7.47,-5.58); \node[align=center, inner sep=0pt] at (7,-6) {68\\[-1pt] $\diamondsuit$17};
+\fill[orange!22] (7.53,-6.42) rectangle (8.47,-5.58); \node[align=center, inner sep=0pt] at (8,-6) {69\\[-1pt] $\diamondsuit$3};
+\fill[orange!22] (8.53,-6.42) rectangle (9.47,-5.58); \node[align=center, inner sep=0pt] at (9,-6) {70\\[-1pt] $\diamondsuit$5};
+\fill[green!18] (-0.47,-7.42) rectangle (0.47,-6.58); \node[align=center, inner sep=0pt] at (0,-7) {71\\[-1pt] prime};
+\fill[violet!18] (0.53,-7.42) rectangle (1.47,-6.58); \node[align=center, inner sep=0pt] at (1,-7) {72\\[-1pt] $\blacksquare$3};
+\fill[green!18] (1.53,-7.42) rectangle (2.4699999999999998,-6.58); \node[align=center, inner sep=0pt] at (2,-7) {73\\[-1pt] prime};
+\fill[orange!22] (2.5300000000000002,-7.42) rectangle (3.4699999999999998,-6.58); \node[align=center, inner sep=0pt] at (3,-7) {74\\[-1pt] $\diamondsuit$37};
+\fill[orange!22] (3.5300000000000002,-7.42) rectangle (4.47,-6.58); \node[align=center, inner sep=0pt] at (4,-7) {75\\[-1pt] $\diamondsuit$5};
+\fill[orange!22] (4.53,-7.42) rectangle (5.47,-6.58); \node[align=center, inner sep=0pt] at (5,-7) {76\\[-1pt] $\diamondsuit$19};
+\fill[orange!22] (5.53,-7.42) rectangle (6.47,-6.58); \node[align=center, inner sep=0pt] at (6,-7) {77\\[-1pt] $\diamondsuit$7};
+\fill[orange!22] (6.53,-7.42) rectangle (7.47,-6.58); \node[align=center, inner sep=0pt] at (7,-7) {78\\[-1pt] $\diamondsuit$13};
+\fill[green!18] (7.53,-7.42) rectangle (8.47,-6.58); \node[align=center, inner sep=0pt] at (8,-7) {79\\[-1pt] prime};
+\fill[violet!18] (8.53,-7.42) rectangle (9.47,-6.58); \node[align=center, inner sep=0pt] at (9,-7) {80\\[-1pt] $\blacksquare$2};
+\fill[blue!14] (-0.47,-8.42) rectangle (0.47,-7.58); \node[align=center, inner sep=0pt] at (0,-8) {81\\[-1pt] $\clubsuit$};
+\fill[orange!22] (0.53,-8.42) rectangle (1.47,-7.58); \node[align=center, inner sep=0pt] at (1,-8) {82\\[-1pt] $\diamondsuit$41};
+\fill[green!18] (1.53,-8.42) rectangle (2.4699999999999998,-7.58); \node[align=center, inner sep=0pt] at (2,-8) {83\\[-1pt] prime};
+\fill[orange!22] (2.5300000000000002,-8.42) rectangle (3.4699999999999998,-7.58); \node[align=center, inner sep=0pt] at (3,-8) {84\\[-1pt] $\diamondsuit$7};
+\fill[orange!22] (3.5300000000000002,-8.42) rectangle (4.47,-7.58); \node[align=center, inner sep=0pt] at (4,-8) {85\\[-1pt] $\diamondsuit$5};
+\fill[orange!22] (4.53,-8.42) rectangle (5.47,-7.58); \node[align=center, inner sep=0pt] at (5,-8) {86\\[-1pt] $\diamondsuit$43};
+\fill[orange!22] (5.53,-8.42) rectangle (6.47,-7.58); \node[align=center, inner sep=0pt] at (6,-8) {87\\[-1pt] $\diamondsuit$3};
+\fill[orange!22] (6.53,-8.42) rectangle (7.47,-7.58); \node[align=center, inner sep=0pt] at (7,-8) {88\\[-1pt] $\diamondsuit$11};
+\fill[green!18] (7.53,-8.42) rectangle (8.47,-7.58); \node[align=center, inner sep=0pt] at (8,-8) {89\\[-1pt] prime};
+\fill[red!30] (8.53,-8.42) rectangle (9.47,-7.58); \node[align=center, inner sep=0pt] at (9,-8) {\bfseries 90\\[-1pt] HW};
+\fill[orange!22] (-0.47,-9.42) rectangle (0.47,-8.58); \node[align=center, inner sep=0pt] at (0,-9) {91\\[-1pt] $\diamondsuit$7};
+\fill[orange!22] (0.53,-9.42) rectangle (1.47,-8.58); \node[align=center, inner sep=0pt] at (1,-9) {92\\[-1pt] $\diamondsuit$23};
+\fill[orange!22] (1.53,-9.42) rectangle (2.4699999999999998,-8.58); \node[align=center, inner sep=0pt] at (2,-9) {93\\[-1pt] $\diamondsuit$31};
+\fill[orange!22] (2.5300000000000002,-9.42) rectangle (3.4699999999999998,-8.58); \node[align=center, inner sep=0pt] at (3,-9) {94\\[-1pt] $\diamondsuit$47};
+\fill[orange!22] (3.5300000000000002,-9.42) rectangle (4.47,-8.58); \node[align=center, inner sep=0pt] at (4,-9) {95\\[-1pt] $\diamondsuit$5};
+\fill[violet!18] (4.53,-9.42) rectangle (5.47,-8.58); \node[align=center, inner sep=0pt] at (5,-9) {96\\[-1pt] $\blacksquare$2};
+\fill[green!18] (5.53,-9.42) rectangle (6.47,-8.58); \node[align=center, inner sep=0pt] at (6,-9) {97\\[-1pt] prime};
+\fill[orange!22] (6.53,-9.42) rectangle (7.47,-8.58); \node[align=center, inner sep=0pt] at (7,-9) {98\\[-1pt] $\diamondsuit$7};
+\fill[orange!22] (7.53,-9.42) rectangle (8.47,-8.58); \node[align=center, inner sep=0pt] at (8,-9) {99\\[-1pt] $\diamondsuit$3};
+\fill[orange!22] (8.53,-9.42) rectangle (9.47,-8.58); \node[align=center, inner sep=0pt] at (9,-9) {100\\[-1pt] $\diamondsuit$5};
+\draw[gray!40] (-0.47,0.42) rectangle (9.47,-9.42);
+\fill[green!18] (-0.4,-10.35) rectangle (-0.10000000000000003,-10.049999999999999); \node[anchor=west] at (-0.050000000000000044,-10.2) {prime: simple};
+\fill[blue!14] (3.1,-10.35) rectangle (3.4,-10.049999999999999); \node[anchor=west] at (3.45,-10.2) {$\clubsuit$ prime power, $k \ge 2$};
+\fill[orange!22] (6.6,-10.35) rectangle (6.8999999999999995,-10.049999999999999); \node[anchor=west] at (6.949999999999999,-10.2) {$\diamondsuit p$: $n_p = 1$ forced};
+\fill[violet!18] (-0.4,-10.9) rectangle (-0.10000000000000003,-10.6); \node[anchor=west] at (-0.050000000000000044,-10.75) {$\blacksquare p$: $|G| \nmid n_p!$ for every allowed $n_p > 1$};
+\fill[red!30] (5.6,-10.9) rectangle (5.9,-10.6); \node[anchor=west] at (5.95,-10.75) {survivors: $30, 56, 90$ (homework), $60$ ($A_5$)};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The slides' table, recomputed: each $n \leq 100$ is coloured by the first test that rules it out, in the order prime, $\clubsuit$, $\diamondsuit p$, $\blacksquare p$. Exactly $30$, $56$, $60$ and $90$ survive. ($18$ is $\diamondsuit 3$, as corrected in lecture.)
+%% <<< END ADDED
+
+\begin{propbox}[{Primes and Prime Powers}]\label{prop:primes-prime-powers-simple}
+\begin{enumerate}
+    \item The trivial group is not simple.
+    \item If $|G| = p$ is prime, then $G \cong \mathbb{Z}/p\mathbb{Z}$ is simple.
+    \item If $|G| = p^k$ with $p$ prime and $k \geq 2$, then $G$ is not simple.
+\end{enumerate}
+\srcline{lecture 10/23}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} for (3), the center is a nontrivial normal subgroup; it is proper unless $G$ is abelian, and abelian simple groups have prime order.\par
+\textbf{(1)} By Definition~\ref{def:simple-group}: the trivial group has only one normal subgroup.
+
+\textbf{(2)} A group of prime order is cyclic, hence $\cong \mathbb{Z}/p\mathbb{Z}$ (Theorem~\ref{thm:groups-prime-order}), and it is simple by Theorem~\ref{thm:abelian-simple-groups}.
+
+\textbf{(3)} The center $Z(G) = \{z \in G : zg = gz \text{ for all } g \in G\}$ (Definition~\ref{def:center-z-g}) is nontrivial by Theorem~\ref{thm:groups-prime-power-order-have-nontrivial-center}, and it is normal in $G$: for $z \in Z(G)$ and $g \in G$, $gzg^{-1} = z$. If $Z(G) \neq G$, then $Z(G)$ is a proper nontrivial normal subgroup, and $G$ is not simple. If $Z(G) = G$, then $G$ is abelian, and an abelian simple group has prime order (Theorem~\ref{thm:abelian-simple-groups}); but $|G| = p^k$ with $k \geq 2$ is not prime. Either way $G$ is not simple.
+\end{proof}
+
+\begin{rembox}[{Notation for This Section}]\label{rem:small-simple-notation}
+Throughout, $G$ is finite, $p$ is a prime dividing $|G|$, and $|G| = p^k m$ with $p \nmid m$. Write $n_p$ for the number of Sylow $p$-subgroups of $G$. The conjugate $gPg^{-1}$ of a Sylow $p$-subgroup $P$ is again a Sylow $p$-subgroup, since conjugation by $g$ is an isomorphism (Proposition~\ref{prop:conjugation-automorphism}); so $G$ acts on the set of Sylow $p$-subgroups by conjugation, $g \cdot P = gPg^{-1}$, as in the proof of Theorem~\ref{thm:sylow-third}.
+\end{rembox}
+
+\begin{defbox}[{Normalizer}]\label{def:normalizer}
+Let $H \leq G$. The \textbf{normalizer} of $H$ in $G$ is
+\[ N_G(H) = N(H) := \{ g \in G : gHg^{-1} = H \}, \]
+the stabilizer of $H$ under the action of $G$ on its subgroups by conjugation.
+\srcline{lecture 10/23}
+\end{defbox}
+
+\begin{rembox}[{Basic Properties of the Normalizer}]\label{rem:normalizer-properties}
+$N(H)$ is a subgroup of $G$, since stabilizers are subgroups (Proposition~\ref{prop:stabilizer-subgroup}); it contains $H$, since $hHh^{-1} = H$ for $h \in H$; and $H \trianglelefteq N(H)$, directly from the definition. $H$ is normal in $G$ (Definition~\ref{def:normal-subgroup}) if and only if $N(H) = G$.
+\end{rembox}
+
+\begin{propbox}[{$n_p$ and the Normalizer}]\label{prop:np-normalizer-index}
+Let $P$ be a Sylow $p$-subgroup of $G$. Then $n_p = [G : N(P)]$, and
+\[ m = [N(P) : P] \cdot n_p. \]
+In particular $n_p$ divides $m$ (Corollary~\ref{cor:sylow-number-divides}). Together with the Third Sylow Theorem (Theorem~\ref{thm:sylow-third}), $n_p \mid m$ and $n_p \equiv 1 \pmod p$.
+\srcline{lecture 10/23}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} orbit--stabilizer for the single conjugation orbit, whose stabilizer is $N(P) \supseteq P$.\par
+\textit{(Board 10/23.)} Let $G$ act on the set of Sylow $p$-subgroups by conjugation. By the Second Sylow Theorem (Theorem~\ref{thm:sylow-second}), any two Sylow $p$-subgroups are conjugate, so there is only one orbit, of size $n_p$. The stabilizer of $P$ is $\operatorname{Stab}(P) = \{g \in G : gPg^{-1} = P\} = N(P)$ (Definition~\ref{def:normalizer}). By Orbit--Stabilizer (Theorem~\ref{thm:orbit-stabilizer}), $n_p = [G : N(P)]$, and using Lagrange (Theorem~\ref{thm:lagrange}) for $P \leq N(P)$,
+\[ p^k m = |G| = |N(P)| \cdot n_p = |P| \cdot [N(P) : P] \cdot n_p = p^k \, [N(P) : P] \cdot n_p. \]
+Cancelling $p^k$ gives $m = [N(P) : P] \cdot n_p$.
+\end{proof}
+
+\begin{proof}[Alternative proof that $n_p \mid m$ (number theory)]
+\textit{(Board 10/23.)} From $n_p = [G : N(P)]$, $n_p$ divides $|G| = p^k m$. By the Third Sylow Theorem (Theorem~\ref{thm:sylow-third}) $n_p \equiv 1 \pmod p$, so $p \nmid n_p$; hence no factor of $p$ occurs in $n_p$, and $n_p$ divides $m$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small]
+    \node (G) at (0,3.2) {$G$};
+    \node (N) at (0,1.6) {$N(P) = \operatorname{Stab}(P)$};
+    \node (P) at (0,0) {$P$};
+    \node (e) at (0,-1.4) {$\{e\}$};
+    \draw (G) -- node[right, font=\scriptsize] {index $n_p = [G : N(P)]$ \ (orbit--stabilizer)} (N);
+    \draw (N) -- node[right, font=\scriptsize] {index $[N(P) : P]$} (P);
+    \draw (P) -- node[right, font=\scriptsize] {order $p^k$} (e);
+    \draw (-1.75,3.1) -- (-1.9,3.1) -- node[left=3pt, font=\scriptsize, align=right] {index\\ $m = [N(P):P]\, n_p$} (-1.9,0.1) -- (-1.75,0.1);
+    \begin{scope}[xshift=7.2cm, yshift=0.9cm]
+        \foreach \a/\l in {90/P_1, 18/P_2, -54/P_3, -126/P_4, 162/P_5} {
+            \node[circle, draw=blue!60!black, fill=blue!6, inner sep=1.5pt, font=\scriptsize] (\l) at (\a:1.5) {$\l$};
+        }
+        \draw[->, red!70!black, bend left=20] (P_1) to (P_2);
+        \draw[->, red!70!black, bend left=20] (P_2) to (P_3);
+        \draw[->, red!70!black, bend left=20] (P_3) to (P_4);
+        \draw[->, red!70!black, bend left=20] (P_4) to (P_5);
+        \node[font=\scriptsize, align=center] at (0,-2.3) {one orbit of $n_p$ Sylow $p$-subgroups;\\ $g$ acts by $P_i \mapsto gP_ig^{-1}$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Left: the chain $\{e\} \leq P \leq N(P) \leq G$ with its indices; the index $m$ of $P$ in $G$ splits as $[N(P) : P] \cdot n_p$. Right: $G$ permutes the Sylow $p$-subgroups $P_1, \ldots, P_{n_p}$ transitively by conjugation (Theorem~\ref{thm:sylow-second}); the stabilizer of $P_1$ is $N(P_1)$, so the orbit has $[G : N(P_1)]$ points.
+%% <<< END ADDED
+
+\begin{corbox}[{A Unique Sylow Subgroup Rules Out Simplicity}]\label{cor:unique-sylow-not-simple}
+If $n_p = 1$, then the Sylow $p$-subgroup $P$ is normal in $G$. If moreover $|G|$ is not a power of $p$, then $\{e\} \neq P \neq G$, so $G$ is not simple.
+\srcline{lecture 10/23}
+\end{corbox}
+
+\begin{proof}
+$P$ is normal by Corollary~\ref{cor:sylow-normal-unique}(2): $gPg^{-1}$ is a Sylow $p$-subgroup for every $g \in G$, and $P$ is the only one, so $gPg^{-1} = P$. Since $p$ divides $|G|$, $|P| = p^k > 1$; if $|G|$ is not a power of $p$, then $m > 1$, so $|P| = p^k < |G|$.
+\end{proof}
+
+\begin{rembox}[{The Sylow Test}]\label{rem:sylow-test}
+So to show that no group of order $n$ is simple, it suffices to find a prime $p \mid n$ such that the only divisor $d$ of $m$ with $d \equiv 1 \pmod p$ is $d = 1$ (Proposition~\ref{prop:np-normalizer-index}, Corollary~\ref{cor:unique-sylow-not-simple}). This rules out a large part of the table.
+\end{rembox}
+
+\begin{exbox}[{Order $21$}]\label{ex:order-21}
+$21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.)
+\srcline{lecture 10/23}
+\end{exbox}
+
+\begin{exbox}[{Four Orders That Survive the Sylow Test}]\label{ex:four-orders-survive}
+The class split into four groups to compute the candidates for $n_p$, namely the divisors $d$ of $m$ with $d \equiv 1 \pmod p$:
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{c|c}
+\multicolumn{2}{c}{$12 = 2^2 \cdot 3$} \\ \hline
+$p$ & $n_p$ \\ \hline
+$2$ & $1, 3$ \\
+$3$ & $1, 4$
+\end{tabular}
+\qquad
+\begin{tabular}{c|c}
+\multicolumn{2}{c}{$56 = 2^3 \cdot 7$} \\ \hline
+$p$ & $n_p$ \\ \hline
+$2$ & $1, 7$ \\
+$7$ & $1, 8$
+\end{tabular}
+\qquad
+\begin{tabular}{c|c}
+\multicolumn{2}{c}{$60 = 2^2 \cdot 3 \cdot 5$} \\ \hline
+$p$ & $n_p$ \\ \hline
+$2$ & $1, 3, 5, 15$ \\
+$3$ & $1, 4, 10$ \\
+$5$ & $1, 6$
+\end{tabular}
+\qquad
+\begin{tabular}{c|c}
+\multicolumn{2}{c}{$80 = 2^4 \cdot 5$} \\ \hline
+$p$ & $n_p$ \\ \hline
+$2$ & $1, 5$ \\
+$5$ & $1, 16$
+\end{tabular}
+\end{center}
+For each of these orders and each prime, some $n_p > 1$ is allowed, so the Sylow test alone does not rule them out. (The lecture also corrected the slides: $18 = 2 \cdot 3^2$ should be marked $\diamondsuit 3$, since $n_3 \mid 2$ and $n_3 \equiv 1 \pmod 3$ force $n_3 = 1$.)
+\srcline{lecture 10/23}
+\end{exbox}
+
+\begin{propbox}[{The Conjugation Homomorphism $G \to S_{n_p}$}]\label{prop:conjugation-hom-sylow}
+Suppose $n_p > 1$. Numbering the Sylow $p$-subgroups $1, \ldots, n_p$, the conjugation action gives a homomorphism
+\[ \varphi: G \to S_{n_p}. \]
+Then $\operatorname{Ker}\varphi \neq G$. Consequently, if $G$ is simple, then $\varphi$ is injective and $|G|$ divides $n_p!$. Equivalently: if $|G| \nmid n_p!$, then $\operatorname{Ker}\varphi$ is a proper nontrivial normal subgroup and $G$ is not simple.
+\srcline{lecture 10/23}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} a transitive action on $n_p > 1$ points is not trivial, so its kernel is a normal subgroup other than $G$.\par
+An action on a set with $n_p$ elements is a homomorphism to $S_{n_p}$ (Theorem~\ref{thm:actions-homomorphisms-sx}). By the Second Sylow Theorem (Theorem~\ref{thm:sylow-second}) the action is transitive, and there are $n_p > 1$ points, so some $g$ moves some point: $\varphi$ is not trivial, i.e.\ $\operatorname{Ker}\varphi \neq G$. Kernels are normal (Proposition~\ref{prop:kernels-normal}), so if $G$ is simple then $\operatorname{Ker}\varphi = \{e\}$, and $\varphi$ is injective. Then $G \cong \varphi(G) \leq S_{n_p}$ (First Isomorphism Theorem, Theorem~\ref{thm:first-isomorphism-theorem}), so $|G|$ divides $|S_{n_p}| = n_p!$ by Lagrange (Theorem~\ref{thm:lagrange}).
+\end{proof}
+
+\begin{exbox}[{Orders $12$ and $80$}]\label{ex:orders-12-80}
+\begin{enumerate}
+    \item $|G| = 12$. If $n_2 = 1$, the Sylow $2$-subgroup is normal. If $n_2 = 3$, we get $\varphi: G \to S_3$, and $12 > 6 = |S_3|$, so $\varphi$ is not injective: $\operatorname{Ker}\varphi$ is a proper nontrivial normal subgroup. Either way $G$ is not simple. (Marked $\blacksquare 2$.)
+    \item $|G| = 80$. If $n_2 = 1$ we are done. If $n_2 = 5$, we get $\varphi: G \to S_5$ with $|S_5| = 5! = 120$. Here $80 < 120$, but $80 \nmid 120$, so again $\varphi$ is not injective. (Marked $\blacksquare 2$.)
+\end{enumerate}
+This test does not kill $56$ or $60$: $56$ divides $7!$ and $8!$, and $60$ divides $5!$, $6!$, $10!$ and $15!$.
+\srcline{lecture 10/23}
+\end{exbox}
+
+\begin{lembox}[{Homomorphisms That Leave $A_N$}]\label{lem:leave-an}
+Let $\varphi: G \to S_N$ be a homomorphism with $\varphi(G) \not\subseteq A_N$, and suppose $|G| > 2$. Then $G$ is not simple: $\varphi^{-1}(A_N)$ is a normal subgroup of $G$ of index $2$.
+\srcline{lecture and slides 10/23}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} the composite $\sgn \circ \varphi : G \to \{\pm 1\}$ is a homomorphism onto a group of order $2$; its kernel is normal, not all of $G$, and not trivial.\par
+\textit{(Board 10/23; the lecture's version: normal subgroups come from kernels, so to find one, build a map.)} Let $\psi = \sgn \circ \varphi: G \to S_N \to \{\pm 1\}$, a homomorphism (Theorem~\ref{thm:sign-homomorphism}). Then $\operatorname{Ker}\psi \trianglelefteq G$ (Proposition~\ref{prop:kernels-normal}). $\operatorname{Ker}\psi \neq G$, because $\operatorname{Ker}\psi = \varphi^{-1}(\operatorname{Ker}\sgn) = \varphi^{-1}(A_N)$ (Definition~\ref{def:alternating-group-an}) and $\varphi(G) \not\subseteq A_N$. And $\operatorname{Ker}\psi \neq \{e\}$, because $|G| > 2 = |\{\pm 1\}|$, so $\psi$ cannot be injective. Hence $\operatorname{Ker}\psi$ is a proper nontrivial normal subgroup. It has index $2$: $\psi$ is onto $\{\pm 1\}$ (its image is not $\{1\}$), so $G/\operatorname{Ker}\psi \cong \{\pm 1\}$ (Theorem~\ref{thm:first-isomorphism-theorem}).
+\end{proof}
+
+\begin{proof}[Second proof (indices)]
+\textit{(Not from class.)} Let $H = \varphi^{-1}(A_N)$. It is normal in $G$: for $h \in H$ and $g \in G$, $\varphi(ghg^{-1}) = \varphi(g)\varphi(h)\varphi(g)^{-1} \in A_N$, because $A_N \trianglelefteq S_N$ (it is the kernel of $\sgn$, Proposition~\ref{prop:kernels-normal}). The rule $gH \mapsto \varphi(g)A_N$ is well defined and injective ($\varphi(g)A_N = \varphi(g')A_N \iff \varphi(g^{-1}g') \in A_N \iff g^{-1}g' \in H$), so $[G : H] \leq [S_N : A_N] = 2$. Hence $|H| \geq |G|/2 > 1$, so $H \neq \{e\}$; and $H \neq G$ because $\varphi(G) \not\subseteq A_N$.
+\end{proof}
+
+\begin{corbox}[{Simple Groups Land in $A_{n_p}$}]\label{cor:simple-land-an}
+If $G$ is simple with $|G| > 2$, then every homomorphism $G \to S_N$ has image in $A_N$. In particular, if $n_p > 1$, then $G$ embeds in $A_{n_p}$, and $|G|$ divides $n_p!/2$.
+\srcline{lecture and slides 10/23}
+\end{corbox}
+
+\begin{proof}
+The first statement is Lemma~\ref{lem:leave-an}. For the second, the map $\varphi: G \to S_{n_p}$ of Proposition~\ref{prop:conjugation-hom-sylow} is injective with image in $A_{n_p}$, so $|G|$ divides $|A_{n_p}| = n_p!/2$ by Lagrange (Theorem~\ref{thm:lagrange}).
+\end{proof}
+
+\begin{exbox}[{Order $112$}]\label{ex:order-112}
+The first order where the lemma is needed for the Sylow action is beyond the table: $112 = 2^4 \cdot 7$. Here $n_2 \in \{1, 7\}$ and $n_7 \in \{1, 8\}$. If $G$ were simple, $n_2 = 7$ and $G$ would embed in $S_7$. Now $112$ divides $7! = 5040$ ($5040 = 45 \cdot 112$), so Proposition~\ref{prop:conjugation-hom-sylow} alone does not help; but $112 \nmid 7!/2 = 2520$, so by Corollary~\ref{cor:simple-land-an} $G$ is not simple.
+\srcline{slides 10/23}
+\end{exbox}
+
+\begin{rembox}[{Other Embeddings}]\label{rem:other-embeddings}
+The homework uses another way of mapping a group into a symmetric group, besides the action on Sylow subgroups, together with the lemma, to rule out the orders $30$ and $90$, and yet another trick to rule out $56$. These are left to the homework.
+\srcline{slides 10/23}
+\end{rembox}
+
+\begin{thmbox}[{Simple Groups of Order at Most $100$}]\label{thm:simple-order-le-100}
+If $G$ is a simple group with $|G| \leq 100$, then either $G \cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or $|G| = 60$.
+\srcline{lecture 10/23}
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+The results of this section rule out every order except the primes and $30$, $56$, $60$, $90$. The cases $30$, $56$ and $90$ are on the current homework (Problem Set 7), to be added after submission.
+\end{proof}
+
+Since $A_5$ is simple of order $60$ (Proposition~\ref{prop:a5-simple}), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Once filled in, the proof also gives Theorem~\ref{thm:a5-smallest-non-abelian-simple-group}: every non-abelian simple group has order at least $60$.
+
+\begin{rembox}[{The Classification of Finite Simple Groups}]\label{rem:classification-finite-simple}
+\textit{(Overview only.)} The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.
+\begin{enumerate}
+    \item The cyclic groups $\mathbb{Z}/p\mathbb{Z}$, $p$ prime.
+    \item The alternating groups $A_n$ for $n \neq 1, 2, 4$. ($A_1$ and $A_2$ are trivial and $A_4$ is not simple; $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is already in the first family, so one usually says $n \geq 5$.)
+    \item The groups of Lie type, very roughly groups of matrices with entries in a finite field. The most tractable are the $PSL_n(\mathbb{F}_q)$, $\mathbb{F}_q$ a finite field with $q$ elements, $n \geq 2$, except $(n, q) = (2, 2)$ and $(2, 3)$, where $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ (Theorem~\ref{thm:psln-f-simple}). There are coincidences between the families: $PSL_2(\mathbb{F}_4) \cong PSL_2(\mathbb{F}_5) \cong A_5$.
+    \item $26$ sporadic groups, which fit in no family. The largest is the \textbf{Monster}, of order
+    \[ 2^{46} \cdot 3^{20} \cdot 5^{9} \cdot 7^{6} \cdot 11^{2} \cdot 13^{3} \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71 \approx 8 \times 10^{53}. \]
+    For a long time this order was a number that passed every test without anyone being able to construct a group of that order, and no proof of the classification could be complete until the Monster was either constructed or ruled out. (It was first constructed by Robert Griess, around 1980--82; later constructions are due to Conway and others. Not from class.)
+\end{enumerate}
+In the lecturer's working summary: there is $\mathbb{Z}/p\mathbb{Z}$, there are the alternating groups, there is $PSL$ and things like it, and there are the sporadic groups.
+\srcline{lecture 10/23}
+\end{rembox}
+
+\begin{rembox}[{Where the Groups of Lie Type Come From}]\label{rem:lie-type-origin}
+\textit{(Overview only.)} A \textbf{Lie group} is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
+\begin{align*}
+O_n(\mathbb{R}) &= \{ g \in GL_n(\mathbb{R}) : g g^{T} = I_n \} && \text{(orthogonal group)}, \\
+U_n(\mathbb{C}) &= \{ g \in GL_n(\mathbb{C}) : g \bar{g}^{T} = I_n \} && \text{(unitary group)}, \\
+Sp(n) &= \{ g \in GL_n(\mathbb{H}) : g \bar{g}^{T} = I_n \} && \text{(quaternionic unitary group)},
+\end{align*}
+where $\mathbb{H}$ denotes the quaternions (notation for the third family varies), together with five exceptional groups with the unbeautiful names $E_6$, $E_7$, $E_8$, $F_4$, $G_2$. The groups of Lie type arise by replacing $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ by finite fields and doing the analogous constructions with matrices over finite fields. For example, the $n \times n$ matrices over $\mathbb{F}_q$ with $gg^{T} = I_n$ form a finite orthogonal group, and passing to a suitable subgroup and quotient (in the spirit of $SL_n \to PSL_n$) gives simple groups. There are choices when making this replacement, so a single family on the Lie side can give several families of finite groups.
+\srcline{lecture 10/23}
+\end{rembox}
+
+
 \appendix
 \chapter{Review: Toolkits, Standard Examples, and Traps}\label{ch:review}
 
@@ -6237,6 +6588,7 @@ Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
     \item \textbf{To show $H/N$ is abelian.} Show that every commutator $ghg^{-1}h^{-1}$ of $H$ lies in $N$ (Abelian Quotients and Commutators, \ref{sec:commutators}).
     \item \textbf{To show $G$ is solvable.} Exhibit a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ with abelian quotients (e.g.\ $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$), or compute the derived series down to $\{e\}$ (\ref{sec:solvable}, \ref{sec:derived-series}). To show $G$ is \emph{not} solvable, find a non-abelian simple subgroup or quotient, e.g.\ $A_5$.
     \item \textbf{To put a $p$-subgroup inside a Sylow subgroup.} Let it act on $\Gamma/\Pi$, whose size is prime to $p$; a fixed coset $\gamma\Pi$ gives $P \subseteq \gamma\Pi\gamma^{-1}$ (WS 10.1, \ref{sec:sylow-theorems}).
+    \item \textbf{To show no group of order $n$ is simple.} If $n = p^k$ ($k \geq 2$), use the center (Proposition~\ref{prop:primes-prime-powers-simple}). Otherwise list the candidates for $n_p$, the divisors of $m$ that are $\equiv 1 \pmod p$: if $n_p = 1$ is forced, the Sylow $p$-subgroup is normal (Corollary~\ref{cor:unique-sylow-not-simple}); if $n_p > 1$, conjugation gives $G \to S_{n_p}$, which must be injective with image in $A_{n_p}$, so check whether $|G|$ divides $n_p!/2$ (Corollary~\ref{cor:simple-land-an}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -6257,7 +6609,7 @@ $S_3$ & $6$ & no / no & $\{e\}$ & sizes $1, 3, 2$ & $\{e\}$, $A_3 = \langle (1\,
 $S_4$ & $24$ & no / no & $\{e\}$ & sizes $1, 6, 3, 8, 6$ (types $1^4, 2\,1^2, 2^2, 3\,1, 4$) & $\{e\}$, $K$, $A_4$, $S_4$ (\ref{sec:normal-sources}) \\
 \end{longtable}}
 
-Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/K \cong S_3$, $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}). $S_n$ is solvable exactly for $n \leq 4$ (\ref{sec:derived-series}); $S_3$ has $3$ Sylow $2$-subgroups and $1$ Sylow $3$-subgroup, and $S_4$ has $3$ (of order $8$) and $4$ (\ref{sec:p-groups}).
+Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/K \cong S_3$, $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}). $S_n$ is solvable exactly for $n \leq 4$ (\ref{sec:derived-series}); $S_3$ has $3$ Sylow $2$-subgroups and $1$ Sylow $3$-subgroup, and $S_4$ has $3$ (of order $8$) and $4$ (\ref{sec:p-groups}); a simple group of order $\leq 100$ is $\mathbb{Z}/p\mathbb{Z}$ or has order $60$ (\ref{sec:small-simple-groups}).
 
 \section*{Exam Traps}\phantomsection
 \addcontentsline{toc}{section}{Exam Traps}\label{sec:traps}
@@ -6320,6 +6672,7 @@ Mon Oct 12 \newline lecture; Worksheet 10 & WS 9.6 completed; $p$-subgroups and 
 Wed Oct 14 \newline Worksheet 10 & WS 10.3 proved, hence the First Sylow Theorem; WS 10.5(2); Sylow I--III stated; $GL_2(\mathbb{F}_5)$ example & \ref{sec:p-groups}, \ref{sec:sylow-theorems} \\
 Fri Oct 16 \newline lecture & Sylow II proved from WS 10.3; Sylow III proved ($P$ acting on the Sylow subgroups by conjugation); a normal Sylow subgroup is unique; $n_p \mid |G|$; the six Sylow $5$-subgroups of $S_5$; groups of order $15$ and $pq$ & \ref{sec:sylow-theorems} \\
 Wed Oct 21 \newline review session & Midterm review: cube orbits and stabilizers; the sign character (second proof via $\Delta$); solvable groups and $D_k(G)$; PS 5.4 pictured; the correspondence theorem (indices) & \ref{sec:action-examples}, \ref{sec:sign}, \ref{sec:derived-series}, \ref{sec:commutators}, \ref{sec:second-iso} \\
+Fri Oct 23 \newline lecture; slides & Simple groups of order $\leq 100$: $p$-groups via the center; the normalizer and $n_p \mid m$; $n_p = 1$; the conjugation map $G \to S_{n_p}$; leaving $A_N$; orders $21, 12, 80, 112$; overview of the classification and of compact Lie groups & \ref{sec:small-simple-groups} \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

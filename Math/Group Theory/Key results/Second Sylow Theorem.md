@@ -18,6 +18,8 @@ tags: [group-theory, hub]
 - [[§52 The Sylow Theorems#^cor-52-7|Corollary §52.7: A Normal Sylow Subgroup Is the Only One]]
 - [[§52 The Sylow Theorems#^thm-52-9|Theorem §52.9: The Third Sylow Theorem]]
 - [[§52 The Sylow Theorems#^cor-52-10|Corollary §52.10: The Number of Sylow Subgroups Divides ∣G∣]]
+- [[§53 Simple Groups of Small Order#^prop-53-2|Proposition §53.2: n_p and the Normalizer]]
+- [[§53 Simple Groups of Small Order#^prop-53-4|Proposition §53.4: The Conjugation Homomorphism G → S_n_p]]
 
 ## Connections
 - TODO

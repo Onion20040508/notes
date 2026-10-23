@@ -26,6 +26,7 @@ tags: [group-theory, hub]
 - [[§48 Solvable Groups#^prop-48-1|Proposition §48.1: S_3 and S_4 Are Solvable]]
 - [[§51 p-Groups and Sylow Subgroups#^thm-51-7|Theorem §51.7: Groups of Order p²]]
 - [[§52 The Sylow Theorems#^prop-52-11|Proposition §52.11: Groups of Order pq]]
+- [[§53 Simple Groups of Small Order#^prop-53-1|Proposition §53.1: Primes and Prime Powers]]
 
 ## Connections
 - **Used for.** [[§29 The Index and Lagrange's Theorem#^cor-29-8|No Proper Nontrivial Subgroups]] (§29.8). The abelian simple groups are exactly the ℤ/pℤ ([[§43 Simple Groups#^thm-43-1|§43.1]]). Every non-identity element is a generator ([[§29 The Index and Lagrange's Theorem#^rem-29-3|A Classification, for Once]]).
