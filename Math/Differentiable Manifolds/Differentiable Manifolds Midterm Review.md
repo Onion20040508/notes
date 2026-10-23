@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591, review]
 
 # Midterm Review: Plan and Checklist
 
-**The exam.** Wednesday Oct 21, 6–8 pm. **Scope (Uribe's email, Oct 14): everything through commutators of vector fields** — vector fields as sections of $TM$ and as operators on functions, the commutator of two vector fields ("make sure you know how to compute it"), and the notion and properties of $F$-related fields, finished in Lecture 17 (Fri Oct 9). "Nothing about Lie groups is included", so §57 and Chapter 8 (Sard) are out. Review session Friday Oct 16 (previous exams and your questions; you can email him topics or old exam questions in advance). He is not available during the break, but a meeting on Wednesday Oct 21 can be arranged by email. Two past midterms (2025, 2021) have the same three parts, 5 points per item:
+**The exam.** Wednesday Oct 21, 6–8 pm. **Scope (Uribe's email, Oct 14): everything through commutators of vector fields** — vector fields as sections of $TM$ and as operators on functions, the commutator of two vector fields ("make sure you know how to compute it"), and the notion and properties of $F$-related fields, finished in Lecture 17 (Fri Oct 9). "Nothing about Lie groups is included", so §60–§61 and Chapter 9 (Sard) are out. Review session Friday Oct 16 (previous exams and your questions; you can email him topics or old exam questions in advance). He is not available during the break, but a meeting on Wednesday Oct 21 can be arranged by email. Two past midterms (2025, 2021) have the same three parts, 5 points per item:
 1. **Working with definitions**: explain or define precisely, e.g. $\partial/\partial x^j|_p$, $F_{\ast,p}$, a vector bundle, an atlas of $T^\ast M$, injective immersion vs embedding.
 2. **True or false with justification**: a proof or a counterexample.
 3. **Short proofs and computations**: a lecture theorem reproved from a normal form, a transversality condition, a matrix manifold and its tangent space, a differential computed from the definition.
@@ -204,7 +204,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] 2021 midterm, Part 3.8: nonsingular $dF_p$ with image in a half-space. Which property of local diffeomorphisms decides it?
 - [ ] 2021 midterm, Part 2.6: two regular values, and the pair $(f, g)$ (compare Proposition [[§36 Submersions#^prop-36-4|§36.4]] Submersions to $\mathbb{R}^k$ and Independent Differentials).
 
-## T7. Regular submanifolds and transversality (§26, §37)
+## T7. Regular submanifolds and transversality (§26, §37–§39)
 **Language**
 - [ ] Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] Regular Submanifold, Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]] Adapted Chart
 - [ ] Definition [[§26 Transversality#^def-26-2|§26.2]] Transversality, Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] Transversality to a Submanifold
@@ -227,7 +227,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] 2021 midterm, Part 3.9: the differential of a restriction to an invariant submanifold.
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw2-5|HW2.5]], [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]], [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]]
 
-## T8. Fibrations (§38–§40)
+## T8. Fibrations (§40–§42)
 **Language**
 - [ ] Definition [[§40 Fibrations#^def-40-1|§40.1]] Fibration, Definition [[§40 Fibrations#^def-40-2|§40.2]] Trivial Fibration, Definition [[§40 Fibrations#^def-40-3|§40.3]] Section, Definition [[§40 Fibrations#^def-40-4|§40.4]] Local Section, Definition [[§40 Fibrations#^def-40-5|§40.5]] Vertical Space
 - [ ] Vector bundle: your own box (see the gap above).
@@ -245,7 +245,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] 2021 midterm, Part 2.5: is every surjective submersion a fibration?
 - [ ] 2025 midterm, Part 1.3: explain a vector bundle.
 
-## T9. Immersions and embeddings (§41–§42)
+## T9. Immersions and embeddings (§43–§44)
 **Language**
 - [ ] Definition [[§43 Immersions#^def-43-1|§43.1]] Immersions, Definition [[§44 Embeddings#^def-44-1|§44.1]] Embedding, Definition [[§44 Embeddings#^def-44-2|§44.2]] Proper Map, Definition [[§44 Embeddings#^def-44-3|§44.3]] Locally Closed Subset, Definition [[§44 Embeddings#^def-44-4|§44.4]] Immersed Submanifold
 
@@ -264,7 +264,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] 2021 midterm, Part 2.4: is a composition of embeddings an embedding?
 - [ ] 2025 midterm, Part 2.7: is an injective immersion of $S^m$ an embedding?
 
-## T10. Tangent and cotangent bundles, one-forms, the Hessian (§47–§52)
+## T10. Tangent and cotangent bundles, one-forms, the Hessian (§49–§55)
 **Language**
 - [ ] Definition [[§51 The Tangent Bundle#^def-51-1|§51.1]] The Tangent Bundle as a Set, Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]] Local Trivializations of $TM$, Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]] Charts of $TM$
 - [ ] Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]] Charts of $T^{\ast}M$: *give a smooth atlas of $T^\ast M$* (2021 Part 1.2).
@@ -280,8 +280,8 @@ The notes show the course building each object more than once and then proving t
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T10|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T10|proofs and class exercises]]
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]
 
-## T11. Vector fields, the bracket, $F$-related fields (§53–§56)
-In scope exactly as Uribe's email lists it. Lie groups (§57) are **not** on the midterm.
+## T11. Vector fields, the bracket, $F$-related fields (§56–§59)
+In scope exactly as Uribe's email lists it. Lie groups (§60–§61) are **not** on the midterm.
 
 **Language**
 - [ ] Definition [[§56 Vector Fields#^def-56-1|§56.1]] Vector Field, Definition [[§56 Vector Fields#^def-56-2|§56.2]] The Space of Vector Fields, Definition [[§56 Vector Fields#^def-56-3|§56.3]] Product of a Function and a Vector Field: a vector field as a section of $TM$.

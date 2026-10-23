@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (24), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (9), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (14), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (3)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (24), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (9), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (5), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (9), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (3)
 **Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (16), [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (6)
 
 ## Sections

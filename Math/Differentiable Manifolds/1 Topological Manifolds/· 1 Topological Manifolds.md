@@ -9,8 +9,8 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (2)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (75), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (39), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (69), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (19), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (1), [[· 8 Sard's Theorem|8 Sard's Theorem]] (1)
+**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (2)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (75), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (39), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (37), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (32), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (19), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (66), [[Multivariable Analysis]] (5)
 
 ## Sections

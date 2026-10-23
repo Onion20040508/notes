@@ -30,10 +30,11 @@ graph TD
   C2["2 Topological Groups and Homogeneous Spaces"]
   C3["3 Smooth Structures"]
   C4["4 Tangent and Cotangent Spaces"]
-  C5["5 Maps of Constant Rank and Fibrations"]
-  C6["6 Tangent and Cotangent Bundles"]
-  C7["7 Vector Fields and Lie Groups"]
-  C8["8 Sard's Theorem"]
+  C5["5 Submersions, Submanifolds and Fibrations"]
+  C6["6 Immersions, Embeddings and Examples"]
+  C7["7 Tangent and Cotangent Bundles"]
+  C8["8 Vector Fields and Lie Groups"]
+  C9["9 Sard's Theorem"]
   X1["Topology (590)"]
   X2["Multivariable Analysis (452)"]
   X3["Linear Algebra (LADR)"]
@@ -44,8 +45,10 @@ graph TD
   C3 --> C4
   C4 --> C5
   C5 --> C6
-  C6 --> C7
+  C5 --> C7
+  C6 --> C8
   C7 --> C8
+  C8 --> C9
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C3 -.->|on credit| C2
@@ -53,29 +56,32 @@ graph TD
   C4 -.->|on credit| C2
   C5 -.->|on credit| C1
   C5 -.->|on credit| C3
-  C8 -.->|on credit| C7
+  C6 -.->|on credit| C5
+  C9 -.->|on credit| C8
   X4 -.->|9| C2
-  X4 -.->|7| C5
+  X4 -.->|7| C6
   X3 -.->|8| C1
   X3 -.->|18| C2
   X3 -.->|10| C3
   X3 -.->|16| C4
-  X3 -.->|12| C5
-  X3 -.->|2| C6
+  X3 -.->|2| C5
+  X3 -.->|10| C6
   X3 -.->|2| C7
+  X3 -.->|2| C8
   X2 -.->|5| C1
   X2 -.->|6| C2
   X2 -.->|12| C3
   X2 -.->|10| C4
-  X2 -.->|4| C5
-  X2 -.->|2| C7
+  X2 -.->|3| C6
+  X2 -.->|2| C8
   X5 -.->|2| C4
   X1 -.->|66| C1
   X1 -.->|16| C2
   X1 -.->|17| C3
   X1 -.->|4| C4
-  X1 -.->|41| C5
-  X1 -.->|2| C7
+  X1 -.->|12| C5
+  X1 -.->|29| C6
+  X1 -.->|2| C8
 ```
 
 ## Chapters
@@ -83,10 +89,11 @@ graph TD
 - [[· 2 Topological Groups and Homogeneous Spaces]]
 - [[· 3 Smooth Structures]]
 - [[· 4 Tangent and Cotangent Spaces]]
-- [[· 5 Maps of Constant Rank and Fibrations]]
-- [[· 6 Tangent and Cotangent Bundles]]
-- [[· 7 Vector Fields and Lie Groups]]
-- [[· 8 Sard's Theorem]]
+- [[· 5 Submersions, Submanifolds and Fibrations]]
+- [[· 6 Immersions, Embeddings and Examples]]
+- [[· 7 Tangent and Cotangent Bundles]]
+- [[· 8 Vector Fields and Lie Groups]]
+- [[· 9 Sard's Theorem]]
 
 ## Planned topics (syllabus)
 Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56, as derivations of $C^\infty(M)$; differential operators, §57; the Lie bracket, §58; related vector fields, §59); one-forms ✓ (§53; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem; transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §60; Lie group morphisms and linear groups, §61; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.

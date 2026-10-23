@@ -9,8 +9,8 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (75), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (24), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (103), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (157), [[· 6 Tangent and Cotangent Bundles|6 Tangent and Cotangent Bundles]] (55), [[· 7 Vector Fields and Lie Groups|7 Vector Fields and Lie Groups]] (33), [[· 8 Sard's Theorem|8 Sard's Theorem]] (2)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (75), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (24), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (103), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (112), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (45), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (55), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (33), [[· 9 Sard's Theorem|9 Sard's Theorem]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (17), [[Multivariable Analysis]] (12)
 
 ## Sections

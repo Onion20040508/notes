@@ -700,7 +700,7 @@ $\Pi : S^{2n+1} \to \mathbb{CP}^n$, $U_i$ as in HW2.2. Show there is a smooth $s
 - [ ] Q3 Show each $z \in \Pi^{-1}(U_i)$ is $\lambda\,s_i(\Pi(z))$ for a unique $\lambda \in S^1$, namely $z_i/|z_i|$.
 - [ ] Q4 Write $\Phi_i$ and $\Psi_i$, check they are inverse, equivariant, and that $\mathrm{pr}_1\circ\Phi_i = \Pi$.
 - [ ] Q5 Justify smoothness of $\Phi_i$, $\Psi_i$ (maps into the submanifolds $S^{2n+1}$ and $S^1$).
-- [ ] Q6 **[why]** Why only local sections: why is there no global section for $n \ge 1$ (Cor §44.2)?
+- [ ] Q6 **[why]** Why only local sections: why is there no global section for $n \ge 1$ (Cor §46.2)?
 - [ ] Q7 **[why]** Why is the second component $z_i/|z_i|$ rather than $z_i$, and why must $s_i(u)$ have positive real $i$-th entry for $\Phi_i\circ s_i = (\cdot, 1)$?
 
 > [!tip]- Hints: definitions, results, strategy
@@ -741,7 +741,7 @@ Show the image of $\gamma$ is dense in $T$, and deduce $\gamma$ is not an embedd
 - [ ] Q5 State Dirichlet's lemma and show $\gamma(n_N) \to \gamma(0)$ with $n_N \ge 1$.
 - [ ] Q6 Show $\{e^{2\pi i\alpha k}\}_{k\in\mathbb{Z}}$ is dense in $S^1$ (powers of $w_N = e^{i\theta_N}$ with $0 < |\theta_N| < 2\pi/N$), and deduce $\gamma(\mathbb{R})$ dense.
 - [ ] Q7 Show $\gamma^{-1} : \gamma(\mathbb{R}) \to \mathbb{R}$ is not continuous.
-- [ ] Q8 Second proof: images of embeddings are locally closed (Prop §42.7); a dense locally closed set is open (Cor §42.8). Why is $\gamma(\mathbb{R})$ not open in $T$?
+- [ ] Q8 Second proof: images of embeddings are locally closed (Prop §44.7); a dense locally closed set is open (Cor §44.8). Why is $\gamma(\mathbb{R})$ not open in $T$?
 - [ ] Q9 **[why]** What if $\alpha$ is rational? Is $\gamma$ injective; what is its image?
 
 > [!tip]- Hint (b): strategy
@@ -803,7 +803,7 @@ $F : M \to N$ smooth, $S \subset N$ a regular submanifold, $F$ transverse to $S$
 >
 > **Strategy (S12, S11, S8, S6).** Locally $S = x_b^{-1}(0)$ with $x_b$ a submersion; transversality makes $x_b\circ F$ a submersion at $p$ (the HW2.5 lifting); RVT or normal form gives an adapted chart; tangent space by "$\subseteq$ + dimension count".
 >
-> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_\ast$ is computed directly (now Prop §37.7 and Lem §37.11).
+> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_\ast$ is computed directly (now Prop §37.7 and Lem §38.1).
 
 ### HW5.3 Morse functions and the zero section
 
@@ -822,7 +822,7 @@ $s_f(p) = (p, df_p)$; $s_f^{-1}(\mathcal{Z}) = \mathrm{Crit}(f)$. Show $s_f$ is 
 - [ ] Q3 Compute $(s_f)_{\ast p}(\partial/\partial x^i|_p)$ at a critical point.
 - [ ] Q4 Compute $T_{(p,0)}\mathcal{Z}$ inside $T_{(p,0)}T^{\ast}M$.
 - [ ] Q5 Show the sum is everything iff $\det H_p \neq 0$ (block determinant, or: modulo $T\mathcal{Z}$ only the $\xi$-components matter).
-- [ ] Q6 **[why]** Why is non-degeneracy of $H_p$ independent of the chart at a critical point, while the Hessian matrix itself depends on the chart elsewhere (Ex §52.1, Prop §52.2)?
+- [ ] Q6 **[why]** Why is non-degeneracy of $H_p$ independent of the chart at a critical point, while the Hessian matrix itself depends on the chart elsewhere (Ex §54.1, Prop §54.2)?
 - [ ] Q7 **[why]** Why does transversality only need checking at critical points?
 
 > [!tip]- Hint (a): strategy
@@ -837,8 +837,8 @@ $f$ is Morse iff all critical points are non-degenerate. What can you say about 
 - [ ] Q8 **[def]** Define a Morse function.
 - [ ] Q9 Apply HW5.2 to compute the codimension of $\mathrm{Crit}(f)$.
 - [ ] Q10 Show a $0$-dimensional regular submanifold is a discrete set of isolated points.
-- [ ] Q11 On a compact $M$, why are there finitely many critical points (Cor §52.12)?
-- [ ] Q12 **[why]** For $f(x) = x^3$ on $\mathbb{R}$: is $0$ nondegenerate? Is $s_f$ transverse to $\mathcal{Z}$ there (Ex §52.2)?
+- [ ] Q11 On a compact $M$, why are there finitely many critical points (Cor §55.9)?
+- [ ] Q12 **[why]** For $f(x) = x^3$ on $\mathbb{R}$: is $0$ nondegenerate? Is $s_f$ transverse to $\mathcal{Z}$ there (Ex §55.1)?
 
 > [!tip]- Hint (b): strategy
 > **Strategy (S12).** HW5.2: $\mathrm{Crit}(f) = s_f^{-1}(\mathcal{Z})$ is a regular submanifold of codimension $m$, i.e. dimension $0$: discrete.
@@ -848,7 +848,7 @@ $f$ is Morse iff all critical points are non-degenerate. What can you say about 
 >
 > **Key results.** Zero section is a regular submanifold [[§55 Morse Functions and the Zero Section#^prop-55-1|Prop §55.1]]; Hessian change of coordinates [[§54 Critical Points and the Hessian#^prop-54-2|Prop §54.2]], [[§54 Critical Points and the Hessian#^ex-54-1|Ex §54.1]]; well defined at a critical point [[§54 Critical Points and the Hessian#^prop-54-3|Prop §54.3]]; vertical space along $\mathcal{Z}$ [[§55 Morse Functions and the Zero Section#^prop-55-5|Prop §55.5]]; $d(df)$ at a critical point [[§55 Morse Functions and the Zero Section#^prop-55-6|Prop §55.6]]; [[§55 Morse Functions and the Zero Section#^thm-55-7|Thm §55.7]] (part (a)); [[§55 Morse Functions and the Zero Section#^ex-55-1|Ex §55.1]]; [[§55 Morse Functions and the Zero Section#^cor-55-8|Cor §55.8]] (part (b)), [[§55 Morse Functions and the Zero Section#^cor-55-9|Cor §55.9]]; HW5.2 [[§39 Transversality and Lagrange Multipliers#^thm-39-1|Thm §39.1]].
 >
-> **Difficulty** (a) 2, (b) 1. Submitted solution: block determinant $\det A_p = (-1)^m\det H_p$, carefully derived $H_{ij} = \partial_{x^i}(\partial f/\partial x^j)$. The notes give a second proof through the vertical splitting along $\mathcal{Z}$ (Prop §52.8) and keep the determinant as the second proof. Official solution of (b): stops at "$\mathrm{Crit}(f)$ is a regular submanifold" and never states the codimension $m$, i.e. that critical points are isolated (Q9–Q10); your solution and Cor §52.11 give the full answer.
+> **Difficulty** (a) 2, (b) 1. Submitted solution: block determinant $\det A_p = (-1)^m\det H_p$, carefully derived $H_{ij} = \partial_{x^i}(\partial f/\partial x^j)$. The notes give a second proof through the vertical splitting along $\mathcal{Z}$ (Prop §55.5) and keep the determinant as the second proof. Official solution of (b): stops at "$\mathrm{Crit}(f)$ is a regular submanifold" and never states the codimension $m$, i.e. that critical points are isolated (Q9–Q10); your solution and Cor §55.8 give the full answer.
 
 ### HW5.4 Lagrange multipliers revisited
 
