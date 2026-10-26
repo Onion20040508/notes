@@ -373,7 +373,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 *Uses:* [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-7|Theorem §CA.7.7]]
 
-<!-- HELD until Problem Set 8 is submitted (Nov 1; qft-C/HOLD-PS8.md, user decision D3): Theorem §CA.7.9 The exponential formula (sum over diagrams whose components are all vacuum diagrams, weighted 1/S, = exp of the sum over connected vacuum diagrams; S of n_i identical copies = n_i! S_i^{n_i}) and its corollary PS (4.52). Insert here, before the remarks. -->
+<!-- HELD until Problem Set 8 is submitted (Nov 1): insertion point; see qft-C/HOLD-PS8.md and PAUSED-2026-10-08.md. -->
 
 > [!remark] Remark: Sums over pairings as sums over diagrams
 > If a function $f$ on $\mathcal P(X_{E,n})$ is constant on the orbits of $G_n$, then by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]]
