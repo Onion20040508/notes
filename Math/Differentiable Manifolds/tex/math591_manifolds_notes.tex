@@ -18995,7 +18995,7 @@ Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a 
 
 \textit{Lecture 21. ``There isn't enough time in the semester to cover everything that's on the syllabus, and the only way to cover more is to skip some proofs \ldots\ I never quite get to degree theory, which is a really cool topic that is officially on the syllabus. So I will be assigning reading.'' Then: ``Today we're going to talk about the Whitney embedding and immersion theorems.''}
 
-The proof, for $M$ compact, has two parts with ``totally different'' ideas: bump functions embed $M$ in some $\mathbb{R}^k$ (Lemma~\ref{lem:compact-embeds}), and projections along well-chosen lines lower the dimension (Lemmas~\ref{lem:projection-injective} and~\ref{lem:projection-immersion}). The lemmas come first; Theorem~\ref{thm:whitney} assembles them.
+The proof, for $M$ compact, has two parts with ``totally different'' ideas: bump functions embed $M$ in some $\mathbb{R}^k$ (Lemma~\ref{lem:compact-embeds}), and projections along well-chosen lines lower the dimension (Lemmas~\ref{lem:projection-injective} and~\ref{lem:projection-immersion}). The lemmas come first; Theorem~\ref{thm:whitney-compact} assembles them. The general case, Theorem~\ref{thm:whitney}, is sketched in \ref{sub:whitney-noncompact}.
 
 \begin{lembox}[Compact Manifolds Embed in Some $\mathbb{R}^k$]\thmlabel{lem:compact-embeds}
 Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embedding $F : M \to \mathbb{R}^k$ for some $k$.
@@ -19003,7 +19003,7 @@ Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embeddin
 \end{lembox}
 
 \begin{proof}
-\textit{(Lecture~21, Part~I of the proof of Theorem~\ref{thm:whitney}, in the lecture's steps with details filled in.)} ``We're going to use bump functions'' --- ``this idea of partition of unity \ldots\ is kind of behind it.''
+\textit{(Lecture~21, Part~I of the proof of Theorem~\ref{thm:whitney-compact}, in the lecture's steps with details filled in.)} ``We're going to use bump functions'' --- ``this idea of partition of unity \ldots\ is kind of behind it.''
 
 \emph{The cover.} For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ --- possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, ``and then I pull it back.'' Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition~\ref{prop:bump-existence}). The \emph{open} balls $B_x$ cover $M$ --- in lecture Uribe first wrote the cover with the $U_x$, and corrected it: ``I want to put a $B$. It's very important.'' $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
 
@@ -19050,7 +19050,7 @@ Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $
 \end{lembox}
 
 \begin{proof}
-\textit{(Lecture~21, Part~II of the proof of Theorem~\ref{thm:whitney}.)} ``The clever idea'': let $\Delta = \{ (p, p) : p \in M \}$, closed in $M \times M$ since $M$ is Hausdorff, and
+\textit{(Lecture~21, Part~II of the proof of Theorem~\ref{thm:whitney-compact}.)} ``The clever idea'': let $\Delta = \{ (p, p) : p \in M \}$, closed in $M \times M$ since $M$ is Hausdorff, and
 \[
 \sigma : (M \times M) \setminus \Delta \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, q) \longmapsto \operatorname{span}(q - p),
 \]
@@ -19115,18 +19115,12 @@ TM \setminus \mathcal{Z} \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, v) \longm
 with $T_pM \subseteq \mathbb{R}^N$ (``in the homework you replace this by $v$ of length one''), and choose $\ell$ also outside its image. ``What remains to be proved is that if you have a line that is not in here, then you get an immersion, and that's going to be precisely because the differential of the projection is just the projection.'' To be filled.
 \end{proof}
 
-\begin{thmbox}[The Whitney Embedding and Immersion Theorems]\thmlabel{thm:whitney}
-Let $M$ be a smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
-\leeref{Theorems 6.15 and 6.18}
+\begin{thmbox}[The Whitney Theorems for Compact Manifolds]\thmlabel{thm:whitney-compact}
+Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
+\leeref{Theorems 6.15 and 6.18, compact case}
 \end{thmbox}
 
-``In other words, any manifold is diffeomorphic to a submanifold of some Euclidean space'' (Theorem~\ref{thm:embedding-image}). The course proves it for $M$ compact. The noncompact case, which first makes the embedding proper, is assigned as reading in Lee (Lemma~6.14 and Theorem~6.15): ``he has a beautiful picture.''
-
-\begin{rembox}[The Hard Version]\label{rem:strong-whitney}
-In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). ``We will not discuss this at all. The proof is very specialized and really long \ldots\ The smaller the codimension, the tighter it is, and you have to wrestle the manifold more to get it in there. It's like packing your clothes in a suitcase.''
-\end{rembox}
-
-\begin{proof}[Proof for $M$ compact]
+\begin{proof}
 \textit{(Lecture~21, ``two steps \ldots\ totally different. The technology, the ideas are totally different.'' The steps are Lemma~\ref{lem:compact-embeds} and Lemmas~\ref{lem:projection-injective}--\ref{lem:projection-immersion}; the immersion lemma is a homework problem, to be filled in after the assignment.)}
 
 \emph{Step 1: some Euclidean space.} By Lemma~\ref{lem:compact-embeds} there is an embedding $M \to \mathbb{R}^N$ for some $N$. Its image is a regular submanifold diffeomorphic to $M$ (Theorem~\ref{thm:embedding-image}); replace $M$ by it.
@@ -19135,6 +19129,304 @@ In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{
 
 \emph{Step 3: repeat.} Apply Step~2 while $N > 2m + 1$, lowering $N$ by one each time, ``until we're out of parameters'': this ends with an embedding $M \to \mathbb{R}^{2m+1}$. The immersion into $\mathbb{R}^{2m}$ is part of the same homework, and is likewise to be filled.
 \end{proof}
+
+% ============================================================================
+% Lecture 22 (Mon Oct 26, 2026): the noncompact case, sketched
+% ============================================================================
+
+\subsection{The Noncompact Case: A Sketch}\label{sub:whitney-noncompact}
+
+\textit{Lecture 22. ``An indication of a sketch of proof, very sketchy \ldots\ I already said several times we can't prove everything,'' with ``chapter and verse'' of the rest in Lee to follow by email. The noncompact proof has the same two parts as the compact one --- first put $M$ in some Euclidean space, then project as much as you can --- and Uribe sketched only the first. ``The main tool is going to be a theorem that I hope to prove later'': the existence of exhaustion functions. ``Notation and terminology are key to doing math. It's a nice name, exhaustion function.''}
+
+\begin{defbox}[Exhaustion Function]\deflabel{def:exhaustion-function}
+An \textbf{exhaustion function} on $M$ is a smooth function $f : M \to \mathbb{R}$, $f \ge 0$, such that for every $c \in \mathbb{R}$ the \textbf{sublevel set} $f^{-1}\big((-\infty, c]\big)$ is compact.
+\leeref{Ch.~2, \emph{Exhaustion Functions}}
+\end{defbox}
+
+``The cartoon, which is used in Morse theory'': stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$ --- ``and it's not obvious, but these things always exist.''
+
+\begin{propbox}[Exhaustion Functions Exist]\thmlabel{prop:exhaustion-exists}
+Every smooth manifold admits an exhaustion function.
+\leeref{Proposition 2.28}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Announced in Lecture~22 and to be proved with partitions of unity (\S\ref{sec:partitions-of-unity}) --- ``right now we're sort of buying on credit. We have to pay the bill.''
+\end{proof}
+
+\textit{Slicing $M$ into compact pieces.} ``The idea is going to be that we're going to use these level sets \ldots\ to slice the manifold into compact pieces. They will have a boundary, but I'm going to ignore that. And basically, we're going to be able to embed each piece and keep track of overlaps.'' Let $f$ be an exhaustion function. Its singular values have measure zero (Theorem~\ref{thm:sard}), so every interval contains regular values; for each $i = 0, 1, 2, \ldots$ pick regular values $a_i, b_i$ with $i < a_i < b_i < i + 1$, and put
+\[
+E_i = f^{-1}\big([b_{i-1}, a_{i+1}]\big), \qquad D_i = f^{-1}\big([i, i+1]\big) \qquad (i \ge 1),
+\]
+with $E_0 = f^{-1}\big((-\infty, a_1]\big)$ and $D_0 = f^{-1}\big((-\infty, 1]\big)$ (``you have to do something a little bit different at the beginning''). Each $E_i$ is compact (a closed subset of a sublevel set), and a manifold with boundary, because $b_{i-1}$ and $a_{i+1}$ are regular values. Then $M = \bigcup_i D_i$, $D_i \subseteq \operatorname{Int}E_i$, and the observation ``that will be useful later'':
+\[
+E_i \cap E_{i+2} = \varnothing ,
+\]
+since $E_i \subseteq f^{-1}\big((-\infty, a_{i+1}]\big)$ and $E_{i+2} \subseteq f^{-1}\big([b_{i+1}, \infty)\big)$ with $a_{i+1} < b_{i+1}$; more generally $E_i \cap E_j = \varnothing$ when $|i - j| \ge 2$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+\fill[orange!25] plot coordinates {(-1.458,1.700) (-1.439,1.657) (-1.421,1.615) (-1.402,1.573) (-1.383,1.530) (-1.364,1.488) (-1.344,1.445) (-1.324,1.402) (-1.304,1.360) (-1.283,1.317) (-1.262,1.275) (-1.241,1.232) (-1.220,1.190) (-1.198,1.147) (-1.175,1.105) (-1.152,1.062) (-1.129,1.020) (-1.105,0.978) (-1.081,0.935) (-1.056,0.893) (-1.031,0.850) (-1.005,0.808) (-0.978,0.765) (-0.950,0.722) (-0.922,0.680) (-0.893,0.637) (-0.862,0.595) (-0.831,0.552) (-0.798,0.510) (-0.764,0.468) (-0.729,0.425) (-0.691,0.383) (-0.652,0.340) (-0.610,0.297) (-0.565,0.255) (-0.515,0.212) (-0.461,0.170) (-0.399,0.127) (-0.326,0.085) (-0.230,0.042) (-0.000,0.000) (0.230,0.042) (0.326,0.085) (0.399,0.128) (0.461,0.170) (0.515,0.212) (0.565,0.255) (0.610,0.297) (0.652,0.340) (0.691,0.382) (0.729,0.425) (0.764,0.467) (0.798,0.510) (0.831,0.552) (0.862,0.595) (0.893,0.637) (0.922,0.680) (0.950,0.722) (0.978,0.765) (1.005,0.807) (1.031,0.850) (1.056,0.892) (1.081,0.935) (1.105,0.978) (1.129,1.020) (1.152,1.062) (1.175,1.105) (1.198,1.147) (1.220,1.190) (1.241,1.232) (1.262,1.275) (1.283,1.317) (1.304,1.360) (1.324,1.403) (1.344,1.445) (1.364,1.488) (1.383,1.530) (1.402,1.573) (1.421,1.615) (1.439,1.657) (1.458,1.700)} -- cycle;
+\draw[red!70!black, thick] plot[smooth] coordinates {(-2.000,3.200) (-1.983,3.147) (-1.966,3.093) (-1.949,3.040) (-1.932,2.987) (-1.915,2.933) (-1.897,2.880) (-1.880,2.827) (-1.862,2.773) (-1.844,2.720) (-1.826,2.667) (-1.807,2.613) (-1.789,2.560) (-1.770,2.507) (-1.751,2.453) (-1.732,2.400) (-1.713,2.347) (-1.693,2.293) (-1.673,2.240) (-1.653,2.187) (-1.633,2.133) (-1.612,2.080) (-1.592,2.027) (-1.571,1.973) (-1.549,1.920) (-1.528,1.867) (-1.506,1.813) (-1.483,1.760) (-1.461,1.707) (-1.438,1.653) (-1.414,1.600) (-1.390,1.547) (-1.366,1.493) (-1.342,1.440) (-1.317,1.387) (-1.291,1.333) (-1.265,1.280) (-1.238,1.227) (-1.211,1.173) (-1.183,1.120) (-1.155,1.067) (-1.125,1.013) (-1.095,0.960) (-1.065,0.907) (-1.033,0.853) (-1.000,0.800) (-0.966,0.747) (-0.931,0.693) (-0.894,0.640) (-0.856,0.587) (-0.816,0.533) (-0.775,0.480) (-0.730,0.427) (-0.683,0.373) (-0.632,0.320) (-0.577,0.267) (-0.516,0.213) (-0.447,0.160) (-0.365,0.107) (-0.258,0.053) (0.000,0.000) (0.258,0.053) (0.365,0.107) (0.447,0.160) (0.516,0.213) (0.577,0.267) (0.632,0.320) (0.683,0.373) (0.730,0.427) (0.775,0.480) (0.816,0.533) (0.856,0.587) (0.894,0.640) (0.931,0.693) (0.966,0.747) (1.000,0.800) (1.033,0.853) (1.065,0.907) (1.095,0.960) (1.125,1.013) (1.155,1.067) (1.183,1.120) (1.211,1.173) (1.238,1.227) (1.265,1.280) (1.291,1.333) (1.317,1.387) (1.342,1.440) (1.366,1.493) (1.390,1.547) (1.414,1.600) (1.438,1.653) (1.461,1.707) (1.483,1.760) (1.506,1.813) (1.528,1.867) (1.549,1.920) (1.571,1.973) (1.592,2.027) (1.612,2.080) (1.633,2.133) (1.653,2.187) (1.673,2.240) (1.693,2.293) (1.713,2.347) (1.732,2.400) (1.751,2.453) (1.770,2.507) (1.789,2.560) (1.807,2.613) (1.826,2.667) (1.844,2.720) (1.862,2.773) (1.880,2.827) (1.897,2.880) (1.915,2.933) (1.932,2.987) (1.949,3.040) (1.966,3.093) (1.983,3.147) (2.000,3.200)};
+\draw[red!70!black, thick] (0,3.2) ellipse (2.000 and 0.15);
+\draw[orange!85!black, dashed] (-1.458,1.7) -- (1.458,1.7);
+\node[orange!85!black, font=\scriptsize, anchor=east] at (-1.558,1.100) {$f^{-1}\big((-\infty, c]\big)$};
+\draw[->, gray!70] (2.5,1.72) -- node[above, font=\scriptsize] {$f$} (3.3,1.72);
+\draw[->, red!70!black] (3.7,-0.1) -- (3.7,3.4) node[above, font=\scriptsize] {$\mathbb{R}$};
+\draw[orange!85!black] (3.62,1.7) -- (3.78,1.7) node[right, font=\scriptsize] {$c$};
+\node[red!70!black, font=\scriptsize] at (-2.15,2.6) {$M$};
+\draw[red!70!black, thick] plot[smooth] coordinates {(6.000,3.200) (6.017,3.147) (6.034,3.093) (6.051,3.040) (6.068,2.987) (6.085,2.933) (6.103,2.880) (6.120,2.827) (6.138,2.773) (6.156,2.720) (6.174,2.667) (6.193,2.613) (6.211,2.560) (6.230,2.507) (6.249,2.453) (6.268,2.400) (6.287,2.347) (6.307,2.293) (6.327,2.240) (6.347,2.187) (6.367,2.133) (6.388,2.080) (6.408,2.027) (6.429,1.973) (6.451,1.920) (6.472,1.867) (6.494,1.813) (6.517,1.760) (6.539,1.707) (6.562,1.653) (6.586,1.600) (6.610,1.547) (6.634,1.493) (6.658,1.440) (6.683,1.387) (6.709,1.333) (6.735,1.280) (6.762,1.227) (6.789,1.173) (6.817,1.120) (6.845,1.067) (6.875,1.013) (6.905,0.960) (6.935,0.907) (6.967,0.853) (7.000,0.800) (7.034,0.747) (7.069,0.693) (7.106,0.640) (7.144,0.587) (7.184,0.533) (7.225,0.480) (7.270,0.427) (7.317,0.373) (7.368,0.320) (7.423,0.267) (7.484,0.213) (7.553,0.160) (7.635,0.107) (7.742,0.053) (8.000,0.000) (8.258,0.053) (8.365,0.107) (8.447,0.160) (8.516,0.213) (8.577,0.267) (8.632,0.320) (8.683,0.373) (8.730,0.427) (8.775,0.480) (8.816,0.533) (8.856,0.587) (8.894,0.640) (8.931,0.693) (8.966,0.747) (9.000,0.800) (9.033,0.853) (9.065,0.907) (9.095,0.960) (9.125,1.013) (9.155,1.067) (9.183,1.120) (9.211,1.173) (9.238,1.227) (9.265,1.280) (9.291,1.333) (9.317,1.387) (9.342,1.440) (9.366,1.493) (9.390,1.547) (9.414,1.600) (9.438,1.653) (9.461,1.707) (9.483,1.760) (9.506,1.813) (9.528,1.867) (9.549,1.920) (9.571,1.973) (9.592,2.027) (9.612,2.080) (9.633,2.133) (9.653,2.187) (9.673,2.240) (9.693,2.293) (9.713,2.347) (9.732,2.400) (9.751,2.453) (9.770,2.507) (9.789,2.560) (9.807,2.613) (9.826,2.667) (9.844,2.720) (9.862,2.773) (9.880,2.827) (9.897,2.880) (9.915,2.933) (9.932,2.987) (9.949,3.040) (9.966,3.093) (9.983,3.147) (10.000,3.200)};
+\draw[red!70!black, thick] (8.000,3.2) ellipse (2.000 and 0.15);
+\fill[teal!12] plot coordinates {(6.380,2.100) (6.395,2.060) (6.411,2.020) (6.427,1.980) (6.443,1.940) (6.459,1.900) (6.475,1.860) (6.492,1.820) (6.508,1.780) (6.525,1.740) (6.542,1.700) (6.560,1.660) (6.577,1.620) (6.595,1.580) (6.613,1.540) (6.631,1.500) (6.649,1.460) (6.668,1.420) (6.687,1.380) (6.706,1.340) (6.725,1.300) (6.745,1.260) (6.765,1.220) (6.786,1.180) (6.806,1.140) (6.827,1.100) (6.849,1.060) (6.871,1.020) (6.893,0.980) (6.916,0.940) (6.939,0.900) (9.061,0.900) (9.084,0.940) (9.107,0.980) (9.129,1.020) (9.151,1.060) (9.173,1.100) (9.194,1.140) (9.214,1.180) (9.235,1.220) (9.255,1.260) (9.275,1.300) (9.294,1.340) (9.313,1.380) (9.332,1.420) (9.351,1.460) (9.369,1.500) (9.387,1.540) (9.405,1.580) (9.423,1.620) (9.440,1.660) (9.458,1.700) (9.475,1.740) (9.492,1.780) (9.508,1.820) (9.525,1.860) (9.541,1.900) (9.557,1.940) (9.573,1.980) (9.589,2.020) (9.605,2.060) (9.620,2.100)} -- cycle;
+\draw[->, red!70!black] (10.800,-0.1) -- (10.800,3.4) node[above, font=\scriptsize] {$\mathbb{R}$};
+\draw[orange!85!black, dashed] (7.171,0.55) -- (8.829,0.55);
+\draw[orange!85!black] (10.720,0.55) -- (10.880,0.55) node[right, font=\scriptsize] {$b_{i-1}$};
+\draw[red!70!black, dashed] (6.939,0.9) -- (9.061,0.9);
+\draw[red!70!black] (10.720,0.9) -- (10.880,0.9) node[right, font=\scriptsize] {$i$};
+\draw[orange!85!black, dashed] (6.701,1.3) -- (9.299,1.3);
+\draw[orange!85!black] (10.720,1.3) -- (10.880,1.3) node[right, font=\scriptsize] {$a_i$};
+\draw[orange!85!black, dashed] (6.586,1.72) -- (9.414,1.72);
+\draw[orange!85!black] (10.720,1.72) -- (10.880,1.72) node[right, font=\scriptsize] {$b_i$};
+\draw[red!70!black, dashed] (6.380,2.1) -- (9.620,2.1);
+\draw[red!70!black] (10.720,2.1) -- (10.880,2.1) node[right, font=\scriptsize] {$i+1$};
+\draw[orange!85!black, dashed] (6.232,2.5) -- (9.768,2.5);
+\draw[orange!85!black] (10.720,2.5) -- (10.880,2.5) node[right, font=\scriptsize] {$a_{i+1}$};
+\draw[thick, orange!85!black, |-|] (5.750,0.55) -- (5.750,2.5) node[midway, left=3pt, font=\scriptsize] {$E_i$};
+\draw[thick, teal!60!black, |-|] (9.950,0.9) -- (9.950,2.1) node[midway, right=3pt, font=\scriptsize] {$D_i$};
+\end{tikzpicture}
+\end{center}
+
+Left: a sublevel set of an exhaustion function, compact at every height $c$. Right: the slicing (``Lee doesn't have a figure''). $E_i$ runs from the regular value $b_{i-1}$, just below $i$, to $a_{i+1}$, just above $i + 1$, and contains the band $D_i$ between the integer levels $i$ and $i + 1$ in its interior.
+
+\begin{propbox}[A Proper Embedding from the Slices]\thmlabel{prop:noncompact-embedding}
+Let $f$ be an exhaustion function on $M$, $\dim M = m$, and $E_i, D_i$ as above. Suppose that each $E_i$ admits an embedding $F_i : E_i \to \mathbb{R}^{2m+1}$, and let $\rho_i : M \to \mathbb{R}$ be smooth with $\operatorname{supp}\rho_i \subseteq \operatorname{Int}E_i$ and $\rho_i \equiv 1$ on a neighbourhood of $D_i$. Then
+\[
+F = \Big( \sum_{i \text{ even}} \rho_i F_i,\ \sum_{i \text{ odd}} \rho_i F_i,\ f \Big) : M \longrightarrow \mathbb{R}^{2(2m+1)+1}
+\]
+is a proper injective immersion, hence an embedding.
+\leeref{Theorem 6.15 (proof)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~22 gave the construction and the reason for properness; injectivity and the immersion property ``are completely analogous to the compact [case] \ldots\ you can read it in Lee,'' and are filled in from Lee. The two hypotheses are the lecture's ``credit'': that compact manifolds with boundary embed in $\mathbb{R}^{2m+1}$ --- ``forgetting that we have manifolds with boundary, which we haven't discussed'' --- and that the cutoffs $\rho_i$ exist, which partitions of unity provide.)}
+
+\emph{$F$ is smooth.} $\rho_iF_i$, ``in principle only defined on $E_i$, \ldots\ extends smoothly as zero outside'': it is smooth on the open set $\operatorname{Int}E_i$ and zero on the open set $M \setminus \operatorname{supp}\rho_i$, which together cover $M$. ``These sums that look very, very scary are actually locally finite'': the $E_i$ with $i$ of one parity are pairwise disjoint closed sets, and only finitely many of them meet a neighbourhood $f^{-1}\big((c - 1, c + 1)\big)$, since $E_i \subseteq f^{-1}([i - 1, i + 2])$. So near each point at most one term of each sum is nonzero.
+
+\emph{$F$ is proper} --- ``properness comes from having $f$'' as a component. If $K \subseteq \mathbb{R}^{2(2m+1)+1}$ is compact, the last coordinate is bounded on $K$, say by $c$, so $F^{-1}(K)$ is a closed subset of the compact sublevel set $f^{-1}\big((-\infty, c]\big)$, hence compact (Definition~\ref{def:proper-map}).
+
+\emph{$F$ is injective.} Suppose $F(p) = F(q)$. Then $f(p) = f(q)$, so if $p \in D_j$ then $q \in D_j$, and $\rho_j(p) = \rho_j(q) = 1$. In the block of the parity of $j$, every other term vanishes at $p$ and $q$: for $i \neq j$ of that parity $|i - j| \ge 2$, so $\operatorname{supp}\rho_i \subseteq E_i$ misses $E_j \supseteq D_j$. So that block reads $F_j(p) = F_j(q)$, and $F_j$ is injective: $p = q$.
+
+\emph{$F$ is an immersion.} Let $p \in D_j$, and $W \subseteq \operatorname{Int}E_j$ an open neighbourhood of $p$ on which $\rho_j \equiv 1$. On $W$ the block of the parity of $j$ is $F_j$, since the other terms of that block are supported in sets $E_i$ disjoint from $E_j$. So that block of $dF_p$ is $d(F_j)_p$, injective because $F_j$ is an embedding; hence $dF_p$ is injective.
+
+\emph{An embedding.} A proper injective immersion is an embedding (Theorem~\ref{thm:proper-embedding}).
+\end{proof}
+
+A student asked whether the last coordinate is there for injectivity. ``This entry here makes it proper'': ``an exhaustion function is proper,'' and properness is what turns an injective immersion of a noncompact manifold into an embedding. ``That's a beautiful, clever idea.''
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, scale=1.15]
+    \draw[very thick, blue!70!black] (0.982,0.389) -- (0.987,0.392) -- (0.993,0.394) -- (0.998,0.397) -- (1.004,0.399) -- (1.010,0.402) -- (1.015,0.404) -- (1.021,0.407) -- (1.027,0.410) -- (1.033,0.413) -- (1.039,0.415) -- (1.045,0.418) -- (1.051,0.421) -- (1.057,0.424) -- (1.064,0.427) -- (1.070,0.430) -- (1.076,0.433) -- (1.083,0.436) -- (1.089,0.439) -- (1.096,0.442) -- (1.102,0.445) -- (1.109,0.448) -- (1.116,0.452) -- (1.122,0.455) -- (1.129,0.458) -- (1.136,0.462) -- (1.143,0.465) -- (1.150,0.468) -- (1.157,0.472) -- (1.164,0.476) -- (1.172,0.479) -- (1.179,0.483) -- (1.186,0.487) -- (1.194,0.490) -- (1.201,0.494) -- (1.209,0.498) -- (1.216,0.502) -- (1.224,0.506) -- (1.232,0.510) -- (1.239,0.514) -- (1.247,0.519) -- (1.255,0.523) -- (1.263,0.527) -- (1.271,0.532) -- (1.279,0.536) -- (1.287,0.541) -- (1.296,0.545) -- (1.304,0.550) -- (1.312,0.555) -- (1.320,0.560) -- (1.329,0.565) -- (1.337,0.570) -- (1.346,0.575) -- (1.354,0.580) -- (1.363,0.585) -- (1.371,0.591) -- (1.380,0.596) -- (1.388,0.602) -- (1.397,0.607) -- (1.405,0.613) -- (1.414,0.619) -- (1.423,0.625) -- (1.431,0.631) -- (1.440,0.637) -- (1.448,0.643) -- (1.457,0.650) -- (1.465,0.656) -- (1.473,0.663) -- (1.482,0.669) -- (1.490,0.676) -- (1.498,0.683) -- (1.506,0.690) -- (1.514,0.698) -- (1.521,0.705) -- (1.529,0.712) -- (1.536,0.720) -- (1.543,0.728) -- (1.550,0.736) -- (1.556,0.744) -- (1.563,0.752) -- (1.569,0.760) -- (1.574,0.769) -- (1.579,0.777) -- (1.584,0.786) -- (1.588,0.795) -- (1.592,0.804) -- (1.595,0.813) -- (1.597,0.823) -- (1.599,0.832) -- (1.600,0.842) -- (1.600,0.852) -- (1.599,0.862) -- (1.597,0.872) -- (1.595,0.883) -- (1.591,0.893) -- (1.585,0.904) -- (1.579,0.915) -- (1.571,0.926) -- (1.561,0.937) -- (1.549,0.949) -- (1.536,0.960) -- (1.521,0.972) -- (1.503,0.983) -- (1.483,0.995) -- (1.461,1.007) -- (1.435,1.019) -- (1.407,1.031) -- (1.376,1.043) -- (1.341,1.055) -- (1.303,1.067) -- (1.260,1.079) -- (1.214,1.090) -- (1.163,1.102) -- (1.108,1.113) -- (1.047,1.124) -- (0.982,1.135) -- (0.911,1.145) -- (0.834,1.155) -- (0.751,1.164) -- (0.663,1.173) -- (0.568,1.180) -- (0.466,1.187) -- (0.359,1.192) -- (0.245,1.196) -- (0.125,1.199) -- (0.000,1.200) -- (-0.130,1.199) -- (-0.265,1.196) -- (-0.404,1.190) -- (-0.544,1.182) -- (-0.685,1.171) -- (-0.826,1.156) -- (-0.963,1.138) -- (-1.094,1.116) -- (-1.217,1.090) -- (-1.329,1.059) -- (-1.426,1.023) -- (-1.504,0.982) -- (-1.562,0.936) -- (-1.594,0.885) -- (-1.598,0.828) -- (-1.572,0.765) -- (-1.513,0.697) -- (-1.420,0.623) -- (-1.294,0.545) -- (-1.136,0.462) -- (-0.949,0.374) -- (-0.736,0.284) -- (-0.502,0.191) -- (-0.255,0.096) -- (-0.000,0.000) -- (0.255,-0.096) -- (0.502,-0.191) -- (0.736,-0.284) -- (0.949,-0.374) -- (1.136,-0.462) -- (1.294,-0.545) -- (1.420,-0.623) -- (1.513,-0.697) -- (1.572,-0.765) -- (1.598,-0.828) -- (1.594,-0.885) -- (1.562,-0.936) -- (1.504,-0.982) -- (1.426,-1.023) -- (1.329,-1.059) -- (1.217,-1.090) -- (1.094,-1.116) -- (0.963,-1.138) -- (0.826,-1.156) -- (0.685,-1.171) -- (0.544,-1.182) -- (0.404,-1.190) -- (0.265,-1.196) -- (0.130,-1.199) -- (0.000,-1.200) -- (-0.125,-1.199) -- (-0.245,-1.196) -- (-0.359,-1.192) -- (-0.466,-1.187) -- (-0.568,-1.180) -- (-0.663,-1.173) -- (-0.751,-1.164) -- (-0.834,-1.155) -- (-0.911,-1.145) -- (-0.982,-1.135) -- (-1.047,-1.124) -- (-1.108,-1.113) -- (-1.163,-1.102) -- (-1.214,-1.090) -- (-1.260,-1.079) -- (-1.303,-1.067) -- (-1.341,-1.055) -- (-1.376,-1.043) -- (-1.407,-1.031) -- (-1.435,-1.019) -- (-1.461,-1.007) -- (-1.483,-0.995) -- (-1.503,-0.983) -- (-1.521,-0.972) -- (-1.536,-0.960) -- (-1.549,-0.949) -- (-1.561,-0.937) -- (-1.571,-0.926) -- (-1.579,-0.915) -- (-1.585,-0.904) -- (-1.591,-0.893) -- (-1.595,-0.883) -- (-1.597,-0.872) -- (-1.599,-0.862) -- (-1.600,-0.852) -- (-1.600,-0.842) -- (-1.599,-0.832) -- (-1.597,-0.823) -- (-1.595,-0.813) -- (-1.592,-0.804) -- (-1.588,-0.795) -- (-1.584,-0.786) -- (-1.579,-0.777) -- (-1.574,-0.769) -- (-1.569,-0.760) -- (-1.563,-0.752) -- (-1.556,-0.744) -- (-1.550,-0.736) -- (-1.543,-0.728) -- (-1.536,-0.720) -- (-1.529,-0.712) -- (-1.521,-0.705) -- (-1.514,-0.698) -- (-1.506,-0.690) -- (-1.498,-0.683) -- (-1.490,-0.676) -- (-1.482,-0.669) -- (-1.473,-0.663) -- (-1.465,-0.656) -- (-1.457,-0.650) -- (-1.448,-0.643) -- (-1.440,-0.637) -- (-1.431,-0.631) -- (-1.423,-0.625) -- (-1.414,-0.619) -- (-1.405,-0.613) -- (-1.397,-0.607) -- (-1.388,-0.602) -- (-1.380,-0.596) -- (-1.371,-0.591) -- (-1.363,-0.585) -- (-1.354,-0.580) -- (-1.346,-0.575) -- (-1.337,-0.570) -- (-1.329,-0.565) -- (-1.320,-0.560) -- (-1.312,-0.555) -- (-1.304,-0.550) -- (-1.296,-0.545) -- (-1.287,-0.541) -- (-1.279,-0.536) -- (-1.271,-0.532) -- (-1.263,-0.527) -- (-1.255,-0.523) -- (-1.247,-0.519) -- (-1.239,-0.514) -- (-1.232,-0.510) -- (-1.224,-0.506) -- (-1.216,-0.502) -- (-1.209,-0.498) -- (-1.201,-0.494) -- (-1.194,-0.490) -- (-1.186,-0.487) -- (-1.179,-0.483) -- (-1.172,-0.479) -- (-1.164,-0.476) -- (-1.157,-0.472) -- (-1.150,-0.468) -- (-1.143,-0.465) -- (-1.136,-0.462) -- (-1.129,-0.458) -- (-1.122,-0.455) -- (-1.116,-0.452) -- (-1.109,-0.448) -- (-1.102,-0.445) -- (-1.096,-0.442) -- (-1.089,-0.439) -- (-1.083,-0.436) -- (-1.076,-0.433) -- (-1.070,-0.430) -- (-1.064,-0.427) -- (-1.057,-0.424) -- (-1.051,-0.421) -- (-1.045,-0.418) -- (-1.039,-0.415) -- (-1.033,-0.413) -- (-1.027,-0.410) -- (-1.021,-0.407) -- (-1.015,-0.404) -- (-1.010,-0.402) -- (-1.004,-0.399) -- (-0.998,-0.397) -- (-0.993,-0.394) -- (-0.987,-0.392) -- (-0.982,-0.389);
+    \draw[red!75!black, dashed] (0,0) circle (0.35);
+    \fill[red!75!black] (0,0) circle (1.6pt);
+    \node[red!75!black, font=\scriptsize, anchor=west] at (0.4,-0.35) {$\overline{B}$};
+    \node[font=\scriptsize, blue!70!black, anchor=west] at (1.75,0.6) {$\gamma(\mathbb{R})$};
+    \node[font=\scriptsize, align=left, anchor=west] at (2.4,-0.4) {$\gamma(t) \to \gamma(0)$ as $t \to \pm\infty$:\\ $\gamma^{-1}(\overline{B})$ contains $(-\infty,-T] \cup [T, \infty)$,\\ not compact, so $\gamma$ is not proper};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Why the noncompact embedding is made proper. The curve $\gamma(t) = \big(\sin 2s, \sin s\big)$, $s = \pi + 2\arctan t$, is an injective immersion $\mathbb{R} \to \mathbb{R}^2$, but both ends approach $\gamma(0)$: the preimage of a small closed disc $\overline{B}$ about $\gamma(0)$ contains two half-lines, so $\gamma$ is not proper, and its image is not an embedded submanifold near $\gamma(0)$. Adding an exhaustion function as an extra coordinate (``this entry here makes it proper'') pulls the ends apart in height, which is what Proposition~\ref{prop:noncompact-embedding} does with $f$.
+%% <<< END ADDED
+
+
+\textit{The projection step}, only indicated: ``since you now have a noncompact manifold, the thing can be all over the place.'' $\mathbb{R}^{2(2m+1)}$ is diffeomorphic to an open ball, so the first two blocks can be squeezed into a ball, and with $f$ as the last coordinate the image lies in a tube, ball $\times\ \mathbb{R}$; ``once you have it in a tube, you can start controlling the projections. The projections have to be proper.'' Reading: Lee, Lemma~6.14 and its figure.
+
+\begin{thmbox}[The Whitney Embedding and Immersion Theorems]\thmlabel{thm:whitney}
+Let $M$ be a smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
+\leeref{Theorems 6.15 and 6.18}
+\end{thmbox}
+
+``In other words, any manifold is diffeomorphic to a submanifold of some Euclidean space'' (Theorem~\ref{thm:embedding-image}). The course proves the compact case in full (Theorem~\ref{thm:whitney-compact}). The noncompact case, which first makes the embedding proper, is sketched above and assigned as reading in Lee (Lemma~6.14 and Theorem~6.15): ``he has a beautiful picture.''
+
+\begin{rembox}[The Hard Version]\label{rem:strong-whitney}
+In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). ``We will not discuss this at all. The proof is very specialized and really long \ldots\ The smaller the codimension, the tighter it is, and you have to wrestle the manifold more to get it in there. It's like packing your clothes in a suitcase.''
+\end{rembox}
+
+\begin{proof}[Proof (sketch; the details are reading in Lee)]
+\textit{(Lecture~22 sketched the noncompact case; the rest is assigned reading.)} For $M$ compact this is Theorem~\ref{thm:whitney-compact}. In general, take an exhaustion function $f$ (Proposition~\ref{prop:exhaustion-exists}) and slice $M$ into the compact pieces $E_i$ above. Each $E_i$, a compact manifold with boundary, embeds in $\mathbb{R}^{2m+1}$ by the method of Theorem~\ref{thm:whitney-compact} (manifolds with boundary are not treated in these notes), and the cutoffs $\rho_i$ come from partitions of unity (Theorem~\ref{thm:partition-of-unity}, \ref{sec:partitions-of-unity}); Proposition~\ref{prop:noncompact-embedding} then gives a proper embedding $M \to \mathbb{R}^{2(2m+1)+1}$. Lowering the dimension to $2m + 1$ needs projections that stay proper: squeeze the image into a tube, ball $\times\ \mathbb{R}$, and project as in Lemmas~\ref{lem:projection-injective}--\ref{lem:projection-immersion} (Lee, Lemma~6.14 and Theorem~6.15). The immersion into $\mathbb{R}^{2m}$ is Lee, Theorem~6.18; in the compact case it is part of the homework.
+\end{proof}
+
+% ============================================================================
+% SECTION: PARTITIONS OF UNITY (Lecture 22, Mon Oct 26, 2026)
+% ============================================================================
+
+
+% ============================================================================
+% SECTION: PARTITIONS OF UNITY (Lecture 22)
+% ============================================================================
+\section{Partitions of Unity}\label{sec:partitions-of-unity}
+
+\roadmark{Stage: analysis}{Writing $1$ as a locally finite sum of smooth functions subordinate to any open cover: the tool for gluing local constructions into global ones.}
+
+\textit{Lecture 22. ``A key tool for constructing exhaustion functions, and many other things --- we're going to use it to integrate forms, for example --- is the notion of partition of unity. And Lee pays the bills up front. He deposits a lot of money'' (Lee, Chapter~2).}
+
+\begin{defbox}[Partition of Unity]\deflabel{def:partition-of-unity}
+A \textbf{partition of unity} on $M$ is an indexed family $\{\chi_\alpha\}_{\alpha \in A}$ of smooth functions on $M$, over an arbitrary index set $A$ (``could be uncountable''), such that
+\begin{enumerate}[nosep]
+\item $0 \le \chi_\alpha \le 1$ for every $\alpha$;
+\item the family of supports $\{\operatorname{supp}\chi_\alpha\}_{\alpha \in A}$ is \textbf{locally finite}: every $p \in M$ has a neighbourhood $U$ for which $\{ \alpha \in A : U \cap \operatorname{supp}\chi_\alpha \neq \varnothing \}$ is finite;
+\item $\sum_{\alpha \in A} \chi_\alpha(p) = 1$ for every $p \in M$.
+\end{enumerate}
+By (2) the sum in (3) has only finitely many nonzero terms at each point. The partition is \textbf{subordinate} to an open cover $\{U_\alpha\}_{\alpha \in A}$ if $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$ for every $\alpha$.
+\leeref{Ch.~2, \emph{Partitions of Unity}}
+\end{defbox}
+
+``This is where the name comes from. You take the number one, and you write it as a sum of smooth functions.'' ``These things allow us to localize''; the bump functions so far, and the cutoffs $\rho_i$ above, are made of the same material.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+\draw[->, gray!60] (-3.2,0) -- (3.4,0) node[right, font=\scriptsize, text=black] {$M = \mathbb{R}$};
+\draw[gray!60] (-3.2,1.2) -- (3.2,1.2); \node[font=\scriptsize, anchor=east] at (-3.25,1.2) {$1$};
+\draw[thick, black] plot[smooth] coordinates {(-3.000,1.200) (-2.950,1.200) (-2.900,1.200) (-2.850,1.200) (-2.800,1.200) (-2.750,1.200) (-2.700,1.200) (-2.650,1.200) (-2.600,1.200) (-2.550,1.199) (-2.500,1.199) (-2.450,1.199) (-2.400,1.199) (-2.350,1.199) (-2.300,1.199) (-2.250,1.199) (-2.200,1.198) (-2.150,1.198) (-2.100,1.198) (-2.050,1.197) (-2.000,1.197) (-1.950,1.197) (-1.900,1.196) (-1.850,1.195) (-1.800,1.195) (-1.750,1.194) (-1.700,1.193) (-1.650,1.192) (-1.600,1.190) (-1.550,1.189) (-1.500,1.187) (-1.450,1.185) (-1.400,1.182) (-1.350,1.179) (-1.300,1.176) (-1.250,1.172) (-1.200,1.168) (-1.150,1.163) (-1.100,1.157) (-1.050,1.151) (-1.000,1.143) (-0.950,1.134) (-0.900,1.124) (-0.850,1.113) (-0.800,1.100) (-0.750,1.086) (-0.700,1.069) (-0.650,1.051) (-0.600,1.030) (-0.550,1.007) (-0.500,0.981) (-0.450,0.953) (-0.400,0.922) (-0.350,0.889) (-0.300,0.853) (-0.250,0.815) (-0.200,0.775) (-0.150,0.733) (-0.100,0.689) (-0.050,0.645) (0.000,0.600) (0.050,0.555) (0.100,0.511) (0.150,0.467) (0.200,0.425) (0.250,0.385) (0.300,0.347) (0.350,0.311) (0.400,0.278) (0.450,0.247) (0.500,0.219) (0.550,0.193) (0.600,0.170) (0.650,0.149) (0.700,0.131) (0.750,0.114) (0.800,0.100) (0.850,0.087) (0.900,0.076) (0.950,0.066) (1.000,0.057) (1.050,0.049) (1.100,0.043) (1.150,0.037) (1.200,0.032) (1.250,0.028) (1.300,0.024) (1.350,0.021) (1.400,0.018) (1.450,0.015) (1.500,0.013) (1.550,0.011) (1.600,0.010) (1.650,0.008) (1.700,0.007) (1.750,0.006) (1.800,0.005) (1.850,0.005) (1.900,0.004) (1.950,0.003) (2.000,0.003) (2.050,0.003) (2.100,0.002) (2.150,0.002) (2.200,0.002) (2.250,0.001) (2.300,0.001) (2.350,0.001) (2.400,0.001) (2.450,0.001) (2.500,0.001) (2.550,0.001) (2.600,0.000) (2.650,0.000) (2.700,0.000) (2.750,0.000) (2.800,0.000) (2.850,0.000) (2.900,0.000) (2.950,0.000) (3.000,0.000)}; \node[font=\scriptsize] at (-2.6,1.4) {$\chi_1$};
+\draw[thick, teal!60!black] plot[smooth] coordinates {(-3.000,0.000) (-2.950,0.000) (-2.900,0.000) (-2.850,0.000) (-2.800,0.000) (-2.750,0.000) (-2.700,0.000) (-2.650,0.000) (-2.600,0.000) (-2.550,0.001) (-2.500,0.001) (-2.450,0.001) (-2.400,0.001) (-2.350,0.001) (-2.300,0.001) (-2.250,0.001) (-2.200,0.002) (-2.150,0.002) (-2.100,0.002) (-2.050,0.003) (-2.000,0.003) (-1.950,0.003) (-1.900,0.004) (-1.850,0.005) (-1.800,0.005) (-1.750,0.006) (-1.700,0.007) (-1.650,0.008) (-1.600,0.010) (-1.550,0.011) (-1.500,0.013) (-1.450,0.015) (-1.400,0.018) (-1.350,0.021) (-1.300,0.024) (-1.250,0.028) (-1.200,0.032) (-1.150,0.037) (-1.100,0.043) (-1.050,0.049) (-1.000,0.057) (-0.950,0.066) (-0.900,0.076) (-0.850,0.087) (-0.800,0.100) (-0.750,0.114) (-0.700,0.131) (-0.650,0.149) (-0.600,0.170) (-0.550,0.193) (-0.500,0.219) (-0.450,0.247) (-0.400,0.278) (-0.350,0.311) (-0.300,0.347) (-0.250,0.385) (-0.200,0.425) (-0.150,0.467) (-0.100,0.511) (-0.050,0.555) (0.000,0.600) (0.050,0.645) (0.100,0.689) (0.150,0.733) (0.200,0.775) (0.250,0.815) (0.300,0.853) (0.350,0.889) (0.400,0.922) (0.450,0.953) (0.500,0.981) (0.550,1.007) (0.600,1.030) (0.650,1.051) (0.700,1.069) (0.750,1.086) (0.800,1.100) (0.850,1.113) (0.900,1.124) (0.950,1.134) (1.000,1.143) (1.050,1.151) (1.100,1.157) (1.150,1.163) (1.200,1.168) (1.250,1.172) (1.300,1.176) (1.350,1.179) (1.400,1.182) (1.450,1.185) (1.500,1.187) (1.550,1.189) (1.600,1.190) (1.650,1.192) (1.700,1.193) (1.750,1.194) (1.800,1.195) (1.850,1.195) (1.900,1.196) (1.950,1.197) (2.000,1.197) (2.050,1.197) (2.100,1.198) (2.150,1.198) (2.200,1.198) (2.250,1.199) (2.300,1.199) (2.350,1.199) (2.400,1.199) (2.450,1.199) (2.500,1.199) (2.550,1.199) (2.600,1.200) (2.650,1.200) (2.700,1.200) (2.750,1.200) (2.800,1.200) (2.850,1.200) (2.900,1.200) (2.950,1.200) (3.000,1.200)}; \node[teal!60!black, font=\scriptsize] at (2.6,1.4) {$\chi_2$};
+\node[font=\scriptsize, anchor=west] at (3.5,0.6) {$\chi_1 + \chi_2 \equiv 1$};
+\end{tikzpicture}
+\end{center}
+
+The simplest example, on $M = \mathbb{R}$: a function $\chi_1$ that is $1$ far to the left and $0$ far to the right, and $\chi_2 = 1 - \chi_1$.
+
+\begin{thmbox}[Existence of Partitions of Unity]\thmlabel{thm:partition-of-unity}
+If $\{U_\alpha\}_{\alpha \in A}$ is any open cover of $M$, there is a partition of unity $\{\chi_\alpha\}_{\alpha \in A}$ subordinate to it.
+\leeref{Theorem 2.23}
+\end{thmbox}
+
+The proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$, and ``serious point set topology'' on $M$.
+
+\begin{lembox}[Plateau Functions]\thmlabel{lem:plateau}
+For all $\varepsilon > \delta > 0$ there is $\rho \in C^\infty(\mathbb{R})$ with $0 \le \rho \le 1$, $\rho \equiv 1$ on $[-\delta, \delta]$ and $\operatorname{supp}\rho \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is smooth on $\mathbb{R}^m$, $f \equiv 1$ on the closed ball $\overline{B}_\delta$, and $\operatorname{supp} f \subseteq B_\varepsilon = \{ x \in \mathbb{R}^m : |x| < \varepsilon \}$.
+\leeref{Lemmas 2.20--2.22}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~22: ``I'm not going to prove that \ldots\ you start with a function that is $e^{-1/x}$ for $x$ positive and zero for $x$ negative \ldots\ and then you do trickery with it --- reflect, divide, add. It's not complicated, but it takes 10 minutes to check.'' The trickery is step~2 of the proof of Proposition~\ref{prop:bump-existence}.)} With $h$ as there and $\delta < r' < \varepsilon$, take $\rho(t) = h(r'^2 - t^2)\big/\big(h(r'^2 - t^2) + h(t^2 - \delta^2)\big)$: smooth, between $0$ and $1$, equal to $1$ for $|t| \le \delta$ and $0$ for $|t| \ge r'$, so $\operatorname{supp}\rho \subseteq [-r', r'] \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is the function $H$ of that proof (with $r = \delta$), smooth on $\mathbb{R}^m$ --- ``$|x|$ is not a $C^\infty$ function at the origin; however, $\rho$ is constant equal to one near $0$'', so $f$ is constant near $x = 0$ --- with $f \equiv 1$ on $\overline{B}_\delta$ and $\operatorname{supp} f = \overline{B}_{r'} \subseteq B_\varepsilon$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+\draw[->, gray!60] (-2.6,0) -- (2.7,0) node[right, font=\scriptsize, text=black] {$x$};
+\draw[->, gray!60] (0,-0.1) -- (0,1.5);
+\draw[orange!85!black, thick] plot[smooth] coordinates {(-2.400,0.000) (-2.380,0.000) (-2.360,0.000) (-2.340,0.000) (-2.320,0.000) (-2.300,0.000) (-2.280,0.000) (-2.260,0.000) (-2.240,0.000) (-2.220,0.000) (-2.200,0.000) (-2.180,0.000) (-2.160,0.000) (-2.140,0.000) (-2.120,0.000) (-2.100,0.000) (-2.080,0.000) (-2.060,0.000) (-2.040,0.000) (-2.020,0.000) (-2.000,0.000) (-1.980,0.000) (-1.960,0.000) (-1.940,0.000) (-1.920,0.000) (-1.900,0.000) (-1.880,0.000) (-1.860,0.002) (-1.840,0.019) (-1.820,0.056) (-1.800,0.104) (-1.780,0.156) (-1.760,0.205) (-1.740,0.250) (-1.720,0.291) (-1.700,0.327) (-1.680,0.360) (-1.660,0.390) (-1.640,0.417) (-1.620,0.442) (-1.600,0.465) (-1.580,0.487) (-1.560,0.508) (-1.540,0.528) (-1.520,0.548) (-1.500,0.568) (-1.480,0.587) (-1.460,0.607) (-1.440,0.627) (-1.420,0.647) (-1.400,0.668) (-1.380,0.690) (-1.360,0.712) (-1.340,0.736) (-1.320,0.762) (-1.300,0.788) (-1.280,0.817) (-1.260,0.847) (-1.240,0.878) (-1.220,0.912) (-1.200,0.946) (-1.180,0.980) (-1.160,1.013) (-1.140,1.043) (-1.120,1.068) (-1.100,1.086) (-1.080,1.096) (-1.060,1.099) (-1.040,1.100) (-1.020,1.100) (-1.000,1.100) (-0.980,1.100) (-0.960,1.100) (-0.940,1.100) (-0.920,1.100) (-0.900,1.100) (-0.880,1.100) (-0.860,1.100) (-0.840,1.100) (-0.820,1.100) (-0.800,1.100) (-0.780,1.100) (-0.760,1.100) (-0.740,1.100) (-0.720,1.100) (-0.700,1.100) (-0.680,1.100) (-0.660,1.100) (-0.640,1.100) (-0.620,1.100) (-0.600,1.100) (-0.580,1.100) (-0.560,1.100) (-0.540,1.100) (-0.520,1.100) (-0.500,1.100) (-0.480,1.100) (-0.460,1.100) (-0.440,1.100) (-0.420,1.100) (-0.400,1.100) (-0.380,1.100) (-0.360,1.100) (-0.340,1.100) (-0.320,1.100) (-0.300,1.100) (-0.280,1.100) (-0.260,1.100) (-0.240,1.100) (-0.220,1.100) (-0.200,1.100) (-0.180,1.100) (-0.160,1.100) (-0.140,1.100) (-0.120,1.100) (-0.100,1.100) (-0.080,1.100) (-0.060,1.100) (-0.040,1.100) (-0.020,1.100) (0.000,1.100) (0.020,1.100) (0.040,1.100) (0.060,1.100) (0.080,1.100) (0.100,1.100) (0.120,1.100) (0.140,1.100) (0.160,1.100) (0.180,1.100) (0.200,1.100) (0.220,1.100) (0.240,1.100) (0.260,1.100) (0.280,1.100) (0.300,1.100) (0.320,1.100) (0.340,1.100) (0.360,1.100) (0.380,1.100) (0.400,1.100) (0.420,1.100) (0.440,1.100) (0.460,1.100) (0.480,1.100) (0.500,1.100) (0.520,1.100) (0.540,1.100) (0.560,1.100) (0.580,1.100) (0.600,1.100) (0.620,1.100) (0.640,1.100) (0.660,1.100) (0.680,1.100) (0.700,1.100) (0.720,1.100) (0.740,1.100) (0.760,1.100) (0.780,1.100) (0.800,1.100) (0.820,1.100) (0.840,1.100) (0.860,1.100) (0.880,1.100) (0.900,1.100) (0.920,1.100) (0.940,1.100) (0.960,1.100) (0.980,1.100) (1.000,1.100) (1.020,1.100) (1.040,1.100) (1.060,1.099) (1.080,1.096) (1.100,1.086) (1.120,1.068) (1.140,1.043) (1.160,1.013) (1.180,0.980) (1.200,0.946) (1.220,0.912) (1.240,0.878) (1.260,0.847) (1.280,0.817) (1.300,0.788) (1.320,0.762) (1.340,0.736) (1.360,0.712) (1.380,0.690) (1.400,0.668) (1.420,0.647) (1.440,0.627) (1.460,0.607) (1.480,0.587) (1.500,0.568) (1.520,0.548) (1.540,0.528) (1.560,0.508) (1.580,0.487) (1.600,0.465) (1.620,0.442) (1.640,0.417) (1.660,0.390) (1.680,0.360) (1.700,0.327) (1.720,0.291) (1.740,0.250) (1.760,0.205) (1.780,0.156) (1.800,0.104) (1.820,0.056) (1.840,0.019) (1.860,0.002) (1.880,0.000) (1.900,0.000) (1.920,0.000) (1.940,0.000) (1.960,0.000) (1.980,0.000) (2.000,0.000) (2.020,0.000) (2.040,0.000) (2.060,0.000) (2.080,0.000) (2.100,0.000) (2.120,0.000) (2.140,0.000) (2.160,0.000) (2.180,0.000) (2.200,0.000) (2.220,0.000) (2.240,0.000) (2.260,0.000) (2.280,0.000) (2.300,0.000) (2.320,0.000) (2.340,0.000) (2.360,0.000) (2.380,0.000) (2.400,0.000)};
+\foreach \x/\l in {-1.9/-\varepsilon, -1.0/-\delta, 1.0/\delta, 1.9/\varepsilon} { \draw[gray!60] (\x,-0.06) -- (\x,0.06); \node[font=\scriptsize, below] at (\x,-0.05) {$\l$}; }
+\draw[gray!55, dashed] (-1.0,0) -- (-1.0,1.1); \draw[gray!55, dashed] (1.0,0) -- (1.0,1.1);
+\node[orange!85!black, font=\scriptsize] at (1.75,1.2) {$\rho$};
+\end{tikzpicture}
+\end{center}
+
+\textit{The topology.} ``We need some serious point set topology \ldots\ we're paying the bills. It's a little painful.''
+
+\begin{defbox}[Paracompact Space]\deflabel{def:paracompact}
+A space $X$ is \textbf{paracompact} if every open cover $\{U_\alpha\}_{\alpha \in A}$ has an open refinement $\{V_i\}_{i \in \mathbb{N}}$ that covers and is locally finite:
+\begin{enumerate}[nosep]
+\item $X = \bigcup_i V_i$, and for every $i$ there is $\alpha(i)$ with $V_i \subseteq U_{\alpha(i)}$;
+\item every $p \in X$ has a neighbourhood $W$ such that $\{ i : W \cap V_i \neq \varnothing \}$ is finite.
+\end{enumerate}
+\leeref{Ch.~1, \emph{Paracompactness}}
+\end{defbox}
+
+``Compactness would say that any cover has a finite subcover, and in this case we have [a] locally finite \ldots\ it's not a subcover; it's just a refinement.'' (The usual definition allows refinements indexed by any set; with the countable index set of the lecture it is what holds for manifolds, Theorem~\ref{thm:manifolds-paracompact} below.)
+
+\begin{lembox}[Exhaustion by Compact Sets]\thmlabel{lem:compact-exhaustion}
+A second-countable, locally compact Hausdorff space $X$ is the union of compact sets $K_1 \subseteq K_2 \subseteq \cdots$ with $K_j \subseteq \operatorname{Int}K_{j+1}$ for every $j$.
+\leeref{Proposition A.60}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in, following Lee.)} \emph{A countable basis of precompact sets.} Let $\mathcal{B}$ be a countable basis, and $\mathcal{B}'$ the set of $B \in \mathcal{B}$ with compact closure. $\mathcal{B}'$ is still a basis: if $x \in W$ open, local compactness gives an open $V \ni x$ with $\overline V$ compact, and some $B \in \mathcal{B}$ has $x \in B \subseteq V \cap W$; then $\overline B$ is a closed subset of the compact $\overline V$ (closures computed in the Hausdorff space $X$), so compact. Enumerate $\mathcal{B}' = \{B_1, B_2, \ldots\}$ (if it is finite, $X$ is compact and $K_j = X$ works).
+\emph{The exhaustion.} Put $K_1 = \overline{B_1}$. Given $K_j$ compact, it is covered by the $B_i$, hence by $B_1, \ldots, B_n$ for some $n$; take the least such $n$ with $n \ge j + 1$, and $K_{j+1} = \overline{B_1} \cup \cdots \cup \overline{B_n}$, compact as a finite union of compact sets. Then $K_j \subseteq B_1 \cup \cdots \cup B_n \subseteq \operatorname{Int}K_{j+1}$, and $B_j \subseteq K_j$ for all $j$, so $\bigcup_j K_j = X$.
+\end{proof}
+
+\begin{thmbox}[Manifolds Are Paracompact]\thmlabel{thm:manifolds-paracompact}
+Let $M$ be a topological manifold, $\{U_\alpha\}$ an open cover, and $\mathcal{B}$ any basis of the topology of $M$. Then $\{U_\alpha\}$ has a countable, locally finite open refinement that covers $M$ and consists of elements of $\mathcal{B}$. In particular $M$ is paracompact. More generally, every second-countable, locally compact Hausdorff space is paracompact, by the same proof.
+\leeref{Theorem 1.15}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~22 --- ``manifolds are paracompact, and in fact the refinements can always be taken from a basis of the topology'' --- with the proof left to Lee; filled in, following Lee.)} $M$ is Hausdorff, second countable (Definition~\ref{def:second-countable}) and locally compact (Proposition~\ref{prop:locally-compact}); let $K_1 \subseteq K_2 \subseteq \cdots$ be as in Lemma~\ref{lem:compact-exhaustion}, and $K_0 = K_{-1} = \varnothing$. For $j \ge 0$ put
+\[
+A_j = K_{j+1} \setminus \operatorname{Int}K_j \ \ \text{(compact)}, \qquad W_j = \operatorname{Int}K_{j+2} \setminus K_{j-1} \ \ \text{(open)}, \qquad A_j \subseteq W_j .
+\]
+For each $x \in A_j$ choose $\alpha$ with $x \in U_\alpha$, and $B_x \in \mathcal{B}$ with $x \in B_x \subseteq U_\alpha \cap W_j$. Finitely many $B_x$ cover the compact set $A_j$. The union over $j$ of these finite families is a countable family of elements of $\mathcal{B}$; it covers $M$, because the $A_j$ do (each point lies in some $K_{j+1} \setminus \operatorname{Int}K_j$); and it refines $\{U_\alpha\}$. \emph{Locally finite:} the sets chosen for $j$ lie in $W_j$, and $W_j \cap W_k = \varnothing$ when $|j - k| \ge 3$; a point of $A_j$ has the neighbourhood $W_j$, which meets only the sets chosen for $j - 2, \ldots, j + 2$, finitely many.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+    \fill[red!6] (0,0) circle (3.2); \fill[white] (0,0) circle (0.8);
+    \fill[teal!14] (0,0) circle (2.4); \fill[red!6] (0,0) circle (1.6);
+    \fill[white] (0,0) circle (0.8);
+    \draw[thick] (0,0) circle (0.8) (0,0) circle (1.6) (0,0) circle (2.4) (0,0) circle (3.2);
+    \draw[red!70!black, dashed, thick] (0,0) circle (0.83) (0,0) circle (3.17);
+    \foreach \a in {0,30,...,330} { \draw[blue!70!black] ({2.0*cos(\a)},{2.0*sin(\a)}) circle (0.5); }
+    \node[font=\scriptsize] at (0,0) {$K_1$};
+    \node[font=\scriptsize] at (90:1.2) {$K_2$};
+    \node[font=\scriptsize] at (90:2.8) {$K_4 \setminus K_3$};
+    \draw[->, gray!70] (3.6,1.6) node[right, font=\scriptsize, teal!50!black] {$A_2 = K_3 \setminus \operatorname{Int}K_2$ (compact)} -- (2.3,1.0);
+    \draw[->, gray!70] (3.6,0.4) node[right, font=\scriptsize, blue!70!black] {finitely many $B_x \in \mathcal{B}$, $B_x \subseteq U_\alpha \cap W_2$, cover $A_2$} -- (2.45,0.25);
+    \draw[->, gray!70] (3.6,-0.8) node[right, font=\scriptsize, red!70!black] {$W_2 = \operatorname{Int}K_4 \setminus K_1$ (open), dashed} -- (3.1,-0.9);
+    \node[font=\scriptsize, anchor=west, align=left] at (3.6,-1.9) {sets chosen for $A_j$ lie in $W_j$, and $W_j \cap W_k = \varnothing$\\ when $|j - k| \ge 3$: the family is locally finite};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The proof of Theorem~\ref{thm:manifolds-paracompact} for $j = 2$. The compact ring $A_2 = K_3 \setminus \operatorname{Int}K_2$ (teal) is covered by finitely many basis sets $B_x$ (blue), each inside some $U_\alpha$ and inside the open ring $W_2 = \operatorname{Int}K_4 \setminus K_1$ (between the dashed circles). Rings $W_j$ and $W_k$ with $|j - k| \ge 3$ are disjoint, so each point meets only the sets chosen for five consecutive $j$: the refinement is locally finite.
+%% <<< END ADDED
+
+\begin{rembox}[Is Local Compactness Needed?]\label{rem:paracompact-hypotheses}
+The board stated the theorem as ``if $X$ is $T_2$ and second countable, then it is paracompact'', and Uribe was unsure: ``I'm not sure \ldots\ whether you need local compactness \ldots\ Check your email. I'll clarify.'' \textit{(Filled in.)} Some hypothesis beyond Hausdorff and second countable is needed in general. A paracompact Hausdorff space is normal, in particular regular (Munkres, Theorem~41.1), and the \emph{$K$-topology} on $\mathbb{R}$ --- generated by the open intervals and the sets $(a, b) \setminus \{1/n : n \ge 1\}$ --- is Hausdorff and second countable but not regular (Munkres, \S31), so not paracompact. Local compactness, as above, suffices; so does regularity. For manifolds nothing changes: they are locally compact. Uribe on second countability: ``we haven't used [it] at all until this moment, when we're paying the bills'' --- it was used once before, for countable subcovers in measure zero (Lemma~\ref{lem:countable-subcover}).
+\end{rembox}
+
+\begin{defbox}[Regular Coordinate Ball]\deflabel{def:regular-coordinate-ball}
+An open set $B \subseteq M$ is a \textbf{regular coordinate ball} if there are a chart $(U, \varphi)$ with $B \subseteq U$ and numbers $0 < \delta < \varepsilon$ such that $\varphi(B) = B_\delta(0)$, the $\delta$-ball centred at $0$, and $B_\varepsilon(0) \subseteq \varphi(U)$ --- an $\varepsilon$-ball centred at $0$ containing $\varphi(B)$, with room to spare.
+\leeref{Ch.~1, \emph{Regular Coordinate Balls}}
+\end{defbox}
+
+``Why do you even need the second condition?'' asked a student. ``Because I want to pull back my function that I had before. You need a little room.''
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+\draw[blue!60!black, thick] plot[smooth cycle] coordinates {(2.150,0.000) (2.188,0.132) (2.195,0.260) (2.173,0.381) (2.126,0.493) (2.058,0.593) (1.976,0.683) (1.884,0.763) (1.787,0.836) (1.689,0.904) (1.590,0.972) (1.490,1.042) (1.386,1.118) (1.278,1.200) (1.162,1.290) (1.038,1.386) (0.904,1.484) (0.764,1.583) (0.619,1.676) (0.473,1.758) (0.330,1.825) (0.192,1.872) (0.062,1.897) (-0.060,1.897) (-0.176,1.872) (-0.290,1.825) (-0.405,1.758) (-0.526,1.676) (-0.658,1.583) (-0.804,1.484) (-0.962,1.386) (-1.133,1.290) (-1.310,1.200) (-1.487,1.118) (-1.655,1.042) (-1.806,0.972) (-1.932,0.904) (-2.026,0.836) (-2.087,0.763) (-2.113,0.683) (-2.107,0.593) (-2.076,0.493) (-2.027,0.381) (-1.967,0.260) (-1.906,0.132) (-1.850,0.000) (-1.803,-0.132) (-1.766,-0.260) (-1.739,-0.381) (-1.719,-0.493) (-1.700,-0.593) (-1.678,-0.683) (-1.648,-0.763) (-1.605,-0.836) (-1.547,-0.904) (-1.474,-0.972) (-1.388,-1.042) (-1.290,-1.118) (-1.185,-1.200) (-1.075,-1.290) (-0.963,-1.386) (-0.849,-1.484) (-0.735,-1.583) (-0.617,-1.676) (-0.495,-1.758) (-0.365,-1.825) (-0.226,-1.872) (-0.078,-1.897) (0.079,-1.897) (0.242,-1.872) (0.405,-1.825) (0.563,-1.758) (0.710,-1.676) (0.840,-1.583) (0.950,-1.484) (1.038,-1.386) (1.104,-1.290) (1.153,-1.200) (1.190,-1.118) (1.222,-1.042) (1.258,-0.972) (1.304,-0.904) (1.366,-0.836) (1.445,-0.763) (1.541,-0.683) (1.651,-0.593) (1.769,-0.493) (1.886,-0.381) (1.994,-0.260) (2.084,-0.132)};
+\node[blue!60!black, font=\scriptsize] at (1.75,1.65) {$\varphi_i(U_i)$};
+\draw[orange!85!black, thick] (0,0) circle (1.3); \node[orange!85!black, font=\scriptsize] at (0,1.05) {$\varepsilon$-ball};
+\draw[teal!60!black, thick] (0,0) circle (0.75); \node[teal!60!black, font=\scriptsize] at (0,0.0) {$\varphi_i(B_i)$};
+\node[teal!60!black, font=\scriptsize] at (0,-0.35) {$\delta$-ball};
+\fill (0,0.25) circle (0pt);
+\node[font=\scriptsize, gray!70!black] at (-2.0,-1.6) {$\mathbb{R}^m$};
+\end{tikzpicture}
+\end{center}
+
+\begin{lembox}[Regular Coordinate Balls Form a Basis]\thmlabel{lem:regular-balls-basis}
+Let $\{U_\alpha\}$ be an open cover of $M$. The regular coordinate balls $B$ whose chart $(U, \varphi)$ can be chosen with $U$ inside some $U_\alpha$ form a basis of the topology of $M$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Filled in.)} Let $W$ be open and $x \in W$, say $x \in U_\alpha$. Take a chart $(V, \psi)$ at $x$, restrict it to $U = V \cap W \cap U_\alpha$, and translate so that $\varphi = \psi|_U - \psi(x)$ sends $x$ to $0$. $\varphi(U)$ is open, so it contains some $B_\varepsilon(0)$; for $0 < \delta < \varepsilon$, $B = \varphi^{-1}(B_\delta(0))$ is a regular coordinate ball with $x \in B \subseteq U \subseteq W$, and its chart domain $U$ lies in $U_\alpha$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:partition-of-unity} (begun in Lecture~22, to be completed in Lecture~23)]
+\textit{(The lecture's steps; Uribe stopped here: ``I will finish the proof next time.'')} By Theorem~\ref{thm:manifolds-paracompact} with the basis of Lemma~\ref{lem:regular-balls-basis}, there is a countable, locally finite refinement $\{B_i\}_{i \in \mathbb{N}}$ of $\{U_\alpha\}$ covering $M$, each $B_i$ a regular coordinate ball with chart $(U_i, \varphi_i)$, $\varphi_i(B_i) = B_{\delta_i}(0)$, $B_{\varepsilon_i}(0) \subseteq \varphi_i(U_i)$, and $U_i \subseteq U_{\alpha(i)}$. ``Pull back the function $f$ from the first part'' (Lemma~\ref{lem:plateau}, with $\delta_i < \varepsilon_i$) by $\varphi_i$, and extend it by zero: this gives a smooth $f_i : M \to \mathbb{R}$, as in step~3 of the proof of Proposition~\ref{prop:bump-existence}, with
+\[
+f_i|_{B_i} \equiv 1, \qquad \operatorname{supp} f_i \subseteq U_i \subseteq U_{\alpha(i)} .
+\]
+``The $B_i$ form a cover, and $f_i$ is identically equal to one there,'' so $\sum_j f_j \ge 1$ at every point. Let
+\[
+g_i = \frac{f_i}{\sum_j f_j}, \qquad \text{so that} \qquad \sum_i g_i \equiv 1, \qquad
+\chi_\alpha = \sum_{i \,:\, \alpha(i) = \alpha} g_i .
+\]
+``What we don't have [yet] is the index'': grouping the $g_i$ by $\alpha(i)$ re-indexes the partition by $A$.
+
+\emph{To be completed in Lecture~23}: that the sums are locally finite, so that $\sum_j f_j$, the $g_i$ and the $\chi_\alpha$ are smooth, and that $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. One point to watch there: local finiteness of $\{B_i\}$ does not by itself make $\{\operatorname{supp} f_i\}$ locally finite, since $\operatorname{supp} f_i$ sits in the larger ball $\varphi_i^{-1}(B_{\varepsilon_i}(0))$, not in $\overline{B_i}$. Lee's proof of Theorem~2.23 avoids this by taking $f_i$ positive on $B_i$ and supported in $\overline{B_i}$, and using that the closures of a locally finite family are locally finite.
+\end{proof}
+
+\textbf{Transcription note (Lecture 22).} Page~58 of the handwritten notes states the theorem ``if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)''; as stated it is false in general, and local compactness, which manifolds have, is the missing hypothesis (Remark~\ref{rem:paracompact-hypotheses}).
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -19225,7 +19517,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:measure-zero}\ Sets of measure zero & Chapter 6, \emph{Sets of Measure Zero} (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) \\
 \ref{sec:sard}\ Sard's theorem & Chapter 6, \emph{Sard's Theorem} (Theorem 6.10, Corollary 6.11) \\
 \ref{sec:parametric-transversality}\ Parametric transversality & Chapter 6, \emph{The Transversality Homotopy Theorem} (Theorem 6.35) \\
-\ref{sec:whitney}\ The Whitney embedding theorem & Chapter 6, \emph{The Whitney Embedding Theorem} (Lemma 6.13, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20--2.22 (bump functions) \\
+\ref{sec:whitney}\ The Whitney embedding theorem & Chapter 6, \emph{The Whitney Embedding Theorem} (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20--2.22 (bump functions); Proposition 2.28 (exhaustion functions) \\
+\ref{sec:partitions-of-unity}\ Partitions of unity & Chapter 2, \emph{Partitions of Unity} (Lemmas 2.20--2.22, Theorem 2.23); Chapter 1, \emph{Paracompactness} (Theorem 1.15); Proposition A.60 \\
 \bottomrule
 \end{longtable}
 
@@ -19245,6 +19538,7 @@ Example 1.5 & Prop.~\ref{prop:rpn-topologies} \\
 Example 1.8 & Thm.~\ref{thm:product-inherit} \\
 Proposition 1.11 & Prop.~\ref{prop:count-components}, Thm.~\ref{thm:conn-implies-path}, Cor.~\ref{cor:manifold-components} \\
 Proposition 1.12 & Prop.~\ref{prop:locally-compact} \\
+Theorem 1.15 & Thm.~\ref{thm:manifolds-paracompact} \\
 Proposition 1.17 & Def.~\ref{def:compatible-atlases}, Thm.~\ref{thm:maximal-atlas} \\
 Example 1.21 & Prop.~\ref{prop:zero-manifolds} \\
 Example 1.22 & Ex.~\ref{ex:atlas-Rn} \\
@@ -19267,8 +19561,13 @@ Problem 1-9 & Def.~\ref{def:cpn}, Prop.~\ref{prop:cpn}, Prop.~\ref{prop:cpn-comp
 Proposition 2.5 & Prop.~\ref{prop:smooth-map-charts} \\
 Proposition 2.10 & Lem.~\ref{lem:composition-smooth} \\
 Proposition 2.15 & Prop.~\ref{prop:diffeomorphic-equivalence} \\
+Lemma 2.20 & Lem.~\ref{lem:plateau} \\
+Lemma 2.21 & Lem.~\ref{lem:plateau} \\
+Lemma 2.22 & Lem.~\ref{lem:plateau} \\
+Theorem 2.23 & Thm.~\ref{thm:partition-of-unity} \\
 Proposition 2.25 & Prop.~\ref{prop:germ-global}, Prop.~\ref{prop:bump-existence} \\
 Lemma 2.26 & Cor.~\ref{cor:germ-extension} \\
+Proposition 2.28 & Prop.~\ref{prop:exhaustion-exists} \\
 Lemma 3.1 & Lem.~\ref{lem:derivation-properties} \\
 Proposition 3.2 & Def.~\ref{def:Dv}, Prop.~\ref{prop:Dv-determines-v}, Lem.~\ref{lem:hadamard}, Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:ambient-abstract} \\
 Corollary 3.3 & Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:tangent-basis}, Prop.~\ref{prop:differential-agree} \\
@@ -19280,7 +19579,7 @@ Proposition 3.10 & Cor.~\ref{cor:tangent-basis-consequences} \\
 Proposition 3.13 & Prop.~\ref{prop:differential-agree}, Cor.~\ref{cor:tangent-vs} \\
 Proposition 3.14 & Thm.~\ref{thm:tangent-product}, Cor.~\ref{cor:tangent-product-coords}, Ex.~\ref{ex:product-projection-submersion} \\
 Proposition 3.15 & Thm.~\ref{thm:tangent-basis} \\
-Proposition 3.18 & Def.~\ref{def:tb-charts}, Def.~\ref{def:tb-chart}, Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:tb-atlas}, Prop.~\ref{prop:tangent-bundle-claim} \\
+Proposition 3.18 & Def.~\ref{def:tb-charts}, Def.~\ref{def:tb-chart}, Prop.~\ref{prop:tb-atlas}, Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:tangent-bundle-claim} \\
 Proposition 3.23 & Thm.~\ref{thm:every-vector-velocity} \\
 Proposition 3.24 & Cor.~\ref{cor:velocity-composite} \\
 Corollary 3.25 & Thm.~\ref{thm:vs-differential-curves}, Cor.~\ref{cor:velocity-composite} \\
@@ -19307,10 +19606,11 @@ Lemma 6.2 & Lem.~\ref{lem:fubini-measure-zero} \\
 Proposition 6.5 & Lem.~\ref{lem:smooth-measure-zero} \\
 Lemma 6.6 & Def.~\ref{def:measure-zero-manifold}, Prop.~\ref{prop:measure-zero-every-chart} \\
 Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
-Theorem 6.10 & Thm.~\ref{thm:sard} \\
+Theorem 6.10 & Lem.~\ref{lem:sard-reduction}, Lem.~\ref{lem:sard-flat-points}, Thm.~\ref{thm:sard} \\
 Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
-Theorem 6.15 & Thm.~\ref{thm:whitney} \\
-Theorem 6.18 & Thm.~\ref{thm:whitney} \\
+Lemma 6.13 & Lem.~\ref{lem:projection-injective}, Lem.~\ref{lem:projection-immersion} \\
+Theorem 6.15 & Lem.~\ref{lem:compact-embeds}, Thm.~\ref{thm:whitney-compact}, Prop.~\ref{prop:noncompact-embedding}, Thm.~\ref{thm:whitney} \\
+Theorem 6.18 & Thm.~\ref{thm:whitney-compact}, Thm.~\ref{thm:whitney} \\
 Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Cor.~\ref{cor:transverse-special-cases}, Thm.~\ref{thm:transverse-intersection-manifold} \\
 Theorem 6.35 & Thm.~\ref{thm:parametric-transversality}, Cor.~\ref{cor:parametric-sard} \\
 Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
@@ -19342,7 +19642,7 @@ Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
 Proposition 11.8 & Prop.~\ref{prop:double-dual} \\
-Proposition 11.9 & Def.~\ref{def:ctb-trivialization}, Def.~\ref{def:ctb-chart}, Prop.~\ref{prop:ctb-topology}, Prop.~\ref{prop:cotangent-transition}, Cor.~\ref{cor:ctb-fibration} \\
+Proposition 11.9 & Def.~\ref{def:ctb-trivialization}, Def.~\ref{def:ctb-chart}, Prop.~\ref{prop:cotangent-transition}, Prop.~\ref{prop:ctb-topology}, Cor.~\ref{cor:ctb-fibration} \\
 Proposition 11.11 & Prop.~\ref{prop:one-form-coords} \\
 Proposition 11.20 & Cor.~\ref{cor:df-properties} \\
 Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms} \\
@@ -19377,6 +19677,7 @@ Proposition A.45 & Prop.~\ref{fact:compact} \\
 Proposition A.50 & Prop.~\ref{fact:compact} \\
 Lemma A.52 & Prop.~\ref{fact:compact} \\
 Theorem A.57 & Prop.~\ref{prop:proper-closed} \\
+Proposition A.60 & Lem.~\ref{lem:compact-exhaustion} \\
 Corollary B.21 & Prop.~\ref{fact:linalg} \\
 Proposition B.24 & Prop.~\ref{fact:linalg} \\
 Theorem C.15 & Lem.~\ref{lem:hadamard}, Lem.~\ref{lem:taylor-hadamard} \\

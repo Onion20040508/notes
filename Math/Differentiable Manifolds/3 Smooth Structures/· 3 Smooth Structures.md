@@ -31,7 +31,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 266 later results
-- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 258 later results
-- [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]: 257 later results
-- [[Unique Maximal Atlas|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]: 257 later results
+- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 269 later results
+- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 261 later results
+- [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]: 260 later results
+- [[Unique Maximal Atlas|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]: 260 later results

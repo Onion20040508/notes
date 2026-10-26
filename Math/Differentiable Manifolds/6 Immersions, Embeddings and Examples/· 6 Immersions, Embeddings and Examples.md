@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (32), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (45), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (39), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (66)
-**Used by:** [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (3)
+**Used by:** [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (5)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (29), [[Multivariable Analysis]] (3)
 
 ## Sections
@@ -27,7 +27,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Immersion Normal Form|Theorem §43.1: Local Normal Form for Immersions]]: 47 later results
-- [[§43 Immersions#^cor-43-2|Corollary §43.2: The Local Image of an Immersion]]: 46 later results
-- [[Images of Embeddings Are Submanifolds|Theorem §44.1: The Image of an Embedding Is a Regular Submanifold]]: 45 later results
-- [[§44 Embeddings#^prop-44-4|Proposition §44.4: Proper Maps into Manifolds Are Closed]]: 35 later results
+- [[Immersion Normal Form|Theorem §43.1: Local Normal Form for Immersions]]: 50 later results
+- [[§43 Immersions#^cor-43-2|Corollary §43.2: The Local Image of an Immersion]]: 49 later results
+- [[Images of Embeddings Are Submanifolds|Theorem §44.1: The Image of an Embedding Is a Regular Submanifold]]: 48 later results
+- [[§44 Embeddings#^prop-44-4|Proposition §44.4: Proper Maps into Manifolds Are Closed]]: 39 later results
