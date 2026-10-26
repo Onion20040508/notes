@@ -162,7 +162,7 @@ since $E_i \subseteq f^{-1}\big((-\infty, a_{i+1}]\big)$ and $E_{i+2} \subseteq 
 
 ![[m591-65-2.svg]]
 
-Left: a sublevel set of an exhaustion function, compact at every height $c$. Right: the slicing (“Lee doesn't have a figure”). $E_i$ runs from the regular value $b_{i-1}$, just below $i$, to $a_{i+1}$, just above $i + 1$, and contains the band $D_i$ between the integer levels $i$ and $i + 1$ in its interior.
+Left: a sublevel set of an exhaustion function, compact at every height $c$, on a surface with holes, as drawn on the board: an exhaustion function exists on every manifold, whatever its topology. Right: the slicing (“Lee doesn't have a figure”). $E_i$ runs from the regular value $b_{i-1}$, just below $i$, to $a_{i+1}$, just above $i + 1$, and contains the band $D_i$ between the integer levels $i$ and $i + 1$ in its interior. *(Not from lecture.)* The height $f$ has critical points at the top and bottom of each hole, where the topology of the sublevel sets changes (the starting point of Morse theory); the levels $a_i$, $b_i$ are regular values, so they miss these points, and each $E_i$ is a compact manifold with boundary, possibly with holes of its own.
 
 > [!theorem] Proposition §65.6: A Proper Embedding from the Slices
 > Let $f$ be an exhaustion function on $M$, $\dim M = m$, and $E_i, D_i$ as above. Suppose that each $E_i$ admits an embedding $F_i : E_i \to \mathbb{R}^{2m+1}$, and let $\rho_i : M \to \mathbb{R}$ be smooth with $\operatorname{supp}\rho_i \subseteq \operatorname{Int}E_i$ and $\rho_i \equiv 1$ on a neighbourhood of $D_i$. Then

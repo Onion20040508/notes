@@ -5,7 +5,7 @@ chapter: 9
 section: 66
 tags: [differentiable-manifolds, math591]
 ---
-← [[§65 The Whitney Embedding Theorem]] · ↑ [[· 9 Sard's Theorem]] · →
+← [[§65 The Whitney Embedding Theorem]] · ↑ [[· 9 Sard's Theorem]]
 
 *Stage: analysis — Writing $1$ as a locally finite sum of smooth functions subordinate to any open cover: the tool for gluing local constructions into global ones.*
 
