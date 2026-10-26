@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # CA Mathematical Methods
 ← [[· C9 Discrete Symmetries and Majorana Fields]] · ↑ [[Quantum Field Theory]] · [[· CB Lie Groups, Lie Algebras and Representations]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (7), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (43), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (3)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (45), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (32), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (197), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (429), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (150), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (21), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (2)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (7), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (43), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (7)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (45), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (32), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (197), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (429), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (150), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (63), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (2)
 
 ## Sections
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals]] — 513 notes App. A §A.1
@@ -18,6 +18,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CA.4 Contour Integration]] — 513 notes App. A §A.5
 - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions]] — 513 notes App. A §§A.6–A.8
 - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions]] — 513 notes App. A §§A.4–A.5, Ch. 6 §§6.2–6.3, §6.9
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula]] — 513 notes Ch. 14 §§14.2, 14.5, 14.7; 493 notes §25–§30, §55
 
 ## Theorems
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|§CA.1.1]] Dominated Convergence and Differentiation under the Integral
@@ -65,3 +66,11 @@ tags: [chapter, quantum-field-theory]
 - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|§CA.6.6]] The iε Limits of the Propagator Denominators
 - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions
 - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|§CA.6.8]] Convolution with a Fundamental Solution Solves the Sourced Equation
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-1|§CA.7.1]] The Number of Pairings
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^lem-ca-7-2|§CA.7.2]] Permutations Act on Pairings
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^lem-ca-7-3|§CA.7.3]] The Relabelling Group Acts on Half-Edges and on Labelled Diagrams
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|§CA.7.4]] The Number of Labelled Diagrams of One Diagram
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-5|§CA.7.5]] A Diagram Is Its Multigraph up to Relabelling the Vertices
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-6|§CA.7.6]] The Symmetry Factor as a Product
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-7|§CA.7.7]] Splitting a Pairing at the External Points
+- [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-8|§CA.7.8]] Factorization of Sums over Pairings

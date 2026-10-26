@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (47), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (78), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (4), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (100)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (107), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (173), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (4), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (100)
 
 ## Sections
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3), restatements of REL §B1.2, §B2.2 and QM §B6.1 (CB ordering pass); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
@@ -91,6 +91,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-6|§CB.6.6]] Two Real Forms of 𝔰𝔩(2,ℂ)
 - [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-8|§CB.6.8]] The Real Lie Algebra of SL(2,ℂ) Is the Lorentz Algebra
 - [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-9|§CB.6.9]] Real Forms Have the Same Representations
+- [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-10|§CB.6.10]] Rotation and Boost Weights of a Joint Eigenvector
 - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-3|§CB.7.3]] Kernel and Image of an Intertwiner Are Invariant
 - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-4|§CB.7.4]] Schur's Lemma
 - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-5|§CB.7.5]] Central Elements Act as Scalars on Irreducible Representations

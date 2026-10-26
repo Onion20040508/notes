@@ -1,0 +1,41 @@
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+}
+\begin{tikzpicture}[font=\small]
+  % row (a)
+  \begin{scope}[yshift=0cm]
+    \node[anchor=west,font=\footnotesize] at (-1.2,1.0) {(a) $x$ with $y$; legs paired: $3$ ways};
+    \node[fdx] (x) at (-0.8,0) {}; \node[fdx] (y) at (0.6,0) {};
+    \node[fdlab,below] at (x){$x$}; \node[fdlab,below] at (y){$y$};
+    \draw[fdl] (x)--(y);
+    \node[fdv] (z) at (2.4,0) {}; \node[fdlab] at (3.05,0){$z$};
+    \foreach \a/\l in {45/1,135/2,225/3,315/4}{\draw[fdl] (z)--++(\a:0.45) node[fdlab,pos=1.25]{\l};}
+    \draw[figR,densely dashed,line width=0.7pt] (2.4,0)++(45:0.45) to[bend right=50] ($(2.4,0)+(135:0.45)$);
+    \draw[figR,densely dashed,line width=0.7pt] (2.4,0)++(225:0.45) to[bend right=50] ($(2.4,0)+(315:0.45)$);
+    \draw[->,>=Stealth,gray] (3.4,0)--(4.4,0);
+    \node at (5.0,0) {$\tfrac{3}{4!}=\tfrac18$};
+    \node[fdx] (x2) at (6.0,0) {}; \node[fdx] (y2) at (7.3,0) {};
+    \node[fdlab,below] at (x2){$x$}; \node[fdlab,below] at (y2){$y$};
+    \draw[fdl] (x2)--(y2);
+    \draw[fdl] (8.2,0.3) circle (0.3); \draw[fdl] (8.2,-0.3) circle (0.3); \node[fdv] at (8.2,0){}; \node[fdlab,right] at (8.5,0){$z$};
+  \end{scope}
+  % row (b)
+  \begin{scope}[yshift=-2.4cm]
+    \node[anchor=west,font=\footnotesize] at (-1.2,1.0) {(b) $x$ to a leg, $y$ to another: $4\cdot3=12$ ways};
+    \node[fdx] (x) at (-0.8,0) {}; \node[fdx] (y) at (2.8,0) {};
+    \node[fdlab,below] at (x){$x$}; \node[fdlab,below] at (y){$y$};
+    \node[fdv] (z) at (1.0,0) {}; \node[fdlab,below] at (1.0,-0.15){$z$};
+    \draw[fdl] (x)--(z)--(y);
+    \draw[fdl] (z)--++(60:0.45); \draw[fdl] (z)--++(120:0.45);
+    \draw[figR,densely dashed,line width=0.7pt] (1,0)++(60:0.45) to[bend right=60] ($(1,0)+(120:0.45)$);
+    \draw[->,>=Stealth,gray] (3.4,0)--(4.4,0);
+    \node at (5.0,0) {$\tfrac{12}{4!}=\tfrac12$};
+    \node[fdx] (x2) at (6.0,0) {}; \node[fdx] (y2) at (8.6,0) {};
+    \node[fdlab,below] at (x2){$x$}; \node[fdlab,below] at (y2){$y$};
+    \draw[fdl] (x2)--(y2); \draw[fdl] (7.3,0.32) circle (0.32); \node[fdv] at (7.3,0){}; \node[fdlab] at (7.3,-0.3){$z$};
+  \end{scope}
+\end{tikzpicture}

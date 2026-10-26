@@ -1,0 +1,26 @@
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+}
+\begin{tikzpicture}[>=Stealth,font=\small,scale=0.82]
+  \begin{scope}
+    \draw[->,gray] (-3.2,0)--(3.3,0) node[right]{\scriptsize$\operatorname{Re}z^{0}$};
+    \draw[->,gray] (0,-1.5)--(0,1.5) node[above]{\scriptsize$\operatorname{Im}z^{0}$};
+    \draw[figB,very thick,->] (-2.9,0.42)--(2.9,-0.42);
+    \node[figB,anchor=north east] at (2.9,-0.5) {\scriptsize$T(1-i\epsilon)$};
+    \node[figB,anchor=south west] at (-2.9,0.5) {\scriptsize$-T(1-i\epsilon)$};
+    \node at (0,-2.1) {\scriptsize(a) the time of a vertex};
+  \end{scope}
+  \begin{scope}[xshift=8cm]
+    \draw[->,gray] (-3.2,0)--(3.3,0) node[right]{\scriptsize$\operatorname{Re}p^{0}$};
+    \draw[->,gray] (0,-1.5)--(0,1.5) node[above]{\scriptsize$\operatorname{Im}p^{0}$};
+    \fill[figR] (1.6,-0.3) circle (2.2pt) node[below right=-1pt,black]{\scriptsize$E_{\mathbf p}-i\epsilon$};
+    \fill[figR] (-1.6,0.3) circle (2.2pt) node[above left=-1pt,black]{\scriptsize$-E_{\mathbf p}+i\epsilon$};
+    \draw[figO,very thick,->] (-2.9,-0.45)--(2.9,0.45);
+    \node[figO,anchor=south east] at (2.9,0.55) {\scriptsize$p^{0}=s(1+i\epsilon)$};
+    \node at (0,-2.1) {\scriptsize(b) the compensating tilt of every energy};
+  \end{scope}
+\end{tikzpicture}

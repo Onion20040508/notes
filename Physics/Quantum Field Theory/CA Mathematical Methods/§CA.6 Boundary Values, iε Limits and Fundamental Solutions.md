@@ -7,7 +7,7 @@ section: CA.6
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions]] · ↑ [[· CA Mathematical Methods]]
+← [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions]] · ↑ [[· CA Mathematical Methods]] · [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula]] →
 
 *Sources: the user's PHY 513 notes, App. A §A.4 (limits), §A.5 (the Sokhotski–Plemelj formula, eq. (SP); the half-residue lemma; Caution "What the formula does and does not say"; worked example (iii)), Ch. 5 §§5.4, 5.7, Ch. 6 §§6.1–6.3, §6.9 · PHY 513, Problem Set 4, eq. (11) · standard results stated here, where marked: Hörmander, The Analysis of Linear Partial Differential Operators I, §§3.1, 3.3, 4.2, 7.3; Gel'fand & Shilov, Generalized Functions, Vol. 1, Ch. I and III; Streater & Wightman, PCT, Spin and Statistics, and All That, Ch. 2.*
 
@@ -390,3 +390,4 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 > - **Used in**, statement by statement (Electromagnetism C items):
 >   - Def. §CA.6.1, Theorems §CA.6.7–§CA.6.8 (fundamental solutions): the Coulomb potential, the Green functions of Poisson's equation, the Lorenz-gauge and Proca solutions — [[§C1.3 Gauge Symmetry and Charge Conservation#^ex-c1-3-2|EM ★ Example §C1.3.2]], [[§C1.4 Gauge Fixing and the Two Polarizations#^thm-c1-4-1|EM Theorem §C1.4.1]], [[§C2.1 The Static Limit and the Field of a Charge Distribution#^rem-c2-1-1|EM Remark: The Coulomb potential as a fundamental solution]], [[§C7.3 Green Functions for Poisson’s Equation#^def-c7-3-1|EM Def. §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-1|EM Theorem §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-4|EM Theorem §C7.3.4]].
 >   - Theorem §CA.6.5 (damping): the two-tube electron lens by a Fourier integral — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^ex-c6-3-1|EM Example §C6.3.1]].
+> - **Used in** (C6 places, Lecture 14): Theorem §CA.6.5 — the damping of the vacuum projection and the Feynman pole ([[§C6.11 The iε Limit and Vacuum Bubbles#^rem-c6-11-1|§C6.11, Remark: Why precisely what we do already]]); Theorem §CA.6.6 — the tilted energy contour gives $+i\varepsilon$ ([[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-1|Theorem §C6.11.1]]).

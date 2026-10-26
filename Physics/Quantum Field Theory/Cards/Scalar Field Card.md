@@ -151,7 +151,24 @@ Problem Set 7 makes these course material; phases set to $1$. Dirac counterparts
 | current | $\hat j^\mu = i(\hat\phi\,\partial^\mu\hat\phi^\dagger - \hat\phi^\dagger\partial^\mu\hat\phi)$: $P$ $+\mathcal P^\mu{}_\nu\hat j^\nu(\tilde x)$, $C$ $-\hat j^\mu(x)$, $T$ $+\mathcal P^\mu{}_\nu\hat j^\nu(x_T)$ (Problem Set 7's $J^\mu = -\hat j^\mu$, same rules) | [[§C9.2 Parity of the Scalar Field#^thm-c9-2-6\|Theorem §C9.2.6]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4\|Theorem §C9.10.4]] |
 | CPT | $\Theta\hat\phi(x)\Theta^{-1} = \hat\phi^\dagger(-x)$; $\hat\phi^\dagger\hat\phi$, $\partial\hat\phi^\dagger\cdot\partial\hat\phi$ even, $\hat j^\mu \to -\hat j^\mu(-x)$; free $\mathcal L$ invariant under $C$, $P$, $T$ | [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6\|Theorem §C9.10.6]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-5\|Theorem §C9.10.5]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-7\|Theorem §C9.2.7]] |
 
-## 9. Procedures
+## 9. Wick's theorem and Feynman rules ($\phi^4$ theory)
+
+Free fields $\hat\phi_i = \hat\phi_I(x_i)$; Lecture 14.
+
+| | Formula | Home |
+| --- | --- | --- |
+| price of reordering | $[\hat\phi^+(x), \hat\phi^-(y)] = D_W(x - y)$ | [[§C6.5 Normal Ordering and Contractions#^thm-c6-5-2\|Theorem §C6.5.2]] |
+| contraction | replace the pair $\hat\phi_i\hat\phi_j$ by $D_F(x_i - x_j)$, the rest normal ordered (a bracket on the slides and in PS); two fields: $T\{\hat\phi_1\hat\phi_2\} = \,:\!\hat\phi_1\hat\phi_2\!:\, + D_F(x_1 - x_2)$ | [[§C6.5 Normal Ordering and Contractions#^def-c6-5-1\|Def. §C6.5.1]] |
+| Wick | $T\{\hat\phi_1\cdots\hat\phi_n\} = \,:\!\hat\phi_1\cdots\hat\phi_n\!: +$ all contractions (rest normal ordered) | [[§C6.6 Wick's Theorem#^thm-c6-6-2\|Theorem §C6.6.2]] |
+| vacuum value | $\langle0\vert T\{\hat\phi_1\cdots\hat\phi_n\}\vert0\rangle = \sum_{\text{pairings}}\prod D_F(x_i - x_j)$, $(n-1)!!$ terms; $0$ for $n$ odd | [[§C6.6 Wick's Theorem#^thm-c6-6-3\|Theorem §C6.6.3]] |
+| first order | numerator: $-i\lambda\int d^4z\bigl[\frac18D_F(x - y)D_F(0)^2 + \frac12D_F(x - z)D_F(0)D_F(z - y)\bigr]$ | [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1\|Theorem §C6.7.1]] |
+| position rules | line $D_F(x - y)$; vertex $-i\lambda\int d^4z$; external point $1$; divide by $S$ | [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-2\|Theorem §C6.8.2]] |
+| momentum rules | line $\frac{i}{p^2 - m^2 + i\varepsilon}$; vertex $-i\lambda$; external $e^{-ip\cdot x}$; conservation at vertices; $\int\frac{d^4p}{(2\pi)^4}$ per undetermined momentum; $1/S$ | [[§C6.10 Feynman Rules in Momentum Space#^thm-c6-10-2\|Theorem §C6.10.2]] |
+| symmetry factor | $\frac1S = \frac{\text{number of contractions}}{n!\,(4!)^n}$; tadpole 2, figure-eight 8, melon 48 | [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1\|Theorem §C6.8.1]] |
+| vacuum bubbles | $\langle\Omega\vert T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}\vert\Omega\rangle = \sum$ diagrams attached to the external points | [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-5\|Theorem §C6.11.5]] |
+| the $T(1 - i\varepsilon)$ limit | tilted vertex times force $p^0 = s(1 + i\varepsilon)$: the Feynman $+i\varepsilon$ | [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-1\|Theorem §C6.11.1]] |
+
+## 10. Procedures
 
 **[[P1 Canonical Quantization]]**
 1. Momenta $\pi_a = \partial\mathcal L/\partial\dot\phi_a$ — [[P1 Canonical Quantization#^p1-1|P1, step 1]]
@@ -173,7 +190,7 @@ Problem Set 7 makes these course material; phases set to $1$. Dirac counterparts
 6. $\mathbf p \to -\mathbf p$ in negative-frequency terms; recognize $D_W(\pm\xi)$, $iD$ — [[P2 Green's Functions by Contour Integration#^p2-6|P2, step 6]]
 7. Check: jump $-i$ in $G'$, support, on-shell differences, $m \to 0$ — [[P2 Green's Functions by Contour Integration#^p2-7|P2, step 7]]
 
-## 10. Pitfalls
+## 11. Pitfalls
 
 - $E_{\mathbf p}$ here is the lectures' $\omega_{\mathbf p}$, and $\pi$ their $\Pi$ — [[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution §C2a.1]]
 - $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$: the slides drop the $(2\pi)^3$ — [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-2|Caution §C2a.4]]
@@ -181,3 +198,4 @@ Problem Set 7 makes these course material; phases set to $1$. Dirac counterparts
 - $D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2)e^{-ip\cdot x} = (m^2 - p^2)e^{-ip\cdot x}$; closing up is counterclockwise, down clockwise — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-2|Caution §C2b.6]]
 - $(2\pi)^3\delta^3(\mathbf 0) = V$, i.e. $\delta^3(\mathbf 0) = V/(2\pi)^3$; a $\delta^3(\mathbf 0)$ from two different momenta signals a dropped sign — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|Remark §C2a.2]]
 - PS's $D$ is $D_W$ here; Yu's $D_{\mathrm{PJ}} = iD$ — [[§C2b.4 Microcausality and the Commutator Function#^cau-c2b-4-1|Caution §C2b.4]]
+- The first-order term of the master formula's *numerator* contains the figure-eight bubble; the correlator does not — [[§C6.7 Feynman Diagrams for Correlation Functions#^cau-c6-7-3|§C6.7, Caution: Numerator, not yet the interacting correlator]]

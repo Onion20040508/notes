@@ -333,7 +333,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > f_k(P) = a_{k-j}\bigl(\rho_A P_{\rm att}\bigr)\;b_j\bigl(\rho'_AP_{\rm vac}\bigr) ,
 > $$
 >
-> where $\rho_A$, $\rho'_A$ rename the vertices of $[k]\setminus A$ and of $A$ by the order-preserving bijections onto $[k - j]$ and $[j]$. Then, in the ring of formal power series $R[[t]]$,
+> where $\rho_A$, $\rho'_A$ rename the vertices of $[k]\setminus A$ and of $A$ by the order-preserving bijections onto $[k - j]$ and $[j]$. Then, in the ring of formal power series $R[\![t]\!]$,
 >
 > $$
 > \sum_{k\ge0}\frac{t^k}{k!}\sum_{P\in\mathcal P(X_{E,k})}f_k(P) = \Bigl(\sum_{i\ge0}\frac{t^i}{i!}\sum_{Q\in\mathcal P_{\rm att}(X_{E,i})}a_i(Q)\Bigr)\Bigl(\sum_{j\ge0}\frac{t^j}{j!}\sum_{R'\in\mathcal P(X_{\varnothing,j})}b_j(R')\Bigr) .

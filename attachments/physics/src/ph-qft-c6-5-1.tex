@@ -1,0 +1,26 @@
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+}
+\newcommand{\frow}[3]{\foreach \i in {#3}{\node[inner sep=1pt, anchor=base] (#1\i) at ({#2+0.52*(\i-1)},0) {$\phi_{\i}$};}}
+\newcommand{\br}[3]{\draw[line width=0.6pt] ($(#1.north)+(0,0.04)$) -- ++(0,#3) -| ($(#2.north)+(0,0.04)$);}
+\begin{tikzpicture}[font=\small]
+  % (a) the definition
+  \node[inner sep=1pt, anchor=base] (pi) at (0,0) {$\phi_i$};
+  \node[inner sep=1pt, anchor=base] (pj) at (0.55,0) {$\phi_j$};
+  \br{pi}{pj}{0.22}
+  \node[anchor=base west] at (0.95,0) {$\longmapsto\;\; D_F(x_i - x_j)$};
+  \node[font=\scriptsize] at (1.2,-0.7) {(a) contract the pair: replace it by the $c$-number $D_F$};
+  % (b) inside a product
+  \begin{scope}[xshift=6.2cm]
+    \node[anchor=base] at (-0.45,0) {$N\bigl($};
+    \frow{b}{0}{1,2,3,4}
+    \br{b1}{b3}{0.24}
+    \node[anchor=base] at (1.88,0) {$\bigr)$};
+    \node[anchor=base,anchor=base west] at (2.05,0) {$=\;D_F(x_1 - x_3)\,N(\phi_2\phi_4)$};
+    \node[font=\scriptsize] at (2.2,-0.7) {(b) inside a product: the rest stays normal ordered};
+  \end{scope}
+\end{tikzpicture}

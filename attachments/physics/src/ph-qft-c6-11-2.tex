@@ -1,0 +1,42 @@
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+}
+\begin{tikzpicture}[font=\small]
+  \node at (-0.6,0) {numerator $=$};
+  \node at (0.55,0) {$\Bigl($};
+  \draw[fdl] (0.9,0)--(2.1,0); \node[fdx] at (0.9,0){}; \node[fdx] at (2.1,0){};
+  \node[fdlab,below] at (0.9,0){$x$}; \node[fdlab,below] at (2.1,0){$y$};
+  \node at (2.75,0) {$+\,\tfrac12$};
+  \draw[fdl] (3.3,0)--(4.8,0); \draw[fdl] (4.05,0.28) circle (0.28);
+  \node[fdx] at (3.3,0){}; \node[fdx] at (4.8,0){}; \node[fdv] at (4.05,0){};
+  \node[fdlab,below] at (3.3,0){$x$}; \node[fdlab,below] at (4.8,0){$y$};
+  \node at (5.35,0) {$+$};
+  \draw[fdl] (5.8,0)--(6.3,0); \draw[fdl] (6.9,0)--(7.4,0);
+  \draw[fdl, pattern=north east lines, pattern color=gray] (6.6,0) circle (0.3);
+  \node[fdx] at (5.8,0){}; \node[fdx] at (7.4,0){};
+  \node[fdlab,below] at (5.8,0){$x$}; \node[fdlab,below] at (7.4,0){$y$};
+  \node[font=\scriptsize] at (6.6,-0.6) {attached, $O(\lambda^2)$};
+  \node at (7.85,0) {$\Bigr)$};
+  \node at (8.25,0) {$\times$};
+  \node at (8.65,0) {$\Bigl($};
+  \node at (9.3,0) {$1+\tfrac18$};
+  \draw[fdl] (10.15,0.22) circle (0.22); \draw[fdl] (10.15,-0.22) circle (0.22); \node[fdv] at (10.15,0){};
+  \node at (10.85,0) {$+\,\tfrac1{16}$};
+  \draw[fdl] (11.85,0) to[bend left=35] (12.45,0); \draw[fdl] (11.85,0) to[bend right=35] (12.45,0);
+  \draw[fdl] (11.65,0) circle (0.2); \draw[fdl] (12.65,0) circle (0.2);
+  \node[fdv] at (11.85,0){}; \node[fdv] at (12.45,0){};
+  \node at (13.45,0) {$+\,\tfrac1{48}$};
+  \foreach \b in {70,22,-22,-70}{\draw[fdl] (14.0,0) to[bend left=\b] (14.9,0);}
+  \node[fdv] at (14.0,0){}; \node[fdv] at (14.9,0){};
+  \node at (15.6,0) {$+\,\tfrac1{128}$};
+  \draw[fdl] (16.3,0.18) circle (0.18); \draw[fdl] (16.3,-0.18) circle (0.18);
+  \draw[fdl] (16.85,0.18) circle (0.18); \draw[fdl] (16.85,-0.18) circle (0.18);
+  \node[fdv] at (16.3,0){}; \node[fdv] at (16.85,0){};
+  \node at (17.65,0) {$+\,\cdots\Bigr)$};
+  \draw[decorate,decoration={brace,mirror,amplitude=5pt},gray] (8.65,-0.75)--(18.2,-0.75);
+  \node[font=\scriptsize,gray] at (13.4,-1.15) {the denominator, which cancels};
+\end{tikzpicture}

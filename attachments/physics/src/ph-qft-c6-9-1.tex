@@ -1,0 +1,61 @@
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+}
+\begin{tikzpicture}[font=\small]
+  % --- top row ---
+  \begin{scope}[xshift=0cm]
+    \draw[fdl] (0,0)--(1.6,0); \draw[fdl] (0.8,0.3) circle (0.3);
+    \node[fdx] at (0,0){}; \node[fdx] at (1.6,0){}; \node[fdv] at (0.8,0){};
+    \node[fdlab,below] at (0,0){$x$}; \node[fdlab,below] at (1.6,0){$y$};
+    \node at (0.8,-0.85) {$S=2$}; \node[font=\scriptsize] at (0.8,-1.3) {12 of $4!$};
+  \end{scope}
+  \begin{scope}[xshift=3.0cm]
+    \draw[fdl] (0,0.3) circle (0.3); \draw[fdl] (0,-0.3) circle (0.3); \node[fdv] at (0,0){};
+    \node at (0,-0.85) {$S=8$}; \node[font=\scriptsize] at (0,-1.3) {3 of $4!$};
+  \end{scope}
+  \begin{scope}[xshift=4.9cm]
+    \foreach \b in {70,22,-22,-70}{\draw[fdl] (0,0) to[bend left=\b] (1.3,0);}
+    \node[fdv] at (0,0){}; \node[fdv] at (1.3,0){};
+    \node at (0.65,-0.85) {$S=48$}; \node[font=\scriptsize] at (0.65,-1.3) {24 of $2\cdot4!^2$};
+  \end{scope}
+  \begin{scope}[xshift=7.6cm]
+    \draw[fdl] (0,0) to[bend left=35] (1,0); \draw[fdl] (0,0) to[bend right=35] (1,0);
+    \draw[fdl] (-0.3,0) circle (0.3); \draw[fdl] (1.3,0) circle (0.3);
+    \node[fdv] at (0,0){}; \node[fdv] at (1,0){};
+    \node at (0.5,-0.85) {$S=16$}; \node[font=\scriptsize] at (0.5,-1.3) {72 of $2\cdot4!^2$};
+  \end{scope}
+  \begin{scope}[xshift=10.6cm]
+    \draw[fdl] (0,0.25) circle (0.25); \draw[fdl] (0,-0.25) circle (0.25);
+    \draw[fdl] (0.85,0.25) circle (0.25); \draw[fdl] (0.85,-0.25) circle (0.25);
+    \node[fdv] at (0,0){}; \node[fdv] at (0.85,0){};
+    \node at (0.42,-0.85) {$S=128$}; \node[font=\scriptsize] at (0.42,-1.3) {9 of $2\cdot4!^2$};
+  \end{scope}
+  % --- bottom row ---
+  \begin{scope}[yshift=-3.2cm, xshift=0.6cm]
+    \draw[fdl] (0,0)--(1.6,0); \draw[fdl] (0.8,0) to[bend left=60] (0.8,0.7); \draw[fdl] (0.8,0) to[bend right=60] (0.8,0.7);
+    \draw[fdl] (0.8,0.95) circle (0.25);
+    \node[fdx] at (0,0){}; \node[fdx] at (1.6,0){}; \node[fdv] at (0.8,0){}; \node[fdv] at (0.8,0.7){};
+    \node[fdlab,below] at (0,0){$x$}; \node[fdlab,below] at (1.6,0){$y$};
+    \node at (0.8,-0.85) {$S=4$}; \node[font=\scriptsize] at (0.8,-1.3) {288 of $2\cdot4!^2$};
+  \end{scope}
+  \begin{scope}[yshift=-3.2cm, xshift=4.0cm]
+    \draw[fdl] (0,0)--(2.2,0); \draw[fdl] (0.7,0.27) circle (0.27); \draw[fdl] (1.5,0.27) circle (0.27);
+    \node[fdx] at (0,0){}; \node[fdx] at (2.2,0){}; \node[fdv] at (0.7,0){}; \node[fdv] at (1.5,0){};
+    \node[fdlab,below] at (0,0){$x$}; \node[fdlab,below] at (2.2,0){$y$};
+    \node at (1.1,-0.85) {$S=4$}; \node[font=\scriptsize] at (1.1,-1.3) {288 of $2\cdot4!^2$};
+  \end{scope}
+  \begin{scope}[yshift=-3.2cm, xshift=8.0cm]
+    \draw[fdl] (0,0)--(3.0,0);
+    \draw[fdl] (0.8,0.27) circle (0.27);
+    \draw[fdl] (1.9,0) to[bend left=55] (1.9,0.75); \draw[fdl] (1.9,0) to[bend right=55] (1.9,0.75);
+    \draw[fdl] (1.9,1.0) circle (0.25);
+    \node[fdx] at (0,0){}; \node[fdx] at (3.0,0){}; \node[fdv] at (0.8,0){}; \node[fdv] at (1.9,0){}; \node[fdv] at (1.9,0.75){};
+    \node[fdlab,below] at (0,0){$x$}; \node[fdlab,below] at (3.0,0){$y$};
+    \node[fdlab,below] at (0.8,0){$z$}; \node[fdlab,below] at (1.9,0){$w$}; \node[fdlab,right] at (2.0,0.7){$u$};
+    \node at (1.5,-0.85) {$S=8$}; \node[font=\scriptsize] at (1.5,-1.3) {10\,368 of $3!\cdot4!^3$};
+  \end{scope}
+\end{tikzpicture}

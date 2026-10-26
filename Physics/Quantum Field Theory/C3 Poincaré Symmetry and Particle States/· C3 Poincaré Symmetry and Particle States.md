@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (49), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (5), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (78)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (54), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (5), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (107)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (7), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (26), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
 
 ## Sections
@@ -32,6 +32,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|§C3.2.1]] The Representations (½, 0) and (0, ½)
 - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|§C3.2.2]] The Vector Representation Is (½, ½)
 - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-3|§C3.2.3]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies
+- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-4|§C3.2.4]] The Four-Vector Is Not (1, 0) ⊕ (0, 0): Boosts Decide What Rotations Cannot
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-1|§C3.3.1]] The Orbital Generators Move the Argument
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-2|§C3.3.2]] The Orbital Generators Obey the Lorentz Algebra
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-3|§C3.3.3]] Orbital Plus Spin
