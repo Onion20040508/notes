@@ -38,7 +38,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 
 ## Chapter by chapter
 
-Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SLₙ and O(n)|Chapter 1]] · [[§19 S₃, ℤ∕nℤ and Uₙ#GLₙ, SLₙ and O(n)|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#GLₙ, SLₙ and O(n)|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§50 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]]; Chapter 10 has one item ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]]), no revisit part.
+Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SLₙ and O(n)|Chapter 1]] · [[§19 S₃, ℤ∕nℤ and Uₙ#GLₙ, SLₙ and O(n)|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#GLₙ, SLₙ and O(n)|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§50 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]]; the Sylow part of Chapter 9 has one more item ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]]), after the revisit part.
 
 ## $GL_n(k)$ is a group, non-abelian for $n \geq 2$
 ![[§3 Basic Examples of Groups#^def-3-6]]

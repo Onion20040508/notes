@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Group Theory]]"
-chapter: 10
+chapter: 9
 section: 53
 tags: [group-theory, math493]
 ---
-← [[§52 The Sylow Theorems]] · ↑ [[· 10 The Sylow Theorems]]
+← [[§52 The Sylow Theorems]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§54 Internal and External Direct Products]] →
 
 *Source: Lecture and slides (Fri Oct 23). Reference: not covered in the Pinter chapters used so far.*
 
@@ -124,7 +124,7 @@ tags: [group-theory, math493]
 ^rem-53-4
 
 > [!example] Example §53.1: Order $21$
-> $21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.)
+> $21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.) Both values of $n_3$ occur: $n_3 = 1$ for $\mathbb{Z}/21\mathbb{Z}$, and $n_3 = 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example [[§55 Semidirect Products#^ex-55-2|§55.2]]).
 >
 > *Source: lecture 10/23*
 

@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Group Theory]]"
-chapter: 10
+chapter: 9
 section: 52
 tags: [group-theory, math493]
 ---
-← [[§51 p-Groups and Sylow Subgroups]] · ↑ [[· 10 The Sylow Theorems]] · [[§53 Simple Groups of Small Order]] →
+← [[§51 p-Groups and Sylow Subgroups]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§53 Simple Groups of Small Order]] →
 
 *Reference: Worksheet 10; lectures 10/12–10/16. Throughout, $p$ is a prime and the groups are finite.*
 
@@ -315,7 +315,7 @@ tags: [group-theory, math493]
 *Uses:* [[§52 The Sylow Theorems#^cor-52-10|§52.10]], [[§52 The Sylow Theorems#^thm-52-9|§52.9]], [[§52 The Sylow Theorems#^cor-52-7|§52.7]], [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§51 p-Groups and Sylow Subgroups#^lem-51-6|§51.6]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|§9.3]]
 
 > [!remark] Remark: When q ≡ 1 mod p
-> *(Not from lecture.)* The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example [[§51 p-Groups and Sylow Subgroups#^ex-51-1|§51.1]]), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step.
+> *(Not from lecture.)* The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example [[§51 p-Groups and Sylow Subgroups#^ex-51-1|§51.1]]), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a [[§55 Semidirect Products#^def-55-2|semidirect product]]: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example [[§55 Semidirect Products#^ex-55-3|§55.3]]).
 
 ^rem-52-3
 

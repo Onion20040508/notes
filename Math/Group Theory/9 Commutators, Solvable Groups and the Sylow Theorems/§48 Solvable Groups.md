@@ -5,7 +5,7 @@ chapter: 9
 section: 48
 tags: [group-theory, math493]
 ---
-← [[§47 Commutators]] · ↑ [[· 9 Characters, Commutators and Solvable Groups]] · [[§49 The Derived Series]] →
+← [[§47 Commutators]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§49 The Derived Series]] →
 
 *Reference: not covered in the Pinter chapters used so far.*
 

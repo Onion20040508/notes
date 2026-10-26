@@ -58,8 +58,12 @@
 \newcounter{excounter}[section]
 \renewcommand{\theexcounter}{\thesection.\arabic{excounter}}
 
+% \ref to a box gives the box number (tcolorbox steps the counter without setting \@currentlabel)
+\makeatletter\newcommand{\tcbsetlabel}[1]{\protected@edef\@currentlabel{#1}}\makeatother
+
 % Definition box (yellow)
 \newtcolorbox[use counter=defcounter]{defbox}[1][]{
+    before upper={\tcbsetlabel{\thedefcounter}},
     enhanced,
     colback=axleryellow,
     colframe=axleryellowborder,
@@ -72,6 +76,7 @@
 
 % Theorem box (blue)
 \newtcolorbox[use counter=thmcounter]{thmbox}[1][]{
+    before upper={\tcbsetlabel{\thethmcounter}},
     enhanced,
     colback=axlerblue,
     colframe=axlerblueborder,
@@ -84,6 +89,7 @@
 
 % Lemma box
 \newtcolorbox[use counter=thmcounter]{lembox}[1][]{
+    before upper={\tcbsetlabel{\thethmcounter}},
     enhanced,
     colback=axlerblue!70,
     colframe=axlerblueborder,
@@ -96,6 +102,7 @@
 
 % Proposition box
 \newtcolorbox[use counter=thmcounter]{propbox}[1][]{
+    before upper={\tcbsetlabel{\thethmcounter}},
     enhanced,
     colback=axlerblue!80,
     colframe=axlerblueborder,
@@ -108,6 +115,7 @@
 
 % Corollary box
 \newtcolorbox[use counter=thmcounter]{corbox}[1][]{
+    before upper={\tcbsetlabel{\thethmcounter}},
     enhanced,
     colback=axlerblue!60,
     colframe=axlerblueborder,
@@ -120,6 +128,7 @@
 
 % Example box (green)
 \newtcolorbox[use counter=excounter]{exbox}[1][]{
+    before upper={\tcbsetlabel{\theexcounter}},
     enhanced,
     colback=axlergreen,
     colframe=axlergreenborder,
@@ -237,7 +246,7 @@ These notes follow the course, and the course studies groups through two familie
     link/.style={-{Stealth[length=2mm]}, draw=black!40, thick},
     bridge/.style={font=\scriptsize, text=black!55, fill=white, inner sep=1pt},
   ]
-  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}, -10.75/{Ch.\,9}, -13.0/{Ch.\,10}}
+  \foreach \y/\t in {0/{Ch.\,1}, -1.5/{Ch.\,2,\,3}, -3.0/{Ch.\,4}, -4.5/{Ch.\,5}, -6.0/{Ch.\,6}, -7.5/{Ch.\,7,\,8}, -9.0/{Ch.\,8,\,9}, -10.75/{Ch.\,9}, -13.0/{Ch.\,9}}
     \node[rotate=90, font=\scriptsize\bfseries, text=black!55] at (-7.3,\y) {\t};
   \foreach \y in {-0.75,-2.25,-3.75,-5.25,-6.75,-8.25,-9.75,-12.1}
     \draw[black!18, dashed] (-7.0,\y) -- (7.25,\y);
@@ -278,7 +287,7 @@ These notes follow the course, and the course studies groups through two familie
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them. Chapter~10 begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}).
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them. The same chapter then begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}). Chapter~10 turns to how a normal subgroup $N$ and a complement $S$ fit together: as a direct product when $S$ is also normal (\ref{sec:internal-direct-products}), and in general as a semidirect product $N \rtimes_\varphi S$, determined by the action $\varphi$ of $S$ on $N$ by conjugation (\ref{sec:semidirect-products}).
 
 \chapter*{Conventions and Notation}
 \addcontentsline{toc}{chapter}{Conventions and Notation}
@@ -310,6 +319,8 @@ $\#(G)$ & Worksheet 10's notation for $|G|$. \\
 $G^{\mathrm{ab}}$ & Abelianization $G/[G,G]$ (\ref{sec:commutators}). \\
 $G/N$, \ $\pi$ & Quotient group by a normal subgroup; canonical projection $g \mapsto gN$ (\ref{sec:quotient}). \\
 $PSL_n(F)$ & Projective special linear group $SL_n(F)/Z$ (\ref{sec:simple}). \\
+$n_p$, \ $N_G(H)$ & Number of Sylow $p$-subgroups; normalizer of $H$ (\ref{sec:small-simple-groups}). \\
+$N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
 $HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (\ref{sec:second-iso}). \\
 $X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (\ref{sec:representatives}). \\
 $\hookrightarrow$, \ $\twoheadrightarrow$ & An injective map; a surjective map. \\
@@ -5236,13 +5247,15 @@ $\det(zA) = z^2 \det A > 0$ for $A \in SL_2(\mathbb{R})$, and conversely if $\de
 
 \textit{$GL_n$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-gl}); next, Chapter~9 (\ref{sec:rev-ch9-gl}).}
 
-\chapter{Characters, Commutators and Solvable Groups}\label{ch:characters}
+\chapter{Commutators, Solvable Groups and the Sylow Theorems}\label{ch:characters}
 
-\textit{Source: Lecture (Wed Sept 23); PS 2.3 and 2.4; Worksheet 9 (Wed Oct 7); Lecture (Fri Oct 9); Lecture (Mon Oct 12).}
+\textit{Source: Lecture (Wed Sept 23); PS 2.3 and 2.4; Worksheet 9 (Wed Oct 7); Lecture (Fri Oct 9); Lecture and Worksheet 10 (Mon Oct 12); worksheet session (Wed Oct 14); lecture (Fri Oct 16); lecture and slides (Fri Oct 23). Worksheet 10 was handed out with Worksheet 9 (Wed Oct 7). In the Sylow part, proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
 
 Characters are homomorphisms to abelian groups. They cannot distinguish conjugate elements and they kill every commutator, which makes them a practical tool for proving that an element is \emph{not} a commutator; the chapter ends by determining the commutator subgroup of $S_n$. Characters are also the first step toward the representation theory of the second half of the course.
 
-Simple groups are the atoms of group theory; the next question is how they are put together. The solvable groups are the groups built entirely out of abelian pieces. The second half of the chapter defines them, shows that the class is closed under subgroups and quotients, and introduces the derived series --- the commutator subgroup taken again and again --- which gives an algorithm for testing solvability.
+Simple groups are the atoms of group theory; the next question is how they are put together. The solvable groups are the groups built entirely out of abelian pieces. The middle part of the chapter defines them, shows that the class is closed under subgroups and quotients, and introduces the derived series --- the commutator subgroup taken again and again --- which gives an algorithm for testing solvability.
+
+The last part of the chapter turns to the Sylow theorems. Lagrange's theorem says that the order of a subgroup divides $|G|$, and its converse fails; Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: subgroups of that order exist, and any two are conjugate. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly, and pull it back with a fixed-point argument.
 
 \section{Characters}\label{sec:characters}
 
@@ -5449,7 +5462,7 @@ Let $x = mnm^{-1}n^{-1}$. Grouping as $x = (mnm^{-1})\,n^{-1}$: $mnm^{-1} \in N$
 \end{proof}
 
 \begin{rembox}[{Commutators of Normal Subgroups}]\label{rem:commutators-normal-subgroups}
-The proof shows more: for normal $M, N$, every commutator $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a direct product $M \times N$ when also $MN = G$ (not from class).
+The proof shows more: for normal $M, N$, every commutator $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a direct product $M \times N$ when also $MN = G$ (not from class), carried out in Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, WS 11.1).
 \end{rembox}
 \textit{Problem Set 5, Problems 3 and 4.}
 
@@ -5719,7 +5732,7 @@ The definition of solvability asks us to hunt for a chain, as in WS 9.1. The der
 
 \section{\texorpdfstring{$S_3$, $S_4$, $A_n$ and $GL_n$}{S₃, S₄, Aₙ and GLₙ}}\label{sec:rev-ch9}
 
-\textit{The recurring groups as Chapter~9 saw them: characters take values in abelian groups, so they cannot separate conjugates and they kill commutators; and the solvable groups are those built from abelian pieces. Each part gathers the chapter's items about one group, in order.}
+\textit{The recurring groups as the first part of Chapter~9 saw them: characters take values in abelian groups, so they cannot separate conjugates and they kill commutators; and the solvable groups are those built from abelian pieces. Each part gathers the chapter's items about one group, in order.}
 
 \subsection{\texorpdfstring{The Symmetric Group $S_3$}{The Symmetric Group S₃}}\label{sec:rev-ch9-s3}
 
@@ -5761,13 +5774,7 @@ The determinant is the model character of $GL_n(k)$, and a character is the same
 
 Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the remark \emph{One-Dimensional Representations} (\ref{sec:characters}) identifies characters with homomorphisms into $GL_1(k)$; Example~\ref{ex:products-commutators-not-commutators} (PS~5.4) finds, in a group of real block upper-triangular matrices, elements of $[G, G]$ that are not commutators.
 
-\textit{$GL_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-gl}); next, Chapter~10, where $GL_n(\mathbb{F}_p)$ appears once (Proposition~\ref{prop:unitriangular-sylow}).}
-
-\chapter{The Sylow Theorems}\label{ch:sylow}
-
-\textit{Source: Worksheet 10 (handed out with Worksheet 9, Wed Oct 7); Lecture and Worksheet 10 (Mon Oct 12); worksheet session (Wed Oct 14); lecture (Fri Oct 16); lecture and slides (Fri Oct 23). Proofs from the lecture are given; the worksheet problems not yet done in class are left to be filled in.}
-
-Lagrange's theorem says that the order of a subgroup divides $|G|$, and its converse fails; Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: subgroups of that order exist, and any two are conjugate. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly, and pull it back with a fixed-point argument.
+\textit{$GL_n$ elsewhere: previous, Chapter~8 (\ref{sec:rev-ch8-gl}); next, the Sylow part of this chapter, where $GL_n(\mathbb{F}_p)$ appears once (Proposition~\ref{prop:unitriangular-sylow}).}
 
 \section{\texorpdfstring{$p$-Groups and Sylow Subgroups}{p-Groups and Sylow Subgroups}}\label{sec:p-groups}
 
@@ -5991,7 +5998,7 @@ Speyer, on Problem Set 6: one can continue classifying groups of order $p^k$ in 
 \srcline{PS 6, stated, not proved}
 \end{rembox}
 
-\textit{$GL_n$ elsewhere: previous, Chapter~9 (\ref{sec:rev-ch9-gl}); no later appearance yet.}
+\textit{$GL_n$ elsewhere: previous, the recap earlier in this chapter (\ref{sec:rev-ch9-gl}); no later appearance yet.}
 
 \section{The Sylow Theorems}\label{sec:sylow-theorems}
 
@@ -6207,7 +6214,7 @@ Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G
 \end{proof}
 
 \begin{rembox}[{When $q \equiv 1 \pmod p$}]\label{rem:order-pq-hypothesis}
-\textit{(Not from lecture.)} The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step.
+\textit{(Not from lecture.)} The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a semidirect product: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example~\ref{ex:s3-external-semidirect}).
 \end{rembox}
 
 Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
@@ -6432,7 +6439,7 @@ So to show that no group of order $n$ is simple, it suffices to find a prime $p 
 \end{rembox}
 
 \begin{exbox}[{Order $21$}]\label{ex:order-21}
-$21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.)
+$21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.) Both values of $n_3$ occur: $n_3 = 1$ for $\mathbb{Z}/21\mathbb{Z}$, and $n_3 = 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example~\ref{ex:z7-semidirect-z3}).
 \srcline{lecture 10/23}
 \end{exbox}
 
@@ -6564,6 +6571,303 @@ where $\mathbb{H}$ denotes the quaternions (notation for the third family varies
 \end{rembox}
 
 
+% ============================================================================
+% CHAPTER: SEMIDIRECT PRODUCTS (Mon Oct 26)
+% ============================================================================
+\chapter{Semidirect Products}\label{ch:semidirect}
+
+\textit{Source: Lecture and Worksheet 11 (Mon Oct 26); the whole worksheet was done on the boards in class. The board work is not in the notes, so the proofs below are written out in standard form.}
+
+The strategy of \ref{sec:simple} is to understand a group $G$ through a normal subgroup $N$ and the quotient $G/N$, and then to understand how the two pieces are put together. This chapter treats the simplest ways of putting pieces together. In a direct product the pieces do not interact. In a semidirect product one piece acts on the other by automorphisms, and the action is extra data: the same two pieces can be assembled in different ways.
+
+\section{Internal and External Direct Products}\label{sec:internal-direct-products}
+
+\textit{Reference: Pinter Ch.\ 4, Ex.\ G (direct products).}
+
+\begin{rembox}[{Two Meanings of ``Direct Sum''}]\label{rem:two-meanings-direct-sum}
+Let $V$ be a vector space and $L_1, L_2$ subspaces with $V = L_1 + L_2$ and $L_1 \cap L_2 = \{0\}$; for instance, a plane and a line through the origin in $\mathbb{R}^3$, the line not lying in the plane. Then every $v \in V$ can be written uniquely as $v = v_1 + v_2$ with $v_1 \in L_1$, $v_2 \in L_2$, and one writes $V = L_1 \oplus L_2$. Mathematicians use ``direct sum'' in two ways:
+\begin{itemize}[nosep]
+    \item the \textbf{external direct sum} $L_1 \oplus L_2 = \{(v_1, v_2) : v_1 \in L_1,\ v_2 \in L_2\}$, with $(v_1, v_2) + (v_1', v_2') = (v_1 + v_1', v_2 + v_2')$ and $c(v_1, v_2) = (cv_1, cv_2)$, built from $L_1$ and $L_2$ with no ambient space;
+    \item the \textbf{internal direct sum}: $V$ is given in advance, and $L_1, L_2$ already sit inside it as above.
+\end{itemize}
+Strictly, the elements of the external direct sum are ordered pairs and the elements of $V$ are not, so in the internal situation one should write $V \cong L_1 \oplus L_2$. The same distinction appears for groups, and it causes the most confusion for semidirect products. The lecture is careful about it for now, but warned that most people are not, and that the course will soon stop being so careful. (The lecturer compared it to embedded versus abstract manifolds.)
+\srcline{lecture 10/26}
+\end{rembox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small, x={(1cm,0cm)}, y={(0.45cm,0.32cm)}, z={(0cm,1cm)}]
+    \fill[blue!10] (-2,-1.6,0) -- (2.2,-1.6,0) -- (2.2,1.8,0) -- (-2,1.8,0) -- cycle;
+    \draw[blue!60!black] (-2,-1.6,0) -- (2.2,-1.6,0) -- (2.2,1.8,0) -- (-2,1.8,0) -- cycle;
+    \node[blue!60!black, anchor=west] at (2.25,1.5,0) {$L_1$};
+    \draw[red!70!black, dashed] (0,0,0) -- (-0.6,-0.24,-0.96);
+    \draw[red!70!black, thick] (-0.6,-0.24,-0.96) -- (-1.0,-0.4,-1.6);
+    \draw[red!70!black, thick] (0,0,0) -- (1.25,0.5,2.0) node[above right] {$L_2$};
+    \fill (0,0,0) circle (1.3pt) node[below left] {$0$};
+    \coordinate (v1) at (1.4,-0.9,0);
+    \coordinate (v2) at (0.75,0.3,1.2);
+    \coordinate (v) at (2.15,-0.6,1.2);
+    \draw[->, thick, blue!60!black] (0,0,0) -- (v1) node[below] {$v_1$};
+    \draw[->, thick, red!70!black] (0,0,0) -- (v2) node[left] {$v_2$};
+    \draw[->, very thick] (0,0,0) -- (v) node[right] {$v = v_1 + v_2$};
+    \draw[gray, dashed] (v1) -- (v) -- (v2);
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added, after the board sketch.)} An internal direct sum in $\mathbb{R}^3$: a plane $L_1$ and a line $L_2$ meeting only at $0$. Every $v$ splits uniquely as $v = v_1 + v_2$ with $v_1 \in L_1$, $v_2 \in L_2$, so $v \mapsto (v_1, v_2)$ identifies $\mathbb{R}^3$ with the external direct sum $L_1 \oplus L_2$.
+%% <<< END ADDED
+
+\begin{defbox}[{Internal Direct Product}]\label{def:internal-direct-product}
+Let $G$ be a group and $N_1, N_2$ normal subgroups of $G$ with $N_1 \cap N_2 = \{e\}$ and $G = N_1N_2$. Then $G$ is the \textbf{internal direct product} of $N_1$ and $N_2$. By contrast, the \textbf{external direct product} $N_1 \times N_2$ is the group of pairs with componentwise multiplication (Definition~\ref{def:direct-products}); it is built from $N_1$ and $N_2$ without any ambient group.
+\srcline{lecture 10/26; WS 11}
+\end{defbox}
+
+\begin{thmbox}[{Internal Direct Products Are Direct Products}]\label{thm:internal-direct-product}
+Let $N_1, N_2 \trianglelefteq G$ with $N_1 \cap N_2 = \{e\}$ and $G = N_1N_2$. Then $n_1n_2 = n_2n_1$ for all $n_1 \in N_1$, $n_2 \in N_2$, and
+\[ \mu: N_1 \times N_2 \to G, \qquad (n_1, n_2) \mapsto n_1n_2 \]
+is an isomorphism. In particular $G \cong N_1 \times N_2$.
+\srcline{WS 11.1; PS 4.2; lecture 10/26}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} the two factors commute, so multiplying out is a homomorphism; trivial intersection makes it injective, and $G = N_1N_2$ makes it onto.\par
+\textit{(Done on the boards 10/26; written out here.)} The elements commute by Normal Subgroups with Trivial Intersection Commute (Proposition~\ref{prop:normal-subgroups-trivial-intersection-commute}, PS 4.2).
+
+\emph{Homomorphism.} Using $n_2 n_1' = n_1' n_2$ and the componentwise product of $N_1 \times N_2$ (Definition~\ref{def:direct-products}),
+\[ \mu\big((n_1, n_2)(n_1', n_2')\big) = n_1n_1'\,n_2n_2' = n_1\,(n_1'n_2)\,n_2' = n_1\,(n_2n_1')\,n_2' = \mu(n_1, n_2)\,\mu(n_1', n_2'). \]
+
+\emph{Injective.} If $n_1n_2 = e$, then $n_1 = n_2^{-1} \in N_1 \cap N_2 = \{e\}$, so $(n_1, n_2) = (e, e)$: the kernel is trivial, and $\mu$ is injective (Proposition~\ref{prop:surjectivity-injectivity-via-image-kernel}).
+
+\emph{Surjective.} Every element of $G = N_1N_2$ has the form $n_1n_2$.
+\end{proof}
+
+\begin{rembox}[{Two Forms of the Criterion}]\label{rem:two-direct-product-criteria}
+\textit{(Not from class.)} Internal Direct Products (Lemma~\ref{lem:internal-direct-product}, from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, the conditions $G = N_1N_2$ and $|N_1|\,|N_2| = |G|$ are equivalent, because $|N_1N_2| = |N_1|\,|N_2|$ (The Order of a Product of Subgroups, Lemma~\ref{lem:order-product-subgroups}). The theorem above needs no finiteness.
+\end{rembox}
+
+\begin{exbox}[{$\mathbb{Z}/15\mathbb{Z}$}]\label{ex:z15-internal-direct-product}
+In $\mathbb{Z}/15\mathbb{Z}$ (written additively), $N_1 = 3\mathbb{Z}/15\mathbb{Z}$ has $5$ elements and $N_2 = 5\mathbb{Z}/15\mathbb{Z}$ has $3$ elements. Both are normal, as the group is abelian. $N_1 \cap N_2$ is a subgroup of both, so its order divides $\gcd(5, 3) = 1$ (Lagrange, Theorem~\ref{thm:lagrange}). And $N_1 + N_2$ is a subgroup containing $N_1$ and $N_2$ (Lemma~\ref{lem:hn-subgroup-when-n-normal}), so its order is divisible by $5$ and $3$, hence is $15$. So $\mathbb{Z}/15\mathbb{Z}$ is the internal direct product of $3\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/5\mathbb{Z}$ and $5\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z}$, and $\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ (Theorem~\ref{thm:internal-direct-product}).
+\srcline{WS 11}
+\end{exbox}
+
+\section{Semidirect Products}\label{sec:semidirect-products}
+
+\textit{Reference: not covered in the Pinter chapters used so far.}
+
+\begin{defbox}[{Internal Semidirect Product}]\label{def:internal-semidirect-product}
+Let $G$ be a group, $N \trianglelefteq G$ a normal subgroup, and $S \leq G$ a subgroup (not necessarily normal), with $N \cap S = \{e\}$ and $G = NS$. Then $G$ is the \textbf{(internal) semidirect product} of $N$ and $S$.
+\srcline{lecture 10/26; WS 11}
+\end{defbox}
+
+\begin{exbox}[{$S_3$ and $S_n$}]\label{ex:s3-internal-semidirect}
+$G = S_3$, $N = A_3 = \langle (1\,2\,3) \rangle$ (Definition~\ref{def:alternating-group-an}) and $S = \langle (1\,2) \rangle$. Here $A_3 \trianglelefteq S_3$, having index $2$ (Proposition~\ref{prop:subgroups-index-2-normal}); $A_3 \cap S = \{e\}$, since $(1\,2)$ is odd (Definition~\ref{def:sign-even-odd-permutations}); and $A_3S = S_3$, since $A_3S$ is a subgroup (Lemma~\ref{lem:hn-subgroup-when-n-normal}) containing subgroups of orders $3$ and $2$, so its order is divisible by $6$ (Lagrange). So $S_3$ is the semidirect product of $A_3$ and $\langle (1\,2) \rangle$. It is not a direct product: $S$ is not normal, as $(1\,3)(1\,2)(1\,3) = (2\,3) \notin S$. The same argument shows that $S_n$ ($n \geq 2$) is the semidirect product of $A_n$ and $\langle (1\,2) \rangle$ (not from class).
+\srcline{lecture 10/26}
+\end{exbox}
+
+\begin{rembox}[{Why More Data Is Needed}]\label{rem:semidirect-more-data}
+For a direct product, $N_1$ and $N_2$ alone determine $G$. For a semidirect product, $N$ and $S$ do not: one also needs to know how $S$ acts on $N$. For example, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$ and $S_3$ are both semidirect products of a normal subgroup of order $3$ and a subgroup of order $2$.
+\srcline{lecture 10/26}
+\end{rembox}
+
+\begin{propbox}[{The Quotient by $N$}]\label{prop:semidirect-quotient}
+In an internal semidirect product, $G/N \cong S$.
+\srcline{WS 11.2}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} this is the Second Isomorphism Theorem.\par
+By the Second Isomorphism Theorem (Theorem~\ref{thm:second-isomorphism-theorem}), $G/N = SN/N \cong S/(S \cap N) = S/\{e\} \cong S$ (here $SN = NS$, as $N$ is normal). Explicitly, $s \mapsto sN$ is an isomorphism $S \to G/N$.
+\end{proof}
+
+\begin{propbox}[{Unique Factorization $g = ns$}]\label{prop:semidirect-unique-factorization}
+In an internal semidirect product, every $g \in G$ can be written in exactly one way as $g = ns$ with $n \in N$ and $s \in S$.
+\srcline{WS 11.3}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} two factorizations differ by an element of $N \cap S = \{e\}$.\par
+\textit{(Done on the boards 10/26; written out here.)} Existence is $G = NS$. If $ns = n's'$ with $n, n' \in N$ and $s, s' \in S$, then $n'^{-1}n = s's^{-1}$; the left side lies in $N$ and the right side in $S$, so both lie in $N \cap S = \{e\}$. Hence $n = n'$ and $s = s'$.
+\end{proof}
+
+\begin{propbox}[{$S$ Acts on $N$ by Automorphisms}]\label{prop:semidirect-action}
+In an internal semidirect product, for $s \in S$ let $\varphi(s): N \to N$, $n \mapsto sns^{-1}$. Then:
+\begin{enumerate}
+    \item $\varphi(s)$ is an automorphism of $N$, an isomorphism $N \to N$ (Definition~\ref{def:automorphisms-aut-g});
+    \item $\varphi: S \to \operatorname{Aut}(N)$ is a group homomorphism: $\varphi(ss') = \varphi(s) \circ \varphi(s')$.
+\end{enumerate}
+Equivalently, $s \star n = sns^{-1}$ is an action of $S$ on $N$ by automorphisms.
+\srcline{WS 11.4; lecture 10/26}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $\varphi(s)$ is conjugation by $s$, restricted to the normal subgroup $N$.\par
+\textit{(Done on the boards 10/26; written out here.)} \textbf{(1)} $\varphi(s)$ maps $N$ into $N$ because $N$ is normal. It is the restriction to $N$ of conjugation $c_s: G \to G$, which is a homomorphism (Conjugation Is an Automorphism, Proposition~\ref{prop:conjugation-automorphism}, PS 1.2), so $\varphi(s)$ is a homomorphism $N \to N$. It has inverse $\varphi(s^{-1})$: $s^{-1}(sns^{-1})s = n$ and $s(s^{-1}ns)s^{-1} = n$, with $s^{-1}ns \in N$ again by normality. So $\varphi(s)$ is a bijective homomorphism $N \to N$.
+
+\textbf{(2)} For $n \in N$, $\varphi(ss')(n) = ss'\,n\,(ss')^{-1} = s\,(s'ns'^{-1})\,s^{-1} = \varphi(s)\big(\varphi(s')(n)\big)$.
+\end{proof}
+
+\begin{propbox}[{Multiplication in the Form $ns$}]\label{prop:semidirect-multiplication}
+In an internal semidirect product, for $n_1, n_2 \in N$ and $s_1, s_2 \in S$,
+\[ (n_1s_1)(n_2s_2) = \big(n_1\,\varphi(s_1)(n_2)\big)\,(s_1s_2), \]
+with $n_1\varphi(s_1)(n_2) \in N$ and $s_1s_2 \in S$.
+\srcline{WS 11.5}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} move $s_1$ past $n_2$ at the cost of conjugating $n_2$.\par
+\textit{(Done on the boards 10/26; written out here.)} Insert $s_1^{-1}s_1 = e$ between $n_2$ and $s_2$:
+\[ n_1s_1n_2s_2 = n_1\,(s_1n_2s_1^{-1})\,s_1s_2 = n_1\,\varphi(s_1)(n_2)\,s_1s_2, \]
+and $\varphi(s_1)(n_2) \in N$ by Proposition~\ref{prop:semidirect-action}(1).
+\end{proof}
+
+\begin{rembox}[{The Data $(N, S, \varphi)$}]\label{rem:semidirect-data}
+By Propositions~\ref{prop:semidirect-unique-factorization} and~\ref{prop:semidirect-multiplication} (WS 11.3 and 11.5), the multiplication of $G$ is determined by $N$, $S$, and the homomorphism $\varphi: S \to \operatorname{Aut}(N)$ given by conjugation. This suggests building a group from the triple $(N, S, \varphi)$ alone, with no ambient group $G$, where $N$ and $S$ are now any two groups and $\varphi$ is any homomorphism $S \to \operatorname{Aut}(N)$.
+\srcline{lecture 10/26}
+\end{rembox}
+
+\begin{defbox}[{External Semidirect Product}]\label{def:external-semidirect-product}
+Let $N$ and $S$ be groups and $\varphi: S \to \operatorname{Aut}(N)$ a group homomorphism. The \textbf{external semidirect product} of $N$ and $S$ by $\varphi$ is the set $\{(n, s) : n \in N,\ s \in S\}$ with multiplication
+\[ (n_1, s_1) \cdot (n_2, s_2) = \big(n_1\,\varphi(s_1)(n_2),\ s_1s_2\big). \]
+It is written $N \rtimes_\varphi S$, or $N \rtimes S$ when $\varphi$ is clear. Some authors put the normal subgroup second and write $S \ltimes_\varphi N$; this course writes $N \rtimes_\varphi S$.
+\srcline{WS 11; lecture 10/26}
+\end{defbox}
+
+\begin{thmbox}[{$N \rtimes_\varphi S$ Is a Group}]\label{thm:semidirect-group}
+$N \rtimes_\varphi S$ is a group, with identity $(e_N, e_S)$ and inverse
+\[ (n, s)^{-1} = \big(\varphi(s^{-1})(n^{-1}),\ s^{-1}\big). \]
+\srcline{WS 11.6}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} expand both sides of each axiom; associativity uses that $\varphi$ is a homomorphism into $\operatorname{Aut}(N)$, so $\varphi_{s_1}\varphi_{s_2} = \varphi_{s_1s_2}$ and each $\varphi_s$ respects products.\par
+\textit{(Done on the boards 10/26, where associativity was the main check; written out here.)} Write $\varphi_s = \varphi(s)$. Since $\varphi$ is a homomorphism, $\varphi_{s}\varphi_{s'} = \varphi_{ss'}$ and $\varphi_{e} = \mathrm{id}_N$; since each $\varphi_s$ is a homomorphism, $\varphi_s(ab) = \varphi_s(a)\varphi_s(b)$ and $\varphi_s(e) = e$.
+
+\emph{Associativity.} On one side,
+\[ \big((n_1, s_1)(n_2, s_2)\big)(n_3, s_3) = \big(n_1\varphi_{s_1}(n_2),\, s_1s_2\big)(n_3, s_3) = \big(n_1\varphi_{s_1}(n_2)\,\varphi_{s_1s_2}(n_3),\ s_1s_2s_3\big). \]
+On the other,
+\[ (n_1, s_1)\big((n_2, s_2)(n_3, s_3)\big) = (n_1, s_1)\big(n_2\varphi_{s_2}(n_3),\, s_2s_3\big) = \big(n_1\,\varphi_{s_1}\!\big(n_2\varphi_{s_2}(n_3)\big),\ s_1s_2s_3\big). \]
+These agree, because $\varphi_{s_1}\big(n_2\varphi_{s_2}(n_3)\big) = \varphi_{s_1}(n_2)\,\varphi_{s_1}\varphi_{s_2}(n_3) = \varphi_{s_1}(n_2)\,\varphi_{s_1s_2}(n_3)$.
+
+\emph{Identity.} $(e, e)(n, s) = (e\,\varphi_e(n),\, s) = (n, s)$ and $(n, s)(e, e) = (n\,\varphi_s(e),\, s) = (n, s)$.
+
+\emph{Inverse.} With $(n, s)^{-1}$ as stated,
+\[ (n, s)\big(\varphi_{s^{-1}}(n^{-1}), s^{-1}\big) = \big(n\,\varphi_s\varphi_{s^{-1}}(n^{-1}),\ e\big) = (n\,n^{-1}, e) = (e, e), \]
+\[ \big(\varphi_{s^{-1}}(n^{-1}), s^{-1}\big)(n, s) = \big(\varphi_{s^{-1}}(n^{-1})\,\varphi_{s^{-1}}(n),\ e\big) = \big(\varphi_{s^{-1}}(n^{-1}n), e\big) = (e, e). \]
+\end{proof}
+
+\begin{thmbox}[{Internal and External Semidirect Products Agree}]\label{thm:internal-external-semidirect}
+\begin{enumerate}
+    \item If $G$ is the internal semidirect product of $N$ and $S$, and $\varphi: S \to \operatorname{Aut}(N)$ is conjugation (Proposition~\ref{prop:semidirect-action}), then $(n, s) \mapsto ns$ is an isomorphism $N \rtimes_\varphi S \to G$.
+    \item Conversely, in $N \rtimes_\varphi S$ the subsets $\tilde N = \{(n, e) : n \in N\}$ and $\tilde S = \{(e, s) : s \in S\}$ are subgroups isomorphic to $N$ and $S$, $\tilde N$ is normal, $N \rtimes_\varphi S$ is the internal semidirect product of $\tilde N$ and $\tilde S$, and conjugation by $\tilde S$ on $\tilde N$ recovers $\varphi$:
+    \[ (e, s)(n, e)(e, s)^{-1} = \big(\varphi(s)(n), e\big). \]
+\end{enumerate}
+\srcline{WS 11; lecture 10/26}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} (1) is WS 11.3 and 11.5 read as a statement about the map $(n, s) \mapsto ns$; (2) computes inside $N \rtimes_\varphi S$ with the multiplication rule.\par
+\textbf{(1)} The map is a homomorphism by Multiplication in the Form $ns$ (Proposition~\ref{prop:semidirect-multiplication}), which says exactly that $(n_1, s_1)(n_2, s_2) \mapsto (n_1s_1)(n_2s_2)$, and a bijection by Unique Factorization (Proposition~\ref{prop:semidirect-unique-factorization}).
+
+\textbf{(2)} \textit{(The displayed formula is from the board 10/26.)} By the multiplication rule, $(n, e)(n', e) = (n\,\varphi_e(n'), e) = (nn', e)$ and $(e, s)(e, s') = (\varphi_s(e), ss') = (e, ss')$, so $n \mapsto (n, e)$ and $s \mapsto (e, s)$ are injective homomorphisms, with images $\tilde N$ and $\tilde S$. The map $(n, s) \mapsto s$ is a homomorphism $N \rtimes_\varphi S \to S$ (the second coordinate of a product is $s_1s_2$) with kernel $\tilde N$, so $\tilde N$ is normal (Kernels Are Normal, Proposition~\ref{prop:kernels-normal}). $\tilde N \cap \tilde S = \{(e, e)\}$, and $(n, e)(e, s) = (n\,\varphi_e(e), s) = (n, s)$, so $\tilde N\tilde S$ is everything. Finally, using $(e, s)^{-1} = (e, s^{-1})$ (Theorem~\ref{thm:semidirect-group}),
+\[ (e, s)(n, e)(e, s^{-1}) = \big(\varphi_s(n), s\big)(e, s^{-1}) = \big(\varphi_s(n)\,\varphi_s(e), e\big) = \big(\varphi_s(n), e\big). \]
+\end{proof}
+
+\begin{rembox}[{Direct Products as a Special Case}]\label{rem:semidirect-trivial-action}
+\textit{(Not from class.)} If $\varphi$ is trivial ($\varphi(s) = \mathrm{id}_N$ for all $s$), the rule becomes $(n_1, s_1)(n_2, s_2) = (n_1n_2, s_1s_2)$, and $N \rtimes_\varphi S = N \times S$. In the internal picture, $\varphi$ is trivial exactly when every element of $S$ commutes with every element of $N$. Given $G = NS$, this happens exactly when $S$ is also normal: if $S$ commutes with $N$, then $nsSs^{-1}n^{-1} = nSn^{-1} = S$; conversely, if $S$ is normal, Normal Subgroups with Trivial Intersection Commute (Proposition~\ref{prop:normal-subgroups-trivial-intersection-commute}) applies. This recovers Theorem~\ref{thm:internal-direct-product} (WS 11.1).
+\end{rembox}
+
+\begin{exbox}[{$\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$}]\label{ex:z7-semidirect-z3}
+Let $N = \mathbb{Z}/7\mathbb{Z}$ and $S = \mathbb{Z}/3\mathbb{Z}$, and let $k \in \mathbb{Z}/3\mathbb{Z}$ act on $x \in \mathbb{Z}/7\mathbb{Z}$ by
+\[ k \star x = 2^k x \bmod 7, \qquad \text{i.e.\ } \varphi(k)(x) = 2^k x. \]
+Multiplication by $2$ is an automorphism of $\mathbb{Z}/7\mathbb{Z}$ (a homomorphism, invertible since $2 \cdot 4 \equiv 1$). It is well defined on $k \bmod 3$ and gives an action because $2^3 = 8 \equiv 1 \pmod 7$: applying it three times, $x \mapsto 2x \mapsto 4x \mapsto 8x = x$. So there is a group $\mathbb{Z}/7\mathbb{Z} \rtimes_{k \mapsto 2^k} \mathbb{Z}/3\mathbb{Z}$ of order $21$, with
+\[ (x_1, k_1)(x_2, k_2) = (x_1 + 2^{k_1}x_2,\ k_1 + k_2). \]
+No group of order $21$ had to be found first: the triple $(N, S, \varphi)$ is enough. The group is not abelian: $(1, 0)(0, 1) = (1, 1)$ but $(0, 1)(1, 0) = (2, 1)$. (Not from class, checked by computer: its center is trivial, and it has $14$ elements of order $3$, so $n_3 = 7$, the second candidate in Example~\ref{ex:order-21}, while $n_7 = 1$ as it must be.)
+\srcline{lecture 10/26}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small]
+    \foreach \x in {0,...,6} { \coordinate (p\x) at ({90 - 360*\x/7}:1.8); }
+    \foreach \x in {0,...,6} { \fill (p\x) circle (1.6pt); \node at ({90 - 360*\x/7}:2.15) {$\x$}; }
+    \draw[->, thick, teal!60!black, shorten >=3pt, shorten <=3pt] (p1) to[bend right=12] (p2);
+    \draw[->, thick, teal!60!black, shorten >=3pt, shorten <=3pt] (p2) to[bend right=12] (p4);
+    \draw[->, thick, teal!60!black, shorten >=3pt, shorten <=3pt] (p4) to[bend right=12] (p1);
+    \draw[->, thick, orange!80!black, shorten >=3pt, shorten <=3pt] (p3) to[bend right=12] (p6);
+    \draw[->, thick, orange!80!black, shorten >=3pt, shorten <=3pt] (p6) to[bend right=12] (p5);
+    \draw[->, thick, orange!80!black, shorten >=3pt, shorten <=3pt] (p5) to[bend right=12] (p3);
+    \draw[->, thick, gray!70!black] (p0) .. controls +(-55:0.9) and +(-125:0.9) .. (p0);
+    \node[font=\small, align=left, anchor=west] at (2.7,0.6) {$\varphi(1): x \mapsto 2x$ on $\mathbb{Z}/7\mathbb{Z}$:\\ $0$ fixed, \ $1 \to 2 \to 4 \to 1$, \ $3 \to 6 \to 5 \to 3$};
+    \node[font=\small, align=left, anchor=west] at (2.7,-0.6) {three steps return every point,\\ since $2^3 = 8 \equiv 1 \pmod 7$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The action in Example~\ref{ex:z7-semidirect-z3}: the generator $1 \in \mathbb{Z}/3\mathbb{Z}$ permutes $\mathbb{Z}/7\mathbb{Z}$ by $x \mapsto 2x$, fixing $0$ and cycling the other six elements in two $3$-cycles. Because $2^3 \equiv 1 \pmod 7$, applying it three times is the identity, which is what makes $k \mapsto (x \mapsto 2^kx)$ a homomorphism $\mathbb{Z}/3\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/7\mathbb{Z})$.
+%% <<< END ADDED
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small, x=0.95cm, y=1.25cm]
+    \fill[red!8] (-0.4,-0.3) rectangle (6.4,0.3); \fill[blue!8] (-0.3,-0.35) rectangle (0.3,2.35);
+    \fill (0,0) circle (1.6pt);
+    \fill (1,0) circle (1.6pt);
+    \fill (2,0) circle (1.6pt);
+    \fill (3,0) circle (1.6pt);
+    \fill (4,0) circle (1.6pt);
+    \fill (5,0) circle (1.6pt);
+    \fill (6,0) circle (1.6pt);
+    \node[anchor=east] at (-0.5,0) {$s = 0$};
+    \fill (0,1) circle (1.6pt);
+    \fill (1,1) circle (1.6pt);
+    \fill (2,1) circle (1.6pt);
+    \fill (3,1) circle (1.6pt);
+    \fill (4,1) circle (1.6pt);
+    \fill (5,1) circle (1.6pt);
+    \fill (6,1) circle (1.6pt);
+    \node[anchor=east] at (-0.5,1) {$s = 1$};
+    \fill (0,2) circle (1.6pt);
+    \fill (1,2) circle (1.6pt);
+    \fill (2,2) circle (1.6pt);
+    \fill (3,2) circle (1.6pt);
+    \fill (4,2) circle (1.6pt);
+    \fill (5,2) circle (1.6pt);
+    \fill (6,2) circle (1.6pt);
+    \node[anchor=east] at (-0.5,2) {$s = 2$};
+    \node[below=3pt] at (0,-0.15) {$0$};
+    \node[below=3pt] at (1,-0.15) {$1$};
+    \node[below=3pt] at (2,-0.15) {$2$};
+    \node[below=3pt] at (3,-0.15) {$3$};
+    \node[below=3pt] at (4,-0.15) {$4$};
+    \node[below=3pt] at (5,-0.15) {$5$};
+    \node[below=3pt] at (6,-0.15) {$6$};
+    \draw[->, gray!70!black, shorten >=3pt, shorten <=3pt] (0,0) -- (0,1);
+    \draw[->, gray!70!black, shorten >=3pt, shorten <=3pt] (1,0) -- (2,1);
+    \draw[->, gray!70!black, shorten >=3pt, shorten <=3pt] (2,0) -- (4,1);
+    \draw[->, gray!70!black, shorten >=3pt, shorten <=3pt] (3,0) -- (6,1);
+    \draw[->, gray!70!black, shorten >=3pt, shorten <=3pt] (4,0) -- (1,1);
+    \draw[->, gray!70!black, shorten >=3pt, shorten <=3pt] (5,0) -- (3,1);
+    \draw[->, gray!70!black, shorten >=3pt, shorten <=3pt] (6,0) -- (5,1);
+    \node[red!60!black, anchor=west] at (6.6,0) {$\tilde N = \{(n, 0)\} \trianglelefteq G$};
+    \node[red!60!black, anchor=west] at (6.6,1) {coset $(0,1)\tilde N$};
+    \node[red!60!black, anchor=west] at (6.6,2) {coset $(0,2)\tilde N$};
+    \node[blue!60!black, anchor=south] at (0,2.4) {$\tilde S = \{(0, s)\}$};
+    \node at (3,-0.85) {$n \in \mathbb{Z}/7\mathbb{Z}$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The $21$ elements $(n, s)$ of $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$. The bottom row is the normal subgroup $\tilde N$, and the rows are its cosets, one for each $s$: this is $G/\tilde N \cong \mathbb{Z}/3\mathbb{Z}$ (Proposition~\ref{prop:semidirect-quotient}). The column $n = 0$ is $\tilde S$, which is not normal. The arrows are left multiplication by $(0, 1)$ on the bottom row, $(0, 1)(n, 0) = (2n, 1)$: moving up a row applies the action.
+%% <<< END ADDED
+
+\begin{exbox}[{$S_3$ as an External Semidirect Product}]\label{ex:s3-external-semidirect}
+\textit{(Not from class.)} Let $\varphi: \mathbb{Z}/2\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/3\mathbb{Z})$ send $1$ to $x \mapsto -x$. Then $\mathbb{Z}/3\mathbb{Z} \rtimes_\varphi \mathbb{Z}/2\mathbb{Z} \cong S_3$: in $S_3 = A_3 \rtimes \langle (1\,2) \rangle$ (Example~\ref{ex:s3-internal-semidirect}), conjugation by $(1\,2)$ sends $(1\,2\,3)$ to $(2\,1\,3) = (1\,3\,2) = (1\,2\,3)^{-1}$, which under $A_3 \cong \mathbb{Z}/3\mathbb{Z}$, $(1\,2\,3)^x \leftrightarrow x$, is $x \mapsto -x$. Apply part (1) of Theorem~\ref{thm:internal-external-semidirect}. With $\varphi$ trivial instead, one gets $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$.
+\end{exbox}
+
+\begin{rembox}[{Notation and Mnemonics}]\label{rem:semidirect-notation}
+Conventions differ on the order: $N \rtimes S$ and $S \ltimes N$ mean the same group, with $N$ normal and $S$ acting. Two mnemonics from the lecture: the triangle in $\rtimes$ or $\ltimes$ is like the symbol $\trianglelefteq$ and points toward the normal subgroup; and the vertical stroke stands on the side of $S$, the group that acts on $N$. Note that $N$ is not assumed to be normal in anything at the start; the input is just two groups and an action, and $N$ becomes normal in $N \rtimes_\varphi S$ (Theorem~\ref{thm:internal-external-semidirect}(2)).
+\srcline{lecture 10/26}
+\end{rembox}
+
+
 \appendix
 \chapter{Review: Toolkits, Standard Examples, and Traps}\label{ch:review}
 
@@ -6589,6 +6893,8 @@ where $\mathbb{H}$ denotes the quaternions (notation for the third family varies
     \item \textbf{To show $G$ is solvable.} Exhibit a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ with abelian quotients (e.g.\ $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$), or compute the derived series down to $\{e\}$ (\ref{sec:solvable}, \ref{sec:derived-series}). To show $G$ is \emph{not} solvable, find a non-abelian simple subgroup or quotient, e.g.\ $A_5$.
     \item \textbf{To put a $p$-subgroup inside a Sylow subgroup.} Let it act on $\Gamma/\Pi$, whose size is prime to $p$; a fixed coset $\gamma\Pi$ gives $P \subseteq \gamma\Pi\gamma^{-1}$ (WS 10.1, \ref{sec:sylow-theorems}).
     \item \textbf{To show no group of order $n$ is simple.} If $n = p^k$ ($k \geq 2$), use the center (Proposition~\ref{prop:primes-prime-powers-simple}). Otherwise list the candidates for $n_p$, the divisors of $m$ that are $\equiv 1 \pmod p$: if $n_p = 1$ is forced, the Sylow $p$-subgroup is normal (Corollary~\ref{cor:unique-sylow-not-simple}); if $n_p > 1$, conjugation gives $G \to S_{n_p}$, which must be injective with image in $A_{n_p}$, so check whether $|G|$ divides $n_p!/2$ (Corollary~\ref{cor:simple-land-an}).
+    \item \textbf{To decompose $G$ as a product.} Find $N \trianglelefteq G$ and $S \leq G$ with $N \cap S = \{e\}$ and $NS = G$ (for finite $G$, $|N|\,|S| = |G|$ suffices given the trivial intersection, Lemma~\ref{lem:order-product-subgroups}). Then $G \cong N \rtimes_\varphi S$ with $\varphi(s)(n) = sns^{-1}$ (Theorem~\ref{thm:internal-external-semidirect}); if $S$ is normal too, $G \cong N \times S$ (Theorem~\ref{thm:internal-direct-product}).
+    \item \textbf{To build a group of a given shape.} Choose groups $N$, $S$ and a homomorphism $\varphi: S \to \operatorname{Aut}(N)$; check that $\varphi$ is well defined, e.g.\ $2^3 \equiv 1 \pmod 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example~\ref{ex:z7-semidirect-z3}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -6609,7 +6915,7 @@ $S_3$ & $6$ & no / no & $\{e\}$ & sizes $1, 3, 2$ & $\{e\}$, $A_3 = \langle (1\,
 $S_4$ & $24$ & no / no & $\{e\}$ & sizes $1, 6, 3, 8, 6$ (types $1^4, 2\,1^2, 2^2, 3\,1, 4$) & $\{e\}$, $K$, $A_4$, $S_4$ (\ref{sec:normal-sources}) \\
 \end{longtable}}
 
-Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/K \cong S_3$, $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}). $S_n$ is solvable exactly for $n \leq 4$ (\ref{sec:derived-series}); $S_3$ has $3$ Sylow $2$-subgroups and $1$ Sylow $3$-subgroup, and $S_4$ has $3$ (of order $8$) and $4$ (\ref{sec:p-groups}); a simple group of order $\leq 100$ is $\mathbb{Z}/p\mathbb{Z}$ or has order $60$ (\ref{sec:small-simple-groups}).
+Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the rotation group of the cube has order $24$ and embeds in $S_6$ (\ref{sec:action-examples}); groups of prime-power order have nontrivial center (\ref{sec:center}); abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$, and $S_n$ is not simple for $n \geq 3$ (\ref{sec:simple}); $[S_n, S_n] = A_n$ (\ref{sec:commutators}); $S_n/A_n \cong \{\pm 1\}$ and $GL_n(k)/SL_n(k) \cong k^\times$ (\ref{sec:first-iso}); $S_4/K \cong S_3$, $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$, and $A_n$ is simple exactly for $n = 3$ and $n \geq 5$ (\ref{sec:simple}). $S_n$ is solvable exactly for $n \leq 4$ (\ref{sec:derived-series}); $S_3$ has $3$ Sylow $2$-subgroups and $1$ Sylow $3$-subgroup, and $S_4$ has $3$ (of order $8$) and $4$ (\ref{sec:p-groups}); a simple group of order $\leq 100$ is $\mathbb{Z}/p\mathbb{Z}$ or has order $60$ (\ref{sec:small-simple-groups}); $\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$, $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, and $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ is a non-abelian group of order $21$ (\ref{sec:internal-direct-products}, \ref{sec:semidirect-products}).
 
 \section*{Exam Traps}\phantomsection
 \addcontentsline{toc}{section}{Exam Traps}\label{sec:traps}
@@ -6635,6 +6941,7 @@ Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the r
     \item A homomorphism \emph{into} a simple group can be neither surjective nor trivial, e.g.\ $\mathbb{Z}/3\mathbb{Z} \to A_5$; only homomorphisms \emph{out of} a simple group are forced to be injective or trivial (WS 7.1--7.2, \ref{sec:simple}).
     \item $G/H$ is a group only when $H$ is normal; otherwise coset multiplication is not well defined (\ref{sec:multiplying-cosets}).
     \item In the First Isomorphism Theorem the target is the \emph{image}: $G/\operatorname{Ker}\alpha \cong \operatorname{Im}\alpha$, which equals $H$ only when $\alpha$ is surjective (\ref{sec:first-iso}).
+    \item A semidirect product is not determined by $N$ and $S$ alone: $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and $S_3$ are both of the form $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$. The action $\varphi$ is part of the data, and in $N \rtimes S$ it is $N$, not $S$, that is normal (\ref{sec:semidirect-products}).
 \end{enumerate}
 
 \chapter{Course Chronology}\label{ch:chronology}
@@ -6673,6 +6980,7 @@ Wed Oct 14 \newline Worksheet 10 & WS 10.3 proved, hence the First Sylow Theorem
 Fri Oct 16 \newline lecture & Sylow II proved from WS 10.3; Sylow III proved ($P$ acting on the Sylow subgroups by conjugation); a normal Sylow subgroup is unique; $n_p \mid |G|$; the six Sylow $5$-subgroups of $S_5$; groups of order $15$ and $pq$ & \ref{sec:sylow-theorems} \\
 Wed Oct 21 \newline review session & Midterm review: cube orbits and stabilizers; the sign character (second proof via $\Delta$); solvable groups and $D_k(G)$; PS 5.4 pictured; the correspondence theorem (indices) & \ref{sec:action-examples}, \ref{sec:sign}, \ref{sec:derived-series}, \ref{sec:commutators}, \ref{sec:second-iso} \\
 Fri Oct 23 \newline lecture; slides & Simple groups of order $\leq 100$: $p$-groups via the center; the normalizer and $n_p \mid m$; $n_p = 1$; the conjugation map $G \to S_{n_p}$; leaving $A_N$; orders $21, 12, 80, 112$; overview of the classification and of compact Lie groups & \ref{sec:small-simple-groups} \\
+Mon Oct 26 \newline lecture; Worksheet 11 & Internal and external direct sums and products; internal semidirect products; the action by automorphisms; external semidirect products $N \rtimes_\varphi S$; $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$; notation & \ref{sec:internal-direct-products}, \ref{sec:semidirect-products} (WS 11.1--11.6) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

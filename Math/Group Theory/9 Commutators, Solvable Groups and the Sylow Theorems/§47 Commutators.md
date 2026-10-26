@@ -5,7 +5,7 @@ chapter: 9
 section: 47
 tags: [group-theory, math493]
 ---
-← [[§46 Characters]] · ↑ [[· 9 Characters, Commutators and Solvable Groups]] · [[§48 Solvable Groups]] →
+← [[§46 Characters]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§48 Solvable Groups]] →
 
 *Reference: Pinter Ch. 15 (commutators).*
 
@@ -209,7 +209,7 @@ tags: [group-theory, math493]
 *Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]]
 
 > [!remark] Remark: Commutators of Normal Subgroups
-> [[§47 Commutators#^pf-47-8|The proof]] shows more: for normal $M, N$, every [[§47 Commutators#^def-47-1|commutator]] $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a [[§3 Basic Examples of Groups#^def-3-2|direct product]] $M \times N$ when also $MN = G$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]]) (not from class).
+> [[§47 Commutators#^pf-47-8|The proof]] shows more: for normal $M, N$, every [[§47 Commutators#^def-47-1|commutator]] $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a [[§3 Basic Examples of Groups#^def-3-2|direct product]] $M \times N$ when also $MN = G$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]]) (not from class), carried out in Internal Direct Products Are Direct Products (Theorem [[§54 Internal and External Direct Products#^thm-54-1|§54.1]], WS 11.1).
 
 ^rem-47-4
 

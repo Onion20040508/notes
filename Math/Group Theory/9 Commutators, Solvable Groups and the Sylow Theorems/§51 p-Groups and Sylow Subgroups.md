@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Group Theory]]"
-chapter: 10
+chapter: 9
 section: 51
 tags: [group-theory, math493]
 ---
-← [[§50 S₃, S₄, Aₙ and GLₙ]] · ↑ [[· 10 The Sylow Theorems]] · [[§52 The Sylow Theorems]] →
+← [[§50 S₃, S₄, Aₙ and GLₙ]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§52 The Sylow Theorems]] →
 
 *Reference: Worksheet 10. Throughout, $p$ is a prime.*
 
@@ -353,4 +353,4 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 
 ^rem-51-2
 
-*$GL_n$ elsewhere:* ← [[§50 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]] · no later appearance yet · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
+*$GL_n$ elsewhere:* ← [[§50 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|the recap earlier in this chapter]] · no later appearance yet · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]

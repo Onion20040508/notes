@@ -5,7 +5,7 @@ chapter: 9
 section: 50
 tags: [group-theory, math493]
 ---
-← [[§49 The Derived Series]] · ↑ [[· 9 Characters, Commutators and Solvable Groups]] · [[§51 p-Groups and Sylow Subgroups]] →
+← [[§49 The Derived Series]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§51 p-Groups and Sylow Subgroups]] →
 
 *The recurring groups as Chapter 9 saw them: characters take values in abelian groups, so they cannot separate conjugates and they kill commutators; and the solvable groups are those built from abelian pieces. Each part gathers the chapter's items about one group, in order.*
 
@@ -65,4 +65,4 @@ The determinant is the model character of $GL_n(k)$, and a character is the same
 
 ![[§47 Commutators#^ex-47-2]]
 
-*$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Chapter 10]] → (where $GL_n(\mathbb{F}_p)$ appears once) · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
+*$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§51 p-Groups and Sylow Subgroups#^prop-51-5|the Sylow part of Chapter 9]] → (where $GL_n(\mathbb{F}_p)$ appears once) · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
