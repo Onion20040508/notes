@@ -11,16 +11,16 @@ tags: [subject, functional-analysis]
 ---
 # Functional Analysis
 
-MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§42 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
+MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§44 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
 
 ## Roadmap
-The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces.
+The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces, and [[· 7 Inverses, Open Maps, and Baire Category|Chapter 7]] asks when $Mx = y$ can be solved stably (Banach's inverse mapping theorem, the Baire category theorem).
 - **Functionals**: linear functionals are constructed by Hahn–Banach in the algebraic stage and, on a Hilbert space, are all identified by the Riesz representation theorem.
 - **Convexity**: convex sets correspond to positive homogeneous subadditive functions through the gauge; a norm is the gauge of its unit ball; in a Hilbert space a closed convex set has closest points.
 - **Completeness**: limits must be produced, not assumed — the completion, the Banach spaces $\ell^p$ and $L^p$, and the convergence of orthonormal expansions.
 - **Dimension**: what survives from finite dimensions and what fails — only finite sums in a bare linear space, equivalence of all norms in finite dimensions, the non-compact unit ball, countable orthonormal bases.
 
-The line under each section heading records its stage and thread. [[· 7 Functional Analysis and Quantum Mechanics|Chapter 7]] is a companion, not course material: it translates the results into the language of quantum mechanics.
+The line under each section heading records its stage and thread. [[· 8 Functional Analysis and Quantum Mechanics|Chapter 8]] is a companion, not course material: it translates the results into the language of quantum mechanics.
 
 ![[m556-0-1.svg]]
 *The roadmap: the four threads (rows) through the three stages (columns). Solid arrows follow a thread from one stage to the next; dashed red arrows mark where threads meet: the separation theorem (Hahn–Banach applied to a gauge), the projection theorem (convexity needing completeness), and the Riesz representation theorem (built on the orthogonal decomposition).*
@@ -38,7 +38,8 @@ graph TD
   C4["4 Infinite-Dimensional Spaces: ℓᵖ, Lᵖ, and Compactness"]
   C5["5 Inner Product Spaces"]
   C6["6 Bounded Linear Maps"]
-  C7["7 Functional Analysis and Quantum Mechanics"]
+  C7["7 Inverses, Open Maps, and Baire Category"]
+  C8["8 Functional Analysis and Quantum Mechanics"]
   X1["Linear Algebra (LADR)"]
   X2["Measure Theory (551)"]
   X3["Topology (590)"]
@@ -49,7 +50,8 @@ graph TD
   C3 --> C4
   C4 --> C5
   C5 --> C6
-  C5 --> C7
+  C5 --> C8
+  C6 --> C7
   C2 -.->|on credit| C1
   C3 -.->|on credit| C2
   C4 -.->|on credit| C3
@@ -59,7 +61,7 @@ graph TD
   X2 -.->|13| C4
   X2 -.->|13| C5
   X2 -.->|13| C6
-  X2 -.->|3| C7
+  X2 -.->|3| C8
   X5 -.->|2| C6
   X4 -.->|2| C2
   X4 -.->|10| C3
@@ -75,7 +77,8 @@ graph TD
 - [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]]
 - [[· 5 Inner Product Spaces]]
 - [[· 6 Bounded Linear Maps]]
-- [[· 7 Functional Analysis and Quantum Mechanics]] (companion chapter, not lecture material)
+- [[· 7 Inverses, Open Maps, and Baire Category]]
+- [[· 8 Functional Analysis and Quantum Mechanics]] (companion chapter, not lecture material)
 
 ## Central results
 - [[Every Subspace Has a Complement]] (§2.3)

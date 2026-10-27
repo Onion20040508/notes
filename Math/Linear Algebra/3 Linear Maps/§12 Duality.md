@@ -39,7 +39,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension: [[§12 Duality#^ladr-3-111|Dim V′ = dim V]]. Basis: [[§12 Duality#^ladr-3-112|Dual basis]], [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]]. Maps induce dual maps: [[§12 Duality#^ladr-3-118|Dual map, T′]].
-> - For a normed space 556 keeps only the bounded functionals and adds the dual norm: [[§39 Bras, Kets, and the Riesz Map#^def-39-1|556 Def. §39.1]] and [[§39 Bras, Kets, and the Riesz Map#^def-39-2|556 Def. §39.2]].
+> - For a normed space 556 keeps only the bounded functionals and adds the dual norm: [[§41 Bras, Kets, and the Riesz Map#^def-41-1|556 Def. §41.1]] and [[§41 Bras, Kets, and the Riesz Map#^def-41-2|556 Def. §41.2]].
 > - Same definition in 591 ([[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]]); the dual of a tangent space is the cotangent space, [[§32 The Cotangent Space#^def-32-4|591 Def. §32.4]].
 
 > [!theorem] Theorem 3.111: Dim V′ = dim V

@@ -7450,7 +7450,390 @@ Lecture~12 used $L^2$ twice more. The Dirichlet problem is solved in $H^1_0(\Ome
 
 
 % ============================================================================
-% CHAPTER 7: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
+% CHAPTER 7: INVERSES, OPEN MAPS, AND BAIRE CATEGORY (new 2026-10-27; the QM companion is now Chapter 8)
+% ============================================================================
+% Lecture 15 (2026-10-27)
+
+\chapter{Inverses, Open Maps, and Baire Category}\label{ch:baire}
+%% >>> ADDED: chapter introduction (Claude)
+
+The previous chapter studied bounded linear functionals in depth. This chapter returns to bounded linear maps $M : X \to Y$ between two spaces and asks when the equation $Mx = y$ can be solved, uniquely and stably. The central result is Banach's theorem that a bounded linear bijection between Banach spaces has a bounded inverse. Its proof rests on the Baire category theorem, which says that a complete metric space cannot be a countable union of ``thin'' sets.
+
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: SOLVING Mx = y (Lecture 15)
+% ============================================================================
+
+\section{Solving \texorpdfstring{$Mx = y$}{Mx = y}}\label{sec:solving}
+
+\roadmark{Stage: maps}{Thread: completeness. Existence, uniqueness and stability for a bounded linear equation; the first two are algebra, the third needs completeness.}
+
+\begin{rembox}[Midterm Remarks]\label{rem:midterm-remarks}
+Wu began with two midterm problems.
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{The completion of $C^1[a,b]$ under $\|f\| = \max_{[a,b]} |f|$ is $C[a,b]$.} All that was needed: $C^1[a,b]$ is dense in $(C[a,b], \|\cdot\|_\infty)$, because already the polynomials are dense in this norm (Weierstrass), and $C[a,b]$ is complete (Theorem~\ref{thm:Cab-banach}); so $C[a,b]$ is the completion (Proposition~\ref{prop:identify-completion}). Wu: the abstract completion by equivalence classes of Cauchy sequences is not needed in practice; one identifies a complete space in which the given space is dense.
+    \item \emph{If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.} Most solutions proved completeness but not orthonormality, which was not assumed. A student asked about $e_\alpha = 0$; Wu: the vectors are assumed nonzero (a zero vector cannot belong to an orthonormal set). The full problem is on this week's homework.
+\end{enumerate}
+\end{rembox}
+
+\subsection{Three Questions}
+
+Let $X, Y$ be normed linear spaces and $M : X \to Y$ a bounded linear map (without boundedness ``life would be too difficult''). Consider the equation
+\[
+M x = y . \tag{$*$}
+\]
+
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{Existence.} For given $y \in Y$, is there a solution $x \in X$ of $(*)$? For every $y$: yes if and only if $R(M) = Y$.
+    \item \emph{Uniqueness.} Is the solution unique? Yes if and only if $N(M) = \{0\}$.
+    \item \emph{Stability.} Assume $M : X \to Y$ is one-to-one and onto, so that $M^{-1} : Y \to X$ exists and $(*)$ is solved by $x = M^{-1} y$. Does a small error in $y$ imply a small error in $x$? Yes if $M^{-1}$ is continuous.
+\end{enumerate}
+
+\begin{defbox}[Range; Null Space]\boxlabel{def:range-null}
+Let $M : X \to Y$ be a linear map. The \textbf{range} of $M$ is $R(M) = \{ Mx : x \in X \}$. The \textbf{null space} (or \textbf{kernel}, or null set) of $M$ is $N(M) = \{ x \in X : Mx = 0 \}$.
+\end{defbox}
+
+%% FILL-IN: the two "if and only if"s.
+(For (2): if $Mx_1 = Mx_2 = y$ then $M(x_1 - x_2) = 0$, so $N(M) = \{0\}$ forces $x_1 = x_2$; conversely, if $0 \ne w \in N(M)$ and $Mx = y$, then $x + w$ is a second solution. (1) is the definition of $R(M)$.) Question (3) is the one that matters in practice: data are never exact, and one hopes that the computed solution is close to the true one. Continuity of $M^{-1}$ is exactly this: for every $\varepsilon > 0$ there is $\delta > 0$ such that $\|y_1 - y_2\| < \delta$ implies $\|M^{-1} y_1 - M^{-1} y_2\| < \varepsilon$. This is called \textbf{stability}. In finite dimensions $M$ is a matrix and all three questions are linear algebra; the first two can be fixed in general, as follows, while the third is hard.
+
+\subsection{Quotienting Out the Null Space}
+
+\begin{thmbox}[Null Space and the Induced Map]\boxlabel{thm:induced-map}
+Let $X, Y$ be normed linear spaces and $M \in \mathcal{L}(X, Y)$. Then:
+\begin{enumerate}[label=(\arabic*)]
+    \item The null space $N = N(M)$ is a closed linear subspace of $X$.
+    \item There is a natural definition of $M$ on $X/N$: the map $M_0 : X/N \to Y$, $M_0[x] = Mx$, is a bounded linear map and is one-to-one, and $M_0 : X/N \to R(M)$ is one-to-one and onto. Moreover $\|M_0\| = \|M\|$.
+\end{enumerate}
+\end{thmbox}
+
+\begin{proof}
+(1) %% FILL-IN: Wu: "clear"; the argument she gave orally.
+\emph{Linear subspace:} $M0 = 0$, and if $Mx_1 = Mx_2 = 0$ then $M(c_1 x_1 + c_2 x_2) = c_1 Mx_1 + c_2 Mx_2 = 0$. \emph{Closed:} if $x_n \in N$ and $x_n \to x_0$, then, $M$ being bounded and hence continuous (Proposition~\ref{prop:bounded-continuous}), $0 = Mx_n \to Mx_0$, so $Mx_0 = 0$.
+
+(2) Since $N$ is closed, $X/N$ is a normed linear space (Theorem~\ref{thm:quotient-norm}): its elements are the equivalence classes $[x] = \{ x + w : w \in N \}$, $x \in X$, with $[x_1] = [x_2]$ if and only if $x_1 - x_2 \in N$, and
+\[
+\|[x]\| = \inf_{x' \in [x]} \|x'\| = \inf_{w \in N} \|x + w\| .
+\]
+Define $M_0[x] = Mx$ for all $x \in X$.
+
+\textbf{Well defined, and one-to-one.} Since $M$ is linear,
+\[
+M x_1 = M x_2 \iff M(x_1 - x_2) = 0 \iff x_1 - x_2 \in N \iff [x_1] = [x_2] .
+\]
+%% FILL-IN: which direction gives which property.
+The implication ``$\Leftarrow$'' says the value $Mx$ does not depend on the representative $x$ of $[x]$: $M_0$ is well defined. The implication ``$\Rightarrow$'' says $M_0[x_1] = M_0[x_2]$ forces $[x_1] = [x_2]$: $M_0$ is one-to-one.
+
+\textbf{Linear.} %% FILL-IN: left as an exercise.
+$M_0(c_1[x_1] + c_2[x_2]) = M_0[c_1 x_1 + c_2 x_2] = M(c_1 x_1 + c_2 x_2) = c_1 M_0[x_1] + c_2 M_0[x_2]$.
+
+\textbf{Bounded.} For every $w \in N$, $Mx = M(x + w)$, so
+\[
+\|M_0[x]\|_Y = \|Mx\|_Y = \|M(x + w)\|_Y \le \|M\|\, \|x + w\|_X \qquad \text{for all } w \in N .
+\]
+Taking the infimum over $w \in N$,
+\[
+\|M_0[x]\|_Y \le \|M\| \inf_{w \in N} \|x + w\|_X = \|M\|\, \|[x]\| .
+\]
+So $M_0 : X/N \to Y$ is bounded, and $\|M_0\| \le \|M\|$.
+
+\textbf{Onto $R(M)$.} The values of $M_0$ are the values $Mx$ of $M$, so $M_0(X/N) = R(M)$; with one-to-one, $M_0 : X/N \to R(M)$ is a bijection.
+
+\textbf{$\|M_0\| = \|M\|$.} %% FILL-IN: left as an exercise ("go through the definition").
+Since $\|[x]\| \le \|x\|$ (take $w = 0$ in the infimum), for every $x \in X$
+\[
+\|Mx\| = \|M_0[x]\| \le \|M_0\|\, \|[x]\| \le \|M_0\|\, \|x\| ,
+\]
+so $\|M\| = \sup_{\|x\| = 1} \|Mx\| \le \|M_0\|$. With the previous step, $\|M_0\| = \|M\|$.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[{{The First Isomorphism Theorem, with Norms}}]\label{rem:first-iso-norms}
+Algebraically, Theorem~\ref{thm:induced-map}(2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. Wu: the null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces, and Banach's theorem below shows that $M_0^{-1}$ is bounded. So question (3) is the real one.
+\end{rembox}
+%% <<< END ADDED
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small]
+  \node (X) at (0,1.8) {$X$};
+  \node (Y) at (4.2,1.8) {$Y$};
+  \node (Q) at (0,0) {$X/N(M)$};
+  \node (R) at (4.2,0) {$R(M)$};
+  \draw[->] (X) -- node[above] {$M$} (Y);
+  \draw[->] (X) -- node[left] {$x \mapsto [x]$} (Q);
+  \draw[->] (Q) -- node[above] {$M_0$} node[below, font=\scriptsize] {one-to-one, onto} (R);
+  \draw[->] (R) -- node[right] {inclusion} (Y);
+\end{tikzpicture}
+\end{center}
+Theorem~\ref{thm:induced-map} as a diagram: $M$ factors as the quotient map $x \mapsto [x]$, the one-to-one and onto map $M_0$, and the inclusion of $R(M)$ in $Y$. Passing to $X/N(M)$ removes non-uniqueness, shrinking the target to $R(M)$ removes non-existence; whether $M_0^{-1}$ is bounded is question (3).
+%% <<< END ADDED
+
+\subsection{Banach's Theorem and Open Maps}
+
+\begin{thmbox}[Banach's Inverse Mapping Theorem]\boxlabel{thm:banach-inverse}
+Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map. Assume $M$ is one-to-one and onto. Then $M^{-1} : Y \to X$ is also a bounded linear map.
+\laxref{\S15.5, Thm~11}
+\end{thmbox}
+
+The proof will be given after the Baire category theorem. Wu stressed that the inverse is \emph{not} assumed to be bounded, and that it is important that \emph{both} $X$ and $Y$ are Banach spaces.
+%% FILL-IN: linearity of the inverse (Wu: "that's easy to check").
+($M^{-1}$ is linear: given $y_1, y_2 \in Y$, put $x_i = M^{-1} y_i$; then $M(c_1 x_1 + c_2 x_2) = c_1 y_1 + c_2 y_2$, so $M^{-1}(c_1 y_1 + c_2 y_2) = c_1 x_1 + c_2 x_2$.) So the content of the theorem is boundedness, i.e.\ continuity, of $M^{-1}$, and continuity can be expressed through open sets:
+\begin{align*}
+M^{-1} : Y \to X \text{ bounded} &\iff M^{-1} \text{ continuous} \\
+&\iff \text{for every open } O \subset X,\ (M^{-1})^{-1}(O) = M(O) \text{ is open in } Y .
+\end{align*}
+
+%% >>> ADDED: lemma (the metric-space fact behind the second equivalence)
+\begin{lembox}[Continuity by Open Sets]\boxlabel{lem:cont-open}
+A map $f$ between metric spaces is (sequentially) continuous if and only if $f^{-1}(U)$ is open for every open $U$.
+\end{lembox}
+
+\begin{proof}
+(Not covered in lecture; MATH 451.) ($\Rightarrow$) Let $U$ be open and $x \in f^{-1}(U)$. If no ball $B(x, 1/n)$ were contained in $f^{-1}(U)$, there would be $x_n$ with $d(x_n, x) < 1/n$ and $f(x_n) \notin U$; then $x_n \to x$, so $f(x_n) \to f(x) \in U$, and since $U$ is open, $f(x_n) \in U$ for large $n$ --- a contradiction. ($\Leftarrow$) Let $x_n \to x$ and $\varepsilon > 0$. The set $f^{-1}(B(f(x), \varepsilon))$ is open and contains $x$, so it contains some $B(x, \delta)$; for large $n$, $x_n \in B(x, \delta)$, so $d(f(x_n), f(x)) < \varepsilon$.
+\end{proof}
+%% <<< END ADDED
+
+\begin{defbox}[Open Map]\boxlabel{def:open-map}
+Let $X, Y$ be normed linear spaces (or metric spaces). A map $M : X \to Y$ is \textbf{open} if for every open $O \subset X$ the image $M(O)$ is open in $Y$.
+\laxref{\S15.5, Thm~10 (the open mapping principle)}
+\end{defbox}
+
+So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an open map, and Banach's theorem is a consequence of the open mapping theorem: \emph{if $X, Y$ are Banach spaces and $M : X \to Y$ is a bounded linear map that is one-to-one and onto, then $M$ is open}. This is what will be proved.
+%% ADDED: sentence (not said in lecture).
+(The standard open mapping theorem assumes only that $M$ is onto; one-to-one is needed only to speak of $M^{-1}$.)
+
+\subsection{Closed Maps}
+
+\begin{defbox}[Closed Map]\boxlabel{def:closed-map}
+Let $X, Y$ be normed linear spaces and let $D(M) \subset X$ be the domain of a linear map $M$ (a linear subspace on which $M$ is defined, possibly not all of $X$). $M : D(M) \to Y$ is a \textbf{closed map} if its \textbf{graph}
+\[
+G(M) = \{ (x, Mx) : x \in D(M) \}
+\]
+is a closed set in $X \times Y$. That is: for any sequence $\{x_n\}_{n=1}^\infty$ in $D(M)$, if $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$, then $x_0 \in D(M)$ and $y_0 = Mx_0$.
+\laxref{\S15.5, definition before Thm~12}
+\end{defbox}
+
+%% FILL-IN: the norm on X x Y, and why the two formulations agree; "x_0 in D(M)" made explicit.
+(Here $X \times Y$ carries one of the equivalent norms of Proposition~\ref{prop:direct-sum-norm}, say $\|(x, y)\| = \|x\|_X + \|y\|_Y$, so that $(x_n, y_n) \to (x_0, y_0)$ if and only if $x_n \to x_0$ and $y_n \to y_0$. A set is closed if it contains the limits of its convergent sequences (Definition~\ref{def:closed}); for the graph, the limit $(x_0, y_0)$ of $(x_n, Mx_n)$ lies in $G(M)$ exactly when $x_0 \in D(M)$ and $y_0 = Mx_0$. In words: if a sequence in the graph has a limit, the limit is in the graph.)
+
+\begin{exbox}[Continuous Maps are Closed]\boxlabel{ex:cont-closed}
+If $M : X \to Y$ is continuous (with $D(M) = X$), then $M$ is closed: if $x_n \to x_0$, continuity gives $Mx_n \to Mx_0$, and limits are unique, so $y_0 = Mx_0$.
+%% FILL-IN: the domain must be closed for this.
+The domain matters: for $D(M)$ not closed, a continuous $M$ need not be closed. For example, let $D(M)$ be the polynomials in $X = Y = C[0,1]$ with the maximum norm, and $Mx = x$. The Taylor polynomials $x_n$ of $e^t$ converge to $e^t$ uniformly, and so do $Mx_n = x_n$, but $e^t \notin D(M)$.
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small]
+  \begin{scope}
+    \draw[->, gray] (-0.3,0) -- (3.6,0) node[right, text=black] {$X$};
+    \draw[->, gray] (0,-0.3) -- (0,3.0) node[above, text=black] {$Y$};
+    \draw[very thick, blue!70!black] (0,0) -- (3.3,2.6) node[above, font=\small] {$G(M)$};
+    \foreach \t/\o in {0.9/60,1.45/70,1.75/80,1.92/90} { \fill[blue!70!black, opacity=0.\o] ({\t*1.1},{\t*0.8667}) circle (1.5pt); }
+    \fill[red!75!black] (2.2,1.733) circle (2pt);
+    \node[red!75!black, anchor=north west, align=left] at (2.25,1.6) {$(x_0, y_0) \in G(M)$};
+    \node[anchor=north, align=center] at (1.6,-0.45) {closed: the limit of\\ $(x_n, Mx_n)$ is in the graph};
+  \end{scope}
+  \begin{scope}[xshift=6.2cm]
+    \draw[->, gray] (-0.3,0) -- (3.6,0) node[right, text=black] {$X$};
+    \draw[->, gray] (0,-0.3) -- (0,3.0) node[above, text=black] {$Y$};
+    \draw[very thick, blue!70!black, dashed] (0,0) -- (3.3,2.6) node[above, font=\small] {$G(M)$};
+    \foreach \t/\o in {0.9/60,1.45/70,1.75/80,1.92/90} { \fill[blue!70!black, opacity=0.\o] ({\t*1.1},{\t*0.8667}) circle (1.5pt); }
+    \draw[red!75!black, thick, fill=white] (2.2,1.733) circle (2.2pt);
+    \node[red!75!black, anchor=north west, align=left] at (2.25,1.6) {$(e^t, e^t) \notin G(M)$};
+    \node[anchor=north, align=center] at (1.6,-0.45) {not closed: $D(M)$ = polynomials,\\ $Mx = x$, Taylor polynomials of $e^t$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph converge, and the limit lies on the graph. Right: the example above, $Mx = x$ on the polynomials in $C[0,1]$; the Taylor polynomials $x_n$ of $e^t$ give points $(x_n, x_n)$ of the graph converging to $(e^t, e^t)$, which is missing, since $e^t$ is not a polynomial. $M$ is continuous but not closed: its domain is not closed.
+%% <<< END ADDED
+
+\begin{rembox}[Why Not ``Closed Sets to Closed Sets'']\label{rem:closed-map-sets}
+A student asked why a closed map is not defined, by analogy with open maps, as one taking closed sets to closed sets. Wu: that is a different notion, not equivalent to this one, and it is not what will be used; the graph definition is.
+%% ADDED: example (not from lecture).
+For instance, the projection $P(x, y) = x$ from $\mathbb{R}^2$ to $\mathbb{R}$ is continuous, hence closed in the graph sense, but it maps the closed set $\{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
+\end{rembox}
+
+A closed map need not be continuous. Wu: this is why one cares about such a weak notion --- differentiation, the most important operator in analysis, is not bounded, but it is closed.
+
+\begin{exbox}[{{Differentiation is Closed}}]\boxlabel{ex:diff-closed}
+Let $X = Y = C[0,1]$ with $\|x\| = \max_{t \in [0,1]} |x(t)|$, and
+\[
+(Mx)(t) = \frac{d}{dt}\, x(t) = x'(t), \qquad D(M) = C^1[0,1] .
+\]
+Then $M : D(M) \to Y$ is a closed map. It is linear, and it is not bounded (homework; compare Proposition~\ref{prop:diff-unbounded}).
+\end{exbox}
+
+\begin{proof}
+Let $(x_n, x_n')$ be a sequence in $G(M)$, and assume $(x_n, x_n') \to (x_0, y_0) \in C[0,1] \times C[0,1]$. We want $y_0 = x_0'$, i.e.\ $x_0 \in C^1[0,1]$ and $x_0' = y_0$.
+
+Let $y_n = x_n' \in C[0,1]$; by assumption $\{x_n'\}$ converges in $C[0,1]$ to $y_0$, i.e.
+\[
+\max_{t \in [0,1]} |x_n'(t) - y_0(t)| \to 0 \qquad (n \to \infty) .
+\]
+Let
+\[
+\bar x(t) = \int_0^t y_0(s)\, ds ;
+\]
+we want to show $\bar x(t) = x_0(t) - x_0(0)$. For each fixed $t \in [0,1]$,
+\[
+\Bigl| \int_0^t \bigl( x_n'(s) - y_0(s) \bigr)\, ds \Bigr| \le \int_0^t |x_n'(s) - y_0(s)|\, ds \le \max_{s \in [0,1]} |x_n'(s) - y_0(s)| ,
+\]
+since $t \le 1$; taking the supremum over $t$,
+\[
+\sup_{t \in [0,1]} \Bigl| \int_0^t \bigl( x_n'(s) - y_0(s) \bigr)\, ds \Bigr| \le \max_{s \in [0,1]} |x_n'(s) - y_0(s)| \to 0 .
+\]
+But $x_n \in C^1[0,1]$, so by the fundamental theorem of calculus
+\[
+\int_0^t \bigl( x_n'(s) - y_0(s) \bigr)\, ds = x_n(t) - x_n(0) - \bar x(t) .
+\]
+Now also $\max_{[0,1]} |x_n(t) - x_0(t)| \to 0$, so $x_n(t) - x_n(0) - \bar x(t) \to x_0(t) - x_0(0) - \bar x(t)$ for each $t$. Limits are unique, so $x_0(t) - x_0(0) - \bar x(t) = 0$:
+\[
+x_0(t) = x_0(0) + \bar x(t) = x_0(0) + \int_0^t y_0(s)\, ds \qquad \text{for all } t \in [0,1] .
+\]
+Since $y_0$ is continuous, the fundamental theorem of calculus gives $x_0 \in C^1[0,1]$ and $x_0'(t) = y_0(t)$.
+\end{proof}
+
+\begin{rembox}[Which $C^1$; the Graph Norm]\label{rem:diff-domain}
+A student asked whether $C^1$ is meant classically; Wu: yes, classical $C^1$. Asked why the domain is $C^1$ when there are differentiable functions that are not $C^1$: the domain may be chosen smaller than the largest possible one, ``as long as I don't make it larger''; here only $C^1$ matters.
+%% ADDED: sentences (not said in lecture).
+The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition~\ref{prop:C2-incomplete}). That is no coincidence: a linear map is closed exactly when its domain is complete in the \emph{graph norm} $\|x\| + \|Mx\|$, provided $X$ and $Y$ are complete. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
+\end{rembox}
+
+% ============================================================================
+% SECTION: THE BAIRE CATEGORY THEOREM (Lecture 15)
+% ============================================================================
+
+\section{The Baire Category Theorem}\label{sec:baire}
+
+\roadmark{Stage: maps}{Thread: completeness. A complete metric space is too large to be a countable union of nowhere dense sets.}
+
+In this section $(X, d)$ is a metric space, $B(x_0, r) = \{ x \in X : d(x, x_0) < r \}$ is the open ball (written $B_r(x_0)$ in Definition~\ref{def:open-ball}), and $\overline{B(x_0, r)}$ is its closure. A point $x_0$ is an \textbf{interior point} of a set $S$ if $B(x_0, r) \subset S$ for some $r > 0$ (Definition~\ref{def:metric-interior}).
+
+\begin{defbox}[Nowhere Dense; First and Second Category]\boxlabel{def:category}
+Let $(X, d)$ be a metric space.
+\begin{enumerate}[label=(\arabic*)]
+    \item $E \subset X$ is \textbf{nowhere dense} if $\overline{E}$, the closure of $E$, has no interior points.
+    \item $S \subset X$ is \textbf{of the first category} if $S$ is a countable union of nowhere dense subsets of $X$: $S = \bigcup_{n=1}^\infty E_n$ with each $E_n$ nowhere dense.
+    \item A set $S$ that is not of the first category is \textbf{of the second category}.
+\end{enumerate}
+\laxref{\S15.5, end (sets of second category, Thm~16)}
+\end{defbox}
+
+\begin{exbox}[Nowhere Dense Sets; Sets of the First Category]\boxlabel{ex:nowhere-dense}
+In $X = \mathbb{R}^n$: a finite set $E$ is nowhere dense; so is the set of integer points $\mathbb{Z}^n$. The set of rational points $\mathbb{Q}^n$ is of the first category.
+%% FILL-IN: why.
+(A finite set and $\mathbb{Z}^n$ are closed, and contain no ball, since every ball contains points with an irrational coordinate. $\mathbb{Q}^n$ is countable, hence a countable union of one-point sets $\{q\}$, each closed with no interior. Note that $\mathbb{Q}^n$ itself is dense, so ``first category'' does not mean ``small'' in the sense of closure.)
+\end{exbox}
+
+The Baire category theorem says that a complete metric space must be of the second category: completeness means it contains ``too many points'' to be a countable union of nowhere dense sets. First a lemma.
+
+\begin{lembox}[Nowhere Dense via Balls]\boxlabel{lem:nowhere-dense-balls}
+Let $(X, d)$ be a metric space and $E \subset X$. Then $E$ is nowhere dense if and only if for every open ball $B(x_0, r) \subset X$ there is a ball $B(x_1, r_1)$, $r, r_1 > 0$, with
+\[
+\overline{B(x_1, r_1)} \subset B(x_0, r) \qquad \text{and} \qquad \overline{B(x_1, r_1)} \cap \overline{E} = \varnothing .
+\]
+\end{lembox}
+
+%% FIGURE (board): redrawn from the sketch in Tianshuo's notes; labels by Claude
+\begin{center}
+\begin{tikzpicture}[scale=1.1, >=stealth]
+    \draw[thick, orange!80!black] (0,0) circle (1.6);
+    \node[orange!80!black, anchor=west] at (1.25,1.25) {$B(x_0, r)$};
+    \fill (-0.5,-0.4) circle (1pt) node[below] {$x_0$};
+    \foreach \p in {(-1.0,0.9),(0.95,-1.0),(-1.25,-0.55),(1.1,0.95),(0.3,1.2),(-0.4,-1.3),(1.6,1.75),(-1.8,0.2)} {\fill[blue!70!black] \p circle (1.3pt);}
+    \node[blue!70!black, anchor=west] at (1.9,-0.6) {$\overline{E}$};
+    \draw[thick, red!75!black] (0.2,0.15) circle (0.45);
+    \fill[red!75!black] (0.2,0.15) circle (1pt) node[above, font=\scriptsize] {$x_1$};
+    \node[red!75!black, anchor=west] at (0.68,0.1) {$\overline{B(x_1, r_1)}$};
+\end{tikzpicture}
+\end{center}
+Inside any ball there is a smaller closed ball that misses $\overline{E}$ entirely. (The dots stand for $\overline{E}$; a nowhere dense set can be much larger than a discrete set, e.g.\ a Cantor set.)
+
+\begin{proof}
+\textbf{($\Rightarrow$)} Assume $E$ is nowhere dense, and let $B(x_0, r)$ be an open ball. Then $\overline{E} \neq X$ (otherwise every point of $X$, e.g.\ $x_0$, would be an interior point of $\overline{E}$), so $\overline{E}^{\,c}$ is open and nonempty. Also $B(x_0, r) \cap \overline{E}^{\,c}$ is open and nonempty; otherwise $B(x_0, r) \subset \overline{E}$, and $x_0$ would be an interior point of $\overline{E}$. So there is an open ball with
+\[
+B(x_1, 2r_1) \subset B(x_0, r) \cap \overline{E}^{\,c} .
+\]
+%% FILL-IN: why such a ball exists, and why the closure of the smaller ball fits.
+(Take any $x_1$ in this open nonempty set; some $B(x_1, \rho)$ lies in it, and put $r_1 = \rho/2$.) Then
+\[
+\overline{B(x_1, r_1)} \subset B(x_1, 2r_1) \subset B(x_0, r) \cap \overline{E}^{\,c} ,
+\]
+which is the claim. (The first inclusion holds because if $x_k \in B(x_1, r_1)$ and $x_k \to x$, then $d(x, x_1) = \lim d(x_k, x_1) \le r_1 < 2r_1$.)
+
+\textbf{($\Leftarrow$)} We want to show $E$ is nowhere dense. If not, $\overline{E}$ has an interior point; name it $x_0$. Then there is an open ball $B(x_0, r) \subset \overline{E}$, and every ball $B(x_1, r_1) \subset B(x_0, r)$ satisfies $B(x_1, r_1) \subset \overline{E}$; in particular $x_1 \in \overline{B(x_1, r_1)} \cap \overline{E}$, which is then nonempty. This contradicts the assumption.
+\end{proof}
+
+%% >>> ADDED: remark (two facts used in the next proof)
+\begin{rembox}[Two Facts About Nowhere Dense Sets]\label{rem:nowhere-dense-facts}
+Two facts are used below. (a) If the closed ball $\overline{B(x_1, r_1)}$ works in the lemma, so does $\overline{B(x_1, r_1')}$ for any $0 < r_1' \le r_1$, since it is a subset; so $r_1$ can be taken as small as we like. (b) $E$ and $\overline{E}$ have the same closure ($\overline{E}$ is closed, Proposition~\ref{prop:closure}), so $E$ is nowhere dense if and only if $\overline{E}$ is. This is why, as Wu said, it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
+\end{rembox}
+%% <<< END ADDED
+
+\begin{thmbox}[Baire Category Theorem]\boxlabel{thm:baire}
+Let $X$ be a (nonempty) complete metric space. Then $X$ is of the second category: $X$ is not a countable union of nowhere dense sets.
+\laxref{\S15.5, proof of Thm~9 (``Baire category principle''), p.~169}
+\end{thmbox}
+
+\begin{proof}
+%% FILL-IN: nonemptiness is needed (the empty space is the empty union).
+($X \neq \varnothing$ is needed: the empty space is a union of empty, nowhere dense sets.) If not, $X = \bigcup_{n=1}^\infty E_n$ with each $E_n$ nowhere dense. We want to show there is at least one point $x^* \in X$ with $x^* \notin \bigcup_{n=1}^\infty E_n$, a contradiction. The idea is to construct a sequence of nested closed balls avoiding $E_1, E_2, \ldots$ in turn, and to use completeness to find a point in all of them.
+
+\textbf{Nested balls.} Fix $x_0 \in X$ (Wu: ``just take the unit ball'' $B(0,1)$). Since $E_1$ is nowhere dense, by Lemma~\ref{lem:nowhere-dense-balls} there is a ball $B(x_1, r_1)$ with
+\[
+\overline{B(x_1, r_1)} \subset B(x_0, 1), \qquad \overline{B(x_1, r_1)} \cap \overline{E}_1 = \varnothing .
+\]
+Since $E_2$ is nowhere dense, applied to the ball $B(x_1, r_1)$ the lemma gives $B(x_2, r_2)$ with
+\[
+\overline{B(x_2, r_2)} \subset B(x_1, r_1), \qquad \overline{B(x_2, r_2)} \cap \overline{E}_2 = \varnothing ,
+\]
+and then also $\overline{B(x_2, r_2)} \cap (\overline{E}_1 \cup \overline{E}_2) = \varnothing$, because $\overline{B(x_2, r_2)} \subset B(x_1, r_1)$ misses $\overline{E}_1$. Continuing, for every $n$ there is $B(x_n, r_n)$ with
+\[
+\overline{B(x_n, r_n)} \subset B(x_{n-1}, r_{n-1}) \subset \cdots \subset B(x_1, r_1) \qquad \text{and} \qquad \overline{B(x_n, r_n)} \cap \Bigl( \bigcup_{j=1}^n \overline{E}_j \Bigr) = \varnothing .
+\]
+By the remark above we may also take $r_n < 1/n$. %% FILL-IN: Wu used the radii shrinking implicitly; she will finish the proof next lecture.
+
+\textbf{Completeness.} Since $X$ is complete, $\bigcap_{n=1}^\infty \overline{B(x_n, r_n)} \neq \varnothing$.
+%% FILL-IN: Wu: "we are going to fix this part next time, because this is where we use completeness"; the argument below is Claude's and will be checked against hers.
+(The centers form a Cauchy sequence: for $m \ge n$, $x_m \in \overline{B(x_m, r_m)} \subset B(x_n, r_n)$, so $d(x_m, x_n) < r_n < 1/n$. By completeness $x_m \to x^*$ for some $x^* \in X$. For each fixed $n$, the points $x_m$, $m \ge n$, lie in the closed set $\overline{B(x_n, r_n)}$, so their limit $x^*$ does too. Hence $x^* \in \bigcap_n \overline{B(x_n, r_n)}$.)
+
+\textbf{Conclusion.} Each $\overline{B(x_n, r_n)}$ misses $\overline{E}_1 \cup \cdots \cup \overline{E}_n$, and the balls are nested, so
+\[
+\Bigl( \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} \Bigr) \cap \Bigl( \bigcup_{j=1}^\infty E_j \Bigr) = \varnothing .
+\]
+%% FILL-IN: why the infinite intersection misses every E_j.
+(If $x$ lies in every ball and in some $E_j$, then $x \in \overline{B(x_j, r_j)} \cap \overline{E}_j = \varnothing$.) So $x^* \notin \bigcup_j E_j = X$, which is impossible.
+\end{proof}
+
+%% >>> ADDED: figure (Claude)
+\begin{center}
+\begin{tikzpicture}[scale=1.35, >=stealth]
+    \draw[thick] (0,0) circle (2.2);
+    \draw[thick, red!75!black] (0.5,0.2) circle (1.2);
+    \draw[thick, blue!70!black] (0.85,0.0) circle (0.6);
+    \draw[thick, green!50!black] (1.0,-0.1) circle (0.25);
+    \fill (1.0,-0.1) circle (1.2pt);
+    \draw[gray, dashed] (-1.9,-0.4) .. controls (-1.0,-1.6) and (0.0,-1.4) .. (0.3,-2.0);
+    \node[gray] at (-1.25,-1.45) {$E_1$};
+    \draw[gray, dashed] (-0.3,1.9) .. controls (0.2,1.3) and (-0.1,0.9) .. (-0.05,0.4) .. controls (-0.3,0.0) .. (-1.4,-0.2);
+    \node[gray] at (-1.25,0.1) {$E_2$};
+    \node[anchor=west] at (2.5,1.6) {$B(x_0, 1)$};
+    \draw[gray!60] (2.5,1.6) -- (1.6,1.5);
+    \node[red!75!black, anchor=west] at (2.5,0.9) {$\overline{B(x_1, r_1)}$, misses $\overline{E}_1$};
+    \draw[gray!60] (2.5,0.9) -- (1.55,0.75);
+    \node[blue!70!black, anchor=west] at (2.5,0.2) {$\overline{B(x_2, r_2)}$, misses $\overline{E}_1 \cup \overline{E}_2$};
+    \draw[gray!60] (2.5,0.2) -- (1.43,0.15);
+    \node[anchor=west] at (2.5,-0.5) {$x^* \in \bigcap_n \overline{B(x_n, r_n)}$};
+    \draw[gray!60] (2.5,-0.5) -- (1.03,-0.13);
+\end{tikzpicture}
+\end{center}
+Each closed ball sits inside the previous one and avoids one more $E_j$; completeness provides a point $x^*$ in all of them, which therefore lies in no $E_j$.
+%% <<< END ADDED
+
+% ============================================================================
+% CHAPTER 8: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
 % ============================================================================
 % Companion chapter, not lecture material. Started after Lecture 8 (2026-09-24);
 % to be extended as the course covers operators, adjoints, and spectral theory.
@@ -8159,6 +8542,32 @@ To show that a set spans a dense subspace, or that a vector lies in a closed sub
 \end{itemize}
 \end{exbox}
 
+% --------------------------------------------------------------------------
+%% Lecture 15 (Claude): new technique.
+\subsection{Technique 24: Quotient by the Null Space}
+
+\begin{rembox}[Strategy]\label{rem:tech24}
+To turn a map that is not one-to-one into one that is, pass to the quotient by its null space: define $M_0[x] = Mx$. The single chain $Mx_1 = Mx_2 \iff x_1 - x_2 \in N \iff [x_1] = [x_2]$ gives both well-definedness (read right to left) and injectivity (left to right). Norm estimates on the quotient come from the freedom to change the representative: $Mx = M(x + w)$ for every $w \in N$, so bound by $\|x + w\|$ and take the infimum over $w$.
+\end{rembox}
+
+\begin{exbox}[Application (Lecture 15)]\boxlabel{ex:tech24}
+\begin{itemize}
+\item The induced map $M_0 : X/N(M) \to R(M)$ (Lecture 15, Theorem~\ref{thm:induced-map}), with $\|M_0\| = \|M\|$.
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+%% Lecture 15 (Claude): new technique.
+\subsection{Technique 25: Nested Closed Balls in a Complete Space}
+
+\begin{rembox}[Strategy]\label{rem:tech25}
+To produce a point with infinitely many properties, one for each $n$, build closed balls $\overline{B(x_n, r_n)}$, each inside the previous one and each securing one more property, with $r_n \to 0$. The centers are Cauchy ($d(x_m, x_n) < r_n$ for $m \ge n$), completeness gives a limit, and the limit lies in every closed ball. Each step is local: inside any given ball, find a smaller closed ball with the next property.
+\end{rembox}
+
+\begin{exbox}[Application (Lecture 15)]\boxlabel{ex:tech25}
+The Baire category theorem (Theorem~\ref{thm:baire}): the $n$-th ball avoids $\overline{E}_1, \ldots, \overline{E}_n$, by Lemma~\ref{lem:nowhere-dense-balls}.
+\end{exbox}
+
 
 % ============================================================================
 % CONCORDANCE WITH LAX
@@ -8240,6 +8649,7 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
 \ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text here, so no Ch.~8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
 \ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked. \\
+\ref{sec:solving}--\ref{sec:baire} Solving $Mx = y$; Baire category & Ch.~15 & \S15.5 The open mapping principle: Banach's inverse mapping theorem (Thm~11), open maps (Thm~10), closed maps (definition before Thm~12; the closed graph theorem, Thm~12, is not yet covered), the Baire category principle (used in the proof of Thm~9, p.~169; sets of second category, Thm~16). \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }

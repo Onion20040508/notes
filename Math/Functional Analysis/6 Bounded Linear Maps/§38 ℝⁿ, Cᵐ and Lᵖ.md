@@ -5,7 +5,7 @@ chapter: 6
 section: 38
 tags: [functional-analysis, math556]
 ---
-← [[§37 Separable Duals and Reflexive Spaces]] · ↑ [[· 6 Bounded Linear Maps]] · [[§39 Bras, Kets, and the Riesz Map]] →
+← [[§37 Separable Duals and Reflexive Spaces]] · ↑ [[· 6 Bounded Linear Maps]] · [[§39 Solving Mx = y]] →
 
 *Stage: maps — Examples revisited. Which maps between the course's spaces are bounded, and the duals of $L^p$ and $\ell^2$.*
 
@@ -43,4 +43,4 @@ Lecture 12 used $L^2$ twice more. The [[§34 Weak Solutions of the Dirichlet Pro
 
 *(Not from lecture; summary of Lecture 14.)* Lecture 14 sorted the course's spaces by [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexivity]]. Hilbert spaces, in particular $L^2$ and $\ell^2$, and $\ell^p$ for $1 < p < \infty$ are reflexive (Examples [[§37 Separable Duals and Reflexive Spaces#^ex-37-2|§37.2]] and [[§37 Separable Duals and Reflexive Spaces#^ex-37-3|§37.3]]); $C[0,1]$, $\ell^1$ and $c_0$ are not (Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]], Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|§37.7]]), and the duals of $\ell^\infty$ and $L^\infty$ are not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so they are not $\ell^1$ and $L^1$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]).
 
-*Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§41 Position Eigenstates and Continuous Resolutions#^thm-41-2|Chapter 7 (L² as a state space)]] →
+*Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§43 Position Eigenstates and Continuous Resolutions#^thm-43-2|Chapter 7 (L² as a state space)]] →

@@ -340,3 +340,27 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > - Closed subspaces of reflexive spaces (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], Step 1): $x_0 \in Y$ because every $\ell \in Y^\perp$ (the [[§36 Duality in Normed Spaces#^def-36-1|annihilator]] of $Y$) kills it.
 
 ^ex-t23
+
+## Technique 24: Quotient by the Null Space
+
+> [!remark] Remark: Strategy
+> To turn a map that is not one-to-one into one that is, pass to the quotient by its null space: define $M_0[x] = Mx$. The single chain $Mx_1 = Mx_2 \iff x_1 - x_2 \in N \iff [x_1] = [x_2]$ gives both well-definedness (read right to left) and injectivity (left to right). Norm estimates on the quotient come from the freedom to change the representative: $Mx = M(x + w)$ for every $w \in N$, so bound by $\|x + w\|$ and take the infimum over $w$.
+
+^rem-t24
+
+> [!example] Example T24: Application (Lecture 15)
+> - The induced map $M_0 : X/N(M) \to R(M)$ (Lecture 15, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]]), with $\|M_0\| = \|M\|$.
+
+^ex-t24
+
+## Technique 25: Nested Closed Balls in a Complete Space
+
+> [!remark] Remark: Strategy
+> To produce a point with infinitely many properties, one for each $n$, build closed balls $\overline{B(x_n, r_n)}$, each inside the previous one and each securing one more property, with $r_n \to 0$. The centers are Cauchy ($d(x_m, x_n) < r_n$ for $m \ge n$), completeness gives a limit, and the limit lies in every closed ball. Each step is local: inside any given ball, find a smaller closed ball with the next property.
+
+^rem-t25
+
+> [!example] Example T25: Application (Lecture 15)
+> The Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-2|§40.2]]): the $n$-th ball avoids $\overline{E}_1, \ldots, \overline{E}_n$, by Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]].
+
+^ex-t25

@@ -71,7 +71,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | [[§33 Sobolev Spaces and Weak Derivatives\|§33]] Sobolev spaces | §5.1, example (g) | Weak derivatives, $H^1_0$ and the Poincaré inequality are not in Lax's Chapters 1–15 as treated here. |
 | [[§36 Duality in Normed Spaces\|§36]] Duality in normed spaces | Ch. 8; §5.1, Thm 5 | Normed Hahn–Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch. 8 has not been checked against the text here, so no Ch. 8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. |
 | [[§37 Separable Duals and Reflexive Spaces\|§37]] Separable duals, reflexive spaces | Ch. 8 | Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch. 8 numbering not checked. |
-| [[· 7 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
+| [[· 8 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
 
@@ -186,6 +186,11 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§30 Boundedness and Continuity#^def-30-4\|§30.4]] | The Space $\mathcal{L}(X, Y)$ |
 | §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |
 | §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-5\|§30.5]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §15.5, proof of Thm 9 (“Baire category principle”), p. 169 | Theorem [[§40 The Baire Category Theorem#^thm-40-2\|§40.2]] | Baire Category Theorem |
+| §15.5, Thm 10 (the open mapping principle) | Definition [[§39 Solving Mx = y#^def-39-2\|§39.2]] | Open Map |
+| §15.5, Thm 11 | Theorem [[§39 Solving Mx = y#^thm-39-2\|§39.2]] | Banach's Inverse Mapping Theorem |
+| §15.5, definition before Thm 12 | Definition [[§39 Solving Mx = y#^def-39-3\|§39.3]] | Closed Map |
+| §15.5, end (sets of second category, Thm 16) | Definition [[§40 The Baire Category Theorem#^def-40-1\|§40.1]] | Nowhere Dense; First and Second Category |
 | §16.1, Thm 1(i); §16.3.1 | Example [[§30 Boundedness and Continuity#^ex-30-2\|§30.2]] | The Fourier Transform from $L^1$ to $L^\infty$ |
 | cf. §7.2, before (22) | Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4\|§32.4]] | Symmetric Lax–Milgram is Riesz |
 | cf. Ch. 31, Thm 1 (symmetric forms); §6.3, (20) | Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1\|§32.1]] | Bounded Sesquilinear Forms are Bounded Operators |
