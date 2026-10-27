@@ -48,7 +48,7 @@ $\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (and [[§24 
 > D = \bigcup_{J = 1}^\infty \bigl\{ (p_1, \ldots, p_J, 0, 0, \ldots) : p_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}
 > $$
 >
-> is countable and dense in $\ell^p$. Hence $\ell^p$ is separable.
+> is countable and dense in $\ell^p$. Hence $\ell^p$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 
 ^prop-29-1
 
@@ -104,7 +104,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 >
 > *Convergence.* For $k \ge N$, $a^{(k)} - a \in c_0$ by Step 2, and by (5.4) every term of it has modulus at most $\varepsilon$; so $|a^{(k)} - a| \le \varepsilon$. Hence $a^{(k)} \to a$ in $c_0$, and $(c_0, |\cdot|)$ is a Banach space.
 >
-> **Step 5: $c_0$ is separable.** Let
+> **Step 5: $c_0$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].** Let
 >
 > $$
 > D = \bigcup_{J=1}^\infty \bigl\{ (q_1, \ldots, q_J, 0, 0, \ldots) : q_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}.
@@ -129,7 +129,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 ^prop-29-3
 
 > [!proof]+ Proof
-> (Not covered in lecture; the argument of HW5, Problem 1(b).) For a subset $S \subset \mathbb{N}$ let $\chi_S \in \ell^\infty$ be the sequence with $n$-th term $1$ if $n \in S$ and $0$ otherwise. If $S \neq T$, some $n$ lies in exactly one of them, so $|(\chi_S)_n - (\chi_T)_n| = 1$, while every term of $\chi_S - \chi_T$ has modulus at most $1$; hence $\|\chi_S - \chi_T\|_\infty = 1$. The set of subsets of $\mathbb{N}$ is uncountable ([[§4 Uncountability#^thm-4-1|Cantor]]). If $D$ were a countable dense subset of $\ell^\infty$, choose for each $S$ some $d_S \in D$ with $\|\chi_S - d_S\|_\infty < \frac12$. For $S \neq T$, $d_S = d_T$ would give $1 = \|\chi_S - \chi_T\|_\infty < \frac12 + \frac12$, which is impossible; so $S \mapsto d_S$ would map an uncountable set one-to-one into the countable set $D$. Hence $\ell^\infty$ is not separable.
+> (Not covered in lecture; the argument of HW5, Problem 1(b).) For a subset $S \subset \mathbb{N}$ let $\chi_S \in \ell^\infty$ be the sequence with $n$-th term $1$ if $n \in S$ and $0$ otherwise. If $S \neq T$, some $n$ lies in exactly one of them, so $|(\chi_S)_n - (\chi_T)_n| = 1$, while every term of $\chi_S - \chi_T$ has modulus at most $1$; hence $\|\chi_S - \chi_T\|_\infty = 1$. The set of subsets of $\mathbb{N}$ is uncountable ([[§4 Uncountability#^thm-4-1|Cantor]]). If $D$ were a countable dense subset of $\ell^\infty$, choose for each $S$ some $d_S \in D$ with $\|\chi_S - d_S\|_\infty < \frac12$. For $S \neq T$, $d_S = d_T$ would give $1 = \|\chi_S - \chi_T\|_\infty < \frac12 + \frac12$, which is impossible; so $S \mapsto d_S$ would map an uncountable set one-to-one into the countable set $D$. Hence $\ell^\infty$ is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 
 ^pf-29-3
 
@@ -138,7 +138,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 > [!remark]- Connections
 > - The same separated-family argument for functions: [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]], and in the vault home [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
 
-The shift on $\ell^2$ preserves the inner product without being onto, and every infinite-dimensional separable Hilbert space is isomorphic to $\ell^2$.
+The shift on $\ell^2$ preserves the inner product without being onto, and every infinite-dimensional [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space is isomorphic to $\ell^2$.
 
 ![[§28 Existence of Orthonormal Bases and Separability#^ex-28-1]]
 
@@ -156,7 +156,7 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 
 ![[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3]]
 
-Separability splits the $L^p$ as it split the $\ell^p$:
+[[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Separability]] splits the $L^p$ as it split the $\ell^p$:
 
 > [!theorem] Proposition §29.4: $L^p(E)$ is Separable for $1 \le p < \infty$
 > Let $E \subset \mathbb{R}^n$ be measurable and $1 \le p < \infty$. Let $D$ be the set of functions on $E$ of the form
@@ -165,7 +165,7 @@ Separability splits the $L^p$ as it split the $\ell^p$:
 > \varphi = \sum_{j=1}^N a_j\, \chi_{R_j \cap E}, \qquad N \in \mathbb{N},\ a_j \in \mathbb{Q}_{\mathbb{F}},\ R_j \text{ a rectangle with rational endpoints},
 > $$
 >
-> where a rectangle is a product $\prod_{i=1}^n [\alpha_i, \beta_i)$. Then $D$ is countable and dense in $L^p(E)$. Hence $L^p(E)$ is separable.
+> where a rectangle is a product $\prod_{i=1}^n [\alpha_i, \beta_i)$. Then $D$ is countable and dense in $L^p(E)$. Hence $L^p(E)$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 
 ^prop-29-4
 
@@ -243,7 +243,7 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of positive length, so they are at $L^\infty$-distance $1$: uncountably many points, pairwise $1$ apart. Balls of radius $\frac12$ about them are disjoint, and a dense set would need a point in each. In $L^p$, $p < \infty$, the same two functions are at distance $(t-s)^{1/p}$, which is small when $t$ is close to $s$.
 
 > [!remark] Remark
-> The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is separable. Wu stressed that measure theory supplies the examples of functional analysis (“I would suggest you really study real methods … measure theory is becoming very useful now”): without $L^p$ the course has few examples beyond sequence spaces.
+> The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]]. Wu stressed that measure theory supplies the examples of functional analysis (“I would suggest you really study real methods … measure theory is becoming very useful now”): without $L^p$ the course has few examples beyond sequence spaces.
 
 ^rem-29-2
 

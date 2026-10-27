@@ -69,23 +69,25 @@ The spanning criterion in a picture: a point $z$ outside the closed subspace $Y 
 
 ## Separability of the Dual
 
+Recall that a normed linear space $X$ is **separable** if it has a countable dense subset ([[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Definition §28.1]]). For $1 \le p < \infty$ the spaces $\ell^p$ and $L^p(E)$ are separable, and so is $c_0$ (Propositions [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]] and [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]); $\ell^\infty$ and $L^\infty(E)$, $m(E) > 0$, are not (Propositions [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]] and [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]).
+
 > [!remark] Remark: Duals of the Sequence Spaces
 > Recall $(\ell^p)' = \ell^{p'}$ for $1 \le p < \infty$, $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). In particular:
 > - $(\ell^\infty)' \neq \ell^1$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]);
 > - $(c_0)' = \ell^1$, where $c_0 = \ell^\infty_0 = \{ (a_1, a_2, \ldots) : \lim_{n \to \infty} a_n = 0 \}$ with $\|a\| = \max_i |a_i| < \infty$ (homework; $c_0$ is the Banach space of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]);
 > - $(\ell^1)' = \ell^\infty$ (the case $p = 1$).
 >
-> The last example shows that a separable space can have a non-separable dual: $\ell^1$ is separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]]), but $\ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]). The other direction holds.
+> The last example shows that a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] space can have a non-separable dual: $\ell^1$ is separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]]), but $\ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]). The other direction holds.
 
 ^rem-37-2
 
 > [!theorem] Theorem §37.3: A Separable Dual Forces a Separable Space
-> Let $X$ be a normed linear space. If $X'$ is separable, then $X$ is separable.
+> Let $X$ be a normed linear space. If $X'$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], then $X$ is separable.
 
 ^thm-37-3
 
 > [!proof]+ Proof
-> If $X = \{0\}$ there is nothing to prove, so assume $X \neq \{0\}$. Since $X'$ is separable, there is a countable set $D = \{\ell_j\}_{j=1}^\infty \subset X'$ that is dense in $X'$. For each $j$ take $z_j \in X$ with
+> If $X = \{0\}$ there is nothing to prove, so assume $X \neq \{0\}$. Since $X'$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], there is a countable set $D = \{\ell_j\}_{j=1}^\infty \subset X'$ that is dense in $X'$. For each $j$ take $z_j \in X$ with
 >
 > $$
 > \|z_j\| = 1 \qquad \text{and} \qquad |\ell_j(z_j)| \ge \tfrac12 \|\ell_j\| .
@@ -122,17 +124,17 @@ The spanning criterion in a picture: a point $z$ outside the closed subspace $Y 
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]]
 
 > [!remark] Remark: The Converse Fails
-> The converse is false: $\ell^1$ is separable, while $(\ell^1)' = \ell^\infty$ is not. “Dual separable $\Rightarrow$ separable”, not conversely.
+> The converse is false: $\ell^1$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], while $(\ell^1)' = \ell^\infty$ is not. “Dual separable $\Rightarrow$ separable”, not conversely.
 
 ^rem-37-3
 
 > [!theorem] Corollary §37.4: The Duals of $\ell^\infty$ and $L^\infty$
-> $(\ell^\infty)'$ is not separable, and neither is $(L^\infty(E))'$ for $E \subset \mathbb{R}^n$ measurable with $m(E) > 0$. In particular $(\ell^\infty)' \neq \ell^1$ and $(L^\infty)' \neq L^1$.
+> $(\ell^\infty)'$ is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], and neither is $(L^\infty(E))'$ for $E \subset \mathbb{R}^n$ measurable with $m(E) > 0$. In particular $(\ell^\infty)' \neq \ell^1$ and $(L^\infty)' \neq L^1$.
 
 ^cor-37-4
 
 > [!proof]+ Proof
-> If $(\ell^\infty)'$ were separable, Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] would make $\ell^\infty$ separable, contradicting Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]. Likewise for $L^\infty(E)$, by Proposition [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]].
+> If $(\ell^\infty)'$ were [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] would make $\ell^\infty$ separable, contradicting Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]. Likewise for $L^\infty(E)$, by Proposition [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]].
 > Now $\ell^1$ and $L^1(E)$ are separable (Propositions [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]] and [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]), and separability is preserved by an isometric isomorphism $T$ (indeed by any linear bijection with $T$ and $T^{-1}$ bounded): if $D$ is countable and dense in $\ell^1$ and $\|x - d_n\| \to 0$ with $d_n \in D$, then $\|Tx - Td_n\| \le \|T\|\,\|x - d_n\| \to 0$, so $T(D)$ is countable and dense. Hence $(\ell^\infty)'$ is not isometrically isomorphic to $\ell^1$, nor $(L^\infty)'$ to $L^1$.
 
 ^pf-37-4
@@ -140,7 +142,7 @@ The spanning criterion in a picture: a point $z$ outside the closed subspace $Y 
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]], [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
 
 > [!remark] Remark: Every Identification is Ruled Out
-> This is stronger than Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]], which only showed that the particular map $a \mapsto \ell_a$, $\ell^1 \to (\ell^\infty)'$, is not onto. The corollary rules out *every* identification of $(\ell^\infty)'$ with $\ell^1$ as normed spaces, by a property (separability) that any such identification would preserve.
+> This is stronger than Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]], which only showed that the particular map $a \mapsto \ell_a$, $\ell^1 \to (\ell^\infty)'$, is not onto. The corollary rules out *every* identification of $(\ell^\infty)'$ with $\ell^1$ as normed spaces, by a property ([[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separability]]) that any such identification would preserve.
 
 ^rem-37-4
 
@@ -263,7 +265,7 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 ^ex-37-4
 
 > [!proof]+ Proof
-> Suppose it is: $\bigl( (C[0,1])' \bigr)' = C[0,1]$. Now $C[0,1]$ is separable, because the polynomials with rational coefficients are dense.
+> Suppose it is: $\bigl( (C[0,1])' \bigr)' = C[0,1]$. Now $C[0,1]$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], because the polynomials with rational coefficients are dense.
 > (By the Weierstrass approximation theorem, for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 above.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]), and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
 >
 > This is not true. For $s \in [0,1]$ define $\ell_s(f) = f(s)$ for $f \in C[0,1]$. Then $\ell_s : C[0,1] \to \mathbb{R}$ is linear, and
@@ -289,12 +291,12 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, equals $1$ up to $s$ and $-1$ from $t$ on, so $(\ell_s - \ell_t)(f) = f(s) - f(t) = 2$ (red). However close $s$ and $t$ are, $f$ can drop from $1$ to $-1$ between them, so the uncountably many point evaluations stay at mutual distance $2$.
 
 > [!theorem] Corollary §37.7: Separability of $X$ and $X'$ for Reflexive $X$
-> Let $X$ be reflexive. Then $X$ is separable if and only if $X'$ is separable. In particular $\ell^1$ is not reflexive.
+> Let $X$ be reflexive. Then $X$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] if and only if $X'$ is separable. In particular $\ell^1$ is not reflexive.
 
 ^cor-37-7
 
 > [!proof]+ Proof
-> If $X'$ is separable, so is $X$ (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]]; reflexivity is not needed). If $X$ is separable, then $X'' = i(X)$ is separable, being isometrically isomorphic to $X$, and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] applied to the normed space $X'$ shows that $X'$ is separable. For $\ell^1$: it is separable, but its dual is isometrically isomorphic to $\ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], with the bar-free pairing of the remark after it), which is not separable; so $\ell^1$ is not reflexive. The proof of Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]] is this argument for $X = C[0,1]$. A variant shows that $c_0$ is not reflexive: if it were, $c_0'' = i(c_0)$ would be separable like $c_0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), while $c_0'' \cong (\ell^1)' \cong \ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]). Here the corollary itself gives nothing, since $c_0$ and $c_0' \cong \ell^1$ are both separable.
+> If $X'$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so is $X$ (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]]; reflexivity is not needed). If $X$ is separable, then $X'' = i(X)$ is separable, being isometrically isomorphic to $X$, and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] applied to the normed space $X'$ shows that $X'$ is separable. For $\ell^1$: it is separable, but its dual is isometrically isomorphic to $\ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], with the bar-free pairing of the remark after it), which is not separable; so $\ell^1$ is not reflexive. The proof of Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]] is this argument for $X = C[0,1]$. A variant shows that $c_0$ is not reflexive: if it were, $c_0'' = i(c_0)$ would be separable like $c_0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), while $c_0'' \cong (\ell^1)' \cong \ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]). Here the corollary itself gives nothing, since $c_0$ and $c_0' \cong \ell^1$ are both separable.
 
 ^pf-37-7
 
@@ -302,7 +304,7 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 
 ![[m556-37-3.svg]]
 
-Separability along the chain $X \to X' \to X''$ (green: separable; red: not). By Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] a green box can only have green boxes to its left, so once red appears it stays red. A reflexive space has $X'' = i(X)$, so its first and last boxes have the same colour; the rows for $c_0$ and $\ell^1$ end in red after starting in green, so neither is reflexive. ($c_0' = \ell^1$ is the homework statement of [[§37 Separable Duals and Reflexive Spaces#^rem-37-2|Remark: Duals of the Sequence Spaces]].)
+[[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Separability]] along the chain $X \to X' \to X''$ (green: separable; red: not). By Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] a green box can only have green boxes to its left, so once red appears it stays red. A reflexive space has $X'' = i(X)$, so its first and last boxes have the same colour; the rows for $c_0$ and $\ell^1$ end in red after starting in green, so neither is reflexive. ($c_0' = \ell^1$ is the homework statement of [[§37 Separable Duals and Reflexive Spaces#^rem-37-2|Remark: Duals of the Sequence Spaces]].)
 
 ## Closed Subspaces of Reflexive Spaces
 

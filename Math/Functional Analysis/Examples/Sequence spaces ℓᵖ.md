@@ -22,7 +22,7 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 - For $p \neq 2$ the norm of $\ell^p$ does not come from an inner product ([[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24]])
 - In $\ell^1$ closest points need not be unique ([[§25 Projection and Orthogonal Decomposition#^rem-25-2|§25]])
 - The standard basis of $\ell^2$ is an orthonormal basis ([[§27 Orthonormal Sets and Bases#^ex-27-1|§27]])
-- $\ell^p$ is separable for $1 \le p < \infty$ ([[§29 Sequence and Function Spaces#^prop-29-1|§29]])
+- $\ell^p$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] for $1 \le p < \infty$ ([[§29 Sequence and Function Spaces#^prop-29-1|§29]])
 - $c_0$ is a separable Banach space ([[§29 Sequence and Function Spaces#^prop-29-2|§29]])
 - $\ell^\infty$ is not separable ([[§29 Sequence and Function Spaces#^prop-29-3|§29]])
 - The shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$: an isometry that is not an isomorphism ([[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|§28]])

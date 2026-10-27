@@ -4,7 +4,7 @@ type: example
 source: "[[Functional Analysis]]"
 tags: ["math556", "workhorse"]
 ---
-The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the direct continuum analogue of the $\mathbb{C}^n$ dot product; on an interval, $L^2[a,b]$ is the completion of the [[Continuous functions on a closed interval]] in the $L^2$ norm. They are the Hilbert spaces of functions that the course keeps returning to: $L^2[-1,1]$ splits orthogonally into even and odd functions, $L^2[0,2\pi]$ has the Fourier basis $e^{inx}/\sqrt{2\pi}$, and $L^2(\mathbb{R}^n)$ is the state space of the quantum-mechanics companion, separable but without position eigenvectors. As Wu stressed, measure theory supplies the examples of functional analysis: the Lebesgue theory of $L^p$ is in [[§34 Normed Linear Spaces and Lᵖ Spaces|551 §34]], and the sequence analogue $\ell^2$ is in [[Sequence spaces ℓᵖ]]. Its uses in MATH 556:
+The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the direct continuum analogue of the $\mathbb{C}^n$ dot product; on an interval, $L^2[a,b]$ is the completion of the [[Continuous functions on a closed interval]] in the $L^2$ norm. They are the Hilbert spaces of functions that the course keeps returning to: $L^2[-1,1]$ splits orthogonally into even and odd functions, $L^2[0,2\pi]$ has the Fourier basis $e^{inx}/\sqrt{2\pi}$, and $L^2(\mathbb{R}^n)$ is the state space of the quantum-mechanics companion, [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] but without position eigenvectors. As Wu stressed, measure theory supplies the examples of functional analysis: the Lebesgue theory of $L^p$ is in [[§34 Normed Linear Spaces and Lᵖ Spaces|551 §34]], and the sequence analogue $\ell^2$ is in [[Sequence spaces ℓᵖ]]. Its uses in MATH 556:
 
 *Revisit sections:* [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§29 Sequence and Function Spaces|Chapter 5]] · [[§38 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]]
 
@@ -17,7 +17,7 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-26-3|§26]])
 - The Fourier basis of $L^2[0,2\pi]$ ([[§27 Orthonormal Sets and Bases#^thm-27-11|§27]])
 - Fourier series converge in $L^2$, with Parseval's equality ([[§27 Orthonormal Sets and Bases#^rem-27-9|§27]])
-- $L^p(E)$, in particular $L^2(E)$, is separable ([[§29 Sequence and Function Spaces#^prop-29-4|§29]])
+- $L^p(E)$, in particular $L^2(E)$, is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-4|§29]])
 - $(L^2)' = L^2$ by the Riesz representation theorem ([[§31 Dual Spaces#^ex-31-1|§31]])
 - Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§40 The Completeness Relation#^ex-40-1|§40]])
 - A particle on a ring: the Fourier basis as momentum eigenstates ([[§40 The Completeness Relation#^ex-40-2|§40]])

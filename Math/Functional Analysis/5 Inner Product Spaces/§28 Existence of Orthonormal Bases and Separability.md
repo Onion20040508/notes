@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: inner products — Thread: dimension. Every Hilbert space has an orthonormal basis; the countable ones are exactly the bases of separable spaces.*
 
-Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthonormal Sets and Bases#^ex-27-1|§27.1]] and Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]]) have *countable* orthonormal bases. Wu announced for next lecture that every Hilbert space has an orthonormal basis — which by itself is “almost useless, because there are too many” — and, more usefully, that the countable ones are exactly the bases of separable spaces.
+Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthonormal Sets and Bases#^ex-27-1|§27.1]] and Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]]) have *countable* orthonormal bases. Wu announced for next lecture that every Hilbert space has an orthonormal basis — which by itself is “almost useless, because there are too many” — and, more usefully, that the countable ones are exactly the bases of [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] spaces.
 
 > [!remark] Remark: The Idea: Keep Adding Orthogonal Directions
 > Wu first described the construction informally. Assume $H \neq \{0\}$ and take $e_1 \in H$ with $\|e_1\| = 1$. If $H = \operatorname{span}\{e_1\}$, then $\{e_1\}$ is an orthonormal basis. If not, take $y_2 \in H$ with $y_2 \notin \operatorname{span}\{e_1\}$ and remove its component along $e_1$:
@@ -54,7 +54,7 @@ Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthon
 > - Computational version: [[§53 The Gram–Schmidt Process#^cor-53-2|235 Cor. §53.2]] (every nonzero subspace of ℝⁿ has an orthonormal basis, by Gram–Schmidt).
 
 > [!definition] Definition §28.1: Separable Space
-> A normed linear space $X$ is **separable** if it has a countable dense subset: a countable $D \subset X$ such that every $x \in X$ is a limit of a sequence in $D$. Completeness is not required.
+> A normed linear space $X$ is **[[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]]** if it has a countable dense subset: a countable $D \subset X$ such that every $x \in X$ is a limit of a sequence in $D$. Completeness is not required.
 >
 > *Lax: §5.1, definition of separable space*
 
@@ -108,7 +108,7 @@ Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthon
 > - Computational version: applied to $1, x, x^2, \ldots$ in $L^2[-1,1]$, Gram–Schmidt gives multiples of the Legendre polynomials, [[§60★ Spherical Coordinates; Legendre Polynomials#^def-60-3|341 Def. §60.3]], whose orthogonality is [[§60★ Spherical Coordinates; Legendre Polynomials#^prop-60-5|341 Prop. §60.5]].
 
 > [!theorem] Theorem §28.3: Separable Hilbert Spaces and Countable Bases
-> A Hilbert space $H$ has a countable orthonormal basis if and only if it is separable.
+> A Hilbert space $H$ has a countable orthonormal basis if and only if it is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 >
 > *Lax: §6.4, Thm $9'$*
 
@@ -173,10 +173,10 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 *Uses:* [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|§28.2]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]
 
 > [!remark]- Connections
-> - Every orthonormal set in a separable Hilbert space is countable, not just this one: [[§41 Position Eigenstates and Continuous Resolutions#^prop-41-1|§41.1]].
+> - Every orthonormal set in a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space is countable, not just this one: [[§41 Position Eigenstates and Continuous Resolutions#^prop-41-1|§41.1]].
 
 > [!remark] Remark
-> The dense set $D$ is used twice, for different purposes: its span supplies the orthonormal vectors, and its density supplies the approximating sequence in Step 3. Only finite linear combinations appear anywhere — the limit is taken in the inner product, not in the expansion. Compare Proposition [[§41 Position Eigenstates and Continuous Resolutions#^prop-41-1|§41.1]]: in a separable Hilbert space *every* orthonormal set is countable, not just the one constructed here.
+> The dense set $D$ is used twice, for different purposes: its span supplies the orthonormal vectors, and its density supplies the approximating sequence in Step 3. Only finite linear combinations appear anywhere — the limit is taken in the inner product, not in the expansion. Compare Proposition [[§41 Position Eigenstates and Continuous Resolutions#^prop-41-1|§41.1]]: in a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space *every* orthonormal set is countable, not just the one constructed here.
 
 ^rem-28-2
 
@@ -242,11 +242,11 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > - Finite-dimensional analogue: vector spaces of the same dimension are isomorphic, [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]], via coordinates [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]].
 
 > [!remark] Remark
-> The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a separable Hilbert space can therefore be checked on $\ell^2$, and the [[§27 Orthonormal Sets and Bases#^rem-27-9|earlier remark]] that $L^2[0, 2\pi]$ with the [[§27 Orthonormal Sets and Bases#^thm-27-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
+> The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space can therefore be checked on $\ell^2$, and the [[§27 Orthonormal Sets and Bases#^rem-27-9|earlier remark]] that $L^2[0, 2\pi]$ with the [[§27 Orthonormal Sets and Bases#^thm-27-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
 
 ^rem-28-4
 
 > [!remark] Remark
-> On the board: “isomorphic either to $\mathbb{R}^n$, $n \in \mathbb{N}$, or $\ell^2$” — the real case. Over $\mathbb{C}$ the finite-dimensional models are $\mathbb{C}^n$, and $n = 0$ covers $H = \{0\}$. By Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]] a separable $H$ has a countable orthonormal basis; the finite case gives $\mathbb{F}^n$ and the infinite case $\ell^2$.
+> On the board: “isomorphic either to $\mathbb{R}^n$, $n \in \mathbb{N}$, or $\ell^2$” — the real case. Over $\mathbb{C}$ the finite-dimensional models are $\mathbb{C}^n$, and $n = 0$ covers $H = \{0\}$. By Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]] a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] $H$ has a countable orthonormal basis; the finite case gives $\mathbb{F}^n$ and the infinite case $\ell^2$.
 
 ^rem-28-5

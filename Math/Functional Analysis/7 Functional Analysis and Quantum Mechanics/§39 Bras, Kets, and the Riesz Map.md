@@ -16,7 +16,7 @@ tags: [functional-analysis, math556, companion]
 > \langle y | x \rangle = (x, y) .
 > $$
 >
-> The state space of a quantum system is a Hilbert space $H$ over $\mathbb{C}$, in practice separable; for a particle in $\mathbb{R}^n$ it is $L^2(\mathbb{R}^n)$.
+> The state space of a quantum system is a Hilbert space $H$ over $\mathbb{C}$, in practice [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]]; for a particle in $\mathbb{R}^n$ it is $L^2(\mathbb{R}^n)$.
 
 ^rem-39-1
 
