@@ -142,7 +142,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 ^prop-65-5
 
 > [!proof]+ Proof (to be filled)
-> Announced in Lecture 22 and to be proved with partitions of unity ([[§66 Partitions of Unity|§66]]) — “right now we're sort of buying on credit. We have to pay the bill.”
+> Announced in Lecture 22 and to be proved with partitions of unity ([[§66 Partitions of Unity|§66]]) — “right now we're sort of buying on credit. We have to pay the bill.” Uribe's email of Oct 26: “On Wednesday I will discuss the construction of exhaustion functions, which is Proposition 2.28.”
 
 ^pf-65-5
 
@@ -200,7 +200,7 @@ A student asked whether the last coordinate is there for injectivity. “This en
 
 *(Not from lecture; figure added.)* Why the noncompact embedding is made proper. The curve $\gamma(t) = \big(\sin 2s, \sin s\big)$, $s = \pi + 2\arctan t$, is an injective immersion $\mathbb{R} \to \mathbb{R}^2$, but both ends approach $\gamma(0)$: the preimage of a small closed disc $\overline{B}$ about $\gamma(0)$ contains two half-lines, so $\gamma$ is not proper, and its image is not an embedded submanifold near $\gamma(0)$. Adding an exhaustion function as an extra coordinate (“this entry here makes it proper”) pulls the ends apart in height, which is what Proposition [[§65 The Whitney Embedding Theorem#^prop-65-6|§65.6]] does with $f$.
 
-*The projection step*, only indicated: “since you now have a noncompact manifold, the thing can be all over the place.” $\mathbb{R}^{2(2m+1)}$ is diffeomorphic to an open ball, so the first two blocks can be squeezed into a ball, and with $f$ as the last coordinate the image lies in a tube, ball $\times\ \mathbb{R}$; “once you have it in a tube, you can start controlling the projections. The projections have to be proper.” Reading: Lee, Lemma 6.14 and its figure.
+*The projection step*, only indicated: “since you now have a noncompact manifold, the thing can be all over the place.” $\mathbb{R}^{2(2m+1)}$ is diffeomorphic to an open ball, so the first two blocks can be squeezed into a ball, and with $f$ as the last coordinate the image lies in a tube, ball $\times\ \mathbb{R}$; “once you have it in a tube, you can start controlling the projections. The projections have to be proper.” Reading: Lee, Lemma 6.14 and its figure; Uribe's email of Oct 26 assigns Lemmas 6.13 and 6.14 and Theorem 6.15 for the noncompact case.
 
 > [!theorem] Theorem §65.7: The Whitney Embedding and Immersion Theorems
 > Let $M$ be a smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
