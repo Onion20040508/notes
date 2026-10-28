@@ -141,8 +141,8 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 ^prop-65-5
 
-> [!proof]+ Proof (to be filled)
-> Announced in Lecture 22 and to be proved with partitions of unity ([[§66 Partitions of Unity|§66]]) — “right now we're sort of buying on credit. We have to pay the bill.” Uribe's email of Oct 26: “On Wednesday I will discuss the construction of exhaustion functions, which is Proposition 2.28.”
+> [!proof]+ Proof (Lecture 23)
+> Announced in Lecture 22 and proved with partitions of unity — “right now we're sort of buying on credit. We have to pay the bill.” Uribe's email of Oct 26: “On Wednesday I will discuss the construction of exhaustion functions, which is Proposition 2.28.” The proof is in [[§66 Partitions of Unity|§66]], after partitions of unity ([[§66 Partitions of Unity|§66]]).
 
 ^pf-65-5
 

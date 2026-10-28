@@ -11,7 +11,9 @@ tags: [differentiable-manifolds, hub]
 - [[§66 Partitions of Unity#^thm-66-1|Theorem §66.1: Existence of Partitions of Unity]], in [[§66 Partitions of Unity]]
 
 ## Its proof uses
-- (no proof in the notes)
+- [[§56 Vector Fields#^prop-56-4|Proposition §56.4: Bump Functions Exist]]
+- [[§66 Partitions of Unity#^lem-66-2|Lemma §66.2: Plateau Functions]]
+- [[§66 Partitions of Unity#^thm-66-4|Theorem §66.4: Manifolds Are Paracompact]]
 
 ## Used in (Differentiable Manifolds)
 - (not cited later in the course)

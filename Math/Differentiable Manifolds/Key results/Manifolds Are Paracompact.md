@@ -16,7 +16,7 @@ tags: [differentiable-manifolds, hub]
 - [[§66 Partitions of Unity#^lem-66-3|Lemma §66.3: Exhaustion by Compact Sets]]
 
 ## Used in (Differentiable Manifolds)
-- [[§66 Partitions of Unity#^lem-66-5|Lemma §66.5: Regular Coordinate Balls Form a Basis]]
+- [[§66 Partitions of Unity#^lem-66-6|Lemma §66.6: Countable Precompact Covers]]
 
 ## Connections
 - The proof uses an [[§66 Partitions of Unity#^lem-66-3|exhaustion by compact sets]] and refines by basis elements, e.g. regular coordinate balls ([[§66 Partitions of Unity#^lem-66-5|Lemma §66.5]]).

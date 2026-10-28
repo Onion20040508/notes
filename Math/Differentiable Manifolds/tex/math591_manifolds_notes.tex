@@ -229,7 +229,7 @@
 These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the \emph{equations} thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\SL(n,\mathbb{R})$, $\Ogp(n)$, $\Ugp(n)$. Along the \emph{quotients} thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters~1 and~2 develop the two threads side by side, and in Chapters~3 and~4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the \emph{geometric} stage). A manifold built by quotients has none, and needs the \emph{abstract} tangent space of derivations. Between them sits a \emph{linear} stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first (\ref{sec:submersions}): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds (\ref{sec:submanifolds}, \ref{sec:rvt-manifolds}); the submersions that are locally products are the fibrations (\ref{sec:fibrations}); and the tangent spaces themselves assemble into one, the tangent bundle (\ref{sec:tangent-bundle}). Immersions, the maps dual to submersions, begin a new arc (\ref{sec:immersions}), which leads to embeddings, the immersions whose images are submanifolds (\ref{sec:embeddings}).
 
 \begin{center}
-\begin{tikzpicture}[scale=0.92, transform shape]
+\begin{tikzpicture}[scale=0.82, transform shape]
 \node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (F) at (4.6,0) {\textbf{Foundations} \ref*{sec:review}--\ref*{sec:new-spaces}\\ topological manifolds; subspaces and products};
 \node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (E1) at (0,-1.9) {\textbf{Equations} \ref*{sec:rvt}\\ regular value theorem};
 \node[draw=violet!70!black, fill=violet!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (Q1) at (9.2,-1.9) {\textbf{Quotients} \ref*{sec:quotient-spaces}--\ref*{sec:open-quotients}\\ quotient spaces, $\mathbb{CP}^n$};
@@ -272,8 +272,8 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[->, thick, gray!70] (SM) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {images} (IM);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-6.8) {Ch.~3};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-10.9) {Ch.~4};
-\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-15.6) {Ch.~5};
-\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-20.0) {Ch.~6};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-15.6) {Ch.~5--6};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-20.0) {Ch.~7};
 \draw[gray!35, dashed] (-2.5,-18.95) -- (11.4,-18.95);
 \draw[gray!35, dashed] (-2.5,-3.05) -- (11.4,-3.05);
 \draw[gray!35, dashed] (-2.5,-4.8) -- (11.4,-4.8);
@@ -281,16 +281,21 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[gray!35, dashed] (-2.5,-12.75) -- (11.4,-12.75);
 \node[draw=red!60!black, fill=red!4, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (LG) at (4.6,-22.3) {\textbf{Vector fields and Lie groups} \ref*{sec:fields}--\ref*{sec:lie-groups}\\ vector fields, differential operators, the Lie bracket, related fields, Lie groups};
 \draw[->, thick, gray!70] (BF) -- node[pos=0.28, font=\scriptsize, fill=white, inner sep=1.5pt] {sections of $TM$} (LG);
-\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-22.3) {Ch.~7};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-22.3) {Ch.~8};
 \draw[gray!35, dashed] (-2.5,-21.15) -- (11.4,-21.15);
-\node[draw=orange!70!black, fill=orange!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (SA) at (4.6,-24.6) {\textbf{Sard's theorem} \ref*{sec:measure-zero}--\ref*{sec:sard}\\ sets of measure zero;\\ almost every value is regular};
+\node[draw=orange!70!black, fill=orange!6, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (SA) at (4.6,-24.6) {\textbf{Sard's theorem} \ref*{sec:measure-zero}--\ref*{sec:partitions-of-unity}\\ sets of measure zero;\\ almost every value is regular;\\ Whitney; partitions of unity};
 \draw[->, thick, gray!70] (SM.west) -- ++(-0.35,0) |- node[pos=0.75, font=\scriptsize, fill=white, inner sep=1.5pt] {regular values} (SA.west);
-\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-24.6) {Ch.~8};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-24.6) {Ch.~9};
 \draw[gray!35, dashed] (-2.5,-23.45) -- (11.4,-23.45);
+\node[draw=red!60!black, fill=red!4, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (IC) at (4.6,-26.3) {\textbf{Integral curves and flows} \ref*{sec:integral-curves}--\ref*{sec:flows}\\ vector fields as generators of dynamics};
+\draw[->, thick, red!45] (LG.east) -- ++(0.6,0) |- node[pos=0.25, font=\scriptsize, fill=white, inner sep=1.5pt, rotate=90] {fields as velocities} (IC.east);
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-26.3) {Ch.~10};
+\draw[gray!35, dashed] (-2.5,-25.6) -- (11.4,-25.6);
 \end{tikzpicture}
 \end{center}
 
 The labels on the arrows are the bridges. The regular value theorem (\ref{sec:rvt}) turns equations into manifolds, and graph charts (Proposition~\ref{prop:level-set-smooth}) make them smooth. The differential between vector spaces (\ref{sec:vs-differential}) gives $T^{\geo}_pM = \ker F'(p)$ (Theorem~\ref{thm:tangent-kernel}). For the quotient-built manifolds, atlases are written down by hand (\ref{sec:projective-smooth}), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ (Theorem~\ref{thm:ambient-abstract}); the abstract differential agrees with the Jacobian (Proposition~\ref{prop:differential-agree}), and on any manifold the matrix of $F_{*p}$ in coordinates \emph{is} the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}), because partial derivatives upstairs are defined downstairs (Proposition~\ref{prop:upstairs-downstairs}); and every abstract tangent vector is a velocity after all (Theorem~\ref{thm:every-vector-velocity}). At the bottom, the submersion normal form (Theorem~\ref{thm:submersion-normal-form}) proves the regular value theorem for manifolds (Theorem~\ref{thm:rvt-manifolds}), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles (\ref{sec:fibrations}--\ref{sec:tangent-bundle}); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds (\ref{sec:immersions}), and globally so when they are embeddings (\ref{sec:embeddings}). Each section opens with a line placing it on this map.
+
 
 
 \part{Topological and Smooth Manifolds}
@@ -19150,8 +19155,8 @@ Every smooth manifold admits an exhaustion function.
 \leeref{Proposition 2.28}
 \end{propbox}
 
-\begin{proof}[Proof (to be filled)]
-Announced in Lecture~22 and to be proved with partitions of unity (\ref{sec:partitions-of-unity}) --- ``right now we're sort of buying on credit. We have to pay the bill.'' Uribe's email of Oct 26: ``On Wednesday I will discuss the construction of exhaustion functions, which is Proposition 2.28.''
+\begin{proof}[Proof (Lecture~23)]
+Announced in Lecture~22 and proved with partitions of unity --- ``right now we're sort of buying on credit. We have to pay the bill.'' Uribe's email of Oct 26: ``On Wednesday I will discuss the construction of exhaustion functions, which is Proposition 2.28.'' The proof is in \ref{sub:exhaustion-proof}, after partitions of unity (\ref{sec:partitions-of-unity}).
 \end{proof}
 
 \textit{Slicing $M$ into compact pieces.} ``The idea is going to be that we're going to use these level sets \ldots\ to slice the manifold into compact pieces. They will have a boundary, but I'm going to ignore that. And basically, we're going to be able to embed each piece and keep track of overlaps.'' Let $f$ be an exhaustion function. Its singular values have measure zero (Theorem~\ref{thm:sard}), so every interval contains regular values; for each $i = 0, 1, 2, \ldots$ pick regular values $a_i, b_i$ with $i < a_i < b_i < i + 1$, and put
@@ -28260,6 +28265,7 @@ In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{
 \textit{(Lecture~22 sketched the noncompact case; the rest is assigned reading.)} For $M$ compact this is Theorem~\ref{thm:whitney-compact}. In general, take an exhaustion function $f$ (Proposition~\ref{prop:exhaustion-exists}) and slice $M$ into the compact pieces $E_i$ above. Each $E_i$, a compact manifold with boundary, embeds in $\mathbb{R}^{2m+1}$ by the method of Theorem~\ref{thm:whitney-compact} (manifolds with boundary are not treated in these notes), and the cutoffs $\rho_i$ come from partitions of unity (Theorem~\ref{thm:partition-of-unity}, \ref{sec:partitions-of-unity}); Proposition~\ref{prop:noncompact-embedding} then gives a proper embedding $M \to \mathbb{R}^{2(2m+1)+1}$. Lowering the dimension to $2m + 1$ needs projections that stay proper: squeeze the image into a tube, ball $\times\ \mathbb{R}$, and project as in Lemmas~\ref{lem:projection-injective}--\ref{lem:projection-immersion} (Lee, Lemma~6.14 and Theorem~6.15). The immersion into $\mathbb{R}^{2m}$ is Lee, Theorem~6.18; in the compact case it is part of the homework.
 \end{proof}
 
+
 % ============================================================================
 % SECTION: PARTITIONS OF UNITY (Lecture 22, Mon Oct 26, 2026)
 % ============================================================================
@@ -28416,7 +28422,7 @@ Let $\{U_\alpha\}$ be an open cover of $M$. The regular coordinate balls $B$ who
 \textit{(Filled in.)} Let $W$ be open and $x \in W$, say $x \in U_\alpha$. Take a chart $(V, \psi)$ at $x$, restrict it to $U = V \cap W \cap U_\alpha$, and translate so that $\varphi = \psi|_U - \psi(x)$ sends $x$ to $0$. $\varphi(U)$ is open, so it contains some $B_\varepsilon(0)$; for $0 < \delta < \varepsilon$, $B = \varphi^{-1}(B_\delta(0))$ is a regular coordinate ball with $x \in B \subseteq U \subseteq W$, and its chart domain $U$ lies in $U_\alpha$.
 \end{proof}
 
-\begin{proof}[Proof of Theorem~\ref{thm:partition-of-unity} (begun in Lecture~22, to be completed in Lecture~23)]
+\begin{proof}[Proof of Theorem~\ref{thm:partition-of-unity} (begun in Lecture~22; completed, following Lee)]
 \textit{(The lecture's steps; Uribe stopped here: ``I will finish the proof next time.'')} By Theorem~\ref{thm:manifolds-paracompact} with the basis of Lemma~\ref{lem:regular-balls-basis}, there is a countable, locally finite refinement $\{B_i\}_{i \in \mathbb{N}}$ of $\{U_\alpha\}$ covering $M$, each $B_i$ a regular coordinate ball with chart $(U_i, \varphi_i)$, $\varphi_i(B_i) = B_{\delta_i}(0)$, $B_{\varepsilon_i}(0) \subseteq \varphi_i(U_i)$, and $U_i \subseteq U_{\alpha(i)}$. ``Pull back the function $f$ from the first part'' (Lemma~\ref{lem:plateau}, with $\delta_i < \varepsilon_i$) by $\varphi_i$, and extend it by zero: this gives a smooth $f_i : M \to \mathbb{R}$, as in step~3 of the proof of Proposition~\ref{prop:bump-existence}, with
 \[
 f_i|_{B_i} \equiv 1, \qquad \operatorname{supp} f_i \subseteq U_i \subseteq U_{\alpha(i)} .
@@ -28428,10 +28434,316 @@ g_i = \frac{f_i}{\sum_j f_j}, \qquad \text{so that} \qquad \sum_i g_i \equiv 1, 
 \]
 ``What we don't have [yet] is the index'': grouping the $g_i$ by $\alpha(i)$ re-indexes the partition by $A$.
 
-\emph{To be completed in Lecture~23}: that the sums are locally finite, so that $\sum_j f_j$, the $g_i$ and the $\chi_\alpha$ are smooth, and that $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. One point to watch there: local finiteness of $\{B_i\}$ does not by itself make $\{\operatorname{supp} f_i\}$ locally finite, since $\operatorname{supp} f_i$ sits in the larger ball $\varphi_i^{-1}(B_{\varepsilon_i}(0))$, not in $\overline{B_i}$. Lee's proof of Theorem~2.23 avoids this by taking $f_i$ positive on $B_i$ and supported in $\overline{B_i}$, and using that the closures of a locally finite family are locally finite.
+\textit{(Lecture~23 went straight on to an application, \ref{sub:exhaustion-proof}; the rest is the assigned reading, Lee's proof of Theorem~2.23. Completed here, following Lee.)} What remains: the sums are locally finite, so that $\sum_j f_j$, the $g_i$ and the $\chi_\alpha$ are smooth, and $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. One point needs care. Local finiteness of $\{B_i\}$ does not by itself make $\{\operatorname{supp} f_i\}$ locally finite, since $\operatorname{supp} f_i$ sits in the larger ball $\varphi_i^{-1}(B_{\varepsilon_i}(0))$, not in $\overline{B_i}$. Lee avoids this by choosing $f_i$ positive on $B_i$ and supported in $\overline{B_i}$. That is the only change to the lecture's construction: $f_i$ is no longer $\equiv 1$ on $B_i$, only positive there, which is all the division needs.
+
+\emph{Two facts about a locally finite family $\{A_i\}$ of subsets.} (a) $\{\overline{A_i}\}$ is locally finite: an open set meeting $\overline{A_i}$ meets $A_i$. (b) If each $A_i$ is closed, then $\bigcup_i A_i$ is closed: for $p \notin \bigcup_i A_i$, take an open $W \ni p$ meeting only $A_{i_1}, \ldots, A_{i_k}$; then $W \setminus (A_{i_1} \cup \cdots \cup A_{i_k})$ is an open neighbourhood of $p$ missing every $A_i$.
+
+\emph{The new $f_i$.} With $h$ as in step~1 of the proof of Proposition~\ref{prop:bump-existence} ($h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$), put
+\[
+f_i = h\big(\delta_i^2 - |\varphi_i|^2\big) \ \text{ on } U_i, \qquad f_i = 0 \ \text{ on } M \setminus U_i .
+\]
+$f_i > 0$ exactly on $B_i = \varphi_i^{-1}(B_{\delta_i}(0))$. The set $K_i = \varphi_i^{-1}\big(\overline{B}_{\delta_i}(0)\big)$ is compact ($\overline{B}_{\delta_i}(0) \subseteq B_{\varepsilon_i}(0) \subseteq \varphi_i(U_i)$, and $\varphi_i^{-1}$ is continuous), hence closed in $M$. So $f_i$ is smooth, as it is smooth on the open set $U_i$ and zero on the open set $M \setminus K_i$, which together cover $M$ (as in step~3 of the proof of Proposition~\ref{prop:bump-existence}). Its support is $\overline{B_i} = K_i$: $K_i$ is closed and contains $B_i$, and every point of $K_i$ is a limit of points of $B_i$.
+
+\emph{Smoothness.} By (a) the supports $\overline{B_i}$ form a locally finite family. Each $p$ has an open neighbourhood $W$ on which all but finitely many $f_j$ vanish, so on $W$ the sum $\sum_j f_j$ is a finite sum of smooth functions; hence $\sum_j f_j$ is smooth. It is positive everywhere, because the $B_i$ cover $M$ and $f_i > 0$ on $B_i$. So $g_i = f_i / \sum_j f_j$ is smooth, $0 \le g_i \le 1$, $\operatorname{supp} g_i = \overline{B_i} \subseteq U_i \subseteq U_{\alpha(i)}$, and $\sum_i g_i \equiv 1$.
+
+\emph{Re-indexing.} For $\alpha \in A$ let $\chi_\alpha = \sum_{i : \alpha(i) = \alpha} g_i$, with the empty sum $0$. On $W$ as above, only finitely many terms are nonzero, so $\chi_\alpha$ is smooth; and $0 \le \chi_\alpha \le \sum_i g_i = 1$. Each $i$ has exactly one $\alpha(i)$, so $\sum_\alpha \chi_\alpha = \sum_i g_i \equiv 1$. The set $\{\chi_\alpha \neq 0\}$ lies in $\bigcup_{\alpha(i) = \alpha} \overline{B_i}$, which is closed by (b), so
+\[
+\operatorname{supp}\chi_\alpha \subseteq \bigcup_{i \,:\, \alpha(i) = \alpha} \overline{B_i} \subseteq U_\alpha .
+\]
+Finally, $W$ meets $\operatorname{supp}\chi_\alpha$ only if it meets some $\overline{B_i}$ with $\alpha(i) = \alpha$, and $W$ meets only finitely many $\overline{B_i}$. So $\{\operatorname{supp}\chi_\alpha\}$ is locally finite, and $\{\chi_\alpha\}_{\alpha \in A}$ is a partition of unity subordinate to $\{U_\alpha\}$.
 \end{proof}
 
 \textbf{Transcription note (Lecture 22).} Page~58 of the handwritten notes states the theorem ``if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)''; as stated it is false in general, and local compactness, which manifolds have, is the missing hypothesis (Remark~\ref{rem:paracompact-hypotheses}).
+
+% ============================================================================
+% Lecture 23 (Wed Oct 28, 2026): exhaustion functions from partitions of unity
+% ============================================================================
+
+\subsection{An Application: Exhaustion Functions}\label{sub:exhaustion-proof}
+
+\textit{Lecture 23. ``I do want to tell you about the application of partitions of unity that we need for the sketch of the Whitney embedding theorem, the noncompact case'': the existence of exhaustion functions (Definition~\ref{def:exhaustion-function}, Proposition~\ref{prop:exhaustion-exists}). ``The proof will be quick using partitions of unity.''}
+
+The proof starts from a countable cover by open sets with compact closures, which was set as an exercise.
+
+\begin{lembox}[Countable Precompact Covers]\thmlabel{lem:precompact-cover}
+Every manifold $M$ has a countable open cover $\{V_i\}_{i \ge 1}$ such that $\overline{V_i}$ is compact for every $i$.
+\leeref{Proposition 2.28 (proof)}
+\end{lembox}
+
+\begin{proof}
+\textit{(Set in Lecture~23 as an exercise: ``The argument that I have in mind uses paracompactness. Maybe you have another way of doing it.'' Filled in, by paracompactness.)} Every $p \in M$ has an open neighbourhood $W_p$ with $\overline{W_p}$ compact (Proposition~\ref{prop:locally-compact}). By Theorem~\ref{thm:manifolds-paracompact} the cover $\{W_p\}_{p \in M}$ has a countable open refinement $\{V_i\}$ covering $M$; if it is finite, repeat one of its sets to index it by $i \ge 1$. Each $V_i$ lies in some $W_{p(i)}$, so $\overline{V_i}$ is a closed subset of the compact set $\overline{W_{p(i)}}$, hence compact. (Another way: the countable basis of precompact sets built in the proof of Lemma~\ref{lem:compact-exhaustion} is already such a cover. Local finiteness of the refinement is not needed here.)
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:exhaustion-exists}]
+\textit{(Lecture~23.)} Let $\{V_i\}_{i \ge 1}$ be as in Lemma~\ref{lem:precompact-cover}, and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem~\ref{thm:partition-of-unity}). Reviewing what this means (Definition~\ref{def:partition-of-unity}):
+\begin{enumerate}[nosep]
+\item $0 \le \chi_i \le 1$ for all $i$;
+\item $\{\operatorname{supp}\chi_i\}$ is locally finite;
+\item $\sum_i \chi_i(p) = 1$ for all $p \in M$ --- a finite sum at each point, by (2);
+\item $\operatorname{supp}\chi_i \subseteq V_i$ for all $i$ --- ``that's the subordinate part.''
+\end{enumerate}
+``The clever construction'' is to define
+\[
+f = \sum_{j \ge 1} j\, \chi_j .
+\]
+``If you don't put the $j$, you get one. But the clever idea is to put $j$ in front.'' Again this is a locally finite sum of smooth functions, so $f$ is smooth; and $f \ge 0$ because the $\chi_j$ are nonnegative (in fact $f \ge \sum_j \chi_j = 1$). It remains to show that the sublevel sets are compact.
+
+\emph{Claim.} For every $c \in \mathbb{R}$ and every integer $N \ge 0$ with $N \ge c$,
+\[
+f^{-1}\big((-\infty, c]\big) \subseteq \bigcup_{i=1}^N V_i \subseteq \bigcup_{i=1}^N \overline{V_i} .
+\]
+\emph{The claim implies the proposition.} $\bigcup_{i=1}^N \overline{V_i}$ is a finite union of compact sets, so it is compact. $f^{-1}((-\infty, c])$ is closed, since $f$ is continuous, and a closed subset of a compact set is compact.
+
+\emph{Proof of the claim.} We prove the contrapositive. Let $p \notin \bigcup_{i=1}^N V_i$. For $i = 1, \ldots, N$, $p \notin V_i \supseteq \operatorname{supp}\chi_i$, so $\chi_i(p) = 0$. Hence the sum defining $f(p)$ really starts at $N + 1$, and since every coefficient is at least $N + 1$ (``an $\ell^1$--$\ell^\infty$ estimate, or whatever''),
+\[
+f(p) = \sum_{j = N+1}^\infty j\, \chi_j(p) \ \ge\ (N + 1) \underbrace{\sum_{j = N+1}^\infty \chi_j(p)}_{=\, \sum_j \chi_j(p) \,=\, 1} = N + 1 > c .
+\]
+So $p \notin f^{-1}((-\infty, c])$.
+\end{proof}
+
+\begin{rembox}[Why the Closures]\label{rem:why-closures}
+A student asked whether the contrapositive should use the union of the \emph{closures}. Uribe: the proof shows the inclusion in $\bigcup_{i \le N} V_i$, and that ``is contained in the union of the closures, so it doesn't make a difference.'' The open sets give the stronger statement; the closures are where compactness lives, since the $V_i$ were chosen so that the $\overline{V_i}$ are compact, and $\bigcup_{i \le N} V_i$ alone need not be compact. ``It is important that in the end I end up in here.'' Lee runs the contrapositive from $p \notin \bigcup_{j \le N} \overline{V_j}$ instead (Proposition~2.28); either way the sublevel set lands inside the compact set $\bigcup_{j \le N} \overline{V_j}$.
+\end{rembox}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[->, gray!60] (-4.4,0) -- (4.6,0) node[right, font=\scriptsize, text=black] {$M = \mathbb{R}$};
+\draw[->, gray!60] (0,-0.05) -- (0,3.6);
+\foreach \x in {-3,-2,-1,1,2,3} { \draw[gray!60] (\x,-0.06) -- (\x,0.06); }
+\node[font=\scriptsize, below] at (3,-0.05) {$3$}; \node[font=\scriptsize, below] at (-3,-0.05) {$-3$};
+\draw[thick, black] plot coordinates {(-4.200,2.750) (-4.175,2.750) (-4.150,2.750) (-4.125,2.750) (-4.100,2.750) (-4.075,2.750) (-4.050,2.750) (-4.025,2.750) (-4.000,2.750) (-3.975,2.750) (-3.950,2.750) (-3.925,2.749) (-3.900,2.746) (-3.875,2.735) (-3.850,2.714) (-3.825,2.685) (-3.800,2.649) (-3.775,2.608) (-3.750,2.565) (-3.725,2.520) (-3.700,2.475) (-3.675,2.430) (-3.650,2.385) (-3.625,2.342) (-3.600,2.301) (-3.575,2.265) (-3.550,2.236) (-3.525,2.215) (-3.500,2.204) (-3.475,2.201) (-3.450,2.200) (-3.425,2.200) (-3.400,2.200) (-3.375,2.200) (-3.350,2.200) (-3.325,2.200) (-3.300,2.200) (-3.275,2.200) (-3.250,2.200) (-3.225,2.200) (-3.200,2.200) (-3.175,2.200) (-3.150,2.200) (-3.125,2.200) (-3.100,2.200) (-3.075,2.200) (-3.050,2.200) (-3.025,2.200) (-3.000,2.200) (-2.975,2.200) (-2.950,2.200) (-2.925,2.199) (-2.900,2.196) (-2.875,2.185) (-2.850,2.164) (-2.825,2.135) (-2.800,2.099) (-2.775,2.058) (-2.750,2.015) (-2.725,1.970) (-2.700,1.925) (-2.675,1.880) (-2.650,1.835) (-2.625,1.792) (-2.600,1.751) (-2.575,1.715) (-2.550,1.686) (-2.525,1.665) (-2.500,1.654) (-2.475,1.651) (-2.450,1.650) (-2.425,1.650) (-2.400,1.650) (-2.375,1.650) (-2.350,1.650) (-2.325,1.650) (-2.300,1.650) (-2.275,1.650) (-2.250,1.650) (-2.225,1.650) (-2.200,1.650) (-2.175,1.650) (-2.150,1.650) (-2.125,1.650) (-2.100,1.650) (-2.075,1.650) (-2.050,1.650) (-2.025,1.650) (-2.000,1.650) (-1.975,1.650) (-1.950,1.650) (-1.925,1.649) (-1.900,1.646) (-1.875,1.635) (-1.850,1.614) (-1.825,1.585) (-1.800,1.549) (-1.775,1.508) (-1.750,1.465) (-1.725,1.420) (-1.700,1.375) (-1.675,1.330) (-1.650,1.285) (-1.625,1.242) (-1.600,1.201) (-1.575,1.165) (-1.550,1.136) (-1.525,1.115) (-1.500,1.104) (-1.475,1.101) (-1.450,1.100) (-1.425,1.100) (-1.400,1.100) (-1.375,1.100) (-1.350,1.100) (-1.325,1.100) (-1.300,1.100) (-1.275,1.100) (-1.250,1.100) (-1.225,1.100) (-1.200,1.100) (-1.175,1.100) (-1.150,1.100) (-1.125,1.100) (-1.100,1.100) (-1.075,1.100) (-1.050,1.100) (-1.025,1.100) (-1.000,1.100) (-0.975,1.100) (-0.950,1.100) (-0.925,1.097) (-0.900,1.083) (-0.875,1.054) (-0.850,1.013) (-0.825,0.966) (-0.800,0.917) (-0.775,0.870) (-0.750,0.825) (-0.725,0.783) (-0.700,0.744) (-0.675,0.708) (-0.650,0.674) (-0.625,0.643) (-0.600,0.615) (-0.575,0.591) (-0.550,0.572) (-0.525,0.559) (-0.500,0.553) (-0.475,0.550) (-0.450,0.550) (-0.425,0.550) (-0.400,0.550) (-0.375,0.550) (-0.350,0.550) (-0.325,0.550) (-0.300,0.550) (-0.275,0.550) (-0.250,0.550) (-0.225,0.550) (-0.200,0.550) (-0.175,0.550) (-0.150,0.550) (-0.125,0.550) (-0.100,0.550) (-0.075,0.550) (-0.050,0.550) (-0.025,0.550) (0.000,0.550) (0.025,0.550) (0.050,0.550) (0.075,0.550) (0.100,0.550) (0.125,0.550) (0.150,0.550) (0.175,0.550) (0.200,0.550) (0.225,0.550) (0.250,0.550) (0.275,0.550) (0.300,0.550) (0.325,0.550) (0.350,0.550) (0.375,0.550) (0.400,0.550) (0.425,0.550) (0.450,0.550) (0.475,0.550) (0.500,0.553) (0.525,0.559) (0.550,0.572) (0.575,0.591) (0.600,0.615) (0.625,0.643) (0.650,0.674) (0.675,0.708) (0.700,0.744) (0.725,0.783) (0.750,0.825) (0.775,0.870) (0.800,0.917) (0.825,0.966) (0.850,1.013) (0.875,1.054) (0.900,1.083) (0.925,1.097) (0.950,1.100) (0.975,1.100) (1.000,1.100) (1.025,1.100) (1.050,1.100) (1.075,1.100) (1.100,1.100) (1.125,1.100) (1.150,1.100) (1.175,1.100) (1.200,1.100) (1.225,1.100) (1.250,1.100) (1.275,1.100) (1.300,1.100) (1.325,1.100) (1.350,1.100) (1.375,1.100) (1.400,1.100) (1.425,1.100) (1.450,1.100) (1.475,1.101) (1.500,1.104) (1.525,1.115) (1.550,1.136) (1.575,1.165) (1.600,1.201) (1.625,1.242) (1.650,1.285) (1.675,1.330) (1.700,1.375) (1.725,1.420) (1.750,1.465) (1.775,1.508) (1.800,1.549) (1.825,1.585) (1.850,1.614) (1.875,1.635) (1.900,1.646) (1.925,1.649) (1.950,1.650) (1.975,1.650) (2.000,1.650) (2.025,1.650) (2.050,1.650) (2.075,1.650) (2.100,1.650) (2.125,1.650) (2.150,1.650) (2.175,1.650) (2.200,1.650) (2.225,1.650) (2.250,1.650) (2.275,1.650) (2.300,1.650) (2.325,1.650) (2.350,1.650) (2.375,1.650) (2.400,1.650) (2.425,1.650) (2.450,1.650) (2.475,1.651) (2.500,1.654) (2.525,1.665) (2.550,1.686) (2.575,1.715) (2.600,1.751) (2.625,1.792) (2.650,1.835) (2.675,1.880) (2.700,1.925) (2.725,1.970) (2.750,2.015) (2.775,2.058) (2.800,2.099) (2.825,2.135) (2.850,2.164) (2.875,2.185) (2.900,2.196) (2.925,2.199) (2.950,2.200) (2.975,2.200) (3.000,2.200) (3.025,2.200) (3.050,2.200) (3.075,2.200) (3.100,2.200) (3.125,2.200) (3.150,2.200) (3.175,2.200) (3.200,2.200) (3.225,2.200) (3.250,2.200) (3.275,2.200) (3.300,2.200) (3.325,2.200) (3.350,2.200) (3.375,2.200) (3.400,2.200) (3.425,2.200) (3.450,2.200) (3.475,2.201) (3.500,2.204) (3.525,2.215) (3.550,2.236) (3.575,2.265) (3.600,2.301) (3.625,2.342) (3.650,2.385) (3.675,2.430) (3.700,2.475) (3.725,2.520) (3.750,2.565) (3.775,2.608) (3.800,2.649) (3.825,2.685) (3.850,2.714) (3.875,2.735) (3.900,2.746) (3.925,2.749) (3.950,2.750) (3.975,2.750) (4.000,2.750) (4.025,2.750) (4.050,2.750) (4.075,2.750) (4.100,2.750) (4.125,2.750) (4.150,2.750) (4.175,2.750) (4.200,2.750)};
+\node[font=\scriptsize, anchor=west] at (4.3,2.75) {$f = \sum_j j\chi_j$};
+\draw[red!70!black, dashed] (-4.2,1.375) -- (4.2,1.375) node[right, font=\scriptsize] {$c = 2.5$};
+\draw[red!70!black, line width=2.2pt] (-1.675,0) -- (1.675,0);
+\node[red!70!black, font=\scriptsize, fill=white, inner sep=1pt] at (0,0.32) {$f^{-1}((-\infty, c])$};
+\draw[blue!60!black, |-|] (-3,-0.55) -- (3,-0.55) node[midway, fill=white, inner sep=1pt, font=\scriptsize] {$\overline{V_1} \cup \overline{V_2} \cup \overline{V_3}$, \ $N = 3 \ge c$};
+\draw[gray!60] (-4.2,-2.2) -- (4.2,-2.2); \draw[gray!60] (-4.2,-1.3) -- (4.2,-1.3);
+\node[font=\scriptsize, anchor=east] at (-4.25,-1.3) {$1$}; \node[font=\scriptsize, anchor=east] at (-4.25,-2.2) {$0$};
+\draw[teal!70!black, thick] plot coordinates {(-4.200,-2.200) (-4.175,-2.200) (-4.150,-2.200) (-4.125,-2.200) (-4.100,-2.200) (-4.075,-2.200) (-4.050,-2.200) (-4.025,-2.200) (-4.000,-2.200) (-3.975,-2.200) (-3.950,-2.200) (-3.925,-2.200) (-3.900,-2.200) (-3.875,-2.200) (-3.850,-2.200) (-3.825,-2.200) (-3.800,-2.200) (-3.775,-2.200) (-3.750,-2.200) (-3.725,-2.200) (-3.700,-2.200) (-3.675,-2.200) (-3.650,-2.200) (-3.625,-2.200) (-3.600,-2.200) (-3.575,-2.200) (-3.550,-2.200) (-3.525,-2.200) (-3.500,-2.200) (-3.475,-2.200) (-3.450,-2.200) (-3.425,-2.200) (-3.400,-2.200) (-3.375,-2.200) (-3.350,-2.200) (-3.325,-2.200) (-3.300,-2.200) (-3.275,-2.200) (-3.250,-2.200) (-3.225,-2.200) (-3.200,-2.200) (-3.175,-2.200) (-3.150,-2.200) (-3.125,-2.200) (-3.100,-2.200) (-3.075,-2.200) (-3.050,-2.200) (-3.025,-2.200) (-3.000,-2.200) (-2.975,-2.200) (-2.950,-2.200) (-2.925,-2.200) (-2.900,-2.200) (-2.875,-2.200) (-2.850,-2.200) (-2.825,-2.200) (-2.800,-2.200) (-2.775,-2.200) (-2.750,-2.200) (-2.725,-2.200) (-2.700,-2.200) (-2.675,-2.200) (-2.650,-2.200) (-2.625,-2.200) (-2.600,-2.200) (-2.575,-2.200) (-2.550,-2.200) (-2.525,-2.200) (-2.500,-2.200) (-2.475,-2.200) (-2.450,-2.200) (-2.425,-2.200) (-2.400,-2.200) (-2.375,-2.200) (-2.350,-2.200) (-2.325,-2.200) (-2.300,-2.200) (-2.275,-2.200) (-2.250,-2.200) (-2.225,-2.200) (-2.200,-2.200) (-2.175,-2.200) (-2.150,-2.200) (-2.125,-2.200) (-2.100,-2.200) (-2.075,-2.200) (-2.050,-2.200) (-2.025,-2.200) (-2.000,-2.200) (-1.975,-2.200) (-1.950,-2.200) (-1.925,-2.200) (-1.900,-2.200) (-1.875,-2.200) (-1.850,-2.200) (-1.825,-2.200) (-1.800,-2.200) (-1.775,-2.200) (-1.750,-2.200) (-1.725,-2.200) (-1.700,-2.200) (-1.675,-2.200) (-1.650,-2.200) (-1.625,-2.200) (-1.600,-2.200) (-1.575,-2.200) (-1.550,-2.200) (-1.525,-2.200) (-1.500,-2.200) (-1.475,-2.200) (-1.450,-2.200) (-1.425,-2.200) (-1.400,-2.200) (-1.375,-2.200) (-1.350,-2.200) (-1.325,-2.200) (-1.300,-2.200) (-1.275,-2.200) (-1.250,-2.200) (-1.225,-2.200) (-1.200,-2.200) (-1.175,-2.200) (-1.150,-2.200) (-1.125,-2.200) (-1.100,-2.200) (-1.075,-2.200) (-1.050,-2.200) (-1.025,-2.200) (-1.000,-2.200) (-0.975,-2.200) (-0.950,-2.200) (-0.925,-2.195) (-0.900,-2.172) (-0.875,-2.125) (-0.850,-2.058) (-0.825,-1.980) (-0.800,-1.900) (-0.775,-1.823) (-0.750,-1.750) (-0.725,-1.682) (-0.700,-1.618) (-0.675,-1.559) (-0.650,-1.503) (-0.625,-1.452) (-0.600,-1.406) (-0.575,-1.367) (-0.550,-1.336) (-0.525,-1.316) (-0.500,-1.304) (-0.475,-1.301) (-0.450,-1.300) (-0.425,-1.300) (-0.400,-1.300) (-0.375,-1.300) (-0.350,-1.300) (-0.325,-1.300) (-0.300,-1.300) (-0.275,-1.300) (-0.250,-1.300) (-0.225,-1.300) (-0.200,-1.300) (-0.175,-1.300) (-0.150,-1.300) (-0.125,-1.300) (-0.100,-1.300) (-0.075,-1.300) (-0.050,-1.300) (-0.025,-1.300) (0.000,-1.300) (0.025,-1.300) (0.050,-1.300) (0.075,-1.300) (0.100,-1.300) (0.125,-1.300) (0.150,-1.300) (0.175,-1.300) (0.200,-1.300) (0.225,-1.300) (0.250,-1.300) (0.275,-1.300) (0.300,-1.300) (0.325,-1.300) (0.350,-1.300) (0.375,-1.300) (0.400,-1.300) (0.425,-1.300) (0.450,-1.300) (0.475,-1.301) (0.500,-1.304) (0.525,-1.316) (0.550,-1.336) (0.575,-1.367) (0.600,-1.406) (0.625,-1.452) (0.650,-1.503) (0.675,-1.559) (0.700,-1.618) (0.725,-1.682) (0.750,-1.750) (0.775,-1.823) (0.800,-1.900) (0.825,-1.980) (0.850,-2.058) (0.875,-2.125) (0.900,-2.172) (0.925,-2.195) (0.950,-2.200) (0.975,-2.200) (1.000,-2.200) (1.025,-2.200) (1.050,-2.200) (1.075,-2.200) (1.100,-2.200) (1.125,-2.200) (1.150,-2.200) (1.175,-2.200) (1.200,-2.200) (1.225,-2.200) (1.250,-2.200) (1.275,-2.200) (1.300,-2.200) (1.325,-2.200) (1.350,-2.200) (1.375,-2.200) (1.400,-2.200) (1.425,-2.200) (1.450,-2.200) (1.475,-2.200) (1.500,-2.200) (1.525,-2.200) (1.550,-2.200) (1.575,-2.200) (1.600,-2.200) (1.625,-2.200) (1.650,-2.200) (1.675,-2.200) (1.700,-2.200) (1.725,-2.200) (1.750,-2.200) (1.775,-2.200) (1.800,-2.200) (1.825,-2.200) (1.850,-2.200) (1.875,-2.200) (1.900,-2.200) (1.925,-2.200) (1.950,-2.200) (1.975,-2.200) (2.000,-2.200) (2.025,-2.200) (2.050,-2.200) (2.075,-2.200) (2.100,-2.200) (2.125,-2.200) (2.150,-2.200) (2.175,-2.200) (2.200,-2.200) (2.225,-2.200) (2.250,-2.200) (2.275,-2.200) (2.300,-2.200) (2.325,-2.200) (2.350,-2.200) (2.375,-2.200) (2.400,-2.200) (2.425,-2.200) (2.450,-2.200) (2.475,-2.200) (2.500,-2.200) (2.525,-2.200) (2.550,-2.200) (2.575,-2.200) (2.600,-2.200) (2.625,-2.200) (2.650,-2.200) (2.675,-2.200) (2.700,-2.200) (2.725,-2.200) (2.750,-2.200) (2.775,-2.200) (2.800,-2.200) (2.825,-2.200) (2.850,-2.200) (2.875,-2.200) (2.900,-2.200) (2.925,-2.200) (2.950,-2.200) (2.975,-2.200) (3.000,-2.200) (3.025,-2.200) (3.050,-2.200) (3.075,-2.200) (3.100,-2.200) (3.125,-2.200) (3.150,-2.200) (3.175,-2.200) (3.200,-2.200) (3.225,-2.200) (3.250,-2.200) (3.275,-2.200) (3.300,-2.200) (3.325,-2.200) (3.350,-2.200) (3.375,-2.200) (3.400,-2.200) (3.425,-2.200) (3.450,-2.200) (3.475,-2.200) (3.500,-2.200) (3.525,-2.200) (3.550,-2.200) (3.575,-2.200) (3.600,-2.200) (3.625,-2.200) (3.650,-2.200) (3.675,-2.200) (3.700,-2.200) (3.725,-2.200) (3.750,-2.200) (3.775,-2.200) (3.800,-2.200) (3.825,-2.200) (3.850,-2.200) (3.875,-2.200) (3.900,-2.200) (3.925,-2.200) (3.950,-2.200) (3.975,-2.200) (4.000,-2.200) (4.025,-2.200) (4.050,-2.200) (4.075,-2.200) (4.100,-2.200) (4.125,-2.200) (4.150,-2.200) (4.175,-2.200) (4.200,-2.200)};
+\draw[orange!85!black, thick] plot coordinates {(-4.200,-2.200) (-4.175,-2.200) (-4.150,-2.200) (-4.125,-2.200) (-4.100,-2.200) (-4.075,-2.200) (-4.050,-2.200) (-4.025,-2.200) (-4.000,-2.200) (-3.975,-2.200) (-3.950,-2.200) (-3.925,-2.200) (-3.900,-2.200) (-3.875,-2.200) (-3.850,-2.200) (-3.825,-2.200) (-3.800,-2.200) (-3.775,-2.200) (-3.750,-2.200) (-3.725,-2.200) (-3.700,-2.200) (-3.675,-2.200) (-3.650,-2.200) (-3.625,-2.200) (-3.600,-2.200) (-3.575,-2.200) (-3.550,-2.200) (-3.525,-2.200) (-3.500,-2.200) (-3.475,-2.200) (-3.450,-2.200) (-3.425,-2.200) (-3.400,-2.200) (-3.375,-2.200) (-3.350,-2.200) (-3.325,-2.200) (-3.300,-2.200) (-3.275,-2.200) (-3.250,-2.200) (-3.225,-2.200) (-3.200,-2.200) (-3.175,-2.200) (-3.150,-2.200) (-3.125,-2.200) (-3.100,-2.200) (-3.075,-2.200) (-3.050,-2.200) (-3.025,-2.200) (-3.000,-2.200) (-2.975,-2.200) (-2.950,-2.200) (-2.925,-2.200) (-2.900,-2.200) (-2.875,-2.200) (-2.850,-2.200) (-2.825,-2.200) (-2.800,-2.200) (-2.775,-2.200) (-2.750,-2.200) (-2.725,-2.200) (-2.700,-2.200) (-2.675,-2.200) (-2.650,-2.200) (-2.625,-2.200) (-2.600,-2.200) (-2.575,-2.200) (-2.550,-2.200) (-2.525,-2.200) (-2.500,-2.200) (-2.475,-2.200) (-2.450,-2.200) (-2.425,-2.200) (-2.400,-2.200) (-2.375,-2.200) (-2.350,-2.200) (-2.325,-2.200) (-2.300,-2.200) (-2.275,-2.200) (-2.250,-2.200) (-2.225,-2.200) (-2.200,-2.200) (-2.175,-2.200) (-2.150,-2.200) (-2.125,-2.200) (-2.100,-2.200) (-2.075,-2.200) (-2.050,-2.200) (-2.025,-2.200) (-2.000,-2.200) (-1.975,-2.200) (-1.950,-2.200) (-1.925,-2.199) (-1.900,-2.193) (-1.875,-2.175) (-1.850,-2.141) (-1.825,-2.093) (-1.800,-2.034) (-1.775,-1.968) (-1.750,-1.897) (-1.725,-1.824) (-1.700,-1.750) (-1.675,-1.676) (-1.650,-1.603) (-1.625,-1.532) (-1.600,-1.466) (-1.575,-1.407) (-1.550,-1.359) (-1.525,-1.325) (-1.500,-1.307) (-1.475,-1.301) (-1.450,-1.300) (-1.425,-1.300) (-1.400,-1.300) (-1.375,-1.300) (-1.350,-1.300) (-1.325,-1.300) (-1.300,-1.300) (-1.275,-1.300) (-1.250,-1.300) (-1.225,-1.300) (-1.200,-1.300) (-1.175,-1.300) (-1.150,-1.300) (-1.125,-1.300) (-1.100,-1.300) (-1.075,-1.300) (-1.050,-1.300) (-1.025,-1.300) (-1.000,-1.300) (-0.975,-1.300) (-0.950,-1.300) (-0.925,-1.305) (-0.900,-1.328) (-0.875,-1.375) (-0.850,-1.442) (-0.825,-1.520) (-0.800,-1.600) (-0.775,-1.677) (-0.750,-1.750) (-0.725,-1.818) (-0.700,-1.882) (-0.675,-1.941) (-0.650,-1.997) (-0.625,-2.048) (-0.600,-2.094) (-0.575,-2.133) (-0.550,-2.164) (-0.525,-2.184) (-0.500,-2.196) (-0.475,-2.199) (-0.450,-2.200) (-0.425,-2.200) (-0.400,-2.200) (-0.375,-2.200) (-0.350,-2.200) (-0.325,-2.200) (-0.300,-2.200) (-0.275,-2.200) (-0.250,-2.200) (-0.225,-2.200) (-0.200,-2.200) (-0.175,-2.200) (-0.150,-2.200) (-0.125,-2.200) (-0.100,-2.200) (-0.075,-2.200) (-0.050,-2.200) (-0.025,-2.200) (0.000,-2.200) (0.025,-2.200) (0.050,-2.200) (0.075,-2.200) (0.100,-2.200) (0.125,-2.200) (0.150,-2.200) (0.175,-2.200) (0.200,-2.200) (0.225,-2.200) (0.250,-2.200) (0.275,-2.200) (0.300,-2.200) (0.325,-2.200) (0.350,-2.200) (0.375,-2.200) (0.400,-2.200) (0.425,-2.200) (0.450,-2.200) (0.475,-2.199) (0.500,-2.196) (0.525,-2.184) (0.550,-2.164) (0.575,-2.133) (0.600,-2.094) (0.625,-2.048) (0.650,-1.997) (0.675,-1.941) (0.700,-1.882) (0.725,-1.818) (0.750,-1.750) (0.775,-1.677) (0.800,-1.600) (0.825,-1.520) (0.850,-1.442) (0.875,-1.375) (0.900,-1.328) (0.925,-1.305) (0.950,-1.300) (0.975,-1.300) (1.000,-1.300) (1.025,-1.300) (1.050,-1.300) (1.075,-1.300) (1.100,-1.300) (1.125,-1.300) (1.150,-1.300) (1.175,-1.300) (1.200,-1.300) (1.225,-1.300) (1.250,-1.300) (1.275,-1.300) (1.300,-1.300) (1.325,-1.300) (1.350,-1.300) (1.375,-1.300) (1.400,-1.300) (1.425,-1.300) (1.450,-1.300) (1.475,-1.301) (1.500,-1.307) (1.525,-1.325) (1.550,-1.359) (1.575,-1.407) (1.600,-1.466) (1.625,-1.532) (1.650,-1.603) (1.675,-1.676) (1.700,-1.750) (1.725,-1.824) (1.750,-1.897) (1.775,-1.968) (1.800,-2.034) (1.825,-2.093) (1.850,-2.141) (1.875,-2.175) (1.900,-2.193) (1.925,-2.199) (1.950,-2.200) (1.975,-2.200) (2.000,-2.200) (2.025,-2.200) (2.050,-2.200) (2.075,-2.200) (2.100,-2.200) (2.125,-2.200) (2.150,-2.200) (2.175,-2.200) (2.200,-2.200) (2.225,-2.200) (2.250,-2.200) (2.275,-2.200) (2.300,-2.200) (2.325,-2.200) (2.350,-2.200) (2.375,-2.200) (2.400,-2.200) (2.425,-2.200) (2.450,-2.200) (2.475,-2.200) (2.500,-2.200) (2.525,-2.200) (2.550,-2.200) (2.575,-2.200) (2.600,-2.200) (2.625,-2.200) (2.650,-2.200) (2.675,-2.200) (2.700,-2.200) (2.725,-2.200) (2.750,-2.200) (2.775,-2.200) (2.800,-2.200) (2.825,-2.200) (2.850,-2.200) (2.875,-2.200) (2.900,-2.200) (2.925,-2.200) (2.950,-2.200) (2.975,-2.200) (3.000,-2.200) (3.025,-2.200) (3.050,-2.200) (3.075,-2.200) (3.100,-2.200) (3.125,-2.200) (3.150,-2.200) (3.175,-2.200) (3.200,-2.200) (3.225,-2.200) (3.250,-2.200) (3.275,-2.200) (3.300,-2.200) (3.325,-2.200) (3.350,-2.200) (3.375,-2.200) (3.400,-2.200) (3.425,-2.200) (3.450,-2.200) (3.475,-2.200) (3.500,-2.200) (3.525,-2.200) (3.550,-2.200) (3.575,-2.200) (3.600,-2.200) (3.625,-2.200) (3.650,-2.200) (3.675,-2.200) (3.700,-2.200) (3.725,-2.200) (3.750,-2.200) (3.775,-2.200) (3.800,-2.200) (3.825,-2.200) (3.850,-2.200) (3.875,-2.200) (3.900,-2.200) (3.925,-2.200) (3.950,-2.200) (3.975,-2.200) (4.000,-2.200) (4.025,-2.200) (4.050,-2.200) (4.075,-2.200) (4.100,-2.200) (4.125,-2.200) (4.150,-2.200) (4.175,-2.200) (4.200,-2.200)};
+\draw[violet!70!black, thick] plot coordinates {(-4.200,-2.200) (-4.175,-2.200) (-4.150,-2.200) (-4.125,-2.200) (-4.100,-2.200) (-4.075,-2.200) (-4.050,-2.200) (-4.025,-2.200) (-4.000,-2.200) (-3.975,-2.200) (-3.950,-2.200) (-3.925,-2.200) (-3.900,-2.200) (-3.875,-2.200) (-3.850,-2.200) (-3.825,-2.200) (-3.800,-2.200) (-3.775,-2.200) (-3.750,-2.200) (-3.725,-2.200) (-3.700,-2.200) (-3.675,-2.200) (-3.650,-2.200) (-3.625,-2.200) (-3.600,-2.200) (-3.575,-2.200) (-3.550,-2.200) (-3.525,-2.200) (-3.500,-2.200) (-3.475,-2.200) (-3.450,-2.200) (-3.425,-2.200) (-3.400,-2.200) (-3.375,-2.200) (-3.350,-2.200) (-3.325,-2.200) (-3.300,-2.200) (-3.275,-2.200) (-3.250,-2.200) (-3.225,-2.200) (-3.200,-2.200) (-3.175,-2.200) (-3.150,-2.200) (-3.125,-2.200) (-3.100,-2.200) (-3.075,-2.200) (-3.050,-2.200) (-3.025,-2.200) (-3.000,-2.200) (-2.975,-2.200) (-2.950,-2.200) (-2.925,-2.199) (-2.900,-2.193) (-2.875,-2.175) (-2.850,-2.141) (-2.825,-2.093) (-2.800,-2.034) (-2.775,-1.968) (-2.750,-1.897) (-2.725,-1.824) (-2.700,-1.750) (-2.675,-1.676) (-2.650,-1.603) (-2.625,-1.532) (-2.600,-1.466) (-2.575,-1.407) (-2.550,-1.359) (-2.525,-1.325) (-2.500,-1.307) (-2.475,-1.301) (-2.450,-1.300) (-2.425,-1.300) (-2.400,-1.300) (-2.375,-1.300) (-2.350,-1.300) (-2.325,-1.300) (-2.300,-1.300) (-2.275,-1.300) (-2.250,-1.300) (-2.225,-1.300) (-2.200,-1.300) (-2.175,-1.300) (-2.150,-1.300) (-2.125,-1.300) (-2.100,-1.300) (-2.075,-1.300) (-2.050,-1.300) (-2.025,-1.300) (-2.000,-1.300) (-1.975,-1.300) (-1.950,-1.300) (-1.925,-1.301) (-1.900,-1.307) (-1.875,-1.325) (-1.850,-1.359) (-1.825,-1.407) (-1.800,-1.466) (-1.775,-1.532) (-1.750,-1.603) (-1.725,-1.676) (-1.700,-1.750) (-1.675,-1.824) (-1.650,-1.897) (-1.625,-1.968) (-1.600,-2.034) (-1.575,-2.093) (-1.550,-2.141) (-1.525,-2.175) (-1.500,-2.193) (-1.475,-2.199) (-1.450,-2.200) (-1.425,-2.200) (-1.400,-2.200) (-1.375,-2.200) (-1.350,-2.200) (-1.325,-2.200) (-1.300,-2.200) (-1.275,-2.200) (-1.250,-2.200) (-1.225,-2.200) (-1.200,-2.200) (-1.175,-2.200) (-1.150,-2.200) (-1.125,-2.200) (-1.100,-2.200) (-1.075,-2.200) (-1.050,-2.200) (-1.025,-2.200) (-1.000,-2.200) (-0.975,-2.200) (-0.950,-2.200) (-0.925,-2.200) (-0.900,-2.200) (-0.875,-2.200) (-0.850,-2.200) (-0.825,-2.200) (-0.800,-2.200) (-0.775,-2.200) (-0.750,-2.200) (-0.725,-2.200) (-0.700,-2.200) (-0.675,-2.200) (-0.650,-2.200) (-0.625,-2.200) (-0.600,-2.200) (-0.575,-2.200) (-0.550,-2.200) (-0.525,-2.200) (-0.500,-2.200) (-0.475,-2.200) (-0.450,-2.200) (-0.425,-2.200) (-0.400,-2.200) (-0.375,-2.200) (-0.350,-2.200) (-0.325,-2.200) (-0.300,-2.200) (-0.275,-2.200) (-0.250,-2.200) (-0.225,-2.200) (-0.200,-2.200) (-0.175,-2.200) (-0.150,-2.200) (-0.125,-2.200) (-0.100,-2.200) (-0.075,-2.200) (-0.050,-2.200) (-0.025,-2.200) (0.000,-2.200) (0.025,-2.200) (0.050,-2.200) (0.075,-2.200) (0.100,-2.200) (0.125,-2.200) (0.150,-2.200) (0.175,-2.200) (0.200,-2.200) (0.225,-2.200) (0.250,-2.200) (0.275,-2.200) (0.300,-2.200) (0.325,-2.200) (0.350,-2.200) (0.375,-2.200) (0.400,-2.200) (0.425,-2.200) (0.450,-2.200) (0.475,-2.200) (0.500,-2.200) (0.525,-2.200) (0.550,-2.200) (0.575,-2.200) (0.600,-2.200) (0.625,-2.200) (0.650,-2.200) (0.675,-2.200) (0.700,-2.200) (0.725,-2.200) (0.750,-2.200) (0.775,-2.200) (0.800,-2.200) (0.825,-2.200) (0.850,-2.200) (0.875,-2.200) (0.900,-2.200) (0.925,-2.200) (0.950,-2.200) (0.975,-2.200) (1.000,-2.200) (1.025,-2.200) (1.050,-2.200) (1.075,-2.200) (1.100,-2.200) (1.125,-2.200) (1.150,-2.200) (1.175,-2.200) (1.200,-2.200) (1.225,-2.200) (1.250,-2.200) (1.275,-2.200) (1.300,-2.200) (1.325,-2.200) (1.350,-2.200) (1.375,-2.200) (1.400,-2.200) (1.425,-2.200) (1.450,-2.200) (1.475,-2.199) (1.500,-2.193) (1.525,-2.175) (1.550,-2.141) (1.575,-2.093) (1.600,-2.034) (1.625,-1.968) (1.650,-1.897) (1.675,-1.824) (1.700,-1.750) (1.725,-1.676) (1.750,-1.603) (1.775,-1.532) (1.800,-1.466) (1.825,-1.407) (1.850,-1.359) (1.875,-1.325) (1.900,-1.307) (1.925,-1.301) (1.950,-1.300) (1.975,-1.300) (2.000,-1.300) (2.025,-1.300) (2.050,-1.300) (2.075,-1.300) (2.100,-1.300) (2.125,-1.300) (2.150,-1.300) (2.175,-1.300) (2.200,-1.300) (2.225,-1.300) (2.250,-1.300) (2.275,-1.300) (2.300,-1.300) (2.325,-1.300) (2.350,-1.300) (2.375,-1.300) (2.400,-1.300) (2.425,-1.300) (2.450,-1.300) (2.475,-1.301) (2.500,-1.307) (2.525,-1.325) (2.550,-1.359) (2.575,-1.407) (2.600,-1.466) (2.625,-1.532) (2.650,-1.603) (2.675,-1.676) (2.700,-1.750) (2.725,-1.824) (2.750,-1.897) (2.775,-1.968) (2.800,-2.034) (2.825,-2.093) (2.850,-2.141) (2.875,-2.175) (2.900,-2.193) (2.925,-2.199) (2.950,-2.200) (2.975,-2.200) (3.000,-2.200) (3.025,-2.200) (3.050,-2.200) (3.075,-2.200) (3.100,-2.200) (3.125,-2.200) (3.150,-2.200) (3.175,-2.200) (3.200,-2.200) (3.225,-2.200) (3.250,-2.200) (3.275,-2.200) (3.300,-2.200) (3.325,-2.200) (3.350,-2.200) (3.375,-2.200) (3.400,-2.200) (3.425,-2.200) (3.450,-2.200) (3.475,-2.200) (3.500,-2.200) (3.525,-2.200) (3.550,-2.200) (3.575,-2.200) (3.600,-2.200) (3.625,-2.200) (3.650,-2.200) (3.675,-2.200) (3.700,-2.200) (3.725,-2.200) (3.750,-2.200) (3.775,-2.200) (3.800,-2.200) (3.825,-2.200) (3.850,-2.200) (3.875,-2.200) (3.900,-2.200) (3.925,-2.200) (3.950,-2.200) (3.975,-2.200) (4.000,-2.200) (4.025,-2.200) (4.050,-2.200) (4.075,-2.200) (4.100,-2.200) (4.125,-2.200) (4.150,-2.200) (4.175,-2.200) (4.200,-2.200)};
+\node[font=\scriptsize, teal!70!black] at (0,-1.1) {$\chi_1$};
+\node[font=\scriptsize, orange!85!black] at (1.25,-1.1) {$\chi_2$};
+\node[font=\scriptsize, violet!70!black] at (2.25,-1.1) {$\chi_3$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added, computed.)} The construction on $M = \mathbb{R}$, with $V_1 = (-1, 1)$ and $V_j = \{ j - 1.6 < |x| < j \}$ for $j \ge 2$, and $\chi_j$ obtained by normalizing bumps positive exactly on $V_j$. Then $f = \sum_j j\chi_j$ climbs one step on each successive $V_j$, so it grows like $|x|$. The sublevel set $f^{-1}((-\infty, 2.5])$ (red) lies inside $\overline{V_1} \cup \overline{V_2} \cup \overline{V_3} = [-3, 3]$, as the claim with $N = 3$ says.
+
+``This technique of using partitions of unity is a very common technique in this subject, and the best way to learn to use it is to use it in a homework problem with hints.'' The next assignment will have ``at least one, maybe a couple of applications of partitions of unity.''
+
+\textbf{Transcription note (Lecture 23).} The board defined $f = \sum_{j \ge 0} j\chi_j$ but wrote the union in the claim from $i = 1$ (Uribe: ``wherever your index starts''). These notes index the cover and the partition from $1$, as Lee does. If the index starts at $0$, the union in the claim must start at $i = 0$ too. Otherwise a point of $V_0$ outside $V_1, \ldots, V_N$ can have $f(p) = \sum_{j > N} j\chi_j(p) < N + 1$, since then $\sum_{j > N}\chi_j(p) = 1 - \chi_0(p)$.
+% ============================================================================
+% CHAPTER: INTEGRAL CURVES AND FLOWS (Lecture 23, Wed Oct 28, 2026)
+% ============================================================================
+\chapter{Integral Curves and Flows}
+
+\textit{Lecture 23. ``We get a little bit disorganized, I'm sorry \ldots\ It's actually a new chapter in Lee. We're in sync with Lee in a way. It's going to be Chapter~9.'' The chapter on vector fields (\ref{sec:fields}--\ref{sec:lie-morphisms}) treated vector fields \emph{as operators}: derivations, the commutator, the Lie algebra of a Lie group. ``But now we have this other side of vector fields \ldots\ as velocities'': vector fields as \emph{generators of dynamics}. Think of $\mathbf{X} \in \mathfrak{X}(M)$ as a section of $TM \to M$ (Definition~\ref{def:vector-field}), a velocity vector attached to each point.}
+
+% ============================================================================
+% SECTION: INTEGRAL CURVES
+% ============================================================================
+\section{Integral Curves}\label{sec:integral-curves}
+
+\roadmark{Stage: dynamics}{Curves whose velocity is prescribed by a vector field; in coordinates, a first-order system of ODEs.}
+
+For a smooth curve $c : I \to M$ and $t \in I$, write $\dot c(t) = \frac{dc}{dt}(t) \in T_{c(t)}M$ for its velocity at time $t$: the velocity $D_\gamma$ (Definition~\ref{def:velocity}) of the shifted curve $\gamma(s) = c(t + s)$, that is, $\dot c(t) = c_{*t}\big(\frac{d}{dt}\big|_t\big)$.
+
+\begin{defbox}[Integral Curve]\deflabel{def:integral-curve}
+Let $\mathbf{X} \in \mathfrak{X}(M)$. An \textbf{integral curve} of $\mathbf{X}$ is a smooth map $c : I \to M$, where $I = (a, b) \subseteq \mathbb{R}$ is an open interval (possibly $a = -\infty$ or $b = +\infty$), such that
+\[
+\dot c(t) = \mathbf{X}_{c(t)} \qquad \text{for all } t \in I. \tag{$*$}
+\]
+The variable $t$ is called \textbf{time}. If $0 \in I$ and $c(0) = q$, the curve \textbf{starts at} $q$.
+\leeref{Ch.~9, \emph{Integral Curves}}
+\end{defbox}
+
+``This is the key notion. You might have seen this in your ordinary differential equations.''
+
+\begin{propbox}[Integral Curves in Coordinates]\thmlabel{prop:integral-curve-coords}
+Let $M \subseteq \mathbb{R}^m$ be open, with coordinates $x^1, \ldots, x^m$, and $\mathbf{X} = \sum_i f^i\, \partial/\partial x^i$ (Proposition~\ref{prop:vf-coords}). Write a smooth curve as $c(t) = (x^1(t), \ldots, x^m(t))$, with velocity $\dot c(t) = \langle \dot x^1(t), \ldots, \dot x^m(t) \rangle$. Then $c$ is an integral curve of $\mathbf{X}$ if and only if
+\[
+\dot x^i(t) = f^i\big(x^1(t), \ldots, x^m(t)\big) \qquad \text{for all } i = 1, \ldots, m \text{ and all } t \in I .
+\]
+The same holds on any manifold, in any chart, with the $x^i(t)$ the coordinates of $c(t)$.
+\leeref{Ch.~9, \emph{Integral Curves}, (9.1)}
+\end{propbox}
+
+\begin{proof}
+By Proposition~\ref{prop:velocity-coords}, applied at each time $t$ to the shifted curve $s \mapsto c(t + s)$, $\dot c(t) = \sum_i \dot x^i(t)\, \partial/\partial x^i|_{c(t)}$, while $\mathbf{X}_{c(t)} = \sum_i f^i(c(t))\, \partial/\partial x^i|_{c(t)}$. The $\partial/\partial x^i|_{c(t)}$ form a basis of $T_{c(t)}M$, so $(*)$ holds at $t$ exactly when the components agree. The argument uses only a chart, so it applies on any manifold.
+\end{proof}
+
+The angle brackets mark $\dot c$ as a vector, not a point: ``I've been trained \ldots\ that you should distinguish vectors from points.'' What the proposition shows is that $(*)$ is a \emph{system of first-order ODEs}, usually nonlinear. All the derivatives are on the left-hand side, solved for: the right-hand side involves no derivatives. And it is a genuine \emph{system}, because the equation for $\dot x^i$ involves, in principle, all of the $x$'s. (Lee: solving a system of ODEs is called ``integrating'' it, hence the name \emph{integral} curve.)
+
+``There's a fundamental theorem that, again, from --- we have moved from Calc~3 to Calc~4 --- ODEs.'' Uribe quoted it in the following form.
+
+\begin{thmbox}[Local Existence and Uniqueness]\thmlabel{thm:ode-local}
+Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$. Given any $p \in M$, there are $\varepsilon > 0$, an open neighbourhood $U \subseteq M$ of $p$, and a smooth map
+\[
+\varphi : (-\varepsilon, \varepsilon) \times U \longrightarrow M
+\]
+such that
+\begin{enumerate}[nosep]
+\item $\varphi(0, q) = q$ for every $q \in U$;
+\item for every $q \in U$, the curve $(-\varepsilon, \varepsilon) \to M$, $t \mapsto \varphi(t, q)$, is an integral curve of $\mathbf{X}$.
+\end{enumerate}
+Furthermore (uniqueness): if $q \in U$ and $c : I \to M$ is any integral curve of $\mathbf{X}$ with $0 \in I$ and $c(0) = q$, then
+\[
+c|_{I \cap (-\varepsilon, \varepsilon)} = \varphi(\cdot, q)|_{I \cap (-\varepsilon, \varepsilon)} .
+\]
+\leeref{Theorem D.1}
+\end{thmbox}
+
+\begin{proof}[Proof (not given in this course)]
+Taken from ODE theory, not proved in the course: ``a big, big theorem that takes forever to prove'', the theorem on existence, uniqueness and smooth dependence on initial conditions (Lee, Theorem~D.1, proved in Appendix~D). ``This theorem here packs everything that we will quote from the Euclidean case.''
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+\draw[thick] (0,0) ellipse (2.6 and 1.45); \node[font=\scriptsize] at (2.35,1.25) {$M \subseteq \mathbb{R}^m$};
+\draw[->, gray!65] (-1.60,0.90) -- (-1.19,0.93);
+\draw[->, gray!65] (-0.40,1.00) -- (0.02,1.12);
+\draw[->, gray!65] (0.90,0.85) -- (1.31,1.06);
+\draw[->, gray!65] (1.60,-0.20) -- (1.91,0.07);
+\draw[->, gray!65] (0.50,-0.80) -- (0.76,-0.61);
+\draw[->, gray!65] (-1.20,-0.60) -- (-0.92,-0.54);
+\draw[orange!85!black, thick] (-0.95,-0.25) rectangle (-0.05,0.45); \node[orange!85!black, font=\scriptsize] at (-1.15,0.55) {$U$};
+\fill (-0.3,0.25) circle (1.2pt) node[above, font=\scriptsize] {$p$};
+\draw[blue!70!black, thick, ->] plot[smooth] coordinates {(-1.211,-0.073) (-1.200,-0.071) (-1.189,-0.069) (-1.179,-0.066) (-1.168,-0.064) (-1.157,-0.062) (-1.146,-0.060) (-1.135,-0.058) (-1.125,-0.055) (-1.114,-0.053) (-1.103,-0.051) (-1.092,-0.048) (-1.081,-0.046) (-1.070,-0.043) (-1.059,-0.041) (-1.049,-0.039) (-1.038,-0.036) (-1.027,-0.033) (-1.016,-0.031) (-1.005,-0.028) (-0.994,-0.026) (-0.983,-0.023) (-0.972,-0.020) (-0.961,-0.018) (-0.950,-0.015) (-0.939,-0.012) (-0.928,-0.010) (-0.917,-0.007) (-0.906,-0.004) (-0.895,-0.001) (-0.884,0.002) (-0.873,0.005) (-0.862,0.007) (-0.851,0.010) (-0.840,0.013) (-0.829,0.016) (-0.818,0.019) (-0.807,0.022) (-0.796,0.026) (-0.785,0.029) (-0.774,0.032) (-0.763,0.035) (-0.752,0.038) (-0.741,0.041) (-0.729,0.045) (-0.718,0.048) (-0.707,0.051) (-0.696,0.054) (-0.685,0.058) (-0.674,0.061) (-0.662,0.065) (-0.651,0.068) (-0.640,0.071) (-0.629,0.075) (-0.618,0.078) (-0.606,0.082) (-0.595,0.085) (-0.584,0.089) (-0.573,0.093) (-0.561,0.096) (-0.550,0.100) (-0.529,0.107) (-0.508,0.114) (-0.488,0.121) (-0.467,0.128) (-0.446,0.135) (-0.425,0.142) (-0.404,0.149) (-0.383,0.157) (-0.362,0.164) (-0.341,0.172) (-0.320,0.180) (-0.299,0.188) (-0.277,0.195) (-0.256,0.203) (-0.235,0.212) (-0.213,0.220) (-0.192,0.228) (-0.171,0.236) (-0.149,0.245) (-0.128,0.253) (-0.106,0.262) (-0.084,0.271) (-0.063,0.280) (-0.041,0.289) (-0.019,0.298) (0.003,0.307) (0.025,0.316) (0.046,0.325) (0.068,0.335) (0.090,0.344) (0.113,0.354) (0.135,0.364) (0.157,0.373) (0.179,0.383) (0.201,0.393) (0.224,0.403) (0.246,0.414) (0.269,0.424) (0.291,0.434) (0.314,0.445) (0.336,0.455) (0.359,0.466) (0.382,0.477) (0.405,0.488) (0.428,0.499) (0.451,0.510) (0.474,0.521) (0.497,0.532) (0.520,0.544) (0.543,0.555) (0.566,0.567) (0.589,0.579) (0.613,0.590) (0.636,0.602) (0.660,0.614) (0.683,0.626) (0.707,0.639) (0.731,0.651) (0.755,0.663) (0.778,0.676)};
+\fill[red!70!black] (-0.55,0.1) circle (1.3pt) node[below, font=\scriptsize] {$q$};
+\node[blue!70!black, font=\scriptsize, anchor=west, align=left] at (3.0,0.3) {integral curve $t \mapsto \varphi(t, q)$,\\ $\varphi(t,q)|_{t=0} = q$, \ $|t| < \varepsilon$};
+\end{tikzpicture}
+\end{center}
+
+``Imagine a Calc~3 plot of a field \ldots\ the vectors at every point.'' The theorem gives a time interval $(-\varepsilon, \varepsilon)$ and a neighbourhood $U$ of $p$ (drawn as a rectangle) such that from every point $q \in U$, $p$ included, there is an integral curve $t \mapsto \varphi(t, q)$ that starts at $q$ and is defined at least for $|t| < \varepsilon$.
+
+\emph{What the theorem says beyond ``there is a path through $q$''} (a student's question). ``It says a lot of delicate things.'' The time interval is \emph{uniform}: as long as $q \in U$, the curve is defined at least for $|t| < \varepsilon$. And $\varphi$ is smooth as a function of the pair $(t, q)$ on the product $(-\varepsilon, \varepsilon) \times U$: smooth in $t$, as an integral curve must be, but also, for fixed $t$, smooth in the initial condition $q$. Asked whether the image of $\varphi$ is ``just a slightly bigger open set around $U$'', Uribe answered: ``All of the above can happen.'' The examples below show some of the possibilities.
+
+\begin{defbox}[Notation: $\varphi_t$ and $\varphi_q$]\deflabel{def:flow-notation}
+In the setting of Theorem~\ref{thm:ode-local}, for fixed $t \in (-\varepsilon, \varepsilon)$ and fixed $q \in U$ write
+\[
+\varphi_t(q) := \varphi(t, q), \qquad \varphi_q(t) := \varphi(t, q).
+\]
+Then $\varphi_t : U \to M$ is a smooth map, and $\varphi_q : (-\varepsilon, \varepsilon) \to M$ is the integral curve of $\mathbf{X}$ with $\varphi_q(0) = q$: it ``starts at $q$''.
+\leeref{Ch.~9, \emph{Flows}}
+\end{defbox}
+
+``This notation is useful when you want to fix $t$.'' For the second one: ``we don't use it, but I suppose we could \ldots\ maybe we should use it. It sounds pedagogical. I actually like it.'' The board then used it. The two notations differ only in the letter in the subscript, so whether $\varphi_s$ means a map or a curve is read off from what $s$ is: a time or a point. Lee writes $\theta_t(p)$ and $\theta^{(p)}(t)$ for the two (Chapter~9). In these notes $\varphi$ also names charts $(U, \varphi)$; from here on it is the flow unless a chart is named.
+
+\begin{exbox}[The Rotation Field]\exlabel{ex:rotation-flow}
+On $\mathbb{R}^2$ let $\mathbf{X} = -y\, \dfrac{\partial}{\partial x} + x\, \dfrac{\partial}{\partial y}$, ``the classical rotation.'' By Proposition~\ref{prop:integral-curve-coords} the integral curves solve
+\[
+\dot x = -y, \qquad \dot y = x .
+\]
+Then $\ddot x = -\dot y = -x$, so $x(t) = A\cos t + B\sin t$ and $y(t) = -\dot x(t) = A\sin t - B\cos t$. At $t = 0$, $(x_0, y_0) = (A, -B)$. So
+\[
+\varphi : \mathbb{R} \times \mathbb{R}^2 \longrightarrow \mathbb{R}^2, \qquad \big(t, (x_0, y_0)\big) \longmapsto \big(x_0\cos t - y_0\sin t,\ x_0\sin t + y_0\cos t\big).
+\]
+$\varphi_t$ is the rotation by the angle $t$. The integral curves are the circles centred at the origin, traversed counterclockwise, and the constant curve at the origin. They exist for all time.
+\leeref{Example 9.1}
+\end{exbox}
+
+``The harmonic oscillator, or rotation, whatever you want''; ``everybody has solved this some time, either in an ODE class or in a physics class.'' It is ``the benign case'': in Theorem~\ref{thm:ode-local} one can take $U = \mathbb{R}^2$ and any $\varepsilon$, indeed $t \in \mathbb{R}$. Going back to the question about the image, $\varphi_t(U)$ is $U$ rotated about the origin, possibly far from $U$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[->, gray!60] (-2.3,0) -- (2.5,0) node[right, font=\scriptsize, text=black] {$x$};
+\draw[->, gray!60] (0,-2.3) -- (0,2.5) node[above, font=\scriptsize, text=black] {$y$};
+\foreach \r in {0.6,1.2,1.8} { \draw[blue!70!black] (0,0) circle (\r); \draw[blue!70!black, ->] (\r,0) ++(0,0.01) -- ++(0,0.02); }
+\foreach \a/\r in {30/1.2, 120/1.8, 210/0.6, 300/1.8} { \draw[->, blue!70!black, thick] ({\r*cos(\a)},{\r*sin(\a)}) -- ++({0.3*cos(\a+90)},{0.3*sin(\a+90)}); }
+\draw[orange!85!black, thick, fill=orange!12] (1.000,0.750) -- (1.500,0.750) -- (1.500,1.250) -- (1.000,1.250) -- cycle;
+\node[orange!85!black, font=\scriptsize] at (1.75,1.4) {$U$};
+\draw[orange!85!black, thick, dashed, fill=orange!6] (-1.047,0.683) -- (-1.218,1.153) -- (-1.688,0.982) -- (-1.517,0.512) -- cycle;
+\node[orange!85!black, font=\scriptsize, anchor=east] at (-1.72,1.03) {$\varphi_t(U)$, $t = 110^\circ$};
+\node[font=\scriptsize, anchor=west, align=left] at (2.7,-1.0) {$\varphi_t$ = rotation by $t$;\\ every integral curve\\ is defined for all $t \in \mathbb{R}$};
+\end{tikzpicture}
+\end{center}
+
+``Now I want to give you a problematic example. Problematic in the sense that because of examples like the one I'm about to give you, the theory becomes, well, necessarily elaborate.''
+
+\begin{exbox}[Escape in Finite Time]\exlabel{ex:finite-escape}
+On $\mathbb{R}^2$ let $\mathbf{X} = y x^2\, \dfrac{\partial}{\partial x} + 0 \cdot \dfrac{\partial}{\partial y}$. The integral curves solve
+\[
+\dot x = y(t)\, x(t)^2, \qquad \dot y = 0 .
+\]
+So $y(t) = y(0) = y_0$ for all $t$, and $dx/dt = y_0 x^2$ separates, for $x_0 \neq 0$, as $dx/x^2 = y_0\, dt$: $-1/x(t) = y_0 t + C$ with $C = -1/x_0$. Hence
+\[
+x(t) = \frac{x_0}{1 - x_0 y_0\, t}, \qquad y(t) = y_0 .
+\]
+\emph{Observation:} the denominator is zero at $t = 1/(x_0y_0)$. Take $M$ to be the open first quadrant $\{x > 0,\ y > 0\}$ (``otherwise there are sign issues; nothing interesting happens''). Fix $T > 0$, and let $q = (x_0, y_0)$ lie on the hyperbola $xy = 1/T$. Then
+\[
+\lim_{t \to T^-} x(t) = +\infty .
+\]
+For negative $t$ nothing goes wrong: the denominator only grows, and $x(t) \to 0$ as $t \to -\infty$. So the maximal domain of an integral curve of $\mathbf{X}$ starting at $(x_0, y_0)$ is
+\[
+\Big( -\infty,\ \frac{1}{x_0 y_0} \Big).
+\]
+\leeref{Example 9.10}
+\end{exbox}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[->, gray!60] (0,0) -- (4.1,0) node[right, font=\scriptsize, text=black] {$x$};
+\draw[->, gray!60] (0,0) -- (0,3.5) node[above, font=\scriptsize, text=black] {$y$};
+\draw[red!70!black, thick] plot[smooth] coordinates {(0.310,3.226) (0.352,2.844) (0.393,2.543) (0.435,2.299) (0.477,2.098) (0.518,1.930) (0.560,1.786) (0.602,1.662) (0.643,1.555) (0.685,1.460) (0.726,1.377) (0.768,1.302) (0.810,1.235) (0.851,1.175) (0.893,1.120) (0.935,1.070) (0.976,1.024) (1.018,0.982) (1.060,0.944) (1.101,0.908) (1.143,0.875) (1.185,0.844) (1.226,0.816) (1.268,0.789) (1.309,0.764) (1.351,0.740) (1.393,0.718) (1.434,0.697) (1.476,0.677) (1.518,0.659) (1.559,0.641) (1.601,0.625) (1.643,0.609) (1.684,0.594) (1.726,0.579) (1.768,0.566) (1.809,0.553) (1.851,0.540) (1.893,0.528) (1.934,0.517) (1.976,0.506) (2.017,0.496) (2.059,0.486) (2.101,0.476) (2.142,0.467) (2.184,0.458) (2.226,0.449) (2.267,0.441) (2.309,0.433) (2.351,0.425) (2.392,0.418) (2.434,0.411) (2.476,0.404) (2.517,0.397) (2.559,0.391) (2.601,0.385) (2.642,0.378) (2.684,0.373) (2.725,0.367) (2.767,0.361) (2.809,0.356) (2.850,0.351) (2.892,0.346) (2.934,0.341) (2.975,0.336) (3.017,0.331) (3.059,0.327) (3.100,0.323) (3.142,0.318) (3.184,0.314) (3.225,0.310) (3.267,0.306) (3.308,0.302) (3.350,0.298) (3.392,0.295) (3.433,0.291) (3.475,0.288) (3.517,0.284) (3.558,0.281) (3.600,0.278)};
+\node[red!70!black, font=\scriptsize, anchor=west] at (3.3,0.55) {$xy = 1/T$};
+\draw[blue!70!black, thick] (0.02,1.6) -- (3.9,1.6);
+\foreach \x in {0.8,1.6,2.4,3.2} { \draw[->, blue!70!black, thick] (\x,1.6) -- (\x+0.35,1.6); }
+\draw[gray!60, dashed] (0,1.6) node[left, font=\scriptsize, text=black] {$y_0$} -- (0.02,1.6);
+\fill (0.625,1.6) circle (1.4pt) node[above right, font=\scriptsize] {$q = (x_0, y_0)$};
+\node[font=\scriptsize, anchor=west, align=left] at (1.2,2.75) {$x(t) = \dfrac{x_0}{1 - x_0 y_0 t} \to +\infty$\\ as $t \to (1/x_0y_0)^-$};
+\node[font=\scriptsize, anchor=west] at (0.3,-0.4) {$M$ = open first quadrant; fix $T > 0$};
+\end{tikzpicture}
+\end{center}
+
+The integral curves lie on horizontal lines. Starting at $q$ the point moves to the right for $t > 0$, and the velocity $y_0x^2$ grows quadratically in $x$: ``the particle just gets to infinity in finite time, beating everybody else.'' Backwards in time the point moves against the arrows, towards the $y$-axis, where the field vanishes: ``it gets stuck,'' but there is no blowing up. The escape time $1/(x_0y_0)$ depends on the initial condition, through the hyperbola $xy = 1/T$ on which it lies. So, by inspection, not all integral curves are defined for all time --- ``and that makes life complicated.'' (The curve does not continue past $T$, even inside $\mathbb{R}^2$: its $x$-coordinate is unbounded. No other integral curve from $q$ does either, by uniqueness on the whole common domain: two integral curves starting at $q$ agree wherever both are defined (Theorem~\ref{thm:maximal-flow}(1); Lee, Theorem~D.4). The uniqueness in Theorem~\ref{thm:ode-local} alone gives this only for $|t| < \varepsilon$.)
+
+% ============================================================================
+% SECTION: FLOWS (the big picture)
+% ============================================================================
+\section{Flows}\label{sec:flows}
+
+\roadmark{Stage: dynamics}{All integral curves at once: the maximal curves through every point assemble into one smooth map on an open domain in $\mathbb{R} \times M$.}
+
+\textit{Lecture 23, the last minutes: ``Let me tell you the bigger picture of what actually is happening, and then we'll see how much of that we get to prove \ldots\ We'll prove a big chunk of this on Friday.''}
+
+\begin{thmbox}[Maximal Integral Curves and the Flow]\thmlabel{thm:maximal-flow}
+Let $M$ be a smooth manifold and $\mathbf{X} \in \mathfrak{X}(M)$.
+\begin{enumerate}[nosep]
+\item For every $p \in M$ there is a unique \emph{maximal} integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi_p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$: ``$\alpha$ or $\beta$ may be $\pm\infty$.''
+\item Let
+\[
+\mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi_p(t).
+\]
+Then $\mathcal{D}$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth.
+\end{enumerate}
+\leeref{Theorem 9.12}
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+To be proved in Lecture~24. Uribe's indication for (1): ``by uniqueness and something called the translation lemma, which is very easy to see,'' there is ``only one way to continue the curve forwards in time and then backwards in time until either you never stop or you run into the edge of the manifold.'' Openness of $\mathcal{D}$ ``is surprisingly long to prove.''
+\end{proof}
+
+$\varphi$ is ``just flowing, like we were doing before'', except that the domain of the time variable depends on the point, as in Example~\ref{ex:finite-escape}. The theorem is the local picture of Theorem~\ref{thm:ode-local}, with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
+\begin{itemize}[nosep]
+\item Rotation (Example~\ref{ex:rotation-flow}): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.
+\item Escape (Example~\ref{ex:finite-escape}): $\alpha \equiv -\infty$, $\beta(x, y) = 1/(xy)$, so $\mathcal{D} = \{ (t, (x, y)) : x, y > 0,\ t\,xy < 1 \}$, open, and $\varphi(t, (x, y)) = \big(x/(1 - xyt),\ y\big)$, smooth on $\mathcal{D}$.
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\fill[blue!8] (0.28,-2.6) -- plot[smooth] coordinates {(0.280,2.720) (0.322,2.484) (0.364,2.197) (0.406,1.970) (0.448,1.785) (0.490,1.632) (0.532,1.503) (0.574,1.393) (0.616,1.298) (0.658,1.215) (0.700,1.142) (0.742,1.078) (0.784,1.020) (0.826,0.968) (0.868,0.921) (0.910,0.879) (0.952,0.840) (0.994,0.804) (1.036,0.772) (1.078,0.742) (1.121,0.714) (1.163,0.688) (1.205,0.664) (1.247,0.642) (1.289,0.621) (1.331,0.601) (1.373,0.583) (1.415,0.565) (1.457,0.549) (1.499,0.534) (1.541,0.519) (1.583,0.505) (1.625,0.492) (1.667,0.480) (1.709,0.468) (1.751,0.457) (1.793,0.446) (1.835,0.436) (1.877,0.426) (1.919,0.417) (1.961,0.408) (2.003,0.399) (2.045,0.391) (2.087,0.383) (2.129,0.376) (2.171,0.368) (2.213,0.361) (2.255,0.355) (2.297,0.348) (2.339,0.342) (2.381,0.336) (2.423,0.330) (2.465,0.325) (2.507,0.319) (2.549,0.314) (2.591,0.309) (2.633,0.304) (2.675,0.299) (2.717,0.294) (2.759,0.290) (2.802,0.286) (2.844,0.281) (2.886,0.277) (2.928,0.273) (2.970,0.269) (3.012,0.266) (3.054,0.262) (3.096,0.258) (3.138,0.255) (3.180,0.252) (3.222,0.248) (3.264,0.245) (3.306,0.242) (3.348,0.239) (3.390,0.236) (3.432,0.233) (3.474,0.230) (3.516,0.228) (3.558,0.225) (3.600,0.222)} -- (3.6,-2.6) -- cycle;
+\draw[->, gray!60] (0,0) -- (4.0,0) node[right, font=\scriptsize, text=black] {$x_0$};
+\draw[->, gray!60] (0,-2.7) -- (0,3.0) node[above, font=\scriptsize, text=black] {$t$};
+\draw[blue!70!black, thick, dashed] plot[smooth] coordinates {(0.280,2.720) (0.322,2.484) (0.364,2.197) (0.406,1.970) (0.448,1.785) (0.490,1.632) (0.532,1.503) (0.574,1.393) (0.616,1.298) (0.658,1.215) (0.700,1.142) (0.742,1.078) (0.784,1.020) (0.826,0.968) (0.868,0.921) (0.910,0.879) (0.952,0.840) (0.994,0.804) (1.036,0.772) (1.078,0.742) (1.121,0.714) (1.163,0.688) (1.205,0.664) (1.247,0.642) (1.289,0.621) (1.331,0.601) (1.373,0.583) (1.415,0.565) (1.457,0.549) (1.499,0.534) (1.541,0.519) (1.583,0.505) (1.625,0.492) (1.667,0.480) (1.709,0.468) (1.751,0.457) (1.793,0.446) (1.835,0.436) (1.877,0.426) (1.919,0.417) (1.961,0.408) (2.003,0.399) (2.045,0.391) (2.087,0.383) (2.129,0.376) (2.171,0.368) (2.213,0.361) (2.255,0.355) (2.297,0.348) (2.339,0.342) (2.381,0.336) (2.423,0.330) (2.465,0.325) (2.507,0.319) (2.549,0.314) (2.591,0.309) (2.633,0.304) (2.675,0.299) (2.717,0.294) (2.759,0.290) (2.802,0.286) (2.844,0.281) (2.886,0.277) (2.928,0.273) (2.970,0.269) (3.012,0.266) (3.054,0.262) (3.096,0.258) (3.138,0.255) (3.180,0.252) (3.222,0.248) (3.264,0.245) (3.306,0.242) (3.348,0.239) (3.390,0.236) (3.432,0.233) (3.474,0.230) (3.516,0.228) (3.558,0.225) (3.600,0.222)};
+\node[blue!70!black, font=\scriptsize, anchor=west] at (1.25,0.99) {$t = \beta(x_0, 1) = 1/x_0$};
+\foreach \x in {0.7,1.5,2.6} { \draw[thick, black!70, ->] (\x,-2.6) -- (\x,{0.8/\x}); \fill[white, draw=black!70] (\x,{0.8/\x}) circle (1.2pt); }
+\node[font=\scriptsize, align=center] at (2.2,-1.4) {$\mathcal{D} \cap \{y_0 = 1\}$};
+\node[font=\scriptsize, anchor=west, align=left] at (4.4,1.6) {each vertical segment is\\ $(\alpha(p), \beta(p)) \times \{p\}$,\\ $\alpha(p) = -\infty$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The flow domain of Example~\ref{ex:finite-escape}, sliced at $y_0 = 1$. Over each initial point $p = (x_0, 1)$ the domain is the vertical half-line $t < 1/x_0$, open at the top. These segments fill the region below the hyperbola $t = 1/x_0$, which is open.
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -28458,9 +28770,11 @@ $\Gamma = \{(x, g \cdot x)\}$, the orbit relation & $\mathcal{O} = \{(g \cdot p,
 $H_{x_0}$, the isotropy group & $G_p$ & Definition~\ref{def:isotropy}. \\
 $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ & $F : G/G_p \to M$ & Theorem~\ref{thm:GH-homeo}; Lee, Theorem 21.18. \\
 $\mathfrak{g} = T^{\geo}_I G$; from \ref{sec:lie-groups}, the left-invariant fields & $\mathrm{Lie}(G) \cong T_eG$ & Before \ref{sec:lie-groups} the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition~\ref{def:lie-algebra-of-group} it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem~\ref{thm:lie-algebra-TeG}. \\
+$\varphi_t(q) = \varphi_q(t) = \varphi(t, q)$; $\dot c(t)$ & $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ & The flow and its integral curves (Definition~\ref{def:flow-notation}); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. \\
 $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ & Example 1.23: the chart $x^3$ & Two different non-standard structures --- the transition map between them is $y \mapsto y^9$ --- both diffeomorphic to $\mathbb{R}$ (Corollary~\ref{cor:single-chart-Rn}). \\
 \bottomrule
 \end{longtable}
+
 
 \section*{A.2\quad Where the routes diverge}
 \addcontentsline{toc}{section}{A.2\quad Where the routes diverge}
@@ -28523,9 +28837,12 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:sard}\ Sard's theorem & Chapter 6, \emph{Sard's Theorem} (Theorem 6.10, Corollary 6.11) \\
 \ref{sec:parametric-transversality}\ Parametric transversality & Chapter 6, \emph{The Transversality Homotopy Theorem} (Theorem 6.35) \\
 \ref{sec:whitney}\ The Whitney embedding theorem & Chapter 6, \emph{The Whitney Embedding Theorem} (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20--2.22 (bump functions); Proposition 2.28 (exhaustion functions) \\
-\ref{sec:partitions-of-unity}\ Partitions of unity & Chapter 2, \emph{Partitions of Unity} (Lemmas 2.20--2.22, Theorem 2.23); Chapter 1, \emph{Paracompactness} (Theorem 1.15); Proposition A.60 \\
+\ref{sec:partitions-of-unity}\ Partitions of unity & Chapter 2, \emph{Partitions of Unity} (Lemmas 2.20--2.22, Theorem 2.23); Chapter 1, \emph{Paracompactness} (Theorem 1.15); Proposition A.60; Chapter 2, \emph{Applications of Partitions of Unity} (Proposition 2.28) \\
+\ref{sec:integral-curves}\ Integral curves & Chapter 9, \emph{Integral Curves} (Example 9.1, (9.1), Example 9.10); Appendix D (Theorem D.1) \\
+\ref{sec:flows}\ Flows & Chapter 9, \emph{Flows} (Theorem 9.12) \\
 \bottomrule
 \end{longtable}
+
 
 \section*{A.4\quad Index from Lee to these notes}
 \addcontentsline{toc}{section}{A.4\quad Index from Lee to these notes}
@@ -28572,7 +28889,7 @@ Lemma 2.22 & Lem.~\ref{lem:plateau} \\
 Theorem 2.23 & Thm.~\ref{thm:partition-of-unity} \\
 Proposition 2.25 & Prop.~\ref{prop:germ-global}, Prop.~\ref{prop:bump-existence} \\
 Lemma 2.26 & Cor.~\ref{cor:germ-extension} \\
-Proposition 2.28 & Prop.~\ref{prop:exhaustion-exists} \\
+Proposition 2.28 & Prop.~\ref{prop:exhaustion-exists}, Lem.~\ref{lem:precompact-cover} \\
 Lemma 3.1 & Lem.~\ref{lem:derivation-properties} \\
 Proposition 3.2 & Def.~\ref{def:Dv}, Prop.~\ref{prop:Dv-determines-v}, Lem.~\ref{lem:hadamard}, Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:ambient-abstract} \\
 Corollary 3.3 & Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:tangent-basis}, Prop.~\ref{prop:differential-agree} \\
@@ -28643,6 +28960,9 @@ Theorem 8.37 & Def.~\ref{def:left-invariant-extension}, Lem.~\ref{lem:left-invar
 Proposition 8.41 & Thm.~\ref{thm:linear-group-bracket} \\
 Theorem 8.44 & Lem.~\ref{lem:morphism-related}, Prop.~\ref{prop:morphism-preserves-bracket} \\
 Theorem 8.46 & Thm.~\ref{thm:linear-group-bracket} \\
+Example 9.1 & Ex.~\ref{ex:rotation-flow} \\
+Example 9.10 & Ex.~\ref{ex:finite-escape} \\
+Theorem 9.12 & Thm.~\ref{thm:maximal-flow} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
@@ -28691,10 +29011,12 @@ Corollary C.25 & Lem.~\ref{lem:measure-zero-basic} \\
 Theorem C.34 & Thm.~\ref{thm:inverse-function} \\
 Example C.37 & Ex.~\ref{ex:polar-derivations} \\
 Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
+Theorem D.1 & Thm.~\ref{thm:ode-local} \\
 %LEE-INDEX-ROWS-END
 \bottomrule
 \end{longtable}
 }
+
 
 \end{document}
 

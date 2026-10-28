@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (2)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (75), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (39), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (37), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (32), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (19), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (3)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (75), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (39), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (37), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (32), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (19), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (5)
 **Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (66), [[Multivariable Analysis]] (5)
 
 ## Sections
@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 270 later results
-- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 269 later results
-- [[§4 Quotient Spaces and Open Maps#^prop-4-1|Proposition §4.1: The Quotient Topology Is the Finest Making π Continuous]]: 265 later results
-- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 264 later results
+- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 273 later results
+- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 271 later results
+- [[§4 Quotient Spaces and Open Maps#^prop-4-1|Proposition §4.1: The Quotient Topology Is the Finest Making π Continuous]]: 267 later results
+- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 266 later results

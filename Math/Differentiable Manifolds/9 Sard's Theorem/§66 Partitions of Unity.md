@@ -5,7 +5,7 @@ chapter: 9
 section: 66
 tags: [differentiable-manifolds, math591]
 ---
-← [[§65 The Whitney Embedding Theorem]] · ↑ [[· 9 Sard's Theorem]]
+← [[§65 The Whitney Embedding Theorem]] · ↑ [[· 9 Sard's Theorem]] · [[§67 Integral Curves]] →
 
 *Stage: analysis — Writing $1$ as a locally finite sum of smooth functions subordinate to any open cover: the tool for gluing local constructions into global ones.*
 
@@ -132,7 +132,7 @@ The proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$, 
 
 ^pf-66-5
 
-> [!proof]+ Proof of Theorem [[§66 Partitions of Unity#^thm-66-1|§66.1]] (begun in Lecture 22, to be completed in Lecture 23)
+> [!proof]+ Proof of Theorem [[§66 Partitions of Unity#^thm-66-1|§66.1]] (begun in Lecture 22; completed, following Lee)
 > *(The lecture's steps; Uribe stopped here: “I will finish the proof next time.”)* By Theorem [[§66 Partitions of Unity#^thm-66-4|§66.4]] with the basis of Lemma [[§66 Partitions of Unity#^lem-66-5|§66.5]], there is a countable, locally finite refinement $\{B_i\}_{i \in \mathbb{N}}$ of $\{U_\alpha\}$ covering $M$, each $B_i$ a regular coordinate ball with chart $(U_i, \varphi_i)$, $\varphi_i(B_i) = B_{\delta_i}(0)$, $B_{\varepsilon_i}(0) \subseteq \varphi_i(U_i)$, and $U_i \subseteq U_{\alpha(i)}$. “Pull back the function $f$ from the first part” (Lemma [[§66 Partitions of Unity#^lem-66-2|§66.2]], with $\delta_i < \varepsilon_i$) by $\varphi_i$, and extend it by zero: this gives a smooth $f_i : M \to \mathbb{R}$, as in step 3 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]], with
 >
 > $$
@@ -148,11 +148,99 @@ The proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$, 
 >
 > “What we don't have [yet] is the index”: grouping the $g_i$ by $\alpha(i)$ re-indexes the partition by $A$.
 >
-> *To be completed in Lecture 23*: that the sums are locally finite, so that $\sum_j f_j$, the $g_i$ and the $\chi_\alpha$ are smooth, and that $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. One point to watch there: local finiteness of $\{B_i\}$ does not by itself make $\{\operatorname{supp} f_i\}$ locally finite, since $\operatorname{supp} f_i$ sits in the larger ball $\varphi_i^{-1}(B_{\varepsilon_i}(0))$, not in $\overline{B_i}$. Lee's proof of Theorem 2.23 avoids this by taking $f_i$ positive on $B_i$ and supported in $\overline{B_i}$, and using that the closures of a locally finite family are locally finite.
+> *(Lecture 23 went straight on to an application, [[§66 Partitions of Unity|§66]]; the rest is the assigned reading, Lee's proof of Theorem 2.23. Completed here, following Lee.)* What remains: the sums are locally finite, so that $\sum_j f_j$, the $g_i$ and the $\chi_\alpha$ are smooth, and $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. One point needs care. Local finiteness of $\{B_i\}$ does not by itself make $\{\operatorname{supp} f_i\}$ locally finite, since $\operatorname{supp} f_i$ sits in the larger ball $\varphi_i^{-1}(B_{\varepsilon_i}(0))$, not in $\overline{B_i}$. Lee avoids this by choosing $f_i$ positive on $B_i$ and supported in $\overline{B_i}$. That is the only change to the lecture's construction: $f_i$ is no longer $\equiv 1$ on $B_i$, only positive there, which is all the division needs.
+>
+> *Two facts about a locally finite family $\{A_i\}$ of subsets.* (a) $\{\overline{A_i}\}$ is locally finite: an open set meeting $\overline{A_i}$ meets $A_i$. (b) If each $A_i$ is closed, then $\bigcup_i A_i$ is closed: for $p \notin \bigcup_i A_i$, take an open $W \ni p$ meeting only $A_{i_1}, \ldots, A_{i_k}$; then $W \setminus (A_{i_1} \cup \cdots \cup A_{i_k})$ is an open neighbourhood of $p$ missing every $A_i$.
+>
+> *The new $f_i$.* With $h$ as in step 1 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]] ($h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$), put
+>
+> $$
+> f_i = h\big(\delta_i^2 - |\varphi_i|^2\big) \ \text{ on } U_i, \qquad f_i = 0 \ \text{ on } M \setminus U_i .
+> $$
+>
+> $f_i > 0$ exactly on $B_i = \varphi_i^{-1}(B_{\delta_i}(0))$. The set $K_i = \varphi_i^{-1}\big(\overline{B}_{\delta_i}(0)\big)$ is compact ($\overline{B}_{\delta_i}(0) \subseteq B_{\varepsilon_i}(0) \subseteq \varphi_i(U_i)$, and $\varphi_i^{-1}$ is continuous), hence closed in $M$. So $f_i$ is smooth, as it is smooth on the open set $U_i$ and zero on the open set $M \setminus K_i$, which together cover $M$ (as in step 3 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]). Its support is $\overline{B_i} = K_i$: $K_i$ is closed and contains $B_i$, and every point of $K_i$ is a limit of points of $B_i$.
+>
+> *Smoothness.* By (a) the supports $\overline{B_i}$ form a locally finite family. Each $p$ has an open neighbourhood $W$ on which all but finitely many $f_j$ vanish, so on $W$ the sum $\sum_j f_j$ is a finite sum of smooth functions; hence $\sum_j f_j$ is smooth. It is positive everywhere, because the $B_i$ cover $M$ and $f_i > 0$ on $B_i$. So $g_i = f_i / \sum_j f_j$ is smooth, $0 \le g_i \le 1$, $\operatorname{supp} g_i = \overline{B_i} \subseteq U_i \subseteq U_{\alpha(i)}$, and $\sum_i g_i \equiv 1$.
+>
+> *Re-indexing.* For $\alpha \in A$ let $\chi_\alpha = \sum_{i : \alpha(i) = \alpha} g_i$, with the empty sum $0$. On $W$ as above, only finitely many terms are nonzero, so $\chi_\alpha$ is smooth; and $0 \le \chi_\alpha \le \sum_i g_i = 1$. Each $i$ has exactly one $\alpha(i)$, so $\sum_\alpha \chi_\alpha = \sum_i g_i \equiv 1$. The set $\{\chi_\alpha \neq 0\}$ lies in $\bigcup_{\alpha(i) = \alpha} \overline{B_i}$, which is closed by (b), so
+>
+> $$
+> \operatorname{supp}\chi_\alpha \subseteq \bigcup_{i \,:\, \alpha(i) = \alpha} \overline{B_i} \subseteq U_\alpha .
+> $$
+>
+> Finally, $W$ meets $\operatorname{supp}\chi_\alpha$ only if it meets some $\overline{B_i}$ with $\alpha(i) = \alpha$, and $W$ meets only finitely many $\overline{B_i}$. So $\{\operatorname{supp}\chi_\alpha\}$ is locally finite, and $\{\chi_\alpha\}_{\alpha \in A}$ is a partition of unity subordinate to $\{U_\alpha\}$.
 
-^pf-66-5-2
+^pf-66-1
 
 *Uses:* [[§66 Partitions of Unity#^thm-66-4|§66.4]], [[§66 Partitions of Unity#^lem-66-2|§66.2]], [[§56 Vector Fields#^prop-56-4|§56.4]]
 
 **Transcription note (Lecture 22).** Page 58 of the handwritten notes states the theorem “if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)”; as stated it is false in general, and local compactness, which manifolds have, is the missing hypothesis (Remark [[§66 Partitions of Unity#^rem-66-1|remark]]).
 
+## An Application: Exhaustion Functions
+
+*Lecture 23. “I do want to tell you about the application of partitions of unity that we need for the sketch of the Whitney embedding theorem, the noncompact case”: the existence of exhaustion functions (Definition [[§65 The Whitney Embedding Theorem#^def-65-1|§65.1]], Proposition [[§65 The Whitney Embedding Theorem#^prop-65-5|§65.5]]). “The proof will be quick using partitions of unity.”*
+
+The proof starts from a countable cover by open sets with compact closures, which was set as an exercise.
+
+> [!theorem] Lemma §66.6: Countable Precompact Covers
+> Every manifold $M$ has a countable open cover $\{V_i\}_{i \ge 1}$ such that $\overline{V_i}$ is compact for every $i$.
+>
+> *Lee: Proposition 2.28 (proof)*
+
+^lem-66-6
+
+> [!proof]+ Proof
+> *(Set in Lecture 23 as an exercise: “The argument that I have in mind uses paracompactness. Maybe you have another way of doing it.” Filled in, by paracompactness.)* Every $p \in M$ has an open neighbourhood $W_p$ with $\overline{W_p}$ compact (Proposition [[§2 Topological Manifolds#^prop-2-12|§2.12]]). By Theorem [[§66 Partitions of Unity#^thm-66-4|§66.4]] the cover $\{W_p\}_{p \in M}$ has a countable open refinement $\{V_i\}$ covering $M$; if it is finite, repeat one of its sets to index it by $i \ge 1$. Each $V_i$ lies in some $W_{p(i)}$, so $\overline{V_i}$ is a closed subset of the compact set $\overline{W_{p(i)}}$, hence compact. (Another way: the countable basis of precompact sets built in the proof of Lemma [[§66 Partitions of Unity#^lem-66-3|§66.3]] is already such a cover. Local finiteness of the refinement is not needed here.)
+
+^pf-66-6
+
+*Uses:* [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§66 Partitions of Unity#^lem-66-3|§66.3]], [[§66 Partitions of Unity#^thm-66-4|§66.4]]
+
+> [!proof]+ Proof of Proposition [[§65 The Whitney Embedding Theorem#^prop-65-5|§65.5]]
+> *(Lecture 23.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§66 Partitions of Unity#^lem-66-6|§66.6]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§66 Partitions of Unity#^thm-66-1|§66.1]]). Reviewing what this means (Definition [[§66 Partitions of Unity#^def-66-1|§66.1]]):
+>
+> 1. $0 \le \chi_i \le 1$ for all $i$;
+> 2. $\{\operatorname{supp}\chi_i\}$ is locally finite;
+> 3. $\sum_i \chi_i(p) = 1$ for all $p \in M$ — a finite sum at each point, by (2);
+> 4. $\operatorname{supp}\chi_i \subseteq V_i$ for all $i$ — “that's the subordinate part.”
+>
+> “The clever construction” is to define
+>
+> $$
+> f = \sum_{j \ge 1} j\, \chi_j .
+> $$
+>
+> “If you don't put the $j$, you get one. But the clever idea is to put $j$ in front.” Again this is a locally finite sum of smooth functions, so $f$ is smooth; and $f \ge 0$ because the $\chi_j$ are nonnegative (in fact $f \ge \sum_j \chi_j = 1$). It remains to show that the sublevel sets are compact.
+>
+> *Claim.* For every $c \in \mathbb{R}$ and every integer $N \ge 0$ with $N \ge c$,
+>
+> $$
+> f^{-1}\big((-\infty, c]\big) \subseteq \bigcup_{i=1}^N V_i \subseteq \bigcup_{i=1}^N \overline{V_i} .
+> $$
+>
+> *The claim implies the proposition.* $\bigcup_{i=1}^N \overline{V_i}$ is a finite union of compact sets, so it is compact. $f^{-1}((-\infty, c])$ is closed, since $f$ is continuous, and a closed subset of a compact set is compact.
+>
+> *Proof of the claim.* We prove the contrapositive. Let $p \notin \bigcup_{i=1}^N V_i$. For $i = 1, \ldots, N$, $p \notin V_i \supseteq \operatorname{supp}\chi_i$, so $\chi_i(p) = 0$. Hence the sum defining $f(p)$ really starts at $N + 1$, and since every coefficient is at least $N + 1$ (“an $\ell^1$–$\ell^\infty$ estimate, or whatever”),
+>
+> $$
+> f(p) = \sum_{j = N+1}^\infty j\, \chi_j(p) \ \ge\ (N + 1) \underbrace{\sum_{j = N+1}^\infty \chi_j(p)}_{=\, \sum_j \chi_j(p) \,=\, 1} = N + 1 > c .
+> $$
+>
+> So $p \notin f^{-1}((-\infty, c])$.
+
+^pf-65-5-2
+
+*Uses:* [[§66 Partitions of Unity#^lem-66-6|§66.6]], [[§66 Partitions of Unity#^thm-66-1|§66.1]], [[§66 Partitions of Unity#^def-66-1|Def. §66.1]]
+
+> [!remark] Remark: Why the Closures
+> A student asked whether the contrapositive should use the union of the *closures*. Uribe: the proof shows the inclusion in $\bigcup_{i \le N} V_i$, and that “is contained in the union of the closures, so it doesn't make a difference.” The open sets give the stronger statement; the closures are where compactness lives, since the $V_i$ were chosen so that the $\overline{V_i}$ are compact, and $\bigcup_{i \le N} V_i$ alone need not be compact. “It is important that in the end I end up in here.” Lee runs the contrapositive from $p \notin \bigcup_{j \le N} \overline{V_j}$ instead (Proposition 2.28); either way the sublevel set lands inside the compact set $\bigcup_{j \le N} \overline{V_j}$.
+
+^rem-66-2
+
+![[m591-66-5.svg]]
+
+*(Not from lecture; figure added, computed.)* The construction on $M = \mathbb{R}$, with $V_1 = (-1, 1)$ and $V_j = \{ j - 1.6 < |x| < j \}$ for $j \ge 2$, and $\chi_j$ obtained by normalizing bumps positive exactly on $V_j$. Then $f = \sum_j j\chi_j$ climbs one step on each successive $V_j$, so it grows like $|x|$. The sublevel set $f^{-1}((-\infty, 2.5])$ (red) lies inside $\overline{V_1} \cup \overline{V_2} \cup \overline{V_3} = [-3, 3]$, as the claim with $N = 3$ says.
+
+“This technique of using partitions of unity is a very common technique in this subject, and the best way to learn to use it is to use it in a homework problem with hints.” The next assignment will have “at least one, maybe a couple of applications of partitions of unity.”
+
+**Transcription note (Lecture 23).** The board defined $f = \sum_{j \ge 0} j\chi_j$ but wrote the union in the claim from $i = 1$ (Uribe: “wherever your index starts”). These notes index the cover and the partition from $1$, as Lee does. If the index starts at $0$, the union in the claim must start at $i = 0$ too. Otherwise a point of $V_0$ outside $V_1, \ldots, V_N$ can have $f(p) = \sum_{j > N} j\chi_j(p) < N + 1$, since then $\sum_{j > N}\chi_j(p) = 1 - \chi_0(p)$.

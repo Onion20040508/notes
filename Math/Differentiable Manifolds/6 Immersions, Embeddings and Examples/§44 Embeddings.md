@@ -27,7 +27,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 > - Homeomorphisms in 590: [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].
 
 ![[m591-33-1.svg]]
-*An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§43 Immersions#Images of Immersions|§41]]) is an injective immersion for which the top arrow is not a homeomorphism.*
+*An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§43 Immersions#Images of Immersions|§43]]) is an injective immersion for which the top arrow is not a homeomorphism.*
 
 The standard non-example is the *irrational line on the torus*: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$. It is an injective immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) whose image is dense in $T^2$, and it is not an embedding ([[§44 Embeddings#^prop-44-12|Proposition §44.12]] below, from Assignment 4, Problem 5; Lee, Example 4.20). In lecture its image was also said not to be a regular submanifold of $T^2$ ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]).
 

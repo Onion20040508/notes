@@ -27,7 +27,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Immersion Normal Form|Theorem §43.1: Local Normal Form for Immersions]]: 50 later results
-- [[§43 Immersions#^cor-43-2|Corollary §43.2: The Local Image of an Immersion]]: 49 later results
-- [[Images of Embeddings Are Submanifolds|Theorem §44.1: The Image of an Embedding Is a Regular Submanifold]]: 48 later results
-- [[§44 Embeddings#^prop-44-4|Proposition §44.4: Proper Maps into Manifolds Are Closed]]: 39 later results
+- [[Immersion Normal Form|Theorem §43.1: Local Normal Form for Immersions]]: 51 later results
+- [[§43 Immersions#^cor-43-2|Corollary §43.2: The Local Image of an Immersion]]: 50 later results
+- [[Images of Embeddings Are Submanifolds|Theorem §44.1: The Image of an Embedding Is a Regular Submanifold]]: 49 later results
+- [[§44 Embeddings#^prop-44-4|Proposition §44.4: Proper Maps into Manifolds Are Closed]]: 40 later results

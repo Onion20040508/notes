@@ -27,6 +27,7 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $H_{x_0}$, the isotropy group | $G_p$ | Definition [[§14 Homogeneous Spaces#^def-14-3\|§14.3]]. |
 | $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ | $F : G/G_p \to M$ | Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]; Lee, Theorem 21.18. |
 | $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4\|§60.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7\|§60.7]]. |
+| $\varphi_t(q) = \varphi_q(t) = \varphi(t, q)$; $\dot c(t)$ | $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ | The flow and its integral curves (Definition [[§67 Integral Curves#^def-67-2\|§67.2]]); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. |
 | $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-9\|§19.9]]). |
 
 ## A.2 Where the routes diverge
@@ -84,7 +85,9 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§63 Sard's Theorem\|§63]] Sard's theorem | Chapter 6, *Sard's Theorem* (Theorem 6.10, Corollary 6.11) |
 | [[§64 Parametric Transversality\|§64]] Parametric transversality | Chapter 6, *The Transversality Homotopy Theorem* (Theorem 6.35) |
 | [[§65 The Whitney Embedding Theorem\|§65]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
-| [[§66 Partitions of Unity\|§66]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60 |
+| [[§66 Partitions of Unity\|§66]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60; Chapter 2, *Applications of Partitions of Unity* (Proposition 2.28) |
+| [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* (Example 9.1, (9.1), Example 9.10); Appendix D (Theorem D.1) |
+| [[§68 Flows\|§68]] Flows | Chapter 9, *Flows* (Theorem 9.12) |
 
 ## A.4 Index from Lee to these notes
 
@@ -127,7 +130,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 2.23 | [[§66 Partitions of Unity#^thm-66-1\|Thm. §66.1]] |
 | Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§56 Vector Fields#^prop-56-4\|Prop. §56.4]] |
 | Lemma 2.26 | [[§56 Vector Fields#^cor-56-5\|Cor. §56.5]] |
-| Proposition 2.28 | [[§65 The Whitney Embedding Theorem#^prop-65-5\|Prop. §65.5]] |
+| Proposition 2.28 | [[§65 The Whitney Embedding Theorem#^prop-65-5\|Prop. §65.5]], [[§66 Partitions of Unity#^lem-66-6\|Lem. §66.6]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
 | Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]] |
 | Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
@@ -198,6 +201,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.41 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
 | Theorem 8.44 | [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1\|Lem. §61.1]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2\|Prop. §61.2]] |
 | Theorem 8.46 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
+| Example 9.1 | [[§67 Integral Curves#^ex-67-1\|Ex. §67.1]] |
+| Example 9.10 | [[§67 Integral Curves#^ex-67-2\|Ex. §67.2]] |
+| Theorem 9.12 | [[§68 Flows#^thm-68-1\|Thm. §68.1]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
@@ -246,3 +252,4 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem C.34 | [[§35 Local Diffeomorphisms#^thm-35-1\|Thm. §35.1]] |
 | Example C.37 | [[§30 The Differential in Coordinates#^ex-30-1\|Ex. §30.1]] |
 | Theorem C.40 | [[§7 The Regular Value Theorem#^thm-7-1\|Thm. §7.1]], [[§7 The Regular Value Theorem#^cor-7-2\|Cor. §7.2]] |
+| Theorem D.1 | [[§67 Integral Curves#^thm-67-2\|Thm. §67.2]] |
