@@ -195,7 +195,7 @@ tags: [group-theory, math493]
 *Uses:* [[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]]
 
 > [!theorem] Theorem §52.9: The Third Sylow Theorem
-> For any finite group $G$, the number of Sylow $p$-subgroups of $G$ is congruent to $1 \bmod p$.
+> For any finite group $G$, the number of Sylow $p$-subgroups of $G$ is [[§6 Divisibility and Congruence#^def-6-3|congruent]] to $1 \bmod p$ (Definition [[§6 Divisibility and Congruence#^def-6-3|§6.3]]): it equals $1 + kp$ for some integer $k \ge 0$, i.e. it leaves remainder $1$ on division by $p$.
 >
 > *Source: stated on WS 10; lecture 10/16*
 
