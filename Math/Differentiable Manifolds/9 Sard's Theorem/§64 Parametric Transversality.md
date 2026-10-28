@@ -40,13 +40,13 @@ tags: [differentiable-manifolds, math591]
 > T_{(s,p)}W = \big(dF_{(s,p)}\big)^{-1}\big(T_qZ\big) \tag{1}
 > $$
 >
-> (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]; a student supplied this in class: “it's the preimage of the tangent space of $Z$ by the differential”). $\pi$ is smooth, as the restriction of the smooth projection to a regular submanifold. Write tangent vectors to $S \times M$ as pairs $(\sigma, u) \in T_sS \oplus T_pM$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]); then $d\pi(\sigma, u) = \sigma$, and
+> (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]; a student supplied this in class: “it's the preimage of the tangent space of $Z$ by the differential”). $\pi$ is smooth, as the restriction of the smooth projection to a regular submanifold. Write tangent vectors to $S \times M$ as pairs $(\sigma, u) \in T_sS \oplus T_pM$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]); then $d\pi(\sigma, u) = \sigma$, and
 >
 > $$
 > dF_{(s,p)}(0, u) = d(F_s)_p(u), \tag{2}
 > $$
 >
-> because $F_s = F \circ \iota_s$ and $d(\iota_s)_p(u) = (0, u)$: “it's a partial derivative … when I compute this derivative, I freeze the first entry to $s$” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]).
+> because $F_s = F \circ \iota_s$ and $d(\iota_s)_p(u) = (0, u)$: “it's a partial derivative … when I compute this derivative, I freeze the first entry to $s$” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]).
 >
 > *$(\Rightarrow)$* Let $s$ be a regular value of $\pi$, and $p \in M$ with $q = F_s(p) = F(s,p) \in Z$. We must show $\operatorname{Im} d(F_s)_p + T_qZ = T_qN$; “clearly we have one inclusion.” Let $w \in T_qN$. Since $F \pitchfork Z$, there are $(\sigma, u) \in T_{(s,p)}(S \times M)$ and $v \in T_qZ$ with
 >
@@ -66,7 +66,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-64-1
 
-*Uses:* [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]]
+*Uses:* [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]]
 
 ![[m591-60-1.svg]]
 

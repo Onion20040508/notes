@@ -35,13 +35,13 @@ The proof, for $M$ compact, has two parts with “totally different” ideas: bu
 >
 > *$F$ is injective.* Suppose $F(p) = F(q)$. There is $i$ with $p \in B_i$, so $\chi_i(p) = 1$. The last $n$ components of $F$ are the $\chi$'s, so $\chi_i(q) = \chi_i(p) = 1$; in particular $\chi_i(q) \neq 0$, so $q \in U_i$, because $\chi_i$ vanishes outside $U_i$. “I don't know that $q$ is in $B_i$, but I don't care.” The $i$-th block gives $\chi_i(p)\varphi_i(p) = \chi_i(q)\varphi_i(q)$, that is, $\varphi_i(p) = \varphi_i(q)$; “the charts are bijective, so $p = q$.” “Because we put the $\chi$'s here, we are able to conclude that $p$ and $q$ … are in the same coordinate chart.”
 >
-> *$F$ is an immersion.* Write $F = (F_1, \ldots, F_n, \chi_1, \ldots, \chi_n)$ with $F_j = \chi_j\varphi_j : M \to \mathbb{R}^m$. Let $p \in M$, $v \in T_pM$, and $\gamma$ a curve with $\gamma(0) = p$ and $D_\gamma = v$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]]). “Use curves”: $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(\gamma(t)) = (v_1, \ldots, v_n, \ldots)$, with $v_j = d(F_j)_p(v) \in \mathbb{R}^m$, componentwise. Choose $i$ with $p \in B_i$. Then $\chi_i \equiv 1$ on the open set $B_i \ni p$, so $F_i = \varphi_i$ near $p$ and $v_i = d(\varphi_i)_p(v)$ — equivalently $d(\chi_i)_p = 0$, since $\chi_i \equiv 1$ in a neighbourhood of $p$. As $\varphi_i$ is a diffeomorphism onto its image (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), $v \neq 0$ gives $v_i \neq 0$, so $dF_p(v) \neq 0$: $dF_p$ is injective.
+> *$F$ is an immersion.* Write $F = (F_1, \ldots, F_n, \chi_1, \ldots, \chi_n)$ with $F_j = \chi_j\varphi_j : M \to \mathbb{R}^m$. Let $p \in M$, $v \in T_pM$, and $\gamma$ a curve with $\gamma(0) = p$ and $D_\gamma = v$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). “Use curves”: $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(\gamma(t)) = (v_1, \ldots, v_n, \ldots)$, with $v_j = d(F_j)_p(v) \in \mathbb{R}^m$, componentwise. Choose $i$ with $p \in B_i$. Then $\chi_i \equiv 1$ on the open set $B_i \ni p$, so $F_i = \varphi_i$ near $p$ and $v_i = d(\varphi_i)_p(v)$ — equivalently $d(\chi_i)_p = 0$, since $\chi_i \equiv 1$ in a neighbourhood of $p$. As $\varphi_i$ is a diffeomorphism onto its image (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), $v \neq 0$ gives $v_i \neq 0$, so $dF_p(v) \neq 0$: $dF_p$ is injective.
 >
 > *An embedding.* An injective immersion of a compact manifold is an embedding (Corollary [[§44 Embeddings#^cor-44-6|§44.6]]). “End of Part I.”
 
 ^pf-65-1
 
-*Uses:* [[§56 Vector Fields#^prop-56-4|§56.4]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§44 Embeddings#^cor-44-6|§44.6]]
+*Uses:* [[§56 Vector Fields#^prop-56-4|§56.4]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§44 Embeddings#^cor-44-6|§44.6]]
 
 ![[m591-61-1.svg]]
 

@@ -78,7 +78,7 @@ The submersion half is the lecture's definition. Immersions were listed as the t
 
 **Transcription note.** Page 28 of the handwritten notes writes the projection as $\mathbb{R}^m \times \mathbb{R}^l \to \mathbb{R}^k$; for a projection onto a factor the factor must be the target, $\mathbb{R}^k \times \mathbb{R}^l \to \mathbb{R}^k$. Projections of *product manifolds* $M_1 \times M_2 \to M_1$ are submersions for the same reason, but that needs the tangent space of a product — “they will be direct sums of tangent spaces” — which Uribe postponed to the next lecture.
 
-Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]):
+Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]):
 
 > [!example] Example §36.2: Projections of Product Manifolds Are Submersions
 > The projection $\pi_1 : M_1 \times M_2 \to M_1$ is a submersion, and so is $\pi_2$.
@@ -88,13 +88,13 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 ^ex-36-2
 
 > [!proof]+ Proof
-> Fix $p = (p_1, p_2) \in M_1 \times M_2$, and let $\iota_1 = \iota^{p_2}$ and $\iota_2 = \iota^{p_1}$ be the slice inclusions through $p$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), as in Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]. We must show that $\pi_{1\ast} : T_p(M_1 \times M_2) \to T_{p_1}M_1$ is onto. Two identities are needed. First, $\pi_1 \circ \iota_1 = \mathrm{id}_{M_1}$, since $\pi_1(\iota_1(q)) = \pi_1(q, p_2) = q$; so the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), which also gives $(\mathrm{id})_\ast = \mathrm{id}$, yields $\pi_{1\ast}\iota_{1\ast} = \mathrm{id}$. Second, $\pi_1 \circ \iota_2$ is constant, $\pi_1(\iota_2(q)) = \pi_1(p_1, q) = p_1$; so its pushforward is zero (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]), and the Chain Rule yields $\pi_{1\ast}\iota_{2\ast} = (\pi_1 \circ \iota_2)_{\ast} = 0$. With the linearity of $\pi_{1\ast}$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), for $v \in T_{p_1}M_1$ and $w \in T_{p_2}M_2$,
+> Fix $p = (p_1, p_2) \in M_1 \times M_2$, and let $\iota_1 = \iota^{p_2}$ and $\iota_2 = \iota^{p_1}$ be the slice inclusions through $p$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), as in Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]. We must show that $\pi_{1\ast} : T_p(M_1 \times M_2) \to T_{p_1}M_1$ is onto. Two identities are needed. First, $\pi_1 \circ \iota_1 = \mathrm{id}_{M_1}$, since $\pi_1(\iota_1(q)) = \pi_1(q, p_2) = q$; so the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), which also gives $(\mathrm{id})_\ast = \mathrm{id}$, yields $\pi_{1\ast}\iota_{1\ast} = \mathrm{id}$. Second, $\pi_1 \circ \iota_2$ is constant, $\pi_1(\iota_2(q)) = \pi_1(p_1, q) = p_1$; so its pushforward is zero (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]), and the Chain Rule yields $\pi_{1\ast}\iota_{2\ast} = (\pi_1 \circ \iota_2)_{\ast} = 0$. With the linearity of $\pi_{1\ast}$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), for $v \in T_{p_1}M_1$ and $w \in T_{p_2}M_2$,
 >
 > $$
 > \pi_{1\ast}\big(\Theta(v, w)\big) = \pi_{1\ast}\big(\iota_{1\ast}v + \iota_{2\ast}w\big) = \pi_{1\ast}\iota_{1\ast}v + \pi_{1\ast}\iota_{2\ast}w = v + 0 = v ,
 > $$
 >
-> by the definition of $\Theta$ in Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] and the two identities; so $\pi_{1\ast}$ is onto $T_{p_1}M_1$: given $v$, the vector $\Theta(v, 0) = \iota_{1\ast}v$ is a preimage. As $p$ was arbitrary, $\pi_1$ is a submersion.
+> by the definition of $\Theta$ in Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]] and the two identities; so $\pi_{1\ast}$ is onto $T_{p_1}M_1$: given $v$, the vector $\Theta(v, 0) = \iota_{1\ast}v$ is a preimage. As $p$ was arbitrary, $\pi_1$ is a submersion.
 >
 > For $\pi_2$ the same two arguments, with the indices $1$ and $2$ exchanged, give $\pi_{2\ast}\iota_{2\ast} = \mathrm{id}$ from $\pi_2 \circ \iota_2 = \mathrm{id}_{M_2}$, and $\pi_{2\ast}\iota_{1\ast} = 0$ from the constant map $\pi_2 \circ \iota_1$, with value $p_2$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]); hence
 >
@@ -106,7 +106,7 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 
 ^pf-ex-36-2
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
 
@@ -189,7 +189,7 @@ This is the definition of critical point Uribe sent to the class by email, and i
 ^prop-36-3
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. The argument is the one of Assignment 5, Problem 4(b), where it is applied to the restriction of a function to a regular level set; it works on any manifold.)* By Definition [[§36 Submersions#^def-36-5|§36.5]] we must show $df_p = 0$, that is, $df_p(v) = 0$ for every $v \in T_pM$. Fix $v \in T_pM$. By Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]] there is a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to M$ with $\gamma(0) = p$ and $D_\gamma = v$. Let $W$ be a neighbourhood of $p$ — an open subset of $M$ containing $p$ (Definition [[§1 Point-Set Topology Review#^def-1-4|§1.4]]) — on which $f \le f(p)$ (or $f \ge f(p)$). As $\gamma$ is continuous, $\gamma^{-1}(W)$ is open in $(-\varepsilon, \varepsilon)$ and contains $0$, so it contains an interval $(-\delta, \delta)$; for $|t| < \delta$, $(f \circ \gamma)(t) \le f(p) = (f \circ \gamma)(0)$ (or $\ge$). So the function $f \circ \gamma$ of one variable, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], has a local maximum (or minimum) at the interior point $0$, and its derivative there is $0$ (the one-variable fact: at an interior local extremum of a differentiable function the derivative vanishes). By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]],
+> *(Not from lecture; filled in. The argument is the one of Assignment 5, Problem 4(b), where it is applied to the restriction of a function to a regular level set; it works on any manifold.)* By Definition [[§36 Submersions#^def-36-5|§36.5]] we must show $df_p = 0$, that is, $df_p(v) = 0$ for every $v \in T_pM$. Fix $v \in T_pM$. By Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] there is a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to M$ with $\gamma(0) = p$ and $D_\gamma = v$. Let $W$ be a neighbourhood of $p$ — an open subset of $M$ containing $p$ (Definition [[§1 Point-Set Topology Review#^def-1-4|§1.4]]) — on which $f \le f(p)$ (or $f \ge f(p)$). As $\gamma$ is continuous, $\gamma^{-1}(W)$ is open in $(-\varepsilon, \varepsilon)$ and contains $0$, so it contains an interval $(-\delta, \delta)$; for $|t| < \delta$, $(f \circ \gamma)(t) \le f(p) = (f \circ \gamma)(0)$ (or $\ge$). So the function $f \circ \gamma$ of one variable, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], has a local maximum (or minimum) at the interior point $0$, and its derivative there is $0$ (the one-variable fact: at an interior local extremum of a differentiable function the derivative vanishes). By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]],
 >
 > $$
 > df_p(v) = D_\gamma[f] = \frac{d}{dt}\Big|_{t=0} f\big(\gamma(t)\big) = (f \circ \gamma)'(0) = 0 .
@@ -199,7 +199,7 @@ This is the definition of critical point Uribe sent to the class by email, and i
 
 ^pf-36-3
 
-*Uses:* [[§36 Submersions#^def-36-5|Def. §36.5]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§36 Submersions#^prop-36-2|§36.2]]
+*Uses:* [[§36 Submersions#^def-36-5|Def. §36.5]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§36 Submersions#^prop-36-2|§36.2]]
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$: [[§17 Optimization and Lagrange Multipliers#^thm-17-1|Fermat's theorem in Rⁿ, 452 Thm. §17.1]]; in one variable: [[§29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem, Single Variable Analysis §29.1]], [[Fermat's Theorem on Local Extrema|Calc hub]].

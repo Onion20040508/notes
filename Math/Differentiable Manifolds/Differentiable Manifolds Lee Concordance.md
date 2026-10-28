@@ -140,12 +140,12 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.9 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-8\|Lem. §28.8]] |
 | Proposition 3.10 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-8\|Cor. §29.8]] |
 | Proposition 3.13 | [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]], [[§30 The Differential in Coordinates#^cor-30-6\|Cor. §30.6]] |
-| Proposition 3.14 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|Thm. §31.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]], [[§36 Submersions#^ex-36-2\|Ex. §36.2]] |
+| Proposition 3.14 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6\|Thm. §31.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-7\|Cor. §31.7]], [[§36 Submersions#^ex-36-2\|Ex. §36.2]] |
 | Proposition 3.15 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]] |
 | Proposition 3.18 | [[§51 The Tangent Bundle#^def-51-4\|Def. §51.4]], [[§51 The Tangent Bundle#^def-51-5\|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-3\|Prop. §51.3]], [[§51 The Tangent Bundle#^prop-51-2\|Prop. §51.2]], [[§51 The Tangent Bundle#^prop-51-5\|Prop. §51.5]] |
-| Proposition 3.23 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2\|Thm. §31.2]] |
-| Proposition 3.24 | [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3\|Cor. §31.3]] |
-| Corollary 3.25 | [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|Thm. §22.3]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3\|Cor. §31.3]] |
+| Proposition 3.23 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|Thm. §31.4]] |
+| Proposition 3.24 | [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]] |
+| Corollary 3.25 | [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|Thm. §22.3]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]] |
 | Proposition 4.1 | [[§36 Submersions#^cor-36-7\|Cor. §36.7]] |
 | Theorem 4.5 | [[§35 Local Diffeomorphisms#^thm-35-2\|Thm. §35.2]] |
 | Proposition 4.6 | [[§35 Local Diffeomorphisms#^cor-35-3\|Cor. §35.3]] |
@@ -252,4 +252,4 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem C.34 | [[§35 Local Diffeomorphisms#^thm-35-1\|Thm. §35.1]] |
 | Example C.37 | [[§30 The Differential in Coordinates#^ex-30-1\|Ex. §30.1]] |
 | Theorem C.40 | [[§7 The Regular Value Theorem#^thm-7-1\|Thm. §7.1]], [[§7 The Regular Value Theorem#^cor-7-2\|Cor. §7.2]] |
-| Theorem D.1 | [[§67 Integral Curves#^thm-67-2\|Thm. §67.2]] |
+| Theorem D.1 | [[§67 Integral Curves#^thm-67-3\|Thm. §67.3]] |

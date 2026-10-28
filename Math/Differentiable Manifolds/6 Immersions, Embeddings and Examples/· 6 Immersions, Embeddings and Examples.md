@@ -7,7 +7,7 @@ tags: [chapter, differentiable-manifolds]
 # 6 Immersions, Embeddings and Examples
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (32), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (45), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (39), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (66)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (32), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (45), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (40), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (66)
 **Used by:** [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (5)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (29), [[Multivariable Analysis]] (3)
 

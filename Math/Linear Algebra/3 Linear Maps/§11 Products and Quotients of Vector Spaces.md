@@ -24,7 +24,7 @@ tags: [linear-algebra]
 > - A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-89|Product of vector spaces is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|Dimension of a product is the sum of dimensions]]. Relation to sums inside one space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|Products and direct sums]].
 > - Group version: the direct product, [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]], with its universal property in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 Prop. §18.3]].
 > - 556 calls this product the (external) direct sum: [[§1 Linear Spaces#^def-1-4|556 Def. §1.4]]; norms on it in [[§14 New Normed Spaces from Old#^prop-14-7|556 Prop. §14.7]].
-> - 591 also calls this product the direct sum: [[§21 Linear Algebra Toolkit#^def-21-7|591 Def. §21.7]]; the tangent space of a product manifold is such a direct sum, [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|591 Thm. §31.4]].
+> - 591 also calls this product the direct sum: [[§21 Linear Algebra Toolkit#^def-21-7|591 Def. §21.7]]; the tangent space of a product manifold is such a direct sum, [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|591 Thm. §31.6]].
 
 > [!theorem] Theorem 3.89: Product of vector spaces is a vector space
 > If $V_1,\dots,V_m$ are vector spaces over $\F$, then $V_1\times\dots\times V_m$ is a vector space over $\F$.

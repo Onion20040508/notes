@@ -376,7 +376,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 >
 > *The curves.* Write $u_1 = i$, $u_2 = j$, $u_3 = k$, so $\gamma_j(t) = \cos t + \sin t\, u_j$. Its coordinates are $\cos t$ in slot $0$, $\sin t$ in slot $j$, and $0$ elsewhere, so $|\gamma_j(t)|^2 = \cos^2 t + \sin^2 t = 1$: $\gamma_j$ is a smooth curve in $S^3$ (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)), with $\gamma_j(0) = 1$. As a curve in $\mathbb{R}^4 = \mathbb{H}$ its derivative is $\gamma_j'(0) = -\sin 0 + \cos 0\, u_j = u_j$; by the curve statement of Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], this is its velocity in $T_1 S^3$. So the velocities are $i, j, k$.
 >
-> *The $\sigma_j$.* By the chain rule for curves (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]), $F_{\ast1}(\gamma_j'(0)) = (F \circ \gamma_j)'(0)$, and $F \circ \gamma_j$ is a curve in $\mathrm{SU}(2) \subseteq \operatorname{Mat}(2, \mathbb{C})$, so its velocity is the entrywise derivative. Substituting the coordinates of $\gamma_j(t)$ into the formula of Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]](2) — $(x_0, x_1, x_2, x_3) = (\cos t, \sin t, 0, 0)$, $(\cos t, 0, \sin t, 0)$, $(\cos t, 0, 0, \sin t)$ — and using $\cos t \mp i \sin t = e^{\mp it}$,
+> *The $\sigma_j$.* By the chain rule for curves (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]), $F_{\ast1}(\gamma_j'(0)) = (F \circ \gamma_j)'(0)$, and $F \circ \gamma_j$ is a curve in $\mathrm{SU}(2) \subseteq \operatorname{Mat}(2, \mathbb{C})$, so its velocity is the entrywise derivative. Substituting the coordinates of $\gamma_j(t)$ into the formula of Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]](2) — $(x_0, x_1, x_2, x_3) = (\cos t, \sin t, 0, 0)$, $(\cos t, 0, \sin t, 0)$, $(\cos t, 0, 0, \sin t)$ — and using $\cos t \mp i \sin t = e^{\mp it}$,
 >
 > $$
 > F(\gamma_1(t)) = \begin{pmatrix} e^{-it} & 0 \\ 0 & e^{it} \end{pmatrix}, \quad
@@ -412,7 +412,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-47-6
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]]
 
 > [!proof]+ Second proof of the formulas for the $\sigma_j$: curves from a hyperspherical chart (the submitted solution)
 >
@@ -457,7 +457,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > \sigma_j = F_{\ast,\vec e_0}(\vec e_j) \in T_I\,\mathrm{SU}(2) \subseteq \mathrm{Mat}(2, \mathbb{C}), \qquad j = 1, 2, 3.
 > $$
 >
-> **Computing $\sigma_j$ with curves.** We use two results from lecture. First, every tangent vector is a velocity ([[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2]]): if $D \in T_p M$ and $(U, \psi)$ is a chart at $p$ with $D = \sum_i a^i \frac{\partial}{\partial y^i}\big|_p$, then $\gamma = \psi^{-1} \circ \ell$, where $\ell(t) = \psi(p) + t\,a$, is a smooth curve with $\gamma(0) = p$ and [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|velocity]] $D_\gamma = D$. Second, the chain rule for curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3]]): for a smooth map $G$, $G_{\ast,p}(D_\gamma) = D_{G \circ \gamma}$. For a curve in $\mathbb{R}^4$ or in $\mathrm{Mat}(2, \mathbb{C})$, the velocity is the ordinary derivative at $t = 0$, computed entry by entry.
+> **Computing $\sigma_j$ with curves.** We use two results from lecture. First, every tangent vector is a velocity ([[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4]]): if $D \in T_p M$ and $(U, \psi)$ is a chart at $p$ with $D = \sum_i a^i \frac{\partial}{\partial y^i}\big|_p$, then $\gamma = \psi^{-1} \circ \ell$, where $\ell(t) = \psi(p) + t\,a$, is a smooth curve with $\gamma(0) = p$ and [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|velocity]] $D_\gamma = D$. Second, the chain rule for curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|Corollary §31.5]]): for a smooth map $G$, $G_{\ast,p}(D_\gamma) = D_{G \circ \gamma}$. For a curve in $\mathbb{R}^4$ or in $\mathrm{Mat}(2, \mathbb{C})$, the velocity is the ordinary derivative at $t = 0$, computed entry by entry.
 >
 > *The curves.* We use the chart at $\vec e_0$ constructed above, restricted to $S^3$, that is, the induced chart $(y^1, y^2, y^3)$ with $\psi(\vec e_0) = (\frac{\pi}{2}, \frac{\pi}{2}, 0)$ and $\psi^{-1}(y^1, y^2, y^3) = \tilde\Phi(1, y^1, y^2, y^3)$, where
 >
@@ -498,7 +498,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-47-6-2
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-2|Def. §47.2]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|§47.2]], [[§47 The Unit Quaternions and SU(2)#^prop-47-3|§47.3]], [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-2|Def. §47.2]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|§47.2]], [[§47 The Unit Quaternions and SU(2)#^prop-47-3|§47.3]], [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]
 
 > [!remark]- Connections
 > - The tangent space of $\mathrm{U}(n)$ at the identity: [[§25 The Geometric Tangent Space#^ex-25-3|Ex. §25.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]].

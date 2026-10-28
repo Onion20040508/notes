@@ -251,14 +251,14 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > \mathbf{X}^v f = \partial_v\varphi \in C^\infty(G),
 > $$
 >
-> the partial derivative of $\varphi$ in the second variable in the direction $v$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]). Hence $\mathbf{X}^v$ is smooth: $\mathbf{X}^v \in \mathfrak{g}$, a left-invariant vector field with $\mathbf{X}^v_e = v$.
+> the partial derivative of $\varphi$ in the second variable in the direction $v$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]). Hence $\mathbf{X}^v$ is smooth: $\mathbf{X}^v \in \mathfrak{g}$, a left-invariant vector field with $\mathbf{X}^v_e = v$.
 >
 > *Lee: proof of Theorem 8.37*
 
 ^prop-60-6
 
 > [!proof]+ Proof
-> *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: “The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point … and we don't have the tools to do that at this point.” Lecture 18 finished it — “in fact, we can just use this partial derivative construction” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1) and (2)), Lee's term for a section not yet known to be smooth: “the piece of the construction that has not been justified is that this thing is smooth.”
+> *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: “The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point … and we don't have the tools to do that at this point.” Lecture 18 finished it — “in fact, we can just use this partial derivative construction” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1) and (2)), Lee's term for a section not yet known to be smooth: “the piece of the construction that has not been justified is that this thing is smooth.”
 >
 > *The claim.* It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. “This function is still well defined regardless of whether $\mathbf{X}^v$ is smooth or not … because I have a vector at every point, and I can let that act on any function.” The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); “but the $a^j$ are precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$.” This is Lemma [[§56 Vector Fields#^lem-56-8|§56.8]], whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
 >
@@ -274,17 +274,17 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > \varphi : G \times G \xrightarrow{\ \text{multiplication}\ } G \xrightarrow{\ f\ } \mathbb{R}, \qquad \varphi(g, x) = f(gx) = (f \circ L_g)(x).
 > $$
 >
-> It is smooth, as the composite of the multiplication, smooth by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]], with $f$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). Fixing $g$ in the first variable, $f \circ L_g = \varphi(g, \cdot)$, so by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]], in the second variable with $w = v \in T_eG$,
+> It is smooth, as the composite of the multiplication, smooth by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]], with $f$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). Fixing $g$ in the first variable, $f \circ L_g = \varphi(g, \cdot)$, so by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]], in the second variable with $w = v \in T_eG$,
 >
 > $$
 > (\mathbf{X}^v f)(g) = v\big[\varphi(g, \cdot)\big] = \partial_v\varphi(g) .
 > $$
 >
-> “We're letting $v$ act on the second variable, and so that means that it is smooth”: $\partial_v\varphi \in C^\infty(G)$ by Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](3). By the claim, $\mathbf{X}^v$ is smooth. It is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](2)), so $\mathbf{X}^v \in \mathfrak{g}$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]]), and $\mathbf{X}^v_e = v$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1)).
+> “We're letting $v$ act on the second variable, and so that means that it is smooth”: $\partial_v\varphi \in C^\infty(G)$ by Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](3). By the claim, $\mathbf{X}^v$ is smooth. It is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](2)), so $\mathbf{X}^v \in \mathfrak{g}$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]]), and $\mathbf{X}^v_e = v$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1)).
 
 ^pf-60-6
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]]
 
 > [!theorem] Theorem §60.7: The Lie Algebra Is the Tangent Space at the Identity
 > Let $G$ be a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] with identity $e$. The evaluation map
@@ -332,7 +332,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 ![[m591-50-1.svg]]
 *The left-invariant field $\mathbf{X}^v$: the vector $v \in T_eG$ carried to $g$ by the differential of the left translation $L_g$.*
 
-**Comparison with Lee.** Lee's proof (Theorem 8.37) differentiates $f(g\,\gamma(t))$ along a curve $\gamma$ adapted to $v$, which is Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-7|§31.7]](1) applied to the function $\varphi(g, x) = f(gx)$ of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]]: $(\mathbf{X}^v f)(g) = \frac{d}{dt}\big|_{t=0} \varphi(g, \gamma(t))$. The course packages that step once and for all as the partial derivative $\partial_v\varphi$.
+**Comparison with Lee.** Lee's proof (Theorem 8.37) differentiates $f(g\,\gamma(t))$ along a curve $\gamma$ adapted to $v$, which is Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](1) applied to the function $\varphi(g, x) = f(gx)$ of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]]: $(\mathbf{X}^v f)(g) = \frac{d}{dt}\big|_{t=0} \varphi(g, \gamma(t))$. The course packages that step once and for all as the partial derivative $\partial_v\varphi$.
 
 On the proof as a whole, Uribe passed on a remark a student made in office hours: “this subject is not so much about solving problems … it's about constructing an architecture inside one's brain.”
 

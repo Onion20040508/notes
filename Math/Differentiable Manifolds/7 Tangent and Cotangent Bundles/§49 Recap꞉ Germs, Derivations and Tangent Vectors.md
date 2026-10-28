@@ -78,7 +78,7 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 
 ![[§22 The Differential of a Map Between Vector Spaces#^def-22-5]]
 
-**Step 6: back to arrows, through curves.** A smooth curve $\gamma$ with $\gamma(0) = p$ has the velocity $D_\gamma = \gamma_{\ast 0}(d/dt|_0)$, which differentiates $f$ by $D_\gamma[f] = (f \circ \gamma)'(0)$ ([[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2]]), and every tangent vector is the velocity of some curve ([[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2]]). So the arrow picture survives on every manifold, as “the velocity of a curve”, even where there is no ambient space to draw the arrow in.
+**Step 6: back to arrows, through curves.** A smooth curve $\gamma$ with $\gamma(0) = p$ has the velocity $D_\gamma = \gamma_{\ast 0}(d/dt|_0)$, which differentiates $f$ by $D_\gamma[f] = (f \circ \gamma)'(0)$ ([[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2]]), and every tangent vector is the velocity of some curve ([[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4]]). So the arrow picture survives on every manifold, as “the velocity of a curve”, even where there is no ambient space to draw the arrow in.
 
 ![[§31 Tangent Vectors as Velocities of Curves#^def-31-1]]
 
@@ -126,7 +126,7 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 
 > [!remark] Remark: Conversion Diagram for a Tangent Vector
 > 1. *Curve to derivation.* $D_\gamma[f] = (f \circ \gamma)'(0)$, the velocity (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]]).
-> 2. *Derivation to curve.* Every $D$ is a velocity: $\gamma(t) = \varphi^{-1}\big(\varphi(p) + t\,(v^1, \ldots, v^m)\big)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|§31.2]]).
+> 2. *Derivation to curve.* Every $D$ is a velocity: $\gamma(t) = \varphi^{-1}\big(\varphi(p) + t\,(v^1, \ldots, v^m)\big)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]).
 > 3. *Derivation to components.* $v^j = D[x^j] = dx^j|_p(D)$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
 > 4. *Components to derivation.* $D = \sum_j v^j\, \partial/\partial x^j|_p$, where $\partial/\partial x^j|_p[f] = \partial (f \circ \varphi^{-1})/\partial r^j\,(\varphi(p))$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]).
 > 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a submanifold $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.

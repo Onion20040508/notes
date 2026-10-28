@@ -182,7 +182,7 @@ $$
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$ this is the [[Directional Derivative Formula|directional derivative formula, 452 §9.1]], with the differential of [[§10 The Differential#^def-10-1|452 Def. §10.1]].
-> - On manifolds: agreement with the abstract differential, [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]; computing differentials by curves, [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]].
+> - On manifolds: agreement with the abstract differential, [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]; computing differentials by curves, [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]].
 
 > [!remark] Remark
 > Two things are worth isolating. First, the hypothesis that $F$ is smooth is used: it is what makes $\widetilde F$ differentiable so that the chain rule applies. A map can have all directional derivatives $\frac{d}{dt}\big|_0 F(p+tv)$ at a point without being differentiable there, and for such a map the formula defines nothing linear. Second, the formula uses the vector space structure of *both* spaces, in two different places: that of $X$ to form the line $p + tv$, and that of $Y$ to form the difference quotient $\frac1t\big(F(p+tv) - F(p)\big)$. Uribe stopped to ask the class where $Y$'s structure enters, and this is the answer. Neither can be dropped, which is why the same formula will *not* serve as the definition of the differential on a general manifold: there is no “$p + tv$” and no “$F(p+tv) - F(p)$.” That is the problem [[§25 The Geometric Tangent Space|§25]] begins to address.

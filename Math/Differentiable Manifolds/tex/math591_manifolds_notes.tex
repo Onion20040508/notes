@@ -8488,6 +8488,41 @@ D_\gamma[f] = \frac{d}{dt}\Big|_0 f_\varphi\big(c(t)\big) = \sum_{j} \frac{\part
 \]
 Each input $r^j$ of $f_\varphi$ moves at speed $(c^j)'(0)$ along the curve, and contributes $\partial f_\varphi/\partial r^j \cdot (c^j)'(0)$ to the rate of change.
 
+\begin{defbox}[Velocity at Time $t$]\deflabel{def:velocity-at-t}
+Let $\gamma : J \to M$ be a smooth curve and $t_0 \in J$. The \textbf{velocity} of $\gamma$ at time $t_0$ is
+\[
+\dot\gamma(t_0) = \frac{d\gamma}{dt}(t_0) := \gamma_{*t_0}\Big(\frac{d}{dt}\Big|_{t_0}\Big) \in T_{\gamma(t_0)}M, \qquad\text{explicitly}\qquad \dot\gamma(t_0)[f] = \frac{d}{dt}\Big|_{t=t_0} f\big(\gamma(t)\big)
+\]
+for a germ $f$ at $\gamma(t_0)$.
+\leeref{Ch.~3, \emph{Velocity Vectors of Curves}}
+\end{defbox}
+
+\textit{(Added; the notes had the velocity only at time $0$, Definition~\ref{def:velocity}, and used it at other times informally.)} There is no difference quotient on $M$, so the velocity is a tangent vector: the pushforward of the coordinate tangent vector $\frac{d}{dt}|_{t_0}$ of the $1$-manifold $J$; and the right-hand side of the explicit formula is the ordinary derivative of the real function $f \circ \gamma$, so the definition makes sense on any manifold. It is the velocity at $0$ of the shifted curve $\sigma(s) = \gamma(t_0 + s)$, since $\frac{d}{ds}|_0 f(\gamma(t_0 + s)) = \frac{d}{dt}|_{t_0} f(\gamma(t))$: so $\dot\gamma(t_0) = D_\sigma$, and $\dot\gamma(0) = D_\gamma$ when $0 \in J$. (Lee writes $\gamma'(t_0)$; these notes keep $\gamma'$ for the ordinary derivative of a curve in $\mathbb{R}^N$, as for $D_\gamma$.)
+
+\begin{corbox}[Velocity at Time $t$ in Coordinates]\thmlabel{cor:velocity-at-t-coords}
+Let $\gamma : J \to M$ be smooth, $t_0 \in J$, and $(U, \varphi)$ a chart at $\gamma(t_0)$ with coordinate functions $x^1, \ldots, x^n$. Then
+\[
+\dot\gamma(t_0) = \sum_{j=1}^n \big(x^j \circ \gamma\big)'(t_0)\, \frac{\partial}{\partial x^j}\Big|_{\gamma(t_0)} .
+\]
+Writing $x^j(t) = x^j(\gamma(t))$, this is $\dot\gamma = \sum_j \dot x^j\, \partial/\partial x^j$.
+\leeref{Ch.~3, \emph{Velocity Vectors of Curves}}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture.)} Let $\sigma(s) = \gamma(t_0 + s)$, a smooth curve with $\sigma(0) = \gamma(t_0)$, so $\dot\gamma(t_0) = D_\sigma$ (Definition~\ref{def:velocity-at-t} and the paragraph after it). By Velocity in Coordinates (Proposition~\ref{prop:velocity-coords}), $D_\sigma = \sum_j (x^j \circ \sigma)'(0)\, \partial/\partial x^j|_{\gamma(t_0)}$, and by the chain rule in one variable $(x^j \circ \sigma)'(0) = \frac{d}{ds}|_0\, x^j(\gamma(t_0 + s)) = (x^j \circ \gamma)'(t_0)$.
+\end{proof}
+
+The coefficients are ordinary derivatives, computed \emph{downstairs} on the coordinate curve $\varphi \circ \gamma$ in $\mathbb{R}^n$; the basis vectors live \emph{upstairs} in $T_{\gamma(t_0)}M$, and were themselves defined by going downstairs, $\frac{\partial}{\partial x^j}\big|_p[f] = \frac{\partial f_\varphi}{\partial r^j}(\varphi(p))$ (Definition~\ref{def:coordinate-derivation}).
+
+\begin{propbox}[Velocity at Time $t$ in a Level Set]\thmlabel{prop:velocity-at-t-level-set}
+Let $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ be a regular level set and $\gamma : J \to M$ a smooth curve, $t_0 \in J$. Then the ordinary derivative $\gamma'(t_0)$ lies in $T^{\geo}_{\gamma(t_0)}M$, and $\dot\gamma(t_0) = D_{\gamma'(t_0)}$: under the isomorphism $v \mapsto D_v$ of Theorem~\ref{thm:ambient-abstract}, the abstract velocity is the ordinary derivative.
+\leeref{Ch.~3, \emph{Velocity Vectors of Curves}}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture.)} $\gamma$ is smooth into $M$, hence smooth as a curve in $\mathbb{R}^{n+k}$. Let $\sigma(s) = \gamma(t_0 + s)$ for small $|s|$: a smooth curve in $\mathbb{R}^{n+k}$ with values in $M$, $\sigma(0) = \gamma(t_0)$ and $\sigma'(0) = \gamma'(t_0)$. So $\gamma'(t_0) \in T^{\geo}_{\gamma(t_0)}M$ by Definition~\ref{def:geometric-tangent}. For a germ $f$ at $\gamma(t_0)$, Proposition~\ref{prop:Dv-properties}(2), applied to the curve $\sigma$, gives $D_{\gamma'(t_0)}[f] = \frac{d}{ds}\big|_{0} f(\sigma(s)) = \frac{d}{dt}\big|_{t_0} f(\gamma(t)) = \dot\gamma(t_0)[f]$.
+\end{proof}
+
 \begin{thmbox}[Every Tangent Vector Is a Velocity]\thmlabel{thm:every-vector-velocity}
 For every $D \in T_pM$ there is a smooth curve $\gamma : (-\varepsilon, \varepsilon) \to M$ with $\gamma(0) = p$ and $D_\gamma = D$.
 \leeref{Proposition 3.23}
@@ -12079,7 +12114,7 @@ never vanishes --- the first component vanishes only at $t = 0$, where the secon
 \[
 \gamma_{*t}\Big(\frac{\partial}{\partial r}\Big|_t\Big) = 2t\, \frac{\partial}{\partial r^1}\Big|_{\gamma(t)} + (3t^2 - 1)\, \frac{\partial}{\partial r^2}\Big|_{\gamma(t)} ,
 \]
-which is nonzero, because the coordinate derivations are linearly independent (Theorem~\ref{thm:tangent-basis}) and the two coefficients do not both vanish. $T_t\mathbb{R}$ is spanned by $\partial/\partial r|_t$ (Theorem~\ref{thm:tangent-basis}), so a linear map on it that is nonzero on this vector has kernel $0$. Hence $\gamma_{*t}$ is injective for every $t$ (Definition~\ref{def:immersion-lecture}).
+the velocity $\dot\gamma(t)$ (Definition~\ref{def:velocity-at-t}), which is nonzero, because the coordinate derivations are linearly independent (Theorem~\ref{thm:tangent-basis}) and the two coefficients do not both vanish. $T_t\mathbb{R}$ is spanned by $\partial/\partial r|_t$ (Theorem~\ref{thm:tangent-basis}), so a linear map on it that is nonzero on this vector has kernel $0$. Hence $\gamma_{*t}$ is injective for every $t$ (Definition~\ref{def:immersion-lecture}).
 
 \emph{Not injective.} $\gamma(1) = (1 - 1, \ 1 - 1) = (0, 0)$ and $\gamma(-1) = (1 - 1, \ -1 + 1) = (0, 0)$, so $\gamma(1) = \gamma(-1) = (0, 0)$, and $\gamma$ is not injective.
 
@@ -15025,7 +15060,7 @@ It satisfies the condition: both mixed partials equal $(y^2 - x^2)/(x^2 + y^2)^2
     \frac{\partial a}{\partial y} = -\frac{(x^2 + y^2) - y \cdot 2y}{(x^2 + y^2)^2} = \frac{y^2 - x^2}{(x^2 + y^2)^2} ,
     \]
     so $\partial a/\partial y = \partial b/\partial x$ on $M$: the necessary condition of Proposition~\ref{prop:exactness-test} holds. (Compare $\theta = \tfrac12(x\,dy - y\,dx)$ of Example~\ref{ex:two-one-forms}, where the two sides are $\tfrac12$ and $-\tfrac12$.)
-    \item \emph{The test curve.} $c : \mathbb{R} \to M$, $c(t) = (\cos t, \sin t)$, the unit circle run once around in time $2\pi$. It is smooth and lands in $M$ ($|c(t)| = 1$). Its velocity at time $t$ is the tangent vector (Proposition~\ref{prop:velocity-coords}, components $(x \circ c)'(t)$, $(y \circ c)'(t)$)
+    \item \emph{The test curve.} $c : \mathbb{R} \to M$, $c(t) = (\cos t, \sin t)$, the unit circle run once around in time $2\pi$. It is smooth and lands in $M$ ($|c(t)| = 1$). Its velocity at time $t$ (Definition~\ref{def:velocity-at-t}) is the tangent vector (Proposition~\ref{prop:velocity-coords}, components $(x \circ c)'(t)$, $(y \circ c)'(t)$)
     \[
     D_c(t) = -\sin t\; \partial_x|_{c(t)} + \cos t\; \partial_y|_{c(t)} \in T_{c(t)}M .
     \]
@@ -28547,7 +28582,27 @@ A student asked whether the contrapositive should use the union of the \emph{clo
 
 \roadmark{Stage: dynamics}{Curves whose velocity is prescribed by a vector field; in coordinates, a first-order system of ODEs.}
 
-For a smooth curve $c : I \to M$ and $t \in I$, write $\dot c(t) = \frac{dc}{dt}(t) \in T_{c(t)}M$ for its velocity at time $t$: the velocity $D_\gamma$ (Definition~\ref{def:velocity}) of the shifted curve $\gamma(s) = c(t + s)$, that is, $\dot c(t) = c_{*t}\big(\frac{d}{dt}\big|_t\big)$.
+The velocity of a curve at a time $t$, from \ref{sec:velocities}:
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:velocity-at-t} (Velocity at Time $t$).} Let $\gamma : J \to M$ be a smooth curve and $t_0 \in J$. The \textbf{velocity} of $\gamma$ at time $t_0$ is
+\[
+\dot\gamma(t_0) = \frac{d\gamma}{dt}(t_0) := \gamma_{*t_0}\Big(\frac{d}{dt}\Big|_{t_0}\Big) \in T_{\gamma(t_0)}M, \qquad\text{explicitly}\qquad \dot\gamma(t_0)[f] = \frac{d}{dt}\Big|_{t=t_0} f\big(\gamma(t)\big)
+\]
+for a germ $f$ at $\gamma(t_0)$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Corollary~\ref{cor:velocity-at-t-coords} (Velocity at Time $t$ in Coordinates).} Let $\gamma : J \to M$ be smooth, $t_0 \in J$, and $(U, \varphi)$ a chart at $\gamma(t_0)$ with coordinate functions $x^1, \ldots, x^n$. Then
+\[
+\dot\gamma(t_0) = \sum_{j=1}^n \big(x^j \circ \gamma\big)'(t_0)\, \frac{\partial}{\partial x^j}\Big|_{\gamma(t_0)} .
+\]
+Writing $x^j(t) = x^j(\gamma(t))$, this is $\dot\gamma = \sum_j \dot x^j\, \partial/\partial x^j$.
+\end{quote}
+
+In this chapter curves are mostly called $c : I \to M$, with velocity $\dot c(t)$; the corollary is the board's $\dot c = \langle \dot x^1, \ldots, \dot x^m \rangle$.
+
+
 
 \begin{defbox}[Integral Curve]\deflabel{def:integral-curve}
 Let $\mathbf{X} \in \mathfrak{X}(M)$. An \textbf{integral curve} of $\mathbf{X}$ is a smooth map $c : I \to M$, where $I = (a, b) \subseteq \mathbb{R}$ is an open interval (possibly $a = -\infty$ or $b = +\infty$), such that
@@ -28559,6 +28614,26 @@ The variable $t$ is called \textbf{time}. If $0 \in I$ and $c(0) = q$, the curve
 \end{defbox}
 
 ``This is the key notion. You might have seen this in your ordinary differential equations.''
+
+\begin{propbox}[The Velocity Curve]\thmlabel{prop:velocity-curve}
+Let $c : I \to M$ be a smooth curve. Then $\dot c : I \to TM$, $t \mapsto \dot c(t)$, is a smooth curve in $TM$ lying over $c$, that is, $\pi \circ \dot c = c$. A smooth curve $c$ is an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$ if and only if $\dot c = \mathbf{X} \circ c$ as maps $I \to TM$.
+\leeref{Ch.~3, \emph{Velocity Vectors of Curves}; Ch.~9, \emph{Integral Curves}}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; added from a question: ``how is $\dot c$ defined, when $M$ is a general manifold?'')} \emph{Over $c$.} $\dot c(t) \in T_{c(t)}M$ by Definition~\ref{def:velocity-at-t}, so $\pi(\dot c(t)) = c(t)$ (Definition~\ref{def:tb-projection}).
+
+\emph{Smooth.} Let $t_0 \in I$ and $(U, \varphi = (x^1, \ldots, x^m))$ a chart at $c(t_0)$; on the open interval $I_0 = c^{-1}(U) \ni t_0$, $\dot c$ takes values in $TU$. In the chart $\tilde\varphi$ of $TM$ over $U$ (Definition~\ref{def:tb-chart}), whose last $m$ entries are the components in the coordinate basis, Corollary~\ref{cor:velocity-at-t-coords} gives
+\[
+\tilde\varphi\big(\dot c(t)\big) = \Big(x^1(c(t)), \ldots, x^m(c(t)),\ (x^1 \circ c)'(t), \ldots, (x^m \circ c)'(t)\Big), \qquad t \in I_0 ,
+\]
+smooth in $t$ because each $x^j \circ c$ is a smooth real function. So $\dot c$ is smooth near every $t_0$.
+
+\emph{The integral-curve equation.} Both $\dot c(t)$ and $\mathbf{X}_{c(t)} = (\mathbf{X} \circ c)(t)$ lie in $T_{c(t)}M$, so $(\ast)$ compares two vectors in the same tangent space, for each $t$; and $(\ast)$ for all $t \in I$ says exactly that the maps $\dot c$ and $\mathbf{X} \circ c$ from $I$ to $TM$ are equal.
+\end{proof}
+
+So an integral curve is a curve whose velocity curve in $TM$ is the field read along the curve. For a curve in a regular level set $M \subseteq \mathbb{R}^N$, the velocity $\dot c(t)$ is the ordinary derivative $c'(t)$, seen as the derivation $D_{c'(t)}$ (Proposition~\ref{prop:velocity-at-t-level-set}).
+
 
 \begin{propbox}[Integral Curves in Coordinates]\thmlabel{prop:integral-curve-coords}
 Let $M \subseteq \mathbb{R}^m$ be open, with coordinates $x^1, \ldots, x^m$, and $\mathbf{X} = \sum_i f^i\, \partial/\partial x^i$ (Proposition~\ref{prop:vf-coords}). Write a smooth curve as $c(t) = (x^1(t), \ldots, x^m(t))$, with velocity $\dot c(t) = \langle \dot x^1(t), \ldots, \dot x^m(t) \rangle$. Then $c$ is an integral curve of $\mathbf{X}$ if and only if
@@ -28575,6 +28650,17 @@ By Proposition~\ref{prop:velocity-coords}, applied at each time $t$ to the shift
 
 The angle brackets mark $\dot c$ as a vector, not a point: ``I've been trained \ldots\ that you should distinguish vectors from points.'' What the proposition shows is that $(*)$ is a \emph{system of first-order ODEs}, usually nonlinear. All the derivatives are on the left-hand side, solved for: the right-hand side involves no derivatives. And it is a genuine \emph{system}, because the equation for $\dot x^i$ involves, in principle, all of the $x$'s. (Lee: solving a system of ODEs is called ``integrating'' it, hence the name \emph{integral} curve.)
 
+\begin{rembox}[Why an Integral Curve Is an ODE]\label{rem:integral-curve-is-ode}
+\textit{(Not from lecture; added from a question: ``how did integral curves suddenly connect to ODEs?'')} The definition is already an ODE, written without coordinates. In $(\ast)$ the unknown is the curve $c$; its derivative is set equal to something that depends on where $c$ currently is: ``the velocity at time $t$ is the arrow that $\mathbf{X}$ puts at the point where $c$ is at time $t$.'' The derivative of the unknown equals a known function of the unknown --- that is an ODE. Proposition~\ref{prop:integral-curve-coords} only unpacks it into components.
+\begin{itemize}[nosep]
+    \item \emph{The simplest example.} On $\mathbb{R}$, $\mathbf{X} = x\, \frac{d}{dx}$: the equation is $\dot x = x$, so $x(t) = x_0 e^t$. The point runs away from $0$ faster and faster, because the arrows get longer further out.
+    \item \emph{Conversely}, every autonomous system $\dot x^i = f^i(x)$ with smooth $f^i$ on an open $U \subseteq \mathbb{R}^m$ is the system of the field $\sum_i f^i\, \partial/\partial x^i$: autonomous first-order systems on $U$ and vector fields on $U$ are the same thing. (``Autonomous'': the right-hand side does not depend on $t$, as the field does not change in time.)
+    \item \emph{Higher order.} $\ddot x = -x$ becomes, with $y = \dot x$, the first-order system $\dot x = y$, $\dot y = -x$, the field $y\, \partial_x - x\, \partial_y$ --- minus the rotation field of Example~\ref{ex:rotation-flow}, whose integral curves it runs backwards in time. The harmonic oscillator is ``follow this field in the phase plane''; likewise Hamilton's equations, for a time-independent Hamiltonian, say that the motion follows the integral curves of one vector field on phase space.
+    \item \emph{Local versus global.} On a manifold a chart turns $(\ast)$ into such a system, so the local questions --- existence, uniqueness, smooth dependence on the starting point --- reduce to ODE theory in $\mathbb{R}^m$; this is why Theorem~\ref{thm:ode-local} is quoted in its Euclidean form. What one chart cannot settle is how far a solution continues: solutions in different charts must be patched together, and a solution may escape in finite time, which already happens in $\mathbb{R}^2$ (Example~\ref{ex:finite-escape}). That is the content of Theorem~\ref{thm:maximal-flow}.
+\end{itemize}
+\end{rembox}
+
+
 ``There's a fundamental theorem that, again, from --- we have moved from Calc~3 to Calc~4 --- ODEs.'' Uribe quoted it in the following form.
 
 \begin{thmbox}[Local Existence and Uniqueness]\thmlabel{thm:ode-local}
@@ -28585,18 +28671,20 @@ Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$. Giv
 such that
 \begin{enumerate}[nosep]
 \item $\varphi(0, q) = q$ for every $q \in U$;
-\item for every $q \in U$, the curve $(-\varepsilon, \varepsilon) \to M$, $t \mapsto \varphi(t, q)$, is an integral curve of $\mathbf{X}$.
-\end{enumerate}
-Furthermore (uniqueness): if $q \in U$ and $c : I \to M$ is any integral curve of $\mathbf{X}$ with $0 \in I$ and $c(0) = q$, then
+\item for every $q \in U$, the curve $(-\varepsilon, \varepsilon) \to M$, $t \mapsto \varphi(t, q)$, is an integral curve of $\mathbf{X}$;
+\item \emph{(uniqueness)} if $q \in U$ and $c : I \to M$ is any integral curve of $\mathbf{X}$ with $0 \in I$ and $c(0) = q$, then
 \[
 c|_{I \cap (-\varepsilon, \varepsilon)} = \varphi(\cdot, q)|_{I \cap (-\varepsilon, \varepsilon)} .
 \]
+\end{enumerate}
 \leeref{Theorem D.1}
 \end{thmbox}
 
 \begin{proof}[Proof (not given in this course)]
 Taken from ODE theory, not proved in the course: ``a big, big theorem that takes forever to prove'', the theorem on existence, uniqueness and smooth dependence on initial conditions (Lee, Theorem~D.1, proved in Appendix~D). ``This theorem here packs everything that we will quote from the Euclidean case.''
 \end{proof}
+
+Items~(1) and~(2) together are \emph{existence}: every $q \in U$ has an integral curve $\varphi(\cdot, q)$ starting at $q$, all defined on the same interval $(-\varepsilon, \varepsilon)$; the smoothness of $\varphi$ in the pair $(t, q)$ is \emph{smooth dependence on the initial condition}. Item~(3) is \emph{uniqueness}, on a par with existence; on the board it came as an addition, ``Furthermore (still the Euclidean theorem).''
 
 \begin{center}
 \begin{tikzpicture}[scale=1.0]

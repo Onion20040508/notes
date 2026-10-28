@@ -227,11 +227,11 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 >
 > *Injectivity.* The columns of $\binom{I_{m-k}}{0}$ are independent, so $\iota_{\ast p}$ is injective. In terms of vectors: if $\iota_{\ast p}\big(\sum_i a_i\, \partial/\partial x^i|^S_p\big) = \sum_i a_i\, \partial/\partial x^i|_p = 0$, then every $a_i = 0$, because the $\partial/\partial x^i|_p$ are part of a basis of $T_pM$.
 >
-> *Curves.* The statement for curves is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], applied to the smooth map $F = \iota$ and a smooth curve $\gamma$ in $S$ with $\gamma(0) = p$: it gives $\iota_{\ast p} D_\gamma = D_{\iota \circ \gamma}$, where $\iota \circ \gamma$ is $\gamma$ regarded as a curve in $M$, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]].
+> *Curves.* The statement for curves is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], applied to the smooth map $F = \iota$ and a smooth curve $\gamma$ in $S$ with $\gamma(0) = p$: it gives $\iota_{\ast p} D_\gamma = D_{\iota \circ \gamma}$, where $\iota \circ \gamma$ is $\gamma$ regarded as a curve in $M$, smooth by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]].
 
 ^pf-37-6
 
-*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
 
 So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) \subseteq T_pM$, the “intrinsic tangent space” inside the ambient one — “for some reason this class, and maybe all abstract classes, keep identifying things with each other.” The second description is the one from Assignment 3, Problem 2: think of a curve in $S$ composed with the inclusion as a curve in $M$, and take its velocity there.
 

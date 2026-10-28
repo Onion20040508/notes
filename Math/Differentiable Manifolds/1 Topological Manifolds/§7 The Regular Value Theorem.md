@@ -51,7 +51,7 @@ tags: [differentiable-manifolds, math591]
 > 2. For an arbitrary $v$ the right side is the whole linear map $v \mapsto DF_p\, v$ at once, and a linear map is determined by its values on all $v$. This is how derivatives of maps on matrix spaces are computed without writing out the $N$ partial derivatives: for $F(A) = A^{\mathsf T}A$ on $\operatorname{Mat}_{n \times n}(\mathbb{R})$, $\frac{d}{dt}\big|_0 (A + tH)^{\mathsf T}(A + tH) = H^{\mathsf T}A + A^{\mathsf T}H$, so $DF_A\, H = H^{\mathsf T}A + A^{\mathsf T}H$.
 > 3. The hypothesis that $F$ is $C^1$ (so differentiable) comes first: the formula computes a derivative that is known to exist. Directional derivatives alone do not show that $F$ is differentiable (the example after Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]]).
 >
-> The same formula without coordinates is Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], and with arbitrary curves in place of lines it is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], the form that makes sense on a manifold.
+> The same formula without coordinates is Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], and with arbitrary curves in place of lines it is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], the form that makes sense on a manifold.
 
 ^rem-7-2
 

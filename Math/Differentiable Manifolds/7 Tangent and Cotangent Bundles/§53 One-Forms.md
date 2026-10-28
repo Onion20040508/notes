@@ -225,7 +225,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 > $$
 >
 > so $\partial a/\partial y = \partial b/\partial x$ on $M$: the necessary condition of Proposition [[§53 One-Forms#^prop-53-3|§53.3]] holds. (Compare $\theta = \tfrac12(x\,dy - y\,dx)$ of Example [[§53 One-Forms#^ex-53-1|§53.1]], where the two sides are $\tfrac12$ and $-\tfrac12$.)
-> 4. *The test curve.* $c : \mathbb{R} \to M$, $c(t) = (\cos t, \sin t)$, the unit circle run once around in time $2\pi$. It is smooth and lands in $M$ ($|c(t)| = 1$). Its velocity at time $t$ is the tangent vector (Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], components $(x \circ c)'(t)$, $(y \circ c)'(t)$)
+> 4. *The test curve.* $c : \mathbb{R} \to M$, $c(t) = (\cos t, \sin t)$, the unit circle run once around in time $2\pi$. It is smooth and lands in $M$ ($|c(t)| = 1$). Its velocity at time $t$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]) is the tangent vector (Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], components $(x \circ c)'(t)$, $(y \circ c)'(t)$)
 >
 > $$
 > D_c(t) = -\sin t\; \partial_x|_{c(t)} + \cos t\; \partial_y|_{c(t)} \in T_{c(t)}M .

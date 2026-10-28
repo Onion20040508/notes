@@ -124,7 +124,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Basis Theorem for Tangent Spaces]] (§29.6)
 - [[Ambient and Abstract Tangent Spaces Agree]] (§29.7)
 - [[Matrix of the Differential]] (§30.2)
-- [[Every Tangent Vector Is a Velocity]] (§31.2)
+- [[Every Tangent Vector Is a Velocity]] (§31.4)
 - [[Cotangent Space from Germs]] (§34.4)
 - [[Local Diffeomorphism Criterion]] (§35.2)
 - [[Submersion Normal Form]] (§36.6)
@@ -143,7 +143,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Whitney Embedding Theorem]] (§65.7)
 - [[Existence of Partitions of Unity]] (§66.1)
 - [[Manifolds Are Paracompact]] (§66.4)
-- [[Local Existence and Uniqueness of Integral Curves]] (§67.2)
+- [[Local Existence and Uniqueness of Integral Curves]] (§67.3)
 - [[Fundamental Theorem on Flows]] (§68.1)
 
 ## Summaries

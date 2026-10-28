@@ -213,7 +213,7 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 > [!proof]+ Proof
 > *(The submitted solution computed $G_{\ast I}(\sigma_j)$ and proved the local diffeomorphism; surjectivity, the two-to-one property and the identification with $\mathbb{RP}^3$ are filled in; the submitted proof follows.)* *Smooth homomorphism.* $F : S^3 \to \mathrm{SU}(2)$ is a group isomorphism and a diffeomorphism (Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]]), so $F^{-1}$ is a smooth homomorphism; and $C : S^3 \to \mathrm{SO}(3)$ is a smooth homomorphism (Proposition [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|§48.1]](1)). So $G$ is a smooth homomorphism, as a composite of $F^{-1}$ and $C$: a composite of smooth maps is smooth, and a composite of homomorphisms is a homomorphism.
 >
-> *The differential at $I$.* Since $G \circ F = C \circ F^{-1} \circ F = C$ and $F(1) = I$, the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives $G_{\ast I} \circ F_{\ast1} = C_{\ast1}$. By Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], $\sigma_j = F_{\ast1}(\gamma_j'(0))$, where $\gamma_j(t) = \cos t + \sin t\, u_j$ with $u_1 = i$, $u_2 = j$, $u_3 = k$. With the chain rule for curves (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]),
+> *The differential at $I$.* Since $G \circ F = C \circ F^{-1} \circ F = C$ and $F(1) = I$, the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives $G_{\ast I} \circ F_{\ast1} = C_{\ast1}$. By Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], $\sigma_j = F_{\ast1}(\gamma_j'(0))$, where $\gamma_j(t) = \cos t + \sin t\, u_j$ with $u_1 = i$, $u_2 = j$, $u_3 = k$. With the chain rule for curves (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]),
 >
 > $$
 > G_{\ast I}(\sigma_j) = G_{\ast I}\big(F_{\ast1}(\gamma_j'(0))\big) = C_{\ast1}(\gamma_j'(0)) = (C \circ \gamma_j)'(0) ,
@@ -259,7 +259,7 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 
 ^pf-48-4
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|§48.1]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-2|§48.2]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|§48.1]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-2|§48.2]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]
 
 > [!proof]+ Second proof: the conjugation map computed explicitly (the submitted solution)
 >
@@ -287,7 +287,7 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 > G_{\ast,I}(\sigma_j) = C_{\ast,\vec e_0}(\vec e_j), \qquad j = 1, 2, 3.
 > $$
 >
-> By the chain rule for curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3]]), with the curves $\gamma_j$ of part (a), which satisfy $\gamma_j(0) = \vec e_0$ and $D_{\gamma_j} = \vec e_j$,
+> By the chain rule for curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|Corollary §31.5]]), with the curves $\gamma_j$ of part (a), which satisfy $\gamma_j(0) = \vec e_0$ and $D_{\gamma_j} = \vec e_j$,
 >
 > $$
 > G_{\ast,I}(\sigma_j) = D_{C \circ \gamma_j} = \frac{d}{dt}\Big|_{t=0} C\bigl(\gamma_j(t)\bigr),
@@ -373,7 +373,7 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 
 ^pf-48-4-2
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|§48.1]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[Inverse Function Theorem (several variables)|452 §16.2]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|§48.1]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[Inverse Function Theorem (several variables)|452 §16.2]]
 
 > [!remark]- Connections
 > - The same theorem in physics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]]; $\mathrm{SU}(2) \cong S^3$ and $\mathrm{SO}(3) \cong \mathbb{RP}^3$ topologically, with $\pi_1$: [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-8|QFT Theorem §CB.10.8]].

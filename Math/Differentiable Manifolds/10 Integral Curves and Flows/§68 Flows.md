@@ -32,7 +32,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-68-1
 
-$\varphi$ is “just flowing, like we were doing before”, except that the domain of the time variable depends on the point, as in Example [[§67 Integral Curves#^ex-67-2|§67.2]]. The theorem is the local picture of Theorem [[§67 Integral Curves#^thm-67-2|§67.2]], with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
+$\varphi$ is “just flowing, like we were doing before”, except that the domain of the time variable depends on the point, as in Example [[§67 Integral Curves#^ex-67-2|§67.2]]. The theorem is the local picture of Theorem [[§67 Integral Curves#^thm-67-3|§67.3]], with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
 - Rotation (Example [[§67 Integral Curves#^ex-67-1|§67.1]]): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.
 - Escape (Example [[§67 Integral Curves#^ex-67-2|§67.2]]): $\alpha \equiv -\infty$, $\beta(x, y) = 1/(xy)$, so $\mathcal{D} = \{ (t, (x, y)) : x, y > 0,\ t\,xy < 1 \}$, open, and $\varphi(t, (x, y)) = \big(x/(1 - xyt),\ y\big)$, smooth on $\mathcal{D}$.
 

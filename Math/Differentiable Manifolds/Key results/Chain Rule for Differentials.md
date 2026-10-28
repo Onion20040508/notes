@@ -23,8 +23,8 @@ tags: [differentiable-manifolds, hub]
 - [[§30 The Differential in Coordinates#^cor-30-3|Corollary §30.3: The Chain Rule in Coordinates]]
 - [[§30 The Differential in Coordinates#^cor-30-4|Corollary §30.4: Change of Coordinates]]
 - [[§30 The Differential in Coordinates#^cor-30-9|Corollary §30.9: Regular Level Sets Are Topological Manifolds]]
-- [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3: Velocity of a Composite — Computing Differentials by Curves]]
-- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4: The Tangent Space of a Product]]
+- [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|Corollary §31.5: Velocity of a Composite — Computing Differentials by Curves]]
+- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|Theorem §31.6: The Tangent Space of a Product]]
 - [[§35 Local Diffeomorphisms#^thm-35-2|Theorem §35.2: Local Diffeomorphisms Are Detected by the Differential]]
 - [[§36 Submersions#^ex-36-2|Example §36.2: Projections of Product Manifolds Are Submersions]]
 - [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|Lemma §38.1: Level Sets Near a Regular Point]]
@@ -46,7 +46,7 @@ tags: [differentiable-manifolds, hub]
 - [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|Lemma §61.1: Left-Invariant Fields Related by a Morphism]]
 
 ## Connections
-- **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), differentials computed by curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]]) and the [[Local Diffeomorphism Criterion]].
+- **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), differentials computed by curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]) and the [[Local Diffeomorphism Criterion]].
 - **Why the proof is one line.** Pulling back germs reverses the order, (G ∘ F)* = F* ∘ G*. The differential is the dual of pullback, so it composes in the same order as the maps, as dual maps do in linear algebra, (ST)′ = T′S′ ([[§12 Duality#^ladr-3-120|LADR 3.120]]).
 - **Same idea elsewhere.** In coordinates it is the [[Multivariable Chain Rule]] of 452: the Jacobian of a composite is the product of the Jacobians ([[§9 Matrices#^ladr-3-43|LADR 3.43]]). In 590, induced homomorphisms on π₁ compose the same way ([[Functoriality of π₁]]). Together with the basis theorem it shows that diffeomorphic manifolds have the same dimension, the easy smooth counterpart of [[Topological Invariance of Dimension]].
 - **Pullbacks of covectors.** Dually, covectors pull back along smooth maps by the dual map of F_*p ([[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]]), one-forms pointwise ([[§53 One-Forms#^def-53-4|Def. §53.4]]), with the same reversal of order, (G ∘ F)* = F* ∘ G*; pullback commutes with d ([[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§53 One-Forms#^cor-53-4|§53.4]]). Higher-degree forms are still to come; on open subsets of ℝⁿ they and their pullbacks are in 452 ([[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]).
