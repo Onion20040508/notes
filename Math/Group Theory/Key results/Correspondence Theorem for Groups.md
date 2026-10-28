@@ -19,6 +19,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: Quotients Along the Correspondence]]
+- [[§56 Composition Series and the Jordan–Hölder Theorem#^lem-56-3|Lemma §56.3: Finite Groups Have Composition Series]]
 
 ## Connections
 - **How.** Push subgroups down with π and pull them back with π⁻¹ ([[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]]); the hypothesis N ⊆ A is what makes π⁻¹(π(A)) = A, and it is used exactly once, for “normal downstairs ⇒ normal upstairs”.

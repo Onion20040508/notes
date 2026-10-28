@@ -5,7 +5,7 @@ chapter: 10
 section: 55
 tags: [group-theory, math493]
 ---
-← [[§54 Internal and External Direct Products]] · ↑ [[· 10 Semidirect Products]]
+← [[§54 Internal and External Direct Products]] · ↑ [[· 10 Semidirect Products]] · [[§56 Composition Series and the Jordan–Hölder Theorem]] →
 
 *Reference: not covered in the Pinter chapters used so far.*
 

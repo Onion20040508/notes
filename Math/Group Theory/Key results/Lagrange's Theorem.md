@@ -37,6 +37,7 @@ tags: [group-theory, hub]
 - [[§53 Simple Groups of Small Order#^prop-53-2|Proposition §53.2: n_p and the Normalizer]]
 - [[§53 Simple Groups of Small Order#^prop-53-4|Proposition §53.4: The Conjugation Homomorphism G → S_n_p]]
 - [[§53 Simple Groups of Small Order#^cor-53-6|Corollary §53.6: Simple Groups Land in A_n_p]]
+- [[§56 Composition Series and the Jordan–Hölder Theorem#^prop-56-2|Proposition §56.2: ℤ Has No Composition Series]]
 
 ## Connections
 - **Used for.** ord(g) divides |G| and g^|G| = e ([[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]), hence [[§29 The Index and Lagrange's Theorem#^cor-29-4|Fermat's Little Theorem]]. Also [[Groups of Prime Order Are Cyclic]] and the [[Orbit–Stabilizer Theorem]]. It rules out subgroups, e.g. S₃ has none of order 4 or 5 ([[§29 The Index and Lagrange's Theorem#^rem-29-1|Uses of Lagrange]]), and together with class sizes it proves [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].

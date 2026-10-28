@@ -28,6 +28,8 @@ tags: [group-theory, hub]
 - [[§48 Solvable Groups#^prop-48-4|Proposition §48.4: Subquotients: An Injection and a Surjection]]
 - [[§53 Simple Groups of Small Order#^prop-53-4|Proposition §53.4: The Conjugation Homomorphism G → S_n_p]]
 - [[§53 Simple Groups of Small Order#^lem-53-5|Lemma §53.5: Homomorphisms That Leave A_N]]
+- [[§56 Composition Series and the Jordan–Hölder Theorem#^lem-56-3|Lemma §56.3: Finite Groups Have Composition Series]]
+- [[§56 Composition Series and the Jordan–Hölder Theorem#^prop-56-7|Proposition §56.7: Horizontal Edges Propagate]]
 
 ## Used in (Topology)
 - [[§27 Free Groups and Presentations#^def-27-6|Definition §27.6: Group Presentation]]
