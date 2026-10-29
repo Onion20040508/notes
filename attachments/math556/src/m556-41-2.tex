@@ -1,0 +1,13 @@
+% Figure from MATH 556 notes, section 41 (Step 5: approximate, correct, repeat). Added, not from lecture.
+\begin{tikzpicture}[>=stealth, font=\small, scale=1.0]
+  \fill (0,0) circle (1.3pt) node[below left] {$0$};
+  \draw[gray!60] (0,0) circle (3.0); \node[gray!60!black, font=\scriptsize] at (2.35,2.25) {$B(0, \delta)$};
+  \fill[red!70!black] (2.0,1.0) circle (1.6pt) node[above right] {$y_0$};
+  \draw[thick, blue!60!black, ->] (0,0) -- (1.55,0.55) node[below right, font=\scriptsize] {$Mx_0$};
+  \draw[red!50, dashed] (2.0,1.0) circle (1.0); \node[red!60!black, font=\scriptsize] at (3.25,0.35) {$\frac{\delta}{3}$};
+  \draw[thick, blue!60!black, ->] (1.55,0.55) -- (2.05,0.75) node[below right, font=\scriptsize] {$+Mx_1$};
+  \draw[red!50, dashed] (2.0,1.0) circle (0.333);
+  \draw[thick, blue!60!black, ->] (2.05,0.75) -- (1.93,0.93);
+  \draw[red!50, dashed] (2.0,1.0) circle (0.111);
+  \node[align=left, anchor=west, font=\scriptsize] at (3.6,-1.2) {$\|y_0 - Mx_0\| < \delta/3$, \ $\|x_0\| < 1/3$\\ $\|y_0 - Mx_0 - Mx_1\| < \delta/3^2$, \ $\|x_1\| < 1/3^2$\\ $\cdots$\\ $\sum_j \|x_j\| < \tfrac12$: the sum $x^0 = \sum_j x_j$ exists, $Mx^0 = y_0$};
+\end{tikzpicture}
