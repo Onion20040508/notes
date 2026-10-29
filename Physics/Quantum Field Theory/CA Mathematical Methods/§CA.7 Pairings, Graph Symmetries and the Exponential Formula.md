@@ -38,25 +38,43 @@ Wick's theorem turns a vacuum expectation value of free fields into a sum over t
 ^thm-ca-7-1
 
 > [!derivation]- Derivation
-> **Step 1** (odd sets). The blocks of a pairing are disjoint and each has two elements, so a pairing with $b$ blocks covers $2b$ elements. If $|X|$ is odd, no $b$ gives $2b = |X|$. Part 1.
+> **Step 1** (odd sets). The blocks of a pairing are disjoint and each has two elements, so a pairing with $b$ blocks covers $2b$ elements:
+>
+> $$
+> |X| = \sum_{B\in P}|B| = 2b .
+> $$
+>
+> If $|X|$ is odd, no $b$ gives $2b = |X|$. Part 1.
 >
 > **Step 2** (the partner of one element). Let $|X| = 2k \ge 2$ and fix $x_0 \in X$. In a pairing $P$, $x_0$ lies in exactly one block $\{x_0, y\}$, $y \ne x_0$. The map
 >
 > $$
-> P \mapsto \bigl(y,\; P \setminus \{\{x_0, y\}\}\bigr)
+> \Phi:\ P \mapsto \bigl(y,\; P \setminus \{\{x_0, y\}\}\bigr), \qquad \Phi:\ \mathcal P(X) \to \bigsqcup_{y \in X\setminus\{x_0\}}\{y\}\times\mathcal P(X \setminus \{x_0, y\}),
 > $$
 >
-> sends $\mathcal P(X)$ to the disjoint union over $y \in X \setminus \{x_0\}$ of $\{y\} \times \mathcal P(X \setminus \{x_0, y\})$: removing the block leaves a partition of $X \setminus \{x_0, y\}$ into pairs. Its inverse adds the block $\{x_0, y\}$ back. So it is a bijection, and
+> is well defined (removing the block leaves a partition of $X \setminus \{x_0, y\}$ into pairs), and $\Psi(y, Q) = Q \cup \{\{x_0, y\}\}$ is its inverse: $\Psi\Phi(P) = P$ and $\Phi\Psi(y, Q) = (y, Q)$. So it is a bijection, and
 >
 > $$
 > |\mathcal P(X)| = \sum_{y \ne x_0}|\mathcal P(X \setminus \{x_0, y\})| = (2k - 1)\,|\mathcal P(2k - 2\text{ elements})| ,
 > $$
 >
-> because there are $2k - 1$ choices of $y$ and each remaining set has $2k - 2$ elements (the count depends only on the size: a bijection of sets induces one of their pairings).
+> because there are $2k - 1$ choices of $y$ and each remaining set has $2k - 2$ elements (the count depends only on the size: a bijection of sets induces one of their pairings). For $X = \{1, 2, 3, 4\}$, $x_0 = 1$:
+>
+> $$
+> \{\{1,2\},\{3,4\}\} \mapsto \bigl(2, \{\{3,4\}\}\bigr), \qquad \{\{1,3\},\{2,4\}\} \mapsto \bigl(3, \{\{2,4\}\}\bigr), \qquad \{\{1,4\},\{2,3\}\} \mapsto \bigl(4, \{\{2,3\}\}\bigr) :
+> $$
+>
+> $3 = 3\cdot|\mathcal P(2\text{ elements})| = 3\cdot1$.
 >
 > **Step 3** (induction). $|\mathcal P(\varnothing)| = 1$. If $|\mathcal P| = (2k - 3)!!$ for $2k - 2$ elements, Step 2 gives $(2k - 1)(2k - 3)!! = (2k - 1)!!$.
 >
-> **Step 4** (closed form). $(2k)! = \prod_{j=1}^{2k}j$ splits into the odd factors, $(2k - 1)!!$, and the even ones, $\prod_{i=1}^k2i = 2^kk!$. So $(2k - 1)!! = (2k)!/(2^kk!)$.
+> **Step 4** (closed form). $(2k)! = \prod_{j=1}^{2k}j$ splits into the odd factors and the even ones:
+>
+> $$
+> (2k)! = \underbrace{1\cdot3\cdots(2k - 1)}_{(2k-1)!!}\cdot\underbrace{2\cdot4\cdots2k}_{\prod_{i=1}^k2i\,=\,2^kk!}, \qquad\text{e.g. } 6! = 720 = (1\cdot3\cdot5)(2\cdot4\cdot6) = 15\cdot48,\ 48 = 2^3\cdot3! .
+> $$
+>
+> So $(2k - 1)!! = (2k)!/(2^kk!)$.
 >
 > **Step 5** (values). $1, 3, 3\cdot5 = 15, 15\cdot7 = 105, 105\cdot9 = 945, 945\cdot11 = 10\,395, 10\,395\cdot13 = 135\,135$. Enumerating all pairings of $4, 6, 8, 10$ elements gives the same numbers.
 >
@@ -83,11 +101,21 @@ Wick's theorem turns a vacuum expectation value of free fields into a sum over t
 ^lem-ca-7-2
 
 > [!derivation]- Derivation
-> **Step 1** ($g\cdot P$ is a pairing). $g$ is a bijection, so the image of a 2-element set is a 2-element set, images of disjoint sets are disjoint, and the images of the blocks cover $g(X) = X$.
+> **Step 1** ($g\cdot P$ is a pairing). $g$ is a bijection, so for blocks $\{a, b\} \ne \{c, d\}$ of $P$:
 >
-> **Step 2** (action law). $e\cdot P = P$. For $g, h$: $g\cdot(h\cdot P) = \{\{g(h(a)), g(h(b))\}\} = (gh)\cdot P$.
+> $$
+> a \ne b \Rightarrow g(a) \ne g(b), \qquad \{a, b\}\cap\{c, d\} = \varnothing \Rightarrow \{g(a), g(b)\}\cap\{g(c), g(d)\} = \varnothing, \qquad \bigcup_{\{a,b\}\in P}\{g(a), g(b)\} = g(X) = X .
+> $$
 >
-> **Step 3** (subgroups, homomorphisms). Restricting an action to a subgroup, or composing it with a homomorphism $\rho: G \to \operatorname{Sym}(X)$ ($g\cdot P \equiv \rho(g)\cdot P$), keeps both axioms ([[§25 Actions#^thm-25-3|493 Thm. §25.3]]).
+> For example, $g = (1\,2\,3)$ on $X = \{1, 2, 3, 4\}$: $g\cdot\{\{1,2\},\{3,4\}\} = \{\{2,3\},\{1,4\}\}$.
+>
+> **Step 2** (action law). $e\cdot P = P$. For $g, h$:
+>
+> $$
+> g\cdot(h\cdot P) = \bigl\{\{g(h(a)), g(h(b))\} : \{a, b\}\in P\bigr\} = (gh)\cdot P .
+> $$
+>
+> **Step 3** (subgroups, homomorphisms). Restricting an action to a subgroup, or composing it with a homomorphism $\rho: G \to \operatorname{Sym}(X)$ ($g\cdot P \equiv \rho(g)\cdot P$, so $g\cdot(h\cdot P) = \rho(g)\rho(h)\cdot P = \rho(gh)\cdot P$), keeps both axioms ([[§25 Actions#^thm-25-3|493 Thm. §25.3]]).
 
 ^der-ca-7-2
 
@@ -210,11 +238,35 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ^thm-ca-7-4
 
 > [!derivation]- Derivation
-> **Step 1** (orbit–stabilizer). $G_n$ is finite and acts on $\mathcal P(X_{E,n})$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^lem-ca-7-3|Lemma §CA.7.3]]), so $|G_n| = |G_n\cdot P|\cdot|\operatorname{Stab}_{G_n}(P)|$ ([[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]]).
+> **Step 1** (orbit–stabilizer). $G_n$ is finite and acts on $\mathcal P(X_{E,n})$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^lem-ca-7-3|Lemma §CA.7.3]]), so ([[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]])
 >
-> **Step 2** (insert). $|G_n| = |(S_4)^n|\cdot|S_n| = (4!)^n\,n!$ (the underlying set of the semidirect product is the product set), and $|\operatorname{Stab}(P)| = S(P)$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-4|Def. §CA.7.4]]). Divide.
+> $$
+> |G_n| = |G_n\cdot P|\cdot|\operatorname{Stab}_{G_n}(P)| .
+> $$
 >
-> **Step 3** (example). $E = \{x, y\}$, $n = 1$: $X$ has 6 half-edges and $5!! = 15$ pairings ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-1|Theorem §CA.7.1]]). They form two orbits: the 3 pairings with $\{x, y\}$ a block (the four vertex half-edges paired among themselves) and the 12 with $x$ and $y$ paired to vertex half-edges. $|G_1| = 24$, so the stabilizers have orders $24/3 = 8$ and $24/12 = 2$, as a direct count of the stabilizers (by enumeration over $S_4$) confirms.
+> **Step 2** (insert). The underlying set of the semidirect product is the product set, so $|G_n| = |(S_4)^n|\cdot|S_n| = (4!)^n\,n!$, and $|\operatorname{Stab}(P)| = S(P)$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-4|Def. §CA.7.4]]). Divide:
+>
+> $$
+> |G_n\cdot P| = \frac{n!\,(4!)^n}{S(P)} .
+> $$
+>
+> **Step 3** (example). $E = \{x, y\}$, $n = 1$; write $a$ for the half-edge $(1, a)$. $X$ has 6 half-edges and $5!! = 15$ pairings ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-1|Theorem §CA.7.1]]); $G_1 = S_4$ acts by $\tau\cdot\{h, h'\} = \{\tau h, \tau h'\}$, $\tau x = x$, $\tau y = y$. The 15 pairings form two orbits:
+>
+> $$
+> G_1\cdot P_8 = \bigl\{\{\{x,y\},\{1,2\},\{3,4\}\},\ \{\{x,y\},\{1,3\},\{2,4\}\},\ \{\{x,y\},\{1,4\},\{2,3\}\}\bigr\}, \qquad P_8 = \{\{x,y\},\{1,2\},\{3,4\}\},
+> $$
+>
+> $$
+> G_1\cdot P_t = \bigl\{\{\{x,a\},\{y,b\},\{c,d\}\} : a \ne b,\ \{c,d\} = \{1,2,3,4\}\setminus\{a,b\}\bigr\}, \qquad P_t = \{\{x,1\},\{y,2\},\{3,4\}\},
+> $$
+>
+> the second because $\tau\cdot P_t = \{\{x,\tau(1)\},\{y,\tau(2)\},\{\tau(3),\tau(4)\}\}$ and $(\tau(1), \tau(2))$ runs through all 12 ordered pairs. The stabilizers:
+>
+> $$
+> \operatorname{Stab}(P_8) = \{\mathrm{id}, (1\,2), (3\,4), (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3), (1\,3\,2\,4), (1\,4\,2\,3)\}, \qquad \operatorname{Stab}(P_t) = \{\mathrm{id}, (3\,4)\},
+> $$
+>
+> and $3\cdot8 = 24 = 12\cdot2 = |G_1|$ (stabilizers checked by enumeration over $S_4$).
 >
 > **What the derivation shows.**
 > - Dividing a sum over all pairings by $n!\,(4!)^n$ leaves $1/S$ per diagram exactly when the summand is constant on orbits.
@@ -239,13 +291,35 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ^thm-ca-7-5
 
 > [!derivation]- Derivation
-> **Step 1** (only if). Let $P' = (\tau, \sigma)\cdot P$. A block $\{h, h'\}$ of $P$ joining nodes $u, w$ goes to a block of $P'$ joining $\sigma(u), \sigma(w)$ (the action moves the half-edges of $v$ to half-edges of $\sigma(v)$ and fixes $E$). This is a bijection between the blocks of $P$ and of $P'$, so multiplicities and loop numbers correspond under $\sigma$.
+> **Step 1** (only if). Let $P' = (\tau, \sigma)\cdot P$. The action sends the half-edges of $v$ to half-edges of $\sigma(v)$ and fixes $E$, so a block $\{h, h'\}$ of $P$ joining nodes $u, w$ goes to a block of $P'$ joining $\sigma(u), \sigma(w)$:
+>
+> $$
+> \{h, h'\}\ \text{joins}\ u, w \quad\Longrightarrow\quad \{(\tau,\sigma)h, (\tau,\sigma)h'\}\ \text{joins}\ \sigma(u), \sigma(w) .
+> $$
+>
+> This is a bijection between the blocks of $P$ and of $P'$, so $m_{P'}(\sigma u, \sigma w) = m_P(u, w)$ and $\ell_{P'}(\sigma v) = \ell_P(v)$.
 >
 > **Step 2** (if: the edges). Assume $\sigma$ as stated. For each unordered pair of distinct nodes $\{u, w\}$ the edges of $\Gamma(P)$ between $u, w$ and those of $\Gamma(P')$ between $\sigma(u), \sigma(w)$ are equally many; choose a bijection between them. Likewise for the loops at $v$ and at $\sigma(v)$.
 >
-> **Step 3** (if: the half-edges). For an edge $\{h, h'\}$ of $P$ between distinct nodes, sent to the edge $\{k, k'\}$ of $P'$, send the half-edge of $h$ at $u$ to the one of $k$ at $\sigma(u)$ and $h'$ to $k'$. For a loop $\{h, h'\}$ at $v$ sent to the loop $\{k, k'\}$, send $h \mapsto k$, $h' \mapsto k'$. Every half-edge at a vertex $v$ belongs to exactly one block, so this defines a map from the four half-edges of $v$ to half-edges of $\sigma(v)$; it is injective (different blocks go to different blocks) and hence, both sides having four elements, a bijection $\tau_{\sigma(v)}$. External half-edges are fixed, consistently, because the vertex an external point is joined to is mapped by $\sigma$ to the vertex it is joined to in $P'$ ($m$ preserved, $E$ fixed).
+> **Step 3** (if: the half-edges). For an edge $\{h, h'\}$ of $P$ between distinct nodes $u, w$, sent to the edge $\{k, k'\}$ of $P'$ between $\sigma(u), \sigma(w)$ ($h$ at $u$, $k$ at $\sigma(u)$), put $h \mapsto k$, $h' \mapsto k'$. For a loop $\{h, h'\}$ at $v$ sent to the loop $\{k, k'\}$, put $h \mapsto k$, $h' \mapsto k'$. Every half-edge at a vertex $v$ belongs to exactly one block, so this defines a map from the four half-edges of $v$ to half-edges of $\sigma(v)$, $(v, a) \mapsto (\sigma(v), \tau_{\sigma(v)}(a))$; it is injective (different blocks go to different blocks) and hence, both sides having four elements, a bijection $\tau_{\sigma(v)} \in S_4$. External half-edges are fixed, consistently, because the vertex an external point is joined to is mapped by $\sigma$ to the vertex it is joined to in $P'$ ($m$ preserved, $E$ fixed).
 >
 > **Step 4** (conclude). $(\tau, \sigma)$ maps every block of $P$ to a block of $P'$, so $(\tau, \sigma)\cdot P = P'$.
+>
+> **Step 5** (two examples).
+> - $E = \{x, y\}$, $n = 1$: $P = \{\{x,(1,1)\},\{y,(1,2)\},\{(1,3),(1,4)\}\}$ and $P' = \{\{x,(1,3)\},\{y,(1,1)\},\{(1,2),(1,4)\}\}$ have the same $m(x,1) = m(y,1) = 1$, $\ell(1) = 1$; $\sigma = \mathrm{id}$. Step 3 reads off
+>
+> $$
+> \{x,(1,1)\}\mapsto\{x,(1,3)\}:\ \tau_1(1) = 3; \quad \{y,(1,2)\}\mapsto\{y,(1,1)\}:\ \tau_1(2) = 1; \quad \{(1,3),(1,4)\}\mapsto\{(1,2),(1,4)\}:\ \tau_1(3) = 2,\ \tau_1(4) = 4,
+> $$
+>
+> so $\tau_1 = (1\,3\,2)$, and indeed $(\tau_1, \mathrm{id})\cdot P = P'$.
+> - $E = \{x, y\}$, $n = 2$, the snowman with $x, y$ at vertex 1 or at vertex 2:
+>
+> $$
+> P = \{\{x,(1,1)\},\{y,(1,2)\},\{(1,3),(2,1)\},\{(1,4),(2,2)\},\{(2,3),(2,4)\}\},\quad P' = \{\{x,(2,1)\},\{y,(2,2)\},\{(2,3),(1,1)\},\{(2,4),(1,2)\},\{(1,3),(1,4)\}\} .
+> $$
+>
+> $\sigma = (1\,2)$ preserves $m$ and $\ell$: $m_{P'}(x, 2) = m_P(x, 1) = 1$, $m_{P'}(2, 1) = m_P(1, 2) = 2$, $\ell_{P'}(1) = \ell_P(2) = 1$. Step 3 gives $\tau_1 = \tau_2 = \mathrm{id}$; e.g. $(\mathrm{id}, \sigma)\cdot\{(1,3),(2,1)\} = \{(2,3),(1,1)\}$.
 >
 > **What the derivation shows.**
 > - Equality of diagrams can be decided on the drawing: count lines between each pair of points and loops at each vertex, up to renaming the vertices.
@@ -267,18 +341,48 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ^thm-ca-7-6
 
 > [!derivation]- Derivation
-> **Step 1** (the projection to vertex permutations). $\pi: \operatorname{Aut}(P) \to S_n$, $(\tau, \sigma) \mapsto \sigma$, is a homomorphism (the second component of the semidirect product multiplies as $\sigma\sigma'$, [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-3|Def. §CA.7.3]]).
+> **Step 1** (the projection to vertex permutations). The map
 >
-> **Step 2** (the image is $\Gamma_P$). By Step 1 of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^der-ca-7-5|Derivation §CA.7.5]] with $P' = P$, every $\sigma$ in the image preserves multiplicities and loops. Conversely, for $\sigma \in \Gamma_P$, Steps 2–4 there with $P' = P$ build $(\tau, \sigma) \in \operatorname{Aut}(P)$. So $\pi(\operatorname{Aut}(P)) = \Gamma_P$.
+> $$
+> \pi: \operatorname{Aut}(P) \to S_n, \qquad (\tau, \sigma) \mapsto \sigma ,
+> $$
+>
+> is a homomorphism: the second component of $(\tau, \sigma)\cdot(\tau', \sigma') = (\tau\,\varphi(\sigma)(\tau'), \sigma\sigma')$ is $\sigma\sigma'$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-3|Def. §CA.7.3]]).
+>
+> **Step 2** (the image is $\Gamma_P$). By Step 1 of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^der-ca-7-5|Derivation §CA.7.5]] with $P' = P$, every $\sigma$ in the image preserves multiplicities and loops: $\pi(\operatorname{Aut}(P)) \subseteq \Gamma_P$. Conversely, for $\sigma \in \Gamma_P$, Steps 2–4 there with $P' = P$ build $(\tau, \sigma) \in \operatorname{Aut}(P)$. So $\pi(\operatorname{Aut}(P)) = \Gamma_P$.
 >
 > **Step 3** (the kernel). $\ker\pi = \{(\tau, \mathrm{id}) : (\tau, \mathrm{id})\cdot P = P\}$: half-edge permutations at fixed vertices preserving the blocks. Such a $\tau$ maps each edge to an edge with the same end nodes. Count the choices bundle by bundle:
-> - a bundle of $m$ edges between two distinct vertices $u, w$: $\tau_u$ may permute the $m$ half-edges of the bundle at $u$ in $m!$ ways, and then $\tau_w$ on the bundle's half-edges at $w$ is forced (each edge must go to an edge); $m!$;
-> - an edge from an external point $e$ to $v$: $e$ is fixed, so the half-edge at $v$ is fixed; $1 = 1!$;
-> - the $\ell$ loops at $v$: their $2\ell$ half-edges may be permuted in any way that maps loops to loops: choose where the loops go ($\ell!$) and, for each, which end goes to which ($2^\ell$); $2^\ell\ell!$.
+> - a bundle of $m$ edges $\{(u, a_i), (w, b_i)\}$, $i = 1, \dots, m$, between distinct vertices $u, w$: $\tau_u$ permutes $\{a_1, \dots, a_m\}$, $\tau_u(a_i) = a_{\rho(i)}$ for some $\rho \in S_m$, and then $\tau_w(b_i) = b_{\rho(i)}$ is forced (the edge $i$ must go to the edge $\rho(i)$): $m!$ choices;
+> - an edge $\{e, (v, a)\}$ from an external point $e$: $e$ is fixed, so $\tau_v(a) = a$: $1 = 1!$;
+> - the $\ell$ loops $\{(v, c_i), (v, d_i)\}$, $i = 1, \dots, \ell$, at $v$: $\tau_v$ sends loop $i$ to loop $\rho(i)$, $\rho \in S_\ell$, as $\{c_i, d_i\} \mapsto \{c_{\rho(i)}, d_{\rho(i)}\}$ in one of two ways each: $2^\ell\,\ell!$ choices.
 >
-> The choices for different bundles are independent (they act on disjoint sets of half-edges, and every half-edge lies in exactly one bundle), so $|\ker\pi| = \prod_v2^{\ell(v)}\ell(v)!\prod_{u \ne w}m(u, w)!$.
+> The choices for different bundles are independent (they act on disjoint sets of half-edges, and every half-edge lies in exactly one bundle), so
 >
-> **Step 4** (count). By the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]) $\operatorname{Aut}(P)/\ker\pi \cong \Gamma_P$, and by Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]]) $|\operatorname{Aut}(P)| = |\Gamma_P|\cdot|\ker\pi|$.
+> $$
+> |\ker\pi| = \prod_v2^{\ell(v)}\,\ell(v)!\;\prod_{u \ne w}m(u, w)! .
+> $$
+>
+> **Step 4** (count). By the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]) $\operatorname{Aut}(P)/\ker\pi \cong \Gamma_P$, and by Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]])
+>
+> $$
+> S(P) = |\operatorname{Aut}(P)| = |\Gamma_P|\cdot|\ker\pi| .
+> $$
+>
+> **Step 5** (two examples).
+> - The figure-eight, $E = \varnothing$, $n = 1$, $P = \{\{(1,1),(1,2)\},\{(1,3),(1,4)\}\}$: $\Gamma_P = S_1$, and the kernel consists of $\rho \in S_2$ (keep or exchange the loops) times a reversal of each loop:
+>
+> $$
+> \ker\pi = \{\mathrm{id}, (1\,2), (3\,4), (1\,2)(3\,4)\}\;\cup\;(1\,3)(2\,4)\cdot\{\mathrm{id}, (1\,2), (3\,4), (1\,2)(3\,4)\} = \{\mathrm{id}, (1\,2), (3\,4), (1\,2)(3\,4), (1\,3)(2\,4), (1\,4\,2\,3), (1\,3\,2\,4), (1\,4)(2\,3)\},
+> $$
+>
+> $|\ker\pi| = 2^2\cdot2! = 8 = S$.
+> - The melon, $E = \varnothing$, $n = 2$, $P_\kappa = \{\{(1,a),(2,\kappa(a))\} : a = 1, \dots, 4\}$ for a fixed $\kappa \in S_4$: one bundle with $m(1, 2) = 4$, so
+>
+> $$
+> \ker\pi = \{(\tau_1, \kappa\tau_1\kappa^{-1}) : \tau_1 \in S_4\}, \qquad |\ker\pi| = 4! = 24 ;
+> $$
+>
+> $(1\,2) \in \Gamma_P$, with preimages $(\tau_1, \kappa\tau_1\kappa; (1\,2))$, so $|\Gamma_P| = 2$ and $S = 2\cdot24 = 48$; a brute-force count of the stabilizer in $G_2$ gives the same 48.
 >
 > ⚑ By-product: the factor $k!$ applies to $k$ loops at one vertex as well as to $k$ lines between two vertices. The figure-eight needs both: $2\cdot2$ for the two loops and $2!$ for exchanging them, $S = 8$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^ex-ca-7-1|Example §CA.7.1]]).
 >
@@ -294,10 +398,45 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 *The product formula of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-6|Theorem §CA.7.6]]. (a) The three kinds of factor: $2^{\ell}\ell!$ for $\ell$ loops at one vertex, $m!$ for $m$ lines between two points, and $|\Gamma_P|$ for the vertex permutations that keep the drawing. (b) Four diagrams with their $S$; with external points fixed, $\Gamma_P$ can be trivial.*
 
 > [!example] Example §CA.7.1: Symmetry Factors from the Product Formula
-> Each line: the diagram, $S$ by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-6|Theorem §CA.7.6]], and the size of its orbit by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]], each confirmed by enumerating the pairings.
-> - $n = 1$, $E = \{x, y\}$, $|G_1| = 24$. *Tadpole* ($x$–$v$, $v$–$y$, one loop at $v$): $S = 2$, orbit 12. *Line times figure-eight* ($x$–$y$, two loops at $v$): $S = 2^2\cdot2! = 8$, orbit 3. $12 + 3 = 15 = 5!!$.
-> - $n = 1$, $E = \varnothing$. *Figure-eight*: $S = 8$, orbit $3 = 3!!$.
-> - $n = 2$, $E = \varnothing$, $|G_2| = 2\cdot24^2 = 1152$. *Melon* (four lines between the two vertices): $S = 2\cdot4! = 48$ (the vertex swap is in $\Gamma_P$), orbit 24. *Dumbbell* (one loop at each vertex, two lines between them): $S = 2\cdot(2\cdot1!)^2\cdot2! = 16$, orbit 72. *Two figure-eights*: $S = 2\cdot(2^2\cdot2!)^2 = 128$, orbit 9. Together $24 + 72 + 9 = 105 = 7!!$: every pairing of the eight half-edges is one of these three diagrams.
+> Each item: the data $|\Gamma_P|$, $\ell_P(v)$, $m_P(u, w)$ of the diagram, $S$ by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-6|Theorem §CA.7.6]], and the size of its orbit $|G_n|/S$ by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]], each confirmed by enumerating the pairings.
+>
+> *$n = 1$, $E = \{x, y\}$, $|G_1| = 24$.*
+> - *Tadpole* ($x$–$v$, $v$–$y$, one loop at $v$): $|\Gamma| = 1$, $\ell(v) = 1$, $m(x, v) = m(y, v) = 1$:
+>
+> $$
+> S = 1\cdot2^1\,1!\cdot1!\,1! = 2, \qquad |G_1\cdot P| = \frac{24}{2} = 12 .
+> $$
+>
+> - *Line times figure-eight* ($x$–$y$, two loops at $v$): $|\Gamma| = 1$, $\ell(v) = 2$, $m(x, y) = 1$:
+>
+> $$
+> S = 1\cdot2^2\,2!\cdot1! = 8, \qquad |G_1\cdot P| = \frac{24}{8} = 3 .
+> $$
+>
+> $12 + 3 = 15 = 5!!$: every pairing of the six half-edges is one of the two.
+>
+> *$n = 1$, $E = \varnothing$.* *Figure-eight*: $S = 2^2\,2! = 8$, orbit $\frac{24}{8} = 3 = 3!!$.
+>
+> *$n = 2$, $E = \varnothing$, $|G_2| = 2\cdot24^2 = 1152$.*
+> - *Melon* (four lines between the two vertices): $\Gamma = S_2$ (the swap keeps $m(1, 2) = 4$), $\ell = 0$:
+>
+> $$
+> S = 2\cdot4! = 48, \qquad \frac{1152}{48} = 24 .
+> $$
+>
+> - *Dumbbell* (one loop at each vertex, two lines between them): $\Gamma = S_2$, $\ell(1) = \ell(2) = 1$, $m(1, 2) = 2$:
+>
+> $$
+> S = 2\cdot(2^1\,1!)(2^1\,1!)\cdot2! = 16, \qquad \frac{1152}{16} = 72 .
+> $$
+>
+> - *Two figure-eights*: $\Gamma = S_2$, $\ell(1) = \ell(2) = 2$, no line between them:
+>
+> $$
+> S = 2\cdot(2^2\,2!)(2^2\,2!) = 128, \qquad \frac{1152}{128} = 9 .
+> $$
+>
+> Together $24 + 72 + 9 = 105 = 7!!$: every pairing of the eight half-edges is one of these three diagrams.
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.5 (Figure "Symmetry factors": "12 of 4!", "3 of 4!", "24 of $2\cdot4!^2$", "72", "9") · PHY 513 Lecture 14, slide 18 · checked with `qft-C/tools/l14/enumerate_pairings.py`*
 
@@ -330,11 +469,27 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ^thm-ca-7-7
 
 > [!derivation]- Derivation
-> **Step 1** (no block joins the two parts). If a block joined a half-edge at an attached vertex (or an external point) to a half-edge at $v \in A$, its edge would extend a path to $E$ to $v$, and $v$ would be attached. So every block lies inside $E \sqcup (([n]\setminus A)\times[4])$ or inside $A\times[4]$: $P = P_{\rm att}\sqcup P_{\rm vac}$, and the two are pairings of these two sets.
+> **Step 1** (no block joins the two parts). Suppose a block $\{h, h'\}$ had $h$ at an external point or at a vertex $u \notin A$ and $h'$ at $v \in A$. A path from $u$ to $E$ followed by the edge of $\{h, h'\}$ would be a path from $v$ to $E$, so $v$ would be attached, contradicting $v \in A$. So every block lies inside $E \sqcup (([n]\setminus A)\times[4])$ or inside $A\times[4]$:
+>
+> $$
+> P = P_{\rm att}\sqcup P_{\rm vac}, \qquad P_{\rm att}\in\mathcal P\bigl(E \sqcup (([n]\setminus A)\times[4])\bigr), \qquad P_{\rm vac}\in\mathcal P(A\times[4]) .
+> $$
 >
 > **Step 2** ($P_{\rm att}$ is attached). Every vertex outside $A$ has a path to $E$ in $\Gamma(P)$; the path never enters $A$ (a vertex of $A$ on it would be attached), so it uses only blocks of $P_{\rm att}$. The image lies in the stated set.
 >
-> **Step 3** (inverse). Given $A$, an attached pairing $Q$ of $E \sqcup (([n]\setminus A)\times[4])$ and any pairing $R$ of $A\times[4]$, let $P = Q \sqcup R$, a pairing of $X_{E,n}$. In $\Gamma(P)$ the vertices of $A$ are joined only among themselves (blocks of $R$), so they have no path to $E$; every other vertex has one through $Q$. Hence $A(P) = A$, $P_{\rm att} = Q$, $P_{\rm vac} = R$. Conversely $P = P_{\rm att}\sqcup P_{\rm vac}$ (Step 1). The two maps are inverse.
+> **Step 3** (inverse). Given $A$, an attached pairing $Q$ of $E \sqcup (([n]\setminus A)\times[4])$ and any pairing $R$ of $A\times[4]$, let
+>
+> $$
+> \Psi(A, Q, R) = Q \sqcup R \in \mathcal P(X_{E,n}) .
+> $$
+>
+> In $\Gamma(Q \sqcup R)$ the vertices of $A$ are joined only among themselves (blocks of $R$), so they have no path to $E$; every other vertex has one through $Q$. Hence $A(Q\sqcup R) = A$, $(Q\sqcup R)_{\rm att} = Q$, $(Q\sqcup R)_{\rm vac} = R$; conversely $\Psi(A(P), P_{\rm att}, P_{\rm vac}) = P$ (Step 1). The two maps are inverse.
+>
+> **Step 4** (example). $E = \{x, y\}$, $n = 2$, a tadpole at vertex 1 and a figure-eight at vertex 2 (figure below):
+>
+> $$
+> P = \bigl\{\{x,(1,1)\},\{y,(1,2)\},\{(1,3),(1,4)\},\{(2,1),(2,2)\},\{(2,3),(2,4)\}\bigr\} \longmapsto \Bigl(\{2\},\ \bigl\{\{x,(1,1)\},\{y,(1,2)\},\{(1,3),(1,4)\}\bigr\},\ \bigl\{\{(2,1),(2,2)\},\{(2,3),(2,4)\}\bigr\}\Bigr) .
+> $$
 >
 > **What the derivation shows.**
 > - A pairing is uniquely "the part that touches the external points" together with "a vacuum part", and the vacuum part may sit on any subset of the vertices.
@@ -370,17 +525,37 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 >
 > with $Q$ over the attached pairings of $E \sqcup (([k]\setminus A)\times[4])$ and $R$ over the pairings of $A\times[4]$.
 >
-> **Step 2** (rename). Renaming vertices by $\rho_A$ is a bijection from the attached pairings of $E \sqcup (([k]\setminus A)\times[4])$ onto $\mathcal P_{\rm att}(X_{E,k-j})$ (attachment is a property of the multigraph and survives renaming), and $\rho'_A$ is a bijection from $\mathcal P(A\times[4])$ onto $\mathcal P(X_{\varnothing,j})$. So for $|A| = j$ the double sum equals $\alpha_{k-j}\beta_j$, with $\alpha_i = \sum_{\mathcal P_{\rm att}(X_{E,i})}a_i$ and $\beta_j = \sum_{\mathcal P(X_{\varnothing,j})}b_j$, independently of which $A$.
+> **Step 2** (rename). Renaming vertices by $\rho_A$ is a bijection from the attached pairings of $E \sqcup (([k]\setminus A)\times[4])$ onto $\mathcal P_{\rm att}(X_{E,k-j})$ (attachment is a property of the multigraph and survives renaming), and $\rho'_A$ is a bijection from $\mathcal P(A\times[4])$ onto $\mathcal P(X_{\varnothing,j})$. So for $|A| = j$
+>
+> $$
+> \sum_{Q}\sum_{R}a_{k-j}(\rho_AQ)\,b_j(\rho'_AR) = \alpha_{k-j}\,\beta_j, \qquad \alpha_i = \sum_{Q'\in\mathcal P_{\rm att}(X_{E,i})}a_i(Q'), \qquad \beta_j = \sum_{R'\in\mathcal P(X_{\varnothing,j})}b_j(R') ,
+> $$
+>
+> independently of which $A$.
 >
 > **Step 3** (count the subsets). There are $\binom kj$ subsets with $|A| = j$:
 >
 > $$
-> \sum_{P\in\mathcal P(X_{E,k})}f_k(P) = \sum_{j=0}^k\binom kj\alpha_{k-j}\beta_j .
+> \sum_{P\in\mathcal P(X_{E,k})}f_k(P) = \sum_{j=0}^k\binom kj\,\alpha_{k-j}\,\beta_j .
 > $$
 >
-> **Step 4** (the factorials). $\frac{1}{k!}\binom kj = \frac{1}{(k-j)!\,j!}$. So the coefficient of $t^k$ on the left is $\sum_{i+j=k}\frac{\alpha_i}{i!}\frac{\beta_j}{j!}$, which is the coefficient of $t^k$ of the product on the right (the product of formal power series, the Cauchy product; no convergence is involved).
+> For $k = 1$ the subsets are $A = \varnothing$ and $A = \{1\}$: $\sum_Pf_1(P) = \alpha_1\beta_0 + \alpha_0\beta_1$, with $\beta_0 = b_0(\varnothing)$ the value on the empty pairing.
 >
-> ⚑ Check: with all functions equal to 1 and $E = \{x, y\}$, the identity says $(4k+1)!! = \sum_j\binom kj\,|\mathcal P_{\rm att}(X_{E,k-j})|\,(4j-1)!!$; for $k = 1$: $15 = 12 + 1\cdot3$, the 12 tadpole pairings and the 3 with a figure-eight. Enumeration confirms it for $k = 1, 2, 3$.
+> **Step 4** (the factorials). $\frac{1}{k!}\binom kj = \frac{1}{(k-j)!\,j!}$, so
+>
+> $$
+> \frac{1}{k!}\sum_{P\in\mathcal P(X_{E,k})}f_k(P) = \sum_{i+j=k}\frac{\alpha_i}{i!}\,\frac{\beta_j}{j!} ,
+> $$
+>
+> which is the coefficient of $t^k$ of the product on the right (the product of formal power series, the Cauchy product; no convergence is involved).
+>
+> ⚑ Check: with all functions equal to 1 and $E = \{x, y\}$, the identity says $(4k+1)!! = \sum_j\binom kj\,|\mathcal P_{\rm att}(X_{E,k-j})|\,(4j-1)!!$ (with $(-1)!! = |\mathcal P(\varnothing)| = 1$). For $k = 1$:
+>
+> $$
+> 5!! = \binom10\,|\mathcal P_{\rm att}(X_{E,1})|\cdot(-1)!! + \binom11\,|\mathcal P_{\rm att}(X_{E,0})|\cdot3!! = 1\cdot12\cdot1 + 1\cdot1\cdot3 = 15 ,
+> $$
+>
+> the 12 tadpole pairings and the 3 with a figure-eight. Enumeration confirms the identity for $k = 1, 2, 3$.
 >
 > **What the derivation shows.**
 > - The $\frac{1}{k!}$ of an exponential series is exactly what turns the choice of which vertices are "vacuum" into a product.
@@ -397,10 +572,10 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > If a function $f$ on $\mathcal P(X_{E,n})$ is constant on the orbits of $G_n$, then by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]]
 >
 > $$
-> \frac{1}{n!\,(4!)^n}\sum_{P\in\mathcal P(X_{E,n})}f(P) = \sum_{\text{diagrams }D}\frac{f(D)}{S(D)} ,
+> \frac{1}{n!\,(4!)^n}\sum_{P\in\mathcal P(X_{E,n})}f(P) = \frac{1}{n!\,(4!)^n}\sum_{D}\;\sum_{P\in D}f(P) = \frac{1}{n!\,(4!)^n}\sum_{D}|D|\,f(D) = \sum_{\text{diagrams }D}\frac{f(D)}{S(D)} ,
 > $$
 >
-> the sum on the right over the orbits, $f(D)$ the common value. This is the whole content of "divide by the symmetry factor": the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels the size of the group, and each diagram keeps $1/|\operatorname{Aut}|$.
+> the sum over the orbits $D$ (they partition $\mathcal P(X_{E,n})$, [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]), $f(D)$ the common value, $|D| = n!\,(4!)^n/S(D)$. This is the whole content of "divide by the symmetry factor": the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels the size of the group, and each diagram keeps $1/|\operatorname{Aut}|$.
 >
 > *Source: written here*
 
