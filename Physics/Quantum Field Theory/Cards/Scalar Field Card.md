@@ -158,7 +158,7 @@ Free fields $\hat\phi_i = \hat\phi_I(x_i)$; Lectures 14–15.
 | | Formula | Home |
 | --- | --- | --- |
 | price of reordering | $[\hat\phi^+(x), \hat\phi^-(y)] = D_W(x - y)$ | [[§C6.5 Normal Ordering and Contractions#^thm-c6-5-2\|Theorem §C6.5.2]] |
-| contraction | replace the pair $\hat\phi_i\hat\phi_j$ by $D_F(x_i - x_j)$, the rest normal ordered (a bracket on the slides and in PS); two fields: $T\{\hat\phi_1\hat\phi_2\} = \,:\!\hat\phi_1\hat\phi_2\!:\, + D_F(x_1 - x_2)$ | [[§C6.5 Normal Ordering and Contractions#^def-c6-5-1\|Def. §C6.5.1]] |
+| contraction | $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j)$: replace the pair by $D_F$, the rest normal ordered; two fields: $T\{\hat\phi_1\hat\phi_2\} = \,:\!\hat\phi_1\hat\phi_2\!:\, + D_F(x_1 - x_2)$ | [[§C6.5 Normal Ordering and Contractions#^def-c6-5-1\|Def. §C6.5.1]] |
 | Wick | $T\{\hat\phi_1\cdots\hat\phi_n\} = \,:\!\hat\phi_1\cdots\hat\phi_n\!: +$ all contractions (rest normal ordered) | [[§C6.6 Wick's Theorem#^thm-c6-6-2\|Theorem §C6.6.2]] |
 | vacuum value | $\langle0\vert T\{\hat\phi_1\cdots\hat\phi_n\}\vert0\rangle = \sum_{\text{pairings}}\prod D_F(x_i - x_j)$, $(n-1)!!$ terms; $0$ for $n$ odd | [[§C6.6 Wick's Theorem#^thm-c6-6-3\|Theorem §C6.6.3]] |
 | first order | numerator: $-i\lambda\int d^4z\bigl[\frac18D_F(x - y)D_F(0)^2 + \frac12D_F(x - z)D_F(0)D_F(z - y)\bigr]$ | [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1\|Theorem §C6.7.1]] |
