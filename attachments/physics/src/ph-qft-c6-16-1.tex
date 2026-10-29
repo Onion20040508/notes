@@ -1,0 +1,38 @@
+\colorlet{titleblue}{figB}\colorlet{titleorange}{figO}\colorlet{titlegray}{black!60}
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+  xsarr/.style={->, >=Stealth, line width=0.8pt, titlegray},
+  xslab/.style={font=\scriptsize, text=titlegray, align=center},
+  xsvec/.style={->, >=Stealth, line width=1.0pt},
+}
+\begin{tikzpicture}[scale=1.2, every node/.append style={transform shape=false}]
+  \begin{scope}[shift={(0,0)}]
+    \foreach \a/\l in {135/{x_{1}},225/{x_{2}},45/{x_{3}},315/{x_{4}}}{
+      \draw[fdl, titleorange!85!black, line width=1.6pt] (0,0) -- (\a:1.15);
+      \node[fdx] at (\a:1.15) {};
+      \node[fdlab] at (\a:1.42) {$\l$};
+    }
+    \node[fdv] at (0,0) {};
+    \node[fdlab, right=4pt] at (0,0) {$z$};
+    \node[font=\small, align=center] at (0,-1.85) {$\langle\Omega|T\{\hat\phi_{1}\hat\phi_{2}\hat\phi_{3}\hat\phi_{4}\}|\Omega\rangle$\\ fully connected, order $\lambda$};
+  \end{scope}
+  \draw[xsarr] (1.75,0) -- (3.55,0) node[midway, above, xslab] {remove the four\\ external $\tilde D_{F}$'s\\ and $(2\pi)^4\delta^4$};
+  \begin{scope}[shift={(5.3,0)}]
+    \foreach \a in {135,225,45,315}{\draw[fdl] (0,0) -- (\a:0.75);}
+    \draw[fdmom] (135:1.0)++(45:0.16) -- ++(-45:0.45);
+    \draw[fdmom] (225:1.0)++(-45:0.16) -- ++(45:0.45);
+    \draw[fdmom] (45:0.5)++(135:0.16) -- ++(45:0.45);
+    \draw[fdmom] (315:0.5)++(225:0.16) -- ++(-45:0.45);
+    \node[fdlab] at (135:1.12) {$p_{A}$};
+    \node[fdlab] at (225:1.12) {$p_{B}$};
+    \node[fdlab] at (45:1.12) {$p_{1}$};
+    \node[fdlab] at (315:1.12) {$p_{2}$};
+    \node[fdv] at (0,0) {};
+    \node[font=\small, anchor=west] at (1.25,0) {$=\ i\mathcal M=-i\lambda$};
+    \node[font=\small, align=center] at (0.9,-1.85) {$\phi\phi\to\phi\phi$ at order $\lambda$};
+  \end{scope}
+\end{tikzpicture}

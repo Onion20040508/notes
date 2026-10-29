@@ -1,0 +1,32 @@
+\colorlet{titleblue}{figB}\colorlet{titleorange}{figO}\colorlet{titlegray}{black!60}
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+  xsarr/.style={->, >=Stealth, line width=0.8pt, titlegray},
+  xslab/.style={font=\scriptsize, text=titlegray, align=center},
+  xsvec/.style={->, >=Stealth, line width=1.0pt},
+}
+\begin{tikzpicture}
+\begin{axis}[
+  width=9.5cm, height=5.0cm,
+  xmin=-3.2, xmax=3.2, ymin=0, ymax=1.12,
+  axis lines=left, axis line style={titlegray},
+  xlabel={$(\sqrt{s}-m)/\Gamma$}, ylabel={relative height},
+  xlabel style={font=\small}, ylabel style={font=\small},
+  tick label style={font=\scriptsize},
+  xtick={-3,-2,-1,-0.5,0,0.5,1,2,3}, xticklabels={$-3$,$-2$,$-1$,,$0$,,$1$,$2$,$3$},
+  ytick={0,0.5,1},
+  samples=241, domain=-3.2:3.2,
+]
+  \addplot[titleblue, line width=1.1pt] {(1)/(( ((10+x)^2-100)/10 )^2 + 1)};
+  \addplot[titleorange!85!black, dashed, line width=0.9pt] {(1)/(( ((20+2*x)^2-400)/20 )^2 + 1)};
+  \draw[titlegray, densely dotted] (axis cs:-3.2,0.5) -- (axis cs:3.2,0.5);
+  \draw[<->, >=Stealth, line width=0.7pt] (axis cs:-0.5,0.5) -- (axis cs:0.5,0.5);
+  \node[font=\scriptsize, above] at (axis cs:0,0.5) {$\Gamma$};
+  \node[font=\scriptsize, titleblue, anchor=west] at (axis cs:1.15,0.75) {$m/\Gamma=10$};
+  \node[font=\scriptsize, titleorange!85!black, anchor=west] at (axis cs:1.0,0.3) {width $\Gamma/2$};
+\end{axis}
+\end{tikzpicture}

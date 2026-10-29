@@ -1,0 +1,29 @@
+\colorlet{titleblue}{figB}\colorlet{titleorange}{figO}\colorlet{titlegray}{black!60}
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+  xsarr/.style={->, >=Stealth, line width=0.8pt, titlegray},
+  xslab/.style={font=\scriptsize, text=titlegray, align=center},
+  xsvec/.style={->, >=Stealth, line width=1.0pt},
+}
+\begin{tikzpicture}[scale=1.15]
+  \draw[xsarr] (-4.3,0) -- (4.4,0) node[right, font=\small, text=black] {$z$};
+  \draw[titlegray, dashed] (-4.3,1.3) -- (4.3,1.3);
+  \node[xslab, left] at (-4.3,0) {axis of $A$};
+  \node[xslab, left] at (-4.3,1.3) {axis of $B$};
+  \shade[inner color=titleblue!80, outer color=white] (-2.2,0) ellipse (0.55 and 0.75);
+  \foreach \dx in {-0.3,-0.1,0.1,0.3}{\draw[titleblue!80!black, line width=0.4pt] (-2.2+\dx,-0.45) -- (-2.2+\dx,0.45);}
+  \draw[xsvec, titleblue!80!black] (-1.45,0) -- (-0.45,0) node[midway, below=2pt, font=\small] {$\mathbf p_{A}$};
+  \node[font=\small] at (-2.2,-1.0) {$A$};
+  \shade[inner color=titleorange!80, outer color=white] (2.2,1.3) ellipse (0.55 and 0.75);
+  \foreach \dx in {-0.3,-0.1,0.1,0.3}{\draw[titleorange!85!black, line width=0.4pt] (2.2+\dx,0.85) -- (2.2+\dx,1.75);}
+  \draw[xsvec, titleorange!85!black] (1.45,1.3) -- (0.45,1.3) node[midway, above=2pt, font=\small] {$\mathbf p_{B}$};
+  \node[font=\small] at (2.2,2.3) {$B$};
+  \draw[<->, >=Stealth, line width=0.8pt] (0,0) -- (0,1.3);
+  \node[font=\small, right] at (0.02,0.62) {$\mathbf b$};
+  \node[xslab] at (0,-0.9) {transverse offset,\\ $\mathbf b\perp\hat{\mathbf z}$};
+  \node[xslab] at (3.4,-0.75) {at $t\approx-T$};
+\end{tikzpicture}

@@ -1,0 +1,37 @@
+\colorlet{titleblue}{figB}\colorlet{titleorange}{figO}\colorlet{titlegray}{black!60}
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.6pt},
+  fdmom/.style={->, >=Stealth, figO, line width=0.6pt},
+  xsarr/.style={->, >=Stealth, line width=0.8pt, titlegray},
+  xslab/.style={font=\scriptsize, text=titlegray, align=center},
+  xsvec/.style={->, >=Stealth, line width=1.0pt},
+}
+\begin{tikzpicture}[scale=1.05]
+  \def\bone{0.68}\def\btwo{0.84}\def\R{1.0}
+  \draw[titlegray, line width=0.4pt] (-3.6,0) ellipse ({0.3*1.25} and 1.25);
+  \fill[titleorange!45] plot[domain=55:125, samples=20] ({-3.6+0.3*\btwo*cos(\x)},{\btwo*sin(\x)}) -- plot[domain=125:55, samples=20] ({-3.6+0.3*\bone*cos(\x)},{\bone*sin(\x)}) -- cycle;
+  \draw[titlegray, densely dotted] (-3.6,0) ellipse ({0.3*\bone} and \bone);
+  \draw[titlegray, densely dotted] (-3.6,0) ellipse ({0.3*\btwo} and \btwo);
+  \node[font=\small] at (-3.05,1.2) {$d^{2}b$};
+  \draw[titlegray] (-4.7,0) -- (2.6,0) node[right, font=\small, text=black] {$z$};
+  \node[xslab, below] at (-3.6,-1.3) {impact-parameter plane};
+  \fill[titlegray!45] (0,0) circle (\R);
+  \draw[titlegray] (0,0) circle (\R);
+  \draw[titlegray] (0,0) -- (-60:\R) node[midway, below left=-1pt, font=\small, text=black] {$R$};
+  \pgfmathsetmacro{\xone}{-sqrt(\R*\R-\bone*\bone)}\pgfmathsetmacro{\tone}{180-2*asin(\bone/\R)}
+  \pgfmathsetmacro{\xtwo}{-sqrt(\R*\R-\btwo*\btwo)}\pgfmathsetmacro{\ttwo}{180-2*asin(\btwo/\R)}
+  \draw[fdl, ->, >=Stealth] (-3.6,\bone) -- (\xone,\bone) -- ++(\tone:2.7);
+  \draw[fdl, ->, >=Stealth] (-3.6,\btwo) -- (\xtwo,\btwo) -- ++(\ttwo:2.7);
+  \node[font=\small, left] at (-4.75,\bone-0.09) {$b$};
+  \node[font=\small, left] at (-4.75,\btwo+0.09) {$b+db$};
+  \draw[titlegray, densely dotted] (-4.75,\bone) -- (-3.6,\bone);
+  \draw[titlegray, densely dotted] (-4.75,\btwo) -- (-3.6,\btwo);
+  \draw[titlegray, densely dotted] (\xtwo,\btwo) -- ++(1.1,0);
+  \draw[titlegray] ($(\xtwo,\btwo)+(0.6,0)$) arc (0:\ttwo:0.6);
+  \node[font=\small] at ($(\xtwo,\btwo)+(0.5*\ttwo:0.85)$) {$\theta$};
+  \draw[titleorange, line width=2.2pt] ($(\xone,\bone)+(\tone:2.75)$) to[bend left=14] ($(\xtwo,\btwo)+(\ttwo:2.75)$);
+  \node[font=\small, text=titleorange!85!black] at ($(\xtwo,\btwo)+(\ttwo:2.75)+(0.45,0.15)$) {$d\Omega$};
+\end{tikzpicture}
