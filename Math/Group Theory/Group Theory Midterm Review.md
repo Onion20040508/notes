@@ -25,7 +25,7 @@ tags: [group-theory, math493, review]
 - [ ] The alternating group is simple (for $n \geq 5$): Theorem [[§43 Simple Groups#^thm-43-9|§43.9]] $A_n$ Is Simple for $n \geq 5$ (WS 7.5; lecture 9/28, 9/30), Proposition [[§43 Simple Groups#^prop-43-6|§43.6]] $A_5$ Is Simple (WS 7.4; class 9/30).
 - [ ] The definition and basic properties of solvable groups: Definition [[§48 Solvable Groups#^def-48-1|§48.1]] Solvable Group (WS 9), Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]] Subgroups of Solvable Groups Are Solvable (WS 9.2; lecture 10/7, 10/9), Proposition [[§48 Solvable Groups#^prop-48-3|§48.3]] Quotients of Solvable Groups Are Solvable (WS 9.3; lecture 10/9), Theorem [[§49 The Derived Series#^thm-49-1|§49.1]] Solvability via the Derived Series (WS 9.6; lecture 10/9, 10/12).
 - [ ] The derived subgroup: Definition [[§47 Commutators#^def-47-2|§47.2]] Commutator Subgroup, Proposition [[§47 Commutators#^prop-47-4|§47.4]] Properties of the Commutator Subgroup ((1) is PS 4.4(1), WS 9.4), Proposition [[§47 Commutators#^prop-47-11|§47.11]] Abelian Quotients and Commutators (lecture 10/9).
-- [ ] The Sylow theorems: Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem (WS 10.4; class 10/14), Theorem [[§52 The Sylow Theorems#^thm-52-6|§52.6]] The Second Sylow Theorem (WS 10.6; lecture 10/16), Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]] The Third Sylow Theorem (stated on WS 10; lecture 10/16).
+- [ ] The Sylow theorems: Theorem [[§53 The Sylow Theorems#^thm-53-4|§53.4]] The First Sylow Theorem (WS 10.4; class 10/14), Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]] The Second Sylow Theorem (WS 10.6; lecture 10/16), Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]] The Third Sylow Theorem (stated on WS 10; lecture 10/16).
 
 **Your one page of notes.** A printable sheet (both sides of one sheet, 5.4 pt) is in the OneDrive `493 Honor Algebra/Midterm` folder (and `~/Downloads/math493_midterm_notes_page.pdf`), in priority order: all main definitions; every worksheet theorem (with the lecture's main results) as statement plus numbered proof steps; every problem-set theorem the same way; then the toolkit results proved in the notes, examples, and small groups.
 
@@ -121,12 +121,12 @@ Tick a problem when you can do it closed-book. "Proof not yet in the notes" mark
 - [ ] WS 9.6: Theorem [[§49 The Derived Series#^thm-49-1|§49.1]] Solvability via the Derived Series · [[Group Theory Notes Drill#^nd-thm-49-1|drill]]
 
 **Worksheet 10**
-- [ ] WS 10.1: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-1|§51.1]] Fixed Points of a $p$-Group Action · [[Group Theory Notes Drill#^nd-prop-51-1|drill]]
-- [ ] WS 10.2: Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]] The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ · [[Group Theory Notes Drill#^nd-prop-51-5|drill]]
-- [ ] WS 10.3: Proposition [[§52 The Sylow Theorems#^prop-52-3|§52.3]] Sylow Subgroups of a Subgroup · [[Group Theory Notes Drill#^nd-prop-52-3|drill]]
-- [ ] WS 10.4: Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem · [[Group Theory Notes Drill#^nd-thm-52-4|drill]]
-- [ ] WS 10.5: Proposition [[§52 The Sylow Theorems#^prop-52-5|§52.5]] $p$-Subgroups and Conjugates of a Sylow Subgroup · [[Group Theory Notes Drill#^nd-prop-52-5|drill]]
-- [ ] WS 10.6: Theorem [[§52 The Sylow Theorems#^thm-52-6|§52.6]] The Second Sylow Theorem · [[Group Theory Notes Drill#^nd-thm-52-6|drill]]
+- [ ] WS 10.1: Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-1|§52.1]] Fixed Points of a $p$-Group Action · [[Group Theory Notes Drill#^nd-prop-51-1|drill]]
+- [ ] WS 10.2: Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-5|§52.5]] The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ · [[Group Theory Notes Drill#^nd-prop-51-5|drill]]
+- [ ] WS 10.3: Proposition [[§53 The Sylow Theorems#^prop-53-3|§53.3]] Sylow Subgroups of a Subgroup · [[Group Theory Notes Drill#^nd-prop-52-3|drill]]
+- [ ] WS 10.4: Theorem [[§53 The Sylow Theorems#^thm-53-4|§53.4]] The First Sylow Theorem · [[Group Theory Notes Drill#^nd-thm-52-4|drill]]
+- [ ] WS 10.5: Proposition [[§53 The Sylow Theorems#^prop-53-5|§53.5]] $p$-Subgroups and Conjugates of a Sylow Subgroup · [[Group Theory Notes Drill#^nd-prop-52-5|drill]]
+- [ ] WS 10.6: Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]] The Second Sylow Theorem · [[Group Theory Notes Drill#^nd-thm-52-6|drill]]
 
 ## T1. Groups and subgroups (§1–§5)
 **Language**
@@ -212,13 +212,13 @@ Tick a problem when you can do it closed-book. "Proof not yet in the notes" mark
 
 ## T10. The Sylow theorems (§51–§52)
 **Language**
-- [ ] Definition [[§51 p-Groups and Sylow Subgroups#^def-51-1|§51.1]] $p$-Subgroup (WS 10), Definition [[§51 p-Groups and Sylow Subgroups#^def-51-2|§51.2]] Sylow $p$-Subgroup (WS 10)
+- [ ] Definition [[§52 p-Groups and Sylow Subgroups#^def-52-1|§52.1]] $p$-Subgroup (WS 10), Definition [[§52 p-Groups and Sylow Subgroups#^def-52-2|§52.2]] Sylow $p$-Subgroup (WS 10)
 **Proofs**
-- [ ] ★★ Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-1|§51.1]] Fixed Points of a $p$-Group Action (WS 10.1) (fixed points of a $p$-group action, mod $p$ counting), Proposition [[§52 The Sylow Theorems#^prop-52-3|§52.3]] Sylow Subgroups of a Subgroup (WS 10.3; class 10/14) (WS 10.3), Theorem [[§52 The Sylow Theorems#^thm-52-4|§52.4]] The First Sylow Theorem (WS 10.4; class 10/14) Sylow I.
-- [ ] ★★ Theorem [[§52 The Sylow Theorems#^thm-52-6|§52.6]] The Second Sylow Theorem (WS 10.6; lecture 10/16) Sylow II, Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]] The Third Sylow Theorem (stated on WS 10; lecture 10/16) Sylow III, Corollary [[§52 The Sylow Theorems#^cor-52-7|§52.7]] A Normal Sylow Subgroup Is the Only One (lecture 10/16), Corollary [[§52 The Sylow Theorems#^cor-52-10|§52.10]] The Number of Sylow Subgroups Divides $|G|$ (lecture 10/16).
-- [ ] ★★ Theorem [[§51 p-Groups and Sylow Subgroups#^thm-51-7|§51.7]] Groups of Order $p^2$ (PS 6.3) groups of order $p^2$ (PS 6.3), Proposition [[§52 The Sylow Theorems#^prop-52-11|§52.11]] Groups of Order $pq$ (lecture 10/16: ``same for $|G| = pq$'') groups of order $pq$.
-- [ ] ★ Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-4|§51.4]] The Order of $GL_n(\mathbb{F}_p)$ (stated on WS 10; PS 6) $|GL_n(\mathbb{F}_p)|$ (PS 6.4), Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-5|§51.5]] The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ (WS 10.2) (unitriangular matrices).
-**Examples** Example [[§51 p-Groups and Sylow Subgroups#^ex-51-1|§51.1]] Sylow Subgroups of $S_3$ and $S_4$ (lecture 10/12; the counts are not from class), Example [[§52 The Sylow Theorems#^ex-52-1|§52.1]] The Sylow $5$-Subgroups of $S_5$ (lecture 10/16) ($n_5 = 6$ in $S_5$), Example [[§52 The Sylow Theorems#^ex-52-2|§52.2]] Groups of Order $15$ (lecture 10/16) (order 15).
+- [ ] ★★ Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-1|§52.1]] Fixed Points of a $p$-Group Action (WS 10.1) (fixed points of a $p$-group action, mod $p$ counting), Proposition [[§53 The Sylow Theorems#^prop-53-3|§53.3]] Sylow Subgroups of a Subgroup (WS 10.3; class 10/14) (WS 10.3), Theorem [[§53 The Sylow Theorems#^thm-53-4|§53.4]] The First Sylow Theorem (WS 10.4; class 10/14) Sylow I.
+- [ ] ★★ Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]] The Second Sylow Theorem (WS 10.6; lecture 10/16) Sylow II, Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]] The Third Sylow Theorem (stated on WS 10; lecture 10/16) Sylow III, Corollary [[§53 The Sylow Theorems#^cor-53-7|§53.7]] A Normal Sylow Subgroup Is the Only One (lecture 10/16), Corollary [[§53 The Sylow Theorems#^cor-53-10|§53.10]] The Number of Sylow Subgroups Divides $|G|$ (lecture 10/16).
+- [ ] ★★ Theorem [[§52 p-Groups and Sylow Subgroups#^thm-52-7|§52.7]] Groups of Order $p^2$ (PS 6.3) groups of order $p^2$ (PS 6.3), Proposition [[§53 The Sylow Theorems#^prop-53-11|§53.11]] Groups of Order $pq$ (lecture 10/16: ``same for $|G| = pq$'') groups of order $pq$.
+- [ ] ★ Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-4|§52.4]] The Order of $GL_n(\mathbb{F}_p)$ (stated on WS 10; PS 6) $|GL_n(\mathbb{F}_p)|$ (PS 6.4), Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-5|§52.5]] The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$ (WS 10.2) (unitriangular matrices).
+**Examples** Example [[§52 p-Groups and Sylow Subgroups#^ex-52-1|§52.1]] Sylow Subgroups of $S_3$ and $S_4$ (lecture 10/12; the counts are not from class), Example [[§53 The Sylow Theorems#^ex-53-1|§53.1]] The Sylow $5$-Subgroups of $S_5$ (lecture 10/16) ($n_5 = 6$ in $S_5$), Example [[§53 The Sylow Theorems#^ex-53-2|§53.2]] Groups of Order $15$ (lecture 10/16) (order 15).
 
 ## The example library
 Test every true/false claim here first.

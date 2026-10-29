@@ -45,7 +45,7 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 
 ## Chapter by chapter
 
-Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmetric Group S₃|Chapter 1]] · [[§13 The Symmetric Group S₃#S₃ Earlier in This Chapter|Chapter 3]] · [[§19 S₃, ℤ∕nℤ and Uₙ#The Symmetric Group S₃|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#The Symmetric Group S₃|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#The Symmetric Group S₃|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#The Symmetric Group S₃|Chapter 8]] · [[§50 S₃, S₄, Aₙ and GLₙ#The Symmetric Group S₃|Chapter 9]].
+Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmetric Group S₃|Chapter 1]] · [[§13 The Symmetric Group S₃#S₃ Earlier in This Chapter|Chapter 3]] · [[§19 S₃, ℤ∕nℤ and Uₙ#The Symmetric Group S₃|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#The Symmetric Group S₃|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#The Symmetric Group S₃|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#The Symmetric Group S₃|Chapter 8]] · [[§51 S₃, S₄, Aₙ and GLₙ#The Symmetric Group S₃|Chapter 9]].
 
 ## The mixed hypothesis $gh_1 = h_2g$ does not cancel
 ![[§2 First Consequences of the Axioms#^ex-2-1]]

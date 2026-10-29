@@ -24,7 +24,7 @@ tags: [group-theory, hub]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: Quotients Along the Correspondence]]
 
 ## Used in (Group Theory)
-- [[§56 Composition Series and the Jordan–Hölder Theorem#^lem-56-3|Lemma §56.3: Finite Groups Have Composition Series]]
+- [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-3|Lemma §50.3: Finite Groups Have Composition Series]]
 
 ## Connections
 - **Where it sits.** It is the case A₁ = K, A₂ = G of part (3) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Quotients Along the Correspondence]] (§42.4), “dividing out N twice”, in the setting of the [[Correspondence Theorem for Groups]].

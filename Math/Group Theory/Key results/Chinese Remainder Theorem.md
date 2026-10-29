@@ -23,7 +23,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§22 The Structure of Uₙ#^thm-22-2|Theorem §22.2: Uₙ as a Product of Prime-Power Unit Groups]]
-- [[§52 The Sylow Theorems#^prop-52-11|Proposition §52.11: Groups of Order pq]]
+- [[§53 The Sylow Theorems#^prop-53-11|Proposition §53.11: Groups of Order pq]]
 
 ## Connections
 - **Used for.** [[§22 The Structure of Uₙ#^thm-22-2|Uₙ as a Product of Prime-Power Unit Groups]] (§22.2), by restricting ρ to units, and hence [[§22 The Structure of Uₙ#^cor-22-3|Euler's Totient Formula]]. For solving simultaneous congruences, see [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^ex-9-1|Ex. §9.1]].

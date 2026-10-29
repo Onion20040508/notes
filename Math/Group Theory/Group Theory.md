@@ -36,7 +36,6 @@ graph TD
   C8["8 Normal Subgroups and Quotient Groups"]
   C9["9 Commutators, Solvable Groups and the Sylow Theorems"]
   C10["10 Semidirect Products"]
-  C11["11 Composition Series"]
   X1["Linear Algebra (LADR)"]
   X2["Single Variable Analysis (451)"]
   X3["Topology (590)"]
@@ -50,7 +49,6 @@ graph TD
   C7 --> C8
   C8 --> C9
   C9 --> C10
-  C9 --> C11
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C4 -.->|on credit| C2
@@ -83,10 +81,9 @@ graph TD
 - [[· 8 Normal Subgroups and Quotient Groups]]
 - [[· 9 Commutators, Solvable Groups and the Sylow Theorems]]
 - [[· 10 Semidirect Products]]
-- [[· 11 Composition Series]]
 
 ## Planned topics (syllabus)
-First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems ✓ (§51–§52); solvable groups ✓ (§48–§50; quotients and the derived-series criterion pending); composition series and the Jordan–Hölder theorem (begun, §56; proof to be finished Oct 30); simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (orders ≤ 100 begun, §53; orders 30, 56, 90 on Problem Set 7); solvable and nilpotent groups; direct and semidirect products ✓ (§54–§55); central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
+First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems ✓ (§52–§53); solvable groups ✓ (§48–§49; quotients and the derived-series criterion pending); composition series and the Jordan–Hölder theorem (begun, §50; proof to be finished Oct 30); simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (orders ≤ 100 begun, §54; orders 30, 56, 90 on Problem Set 7); solvable and nilpotent groups; direct and semidirect products ✓ (§55–§56); central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
 
 ## Central results
 - [[Cancellation Laws in Groups]] (§2.1)
@@ -123,14 +120,14 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Correspondence Theorem for Groups]] (§42.3)
 - [[Third Isomorphism Theorem for Groups]] (§42.5)
 - [[Aₙ Is Simple for n ≥ 5]] (§43.9)
-- [[Groups of Order p²]] (§51.7)
-- [[First Sylow Theorem]] (§52.4)
-- [[Second Sylow Theorem]] (§52.6)
-- [[Third Sylow Theorem]] (§52.9)
-- [[Groups of Order pq]] (§52.11)
-- [[Internal Direct Product Theorem]] (§54.1)
-- [[Internal and External Semidirect Products Agree]] (§55.6)
-- [[Jordan–Hölder Theorem]] (§56.1)
+- [[Jordan–Hölder Theorem]] (§50.1)
+- [[Groups of Order p²]] (§52.7)
+- [[First Sylow Theorem]] (§53.4)
+- [[Second Sylow Theorem]] (§53.6)
+- [[Third Sylow Theorem]] (§53.9)
+- [[Groups of Order pq]] (§53.11)
+- [[Internal Direct Product Theorem]] (§55.1)
+- [[Internal and External Semidirect Products Agree]] (§56.6)
 
 ## Summaries
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.

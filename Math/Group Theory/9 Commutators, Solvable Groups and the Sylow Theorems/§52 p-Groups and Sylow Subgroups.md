@@ -2,44 +2,44 @@
 type: section
 subject: "[[Group Theory]]"
 chapter: 9
-section: 51
+section: 52
 tags: [group-theory, math493]
 ---
-← [[§50 S₃, S₄, Aₙ and GLₙ]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§52 The Sylow Theorems]] →
+← [[§51 S₃, S₄, Aₙ and GLₙ]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§53 The Sylow Theorems]] →
 
 *Reference: Worksheet 10. Throughout, $p$ is a prime.*
 
 > [!remark] Remark: The Question
-> By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]), if $H \leq G$ and $G$ is finite, then $|H|$ divides $|G|$. Conversely, if $m$ divides $|G|$, is there a subgroup of order $m$? Not in general: $A_4$ has order $12$ but no subgroup of order $6$ (The Converse of Lagrange Fails: $A_4$, [[§29 The Index and Lagrange's Theorem#^ex-29-1|Example §29.1]]). The lecture's answer is yes when $m$ is a power of a prime. The case of a prime $m = p$ is Cauchy's theorem ([[§29 The Index and Lagrange's Theorem#^thm-29-6|Theorem §29.6]]), and the case of the largest power of $p$ dividing $|G|$ is the First Sylow Theorem ([[§52 The Sylow Theorems#^thm-52-4|Theorem §52.4]]). For example, $|S_3| = 6$, and $\langle (1\,2) \rangle$ and $\langle (1\,2\,3) \rangle$ have orders $2$ and $3$. The lecture also asked for a subgroup of order $8$ in $S_4$, of order $24$ ([[§51 p-Groups and Sylow Subgroups#^ex-51-1|Example §51.1]] below).
+> By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]), if $H \leq G$ and $G$ is finite, then $|H|$ divides $|G|$. Conversely, if $m$ divides $|G|$, is there a subgroup of order $m$? Not in general: $A_4$ has order $12$ but no subgroup of order $6$ (The Converse of Lagrange Fails: $A_4$, [[§29 The Index and Lagrange's Theorem#^ex-29-1|Example §29.1]]). The lecture's answer is yes when $m$ is a power of a prime. The case of a prime $m = p$ is Cauchy's theorem ([[§29 The Index and Lagrange's Theorem#^thm-29-6|Theorem §29.6]]), and the case of the largest power of $p$ dividing $|G|$ is the First Sylow Theorem ([[§53 The Sylow Theorems#^thm-53-4|Theorem §53.4]]). For example, $|S_3| = 6$, and $\langle (1\,2) \rangle$ and $\langle (1\,2\,3) \rangle$ have orders $2$ and $3$. The lecture also asked for a subgroup of order $8$ in $S_4$, of order $24$ ([[§52 p-Groups and Sylow Subgroups#^ex-52-1|Example §52.1]] below).
 >
 > *Source: lecture 10/12*
 
-^rem-51-1
+^rem-52-1
 
 Worksheet 10 begins by restating the definition of a $p$-group, already met with the [[§35 The Center#^def-35-2|center]]:
 
 ![[§35 The Center#^def-35-3]]
 
-Nontrivial $p$-groups have nontrivial center ([[§35 The Center#^thm-35-3|Theorem §35.3]], PS 3.5); for groups of order $p^2$ this already decides the group ([[§51 p-Groups and Sylow Subgroups#Groups of Order p²|below]], PS 6.3).
+Nontrivial $p$-groups have nontrivial center ([[§35 The Center#^thm-35-3|Theorem §35.3]], PS 3.5); for groups of order $p^2$ this already decides the group ([[§52 p-Groups and Sylow Subgroups#Groups of Order p²|below]], PS 6.3).
 
-> [!definition] Definition §51.1: $p$-Subgroup
+> [!definition] Definition §52.1: $p$-Subgroup
 > For a group $G$, a **$p$-subgroup** of $G$ is a [[§4 Subgroups#^def-4-1|subgroup]] of $G$ which is a $p$-group ([[§35 The Center#^def-35-3|Def. §35.3]]).
 >
 > *Source: WS 10*
 
-^def-51-1
+^def-52-1
 
-> [!theorem] Proposition §51.1: Fixed Points of a $p$-Group Action
+> [!theorem] Proposition §52.1: Fixed Points of a $p$-Group Action
 > Let $P$ be a $p$-group and let $X$ be a finite set on which $P$ [[§25 Actions#^def-25-1|acts]]. If $|X| \not\equiv 0 \pmod p$, then $P$ [[§26 Stabilizers and Fixed Points#^def-26-2|fixes]] some point of $X$.
 >
 > *Source: WS 10.1*
 
-^prop-51-1
+^prop-52-1
 
 > [!proof]+ Proof
 > *Idea:* Orbits of size $> 1$ have size divisible by $p$, so $|X| \equiv |X^P| \pmod p$.
 >
-> *(Not from lecture; filled in. The route is the counting the lecture of 10/16 used in the proof of the Third Sylow Theorem, Theorem [[§52 The Sylow Theorems#^thm-52-9|§52.9]]: the orbits of a $p$-group have size a power of $p$, so $|X| \equiv |X^P| \pmod p$.)* Write $|P| = p^k$ (Definition [[§35 The Center#^def-35-3|§35.3]]), write $\star$ for the action (Definition [[§25 Actions#^def-25-1|§25.1]]), and let
+> *(Not from lecture; filled in. The route is the counting the lecture of 10/16 used in the proof of the Third Sylow Theorem, Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]]: the orbits of a $p$-group have size a power of $p$, so $|X| \equiv |X^P| \pmod p$.)* Write $|P| = p^k$ (Definition [[§35 The Center#^def-35-3|§35.3]]), write $\star$ for the action (Definition [[§25 Actions#^def-25-1|§25.1]]), and let
 >
 > $$
 > X^P = \{ x \in X : g \star x = x \text{ for all } g \in P \} = \bigcap_{g \in P} \operatorname{Fix}(g)
@@ -77,49 +77,49 @@ Nontrivial $p$-groups have nontrivial center ([[§35 The Center#^thm-35-3|Theore
 >
 > By hypothesis $|X| \not\equiv 0 \pmod p$, so $|X^P| \not\equiv 0 \pmod p$; in particular $|X^P| \neq 0$. So there is a point $x \in X^P$, that is, a point of $X$ fixed by every element of $P$.
 
-^pf-51-1
+^pf-52-1
 
-*Uses:* [[§52 The Sylow Theorems#^thm-52-9|§52.9]], [[§35 The Center#^def-35-3|Def. §35.3]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Stabilizers and Fixed Points#^def-26-2|Def. §26.2]], [[§27 Orbits#^prop-27-1|§27.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]]
+*Uses:* [[§53 The Sylow Theorems#^thm-53-9|§53.9]], [[§35 The Center#^def-35-3|Def. §35.3]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Stabilizers and Fixed Points#^def-26-2|Def. §26.2]], [[§27 Orbits#^prop-27-1|§27.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]]
 
 Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m$.
 
-> [!definition] Definition §51.2: Sylow $p$-Subgroup
+> [!definition] Definition §52.2: Sylow $p$-Subgroup
 > A **Sylow $p$-subgroup** of $G$ is a [[§4 Subgroups#^def-4-1|subgroup]] of $G$ of [[§4 Subgroups#^def-4-6|order]] $p^k$.
 >
 > *Source: WS 10*
 
-^def-51-2
+^def-52-2
 
-> [!example] Example §51.1: Sylow Subgroups of $S_3$ and $S_4$
-> 1. $|S_3| = 6 = 2 \cdot 3$. The [[§51 p-Groups and Sylow Subgroups#^def-51-2|Sylow]] $2$-subgroups are $\langle (1\,2) \rangle$, $\langle (1\,3) \rangle$, $\langle (2\,3) \rangle$, and the only Sylow $3$-subgroup is $A_3 = \langle (1\,2\,3) \rangle$.
+> [!example] Example §52.1: Sylow Subgroups of $S_3$ and $S_4$
+> 1. $|S_3| = 6 = 2 \cdot 3$. The [[§52 p-Groups and Sylow Subgroups#^def-52-2|Sylow]] $2$-subgroups are $\langle (1\,2) \rangle$, $\langle (1\,3) \rangle$, $\langle (2\,3) \rangle$, and the only Sylow $3$-subgroup is $A_3 = \langle (1\,2\,3) \rangle$.
 > 2. $|S_4| = 24 = 2^3 \cdot 3$. The Sylow $2$-subgroups have order $8$: they are the three subgroups $K \cup \tau K$ ($\tau$ a transposition) containing $K$, found in The Correspondence for $S_4$ and $K$ ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Example §45.2]]). The Sylow $3$-subgroups are the four subgroups $\langle (1\,2\,3) \rangle$, $\langle (1\,2\,4) \rangle$, $\langle (1\,3\,4) \rangle$, $\langle (2\,3\,4) \rangle$.
 >
-> The numbers of Sylow subgroups are $3, 1$ for $S_3$ and $3, 4$ for $S_4$, each $\equiv 1 \pmod p$, as the Third Sylow Theorem ([[§52 The Sylow Theorems#^thm-52-9|Theorem §52.9]]) predicts.
+> The numbers of Sylow subgroups are $3, 1$ for $S_3$ and $3, 4$ for $S_4$, each $\equiv 1 \pmod p$, as the Third Sylow Theorem ([[§53 The Sylow Theorems#^thm-53-9|Theorem §53.9]]) predicts.
 >
 > *Source: lecture 10/12; the counts are not from class*
 
-^ex-51-1
+^ex-52-1
 
 *(PS 6.4.)* The order of $GL_n(\mathbb{F}_p)$ is found by counting bases of $\mathbb{F}_p^n$: an invertible matrix is the same as an ordered list of $n$ linearly independent columns.
 
-> [!theorem] Lemma §51.2: Invertible Matrices Have Independent Columns
+> [!theorem] Lemma §52.2: Invertible Matrices Have Independent Columns
 > Let $k$ be a field and $M \in \operatorname{Mat}_n(k)$ with columns $\vec m_1, \ldots, \vec m_n$. Then $M \in GL_n(k)$ ([[§3 Basic Examples of Groups#^def-3-6|general linear group]]) if and only if $(\vec m_1, \ldots, \vec m_n)$ is linearly independent.
 >
 > *Source: not from class*
 
-^lem-51-2
+^lem-52-2
 
 > [!proof]+ Proof
 > For $\vec c = (c_1, \ldots, c_n) \in k^n$, $M\vec c = \sum_{i=1}^n c_i \vec m_i$. So the columns are linearly independent if and only if $M\vec c = \vec 0$ forces $\vec c = \vec 0$, that is, if and only if the linear map $\vec c \mapsto M\vec c$ of $k^n$ is injective. If $M$ is invertible, this map has the inverse $\vec c \mapsto M^{-1}\vec c$, so it is injective. Conversely, if it is injective, its kernel is $0$, so by rank–nullity its image has dimension $n$ and is all of $k^n$; the map is then a bijective linear map, its inverse is linear, and the matrix $N$ of the inverse satisfies $MN = NM = I_n$, so $M \in GL_n(k)$ (Definition [[§3 Basic Examples of Groups#^def-3-6|§3.6]]).
 
-^pf-51-2
+^pf-52-2
 
 *Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]]
 
 > [!remark]- Connections
 > - Rank–nullity, used in the proof: [[Fundamental theorem of linear maps|Linear Algebra hub]]; the determinant criterion for the same property: [[Invertible ⟺ nonzero determinant|Linear Algebra hub]].
 
-> [!theorem] Lemma §51.3: Counting Linearly Independent Tuples
+> [!theorem] Lemma §52.3: Counting Linearly Independent Tuples
 > For $1 \leq k$, the number of linearly independent $k$-tuples $(\vec v_1, \ldots, \vec v_k)$ of vectors in $\mathbb{F}_p^n$ is
 >
 > $$
@@ -128,7 +128,7 @@ Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m
 >
 > *Source: PS 6.4(1)*
 
-^lem-51-3
+^lem-52-3
 
 > [!proof]+ Proof
 > *Idea:* $\vec v_{k+1}$ must avoid the span of $\vec v_1, \ldots, \vec v_k$, which has $p^k$ elements.
@@ -143,24 +143,24 @@ Let $G$ be a finite group, and factor $|G| = p^k m$ where $p$ does not divide $m
 >
 > So exactly $p^k$ of the $p^n$ vectors $\vec v_{k+1}$ give a dependent tuple, and $p^n - p^k$ give an independent one.
 
-^pf-51-3
+^pf-52-3
 
 For $k > n$ the product contains the factor $p^n - p^n = 0$, in agreement with there being no $n+1$ linearly independent vectors in $\mathbb{F}_p^n$.
 
-> [!theorem] Proposition §51.4: The Order of $GL_n(\mathbb{F}_p)$
+> [!theorem] Proposition §52.4: The Order of $GL_n(\mathbb{F}_p)$
 >
 > $$ |GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} \prod_{k=1}^{n} (p^k - 1). $$
 >
-> In particular a Sylow $p$-subgroup ([[§51 p-Groups and Sylow Subgroups#^def-51-2|Def. §51.2]]) of $GL_n(\mathbb{F}_p)$ ([[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], with $\mathbb{F}_p$ the field of [[§8 Invertibility and Unit Groups#^prop-8-4|§8.4]]) has order $p^{\binom{n}{2}}$, since $p \nmid p^k - 1$ for $k \geq 1$.
+> In particular a Sylow $p$-subgroup ([[§52 p-Groups and Sylow Subgroups#^def-52-2|Def. §52.2]]) of $GL_n(\mathbb{F}_p)$ ([[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], with $\mathbb{F}_p$ the field of [[§8 Invertibility and Unit Groups#^prop-8-4|§8.4]]) has order $p^{\binom{n}{2}}$, since $p \nmid p^k - 1$ for $k \geq 1$.
 >
 > *Source: stated on WS 10; PS 6*
 
-^prop-51-4
+^prop-52-4
 
 > [!proof]+ Proof
 > *Idea:* Count ordered bases of $\mathbb{F}_p^n$, then factor $p^i$ out of each $p^n - p^i$.
 >
-> *(PS 6.4(2); the last step, rewriting the product, is not from the problem set.)* A matrix $M \in \operatorname{Mat}_n(\mathbb{F}_p)$ is the same as the ordered list $(\vec m_1, \ldots, \vec m_n)$ of its columns, and $M \in GL_n(\mathbb{F}_p)$ exactly when that list is linearly independent (Lemma [[§51 p-Groups and Sylow Subgroups#^lem-51-2|§51.2]]). So by Lemma [[§51 p-Groups and Sylow Subgroups#^lem-51-3|§51.3]] with $k = n$,
+> *(PS 6.4(2); the last step, rewriting the product, is not from the problem set.)* A matrix $M \in \operatorname{Mat}_n(\mathbb{F}_p)$ is the same as the ordered list $(\vec m_1, \ldots, \vec m_n)$ of its columns, and $M \in GL_n(\mathbb{F}_p)$ exactly when that list is linearly independent (Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-2|§52.2]]). So by Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-3|§52.3]] with $k = n$,
 >
 > $$
 > |GL_n(\mathbb{F}_p)| = (p^n - 1)(p^n - p) \cdots (p^n - p^{n-1}) = \prod_{i=0}^{n-1} (p^n - p^i) .
@@ -172,24 +172,24 @@ For $k > n$ the product contains the factor $p^n - p^n = 0$, in agreement with t
 > |GL_n(\mathbb{F}_p)| = p^{0 + 1 + \cdots + (n-1)} \prod_{i=0}^{n-1} (p^{n-i} - 1) = p^{\binom{n}{2}} \prod_{k=1}^{n} (p^k - 1),
 > $$
 >
-> with $0 + 1 + \cdots + (n-1) = \binom{n}{2}$ and $k = n - i$. Finally $p \nmid p^k - 1$ for $k \geq 1$ (as $p \mid p^k$, it would divide $1$), so by unique factorization the largest power of $p$ dividing $|GL_n(\mathbb{F}_p)|$ is $p^{\binom{n}{2}}$, which is the order of a Sylow $p$-subgroup (Definition [[§51 p-Groups and Sylow Subgroups#^def-51-2|§51.2]]).
+> with $0 + 1 + \cdots + (n-1) = \binom{n}{2}$ and $k = n - i$. Finally $p \nmid p^k - 1$ for $k \geq 1$ (as $p \mid p^k$, it would divide $1$), so by unique factorization the largest power of $p$ dividing $|GL_n(\mathbb{F}_p)|$ is $p^{\binom{n}{2}}$, which is the order of a Sylow $p$-subgroup (Definition [[§52 p-Groups and Sylow Subgroups#^def-52-2|§52.2]]).
 
-^pf-51-4
+^pf-52-4
 
-*Uses:* [[§51 p-Groups and Sylow Subgroups#^lem-51-2|§51.2]], [[§51 p-Groups and Sylow Subgroups#^lem-51-3|§51.3]], [[§51 p-Groups and Sylow Subgroups#^def-51-2|Def. §51.2]]
+*Uses:* [[§52 p-Groups and Sylow Subgroups#^lem-52-2|§52.2]], [[§52 p-Groups and Sylow Subgroups#^lem-52-3|§52.3]], [[§52 p-Groups and Sylow Subgroups#^def-52-2|Def. §52.2]]
 
 Worksheet 10 quotes this order from Problem Set 6; the proof above is the submitted solution of [[493 Problem Set 6#^hw-6-4|Problem 6.4]].
 
-> [!theorem] Proposition §51.5: The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$
+> [!theorem] Proposition §52.5: The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$
 > Let $P \subseteq GL_n(\mathbb{F}_p)$ be the group of matrices of the form
 >
 > $$ \begin{bmatrix} 1 & b_{12} & b_{13} & \cdots & b_{1(n-1)} & b_{1n} \\ 0 & 1 & b_{23} & \cdots & b_{2(n-1)} & b_{2n} \\ 0 & 0 & 1 & \cdots & b_{3(n-1)} & b_{3n} \\ & & & \ddots & & \vdots \\ 0 & 0 & 0 & \cdots & 1 & b_{(n-1)n} \\ 0 & 0 & 0 & \cdots & 0 & 1 \end{bmatrix}. $$
 >
-> Then $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ ([[§51 p-Groups and Sylow Subgroups#^def-51-2|Def. §51.2]]).
+> Then $P$ is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ ([[§52 p-Groups and Sylow Subgroups#^def-52-2|Def. §52.2]]).
 >
 > *Source: WS 10.2*
 
-^prop-51-5
+^prop-52-5
 
 > [!proof]+ Proof
 > *Idea:* $P = I_n + \mathcal{N}$ with $\mathcal{N}$ nilpotent; count the $\binom{n}{2}$ free entries.
@@ -249,31 +249,31 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 >
 > and therefore $|P| = p^{\binom{n}{2}}$.
 >
-> **(5) Comparison with $|GL_n(\mathbb{F}_p)|$.** By The Order of $GL_n(\mathbb{F}_p)$ (Proposition [[§51 p-Groups and Sylow Subgroups#^prop-51-4|§51.4]]),
+> **(5) Comparison with $|GL_n(\mathbb{F}_p)|$.** By The Order of $GL_n(\mathbb{F}_p)$ (Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-4|§52.4]]),
 >
 > $$
 > |GL_n(\mathbb{F}_p)| = \prod_{i=0}^{n-1} (p^n - p^i) = p^{\binom{n}{2}}\, m, \qquad m = \prod_{k=1}^{n} (p^k - 1),
 > $$
 >
-> and $p \nmid m$: for each $k \geq 1$, $p \nmid p^k - 1$ (since $p \mid p^k$, it would divide $1$), so by Euclid's Lemma (Lemma [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]]), applied $n - 1$ times, $p$ does not divide the product $m$. So in the factorization $|GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} m$ with $p \nmid m$, the exponent of $p$ is $\binom{n}{2}$, and a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ is a subgroup of order $p^{\binom{n}{2}}$ (Definition [[§51 p-Groups and Sylow Subgroups#^def-51-2|§51.2]]). By (3) and (4), $P$ is a subgroup of $GL_n(\mathbb{F}_p)$ of order $p^{\binom{n}{2}}$, hence a Sylow $p$-subgroup.
+> and $p \nmid m$: for each $k \geq 1$, $p \nmid p^k - 1$ (since $p \mid p^k$, it would divide $1$), so by Euclid's Lemma (Lemma [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]]), applied $n - 1$ times, $p$ does not divide the product $m$. So in the factorization $|GL_n(\mathbb{F}_p)| = p^{\binom{n}{2}} m$ with $p \nmid m$, the exponent of $p$ is $\binom{n}{2}$, and a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ is a subgroup of order $p^{\binom{n}{2}}$ (Definition [[§52 p-Groups and Sylow Subgroups#^def-52-2|§52.2]]). By (3) and (4), $P$ is a subgroup of $GL_n(\mathbb{F}_p)$ of order $p^{\binom{n}{2}}$, hence a Sylow $p$-subgroup.
 
-^pf-51-5
+^pf-52-5
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§51 p-Groups and Sylow Subgroups#^prop-51-4|§51.4]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§51 p-Groups and Sylow Subgroups#^def-51-2|Def. §51.2]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§52 p-Groups and Sylow Subgroups#^prop-52-4|§52.4]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§52 p-Groups and Sylow Subgroups#^def-52-2|Def. §52.2]]
 
-> [!example] Example §51.2: A Sylow $5$-Subgroup of $GL_2(\mathbb{F}_5)$
-> $|GL_2(\mathbb{F}_5)| = (5^2 - 1)(5^2 - 5) = 24 \cdot 20 = 480 = 2^5 \cdot 3 \cdot 5$ (The Order of $GL_n(\mathbb{F}_p)$, [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Proposition §51.4]]), so a [[§51 p-Groups and Sylow Subgroups#^def-51-2|Sylow]] $5$-subgroup has order $5$. The matrix $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ satisfies $u^j = \begin{pmatrix} 1 & j \\ 0 & 1 \end{pmatrix}$, so it has order $5$, and $\langle u \rangle$ is a Sylow $5$-subgroup. It is exactly the unitriangular group of WS 10.2 ([[§51 p-Groups and Sylow Subgroups#^prop-51-5|Proposition §51.5]]) for $n = 2$, $p = 5$, which has $p^{\binom{2}{2}} = 5$ elements.
+> [!example] Example §52.2: A Sylow $5$-Subgroup of $GL_2(\mathbb{F}_5)$
+> $|GL_2(\mathbb{F}_5)| = (5^2 - 1)(5^2 - 5) = 24 \cdot 20 = 480 = 2^5 \cdot 3 \cdot 5$ (The Order of $GL_n(\mathbb{F}_p)$, [[§52 p-Groups and Sylow Subgroups#^prop-52-4|Proposition §52.4]]), so a [[§52 p-Groups and Sylow Subgroups#^def-52-2|Sylow]] $5$-subgroup has order $5$. The matrix $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ satisfies $u^j = \begin{pmatrix} 1 & j \\ 0 & 1 \end{pmatrix}$, so it has order $5$, and $\langle u \rangle$ is a Sylow $5$-subgroup. It is exactly the unitriangular group of WS 10.2 ([[§52 p-Groups and Sylow Subgroups#^prop-52-5|Proposition §52.5]]) for $n = 2$, $p = 5$, which has $p^{\binom{2}{2}} = 5$ elements.
 >
 > *Source: lecture 10/14*
 
-^ex-51-2
+^ex-52-2
 
 
 ## Groups of Order p²
 
 *(PS 6.3.)* A nontrivial central element, which every nontrivial $p$-group has, is enough to classify the groups of order $p^2$. The splitting step is a general criterion, isolated first.
 
-> [!theorem] Lemma §51.6: Internal Direct Products
+> [!theorem] Lemma §52.6: Internal Direct Products
 > Let $G$ be a finite group and $H, L \leq G$ subgroups with
 > 1. every element of $H$ commuting with every element of $L$,
 > 2. $H \cap L = \{e\}$, and
@@ -283,7 +283,7 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 >
 > *Source: from PS 6.3(5)*
 
-^lem-51-6
+^lem-52-6
 
 > [!proof]+ Proof
 > *Idea:* $(h, l) \mapsto hl$ is an injective homomorphism between groups of equal size.
@@ -298,16 +298,16 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 >
 > *The two sufficient conditions for (1).* If $H \subseteq Z(G)$ (Definition [[§35 The Center#^def-35-2|§35.2]]), every $h \in H$ commutes with everything. If $H, L \trianglelefteq G$ and $H \cap L = \{e\}$, let $h \in H$, $l \in L$ and consider $hlh^{-1}l^{-1}$: grouped as $(hlh^{-1})\,l^{-1}$ it lies in $L$, since $hlh^{-1} \in L$ by normality of $L$; grouped as $h\,(lh^{-1}l^{-1})$ it lies in $H$, since $lh^{-1}l^{-1} \in H$ by normality of $H$. So $hlh^{-1}l^{-1} \in H \cap L = \{e\}$, i.e. $hl = lh$. *(Not from the problem set: the problem used only the central case.)*
 
-^pf-51-6
+^pf-52-6
 
 *Uses:* [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§35 The Center#^def-35-2|Def. §35.2]]
 
-> [!theorem] Theorem §51.7: Groups of Order $p^2$
+> [!theorem] Theorem §52.7: Groups of Order $p^2$
 > Let $p$ be prime and $|G| = p^2$. Then $G \cong \mathbb{Z}/p^2\mathbb{Z}$ or $G \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$.
 >
 > *Source: PS 6.3*
 
-^thm-51-7
+^thm-52-7
 
 > [!proof]+ Proof
 > *Idea:* Take a central $z \neq e$; either $G$ is cyclic or $G \cong \langle z \rangle \times \langle g \rangle$.
@@ -324,33 +324,33 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 >
 > *(4) If $a \neq 0$.* Then $p \nmid a$, so $g^p = z^a \neq e$; $g$ has order $p$ or $p^2$, and not $p$, so order $p^2$, and $G = \langle g \rangle \cong \mathbb{Z}/p^2\mathbb{Z}$ as in (1).
 >
-> *(5) If $a = 0$.* Then $g^p = e$, so $g$ has order $p$ and $\langle g \rangle \cong \mathbb{Z}/p\mathbb{Z} \cong \langle z \rangle$. The subgroup $\langle z \rangle \cap \langle g \rangle$ of $\langle g \rangle$ has order $1$ or $p$ (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]); order $p$ would give $\langle g \rangle \subseteq \langle z \rangle$, so $g \in \langle z \rangle$ and $\bar g = \langle z \rangle$, which is false. So $\langle z \rangle \cap \langle g \rangle = \{e\}$. Lemma [[§51 p-Groups and Sylow Subgroups#^lem-51-6|§51.6]] with $H = \langle z \rangle$ (central) and $L = \langle g \rangle$, $|H|\,|L| = p \cdot p = |G|$, gives
+> *(5) If $a = 0$.* Then $g^p = e$, so $g$ has order $p$ and $\langle g \rangle \cong \mathbb{Z}/p\mathbb{Z} \cong \langle z \rangle$. The subgroup $\langle z \rangle \cap \langle g \rangle$ of $\langle g \rangle$ has order $1$ or $p$ (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]); order $p$ would give $\langle g \rangle \subseteq \langle z \rangle$, so $g \in \langle z \rangle$ and $\bar g = \langle z \rangle$, which is false. So $\langle z \rangle \cap \langle g \rangle = \{e\}$. Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-6|§52.6]] with $H = \langle z \rangle$ (central) and $L = \langle g \rangle$, $|H|\,|L| = p \cdot p = |G|$, gives
 >
 > $$
 > G \cong \langle z \rangle \times \langle g \rangle \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z} .
 > $$
 
-^pf-51-7
+^pf-52-7
 
-*Uses:* [[§17 Cyclic Groups#^prop-17-3|§17.3]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§35 The Center#^thm-35-3|§35.3]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]], [[§51 p-Groups and Sylow Subgroups#^lem-51-6|§51.6]]
+*Uses:* [[§17 Cyclic Groups#^prop-17-3|§17.3]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§35 The Center#^thm-35-3|§35.3]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]], [[§52 p-Groups and Sylow Subgroups#^lem-52-6|§52.6]]
 
-> [!theorem] Corollary §51.8: Groups of Order $p^2$ Are Abelian
+> [!theorem] Corollary §52.8: Groups of Order $p^2$ Are Abelian
 > Every group of order $p^2$, $p$ prime, is [[§1 The Definition of a Group#^def-1-2|abelian]].
 
-^cor-51-8
+^cor-52-8
 
 > [!proof]+ Proof
-> By Theorem [[§51 p-Groups and Sylow Subgroups#^thm-51-7|§51.7]], $G$ is isomorphic to $\mathbb{Z}/p^2\mathbb{Z}$ or to $\mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$, both abelian (the product componentwise, Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]); and a group isomorphic to an abelian group is abelian, since $\varphi(ab) = \varphi(a)\varphi(b) = \varphi(b)\varphi(a) = \varphi(ba)$ and $\varphi$ is injective.
+> By Theorem [[§52 p-Groups and Sylow Subgroups#^thm-52-7|§52.7]], $G$ is isomorphic to $\mathbb{Z}/p^2\mathbb{Z}$ or to $\mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$, both abelian (the product componentwise, Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]); and a group isomorphic to an abelian group is abelian, since $\varphi(ab) = \varphi(a)\varphi(b) = \varphi(b)\varphi(a) = \varphi(ba)$ and $\varphi$ is injective.
 
-^pf-51-8
+^pf-52-8
 
-*Uses:* [[§51 p-Groups and Sylow Subgroups#^thm-51-7|§51.7]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]]
+*Uses:* [[§52 p-Groups and Sylow Subgroups#^thm-52-7|§52.7]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]]
 
 > [!remark] Remark: Groups of Order $p^k$
 > Speyer, on Problem Set 6: one can continue classifying groups of order $p^k$ in this way for any particular $k$, although the number of cases grows rapidly; groups of order $p^3$ are “tractable for an undergraduate”. The largest exponent fully classified is $k = 7$ (O'Brien and Vaughan-Lee, “The groups with order $p^7$ for odd prime $p$”, *Journal of Algebra*, 2005), with partial progress on $k = 8$ and $9$ published as recently as 2026.
 >
 > *Source: PS 6, stated, not proved*
 
-^rem-51-2
+^rem-52-2
 
-*$GL_n$ elsewhere:* ← [[§50 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|the recap earlier in this chapter]] · no later appearance yet · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
+*$GL_n$ elsewhere:* ← [[§51 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|the recap earlier in this chapter]] · no later appearance yet · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]

@@ -22,7 +22,7 @@ tags: [group-theory, hub]
 - [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]
 - [[§39 Sources of Normal Subgroups#^thm-39-5|Theorem §39.5: A Normal Subgroup Inside a Subgroup of Finite Index]]
 - [[§43 Simple Groups#^prop-43-10|Proposition §43.10: The Pair-Partition Homomorphism S_4 → S_3]]
-- [[§53 Simple Groups of Small Order#^prop-53-4|Proposition §53.4: The Conjugation Homomorphism G → S_n_p]]
+- [[§54 Simple Groups of Small Order#^prop-54-4|Proposition §54.4: The Conjugation Homomorphism G → S_n_p]]
 
 ## Connections
 - **Used for.** Every action now yields a homomorphism whose kernel and image can be studied. Faithful actions embed G in S_X ([[§25 Actions#^prop-25-4|§25.4]]), which gives [[Cayley's Theorem]]. The action on G/H gives a normal subgroup inside H ([[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]]), and the action of S₄ on pair partitions gives S₄/K ≅ S₃ ([[§43 Simple Groups#^prop-43-10|§43.10]]).

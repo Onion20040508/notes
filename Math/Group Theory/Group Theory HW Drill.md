@@ -894,7 +894,7 @@ Let $G$ be a group and let $M$ and $N$ be normal subgroups of $G$ with $M \cap N
 > - Commutator: [[§47 Commutators#^def-47-1|Def §47.1]]
 > - Conjugation: [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def §18.2]]
 >
-> **Key results.** [[§47 Commutators#^prop-47-8|Prop §47.8]] (this problem); [[§47 Commutators#^rem-47-4|Remark: Commutators of Normal Subgroups]]; reused in the internal direct product criterion [[§51 p-Groups and Sylow Subgroups#^lem-51-6|Lem §51.6]] (second sufficient condition); the counterexample subgroups of [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex §41.2]].
+> **Key results.** [[§47 Commutators#^prop-47-8|Prop §47.8]] (this problem); [[§47 Commutators#^rem-47-4|Remark: Commutators of Normal Subgroups]]; reused in the internal direct product criterion [[§52 p-Groups and Sylow Subgroups#^lem-52-6|Lem §52.6]] (second sufficient condition); the counterexample subgroups of [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex §41.2]].
 >
 > **Strategy (G6, G8).** The commutator $x = mnm^{-1}n^{-1}$ lies in $N$ (group as $(mnm^{-1})\,n^{-1}$) and in $M$ (group as $m\,(nm^{-1}n^{-1})$), hence is $e$.
 >
@@ -1477,7 +1477,7 @@ If $a = 0$, show that $G \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb
 > - Order of an element [[§4 Subgroups#^def-4-7|Def §4.7]]; normal subgroup [[§38 Normal Subgroups#^def-38-1|Def §38.1]]; quotient group [[§40 Quotient Groups#^def-40-1|Def §40.1]]
 > - Direct product: [[§3 Basic Examples of Groups#^def-3-2|Def §3.2]]
 >
-> **Key results.** [[§51 p-Groups and Sylow Subgroups#^thm-51-7|Thm §51.7]] (this problem); the splitting step is [[§51 p-Groups and Sylow Subgroups#^lem-51-6|Lem §51.6]]; consequence [[§51 p-Groups and Sylow Subgroups#^cor-51-8|Cor §51.8]]. Used: nontrivial center of $p$-groups (PS 3.5) [[§35 The Center#^thm-35-3|Thm §35.3]], Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]], groups of prime order (PS 2.5) [[§29 The Index and Lagrange's Theorem#^thm-29-7|Thm §29.7]], $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$ [[§17 Cyclic Groups#^prop-17-3|Prop §17.3]], division algorithm [[§6 Divisibility and Congruence#^lem-6-1|Lem §6.1]]. Context: [[§51 p-Groups and Sylow Subgroups#^rem-51-2|Remark: Groups of Order p to the k]].
+> **Key results.** [[§52 p-Groups and Sylow Subgroups#^thm-52-7|Thm §52.7]] (this problem); the splitting step is [[§52 p-Groups and Sylow Subgroups#^lem-52-6|Lem §52.6]]; consequence [[§52 p-Groups and Sylow Subgroups#^cor-52-8|Cor §52.8]]. Used: nontrivial center of $p$-groups (PS 3.5) [[§35 The Center#^thm-35-3|Thm §35.3]], Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]], groups of prime order (PS 2.5) [[§29 The Index and Lagrange's Theorem#^thm-29-7|Thm §29.7]], $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$ [[§17 Cyclic Groups#^prop-17-3|Prop §17.3]], division algorithm [[§6 Divisibility and Congruence#^lem-6-1|Lem §6.1]]. Context: [[§52 p-Groups and Sylow Subgroups#^rem-52-2|Remark: Groups of Order p to the k]].
 >
 > **Difficulty** (1) 1, (2) 1, (3) 1, (4) 1, (5) 2. Submitted solution: follows the five steps; (2) by induction on $k$; (3) via the quotient map and the division algorithm; (5) proves the trivial intersection, then that $\varphi$ is a homomorphism (using centrality) and injective, and counts. The notes split (5) off as Lem §51.6, with the "both normal" condition added (not from the problem set), and state Thm §51.7.
 
@@ -1525,7 +1525,7 @@ Show that $|GL_n(\mathbb{F}_p)| = (p^n - 1)(p^n - p) \cdots (p^n - p^{n-1})$.
 > - General linear group: [[§3 Basic Examples of Groups#^def-3-6|Def §3.6]]
 > - Field: [[§3 Basic Examples of Groups#^def-3-3|Def §3.3]]; $\mathbb{Z}/n\mathbb{Z}$ is a field iff $n$ is prime [[§8 Invertibility and Unit Groups#^prop-8-4|Prop §8.4]]
 >
-> **Key results.** (1) is [[§51 p-Groups and Sylow Subgroups#^lem-51-3|Lem §51.3]]; (2) is [[§51 p-Groups and Sylow Subgroups#^prop-51-4|Prop §51.4]], with [[§51 p-Groups and Sylow Subgroups#^lem-51-2|Lem §51.2]] (invertible iff independent columns). Used later: [[§51 p-Groups and Sylow Subgroups#^ex-51-2|Ex §51.2]] ($|GL_2(\mathbb{F}_5)| = 480$), unitriangular Sylow subgroup [[§51 p-Groups and Sylow Subgroups#^prop-51-5|Prop §51.5]].
+> **Key results.** (1) is [[§52 p-Groups and Sylow Subgroups#^lem-52-3|Lem §52.3]]; (2) is [[§52 p-Groups and Sylow Subgroups#^prop-52-4|Prop §52.4]], with [[§52 p-Groups and Sylow Subgroups#^lem-52-2|Lem §52.2]] (invertible iff independent columns). Used later: [[§52 p-Groups and Sylow Subgroups#^ex-52-2|Ex §52.2]] ($|GL_2(\mathbb{F}_5)| = 480$), unitriangular Sylow subgroup [[§52 p-Groups and Sylow Subgroups#^prop-52-5|Prop §52.5]].
 >
 > **Difficulty** (1) 2, (2) 1. Submitted solution: induction with explicit base case, the "dependent iff in the span" equivalence, and $|S| = p^k$ via the coordinate bijection; (2) via the column bijection and rank–nullity. The notes quote it as Lem §51.3 and the proof of Prop §51.4 (the rewriting as $p^{\binom{n}{2}} \prod (p^k - 1)$ is added in the notes, not from the problem set).
 

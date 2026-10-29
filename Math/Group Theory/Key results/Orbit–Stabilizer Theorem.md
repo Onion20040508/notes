@@ -20,11 +20,11 @@ tags: [group-theory, hub]
 - [[§30 Orbit–Stabilizer#^thm-30-6|Theorem §30.6: Burnside's Lemma]]
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|Proposition §32.3: Rotational Symmetries of the Cube]]
 - [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]
-- [[§51 p-Groups and Sylow Subgroups#^prop-51-1|Proposition §51.1: Fixed Points of a p-Group Action]]
-- [[§52 The Sylow Theorems#^prop-52-3|Proposition §52.3: Sylow Subgroups of a Subgroup]]
-- [[§52 The Sylow Theorems#^thm-52-9|Theorem §52.9: The Third Sylow Theorem]]
-- [[§52 The Sylow Theorems#^cor-52-10|Corollary §52.10: The Number of Sylow Subgroups Divides ∣G∣]]
-- [[§53 Simple Groups of Small Order#^prop-53-2|Proposition §53.2: n_p and the Normalizer]]
+- [[§52 p-Groups and Sylow Subgroups#^prop-52-1|Proposition §52.1: Fixed Points of a p-Group Action]]
+- [[§53 The Sylow Theorems#^prop-53-3|Proposition §53.3: Sylow Subgroups of a Subgroup]]
+- [[§53 The Sylow Theorems#^thm-53-9|Theorem §53.9: The Third Sylow Theorem]]
+- [[§53 The Sylow Theorems#^cor-53-10|Corollary §53.10: The Number of Sylow Subgroups Divides ∣G∣]]
+- [[§54 Simple Groups of Small Order#^prop-54-2|Proposition §54.2: n_p and the Normalizer]]
 
 ## Connections
 - **Used for.** Class sizes divide |G| ([[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]]), hence the [[Class Equation]]. Also [[Burnside's Lemma]], the 24 rotations of the cube (6 faces, each with a stabilizer of order 4; [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|§32.3]]), and n! = (n − 1)! · n from the point stabilizer in Sₙ ([[§30 Orbit–Stabilizer#^cor-30-5|§30.5]]).

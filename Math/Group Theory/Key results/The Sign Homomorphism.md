@@ -29,7 +29,7 @@ tags: [group-theory, hub]
 - [[§47 Commutators#^thm-47-5|Theorem §47.5: The Commutator Subgroup and Characters of Sₙ]]
 - [[§47 Commutators#^cor-47-7|Corollary §47.7: Every Square Root of e_A Gives a Character]]
 - [[§48 Solvable Groups#^prop-48-1|Proposition §48.1: S_3 and S_4 Are Solvable]]
-- [[§53 Simple Groups of Small Order#^lem-53-5|Lemma §53.5: Homomorphisms That Leave A_N]]
+- [[§54 Simple Groups of Small Order#^lem-54-5|Lemma §54.5: Homomorphisms That Leave A_N]]
 
 ## Used in (Differentiable Manifolds)
 - [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|Proposition §11.2: Properties of the Sign]]

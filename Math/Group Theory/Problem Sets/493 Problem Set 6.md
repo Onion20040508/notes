@@ -46,7 +46,7 @@ tags: [group-theory, math493]
 
 ^hw-6-3
 
-*Treated in [[§51 p-Groups and Sylow Subgroups|§51]] ([[§51 p-Groups and Sylow Subgroups#^thm-51-7|§51.7]], [[§51 p-Groups and Sylow Subgroups#^lem-51-6|§51.6]], [[§51 p-Groups and Sylow Subgroups#^cor-51-8|§51.8]]).*
+*Treated in [[§52 p-Groups and Sylow Subgroups|§52]] ([[§52 p-Groups and Sylow Subgroups#^thm-52-7|§52.7]], [[§52 p-Groups and Sylow Subgroups#^lem-52-6|§52.6]], [[§52 p-Groups and Sylow Subgroups#^cor-52-8|§52.8]]).*
 
 > [!question] Problem 6.4: The Order of $GL_n(\mathbb{F}_p)$
 > 1. Prove by induction on $k$ that the number of linearly independent $k$-tuples $(\vec v_1, \ldots, \vec v_k)$ in $\mathbb{F}_p^n$ is $(p^n - 1)(p^n - p) \cdots (p^n - p^{k-1})$.
@@ -54,4 +54,4 @@ tags: [group-theory, math493]
 
 ^hw-6-4
 
-*Treated in [[§51 p-Groups and Sylow Subgroups|§51]] ([[§51 p-Groups and Sylow Subgroups#^lem-51-2|§51.2]], [[§51 p-Groups and Sylow Subgroups#^lem-51-3|§51.3]], [[§51 p-Groups and Sylow Subgroups#^prop-51-4|§51.4]]).*
+*Treated in [[§52 p-Groups and Sylow Subgroups|§52]] ([[§52 p-Groups and Sylow Subgroups#^lem-52-2|§52.2]], [[§52 p-Groups and Sylow Subgroups#^lem-52-3|§52.3]], [[§52 p-Groups and Sylow Subgroups#^prop-52-4|§52.4]]).*

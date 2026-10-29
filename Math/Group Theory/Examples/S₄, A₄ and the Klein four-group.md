@@ -27,7 +27,7 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 
 ## Chapter by chapter
 
-Revisit parts for $S_4$, $A_4$ and $K$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group K|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group K|Chapter 8]] · [[§50 S₃, S₄, Aₙ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 9]].
+Revisit parts for $S_4$, $A_4$ and $K$, chapter by chapter: [[§32 Linear Groups, the Cube, S₃ and A₄#S₄, A₄ and the Klein Four-Group K|Chapter 6]] · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 7]] · [[§45 S₃, S₄, A₄ and A₅#S₄, A₄ and the Klein Four-Group K|Chapter 8]] · [[§51 S₃, S₄, Aₙ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 9]].
 
 ## $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$
 ![[§16 Isomorphisms#^prop-16-3]]

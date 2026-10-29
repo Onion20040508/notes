@@ -5,7 +5,7 @@ chapter: 9
 section: 49
 tags: [group-theory, math493]
 ---
-← [[§48 Solvable Groups]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§50 S₃, S₄, Aₙ and GLₙ]] →
+← [[§48 Solvable Groups]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§50 Composition Series and the Jordan–Hölder Theorem]] →
 
 *Reference: not covered in the Pinter chapters used so far.*
 
