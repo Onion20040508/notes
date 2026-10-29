@@ -65,14 +65,14 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 - [[§C6.2 The Interaction Picture#^thm-c6-2-2|§C6.2.2]] The Interaction-Picture Field Obeys the Free Field Equations
 - [[§C6.2 The Interaction Picture#^thm-c6-2-3|§C6.2.3]] Free-Vacuum Correlators of the Interaction-Picture Field Are the Free Ones
 - [[§C6.2 The Interaction Picture#^thm-c6-2-4|§C6.2.4]] The Heisenberg Field in Terms of the Interaction-Picture Field
-- [[§C6.2 The Interaction Picture#^thm-c6-2-5|§C6.2.5]] The Interaction Hamiltonian Is the Interaction of the Free Field
+- [[§C6.2 The Interaction Picture#^thm-c6-2-6|§C6.2.6]] The Interaction Hamiltonian Is the Interaction of the Free Field
 - [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-1|§C6.3.1]] The Time-Evolution Operator Is Unitary
 - [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-2|§C6.3.2]] The Equation of Motion of the Time-Evolution Operator
-- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-3|§C6.3.3]] The Exponential Solves the Equation Only for Commuting Generators
-- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-4|§C6.3.4]] Ordered Iterated Integrals Are Time-Ordered Cube Integrals
-- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-5|§C6.3.5]] Dyson's Formula
-- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-6|§C6.3.6]] Properties of the Time-Evolution Operator
-- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-7|§C6.3.7]] Dyson's Formula Between Two Times
+- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-4|§C6.3.4]] The Exponential Solves the Equation Only for Commuting Generators
+- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-5|§C6.3.5]] Ordered Iterated Integrals Are Time-Ordered Cube Integrals
+- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-6|§C6.3.6]] Dyson's Formula
+- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-7|§C6.3.7]] Properties of the Time-Evolution Operator
+- [[§C6.3 The Time-Evolution Operator and Time Ordering#^thm-c6-3-8|§C6.3.8]] Dyson's Formula Between Two Times
 - [[§C6.4 The Interacting Vacuum and the Two-Point Function#^thm-c6-4-1|§C6.4.1]] Projection onto the Ground State
 - [[§C6.4 The Interacting Vacuum and the Two-Point Function#^thm-c6-4-2|§C6.4.2]] The Interacting Vacuum Evolved from the Far Past
 - [[§C6.4 The Interacting Vacuum and the Two-Point Function#^thm-c6-4-3|§C6.4.3]] The Conjugate Vacuum Evolved into the Far Future
@@ -102,10 +102,10 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 - [[§C6.12 The S-Matrix and the Invariant Amplitude#^thm-c6-12-4|§C6.12.4]] The Amplitude of Spinless Particles Is Lorentz Invariant
 - [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-1|§C6.13.1]] The Normalization Condition Is the Unit Norm
 - [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-2|§C6.13.2]] The Phase Displaces the Packet by b
-- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-3|§C6.13.3]] The Longitudinal Integrals Give the Velocity Difference
-- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-4|§C6.13.4]] The Cross Section for 2 → n Scattering
-- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-5|§C6.13.5]] The Cross Section Is an Area for Every n
-- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-6|§C6.13.6]] Identical Particles in the Final State
+- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-5|§C6.13.5]] The Longitudinal Integrals Give the Velocity Difference
+- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-6|§C6.13.6]] The Cross Section for 2 → n Scattering
+- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-7|§C6.13.7]] The Cross Section Is an Area for Every n
+- [[§C6.13 Cross Sections from Wave Packets#^thm-c6-13-8|§C6.13.8]] Identical Particles in the Final State
 - [[§C6.14 Lorentz Invariance and Two-Body Phase Space#^thm-c6-14-1|§C6.14.1]] The Flux Factor Is a Component of an Antisymmetric Tensor
 - [[§C6.14 Lorentz Invariance and Two-Body Phase Space#^thm-c6-14-2|§C6.14.2]] The Cross Section Transforms Like an Area
 - [[§C6.14 Lorentz Invariance and Two-Body Phase Space#^thm-c6-14-3|§C6.14.3]] The Flux Factor in Invariant Form
@@ -115,11 +115,11 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 - [[§C6.14 Lorentz Invariance and Two-Body Phase Space#^thm-c6-14-7|§C6.14.7]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
 - [[§C6.14 Lorentz Invariance and Two-Body Phase Space#^thm-c6-14-8|§C6.14.8]] All Masses Equal
 - [[§C6.15 Decay Rates and Widths#^thm-c6-15-1|§C6.15.1]] The Decay Rate Formula
-- [[§C6.15 Decay Rates and Widths#^thm-c6-15-3|§C6.15.3]] The Propagator Near Its Pole
-- [[§C6.15 Decay Rates and Widths#^thm-c6-15-4|§C6.15.4]] The Width Is Invariant; the Decay Rate Is Time-Dilated
-- [[§C6.15 Decay Rates and Widths#^thm-c6-15-5|§C6.15.5]] The Breit–Wigner Shape and Its Width
+- [[§C6.15 Decay Rates and Widths#^thm-c6-15-4|§C6.15.4]] The Propagator Near Its Pole
+- [[§C6.15 Decay Rates and Widths#^thm-c6-15-5|§C6.15.5]] The Width Is Invariant; the Decay Rate Is Time-Dilated
+- [[§C6.15 Decay Rates and Widths#^thm-c6-15-6|§C6.15.6]] The Breit–Wigner Shape and Its Width
 - [[§C6.16 Amplitudes from Correlation Functions#^thm-c6-16-1|§C6.16.1]] Amplitudes Are Amputated Correlation Functions
 
 ## Models
 - [[§C6.1 From Free to Interacting Fields#^mod-c6-1-1|§C6.1.1]] $\phi^4$ Theory
-- [[§C6.15 Decay Rates and Widths#^mod-c6-15-2|§C6.15.2]] The Propagator of an Unstable Particle
+- [[§C6.15 Decay Rates and Widths#^mod-c6-15-3|§C6.15.3]] The Propagator of an Unstable Particle

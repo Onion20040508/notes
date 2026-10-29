@@ -566,31 +566,56 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 *Uses:* [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-7|Theorem §CA.7.7]]
 
+> [!theorem] Theorem §CA.7.9: Sums over Pairings as Sums over Diagrams
+> If $f: \mathcal P(X_{E,n}) \to R$ (a commutative ring containing $\mathbb Q$) is constant on the orbits of $G_n$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-3|Def. §CA.7.3]]), with value $f(D)$ on the orbit $D$, then
+>
+> $$
+> \frac{1}{n!\,(4!)^n}\sum_{P\in\mathcal P(X_{E,n})}f(P) = \sum_{\text{diagrams }D}\frac{f(D)}{S(D)} .
+> $$
+>
+> *Source: the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor") · written here*
+
+^thm-ca-7-9
+
+> [!derivation]- Derivation
+> **Step 1** (partition into orbits). The orbits partition $\mathcal P(X_{E,n})$ ([[§27 Orbits#^prop-27-1|493 Prop. §27.1]]), and $f$ is constant on each:
+>
+> $$
+> \sum_{P\in\mathcal P(X_{E,n})}f(P) = \sum_D\;\sum_{P\in D}f(P) = \sum_D|D|\,f(D) .
+> $$
+>
+> **Step 2** (orbit size). $|D| = n!\,(4!)^n/S(D)$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]]); divide by $n!\,(4!)^n$:
+>
+> $$
+> \frac{1}{n!\,(4!)^n}\sum_D|D|\,f(D) = \frac{1}{n!\,(4!)^n}\sum_D\frac{n!\,(4!)^n}{S(D)}\,f(D) = \sum_D\frac{f(D)}{S(D)} .
+> $$
+>
+> **Step 3** (example). $E = \{x, y\}$, $n = 1$, $f(P) = $ the number of blocks of $P$ joining $x$ to a vertex half-edge (0 on the 3 pairings of the first orbit, 1 on the 12 of the second, [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^der-ca-7-4|Derivation §CA.7.4]], Step 3):
+>
+> $$
+> \frac{1}{24}\bigl(3\cdot0 + 12\cdot1\bigr) = \frac12 = \frac{0}{8} + \frac{1}{2} .
+> $$
+>
+> **What the derivation shows.**
+> - "Divide by the symmetry factor" is this identity: the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels the size of the group, and each diagram keeps $1/|\operatorname{Aut}|$.
+> - Used in: the coefficient of a Feynman diagram ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]]).
+
+^der-ca-7-9
+
+*Uses:* [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]
+
 <!-- HELD until Problem Set 8 is submitted (Nov 1): insertion point; see qft-C/HOLD-PS8.md and PAUSED-2026-10-08.md. -->
-
-> [!remark] Remark: Sums over pairings as sums over diagrams
-> If a function $f$ on $\mathcal P(X_{E,n})$ is constant on the orbits of $G_n$, then by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]]
->
-> $$
-> \frac{1}{n!\,(4!)^n}\sum_{P\in\mathcal P(X_{E,n})}f(P) = \frac{1}{n!\,(4!)^n}\sum_{D}\;\sum_{P\in D}f(P) = \frac{1}{n!\,(4!)^n}\sum_{D}|D|\,f(D) = \sum_{\text{diagrams }D}\frac{f(D)}{S(D)} ,
-> $$
->
-> the sum over the orbits $D$ (they partition $\mathcal P(X_{E,n})$, [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]), $f(D)$ the common value, $|D| = n!\,(4!)^n/S(D)$. This is the whole content of "divide by the symmetry factor": the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels the size of the group, and each diagram keeps $1/|\operatorname{Aut}|$.
->
-> *Source: written here*
-
-^rem-ca-7-1
 
 > [!remark]- ★ Remark: The same sum is the moment formula of a Gaussian
 > For a centred Gaussian random vector $\xi = (\xi_1, \dots, \xi_{2k})$ with covariance $C_{ij} = \mathbb E[\xi_i\xi_j]$, $\mathbb E[\xi_1\cdots\xi_{2k}] = \sum_{P\in\mathcal P([2k])}\prod_{\{i,j\}\in P}C_{ij}$ and odd moments vanish (Isserlis' theorem). The vacuum values of Wick's theorem have the same form with $C = D_F$ ([[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]]); in the path integral they *are* Gaussian moments ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-4|§C2b.6, Remark: Preview: the propagator as a Gaussian covariance]]; QFT C11, planned). Not used in the course at this stage.
 >
 > *Source: L. Isserlis, Biometrika 12 (1918) 134 (stated, not proved here) · Gaussian integrals: [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]]*
 
-^rem-ca-7-2
+^rem-ca-7-1
 
 > [!remark]- Connections
 > - Counting pairings is counting the terms of a vacuum expectation value of free fields; $(2k-1)!!$ grows like $\sqrt2\,(2k/e)^k$, which is why perturbation theory is organized by diagrams rather than by terms — [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-1|Theorem §CA.7.1]], [[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]].
 > - The symmetry factor is a stabilizer order, and "divide by $S$" is orbit–stabilizer in disguise; the same counting gives the class equation and Burnside's lemma in group theory — [[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]], [[§30 Orbit–Stabilizer#^thm-30-6|493 Thm. §30.6]].
 > - The relabelling group $(S_4)^n \rtimes S_n$ is a wreath product; the 493 notes construct the semidirect product it is built from — [[§56 Semidirect Products#^def-56-2|493 Def. §56.2]].
 > - The ordered simplex of [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] produced the $\frac{1}{n!}$ of the Dyson series; here the same $\frac{1}{n!}$ meets the $n!$ relabellings of the vertices — [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]].
-> - **Used in** (C6 places): Theorem §CA.7.1 — the vacuum values of Wick's theorem and the first-order count ([[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]], [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1|Theorem §C6.7.1]]); Definitions §CA.7.2–§CA.7.4, Lemma §CA.7.3, Theorems §CA.7.4–§CA.7.5 — the coefficient $1/S$ and the position-space rules ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]], [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-2|Theorem §C6.8.2]]); Theorem §CA.7.6 and Example §CA.7.1 — the symmetry factors in practice ([[§C6.9 Symmetry Factors in Practice|§C6.9]]); Theorems §CA.7.7–§CA.7.8 — the factorization of the numerator and the cancellation of vacuum bubbles ([[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-4|Theorem §C6.11.4]], [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-5|Theorem §C6.11.5]]).
+> - **Used in** (C6 places): Definition §CA.7.1 — Wick's theorem for ordinary products ([[§C6.6 Wick's Theorem#^thm-c6-6-4|★ Theorem §C6.6.4]]); Theorem §CA.7.1 — the vacuum values of Wick's theorem, the first-order count and the count at every order ([[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]], [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1|Theorem §C6.7.1]], [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-3|Theorem §C6.7.3]]); Definitions §CA.7.2–§CA.7.4, Lemma §CA.7.3, Theorems §CA.7.4–§CA.7.5 — the coefficient $1/S$ and the position-space rules ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]], [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-2|Theorem §C6.8.2]]); Theorem §CA.7.6 and Example §CA.7.1 — the symmetry factors in practice ([[§C6.9 Symmetry Factors in Practice|§C6.9]], [[§C6.9 Symmetry Factors in Practice#^cau-c6-9-1|§C6.9, Caution: Loops at one vertex are permuted too]]); Theorems §CA.7.7–§CA.7.8 — the factorization of the numerator and the cancellation of vacuum bubbles ([[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-4|Theorem §C6.11.4]], [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-5|Theorem §C6.11.5]]); Theorem §CA.7.9 — "divide by the symmetry factor" ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]]).
