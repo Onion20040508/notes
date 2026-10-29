@@ -66,6 +66,9 @@ Wick's theorem turns a vacuum expectation value of free fields into a sum over t
 
 ^der-ca-7-1
 
+![[ph-qft-ca-7-2.svg]]
+*Pairings ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-1|Def. §CA.7.1]]) drawn as arcs. (a) The three pairings of four points. (b) The step of the proof of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-1|Theorem §CA.7.1]]: the partner of the first point has $2k-1$ choices, and the remaining $2k-2$ points are paired in $(2k-3)!!$ ways, here $5\cdot3 = 15$. (c) An odd set has no pairing.*
+
 > [!theorem] Lemma §CA.7.2: Permutations Act on Pairings
 > For a finite set $X$, the symmetric group $\operatorname{Sym}(X)$ acts on $\mathcal P(X)$ ([[§25 Actions#^def-25-1|493 Def. §25.1]]) by
 >
@@ -126,6 +129,9 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > *Source: written here (the half-edge form of PS §4.4, pp. 92–93, and of the user's PHY 513 notes, Ch. 14 §14.5)*
 
 ^def-ca-7-2
+
+![[ph-qft-ca-7-3.svg]]
+*Half-edges and a labelled diagram ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-2|Def. §CA.7.2]]) for $E = \{x_1, x_2\}$, $n = 2$. (a) The ten half-edges: two external points and four legs at each vertex. (b) One labelled diagram $P$, a pairing of them. (c) Its multigraph $\Gamma(P)$, which forgets which leg is used.*
 
 > [!definition] Definition §CA.7.3: The Relabelling Group
 > For $n \ge 0$, let $S_n$ act on $(S_4)^n$ by permuting the factors, $\varphi(\sigma)(\tau)_v = \tau_{\sigma^{-1}(v)}$, and let
@@ -189,6 +195,9 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 ^def-ca-7-4
 
+![[ph-qft-ca-7-4.svg]]
+*The relabelling group ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-3|Def. §CA.7.3]]) acting on one labelled diagram $P$. (a) A leg permutation that maps $P$ to itself: an automorphism ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-4|Def. §CA.7.4]]). (b), (c) A leg permutation and a vertex permutation that change $P$ but not its drawing: they move $P$ inside its orbit, the diagram. Orbit–stabilizer gives the count at the bottom ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]]).*
+
 > [!theorem] Theorem §CA.7.4: The Number of Labelled Diagrams of One Diagram
 > For every $P \in \mathcal P(X_{E,n})$,
 >
@@ -212,6 +221,9 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > - Used in: the coefficient of a Feynman diagram ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]]).
 
 ^der-ca-7-4
+
+![[ph-qft-ca-7-1.svg]]
+*The orbit picture of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]]. Left: one labelled diagram, a pairing of all half-edges (orange: leg $a$ of vertex $z_j$). Right: its diagram $D$; the map $\pi$ forgets the labels $j$ and $a$. The fiber $\pi^{-1}(D)$ is the orbit of the pairing under the relabelling group $G_n$, so $|\pi^{-1}(D)| = |G_n|/S$ by orbit–stabilizer, and dividing by $|G_n| = n!\,(4!)^n$ leaves $1/S$. (a) the tadpole, (b) the figure-eight, (c) the melon; each stabilizer is listed on the right, and $S$ agrees with the product formula of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-6|Theorem §CA.7.6]].*
 
 > [!theorem] Theorem §CA.7.5: A Diagram Is Its Multigraph up to Relabelling the Vertices
 > Two labelled diagrams $P, P' \in \mathcal P(X_{E,n})$ lie in the same orbit of $G_n$ if and only if there is a permutation $\sigma \in S_n$ of the vertices, extended by the identity on $E$, with
@@ -278,6 +290,9 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 *Uses:* [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-5|Theorem §CA.7.5]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]]
 
+![[ph-qft-ca-7-5.svg]]
+*The product formula of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-6|Theorem §CA.7.6]]. (a) The three kinds of factor: $2^{\ell}\ell!$ for $\ell$ loops at one vertex, $m!$ for $m$ lines between two points, and $|\Gamma_P|$ for the vertex permutations that keep the drawing. (b) Four diagrams with their $S$; with external points fixed, $\Gamma_P$ can be trivial.*
+
 > [!example] Example §CA.7.1: Symmetry Factors from the Product Formula
 > Each line: the diagram, $S$ by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-6|Theorem §CA.7.6]], and the size of its orbit by [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-4|Theorem §CA.7.4]], each confirmed by enumerating the pairings.
 > - $n = 1$, $E = \{x, y\}$, $|G_1| = 24$. *Tadpole* ($x$–$v$, $v$–$y$, one loop at $v$): $S = 2$, orbit 12. *Line times figure-eight* ($x$–$y$, two loops at $v$): $S = 2^2\cdot2! = 8$, orbit 3. $12 + 3 = 15 = 5!!$.
@@ -325,6 +340,9 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > - A pairing is uniquely "the part that touches the external points" together with "a vacuum part", and the vacuum part may sit on any subset of the vertices.
 
 ^der-ca-7-7
+
+![[ph-qft-ca-7-6.svg]]
+*The split of [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-7|Theorem §CA.7.7]]. The vertex $z_2$ has no path to an external point ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^def-ca-7-5|Def. §CA.7.5]]), so $A(P) = \{2\}$; no block joins it to the rest, and $P$ is the disjoint union of an attached pairing and a vacuum pairing.*
 
 > [!theorem] Theorem §CA.7.8: Factorization of Sums over Pairings
 > Let $R$ be a commutative ring and, for each $k \ge 0$, $f_k$ a function on $\mathcal P(X_{E,k})$ with values in $R$. Suppose there are functions $a_i$ on $\mathcal P_{\rm att}(X_{E,i})$ and $b_j$ on $\mathcal P(X_{\varnothing,j})$ such that for every $P$, with $A = A(P)$, $|A| = j$ ([[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^thm-ca-7-7|Theorem §CA.7.7]]),

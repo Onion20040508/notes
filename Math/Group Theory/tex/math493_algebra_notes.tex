@@ -4926,7 +4926,9 @@ Every non-abelian simple group has order at least $60 = |A_5|$.
 \srcline{not from class}
 \end{thmbox}
 
-\proofpending
+\begin{proof}[Proof (given in \ref{sec:small-simple-groups})]
+\textit{(Not from class.)} The proof uses the simple groups of order at most $100$ (Theorem~\ref{thm:simple-order-le-100}), whose proof rests on the Sylow theorems; it is given after Corollary~\ref{cor:simple-le-100-a5}.
+\end{proof}
 
 \begin{lembox}[{$3$-Cycles Are Conjugate in $A_n$ for $n \geq 5$}]\label{lem:3-cycles-conjugate-an-n-ge-5}
 Let $n \geq 5$, and let $(i\,j\,k)$ and $(i'\,j'\,k')$ be $3$-cycles. Then there is $g \in A_n$ with $g\,(i\,j\,k)\,g^{-1} = (i'\,j'\,k')$. So the $3$-cycles form a single conjugacy class of $A_n$, not only of $S_n$.
@@ -7115,7 +7117,14 @@ By Theorem~\ref{thm:simple-order-le-100}, $G \cong \mathbb{Z}/p\mathbb{Z}$ or $|
 \end{proof}
 
 
-Since $A_5$ is simple of order $60$ (Proposition~\ref{prop:a5-simple}), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Once filled in, the proof also gives Theorem~\ref{thm:a5-smallest-non-abelian-simple-group}: every non-abelian simple group has order at least $60$.
+Since $A_5$ is simple of order $60$ (Proposition~\ref{prop:a5-simple}), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Theorem~\ref{thm:simple-order-le-100} also proves Theorem~\ref{thm:a5-smallest-non-abelian-simple-group} of \ref{sec:simple}: every non-abelian simple group has order at least $60$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:a5-smallest-non-abelian-simple-group}]
+\textit{Idea:} below $60$ the only simple groups are the $\mathbb{Z}/p\mathbb{Z}$, which are abelian.\par
+\textit{(Not from class.)} Let $G$ be a non-abelian simple group; we show $|G| \geq 60$. Suppose $|G| < 60$. Then $|G| \leq 100$, so by Theorem~\ref{thm:simple-order-le-100} either $G \cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or $|G| = 60$. The first is impossible, since $\mathbb{Z}/p\mathbb{Z}$ is abelian and $G$ is not; the second contradicts $|G| < 60$. Hence $|G| \geq 60$.
+
+The bound is attained by $A_5$: $|A_5| = 5!/2 = 60$; $A_5$ is simple (Proposition~\ref{prop:a5-simple}); and $A_5$ is not abelian, since an abelian simple group is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for a prime $p$ (Theorem~\ref{thm:abelian-simple-groups}) and $60$ is not prime. By Theorem~\ref{thm:simple-order-60}, $A_5$ is, up to isomorphism, the only non-abelian simple group of order $60$.
+\end{proof}
 
 \begin{rembox}[{The Classification of Finite Simple Groups}]\label{rem:classification-finite-simple}
 \textit{(Overview only.)} The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.

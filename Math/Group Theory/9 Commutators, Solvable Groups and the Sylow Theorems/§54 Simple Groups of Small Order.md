@@ -571,7 +571,18 @@ tags: [group-theory, math493]
 
 *Uses:* [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]], [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]], [[§54 Simple Groups of Small Order#^prop-54-1|§54.1]], [[§43 Simple Groups#^thm-43-9|§43.9]]
 
-Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6|§43.6]]), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Once filled in, the proof also gives Theorem [[§43 Simple Groups#^thm-43-7|§43.7]]: every non-abelian simple group has order at least $60$.
+Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6|§43.6]]), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Theorem [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]] also proves Theorem [[§43 Simple Groups#^thm-43-7|§43.7]] of [[§43 Simple Groups|§43]]: every non-abelian simple group has order at least $60$.
+
+> [!proof]+ Proof of Theorem [[§43 Simple Groups#^thm-43-7|§43.7]]
+> *Idea:* below $60$ the only simple groups are the $\mathbb{Z}/p\mathbb{Z}$, which are abelian.
+>
+> *(Not from class.)* Let $G$ be a non-abelian simple group; we show $|G| \geq 60$. Suppose $|G| < 60$. Then $|G| \leq 100$, so by Theorem [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]] either $G \cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or $|G| = 60$. The first is impossible, since $\mathbb{Z}/p\mathbb{Z}$ is abelian and $G$ is not; the second contradicts $|G| < 60$. Hence $|G| \geq 60$.
+>
+> The bound is attained by $A_5$: $|A_5| = 5!/2 = 60$; $A_5$ is simple (Proposition [[§43 Simple Groups#^prop-43-6|§43.6]]); and $A_5$ is not abelian, since an abelian simple group is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for a prime $p$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]) and $60$ is not prime. By Theorem [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]], $A_5$ is, up to isomorphism, the only non-abelian simple group of order $60$.
+
+^pf-43-7-2
+
+*Uses:* [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]], [[§43 Simple Groups#^prop-43-6|§43.6]], [[§43 Simple Groups#^thm-43-1|§43.1]], [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]]
 
 > [!remark] Remark: The Classification of Finite Simple Groups
 > *(Overview only.)* The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.

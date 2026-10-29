@@ -16,7 +16,7 @@ tags: [chapter, group-theory]
 The last part of the chapter turns to the Sylow theorems. [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]] says that the [[§4 Subgroups#^def-4-6|order]] of a [[§4 Subgroups#^def-4-1|subgroup]] divides $|G|$, and [[§29 The Index and Lagrange's Theorem#^ex-29-1|its converse fails]]; Cauchy's theorem ([[§29 The Index and Lagrange's Theorem#^thm-29-6|Theorem §29.6]]) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: [[§53 The Sylow Theorems#^thm-53-4|subgroups of that order exist]], and [[§53 The Sylow Theorems#^thm-53-6|any two are conjugate]]. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly ([[§52 p-Groups and Sylow Subgroups#^prop-52-5|the unitriangular matrices]]), and pull it back with a fixed-point argument ([[§53 The Sylow Theorems#^lem-53-1|Lemma §53.1]]).
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (26), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (6), [[· 3 Permutations|3 Permutations]] (2), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (18), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (19), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (37), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (12), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (50), [[· 10 Semidirect Products|10 Semidirect Products]] (1)
-**Used by:** [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (1), [[· 10 Semidirect Products|10 Semidirect Products]] (2)
+**Used by:** [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (4), [[· 10 Semidirect Products|10 Semidirect Products]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (2)
 
 ## Sections
@@ -42,7 +42,7 @@ The last part of the chapter turns to the Sylow theorems. [[§29 The Index and L
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§46 Characters#^thm-46-2|Theorem §46.2: A Common Eigenvector Yields a Character]]: 20 later results
+- [[§46 Characters#^thm-46-2|Theorem §46.2: A Common Eigenvector Yields a Character]]: 21 later results
 - [[§53 The Sylow Theorems#^prop-53-3|Proposition §53.3: Sylow Subgroups of a Subgroup]]: 14 later results
 - [[Second Sylow Theorem|Theorem §53.6: The Second Sylow Theorem]]: 12 later results
 - [[§52 p-Groups and Sylow Subgroups#^lem-52-2|Lemma §52.2: Invertible Matrices Have Independent Columns]]: 11 later results

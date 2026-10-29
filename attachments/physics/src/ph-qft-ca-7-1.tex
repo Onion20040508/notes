@@ -1,0 +1,69 @@
+% Fiber of pi = G-orbit of a matching (Thm CA.7.5). ADDED figure (2026-10-29); lecture diagrams only (HW8 diagrams held until Nov 1).
+\tikzset{
+  fdl/.style={line width=0.8pt, black},
+  fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
+  fdv/.style={circle, fill=figB, draw=figB, inner sep=0pt, minimum size=5pt},
+  leg/.style={circle, fill=figO, inner sep=0pt, minimum size=3.4pt},
+  legn/.style={font=\tiny, text=figO!80!black, inner sep=1pt},
+  vc/.style={draw=figB, densely dashed, line width=0.5pt},
+  lab/.style={font=\scriptsize, inner sep=2pt},
+  info/.style={font=\scriptsize, align=left, anchor=west},
+}
+% \vtx{name}{center}{label}{angle1/num1,...}
+\newcommand{\vtx}[4]{%
+  \draw[vc] (#2) circle (0.5); \node[font=\scriptsize, text=figB] at ($(#2)+(0,-0.72)$) {$#3$};
+  \foreach \ang/\num in {#4}{%
+    \coordinate (#1-\num) at ($(#2)+(\ang:0.5)$);
+    \node[leg] at (#1-\num) {};
+    \node[legn] at ($(#2)+(\ang:0.3)$) {\num};}}
+\begin{tikzpicture}[font=\small]
+  % ---------- (a) tadpole ----------
+  \begin{scope}[yshift=0cm]
+    \node[font=\bfseries] at (-0.7,0.2) {(a)};
+    \coordinate (c) at (1.6,0);
+    \vtx{a}{c}{z_1}{180/1,0/2,125/3,55/4}
+    \draw[fdl] (0,0)--(a-1); \draw[fdl] (a-2)--(3.2,0);
+    \draw[fdl] (a-3) .. controls (1.0,1.7) and (2.2,1.7) .. (a-4);
+    \node[fdx] at (0,0){}; \node[fdx] at (3.2,0){};
+    \node[lab,below] at (0,0){$x_1$}; \node[lab,below] at (3.2,0){$x_2$};
+    \draw[-{Stealth}, gray, line width=0.6pt] (3.75,0.2)--(5.15,0.2) node[midway,above,font=\scriptsize,align=center,text=gray]{$\pi$: forget\\ $j$ and $a$};
+    \draw[fdl] (5.6,0)--(8.0,0); \draw[fdl] (6.8,0.35) circle (0.35);
+    \node[fdx] at (5.6,0){}; \node[fdx] at (8.0,0){}; \node[fdv] at (6.8,0){};
+    \node[lab,below] at (5.6,0){$x_1$}; \node[lab,below] at (8.0,0){$x_2$};
+    \node[info] at (8.5,0.25) {$E=2$, $n=1$, $|G| = 1!\,(4!)^1 = 24$\\
+      stabilizer: $\{e,\ (3\,4)\ \text{at } z_1\}$, $S=2$\\
+      $|\pi^{-1}(D)| = 24/2 = 12$ matchings};
+  \end{scope}
+  % ---------- (b) figure-eight ----------
+  \begin{scope}[yshift=-2.6cm]
+    \node[font=\bfseries] at (-0.7,0.2) {(b)};
+    \coordinate (c) at (1.6,0);
+    \vtx{b}{c}{z_1}{145/1,215/2,35/3,-35/4}
+    \draw[fdl] (b-1) .. controls (0.1,1.2) and (0.1,-1.2) .. (b-2);
+    \draw[fdl] (b-3) .. controls (3.1,1.2) and (3.1,-1.2) .. (b-4);
+    \draw[-{Stealth}, gray, line width=0.6pt] (3.75,0.2)--(5.15,0.2) node[midway,above,font=\scriptsize,align=center,text=gray]{$\pi$: forget\\ $j$ and $a$};
+    \draw[fdl] (6.45,0) circle (0.35); \draw[fdl] (7.15,0) circle (0.35); \node[fdv] at (6.8,0){};
+    \node[info] at (8.5,0.25) {$E=0$, $n=1$, $|G| = 24$\\
+      stabilizer: reverse each loop, exchange the loops, $S=2^3=8$\\
+      $|\pi^{-1}(D)| = 24/8 = 3$ matchings};
+  \end{scope}
+  % ---------- (c) melon ----------
+  \begin{scope}[yshift=-5.2cm]
+    \node[font=\bfseries] at (-0.7,0.2) {(c)};
+    \coordinate (c1) at (0.7,0); \coordinate (c2) at (2.8,0);
+    \vtx{p}{c1}{z_1}{60/1,20/2,-20/3,-60/4}
+    \vtx{q}{c2}{z_2}{120/1,160/2,200/3,240/4}
+    \foreach \k in {1,2,3,4}{\draw[fdl] (p-\k)--(q-\k);}
+    \draw[-{Stealth}, gray, line width=0.6pt] (3.75,0.2)--(5.15,0.2) node[midway,above,font=\scriptsize,align=center,text=gray]{$\pi$: forget\\ $j$ and $a$};
+    \foreach \b in {70,22,-22,-70}{\draw[fdl] (6.1,0) to[bend left=\b] (7.5,0);}
+    \node[fdv] at (6.1,0){}; \node[fdv] at (7.5,0){};
+    \node[info] at (8.5,0.25) {$E=0$, $n=2$, $|G| = 2!\,(4!)^2 = 1152$\\
+      stabilizer: permute the four lines, exchange $z_1, z_2$; $S=4!\cdot2=48$\\
+      $|\pi^{-1}(D)| = 1152/48 = 24$ matchings};
+  \end{scope}
+  % ---------- legend ----------
+  \node[leg] at (0.2,-6.6) {}; \node[font=\scriptsize, anchor=west] at (0.35,-6.6) {leg $a$ of vertex $z_j$};
+  \node[fdx] at (3.6,-6.6) {}; \node[font=\scriptsize, anchor=west] at (3.75,-6.6) {fixed external point $x_i$};
+  \node[font=\scriptsize, align=center] at (7.0,-7.35) {Left: one matching of all half-edges. Right: its diagram $D$. The fiber $\pi^{-1}(D)$ is the orbit of the matching under $G$,\\
+    so $|\pi^{-1}(D)| = |G|/S$ and the diagram's coefficient is $|\pi^{-1}(D)|/|G| = 1/S$.};
+\end{tikzpicture}
