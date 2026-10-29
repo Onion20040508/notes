@@ -34,9 +34,9 @@ $a_\mu a_\nu b^{\mu\nu}$.
 
 ^ps1-1-a
 
-- [x] Q1 **[def]** State the rules for a legal single term: how often may an index appear, and at which heights?
-- [x] Q2 List each index of $a_\mu a_\nu b^{\mu\nu}$ with its height and count. Which are dummies, which are free?
-- [x] Q3 Legal or illegal? If legal, what kind of object is it (scalar, vector, covector, which tensor type)?
+- [ ] Q1 **[def]** State the rules for a legal single term: how often may an index appear, and at which heights?
+- [ ] Q2 List each index of $a_\mu a_\nu b^{\mu\nu}$ with its height and count. Which are dummies, which are free?
+- [ ] Q3 Legal or illegal? If legal, what kind of object is it (scalar, vector, covector, which tensor type)?
 
 #### (b)
 
@@ -44,9 +44,9 @@ $a_\mu a_\nu b^{\mu\rho}$.
 
 ^ps1-1-b
 
-- [x] Q1 List each index with its height and count.
-- [x] Q2 Legal or illegal?
-- [x] Q3 If legal, name its free indices with their heights and its tensor type.
+- [ ] Q1 List each index with its height and count.
+- [ ] Q2 Legal or illegal?
+- [ ] Q3 If legal, name its free indices with their heights and its tensor type.
 
 #### (c)
 
@@ -54,9 +54,9 @@ $a_\mu a_\nu b^{\mu\rho}a_\rho$.
 
 ^ps1-1-c
 
-- [x] Q1 List each index with its height and count.
-- [x] Q2 Legal or illegal? If legal, what object is it?
-- [x] Q3 **[why]** Write how $b^{\mu\rho}a_\rho$ transforms under $\Lambda$ and show that the $\Lambda$'s carried by $\rho$ cancel. Which property of $\Lambda$ is used?
+- [ ] Q1 List each index with its height and count.
+- [ ] Q2 Legal or illegal? If legal, what object is it?
+- [ ] Q3 **[why]** Write how $b^{\mu\rho}a_\rho$ transforms under $\Lambda$ and show that the $\Lambda$'s carried by $\rho$ cancel. Which property of $\Lambda$ is used?
 
 #### (d)
 
@@ -64,9 +64,9 @@ $a_\mu a_\nu b^{\mu\rho}a_\nu$.
 
 ^ps1-1-d
 
-- [x] Q1 Count the occurrences and heights of $\nu$.
-- [x] Q2 Legal or illegal? Which rule decides it?
-- [x] Q3 **[why]** Write $\sum_\nu a_\nu a_\nu$ in components and compare it with $a^\nu a_\nu$ under a boost along $x^1$. Why is the first not an invariant?
+- [ ] Q1 Count the occurrences and heights of $\nu$.
+- [ ] Q2 Legal or illegal? Which rule decides it?
+- [ ] Q3 **[why]** Write $\sum_\nu a_\nu a_\nu$ in components and compare it with $a^\nu a_\nu$ under a boost along $x^1$. Why is the first not an invariant?
 
 #### (e)
 
@@ -74,9 +74,9 @@ $a_\rho a_\nu b^{\mu\rho}a_\rho$.
 
 ^ps1-1-e
 
-- [x] Q1 Count the occurrences and heights of $\rho$.
-- [x] Q2 Legal or illegal? Which rule decides it?
-- [x] Q3 Rename one index so that the expression becomes legal. What tensor type do you get?
+- [ ] Q1 Count the occurrences and heights of $\rho$.
+- [ ] Q2 Legal or illegal? Which rule decides it?
+- [ ] Q3 Rename one index so that the expression becomes legal. What tensor type do you get?
 
 #### (f)
 
@@ -84,10 +84,10 @@ $a_\rho a_\nu b^{\rho\mu} = B_\nu{}^{\mu}$.
 
 ^ps1-1-f
 
-- [x] Q1 **[def]** State the extra rule for an equation between two index expressions.
-- [x] Q2 List the free indices of the left-hand side with their heights, and those of the right-hand side.
-- [x] Q3 Legal or illegal?
-- [x] Q4 **[conv]** For a tensor without symmetry, are $B_\nu{}^\mu$ and $B^\mu{}_\nu$ the same object? Does the horizontal order of the slots matter?
+- [ ] Q1 **[def]** State the extra rule for an equation between two index expressions.
+- [ ] Q2 List the free indices of the left-hand side with their heights, and those of the right-hand side.
+- [ ] Q3 Legal or illegal?
+- [ ] Q4 **[conv]** For a tensor without symmetry, are $B_\nu{}^\mu$ and $B^\mu{}_\nu$ the same object? Does the horizontal order of the slots matter?
 
 #### (g)
 
@@ -95,9 +95,9 @@ $a_\rho a_\nu b^{\rho\mu} = B^{\mu\sigma}{}_{\nu}\,h_\sigma$.
 
 ^ps1-1-g
 
-- [x] Q1 What is the status of $\sigma$ on the right-hand side?
-- [x] Q2 Compare the free indices and heights of the two sides.
-- [x] Q3 Legal or illegal?
+- [ ] Q1 What is the status of $\sigma$ on the right-hand side?
+- [ ] Q2 Compare the free indices and heights of the two sides.
+- [ ] Q3 Legal or illegal?
 
 #### (h)
 
@@ -105,9 +105,9 @@ $a_\rho a_\nu b^{\rho\mu} = B_\nu{}^{\mu\rho}$.
 
 ^ps1-1-h
 
-- [x] Q1 What is the status of $\rho$ on each side?
-- [x] Q2 Legal or illegal?
-- [x] Q3 **[why]** A free index records a transformation factor $\Lambda$. Why can an index that is summed on one side not be free on the other?
+- [ ] Q1 What is the status of $\rho$ on each side?
+- [ ] Q2 Legal or illegal?
+- [ ] Q3 **[why]** A free index records a transformation factor $\Lambda$. Why can an index that is summed on one side not be free on the other?
 
 #### (i)
 
@@ -115,9 +115,9 @@ $a_\rho a_\nu b^{\rho\mu} = B^{\mu\nu}$.
 
 ^ps1-1-i
 
-- [x] Q1 Compare the heights of $\nu$ on the two sides.
-- [x] Q2 Legal or illegal?
-- [x] Q3 **[conv]** How would you repair the equation with the metric, and on which side?
+- [ ] Q1 Compare the heights of $\nu$ on the two sides.
+- [ ] Q2 Legal or illegal?
+- [ ] Q3 **[conv]** How would you repair the equation with the metric, and on which side?
 
 #### (j)
 
@@ -125,9 +125,9 @@ $a_\rho a_\nu b^{\rho\mu} = B^{\mu\rho}{}_{\nu}\,z_\rho$.
 
 ^ps1-1-j
 
-- [x] Q1 The letter $\rho$ appears on both sides. Is each occurrence a dummy within its own side? Does reusing the letter on both sides cause a problem?
-- [x] Q2 Compare the free indices and heights of the two sides.
-- [x] Q3 Legal or illegal?
+- [ ] Q1 The letter $\rho$ appears on both sides. Is each occurrence a dummy within its own side? Does reusing the letter on both sides cause a problem?
+- [ ] Q2 Compare the free indices and heights of the two sides.
+- [ ] Q3 Legal or illegal?
 
 > [!tip]- Hints: definitions, results and your solution for the whole problem
 > **Topic and definitions.** T1 index notation. Four-vectors and index positions Definition [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|§C1a.5.1]] Four-Vectors and Index Positions in Natural Units; vectors and covectors through the metric Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors; Lorentz transformation Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading.
@@ -153,10 +153,10 @@ Rearrange the terms so the expression is equivalent to matrix multiplication: $C
 
 ^ps1-2-a
 
-- [x] Q1 **[def]** When is an index expression a matrix product: which index of one factor must be contracted with which index of the next?
-- [x] Q2 Identify the free indices with their heights. Which factor must stand first and which last?
-- [x] Q3 Chain the remaining factors through the dummies and write the result as one matrix element.
-- [x] Q4 **[why]** Why is the reordering allowed for the components, although the matrices themselves do not commute?
+- [ ] Q1 **[def]** When is an index expression a matrix product: which index of one factor must be contracted with which index of the next?
+- [ ] Q2 Identify the free indices with their heights. Which factor must stand first and which last?
+- [ ] Q3 Chain the remaining factors through the dummies and write the result as one matrix element.
+- [ ] Q4 **[why]** Why is the reordering allowed for the components, although the matrices themselves do not commute?
 
 #### (b)
 
@@ -164,10 +164,10 @@ Place indices on $B$ such that the equation $A^{\mu}{}_{\nu}\eta^{\nu\rho}A^{\al
 
 ^ps1-2-b
 
-- [x] Q1 Which indices on the left are contracted and which are free, at which heights?
-- [x] Q2 Write the left-hand side as a matrix product including the metric, and read off the indices $B$ must carry.
-- [x] Q3 **[why]** Why do equal free indices at equal heights make the two sides transform identically?
-- [x] Q4 **[why]** Does the order of the two indices on $B$ matter? Test whether $(AA\eta^{-1})^{\alpha\rho}$ is symmetric for a general matrix $A$.
+- [ ] Q1 Which indices on the left are contracted and which are free, at which heights?
+- [ ] Q2 Write the left-hand side as a matrix product including the metric, and read off the indices $B$ must carry.
+- [ ] Q3 **[why]** Why do equal free indices at equal heights make the two sides transform identically?
+- [ ] Q4 **[why]** Does the order of the two indices on $B$ matter? Test whether $(AA\eta^{-1})^{\alpha\rho}$ is symmetric for a general matrix $A$.
 
 #### (c)
 
@@ -175,10 +175,10 @@ Relabel indices to show that the two expressions are the same: $A^{\rho}{}_{\mu}
 
 ^ps1-2-c
 
-- [x] Q1 Reorder each side so that contracted indices are neighbours. Which cyclic chain of factors appears on each side?
-- [x] Q2 Find a renaming of the dummies of the right-hand side that maps it onto the left-hand side.
-- [x] Q3 **[why]** Why may a contracted pair exchange heights, $C_{\lambda}{}^{\rho}A_{\rho\mu} = C_{\lambda\rho}A^{\rho}{}_{\mu}$?
-- [x] Q4 Write both sides as the trace of one product of matrices.
+- [ ] Q1 Reorder each side so that contracted indices are neighbours. Which cyclic chain of factors appears on each side?
+- [ ] Q2 Find a renaming of the dummies of the right-hand side that maps it onto the left-hand side.
+- [ ] Q3 **[why]** Why may a contracted pair exchange heights, $C_{\lambda}{}^{\rho}A_{\rho\mu} = C_{\lambda\rho}A^{\rho}{}_{\mu}$?
+- [ ] Q4 Write both sides as the trace of one product of matrices.
 
 #### (d)
 
@@ -186,11 +186,11 @@ If $A$, $B$, $C$, $D$ are symmetric matrices, which of the following three expre
 
 ^ps1-2-d
 
-- [x] Q1 **[def]** What does "symmetric" mean for a tensor with indices $T_{\mu\nu}$, and what does it allow for $T^{\mu}{}_{\nu}$ versus $T_{\nu}{}^{\mu}$?
-- [x] Q2 Write each expression as the trace of a product, using cyclicity to put $A$ first.
-- [x] Q3 For general matrices, are the three traces equal?
-- [x] Q4 Using $\operatorname{tr}M = \operatorname{tr}M^{\mathsf T}$ and the symmetry of each factor, decide which cyclic orders become equal.
-- [x] Q5 **[why]** Transposing a product reverses the cyclic order. Why does that identity need every factor to be symmetric?
+- [ ] Q1 **[def]** What does "symmetric" mean for a tensor with indices $T_{\mu\nu}$, and what does it allow for $T^{\mu}{}_{\nu}$ versus $T_{\nu}{}^{\mu}$?
+- [ ] Q2 Write each expression as the trace of a product, using cyclicity to put $A$ first.
+- [ ] Q3 For general matrices, are the three traces equal?
+- [ ] Q4 Using $\operatorname{tr}M = \operatorname{tr}M^{\mathsf T}$ and the symmetry of each factor, decide which cyclic orders become equal.
+- [ ] Q5 **[why]** Transposing a product reverses the cyclic order. Why does that identity need every factor to be symmetric?
 
 > [!tip]- Hints: definitions, results and your solution for the whole problem
 > **Topic and definitions.** T1 index notation. Four-vectors and index positions Definition [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|§C1a.5.1]] Four-Vectors and Index Positions in Natural Units; metric identification Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors; Lorentz transformation Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading.
@@ -213,10 +213,10 @@ What are the values of $\epsilon^{0123}$, $\epsilon^{1230}$ and $\epsilon^{1213}
 
 ^ps1-3-a
 
-- [x] Q1 **[def]** Define $\epsilon^{\mu\nu\rho\sigma}$ and an even or odd permutation.
-- [x] Q2 Count the exchanges that take $(0123)$ to $(1230)$, and give the sign.
-- [x] Q3 Why does $(1213)$ give zero? Name the property of $\epsilon$ that forces it.
-- [x] Q4 **[conv]** With the course's $\epsilon^{0123} = +1$, what is $\epsilon_{0123}$? Which sign do Peskin–Schroeder use, and which quantities change sign between the two conventions?
+- [ ] Q1 **[def]** Define $\epsilon^{\mu\nu\rho\sigma}$ and an even or odd permutation.
+- [ ] Q2 Count the exchanges that take $(0123)$ to $(1230)$, and give the sign.
+- [ ] Q3 Why does $(1213)$ give zero? Name the property of $\epsilon$ that forces it.
+- [ ] Q4 **[conv]** With the course's $\epsilon^{0123} = +1$, what is $\epsilon_{0123}$? Which sign do Peskin–Schroeder use, and which quantities change sign between the two conventions?
 
 > [!tip]- Hint (a): route
 > **Strategy (K2).** Count transpositions; a repeated index gives zero.
@@ -227,12 +227,12 @@ Just as $p^2 = p^\mu p_\mu$ is invariant thanks to $\Lambda^{\mathsf T}\eta\Lamb
 
 ^ps1-3-b
 
-- [x] Q1 **[why]** Why is the contraction invariant under $SO(1,3)$ but not under all of $O(1,3)$? Which identity relating $\epsilon$ and $\det\Lambda$ do you use?
-- [x] Q2 Show that conservation also holds with lower indices.
-- [x] Q3 Substitute $p_4 = -(p_1 + p_2 + p_3)$ and write the three resulting terms.
-- [x] Q4 Prove that a tensor antisymmetric in a pair of indices contracted with one symmetric in the same pair gives zero, and apply it to each term.
-- [x] Q5 Second route: identify the contraction with $\pm$ a $4\times4$ determinant whose columns are the four momenta. Which column operation shows that it vanishes?
-- [x] Q6 **[why]** For four arbitrary vectors, when does the contraction vanish?
+- [ ] Q1 **[why]** Why is the contraction invariant under $SO(1,3)$ but not under all of $O(1,3)$? Which identity relating $\epsilon$ and $\det\Lambda$ do you use?
+- [ ] Q2 Show that conservation also holds with lower indices.
+- [ ] Q3 Substitute $p_4 = -(p_1 + p_2 + p_3)$ and write the three resulting terms.
+- [ ] Q4 Prove that a tensor antisymmetric in a pair of indices contracted with one symmetric in the same pair gives zero, and apply it to each term.
+- [ ] Q5 Second route: identify the contraction with $\pm$ a $4\times4$ determinant whose columns are the four momenta. Which column operation shows that it vanishes?
+- [ ] Q6 **[why]** For four arbitrary vectors, when does the contraction vanish?
 
 > [!tip]- Hint (b): route
 > **Strategy (K2).** Eliminate $p_4$ by conservation and contract a symmetric pair with an antisymmetric symbol; or read the contraction as a determinant with the momenta as columns.
@@ -258,11 +258,11 @@ Derive the formula for $E_{\rm CM}$, setting $c = 1$ from the start. (Hint: $p_\
 
 ^ps1-4-a
 
-- [x] Q1 **[def]** Define the centre-of-mass frame. Write the lab four-momenta of the positron and the electron, with the mass-shell condition.
-- [x] Q2 Which invariant equals $E_{\rm CM}^2$, and why is it the same before and after the annihilation?
-- [x] Q3 Evaluate it in the lab frame.
-- [x] Q4 Evaluate it in the centre-of-mass frame and equate.
-- [x] Q5 **[why]** Why may the invariant be evaluated with the initial particles in one frame and read as the photons' energy in another?
+- [ ] Q1 **[def]** Define the centre-of-mass frame. Write the lab four-momenta of the positron and the electron, with the mass-shell condition.
+- [ ] Q2 Which invariant equals $E_{\rm CM}^2$, and why is it the same before and after the annihilation?
+- [ ] Q3 Evaluate it in the lab frame.
+- [ ] Q4 Evaluate it in the centre-of-mass frame and equate.
+- [ ] Q5 **[why]** Why may the invariant be evaluated with the initial particles in one frame and read as the photons' energy in another?
 
 > [!tip]- Hint (a): route
 > **Strategy (K1).** The square of the total four-momentum, evaluated in the lab and in the centre-of-mass frame.
@@ -287,9 +287,9 @@ What is the energy of each photon in the centre-of-mass frame?
 
 ^ps1-4-c
 
-- [x] Q1 What does the definition of the centre-of-mass frame say about the two photon three-momenta?
-- [x] Q2 **[why]** Why does masslessness then force equal energies?
-- [x] Q3 Express $E_\gamma$ in terms of $E$ and $m_e$.
+- [ ] Q1 What does the definition of the centre-of-mass frame say about the two photon three-momenta?
+- [ ] Q2 **[why]** Why does masslessness then force equal energies?
+- [ ] Q3 Express $E_\gamma$ in terms of $E$ and $m_e$.
 
 > [!tip]- Hint (c): route
 > **Strategy (K1).** Back-to-back massless momenta.
@@ -328,10 +328,10 @@ Sketch the kinematic configuration in the laboratory frame and in the cms.
 
 ^ps1-5-a
 
-- [x] Q1 **[def]** Define the cms.
-- [x] Q2 Sketch the lab frame: what is at rest, and from which axis are $\theta_3$, $\theta_4$ measured?
-- [x] Q3 Sketch the cms: which momenta are back to back, and where is $\theta'$?
-- [x] Q4 **[why]** Why is the cms obtained from the lab by a boost along the beam axis?
+- [ ] Q1 **[def]** Define the cms.
+- [ ] Q2 Sketch the lab frame: what is at rest, and from which axis are $\theta_3$, $\theta_4$ measured?
+- [ ] Q3 Sketch the cms: which momenta are back to back, and where is $\theta'$?
+- [ ] Q4 **[why]** Why is the cms obtained from the lab by a boost along the beam axis?
 
 #### (b)
 
@@ -339,9 +339,9 @@ Use invariant scalar products between four-vectors to show that the total cms en
 
 ^ps1-5-b
 
-- [x] Q1 Write the lab four-momenta $p_1$, $p_2$.
-- [x] Q2 **[def]** Define $s$. Why does it equal $E_{\rm cms}^2$?
-- [x] Q3 Expand $(p_1 + p_2)^2 = p_1^2 + p_2^2 + 2p_1\cdot p_2$ and evaluate each term in the lab.
+- [ ] Q1 Write the lab four-momenta $p_1$, $p_2$.
+- [ ] Q2 **[def]** Define $s$. Why does it equal $E_{\rm cms}^2$?
+- [ ] Q3 Expand $(p_1 + p_2)^2 = p_1^2 + p_2^2 + 2p_1\cdot p_2$ and evaluate each term in the lab.
 
 > [!tip]- Hint (b): route
 > **Strategy (K1).** $s = (p_1 + p_2)^2$ in the lab and in the cms.
@@ -363,12 +363,12 @@ Show that the 3-momentum of the beam particle in the cms is $p' = m_2p_{\rm lab}
 
 ^ps1-5-d
 
-- [x] Q1 **[def]** Write the transformation law of $T_{\mu\nu}$ under $\Lambda$.
-- [x] Q2 For a boost along $x^1$, which components of $\Lambda$ are trivial, and which components of $T_{\mu\nu}$ are therefore unchanged?
-- [x] Q3 Write $T_{23}$ explicitly: which components of $\epsilon_{23\rho\sigma}$ survive?
-- [x] Q4 Evaluate $T_{23}$ in the lab.
-- [x] Q5 Evaluate $T_{23}$ in the cms and equate.
-- [x] Q6 **[conv]** How does the sign of $\epsilon_{2301}$ depend on the convention for $\epsilon^{0123}$, and why does it drop out of the result?
+- [ ] Q1 **[def]** Write the transformation law of $T_{\mu\nu}$ under $\Lambda$.
+- [ ] Q2 For a boost along $x^1$, which components of $\Lambda$ are trivial, and which components of $T_{\mu\nu}$ are therefore unchanged?
+- [ ] Q3 Write $T_{23}$ explicitly: which components of $\epsilon_{23\rho\sigma}$ survive?
+- [ ] Q4 Evaluate $T_{23}$ in the lab.
+- [ ] Q5 Evaluate $T_{23}$ in the cms and equate.
+- [ ] Q6 **[conv]** How does the sign of $\epsilon_{2301}$ depend on the convention for $\epsilon^{0123}$, and why does it drop out of the result?
 
 > [!tip]- Hint (d): route
 > **Strategy (K1, K2).** A tensor component transverse to the boost is the same in both frames; evaluate it in each and equate.
@@ -507,11 +507,11 @@ Compute the mass dimension of the dilaton $\tau$ and of the constant $f$.
 
 ^ps2-1-a
 
-- [x] Q1 **[def]** Define the mass dimension. Why is $[\mathcal L] = 4$ in four dimensions?
-- [x] Q2 **[why]** Why must $\tau$ be dimensionless?
-- [x] Q3 Find $[\partial_\mu\tau]$ and $[(\partial\tau)^2]$.
-- [x] Q4 Solve for $[f]$.
-- [x] Q5 **[conv]** With the metric $(+,-,-,-)$, does $-f^2e^{-2\tau}(\partial\tau)^2$ have the sign of a standard kinetic term? Does the overall sign affect the field equation of (b)?
+- [ ] Q1 **[def]** Define the mass dimension. Why is $[\mathcal L] = 4$ in four dimensions?
+- [ ] Q2 **[why]** Why must $\tau$ be dimensionless?
+- [ ] Q3 Find $[\partial_\mu\tau]$ and $[(\partial\tau)^2]$.
+- [ ] Q4 Solve for $[f]$.
+- [ ] Q5 **[conv]** With the metric $(+,-,-,-)$, does $-f^2e^{-2\tau}(\partial\tau)^2$ have the sign of a standard kinetic term? Does the overall sign affect the field equation of (b)?
 
 > [!tip]- Hint (a): route
 > **Strategy (K8).** A field in an exponent is dimensionless; $[\mathcal L] = 4$ fixes the rest.
@@ -522,12 +522,12 @@ Use the Euler–Lagrange equation to show that the EOM for $\tau$ is $\Box\tau =
 
 ^ps2-1-b
 
-- [x] Q1 **[def]** State the Euler–Lagrange equation for one field.
-- [x] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\tau)$. Why do both factors of $(\partial\tau)^2$ contribute?
-- [x] Q3 Take the divergence: where does the product rule act on $e^{-2\tau}$?
-- [x] Q4 Compute $\partial\mathcal L/\partial\tau$.
-- [x] Q5 Equate and simplify. Why may you divide by $f^2e^{-2\tau}$?
-- [x] Q6 **[why]** Two terms proportional to $(\partial\tau)^2$ meet in the final equation. Where does each come from, and with which relative sign?
+- [ ] Q1 **[def]** State the Euler–Lagrange equation for one field.
+- [ ] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\tau)$. Why do both factors of $(\partial\tau)^2$ contribute?
+- [ ] Q3 Take the divergence: where does the product rule act on $e^{-2\tau}$?
+- [ ] Q4 Compute $\partial\mathcal L/\partial\tau$.
+- [ ] Q5 Equate and simplify. Why may you divide by $f^2e^{-2\tau}$?
+- [ ] Q6 **[why]** Two terms proportional to $(\partial\tau)^2$ meet in the final equation. Where does each come from, and with which relative sign?
 
 > [!tip]- Hint (b): route
 > **Strategy (K2).** Rename the dummy, differentiate both factors of $(\partial\tau)^2$, and keep the derivative of the exponential.
@@ -553,11 +553,11 @@ Use the Euler–Lagrange equations to find the equations of motion for $\phi_1$ 
 
 ^ps2-2-a
 
-- [x] Q1 **[def]** Write the Euler–Lagrange equation for $\phi_i$.
-- [x] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi_i)$ for a kinetic term without $\frac12$.
-- [x] Q3 Compute $\partial\mathcal L/\partial\phi_1$ and $\partial\mathcal L/\partial\phi_2$: which potential terms contribute to each?
-- [x] Q4 Assemble both equations and divide by the common factor. Which coefficient ends up fractional, and why?
-- [x] Q5 **[why]** Rescale to canonically normalised fields $\phi_i = \chi_i/\sqrt2$. What are the mass and the couplings in the canonical form?
+- [ ] Q1 **[def]** Write the Euler–Lagrange equation for $\phi_i$.
+- [ ] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi_i)$ for a kinetic term without $\frac12$.
+- [ ] Q3 Compute $\partial\mathcal L/\partial\phi_1$ and $\partial\mathcal L/\partial\phi_2$: which potential terms contribute to each?
+- [ ] Q4 Assemble both equations and divide by the common factor. Which coefficient ends up fractional, and why?
+- [ ] Q5 **[why]** Rescale to canonically normalised fields $\phi_i = \chi_i/\sqrt2$. What are the mass and the couplings in the canonical form?
 
 > [!tip]- Hint (a): route
 > **Strategy (K2).** One Euler–Lagrange equation per field; the kinetic term without $\frac12$ doubles the derivative term.
@@ -568,10 +568,10 @@ Calculate the conjugate momenta for $\phi_1$ and $\phi_2$.
 
 ^ps2-2-b
 
-- [x] Q1 **[def]** Define the momentum density conjugate to $\phi_i$.
-- [x] Q2 Write the kinetic terms in time and space components.
-- [x] Q3 Compute $\pi_1$ and $\pi_2$.
-- [x] Q4 **[conv]** Compare with the canonical normalisation, where $\pi = \dot\phi$. What changes?
+- [ ] Q1 **[def]** Define the momentum density conjugate to $\phi_i$.
+- [ ] Q2 Write the kinetic terms in time and space components.
+- [ ] Q3 Compute $\pi_1$ and $\pi_2$.
+- [ ] Q4 **[conv]** Compare with the canonical normalisation, where $\pi = \dot\phi$. What changes?
 
 #### (c)
 
@@ -579,10 +579,10 @@ Construct the Hamiltonian density $\mathcal H$.
 
 ^ps2-2-c
 
-- [x] Q1 **[def]** State the Legendre transform for two fields.
-- [x] Q2 Compute $\mathcal H$ in terms of the velocities.
-- [x] Q3 Eliminate the velocities in favour of $\pi_1$, $\pi_2$.
-- [x] Q4 **[why]** Why must the Hamiltonian contain no time derivatives?
+- [ ] Q1 **[def]** State the Legendre transform for two fields.
+- [ ] Q2 Compute $\mathcal H$ in terms of the velocities.
+- [ ] Q3 Eliminate the velocities in favour of $\pi_1$, $\pi_2$.
+- [ ] Q4 **[why]** Why must the Hamiltonian contain no time derivatives?
 
 > [!tip]- Hint (c): route
 > **Strategy.** Legendre transform, then eliminate every velocity.
@@ -593,10 +593,10 @@ Compute the mass dimension of $\{m^2, \mu, \lambda\}$ in natural units.
 
 ^ps2-2-d
 
-- [x] Q1 **[def]** Why is $[\mathcal L] = 4$, and $[\partial_\mu] = 1$?
-- [x] Q2 Find $[\phi_i]$ from the kinetic term. Does the missing $\frac12$ change it?
-- [x] Q3 Find $[m^2]$, $[\mu]$, $[\lambda]$.
-- [x] Q4 **[why]** Classify each term as relevant, marginal or irrelevant.
+- [ ] Q1 **[def]** Why is $[\mathcal L] = 4$, and $[\partial_\mu] = 1$?
+- [ ] Q2 Find $[\phi_i]$ from the kinetic term. Does the missing $\frac12$ change it?
+- [ ] Q3 Find $[m^2]$, $[\mu]$, $[\lambda]$.
+- [ ] Q4 **[why]** Classify each term as relevant, marginal or irrelevant.
 
 > [!tip]- Hint (d): route
 > **Strategy (K8).** $[\mathcal L] = 4$; the kinetic term fixes $[\phi_i]$; each term then fixes its coupling.
@@ -623,9 +623,9 @@ Find the Euler–Lagrange equations.
 ^ps2-3-a
 
 - [ ] Q1 **[def]** Why may $\phi$ and $\phi^{\ast}$ be treated as independent variables?
-- [x] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi)$ and $\partial\mathcal L/\partial(\partial_\mu\phi^{\ast})$. How many factors respond, compared with the real field?
-- [x] Q3 Compute $\partial V/\partial\phi$ by the chain rule.
-- [x] Q4 Write both equations.
+- [ ] Q2 Compute $\partial\mathcal L/\partial(\partial_\mu\phi)$ and $\partial\mathcal L/\partial(\partial_\mu\phi^{\ast})$. How many factors respond, compared with the real field?
+- [ ] Q3 Compute $\partial V/\partial\phi$ by the chain rule.
+- [ ] Q4 Write both equations.
 - [ ] Q5 **[why]** Why are the two equations complex conjugates of each other, and does one suffice?
 
 > [!tip]- Hint (a): route
@@ -637,10 +637,10 @@ Determine the canonical momenta and the Hamiltonian.
 
 ^ps2-3-b
 
-- [x] Q1 **[def]** Define $\pi$ and $\pi^{\ast}$. Which velocity is conjugate to $\phi$?
-- [x] Q2 Carry out the Legendre transform.
-- [x] Q3 Eliminate the velocities.
-- [x] Q4 **[conv]** With $\phi = (\phi_1 + i\phi_2)/\sqrt2$, check that the result is two canonically normalised real fields. Why is there no $\frac12$ in the complex Lagrangian?
+- [ ] Q1 **[def]** Define $\pi$ and $\pi^{\ast}$. Which velocity is conjugate to $\phi$?
+- [ ] Q2 Carry out the Legendre transform.
+- [ ] Q3 Eliminate the velocities.
+- [ ] Q4 **[conv]** With $\phi = (\phi_1 + i\phi_2)/\sqrt2$, check that the result is two canonically normalised real fields. Why is there no $\frac12$ in the complex Lagrangian?
 
 #### (c)
 

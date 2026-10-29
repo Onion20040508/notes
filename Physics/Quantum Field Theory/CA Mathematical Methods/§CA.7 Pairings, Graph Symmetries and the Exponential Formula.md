@@ -590,7 +590,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > \frac{1}{n!\,(4!)^n}\sum_D|D|\,f(D) = \frac{1}{n!\,(4!)^n}\sum_D\frac{n!\,(4!)^n}{S(D)}\,f(D) = \sum_D\frac{f(D)}{S(D)} .
 > $$
 >
-> **Step 3** (example). $E = \{x, y\}$, $n = 1$, $f(P) = $ the number of blocks of $P$ joining $x$ to a vertex half-edge (0 on the 3 pairings of the first orbit, 1 on the 12 of the second, [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^der-ca-7-4|Derivation §CA.7.4]], Step 3):
+> **Step 3** (example). $E = \{x, y\}$, $n = 1$, $f(P)$ the number of blocks of $P$ joining $x$ to a vertex half-edge (0 on the 3 pairings of the first orbit, 1 on the 12 of the second, [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula#^der-ca-7-4|Derivation §CA.7.4]], Step 3):
 >
 > $$
 > \frac{1}{24}\bigl(3\cdot0 + 12\cdot1\bigr) = \frac12 = \frac{0}{8} + \frac{1}{2} .

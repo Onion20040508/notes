@@ -55,8 +55,8 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-3|§C9.4.3]] Conjugating the Sixteen Matrices by γ⁰
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|§C9.4.4]] The Sixteen Bilinears under Parity
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-5|§C9.4.5]] The Free Dirac Lagrangian Is Parity Invariant
-- [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|]] ★ Theorem §C9.4.6: The Parity Image of a Solution Solves the Dirac Equation
-- [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|]] ★ Theorem §C9.4.7: Parity Exchanges Left- and Right-Handed Fields and Currents
+- [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|§C9.4.6]] ★ The Parity Image of a Solution Solves the Dirac Equation
+- [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|§C9.4.7]] ★ Parity Exchanges Left- and Right-Handed Fields and Currents
 - [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-1|§C9.5.1]] Charge Conjugation on Creation Operators and One-Particle States
 - [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-2|§C9.5.2]] Mode Expansion of the Transposed Adjoint
 - [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-3|§C9.5.3]] Conjugation Reverses the Spin of a Two-Spinor
@@ -74,7 +74,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-9|§C9.6.9]] The Axial Vector Is Charge-Conjugation Invariant
 - [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-10|§C9.6.10]] The Tensor Bilinear Changes Sign under Charge Conjugation
 - [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-11|§C9.6.11]] The Free Dirac Lagrangian Is Charge-Conjugation Invariant
-- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-12|]] ★ Theorem §C9.6.12: Charge Conjugation Exchanges the Chiral Currents
+- [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-12|§C9.6.12]] ★ Charge Conjugation Exchanges the Chiral Currents
 - [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-1|§C9.7.1]] The Spin Operator in Oscillator Form
 - [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-2|§C9.7.2]] The Reordering Sign in the Spin Operator
 - [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-3|§C9.7.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin

@@ -167,10 +167,10 @@ Free fields $\hat\phi_i = \hat\phi_I(x_i)$; Lectures 14–15.
 | symmetry factor | $\frac1S = \frac{\text{number of contractions}}{n!\,(4!)^n}$; tadpole 2, figure-eight 8, melon 48 | [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1\|Theorem §C6.8.1]] |
 | vacuum bubbles | $\langle\Omega\vert T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}\vert\Omega\rangle = \sum$ diagrams attached to the external points | [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-5\|Theorem §C6.11.5]] |
 | the $T(1 - i\varepsilon)$ limit | tilted vertex times force $p^0 = s(1 + i\varepsilon)$: the Feynman $+i\varepsilon$ | [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-1\|Theorem §C6.11.1]] |
-| amplitude from a correlator | lowest order: $i\mathcal M$ = connected momentum-space correlator without the external propagators and the $(2\pi)^4\delta^4$ (Lecture 15) | [[§C6.16 Amplitudes from Correlation Functions#^thm-c6-16-1\|Theorem §C6.16.1]] |
-| $\phi\phi \to \phi\phi$, first order | $i\mathcal M = -i\lambda$ | [[§C6.16 Amplitudes from Correlation Functions#^ex-c6-16-1\|Example §C6.16.1]] |
-| $\phi\phi \to \phi\phi$ cross section | $\bigl(\frac{d\sigma}{d\Omega}\bigr)_{\rm cm} = \frac{\lambda^2}{64\pi^2E_{\rm cm}^2}$, $\sigma_{\rm total} = \frac{\lambda^2}{32\pi E_{\rm cm}^2}$ (identical-particle $\frac12$) | [[§C6.16 Amplitudes from Correlation Functions#^ex-c6-16-2\|Example §C6.16.2]] |
-| unstable scalar | propagator $\frac{i}{p^2 - m^2 + im\Gamma}$; moving: decay rate $\frac{m}{E_{\mathbf p}}\Gamma$ | [[§C6.15 Decay Rates and Widths#^mod-c6-15-3\|Model §C6.15.3]], [[§C6.15 Decay Rates and Widths#^thm-c6-15-5\|Theorem §C6.15.5]] |
+| amplitude from a correlator | lowest order: $i\mathcal M$ = connected momentum-space correlator without the external propagators and the $(2\pi)^4\delta^4$ (Lecture 15) | [[§C6.17 Amplitudes from Correlation Functions#^thm-c6-17-1\|Theorem §C6.17.1]] |
+| $\phi\phi \to \phi\phi$, first order | $i\mathcal M = -i\lambda$ | [[§C6.17 Amplitudes from Correlation Functions#^ex-c6-17-1\|Example §C6.17.1]] |
+| $\phi\phi \to \phi\phi$ cross section | $\bigl(\frac{d\sigma}{d\Omega}\bigr)_{\rm cm} = \frac{\lambda^2}{64\pi^2E_{\rm cm}^2}$, $\sigma_{\rm total} = \frac{\lambda^2}{32\pi E_{\rm cm}^2}$ (identical-particle $\frac12$) | [[§C6.17 Amplitudes from Correlation Functions#^ex-c6-17-2\|Example §C6.17.2]] |
+| unstable scalar | propagator $\frac{i}{p^2 - m^2 + im\Gamma}$; moving: decay rate $\frac{m}{E_{\mathbf p}}\Gamma$ | [[§C6.16 Decay Rates and Widths#^mod-c6-16-3\|Model §C6.16.3]], [[§C6.16 Decay Rates and Widths#^thm-c6-16-5\|Theorem §C6.16.5]] |
 
 ## 10. Procedures
 

@@ -67,11 +67,12 @@ graph TD
   C3 -->|7| C5b
   C4 -->|1| C5b
   C5a -->|161| C5b
-  C1a -->|7| C6
+  C1a -->|16| C6
   C1b -->|33| C6
-  C2a -->|34| C6
-  C2b -->|74| C6
+  C2a -->|52| C6
+  C2b -->|103| C6
   C3 -->|6| C6
+  C5b -->|8| C6
   C1a -->|12| C9
   C1b -->|9| C9
   C2a -->|53| C9
@@ -82,7 +83,7 @@ graph TD
   C1b -->|3| CA
   C2a -->|7| CA
   C2b -->|43| CA
-  C6 -->|7| CA
+  C6 -->|8| CA
   C1a -->|20| CB
   C1b -->|1| CB
   C3 -->|47| CB
@@ -130,16 +131,16 @@ graph TD
   C9 -.->|4| C5b
   CA -.->|121| C5b
   CB -.->|5| C5b
-  CA -.->|92| C6
-  CB -.->|4| C6
+  CA -.->|106| C6
+  CB -.->|9| C6
   CA -.->|40| C9
   CB -.->|100| C9
 ```
 
 ## Planned
-Chapters without notes yet (Yu's numbering). C6 Interactions of quantum fields is written through Lecture 15 (§C6.1–§C6.4: φ⁴ theory, the interaction picture, the Dyson series, the interacting vacuum and the master formula; §C6.5–§C6.11: normal ordering, Wick's theorem, Feynman diagrams and rules for correlation functions in position and momentum space, symmetry factors, the iε limit and the cancellation of vacuum bubbles, with the combinatorics in §CA.7; §C6.12–§C6.16: the S-matrix and the invariant amplitude, cross sections from wave packets, Lorentz invariance and two-body phase space, decay rates and widths, amplitudes as amputated correlation functions, user decision 2026-10-28); the Feynman propagators of the other fields (Yu §6.4) are planned there.
+Chapters without notes yet (Yu's numbering). C6 Interactions of quantum fields is written through Lecture 15 (§C6.1–§C6.4: φ⁴ theory, the interaction picture, the Dyson series, the interacting vacuum and the master formula; §C6.5–§C6.11: normal ordering, Wick's theorem, Feynman diagrams and rules for correlation functions in position and momentum space, symmetry factors, the iε limit and the cancellation of vacuum bubbles, with the combinatorics in §CA.7; §C6.12–§C6.17: the S-matrix and the invariant amplitude, cross sections from wave packets, Lorentz invariance and two-body phase space, decay rates and widths, amplitudes as amputated correlation functions, user decision 2026-10-28); the Feynman propagators of the other fields (Yu §6.4) are planned there.
 
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
-C7 Feynman diagrams (S-matrix rules, Yukawa, QED; the φ⁴ correlation-function diagrams are in C6 §C6.7–§C6.11, user decision 2026-10-26) · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.4, charge conjugation §C9.5, physical spin §C9.7, time reversal §C9.8, CPT §C9.9; Majorana fields pending) · C10 The S-matrix and correlation functions (LSZ; the S-matrix, cross sections and decay rates themselves are in C6 §C6.12–§C6.16) · C11 Path-integral quantization
+C7 Feynman diagrams (S-matrix rules, Yukawa, QED; the φ⁴ correlation-function diagrams are in C6 §C6.7–§C6.11, user decision 2026-10-26) · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.4, charge conjugation §C9.5, physical spin §C9.7, time reversal §C9.8, CPT §C9.9; Majorana fields pending) · C10 The S-matrix and correlation functions (LSZ; the S-matrix, cross sections and decay rates themselves are in C6 §C6.12–§C6.17) · C11 Path-integral quantization
 
 **Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.21 for "option 1", physics refers to mathematics; §CB.1 split on 2026-10-08, its SU(2)/SO(3) part is now §CB.2): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.3, Bargmann's theorem in §CB.19, Mackey and Wigner–Mackey in §CB.20★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C5a moved in batch B2 (2026-10-08; the Lorentz-algebra section split, now §CB.5–§CB.6; §C5a.0–§C5a.11 and §C9.4 with "The mathematics used here" blocks; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1), and those of C1a and C9 (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), and the dual space, multilinear tensors and their transformation law) moved in batch B3 (2026-10-08; "The mathematics used here" blocks in §C1a.3–§C1a.7, §C1b.1 and §C9.1; the preview folder of the option-1 demo removed): **option 1 is done**. §CB.21 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).
