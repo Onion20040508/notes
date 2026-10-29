@@ -134,6 +134,88 @@ The course has used the analogy that simple groups are atoms and other groups ar
 
 ^pf-ex-50-1
 
+> [!theorem] Lemma §50.4: Two Normal Subgroups with Simple Quotients
+> Let $G$ be a finite group and $N_1 \neq N_2$ normal subgroups such that $G/N_1$ and $G/N_2$ are both simple. Then:
+>
+> 1. $N_1 N_2 = G$;
+> 2. $G/N_1 \cong N_2/(N_1 \cap N_2)$ and $G/N_2 \cong N_1/(N_1 \cap N_2)$.
+>
+> *Source: PS 7.4; “I expect to use this lemma in Friday's class”*
+
+^lem-50-4
+
+> [!proof]+ Proof
+> *Idea:* $N_1N_2/N_1$ is a normal subgroup of the simple group $G/N_1$, and likewise for $N_2$; they cannot both be trivial since $N_1 \neq N_2$, so $N_1N_2 = G$, and the Second Isomorphism Theorem gives the quotients.
+>
+> *(Problem Set 7, Problem 7.4, as submitted.)* **(1)** **$N_1N_2 = N_2N_1$.** Let $n_1 \in N_1$ and $n_2 \in N_2$. Since $N_1$ is normal, $n_2n_1n_2^{-1} \in N_1$, so
+>
+> $$
+> n_2n_1 = (n_2n_1n_2^{-1})\,n_2 \in N_1N_2.
+> $$
+>
+> Hence $N_2N_1 \subseteq N_1N_2$. Likewise, since $N_2$ is normal, $n_1n_2 = n_2\,(n_2^{-1}n_1n_2) \in N_2N_1$, so $N_1N_2 \subseteq N_2N_1$. Therefore $N_1N_2 = N_2N_1$.
+>
+> **$N_1N_2$ is a subgroup of $G$.** It contains $e = e \cdot e$. For $a_1, a_2 \in N_1$ and $b_1, b_2 \in N_2$, we have $b_1a_2 \in N_2N_1 = N_1N_2$, say $b_1a_2 = a'b'$ with $a' \in N_1$, $b' \in N_2$, so
+>
+> $$
+> (a_1b_1)(a_2b_2) = a_1(b_1a_2)b_2 = (a_1a')(b'b_2) \in N_1N_2,
+> $$
+>
+> and $(a_1b_1)^{-1} = b_1^{-1}a_1^{-1} \in N_2N_1 = N_1N_2$.
+>
+> **$N_1N_2$ is normal in $G$.** For $g \in G$, since $N_1$ and $N_2$ are normal,
+>
+> $$
+> gN_1N_2g^{-1} = (gN_1g^{-1})(gN_2g^{-1}) = N_1N_2.
+> $$
+>
+> **The quotients.** Since $N_1 \subseteq N_1N_2$ and $N_1$ is normal in $G$, hence in $N_1N_2$, the quotient $N_1N_2/N_1 = \{xN_1 : x \in N_1N_2\}$ is a subgroup of $G/N_1$. It is normal in $G/N_1$: for $gN_1 \in G/N_1$ and $x \in N_1N_2$,
+>
+> $$
+> (gN_1)(xN_1)(gN_1)^{-1} = gxg^{-1}N_1 \in N_1N_2/N_1,
+> $$
+>
+> since $gxg^{-1} \in N_1N_2$. Since $G/N_1$ is simple, $N_1N_2/N_1$ is either trivial or all of $G/N_1$. In the same way, $N_1N_2/N_2$ is a normal subgroup of $G/N_2$, so it is either trivial or all of $G/N_2$.
+>
+> **They cannot both be trivial.** Suppose $N_1N_2/N_1$ is trivial, that is, $xN_1 = N_1$ for every $x \in N_1N_2$. Since $xN_1 = N_1$ if and only if $x \in N_1$, this gives $N_1N_2 \subseteq N_1$; conversely $N_1 \subseteq N_1N_2$, as $n_1 = n_1e$. So $N_1N_2 = N_1$, and hence $N_2 \subseteq N_1N_2 = N_1$, as $n_2 = en_2$. In the same way, if $N_1N_2/N_2$ is trivial, then $N_1 \subseteq N_2$. If both were trivial, we would have $N_1 = N_2$, contradicting $N_1 \neq N_2$.
+>
+> **Conclusion.** Hence at least one of $N_1N_2/N_1 = G/N_1$ and $N_1N_2/N_2 = G/N_2$ holds. Since the hypotheses are symmetric in $N_1$ and $N_2$ and $N_1N_2 = N_2N_1$, we may assume without loss of generality that $N_1N_2/N_1 = G/N_1$. By Lagrange's theorem,
+>
+> $$
+> \frac{|N_1N_2|}{|N_1|} = |N_1N_2/N_1| = |G/N_1| = \frac{|G|}{|N_1|},
+> $$
+>
+> so $|N_1N_2| = |G|$. Since $N_1N_2$ is a subset of the finite group $G$, $N_1N_2 = G$.
+>
+> **(2)** Recall the second isomorphism theorem: if $H$ is a subgroup of $G$ and $N$ is a normal subgroup of $G$, then $HN$ is a subgroup of $G$, $H \cap N$ is normal in $H$, and
+>
+> $$
+> H/(H \cap N) \cong HN/N.
+> $$
+>
+> **$G/N_2 \cong N_1/(N_1 \cap N_2)$.** Take $H = N_1$ and $N = N_2$, which is normal in $G$. The second isomorphism theorem gives
+>
+> $$
+> N_1/(N_1 \cap N_2) \cong N_1N_2/N_2 = G/N_2,
+> $$
+>
+> using $N_1N_2 = G$ from (1).
+>
+> **$G/N_1 \cong N_2/(N_1 \cap N_2)$.** Take $H = N_2$ and $N = N_1$, which is normal in $G$. The second isomorphism theorem gives
+>
+> $$
+> N_2/(N_2 \cap N_1) \cong N_2N_1/N_1 = G/N_1,
+> $$
+>
+> using $N_2N_1 = N_1N_2 = G$ from (1). Since $N_2 \cap N_1 = N_1 \cap N_2$, this is $G/N_1 \cong N_2/(N_1 \cap N_2)$.
+
+^pf-50-4
+
+> [!remark] Remark: The Quotient by $N_1 \cap N_2$
+> Speyer, on Problem 7.4: in this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. *(Proof not from class.)* In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem [[§55 Internal and External Direct Products#^thm-55-1|§55.1]], in Chapter 10).
+
+^rem-50-3
+
 ## The Grid of Intersections
 
 *The approach is taken from Ravi Vakil's *Foundations of Algebraic Geometry* (WS 12). Throughout, the two composition series are those of the Jordan–Hölder theorem (Theorem [[§50 Composition Series and the Jordan–Hölder Theorem#^thm-50-1|§50.1]]).*
@@ -151,34 +233,34 @@ The course has used the analogy that simple groups are atoms and other groups ar
 
 ^def-50-4
 
-> [!theorem] Lemma §50.4: Intersections in the Grid
+> [!theorem] Lemma §50.5: Intersections in the Grid
 > $Z_{ab} \cap Z_{cd} = Z_{\min(a,c)\,\min(b,d)}$. In particular $Z_{i0} = Z_{0j} = \{e\}$, $Z_{in} = X_i$ and $Z_{mj} = Y_j$.
 >
 > *Source: WS 12; lecture 10/28*
 
-^lem-50-4
+^lem-50-5
 
 > [!proof]+ Proof
 > Both series increase, so $X_a \cap X_c = X_{\min(a,c)}$ and $Y_b \cap Y_d = Y_{\min(b,d)}$; hence $Z_{ab} \cap Z_{cd} = (X_a \cap X_c) \cap (Y_b \cap Y_d) = X_{\min(a,c)} \cap Y_{\min(b,d)}$. For the special cases, $X_i \cap \{e\} = \{e\} \cap Y_j = \{e\}$, $X_i \cap G = X_i$, $G \cap Y_j = Y_j$.
 
-^pf-50-4
+^pf-50-5
 
-> [!theorem] Proposition §50.5: Normality in the Grid
+> [!theorem] Proposition §50.6: Normality in the Grid
 > $Z_{(i-1)j} \trianglelefteq Z_{ij}$ and $Z_{i(j-1)} \trianglelefteq Z_{ij}$.
 >
 > *Source: WS 12.2*
 
-^prop-50-5
+^prop-50-6
 
 > [!proof]+ Proof
 > *Idea:* conjugating by $z \in X_i \cap Y_j$ preserves $X_{i-1}$ (normal in $X_i$) and $Y_j$ (a group containing $z$).
 >
 > *(Worksheet session 10/28.)* Let $z \in Z_{ij} = X_i \cap Y_j$ and $w \in Z_{(i-1)j} = X_{i-1} \cap Y_j$. Then $zwz^{-1} \in X_{i-1}$, because $X_{i-1} \trianglelefteq X_i$ and $z \in X_i$; and $zwz^{-1} \in Y_j$, because $z, w \in Y_j$. So $zwz^{-1} \in Z_{(i-1)j}$. The second statement is symmetric.
 
-^pf-50-5
+^pf-50-6
 
 > [!definition] Definition §50.5: Edge Quotients $H_{ij}$ and $V_{ij}$
-> For $i, j \geq 1$ (and $H_{i0}$, $V_{0j}$ likewise) define, using Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-5|§50.5]],
+> For $i, j \geq 1$ (and $H_{i0}$, $V_{0j}$ likewise) define, using Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-6|§50.6]],
 >
 > $$
 > H_{ij} = Z_{ij}/Z_{(i-1)j} \quad \text{(horizontal edges)}, \qquad V_{ij} = Z_{ij}/Z_{i(j-1)} \quad \text{(vertical edges)}.
@@ -192,32 +274,32 @@ The course has used the analogy that simple groups are atoms and other groups ar
 
 ![[m493-56-1.svg]]
 
-*(Figure from WS 12, redrawn.)* The grid $Z_{ij} = X_i \cap Y_j$. Arrows are inclusions, each normal (Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-5|§50.5]]). The bottom row and left column are trivial; the top row is the $X$-series ($Z_{in} = X_i$) and the right column the $Y$-series ($Z_{mj} = Y_j$). Horizontal edges carry the quotients $H_{ij}$, vertical edges the $V_{ij}$.
+*(Figure from WS 12, redrawn.)* The grid $Z_{ij} = X_i \cap Y_j$. Arrows are inclusions, each normal (Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-6|§50.6]]). The bottom row and left column are trivial; the top row is the $X$-series ($Z_{in} = X_i$) and the right column the $Y$-series ($Z_{mj} = Y_j$). Horizontal edges carry the quotients $H_{ij}$, vertical edges the $V_{ij}$.
 
 > [!remark] Remark: The Strategy
 > Every path through the grid from $Z_{00}$ to $Z_{mn}$, travelling one step east or north at a time, is a chain of subgroups. The essence of the proof is to show that every such path is a quasi-composition series, with the same simple quotients in each case. The two extreme paths give the $S_i$ and the $T_j$ (WS 12.1).
 >
 > *Source: WS 12*
 
-^rem-50-3
+^rem-50-4
 
-> [!theorem] Proposition §50.6: The Two Edge Paths
+> [!theorem] Proposition §50.7: The Two Edge Paths
 > $(Z_{00}, Z_{10}, \ldots, Z_{m0}, Z_{m1}, \ldots, Z_{mn})$ and $(Z_{00}, Z_{01}, \ldots, Z_{0n}, Z_{1n}, \ldots, Z_{mn})$ are quasi-composition series. The quotients of the first are $m$ trivial groups followed by $T_1, \ldots, T_n$; those of the second are $n$ trivial groups followed by $S_1, \ldots, S_m$.
 >
 > *Source: WS 12.1*
 
-^prop-50-6
+^prop-50-7
 
 > [!proof]+ Proof
 > *Idea:* the bottom row and left column are trivial, the right column and top row are the two series.
 >
-> *(Worksheet session 10/28.)* By Lemma [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-4|§50.4]], $Z_{i0} = \{e\}$ and $Z_{mj} = Y_j$, so the first path is $\{e\}, \ldots, \{e\}$ ($m + 1$ times) followed by $Y_1, \ldots, Y_n$: its quotients are trivial $m$ times, then $Y_j/Y_{j-1} = T_j$, each simple. The second is symmetric, with $Z_{0j} = \{e\}$ and $Z_{in} = X_i$.
+> *(Worksheet session 10/28.)* By Lemma [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-5|§50.5]], $Z_{i0} = \{e\}$ and $Z_{mj} = Y_j$, so the first path is $\{e\}, \ldots, \{e\}$ ($m + 1$ times) followed by $Y_1, \ldots, Y_n$: its quotients are trivial $m$ times, then $Y_j/Y_{j-1} = T_j$, each simple. The second is symmetric, with $Z_{0j} = \{e\}$ and $Z_{in} = X_i$.
 
-^pf-50-6
+^pf-50-7
 
-*Uses:* [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-4|§50.4]]
+*Uses:* [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-5|§50.5]]
 
-> [!theorem] Proposition §50.7: Horizontal Edges Propagate
+> [!theorem] Proposition §50.8: Horizontal Edges Propagate
 > 1. The inclusion $Z_{i(j-1)} \hookrightarrow Z_{ij}$ induces a well-defined injection $H_{i(j-1)} \hookrightarrow H_{ij}$.
 > 2. The image of $H_{i(j-1)}$ is normal in $H_{ij}$.
 > 3. Each $H_{ij}$ is trivial or isomorphic to $S_i$. More precisely, in each column $i$ there is $j_0$ with $H_{ij}$ trivial for $j < j_0$ and $H_{ij} \cong S_i$ for $j \geq j_0$.
@@ -226,7 +308,7 @@ The course has used the analogy that simple groups are atoms and other groups ar
 >
 > *Source: WS 12.3; board 10/28*
 
-^prop-50-7
+^prop-50-8
 
 > [!proof]+ Proof
 > *Idea:* restricting $Z_{ij} \to H_{ij}$ to $Z_{i(j-1)}$ has kernel $Z_{(i-1)(j-1)}$; so the column $H_{i0} \hookrightarrow \cdots \hookrightarrow H_{in} = S_i$ is a chain of normal subgroups ending in a simple group.
@@ -237,13 +319,13 @@ The course has used the analogy that simple groups are atoms and other groups ar
 > Z_{(i-1)j} \cap Z_{i(j-1)} = Z_{(i-1)(j-1)}
 > $$
 >
-> (Lemma [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-4|§50.4]]), so by the First Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]) $\pi$ induces an injective homomorphism
+> (Lemma [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-5|§50.5]]), so by the First Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]) $\pi$ induces an injective homomorphism
 >
 > $$
 > H_{i(j-1)} = Z_{i(j-1)}/Z_{(i-1)(j-1)} \;\xrightarrow{\ \sim\ }\; \pi(Z_{i(j-1)}) \;\subseteq\; H_{ij}, \qquad x Z_{(i-1)(j-1)} \mapsto x Z_{(i-1)j}.
 > $$
 >
-> Since $Z_{i(j-1)} \trianglelefteq Z_{ij}$ (Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-5|§50.5]]) and $\pi$ is surjective, the image $\pi(Z_{i(j-1)})$ is normal in $H_{ij}$ (Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], WS 6.6(3)).
+> Since $Z_{i(j-1)} \trianglelefteq Z_{ij}$ (Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-6|§50.6]]) and $\pi$ is surjective, the image $\pi(Z_{i(j-1)})$ is normal in $H_{ij}$ (Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], WS 6.6(3)).
 >
 > This is part (1) of Proposition [[§48 Solvable Groups#^prop-48-4|§48.4]], applied in the group $Y_j$ to the chain $Z_{0j} \trianglelefteq \cdots \trianglelefteq Z_{mj} = Y_j$ and the subgroup $Y_{j-1}$, whose intersections with the chain are the $Z_{i(j-1)}$. The new ingredient is the normality in (2).
 >
@@ -255,18 +337,18 @@ The course has used the analogy that simple groups are atoms and other groups ar
 >
 > where $H_{i0} = Z_{i0}/Z_{(i-1)0} = \{e\}/\{e\}$ and $H_{in} = X_i/X_{i-1} = S_i$. Work down from the top of the column. $S_i$ is simple, so its normal subgroup $\pi(Z_{i(n-1)})$ is trivial or all of $S_i$; hence $H_{i(n-1)}$ is trivial or $\cong S_i$. If $H_{ij}$ is trivial or $\cong S_i$, the same argument applies to $H_{i(j-1)}$, a normal subgroup of $H_{ij}$ up to isomorphism. So every $H_{ij}$ is trivial or $\cong S_i$. Since $H_{i(j-1)}$ injects into $H_{ij}$, once some $H_{ij}$ is nontrivial so are all those above it in the column, which gives $j_0$. (The induction works one step at a time; it does not use transitivity of normality, which fails.) The statement for $V_{ij}$ is the same argument with the roles of $X$ and $Y$ exchanged.
 
-^pf-50-7
+^pf-50-8
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-4|§50.4]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-5|§50.5]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§48 Solvable Groups#^prop-48-4|§48.4]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-5|§50.5]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-6|§50.6]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§48 Solvable Groups#^prop-48-4|§48.4]]
 
 > [!remark] Remark: The Possible Squares
-> Consider one square of the grid, with corners $Z_{(i-1)(j-1)}$ (bottom left), $Z_{i(j-1)}$ (bottom right), $Z_{(i-1)j}$ (top left), $Z_{ij}$ (top right). Its bottom and top edges carry $H_{i(j-1)}$ and $H_{ij}$, its left and right edges $V_{(i-1)j}$ and $V_{ij}$. By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-7|§50.7]], each edge is “$=$” (trivial) or carries $S_i$ (horizontal) or $T_j$ (vertical), and a nontrivial bottom edge forces a nontrivial top edge, a nontrivial left edge a nontrivial right edge. This leaves $3 \times 3 = 9$ kinds of square.
+> Consider one square of the grid, with corners $Z_{(i-1)(j-1)}$ (bottom left), $Z_{i(j-1)}$ (bottom right), $Z_{(i-1)j}$ (top left), $Z_{ij}$ (top right). Its bottom and top edges carry $H_{i(j-1)}$ and $H_{ij}$, its left and right edges $V_{(i-1)j}$ and $V_{ij}$. By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]], each edge is “$=$” (trivial) or carries $S_i$ (horizontal) or $T_j$ (vertical), and a nontrivial bottom edge forces a nontrivial top edge, a nontrivial left edge a nontrivial right edge. This leaves $3 \times 3 = 9$ kinds of square.
 >
 > *Source: WS 12.4–12.5*
 
-^rem-50-4
+^rem-50-5
 
-> [!theorem] Proposition §50.8: Four Impossible Squares
+> [!theorem] Proposition §50.9: Four Impossible Squares
 > The following squares do not occur (top, bottom; left, right):
 >
 > 1. $S_i$, $=$;  $T_j$, $T_j$;
@@ -278,32 +360,32 @@ The course has used the analogy that simple groups are atoms and other groups ar
 >
 > *Source: WS 12.4*
 
-^prop-50-8
+^prop-50-9
 
 > [!proof]+ Proof (to be filled)
 > WS 12.4, to be done Fri Oct 30.
 
-^pf-50-8
+^pf-50-9
 
-> [!theorem] Proposition §50.9: The Crossing Square
+> [!theorem] Proposition §50.10: The Crossing Square
 > If a square has top $S_i$, bottom $=$, left $=$, right $T_j$, then $S_i \cong T_j$. Hint: think about $Z_{ij}/Z_{(i-1)(j-1)}$.
 >
 > *Source: WS 12.5*
 
-^prop-50-9
+^prop-50-10
 
 > [!proof]+ Proof (to be filled)
 > WS 12.5, to be done Fri Oct 30.
 
-^pf-50-9
+^pf-50-10
 
 > [!remark] Remark: Pipes
 > So only five squares remain: both pairs nontrivial; only the left and right edges nontrivial; only the top and bottom edges nontrivial; all four edges trivial; and the crossing square of WS 12.5. Draw a “pipe” through each nontrivial pair of opposite edges, and in the crossing square a pipe entering through the top edge and leaving through the right edge. Each pipe then carries a single simple group from the top row ($S_i$) to the right column ($T_j$), which is how the permutation $\sigma$ arises. WS 12.6 asks to turn this into a proof of the Jordan–Hölder theorem; it is to be finished on Fri Oct 30.
 >
 > *Source: WS 12*
 
-^rem-50-5
+^rem-50-6
 
 ![[m493-56-2.svg]]
 
-*(Not from lecture; figure added, after WS 12.)* The five squares left by Propositions [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]] and [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-9|§50.9]], with their pipes. A pipe through the top and bottom edges carries $S_i$ (blue), one through the left and right edges carries $T_j$ (red); in the crossing square the pipe turns, from $S_i$ on the top to $T_j \cong S_i$ on the right.
+*(Not from lecture; figure added, after WS 12.)* The five squares left by Propositions [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-9|§50.9]] and [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|§50.10]], with their pipes. A pipe through the top and bottom edges carries $S_i$ (blue), one through the left and right edges carries $T_j$ (red); in the crossing square the pipe turns, from $S_i$ on the top to $T_j \cong S_i$ on the right.

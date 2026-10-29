@@ -17,6 +17,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§25 Actions#^cor-25-6|Corollary §25.6: Every Finite Group Is a Matrix Group]]
+- [[§54 Simple Groups of Small Order#^prop-54-7|Proposition §54.7: Groups of Order 2 bmod 4 Are Not Simple]]
 
 ## Connections
 - **Used for.** [[§25 Actions#^cor-25-6|Every Finite Group Is a Matrix Group]] (§25.6): compose G → S_n with permutation matrices ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]). So every finite group has a faithful representation.

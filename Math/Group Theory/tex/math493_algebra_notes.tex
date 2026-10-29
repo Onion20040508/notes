@@ -5829,6 +5829,70 @@ A student asked whether every ordering of the composition factors is realized by
 \textit{(Not from class.)} A composition series with first factor $\mathbb{Z}/2$ and second $\mathbb{Z}/3$ would be $\{e\} \trianglelefteq G_1 \trianglelefteq S_3$ with $|G_1| = 2$ and $G_1$ normal in $S_3$. But the subgroups of order $2$ of $S_3$ are the $\langle (i\,j) \rangle$, and none is normal: $(1\,3)(1\,2)(1\,3) = (2\,3)$.
 \end{proof}
 
+\begin{lembox}[{Two Normal Subgroups with Simple Quotients}]\label{lem:two-simple-quotients}
+Let $G$ be a finite group and $N_1 \neq N_2$ normal subgroups such that $G/N_1$ and $G/N_2$ are both simple. Then:
+\begin{enumerate}
+    \item $N_1 N_2 = G$;
+    \item $G/N_1 \cong N_2/(N_1 \cap N_2)$ and $G/N_2 \cong N_1/(N_1 \cap N_2)$.
+\end{enumerate}
+\srcline{PS 7.4; ``I expect to use this lemma in Friday's class''}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} $N_1N_2/N_1$ is a normal subgroup of the simple group $G/N_1$, and likewise for $N_2$; they cannot both be trivial since $N_1 \neq N_2$, so $N_1N_2 = G$, and the Second Isomorphism Theorem gives the quotients.\par
+\textit{(Problem Set 7, Problem 7.4, as submitted.)} \textbf{(1)} \textbf{$N_1N_2 = N_2N_1$.} Let $n_1 \in N_1$ and $n_2 \in N_2$. Since $N_1$ is normal, $n_2n_1n_2^{-1} \in N_1$, so
+\[
+n_2n_1 = (n_2n_1n_2^{-1})\,n_2 \in N_1N_2.
+\]
+Hence $N_2N_1 \subseteq N_1N_2$. Likewise, since $N_2$ is normal, $n_1n_2 = n_2\,(n_2^{-1}n_1n_2) \in N_2N_1$, so $N_1N_2 \subseteq N_2N_1$. Therefore $N_1N_2 = N_2N_1$.
+
+\textbf{$N_1N_2$ is a subgroup of $G$.} It contains $e = e \cdot e$. For $a_1, a_2 \in N_1$ and $b_1, b_2 \in N_2$, we have $b_1a_2 \in N_2N_1 = N_1N_2$, say $b_1a_2 = a'b'$ with $a' \in N_1$, $b' \in N_2$, so
+\[
+(a_1b_1)(a_2b_2) = a_1(b_1a_2)b_2 = (a_1a')(b'b_2) \in N_1N_2,
+\]
+and $(a_1b_1)^{-1} = b_1^{-1}a_1^{-1} \in N_2N_1 = N_1N_2$.
+
+\textbf{$N_1N_2$ is normal in $G$.} For $g \in G$, since $N_1$ and $N_2$ are normal,
+\[
+gN_1N_2g^{-1} = (gN_1g^{-1})(gN_2g^{-1}) = N_1N_2.
+\]
+
+\textbf{The quotients.} Since $N_1 \subseteq N_1N_2$ and $N_1$ is normal in $G$, hence in $N_1N_2$, the quotient $N_1N_2/N_1 = \{xN_1 : x \in N_1N_2\}$ is a subgroup of $G/N_1$. It is normal in $G/N_1$: for $gN_1 \in G/N_1$ and $x \in N_1N_2$,
+\[
+(gN_1)(xN_1)(gN_1)^{-1} = gxg^{-1}N_1 \in N_1N_2/N_1,
+\]
+since $gxg^{-1} \in N_1N_2$. Since $G/N_1$ is simple, $N_1N_2/N_1$ is either trivial or all of $G/N_1$. In the same way, $N_1N_2/N_2$ is a normal subgroup of $G/N_2$, so it is either trivial or all of $G/N_2$.
+
+\textbf{They cannot both be trivial.} Suppose $N_1N_2/N_1$ is trivial, that is, $xN_1 = N_1$ for every $x \in N_1N_2$. Since $xN_1 = N_1$ if and only if $x \in N_1$, this gives $N_1N_2 \subseteq N_1$; conversely $N_1 \subseteq N_1N_2$, as $n_1 = n_1e$. So $N_1N_2 = N_1$, and hence $N_2 \subseteq N_1N_2 = N_1$, as $n_2 = en_2$. In the same way, if $N_1N_2/N_2$ is trivial, then $N_1 \subseteq N_2$. If both were trivial, we would have $N_1 = N_2$, contradicting $N_1 \neq N_2$.
+
+\textbf{Conclusion.} Hence at least one of $N_1N_2/N_1 = G/N_1$ and $N_1N_2/N_2 = G/N_2$ holds. Since the hypotheses are symmetric in $N_1$ and $N_2$ and $N_1N_2 = N_2N_1$, we may assume without loss of generality that $N_1N_2/N_1 = G/N_1$. By Lagrange's theorem,
+\[
+\frac{|N_1N_2|}{|N_1|} = |N_1N_2/N_1| = |G/N_1| = \frac{|G|}{|N_1|},
+\]
+so $|N_1N_2| = |G|$. Since $N_1N_2$ is a subset of the finite group $G$, $N_1N_2 = G$.
+
+\textbf{(2)} Recall the second isomorphism theorem: if $H$ is a subgroup of $G$ and $N$ is a normal subgroup of $G$, then $HN$ is a subgroup of $G$, $H \cap N$ is normal in $H$, and
+\[
+H/(H \cap N) \cong HN/N.
+\]
+
+\textbf{$G/N_2 \cong N_1/(N_1 \cap N_2)$.} Take $H = N_1$ and $N = N_2$, which is normal in $G$. The second isomorphism theorem gives
+\[
+N_1/(N_1 \cap N_2) \cong N_1N_2/N_2 = G/N_2,
+\]
+using $N_1N_2 = G$ from (1).
+
+\textbf{$G/N_1 \cong N_2/(N_1 \cap N_2)$.} Take $H = N_2$ and $N = N_1$, which is normal in $G$. The second isomorphism theorem gives
+\[
+N_2/(N_2 \cap N_1) \cong N_2N_1/N_1 = G/N_1,
+\]
+using $N_2N_1 = N_1N_2 = G$ from (1). Since $N_2 \cap N_1 = N_1 \cap N_2$, this is $G/N_1 \cong N_2/(N_1 \cap N_2)$.
+\end{proof}
+
+\begin{rembox}[{The Quotient by $N_1 \cap N_2$}]\label{rem:two-simple-quotients-product}
+Speyer, on Problem 7.4: in this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. \textit{(Proof not from class.)} In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, in Chapter~10).
+\end{rembox}
+
 \subsection{The Grid of Intersections}\label{sub:jh-grid}
 
 \textit{The approach is taken from Ravi Vakil's \emph{Foundations of Algebraic Geometry} (WS 12). Throughout, the two composition series are those of the Jordan--H\"older theorem (Theorem~\ref{thm:jordan-holder}).}
@@ -6786,8 +6850,113 @@ The first order where the lemma is needed for the Sylow action is beyond the tab
 \end{exbox}
 
 \begin{rembox}[{Other Embeddings}]\label{rem:other-embeddings}
-The homework uses another way of mapping a group into a symmetric group, besides the action on Sylow subgroups, together with the lemma, to rule out the orders $30$ and $90$, and yet another trick to rule out $56$. These are left to the homework.
+The homework uses another way of mapping a group into a symmetric group, besides the action on Sylow subgroups, together with the lemma, to rule out the orders $30$ and $90$, and yet another trick to rule out $56$. These are left to the homework: Propositions~\ref{prop:order-2-mod-4} and~\ref{prop:no-simple-56} (Problem Set 7).
 \srcline{slides 10/23}
+\end{rembox}
+
+
+\subsection{The Orders \texorpdfstring{$30$, $56$ and $90$}{30, 56 and 90}}\label{sub:orders-30-56-90}
+
+\textit{Source: Problem Set 7 (submitted Thu Oct 29). The homework rules out the three orders that the tests above leave open besides $60$, with two other ways of producing a normal subgroup.}
+
+\begin{propbox}[{Groups of Order $2 \bmod 4$ Are Not Simple}]\label{prop:order-2-mod-4}
+Let $G$ be a finite group with $|G| \equiv 2 \pmod 4$ and $|G| > 2$. Then $G$ is not simple. In particular there are no simple groups of order $30$ or $90$.
+\srcline{PS 7.2}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} an element $t$ of order $2$ acts on $G$ by left multiplication as a product of $|G|/2$ disjoint transpositions, an odd number, so the Cayley embedding $G \to S_{|G|}$ leaves $A_{|G|}$ (Lemma~\ref{lem:leave-an}).\par
+\textit{(Problem Set 7, Problem 7.2, as submitted.)} Since $|G| \equiv 2 \bmod 4$, write $|G| = 4k + 2 = 2(2k+1)$, where $k \geq 1$ since $|G| > 2$.
+
+\textbf{(1) An element $t$ of order $2$.} By the first Sylow theorem, $G$ has a $2$-Sylow subgroup $P$, whose order $|P| = 2^n$ is the largest power of $2$ dividing $|G|$. Since $2 \mid |G|$, $n \geq 1$.
+
+\textbf{$|P| = 2$.} Suppose $n \geq 2$. Then $4 \mid 2^n$, and $2^n \mid |G|$ by Lagrange's theorem, so $4 \mid 4k + 2$. But $4k + 2 \equiv 2 \bmod 4$, a contradiction. Hence $n = 1$ and $|P| = 2$.
+
+Hence $P = \{e, t\}$ with $t \neq e$. By Lagrange's theorem, the order of $t$ divides $|P| = 2$, and since $t \neq e$, $t$ has order $2$.
+
+\textbf{(2) $\operatorname{sgn}\phi(t) = -1$,} where $\phi : G \to S_{4k+2}$ is the embedding given by left multiplication (as in Problem 3.1; Cayley's Theorem, Theorem~\ref{thm:cayleys-theorem}). Let $\sigma = \phi(t)$, the permutation of the $4k+2$ elements of $G$ given by $\sigma(x) = tx$.
+
+\textbf{No fixed points.} If $\sigma(x) = x$ for some $x \in G$, then $tx = x$, so $t = e$ after multiplying on the right by $x^{-1}$, contradicting $t \neq e$. Hence $\sigma(x) \neq x$ for all $x \in G$.
+
+\textbf{Cycle lengths.} Since $\phi$ is a homomorphism and $t^2 = e$,
+\[
+\sigma^2 = \phi(t)^2 = \phi(t^2) = \phi(e) = \operatorname{id}_G.
+\]
+Let $x \in G$. Following $x$ under $\sigma$ gives $x \mapsto \sigma(x) \mapsto \sigma^2(x) = x$, so the cycle of $\sigma$ containing $x$ is either $(x)$, if $\sigma(x) = x$, or the transposition $(x\ \ tx)$. Since $\sigma$ has no fixed points, every cycle of $\sigma$ is a transposition $(x\ \ tx)$.
+
+\textbf{Counting.} The disjoint cycles of $\sigma$ partition $G$, so the transpositions $(x\ \ tx)$ partition the $4k+2$ elements of $G$ into $2$-element sets $\{x, tx\}$. Hence $\sigma$ is a product of
+\[
+\frac{4k+2}{2} = 2k+1
+\]
+disjoint transpositions. Since $\operatorname{sgn}$ is a homomorphism and every transposition has sign $-1$,
+\[
+\operatorname{sgn}\phi(t) = \operatorname{sgn}\sigma = (-1)^{2k+1} = -1.
+\]
+
+\textbf{(3) $G$ is not simple.} The composite $\operatorname{sgn} \circ \phi \colon G \to \{\pm 1\}$ is a homomorphism, as a composite of homomorphisms, so $\ker(\operatorname{sgn} \circ \phi)$ is a normal subgroup of $G$.
+
+\textbf{Proper.} By (2), $\operatorname{sgn}(\phi(t)) = -1$, so $t \notin \ker(\operatorname{sgn} \circ \phi)$, and hence $\ker(\operatorname{sgn} \circ \phi) \neq G$.
+
+\textbf{Nontrivial.} If $\ker(\operatorname{sgn} \circ \phi) = \{e\}$, then $\operatorname{sgn} \circ \phi$ would be an injective map from $G$ into the two-element set $\{\pm 1\}$, which is impossible since $|G| = 4k + 2 > 2$. Hence $\ker(\operatorname{sgn} \circ \phi) \neq \{e\}$.
+
+Thus $\ker(\operatorname{sgn} \circ \phi)$ is a normal subgroup of $G$ other than $\{e\}$ and $G$, so $G$ is not simple.
+\end{proof}
+
+\begin{rembox}[{A Normal Subgroup of Index $2$}]\label{rem:order-2-mod-4-index-two}
+\textit{(Not from class.)} The proof gives more: $\operatorname{Ker}(\operatorname{sgn} \circ \phi)$ has index $2$ (Lemma~\ref{lem:leave-an}), so every group of order $2m$ with $m > 1$ odd has a normal subgroup of index $2$. The element $t$ also comes directly from Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}). The cycle count of part (2) works for any $g \in G$: if $g$ has order $d$, the orbits of $x \mapsto gx$ are the right cosets $\langle g \rangle x$, each with $d$ elements, so $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles and $\operatorname{sgn}\phi(g) = (-1)^{(d-1)|G|/d}$. For $d = 2$ and $|G|/2$ odd, this is $-1$.
+\end{rembox}
+
+\begin{propbox}[{There Is No Simple Group of Order $56$}]\label{prop:no-simple-56}
+There is no simple group of order $56$.
+\srcline{PS 7.3}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} a simple group of order $56$ would have eight Sylow $7$-subgroups, with $48$ elements of order $7$ between them, and seven Sylow $2$-subgroups, two of which already have at least $12$ elements; $48 + 12 > 56$.\par
+\textit{(Problem Set 7, Problem 7.3, as submitted.)} Suppose, to the contrary, that $G$ is a simple group of order $56$. Let $P_1, P_2, \dots, P_7$ be the $2$-Sylows and $Q_1, Q_2, \dots, Q_8$ the $7$-Sylows (part (1)).
+
+\textbf{(1) $n_7 = 8$ and $n_2 = 7$.} We have $56 = 2^3 \cdot 7$.
+
+\textbf{Conjugates of Sylows.} For $g \in G$, the map $c_g \colon G \to G$, $c_g(x) = gxg^{-1}$, is an injective homomorphism, so for every subgroup $K$ of $G$, $gKg^{-1} = c_g(K)$ is a subgroup of $G$ with $|gKg^{-1}| = |K|$. Hence if $P$ is a $p$-Sylow of $G$, so is $gPg^{-1}$ for every $g \in G$. If moreover $n_p = 1$, then $gPg^{-1} = P$ for all $g \in G$, so $P$ is normal in $G$.
+
+\textbf{$p = 7$.} Since $56 = 7 \cdot 8$ with $7 \nmid 8$, a $7$-Sylow of $G$ has order $7$, and by the Sylow theorems $n_7 \mid 8$ and $n_7 \equiv 1 \pmod 7$. The divisors of $8$ are $1, 2, 4, 8$, which are congruent to $1, 2, 4, 1$ modulo $7$, so $n_7 \in \{1, 8\}$. If $n_7 = 1$, the unique $7$-Sylow would be a normal subgroup of $G$ of order $7$, with $1 < 7 < 56$, contradicting the simplicity of $G$. Hence $n_7 = 8$.
+
+\textbf{$p = 2$.} Since $56 = 2^3 \cdot 7$ with $2 \nmid 7$, a $2$-Sylow of $G$ has order $8$, and by the Sylow theorems $n_2 \mid 7$ and $n_2 \equiv 1 \pmod 2$. The divisors of $7$ are $1$ and $7$, both odd, so $n_2 \in \{1, 7\}$. If $n_2 = 1$, the unique $2$-Sylow would be a normal subgroup of $G$ of order $8$, with $1 < 8 < 56$, contradicting the simplicity of $G$. Hence $n_2 = 7$.
+
+\textbf{(2) $|P_1 \cup P_2| \geq 12$ and $|Q_1 \cup \cdots \cup Q_8| = 49$.} \textbf{$|P_1 \cup P_2| \geq 12$.} The intersection $P_1 \cap P_2$ is a subgroup of $P_1$, so by Lagrange's theorem $|P_1 \cap P_2|$ divides $|P_1| = 8$, that is, $|P_1 \cap P_2| \in \{1, 2, 4, 8\}$. If $|P_1 \cap P_2| = 8$, then $P_1 \cap P_2 = P_1$, so $P_1 \subseteq P_2$, and since $|P_1| = |P_2| = 8$, $P_1 = P_2$, contradicting $P_1 \neq P_2$. Hence $|P_1 \cap P_2| \leq 4$, and
+\[
+|P_1 \cup P_2| = |P_1| + |P_2| - |P_1 \cap P_2| = 16 - |P_1 \cap P_2| \geq 16 - 4 = 12.
+\]
+
+\textbf{$|Q_1 \cup Q_2 \cup \cdots \cup Q_8| = 49$.} Let $i \neq j$. The intersection $Q_i \cap Q_j$ is a subgroup of $Q_i$, so by Lagrange's theorem $|Q_i \cap Q_j|$ divides $|Q_i| = 7$, that is, $|Q_i \cap Q_j| \in \{1, 7\}$. If $|Q_i \cap Q_j| = 7$, then $Q_i \subseteq Q_j$, and since $|Q_i| = |Q_j| = 7$, $Q_i = Q_j$, contradicting $i \neq j$. Hence $Q_i \cap Q_j = \{e\}$ for all $i \neq j$.
+
+So the sets $Q_1 \setminus \{e\}, \dots, Q_8 \setminus \{e\}$ are pairwise disjoint, each with $7 - 1 = 6$ elements, and
+\[
+Q_1 \cup Q_2 \cup \cdots \cup Q_8 = \{e\} \cup (Q_1 \setminus \{e\}) \cup \cdots \cup (Q_8 \setminus \{e\})
+\]
+is a disjoint union. Therefore
+\[
+|Q_1 \cup Q_2 \cup \cdots \cup Q_8| = 1 + 8 \cdot 6 = 49.
+\]
+
+\textbf{(3) The contradiction.} Let $Q = Q_1 \cup Q_2 \cup \cdots \cup Q_8$.
+
+\textbf{$P_i \cap Q_j = \{e\}$.} Let $i \in \{1, 2\}$, $j \in \{1, \dots, 8\}$, and $x \in P_i \cap Q_j$. Since $x \in P_i$, by Lagrange's theorem the order of $x$ divides $|P_i| = 8$, so it lies in $\{1, 2, 4, 8\}$. Since $x \in Q_j$, by Lagrange's theorem the order of $x$ divides $|Q_j| = 7$, so it lies in $\{1, 7\}$. Hence the order of $x$ is $1$, that is, $x = e$. So $P_i \cap Q_j = \{e\}$.
+
+\textbf{Intersection.} By distributivity,
+\[
+(P_1 \cup P_2) \cap Q = \bigcup_{i \in \{1, 2\}} \bigcup_{j = 1}^{8} (P_i \cap Q_j) = \{e\}.
+\]
+
+\textbf{Counting.} By inclusion--exclusion and (2),
+\[
+|P_1 \cup P_2 \cup Q| = |P_1 \cup P_2| + |Q| - |(P_1 \cup P_2) \cap Q| \geq 12 + 49 - 1 = 60.
+\]
+But $P_1 \cup P_2 \cup Q$ is a subset of $G$, so $|P_1 \cup P_2 \cup Q| \leq |G| = 56$, a contradiction. Hence there is no simple group of order $56$.
+\end{proof}
+
+\begin{rembox}[{What the Count Gives}]\label{rem:order-56-count}
+\textit{(Not from class.)} The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary~\ref{cor:sylow-normal-unique}). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. Speyer: ``this kind of counting elements approach can also handle a number of other cases --- for example, you might enjoy working it out for $30$.''
 \end{rembox}
 
 \begin{thmbox}[{Simple Groups of Order at Most $100$}]\label{thm:simple-order-le-100}
@@ -6795,9 +6964,156 @@ If $G$ is a simple group with $|G| \leq 100$, then either $G \cong \mathbb{Z}/p\
 \srcline{lecture 10/23}
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled)]
-The results of this section rule out every order except the primes and $30$, $56$, $60$, $90$. The cases $30$, $56$ and $90$ are on the current homework (Problem Set 7), to be added after submission.
+\begin{proof}
+\textit{Idea:} the tests of the lecture leave only $30$, $56$, $60$, $90$ besides the primes; the homework rules out $30$, $56$, $90$.\par
+The tests of this section (the remark \emph{The Game} and its table) rule out every order $n \le 100$ except the primes and $30$, $56$, $60$, $90$; a group of prime order is $\mathbb{Z}/p\mathbb{Z}$ (Proposition~\ref{prop:primes-prime-powers-simple}(2)). Since $30 = 4 \cdot 7 + 2$ and $90 = 4 \cdot 22 + 2$, Proposition~\ref{prop:order-2-mod-4} (PS~7.2) rules out $30$ and $90$, and Proposition~\ref{prop:no-simple-56} (PS~7.3) rules out $56$.
 \end{proof}
+
+\subsection{Simple Groups of Order \texorpdfstring{$60$}{60}}\label{sub:order-60}
+
+\textit{Source: Problem Set 7, Problem 7.1 (submitted Thu Oct 29).}
+
+\begin{propbox}[{Proper Subgroups of $A_n$ Have Index at Least $n$}]\label{prop:an-subgroup-index}
+Let $n \geq 5$ and let $H$ be a subgroup of $A_n$ other than $A_n$ itself. Then $[A_n : H] \geq n$.
+\srcline{PS 7.1(1)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $A_n$ acts on the $k = [A_n : H]$ cosets of $H$; the action is injective because $A_n$ is simple, so $n!/2 \leq k!$, which fails for $k < n$.\par
+\textit{(Problem Set 7, Problem 7.1(1), as submitted.)} Let $k = |A_n/H| = [A_n : H]$. For $x \in A_n$, recall that $xH = H$ if and only if $x \in H$.
+
+Let $A_n$ act on $A_n/H$ by left multiplication, $g \cdot xH = gxH$ for $g \in A_n$ and $xH \in A_n/H$. This is well defined: if $xH = yH$, then $x^{-1}y \in H$, so $(gx)^{-1}(gy) = x^{-1}y \in H$ and $gxH = gyH$. It is a group action, since $e \cdot xH = xH$ and $(g_1g_2) \cdot xH = g_1g_2xH = g_1 \cdot (g_2 \cdot xH)$. As in Problem 3.1, defining $\hat g \colon A_n/H \to A_n/H$ by $\hat g(xH) = gxH$, each $\hat g$ is a bijection and
+\[
+\psi \colon A_n \to S_{A_n/H}, \qquad \psi(g) = \hat g,
+\]
+is a group homomorphism.
+
+\textbf{The kernel of $\psi$ is trivial.} Since $\ker\psi$ is a normal subgroup of $A_n$ and $A_n$ is simple for $n \geq 5$, either $\ker\psi = \{e\}$ or $\ker\psi = A_n$. Since $H \neq A_n$, there exists $g \in A_n$ with $g \notin H$. Acting on $eH = H$,
+\[
+\hat g(H) = gH \neq H,
+\]
+because $g \notin H$. So $\hat g \neq \operatorname{id}_{A_n/H}$, that is, $g \notin \ker\psi$, and hence $\ker\psi \neq A_n$. Therefore $\ker\psi = \{e\}$.
+
+\textbf{Counting.} Since $\ker\psi = \{e\}$, $\psi$ is injective, so $A_n$ is isomorphic to its image $\psi(A_n)$, which is a subgroup of $S_{A_n/H}$. As $A_n/H$ has $k$ elements, $|S_{A_n/H}| = k!$. Hence
+\[
+\frac{n!}{2} = |A_n| = |\psi(A_n)| \leq |S_{A_n/H}| = k!.
+\]
+
+Suppose, for contradiction, that $k < n$. Then $k!$ divides $n!$, with
+\[
+a = \frac{n!}{k!} = n(n-1)\cdots(k+1),
+\]
+a product of $n - k \geq 1$ factors, one of which is $n$. So $a \geq n > 2$, since $n \geq 5$, and therefore
+\[
+k! = \frac{n!}{a} < \frac{n!}{2},
+\]
+contradicting $\frac{n!}{2} \leq k!$. Hence $k \geq n$, that is, $[A_n : H] \geq n$.
+\end{proof}
+
+\begin{rembox}[{A Shortcut}]\label{rem:an-subgroup-index-shortcut}
+\textit{(Not from class.)} By Corollary~\ref{cor:simple-land-an}, the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e.\ $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
+\end{rembox}
+
+\begin{lembox}[{The Subgroup of Index $2$ in $S_m$}]\label{lem:index-two-sm}
+Let $m \geq 3$ and let $U$ be a subgroup of $S_m$ with $|U| = \frac{m!}{2}$. Then $U = A_m$.
+\srcline{PS 7.1(2), lemma}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} a subgroup of index $2$ missing a $3$-cycle $(i\,j\,k)$ would have the three distinct cosets $U$, $(i\,j\,k)U$, $(i\,k\,j)U$.\par
+\textit{(Problem Set 7, Problem 7.1(2), lemma, as submitted.)} Suppose $U \neq A_m$. If every $3$-cycle lay in $U$, then, since $A_m$ is generated by $3$-cycles for $m \geq 3$, we would get $A_m \subseteq U$, and $|A_m| = \frac{m!}{2} = |U|$ would give $U = A_m$, contradicting $U \neq A_m$. So some $3$-cycle $(ijk)$ is not in $U$. Since $U$ is a subgroup, its inverse $(ikj) = (ijk)^{-1}$ is not in $U$ either. Consider the left cosets
+\[
+U, \qquad (ijk)U, \qquad (ikj)U.
+\]
+We have $(ijk)U \neq U$ and $(ikj)U \neq U$, since $(ijk), (ikj) \notin U$. If $(ijk)U = (ikj)U$, then
+\[
+(ikj)^{-1}(ijk) = (ijk)(ijk) = (ijk)^2 = (ijk)^{-1} = (ikj) \in U,
+\]
+a contradiction. So these are three distinct left cosets of $U$ in $S_m$. But by Lagrange's theorem, $[S_m : U] = \frac{m!}{m!/2} = 2$, so $U$ has exactly two left cosets in $S_m$, a contradiction. Hence $U = A_m$.
+\end{proof}
+
+\begin{propbox}[{Subgroups of Index $n$ in $A_n$}]\label{prop:an-index-n}
+Let $n \geq 5$ and let $H$ be a subgroup of $A_n$ with $[A_n : H] = n$. Then $H \cong A_{n-1}$.
+\srcline{PS 7.1(2)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $H$ fixes the coset $H$ in the action of $A_n$ on $A_n/H$, so it embeds in the stabilizer of a point, a copy of $S_{n-1}$, as a subgroup of index $2$; Lemma~\ref{lem:index-two-sm} identifies it.\par
+\textit{(Problem Set 7, Problem 7.1(2), as submitted.)} Now suppose $[A_n : H] = n$. Since $n > 1$, $H \neq A_n$. Let $\psi \colon A_n \to S_{A_n/H}$, $\psi(g) = \hat g$, be as in (1); since $H \neq A_n$, (1) gives $\ker\psi = \{e\}$. By Lagrange's theorem,
+\[
+|H| = \frac{|A_n|}{[A_n : H]} = \frac{n!/2}{n} = \frac{(n-1)!}{2}.
+\]
+Since $\ker\psi = \{e\}$, the restriction of $\psi$ to $H$ is injective, so $H$ is isomorphic to its image $\psi(H)$.
+
+\textbf{The image lies in a stabilizer.} Let
+\[
+\operatorname{Stab}(H) = \{\sigma \in S_{A_n/H} : \sigma(H) = H\}.
+\]
+This is a subgroup of $S_{A_n/H}$: it contains $\operatorname{id}_{A_n/H}$, and if $\sigma, \tau$ fix $H$, then $\sigma\tau(H) = \sigma(H) = H$ and $\sigma^{-1}(H) = H$. For $h \in H$, $\hat h(H) = hH = H$ since $h \in H$, so $\psi(H) \leq \operatorname{Stab}(H)$.
+
+\textbf{The stabilizer is isomorphic to $S_{n-1}$.} Since $|A_n/H| = n$, write
+\[
+A_n/H = \{H, a_1H, \dots, a_{n-1}H\}, \qquad Y = \{a_1H, \dots, a_{n-1}H\}.
+\] For $\sigma \in \operatorname{Stab}(H)$, $\sigma$ is a bijection of $A_n/H$ with $\sigma(H) = H$, so by injectivity $\sigma(Y) \subseteq Y$, and $\sigma|_Y \colon Y \to Y$ is a bijection with inverse $\sigma^{-1}|_Y$. Define
+\[
+R \colon \operatorname{Stab}(H) \to S_Y, \qquad R(\sigma) = \sigma|_Y.
+\]
+$R$ is a homomorphism, since $(\sigma\tau)|_Y = \sigma|_Y \circ \tau|_Y$. It is bijective: its inverse sends $\tau \in S_Y$ to the permutation of $A_n/H$ that fixes $H$ and agrees with $\tau$ on $Y$. So $R$ is an isomorphism. The labeling $\beta \colon Y \to \{1, \dots, n-1\}$, $\beta(a_iH) = i$, gives an isomorphism $S_Y \to S_{n-1}$, $\tau \mapsto \beta \circ \tau \circ \beta^{-1}$. Composing, we obtain an isomorphism
+\[
+\Theta \colon \operatorname{Stab}(H) \to S_{n-1}.
+\]
+
+\textbf{Conclusion.} $\Theta(\psi(H))$ is a subgroup of $S_{n-1}$ of order $|\psi(H)| = |H| = \frac{(n-1)!}{2}$. Since $n - 1 \geq 4 \geq 3$, the lemma gives $\Theta(\psi(H)) = A_{n-1}$. Therefore
+\[
+H \cong \psi(H) \cong \Theta(\psi(H)) = A_{n-1}.
+\]
+\end{proof}
+
+\begin{thmbox}[{Simple Groups of Order $60$}]\label{thm:simple-order-60}
+Every simple group of order $60$ is isomorphic to $A_5$.
+\srcline{PS 7.1(3)}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} conjugation on the six Sylow $5$-subgroups embeds $G$ in $A_6$ with index $6$; Proposition~\ref{prop:an-index-n} with $n = 6$ gives $G \cong A_5$.\par
+\textit{(Problem Set 7, Problem 7.1(3), as submitted.)} Let $G$ be a simple group of order $60 = 2^2 \cdot 3 \cdot 5$.
+
+\textbf{Conjugation.} For $g \in G$, the map $c_g \colon G \to G$, $c_g(x) = gxg^{-1}$, is a homomorphism, since $(gxg^{-1})(gyg^{-1}) = g(xy)g^{-1}$, and it is injective, since $gxg^{-1} = gyg^{-1}$ implies $x = y$. Hence for every subgroup $K$ of $G$, $gKg^{-1} = c_g(K)$ is a subgroup of $G$ with $|gKg^{-1}| = |K|$.
+
+\textbf{The number of $5$-Sylows.} Since $60 = 5 \cdot 12$ with $5 \nmid 12$, the $5$-Sylow subgroups of $G$ are its subgroups of order $5$, and by the Sylow theorems their number $n_5$ satisfies $n_5 \mid 12$ and $n_5 \equiv 1 \pmod 5$. The divisors of $12$ are $1, 2, 3, 4, 6, 12$, which are congruent to $1, 2, 3, 4, 1, 2$ modulo $5$, so $n_5 \in \{1, 6\}$.
+
+Suppose $n_5 = 1$, and let $P$ be the unique $5$-Sylow. For $g \in G$, $gPg^{-1}$ is a subgroup of order $5$, that is, a $5$-Sylow, so $gPg^{-1} = P$. Thus $P$ is normal in $G$, and $1 < |P| = 5 < 60 = |G|$, contradicting the simplicity of $G$. Therefore $n_5 = 6$. Let $X = \{P_1, P_2, \dots, P_6\}$ be the set of $5$-Sylows of $G$.
+
+\textbf{The conjugation action.} Let $G$ act on $X$ by $g * P_i = gP_ig^{-1}$.
+\begin{itemize}
+\item \emph{Well defined:} $gP_ig^{-1}$ is a subgroup of $G$ of order $5$, hence a $5$-Sylow, so $gP_ig^{-1} = P_j$ for some $P_j \in X$.
+\item \emph{Identity:} $e * P_i = eP_ie^{-1} = P_i$ for every $P_i \in X$.
+\item \emph{Compatibility:} for $g_1, g_2 \in G$,
+\[
+(g_1g_2) * P_i = (g_1g_2)P_i(g_1g_2)^{-1} = g_1g_2P_ig_2^{-1}g_1^{-1} = g_1\big(g_2P_ig_2^{-1}\big)g_1^{-1} = g_1 * (g_2 * P_i).
+\]
+\end{itemize}
+So this is a group action, and as in Problem 3.1,
+\[
+\varphi \colon G \to S_X, \qquad \varphi(g)(P_i) = g * P_i,
+\]
+is a group homomorphism. The labeling $P_i \mapsto i$ identifies $S_X$ with $S_6$, and we regard $\varphi$ as a homomorphism $G \to S_6$.
+
+\textbf{$\varphi$ is injective.} Since $\ker\varphi$ is a normal subgroup of $G$ and $G$ is simple, either $\ker\varphi = \{e\}$ or $\ker\varphi = G$. Suppose $\ker\varphi = G$. Then every $g \in G$ fixes every $P_i$, that is, $gP_1g^{-1} = P_1$ for all $g \in G$, so $P_1$ is normal in $G$; since $1 < |P_1| = 5 < 60 = |G|$, this contradicts the simplicity of $G$. Hence $\ker\varphi = \{e\}$, $\varphi$ is injective, and $G$ is isomorphic to its image $\varphi(G)$, a subgroup of $S_6$.
+
+\textbf{$\varphi(G)$ lies in $A_6$.} Suppose there exists $g \in G$ with $\varphi(g) \notin A_6$, that is, $\operatorname{sgn}(\varphi(g)) = -1$. The composite $\operatorname{sgn} \circ \varphi \colon G \to \{\pm 1\}$ is a homomorphism, so its kernel is a normal subgroup of $G$. Since $\operatorname{sgn}(\varphi(g)) = -1$, $\ker(\operatorname{sgn} \circ \varphi) \neq G$. If $\ker(\operatorname{sgn} \circ \varphi) = \{e\}$, then $\operatorname{sgn} \circ \varphi$ would be an injective map from a group of order $60$ into the two-element set $\{\pm 1\}$, which is impossible; so $\ker(\operatorname{sgn} \circ \varphi) \neq \{e\}$. Thus $\ker(\operatorname{sgn} \circ \varphi)$ is a normal subgroup of $G$ other than $\{e\}$ and $G$, contradicting the simplicity of $G$. Therefore $\operatorname{sgn}(\varphi(g)) = 1$ for all $g \in G$, that is, $\varphi(G) \leq A_6$. Hence $G \cong \varphi(G)$, a subgroup of $A_6$.
+
+\textbf{Conclusion.} Let $H = \varphi(G)$, a subgroup of $A_6$ with $|H| = |G| = 60$. Since $|A_6| = \frac{6!}{2} = 360 \neq 60$, $H \neq A_6$, and $[A_6 : H] = 360/60 = 6$. Applying (2) with $n = 6 \geq 5$ gives $H \cong A_5$. Therefore $G \cong \varphi(G) = H \cong A_5$.
+\end{proof}
+
+\begin{corbox}[{The Simple Groups of Order at Most $100$}]\label{cor:simple-le-100-a5}
+A simple group of order at most $100$ is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or to $A_5$.
+\end{corbox}
+
+\begin{proof}
+By Theorem~\ref{thm:simple-order-le-100}, $G \cong \mathbb{Z}/p\mathbb{Z}$ or $|G| = 60$, and in the second case $G \cong A_5$ by Theorem~\ref{thm:simple-order-60}. Conversely, these groups are simple (Proposition~\ref{prop:primes-prime-powers-simple}(2) and Theorem~\ref{thm:an-simple-n-ge-5}).
+\end{proof}
+
 
 Since $A_5$ is simple of order $60$ (Proposition~\ref{prop:a5-simple}), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Once filled in, the proof also gives Theorem~\ref{thm:a5-smallest-non-abelian-simple-group}: every non-abelian simple group has order at least $60$.
 
@@ -7240,6 +7556,7 @@ Wed Oct 21 \newline review session & Midterm review: cube orbits and stabilizers
 Fri Oct 23 \newline lecture; slides & Simple groups of order $\leq 100$: $p$-groups via the center; the normalizer and $n_p \mid m$; $n_p = 1$; the conjugation map $G \to S_{n_p}$; leaving $A_N$; orders $21, 12, 80, 112$; overview of the classification and of compact Lie groups & \ref{sec:small-simple-groups} \\
 Mon Oct 26 \newline lecture; Worksheet 11 & Internal and external direct sums and products; internal semidirect products; the action by automorphisms; external semidirect products $N \rtimes_\varphi S$; $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$; notation & \ref{sec:internal-direct-products}, \ref{sec:semidirect-products} (WS 11.1--11.6) \\
 Wed Oct 28 \newline lecture; Worksheet 12 & Subnormal, composition and quasi-composition series; Jordan--H\"older (statement); $\mathbb{Z}$ has no composition series; finite groups do; the grid $Z_{ij}$; WS 12.1--12.3 & \ref{sec:composition-series} (WS 12.1--12.5) \\
+Thu Oct 29 \newline Problem Set 7 (submitted) & Proper subgroups of $A_n$ have index $\geq n$; index $n$ gives $A_{n-1}$; simple groups of order $60$ are $A_5$; orders $\equiv 2 \bmod 4$; no simple group of order $56$; two normal subgroups with simple quotients & \ref{sub:orders-30-56-90}, \ref{sub:order-60}, \ref{sec:composition-series} \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -7510,6 +7827,62 @@ Let $p$ be prime and $|G| = p^2$; by Problem 3.5 there is $z \neq e$ with $zg = 
 (1) Prove by induction on $k$ that the number of linearly independent $k$-tuples $(\vec v_1, \ldots, \vec v_k)$ in $\mathbb{F}_p^n$ is $(p^n - 1)(p^n - p) \cdots (p^n - p^{k-1})$. (2) Show that $|GL_n(\mathbb{F}_p)| = (p^n - 1)(p^n - p) \cdots (p^n - p^{n-1})$.
 \end{hwbox}
 \textit{Treated in \ref{sec:p-groups} (Lemmas~\ref{lem:invertible-iff-columns-independent} and~\ref{lem:count-independent-tuples}, Proposition~\ref{prop:order-gln-fp}).}
+
+\section*{Problem Set 7}
+\phantomsection
+\addcontentsline{toc}{section}{Problem Set 7}
+
+\textit{Due Thursday, October 29; submitted. Each problem is treated in the main text, at the location indicated.}
+
+\begin{hwbox}[{Subgroups of $A_n$ and Simple Groups of Order $60$}]{7.1}\label{hw:7.1}
+Let $n \geq 5$ and let $H$ be a subgroup of $A_n$, other than $A_n$ itself.
+\begin{enumerate}
+\item Show that $[A_n : H] \geq n$. Hint: Think about $H$ acting on $A_n/H$.
+\item Suppose that $[A_n : H] = n$. Show that $H \cong A_{n-1}$. Hint: Think harder about $H$ acting on $A_n/H$.
+\end{enumerate}
+In particular, now let $G$ be a simple group of order $60$.
+\begin{enumerate}[resume]
+\item Use the $5$-Sylows to show that $G$ is a subgroup of $A_6$, and conclude that $G \cong A_5$.
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sub:order-60} (Proposition~\ref{prop:an-subgroup-index}, Lemma~\ref{lem:index-two-sm}, Proposition~\ref{prop:an-index-n}, Theorem~\ref{thm:simple-order-60}).}
+
+\begin{hwbox}[{Groups of Order $2 \bmod 4$}]{7.2}\label{hw:7.2}
+Let $G$ be a finite group with $|G| \equiv 2 \bmod 4$ and $|G| > 2$. In this problem, we will show that $G$ is not simple. In particular, this shows that there are no simple groups of order $30$ or $90$.
+\begin{enumerate}
+\item Show that $G$ contains an element $t$ of order $2$.
+\end{enumerate}
+Let $G$ act on itself by left multiplication. This gives an embedding $\phi : G \to S_{4k+2}$ (as in Problem 3.1).
+\begin{enumerate}[resume]
+\item Show that $\sgn \phi(t) = -1$.
+\item Explain why this means that $G$ is not simple.
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sub:orders-30-56-90} (Proposition~\ref{prop:order-2-mod-4}).}
+
+\begin{hwbox}[{No Simple Group of Order $56$}]{7.3}\label{hw:7.3}
+In this problem, we will show that there are no simple groups of order $56$. Suppose, to the contrary, that $G$ is a simple group of order $56$.
+\begin{enumerate}
+\item Show that $G$ has eight $7$-Sylow subgroups and seven $2$-Sylow subgroups.
+\end{enumerate}
+Let $P_1, P_2, \dots, P_7$ be the $2$-Sylows, and let $Q_1, Q_2, \dots, Q_8$ be the $7$-Sylows.
+\begin{enumerate}[resume]
+\item Show that $|P_1 \cup P_2| \geq 12$ and that $|Q_1 \cup Q_2 \cup \cdots \cup Q_8| = 49$.
+\item Deduce a contradiction.
+\end{enumerate}
+This kind of counting elements approach can also handle a number of other cases -- for example, you might enjoy working it out for $30$. I enjoy the hands on concreteness, but it is harder to state it as a general tool.
+\end{hwbox}
+\textit{Treated in \ref{sub:orders-30-56-90} (Proposition~\ref{prop:no-simple-56}).}
+
+\begin{hwbox}[{Two Normal Subgroups with Simple Quotients}]{7.4}\label{hw:7.4}
+Let $G$ be a finite group and let $N_1$ and $N_2$ be distinct normal subgroups (so $N_1 \neq N_2$). Assume that $G/N_1$ and $G/N_2$ are both simple. We will show that $G/N_1 \cong N_2/(N_1 \cap N_2)$ and $G/N_2 \cong N_1/(N_1 \cap N_2)$. I expect to use this lemma in Friday's class.
+\begin{enumerate}
+\item Show that $N_1 N_2 = G$.
+\item Show that $G/N_1 \cong N_2/(N_1 \cap N_2)$ and $G/N_2 \cong N_1/(N_1 \cap N_2)$, as claimed.
+\end{enumerate}
+Remark: We can further show, in this situation, that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$.
+\end{hwbox}
+\textit{Treated in \ref{sec:composition-series} (Lemma~\ref{lem:two-simple-quotients}).}
 
 \chapter{Index of Definitions and Results}\label{ch:index}
 

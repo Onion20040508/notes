@@ -126,6 +126,8 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Second Sylow Theorem]] (§53.6)
 - [[Third Sylow Theorem]] (§53.9)
 - [[Groups of Order pq]] (§53.11)
+- [[Groups of Order 2 mod 4 Are Not Simple]] (§54.7)
+- [[Simple Groups of Order 60 Are A₅]] (§54.13)
 - [[Internal Direct Product Theorem]] (§55.1)
 - [[Internal and External Semidirect Products Agree]] (§56.6)
 
@@ -134,7 +136,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Group Theory Toolkit]]: how to show $H \le G$, well-definedness, (non-)isomorphism, normality; standard examples; exam traps.
 - [[Group Theory Course Log]]: what was taught when, and where it is in these notes.
 - [[Group Theory Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, the example library), with [[Group Theory HW Drill]] (every problem-set problem broken into small questions) and [[Group Theory Notes Drill]] (definitions, worksheet problems and core proofs as questions, by priority).
-- Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]], [[493 Problem Set 4|PS 4]], [[493 Problem Set 5|PS 5]], [[493 Problem Set 6|PS 6]].
+- Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]], [[493 Problem Set 4|PS 4]], [[493 Problem Set 5|PS 5]], [[493 Problem Set 6|PS 6]], [[493 Problem Set 7|PS 7]].
 
 ## Prerequisites from other subjects
 The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Each chapter note gives per-chapter counts; each hub note lists its own cross-subject dependencies. The group theory summarized in [[§26 Algebra Prerequisites꞉ Groups|Topology §26]] is developed here in full.

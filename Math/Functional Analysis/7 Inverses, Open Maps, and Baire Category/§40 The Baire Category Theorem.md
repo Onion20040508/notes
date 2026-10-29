@@ -5,7 +5,7 @@ chapter: 7
 section: 40
 tags: [functional-analysis, math556]
 ---
-← [[§39 Solving Mx = y]] · ↑ [[· 7 Inverses, Open Maps, and Baire Category]] · [[§41 Bras, Kets, and the Riesz Map]] →
+← [[§39 Solving Mx = y]] · ↑ [[· 7 Inverses, Open Maps, and Baire Category]] · [[§41 The Open Mapping Theorem and Its Consequences]] →
 
 *Stage: maps — Thread: completeness. A complete metric space is too large to be a countable union of nowhere dense sets.*
 
@@ -75,38 +75,68 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 ^thm-40-2
 
 > [!proof]+ Proof
-> ($X \neq \varnothing$ is needed: the empty space is a union of empty, nowhere dense sets.) If not, $X = \bigcup_{n=1}^\infty E_n$ with each $E_n$ nowhere dense. We want to show there is at least one point $x^{\ast} \in X$ with $x^{\ast} \notin \bigcup_{n=1}^\infty E_n$, a contradiction. The idea is to construct a sequence of nested closed balls avoiding $E_1, E_2, \ldots$ in turn, and to use completeness to find a point in all of them.
+> ($X \neq \varnothing$ is needed: the empty space is a union of empty, nowhere dense sets.) If not, assume $(X, d)$ is complete and
 >
-> **Nested balls.** Fix $x_0 \in X$ (Wu: “just take the unit ball” $B(0,1)$). Since $E_1$ is nowhere dense, by Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] there is a ball $B(x_1, r_1)$ with
+> $$
+> X = \bigcup_{n=1}^\infty E_n, \qquad E_n \subset X \text{ nowhere dense for every } n .
+> $$
+>
+> We want to show there is at least one point of $X$ that lies in no $E_n$, a contradiction. The idea is to construct a sequence of nested closed balls, the $n$-th one avoiding $E_n$, and to use completeness to find a point in all of them.
+>
+> **Step 1: nested balls.** Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (Wu: $B(0,1)$, thinking of a normed space;
+> in a metric space any center will do). By Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] there is $B(x_1, r_1)$, $r_1 > 0$, with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
 >
 > $$
 > \overline{B(x_1, r_1)} \subset B(x_0, 1), \qquad \overline{B(x_1, r_1)} \cap \overline{E}_1 = \varnothing .
 > $$
 >
-> Since $E_2$ is nowhere dense, applied to the ball $B(x_1, r_1)$ the lemma gives $B(x_2, r_2)$ with
+> (The lemma's proof produces the closed ball inside $B(x_0, 1) \cap \overline{E}_1^{\,c}$, which is open, and nonempty because $E_1$ is nowhere dense.) Now consider $E_2$. By the lemma there is $B(x_2, r_2)$ with $0 < r_2 < \frac12$ such that
 >
 > $$
-> \overline{B(x_2, r_2)} \subset B(x_1, r_1), \qquad \overline{B(x_2, r_2)} \cap \overline{E}_2 = \varnothing ,
+> \overline{B(x_2, r_2)} \subset B(x_1, r_1), \qquad \overline{B(x_2, r_2)} \cap \overline{E}_2 = \varnothing .
 > $$
 >
-> and then also $\overline{B(x_2, r_2)} \cap (\overline{E}_1 \cup \overline{E}_2) = \varnothing$, because $\overline{B(x_2, r_2)} \subset B(x_1, r_1)$ misses $\overline{E}_1$. Continuing, for every $n$ there is $B(x_n, r_n)$ with
+> (The radius can always be made smaller: if a closed ball works, so does any smaller closed ball with the same center, fact (a) of the remark *Two Facts About Nowhere Dense Sets*.) Continue. Assume we have obtained
 >
 > $$
-> \overline{B(x_n, r_n)} \subset B(x_{n-1}, r_{n-1}) \subset \cdots \subset B(x_1, r_1) \qquad \text{and} \qquad \overline{B(x_n, r_n)} \cap \Bigl( \bigcup_{j=1}^n \overline{E}_j \Bigr) = \varnothing .
+> B(x_{n-1}, r_{n-1}) \subset \cdots \subset B(x_2, r_2) \subset B(x_1, r_1) \subset B(x_0, 1)
 > $$
 >
-> By the remark above we may also take $r_n < 1/n$.
->
-> **Completeness.** Since $X$ is complete, $\bigcap_{n=1}^\infty \overline{B(x_n, r_n)} \neq \varnothing$.
-> (The centers form a Cauchy sequence: for $m \ge n$, $x_m \in \overline{B(x_m, r_m)} \subset B(x_n, r_n)$, so $d(x_m, x_n) < r_n < 1/n$. By completeness $x_m \to x^{\ast}$ for some $x^{\ast} \in X$. For each fixed $n$, the points $x_m$, $m \ge n$, lie in the closed set $\overline{B(x_n, r_n)}$, so their limit $x^{\ast}$ does too. Hence $x^{\ast} \in \bigcap_n \overline{B(x_n, r_n)}$.)
->
-> **Conclusion.** Each $\overline{B(x_n, r_n)}$ misses $\overline{E}_1 \cup \cdots \cup \overline{E}_n$, and the balls are nested, so
+> with $r_j < \frac1j$ and $\overline{B(x_j, r_j)} \cap \overline{E}_j = \varnothing$ for $j \le n - 1$. Since $E_n$ is nowhere dense, by the lemma there is $B(x_n, r_n)$ with
 >
 > $$
-> \Bigl( \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} \Bigr) \cap \Bigl( \bigcup_{j=1}^\infty E_j \Bigr) = \varnothing .
+> \overline{B(x_n, r_n)} \subset B(x_{n-1}, r_{n-1}), \qquad 0 < r_n < \tfrac1n, \qquad \overline{B(x_n, r_n)} \cap \overline{E}_n = \varnothing .
 > $$
 >
-> (If $x$ lies in every ball and in some $E_j$, then $x \in \overline{B(x_j, r_j)} \cap \overline{E}_j = \varnothing$.) So $x^{\ast} \notin \bigcup_j E_j = X$, which is impossible.
+> We have obtained a sequence of balls $\{B(x_n, r_n)\}_{n=1}^\infty$ with $0 < r_n < \frac1n$ and $B(x_{n+1}, r_{n+1}) \subset B(x_n, r_n)$.
+>
+> **Step 2: the intersection is empty.** Let
+>
+> $$
+> A = \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} .
+> $$
+>
+> Since $A \subset \overline{B(x_n, r_n)}$ and $\overline{B(x_n, r_n)} \cap \overline{E}_n = \varnothing$, we get $A \cap \overline{E}_n = \varnothing$ for every $n$. Hence
+>
+> $$
+> A \cap \Bigl( \bigcup_{n=1}^\infty \overline{E}_n \Bigr) = \varnothing ,
+> $$
+>
+> and the union contains $\bigcup_n E_n = X$. So $A \cap X = \varnothing$, i.e. $A = \varnothing$.
+>
+> **Step 3: completeness makes the intersection nonempty.** Wu: this is where completeness is used; without it the balls could shrink to a missing point. For $j > n$, $x_j \in B(x_j, r_j) \subset B(x_n, r_n)$ by the nesting, so
+>
+> $$
+> d(x_j, x_n) < r_n < \tfrac1n \qquad \text{for all } j > n .
+> $$
+>
+> Hence $\{x_j\}_{j=1}^\infty$ is Cauchy (for $j, k > n$, $d(x_j, x_k) \le d(x_j, x_n) + d(x_n, x_k) < \frac2n$). Since $X$ is complete, $x_j \to x^{\ast}$ as $j \to \infty$ for some $x^{\ast} \in X$. Now fix $n$. The sequence $\{x_j\}_{j=n}^\infty$ lies in the closed set $\overline{B(x_n, r_n)}$, so its limit $x^{\ast}$ lies in $\overline{B(x_n, r_n)}$ (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]). This holds for every $n$, so
+>
+> $$
+> x^{\ast} \in \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} = A ,
+> $$
+>
+> and $A \neq \varnothing$, contradicting Step 2.
 
 ^pf-40-2
 

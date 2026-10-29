@@ -7576,7 +7576,7 @@ Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map. Assume $M$ i
 \laxref{\S15.5, Thm~11}
 \end{thmbox}
 
-The proof will be given after the Baire category theorem. Wu stressed that the inverse is \emph{not} assumed to be bounded, and that it is important that \emph{both} $X$ and $Y$ are Banach spaces.
+The proof will be given after the Baire category theorem (\ref{sec:open-mapping}, Lecture~16). Wu stressed that the inverse is \emph{not} assumed to be bounded, and that it is important that \emph{both} $X$ and $Y$ are Banach spaces.
 %% FILL-IN: linearity of the inverse (Wu: "that's easy to check").
 ($M^{-1}$ is linear: given $y_1, y_2 \in Y$, put $x_i = M^{-1} y_i$; then $M(c_1 x_1 + c_2 x_2) = c_1 y_1 + c_2 y_2$, so $M^{-1}(c_1 y_1 + c_2 y_2) = c_1 x_1 + c_2 x_2$.) So the content of the theorem is boundedness, i.e.\ continuity, of $M^{-1}$, and continuity can be expressed through open sets:
 \begin{align*}
@@ -7778,33 +7778,53 @@ Let $X$ be a (nonempty) complete metric space. Then $X$ is of the second categor
 \end{thmbox}
 
 \begin{proof}
+%% Lecture 16 (2026-10-29): Wu redid this proof in full at the start of Lecture 16 (the Lecture 15 version stopped at the completeness step); the proof below follows the Lecture 16 version.
 %% FILL-IN: nonemptiness is needed (the empty space is the empty union).
-($X \neq \varnothing$ is needed: the empty space is a union of empty, nowhere dense sets.) If not, $X = \bigcup_{n=1}^\infty E_n$ with each $E_n$ nowhere dense. We want to show there is at least one point $x^* \in X$ with $x^* \notin \bigcup_{n=1}^\infty E_n$, a contradiction. The idea is to construct a sequence of nested closed balls avoiding $E_1, E_2, \ldots$ in turn, and to use completeness to find a point in all of them.
+($X \neq \varnothing$ is needed: the empty space is a union of empty, nowhere dense sets.) If not, assume $(X, d)$ is complete and
+\[
+X = \bigcup_{n=1}^\infty E_n, \qquad E_n \subset X \text{ nowhere dense for every } n .
+\]
+We want to show there is at least one point of $X$ that lies in no $E_n$, a contradiction. The idea is to construct a sequence of nested closed balls, the $n$-th one avoiding $E_n$, and to use completeness to find a point in all of them.
 
-\textbf{Nested balls.} Fix $x_0 \in X$ (Wu: ``just take the unit ball'' $B(0,1)$). Since $E_1$ is nowhere dense, by Lemma~\ref{lem:nowhere-dense-balls} there is a ball $B(x_1, r_1)$ with
+\textbf{Step 1: nested balls.} Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (Wu: $B(0,1)$, thinking of a normed space; %% FILL-IN: a metric space has no origin, so any center will do.
+in a metric space any center will do). By Lemma~\ref{lem:nowhere-dense-balls} there is $B(x_1, r_1)$, $r_1 > 0$, with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
 \[
 \overline{B(x_1, r_1)} \subset B(x_0, 1), \qquad \overline{B(x_1, r_1)} \cap \overline{E}_1 = \varnothing .
 \]
-Since $E_2$ is nowhere dense, applied to the ball $B(x_1, r_1)$ the lemma gives $B(x_2, r_2)$ with
+(The lemma's proof produces the closed ball inside $B(x_0, 1) \cap \overline{E}_1^{\,c}$, which is open, and nonempty because $E_1$ is nowhere dense.) Now consider $E_2$. By the lemma there is $B(x_2, r_2)$ with $0 < r_2 < \frac12$ such that
 \[
-\overline{B(x_2, r_2)} \subset B(x_1, r_1), \qquad \overline{B(x_2, r_2)} \cap \overline{E}_2 = \varnothing ,
+\overline{B(x_2, r_2)} \subset B(x_1, r_1), \qquad \overline{B(x_2, r_2)} \cap \overline{E}_2 = \varnothing .
 \]
-and then also $\overline{B(x_2, r_2)} \cap (\overline{E}_1 \cup \overline{E}_2) = \varnothing$, because $\overline{B(x_2, r_2)} \subset B(x_1, r_1)$ misses $\overline{E}_1$. Continuing, for every $n$ there is $B(x_n, r_n)$ with
+(The radius can always be made smaller: if a closed ball works, so does any smaller closed ball with the same center, fact (a) of the remark \emph{Two Facts About Nowhere Dense Sets}.) Continue. Assume we have obtained
 \[
-\overline{B(x_n, r_n)} \subset B(x_{n-1}, r_{n-1}) \subset \cdots \subset B(x_1, r_1) \qquad \text{and} \qquad \overline{B(x_n, r_n)} \cap \Bigl( \bigcup_{j=1}^n \overline{E}_j \Bigr) = \varnothing .
+B(x_{n-1}, r_{n-1}) \subset \cdots \subset B(x_2, r_2) \subset B(x_1, r_1) \subset B(x_0, 1)
 \]
-By the remark above we may also take $r_n < 1/n$. %% FILL-IN: Wu used the radii shrinking implicitly; she will finish the proof next lecture.
+with $r_j < \frac1j$ and $\overline{B(x_j, r_j)} \cap \overline{E}_j = \varnothing$ for $j \le n - 1$. Since $E_n$ is nowhere dense, by the lemma there is $B(x_n, r_n)$ with
+\[
+\overline{B(x_n, r_n)} \subset B(x_{n-1}, r_{n-1}), \qquad 0 < r_n < \tfrac1n, \qquad \overline{B(x_n, r_n)} \cap \overline{E}_n = \varnothing .
+\]
+We have obtained a sequence of balls $\{B(x_n, r_n)\}_{n=1}^\infty$ with $0 < r_n < \frac1n$ and $B(x_{n+1}, r_{n+1}) \subset B(x_n, r_n)$.
 
-\textbf{Completeness.} Since $X$ is complete, $\bigcap_{n=1}^\infty \overline{B(x_n, r_n)} \neq \varnothing$.
-%% FILL-IN: Wu: "we are going to fix this part next time, because this is where we use completeness"; the argument below is Claude's and will be checked against hers.
-(The centers form a Cauchy sequence: for $m \ge n$, $x_m \in \overline{B(x_m, r_m)} \subset B(x_n, r_n)$, so $d(x_m, x_n) < r_n < 1/n$. By completeness $x_m \to x^*$ for some $x^* \in X$. For each fixed $n$, the points $x_m$, $m \ge n$, lie in the closed set $\overline{B(x_n, r_n)}$, so their limit $x^*$ does too. Hence $x^* \in \bigcap_n \overline{B(x_n, r_n)}$.)
-
-\textbf{Conclusion.} Each $\overline{B(x_n, r_n)}$ misses $\overline{E}_1 \cup \cdots \cup \overline{E}_n$, and the balls are nested, so
+\textbf{Step 2: the intersection is empty.} Let
 \[
-\Bigl( \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} \Bigr) \cap \Bigl( \bigcup_{j=1}^\infty E_j \Bigr) = \varnothing .
+A = \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} .
 \]
-%% FILL-IN: why the infinite intersection misses every E_j.
-(If $x$ lies in every ball and in some $E_j$, then $x \in \overline{B(x_j, r_j)} \cap \overline{E}_j = \varnothing$.) So $x^* \notin \bigcup_j E_j = X$, which is impossible.
+Since $A \subset \overline{B(x_n, r_n)}$ and $\overline{B(x_n, r_n)} \cap \overline{E}_n = \varnothing$, we get $A \cap \overline{E}_n = \varnothing$ for every $n$. Hence
+\[
+A \cap \Bigl( \bigcup_{n=1}^\infty \overline{E}_n \Bigr) = \varnothing ,
+\]
+and the union contains $\bigcup_n E_n = X$. So $A \cap X = \varnothing$, i.e.\ $A = \varnothing$.
+
+\textbf{Step 3: completeness makes the intersection nonempty.} Wu: this is where completeness is used; without it the balls could shrink to a missing point. For $j > n$, $x_j \in B(x_j, r_j) \subset B(x_n, r_n)$ by the nesting, so
+\[
+d(x_j, x_n) < r_n < \tfrac1n \qquad \text{for all } j > n .
+\]
+%% FILL-IN: why this gives a Cauchy sequence.
+Hence $\{x_j\}_{j=1}^\infty$ is Cauchy (for $j, k > n$, $d(x_j, x_k) \le d(x_j, x_n) + d(x_n, x_k) < \frac2n$). Since $X$ is complete, $x_j \to x^*$ as $j \to \infty$ for some $x^* \in X$. Now fix $n$. The sequence $\{x_j\}_{j=n}^\infty$ lies in the closed set $\overline{B(x_n, r_n)}$, so its limit $x^*$ lies in $\overline{B(x_n, r_n)}$ (Definition~\ref{def:closed}). This holds for every $n$, so
+\[
+x^* \in \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} = A ,
+\]
+and $A \neq \varnothing$, contradicting Step 2.
 \end{proof}
 
 %% >>> ADDED: figure (Claude)
@@ -7830,6 +7850,275 @@ By the remark above we may also take $r_n < 1/n$. %% FILL-IN: Wu used the radii 
 \end{tikzpicture}
 \end{center}
 Each closed ball sits inside the previous one and avoids one more $E_j$; completeness provides a point $x^*$ in all of them, which therefore lies in no $E_j$.
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: THE OPEN MAPPING THEOREM AND ITS CONSEQUENCES (Lecture 16)
+% ============================================================================
+% Lecture 16 (2026-10-29)
+
+\section{The Open Mapping Theorem and Its Consequences}\label{sec:open-mapping}
+
+\roadmark{Stage: maps}{Thread: completeness. Baire's theorem applied to $Y = \bigcup_n M(B(0,n))$: a bounded linear map onto a Banach space is open; bounded inverses, equivalent norms and closed graphs follow.}
+
+Throughout this section $B(x_0, r)$ denotes the \emph{open} ball with center $x_0$ and radius $r > 0$ (in whichever space $x_0$ lies; when the space must be named, $B_X$ or $B_Y$); a closed ball is written with a closure bar. Wu: these are some of the major results of the course.
+
+\subsection{The Open Mapping Theorem}
+
+In lecture, Wu stated the open mapping theorem first, derived Banach's theorem from it, and then reduced the open mapping theorem to the following theorem. Here the theorem comes first, so that each proof follows its statement.
+
+
+
+
+\begin{thmbox}[{{The Image of the Unit Ball Contains a Ball About $0$}}]\boxlabel{thm:ball-in-image}
+Let $X, Y$ be Banach spaces and $M \in \mathcal{L}(X, Y)$ with $R(M) = Y$. Then there is $\delta > 0$ such that
+\[
+B(0, \delta) \subset M\bigl( B(0, 1) \bigr) .
+\]
+\laxref{\S15.5, Thm~9}
+\end{thmbox}
+
+What matters is that the ball in $Y$ is centered at the origin, not at an arbitrary point: linearity then moves it anywhere and rescales it.
+
+
+\begin{proof}[Proof of Theorem~\ref{thm:ball-in-image}]
+\textbf{Step 1: some $\overline{M(B(0,n))}$ has an interior point.} %% FILL-IN: why X is the union of the balls.
+Every $x \in X$ has $\|x\| < n$ for some $n \in \mathbb{N}$, so $X = \bigcup_{n=1}^\infty B(0, n)$. Since $M$ is onto,
+\[
+Y = M(X) = \bigcup_{n=1}^\infty M\bigl( B(0, n) \bigr) .
+\]
+$Y$ is complete, so by the Baire category theorem (Theorem~\ref{thm:baire}) it is of the second category: not every $M(B(0,n))$ is nowhere dense. So there is $n \in \mathbb{N}$ such that $\overline{M(B(0,n))}$ has an interior point, i.e.\ there are $z_0 \in Y$ and $r > 0$ with
+\[
+B(z_0, r) \subset \overline{M\bigl( B(0, n) \bigr)} .
+\]
+(Wu calls the center $x_0$; it is a point of $Y$.)
+
+\textbf{Step 2: two properties of $\overline{M(B(0,n))}$.}
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{Symmetry:} if $z \in \overline{M(B(0,n))}$, then $-z \in \overline{M(B(0,n))}$.
+    \item \emph{Convexity:} $\overline{M(B(0,n))}$ is convex.
+\end{enumerate}
+Both hold first without the closure. If $z = Mx$ with $x \in B(0, n)$, then $-x \in B(0, n)$ and $-z = M(-x)$. If $y_1, y_2 \in M(B(0,n))$, there are $x_1, x_2 \in B(0, n)$ with $y_1 = Mx_1$, $y_2 = Mx_2$; for every $0 \le \alpha \le 1$, $\alpha x_1 + (1 - \alpha) x_2 \in B(0, n)$, because a ball is convex, and
+\[
+M\bigl( \alpha x_1 + (1-\alpha) x_2 \bigr) = \alpha M x_1 + (1 - \alpha) M x_2 = \alpha y_1 + (1 - \alpha) y_2 \in M\bigl( B(0, n) \bigr) .
+\]
+%% FILL-IN: passing to the closure (left to the class as an exercise).
+\emph{With the closure} (left as an exercise): if $z_k \in M(B(0,n))$ and $z_k \to z$, then $-z_k \in M(B(0,n))$ and $-z_k \to -z$, so $-z \in \overline{M(B(0,n))}$. If $y_{1,k} \to y_1$ and $y_{2,k} \to y_2$ with $y_{i,k} \in M(B(0,n))$, then $\alpha y_{1,k} + (1-\alpha) y_{2,k} \in M(B(0,n))$ converges to $\alpha y_1 + (1-\alpha) y_2$, which therefore lies in $\overline{M(B(0,n))}$.
+
+\textbf{Step 3: a ball about the origin.} By symmetry, $B(-z_0, r) \subset \overline{M(B(0,n))}$ as well.
+%% FILL-IN: the one-line reason.
+(If $y \in B(-z_0, r)$ then $-y \in B(z_0, r)$, so $-y$, and hence $y$, lies in $\overline{M(B(0,n))}$.) By convexity, everything between the two balls is in $\overline{M(B(0,n))}$, and in particular
+\[
+B(0, r) \subset \overline{M\bigl( B(0, n) \bigr)} :
+\]
+for every $y \in B(0, r)$,
+\[
+y = \tfrac12 (z_0 + y) + \tfrac12 (-z_0 + y), \qquad z_0 + y \in B(z_0, r), \quad -z_0 + y \in B(-z_0, r),
+\]
+and convexity with $\alpha = \frac12$ gives $y \in \overline{M(B(0,n))}$.
+
+%% FIGURE (board): redrawn from the sketch in Tianshuo's notes; labels by Claude
+\begin{center}
+\begin{tikzpicture}[scale=1.0, >=stealth, rotate=-40]
+    \draw[thick, red!75!black] (0,0) ellipse (3.1 and 1.75);
+    \node[red!75!black] at (0.9,2.65) {$\overline{M(B(0,n))}$};
+    \draw[red!60!black, thin] (-1.6,0.75) -- (1.6,0.75);
+    \draw[red!60!black, thin] (-1.6,-0.75) -- (1.6,-0.75);
+    \draw[thick, blue!70!black] (-1.6,0) circle (0.75);
+    \fill[blue!70!black] (-1.6,0) circle (1pt);
+    \node[blue!70!black, font=\scriptsize] at (-1.6,-0.25) {$B(z_0, r)$};
+    \draw[thick, orange!80!black] (1.6,0) circle (0.75);
+    \fill[orange!80!black] (1.6,0) circle (1pt);
+    \node[orange!80!black, font=\scriptsize] at (1.6,-0.25) {$B(-z_0, r)$};
+    \draw[thick, red!75!black] (0,0) circle (0.75);
+    \fill[red!75!black] (0,0) circle (1.2pt) node[below, font=\scriptsize] {$0$};
+\end{tikzpicture}
+\end{center}
+By symmetry the ball $B(z_0, r)$ has a mirror image $B(-z_0, r)$; by convexity the set contains the ``capsule'' joining them (thin lines), and so the ball $B(0, r)$ about the origin.
+
+\textbf{Step 4: rescaling.} We have shown: there are $r > 0$ and $n \in \mathbb{N}$ with $B(0, r) \subset \overline{M(B(0,n))}$. By linearity,
+\[
+B\bigl( 0, \tfrac{r}{n} \bigr) \subset \overline{M\bigl( B(0, 1) \bigr)} .
+\]
+%% FILL-IN: the scaling step.
+(For $c > 0$, $B(0, c\rho) = c\, B(0, \rho)$ in both spaces, $M(c\, S) = c\, M(S)$, and $\overline{c\, S} = c\, \overline{S}$ since $z \mapsto cz$ is a homeomorphism; take $c = \frac1n$.) Let $\delta = \frac{r}{3n}$. Then $B(0, 3\delta) \subset \overline{M(B(0,1))}$, and, again by linearity,
+\[
+B(0, 3\rho\delta) \subset \overline{M\bigl( B(0, \rho) \bigr)} \qquad \text{for all } \rho > 0 . \tag{$\dagger$}
+\]
+
+\textbf{Step 5: removing the closure.} We want $B(0, \delta) \subset M(B(0, 1))$, without the closure. Wu: this is a little tricky; shrinking the ball does not remove the closure by itself. Let $y_0 \in B(0, \delta)$. By $(\dagger)$ with $\rho = \frac13$, $B(0, \delta) \subset \overline{M(B(0, \frac13))}$, so there is $x_0 \in B_X(0, \frac13)$ with
+\[
+\|y_0 - Mx_0\| < \frac{\delta}{3}, \qquad \text{i.e.} \qquad y_0 - Mx_0 \in B_Y\bigl( 0, \tfrac{\delta}{3} \bigr) \subset \overline{M\bigl( B_X(0, \tfrac{1}{3^2}) \bigr)} ,
+\]
+the last inclusion by $(\dagger)$ with $\rho = \frac{1}{3^2}$. So there is $x_1 \in B_X(0, \frac{1}{3^2})$ with
+\[
+\|y_0 - Mx_0 - Mx_1\| < \frac{\delta}{3^2}, \qquad \text{i.e.} \qquad y_0 - Mx_0 - Mx_1 \in B_Y\bigl( 0, \tfrac{\delta}{3^2} \bigr) \subset \overline{M\bigl( B_X(0, \tfrac{1}{3^3}) \bigr)} .
+\]
+Then take $x_2 \in B_X(0, \frac{1}{3^3})$ with $\|y_0 - Mx_0 - Mx_1 - Mx_2\| < \frac{\delta}{3^3}$, and so on: each step corrects the previous error, and the errors form a geometric sequence. Inductively, we take $x_j \in B_X(0, \frac{1}{3^{j+1}})$ with
+\[
+\Bigl\| y_0 - \sum_{j=0}^n M x_j \Bigr\| < \frac{\delta}{3^{n+1}} \qquad \text{for every } n . \tag{$\ddagger$}
+\]
+%% FILL-IN: the inductive step written out.
+(Given $x_0, \ldots, x_n$ with $(\ddagger)$, the vector $y_0 - \sum_{j=0}^n Mx_j$ lies in $B_Y(0, \frac{\delta}{3^{n+1}}) \subset \overline{M(B_X(0, \frac{1}{3^{n+2}}))}$ by $(\dagger)$ with $\rho = 3^{-(n+2)}$, which gives $x_{n+1} \in B_X(0, \frac{1}{3^{n+2}})$ with $(\ddagger)$ for $n + 1$.)
+
+\textbf{Step 6: the series converges.} We want $\sum_j x_j$ to converge to some $x^0 \in X$ with $\|x^0\| \le \frac12$ and $y_0 = Mx^0$. Since $\|x_j\| < 3^{-(j+1)}$,
+\[
+\sum_{j=0}^\infty \|x_j\| \le \sum_{j=0}^\infty \frac{1}{3^{j+1}} = \frac13 \cdot \frac{1}{1 - \frac13} = \frac12 ;
+\]
+a sum of non-negative terms always makes sense, as the limit of an increasing sequence. Hence the partial sums are Cauchy in $X$: for $n > m$,
+\[
+\Bigl\| \sum_{j=m+1}^n x_j \Bigr\| \le \sum_{j=m+1}^n \|x_j\| \to 0 \qquad (n, m \to \infty) ,
+\]
+the tail of a convergent series. $X$ is a Banach space, so there is $x^0 \in X$ with $\lim_{n \to \infty} \sum_{j=0}^n x_j = x^0$, and
+%% FILL-IN: why the norm bound passes to the limit.
+$\|x^0\| = \lim_n \bigl\| \sum_{j=0}^n x_j \bigr\| \le \frac12$ (continuity of the norm, Proposition~\ref{prop:norm-continuous}). In particular $x^0 \in B(0, 1)$. Finally, by $(\ddagger)$ and the linearity of $M$, $\|y_0 - M(\sum_{j=0}^n x_j)\| < \delta/3^{n+1} \to 0$, and $M$ is continuous, so
+\[
+y_0 = \lim_{n \to \infty} M\Bigl( \sum_{j=0}^n x_j \Bigr) = M x^0 .
+\]
+Hence $y_0 \in M(B(0, 1))$. As $y_0 \in B(0, \delta)$ was arbitrary, $B(0, \delta) \subset M(B(0, 1))$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small, scale=1.0]
+  \fill (0,0) circle (1.3pt) node[below left] {$0$};
+  \draw[gray!60] (0,0) circle (3.0); \node[gray!60!black, font=\scriptsize] at (2.35,2.25) {$B(0, \delta)$};
+  \fill[red!70!black] (2.0,1.0) circle (1.6pt) node[above right] {$y_0$};
+  \draw[thick, blue!60!black, ->] (0,0) -- (1.55,0.55) node[below right, font=\scriptsize] {$Mx_0$};
+  \draw[red!50, dashed] (2.0,1.0) circle (1.0); \node[red!60!black, font=\scriptsize] at (3.25,0.35) {$\frac{\delta}{3}$};
+  \draw[thick, blue!60!black, ->] (1.55,0.55) -- (2.05,0.75) node[below right, font=\scriptsize] {$+Mx_1$};
+  \draw[red!50, dashed] (2.0,1.0) circle (0.333);
+  \draw[thick, blue!60!black, ->] (2.05,0.75) -- (1.93,0.93);
+  \draw[red!50, dashed] (2.0,1.0) circle (0.111);
+  \node[align=left, anchor=west, font=\scriptsize] at (3.6,-1.2) {$\|y_0 - Mx_0\| < \delta/3$, \ $\|x_0\| < 1/3$\\ $\|y_0 - Mx_0 - Mx_1\| < \delta/3^2$, \ $\|x_1\| < 1/3^2$\\ $\cdots$\\ $\sum_j \|x_j\| < \tfrac12$: the sum $x^0 = \sum_j x_j$ exists, $Mx^0 = y_0$};
+\end{tikzpicture}
+\end{center}
+The successive approximation of Steps 5--6: $Mx_0$ approximates $y_0$ to within $\delta/3$, adding $Mx_1$ to within $\delta/3^2$, and so on; the corrections $x_j$ have $\|x_j\| < 3^{-(j+1)}$, so their sum $x^0$ exists in the Banach space $X$, has $\|x^0\| \le \frac12$, and $Mx^0 = y_0$.
+%% <<< END ADDED
+
+\begin{thmbox}[Open Mapping Theorem]\boxlabel{thm:open-mapping}
+Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map that is onto (surjective, $R(M) = Y$). Then $M$ is an open map: for every open $O \subset X$, $M(O)$ is open in $Y$.
+\laxref{\S15.5, Thm~10}
+\end{thmbox}
+
+\begin{proof}[Proof of the open mapping theorem]
+Assume Theorem~\ref{thm:ball-in-image}. Let $O \subset X$ be open. We want $M(O) = \{ Mx : x \in O \}$ to be open, that is,\ for every $x_0 \in O$ there is $\delta' > 0$ with $B(Mx_0, \delta') \subset M(O)$ (every point of $M(O)$ is of the form $Mx_0$, $x_0 \in O$). Since $O$ is open, there is $r > 0$ with $B(x_0, r) \subset O$. With $\delta$ from Theorem~\ref{thm:ball-in-image}, we show
+\[
+B(Mx_0, r\delta) \subset M\bigl( B(x_0, r) \bigr) \ \bigl( \subset M(O) \bigr) .
+\]
+Let $y \in B(Mx_0, r\delta)$; we want $x \in B(x_0, r)$ with $y = Mx$. Now
+\[
+y \in B(Mx_0, r\delta) \iff \|y - Mx_0\| < r\delta \iff \Bigl\| \frac{y}{r} - \frac{Mx_0}{r} \Bigr\| < \delta ,
+\]
+so $\frac{y - Mx_0}{r} \in B(0, \delta)$. By Theorem~\ref{thm:ball-in-image} there is $x_1 \in B(0, 1)$ with $\frac{y - Mx_0}{r} = Mx_1$. Then
+\[
+y = Mx_0 + r\, Mx_1 = M(x_0 + r x_1), \qquad x = x_0 + r x_1 \in B(x_0, r),
+\]
+since $\|x - x_0\| = r\|x_1\| < r$. This is just shifting and shrinking: only the linearity of $M$ is used.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, font=\small]
+  \begin{scope}
+    \node[font=\scriptsize] at (0,2.1) {$X$};
+    \draw[thick, blue!60!black] (0,0) circle (1.2); \fill (0,0) circle (1.2pt) node[below] {$0$}; \node[blue!60!black, font=\scriptsize] at (0,1.45) {$B(0,1)$};
+    \draw[thick, orange!80!black] (2.6,0.3) circle (0.6); \fill (2.6,0.3) circle (1.2pt) node[below, font=\scriptsize] {$x_0$}; \node[orange!80!black, font=\scriptsize] at (2.6,1.15) {$B(x_0, r) \subset O$};
+    \draw[->, gray] (0.9,0.2) -- node[above, font=\scriptsize] {$x \mapsto x_0 + rx$} (2.05,0.3);
+  \end{scope}
+  \draw[->, thick] (3.6,0.3) -- node[above] {$M$} (4.6,0.3);
+  \begin{scope}[xshift=6.3cm]
+    \node[font=\scriptsize] at (0,2.1) {$Y$};
+    \draw[thick, blue!60!black, rounded corners=8pt] (-1.3,-0.8) -- (0.9,-1.0) -- (1.4,0.6) -- (-0.4,1.3) -- (-1.4,0.4) -- cycle; \node[blue!60!black, font=\scriptsize, anchor=west] at (-1.0,1.55) {$M(B(0,1))$};
+    \draw[thick, red!70!black] (0,0) circle (0.55); \fill (0,0) circle (1.2pt) node[below, font=\scriptsize] {$0$}; \node[red!70!black, font=\scriptsize] at (0.2,-0.75) {$B(0, \delta)$};
+    \draw[thick, red!70!black] (2.7,0.3) circle (0.3); \fill (2.7,0.3) circle (1.2pt) node[below, font=\scriptsize] {$Mx_0$}; \node[red!70!black, font=\scriptsize, align=center] at (2.7,1.0) {$B(Mx_0, r\delta)$\\ $\subset M(B(x_0, r))$};
+    \draw[->, gray] (0.6,0.1) -- node[below, font=\scriptsize] {$y \mapsto Mx_0 + ry$} (2.35,0.25);
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+The open mapping theorem from Theorem~\ref{thm:ball-in-image}: the map $x \mapsto x_0 + rx$ carries $B(0,1)$ onto $B(x_0, r) \subset O$, and correspondingly $y \mapsto Mx_0 + ry$ carries $B(0, \delta) \subset M(B(0,1))$ onto $B(Mx_0, r\delta) \subset M(B(x_0, r))$. Only linearity is used.
+%% <<< END ADDED
+
+Banach's theorem (Theorem~\ref{thm:banach-inverse}) follows at once.
+
+\begin{proof}[Proof of Banach's theorem from the open mapping theorem]
+Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear (\ref{sec:solving}). A linear map is bounded if and only if it is continuous, and continuous if and only if the inverse image of every open set is open (Lemma~\ref{lem:cont-open}). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
+\[
+(M^{-1})^{-1}(O) = M(O) ,
+\]
+which is open by Theorem~\ref{thm:open-mapping}. So $M^{-1}$ is continuous, hence bounded.
+\end{proof}
+
+\begin{rembox}[Where Completeness is Used]\label{rem:open-mapping-completeness}
+Completeness of $Y$ is used once, in Step 1, through Baire: what is needed is only that $Y = R(M)$ is of the second category, and Wu remarked that the assumption can be weakened accordingly. Completeness of $X$ is used in Step 6, to sum the corrections. The proof has two halves of different nature: Baire gives a ball in the \emph{closure} of the image (Steps 1--4), and successive approximation removes the closure (Steps 5--6).
+\end{rembox}
+
+\subsection{Equivalent Norms}
+
+\begin{thmbox}[Equivalent Norm Theorem]\boxlabel{thm:equiv-norm}
+Let $X$ be a linear space with two norms $\|\cdot\|_1$, $\|\cdot\|_2$ such that $(X, \|\cdot\|_1)$ and $(X, \|\cdot\|_2)$ are both Banach spaces. Assume there is $c > 0$ with
+\[
+\|x\|_1 \le c\, \|x\|_2 \qquad \text{for all } x \in X .
+\]
+Then $\|\cdot\|_1$ and $\|\cdot\|_2$ are equivalent (Definition~\ref{def:equivalent-norms}).
+\laxref{\S15.5, Thm~13 (for two \emph{compatible} complete norms, proved there from the closed graph theorem)}
+\end{thmbox}
+
+In other words, if both norms are complete and one of them is stronger than the other, then they are equivalent: two complete norms cannot be strictly comparable. (Compare Theorem~\ref{prop:norms-equiv}: in finite dimensions all norms are equivalent, with no assumption. Lax states the theorem for two complete norms that are \emph{compatible}, that is, a sequence converging in both norms has the same limit in both; comparability implies compatibility. He proves it from the closed graph theorem, the reverse of the order here.)
+
+\begin{proof}
+Let $i : X \to X$, $i(x) = x$, be the identity. As a map $i : (X, \|\cdot\|_2) \to (X, \|\cdot\|_1)$ it is linear, and bounded by the assumption: $\|i(x)\|_1 \le c\, \|x\|_2$. It is one-to-one and onto, and both spaces are complete. By Banach's theorem (Theorem~\ref{thm:banach-inverse}), $i^{-1} : (X, \|\cdot\|_1) \to (X, \|\cdot\|_2)$ is also bounded: there is $C$ with $\|x\|_2 \le C\, \|x\|_1$ for all $x$. With the assumption, the norms are equivalent.
+\end{proof}
+
+\begin{exbox}[{{$C^1[a,b]$ is Not Complete in the Maximum Norm}}]\boxlabel{ex:C1-max-incomplete}
+Wu: this explains the homework and the midterm. $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition~\ref{prop:C2-incomplete}), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem~\ref{thm:equiv-norm} would make the two norms equivalent.
+%% FILL-IN: why they are not.
+They are not: $f_n(t) = \sin\bigl( n(t - a) \bigr)$ has $\max |f_n| \le 1$ but $\|f_n\|_{C^1} \ge |f_n'(a)| = n$. So $(C^1[a,b], \max|\cdot|)$ is not complete; its completion is $C[a,b]$ (Midterm Problem 1, \ref{sec:solving}).
+\end{exbox}
+
+\subsection{The Closed Graph Theorem}
+
+\begin{thmbox}[Closed Graph Theorem]\boxlabel{thm:closed-graph}
+Let $X, Y$ be Banach spaces and $D(M) \subset X$. Assume $M : D(M) \to Y$ is a closed (linear) map. If $D(M) = X$, then $M \in \mathcal{L}(X, Y)$.
+\laxref{\S15.5, Thm~12}
+\end{thmbox}
+
+The domain is the domain of definition. Recall the example of Lecture 15 (Example~\ref{ex:diff-closed}): $M = \frac{d}{dt} : C^1[0,1] \to C[0,1]$, inside $X = Y = C[0,1]$, with $D(\frac{d}{dt}) = C^1[0,1]$. It is closed but not bounded; this does not contradict the theorem, because its domain is not the whole space $C[0,1]$. So a closed map that is not bounded necessarily has a domain smaller than $X$.
+
+\begin{proof}
+Let $X$ carry its norm $\|\cdot\|_X$. Define, for every $x \in X$, the \textbf{graph norm}
+\[
+\|x\|_G = \|x\|_X + \|Mx\|_Y .
+\]
+\emph{It is a norm} (left as an exercise). %% FILL-IN: the norm axioms.
+Homogeneity: $\|ax\|_G = |a|\,\|x\|_X + \|aMx\|_Y = |a|\,\|x\|_G$, by linearity of $M$. Triangle inequality: $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$ and $\|M(x + x')\|_Y = \|Mx + Mx'\|_Y \le \|Mx\|_Y + \|Mx'\|_Y$; add. Positivity: $\|x\|_G \ge \|x\|_X$, which is $> 0$ for $x \neq 0$. We also have
+\[
+\|x\|_X \le \|x\|_G \qquad \text{for all } x \in X .
+\]
+
+\emph{$(X, \|\cdot\|_G)$ is complete.} Let $\{x_n\}_{n \in \mathbb{N}}$ be a Cauchy sequence in $(X, \|\cdot\|_G)$: for every $\varepsilon > 0$ there is $N$ such that
+\[
+\|x_n - x_m\|_X + \|Mx_n - Mx_m\|_Y < \varepsilon \qquad \text{for all } n, m > N .
+\]
+Ignoring one term at a time, $\{x_n\}$ is Cauchy in $(X, \|\cdot\|_X)$ and $\{Mx_n\}$ is Cauchy in $(Y, \|\cdot\|_Y)$. Both are Banach spaces, so there are $x_0 \in X$ and $y_0 \in Y$ with $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$; that is, $(x_n, Mx_n) \to (x_0, y_0)$ in $X \times Y$. Since $M$ is closed (and $x_0 \in X = D(M)$), $y_0 = Mx_0$. Now let $m \to \infty$ in the Cauchy inequality: %% FILL-IN: continuity of the norms justifies the limit.
+by continuity of the norms,
+\[
+\|x_n - x_0\|_X + \|Mx_n - Mx_0\|_Y \le \varepsilon \qquad \text{for all } n > N ,
+\]
+i.e.\ $x_n \to x_0$ in $\|\cdot\|_G$. So $(X, \|\cdot\|_G)$ is a Banach space.
+
+\emph{Conclusion.} Both $(X, \|\cdot\|_X)$ and $(X, \|\cdot\|_G)$ are complete and $\|x\|_X \le \|x\|_G$, so by the equivalent norm theorem (Theorem~\ref{thm:equiv-norm}) there is $C > 0$ with $\|x\|_G \le C\, \|x\|_X$ for all $x \in X$. Hence
+\[
+\|Mx\|_Y = \|x\|_G - \|x\|_X \le (C - 1)\, \|x\|_X \qquad \text{for all } x \in X ,
+\]
+and $M \in \mathcal{L}(X, Y)$.
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[How the Theorems Fit Together]\label{rem:open-mapping-chain}
+The chain of this section is: the Baire category theorem (Theorem~\ref{thm:baire}) $\Rightarrow$ the image of the unit ball contains a ball (Theorem~\ref{thm:ball-in-image}) $\Rightarrow$ the open mapping theorem (Theorem~\ref{thm:open-mapping}) $\Rightarrow$ Banach's inverse mapping theorem (Theorem~\ref{thm:banach-inverse}) $\Rightarrow$ the equivalent norm theorem (Theorem~\ref{thm:equiv-norm}) $\Rightarrow$ the closed graph theorem (Theorem~\ref{thm:closed-graph}).
+The closed graph theorem is used in the converse direction of the usual check: to show a linear map defined everywhere is bounded, it suffices to show that $x_n \to x$ and $Mx_n \to y$ imply $y = Mx$, which is often easier than estimating $\|Mx\|$ directly, because the convergence $Mx_n \to y$ comes for free. Completeness of both spaces is essential in every link.
+\end{rembox}
 %% <<< END ADDED
 
 % ============================================================================
@@ -8565,7 +8854,34 @@ To produce a point with infinitely many properties, one for each $n$, build clos
 \end{rembox}
 
 \begin{exbox}[Application (Lecture 15)]\boxlabel{ex:tech25}
-The Baire category theorem (Theorem~\ref{thm:baire}): the $n$-th ball avoids $\overline{E}_1, \ldots, \overline{E}_n$, by Lemma~\ref{lem:nowhere-dense-balls}.
+The Baire category theorem (Theorem~\ref{thm:baire}): the $n$-th ball avoids $\overline{E}_n$, by Lemma~\ref{lem:nowhere-dense-balls}, and lies inside all earlier balls.
+\end{exbox}
+
+% --------------------------------------------------------------------------
+%% Lecture 16 (Claude): new technique.
+\subsection{Technique 26: Approximate, Correct, Sum a Geometric Series}
+
+\begin{rembox}[Strategy]\label{rem:tech26}
+When one only knows that a target can be approximated (it lies in a \emph{closure}), but needs it to be attained exactly, approximate it, then approximate the error at a smaller scale, and so on, with scales shrinking geometrically ($3^{-j}$). The corrections $x_j$ then have $\sum \|x_j\| < \infty$, so their sum converges in a Banach space, and continuity carries the approximations to an exact equality. The price is a fixed loss in the constants (here $\delta$ versus $3\delta$).
+\end{rembox}
+
+\begin{exbox}[Application (Lecture 16)]\boxlabel{ex:tech26}
+Removing the closure in Theorem~\ref{thm:ball-in-image}: from $B(0, 3\delta) \subset \overline{M(B(0,1))}$ to $B(0, \delta) \subset M(B(0,1))$.
+\end{exbox}
+
+% --------------------------------------------------------------------------
+%% Lecture 16 (Claude): new technique.
+\subsection{Technique 27: Compare Two Complete Norms}
+
+\begin{rembox}[Strategy]\label{rem:tech27}
+To prove that a linear map $M$ is bounded, or that two norms are equivalent, build a second norm on the same space --- typically the graph norm $\|x\| + \|Mx\|$ --- that dominates the given one, show it is complete, and invoke the equivalent norm theorem: two comparable complete norms are equivalent. Conversely, to show a norm is \emph{not} complete, exhibit a complete norm that is strictly stronger.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 16)]\boxlabel{ex:tech27}
+\begin{itemize}
+\item The closed graph theorem (Theorem~\ref{thm:closed-graph}).
+\item $C^1[a,b]$ is not complete in the maximum norm (Example~\ref{ex:C1-max-incomplete}).
+\end{itemize}
 \end{exbox}
 
 
@@ -8649,7 +8965,7 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
 \ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text here, so no Ch.~8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
 \ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked. \\
-\ref{sec:solving}--\ref{sec:baire} Solving $Mx = y$; Baire category & Ch.~15 & \S15.5 The open mapping principle: Banach's inverse mapping theorem (Thm~11), open maps (Thm~10), closed maps (definition before Thm~12; the closed graph theorem, Thm~12, is not yet covered), the Baire category principle (used in the proof of Thm~9, p.~169; sets of second category, Thm~16). \\
+\ref{sec:solving}--\ref{sec:open-mapping} Solving $Mx = y$; Baire category; open mapping & Ch.~15 & \S15.5 The open mapping principle: the image of the unit ball contains a ball (Thm~9), open mapping (Thm~10), Banach's inverse mapping theorem (Thm~11), closed maps and the closed graph theorem (definition before Thm~12, Thm~12), equivalent norms (Thm~13, for compatible norms), the Baire category principle (used in the proof of Thm~9, p.~169; sets of second category, Thm~16). \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }

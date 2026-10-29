@@ -28,7 +28,7 @@ Conjugation is the action of a group on itself that detects non-commutativity. T
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]: 23 later results
-- [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]: 14 later results
-- [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]: 9 later results
-- [[§33 Conjugacy Classes#^lem-33-1|Lemma §33.1: Conjugation Relabels the Entries]]: 7 later results
+- [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]: 25 later results
+- [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]: 16 later results
+- [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]: 11 later results
+- [[p-Groups Have Nontrivial Center|Theorem §35.3: Groups of Prime-Power Order Have Nontrivial Center]]: 9 later results

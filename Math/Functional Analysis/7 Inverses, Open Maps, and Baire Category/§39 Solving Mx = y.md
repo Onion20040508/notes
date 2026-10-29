@@ -116,7 +116,7 @@ Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]] as a diagram: $M$ factors as th
 
 ^thm-39-2
 
-The proof will be given after the Baire category theorem. Wu stressed that the inverse is *not* assumed to be bounded, and that it is important that *both* $X$ and $Y$ are Banach spaces.
+The proof will be given after the Baire category theorem ([[§41 The Open Mapping Theorem and Its Consequences#^pf-39-2|§41]], Lecture 16). Wu stressed that the inverse is *not* assumed to be bounded, and that it is important that *both* $X$ and $Y$ are Banach spaces.
 ($M^{-1}$ is linear: given $y_1, y_2 \in Y$, put $x_i = M^{-1} y_i$; then $M(c_1 x_1 + c_2 x_2) = c_1 y_1 + c_2 y_2$, so $M^{-1}(c_1 y_1 + c_2 y_2) = c_1 x_1 + c_2 x_2$.) So the content of the theorem is boundedness, i.e. continuity, of $M^{-1}$, and continuity can be expressed through open sets:
 
 $$

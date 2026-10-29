@@ -22,6 +22,7 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§43 Simple Groups#^cor-43-11|Corollary §43.11: Which Aₙ Are Simple]]
 - [[§49 The Derived Series#^cor-49-2|Corollary §49.2: Aₙ and Sₙ Are Not Solvable for n ≥ 5]]
+- [[§54 Simple Groups of Small Order#^cor-54-14|Corollary §54.14: The Simple Groups of Order at Most 100]]
 
 ## Connections
 - **Why n ≥ 5.** For n = 4 it fails: K = {e, (1 2)(3 4), (1 3)(2 4), (1 4)(2 3)} is normal in A₄, as the kernel of the pair-partition map ([[§43 Simple Groups#^prop-43-10|§43.10]]), and (1 2 3), (1 3 2) are not conjugate in A₄ ([[§43 Simple Groups#^ex-43-1|Ex. §43.1]], [[§43 Simple Groups#^rem-43-7|Why n ≥ 5]]).

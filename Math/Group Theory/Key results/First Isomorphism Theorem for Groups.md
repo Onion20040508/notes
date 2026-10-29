@@ -27,7 +27,7 @@ tags: [group-theory, hub]
 - [[§48 Solvable Groups#^prop-48-2|Proposition §48.2: Subgroups of Solvable Groups Are Solvable]]
 - [[§48 Solvable Groups#^prop-48-4|Proposition §48.4: Subquotients: An Injection and a Surjection]]
 - [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-3|Lemma §50.3: Finite Groups Have Composition Series]]
-- [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-7|Proposition §50.7: Horizontal Edges Propagate]]
+- [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|Proposition §50.8: Horizontal Edges Propagate]]
 - [[§54 Simple Groups of Small Order#^prop-54-4|Proposition §54.4: The Conjugation Homomorphism G → S_n_p]]
 - [[§54 Simple Groups of Small Order#^lem-54-5|Lemma §54.5: Homomorphisms That Leave A_N]]
 

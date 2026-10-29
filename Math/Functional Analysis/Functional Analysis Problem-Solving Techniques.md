@@ -361,6 +361,31 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t25
 
 > [!example] Example T25: Application (Lecture 15)
-> The Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-2|§40.2]]): the $n$-th ball avoids $\overline{E}_1, \ldots, \overline{E}_n$, by Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]].
+> The Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-2|§40.2]]): the $n$-th ball avoids $\overline{E}_n$, by Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]], and lies inside all earlier balls.
 
 ^ex-t25
+
+## Technique 26: Approximate, Correct, Sum a Geometric Series
+
+> [!remark] Remark: Strategy
+> When one only knows that a target can be approximated (it lies in a *closure*), but needs it to be attained exactly, approximate it, then approximate the error at a smaller scale, and so on, with scales shrinking geometrically ($3^{-j}$). The corrections $x_j$ then have $\sum \|x_j\| < \infty$, so their sum converges in a Banach space, and continuity carries the approximations to an exact equality. The price is a fixed loss in the constants (here $\delta$ versus $3\delta$).
+
+^rem-t26
+
+> [!example] Example T26: Application (Lecture 16)
+> Removing the closure in Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]: from $B(0, 3\delta) \subset \overline{M(B(0,1))}$ to $B(0, \delta) \subset M(B(0,1))$.
+
+^ex-t26
+
+## Technique 27: Compare Two Complete Norms
+
+> [!remark] Remark: Strategy
+> To prove that a linear map $M$ is bounded, or that two norms are equivalent, build a second norm on the same space — typically the graph norm $\|x\| + \|Mx\|$ — that dominates the given one, show it is complete, and invoke the equivalent norm theorem: two comparable complete norms are equivalent. Conversely, to show a norm is *not* complete, exhibit a complete norm that is strictly stronger.
+
+^rem-t27
+
+> [!example] Example T27: Applications (Lecture 16)
+> - The closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
+> - $C^1[a,b]$ is not complete in the maximum norm (Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]]).
+
+^ex-t27
