@@ -112,3 +112,7 @@ tags: [topology, math590]
 
 ![[m590-10-1.svg]]
 *Each vertical line is one factor of $\mathbb{R}^\omega$ and the blue segments are the $U_n$ (open endpoints hollow). The red dots are the point $f(t) = (t, t, \ldots)$. Left: a product basis element restricts only finitely many factors (here $n = 1, 2$), so $f(t)$ lies in it for all $|t| < \tfrac12$ and the preimage contains an interval. Right: the box set $U = \prod (-\tfrac1n, \tfrac1n)$ restricts every factor. Whatever $t \neq 0$ is, the intervals eventually shrink below height $t$ ($n \ge 3$ in the drawing), so $f^{-1}(U) = \{0\}$.*
+
+![[m590-10-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* $t$ runs from $0.8$ down to $0.012$ and back; the red dots are the coordinates of $f(t) = (t, t, \ldots)$ in the factors $n = 1, \ldots, 100$ (logarithmic $n$-axis; heights on a square-root scale, which keeps the order of $t$ and $\tfrac1n$). Left: the product basis element restricts only the factors $1$ and $2$, so $f(t)$ lies in it once $|t| < \tfrac12$. Right: the box set $U$ restricts every factor, and for every $t \neq 0$ the coordinates with $n \ge 1/t$ fall outside (hollow), so $f(t) \notin U$ and $f^{-1}(U) = \{0\}$.

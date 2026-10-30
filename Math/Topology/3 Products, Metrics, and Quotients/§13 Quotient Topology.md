@@ -161,6 +161,10 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 ![[m590-12-3.svg]]
 *Square to torus: the edges $x \times 0$ and $x \times 1$ (blue, single arrows) are glued to form one circle on the torus, and $0 \times y$ and $1 \times y$ (red, double arrows) are glued to form another. The arrows show the orientations that are matched. All four corners become the single black point where the two circles cross.*
 
+![[m590-12-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Example §13.3 in two steps: first the edges $x \times 0$ and $x \times 1$ (blue) are glued, which rolls the square into a cylinder; then its ends $0 \times y$ and $1 \times y$ (red) are glued, which bends it into the torus. The grid lines are carried along. At the end the blue edges form one circle, the red edges another, and the four corners (black) are the single point where they cross. (The square is drawn as a rectangle so that the torus is not degenerate; only the gluing matters.)
+
 > [!remark]- Connections
 > - The quotient map to $S^1 \times S^1$ is justified in [[§13 Quotient Topology#^ex-13-6|Example §13.6: The Square-to-Torus Quotient Map]].
 > - The same square in 250, where it gives the Euler characteristic of the torus, 1 − 2 + 1 = 0: [[§25 Surfaces and the Euler Characteristic#^ex-25-3|250 Ex. §25.3]], method 3.

@@ -256,6 +256,10 @@ tags: [topology, math590]
 
 ^rem-39-6
 
+![[m590-29-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The 2-cell principle. Left: on the square model of $T^2$, the straight-line homotopy from the path along the bottom and then the right edge ($a \ast b$) to the path along the left and then the top edge ($b \ast a$); the orange region is the part of the 2-cell swept so far. Halfway, the path is the diagonal through the center $q$, so with $q$ removed (Example §39.4) this sweep is blocked. Right: the same loops on the torus (dotted where they run behind).
+
 > [!remark]- Connections
 > - Relations make groups smaller: [[§27 Free Groups and Presentations#^rem-27-12|The Hierarchy of Relations]].
 

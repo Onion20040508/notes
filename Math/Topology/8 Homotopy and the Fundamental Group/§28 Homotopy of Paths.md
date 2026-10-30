@@ -124,6 +124,10 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ![[m590-22-2.svg]]
 *A path homotopy $F: I \times I \to X$. The bottom edge of the square goes to $f$ and the top edge to $f'$ (blue); the left and right edges are crushed to $x_0$ and $x_1$. Each horizontal slice at height $t$ (red) is an intermediate path $F(\cdot,t)$ from $x_0$ to $x_1$, one frame of the movie; the dashed slices are two more frames.*
 
+![[m590-22-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Each horizontal slice of $I \times I$ is one frame of the movie: as $t$ runs from $0$ to $1$, the red slice rises and the path $F(\cdot,t)$ moves from $f$ to $f'$, while the left and right edges, crushed to $x_0$ and $x_1$, keep both endpoints pinned. Here $F(\cdot,t)$ is a cubic Bézier curve whose control points move linearly in $t$; the dashed and red curves of the figure are $t = \tfrac14, \tfrac12, \tfrac34$.
+
 ## Homotopy is an Equivalence Relation
 
 > [!theorem] Lemma §28.3
@@ -344,6 +348,10 @@ The following theorem shows that the product of path homotopy classes satisfies 
 ![[m590-22-5.svg]]
 *The inverse homotopy $f \ast  \bar f \simeq_p e_{x_0}$. On the square, the slice at height $t$ runs $f(2s)$ out to $f(1-t)$, pauses there across the red triangle, then comes back along $f(2-2s)$. In $X$ (right) that slice traces only the red initial arc of $f$, out to $f(1-t)$ and back. As $t \to 1$ the arc shrinks to $x_0$ and the slice becomes $e_{x_0}$.*
 
+![[m590-22-a2.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The inverse homotopy from the proof of (3), $t$ from $0$ to $1$ and back. Left: the slice at height $t$ runs $f(2s)$ (blue), pauses at $f(1-t)$ (red), then runs $f(2-2s)$ (blue). Right: in $X$ the slice goes out along $f$ only as far as $f(1-t)$ and comes back, so the red excursion shrinks until at $t = 1$ it is the constant path $e_{x_0}$.
+
 > [!proof]+ Proof of (3): Inverse — $\bar{f} * f \simeq_p e_{x_1}$
 > Define $H: I \times I \to X$ by:
 >
@@ -376,6 +384,10 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 ![[m590-22-4.svg]]
 *The associativity homotopy drawn on its domain $I \times I$. The slice at height $t$ is cut at $s = (t+1)/4$ and $s = (t+2)/4$: it runs $f$ on the left piece, $g$ on the middle (red) and $h$ on the right. The bottom slice is the schedule of $(f\ast g)\ast h$, the top slice that of $f\ast (g\ast h)$. The red band has constant width $\tfrac14$, so only $f$ and $h$ trade time; the left edge stays at $x_0$ and the right edge at $x_3$.*
+
+![[m590-22-a3.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* What the associativity homotopy compares: the same route $f$, $g$, $h$ (blue, red, orange) run on one clock $s$ with the two schedules. The hollow runner follows $(f \ast g) \ast h$ (breakpoints $\tfrac14$, $\tfrac12$): fast through $f$ and $g$, slow on $h$. The filled runner follows $f \ast (g \ast h)$ (breakpoints $\tfrac12$, $\tfrac34$): slow on $f$, fast on $g$ and $h$. Both leave $x_0$ and reach $x_3$ together; $H$ moves the breakpoints to $\tfrac{t+1}{4}$, $\tfrac{t+2}{4}$ in between.
 
 > [!remark] Remark: What These Properties Mean
 > These three properties are exactly the group axioms for the operation $\ast$ on homotopy classes. For general paths (not loops), we don't quite have a group (the product $[f] \ast  [g]$ is only defined when the terminal point of $f$ equals the initial point of $g$—this is a *groupoid*). But if we restrict to **loops at a fixed basepoint $x_0$** (paths with $f(0) = f(1) = x_0$), then all products are defined, and we get a genuine group: the **fundamental group** $\pi_1(X, x_0)$ ([[§29 The Fundamental Group#^def-29-2|Definition §29.2]]).

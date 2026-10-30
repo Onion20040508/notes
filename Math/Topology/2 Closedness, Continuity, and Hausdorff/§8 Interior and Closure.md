@@ -156,6 +156,10 @@ tags: [topology, math590]
 ![[m590-7-2.svg]]
 *$B = \{\tfrac{n+1}{n}\} = \{2, \tfrac32, \tfrac43, \ldots\}$ (blue) piles up at $1$. Every neighborhood $(1-\varepsilon,1+\varepsilon)$ of $1$ (red) contains infinitely many points of $B$, so $1$ is a limit point even though $1\notin B$. A point like $\tfrac32$ is isolated: a small interval around it (blue) meets $B$ only in $\tfrac32$. So $B' = \{1\}$ and $\overline{B} = B \cup \{1\}$.*
 
+![[m590-7-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* $\varepsilon$ shrinks from $0.7$ to $0.0015$ and back; each window is rescaled with $\varepsilon$, so the neighborhood (red) keeps its size on screen. Top: $(1-\varepsilon, 1+\varepsilon)$ always contains infinitely many points of $B$, all $\tfrac{n+1}{n}$ with $n > 1/\varepsilon$, so $1$ is a limit point. Bottom: once $\varepsilon \le \tfrac16$ (the distance from $\tfrac32$ to $\tfrac43$), the interval around $\tfrac32$ meets $B$ only in $\tfrac32$, so $\tfrac32$ is isolated.
+
 > [!example] Example §8.5
 > $A = (0,1)$: What are the limit points? Every point in $[0,1]$ is a limit point of $A$.
 

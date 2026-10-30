@@ -126,12 +126,24 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 
 ^pf-67-3
 
+![[m591-67-12.svg]]
+
+*(Not from lecture; figure added.)* Proposition [[§67 Integral Curves#^prop-67-3|§67.3]] in the tangent bundle, for $M = \mathbb{R}$, where $TM = \mathbb{R} \times \mathbb{R}$ is a plane: the base point horizontally, and the fibre $T_xM$, the velocities at $x$, as the vertical line over $x$. A vector field is a section $x \mapsto (x, \mathbf{X}_x)$, so its image is a graph, which meets each fibre exactly once, and the lift of an integral curve lies on it ($\tilde c = \mathbf{X} \circ c$, Proposition [[§67 Integral Curves#^prop-67-1|§67.1]]). The curve $c(t) = t^2 - 1$ passes through $0$ at $t = -1$, moving left, and at $t = 1$, moving right. Its lift $\tilde c(t) = (t^2 - 1, 2t)$ meets the fibre $T_0M$ in the two points $(0, -2)$ and $(0, 2)$, and no graph contains both. So $c$ is an integral curve of no vector field.
+
 > [!example] Example §67.1: A Curve with a Loop
 > Let $c : I \to M$ pass through the same point at two times, $c(t_1) = c(t_2)$, with different velocities $\dot c(t_1) \neq \dot c(t_2)$, as in the figure. Its lift $\tilde c$ is still a well-defined map: it records the time, not just the point. “But this cannot be an integral curve of anything” (Proposition [[§67 Integral Curves#^prop-67-3|§67.3]]).
 
 ^ex-67-1
 
 ![[m591-67-4.svg]]
+
+![[m591-67-13.svg]]
+
+*(Not from lecture; figure added.)* A loop in the tangent bundle: $c(t) = (t^2 - 1, t^3 - t)$ in $M = \mathbb{R}^2$ passes through the origin at $t = -1$ and at $t = 1$, with velocities $\dot c(\mp 1) = (\mp 2, 2)$. Here $TM = \mathbb{R}^2 \times \mathbb{R}^2$ is four-dimensional; the figure keeps the point $c(t)$ (the grey floor) and, as height, only the direction of $\dot c(t)$, its angle, forgetting the speed (the angle is unrolled: $\theta$ and $\theta + 2\pi$ are the same direction). Over the crossing point the lift passes at two heights, $135^\circ$ and $45^\circ$. In $TM$ the two visits are different points of the same fibre, and the lift does not cross itself; a vector field would put only one point in that fibre.
+
+![[m591-67-a3.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The same picture turning, so that its depth is visible: the grey loop lies in $M$, the blue lift lies over it at the height of the direction of $\dot c$, and the red dashed fibre over the crossing point meets the lift twice, at $135^\circ$ and $45^\circ$. Seen from the side, the two branches of the lift are clearly apart.
 
 *Simple and useful lemmas,* (Lecture 24) for any $\mathbf{X} \in \mathfrak{X}(M)$, “completely general.”
 

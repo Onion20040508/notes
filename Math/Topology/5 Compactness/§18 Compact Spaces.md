@@ -62,6 +62,10 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 ![[m590-15-1.svg]]
 *The cover $\{(\frac1n,1]\}$ of $(0,1]$ (gray) creeps toward $0$ but never reaches it: any finitely many members have union $(\frac1N,1]$ for the largest $N$ used, so a whole interval $(0,\frac1N]$ (red) stays uncovered. The missing endpoint $0$ is exactly what destroys compactness.*
 
+![[m590-15-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The members $(\tfrac1n, 1]$ of the cover (gray, open left ends hollow) are added one at a time, $n = 1, \ldots, 40$. The union of the first $N$ is $(\tfrac1N, 1]$ (blue), and $(0, \tfrac1N]$ (red) is still uncovered. It shrinks but never disappears, so no finite subcollection covers $(0,1]$.
+
 > [!example] Example §18.4
 > $X = \{0\} \cup \{\frac{1}{n} \mid n \in \mathbb{Z}_+\} \subseteq \mathbb{R}$. $X$ is compact.
 

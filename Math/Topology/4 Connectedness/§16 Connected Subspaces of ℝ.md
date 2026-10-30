@@ -229,6 +229,10 @@ tags: [topology, math590]
 ![[m590-14-1.svg]]
 *The topologist's sine curve. $S$ (blue) is a continuous image of $(0,1]$, so it is connected. As $x \to 0^+$ it oscillates ever faster between $\pm1$ and accumulates on the whole segment $\{0\} \times [-1,1]$ (red), so $\overline{S} = S \cup \{0\} \times [-1,1]$ is connected. No path can travel from the red segment into $S$: it would have to pass through infinitely many oscillations of height $2$ in a finite parameter interval, which is incompatible with continuity.*
 
+![[m590-14-a1.gif|450]]
+
+*(Not from lecture; animation added, vault only.)* A would-be path along $S$ toward the red segment, $f(\tau) = (x(\tau), \sin(1/x(\tau)))$ with $x(\tau) = \tfrac12(1-\tau)$, for $\tau$ up to $0.988$. Top: the orange point on $S$. Bottom: its height against $\tau$, which oscillates between $\pm 1$ faster and faster as $\tau \to 1$ and has no limit, so no point of $\{0\} \times [-1,1]$ can be $f(1)$. Where the oscillations are finer than a pixel, the curve is drawn as the solid band it fills.
+
 > [!remark]- Connections
 > - The function sin(1/x) and its discontinuity at 0 (it oscillates between ±1 near 0): [[§17 Continuous Functions#^ex-17-5|451 Ex. §17.5]].
 

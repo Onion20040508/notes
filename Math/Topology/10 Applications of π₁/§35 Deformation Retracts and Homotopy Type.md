@@ -124,6 +124,10 @@ A [[§34 Retractions and Fixed Points#^prop-34-3|retraction]] gives $j_*$ inject
 ![[m590-26-12.svg]]
 *The doubly punctured plane deformation retracts onto the figure eight (left) and onto the theta space (right): points flow away from the punctures $p, q$ and in from far away onto the blue graph. So both graphs have $\pi_1 \cong F_2$ and the same homotopy type as $\mathbb{R}^2 \setminus \{p, q\}$, although neither graph is a deformation retract of the other.*
 
+![[m590-26-a3.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* Both deformation retractions of Example §35.5 at once, $H(x,t) = (1-t)x + t\,r(x)$, $t$ from $0$ to $1$ and back, with the grid carried along. The note gives no formula, so the retractions $r$ drawn here are one explicit choice. Figure eight: each half-plane is pushed onto its circle along rays from $p$ (or $q$), bent so that the whole vertical axis goes to the junction point. Theta space: points inside the circle are pushed from $p$ (or $q$) onto the boundary of their half-disk, points outside radially onto the circle. In both, the blue graph never moves and no point ever reaches $p$ or $q$.
+
 > [!example] Example §35.6: $S^n$ is a Deformation Retract of $\mathbb{R}^{n+1} \setminus \{0\}$
 > Via $H(x,t) = (1-t)x + tx/\|x\|$ (proved in [[§34 Retractions and Fixed Points#^thm-34-2|Theorem §34.2]]). So $\pi_1(\mathbb{R}^{n+1} \setminus \{0\}) \cong \pi_1(S^n)$.
 >
@@ -237,6 +241,10 @@ A [[§34 Retractions and Fixed Points#^prop-34-3|retraction]] gives $j_*$ inject
 
 ![[m590-26-13.svg]]
 *Step 4 on the square $[0, 2\pi]^2$: the red rays push every point away from the puncture $q = (\pi, \pi)$ onto the boundary, which stays fixed. After gluing (the two $a$ edges together, the two $b$ edges together, all four corners to one point) the boundary is the figure eight $a \vee b$. The orange loop $t$ around $q$ expands to the boundary word $aba^{-1}b^{-1}$ ([[§35 Deformation Retracts and Homotopy Type#^rem-35-8|the ungluing argument]]).*
+
+![[m590-26-a4.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* Step 4 on the square $[0, 2\pi]^2$: $\tilde F(x,t) = (1-t)x + t\,r(x)$ pushes every point away from $q$ along its ray while the boundary stays fixed, which is why $\tilde F$ respects the gluing and descends to the torus. The orange loop $t$ around $q$ is expanded onto the boundary; read counterclockwise from the corner it runs through $a$, $b$, $a^{-1}$, $b^{-1}$, the word $aba^{-1}b^{-1}$ of the ungluing argument below. (In the title, $t$ is the homotopy parameter of $\tilde F$.)
 
 > [!remark]- Connections
 > - $\pi_1$ of the figure eight: [[§39 The Seifert–van Kampen Theorem#^ex-39-2|π₁(S¹ ∨ S¹) ≅ ℤ ∗ ℤ]]. Used in [[§39 The Seifert–van Kampen Theorem#^ex-39-4|π₁(T²) ≅ ℤ × ℤ via van Kampen]].

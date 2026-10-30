@@ -170,6 +170,10 @@ tags: [topology, math590]
 ![[m590-24-3.svg]]
 *Why $p: \mathbb{R}_+ \to S^1$ is not a covering map. Over the same $U$ (red), the slices $V_1, V_2, \ldots$ are still full copies of $U$. But the bottom piece $V_0 = (0, \tfrac14)$ (orange) is cut off at $0$, because the dashed part $(-\tfrac14, 0]$ (with the hollow point $0$) is missing from $\mathbb{R}_+$. So $p(V_0)$ is only the orange quarter of $U$ just after $b_0$. A clockwise loop from $b_0$, lifted from $1$, would have to end at the missing point $0$.*
 
+![[m590-24-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The arc $U$ (red, a half-circle as in Theorem §31.2) moves once around $S^1$. Left, $E = \mathbb{R}$: $p^{-1}(U)$ is the stack of slices $V_n$, which slide along the helix, each a full copy of $U$, so $U$ is evenly covered in every position. Right, $E = \mathbb{R}_+$: whenever $U$ contains $b_0$, the piece at $0$ (orange) is cut off and $p$ maps it onto only the orange part of $U$, so that $U$ is not evenly covered.
+
 ## Restriction to Subspaces
 
 > [!theorem] Theorem §31.3: Covering Maps Restrict to Subspaces
@@ -221,6 +225,10 @@ tags: [topology, math590]
 
 ![[m590-24-4.svg]]
 *The covering $p \times p: \mathbb{R}^2 \to T^2$ wraps each unit square of the plane once around the torus. The fiber over the basepoint $(b_0, b_0)$ is the lattice $\mathbb{Z} \times \mathbb{Z}$ (black dots). The edge from $(0,0)$ to $(1,0)$ (red) maps to the loop $S^1 \times \{b_0\}$ around the hole. The edge from $(0,0)$ to $(0,1)$ (blue) maps to the loop $\{b_0\} \times S^1$ around the tube. These two loops are the generators of $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$.*
+
+![[m590-24-a2.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The straight path from $(0,0)$ to $(2,1)$ in $\mathbb{R}^2$ (left; the unit square it is crossing is shaded) and its image under $p \times p$ on the torus (right; dotted where it runs behind). The image winds twice around the hole, the direction of the red edge, and once around the tube, the direction of the blue edge. It is back at the basepoint only when the lift reaches the lattice point $(2,1)$, which records its class $(2,1) \in \mathbb{Z} \times \mathbb{Z}$.
 
 *Chain: earlier in [[§30 The Punctured Plane and the Torus|Chapter 8]] · later in [[§36 The Punctured Plane, the Figure Eight and the Torus|Chapter 10]] · [[Torus|all appearances]]*
 

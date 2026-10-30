@@ -21,6 +21,10 @@ tags: [topology, math590]
 
 ^def-38-1
 
+![[m590-28-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The definition in three steps. Equal colours mark antipodal pairs $\{x, -x\}$, i.e. single points of $P^2$. Every pair has a member in the closed upper hemisphere, so the lower hemisphere can be dropped; only the pairs on the equator (squares) keep both members. Flattening the upper hemisphere by $(x,y,z) \mapsto (x, y, (1-\lambda)z)$ gives the disk model of Example §39.5: $P^2$ is the disk whose antipodal boundary points are glued, the two boundary arcs both being $c$.
+
 > [!theorem] Theorem §38.1: $p: S^2 \to P^2$ is a Covering Map
 > The quotient map $p: S^2 \to P^2$ is a $2$-sheeted [[§31 Covering Spaces#^def-31-2|covering map]] (recall from [[§31 Covering Spaces#^def-31-5|§31]]: this means every fiber $p^{-1}(y)$ has exactly $2$ elements).
 
@@ -88,6 +92,10 @@ tags: [topology, math590]
 
 ![[m590-28-2.svg]]
 *Why the generator has order $2$. The first traversal of $g$ lifts to the half great circle from $x_0$ to $-x_0$ (solid red), which is not a loop in $S^2$, so $[g] \neq [e]$. The second traversal lifts to the antipodal half (dashed) and returns to $x_0$; together they form a full great circle, a loop in the simply connected $S^2$, so $[g]^2 = [e]$.*
+
+![[m590-28-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* First traversal of $g$: the lift runs along the half great circle from $x_0$ to $-x_0$. The hollow point is the antipode $-x$, the same point of $P^2$, so downstairs the path closes up while upstairs it does not, and $[g] \neq [e]$. Second traversal: the lift continues along the antipodal half (dashed, behind the sphere) back to $x_0$, so $g \ast g$ lifts to a full great circle. Since $S^2$ is simply connected, that loop contracts through smaller circles through $x_0$ with $x_0$ fixed, hence $[g]^2 = [e]$.
 
 ## Projective $n$-Space
 
@@ -174,6 +182,10 @@ tags: [topology, math590]
 
 ![[m590-28-3.svg]]
 *The figure eight $X = A \cup B$: the circles $A$ (blue, traversed by $f$) and $B$ (red, traversed by $g$) meet only at $x_0$. A basic neighborhood of $x_0$ (green, open ends hollow) contains a small open arc of each circle through $x_0$: the cross of Example §38.1.*
+
+![[m590-28-a3.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The wedge sum for $X = Y = S^1$: the two circles slide together until the basepoints $x_0$ and $y_0$ are identified, giving the figure eight $S^1 \vee S^1$. Then a basic neighborhood of the junction (green) grows: it has to contain an arc of each circle through the junction, the cross of Example §38.1.
 
 We cannot yet prove $\pi_1(X) \cong F_2$ (that requires the [[Seifert–van Kampen Theorem|Seifert-van Kampen theorem]], [[§39 The Seifert–van Kampen Theorem#^ex-39-2|Ex. §39.2]]). But using covering spaces, we can prove the key fact that $\pi_1(X)$ is **non-abelian**: $[f] \ast  [g] \neq [g] \ast  [f]$ for the generators.
 

@@ -114,6 +114,10 @@ tags: [topology, math590]
 ![[m590-24-5.svg]]
 *The lifts from Example §32.1 and the remark above, drawn as graphs $s \mapsto \tilde f(s) \in \mathbb{R}$. Every lift starts at $0$ and ends at an integer, which is a point of the fiber $p^{-1}(b_0) = \mathbb{Z}$, and that endpoint is the winding number. The wiggly lift $\tilde{f'}$ (red) wanders up and down but ends at $2$, just like $\tilde f(s) = 2s$ (blue), so $f \simeq_p f'$. Since $\tilde g$ ends at $3$, $g \not\simeq_p f$.*
 
+![[m590-24-a3.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The loops $f(s) = (\cos 4\pi s, \sin 4\pi s)$ (blue) and the wiggly $f'$ (red) run around $S^1$, and their lifts from $0$ run along the helix of $p$ (dashed: projection by $p$). Right: the lifts $\tilde f(s) = 2s$ and $\tilde{f'}(s) = 2s + 0.55\sin 3\pi s + 0.18\sin 8\pi s$ against $s$, at the heights of the floors $0, 1, 2$. $\tilde{f'}$ goes up and down, but both lifts end on the same floor $2 \in p^{-1}(b_0)$, so $f \simeq_p f'$.
+
 ## Path Lifting
 
 > [!theorem] Lemma §32.1: Path Lifting Lemma

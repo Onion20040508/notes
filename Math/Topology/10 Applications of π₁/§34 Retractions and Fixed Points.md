@@ -72,6 +72,10 @@ tags: [topology, math590]
 ![[m590-26-8.svg]]
 *The homotopy $H(x,t) = (1-t)x + t\,x/\|x\|$ slides every point along its own ray (red) to the blue unit sphere, from outside and from inside alike. Nothing ever reaches the removed origin, and points of $S^n$ never move, so $S^n$ is a [[§35 Deformation Retracts and Homotopy Type#^ex-35-6|deformation retract]] of $\mathbb{R}^{n+1} \setminus \{0\}$ (drawn for $n = 1$). Keeping only the outer arrows gives [[§35 Deformation Retracts and Homotopy Type#^ex-35-3|Example §35.3]].*
 
+![[m590-26-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The homotopy $H(x,t) = (1-t)x + t\,x/\|x\|$ on $\mathbb{R}^2 \setminus \{0\}$, $t$ from $0$ to $1$ and back. The grid is carried along its rays onto the blue circle, from inside and from outside; the red points follow two trajectories. All three conditions of a [[§35 Deformation Retracts and Homotopy Type#^def-35-1|deformation retraction]] can be seen: at $t = 0$ nothing has moved, at $t = 1$ everything lies on $S^1$, and points of $S^1$ never move.
+
 ## Retractions
 
 > [!definition] Definition §34.1: Retraction
@@ -296,6 +300,10 @@ tags: [topology, math590]
 
 ![[m590-26-10.svg]]
 *The ray construction. Starting at $f(x)$ and passing through $x$, the ray leaves $B^2$ at $r(x) = \gamma(t_0)$ (red). For a boundary point $y$ the exit point is $y$ itself ($t_0 = 1$), so $r$ fixes $S^1$. The construction needs only one thing: a direction $x - f(x) \neq 0$, i.e. no fixed point.*
+
+![[m590-26-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The ray construction for a concrete map, $f(x) = \tfrac12 Jx + (0.25, 0.1)$ with $J$ the rotation by $90^\circ$; it maps $B^2$ into itself and has the fixed point $x^\ast = (0.16, 0.18)$ (star). For twelve points $x$ of a loop (dots) the squares are the exit points $r(x)$, and one ray from $f(x)$ through $x$ is drawn in red. At $\lambda = 0$ the loop is $S^1$ and $r(x) = x$. As the loop $(1-\lambda)S^1 + \lambda x^\ast$ shrinks toward $x^\ast$, its image under $r$ still runs once around $S^1$, in the same order of colours, so $r$ cannot be extended continuously to $x^\ast$, where $x - f(x) = 0$. A fixed point is exactly what keeps $r$ from being a retraction.
 
 > [!remark] Remark
 > The Brouwer fixed point theorem is a purely existential result—it tells you a fixed point exists but gives no method for finding it. The proof illustrates the power of algebraic topology: the computation $\pi_1(S^1) \cong \mathbb{Z} \neq 0$ ([[Fundamental Group of the Circle|§32.5]]) (which took real work via [[§31 Covering Spaces|covering spaces]]) has a concrete geometric consequence about maps of the disk to itself.

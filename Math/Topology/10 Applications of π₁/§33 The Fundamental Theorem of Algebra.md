@@ -74,6 +74,10 @@ tags: [topology, math590]
 ![[m590-25-1.svg]]
 *Step 3 for $p(z) = z^3 + 0.6z$ ($n = 3$, $\sum|a_i| = 0.6$). If $p$ had no root in the blue disk $B^2$, the red loop $h = p|_{S^1}$ would extend over $B^2$ inside $\mathbb{R}^2 \setminus \{0\}$ and so be nullhomotopic. But $F(z,t) = z^3 + t \cdot 0.6z$ (gray: $t = \tfrac12$) slides the blue loop $g(z) = z^3$, which winds three times around $0$, onto $h$ without entering the gray disk $|w| < 1 - \sum|a_i| = 0.4$. So $h \simeq g$ also winds three times around $0$ and is not nullhomotopic, so $p$ must vanish somewhere in $B^2$ (here at $z = 0$).*
 
+![[m590-25-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The homotopy $F(z,t) = z^3 + t\cdot 0.6z$ on $S^1$, $t$ from $0$ to $1$ and back: the blue loop $g(z) = z^3$ slides onto the red loop $h = p|_{S^1}$. The black segment marks the point of the loop closest to $0$; its length $\min_{|z|=1}|F(z,t)|$ never drops below $1 - 0.6 = 0.4$, so the loop never enters the gray disk and $F$ is a homotopy in $\mathbb{R}^2 \setminus \{0\}$. It touches the edge of the disk only at $t = 1$, at $z = \pm i$.
+
 > [!remark] Remark
 > This proof is remarkable: a theorem about *algebra* (roots of polynomials) is proved using *topology* ($\pi_1(S^1) \cong \mathbb{Z}$ and the nullhomotopy characterization). The key ingredients are:
 > - $\pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle|§32.5]]) (the power map $z^n$ induces multiplication by $n$, which is injective).
