@@ -86,8 +86,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§64 Parametric Transversality\|§64]] Parametric transversality | Chapter 6, *The Transversality Homotopy Theorem* (Theorem 6.35) |
 | [[§65 The Whitney Embedding Theorem\|§65]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
 | [[§66 Partitions of Unity\|§66]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60; Chapter 2, *Applications of Partitions of Unity* (Proposition 2.28) |
-| [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* (Example 9.1, (9.1), Example 9.10); Appendix D (Theorem D.1) |
-| [[§68 Flows\|§68]] Flows | Chapter 9, *Flows* (Theorem 9.12) |
+| [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* (Example 9.1, (9.1), Proposition 9.2, Lemmas 9.3 and 9.4, Proposition 9.6, Example 9.10); Appendix D (Theorem D.1); Problem 9-1 |
+| [[§68 Flows\|§68]] Flows | Chapter 9, *Flows* (Theorem 9.12); *Complete Vector Fields* (Lemma 9.15, Corollary 9.17, Theorem 9.18) |
 
 ## A.4 Index from Lee to these notes
 
@@ -202,8 +202,12 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 8.44 | [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1\|Lem. §61.1]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2\|Prop. §61.2]] |
 | Theorem 8.46 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
 | Example 9.1 | [[§67 Integral Curves#^ex-67-1\|Ex. §67.1]] |
+| Proposition 9.2 | [[§67 Integral Curves#^thm-67-4\|Thm. §67.4]] |
+| Lemma 9.3 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]] |
+| Lemma 9.4 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]] |
 | Example 9.10 | [[§67 Integral Curves#^ex-67-2\|Ex. §67.2]] |
-| Theorem 9.12 | [[§68 Flows#^thm-68-1\|Thm. §68.1]] |
+| Theorem 9.12 | [[§67 Integral Curves#^prop-67-6\|Prop. §67.6]], [[§68 Flows#^thm-68-1\|Thm. §68.1]], [[§68 Flows#^def-68-1\|Def. §68.1]], [[§68 Flows#^prop-68-2\|Prop. §68.2]] |
+| Lemma 9.15 | [[§68 Flows#^lem-68-3\|Lem. §68.3]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
@@ -252,4 +256,4 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem C.34 | [[§35 Local Diffeomorphisms#^thm-35-1\|Thm. §35.1]] |
 | Example C.37 | [[§30 The Differential in Coordinates#^ex-30-1\|Ex. §30.1]] |
 | Theorem C.40 | [[§7 The Regular Value Theorem#^thm-7-1\|Thm. §7.1]], [[§7 The Regular Value Theorem#^cor-7-2\|Cor. §7.2]] |
-| Theorem D.1 | [[§67 Integral Curves#^thm-67-3\|Thm. §67.3]] |
+| Theorem D.1 | [[§67 Integral Curves#^thm-67-3\|Thm. §67.3]], [[§67 Integral Curves#^thm-67-4\|Thm. §67.4]] |

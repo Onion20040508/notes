@@ -45,7 +45,7 @@ In this chapter curves are mostly called $c : I \to M$, with velocity $\dot c(t)
 > *Smooth.* Let $t_0 \in I$ and $(U, \varphi = (x^1, \ldots , x^m))$ a chart at $c(t_0)$; on the open interval $I_0 = c^{-1}(U) \ni t_0$, $\dot c$ takes values in $TU$. In the chart $\tilde\varphi$ of $TM$ over $U$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]), whose last $m$ entries are the components in the coordinate basis, Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-2|§31.2]] gives
 >
 > $$
-> \tilde\varphi\big(\dot c(t)\big) = \Big(x^1(c(t)), \ldots , x^m(c(t)),\ (x^1 \circ c)'(t), \ldots , (x^m \circ c)'(t)\Big), \qquad t \in I_0 ,
+> \tilde\varphi\big(\dot c(t)\big) = \Big(x^1(c(t)), … , x^m(c(t)),\ (x^1 \circ c)'(t), … , (x^m \circ c)'(t)\Big), \qquad t \in I_0 ,
 > $$
 >
 > smooth in $t$ because each $x^j \circ c$ is a smooth real function. So $\dot c$ is smooth near every $t_0$.
@@ -62,7 +62,7 @@ So an integral curve is a curve whose velocity curve in $TM$ is the field read a
 > Let $M \subseteq \mathbb{R}^m$ be open, with coordinates $x^1, \ldots , x^m$, and $\mathbf{X} = \sum_i f^i\, \partial/\partial x^i$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]). Write a smooth curve as $c(t) = (x^1(t), \ldots , x^m(t))$, with velocity $\dot c(t) = \langle \dot x^1(t), \ldots , \dot x^m(t) \rangle$. Then $c$ is an integral curve of $\mathbf{X}$ if and only if
 >
 > $$
-> \dot x^i(t) = f^i\big(x^1(t), \ldots , x^m(t)\big) \qquad \text{for all } i = 1, \ldots , m \text{ and all } t \in I .
+> \dot x^i(t) = f^i\big(x^1(t), … , x^m(t)\big) \qquad \text{for all } i = 1, … , m \text{ and all } t \in I .
 > $$
 >
 > The same holds on any manifold, in any chart, with the $x^i(t)$ the coordinates of $c(t)$.
@@ -196,4 +196,189 @@ Items (1) and (2) together are *existence*: every $q \in U$ has an integral curv
 
 ![[m591-67-3.svg]]
 
-The integral curves lie on horizontal lines. Starting at $q$ the point moves to the right for $t > 0$, and the velocity $y_0x^2$ grows quadratically in $x$: “the particle just gets to infinity in finite time, beating everybody else.” Backwards in time the point moves against the arrows, towards the $y$-axis, where the field vanishes: “it gets stuck,” but there is no blowing up. The escape time $1/(x_0y_0)$ depends on the initial condition, through the hyperbola $xy = 1/T$ on which it lies. So, by inspection, not all integral curves are defined for all time — “and that makes life complicated.” (The curve does not continue past $T$, even inside $\mathbb{R}^2$: its $x$-coordinate is unbounded. No other integral curve from $q$ does either, by uniqueness on the whole common domain: two integral curves starting at $q$ agree wherever both are defined (Theorem [[§68 Flows#^thm-68-1|§68.1]](1); Lee, Theorem D.4). The uniqueness in Theorem [[§67 Integral Curves#^thm-67-3|§67.3]] alone gives this only for $|t| < \varepsilon$.)
+The integral curves lie on horizontal lines. Starting at $q$ the point moves to the right for $t > 0$, and the velocity $y_0x^2$ grows quadratically in $x$: “the particle just gets to infinity in finite time, beating everybody else.” Backwards in time the point moves against the arrows, towards the $y$-axis, where the field vanishes: “it gets stuck,” but there is no blowing up. The escape time $1/(x_0y_0)$ depends on the initial condition, through the hyperbola $xy = 1/T$ on which it lies. So, by inspection, not all integral curves are defined for all time — “and that makes life complicated.” (The curve does not continue past $T$, even inside $\mathbb{R}^2$: its $x$-coordinate is unbounded. No other integral curve from $q$ does either, by uniqueness on the whole common domain: two integral curves starting at $q$ agree wherever both are defined (Proposition [[§67 Integral Curves#^prop-67-6|§67.6]]; Lee, Theorem D.4). The uniqueness in Theorem [[§67 Integral Curves#^thm-67-3|§67.3]] alone gives this only for $|t| < \varepsilon$.)
+
+## Local Theory on a Manifold
+
+*Lecture 24. The definition again, then the local theorem on a manifold, two “simple and useful lemmas”, and uniqueness on the whole common domain: “the deep — meaning foundational — theory of the subject.”*
+
+*The definition, recalled.* $c : I \to M$ is an integral curve of $\mathbf{X}$ if $\dot c(t) = \mathbf{X}_{c(t)}$ for all $t \in I$, where $\dot c(t) = c_{\ast t}(d/dt)$, “in a fancy way”: “the derivation at $c(t)$ defined by $c$” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]). “To any curve $c : I \to M$ one can naturally associate a lift” to the tangent bundle,
+
+$$
+\tilde c(t) = \big(c(t), \dot c(t)\big),
+$$
+
+![[m591-67-11.svg]]
+
+the velocity curve of Proposition [[§67 Integral Curves#^prop-67-1|§67.1]], written there $\dot c$. It exists for every smooth curve, injective or not. The integral-curve condition says that the lift is the field along the curve: $\tilde c = \mathbf{X} \circ c$.
+
+![[m591-67-4.svg]]
+
+If $c$ runs through the same point at two times, $c(t_1) = c(t_2)$, with different velocities $\dot c(t_1) \neq \dot c(t_2)$, the lift is still a well-defined map: it records the time, not just the point. “But this cannot be an integral curve of anything.” At $c(t_1) = c(t_2)$ the velocity would have to equal the value of the field there, and “the field is single-valued at each point.”
+
+A student asked whether, then, an integral curve has to be injective. “We're about to prove something related … except if it's constant”: at a zero of $\mathbf{X}$ the constant curve is an integral curve. *(Filled in.)* Constant curves are not the only exception. The circles of the rotation field (Example [[§67 Integral Curves#^ex-67-1|§67.1]]) are integral curves that return to the same point with the same velocity, every $2\pi$. The “something related” is Proposition [[§67 Integral Curves#^prop-67-6|§67.6]] below. With it, Lee shows that a maximal integral curve is exactly one of: constant, injective, or periodic and nonconstant (Lee, Problem 9-1).
+
+![[m591-67-5.svg]]
+
+*(Not from lecture; figure added.)* The three kinds of maximal integral curve (Lee, Problem 9-1). An integral curve that comes back to a point comes back with the same velocity, the value of the field there; by Proposition [[§67 Integral Curves#^prop-67-6|§67.6]] below it then repeats itself. The loop of the previous figure, which comes back with a different velocity, is none of the three: it is not an integral curve.
+
+> [!example] Example §67.3: Running Off the Edge
+> Let $M = (-\infty, 0)$ and $\mathbf{X} = \dfrac{d}{dx}$. The integral curves solve $\dot c(t) = 1$, so the integral curve starting at $x_0$ is
+>
+> $$
+> \varphi_t(x_0) = x_0 + t ,
+> $$
+>
+> translation by time $t$, with $\varphi_t(x_0)|_{t=0} = x_0$. It stays in $M$ exactly while $x_0 + t < 0$. So for every $x_0 \in (-\infty, 0)$ the maximal domain in $t$ is
+>
+> $$
+> \{ t : x_0 + t < 0 \} = (-\infty, -x_0) .
+> $$
+
+^ex-67-3
+
+![[m591-67-6.svg]]
+
+*(Not from lecture; figure added.)* The field $d/dx$ on $M = (-\infty, 0)$ and the integral curve from $x_0$, which reaches the end $0$ of $M$ at time $-x_0$.
+
+“A much easier example” than Example [[§67 Integral Curves#^ex-67-2|§67.2]] of integral curves not defined for all $t$. Here the curve does not run to infinity; it runs into the end of the manifold: “we cannot go beyond that because there's the abyss instead of the nothingness.” Again the domain depends on the initial condition. “Another example of this complication that makes the theory much longer than it would be otherwise.”
+
+The Euclidean theorem (Theorem [[§67 Integral Curves#^thm-67-3|§67.3]]) is “Theorem D.1 in Lee, with proof. I will forever be amazed by how much [Lee] was able to put in his book.” Its manifold version “follows immediately from the Euclidean version.”
+
+> [!theorem] Theorem §67.4: Local Existence and Uniqueness on a Manifold
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There are $\varepsilon > 0$, an open neighbourhood $U$ of $p$, and a map
+>
+> $$
+> \varphi : (-\varepsilon, \varepsilon) \times U \longrightarrow M
+> $$
+>
+> such that
+>
+> 1. $\varphi(0, q) = q$ for every $q \in U$;
+> 2. for every $q \in U$, the curve $(-\varepsilon, \varepsilon) \to M$, $t \mapsto \varphi_t(q)$, is an integral curve of $\mathbf{X}$;
+> 3. *(local uniqueness)* if $c : (-\delta, \delta) \to M$ is any integral curve with $c(0) = q$ for some $q \in U$, then $c(t) = \varphi_t(q)$ for all $t \in (-\varepsilon, \varepsilon) \cap (-\delta, \delta)$.
+>
+> Moreover, $\varphi$ is smooth.
+>
+> *Lee: Proposition 9.2; Theorem D.1*
+
+^thm-67-4
+
+In (3) “these domains don't have to be symmetric”: the same holds for an integral curve $c : I \to M$ on any open interval $I \ni 0$, on $I \cap (-\varepsilon, \varepsilon)$; the proof below does it in that form. By (3), “there's only one map like that.”
+
+> [!proof]+ Proof
+> *(Lecture 24: “use a chart at $p$, and then push forward … push this thing down here. Now we have the theorem at the level of open sets in Euclidean space, and we just push it up again.” The chart is called $\psi$, since $\varphi$ is the flow — “which is why Lee uses $\theta$.” The details are filled in.)* When $M$ is an open set in $\mathbb{R}^m$ this is Theorem [[§67 Integral Curves#^thm-67-3|§67.3]]. In general, take a chart $\psi : W \to \psi(W) \subseteq \mathbb{R}^m$ at $p$. It is a diffeomorphism of the open submanifold $W$ onto the open set $\psi(W)$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), so the field $\mathbf{X}|_W$ has a pushforward $\mathbf{Y} = \psi_\ast\mathbf{X} \in \mathfrak{X}(\psi(W))$ (Definition [[§59 Related Vector Fields#^def-59-1|§59.1]], Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]).
+>
+> *The check: $c : I \to W$ is an integral curve of $\mathbf{X}$ if and only if $\psi \circ c$ is an integral curve of $\mathbf{Y}$.* By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), the velocity of $\psi \circ c$ at $t$ is $(\psi \circ c)_{\ast t}(d/dt) = d\psi_{c(t)}\big(c_{\ast t}(d/dt)\big) = d\psi_{c(t)}\big(\dot c(t)\big)$, and by definition $\mathbf{Y}_{\psi(c(t))} = d\psi_{c(t)}\big(\mathbf{X}_{c(t)}\big)$. Since $d\psi_{c(t)}$ is injective, the two right-hand sides agree exactly when $\dot c(t) = \mathbf{X}_{c(t)}$. “This is a kind of naturality that I will come back to, because this is very general.” (Lee, Proposition 9.6: a smooth $F$ takes integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ for all integral curves exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.)
+>
+> *Push down, solve, push up.* Theorem [[§67 Integral Curves#^thm-67-3|§67.3]], for $\mathbf{Y}$ on $\psi(W)$ at $\psi(p)$, gives $\varepsilon > 0$, an open $U' \ni \psi(p)$ and a smooth $\varphi' : (-\varepsilon, \varepsilon) \times U' \to \psi(W)$. Put $U = \psi^{-1}(U')$ and
+>
+> $$
+> \varphi(t, q) = \psi^{-1}\big(\varphi'(t, \psi(q))\big) \in W .
+> $$
+>
+> $\varphi$ is smooth, as a composite of smooth maps, and $\varphi(0, q) = \psi^{-1}(\psi(q)) = q$. For $q \in U$ the curve $t \mapsto \varphi'(t, \psi(q))$ is an integral curve of $\mathbf{Y}$ in $\psi(W)$, so by the check, applied to $c = \varphi(\cdot, q)$ (for which $\psi \circ c = \varphi'(\cdot, \psi(q))$), $t \mapsto \varphi_t(q)$ is an integral curve of $\mathbf{X}$. This gives (1) and (2).
+>
+> *Uniqueness.* The one point beyond pushing down is that an integral curve $c$ of $\mathbf{X}$ might leave $W$, where the chart says nothing. Let $c : I \to M$ be an integral curve, $I \ni 0$ an open interval, $c(0) = q \in U$, and let $J = I \cap (-\varepsilon, \varepsilon)$. The set $c^{-1}(W) \cap J$ is open and contains $0$; let $J_0$ be the open interval that is its connected component containing $0$. On $J_0$, $\psi \circ c$ is an integral curve of $\mathbf{Y}$ starting at $\psi(q)$ (the check), so Theorem [[§67 Integral Curves#^thm-67-3|§67.3]](3) gives $\psi(c(t)) = \varphi'(t, \psi(q))$, that is, $c(t) = \varphi(t, q)$, for $t \in J_0$. Suppose $J_0 \neq J$, say $b = \sup J_0 < \sup J$ (the left end is handled the same way). Then $b \in J$, and by continuity $c(b) = \lim_{t \to b^-} \varphi(t, q) = \varphi(b, q)$, which lies in $W$. So $b \in c^{-1}(W) \cap J$, an open set; an interval around $b$ lies in it, and the component $J_0$ would contain $b$ and points beyond it, contradicting $b = \sup J_0$. Hence $J_0 = J$, and $c(t) = \varphi_t(q)$ on all of $I \cap (-\varepsilon, \varepsilon)$: this is (3).
+
+^pf-67-4
+
+*Uses:* [[§67 Integral Curves#^thm-67-3|§67.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§59 Related Vector Fields#^def-59-1|Def. §59.1]], [[§59 Related Vector Fields#^prop-59-2|§59.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+
+![[m591-67-7.svg]]
+
+*(Figure after the board.)* Upstairs, the field $\mathbf{X}$ on the chart domain $W$ and a curve $c$; downstairs, the pushed-forward field $\psi_\ast\mathbf{X}$ on $\psi(W)$ and the curve $\psi \circ c$.
+
+*Simple and useful lemmas,* for any $\mathbf{X} \in \mathfrak{X}(M)$, “completely general.”
+
+> [!theorem] Lemma §67.5: Translation and Rescaling
+> Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$.
+>
+> 1. *(Translation lemma.)* For $t_0 \in \mathbb{R}$, the curve $\tilde c(t) = c(t + t_0)$, defined on $I - t_0 = \{ t - t_0 : t \in I \}$, is an integral curve of $\mathbf{X}$.
+> 2. *(Rescaling.)* For $\lambda \in \mathbb{R}$, the curve $\tilde c(t) = c(\lambda t)$, defined on $\{ t : \lambda t \in I \}$, is an integral curve of $\lambda\mathbf{X}$.
+>
+> *Lee: Lemmas 9.3 and 9.4*
+
+^lem-67-5
+
+> [!proof]+ Proof
+> *(Lecture 24: “immediate by chain rule”; filled in.)* Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions of one variable:
+>
+> $$
+> \dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(t + t_0)\big) = (f \circ c)'(t + t_0) = \dot c(t + t_0)[f] = \mathbf{X}_{c(t + t_0)}[f] = \mathbf{X}_{\tilde c(t)}[f]
+> $$
+>
+> for (1), and for (2)
+>
+> $$
+> \dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(\lambda t)\big) = \lambda\, (f \circ c)'(\lambda t) = \lambda\, \dot c(\lambda t)[f] = \lambda\, \mathbf{X}_{c(\lambda t)}[f] = (\lambda\mathbf{X})_{\tilde c(t)}[f] .
+> $$
+>
+> Two tangent vectors at a point that agree on every germ are equal.
+
+^pf-67-5
+
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]]
+
+“You can always translate time. We're going to use it a lot.” Rescaling: “you can rescale a field pointwise by a fixed factor, and the integral curves of that are easily related to the integral curves of the original.” With $\lambda = -1$: the integral curves of $-\mathbf{X}$ are those of $\mathbf{X}$ run backwards.
+
+![[m591-67-8.svg]]
+
+*(Not from lecture; figure added.)* Both operations keep the image of the curve and change only the clock. Translation relabels the times, so the point reached at time $t_0$ by $c$ is reached at time $0$ by $\tilde c$; the arrow (the velocity) is unchanged. Rescaling by $\lambda = -1$ reverses the arrow, which is why $\tilde c$ follows $-\mathbf{X}$. (A general $\lambda$ also changes the speed by the factor $|\lambda|$.)
+
+“Now the core technical result that I want to prove today.”
+
+> [!theorem] Proposition §67.6: Uniqueness on the Common Domain
+> Let $\mathbf{X} \in \mathfrak{X}(M)$, and let $c_i : I_i \to M$, $i = 1, 2$, be integral curves of $\mathbf{X}$. If there is $t_0 \in I_1 \cap I_2$ with $c_1(t_0) = c_2(t_0)$, then
+>
+> $$
+> c_1|_{I_1 \cap I_2} = c_2|_{I_1 \cap I_2} .
+> $$
+>
+> *Lee: Theorem 9.12 (proof)*
+
+^prop-67-6
+
+“Suppose you have two integral curves that agree at some time $t_0$ … Then the conclusion is that they agree wherever they can.”
+
+> [!proof]+ Proof
+> *(Lecture 24. Details from the discussion in class are added where noted.)* *Reduction to $t_0 = 0$.* By the translation lemma (Lemma [[§67 Integral Curves#^lem-67-5|§67.5]](1)), $t \mapsto c_i(t + t_0)$ are integral curves on $I_i - t_0$ that agree at $0$, and the conclusion for them is the conclusion for the $c_i$. So assume $t_0 = 0$, and let $q = c_1(0) = c_2(0)$.
+>
+> *Local uniqueness.* By Theorem [[§67 Integral Curves#^thm-67-4|§67.4]](3) at $q$ (in the form for any open interval containing $0$), both $c_i$ equal $\varphi_\cdot(q)$ near $0$. So there is $\varepsilon > 0$ with $(-\varepsilon, \varepsilon) \subseteq I_1 \cap I_2$ and
+>
+> $$
+> c_1|_{(-\varepsilon, \varepsilon)} = c_2|_{(-\varepsilon, \varepsilon)} .
+> $$
+>
+> “The only thing is to extend this local uniqueness into global uniqueness.”
+>
+> *Argue by contradiction.* Introduce
+>
+> $$
+> \mathcal{T}_+ = \{ t \in I_1 \cap I_2 \cap (0, \infty) : c_1(t) \neq c_2(t) \} .
+> $$
+>
+> We want to show $\mathcal{T}_+ = \varnothing$. Assume $\mathcal{T}_+ \neq \varnothing$. It is bounded below by $\varepsilon$; let $\tau = \inf \mathcal{T}_+ \ge \varepsilon > 0$. *(Filled in: $\tau$ is in the domain.)* $I_1 \cap I_2$ is an interval containing $\varepsilon/2$ and some point of $\mathcal{T}_+ \ge \tau$, and $\varepsilon/2 < \tau$, so $\tau \in I_1 \cap I_2$. By the definition of the infimum, $c_1 = c_2$ on $(0, \tau)$.
+>
+> *Claim: $c_1(\tau) = c_2(\tau)$.* Again by contradiction. If $c_1(\tau) \neq c_2(\tau)$, since $M$ is Hausdorff (Definition [[§1 Point-Set Topology Review#^def-1-8|§1.8]]) there are neighbourhoods $U_i$ of $c_i(\tau)$ with $U_1 \cap U_2 = \varnothing$. By continuity of $c_1$ and $c_2$ there is an open interval $J \ni \tau$, inside $I_1 \cap I_2$ (which is open), with $c_i(J) \subseteq U_i$. So there is $\tau_1 \in J$ with $0 < \tau_1 < \tau$, and $c_1(\tau_1) \in U_1$, $c_2(\tau_1) \in U_2$, so $c_1(\tau_1) \neq c_2(\tau_1)$ and $\tau_1 \in \mathcal{T}_+$. This contradicts $\tau = \inf \mathcal{T}_+$. Hence $c_1(\tau) = c_2(\tau)$.
+>
+> *Local uniqueness at $\tau$.* “By the translation lemma, local uniqueness at $t = 0$ is equivalent to local uniqueness at any $\tau$”: apply the local-uniqueness step to the integral curves $c_i(\cdot + \tau)$, which agree at $0$. So there is $\delta > 0$ such that the curves agree on $(\tau - \delta, \tau + \delta)$. Together with $c_1 = c_2$ on $(0, \tau]$, they agree on $(0, \tau + \delta) \cap I_1 \cap I_2$, so every point of $\mathcal{T}_+$ is $\ge \tau + \delta$, and $\inf \mathcal{T}_+ \ge \tau + \delta > \tau$: a contradiction. So $\mathcal{T}_+ = \varnothing$.
+>
+> *Negative times.* “Of course you do the same thing for $\tau_-$ from the other side. You take the sup”: with $\mathcal{T}_- = \{ t \in I_1 \cap I_2 \cap (-\infty, 0) : c_1(t) \neq c_2(t) \}$ and $\sup \mathcal{T}_-$, or apply the above to $t \mapsto c_i(-t)$, integral curves of $-\mathbf{X}$ (Lemma [[§67 Integral Curves#^lem-67-5|§67.5]](2)). With $c_1(0) = c_2(0)$, the curves agree on all of $I_1 \cap I_2$.
+
+^pf-67-6
+
+*Uses:* [[§67 Integral Curves#^lem-67-5|§67.5]], [[§67 Integral Curves#^thm-67-4|§67.4]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
+
+![[m591-67-9.svg]]
+
+*(Figure after the board.)* The situation the claim rules out: the curves agree on $(0, \tau)$ and differ at $\tau$, with disjoint neighbourhoods $U_1, U_2$. “When you do elementary Euclidean geometry and argue by contradiction, every picture that you draw doesn't look contradictory, because the thing is true.” A student noted that the argument is “very similar” to the Euclidean one; Uribe agreed. On a manifold, the Hausdorff property is what makes the set where the curves agree closed. Another student asked how $J$ stays inside $I_1 \cap I_2$; it does because the domains are open intervals.
+
+> [!example] Example §67.4: The Euler Field
+> On $\mathbb{R}^2$ let $\mathbf{X} = x\, \dfrac{\partial}{\partial x} + y\, \dfrac{\partial}{\partial y}$. The integral curves solve $\dot x = x$, $\dot y = y$, so $\varphi_t(x_0, y_0) = e^t(x_0, y_0)$, $t \in \mathbb{R}$. For $(x_0, y_0) \neq 0$ the image is the open ray from the origin through $(x_0, y_0)$, since $e^t$ takes every value in $(0, \infty)$ and never $0$; at the origin the integral curve is constant.
+
+^ex-67-4
+
+![[m591-67-10.svg]]
+
+“If you go to Desmos or whatever, you see the integral curves of the Euler field … on $\mathbb{R}^2$ radial, like that, and they seem to intersect, but they don't.” The rays are open, and the origin is its own integral curve. The images of the integral curves $t \mapsto e^t(x_0, y_0)$, $t \in \mathbb{R}$, partition $\mathbb{R}^2$, as Proposition [[§67 Integral Curves#^prop-67-6|§67.6]] requires. *(Filled in.)* If two of them pass through a common point, $c_1(t_1) = c_2(t_2)$, then $t \mapsto c_2(t + t_2 - t_1)$ is an integral curve (Lemma [[§67 Integral Curves#^lem-67-5|§67.5]](1)) that agrees with $c_1$ at time $t_1$, so it equals $c_1$ on $\mathbb{R}$ (Proposition [[§67 Integral Curves#^prop-67-6|§67.6]]), and the two images coincide.

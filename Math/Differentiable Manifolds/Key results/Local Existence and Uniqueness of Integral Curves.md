@@ -14,7 +14,7 @@ tags: [differentiable-manifolds, hub]
 - (only definitions)
 
 ## Used in (Differentiable Manifolds)
-- (not cited later in the course)
+- [[§67 Integral Curves#^thm-67-4|Theorem §67.4: Local Existence and Uniqueness on a Manifold]]
 
 ## Connections
 - TODO

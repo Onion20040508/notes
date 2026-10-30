@@ -144,7 +144,9 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Existence of Partitions of Unity]] (§66.1)
 - [[Manifolds Are Paracompact]] (§66.4)
 - [[Local Existence and Uniqueness of Integral Curves]] (§67.3)
+- [[Uniqueness of Integral Curves]] (§67.6)
 - [[Fundamental Theorem on Flows]] (§68.1)
+- [[Uniform Time Lemma]] (§68.3)
 
 ## Summaries
 - [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]] (every homework problem broken into small questions) and [[Differentiable Manifolds Notes Drill]] (definitions, core proofs, class exercises, equivalences).

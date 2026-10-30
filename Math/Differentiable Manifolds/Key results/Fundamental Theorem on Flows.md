@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, hub]
 - [[§68 Flows#^thm-68-1|Theorem §68.1: Maximal Integral Curves and the Flow]], in [[§68 Flows]]
 
 ## Its proof uses
-- (only definitions)
+- [[§68 Flows#^prop-68-2|Proposition §68.2: The Maximal Integral Curve]]
 
 ## Used in (Differentiable Manifolds)
 - (not cited later in the course)
