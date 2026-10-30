@@ -41,6 +41,10 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 *(Not from lecture; animation added, vault only.)* The two pictures of the figure joined, in 3D, for the same field $c(\theta) = 0.55 + 0.35\sin\theta$. Each arrow $\mathbf{X}(p)$, tangent to the circle, turns up into its fibre $T_pS^1$, now vertical, so $TS^1$ becomes a cylinder and the arrow's length becomes a height; the tips form the section $\mathbf{X}(S^1)$ (green). Then the field changes (a family chosen for the picture): the section rises and falls with the arrows, and where it crosses the circle (the zero section) the field vanishes and the arrows flip (red).
 
+![[m591-44-a3.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The figure's two pictures side by side, with the field changing (the same family as above, starting from the figure's $c(\theta) = 0.55 + 0.35\sin\theta$). Left: arrows on $S^1$, those at $p_1, p_2, p_3$ in colour. Right: the flattened $TS^1$, the circle cut open at $(1, 0)$, each fibre a vertical line (the fibres over $p_1, p_2, p_3$ in colour), and the field as the section (black). Each coloured dot's height is the signed length of the arrow of the same colour. Where the section crosses the zero section (red rings), the arrows on the left vanish at the same points.
+
 > [!remark]- Connections
 > - Vector fields on open subsets of $\mathbb{R}^3$ in 452: [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §13]].
 > - Computational version: vector fields on regions of $\mathbb{R}^2$ and $\mathbb{R}^3$ in calculus, [[§125 Vector Fields#^def-125-1|Calc Def. §125.1]] and [[§125 Vector Fields#^def-125-2|Calc Def. §125.2]].
