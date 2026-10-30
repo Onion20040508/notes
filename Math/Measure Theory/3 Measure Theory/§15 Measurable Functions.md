@@ -52,6 +52,10 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 ![[m551-12-1.svg]]
 *The sets in [[§15 Measurable Functions#^def-15-2|Definition §15.2]] are horizontal slices: $\{f > c\}$ (red, on the $x$-axis) is where the graph lies strictly above the line $y = c$. For this continuous $f$ it is relatively open in $[a,b]$: hollow endpoints where $f = c$, a filled one at $b$ ([[§15 Measurable Functions#^ex-15-2|Example §15.2]]). For a general measurable $f$ it can be far wilder, but it must still be measurable.*
 
+![[m551-12-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $c$ moves up and down: $\{f > c\}$ (red, on the axis) is a finite union of open intervals for this continuous $f$, and its measure changes with $c$. Illustrated with $f(x) = 1.1 + 0.5\sin 3x + 0.3\sin(7x + 1)$.
+
 > [!remark] Remark: Geometric Interpretation
 > For a function $f: [a, b] \to \mathbb{R}$, the set $\{x \in [a, b] \mid c_1 < f(x) < c_2\}$ represents the portion of the domain where the graph lies between the horizontal lines $y = c_1$ and $y = c_2$. Measurability ensures that such “horizontal slices” of the domain are always measurable sets.
 

@@ -30,6 +30,10 @@ tags: [measure-theory, math551]
 ![[m551-16-1.svg]]
 *Truncation at height $k$: $f_k$ (blue) agrees with $f$ (gray) where $|f| \leq k$ and is clipped to $\pm k$ elsewhere, so $f_k$ is bounded and $|f_k| \leq |f|$. The red area is $\int_E |f - f_k|$; it sits over $\{|f| > k\}$ and tends to $0$ by the DCT with dominator $2|f|$. In [[§24 The L¹ Space and Density Theorems#^thm-24-2|Theorem §24.2]] the bounded part is small on small sets because $\int_e |f_k| \leq k\, m(e)$, and the red remainder is small everywhere.*
 
+![[m551-16-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The function of the figure truncated at $\pm k$ with $k$ rising from $0.3$ to $3.1$: the area $\int |f - f_k|$ (red) over $\{|f| > k\}$ shrinks to $0$.
+
 > [!theorem] Theorem §24.2: Absolute Continuity of the Integral
 > Let $f \in L(E)$, $E \in \mathcal{M}$, $E \subseteq \mathbb{R}^n$. Then for every $\varepsilon > 0$, there exists $\delta > 0$ such that for all $e \subseteq E$, $e \in \mathcal{M}$:
 >
@@ -255,6 +259,10 @@ Recall ([[§17 Simple Functions and Modes of Convergence#^def-17-2|Definition §
 
 ![[m551-16-3.svg]]
 *The case $n = 1$: the trapezoid $g$ (blue) is $0$ outside $(a - \varepsilon', b + \varepsilon')$, equal to $1$ on $(a + \varepsilon', b - \varepsilon')$, and linear in between, so it is continuous with compact support. It differs from $\chi_{(a,b)}$ (black; hollow dots mark the values not taken at $a$, $b$) only on the two transition intervals, of total length $4\varepsilon'$, and there by at most $1$ (red), so $\|\chi_{(a,b)} - g\|_1 \leq 4\varepsilon'$.*
+
+![[m551-16-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The trapezoid $g$ approximating $\chi_{[a, b]}$ with ramps of width $2\varepsilon'$, $\varepsilon'$ from $0.45$ to $0.01$: $\|\chi_{[a,b]} - g\|_1 = \varepsilon'$ goes to $0$ although $g$ stays continuous.
 
 > [!remark]- Connections
 > - Continuous functions are closed under uniform limits ([[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§17 Simple Functions and Modes of Convergence#^thm-17-4|§17.4]]), so the density holds only for the weaker $L^1$ distance (cf. [[§35 Lᵖ as a Banach Space#^rem-35-4|Rem. §19.4]]).

@@ -51,6 +51,10 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ![[m551-18-6.svg]]
 *The Cantor function $\varphi$ (blue). It is constant on every removed middle third (for example $\varphi = \frac12$ on $(\frac13, \frac23)$), so $\varphi' = 0$ off $C$. All of its growth happens over $C$: the second stage $C_2$ (red on the axis) consists of four intervals of total length $\frac49$, and over each of them $\varphi$ rises by $\frac14$ (red boxes), a total rise of $1$. At stage $n$ there are $2^n$ boxes of total width $(\frac23)^n \to 0$ and total height still $1$. This is the failure of absolute continuity in [[§31 Absolute Continuity#^rem-31-7|Rem. §18.7]].*
 
+![[m551-18-a6.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The piecewise linear $\varphi_n$ (blue; previous one dotted) on the Cantor stages $C_n$ (red, total length $(2/3)^n$): consecutive ones differ by at most $2^{-n}$, so they converge uniformly to the Cantor function, which is flat on every removed third and does all its growing on $C$.
+
 > [!remark]- Connections
 > - The Cantor set in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Remark §13.5]]; in this course: [[§14 The Vitali Set and the Cantor Set#^prop-14-7|Properties of the Cantor Set]] ([[§14 The Vitali Set and the Cantor Set#^prop-14-7|§14.7]]).
 > - $\varphi \in BV$ by [[§28 Differentiation Theory#^ex-28-2|Ex. §28.2]]; it is the singular part in [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-3|Lebesgue Decomposition]] ([[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-3|§32.3]]) and fails [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-6|AC Functions Map Null Sets to Null Sets]] ([[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-6|§32.6]]).

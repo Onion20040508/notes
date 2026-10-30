@@ -135,6 +135,10 @@ tags: [measure-theory, math551]
 ![[m551-18-1.svg]]
 *The Vitali covering argument. (a) The set $E$ (black) and a Vitali covering $\Gamma$ (blue; a genuine one has arbitrarily short intervals around every point of $E$). (b) Greedy selection: each new interval is disjoint from the earlier ones and longer than half of any remaining candidate, giving $I_1, I_2, I_3$. A point $x_0 \in E$ not covered by $I_1$ (take $n_0 = 1$) lies in some $J \in \Gamma$ (red, dashed) disjoint from $I_1$; here $J$ first meets $I_2$. (c) The selection rule gives $|J| \leq \delta_1 < 2|I_2|$, and an interval that meets $I_2$ and is shorter than $2|I_2|$ lies inside the $5\times$ dilation $\hat I_2$ (shaded). So the dilations $\hat I_j$, $j > n_0$, cover everything that $I_1, \dots, I_{n_0}$ miss, at total cost $5\sum_{j > n_0} |I_j|$.*
 
+![[m551-18-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* A finite stand-in for a Vitali covering of $E = [0, 1]$ (60 candidate intervals, one per row, sorted by length). Greedy selection: each step takes the longest candidate disjoint from those already chosen (red), and candidates meeting a chosen one fade. Then the $5\times$ enlargements of the chosen intervals (orange) cover $E$: every candidate meets a chosen interval at least half its length, and so lies in that interval's enlargement.
+
 > [!remark]- Connections
 > - Used twice in [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]] ([[§29 Lebesgue's Differentiation Theorem#^thm-29-1|§29.1]]) and once in [[§31 Absolute Continuity#^thm-31-4|Theorem §31.4]] (non-constant functions with zero derivative).
 > - Compare the compactness arguments of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] ([[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]]): there a finite subcover, here finitely many *disjoint* intervals covering all but a small set.
@@ -203,6 +207,10 @@ tags: [measure-theory, math551]
 
 ![[m551-18-3.svg]]
 *$f(x) = \sqrt{x}\,\sin(\pi/x)$ (blue) oscillates between $\pm\sqrt{x}$ (dashed). At $x_k = \frac{2}{2k+1}$ it touches the envelope, alternately from above and below, so a partition through these points (red polygon) has $v_\Delta \geq \sum_k \sqrt{x_k}$, a series comparable to $\sum_k k^{-1/2}$, which diverges. The amplitude $\sqrt{x} \to 0$ makes $f$ continuous at $0$, but not fast enough to keep the variation finite.*
+
+![[m551-18-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Partitions through more and more of the touching points $x_k = \frac{2}{2k+1}$ of the figure: the variation of the polygon (red) keeps growing, like $\sum_k \sqrt{x_k}$, without bound.
 
 > [!remark]- Connections
 > - Another rung of the MATH 451 ladder of damped oscillations: [[sin(1∕x) family]].
@@ -313,6 +321,10 @@ tags: [measure-theory, math551]
 
 ![[m551-18-4.svg]]
 *The Jordan decomposition of $f(x) = \sin 2\pi x$ on $[0,1]$ (black). The variation function $g(x) = \bigvee_0^x(f)$ (blue) increases by $|f'|$: it rises with $f$ on $[0, \frac14]$, keeps rising while $f$ falls on $[\frac14, \frac34]$, and ends at $\bigvee_0^1(f) = 4$. The difference $h = g - f$ (red) is flat where $f$ increases and climbs at twice the rate at which $f$ falls; both $g$ and $h$ are increasing, and $f = g - h$.*
+
+![[m551-18-a3.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* $x$ moves along $f = \sin 2\pi x$: the variation $g(x) = \bigvee_0^x f$ (blue) accumulates $|f'|$, and $h = g - f$ (red) is increasing as well, so $f = g - h$ is a difference of increasing functions. Illustrated with $f = \sin 2\pi x$.
 
 > [!theorem] Theorem §28.8: Total Variation of the Integral Function
 > Let $f \in L([a, b])$ and define $F(x) = \int_a^x f(t)\,dt$ for $x \in [a, b]$. Then $F \in BV([a, b])$ and:

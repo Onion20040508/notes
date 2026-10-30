@@ -253,6 +253,10 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 *Uses:* [[Minkowski's Inequality|§35.2]], [[§35 Lᵖ as a Banach Space#^lem-35-9|§35.9]], [[§35 Lᵖ as a Banach Space#^prop-35-8|§35.8]]
 
+![[m551-19-a4.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* An example added here, not in the notes: the typewriter sequence, indicator bumps of width $2^{-n}$ sweeping $[0, 1]$ pass after pass. $\|f_k\|_1 \to 0$, but every point (e.g. $x_0 = 0.3$, green) is hit once in every pass, so $f_k(x)$ converges at no $x$. The subsequence of first bumps $\chi_{[0, 2^{-n}]}$ (red) converges to $0$ at every $x > 0$, as Corollary §35.10 promises.
+
 > [!remark]- Connections
 > - The case $p = 1$ is the step “every $L^1$-convergent sequence has a pointwise a.e. convergent subsequence” in [[§30 Differentiating the Integral#^thm-30-7|Differentiation of the Integral (§30.7)]].
 > - Only a subsequence: $L^p$ convergence does not imply a.e. convergence, and a.e. convergence upgrades to $L^1$ convergence under domination ([[Dominated Convergence Theorem|DCT]]).
@@ -421,6 +425,10 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 ^pf-35-14
 
 *Uses:* [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-8|Def. §34.8]], [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-9|Def. §34.9]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§35 Lᵖ as a Banach Space#^def-35-4|Def. §35.4]], [[§35 Lᵖ as a Banach Space#^def-35-5|Def. §35.5]], [[Continuity of Measure|§13.4]], [[§13 Approximation and Continuity of Measure#^prop-13-5|§13.5]]
+
+![[m551-19-a5.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The proof's family $f_t = \chi_{(0, t)}$: $t$ slides while $f_s$, $s = 0.4$, stays fixed; $\|f_s - f_t\|_\infty = 1$ whenever $t \neq s$. Uncountably many functions at mutual distance $1$ leave no room for a countable dense set.
 
 > [!remark]- Connections
 > - Same uncountable-versus-countable counting as in [[§22 Countability Axioms#^prop-22-4|590 §22.4]](2) ($\mathbb{R}_l$ not second countable); by [[§22 Countability Axioms#^prop-22-4|590 §22.4]](3), $L^\infty$ is also not second countable.

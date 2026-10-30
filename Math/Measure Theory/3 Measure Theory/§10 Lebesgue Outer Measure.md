@@ -18,6 +18,10 @@ Then the area under the graph of $f$ is approximately $\sum_j y_j \cdot m(S_j)$,
 ![[m551-9-1.svg]]
 *Riemann versus Lebesgue for the same $f$ on $[a,b]$. Left: Riemann (Darboux) sums cut the $x$-axis into subintervals (blue rectangles). Right: Lebesgue cuts the $y$-axis instead; the band $y_j < y \leq y_{j+1}$ (red) pulls back to $S_j = \{x \in [a,b] \mid y_j < f(x) \leq y_{j+1}\}$, here a union of three intervals (filled endpoint: included, hollow: excluded). Measuring sets like $S_j$ is what the rest of the chapter is for.*
 
+![[m551-9-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The same $f$ cut up two ways as $n$ grows: Riemann columns over $n$ equal pieces of the $x$-axis, Lebesgue bands over $n$ equal pieces of the $y$-axis, each band pulled back to the set where $f$ lies in it (often several intervals). Both sums tend to $\int f$. Illustrated with $f(x) = 1.2 + 0.45\sin 2.2x + 0.25\sin(5x + 0.5)$ on $[0.2, 3]$.
+
 This approach requires us to develop a theory of **measure** for subsets of $\mathbb{R}^n$.
 
 ## Rectangles and Their Volume
@@ -124,6 +128,10 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ![[m551-9-2.svg]]
 *The covering of [[§10 Lebesgue Outer Measure#^ex-10-2|Example §10.2]] for $n = 2$: the $k$-th point $x_k$ (red) gets an open square $I_k$ (dashed) of half-side $\epsilon/2^k$, so the squares shrink geometrically. Their total area is $(2\epsilon)^2 \cdot \tfrac{1}{2^2 - 1}$, which tends to $0$ with $\epsilon$ — however the points are arranged, even densely as with $\mathbb{Q}^2$.*
+
+![[m551-9-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The rationals $x_k$ of $[0, 1]^2$ in an enumeration, the $k$-th covered by a square of half-side $\epsilon/2^k$, added one at a time; then $\epsilon$ shrinks from $0.4$ to $0.04$. The total area stays below $\sum_k (2\epsilon/2^k)^2 = \tfrac43\epsilon^2$, although the centres are dense.
 
 > [!remark]- Connections
 > - $\mathbb{Q}$ is countable ([[§3 Countability of Rationals and Unions#^cor-3-2|Cor. §3.2]]), so it is a null set; the [[Dirichlet and Thomae functions|Dirichlet function]] of [[§8 Motivation꞉ The Riemann Integral#^ex-8-2|Ex. §8.2]] is its indicator on $[0,1]$.

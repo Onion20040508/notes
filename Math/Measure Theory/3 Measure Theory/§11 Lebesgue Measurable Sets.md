@@ -29,6 +29,10 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 ![[m551-10-1.svg]]
 *The Carathéodory criterion: a test set $T$ (black outline) is cut by $E$ (blue) into $T \cap E$ (dark blue) and $T \cap E^c$ (red). $E$ is measurable when, for every such $T$, the outer measures of the two pieces add up exactly to $m^{\ast}(T)$; the inequality $\leq$ is automatic by subadditivity ([[§11 Lebesgue Measurable Sets#^rem-11-1|Remark §10.1]]).*
 
+![[m551-10-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Carathéodory's criterion as a test: an elliptical $T$ moves across a measurable set $E$ and changes size. Every time, $T \cap E$ (dark blue) and $T \cap E^c$ (red) add up to $m^*(T)$, as the computed areas in the subtitle show. The definition asks this for every test set $T$. Illustrated with a set $E$ chosen for the picture.
+
 > [!remark] Remark
 > By [[Properties of Lebesgue Outer Measure|subadditivity]], $m^*(T) \leq m^*(T \cap E) + m^*(T \cap E^c)$ always holds.
 >
@@ -289,6 +293,10 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 ![[m551-10-3.svg]]
 *Disjointification (Case 2 of [[§11 Lebesgue Measurable Sets#^thm-11-3|Theorem §11.3]]): $F_1 = E_1$ (blue), $F_2 = E_2 \setminus E_1$ (green), $F_3 = E_3 \setminus (E_1 \cup E_2)$ (orange). Each point of $\bigcup_j E_j$ lands in exactly one $F_k$ — the one for the first $E_k$ containing it — so the $F_k$ are disjoint with the same union, and Case 1 applies.*
+
+![[m551-10-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The discs of the figure disjointified one set at a time: $F_1 = E_1$, $F_2 = E_2 \setminus E_1$, $F_3 = E_3 \setminus (E_1 \cup E_2)$. The pieces are disjoint and their measures add up to $m(E_1 \cup E_2 \cup E_3)$.
 
 > [!remark]- Connections
 > - The same argument, for an arbitrary outer measure: [[Carathéodory's Theorem|Carathéodory's Theorem]] ([[§12 Borel Sets and Measure Spaces#^thm-12-2|§12.2]]).

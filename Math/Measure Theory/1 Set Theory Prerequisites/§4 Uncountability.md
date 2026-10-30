@@ -69,6 +69,10 @@ tags: [measure-theory, math551]
 ![[m551-4-1.svg]]
 *Cantor's diagonal argument on the first five sequences of a proposed list. The diagonal digits $a_n^{(n)}$ (red boxes) are flipped to build $x = (b_n)$ (blue): $x$ differs from $(x)_1$ in position $1$, from $(x)_2$ in position $2$, and so on, so $x$ is missing from the list no matter how the list was chosen.*
 
+![[m551-4-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The diagonal argument on the rows of the figure, one row at a time: the digit $a_n^{(n)}$ is boxed, flipped, and written into $x$ (blue) as $b_n = 1 - a_n^{(n)}$, so $x$ differs from $(x)_n$ in position $n$.
+
 > [!remark]- Connections
 > - Topology: the same set $\{0,1\}^\omega$ is an uncountable discrete subspace of $\mathbb{R}^\omega$ with the uniform metric, which is therefore not second-countable ([[§22 Countability Axioms#^ex-22-6|590 Ex. §22.6]]).
 
@@ -114,6 +118,10 @@ tags: [measure-theory, math551]
 
 ![[m551-4-2.svg]]
 *Binary digits as successive halvings: $a_k$ records whether $x$ lies in the left ($0$) or right ($1$) half of the current dyadic interval, and the blue intervals shrink to $x = 0.7 = 0.1011\ldots$. A dyadic rational such as $\tfrac12$ (red) is an endpoint shared by two halves, so it has two expansions, $0.1000\ldots$ and $0.0111\ldots$ — the reason the countable set $D$ of dyadic rationals (and the eventually constant sequences $Y$, $Y'$) is set aside in the proof.*
+
+![[m551-4-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The halvings of the figure, one at a time, for $x = 0.7$: each dyadic interval is split at its midpoint (red tick) and the half containing $x$ is kept, recording the digit $a_k$. After six rows the intervals are too short to draw; the title continues the expansion $0.7 = 0.1011001100\ldots$ (binary) to ten digits, with interval length $2^{-10}$.
 
 > [!remark]- Connections
 > - MATH 451 states “$\mathbb{R}$ is uncountable” when proving [[§2 The Set ℚ of Rational Numbers#^thm-2-7|Existence of Transcendental Numbers (451 §2.7)]].

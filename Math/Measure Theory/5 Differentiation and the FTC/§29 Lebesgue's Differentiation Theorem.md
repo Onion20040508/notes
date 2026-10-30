@@ -39,6 +39,10 @@ A monotone function is differentiable almost everywhere. The proof compares the 
 ![[m551-18-5.svg]]
 *An example of different Dini derivatives: $f(x) = x\sin(1/x)$ for $x > 0$ and $f(x) = 0$ for $x \leq 0$, at $x_0 = 0$. The right difference quotient $\frac{f(h) - f(0)}{h} = \sin(1/h)$ is the slope of the red secant, and as $h \to 0^+$ it sweeps through all of $[-1, 1]$, so $D^+f(0) = 1$ and $D_+f(0) = -1$ (dashed lines). From the left the quotient is $0$, so $D^-f(0) = D_-f(0) = 0$. Since $D^+f(0) = 1 > 0 = D_-f(0)$, $f$ is not differentiable at $0$.*
 
+![[m551-18-a4.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $h \to 0^+$ for $f(x) = x\sin\frac1x$ at $0$ (left view zooms with $h$): the secant slope from $0$ to $h$ is $\sin\frac1h$ (right, traced against $h$), which keeps sweeping $[-1, 1]$, so $D^+f(0) = 1$ and $D_+f(0) = -1$.
+
 > [!remark]- Connections
 > - One-sided derivatives in MATH 451: the one-sided limits of [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]] applied to the difference quotient; limsup/liminf as in [[§16 Limits and Positive Parts of Measurable Functions#^rem-16-4|Remark: Recalling Limsup and Liminf]].
 

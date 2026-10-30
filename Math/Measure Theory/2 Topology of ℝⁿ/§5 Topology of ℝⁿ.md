@@ -87,6 +87,10 @@ tags: [measure-theory, math551]
 ![[m551-5-2.svg]]
 *The iterated extraction for $n = 2$: from all indices keep $S_1$, along which the first coordinates converge; from $S_1$ keep $S_2 \subseteq S_1$, along which the second coordinates converge as well (red). Thinning a sequence never spoils a limit it already has, so after $n$ rounds every coordinate converges along $S_n$.*
 
+![[m551-5-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The iterated extraction run on a concrete bounded sequence, chosen for the picture: $x_k = \big((-1)^k(1 + \tfrac{0.6}{k}),\ (-1)^{\lfloor k/2\rfloor}(1 - \tfrac{0.6}{k})\big)$ in $\mathbb{R}^2$. Its terms pile up near four points (left). Round 1 keeps $S_1$ = even $k$, along which $x_k^{(1)} \to 1$ (two of the four clusters remain); round 2 thins it to $S_2$ = multiples of $4$, along which $x_k^{(2)} \to 1$ as well (red), while the first coordinates still converge.
+
 > [!remark] Remark
 > This is a direct generalization of [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] in $\mathbb{R}$, which you proved in MATH 451. The idea is to apply the 1-dimensional result coordinate by coordinate, extracting subsequences iteratively.
 

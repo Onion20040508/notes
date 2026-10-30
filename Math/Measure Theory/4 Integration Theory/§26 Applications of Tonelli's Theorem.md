@@ -123,6 +123,10 @@ tags: [measure-theory, math551]
 ![[m551-17-2.svg]]
 *Why a graph is null (here $n = 1$, $E = [0,1]$). Cut the range into bands $[k\delta, (k+1)\delta]$ (dotted). The part of the graph $G_E(f)$ (red) over $E_k = \{k\delta \leq f < (k+1)\delta\}$ lies in the box $E_k \times [k\delta, (k+1)\delta]$ of measure $\delta\, m(E_k)$. One band is highlighted: its $E_k$ (blue on the axis) has three pieces, since it is a level set rather than an interval. The boxes cover the graph, their total measure is $\delta \sum_k m(E_k)$, and $\delta$ can be taken arbitrarily small.*
 
+![[m551-17-a3.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The function of the figure with range bands of width $\delta$, $\delta$ from $0.4$ to $0.01$: the boxes over the bands cover the graph and have total area $\delta\,m(E) \to 0$.
+
 > [!remark]- Connections
 > - Jordan-content analogue in MATH 452: [[§24 The Change of Variables Formula#^def-24-1|Jordan Measure Zero]] (452 Def. §24.1).
 
@@ -258,6 +262,10 @@ tags: [measure-theory, math551]
 
 ![[m551-17-3.svg]]
 *The layer cake formula for $p = 1$, with $E = [0,1]$. Slicing the region under $|f|$ (blue) horizontally at height $\lambda$ cuts out the superlevel set $\{|f| > \lambda\}$ (red, left); its measure is the value $f^{\ast}(\lambda)$ of the distribution function (red segment, right). Integrating the slice lengths over $\lambda$ gives the area under $f^{\ast}$, which is the area under $|f|$: Tonelli on the subgraph, sliced the other way.*
+
+![[m551-17-a4.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $\lambda$ sweeps up for the function of the figure: the superlevel set $\{|f| > \lambda\}$ (red, on the axis) and its measure traced as the distribution function $f^*(\lambda)$ (right). The area under $f^*$ so far, $\int_0^\lambda f^*$, ends at $\int |f|$.
 
 > [!remark]- Connections
 > - The $p = 1$ case is the [[§26 Applications of Tonelli's Theorem#^thm-26-5|Subgraph Theorem]] read with horizontal slices, i.e. the [[§26 Applications of Tonelli's Theorem#^thm-26-1|Cross-Section Theorem]] applied to $\underline{G}(\vert f\vert)$ in the other variable.

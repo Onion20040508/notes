@@ -194,3 +194,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 
 ![[m551-18-7.svg]]
 *Averages over shrinking windows. With $F_h(x_0) = \frac1h\int_0^h f(x_0 + t)\,dt$ as in the [[§30 Differentiating the Integral#^lem-30-6|Averaging Lemma]], the average height of $f$ (blue) over $[x_0, x_0 + h]$ is the dashed level, and over the shorter window $[x_0, x_0 + h']$ it is the red one. Each average is a difference quotient of the integral function, so $x_0$ is a Lebesgue point exactly when these averages tend to $f(x_0)$ as the window shrinks; by [[§30 Differentiating the Integral#^thm-30-7|Theorem §30.7]] this happens at a.e. $x_0$.*
+
+![[m551-18-a5.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $h \to 0$: the average of $f$ over $[x_0, x_0 + h]$ approaches $f(x_0)$ for the continuous function of the figure; right, at a jump (from $0.6$ to $1.2$ at $x_1$) the right-hand averages approach the one-sided value $1.2$, not $f(x_1) = 0.6$, and $x_1$ is not a Lebesgue point.

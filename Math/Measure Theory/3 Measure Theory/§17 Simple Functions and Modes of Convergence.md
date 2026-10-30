@@ -126,6 +126,10 @@ The following theorem shows that every non-negative measurable function can be a
 ![[m551-12-3.svg]]
 *The staircase of [[§17 Simple Functions and Modes of Convergence#^thm-17-2|Theorem §17.2]]. $\varphi_2$ (orange, shaded) rounds $f$ (blue) down to the grid of step $\tfrac12$ (gray lines) and is capped at $2$ on $E_2 = \{f \geq 2\}$; $\varphi_3$ (red) uses step $\tfrac14$ and cap $3$. Each step sits over a level set $E_{kj}$, so it is the range that gets partitioned. Halving the step can only raise a value, so $\varphi_2 \leq \varphi_3 \leq f$, and $f - \varphi_k < 2^{-(k-1)}$ wherever $f < k$.*
 
+![[m551-12-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* $\varphi_1, \varphi_2, \ldots$ of the theorem: $f$ rounded down to multiples of $2^{-(k-1)}$ and capped at $k$ (dashed). The staircase climbs to $f$ and $\int\varphi_k$ increases to $\int f$. Illustrated with $f(x) = 0.3 + 2.4x^2 + 0.35\sin 9x$ on $[0, 1]$, which exceeds the cap for small $k$.
+
 > [!remark]- Connections
 > - Partitions the *range* of $f$, where Darboux sums partition the *domain*: [[§8 Motivation꞉ The Riemann Integral#^def-8-2|Def. §8.2]], [[§32 The Definition of the Riemann Integral|451 §32]].
 > - With the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] this gives $\int \varphi_k \to \int f$, used for [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-1|linearity of the integral]].

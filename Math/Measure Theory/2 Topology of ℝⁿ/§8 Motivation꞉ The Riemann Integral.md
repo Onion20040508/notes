@@ -180,6 +180,10 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 ![[m551-8-2.svg]]
 *Left: $f_5$ from [[§8 Motivation꞉ The Riemann Integral#^ex-8-1|Example §8.1]], for an enumeration beginning $\tfrac12, \tfrac13, \tfrac23, \tfrac14, \tfrac34$ — it is $0$ except at five points, so its integral is $0$. Right: the pointwise limit $f$ ([[§8 Motivation꞉ The Riemann Integral#^ex-8-2|Example §8.2]]) — rationals (red, height $1$) and irrationals (blue, height $0$) are dense in every subinterval, so $M_j = 1$ and $m_j = 0$ for every partition: the upper sum is the whole red area $1$, the lower sum is $0$.*
 
+![[m551-8-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $f_n$ for growing $n$, with the enumeration of the figure ($\tfrac12, \tfrac13, \tfrac23, \tfrac14, \tfrac34, \ldots$): each $f_n$ is $1$ at finitely many points (red) and $0$ elsewhere, so $\int_0^1 f_n = 0$. In the last frame, the limit $f$: every subinterval of a partition (dotted) contains points at height $1$ and at height $0$, so upper sums are $1$ and lower sums $0$.
+
 > [!remark]- Connections
 > - MATH 451 only passes to the limit under uniform convergence: [[§33 Properties of the Riemann Integral#^thm-33-12|Integration of Uniform Limits (451 §33.12)]].
 > - The Lebesgue answer: pointwise limits of measurable functions are measurable ([[§16 Limits and Positive Parts of Measurable Functions#^cor-16-3|Corollary §16.3]]), and integrals pass to the limit under the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] and the [[Dominated Convergence Theorem|Dominated Convergence Theorem]].

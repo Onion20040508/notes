@@ -107,6 +107,10 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 ![[m551-11-2.svg]]
 *Regularity of Lebesgue measure: a measurable $E$ (black outline) is squeezed between a closed $F \subseteq E$ (blue) and an open $G \supseteq E$ (dashed red), with both shells $E \setminus F$ (orange) and $G \setminus E$ (red) of measure $< \epsilon$ ([[§13 Approximation and Continuity of Measure#^thm-13-1|Theorems §13.1]] and [[§13 Approximation and Continuity of Measure#^thm-13-3|§13.3]], part 1). The inner half comes from the outer one by complements: the proof takes an open set containing $E^c$ and lets $F$ be its complement.*
 
+![[m551-11-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $\varepsilon$ shrinks from $0.45$ to $0.01$: the closed set $F \subseteq E$ and the open set $G \supseteq E$ (dashed) are taken as shells of width $\varepsilon$ inside and outside $E$, and $m(G \setminus E)$, $m(E \setminus F)$ go to $0$. Illustrated with a star-shaped $E$ chosen for the picture; for general measurable $E$ the theorem gives such $F$ and $G$ without a formula.
+
 > [!proof]+ Proof
 > **(1)** Since $E \in \mathcal{M}$, we have $E^c \in \mathcal{M}$. By the outer approximation theorem ([[Outer Regularity of Lebesgue Measure|Thm. §13.1]] (1)), there exists an open set $G \supseteq E^c$ with $m(G \setminus E^c) < \epsilon$.
 >
@@ -202,6 +206,10 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 *Uses:* [[Continuity of Measure|§13.4]], [[§11 Lebesgue Measurable Sets#^thm-11-1|§11.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§11.3]]
 
+![[m551-11-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Propositions §13.4 and §13.5 and the counterexample side by side as $k$ grows. Top: $E_k = [0, 2 - \tfrac1k] \uparrow [0, 2)$, $m(E_k) \to 2$. Middle: $E_k = [0, \tfrac1k] \downarrow \{0\}$ with $m(E_1) < \infty$, $m(E_k) \to 0$. Bottom: $E_k = [k, \infty) \downarrow \emptyset$, where every $m(E_k) = \infty$ but $m(\emptyset) = 0$: without $m(E_1) < \infty$, continuity from above fails.
+
 > [!remark]- Connections
 > - Used in [[Egorov's Theorem|Egorov's Theorem]] ([[§18 Egorov's and Lusin's Theorems#^thm-18-1|§18.1]]); integral analogue: [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-7|decreasing MCT]] ([[§21 Consequences of the Monotone Convergence Theorem#^thm-21-7|§21.7]]).
 > - For a probability measure on $\mathbb R$, continuity from below and above make the distribution function $F(x)=\mu((-\infty,x])$ right-continuous with limits $0$ and $1$, the first step of the honors-thesis proof that weak convergence is convergence of distribution functions at continuity points ([[§R2.7 Weak Convergence, Characteristic Functions and Concentration#^thm-r2-7-3|Thesis Thm. §R2.7.3]]).
@@ -241,6 +249,10 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 ![[m551-11-3.svg]]
 *[[§13 Approximation and Continuity of Measure#^thm-13-6|Theorem §13.6]] (2): a set $E$ of finite measure (blue) and a finite union $G$ of rectangles (black outline). The symmetric difference $E \triangle G$ (red) — the part of $E$ that $G$ misses plus the part of $G$ outside $E$ — can be made to have measure $< \epsilon$. In the proof, $G$ comes from a finite subcover of a compact $K \subseteq E$.*
+
+![[m551-11-a3.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* $G$ = the grid squares of side $2^{-i}$ whose centres lie in $E$, for finer and finer grids; $E \,\triangle\, G$ (red) shrinks and its measure goes to $0$. Illustrated with a set $E$ chosen for the picture.
 
 > [!proof]+ Proof
 > **(1)** Since $E$ is measurable, $E^c$ is also measurable. By the approximation theorem (closed sets from below, [[Inner Regularity of Lebesgue Measure|Thm. §13.3]]), there exists a closed set $K \subseteq E$ such that $m(E \setminus K) < \epsilon/2$.

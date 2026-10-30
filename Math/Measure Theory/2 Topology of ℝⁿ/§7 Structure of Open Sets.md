@@ -201,6 +201,10 @@ tags: [measure-theory, math551]
 ![[m551-7-3.svg]]
 *The proof of [[§7 Structure of Open Sets#^prop-7-3|Proposition §7.3]] run on an open disc $O$ (dashed boundary), stopped at scale $2^{-4}$: the maximal dyadic squares contained in $O$ (blue, darker = coarser). Large squares fill the interior and ever smaller ones pile up towards the boundary; continuing through all scales, these disjoint squares exhaust $O$ exactly.*
 
+![[m551-7-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The proof run on the disc of the figure, scale by scale, from side $1$ to side $2^{-6}$: at each scale the maximal dyadic squares inside $O$ are added (darker = coarser), and the covered area rises from $51.9\%$ to $99.1\%$ of $m(O)$.
+
 > [!remark]- Connections
 > - MATH 452: the same dyadic grid gives the inner Jordan approximations, $\mathcal{S}_i^-$ = dyadic squares inside $D$ ([[§20 Multivariable Integration#^def-20-4|452 Def. §20.4]]); for an open set they exhaust it.
 > - Topology: open sets are unions of basis elements ([[§2 Basis for a Topology#^lem-2-1|590 Lemma §2.1]]); here the union is countable and disjoint.

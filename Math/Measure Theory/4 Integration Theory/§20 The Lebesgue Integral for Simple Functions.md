@@ -343,6 +343,10 @@ We now extend the integral from simple functions to general non-negative measura
 ![[m551-14-2.svg]]
 *The sets $E_k = \{f_k \geq c\,h\}$ in the proof of the MCT. Fix a simple $h \leq f$ (black) and lower it to $c\,h$ (dashed, $c < 1$). Where $f_k$ (blue) dips below $c\,h$ the point is not yet in $E_k$; the red part of the axis is $E_k$, and on it $\int_E f_k \geq c \int_{E_k} h$. As $f_k \nearrow f$ (gray) the dips fill in, so $E_k \nearrow E$. The factor $c < 1$ is essential: where $h = f$, the $f_k$ may approach $f$ from below without ever reaching $h$, but they do eventually pass $c\,h$.*
 
+![[m551-14-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The proof of the Monotone Convergence Theorem in motion: $f_k$ (blue) increases to $f$ (gray); for the simple $h \leq f$ (step function) and $c = 0.8$, the sets $E_k = \{f_k \geq c\,h\}$ (red) grow and exhaust $E$, and $\int f_k$ increases to $\int f$. Illustrated with $f_k = f\,(1 - e^{-k g})$ for functions $f$, $g > 0$ chosen for the picture; convergence is slow where $g$ is small.
+
 > [!remark]- Connections
 > - Not to be confused with the MATH 451 [[Monotone Convergence Theorem]] for sequences of numbers, which it uses in Step 1.
 > - The Riemann integral has no such theorem: [[§8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]] (increasing $f_n \nearrow$ Dirichlet function). Riemann-side exchange of limit and integral needs uniform convergence: [[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]].

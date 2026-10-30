@@ -110,6 +110,10 @@ Egorov's theorem states that on sets of finite measure, [[§17 Simple Functions 
 ![[m551-13-1.svg]]
 *Egorov for $f_k(x) = x^k$ on $[0,1]$: the convergence to $0$ on $[0,1)$ is not uniform, since every $x^k$ climbs back to $1$ near $x = 1$. Cutting away a set of length $\delta$ (red) cures this: on $[0, 1-\delta]$ we have $x^k \leq (1-\delta)^k$, which is below $\epsilon$ for all large $k$ (here $k = 16, 32$), at every $x$ at once.*
 
+![[m551-13-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Left: $x^k$ on $[0, 1]$, with $[1 - \delta, 1]$ cut away; $\sup_{[0, 1-\delta]} x^k = (1 - \delta)^k \to 0$, so the convergence is uniform off a set of measure $\delta$, first for $\delta = 0.15$, then for $\delta$ down to $0.03$. Right: the sliding bump $\chi_{[k, k+1]}$ on $\mathbb{R}$ converges to $0$ at every point, but its supremum stays $1$ off any set of finite measure, which is why Egorov's theorem needs $m(E) < \infty$.
+
 > [!remark]- Connections
 > - MATH 451 version of the non-uniformity: [[§24 Uniform Convergence#^ex-24-2|451 Example §24.2]]; the sup test used here is [[§24 Uniform Convergence#^thm-24-1|451 Theorem §24.1]].
 

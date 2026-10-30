@@ -163,6 +163,10 @@ The notion of countability captures when we can “list” all elements of a set
 ![[m551-1-1.svg]]
 *Two ways to count $\mathbb{N} \times \mathbb{N}$, with $(i,j)$ in row $i$ and column $j$ as in the array above. Left: the listing by diagonals — each diagonal $i + j = \text{const}$ is finite, so it is run through (red) before jumping to the next one (grey dashed); the small numbers are the positions in the list. Right: the explicit bijection $f(i,j) = 2^{i-1}(2j-1)$ — row $i$ holds the odd numbers times $2^{i-1}$, so every $n$ appears exactly once, in the row given by the power of $2$ dividing it.*
 
+![[m551-1-a1.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* The listing by diagonals of the left figure, one point at a time: each diagonal $i + j = \text{const}$ is finite, so it is run through (red) before the jump to the next one (gray, dashed). The small numbers are the positions in the list; the line below shows the last few pairs listed.
+
 > [!remark]- Connections
 > - MATH 451: the same diagonal listing proves [[§2 The Set ℚ of Rational Numbers#^thm-2-5|ℚ is countable (451 §2.5)]].
 > - Used for [[Countable Union of Countable Sets is Countable|Countable Union of Countable Sets]] and for the countability of the rational balls in [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-1|Lemma §6.1]].

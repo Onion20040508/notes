@@ -132,6 +132,10 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 ![[m551-11-4.svg]]
 *The Vitali argument: $V$ (red) contains one point from each class of $\sim$, and its rational translates $r_j + V$ (blue; a few of the countably many, with $V = 0 + V$ itself among them) are pairwise disjoint. Together they cover $[0,1]$ (shaded) but stay inside $[-1,2]$. If they all had measure $m(V)$ we would need $1 \leq \sum_j m(V) \leq 3$, which is impossible whether $m(V) = 0$ or $m(V) > 0$. (The tick marks only stand in for $V$, which cannot actually be drawn.)*
 
+![[m551-11-a4.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The construction as a process, schematically. Rows: four of the uncountably many classes $(x_c + \mathbb{Q}) \cap [0, 1]$, each shown only through its points with denominators up to $6$. One point of each class is chosen (ringed); which point is arbitrary, since this uses the axiom of choice, and $V$ itself cannot be drawn. The translates $r_j + V$ by rationals $r_j \in [-1, 1]$ move each chosen point onto other points of its own class: different translates never collide, they reach every drawn point of $[0, 1]$, and everything stays in $[-1, 2]$ (Proposition §14.5). Below: the total measure of $n$ translates, which must lie in $[1, 3]$; it is $0$ if $m(V) = 0$ and goes past $3$ if $m(V) > 0$ (Theorem §14.6).
+
 > [!theorem] Theorem §14.6: The Vitali Set is Not Measurable
 > The Vitali set $V$ is not Lebesgue measurable.
 
@@ -191,6 +195,10 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§10 Lebesgue Outer Measure#^ex-1
 
 ![[m551-11-5.svg]]
 *The first steps of the Cantor construction: $C_{n+1}$ removes the open middle third (dashed red) of every interval of $C_n$, leaving $2^n$ intervals of length $3^{-n}$ with total length $(2/3)^n \to 0$. The labels under $C_1$ and $C_2$ are the first ternary digits of the points in each interval. Only $0$s and $2$s survive, which is how [[§14 The Vitali Set and the Cantor Set#^prop-14-7|Proposition §14.7]] (4) matches $C$ with binary sequences.*
+
+![[m551-11-a5.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The stages $C_0, \ldots, C_7$ with their total length $(2/3)^n$; then the view magnifies $[0, \tfrac19]$ nine times, and the stages realign into the same picture: $C$ is self-similar.
 
 > [!remark]- Connections
 > - First met in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Rem. §13.5]].

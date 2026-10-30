@@ -243,6 +243,10 @@ tags: [measure-theory, math551]
 ![[m551-6-4.svg]]
 *The Heine–Borel proof in one dimension, for a closed interval $F$ covered by open intervals $\mathcal{O}_1, \mathcal{O}_2, \ldots$ (blue). Removing the open sets one at a time leaves closed sets $F_k = F \setminus (\mathcal{O}_1 \cup \cdots \cup \mathcal{O}_k)$ (red) that shrink; if none were empty, Cantor's nested set theorem would produce a point of $F$ in no $\mathcal{O}_j$. Here $F_4 = \emptyset$, so $\mathcal{O}_1, \ldots, \mathcal{O}_4$ is a finite subcover.*
 
+![[m551-6-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The figure built up step by step: $\mathcal{O}_1, \ldots, \mathcal{O}_4$ arrive one at a time, and each $F_k = F \setminus (\mathcal{O}_1 \cup \cdots \cup \mathcal{O}_k)$ (red) is a smaller closed set, until $F_4 = \emptyset$.
+
 > [!remark]- Connections
 > - Topology: [[Heine–Borel Theorem]] (590 §18.12) proves compact ⟺ closed and bounded via products of [[§18 Compact Spaces#^thm-18-10|compact closed intervals]] and the [[Tube Lemma]]; here only “closed and bounded ⟹ compact” is proved, through countable subcovers and nested sets (the [[§18 Compact Spaces#^thm-18-5|finite intersection property]] in disguise).
 > - Used for the outer measure of closed rectangles ([[§10 Lebesgue Outer Measure#^prop-10-2|Proposition §10.2]]) and for approximation by finite unions of rectangles ([[§13 Approximation and Continuity of Measure#^thm-13-6|Theorem §13.6]]).

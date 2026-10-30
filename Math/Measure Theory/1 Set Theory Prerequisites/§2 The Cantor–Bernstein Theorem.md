@@ -22,6 +22,10 @@ The proof of the Cantor–Bernstein theorem below relies on the following lemma.
 ![[m551-2-1.svg]]
 *What the lemma produces: cuts $X = A \sqcup A^c$ and $Y = B \sqcup B^c$ such that $f$ carries $A$ onto $B$ (blue) and $g$ carries $B^c$ onto $A^c$ (red). For injective $f$ and $g$ both restrictions are bijections, and the proof below glues them into $F = f$ on $A$, $F = g^{-1}$ on $A^c$ — a bijection $X \to Y$.*
 
+![[m551-2-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* An example chosen for the picture: $X = Y = \mathbb{N}$, $f(n) = g(n) = n + 1$ (pale arrows: blue $f$, red $g$). $1 \in Y$ is not in $f(X)$, so it cannot lie in $B = f(A)$; since $g(B^c) = A^c$, $g(1) = 2$ lies in $A^c$; since $f$ is injective and $2 \notin A$, $f(2) = 3 \notin f(A) = B$; and so on along the chain. The forced points (red) are $A^c$ = even numbers and $B^c$ = odd numbers, and the set $A$ = odd numbers is the largest member of $\mathcal{T}$, the set of the proof. The glued bijection $F$ swaps $2k - 1$ and $2k$.
+
 > [!proof]+ Proof of the Lemma
 > The strategy is to construct $A \subseteq X$ satisfying a certain property, then set $B = f(A)$.
 >

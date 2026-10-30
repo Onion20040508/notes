@@ -46,6 +46,10 @@ tags: [measure-theory, math551]
 ![[m551-19-1.svg]]
 *Unit balls $\{\|x\| \leq 1\}$ in $\mathbb{R}^2$: the $\ell^1$ ball is the red diamond and the Euclidean ball the blue disk. The $\ell^4$ ball (dashed) and the square of $\max_i |x_i|$ (gray, the limit $p \to \infty$) show the balls of $\|x\|_p = (\sum_i |x_i|^p)^{1/p}$ growing toward the square as $p$ increases. The shapes differ, but each is convex and symmetric about $0$, as the triangle inequality and homogeneity require.*
 
+![[m551-19-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $\{|x|^p + |y|^p \leq 1\}$ as $p$ runs from $\tfrac12$ through $1$ (diamond) and $2$ (disc) to $\infty$ (square). For $p < 1$ the set is not convex: $(1, 0)$ and $(0, 1)$ have norm $1$ but $\|(\tfrac12, \tfrac12)\|_p > 1$, so the triangle inequality fails (Minkowski's inequality needs $p \geq 1$).
+
 > [!remark]- Connections
 > - $\|\cdot\|_2$ is the inner-product norm of [[§20 Inner Products and Norms#^ladr-6-8|LADR 6.8(a)]]; its metric is the Euclidean metric of [[§12 Metric Topology#^ex-12-1|590 Ex. §12.1]].
 > - Comparing norms on $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]] ($d$ vs. $d_\infty$).
@@ -162,6 +166,10 @@ tags: [measure-theory, math551]
 ![[m551-19-2.svg]]
 *$L^p$ membership depends on $p$. On $(0,1)$ the function $g = 1/\sqrt{x}$ (blue) has finite area $\int_0^1 g = 2$, but squaring makes the singularity worse, and $g^2 = 1/x$ (red) has infinite area. On a set of finite measure, large $p$ punishes tall spikes, which is why $L^{p_2} \subseteq L^{p_1}$ for $p_1 < p_2$ there ([[§34 Normed Linear Spaces and Lᵖ Spaces#^cor-34-6|Corollary §34.6]]).*
 
+![[m551-19-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $p$ moves between $\tfrac12$ and $3$ for $g(x) = x^{-1/2}$ on $(0, 1)$: the area under $|g|^p = x^{-p/2}$ is finite, $\frac{1}{1 - p/2}$, for $p < 2$ and infinite from $p = 2$ on, so $g \in L^p$ exactly for $p < 2$.
+
 ## $L^\infty$ and the Essential Supremum
 
 > [!definition] Definition §34.8: $L^\infty$ Space
@@ -265,6 +273,10 @@ tags: [measure-theory, math551]
 
 ![[m551-19-3.svg]]
 *Young's inequality is the concavity of $\ln$ (shown with $\theta = 0.35$). The chord from $(a, \ln a)$ to $(b, \ln b)$ (red) lies below the graph, so at $\theta a + (1-\theta)b$ the chord height $\theta\ln a + (1-\theta)\ln b = \ln(a^\theta b^{1-\theta})$ is below $\ln(\theta a + (1-\theta)b)$. Carrying the chord height across to the graph (dashed) locates $a^\theta b^{1-\theta}$ on the axis, to the left of $\theta a + (1-\theta)b$ because $\ln$ is increasing.*
+
+![[m551-19-a3.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $\theta$ moves along the chord of $\ln$ between $a = 0.6$ and $b = 3.4$ (as in the figure): concavity keeps the curve above the chord, i.e. $a^\theta b^{1-\theta} \leq \theta a + (1 - \theta) b$ for every $\theta$.
 
 > [!remark]- Connections
 > - Same inequality in 556, proved by the same concavity argument: [[§16 Means and Young's Inequality#^lem-16-3|556 Lemma §16.3]].

@@ -112,6 +112,10 @@ tags: [measure-theory, math551]
 
 *Uses:* [[§18 Compact Spaces#^rem-18-1|590 Rem. §15.1]], [[Continuous Functions of Compact Support are Dense in L¹|§24.7]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-1|§25.1]], [[§22 The General Lebesgue Integral#^prop-22-3|§22.3]]
 
+![[m551-17-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Theorem §25.2 for a discontinuous $f$: $f = \chi_{[1, 3]}$ and its translate $f(x + h)$ (dashed), $h$ from $1.2$ to $0$ and on to $-1.2$. The difference is two slivers of width $|h|$, so $\int |f(x + h) - f(x)|\,dx = 2|h| \to 0$ although $\sup |f(x+h) - f(x)| = 1$ for every $h \neq 0$.
+
 > [!remark] Remark
 > Average continuity is a key example of the [[§24 The L¹ Space and Density Theorems#^rem-24-1|approximation chain]] strategy in action: prove the result for $C_c$ (where uniform continuity is available), then extend to $L^1$ by density.
 
@@ -170,6 +174,10 @@ tags: [measure-theory, math551]
 
 ![[m551-17-1.svg]]
 *A cross-section: the vertical line over $x \in \mathbb{R}^p$ meets $E$ in $E_x$ (red; here two segments). The theorem says that integrating the sizes $m(E_x)$ over $x$ recovers $m(E)$ (Cavalieri's principle); it is Tonelli's theorem for $f = \chi_E$.*
+
+![[m551-17-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The vertical line sweeps across a planar set $E$; the cross-section $E_x$ (red) and its measure $m(E_x)$ are traced below, and $\int m(E_x)\,dx$, accumulated so far, reaches $m(E)$ at the right end. Illustrated with a set $E$ chosen for the picture.
 
 > [!remark]- Connections
 > - This is Tonelli applied to $\chi_E$: see [[§26 Applications of Tonelli's Theorem#^thm-26-1|Cross-Section Theorem (Restated)]] ([[§26 Applications of Tonelli's Theorem#^thm-26-1|§26.1]]) and its proof.

@@ -184,6 +184,10 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§20 The Lebesgue Integral for S
 ![[m551-15-2.svg]]
 *Why the DCT needs an integrable dominator. Both sequences tend to $0$ at every point while $\int f_k = 1$ for every $k$, so $\lim \int f_k \neq \int \lim f_k$. (a) The sliding block $f_k = \chi_{[k,k+1]}$ of [[§18 Egorov's and Lusin's Theorems#^rem-18-1|Rem. §13.1]]: the smallest possible dominator $\sup_k f_k = \chi_{[1,\infty)}$ (red) has infinite integral. (b) The bumps $f_k = k\,\chi_{(0,1/k)}$ of [[§21 Consequences of the Monotone Convergence Theorem#^ex-21-1|Ex. §21.1]]: $\sup_k f_k$ is the red staircase, equal to $k$ on $[\frac{1}{k+1}, \frac1k)$, which is at least $\frac1x - 1$ and not integrable near $0$. Any $F$ with $|f_k| \leq F$ lies above the red graph, so no $F \in L$ exists; only Fatou's inequality survives, and it is strict.*
 
+![[m551-15-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* Three ways for $\int f_k = 1$ to survive while $f_k \to 0$ pointwise: $k\,\chi_{(0, 1/k)}$ escapes upward, $\chi_{[k, k+1]}$ escapes to infinity, $\tfrac1k\chi_{[0, k]}$ spreads thin. None has an integrable bound. Right: $x^k$ on $[0, 1]$ is dominated by $1$, and its integrals $\tfrac{1}{k+1}$ do go to $0$, as the Dominated Convergence Theorem says.
+
 > [!remark]- Connections
 > - The MATH 451 row this table replaces: $f_n \to f$ uniformly on $[a,b]$ gives $\lim \int f_n = \int f$ ([[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]; [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§17 Simple Functions and Modes of Convergence#^def-17-5|Def. §17.5]]).
 > - Why a new integral was needed for such theorems: [[§8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]] (Riemann integrable functions are not closed under pointwise limits).
