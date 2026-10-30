@@ -70,6 +70,10 @@ For some functions the sequential definition is not so easy to check directly �
 ![[m451-17-1.svg]]
 *The $(\varepsilon, \delta)$ picture: the tolerance band $f(x_0) \pm \varepsilon$ (gray) is prescribed first; continuity provides a window $x_0 \pm \delta$ so narrow that over it the graph stays inside the band — it leaves the red box through the sides, never the top or bottom. Outside the window the graph is free to escape the band (and here it does, on both sides): $\delta$ genuinely depends on $\varepsilon$ and on $x_0$. This is the second member of a family: the $(\varepsilon, N)$ band for sequences (§7), this local window, one window-width for *all* points at once (uniform continuity, §19), and one band around a whole sequence of graphs (uniform convergence, §24).*
 
+![[m451-17-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $\varepsilon$ is chosen first and shrinks from $0.3$ to $0.02$; for each $\varepsilon$ the widest $\delta$ is computed, and the box $[x_0 - \delta, x_0 + \delta] \times [f(x_0) - \varepsilon, f(x_0) + \varepsilon]$ (red) is drawn. The graph always leaves the box through its sides: over $|x - x_0| < \delta$ it stays in the band.
+
 > [!remark] Remark: Solving for Delta
 > In the $(\varepsilon,\delta)$ definition, $\delta$ depends on $\varepsilon$: we need to *solve* $\delta$ in terms of $\varepsilon$. The idea, as with sequences: start with the target $|f(x) - f(x_0)| < \varepsilon$, *simplify first* — replace $|f(x)-f(x_0)|$ by a simpler upper bound if needed — and then solve for $|x - x_0| < \delta = \delta(\varepsilon)$.
 
@@ -300,6 +304,10 @@ We have seen many continuous functions — polynomials, rational functions, and 
 
 ![[m451-17-2.svg]]
 *The Thomae function on $(0,1)$, drawn for $q \leq 14$. The proof is visible: above any fixed height $\varepsilon$ (dashed) lie only finitely many dots (red — those with $\tfrac1q > \varepsilon$), so an irrational $x_0$ has a window (blue strip) containing none of them, and there every value of $f$ is below $\varepsilon$ — continuity at every irrational. At a rational $\tfrac pq$, by contrast, the dot sits at height $\tfrac1q > 0$ while the irrationals arbitrarily close by give $0$ — discontinuity.*
+
+![[m451-17-a2.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The dashed height $\varepsilon$ lowers from $0.45$ to $0.026$ (dots drawn for $q \leq 40$). The dots above it (red, the $p/q$ with $\tfrac1q > \varepsilon$) are always finitely many, so the irrational $x_0 = \tfrac{\sqrt2}{2}$ keeps a window (blue) free of them: on it $f < \varepsilon$. The window shrinks as $\varepsilon$ does but never closes, which is continuity at $x_0$.
 
 A counterweight to all these constructions — continuity is *rigid* on dense sets:
 

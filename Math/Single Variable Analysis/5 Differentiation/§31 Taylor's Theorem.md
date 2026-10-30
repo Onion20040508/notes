@@ -223,6 +223,10 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 ![[m451-31-1.svg]]
 *The two extremes of §31. Left: the partial sums $s_2, s_4, s_8$ (light blue, blue, red) hug $\cos x$ (black) order by order — the remainder dies everywhere. Right: $e^{-1/x^2}$ and its Taylor series (dashed, identically $0$) are visually indistinguishable near the origin — infinitely flat — yet equal only at the single point $x = 0$.*
 
+![[m451-31-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The partial sums $s_N$ of the cosine series, $N = 0, 2, \ldots, 30$ (red), against $\cos x$ (black) on $[-11, 11]$. The shaded interval is where $|s_N - \cos x| < 0.01$; it grows with $N$ and covers the whole window at $N = 30$ (the Lagrange remainder bound there is $\tfrac{11^{32}}{32!} < 0.01$).
+
 > [!remark]- Connections
 > - Computational version: Stewart's remark on $e^{-1/x^2}$, [[§90 Taylor and Maclaurin Series#^rem-90-1|Calc Remark §78.1]].
 > - Impossible for analytic functions: [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (an analytic function is the sum of its Taylor series) and [[§82 Zeros of Analytic Functions#^thm-82-2|342 Thm. §82.2]] (a zero of infinite order forces f ≡ 0 near the point).

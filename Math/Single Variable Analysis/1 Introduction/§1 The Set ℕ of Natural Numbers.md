@@ -158,6 +158,10 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 ^ex-1-2
 
+![[m451-1-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The recursion term by term: each new $x_n$ (red) is the midpoint of the two previous terms (blue), so it lies between them. That is why the induction needs $P_n$ to control *two* terms: if both lie in $[1, 2]$, so does their midpoint. The terms settle at $\tfrac53$ (dashed).
+
 > [!remark] Remark
 > The device in [[§1 The Set ℕ of Natural Numbers#^ex-1-2|Example §1.2]] — proving a statement for *all* $k \leq n$ rather than for $n$ alone — is often called **strong induction** (or complete induction). It is not a new axiom: it is ordinary induction applied to the strengthened property $P_n$.
 

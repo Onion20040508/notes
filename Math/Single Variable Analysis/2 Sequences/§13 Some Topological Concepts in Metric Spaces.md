@@ -242,6 +242,10 @@ The name “open” comes from open intervals in $\mathbb{R}$. These notions are
 ![[m451-13-2.svg]]
 *Top: around any $x \in (a,b)$ a ball $B(x,\varepsilon)$ (red) fits inside once $\varepsilon < \min\{x-a,\, b-x\}$ — the endpoints are missing (hollow), so there is always room. Bottom: $[a,b]$ contains its endpoint $a$, and every ball around $a$ pokes out to the left, so $[a,b]$ is not open.*
 
+![[m451-13-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Top: $x$ moves toward $b$ in $(a, b)$; the largest ball that fits shrinks, but its radius $\varepsilon$ stays positive because $b$ itself is missing. Bottom: at the endpoint $a$ of $[a, b]$, every ball, however small, contains the points $(a - r, a)$ outside $[a, b]$ (dark red).
+
 > [!theorem] Proposition §13.4: Unions of Open Sets
 > Any union of open subsets is open. Dually (by complementation), any intersection of closed subsets is closed.
 
@@ -265,6 +269,10 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 
 ![[m451-13-3.svg]]
 *The first stages of the Cantor set: each stage removes the open middle third of every remaining interval, so stage $k$ consists of $2^k$ closed intervals of length $3^{-k}$. The Cantor set is what survives all stages.*
+
+![[m451-13-a2.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Stages $0$ to $7$ of the Cantor set are built, then the view zooms into $[0, 3^{-2}]$: there, stages $2$ to $7$ look exactly like stages $0$ to $5$ of the whole picture. Each piece of the Cantor set is a scaled copy of the whole.
 
 > [!remark]- Connections
 > - In 590 this property becomes an axiom of a topology, [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]], and its closed-set dual is [[§7 Closed Sets and Limit Points#^thm-7-1|590 Thm. §7.1]].

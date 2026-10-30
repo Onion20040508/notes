@@ -64,6 +64,10 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 ![[m451-32-1.svg]]
 *Left: an uneven partition $P$; the upper sum (red outline) and lower sum (blue fill) trap the curve. Right: a refinement of $P$ — four more points inserted (unlabeled ticks): the gap boxes of the refinement (blue) sit inside the gap boxes of $P$ (red outline), so $U - L$ shrinks subinterval by subinterval — the Refinement Lemma in one picture.*
 
+![[m451-32-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Starting from the partition $P$ of the figure, points are inserted one at a time (new tick in red). Each insertion splits one gap box (red) into two that fit inside it, so $U$ can only drop and $L$ can only rise, as the refinement lemma says; $U - L$ falls from $0.68$ to $0.18$.
+
 > [!remark]- Connections
 > - Double integral over a region, with integrability defined by upper minus lower sum tending to 0: [[§21 The Definition of the Integral#^def-21-6|452 Def. §21.6]] and [[§21 The Definition of the Integral#^def-21-7|452 Def. §21.7]].
 
@@ -90,6 +94,10 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ![[m451-32-3.svg]]
 *The equal partition $P_n$ for $f(x) = x$ on $[0,1]$ (here $n = 5$): the lower sum is the blue staircase, and the upper sum adds the $n$ red squares along the diagonal, each of side $\tfrac1n$. So $U(f,P_n) - L(f,P_n) = n \cdot \tfrac{1}{n^2} = \tfrac1n \to 0$, squeezing both sums onto $\tfrac12$.*
+
+![[m451-32-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $P_n$ for $n = 1, \ldots, 10$, then $12$ up to $40$: the lower sum (blue staircase) and the $n$ red squares of side $\tfrac1n$ along the diagonal, whose total area $U - L = \tfrac1n$ vanishes. Both sums squeeze $\tfrac12$.
 
 > [!example] Example §32.2: A Step Function
 > Show $g: [0,2] \to \mathbb{R}$, $g(x) = 1$ for $x \in [0,1)$ and $g(x) = 0$ for $x \in [1,2]$, is Darboux integrable. Given $\varepsilon > 0$ (we may assume $\varepsilon < 2$, so that $1 - \tfrac\varepsilon2 > 0$), isolate the jump in a short subinterval: take

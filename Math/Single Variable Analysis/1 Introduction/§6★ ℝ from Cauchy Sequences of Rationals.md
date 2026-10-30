@@ -381,6 +381,10 @@ This resolves the circularity that §6 warned about. "The limit of a rational Ca
 
 ^ex-6s-2
 
+![[m451-6s-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* $d_1, \ldots, d_6$ one digit at a time: at each step the interval $[d_{n-1}, d_{n-1} + 10^{-(n-1)}]$ is cut into tenths, $d_n$ is the left end of the tenth containing $\sqrt2$ (blue), and the view zooms into it. The bottom line checks $d_n^2 \leq 2 < (d_n + 10^{-n})^2$; the zooms are by $10$ each, which is the Cauchy estimate $0 \leq d_m - d_n < 10^{-n}$.
+
 ## Completeness
 
 > [!theorem] Theorem §6★.10: $\widehat{\mathbb{Q}}$ Is Cauchy Complete

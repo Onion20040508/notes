@@ -55,6 +55,10 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 ![[m451-7-1.svg]]
 *The $(\varepsilon, N)$ picture: however narrow the band $s \pm \varepsilon$, some stage $N$ exists beyond which every dot (blue) lies inside; the early terms (gray) may wander freely — convergence is a statement about tails. (Compare §24: uniform convergence of functions is this same picture with dots replaced by whole graphs.)*
 
+![[m451-7-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* For $s_n = 1 + (-1)^n \tfrac{1.2}{n}$: $\varepsilon$ shrinks from $0.7$ to $0.032$ and back, and the dashed line marks the least $N$ with $|s_n - 1| < \varepsilon$ for all $n \geq N$, namely the first $N > 1.2/\varepsilon$. A smaller $\varepsilon$ needs a later $N$, but some $N$ always exists; the earlier terms (gray) do not matter.
+
 > [!remark]- Connections
 > - Computational version: [[§60 Convergence of Sequences#^def-60-1|342 Def. §60.1]] (convergence of complex sequences, with the modulus in place of the absolute value).
 > - Several-variable version: [[§1 Sequences and Limits in ℝⁿ#^def-1-1|452 Def. §1.1]] (convergence in ℝⁿ, with the Euclidean norm in place of the absolute value).

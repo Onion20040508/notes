@@ -309,6 +309,10 @@ To apply the theorems, we need a stock of basic limits.
 
 ^ex-9-6
 
+![[m451-9-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The same recursion as Newton's method for $g(x) = x^2 - 2$: $t_{n+1}$ is where the tangent to $g$ at $t_n$ (red) meets the axis, since $t_n - \tfrac{g(t_n)}{g'(t_n)} = \tfrac{t_n^2 + 2}{2t_n}$. After each step the view zooms in around $\sqrt2$ (the width of the view is shown). $t_2 = \tfrac32$, $t_3 = \tfrac{17}{12}$, $t_4 = \tfrac{577}{408}$: the error $|t_n - \sqrt2|$ is roughly squared at every step.
+
 > [!remark]- Connections
 > - Worked examples: this recursion is Newton's method, [[§35 Newton's Method#^def-35-1|Calc Def. §35.1]].
 
@@ -324,5 +328,9 @@ To apply the theorems, we need a stock of basic limits.
 > **(b)** Does $\lim x_n$ exist? **No!** Why: $x_1 = 1$ and $x_2 = 3 > 1$; by induction, if $x_n \geq 1$ then $x_{n+1} = 3x_n^2 \geq 3 > 1$, so $x_n \geq 1$ for all $n$. If the limit existed it would satisfy $a \geq 1$ (limits preserve $\geq$), contradicting (a). So the two candidate values rule each other out — the sequence diverges.
 
 ^ex-9-7
+
+![[m451-9-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The recursion $x_{n+1} = 3x_n^2$ as a staircase between $y = 3x^2$ and $y = x$. The two candidates of (a) are the crossings $0$ and $\tfrac13$. From $x_1 = 1$ the first step already leaves the picture ($x_2 = 3$, $x_3 = 27$, …; see also Example §9a.2). Started near $\tfrac13$, the staircase falls to $0$ from $0.30$ (blue) and climbs away from $0.34$ (red): $\tfrac13$ repels, so no sequence starting above it can converge.
 
 *Divergence to $\pm\infty$ and the ratio test continue in [[§9a Divergence to ±∞ and the Ratio Test]].*

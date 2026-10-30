@@ -103,6 +103,10 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 ![[m451-30-1.svg]]
 *The Generalized MVT as the MVT for a curve: as $t$ runs over $[a,b]$, the point $(g(t), f(t))$ traces a curve (blue) whose chord (dashed) has slope $\tfrac{f(b)-f(a)}{g(b)-g(a)}$. At some $t = x_0$ the tangent, with direction $(g'(x_0), f'(x_0))$ and slope $\tfrac{f'(x_0)}{g'(x_0)}$, is parallel to the chord (red). With $g(t) = t$ this is the picture of the ordinary MVT in §29.*
 
+![[m451-30-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* As $t$ runs over $[a, b]$, the point $(g(t), f(t))$ traces the curve and its tangent direction $(g'(t), f'(t))$ turns. At $t = x_0 \approx 1.067$ (where $g = 1.523$, as in the figure) the tangent is parallel to the chord: $\tfrac{f'(x_0)}{g'(x_0)} = \tfrac{f(b) - f(a)}{g(b) - g(a)}$.
+
 > [!proof]+ Proof
 > Following the pattern, define a new function whose critical point we seek:
 >

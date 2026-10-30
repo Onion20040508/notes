@@ -102,6 +102,10 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 ![[m451-29-1.svg]]
 *The [[Mean Value Theorem|Mean Value Theorem]]: somewhere in $(a,b)$ the tangent (red) is parallel to the secant (dashed). Rolle is the horizontal special case; the proof above is literally this picture — subtract the secant, and the extremum of what remains is $c$.*
 
+![[m451-29-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* A tangent slides along $f(x) = 0.3 + 1.4x - 0.62x^2$; its slope $f'(x) = 1.4 - 1.24x$ falls from $1.15$ through the secant slope $0.16$ to negative values. It equals the secant slope at $x = 1$, where the tangent is parallel to the chord: the point the theorem promises.
+
 > [!remark]- Connections
 > - Computational version: [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|Calc Thm. §29.2]] (with worked examples).
 > - Fails for complex-valued functions: [[§41 Derivatives of Functions w(t)#^ex-41-3|342 Ex. §41.3]] (w(t) = eⁱᵗ on [0, 2π] has w′ never zero although w(2π) = w(0)).
@@ -367,6 +371,10 @@ This computation finds the *formula* but presupposes the differentiability of $f
 
 ![[m451-29-3.svg]]
 *Left: the graph of $f^{-1}$ (red) is the mirror image of the graph of $f$ (blue) in the line $y = x$; the mirror swaps rise and run, so the tangent at $(y_0, x_0)$ has slope $\tfrac{1}{f'(x_0)}$. Right: for $f(x) = x^3$ at $x_0 = 0$, the horizontal tangent ($f'(0) = 0$) mirrors into a vertical one — $y^{1/3}$ is not differentiable at $0$.*
+
+![[m451-29-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The graph of $f(x) = \tfrac{x^2}{4}$ is flipped about the line $y = x$ (a rotation of the plane about the diagonal, seen from the front), carrying it to the graph of $f^{-1}$. The slope triangle at $(1, \tfrac14)$, run $2$ and rise $1$, comes out as run $1$ and rise $2$: $(f^{-1})'(\tfrac14) = 2 = \tfrac{1}{f'(1)}$.
 
 > [!remark]- Connections
 > - Several-variable version, with an invertible Jacobian in place of a nonzero derivative: [[§16 The Inverse Function Theorem#^thm-16-2|452 Thm. §16.2]].

@@ -195,6 +195,10 @@ Integration by parts needs a preliminary: products of integrable functions are i
 ![[m451-34-1.svg]]
 *The proof in one strip: $F(x)$ is the shaded area, and the increment $F(x+h) - F(x)$ is the thin strip — of area $f(x) h$ up to an error controlled by the continuity of $f$ at $x$. Dividing by $h$: $F'(x) = f(x)$.*
 
+![[m451-34-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* As $x$ moves, the area $F(x) = \int_a^x f$ (blue, top) accumulates while the graph of $F$ is drawn below. The red tangent to $F$ has slope $f(x)$, the height of the red segment above; the thin strip of width $h = 0.12$ has area $F(x+h) - F(x) \approx f(x)h$, compared in the title.
+
 > [!remark]- Connections
 > - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§24 The Change of Variables Formula#^lem-24-1|452 Lemma §24.1]]; computational version, with worked examples: [[Substitution Rule|Calc Thm. §43.1]].
 > - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§31 Absolute Continuity#^thm-31-2|551 Thm. §31.2]]) and $F' = f$ almost everywhere without any continuity ([[§30 Differentiating the Integral#^thm-30-7|551 Thm. §30.7]]).

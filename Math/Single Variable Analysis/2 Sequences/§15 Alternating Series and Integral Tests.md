@@ -60,6 +60,10 @@ tags: [real-analysis, math451]
 ![[m451-15-2.svg]]
 *The claim in the proof, drawn for $a_k = \tfrac1k$ from $n = 2$: the alternating tail starts with a step $+a_n$ to the right, and each later step reverses direction and is no longer than the one before. So the partial sums zigzag inside $[0, a_n]$ (shaded) and never leave it.*
 
+![[m451-15-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The claim of the proof step by step, for $a_k = \tfrac1k$ and $n = 2$: each step reverses direction and is no longer than the one before, so the partial sums of $a_n - a_{n+1} + a_{n+2} - \cdots$ never leave $[0, a_n]$ (shaded). The red bar on the axis is the interval between the last two partial sums, which shrinks.
+
 > [!remark]- Connections
 > - Computational version: [[§85 Alternating Series and Absolute Convergence#^thm-85-1|Calc Thm. §85.1]] (with worked examples).
 

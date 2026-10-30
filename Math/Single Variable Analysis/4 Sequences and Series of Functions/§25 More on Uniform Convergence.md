@@ -33,6 +33,10 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 ![[m451-25-1.svg]]
 *The escaping triangle for $n = 2, 4, 8$: base $[0, \tfrac2n]$ shrinks, peak $n$ grows, area (shaded for $n = 8$) stays exactly $1$. Pointwise the limit is $0$ everywhere, yet the integrals refuse to follow.*
 
+![[m451-25-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The triangle for $n$ from $2$ to $30$ and back: the base $[0, \tfrac2n]$ shrinks, the peak $n$ grows, and the shaded area stays $1$. At any fixed $x > 0$ (black dot: $x = 0.3$) the value is $0$ as soon as $\tfrac2n < x$, so the integrals do not converge to the integral of the limit.
+
 > [!remark]- Connections
 > - 551's version $k\,\chi_{(0,1/k)}$ shows the same escaping mass, makes Fatou's inequality strict and has no integrable dominator: [[§21 Consequences of the Monotone Convergence Theorem#^ex-21-1|551 Ex. §21.1]].
 

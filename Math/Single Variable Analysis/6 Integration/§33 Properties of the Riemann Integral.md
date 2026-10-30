@@ -36,6 +36,10 @@ It is often not easy to check integrability from the definitions — we need pro
 ![[m451-33-1.svg]]
 *Why monotone functions are integrable: on each subinterval of the equal partition, the gap between upper and lower rectangles is a box of width $\tfrac{b-a}{n}$ and height $f(t_k) - f(t_{k-1})$ (red). Slid sideways, the boxes stack into one column of height $f(b) - f(a)$ — the telescoping sum — so $U - L = \bigl(f(b) - f(a)\bigr)\tfrac{b-a}{n}$. A jump of $f$ (hollow and filled dots) changes nothing.*
 
+![[m451-33-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The gap boxes of the proof slide sideways into one column. Since $f$ is increasing, the box over $[t_{k-1}, t_k]$ spans heights $f(t_{k-1})$ to $f(t_k)$, so the boxes stack without overlap into a column of height $f(b) - f(a)$ and width $\tfrac{b-a}{n}$: the telescoping sum. Shown for $n = 5$ and $n = 10$; the jump of $f$ does no harm.
+
 > [!remark]- Connections
 > - The countability of the discontinuities mentioned here is proved in [[§28 Differentiation Theory#^thm-28-1|551 Thm. §28.1]], and a monotone function is even differentiable a.e. by [[§29 Lebesgue's Differentiation Theorem#^thm-29-1|551 Thm. §29.1]].
 

@@ -84,6 +84,10 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 ![[m451-36-2.svg]]
 *The p-integrals on $[1, \infty)$: the three graphs look alike, but only for $p = 2$ (blue) is the area under the whole tail finite, $\int_1^\infty x^{-2}\,dx = \tfrac{1}{p-1} = 1$; for $p = 1$ (dashed) and $p = \tfrac12$ (red), $\int_1^d$ grows without bound as $d \to \infty$.*
 
+![[m451-36-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* $d$ runs from $1$ to $400$ (right panel: logarithmic $d$-axis). The running integrals $\int_1^d x^{-p}\,dx$ are $1 - \tfrac1d \to 1$ for $p = 2$ (blue), $\log d$ for $p = 1$ (dashed) and $2(\sqrt d - 1)$ for $p = \tfrac12$ (red): the three graphs on the left look alike, but only $p = 2$ gives a finite area.
+
 > [!remark]- Connections
 > - Computational version: [[§58 Improper Integrals#^thm-58-1|Calc Thm. §58.1]]; the p-series, [[§83 The Integral Test and Estimates of Sums#^thm-83-2|Calc Thm. §83.2]].
 
@@ -102,6 +106,10 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 
 ![[m451-36-3.svg]]
 *The running integral $\int_0^d \sin x\,dx = 1 - \cos d$ (blue) swings between $0$ and $2$ forever, driven by the alternating lobes of $\sin x$ (gray): no limit as $d \to \infty$, not even $\pm\infty$ — the symbol $\int_0^\infty \sin x\,dx$ has no meaning.*
+
+![[m451-36-a2.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* $d$ runs from $0$ to $19.5$: the lobes of $\sin x$ are added with sign (blue positive, red negative), and the running integral $1 - \cos d$ (blue curve) swings between $0$ and $2$ forever. It has no limit, not even $\pm\infty$.
 
 > [!remark]- Connections
 > - Computational version: [[§85 Evaluation of Improper Integrals#^ex-85-1|342 Ex. §85.1]] (a principal value that exists although the improper integral does not).

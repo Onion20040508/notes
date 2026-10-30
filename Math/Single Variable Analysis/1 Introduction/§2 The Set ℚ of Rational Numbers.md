@@ -309,6 +309,10 @@ This matching criterion makes sense even when counting does not, so we turn it i
 ![[m451-2-1.svg]]
 *The listing strategy of the proof: the pair $(p,q)$ sits at a grid point, and the dashed diagonals collect the pairs with $p+q = 2, 3, \ldots, 6$. Walking the diagonals in turn, each with increasing $p$ (red arrows), lists the coprime pairs (blue) and skips $(2,2), (2,4), (3,3), (4,2)$ (hollow), whose values $1, \tfrac12, 1, 2$ already appeared in lowest terms.*
 
+![[m451-2-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The listing of the proof, one grid point at a time: the walk runs through the diagonals $p + q = 2, 3, \ldots, 8$, each with increasing $p$. Coprime pairs (blue) receive the next number in the list on the right; the others (hollow) are skipped, because their value already appeared in lowest terms.
+
 > [!remark]- Connections
 > - Elementary version: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]] (Cantor, 1874).
 > - 551 proves it by the same diagonal listing of ℕ × ℕ ([[§1 Countability and Set Theory#^ex-1-3|551 Ex. §1.3]]) and again as a corollary of countable unions ([[§3 Countability of Rationals and Unions#^cor-3-2|551 Cor. §3.2]]).

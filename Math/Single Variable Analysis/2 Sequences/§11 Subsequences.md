@@ -149,6 +149,10 @@ This is what the example $s_n = (-1)^n$ leads us to expect.
 ![[m451-11-2.svg]]
 *The Bolzano–Weierstrass construction for a bounded, non-monotone sequence (gray dots) with $\limsup s_n = \overline{s}$. At step $k$ a term $s_{n_k}$ (red) is chosen inside the window $[\overline{s} - \tfrac1k,\, \overline{s} + \tfrac1k]$ (red bars), with index beyond $n_{k-1}$; the windows shrink, so $s_{n_k} \to \overline{s}$.*
 
+![[m451-11-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The proof's construction for $s_n = \sin n$, where $\overline{s} = \limsup s_n = 1$. At step $k$ the window $[\overline{s} - \tfrac1k, \overline{s} + \tfrac1k]$ (red band) is drawn, and $n_k$ is the first index after $n_{k-1}$ with $s_{n_k} \geq \overline{s}_{n'} - \tfrac1k$ (here $n' = n_{k-1} + 1$). This gives $n_k = 1, 2, 8, 14, 20, 21, 27, 33$; the chosen terms (red) are squeezed toward $1$.
+
 ## Subsequence Limits
 
 > [!definition] Definition §11.2: Subsequence Limit

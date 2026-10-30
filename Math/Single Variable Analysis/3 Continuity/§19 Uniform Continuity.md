@@ -68,6 +68,10 @@ In the $(\varepsilon, \delta)$ definition of continuity, one important point: $\
 ![[m451-19-1.svg]]
 *Why $\tfrac1x$ fails on $(0,+\infty)$: boxes of the same height $2\varepsilon$ (red), each as wide as the graph allows while leaving through the sides. Far out the curve is flat and the box is wide; near $0$ it is steep and the admissible width $2\delta$ shrinks to nothing — no single $\delta$ serves all points. On $[a, +\infty)$ the steepness is capped, and $\delta = a^2\varepsilon$ works everywhere.*
 
+![[m451-19-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* A box of fixed height $2\varepsilon$, $\varepsilon = 0.25$, slides along $\tfrac1x$ as $x_0$ runs from $2.3$ down to $0.2$ and back; its width is the widest admissible window, $\delta(x_0) = \tfrac{\varepsilon x_0^2}{1 + \varepsilon x_0}$. Far out the box is wide; near $0$ it collapses, so no single $\delta$ works on all of $(0, +\infty)$. On $[a, +\infty)$ the bound $\delta = a^2\varepsilon$ of the proof does.
+
 ## Continuity on Closed Intervals Implies Uniform Continuity
 
 > [!theorem] Theorem §19.1: Uniform Continuity on Closed Bounded Intervals

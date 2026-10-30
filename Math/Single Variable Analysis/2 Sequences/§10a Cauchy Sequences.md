@@ -123,6 +123,10 @@ Conversely, is every Cauchy sequence convergent ([[§10a Cauchy Sequences#^thm-1
 ![[m451-10-4.svg]]
 *Cauchy implies convergent, with no limit in sight: the band is anchored at a *term* $s_N$ (red), not at a limit. Every later term lies within $\varepsilon$ of $s_N$, so the whole tail — and with it $\underline{s}_N \leq \overline{s}_N$, hence $\liminf s_n$ and $\limsup s_n$ — is caught in an interval of length $2\varepsilon$.*
 
+![[m451-10-a3.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The band of the figure for shrinking $\varepsilon$: anchored at a term $s_N$ (red), not at a limit, with $N$ the least index for which every later term lies within $\varepsilon$ of $s_N$. As $\varepsilon$ shrinks, $N$ moves right and the band narrows around the tail, without the limit ever being used.
+
 > [!example] Example §10a.1: A Contraction-Type Estimate
 > Assume $(s_n)$ satisfies $|s_{n+1} - s_n| < 2^{-n}$ for all $n \geq 1$. Prove $(s_n)$ is a Cauchy sequence, and hence convergent.
 >

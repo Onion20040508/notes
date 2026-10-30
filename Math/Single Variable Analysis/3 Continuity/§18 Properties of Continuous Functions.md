@@ -278,6 +278,10 @@ So a set on which the boundedness conclusion of the EVT holds for *all* continuo
 ![[m451-18-3.svg]]
 *A curve with $f(0) = f(2)$ and a horizontal chord of length $1$ (red) with both ends on the graph: $f(x_0) = f(x_0 + 1)$. The point $x_0$ is the zero of $g(x) = f(x+1) - f(x)$ on $[0,1]$ provided by the sign-change corollary.*
 
+![[m451-18-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The chord of length $1$ slides, starting at $(x, f(x))$, $x$ from $0$ to $1$. The orange gap is $g(x) = f(x+1) - f(x)$, traced below: it starts at $g(0) = f(1) - f(0) > 0$ and ends at $g(1) = f(2) - f(1) = -g(0)$, so it changes sign, and where $g = 0$ (tick, $x_0 \approx 0.6235$ as in the figure) both ends of the chord lie on the graph.
+
 > [!remark] Remark: Why Fixed Point Theorems Matter
 > A fixed point theorem asserts the existence of a solution of an equation $f(x) = x$ — and $f$ can be a continuous map from *any* topological space to itself, not just $[0,1]$. For the unit square, the famous **Brouwer fixed point theorem** says every continuous $f: [0,1]^2 \to [0,1]^2$ has a fixed point; the same holds for the cube $[0,1]^3$ and in every dimension. (A cousin of this circle of ideas is the reason there is a spot on everyone's head where the hair cannot be combed flat.) Only in dimension one is there a simple proof, as above; higher dimensions require advanced tools of topology. In this general form, fixed point theorems are important far beyond mathematics — in economics, game theory, and elsewhere.
 

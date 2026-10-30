@@ -136,6 +136,10 @@ The supremum also admits a *sequential* characterization — the limit-language 
 ![[m451-10-3.svg]]
 *The recursion $s_{n+1} = \sqrt{1+s_n}$ as a staircase (red) between the graph $y = \sqrt{1+x}$ (blue) and the diagonal $y = x$: from $s_1 = 1$ the steps climb (the sequence increases) toward the crossing point $\tfrac{1+\sqrt5}{2}$. The bound $M = 2$ propagates because the graph lies below the diagonal at $x = 2$: $\sqrt{1+2} = \sqrt3 < 2$.*
 
+![[m451-10-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The staircase built step by step from $s_1 = 1$: up to the graph gives $s_{n+1} = \sqrt{1 + s_n}$, across to the diagonal makes it the next input. The steps climb (the sequence increases) and shrink toward the crossing point $\tfrac{1+\sqrt5}{2} = 1.6180\ldots$.
+
 > [!theorem] Theorem §10.3: Unbounded Monotone Sequences
 > If $(s_n)$ is increasing but not bounded above, then $\lim s_n = +\infty$. If $(s_n)$ is decreasing but not bounded below, then $\lim s_n = -\infty$.
 
@@ -193,6 +197,10 @@ In general a sequence is neither increasing nor decreasing, so the theorem above
 
 ![[m451-10-2.svg]]
 *The envelopes at work for $s_n = (-1)^n\left(1 + \tfrac2n\right)$: the sequence (dots) has no limit, but the tail-suprema $\overline{s}_N$ (red, decreasing) and tail-infima $\underline{s}_N$ (blue, increasing) are monotone and bounded, so each converges — to $\limsup = 1$ and $\liminf = -1$.*
+
+![[m451-10-a2.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The tail $\{s_n : n \geq N\}$ (shaded) moves right, $N = 1, \ldots, 30$, for $s_n = (-1)^n(1 + \tfrac2n)$. Its supremum $\overline{s}_N$ (red) can only drop and its infimum $\underline{s}_N$ (blue) can only rise, as terms leave the tail; both staircases are monotone and bounded, so they converge, to $\limsup s_n = 1$ and $\liminf s_n = -1$.
 
 > [!theorem] Proposition §10.5: Lim Inf Is at Most Lim Sup
 > $\displaystyle \liminf_{n\to+\infty} s_n \leq \limsup_{n\to+\infty} s_n$.

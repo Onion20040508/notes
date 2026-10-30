@@ -31,6 +31,10 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 ![[m451-24-1.svg]]
 *The $\varepsilon$-tube around the limit $f \equiv 0$: uniform convergence means the whole graph of $f_n$ eventually enters the tube. The blue curve is inside; the peak of $n x^n(1-x)$ (height $\to \tfrac1e$ at $x = \tfrac{n}{n+1}$) escapes for every $n$ — the picture behind “Locating the worst point” below.*
 
+![[m451-24-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* $n = 1, \ldots, 40$ with the $\varepsilon$-tube of width $\varepsilon = 0.15$ (gray). Left: the peak of $n x^n(1-x)$ (at $x = \tfrac{n}{n+1}$) has height tending to $\tfrac1e > \varepsilon$, so the graph never enters the tube, although $f_n(x) \to 0$ at every $x$. Right: $\sup|(x - \tfrac1n)^2 - x^2| = \tfrac2n - \tfrac1{n^2}$, so from $n = 13$ on the whole graph lies inside the tube: Example §24.5 converges uniformly.
+
 > [!remark]- Connections
 > - Restated in 551 as [[§17 Simple Functions and Modes of Convergence#^def-17-5|551 Def. §17.5]]; on a set of finite measure, a.e. convergence is uniform off a set of arbitrarily small measure by [[§18 Egorov's and Lusin's Theorems#^thm-18-1|551 Thm. §18.1]] (Egorov).
 > - Computational version: [[§13 Uniform Convergence#^def-13-2|341 Def. §13.2]] (pointwise versus uniform convergence, with worked examples for Fourier series).

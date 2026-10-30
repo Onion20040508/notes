@@ -190,6 +190,10 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 ![[m451-26-1.svg]]
 *Partial sums $S_N(x) = \sum_{n=0}^{N} \frac{(-1)^n}{2n+1} x^{2n+1}$ for $N = 2, 6, 15$ (blue, darker as $N$ grows) against $\arctan x$ (black). On $(-1,1)$ they close in on $\arctan x$; for $|x| > 1$ (shaded) the terms do not tend to $0$ and the partial sums break away, in directions alternating with the sign of the last term — although $\arctan$ itself is perfectly smooth there. The radius $R = 1$ is a property of the series, not visible in the graph of the function.*
 
+![[m451-26-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The partial sums $S_N$ for $N = 0, \ldots, 25$ (blue) against $\arctan x$ (black). On $(-1, 1)$ the error shrinks (readout at $x = 0.9$); for $|x| > 1$ (shaded) the terms do not tend to $0$ and $S_N$ swings off ever more violently (readout at $x = 1.2$).
+
 > [!remark]- Connections
 > - Worked examples: the derivative of arctan, [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-8|Calc Thm. §22.8]]; the arctangent series by term-by-term integration, [[§89 Representations of Functions as Power Series#^ex-89-3|Calc Ex. §89.3]].
 

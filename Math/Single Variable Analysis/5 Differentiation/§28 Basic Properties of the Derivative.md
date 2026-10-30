@@ -21,6 +21,10 @@ tags: [real-analysis, math451]
 ![[m451-28-2.svg]]
 *The derivative as a limit of secant slopes: as $x \to a$, the secants (blue, lighter to darker) through $(a, f(a))$ and $(x, f(x))$ pivot into the tangent line (red), whose slope is $f'(a)$. Only $x \neq a$ is ever used — at $x = a$ there is no secant.*
 
+![[m451-28-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $x \to a = 1$ from the right, then from the left: the secant through $(a, f(a))$ and $(x, f(x))$ pivots into the tangent (dashed red). For $f(x) = 0.25 + 0.18x^2$ the secant slope is $0.18(x + 1)$, which tends to $f'(1) = 0.36$; $x = a$ itself is never used.
+
 > [!remark]- Connections
 > - In several variables it splits into partial derivatives, [[§5 Partial Derivatives#^def-5-1|452 Def. §5.1]], directional derivatives, [[§9 Directional Derivatives#^def-9-1|452 Def. §9.1]], and differentiability as linear approximation, [[§7 Differentiability#^def-7-1|452 Def. §7.1]].
 > - Computational version: [[§14 Derivatives and Rates of Change#^def-14-3|Calc Def. §14.3]], [[§15 The Derivative as a Function#^def-15-3|Calc Def. §15.3]] (with worked examples).
@@ -259,6 +263,10 @@ The most useful theorem:
 
 ![[m451-28-1.svg]]
 *The oscillation ladder with its envelopes (dashed): $x \sin\tfrac1x$ hugs $\pm x$ — continuous at $0$, not differentiable; $x^2 \sin\tfrac1x$ hugs $\pm x^2$ — differentiable, but $f'$ oscillates without limit. Each extra power of damping flattens the envelope by one order at the origin.*
+
+![[m451-28-a2.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* Zooming in at $0$ with equal scales, window $[-w, w]^2$ from $w = 0.33$ to $0.0025$. Left: $x\sin\tfrac1x$ fills the wedge $\pm x$ at every scale, so the difference quotient $\sin\tfrac1x$ has no limit and there is no tangent. Right: $x^2\sin\tfrac1x$ lies between $\pm x^2$, which flattens onto the axis: differentiable at $0$ with derivative $0$. Where the oscillations are finer than a pixel the graph is drawn as the band it fills.
 
 Computations with piecewise functions — the corner examples above — all follow one pattern. It deserves a statement:
 
