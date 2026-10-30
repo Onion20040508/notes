@@ -250,6 +250,10 @@ What the image of an immersion looks like — locally a submanifold, globally no
 ![[m591-18-3.svg]]
 *The hook. The domain is an open interval, so neither end is attained: the left end of the image is missing (hollow), and the right end only approaches $P$. But $P$ is in the image, reached at $t_0$ by the strand passing through it — so points of the image near $P$ come from parameters near $t_0$* and *from parameters near $b$, which is exactly the failure of continuity of $\gamma^{-1}$. Lee's figure-eight (Example 4.19) is an explicit instance with both ends returning, $\beta(t) = (\sin 2t, \sin t)$ on $(-\pi, \pi)$, where the image near the origin is an X although $\beta$ is injective.*
 
+![[m591-18-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Left: the point runs along the nodal cubic $(t^2 - 1,\ t^3 - t)$ of [[§43 Immersions#^ex-43-1|Example §43.1]], passing the origin at $t = -1$ and again at $t = 1$. Right: a hook drawn for the picture, an injective immersion of an open interval whose end returns to $P$. As the parameter runs to the open end, a small disc at $P$ (red) meets the image in a T: points from near $t_0$ and from near $b$.
+
 > [!remark]- Connections
 > - The image of Lee's figure-eight, as a topological space, is the wedge of two circles: [[Figure eight|590 Figure eight]].
 

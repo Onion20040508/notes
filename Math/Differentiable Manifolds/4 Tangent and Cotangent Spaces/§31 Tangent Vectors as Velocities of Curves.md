@@ -202,6 +202,10 @@ the Jacobian carries the velocity of the coordinate curve $\varphi \circ \gamma$
 ![[m591-12-14.svg]]
 *The proof in one picture. Downstairs, in the chart, the curve is the straight line through $\varphi(p)$ in the direction of the coefficient vector $a = (D[x^1], \ldots, D[x^n])$. The chart carries it upstairs to a curve $\gamma$ in $M$, bent by whatever distortion $\varphi^{-1}$ introduces. The bending is invisible to the velocity, which depends only on $(\varphi \circ \gamma)'(0) = a$ — so the velocity is $D$.*
 
+![[m591-12-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* Four curves on $S^2$ through $p$ with the same velocity $v$, built as $\gamma_k(t) = (p + tv + t^2w_k)/|\cdot|$ with different $w_k$ (chosen for the picture). They bend apart at second order; zooming in at $p$, they become one straight segment along $v$. A tangent vector is what all of them share.
+
 ![[m591-12-15.svg]]
 *The same construction as a diagram: the curve is built downstairs as $c$ and lifted by $\varphi^{-1}$, and the triangle commutes, $\varphi \circ \gamma = c$.*
 

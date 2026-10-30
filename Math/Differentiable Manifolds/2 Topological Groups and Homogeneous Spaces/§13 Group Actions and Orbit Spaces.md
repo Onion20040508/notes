@@ -166,6 +166,10 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 ![[m591-6-1.svg]]
 *The orbits of $\mathrm{SO}(2)$ on $\mathbb{R}^2$: each circle about the origin is one orbit and the origin is its own orbit; the projection $\pi$ collapses each circle to its radius, so $\mathbb{R}^2/\mathrm{SO}(2) \cong [0,\infty)$.*
 
+![[m591-6-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Rotations moving points along their orbits: each circle about the origin is one orbit and the origin is fixed. Right, the orbit space, one point per circle, $\mathbb{R}^2/\mathrm{SO}(2) \cong [0, \infty)$.
+
 > [!example] Example §13.5: $\mathrm{SO}(3)$ Acting on $\mathbb{R}^3$
 > This is the previous example one dimension up, with spheres in place of circles. Let $\mathrm{SO}(3,\mathbb{R})$ act on $\mathbb{R}^3$ by matrix multiplication. Orthogonal matrices preserve the norm ($|gx|^2 = (gx)\cdot(gx) = x \cdot x = |x|^2$), so each orbit lies in a sphere $S_r = \{|x| = r\}$ centered at the origin. In fact:
 > - $\mathcal{O}_0 = \{0\}$.
@@ -317,6 +321,10 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ![[m591-6-2.svg]]
 *The orbits of $t \cdot (x,y) = (tx, y/t)$ in the first quadrant: the hyperbola branches $xy = c$ and the two positive half-axes. The orbit of $z_n = (1, \tfrac1n)$ also passes through $\tfrac1n \cdot z_n = (\tfrac1n, 1)$, so this one orbit has a point near $(1,0)$ and a point near $(0,1)$: $[z_n]$ converges to both $[(1,0)]$ and $[(0,1)]$, as in the proof below.*
+
+![[m591-6-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* First the action itself: points slide along the hyperbolas $xy = c$ under $t \cdot (x, y) = (tx, y/t)$. Then the orbit of $z_n = (1, 1/n)$ for $n = 1, \ldots, 15$ (red): it contains $z_n$, near $(1, 0)$, and $\tfrac1n \cdot z_n = (\tfrac1n, 1)$, near $(0, 1)$, and hugs both half-axes as $n$ grows. So $[z_n]$ converges to the two different orbits $[(1, 0)]$ and $[(0, 1)]$.
 
 > [!proof]+ Proof (PSet 1, Problem 3)
 > The orbits of $(1,0)$ and $(0,1)$ are the positive $x$-axis $\{(t,0) \mid t>0\}$ and the positive $y$-axis $\{(0,s) \mid s>0\}$; they are distinct classes, since $t \cdot (1,0) = (t,0)$ never has a nonzero second coordinate. Consider $z_n = (1, \tfrac1n) \in X$.

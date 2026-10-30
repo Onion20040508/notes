@@ -472,6 +472,10 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ![[m591-2-3.svg]]
 *Two charts on the same manifold. On the overlap $U \cap V$ (orange) both charts apply, and the two pictures of it, $\varphi(U \cap V)$ and $\psi(U \cap V)$, are compared by the transition map $\psi \circ \varphi^{-1}$ — a homeomorphism between open subsets of $\mathbb{R}^n$ by [[§2 Topological Manifolds#^prop-2-11|Proposition §2.11]]. [[· 3 Smooth Structures|Chapter 3]] defines smooth structures by asking these maps to be smooth.*
 
+![[m591-2-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The two hemisphere charts of [[§8 Spheres#^ex-8-2|Example §8.2]], made visible. $U = \{z > 0\}$ with its grid of $\varphi$-coordinates drops onto the open disk: $\varphi(x, y, z) = (x, y)$ is literally the vertical projection, and the grid lines are carried along, so $\varphi$ is a homeomorphism onto $\varphi(U)$. Then $V = \{x > 0\}$ is projected sideways by $\psi(x, y, z) = (y, z)$. The overlap $U \cap V$ (orange) has two pictures, and as a point moves in it, its two images are related by $\psi \circ \varphi^{-1}(x, y) = (y, \sqrt{1 - x^2 - y^2})$.
+
 > [!remark] Remark: Preview: What Makes a Manifold *Differentiable*
 > For a topological manifold, transition functions are homeomorphisms between open subsets of $\mathbb{R}^n$—and that is all one can say. To speak of *differentiable* manifolds, we will **require** that all transition functions be differentiable (in fact $C^\infty$).
 >

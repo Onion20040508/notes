@@ -241,6 +241,10 @@ The proof starts from a countable cover by open sets with compact closures, whic
 
 *(Not from lecture; figure added, computed.)* The construction on $M = \mathbb{R}$, with $V_1 = (-1, 1)$ and $V_j = \{ j - 1.6 < |x| < j \}$ for $j \ge 2$, and $\chi_j$ obtained by normalizing bumps positive exactly on $V_j$. Then $f = \sum_j j\chi_j$ climbs one step on each successive $V_j$, so it grows like $|x|$. The sublevel set $f^{-1}((-\infty, 2.5])$ (red) lies inside $\overline{V_1} \cup \overline{V_2} \cup \overline{V_3} = [-3, 3]$, as the claim with $N = 3$ says.
 
+![[m591-66-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The construction of the figure on $M = \mathbb{R}$ (drawn on $[-5.8, 5.8]$): bumps $\psi_j$ positive exactly on the $V_j$, then normalized, $\chi_j = \psi_j / \sum_k \psi_k$. Their sum (black) goes from a wavy curve, between $0.04$ and $1$, to the constant $1$.
+
 “This technique of using partitions of unity is a very common technique in this subject, and the best way to learn to use it is to use it in a homework problem with hints.” The next assignment will have “at least one, maybe a couple of applications of partitions of unity.”
 
 **Transcription note (Lecture 23).** The board defined $f = \sum_{j \ge 0} j\chi_j$ but wrote the union in the claim from $i = 1$ (Uribe: “wherever your index starts”). These notes index the cover and the partition from $1$, as Lee does. If the index starts at $0$, the union in the claim must start at $i = 0$ too. Otherwise a point of $V_0$ outside $V_1, \ldots, V_N$ can have $f(p) = \sum_{j > N} j\chi_j(p) < N + 1$, since then $\sum_{j > N}\chi_j(p) = 1 - \chi_0(p)$.

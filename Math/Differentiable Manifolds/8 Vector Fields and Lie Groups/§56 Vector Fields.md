@@ -287,6 +287,10 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ![[m591-45-1.svg]]
 *A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of Uribe's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.*
 
+![[m591-45-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Left: $h(t) = e^{-1/t}$ (dashed) and the smooth step $g = h(t)/(h(t) + h(1 - t))$, $0$ for $t \le 0$ and $1$ for $t \ge 1$. Right: the bump $\chi(x) = g\big((r_2 - |x|)/(r_2 - r_1)\big)$ as the radii vary, $1$ on the plateau $[-r_1, r_1]$ (blue) and $0$ outside $(-r_2, r_2)$, smooth everywhere.
+
 **Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as Uribe said (“and then you take the closure of that”). Without the closure, the support of a bump function would not be compact.
 
 > [!theorem] Proposition §56.4: Bump Functions Exist

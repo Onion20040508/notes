@@ -58,6 +58,10 @@ tags: [differentiable-manifolds, math591]
 
 Lemma [[§63 Sard's Theorem#^lem-63-2|§63.2]] for $m = 2$, $n = 1$, $k = 2$ ($n(k+1) = 3 > 2$). The square $E$ of side $R$ is cut into $K^2$ squares of side $R/K$ (here $K = 6$). A small square that contains a point of $Z$ (red) is mapped into an interval of length $2A'(R/K)^3$, because the Taylor expansion at that point starts in degree $3$. At most $K^2$ such intervals have total length $\le 2A' R^3 K^{-1} \to 0$: the exponent $n(k+1) = 3$ beats the count $K^m = K^2$.
 
+![[m591-59-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The lemma's estimate with $F(x, y) = (x^2 + y^2 - \tfrac14)^3$, chosen so that all derivatives of orders $1$ and $2$ vanish on the circle $Z$ (red). The square $[-1, 1]^2$ is cut into $K^2$ squares, $K = 2, 4, \ldots, 128$. The images of the squares meeting $Z$ have total length (computed, right) falling from $21.5$ to $0.001$, at least as fast as $K^{-1}$, as the lemma's bound says (here faster).
+
 > [!theorem] Theorem §63.3: Sard's Theorem
 > Let $F : M \to N$ be a smooth map, and
 >
@@ -79,6 +83,10 @@ Lemma [[§63 Sard's Theorem#^lem-63-2|§63.2]] for $m = 2$, $n = 1$, $k = 2$ ($n
 ![[m591-59-1.svg]]
 
 The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical points are $x = \pm 1$, where $f' = 0$, so the singular values are just $f(\pm 1) = \mp 2$, two points, a set of measure zero. Every other $c$ is a regular value: at each of its preimages the slope is nonzero.
+
+![[m591-59-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The level $c$ sweeps from $-4$ to $4$ and back across $f(x) = x^3 - 3x$; its preimages are marked with their slopes. Every $c$ is a regular value except $\pm 2$, where a preimage has $f' = 0$ (red): the set of critical values is two points.
 
 > [!proof]+ Proof
 > *(Not given in lecture — “it's a big theorem. It's a long proof” — filled in, following Lee's proof of Theorem 6.10.)* By Lemma [[§63 Sard's Theorem#^lem-63-1|§63.1]], it suffices to prove, for every $m \ge 0$, the Euclidean statement

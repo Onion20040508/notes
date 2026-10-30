@@ -142,6 +142,10 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ![[m591-12-19.svg]]
 *Two representatives of one germ, drawn as graphs over $M = \mathbb{R}$: $f$ (blue) on $U$ and $g$ (red, dashed) on $V$ agree on the shaded open set $W \ni p$ and part ways outside it. The germ $[f] = [g]$ keeps only the common piece near $p$; how large the domains are and what the functions do away from $p$ is forgotten — which is exactly why shrinking a representative's domain is free.*
 
+![[m591-12-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* [[§27 Germs#^ex-27-1|Example §27.1]] in motion: $f_n(x) = h(x^2 - 1/n^2)$ for $n = 1, \ldots, 12$ (blue; earlier ones gray). Each $f_n$ vanishes on $[-\tfrac1n, \tfrac1n]$ (red), so each represents the zero germ at $0$, but the intervals shrink to $\{0\}$: no single neighbourhood serves all of them.
+
 > [!example] Example §27.2: Germs Versus Taylor Series
 > Take $M = \mathbb{R}^n$ and $x_0 \in \mathbb{R}^n$. All partial derivatives of a function at $x_0$ depend only on its germ, so the Taylor series construction descends to a map into the ring of formal power series,
 >
@@ -208,6 +212,10 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^pf-ex-27-2
 
 *Uses:* [[§27 Germs#^def-27-2|Def. §27.2]], [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]
+
+![[m591-12-a3.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Why the flat function $h(s) = e^{-1/s}$ has Taylor series $0$ at $0$ although its germ is not $0$, on log scales as the window shrinks toward $0$. $h$ (red) is below $s^2$ on all of $(0, 1)$, drops below $s^4$, $s^8$, $s^{16}$ (gray) once $s < 0.116$, $0.038$, $0.015$ (computed), and below every power eventually.
 
 > [!remark]- Connections
 > - The one-variable flat function $e^{-1/x^2}$, a smooth function that is not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; Taylor series: [[§31 Taylor's Theorem#^def-31-1|451 Def. §31.1]].

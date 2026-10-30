@@ -63,6 +63,10 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 ![[m591-14-1.svg]]
 *The helix is the interval $(0, 4\pi)$, lifted so that $F$ becomes the vertical projection onto the circle. On the orange interval $U$ the projection is a diffeomorphism onto the arc $V$; but the point $q \in V$ has a second preimage $t_1 + 2\pi$, on the other turn and outside $U$. Local invertibility does not see it.*
 
+![[m591-14-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The point $t$ runs along the helix over $(0, 4\pi)$ and its image $F(t) = (\cos t, \sin t)$ along the circle. On $U$ (orange) $F$ is a diffeomorphism onto the arc $V$, but the same point of $V$ is also $F(t \pm 2\pi)$ (red), on the other turn: a local diffeomorphism that is not injective.
+
 > [!remark]- Connections
 > - As a covering map of topological spaces: [[§31 Covering Spaces#^thm-31-2|590 §31.2]] ($\mathbb{R} \to S^1$ is a covering map).
 

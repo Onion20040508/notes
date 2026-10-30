@@ -28,6 +28,10 @@ tags: [differentiable-manifolds, math591]
 
 A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the total area: about $0.79$ with $8$ rectangles, about $0.34$ with $32$, and as small as desired with more — so $S$ has measure zero.
 
+![[m591-58-a1.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* A curve (chosen for the picture) covered by $4, 8, \ldots, 256$ rectangles, each the bounding box of one piece. The total area falls from $0.22$ (8 rectangles) to $0.006$ (256): as small as we like, so the curve has measure zero.
+
 > [!theorem] Lemma §62.1: Basic Properties of Measure Zero
 > In $\mathbb{R}^n$:
 >

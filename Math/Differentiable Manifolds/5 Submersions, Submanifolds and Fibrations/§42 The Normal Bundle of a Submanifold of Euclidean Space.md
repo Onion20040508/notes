@@ -396,6 +396,10 @@ $$
 
 *The parabola $y = x^2$ (blue, drawn for $|x| \le 1.6$) and its set of focal points, the curve $\mathbf{r}$ (red, drawn for $|a| \le 0.82$). The red curve is symmetric about the $y$-axis and has a cusp at $(0, \frac12)$ (the dot), the focal point over the vertex; as $|a|$ grows the focal points move out and up, $\mathbf{r}(a)$ lying on the normal line at $(a, a^2)$, on the concave side. The cusp is not the optical focus $(0, \frac14)$ of the parabola: “focal” here refers to the endpoint map, and the remark *Focal Points Are Centres of Curvature* explains what these points are.*
 
+![[m591-39-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The normal line (red) at $(a, a^2)$ as $a$ runs from $-0.9$ to $0.9$ and back; earlier normals are gray. The focal point $\mathbf{r}(a) = (-4a^3, 3a^2 + \tfrac12)$ on the current normal, where neighbouring normals meet, traces the curve of focal points (blue), the envelope of the normals.
+
 > [!remark] Remark: Focal Points Are Centres of Curvature
 > *(Not from the assignment.)* At the critical point over $p = (a, a^2)$ the normal vector is $v = \lambda(-2a, 1)$ with $\lambda = \frac{1 + 4a^2}{2}$, of length
 >

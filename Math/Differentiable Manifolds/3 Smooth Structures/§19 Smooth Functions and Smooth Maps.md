@@ -324,6 +324,10 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 ![[m591-8-9.svg]]
 *The two coordinate pictures of [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Ex. §19.1]]: left, the transition function $\psi\circ\varphi^{-1}(t)=\sqrt[3]{t}$, whose vertical tangent at $0$ makes the two charts incompatible; right, the coordinate representation $\psi\circ\Phi\circ\varphi^{-1}(t)=t$ of $\Phi(x) = x^3$, the identity, which is why $\Phi$ is a diffeomorphism.*
 
+![[m591-8-a3.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Left: the ticks $x = k/8$ of the chart $\varphi = \mathrm{id}$, then the ticks $\psi = k/8$ of the chart $\psi(p) = p^{1/3}$, drawn in the coordinate $x$, at $x = (k/8)^3$: they crowd at $0$. Right: the transition $\psi \circ \varphi^{-1}(t) = \sqrt[3]{t}$ with its slope, which is infinite at $0$, so the two charts are not smoothly compatible.
+
 > [!theorem] Proposition §19.8: Transport of Smooth Structure
 > Let $N$ be a smooth $n$-manifold, $X$ a topological space, and $h : X \to N$ a homeomorphism. Then:
 > 1. $X$ is a topological $n$-manifold, and $\mathcal{A}_h = \{\, (h^{-1}(V),\ \psi \circ h) \mid (V,\psi) \text{ a smooth chart of } N \,\}$ is a smooth atlas on $X$;

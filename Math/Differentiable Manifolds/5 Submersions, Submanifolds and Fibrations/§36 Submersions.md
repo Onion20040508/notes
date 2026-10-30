@@ -320,6 +320,10 @@ Stated in Lecture 10 and proved in Lecture 11, below. The inequality $n \le m$ n
 ![[m591-14-4.svg]]
 *What the normal form says, for $m = 2$ and $n = 1$. Left: near $p$ the fibres $F^{-1}(c)$ of a submersion are curves, one through each point, which $F$ collapses to the points of an interval. Right: in the charts of the theorem the fibres are straightened into vertical lines, and $\tilde F$ forgets the second coordinate. Every submersion looks, locally and up to a change of coordinates, like the projection of Example [[§36 Submersions#^ex-36-1|§36.1]].*
 
+![[m591-14-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The normal form for $F(x, y) = x^2 + y^2$ near $p = (1, 0)$ (chosen for the picture). Since $\partial F/\partial x \neq 0$ at $p$, $\varphi = (F, y)$ is a chart there. Moving each point toward its $\varphi$-coordinates straightens the fibres (blue arcs) into vertical lines, and in the chart $F$ becomes the projection $(r^1, r^2) \mapsto r^1$.
+
 *Lecture 11. “Back to submersions.” Uribe now made the vocabulary official, with the letters matched to the dimensions: $\dim M = m$ and $\dim N = n$. (In [[§7 The Regular Value Theorem|§7]], following the earlier lecture, $F : \mathbb{R}^N \to \mathbb{R}^m$ had $m$ as the dimension of the target.)*
 
 Uribe singled out Lemma [[§36 Submersions#^lem-36-5|§36.5]] as “an intellectual step that should not be overlooked”: in the proof below, a map is shown to be a local diffeomorphism, and this lemma is what makes it a coordinate system.

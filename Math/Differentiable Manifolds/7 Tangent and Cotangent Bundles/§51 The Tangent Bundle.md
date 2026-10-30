@@ -61,6 +61,10 @@ tags: [differentiable-manifolds, math591]
 ![[m591-17-6.svg]]
 *$TS^1$ as a cylinder. Left: the usual picture, each tangent line touching the circle at its point. Right: the bundle picture of the remark — each tangent line $T_pS^1$ (red) stands upright over $p$, and the zero section $\zeta(S^1)$ (blue) runs around the waist. Here the bundle is a genuine product $S^1 \times \mathbb{R}$: two angle charts ([[§24 The Circle#^prop-24-1|§24.1]]) differ by a constant on each piece of their overlap, so their coordinate vectors $\partial/\partial\theta$ agree, and $c\,\partial/\partial\theta|_p \mapsto (p, c)$ is a global trivialization. The green circle is the vector field $\partial/\partial\theta$ ([[§56 Vector Fields#^def-56-1|Definition §56.1]]), a section that never meets the zero section.*
 
+![[m591-17-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The left picture of the figure turns into the right one: each tangent line $T_pS^1$ (red) stands up over its point, and the crossing lines become the disjoint fibres of the cylinder $S^1 \times \mathbb{R}$, with the zero section (blue) round the waist. Then a vector field, $X = (0.2 + 0.7\sin 2\theta)\,\partial_\theta$ (chosen for the picture), drawn as a section (green). It crosses the waist exactly at the four zeros of $X$.
+
 *Status.* [[§51 The Tangent Bundle#^prop-51-5|Proposition §51.5]], below, was stated in Lecture 12 — “the claim, which takes a lot of detail to prove” — and made precise in Lecture 13 ([[§51 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; “putting all that together gives us a map” $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
 
 ## Trivializations and Charts

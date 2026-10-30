@@ -391,6 +391,10 @@ Closedness of the image alone is not enough: the image of the [[§43 Immersions#
 ![[m591-34-3.svg]]
 *The irrational line on a torus in $\mathbb{R}^3$, drawn with the slope $\alpha = (5 - \sqrt5)/10 \approx 0.28$ so that the stripes run steeply: the horizontal direction of the square goes around the tube, the vertical one around the hole, and strands on the far side are drawn faintly. Left: $t \in [0, 9]$, starting at $F(0)$. Middle: $t \in [0, 40]$. Right: $t \in [0, 150]$ — the curve never closes up, and its strands fill in the torus, as [[§44 Embeddings#^prop-44-12|Proposition §44.12]] proves for every irrational $\alpha$. (Drawn for these notes in the vault; not in the course tex.)*
 
+![[m591-34-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* First the rational slope $\alpha = 2/7$: the curve closes after $t = 7$, an embedded circle. Then the figure's slope $\alpha = (5 - \sqrt5)/10$ for $t$ up to $150$, on the square (left) and on the torus (right, far side faint): the strands never close and fill in densely.
+
 ## Regular and Immersed Submanifolds
 
 *Not from lecture: the notion announced with [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]].* A regular submanifold carries the subspace topology, and its smooth structure is forced on it by the ambient manifold. The images of the injective immersions of [[§43 Immersions|§43]] — the figure-eight, the irrational line on the torus — do not fit that definition, but each is a perfectly good manifold in the topology it inherits from its *domain*. Allowing that topology gives the second kind of submanifold.

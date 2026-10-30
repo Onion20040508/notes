@@ -115,6 +115,10 @@ $$
 ![[m591-49-3.svg]]
 *Fields on $\mathbb{R}^2$ that are $\pi$-related to $\mathbf{Y} = b(x)\,\frac{d}{dx}$: along each fibre $\pi^{-1}(x)$ (dashed) the horizontal part (dotted) is $b(x)$, and the vertical part is arbitrary.*
 
+![[m591-49-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Five integral curves of a field $\pi$-related to $\mathbf{Y} = b(x)\,\frac{d}{dx}$, with $b = 0.6 + 0.4\sin 1.5x$ and $c = \sin(2y + x) + 0.4$ (chosen for the picture), all starting at $x = 0.3$. Whatever the vertical parts do, their $x$-coordinates stay equal and move exactly as the integral curve of $\mathbf{Y}$ on the base (red): $\pi$ carries integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ (a standard consequence of relatedness, not stated in the notes).
+
 *The operator viewpoint.* The definition is geometric — “arrows”. There is an equivalent characterization in terms of operators, using the pullback of functions, $F^{\ast}g = g \circ F$.
 
 > [!theorem] Proposition §59.1: Related Fields as Operators

@@ -354,6 +354,10 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 ![[m591-8-3.svg]]
 *Left, $\sigma_N$: the line from $N$ through a point $P$ of the circle meets the horizontal axis at $\sigma_N(P)$. Right, $\sigma_S$: the same construction from the south pole.*
 
+![[m591-8-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $P$ runs once around the circle. The line from $N$ through $P$ meets the axis at $\sigma_N(P) = x/(1 - y)$ (blue), and the line from $S$ at $\sigma_S(P) = x/(1 + y)$ (red). As $P \to N$, $\sigma_N(P)$ runs off to $\pm\infty$ while $\sigma_S(P) \to 0$. On the overlap $\sigma_S = 1/\sigma_N$, smooth.
+
 The hollow circle marks the pole each chart *omits*: $\sigma_N$ is undefined at $N$, since the line through $N$ and $N$ is not determined, and as $P$ climbs towards $N$ the image $\sigma_N(P)$ runs off to $\pm\infty$. Every other point is hit exactly once, so $\sigma_N$ is a bijection onto all of $\mathbb{R}$.
 
 The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axis at the origin, so $\sigma_N(S) = 0/(1-(-1)) = 0$, and by symmetry $\sigma_S(N) = 0$. The two charts are mirror images in this respect — $\sigma_N$ compresses the *lower* half-circle into $(-1,1)$ and throws the upper half outside it, while $\sigma_S$ does the reverse. On the overlap $S^1 \setminus \{N,S\}$ this exchange of inside and outside is exactly the transition function $u \mapsto 1/u$.

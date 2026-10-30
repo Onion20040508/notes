@@ -135,6 +135,10 @@ Stated in lecture as an example (“the projection you worked with from a sphere
 ![[m591-16-7.svg]]
 *The fibres of the Hopf fibration for $n = 1$, $S^3 \to \mathbb{CP}^1$, made visible in $\mathbb{R}^3$ by stereographic projection of $S^3$ from the point $(0, 1)$. Blue: the fibre through $(1, 0)$, which projects to the unit circle, and the fibre through $(0, 1)$ itself, which projects to the vertical axis closed up at infinity. Red: two more fibres, through points with $|z_1| = |z_2|$. Each fibre is a circle $\{\lambda z : |\lambda| = 1\}$, no two meet, and any two are linked: over each $U_j$ the circles sit side by side as in $U_j \times S^1$, but globally they are woven together.*
 
+![[m591-16-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Hopf fibres in the stereographic picture of the figure. First $16$ base points on the circle $|z_1| = |z_2|$ of $\mathbb{CP}^1 = S^2$ (inset), one at a time: their fibres are disjoint circles, any two linked, together forming a torus. Then the latitude moves ($|z_1| = \cos\eta$, $\eta$ from $0.25$ to $1.0$): the tori nest between the two blue fibres, the unit circle ($z_2 = 0$) and the vertical axis ($z_1 = 0$).
+
 > [!remark]- Connections
 > - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]]. The Hopf fibration has no section: [[§46 Projective Spaces and the Hopf Fibration#^rem-46-1|Remark: Sections Need Not Exist]].
 

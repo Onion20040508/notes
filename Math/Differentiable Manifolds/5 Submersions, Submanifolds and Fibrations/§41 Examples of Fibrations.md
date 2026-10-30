@@ -55,6 +55,10 @@ tags: [differentiable-manifolds, math591]
 ![[m591-16-5.svg]]
 *Left: the strip $[0, 1] \times (-1, 1)$, ruled by its fibres, with the core circle in orange; glue the two ends with a half-twist, matching the arrows. Right: the band itself. Each grey segment is a fibre, lying over one point of the orange core circle, and the boundary is a single curve.*
 
+![[m591-16-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The strip with its fibres (gray) and core (orange) bends round, and its ends are glued by $(0, t) \sim (1, -t)$, matching the red arrows: a half-twist. The boundary is then traced: one curve, running round twice. Last, a section $[s] \mapsto [s, f(s)]$ (green) needs $f(s + 1) = -f(s)$, so $f$ changes sign and vanishes somewhere (red); this observation is not in the notes.
+
 > [!remark]- Connections
 > - $E$ is the orbit space of $\mathbb{Z}$ acting on $\mathbb{R} \times (-1,1)$: [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]]; quotient spaces in 590: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3]].
 

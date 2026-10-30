@@ -233,6 +233,10 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 ![[m591-8-6.svg]]
 *The chart $U_0$ of $\mathbb{RP}^1$, drawn in the plane of homogeneous coordinates. A point of $\mathbb{RP}^1$ is a line through the origin. A line $L$ with $x_0 \ne 0$ meets the affine line $x_0 = 1$ in exactly one point, $(1, x_1/x_0)$, and the chart $\varphi_0(L) = x_1/x_0$ records where. The one line with $x_0 = 0$ — the $x_1$-axis, the point $[0:1]$ — is parallel to $x_0 = 1$ and never meets it: it is the point at infinity that $U_0$ misses, and the second chart $U_1$ covers it. On the right, $\mathbb{RP}^1$ drawn as a circle, with $U_0$ everything except the top point. In $\mathbb{RP}^n$ the same picture holds with the affine hyperplane $x_0 = 1$ in place of the line.*
 
+![[m591-8-a2.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* A line $L$ through the origin turns through $180^\circ$, which is once around $\mathbb{RP}^1$. $\varphi_0(L) = x_1/x_0$ is where $L$ meets $x_0 = 1$ (blue). It runs to $\pm\infty$ as $L$ turns vertical, where $L \notin U_0$ and the second chart $\varphi_1(L) = x_0/x_1$ on the line $x_1 = 1$ (red) takes over. On the overlap $\varphi_1 = 1/\varphi_0$.
+
 > [!theorem] Proposition §18.6: The Two Topologies on $\mathbb{RP}^n$ Agree
 > 1. Under $[\vec x] \mapsto \mathbb{R}\vec x$, the quotient topology on $\mathbb{RP}^n = S^n/\{\pm1\}$ agrees with the topology of $\mathrm{Gr}_1(\mathbb{R}^{n+1})$ transported from the coset space $\mathrm{O}(n+1)/(\mathrm{O}(1)\times\mathrm{O}(n))$ in [[§14 Homogeneous Spaces|§14]].
 > 2. $\mathbb{RP}^1$ is homeomorphic to $S^1$.

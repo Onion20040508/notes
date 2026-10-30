@@ -110,6 +110,10 @@ The cartoon, in $S \times M$ with $S$ horizontal. $W = F^{-1}(Z)$ is the orange 
 
 Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a translate $a + Y$ meeting $Z$ in two transverse crossings; another translate $a' + Y$ disjoint from $Z$. Only translates making them tangent again are excluded, and those form a set of measure zero.
 
+![[m591-60-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $Y$ a circle and $Z$ the graph of $\sin$ (chosen for the picture); the translate $a + Y$ moves vertically, $a = (0.9, s)$. The number of crossings changes only at $s = 0.098$ and $s = 1.404$ (computed), where $a + Y$ is tangent to $Z$ (orange); every other translate meets $Z$ transversally, in $0$ or $2$ points.
+
 “I will give you a homework problem, an application of this … to show that if you have a manifold inside $\mathbb{R}^2$ [as transcribed], almost all linear functions restricted to the manifold are Morse. So you have a lot of Morse functions” (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]).
 
 **Transcription note (Lecture 20).** Page 54 of the handwritten notes writes “$\pi$ onto” under $F^{-1}(Z) \to \mathbb{R}^d$; Uribe paused (“that's not at all … yeah, it's onto”), and it is onto — for $p \in Y$ and $z \in Z$, $(z - p, p) \in F^{-1}(Z)$ when $Z \neq \varnothing$ — but surjectivity plays no role in the argument.

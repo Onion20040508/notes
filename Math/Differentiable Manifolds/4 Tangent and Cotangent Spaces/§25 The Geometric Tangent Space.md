@@ -48,6 +48,10 @@ Throughout this subsection $W \subseteq \mathbb{R}^{n+k}$ is open, $F : W \to \m
 ![[m591-11-1.svg]]
 *A curve $\gamma$ on $M$ through $p$, its velocity $v = \gamma'(0)$, and the plane $T^{\mathrm{geo}}_pM$ swept out by all such velocities (drawn translated to $p$), orthogonal to the gradient $\nabla F(p)$.*
 
+![[m591-11-a2.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* Curves through $p$ on the sphere $S^2 = F^{-1}(1)$, $F = x^2 + y^2 + z^2$, in turning directions (one at a time, blue), with their velocities $\gamma'(0)$ (red) collected at $p$. The velocities fill the plane $T_p^{\mathrm{geo}}S^2 = \ker F'(p)$, orthogonal to $\nabla F(p)$.
+
 “Smooth” for $\gamma$ means smooth as a map into the Euclidean space $\mathbb{R}^{n+k}$; the constraint that it take values in $M$ is a separate condition. The derivative $\gamma'(0)$ is computed with the vector space structure of $\mathbb{R}^{n+k}$, which is exactly what an abstract manifold lacks. The figure shows the definition: a curve $\gamma$ drawn on $M$ through $p$, its velocity $v$ at $t=0$ (a vector of the ambient space, drawn from $p$), and the plane these velocities sweep out as $\gamma$ ranges over all such curves — which [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] identifies as $\ker F'(p)$, and which is therefore orthogonal to the gradient $\nabla F(p)$, shown in grey for contrast. Note that $T^{\mathrm{geo}}_pM$ is drawn as a plane through $p$ only as an aid: as a subspace of $\mathbb{R}^{n+k}$ it passes through the origin, and it is the *translate* to $p$ that is tangent to $M$.
 
 It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1]] that $T^{\mathrm{geo}}_pM$ is closed under addition: given two curves through $p$ with velocities $v$ and $w$, there is no evident curve with velocity $v + w$. “How do I add two curves?” Both this and the dimension follow from an algebraic description.

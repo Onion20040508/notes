@@ -261,6 +261,10 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ![[m591-51-1.svg]]
 
+![[m591-51-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The angle form along two loops, chosen for the picture; right, the running total of $\int\omega$, the angle swept from the origin. Around $0$ (blue) it reaches $2\pi$ when the loop closes; on the loop missing $0$ (green) it comes back to $0$. A smooth $\theta$ with $d\theta = \omega$ would give $0$ on every closed loop, so $\omega$ is closed but not exact. The example's own argument does this along the unit circle.
+
 > [!remark]- Connections
 > - The same form in 452, closed but not exact: [[§39 Closed and Exact Forms#^prop-39-6|452 §39.6]]; sufficiency on star-shaped domains: [[Poincaré Lemma|452 §39.7]].
 

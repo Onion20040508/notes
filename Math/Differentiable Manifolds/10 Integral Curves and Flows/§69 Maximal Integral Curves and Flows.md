@@ -111,6 +111,10 @@ The integral curves lie on horizontal lines. Starting at $q$ the point moves to 
 
 *(Not from lecture; figure added.)* The maximal domains of Example [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]], assembled into the set $\mathcal{D} = \{ (t, x_0) : x_0 < 0,\ t < -x_0 \}$ of Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2), an open set. Compare the flow domain of Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]] above: there $\beta(p) = 1/(x_0y_0)$ blows up as $x_0 \to 0$, here $\beta(x_0) = -x_0$ shrinks to $0$ at the end of $M$. Neither field is complete.
 
+![[m591-68-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Five integral curves of $d/dx$ on $(-\infty, 0)$, starting at $x_0 = -3, \ldots, -0.4$, run right at unit speed and leave $M$ at time $-x_0$. Right, their maximal domains filling the region $t < -x_0$ of the figure (drawn for $t \ge 0$): the field is not complete.
+
 > [!theorem] Proposition §69.2: Non-Injective Maximal Integral Curves Are Periodic
 > Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$, and let $\varphi_p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$. If $\varphi_p$ is not injective, say $\varphi_p(t_1) = \varphi_p(t_2)$ with $T = t_2 - t_1 > 0$, then $(\alpha(p), \beta(p)) = \mathbb{R}$ and
 >
@@ -204,6 +208,10 @@ Announced for Monday, as consequences of Lemma [[§69 Maximal Integral Curves an
 ^pf-69-4
 
 *Uses:* [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+
+![[m591-68-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The flow of a complete field, the pendulum field $y\,\partial_x - \sin x\,\partial_y$ (chosen for the picture; gray: its integral curves), integrated numerically. A disc of initial points with a grid is carried along: each $\varphi_t$ moves it as a diffeomorphism would. Then flowing $1.2$ and then $s$ more (green) is compared with flowing $2.2$ at once (red dashed); at $s = 1$ they coincide, $\varphi_s \circ \varphi_t = \varphi_{s+t}$. The diffeomorphism property and this group law are Lee, Theorem 9.12, not yet in the notes.
 
 $\varphi$ is “just flowing, like we were doing before”, except that the domain of the time variable depends on the point, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]]. The theorem is the local picture of Theorem [[§68 Local Existence and Uniqueness#^thm-68-1|§68.1]], with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
 - Rotation (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.

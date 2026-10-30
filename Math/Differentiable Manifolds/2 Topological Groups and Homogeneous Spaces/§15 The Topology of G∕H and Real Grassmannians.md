@@ -333,5 +333,9 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ![[m591-7-4.svg]]
 *Uribe's picture for $n = 3$, $k = 2$: a point of $\mathrm{Gr}_2(\mathbb{R}^3)$ is a whole plane through the origin. The base point $V_0 = \operatorname{span}(e_1, e_2)$ (blue) is carried by an orthogonal $g$ to another plane $V = gV_0$ (red); two distinct planes through $0$ always share a line (dashed). The isotropy group $\mathrm{O}(2) \times \mathrm{O}(1)$ of [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-7|Proposition §15.7]] consists of the $g$ that move $V_0$ onto itself: an orthogonal map of the plane, together with $e_3 \mapsto \pm e_3$ on the normal line. A plane is pinned down by its unit normal up to sign ($\pm e_3$ for $V_0$, $\pm g e_3$ for $V$), so it takes two parameters to choose one — the count $k(n-k) = 2$.*
 
+![[m591-7-a2.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* A rotation $g$ about a tilted axis (chosen for the picture) turns the plane $V = gV_0$ (red) away from $V_0 = \mathrm{span}(e_1, e_2)$ (blue). Every plane is reached this way, and $V_0 \cap V$ is a line (dashed) as long as $V \neq V_0$.
+
 > [!remark]- Connections
 > - $\dim \mathrm{O}(n) = \tfrac{n(n-1)}{2}$ is proved in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]]; the same subtraction of dimensions for $S^2 = \mathrm{SO}(3)/\mathrm{SO}(2)$ is [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]].

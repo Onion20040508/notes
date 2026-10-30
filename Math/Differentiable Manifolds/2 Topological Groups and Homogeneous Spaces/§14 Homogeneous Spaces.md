@@ -306,4 +306,8 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ![[m591-7-1.svg]]
 *The north pole $N$, its isotropy group $H \cong \mathrm{SO}(2)$ of rotations about the vertical axis, and a rotation $g$ carrying $N$ to $g \cdot N$.*
 
+![[m591-7-a1.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* Three moves. Rotations $h \in H$ about the vertical axis turn a frame at $N$ but fix $N$. A rotation $g$ carries $N$ to $g \cdot N$. Then $gh$ for all $h \in H$: the frame at $g \cdot N$ spins, the point stays, so the whole coset $gH$ is one point of $S^2$.
+
 The picture behind Example [[§14 Homogeneous Spaces#^ex-14-3|§14.3]]. The rotations about the vertical axis fix the north pole $N$; they form the isotropy group $H \cong \mathrm{SO}(2)$. A rotation $g$ carries $N$ to $g \cdot N$, and the rotations carrying $N$ to that same point are exactly the products $gh$ with $h \in H$: the fibre of the orbit map $\theta_N$ over $g \cdot N$ is the coset $gH$. Collapsing each fibre to a point is the passage from $\mathrm{SO}(3)$ to $\mathrm{SO}(3)/\mathrm{SO}(2)$, which is why the coset space is the sphere (Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]]).

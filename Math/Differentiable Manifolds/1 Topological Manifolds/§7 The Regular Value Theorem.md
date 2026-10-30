@@ -347,6 +347,10 @@ This is the form needed on manifolds, where a chart has an open subset of Euclid
 ![[m591-4-2.svg]]
 *The scalar case in $\mathbb{R}^2$: the circle as a graph over $x$ (left) and over $y$ (middle), and the crossing lines $x^2 = y^2$ at a critical point (right).*
 
+![[m591-4-a1.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* The level sets of $f(x, y) = x^2 - y^2$ (the right panel's function) as $c$ runs from $-1.2$ to $1.2$: for $c \neq 0$ a regular value, and $f^{-1}(c)$ is a hyperbola, a $1$-manifold; at the critical value $0$ it is the crossing pair of lines, not a manifold at the origin, where $\nabla f = 0$.
+
 The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at once. *Left:* $F = x^2+y^2-1$; at a point off the horizontal axis $\partial F/\partial y \neq 0$, so the implicit function theorem solves $y = h(x) = \sqrt{1-x^2}$ and the thick arc is the graph over the $x$-interval beneath it — the chart is “project to $x$,” which is exactly $\varphi_2$ of [[§17 Differentiable Structures#^ex-17-2|Example §17.2]]. *Middle:* at $(1,0)$ that partial vanishes and the curve is vertical, so no interval of $x$ works; but $\partial F/\partial x \neq 0$, so one solves $x = h(y)$ and projects to $y$ instead. That switch is the permutation-of-coordinates step in the proof, and the picture shows it is not a technicality: which coordinate can be solved for changes from point to point. *Right:* at a critical point the conclusion fails — near the origin $\{x^2 = y^2\}$ is two crossing lines, a graph over neither axis.
 
 > [!remark] Remark: Reading the Dimension

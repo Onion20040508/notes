@@ -231,3 +231,7 @@ On the board, (3) was stated for $c : (-\delta, \delta) \to M$, with the conclus
 ![[m591-67-10.svg]]
 
 “If you go to Desmos or whatever, you see the integral curves of the Euler field … on $\mathbb{R}^2$ radial, like that, and they seem to intersect, but they don't.” The rays are open, and the origin is its own integral curve. The images of the integral curves $t \mapsto e^t(x_0, y_0)$, $t \in \mathbb{R}$, partition $\mathbb{R}^2$, as Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] requires. *(Filled in.)* If two of them pass through a common point, $c_1(t_1) = c_2(t_2)$, then $t \mapsto c_2(t + t_2 - t_1)$ is an integral curve (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](1)) that agrees with $c_1$ at time $t_1$, so it equals $c_1$ on $\mathbb{R}$ (Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]), and the two images coincide.
+
+![[m591-67-a4.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* $\varphi_t(p) = e^t p$ for $t$ from $0$ to $1$, down to $-1.2$, and back: a grid scales about the origin, and points move along the open rays (gray), which never meet. The origin (red) is its own integral curve.

@@ -109,6 +109,10 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 
 *Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^prop-56-7|§56.7]], [[§56 Vector Fields#^lem-56-3|§56.3]]
 
+![[m591-57-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The bracket as the failure of flows to commute, an illustration that uses the flows of Ch. 10. Take [[§58 Lie Bracket and Lie Algebra#^ex-58-1|Example §58.1]] with $a = 1$, $b = \sin x$: $\mathbf{X} = \partial_x$, $\mathbf{Y} = \sin x\,\partial_y$ (gray), so $[\mathbf{X}, \mathbf{Y}] = \cos x\,\partial_y$. From $p = (0.4, 0)$: flow $t$ along $\mathbf{X}$, $t$ along $\mathbf{Y}$, back $t$ along $\mathbf{X}$, back $t$ along $\mathbf{Y}$. The loop misses $p$ by $t(\sin(0.4 + t) - \sin 0.4)$ (red), and gap$/t^2$ tends to $\cos 0.4$, the bracket at $p$, as $t$ shrinks from $1.2$ to $0.15$ (a standard fact about brackets, not in the notes).
+
 > [!theorem] Proposition §58.2: The Bracket in Coordinates
 > In a chart with $\mathbf{X} = \sum_i X^i\, \partial_i$ and $\mathbf{Y} = \sum_i Y^i\, \partial_i$, where $\partial_i = \partial/\partial x^i$,
 >

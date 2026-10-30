@@ -46,6 +46,10 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ![[m591-5-1.svg]]
 *$\mathrm{O}(2)$ as two circles: the rotations $\mathrm{SO}(2)$ over $\det = +1$ and the reflections $R_\theta S$ over $\det = -1$.*
 
+![[m591-5-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Three paths in $\mathrm{GL}(2, \mathbb{R})$, each shown by the image of the unit square and the graph of $\det$. The straight segment from $I$ to $\mathrm{diag}(1, -1)$ passes $\det = 0$ at $t = \tfrac12$ (the square collapses), so it leaves the group. Within $\det > 0$, $(1-t)A + tI$ joins a rotation $A$ to $I$. Within $\det < 0$, the reflections $R_\theta S$ form a loop. No path joins the two components.
+
 $\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ — if $\det A = -1$ then $AS \in \mathrm{SO}(2)$ — a second circle. *(Computed; not from lecture.)* Explicitly,
 
 $$

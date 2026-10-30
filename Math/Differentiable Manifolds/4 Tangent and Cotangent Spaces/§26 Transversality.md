@@ -274,6 +274,10 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 ![[m591-11-5.svg]]
 *The three maps of the example against the $x$-axis $S$ (blue): (a) the image lies in $S$; (b) the parabola is tangent to $S$ at the origin, its velocity (orange) lying in $S$; (c) the lowered parabola crosses $S$ transversally at two points.*
 
+![[m591-11-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* (b) and (c) of the example as one family: $F(t) = (t, t^2 - c)$ for $c$ from $-0.6$ to $1$ and back. For $c < 0$ the curve misses $S$. At $c = 0$ it is tangent: $F'(0) = (1, 0)$ lies in $T_0S$, so $F$ is not transverse. For $c > 0$ there are two crossings at $t = \pm\sqrt c$, where $F'(t) = (1, 2t)$ (orange) is not in $TS$: transverse.
+
 > [!remark] Remark
 > Transversality protects the dimension and the tangent formula *independently*: (a) loses the first, (b) keeps the first and loses the second. And (c) shows what happens to the tangency of (b) under an arbitrarily small perturbation: it disappears, replaced by two transverse crossings (for $\varepsilon > 0$) or by no intersection at all (for $\varepsilon < 0$). The same happens to the tangent plane of [[§26 Transversality#^ex-26-1|Example §26.1]] when it is moved slightly up or down.
 

@@ -92,6 +92,10 @@ tags: [differentiable-manifolds, math591]
 ![[m591-3-8.svg]]
 *Two copies of $\mathbb{R}$ (blue) glued along every vertical pair $(x,1) \sim (x,2)$ with $x \neq 0$ — except the two origins (red). The glued pairs at $x = \tfrac1n$ crowd in on the unglued pair $\big((0,1),(0,2)\big)$: that is the sequence in $\Gamma$ whose limit escapes $\Gamma$ in [[§10 The Line with Two Origins#^ex-10-1|Example §10.1]], and downstairs it is why every neighbourhood of $0_1$ meets every neighbourhood of $0_2$.*
 
+![[m591-3-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The quotient built in motion: the two copies of $\mathbb{R}$ are glued along every vertical pair with $x \neq 0$ and slide together into one line, except the two origins $0_1$, $0_2$. Then $x_n = 1/n$ marches in: every neighbourhood $N_1(\varepsilon)$ of $0_1$ (green) and every $N_2(\varepsilon)$ of $0_2$ (orange) contains the tail, so the sequence converges to both, and the space is not Hausdorff ([[§10 The Line with Two Origins#^ex-10-1|Example §10.1]]).
+
 > [!remark]- Connections
 > - The same space: [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§10 The Line with Two Origins#^rem-10-1|§10, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 > - A quotient of the Hausdorff $\mathbb{R}$ that is not Hausdorff, in MATH 590: [[§13 Quotient Topology#^ex-13-5|590 Ex. §13.5]].
