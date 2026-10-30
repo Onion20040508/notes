@@ -20,6 +20,10 @@ A small rectangle $du \times dv$ in the $(u,v)$-plane does **not** map to a rect
 ![[m452-15-5.svg]]
 *A small rectangle $R$ with sides $du, dv$ at $(u_0, v_0)$ (left) is carried by $\Phi$ to a curvilinear region $\Phi(R)$ (blue). The derivative sends the sides to $\boldsymbol{\Phi}_u\,du$ and $\boldsymbol{\Phi}_v\,dv$ (red). These span a parallelogram (dashed) of area $|\det(\boldsymbol{\Phi}_u, \boldsymbol{\Phi}_v)|\,du\,dv = |J|\,du\,dv$, and it approximates $\Phi(R)$ ever better as the rectangle shrinks.*
 
+![[m452-15-a6.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The cell $R = [u_0, u_0 + s]\times[v_0, v_0 + 0.8s]$ at the corner $(u_0, v_0) = (0.5, 0.5)$ of the figure shrinks, $s$ from $1$ to $0.02$, and both views zoom with it. The image $\Phi(R)$ (blue) straightens into the parallelogram spanned by $\boldsymbol\Phi_u\,du$ and $\boldsymbol\Phi_v\,dv$ (red, dashed), and area $\Phi(R)$ / area $R$ tends to $|J(u_0, v_0)| = 0.704$.
+
 To make the integral come out correctly, we must **compensate for this area distortion** by multiplying by $|J|$:
 
 $$
@@ -654,6 +658,10 @@ We present three different proofs, each offering a distinct perspective:
 
 ![[m452-15-10.svg]]
 *The decomposition behind the second and third proofs. A $C^1$ map with $J \neq 0$ factors into two primitive maps, each of which changes one coordinate only. First, Type II: $(u, v) \mapsto (x, v)$ with $x = \Psi(u, v)$, so points slide horizontally and the lines $v = \text{const}$ (green) stay horizontal. Then Type I: $(x, v) \mapsto (x, y)$ with $y = \Phi(v, x)$, so points slide vertically (red dot: hollow before, filled after each step). Each step is a family of 1D substitutions ([[§24 The Change of Variables Formula#^lem-24-1|Lemma §24.1]]) in one variable. Integrating over the other variable with Fubini gives factors $\Psi_u$ and $\Phi_v$, and their product is the full Jacobian.*
+
+![[m452-15-a7.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The decomposition of the figure in two strokes: first the Type II primitive slides points horizontally, $x = \Psi(u, v) = u + 0.3v + 0.15v^2$; then the Type I primitive slides them vertically, $y = \Phi(v, x) = v + 0.2x^2$. Blue: lines of constant $u$; green: lines of constant $v$. Here $\Psi_u = \Phi_v = 1$, so both strokes preserve area and the composite Jacobian $\Phi_v\Psi_u$ is $1$.
 
 > [!remark]- Connections
 > - The linear case (Part I of the first proof) is [[§37 Determinants#^ladr-9-61|LADR 9.61]]: $T$ changes volume by the factor $|\det T|$; the $C^1$ case is this applied to the derivative cell by cell.

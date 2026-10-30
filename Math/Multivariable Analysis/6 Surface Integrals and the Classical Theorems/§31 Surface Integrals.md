@@ -75,6 +75,10 @@ The parametrization $\mathbf{X}: D \to \mathbb{R}^3$ is a “change of variables
 ![[m452-18-3.svg]]
 *Example §18.1 on the sphere of radius $R$: the point $\mathbf{X}(\theta,\varphi)$ has longitude $\theta$ (measured in the $xy$-plane from the $x$-axis) and latitude $\varphi$ (measured up from the equator). Through it pass the latitude circle $\varphi = \text{const}$ (a $\theta$-curve) and the meridian $\theta = \text{const}$ (a $\varphi$-curve), whose tangents are $\mathbf{X}_\theta$ and $\mathbf{X}_\varphi$ (red), with lengths $R\cos\varphi$ and $R$. Their cross product has length $R^2\cos\varphi$ — the area factor of Example §31.2. At the poles the latitude circles shrink to a point, so $\mathbf{X}_\theta = \mathbf{0}$: the irregular points of [[§31 Surface Integrals#^rem-31-3|Regularity as a Rank Condition on the Derivative]], a defect of the coordinates, not of the sphere.*
 
+![[m452-18-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The parameter rectangle $\theta \in [0, 2\pi]$, $\varphi \in [-\tfrac\pi2, \tfrac\pi2]$ of Example §31.1 made into the sphere in two steps: rolled into a cylinder, which glues the edges $\theta = 0$ and $\theta = 2\pi$ (red), then pinched, which shrinks the edges $\varphi = \pm\tfrac\pi2$ (orange) to the two poles. The grid lines become longitudes and latitudes. (The camera zooms in as the surface rolls up.)
+
 > [!remark] Remark: Dimension Count
 > A 1D object (curve) in 1D space cannot curve — it fills the whole space. A 1D object in 2D space *can* curve. Similarly, a surface is a 2D object that can curve only when it lives in 3D (or higher) space. The parametrization $\mathbf{X}: \mathbb{R}^2 \to \mathbb{R}^3$ maps a flat 2D domain into 3D, and the image can be curved.
 
@@ -99,6 +103,10 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 
 ![[m452-18-1.svg]]
 *The surface integral is computed cell by cell: a grid cell $\Delta u \times \Delta v$ in the parameter domain (red, left) is carried by $\mathbf{X}$ to a curved patch on the surface (red, right). Zoomed to this scale, the patch is approximated by the tangent parallelogram (green) spanned by $\mathbf{X}_u\Delta u$ and $\mathbf{X}_v\Delta v$, with area $|\mathbf{X}_u \times \mathbf{X}_v|\,\Delta u\,\Delta v$. Summing over all cells and refining gives $\iint_S dS = \iint_D |\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$: the cross product length is the area-scaling factor, playing exactly the role $|J|$ played in [[§24 The Change of Variables Formula|§24]] — and $|\mathbf{r}'|$ in [[§27 Line Integrals and Green's Theorem|§27]].*
+
+![[m452-18-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The surface of the figure covered by tangent parallelograms spanned by $\mathbf{X}_u\Delta u$ and $\mathbf{X}_v\Delta v$ (red) on finer and finer grids, from $1\times1$ to $24\times18$ cells. The sum of their areas, $\sum|\mathbf{X}_u\times\mathbf{X}_v|\,\Delta u\,\Delta v$, falls from $5.14$ toward the surface area $4.218$ (computed by fine quadrature).
 
 > [!remark]- Connections
 > - The tangent space as the image of the derivative of a parametrization is one of three equal descriptions in [[§25 The Geometric Tangent Space#^cor-25-4|591 Cor. §25.4]] (velocities of curves, kernel of the constraint Jacobian, image of the parametrization's derivative).

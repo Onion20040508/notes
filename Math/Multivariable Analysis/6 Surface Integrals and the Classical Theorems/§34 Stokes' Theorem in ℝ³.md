@@ -360,6 +360,10 @@ Green's theorem ([[§27 Line Integrals and Green's Theorem|§27]]) relates a lin
 ![[m452-20-3.svg]]
 *Special case 3: one boundary circle $C$ (red), two spanning surfaces — the flat disk $S_1$ with $\hat{n} = \hat{k}$ and the hemisphere $S_2$ with outward $\hat{n}$. Both normals are compatible with the same counterclockwise-from-above orientation of $C$, so both flux integrals of $\nabla\times\mathbf{F}$ equal $\oint_C \mathbf{F}\cdot d\mathbf{r}$. Gluing $S_1$ (normal flipped) to $S_2$ gives a closed surface, on which the curl flux is $0$ — special case 2.*
 
+![[m452-20-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Special case 3 with a field whose curl is not constant: $\mathbf{F} = (-y(1+z), x(1+z), 0)$, $\nabla\times\mathbf{F} = (-x, -y, 2(1+z))$. The boundary circle $C$ (red) stays fixed while the spanning surface bulges from almost flat through the hemisphere to a large cap. The colour shows $(\nabla\times\mathbf{F})\cdot\hat n$, which redistributes, but the flux, computed numerically for every frame, stays $2\pi = \oint_C\mathbf{F}\cdot d\mathbf{r}$.
+
 > [!remark] Remark: The Complete Picture
 > With Stokes' theorem, we have proved all three integral theorems on the syllabus:
 >

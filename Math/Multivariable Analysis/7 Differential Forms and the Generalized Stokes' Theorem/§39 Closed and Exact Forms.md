@@ -210,6 +210,10 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 ![[m452-22-2.svg]]
 *The vector field $\frac{(-y,\,x)}{x^2+y^2}$ of $\omega = \frac{-y\,dx + x\,dy}{x^2+y^2}$ (blue; arrow lengths shrink like $1/r$) circulates around the removed origin (hollow dot). Locally the field is a gradient (the curl vanishes), but no global potential exists: the counterclockwise unit circle $\boldsymbol{\gamma}$ (red) picks up $\int_{\boldsymbol{\gamma}}\omega = 2\pi$ per loop around the hole. The form measures the winding — an analytic object detecting a topological feature.*
 
+![[m452-22-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* A loop is dragged across the punctured plane and deformed on the way. While it misses the origin (blue), $\oint\omega = 0$; once it encloses the origin (red), $\oint\omega = 2\pi$; wobbling the loop changes neither value as long as it does not cross the origin. A closed form with a loop integral $\neq 0$ cannot be exact.
+
 > [!remark]- Connections
 > - The topological side of the same hole: $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1)$ ([[§34 Retractions and Fixed Points#^thm-34-2|590 §34.2]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]); $\frac{1}{2\pi}\int_{\boldsymbol{\gamma}}\omega$ counts the winding.
 > - On a manifold: the same form on $\mathbb{R}^2 \setminus \{0\}$ satisfies the necessary condition for being a differential, [[§53 One-Forms#^prop-53-3|591 Prop. §53.3]], yet is not $df$, [[§53 One-Forms#^rem-53-1|591 Remark: The Condition Is Not Sufficient]].
@@ -224,6 +228,10 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 
 ![[m452-22-3.svg]]
 *Why star-shaped is the right hypothesis. Left: from $\mathbf{p}_0$ every segment stays in the domain, so a potential can be built by integrating along these segments (the homotopy operator) — closed forms are exact. Right: in $\mathbb{R}^2\setminus\{\mathbf{0}\}$ no point works as $\mathbf{p}_0$: the segment to the point $\mathbf{p}$ opposite the hole runs through the removed origin, and indeed the closed form of Proposition §39.6 is not exact there.*
+
+![[m452-22-a2.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The homotopy operator on the star-shaped domain of the figure, for the closed form $\omega = (2xy + 1)\,dx + x^2\,dy$ (an example chosen for the picture): the segment from $\mathbf{p}_0$ sweeps around, and along each segment $\eta(\mathbf{p}) = \int_0^1 \omega(\mathbf{p}_0 + t(\mathbf{p}-\mathbf{p}_0))\cdot(\mathbf{p}-\mathbf{p}_0)\,dt$ is recorded (colour); the result is a potential, $d\eta = \omega$. Right: in $\mathbb{R}^2\setminus\{0\}$ some segment from any point runs into the hole (red), so the construction is not available.
 
 > [!remark]- Connections
 > - A star-shaped domain contracts to $\mathbf{p}_0$ along the segments — a [[§28 Homotopy of Paths#^thm-28-1|straight-line homotopy (590 §28.1)]] — so it is [[§29 The Fundamental Group#^def-29-3|simply connected (590 Def. §29.3)]]; the homotopy operator of the standard proof (not given in the course; see below) integrates along exactly these segments.

@@ -92,6 +92,10 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 ![[m452-15-1.svg]]
 *The two Darboux staircases over the same partition $\mathcal{T}$. Left: the lower sum $L(f,\mathcal{T}) = \sum m_i |D_i|$ with $m_i = \inf_{D_i} f$ — inscribed boxes, entirely under the surface. Right: the upper sum $U(f,\mathcal{T}) = \sum M_i |D_i|$ with $M_i = \sup_{D_i} f$ — circumscribing boxes, containing the surface. Every Riemann sum with arbitrary sample points is squeezed between them: $L(f,\mathcal{T}) \leq \sum f(\boldsymbol{\xi}_i)|D_i| \leq U(f,\mathcal{T})$. Integrability is exactly the statement that the gap $\sum (M_i - m_i)|D_i|$ — the skin between the two staircases — vanishes as $\|\mathcal{T}\| \to 0$; the common limit is $\iint_D f\,dA$. This is the 2D version of the upper/lower [[§32 The Definition of the Riemann Integral#^def-32-3|Darboux sums]] from single-variable analysis (451 §32.3).*
 
+![[m452-15-a2.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The partition refines from $1\times1$ to $12\times12$ cells. Left: lower boxes (green), each at the minimum of $f$ on its cell, under the surface (wire mesh); right: upper boxes (red, translucent) at the maximum, over it. $L$ rises, $U$ falls, and $U - L$ shrinks from $7.28$ to $0.76$.
+
 > [!remark] Remark
 > The condition says that as we refine the partition (make $\|\mathcal{T}\| \to 0$), the “error” between the upper and lower sums:
 >

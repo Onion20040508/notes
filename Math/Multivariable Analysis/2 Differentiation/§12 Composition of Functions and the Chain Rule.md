@@ -18,6 +18,10 @@ The composition is $g(x, y) = f(\varphi(x, y), \psi(x, y))$.
 ![[m452-10-1.svg]]
 *The composition near a point: $(\varphi, \psi)$ sends $(x_0, y_0)$ to $(\xi_0, \eta_0) = (\varphi(x_0,y_0), \psi(x_0,y_0))$ and bends the square grid around it into a curved grid; $f$ then sends $(\xi_0,\eta_0)$ to the number $g(x_0,y_0)$. The linear parts (red) follow along: an increment $(h,k)$ is carried by the Jacobian $D(\varphi,\psi)$ to a tangent vector (close to the true image point, gray), which $Df$ turns into a change in value. Composing the two linear maps is the chain rule, $Dg = Df \cdot D(\varphi,\psi)$ ([[§12 Composition of Functions and the Chain Rule#^rem-12-2|matrix form]]).*
 
+![[m452-10-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* First the map $(\varphi, \psi)$ of the figure bends the square grid around $(x_0, y_0)$. Then the view zooms in: the bent grid approaches the grid of its linear part (red, dashed), the Jacobian matrix with rows $(0.9, -0.35)$ and $(0.4, 0.8)$ at the point. The chain rule composes these linear parts.
+
 **Questions:**
 - When is $g$ continuous?
 - When is $g$ differentiable?

@@ -186,6 +186,10 @@ The proofs above ([[§24 The Change of Variables Formula#^thm-24-2|Theorem §24.
 
 ^prop-25-5
 
+![[m452-15-a8.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The unit square and a disk (orange) under $T_t = (1-t)I + tA$, where $A$ has rows $(1, 1.6)$ and $(1.2, 0.4)$, for $t$ from $0$ to $1$ and back; arrows: the images of $e_1$ (blue) and $e_2$ (red). Both areas are multiplied by the same factor $|\det T_t|$. At $t \approx 0.58$ the determinant passes through $0$ (the square collapses to a segment), then turns negative: the parallelogram turns red and $e_1$, $e_2$ swap their order, so the orientation is reversed.
+
 *The course omits the proof; see [[§37 Determinants#^ladr-9-61|LADR 9.61]], and for $n = 2$ Part I of the first proof of [[§24 The Change of Variables Formula#^thm-24-2|Theorem §24.2]] (the image of a rectangle).*
 
 > [!remark]- Connections

@@ -390,6 +390,10 @@ $$
 ![[m452-13-1.svg]]
 *Local but not global inversion for $u = x^2 - y^2$, $v = 2xy$. Near $(x_0, y_0) = (1, \tfrac12)$, where $\det J = 4(x^2 + y^2) = 5 \neq 0$, the small square $Q$ (blue) is carried one-to-one onto a curvilinear patch around $(u_0, v_0) = (\tfrac34, 1)$: the grid lines stay transversal, and on the patch the local inverse $(f, g)$ (green) exists. The map cannot be inverted globally, though. The antipodal square $-Q$ (red, dashed) lands on exactly the same patch, because $(-x, -y)$ and $(x, y)$ have the same image. The theorem only promises an inverse near one preimage at a time. At the origin (hollow dot), $\det J = 0$ and even the local statement fails.*
 
+![[m452-13-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* A small square (grid lines inside) moves in the $(x, y)$-plane and its image moves in the $(u, v)$-plane under $u = x^2 - y^2$, $v = 2xy$. Once around the origin in $(x, y)$ is twice around in $(u, v)$: the map is locally but not globally invertible. Then the square moves into the origin, where $\det J = 4(x^2 + y^2) \to 0$, and the image is crushed to a point.
+
 ## Example: Polar Coordinates
 
 > [!example] Example §16.3: Cartesian to Polar
@@ -424,6 +428,10 @@ $$
 > $$
 
 ^ex-16-4
+
+![[m452-15-a3.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The polar map of Examples §16.3–16.4 as a deformation: the $(r, \theta)$ rectangle bends round onto the disk and back. The Jacobian $r$ of $(r, \theta) \mapsto (x, y)$ (and $\frac1r$ of the inverse, Example §16.3) shows in the two cells of equal $dr\,d\theta$: the outer one ends up larger. (The same animation appears in §22.)
 
 > [!remark]- Connections
 > - This $|J| = r$ is the factor in $dx\,dy = r\,dr\,d\theta$: [[§22 Properties of the Integral#^thm-22-6|Change of Variables to Polar Coordinates]] (§22.6), [[§25 Change of Variables on General Domains#^ex-25-1|Example §25.1]].

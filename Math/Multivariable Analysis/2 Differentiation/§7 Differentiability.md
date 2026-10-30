@@ -32,6 +32,10 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 ![[m452-6-1.svg]]
 *Differentiability means the surface $z = f(x,y)$ has a tangent plane at the point: the graph of the linear map $L(h,k) = f_x h + f_y k$, shifted to the point of tangency. The error between surface and plane is $o(\rho)$ — it vanishes faster than the distance.*
 
+![[m452-6-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* Zooming in with equal scales on $x$, $y$ and $z$, window half-width $s$ from $1$ to $0.01$ and back. Left: the surface of the figure flattens onto its tangent plane (red); the largest gap divided by $\rho$ falls from $0.57$ to below $0.01$, so the error is $o(\rho)$ (Definition §7.1). Right: $\frac{2xy}{x^2+y^2}$ at the origin, where both partials are $0$ and the candidate plane is $z = 0$; on the diagonal the gap stays $1$, so gap$/\rho$ grows like $1/s$ and the zoomed surface turns into a wall (heights clipped at the window): not differentiable (Example §7.1).
+
 > [!remark] Remark: Why Not Just Require Partials to Exist?
 > You might ask: why not define differentiability as “$f_x$ and $f_y$ exist”?
 >

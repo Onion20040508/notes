@@ -385,4 +385,8 @@ $$
 ![[m452-15-4.svg]]
 *The Jacobian of the polar map $\Phi(r,\theta) = (r\cos\theta, r\sin\theta)$. Top: two equal cells $dr \times d\theta$ in the $(r,\theta)$ plane, one at small $r$ (green) and one at large $r$ (red). Their images are annular cells, and the outer image is wider, because arc length is $r\,d\theta$. Bottom: zoomed in, the red image cell is nearly the rectangle spanned by $\boldsymbol{\Phi}_r\,dr$ and $\boldsymbol{\Phi}_\theta\,d\theta$ (drawn to scale). Its sides are orthogonal, with lengths $dr$ and $r_0\,d\theta$, so its area is $r_0\,dr\,d\theta$ and $|J| = r_0$. The factor $r$ in every polar integral is literally the width of the cell. At $r = 0$ the tangential side collapses, $J = 0$, and $\Phi$ is not invertible there (all $\theta$ give the same point): the hypothesis of the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] fails exactly where polar coordinates fail.*
 
+![[m452-15-a3.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The polar map $\Phi(r, \theta) = (r\cos\theta, r\sin\theta)$ as a deformation: the rectangle $[0, 1.5]\times[0, 2\pi]$ of the $(r, \theta)$-plane bends round onto the disk and back; the edge $r = 0$ shrinks to the centre and the edges $\theta = 0$, $2\pi$ are glued. Two cells of the same size $dr\,d\theta$ (green near $r = 0.3$, red near $r = 1.2$) end with areas $0.020$ and $0.070$, in the ratio of their radii: $dx\,dy = r\,dr\,d\theta$.
+
 *Continued in [[§23 Fubini's Theorem]]: Fubini's theorem on rectangles and on Type I and Type II regions.*

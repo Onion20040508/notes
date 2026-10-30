@@ -109,6 +109,10 @@ tags: [multivariable-analysis, math452]
 ![[m452-5-1.svg]]
 *The numerator of $I(h,k)$ is the signed sum of $f$ at the four corners (signs in gray). Read it by rows, as $\varphi(y_0+k) - \varphi(y_0)$ with $\varphi$ the $x$-difference along the horizontal edges (green), and two MVTs give $f_{xy}$ at the interior point $(x_0+\alpha h,\, y_0+\theta k)$; read it by columns, as $\psi(x_0+h) - \psi(x_0)$ with $\psi$ the $y$-difference along the vertical edges (orange), and they give $f_{yx}$ at $(x_0+\beta h,\, y_0+\gamma k)$. The two red points are different but both lie in the rectangle, so as $(h,k) \to (0,0)$ they are squeezed to $(x_0,y_0)$ and continuity forces $f_{xy}(x_0,y_0) = f_{yx}(x_0,y_0)$.*
 
+![[m452-5-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The corner sum $I(h,k) = f(x_0+h, y_0+k) - f(x_0+h, y_0) - f(x_0, y_0+k) + f(x_0, y_0)$ of the proof (signs at the corners) for a square shrinking to $(x_0, y_0)$, $h = k$; right: $I(h,k)/hk$ against $h$. Illustrated with $f = e^x\sin y + xy^2$ at $(0.5, 0.8)$, a function chosen for the picture: the quotient tends to $f_{xy}(x_0, y_0) = e^{0.5}\cos 0.8 + 1.6 = 2.7487$, the common value of both mixed partials.
+
 > [!remark]- Connections
 > - Symmetry of mixed partials is what makes the [[§18 Second-Order Sufficient Conditions#^def-18-1|Hessian matrix]] symmetric, so the [[Real spectral theorem]] (LADR 7.29) applies to it; see also [[§39 Closed and Exact Forms#^prop-39-2|The Second Total Derivative Is the Hessian]].
 > - In the language of forms, Clairaut becomes [[§39 Closed and Exact Forms#^prop-39-4|d² = 0]] ([[Exterior Derivative Squares to Zero|§38.4]]).

@@ -36,6 +36,10 @@ $$
 ![[m452-9-1.svg]]
 *Reducing to one variable. Left: the segment from $(x, y)$ to $(x+h, y+k)$, traced by $(x + th, y + tk)$ (blue point) as $t$ runs over $[0,1]$. Right: $f$ read along the segment is the one-variable function $F(t)$, with $F(0) = f(x,y)$ and $F(1) = f(x+h,y+k)$. The single-variable Lagrange remainder is evaluated at some $\theta \in (0,1)$ (red), which on the left is the point $(x+\theta h,\, y+\theta k)$ of the segment — where all the $(N+1)$-st partials in $R_{N+1}$ are evaluated.*
 
+![[m452-9-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Taylor polynomials of order $1$ to $5$ (red) of the surface of the figure in §7 at $(x_0, y_0) = (1.15, 1.3)$; green on the base: where $|f - T_N| < 0.03$. Order $1$ is the tangent plane; each higher order fits a larger region, and order $5$ stays within $0.03$ on the whole square. (This $f$ is a function of $x$ plus a function of $y$, so the mixed terms of the expansion vanish.)
+
 Key observations:
 - $F(0) = f(x, y)$ — the starting point
 - $F(1) = f(x + h, y + k)$ — the ending point (what we want to expand)

@@ -5736,7 +5736,7 @@ The definition of solvability asks us to hunt for a chain, as in WS 9.1. The der
 % ============================================================================
 \section{Composition Series and the Jordan--H\"older Theorem}\label{sec:composition-series}
 
-\textit{Source: Lecture and Worksheet 12 (Wed Oct 28); the proof is to be finished Fri Oct 30. Taught after the Sylow theorems and semidirect products, and placed here because a composition series is a subnormal series, like the chains that define solvable groups (\ref{sec:solvable}) and the derived series (\ref{sec:derived-series}). Reference: not covered in the Pinter chapters used so far.}
+\textit{Source: Lecture and Worksheet 12 (Wed Oct 28); lecture (Fri Oct 30), which finished the proof. Taught after the Sylow theorems and semidirect products, and placed here because a composition series is a subnormal series, like the chains that define solvable groups (\ref{sec:solvable}) and the derived series (\ref{sec:derived-series}). Reference: not covered in the Pinter chapters used so far.}
 
 The course has used the analogy that simple groups are atoms and other groups are molecules built from them. For the analogy to be good, every group should have a well-defined ``chemical formula'': a list of simple pieces that does not depend on how the group is taken apart. The Jordan--H\"older theorem says exactly this, for every group that can be taken apart into simple pieces at all, in particular every finite group.
 
@@ -5770,11 +5770,11 @@ The term is the lecturer's own and is not standard. (WS 12 says ``a composition 
 Let $G$ be any group, and let
 \[ \{e\} = X_0 \trianglelefteq X_1 \trianglelefteq \cdots \trianglelefteq X_m = G \quad\text{and}\quad \{e\} = Y_0 \trianglelefteq Y_1 \trianglelefteq \cdots \trianglelefteq Y_n = G \]
 be two composition series, with quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$. Then $m = n$, and there is a permutation $\sigma \in S_n$ with $S_i \cong T_{\sigma(i)}$ for $1 \leq i \leq m$.
-\srcline{lecture 10/28; WS 12}
+\srcline{lecture 10/28, 10/30; WS 12}
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled)]
-The proof occupies \ref{sub:jh-grid}: the steps through WS 12.3 were done on 10/28, and WS 12.4--12.6 are to be finished on Fri Oct 30. The lecture's comment: the theorem justifies the program of studying groups through simple groups.
+\begin{proof}[Proof (given at the end of \ref{sub:jh-grid})]
+The proof needs the grid of intersections of the two series, set up in \ref{sub:jh-grid}, and it is given there, after Proposition~\ref{prop:jh-crossing-square}. WS 12.1--12.3 were done on 10/28 and WS 12.4--12.6 on 10/30. The lecture's comment: the theorem justifies the program of studying groups through simple groups (the remark \emph{Peeling Off Atoms} after the proof).
 \end{proof}
 
 \begin{propbox}[{$\mathbb{Z}$ Has No Composition Series}]\label{prop:z-no-composition-series}
@@ -5823,8 +5823,8 @@ which is simple. (The board cites the Third Isomorphism Theorem, Theorem~\ref{th
 %% <<< END ADDED
 
 \begin{exbox}[{The Order of the Factors Is Not Arbitrary}]\label{ex:s3-composition-order}
-A student asked whether every ordering of the composition factors is realized by some composition series. The question was left open in class; the answer is no. $S_3$ has the composition series $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$, with factors $\mathbb{Z}/3, \mathbb{Z}/2$ in that order, and no composition series with the factors in the order $\mathbb{Z}/2, \mathbb{Z}/3$.
-\srcline{question from class 10/28; answer not from class}
+A student asked whether every ordering of the composition factors is realized by some composition series. On 10/30 the lecture gave a group in which every ordering occurs, $(\mathbb{Z}/p\mathbb{Z})^n$ (Example~\ref{ex:jh-flags}). In general the answer is no (not from class). $S_3$ has the composition series $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$, with factors $\mathbb{Z}/3, \mathbb{Z}/2$ in that order, and no composition series with the factors in the order $\mathbb{Z}/2, \mathbb{Z}/3$.
+\srcline{question from class 10/28; the example $(\mathbb{Z}/p\mathbb{Z})^n$ lecture 10/30; $S_3$ not from class}
 \end{exbox}
 
 \begin{proof}
@@ -5993,59 +5993,351 @@ where $H_{i0} = Z_{i0}/Z_{(i-1)0} = \{e\}/\{e\}$ and $H_{in} = X_i/X_{i-1} = S_i
 \end{proof}
 
 \begin{rembox}[{The Possible Squares}]\label{rem:jh-squares}
-Consider one square of the grid, with corners $Z_{(i-1)(j-1)}$ (bottom left), $Z_{i(j-1)}$ (bottom right), $Z_{(i-1)j}$ (top left), $Z_{ij}$ (top right). Its bottom and top edges carry $H_{i(j-1)}$ and $H_{ij}$, its left and right edges $V_{(i-1)j}$ and $V_{ij}$. By Proposition~\ref{prop:jh-horizontal-edges}, each edge is ``$=$'' (trivial) or carries $S_i$ (horizontal) or $T_j$ (vertical), and a nontrivial bottom edge forces a nontrivial top edge, a nontrivial left edge a nontrivial right edge. This leaves $3 \times 3 = 9$ kinds of square.
-\srcline{WS 12.4--12.5}
+Consider one square of the grid. To keep the subscripts out of the way, the lecture names its corners
+\[ A = Z_{(i-1)(j-1)}, \qquad B = Z_{i(j-1)}, \qquad C = Z_{(i-1)j}, \qquad D = Z_{ij}, \]
+so that $A \trianglelefteq B \trianglelefteq D$ and $A \trianglelefteq C \trianglelefteq D$ (Proposition~\ref{prop:jh-grid-normality}). In the grid, as on the board, $A$ is the bottom left corner, $B$ the bottom right, $C$ the top left and $D$ the top right. The four edges carry:
+\begin{itemize}[nosep]
+    \item bottom $B/A = H_{i(j-1)}$ and top $D/C = H_{ij}$: each is ``$=$'' or $S_i$;
+    \item left $C/A = V_{(i-1)j}$ and right $D/B = V_{ij}$: each is ``$=$'' or $T_j$.
+\end{itemize}
+By Proposition~\ref{prop:jh-horizontal-edges}, a nontrivial bottom edge forces a nontrivial top edge, and a nontrivial left edge forces a nontrivial right edge. So (bottom, top) is $(=, =)$, $(=, S_i)$ or $(S_i, S_i)$, and (left, right) is $(=, =)$, $(=, T_j)$ or $(T_j, T_j)$: before any thinking, there are $3 \times 3 = 9$ kinds of square, drawn below.
+\srcline{WS 12.4--12.5; lecture 10/30}
 \end{rembox}
 
-\begin{propbox}[{Four Impossible Squares}]\label{prop:jh-impossible-squares}
-The following squares do not occur (top, bottom; left, right):
-\begin{enumerate}[nosep]
-    \item $S_i$, $=$; \ $T_j$, $T_j$;
-    \item $S_i$, $S_i$; \ $=$, $T_j$;
-    \item $S_i$, $=$; \ $=$, $=$;
-    \item $=$, $=$; \ $=$, $T_j$.
-\end{enumerate}
-Hint: think about $Z_{ij}/Z_{(i-1)(j-1)}$.
-\srcline{WS 12.4}
-\end{propbox}
-
-\begin{proof}[Proof (to be filled)]
-WS 12.4, to be done Fri Oct 30.
-\end{proof}
-
-\begin{propbox}[{The Crossing Square}]\label{prop:jh-crossing-square}
-If a square has top $S_i$, bottom $=$, left $=$, right $T_j$, then $S_i \cong T_j$. Hint: think about $Z_{ij}/Z_{(i-1)(j-1)}$.
-\srcline{WS 12.5}
-\end{propbox}
-
-\begin{proof}[Proof (to be filled)]
-WS 12.5, to be done Fri Oct 30.
-\end{proof}
-
-\begin{rembox}[{Pipes}]\label{rem:jh-pipes}
-So only five squares remain: both pairs nontrivial; only the left and right edges nontrivial; only the top and bottom edges nontrivial; all four edges trivial; and the crossing square of WS 12.5. Draw a ``pipe'' through each nontrivial pair of opposite edges, and in the crossing square a pipe entering through the top edge and leaving through the right edge. Each pipe then carries a single simple group from the top row ($S_i$) to the right column ($T_j$), which is how the permutation $\sigma$ arises. WS 12.6 asks to turn this into a proof of the Jordan--H\"older theorem; it is to be finished on Fri Oct 30.
-\srcline{WS 12}
-\end{rembox}
-
-%% >>> ADDED: figure (not from lecture)
 \begin{center}
-\begin{tikzpicture}[font=\scriptsize, x=1cm, y=1cm]
-  \def\sq#1{\draw[gray!70] (#1,0) rectangle ++(1.1,1.1);}
-  \sq{0} \node[above] at (0.55,1.1) {$S_i$}; \node[below] at (0.55,0) {$S_i$}; \node[left] at (0,0.55) {$T_j$}; \node[right] at (1.1,0.55) {$T_j$};
-  \draw[very thick, blue!60!black] (0.55,0) -- (0.55,1.1); \draw[very thick, red!60!black] (0,0.55) -- (1.1,0.55);
-  \sq{2.3} \node[above] at (2.85,1.1) {$=$}; \node[below] at (2.85,0) {$=$}; \node[left] at (2.3,0.55) {$T_j$}; \node[right] at (3.4,0.55) {$T_j$};
-  \draw[very thick, red!60!black] (2.3,0.55) -- (3.4,0.55);
-  \sq{4.6} \node[above] at (5.15,1.1) {$S_i$}; \node[below] at (5.15,0) {$S_i$}; \node[left] at (4.6,0.55) {$=$}; \node[right] at (5.7,0.55) {$=$};
-  \draw[very thick, blue!60!black] (5.15,0) -- (5.15,1.1);
-  \sq{6.9} \node[above] at (7.45,1.1) {$=$}; \node[below] at (7.45,0) {$=$}; \node[left] at (6.9,0.55) {$=$}; \node[right] at (8.0,0.55) {$=$};
-  \sq{9.2} \node[above] at (9.75,1.1) {$S$}; \node[below] at (9.75,0) {$=$}; \node[left] at (9.2,0.55) {$=$}; \node[right] at (10.3,0.55) {$S$};
-  \draw[very thick, violet!70!black] (9.75,1.1) -- (9.75,0.55) -- (10.3,0.55);
-  \foreach \x/\t in {0.55/{both pairs}, 2.85/{only left, right}, 5.15/{only top, bottom}, 7.45/{all trivial}, 9.75/{crossing (WS 12.5)}} { \node[below=12pt, text=black!70] at (\x,0) {\t}; }
+\begin{tikzpicture}[x=1cm, y=1cm]
+\node[anchor=west, font=\small\bfseries] at (-0.5,1.55) {Allowed};
+\draw[black, thick] (0.0, 1.0) -- (1.3, 1.0);
+\node[above, black, font=\scriptsize] at (0.65,1.00) {$S$};
+\draw[black, thick] (0.0, 0) -- (1.3, 0);
+\node[below, black, font=\scriptsize] at (0.65,0.00) {$S$};
+\draw[black, thick] (0.0, 0) -- (0.0, 1.0);
+\node[left, black, font=\scriptsize] at (0.00,0.50) {$T$};
+\draw[black, thick] (1.3, 0) -- (1.3, 1.0);
+\node[right, black, font=\scriptsize] at (1.30,0.50) {$T$};
+\draw[blue!60!black, very thick, opacity=0.75] (0.65,0.00) -- (0.65,1.00);
+\draw[red!60!black, very thick, opacity=0.75] (0.00,0.50) -- (1.30,0.50);
+\node[font=\scriptsize, align=center] at (0.65,-0.62) {(i)};
+\draw[black!45, dashed] (2.6, 1.0) -- (3.9000000000000004, 1.0);
+\node[above, black!55, font=\scriptsize] at (3.25,1.00) {$=$};
+\draw[black!45, dashed] (2.6, 0) -- (3.9000000000000004, 0);
+\node[below, black!55, font=\scriptsize] at (3.25,0.00) {$=$};
+\draw[black, thick] (2.6, 0) -- (2.6, 1.0);
+\node[left, black, font=\scriptsize] at (2.60,0.50) {$T$};
+\draw[black, thick] (3.9000000000000004, 0) -- (3.9000000000000004, 1.0);
+\node[right, black, font=\scriptsize] at (3.90,0.50) {$T$};
+\draw[red!60!black, very thick, opacity=0.75] (2.60,0.50) -- (3.90,0.50);
+\node[font=\scriptsize, align=center] at (3.25,-0.62) {(ii)};
+\draw[black, thick] (5.2, 1.0) -- (6.5, 1.0);
+\node[above, black, font=\scriptsize] at (5.85,1.00) {$S$};
+\draw[black, thick] (5.2, 0) -- (6.5, 0);
+\node[below, black, font=\scriptsize] at (5.85,0.00) {$S$};
+\draw[black!45, dashed] (5.2, 0) -- (5.2, 1.0);
+\node[left, black!55, font=\scriptsize] at (5.20,0.50) {$=$};
+\draw[black!45, dashed] (6.5, 0) -- (6.5, 1.0);
+\node[right, black!55, font=\scriptsize] at (6.50,0.50) {$=$};
+\draw[blue!60!black, very thick, opacity=0.75] (5.85,0.00) -- (5.85,1.00);
+\node[font=\scriptsize, align=center] at (5.85,-0.62) {(iii)};
+\draw[black!45, dashed] (7.800000000000001, 1.0) -- (9.100000000000001, 1.0);
+\node[above, black!55, font=\scriptsize] at (8.45,1.00) {$=$};
+\draw[black!45, dashed] (7.800000000000001, 0) -- (9.100000000000001, 0);
+\node[below, black!55, font=\scriptsize] at (8.45,0.00) {$=$};
+\draw[black!45, dashed] (7.800000000000001, 0) -- (7.800000000000001, 1.0);
+\node[left, black!55, font=\scriptsize] at (7.80,0.50) {$=$};
+\draw[black!45, dashed] (9.100000000000001, 0) -- (9.100000000000001, 1.0);
+\node[right, black!55, font=\scriptsize] at (9.10,0.50) {$=$};
+\node[font=\scriptsize, align=center] at (8.45,-0.62) {(iv)};
+\draw[black, thick] (10.4, 1.0) -- (11.700000000000001, 1.0);
+\node[above, black, font=\scriptsize] at (11.05,1.00) {$S$};
+\draw[black!45, dashed] (10.4, 0) -- (11.700000000000001, 0);
+\node[below, black!55, font=\scriptsize] at (11.05,0.00) {$=$};
+\draw[black!45, dashed] (10.4, 0) -- (10.4, 1.0);
+\node[left, black!55, font=\scriptsize] at (10.40,0.50) {$=$};
+\draw[black, thick] (11.700000000000001, 0) -- (11.700000000000001, 1.0);
+\node[right, black, font=\scriptsize] at (11.70,0.50) {$T$};
+\draw[violet!75!black, very thick, rounded corners=4pt] (11.05,1.00) -- (11.05,0.50) -- (11.70,0.50);
+\node[font=\scriptsize, align=center] at (11.05,-0.62) {(v) crossing:\\ $S \cong T$};
+\node[anchor=west, font=\small\bfseries] at (-0.5,-1.45) {Impossible};
+\draw[black, thick] (0.0, -2.0) -- (1.3, -2.0);
+\node[above, black, font=\scriptsize] at (0.65,-2.00) {$S$};
+\draw[black!45, dashed] (0.0, -3.0) -- (1.3, -3.0);
+\node[below, black!55, font=\scriptsize] at (0.65,-3.00) {$=$};
+\draw[black, thick] (0.0, -3.0) -- (0.0, -2.0);
+\node[left, black, font=\scriptsize] at (0.00,-2.50) {$T$};
+\draw[black, thick] (1.3, -3.0) -- (1.3, -2.0);
+\node[right, black, font=\scriptsize] at (1.30,-2.50) {$T$};
+\draw[red!70!black, thick] (0.18,-2.85) -- (1.12,-2.15) (0.18,-2.15) -- (1.12,-2.85);
+\node[font=\scriptsize, align=center] at (0.65,-3.62) {(a)};
+\draw[black, thick] (2.6, -2.0) -- (3.9000000000000004, -2.0);
+\node[above, black, font=\scriptsize] at (3.25,-2.00) {$S$};
+\draw[black, thick] (2.6, -3.0) -- (3.9000000000000004, -3.0);
+\node[below, black, font=\scriptsize] at (3.25,-3.00) {$S$};
+\draw[black!45, dashed] (2.6, -3.0) -- (2.6, -2.0);
+\node[left, black!55, font=\scriptsize] at (2.60,-2.50) {$=$};
+\draw[black, thick] (3.9000000000000004, -3.0) -- (3.9000000000000004, -2.0);
+\node[right, black, font=\scriptsize] at (3.90,-2.50) {$T$};
+\draw[red!70!black, thick] (2.78,-2.85) -- (3.72,-2.15) (2.78,-2.15) -- (3.72,-2.85);
+\node[font=\scriptsize, align=center] at (3.25,-3.62) {(b)};
+\draw[black, thick] (5.2, -2.0) -- (6.5, -2.0);
+\node[above, black, font=\scriptsize] at (5.85,-2.00) {$S$};
+\draw[black!45, dashed] (5.2, -3.0) -- (6.5, -3.0);
+\node[below, black!55, font=\scriptsize] at (5.85,-3.00) {$=$};
+\draw[black!45, dashed] (5.2, -3.0) -- (5.2, -2.0);
+\node[left, black!55, font=\scriptsize] at (5.20,-2.50) {$=$};
+\draw[black!45, dashed] (6.5, -3.0) -- (6.5, -2.0);
+\node[right, black!55, font=\scriptsize] at (6.50,-2.50) {$=$};
+\draw[red!70!black, thick] (5.38,-2.85) -- (6.32,-2.15) (5.38,-2.15) -- (6.32,-2.85);
+\node[font=\scriptsize, align=center] at (5.85,-3.62) {(c)};
+\draw[black!45, dashed] (7.800000000000001, -2.0) -- (9.100000000000001, -2.0);
+\node[above, black!55, font=\scriptsize] at (8.45,-2.00) {$=$};
+\draw[black!45, dashed] (7.800000000000001, -3.0) -- (9.100000000000001, -3.0);
+\node[below, black!55, font=\scriptsize] at (8.45,-3.00) {$=$};
+\draw[black!45, dashed] (7.800000000000001, -3.0) -- (7.800000000000001, -2.0);
+\node[left, black!55, font=\scriptsize] at (7.80,-2.50) {$=$};
+\draw[black, thick] (9.100000000000001, -3.0) -- (9.100000000000001, -2.0);
+\node[right, black, font=\scriptsize] at (9.10,-2.50) {$T$};
+\draw[red!70!black, thick] (7.98,-2.85) -- (8.92,-2.15) (7.98,-2.15) -- (8.92,-2.85);
+\node[font=\scriptsize, align=center] at (8.45,-3.62) {(d)};
+\draw[black!60] (10.4,-3.0) rectangle (11.700000000000001,-2.0);
+\node[below left, font=\scriptsize] at (10.4,-3.0) {$A$}; \node[below right, font=\scriptsize] at (11.700000000000001,-3.0) {$B$};
+\node[above left, font=\scriptsize] at (10.4,-2.0) {$C$}; \node[above right, font=\scriptsize] at (11.700000000000001,-2.0) {$D$};
+\node[font=\scriptsize, align=center] at (11.05,-3.62) {corners};
 \end{tikzpicture}
 \end{center}
 
-\textit{(Not from lecture; figure added, after WS 12.)} The five squares left by Propositions~\ref{prop:jh-impossible-squares} and~\ref{prop:jh-crossing-square}, with their pipes. A pipe through the top and bottom edges carries $S_i$ (blue), one through the left and right edges carries $T_j$ (red); in the crossing square the pipe turns, from $S_i$ on the top to $T_j \cong S_i$ on the right.
-%% <<< END ADDED
+\textit{(Figure after the lecture; pipes added.)} The nine kinds of square; the corners $A, B, C, D$ are as in the key. A dashed edge marked $=$ is a trivial quotient: its two corners are equal. $S$ stands for $S_i$ on the horizontal edges and $T$ for $T_j$ on the vertical ones. In the four impossible squares (a)--(d), exactly one of the two directions changes from trivial to nontrivial across the square (Proposition~\ref{prop:jh-impossible-squares}). In the allowed squares (i)--(v), the coloured lines are the pipes of the remark \emph{Changeover Squares and Pipes} below: a pipe runs through each pair of nontrivial opposite edges, and in the crossing square (v) it turns the corner, from $S$ on the top to $T$ on the right, where $S \cong T$ (Proposition~\ref{prop:jh-crossing-square}).
+
+\begin{propbox}[{Four Impossible Squares}]\label{prop:jh-impossible-squares}
+With the corners $A, B, C, D$ of a square as in the remark \emph{The Possible Squares}, none of the following occurs (squares (a)--(d) of the figure):
+\begin{enumerate}[nosep, label=(\alph*)]
+    \item bottom $=$, top $S_i$, left $T_j$, right $T_j$: \ $B = A$, $D/C \cong S_i$, $C/A \cong T_j$, $D/B \cong T_j$;
+    \item bottom $S_i$, top $S_i$, left $=$, right $T_j$: \ $B/A \cong S_i$, $D/C \cong S_i$, $C = A$, $D/B \cong T_j$;
+    \item bottom $=$, top $S_i$, left $=$, right $=$: \ $B = A$, $D/C \cong S_i$, $C = A$, $D = B$;
+    \item bottom $=$, top $=$, left $=$, right $T_j$: \ $B = A$, $D = C$, $C = A$, $D/B \cong T_j$.
+\end{enumerate}
+In words: across one square, the horizontal edges cannot change from trivial to $S_i$ unless the vertical edges also change from trivial to $T_j$, and conversely. (Worksheet hint: think about $Z_{ij}/Z_{(i-1)(j-1)} = D/A$.)
+\srcline{WS 12.4; lecture 10/30}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} in (a), $D/A$ is the simple group $T_j$, and $C$ gives a normal subgroup $C/A$ of it that is neither trivial nor everything; (b) is the mirror image, and (c), (d) are degenerate.\par
+\textit{(Board 10/30.)} Throughout, a trivial quotient means equal groups: $B/A$ trivial means $B = A$, and so on.
+
+\textbf{(a), Step 1: $D/A$ is simple.} Since $B = A$, the quotient $D/A$ is the quotient $D/B$, which is $T_j$, a simple group.
+
+\textbf{Step 2: $C/A$ is a normal subgroup of $D/A$.} We have $A \subseteq C$ and $C \trianglelefteq D$. The projection $D \to D/A$ is surjective and maps $C$ onto $C/A$; the image of a normal subgroup under a surjective homomorphism is normal (Proposition~\ref{prop:preimages-images-normal-subgroups}, WS 6.6(3)). So $C/A \trianglelefteq D/A$.
+
+\textbf{Step 3: both possibilities are contradictory.} By Steps 1 and 2, $C/A$ is trivial or all of $D/A$.
+\begin{itemize}[nosep]
+    \item If $C/A$ is trivial, then $C = A$; but $C/A \cong T_j$ is not trivial.
+    \item If $C/A = D/A$, then each coset $dA$ with $d \in D$ equals some $cA$ with $c \in C$, so $d \in cA \subseteq C$. Hence $C = D$ and $D/C$ is trivial; but $D/C \cong S_i$ is not trivial.
+\end{itemize}
+
+\textbf{(b)} This is (a) with the roles of $B$ and $C$ exchanged. Since $C = A$, the quotient $D/A = D/C \cong S_i$ is simple (Step 1). $B/A$ is a normal subgroup of it, because $B \trianglelefteq D$ (Step 2). If $B/A$ is trivial, this contradicts $B/A \cong S_i$; if $B/A = D/A$, then $B = D$, contradicting $D/B \cong T_j$ (Step 3).
+
+\textbf{(c)} $B = A = C$, so $D/C = D/B$, which is trivial since $D = B$. This contradicts $D/C \cong S_i$.
+
+\textbf{(d)} $B = A = C$, so $D/B = D/C$, which is trivial since $D = C$. This contradicts $D/B \cong T_j$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm, y=1cm]
+\draw[black, thick] (0, 1.3) -- (1.6, 1.3);
+\node[above, black, font=\scriptsize] at (0.80,1.30) {$S$};
+\draw[black!45, dashed] (0, 0) -- (1.6, 0);
+\node[below, black!55, font=\scriptsize] at (0.80,0.00) {$=$};
+\draw[black, thick] (0, 0) -- (0, 1.3);
+\node[left, black, font=\scriptsize] at (0.00,0.65) {$T$};
+\draw[black, thick] (1.6, 0) -- (1.6, 1.3);
+\node[right, black, font=\scriptsize] at (1.60,0.65) {$T$};
+\node[below left, font=\scriptsize] at (0,0) {$A$}; \node[below right, font=\scriptsize] at (1.6,0) {$B$};
+\node[above left, font=\scriptsize] at (0,1.3) {$C$}; \node[above right, font=\scriptsize] at (1.6,1.3) {$D$};
+\node[font=\scriptsize] at (0.8,-0.75) {square (a)};
+\begin{scope}[shift={(4.6,-0.4)}]
+\node (D) at (0,2.4) {$D$};
+\node (C) at (-1.1,1.2) {$C$};
+\node (A) at (0,0) {$A = B$};
+\draw (A) -- node[below left, font=\scriptsize] {$T_j$} (C);
+\draw (C) -- node[above left, font=\scriptsize] {$S_i$} (D);
+\draw[thick] (A) -- node[right, font=\scriptsize] {$D/A = D/B \cong T_j$, simple} (D);
+\node[font=\scriptsize, align=center] at (0.1,-0.75) {the subgroups between $A$ and $D$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Case (a) of the proof. Left: the square. Right: the subgroups between $A$ and $D$, with the quotients on the edges. Since $B = A$, the whole quotient $D/A$ is the simple group $T_j$. But $C$ lies strictly between $A$ and $D$ (both $C/A$ and $D/C$ are nontrivial), so $C/A$ would be a normal subgroup of $D/A$ that is neither trivial nor everything.
+
+\begin{rembox}[{The Same Argument by Counting}]\label{rem:jh-counting}
+For finite $G$, case (a) is also a count of indices, as a student suggested on the board. By Lagrange's theorem along the two paths from $A$ to $D$,
+\[ [D : A] = [D : C]\,[C : A] = |S_i| \cdot |T_j|, \qquad [D : A] = [D : B]\,[B : A] = |T_j| \cdot 1, \]
+so $|S_i| = 1$, impossible for a simple group. The quotient argument above works for infinite groups too. Another student proposed comparing $(D/A)/(B/A) \cong D/B$ and $(D/A)/(C/A) \cong D/C$ (Third Isomorphism Theorem, Theorem~\ref{thm:third-isomorphism-theorem}), which is the same argument in other words. In the crossing square the count gives only $|S_i| = |T_j|$: this suggests the isomorphism of the next proposition, but does not prove it.
+\srcline{lecture 10/30}
+\end{rembox}
+
+\begin{propbox}[{The Crossing Square}]\label{prop:jh-crossing-square}
+Suppose a square has bottom and left edges trivial ($B = A$ and $C = A$), top edge $D/C \cong S_i$ and right edge $D/B \cong T_j$: the crossing square (v). Then $S_i \cong T_j$. (Worksheet hint: think about $Z_{ij}/Z_{(i-1)(j-1)}$.)
+\srcline{WS 12.5; lecture 10/30}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} the two trivial edges say that $A$, $B$ and $C$ are one subgroup, so the two nontrivial edges are literally the same quotient.\par
+\textit{(Board 10/30.)} Since $B = A$ and $C = A$, the three corners $A$, $B$, $C$ are the same subgroup of $D$. So the right edge $D/B$ and the top edge $D/C$ are the same group of cosets, and
+\[ T_j \cong D/B = D/C \cong S_i. \qedhere \]
+\end{proof}
+
+\begin{rembox}[{Changeover Squares and Pipes}]\label{rem:jh-pipes}
+By Proposition~\ref{prop:jh-horizontal-edges}(3), the horizontal edges of column $i$ read, from the bottom up,
+\[ =,\ \ldots,\ =,\ S_i,\ \ldots,\ S_i : \]
+the column starts with $H_{i0} = \{e\}$, ends with $H_{in} = S_i$ on the top row, and changes exactly once. The square where it changes is the \textbf{changeover square} of column $i$: its bottom edge is ``$=$'' and its top edge $S_i$. Likewise the vertical edges of row $j$ read $=, \ldots, =, T_j, \ldots, T_j$ from left to right, and row $j$ has one changeover square, with left edge ``$=$'' and right edge $T_j$. The impossible squares say that the changeover square of a column is the changeover square of a row, and conversely: the changeovers line up. The lecture records this with \textbf{pipes}. Along each column a pipe runs through its $S_i$ edges, from $S_i$ on the top row down to the changeover square; along each row a pipe runs through its $T_j$ edges, from $T_j$ on the right column back to the changeover square. The two meet in a crossing square, so each pipe joins one $S_i$ (top) to one $T_j$ (right), and carries a single simple group along its whole length. The figure below builds this in three steps.
+\srcline{lecture 10/30; WS 12}
+\end{rembox}
+
+\begin{center}
+\begin{tikzpicture}[x=1.05cm, y=1.05cm]
+\begin{scope}
+\draw[black!40, dashed] (0,0) -- (1,0);
+\draw[black!40, dashed] (0,1) -- (1,1);
+\draw[orange!85!black, very thick] (0,2) -- (1,2); \node[above, orange!85!black, font=\scriptsize] at (0.5,2) {$S_1$};
+\draw[orange!85!black, very thick] (0,3) -- (1,3); \node[above, orange!85!black, font=\scriptsize] at (0.5,3) {$S_1$};
+\draw[black!40, dashed] (1,0) -- (2,0);
+\draw[black!40, dashed] (1,1) -- (2,1);
+\draw[black!40, dashed] (1,2) -- (2,2);
+\draw[green!45!black, very thick] (1,3) -- (2,3); \node[above, green!45!black, font=\scriptsize] at (1.5,3) {$S_2$};
+\draw[black!40, dashed] (2,0) -- (3,0);
+\draw[blue!75!black, very thick] (2,1) -- (3,1); \node[above, blue!75!black, font=\scriptsize] at (2.5,1) {$S_3$};
+\draw[blue!75!black, very thick] (2,2) -- (3,2); \node[above, blue!75!black, font=\scriptsize] at (2.5,2) {$S_3$};
+\draw[blue!75!black, very thick] (2,3) -- (3,3); \node[above, blue!75!black, font=\scriptsize] at (2.5,3) {$S_3$};
+\foreach \i in {0,...,3} \foreach \j in {0,...,3} \fill (\i,\j) circle (1.1pt);
+\node[below left, font=\scriptsize] at (0,0) {$\{e\}$}; \node[above right, font=\scriptsize] at (3,3) {$G$};
+\node[font=\small] at (1.5,-0.8) {(a) columns};
+\end{scope}
+\begin{scope}[shift={(5.0,0)}]
+\draw[black!40, dashed] (0,0) -- (0,1);
+\draw[black!40, dashed] (1,0) -- (1,1);
+\draw[black!40, dashed] (2,0) -- (2,1);
+\draw[black, very thick] (3,0) -- (3,1); \node[right, font=\scriptsize] at (3,0.5) {$T_1$};
+\draw[black!40, dashed] (0,1) -- (0,2);
+\draw[black, very thick] (1,1) -- (1,2); \node[right, font=\scriptsize] at (1,1.5) {$T_2$};
+\draw[black, very thick] (2,1) -- (2,2); \node[right, font=\scriptsize] at (2,1.5) {$T_2$};
+\draw[black, very thick] (3,1) -- (3,2); \node[right, font=\scriptsize] at (3,1.5) {$T_2$};
+\draw[black!40, dashed] (0,2) -- (0,3);
+\draw[black!40, dashed] (1,2) -- (1,3);
+\draw[black, very thick] (2,2) -- (2,3); \node[right, font=\scriptsize] at (2,2.5) {$T_3$};
+\draw[black, very thick] (3,2) -- (3,3); \node[right, font=\scriptsize] at (3,2.5) {$T_3$};
+\foreach \i in {0,...,3} \foreach \j in {0,...,3} \fill (\i,\j) circle (1.1pt);
+\node[below left, font=\scriptsize] at (0,0) {$\{e\}$}; \node[above right, font=\scriptsize] at (3,3) {$G$};
+\node[font=\small] at (1.5,-0.8) {(b) rows};
+\end{scope}
+\begin{scope}[shift={(10.0,0)}]
+\draw[black!25] (0,0) grid (3,3);
+\fill[orange!85!black!18] (0,1) rectangle (1,2);
+\fill[green!45!black!18] (1,2) rectangle (2,3);
+\fill[blue!75!black!18] (2,0) rectangle (3,1);
+\draw[orange!85!black, very thick, rounded corners=5pt] (0.5,3.35) -- (0.5,1.5) -- (3.35,1.5);
+\node[above, orange!85!black, font=\scriptsize] at (0.5,3.35) {$S_1$};
+\node[right, orange!85!black, font=\scriptsize] at (3.35,1.5) {$T_2$};
+\draw[green!45!black, very thick, rounded corners=5pt] (1.5,3.35) -- (1.5,2.5) -- (3.35,2.5);
+\node[above, green!45!black, font=\scriptsize] at (1.5,3.35) {$S_2$};
+\node[right, green!45!black, font=\scriptsize] at (3.35,2.5) {$T_3$};
+\draw[blue!75!black, very thick, rounded corners=5pt] (2.5,3.35) -- (2.5,0.5) -- (3.35,0.5);
+\node[above, blue!75!black, font=\scriptsize] at (2.5,3.35) {$S_3$};
+\node[right, blue!75!black, font=\scriptsize] at (3.35,0.5) {$T_1$};
+\foreach \i in {0,...,3} \foreach \j in {0,...,3} \fill (\i,\j) circle (1.1pt);
+\node[below left, font=\scriptsize] at (0,0) {$\{e\}$}; \node[above right, font=\scriptsize] at (3,3) {$G$};
+\node[font=\small] at (1.5,-0.8) {(c) pipes};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board, in three steps.)} The case $m = n = 3$; the top row of the grid is the $X$-series and the right column the $Y$-series. (a) The horizontal edges: in each column, ``$=$'' (dashed) up to the changeover, then $S_i$. (b) The vertical edges: in each row, ``$=$'' up to the changeover, then $T_j$. (c) The changeover squares (shaded) coincide; they are crossing squares, one in each row and each column, like the $1$s of a permutation matrix. Each pipe comes down from $S_i$ and turns right to $T_{\sigma(i)}$; here $S_1 \cong T_2$, $S_2 \cong T_3$, $S_3 \cong T_1$, the matching drawn on the board. Where two pipes cross (a square of type (i)), nothing happens.
+
+\begin{proof}[Proof of the Jordan--H\"older Theorem (Theorem~\ref{thm:jordan-holder})]
+\textit{Idea:} each column and each row changes exactly once; the impossible squares force every column changeover to be a row changeover, so the changeovers form a permutation, and at each of them the crossing square gives $S_i \cong T_j$.\par
+\textit{(WS 12.6; lecture 10/30.)}
+
+\textbf{Step 1: each column changes once.} Fix a column $i \in \{1, \ldots, m\}$. By Proposition~\ref{prop:jh-horizontal-edges}(3) there is $j_0$ with $H_{ij}$ trivial for $j < j_0$ and $H_{ij} \cong S_i$ for $j \geq j_0$. Since $H_{i0} = \{e\}$ and $H_{in} = S_i \neq \{e\}$, we have $1 \leq j_0 \leq n$. Put $\tau(i) = j_0$. Then the square of column $i$ between rows $\tau(i) - 1$ and $\tau(i)$ has bottom edge ``$=$'' and top edge $S_i$, and it is the only square of the column with this property. This defines a map $\tau : \{1, \ldots, m\} \to \{1, \ldots, n\}$.
+
+\textbf{Step 2: each row changes once.} In the same way (the statement for the $V_{ij}$ in Proposition~\ref{prop:jh-horizontal-edges}), for each row $j \in \{1, \ldots, n\}$ there is exactly one $\rho(j) \in \{1, \ldots, m\}$ such that the square of row $j$ between columns $\rho(j) - 1$ and $\rho(j)$ has left edge ``$=$'' and right edge $T_j$.
+
+\textbf{Step 3: a column changeover is a row changeover.} Take the changeover square of column $i$ from Step 1: bottom ``$=$'', top $S_i$. Among the nine kinds of square, those with this bottom and top are (a), (c) and the crossing square (v). By Proposition~\ref{prop:jh-impossible-squares}, (a) and (c) do not occur, so it is the crossing square: its left edge is ``$=$'' and its right edge is $T_{\tau(i)}$. It lies in row $\tau(i)$, between columns $i - 1$ and $i$, so by Step 2 it is the changeover square of row $\tau(i)$: $\rho(\tau(i)) = i$.
+
+\textbf{Step 4: a row changeover is a column changeover.} Symmetrically, the changeover square of row $j$ has left edge ``$=$'' and right edge $T_j$. The squares with these vertical edges are (b), (d) and (v), and (b), (d) do not occur. So it is the crossing square: bottom ``$=$'', top $S_{\rho(j)}$, the changeover square of column $\rho(j)$. Hence $\tau(\rho(j)) = j$.
+
+\textbf{Step 5: $m = n$.} By Steps 3 and 4, $\tau$ and $\rho$ are inverse maps, so $\tau$ is a bijection from $\{1, \ldots, m\}$ to $\{1, \ldots, n\}$. Hence $m = n$, and $\sigma := \tau$ is a permutation in $S_n$.
+
+\textbf{Step 6: the isomorphisms.} For each $i$, the changeover square of column $i$ is a crossing square with top edge $S_i$ and right edge $T_{\sigma(i)}$. By Proposition~\ref{prop:jh-crossing-square}, $S_i \cong T_{\sigma(i)}$.
+\end{proof}
+
+\begin{rembox}[{Peeling Off Atoms}]\label{rem:jh-peeling}
+Read a composition series from the top: $G = G_N \trianglerighteq G_{N-1} \trianglerighteq \cdots \trianglerighteq G_0 = \{e\}$ peels off one simple quotient $G_N/G_{N-1}$ at a time, each step passing to a smaller normal subgroup. The theorem says that in whatever order the pieces are peeled off, the same atoms come off, with the same multiplicities. This is the lecture's justification for treating simple groups as the right objects to understand first.
+\srcline{lecture 10/30}
+\end{rembox}
+
+\begin{exbox}[{Flags in $(\mathbb{Z}/p\mathbb{Z})^n$}]\label{ex:jh-flags}
+Let $G = (\mathbb{Z}/p\mathbb{Z})^n$, an $n$-dimensional vector space over $\mathbb{F}_p$, with standard basis $e_1, \ldots, e_n$. Every subgroup is normal ($G$ is abelian), and a chain of subspaces increasing one dimension at a time is a composition series, with every factor $\cong \mathbb{Z}/p\mathbb{Z}$. For a permutation $\sigma \in S_n$ take
+\[ X_i = \langle e_1, \ldots, e_i \rangle, \qquad Y_j = \langle e_{\sigma(1)}, \ldots, e_{\sigma(j)} \rangle . \]
+Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_i \cap Y_j$ is spanned by the $e_k$ with $k \leq i$ and $\sigma^{-1}(k) \leq j$. Hence $H_{ij} = Z_{ij}/Z_{(i-1)j}$ is nontrivial exactly when $e_i \in Z_{ij}$, that is, when $j \geq \sigma^{-1}(i)$. The changeover of column $i$ is at row $\tau(i) = \sigma^{-1}(i)$: the pipes recover the permutation that defined the second flag (the lecture's ``very nice exercise''; with these conventions it comes out as $\sigma^{-1}$). So in this group every matching of the factors occurs.
+\srcline{lecture 10/30; the computation not from class}
+\end{exbox}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm, y=1cm]
+% three-dimensional picture: X_2 = <e1, e2> (blue, horizontal), Y_2 = <e1, e3> (orange, vertical), X_1 = Y_1 = <e1>
+\fill[blue!12] (-1.2,-0.7) -- (1.8,-0.7) -- (2.6,0.5) -- (-0.4,0.5) -- cycle;
+\fill[orange!25, opacity=0.8] (-0.8,-0.1) -- (2.2,-0.1) -- (2.2,1.9) -- (-0.8,1.9) -- cycle;
+\draw[black!50, ->] (0.7,-0.1) -- (1.14,0.56) node[right, font=\scriptsize, text=black] {$e_2$};
+\draw[black!50, ->] (0.7,-0.1) -- (0.7,1.6) node[left, font=\scriptsize, text=black] {$e_3$};
+\draw[black, very thick] (-1.0,-0.1) -- (2.5,-0.1) node[right, font=\scriptsize] {$X_1 = Y_1 = \langle e_1 \rangle$};
+\node[blue!75!black, font=\scriptsize] at (2.0,-0.45) {$X_2$};
+\node[orange!85!black, font=\scriptsize] at (-0.5,1.6) {$Y_2$};
+\node[font=\scriptsize, align=center] at (0.7,-1.3) {two planes through one line in $G = (\mathbb{Z}/p\mathbb{Z})^3$};
+\begin{scope}[shift={(5.6,-1.0)}, x=1.75cm, y=1.0cm]
+\node[font=\scriptsize] (z00) at (0,0) {$0$};
+\node[font=\scriptsize] (z01) at (0,1) {$0$};
+\node[font=\scriptsize] (z02) at (0,2) {$0$};
+\node[font=\scriptsize] (z03) at (0,3) {$0$};
+\node[font=\scriptsize] (z10) at (1,0) {$0$};
+\node[font=\scriptsize] (z11) at (1,1) {$\langle e_1 \rangle$};
+\node[font=\scriptsize] (z12) at (1,2) {$\langle e_1 \rangle$};
+\node[font=\scriptsize] (z13) at (1,3) {$\langle e_1 \rangle$};
+\node[font=\scriptsize] (z20) at (2,0) {$0$};
+\node[font=\scriptsize] (z21) at (2,1) {$\langle e_1 \rangle$};
+\node[font=\scriptsize] (z22) at (2,2) {$\langle e_1 \rangle$};
+\node[font=\scriptsize] (z23) at (2,3) {$\langle e_1, e_2 \rangle$};
+\node[font=\scriptsize] (z30) at (3,0) {$0$};
+\node[font=\scriptsize] (z31) at (3,1) {$\langle e_1 \rangle$};
+\node[font=\scriptsize] (z32) at (3,2) {$\langle e_1, e_3 \rangle$};
+\node[font=\scriptsize] (z33) at (3,3) {$G$};
+\draw[black!40, dashed] (z00) -- (z10);
+\draw[thick] (z01) -- (z11);
+\draw[thick] (z02) -- (z12);
+\draw[thick] (z03) -- (z13);
+\draw[black!40, dashed] (z10) -- (z20);
+\draw[black!40, dashed] (z11) -- (z21);
+\draw[black!40, dashed] (z12) -- (z22);
+\draw[thick] (z13) -- (z23);
+\draw[black!40, dashed] (z20) -- (z30);
+\draw[black!40, dashed] (z21) -- (z31);
+\draw[thick] (z22) -- (z32);
+\draw[thick] (z23) -- (z33);
+\draw[black!40, dashed] (z00) -- (z01);
+\draw[black!40, dashed] (z01) -- (z02);
+\draw[black!40, dashed] (z02) -- (z03);
+\draw[thick] (z10) -- (z11);
+\draw[black!40, dashed] (z11) -- (z12);
+\draw[black!40, dashed] (z12) -- (z13);
+\draw[thick] (z20) -- (z21);
+\draw[black!40, dashed] (z21) -- (z22);
+\draw[thick] (z22) -- (z23);
+\draw[thick] (z30) -- (z31);
+\draw[thick] (z31) -- (z32);
+\draw[thick] (z32) -- (z33);
+\node[font=\scriptsize, align=center] at (1.5,-0.8) {the grid $Z_{ij} = X_i \cap Y_j$; dashed: equal};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board's cube, with the grid added.)} The lecture's three-dimensional picture, $n = 3$ and $\sigma = (2\,3)$: the line $X_1 = Y_1 = \langle e_1 \rangle$ lies in two different planes, $X_2 = \langle e_1, e_2 \rangle$ and $Y_2 = \langle e_1, e_3 \rangle$. In the grid (right; $X$-series on the top row, $Y$-series on the right column) equalities appear inside the grid even though none occur along its edges: for instance $Z_{22} = X_2 \cap Y_2 = \langle e_1 \rangle = Z_{11}$. The column changeovers are at rows $\tau(1) = 1$, $\tau(2) = 3$, $\tau(3) = 2$, which is $\sigma^{-1} = (2\,3)$.
 
 
 \section{\texorpdfstring{$S_3$, $S_4$, $A_n$ and $GL_n$}{S₃, S₄, Aₙ and GLₙ}}\label{sec:rev-ch9}
@@ -7566,6 +7858,7 @@ Fri Oct 23 \newline lecture; slides & Simple groups of order $\leq 100$: $p$-gro
 Mon Oct 26 \newline lecture; Worksheet 11 & Internal and external direct sums and products; internal semidirect products; the action by automorphisms; external semidirect products $N \rtimes_\varphi S$; $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$; notation & \ref{sec:internal-direct-products}, \ref{sec:semidirect-products} (WS 11.1--11.6) \\
 Wed Oct 28 \newline lecture; Worksheet 12 & Subnormal, composition and quasi-composition series; Jordan--H\"older (statement); $\mathbb{Z}$ has no composition series; finite groups do; the grid $Z_{ij}$; WS 12.1--12.3 & \ref{sec:composition-series} (WS 12.1--12.5) \\
 Thu Oct 29 \newline Problem Set 7 (submitted) & Proper subgroups of $A_n$ have index $\geq n$; index $n$ gives $A_{n-1}$; simple groups of order $60$ are $A_5$; orders $\equiv 2 \bmod 4$; no simple group of order $56$; two normal subgroups with simple quotients & \ref{sub:orders-30-56-90}, \ref{sub:order-60}, \ref{sec:composition-series} \\
+Fri Oct 30 \newline lecture; quiz & Jordan--H\"older finished: the nine squares, four impossible (WS 12.4), the crossing square (WS 12.5), changeovers and pipes, proof of the theorem (WS 12.6); flags in $(\mathbb{Z}/p\mathbb{Z})^n$ & \ref{sub:jh-grid} (WS 12.4--12.6) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

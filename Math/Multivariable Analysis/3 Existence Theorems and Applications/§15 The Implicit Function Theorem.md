@@ -14,6 +14,10 @@ Consider the equation $x^2 + y^2 = 1$ (a circle). This defines $y$ as a function
 ![[m452-12-1.svg]]
 *The unit circle $x^2 + y^2 = 1$ (blue) is not the graph of any function of $x$, but it is locally: over the interval $|x - x_0| < \delta$ (red, open endpoints), the part of the circle near $(x_0, y_0)$ is the graph of a single function $y = f(x)$ (red arc) — here the upper branch $\sqrt{1 - x^2}$. The theorem produces exactly this local picture.*
 
+![[m452-12-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* A point runs once around $x^2 + y^2 = 1$. Red: the arc near it as a graph $y = f(x)$ over the red interval of the $x$-axis; green: as a graph $x = g(y)$. The red interval shrinks to nothing at $(\pm 1, 0)$, where $F_y = 2y = 0$ and the circle is vertical (Example §15.2); there the green description still works, since $F_x \neq 0$. At $(0, \pm 1)$ it is the other way round.
+
 More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a point $(x_0, y_0)$ on the curve?
 
 **Key insight:** If $F(a, b) = 0$ and the curve is not “vertical” at $(a, b)$ (i.e., $F_y(a, b) \neq 0$), then we can locally solve for $y$ as a function of $x$.
@@ -183,6 +187,10 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 
 ![[m452-12-3.svg]]
 *Steps 1–4 of the proof in one picture. In the box around $(x_0, y_0)$ we have $F_y > a/2$, so $F$ increases along every vertical segment. Continuity of $F$ keeps the top edge positive (red) and the bottom edge negative (green) over the narrower strip $|x - x_0| \leq \delta$ (shaded). On each vertical segment in the strip, $F$ therefore crosses $0$ exactly once: the IVT gives a crossing and monotonicity rules out a second. That crossing is $f(x)$ (red dot), and together the crossings trace the graph $y = f(x)$ (blue).*
+
+![[m452-12-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* Steps 1–4 for $F = x^2/4 + y^2 - 1$ near $(x_0, y_0) = (1, \tfrac{\sqrt3}{2})$, where $F_y > 0$. In the box the top edge has $F > 0$ (red) and the bottom edge $F < 0$ (green). As $x$ sweeps across, $F$ increases along the vertical segment at $x$ from negative to positive, so it vanishes at exactly one point $f(x)$ (blue); the traced points form the graph of the implicit function, here $f(x) = \sqrt{1 - x^2/4}$.
 
 > [!remark]- Connections
 > - MATH 451 relative: the one-variable [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10) — also “$f' \neq 0$ gives a local inverse, with derivative $1/f'$.”

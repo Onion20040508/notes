@@ -104,6 +104,10 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 ![[m452-15-2.svg]]
 *Fubini's theorem geometrically: freeze $x$ and integrate over $y$ to get the cross-sectional area $A(x)$ (red slab); then integrate $A(x)$ over $x$ to stack the slabs into the volume. The iterated integral $\int\!\!\int f\,dy\,dx$ is this two-stage process; Fubini says it equals the double integral whenever $f$ is integrable.*
 
+![[m452-15-a4.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The slab at $x$ sweeps from $a$ to $b$ through the solid under $f$ of the figure; right: the cross-section area $A(x) = \int_c^d f(x, y)\,dy$, with the area under its graph shaded so far. The title shows $\int_a^x A$, the volume swept so far; at $x = b$ it is the double integral.
+
 > [!remark]- Connections
 > - Makes rigorous the simple-case computation ([[§22 Properties of the Integral#Iterated Integrals: The Simple Case|“Iterated Integrals: The Simple Case”]]) above; extended to curved regions in [[§23 Fubini's Theorem#^thm-23-2|Theorem §23.2]].
 > - Its Type I/II form plus the [[Fundamental Theorem of Calculus]] in the inner variable proves [[Green's Theorem|Green's Theorem]] (§16.1), and one dimension up the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] (§17.1).
@@ -439,6 +443,10 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 ![[m452-15-7.svg]]
 *The triangle of Example §23.1 sliced both ways. Left, as a Type I region: the vertical slice at $x$ runs over $x \leq y \leq 1$, and the inner integral $\int_x^1 e^{y^2}\,dy$ cannot be done in closed form. Right, as a Type II region: the horizontal slice at $y$ runs over $0 \leq x \leq y$, and $e^{y^2}$ is constant along it, so the inner integral is just $y\,e^{y^2}$. Same region, same double integral ([[§23 Fubini's Theorem#^cor-23-4|§23.4]]), but only one order is computable.*
+
+![[m452-15-a5.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The triangle of Example §23.1 sliced both ways. As a Type I region the vertical slice runs over $x \leq y \leq 1$, and the inner integral $\int_x^1 e^{y^2}\,dy$ has no elementary antiderivative. As a Type II region the horizontal slice runs over $0 \leq x \leq y$, the inner integral is $y\,e^{y^2}$, and the running total climbs to $\frac{e-1}{2} = 0.8591$.
 
 ### A Counterexample: When Fubini Fails
 

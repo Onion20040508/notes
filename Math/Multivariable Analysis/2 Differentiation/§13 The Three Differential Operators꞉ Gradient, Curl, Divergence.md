@@ -51,8 +51,16 @@ Geometrically, $\nabla \times \mathbf{F}$ measures the *local rotation* of the f
 ![[m452-11-2.svg]]
 *Three vector fields illustrating the operators. Left: a radial source — positive divergence, no rotation. Middle: rigid rotation — positive curl, no spreading. Right: uniform flow — neither. Divergence detects spreading; curl detects rotation.*
 
+![[m452-11-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* A small square of particles carried by the flows of the three fields of the figure, $t$ from $0$ to $0.75$ and back (red dot: one corner). Source $(x, y)$: the square spreads and its area grows by $e^{2t}$ (divergence $2$), but it does not turn. Rotation $(-y, x)$: it turns by the angle $t$ with its area unchanged (curl $2$, divergence $0$). Uniform flow: it only moves.
+
 ![[m452-11-3.svg]]
 *Curl is circulation density: $(\nabla\times\mathbf{F})_z(P) = \lim_{\varepsilon\to 0} \frac{1}{|B_\varepsilon|}\oint_{\partial B_\varepsilon}\mathbf{F}\cdot\mathbf{T}\,ds$ — shrink a test loop around $P$ and measure how strongly the field pushes along it, per unit area (a paddle wheel placed at $P$ spins at this rate). Left: a rotational field drives the loop; positive curl. Right: a radial field is everywhere perpendicular to the loop; a paddle wheel would not turn — zero curl, even though the field is far from constant. Stokes' theorem ([[Stokes' Theorem in ℝ³|§20]]) is this local statement summed over a surface.*
+
+![[m452-11-a2.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The limits that make divergence and curl densities: a test circle of radius $\varepsilon$ shrinks around $P = (1, 0.6)$ (views scale with $\varepsilon$). Left: flux/area of $(x^3, y^3)/3$; right: circulation/area of $(-y^3, x^3)/3$. Both equal the average of $x^2 + y^2$ over the disk, $1.36 + \varepsilon^2/2$, and tend to $\nabla\cdot\mathbf{F}(P) = (\nabla\times\mathbf{F})_z(P) = 1.36$. (Fields chosen so that the density is not constant.)
 
 **Why only $\mathbb{R}^3$?** The curl takes a vector field (3 components) and produces another vector field (3 components). This works because there are exactly 3 independent pairs from $\{x, y, z\}$: $(y,z)$, $(z,x)$, $(x,y)$. In $\mathbb{R}^2$, there is only 1 such pair, so the “curl” of a 2D field is a scalar, not a vector: $(\nabla \times \mathbf{F})_z = (F_2)_x - (F_1)_y$. In $\mathbb{R}^4$, there are 6 pairs, so the “curl” would have 6 components and cannot be a vector field. The exterior derivative ([[§38 The Exterior Derivative#^def-38-1|§38.1]]) removes this dimension restriction.
 

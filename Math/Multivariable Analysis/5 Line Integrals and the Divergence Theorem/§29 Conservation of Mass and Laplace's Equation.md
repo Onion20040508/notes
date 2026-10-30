@@ -71,6 +71,10 @@ Consider a fluid with density $\rho(x, y, t)$ and velocity field $\mathbf{u}(x, 
 
 ^pf-29-1
 
+![[m452-17-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* A density blob $\rho$ carried by the uniform flow $\mathbf{u} = (1, 0)$ through the fixed square $D$ (red). Below: the mass in $D$ (blue) and the net outflow through $\partial D$ so far, $\int_0^t \oint \rho\,\mathbf{u}\cdot\hat n\,ds\,dt$ (red, negative while mass flows in). Their sum stays $0.386$: the balance ① + ② = 0 of the proof, integrated in time.
+
 *Uses:* [[§27 Line Integrals and Green's Theorem#^thm-27-2|§27.2]], [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§2 Open and Closed Sets#^def-2-1|Def. §2.1]], [[§22 Properties of the Integral#^thm-22-4|§22.4]]
 
 > [!remark]- Connections
@@ -241,6 +245,10 @@ This is **Laplace's equation**. A function satisfying $\Delta \phi = 0$ is calle
 > Choosing $C' = 0$ gives the function of the theorem.
 
 ^pf-29-2
+
+![[m452-17-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* Circles moving in the field $\nabla\ln r = (x, y)/r^2$ of the fundamental solution: the flux through a circle is $2\pi$ whenever it encloses the origin (red), whatever its size, and $0$ when it does not (blue). This follows from $\Delta\ln r = 0$ away from $0$ together with the divergence theorem in the plane (§27); the note itself does not compute it.
 
 *Uses:* [[Multivariable Chain Rule|§12.2]], [[§8 Algebra of Differentiable Functions#^thm-8-2|§8.2]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|Def. §28.3]]
 

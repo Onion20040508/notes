@@ -39,6 +39,10 @@ A basic property of [[§7 Differentiability#^def-7-1|differentiable]] functions 
 ![[m452-7-1.svg]]
 *The directional derivative restricts $f$ to a ray: points along the direction $\alpha$ have the form $(x + \rho\cos\alpha,\, y + \rho\sin\alpha)$, turning $f$ into a single-variable function of the distance $\rho$. Its derivative at $\rho = 0$ is $D_{(\alpha)}f$. The partials are the special cases $\alpha = 0$ and $\alpha = \pi/2$.*
 
+![[m452-7-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* The direction $\alpha$ turns once around $(1.2, 1.25)$ (red arrow on the base; pale arrow: $\nabla f$). The slice of the surface over the ray and its tangent (red) change with $\alpha$; right, $D_{(\alpha)}f = f_x\cos\alpha + f_y\sin\alpha$ traced against $\alpha$: a sinusoid of amplitude $|\nabla f| = 0.434$, largest in the direction of $\nabla f$ (dashed) and zero in the two directions along the contour.
+
 > [!remark] Remark: Partial Derivatives as Special Cases
 > The [[§5 Partial Derivatives#^def-5-1|partial derivatives]], when they exist, are directional derivatives in the coordinate directions:
 >
@@ -114,6 +118,10 @@ A basic property of [[§7 Differentiability#^def-7-1|differentiable]] functions 
 
 ![[m452-7-2.svg]]
 *The gradient as a field on the contour map of $F = x^2/4 + y^2$ (contours $F = c$ for $c = \tfrac12, 1, \tfrac32, 2$, values marked on the left). At every point, $\nabla F = (x/2,\,2y)$ is perpendicular to the contour through that point and points toward higher values. Its length encodes steepness: at $(0,1)$ the contours are packed twice as tightly as at $(2,0)$, and the gradient is exactly twice as long. Along any contour the tangential directional derivative vanishes (green tangent) — moving along a level curve changes nothing; moving across contours, the shorter the crossing distance, the larger $|\nabla F|$.*
+
+![[m452-7-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Points move by steepest ascent, $\dot{\mathbf{x}} = \nabla F = (x/2, 2y)$, starting from a small ring around the minimum; the paths are $x = x_0 e^{t/2}$, $y = y_0 e^{2t}$, so $y$ is proportional to $x^4$. They cross every contour at a right angle and bend toward the $y$-direction, where $F$ grows fastest.
 
 > [!remark]- Connections
 > - The same maximization is the equality case of the [[Cauchy–Schwarz inequality]]: $\nabla f \cdot \mathbf{u} \le |\nabla f|\,|\mathbf{u}|$, with equality iff $\mathbf{u}$ is a positive multiple of $\nabla f$.

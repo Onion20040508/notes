@@ -277,6 +277,10 @@ The following theorems show that continuous functions are closed under the stand
 ![[m452-3-2.svg]]
 *Level structure of $f(x,y) = \frac{2xy}{x^2+y^2}$: on each line $y = kx$ through the origin (hollow: $f$ is not defined there) $f$ is constant, equal to $\frac{2k}{1+k^2}$ — $1$ on $y = x$ (dark red), $-1$ on $y = -x$ (dark blue), $\pm\frac45$ on $y = 2x,\ \tfrac12 x$ and $y = -2x,\ -\tfrac12 x$, and $0$ on both axes. Every disc around the origin (dashed) meets all of these lines, so $f$ takes every value in $[-1,1]$ arbitrarily close to $(0,0)$ and no single limit $A$ can work.*
 
+![[m452-3-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* A line $y = kx$ turns around the origin ($\theta$ from $0$ to $\pi$). On it the surface $z = f(x, y)$ is constant, at height $\frac{2k}{1+k^2} = \sin 2\theta$, so approaching $0$ along the line gives that value as the limit; the black segment at the origin collects them all, from $-1$ to $1$, and $f$ cannot be continuous at $0$ (Example §3.1). Along the axes (green) the value is $0$, which is why $f_x(0,0) = f_y(0,0) = 0$ exist anyway (Example §5.1). Heights are drawn at scale $0.55$.
+
 > [!remark]- Connections
 > - Worked examples: the two-path test, [[§107 Limits and Continuity#^thm-107-1|Calc Thm. §107.1]], applied to xy/(x² + y²) in [[§107 Limits and Continuity#^ex-107-1|Calc Ex. §107.1]].
 

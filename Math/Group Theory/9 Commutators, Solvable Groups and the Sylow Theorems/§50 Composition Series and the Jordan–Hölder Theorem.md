@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 ---
 ← [[§49 The Derived Series]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§51 S₃, S₄, Aₙ and GLₙ]] →
 
-*Source: Lecture and Worksheet 12 (Wed Oct 28); the proof is to be finished Fri Oct 30. Taught after the Sylow theorems and semidirect products, and placed here because a composition series is a subnormal series, like the chains that define solvable groups ([[§48 Solvable Groups|§48]]) and the derived series ([[§49 The Derived Series|§49]]). Reference: not covered in the Pinter chapters used so far.*
+*Source: Lecture and Worksheet 12 (Wed Oct 28); lecture (Fri Oct 30), which finished the proof. Taught after the Sylow theorems and semidirect products, and placed here because a composition series is a subnormal series, like the chains that define solvable groups ([[§48 Solvable Groups|§48]]) and the derived series ([[§49 The Derived Series|§49]]). Reference: not covered in the Pinter chapters used so far.*
 
 The course has used the analogy that simple groups are atoms and other groups are molecules built from them. For the analogy to be good, every group should have a well-defined “chemical formula”: a list of simple pieces that does not depend on how the group is taken apart. The Jordan–Hölder theorem says exactly this, for every group that can be taken apart into simple pieces at all, in particular every finite group.
 
@@ -39,7 +39,7 @@ The course has used the analogy that simple groups are atoms and other groups ar
 ^def-50-3
 
 > [!remark] Remark: Quasi-Composition Series
-> The term is the lecturer's own and is not standard. (WS 12 says “a composition series where \ldots”; a subnormal series is meant.) A trivial quotient $G_j/G_{j-1}$ just means $G_{j-1} = G_j$, a repeated term. Deleting the repeated terms turns a quasi-composition series into a composition series with the same simple quotients. Quasi-composition series are convenient in the proof below, where trivial quotients arise naturally.
+> The term is the lecturer's own and is not standard. (WS 12 says “a composition series where …”; a subnormal series is meant.) A trivial quotient $G_j/G_{j-1}$ just means $G_{j-1} = G_j$, a repeated term. Deleting the repeated terms turns a quasi-composition series into a composition series with the same simple quotients. Quasi-composition series are convenient in the proof below, where trivial quotients arise naturally.
 >
 > *Source: lecture 10/28*
 
@@ -59,14 +59,16 @@ The course has used the analogy that simple groups are atoms and other groups ar
 >
 > be two composition series, with quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$. Then $m = n$, and there is a permutation $\sigma \in S_n$ with $S_i \cong T_{\sigma(i)}$ for $1 \leq i \leq m$.
 >
-> *Source: lecture 10/28; WS 12*
+> *Source: lecture 10/28, 10/30; WS 12*
 
 ^thm-50-1
 
-> [!proof]+ Proof (to be filled)
-> The proof occupies [[§50 Composition Series and the Jordan–Hölder Theorem|§50]]: the steps through WS 12.3 were done on 10/28, and WS 12.4–12.6 are to be finished on Fri Oct 30. The lecture's comment: the theorem justifies the program of studying groups through simple groups.
+> [!proof]+ Proof (given at the end of [[§50 Composition Series and the Jordan–Hölder Theorem|§50]])
+> The proof needs the grid of intersections of the two series, set up in [[§50 Composition Series and the Jordan–Hölder Theorem|§50]], and it is given there, after Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|§50.10]]. WS 12.1–12.3 were done on 10/28 and WS 12.4–12.6 on 10/30. The lecture's comment: the theorem justifies the program of studying groups through simple groups (the remark *Peeling Off Atoms* after the proof).
 
 ^pf-50-1
+
+*Uses:* [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|§50.10]]
 
 > [!theorem] Proposition §50.2: $\mathbb{Z}$ Has No Composition Series
 > Not every group has a composition series: $\mathbb{Z}$ has none.
@@ -123,9 +125,9 @@ The course has used the analogy that simple groups are atoms and other groups ar
 *(Not from lecture; figure added, after the lecture's image.)* The proof of Lemma [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-3|§50.3]]: the normal subgroup $N$ is the island in the stream from $\{e\}$ to $G$. A composition series of $N$ reaches the island, and the preimages $\pi^{-1}(Q_j)$ of a composition series of $G/N$ carry the bridge on to $G$; each new quotient is $\cong Q_j/Q_{j-1}$.
 
 > [!example] Example §50.1: The Order of the Factors Is Not Arbitrary
-> A student asked whether every ordering of the composition factors is realized by some composition series. The question was left open in class; the answer is no. $S_3$ has the composition series $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$, with factors $\mathbb{Z}/3, \mathbb{Z}/2$ in that order, and no composition series with the factors in the order $\mathbb{Z}/2, \mathbb{Z}/3$.
+> A student asked whether every ordering of the composition factors is realized by some composition series. On 10/30 the lecture gave a group in which every ordering occurs, $(\mathbb{Z}/p\mathbb{Z})^n$ (Example [[§50 Composition Series and the Jordan–Hölder Theorem#^ex-50-2|§50.2]]). In general the answer is no (not from class). $S_3$ has the composition series $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$, with factors $\mathbb{Z}/3, \mathbb{Z}/2$ in that order, and no composition series with the factors in the order $\mathbb{Z}/2, \mathbb{Z}/3$.
 >
-> *Source: question from class 10/28; answer not from class*
+> *Source: question from class 10/28; the example $(\mathbb{Z}/p\mathbb{Z})^n$ lecture 10/30; $S_3$ not from class*
 
 ^ex-50-1
 
@@ -342,50 +344,156 @@ The course has used the analogy that simple groups are atoms and other groups ar
 *Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-5|§50.5]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-6|§50.6]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§48 Solvable Groups#^prop-48-4|§48.4]]
 
 > [!remark] Remark: The Possible Squares
-> Consider one square of the grid, with corners $Z_{(i-1)(j-1)}$ (bottom left), $Z_{i(j-1)}$ (bottom right), $Z_{(i-1)j}$ (top left), $Z_{ij}$ (top right). Its bottom and top edges carry $H_{i(j-1)}$ and $H_{ij}$, its left and right edges $V_{(i-1)j}$ and $V_{ij}$. By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]], each edge is “$=$” (trivial) or carries $S_i$ (horizontal) or $T_j$ (vertical), and a nontrivial bottom edge forces a nontrivial top edge, a nontrivial left edge a nontrivial right edge. This leaves $3 \times 3 = 9$ kinds of square.
+> Consider one square of the grid. To keep the subscripts out of the way, the lecture names its corners
 >
-> *Source: WS 12.4–12.5*
+> $$
+> A = Z_{(i-1)(j-1)}, \qquad B = Z_{i(j-1)}, \qquad C = Z_{(i-1)j}, \qquad D = Z_{ij},
+> $$
+>
+> so that $A \trianglelefteq B \trianglelefteq D$ and $A \trianglelefteq C \trianglelefteq D$ (Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-6|§50.6]]). In the grid, as on the board, $A$ is the bottom left corner, $B$ the bottom right, $C$ the top left and $D$ the top right. The four edges carry:
+> - bottom $B/A = H_{i(j-1)}$ and top $D/C = H_{ij}$: each is “$=$” or $S_i$;
+> - left $C/A = V_{(i-1)j}$ and right $D/B = V_{ij}$: each is “$=$” or $T_j$.
+>
+> By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]], a nontrivial bottom edge forces a nontrivial top edge, and a nontrivial left edge forces a nontrivial right edge. So (bottom, top) is $(=, =)$, $(=, S_i)$ or $(S_i, S_i)$, and (left, right) is $(=, =)$, $(=, T_j)$ or $(T_j, T_j)$: before any thinking, there are $3 \times 3 = 9$ kinds of square, drawn below.
+>
+> *Source: WS 12.4–12.5; lecture 10/30*
 
 ^rem-50-5
 
+![[m493-50-1.svg]]
+
+*(Figure after the lecture; pipes added.)* The nine kinds of square; the corners $A, B, C, D$ are as in the key. A dashed edge marked $=$ is a trivial quotient: its two corners are equal. $S$ stands for $S_i$ on the horizontal edges and $T$ for $T_j$ on the vertical ones. In the four impossible squares (a)–(d), exactly one of the two directions changes from trivial to nontrivial across the square (Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-9|§50.9]]). In the allowed squares (i)–(v), the coloured lines are the pipes of the remark *Changeover Squares and Pipes* below: a pipe runs through each pair of nontrivial opposite edges, and in the crossing square (v) it turns the corner, from $S$ on the top to $T$ on the right, where $S \cong T$ (Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|§50.10]]).
+
 > [!theorem] Proposition §50.9: Four Impossible Squares
-> The following squares do not occur (top, bottom; left, right):
+> With the corners $A, B, C, D$ of a square as in the remark *The Possible Squares*, none of the following occurs (squares (a)–(d) of the figure):
 >
-> 1. $S_i$, $=$;  $T_j$, $T_j$;
-> 2. $S_i$, $S_i$;  $=$, $T_j$;
-> 3. $S_i$, $=$;  $=$, $=$;
-> 4. $=$, $=$;  $=$, $T_j$.
+> 1. bottom $=$, top $S_i$, left $T_j$, right $T_j$:  $B = A$, $D/C \cong S_i$, $C/A \cong T_j$, $D/B \cong T_j$;
+> 2. bottom $S_i$, top $S_i$, left $=$, right $T_j$:  $B/A \cong S_i$, $D/C \cong S_i$, $C = A$, $D/B \cong T_j$;
+> 3. bottom $=$, top $S_i$, left $=$, right $=$:  $B = A$, $D/C \cong S_i$, $C = A$, $D = B$;
+> 4. bottom $=$, top $=$, left $=$, right $T_j$:  $B = A$, $D = C$, $C = A$, $D/B \cong T_j$.
 >
-> Hint: think about $Z_{ij}/Z_{(i-1)(j-1)}$.
+> In words: across one square, the horizontal edges cannot change from trivial to $S_i$ unless the vertical edges also change from trivial to $T_j$, and conversely. (Worksheet hint: think about $Z_{ij}/Z_{(i-1)(j-1)} = D/A$.)
 >
-> *Source: WS 12.4*
+> *Source: WS 12.4; lecture 10/30*
 
 ^prop-50-9
 
-> [!proof]+ Proof (to be filled)
-> WS 12.4, to be done Fri Oct 30.
+> [!proof]+ Proof
+> *Idea:* in (a), $D/A$ is the simple group $T_j$, and $C$ gives a normal subgroup $C/A$ of it that is neither trivial nor everything; (b) is the mirror image, and (c), (d) are degenerate.
+>
+> *(Board 10/30.)* Throughout, a trivial quotient means equal groups: $B/A$ trivial means $B = A$, and so on.
+>
+> **(a), Step 1: $D/A$ is simple.** Since $B = A$, the quotient $D/A$ is the quotient $D/B$, which is $T_j$, a simple group.
+>
+> **Step 2: $C/A$ is a normal subgroup of $D/A$.** We have $A \subseteq C$ and $C \trianglelefteq D$. The projection $D \to D/A$ is surjective and maps $C$ onto $C/A$; the image of a normal subgroup under a surjective homomorphism is normal (Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], WS 6.6(3)). So $C/A \trianglelefteq D/A$.
+>
+> **Step 3: both possibilities are contradictory.** By Steps 1 and 2, $C/A$ is trivial or all of $D/A$.
+> - If $C/A$ is trivial, then $C = A$; but $C/A \cong T_j$ is not trivial.
+> - If $C/A = D/A$, then each coset $dA$ with $d \in D$ equals some $cA$ with $c \in C$, so $d \in cA \subseteq C$. Hence $C = D$ and $D/C$ is trivial; but $D/C \cong S_i$ is not trivial.
+>
+> **(b)** This is (a) with the roles of $B$ and $C$ exchanged. Since $C = A$, the quotient $D/A = D/C \cong S_i$ is simple (Step 1). $B/A$ is a normal subgroup of it, because $B \trianglelefteq D$ (Step 2). If $B/A$ is trivial, this contradicts $B/A \cong S_i$; if $B/A = D/A$, then $B = D$, contradicting $D/B \cong T_j$ (Step 3).
+>
+> **(c)** $B = A = C$, so $D/C = D/B$, which is trivial since $D = B$. This contradicts $D/C \cong S_i$.
+>
+> **(d)** $B = A = C$, so $D/B = D/C$, which is trivial since $D = C$. This contradicts $D/B \cong T_j$.
 
 ^pf-50-9
 
-> [!theorem] Proposition §50.10: The Crossing Square
-> If a square has top $S_i$, bottom $=$, left $=$, right $T_j$, then $S_i \cong T_j$. Hint: think about $Z_{ij}/Z_{(i-1)(j-1)}$.
+*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]]
+
+![[m493-50-2.svg]]
+
+*(Not from lecture; figure added.)* Case (a) of the proof. Left: the square. Right: the subgroups between $A$ and $D$, with the quotients on the edges. Since $B = A$, the whole quotient $D/A$ is the simple group $T_j$. But $C$ lies strictly between $A$ and $D$ (both $C/A$ and $D/C$ are nontrivial), so $C/A$ would be a normal subgroup of $D/A$ that is neither trivial nor everything.
+
+> [!remark] Remark: The Same Argument by Counting
+> For finite $G$, case (a) is also a count of indices, as a student suggested on the board. By Lagrange's theorem along the two paths from $A$ to $D$,
 >
-> *Source: WS 12.5*
-
-^prop-50-10
-
-> [!proof]+ Proof (to be filled)
-> WS 12.5, to be done Fri Oct 30.
-
-^pf-50-10
-
-> [!remark] Remark: Pipes
-> So only five squares remain: both pairs nontrivial; only the left and right edges nontrivial; only the top and bottom edges nontrivial; all four edges trivial; and the crossing square of WS 12.5. Draw a “pipe” through each nontrivial pair of opposite edges, and in the crossing square a pipe entering through the top edge and leaving through the right edge. Each pipe then carries a single simple group from the top row ($S_i$) to the right column ($T_j$), which is how the permutation $\sigma$ arises. WS 12.6 asks to turn this into a proof of the Jordan–Hölder theorem; it is to be finished on Fri Oct 30.
+> $$
+> [D : A] = [D : C]\,[C : A] = |S_i| \cdot |T_j|, \qquad [D : A] = [D : B]\,[B : A] = |T_j| \cdot 1,
+> $$
 >
-> *Source: WS 12*
+> so $|S_i| = 1$, impossible for a simple group. The quotient argument above works for infinite groups too. Another student proposed comparing $(D/A)/(B/A) \cong D/B$ and $(D/A)/(C/A) \cong D/C$ (Third Isomorphism Theorem, Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|§42.5]]), which is the same argument in other words. In the crossing square the count gives only $|S_i| = |T_j|$: this suggests the isomorphism of the next proposition, but does not prove it.
+>
+> *Source: lecture 10/30*
 
 ^rem-50-6
 
-![[m493-56-2.svg]]
+> [!theorem] Proposition §50.10: The Crossing Square
+> Suppose a square has bottom and left edges trivial ($B = A$ and $C = A$), top edge $D/C \cong S_i$ and right edge $D/B \cong T_j$: the crossing square (v). Then $S_i \cong T_j$. (Worksheet hint: think about $Z_{ij}/Z_{(i-1)(j-1)}$.)
+>
+> *Source: WS 12.5; lecture 10/30*
 
-*(Not from lecture; figure added, after WS 12.)* The five squares left by Propositions [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-9|§50.9]] and [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|§50.10]], with their pipes. A pipe through the top and bottom edges carries $S_i$ (blue), one through the left and right edges carries $T_j$ (red); in the crossing square the pipe turns, from $S_i$ on the top to $T_j \cong S_i$ on the right.
+^prop-50-10
+
+> [!proof]+ Proof
+> *Idea:* the two trivial edges say that $A$, $B$ and $C$ are one subgroup, so the two nontrivial edges are literally the same quotient.
+>
+> *(Board 10/30.)* Since $B = A$ and $C = A$, the three corners $A$, $B$, $C$ are the same subgroup of $D$. So the right edge $D/B$ and the top edge $D/C$ are the same group of cosets, and
+>
+> $$
+> T_j \cong D/B = D/C \cong S_i.
+> $$
+
+^pf-50-10
+
+> [!remark] Remark: Changeover Squares and Pipes
+> By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]](3), the horizontal edges of column $i$ read, from the bottom up,
+>
+> $$
+> =,\ \ldots,\ =,\ S_i,\ \ldots,\ S_i :
+> $$
+>
+> the column starts with $H_{i0} = \{e\}$, ends with $H_{in} = S_i$ on the top row, and changes exactly once. The square where it changes is the **changeover square** of column $i$: its bottom edge is “$=$” and its top edge $S_i$. Likewise the vertical edges of row $j$ read $=, \ldots, =, T_j, \ldots, T_j$ from left to right, and row $j$ has one changeover square, with left edge “$=$” and right edge $T_j$. The impossible squares say that the changeover square of a column is the changeover square of a row, and conversely: the changeovers line up. The lecture records this with **pipes**. Along each column a pipe runs through its $S_i$ edges, from $S_i$ on the top row down to the changeover square; along each row a pipe runs through its $T_j$ edges, from $T_j$ on the right column back to the changeover square. The two meet in a crossing square, so each pipe joins one $S_i$ (top) to one $T_j$ (right), and carries a single simple group along its whole length. The figure below builds this in three steps.
+>
+> *Source: lecture 10/30; WS 12*
+
+^rem-50-7
+
+![[m493-50-3.svg]]
+
+*(Figure after the board, in three steps.)* The case $m = n = 3$; the top row of the grid is the $X$-series and the right column the $Y$-series. (a) The horizontal edges: in each column, “$=$” (dashed) up to the changeover, then $S_i$. (b) The vertical edges: in each row, “$=$” up to the changeover, then $T_j$. (c) The changeover squares (shaded) coincide; they are crossing squares, one in each row and each column, like the $1$s of a permutation matrix. Each pipe comes down from $S_i$ and turns right to $T_{\sigma(i)}$; here $S_1 \cong T_2$, $S_2 \cong T_3$, $S_3 \cong T_1$, the matching drawn on the board. Where two pipes cross (a square of type (i)), nothing happens.
+
+> [!proof]+ Proof of the Jordan–Hölder Theorem (Theorem [[§50 Composition Series and the Jordan–Hölder Theorem#^thm-50-1|§50.1]])
+> *Idea:* each column and each row changes exactly once; the impossible squares force every column changeover to be a row changeover, so the changeovers form a permutation, and at each of them the crossing square gives $S_i \cong T_j$.
+>
+> *(WS 12.6; lecture 10/30.)*
+>
+> **Step 1: each column changes once.** Fix a column $i \in \{1, \ldots, m\}$. By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]](3) there is $j_0$ with $H_{ij}$ trivial for $j < j_0$ and $H_{ij} \cong S_i$ for $j \geq j_0$. Since $H_{i0} = \{e\}$ and $H_{in} = S_i \neq \{e\}$, we have $1 \leq j_0 \leq n$. Put $\tau(i) = j_0$. Then the square of column $i$ between rows $\tau(i) - 1$ and $\tau(i)$ has bottom edge “$=$” and top edge $S_i$, and it is the only square of the column with this property. This defines a map $\tau : \{1, \ldots, m\} \to \{1, \ldots, n\}$.
+>
+> **Step 2: each row changes once.** In the same way (the statement for the $V_{ij}$ in Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]]), for each row $j \in \{1, \ldots, n\}$ there is exactly one $\rho(j) \in \{1, \ldots, m\}$ such that the square of row $j$ between columns $\rho(j) - 1$ and $\rho(j)$ has left edge “$=$” and right edge $T_j$.
+>
+> **Step 3: a column changeover is a row changeover.** Take the changeover square of column $i$ from Step 1: bottom “$=$”, top $S_i$. Among the nine kinds of square, those with this bottom and top are (a), (c) and the crossing square (v). By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-9|§50.9]], (a) and (c) do not occur, so it is the crossing square: its left edge is “$=$” and its right edge is $T_{\tau(i)}$. It lies in row $\tau(i)$, between columns $i - 1$ and $i$, so by Step 2 it is the changeover square of row $\tau(i)$: $\rho(\tau(i)) = i$.
+>
+> **Step 4: a row changeover is a column changeover.** Symmetrically, the changeover square of row $j$ has left edge “$=$” and right edge $T_j$. The squares with these vertical edges are (b), (d) and (v), and (b), (d) do not occur. So it is the crossing square: bottom “$=$”, top $S_{\rho(j)}$, the changeover square of column $\rho(j)$. Hence $\tau(\rho(j)) = j$.
+>
+> **Step 5: $m = n$.** By Steps 3 and 4, $\tau$ and $\rho$ are inverse maps, so $\tau$ is a bijection from $\{1, \ldots, m\}$ to $\{1, \ldots, n\}$. Hence $m = n$, and $\sigma := \tau$ is a permutation in $S_n$.
+>
+> **Step 6: the isomorphisms.** For each $i$, the changeover square of column $i$ is a crossing square with top edge $S_i$ and right edge $T_{\sigma(i)}$. By Proposition [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|§50.10]], $S_i \cong T_{\sigma(i)}$.
+
+^pf-50-1-2
+
+*Uses:* [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|§50.8]], [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-9|§50.9]], [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|§50.10]]
+
+> [!remark] Remark: Peeling Off Atoms
+> Read a composition series from the top: $G = G_N \trianglerighteq G_{N-1} \trianglerighteq \cdots \trianglerighteq G_0 = \{e\}$ peels off one simple quotient $G_N/G_{N-1}$ at a time, each step passing to a smaller normal subgroup. The theorem says that in whatever order the pieces are peeled off, the same atoms come off, with the same multiplicities. This is the lecture's justification for treating simple groups as the right objects to understand first.
+>
+> *Source: lecture 10/30*
+
+^rem-50-8
+
+> [!example] Example §50.2: Flags in $(\mathbb{Z}/p\mathbb{Z})^n$
+> Let $G = (\mathbb{Z}/p\mathbb{Z})^n$, an $n$-dimensional vector space over $\mathbb{F}_p$, with standard basis $e_1, \ldots, e_n$. Every subgroup is normal ($G$ is abelian), and a chain of subspaces increasing one dimension at a time is a composition series, with every factor $\cong \mathbb{Z}/p\mathbb{Z}$. For a permutation $\sigma \in S_n$ take
+>
+> $$
+> X_i = \langle e_1, \ldots, e_i \rangle, \qquad Y_j = \langle e_{\sigma(1)}, \ldots, e_{\sigma(j)} \rangle .
+> $$
+>
+> Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_i \cap Y_j$ is spanned by the $e_k$ with $k \leq i$ and $\sigma^{-1}(k) \leq j$. Hence $H_{ij} = Z_{ij}/Z_{(i-1)j}$ is nontrivial exactly when $e_i \in Z_{ij}$, that is, when $j \geq \sigma^{-1}(i)$. The changeover of column $i$ is at row $\tau(i) = \sigma^{-1}(i)$: the pipes recover the permutation that defined the second flag (the lecture's “very nice exercise”; with these conventions it comes out as $\sigma^{-1}$). So in this group every matching of the factors occurs.
+>
+> *Source: lecture 10/30; the computation not from class*
+
+^ex-50-2
+
+![[m493-50-4.svg]]
+
+*(Figure after the board's cube, with the grid added.)* The lecture's three-dimensional picture, $n = 3$ and $\sigma = (2\,3)$: the line $X_1 = Y_1 = \langle e_1 \rangle$ lies in two different planes, $X_2 = \langle e_1, e_2 \rangle$ and $Y_2 = \langle e_1, e_3 \rangle$. In the grid (right; $X$-series on the top row, $Y$-series on the right column) equalities appear inside the grid even though none occur along its edges: for instance $Z_{22} = X_2 \cap Y_2 = \langle e_1 \rangle = Z_{11}$. The column changeovers are at rows $\tau(1) = 1$, $\tau(2) = 3$, $\tau(3) = 2$, which is $\sigma^{-1} = (2\,3)$.

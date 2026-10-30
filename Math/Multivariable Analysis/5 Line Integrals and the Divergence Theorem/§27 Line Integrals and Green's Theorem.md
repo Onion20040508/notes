@@ -12,6 +12,10 @@ tags: [multivariable-analysis, math452]
 ![[m452-16-1.svg]]
 *The line integral is computed through its parametrization $\mathbf{r}(t) = (x(t), y(t))$: partition $[a,b]$ into steps $\Delta t$; $\mathbf{r}$ carries the ticks $t_j$ to points $\mathbf{r}(t_j)$ on $\gamma$ (blue), spaced unevenly — wide where the speed $|\mathbf{r}'|$ is large, tight where it is small. Each step contributes the displacement $\Delta\mathbf{r} \approx \mathbf{r}'(t_j)\,\Delta t$ (green): its length $\approx \sqrt{x'^2+y'^2}\,\Delta t$ is the $ds$ of the scalar integral (Def. §27.1), and its dot product with the field (red) is one term of the work integral (Def. §27.2). Summing and refining: $\int_{\gamma}\mathbf{F}\cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t))\cdot\mathbf{r}'(t)\,dt$ — an ordinary one-variable [[§32 The Definition of the Riemann Integral#^def-32-8|integral]]. The speed factor is automatic: $d\mathbf{r} = \mathbf{r}'(t)\,dt$ is the 1D case of the Jacobian story ([[§24 The Change of Variables Formula|§24]]).*
 
+![[m452-16-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* A particle runs along the curve of the figure with the parametrization's uneven speed (the dots are equal steps in $t$) through the field $\mathbf{F} = (-0.8(y - 0.75), 0.25\sin x)$, chosen for the picture (green arrow; red: direction of travel). Below, the work so far $\int_a^t \mathbf{F}\cdot\mathbf{r}'\,dt$ rises where $\mathbf{F}$ points along the motion and falls where it points against it.
+
 Let $\gamma$ be a smooth curve in $\mathbb{R}^2$ parametrized by $x = x(t)$, $y = y(t)$ for $t \in [a, b]$.
 
 ### The Scalar Line Integral (Type I)
@@ -130,6 +134,10 @@ If $D$ cannot be represented this way (e.g., if $D$ is not convex), we subdivide
 
 ![[m452-16-3.svg]]
 *Why the integral theorems glue: apply the theorem to each cell with its own counterclockwise boundary. The shared internal edge is traversed in opposite directions by the two cells, so its two line-integral contributions cancel exactly, leaving only the outer boundary. This is how the proof extends from simple (Type I and II) pieces to arbitrary decomposable regions — and, in [[§40 The Generalized Stokes' Theorem|§40]], how Stokes' theorem passes from one parameter patch to a whole manifold.*
+
+![[m452-16-a2.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The rectangle cut into $1, 2, 4, 6, 24$ cells, each with its counterclockwise boundary. As the cells close up, every interior edge is traversed twice in opposite directions; those pairs cancel (blue, fading) and only the outer boundary (red) is left. Summing Green's theorem over the cells gives Green's theorem for the whole region.
 
 > [!theorem] Theorem §27.1: Green's Theorem
 > Let $D \subseteq \mathbb{R}^2$ be a bounded domain whose boundary $\gamma = \partial D$ is a piecewise smooth, simple closed curve ([[§43 Contours#^def-43-3|342 Def. §43.3]]), oriented counterclockwise. If $f, g$ are $C^1$ on an open set containing $\overline{D}$, then:

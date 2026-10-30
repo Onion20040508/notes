@@ -19,6 +19,10 @@ tags: [multivariable-analysis, math452]
 ![[m452-4-1.svg]]
 *Partial derivatives are ordinary derivatives of slice curves: cutting the surface along $y = y_0$ gives a single-variable function of $x$ whose slope at the point is $f_x$; cutting along $x = x_0$ gives the $f_y$ slice. Each partial sees only its own slice — this is why the existence of both partials is far weaker than differentiability ([[§7 Differentiability|§7]]).*
 
+![[m452-4-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Partial derivatives as slopes of slice curves, on the surface of the figure. First the point runs along the slice $y = 1.25$ (red); its tangent has slope $f_x$, which changes from $+0.42$ to $-0.47$. Then along the slice $x = 1.2$ (green), with slope $f_y$. Each partial sees only its own slice.
+
 > [!remark]- Connections
 > - Each partial is the MATH 451 [[§28 Basic Properties of the Derivative#^def-28-1|derivative]] of a one-variable slice; the partial in an arbitrary direction is the [[§9 Directional Derivatives#^def-9-1|directional derivative]] of §7.
 > - Computational version: [[§108 Partial Derivatives#^def-108-1|Calc Def. §108.1]] and [[§108 Partial Derivatives#^def-108-2|Calc Def. §108.2]] (with worked examples).

@@ -131,6 +131,10 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 ![[m452-15-3.svg]]
 *Inner and outer approximations of an ellipse $D$ with semi-axes $1.75$ and $1.3$. Blue squares lie inside $D$. Red and blue squares together are the squares that meet $D$. With side $1$ ($i = 0$) this gives $A_0^-(D) = 2$ and $A_0^+(D) = 12$. Halving the side ($i = 1$) gives $A_1^-(D) = 5$ and $A_1^+(D) = 11$, a tighter bracket around the true area $\pi \cdot 1.75 \cdot 1.3 \approx 7.15$. The gap $A_i^+ - A_i^-$ is exactly the red squares, and every red square straddles $\partial D$. So the two limits agree precisely when the boundary squares have total area $\to 0$ (the Remark below).*
 
+![[m452-15-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The ellipse of the figure (semi-axes $1.75$, $1.3$) with grids of side $2^{-i}$, $i = 0, \ldots, 7$. Blue: squares inside $D$, total area $A_i^-$; red: the other squares that meet $D$; $A_i^+$ counts both. $A_0^- = 2$ and $A_0^+ = 12$ as in the figure; at $i = 7$, $7.0989 \leq \pi\cdot1.75\cdot1.3 = 7.1471 \leq 7.1943$.
+
 > [!remark] Remark
 > The difference $A_i^+(D) - A_i^-(D)$ counts squares that straddle the boundary $\partial D$ ([[§2 Open and Closed Sets#^def-2-5|Def. §2.5]]). As $i \to \infty$, these boundary squares have total area $\to 0$ if and only if $\partial D$ has “measure zero.”
 >

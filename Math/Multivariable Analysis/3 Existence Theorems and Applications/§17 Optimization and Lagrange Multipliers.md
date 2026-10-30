@@ -459,4 +459,8 @@ $$
 ![[m452-14-3.svg]]
 *Example §14.2 in the plane. The level curves $xy = c$ of $f$ are hyperbolas (blue; dashed for $c < 0$). The constraint $\phi = 0$ is the unit circle (green). The circle meets the hyperbolas $xy = \pm\tfrac14$ transversally, misses $xy = \pm 1$, and is tangent to exactly $xy = \tfrac12$ (at the two maxima, red) and $xy = -\tfrac12$ (at the two minima, orange). At a maximum, $\nabla f = (y, x)$ and $\nabla \phi = (2x, 2y)$ point the same way ($\lambda = \tfrac12$). At a minimum they point in opposite directions ($\lambda = -\tfrac12$).*
 
+![[m452-14-a1.gif|500]]
+
+*(Not from lecture; animation added, vault only.)* A point runs around the constraint circle (green) with the level curve $xy = c$ of $f$ through it (blue), and $\nabla f = (y, x)$, $\nabla\phi = (2x, 2y)$ (drawn at half length). Right: $f$ along the circle, $\tfrac12\sin 2\theta$. Where the level curve crosses the circle, moving along the circle changes $f$. At $\theta = 45^\circ, 135^\circ, 225^\circ, 315^\circ$ it touches the circle instead: the two gradients are parallel (red), $\nabla f = \lambda\nabla\phi$ with $\lambda = \pm\tfrac12$, and $f = \pm\tfrac12$ is extremal.
+
 *Continued in [[§18 Second-Order Sufficient Conditions]]: the Hessian test for critical points.*
