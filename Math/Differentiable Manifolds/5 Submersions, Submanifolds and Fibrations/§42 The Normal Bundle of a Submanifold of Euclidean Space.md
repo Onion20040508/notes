@@ -400,6 +400,10 @@ $$
 
 *(Not from lecture; animation added, vault only.)* The normal line (red) at $(a, a^2)$ as $a$ runs from $-0.9$ to $0.9$ and back; earlier normals are gray. The focal point $\mathbf{r}(a) = (-4a^3, 3a^2 + \tfrac12)$ on the current normal, where neighbouring normals meet, traces the curve of focal points (blue), the envelope of the normals.
 
+![[m591-39-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The endpoint map $E(p, v) = p + v$ on normal vectors $v = r\,n_p$ of fixed length $r$, for all $p$ on $y = x^2$ ($n_p$ the upward unit normal): the offset curves as $r$ grows to $1.6$. For $r < \frac12$, the radius of curvature at the vertex, they are smooth; beyond it two cusps (blue) appear and ride on the curve of focal points (dashed), the critical values of $E$.
+
 > [!remark] Remark: Focal Points Are Centres of Curvature
 > *(Not from the assignment.)* At the critical point over $p = (a, a^2)$ the normal vector is $v = \lambda(-2a, 1)$ with $\lambda = \frac{1 + 4a^2}{2}$, of length
 >

@@ -30,6 +30,10 @@ In this chapter curves are mostly called $c : I \to M$, with velocity $\dot c(t)
 
 ^def-67-1
 
+![[m591-67-a7.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* Integral curves on a surface in $\mathbb{R}^3$: $\mathbf{X}_p = e_3 - \langle e_3, p\rangle p$, the tangential part of the vertical, on $S^2$ (chosen for the picture; green arrows: $\mathbf{X}$ at the moving points). Points start near the south pole and climb their meridians toward the north pole; both poles are zeros of $\mathbf{X}$ and stay fixed.
+
 “This is the key notion. You might have seen this in your ordinary differential equations.”
 
 > [!theorem] Proposition §67.1: The Velocity Curve
@@ -107,6 +111,10 @@ The angle brackets mark $\dot c$ as a vector, not a point: “I've been trained 
 ![[m591-67-11.svg]]
 
 The lift exists for every smooth curve, injective or not. By Proposition [[§67 Integral Curves#^prop-67-1|§67.1]], $c$ is an integral curve of $\mathbf{X}$ exactly when $\tilde c = \mathbf{X} \circ c$: the lift is the field along the curve.
+
+![[m591-67-a5.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The lift in the tangent bundle, for the field of [[§56 Vector Fields#^def-56-1|Definition §56.1]]'s figure on $S^1$, $c(\theta) = 0.55 + 0.35\sin\theta$, with $TS^1$ drawn as a cylinder. The integral curve $c(t)$ (blue, with its velocity arrow) runs around the circle, faster where $c$ is larger. Its lift $\tilde c(t) = (c(t), \dot c(t))$ (red) runs along the section $\mathbf{X}(S^1)$ (green), as Proposition §67.1 says. One turn takes $2\pi/\sqrt{0.55^2 - 0.35^2} = 14.81$.
 
 > [!theorem] Proposition §67.3: An Integral Curve Returns with the Same Velocity
 > Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$. If $c(t_1) = c(t_2)$ for some $t_1, t_2 \in I$, then $\dot c(t_1) = \dot c(t_2)$. Hence a smooth curve that passes through a point twice with different velocities is an integral curve of no vector field.

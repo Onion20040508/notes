@@ -251,6 +251,10 @@ The chart lemma in one picture. The set $X$ has no topology yet; it is only cove
 ![[m591-17-3.svg]]
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
 
+![[m591-17-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The transition of $TS^1$ for the stereographic charts of [[§17 Differentiable Structures#^ex-17-3|Example §17.3]], $y = \sigma_S = 1/\sigma_N = 1/x$ on the overlap. One tangent vector $v = \frac12\partial_\theta$ (green) moves along the circle. Its components in the two charts, $a$ (on the $x$-line) and $b$ (on the $y$-line), are shown as arrows at $\sigma_N(p)$, $\sigma_S(p)$ (lengths scaled, capped). The readout checks $b = (dy/dx)\,a = -a/x^2$ at every position: the fibre coordinates change by the Jacobian of the transition.
+
 > [!remark]- Connections
 > - The same expansion of coordinate derivations: [[§30 The Differential in Coordinates#^cor-30-4|Change of Coordinates, §30.4]]; the Jacobian matrix in 452: [[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]]; change of basis: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
 

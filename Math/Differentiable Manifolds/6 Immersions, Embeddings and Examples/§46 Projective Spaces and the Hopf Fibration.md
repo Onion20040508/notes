@@ -65,6 +65,10 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 
 *Uses:* [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
 
+![[m591-16-a8.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The case $n = 1$ as a fibration with discrete fibre. A point $[x]$ moves around $\mathbb{RP}^1$ (drawn as a circle by doubling the angle); its fibre is the antipodal pair $\{x, -x\}$ (blue, red). Over an arc $V$ (orange) the preimage is two disjoint arcs, $\pi^{-1}(V) \cong V \times \{\pm 1\}$: a local trivialization with fibre the two-point space.
+
 > [!remark]- Connections
 > - As a covering map of topological spaces, for $n = 2$: [[§38 Fundamental Group of Some Surfaces#^thm-38-1|590 §38.1]] ($S^2 \to P^2$ is a covering map).
 
@@ -263,3 +267,7 @@ For the Hopf fibration the converse of [[§40 Fibrations#^prop-40-4|Proposition 
 ^pf-46-2
 
 *Uses:* [[§40 Fibrations#^def-40-4|Def. §40.4]], [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Ex. §46.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]
+
+![[m591-31-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Why $s_0$ does not extend to the missing point $[0 : 1]$, for $n = 1$, in the stereographic picture of [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Example §46.3]]. The base point $[1 : w]$, $w = re^{i\theta}$, runs toward $[0 : 1]$ along three meridians, $\theta = 90^\circ, 180^\circ, 270^\circ$ (inset). The section point $s_0 = (1, w)/|(1, w)|$ (black, on its fibre) tends to $(0, e^{i\theta})$, a different point of the fibre over $[0 : 1]$ (blue axis, heights $\cot\frac{\theta}{2}$) for each direction. This shows only that $s_0$ has no continuous extension; that no global section exists is the remark's statement, not proved here.

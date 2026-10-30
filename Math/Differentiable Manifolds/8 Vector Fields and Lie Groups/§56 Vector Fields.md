@@ -37,6 +37,10 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 ![[m591-44-2.svg]]
 *A vector field in two pictures, on the circle $M = S^1$ with $\mathbf{X} = c(\theta)\,\partial/\partial\theta$, $c(\theta) = 0.55 + 0.35\sin\theta$. Left: the usual picture, an arrow $\mathbf{X}(p)$ at each point $p$. Right: the tangent bundle $TS^1$, with $S^1$ cut open at $(1,0)$; each fibre $T_pM$ is a vertical line over $p$, and the height of a point on it measures the vector $c\,\partial/\partial\theta$ (above the dashed zero section: counterclockwise). The vector field is the curve $\mathbf{X}(M)$, which meets every fibre exactly once — that is the condition $\mathbf{X}(p) \in T_pM$ — and $\pi \circ \mathbf{X} = \mathrm{id}_M$ says that the point of the curve above $p$ projects back to $p$. The points $p_1, p_2, p_3$ carry the same colour in both pictures.*
 
+![[m591-44-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The two pictures of the figure joined, in 3D, for the same field $c(\theta) = 0.55 + 0.35\sin\theta$. Each arrow $\mathbf{X}(p)$, tangent to the circle, turns up into its fibre $T_pS^1$, now vertical, so $TS^1$ becomes a cylinder and the arrow's length becomes a height; the tips form the section $\mathbf{X}(S^1)$ (green). Then the field changes (a family chosen for the picture): the section rises and falls with the arrows, and where it crosses the circle (the zero section) the field vanishes and the arrows flip (red).
+
 > [!remark]- Connections
 > - Vector fields on open subsets of $\mathbb{R}^3$ in 452: [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §13]].
 > - Computational version: vector fields on regions of $\mathbb{R}^2$ and $\mathbb{R}^3$ in calculus, [[§125 Vector Fields#^def-125-1|Calc Def. §125.1]] and [[§125 Vector Fields#^def-125-2|Calc Def. §125.2]].
@@ -240,6 +244,10 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 ^pf-56-3
 
 *Uses:* [[§56 Vector Fields#^def-56-5|Def. §56.5]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§27 Germs#^prop-27-2|§27.2]]
+
+![[m591-44-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The field of the figure acting on $f = y$, the height: as $p$ goes once around, the arrow $\mathbf{X}_p$ (blue) and its vertical part (red), the rate of change of $f$ along it. Right: the function $\mathbf{X}f = df(\mathbf{X}) = c(\theta)\cos\theta$, traced. The operator $f \mapsto \mathbf{X}f$ is the derivation of the lemma.
 
 The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§56 Vector Fields#^prop-56-7|Proposition §56.7]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]), and its proof needs bump functions, so these come first.
 

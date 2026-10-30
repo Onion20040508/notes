@@ -43,6 +43,10 @@ Items (1) and (2) together are *existence*: every $q \in U$ has an integral curv
 
 “Imagine a Calc 3 plot of a field … the vectors at every point.” The theorem gives a time interval $(-\varepsilon, \varepsilon)$ and a neighbourhood $U$ of $p$ (drawn as a rectangle) such that from every point $q \in U$, $p$ included, there is an integral curve $t \mapsto \varphi(t, q)$ that starts at $q$ and is defined at least for $|t| < \varepsilon$.
 
+![[m591-67-a6.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The theorem's picture with $q$ moving: $q$ (red) runs around inside the box $U$ near $p$, and the integral curve $t \mapsto \varphi(t, q)$, $|t| < \varepsilon$ (blue), moves with it, for one fixed $\varepsilon$, in a field chosen for the picture. At the end all of them are drawn together: the local flow $\varphi : (-\varepsilon, \varepsilon) \times U \to M$.
+
 *What the theorem says beyond “there is a path through $q$”* (a student's question). “It says a lot of delicate things.” The time interval is *uniform*: as long as $q \in U$, the curve is defined at least for $|t| < \varepsilon$. And $\varphi$ is smooth as a function of the pair $(t, q)$ on the product $(-\varepsilon, \varepsilon) \times U$: smooth in $t$, as an integral curve must be, but also, for fixed $t$, smooth in the initial condition $q$. Asked whether the image of $\varphi$ is “just a slightly bigger open set around $U$”, Uribe answered: “All of the above can happen.” The examples below show some of the possibilities.
 
 > [!definition] Definition §68.1: Notation: $\varphi_t$ and $\varphi_q$

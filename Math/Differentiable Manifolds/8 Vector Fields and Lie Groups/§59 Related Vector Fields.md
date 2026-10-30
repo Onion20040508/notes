@@ -45,6 +45,10 @@ The exception is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorph
 
 ^def-59-1
 
+![[m591-49-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* A diffeomorphism $F_s$ (a family chosen for the picture) bends the plane, grid and all, while $\mathbf{X} = \partial_x$ is carried along. The arrow at $F_s(p)$ is $d(F_s)_p(\mathbf{X}_p)$: it rides to the new point and turns and stretches with the grid. The result is $(F_s)_\ast\mathbf{X}$.
+
 It is smooth, so $F_{\ast}\mathbf{X} \in \mathfrak{X}(N)$: this is [[§59 Related Vector Fields#^prop-59-2|Proposition §59.2]] below. “However, it can happen that you have … fields that are related by $F$, that correspond to one another … It's something that you don't construct. It's something that happens.”
 
 > [!definition] Definition §59.2: $F$-Related Vector Fields
@@ -57,6 +61,10 @@ It is smooth, so $F_{\ast}\mathbf{X} \in \mathfrak{X}(N)$: this is [[§59 Relate
 > *Lee: Ch. 8, Vector Fields and Smooth Maps*
 
 ^def-59-2
+
+![[m591-49-a3.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $F : \mathbb{R} \to S^1$, $F(t) = e^{it}$, with $\mathbb{R}$ drawn as a helix over the circle. The field $\mathbf{X} = \frac{d}{dt}$ (blue arrows along the helix) and $\mathbf{Y} = \partial_\theta$ (red) are $F$-related: $dF_t(\mathbf{X}_t) = \mathbf{Y}_{F(t)}$ at every $t$. The definition needs only that, not injectivity: both turns of the helix over a point give the same red arrow.
 
 The definition was completed in class by a student: push the value of $\mathbf{X}$ at $p$ forward, “and if it happens that every time I do that, I get the value of $\mathbf{Y}$ at the same point, then we say that the two vector fields are related by $F$.” No injectivity or surjectivity is assumed. Points outside $F(M)$ impose nothing on $\mathbf{Y}$, and two points with the same image must push forward to the same vector. “It's a very useful notion at times.”
 *(Computed; not from lecture.)* In charts $(U, (x^1, \ldots, x^m))$ of $M$ and $(V, (y^1, \ldots, y^n))$ of $N$ with $F(U) \subseteq V$, $m = \dim M$, $n = \dim N$, write $F^j = y^j \circ F$, $\mathbf{X} = \sum_i \mathbf{X}^i\, \partial/\partial x^i$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial y^j$. The matrix of $dF_p$ is the Jacobian of Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], so the condition reads, at every $p \in U$,

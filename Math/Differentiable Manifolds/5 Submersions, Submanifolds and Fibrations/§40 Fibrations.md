@@ -48,6 +48,10 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 ![[m591-16-2.svg]]
 *Uribe's cartoon, and why it matters: “these cartoons are incredibly important.” On the left, the global product $B \times F$, with each fibre $\{b\} \times F$ standing over its point. On the right, a total space that need not be a product: its fibres may twist as they travel over $B$. But over each $U_\alpha$ the part $\pi^{-1}(U_\alpha)$ is identified by $\phi_\alpha$ with the straight product $U_\alpha \times F$, and the identification respects the base points, which is the commuting diagram.*
 
+![[m591-16-a3.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* A local trivialization in motion. $\pi^{-1}(U)$ is drawn as a twisted band (chosen for the picture) over the base $U$ (bottom), its fibres coloured by base point. $\phi$ straightens them into the box $U \times F$, each fibre landing as the vertical segment $\{b\} \times F$ over its own base point $b$. Every point moves within its fibre, staying over the same $b$ (black point): that is $\mathrm{pr}_1 \circ \phi = \pi$.
+
 > [!definition] Definition §40.2: Trivial Fibration
 > A fibration $\pi : M \to B$ with fibre $F$ (Definition [[§40 Fibrations#^def-40-1|§40.1]]) is **trivial** if it has a local trivialization over all of $B$: a diffeomorphism $\phi : M \to B \times F$ with $\mathrm{pr}_1 \circ \phi = \pi$.
 
@@ -173,6 +177,10 @@ This upgrades [[§40 Fibrations#^prop-40-1|Proposition §40.1]](1) from homeomor
 ![[m591-16-4.svg]]
 *The punctured plane over the $x$-axis. Every fibre is a whole vertical line except the one over $0$, which is broken at the missing point into two half-lines. The fibres are all submanifolds ([[§38 The Regular Value Theorem for Manifolds#^cor-38-3|Corollary §38.3]]), but not all of the same type.*
 
+![[m591-16-a7.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* The fibre over $x$ sweeps across, $x$ from $-1.5$ to $1.5$ and back: a whole vertical line, connected, for every $x \neq 0$. Over $0$ it is broken at the missing point $(0, 1)$ into two half-lines (red), so not all fibres are homeomorphic and $\pi$ is not a fibration.
+
 A student asked the converse: if all the fibres of a surjective submersion are diffeomorphic to one manifold, must it be a fibration? Uribe: “I don't think that's true, but I don't have a quick example.” He answered it at the start of Lecture 13: yes when $\pi$ is proper, no in general ([[§40 Fibrations#^thm-40-3|Theorem §40.3]] and [[§40 Fibrations#^ex-40-2|Example §40.2]] below).
 
 ## When Is a Submersion a Fibration?
@@ -218,6 +226,10 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 ![[m591-16-6.svg]]
 *The fibres over a few values of $t$. The origin, grey, is missing from every fibre, and the missing points $(t, 0)$, red, lie on a line — dashed — which meets the line of origins exactly at $t = 0$: the collision. Over $t = 0$ (orange) the second missing point is $(1, 0)$, off that line. Each fibre on its own is a plane minus two points; what fails is the way they fit together near $t = 0$.*
 
+![[m591-16-a4.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The fibre over $t$ for $t$ from $-1$ to $1$ and back. Left: the plane minus the origin (gray) and minus $(t, 0)$ (red), which runs into the origin as $t \to 0$, while at $t = 0$ the second hole is $(1, 0)$ (orange). Right: the missing points against $t$. Every fibre is a plane minus two points, but the holes do not move continuously through $t = 0$, which is where trivializations fail.
+
 **Transcription note.** Page 35 of the handwritten notes labels the second missing point over $t = 0$ as $(1, 1)$; it is $(1, 0)$.
 
 ## Sections and Local Sections
@@ -236,6 +248,10 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 
 ![[m591-17-5.svg]]
 *The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once — at $s(b)$ in the fibre over $b$ — so its image $s(B)$ is “a copy of $B$” inside $E$.*
+
+![[m591-17-a3.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The cartoon in motion: the section $s$ wiggles (a family chosen for the picture) while $b$ slides along $B$; the fibre $\pi^{-1}(b)$ (blue) always meets $s(B)$ in exactly one point $s(b)$. Then a curve that folds back (red) meets one fibre in three points: not the image of a section.
 
 > [!definition] Definition §40.4: Local Section
 > Let $\pi : E \to B$ be smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]) and $U \subseteq B$ open. A **local section** of $\pi$ over $U$ is a smooth map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$.
@@ -265,6 +281,10 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 ^pf-40-4
 
 *Uses:* [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§40 Fibrations#^def-40-4|Def. §40.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
+
+![[m591-16-a5.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* [[§40 Fibrations#^prop-40-4|Proposition §40.4]] for the band of the previous animation: the slice $U \times \{f_0\}$ (red, bottom) slides as $f_0$ moves through $F$, and its preimage $s(U) = \phi^{-1}(U \times \{f_0\})$ (red, top) sweeps through $\pi^{-1}(U)$. Each one meets every fibre exactly once: a local section.
 
 > [!definition] Definition §40.5: Vertical Space
 > Let $\pi : E \to M$ be smooth and $y \in E$. The **vertical space** of $\pi$ at $y$ is
@@ -312,3 +332,7 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 ^pf-40-5
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+
+![[m591-16-a6.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The splitting for $E = \mathbb{R}^2 \to M = \mathbb{R}$, $\pi(x, y) = x$, and a section $s(x) = (x, \sigma(x))$ (chosen for the picture). At $y = s(p)$ a vector $w$ (black) turns once around and splits as $s_{\ast p}\pi_{\ast y}w$ (blue), along the tangent of $s(M)$, plus $Pw = w - s_{\ast p}\pi_{\ast y}w$ (green), vertical, in $V_y = \ker \pi_{\ast y}$.
