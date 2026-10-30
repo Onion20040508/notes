@@ -163,6 +163,10 @@ Items (1) and (2) together are *existence*: every $q \in U$ has an integral curv
 
 ![[m591-67-2.svg]]
 
+![[m591-67-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The flow of the rotation field, $t$ from $0$ to $2\pi$. A disc $U$ of initial points (coloured by their initial $x$-coordinate, so that its orientation is visible) is carried along the dashed circles, the integral curves: $\varphi_t(U)$ is $U$ rotated by the angle $t$, and at $t = 2\pi$ every point is back where it started. The red point is the centre, $\varphi_t(1.2, 0) = (1.2\cos t,\ 1.2\sin t)$.
+
 “Now I want to give you a problematic example. Problematic in the sense that because of examples like the one I'm about to give you, the theory becomes, well, necessarily elaborate.”
 
 > [!example] Example §67.2: Escape in Finite Time
@@ -195,6 +199,10 @@ Items (1) and (2) together are *existence*: every $q \in U$ has an integral curv
 ^ex-67-2
 
 ![[m591-67-3.svg]]
+
+![[m591-67-a2.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Four integral curves of $\mathbf{X} = yx^2\,\partial_x$, all starting at $x_0 = 1/2$, on the lines $y_0 = 2, 1.5, 1, 0.5$, so they escape at $T = 1/(x_0y_0) = 1, 1.33, 2, 4$. Each point moves slowly at first and then runs off to $x = \infty$ just before its time $T$: $x(t) = x_0/(1 - x_0y_0t)$. (The arrows' lengths grow like $\log(1 + yx^2)$, not $yx^2$, so that they fit.)
 
 The integral curves lie on horizontal lines. Starting at $q$ the point moves to the right for $t > 0$, and the velocity $y_0x^2$ grows quadratically in $x$: “the particle just gets to infinity in finite time, beating everybody else.” Backwards in time the point moves against the arrows, towards the $y$-axis, where the field vanishes: “it gets stuck,” but there is no blowing up. The escape time $1/(x_0y_0)$ depends on the initial condition, through the hyperbola $xy = 1/T$ on which it lies. So, by inspection, not all integral curves are defined for all time — “and that makes life complicated.” (The curve does not continue past $T$, even inside $\mathbb{R}^2$: its $x$-coordinate is unbounded. No other integral curve from $q$ does either, by uniqueness on the whole common domain: two integral curves starting at $q$ agree wherever both are defined (Proposition [[§67 Integral Curves#^prop-67-6|§67.6]]; Lee, Theorem D.4). The uniqueness in Theorem [[§67 Integral Curves#^thm-67-3|§67.3]] alone gives this only for $|t| < \varepsilon$.)
 
