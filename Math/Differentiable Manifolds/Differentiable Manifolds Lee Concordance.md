@@ -27,7 +27,7 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $H_{x_0}$, the isotropy group | $G_p$ | Definition [[§14 Homogeneous Spaces#^def-14-3\|§14.3]]. |
 | $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ | $F : G/G_p \to M$ | Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]; Lee, Theorem 21.18. |
 | $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4\|§60.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7\|§60.7]]. |
-| $\varphi_t(q) = \varphi_q(t) = \varphi(t, q)$; $\dot c(t)$ | $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ | The flow and its integral curves (Definition [[§67 Integral Curves#^def-67-2\|§67.2]]); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. |
+| $\varphi_t(q) = \varphi_q(t) = \varphi(t, q)$; $\dot c(t)$ | $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ | The flow and its integral curves (Definition [[§68 Local Existence and Uniqueness#^def-68-1\|§68.1]]); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. |
 | $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-9\|§19.9]]). |
 
 ## A.2 Where the routes diverge
@@ -86,8 +86,9 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§64 Parametric Transversality\|§64]] Parametric transversality | Chapter 6, *The Transversality Homotopy Theorem* (Theorem 6.35) |
 | [[§65 The Whitney Embedding Theorem\|§65]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
 | [[§66 Partitions of Unity\|§66]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60; Chapter 2, *Applications of Partitions of Unity* (Proposition 2.28) |
-| [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* (Example 9.1, (9.1), Proposition 9.2, Lemmas 9.3 and 9.4, Proposition 9.6, Example 9.10); Appendix D (Theorem D.1); Problem 9-1 |
-| [[§68 Flows\|§68]] Flows | Chapter 9, *Flows* (Theorem 9.12); *Complete Vector Fields* (Lemma 9.15, Corollary 9.17, Theorem 9.18) |
+| [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) |
+| [[§68 Local Existence and Uniqueness\|§68]] Local existence and uniqueness | Chapter 9, *Integral Curves* (Example 9.1, Proposition 9.2); *Flows* (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 |
+| [[§69 Maximal Integral Curves and Flows\|§69]] Maximal integral curves and flows | Chapter 9, *Flows* (Example 9.10, Theorem 9.12); *Complete Vector Fields* (Lemma 9.15, Corollary 9.17, Theorem 9.18); Problem 9-1 |
 
 ## A.4 Index from Lee to these notes
 
@@ -201,13 +202,14 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.41 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
 | Theorem 8.44 | [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1\|Lem. §61.1]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2\|Prop. §61.2]] |
 | Theorem 8.46 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
-| Example 9.1 | [[§67 Integral Curves#^ex-67-1\|Ex. §67.1]] |
-| Proposition 9.2 | [[§67 Integral Curves#^thm-67-4\|Thm. §67.4]] |
-| Lemma 9.3 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]] |
-| Lemma 9.4 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]] |
-| Example 9.10 | [[§67 Integral Curves#^ex-67-2\|Ex. §67.2]] |
-| Theorem 9.12 | [[§67 Integral Curves#^prop-67-6\|Prop. §67.6]], [[§68 Flows#^thm-68-1\|Thm. §68.1]], [[§68 Flows#^def-68-1\|Def. §68.1]], [[§68 Flows#^prop-68-2\|Prop. §68.2]] |
-| Lemma 9.15 | [[§68 Flows#^lem-68-3\|Lem. §68.3]] |
+| Example 9.1 | [[§68 Local Existence and Uniqueness#^ex-68-1\|Ex. §68.1]] |
+| Proposition 9.2 | [[§68 Local Existence and Uniqueness#^thm-68-2\|Thm. §68.2]] |
+| Lemma 9.3 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
+| Lemma 9.4 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
+| Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]] |
+| Example 9.10 | [[§69 Maximal Integral Curves and Flows#^ex-69-1\|Ex. §69.1]] |
+| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]] |
+| Lemma 9.15 | [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
@@ -256,4 +258,4 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem C.34 | [[§35 Local Diffeomorphisms#^thm-35-1\|Thm. §35.1]] |
 | Example C.37 | [[§30 The Differential in Coordinates#^ex-30-1\|Ex. §30.1]] |
 | Theorem C.40 | [[§7 The Regular Value Theorem#^thm-7-1\|Thm. §7.1]], [[§7 The Regular Value Theorem#^cor-7-2\|Cor. §7.2]] |
-| Theorem D.1 | [[§67 Integral Curves#^thm-67-3\|Thm. §67.3]], [[§67 Integral Curves#^thm-67-4\|Thm. §67.4]] |
+| Theorem D.1 | [[§68 Local Existence and Uniqueness#^thm-68-1\|Thm. §68.1]], [[§68 Local Existence and Uniqueness#^thm-68-2\|Thm. §68.2]] |

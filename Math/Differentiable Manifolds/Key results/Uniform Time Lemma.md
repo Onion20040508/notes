@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 68.3", "uniform time lemma", "completeness from a uniform time", "Lee Lemma 9.15"]
+aliases: ["MATH 591 69.3", "uniform time lemma", "completeness from a uniform time", "Lee Lemma 9.15"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§68 Flows#^lem-68-3]]
+![[§69 Maximal Integral Curves and Flows#^lem-69-3]]
 
 ## Treated in
-- [[§68 Flows#^lem-68-3|Lemma §68.3: Uniform Time Lemma]], in [[§68 Flows]]
+- [[§69 Maximal Integral Curves and Flows#^lem-69-3|Lemma §69.3: Uniform Time Lemma]], in [[§69 Maximal Integral Curves and Flows]]
 
 ## Its proof uses
 - (only definitions)

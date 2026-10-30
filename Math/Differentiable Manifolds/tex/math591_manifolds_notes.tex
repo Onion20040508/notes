@@ -28660,10 +28660,128 @@ The angle brackets mark $\dot c$ as a vector, not a point: ``I've been trained \
 \end{itemize}
 \end{rembox}
 
+\textit{Lecture 24 recalled the definition with the velocity written ``in a fancy way'', $\dot c(t) = c_{*t}(d/dt)$, ``the derivation at $c(t)$ defined by $c$'' (Definition~\ref{def:velocity-at-t}), and gave the velocity curve a name: ``to any curve $c : I \to M$ one can naturally associate a lift'' to the tangent bundle.}
+
+\begin{defbox}[Lift of a Curve]\deflabel{def:curve-lift}
+Let $c : I \to M$ be a smooth curve. Its \textbf{lift} to the tangent bundle is the curve
+\[
+\tilde c : I \to TM, \qquad \tilde c(t) = \big(c(t), \dot c(t)\big),
+\]
+the point $c(t)$ together with the velocity $\dot c(t) \in T_{c(t)}M$. It is the velocity curve $\dot c$ of Proposition~\ref{prop:velocity-curve}, so it is smooth and $\pi \circ \tilde c = c$.
+\leeref{Ch.~3, \emph{Velocity Vectors of Curves}}
+\end{defbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=large]
+ & TM \arrow[d, "\pi"] \\
+I \arrow[ur, "\tilde c"] \arrow[r, "c"'] & M
+\end{tikzcd}
+\end{center}
+
+The lift exists for every smooth curve, injective or not. By Proposition~\ref{prop:velocity-curve}, $c$ is an integral curve of $\mathbf{X}$ exactly when $\tilde c = \mathbf{X} \circ c$: the lift is the field along the curve.
+
+\begin{propbox}[An Integral Curve Returns with the Same Velocity]\thmlabel{prop:same-point-same-velocity}
+Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$. If $c(t_1) = c(t_2)$ for some $t_1, t_2 \in I$, then $\dot c(t_1) = \dot c(t_2)$. Hence a smooth curve that passes through a point twice with different velocities is an integral curve of no vector field.
+\leeref{Ch.~9, \emph{Integral Curves}}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~24: ``the field is single-valued at each point.'')} By $(\ast)$ at the times $t_1$ and $t_2$, and since $c(t_1) = c(t_2)$,
+\[
+\dot c(t_1) = \mathbf{X}_{c(t_1)} = \mathbf{X}_{c(t_2)} = \dot c(t_2) .
+\]
+The second sentence is the contrapositive: if $c(t_1) = c(t_2)$ but $\dot c(t_1) \neq \dot c(t_2)$, no vector field $\mathbf{X}$ satisfies $(\ast)$ at both times.
+\end{proof}
+
+\begin{exbox}[A Curve with a Loop]\exlabel{ex:loop-curve}
+Let $c : I \to M$ pass through the same point at two times, $c(t_1) = c(t_2)$, with different velocities $\dot c(t_1) \neq \dot c(t_2)$, as in the figure. Its lift $\tilde c$ is still a well-defined map: it records the time, not just the point. ``But this cannot be an integral curve of anything'' (Proposition~\ref{prop:same-point-same-velocity}).
+\end{exbox}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, blue!70!black, ->] plot[smooth] coordinates {(1.823,-1.956) (1.719,-1.814) (1.617,-1.677) (1.516,-1.545) (1.417,-1.419) (1.320,-1.298) (1.225,-1.182) (1.132,-1.071) (1.040,-0.966) (0.950,-0.865) (0.862,-0.769) (0.775,-0.678) (0.690,-0.592) (0.608,-0.510) (0.526,-0.432) (0.447,-0.359) (0.369,-0.290) (0.293,-0.225) (0.219,-0.164) (0.147,-0.107) (0.076,-0.054) (0.008,-0.005) (-0.059,0.040) (-0.125,0.082) (-0.188,0.120) (-0.250,0.156) (-0.310,0.187) (-0.368,0.216) (-0.425,0.241) (-0.479,0.264) (-0.532,0.283) (-0.583,0.300) (-0.633,0.314) (-0.680,0.325) (-0.726,0.334) (-0.770,0.340) (-0.813,0.344) (-0.853,0.346) (-0.892,0.346) (-0.929,0.344) (-0.965,0.339) (-0.998,0.333) (-1.030,0.325) (-1.060,0.315) (-1.088,0.304) (-1.115,0.291) (-1.139,0.277) (-1.162,0.262) (-1.183,0.245) (-1.203,0.228) (-1.220,0.209) (-1.236,0.190) (-1.250,0.169) (-1.263,0.148) (-1.273,0.126) (-1.282,0.104) (-1.289,0.081) (-1.294,0.058) (-1.298,0.035) (-1.300,0.012) (-1.300,-0.012) (-1.298,-0.035) (-1.294,-0.058) (-1.289,-0.081) (-1.282,-0.104) (-1.273,-0.126) (-1.263,-0.148) (-1.250,-0.169) (-1.236,-0.190) (-1.220,-0.209) (-1.203,-0.228) (-1.183,-0.245) (-1.162,-0.262) (-1.139,-0.277) (-1.115,-0.291) (-1.088,-0.304) (-1.060,-0.315) (-1.030,-0.325) (-0.998,-0.333) (-0.965,-0.339) (-0.929,-0.344) (-0.892,-0.346) (-0.853,-0.346) (-0.813,-0.344) (-0.770,-0.340) (-0.726,-0.334) (-0.680,-0.325) (-0.633,-0.314) (-0.583,-0.300) (-0.532,-0.283) (-0.479,-0.264) (-0.425,-0.241) (-0.368,-0.216) (-0.310,-0.187) (-0.250,-0.156) (-0.188,-0.120) (-0.125,-0.082) (-0.059,-0.040) (0.008,0.005) (0.076,0.054) (0.147,0.107) (0.219,0.164) (0.293,0.225) (0.369,0.290) (0.447,0.359) (0.526,0.432) (0.608,0.510) (0.690,0.592) (0.775,0.678) (0.862,0.769) (0.950,0.865) (1.040,0.966) (1.132,1.071) (1.225,1.182) (1.320,1.298) (1.417,1.419) (1.516,1.545) (1.617,1.677) (1.719,1.814) (1.823,1.956)};
+\fill (0,0) circle (1.4pt);
+\draw[->, very thick, teal!70!black] (0,0) -- (-0.740,0.512) node[left, font=\scriptsize] {$\dot c(t_1)$};
+\draw[->, very thick, red!70!black] (0,0) -- (0.740,0.512) node[right, font=\scriptsize] {$\dot c(t_2)$};
+\node[font=\scriptsize, below, align=center] at (0,-0.15) {$c(t_1) = c(t_2)$};
+\node[font=\scriptsize, blue!70!black] at (1.9,1.3) {$c$};
+\node[font=\scriptsize, anchor=west, align=left] at (2.4,0.1) {one point, two velocities:\\ the lift $\tilde c$ is defined,\\ but $c$ is an integral curve\\ of no vector field};
+\end{tikzpicture}
+\end{center}
+
+\emph{Simple and useful lemmas,} (Lecture~24) for any $\mathbf{X} \in \mathfrak{X}(M)$, ``completely general.''
+
+\begin{lembox}[Translation and Rescaling]\thmlabel{lem:translation-rescaling}
+Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$.
+\begin{enumerate}[nosep]
+\item \emph{(Translation lemma.)} For $t_0 \in \mathbb{R}$, the curve $\tilde c(t) = c(t + t_0)$, defined on $I - t_0 = \{ t - t_0 : t \in I \}$, is an integral curve of $\mathbf{X}$.
+\item \emph{(Rescaling.)} For $\lambda \in \mathbb{R}$, the curve $\tilde c(t) = c(\lambda t)$, defined on $\{ t : \lambda t \in I \}$, is an integral curve of $\lambda\mathbf{X}$.
+\end{enumerate}
+\leeref{Lemmas 9.3 and 9.4}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~24: ``immediate by chain rule''; filled in.)} Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition~\ref{def:velocity-at-t} and the chain rule for real functions of one variable:
+\[
+\dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(t + t_0)\big) = (f \circ c)'(t + t_0) = \dot c(t + t_0)[f] = \mathbf{X}_{c(t + t_0)}[f] = \mathbf{X}_{\tilde c(t)}[f]
+\]
+for (1), and for (2)
+\[
+\dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(\lambda t)\big) = \lambda\, (f \circ c)'(\lambda t) = \lambda\, \dot c(\lambda t)[f] = \lambda\, \mathbf{X}_{c(\lambda t)}[f] = (\lambda\mathbf{X})_{\tilde c(t)}[f] .
+\]
+Two tangent vectors at a point that agree on every germ are equal.
+\end{proof}
+
+``You can always translate time. We're going to use it a lot.'' Rescaling: ``you can rescale a field pointwise by a fixed factor, and the integral curves of that are easily related to the integral curves of the original.'' With $\lambda = -1$: the integral curves of $-\mathbf{X}$ are those of $\mathbf{X}$ run backwards.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, blue!70!black, ->] (0,0) .. controls (1,1.3) and (2.3,-0.3) .. (3.4,0.9)
+  node[pos=0.18, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$t_0 - 1$}, label={[font=\scriptsize, red!70!black]below:$-1$}] {}
+  node[pos=0.5, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$t_0$}, label={[font=\scriptsize, red!70!black]below:$0$}] {}
+  node[pos=0.82, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$t_0 + 1$}, label={[font=\scriptsize, red!70!black]below:$1$}] {};
+\node[font=\scriptsize, align=center] at (1.7,-1.0) {translation: same points, clock reset\\ black: times of $c$\\ \textcolor{red!70!black}{red: times of $\tilde c(t) = c(t + t_0)$}};
+\begin{scope}[xshift=5.6cm]
+\draw[thick, blue!70!black, <-] (0,0) .. controls (1,1.3) and (2.3,-0.3) .. (3.4,0.9)
+  node[pos=0.18, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$-1$}, label={[font=\scriptsize, red!70!black]below:$1$}] {}
+  node[pos=0.5, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$0$}, label={[font=\scriptsize, red!70!black]below:$0$}] {}
+  node[pos=0.82, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$1$}, label={[font=\scriptsize, red!70!black]below:$-1$}] {};
+\node[font=\scriptsize, align=center] at (1.7,-1.0) {rescaling with $\lambda = -1$: run backwards\\ black: times of $c$\\ \textcolor{red!70!black}{red: times of $\tilde c(t) = c(-t)$, a curve of $-\mathbf{X}$}};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Both operations keep the image of the curve and change only the clock. Translation relabels the times, so the point reached at time $t_0$ by $c$ is reached at time $0$ by $\tilde c$; the arrow (the velocity) is unchanged. Rescaling by $\lambda = -1$ reverses the arrow, which is why $\tilde c$ follows $-\mathbf{X}$. (A general $\lambda$ also changes the speed by the factor $|\lambda|$.)
+
+\begin{lembox}[Integral Curves Under a Diffeomorphism]\thmlabel{lem:integral-curves-diffeo}
+Let $F : M \to N$ be a diffeomorphism, $\mathbf{X} \in \mathfrak{X}(M)$, and $F_*\mathbf{X} \in \mathfrak{X}(N)$ its pushforward (Definition~\ref{def:vf-pushforward}, Proposition~\ref{prop:vf-pushforward}). A smooth curve $c : I \to M$ is an integral curve of $\mathbf{X}$ if and only if $F \circ c$ is an integral curve of $F_*\mathbf{X}$.
+\leeref{Proposition 9.6}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~24: ``the check'' in the proof of Theorem~\ref{thm:ode-local-manifold}, there for a chart; written here for any diffeomorphism.)} $F \circ c$ is smooth, as a composite of smooth maps. Fix $t \in I$. By the chain rule (Theorem~\ref{prop:pushforward-functorial}), the velocity of $F \circ c$ at $t$ is
+\[
+(F \circ c)_{*t}\Big(\frac{d}{dt}\Big) = dF_{c(t)}\Big(c_{*t}\Big(\frac{d}{dt}\Big)\Big) = dF_{c(t)}\big(\dot c(t)\big),
+\]
+and by Definition~\ref{def:vf-pushforward} at the point $F(c(t))$, whose preimage is $c(t)$,
+\[
+(F_*\mathbf{X})_{F(c(t))} = dF_{c(t)}\big(\mathbf{X}_{c(t)}\big) .
+\]
+The linear map $dF_{c(t)}$ is injective: by the chain rule, $d(F^{-1})_{F(c(t))} \circ dF_{c(t)} = d(F^{-1} \circ F)_{c(t)}$ is the identity. So the two vectors above agree exactly when $\dot c(t) = \mathbf{X}_{c(t)}$: $F \circ c$ satisfies the integral-curve equation of $F_*\mathbf{X}$ at $t$ if and only if $c$ satisfies that of $\mathbf{X}$ at $t$.
+\end{proof}
+
+``This is a kind of naturality that I will come back to, because this is very general.'' (Lee, Proposition~9.6: a smooth $F$ takes integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ for all integral curves exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.)
+
+% ============================================================================
+% SECTION: LOCAL EXISTENCE AND UNIQUENESS
+% ============================================================================
+\section{Local Existence and Uniqueness}\label{sec:ode-existence}
+
+\roadmark{Stage: dynamics}{Integral curves exist and are unique for short times: in $\mathbb{R}^m$ by ODE theory, on a manifold through a chart; two integral curves that meet agree on their whole common domain.}
 
 ``There's a fundamental theorem that, again, from --- we have moved from Calc~3 to Calc~4 --- ODEs.'' Uribe quoted it in the following form.
 
-\begin{thmbox}[Local Existence and Uniqueness]\thmlabel{thm:ode-local}
+\begin{thmbox}[Local Existence and Uniqueness in Euclidean Space]\thmlabel{thm:ode-local}
 Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$. Given any $p \in M$, there are $\varepsilon > 0$, an open neighbourhood $U \subseteq M$ of $p$, and a smooth map
 \[
 \varphi : (-\varepsilon, \varepsilon) \times U \longrightarrow M
@@ -28708,7 +28826,7 @@ Items~(1) and~(2) together are \emph{existence}: every $q \in U$ has an integral
 \emph{What the theorem says beyond ``there is a path through $q$''} (a student's question). ``It says a lot of delicate things.'' The time interval is \emph{uniform}: as long as $q \in U$, the curve is defined at least for $|t| < \varepsilon$. And $\varphi$ is smooth as a function of the pair $(t, q)$ on the product $(-\varepsilon, \varepsilon) \times U$: smooth in $t$, as an integral curve must be, but also, for fixed $t$, smooth in the initial condition $q$. Asked whether the image of $\varphi$ is ``just a slightly bigger open set around $U$'', Uribe answered: ``All of the above can happen.'' The examples below show some of the possibilities.
 
 \begin{defbox}[Notation: $\varphi_t$ and $\varphi_q$]\deflabel{def:flow-notation}
-In the setting of Theorem~\ref{thm:ode-local}, for fixed $t \in (-\varepsilon, \varepsilon)$ and fixed $q \in U$ write
+In the setting of Theorem~\ref{thm:ode-local}, and likewise of Theorem~\ref{thm:ode-local-manifold} below, for fixed $t \in (-\varepsilon, \varepsilon)$ and fixed $q \in U$ write
 \[
 \varphi_t(q) := \varphi(t, q), \qquad \varphi_q(t) := \varphi(t, q).
 \]
@@ -28746,6 +28864,224 @@ $\varphi_t$ is the rotation by the angle $t$. The integral curves are the circle
 \node[font=\scriptsize, anchor=west, align=left] at (2.7,-1.0) {$\varphi_t$ = rotation by $t$;\\ every integral curve\\ is defined for all $t \in \mathbb{R}$};
 \end{tikzpicture}
 \end{center}
+
+\textit{Lecture 24. The definition again, then the local theorem on a manifold, two ``simple and useful lemmas'', and uniqueness on the whole common domain: ``the deep --- meaning foundational --- theory of the subject.'' The definition and the lemmas are in \ref{sec:integral-curves}.}
+
+The Euclidean theorem (Theorem~\ref{thm:ode-local}) is ``Theorem~D.1 in Lee, with proof. I will forever be amazed by how much [Lee] was able to put in his book.'' Its manifold version ``follows immediately from the Euclidean version.''
+
+\begin{thmbox}[Local Existence and Uniqueness on a Manifold]\thmlabel{thm:ode-local-manifold}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There are $\varepsilon > 0$, an open neighbourhood $U$ of $p$, and a map
+\[
+\varphi : (-\varepsilon, \varepsilon) \times U \longrightarrow M
+\]
+such that
+\begin{enumerate}[nosep]
+\item $\varphi(0, q) = q$ for every $q \in U$;
+\item for every $q \in U$, the curve $(-\varepsilon, \varepsilon) \to M$, $t \mapsto \varphi_t(q)$, is an integral curve of $\mathbf{X}$;
+\item \emph{(local uniqueness)} if $c : I \to M$ is any integral curve of $\mathbf{X}$ on an open interval $I \ni 0$ with $c(0) = q$ for some $q \in U$, then $c(t) = \varphi_t(q)$ for all $t \in I \cap (-\varepsilon, \varepsilon)$.
+\end{enumerate}
+Moreover, $\varphi$ is smooth.
+\leeref{Proposition 9.2; Theorem D.1}
+\end{thmbox}
+
+On the board, (3) was stated for $c : (-\delta, \delta) \to M$, with the conclusion on $(-\varepsilon, \varepsilon) \cap (-\delta, \delta)$; ``these domains don't have to be symmetric'', which is the form of~(3) above. By~(3), ``there's only one map like that.''
+
+\begin{proof}
+\textit{(Lecture~24: ``use a chart at $p$, and then push forward \ldots\ push this thing down here. Now we have the theorem at the level of open sets in Euclidean space, and we just push it up again.'' The chart is called $\psi$, since $\varphi$ is the flow --- ``which is why Lee uses $\theta$.'' The details are filled in.)} When $M$ is an open set in $\mathbb{R}^m$ this is Theorem~\ref{thm:ode-local}. In general, take a chart $\psi : W \to \psi(W) \subseteq \mathbb{R}^m$ at $p$. It is a diffeomorphism of the open submanifold $W$ onto the open set $\psi(W)$ (Proposition~\ref{prop:chart-diffeo}), so the field $\mathbf{X}|_W$ has a pushforward $\mathbf{Y} = \psi_*\mathbf{X} \in \mathfrak{X}(\psi(W))$ (Definition~\ref{def:vf-pushforward}, Proposition~\ref{prop:vf-pushforward}).
+
+\emph{The check.} By Lemma~\ref{lem:integral-curves-diffeo}, applied to the diffeomorphism $\psi : W \to \psi(W)$, a curve $c : I \to W$ is an integral curve of $\mathbf{X}$ if and only if $\psi \circ c$ is an integral curve of $\mathbf{Y}$.
+
+\emph{Push down, solve, push up.} Theorem~\ref{thm:ode-local}, for $\mathbf{Y}$ on $\psi(W)$ at $\psi(p)$, gives $\varepsilon > 0$, an open $U' \ni \psi(p)$ and a smooth $\varphi' : (-\varepsilon, \varepsilon) \times U' \to \psi(W)$. Put $U = \psi^{-1}(U')$ and
+\[
+\varphi(t, q) = \psi^{-1}\big(\varphi'(t, \psi(q))\big) \in W .
+\]
+$\varphi$ is smooth, as a composite of smooth maps, and $\varphi(0, q) = \psi^{-1}(\psi(q)) = q$. For $q \in U$ the curve $t \mapsto \varphi'(t, \psi(q))$ is an integral curve of $\mathbf{Y}$ in $\psi(W)$, so by the check, applied to $c = \varphi(\cdot, q)$ (for which $\psi \circ c = \varphi'(\cdot, \psi(q))$), $t \mapsto \varphi_t(q)$ is an integral curve of $\mathbf{X}$. This gives~(1) and~(2).
+
+\emph{Uniqueness.} The one point beyond pushing down is that an integral curve $c$ of $\mathbf{X}$ might leave $W$, where the chart says nothing. Let $c : I \to M$ be an integral curve, $I \ni 0$ an open interval, $c(0) = q \in U$, and let $J = I \cap (-\varepsilon, \varepsilon)$. The set $c^{-1}(W) \cap J$ is open and contains $0$; let $J_0$ be the open interval that is its connected component containing $0$. On $J_0$, $\psi \circ c$ is an integral curve of $\mathbf{Y}$ starting at $\psi(q)$ (the check), so Theorem~\ref{thm:ode-local}(3) gives $\psi(c(t)) = \varphi'(t, \psi(q))$, that is, $c(t) = \varphi(t, q)$, for $t \in J_0$. Suppose $J_0 \neq J$, say $b = \sup J_0 < \sup J$ (the left end is handled the same way). Then $b \in J$, and by continuity $c(b) = \lim_{t \to b^-} \varphi(t, q) = \varphi(b, q)$, which lies in $W$. So $b \in c^{-1}(W) \cap J$, an open set; an interval around $b$ lies in it, and the component $J_0$ would contain $b$ and points beyond it, contradicting $b = \sup J_0$. Hence $J_0 = J$, and $c(t) = \varphi_t(q)$ on all of $I \cap (-\varepsilon, \varepsilon)$: this is~(3).
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, blue!60!black] (0,3.7) ellipse (2.0 and 0.95); \node[blue!60!black, font=\scriptsize] at (-2.0,4.7) {$W \subseteq M$};
+\draw[->, gray!70] (-1.20,3.90) -- (-0.65,4.00);
+\draw[->, gray!70] (-0.20,4.15) -- (0.35,4.28);
+\draw[->, gray!70] (0.60,3.55) -- (1.15,3.71);
+\draw[->, gray!70] (-0.90,3.30) -- (-0.35,3.41);
+\draw[orange!85!black, thick] plot[smooth] coordinates {(-2.6,2.8) (-1.2,3.4) (0.2,3.9) (1.6,4.4) (2.6,4.9)};
+\node[orange!85!black, font=\scriptsize] at (2.8,4.65) {$c$}; \node[font=\scriptsize] at (1.2,3.05) {$\mathbf{X}$};
+\draw[->, thick] (0,2.55) -- (0,1.25) node[midway, right, font=\scriptsize] {$\psi$};
+\draw[thick, blue!60!black] (0,0.1) ellipse (2.0 and 0.85); \node[blue!60!black, font=\scriptsize] at (-2.2,1.05) {$\psi(W) \subseteq \mathbb{R}^m$};
+\draw[->, gray!70] (-1.00,0.30) -- (-0.40,0.60);
+\draw[->, gray!70] (0.00,0.55) -- (0.60,0.85);
+\draw[->, gray!70] (0.70,-0.05) -- (1.30,0.25);
+\draw[->, gray!70] (-0.70,-0.35) -- (-0.10,-0.05);
+\draw[orange!85!black, thick] plot[smooth] coordinates {(-2.6,-0.6) (-1.0,-0.1) (0.4,0.4) (1.6,0.75) (2.6,1.0)};
+\node[orange!85!black, font=\scriptsize] at (2.85,1.15) {$\psi \circ c$}; \node[font=\scriptsize] at (1.35,-0.45) {$\psi_*\mathbf{X}$};
+\node[font=\scriptsize, anchor=west, align=left] at (3.3,2.4) {$c$ is an integral curve of $\mathbf{X}$\\ $\iff$ $\psi \circ c$ is one of $\psi_*\mathbf{X}$:\\ push down, solve, push back up};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board.)} Upstairs, the field $\mathbf{X}$ on the chart domain $W$ and a curve $c$; downstairs, the pushed-forward field $\psi_*\mathbf{X}$ on $\psi(W)$ and the curve $\psi \circ c$.
+
+``Now the core technical result that I want to prove today.''
+
+\begin{propbox}[Uniqueness on the Common Domain]\thmlabel{prop:global-uniqueness}
+Let $\mathbf{X} \in \mathfrak{X}(M)$, and let $c_i : I_i \to M$, $i = 1, 2$, be integral curves of $\mathbf{X}$. If there is $t_0 \in I_1 \cap I_2$ with $c_1(t_0) = c_2(t_0)$, then
+\[
+c_1|_{I_1 \cap I_2} = c_2|_{I_1 \cap I_2} .
+\]
+\leeref{Theorem 9.12 (proof)}
+\end{propbox}
+
+``Suppose you have two integral curves that agree at some time $t_0$ \ldots\ Then the conclusion is that they agree wherever they can.''
+
+\begin{proof}
+\textit{(Lecture~24. Details from the discussion in class are added where noted.)} \emph{Reduction to $t_0 = 0$.} By the translation lemma (Lemma~\ref{lem:translation-rescaling}(1)), $t \mapsto c_i(t + t_0)$ are integral curves on $I_i - t_0$ that agree at $0$, and the conclusion for them is the conclusion for the $c_i$. So assume $t_0 = 0$, and let $q = c_1(0) = c_2(0)$.
+
+\emph{Local uniqueness.} By Theorem~\ref{thm:ode-local-manifold}(3) at $q$, both $c_i$ equal $\varphi_\cdot(q)$ near $0$. So there is $\varepsilon > 0$ with $(-\varepsilon, \varepsilon) \subseteq I_1 \cap I_2$ and
+\[
+c_1|_{(-\varepsilon, \varepsilon)} = c_2|_{(-\varepsilon, \varepsilon)} .
+\]
+``The only thing is to extend this local uniqueness into global uniqueness.''
+
+\emph{Argue by contradiction.} Introduce
+\[
+\mathcal{T}_+ = \{ t \in I_1 \cap I_2 \cap (0, \infty) : c_1(t) \neq c_2(t) \} .
+\]
+We want to show $\mathcal{T}_+ = \varnothing$. Assume $\mathcal{T}_+ \neq \varnothing$. It is bounded below by $\varepsilon$; let $\tau = \inf \mathcal{T}_+ \ge \varepsilon > 0$. \textit{(Filled in: $\tau$ is in the domain.)} $I_1 \cap I_2$ is an interval containing $\varepsilon/2$ and some point of $\mathcal{T}_+ \ge \tau$, and $\varepsilon/2 < \tau$, so $\tau \in I_1 \cap I_2$. By the definition of the infimum, $c_1 = c_2$ on $(0, \tau)$.
+
+\emph{Claim: $c_1(\tau) = c_2(\tau)$.} Again by contradiction. If $c_1(\tau) \neq c_2(\tau)$, since $M$ is Hausdorff (Definition~\ref{def:hausdorff-t2}) there are neighbourhoods $U_i$ of $c_i(\tau)$ with $U_1 \cap U_2 = \varnothing$. By continuity of $c_1$ and $c_2$ there is an open interval $J \ni \tau$, inside $I_1 \cap I_2$ (which is open), with $c_i(J) \subseteq U_i$. So there is $\tau_1 \in J$ with $0 < \tau_1 < \tau$, and $c_1(\tau_1) \in U_1$, $c_2(\tau_1) \in U_2$, so $c_1(\tau_1) \neq c_2(\tau_1)$ and $\tau_1 \in \mathcal{T}_+$. This contradicts $\tau = \inf \mathcal{T}_+$. Hence $c_1(\tau) = c_2(\tau)$.
+
+\emph{Local uniqueness at $\tau$.} ``By the translation lemma, local uniqueness at $t = 0$ is equivalent to local uniqueness at any $\tau$'': apply the local-uniqueness step to the integral curves $c_i(\cdot + \tau)$, which agree at $0$. So there is $\delta > 0$ such that the curves agree on $(\tau - \delta, \tau + \delta)$. Together with $c_1 = c_2$ on $(0, \tau]$, they agree on $(0, \tau + \delta) \cap I_1 \cap I_2$, so every point of $\mathcal{T}_+$ is $\ge \tau + \delta$, and $\inf \mathcal{T}_+ \ge \tau + \delta > \tau$: a contradiction. So $\mathcal{T}_+ = \varnothing$.
+
+\emph{Negative times.} ``Of course you do the same thing for $\tau_-$ from the other side. You take the sup'': with $\mathcal{T}_- = \{ t \in I_1 \cap I_2 \cap (-\infty, 0) : c_1(t) \neq c_2(t) \}$ and $\sup \mathcal{T}_-$, or apply the above to $t \mapsto c_i(-t)$, integral curves of $-\mathbf{X}$ (Lemma~\ref{lem:translation-rescaling}(2)). With $c_1(0) = c_2(0)$, the curves agree on all of $I_1 \cap I_2$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, blue!70!black] plot[smooth] coordinates {(-3,0) (-1.6,0.1) (-0.2,0.35) (1.2,0.95) (2.4,1.75)};
+\draw[thick, red!70!black] plot[smooth] coordinates {(-3,0) (-1.6,0.1) (-0.2,0.35) (1.1,0.6) (2.4,0.95)};
+\fill (-3,0) circle (1.4pt) node[below, font=\scriptsize] {$c_1(0) = c_2(0)$};
+\fill[blue!70!black] (1.8,1.32) circle (1.3pt); \fill[red!70!black] (1.8,0.79) circle (1.3pt);
+\draw[orange!85!black] (1.8,1.32) circle (0.22) node[right=5pt, font=\scriptsize] {$U_1 \ni c_1(\tau)$};
+\draw[orange!85!black] (1.8,0.79) circle (0.22) node[right=5pt, font=\scriptsize] {$U_2 \ni c_2(\tau)$};
+\node[font=\scriptsize, align=center, gray!70!black] at (-0.6,-0.65) {hypothetical: the claim shows this cannot happen};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board.)} The situation the claim rules out: the curves agree on $(0, \tau)$ and differ at $\tau$, with disjoint neighbourhoods $U_1, U_2$. ``When you do elementary Euclidean geometry and argue by contradiction, every picture that you draw doesn't look contradictory, because the thing is true.'' A student noted that the argument is ``very similar'' to the Euclidean one; Uribe agreed. Another student asked how $J$ stays inside $I_1 \cap I_2$; it does because the domains are open intervals.
+
+\begin{rembox}[Where the Hausdorff Property Is Used]\label{rem:uniqueness-hausdorff}
+\textit{(Filled in.)} The claim $c_1(\tau) = c_2(\tau)$ is the one step of the proof that uses that $M$ is Hausdorff (``since $M$ is $T_2$'' on the board): it says that the set of times where the two curves agree is closed in $I_1 \cap I_2$. Without the Hausdorff property the proposition fails. The line with two origins (\ref{sec:ex-two-origins}), two copies $\mathbb{R} \times \{1\}$ and $\mathbb{R} \times \{2\}$ glued along $x \neq 0$, has smooth charts (each copy) but is not Hausdorff. The field $d/dx$, in either chart, is well defined, and $c_i(t) = (t, i)$, $t \in \mathbb{R}$, $i = 1, 2$, are integral curves of it. They agree at every $t \neq 0$ and differ at $t = 0$, where they pass through the two different origins.
+\end{rembox}
+
+\begin{corbox}[Non-Injective Integral Curves Repeat]\thmlabel{cor:returning-curve-periodic}
+Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$, and suppose $c(t_1) = c(t_2)$ for some $t_1 < t_2$ in $I$. Put $T = t_2 - t_1 > 0$. Then
+\[
+c(t + T) = c(t) \qquad \text{for every } t \in I \text{ with } t + T \in I .
+\]
+\leeref{Problem 9-1}
+\end{corbox}
+
+\begin{proof}
+\textit{(Uribe, by email after Lecture~24: ``I realized that I did not really answer today's question of whether integral curves must be injective. The answer is that if an integral curve is not injective, then it must be periodic.'')} By the translation lemma (Lemma~\ref{lem:translation-rescaling}(1)), the curve $g(t) = c(t + T)$, defined on $I - T$, is an integral curve of the same field. Both $c$ and $g$ are defined at $t_1$: $t_1 \in I$, and $t_1 \in I - T$ because $t_1 + T = t_2 \in I$. There they agree:
+\[
+g(t_1) = c(t_1 + T) = c(t_2) = c(t_1) .
+\]
+Therefore, by uniqueness (Proposition~\ref{prop:global-uniqueness}), $g = c$ on $I \cap (I - T)$, that is, $c(t + T) = c(t)$ for every $t \in I$ with $t + T \in I$.
+\end{proof}
+
+``Note that $T$ may not be the smallest period.'' For the rotation field (Example~\ref{ex:rotation-flow}), the integral curve $c(t) = (\cos t, \sin t)$ has $c(0) = c(4\pi)$, so $T = 4\pi$ is a period, while the smallest period is $2\pi$. A constant curve, at a zero of $\mathbf{X}$, is periodic with every $T > 0$. \textit{(Filled in.)} The email says $c(t + T) = c(t)$ ``for all $t$''. For a curve on a bounded interval the corollary only covers the $t$ with both $t$ and $t + T$ in $I$; for the maximal integral curve the domain is then all of $\mathbb{R}$, and the identity holds for every $t$ (Proposition~\ref{prop:returning-maximal-periodic}).
+
+\begin{rembox}[Must an Integral Curve Be Injective?]\label{rem:integral-curve-injective}
+A student asked this in Lecture~24, after Example~\ref{ex:loop-curve}. ``We're about to prove something related \ldots\ except if it's constant'': at a zero of $\mathbf{X}$ the constant curve is an integral curve. The ``something related'' is Proposition~\ref{prop:global-uniqueness}. \textit{(Filled in.)} Constant curves are not the only exception: the circles of the rotation field (Example~\ref{ex:rotation-flow}) are integral curves that return to the same point with the same velocity, every $2\pi$. Uribe answered the question by email after the lecture: ``if an integral curve is not injective, then it must be periodic'' (Corollary~\ref{cor:returning-curve-periodic}; for the maximal curve, Proposition~\ref{prop:returning-maximal-periodic}). Lee shows that a maximal integral curve is exactly one of: constant, injective, or periodic and nonconstant (Lee, Problem~9-1).
+\end{rembox}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\foreach \a in {0,60,...,300} { \draw[->, black!55, thick] ({0.3*cos(\a)},{0.3*sin(\a)}) -- ({0.8*cos(\a)},{0.8*sin(\a)}); }
+\fill[red!70!black] (0,0) circle (2pt);
+\node[font=\scriptsize, align=center] at (0,-1.4) {constant: $c(t) = p$,\\ at a zero $\mathbf{X}_p = 0$};
+\begin{scope}[xshift=3.4cm]
+\draw[thick, blue!70!black, ->] (-1.1,-0.75) .. controls (-0.2,1.0) and (0.2,-1.0) .. (1.1,0.75);
+\node[font=\scriptsize, align=center] at (0,-1.4) {injective:\\ never returns to a point};
+\end{scope}
+\begin{scope}[xshift=6.8cm]
+\draw[thick, blue!70!black] (0,0) circle (0.75);
+\draw[->, thick, blue!70!black] (0.75,0) arc (0:35:0.75);
+\draw[->, thick, blue!70!black] (-0.75,0) arc (180:215:0.75);
+\fill (0,0.75) circle (1.4pt);
+\draw[->, very thick, red!70!black] (0,0.75) -- (-0.6,0.75);
+\node[font=\scriptsize, above] at (0,0.8) {$c(t) = c(t + T)$};
+\node[font=\scriptsize, align=center] at (0,-1.4) {periodic, nonconstant:\\ same point, same velocity};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The three kinds of maximal integral curve (Lee, Problem~9-1). An integral curve that comes back to a point comes back with the same velocity, the value of the field there; by Corollary~\ref{cor:returning-curve-periodic} it then repeats itself. The loop of the previous figure, which comes back with a different velocity, is none of the three: it is not an integral curve.
+
+\begin{exbox}[The Euler Field]\exlabel{ex:euler-field}
+On $\mathbb{R}^2$ let $\mathbf{X} = x\, \dfrac{\partial}{\partial x} + y\, \dfrac{\partial}{\partial y}$. The integral curves solve $\dot x = x$, $\dot y = y$, so $\varphi_t(x_0, y_0) = e^t(x_0, y_0)$, $t \in \mathbb{R}$. For $(x_0, y_0) \neq 0$ the image is the open ray from the origin through $(x_0, y_0)$, since $e^t$ takes every value in $(0, \infty)$ and never $0$; at the origin the integral curve is constant.
+\end{exbox}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[->, gray!50] (-2,0) -- (2.1,0) node[right, font=\scriptsize, text=black] {$x$};
+\draw[->, gray!50] (0,-2) -- (0,2.1) node[above, font=\scriptsize, text=black] {$y$};
+\draw[blue!70!black, thick] (0.111,0.046) -- (1.571,0.651);
+\draw[->, blue!70!black, very thick] (0.924,0.383) -- (1.155,0.478);
+\draw[blue!70!black, thick] (0.046,0.111) -- (0.651,1.571);
+\draw[->, blue!70!black, very thick] (0.383,0.924) -- (0.478,1.155);
+\draw[blue!70!black, thick] (-0.046,0.111) -- (-0.651,1.571);
+\draw[->, blue!70!black, very thick] (-0.383,0.924) -- (-0.478,1.155);
+\draw[blue!70!black, thick] (-0.111,0.046) -- (-1.571,0.651);
+\draw[->, blue!70!black, very thick] (-0.924,0.383) -- (-1.155,0.478);
+\draw[blue!70!black, thick] (-0.111,-0.046) -- (-1.571,-0.651);
+\draw[->, blue!70!black, very thick] (-0.924,-0.383) -- (-1.155,-0.478);
+\draw[blue!70!black, thick] (-0.046,-0.111) -- (-0.651,-1.571);
+\draw[->, blue!70!black, very thick] (-0.383,-0.924) -- (-0.478,-1.155);
+\draw[blue!70!black, thick] (0.046,-0.111) -- (0.651,-1.571);
+\draw[->, blue!70!black, very thick] (0.383,-0.924) -- (0.478,-1.155);
+\draw[blue!70!black, thick] (0.111,-0.046) -- (1.571,-0.651);
+\draw[->, blue!70!black, very thick] (0.924,-0.383) -- (1.155,-0.478);
+\draw[blue!70!black, fill=white] (0,0) circle (0.11); \fill[red!70!black] (0,0) circle (1.2pt);
+\node[font=\scriptsize, anchor=west, align=left] at (2.4,0.6) {open rays $t \mapsto e^t(x_0, y_0)$, $t \in \mathbb{R}$,\\ and the constant curve at the origin (red):\\ the images partition $\mathbb{R}^2$};
+\end{tikzpicture}
+\end{center}
+
+``If you go to Desmos or whatever, you see the integral curves of the Euler field \ldots\ on $\mathbb{R}^2$ radial, like that, and they seem to intersect, but they don't.'' The rays are open, and the origin is its own integral curve. The images of the integral curves $t \mapsto e^t(x_0, y_0)$, $t \in \mathbb{R}$, partition $\mathbb{R}^2$, as Proposition~\ref{prop:global-uniqueness} requires. \textit{(Filled in.)} If two of them pass through a common point, $c_1(t_1) = c_2(t_2)$, then $t \mapsto c_2(t + t_2 - t_1)$ is an integral curve (Lemma~\ref{lem:translation-rescaling}(1)) that agrees with $c_1$ at time $t_1$, so it equals $c_1$ on $\mathbb{R}$ (Proposition~\ref{prop:global-uniqueness}), and the two images coincide.
+
+% ============================================================================
+% SECTION: MAXIMAL INTEGRAL CURVES AND FLOWS
+% ============================================================================
+\section{Maximal Integral Curves and Flows}\label{sec:flows}
+
+\roadmark{Stage: dynamics}{The maximal integral curve through each point, complete vector fields, and the flow: all maximal curves assembled into one smooth map on an open domain in $\mathbb{R} \times M$.}
+
+\textit{Lecture 24. ``What this allows us to do'' --- uniqueness on the common domain, Proposition~\ref{prop:global-uniqueness} --- ``is to define the maximal domain of an integral curve, given an initial condition.''}
+
+\begin{defbox}[Maximal Domain]\deflabel{def:maximal-domain}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. Define
+\[
+\big(\alpha(p), \beta(p)\big) = \bigcup_{I} I ,
+\]
+the union over the domains $I$ of all integral curves of $\mathbf{X}$ starting at $p$:
+an open interval containing $0$, possibly infinite or semi-infinite. It is the \textbf{maximal domain} of integral curves of $\mathbf{X}$ starting at $p$.
+\leeref{Theorem 9.12}
+\end{defbox}
+
+The union is nonempty, since an integral curve starting at $p$ exists (Theorem~\ref{thm:ode-local-manifold}). Each domain $I$ is an open interval containing $0$, ``because it starts at $p$'', so the union is an open interval containing $0$. ``So it's something that is very harmless to take.''
+
+\begin{propbox}[The Maximal Integral Curve]\thmlabel{prop:maximal-curve}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There is an integral curve $\varphi_p : (\alpha(p), \beta(p)) \to M$ of $\mathbf{X}$ starting at $p$, and every integral curve $c : I \to M$ starting at $p$ satisfies $I \subseteq (\alpha(p), \beta(p))$ and $c = \varphi_p|_I$. So $(\alpha(p), \beta(p))$ is the largest possible domain of such a curve, and $\varphi_p$ is the unique maximal integral curve starting at $p$. This proves Theorem~\ref{thm:maximal-flow}(1).
+\leeref{Theorem 9.12}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~24: ``How do you define it? Well, I take a point $t$ here. It's in some $I$, so there is some integral curve defined in the neighbourhood of that. I define it by that, and it doesn't matter which $I$ I chose, by the previous lemma.'' Details filled in.)} For $t \in (\alpha(p), \beta(p))$, choose an integral curve $c : I \to M$ starting at $p$ with $t \in I$, and set $\varphi_p(t) = c(t)$. \emph{Well defined:} if $c' : I' \to M$ is another, then $c$ and $c'$ agree at time $0$, so by Proposition~\ref{prop:global-uniqueness} they agree on $I \cap I' \ni t$. \emph{An integral curve:} near each $t$, $\varphi_p$ equals the smooth curve $c$ on the open interval $I \ni t$, so $\varphi_p$ is smooth and $\dot\varphi_p(t) = \dot c(t) = \mathbf{X}_{c(t)} = \mathbf{X}_{\varphi_p(t)}$, since velocity at $t$ only depends on the curve near $t$. And $\varphi_p(0) = p$. \emph{Maximal:} if $c : I \to M$ starts at $p$, then $I$ is one of the domains in the union, so $I \subseteq (\alpha(p), \beta(p))$, and $c = \varphi_p|_I$ by the definition of $\varphi_p$.
+\end{proof}
+
+``The uniqueness is absolutely fantastic for the theory.'' The maximal domains of the examples: $\mathbb{R}$ for the rotation and Euler fields (Examples~\ref{ex:rotation-flow} and~\ref{ex:euler-field}); $(-\infty, 1/(x_0y_0))$ and $(-\infty, -x_0)$ for the two examples that follow.
 
 ``Now I want to give you a problematic example. Problematic in the sense that because of examples like the one I'm about to give you, the theory becomes, well, necessarily elaborate.''
 
@@ -28786,62 +29122,20 @@ For negative $t$ nothing goes wrong: the denominator only grows, and $x(t) \to 0
 
 The integral curves lie on horizontal lines. Starting at $q$ the point moves to the right for $t > 0$, and the velocity $y_0x^2$ grows quadratically in $x$: ``the particle just gets to infinity in finite time, beating everybody else.'' Backwards in time the point moves against the arrows, towards the $y$-axis, where the field vanishes: ``it gets stuck,'' but there is no blowing up. The escape time $1/(x_0y_0)$ depends on the initial condition, through the hyperbola $xy = 1/T$ on which it lies. So, by inspection, not all integral curves are defined for all time --- ``and that makes life complicated.'' (The curve does not continue past $T$, even inside $\mathbb{R}^2$: its $x$-coordinate is unbounded. No other integral curve from $q$ does either, by uniqueness on the whole common domain: two integral curves starting at $q$ agree wherever both are defined (Proposition~\ref{prop:global-uniqueness}; Lee, Theorem~D.4). The uniqueness in Theorem~\ref{thm:ode-local} alone gives this only for $|t| < \varepsilon$.)
 
-% ============================================================================
-% Lecture 24 (Fri Oct 30, 2026): local theory on a manifold
-% ============================================================================
-
-\subsection{Local Theory on a Manifold}\label{sub:integral-curves-manifold}
-
-\textit{Lecture 24. The definition again, then the local theorem on a manifold, two ``simple and useful lemmas'', and uniqueness on the whole common domain: ``the deep --- meaning foundational --- theory of the subject.''}
-
-\emph{The definition, recalled.} $c : I \to M$ is an integral curve of $\mathbf{X}$ if $\dot c(t) = \mathbf{X}_{c(t)}$ for all $t \in I$, where $\dot c(t) = c_{*t}(d/dt)$, ``in a fancy way'': ``the derivation at $c(t)$ defined by $c$'' (Definition~\ref{def:velocity-at-t}). ``To any curve $c : I \to M$ one can naturally associate a lift'' to the tangent bundle,
-\[
-\tilde c(t) = \big(c(t), \dot c(t)\big), \qquad
-\begin{tikzcd}[column sep=large]
- & TM \arrow[d, "\pi"] \\
-I \arrow[ur, "\tilde c"] \arrow[r, "c"'] & M
-\end{tikzcd}
-\]
-the velocity curve of Proposition~\ref{prop:velocity-curve}, written there $\dot c$. It exists for every smooth curve, injective or not. The integral-curve condition says that the lift is the field along the curve: $\tilde c = \mathbf{X} \circ c$.
-
 \begin{center}
 \begin{tikzpicture}[scale=0.95]
-\draw[thick, blue!70!black, ->] plot[smooth] coordinates {(1.823,-1.956) (1.719,-1.814) (1.617,-1.677) (1.516,-1.545) (1.417,-1.419) (1.320,-1.298) (1.225,-1.182) (1.132,-1.071) (1.040,-0.966) (0.950,-0.865) (0.862,-0.769) (0.775,-0.678) (0.690,-0.592) (0.608,-0.510) (0.526,-0.432) (0.447,-0.359) (0.369,-0.290) (0.293,-0.225) (0.219,-0.164) (0.147,-0.107) (0.076,-0.054) (0.008,-0.005) (-0.059,0.040) (-0.125,0.082) (-0.188,0.120) (-0.250,0.156) (-0.310,0.187) (-0.368,0.216) (-0.425,0.241) (-0.479,0.264) (-0.532,0.283) (-0.583,0.300) (-0.633,0.314) (-0.680,0.325) (-0.726,0.334) (-0.770,0.340) (-0.813,0.344) (-0.853,0.346) (-0.892,0.346) (-0.929,0.344) (-0.965,0.339) (-0.998,0.333) (-1.030,0.325) (-1.060,0.315) (-1.088,0.304) (-1.115,0.291) (-1.139,0.277) (-1.162,0.262) (-1.183,0.245) (-1.203,0.228) (-1.220,0.209) (-1.236,0.190) (-1.250,0.169) (-1.263,0.148) (-1.273,0.126) (-1.282,0.104) (-1.289,0.081) (-1.294,0.058) (-1.298,0.035) (-1.300,0.012) (-1.300,-0.012) (-1.298,-0.035) (-1.294,-0.058) (-1.289,-0.081) (-1.282,-0.104) (-1.273,-0.126) (-1.263,-0.148) (-1.250,-0.169) (-1.236,-0.190) (-1.220,-0.209) (-1.203,-0.228) (-1.183,-0.245) (-1.162,-0.262) (-1.139,-0.277) (-1.115,-0.291) (-1.088,-0.304) (-1.060,-0.315) (-1.030,-0.325) (-0.998,-0.333) (-0.965,-0.339) (-0.929,-0.344) (-0.892,-0.346) (-0.853,-0.346) (-0.813,-0.344) (-0.770,-0.340) (-0.726,-0.334) (-0.680,-0.325) (-0.633,-0.314) (-0.583,-0.300) (-0.532,-0.283) (-0.479,-0.264) (-0.425,-0.241) (-0.368,-0.216) (-0.310,-0.187) (-0.250,-0.156) (-0.188,-0.120) (-0.125,-0.082) (-0.059,-0.040) (0.008,0.005) (0.076,0.054) (0.147,0.107) (0.219,0.164) (0.293,0.225) (0.369,0.290) (0.447,0.359) (0.526,0.432) (0.608,0.510) (0.690,0.592) (0.775,0.678) (0.862,0.769) (0.950,0.865) (1.040,0.966) (1.132,1.071) (1.225,1.182) (1.320,1.298) (1.417,1.419) (1.516,1.545) (1.617,1.677) (1.719,1.814) (1.823,1.956)};
-\fill (0,0) circle (1.4pt);
-\draw[->, very thick, teal!70!black] (0,0) -- (-0.740,0.512) node[left, font=\scriptsize] {$\dot c(t_1)$};
-\draw[->, very thick, red!70!black] (0,0) -- (0.740,0.512) node[right, font=\scriptsize] {$\dot c(t_2)$};
-\node[font=\scriptsize, below, align=center] at (0,-0.15) {$c(t_1) = c(t_2)$};
-\node[font=\scriptsize, blue!70!black] at (1.9,1.3) {$c$};
-\node[font=\scriptsize, anchor=west, align=left] at (2.4,0.1) {one point, two velocities:\\ the lift $\tilde c$ is defined,\\ but $c$ is an integral curve\\ of no vector field};
+\fill[blue!8] (0.28,-2.6) -- plot[smooth] coordinates {(0.280,2.720) (0.322,2.484) (0.364,2.197) (0.406,1.970) (0.448,1.785) (0.490,1.632) (0.532,1.503) (0.574,1.393) (0.616,1.298) (0.658,1.215) (0.700,1.142) (0.742,1.078) (0.784,1.020) (0.826,0.968) (0.868,0.921) (0.910,0.879) (0.952,0.840) (0.994,0.804) (1.036,0.772) (1.078,0.742) (1.121,0.714) (1.163,0.688) (1.205,0.664) (1.247,0.642) (1.289,0.621) (1.331,0.601) (1.373,0.583) (1.415,0.565) (1.457,0.549) (1.499,0.534) (1.541,0.519) (1.583,0.505) (1.625,0.492) (1.667,0.480) (1.709,0.468) (1.751,0.457) (1.793,0.446) (1.835,0.436) (1.877,0.426) (1.919,0.417) (1.961,0.408) (2.003,0.399) (2.045,0.391) (2.087,0.383) (2.129,0.376) (2.171,0.368) (2.213,0.361) (2.255,0.355) (2.297,0.348) (2.339,0.342) (2.381,0.336) (2.423,0.330) (2.465,0.325) (2.507,0.319) (2.549,0.314) (2.591,0.309) (2.633,0.304) (2.675,0.299) (2.717,0.294) (2.759,0.290) (2.802,0.286) (2.844,0.281) (2.886,0.277) (2.928,0.273) (2.970,0.269) (3.012,0.266) (3.054,0.262) (3.096,0.258) (3.138,0.255) (3.180,0.252) (3.222,0.248) (3.264,0.245) (3.306,0.242) (3.348,0.239) (3.390,0.236) (3.432,0.233) (3.474,0.230) (3.516,0.228) (3.558,0.225) (3.600,0.222)} -- (3.6,-2.6) -- cycle;
+\draw[->, gray!60] (0,0) -- (4.0,0) node[right, font=\scriptsize, text=black] {$x_0$};
+\draw[->, gray!60] (0,-2.7) -- (0,3.0) node[above, font=\scriptsize, text=black] {$t$};
+\draw[blue!70!black, thick, dashed] plot[smooth] coordinates {(0.280,2.720) (0.322,2.484) (0.364,2.197) (0.406,1.970) (0.448,1.785) (0.490,1.632) (0.532,1.503) (0.574,1.393) (0.616,1.298) (0.658,1.215) (0.700,1.142) (0.742,1.078) (0.784,1.020) (0.826,0.968) (0.868,0.921) (0.910,0.879) (0.952,0.840) (0.994,0.804) (1.036,0.772) (1.078,0.742) (1.121,0.714) (1.163,0.688) (1.205,0.664) (1.247,0.642) (1.289,0.621) (1.331,0.601) (1.373,0.583) (1.415,0.565) (1.457,0.549) (1.499,0.534) (1.541,0.519) (1.583,0.505) (1.625,0.492) (1.667,0.480) (1.709,0.468) (1.751,0.457) (1.793,0.446) (1.835,0.436) (1.877,0.426) (1.919,0.417) (1.961,0.408) (2.003,0.399) (2.045,0.391) (2.087,0.383) (2.129,0.376) (2.171,0.368) (2.213,0.361) (2.255,0.355) (2.297,0.348) (2.339,0.342) (2.381,0.336) (2.423,0.330) (2.465,0.325) (2.507,0.319) (2.549,0.314) (2.591,0.309) (2.633,0.304) (2.675,0.299) (2.717,0.294) (2.759,0.290) (2.802,0.286) (2.844,0.281) (2.886,0.277) (2.928,0.273) (2.970,0.269) (3.012,0.266) (3.054,0.262) (3.096,0.258) (3.138,0.255) (3.180,0.252) (3.222,0.248) (3.264,0.245) (3.306,0.242) (3.348,0.239) (3.390,0.236) (3.432,0.233) (3.474,0.230) (3.516,0.228) (3.558,0.225) (3.600,0.222)};
+\node[blue!70!black, font=\scriptsize, anchor=west] at (1.25,0.99) {$t = \beta(x_0, 1) = 1/x_0$};
+\foreach \x in {0.7,1.5,2.6} { \draw[thick, black!70, ->] (\x,-2.6) -- (\x,{0.8/\x}); \fill[white, draw=black!70] (\x,{0.8/\x}) circle (1.2pt); }
+\node[font=\scriptsize, align=center] at (2.2,-1.4) {$\mathcal{D} \cap \{y_0 = 1\}$};
+\node[font=\scriptsize, anchor=west, align=left] at (4.4,1.6) {each vertical segment is\\ $(\alpha(p), \beta(p)) \times \{p\}$,\\ $\alpha(p) = -\infty$};
 \end{tikzpicture}
 \end{center}
 
-If $c$ runs through the same point at two times, $c(t_1) = c(t_2)$, with different velocities $\dot c(t_1) \neq \dot c(t_2)$, the lift is still a well-defined map: it records the time, not just the point. ``But this cannot be an integral curve of anything.'' At $c(t_1) = c(t_2)$ the velocity would have to equal the value of the field there, and ``the field is single-valued at each point.''
-
-A student asked whether, then, an integral curve has to be injective. ``We're about to prove something related \ldots\ except if it's constant'': at a zero of $\mathbf{X}$ the constant curve is an integral curve. \textit{(Filled in.)} Constant curves are not the only exception. The circles of the rotation field (Example~\ref{ex:rotation-flow}) are integral curves that return to the same point with the same velocity, every $2\pi$. The ``something related'' is Proposition~\ref{prop:global-uniqueness} below. With it, Lee shows that a maximal integral curve is exactly one of: constant, injective, or periodic and nonconstant (Lee, Problem~9-1).
-
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-\foreach \a in {0,60,...,300} { \draw[->, black!55, thick] ({0.3*cos(\a)},{0.3*sin(\a)}) -- ({0.8*cos(\a)},{0.8*sin(\a)}); }
-\fill[red!70!black] (0,0) circle (2pt);
-\node[font=\scriptsize, align=center] at (0,-1.4) {constant: $c(t) = p$,\\ at a zero $\mathbf{X}_p = 0$};
-\begin{scope}[xshift=3.4cm]
-\draw[thick, blue!70!black, ->] (-1.1,-0.75) .. controls (-0.2,1.0) and (0.2,-1.0) .. (1.1,0.75);
-\node[font=\scriptsize, align=center] at (0,-1.4) {injective:\\ never returns to a point};
-\end{scope}
-\begin{scope}[xshift=6.8cm]
-\draw[thick, blue!70!black] (0,0) circle (0.75);
-\draw[->, thick, blue!70!black] (0.75,0) arc (0:35:0.75);
-\draw[->, thick, blue!70!black] (-0.75,0) arc (180:215:0.75);
-\fill (0,0.75) circle (1.4pt);
-\draw[->, very thick, red!70!black] (0,0.75) -- (-0.6,0.75);
-\node[font=\scriptsize, above] at (0,0.8) {$c(t) = c(t + T)$};
-\node[font=\scriptsize, align=center] at (0,-1.4) {periodic, nonconstant:\\ same point, same velocity};
-\end{scope}
-\end{tikzpicture}
-\end{center}
-
-\textit{(Not from lecture; figure added.)} The three kinds of maximal integral curve (Lee, Problem~9-1). An integral curve that comes back to a point comes back with the same velocity, the value of the field there; by Proposition~\ref{prop:global-uniqueness} below it then repeats itself. The loop of the previous figure, which comes back with a different velocity, is none of the three: it is not an integral curve.
+\textit{(Not from lecture; figure added.)} The flow domain of Example~\ref{ex:finite-escape}, sliced at $y_0 = 1$. Over each initial point $p = (x_0, 1)$ the domain is the vertical half-line $t < 1/x_0$, open at the top. These segments fill the region below the hyperbola $t = 1/x_0$, which is open.
 
 \begin{exbox}[Running Off the Edge]\exlabel{ex:half-line}
 Let $M = (-\infty, 0)$ and $\mathbf{X} = \dfrac{d}{dx}$. The integral curves solve $\dot c(t) = 1$, so the integral curve starting at $x_0$ is
@@ -28871,263 +29165,6 @@ translation by time $t$, with $\varphi_t(x_0)|_{t=0} = x_0$. It stays in $M$ exa
 
 ``A much easier example'' than Example~\ref{ex:finite-escape} of integral curves not defined for all $t$. Here the curve does not run to infinity; it runs into the end of the manifold: ``we cannot go beyond that because there's the abyss instead of the nothingness.'' Again the domain depends on the initial condition. ``Another example of this complication that makes the theory much longer than it would be otherwise.''
 
-The Euclidean theorem (Theorem~\ref{thm:ode-local}) is ``Theorem~D.1 in Lee, with proof. I will forever be amazed by how much [Lee] was able to put in his book.'' Its manifold version ``follows immediately from the Euclidean version.''
-
-\begin{thmbox}[Local Existence and Uniqueness on a Manifold]\thmlabel{thm:ode-local-manifold}
-Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There are $\varepsilon > 0$, an open neighbourhood $U$ of $p$, and a map
-\[
-\varphi : (-\varepsilon, \varepsilon) \times U \longrightarrow M
-\]
-such that
-\begin{enumerate}[nosep]
-\item $\varphi(0, q) = q$ for every $q \in U$;
-\item for every $q \in U$, the curve $(-\varepsilon, \varepsilon) \to M$, $t \mapsto \varphi_t(q)$, is an integral curve of $\mathbf{X}$;
-\item \emph{(local uniqueness)} if $c : (-\delta, \delta) \to M$ is any integral curve with $c(0) = q$ for some $q \in U$, then $c(t) = \varphi_t(q)$ for all $t \in (-\varepsilon, \varepsilon) \cap (-\delta, \delta)$.
-\end{enumerate}
-Moreover, $\varphi$ is smooth.
-\leeref{Proposition 9.2; Theorem D.1}
-\end{thmbox}
-
-In~(3) ``these domains don't have to be symmetric'': the same holds for an integral curve $c : I \to M$ on any open interval $I \ni 0$, on $I \cap (-\varepsilon, \varepsilon)$; the proof below does it in that form. By~(3), ``there's only one map like that.''
-
-\begin{proof}
-\textit{(Lecture~24: ``use a chart at $p$, and then push forward \ldots\ push this thing down here. Now we have the theorem at the level of open sets in Euclidean space, and we just push it up again.'' The chart is called $\psi$, since $\varphi$ is the flow --- ``which is why Lee uses $\theta$.'' The details are filled in.)} When $M$ is an open set in $\mathbb{R}^m$ this is Theorem~\ref{thm:ode-local}. In general, take a chart $\psi : W \to \psi(W) \subseteq \mathbb{R}^m$ at $p$. It is a diffeomorphism of the open submanifold $W$ onto the open set $\psi(W)$ (Proposition~\ref{prop:chart-diffeo}), so the field $\mathbf{X}|_W$ has a pushforward $\mathbf{Y} = \psi_*\mathbf{X} \in \mathfrak{X}(\psi(W))$ (Definition~\ref{def:vf-pushforward}, Proposition~\ref{prop:vf-pushforward}).
-
-\emph{The check: $c : I \to W$ is an integral curve of $\mathbf{X}$ if and only if $\psi \circ c$ is an integral curve of $\mathbf{Y}$.} By the chain rule (Theorem~\ref{prop:pushforward-functorial}), the velocity of $\psi \circ c$ at $t$ is $(\psi \circ c)_{*t}(d/dt) = d\psi_{c(t)}\big(c_{*t}(d/dt)\big) = d\psi_{c(t)}\big(\dot c(t)\big)$, and by definition $\mathbf{Y}_{\psi(c(t))} = d\psi_{c(t)}\big(\mathbf{X}_{c(t)}\big)$. Since $d\psi_{c(t)}$ is injective, the two right-hand sides agree exactly when $\dot c(t) = \mathbf{X}_{c(t)}$. ``This is a kind of naturality that I will come back to, because this is very general.'' (Lee, Proposition~9.6: a smooth $F$ takes integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ for all integral curves exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.)
-
-\emph{Push down, solve, push up.} Theorem~\ref{thm:ode-local}, for $\mathbf{Y}$ on $\psi(W)$ at $\psi(p)$, gives $\varepsilon > 0$, an open $U' \ni \psi(p)$ and a smooth $\varphi' : (-\varepsilon, \varepsilon) \times U' \to \psi(W)$. Put $U = \psi^{-1}(U')$ and
-\[
-\varphi(t, q) = \psi^{-1}\big(\varphi'(t, \psi(q))\big) \in W .
-\]
-$\varphi$ is smooth, as a composite of smooth maps, and $\varphi(0, q) = \psi^{-1}(\psi(q)) = q$. For $q \in U$ the curve $t \mapsto \varphi'(t, \psi(q))$ is an integral curve of $\mathbf{Y}$ in $\psi(W)$, so by the check, applied to $c = \varphi(\cdot, q)$ (for which $\psi \circ c = \varphi'(\cdot, \psi(q))$), $t \mapsto \varphi_t(q)$ is an integral curve of $\mathbf{X}$. This gives~(1) and~(2).
-
-\emph{Uniqueness.} The one point beyond pushing down is that an integral curve $c$ of $\mathbf{X}$ might leave $W$, where the chart says nothing. Let $c : I \to M$ be an integral curve, $I \ni 0$ an open interval, $c(0) = q \in U$, and let $J = I \cap (-\varepsilon, \varepsilon)$. The set $c^{-1}(W) \cap J$ is open and contains $0$; let $J_0$ be the open interval that is its connected component containing $0$. On $J_0$, $\psi \circ c$ is an integral curve of $\mathbf{Y}$ starting at $\psi(q)$ (the check), so Theorem~\ref{thm:ode-local}(3) gives $\psi(c(t)) = \varphi'(t, \psi(q))$, that is, $c(t) = \varphi(t, q)$, for $t \in J_0$. Suppose $J_0 \neq J$, say $b = \sup J_0 < \sup J$ (the left end is handled the same way). Then $b \in J$, and by continuity $c(b) = \lim_{t \to b^-} \varphi(t, q) = \varphi(b, q)$, which lies in $W$. So $b \in c^{-1}(W) \cap J$, an open set; an interval around $b$ lies in it, and the component $J_0$ would contain $b$ and points beyond it, contradicting $b = \sup J_0$. Hence $J_0 = J$, and $c(t) = \varphi_t(q)$ on all of $I \cap (-\varepsilon, \varepsilon)$: this is~(3).
-\end{proof}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-\draw[thick, blue!60!black] (0,3.7) ellipse (2.0 and 0.95); \node[blue!60!black, font=\scriptsize] at (-2.0,4.7) {$W \subseteq M$};
-\draw[->, gray!70] (-1.20,3.90) -- (-0.65,4.00);
-\draw[->, gray!70] (-0.20,4.15) -- (0.35,4.28);
-\draw[->, gray!70] (0.60,3.55) -- (1.15,3.71);
-\draw[->, gray!70] (-0.90,3.30) -- (-0.35,3.41);
-\draw[orange!85!black, thick] plot[smooth] coordinates {(-2.6,2.8) (-1.2,3.4) (0.2,3.9) (1.6,4.4) (2.6,4.9)};
-\node[orange!85!black, font=\scriptsize] at (2.8,4.65) {$c$}; \node[font=\scriptsize] at (1.2,3.05) {$\mathbf{X}$};
-\draw[->, thick] (0,2.55) -- (0,1.25) node[midway, right, font=\scriptsize] {$\psi$};
-\draw[thick, blue!60!black] (0,0.1) ellipse (2.0 and 0.85); \node[blue!60!black, font=\scriptsize] at (-2.2,1.05) {$\psi(W) \subseteq \mathbb{R}^m$};
-\draw[->, gray!70] (-1.00,0.30) -- (-0.40,0.60);
-\draw[->, gray!70] (0.00,0.55) -- (0.60,0.85);
-\draw[->, gray!70] (0.70,-0.05) -- (1.30,0.25);
-\draw[->, gray!70] (-0.70,-0.35) -- (-0.10,-0.05);
-\draw[orange!85!black, thick] plot[smooth] coordinates {(-2.6,-0.6) (-1.0,-0.1) (0.4,0.4) (1.6,0.75) (2.6,1.0)};
-\node[orange!85!black, font=\scriptsize] at (2.85,1.15) {$\psi \circ c$}; \node[font=\scriptsize] at (1.35,-0.45) {$\psi_*\mathbf{X}$};
-\node[font=\scriptsize, anchor=west, align=left] at (3.3,2.4) {$c$ is an integral curve of $\mathbf{X}$\\ $\iff$ $\psi \circ c$ is one of $\psi_*\mathbf{X}$:\\ push down, solve, push back up};
-\end{tikzpicture}
-\end{center}
-
-\textit{(Figure after the board.)} Upstairs, the field $\mathbf{X}$ on the chart domain $W$ and a curve $c$; downstairs, the pushed-forward field $\psi_*\mathbf{X}$ on $\psi(W)$ and the curve $\psi \circ c$.
-
-\emph{Simple and useful lemmas,} for any $\mathbf{X} \in \mathfrak{X}(M)$, ``completely general.''
-
-\begin{lembox}[Translation and Rescaling]\thmlabel{lem:translation-rescaling}
-Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$.
-\begin{enumerate}[nosep]
-\item \emph{(Translation lemma.)} For $t_0 \in \mathbb{R}$, the curve $\tilde c(t) = c(t + t_0)$, defined on $I - t_0 = \{ t - t_0 : t \in I \}$, is an integral curve of $\mathbf{X}$.
-\item \emph{(Rescaling.)} For $\lambda \in \mathbb{R}$, the curve $\tilde c(t) = c(\lambda t)$, defined on $\{ t : \lambda t \in I \}$, is an integral curve of $\lambda\mathbf{X}$.
-\end{enumerate}
-\leeref{Lemmas 9.3 and 9.4}
-\end{lembox}
-
-\begin{proof}
-\textit{(Lecture~24: ``immediate by chain rule''; filled in.)} Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition~\ref{def:velocity-at-t} and the chain rule for real functions of one variable:
-\[
-\dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(t + t_0)\big) = (f \circ c)'(t + t_0) = \dot c(t + t_0)[f] = \mathbf{X}_{c(t + t_0)}[f] = \mathbf{X}_{\tilde c(t)}[f]
-\]
-for (1), and for (2)
-\[
-\dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(\lambda t)\big) = \lambda\, (f \circ c)'(\lambda t) = \lambda\, \dot c(\lambda t)[f] = \lambda\, \mathbf{X}_{c(\lambda t)}[f] = (\lambda\mathbf{X})_{\tilde c(t)}[f] .
-\]
-Two tangent vectors at a point that agree on every germ are equal.
-\end{proof}
-
-``You can always translate time. We're going to use it a lot.'' Rescaling: ``you can rescale a field pointwise by a fixed factor, and the integral curves of that are easily related to the integral curves of the original.'' With $\lambda = -1$: the integral curves of $-\mathbf{X}$ are those of $\mathbf{X}$ run backwards.
-
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-\draw[thick, blue!70!black, ->] (0,0) .. controls (1,1.3) and (2.3,-0.3) .. (3.4,0.9)
-  node[pos=0.18, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$t_0 - 1$}, label={[font=\scriptsize, red!70!black]below:$-1$}] {}
-  node[pos=0.5, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$t_0$}, label={[font=\scriptsize, red!70!black]below:$0$}] {}
-  node[pos=0.82, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$t_0 + 1$}, label={[font=\scriptsize, red!70!black]below:$1$}] {};
-\node[font=\scriptsize, align=center] at (1.7,-1.0) {translation: same points, clock reset\\ black: times of $c$\\ \textcolor{red!70!black}{red: times of $\tilde c(t) = c(t + t_0)$}};
-\begin{scope}[xshift=5.6cm]
-\draw[thick, blue!70!black, <-] (0,0) .. controls (1,1.3) and (2.3,-0.3) .. (3.4,0.9)
-  node[pos=0.18, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$-1$}, label={[font=\scriptsize, red!70!black]below:$1$}] {}
-  node[pos=0.5, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$0$}, label={[font=\scriptsize, red!70!black]below:$0$}] {}
-  node[pos=0.82, circle, fill=black, inner sep=1.1pt, label={[font=\scriptsize, text=black]above:$1$}, label={[font=\scriptsize, red!70!black]below:$-1$}] {};
-\node[font=\scriptsize, align=center] at (1.7,-1.0) {rescaling with $\lambda = -1$: run backwards\\ black: times of $c$\\ \textcolor{red!70!black}{red: times of $\tilde c(t) = c(-t)$, a curve of $-\mathbf{X}$}};
-\end{scope}
-\end{tikzpicture}
-\end{center}
-
-\textit{(Not from lecture; figure added.)} Both operations keep the image of the curve and change only the clock. Translation relabels the times, so the point reached at time $t_0$ by $c$ is reached at time $0$ by $\tilde c$; the arrow (the velocity) is unchanged. Rescaling by $\lambda = -1$ reverses the arrow, which is why $\tilde c$ follows $-\mathbf{X}$. (A general $\lambda$ also changes the speed by the factor $|\lambda|$.)
-
-``Now the core technical result that I want to prove today.''
-
-\begin{propbox}[Uniqueness on the Common Domain]\thmlabel{prop:global-uniqueness}
-Let $\mathbf{X} \in \mathfrak{X}(M)$, and let $c_i : I_i \to M$, $i = 1, 2$, be integral curves of $\mathbf{X}$. If there is $t_0 \in I_1 \cap I_2$ with $c_1(t_0) = c_2(t_0)$, then
-\[
-c_1|_{I_1 \cap I_2} = c_2|_{I_1 \cap I_2} .
-\]
-\leeref{Theorem 9.12 (proof)}
-\end{propbox}
-
-``Suppose you have two integral curves that agree at some time $t_0$ \ldots\ Then the conclusion is that they agree wherever they can.''
-
-\begin{proof}
-\textit{(Lecture~24. Details from the discussion in class are added where noted.)} \emph{Reduction to $t_0 = 0$.} By the translation lemma (Lemma~\ref{lem:translation-rescaling}(1)), $t \mapsto c_i(t + t_0)$ are integral curves on $I_i - t_0$ that agree at $0$, and the conclusion for them is the conclusion for the $c_i$. So assume $t_0 = 0$, and let $q = c_1(0) = c_2(0)$.
-
-\emph{Local uniqueness.} By Theorem~\ref{thm:ode-local-manifold}(3) at $q$ (in the form for any open interval containing $0$), both $c_i$ equal $\varphi_\cdot(q)$ near $0$. So there is $\varepsilon > 0$ with $(-\varepsilon, \varepsilon) \subseteq I_1 \cap I_2$ and
-\[
-c_1|_{(-\varepsilon, \varepsilon)} = c_2|_{(-\varepsilon, \varepsilon)} .
-\]
-``The only thing is to extend this local uniqueness into global uniqueness.''
-
-\emph{Argue by contradiction.} Introduce
-\[
-\mathcal{T}_+ = \{ t \in I_1 \cap I_2 \cap (0, \infty) : c_1(t) \neq c_2(t) \} .
-\]
-We want to show $\mathcal{T}_+ = \varnothing$. Assume $\mathcal{T}_+ \neq \varnothing$. It is bounded below by $\varepsilon$; let $\tau = \inf \mathcal{T}_+ \ge \varepsilon > 0$. \textit{(Filled in: $\tau$ is in the domain.)} $I_1 \cap I_2$ is an interval containing $\varepsilon/2$ and some point of $\mathcal{T}_+ \ge \tau$, and $\varepsilon/2 < \tau$, so $\tau \in I_1 \cap I_2$. By the definition of the infimum, $c_1 = c_2$ on $(0, \tau)$.
-
-\emph{Claim: $c_1(\tau) = c_2(\tau)$.} Again by contradiction. If $c_1(\tau) \neq c_2(\tau)$, since $M$ is Hausdorff (Definition~\ref{def:hausdorff-t2}) there are neighbourhoods $U_i$ of $c_i(\tau)$ with $U_1 \cap U_2 = \varnothing$. By continuity of $c_1$ and $c_2$ there is an open interval $J \ni \tau$, inside $I_1 \cap I_2$ (which is open), with $c_i(J) \subseteq U_i$. So there is $\tau_1 \in J$ with $0 < \tau_1 < \tau$, and $c_1(\tau_1) \in U_1$, $c_2(\tau_1) \in U_2$, so $c_1(\tau_1) \neq c_2(\tau_1)$ and $\tau_1 \in \mathcal{T}_+$. This contradicts $\tau = \inf \mathcal{T}_+$. Hence $c_1(\tau) = c_2(\tau)$.
-
-\emph{Local uniqueness at $\tau$.} ``By the translation lemma, local uniqueness at $t = 0$ is equivalent to local uniqueness at any $\tau$'': apply the local-uniqueness step to the integral curves $c_i(\cdot + \tau)$, which agree at $0$. So there is $\delta > 0$ such that the curves agree on $(\tau - \delta, \tau + \delta)$. Together with $c_1 = c_2$ on $(0, \tau]$, they agree on $(0, \tau + \delta) \cap I_1 \cap I_2$, so every point of $\mathcal{T}_+$ is $\ge \tau + \delta$, and $\inf \mathcal{T}_+ \ge \tau + \delta > \tau$: a contradiction. So $\mathcal{T}_+ = \varnothing$.
-
-\emph{Negative times.} ``Of course you do the same thing for $\tau_-$ from the other side. You take the sup'': with $\mathcal{T}_- = \{ t \in I_1 \cap I_2 \cap (-\infty, 0) : c_1(t) \neq c_2(t) \}$ and $\sup \mathcal{T}_-$, or apply the above to $t \mapsto c_i(-t)$, integral curves of $-\mathbf{X}$ (Lemma~\ref{lem:translation-rescaling}(2)). With $c_1(0) = c_2(0)$, the curves agree on all of $I_1 \cap I_2$.
-\end{proof}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-\draw[thick, blue!70!black] plot[smooth] coordinates {(-3,0) (-1.6,0.1) (-0.2,0.35) (1.2,0.95) (2.4,1.75)};
-\draw[thick, red!70!black] plot[smooth] coordinates {(-3,0) (-1.6,0.1) (-0.2,0.35) (1.1,0.6) (2.4,0.95)};
-\fill (-3,0) circle (1.4pt) node[below, font=\scriptsize] {$c_1(0) = c_2(0)$};
-\fill[blue!70!black] (1.8,1.32) circle (1.3pt); \fill[red!70!black] (1.8,0.79) circle (1.3pt);
-\draw[orange!85!black] (1.8,1.32) circle (0.22) node[right=5pt, font=\scriptsize] {$U_1 \ni c_1(\tau)$};
-\draw[orange!85!black] (1.8,0.79) circle (0.22) node[right=5pt, font=\scriptsize] {$U_2 \ni c_2(\tau)$};
-\node[font=\scriptsize, align=center, gray!70!black] at (-0.6,-0.65) {hypothetical: the claim shows this cannot happen};
-\end{tikzpicture}
-\end{center}
-
-\textit{(Figure after the board.)} The situation the claim rules out: the curves agree on $(0, \tau)$ and differ at $\tau$, with disjoint neighbourhoods $U_1, U_2$. ``When you do elementary Euclidean geometry and argue by contradiction, every picture that you draw doesn't look contradictory, because the thing is true.'' A student noted that the argument is ``very similar'' to the Euclidean one; Uribe agreed. On a manifold, the Hausdorff property is what makes the set where the curves agree closed. Another student asked how $J$ stays inside $I_1 \cap I_2$; it does because the domains are open intervals.
-
-\begin{exbox}[The Euler Field]\exlabel{ex:euler-field}
-On $\mathbb{R}^2$ let $\mathbf{X} = x\, \dfrac{\partial}{\partial x} + y\, \dfrac{\partial}{\partial y}$. The integral curves solve $\dot x = x$, $\dot y = y$, so $\varphi_t(x_0, y_0) = e^t(x_0, y_0)$, $t \in \mathbb{R}$. For $(x_0, y_0) \neq 0$ the image is the open ray from the origin through $(x_0, y_0)$, since $e^t$ takes every value in $(0, \infty)$ and never $0$; at the origin the integral curve is constant.
-\end{exbox}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-\draw[->, gray!50] (-2,0) -- (2.1,0) node[right, font=\scriptsize, text=black] {$x$};
-\draw[->, gray!50] (0,-2) -- (0,2.1) node[above, font=\scriptsize, text=black] {$y$};
-\draw[blue!70!black, thick] (0.111,0.046) -- (1.571,0.651);
-\draw[->, blue!70!black, very thick] (0.924,0.383) -- (1.155,0.478);
-\draw[blue!70!black, thick] (0.046,0.111) -- (0.651,1.571);
-\draw[->, blue!70!black, very thick] (0.383,0.924) -- (0.478,1.155);
-\draw[blue!70!black, thick] (-0.046,0.111) -- (-0.651,1.571);
-\draw[->, blue!70!black, very thick] (-0.383,0.924) -- (-0.478,1.155);
-\draw[blue!70!black, thick] (-0.111,0.046) -- (-1.571,0.651);
-\draw[->, blue!70!black, very thick] (-0.924,0.383) -- (-1.155,0.478);
-\draw[blue!70!black, thick] (-0.111,-0.046) -- (-1.571,-0.651);
-\draw[->, blue!70!black, very thick] (-0.924,-0.383) -- (-1.155,-0.478);
-\draw[blue!70!black, thick] (-0.046,-0.111) -- (-0.651,-1.571);
-\draw[->, blue!70!black, very thick] (-0.383,-0.924) -- (-0.478,-1.155);
-\draw[blue!70!black, thick] (0.046,-0.111) -- (0.651,-1.571);
-\draw[->, blue!70!black, very thick] (0.383,-0.924) -- (0.478,-1.155);
-\draw[blue!70!black, thick] (0.111,-0.046) -- (1.571,-0.651);
-\draw[->, blue!70!black, very thick] (0.924,-0.383) -- (1.155,-0.478);
-\draw[blue!70!black, fill=white] (0,0) circle (0.11); \fill[red!70!black] (0,0) circle (1.2pt);
-\node[font=\scriptsize, anchor=west, align=left] at (2.4,0.6) {open rays $t \mapsto e^t(x_0, y_0)$, $t \in \mathbb{R}$,\\ and the constant curve at the origin (red):\\ the images partition $\mathbb{R}^2$};
-\end{tikzpicture}
-\end{center}
-
-``If you go to Desmos or whatever, you see the integral curves of the Euler field \ldots\ on $\mathbb{R}^2$ radial, like that, and they seem to intersect, but they don't.'' The rays are open, and the origin is its own integral curve. The images of the integral curves $t \mapsto e^t(x_0, y_0)$, $t \in \mathbb{R}$, partition $\mathbb{R}^2$, as Proposition~\ref{prop:global-uniqueness} requires. \textit{(Filled in.)} If two of them pass through a common point, $c_1(t_1) = c_2(t_2)$, then $t \mapsto c_2(t + t_2 - t_1)$ is an integral curve (Lemma~\ref{lem:translation-rescaling}(1)) that agrees with $c_1$ at time $t_1$, so it equals $c_1$ on $\mathbb{R}$ (Proposition~\ref{prop:global-uniqueness}), and the two images coincide.
-
-% ============================================================================
-% SECTION: FLOWS (the big picture)
-% ============================================================================
-\section{Flows}\label{sec:flows}
-
-\roadmark{Stage: dynamics}{All integral curves at once: the maximal curves through every point assemble into one smooth map on an open domain in $\mathbb{R} \times M$.}
-
-\textit{Lecture 23, the last minutes: ``Let me tell you the bigger picture of what actually is happening, and then we'll see how much of that we get to prove \ldots\ We'll prove a big chunk of this on Friday.''}
-
-\begin{thmbox}[Maximal Integral Curves and the Flow]\thmlabel{thm:maximal-flow}
-Let $M$ be a smooth manifold and $\mathbf{X} \in \mathfrak{X}(M)$.
-\begin{enumerate}[nosep]
-\item For every $p \in M$ there is a unique \emph{maximal} integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi_p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$: ``$\alpha$ or $\beta$ may be $\pm\infty$.''
-\item Let
-\[
-\mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi_p(t).
-\]
-Then $\mathcal{D}$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth.
-\end{enumerate}
-\leeref{Theorem 9.12}
-\end{thmbox}
-
-\begin{proof}[Proof of (1) (Lecture~24); (2) to be filled]
-Part~(1) was proved in Lecture~24: Proposition~\ref{prop:maximal-curve}, in \S\ref{sub:maximal-domains} below. Part~(2) is to be proved. Uribe's indication for (1), in Lecture~23: ``by uniqueness and something called the translation lemma, which is very easy to see,'' there is ``only one way to continue the curve forwards in time and then backwards in time until either you never stop or you run into the edge of the manifold.'' Openness of $\mathcal{D}$ ``is surprisingly long to prove.''
-\end{proof}
-
-$\varphi$ is ``just flowing, like we were doing before'', except that the domain of the time variable depends on the point, as in Example~\ref{ex:finite-escape}. The theorem is the local picture of Theorem~\ref{thm:ode-local}, with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
-\begin{itemize}[nosep]
-\item Rotation (Example~\ref{ex:rotation-flow}): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.
-\item Escape (Example~\ref{ex:finite-escape}): $\alpha \equiv -\infty$, $\beta(x, y) = 1/(xy)$, so $\mathcal{D} = \{ (t, (x, y)) : x, y > 0,\ t\,xy < 1 \}$, open, and $\varphi(t, (x, y)) = \big(x/(1 - xyt),\ y\big)$, smooth on $\mathcal{D}$.
-\end{itemize}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-\fill[blue!8] (0.28,-2.6) -- plot[smooth] coordinates {(0.280,2.720) (0.322,2.484) (0.364,2.197) (0.406,1.970) (0.448,1.785) (0.490,1.632) (0.532,1.503) (0.574,1.393) (0.616,1.298) (0.658,1.215) (0.700,1.142) (0.742,1.078) (0.784,1.020) (0.826,0.968) (0.868,0.921) (0.910,0.879) (0.952,0.840) (0.994,0.804) (1.036,0.772) (1.078,0.742) (1.121,0.714) (1.163,0.688) (1.205,0.664) (1.247,0.642) (1.289,0.621) (1.331,0.601) (1.373,0.583) (1.415,0.565) (1.457,0.549) (1.499,0.534) (1.541,0.519) (1.583,0.505) (1.625,0.492) (1.667,0.480) (1.709,0.468) (1.751,0.457) (1.793,0.446) (1.835,0.436) (1.877,0.426) (1.919,0.417) (1.961,0.408) (2.003,0.399) (2.045,0.391) (2.087,0.383) (2.129,0.376) (2.171,0.368) (2.213,0.361) (2.255,0.355) (2.297,0.348) (2.339,0.342) (2.381,0.336) (2.423,0.330) (2.465,0.325) (2.507,0.319) (2.549,0.314) (2.591,0.309) (2.633,0.304) (2.675,0.299) (2.717,0.294) (2.759,0.290) (2.802,0.286) (2.844,0.281) (2.886,0.277) (2.928,0.273) (2.970,0.269) (3.012,0.266) (3.054,0.262) (3.096,0.258) (3.138,0.255) (3.180,0.252) (3.222,0.248) (3.264,0.245) (3.306,0.242) (3.348,0.239) (3.390,0.236) (3.432,0.233) (3.474,0.230) (3.516,0.228) (3.558,0.225) (3.600,0.222)} -- (3.6,-2.6) -- cycle;
-\draw[->, gray!60] (0,0) -- (4.0,0) node[right, font=\scriptsize, text=black] {$x_0$};
-\draw[->, gray!60] (0,-2.7) -- (0,3.0) node[above, font=\scriptsize, text=black] {$t$};
-\draw[blue!70!black, thick, dashed] plot[smooth] coordinates {(0.280,2.720) (0.322,2.484) (0.364,2.197) (0.406,1.970) (0.448,1.785) (0.490,1.632) (0.532,1.503) (0.574,1.393) (0.616,1.298) (0.658,1.215) (0.700,1.142) (0.742,1.078) (0.784,1.020) (0.826,0.968) (0.868,0.921) (0.910,0.879) (0.952,0.840) (0.994,0.804) (1.036,0.772) (1.078,0.742) (1.121,0.714) (1.163,0.688) (1.205,0.664) (1.247,0.642) (1.289,0.621) (1.331,0.601) (1.373,0.583) (1.415,0.565) (1.457,0.549) (1.499,0.534) (1.541,0.519) (1.583,0.505) (1.625,0.492) (1.667,0.480) (1.709,0.468) (1.751,0.457) (1.793,0.446) (1.835,0.436) (1.877,0.426) (1.919,0.417) (1.961,0.408) (2.003,0.399) (2.045,0.391) (2.087,0.383) (2.129,0.376) (2.171,0.368) (2.213,0.361) (2.255,0.355) (2.297,0.348) (2.339,0.342) (2.381,0.336) (2.423,0.330) (2.465,0.325) (2.507,0.319) (2.549,0.314) (2.591,0.309) (2.633,0.304) (2.675,0.299) (2.717,0.294) (2.759,0.290) (2.802,0.286) (2.844,0.281) (2.886,0.277) (2.928,0.273) (2.970,0.269) (3.012,0.266) (3.054,0.262) (3.096,0.258) (3.138,0.255) (3.180,0.252) (3.222,0.248) (3.264,0.245) (3.306,0.242) (3.348,0.239) (3.390,0.236) (3.432,0.233) (3.474,0.230) (3.516,0.228) (3.558,0.225) (3.600,0.222)};
-\node[blue!70!black, font=\scriptsize, anchor=west] at (1.25,0.99) {$t = \beta(x_0, 1) = 1/x_0$};
-\foreach \x in {0.7,1.5,2.6} { \draw[thick, black!70, ->] (\x,-2.6) -- (\x,{0.8/\x}); \fill[white, draw=black!70] (\x,{0.8/\x}) circle (1.2pt); }
-\node[font=\scriptsize, align=center] at (2.2,-1.4) {$\mathcal{D} \cap \{y_0 = 1\}$};
-\node[font=\scriptsize, anchor=west, align=left] at (4.4,1.6) {each vertical segment is\\ $(\alpha(p), \beta(p)) \times \{p\}$,\\ $\alpha(p) = -\infty$};
-\end{tikzpicture}
-\end{center}
-
-\textit{(Not from lecture; figure added.)} The flow domain of Example~\ref{ex:finite-escape}, sliced at $y_0 = 1$. Over each initial point $p = (x_0, 1)$ the domain is the vertical half-line $t < 1/x_0$, open at the top. These segments fill the region below the hyperbola $t = 1/x_0$, which is open.
-
-% ============================================================================
-% Lecture 24 (Fri Oct 30, 2026): maximal domains and completeness
-% ============================================================================
-
-\subsection{Maximal Domains and Completeness}\label{sub:maximal-domains}
-
-\textit{Lecture 24. ``What this allows us to do'' --- uniqueness on the common domain, Proposition~\ref{prop:global-uniqueness} --- ``is to define the maximal domain of an integral curve, given an initial condition.''}
-
-\begin{defbox}[Maximal Domain]\deflabel{def:maximal-domain}
-Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. Define
-\[
-\big(\alpha(p), \beta(p)\big) = \bigcup_{I} I ,
-\]
-the union over the domains $I$ of all integral curves of $\mathbf{X}$ starting at $p$:
-an open interval containing $0$, possibly infinite or semi-infinite. It is the \textbf{maximal domain} of integral curves of $\mathbf{X}$ starting at $p$.
-\leeref{Theorem 9.12}
-\end{defbox}
-
-The union is nonempty, since an integral curve starting at $p$ exists (Theorem~\ref{thm:ode-local-manifold}). Each domain $I$ is an open interval containing $0$, ``because it starts at $p$'', so the union is an open interval containing $0$. ``So it's something that is very harmless to take.''
-
-\begin{propbox}[The Maximal Integral Curve]\thmlabel{prop:maximal-curve}
-Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There is an integral curve $\varphi_p : (\alpha(p), \beta(p)) \to M$ of $\mathbf{X}$ starting at $p$, and every integral curve $c : I \to M$ starting at $p$ satisfies $I \subseteq (\alpha(p), \beta(p))$ and $c = \varphi_p|_I$. So $(\alpha(p), \beta(p))$ is the largest possible domain of such a curve, and $\varphi_p$ is the unique maximal integral curve starting at $p$. This proves Theorem~\ref{thm:maximal-flow}(1).
-\leeref{Theorem 9.12}
-\end{propbox}
-
-\begin{proof}
-\textit{(Lecture~24: ``How do you define it? Well, I take a point $t$ here. It's in some $I$, so there is some integral curve defined in the neighbourhood of that. I define it by that, and it doesn't matter which $I$ I chose, by the previous lemma.'' Details filled in.)} For $t \in (\alpha(p), \beta(p))$, choose an integral curve $c : I \to M$ starting at $p$ with $t \in I$, and set $\varphi_p(t) = c(t)$. \emph{Well defined:} if $c' : I' \to M$ is another, then $c$ and $c'$ agree at time $0$, so by Proposition~\ref{prop:global-uniqueness} they agree on $I \cap I' \ni t$. \emph{An integral curve:} near each $t$, $\varphi_p$ equals the smooth curve $c$ on the open interval $I \ni t$, so $\varphi_p$ is smooth and $\dot\varphi_p(t) = \dot c(t) = \mathbf{X}_{c(t)} = \mathbf{X}_{\varphi_p(t)}$, since velocity at $t$ only depends on the curve near $t$. And $\varphi_p(0) = p$. \emph{Maximal:} if $c : I \to M$ starts at $p$, then $I$ is one of the domains in the union, so $I \subseteq (\alpha(p), \beta(p))$, and $c = \varphi_p|_I$ by the definition of $\varphi_p$.
-\end{proof}
-
-``The uniqueness is absolutely fantastic for the theory.'' The maximal domains were computed in the examples: $(-\infty, 1/(x_0y_0))$ for Example~\ref{ex:finite-escape}, $(-\infty, -x_0)$ for Example~\ref{ex:half-line}, and $\mathbb{R}$ for the rotation and Euler fields.
-
 \begin{center}
 \begin{tikzpicture}[scale=0.95]
 \fill[blue!8] (-3,-2) -- (-3,3) -- (0,0) -- (0,-2) -- cycle;
@@ -29144,6 +29181,34 @@ Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There is an integral curve $
 \end{center}
 
 \textit{(Not from lecture; figure added.)} The maximal domains of Example~\ref{ex:half-line}, assembled into the set $\mathcal{D} = \{ (t, x_0) : x_0 < 0,\ t < -x_0 \}$ of Theorem~\ref{thm:maximal-flow}(2), an open set. Compare the flow domain of Example~\ref{ex:finite-escape} above: there $\beta(p) = 1/(x_0y_0)$ blows up as $x_0 \to 0$, here $\beta(x_0) = -x_0$ shrinks to $0$ at the end of $M$. Neither field is complete.
+
+\begin{propbox}[Non-Injective Maximal Integral Curves Are Periodic]\thmlabel{prop:returning-maximal-periodic}
+Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$, and let $\varphi_p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$. If $\varphi_p$ is not injective, say $\varphi_p(t_1) = \varphi_p(t_2)$ with $T = t_2 - t_1 > 0$, then $(\alpha(p), \beta(p)) = \mathbb{R}$ and
+\[
+\varphi_p(t + T) = \varphi_p(t) \qquad \text{for all } t \in \mathbb{R} .
+\]
+\leeref{Problem 9-1}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture: Uribe's argument by email, Corollary~\ref{cor:returning-curve-periodic}, completed by maximality.)} Write $I = (\alpha, \beta) = (\alpha(p), \beta(p))$ and $c = \varphi_p$. By Corollary~\ref{cor:returning-curve-periodic},
+\[
+c(s + T) = c(s) \qquad \text{whenever } s \in I \text{ and } s + T \in I . \tag{$\dagger$}
+\]
+Since $\alpha < t_1 < t_2 < \beta$, we have $T < \beta - \alpha$.
+
+\emph{$\beta = +\infty$.} Suppose $\beta < +\infty$. The intervals $I = (\alpha, \beta)$ and $I + T = (\alpha + T, \beta + T)$ overlap, because $\alpha + T < \beta$, and their union is $(\alpha, \beta + T)$. Define $\tilde c$ on it by
+\[
+\tilde c(t) = c(t) \ \ (t \in I), \qquad \tilde c(t) = c(t - T) \ \ (t \in I + T) .
+\]
+This is well defined: if $t \in I \cap (I + T)$, then $s = t - T$ has $s \in I$ and $s + T = t \in I$, so $c(t - T) = c(t)$ by $(\dagger)$. On the open interval $I$, $\tilde c$ is the integral curve $c$; on the open interval $I + T$, it is the integral curve $t \mapsto c(t - T)$ (Lemma~\ref{lem:translation-rescaling}(1) with $t_0 = -T$). Smoothness and the equation $\dot{\tilde c}(t) = \mathbf{X}_{\tilde c(t)}$ only involve $\tilde c$ near $t$, so $\tilde c$ is an integral curve of $\mathbf{X}$. It starts at $p$, as $0 \in I$ and $\tilde c(0) = c(0) = p$. Its domain $(\alpha, \beta + T)$ is not contained in $(\alpha, \beta)$, which contradicts Proposition~\ref{prop:maximal-curve}. So $\beta = +\infty$.
+
+\emph{$\alpha = -\infty$.} In the same way, if $\alpha > -\infty$, then $\tilde c(t) = c(t)$ on $I$ and $\tilde c(t) = c(t + T)$ on $I - T = (\alpha - T, \beta - T)$ define an integral curve starting at $p$ on $(\alpha - T, \beta)$: on the overlap $I \cap (I - T)$ the two agree by $(\dagger)$ with $s = t$. This again contradicts Proposition~\ref{prop:maximal-curve}.
+
+\emph{Periodicity.} Now $I = \mathbb{R}$, so $(\dagger)$ holds for every $s \in \mathbb{R}$.
+\end{proof}
+
+So a maximal integral curve is either injective or periodic and defined for all time. Lee's Problem~9-1 separates out the constant curves, which are periodic with every period.
 
 \begin{defbox}[Complete Vector Field]\deflabel{def:complete-field}
 $\mathbf{X} \in \mathfrak{X}(M)$ is \textbf{complete} if $(\alpha(p), \beta(p)) = \mathbb{R}$ for every $p \in M$.
@@ -29183,6 +29248,31 @@ Announced for Monday, as consequences of Lemma~\ref{lem:uniform-time}:
 \begin{itemize}[nosep]
 \item every vector field on a compact manifold is complete: ``compactness will assure that there is a uniform time'' (Lee, Corollary~9.17);
 \item every left-invariant vector field on a Lie group is complete, ``because you're going to be able to translate solutions'' (Lee, Theorem~9.18).
+\end{itemize}
+
+\textit{The flow. Lecture 23, the last minutes: ``Let me tell you the bigger picture of what actually is happening, and then we'll see how much of that we get to prove \ldots\ We'll prove a big chunk of this on Friday.''}
+
+\begin{thmbox}[Maximal Integral Curves and the Flow]\thmlabel{thm:maximal-flow}
+Let $M$ be a smooth manifold and $\mathbf{X} \in \mathfrak{X}(M)$.
+\begin{enumerate}[nosep]
+\item For every $p \in M$ there is a unique \emph{maximal} integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi_p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$: ``$\alpha$ or $\beta$ may be $\pm\infty$.''
+\item Let
+\[
+\mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi_p(t).
+\]
+Then $\mathcal{D}$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth.
+\end{enumerate}
+\leeref{Theorem 9.12}
+\end{thmbox}
+
+\begin{proof}[Proof of (1) (Lecture~24); (2) to be filled]
+Part~(1) is Proposition~\ref{prop:maximal-curve} above, proved in Lecture~24. Part~(2) is to be proved. Uribe's indication for (1), in Lecture~23: ``by uniqueness and something called the translation lemma, which is very easy to see,'' there is ``only one way to continue the curve forwards in time and then backwards in time until either you never stop or you run into the edge of the manifold.'' Openness of $\mathcal{D}$ ``is surprisingly long to prove.''
+\end{proof}
+
+$\varphi$ is ``just flowing, like we were doing before'', except that the domain of the time variable depends on the point, as in Example~\ref{ex:finite-escape}. The theorem is the local picture of Theorem~\ref{thm:ode-local}, with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
+\begin{itemize}[nosep]
+\item Rotation (Example~\ref{ex:rotation-flow}): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.
+\item Escape (Example~\ref{ex:finite-escape}): $\alpha \equiv -\infty$, $\beta(x, y) = 1/(xy)$, so $\mathcal{D} = \{ (t, (x, y)) : x, y > 0,\ t\,xy < 1 \}$, open, and $\varphi(t, (x, y)) = \big(x/(1 - xyt),\ y\big)$, smooth on $\mathcal{D}$.
 \end{itemize}
 
 \appendix
@@ -29278,8 +29368,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:parametric-transversality}\ Parametric transversality & Chapter 6, \emph{The Transversality Homotopy Theorem} (Theorem 6.35) \\
 \ref{sec:whitney}\ The Whitney embedding theorem & Chapter 6, \emph{The Whitney Embedding Theorem} (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20--2.22 (bump functions); Proposition 2.28 (exhaustion functions) \\
 \ref{sec:partitions-of-unity}\ Partitions of unity & Chapter 2, \emph{Partitions of Unity} (Lemmas 2.20--2.22, Theorem 2.23); Chapter 1, \emph{Paracompactness} (Theorem 1.15); Proposition A.60; Chapter 2, \emph{Applications of Partitions of Unity} (Proposition 2.28) \\
-\ref{sec:integral-curves}\ Integral curves & Chapter 9, \emph{Integral Curves} (Example 9.1, (9.1), Proposition 9.2, Lemmas 9.3 and 9.4, Proposition 9.6, Example 9.10); Appendix D (Theorem D.1); Problem 9-1 \\
-\ref{sec:flows}\ Flows & Chapter 9, \emph{Flows} (Theorem 9.12); \emph{Complete Vector Fields} (Lemma 9.15, Corollary 9.17, Theorem 9.18) \\
+\ref{sec:integral-curves}\ Integral curves & Chapter 9, \emph{Integral Curves} ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) \\
+\ref{sec:ode-existence}\ Local existence and uniqueness & Chapter 9, \emph{Integral Curves} (Example 9.1, Proposition 9.2); \emph{Flows} (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 \\
+\ref{sec:flows}\ Maximal integral curves and flows & Chapter 9, \emph{Flows} (Example 9.10, Theorem 9.12); \emph{Complete Vector Fields} (Lemma 9.15, Corollary 9.17, Theorem 9.18); Problem 9-1 \\
 \bottomrule
 \end{longtable}
 
@@ -29404,6 +29495,7 @@ Example 9.1 & Ex.~\ref{ex:rotation-flow} \\
 Proposition 9.2 & Thm.~\ref{thm:ode-local-manifold} \\
 Lemma 9.3 & Lem.~\ref{lem:translation-rescaling} \\
 Lemma 9.4 & Lem.~\ref{lem:translation-rescaling} \\
+Proposition 9.6 & Lem.~\ref{lem:integral-curves-diffeo} \\
 Example 9.10 & Ex.~\ref{ex:finite-escape} \\
 Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve} \\
 Lemma 9.15 & Lem.~\ref{lem:uniform-time} \\

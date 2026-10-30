@@ -44,7 +44,7 @@ tags: [differentiable-manifolds, hub]
 - [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Example §60.1: Left-Invariant Fields on GL(n,ℝ)]]
 - [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|Lemma §60.5: The Left-Invariant Extension Is Left-Invariant]]
 - [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|Lemma §61.1: Left-Invariant Fields Related by a Morphism]]
-- [[§67 Integral Curves#^thm-67-4|Theorem §67.4: Local Existence and Uniqueness on a Manifold]]
+- [[§67 Integral Curves#^lem-67-5|Lemma §67.5: Integral Curves Under a Diffeomorphism]]
 
 ## Connections
 - **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), differentials computed by curves ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]) and the [[Local Diffeomorphism Criterion]].
