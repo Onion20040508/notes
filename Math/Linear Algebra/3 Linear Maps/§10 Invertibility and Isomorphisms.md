@@ -334,6 +334,10 @@ tags: [linear-algebra]
 >
 > ![[ladr-3.84-change-of-basis.svg|520]]
 >
+> ![[ladr-3.84-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* One vector $v = (-1, 0)$ (red) and a basis morphing from $e_1, e_2$ to the basis $u_1 = (4, 2)$, $u_2 = (5, 3)$ of 3.83, along $(1-t)e_k + t u_k$. The vector does not move; its coordinates do, ending at $(-1.5, 1) = C^{-1}(-1, 0)$ with $C = \mathcal{M}(I, (u), (e))$, which has columns $(4,2)$, $(5,3)$.
+>
 > With the bases of [[§10 Invertibility and Isomorphisms#^ladr-3-83|3.83]]: $C=\mathcal{M}(I,(u),(e))$ turns $u$-coordinates into standard ones, so for $T$ with standard matrix $B$, the matrix in the basis $(4,2),(5,3)$ is $C^{-1}BC$.
 
 > [!theorem] Theorem 3.86: Matrix of inverse equals inverse of matrix

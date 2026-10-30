@@ -77,6 +77,10 @@ tags: [linear-algebra]
 > Left: $\begin{pmatrix}2&1\\1&2\end{pmatrix}$ is symmetric; its eigenvector lines are perpendicular and the unit circle goes to an ellipse with axes along them. Right: $\begin{pmatrix}2&1\\0&3\end{pmatrix}$ is diagonalizable (distinct eigenvalues) but not self-adjoint; its eigenvector lines $\Span(1,0)$ and $\Span(1,1)$ meet at $45^\circ$, so no orthonormal eigenbasis exists.
 >
 > ![[ladr-7.29-orthogonal-vs-skew.svg|520]]
+>
+> ![[ladr-7.29-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* The sweep of §14 for the two matrices: $v$ runs over half the unit circle, and $Tv$ turns green when it is a multiple of $v$. The symmetric matrix has eigenlines at $45^\circ$ and $135^\circ$, perpendicular; the merely diagonalizable one at $0^\circ$ and $45^\circ$, so no orthonormal eigenbasis exists.
 
 > [!example] Example 7.30: An orthonormal basis of eigenvectors for an operator (p. 245)
 > $\mathcal{M}(T)=\begin{pmatrix}14&-13&8\\-13&14&8\\8&8&-7\end{pmatrix}$ is real symmetric, so $T$ is self-adjoint. The orthonormal basis
@@ -123,3 +127,7 @@ tags: [linear-algebra]
 > Over $\R$ this $T$ has no eigenvalues: normal does not suffice for the real spectral theorem.
 
 ^ladr-7-33
+
+![[ladr-7.33-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Over $\mathbb{R}$ this $T$ has no eigenvector, but its complex eigenvalues still show: $2 \pm 3i = \sqrt{13}\,e^{\pm i\,56.31^\circ}$, so each application of $T$ turns the plane by $56.31^\circ$ and stretches by $\sqrt{13}$. The dots are the iterates $T^k x$ for $x = (1, 0)$; the curve between them turns and stretches continuously (drawn for orientation only), and the view zooms out by $\sqrt{13}$ per step.

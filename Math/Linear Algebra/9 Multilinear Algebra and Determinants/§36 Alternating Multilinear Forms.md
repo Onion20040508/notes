@@ -169,3 +169,7 @@ tags: [linear-algebra]
 > Think of a nonzero $\alpha\in V^{(3)}_{\mathrm{alt}}$ on $\R^3$ as a signed volume of the parallelepiped with edges $v_1,v_2,v_3$. Left: an independent list spans a solid parallelepiped and $\alpha\ne0$. Right: $v_3\in\Span(v_1,v_2)$, the parallelepiped is flattened into a plane, and $\alpha=0$ ([[§36 Alternating Multilinear Forms#^ladr-9-28|9.28]]).
 >
 > ![[ladr-9.39-volume-form.svg|440]]
+>
+> ![[ladr-9.39-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* $v_3$ sinks into the plane $\mathrm{span}(v_1, v_2)$ and rises again (vectors chosen for the picture). The signed volume $\alpha(v_1, v_2, v_3)$, here the height of $v_3$ above the plane, falls to $0$ exactly when $v_3 \in \mathrm{span}(v_1, v_2)$ (flattened, red).

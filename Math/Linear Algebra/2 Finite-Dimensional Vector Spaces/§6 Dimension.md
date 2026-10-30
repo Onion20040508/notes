@@ -152,3 +152,7 @@ tags: [linear-algebra]
 > Two distinct planes $V_1$ (blue) and $V_2$ (red) through $0$ meet in a line. As in the proof: $v_1$ is a basis of $V_1\cap V_2$, extended by $u_1$ to a basis of $V_1$ and by $w_1$ to a basis of $V_2$. Then $v_1,u_1,w_1$ is a basis of $V_1+V_2=\R^3$, and $\dim(V_1+V_2)=2+2-1=3$.
 >
 > ![[ladr-2.43-dim-sum.svg|340]]
+>
+> ![[ladr-2.43-a1.gif|400]]
+>
+> *(Not from the book; animation added, vault only.)* $V_2$ (red) turns about the common line $\mathrm{span}(v_1)$ toward $V_1$ (blue). While they are distinct, $V_1 \cap V_2 = \mathrm{span}(v_1)$ and $\dim(V_1 + V_2) = 2 + 2 - 1 = 3$; when they coincide, $V_1 \cap V_2 = V_1$ and the formula gives $2 + 2 - 2 = 2$.

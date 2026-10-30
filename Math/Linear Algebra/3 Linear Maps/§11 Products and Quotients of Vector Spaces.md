@@ -219,6 +219,10 @@ tags: [linear-algebra]
 > In $\R^2$ with $U$ a line through $0$: $v_1,v_2$ lie on the same translate (blue), and so do $w_1,w_2$ (red). The sums $v_1+w_1$ and $v_2+w_2$ are different vectors, but they lie on the same translate (green), because $(v_1+w_1)-(v_2+w_2)=(v_1-v_2)+(w_1-w_2)\in U$. So the sum of two translates does not depend on the representatives.
 >
 > ![[ladr-3.103-well-defined.svg|400]]
+>
+> ![[ladr-3.103-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* With $U = \mathrm{span}(1, 2)$ (gray), the representatives slide independently along $v + U$ (blue) and $w + U$ (red); their sum (green) moves too, but always on $(v + w) + U$, since $(v + su) + (w + ru) = (v + w) + (s + r)u$. So addition of translates does not depend on the representatives.
 
 > [!definition] Definition 3.104: Quotient map, π
 > For a subspace $U$ of $V$, the *quotient map* $\pi:V\to V/U$ is $\pi(v)=v+U$.

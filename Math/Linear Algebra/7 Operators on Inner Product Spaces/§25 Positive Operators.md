@@ -40,6 +40,10 @@ tags: [linear-algebra]
 
 ^ladr-7-37
 
+![[ladr-7.37-a1.gif|400]]
+
+*(Not from the book; animation added, vault only.)* $R(z_1, z_2, z_3) = (z_2, z_3, 0)$ applied twice to the standard basis, each step drawn continuously: $e_3 \mapsto e_2 \mapsto e_1$, $e_2 \mapsto e_1 \mapsto 0$, $e_1 \mapsto 0$. After two steps only $e_3 \mapsto e_1$ survives, which is $T$: $R^2 = T$.
+
 > [!theorem] Theorem 7.38: Characterization of positive operators
 > For $T\in\Lin(V)$ the following are equivalent:
 > - (a) $T$ is positive;

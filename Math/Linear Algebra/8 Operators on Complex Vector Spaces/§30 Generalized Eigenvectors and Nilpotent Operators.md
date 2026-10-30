@@ -56,6 +56,10 @@ tags: [linear-algebra]
 > For an operator on an $8$-dimensional space whose nilpotent part at $0$ has Jordan blocks of sizes $3,2,1$ (and which is invertible on a complementary $2$-dimensional piece), $\dim\nullsp T^k$ grows $0,3,5,6$ and then stops. The jumps $3,2,1$ (red) count the blocks of size $\ge1,\ge2,\ge3$.
 >
 > ![[ladr-8.3-null-chain.svg|420]]
+>
+> ![[ladr-8.3-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* A smaller instance of the chain, on $\mathbb{R}^3$, with $T(a, b, c) = (b, c, 0)$ of Example 5.57. Applying $T$ again and again flattens the unit cube to a square in $\mathrm{span}(e_1, e_2)$, then to a segment in $\mathrm{span}(e_1)$, then to $0$, while $\mathrm{null}\,T^k$ (red) grows $\{0\}$, line, plane, $\mathbb{R}^3$ and then stops: dimensions $0, 1, 2, 3$, one Jordan block of size $3$.
 
 %% ex:8.3-thm84 %%
 > [!theorem] Theorem 8.4: $V=\nullsp T^{\dim V}\oplus\range T^{\dim V}$

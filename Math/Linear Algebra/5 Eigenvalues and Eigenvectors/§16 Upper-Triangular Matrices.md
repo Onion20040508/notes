@@ -127,6 +127,10 @@ tags: [linear-algebra]
 > For $T$ of [[§16 Upper-Triangular Matrices#^ladr-5-36|5.36]] on $\Span(e_1,e_2)$: $Te_1=2e_1$ and $Te_2=e_1+5e_2$, so $T-5I$ sends $e_1\mapsto-3e_1$ and $e_2\mapsto e_1$. It squeezes the plane $\Span(e_1,e_2)$ into the line $\Span(e_1)$, as in the proof of [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]], so some nonzero vector goes to $0$: $(T-5I)(e_1+3e_2)=-3e_1+3e_1=0$. Thus $(1,3,0)$ is an eigenvector for $5$ (red; compare [[§17 Diagonalizable Operators#^ladr-5-59|5.59]]).
 >
 > ![[ladr-5.41-collapse.svg|440]]
+>
+> ![[ladr-5.41-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* $\lambda$ sweeps from $0$ to $6$: the unit square of $\mathrm{span}(e_1, e_2)$ under $T - \lambda I$, which has columns $(2 - \lambda, 0)$ and $(1, 5 - \lambda)$. Its area $|(2 - \lambda)(5 - \lambda)|$ (right) vanishes exactly at the diagonal entries: at $\lambda = 2$ the square collapses and $e_1 \mapsto 0$; at $\lambda = 5$ it collapses onto $\mathrm{span}(e_1)$ and $e_1 + 3e_2 \mapsto 0$.
 
 ^ladr-5-41-fig
 

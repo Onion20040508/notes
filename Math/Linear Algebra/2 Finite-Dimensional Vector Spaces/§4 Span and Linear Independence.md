@@ -47,6 +47,10 @@ tags: [linear-algebra]
 > Picture for $\F=\R$ (not to scale): the plane is gridded by multiples of $v_1=(2,1,-3)$ and $v_2=(1,-2,4)$. Going $6v_1$ and then $5v_2$ reaches $(17,-4,2)$; the point $(17,-4,5)$ sits $(0,0,3)$ above it, and $(0,0,3)$ is not in the span:
 >
 > ![[ladr-2.5-span-plane.svg|480]]
+>
+> ![[ladr-2.5-a1.gif|440]]
+>
+> *(Not from the book; animation added, vault only.)* The path $6v_1$, then $+5v_2$, reaches $(17,-4,2)$ inside the plane $\mathrm{span}(v_1, v_2)$ (gridded by integer combinations). Then $(17,-4,5)$ appears $(0,0,3)$ above it, and the camera turns until the plane is seen edge-on: the second point is visibly off it.
 
 ^ladr-2-5
 
@@ -246,6 +250,10 @@ tags: [linear-algebra]
 > With $m=3$ independent $u$'s and a spanning list of $n=4$ $w$'s. At each step the new $u_k$ (thick border) is inserted after the earlier $u$'s; the list is now dependent, and [[Linear dependence lemma|2.19]] removes a vector lying in the span of its predecessors (red, crossed). It is always a $w$, never a $u$, so the list keeps length $n$ and keeps spanning. When the $u$'s are used up, $m\le n$.
 >
 > ![[ladr-2.22-exchange.svg|460]]
+>
+> ![[ladr-2.22-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* The exchange process with concrete vectors, chosen for the picture: $w_1, \ldots, w_4$ the standard basis of $\mathbb{R}^4$, $u_1 = (1,1,0,0)$, $u_2 = (0,1,1,0)$, $u_3 = (0,0,1,1)$. Each new $u_k$ goes in after the earlier $u$'s; the first vector lying in the span of its predecessors, computed by rank, is $w_2$, then $w_3$, then $w_4$ (red, crossed). The list keeps length $4$ and keeps spanning; the $u$'s run out first.
 
 > [!remark]- Connections
 > - Computational version: [[§8 Linear Independence#^thm-8-6|235 Thm. §8.6]] (in ℝⁿ, more vectors than entries means dependent) and [[§33 The Dimension of a Vector Space#^thm-33-1|235 Thm. §33.1]] (the special case where the spanning list is a basis); both bounds in [[§33 The Dimension of a Vector Space#^cor-33-4|235 Cor. §33.4]].

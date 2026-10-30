@@ -116,3 +116,7 @@ tags: [linear-algebra]
 > In $\R^2$ with $U$ the $x$-axis (blue), both $W$ (red) and $W'$ (green) are complements: $\R^2=U\oplus W=U\oplus W'$. The same $v$ splits as $u+w$ with $w\in W$ and as $u'+w'$ with $w'\in W'$; the $U$-component depends on which complement was chosen.
 >
 > ![[ladr-2.33-complements.svg|400]]
+>
+> ![[ladr-2.33-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* The complement $W$ turns from $36^\circ$ to $144^\circ$ and back, $v = (2, 1.5)$ fixed. Every line $W \neq U$ gives $\mathbb{R}^2 = U \oplus W$, and the $U$-component $u$ of $v$ (blue) slides along $U$ as $W$ turns; at $W = U$ it would fail.

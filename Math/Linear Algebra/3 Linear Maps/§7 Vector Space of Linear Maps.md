@@ -77,6 +77,10 @@ tags: [linear-algebra]
 > The basis $v_1,v_2$ of $V$ gives the grid of points $c_1v_1+c_2v_2$. Choosing $w_1,w_2$ determines $T$ on all of it: the grid is carried to the grid of $w_1,w_2$, and each point goes to the point with the same coefficients, e.g. $T(2v_1+v_2)=2w_1+w_2$.
 >
 > ![[ladr-3.4-linear-map-lemma.svg|520]]
+>
+> ![[ladr-3.4-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* $w_1, w_2$ are moved around in $W$ (vectors chosen for the picture), and the whole image grid follows: once the images of a basis are chosen, $T$ is determined, e.g. $T(2v_1 + v_2) = 2w_1 + w_2$ (red dot). In one position $w_2$ is parallel to $w_1$, the grid collapses onto a line, and $T$ is not injective, though it is still linear.
 
 > [!definition] Definition 3.5: Addition and scalar multiplication on L(V, W)
 > For $S,T\in\Lin(V,W)$ and $\lambda\in\F$, define $S+T$ and $\lambda T$ in $\Lin(V,W)$ by

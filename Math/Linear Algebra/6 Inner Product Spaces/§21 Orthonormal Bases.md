@@ -175,6 +175,10 @@ tags: [linear-algebra]
 > $f_2=v_2-\langle v_2,e_1\rangle e_1$: remove from $v_2$ its shadow on $e_1$; what remains is perpendicular to $e_1$, and normalizing gives $e_2$.
 >
 > ![[ladr-6.32-gram-schmidt.svg|340]]
+>
+> ![[ladr-6.32-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* The whole procedure on three vectors of $\mathbb{R}^3$, chosen for the picture. $v_1$ is normalized to $e_1$; $v_2$ loses its shadow $\langle v_2, e_1\rangle e_1$ (green) and is normalized to $e_2$; $v_3$ loses its shadow on the plane $\mathrm{span}(e_1, e_2)$ (blue) and is normalized to $e_3$. The camera turns slowly.
 
 > [!example] Example 6.34: An orthonormal basis of P2(R) (p. 202)
 > Gram–Schmidt on $1,x,x^2$ in $\Poly_2(\R)$ with $\langle p,q\rangle=\int_{-1}^1pq$:

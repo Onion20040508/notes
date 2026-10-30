@@ -214,6 +214,10 @@ tags: [linear-algebra]
 > In the decomposition $u=cv+w$ of [[§20 Inner Products and Norms#^ladr-6-13|6.13]] the right triangle has hypotenuse $\|u\|$ and legs $\|cv\|=\frac{|\langle u,v\rangle|}{\|v\|}$ and $\|w\|$. A leg is at most the hypotenuse: that is the inequality. Equality means $w=0$, i.e. $u\in\Span(v)$.
 >
 > ![[ladr-6.14-cauchy-schwarz.svg|360]]
+>
+> ![[ladr-6.14-a1.gif|460]]
+>
+> *(Not from the book; animation added, vault only.)* $u$ (length $1.6$) turns around the origin with $v$ fixed: $u = cv + w$, the leg $\|cv\| = |\langle u, v\rangle|/\|v\|$ (blue) never exceeds the hypotenuse $\|u\|$ (bars), and they are equal exactly when $w = 0$, i.e. $u \in \mathrm{span}(v)$ ($0^\circ$ and $180^\circ$).
 
 > [!example] Example 6.16: Cauchy–Schwarz inequality (p. 189)
 > - (a) For real $x_k,y_k$: $(x_1y_1+\dots+x_ny_n)^2\le(x_1^2+\dots+x_n^2)(y_1^2+\dots+y_n^2)$.
@@ -271,4 +275,8 @@ tags: [linear-algebra]
 > The sides are $u,v$ (each twice) and the diagonals $u+v$, $u-v$: the sum of the squares of the diagonals equals the sum of the squares of the four sides.
 >
 > ![[ladr-6.21-parallelogram.svg|340]]
+>
+> ![[ladr-6.21-a1.gif|460]]
+>
+> *(Not from the book; animation added, vault only.)* Sides $\|u\| = 2$, $\|v\| = 1.2$ fixed, the angle between them varies from $20^\circ$ to $160^\circ$: the diagonals $u + v$ (blue) and $u - v$ (red) trade length, but the sum of their squares stays $2(\|u\|^2 + \|v\|^2) = 10.88$.
 

@@ -106,6 +106,10 @@ tags: [linear-algebra]
 >
 > ![[ladr-5.8-eigenlines.svg|360]]
 >
+> ![[ladr-5.8-a1.gif|500]]
+>
+> *(Not from the book; animation added, vault only.)* A unit vector $v$ sweeps half the circle for three operators; $Tv$ turns green when it is a multiple of $v$, and the eigenline stays drawn. Left, $T$ of this example: eigenlines at $45^\circ$ ($\lambda = 3$) and $135^\circ$ ($\lambda = 1$). Middle, the rotation of Example 5.9: the angle between $v$ and $Tv$ is always $90^\circ$, no real eigenvalue. Right, the shear of Example 5.57: only the $x$-axis is an eigenline.
+>
 > This matrix is symmetric, and the eigenvector lines are perpendicular. That is not a coincidence: see [[Real spectral theorem|7.29]], the real spectral theorem.
 
 > [!example] Example 5.9: Eigenvalues and eigenvectors (p. 135)

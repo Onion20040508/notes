@@ -73,6 +73,10 @@ tags: [linear-algebra]
 > Let $S$ have the diagonal matrix $\operatorname{diag}(8,5,5)$ of [[§17 Diagonalizable Operators#^ladr-5-49|5.49]] in a basis $v_1,v_2,v_3$, so $E(8,S)=\Span(v_1)$ and $E(5,S)=\Span(v_2,v_3)$ ([[§17 Diagonalizable Operators#^ladr-5-53|5.53]]). Let $T$ have matrix $\begin{pmatrix}4&0&0\\0&2&1\\0&1&2\end{pmatrix}$ in the same basis; then $ST=TS$. $T$ maps each eigenspace of $S$ into itself ([[§18 Commuting Operators#^ladr-5-75|5.75]]), and inside the plane $E(5,S)$ it has the eigenvectors $v_2+v_3$ (eigenvalue $3$) and $v_2-v_3$ (eigenvalue $1$). With $v_1$ they form a common eigenbasis (red).
 >
 > ![[ladr-5.76-common-eigenbasis.svg|380]]
+>
+> ![[ladr-5.76-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* $(1-t)I + tT$ applied for $t$ from $0$ to $1$, with $S$ and $T$ of this example: $Te_1 = 4e_1$ stays on $E(8, S)$ (blue), and the unit circle of $E(5, S)$ (green arrows) becomes an ellipse inside that plane. Then $T$ restricted to $E(5, S)$ is diagonalized: eigenvectors $(0,1,1)$ ($\lambda = 3$) and $(0,1,-1)$ ($\lambda = 1$), which together with $e_1$ form a common eigenbasis.
 
 ^ladr-5-76-fig
 

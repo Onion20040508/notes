@@ -99,6 +99,10 @@ tags: [linear-algebra]
 > In $\R^2$ with basis $v_1,v_2$, the level lines of $\varphi_1$ (blue, dashed) are parallel to $v_2$, since $\varphi_1(v_2)=0$; those of $\varphi_2$ (red, dashed) are parallel to $v_1$. Reading off which level lines pass through $v$ gives its coordinates: here $\varphi_1(v)=2$, $\varphi_2(v)=1$, so $v=2v_1+v_2$.
 >
 > ![[ladr-3.114-dual-basis.svg|400]]
+>
+> ![[ladr-3.114-a1.gif|420]]
+>
+> *(Not from the book; animation added, vault only.)* $v$ moves on a loop; through it pass one level line of $\varphi_1$ (blue dashed, parallel to $v_2$) and one of $\varphi_2$ (red dashed, parallel to $v_1$). Their levels are the coordinates of $v$, and $v = \varphi_1(v)v_1 + \varphi_2(v)v_2$ is drawn tip to tail.
 
 > [!theorem] Theorem 3.116: Dual basis is a basis of the dual space
 > If $V$ is finite-dimensional, the dual basis of a basis of $V$ is a basis of $V'$.

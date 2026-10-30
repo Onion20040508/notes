@@ -225,6 +225,10 @@ tags: [linear-algebra]
 > $v-P_Uv$ is perpendicular to $U$, and for any other $u\in U$ the distance $\|v-u\|$ is the hypotenuse of a right triangle with leg $\|v-P_Uv\|$.
 >
 > ![[ladr-6.61-closest-point.svg|380]]
+>
+> ![[ladr-6.61-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* $u$ (green) spirals in the plane $U$ in to $P_U v$ and back out, $v = (1.6, 0.6, 1.6)$ as in the figure. $\|v - u\|$ (red) is the hypotenuse of a right triangle with leg $\|v - P_U v\| = 1.6$, so it is smallest, $1.6$, exactly at $u = P_U v$ (right angle drawn).
 
 > [!example] Example 6.63: Using linear algebra to approximate the sine function (p. 218)
 > Best approximation of $\sin x$ on $[-\pi,\pi]$ by a polynomial of degree $\le5$, in the sense of minimizing $\int_{-\pi}^\pi|\sin x-u(x)|^2dx$.
@@ -236,6 +240,10 @@ tags: [linear-algebra]
 > Compare the Taylor polynomial ([[§90 Taylor and Maclaurin Series#^def-90-2|Calc Def. §90.2]]) $x-\frac{x^3}{6}+\frac{x^5}{120}=x-0.166667\,x^3+0.008333\,x^5$: Taylor is perfect near $0$ and poor near $\pm\pi$, while $u$ spreads the error over the whole interval. On this scale $u$ is indistinguishable from $\sin$; Taylor visibly misses at the ends:
 >
 > ![[ladr-6.63-sine.svg|460]]
+>
+> ![[ladr-6.63-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* Degree $1$, $3$, $5$ (even degrees add nothing, $\sin$ being odd): the best approximation in $L^2[-\pi, \pi]$ (blue, computed from the normal equations; at degree $5$ it is the $u$ above) against the Taylor polynomial (red dashed). Right, the error curves: Taylor is exact near $0$ and far off at $\pm\pi$; the best approximation spreads a small error over the whole interval. At degree $5$ the maximal errors are $0.016$ and $0.52$.
 
 ^ladr-6-63
 
@@ -317,6 +325,10 @@ tags: [linear-algebra]
 > $T$ maps $(\nullsp T)^\perp$ (blue, left) bijectively onto $\range T$ (blue, right) ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-67|6.67]]). $T^\dagger$ first projects $b$ to $TT^\dagger b=P_{\range T}b$, the point of $\range T$ closest to $b$, then inverts. The least-squares solutions form the line $T^\dagger b+\nullsp T$ (red dashed), parallel to $\nullsp T$; $T^\dagger b$ is its point in $(\nullsp T)^\perp$, the one closest to $0$ ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-70|6.70]](b)).
 >
 > ![[ladr-6.70-pseudoinverse.svg|480]]
+>
+> ![[ladr-6.70-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* A rank-one $T$ on $\mathbb{R}^2$, chosen for the picture: $Tv = \langle v, u\rangle x$ with unit $u$ at $70^\circ$ and $x$ at $15^\circ$. As $b$ moves around a circle, $P_{\mathrm{range}\,T}b$ (blue, right) is its shadow on $\mathrm{range}\,T$, the least-squares solutions form the line $T^\dagger b + \mathrm{null}\,T$ (red dashed, left), and $T^\dagger b = \langle b, x\rangle u$ is its point in $(\mathrm{null}\,T)^\perp$, the one of least norm.
 
 > [!example] Example 6.71: Pseudoinverse of a linear map from F⁴ to F³ (p. 223)
 > $T(a,b,c,d)=(a+b+c,\ 2c+d,\ 0)$ from $\F^4$ to $\F^3$ is neither injective nor surjective.

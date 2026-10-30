@@ -71,6 +71,10 @@ tags: [linear-algebra]
 
 ^ladr-7-52
 
+![[ladr-7.52-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* $\theta$ runs once around: over $\mathbb{R}$ the rotation turns the unit square without changing lengths; over $\mathbb{C}$ its eigenvalues $e^{i\theta}$ and $e^{-i\theta}$ move on the unit circle as mirror images, real only at $\theta = 0^\circ$ and $180^\circ$.
+
 > [!theorem] Theorem 7.53: Characterization of unitary operators
 > Let $S\in\Lin(V)$ and $e_1,\dots,e_n$ an orthonormal basis. Equivalent:
 > - (a) $S$ is unitary;

@@ -56,6 +56,10 @@ tags: [linear-algebra]
 > (blank entries $0$): blocks of sizes $3,2,1$, one per chain:
 >
 > ![[ladr-8.43-chains.svg|480]]
+>
+> ![[ladr-8.43-a1.gif|460]]
+>
+> *(Not from the book; animation added, vault only.)* $T(z_1, \ldots, z_6) = (0, z_1, z_2, 0, z_4, 0)$ applied three times to $z = (3, 1, 4, 1, 5, 9)$ (numbers chosen for the picture): inside each block the entries shift one slot along the chain, and the entry at the end of a chain drops out (red). After one step $(0,3,1,0,1,0)$, after two $(0,0,3,0,0,0)$, after three $0$: chains of length $3, 2, 1$, and $T^3 = 0$.
 
 ^ladr-8-43
 

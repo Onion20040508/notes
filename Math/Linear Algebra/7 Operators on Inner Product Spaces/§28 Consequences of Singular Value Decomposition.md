@@ -120,6 +120,10 @@ tags: [linear-algebra]
 
 *Uses:* [[Singular value decomposition|7.70]], [[§21 Orthonormal Bases#^ladr-6-26|6.26]], [[Length of linearly independent list ≤ length of spanning list|2.22]]
 
+![[ladr-7.92-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The theorem on a $64 \times 64$ matrix $T$ made from a synthetic picture (a disc, a square, a diagonal stripe, a gradient), shown as an image. $T_k$ keeps the first $k$ terms of an SVD, $k = 1, \ldots, 20$; the error $\|T - T_k\| = s_{k+1}$ is the next singular value (red, log scale), the least possible for rank $\leq k$.
+
 > [!remark] Remark: Eckart–Young
 > This is the operator-norm Eckart–Young theorem: to compress a matrix to rank $k$, keep the top $k$ singular triples. Basis of PCA and image compression.
 
@@ -148,6 +152,10 @@ tags: [linear-algebra]
 > $\sqrt{T^*T}$ stretches along the orthogonal axes $e_1,e_2$ (by $s_1,s_2$), then the isometry $S$ rotates $e_k$ to $f_k$. Same $T$ as in the SVD figure.
 >
 > ![[ladr-7.93-polar.svg|560]]
+>
+> ![[ladr-7.93-a1.gif|440]]
+>
+> *(Not from the book; animation added, vault only.)* The same $T$ as $S\sqrt{T^*T}$ in two moves: the positive operator $\sqrt{T^*T}$ stretches along the orthogonal axes $e_1$, $e_2$ by $2$ and $0.8$ without turning them, then the isometry $S$ turns by $40^\circ$, carrying $e_k$ to $f_k$. The result is the dashed ellipse, $T$ applied to the circle.
 
 > [!definition] Definition 7.95: Ball, B
 > The *unit ball* $B=\{v\in V:\|v\|<1\}$.
@@ -245,6 +253,10 @@ tags: [linear-algebra]
 > Same $T$ as in the SVD figure after [[Singular value decomposition|7.70]] ($s_1=2$, $s_2=0.8$). The blue box $P(e_1,e_2)$ goes to the box $P(s_1f_1,s_2f_2)$, again with a right angle. The orange unit square, not aligned with $e_1,e_2$, goes to a slanted parallelogram. Both areas are multiplied by $s_1s_2=1.6$ ([[§28 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]]).
 >
 > ![[ladr-7.107-boxes.svg|440]]
+>
+> ![[ladr-7.107-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* A unit square turned by $\varphi$ from $0^\circ$ to $90^\circ$ and back (dashed: $e_1$ at $30^\circ$, $e_2$), with its image under $T$. The image is a parallelogram whose corner angle changes; it is a box (blue, right angle) only at $\varphi = 30^\circ$, when the square is aligned with $e_1, e_2$. The area is multiplied by $s_1 s_2 = 1.6$ every time.
 
 > [!definition] Definition 7.108: Volume of a box
 > ($\F=\R$) $\operatorname{volume}\big(u+P(r_1e_1,\dots,r_ne_n)\big)=r_1\cdots r_n$.

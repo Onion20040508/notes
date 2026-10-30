@@ -105,6 +105,10 @@ tags: [linear-algebra]
 > The orthonormal frame $e_1,e_2$ in the domain goes to the axes $s_1f_1,s_2f_2$ of an ellipse in the target ([[§28 Consequences of Singular Value Decomposition#^ladr-7-99|7.99]]). Here $s_1=2$, $s_2=0.8$, and the two frames are rotated differently.
 >
 > ![[ladr-7.70-svd.svg|520]]
+>
+> ![[ladr-7.70-a1.gif|440]]
+>
+> *(Not from the book; animation added, vault only.)* $T = U\Sigma V^*$ in three moves on the circle and a grid, with the frames of the figure: $V^*$ turns $e_1$ ($30^\circ$) and $e_2$ onto the axes, $\Sigma$ stretches by $s_1 = 2$ and $s_2 = 0.8$, and $U$ turns the ellipse so that $Te_1 = s_1 f_1$ ($70^\circ$) and $Te_2 = s_2 f_2$. Dashed: the final ellipse.
 
 > [!definition] Definition 7.74: Diagonal matrix
 > An $M$-by-$N$ matrix is *diagonal* if all entries are $0$ except possibly $A_{k,k}$, $k=1,\dots,\min\{M,N\}$.

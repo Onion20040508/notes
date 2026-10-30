@@ -182,6 +182,10 @@ tags: [linear-algebra]
 > The plane of values of $q$: $q(0)=1$ lies on the unit circle. Going from $0$ to $t\beta$, the term $a_kt^k\beta^k=-t^k$ pulls the value straight toward $0$, to $1-t^k$ (blue), and the higher terms move it by at most $t^{k+1}c$ (red disk). Once $tc<1$ the disk lies inside the unit circle, so $|q(t\beta)|<1$, contradicting the minimum $1$.
 >
 > ![[ladr-4.12-fta-step.svg|320]]
+>
+> ![[ladr-4.12-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* Illustrated with $q(z) = 1 - z^2 + \frac{1+i}{2}z^3$, chosen for the picture ($k = 2$, $a_2\beta^2 = -1$ for $\beta = 1$). First $t$ grows: $-t^2$ pulls the value straight toward $0$ (blue), and the cubic term moves it by at most $t^3|a_3|$ (red disk), so $|q(t\beta)| < 1$. Then $|z| = 0.6$ is fixed and the direction turns once around: the value circles $1$ twice and drops inside the unit circle only for directions near $0^\circ$ and $180^\circ$, where $\beta^2 = 1$. The proof only needs one such direction.
 
 > [!remark]- Connections
 > - In 235: stated without proof, in factored form, in [[§41 The Characteristic Equation#^rem-41-1|235 Remark §33.1]] (an n × n matrix has n complex eigenvalues, counting multiplicities).

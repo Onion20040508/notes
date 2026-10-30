@@ -143,6 +143,10 @@ tags: [linear-algebra]
 
 ^ladr-5-59
 
+![[ladr-5.59-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The example as an iteration: $T^k(0, 0, 1)$ for $k = 0, \ldots, 16$. Left, its eigen-coordinates divided by $8^k$: $\tfrac16(\tfrac14)^k$, $-\tfrac13(\tfrac58)^k$, $\tfrac16$; the first two die out. Right, the coordinates of the unit vector $T^k x/\|T^k x\|$, which settle on $(1,6,6)/\sqrt{73}$, the eigenvector for the largest eigenvalue $8$ (power iteration).
+
 > [!remark]- Connections
 > - Computational version: [[§42 Diagonalization#^ex-42-1|235 Ex. §42.1]] ($A^k=PD^kP^{-1}$ for a $2\times2$ matrix); the Fibonacci formula by the same idea, [[§37 Solution Sets of Linear Difference Equations#^ex-37-2|235 Ex. §37.2]].
 
@@ -239,4 +243,8 @@ tags: [linear-algebra]
 > For $A=\begin{pmatrix}1&2&0\\-2&1&0.5\\0.5&0.5&-4\end{pmatrix}$ the disks are centered at $1$ (radius $2$), $1$ (radius $2.5$), and $-4$ (radius $1$). The eigenvalues are approximately $1.01\pm1.97i$ and $-4.03$, each inside a disk:
 >
 > ![[ladr-5.67-gershgorin.svg|420]]
+>
+> ![[ladr-5.67-a1.gif|440]]
+>
+> *(Not from the book; animation added, vault only.)* $A_t = D + t(A - D)$ for $t$ from $0$ to $1$, $D$ the diagonal part of this $A$: the disks grow from the points $1, 1, -4$ to radii $2, 2.5, 1$, while the eigenvalues (red, with their tracks) leave the diagonal entries; at every $t$ each lies in the union of the disks of $A_t$.
 

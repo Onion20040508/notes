@@ -255,6 +255,10 @@ tags: [linear-algebra]
 > In $\R^2$, replacing $v_1$ by $v_1+cv_2$ slides the top edge of the parallelogram along $v_2$. The base $v_2$ and the height stay the same, so the area $|\det\begin{pmatrix}v_1&v_2\end{pmatrix}|$ does not change: this is (d).
 >
 > ![[ladr-9.57-shear.svg|400]]
+>
+> ![[ladr-9.57-a1.gif|440]]
+>
+> *(Not from the book; animation added, vault only.)* $c$ runs from $0$ to $1.2$, down to $-0.8$, and back: $v_1 + cv_2$ (orange) slides the top edge along the dotted line, base $v_2$ and height stay, and the area $|\det(v_1 + cv_2,\ v_2)| = 2.40$ never changes.
 
 > [!theorem] Theorem 9.58: Every unitary operator has determinant with absolute value 1
 > If $S$ is unitary, then $|\det S|=1$.
@@ -320,6 +324,10 @@ tags: [linear-algebra]
 > The unit square (dashed) spanned by $e_1,e_2$ goes to the parallelogram spanned by $Te_1,Te_2$, whose area is $|\det T|$. Left: $\det T=2>0$, orientation kept ($Te_1$ to $Te_2$ still counterclockwise). Right: $\det T=-2<0$, same area, orientation reversed.
 >
 > ![[ladr-9.61-signed-area.svg|520]]
+>
+> ![[ladr-9.61-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* The columns move from the left matrix of the figure to the right one along a straight path, $T_t = (1-t)T_0 + tT_1$. The parallelogram of $Te_1$, $Te_2$ thins out; at $t = \tfrac12$ it is a segment ($\det = 0$, not invertible), and after that it opens with the opposite orientation (red), ending at $\det T = -2$. Right: $\det T_t$.
 
 > [!theorem] Theorem 9.62: If F = C, then characteristic polynomial of T equals det(zI − T)
 > If $\F=\C$, then $\det(zI-T)=(z-\lambda_1)^{d_1}\cdots(z-\lambda_m)^{d_m}$: the characteristic polynomial of [[§31 Generalized Eigenspace Decomposition#^ladr-8-26|8.26]].
@@ -395,6 +403,10 @@ tags: [linear-algebra]
 > For two columns: $R_{1,1}=\|v_1\|$ is the base and $R_{2,2}$, the distance from $v_2$ to $\Span(v_1)$, is the height, so $|\det A|=R_{1,1}R_{2,2}$. Since $R_{2,2}\le\|v_2\|$, the parallelogram has area at most that of the dashed box with sides $\|v_1\|,\|v_2\|$.
 >
 > ![[ladr-9.66-hadamard.svg|320]]
+>
+> ![[ladr-9.66-a1.gif|440]]
+>
+> *(Not from the book; animation added, vault only.)* $\|v_1\| = 2.2$ and $\|v_2\| = 1.58$ fixed (the vectors of the figure), the angle between them from $20^\circ$ to $160^\circ$: the parallelogram's area $|\det|$ stays below the dashed box $\|v_1\|\|v_2\| = 3.479$ and reaches it only at $90^\circ$ (red).
 
 > [!theorem] Theorem 9.67: Determinant of Vandermonde matrix
 > For $n>1$ and $\beta_1,\dots,\beta_n\in\F$,

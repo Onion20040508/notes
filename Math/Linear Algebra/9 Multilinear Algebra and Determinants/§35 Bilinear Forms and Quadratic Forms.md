@@ -293,4 +293,8 @@ tags: [linear-algebra]
 > Left: $q(x,y)=3x^2+2xy+3y^2$, i.e. matrix $\begin{pmatrix}3&1\\1&3\end{pmatrix}$ with eigenvalues $4,2$ on $\tfrac1{\sqrt2}(1,1)$, $\tfrac1{\sqrt2}(-1,1)$. In those orthonormal coordinates $q=4u^2+2w^2$, and the level set $q=1$ is an ellipse with its axes on the eigenlines. Right: $q(x,y)=2xy=u^2-w^2$ (indefinite), whose level sets are hyperbolas with asymptotes $u=\pm w$, i.e. the coordinate axes.
 >
 > ![[ladr-9.23-quadratic.svg|520]]
+>
+> ![[ladr-9.23-a1.gif|480]]
+>
+> *(Not from the book; animation added, vault only.)* The coordinate axes $u, w$ turn from $0^\circ$ to $90^\circ$ and back over the level sets of the figure; $q$ in the turned coordinates is shown below each panel. The cross-term coefficient is $2\cos 2\varphi$ in both cases, so it vanishes exactly at $45^\circ$, on the eigenlines (red): $q = 4u^2 + 2w^2$ on the left, $q = u^2 - w^2$ on the right.
 

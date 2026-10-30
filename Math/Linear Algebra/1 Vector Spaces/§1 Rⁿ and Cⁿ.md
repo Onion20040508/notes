@@ -220,3 +220,7 @@ tags: [linear-algebra]
 > In $\R^2$ every $\lambda x$ lies on the line through $0$ and $x$ (dashed): $2x$ is twice as long as $x$, $\tfrac12x$ half as long, and $-x=(-1)x$ (red, [[§1 Rⁿ and Cⁿ#^ladr-1-17|1.17]]) has the same length as $x$ and points the opposite way.
 >
 > ![[ladr-1.18-scalar-multiples.svg|380]]
+>
+> ![[ladr-1.18-a1.gif|400]]
+>
+> *(Not from the book; animation added, vault only.)* $\lambda$ runs from $2$ down to $-2$ and back: $\lambda x$ stays on the dashed line through $0$ and $x$, shrinks to $0$ at $\lambda = 0$, and points the other way (red) for $\lambda < 0$.
