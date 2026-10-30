@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C6 Interactions of Quantum Fields
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· C9 Discrete Symmetries and Majorana Fields]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (33), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (52), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (103), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (106), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (9)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (33), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (52), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (105), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (108), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (9)
 **Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (8)
 
 ## How C6 relates to Yu
@@ -33,7 +33,8 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 | §C6.15 | §6.5.2–§6.5.3, (6.314)–(6.366) | Møller velocity; Källén function | §4.5, (4.80)–(4.85) |
 | §C6.16 | §6.5.4, (6.367)–(6.378); §10.6, (10.259)–(10.275) | box route to $\Gamma_f$; width from $\operatorname{Im}\Pi$ | §4.5, (4.62)–(4.64), (4.86) |
 | §C6.17 | §10.3, (10.107), (10.121); §10.5.2–§10.5.3, (10.224)–(10.235) | LSZ; amputated diagrams with $\sqrt Z$ | §4.5, (4.58); §4.6, p. 108 |
-| §CA.7 (mathematics) | (6.167)–(6.168); (7.114)–(7.125); (10.194)–(10.196) | | §4.3–§4.4 |
+| §CA.7 (mathematics) | (6.167)–(6.168); (7.114)–(7.125) | | §4.3–§4.4 |
+| §CA.8 (mathematics) | §10.5.1, (10.192)–(10.196) | | §4.4, p. 98 |
 
 ## Sections
 - [[§C6.1 From Free to Interacting Fields]] — 513 notes Ch. 13 §13.1; PS §4.1

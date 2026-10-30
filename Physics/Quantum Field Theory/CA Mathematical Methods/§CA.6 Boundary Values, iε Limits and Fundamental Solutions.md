@@ -7,7 +7,7 @@ section: CA.6
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions]] · ↑ [[· CA Mathematical Methods]] · [[§CA.7 Pairings, Graph Symmetries and the Exponential Formula]] →
+← [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions]] · ↑ [[· CA Mathematical Methods]] · [[§CA.7 Pairings, Diagrams and Symmetry Factors]] →
 
 *Sources: the user's PHY 513 notes, App. A §A.4 (limits), §A.5 (the Sokhotski–Plemelj formula, eq. (SP); the half-residue lemma; Caution "What the formula does and does not say"; worked example (iii)), Ch. 5 §§5.4, 5.7, Ch. 6 §§6.1–6.3, §6.9 · PHY 513, Problem Set 4, eq. (11) · standard results stated here, where marked: Hörmander, The Analysis of Linear Partial Differential Operators I, §§3.1, 3.3, 4.2, 7.3; Gel'fand & Shilov, Generalized Functions, Vol. 1, Ch. I and III; Streater & Wightman, PCT, Spin and Statistics, and All That, Ch. 2.*
 
