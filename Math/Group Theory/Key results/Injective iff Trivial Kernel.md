@@ -21,7 +21,7 @@ tags: [group-theory, hub]
 - [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
 - [[§25 Actions#^prop-25-4|Proposition §25.4: Faithful Actions Embed G in S_X]]
 - [[§43 Simple Groups#^prop-43-3|Proposition §43.3: Homomorphisms out of a Simple Group]]
-- [[§55 Internal and External Direct Products#^thm-55-1|Theorem §55.1: Internal Direct Products Are Direct Products]]
+- [[§57 Internal and External Direct Products#^thm-57-1|Theorem §57.1: Internal Direct Products Are Direct Products]]
 
 ## Connections
 - **Used for.** Proving isomorphisms, such as ⟨g⟩ ≅ ℤ/Nℤ ([[§17 Cyclic Groups#^prop-17-3|§17.3]]) and the [[Classification of Cyclic Groups]]. Also faithful actions embed G in S_X ([[§25 Actions#^prop-25-4|§25.4]]), which gives [[Cayley's Theorem]], and homomorphisms out of a simple group are injective or trivial ([[§43 Simple Groups#^prop-43-3|§43.3]]).

@@ -2,32 +2,32 @@
 type: section
 subject: "[[Group Theory]]"
 chapter: 9
-section: 54
+section: 56
 tags: [group-theory, math493]
 ---
-← [[§53 The Sylow Theorems]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§55 Internal and External Direct Products]] →
+← [[§55 The Sylow Theorems]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§57 Internal and External Direct Products]] →
 
 *Source: Lecture and slides (Fri Oct 23). Reference: not covered in the Pinter chapters used so far.*
 
 > [!remark] Remark: The Game
-> Which numbers $n \leq 100$ are the order of a simple group? The slides list $n = 2, \ldots, 100$ and mark each $n$ with the test that rules it out: *prime*; $\clubsuit$, a prime power (Proposition [[§54 Simple Groups of Small Order#^prop-54-1|§54.1]]); $\diamondsuit p$, a prime $p$ for which $n_p = 1$ is forced (Corollary [[§54 Simple Groups of Small Order#^cor-54-3|§54.3]]); $\blacksquare p$, a prime $p$ for which $|G|$ does not divide $n_p!$ (Proposition [[§54 Simple Groups of Small Order#^prop-54-4|§54.4]]). After these tests only $30$, $56$, $60$ and $90$ survive. The orders $30$, $56$ and $90$ are ruled out on the homework, and $60$ is the order of $A_5$.
+> Which numbers $n \leq 100$ are the order of a simple group? The slides list $n = 2, \ldots, 100$ and mark each $n$ with the test that rules it out: *prime*; $\clubsuit$, a prime power (Proposition [[§56 Simple Groups of Small Order#^prop-56-1|§56.1]]); $\diamondsuit p$, a prime $p$ for which $n_p = 1$ is forced (Corollary [[§56 Simple Groups of Small Order#^cor-56-3|§56.3]]); $\blacksquare p$, a prime $p$ for which $|G|$ does not divide $n_p!$ (Proposition [[§56 Simple Groups of Small Order#^prop-56-4|§56.4]]). After these tests only $30$, $56$, $60$ and $90$ survive. The orders $30$, $56$ and $90$ are ruled out on the homework, and $60$ is the order of $A_5$.
 >
 > *Source: lecture 10/23*
 
-^rem-54-1
+^rem-56-1
 
 ![[m493-53-1.svg]]
 
 *(Not from lecture; figure added.)* The slides' table, recomputed: each $n \leq 100$ is coloured by the first test that rules it out, in the order prime, $\clubsuit$, $\diamondsuit p$, $\blacksquare p$. Exactly $30$, $56$, $60$ and $90$ survive. ($18$ is $\diamondsuit 3$, as corrected in lecture.)
 
-> [!theorem] Proposition §54.1: Primes and Prime Powers
+> [!theorem] Proposition §56.1: Primes and Prime Powers
 > 1. The trivial group is not simple.
 > 2. If $|G| = p$ is prime, then $G \cong \mathbb{Z}/p\mathbb{Z}$ is simple.
 > 3. If $|G| = p^k$ with $p$ prime and $k \geq 2$, then $G$ is not simple.
 >
 > *Source: lecture 10/23*
 
-^prop-54-1
+^prop-56-1
 
 > [!proof]+ Proof
 > *Idea:* for (3), the center is a nontrivial normal subgroup; it is proper unless $G$ is abelian, and abelian simple groups have prime order.
@@ -38,16 +38,16 @@ tags: [group-theory, math493]
 >
 > **(3)** The center $Z(G) = \{z \in G : zg = gz \text{ for all } g \in G\}$ (Definition [[§35 The Center#^def-35-2|§35.2]]) is nontrivial by Theorem [[§35 The Center#^thm-35-3|§35.3]], and it is normal in $G$: for $z \in Z(G)$ and $g \in G$, $gzg^{-1} = z$. If $Z(G) \neq G$, then $Z(G)$ is a proper nontrivial normal subgroup, and $G$ is not simple. If $Z(G) = G$, then $G$ is abelian, and an abelian simple group has prime order (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]); but $|G| = p^k$ with $k \geq 2$ is not prime. Either way $G$ is not simple.
 
-^pf-54-1
+^pf-56-1
 
 *Uses:* [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]], [[§43 Simple Groups#^thm-43-1|§43.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§35 The Center#^thm-35-3|§35.3]]
 
 > [!remark] Remark: Notation for This Section
-> Throughout, $G$ is finite, $p$ is a prime dividing $|G|$, and $|G| = p^k m$ with $p \nmid m$. Write $n_p$ for the number of Sylow $p$-subgroups of $G$. The conjugate $gPg^{-1}$ of a Sylow $p$-subgroup $P$ is again a Sylow $p$-subgroup, since conjugation by $g$ is an isomorphism (Proposition [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]]); so $G$ acts on the set of Sylow $p$-subgroups by conjugation, $g \cdot P = gPg^{-1}$, as in the proof of Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]].
+> Throughout, $G$ is finite, $p$ is a prime dividing $|G|$, and $|G| = p^k m$ with $p \nmid m$. Write $n_p$ for the number of Sylow $p$-subgroups of $G$. The conjugate $gPg^{-1}$ of a Sylow $p$-subgroup $P$ is again a Sylow $p$-subgroup, since conjugation by $g$ is an isomorphism (Proposition [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]]); so $G$ acts on the set of Sylow $p$-subgroups by conjugation, $g \cdot P = gPg^{-1}$, as in the proof of Theorem [[§55 The Sylow Theorems#^thm-55-9|§55.9]].
 
-^rem-54-2
+^rem-56-2
 
-> [!definition] Definition §54.1: Normalizer
+> [!definition] Definition §56.1: Normalizer
 > Let $H \leq G$. The **normalizer** of $H$ in $G$ is
 >
 > $$
@@ -58,30 +58,30 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 10/23*
 
-^def-54-1
+^def-56-1
 
 > [!remark] Remark: Basic Properties of the Normalizer
 > $N(H)$ is a subgroup of $G$, since stabilizers are subgroups (Proposition [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]]); it contains $H$, since $hHh^{-1} = H$ for $h \in H$; and $H \trianglelefteq N(H)$, directly from the definition. $H$ is normal in $G$ (Definition [[§38 Normal Subgroups#^def-38-1|§38.1]]) if and only if $N(H) = G$.
 
-^rem-54-3
+^rem-56-3
 
-> [!theorem] Proposition §54.2: $n_p$ and the Normalizer
+> [!theorem] Proposition §56.2: $n_p$ and the Normalizer
 > Let $P$ be a Sylow $p$-subgroup of $G$. Then $n_p = [G : N(P)]$, and
 >
 > $$
 > m = [N(P) : P] \cdot n_p.
 > $$
 >
-> In particular $n_p$ divides $m$ (Corollary [[§53 The Sylow Theorems#^cor-53-10|§53.10]]). Together with the Third Sylow Theorem (Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]]), $n_p \mid m$ and $n_p \equiv 1 \pmod p$.
+> In particular $n_p$ divides $m$ (Corollary [[§55 The Sylow Theorems#^cor-55-10|§55.10]]). Together with the Third Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-9|§55.9]]), $n_p \mid m$ and $n_p \equiv 1 \pmod p$.
 >
 > *Source: lecture 10/23*
 
-^prop-54-2
+^prop-56-2
 
 > [!proof]+ Proof
 > *Idea:* orbit–stabilizer for the single conjugation orbit, whose stabilizer is $N(P) \supseteq P$.
 >
-> *(Board 10/23.)* Let $G$ act on the set of Sylow $p$-subgroups by conjugation. By the Second Sylow Theorem (Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]]), any two Sylow $p$-subgroups are conjugate, so there is only one orbit, of size $n_p$. The stabilizer of $P$ is $\operatorname{Stab}(P) = \{g \in G : gPg^{-1} = P\} = N(P)$ (Definition [[§54 Simple Groups of Small Order#^def-54-1|§54.1]]). By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]), $n_p = [G : N(P)]$, and using Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]) for $P \leq N(P)$,
+> *(Board 10/23.)* Let $G$ act on the set of Sylow $p$-subgroups by conjugation. By the Second Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-6|§55.6]]), any two Sylow $p$-subgroups are conjugate, so there is only one orbit, of size $n_p$. The stabilizer of $P$ is $\operatorname{Stab}(P) = \{g \in G : gPg^{-1} = P\} = N(P)$ (Definition [[§56 Simple Groups of Small Order#^def-56-1|§56.1]]). By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]), $n_p = [G : N(P)]$, and using Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]) for $P \leq N(P)$,
 >
 > $$
 > p^k m = |G| = |N(P)| \cdot n_p = |P| \cdot [N(P) : P] \cdot n_p = p^k \, [N(P) : P] \cdot n_p.
@@ -89,48 +89,48 @@ tags: [group-theory, math493]
 >
 > Cancelling $p^k$ gives $m = [N(P) : P] \cdot n_p$.
 
-^pf-54-2
+^pf-56-2
 
-*Uses:* [[§53 The Sylow Theorems#^thm-53-6|§53.6]], [[§54 Simple Groups of Small Order#^def-54-1|Def. §54.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
+*Uses:* [[§55 The Sylow Theorems#^thm-55-6|§55.6]], [[§56 Simple Groups of Small Order#^def-56-1|Def. §56.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
 > [!proof]+ Alternative proof that $n_p \mid m$ (number theory)
-> *(Board 10/23.)* From $n_p = [G : N(P)]$, $n_p$ divides $|G| = p^k m$. By the Third Sylow Theorem (Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]]) $n_p \equiv 1 \pmod p$, so $p \nmid n_p$; hence no factor of $p$ occurs in $n_p$, and $n_p$ divides $m$.
+> *(Board 10/23.)* From $n_p = [G : N(P)]$, $n_p$ divides $|G| = p^k m$. By the Third Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-9|§55.9]]) $n_p \equiv 1 \pmod p$, so $p \nmid n_p$; hence no factor of $p$ occurs in $n_p$, and $n_p$ divides $m$.
 
-^pf-54-2-2
+^pf-56-2-2
 
-*Uses:* [[§53 The Sylow Theorems#^thm-53-9|§53.9]]
+*Uses:* [[§55 The Sylow Theorems#^thm-55-9|§55.9]]
 
 ![[m493-53-2.svg]]
 
-*(Not from lecture; figure added.)* Left: the chain $\{e\} \leq P \leq N(P) \leq G$ with its indices; the index $m$ of $P$ in $G$ splits as $[N(P) : P] \cdot n_p$. Right: $G$ permutes the Sylow $p$-subgroups $P_1, \ldots, P_{n_p}$ transitively by conjugation (Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]]); the stabilizer of $P_1$ is $N(P_1)$, so the orbit has $[G : N(P_1)]$ points.
+*(Not from lecture; figure added.)* Left: the chain $\{e\} \leq P \leq N(P) \leq G$ with its indices; the index $m$ of $P$ in $G$ splits as $[N(P) : P] \cdot n_p$. Right: $G$ permutes the Sylow $p$-subgroups $P_1, \ldots, P_{n_p}$ transitively by conjugation (Theorem [[§55 The Sylow Theorems#^thm-55-6|§55.6]]); the stabilizer of $P_1$ is $N(P_1)$, so the orbit has $[G : N(P_1)]$ points.
 
-> [!theorem] Corollary §54.3: A Unique Sylow Subgroup Rules Out Simplicity
+> [!theorem] Corollary §56.3: A Unique Sylow Subgroup Rules Out Simplicity
 > If $n_p = 1$, then the Sylow $p$-subgroup $P$ is normal in $G$. If moreover $|G|$ is not a power of $p$, then $\{e\} \neq P \neq G$, so $G$ is not simple.
 >
 > *Source: lecture 10/23*
 
-^cor-54-3
+^cor-56-3
 
 > [!proof]+ Proof
-> $P$ is normal by Corollary [[§53 The Sylow Theorems#^cor-53-7|§53.7]](2): $gPg^{-1}$ is a Sylow $p$-subgroup for every $g \in G$, and $P$ is the only one, so $gPg^{-1} = P$. Since $p$ divides $|G|$, $|P| = p^k > 1$; if $|G|$ is not a power of $p$, then $m > 1$, so $|P| = p^k < |G|$.
+> $P$ is normal by Corollary [[§55 The Sylow Theorems#^cor-55-7|§55.7]](2): $gPg^{-1}$ is a Sylow $p$-subgroup for every $g \in G$, and $P$ is the only one, so $gPg^{-1} = P$. Since $p$ divides $|G|$, $|P| = p^k > 1$; if $|G|$ is not a power of $p$, then $m > 1$, so $|P| = p^k < |G|$.
 
-^pf-54-3
+^pf-56-3
 
-*Uses:* [[§53 The Sylow Theorems#^cor-53-7|§53.7]]
+*Uses:* [[§55 The Sylow Theorems#^cor-55-7|§55.7]]
 
 > [!remark] Remark: The Sylow Test
-> So to show that no group of order $n$ is simple, it suffices to find a prime $p \mid n$ such that the only divisor $d$ of $m$ with $d \equiv 1 \pmod p$ is $d = 1$ (Proposition [[§54 Simple Groups of Small Order#^prop-54-2|§54.2]], Corollary [[§54 Simple Groups of Small Order#^cor-54-3|§54.3]]). This rules out a large part of the table.
+> So to show that no group of order $n$ is simple, it suffices to find a prime $p \mid n$ such that the only divisor $d$ of $m$ with $d \equiv 1 \pmod p$ is $d = 1$ (Proposition [[§56 Simple Groups of Small Order#^prop-56-2|§56.2]], Corollary [[§56 Simple Groups of Small Order#^cor-56-3|§56.3]]). This rules out a large part of the table.
 
-^rem-54-4
+^rem-56-4
 
-> [!example] Example §54.1: Order $21$
-> $21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.) Both values of $n_3$ occur: $n_3 = 1$ for $\mathbb{Z}/21\mathbb{Z}$, and $n_3 = 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example [[§56 Semidirect Products#^ex-56-2|§56.2]]).
+> [!example] Example §56.1: Order $21$
+> $21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.) Both values of $n_3$ occur: $n_3 = 1$ for $\mathbb{Z}/21\mathbb{Z}$, and $n_3 = 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example [[§58 Semidirect Products#^ex-58-2|§58.2]]).
 >
 > *Source: lecture 10/23*
 
-^ex-54-1
+^ex-56-1
 
-> [!example] Example §54.2: Four Orders That Survive the Sylow Test
+> [!example] Example §56.2: Four Orders That Survive the Sylow Test
 > The class split into four groups to compute the candidates for $n_p$, namely the divisors $d$ of $m$ with $d \equiv 1 \pmod p$:
 > | Order | $p$ | candidates for $n_p$ |
 > |---|---|---|
@@ -147,9 +147,9 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 10/23*
 
-^ex-54-2
+^ex-56-2
 
-> [!theorem] Proposition §54.4: The Conjugation Homomorphism $G \to S_{n_p}$
+> [!theorem] Proposition §56.4: The Conjugation Homomorphism $G \to S_{n_p}$
 > Suppose $n_p > 1$. Numbering the Sylow $p$-subgroups $1, \ldots, n_p$, the conjugation action gives a homomorphism
 >
 > $$
@@ -160,18 +160,18 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 10/23*
 
-^prop-54-4
+^prop-56-4
 
 > [!proof]+ Proof
 > *Idea:* a transitive action on $n_p > 1$ points is not trivial, so its kernel is a normal subgroup other than $G$.
 >
-> An action on a set with $n_p$ elements is a homomorphism to $S_{n_p}$ (Theorem [[§25 Actions#^thm-25-3|§25.3]]). By the Second Sylow Theorem (Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]]) the action is transitive, and there are $n_p > 1$ points, so some $g$ moves some point: $\varphi$ is not trivial, i.e. $\operatorname{Ker}\varphi \neq G$. Kernels are normal (Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]), so if $G$ is simple then $\operatorname{Ker}\varphi = \{e\}$, and $\varphi$ is injective. Then $G \cong \varphi(G) \leq S_{n_p}$ (First Isomorphism Theorem, Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]), so $|G|$ divides $|S_{n_p}| = n_p!$ by Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
+> An action on a set with $n_p$ elements is a homomorphism to $S_{n_p}$ (Theorem [[§25 Actions#^thm-25-3|§25.3]]). By the Second Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-6|§55.6]]) the action is transitive, and there are $n_p > 1$ points, so some $g$ moves some point: $\varphi$ is not trivial, i.e. $\operatorname{Ker}\varphi \neq G$. Kernels are normal (Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]), so if $G$ is simple then $\operatorname{Ker}\varphi = \{e\}$, and $\varphi$ is injective. Then $G \cong \varphi(G) \leq S_{n_p}$ (First Isomorphism Theorem, Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]), so $|G|$ divides $|S_{n_p}| = n_p!$ by Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
 
-^pf-54-4
+^pf-56-4
 
-*Uses:* [[§25 Actions#^thm-25-3|§25.3]], [[§53 The Sylow Theorems#^thm-53-6|§53.6]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
+*Uses:* [[§25 Actions#^thm-25-3|§25.3]], [[§55 The Sylow Theorems#^thm-55-6|§55.6]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
-> [!example] Example §54.3: Orders $12$ and $80$
+> [!example] Example §56.3: Orders $12$ and $80$
 > 1. $|G| = 12$. If $n_2 = 1$, the Sylow $2$-subgroup is normal. If $n_2 = 3$, we get $\varphi: G \to S_3$, and $12 > 6 = |S_3|$, so $\varphi$ is not injective: $\operatorname{Ker}\varphi$ is a proper nontrivial normal subgroup. Either way $G$ is not simple. (Marked $\blacksquare 2$.)
 > 2. $|G| = 80$. If $n_2 = 1$ we are done. If $n_2 = 5$, we get $\varphi: G \to S_5$ with $|S_5| = 5! = 120$. Here $80 < 120$, but $80 \nmid 120$, so again $\varphi$ is not injective. (Marked $\blacksquare 2$.)
 >
@@ -179,72 +179,72 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 10/23*
 
-^ex-54-3
+^ex-56-3
 
-> [!theorem] Lemma §54.5: Homomorphisms That Leave $A_N$
+> [!theorem] Lemma §56.5: Homomorphisms That Leave $A_N$
 > Let $\varphi: G \to S_N$ be a homomorphism with $\varphi(G) \not\subseteq A_N$, and suppose $|G| > 2$. Then $G$ is not simple: $\varphi^{-1}(A_N)$ is a normal subgroup of $G$ of index $2$.
 >
 > *Source: lecture and slides 10/23*
 
-^lem-54-5
+^lem-56-5
 
 > [!proof]+ Proof
 > *Idea:* the composite $\operatorname{sgn} \circ \varphi : G \to \{\pm 1\}$ is a homomorphism onto a group of order $2$; its kernel is normal, not all of $G$, and not trivial.
 >
 > *(Board 10/23; the lecture's version: normal subgroups come from kernels, so to find one, build a map.)* Let $\psi = \operatorname{sgn} \circ \varphi: G \to S_N \to \{\pm 1\}$, a homomorphism (Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]]). Then $\operatorname{Ker}\psi \trianglelefteq G$ (Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]). $\operatorname{Ker}\psi \neq G$, because $\operatorname{Ker}\psi = \varphi^{-1}(\operatorname{Ker}\operatorname{sgn}) = \varphi^{-1}(A_N)$ (Definition [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|§21.3]]) and $\varphi(G) \not\subseteq A_N$. And $\operatorname{Ker}\psi \neq \{e\}$, because $|G| > 2 = |\{\pm 1\}|$, so $\psi$ cannot be injective. Hence $\operatorname{Ker}\psi$ is a proper nontrivial normal subgroup. It has index $2$: $\psi$ is onto $\{\pm 1\}$ (its image is not $\{1\}$), so $G/\operatorname{Ker}\psi \cong \{\pm 1\}$ (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]).
 
-^pf-54-5
+^pf-56-5
 
 *Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
 
 > [!proof]+ Second proof (indices)
 > *(Not from class.)* Let $H = \varphi^{-1}(A_N)$. It is normal in $G$: for $h \in H$ and $g \in G$, $\varphi(ghg^{-1}) = \varphi(g)\varphi(h)\varphi(g)^{-1} \in A_N$, because $A_N \trianglelefteq S_N$ (it is the kernel of $\operatorname{sgn}$, Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]). The rule $gH \mapsto \varphi(g)A_N$ is well defined and injective ($\varphi(g)A_N = \varphi(g')A_N \iff \varphi(g^{-1}g') \in A_N \iff g^{-1}g' \in H$), so $[G : H] \leq [S_N : A_N] = 2$. Hence $|H| \geq |G|/2 > 1$, so $H \neq \{e\}$; and $H \neq G$ because $\varphi(G) \not\subseteq A_N$.
 
-^pf-54-5-2
+^pf-56-5-2
 
 *Uses:* [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]
 
-> [!theorem] Corollary §54.6: Simple Groups Land in $A_{n_p}$
+> [!theorem] Corollary §56.6: Simple Groups Land in $A_{n_p}$
 > If $G$ is simple with $|G| > 2$, then every homomorphism $G \to S_N$ has image in $A_N$. In particular, if $n_p > 1$, then $G$ embeds in $A_{n_p}$, and $|G|$ divides $n_p!/2$.
 >
 > *Source: lecture and slides 10/23*
 
-^cor-54-6
+^cor-56-6
 
 > [!proof]+ Proof
-> The first statement is Lemma [[§54 Simple Groups of Small Order#^lem-54-5|§54.5]]. For the second, the map $\varphi: G \to S_{n_p}$ of Proposition [[§54 Simple Groups of Small Order#^prop-54-4|§54.4]] is injective with image in $A_{n_p}$, so $|G|$ divides $|A_{n_p}| = n_p!/2$ by Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
+> The first statement is Lemma [[§56 Simple Groups of Small Order#^lem-56-5|§56.5]]. For the second, the map $\varphi: G \to S_{n_p}$ of Proposition [[§56 Simple Groups of Small Order#^prop-56-4|§56.4]] is injective with image in $A_{n_p}$, so $|G|$ divides $|A_{n_p}| = n_p!/2$ by Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
 
-^pf-54-6
+^pf-56-6
 
-*Uses:* [[§54 Simple Groups of Small Order#^lem-54-5|§54.5]], [[§54 Simple Groups of Small Order#^prop-54-4|§54.4]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
+*Uses:* [[§56 Simple Groups of Small Order#^lem-56-5|§56.5]], [[§56 Simple Groups of Small Order#^prop-56-4|§56.4]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
-> [!example] Example §54.4: Order $112$
-> The first order where the lemma is needed for the Sylow action is beyond the table: $112 = 2^4 \cdot 7$. Here $n_2 \in \{1, 7\}$ and $n_7 \in \{1, 8\}$. If $G$ were simple, $n_2 = 7$ and $G$ would embed in $S_7$. Now $112$ divides $7! = 5040$ ($5040 = 45 \cdot 112$), so Proposition [[§54 Simple Groups of Small Order#^prop-54-4|§54.4]] alone does not help; but $112 \nmid 7!/2 = 2520$, so by Corollary [[§54 Simple Groups of Small Order#^cor-54-6|§54.6]] $G$ is not simple.
+> [!example] Example §56.4: Order $112$
+> The first order where the lemma is needed for the Sylow action is beyond the table: $112 = 2^4 \cdot 7$. Here $n_2 \in \{1, 7\}$ and $n_7 \in \{1, 8\}$. If $G$ were simple, $n_2 = 7$ and $G$ would embed in $S_7$. Now $112$ divides $7! = 5040$ ($5040 = 45 \cdot 112$), so Proposition [[§56 Simple Groups of Small Order#^prop-56-4|§56.4]] alone does not help; but $112 \nmid 7!/2 = 2520$, so by Corollary [[§56 Simple Groups of Small Order#^cor-56-6|§56.6]] $G$ is not simple.
 >
 > *Source: slides 10/23*
 
-^ex-54-4
+^ex-56-4
 
 > [!remark] Remark: Other Embeddings
-> The homework uses another way of mapping a group into a symmetric group, besides the action on Sylow subgroups, together with the lemma, to rule out the orders $30$ and $90$, and yet another trick to rule out $56$. These are left to the homework: Propositions [[§54 Simple Groups of Small Order#^prop-54-7|§54.7]] and [[§54 Simple Groups of Small Order#^prop-54-8|§54.8]] (Problem Set 7).
+> The homework uses another way of mapping a group into a symmetric group, besides the action on Sylow subgroups, together with the lemma, to rule out the orders $30$ and $90$, and yet another trick to rule out $56$. These are left to the homework: Propositions [[§56 Simple Groups of Small Order#^prop-56-7|§56.7]] and [[§56 Simple Groups of Small Order#^prop-56-8|§56.8]] (Problem Set 7).
 >
 > *Source: slides 10/23*
 
-^rem-54-5
+^rem-56-5
 
 ## The Orders $30$, $56$ and $90$
 
 *Source: Problem Set 7 (submitted Thu Oct 29). The homework rules out the three orders that the tests above leave open besides $60$, with two other ways of producing a normal subgroup.*
 
-> [!theorem] Proposition §54.7: Groups of Order $2 \bmod 4$ Are Not Simple
+> [!theorem] Proposition §56.7: Groups of Order $2 \bmod 4$ Are Not Simple
 > Let $G$ be a finite group with $|G| \equiv 2 \pmod 4$ and $|G| > 2$. Then $G$ is not simple. In particular there are no simple groups of order $30$ or $90$.
 >
 > *Source: PS 7.2*
 
-^prop-54-7
+^prop-56-7
 
 > [!proof]+ Proof
-> *Idea:* an element $t$ of order $2$ acts on $G$ by left multiplication as a product of $|G|/2$ disjoint transpositions, an odd number, so the Cayley embedding $G \to S_{|G|}$ leaves $A_{|G|}$ (Lemma [[§54 Simple Groups of Small Order#^lem-54-5|§54.5]]).
+> *Idea:* an element $t$ of order $2$ acts on $G$ by left multiplication as a product of $|G|/2$ disjoint transpositions, an odd number, so the Cayley embedding $G \to S_{|G|}$ leaves $A_{|G|}$ (Lemma [[§56 Simple Groups of Small Order#^lem-56-5|§56.5]]).
 >
 > *(Problem Set 7, Problem 7.2, as submitted.)* Since $|G| \equiv 2 \bmod 4$, write $|G| = 4k + 2 = 2(2k+1)$, where $k \geq 1$ since $|G| > 2$.
 >
@@ -286,21 +286,21 @@ tags: [group-theory, math493]
 >
 > Thus $\ker(\operatorname{sgn} \circ \phi)$ is a normal subgroup of $G$ other than $\{e\}$ and $G$, so $G$ is not simple.
 
-^pf-54-7
+^pf-56-7
 
-*Uses:* [[§54 Simple Groups of Small Order#^lem-54-5|§54.5]], [[§25 Actions#^thm-25-5|§25.5]]
+*Uses:* [[§56 Simple Groups of Small Order#^lem-56-5|§56.5]], [[§25 Actions#^thm-25-5|§25.5]]
 
 > [!remark] Remark: A Normal Subgroup of Index $2$
-> *(Not from class.)* The proof gives more: $\operatorname{Ker}(\operatorname{sgn} \circ \phi)$ has index $2$ (Lemma [[§54 Simple Groups of Small Order#^lem-54-5|§54.5]]), so every group of order $2m$ with $m > 1$ odd has a normal subgroup of index $2$. The element $t$ also comes directly from Cauchy's theorem (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-6|§29.6]]). The cycle count of part (2) works for any $g \in G$: if $g$ has order $d$, the orbits of $x \mapsto gx$ are the right cosets $\langle g \rangle x$, each with $d$ elements, so $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles and $\operatorname{sgn}\phi(g) = (-1)^{(d-1)|G|/d}$. For $d = 2$ and $|G|/2$ odd, this is $-1$.
+> *(Not from class.)* The proof gives more: $\operatorname{Ker}(\operatorname{sgn} \circ \phi)$ has index $2$ (Lemma [[§56 Simple Groups of Small Order#^lem-56-5|§56.5]]), so every group of order $2m$ with $m > 1$ odd has a normal subgroup of index $2$. The element $t$ also comes directly from Cauchy's theorem (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-6|§29.6]]). The cycle count of part (2) works for any $g \in G$: if $g$ has order $d$, the orbits of $x \mapsto gx$ are the right cosets $\langle g \rangle x$, each with $d$ elements, so $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles and $\operatorname{sgn}\phi(g) = (-1)^{(d-1)|G|/d}$. For $d = 2$ and $|G|/2$ odd, this is $-1$.
 
-^rem-54-6
+^rem-56-6
 
-> [!theorem] Proposition §54.8: There Is No Simple Group of Order $56$
+> [!theorem] Proposition §56.8: There Is No Simple Group of Order $56$
 > There is no simple group of order $56$.
 >
 > *Source: PS 7.3*
 
-^prop-54-8
+^prop-56-8
 
 > [!proof]+ Proof
 > *Idea:* a simple group of order $56$ would have eight Sylow $7$-subgroups, with $48$ elements of order $7$ between them, and seven Sylow $2$-subgroups, two of which already have at least $12$ elements; $48 + 12 > 56$.
@@ -353,39 +353,39 @@ tags: [group-theory, math493]
 >
 > But $P_1 \cup P_2 \cup Q$ is a subset of $G$, so $|P_1 \cup P_2 \cup Q| \leq |G| = 56$, a contradiction. Hence there is no simple group of order $56$.
 
-^pf-54-8
+^pf-56-8
 
 > [!remark] Remark: What the Count Gives
-> *(Not from class.)* The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary [[§53 The Sylow Theorems#^cor-53-7|§53.7]]). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. Speyer: “this kind of counting elements approach can also handle a number of other cases — for example, you might enjoy working it out for $30$.”
+> *(Not from class.)* The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary [[§55 The Sylow Theorems#^cor-55-7|§55.7]]). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. Speyer: “this kind of counting elements approach can also handle a number of other cases — for example, you might enjoy working it out for $30$.”
 
-^rem-54-7
+^rem-56-7
 
-> [!theorem] Theorem §54.9: Simple Groups of Order at Most $100$
+> [!theorem] Theorem §56.9: Simple Groups of Order at Most $100$
 > If $G$ is a simple group with $|G| \leq 100$, then either $G \cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or $|G| = 60$.
 >
 > *Source: lecture 10/23*
 
-^thm-54-9
+^thm-56-9
 
 > [!proof]+ Proof
 > *Idea:* the tests of the lecture leave only $30$, $56$, $60$, $90$ besides the primes; the homework rules out $30$, $56$, $90$.
 >
-> The tests of this section (the remark *The Game* and its table) rule out every order $n \le 100$ except the primes and $30$, $56$, $60$, $90$; a group of prime order is $\mathbb{Z}/p\mathbb{Z}$ (Proposition [[§54 Simple Groups of Small Order#^prop-54-1|§54.1]](2)). Since $30 = 4 \cdot 7 + 2$ and $90 = 4 \cdot 22 + 2$, Proposition [[§54 Simple Groups of Small Order#^prop-54-7|§54.7]] (PS 7.2) rules out $30$ and $90$, and Proposition [[§54 Simple Groups of Small Order#^prop-54-8|§54.8]] (PS 7.3) rules out $56$.
+> The tests of this section (the remark *The Game* and its table) rule out every order $n \le 100$ except the primes and $30$, $56$, $60$, $90$; a group of prime order is $\mathbb{Z}/p\mathbb{Z}$ (Proposition [[§56 Simple Groups of Small Order#^prop-56-1|§56.1]](2)). Since $30 = 4 \cdot 7 + 2$ and $90 = 4 \cdot 22 + 2$, Proposition [[§56 Simple Groups of Small Order#^prop-56-7|§56.7]] (PS 7.2) rules out $30$ and $90$, and Proposition [[§56 Simple Groups of Small Order#^prop-56-8|§56.8]] (PS 7.3) rules out $56$.
 
-^pf-54-9
+^pf-56-9
 
-*Uses:* [[§54 Simple Groups of Small Order#^prop-54-1|§54.1]], [[§54 Simple Groups of Small Order#^prop-54-7|§54.7]], [[§54 Simple Groups of Small Order#^prop-54-8|§54.8]]
+*Uses:* [[§56 Simple Groups of Small Order#^prop-56-1|§56.1]], [[§56 Simple Groups of Small Order#^prop-56-7|§56.7]], [[§56 Simple Groups of Small Order#^prop-56-8|§56.8]]
 
 ## Simple Groups of Order $60$
 
 *Source: Problem Set 7, Problem 7.1 (submitted Thu Oct 29).*
 
-> [!theorem] Proposition §54.10: Proper Subgroups of $A_n$ Have Index at Least $n$
+> [!theorem] Proposition §56.10: Proper Subgroups of $A_n$ Have Index at Least $n$
 > Let $n \geq 5$ and let $H$ be a subgroup of $A_n$ other than $A_n$ itself. Then $[A_n : H] \geq n$.
 >
 > *Source: PS 7.1(1)*
 
-^prop-54-10
+^prop-56-10
 
 > [!proof]+ Proof
 > *Idea:* $A_n$ acts on the $k = [A_n : H]$ cosets of $H$; the action is injective because $A_n$ is simple, so $n!/2 \leq k!$, which fails for $k < n$.
@@ -428,19 +428,19 @@ tags: [group-theory, math493]
 >
 > contradicting $\frac{n!}{2} \leq k!$. Hence $k \geq n$, that is, $[A_n : H] \geq n$.
 
-^pf-54-10
+^pf-56-10
 
 > [!remark] Remark: A Shortcut
-> *(Not from class.)* By Corollary [[§54 Simple Groups of Small Order#^cor-54-6|§54.6]], the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e. $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
+> *(Not from class.)* By Corollary [[§56 Simple Groups of Small Order#^cor-56-6|§56.6]], the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e. $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
 
-^rem-54-8
+^rem-56-8
 
-> [!theorem] Lemma §54.11: The Subgroup of Index $2$ in $S_m$
+> [!theorem] Lemma §56.11: The Subgroup of Index $2$ in $S_m$
 > Let $m \geq 3$ and let $U$ be a subgroup of $S_m$ with $|U| = \frac{m!}{2}$. Then $U = A_m$.
 >
 > *Source: PS 7.1(2), lemma*
 
-^lem-54-11
+^lem-56-11
 
 > [!proof]+ Proof
 > *Idea:* a subgroup of index $2$ missing a $3$-cycle $(i\,j\,k)$ would have the three distinct cosets $U$, $(i\,j\,k)U$, $(i\,k\,j)U$.
@@ -459,17 +459,17 @@ tags: [group-theory, math493]
 >
 > a contradiction. So these are three distinct left cosets of $U$ in $S_m$. But by Lagrange's theorem, $[S_m : U] = \frac{m!}{m!/2} = 2$, so $U$ has exactly two left cosets in $S_m$, a contradiction. Hence $U = A_m$.
 
-^pf-54-11
+^pf-56-11
 
-> [!theorem] Proposition §54.12: Subgroups of Index $n$ in $A_n$
+> [!theorem] Proposition §56.12: Subgroups of Index $n$ in $A_n$
 > Let $n \geq 5$ and let $H$ be a subgroup of $A_n$ with $[A_n : H] = n$. Then $H \cong A_{n-1}$.
 >
 > *Source: PS 7.1(2)*
 
-^prop-54-12
+^prop-56-12
 
 > [!proof]+ Proof
-> *Idea:* $H$ fixes the coset $H$ in the action of $A_n$ on $A_n/H$, so it embeds in the stabilizer of a point, a copy of $S_{n-1}$, as a subgroup of index $2$; Lemma [[§54 Simple Groups of Small Order#^lem-54-11|§54.11]] identifies it.
+> *Idea:* $H$ fixes the coset $H$ in the action of $A_n$ on $A_n/H$, so it embeds in the stabilizer of a point, a copy of $S_{n-1}$, as a subgroup of index $2$; Lemma [[§56 Simple Groups of Small Order#^lem-56-11|§56.11]] identifies it.
 >
 > *(Problem Set 7, Problem 7.1(2), as submitted.)* Now suppose $[A_n : H] = n$. Since $n > 1$, $H \neq A_n$. Let $\psi \colon A_n \to S_{A_n/H}$, $\psi(g) = \hat g$, be as in (1); since $H \neq A_n$, (1) gives $\ker\psi = \{e\}$. By Lagrange's theorem,
 >
@@ -510,19 +510,19 @@ tags: [group-theory, math493]
 > H \cong \psi(H) \cong \Theta(\psi(H)) = A_{n-1}.
 > $$
 
-^pf-54-12
+^pf-56-12
 
-*Uses:* [[§54 Simple Groups of Small Order#^lem-54-11|§54.11]]
+*Uses:* [[§56 Simple Groups of Small Order#^lem-56-11|§56.11]]
 
-> [!theorem] Theorem §54.13: Simple Groups of Order $60$
+> [!theorem] Theorem §56.13: Simple Groups of Order $60$
 > Every simple group of order $60$ is isomorphic to $A_5$.
 >
 > *Source: PS 7.1(3)*
 
-^thm-54-13
+^thm-56-13
 
 > [!proof]+ Proof
-> *Idea:* conjugation on the six Sylow $5$-subgroups embeds $G$ in $A_6$ with index $6$; Proposition [[§54 Simple Groups of Small Order#^prop-54-12|§54.12]] with $n = 6$ gives $G \cong A_5$.
+> *Idea:* conjugation on the six Sylow $5$-subgroups embeds $G$ in $A_6$ with index $6$; Proposition [[§56 Simple Groups of Small Order#^prop-56-12|§56.12]] with $n = 6$ gives $G \cong A_5$.
 >
 > *(Problem Set 7, Problem 7.1(3), as submitted.)* Let $G$ be a simple group of order $60 = 2^2 \cdot 3 \cdot 5$.
 >
@@ -555,34 +555,34 @@ tags: [group-theory, math493]
 >
 > **Conclusion.** Let $H = \varphi(G)$, a subgroup of $A_6$ with $|H| = |G| = 60$. Since $|A_6| = \frac{6!}{2} = 360 \neq 60$, $H \neq A_6$, and $[A_6 : H] = 360/60 = 6$. Applying (2) with $n = 6 \geq 5$ gives $H \cong A_5$. Therefore $G \cong \varphi(G) = H \cong A_5$.
 
-^pf-54-13
+^pf-56-13
 
-*Uses:* [[§54 Simple Groups of Small Order#^prop-54-12|§54.12]]
+*Uses:* [[§56 Simple Groups of Small Order#^prop-56-12|§56.12]]
 
-> [!theorem] Corollary §54.14: The Simple Groups of Order at Most $100$
+> [!theorem] Corollary §56.14: The Simple Groups of Order at Most $100$
 > A simple group of order at most $100$ is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or to $A_5$.
 
-^cor-54-14
+^cor-56-14
 
 > [!proof]+ Proof
-> By Theorem [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]], $G \cong \mathbb{Z}/p\mathbb{Z}$ or $|G| = 60$, and in the second case $G \cong A_5$ by Theorem [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]]. Conversely, these groups are simple (Proposition [[§54 Simple Groups of Small Order#^prop-54-1|§54.1]](2) and Theorem [[§43 Simple Groups#^thm-43-9|§43.9]]).
+> By Theorem [[§56 Simple Groups of Small Order#^thm-56-9|§56.9]], $G \cong \mathbb{Z}/p\mathbb{Z}$ or $|G| = 60$, and in the second case $G \cong A_5$ by Theorem [[§56 Simple Groups of Small Order#^thm-56-13|§56.13]]. Conversely, these groups are simple (Proposition [[§56 Simple Groups of Small Order#^prop-56-1|§56.1]](2) and Theorem [[§43 Simple Groups#^thm-43-9|§43.9]]).
 
-^pf-54-14
+^pf-56-14
 
-*Uses:* [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]], [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]], [[§54 Simple Groups of Small Order#^prop-54-1|§54.1]], [[§43 Simple Groups#^thm-43-9|§43.9]]
+*Uses:* [[§56 Simple Groups of Small Order#^thm-56-9|§56.9]], [[§56 Simple Groups of Small Order#^thm-56-13|§56.13]], [[§56 Simple Groups of Small Order#^prop-56-1|§56.1]], [[§43 Simple Groups#^thm-43-9|§43.9]]
 
-Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6|§43.6]]), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Theorem [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]] also proves Theorem [[§43 Simple Groups#^thm-43-7|§43.7]] of [[§43 Simple Groups|§43]]: every non-abelian simple group has order at least $60$.
+Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6|§43.6]]), the order $60$ does occur; the homework also shows that every simple group of order $60$ is isomorphic to $A_5$. Theorem [[§56 Simple Groups of Small Order#^thm-56-9|§56.9]] also proves Theorem [[§43 Simple Groups#^thm-43-7|§43.7]] of [[§43 Simple Groups|§43]]: every non-abelian simple group has order at least $60$.
 
 > [!proof]+ Proof of Theorem [[§43 Simple Groups#^thm-43-7|§43.7]]
 > *Idea:* below $60$ the only simple groups are the $\mathbb{Z}/p\mathbb{Z}$, which are abelian.
 >
-> *(Not from class.)* Let $G$ be a non-abelian simple group; we show $|G| \geq 60$. Suppose $|G| < 60$. Then $|G| \leq 100$, so by Theorem [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]] either $G \cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or $|G| = 60$. The first is impossible, since $\mathbb{Z}/p\mathbb{Z}$ is abelian and $G$ is not; the second contradicts $|G| < 60$. Hence $|G| \geq 60$.
+> *(Not from class.)* Let $G$ be a non-abelian simple group; we show $|G| \geq 60$. Suppose $|G| < 60$. Then $|G| \leq 100$, so by Theorem [[§56 Simple Groups of Small Order#^thm-56-9|§56.9]] either $G \cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or $|G| = 60$. The first is impossible, since $\mathbb{Z}/p\mathbb{Z}$ is abelian and $G$ is not; the second contradicts $|G| < 60$. Hence $|G| \geq 60$.
 >
-> The bound is attained by $A_5$: $|A_5| = 5!/2 = 60$; $A_5$ is simple (Proposition [[§43 Simple Groups#^prop-43-6|§43.6]]); and $A_5$ is not abelian, since an abelian simple group is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for a prime $p$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]) and $60$ is not prime. By Theorem [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]], $A_5$ is, up to isomorphism, the only non-abelian simple group of order $60$.
+> The bound is attained by $A_5$: $|A_5| = 5!/2 = 60$; $A_5$ is simple (Proposition [[§43 Simple Groups#^prop-43-6|§43.6]]); and $A_5$ is not abelian, since an abelian simple group is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for a prime $p$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]) and $60$ is not prime. By Theorem [[§56 Simple Groups of Small Order#^thm-56-13|§56.13]], $A_5$ is, up to isomorphism, the only non-abelian simple group of order $60$.
 
 ^pf-43-7-2
 
-*Uses:* [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]], [[§43 Simple Groups#^prop-43-6|§43.6]], [[§43 Simple Groups#^thm-43-1|§43.1]], [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]]
+*Uses:* [[§56 Simple Groups of Small Order#^thm-56-9|§56.9]], [[§43 Simple Groups#^prop-43-6|§43.6]], [[§43 Simple Groups#^thm-43-1|§43.1]], [[§56 Simple Groups of Small Order#^thm-56-13|§56.13]]
 
 > [!remark] Remark: The Classification of Finite Simple Groups
 > *(Overview only.)* The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.
@@ -602,7 +602,7 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 >
 > *Source: lecture 10/23*
 
-^rem-54-9
+^rem-56-9
 
 > [!remark] Remark: Where the Groups of Lie Type Come From
 > *(Overview only.)* A **Lie group** is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
@@ -617,4 +617,4 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 >
 > *Source: lecture 10/23*
 
-^rem-54-10
+^rem-56-10

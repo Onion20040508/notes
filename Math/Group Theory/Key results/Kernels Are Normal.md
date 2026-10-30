@@ -23,10 +23,10 @@ tags: [group-theory, hub]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|Theorem §42.5: Third Isomorphism Theorem]]
 - [[§43 Simple Groups#^prop-43-3|Proposition §43.3: Homomorphisms out of a Simple Group]]
 - [[§43 Simple Groups#^prop-43-10|Proposition §43.10: The Pair-Partition Homomorphism S_4 → S_3]]
-- [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-3|Lemma §50.3: Finite Groups Have Composition Series]]
-- [[§54 Simple Groups of Small Order#^prop-54-4|Proposition §54.4: The Conjugation Homomorphism G → S_n_p]]
-- [[§54 Simple Groups of Small Order#^lem-54-5|Lemma §54.5: Homomorphisms That Leave A_N]]
-- [[§56 Semidirect Products#^thm-56-6|Theorem §56.6: Internal and External Semidirect Products Agree]]
+- [[§50 Composition Series#^lem-50-2|Lemma §50.2: Finite Groups Have Composition Series]]
+- [[§56 Simple Groups of Small Order#^prop-56-4|Proposition §56.4: The Conjugation Homomorphism G → S_n_p]]
+- [[§56 Simple Groups of Small Order#^lem-56-5|Lemma §56.5: Homomorphisms That Leave A_N]]
+- [[§58 Semidirect Products#^thm-58-6|Theorem §58.6: Internal and External Semidirect Products Agree]]
 
 ## Connections
 - **Converse.** Every normal subgroup is the kernel of G → G/N ([[§40 Quotient Groups#^prop-40-2|§40.2]]), so normal subgroups and kernels are the same thing ([[§40 Quotient Groups#^rem-40-2|Kernels and Normal Subgroups Are the Same Thing]]). Images need not be normal ([[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]).

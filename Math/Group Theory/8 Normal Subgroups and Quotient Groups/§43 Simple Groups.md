@@ -165,8 +165,8 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 
 ^thm-43-7
 
-> [!proof]+ Proof (given in [[§54 Simple Groups of Small Order|§54]])
-> *(Not from class.)* The proof uses the simple groups of order at most $100$ (Theorem [[§54 Simple Groups of Small Order#^thm-54-9|§54.9]]), whose proof rests on the Sylow theorems; it is given after Corollary [[§54 Simple Groups of Small Order#^cor-54-14|§54.14]]: [[§54 Simple Groups of Small Order#^pf-43-7-2|proof of Theorem §43.7]].
+> [!proof]+ Proof (given in [[§56 Simple Groups of Small Order|§56]])
+> *(Not from class.)* The proof uses the simple groups of order at most $100$ (Theorem [[§56 Simple Groups of Small Order#^thm-56-9|§56.9]]), whose proof rests on the Sylow theorems; it is given after Corollary [[§56 Simple Groups of Small Order#^cor-56-14|§56.14]]: [[§56 Simple Groups of Small Order#^pf-43-7-2|proof of Theorem §43.7]].
 
 ^pf-43-7
 

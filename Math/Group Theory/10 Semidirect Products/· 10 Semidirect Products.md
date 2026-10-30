@@ -16,16 +16,16 @@ The strategy of [[§43 Simple Groups|§43]] is to understand a group $G$ through
 **Builds on (other subjects):** —
 
 ## Sections
-- [[§55 Internal and External Direct Products]]
-- [[§56 Semidirect Products]]
+- [[§57 Internal and External Direct Products]]
+- [[§58 Semidirect Products]]
 
 ## Central results
-- [[Internal Direct Product Theorem]] (§55.1)
-- [[Internal and External Semidirect Products Agree]] (§56.6)
+- [[Internal Direct Product Theorem]] (§57.1)
+- [[Internal and External Semidirect Products Agree]] (§58.6)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§56 Semidirect Products#^prop-56-3|Proposition §56.3: S Acts on N by Automorphisms]]: 2 later results
-- [[§56 Semidirect Products#^prop-56-2|Proposition §56.2: Unique Factorization g = ns]]: 1 later result
-- [[§56 Semidirect Products#^prop-56-4|Proposition §56.4: Multiplication in the Form ns]]: 1 later result
-- [[§56 Semidirect Products#^thm-56-5|Theorem §56.5: N ⋊_φ S Is a Group]]: 1 later result
+- [[§58 Semidirect Products#^prop-58-3|Proposition §58.3: S Acts on N by Automorphisms]]: 2 later results
+- [[§58 Semidirect Products#^prop-58-2|Proposition §58.2: Unique Factorization g = ns]]: 1 later result
+- [[§58 Semidirect Products#^prop-58-4|Proposition §58.4: Multiplication in the Form ns]]: 1 later result
+- [[§58 Semidirect Products#^thm-58-5|Theorem §58.5: N ⋊_φ S Is a Group]]: 1 later result

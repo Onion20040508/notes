@@ -5734,11 +5734,11 @@ The definition of solvability asks us to hunt for a chain, as in WS 9.1. The der
 % ============================================================================
 % SECTION: COMPOSITION SERIES (Lecture and Worksheet 12, Wed Oct 28)
 % ============================================================================
-\section{Composition Series and the Jordan--H\"older Theorem}\label{sec:composition-series}
+\section{Composition Series}\label{sec:composition-series}
 
-\textit{Source: Lecture and Worksheet 12 (Wed Oct 28); lecture (Fri Oct 30), which finished the proof. Taught after the Sylow theorems and semidirect products, and placed here because a composition series is a subnormal series, like the chains that define solvable groups (\ref{sec:solvable}) and the derived series (\ref{sec:derived-series}). Reference: not covered in the Pinter chapters used so far.}
+\textit{Source: Lecture and Worksheet 12 (Wed Oct 28). Taught after the Sylow theorems and semidirect products, and placed here because a composition series is a subnormal series, like the chains that define solvable groups (\ref{sec:solvable}) and the derived series (\ref{sec:derived-series}). Reference: not covered in the Pinter chapters used so far.}
 
-The course has used the analogy that simple groups are atoms and other groups are molecules built from them. For the analogy to be good, every group should have a well-defined ``chemical formula'': a list of simple pieces that does not depend on how the group is taken apart. The Jordan--H\"older theorem says exactly this, for every group that can be taken apart into simple pieces at all, in particular every finite group.
+The course has used the analogy that simple groups are atoms and other groups are molecules built from them. For the analogy to be good, every group should have a well-defined ``chemical formula'': a list of simple pieces that does not depend on how the group is taken apart. The Jordan--H\"older theorem says exactly this, for every group that can be taken apart into simple pieces at all, in particular every finite group. This section sets up composition series; \ref{sec:jh-grid} builds the grid of intersections that the proof uses, and \ref{sec:jordan-holder} states and proves the theorem.
 
 \begin{defbox}[{Subnormal Series}]\label{def:subnormal-series}
 Let $G$ be any group. A \textbf{subnormal series} of $G$ is a chain of subgroups
@@ -5765,17 +5765,6 @@ The term is the lecturer's own and is not standard. (WS 12 says ``a composition 
 \begin{rembox}[{Relation to Solvable Groups}]\label{rem:composition-solvable}
 \textit{(Not from class.)} The chain in the definition of a solvable group (Definition~\ref{def:solvable-group}) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem~\ref{thm:abelian-simple-groups}), a composition series all of whose factors are cyclic of prime order shows that $G$ is solvable. Conversely, a finite solvable group has such a composition series: refine each abelian quotient $G_j/G_{j-1}$ by a composition series of it (Lemma~\ref{lem:finite-composition-series}) and pull back, as in the proof of that lemma. Combined with the Jordan--H\"older theorem: \emph{a finite group is solvable if and only if all of its composition factors are cyclic of prime order.} For example, $\{e\} \trianglelefteq \langle (1\,2)(3\,4) \rangle \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with $K$ the Klein four-group, has factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$, while $A_5$ has the single factor $A_5$.
 \end{rembox}
-
-\begin{thmbox}[{Jordan--H\"older Theorem}]\label{thm:jordan-holder}
-Let $G$ be any group, and let
-\[ \{e\} = X_0 \trianglelefteq X_1 \trianglelefteq \cdots \trianglelefteq X_m = G \quad\text{and}\quad \{e\} = Y_0 \trianglelefteq Y_1 \trianglelefteq \cdots \trianglelefteq Y_n = G \]
-be two composition series, with quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$. Then $m = n$, and there is a permutation $\sigma \in S_n$ with $S_i \cong T_{\sigma(i)}$ for $1 \leq i \leq m$.
-\srcline{lecture 10/28, 10/30; WS 12}
-\end{thmbox}
-
-\begin{proof}[Proof (given at the end of \ref{sub:jh-grid})]
-The proof needs the grid of intersections of the two series, set up in \ref{sub:jh-grid}, and it is given there, after Proposition~\ref{prop:jh-crossing-square}. WS 12.1--12.3 were done on 10/28 and WS 12.4--12.6 on 10/30. The lecture's comment: the theorem justifies the program of studying groups through simple groups (the remark \emph{Peeling Off Atoms} after the proof).
-\end{proof}
 
 \begin{propbox}[{$\mathbb{Z}$ Has No Composition Series}]\label{prop:z-no-composition-series}
 Not every group has a composition series: $\mathbb{Z}$ has none.
@@ -5822,14 +5811,6 @@ which is simple. (The board cites the Third Isomorphism Theorem, Theorem~\ref{th
 \textit{(Not from lecture; figure added, after the lecture's image.)} The proof of Lemma~\ref{lem:finite-composition-series}: the normal subgroup $N$ is the island in the stream from $\{e\}$ to $G$. A composition series of $N$ reaches the island, and the preimages $\pi^{-1}(Q_j)$ of a composition series of $G/N$ carry the bridge on to $G$; each new quotient is $\cong Q_j/Q_{j-1}$.
 %% <<< END ADDED
 
-\begin{exbox}[{The Order of the Factors Is Not Arbitrary}]\label{ex:s3-composition-order}
-A student asked whether every ordering of the composition factors is realized by some composition series. On 10/30 the lecture gave a group in which every ordering occurs, $(\mathbb{Z}/p\mathbb{Z})^n$ (Example~\ref{ex:jh-flags}). In general the answer is no (not from class). $S_3$ has the composition series $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$, with factors $\mathbb{Z}/3, \mathbb{Z}/2$ in that order, and no composition series with the factors in the order $\mathbb{Z}/2, \mathbb{Z}/3$.
-\srcline{question from class 10/28; the example $(\mathbb{Z}/p\mathbb{Z})^n$ lecture 10/30; $S_3$ not from class}
-\end{exbox}
-
-\begin{proof}
-\textit{(Not from class.)} A composition series with first factor $\mathbb{Z}/2$ and second $\mathbb{Z}/3$ would be $\{e\} \trianglelefteq G_1 \trianglelefteq S_3$ with $|G_1| = 2$ and $G_1$ normal in $S_3$. But the subgroups of order $2$ of $S_3$ are the $\langle (i\,j) \rangle$, and none is normal: $(1\,3)(1\,2)(1\,3) = (2\,3)$.
-\end{proof}
 
 \begin{lembox}[{Two Normal Subgroups with Simple Quotients}]\label{lem:two-simple-quotients}
 Let $G$ be a finite group and $N_1 \neq N_2$ normal subgroups such that $G/N_1$ and $G/N_2$ are both simple. Then:
@@ -5895,9 +5876,16 @@ using $N_2N_1 = N_1N_2 = G$ from (1). Since $N_2 \cap N_1 = N_1 \cap N_2$, this 
 Speyer, on Problem 7.4: in this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. \textit{(Proof not from class.)} In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, in Chapter~10).
 \end{rembox}
 
-\subsection{The Grid of Intersections}\label{sub:jh-grid}
+% ============================================================================
+% SECTION: THE GRID OF INTERSECTIONS (Worksheet 12; lectures Wed Oct 28, Fri Oct 30)
+% ============================================================================
+\section{The Grid of Intersections}\label{sec:jh-grid}
 
-\textit{The approach is taken from Ravi Vakil's \emph{Foundations of Algebraic Geometry} (WS 12). Throughout, the two composition series are those of the Jordan--H\"older theorem (Theorem~\ref{thm:jordan-holder}).}
+\textit{Source: Worksheet 12, WS 12.1--12.3 (Wed Oct 28) and WS 12.4--12.5 (Fri Oct 30), with the lectures of both days. The approach is taken from Ravi Vakil's \emph{Foundations of Algebraic Geometry} (WS 12). Everything here prepares the proof of the Jordan--H\"older theorem in \ref{sec:jordan-holder}.}
+
+Throughout this section, $G$ is a group with two composition series (Definition~\ref{def:composition-series})
+\[ \{e\} = X_0 \trianglelefteq X_1 \trianglelefteq \cdots \trianglelefteq X_m = G \quad\text{and}\quad \{e\} = Y_0 \trianglelefteq Y_1 \trianglelefteq \cdots \trianglelefteq Y_n = G, \]
+with simple quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$.
 
 \begin{defbox}[{The Grid $Z_{ij}$}]\label{def:jh-grid}
 Put
@@ -6185,10 +6173,41 @@ Suppose a square has bottom and left edges trivial ($B = A$ and $C = A$), top ed
 \[ T_j \cong D/B = D/C \cong S_i. \qedhere \]
 \end{proof}
 
+% ============================================================================
+% SECTION: THE JORDAN--HOELDER THEOREM (lectures Wed Oct 28, Fri Oct 30)
+% ============================================================================
+\section{The Jordan--H\"older Theorem}\label{sec:jordan-holder}
+
+\textit{Source: Lecture and Worksheet 12 (Wed Oct 28, the statement); lecture (Fri Oct 30), which finished the proof (WS 12.6). The proof uses the grid of \ref{sec:jh-grid}.}
+
+\begin{thmbox}[{Jordan--H\"older Theorem}]\label{thm:jordan-holder}
+Let $G$ be any group, and let
+\[ \{e\} = X_0 \trianglelefteq X_1 \trianglelefteq \cdots \trianglelefteq X_m = G \quad\text{and}\quad \{e\} = Y_0 \trianglelefteq Y_1 \trianglelefteq \cdots \trianglelefteq Y_n = G \]
+be two composition series, with quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$. Then $m = n$, and there is a permutation $\sigma \in S_n$ with $S_i \cong T_{\sigma(i)}$ for $1 \leq i \leq m$.
+\srcline{lecture 10/28, 10/30; WS 12}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} each column and each row changes exactly once; the impossible squares force every column changeover to be a row changeover, so the changeovers form a permutation, and at each of them the crossing square gives $S_i \cong T_j$.\par
+\textit{(WS 12.6; lecture 10/30.)}
+
+\textbf{Step 1: each column changes once.} Fix a column $i \in \{1, \ldots, m\}$. By Proposition~\ref{prop:jh-horizontal-edges}(3) there is $j_0$ with $H_{ij}$ trivial for $j < j_0$ and $H_{ij} \cong S_i$ for $j \geq j_0$. Since $H_{i0} = \{e\}$ and $H_{in} = S_i \neq \{e\}$, we have $1 \leq j_0 \leq n$. Put $\tau(i) = j_0$. Then the square of column $i$ between rows $\tau(i) - 1$ and $\tau(i)$ has bottom edge ``$=$'' and top edge $S_i$, and it is the only square of the column with this property. This defines a map $\tau : \{1, \ldots, m\} \to \{1, \ldots, n\}$.
+
+\textbf{Step 2: each row changes once.} In the same way (the statement for the $V_{ij}$ in Proposition~\ref{prop:jh-horizontal-edges}), for each row $j \in \{1, \ldots, n\}$ there is exactly one $\rho(j) \in \{1, \ldots, m\}$ such that the square of row $j$ between columns $\rho(j) - 1$ and $\rho(j)$ has left edge ``$=$'' and right edge $T_j$.
+
+\textbf{Step 3: a column changeover is a row changeover.} Take the changeover square of column $i$ from Step 1: bottom ``$=$'', top $S_i$. Among the nine kinds of square, those with this bottom and top are (a), (c) and the crossing square (v). By Proposition~\ref{prop:jh-impossible-squares}, (a) and (c) do not occur, so it is the crossing square: its left edge is ``$=$'' and its right edge is $T_{\tau(i)}$. It lies in row $\tau(i)$, between columns $i - 1$ and $i$, so by Step 2 it is the changeover square of row $\tau(i)$: $\rho(\tau(i)) = i$.
+
+\textbf{Step 4: a row changeover is a column changeover.} Symmetrically, the changeover square of row $j$ has left edge ``$=$'' and right edge $T_j$. The squares with these vertical edges are (b), (d) and (v), and (b), (d) do not occur. So it is the crossing square: bottom ``$=$'', top $S_{\rho(j)}$, the changeover square of column $\rho(j)$. Hence $\tau(\rho(j)) = j$.
+
+\textbf{Step 5: $m = n$.} By Steps 3 and 4, $\tau$ and $\rho$ are inverse maps, so $\tau$ is a bijection from $\{1, \ldots, m\}$ to $\{1, \ldots, n\}$. Hence $m = n$, and $\sigma := \tau$ is a permutation in $S_n$.
+
+\textbf{Step 6: the isomorphisms.} For each $i$, the changeover square of column $i$ is a crossing square with top edge $S_i$ and right edge $T_{\sigma(i)}$. By Proposition~\ref{prop:jh-crossing-square}, $S_i \cong T_{\sigma(i)}$.
+\end{proof}
+
 \begin{rembox}[{Changeover Squares and Pipes}]\label{rem:jh-pipes}
 By Proposition~\ref{prop:jh-horizontal-edges}(3), the horizontal edges of column $i$ read, from the bottom up,
 \[ =,\ \ldots,\ =,\ S_i,\ \ldots,\ S_i : \]
-the column starts with $H_{i0} = \{e\}$, ends with $H_{in} = S_i$ on the top row, and changes exactly once. The square where it changes is the \textbf{changeover square} of column $i$: its bottom edge is ``$=$'' and its top edge $S_i$. Likewise the vertical edges of row $j$ read $=, \ldots, =, T_j, \ldots, T_j$ from left to right, and row $j$ has one changeover square, with left edge ``$=$'' and right edge $T_j$. The impossible squares say that the changeover square of a column is the changeover square of a row, and conversely: the changeovers line up. The lecture records this with \textbf{pipes}. Along each column a pipe runs through its $S_i$ edges, from $S_i$ on the top row down to the changeover square; along each row a pipe runs through its $T_j$ edges, from $T_j$ on the right column back to the changeover square. The two meet in a crossing square, so each pipe joins one $S_i$ (top) to one $T_j$ (right), and carries a single simple group along its whole length. The figure below builds this in three steps.
+the column starts with $H_{i0} = \{e\}$, ends with $H_{in} = S_i$ on the top row, and changes exactly once. The square where it changes is the \textbf{changeover square} of column $i$: its bottom edge is ``$=$'' and its top edge $S_i$. Likewise the vertical edges of row $j$ read $=, \ldots, =, T_j, \ldots, T_j$ from left to right, and row $j$ has one changeover square, with left edge ``$=$'' and right edge $T_j$. The impossible squares say that the changeover square of a column is the changeover square of a row, and conversely: the changeovers line up. The lecture records this with \textbf{pipes}. Along each column a pipe runs through its $S_i$ edges, from $S_i$ on the top row down to the changeover square; along each row a pipe runs through its $T_j$ edges, from $T_j$ on the right column back to the changeover square. The two meet in a crossing square, so each pipe joins one $S_i$ (top) to one $T_j$ (right), and carries a single simple group along its whole length. The figure below builds this in three steps; it is the proof above, as a picture.
 \srcline{lecture 10/30; WS 12}
 \end{rembox}
 
@@ -6251,27 +6270,21 @@ the column starts with $H_{i0} = \{e\}$, ends with $H_{in} = S_i$ on the top row
 
 \textit{(Figure after the board, in three steps.)} The case $m = n = 3$; the top row of the grid is the $X$-series and the right column the $Y$-series. (a) The horizontal edges: in each column, ``$=$'' (dashed) up to the changeover, then $S_i$. (b) The vertical edges: in each row, ``$=$'' up to the changeover, then $T_j$. (c) The changeover squares (shaded) coincide; they are crossing squares, one in each row and each column, like the $1$s of a permutation matrix. Each pipe comes down from $S_i$ and turns right to $T_{\sigma(i)}$; here $S_1 \cong T_2$, $S_2 \cong T_3$, $S_3 \cong T_1$, the matching drawn on the board. Where two pipes cross (a square of type (i)), nothing happens.
 
-\begin{proof}[Proof of the Jordan--H\"older Theorem (Theorem~\ref{thm:jordan-holder})]
-\textit{Idea:} each column and each row changes exactly once; the impossible squares force every column changeover to be a row changeover, so the changeovers form a permutation, and at each of them the crossing square gives $S_i \cong T_j$.\par
-\textit{(WS 12.6; lecture 10/30.)}
 
-\textbf{Step 1: each column changes once.} Fix a column $i \in \{1, \ldots, m\}$. By Proposition~\ref{prop:jh-horizontal-edges}(3) there is $j_0$ with $H_{ij}$ trivial for $j < j_0$ and $H_{ij} \cong S_i$ for $j \geq j_0$. Since $H_{i0} = \{e\}$ and $H_{in} = S_i \neq \{e\}$, we have $1 \leq j_0 \leq n$. Put $\tau(i) = j_0$. Then the square of column $i$ between rows $\tau(i) - 1$ and $\tau(i)$ has bottom edge ``$=$'' and top edge $S_i$, and it is the only square of the column with this property. This defines a map $\tau : \{1, \ldots, m\} \to \{1, \ldots, n\}$.
-
-\textbf{Step 2: each row changes once.} In the same way (the statement for the $V_{ij}$ in Proposition~\ref{prop:jh-horizontal-edges}), for each row $j \in \{1, \ldots, n\}$ there is exactly one $\rho(j) \in \{1, \ldots, m\}$ such that the square of row $j$ between columns $\rho(j) - 1$ and $\rho(j)$ has left edge ``$=$'' and right edge $T_j$.
-
-\textbf{Step 3: a column changeover is a row changeover.} Take the changeover square of column $i$ from Step 1: bottom ``$=$'', top $S_i$. Among the nine kinds of square, those with this bottom and top are (a), (c) and the crossing square (v). By Proposition~\ref{prop:jh-impossible-squares}, (a) and (c) do not occur, so it is the crossing square: its left edge is ``$=$'' and its right edge is $T_{\tau(i)}$. It lies in row $\tau(i)$, between columns $i - 1$ and $i$, so by Step 2 it is the changeover square of row $\tau(i)$: $\rho(\tau(i)) = i$.
-
-\textbf{Step 4: a row changeover is a column changeover.} Symmetrically, the changeover square of row $j$ has left edge ``$=$'' and right edge $T_j$. The squares with these vertical edges are (b), (d) and (v), and (b), (d) do not occur. So it is the crossing square: bottom ``$=$'', top $S_{\rho(j)}$, the changeover square of column $\rho(j)$. Hence $\tau(\rho(j)) = j$.
-
-\textbf{Step 5: $m = n$.} By Steps 3 and 4, $\tau$ and $\rho$ are inverse maps, so $\tau$ is a bijection from $\{1, \ldots, m\}$ to $\{1, \ldots, n\}$. Hence $m = n$, and $\sigma := \tau$ is a permutation in $S_n$.
-
-\textbf{Step 6: the isomorphisms.} For each $i$, the changeover square of column $i$ is a crossing square with top edge $S_i$ and right edge $T_{\sigma(i)}$. By Proposition~\ref{prop:jh-crossing-square}, $S_i \cong T_{\sigma(i)}$.
-\end{proof}
 
 \begin{rembox}[{Peeling Off Atoms}]\label{rem:jh-peeling}
 Read a composition series from the top: $G = G_N \trianglerighteq G_{N-1} \trianglerighteq \cdots \trianglerighteq G_0 = \{e\}$ peels off one simple quotient $G_N/G_{N-1}$ at a time, each step passing to a smaller normal subgroup. The theorem says that in whatever order the pieces are peeled off, the same atoms come off, with the same multiplicities. This is the lecture's justification for treating simple groups as the right objects to understand first.
 \srcline{lecture 10/30}
 \end{rembox}
+
+\begin{exbox}[{The Order of the Factors Is Not Arbitrary}]\label{ex:s3-composition-order}
+A student asked whether every ordering of the composition factors is realized by some composition series. On 10/30 the lecture gave a group in which every ordering occurs, $(\mathbb{Z}/p\mathbb{Z})^n$ (Example~\ref{ex:jh-flags}). In general the answer is no (not from class). $S_3$ has the composition series $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$, with factors $\mathbb{Z}/3, \mathbb{Z}/2$ in that order, and no composition series with the factors in the order $\mathbb{Z}/2, \mathbb{Z}/3$.
+\srcline{question from class 10/28; the example $(\mathbb{Z}/p\mathbb{Z})^n$ lecture 10/30; $S_3$ not from class}
+\end{exbox}
+
+\begin{proof}
+\textit{(Not from class.)} A composition series with first factor $\mathbb{Z}/2$ and second $\mathbb{Z}/3$ would be $\{e\} \trianglelefteq G_1 \trianglelefteq S_3$ with $|G_1| = 2$ and $G_1$ normal in $S_3$. But the subgroups of order $2$ of $S_3$ are the $\langle (i\,j) \rangle$, and none is normal: $(1\,3)(1\,2)(1\,3) = (2\,3)$.
+\end{proof}
 
 \begin{exbox}[{Flags in $(\mathbb{Z}/p\mathbb{Z})^n$}]\label{ex:jh-flags}
 Let $G = (\mathbb{Z}/p\mathbb{Z})^n$, an $n$-dimensional vector space over $\mathbb{F}_p$, with standard basis $e_1, \ldots, e_n$. Every subgroup is normal ($G$ is abelian), and a chain of subspaces increasing one dimension at a time is a composition series, with every factor $\cong \mathbb{Z}/p\mathbb{Z}$. For a permutation $\sigma \in S_n$ take
@@ -6338,7 +6351,6 @@ Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_
 \end{center}
 
 \textit{(Figure after the board's cube, with the grid added.)} The lecture's three-dimensional picture, $n = 3$ and $\sigma = (2\,3)$: the line $X_1 = Y_1 = \langle e_1 \rangle$ lies in two different planes, $X_2 = \langle e_1, e_2 \rangle$ and $Y_2 = \langle e_1, e_3 \rangle$. In the grid (right; $X$-series on the top row, $Y$-series on the right column) equalities appear inside the grid even though none occur along its edges: for instance $Z_{22} = X_2 \cap Y_2 = \langle e_1 \rangle = Z_{11}$. The column changeovers are at rows $\tau(1) = 1$, $\tau(2) = 3$, $\tau(3) = 2$, which is $\sigma^{-1} = (2\,3)$.
-
 
 \section{\texorpdfstring{$S_3$, $S_4$, $A_n$ and $GL_n$}{S₃, S₄, Aₙ and GLₙ}}\label{sec:rev-ch9}
 
@@ -7856,9 +7868,9 @@ Fri Oct 16 \newline lecture & Sylow II proved from WS 10.3; Sylow III proved ($P
 Wed Oct 21 \newline review session & Midterm review: cube orbits and stabilizers; the sign character (second proof via $\Delta$); solvable groups and $D_k(G)$; PS 5.4 pictured; the correspondence theorem (indices) & \ref{sec:action-examples}, \ref{sec:sign}, \ref{sec:derived-series}, \ref{sec:commutators}, \ref{sec:second-iso} \\
 Fri Oct 23 \newline lecture; slides & Simple groups of order $\leq 100$: $p$-groups via the center; the normalizer and $n_p \mid m$; $n_p = 1$; the conjugation map $G \to S_{n_p}$; leaving $A_N$; orders $21, 12, 80, 112$; overview of the classification and of compact Lie groups & \ref{sec:small-simple-groups} \\
 Mon Oct 26 \newline lecture; Worksheet 11 & Internal and external direct sums and products; internal semidirect products; the action by automorphisms; external semidirect products $N \rtimes_\varphi S$; $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$; notation & \ref{sec:internal-direct-products}, \ref{sec:semidirect-products} (WS 11.1--11.6) \\
-Wed Oct 28 \newline lecture; Worksheet 12 & Subnormal, composition and quasi-composition series; Jordan--H\"older (statement); $\mathbb{Z}$ has no composition series; finite groups do; the grid $Z_{ij}$; WS 12.1--12.3 & \ref{sec:composition-series} (WS 12.1--12.5) \\
+Wed Oct 28 \newline lecture; Worksheet 12 & Subnormal, composition and quasi-composition series; Jordan--H\"older (statement); $\mathbb{Z}$ has no composition series; finite groups do; the grid $Z_{ij}$; WS 12.1--12.3 & \ref{sec:composition-series}, \ref{sec:jh-grid} (WS 12.1--12.3), \ref{sec:jordan-holder} (statement) \\
 Thu Oct 29 \newline Problem Set 7 (submitted) & Proper subgroups of $A_n$ have index $\geq n$; index $n$ gives $A_{n-1}$; simple groups of order $60$ are $A_5$; orders $\equiv 2 \bmod 4$; no simple group of order $56$; two normal subgroups with simple quotients & \ref{sub:orders-30-56-90}, \ref{sub:order-60}, \ref{sec:composition-series} \\
-Fri Oct 30 \newline lecture; quiz & Jordan--H\"older finished: the nine squares, four impossible (WS 12.4), the crossing square (WS 12.5), changeovers and pipes, proof of the theorem (WS 12.6); flags in $(\mathbb{Z}/p\mathbb{Z})^n$ & \ref{sub:jh-grid} (WS 12.4--12.6) \\
+Fri Oct 30 \newline lecture; quiz & Jordan--H\"older finished: the nine squares, four impossible (WS 12.4), the crossing square (WS 12.5), changeovers and pipes, proof of the theorem (WS 12.6); flags in $(\mathbb{Z}/p\mathbb{Z})^n$ & \ref{sec:jh-grid} (WS 12.4--12.5), \ref{sec:jordan-holder} (WS 12.6) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

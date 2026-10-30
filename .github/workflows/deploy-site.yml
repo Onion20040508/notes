@@ -54,11 +54,12 @@ jobs:
       - name: Build
         working-directory: quartz
         # KaTeX output for the whole vault does not fit in Node's default 4 GB heap (runner has 16 GB).
+        # 4 parallel parsers ran the runner out of memory (OOM "Killed", 2026-10-30); 2 keep it under 16 GB.
         env:
           NODE_OPTIONS: --max-old-space-size=12288
         run: |
           npx quartz plugin install --from-config
-          npx quartz build
+          npx quartz build --concurrency 2
 
       - name: Add page-style switcher
         run: python3 vault/.quartz-site/postbuild.py quartz/public vault/.quartz-site/looks.js

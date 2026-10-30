@@ -28,12 +28,12 @@ tags: [group-theory, math493]
 | $G\backslash X$, $X/G$ | Orbit spaces of a left and a right action. | [[§27 Orbits#^def-27-2\|Def. §27.2]], [[§27 Orbits#^def-27-4\|Def. §27.4]] |
 | $H \trianglelefteq G$, $[G, G]$ | Normal subgroup; commutator subgroup, also written $D(G)$. | [[§38 Normal Subgroups#^def-38-1\|Def. §38.1]]; [[§47 Commutators#^def-47-2\|Def. §47.2]] |
 | $D_k(G)$ | The $k$-th term of the derived series, $D_0(G) = G$, $D_{k+1}(G) = D(D_k(G))$. | [[§49 The Derived Series#^def-49-1\|Def. §49.1]] |
-| $\#(G)$ | Worksheet 10's notation for $\vert G\vert$. | [[§52 p-Groups and Sylow Subgroups\|§52]] |
+| $\#(G)$ | Worksheet 10's notation for $\vert G\vert$. | [[§54 p-Groups and Sylow Subgroups\|§54]] |
 | $G^{\mathrm{ab}}$ | Abelianization $G/[G,G]$. | [[§47 Commutators#^def-47-3\|Def. §47.3]] |
 | $G/N$, $\pi$ | Quotient group by a normal subgroup; canonical projection $g \mapsto gN$. | [[§40 Quotient Groups#^def-40-1\|Def. §40.1]] |
 | $PSL_n(F)$ | Projective special linear group $SL_n(F)/Z$. | [[§43 Simple Groups#^def-43-2\|Def. §43.2]] |
-| $n_p$, $N_G(H)$ | Number of Sylow $p$-subgroups; normalizer of $H$. | [[§54 Simple Groups of Small Order#^rem-54-2\|§53]], [[§54 Simple Groups of Small Order#^def-54-1\|Def. §54.1]] |
-| $N \rtimes_\varphi S$, $S \ltimes_\varphi N$ | Semidirect product: $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$. | [[§56 Semidirect Products#^def-56-2\|Def. §56.2]] |
+| $n_p$, $N_G(H)$ | Number of Sylow $p$-subgroups; normalizer of $H$. | [[§56 Simple Groups of Small Order#^rem-56-2\|§56]], [[§56 Simple Groups of Small Order#^def-56-1\|Def. §56.1]] |
+| $N \rtimes_\varphi S$, $S \ltimes_\varphi N$ | Semidirect product: $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$. | [[§58 Semidirect Products#^def-58-2\|Def. §58.2]] |
 | $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§41 The First and Second Isomorphism Theorems#^def-41-1\|Def. §41.1]] |
 | $X \sqcup Y$ | Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$. | [[§40 Quotient Groups#^def-40-2\|Def. §40.2]] |
 | $\hookrightarrow$, $\twoheadrightarrow$ | An injective map; a surjective map. | [[§40 Quotient Groups#^prop-40-4\|§40.4]] |

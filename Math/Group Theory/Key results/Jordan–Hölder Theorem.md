@@ -2,18 +2,18 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 50.1", "composition factors are unique", "Jordan-Holder"]
+aliases: ["MATH 493 52.1", "composition factors are unique", "Jordan-Holder"]
 tags: [group-theory, hub]
 ---
-![[§50 Composition Series and the Jordan–Hölder Theorem#^thm-50-1]]
+![[§52 The Jordan–Hölder Theorem#^thm-52-1]]
 
 ## Treated in
-- [[§50 Composition Series and the Jordan–Hölder Theorem#^thm-50-1|Theorem §50.1: Jordan–Hölder Theorem]], in [[§50 Composition Series and the Jordan–Hölder Theorem]]
+- [[§52 The Jordan–Hölder Theorem#^thm-52-1|Theorem §52.1: Jordan–Hölder Theorem]], in [[§52 The Jordan–Hölder Theorem]]
 
 ## Its proof uses
-- [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-8|Proposition §50.8: Horizontal Edges Propagate]]
-- [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-9|Proposition §50.9: Four Impossible Squares]]
-- [[§50 Composition Series and the Jordan–Hölder Theorem#^prop-50-10|Proposition §50.10: The Crossing Square]]
+- [[§51 The Grid of Intersections#^prop-51-4|Proposition §51.4: Horizontal Edges Propagate]]
+- [[§51 The Grid of Intersections#^prop-51-5|Proposition §51.5: Four Impossible Squares]]
+- [[§51 The Grid of Intersections#^prop-51-6|Proposition §51.6: The Crossing Square]]
 
 ## Used in (Group Theory)
 - (not cited later in the course)

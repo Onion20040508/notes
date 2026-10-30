@@ -2400,7 +2400,7 @@ $\operatorname{Fix}(g) = \{x \in X : g \star x = x\} \subseteq X$; $g \in \opera
 
 > [!tip]- Hints: where it lives, examples
 > - Burnside, Theorem [[§30 Orbit–Stabilizer#^thm-30-6|§30.6]]; Examples [[§30 Orbit–Stabilizer#^ex-30-3|§30.3]].
-> - $p$-group fixed points: Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-1|§52.1]].
+> - $p$-group fixed points: Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]].
 
 #### Orbit · P1
 
@@ -2974,7 +2974,7 @@ If $p$ is a prime dividing $|G|$, then $G$ has an element of order $p$, see Theo
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12 (prime-power counting).
-> - Proof pending; it also follows from Sylow I (Theorem [[§53 The Sylow Theorems#^thm-53-4|§53.4]]): a nontrivial $p$-group contains an element of order $p$.
+> - Proof pending; it also follows from Sylow I (Theorem [[§55 The Sylow Theorems#^thm-55-4|§55.4]]): a nontrivial $p$-group contains an element of order $p$.
 
 ### Priority 5 · notes only (Pinter, MATH 412, not from class)
 
@@ -3084,7 +3084,7 @@ $Z(G)$ is the set of central elements, see Definition [[§35 The Center#^def-35-
 
 > [!tip]- Hints: where it lives, examples
 > - Kernel of $h \mapsto c_h$: Proposition [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], remark [[§35 The Center#^rem-35-1|§35]].
-> - Theorem [[§35 The Center#^thm-35-3|§35.3]]; Theorem [[§52 p-Groups and Sylow Subgroups#^thm-52-7|§52.7]].
+> - Theorem [[§35 The Center#^thm-35-3|§35.3]]; Theorem [[§54 p-Groups and Sylow Subgroups#^thm-54-7|§54.7]].
 
 ### Priority 2 · problem sets (about a quarter)
 
@@ -3115,8 +3115,8 @@ A group of order $p^k$ for a prime $p$ and some $k \geq 0$, see Definition [[§3
 - [ ] Q4 **[why]** Is the trivial group a $p$-group? Why does the center theorem need $k \geq 1$?
 
 > [!tip]- Hints: where it lives, examples
-> - Theorem [[§35 The Center#^thm-35-3|§35.3]], Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-1|§52.1]].
-> - Unitriangular: Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-5|§52.5]].
+> - Theorem [[§35 The Center#^thm-35-3|§35.3]], Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]].
+> - Unitriangular: Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-5|§54.5]].
 
 ### Priority 3 · lectures and class exercises
 
@@ -3312,7 +3312,7 @@ If $|G| = p^k$, $k \geq 1$, then $p \mid |Z(G)|$, so $|Z(G)| \geq p$, see Coroll
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12 (prime-power counting) via G4.
 > - Theorem [[§34 Conjugation as an Action and the Class Equation#^thm-34-4|§34.4]]; divisors of $p^k$ are powers of $p$.
-> - Theorem [[§52 p-Groups and Sylow Subgroups#^thm-52-7|§52.7]] ([[Group Theory HW Drill#^ps6-3|PS6.3]]) uses Theorem [[§35 The Center#^thm-35-3|§35.3]] (one central $z \neq e$), not this corollary.
+> - Theorem [[§54 p-Groups and Sylow Subgroups#^thm-54-7|§54.7]] ([[Group Theory HW Drill#^ps6-3|PS6.3]]) uses Theorem [[§35 The Center#^thm-35-3|§35.3]] (one central $z \neq e$), not this corollary.
 
 ### Priority 5 · notes only (Pinter, MATH 412, not from class)
 
@@ -3438,7 +3438,7 @@ $HN = \{hn : h \in H, n \in N\}$ for subgroups $H, N$, see Definition [[§41 The
 - [ ] Q4 **[why]** Compute $SL_2(\mathbb{R})Z$ for $Z$ the scalar matrices.
 
 > [!tip]- Hints: where it lives, examples
-> - Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], Example [[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41.2]], Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-6|§41.6]], Lemma [[§53 The Sylow Theorems#^lem-53-8|§53.8]].
+> - Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], Example [[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41.2]], Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-6|§41.6]], Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]].
 > - $GL_2^+(\mathbb{R})$: Example [[§45 S₃, S₄, A₄ and A₅#^ex-45-3|§45.3]].
 
 ## Proofs T8
@@ -3593,7 +3593,7 @@ For $N \trianglelefteq G$, $S \leq G$ finite, $|SN| = |S||N|/|S \cap N|$, see Co
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G3 with G5.
 > - $|SN|/|N| = |SN/N| = |S/(S \cap N)| = |S|/|S \cap N|$.
-> - Lemma [[§53 The Sylow Theorems#^lem-53-8|§53.8]] is the counting version for any two subgroups; remark [[§41 The First and Second Isomorphism Theorems#^rem-41-5|§41]].
+> - Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]] is the counting version for any two subgroups; remark [[§41 The First and Second Isomorphism Theorems#^rem-41-5|§41]].
 
 #### Images of subgroups containing $N$ · P1
 
@@ -4377,7 +4377,7 @@ Example [[§47 Commutators#^ex-47-2|§47.2]] → drilled as [[493 Problem Set 5#
 
 #### $p$-subgroup · P1
 
-A subgroup of $G$ which is a $p$-group (order $p^j$), see Definition [[§52 p-Groups and Sylow Subgroups#^def-52-1|§52.1]]. *Source: WS 10.*
+A subgroup of $G$ which is a $p$-group (order $p^j$), see Definition [[§54 p-Groups and Sylow Subgroups#^def-54-1|§54.1]]. *Source: WS 10.*
 
 ^nd-def-51-1
 
@@ -4387,12 +4387,12 @@ A subgroup of $G$ which is a $p$-group (order $p^j$), see Definition [[§52 p-Gr
 - [ ] Q4 **[why]** Why is every $p$-subgroup contained in a Sylow $p$-subgroup?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§35 The Center#^def-35-3|§35.3]]; Example [[§52 p-Groups and Sylow Subgroups#^ex-52-1|§52.1]].
-> - Fixed points: Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-1|§52.1]]; containment: Proposition [[§53 The Sylow Theorems#^prop-53-5|§53.5]](1).
+> - Definition [[§35 The Center#^def-35-3|§35.3]]; Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]].
+> - Fixed points: Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]]; containment: Proposition [[§55 The Sylow Theorems#^prop-55-5|§55.5]](1).
 
 #### Sylow $p$-subgroup · P1
 
-For $|G| = p^km$ with $p \nmid m$, a subgroup of order $p^k$, see Definition [[§52 p-Groups and Sylow Subgroups#^def-52-2|§52.2]]. *Source: WS 10.*
+For $|G| = p^km$ with $p \nmid m$, a subgroup of order $p^k$, see Definition [[§54 p-Groups and Sylow Subgroups#^def-54-2|§54.2]]. *Source: WS 10.*
 
 ^nd-def-51-2
 
@@ -4403,8 +4403,8 @@ For $|G| = p^km$ with $p \nmid m$, a subgroup of order $p^k$, see Definition [[�
 - [ ] Q5 **[why]** Why is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ of order $p^{\binom{n}{2}}$?
 
 > [!tip]- Hints: where it lives, examples
-> - Example [[§52 p-Groups and Sylow Subgroups#^ex-52-1|§52.1]] ($3, 1$ and $3, 4$), Example [[§53 The Sylow Theorems#^ex-53-1|§53.1]] ($n_5 = 6$), Example [[§52 p-Groups and Sylow Subgroups#^ex-52-2|§52.2]].
-> - Theorems [[§53 The Sylow Theorems#^thm-53-4|§53.4]], [[§53 The Sylow Theorems#^thm-53-6|§53.6]], [[§53 The Sylow Theorems#^thm-53-9|§53.9]]; order: Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-4|§52.4]].
+> - Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]] ($3, 1$ and $3, 4$), Example [[§55 The Sylow Theorems#^ex-55-1|§55.1]] ($n_5 = 6$), Example [[§54 p-Groups and Sylow Subgroups#^ex-54-2|§54.2]].
+> - Theorems [[§55 The Sylow Theorems#^thm-55-4|§55.4]], [[§55 The Sylow Theorems#^thm-55-6|§55.6]], [[§55 The Sylow Theorems#^thm-55-9|§55.9]]; order: Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-4|§54.4]].
 
 ## Proofs T10
 
@@ -4412,7 +4412,7 @@ For $|G| = p^km$ with $p \nmid m$, a subgroup of order $p^k$, see Definition [[�
 
 #### Fixed points of a $p$-group action · P1
 
-If a $p$-group $P$ acts on a finite set $X$ with $|X| \not\equiv 0 \pmod p$, then $P$ fixes a point of $X$, see Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-1|§52.1]]. *Source: WS 10.1. Proof pending in the notes.*
+If a $p$-group $P$ acts on a finite set $X$ with $|X| \not\equiv 0 \pmod p$, then $P$ fixes a point of $X$, see Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]]. *Source: WS 10.1. Proof pending in the notes.*
 
 ^nd-prop-51-1
 
@@ -4424,12 +4424,12 @@ If a $p$-group $P$ acts on a finite set $X$ with $|X| \not\equiv 0 \pmod p$, the
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G4 and G12 (fixed points mod $p$).
-> - Orbit sizes divide $|P| = p^k$; the counting argument appears written out inside the proof of Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]].
-> - Used in Lemma [[§53 The Sylow Theorems#^lem-53-1|§53.1]].
+> - Orbit sizes divide $|P| = p^k$; the counting argument appears written out inside the proof of Theorem [[§55 The Sylow Theorems#^thm-55-9|§55.9]].
+> - Used in Lemma [[§55 The Sylow Theorems#^lem-55-1|§55.1]].
 
 #### The unitriangular matrices are a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ · P1
 
-The upper unitriangular matrices form a Sylow $p$-subgroup $P$ of $GL_n(\mathbb{F}_p)$, see Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-5|§52.5]]. *Source: WS 10.2. Proof pending in the notes.*
+The upper unitriangular matrices form a Sylow $p$-subgroup $P$ of $GL_n(\mathbb{F}_p)$, see Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-5|§54.5]]. *Source: WS 10.2. Proof pending in the notes.*
 
 ^nd-prop-51-5
 
@@ -4442,11 +4442,11 @@ The upper unitriangular matrices form a Sylow $p$-subgroup $P$ of $GL_n(\mathbb{
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G10 and G12.
 > - $\binom{n}{2}$ entries above the diagonal; diagonal of a product is the product of diagonals.
-> - Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-4|§52.4]]; Example [[§52 p-Groups and Sylow Subgroups#^ex-52-2|§52.2]]; Theorem [[§53 The Sylow Theorems#^thm-53-4|§53.4]].
+> - Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-4|§54.4]]; Example [[§54 p-Groups and Sylow Subgroups#^ex-54-2|§54.2]]; Theorem [[§55 The Sylow Theorems#^thm-55-4|§55.4]].
 
 #### Sylow subgroups of a subgroup · P1
 
-If $\Pi$ is a Sylow $p$-subgroup of $\Gamma$ and $G \leq \Gamma$, then $G \cap \gamma\Pi\gamma^{-1}$ is a Sylow $p$-subgroup of $G$ for some $\gamma \in \Gamma$, see Proposition [[§53 The Sylow Theorems#^prop-53-3|§53.3]]. *Source: WS 10.3; class 10/14.*
+If $\Pi$ is a Sylow $p$-subgroup of $\Gamma$ and $G \leq \Gamma$, then $G \cap \gamma\Pi\gamma^{-1}$ is a Sylow $p$-subgroup of $G$ for some $\gamma \in \Gamma$, see Proposition [[§55 The Sylow Theorems#^prop-55-3|§55.3]]. *Source: WS 10.3; class 10/14.*
 
 ^nd-prop-52-3
 
@@ -4464,7 +4464,7 @@ If $\Pi$ is a Sylow $p$-subgroup of $\Gamma$ and $G \leq \Gamma$, then $G \cap \
 
 #### The First Sylow Theorem · P1
 
-Every finite group has a Sylow $p$-subgroup, see Theorem [[§53 The Sylow Theorems#^thm-53-4|§53.4]]. *Source: WS 10.4; class 10/14.*
+Every finite group has a Sylow $p$-subgroup, see Theorem [[§55 The Sylow Theorems#^thm-55-4|§55.4]]. *Source: WS 10.4; class 10/14.*
 
 ^nd-thm-52-4
 
@@ -4476,12 +4476,12 @@ Every finite group has a Sylow $p$-subgroup, see Theorem [[§53 The Sylow Theore
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G11 (embeddings into $GL_n$) and G12.
-> - Corollary [[§25 Actions#^cor-25-6|§25.6]]; Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-5|§52.5]]; Proposition [[§53 The Sylow Theorems#^prop-53-3|§53.3]].
+> - Corollary [[§25 Actions#^cor-25-6|§25.6]]; Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-5|§54.5]]; Proposition [[§55 The Sylow Theorems#^prop-55-3|§55.3]].
 > - A Sylow subgroup of order $p^k$, $k \geq 1$, contains an element of order $p$ (take a power of any non-identity element).
 
 #### $p$-subgroups and conjugates of a Sylow subgroup · P1
 
-For a Sylow $p$-subgroup $P$ ($|P| = p^k$): every $p$-subgroup $Q$ lies in some $gPg^{-1}$; every subgroup $H$ with $p^k \mid |H|$ contains some $gPg^{-1}$, see Proposition [[§53 The Sylow Theorems#^prop-53-5|§53.5]]. *Source: WS 10.5; board 10/14.*
+For a Sylow $p$-subgroup $P$ ($|P| = p^k$): every $p$-subgroup $Q$ lies in some $gPg^{-1}$; every subgroup $H$ with $p^k \mid |H|$ contains some $gPg^{-1}$, see Proposition [[§55 The Sylow Theorems#^prop-55-5|§55.5]]. *Source: WS 10.5; board 10/14.*
 
 ^nd-prop-52-5
 
@@ -4493,11 +4493,11 @@ For a Sylow $p$-subgroup $P$ ($|P| = p^k$): every $p$-subgroup $Q$ lies in some 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12.
-> - Lemma [[§53 The Sylow Theorems#^lem-53-1|§53.1]] with $\Gamma = G$, $\Pi = P$; Sylow I for $H$; equal orders.
+> - Lemma [[§55 The Sylow Theorems#^lem-55-1|§55.1]] with $\Gamma = G$, $\Pi = P$; Sylow I for $H$; equal orders.
 
 #### The Second Sylow Theorem · P1
 
-Any two Sylow $p$-subgroups are conjugate: $P_2 = gP_1g^{-1}$, see Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]]. *Source: WS 10.6; lecture 10/16 ("by 10.3").*
+Any two Sylow $p$-subgroups are conjugate: $P_2 = gP_1g^{-1}$, see Theorem [[§55 The Sylow Theorems#^thm-55-6|§55.6]]. *Source: WS 10.6; lecture 10/16 ("by 10.3").*
 
 ^nd-thm-52-6
 
@@ -4509,12 +4509,12 @@ Any two Sylow $p$-subgroups are conjugate: $P_2 = gP_1g^{-1}$, see Theorem [[§5
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12 and G6.
-> - Proposition [[§53 The Sylow Theorems#^prop-53-3|§53.3]] with $P_2$; $|gP_1g^{-1}| = |P_1| = |P_2|$.
-> - Alternative: Proposition [[§53 The Sylow Theorems#^prop-53-5|§53.5]](1) with $Q = P_2$.
+> - Proposition [[§55 The Sylow Theorems#^prop-55-3|§55.3]] with $P_2$; $|gP_1g^{-1}| = |P_1| = |P_2|$.
+> - Alternative: Proposition [[§55 The Sylow Theorems#^prop-55-5|§55.5]](1) with $Q = P_2$.
 
 #### The Third Sylow Theorem · P1
 
-The number $n_p$ of Sylow $p$-subgroups is $\equiv 1 \pmod p$, see Theorem [[§53 The Sylow Theorems#^thm-53-9|§53.9]]. *Source: stated on WS 10; lecture 10/16.*
+The number $n_p$ of Sylow $p$-subgroups is $\equiv 1 \pmod p$, see Theorem [[§55 The Sylow Theorems#^thm-55-9|§55.9]]. *Source: stated on WS 10; lecture 10/16.*
 
 ^nd-thm-52-9
 
@@ -4528,14 +4528,14 @@ The number $n_p$ of Sylow $p$-subgroups is $\equiv 1 \pmod p$, see Theorem [[§5
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12 and G4.
 > - $P$-orbit sizes divide $p^k$; singletons are fixed points.
-> - $(x_1q_1)(x_2q_2) = (x_1x_2)(x_2^{-1}q_1x_2)q_2$; Lemma [[§53 The Sylow Theorems#^lem-53-8|§53.8]]; $p^{2k-j}$ does not divide $|G|$ (Lagrange).
+> - $(x_1q_1)(x_2q_2) = (x_1x_2)(x_2^{-1}q_1x_2)q_2$; Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]]; $p^{2k-j}$ does not divide $|G|$ (Lagrange).
 > - Sylow II only makes the $G$-action transitive; the count uses only $P$.
 
 ### Priority 2 · problem sets (about a quarter)
 
 #### Internal direct products · P2
 
-If $H, L \leq G$ commute elementwise, $H \cap L = \{e\}$ and $|H||L| = |G|$, then $(h, l) \mapsto hl$ is an isomorphism $H \times L \to G$; elementwise commuting holds if $H$ is central, or if $H, L$ are both normal with trivial intersection, see Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-6|§52.6]]. *Source: from [[Group Theory HW Drill#^ps6-3-5|PS6.3(5)]] (central case, drilled as [[493 Problem Set 6#^hw-6-3|PS6.3]]); the normal case is used for order $pq$.*
+If $H, L \leq G$ commute elementwise, $H \cap L = \{e\}$ and $|H||L| = |G|$, then $(h, l) \mapsto hl$ is an isomorphism $H \times L \to G$; elementwise commuting holds if $H$ is central, or if $H, L$ are both normal with trivial intersection, see Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]]. *Source: from [[Group Theory HW Drill#^ps6-3-5|PS6.3(5)]] (central case, drilled as [[493 Problem Set 6#^hw-6-3|PS6.3]]); the normal case is used for order $pq$.*
 
 ^nd-lem-51-6
 
@@ -4554,7 +4554,7 @@ If $H, L \leq G$ commute elementwise, $H \cap L = \{e\}$ and $|H||L| = |G|$, the
 
 #### Sylow subgroups of $S_3$ and $S_4$ · P3
 
-$S_3$: three Sylow $2$-subgroups $\langle (i\,j) \rangle$, one Sylow $3$-subgroup $A_3$; $S_4$: three Sylow $2$-subgroups $K \cup \tau K$ of order $8$, four Sylow $3$-subgroups, see Example [[§52 p-Groups and Sylow Subgroups#^ex-52-1|§52.1]]. *Source: lecture 10/12 (the counts are not from class).*
+$S_3$: three Sylow $2$-subgroups $\langle (i\,j) \rangle$, one Sylow $3$-subgroup $A_3$; $S_4$: three Sylow $2$-subgroups $K \cup \tau K$ of order $8$, four Sylow $3$-subgroups, see Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]]. *Source: lecture 10/12 (the counts are not from class).*
 
 ^nd-ex-51-1
 
@@ -4567,11 +4567,11 @@ $S_3$: three Sylow $2$-subgroups $\langle (i\,j) \rangle$, one Sylow $3$-subgrou
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G10 and G12.
 > - Correspondence for $S_4$ and $K$: Example [[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45.2]]; eight $3$-cycles, two per subgroup.
-> - Remark [[§53 The Sylow Theorems#^rem-53-3|§52]] ($3 \equiv 1 \pmod 2$).
+> - Remark [[§55 The Sylow Theorems#^rem-55-3|§55]] ($3 \equiv 1 \pmod 2$).
 
 #### A Sylow 5-subgroup of $GL_2(\mathbb{F}_5)$ · P3
 
-$|GL_2(\mathbb{F}_5)| = 480 = 2^5 \cdot 3 \cdot 5$, and $\langle u \rangle$, $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$, is a Sylow $5$-subgroup, see Example [[§52 p-Groups and Sylow Subgroups#^ex-52-2|§52.2]]. *Source: lecture 10/14.*
+$|GL_2(\mathbb{F}_5)| = 480 = 2^5 \cdot 3 \cdot 5$, and $\langle u \rangle$, $u = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$, is a Sylow $5$-subgroup, see Example [[§54 p-Groups and Sylow Subgroups#^ex-54-2|§54.2]]. *Source: lecture 10/14.*
 
 ^nd-ex-51-2
 
@@ -4583,11 +4583,11 @@ $|GL_2(\mathbb{F}_5)| = 480 = 2^5 \cdot 3 \cdot 5$, and $\langle u \rangle$, $u 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G10.
 > - $(25 - 1)(25 - 5) = 480$; $u^j = \begin{pmatrix} 1 & j \\ 0 & 1 \end{pmatrix}$.
-> - Conjugate by $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ (Sylow II, Theorem [[§53 The Sylow Theorems#^thm-53-6|§53.6]]).
+> - Conjugate by $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ (Sylow II, Theorem [[§55 The Sylow Theorems#^thm-55-6|§55.6]]).
 
 #### $p$-subgroups lie in a conjugate of a Sylow subgroup · P3
 
-If $\Pi$ is a Sylow $p$-subgroup of $\Gamma$ and $P \leq \Gamma$ a $p$-subgroup, then $P \subseteq \gamma\Pi\gamma^{-1}$ for some $\gamma$, see Lemma [[§53 The Sylow Theorems#^lem-53-1|§53.1]]. *Source: lecture 10/12.*
+If $\Pi$ is a Sylow $p$-subgroup of $\Gamma$ and $P \leq \Gamma$ a $p$-subgroup, then $P \subseteq \gamma\Pi\gamma^{-1}$ for some $\gamma$, see Lemma [[§55 The Sylow Theorems#^lem-55-1|§55.1]]. *Source: lecture 10/12.*
 
 ^nd-lem-52-1
 
@@ -4599,12 +4599,12 @@ If $\Pi$ is a Sylow $p$-subgroup of $\Gamma$ and $P \leq \Gamma$ a $p$-subgroup,
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G4, G11, G12.
-> - $X = \Gamma/\Pi$, $|X| = m$; Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-1|§52.1]].
+> - $X = \Gamma/\Pi$, $|X| = m$; Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]].
 > - $\operatorname{Stab}(\gamma\Pi) = \gamma\Pi\gamma^{-1}$ (Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]](3)).
 
 #### $p$-subgroups of $GL_n(\mathbb{F}_p)$ are conjugate into unitriangular matrices · P3
 
-Every $p$-subgroup $Q \leq GL_n(\mathbb{F}_p)$ satisfies $\gamma^{-1}Q\gamma \subseteq P$ (unitriangular) for some $\gamma$, see Corollary [[§53 The Sylow Theorems#^cor-53-2|§53.2]]. *Source: lecture 10/12.*
+Every $p$-subgroup $Q \leq GL_n(\mathbb{F}_p)$ satisfies $\gamma^{-1}Q\gamma \subseteq P$ (unitriangular) for some $\gamma$, see Corollary [[§55 The Sylow Theorems#^cor-55-2|§55.2]]. *Source: lecture 10/12.*
 
 ^nd-cor-52-2
 
@@ -4614,12 +4614,12 @@ Every $p$-subgroup $Q \leq GL_n(\mathbb{F}_p)$ satisfies $\gamma^{-1}Q\gamma \su
 - [ ] Q4 **[why]** Interpret it as a change of basis: why is it surprising (a subgroup of order $16$ of $GL_{10^6}(\mathbb{F}_2)$)?
 
 > [!tip]- Hints: route of the proof in the notes
-> - Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-5|§52.5]] and Lemma [[§53 The Sylow Theorems#^lem-53-1|§53.1]].
-> - Remark [[§53 The Sylow Theorems#^rem-53-2|§52]].
+> - Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-5|§54.5]] and Lemma [[§55 The Sylow Theorems#^lem-55-1|§55.1]].
+> - Remark [[§55 The Sylow Theorems#^rem-55-2|§55]].
 
 #### A normal Sylow subgroup is the only one · P3
 
-A Sylow $p$-subgroup $P$ is normal iff it is the only Sylow $p$-subgroup ($n_p = 1$), see Corollary [[§53 The Sylow Theorems#^cor-53-7|§53.7]]. *Source: lecture 10/16 for (1); (2) not stated in lecture, used for order $15$.*
+A Sylow $p$-subgroup $P$ is normal iff it is the only Sylow $p$-subgroup ($n_p = 1$), see Corollary [[§55 The Sylow Theorems#^cor-55-7|§55.7]]. *Source: lecture 10/16 for (1); (2) not stated in lecture, used for order $15$.*
 
 ^nd-cor-52-7
 
@@ -4635,7 +4635,7 @@ A Sylow $p$-subgroup $P$ is normal iff it is the only Sylow $p$-subgroup ($n_p =
 
 #### The order of a product of subgroups · P3
 
-For finite $H, K \leq G$, $|HK| = |H||K|/|H \cap K|$, see Lemma [[§53 The Sylow Theorems#^lem-53-8|§53.8]]. *Source: not from lecture, filled in (the lecture uses it in Sylow III).*
+For finite $H, K \leq G$, $|HK| = |H||K|/|H \cap K|$, see Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]]. *Source: not from lecture, filled in (the lecture uses it in Sylow III).*
 
 ^nd-lem-52-8
 
@@ -4652,7 +4652,7 @@ For finite $H, K \leq G$, $|HK| = |H||K|/|H \cap K|$, see Lemma [[§53 The Sylow
 
 #### The number of Sylow subgroups divides $|G|$ · P3
 
-$n_p$ divides $|G|$, in fact $n_p \mid m$ where $|G| = p^km$; with Sylow III, $n_p \mid m$ and $n_p \equiv 1 \pmod p$, see Corollary [[§53 The Sylow Theorems#^cor-53-10|§53.10]]. *Source: lecture 10/16 ($n_p \mid |G|$); $n_p \mid m$ not from lecture.*
+$n_p$ divides $|G|$, in fact $n_p \mid m$ where $|G| = p^km$; with Sylow III, $n_p \mid m$ and $n_p \equiv 1 \pmod p$, see Corollary [[§55 The Sylow Theorems#^cor-55-10|§55.10]]. *Source: lecture 10/16 ($n_p \mid |G|$); $n_p \mid m$ not from lecture.*
 
 ^nd-cor-52-10
 
@@ -4669,7 +4669,7 @@ $n_p$ divides $|G|$, in fact $n_p \mid m$ where $|G| = p^km$; with Sylow III, $n
 
 #### The Sylow 5-subgroups of $S_5$ · P3
 
-$S_5$ has $n_5 = 6$ Sylow $5$-subgroups, see Example [[§53 The Sylow Theorems#^ex-53-1|§53.1]]. *Source: lecture 10/16.*
+$S_5$ has $n_5 = 6$ Sylow $5$-subgroups, see Example [[§55 The Sylow Theorems#^ex-55-1|§55.1]]. *Source: lecture 10/16.*
 
 ^nd-ex-52-1
 
@@ -4686,7 +4686,7 @@ $S_5$ has $n_5 = 6$ Sylow $5$-subgroups, see Example [[§53 The Sylow Theorems#^
 
 #### Groups of order 15 · P3
 
-Every group of order $15$ is cyclic, see Example [[§53 The Sylow Theorems#^ex-53-2|§53.2]]. *Source: lecture 10/16.*
+Every group of order $15$ is cyclic, see Example [[§55 The Sylow Theorems#^ex-55-2|§55.2]]. *Source: lecture 10/16.*
 
 ^nd-ex-52-2
 
@@ -4699,12 +4699,12 @@ Every group of order $15$ is cyclic, see Example [[§53 The Sylow Theorems#^ex-5
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12, then G14 (CRT).
-> - Corollaries [[§53 The Sylow Theorems#^cor-53-10|§53.10]], [[§53 The Sylow Theorems#^cor-53-7|§53.7]]; Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-6|§52.6]].
-> - Order $6$: $n_2 = 3$ is allowed (remark [[§53 The Sylow Theorems#^rem-53-3|§52]]).
+> - Corollaries [[§55 The Sylow Theorems#^cor-55-10|§55.10]], [[§55 The Sylow Theorems#^cor-55-7|§55.7]]; Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]].
+> - Order $6$: $n_2 = 3$ is allowed (remark [[§55 The Sylow Theorems#^rem-55-3|§55]]).
 
 #### Groups of order $pq$ · P3
 
-For primes $p < q$ with $q \not\equiv 1 \pmod p$, every group of order $pq$ is cyclic, see Proposition [[§53 The Sylow Theorems#^prop-53-11|§53.11]]. *Source: lecture 10/16 ("same for $|G| = pq$"); filled in.* **[class exercise, 10/16]**
+For primes $p < q$ with $q \not\equiv 1 \pmod p$, every group of order $pq$ is cyclic, see Proposition [[§55 The Sylow Theorems#^prop-55-11|§55.11]]. *Source: lecture 10/16 ("same for $|G| = pq$"); filled in.* **[class exercise, 10/16]**
 
 ^nd-prop-52-11
 
@@ -4717,14 +4717,14 @@ For primes $p < q$ with $q \not\equiv 1 \pmod p$, every group of order $pq$ is c
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12, G14.
 > - Divisors of $pq$ are $1, p, q, pq$; mod $q$: $p \not\equiv 1$ since $1 < p < q$.
-> - Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-6|§52.6]]; remark [[§53 The Sylow Theorems#^rem-53-3|§52]].
+> - Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]]; remark [[§55 The Sylow Theorems#^rem-55-3|§55]].
 
 ### Priority 5 · notes only (Pinter, MATH 412, not from class)
 
 #### The order of $GL_n(\mathbb{F}_p)$ · P5
 
-Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-3|§52.3]] and Proposition [[§52 p-Groups and Sylow Subgroups#^prop-52-4|§52.4]] (with Lemma [[§52 p-Groups and Sylow Subgroups#^lem-52-2|§52.2]]) → drilled as [[493 Problem Set 6#^hw-6-4|PS6.4]].
+Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-3|§54.3]] and Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-4|§54.4]] (with Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-2|§54.2]]) → drilled as [[493 Problem Set 6#^hw-6-4|PS6.4]].
 
 #### Groups of order $p^2$ · P5
 
-Theorem [[§52 p-Groups and Sylow Subgroups#^thm-52-7|§52.7]] and Corollary [[§52 p-Groups and Sylow Subgroups#^cor-52-8|§52.8]] → drilled as [[493 Problem Set 6#^hw-6-3|PS6.3]].
+Theorem [[§54 p-Groups and Sylow Subgroups#^thm-54-7|§54.7]] and Corollary [[§54 p-Groups and Sylow Subgroups#^cor-54-8|§54.8]] → drilled as [[493 Problem Set 6#^hw-6-3|PS6.3]].

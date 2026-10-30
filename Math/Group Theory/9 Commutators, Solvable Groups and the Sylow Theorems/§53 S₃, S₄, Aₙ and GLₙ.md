@@ -2,10 +2,10 @@
 type: section
 subject: "[[Group Theory]]"
 chapter: 9
-section: 51
+section: 53
 tags: [group-theory, math493]
 ---
-← [[§50 Composition Series and the Jordan–Hölder Theorem]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§52 p-Groups and Sylow Subgroups]] →
+← [[§52 The Jordan–Hölder Theorem]] · ↑ [[· 9 Commutators, Solvable Groups and the Sylow Theorems]] · [[§54 p-Groups and Sylow Subgroups]] →
 
 *The recurring groups as Chapter 9 saw them: characters take values in abelian groups, so they cannot separate conjugates and they kill commutators; and the solvable groups are those built from abelian pieces; composition series break them into simple pieces, the composition factors. Each part gathers the chapter's items about one group, in order.*
 
@@ -21,9 +21,9 @@ $S_3$ is solvable without being abelian: the chain $\{e\} \trianglelefteq A_3 \t
 
 ![[§49 The Derived Series#^ex-49-1]]
 
-The same chain is the only composition series of $S_3$ ($A_3$ is its only proper nontrivial normal subgroup), with factors $\mathbb{Z}/3\mathbb{Z}$, $\mathbb{Z}/2\mathbb{Z}$ in that order; the other order does not occur (Example [[§50 Composition Series and the Jordan–Hölder Theorem#^ex-50-1|§50.1]]).
+The same chain is the only composition series of $S_3$ ($A_3$ is its only proper nontrivial normal subgroup), with factors $\mathbb{Z}/3\mathbb{Z}$, $\mathbb{Z}/2\mathbb{Z}$ in that order; the other order does not occur (Example [[§52 The Jordan–Hölder Theorem#^ex-52-1|§52.1]]).
 
-![[§50 Composition Series and the Jordan–Hölder Theorem#^ex-50-1]]
+![[§52 The Jordan–Hölder Theorem#^ex-52-1]]
 
 *$S_3$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#The Symmetric Group S₃|Chapter 8]] · no later appearance yet · [[The symmetric group S₃|all appearances]]
 
@@ -33,7 +33,7 @@ $S_4$ is solvable through $\{e\} \trianglelefteq K \trianglelefteq A_4 \triangle
 
 [[§48 Solvable Groups#^prop-48-1|Proposition §48.1]] (WS 9.1) gives the chain; [[§49 The Derived Series#^ex-49-1|Example §49.1]](2) computes the derived series, finding $(1\,2)(3\,4)$ as a commutator of two $3$-cycles of $A_4$ (both in the $S_3$ part).
 
-Refining $\{e\} \trianglelefteq K$ by $\langle (1\,2)(3\,4) \rangle$ gives a composition series of $S_4$, with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$ (the remark *Relation to Solvable Groups* in [[§50 Composition Series and the Jordan–Hölder Theorem|§50]]); by the Jordan–Hölder theorem (Theorem [[§50 Composition Series and the Jordan–Hölder Theorem#^thm-50-1|§50.1]]) every composition series of $S_4$ has these factors.
+Refining $\{e\} \trianglelefteq K$ by $\langle (1\,2)(3\,4) \rangle$ gives a composition series of $S_4$, with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$ (the remark *Relation to Solvable Groups* in [[§50 Composition Series|§50]]); by the Jordan–Hölder theorem (Theorem [[§52 The Jordan–Hölder Theorem#^thm-52-1|§52.1]]) every composition series of $S_4$ has these factors.
 
 $A_4$ also appears in the $A_n$ part below, as the case $n = 4$ of the commutator computations.
 
@@ -53,7 +53,7 @@ $A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator ([[§
 
 ![[§47 Commutators#^rem-47-5]]
 
-For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$. For $n \geq 5$, $\{e\} \trianglelefteq A_n \trianglelefteq S_n$ is a composition series, with factors $A_n$ and $\mathbb{Z}/2\mathbb{Z}$; the factor $A_n$ is not cyclic of prime order, as non-solvability requires (the remark *Relation to Solvable Groups* in [[§50 Composition Series and the Jordan–Hölder Theorem|§50]]).
+For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$. For $n \geq 5$, $\{e\} \trianglelefteq A_n \trianglelefteq S_n$ is a composition series, with factors $A_n$ and $\mathbb{Z}/2\mathbb{Z}$; the factor $A_n$ is not cyclic of prime order, as non-solvability requires (the remark *Relation to Solvable Groups* in [[§50 Composition Series|§50]]).
 
 ![[§49 The Derived Series#^cor-49-2]]
 
@@ -71,4 +71,4 @@ The determinant is the model character of $GL_n(k)$, and a character is the same
 
 ![[§47 Commutators#^ex-47-2]]
 
-*$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§52 p-Groups and Sylow Subgroups#^prop-52-5|the Sylow part of Chapter 9]] → (where $GL_n(\mathbb{F}_p)$ appears once) · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
+*$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§54 p-Groups and Sylow Subgroups#^prop-54-5|the Sylow part of Chapter 9]] → (where $GL_n(\mathbb{F}_p)$ appears once) · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]

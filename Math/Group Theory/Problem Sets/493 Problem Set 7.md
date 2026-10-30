@@ -22,7 +22,7 @@ tags: [group-theory, math493]
 
 ^hw-7-1
 
-*Treated in [[§54 Simple Groups of Small Order|§54]] (Proposition [[§54 Simple Groups of Small Order#^prop-54-10|§54.10]], Lemma [[§54 Simple Groups of Small Order#^lem-54-11|§54.11]], Proposition [[§54 Simple Groups of Small Order#^prop-54-12|§54.12]], Theorem [[§54 Simple Groups of Small Order#^thm-54-13|§54.13]]).*
+*Treated in [[§56 Simple Groups of Small Order|§56]] (Proposition [[§56 Simple Groups of Small Order#^prop-56-10|§56.10]], Lemma [[§56 Simple Groups of Small Order#^lem-56-11|§56.11]], Proposition [[§56 Simple Groups of Small Order#^prop-56-12|§56.12]], Theorem [[§56 Simple Groups of Small Order#^thm-56-13|§56.13]]).*
 
 > [!question] Problem 7.2: Groups of Order $2 \bmod 4$
 > Let $G$ be a finite group with $|G| \equiv 2 \bmod 4$ and $|G| > 2$. In this problem, we will show that $G$ is not simple. In particular, this shows that there are no simple groups of order $30$ or $90$.
@@ -36,7 +36,7 @@ tags: [group-theory, math493]
 
 ^hw-7-2
 
-*Treated in [[§54 Simple Groups of Small Order|§54]] (Proposition [[§54 Simple Groups of Small Order#^prop-54-7|§54.7]]).*
+*Treated in [[§56 Simple Groups of Small Order|§56]] (Proposition [[§56 Simple Groups of Small Order#^prop-56-7|§56.7]]).*
 
 > [!question] Problem 7.3: No Simple Group of Order $56$
 > In this problem, we will show that there are no simple groups of order $56$. Suppose, to the contrary, that $G$ is a simple group of order $56$.
@@ -52,7 +52,7 @@ tags: [group-theory, math493]
 
 ^hw-7-3
 
-*Treated in [[§54 Simple Groups of Small Order|§54]] (Proposition [[§54 Simple Groups of Small Order#^prop-54-8|§54.8]]).*
+*Treated in [[§56 Simple Groups of Small Order|§56]] (Proposition [[§56 Simple Groups of Small Order#^prop-56-8|§56.8]]).*
 
 > [!question] Problem 7.4: Two Normal Subgroups with Simple Quotients
 > Let $G$ be a finite group and let $N_1$ and $N_2$ be distinct normal subgroups (so $N_1 \neq N_2$). Assume that $G/N_1$ and $G/N_2$ are both simple. We will show that $G/N_1 \cong N_2/(N_1 \cap N_2)$ and $G/N_2 \cong N_1/(N_1 \cap N_2)$. I expect to use this lemma in Friday's class.
@@ -64,4 +64,4 @@ tags: [group-theory, math493]
 
 ^hw-7-4
 
-*Treated in [[§50 Composition Series and the Jordan–Hölder Theorem|§50]] (Lemma [[§50 Composition Series and the Jordan–Hölder Theorem#^lem-50-4|§50.4]]).*
+*Treated in [[§50 Composition Series|§50]] (Lemma [[§50 Composition Series#^lem-50-3|§50.3]]).*

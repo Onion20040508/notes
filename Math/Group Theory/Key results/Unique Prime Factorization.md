@@ -22,7 +22,7 @@ tags: [group-theory, hub]
 - [[§22 The Structure of Uₙ#^thm-22-2|Theorem §22.2: Uₙ as a Product of Prime-Power Unit Groups]]
 - [[§35 The Center#^thm-35-3|Theorem §35.3: Groups of Prime-Power Order Have Nontrivial Center]]
 - [[§35 The Center#^cor-35-4|Corollary §35.4: p Divides ∣Z(G)∣]]
-- [[§52 p-Groups and Sylow Subgroups#^prop-52-1|Proposition §52.1: Fixed Points of a p-Group Action]]
+- [[§54 p-Groups and Sylow Subgroups#^prop-54-1|Proposition §54.1: Fixed Points of a p-Group Action]]
 
 ## Connections
 - **Used for.** ℚ^× ≅ ℤ^⊕∞ × ℤ/2ℤ, one coordinate per prime ([[§16 Isomorphisms#^prop-16-9|§16.9]]); Uₙ as a product over prime powers ([[§22 The Structure of Uₙ#^thm-22-2|§22.2]]) and [[§22 The Structure of Uₙ#^cor-22-3|Euler's Totient Formula]]. In a group of order pᵏ, every class size divides pᵏ and is therefore a power of p, which drives [[p-Groups Have Nontrivial Center]].

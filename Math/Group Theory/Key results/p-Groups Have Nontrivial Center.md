@@ -18,8 +18,8 @@ tags: [group-theory, hub]
 - [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]
 
 ## Used in (Group Theory)
-- [[§52 p-Groups and Sylow Subgroups#^thm-52-7|Theorem §52.7: Groups of Order p²]]
-- [[§54 Simple Groups of Small Order#^prop-54-1|Proposition §54.1: Primes and Prime Powers]]
+- [[§54 p-Groups and Sylow Subgroups#^thm-54-7|Theorem §54.7: Groups of Order p²]]
+- [[§56 Simple Groups of Small Order#^prop-56-1|Proposition §56.1: Primes and Prime Powers]]
 
 ## Connections
 - **Proof idea.** In the [[Class Equation]], every class has size dividing pᵏ ([[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]]), so the non-central ones have size divisible by p. Hence p divides |Z(G)| ([[§35 The Center#^cor-35-4|§35.4]]).

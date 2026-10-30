@@ -141,7 +141,7 @@ Points of one orbit have conjugate, hence equally large, stabilizers:
 
 ![[§26 Stabilizers and Fixed Points#^prop-26-2]]
 
-Two more are linked where they are used: the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]) with Lagrange's theorem ([[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]]), and the external semidirect product ([[§56 Semidirect Products#^def-56-2|493 Def. §56.2]], a group by [[§56 Semidirect Products#^thm-56-5|493 Thm. §56.5]]).
+Two more are linked where they are used: the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]) with Lagrange's theorem ([[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]]), and the external semidirect product ([[§58 Semidirect Products#^def-58-2|493 Def. §58.2]], a group by [[§58 Semidirect Products#^thm-58-5|493 Thm. §58.5]]).
 
 ## Labelled diagrams and their symmetry group
 
@@ -168,7 +168,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > G_n = (S_4)^n \rtimes_\varphi S_n , \qquad (\tau, \sigma)\cdot(\tau', \sigma') = \bigl(\tau\,\varphi(\sigma)(\tau'),\; \sigma\sigma'\bigr)
 > $$
 >
-> be the external semidirect product ([[§56 Semidirect Products#^def-56-2|493 Def. §56.2]]); $|G_n| = n!\,(4!)^n$. It acts on the half-edges $X_{E,n}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]) by
+> be the external semidirect product ([[§58 Semidirect Products#^def-58-2|493 Def. §58.2]]); $|G_n| = n!\,(4!)^n$. It acts on the half-edges $X_{E,n}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]) by
 >
 > $$
 > (\tau, \sigma)\cdot e = e \quad (e \in E), \qquad (\tau, \sigma)\cdot(v, a) = \bigl(\sigma(v),\; \tau_{\sigma(v)}(a)\bigr) :
@@ -621,6 +621,6 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > [!remark]- Connections
 > - Counting pairings is counting the terms of a vacuum expectation value of free fields; $(2k-1)!!$ grows like $\sqrt2\,(2k/e)^k$, which is why perturbation theory is organized by diagrams rather than by terms — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]].
 > - The symmetry factor is a stabilizer order, and "divide by $S$" is orbit–stabilizer in disguise; the same counting gives the class equation and Burnside's lemma in group theory — [[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]], [[§30 Orbit–Stabilizer#^thm-30-6|493 Thm. §30.6]].
-> - The relabelling group $(S_4)^n \rtimes S_n$ is a wreath product, $S_4 \wr S_n$ (the user's note's $S_4 \wr S_k$, $k$ the number of vertices; the identification is Step 2 of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-4|Derivation §CA.7.4]]); the 493 notes construct the semidirect product it is built from — [[§56 Semidirect Products#^def-56-2|493 Def. §56.2]].
+> - The relabelling group $(S_4)^n \rtimes S_n$ is a wreath product, $S_4 \wr S_n$ (the user's note's $S_4 \wr S_k$, $k$ the number of vertices; the identification is Step 2 of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-4|Derivation §CA.7.4]]); the 493 notes construct the semidirect product it is built from — [[§58 Semidirect Products#^def-58-2|493 Def. §58.2]].
 > - The ordered simplex of [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] produced the $\frac{1}{n!}$ of the Dyson series; here the same $\frac{1}{n!}$ meets the $n!$ relabellings of the vertices — [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]].
 > - **Used in** (C6 places): Definition §CA.7.1 — Wick's theorem for ordinary products ([[§C6.6 Wick's Theorem#^thm-c6-6-4|★ Theorem §C6.6.4]]); Theorem §CA.7.1 — the vacuum values of Wick's theorem, the first-order count and the count at every order ([[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]], [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1|Theorem §C6.7.1]], [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-3|Theorem §C6.7.3]]); Definitions §CA.7.2–§CA.7.5, Lemma §CA.7.3, Theorems §CA.7.4, §CA.7.5 and §CA.7.8 — the coefficient $1/S$ and the position-space rules ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]], [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-2|Theorem §C6.8.2]]); Corollary §CA.7.6 — the first-order count 15 = 12 + 3 as two orbits ([[§C6.9 Symmetry Factors in Practice#^ex-c6-9-1|Example §C6.9.1]]); Theorem §CA.7.9 and Example §CA.7.1 — the symmetry factors in practice ([[§C6.9 Symmetry Factors in Practice|§C6.9]], [[§C6.9 Symmetry Factors in Practice#^cau-c6-9-1|§C6.9, Caution: Loops at one vertex are permuted too]]); Theorem §CA.7.7 — "divide by the symmetry factor" ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]]).

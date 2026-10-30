@@ -35,7 +35,7 @@ $S_3$ has exactly three normal subgroups, $\{e\}$, $A_3$ and $S_3$: $\langle (1\
 
 $S_3/A_3$ first appears as item (3) of [[§40 Quotient Groups#^ex-40-1|Quotient Groups]] (in the ℤ part); $S_4/K \cong S_3$ and $PSL_2(\mathbb{F}_2) \cong S_3$ are in [[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]] and [[§43 Simple Groups#^ex-43-3|The Two Exceptions]] (in the $S_4$ part).
 
-*$S_3$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] · [[§51 S₃, S₄, Aₙ and GLₙ#The Symmetric Group S₃|Chapter 9]] → · [[The symmetric group S₃|all appearances]]
+*$S_3$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] · [[§53 S₃, S₄, Aₙ and GLₙ#The Symmetric Group S₃|Chapter 9]] → · [[The symmetric group S₃|all appearances]]
 
 ## S₄, A₄ and the Klein Four-Group K
 
@@ -56,7 +56,7 @@ The normal subgroups of $S_4$ and the Second Isomorphism Theorem route to $S_4/K
 
 ^ex-45-2
 
-*$S_4$, $A_4$ and $K$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 7]] · [[§51 S₃, S₄, Aₙ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 9]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
+*$S_4$, $A_4$ and $K$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 7]] · [[§53 S₃, S₄, Aₙ and GLₙ#S₄, A₄ and the Klein Four-Group K|Chapter 9]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
 
 ## The Alternating Groups Aₙ
 
@@ -68,7 +68,7 @@ $A_n$ is normal in $S_n$ twice over, as a subgroup of index $2$ and as the kerne
 
 Index $2$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-1|Index-2 Examples]] (in the $S_3$ part). In [[§43 Simple Groups|§43]]: [[§43 Simple Groups#^cor-43-2|Sₙ Is Not Simple for n ≥ 3]], [[§43 Simple Groups#^prop-43-4|Homomorphisms into a Simple Group]] (ℤ/3ℤ into A₅), [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]], [[§43 Simple Groups#^thm-43-7|A₅ Is the Smallest Non-Abelian Simple Group]], [[§43 Simple Groups#^lem-43-8|3-Cycles Are Conjugate in Aₙ]], [[§43 Simple Groups#^thm-43-9|Aₙ Is Simple for n ≥ 5]] (with the remark [[§43 Simple Groups#^rem-43-5|The Course Handout “Simplicity of Aₙ”]], which follows the handout's route), [[§43 Simple Groups#^cor-43-11|Which Aₙ Are Simple]].
 
-*$A_n$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§51 S₃, S₄, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] → · [[The alternating group A₅|all appearances]]
+*$A_n$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§53 S₃, S₄, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]] → · [[The alternating group A₅|all appearances]]
 
 ## ℤ and nℤ
 
@@ -120,4 +120,4 @@ $\det$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-2|Kernels]] and 
 
 ^ex-45-3
 
-*$GL_n$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§51 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]] → · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
+*$GL_n$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§53 S₃, S₄, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]] → · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]

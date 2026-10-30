@@ -25,7 +25,7 @@ The alternating group $A_5$ of even permutations of five letters, of order $60$.
 
 ## Chapter by chapter
 
-Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · [[§51 S₃, S₄, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]].
+Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#The Alternating Groups Aₙ|Chapter 5]] · [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · [[§53 S₃, S₄, Aₙ and GLₙ#The Alternating Groups Aₙ|Chapter 9]].
 
 ## $A_n$ is the kernel of the sign
 ![[§21 The Sign Homomorphism and the Alternating Group#^def-21-3]]

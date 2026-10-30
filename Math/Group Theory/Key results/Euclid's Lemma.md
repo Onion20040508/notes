@@ -20,7 +20,7 @@ tags: [group-theory, hub]
 - [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|Theorem §9.3: Chinese Remainder Theorem]]
 - [[§17 Cyclic Groups#^prop-17-5|Proposition §17.5: The Order of a Power]]
 - [[§22 The Structure of Uₙ#^thm-22-2|Theorem §22.2: Uₙ as a Product of Prime-Power Unit Groups]]
-- [[§52 p-Groups and Sylow Subgroups#^prop-52-5|Proposition §52.5: The Unitriangular Matrices Are a Sylow p-Subgroup of GLₙ(𝔽_p)]]
+- [[§54 p-Groups and Sylow Subgroups#^prop-54-5|Proposition §54.5: The Unitriangular Matrices Are a Sylow p-Subgroup of GLₙ(𝔽_p)]]
 
 ## Connections
 - **Used for.** The uniqueness half of [[Unique Prime Factorization]], the [[Chinese Remainder Theorem]], [[§17 Cyclic Groups#^prop-17-5|The Order of a Power]] (§17.5), and [[§22 The Structure of Uₙ#^thm-22-2|the structure of Uₙ]] (§22.2).
