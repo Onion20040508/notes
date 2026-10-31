@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Wick's theorem", Derivations "Proof by induction (filled in)" and "Four fields", Principle "Vacuum expectation values: complete contractions", paragraphs "Contracting two pairs", "Theorem and application") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part A, slides 9–10, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.3, pp. 89–90, eqs. (4.38)–(4.41) · Yu Zhao-Huan, 量子场论讲义, §6.3.1, eqs. (6.166)–(6.168); §6.3.2 (optional reading): lemma (6.169)–(6.170) with proof (6.171)–(6.185), proof of the theorem (6.186)–(6.193).*
 
-For two fields the time-ordered product is the normal-ordered product plus one contraction ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]). For $n$ fields every misplaced $\hat\phi^+$ must be moved past every $\hat\phi^-$, each move costs a $c$-number ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]]), and time ordering turns each cost into a Feynman propagator. Wick's theorem says what the total is: the normal-ordered product plus every way of contracting pairs ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]). In the vacuum only the terms with every field contracted survive, so a free vacuum expectation value is a sum over pairings of the fields. The proof is an induction on the number of fields, built on a lemma about appending one more field of earlier time. Yu treats this in §6.3, eqs. (6.166)–(6.193), for bosons and fermions, and proves it with the same lemma (6.169); PS prove it by prepending the latest field instead (eq. (4.41)), kept here as a second proof.
+For two fields the time-ordered product is the normal-ordered product plus one contraction ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]). For $n$ fields every misplaced $\hat\phi^+$ must be moved past every $\hat\phi^-$, each move costs a $c$-number ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]]), and time ordering turns each cost into a Feynman propagator. Wick's theorem says what the total is: the normal-ordered product plus every way of contracting pairs ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]). In the vacuum only the terms with every field contracted survive, so a free vacuum expectation value is a sum over pairings of the fields. The proof is an induction on the number of fields, built on a lemma about appending one more field of earlier time. Yu treats this in §6.3, eqs. (6.166)–(6.193), for bosons and fermions, and proves it with the same lemma (6.169); PS prove it by prepending the latest field instead (eq. (4.41)), kept here as a second proof. **Setup:** as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: identities between free-field operators ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), in any state and independent of the dynamics; vacuum values in $|0\rangle$ only ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: $\hat\phi_i \equiv \hat\phi_I(x_i)$, free fields; $D_{ij} \equiv D_F(x_i - x_j)$ where it saves space; a hat over a factor, $\widehat{\hat\phi_k}$, is avoided: "$\prod_{i\ne k}$" or "omit $\hat\phi_k$" is written out.
 
@@ -29,6 +29,8 @@ The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Fac
 >
 > the normal-ordered product of all $n + 1$ fields plus the contraction of $\hat\phi_b$ with each of the others, the rest normal ordered ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]);
 > 2. the same holds when the product on the left already carries $c$-number factors from earlier contractions among $\hat\phi_1, \dots, \hat\phi_n$: they multiply every term on the right.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: an operator identity, any state.
 >
 > *Source: PHY 513 Lecture 14, slide 9 ("$N(\phi_1\dots\phi_{n-1})\phi_n = N(\phi_1\dots\phi_{n-1}\phi_n)$ + contract $\phi_n$ with any other $\phi$"; the condition on the times is implicit there, [[§C6a.6 Wick's Theorem#^cau-c6a-6-1|Caution: The lemma needs the earliest time]]) · Yu §6.3.2, eqs. (6.169)–(6.170) · proof written here (shorter than Yu's four steps (6.171)–(6.185))*
 
@@ -129,6 +131,8 @@ The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Fac
 > 2. spelled out: the fully normal-ordered term; plus every way of contracting one pair, the remaining $n - 2$ fields normal ordered; plus every way of contracting two pairs, the rest normal ordered; and so on, down to the terms in which every field is contracted, which exist only for $n$ even. For example, the term with the two pairs $\{1,2\}$, $\{3,4\}$ contracted is $D_F(x_1 - x_2)D_F(x_3 - x_4)$, and the term with $\{1,3\}$ contracted is $D_F(x_1 - x_3):\!\prod_{k\ne1,3}\hat\phi_k\!:$.
 >
 > This is an operator identity, valid in any state.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: an operator identity, any state, independent of the dynamics.
 >
 > *Source: PHY 513 Lecture 14, slide 9 ("Wick's Theorem: General Rule") · the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Wick's theorem", eq. (wick); a principle there, a theorem here because it is derived) · PS §4.3, eq. (4.38) · Yu §6.3.1, eq. (6.166)*
 
@@ -267,6 +271,8 @@ The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Fac
 >
 > the sum over all pairings of the $n$ fields ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]), the "complete contractions". It has $(n - 1)!!$ terms for $n$ even (3, 15, 105 for $n = 4, 6, 8$) and is zero for $n$ odd.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: the free vacuum $|0\rangle$ only; in $|\Omega\rangle$ the ratio of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]] is needed ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+>
 > *Source: PHY 513 Lecture 14, slide 10 ("$\langle0|T(\phi_1\dots\phi_n)|0\rangle$ = all complete contractions") · the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Vacuum expectation values: complete contractions", eq. (wickvev)) · PS §4.3, eq. (4.40) · Yu §6.3.1, eq. (6.168); §10.5.1, after eq. (10.187) ("完全缩并", complete contraction)*
 
 ^thm-c6a-6-3
@@ -391,6 +397,8 @@ The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Fac
 > $$
 >
 > $C$ over the sets of disjoint pairs, $P$ over the pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]), each pair with the earlier-written field first. Since $D_W(-\xi) = \overline{D_W(\xi)} \ne D_W(\xi)$ in general ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]), the order inside each pair matters, unlike for $D_F$. Every Wightman function of the free field is fixed by $D_W$ ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]). Beyond the course.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: the operator identity in any state, the vacuum value in $|0\rangle$ only.
 >
 > *Source: written here (the induction of Theorem §C6a.6.2 with the lemma's ⚑ by-product)*
 

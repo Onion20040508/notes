@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.4 (Principle "Feynman rules for correlation functions, position space", paragraphs "Reading the first-order tadpole as a process", "Higher orders"), §14.5 (paragraph "Where the 4! goes", Principle "The symmetry factor") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 16–17, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 92–94, eq. (4.45); p. 99 · Yu Zhao-Huan, 量子场论讲义, §7.3, eqs. (7.112)–(7.120) (the $S$-matrix setting) · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §1 (Definitions "Slots, legs and the point map", "Pairing"), §3 (Lemma "Invariance of the integral"), §5 (Theorem "Symmetry factor: counting pairings = counting symmetries").*
 
-At first order the 15 contractions collapsed into two diagrams with coefficients $\frac18$ and $\frac12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]). This section shows why that happens at every order. Relabelling the vertices and the four legs of each vertex is a group action on the contractions; contractions in one orbit give the same integral; the orbit has $n!\,(4!)^n/S$ elements by orbit–stabilizer, with $S$ the order of the diagram's symmetry group ([[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]]); and the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels everything but $1/S$. The result is a dictionary from diagrams to formulas, the Feynman rules in position space. Yu states the $\phi^4$ vertex rule in §7.3, eq. (7.120), for matrix elements $\langle f|iT|i\rangle$ of the $S$-operator rather than for correlation functions; the line rules there are those of §7.1.
+At first order the 15 contractions collapsed into two diagrams with coefficients $\frac18$ and $\frac12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]). This section shows why that happens at every order. Relabelling the vertices and the four legs of each vertex is a group action on the contractions; contractions in one orbit give the same integral; the orbit has $n!\,(4!)^n/S$ elements by orbit–stabilizer, with $S$ the order of the diagram's symmetry group ([[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]]); and the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels everything but $1/S$. The result is a dictionary from diagrams to formulas, the Feynman rules in position space. Yu states the $\phi^4$ vertex rule in §7.3, eq. (7.120), for matrix elements $\langle f|iT|i\rangle$ of the $S$-operator rather than for correlation functions; the line rules there are those of §7.1. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
 *Conventions* ([[Larsen PHY 513]]): the numerator of the master formula for external points $E = \{x_1, \dots, x_r\}$ is $\mathcal N_E \equiv \langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\}|0\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]); identities between such series are identities of formal power series in $\lambda$, each coefficient a (formal) integral; $S$ is the symmetry factor, not the $S$-matrix ([[§C6a.8 Position-Space Feynman Rules#^cau-c6a-8-1|Caution: Three S's]]).
 
@@ -54,6 +54,8 @@ and a diagram is its drawing:
 > [!definition] Definition §C6a.8.1: Symmetry Factor of a φ⁴ Diagram
 > The **symmetry factor** $S$ of a $\phi^4$ diagram with fixed external points is the order of its automorphism group ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]): the number of permutations of the vertices and of the line-ends at each vertex that map the contraction pattern to itself, with the external points held fixed. A diagram with no such symmetry has $S = 1$.
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order; other vertices: [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-2|Remark: The same proof for other vertices]].
+>
 > *Source: PHY 513 Lecture 14, slide 17 ("If symmetry ⇒ same diagram then S = order of symmetry") · the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor": "its symmetry group") · PS §4.4, p. 93 ("the number of ways of interchanging components without changing the diagram")*
 
 ^def-c6a-8-1
@@ -76,6 +78,8 @@ and a diagram is its drawing:
 > $$
 >
 > the sum over the diagrams $D$ with the external points $x_1, \dots, x_r$ and $n$ vertices, $S(D)$ its symmetry factor ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]), and each line contributing $D_F$ of its two endpoints. Equivalently, $\frac1S = \frac{\text{number of complete contractions that produce }D}{n!\,(4!)^n}$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: order $\lambda^n$ of the numerator, in $|0\rangle$.
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor"; paragraph "Where the 4! goes") · PHY 513 Lecture 14, slide 17 · PS §4.4, pp. 92–93 · Yu §7.3, eq. (7.114) (the order-$n$ term), p. 293 (boxed: the factor from the symmetry of the diagram always agrees with the factor left over in the computation) · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), Lemma "Invariance of the integral" (Step 5) and Theorem "Symmetry factor: counting pairings = counting symmetries" · PHY 513, Problem Set 8, Problem 1(a) (the user's general setup: the order-$\lambda^k$ term, $S = k!\,(4!)^k/N$, and the stabilizer alternative) · proof written here*
 
@@ -241,6 +245,8 @@ and a diagram is its drawing:
 >
 > A line may join any two points, external or internal, including a point to itself.
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: all orders, as a formal power series; the numerator only; each line is the free-field, free-vacuum $D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]).
+>
 > *Source: PHY 513 Lecture 14, slide 16 ("all diagrams with two external points and any number of internal points where four lines end") · the user's PHY 513 notes, Ch. 14 §14.4 (Principle "Feynman rules for correlation functions, position space"; a principle there, derived here) · PS §4.4, p. 94, rules 1–4 · Yu §7.3, eq. (7.120)*
 
 ^thm-c6a-8-2
@@ -283,6 +289,8 @@ and a diagram is its drawing:
 
 > [!theorem] Theorem §C6a.8.3: Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
 > For $r$ odd, the numerator $\mathcal N_E$ vanishes at every order in $\lambda$, and so does $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}|\Omega\rangle$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; every order in $\lambda$, numerator and $\langle\Omega|\cdots|\Omega\rangle$; it uses $\phi \to -\phi$, so it fails with a $\phi^3$ term.
 >
 > *Source: PS §4.4, p. 99 ("in $\phi^4$ theory, all correlation functions of an odd number of fields vanish") · proof written out here, both of PS's arguments*
 

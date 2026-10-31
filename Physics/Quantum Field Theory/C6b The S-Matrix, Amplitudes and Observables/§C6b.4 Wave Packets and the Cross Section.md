@@ -71,6 +71,8 @@ What an experiment observes is an event rate, and the cross section is that rate
 >
 > so $\sigma$ has the dimension of an area. A separate, set-up-dependent step turns $\sigma$ back into a count of events.
 >
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]; *applies:* any scattering experiment; operational, no states involved.
+>
 > *Source: PHY 513 Lecture 15, slide 8 ("Observable in scattering experiment: event rate. Cross-section $= \sigma$: is a universal event rate. It is independent of experimental set-up."), and transcript ("how many clicks do you get per time … I mean divided by that … the cross section is that universal event rate") · the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)") · Yu §6.5.2, eq. (6.308) · PS §4.5, eqs. (4.59)–(4.61)*
 
 ^def-c6b-4-1
@@ -85,6 +87,8 @@ The count is linear in $N_A$ and in $j_B$ because every event is one $A$ and one
 > $$
 >
 > This is the classical-mechanics definition ([[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^def-b4-2-1|CM Def. §B4.2.1]], the number scattered into $d\Omega$ per unit time divided by the incident flux) rewritten with the deflection function ([[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^thm-b4-2-2|CM Theorem §B4.2.2]]).
+>
+> *Model:* none (classical mechanics); *applies:* classical trajectories, $\mathcal P(\mathbf b) \in \{0, 1\}$ ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]]).
 >
 > *Source: PHY 513 Lecture 15, slide 8 ("Definition in classical, non-relativistic mechanics: $\frac{d\sigma}{d\Omega}$ = area giving scattering into $d\Omega = \frac{d^2b}{d\Omega}$. $d^2b$ is an area in impact parameter space."), and transcript ("The cross section is literally what kind of area should you hit … if you want it out in this final angle") · the user's PHY 513 notes, Ch. 15 §15.2, eq. (classicalxsec)*
 
@@ -125,6 +129,8 @@ the linear term vanishing because $\int\frac{d^3k}{(2\pi)^3}|\phi|^2(\mathbf k -
 >
 > with a smooth profile $\phi(\mathbf k)$ sharply peaked at $\mathbf k = \mathbf p$. It is the wave packet $|g\rangle$ of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]] with the profile $g(\mathbf k) = \sqrt{2E_{\mathbf k}}\,\phi(\mathbf k)$.
 >
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* one-particle states built on relativistically normalized $|\mathbf k\rangle$; exact.
+>
 > *Source: PHY 513 Lecture 15, slide 11 ("Smeared initial state: wave packet peaked at $\vec k = \vec p$ … Normalization $\int\frac{d^3k}{(2\pi)^3}|\phi(\vec k)|^2 = 1$"), and transcript ("I'm going to take my energy normalizations and make them part of this") · the user's PHY 513 notes, Ch. 15 §15.3, eq. (wavepacket) · PS §4.5, eqs. (4.65)–(4.66)*
 
 ^def-c6b-4-3
@@ -137,6 +143,8 @@ the linear term vanishing because $\int\frac{d^3k}{(2\pi)^3}|\phi|^2(\mathbf k -
 > $$
 >
 > so the normalization of the profile is $\langle\phi_{\mathbf p}|\phi_{\mathbf p}\rangle = 1$: the factor $1/\sqrt{2E_{\mathbf k}}$ absorbs the relativistic normalization of $|\mathbf k\rangle$.
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* any profile; exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (the check after Definition "Wave packets") · PS §4.5, eq. (4.66)*
 
@@ -175,7 +183,6 @@ the linear term vanishing because $\int\frac{d^3k}{(2\pi)^3}|\phi|^2(\mathbf k -
 Why only a transverse shift, and why it is integrated over. A shift $b^z$ along the beam multiplies the profile by $e^{-ib^zk^z}$ and only moves the packet along its own line of flight ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]]): the collision happens a time $b^z/|v^z|$ earlier or later, with the same outcome. A transverse shift changes the outcome. The beam fills the transverse plane uniformly ([[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]), so the event count is the integral of the probability over $\mathbf b$ ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]]).
 
 > [!definition] Definition §C6b.4.4: The Two-Packet Initial State
-> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; the states $|\mathbf k_A\mathbf k_B\rangle_{\rm in}$ are in states of the full $\hat H$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
 > With $A$ at impact parameter $\mathbf 0$ and $B$ shifted transversely by the **impact parameter** $\mathbf b \perp \hat{\mathbf z}$ relative to $A$, the initial state is
 >
 > $$
@@ -183,6 +190,8 @@ Why only a transverse shift, and why it is integrated over. A shift $b^z$ along 
 > $$
 >
 > with profiles $\phi_A$ peaked at $\mathbf p_A$ and $\phi_B$ peaked at $\mathbf p_B$, each normalized as in [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]].
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* the states $|\mathbf k_A\mathbf k_B\rangle_{\rm in}$ are in states of the full $\hat H$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]), over $|\Omega\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]); exact.
 >
 > *Source: PHY 513 Lecture 15, slide 11 ("Standard scattering: two particle initial state. B shifted transverse by $\vec b$ relative to A (which is at $\vec 0$)"; formula corrected, Caution below), and transcript ("A has impact parameter zero, and B is impact parameter $b$") · the user's PHY 513 notes, Ch. 15 §15.3, eq. (twopacket) · PS §4.5, eq. (4.68)*
 
@@ -197,6 +206,8 @@ Why only a transverse shift, and why it is integrated over. A shift $b^z$ along 
 
 > [!theorem] Theorem §C6b.4.3: The Phase Displaces the Packet by b
 > Multiplying a momentum profile by $e^{-i\mathbf b\cdot\mathbf k}$ translates the packet by $+\mathbf b$ in space: if $\psi(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\,\phi(\mathbf k)\,e^{i\mathbf k\cdot\mathbf x}$, then the profile $e^{-i\mathbf b\cdot\mathbf k}\phi(\mathbf k)$ has position-space form $\psi(\mathbf x - \mathbf b)$. Equivalently, $e^{-i\mathbf b\cdot\hat{\mathbf P}}$ is the translation by $\mathbf b$.
+>
+> *Model:* any (Fourier analysis); *applies:* any momentum profile, independent of the dynamics.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)") · PS §4.5, p. 103*
 
@@ -240,6 +251,8 @@ The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure 
 > \mathcal P(\mathbf b) = \prod_{\text{final }i}\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\;\bigl|{}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots|\phi_A\phi_B\rangle_{\rm in}\bigr|^2 .
 > $$
 >
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* out states of the full $\hat H$, relativistic measure; exact.
+>
 > *Source: PHY 513 Lecture 15, slide 12 ("Probability of scattering into final phase space $\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}$ … This is for a particular impact parameter $\vec b$"), and transcript ("we take these guys and we kind of expand into linear superposition of possible out states. Coefficient … is some amplitude, and that one we square") · the user's PHY 513 notes, Ch. 15 §15.3, eq. (Pb) · PS §4.5, eq. (4.74)*
 
 ^def-c6b-4-5
@@ -255,6 +268,8 @@ Why the integral over $\mathbf b$ is the cross section, before the definition: w
 > d\sigma = \int d^2b\;\mathcal P(\mathbf b) .
 > $$
 >
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there.
+>
 > *Source: PHY 513 Lecture 15, slide 12 ("Total probability: $\int\mathcal P(\vec b)\,d^2\vec b$. Very quantum: all $d^2b$ contribute to scatter into given $d\Omega$."), slide 13 (the expression is called $d\sigma$), and transcript ("the total probability is the integral over that") · the user's PHY 513 notes, Ch. 15 §15.3, Definition "The quantum cross section", eq. (sigmab) · PS §4.5, eq. (4.75)*
 
 ^def-c6b-4-6
@@ -267,6 +282,8 @@ Why the integral over $\mathbf b$ is the cross section, before the definition: w
 > $$
 >
 > [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-1|Def. §C6b.4.1]] with $N_A = 1$ and $d\sigma$ of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]. If $\mathcal P(\mathbf b) \in \{0, 1\}$ (classical trajectories), $d\sigma$ is the area of the set of impact parameters that end in $d\Omega$, [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-2|Def. §C6b.4.2]].
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there; $n_B$ constant over the range of $\mathbf b$ where $\mathcal P(\mathbf b) \ne 0$.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (paragraph "Why integrate over $\vec b$ (filled in)") · PS §4.5, p. 105 · PHY 513 Lecture 15, slide 12, and transcript*
 
@@ -308,6 +325,8 @@ Why the integral over $\mathbf b$ is the cross section, before the definition: w
 > $$
 > {}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots|\mathbf k_A\mathbf k_B\rangle_{\rm in} = \langle\mathbf p_1\mathbf p_2\cdots|i\hat T|\mathbf k_A\mathbf k_B\rangle = (2\pi)^4\delta^4\Bigl(k_A + k_B - \sum_ip_i\Bigr)\,i\mathcal M .
 > $$
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* exact, every order, between in and out states of the full $\hat H$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (paragraph "Which final states (filled in)") · PS §4.5, p. 105 ("we can drop the $\mathbf 1$")*
 

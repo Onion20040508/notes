@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.7 (Derivation "Fine point 1: the $T \to \infty(1 - i\epsilon)$ limit is the Feynman prescription", Figure "tilt", paragraph "What the denominator is", Principle "Vacuum bubbles cancel", Derivation "The factorization at second order (filled in)", paragraph "Why the bubbles had to go", Caution "'Connected' means attached to an external point"), §14.8 (Principle "From the master formula to Feynman diagrams") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part C, slides 23–26, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 95–99, eqs. (4.48)–(4.57) · Yu Zhao-Huan, 量子场论讲义, §10.4, eqs. (10.176)–(10.181); §10.5.1, eqs. (10.192)–(10.197), (10.209) · PHY 513, Problem Set 8, Problem 3(c) (exponentiation of a vacuum series).*
 
-The rules of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] and [[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]] were derived for the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) as if its time integrals ran over the real line and as if there were no denominator. Asked in the lecture: "What happened to the limit and the denominator?" These are the two fine points of Part C. The limit $T \to \infty(1 - i\varepsilon)$ tilts every vertex time slightly below the real axis; keeping the vertex integrals well defined forces every energy to be integrated slightly above it, which is the Feynman prescription already built into $D_F$. The denominator is the sum of the diagrams with no external points, the vacuum bubbles, each proportional to the volume of spacetime; the numerator factorizes into the diagrams attached to the external points times the same sum, so the bubbles cancel: the interacting correlator is the sum of the diagrams attached to the external points. Yu has no $T(1 - i\varepsilon)$ limit: his correlation functions are built from asymptotic in-fields with a phase normalization $\mathcal N$ (eqs. (10.177)–(10.181)). His cancellation of the bubbles, eqs. (10.193)–(10.197), splits the contractions binomially, and that is the proof written here.
+The rules of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] and [[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]] were derived for the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) as if its time integrals ran over the real line and as if there were no denominator. Asked in the lecture: "What happened to the limit and the denominator?" These are the two fine points of Part C. The limit $T \to \infty(1 - i\varepsilon)$ tilts every vertex time slightly below the real axis; keeping the vertex integrals well defined forces every energy to be integrated slightly above it, which is the Feynman prescription already built into $D_F$. The denominator is the sum of the diagrams with no external points, the vacuum bubbles, each proportional to the volume of spacetime; the numerator factorizes into the diagrams attached to the external points times the same sum, so the bubbles cancel: the interacting correlator is the sum of the diagrams attached to the external points. Yu has no $T(1 - i\varepsilon)$ limit: his correlation functions are built from asymptotic in-fields with a phase normalization $\mathcal N$ (eqs. (10.177)–(10.181)). His cancellation of the bubbles, eqs. (10.193)–(10.197), splits the contractions binomially, and that is the proof written here. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; numerator and denominator are formal power series in $\lambda$; $V$ is the volume of space and $2T$ the length of the time interval, both taken finite and then large (a box, [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]); $E_0$ is the ground-state energy of $\hat H$ measured from $\hat H_0|0\rangle = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]; not the zero-point energy, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-1|§C6a.4, Caution: Two E₀'s]]).
 
@@ -38,6 +38,8 @@ A delta function at zero momentum in a finite box is the volume:
 > 3. On that line $p^2 - m^2 = s^2 - \mathbf p^2 - m^2 + 2i\varepsilon s^2 + O(\varepsilon^2)$: the $+i\varepsilon$ of the Feynman propagator. Equivalently, the tilted line passes above the pole at $+E_{\mathbf p}$ and below the pole at $-E_{\mathbf p}$: it is the Feynman contour ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]), rotated by an infinitesimal angle in the direction of the Wick rotation ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]]).
 >
 > So the limit prescription of the master formula and the $i\varepsilon$ of $D_F$ are one and the same: "Impose Feynman boundary conditions on propagators ⇒ precisely what we do already."
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
 > *Source: PHY 513 Lecture 14, slide 24 ("Fine Point: Limiting Procedure") · the user's PHY 513 notes, Ch. 14 §14.7 (Derivation "Fine point 1") · PS §4.4, p. 95 and figure*
 
@@ -131,12 +133,16 @@ A delta function at zero momentum in a finite box is the volume:
 > [!definition] Definition §C6a.11.1: Vacuum Bubble
 > A **vacuum bubble** (vacuum diagram) is a diagram with no external points; in a larger diagram, a connected piece that contains no external point. Its value follows from the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]: every point of it is a vertex, integrated over all of spacetime.
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
+>
 > *Source: PHY 513 Lecture 14, slide 25 ("Denominator = diagrams with no external lines = vacuum bubbles") · PS §4.4, pp. 96–99 ("disconnected pieces", "vacuum bubbles" or "vacuum to vacuum transitions") · Yu §10.5.1, after eq. (10.192) (气泡图)*
 
 ^def-c6a-11-1
 
 > [!definition] Definition §C6a.11.2: Diagram Attached to the External Points
 > A diagram with external points is **attached to the external points** if every connected piece of it contains at least one external point, i.e. it has no vacuum bubble ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-1|Def. §C6a.11.1]]). For the labelled diagrams this is [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-1|Def. §CA.8.1]]. PS and the slides call these diagrams "connected" ([[§C6a.11 The iε Limit and Vacuum Bubbles#^cau-c6a-11-1|Caution: "Connected" means attached to an external point]]).
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
 > *Source: PS §4.4, p. 98 ("By 'disconnected' we mean 'disconnected from all external points'") · PHY 513 Lecture 14, slide 25 ("diagrams connected to external lines") · the user's PHY 513 notes, Ch. 14 §14.7*
 
@@ -148,6 +154,8 @@ A delta function at zero momentum in a finite box is the volume:
 > $$
 >
 > each diagram, connected or not, built by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]] with its symmetry factor; the term 1 is the empty diagram (order $\lambda^0$).
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; in $|0\rangle$.
 >
 > *Source: PHY 513 Lecture 14, slide 25 · the user's PHY 513 notes, Ch. 14 §14.7 (paragraph "What the denominator is") · PS §4.4, p. 98 · Yu §10.5.1, eq. (10.193)*
 
@@ -216,6 +224,8 @@ A delta function at zero momentum in a finite box is the volume:
 > $$
 >
 > where $b_B$ is the value with one vertex held at the origin, independent of $T$ and $V$ up to effects of the boundary. In momentum space the factor is $(2\pi)^4\delta^{(4)}(0) = 2T\cdot V$, the delta of the last vertex, where conservation is automatic.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; finite $V$ and $2T$.
 >
 > *Source: PS §4.4, eqs. (4.48)–(4.49), p. 96 ("Every disconnected piece of a diagram … will have one such $(2\pi)^4\delta^{(4)}(0) = 2T\cdot V$ factor") · the user's PHY 513 notes, Ch. 14 §14.7 ("Each one is in fact proportional to the total spacetime volume") · PHY 513 Lecture 14, transcript*
 
@@ -323,6 +333,8 @@ A delta function at zero momentum in a finite box is the volume:
 >
 > the first factor the sum, by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]], of the diagrams attached to the external points ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-2|Def. §C6a.11.2]]), the second the sum of the vacuum diagrams ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]).
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
+>
 > *Source: PHY 513 Lecture 14, slide 25 ("$\frac{\text{numerator}}{\text{denominator}} = \frac{(\text{diagrams connected to ext. lines})\times(\text{vacuum bubbles})}{\text{vacuum bubbles}}$") · the user's PHY 513 notes, Ch. 14 §14.7 (Principle "Vacuum bubbles cancel") · Yu §10.5.1, eqs. (10.194)–(10.196) (the proof followed here) · PS §4.4, pp. 96–98*
 
 ^thm-c6a-11-4
@@ -419,6 +431,8 @@ A delta function at zero momentum in a finite box is the volume:
 > $$
 >
 > by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]] (or [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]): only the diagrams in which every piece is attached to an external point are drawn. "Simplify: only draw diagrams connected to external lines."
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; the result is the correlator in $|\Omega\rangle$.
 >
 > *Source: PHY 513 Lecture 14, slide 25 · the user's PHY 513 notes, Ch. 14 §14.7 (Principle "Vacuum bubbles cancel", eq. (nobubbles)) · PS §4.4, eqs. (4.54), (4.57) · Yu §10.5.1, box before eq. (10.194) and eq. (10.197)*
 
@@ -526,6 +540,8 @@ A delta function at zero momentum in a finite box is the volume:
 >
 > the sum over the connected vacuum diagrams $V_i$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-1|Def. §C6a.11.1]]), each with its symmetry factor.
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; in $|0\rangle$.
+>
 > *Source: PS §4.4, p. 98 (the denominator "is just" the exponential, eq. after (4.53)) · the user's PHY 513 notes, Ch. 14 §14.7 ("the bubbles exponentiate, $\sum$ bubbles $= \exp(\sum$ connected bubbles$)$") · PHY 513, Problem Set 8, Problem 3(c) (the same mechanism for a source)*
 
 ^thm-c6a-11-6
@@ -557,6 +573,8 @@ A delta function at zero momentum in a finite box is the volume:
 > $$
 >
 > independent of $T$ and of the volume: $E_0$ is proportional to the volume of space.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; $E_0$ of $|\Omega\rangle$ above $|0\rangle$.
 >
 > *Source: PS §4.4, p. 98, eqs. (4.55)–(4.56) · [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]]*
 

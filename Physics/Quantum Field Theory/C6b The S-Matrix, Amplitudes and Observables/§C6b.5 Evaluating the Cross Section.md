@@ -62,6 +62,8 @@ Why the integrals split into transverse and longitudinal ones: the impact parame
 >
 > At the zero $\bar{\mathbf k} = \mathbf k$ of collinear beams along $z$ the factor is $1/|\mathbf v_A - \mathbf v_B|$.
 >
+> *Model:* any (kinematics); *applies:* any smooth $g$, constraints with simple zeros; independent of the dynamics.
+>
 > *Source: PHY 513 Lecture 15, slide 14 ("$= \frac{1}{|\frac{\bar k_A^z}{E_A} - \frac{\bar k_B^z}{E_B}|} = \frac{1}{|\vec v_A - \vec v_B|}$ … Final equality: $\vec k = \gamma m\vec v$, $E = \gamma m$"), and transcript · the user's PHY 513 notes, Ch. 15 §15.4, eq. (jacobian), paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)" · PS §4.5, eq. (4.77)*
 
 ^thm-c6b-5-1
@@ -134,13 +136,15 @@ Why the integrals split into transverse and longitudinal ones: the impact parame
 ^cau-c6b-5-2
 
 > [!theorem] Theorem §C6b.5.2: The Cross Section for 2 → n Scattering
-> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there (with $\mathcal M$ from the Feynman rules: exact if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, lowest order for a permanent interaction).\n> For narrow wave packets and final states different from the initial state,
+> For narrow wave packets and final states different from the initial state,
 >
 > $$
 > d\sigma = \underbrace{\frac{1}{2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B|}}_{\text{kinematics of the initial particles}}\;\underbrace{|\mathcal M(p_A, p_B \to \{p_i\})|^2}_{\text{dynamics}}\;\underbrace{\Bigl(\prod_{i=1}^n\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\Bigr)(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_ip_i\Bigr)}_{\text{kinematics of the final particles}} ,
 > $$
 >
 > with $\mathbf v_{A,B} = \mathbf p_{A,B}/E_{A,B}$ along the beam axis and $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]. All dependence on the shapes of the packets has disappeared.
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there (with $\mathcal M$ from the Feynman rules: exact if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, lowest order for a permanent interaction).
 >
 > *Source: PHY 513 Lecture 15, slide 16 ("Final Result. Collect all factors: $d\sigma = \frac{1}{2E_A2E_B|\vec v_A - \vec v_B|}\cdot|\mathcal M|^2\cdot\bigl(\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\bigr)(2\pi)^4\delta^{(4)}(p_A + p_B - \sum_ip_i)$ … 1st factor: kinematics of initial particles. 3rd and 4th factor: kinematics of final particles. 2nd factor: the amplitude squared $|\mathcal M|^2$. This is dynamical information."), slides 13–15, and transcript · the user's PHY 513 notes, Ch. 15 §15.5, Principle "Cross section for $2\to n$ scattering" (a derived result: a theorem here) · PS §4.5, eq. (4.79) · Yu §6.5.2, eq. (6.320)*
 
@@ -266,6 +270,8 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 > [!theorem] Theorem §C6b.5.3: The Cross Section Is an Area for Every n
 > With $N = 2 + n$ external particles, $[d\sigma] = -2$ for every $n$: the dimension of an area.
 >
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* relativistic normalization, four spacetime dimensions; every order.
+>
 > *Source: the user's PHY 513 notes, Ch. 15 §15.5, Derivation "Dimension check (filled in)"*
 
 ^thm-c6b-5-3
@@ -310,6 +316,8 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 > $$
 >
 > At a given point of phase space (e.g. $d\sigma/d\Omega$ at a given angle) there is no factor.
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there; every order.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.5 (paragraph "Identical particles (filled in)") · PS §4.5, p. 108 ("divide by $n!$ after integrating over all sets of momenta") · Yu §6.5.1, eqs. (6.305)–(6.306); §6.5.2, eq. (6.321)*
 
@@ -368,6 +376,8 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 > $$
 >
 > For the two-packet state of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]] with profiles peaked at $\mathbf p_A \ne \mathbf p_B$ (or $A \ne B$), $\langle\phi_A\phi_B|\phi_A\phi_B\rangle = 1$ for every $\mathbf b$, so the $\mathcal P(\mathbf b)$ of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]], integrated over all final momenta and summed over contents with $\frac{1}{S_{\rm id}}$, is 1.
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* exact, given complete out states of the full $\hat H$ (unitarity).
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (after eq. (Pb): "the completeness relation for relativistically normalized states") · PS §4.5, p. 103 · the identical-particle factor: PS p. 108, Yu §6.5.1, eq. (6.305)*
 

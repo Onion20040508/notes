@@ -28,6 +28,8 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 >
 > the $xy$ component of the antisymmetric tensor $F_{\rho\sigma} = \varepsilon_{\rho\sigma\mu\nu}p_A^\mu p_B^\nu$.
 >
+> *Model:* any (kinematics); *applies:* momenta along the $z$-axis, any masses; independent of the dynamics.
+>
 > *Source: PHY 513 Lecture 15, slide 19 ("$E_AE_B(v_A^z - v_B^z) = E_Bp_A^z - E_Ap_B^z = \epsilon_{xy\mu\nu}p_A^\mu p_B^\nu$ ⇒ prefactor transforms like an area"), and transcript ("as we just learned, momentum divided by $E$ gives velocity. That works the other way around as well") · the user's PHY 513 notes, Ch. 15 §15.6, eq. (fluxeps) · PS §4.5, p. 106 (with $|\epsilon_{\mu xy\nu}p_A^\mu p_B^\nu|$)*
 
 ^thm-c6b-6-1
@@ -73,6 +75,8 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > 1. $E_AE_B|\mathbf v_A - \mathbf v_B|$, and hence $d\sigma$ of [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]], is invariant under boosts along the beam axis $z$.
 > 2. Under rotations the flux factor transforms like an area element in the plane transverse to the beam, as $\sigma$ does: $F'_{ij} = R_i{}^kR_j{}^lF_{kl}$, the law of $dx^i\wedge dx^j$, and $\sigma$ is an area in the plane of $d^2b$ ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]). Under a boost along $z$ both are unchanged (part 1).
 > 3. In particular $d\sigma$ is the same in the centre-of-mass frame ($\mathbf p_{\rm tot} = \mathbf 0$) and in a target frame ($\mathbf p_A = \mathbf 0$ or $\mathbf p_B = \mathbf 0$).
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there, with $|\mathcal M|^2$ Lorentz invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]).
 >
 > *Source: PHY 513 Lecture 15, slide 19 ("Cross-section $\sigma$ really is an 'area', it transforms like one. Application: $d\sigma$ invariant under boosts in $z$-direction. Same in c.m.s. ($\vec p_{\rm tot} = 0$) and target frame ($\vec p_A = 0$ or $\vec p_B = 0$)."), and transcript ("it's not even exactly invariant. It should transform like an area, and it does") · the user's PHY 513 notes, Ch. 15 §15.6, Principle "Same cross section in the CM and target frames" (a derived result: a theorem here) · PS §4.5, p. 106*
 
@@ -124,6 +128,8 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 >
 > which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$: this is [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]] of the main line, and the statement here is that theorem multiplied by $E_AE_B$.
 >
+> *Model:* any (kinematics); *applies:* collinear beams for the first equality; any momenta for the second.
+>
 > *Source: the user's PHY 513 notes, Ch. 15 §15.6, eq. (moller) (filled in) · Yu §6.5.2, eqs. (6.315), (6.322)–(6.329)*
 
 ^thm-c6b-6-3
@@ -173,6 +179,8 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 >
 > with $P = p_A + p_B$ for scattering and $P = p_A$ for a decay ([[§C6b.7 Decay Rates and Widths|§C6b.7]]): the kinematics of the $n$ final particles. An explicit $d\Pi_n$ requires a specific final state and coordinate system.
 >
+> *Model:* any (kinematics); *applies:* the measure of relativistically normalized final states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); independent of the dynamics.
+>
 > *Source: PHY 513 Lecture 15, slide 20 ("The $n$-particle phase space factor $d\Pi_n = (\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i})\cdot(2\pi)^4\delta^{(4)}(p_A + p_B - \sum_ip_i)$"), slide 25 ("The phase space factor is kinematics of $n$ final particles … Explicit $d\Pi_n$: specific final state and coordinate system"), slide 22 (with $p_A$), and transcript ("this whole thing here is sometimes called the $n$ particle relativistic phase space") · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dPin) · PS §4.5, eq. (4.80) ("relativistically invariant $n$-body phase space") · Yu §6.5.2, eq. (6.318) ($n$ 体不变相空间)*
 
 ^def-c6b-6-1
@@ -183,6 +191,8 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 
 > [!theorem] Theorem §C6b.6.4: The Phase Space Is Lorentz Invariant
 > For every scalar function $F$ of the momenta and every $\Lambda \in SO^+(1, 3)$, $\int d\Pi_n\,F(p_1, \dots, p_n)$ with total momentum $\Lambda P$ equals the same integral of $F(\Lambda p_1, \dots, \Lambda p_n)$ with total momentum $P$: $d\Pi_n$ is an invariant measure on the final states.
+>
+> *Model:* any (kinematics); *applies:* independent of the dynamics.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.6 (first paragraph) and §15.7 (Definition "The $n$-body relativistic phase space": "It is Lorentz invariant") · PS §4.5, p. 106 ("manifestly Lorentz invariant") · Yu §6.5.1, eq. (6.304)*
 
@@ -231,6 +241,8 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > $$
 >
 > where $\Omega$ is the direction of $\mathbf p_1$, $\mathbf p_2 = -\mathbf p_1$, and $|\mathbf p_1|$ is fixed by $E_1 + E_2 = E_{\rm cm}$ with $E_1 = \sqrt{p_1^2 + m_1^2}$, $E_2 = \sqrt{p_1^2 + m_2^2}$.
+>
+> *Model:* any (kinematics); *applies:* two final particles, centre-of-mass frame; independent of the dynamics.
 >
 > *Source: PHY 513 Lecture 15, slide 20 ("Explicit expression for $n = 2$ final particles in cms: … $= \int d\Omega\frac{|\vec p_1|}{16\pi^2E_{\rm cm}}$"), and transcript ("Not that bad") · the user's PHY 513 notes, Ch. 15 §15.7, Derivation "Two-body phase space in the CM frame", eq. (dPi2) · PS §4.5, eqs. (4.81)–(4.82) · Yu §6.5.3, eqs. (6.341)–(6.343)*
 
@@ -295,6 +307,8 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 >
 > with the Källén function $\lambda(x, y, z) = x^2 + y^2 + z^2 - 2xy - 2xz - 2yz$, and $E_1 = \frac{E_{\rm cm}^2 + m_1^2 - m_2^2}{2E_{\rm cm}}$.
 >
+> *Model:* any (kinematics); *applies:* as in [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]].
+>
 > *Source: the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "The momentum (filled in)") · Yu §6.5.3, eqs. (6.346)–(6.352)*
 
 ^thm-c6b-6-6
@@ -349,6 +363,8 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 >
 > with $\Omega$ the direction of $\mathbf p_1$ and $|\mathbf p_1|$ of [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-6|Theorem §C6b.6.6]].
 >
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]] (or [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]); *applies:* as there; $\mathcal M$ from free states and the Feynman rules is exact in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] and lowest order in [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]].
+>
 > *Source: PHY 513 Lecture 15, slide 21 (boxed formula) · the user's PHY 513 notes, Ch. 15 §15.7, Principle "$2\to2$ differential cross section in the CM frame", eq. (dsdOgen) (a derived result: a theorem here) · PS §4.5, eq. (4.84) · Yu §6.5.3, eq. (6.345)*
 
 ^thm-c6b-6-7
@@ -379,6 +395,8 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > $$
 >
 > It applies to elastic scattering of identical particles (two in, the same two out) and to any $2 \to 2$ process at energies $E \gg m_i$, where all masses effectively vanish.
+>
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as in [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-7|Theorem §C6b.6.7]], all four masses equal.
 >
 > *Source: PHY 513 Lecture 15, slide 21 ("If all masses are identical: … $(\frac{d\sigma}{d\Omega})_{\rm c.m.s.} = \frac{1}{64\pi^2E_{\rm c.m.}^2}\cdot|\mathcal M|^2$. Applies in important special cases: 2 particles in, 2 particles out (all identical). High energy $E \gg m_i$ ⇒ all masses effectively vanish."), slide 25, and transcript · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dsdO64), Derivation "The equal-mass case" · PS §4.5, eq. (4.85) · Yu §6.5.3, eq. (6.366)*
 

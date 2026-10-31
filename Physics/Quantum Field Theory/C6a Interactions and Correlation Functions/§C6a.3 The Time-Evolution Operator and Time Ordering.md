@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 13 §13.3 · PHY 513 Lecture 13 (Larsen, 14 Oct 2026), Part B, slides 10–14, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.2, pp. 84–86, eqs. (4.17)–(4.26), Fig. 4.1 · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.93)–(6.121), Fig. 6.2.*
 
-The interacting field is the free field conjugated by one unitary, $\hat\phi_H = U(t)^\dagger\hat\phi_IU(t)$ with $U(t) = e^{i\hat H_0t}e^{-i\hat Ht}$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). This section finds $U$ in terms of things one knows. The key is a first-order differential equation, $i\partial_tU = \hat H_I(t)U$, whose generator is the interaction in the interaction picture ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]). Because $\hat H_I$ is an operator, and operators at different times need not commute, the obvious solution, an exponential of the time integral, is wrong; the correct one orders the operators in time, latest on the left, as in the time-ordered product of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]]. The result is Dyson's formula, $U = T\{e^{-i\int\hat H_I}\}$. Quantum mechanics proved the same formula for any time-dependent generator, with its convergence for bounded ones ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]]); the field theory adds the generator $\hat H_I$, a polynomial in free fields, and the evolution operator $U(t, t')$ between any two times, with which the interacting vacuum of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] is built. The one piece of pure mathematics, the $n!$ that converts ordered integrals into integrals over a cube, has its home in [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]].
+The interacting field is the free field conjugated by one unitary, $\hat\phi_H = U(t)^\dagger\hat\phi_IU(t)$ with $U(t) = e^{i\hat H_0t}e^{-i\hat Ht}$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). This section finds $U$ in terms of things one knows. The key is a first-order differential equation, $i\partial_tU = \hat H_I(t)U$, whose generator is the interaction in the interaction picture ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]). Because $\hat H_I$ is an operator, and operators at different times need not commute, the obvious solution, an exponential of the time integral, is wrong; the correct one orders the operators in time, latest on the left, as in the time-ordered product of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]]. The result is Dyson's formula, $U = T\{e^{-i\int\hat H_I}\}$. Quantum mechanics proved the same formula for any time-dependent generator, with its convergence for bounded ones ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]]); the field theory adds the generator $\hat H_I$, a polynomial in free fields, and the evolution operator $U(t, t')$ between any two times, with which the interacting vacuum of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] is built. The one piece of pure mathematics, the $n!$ that converts ordered integrals into integrals over a cube, has its home in [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]]. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]): as in [[§C6a.2 The Interaction Picture|§C6a.2]], $\hat H_0$ and $\hat H_{\rm int}$ on one Hilbert space; every statement is exact operator algebra, with no state and no vacuum; the evolution operator of a source switched on and off ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]) obeys the same equations with a time-dependent $\hat H_I(t)$.
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.2 The Interaction Picture|§C6a.2]]; $T\{\cdots\}$ is time ordering, braces always; the integrals of this section are over time, $\int_0^tdt'$, and $\hat H_I(t')$ is already integrated over space. Derivatives of operator-valued functions of time are taken on the regularized theory, where every operator is a matrix ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]]).
 
@@ -23,6 +23,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 
 > [!theorem] Theorem §C6a.3.1: The Time-Evolution Operator Is Unitary
 > $U(t)^\dagger = e^{i\hat Ht}e^{-i\hat H_0t} = U(t)^{-1}$ for every real $t$. $U(t)$ is a product of two unitaries but not itself the exponential of $-i\hat H_{\text{int}}t$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-5|Theorem §C6a.2.5]]).
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact; time-independent $\hat H$; no state.
 >
 > *Source: PHY 513 Lecture 13, slide 10 ("The time evolution operator is unitary") · the user's PHY 513 notes, Ch. 13 §13.3 (Derivation "$U$ is unitary …", part "Unitarity") · PS §4.2, after eq. (4.17) · Yu §6.2, eq. (6.100)*
 
@@ -46,6 +48,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 > $$
 >
 > with $\hat H_I(t) = e^{i\hat H_0t}\hat H_{\text{int}}e^{-i\hat H_0t}$ ([[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]]). Equivalently, it solves the integral equation $U(t) = \mathbf 1 - i\int_0^tdt_1\,\hat H_I(t_1)\,U(t_1)$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact; for a time-dependent $\hat H_{\rm int}(t)$ ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]) the equation, with $\hat H_I(t) = e^{i\hat H_0t}\hat H_{\rm int}(t)e^{-i\hat H_0t}$, defines $U$.
 >
 > *Source: PHY 513 Lecture 13, slides 10–11 · the user's PHY 513 notes, Ch. 13 §13.3, eq. (Uode) · PS §4.2, eq. (4.18) · Yu §6.2, eqs. (6.104)–(6.105)*
 
@@ -108,6 +112,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 >
 > with $D$ the commutator function ([[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]]). The $c$-number coefficient $D(x - y)$ vanishes at spacelike separation, in particular for $t_1 = t_2$, $\mathbf x \ne \mathbf y$, but not inside the light cone. For $t_1 \ne t_2$ the integration region always reaches inside the cone.
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact operator identity, every $\lambda$; it uses only the free commutator $iD(x - y)$ of $\hat\phi_I$ (free field, [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: PHY 513 Lecture 13, transcript ("There's no guarantee that they will commute, and in fact, they really won't") · the user's PHY 513 notes, Ch. 13 §13.3 (paragraph "How to read $T\{e^{\cdots}\}$", numerical check) · the commutator written here from [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]*
 
 ^thm-c6a-3-3
@@ -165,6 +171,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 >
 > 2. If $[\hat H_I(t_1), \hat H_I(t_2)] = 0$ for all $t_1, t_2 \in [0, t]$, then $U(t) = e^{-i\hat A(t)} = e^{-i\int_0^tdt'\,\hat H_I(t')}$.
 > 3. In general the $n$ terms of part 1 are different operators, and $e^{-i\hat A(t)}$ does not satisfy $i\partial_tU = \hat H_I(t)U$.
+>
+> *Model:* any; *applies:* any operator-valued function $\hat H_I(t)$, independent of the dynamics; exact.
 >
 > *Source: PHY 513 Lecture 13, slides 11–12 ("Naïve solution (pretend $H_I(t)$ a function, not an operator)", "Correct for any time-dependent function $H_I(t)$. Incorrect for operator $H_I(t)$", "Differentiation w.r.t. $t$ gives $n$ terms with $H_I(t)$ at distinct positions, not always to the left") · the user's PHY 513 notes, Ch. 13 §13.3 (Derivation "The naïve solution, and why it fails") · PS §4.2, p. 84 ("should look something like $U \sim \exp(-iH_It)$") · [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]], 2*
 
@@ -237,6 +245,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 >
 > the exponential series with each term time-ordered: $T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\}$ arranges the factors by decreasing time label, the latest on the left and the earliest on the right, as for fields ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]], applied to operators labelled by a time). The $n = 0$ term is $\mathbf 1$. It is not an exponential: it is the series together with the instruction to time-order each term.
 >
+> *Model:* any; *applies:* any operator-valued $\hat H_I(t)$: that of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] or of a source ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]); a series of operators, convergent on the regularized theory ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]).
+>
 > *Source: PHY 513 Lecture 13, slide 13 ("$T$ = time-ordering: order $H_I$'s so smallest $t$ is on the right") · the user's PHY 513 notes, Ch. 13 §13.3, eq. (Dyson) · PS §4.2, eqs. (4.22)–(4.23) ("the time-ordering of the exponential is just defined as the Taylor series with each term time-ordered") · Yu §6.2, eqs. (6.107), (6.119)*
 
 ^def-c6a-3-1
@@ -249,6 +259,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 > $$
 >
 > where on the right each $t_{k+1}$ runs only up to $t_k$, so the factors already stand in time order.
+>
+> *Model:* any; *applies:* an identity for any operator-valued function $\hat H_I(t)$, independent of the dynamics.
 >
 > *Source: PHY 513 Lecture 13, slide 13 ("Example") · the user's PHY 513 notes, Ch. 13 §13.3 (Derivation "The time-ordered exponential (Dyson series)", paragraph "Removing the $n!$") · PS §4.2, eq. (4.21), Fig. 4.1, and the identity before eq. (4.22) · Yu §6.2, eqs. (6.116)–(6.118), Fig. 6.2*
 
@@ -317,6 +329,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 > $$
 >
 > the **Dyson series**. On the regularized theory, with $\|\hat H_I(t')\| \le h$, the series converges absolutely and uniformly on bounded intervals; in the field theory it is used as a formal power series in $\lambda$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact on the regularized theory, a formal power series in $\lambda$ in the field theory; for a source switched on and off ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]) the right side is $U$ by definition ([[§C6a.0 Setups and Observables#^der-c6a-0-4|Derivation §C6a.0.4]], Step 2).
 >
 > *Source: PHY 513 Lecture 13, slides 13–14 ("Correct solution") · the user's PHY 513 notes, Ch. 13 §13.3, eq. (Dyson) · PS §4.2, eqs. (4.20), (4.22) · Yu §6.2, eqs. (6.105)–(6.106), (6.119)*
 
@@ -420,6 +434,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 >
 > the evolution relative to the free theory from $t'$ to $t$; $U(t, 0) = U(t)$ of [[§C6a.2 The Interaction Picture#^def-c6a-2-2|Def. §C6a.2.2]].
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact; time-independent $\hat H$.
+>
 > *Source: PHY 513 Lecture 13, slide 14 ("More general time evolution (reference time not $t_0 = 0$)") · the user's PHY 513 notes, Ch. 13 §13.3, eq. (Utt) · PS §4.2, eq. (4.25) (with $t_0 = 0$) · Yu §6.2, eq. (6.95) ($U(t, t_0) = V(t)V^\dagger(t_0)$)*
 
 ^def-c6a-3-2
@@ -431,6 +447,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 > 3. $U(t, t')^\dagger = U(t, t')^{-1} = U(t', t)$ (unitarity; the inverse runs backwards);
 > 4. $U(t, 0) = U(t)$ and $U(0, t) = U(t)^\dagger$, so the Heisenberg field is $\hat\phi_H(t, \mathbf x) = U(0, t)\,\hat\phi_I(t, \mathbf x)\,U(t, 0)$;
 > 5. $i\partial_tU(t, t') = \hat H_I(t)\,U(t, t')$ and $i\partial_{t'}U(t, t') = -U(t, t')\,\hat H_I(t')$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact; parts 1–3 and 5 also for $U(t, t') = T\{e^{-i\int_{t'}^t\hat H_I}\}$ of a time-dependent interaction ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; used in [[§C6a.0 Setups and Observables#^der-c6a-0-4|Derivation §C6a.0.4]], Step 2); part 4 for time-independent $\hat H$.
 >
 > *Source: PHY 513 Lecture 13, slides 14 ("composition $U(t, t') = U(t, t'')U(t'', t')$"), 21 ("$U^\dagger(t, 0) = U(0, t)$") · the user's PHY 513 notes, Ch. 13 §13.3 (Derivation "General reference times") · PS §4.2, eqs. (4.24), (4.26) · Yu §6.2, eqs. (6.96)–(6.102)*
 
@@ -490,6 +508,8 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 > $$
 >
 > In particular, inside one time ordering exponents add: $T\{e^{-i\int_{t_2}^{t_1}\hat H_I}\}\,T\{e^{-i\int_{t_3}^{t_2}\hat H_I}\} = T\{e^{-i\int_{t_3}^{t_1}\hat H_I}\}$ for $t_1 \ge t_2 \ge t_3$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact; the first equality for time-independent $\hat H$; the time-ordered form and the composition inside one ordering for any $\hat H_I(t)$, e.g. [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]].
 >
 > *Source: PHY 513 Lecture 13, slide 14 ("Proof: composition … satisfied") · the user's PHY 513 notes, Ch. 13 §13.3 (Derivation "General reference times", "Proof of the second equality (filled in)") · PS §4.2, eqs. (4.23), (4.25) ("From this equation you can show that") · Yu §6.2, eq. (6.119)*
 

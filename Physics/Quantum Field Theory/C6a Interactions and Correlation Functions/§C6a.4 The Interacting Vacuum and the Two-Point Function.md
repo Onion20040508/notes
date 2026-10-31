@@ -26,6 +26,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > measured from the free vacuum, $\hat H_0|0\rangle = 0$. In general $|\Omega\rangle \ne |0\rangle$ and $E_0 \ne 0$; the properties of $|\Omega\rangle$ under $\hat a_{\mathbf p}$, $\hat a^\dagger_{\mathbf p}$ are not known.
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* a time-independent $\hat H$ with a ground state, unique and gapped by Assumption 1 there; $|\Omega\rangle \ne |0\rangle$ for every $\lambda \ne 0$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 2; [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]); in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] the in and out vacuum is $|0\rangle$ and $|\Omega\rangle$ plays no role.
+>
 > *Source: PHY 513 Lecture 13, slide 17 ("$|\Omega\rangle$ = true ground state = correct ground state wave function of anharmonic oscillators. All $\vec p$ are coupled") · the user's PHY 513 notes, Ch. 13 §13.4 · PS §4.2, p. 82 (after eq. (4.10)) and p. 86 ("$E_0 \equiv \langle\Omega|H|\Omega\rangle$. (The zero of energy will be defined by $H_0|0\rangle = 0$.)")*
 
 ^def-c6a-4-1
@@ -45,6 +47,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > $$
 >
 > with $T\{\cdots\}$ of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]] and $\hat\phi_H$ the Heisenberg field of the interacting theory ([[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). At $\lambda = 0$ it is the Feynman propagator $D_F(x - y)$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-1|Example §C6a.4.1]]). Like $D_F$ it is a distribution in $x$ and $y$, to be smeared with test functions ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]] for the free case).
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* Heisenberg fields of the full $\hat H$ in the interacting vacuum $|\Omega\rangle$; exact; not an observable ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-2|§C6b.1, Remark: The fundamental observable?]]).
 >
 > *Source: PHY 513 Lecture 13, slide 17 ("Important variable in interacting theory: time-ordered two-point correlation function. No 'I' on $\phi$: the $\phi$ is in Heisenberg picture") · the user's PHY 513 notes, Ch. 13 §13.4 (paragraph "What to compute") · PS §4.2, eqs. (4.10)–(4.11)*
 
@@ -74,6 +78,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > $$
 >
 > briefly, $e^{-i\hat HT}|0\rangle \to e^{-iE_0T}|\Omega\rangle\langle\Omega|0\rangle$ as $T \to \infty(1 - i\varepsilon)$. For real $T$ ($\varepsilon = 0$) there is no limit.
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* exact, every $\lambda$, given the gap and $\langle\Omega|0\rangle \ne 0$; $T \to \infty(1 - i\varepsilon)$ is a projection device onto $|\Omega\rangle$, not a switching of the interaction; not needed in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], where $\hat H = \hat H_0$ at early and late times ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1).
 >
 > *Source: PHY 513 Lecture 13, slide 18 ("Realize intuition that $|0\rangle \to |\Omega\rangle$ after long time relaxation"; "Exact ground state dominates after long time $T \to \infty(1 - i\epsilon)$") · the user's PHY 513 notes, Ch. 13 §13.4 (Derivation "$|\Omega\rangle$ from $|0\rangle$", part "Relaxation") · PS §4.2, p. 86*
 
@@ -149,6 +155,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > with $U(0, -T) = e^{-i\hat HT}e^{i\hat H_0T}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = 0$, $t' = -T$): the free vacuum, evolved with the interactions from the far past to the reference time.
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact, given the gap and $\langle\Omega|0\rangle \ne 0$.
+>
 > *Source: PHY 513 Lecture 13, slide 19 ("Interacting Vacuum from Time Evolution") · the user's PHY 513 notes, Ch. 13 §13.4, eq. (Omegaket) · PS §4.2, eqs. (4.27)–(4.28)*
 
 ^thm-c6a-4-2
@@ -195,6 +203,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > $$
 >
 > Here $T$ is the duration of a relaxation from $0$ to $+T$.
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact, given the gap and $\langle\Omega|0\rangle \ne 0$.
 >
 > *Source: PHY 513 Lecture 13, slide 20 ("Conjugate Vacuum"; "Note: $T$ is duration of relaxation (now from 0 to $+T$)") · the user's PHY 513 notes, Ch. 13 §13.4, eq. (Omegabra) · PS §4.2, eq. (4.29)*
 
@@ -244,6 +254,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > The unknown factors $e^{-2iE_0T}|\langle0|\Omega\rangle|^2$ are, for large tilted $T$, the amplitude $\langle0|U(T, -T)|0\rangle$ for the free vacuum to evolve from the far past to the far future and still be the free vacuum.
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact; the free-vacuum persistence amplitude of a permanent interaction is not 1, unlike $\langle0|\hat S|0\rangle$ in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]]).
+>
 > *Source: PHY 513 Lecture 13, slide 20 ("Vacuum is normalized") · the user's PHY 513 notes, Ch. 13 §13.4, eq. (Omeganorm) · PS §4.2, p. 87 ("divide by 1 in the form")*
 
 ^thm-c6a-4-4
@@ -279,6 +291,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > Read from right to left: evolve with the interactions from the far past to $y^0$, insert the free field at $y$, evolve to $x^0$, insert the free field at $x$, evolve to the far future.
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact, $x^0 > y^0$.
+>
 > *Source: PHY 513 Lecture 13, slide 21, and transcript · the user's PHY 513 notes, Ch. 13 §13.5 (Derivation "$\langle\Omega|T\{\phi(x)\phi(y)\}|\Omega\rangle$ in terms of free fields") · PS §4.2, eq. (4.30)*
 
 ^thm-c6a-4-5
@@ -309,6 +323,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > $$
 >
 > where $T\{\hat\phi_I(x)\hat\phi_I(y)\exp[\cdots]\}$ means the exponential series with every term $\hat\phi_I(x)\hat\phi_I(y)\hat H_I(t_1)\cdots\hat H_I(t_n)$ time ordered ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]). The interacting correlator in the interacting vacuum is expressed entirely through free fields $\hat\phi_I$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]]), the free vacuum $|0\rangle$ and the interaction $\hat H_I$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]). No approximation has been made.
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (stated for [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]); *applies:* exact, all orders, for the correlators of a permanent interaction, given the gap and $\langle\Omega|0\rangle \ne 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]); $|\Omega\rangle$ and Heisenberg fields on the left, $|0\rangle$ and free fields on the right ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]); $T \to \infty(1 - i\varepsilon)$ is the projection device of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; expanded in $\lambda$ from [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]] on.
 >
 > *Source: PHY 513 Lecture 13, slide 21 ("Master formula") · the user's PHY 513 notes, Ch. 13 §13.5, eq. (master) · PS §4.2, eq. (4.31)*
 
@@ -404,6 +420,8 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > $$
 >
 > for each extra field on the left, an extra free field on the right.
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]: exact, all orders, given the gap and $\langle\Omega|0\rangle \ne 0$; $n$ Heisenberg fields in $|\Omega\rangle$.
 >
 > *Source: PS §4.2, p. 87 ("A similar formula holds for higher correlation functions of arbitrarily many fields; for each extra factor of $\phi$ on the left, put an extra factor of $\phi_I$ on the right") · the user's PHY 513 notes, Ch. 13 §13.5 ("The same derivation gives the $n$-point function")*
 

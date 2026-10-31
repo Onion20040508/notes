@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "The idea", Caution "A Feynman diagram is a formula", paragraph "Zeroth order", Derivation "First order in λ", paragraph "Why y and z may be exchanged", Caution "Numerator, not yet ⟨Ω|⋯|Ω⟩") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 13–15, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 90–92, eqs. (4.42)–(4.44) · Yu Zhao-Huan, 量子场论讲义, §10.5.1, eqs. (10.187)–(10.192) (a different route, for comparison).*
 
-Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185).
+Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185). **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): the diagrams of this section and of §C6a.8–§C6a.11 are the terms of the expansion in $\lambda$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); they compute $\langle\Omega|T\{\hat\phi_H\cdots\hat\phi_H\}|\Omega\rangle$ as numerator over denominator, each a free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]), and the bubbles of the denominator cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order.
 
 *Conventions* ([[Larsen PHY 513]]): fields entering through the master formula are written $\hat\phi_I$; $x, y$ are the external points, $z$ the interaction point; $D_F(z - z) \equiv D_F(0)$.
 
@@ -22,6 +22,8 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > [!definition] Definition §C6a.7.1: Feynman Diagram of a Complete Contraction
 > To a complete contraction of fields at points $x_1, \dots, x_n$ (a pairing, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]) is associated a **Feynman diagram**: one point for each argument, one **line** (propagator) for each contracted pair, joining the arguments of its two fields. The **value** of the diagram is the product of $D_F(x_i - x_j)$ over its lines. Diagrams drawn alike stand for the same value; precisely, a diagram is an orbit of labelled diagrams under relabelling ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]), determined by its drawing ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]).
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* any complete contraction of free fields; combinatorial, independent of the dynamics.
+>
 > *Source: PHY 513 Lecture 14, slide 13 ("contraction between $\phi^i$ and $\phi^j$ = $D_F(x_i - x_j)$ = line in diagram ending at $x_i$ and $x_j$") · the user's PHY 513 notes, Ch. 14 §14.3 · PS §4.4, pp. 90–91*
 
 ^def-c6a-7-1
@@ -30,6 +32,8 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > In the diagrams of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) there are two kinds of points:
 > 1. **external points**, the arguments $x_1, \dots, x_n$ of the correlator; exactly one line ends at each;
 > 2. **vertices** (internal points), the points $z$ of the interaction $\hat H_I = \int d^3z\,\frac{\lambda}{4!}\hat\phi_I^4$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]); four lines end at each, one for each factor $\hat\phi_I(z)$, and each carries $-i\lambda\int d^4z$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
 > *Source: PS §4.4, p. 92 ("Internal points, where four lines meet, are called vertices") · PHY 513 Lecture 14, slide 16 · the user's PHY 513 notes, Ch. 14 §14.4*
 
@@ -113,6 +117,8 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > $$
 >
 > In diagrams, with $-i\lambda\int d^4z$ at the vertex: $\frac18$ (a line from $x$ to $y$ times a **figure-eight**, two lines from $z$ back to $z$) $+ \frac12$ (the **tadpole**: $x$ to $z$, $z$ to $y$, and a line from $z$ back to $z$). The 15 complete contractions split $3 + 12$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: first order in $\lambda$, the numerator only, in $|0\rangle$; the figure-eight is removed by the denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]).
 >
 > *Source: PHY 513 Lecture 14, slide 15 · the user's PHY 513 notes, Ch. 14 §14.3 (Derivation "First order in λ", eq. (firstorderdiag)) · PS §4.4, eqs. (4.43)–(4.44) and p. 92 · Yu §10.5.1, eqs. (10.190)–(10.192) (the coefficients 12 and 3, $\frac12$ and $\frac18$)*
 
@@ -290,6 +296,8 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > | complex scalar | $\hat\phi(x)\hat\phi^\dagger(y)$ only | $D_F(x - y)$ | yes | arrow $y \to x$; value independent of it |
 > | Dirac | $\hat\psi(x)\hat{\bar\psi}(y)$ only | $S_F(x - y)$ | no | arrow $y \to x$; value depends on it |
 >
+> *Model:* the free fields ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], Dirac: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator|§C5b.8]]); *applies:* free vacuum $|0\rangle$, exact; independent of the interaction in which the lines appear.
+>
 > *Source: PHY 513 Lecture 14, transcript (question at 42:55) · the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "Why $y$ and $z$ may be exchanged") · PS §4.4, p. 94 ("Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary") · part 2 from [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]] and [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], written here · part 3: PHY 513, Problem Set 8, Problem 1(b) (statement: "the lines are oriented in the direction of the charge flow"; the user's solution: "$\langle0|T\hat\phi\hat\phi|0\rangle = \langle0|T\hat\phi^\dagger\hat\phi^\dagger|0\rangle = 0$, every nonvanishing pairing joins a $\hat\phi$ leg to a $\hat\phi^\dagger$ leg; this is the arrow on the line"), derived here from the mode expansion · PS §2.4, p. 29 (the complex field's two orderings)*
 
 ^thm-c6a-7-2
@@ -385,6 +393,8 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > $$
 >
 > contains $4n + 2$ fields; each of its complete contractions has $2n + 1$ lines, and there are $(4n + 1)!!$ complete contractions.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: a count, every order $n$; the numerator only.
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.4 (paragraph "Higher orders": "$4n+2$ fields and $2n+1$ propagators") · PS §4.4, p. 92 (135 135 at third order) · PHY 513 Lecture 14, transcript*
 

@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.6 (Derivation "From position space to momentum space", Principle "Feynman rules in momentum space", paragraph "The momentum-space two-point function") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 19–20, slide 25 (bottom), and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 94–95, eqs. (4.46)–(4.47) · Yu Zhao-Huan, 量子场论讲义, §7.2, pp. 287–288 (rules 8, 10, 11 of the momentum-space rules of Yukawa theory); §7.3, p. 296 (the $\phi^4$ vertex); §10.5.1, eqs. (10.198)–(10.203).*
 
-The position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]) leave an integral $\int d^4z$ at every vertex. Writing every propagator in its four-momentum form ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; slide 19, PS eq. (4.46))
+The position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]) leave an integral $\int d^4z$ at every vertex. Writing every propagator in its four-momentum form ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; slide 19, PS eq. (4.46)) **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 $$
 D_F(x - y) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i}{p^2 - m^2 + i\varepsilon}\,e^{-ip\cdot(x-y)}
 $$
@@ -43,6 +43,8 @@ and momenta are relabelled and their directions reversed freely:
 > $$
 >
 > an identity of tempered distributions in the momenta ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]): the four-momentum flowing into every vertex is zero. A loop, a line from $z$ back to $z$, contributes $e^{+ik\cdot z}e^{-ik\cdot z} = 1$ and no momentum.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; any vertex without derivatives; an identity of distributions, every order.
 >
 > *Source: PHY 513 Lecture 14, slide 19 · the user's PHY 513 notes, Ch. 14 §14.6 (Derivation "From position space to momentum space") · PS §4.4, eq. (4.47) (with $p_4$ drawn leaving: $(2\pi)^4\delta^{(4)}(p_1 + p_2 + p_3 - p_4)$)*
 
@@ -112,6 +114,8 @@ and momenta are relabelled and their directions reversed freely:
 > 3. the result is divided by the symmetry factor $S$ ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]).
 >
 > If the external points are Fourier transformed as well, the factors $e^{-ip\cdot x}$ disappear and a diagram becomes a product of propagators and vertex factors with momentum conservation.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; each line is the free-field, free-vacuum $\tilde D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]).
 >
 > *Source: PHY 513 Lecture 14, slide 20 · the user's PHY 513 notes, Ch. 14 §14.6 (Principle "Feynman rules in momentum space") · PS §4.4, p. 95, rules 1–6 · Yu §7.2, rules 8, 10, 11 (pp. 287–288), §7.3, p. 296 (vertex $-i\lambda$, divide by $S$); §10.5.1, box after eq. (10.203) ("the Fourier transform of a multi-point correlation function corresponds to the Feynman diagrams in momentum space")*
 
@@ -250,6 +254,8 @@ and momenta are relabelled and their directions reversed freely:
 > $$
 >
 > it diverges quadratically.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* the free-field loop factor in $|0\rangle$, regularized by the cutoff; it enters $\phi^4$ at first order.
 >
 > *Source: PHY 513 Lecture 14, transcript ("you divide it by zero … doesn't actually make sense") · the user's PHY 513 notes, Ch. 14 §14.6 (paragraph "The momentum-space two-point function": "The loop integral over $k$ diverges at large $k$") · the cutoff evaluation written here*
 

@@ -40,14 +40,22 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 >
 > where $\mathcal L_0$ is the free real scalar field ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]) and the real number $\lambda$ is the **coupling constant**.
 >
-> *Assumptions:* $\lambda > 0$ (the potential $\frac12m^2\phi^2 + \frac{\lambda}{4!}\phi^4$ is then bounded below); $m > 0$; the interaction is local, a product of fields at one spacetime point ([[§C1b.3 Mass Dimension, Locality and Power Counting#^pr-c1b-3-4|Principle §C1b.3.4]]), and contains no derivatives; $\lambda$ small enough that $\lambda = 0$ is a useful starting point (the strategy of perturbation theory in $\lambda$, slide 5).
-> *Source: PHY 513 Lecture 13, slide 5 ("Simplest interacting theory") · the user's PHY 513 notes, Ch. 13 §13.1 (Definition "$\phi^4$ theory") · PS §4.1, eq. (4.1) · Yu Ch. 6, eq. (6.5)*
+> *Assumptions:*
+> 1. $\lambda > 0$ (the potential $\frac12m^2\phi^2 + \frac{\lambda}{4!}\phi^4$ is then bounded below); $m > 0$; the interaction is local, a product of fields at one spacetime point ([[§C1b.3 Mass Dimension, Locality and Power Counting#^pr-c1b-3-4|Principle §C1b.3.4]]), and contains no derivatives; $\lambda$ small enough that $\lambda = 0$ is a useful starting point (the strategy of perturbation theory in $\lambda$, slide 5).
+> 2. *Permanent interaction:* $\hat H = \hat H_0 + \hat H_{\rm int}$ does not depend on time; the interaction is never switched off ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 2).
+> 3. *Vacuum:* $\hat H$ has a unique ground state $|\Omega\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]), $\hat H|\Omega\rangle = E_0|\Omega\rangle$, separated by a gap $\Delta > 0$ from the rest of the spectrum, with $\langle\Omega|0\rangle \ne 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; names: [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+> 4. *Particles:* the one-particle states of $\hat H$ form an isolated mass hyperbola $p^2 = m_{\rm ph}^2$ below the multi-particle continuum; $m_{\rm ph} = m$ at lowest order in $\lambda$, and beyond it $m$ is only the parameter of $\mathcal L$ ([[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|Principle §C6a.1.6]], *Domain*).
+> 5. *Hilbert space:* the free Fock space over $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]) is the space of the interaction picture, on which $\hat H_0$ and $\hat H_{\rm int}$ both act ([[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|Principle §C6a.1.6]]). ★ In infinite volume this fails (Haag's theorem); it holds for the regularized theory ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|★ Remark: In what sense φ̂⁴(x) is defined]]).
+>
+> This is the course's example of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]: Model §C6a.0.3 is the class of self-interacting theories, and Model §C6a.1.1 is its instance with $\mathcal L_{\rm int} = -\frac{\lambda}{4!}\phi^4$; its assumptions 1, 2 and 3 are assumptions 3, 4 and 1 here, and its permanent $\hat H$ is assumption 2.
+>
+> *Source: PHY 513 Lecture 13, slide 5 ("Simplest interacting theory") · the user's PHY 513 notes, Ch. 13 §13.1 (Definition "$\phi^4$ theory"); Ch. 4 §4.8 (Principle "Why $|0\rangle$ is the vacuum": "in an interacting theory the choice genuinely matters", with Streater and Wightman for Haag's theorem) · PS §4.1, eq. (4.1); §4.2, p. 86 · Yu Ch. 6, eq. (6.5) · Srednicki §5, pp. 51–52*
 
 ^mod-c6a-1-1
 
 > [!remark] Remark: Reading the Lagrangian
 > - *The minus sign.* $\mathcal L$ is kinetic minus potential energy ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-5|§C1b.2, Remark: Kinetic minus potential, read term by term]]), so the interaction, which enters $\mathcal L$ with a minus sign, is a positive potential energy $\frac{\lambda}{4!}\phi^4$; the lecture: "this one here is an extra energy."
-> - *The $4!$.* A convention. Its use appears with Wick's theorem (QFT C6, planned): the $4!$ cancels the $4!$ ways of attaching four identical fields to one vertex. Here it only leaves a $3!$ in the field equation ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]]), as the $3!$ of a cubic coupling leaves $\frac{\lambda}{2}$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]]).
+> - *The $4!$.* A convention. Its use appears with Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-1|§C6a.8, Remark: Where the 4! goes]]): the $4!$ cancels the $4!$ ways of attaching four identical fields to one vertex. Here it only leaves a $3!$ in the field equation ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]]), as the $3!$ of a cubic coupling leaves $\frac{\lambda}{2}$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]]).
 > - *Why quartic.* A $\phi^3$ interaction would be simpler, but the energy would not be bounded below unless an even higher power were added (PS p. 77); $\phi^n$ with $n > 4$ has a coupling of negative mass dimension ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]).
 > - *Where it occurs.* Pedagogically it is the simplest interacting theory; in nature, the self-interaction of the Higgs field is of this form, and the same Lagrangian describes critical phenomena in statistical mechanics (PS p. 77).
 > - *What makes it hard.* $\mathcal L$ is no longer quadratic, so the field is no longer a collection of independent oscillators: the quartic term couples every Fourier mode to every other ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]], ⚑ in Step 4). The strategy is perturbation theory: if $\lambda$ is small, $\lambda = 0$ should be a good first approximation. "It'll be successful at some level, but as we move further and further in, we'll see" — the course will come back to how far.
@@ -58,6 +66,8 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 
 > [!theorem] Theorem §C6a.1.2: The Coupling of $\phi^4$ Theory Is Dimensionless
 > In four spacetime dimensions $[\phi] = 1$ and $[\lambda] = 0$: the $\phi^4$ interaction is marginal ([[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]). Among the interactions $\phi^n$ of one real scalar field, only $n = 3$ (coupling of dimension $1$) and $n = 4$ (dimension $0$) have couplings of non-negative mass dimension, and with the symmetry $\phi \to -\phi$ only $\phi^4$ remains.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* the classical Lagrangian in four spacetime dimensions, any interaction $\phi^n$; no states, no vacuum, no order in $\lambda$.
 >
 > *Source: PS §4.1, p. 80 (allowed interactions $\mu\phi^3$ and $\lambda\phi^4$, "$\lambda$ is dimensionless") · Yu Ch. 6, eqs. (6.1)–(6.2) · the user's PHY 513 notes, Ch. 2 §2.4*
 
@@ -139,6 +149,8 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 > $$
 >
 > In Fourier space it couples every mode to every triple of modes whose momenta add up to its own.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* the classical field, exactly.
 >
 > *Source: PS §4.1, eq. (4.2) ("which cannot be solved by Fourier analysis as the free Klein–Gordon equation could") · PHY 513 Lecture 13, slide 17 ("All $\vec p$ are coupled")*
 
@@ -223,6 +235,8 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 >
 > the same as for the free field ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]]). The canonical data $(\phi(\mathbf x), \pi(\mathbf x))$ on a time slice are therefore those of the free field.
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* the classical field at every time, exactly; any interaction without derivatives.
+>
 > *Source: PS §4.1, p. 78 ("which are unaffected by $\mathcal L_{\text{int}}$. (Note, however, that if $\mathcal L_{\text{int}}$ contained $\partial_\mu\phi$, the definition of $\pi(\mathbf x)$ would change.)") · Yu §6.1.1, eq. (6.39)*
 
 ^thm-c6a-1-4
@@ -265,6 +279,8 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 > $$
 >
 > with $H_0$ the Hamiltonian of the free field ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]]). For $\lambda > 0$, $H \ge H_0 \ge 0$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* the classical field, exactly; $H$ does not depend on time: the interaction is never switched off; read as an operator in [[§C6a.1 From Free to Interacting Fields#^def-c6a-1-1|Def. §C6a.1.1]].
 >
 > *Source: PHY 513 Lecture 13, slide 5 ($H_{\text{int}} = \int d^3x\,\mathcal H_{\text{int}}[\phi(x)] = \int d^3x\,\frac{1}{4!}\lambda\phi^4(x)$) · the user's PHY 513 notes, Ch. 13 §13.1, eq. (phi4) · PS §4.1, p. 77; §4.2, eq. (4.12) · Yu Ch. 6, eq. (6.13); §6.1.1, eqs. (6.40)–(6.43)*
 
@@ -327,6 +343,8 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 >
 > *Domain:* any interaction without derivatives (so that $\pi$ is unchanged, [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-4|Theorem §C6a.1.4]]); here $\mathbf p$ is only the Fourier variable conjugate to $\mathbf x$ at the reference time, and $m$ the parameter of $\mathcal L$, not yet the measured mass. That the interacting theory lives on this Fock space at all is assumed at this level ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|★ Remark: In what sense φ̂⁴(x) is defined]]).
 >
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* at the reference time $t_0 = 0$ only, exactly, every $\lambda$; the Hilbert space is the free Fock space over the free vacuum $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]), the one space on which $\hat H_0$ and $\hat H_{\rm int}$ both act.
+>
 > *Source: PHY 513 Lecture 13, slide 6 ("Strategy: realize canonical commutators by introducing ladder operators at some reference time $t_0$ (like $t_0 = 0$)") · the user's PHY 513 notes, Ch. 13 §13.1 (paragraph "What survives from the free theory") · PS §4.1, p. 78; §4.2, p. 83 · Yu §6.1.1, eqs. (6.44)–(6.45)*
 
 ^pr-c6a-1-6
@@ -339,6 +357,8 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 > $$
 >
 > and the full Hamiltonian is $\hat H = \hat H_0 + \hat H_{\text{int}}$. $\hat H_0$ is normal ordered ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]), so $\hat H_0|0\rangle = 0$: the zero of energy is the free vacuum. Neither operator depends on time.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* operators at the reference time on the free Fock space, exact; the zero of energy is the free vacuum, $\hat H_0|0\rangle = 0$, not the interacting one ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
 >
 > *Source: PHY 513 Lecture 13, slides 5–6 ("free Hamiltonian $= H_0$"; slide 19: "$H_0|0\rangle = 0$, free theory") · the user's PHY 513 notes, Ch. 13 §13.1, eq. (phi4) · PS §4.2, eq. (4.12), and p. 86 ("The zero of energy will be defined by $H_0|0\rangle = 0$") · Yu §6.1, eqs. (6.14), (6.22); §6.1.1, eqs. (6.41)–(6.46)*
 
@@ -365,6 +385,8 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 > $$
 >
 > which is not a multiple of $\hat a_{\mathbf p}$, so $e^{i\hat Ht}\hat a_{\mathbf p}e^{-i\hat Ht}$ is not $\hat a_{\mathbf p}$ times a phase.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* part 1 exactly, for the free Hamiltonian on the free Fock space (the free field of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]); part 2 for the full $\hat H$, every $\lambda \ne 0$, on the regularized theory ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]]).
 >
 > *Source: PHY 513 Lecture 13, slide 6 ("Ladder operators $a_{\vec p}$, $a^\dagger_{\vec p}$ diagonalize free Hamiltonian $= H_0$ … Challenge: $H_{\text{int}}$ acts in a complicated way on $a_{\vec p}$, $a^\dagger_{\vec p}$") · the user's PHY 513 notes, Ch. 13 §13.1 · Yu §6.1.1, eqs. (6.47)–(6.48)*
 

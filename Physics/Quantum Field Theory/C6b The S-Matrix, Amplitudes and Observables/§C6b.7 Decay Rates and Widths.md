@@ -28,8 +28,9 @@ tags: [quantum-field-theory, level-c]
 ^mod-c6b-7-1
 
 > [!definition] Definition §C6b.7.1: Decay Rate, Width and Lifetime
-> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]].
 > The **decay rate** $\Gamma$ of an unstable particle $A$ is the probability per unit time that $A$, at rest, decays (into a specified final state, or into anything for the total rate): $\Gamma = \frac{\text{number of decays per unit time}}{\text{number of }A\text{ particles present}}$. In relativistic contexts it is quoted as the **width**, an energy. The **lifetime** is $\tau = 1/\Gamma$.
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* a definition; the formula for $\Gamma$ holds at lowest order ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]).
 >
 > *Source: PHY 513 Lecture 15, slide 22 ("Another important process: $1 \to n$ 'scattering'. Decay of one particle (to $n$ decay products). Result for relativistic decay width: …"), and transcript ("What you do for decay, at least in relativistic context, is that you give not the decay time, you give the width. The width is an energy") · the user's PHY 513 notes, Ch. 15 §15.8, Principle "Decay rate" (last sentence) · PS §4.5, eq. (4.62) · Yu §6.5.4, eqs. (6.367)–(6.370) ($N(t) = N(0)e^{-\Gamma t}$, $\tau \equiv 1/\Gamma$, 衰变宽度)*
 
@@ -52,12 +53,13 @@ and in the propagator of an unstable particle the same $\Gamma$ is the full widt
 The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] with one initial particle (Yu §6.5.4): norm and transition probability ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-2|Theorem §C6b.7.2]]), rate per unit time ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-3|Theorem §C6b.7.3]]), counting of the final states and the rest frame ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]).
 
 > [!theorem] Theorem §C6b.7.2: The Transition Probability of One Particle in a Box
-> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there.
 > With $p_f = \sum_jp_j$ and distinct final momenta,
 >
 > $$
 > \langle i|i\rangle = 2E_A\tilde V , \qquad P_{fi} = \frac{|\langle f|i\hat T|i\rangle|^2}{\langle i|i\rangle\langle f|f\rangle} = \frac{\tilde T\,(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2}{2E_A\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)} .
 > $$
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there.
 >
 > *Source: Yu §6.5.4, eqs. (6.373)–(6.374) (page image checked)*
 
@@ -94,12 +96,13 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 *Uses:* [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]
 
 > [!theorem] Theorem §C6b.7.3: The Decay Rate into Fixed Final Momenta
-> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there, for a duration $\tilde T$ long compared with the decay process but short compared with the lifetime.
 > $P_{fi} \propto \tilde T$, and the transition probability per unit time for one set of final momenta $\{p_j\}$ is
 >
 > $$
 > R_{\{p_j\}} = \frac{P_{fi}}{\tilde T} = \Bigl[2E_A\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)\Bigr]^{-1}(2\pi)^4\delta^4\Bigl(p_A - \sum_{j=1}^np_j\Bigr)\,|\mathcal M|^2 .
 > $$
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there, for a duration $\tilde T$ long compared with the decay process but short compared with the lifetime.
 >
 > *Source: Yu §6.5.4, eq. (6.375) (page image checked)*
 
@@ -120,13 +123,15 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 *Uses:* [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-2|Theorem §C6b.7.2]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]]
 
 > [!theorem] Theorem §C6b.7.4: The Decay Rate Formula
-> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there (lowest order in the decaying interaction; [[§C6b.7 Decay Rates and Widths#^cau-c6b-7-1|Caution: Free states in a decay amplitude]]).\n> For a particle $A$ of mass $m_A$ decaying at rest into $n$ particles,
+> For a particle $A$ of mass $m_A$ decaying at rest into $n$ particles,
 >
 > $$
 > d\Gamma = \frac{1}{2m_A}\cdot|\mathcal M(p_A \to \{p_i\})|^2\cdot d\Pi_n , \qquad d\Pi_n = \prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\cdot(2\pi)^4\delta^4\Bigl(p_A - \sum_ip_i\Bigr) ,
 > $$
 >
 > with $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] for one particle in the initial state; the width into a final state with identical particles is $\Gamma = \frac{1}{S_{\rm id}}\int d\Gamma$.
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there (lowest order in the decaying interaction; [[§C6b.7 Decay Rates and Widths#^cau-c6b-7-1|Caution: Free states in a decay amplitude]]).
 >
 > *Source: PHY 513 Lecture 15, slide 22 ("Result for relativistic decay width: $d\Gamma = \frac{1}{2m_A}\cdot|\mathcal M|^2\cdot d\Pi_n$ with phase space factor for final $n$ particles: $d\Pi_n = \prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\cdot(2\pi)^4\delta^{(4)}(p_A - \sum_ip_i)$"), and transcript · the user's PHY 513 notes, Ch. 15 §15.8, Principle "Decay rate", eq. (dGamma) (stated, not derived, in the lecture: a theorem here, derived by Yu's route) · PS §4.5, eq. (4.86) · Yu §6.5.4, eqs. (6.373)–(6.377)*
 
@@ -196,6 +201,8 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > $$
 > |\mathbf p_1| = \frac{m_A}{2}\,\beta, \qquad \int d\Pi_2 = \frac{\beta}{8\pi}, \qquad \Gamma = \frac{1}{S_{\rm id}}\,\frac{|\mathcal M|^2}{16\pi m_A}\,\beta .
 > $$
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there: the kinematics exactly, $\Gamma$ at lowest order in the decaying interaction.
 >
 > *Source: Yu §6.5.5, eqs. (6.379)–(6.385) (page image checked: (6.383) boxed, (6.385) the equal-mass form, "如果两个末态粒子是全同粒子，则 $\mathcal S = 2$") · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Two-body decays (filled in)", citing "Yu's (6.385)": correct) · PHY 513, Problem Set 8, Problem 4 (the user's $\int d\Pi_2 = p_\ast/(4\pi M)$) · PS §4.5, eqs. (4.81)–(4.82) for the phase space*
 
@@ -328,6 +335,8 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > \Gamma = \sum_f\Gamma_f , \qquad \sum_fB_f = 1 , \qquad \tau = \frac1\Gamma = \frac{1}{\sum_f\Gamma_f} .
 > $$
 >
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there; each $\Gamma_f$ at the same order.
+>
 > *Source: Yu §6.5.4, eqs. (6.371)–(6.372) · PS §4.5, p. 101 ("the reciprocal of the sum of its decay rates into all possible final states") · not in the lecture*
 
 ^thm-c6b-7-6
@@ -360,8 +369,8 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > $$
 >
 > the Feynman propagator $\frac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]) with the infinitesimal $\varepsilon$ replaced by the finite $m\Gamma$, which radiative corrections produce: the self-energy of an unstable particle has an imaginary part on its mass shell, $Z\operatorname{Im}\Pi(m^2) = -m\Gamma$ (Yu (10.265)), and near the pole the full propagator is $\frac{iZ}{p^2 - m^2 - iZ\operatorname{Im}\Pi(m^2)} = \frac{iZ}{p^2 - m^2 + im\Gamma}$ (Yu (10.270), here with $Z \simeq 1$; beyond the course so far: [[§C6b.7 Decay Rates and Widths#^rem-c6b-7-3|★ Remark: Yu's route to the width]]).
-> - *Assumes:* a narrow width, $\Gamma \ll m$; $p^2$ near $m^2$; the field normalization of the full propagator set to 1.
-> - *Applies to:* resonances, "I hit something and [make] some resonance"; a stable particle is the limit $\Gamma \to 0$.
+> - *Assumptions:* a narrow width, $\Gamma \ll m$; $p^2$ near $m^2$; the field normalization of the full propagator set to 1.
+> - *Applies:* resonances, "I hit something and [make] some resonance"; a stable particle is the limit $\Gamma \to 0$.
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("Propagator in QFT with radiative corrections: $\frac{1}{p^2 - m^2 + im\Gamma}$"), and transcript ("you might be more happy if I actually give it dimensions … It's an $i m\Gamma$, where $\Gamma$ is a width") · the user's PHY 513 notes, Ch. 15 §15.8, eq. (BWprop) · PS §4.5, eq. (4.64) · Yu §10.6, eq. (10.270) (derived there from the self-energy, with $Z \simeq 1$)*
 
@@ -375,6 +384,8 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > $$
 >
 > a simple pole at $p^0 = E_{\mathbf p} - i\frac{m}{E_{\mathbf p}}\frac\Gamma2$, below the real axis; the exact pole $p^0 = \sqrt{E_{\mathbf p}^2 - im\Gamma}$ differs from it at order $\Gamma^2$.
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]]; *applies:* narrow width, $p^0$ near $E_{\mathbf p}$; first order in $\Gamma$.
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("$\frac{1}{p^2 - m^2 + im\Gamma} = \frac{1}{(p^0)^2 - E_{\vec p}^2 + im\Gamma} \simeq \frac{1}{2E_{\vec p}(p^0 - E_{\vec p} + i\frac{m}{E_{\vec p}}\frac{\Gamma}{2})}$. Approximation: $p^0 \sim E_{\vec p} = \sqrt{\vec p^2 + m^2}$."), and transcript · the user's PHY 513 notes, Ch. 15 §15.8, eq. (BWprop), paragraph "Checks (filled in)" · PS §4.5, eq. (4.64)*
 
@@ -427,6 +438,8 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 >
 > the probability that the particle is still there decreases at the rate $\Gamma_{\rm NR}$.
 >
+> *Model:* none (non-relativistic quantum mechanics); *applies:* one decaying state, $t > 0$.
+>
 > *Source: PHY 513 Lecture 15, slide 23 ("In non-relativistic quantum theory: $\Gamma_{\rm NR}$ is decay constant. Wave function $\psi \sim e^{-iEt} = e^{-iE^0t - \frac{\Gamma_{\rm NR}}{2}t}$ ⇒ $|\psi|^2 = e^{-\Gamma_{\rm NR}t}$"), and transcript ("this wave function … gives me the $e^{-\Gamma t}$ decay instead of the wave function having norm one") · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Relation to non-relativistic decay")*
 
 ^def-c6b-7-2
@@ -441,6 +454,8 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > $$
 >
 > $\Gamma$ in $p^2 - m^2 + im\Gamma$ is a Lorentz-invariant notion, the decay rate in the rest frame; a particle moving with energy $E_{\mathbf p}$ decays at the slower rate $\Gamma_{\rm NR}$ and lives $\gamma$ times longer.
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]]; *applies:* as there; first order in $\Gamma$, $t > 0$.
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("Relativistic decay rate has additional time dilatation: $\frac{m}{E_{\vec p}}\Gamma = \Gamma_{\rm NR}$"), and transcript ("our $\Gamma$ here really is a relativistically invariant notion … there's an additional time dilation, non-relativistic quantum mechanics would never take [into account]") · the user's PHY 513 notes, Ch. 15 §15.8, Principle "The width is invariant; the decay rate is time-dilated", eq. (GammaNR) (a derived result: a theorem here) · PS §4.5, p. 101 (after eq. (4.64))*
 
@@ -495,6 +510,8 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > $$
 >
 > a bell shape in $\sqrt s$ peaked at $m$ with full width at half maximum $\Gamma$ (narrow width). The normalized shape $f_{\rm BW}(\sqrt s) = \frac{\Gamma}{2\pi}\frac{1}{(\sqrt s - m)^2 + \Gamma^2/4}$ tends to $\delta(\sqrt s - m)$ as $\Gamma \to 0$: a stable particle.
+>
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]]; *applies:* as there; $\sqrt s$ near $m$, narrow width.
 >
 > *Source: PHY 513 Lecture 15, transcript ("if you were to take the norm squared of this, you will see that this is a perfectly good … bell shape … the limit where the width goes to zero") · the user's PHY 513 notes, Ch. 15 §15.8, Figure "breitwigner", paragraph "Checks (filled in)" · Yu §10.6, eqs. (10.271)–(10.275) · PS §4.5, eq. (4.63) (the non-relativistic form)*
 

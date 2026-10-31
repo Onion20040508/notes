@@ -15,7 +15,7 @@ A classical source switched on for a finite time leaves the vacuum in a state wi
 
 *Conventions* ([[Larsen PHY 513]]): the source model is [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]], $j$ real, smooth, nonzero only for a finite time, $\hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x)$; $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]) with $k^0 = E_{\mathbf k}$ where stated; **one-particle states $|\mathbf k\rangle = \hat a^\dagger_{\mathbf k}|0\rangle$, not relativistically normalized** ([[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^cau-c6b-9-1|Caution: Two normalizations of one-particle states]]); $\lambda$ is the mean number of particles produced (PS's letter; there is no $\phi^4$ coupling in this section); $\hat\phi^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]).
 
-**Setup and scope: exact, no asymptotic subtleties.** The source of [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] is nonzero only for a finite time: $j(t, \mathbf x) = 0$ for $t \notin [t_1, t_2]$. Hence the interaction has compact support in time,
+**Setup and scope: exact, no asymptotic subtleties.** The setup of every box below is [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], the same system as [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] written as a Hamiltonian. The source of Model §C2b.5.1 is nonzero only for a finite time: $j(t, \mathbf x) = 0$ for $t \notin [t_1, t_2]$. Hence the interaction has compact support in time,
 $$
 \hat H(t) = \hat H_0 + \hat H_{\rm int}(t) , \qquad \hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x) = 0 \quad\text{for } t < t_1 \text{ and } t > t_2 ,
 $$
@@ -43,6 +43,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 > $$
 >
 > and the amplitude to end in a free state $|f\rangle$ is $\langle f|T\{\exp[i\int d^4x\,j\hat\phi_I]\}|0\rangle$.
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening: exact, all orders in $j$.
 >
 > *Source: PHY 513, Problem Set 8, Problem 3(a) (the user's solution) · PS Problem 4.1(a)*
 
@@ -82,6 +84,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 > $$
 >
 > with $\mathcal A(0) = 1 + \mathcal A_2 + O(j^4)$, $\mathcal A_2 = -\frac{i}{2}\int\frac{d^4p}{(2\pi)^4}\frac{|\tilde j(p)|^2}{p^2 - m^2 + i\varepsilon}$ and $2\operatorname{Re}\mathcal A_2 = -\lambda$. $\lambda$ is the mean number $\bar N$ of [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3|Theorem §C2b.8.3]].
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening; the expansion to order $j^2$ (all orders: [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-3|Theorem §C6b.9.3]]).
 >
 > *Source: PHY 513, Problem Set 8, Problem 3(b) (the user's solution; the problem's comment: "Extracting that real part from the Feynman propagator is where the $i\epsilon$ prescription does its work") · PS Problem 4.1(b)*
 
@@ -156,6 +160,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 >
 > The order-$j^n$ term has prefactor $\frac{1}{n!} = \frac{1}{|G_n|}$, $G_n = S_n$ the permutations of the one-legged vertices ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1).
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening.
+>
 > *Source: PHY 513, Problem Set 8, Problem 3(c) (the user's "Feynman rules": "a source vertex, drawn as a cross, with a single leg and weight $i\int d^4x\,j(x)$")*
 
 ^def-c6b-9-1
@@ -166,6 +172,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 > $$
 > \mathcal A(0) = \sum_{m\ge0}\frac{L^m}{2^m\,m!} = \sum_{m\ge0}\frac{(\mathcal A_2)^m}{m!} = e^{\mathcal A_2}, \qquad P(0) = e^{2\operatorname{Re}\mathcal A_2} = e^{-\lambda} .
 > $$
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening: exact, all orders in $j$.
 >
 > *Source: PHY 513, Problem Set 8, Problem 3(c) (the user's solution) · PS Problem 4.1(c)*
 
@@ -208,6 +216,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 > $$
 >
 > each outgoing particle contracts with exactly one field, $\overbracket{\langle\mathbf k|\,\hat\phi_I(y)} \equiv [\hat a_{\mathbf k}, \hat\phi_I^-(y)] = e^{ik\cdot y}/\sqrt{2E_{\mathbf k}}$. Hence in $\langle\mathbf k_1\cdots\mathbf k_n|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_\ell)\}|0\rangle$ only the Wick terms with exactly $n$ uncontracted fields survive. For relativistically normalized states $|\mathbf k\rangle_{\rm rel} = \sqrt{2E_{\mathbf k}}\,\hat a^\dagger_{\mathbf k}|0\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) the factors $\frac{1}{\sqrt{2E}}$ drop out: ${}_{\rm rel}\langle\mathbf k_1\cdots\mathbf k_n|{:}\hat\phi_I(y_1)\cdots\hat\phi_I(y_n){:}|0\rangle = \sum_\sigma\prod_ie^{ik_i\cdot y_{\sigma(i)}}$; for $n = 1$, $\langle\mathbf p|\hat\phi_I(x)|0\rangle = e^{ip\cdot x}$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]).
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum: any free fields between $\langle\mathbf k_1\cdots\mathbf k_n|$ and $|0\rangle$, independent of the dynamics; $\langle\mathbf p|\hat\phi_I(x)|0\rangle$ is the free-field result of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]; both normalizations ([[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^cau-c6b-9-1|§C6b.9, Caution: Two normalizations]]).
 >
 > *Source: PHY 513, Problem Set 8, Problem 3(d)–(e) (the user's solution: "Only one uncontracted field survives"; "Exactly $n$ uncontracted fields survive"; the sum over $\sigma \in S_n$) and Problem 4 (relativistic form) · stated in general here, so that it can move to a section on external states*
 
@@ -268,6 +278,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 >
 > to leading order $\mathcal A(\mathbf k) = i\tilde j(k)/\sqrt{2E_{\mathbf k}} + O(j^3)$ and $|\mathcal A(\mathbf k)|^2 = |\tilde j(k)|^2/2E_{\mathbf k} + O(j^4)$.
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening: exact, all orders in $j$; states $\hat a^\dagger|0\rangle$.
+>
 > *Source: PHY 513, Problem Set 8, Problem 3(d) (the user's solution) · PS Problem 4.1(d)*
 
 ^thm-c6b-9-5
@@ -300,6 +312,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 >
 > integrating each momentum independently counts each state $n!$ times. With relativistic normalization the same holds with $\frac{d^3k_i}{(2\pi)^32E_{\mathbf k_i}}$; this is the $\frac{1}{S_{\rm id}}$ of identical particles ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]], whose derivation, Step 2, is the same computation).
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* the free Fock space, any $n$-particle states, independent of the dynamics.
+>
 > *Source: PHY 513, Problem Set 8, Problem 3(e) (the user's solution, paragraph "Measure") and Problem 4 ("as for the $\frac{1}{n!}$ in Problem 3(e), the total rate carries a factor $\frac{1}{2!}$")*
 
 ^thm-c6b-9-6
@@ -323,6 +337,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 > $$
 > \mathcal A(\mathbf k_1, \dots, \mathbf k_n) = \prod_{i=1}^n\frac{i\,\tilde j(k_i)}{\sqrt{2E_{\mathbf k_i}}}\;e^{\mathcal A_2}, \qquad P(n) = \frac{1}{n!}\int\prod_i\frac{d^3k_i}{(2\pi)^3}\,|\mathcal A(\mathbf k_1, \dots, \mathbf k_n)|^2 = \frac{\lambda^n}{n!}\,e^{-\lambda} .
 > $$
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening: exact, all orders in $j$.
 >
 > *Source: PHY 513, Problem Set 8, Problem 3(e) (the user's solution) · PS Problem 4.1(e)*
 
@@ -349,6 +365,8 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 > $$
 > \sum_{n\ge0}P(n) = 1, \qquad \bar N = \sum_nn\,P(n) = \lambda, \qquad \langle(N - \bar N)^2\rangle = \lambda .
 > $$
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening: exact.
 >
 > *Source: PHY 513, Problem Set 8, Problem 3(f) (the user's solution) · PS Problem 4.1(f)*
 

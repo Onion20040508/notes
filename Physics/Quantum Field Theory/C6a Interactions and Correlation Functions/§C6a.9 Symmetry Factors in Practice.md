@@ -443,6 +443,8 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > 1. $S(D) = \dfrac{n!\,(2!\,2!)^n}{N_D} = |\operatorname{Stab}(P)|$, $N_D$ the number of contractions producing $D$;
 > 2. every symmetry maps $\hat\phi$ legs to $\hat\phi$ legs and $\hat\phi^\dagger$ legs to $\hat\phi^\dagger$ legs: it preserves every arrow.
 >
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]] with $-\frac\lambda4(\phi^\dagger\phi)^2$; *applies:* as for $\phi^4$ in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]: order $\lambda^n$ of the numerator of the master formula, in $|0\rangle$; combinatorial.
+>
 > *Source: PHY 513, Problem Set 8, Problem 1(b) (the user's solution: "$\frac14 = \frac{1}{2!\,2!}$ … $|G| = k!\,(2!\,2!)^k$ is again the inverse of the prefactor … A relabeling cannot exchange a $\hat\phi$ leg with a $\hat\phi^\dagger$ leg, so a symmetry must preserve every arrow") · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §8 (complex-scalar bullet) · proof written here*
 
 ^thm-c6a-9-1

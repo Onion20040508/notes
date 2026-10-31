@@ -18,6 +18,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > [!theorem] Theorem §C6b.8.1: Amplitudes Are Amputated Correlation Functions
 > At lowest order, the amplitude $i\mathcal M$ of a process with $n$ external particles is the connected $n$-point correlation function in momentum space with the $n$ external propagators removed and the overall $(2\pi)^4\delta^4$ stripped off. In a diagram, external lines carry no propagator: initial and final particles are lines ending at a vertex, "but no propagator".
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* lowest order in the couplings, with free relativistic states over $|0\rangle$ in place of the in and out states ([[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]); at that order no $\sqrt Z$ is needed; beyond it each external line carries $\sqrt Z$ and the physical mass, the LSZ formula (Lecture 16; [[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|Caution: The rule is stated at lowest order]]).
+>
 > *Source: PHY 513 Lecture 15, transcript ("The rule is actually that you don't have these. You do have an initial particle, … a final particle, but no propagator, no propagator. So the amplitude is actually the same as the corresponding … $n$-point correlation, but without the $n$ propagators"; "They're related by strip off the external lines") · the user's PHY 513 notes, Ch. 15 §15.9, Principle "Amplitudes are amputated correlators" (stated in the lecture, justified in Lecture 16: a theorem here, its derivation outlined from Yu) · Yu §10.5.3, eqs. (10.230)–(10.235) · PS §4.6 (Lecture 16)*
 
 ^thm-c6b-8-1
@@ -193,6 +195,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 >
 > On physical momenta ($p^0 = E_{\mathbf p} > 0$) the first term vanishes and the other two are supported on $\{p_1, p_2\} = \{p_A, p_B\}$: none contributes to $\langle f|i\hat T|i\rangle$ away from the forward direction, and none has the form $\delta^4(p_A + p_B - p_1 - p_2)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|Theorem §C6b.1.2]].
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* zeroth order, exact for the free field in $|0\rangle$; physical momenta $p^0 = E_{\mathbf p} > 0$.
+>
 > *Source: the user's PHY 513 notes, Ch. 15 §15.9 ("The disconnected pieces of the same correlator, such as $D_F(x_1 - x_3)D_F(x_2 - x_4)$, describe particles that pass through untouched. They belong to the $\mathbb 1$ of $S = \mathbb 1 + iT$") · PS §4.5, p. 99, eq. (4.58)*
 
 ^thm-c6b-8-2
@@ -257,6 +261,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 >
 > Its symmetry factor is that of [[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]] with the labelled external points held fixed. Diagrams that are not fully connected are excluded: their pieces belong to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ or to products of smaller processes ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-2|Theorem §C6b.8.2]], [[§C6b.8 Amplitudes from Correlation Functions#^rem-c6b-8-1|Remark: Disconnected pieces beyond zeroth order]]).
 >
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* any polynomial interaction without derivatives, any order; used for $\mathcal M$ at lowest order ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-1|Theorem §C6b.8.1]]).
+>
 > *Source: PHY 513, Problem Set 8, Problem 2(a)–(b) (the user's solution: "The four external particles are labeled by their momenta and are never relabeled, so a diagram is determined by which external particles are attached to which vertex"; a vertex with too many external particles leaves two legs "contracted with each other, giving a disconnected diagram that does not contribute to the scattering amplitude") · PHY 513 Lecture 15, transcript ("strip off the external lines") · Yu §7.3 (external lines of $\langle f|iT|i\rangle$)*
 
 ^def-c6b-8-1
@@ -277,6 +283,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > | $-\frac{\lambda}{4!}\phi^4$ | $\phi\phi\phi\phi$ | $-i\lambda$ |
 > | $-\mu\,\Phi\phi^2$ | $\Phi\phi\phi$ | $-i\mu\cdot1!\cdot2! = -2i\mu$ |
 > | $-\frac\lambda4(\phi^\dagger\phi)^2$ | $\phi\phi\phi^\dagger\phi^\dagger$ | $-i\frac\lambda4\cdot2!\cdot2! = -i\lambda$ |
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* any polynomial interaction without derivatives, every order; combinatorial.
 >
 > *Source: PHY 513, Problem Set 8, statement of Problem 2 (vertices $-ig$, $-i\lambda$) and Problem 1(b) (vertex $-i\lambda$ for $\frac\lambda4(\phi^\dagger\phi)^2$); the user's solution of Problem 4 ($\mathcal M = -2\mu$, "each of $\hat a_{\mathbf p_1}, \hat a_{\mathbf p_2}$ … pairs with one of the two fields, in 2 ways") · PS §4.4, p. 93 ("the various placements of these contractions into $\phi\phi\phi\phi$ generates a factor of 4!") · proof written here*
 
@@ -308,6 +316,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 > [!theorem] Theorem §C6b.8.4: Vertices Saturated by External Lines Give S = 1
 > If every vertex $v$ of a diagram has valence $r_v \ge 2$ and at least $r_v - 1$ of its legs joined to external points, then $S = 1$; equivalently $N_D = |G|$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]). In particular every tree diagram with one internal line has $S = 1$.
+>
+> *Model:* any (combinatorics); *applies:* any diagram with the stated valences, any vertex types.
 >
 > *Source: PHY 513, Problem Set 8, Problem 2(c) (the user's argument: "each vertex has exactly one internal leg … The external particles are never relabeled, so an element of $\mathrm{Stab}(P)$ fixes every leg joined to an external particle. The internal leg is then the only remaining leg at its vertex, so it is fixed as well") · PHY 513 Lecture 14, slide 17 ("Reordering of legs = topologically distinct diagram ⇒ S = 1")*
 
