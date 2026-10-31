@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C6 Interactions of Quantum Fields
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· C9 Discrete Symmetries and Majorana Fields]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (33), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (52), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (105), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (108), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (9)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (8)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (33), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (63), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (118), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (139), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (9)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (12)
 
 ## How C6 relates to Yu
 C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not Yu's chapter split (user decisions, 2026-10-26 and 2026-10-28). Yu treats Wick's theorem in §6.3, the Feynman rules for $S$-matrix elements in ch. 7 (Yukawa first, §7.2; $\phi^4$ and symmetry factors, §7.3), and reaches correlation functions and the cancellation of vacuum bubbles only in ch. 10, through asymptotic in-fields and the LSZ formula; the course reaches them through the $i\varepsilon$ projection onto the interacting vacuum (§C6.4). For the $S$-matrix, cross sections and decay rates (§C6.12–§C6.17, Lecture 15) Yu uses box normalization and squares the delta function, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$, where the course uses wave packets; he derives the width in the propagator from the self-energy (§10.6) and the amputation rule from LSZ (§10.3, §10.5.3). Each section states its Yu correspondence in its opening and, where the route differs, in a "Remark: Yu's route".
@@ -31,10 +31,11 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 | §C6.13 | §6.5.1, (6.276); §6.5.2, (6.308), (6.313), (6.321) | cross section as an event rate per flux; no wave packets | §4.5, (4.59)–(4.61), (4.65)–(4.75) |
 | §C6.14 | §6.5.1–§6.5.2, (6.276)–(6.313), (6.320)–(6.321) | box normalization, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$; beam on a fixed target | §4.5, (4.76)–(4.79) |
 | §C6.15 | §6.5.2–§6.5.3, (6.314)–(6.366) | Møller velocity; Källén function | §4.5, (4.80)–(4.85) |
-| §C6.16 | §6.5.4, (6.367)–(6.378); §10.6, (10.259)–(10.275) | box route to $\Gamma_f$; width from $\operatorname{Im}\Pi$ | §4.5, (4.62)–(4.64), (4.86) |
+| §C6.16 | §6.5.4–§6.5.5, (6.367)–(6.385); §10.6, (10.259)–(10.275) | box route to $\Gamma_f$; width from $\operatorname{Im}\Pi$ | §4.5, (4.62)–(4.64), (4.86) |
 | §C6.17 | §10.3, (10.107), (10.121); §10.5.2–§10.5.3, (10.224)–(10.235) | LSZ; amputated diagrams with $\sqrt Z$ | §4.5, (4.58); §4.6, p. 108 |
+| §C6.18 | — (Yu has no classical-source problem) | | Problem 4.1; §2.4, (2.61)–(2.66) |
 | §CA.7 (mathematics) | (6.167)–(6.168); (7.114)–(7.125) | | §4.3–§4.4 |
-| §CA.8 (mathematics) | §10.5.1, (10.192)–(10.196) | | §4.4, p. 98 |
+| §CA.8 (mathematics) | §10.5.1, (10.192)–(10.196) | | §4.4, pp. 96–98, (4.50)–(4.52) |
 
 ## Sections
 - [[§C6.1 From Free to Interacting Fields]] — 513 notes Ch. 13 §13.1; PS §4.1
@@ -54,6 +55,7 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 - [[§C6.15 Lorentz Invariance and Two-Body Phase Space]] — 513 notes Ch. 15 §15.6–§15.7; PS §4.5, pp. 106–107
 - [[§C6.16 Decay Rates and Widths]] — 513 notes Ch. 15 §15.8; PS §4.5, pp. 101, 107–108
 - [[§C6.17 Amplitudes from Correlation Functions]] — 513 notes Ch. 15 §15.9–§15.10; PS §4.5, p. 99; §4.6, p. 108
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route]] — PHY 513 Problem Set 8, Problem 3; PS Problem 4.1
 
 ## Principles
 - [[§C6.1 From Free to Interacting Fields#^pr-c6-1-6|§C6.1.6]] Canonical Quantization of $\phi^4$ Theory at a Reference Time
@@ -92,11 +94,12 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 - [[§C6.6 Wick's Theorem#^thm-c6-6-3|§C6.6.3]] Free Vacuum Values Are Sums over Pairings
 - [[§C6.6 Wick's Theorem#^thm-c6-6-4|§C6.6.4]] ★ Wick's Theorem for Ordinary Products
 - [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1|§C6.7.1]] The First-Order Numerator
-- [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-2|§C6.7.2]] Scalar Lines Are Undirected, Dirac Lines Are Oriented
+- [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-2|§C6.7.2]] Real-Scalar Lines Are Undirected; Complex-Scalar and Dirac Lines Are Oriented
 - [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-3|§C6.7.3]] The Number of Complete Contractions at Order λⁿ
 - [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|§C6.8.1]] The Coefficient of a Diagram Is 1/S
 - [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-2|§C6.8.2]] Feynman Rules for Correlation Functions in Position Space
 - [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-3|§C6.8.3]] Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
+- [[§C6.9 Symmetry Factors in Practice#^thm-c6-9-1|§C6.9.1]] Symmetry Factors with Oriented Lines
 - [[§C6.10 Feynman Rules in Momentum Space#^thm-c6-10-1|§C6.10.1]] Momentum Is Conserved at Every Vertex
 - [[§C6.10 Feynman Rules in Momentum Space#^thm-c6-10-2|§C6.10.2]] Feynman Rules for Correlation Functions in Momentum Space
 - [[§C6.10 Feynman Rules in Momentum Space#^thm-c6-10-3|§C6.10.3]] The Loop Factor D_F(0) Diverges Quadratically
@@ -105,6 +108,8 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 - [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-3|§C6.11.3]] Every Vacuum Bubble Is Proportional to the Volume of Spacetime
 - [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-4|§C6.11.4]] The Numerator Factorizes
 - [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-5|§C6.11.5]] Vacuum Bubbles Cancel
+- [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-6|§C6.11.6]] The Denominator Is the Exponential of the Connected Vacuum Bubbles
+- [[§C6.11 The iε Limit and Vacuum Bubbles#^thm-c6-11-7|§C6.11.7]] The Vacuum Energy Density
 - [[§C6.12 The S-Matrix and the Invariant Amplitude#^thm-c6-12-1|§C6.12.1]] S-Matrix Elements and the Interaction-Picture Evolution Operator
 - [[§C6.12 The S-Matrix and the Invariant Amplitude#^thm-c6-12-2|§C6.12.2]] The S-Matrix Conserves Four-Momentum
 - [[§C6.12 The S-Matrix and the Invariant Amplitude#^thm-c6-12-3|§C6.12.3]] The Mass Dimension of the Amplitude
@@ -128,13 +133,24 @@ C6 follows the course (Lectures 13–15) and the user's notes (Ch. 13–15), not
 - [[§C6.15 Lorentz Invariance and Two-Body Phase Space#^thm-c6-15-7|§C6.15.7]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
 - [[§C6.15 Lorentz Invariance and Two-Body Phase Space#^thm-c6-15-8|§C6.15.8]] All Masses Equal
 - [[§C6.16 Decay Rates and Widths#^thm-c6-16-1|§C6.16.1]] The Decay Rate Formula
-- [[§C6.16 Decay Rates and Widths#^thm-c6-16-2|§C6.16.2]] ★ Partial Widths Add
-- [[§C6.16 Decay Rates and Widths#^thm-c6-16-4|§C6.16.4]] The Propagator Near Its Pole
-- [[§C6.16 Decay Rates and Widths#^thm-c6-16-5|§C6.16.5]] The Width Is Invariant; the Decay Rate Is Time-Dilated
-- [[§C6.16 Decay Rates and Widths#^thm-c6-16-6|§C6.16.6]] The Breit–Wigner Shape and Its Width
+- [[§C6.16 Decay Rates and Widths#^thm-c6-16-2|§C6.16.2]] Two-Body Decays
+- [[§C6.16 Decay Rates and Widths#^thm-c6-16-3|§C6.16.3]] ★ Partial Widths Add
+- [[§C6.16 Decay Rates and Widths#^thm-c6-16-5|§C6.16.5]] The Propagator Near Its Pole
+- [[§C6.16 Decay Rates and Widths#^thm-c6-16-6|§C6.16.6]] The Width Is Invariant; the Decay Rate Is Time-Dilated
+- [[§C6.16 Decay Rates and Widths#^thm-c6-16-7|§C6.16.7]] The Breit–Wigner Shape and Its Width
 - [[§C6.17 Amplitudes from Correlation Functions#^thm-c6-17-1|§C6.17.1]] Amplitudes Are Amputated Correlation Functions
 - [[§C6.17 Amplitudes from Correlation Functions#^thm-c6-17-2|§C6.17.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter
+- [[§C6.17 Amplitudes from Correlation Functions#^thm-c6-17-3|§C6.17.3]] Vertex Factors of a Polynomial Interaction
+- [[§C6.17 Amplitudes from Correlation Functions#^thm-c6-17-4|§C6.17.4]] Vertices Saturated by External Lines Give S = 1
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6-18-1|§C6.18.1]] The Vacuum-Persistence Amplitude of a Source
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6-18-2|§C6.18.2]] The No-Particle Probability to Order j²
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6-18-3|§C6.18.3]] The Vacuum Series of a Source Exponentiates
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6-18-4|§C6.18.4]] Contraction of Fields with Outgoing Particles
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6-18-5|§C6.18.5]] The One-Particle Amplitude
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6-18-6|§C6.18.6]] The Measure on n-Particle States
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6-18-7|§C6.18.7]] The Number of Particles Is Poisson Distributed
+- [[§C6.18 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6-18-8|§C6.18.8]] Normalization, Mean and Variance
 
 ## Models
 - [[§C6.1 From Free to Interacting Fields#^mod-c6-1-1|§C6.1.1]] $\phi^4$ Theory
-- [[§C6.16 Decay Rates and Widths#^mod-c6-16-3|§C6.16.3]] The Propagator of an Unstable Particle
+- [[§C6.16 Decay Rates and Widths#^mod-c6-16-4|§C6.16.4]] The Propagator of an Unstable Particle

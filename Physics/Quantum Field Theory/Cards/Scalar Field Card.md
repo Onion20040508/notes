@@ -170,7 +170,7 @@ Free fields $\hat\phi_i = \hat\phi_I(x_i)$; Lectures 14–15.
 | amplitude from a correlator | lowest order: $i\mathcal M$ = connected momentum-space correlator without the external propagators and the $(2\pi)^4\delta^4$ (Lecture 15) | [[§C6.17 Amplitudes from Correlation Functions#^thm-c6-17-1\|Theorem §C6.17.1]] |
 | $\phi\phi \to \phi\phi$, first order | $i\mathcal M = -i\lambda$ | [[§C6.17 Amplitudes from Correlation Functions#^ex-c6-17-1\|Example §C6.17.1]] |
 | $\phi\phi \to \phi\phi$ cross section | $\bigl(\frac{d\sigma}{d\Omega}\bigr)_{\rm cm} = \frac{\lambda^2}{64\pi^2E_{\rm cm}^2}$, $\sigma_{\rm total} = \frac{\lambda^2}{32\pi E_{\rm cm}^2}$ (identical-particle $\frac12$) | [[§C6.17 Amplitudes from Correlation Functions#^ex-c6-17-2\|Example §C6.17.2]] |
-| unstable scalar | propagator $\frac{i}{p^2 - m^2 + im\Gamma}$; moving: decay rate $\frac{m}{E_{\mathbf p}}\Gamma$ | [[§C6.16 Decay Rates and Widths#^mod-c6-16-3\|Model §C6.16.3]], [[§C6.16 Decay Rates and Widths#^thm-c6-16-5\|Theorem §C6.16.5]] |
+| unstable scalar | propagator $\frac{i}{p^2 - m^2 + im\Gamma}$; moving: decay rate $\frac{m}{E_{\mathbf p}}\Gamma$ | [[§C6.16 Decay Rates and Widths#^mod-c6-16-4\|Model §C6.16.4]], [[§C6.16 Decay Rates and Widths#^thm-c6-16-6\|Theorem §C6.16.6]] |
 
 ## 10. Procedures
 

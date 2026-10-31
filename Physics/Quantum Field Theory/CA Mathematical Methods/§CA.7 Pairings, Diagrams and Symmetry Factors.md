@@ -251,7 +251,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 >
 > Theorem §CA.7.8 (below) decides part 1 on the multigraph alone, by the multiplicities $m_P$ and loop numbers $\ell_P$ up to a permutation of the vertices.
 >
-> *Source: the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §4, Proposition "Diagrams are orbits" · proof written out here*
+> *Source: the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §4, Proposition "Diagrams are orbits" · PHY 513, Problem Set 8, Problem 1(a) (used: "the $N$ pairings of a diagram form one orbit") · proof written out here*
 
 ^thm-ca-7-4
 
@@ -319,7 +319,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > |G_n\cdot P| = \frac{n!\,(4!)^n}{S(P)} .
 > $$
 >
-> *Source: the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor": $\frac1S = \frac{\text{number of complete contractions that produce the diagram}}{n!\,(4!)^n}$) · proof written here*
+> *Source: the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor": $\frac1S = \frac{\text{number of complete contractions that produce the diagram}}{n!\,(4!)^n}$) · PHY 513, Problem Set 8, Problem 1(a) (the user's "alternative": $k!\,(4!)^k = N\,|\mathrm{Stab}(P)|$) · proof written here*
 
 ^thm-ca-7-5
 
@@ -361,7 +361,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ^der-ca-7-5
 
 ![[ph-qft-ca-7-1.svg]]
-*The orbit picture of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]. Left: one labelled diagram, a pairing of all half-edges (orange: leg $a$ of vertex $z_j$). Right: its diagram $D$; the map $\pi$ forgets the labels $j$ and $a$. The fiber $\pi^{-1}(D)$ is the orbit of the pairing under the relabelling group $G_n$, so $|\pi^{-1}(D)| = |G_n|/S$ by orbit–stabilizer, and dividing by $|G_n| = n!\,(4!)^n$ leaves $1/S$. (a) the tadpole, (b) the figure-eight, (c) the melon; each stabilizer is listed on the right, and $S$ agrees with the product formula of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]].*
+*The orbit picture of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]. Left: one labelled diagram, a pairing of all half-edges (orange: leg $a$ of vertex $z_j$). Right: its diagram $D$; the map $\pi$ forgets the labels $j$ and $a$. The fiber $\pi^{-1}(D)$ is the orbit of the pairing under the relabelling group $G_n$, so $|\pi^{-1}(D)| = |G_n|/S$ by orbit–stabilizer, and dividing by $|G_n| = n!\,(4!)^n$ leaves $1/S$. (a) the tadpole, (b) the figure-eight, (c) the melon, (d)–(f) the sunset, the fish and the triangle (PHY 513, Problem Set 8, Problem 1(a)); each stabilizer is listed on the right, and $S$ agrees with the product formula of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]].*
 
 > [!theorem] Corollary §CA.7.6: The Wick Sum Splits into Diagrams
 > For $|E|$ even,
