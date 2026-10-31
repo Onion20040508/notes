@@ -7,7 +7,7 @@ section: C5b.9
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C5b.8 Green's Functions and the Dirac Feynman Propagator]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C6a.1 From Free to Interacting Fields]] →
+← [[§C5b.8 Green's Functions and the Dirac Feynman Propagator]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C6a.0 Setups and Observables]] →
 
 *Sources: the user's PHY 513 notes, Ch. 10 §10.2 and §10.7 · PHY 513 Lecture 10 (Larsen, 5 Oct 2026), slides 6–7 and 23, transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 52–58 · Yu Zhao-Huan, 量子场论讲义, §§5.4.3–5.5.4 · the user's pre-course notes, §5.5.*
 

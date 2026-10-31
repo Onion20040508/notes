@@ -8,16 +8,17 @@ tags: [chapter, quantum-field-theory]
 # C6a Interactions and Correlation Functions
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]] · [[· C6b The S-Matrix, Amplitudes and Observables]] →
 
-**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (32), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (28), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (102), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (88), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (9)
+**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (32), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (108), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (24), [[· CA Mathematical Methods|CA Mathematical Methods]] (92), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (9)
 **Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (2), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (37), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
 
-C6a computes **correlation functions** $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ of an interacting theory, with $\phi^4$ theory as the course's first case (Lectures 13–14; the user's notes, Ch. 13–14). The interaction picture and the Dyson series write them through free fields (§C6a.1–§C6a.4, master formula [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); Wick's theorem turns the free vacuum values into sums over contractions (§C6a.5–§C6a.6); diagrams and the Feynman rules in position and momentum space, with their symmetry factors, organize the sum, and the $i\varepsilon$ limit cancels the vacuum bubbles (§C6a.7–§C6a.11). Correlation functions are not what an experiment measures: $S$-matrix elements, the invariant amplitude $\mathcal M$, cross sections and decay rates are computed in [[· C6b The S-Matrix, Amplitudes and Observables]], which reads $\mathcal M$ off from the amputated correlation functions of this chapter. In Yu's book the material of C6a is in §6.1–§6.3 and §10.4–§10.5.
+**Start with [[§C6a.0 Setups and Observables|§C6a.0]]**: it classifies the physical situations by how the interaction behaves in time (a source switched off, a static source, a self-interacting field), says which vacuum and which states each one has, and turns questions as asked into the object to compute. C6a computes **correlation functions** $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ of an interacting theory, with $\phi^4$ theory as the course's first case (Lectures 13–14; the user's notes, Ch. 13–14). The interaction picture and the Dyson series write them through free fields (§C6a.1–§C6a.4, master formula [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); Wick's theorem turns the free vacuum values into sums over contractions (§C6a.5–§C6a.6); diagrams and the Feynman rules in position and momentum space, with their symmetry factors, organize the sum, and the $i\varepsilon$ limit cancels the vacuum bubbles (§C6a.7–§C6a.11). Correlation functions are not what an experiment measures: $S$-matrix elements, the invariant amplitude $\mathcal M$, cross sections and decay rates are computed in [[· C6b The S-Matrix, Amplitudes and Observables]], which reads $\mathcal M$ off from the amputated correlation functions of this chapter. In Yu's book the material of C6a is in §6.1–§6.3 and §10.4–§10.5.
 
 ## How C6a relates to Yu
 C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), not Yu's chapter split (user decisions, 2026-10-26 and 2026-10-28). Yu treats Wick's theorem in §6.3, the Feynman rules for $S$-matrix elements in ch. 7 (Yukawa first, §7.2; $\phi^4$ and symmetry factors, §7.3), and reaches correlation functions and the cancellation of vacuum bubbles only in ch. 10, through asymptotic in-fields and the LSZ formula; the course reaches them through the $i\varepsilon$ projection onto the interacting vacuum (§C6a.4). Each section states its Yu correspondence in its opening and, where the route differs, in a "Remark: Yu's route".
 
 | Section | Yu § and eqs. | Yu's setting | PS |
 |---|---|---|---|
+| §C6a.0 | §6.2, p. 216; (6.284); §10.1, (10.4); p. 474 | asymptotic states; $\lvert0\rangle$ free in ch. 6–7, interacting in ch. 10 | §2.4, §4.2, §4.5 |
 | §C6a.1 | Ch. 6 opening, (6.1)–(6.5), (6.13); §6.1.1, (6.39)–(6.46) | | §4.1 |
 | §C6a.2 | §6.1, (6.22)–(6.38), (6.44)–(6.50) | $V(t) = e^{iH_0t}e^{-iHt}$ | §4.2 |
 | §C6a.3 | §6.2, (6.93)–(6.121) | $U(t, t_0)$, Dyson series; $S = U(\infty, -\infty)$ (6.122)–(6.125) | §4.2 |
@@ -33,6 +34,7 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 | §CA.8 (mathematics) | §10.5.1, (10.192)–(10.196) | | §4.4, pp. 96–98, (4.50)–(4.52) |
 
 ## Sections
+- [[§C6a.0 Setups and Observables]] — Coleman 253a pp. 73–102, 140–158; PS §2.4, §4.2, §4.5; start here
 - [[§C6a.1 From Free to Interacting Fields]] — 513 notes Ch. 13 §13.1; PS §4.1
 - [[§C6a.2 The Interaction Picture]] — 513 notes Ch. 13 §13.2; PS §4.2, pp. 83–84
 - [[§C6a.3 The Time-Evolution Operator and Time Ordering]] — 513 notes Ch. 13 §13.3; PS §4.2, pp. 84–86
@@ -49,6 +51,8 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 - [[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|§C6a.1.6]] Canonical Quantization of $\phi^4$ Theory at a Reference Time
 
 ## Theorems
+- [[§C6a.0 Setups and Observables#^thm-c6a-0-4|§C6a.0.4]] The Free Vacuum Is Exact Only When the Interaction Switches Off
+- [[§C6a.0 Setups and Observables#^thm-c6a-0-5|§C6a.0.5]] The Connected Diagrams of a Switched Source Are Two Trees
 - [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|§C6a.1.2]] The Coupling of $\phi^4$ Theory Is Dimensionless
 - [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|§C6a.1.3]] The Field Equation of $\phi^4$ Theory
 - [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-4|§C6a.1.4]] The Conjugate Momentum Is Unchanged by the Interaction
@@ -100,4 +104,7 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 - [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-7|§C6a.11.7]] The Vacuum Energy Density
 
 ## Models
+- [[§C6a.0 Setups and Observables#^mod-c6a-0-1|§C6a.0.1]] A Free Field and a Source Switched Off at Early and Late Times
+- [[§C6a.0 Setups and Observables#^mod-c6a-0-2|§C6a.0.2]] ★ A Free Field and a Static Source
+- [[§C6a.0 Setups and Observables#^mod-c6a-0-3|§C6a.0.3]] A Self-Interacting Field
 - [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|§C6a.1.1]] $\phi^4$ Theory

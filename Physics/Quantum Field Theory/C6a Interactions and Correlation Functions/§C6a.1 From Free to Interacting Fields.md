@@ -7,7 +7,7 @@ section: C6a.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C5b.9 Spin and Statistics]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.2 The Interaction Picture]] →
+← [[§C6a.0 Setups and Observables]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.2 The Interaction Picture]] →
 
 *Sources: the user's PHY 513 notes, Ch. 13 §13.1 · PHY 513 Lecture 13 (Larsen, 14 Oct 2026), slides 2, 5–6, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.1, pp. 77–80, eqs. (4.1)–(4.2); §4.2, p. 83, eq. (4.12) · Yu Zhao-Huan, 量子场论讲义, Ch. 6, pp. 199–201, eqs. (6.1)–(6.5), (6.13); §6.1.1, eqs. (6.39)–(6.46).*
 

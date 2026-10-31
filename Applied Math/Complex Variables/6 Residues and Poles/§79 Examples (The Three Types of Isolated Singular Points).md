@@ -109,6 +109,10 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 
 ^ex-79-3
 
+![[m342-79-a1.gif|600]]
+
+*(Not from the book; animation added, vault only.)* The three types of isolated singular points side by side, each the section's own example at $0$, while the view zooms in: the square $|x|, |y| < \delta$ shrinks from $\delta = 2$ to $\delta = 0.125$, halving four times. Each point $z$ is coloured by the argument of the function value, using the colour wheel at the top right (red $= 0$, then yellow, green, cyan, blue, magenta counterclockwise); around a pole of order $k$ every colour appears $k$ times clockwise, and the brightness steps are level lines of the modulus (one step each time it doubles). Left, the removable singular point of $(1 - \cosh z)/z^2$ (Example §79.1): the picture becomes one flat cyan, the colour of the value $f(0) = -\frac12$ the function takes once the point is removed; the two shades of cyan are the neighbouring bands of the wheel on either side of $\arg = \pi$, whose sign pattern comes from the next term in $-\frac12 - \frac{z^2}{24} - \cdots$. Middle, the pole of order $2$ of $1/(z^2(1 - z))$ (Example §79.3(a)): after the simple pole at $1$ (cross) leaves the view, the colours run twice clockwise around $0$, and the picture settles into that of the leading term $1/z^2$, the same at every scale; only the modulus grows, by a factor of about $4$ per halving. Right, the essential singular point of $e^{1/z}$ (Example §79.2): zooming in never simplifies anything, more and more colour bands crowd into the view, each colour (in fact each value except $0$, by Picard's theorem §79.1) taken infinitely often near $0$; at the centre the bands become narrower than a pixel and blur to grey.
+
 ## Exercises from the Course
 
 > [!example] Example §79.4: Principal Parts, Orders and Residues

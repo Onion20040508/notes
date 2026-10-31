@@ -7,7 +7,10 @@ section: C6a.0
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c, draft]
 ---
-> [!warning] Draft for review — not yet part of the chapter
+> [!warning] SUPERSEDED by §C6a.0 Setups and Observables (2026-10-31)
+> Replaced by [[§C6a.0 Setups and Observables]], which classifies setups instead of chaining formulas (survey `qft-C/survey/SYNTHESIS.md`). Kept unchanged below; not deleted.
+>
+> (Original banner: Draft for review — not yet part of the chapter.)
 > Planned overview §C6a.0 for the C6 restructure (plan `qft-C/C6-RESTRUCTURE-PLAN.md`, §2). Every link points to the current notes. Nothing in C6a or C6b has been changed yet.
 
 *Sources: PHY 513 Lectures 13–15 (Larsen, 14, 26 and 28 Oct 2026) · the user's PHY 513 notes, Ch. 13–15 (Ch. 15, Figure "bigpicture" and Principle "Dynamics versus kinematics") · PHY 513, Problem Set 8 (the user's solution, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.1–§4.5 · Yu Zhao-Huan, 量子场论讲义, §6.1–§6.3, §6.5, §10.3–§10.6.*
