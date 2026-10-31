@@ -275,6 +275,10 @@ tags: [group-theory, math493]
 ![[m493-23-1.svg]]
 *The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation, each injective. Their composite (blue) is the embedding of Corollary §25.6.*
 
+![[m493-23-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* Cayley's theorem (Thm. §25.5) for $S_3$: the permutation $\hat g: x \mapsto gx$ of the six elements for each $g$ in turn (circles: fixed points, only for $g = e$). The $3$-cycles (blue) give two $3$-cycles of elements; the transpositions (red) give three swaps. Different $g$ give different permutations, so $g \mapsto \hat g$ embeds $S_3$ in $S_{S_3}$.
+
 > [!remark]- Connections
 > - The small representations the next remark asks for begin with characters: [[§46 Characters#^rem-46-4|One-Dimensional Representations]].
 

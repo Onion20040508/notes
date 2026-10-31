@@ -151,6 +151,10 @@ tags: [group-theory, math493]
 ![[m493-5-2.svg]]
 *The two cases of the dichotomy. Top: if $a = \inf P > 0$, then $a \in H$ and $H = a\mathbb{Z}$ is evenly spaced; the gap $(0, a)$ (red) holds no point of $H$, since a point there would be a positive element below $\inf P$. Bottom: $H = \mathbb{Z} + \sqrt2\,\mathbb{Z}$ (the points $m + n\sqrt2$ with $\vert n \vert \leq 6$ are shown) contains arbitrarily small positive elements such as $h = 3 - 2\sqrt2 \approx 0.17$. Its multiples $qh$ march along in steps $h < \varepsilon$, so one of them, $qh$ with $q = \lfloor x/h \rfloor$ (red dot), lands in any interval $(x - \varepsilon, x + \varepsilon)$.*
 
+![[m493-5-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The fractional parts of $n\sqrt2$, $n \le N$, as $N$ grows to $400$. They are points of $\mathbb{Z} + \sqrt2\,\mathbb{Z}$ in $[0, 1]$, and the largest gap between them (below, log scale) shrinks toward $0$: the dense case of the dichotomy.
+
 ## Subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$
 
 > [!example] Example §5.4: Subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$

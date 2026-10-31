@@ -169,3 +169,7 @@ tags: [group-theory, math493]
 
 ![[m493-17-1.svg]]
 *The subgroup lattice of $\mathbb{Z}/12\mathbb{Z}$: one subgroup for each divisor of $12$ (its order is shown at the right). All are normal, the group being abelian.*
+
+![[m493-17-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* On the $12$-hour clock, $k$ is added again and again for $k = 1, \ldots, 11$ (skipping $7$). The path closes after $12/\gcd(12, k)$ steps and traces $\langle k \rangle$: $k$ and $k'$ with the same $\gcd$ give the same polygon or star, and only six subgroups appear, one for each divisor of $12$.

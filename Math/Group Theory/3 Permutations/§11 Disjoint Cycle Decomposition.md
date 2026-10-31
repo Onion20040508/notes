@@ -72,6 +72,10 @@ tags: [group-theory, math493]
 ![[m493-11-1.svg]]
 *$\sigma = (1\,5\,4)(3\,7\,6)$ in $S_7$, drawn by following arrows: two disjoint $3$-cycles (blue, red) and the fixed point $2$ (a $1$-cycle). Every element has exactly one arrow out and one in, which is why the loops cannot overlap; reversing all arrows gives $\sigma^{-1} = (1\,4\,5)(3\,6\,7)$.*
 
+![[m493-11-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The algorithm of the proof on $\sigma$: start at $1$, follow the arrows until the path returns, close the cycle $(1\,5\,4)$, and restart at the smallest unused point. $2$ is fixed, and $3$ gives $(3\,7\,6)$. So $\sigma = (1\,5\,4)(3\,7\,6)$.
+
 > [!theorem] Proposition §11.4: Computing with Disjoint Cycles
 > Let $\sigma = c_1 c_2 \cdots c_k$ be a product of disjoint cycles of lengths $r_1, \ldots, r_k$.
 > 1. $\sigma^{-1} = c_1^{-1} \cdots c_k^{-1}$, where the inverse of a cycle is the same loop traversed backwards: $(a_1\ a_2\ \cdots\ a_r)^{-1} = (a_r\ \cdots\ a_2\ a_1)$.

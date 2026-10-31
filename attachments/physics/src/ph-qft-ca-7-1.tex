@@ -1,4 +1,4 @@
-% Fiber of pi = G-orbit of a matching (Thm CA.7.5). ADDED figure (2026-10-29); lecture diagrams only (HW8 diagrams held until Nov 1).
+% Fiber of pi = G-orbit of a matching (Thm CA.7.5). ADDED figure (2026-10-29); panels (d)-(f) added 2026-10-31 (PHY 513, Problem Set 8, Problem 1(a), after submission).
 \tikzset{
   fdl/.style={line width=0.8pt, black},
   fdx/.style={circle, fill=black, inner sep=0pt, minimum size=3.6pt},
@@ -61,9 +61,70 @@
       stabilizer: permute the four lines, exchange $z_1, z_2$; $S=4!\cdot2=48$\\
       $|\pi^{-1}(D)| = 1152/48 = 24$ matchings};
   \end{scope}
+  % ---------- (d) sunset (PS8 1(a)(b)) ----------
+  \begin{scope}[yshift=-7.8cm]
+    \node[font=\bfseries] at (-0.7,0.2) {(d)};
+    \coordinate (c1) at (0.9,0); \coordinate (c2) at (2.6,0);
+    \vtx{s}{c1}{z_1}{180/1,55/2,0/3,-55/4}
+    \vtx{t}{c2}{z_2}{0/1,125/2,180/3,235/4}
+    \draw[fdl] (-0.1,0)--(s-1); \draw[fdl] (t-1)--(3.6,0);
+    \draw[fdl] (s-2) .. controls (1.5,0.75) and (2.0,0.75) .. (t-2); \draw[fdl] (s-3)--(t-3);
+    \draw[fdl] (s-4) .. controls (1.5,-0.75) and (2.0,-0.75) .. (t-4);
+    \node[fdx] at (-0.1,0){}; \node[fdx] at (3.6,0){};
+    \node[lab,below] at (-0.1,0){$x_1$}; \node[lab,below] at (3.6,0){$x_2$};
+    \draw[-{Stealth}, gray, line width=0.6pt] (3.95,0.2)--(5.15,0.2);
+    \draw[fdl] (5.4,0)--(6.0,0); \draw[fdl] (6.0,0) to[bend left=55] (7.3,0); \draw[fdl] (6.0,0)--(7.3,0); \draw[fdl] (6.0,0) to[bend right=55] (7.3,0); \draw[fdl] (7.3,0)--(7.9,0);
+    \node[fdx] at (5.4,0){}; \node[fdx] at (7.9,0){}; \node[fdv] at (6.0,0){}; \node[fdv] at (7.3,0){};
+    \node[info] at (8.5,0.25) {$E=2$, $n=2$, $|G| = 2!\,(4!)^2 = 1152$\\
+      stabilizer: the same $\pi\in S_3$ on legs $2,3,4$ of $z_1$ and of $z_2$\\
+      (permute the three lines; $z_1\leftrightarrow z_2$ excluded), $S=3!=6$\\
+      $|\pi^{-1}(D)| = 1152/6 = 192$ matchings};
+  \end{scope}
+  % ---------- (e) fish (PS8 1(a)(c)) ----------
+  \begin{scope}[yshift=-10.4cm]
+    \node[font=\bfseries] at (-0.7,0.2) {(e)};
+    \coordinate (c1) at (1.0,0); \coordinate (c2) at (2.5,0);
+    \vtx{f}{c1}{z_1}{150/1,210/2,40/3,-40/4}
+    \vtx{g}{c2}{z_2}{30/1,-30/2,140/3,220/4}
+    \draw[fdl] (0.0,0.55)--(f-1); \draw[fdl] (0.0,-0.55)--(f-2); \draw[fdl] (g-1)--(3.5,0.55); \draw[fdl] (g-2)--(3.5,-0.55);
+    \draw[fdl] (f-3) .. controls (1.6,0.7) and (1.9,0.7) .. (g-3);
+    \draw[fdl] (f-4) .. controls (1.6,-0.7) and (1.9,-0.7) .. (g-4);
+    \foreach \p in {(0.0,0.55),(0.0,-0.55),(3.5,0.55),(3.5,-0.55)}{\node[fdx] at \p {};}
+    \node[lab,left] at (0.0,0.55){$x_1$}; \node[lab,left] at (0.0,-0.55){$x_2$}; \node[lab,right] at (3.5,0.55){$x_3$}; \node[lab,right] at (3.5,-0.55){$x_4$};
+    \draw[-{Stealth}, gray, line width=0.6pt] (3.95,0.2)--(5.15,0.2);
+    \draw[fdl] (6.6,0) circle (0.45); \draw[fdl] (5.6,0.5)--(6.15,0)--(5.6,-0.5); \draw[fdl] (7.6,0.5)--(7.05,0)--(7.6,-0.5);
+    \node[fdv] at (6.15,0){}; \node[fdv] at (7.05,0){};
+    \foreach \p in {(5.6,0.5),(5.6,-0.5),(7.6,0.5),(7.6,-0.5)}{\node[fdx] at \p {};}
+    \node[info] at (8.5,0.25) {$E=4$, $n=2$, $|G| = 1152$\\
+      stabilizer: $\{e,\ (3\,4)\text{ at } z_1\text{ and at } z_2\}$ (exchange the two lines), $S=2$\\
+      $|\pi^{-1}(D)| = 1152/2 = 576$ matchings};
+  \end{scope}
+  % ---------- (f) triangle (PS8 1(a)(d)) ----------
+  \begin{scope}[yshift=-13.3cm]
+    \node[font=\bfseries] at (-0.7,0.5) {(f)};
+    \coordinate (cA) at (0.8,0.7); \coordinate (cB) at (2.8,0.7); \coordinate (cC) at (1.8,-0.95);
+    \vtx{A}{cA}{z_1}{150/1,210/2,0/3,-59/4}
+    \vtx{B}{cB}{z_2}{30/1,-30/2,-121/3,180/4}
+    \vtx{C}{cC}{z_3}{-140/1,-40/2,59/3,121/4}
+    \draw[fdl] (A-3)--(B-4); \draw[fdl] (B-3)--(C-3); \draw[fdl] (C-4)--(A-4);
+    \draw[fdl] (A-1)--++(150:0.55) node[fdx]{} node[lab,left]{$x_1$}; \draw[fdl] (A-2)--++(210:0.55) node[fdx]{} node[lab,left]{$x_2$};
+    \draw[fdl] (B-1)--++(30:0.55) node[fdx]{} node[lab,right]{$x_3$}; \draw[fdl] (B-2)--++(-30:0.55) node[fdx]{} node[lab,right]{$x_4$};
+    \draw[fdl] (C-1)--++(-140:0.5) node[fdx]{} node[lab,left]{$x_5$}; \draw[fdl] (C-2)--++(-40:0.5) node[fdx]{} node[lab,right]{$x_6$};
+    \draw[-{Stealth}, gray, line width=0.6pt] (4.45,0.2)--(5.25,0.2);
+    \coordinate (tA) at (5.9,0.65); \coordinate (tB) at (7.3,0.65); \coordinate (tC) at (6.6,-0.5);
+    \draw[fdl] (tA)--(tB)--(tC)--cycle;
+    \draw[fdl] (tA)--++(150:0.45) node[fdx]{}; \draw[fdl] (tA)--++(210:0.45) node[fdx]{};
+    \draw[fdl] (tB)--++(30:0.45) node[fdx]{}; \draw[fdl] (tB)--++(-30:0.45) node[fdx]{};
+    \draw[fdl] (tC)--++(-120:0.45) node[fdx]{}; \draw[fdl] (tC)--++(-60:0.45) node[fdx]{};
+    \foreach \v in {tA,tB,tC}{\node[fdv] at (\v){};}
+    \node[info] at (8.5,0.25) {$E=6$, $n=3$, $|G| = 3!\,(4!)^3 = 82\,944$\\
+      stabilizer: $\{e\}$; exchanging legs $3,4$ at a vertex gives\\
+      another matching of the same diagram, $S=1$\\
+      $|\pi^{-1}(D)| = 82\,944$ matchings};
+  \end{scope}
   % ---------- legend ----------
-  \node[leg] at (0.2,-6.6) {}; \node[font=\scriptsize, anchor=west] at (0.35,-6.6) {leg $a$ of vertex $z_j$};
-  \node[fdx] at (3.6,-6.6) {}; \node[font=\scriptsize, anchor=west] at (3.75,-6.6) {fixed external point $x_i$};
-  \node[font=\scriptsize, align=center] at (7.0,-7.35) {Left: one matching of all half-edges. Right: its diagram $D$. The fiber $\pi^{-1}(D)$ is the orbit of the matching under $G$,\\
-    so $|\pi^{-1}(D)| = |G|/S$ and the diagram's coefficient is $|\pi^{-1}(D)|/|G| = 1/S$.};
+  \node[leg] at (0.2,-15.8) {}; \node[font=\scriptsize, anchor=west] at (0.35,-15.8) {leg $a$ of vertex $z_j$};
+  \node[fdx] at (3.6,-15.8) {}; \node[font=\scriptsize, anchor=west] at (3.75,-15.8) {fixed external point $x_i$};
+  \node[font=\scriptsize, align=center] at (7.0,-16.55) {Left: one matching of all half-edges. Right: its diagram $D$. The fiber $\pi^{-1}(D)$ is the orbit of the matching under $G$,\\
+    so $|\pi^{-1}(D)| = |G|/S$ and the diagram's coefficient is $|\pi^{-1}(D)|/|G| = 1/S$. (d)--(f): PHY 513, Problem Set 8, Problem 1(a).};
 \end{tikzpicture}

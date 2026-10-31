@@ -53,6 +53,10 @@ Since the right side is computed from the chosen representatives $g_1, g_2$, thi
 ![[m493-34-1.svg]]
 *Left: for $H = \{e, (1\,2)\}$, both $e$ and $(1\,2)$ represent the coset $H$, but multiplying them by $(1\,3)$ (red) lands in two different cosets, $(1\,3)H$ and $(2\,3)H$, so $H \cdot (1\,3)H$ has no well-defined value. This is the ($\Rightarrow$) step of the proof with $h = (1\,2)$ and $g = (1\,3)$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin H$. Right: for the normal subgroup $A_3$, every representative of $A_3$ times $(1\,3)$ lands in the same coset $(1\,2)A_3$.*
 
+![[m493-34-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Products of representatives, one pair at a time; the product's cell is outlined. Left: $u \in H = \{e, (1\,2)\}$ times $v \in (1\,3)H$ lands in $(1\,3)H$ for $u = e$ but in $(2\,3)H$ for $u = (1\,2)$ (red), so the product of the cosets is not well defined. Right: for $A_3$, both factors from $(1\,2)A_3$, every product lands in $A_3$.
+
 > [!remark]- Connections
 > - 590 version of this computation: [[§27 Free Groups and Presentations#^rem-27-19|Why Normality is Required]].
 > - Vector-space version (automatic, since addition commutes): [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]].

@@ -325,6 +325,10 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ![[m493-39-2.svg]]
 *The three ways of splitting $\{1,2,3,4\}$ into two pairs, each drawn as two blue edges. The transposition $(3\,4)$ fixes $\{\{1,2\},\{3,4\}\}$ and swaps the other two splittings (red), so it acts on $P$ as a transposition. A double transposition such as $(1\,2)(3\,4)$ carries every splitting to itself, which is why $K$ is the kernel.*
 
+![[m493-39-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The same cube with its three face axes $x, y, z$ coloured. A $90^\circ$ face turn, a $120^\circ$ vertex turn and an edge turn permute the axes; the $180^\circ$ face turn fixes all three, so it lies in the kernel $K$ of $S_4 \to S_3$. Each face axis corresponds to one way of splitting the four diagonals into two pairs.
+
 > [!example] Example §43.1: In $A_4$, $(1\,2\,3)$ and $(1\,3\,2)$ Are Not Conjugate
 > The restriction $\alpha|_{A_4}: A_4 \to A_3$ is a character, since $A_3$ is abelian, and characters are constant on conjugacy classes ([[§46 Characters#^prop-46-1|Characters Are Constant on Conjugacy Classes]], §46). Now $\alpha((1\,2\,3)) \neq e$, because $(1\,2\,3) \notin K$, and $\alpha((1\,3\,2)) = \alpha((1\,2\,3))^{-1}$. In a group of order $3$ no non-identity element equals its own inverse, so the two images differ, and $(1\,2\,3)$ and $(1\,3\,2)$ are not conjugate in $A_4$ (although they are conjugate in $S_4$). So the lemma on $3$-cycles ([[§43 Simple Groups#^lem-43-8|§43.8]]) fails for $n = 4$.
 >

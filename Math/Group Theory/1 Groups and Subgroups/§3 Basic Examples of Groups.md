@@ -118,6 +118,10 @@ In each example, associativity is inherited from a known associative operation (
 ![[m493-3-1.svg]]
 *The two shears of the verification above, $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$, applied to the unit square (dashed): $AB$ carries it to the parallelogram spanned by its columns $(2,1)$ and $(1,1)$ (blue), $BA$ to the one spanned by $(1,1)$ and $(1,2)$ (red). Different images, so $AB \neq BA$ and $GL_2$ is non-abelian.*
 
+![[m493-3-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The unit square under the two composites, one factor at a time. Left: $B$ first, then $A$, ending at the parallelogram with columns $(2, 1)$ and $(1, 1)$. Right: $A$ first, then $B$, ending at columns $(1, 1)$ and $(1, 2)$. The end shapes differ, so $AB \neq BA$.
+
 > [!remark]- Connections
 > - Invertible matrices in LADR: [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]]; associativity of composing linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-8|Algebraic properties of products of linear maps]].
 > - $S_n$ sits inside $GL_n(k)$ via permutation matrices: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]].

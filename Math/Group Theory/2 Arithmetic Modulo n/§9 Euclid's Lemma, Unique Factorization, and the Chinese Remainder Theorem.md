@@ -80,6 +80,10 @@ tags: [group-theory, math493]
 ![[m493-9-1.svg]]
 *$\mathbb{Z}/15\mathbb{Z} \to \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z}$ as a grid: each $x \in \{0, \ldots, 14\}$ sits in row $x \bmod 3$ and column $x \bmod 5$, and every cell is filled exactly once, which is the bijectivity of $\rho$. (Counting $0, 1, 2, \ldots$ steps diagonally, wrapping around in both directions.) The system of the example asks for row $2$ (blue) and column $3$ (red); they meet in the single cell $8$.*
 
+![[m493-9-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $k = 0, 1, \ldots, 14$ placed at row $k \,\mathrm{mod}\, 3$ and column $k \,\mathrm{mod}\, 5$. Each step moves one cell diagonally, wrapping around in both directions, and all $15$ cells are visited once before returning: $k \mapsto (k \,\mathrm{mod}\, 3, k \,\mathrm{mod}\, 5)$ is a bijection $\mathbb{Z}/15 \to \mathbb{Z}/3 \times \mathbb{Z}/5$.
+
 > [!remark] Remark: The Dependency Chain in $\mathbb{Z}$
 > Everything above descends from one idea: [[§6 Divisibility and Congruence#^lem-6-1|division algorithm]] $\Rightarrow$ subgroups of $\mathbb{Z}$ are $n\mathbb{Z}$ ([[§5 A Zoo of Subgroups#^prop-5-1|§5.1]]) $\Rightarrow$ [[§5 A Zoo of Subgroups#^cor-5-2|Bézout]] $\Rightarrow$ [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|Euclid's lemma]] $\Rightarrow$ [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|unique factorization]]; and Bézout $\Rightarrow$ [[§8 Invertibility and Unit Groups#^prop-8-1|invertibility criterion]], $U_n$ is a group ([[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]]), and the [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|Chinese Remainder Theorem]]. These are the “basic number-theoretic facts” that [[493 Problem Set 1|Problem Set 1]] permits as assumptions.
 

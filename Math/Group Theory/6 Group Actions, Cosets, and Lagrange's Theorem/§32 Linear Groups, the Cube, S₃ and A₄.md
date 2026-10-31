@@ -172,6 +172,10 @@ tags: [group-theory, math493]
 ![[m493-30-3.svg]]
 *The four body diagonals of $C = [-1,1]^3$, numbered $1$–$4$ at their upper ends; each joins a vertex to the opposite vertex through the centre. Every rotation of the cube permutes these four lines, which is the homomorphism $G \to S_4$ of §32.5.*
 
+![[m493-30-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* One rotation of each kind, with the four body diagonals coloured and numbered: the identity; $90^\circ$ about a face axis, $(1\,2\,3\,4)$; $180^\circ$ about a face axis, $(1\,2)(3\,4)$; $120^\circ$ about a vertex axis, $(2\,4\,3)$; $180^\circ$ about an edge axis, $(1\,3)$. Each rotation permutes the diagonals, and the five kinds ($1 + 6 + 3 + 8 + 6 = 24$ rotations) are the five cycle types of $S_4$.
+
 > [!remark] Remark: The Cleanest Description
 > Since $|G| = 24 = |S_4|$, it is enough to show that the homomorphism $G \to S_4$ is injective, i.e. that the action on the diagonals is faithful. This identification is the cleanest description of the rotation group.
 

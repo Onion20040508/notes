@@ -196,6 +196,10 @@ tags: [group-theory, math493]
 ![[m493-8-1.svg]]
 *Finiteness plus cancellation. Left: multiplication by $3$ on the six nonzero classes modulo $7$ is injective, hence onto, so some arrow must land on $1$: here $3 \cdot 5 \equiv 1$ (red), i.e. $[3]^{-1} = [5]$. Right: multiplication by $4$ on $\mathbb{Z}/6\mathbb{Z}$, where $\gcd(4, 6) = 2$, sends two classes to each even class and misses $1, 3, 5$ (dashed red), so $4x \equiv 1$ has no solution and $4x \equiv 2$ has two, as in Example §8.4.*
 
+![[m493-8-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* Multiplication by $a = 1, \ldots, 6$ on the nonzero classes modulo $7$. Every arrow diagram is a permutation, so one arrow lands on $1$ (red), giving $[a]^{-1}$, e.g. $3 \cdot 5 \equiv 1$. Last: multiplication by $4$ on $\mathbb{Z}/6\mathbb{Z}$, two arrows into each even class (red) and none into $1, 3, 5$.
+
 > [!definition] Definition §8.4: The Unit Group $(\mathbb{Z}/n\mathbb{Z})^\times = U_n$
 > Fix an integer $n \geq 1$. Define
 >

@@ -90,6 +90,10 @@ tags: [group-theory, math493]
 ![[m493-24-1.svg]]
 *The proposition in one picture: if $s$ fixes $x$ (red loop), then $gsg^{-1}$ fixes $y = g \star x$ — go back to $x$ by $g^{-1}$ (dashed), loop by $s$, and return by $g$ (read right to left, $g^{-1}$ acts first). Conversely every loop at $y$ arises this way, so $\operatorname{Stab}(y) = g\operatorname{Stab}(x)g^{-1}$.*
 
+![[m493-24-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The proposition for the symmetries of a square (chosen for the picture), vertex $v$ and $g = r_{90}$. The reflection $s$ in the diagonal through $v$ fixes $v$. $g$ carries $v$ to $gv$ and the axis of $s$ to the other diagonal, and the reflection in that diagonal, $gsg^{-1}$, fixes $gv$: $\operatorname{Stab}(gv) = g\operatorname{Stab}(v)g^{-1}$.
+
 > [!remark]- Connections
 > - Used in 591 to show that the topology of a homogeneous space does not depend on the base point: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-4|591 Prop. §15.4]].
 > - Used in Quantum Field Theory: another standard momentum on the same orbit has a conjugate little group, with the same representations, so the particle does not depend on the choice — [[§C3.6★ Particle States and the Little Group#^rem-c3-6-1|QFT Remark: What the definition fixes, and what it leaves free]].

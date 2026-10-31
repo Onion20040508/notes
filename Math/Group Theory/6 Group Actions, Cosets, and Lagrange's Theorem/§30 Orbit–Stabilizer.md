@@ -111,6 +111,10 @@ tags: [group-theory, math493]
 ![[m493-28-2.svg]]
 *The four-petal figure from lecture. Red: the orbit $\{x_1, x_2, x_3, x_4\}$ of the tip $x_1$. Green: the vertical axis, whose reflection $r_v$ together with $e$ forms $\operatorname{Stab}(x_1)$. Dotted: the other three reflection axes.*
 
+![[m493-28-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The eight symmetries of the four-petal figure are applied one at a time to the tip $x_1$ (red). Its images fill the orbit of four tips, and two symmetries, $e$ and $r_v$, leave it in place: $|Gx_1| \cdot |\operatorname{Stab}(x_1)| = 4 \cdot 2 = 8$.
+
 > [!remark] Remark: Where Orbit–Stabilizer Has Already Appeared
 > Two instances: the cosets of the point stabilizer in $S_n$ ([[§30 Orbit–Stabilizer#^cor-30-5|next subsection]]), where the orbit of $n$ is all of $\{1, \ldots, n\}$ and $n! = (n-1)! \cdot n$; and the conjugacy classes of a group ([[· 7 Conjugacy and the Center|Chapter 7]]), which are the orbits of the conjugation action, so that their sizes divide $|G|$ — e.g. $1, 6, 3, 8, 6$ in $S_4$.
 
@@ -234,3 +238,7 @@ tags: [group-theory, math493]
 
 ![[m493-28-4.svg]]
 *The double count in the proof of Burnside's lemma, for $S_3$ acting on $\{1,2,3\}$ (part 1 of the example): a dot marks each pair with $g \star x = x$. The row sums are $|\operatorname{Fix}(g)|$ (blue) and the column sums are $|\operatorname{Stab}(x)| = 6/|Gx| = 2$ (red); both add up to $|P| = 6$, so the average number of fixed points is $6/6 = 1$ orbit.*
+
+![[m493-28-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The double count, cell by cell: a dot where $g \star x = x$, a cross where not. Row sums $|\operatorname{Fix}(g)|$ (blue) appear as each row is finished, and the column sums $|\operatorname{Stab}(x)| = 2$ (red) at the end. Both total $6$, so there is $6/6 = 1$ orbit.

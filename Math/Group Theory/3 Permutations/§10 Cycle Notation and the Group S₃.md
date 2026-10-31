@@ -63,6 +63,10 @@ tags: [group-theory, math493]
 ![[m493-10-1.svg]]
 *$S_3$ as the symmetries of a triangle with corners labeled $1, 2, 3$: a symmetry moves the corner at $i$ to the position of $\sigma(i)$. The rotation by $120^\circ$ in the direction of the blue arrow is $(1\,2\,3)$, the opposite rotation is $(1\,3\,2)$, and the reflection in each dashed red axis fixes the corner on the axis and swaps the other two, giving $(2\,3)$, $(1\,3)$, $(1\,2)$. With the identity, these are all six elements.*
 
+![[m493-10-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The six symmetries in turn. Rotations by $0$, $120^\circ$ and $240^\circ$ give $e$, $(1\,2\,3)$ and $(1\,3\,2)$; flips in the three axes (dashed red) give $(2\,3)$, $(1\,3)$ and $(1\,2)$. After each move, the corner that started at $i$ sits at the position of $\sigma(i)$.
+
 > [!remark]- Connections
 > - The same table as a worksheet problem: [[§14 Multiplication Tables#^ex-14-5|Table of S₃]] (WS 2.4); 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^ex-26-1|590 Ex. §26.1]].
 

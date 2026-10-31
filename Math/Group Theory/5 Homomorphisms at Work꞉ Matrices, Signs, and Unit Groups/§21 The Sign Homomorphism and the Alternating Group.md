@@ -47,6 +47,10 @@ tags: [group-theory, math493]
 ![[m493-20-1.svg]]
 *Bubble sort on the sequence $(4, 3, 1, 2)$ of $\sigma = (1\,4\,2\,3)$ from [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-2|Ex. §20.2]]. Each red crossing swaps an adjacent inversion and lowers $\operatorname{inv}$ by exactly one, so sorting takes $\operatorname{inv}(\sigma) = 5$ swaps and $\operatorname{sgn}(\sigma) = (-1)^5 = -1$. Two wires cross exactly when their values form an inversion ($1$ and $2$ never cross). Reading the swaps backwards gives [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]] (1): $\sigma = t_5 t_4 t_3 t_2 t_1 = (2\,3)(1\,2)(3\,4)(2\,3)(1\,2)$.*
 
+![[m493-20-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* Bubble sort of $(4, 3, 1, 2)$, one adjacent swap at a time, with the inversion count. Each swap removes exactly one inversion, from $5$ to $0$, so the permutation is a product of $5$ adjacent transpositions and its sign is $(-1)^5 = -1$.
+
 > [!remark]- Connections
 > - Linear-algebra counterpart: [[§36 Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]] (swapping two entries of a permutation changes the parity of the number of inversions).
 

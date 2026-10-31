@@ -66,6 +66,10 @@ tags: [group-theory, math493]
 ![[m493-25-1.svg]]
 *The proof: if the orbits of $x$ and $y$ share a point $z$, then $x$ is reached from $y$ by going to $z$ with $h$ and back with $g^{-1}$ (red), so $x = (g^{-1}h) \star y \in Gy$, and then all of $Gx$ lies in $Gy$.*
 
+![[m493-25-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The rotations by $90^\circ$ (a group $C_4$, chosen for the picture) acting on the $5 \times 5$ grid: each point moves to another point of its orbit. Then the orbits, each a square of four points (blue), and the fixed centre (red): every point lies in exactly one orbit, as Prop. §27.1 says.
+
 > [!theorem] Proposition §27.2: The Orbit Relation
 > The relation “$x \sim y$ iff $y = g \star x$ for some $g \in G$” is an [[§24 Equivalence Relations and Partitions#^def-24-1|equivalence relation]] on $X$, and its equivalence classes are the orbits.
 

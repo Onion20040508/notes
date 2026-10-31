@@ -45,6 +45,10 @@ tags: [group-theory, math493]
 ![[m493-12-1.svg]]
 *Conjugation relabels a cycle. To evaluate $\sigma\tau\sigma^{-1}$ at $\sigma(a_i)$, go up the dashed arrow ($\sigma^{-1}$) to $a_i$, across by $\tau$ to $a_{i+1}$, and down by $\sigma$ to $\sigma(a_{i+1})$. So the red loop is the blue loop $\tau$ with every label replaced by its image under $\sigma$: same shape, same length.*
 
+![[m493-12-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $\tau = (1\,2\,3)$ (blue) and $\sigma = (1\,4\,6\,2)(3\,5)$. Each label $a$ of the loop moves to the position $\sigma(a)$, and the loop arrives as $\sigma\tau\sigma^{-1} = (\sigma(1)\,\sigma(2)\,\sigma(3)) = (4\,1\,5)$ (red): the same loop, with the labels replaced by their images.
+
 > [!remark]- Connections
 > - Conjugation in general: [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Conjugation]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-3|Conjugate Elements]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-4|Inner Automorphism]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Conjugation Is an Automorphism]].
 > - For a whole permutation in disjoint-cycle notation: [[§33 Conjugacy Classes#^lem-33-1|Conjugation Relabels the Entries, §33.1]].

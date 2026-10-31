@@ -102,3 +102,7 @@ tags: [group-theory, math493]
 
 ![[m493-6-1.svg]]
 *The line $\mathbb{Z}$ rolled up, $12$ integers per turn (shown for $0, \ldots, 35$). Integers congruent modulo $12$ line up on one ray, so each ray is a residue class, e.g. $[2] = \{2, 14, 26, \ldots\}$ (red), and the $12$ rays are the points of the clock. Walking $5$ steps from $9$ (blue) lands on $14$, on the ray of $2$: $9 + 5 \equiv 2 \pmod{12}$.*
+
+![[m493-6-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The integers $0, \ldots, 35$ on a line, rolled up into a spiral with $12$ per turn. Integers that land on the same ray differ by a multiple of $12$: each ray is a residue class, e.g. $[2] = \{2, 14, 26, \ldots\}$ (red), and the $12$ rays are the $12$ elements of $\mathbb{Z}/12\mathbb{Z}$.

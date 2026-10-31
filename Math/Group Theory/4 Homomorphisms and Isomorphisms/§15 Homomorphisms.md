@@ -148,6 +148,10 @@ tags: [group-theory, math493]
 ![[m493-15-1.svg]]
 *The homomorphism $\varphi: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$, of Ex. §15.2. The kernel $\{0, 3\}$ (red) goes to the identity $1$; the boxes $\{1, 4\}$ and $\{2, 5\}$ go to $2$ and $4$; and $3, 5, 6$ are never hit. Every box is a translate of the kernel with $2$ elements, so the $6$ elements of the source fill only $6/2 = 3$ values: this is the “not a coincidence” $3 \cdot 2 = 6$.*
 
+![[m493-15-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $\varphi(k) = 2^k$ computed for $k = 0, \ldots, 5$, one arrow at a time, coloured by the value. $0$ and $3$ go to $1$ (red), $1$ and $4$ to $2$, $2$ and $5$ to $4$: each fibre is a translate of the kernel $\{0, 3\}$, and $3, 5, 6$ are never hit.
+
 > [!remark]- Connections
 > - The general statement: [[§41 The First and Second Isomorphism Theorems#^cor-41-2|Corollary §41.2]] of the First Isomorphism Theorem.
 

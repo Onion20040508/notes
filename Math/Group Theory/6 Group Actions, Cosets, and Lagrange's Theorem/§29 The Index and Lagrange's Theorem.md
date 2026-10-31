@@ -56,6 +56,10 @@ tags: [group-theory, math493]
 ![[m493-27-1.svg]]
 *Lagrange in one picture: the left cosets (columns) are disjoint and cover $G$, and $h \mapsto g_2h$ (red) is a bijection $H \to g_2H$, so every column has exactly $|H|$ elements. Counting the dots gives $|G| = |H| \cdot [G:H]$.*
 
+![[m493-27-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The cosets appear one at a time. Left: $H = \langle 4 \rangle$ in $\mathbb{Z}/12\mathbb{Z}$, four triangles $k + H$. Right: $H = \{e, (1\,2)\}$ in $S_3$, the left cosets $H$, $(1\,3)H$, $(2\,3)H$. They are disjoint, each has $|H|$ elements, and together they fill the group: $12 = 3 \cdot 4$, $6 = 2 \cdot 3$.
+
 > [!remark]- Connections
 > - MATH 590 states this without proof: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-1|590 Prop. §26.1 (3)]].
 > - Generalized to orbits: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer, §30.3]]; the homomorphism version: [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]].
